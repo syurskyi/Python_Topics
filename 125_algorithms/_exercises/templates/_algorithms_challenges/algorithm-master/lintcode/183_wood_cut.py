@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: L: Given n pieces of wood with length L[i]
     @param: k: An integer
@@ -27,12 +27,12 @@ class Solution:
 
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ self.check_if_possible(L, mid, k):
+            __ check_if_possible(L, mid, k):
                 left = mid
             ____:
                 right = mid
 
-        r.. right __ self.check_if_possible(L, right, k) ____ left
+        r.. right __ check_if_possible(L, right, k) ____ left
 
     ___ check_if_possible(self, L, size, max_pieces):
         pieces = 0
@@ -40,6 +40,6 @@ class Solution:
         ___ i __ r..(l..(L)):
             pieces += L[i] // size
             __ pieces >= max_pieces:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

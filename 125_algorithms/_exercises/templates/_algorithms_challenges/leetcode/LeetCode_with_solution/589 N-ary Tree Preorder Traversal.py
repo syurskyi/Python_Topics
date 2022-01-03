@@ -12,16 +12,16 @@ Recursive solution is trivial, could you do it iteratively?
 
 
 # Definition for a Node.
-class Node:
-    ___ __init__(self, val, children):
-        self.val = val
-        self.children = children
+c_ Node:
+    ___ - , val, children):
+        val = val
+        children = children
 
 
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ preorder(self, root: "Node") -> List[int]:
         """
         reversely add the children to stk

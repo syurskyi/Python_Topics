@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ sumSubarrayMins(self, A):
         """
         :type A: List[int]
@@ -16,12 +16,12 @@ class Solution(object):
             res = (res + total) % MOD
         r.. int(res)
 
-    ___ test(self):
+    ___ test
         testCases = [
             [3,1,2,4],
         ]
         ___ arr __ testCases:
-            res = self.sumSubarrayMins(arr)
+            res = sumSubarrayMins(arr)
             print('res: %s' % res)
             print('-='*30+'-')
 

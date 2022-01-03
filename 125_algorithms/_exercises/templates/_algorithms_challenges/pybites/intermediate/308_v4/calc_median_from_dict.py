@@ -11,7 +11,7 @@ ___ calc_median_from_dict(d: d..) -> float:
     __ n.. isi..(d, d..) o. d __ N..
         raise TypeError
 
-    __ n.. a..([isi..(k, (int, float)) a.. k ___ k __ d.values()]):
+    __ n.. a..([isi..(k, (int, float)) a.. k ___ k __ d.v..):
         raise TypeError
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts

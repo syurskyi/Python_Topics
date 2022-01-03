@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ evalRPN(self, E):
         """
         :type E: List[str]

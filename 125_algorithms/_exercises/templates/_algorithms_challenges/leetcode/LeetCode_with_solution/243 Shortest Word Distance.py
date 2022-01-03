@@ -7,7 +7,7 @@ ____ bisect _______ bisect_left
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ shortestDistance(self, words, word1, word2):
         """
         :type words: list[str]

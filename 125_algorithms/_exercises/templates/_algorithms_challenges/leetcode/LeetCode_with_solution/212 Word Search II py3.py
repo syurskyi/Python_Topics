@@ -25,27 +25,27 @@ ____ collections _______ defaultdict
 dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 
 
-class TrieNode:
-    ___ __init__(self):
-        self.word = N..
-        self.children = defaultdict(TrieNode)
+c_ TrieNode:
+    ___ - ):
+        word = N..
+        children = defaultdict(TrieNode)
 
 
-class Solution:
+c_ Solution:
     ___ findWords(self, board: List[List[s..]], words: List[s..]) -> List[s..]:
-        root = self.construct(words)
+        root = construct(words)
         m, n = l..(board), l..(board[0])
-        visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
+        visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ret = set()
         ___ i __ r..(m):
             ___ j __ r..(n):
-                self.dfs(board, visited, i, j, root, ret)
+                dfs(board, visited, i, j, root, ret)
 
         r.. l..(ret)
 
     ___ dfs(self, board, visited, i, j, cur, ret):
         m, n = l..(board), l..(board[0])
-        visited[i][j] = True
+        visited[i][j] = T..
         c = board[i][j]
         __ c __ cur.children:
             nxt = cur.children[c]
@@ -56,9 +56,9 @@ class Solution:
                 I = i + di
                 J = j + dj
                 __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J]:
-                    self.dfs(board, visited, I, J, nxt, ret)
+                    dfs(board, visited, I, J, nxt, ret)
 
-        visited[i][j] = False
+        visited[i][j] = F..
 
     ___ construct(self, words):
         root = TrieNode()

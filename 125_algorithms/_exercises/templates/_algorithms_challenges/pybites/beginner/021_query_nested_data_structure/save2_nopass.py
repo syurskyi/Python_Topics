@@ -11,13 +11,13 @@ ___ get_all_jeeps(cars=cars):
     """return a comma  + space (', ') separated string of jeep models
        (original order)"""
     jeeps = cars["Jeep"]
-    r.. ", ".join(jeeps)
+    r.. ", ".j..(jeeps)
 
 
 ___ get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
     first_model    # list
-    ___ model __ cars.values():
+    ___ model __ cars.v..
         first_model.a..(model[0])
     r.. first_model
 

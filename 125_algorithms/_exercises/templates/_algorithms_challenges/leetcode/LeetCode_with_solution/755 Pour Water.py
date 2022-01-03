@@ -122,7 +122,7 @@ K will be in range [0, heights.length - 1].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ pourWater(self, heights: List[int], V: int, K: int) -> List[int]:
         """
         Simulation?

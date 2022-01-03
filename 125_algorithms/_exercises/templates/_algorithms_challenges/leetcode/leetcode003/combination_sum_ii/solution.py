@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param candidates, a list of integers
     # @param target, integer
     # @return a list of lists of integers
@@ -6,7 +6,7 @@ class Solution:
         candidates.s..()
         res    # list
         cand    # list
-        self.combination_sum(candidates, target, cand, res)
+        combination_sum(candidates, target, cand, res)
         r.. res
 
     ___ combination_sum(self, candidates, target, cand, res):
@@ -23,5 +23,5 @@ class Solution:
                 ____:
                     prev = c
                 cand.a..(c)
-                self.combination_sum(candidates[i + 1:], target - c, cand, res)
+                combination_sum(candidates[i + 1:], target - c, cand, res)
                 cand.pop()

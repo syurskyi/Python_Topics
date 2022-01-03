@@ -1,7 +1,7 @@
 _______ string
 
 
-class Solution(object):
+c_ Solution(object):
   ___ isValid(self, code):
     """
     :type code: str
@@ -25,22 +25,22 @@ class Solution(object):
 
     ___ isTag(tag):
       __ l..(tag) < 3:
-        r.. False
+        r.. F..
       __ tag[-1] != ">":
-        r.. False
+        r.. F..
 
       tag = tag[1:-1]
       __ tag[0] __ "/":
         tag = tag[1:]
       __ n.. 1 <= l..(tag) <= 9:
-        r.. False
+        r.. F..
       ___ c __ tag:
         __ c n.. __ string.ascii_uppercase:
-          r.. False
-      r.. True
+          r.. F..
+      r.. T..
 
     __ code[0] != "<":
-      r.. False
+      r.. F..
     tagLen = 0
     stack    # list
     i = 0
@@ -48,29 +48,29 @@ class Solution(object):
       __ code[i] __ "<":
         __ isCDATATag(i):
           __ n.. stack:
-            r.. False
+            r.. F..
           w.... i < l..(code) - 7 a.. n.. code.startswith("]]>", i):
             i += 1
           __ code.startswith("]]>", i):
             i += 3
             continue
           ____:
-            r.. False
+            r.. F..
         ____:
           token = getTokenStartsAt(i)
           __ n.. isTag(token):
-            r.. False
+            r.. F..
           __ n.. isClosedTag(token):
             stack.a..(token)
           ____:
             __ n.. stack:
-              r.. False
+              r.. F..
             __ isTagsMatched(stack[-1], token):
               stack.pop()
               __ n.. stack a.. i + l..(token) < l..(code):
-                r.. False
+                r.. F..
             ____:
-              r.. False
+              r.. F..
           i += l..(token)
       ____:
         i += 1

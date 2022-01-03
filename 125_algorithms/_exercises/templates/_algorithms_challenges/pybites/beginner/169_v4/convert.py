@@ -9,6 +9,6 @@ ___ convert(value: float, fmt: s..) -> float:
         raise TypeError()
     fn = {'in': l.... x: round(x / 2.54, 4),
           'cm': l.... x: round(x * 2.54, 4)}
-    __ fmt.lower() __ fn:
-        r.. fn[fmt.lower()](value)
+    __ fmt.l.. __ fn:
+        r.. fn[fmt.l..](value)
     raise ValueError()

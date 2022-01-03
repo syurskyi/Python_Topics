@@ -3,7 +3,7 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxProfitAssignment(self, difficulty, profit, worker):
         """
         :type difficulty: List[int]
@@ -28,7 +28,7 @@ class Solution(object):
             res += maxProfit
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [2,4,6,8,10],
@@ -37,7 +37,7 @@ class Solution(object):
             ],
         ]
         ___ difficulty, profit, worker __ testCases:
-            result = self.maxProfitAssignment(difficulty, profit, worker)
+            result = maxProfitAssignment(difficulty, profit, worker)
             print('result: %s' % result)
             print('-='*30+'-')
 

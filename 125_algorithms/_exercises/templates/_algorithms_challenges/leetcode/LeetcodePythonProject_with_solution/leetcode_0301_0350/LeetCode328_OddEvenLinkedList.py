@@ -5,12 +5,12 @@ Created on Mar 18, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ oddEvenList(self, head):
         __ n.. head: r.. head
         node1 = head

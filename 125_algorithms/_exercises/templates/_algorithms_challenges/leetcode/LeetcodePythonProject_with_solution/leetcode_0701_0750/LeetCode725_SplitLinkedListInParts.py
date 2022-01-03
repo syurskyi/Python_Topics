@@ -4,12 +4,12 @@ Created on Feb 21, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x, nextNode_ N..
-        self.val = x
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , x, nextNode_ N..
+        val = x
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ splitListToParts(self, root, k):
         """
         :type root: ListNode
@@ -49,7 +49,7 @@ class Solution(object):
             res.a..(N..)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ListNode(1, ListNode(2, ListNode(3, ListNode(4)))),
@@ -61,7 +61,7 @@ class Solution(object):
             ],
         ]
         ___ head, k __ testCases:
-            res = self.splitListToParts(head, k)
+            res = splitListToParts(head, k)
             print('res: %s' % res)
 
 __ __name__ __ '__main__':

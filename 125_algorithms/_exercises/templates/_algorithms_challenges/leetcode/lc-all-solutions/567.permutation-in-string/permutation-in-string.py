@@ -1,15 +1,15 @@
-class Solution(object):
+c_ Solution(object):
   ___ checkInclusion(self, s1, s2):
     """
     :type s1: str
     :type s2: str
     :rtype: bool
     """
-    d = {}
+    d    # dict
     n = l..(s1)
     ___ c __ s1:
       d[c] = d.get(c, 0) + 1
-    window = {}
+    window    # dict
     ___ i, c __ e..(s2):
       window[c] = window.get(c, 0) + 1
       __ i >= l..(s1):
@@ -17,5 +17,5 @@ class Solution(object):
         __ window[s2[i - n]] __ 0:
           del window[s2[i - n]]
       __ window __ d:
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..

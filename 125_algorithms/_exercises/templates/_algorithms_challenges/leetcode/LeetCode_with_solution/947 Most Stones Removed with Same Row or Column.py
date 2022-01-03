@@ -31,7 +31,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ removeStones(self, stones: List[List[int]]) -> int:
         """
         convert to graph problem
@@ -51,19 +51,19 @@ class Solution:
 
         # dfs
         comp_cnt = 0
-        visited = [False ___ _ __ r..(n)]
+        visited = [F.. ___ _ __ r..(n)]
         ___ i __ r..(n):
             __ n.. visited[i]:
                 comp_cnt += 1
-                self.dfs(G, i, visited)
+                dfs(G, i, visited)
 
         r.. n - comp_cnt
 
     ___ dfs(self, G, i, visited):
-        visited[i] = True
+        visited[i] = T..
         ___ nbr __ G[i]:
             __ n.. visited[nbr]:
-                self.dfs(G, nbr, visited)
+                dfs(G, nbr, visited)
 
 
 __ __name__ __ "__main__":

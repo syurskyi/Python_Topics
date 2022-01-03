@@ -1,26 +1,26 @@
-class TreeNode(object):
-    ___ __init__(self, data, left, right):
-        self.data = data
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , data, left, right):
+        data = data
+        left = left
+        right = right
 
-    ___ __str__(self):
+    ___ __str__
         fmt = 'TreeNode(data={}, left={}, right={})'
-        r.. fmt.f..(self.data, self.left, self.right)
+        r.. fmt.f..(data, left, right)
 
 
-class BinarySearchTree(object):
-    ___ __init__(self, tree_data):
-        self.root = N..
+c_ BinarySearchTree(object):
+    ___ - , tree_data):
+        root = N..
         ___ data __ tree_data:
-            self.add(data)
+            add(data)
 
     ___ add(self, data):
-        __ self.root __ N..
-            self.root = TreeNode(data, N.., N..)
+        __ root __ N..
+            root = TreeNode(data, N.., N..)
             r..
-        inserted = False
-        cur_node = self.root
+        inserted = F..
+        cur_node = root
 
         w.... n.. inserted:
             __ data <= cur_node.data:
@@ -28,24 +28,24 @@ class BinarySearchTree(object):
                     cur_node = cur_node.left
                 ____:
                     cur_node.left = TreeNode(data, N.., N..)
-                    inserted = True
+                    inserted = T..
             ____ data > cur_node.data:
                 __ cur_node.right:
                     cur_node = cur_node.right
                 ____:
                     cur_node.right = TreeNode(data, N.., N..)
-                    inserted = True
+                    inserted = T..
 
     ___ _inorder_traverse(self, node, elements):
         __ node __ n.. N..
-            self._inorder_traverse(node.left, elements)
+            _inorder_traverse(node.left, elements)
             elements.a..(node.data)
-            self._inorder_traverse(node.right, elements)
+            _inorder_traverse(node.right, elements)
 
-    ___ data(self):
-        r.. self.root
+    ___ data
+        r.. root
 
-    ___ sorted_data(self):
+    ___ sorted_data
         elements    # list
-        self._inorder_traverse(self.root, elements)
+        _inorder_traverse(root, elements)
         r.. elements

@@ -1,10 +1,10 @@
-class Solution(object):
+c_ Solution(object):
   ___ findSubstringInWraproundString(self, p):
     """
     :type p: str
     :rtype: int
     """
-    d = {}
+    d    # dict
     cnt = 0
     ___ i __ r..(l..(p)):
       __ i > 0 a.. (ord(p[i]) - ord(p[i - 1]) __ 1 o. ord(p[i - 1]) - ord(p[i]) __ 25):

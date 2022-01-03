@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ uniquePaths(self, m, n):
         """
         :type m: int

@@ -3,19 +3,19 @@ Created on Oct 24, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ topKFrequent(self, words, k):
         """
         :type words: List[str]
         :type k: int
         :rtype: List[str]
         """
-        hashmap = {}
+        hashmap    # dict
         ___ word __ words:
             hashmap[word] = hashmap.get(word, 0)+1
         n = l..(words)
         dp = [[] ___ _ __ r..(n+1)]
-        ___ word, freq __ hashmap.items():
+        ___ word, freq __ hashmap.i..:
             dp[freq].a..(word)
         res    # list
         ___ i __ r..(n, -1, -1):
@@ -26,7 +26,7 @@ class Solution(object):
                     break
         r.. res[:k]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["i", "love", "leetcode", "i", "love", "coding"],
@@ -40,7 +40,7 @@ class Solution(object):
         ___ words, k __ testCases:
             print('words: %s' % words)
             print('k: %s' % k)
-            result = self.topKFrequent(words, k)
+            result = topKFrequent(words, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

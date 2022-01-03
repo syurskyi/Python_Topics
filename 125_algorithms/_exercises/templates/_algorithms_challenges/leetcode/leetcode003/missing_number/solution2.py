@@ -12,7 +12,7 @@ using only constant extra space complexity?
 
 # Alternative solution using a method similar to First Missing Positive
 
-class Solution(object):
+c_ Solution(object):
     ___ missingNumber(self, nums):
         """
         :type nums: List[int]

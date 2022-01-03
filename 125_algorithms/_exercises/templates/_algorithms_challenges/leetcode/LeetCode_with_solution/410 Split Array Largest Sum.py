@@ -27,7 +27,7 @@ ____ typing _______ List
 ____ functools _______ lru_cache
 
 
-class SolutionDP:
+c_ SolutionDP:
     ___ splitArray(self, nums: List[int], m: int) -> int:
         """
         non-aftereffect, dp
@@ -54,7 +54,7 @@ class SolutionDP:
         r.. F[n][m]
 
 
-class Solution:
+c_ Solution:
     ___ splitArray(self, nums: List[int], m: int) -> int:
         """
         Binary search over the subarray sum values
@@ -82,18 +82,18 @@ class Solution:
         r.. ret
 
 
-class SolutionTLE2:
-    ___ __init__(self):
-        self.sums = [0]
+c_ SolutionTLE2:
+    ___ - ):
+        sums = [0]
 
     ___ splitArray(self, nums: List[int], m: int) -> int:
         """
         memoization with 1 less param
         """
         ___ n __ nums:
-            self.sums.a..(self.sums[-1] + n)
+            sums.a..(sums[-1] + n)
 
-        ret = self.dfs(l..(nums), m)
+        ret = dfs(l..(nums), m)
         r.. ret
 
     @lru_cache(maxsize=N..)
@@ -102,21 +102,21 @@ class SolutionTLE2:
         j break the nums[:hi] into left and right part
         """
         __ m __ 1:
-            r.. self.sums[hi] - self.sums[0]
+            r.. sums[hi] - sums[0]
 
         mini = float("inf")
         ___ j __ r..(hi):
-            right = self.sums[hi] - self.sums[j]
-            left = self.dfs(j, m - 1)
+            right = sums[hi] - sums[j]
+            left = dfs(j, m - 1)
             # minimize the max
             mini = m..(mini, max(left, right))
 
         r.. mini
 
 
-class SolutionTLE:
-    ___ __init__(self):
-        self.sums = [0]
+c_ SolutionTLE:
+    ___ - ):
+        sums = [0]
 
     ___ splitArray(self, nums: List[int], m: int) -> int:
         """
@@ -125,8 +125,8 @@ class SolutionTLE:
         backtracking + memoization
         """
         ___ n __ nums:
-            self.sums.a..(self.sums[-1] + n)
-        ret = self.dfs(tuple(nums), 0, l..(nums), m)
+            sums.a..(sums[-1] + n)
+        ret = dfs(tuple(nums), 0, l..(nums), m)
         r.. ret
 
     @lru_cache(maxsize=N..)
@@ -135,12 +135,12 @@ class SolutionTLE:
         j break the nums[lo:hi] into left and right part
         """
         __ m __ 1:
-            r.. self.sums[hi] - self.sums[lo]
+            r.. sums[hi] - sums[lo]
 
         mini = float("inf")
         ___ j __ r..(lo, hi):
-            left = self.sums[j] - self.sums[lo]
-            right = self.dfs(nums, j, hi, m - 1)
+            left = sums[j] - sums[lo]
+            right = dfs(nums, j, hi, m - 1)
             # minimize the max
             mini = m..(mini, max(left, right))
 

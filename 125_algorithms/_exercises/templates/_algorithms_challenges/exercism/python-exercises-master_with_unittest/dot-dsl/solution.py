@@ -1,32 +1,32 @@
 NODE, EDGE, ATTR = r..(3)
 
 
-class Node(object):
-    ___ __init__(self, name, attrs={}):
-        self.name = name
-        self.attrs = attrs
+c_ Node(object):
+    ___ - , name, attrs={}):
+        name = name
+        attrs = attrs
 
     ___ __eq__(self, other):
-        r.. self.name __ other.name a.. self.attrs __ other.attrs
+        r.. name __ other.name a.. attrs __ other.attrs
 
 
-class Edge(object):
-    ___ __init__(self, src, dst, attrs={}):
-        self.src = src
-        self.dst = dst
-        self.attrs = attrs
+c_ Edge(object):
+    ___ - , src, dst, attrs={}):
+        src = src
+        dst = dst
+        attrs = attrs
 
     ___ __eq__(self, other):
-        r.. (self.src __ other.src a..
-                self.dst __ other.dst a..
-                self.attrs __ other.attrs)
+        r.. (src __ other.src a..
+                dst __ other.dst a..
+                attrs __ other.attrs)
 
 
-class Graph(object):
-    ___ __init__(self, data=[]):
-        self.nodes    # list
-        self.edges    # list
-        self.attrs = {}
+c_ Graph(object):
+    ___ - , data=[]):
+        nodes    # list
+        edges    # list
+        attrs    # dict
 
         __ n.. isi..(data, l..):
             raise TypeError("Graph data malformed")
@@ -39,14 +39,14 @@ class Graph(object):
             __ type_ __ ATTR:
                 __ l..(item) != 3:
                     raise ValueError("ATTR malformed")
-                self.attrs[item[1]] = item[2]
+                attrs[item[1]] = item[2]
             ____ type_ __ NODE:
                 __ l..(item) != 3:
                     raise ValueError("NODE malformed")
-                self.nodes.a..(Node(item[1], item[2]))
+                nodes.a..(Node(item[1], item[2]))
             ____ type_ __ EDGE:
                 __ l..(item) != 4:
                     raise ValueError("EDGE malformed")
-                self.edges.a..(Edge(item[1], item[2], item[3]))
+                edges.a..(Edge(item[1], item[2], item[3]))
             ____:
                 raise ValueError("Unknown item {}".f..(item[0]))

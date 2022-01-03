@@ -11,7 +11,7 @@ ___ function_1():
 ___ function_2():
 
     with open("sample_file.txt") as infile:
-        print(type(infile))
+        print(t..(infile))
         data = infile.readlines()
         ___ line __ data:
             print(line.strip())

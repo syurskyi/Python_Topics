@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integer which is 0, 1 or 2
     @return: nothing

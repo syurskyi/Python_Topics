@@ -4,20 +4,20 @@ Created on May 30, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ buildTree(self, preorder, inorder):
         """
         :type preorder: List[int]
         :type inorder: List[int]
         :rtype: TreeNode
         """
-        r.. self.helper(preorder, 0, l..(preorder)-1, inorder, 0, l..(inorder)-1)
+        r.. helper(preorder, 0, l..(preorder)-1, inorder, 0, l..(inorder)-1)
     
     ___ helper(self, preorder, pstart, pend, inorder, istart, iend):
         __ pstart > pend o. istart > iend:
@@ -31,7 +31,7 @@ class Solution(object):
         new_istart = istart
         new_iend = k-1
         
-        root.left = self.helper(preorder, new_pstart, new_pend,\
+        root.left = helper(preorder, new_pstart, new_pend,\
                                 inorder, new_istart, new_iend)
         
         new_pstart = pstart+k-istart+1
@@ -39,7 +39,7 @@ class Solution(object):
         new_istart = k+1
         new_iend = iend
         
-        root.right = self.helper(preorder, new_pstart, new_pend,\
+        root.right = helper(preorder, new_pstart, new_pend,\
                                 inorder, new_istart, new_iend)
         
         r.. root

@@ -24,7 +24,7 @@ ___ convert(number: int, base: int = 2) -> s..:
         values.a..(s..(remainder))
 
 
-    r.. ''.join(reversed(values))
+    r.. ''.j..(reversed(values))
             
 
 

@@ -8,7 +8,7 @@ must sell the stock before you buy again).
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ maxProfit(self, prices):
         """
         multiple transactions

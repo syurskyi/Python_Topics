@@ -8,7 +8,7 @@ Please optimize your algorithm to use less time and space. The input size may be
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ lexicalOrder(self, n):
         """
         :type n: int

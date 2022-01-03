@@ -31,7 +31,7 @@ ____ bisect _______ bisect_left
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ isSubsequence(self, s: s.., t: s..) -> bool:
         """
         Subsequence - Binary search
@@ -44,16 +44,16 @@ class Solution:
         lo_po = -1
         ___ c __ s:
             __ c n.. __ char_pos:
-                r.. False
+                r.. F..
             pos = char_pos[c]
             i = bisect_left(pos, lo_po)
             __ i __ l..(pos):
-                r.. False
+                r.. F..
             lo_po = pos[i] + 1  # pitfall
 
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":
-    ... Solution().isSubsequence("abc", "ahbgdc") __ True
-    ... Solution().isSubsequence("acb", "ahbgdc") __ False
+    ... Solution().isSubsequence("abc", "ahbgdc") __ T..
+    ... Solution().isSubsequence("acb", "ahbgdc") __ F..

@@ -32,7 +32,7 @@ ____ typing _______ List
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
-class Solution:
+c_ Solution:
     ___ shortestBridge(self, A: List[List[int]]) -> int:
         """
         market component 1 and component 2
@@ -48,27 +48,27 @@ class Solution:
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ A[i][j] __ 1 a.. colors[i][j] __ N..
-                    self.dfs(A, i, j, colors, color)
+                    dfs(A, i, j, colors, color)
                     color += 1
         ... color __ 2
 
         # BFS
         step = 0
         q    # list
-        visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
+        visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ colors[i][j] __ 0:
-                    visited[i][j] = True
+                    visited[i][j] = T..
                     q.a..((i, j))
 
         w.... q:
             cur_q    # list
             ___ i, j __ q:
-                ___ I, J __ self.nbr(A, i, j):
+                ___ I, J __ nbr(A, i, j):
                     __ n.. visited[I][J]:
                         __ colors[I][J] __ N..
-                            visited[I][J] = True   # pre-check, dedup
+                            visited[I][J] = T..   # pre-check, dedup
                             cur_q.a..((I, J))
                         ____ colors[I][J] __ 1:
                             r.. step
@@ -87,9 +87,9 @@ class Solution:
 
     ___ dfs(self, A, i, j, colors, color):
         colors[i][j] = color
-        ___ I, J __ self.nbr(A, i, j):
+        ___ I, J __ nbr(A, i, j):
             __ colors[I][J] __ N.. a.. A[I][J] __ 1:
-                self.dfs(A, I, J, colors, color)
+                dfs(A, I, J, colors, color)
 
 
 __ __name__ __ "__main__":

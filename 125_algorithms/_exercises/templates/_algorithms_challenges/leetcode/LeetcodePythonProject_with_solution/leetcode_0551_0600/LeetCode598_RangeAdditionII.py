@@ -4,7 +4,7 @@ Created on Sep 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxCount(self, m, n, ops):
         """
         :type m: int
@@ -18,7 +18,7 @@ class Solution(object):
             minB = m..(minB, b)
         r.. m..(minA, m)*m..(minB, n)
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]

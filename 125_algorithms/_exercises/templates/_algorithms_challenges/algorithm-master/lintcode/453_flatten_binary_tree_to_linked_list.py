@@ -29,7 +29,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: a TreeNode, the root of the binary tree
     @return:
@@ -38,8 +38,8 @@ class Solution:
         __ n.. root:
             r..
 
-        self.flatten(root.left)
-        self.flatten(root.right)
+        flatten(root.left)
+        flatten(root.right)
 
         __ n.. root.left:
             r..

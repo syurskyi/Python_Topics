@@ -1,3 +1,3 @@
-class Clock(object):
-    ___ __init__(self):
+c_ Clock(object):
+    ___ - ):
         pass

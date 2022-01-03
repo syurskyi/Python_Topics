@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ lastRemaining(self, n):
         """
         :type n: int

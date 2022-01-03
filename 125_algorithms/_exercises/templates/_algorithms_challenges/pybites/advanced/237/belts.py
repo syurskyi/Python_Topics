@@ -30,7 +30,7 @@ ___ get_belts(data: s..) -> d..:
     dates.s..(key=l.... x: parse(x['date']))
     
     
-    belts = {}
+    belts    # dict
     score_index = 0
     score_marker = SCORES[score_index]
     points = 0

@@ -2,7 +2,7 @@ ____ collections _______ defaultdict
 ____ dataclasses _______ dataclass, field
 ____ functools _______ total_ordering
 ____ pathlib _______ Path
-____ re _______ compile, search
+____ __ _______ c.., s..
 ____ typing _______ Any, DefaultDict, List
 ____ urllib.request _______ urlretrieve
 
@@ -22,7 +22,7 @@ ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5}
 
 @dataclass
 @total_ordering
-class Enchantment:
+c_ Enchantment:
     """Minecraft enchantment"""
 
     id_name: s..
@@ -31,24 +31,24 @@ class Enchantment:
     description: s..
     items: List[s..] = field(default_factory=l..)
 
-    ___ __str__(self):
-        r.. f"{self.name} ({self.max_level}): {self.description}"
+    ___ __str__
+        r.. f"{name} ({max_level}): {description}"
 
     ___ __lt__(self, other):
-        r.. self.id_name < other.id_name
+        r.. id_name < other.id_name
 
 
 @dataclass
-class Item:
+c_ Item:
     """Minecraft enchantable item"""
 
     name: s..
     enchantments: List[Enchantment] = field(default_factory=l..)
 
-    ___ __str__(self):
-        enchants = s..(self.enchantments)
+    ___ __str__
+        enchants = s..(enchantments)
         enc_list = [f"\n  [{enc.max_level}] {enc.id_name}" ___ enc __ enchants]
-        r.. f"{self.name.t..}: {''.join(enc_list)}"
+        r.. f"{name.t..}: {''.j..(enc_list)}"
 
 
 ___ clean_up_names(item_names):
@@ -71,7 +71,7 @@ ___ clean_up_names(item_names):
         "fishing_rod" __ item __ "fishingrod" ____ item ___ item __ item_names
     ]
 
-    r.. " ".join(item_names)
+    r.. " ".j..(item_names)
 
 
 ___ enchantable_items(soup):
@@ -136,7 +136,7 @@ ___ gen_item_set(data):
     :return: Set of sorted item object name strings
     """
     mc_items = set()
-    ___ enchantment __ data.keys():
+    ___ enchantment __ data.k..:
         ___ item __ data[enchantment].items:
             mc_items.add(item)
 
@@ -191,8 +191,8 @@ ___ split_title(title):
     :param title: String of the enchantment title
     :return: Tuple(id_names, names)
     """
-    pattern = compile(r"(.*)\((.*)\)")
-    names, id_names = search(pattern, title).groups()
+    pattern = c..(r"(.*)\((.*)\)")
+    names, id_names = s..(pattern, title).groups()
     r.. id_names, names
 
 

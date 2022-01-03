@@ -7,23 +7,23 @@ You may assume that all inputs are consist of lowercase letters a-z.
 __author__ = 'Daniel'
 
 
-class TrieNode:
-    ___ __init__(self):
+c_ TrieNode:
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.ended = False
-        self.children = {}
+        ended = F..
+        children    # dict
 
 
-class Trie:
-    ___ __init__(self):
+c_ Trie:
+    ___ - ):
         """
         Notice:
         * When insert new word, do not override the existing TrieNode
         * A flag to indicate whether there is a word ending here.
         """
-        self.root = TrieNode()
+        root = TrieNode()
 
     ___ insert(self, word):
         """
@@ -31,31 +31,31 @@ class Trie:
         :type word: str
         :rtype: None
         """
-        cur = self.root
+        cur = root
         ___ w __ word:
             __ w n.. __ cur.children:   # not override
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
 
-        cur.ended = True
+        cur.ended = T..
 
-    ___ search(self, word):
+    ___ s..(self, word):
         """
         Returns if the word is in the trie.
         :type word: str
         :rtype: bool
         """
-        cur = self.root
+        cur = root
         ___ w __ word:
             __ w __ cur.children:
                 cur = cur.children[w]
             ____:
-                r.. False
+                r.. F..
 
         __ n.. cur.ended:  # not ended here
-            r.. False
+            r.. F..
 
-        r.. True
+        r.. T..
 
     ___ startsWith(self, prefix):
         """
@@ -63,11 +63,11 @@ class Trie:
         :type prefix: str
         :rtype: bool
         """
-        cur = self.root
+        cur = root
         ___ w __ prefix:
             __ w __ cur.children:
                 cur = cur.children[w]
             ____:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

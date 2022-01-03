@@ -4,7 +4,7 @@ Created on Sep 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxVacationDays(self, flights, days):
         """
         :type flights: List[List[int]]
@@ -24,7 +24,7 @@ class Solution(object):
             dp = tmp
         r.. max(dp)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [
@@ -65,10 +65,10 @@ class Solution(object):
         ]
         ___ flights, days __ testCases:
             print('flights:')
-            print('\n'.join([s..(row) ___ row __ flights]))
+            print('\n'.j..([s..(row) ___ row __ flights]))
             print('days:')
-            print('\n'.join([s..(row) ___ row __ days]))
-            result = self.maxVacationDays(flights, days)
+            print('\n'.j..([s..(row) ___ row __ days]))
+            result = maxVacationDays(flights, days)
             print('result: %s' % result)
             print('-='*30+'-')
 

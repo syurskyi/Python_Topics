@@ -58,7 +58,7 @@ ___ search_folders(folder, text):
     items  os.listdir(folder)
 
     ___ item __ items:
-        full_item  os.path.join(folder, item)
+        full_item  os.path.j..(folder, item)
         __ os.path.isdir(full_item):
             # matches = search_folders(full_item, text)
             # all_matches.extend(matches)

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param A: The integer array
     # @param target: Target number to find
     # @return the first position of target in A, position start from 0

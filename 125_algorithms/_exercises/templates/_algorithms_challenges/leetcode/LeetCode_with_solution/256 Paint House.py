@@ -6,7 +6,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     # @param {integer[][]} costs
     # @return {integer}
     ___ minCost(self, costs):

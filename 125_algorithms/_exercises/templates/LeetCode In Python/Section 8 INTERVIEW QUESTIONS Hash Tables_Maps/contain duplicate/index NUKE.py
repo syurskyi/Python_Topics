@@ -1,6 +1,6 @@
 ____ collections _______ defaultdict
 
-class Solution:
+c_ Solution:
     ___ containsDuplicate(self, nums: List[i..]) -> bool:
         m  defaultdict(i..)
 

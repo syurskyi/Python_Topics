@@ -6,7 +6,7 @@ For example,
 [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ permute(self, num):
         """
         Catalan
@@ -14,7 +14,7 @@ class Solution:
         :return: a list of lists of integers
         """
         result    # list
-        self.get_permute(num, [], result)
+        get_permute(num, [], result)
         r.. result
 
     ___ get_permute(self, seq, current, result):
@@ -24,7 +24,7 @@ class Solution:
 
         ___ ind, val __ e..(seq):
             # try:
-            self.get_permute(seq[:ind]+seq[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
+            get_permute(seq[:ind]+seq[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:
             #     self.get_permute(seq[:ind], current+[val], result)
             # array slice out of index will return []

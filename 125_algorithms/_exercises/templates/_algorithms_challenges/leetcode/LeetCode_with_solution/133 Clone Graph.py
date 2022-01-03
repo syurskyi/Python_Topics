@@ -24,21 +24,21 @@ Visually, the graph looks like the following:
 """
 __author__ = 'Danyang'
 # Definition for a undirected graph node
-class UndirectedGraphNode:
-    ___ __init__(self, x):
-        self.label = x
-        self.neighbors    # list
-    ___ __repr__(self):
-        r.. repr(self.label)
+c_ UndirectedGraphNode:
+    ___ - , x):
+        label = x
+        neighbors    # list
+    ___ __repr__
+        r.. repr(label)
 
-class Solution:
+c_ Solution:
     ___ cloneGraph_TLE(self, node):
         """
         dfs
         :param node: UndirectedGraphNode
         :return: UndirectedGraphNode
         """
-        r.. self.clone_graph_visited(node, set())
+        r.. clone_graph_visited(node, set())
 
     ___ clone_graph_visited(self, node, visited_set):
         """
@@ -51,7 +51,7 @@ class Solution:
         __ n.. node:
             r..
         visited_set.add(node)
-        neighbors_cloned = [self.clone_graph_visited(neighbor, set(visited_set)) ___ neighbor __ node.neighbors __ neighbor n.. __ visited_set]
+        neighbors_cloned = [clone_graph_visited(neighbor, set(visited_set)) ___ neighbor __ node.neighbors __ neighbor n.. __ visited_set]
         node_cloned = UndirectedGraphNode(node.label)
         ___ neighbor_cloned __ neighbors_cloned:
             __ neighbor_cloned n.. __ visited_set:
@@ -73,7 +73,7 @@ class Solution:
         __ n.. node:
             r..
 
-        original2copy = {} # dict  #!important
+        original2copy    # dict # dict  #!important
         q = [node]  # queue of nodes whose the neighbors are to be copied
 
         clone = UndirectedGraphNode(node.label)

@@ -1,16 +1,16 @@
 _______ d__ as dt
 
-NOW = dt.d__.now()
+NOW = dt.d__.n..
 
-class Promo:
-    ___ __init__(self, name, expires):
-        self.name = name
-        self.expires = expires
-    @property
-    ___ expired(self):
+c_ Promo:
+    ___ - , name, expires):
+        name = name
+        expires = expires
+    $
+    ___ expired
         #return Boolean value indicating whether promo has expired or not
-        NOW = dt.d__.now()
-        __ NOW < self.expires:
+        NOW = dt.d__.n..
+        __ NOW < expires:
             print("Not expired! :)")
         ____:
             r.. N..

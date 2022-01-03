@@ -8,7 +8,7 @@ ____ dataclasses _______ dataclass
 
 
 
-class Employee:
+c_ Employee:
     """Simple Employee class
 
     :param first_name: String of first name
@@ -24,13 +24,13 @@ class Employee:
     hours_per_day: float
     wage: float
 
-    ___ __init__(self, first_name: s.., last_name: s.., days_per_week: int,
+    ___ - , first_name: s.., last_name: s.., days_per_week: int,
             hours_per_day:int, wage: float):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.days_per_week = days_per_week
-        self.hours_per_day = hours_per_day
-        self.wage = wage
+        first_name = first_name
+        last_name = last_name
+        days_per_week = days_per_week
+        hours_per_day = hours_per_day
+        wage = wage
 
     ___ _rounder(self, number: float, places: int) -> s..:
         """Rounds a number the specified number of places
@@ -42,15 +42,15 @@ class Employee:
         amount = round(number, places)
         r.. f"${amount:0.2f}"
 
-    @property
+    $
     ___ weekly_pay(self) -> float:
         """Returns amount of weekly pay in US currency
 
         For instance: $250.75
         """
-        total_hours = self.hours_per_day * self.days_per_week
-        total_wage = total_hours * self.wage
-        r.. self._rounder(total_wage, 2)
+        total_hours = hours_per_day * days_per_week
+        total_wage = total_hours * wage
+        r.. _rounder(total_wage, 2)
 
 
 __ __name__ __ "__main__":

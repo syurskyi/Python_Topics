@@ -1,44 +1,44 @@
-class BufferFullException(Exception):
+c_ BufferFullException(Exception):
     pass
 
 
-class BufferEmptyException(Exception):
+c_ BufferEmptyException(Exception):
     pass
 
 
-class CircularBuffer(object):
+c_ CircularBuffer(object):
 
-    ___ __init__(self, capacity):
-        self.buffer = bytearray(capacity)
-        self.read_point = 0
-        self.write_point = 0
+    ___ - , capacity):
+        buffer = bytearray(capacity)
+        read_point = 0
+        write_point = 0
 
     # (protected) helper method to support python 2/3
     ___ _update_buffer(self, data):
         try:
-            self.buffer[self.write_point] = data
+            buffer[write_point] = data
         except TypeError:
-            self.buffer[self.write_point] = ord(data)
+            buffer[write_point] = ord(data)
 
-    ___ clear(self):
-        self.buffer = bytearray(l..(self.buffer))
+    ___ clear
+        buffer = bytearray(l..(buffer))
 
     ___ write(self, data):
-        __ a..(self.buffer):
+        __ a..(buffer):
             raise BufferFullException
-        self._update_buffer(data)
-        self.write_point = (self.write_point + 1) % l..(self.buffer)
+        _update_buffer(data)
+        write_point = (write_point + 1) % l..(buffer)
 
     ___ overwrite(self, data):
-        self._update_buffer(data)
-        __ a..(self.buffer) a.. self.write_point __ self.read_point:
-            self.read_point = (self.read_point + 1) % l..(self.buffer)
-        self.write_point = (self.write_point + 1) % l..(self.buffer)
+        _update_buffer(data)
+        __ a..(buffer) a.. write_point __ read_point:
+            read_point = (read_point + 1) % l..(buffer)
+        write_point = (write_point + 1) % l..(buffer)
 
-    ___ read(self):
-        __ n.. any(self.buffer):
+    ___ read
+        __ n.. any(buffer):
             raise BufferEmptyException
-        data = chr(self.buffer[self.read_point])
-        self.buffer[self.read_point] = 0
-        self.read_point = (self.read_point + 1) % l..(self.buffer)
+        data = chr(buffer[read_point])
+        buffer[read_point] = 0
+        read_point = (read_point + 1) % l..(buffer)
         r.. data

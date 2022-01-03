@@ -4,7 +4,7 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ evalRPN(self, tokens):
         """
         :type tokens: List[str]
@@ -33,7 +33,7 @@ class Solution(object):
                 stack.a..(int(token))
         r.. stack[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             ["2", "1", "+", "3", "*"],
 #             ["4", "13", "5", "/", "+"],
@@ -41,7 +41,7 @@ class Solution(object):
         ]
         ___ tokens __ testCases:
             print('tokens: %s' % (tokens))
-            result = self.evalRPN(tokens)
+            result = evalRPN(tokens)
             print('result: %s' % (result))
             print('-='*20+'-')
 

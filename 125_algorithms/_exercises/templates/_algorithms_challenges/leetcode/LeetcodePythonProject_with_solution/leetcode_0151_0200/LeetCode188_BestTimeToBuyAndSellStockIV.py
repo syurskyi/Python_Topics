@@ -4,7 +4,7 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxProfit(self, k, prices):
         """
         :type k: int
@@ -13,7 +13,7 @@ class Solution(object):
         """
         n = l..(prices)
         __ k*2 >= n:
-            r.. self.quickSolve(prices)
+            r.. quickSolve(prices)
         dp = [[0]*n ___ _ __ r..(k+1)]
         ___ i __ r..(1, k+1):
             tmpMax = -prices[0]
@@ -28,7 +28,7 @@ class Solution(object):
             res += max(0, prices[i]-prices[i-1])
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([2, 1], 1),
             ([1, 7, 2, 9, 3, 1, 2, 8, 5, 6, 1, 13], 4),
@@ -36,7 +36,7 @@ class Solution(object):
         ___ prices, k __ testCases:
             print('prices: %s' % (prices))
             print('k: %s' % (k))
-            result = self.maxProfit(k, prices)
+            result = maxProfit(k, prices)
             print('result: %s' % (result))
             print('-='*20+'-')
 

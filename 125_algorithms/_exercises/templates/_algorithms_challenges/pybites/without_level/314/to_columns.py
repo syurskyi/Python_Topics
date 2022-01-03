@@ -6,4 +6,4 @@ ___ print_names_to_columns(names: List[s..], cols: int = 2) -> N..
     names = l..(map(l.... x: f'| {x:10}', names))
     groups = zip_longest(*[iter(names)] * cols, fillvalue='')
     ___ group __ groups:
-        print(''.join(group))
+        print(''.j..(group))

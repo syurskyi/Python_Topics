@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ reverse(self, x: int) -> int:
         __ x > 0:
             ans = int(s..(x)[::-1])

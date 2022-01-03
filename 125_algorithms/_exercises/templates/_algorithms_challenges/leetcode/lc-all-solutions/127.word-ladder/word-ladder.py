@@ -2,7 +2,7 @@ _______ string
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ ladderLength(self, beginWord, endWord, wordList):
     """
     :type beginWord: str

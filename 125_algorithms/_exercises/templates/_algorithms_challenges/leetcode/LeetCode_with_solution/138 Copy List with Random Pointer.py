@@ -6,13 +6,13 @@ Return a deep copy of the list.
 """
 __author__ = 'Danyang'
 # Definition for singly-linked list with a random pointer.
-class RandomListNode:
-    ___ __init__(self, x):
-        self.label = x
-        self.next = N..
-        self.random = N..
+c_ RandomListNode:
+    ___ - , x):
+        label = x
+        next = N..
+        random = N..
 
-class Solution:
+c_ Solution:
     ___ copyRandomList(self, head):
         """
         Algorithm:

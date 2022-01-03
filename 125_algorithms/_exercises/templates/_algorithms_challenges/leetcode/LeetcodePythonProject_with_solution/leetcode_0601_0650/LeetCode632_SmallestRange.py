@@ -3,7 +3,7 @@ Created on Sep 19, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ smallestRange(self, nums):
         """
         :type nums: List[List[int]]
@@ -25,7 +25,7 @@ class Solution(object):
             heapq.heappush(pq, (v, i, j+1))
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [4, 10, 15, 24, 26],
@@ -35,7 +35,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.smallestRange(nums)
+            result = smallestRange(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

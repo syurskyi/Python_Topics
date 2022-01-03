@@ -13,7 +13,7 @@ __ __name__ __ '__main__':
     # make it work from cli like original unix wc
     _______ sys
     output = wc(sys.argv[1])
-    counts = ' '.join(output.s.. [:3])
+    counts = ' '.j..(output.s.. [:3])
     print(counts)
     __ sys.argv[1] __ output:
         print("yes")

@@ -4,7 +4,7 @@ Created on Jan 9, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxArea(self, height):
         """
         :type height: List[int]
@@ -21,13 +21,13 @@ class Solution(object):
                 i += 1
         r.. area
 
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 3, 9, 2],
         ]
         ___ height __ testCases:
             print('height: %s' % (height))
-            result = self.maxArea(height)
+            result = maxArea(height)
             print('result: %s' % (result))
             print('-='*15 + '-')
 

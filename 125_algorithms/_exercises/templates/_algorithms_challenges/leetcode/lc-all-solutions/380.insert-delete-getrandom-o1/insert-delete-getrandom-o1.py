@@ -1,10 +1,10 @@
-class RandomizedSet(object):
-  ___ __init__(self):
+c_ RandomizedSet(object):
+  ___ - ):
     """
     Initialize your data structure here.
     """
-    self.d = {}
-    self.a    # list
+    d    # dict
+    a    # list
 
   ___ insert(self, val):
     """
@@ -12,11 +12,11 @@ class RandomizedSet(object):
     :type val: int
     :rtype: bool
     """
-    __ val __ self.d:
-      r.. False
-    self.a.a..(val)
-    self.d[val] = l..(self.a) - 1
-    r.. True
+    __ val __ d:
+      r.. F..
+    a.a..(val)
+    d[val] = l..(a) - 1
+    r.. T..
 
   ___ remove(self, val):
     """
@@ -24,21 +24,21 @@ class RandomizedSet(object):
     :type val: int
     :rtype: bool
     """
-    __ val n.. __ self.d:
-      r.. False
-    index = self.d[val]
-    self.a[index] = self.a[-1]
-    self.d[self.a[-1]] = index
-    self.a.pop()
-    del self.d[val]
-    r.. True
+    __ val n.. __ d:
+      r.. F..
+    index = d[val]
+    a[index] = a[-1]
+    d[a[-1]] = index
+    a.pop()
+    del d[val]
+    r.. T..
 
-  ___ getRandom(self):
+  ___ getRandom
     """
     Get a random element from the set.
     :rtype: int
     """
-    r.. self.a[random.randrange(0, l..(self.a))]
+    r.. a[random.randrange(0, l..(a))]
 
 # Your RandomizedSet object will be instantiated and called as such:
 # obj = RandomizedSet()

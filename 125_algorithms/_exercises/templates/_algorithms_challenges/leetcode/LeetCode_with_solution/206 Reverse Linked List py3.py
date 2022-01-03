@@ -14,13 +14,13 @@ implement both?
 
 
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution:
+c_ Solution:
     ___ reverseList(self, head: ListNode) -> ListNode:
         prev = N..
         cur = head

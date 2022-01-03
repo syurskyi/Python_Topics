@@ -35,7 +35,7 @@ The judging time limit has been reduced for this question.
 """
 
 
-class Solution:
+c_ Solution:
     ___ new21Game(self, N: int, K: int, W: int) -> float:
         """
         F[i]: probability of get points i

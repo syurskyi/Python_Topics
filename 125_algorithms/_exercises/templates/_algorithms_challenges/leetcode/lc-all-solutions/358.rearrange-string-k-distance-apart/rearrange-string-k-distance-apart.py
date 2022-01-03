@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ rearrangeString(self, s, k):
     """
     :type s: str
@@ -20,9 +20,9 @@ class Solution(object):
         freq += 1
         ans.a..(c)
         __ l..(ans) __ l..(s):
-          r.. "".join(ans)
+          r.. "".j..(ans)
         __ freq < 0:
           temp.a..((freq, c))
       ___ freq, c __ temp:
         heapq.heappush(heap, (freq, c))
-    r.. "".join(ans)
+    r.. "".j..(ans)

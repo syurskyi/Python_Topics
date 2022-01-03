@@ -5,71 +5,71 @@ ____ protein_translation _______ proteins
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.1
 
-class ProteinTranslationTest(unittest.TestCase):
+c_ ProteinTranslationTest(unittest.TestCase):
 
-    ___ test_AUG_translates_to_methionine(self):
-        self.assertEqual(proteins('AUG'), ['Methionine'])
+    ___ test_AUG_translates_to_methionine
+        assertEqual(proteins('AUG'), ['Methionine'])
 
-    ___ test_identifies_Phenylalanine_codons(self):
+    ___ test_identifies_Phenylalanine_codons
         ___ codon __ ['UUU', 'UUC']:
-            self.assertEqual(proteins(codon), ['Phenylalanine'])
+            assertEqual(proteins(codon), ['Phenylalanine'])
 
-    ___ test_identifies_Leucine_codons(self):
+    ___ test_identifies_Leucine_codons
         ___ codon __ ['UUA', 'UUG']:
-            self.assertEqual(proteins(codon), ['Leucine'])
+            assertEqual(proteins(codon), ['Leucine'])
 
-    ___ test_identifies_Serine_codons(self):
+    ___ test_identifies_Serine_codons
         ___ codon __ ['UCU', 'UCC', 'UCA', 'UCG']:
-            self.assertEqual(proteins(codon), ['Serine'])
+            assertEqual(proteins(codon), ['Serine'])
 
-    ___ test_identifies_Tyrosine_codons(self):
+    ___ test_identifies_Tyrosine_codons
         ___ codon __ ['UAU', 'UAC']:
-            self.assertEqual(proteins(codon), ['Tyrosine'])
+            assertEqual(proteins(codon), ['Tyrosine'])
 
-    ___ test_identifies_Cysteine_codons(self):
+    ___ test_identifies_Cysteine_codons
         ___ codon __ ['UGU', 'UGC']:
-            self.assertEqual(proteins(codon), ['Cysteine'])
+            assertEqual(proteins(codon), ['Cysteine'])
 
-    ___ test_identifies_Tryptophan_codons(self):
-        self.assertEqual(proteins('UGG'), ['Tryptophan'])
+    ___ test_identifies_Tryptophan_codons
+        assertEqual(proteins('UGG'), ['Tryptophan'])
 
-    ___ test_identifies_stop_codons(self):
+    ___ test_identifies_stop_codons
         ___ codon __ ['UAA', 'UAG', 'UGA']:
-            self.assertEqual(proteins(codon), [])
+            assertEqual(proteins(codon), [])
 
-    ___ test_translates_rna_strand_into_correct_protein_list(self):
+    ___ test_translates_rna_strand_into_correct_protein_list
         strand = 'AUGUUUUGG'
         expected = ['Methionine', 'Phenylalanine', 'Tryptophan']
-        self.assertEqual(proteins(strand), expected)
+        assertEqual(proteins(strand), expected)
 
-    ___ test_stops_translation_if_stop_codon_at_beginning_of_sequence(self):
+    ___ test_stops_translation_if_stop_codon_at_beginning_of_sequence
         strand = 'UAGUGG'
         expected    # list
-        self.assertEqual(proteins(strand), expected)
+        assertEqual(proteins(strand), expected)
 
     ___ test_stops_translation_if_stop_codon_at_end_of_two_codon_sequence(
             self):
         strand = 'UGGUAG'
         expected = ['Tryptophan']
-        self.assertEqual(proteins(strand), expected)
+        assertEqual(proteins(strand), expected)
 
     ___ test_stops_translation_if_stop_codon_at_end_of_three_codon_sequence(
             self):
         strand = 'AUGUUUUAA'
         expected = ['Methionine', 'Phenylalanine']
-        self.assertEqual(proteins(strand), expected)
+        assertEqual(proteins(strand), expected)
 
     ___ test_stops_translation_if_stop_codon_in_middle_of_three_codon_sequence(
             self):
         strand = 'UGGUAGUGG'
         expected = ['Tryptophan']
-        self.assertEqual(proteins(strand), expected)
+        assertEqual(proteins(strand), expected)
 
     ___ test_stops_translation_if_stop_codon_in_middle_of_six_codon_sequence(
             self):
         strand = 'UGGUGUUAUUAAUGGUUU'
         expected = ['Tryptophan', 'Cysteine', 'Tyrosine']
-        self.assertEqual(proteins(strand), expected)
+        assertEqual(proteins(strand), expected)
 
 
 __ __name__ __ '__main__':

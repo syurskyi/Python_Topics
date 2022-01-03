@@ -18,7 +18,7 @@ For example, [0,2,3,1] is also a valid gray code sequence according to the above
 For now, the judge is able to judge based on one instance of gray code sequence. Sorry about that.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ grayCode(self, n):
         """
         Graycode: The reflected binary code solves this problem by changing only one switch at a time, so there is never

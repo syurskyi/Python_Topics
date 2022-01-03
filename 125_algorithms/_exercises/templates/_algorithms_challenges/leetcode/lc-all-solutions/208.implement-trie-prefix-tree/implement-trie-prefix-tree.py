@@ -1,17 +1,17 @@
-class TrieNode(object):
-  ___ __init__(self):
+c_ TrieNode(object):
+  ___ - ):
     """
     Initialize your data structure here.
     """
-    self.children = [N..] * 26
-    self.isWord = False
-    self.word = ""
+    children = [N..] * 26
+    isWord = F..
+    word = ""
 
 
-class Trie(object):
+c_ Trie(object):
 
-  ___ __init__(self):
-    self.root = TrieNode()
+  ___ - ):
+    root = TrieNode()
 
   ___ insert(self, word):
     """
@@ -19,7 +19,7 @@ class Trie(object):
     :type word: str
     :rtype: void
     """
-    p = self.root
+    p = root
     ___ c __ word:
       cVal = ord(c) - ord("a")
       __ p.children[cVal]:
@@ -29,11 +29,11 @@ class Trie(object):
         p.children[cVal] = newNode
         p = newNode
 
-    p.isWord = True
+    p.isWord = T..
     p.word = word
 
   ___ helper(self, word):
-    p = self.root
+    p = root
     ___ c __ word:
       cVal = ord(c) - ord("a")
       __ p.children[cVal]:
@@ -42,16 +42,16 @@ class Trie(object):
         r.. N..
     r.. p
 
-  ___ search(self, word):
+  ___ s..(self, word):
     """
     Returns if the word is in the trie.
     :type word: str
     :rtype: bool
     """
-    p = self.helper(word)
+    p = helper(word)
     __ p a.. p.isWord:
-      r.. True
-    r.. False
+      r.. T..
+    r.. F..
 
   ___ startsWith(self, prefix):
     """
@@ -60,9 +60,9 @@ class Trie(object):
     :type prefix: str
     :rtype: bool
     """
-    __ self.helper(prefix):
-      r.. True
-    r.. False
+    __ helper(prefix):
+      r.. T..
+    r.. F..
 
 # Your Trie object will be instantiated and called as such:
 # trie = Trie()

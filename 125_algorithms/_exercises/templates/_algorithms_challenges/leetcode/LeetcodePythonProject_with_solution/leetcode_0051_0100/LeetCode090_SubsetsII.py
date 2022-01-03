@@ -3,7 +3,7 @@ Created on May 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ subsetsWithDup(self, nums):
         """
         :type nums: List[int]
@@ -11,7 +11,7 @@ class Solution(object):
         """
         nums.s..()
         res    # list
-        self.helper(nums, 0, [], res)
+        helper(nums, 0, [], res)
         r.. res
     
     ___ helper(self, nums, ind, curr, res):
@@ -20,5 +20,5 @@ class Solution(object):
             __ i > ind a.. nums[i] __ nums[i-1]:
                 continue
             curr.a..(nums[i])
-            self.helper(nums, i+1, curr, res)
+            helper(nums, i+1, curr, res)
             curr.pop()

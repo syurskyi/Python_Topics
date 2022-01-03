@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ solveSudoku(self, board):
         """
         :type board: List[List[str]]
@@ -7,13 +7,13 @@ class Solution:
         __ n.. board o. n.. board[0] o. l..(board) != l..(board[0]):
             r..
 
-        self.dfs(board, 0, 0)
+        dfs(board, 0, 0)
 
     ___ dfs(self, board, x, y):
         n = l..(board)
 
         __ x __ n:
-            r.. True
+            r.. T..
 
         _x, _y = x, y + 1
 
@@ -22,32 +22,32 @@ class Solution:
             _y = 0
 
         __ board[x][y] != '.':
-            __ n.. self.is_valid(board, x, y):
-                r.. False
-            r.. self.dfs(board, _x, _y)
+            __ n.. is_valid(board, x, y):
+                r.. F..
+            r.. dfs(board, _x, _y)
 
         ___ i __ r..(1, n + 1):
             board[x][y] = s..(i)
             __ (
-                self.is_valid(board, x, y) a..
-                self.dfs(board, _x, _y)
+                is_valid(board, x, y) a..
+                dfs(board, _x, _y)
             ):
-                r.. True
+                r.. T..
 
         board[x][y] = '.'
-        r.. False
+        r.. F..
 
     ___ is_valid(self, board, x, y):
         __ board[x][y] n.. __ '123456789':
-            r.. False
+            r.. F..
 
         n = l..(board)
 
         ___ i __ r..(n):
             __ y != i a.. board[x][y] __ board[x][i]:
-                r.. False
+                r.. F..
             __ x != i a.. board[x][y] __ board[i][y]:
-                r.. False
+                r.. F..
 
         r = x // 3 * 3
         c = y // 3 * 3
@@ -57,6 +57,6 @@ class Solution:
                 __ x __ i a.. y __ j:
                     continue
                 __ board[x][y] __ board[i][j]:
-                    r.. False
+                    r.. F..
 
-        r.. True
+        r.. T..

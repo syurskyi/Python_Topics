@@ -3,11 +3,11 @@ ___ check_brackets(string):
 
     stack    # list
     ___ char __ string:
-        __ char __ counterparts.values():
+        __ char __ counterparts.v..
             stack.a..(char)
         ____ char __ counterparts:
             __ n.. stack:
-                r.. False
+                r.. F..
             __ stack.pop() != counterparts[char]:
-                r.. False
+                r.. F..
     r.. n.. stack

@@ -58,16 +58,16 @@ Output:
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
-        r.. self.add(root, v, d, 1, "left")
+        r.. add(root, v, d, 1, "left")
 
     ___ add(self, node, v, d, cur_d, child) -> TreeNode:
         # use the return value for parent's reference 
@@ -77,19 +77,19 @@ class Solution:
             r.. new
 
         __ node:
-            node.left = self.add(node.left, v, d, cur_d + 1, "left")
-            node.right = self.add(node.right, v, d, cur_d + 1, "right")
+            node.left = add(node.left, v, d, cur_d + 1, "left")
+            node.right = add(node.right, v, d, cur_d + 1, "right")
             r.. node
 
 
-class Solution2:
+c_ Solution2:
     ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
         __ d __ 1:
             node = TreeNode(v)
             node.left = root
             r.. node
 
-        self.add(self, root, v, d, 1)
+        add(self, root, v, d, 1)
         r.. root
 
     ___ add(self, node, v, d, cur_d) -> N..
@@ -104,5 +104,5 @@ class Solution2:
             node.right = TreeNode(v)
             node.right.right = right
 
-        self.add(node.left, v, d, cur_d + 1)
-        self.add(node.right, v, d, cur_d + 1)
+        add(node.left, v, d, cur_d + 1)
+        add(node.right, v, d, cur_d + 1)

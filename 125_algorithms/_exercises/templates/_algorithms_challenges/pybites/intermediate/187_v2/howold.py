@@ -6,13 +6,13 @@ ____ dateutil.parser _______ parse
 
 
 @dataclass
-class Actor:
+c_ Actor:
     name: s..
     born: s..
 
 
 @dataclass
-class Movie:
+c_ Movie:
     title: s..
     release_date: s..
 

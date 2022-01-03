@@ -1,9 +1,9 @@
 ___ divisible(num):
     __ num >= 100 a.. num % 100 __ 0:
-        r.. True
+        r.. T..
     ____ num __ 0:
-        r.. True
+        r.. T..
     ____ num < 0 a.. num % 100 __ 0:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

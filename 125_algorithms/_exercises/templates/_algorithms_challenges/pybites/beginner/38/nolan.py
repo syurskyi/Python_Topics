@@ -1,5 +1,5 @@
 _______ xml.etree.ElementTree as ET
-_______ re
+_______ __
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
@@ -28,7 +28,7 @@ ___ get_movies():
 ___ _get_runtime_helper(child):
 
 
-    r.. int(re.search(r'\d+',child.attrib['runtime']).group())
+    r.. int(__.s..(r'\d+',child.attrib['runtime']).group())
 
 ___ get_movie_longest_runtime():
     """Call get_tree again and return the movie title for the movie with the longest

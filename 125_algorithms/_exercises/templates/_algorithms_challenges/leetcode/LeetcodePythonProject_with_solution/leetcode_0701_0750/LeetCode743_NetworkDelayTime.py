@@ -3,7 +3,7 @@ Created on Mar 21, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ networkDelayTime(self, times, N, K):
         """
         :type times: List[List[int]]
@@ -12,7 +12,7 @@ class Solution(object):
         :rtype: int
         """
         _______ heapq
-        path = {}
+        path    # dict
         ___ time __ times:
             sourceMap = path.get(time[0], {})
             __ time[1] n.. __ sourceMap o. sourceMap[time[1]] > time[2]:
@@ -34,12 +34,12 @@ class Solution(object):
                         continue
                     distanceMap[node0] = absDist
                     heapq.heappush(heap, [absDist, node0])
-        ___ val __ distanceMap.values():
+        ___ val __ distanceMap.v..
             __ val > maxVal:
                 maxVal = val
         r.. maxVal __ l..(distanceMap) __ N ____ -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [[2,1,1],[2,3,1],[3,4,1]],
@@ -53,7 +53,7 @@ class Solution(object):
             ],
         ]
         ___ times, N, K __ testCases:
-            result = self.networkDelayTime(times, N, K)
+            result = networkDelayTime(times, N, K)
             print('result: %s' % result)
             print('-='*30+'-')
 

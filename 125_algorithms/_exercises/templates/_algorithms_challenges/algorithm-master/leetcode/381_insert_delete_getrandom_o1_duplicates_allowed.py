@@ -1,10 +1,10 @@
 _______ random
 
 
-class RandomizedCollection:
-    ___ __init__(self):
-        self.A    # list
-        self.I = {}
+c_ RandomizedCollection:
+    ___ - ):
+        A    # list
+        I    # dict
 
     ___ insert(self, val):
         """
@@ -12,7 +12,7 @@ class RandomizedCollection:
         :type val: int
         :rtype: bool
         """
-        A, I = self.A, self.I
+        A, I = A, I
         __ val n.. __ I:
             I[val] = set()
 
@@ -26,9 +26,9 @@ class RandomizedCollection:
         :type val: int
         :rtype: bool
         """
-        A, I = self.A, self.I
+        A, I = A, I
         __ val n.. __ I o. n.. I[val]:
-            r.. False
+            r.. F..
 
         i = I[val].pop()
         _val = A[-1]
@@ -38,14 +38,14 @@ class RandomizedCollection:
 
         A[i] = _val
         A.pop()
-        r.. True
+        r.. T..
 
-    ___ getRandom(self):
+    ___ getRandom
         """
         Get a random element from the collection.
         :rtype: int
         """
-        r.. random.choice(self.A)
+        r.. random.choice(A)
 
 
 # Your RandomizedCollection object will be instantiated and called as such:

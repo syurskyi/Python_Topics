@@ -4,7 +4,7 @@ Created on Feb 26, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxSlidingWindow(self, nums, k):
         """
         :type nums: List[int]
@@ -23,13 +23,13 @@ class Solution(object):
                 res.a..(nums[deque[0]])
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([1,3,-1,-3,5,3,6,7], 3),
         ]
         ___ nums, k __ testCases:
             print('nums: %s' % (nums))
-            result = self.maxSlidingWindow(nums, k)
+            result = maxSlidingWindow(nums, k)
             print('result: %s' % (result))
             print('-='*20+'-')
 

@@ -6,7 +6,7 @@ REF: https://aaronice.gitbooks.io/lintcode/content/data_structure/largest_rectan
 """
 Brute Force: TLE
 """
-class Solution:
+c_ Solution:
     ___ largestRectangleArea(self, H):
         """
         :type H: List[int]
@@ -36,7 +36,7 @@ class Solution:
 """
 Brute Force with Pruning
 """
-class Solution:
+c_ Solution:
     ___ largestRectangleArea(self, H):
         """
         :type H: List[int]
@@ -66,7 +66,7 @@ class Solution:
 """
 Mono-stack
 """
-class Solution:
+c_ Solution:
     ___ largestRectangleArea(self, H):
         """
         :type H: List[int]

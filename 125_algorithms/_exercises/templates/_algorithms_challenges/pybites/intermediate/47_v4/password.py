@@ -1,5 +1,5 @@
 _______ string
-_______ re
+_______ __
 
 PUNCTUATION_CHARS = l..(string.punctuation)
 
@@ -18,9 +18,9 @@ Has not been used before (use: used_passwords)
 ___ validate_password(password):
 
     length = 6 <= l..(password) <= 12
-    digit = l..(re.findall(r'[0-9]', password)) >= 1
-    lower = l..(re.findall(r'[a-z]', password)) >= 1
-    upper = l..(re.findall(r'[A-Z]', password)) >= 1
+    digit = l..(__.findall(r'[0-9]', password)) >= 1
+    lower = l..(__.findall(r'[a-z]', password)) >= 1
+    upper = l..(__.findall(r'[A-Z]', password)) >= 1
     punc = any([c __ PUNCTUATION_CHARS ___ c __ password])
     new = password n.. __ used_passwords
 

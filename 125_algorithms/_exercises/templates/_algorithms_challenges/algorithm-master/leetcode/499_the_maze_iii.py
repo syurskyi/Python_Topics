@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     BFS
     """
@@ -69,13 +69,13 @@ class Solution:
                 paths[_x, _y] = paths[x, y] + [dn]
                 queue.a..((_x, _y))
 
-        r.. ''.join(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
+        r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
 
 
 _______ heapq
 
 
-class Solution2:
+c_ Solution2:
     """
     Dijkstra
     """
@@ -145,4 +145,4 @@ class Solution2:
                 paths[_x, _y] = paths[x, y] + [dn]
                 heapq.heappush(heap, (_x, _y))
 
-        r.. ''.join(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND
+        r.. ''.j..(paths[tx, ty]) __ (tx, ty) __ paths ____ NOT_FOUND

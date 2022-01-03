@@ -4,7 +4,7 @@ Created on Apr 13, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ characterReplacement(self, s, k):
         arr = [0]*26
         maxCount = 0
@@ -20,7 +20,7 @@ class Solution(object):
             res = max(res, i-left+1)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('ABAB', 2),
             ('AABABBA', 1),
@@ -28,7 +28,7 @@ class Solution(object):
         ___ s, k __ testCases:
             print('s: %s' % s)
             print('k: %s' % k)
-            result = self.characterReplacement(s, k)
+            result = characterReplacement(s, k)
             print('result: %s' % result)
             print('-='*20+'-')
 

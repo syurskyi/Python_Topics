@@ -5,52 +5,52 @@ Created on Feb 14, 2018
 '''
 _______ heapq
 
-class MaxStack(object):
+c_ MaxStack(object):
 
-    ___ __init__(self):
+    ___ - ):
         """
         initialize your data structure here.
         """
-        self.stack    # list
-        self.heap    # list
+        stack    # list
+        heap    # list
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: void
         """
-        self.stack.a..(x)
-        heapq.heappush(self.heap, (-x))
+        stack.a..(x)
+        heapq.heappush(heap, (-x))
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: int
         """
-        val = self.stack.pop()
-        self.heap.remove((-val))
-        heapq.heapify(self.heap)
+        val = stack.pop()
+        heap.remove((-val))
+        heapq.heapify(heap)
         r.. val
 
-    ___ top(self):
+    ___ top
         """
         :rtype: int
         """
-        r.. self.stack[-1]
+        r.. stack[-1]
 
-    ___ peekMax(self):
+    ___ peekMax
         """
         :rtype: int
         """
-        r.. -self.heap[0]
+        r.. -heap[0]
 
-    ___ popMax(self):
+    ___ popMax
         """
         :rtype: int
         """
-        val = heapq.heappop(self.heap)
+        val = heapq.heappop(heap)
         val = -val
-        ___ i __ r..(l..(self.stack)-1, -1, -1):
-            __ self.stack[i] __ val:
-                self.stack = self.stack[:i]+self.stack[i+1:]
+        ___ i __ r..(l..(stack)-1, -1, -1):
+            __ stack[i] __ val:
+                stack = stack[:i]+stack[i+1:]
                 break
         r.. val

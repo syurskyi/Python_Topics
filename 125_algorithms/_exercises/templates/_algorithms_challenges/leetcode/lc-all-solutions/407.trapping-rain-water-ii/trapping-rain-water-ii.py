@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ trapRainWater(self, heightMap):
     """
     :type heightMap: List[List[int]]

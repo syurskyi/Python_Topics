@@ -3,7 +3,7 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ robotSim(self, commands, obstacles):
         """
         :type commands: List[int]
@@ -19,7 +19,7 @@ class Solution(object):
             hashset.add(tuple(ob))
         ___ c __ commands:
             __ c __ (-1, -2):
-                d = self.calDirection(d, c)
+                d = calDirection(d, c)
             ____:
                 ___ _ __ r..(c):
                     __ (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) n.. __ hashset:
@@ -35,7 +35,7 @@ class Solution(object):
         d %= 4
         r.. d
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [4,-1,3],
@@ -43,7 +43,7 @@ class Solution(object):
             ],
         ]
         ___ commands, obstacles __ testCases:
-            res = self.robotSim(commands, obstacles)
+            res = robotSim(commands, obstacles)
             print('res: %s' % res)
 
 __ __name__ __ '__main__':

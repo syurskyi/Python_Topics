@@ -35,7 +35,7 @@ ___ convert_to_csv(json_file):
 
    mounts = data["mounts"]["collected"]
    with open(csv_file, "w") as f:
-      headers = [key ___ key __ mounts[0].keys()]
+      headers = [key ___ key __ mounts[0].k..]
       writer = csv.DictWriter(f, fieldnames=headers)
 
       writer.writeheader()

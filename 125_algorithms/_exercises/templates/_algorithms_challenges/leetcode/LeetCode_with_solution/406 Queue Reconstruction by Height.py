@@ -19,24 +19,24 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Node(object):
-    ___ __init__(self, lo, hi, cnt):
-        self.lo = lo
-        self.hi = hi
-        self.cnt = cnt  # size of empty slots
+c_ Node(object):
+    ___ - , lo, hi, cnt):
+        lo = lo
+        hi = hi
+        cnt = cnt  # size of empty slots
 
-        self.left = N..
-        self.right = N..
+        left = N..
+        right = N..
 
-    ___ __repr__(self):
-        r.. repr("[%d,%d)" % (self.lo, self.hi))
+    ___ __repr__
+        r.. repr("[%d,%d)" % (lo, hi))
 
 
-class SegmentTree(object):
+c_ SegmentTree(object):
     """empty space"""
 
-    ___ __init__(self):
-        self.root = N..
+    ___ - ):
+        root = N..
 
     ___ build(self, lo, hi):
         """a node can have right ONLY IF has left"""
@@ -44,8 +44,8 @@ class SegmentTree(object):
         __ lo __ hi-1: r.. Node(lo, hi, 1)
 
         root = Node(lo, hi, hi-lo)
-        root.left = self.build(lo, (hi+lo)/2)
-        root.right = self.build((lo+hi)/2, hi)
+        root.left = build(lo, (hi+lo)/2)
+        root.right = build((lo+hi)/2, hi)
         r.. root
 
     ___ find_delete(self, root, sz):
@@ -56,13 +56,13 @@ class SegmentTree(object):
         __ n.. root.left:
             r.. root.lo
         ____ root.left.cnt >= sz:
-            r.. self.find_delete(root.left, sz)
+            r.. find_delete(root.left, sz)
         ____:
-            r.. self.find_delete(root.right,
+            r.. find_delete(root.right,
                                     sz-root.left.cnt)
 
 
-class Solution(object):
+c_ Solution(object):
     ___ reconstructQueue(self, A):
         """
         :type A: List[List[int]]

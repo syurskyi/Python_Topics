@@ -22,14 +22,14 @@ Note: Do not use the eval built-in library function.
 """
 
 
-class Solution:
+c_ Solution:
     ___ calculate(self, s: s..) -> int:
         """
         make +, - lower precedence operator as a unary operation
         recursively handle bracket
         """
         s = s + "\0"  # signal the end
-        ret, _ = self.eval(s, 0, [])
+        ret, _ = eval(s, 0, [])
         r.. ret
 
     ___ eval(self, s, i, stk):
@@ -62,7 +62,7 @@ class Solution:
                 ____ c __ (")", "\0"):
                     r.. s..(stk), i
             ____ c __ "(":  # "(" is not delimiter
-                operand, i = self.eval(s, i + 1, [])
+                operand, i = eval(s, i + 1, [])
             ____:
                 raise
 

@@ -12,7 +12,7 @@ ___ print_colors():
         __ color__"Quit" o. color__"quit":
             print('bye')
             break
-        __ color.lower() __ VALID_COLORS:
+        __ color.l.. __ VALID_COLORS:
             print(color.lower())
         ____:
             print('Not a valid color')

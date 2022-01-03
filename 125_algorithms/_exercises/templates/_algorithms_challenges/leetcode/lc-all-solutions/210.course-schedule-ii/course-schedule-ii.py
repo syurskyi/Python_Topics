@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findOrder(self, numCourses, prerequisites):
     """
     :type numCourses: int
@@ -10,14 +10,14 @@ class Solution(object):
       visited[start] = 1
       ___ nbr __ graph[start]:
         __ visited[nbr] __ 1:
-          r.. False
+          r.. F..
         __ visited[nbr] != 0:
           continue
-        __ dfs(nbr, visited, graph, ans) __ False:
-          r.. False
+        __ dfs(nbr, visited, graph, ans) __ F..:
+          r.. F..
       ans.a..(start)
       visited[start] = 2
-      r.. True
+      r.. T..
 
     graph = [[] ___ _ __ r..(0, numCourses)]
     ans    # list
@@ -32,7 +32,7 @@ class Solution(object):
       start, end = pre
       __ visited[start] != 0:
         continue
-      __ dfs(start, visited, graph, ans) __ False:
+      __ dfs(start, visited, graph, ans) __ F..:
         r.. []
     ___ i __ r..(0, numCourses):
       __ visited[i] __ 0:

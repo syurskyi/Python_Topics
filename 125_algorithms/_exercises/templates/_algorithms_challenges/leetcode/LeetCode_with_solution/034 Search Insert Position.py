@@ -11,7 +11,7 @@ Here are few examples.
 [1,3,5,6], 0 -> 0
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ searchInsert_complex(self, A, target):
         """
         binary search

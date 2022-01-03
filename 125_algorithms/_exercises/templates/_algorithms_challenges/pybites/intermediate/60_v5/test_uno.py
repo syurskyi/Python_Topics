@@ -22,8 +22,8 @@ ___ test_create_uno_deck_len(deck):
 
 
 ___ test_create_uno_deck_type(deck):
-    ... type(deck) __ l..
-    ... a..(type(card) __ UnoCard ___ card __ deck)
+    ... t..(deck) __ l..
+    ... a..(t..(card) __ UnoCard ___ card __ deck)
 
 
 @pytest.mark.parametrize("suit, count", [

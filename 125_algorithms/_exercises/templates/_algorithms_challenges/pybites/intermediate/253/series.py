@@ -127,7 +127,7 @@ ___ create_series_mask(ser: pd.Series, mask: l..) -> pd.core.series.Series:
     :param ser: Series to perform operation on
     :param mask: The list of letters to be masked
     """
-    r.. ser.apply(l.... x: True __ x __ mask ____ False)
+    r.. ser.apply(l.... x: T.. __ x __ mask ____ F..)
 
 
 ___ custom_series_function(ser: pd.Series,
@@ -161,11 +161,11 @@ ___ custom_series_function(ser: pd.Series,
         ___ index __ relevant:
             lower,upper = stats[index] - within,stats[index] + within
             __ lower <= x <= mean:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..
     
-    mask = pd.Series([False] * l..(ser))
+    mask = pd.Series([F..] * l..(ser))
     ___ stat __ relevant:
         mask |= ser.between(stats.loc[stat] - within,stats.loc[stat] + within)
 

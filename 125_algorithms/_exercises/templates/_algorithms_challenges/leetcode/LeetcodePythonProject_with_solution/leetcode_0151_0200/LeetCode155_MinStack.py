@@ -4,38 +4,38 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-class MinStack(object):
+c_ MinStack(object):
 
-    ___ __init__(self):
+    ___ - ):
         """
         initialize your data structure here.
         """
-        self.stack    # list
+        stack    # list
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: void
         """
-        __ n.. self.stack:
-            self.stack.a..((x, x))
+        __ n.. stack:
+            stack.a..((x, x))
         ____:
-            self.stack.a..((x, m..(self.stack[-1][1], x)))
+            stack.a..((x, m..(stack[-1][1], x)))
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: void
         """
-        self.stack.pop()
+        stack.pop()
 
-    ___ top(self):
+    ___ top
         """
         :rtype: int
         """
-        r.. self.stack[-1][0]
+        r.. stack[-1][0]
 
-    ___ getMin(self):
+    ___ getMin
         """
         :rtype: int
         """
-        r.. self.stack[-1][1]
+        r.. stack[-1][1]

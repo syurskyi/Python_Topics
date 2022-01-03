@@ -1,38 +1,38 @@
-class Rails:
+c_ Rails:
 
-    ___ __init__(self, num_rails):
-        self.num_rails = num_rails
-        self.rails = [[] ___ _ __ r..(num_rails)]
+    ___ - , num_rails):
+        num_rails = num_rails
+        rails = [[] ___ _ __ r..(num_rails)]
 
     ___ populate_rails_linear(self, message, rail_lengths):
         message_list = l..(message)
-        ___ rail __ self.linear_iterator(rail_lengths):
+        ___ rail __ linear_iterator(rail_lengths):
             rail.a..(message_list.pop(0))
 
     ___ populate_rails_zig_zag(self, message):
         message_list = l..(message)
-        ___ rail __ self.zig_zag_iterator(message):
+        ___ rail __ zig_zag_iterator(message):
             rail.a..(message_list.pop(0))
 
-    ___ to_string_linear(self):
-        r.. ''.join([data ___ rail __ self.rails ___ data __ rail])
+    ___ to_string_linear
+        r.. ''.j..([data ___ rail __ rails ___ data __ rail])
 
     ___ to_string_zig_zag(self, message):
-        r.. ''.join([rail.pop(0) ___ rail __
-                        self.zig_zag_iterator(message)])
+        r.. ''.j..([rail.pop(0) ___ rail __
+                        zig_zag_iterator(message)])
 
     ___ linear_iterator(self, rail_lengths):
-        ___ index __ r..(l..(self.rails)):
+        ___ index __ r..(l..(rails)):
             ___ rail_length __ r..(rail_lengths[index]):
-                y.. self.rails[index]
+                y.. rails[index]
 
     ___ zig_zag_iterator(self, message):
         index = 0
-        increasing = True
+        increasing = T..
         ___ _ __ message:
-            y.. self.rails[index]
-            increasing = self.direction(index, increasing)
-            index = self.increment_index(index, increasing)
+            y.. rails[index]
+            increasing = direction(index, increasing)
+            index = increment_index(index, increasing)
 
     ___ increment_index(self, index, increasing):
         __ increasing:
@@ -42,9 +42,9 @@ class Rails:
 
     ___ direction(self, index, increasing):
         __ index __ 0:
-            r.. True
-        ____ index __ self.num_rails - 1:
-            r.. False
+            r.. T..
+        ____ index __ num_rails - 1:
+            r.. F..
         ____:
             r.. increasing
 

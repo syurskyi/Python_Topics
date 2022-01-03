@@ -14,7 +14,7 @@ ___ remove_leap_days(df):
     indexed by date.
     '''
     df.drop(df.index[(df.Date.dt.month __ 2) & (df.Date.dt.day __ 29)],
-            inplace=True)
+            inplace=T..)
 
 
 ___ prep_dfs(df):

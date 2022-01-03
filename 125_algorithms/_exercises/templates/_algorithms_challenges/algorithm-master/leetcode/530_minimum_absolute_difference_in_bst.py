@@ -8,7 +8,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     time: O(n)
     space: O(1)
@@ -22,14 +22,14 @@ class Solution:
         :rtype: int
         """
         __ n.. root:
-            r.. self.ans
+            r.. ans
 
-        self.getMinimumDifference(root.left)
+        getMinimumDifference(root.left)
 
-        __ self.pre a.. root.val - self.pre.val < self.ans:
-            self.ans = root.val - self.pre.val
+        __ pre a.. root.val - pre.val < ans:
+            ans = root.val - pre.val
 
-        self.pre = root
+        pre = root
 
-        self.getMinimumDifference(root.right)
-        r.. self.ans
+        getMinimumDifference(root.right)
+        r.. ans

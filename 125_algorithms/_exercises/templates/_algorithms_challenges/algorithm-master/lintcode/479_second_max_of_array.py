@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: An integer array
     @return: The second max number in the array.

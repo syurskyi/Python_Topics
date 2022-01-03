@@ -3,7 +3,7 @@ Created on Mar 18, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ backspaceCompare(self, S, T):
         """
         :type S: str
@@ -24,12 +24,12 @@ class Solution(object):
                 t0 += c
         r.. s0 __ t0
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ s, t __ testCases:
-            result = self.backspaceCompare(s, t)
+            result = backspaceCompare(s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -7,7 +7,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ hasPathSum(self, root, s..):
     """
     :type root: TreeNode
@@ -24,6 +24,6 @@ class Solution(object):
         __ right:
           queue.a..((p.right, s + p.right.val))
         __ n.. left a.. n.. right a.. s __ s..:
-          r.. True
-      r.. False
-    r.. False
+          r.. T..
+      r.. F..
+    r.. F..

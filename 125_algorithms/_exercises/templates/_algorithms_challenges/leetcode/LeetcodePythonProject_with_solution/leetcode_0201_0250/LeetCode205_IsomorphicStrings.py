@@ -3,27 +3,27 @@ Created on Feb 18, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isIsomorphic(self, s, t):
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        hashmap = {}
+        hashmap    # dict
         hashset = set()
         __ l..(s) != l..(t):
-            r.. False
+            r.. F..
         ___ c1, c2 __ z..(s, t):
             __ c1 n.. __ hashmap:
                 __ c2 __ hashset:
-                    r.. False
+                    r.. F..
                 hashmap[c1] = c2
                 hashset.add(c2)
             ____:
                 __ hashmap[c1] != c2:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..
     
     ___ isIsomorphic_old(self, s, t):
         """
@@ -31,20 +31,20 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        __ l..(s) != l..(t): r.. False
-        hashmap1, hashmap2 = {}, {}
+        __ l..(s) != l..(t): r.. F..
+        hashmap1, hashmap2    # dict, {}
         ___ c1, c2 __ z..(s, t):
             __ c1 __ hashmap1 a..\
             (c2 n.. __ hashmap2 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1):
-                r.. False
+                r.. F..
             ____ c2 __ hashmap2 a..\
             (c1 n.. __ hashmap1 o. hashmap1[c1] != c2 o. hashmap2[c2] != c1):
-                r.. False
+                r.. F..
             hashmap1[c1] = c2
             hashmap2[c2] = c1
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('ab', 'aa'),
             ('egg', 'add'),
@@ -53,7 +53,7 @@ class Solution(object):
         ]
         ___ s, t __ testCases:
             print('s: %s, t: %s' % (s, t))
-            result = self.isIsomorphic(s, t)
+            result = isIsomorphic(s, t)
             print('result: %s' % (result))
             print('-='*20+'-')
 

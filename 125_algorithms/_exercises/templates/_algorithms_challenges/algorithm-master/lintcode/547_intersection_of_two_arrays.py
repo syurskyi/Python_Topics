@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ intersection(self, a, b):
         """
         :type a: List[int]
@@ -20,7 +20,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     ___ intersection(self, a, b):
         """
         :type a: List[int]

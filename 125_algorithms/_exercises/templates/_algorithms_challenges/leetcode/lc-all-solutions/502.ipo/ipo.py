@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findMaximizedCapital(self, k, W, Profits, Capital):
     current    # list
     future = s..(z..(Capital, Profits))[::-1]

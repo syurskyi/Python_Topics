@@ -1,6 +1,6 @@
 ___ exists_higher(lst, n):
     ___ i __ lst:
         __ i >= n:
-            r.. True
+            r.. T..
     ____:
-        r.. False
+        r.. F..

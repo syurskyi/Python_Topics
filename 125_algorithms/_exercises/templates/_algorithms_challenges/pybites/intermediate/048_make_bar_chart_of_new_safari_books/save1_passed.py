@@ -1,5 +1,5 @@
 _______ urllib.request
-_______ re
+_______ __
 
 
 ___ create_chart():
@@ -9,19 +9,19 @@ ___ create_chart():
 
     books    # list
     ___ i, line __ e..(paragraphs):
-        regex = re.compile(r'- sending to slack channel')
-        __ regex.search(line):
+        regex = __.c..(r'- sending to slack channel')
+        __ regex.s..(line):
             matches = paragraphs[i-1]
-            python_books = re.compile(r'Python')
-            __ python_books.search(matches):
+            python_books = __.c..(r'Python')
+            __ python_books.s..(matches):
                 info = matches.s.. [0], '🐍'
                 books.a..(info)
             ____:
                 info = matches.s.. [0], '.'
                 books.a..(info)
 
-    d = {}
+    d    # dict
     ___ date, book __ books:
         d.setdefault(date, []).a..(book)
 
-    print('\n'.join(f"{k} {''.join(v)}" ___ k, v __ d.items()))
+    print('\n'.j..(f"{k} {''.j..(v)}" ___ k, v __ d.items()))

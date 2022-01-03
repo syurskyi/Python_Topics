@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findLUSlength(self, strs):
     """
     :type strs: List[str]
@@ -16,17 +16,17 @@ class Solution(object):
       ___ c __ s:
         idx = bisect.bisect_left(d[c], start)
         __ l..(d[c]) __ 0 o. idx >= l..(d[c]):
-          r.. False
+          r.. F..
         start = d[c][idx] + 1
-      r.. True
+      r.. T..
 
     ans = -1
     strs.s..(key=l.., r.._T..
     ___ i __ r..(l..(strs)):
-      flag = True
+      flag = T..
       ___ j __ r..(l..(strs)):
         __ i != j a.. (findLUSlength(strs[i], strs[j]) __ -1 o. isSubsequence(strs[i], strs[j])):
-          flag = False
+          flag = F..
           break
       __ flag:
         r.. l..(strs[i])

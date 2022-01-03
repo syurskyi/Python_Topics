@@ -3,7 +3,7 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numSubarrayBoundedMax(self, A, L, R):
         """
         :type A: List[int]
@@ -26,7 +26,7 @@ class Solution(object):
                 count = 0
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [2, 1, 4, 3],
@@ -42,7 +42,7 @@ class Solution(object):
             ],
         ]
         ___ arr, l, r __ testCases:
-            result = self.numSubarrayBoundedMax(arr, l, r)
+            result = numSubarrayBoundedMax(arr, l, r)
             print('result: %s' % result)
             print('-='*30+'-')
 

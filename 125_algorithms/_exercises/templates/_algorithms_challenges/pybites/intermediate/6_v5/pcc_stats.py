@@ -6,7 +6,7 @@ _______ urllib.request
 
 # prep
 
-tempfile = os.path.join('/tmp', 'dirnames')
+tempfile = os.path.j..('/tmp', 'dirnames')
 __ n.. os.path.isfile(tempfile):
     urllib.request.urlretrieve('http://bit.ly/2ABUTjv', tempfile)
 

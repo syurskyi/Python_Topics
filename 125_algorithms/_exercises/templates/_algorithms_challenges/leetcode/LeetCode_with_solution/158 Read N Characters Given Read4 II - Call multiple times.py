@@ -14,9 +14,9 @@ ___ read4(buf):
     r.. 0
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.prev    # list
+c_ Solution(object):
+    ___ - ):
+        prev    # list
 
     ___ read(self, buf, n):
         """
@@ -26,9 +26,9 @@ class Solution(object):
         :type n: Maximum number of characters to read (int)
         :rtype: The number of characters read (int)
         """
-        l = m..(l..(self.prev), n)
-        buf[:l] = self.prev[:l]
-        self.prev = self.prev[l:]  # pitfall self.prev = []
+        l = m..(l..(prev), n)
+        buf[:l] = prev[:l]
+        prev = prev[l:]  # pitfall self.prev = []
 
         idx = l  # the next reading
         w.... idx < n:
@@ -40,7 +40,7 @@ class Solution(object):
                 __ r < 4: r.. idx
             ____:
                 buf[idx:n] = buf4[:n-idx]
-                self.prev = buf4[n-idx:r]  # pitfall buf4[n-idx:]
+                prev = buf4[n-idx:r]  # pitfall buf4[n-idx:]
                 idx = n
 
         r.. idx

@@ -1,23 +1,23 @@
-class Solution:
-  ___ __init__(self):
-    self.n1 = N..
-    self.n2 = N..
-    self.pre = N..
+c_ Solution:
+  ___ - ):
+    n1 = N..
+    n2 = N..
+    pre = N..
 
   ___ findBadNode(self, root):
     __ root __ N.. r..
-    self.findBadNode(root.left)
-    __ self.pre __ n.. N..
-      __ root.val < self.pre.val:
-        __ self.n1 __ N..
-          self.n1 = self.pre
-          self.n2 = root
+    findBadNode(root.left)
+    __ pre __ n.. N..
+      __ root.val < pre.val:
+        __ n1 __ N..
+          n1 = pre
+          n2 = root
         ____:
-          self.n2 = root
-    self.pre = root
-    self.findBadNode(root.right)
+          n2 = root
+    pre = root
+    findBadNode(root.right)
 
   ___ recoverTree(self, root):
-    self.findBadNode(root)
-    __ self.n1 __ n.. N.. a.. self.n2 __ n.. N..
-      self.n1.val, self.n2.val = self.n2.val, self.n1.val
+    findBadNode(root)
+    __ n1 __ n.. N.. a.. n2 __ n.. N..
+      n1.val, n2.val = n2.val, n1.val

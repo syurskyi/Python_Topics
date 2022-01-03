@@ -8,7 +8,7 @@ Note: You may not slant the container.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ maxArea(self, height):
         """
         Two pointers scanning

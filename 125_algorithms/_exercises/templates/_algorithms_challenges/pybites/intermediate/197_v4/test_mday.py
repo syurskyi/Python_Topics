@@ -6,7 +6,7 @@ ____ mday _______ get_mothers_day_date
 
 
 ___ test_check_type():
-    ... type(get_mothers_day_date(2019)) __ date
+    ... t..(get_mothers_day_date(2019)) __ date
 
 
 @pytest.mark.parametrize('arg,expected', [

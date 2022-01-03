@@ -1,12 +1,12 @@
-class Solution(object):
+c_ Solution(object):
   ___ longestPalindrome(self, s):
     """
     :type s: str
     :rtype: int
     """
     maxLen = 0
-    single = False
-    d = {}
+    single = F..
+    d    # dict
     ___ c __ s:
       d[c] = d.get(c, 0) + 1
 
@@ -19,5 +19,5 @@ class Solution(object):
       __ n.. single:
         __ d[key] __ 1:
           maxLen += 1
-          single = True
+          single = T..
     r.. maxLen

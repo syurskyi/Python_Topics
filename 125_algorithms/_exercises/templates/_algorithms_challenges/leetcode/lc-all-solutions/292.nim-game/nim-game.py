@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ canWinNim(self, n):
     """
     :type n: int

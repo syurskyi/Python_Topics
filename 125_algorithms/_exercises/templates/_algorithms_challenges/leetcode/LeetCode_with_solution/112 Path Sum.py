@@ -15,13 +15,13 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     ___ hasPathSum(self, root, s..):
         """
         dfs
@@ -32,7 +32,7 @@ class Solution:
         """
         # trivial
         __ n.. root:
-            r.. False
+            r.. F..
 
         # don't prune, possible negative
         # if sum<0:
@@ -42,10 +42,10 @@ class Solution:
 
         # terminal condition
         __ s..__0 a.. root.left __ N.. a.. root.right __ N..
-            r.. True
+            r.. T..
 
         # dfs without pre-checking
-        r.. self.hasPathSum(root.left, s..) o. self.hasPathSum(root.right, s..)
+        r.. hasPathSum(root.left, s..) o. hasPathSum(root.right, s..)
 
 
 

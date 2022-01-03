@@ -31,7 +31,7 @@ ____ typing _______ List
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ commonChars(self, A: List[s..]) -> List[s..]:
         """
         running counter

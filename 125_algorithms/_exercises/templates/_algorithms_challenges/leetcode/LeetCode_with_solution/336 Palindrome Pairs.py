@@ -19,14 +19,14 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class TrieNode:
-    ___ __init__(self):
-        self.pali_prefix_idxes    # list  # suffix ends, prefix pali
-        self.word_idx = N..
-        self.children = defaultdict(TrieNode)
+c_ TrieNode:
+    ___ - ):
+        pali_prefix_idxes    # list  # suffix ends, prefix pali
+        word_idx = N..
+        children = defaultdict(TrieNode)
 
 
-class Solution:
+c_ Solution:
     ___ palindromePairs(self, words: List[s..]) -> List[List[int]]:
         """
         Brute force, i, j and then check palindrom
@@ -56,7 +56,7 @@ class Solution:
             cur = root
             ___ i __ r..(l..(w) - 1, -1, -1):
                 #  cur.children[w[i]]  # error, pre-advancing the trie is unable to handle empty str
-                __ self.is_palindrome(w, 0, i + 1):
+                __ is_palindrome(w, 0, i + 1):
                     cur.pali_prefix_idxes.a..(idx)
 
                 cur = cur.children[w[i]]
@@ -69,7 +69,7 @@ class Solution:
             cur = root
             ___ i __ r..(l..(w)):
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
-                __ self.is_palindrome(w, i, l..(w)) a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
+                __ is_palindrome(w, i, l..(w)) a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
                     ret.a..([idx, cur.word_idx])
 
                 cur = cur.children.get(w[i], N..)
@@ -87,10 +87,10 @@ class Solution:
         j = hi - 1
         w.... i < j:
             __ w[i] != w[j]:
-                r.. False
+                r.. F..
             i += 1
             j -= 1
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":

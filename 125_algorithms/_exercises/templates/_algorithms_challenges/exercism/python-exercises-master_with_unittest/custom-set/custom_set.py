@@ -1,8 +1,8 @@
-class CustomSet(object):
-    ___ __init__(self, elements=[]):
+c_ CustomSet(object):
+    ___ - , elements=[]):
         pass
 
-    ___ isempty(self):
+    ___ isempty
         pass
 
     ___ __contains__(self, element):

@@ -3,7 +3,7 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ canPlaceFlowers(self, flowerbed, n):
         """
         :type flowerbed: List[int]
@@ -17,10 +17,10 @@ class Solution(object):
                 n -= 1
                 flowerbed[i] = 1
             __ n <= 0:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 0, 0, 0, 1],
@@ -46,7 +46,7 @@ class Solution(object):
         ___ flowerbed, n __ testCases:
             print('flowerbed: %s' % flowerbed)
             print('n: %s' % n)
-            result = self.canPlaceFlowers(flowerbed, n)
+            result = canPlaceFlowers(flowerbed, n)
             print('result: %s' % result)
             print('-='*30+'-')
 

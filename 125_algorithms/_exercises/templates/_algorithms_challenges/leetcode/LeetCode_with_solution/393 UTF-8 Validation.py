@@ -38,7 +38,7 @@ But the second continuation byte does not start with 10, so it is invalid.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ validUtf8(self, data):
         """
         starts with 0, then skip
@@ -50,7 +50,7 @@ class Solution(object):
         ___ d __ data:
             __ d & 0x80 __ 0:
                 __ required != 0:
-                    r.. False
+                    r.. F..
             ____:
                 one_cnt = 0
                 w.... d & 0x80 __ 0x80:
@@ -59,16 +59,16 @@ class Solution(object):
 
                 __ required != 0:
                     __ one_cnt != 1:
-                        r.. False
+                        r.. F..
                     required -= 1
                 ____:
                     __ one_cnt __ 1:
-                        r.. False
+                        r.. F..
                     required += (one_cnt - 1)
 
         r.. required __ 0
 
 
 __ __name__ __ "__main__":
-    ... Solution().validUtf8([197, 130, 1]) __ True
-    ... Solution().validUtf8([235, 140, 4]) __ False
+    ... Solution().validUtf8([197, 130, 1]) __ T..
+    ... Solution().validUtf8([235, 140, 4]) __ F..

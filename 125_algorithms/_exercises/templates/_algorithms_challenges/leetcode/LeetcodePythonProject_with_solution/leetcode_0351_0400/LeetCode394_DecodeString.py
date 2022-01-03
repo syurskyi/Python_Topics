@@ -4,7 +4,7 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ deconString(self, s):
         stack = [['', 1]]
         num = ''
@@ -39,7 +39,7 @@ class Solution(object):
                     j+=1
                 nextInd = j
                 subStr = s[i+1:j-1]
-                tmp = self.decodeString(subStr)
+                tmp = decodeString(subStr)
                 j = i
                 w.... j-1 >= 0 a.. s[j-1].isdigit():
                     j-=1

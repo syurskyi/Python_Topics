@@ -16,7 +16,7 @@ ___ capitalize_sentences(text: s..) -> s..:
             first_word_after_end_of_sentence_index = i + 1 
 
 
-    r.. ' '.join(words)
+    r.. ' '.j..(words)
             
 
 

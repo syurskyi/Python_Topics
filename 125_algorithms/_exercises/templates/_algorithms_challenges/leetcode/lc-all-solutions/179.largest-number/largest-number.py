@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
   # @param {integer[]} nums
   # @return {string}
   ___ largestNumber(self, nums):
@@ -12,4 +12,4 @@ class Solution:
         r.. 0
 
     nums.s..(cmp=cmpFunc, r.._T..
-    r.. "".join(s..(num) ___ num __ nums) __ s..(nums) != 0 ____ "0"
+    r.. "".j..(s..(num) ___ num __ nums) __ s..(nums) != 0 ____ "0"

@@ -88,9 +88,9 @@ ___ get_continent(country: s..) -> s..:
     :returns: The continent of the country
     :rtype: str
     """
-    ___ continent, countries __ country_lookup.items():
+    ___ continent, countries __ country_lookup.i..:
         ___ c __ countries:
-            __ country.lower() __ c.lower():
+            __ country.l.. __ c.l..:
                 r.. continent
 
 
@@ -112,7 +112,7 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
     pycon_events    # list
     ___ event __ events:
         event_json = json.loads(event.text.strip())
-        __ 'pycon' __ event_json["name"].lower():
+        __ 'pycon' __ event_json["name"].l..:
             # { "@context": "http://schema.org", "@type": "Event", 
             # "location": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Trento", "addressCountry": "Italy" }, 
             # "name": "Trento, Italy" }, "name": "EuroSciPy", "startDate": "2018-08-28", "url": "https://www.euroscipy.org/2018/", "endDate": "2018-09-01" }

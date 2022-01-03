@@ -1,64 +1,64 @@
-class Node:
-    ___ __init__(self, value, next_node_ N..
-        self._value = value
-        self._next_node = next_node
+c_ Node:
+    ___ - , value, next_node_ N..
+        _value = value
+        _next_node = next_node
 
-    ___ value(self):
-        r.. self._value
+    ___ value
+        r.. _value
 
-    ___ next(self):
-        r.. self._next_node
+    ___ next
+        r.. _next_node
 
 
-class LinkedList:
-    ___ __init__(self, values=[]):
-        self._size = 0
-        self._head = N..
+c_ LinkedList:
+    ___ - , values=[]):
+        _size = 0
+        _head = N..
 
         ___ value __ values:
-            self.push(value)
+            push(value)
 
-    ___ __len__(self):
-        r.. self._size
+    ___ __len__
+        r.. _size
 
-    ___ head(self):
-        __ self._head __ N..
+    ___ head
+        __ _head __ N..
             raise EmptyListException("Head is empty")
-        r.. self._head
+        r.. _head
 
     ___ push(self, value):
-        new_node = Node(value, self._head)
-        self._head = new_node
-        self._size += 1
+        new_node = Node(value, _head)
+        _head = new_node
+        _size += 1
 
-    ___ pop(self):
-        current_head = self.head()
-        self._head = current_head.next()
-        self._size -= 1
+    ___ pop
+        current_head = head()
+        _head = current_head.next()
+        _size -= 1
         r.. current_head.value()
 
-    ___ reversed(self):
+    ___ reversed
         r.. LinkedList(self)
 
-    ___ __iter__(self):
+    ___ __iter__
         r.. LinkedListIterator(self)
 
 
-class LinkedListIterator:
-    ___ __init__(self, linked_list):
-        self._current = linked_list._head
+c_ LinkedListIterator:
+    ___ - , linked_list):
+        _current = linked_list._head
 
-    ___ __iter__(self):
+    ___ __iter__
         r.. self
 
-    ___ __next__(self):
-        __ self._current __ N..
+    ___ __next__
+        __ _current __ N..
             raise StopIteration
-        current_value = self._current.value()
-        self._current = self._current.next()
+        current_value = _current.value()
+        _current = _current.next()
         r.. current_value
 
 
-class EmptyListException(Exception):
-    ___ __init__(self, message):
-        self.message = message
+c_ EmptyListException(Exception):
+    ___ - , message):
+        message = message

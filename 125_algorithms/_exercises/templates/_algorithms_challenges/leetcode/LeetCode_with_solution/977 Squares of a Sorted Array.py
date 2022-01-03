@@ -23,7 +23,7 @@ ____ typing _______ List
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ sortedSquares(self, A: List[int]) -> List[int]:
         """
         started from two ends

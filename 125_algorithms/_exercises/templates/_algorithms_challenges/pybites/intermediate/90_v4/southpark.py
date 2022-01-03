@@ -1,6 +1,6 @@
 ____ collections _______ Counter, defaultdict
 _______ csv
-_______ re
+_______ __
 _______ requests
 
 CSV_URL = 'https://raw.githubusercontent.com/pybites/SouthParkData/master/by-season/Season-{}.csv' # noqa E501
@@ -24,7 +24,7 @@ ___ get_num_words_spoken_by_character_per_episode(content):
     next(rows)                  # skip header
     ___ row __ rows:
         epi, char, line = row[1:]
-        num_words = l..(re.findall(r'(\S+)', line))
+        num_words = l..(__.findall(r'(\S+)', line))
         words_spoken[char].update({epi: num_words})
 
     r.. words_spoken

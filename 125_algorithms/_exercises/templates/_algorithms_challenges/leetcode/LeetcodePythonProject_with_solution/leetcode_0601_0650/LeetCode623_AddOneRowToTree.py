@@ -4,13 +4,13 @@ Created on Sep 10, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ addOneRow(self, root, v, d):
         """
         :type root: TreeNode
@@ -55,7 +55,7 @@ class Solution(object):
             level += 1
         r.. root
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 TreeNode(4, TreeNode(2, TreeNode(3), TreeNode(1)), TreeNode(6, TreeNode(5))),
@@ -69,7 +69,7 @@ class Solution(object):
             ],
         ]
         ___ root, v, d __ testCases:
-            newRoot = self.addOneRow(root, v, d)
+            newRoot = addOneRow(root, v, d)
             print(newRoot.val)
             print('-='*30+'-')
 

@@ -3,7 +3,7 @@ Merge Sort
 time: O(n)
 space: O(1)
 """
-class Solution:
+c_ Solution:
     ___ inputStream(self, a, b):
         """
         :type a: str
@@ -49,7 +49,7 @@ Stack
 time: O(n)
 space: O(n)
 """
-class Solution:
+c_ Solution:
     ___ inputStream(self, a, b):
         """
         :type a: str

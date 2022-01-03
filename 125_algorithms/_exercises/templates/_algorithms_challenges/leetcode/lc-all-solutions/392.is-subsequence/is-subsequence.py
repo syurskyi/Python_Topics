@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isSubsequence(self, s, t):
     """
     :type s: str
@@ -12,6 +12,6 @@ class Solution(object):
     ___ c __ s:
       idx = bisect.bisect_left(d[c], start)
       __ l..(d[c]) __ 0 o. idx >= l..(d[c]):
-        r.. False
+        r.. F..
       start = d[c][idx] + 1
-    r.. True
+    r.. T..

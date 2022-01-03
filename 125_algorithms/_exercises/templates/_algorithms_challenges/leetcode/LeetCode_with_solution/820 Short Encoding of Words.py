@@ -27,7 +27,7 @@ Each word has only lowercase letters.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ minimumLengthEncoding(self, words: List[s..]) -> int:
         """
         suffix trie
@@ -35,7 +35,7 @@ class Solution:
 
         fast trie with dict
         """
-        root = {}
+        root    # dict
         ends    # list
         ___ word __ set(words):
             cur = root

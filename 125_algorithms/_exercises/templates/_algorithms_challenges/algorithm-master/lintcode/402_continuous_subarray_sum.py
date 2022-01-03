@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: An integer array
     @return: A list of integers includes the index of the first number and the index of the last number

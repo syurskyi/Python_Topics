@@ -3,7 +3,7 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ shoppingOffers(self, price, special, needs):
         """
         :type price: List[int]
@@ -11,30 +11,30 @@ class Solution(object):
         :type needs: List[int]
         :rtype: int
         """
-        self.minPrice = s..([p*n ___ p, n __ z..(price, needs)])
-        self.helper(price, special, needs, 0)
-        r.. self.minPrice
+        minPrice = s..([p*n ___ p, n __ z..(price, needs)])
+        helper(price, special, needs, 0)
+        r.. minPrice
     
     ___ helper(self, price, special, needs, curPrice):
         n = l..(price)
-        added = False
+        added = F..
         ___ arr __ special:
-            overflow = False
+            overflow = F..
             ___ i __ r..(n):
                 __ needs[i] < arr[i]:
-                    overflow = True
+                    overflow = T..
                 needs[i] -= arr[i]
             __ n.. overflow:
-                added = True
-                self.helper(price, special, needs, curPrice+arr[-1])
+                added = T..
+                helper(price, special, needs, curPrice+arr[-1])
             ___ i __ r..(n):
                 needs[i] += arr[i]
         __ n.. added:
             ___ i __ r..(n):
                 curPrice += needs[i]*price[i]
-            self.minPrice = m..(self.minPrice, curPrice)
+            minPrice = m..(minPrice, curPrice)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [2,5],
@@ -61,7 +61,7 @@ class Solution(object):
             print('price: %s' % price)
             print('special: %s' % special)
             print('needs: %s' % needs)
-            result = self.shoppingOffers(price, special, needs)
+            result = shoppingOffers(price, special, needs)
             print('result: %s' % result)
             print('-='*30+'-')
 

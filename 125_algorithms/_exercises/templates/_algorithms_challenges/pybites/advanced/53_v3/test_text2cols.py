@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 ____ text2cols _______ text_to_columns
 
@@ -11,7 +11,7 @@ ___ test_text_to_one_col():
     ]
     output = text_to_columns(text).s..("\n")
     ___ line, match __ z..(output, expected):
-        ... re.search(match, line)
+        ... __.s..(match, line)
 
 
 ___ test_text_to_two_cols():
@@ -25,7 +25,7 @@ ___ test_text_to_two_cols():
     ]
     output = text_to_columns(text).s..("\n")
     ___ line, match __ z..(output, expected):
-        ... re.search(match, line)
+        ... __.s..(match, line)
 
 
 ___ test_text_to_three_cols():
@@ -42,7 +42,7 @@ ___ test_text_to_three_cols():
     ]
     output = text_to_columns(text).s..("\n")
     ___ line, match __ z..(output, expected):
-        ... re.search(match, line)
+        ... __.s..(match, line)
 
 
 ___ test_text_to_four_cols():
@@ -62,4 +62,4 @@ ___ test_text_to_four_cols():
     ]
     output = text_to_columns(text).s..("\n")
     ___ line, match __ z..(output, expected):
-        ... re.search(match, line)
+        ... __.s..(match, line)

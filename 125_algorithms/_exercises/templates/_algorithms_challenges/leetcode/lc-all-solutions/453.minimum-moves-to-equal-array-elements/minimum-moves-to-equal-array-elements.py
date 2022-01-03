@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minMoves(self, nums):
     """
     :type nums: List[int]

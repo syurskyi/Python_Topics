@@ -6,14 +6,14 @@ ____ rest_api _______ RestAPI
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.1
 
-class RestAPITest(unittest.TestCase):
-    ___ test_no_users(self):
+c_ RestAPITest(unittest.TestCase):
+    ___ test_no_users
         database = {"users": []}
         api = RestAPI(database)
         response = api.get('/users')
-        self.assertDictEqual(json.loads(response), database)
+        assertDictEqual(json.loads(response), database)
 
-    ___ test_add_user(self):
+    ___ test_add_user
         database = {"users": []}
         api = RestAPI(database)
         payload = json.dumps({
@@ -26,9 +26,9 @@ class RestAPITest(unittest.TestCase):
             'owed_by': {},
             'balance': 0
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
-    ___ test_get_single_user(self):
+    ___ test_get_single_user
         database = {
             'users': [
                 {
@@ -60,9 +60,9 @@ class RestAPITest(unittest.TestCase):
                 }
             ]
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
-    ___ test_iou_both_users_have_0_balance(self):
+    ___ test_iou_both_users_have_0_balance
         database = {
             'users': [
                 {
@@ -106,9 +106,9 @@ class RestAPITest(unittest.TestCase):
                 }
             ]
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
-    ___ test_borrower_has_negative_balance(self):
+    ___ test_borrower_has_negative_balance
         database = {
             'users': [
                 {
@@ -163,9 +163,9 @@ class RestAPITest(unittest.TestCase):
                 }
             ]
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
-    ___ test_lender_has_negative_balance(self):
+    ___ test_lender_has_negative_balance
         database = {
             'users': [
                 {
@@ -221,9 +221,9 @@ class RestAPITest(unittest.TestCase):
                 }
             ]
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
-    ___ test_lender_owes_borrower(self):
+    ___ test_lender_owes_borrower
         database = {
             "users": [
                 {
@@ -271,9 +271,9 @@ class RestAPITest(unittest.TestCase):
                 }
             ]
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
-    ___ test_lender_owes_borrower_less_than_new_loan(self):
+    ___ test_lender_owes_borrower_less_than_new_loan
         database = {
             "users": [
                 {
@@ -323,9 +323,9 @@ class RestAPITest(unittest.TestCase):
                 }
             ]
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
-    ___ test_lender_owes_borrower_same_as_new_loan(self):
+    ___ test_lender_owes_borrower_same_as_new_loan
         database = {
             "users": [
                 {
@@ -373,7 +373,7 @@ class RestAPITest(unittest.TestCase):
                 }
             ]
         }
-        self.assertDictEqual(json.loads(response), expected)
+        assertDictEqual(json.loads(response), expected)
 
 
 __ __name__ __ '__main__':

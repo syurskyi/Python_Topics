@@ -22,25 +22,25 @@ when stones == i - 1 or i - 2
 """
 
 
-class Solution:
+c_ Solution:
     ___ firstWillWin(self, n):
         """
         :type n: int
         :rtype: bool
         """
         __ n.. n:
-            r.. False
+            r.. F..
         __ n < 3:
-            r.. True
+            r.. T..
 
-        dp = [False] * n
-        dp[0] = dp[1] = True
+        dp = [F..] * n
+        dp[0] = dp[1] = T..
 
         ___ i __ r..(2, n):
             __ (
-                dp[i - 1] __ False o.
-                dp[i - 2] __ False
+                dp[i - 1] __ F.. o.
+                dp[i - 2] __ F..
             ):
-                dp[i] = True
+                dp[i] = T..
 
         r.. dp[n - 1]

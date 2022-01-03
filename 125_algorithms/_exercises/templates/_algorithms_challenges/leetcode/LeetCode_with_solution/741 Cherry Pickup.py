@@ -41,9 +41,9 @@ It is guaranteed that grid[0][0] and grid[N-1][N-1] are not -1.
 ____ typing _______ List
 
 
-class Solution:
-    ___ __init__(self):
-        self.cache = {}
+c_ Solution:
+    ___ - ):
+        cache    # dict
 
     ___ cherryPickup(self, grid: List[List[int]]) -> int:
         """
@@ -54,11 +54,11 @@ class Solution:
         of the path, so we are only considering two paths from the beginning to
         the end.
         """
-        r.. max(0, self.F(grid, 0, 0, 0))
+        r.. max(0, F(grid, 0, 0, 0))
 
     ___ F(self, grid, r1, c1, r2):
         n = l..(grid)
-        __ (r1, c1, r2) n.. __ self.cache:
+        __ (r1, c1, r2) n.. __ cache:
             ret = float("-inf")
             c2 = r1 + c1 - r2   # r1 + c1 == r2 + c2
             __ 0 <= r1 < n a.. 0 <= c1 < n a.. 0 <= r2 < n a.. 0 <= c2 < n:
@@ -72,15 +72,15 @@ class Solution:
                         pass  # seed, otherwise -inf 
                     ____:
                         ret += max(
-                            self.F(grid, r1+1, c1, r2+1),   # down, down
-                            self.F(grid, r1+1, c1, r2),  # down, right
-                            self.F(grid, r1, c1+1, r2+1),  # right, down
-                            self.F(grid, r1, c1+1, r2),  # right, right
+                            F(grid, r1+1, c1, r2+1),   # down, down
+                            F(grid, r1+1, c1, r2),  # down, right
+                            F(grid, r1, c1+1, r2+1),  # right, down
+                            F(grid, r1, c1+1, r2),  # right, right
                         )
 
-            self.cache[r1, c1, r2] = ret
+            cache[r1, c1, r2] = ret
 
-        r.. self.cache[r1, c1, r2]
+        r.. cache[r1, c1, r2]
 
 
 __ __name__ __ "__main__":

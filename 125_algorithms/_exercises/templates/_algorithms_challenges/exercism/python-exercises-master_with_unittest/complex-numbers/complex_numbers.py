@@ -1,5 +1,5 @@
-class ComplexNumber(object):
-    ___ __init__(self, real, imaginary):
+c_ ComplexNumber(object):
+    ___ - , real, imaginary):
         pass
 
     ___ add(self, other):
@@ -14,11 +14,11 @@ class ComplexNumber(object):
     ___ div(self, other):
         pass
 
-    ___ abs(self):
+    ___ abs
         pass
 
-    ___ conjugate(self):
+    ___ conjugate
         pass
 
-    ___ exp(self):
+    ___ exp
         pass

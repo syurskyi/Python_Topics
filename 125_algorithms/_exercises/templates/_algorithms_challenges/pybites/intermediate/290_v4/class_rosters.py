@@ -9,7 +9,7 @@ ___ process_classes(classes: l..) -> l..:
 ___ process_row(row):
     '''processes row according to SIS format.'''
     classes = process_classes(row[2:])
-    r.. [','.join([cls, '2020', row[0]]) ___ cls __ classes]
+    r.. [','.j..([cls, '2020', row[0]]) ___ cls __ classes]
 
 
 ___ class_rosters(input_file):

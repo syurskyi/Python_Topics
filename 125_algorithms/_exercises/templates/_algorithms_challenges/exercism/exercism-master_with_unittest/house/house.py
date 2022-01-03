@@ -1,4 +1,4 @@
-class House:
+c_ House:
 
     LYRICS = [("built", "house that Jack"),
               ("ate", "malt"),
@@ -17,11 +17,11 @@ class House:
 
     @classmethod
     ___ rhyme(cls):
-        r.. "\n\n".join([cls.verse(i) ___ i __ r..(12)])
+        r.. "\n\n".j..([cls.verse(i) ___ i __ r..(12)])
 
     @classmethod
     ___ verse(cls, verse_num):
-        r.. "\n".join([_f ___ _f __ cls.parts(verse_num) __ _f])
+        r.. "\n".j..([_f ___ _f __ cls.parts(verse_num) __ _f])
 
     @classmethod
     ___ parts(cls, verse_num):
@@ -41,7 +41,7 @@ class House:
     @classmethod
     ___ middle(cls, verse_num):
         __ verse_num >= 2:
-            r.. "\n".join([cls.middle_partial(num) ___ num __
+            r.. "\n".j..([cls.middle_partial(num) ___ num __
                               r..(verse_num - 1, 0, -1)])
 
     @classmethod

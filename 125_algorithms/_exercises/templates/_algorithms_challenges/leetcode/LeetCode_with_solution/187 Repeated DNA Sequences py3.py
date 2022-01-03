@@ -16,7 +16,7 @@ Output: ["AAAAACCCCC", "CCCCCAAAAA"]
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findRepeatedDnaSequences(self, s: s..) -> List[s..]:
         ret = set()
         seen = set()

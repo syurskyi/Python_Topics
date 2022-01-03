@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   # recursion
   ___ _constructMaximumBinaryTree(self, nums):
     """
@@ -15,8 +15,8 @@ class Solution(object):
     __ nums:
       pos = nums.index(max(nums))
       root = TreeNode(nums[pos])
-      root.left = self.constructMaximumBinaryTree(nums[:pos])
-      root.right = self.constructMaximumBinaryTree(nums[pos + 1:])
+      root.left = constructMaximumBinaryTree(nums[:pos])
+      root.right = constructMaximumBinaryTree(nums[pos + 1:])
       r.. root
 
   # decreasing stack

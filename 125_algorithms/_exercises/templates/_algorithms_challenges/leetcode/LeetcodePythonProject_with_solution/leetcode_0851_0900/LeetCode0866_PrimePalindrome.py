@@ -3,7 +3,7 @@ Created on Sep 30, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ primePalindrome(self, N):
         """
         :type N: int
@@ -14,7 +14,7 @@ class Solution(object):
             r.. 11
         ___ x __ r..(10**(l..(s..(n))//2), 10**5):
             y = int(s..(x) + s..(x)[-2::-1])
-            __ y >= n a.. self.isPrime(y):
+            __ y >= n a.. isPrime(y):
                 r.. y
     
     ___ isPrime(self, n):
@@ -22,15 +22,15 @@ class Solution(object):
             r.. n __ 2
         ___ i __ r..(3, int(n**0.5)+1, 2):
             __ n % i __ 0:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ n __ testCases:
-            res = self.primePalindrome(n)
+            res = primePalindrome(n)
             print('res: %s' % res)
 
 __ __name__ __ '__main__':

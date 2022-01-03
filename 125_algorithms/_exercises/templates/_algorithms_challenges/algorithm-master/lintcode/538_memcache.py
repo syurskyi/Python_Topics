@@ -1,8 +1,8 @@
-class Memcache:
+c_ Memcache:
 
     INT_MAX = 0x7FFFFFFF
     PERMANENT_TTL = -1
-    storage = {}
+    storage    # dict
 
     """
     @param: curtTime: An integer
@@ -10,14 +10,14 @@ class Memcache:
     @return: An integer
     """
     ___ get(self, curtTime, key):
-        __ key n.. __ self.storage:
-            r.. self.INT_MAX
+        __ key n.. __ storage:
+            r.. INT_MAX
 
-        __ (curtTime < self.storage[key]['expired_at'] o.
-            self.storage[key]['expired_at'] __ self.PERMANENT_TTL):
-            r.. self.storage[key]['val']
+        __ (curtTime < storage[key]['expired_at'] o.
+            storage[key]['expired_at'] __ PERMANENT_TTL):
+            r.. storage[key]['val']
 
-        r.. self.INT_MAX
+        r.. INT_MAX
 
     """
     @param: curtTime: An integer
@@ -28,9 +28,9 @@ class Memcache:
     """
     ___ set(self, curtTime, key, value, ttl):
         __ ttl > 0:
-            self.storage[key] = self._new_item(key, value, curtTime + ttl)
+            storage[key] = _new_item(key, value, curtTime + ttl)
         ____:
-            self.storage[key] = self._new_item(key, value, self.PERMANENT_TTL)
+            storage[key] = _new_item(key, value, PERMANENT_TTL)
 
     """
     @param: curtTime: An integer
@@ -38,8 +38,8 @@ class Memcache:
     @return: nothing
     """
     ___ delete(self, curtTime, key):
-        __ key __ self.storage:
-            del self.storage[key]
+        __ key __ storage:
+            del storage[key]
 
     """
     @param: curtTime: An integer
@@ -48,15 +48,15 @@ class Memcache:
     @return: An integer
     """
     ___ incr(self, curtTime, key, delta):
-        __ key n.. __ self.storage:
-            r.. self.INT_MAX
+        __ key n.. __ storage:
+            r.. INT_MAX
 
-        __ (curtTime < self.storage[key]['expired_at'] o.
-            self.storage[key]['expired_at'] __ self.PERMANENT_TTL):
-            self.storage[key]['val'] += delta
-            r.. self.storage[key]['val']
+        __ (curtTime < storage[key]['expired_at'] o.
+            storage[key]['expired_at'] __ PERMANENT_TTL):
+            storage[key]['val'] += delta
+            r.. storage[key]['val']
 
-        r.. self.INT_MAX
+        r.. INT_MAX
 
     """
     @param: curtTime: An integer
@@ -65,7 +65,7 @@ class Memcache:
     @return: An integer
     """
     ___ decr(self, curtTime, key, delta):
-        r.. self.incr(curtTime, key, -1 * delta)
+        r.. incr(curtTime, key, -1 * delta)
 
     ___ _new_item(self, key, value, expired_at):
         r.. {

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ alienOrder(self, words):
         """
         :type words: list[str]
@@ -22,10 +22,10 @@ class Solution:
                 ans.a..(word[j])
                 gotcha.add(word[j])
 
-        r.. ''.join(ans)
+        r.. ''.j..(ans)
 
 
-class Solution:
+c_ Solution:
     """
     REF: https://discuss.leetcode.com/topic/28308/java-ac-solution-using-bfs/2
     """
@@ -34,8 +34,8 @@ class Solution:
             r.. ''
 
         ans    # list
-        edges = {}
-        indeg = {}
+        edges    # dict
+        indeg    # dict
 
         ___ w __ words:
             ___ c __ w:
@@ -54,7 +54,7 @@ class Solution:
                     indeg[nxt[j]] = indeg.get(nxt[j], 0) + 1
                 break
 
-        queue = [c ___ c, deg __ indeg.items() __ deg __ 0]
+        queue = [c ___ c, deg __ indeg.i.. __ deg __ 0]
         ___ c __ queue:
             ans.a..(c)
             __ c n.. __ edges:
@@ -64,4 +64,4 @@ class Solution:
                 __ indeg[_c] __ 0:
                     queue.a..(_c)
 
-        r.. ''.join(ans) __ l..(ans) __ l..(indeg) ____ ''
+        r.. ''.j..(ans) __ l..(ans) __ l..(indeg) ____ ''

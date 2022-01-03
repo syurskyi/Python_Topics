@@ -5,13 +5,13 @@ Created on Feb 8, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ sumNumbers(self, root):
         """
         :type root: TreeNode
@@ -19,7 +19,7 @@ class Solution(object):
         """
         __ n.. root: r.. 0
         res    # list
-        self.helper(root, s..(root.val), res)
+        helper(root, s..(root.val), res)
         resNum = s..([int(val) ___ val __ res])
         r.. resNum
         
@@ -27,14 +27,14 @@ class Solution(object):
         __ n.. root.left a.. n.. root.right:
             res.a..(curr)
         __ root.left:
-            self.helper(root.left, curr+s..(root.left.val), res)
+            helper(root.left, curr+s..(root.left.val), res)
         __ root.right:
-            self.helper(root.right, curr+s..(root.right.val), res)
+            helper(root.right, curr+s..(root.right.val), res)
     
-    ___ test(self):
+    ___ test
 #         root = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3, None, TreeNode(6)))
         root = TreeNode(1, TreeNode(2), TreeNode(3))
-        result = self.sumNumbers(root)
+        result = sumNumbers(root)
         print(result)
 
 __ __name__ __ '__main__':

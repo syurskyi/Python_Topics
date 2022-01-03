@@ -1,6 +1,6 @@
 _______ heapq
 
-class Solution:
+c_ Solution:
 
     """
     @param: arrays: a list of array

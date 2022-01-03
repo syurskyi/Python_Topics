@@ -3,7 +3,7 @@ Created on Feb 11, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxProduct(self, nums):
         """
         :type nums: List[int]
@@ -24,7 +24,7 @@ class Solution(object):
             result = max(result, maxArr[i])
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 3, -2, 4],
             [1, 0, 9, 10, -19, 2000],
@@ -32,7 +32,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.maxProduct(nums)
+            result = maxProduct(nums)
             print('result: %s' % (result))
             print('-='*20 + '-')
 

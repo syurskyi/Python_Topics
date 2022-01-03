@@ -12,21 +12,21 @@ Note: Time complexity should be O(height of tree).
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-  ___ __init__(self, x):
-      self.val = x
-      self.left = N..
-      self.right = N..
+c_ TreeNode:
+  ___ - , x):
+      val = x
+      left = N..
+      right = N..
 
 
-class Solution:
+c_ Solution:
     ___ deleteNode(self, root, key):
         """
         :type root: TreeNode
         :type key: int
         :rtype: TreeNode
         """
-        r.. self._delete(root, key)
+        r.. _delete(root, key)
 
     ___ _delete(self, root, key):
         """
@@ -38,19 +38,19 @@ class Solution:
 
         # check before recursion because need to know parent
         __ key < root.val:
-            root.left = self._delete(root.left, key)
+            root.left = _delete(root.left, key)
             r.. root
         ____ key > root.val:
-            root.right = self._delete(root.right, key)
+            root.right = _delete(root.right, key)
             r.. root
         ____:
             __ root.left:
-                maxa, left = self._pop_max(root.left)
+                maxa, left = _pop_max(root.left)
                 root.left = left
                 root.val = maxa
                 r.. root
             ____ root.right:
-                mini, right = self._pop_min(root.right)
+                mini, right = _pop_min(root.right)
                 root.right = right
                 root.val = mini
                 r.. root
@@ -59,7 +59,7 @@ class Solution:
 
     ___ _pop_max(self, root):
         __ root.right:
-            maxa, right = self._pop_max(root.right)
+            maxa, right = _pop_max(root.right)
             root.right = right
             r.. maxa, root
         # irrevelant with root.left, BST property
@@ -68,7 +68,7 @@ class Solution:
 
     ___ _pop_min(self, root):
         __ root.left:
-            mini, left = self._pop_min(root.left)
+            mini, left = _pop_min(root.left)
             root.left = left
             r.. mini, root
         # irrevelant with root.right, BST property
@@ -87,20 +87,20 @@ class Solution:
 
         # check before recursion because need to know parent
         __ key < root.val:
-            root.left = self._delete(root.left, key)
+            root.left = _delete(root.left, key)
             r.. root
         ____ key > root.val:
-            root.right = self._delete(root.right, key)
+            root.right = _delete(root.right, key)
             r.. root
         ____:
             __ root.left:
                 root.val = root.left.val
-                left = self._delete(root.left, root.left.val)
+                left = _delete(root.left, root.left.val)
                 root.left = left
                 r.. root
             ____ root.right:
                 root.val = root.right.val
-                right = self._delete(root.right, root.right.val)
+                right = _delete(root.right, root.right.val)
                 root.right = right
                 r.. root
             ____:

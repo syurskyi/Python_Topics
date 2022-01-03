@@ -3,38 +3,38 @@ Created on Mar 13, 2017
 
 @author: MT
 '''
-class NumMatrix_BinaryIndexTree_TLE(object):
-    ___ __init__(self, matrix):
+c_ NumMatrix_BinaryIndexTree_TLE(object):
+    ___ - , matrix):
         m, n = l..(matrix), l..(matrix[0])
-        self.m, self.n = m, n
+        m, n = m, n
         __ n.. m o. n.. n: r..
-        self.tree = [[0]*(n+1) ___ _ __ r..(m+1)]
-        self.nums = [[0]*n ___ _ __ r..(m)]
+        tree = [[0]*(n+1) ___ _ __ r..(m+1)]
+        nums = [[0]*n ___ _ __ r..(m)]
         ___ i __ r..(m):
             ___ j __ r..(n):
-                self.update(i, j, matrix[i][j])
+                update(i, j, matrix[i][j])
     
     ___ update(self, row, col, val):
-        m, n = self.m, self.n
+        m, n = m, n
         __ n.. m o. n.. n: r..
-        delta = val-self.nums[row][col]
-        self.nums[row][col] = val
+        delta = val-nums[row][col]
+        nums[row][col] = val
         i = 0
         w.... i < m+1:
             j = 0
             w.... j < n+1:
-                self.tree[i][j] += delta
+                tree[i][j] += delta
                 j += j&(-1)
             i += i&(-i)
     
     ___ sumRegion(self, row1, col1, row2, col2):
-        m, n = self.m, self.n
+        m, n = m, n
         __ n.. m o. n.. n:
             r.. 0
-        r.. self.sumHelper(row2+1, col2+1)\
-                +self.sumHelper(row1, col1)\
-                -self.sumHelper(row1, col2+1)\
-                -self.sumHelper(row2+1, col1)
+        r.. sumHelper(row2+1, col2+1)\
+                +sumHelper(row1, col1)\
+                -sumHelper(row1, col2+1)\
+                -sumHelper(row2+1, col1)
         
     ___ sumHelper(self, row, col):
         sumVal = 0
@@ -42,30 +42,30 @@ class NumMatrix_BinaryIndexTree_TLE(object):
         w.... i > 0:
             j = col
             w.... j > 0:
-                sumVal += self.tree[i][j]
+                sumVal += tree[i][j]
                 j -= j&(-j)
             i -= i&(-i)
         r.. sumVal
 
-class NumMatrix(object):
-    ___ __init__(self, matrix):
+c_ NumMatrix(object):
+    ___ - , matrix):
         __ n.. matrix:
             r..
-        self.matrix = matrix
+        matrix = matrix
         m, n = l..(matrix), l..(matrix[0])
         colSums = [[0]*n ___ _ __ r..(m+1)]
         ___ i __ r..(m+1):
             ___ j __ r..(n):
                 colSums[i][j] = colSums[i-1][j] + matrix[i-1][j]
-        self.colSums = colSums
+        colSums = colSums
     
     ___ update(self, row, col, val):
-        ___ i __ r..(row+1, l..(self.colSums)):
-            self.colSums[i][col] = self.colSums[i][col]+val-self.matrix[row][col]
-        self.matrix[row][col] = val
+        ___ i __ r..(row+1, l..(colSums)):
+            colSums[i][col] = colSums[i][col]+val-matrix[row][col]
+        matrix[row][col] = val
     
     ___ sumRegion(self, row1, col1, row2, col2):
         result = 0
         ___ j __ r..(col1, col2+1):
-            result += self.colSums[row2+1][j] - self.colSums[row1][j]
+            result += colSums[row2+1][j] - colSums[row1][j]
         r.. result

@@ -8,5 +8,5 @@ ___ sumDigits(sumCount):
                 ___ digit __ value:
                         s.. += int(digit)
                 answer.a..(s..(s..))
-        print(' '.join(answer))
+        print(' '.j..(answer))
 sumDigits(input())

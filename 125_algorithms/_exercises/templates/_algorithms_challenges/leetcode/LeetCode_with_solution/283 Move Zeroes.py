@@ -12,7 +12,7 @@ Minimize the total number of operations.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ moveZeroes(self, nums):
         """
         Two pointers at the left side
@@ -25,7 +25,7 @@ class Solution(object):
                 nums[left], nums[i] = nums[i], nums[left]
 
 
-class SolutionCount(object):
+c_ SolutionCount(object):
     ___ moveZeroes(self, nums):
         """
         In-place

@@ -3,7 +3,7 @@ Created on Apr 12, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findCheapestPrice(self, n, flights, src, dst, K):
         """
         :type n: int
@@ -14,7 +14,7 @@ class Solution(object):
         :rtype: int
         """
         _______ heapq
-        graph = {}
+        graph    # dict
         ___ f __ flights:
             __ f[0] n.. __ graph:
                 graph[f[0]] = [[f[2], f[1]]]
@@ -32,7 +32,7 @@ class Solution(object):
                         heapq.heappush(pq, [curLen+dist, level-1, node0])
         r.. -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 1],
             [3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 0],
@@ -41,7 +41,7 @@ class Solution(object):
             [5, [[0,1,5],[1,2,5],[0,3,2],[3,1,2],[1,4,1],[4,2,1]], 0, 2, 2],
         ]
         ___ n, flights, src, dst, k __ testCases:
-            result = self.findCheapestPrice(n, flights, src, dst, k)
+            result = findCheapestPrice(n, flights, src, dst, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

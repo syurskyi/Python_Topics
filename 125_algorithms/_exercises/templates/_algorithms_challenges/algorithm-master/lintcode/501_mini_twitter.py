@@ -8,11 +8,11 @@ class Tweet:
 """
 
 
-class MiniTwitter:
-    ___ __init__(self):
-        self.timestamp = 0
-        self.tweets = {}
-        self.followings = {}
+c_ MiniTwitter:
+    ___ - ):
+        timestamp = 0
+        tweets    # dict
+        followings    # dict
 
     """
     @param: user_id: An integer
@@ -20,16 +20,16 @@ class MiniTwitter:
     @return: a tweet
     """
     ___ postTweet(self, user_id, tweet_text):
-        __ user_id n.. __ self.tweets:
-            self.tweets[user_id]    # list
+        __ user_id n.. __ tweets:
+            tweets[user_id]    # list
 
-        self.timestamp += 1
-        self.tweets[user_id].a..((
-            self.timestamp,
+        timestamp += 1
+        tweets[user_id].a..((
+            timestamp,
             Tweet.create(user_id, tweet_text),
         ))
 
-        r.. self.tweets[user_id][-1][1]
+        r.. tweets[user_id][-1][1]
 
     """
     @param: user_id: An integer
@@ -38,13 +38,13 @@ class MiniTwitter:
     ___ getNewsFeed(self, user_id):
         res    # list
 
-        __ user_id __ self.tweets:
-            res.extend(self.tweets[user_id][-10:])
+        __ user_id __ tweets:
+            res.extend(tweets[user_id][-10:])
 
-        __ user_id __ self.followings:
-            ___ follow_id __ self.followings[user_id]:
-                __ follow_id __ self.tweets:
-                    res.extend(self.tweets[follow_id][-10:])
+        __ user_id __ followings:
+            ___ follow_id __ followings[user_id]:
+                __ follow_id __ tweets:
+                    res.extend(tweets[follow_id][-10:])
 
         __ n.. res:
             r.. []
@@ -57,10 +57,10 @@ class MiniTwitter:
     @return: a list of 10 new posts recently and sort by timeline
     """
     ___ getTimeline(self, user_id):
-        __ user_id n.. __ self.tweets:
+        __ user_id n.. __ tweets:
             r.. []
 
-        r.. [tweet ___ _, tweet __ self.tweets[user_id][-10:]][::-1]
+        r.. [tweet ___ _, tweet __ tweets[user_id][-10:]][::-1]
 
     """
     @param: from_id: An integer
@@ -68,13 +68,13 @@ class MiniTwitter:
     @return: nothing
     """
     ___ follow(self, from_id, to_id):
-        __ from_id n.. __ self.followings:
-            self.followings[from_id] = set()
+        __ from_id n.. __ followings:
+            followings[from_id] = set()
 
-        __ to_id __ self.followings[from_id]:
+        __ to_id __ followings[from_id]:
             r..
 
-        self.followings[from_id].add(to_id)
+        followings[from_id].add(to_id)
 
     """
     @param: from_id: An integer
@@ -82,10 +82,10 @@ class MiniTwitter:
     @return: nothing
     """
     ___ unfollow(self, from_id, to_id):
-        __ from_id n.. __ self.followings:
+        __ from_id n.. __ followings:
             r..
 
-        __ to_id n.. __ self.followings[from_id]:
+        __ to_id n.. __ followings[from_id]:
             r..
 
-        self.followings[from_id].discard(to_id)
+        followings[from_id].discard(to_id)

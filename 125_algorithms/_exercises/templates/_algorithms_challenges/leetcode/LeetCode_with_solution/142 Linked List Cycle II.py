@@ -6,13 +6,13 @@ Can you solve it without using extra space?
 """
 __author__ = 'Danyang'
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution:
+c_ Solution:
     # @param head, a ListNode
     # @return a list node
     ___ detectCycle(self, head):
@@ -57,12 +57,12 @@ class Solution:
         # find cycle
         hare = head
         tortoise = head
-        flag = False
+        flag = F..
         w.... hare a.. hare.next a.. tortoise:
             hare = hare.next.next
             tortoise = tortoise.next
             __ hare__tortoise:
-                flag = True
+                flag = T..
                 break
 
         __ n.. flag:

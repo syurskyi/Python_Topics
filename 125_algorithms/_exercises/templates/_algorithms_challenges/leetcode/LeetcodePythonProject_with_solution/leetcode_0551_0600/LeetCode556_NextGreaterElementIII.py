@@ -3,7 +3,7 @@ Created on Aug 27, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ nextGreaterElement(self, n):
         """
         :type n: int
@@ -26,12 +26,12 @@ class Solution(object):
         w.... j < l..(s) a.. arr[j] <= arr[ind-1]:
             j += 1
         arr[ind-1], arr[j] = arr[j], arr[ind-1]
-        res = int(''.join(arr))
+        res = int(''.j..(arr))
         __ res >= 1 << 32-1:
             r.. -1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             21,
             123,
@@ -40,7 +40,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.nextGreaterElement(n)
+            result = nextGreaterElement(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

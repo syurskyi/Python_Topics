@@ -38,14 +38,14 @@ Explanation: A = [2,1,5,3], B = [2,1,5,3,4]
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ insertIntoMaxTree(self, root: TreeNode, val: int) -> TreeNode:
         """
         Suppose B is a copy of A with the value val appended to it.
@@ -63,5 +63,5 @@ class Solution:
             node.left = root
             r.. node
 
-        root.right = self.insertIntoMaxTree(root.right, val)
+        root.right = insertIntoMaxTree(root.right, val)
         r.. root

@@ -1,39 +1,39 @@
-class SgfTree(object):
-    ___ __init__(self, properties=N.., children_ N..
-        self.properties = properties o. {}
-        self.children = children o. []
+c_ SgfTree(object):
+    ___ - , properties=N.., children_ N..
+        properties = properties o. {}
+        children = children o. []
 
     ___ __eq__(self, other):
         __ n.. isi..(other, SgfTree):
-            r.. False
-        ___ k, v __ self.properties.items():
+            r.. F..
+        ___ k, v __ properties.i..:
             __ k n.. __ other.properties:
-                r.. False
+                r.. F..
             __ other.properties[k] != v:
-                r.. False
-        ___ k __ other.properties.keys():
-            __ k n.. __ self.properties:
-                r.. False
-        __ l..(self.children) != l..(other.children):
-            r.. False
-        ___ a, b __ z..(self.children, other.children):
+                r.. F..
+        ___ k __ other.properties.k..:
+            __ k n.. __ properties:
+                r.. F..
+        __ l..(children) != l..(other.children):
+            r.. F..
+        ___ a, b __ z..(children, other.children):
             __ n.. (a __ b):
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
-    ___ __repr__(self):
+    ___ __repr__
         """Ironically, encoding to SGF is much easier"""
         rep = '(;'
-        ___ k, vs __ self.properties.items():
+        ___ k, vs __ properties.i..:
             rep += k
             ___ v __ vs:
                 rep += '[{}]'.f..(v)
-        __ self.children:
-            __ l..(self.children) > 1:
+        __ children:
+            __ l..(children) > 1:
                 rep += '('
-            ___ c __ self.children:
+            ___ c __ children:
                 rep += repr(c)[1:-1]
-            __ l..(self.children) > 1:
+            __ l..(children) > 1:
                 rep += ')'
         r.. rep + ')'
 
@@ -57,7 +57,7 @@ ___ parse(input_string):
                 'invalid format at {}:{}: {}'.f..(
                     repr(input_string),
                     l..(input_string) - l..(stack),
-                    repr(''.join(stack))
+                    repr(''.j..(stack))
                 )
             )
     assert_that(stack)
@@ -79,7 +79,7 @@ ___ parse(input_string):
     w.... stack:
         assert_that(pop() __ '(' a.. peek() __ ';')
         w.... pop() __ ';':
-            properties = {}
+            properties    # dict
             w.... is_upper(peek()):
                 key = pop_until('[')
                 assert_that(is_upper(key))

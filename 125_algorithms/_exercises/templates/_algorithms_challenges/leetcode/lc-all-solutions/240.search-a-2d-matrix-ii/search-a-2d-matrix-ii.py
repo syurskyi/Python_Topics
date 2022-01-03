@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ searchMatrix(self, matrix, target):
     """
     :type matrix: List[List[int]]
@@ -15,14 +15,14 @@ class Solution(object):
         ____ nums[mid] < target:
           start = mid
         ____:
-          r.. True
+          r.. T..
       __ nums[start] __ target:
-        r.. True
+        r.. T..
       __ nums[end] __ target:
-        r.. True
-      r.. False
+        r.. T..
+      r.. F..
 
     ___ nums __ matrix:
       __ binarySearch(nums, target):
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..

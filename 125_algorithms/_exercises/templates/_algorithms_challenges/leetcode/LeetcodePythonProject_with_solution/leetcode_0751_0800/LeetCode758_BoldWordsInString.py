@@ -3,7 +3,7 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ boldWords(self, words, S):
         """
         :type words: List[str]
@@ -12,7 +12,7 @@ class Solution(object):
         """
         s = S
         words = set(words)
-        start = False
+        start = F..
         j = 0
         res = ''
         ___ i __ r..(l..(s)):
@@ -20,17 +20,17 @@ class Solution(object):
                 __ i+l..(word) <= l..(s) a.. s[i:i+l..(word)] __ word:
                     __ n.. start:
                         res += '<b>'
-                        start = True
+                        start = T..
                     j = max(j, i+l..(word))
             __ i __ j a.. start:
                 res += '</b>'
-                start = False
+                start = F..
             res += s[i]
         __ j >= l..(s):
             res += '</b>'
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ['ab', 'bc'],
@@ -48,7 +48,7 @@ class Solution(object):
         ___ words, s __ testCases:
             print('words: %s' % words)
             print('s: %s' % s)
-            result = self.boldWords(words, s)
+            result = boldWords(words, s)
             print('result: %s' % result)
             print('-='*30+'-')
 

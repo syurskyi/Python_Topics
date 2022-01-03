@@ -17,7 +17,7 @@ Note: The length of the given binary array will not exceed 50,000.
 """
 
 
-class Solution:
+c_ Solution:
     ___ findMaxLength(self, nums):
         """
         Look back with map

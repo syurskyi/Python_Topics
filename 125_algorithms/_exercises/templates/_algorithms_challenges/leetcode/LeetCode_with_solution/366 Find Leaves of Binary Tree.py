@@ -5,14 +5,14 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findLeaves(self, root):
         """
         The key is
@@ -24,7 +24,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         leaves    # list
-        self.dfs(root, leaves)
+        dfs(root, leaves)
         r.. leaves
 
     ___ dfs(self, node, leaves):
@@ -34,7 +34,7 @@ class Solution(object):
         __ n.. node:
             r.. -1  # leaves index start from 0
 
-        height = 1 + max(self.dfs(node.left, leaves), self.dfs(node.right, leaves))
+        height = 1 + max(dfs(node.left, leaves), dfs(node.right, leaves))
         __ height >= l..(leaves):
             leaves.a..([])  # grow
 

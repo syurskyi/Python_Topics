@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: n: a positive integer
     @return: n x 3 matrix

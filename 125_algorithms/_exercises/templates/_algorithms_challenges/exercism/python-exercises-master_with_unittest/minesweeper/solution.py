@@ -13,7 +13,7 @@ ___ board(inp):
             __ cnt __ 0:
                 continue
             b[i1][i2] = s..(cnt)
-    r.. ["".join(r) ___ r __ b]
+    r.. ["".j..(r) ___ r __ b]
 
 
 ___ verify_board(inp):

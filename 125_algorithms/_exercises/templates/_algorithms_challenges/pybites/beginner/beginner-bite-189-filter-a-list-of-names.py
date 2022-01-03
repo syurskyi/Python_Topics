@@ -22,9 +22,9 @@ ___ filter_names_1(names):
     filtered    # list
     cnt = 0
     ___ name __ names:
-        __ name.lower()[0] __ IGNORE_CHAR o. n.. name.isalpha():
+        __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha():
             continue
-        __ name.lower()[0] __ QUIT_CHAR:
+        __ name.l..[0] __ QUIT_CHAR:
             break
         __ cnt < 5:
             filtered.a..(name)
@@ -39,9 +39,9 @@ print(filter_names_1(names))
 ___ filter_names_2(names):
     cnt = 0
     ___ name __ names:
-        __ name.lower()[0] __ IGNORE_CHAR o. n.. name.isalpha():
+        __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha():
             continue
-        __ name.lower()[0] __ QUIT_CHAR:
+        __ name.l..[0] __ QUIT_CHAR:
             break
         __ cnt < 5:
             cnt += 1

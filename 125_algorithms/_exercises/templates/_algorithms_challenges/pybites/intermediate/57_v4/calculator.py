@@ -29,7 +29,7 @@ ___ create_parser():
     r.. parser
 
 
-___ call_calculator(args=N.., stdout=False):
+___ call_calculator(args=N.., stdout=F..):
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
@@ -41,7 +41,7 @@ ___ call_calculator(args=N.., stdout=False):
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    ___ operation, numbers __ vars(args).items():
+    ___ operation, numbers __ vars(args).i..:
         __ numbers __ N..
             continue
 
@@ -57,4 +57,4 @@ ___ call_calculator(args=N.., stdout=False):
 
 
 __ __name__ __ '__main__':
-    call_calculator(stdout=True)
+    call_calculator(stdout=T..)

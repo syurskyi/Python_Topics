@@ -1,20 +1,20 @@
-class Solution:
+c_ Solution:
     # @param n, an integer
     # @return an integer
     ___ reverseBits(self, n):
         res = 0
         size = 32
         ___ i __ r..(size):
-            __ self.test_bit(n, i):
+            __ test_bit(n, i):
                 print(i)
-                res = self.set_bit(res, size - 1 - i)
+                res = set_bit(res, size - 1 - i)
         r.. res
 
     ___ test_bit(self, n, i):
         mask = 1 << i
         __ n & mask > 0:
-            r.. True
-        r.. False
+            r.. T..
+        r.. F..
 
     ___ set_bit(self, n, i):
         mask = 1 << i

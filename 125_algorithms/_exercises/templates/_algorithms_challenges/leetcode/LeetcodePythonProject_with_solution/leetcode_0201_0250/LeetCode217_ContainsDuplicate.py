@@ -4,7 +4,7 @@ Created on Feb 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ containsDuplicate(self, nums):
         """
         :type nums: List[int]
@@ -13,6 +13,6 @@ class Solution(object):
         s = set()
         ___ num __ nums:
             __ num __ s:
-                r.. True
+                r.. T..
             s.add(num)
-        r.. False
+        r.. F..

@@ -1,8 +1,8 @@
 ___ sieve(limit):
-    prime = [True] * (limit + 1)
-    prime[0] = prime[1] = False
+    prime = [T..] * (limit + 1)
+    prime[0] = prime[1] = F..
     ___ i __ r..(2, int(limit ** 0.5) + 1):
         __ prime[i]:
             ___ j __ r..(i * i, limit + 1, i):
-                prime[j] = False
+                prime[j] = F..
     r.. [i ___ i, x __ e..(prime) __ x]

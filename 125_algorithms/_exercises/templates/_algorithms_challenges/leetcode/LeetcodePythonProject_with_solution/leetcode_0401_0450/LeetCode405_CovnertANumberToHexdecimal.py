@@ -4,7 +4,7 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ toHex(self, num):
         __ num __ 0: r.. '0'
         mp = '0123456789abcdef'
@@ -15,14 +15,14 @@ class Solution(object):
             num >>= 4
         r.. result.lstrip('0')
     
-    ___ test(self):
+    ___ test
         testCases = [
             26,
             -1,
         ]
         ___ num __ testCases:
             print('num: %s' % num)
-            result = self.toHex(num)
+            result = toHex(num)
             print('result: %s' % result)
             print('-='*20+'-')
 

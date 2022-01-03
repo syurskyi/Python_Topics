@@ -6,11 +6,11 @@
 #         self.right = None
 #         self.next = None
 
-class Solution:
+c_ Solution:
   # @param root, a tree link node
   # @return nothing
   ___ connect(self, root):
     __ root a.. root.left a.. root.right:
       root.left.next = root.right
       root.right.next = root.next a.. root.next.left
-      r.. self.connect(root.left) o. self.connect(root.right)
+      r.. connect(root.left) o. connect(root.right)

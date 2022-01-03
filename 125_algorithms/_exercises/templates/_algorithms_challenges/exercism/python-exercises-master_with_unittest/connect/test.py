@@ -102,14 +102,14 @@ testcases = [
 ]
 
 
-class ConnectTest(unittest.TestCase):
-    ___ test_game(self):
+c_ ConnectTest(unittest.TestCase):
+    ___ test_game
         ___ testcase __ testcases:
             game = connect.ConnectGame(testcase["board"])
             winner = game.get_winner()
             expected = testcase["winner"] __ testcase["winner"] ____ "None"
             got = winner __ winner ____ "None"
-            self.assertEqual(winner, testcase["winner"],
+            assertEqual(winner, testcase["winner"],
                              "Test failed: %s, expected winner: %s, got: %s"
                              % (testcase["description"], expected, got))
 

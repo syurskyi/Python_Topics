@@ -13,7 +13,7 @@ the `ans` is to find the maximum of `left[i] + right[i + 1]`
 """
 
 
-class Solution:
+c_ Solution:
     ___ maxTwoSubArrays(self, nums):
         """
         :type nums: list[int]
@@ -24,8 +24,8 @@ class Solution:
             r.. NOT_FOUND
 
         n = l..(nums)
-        left = self.get_max_sums(nums, r..(n))
-        right = self.get_max_sums(nums, r..(n - 1, -1, -1))
+        left = get_max_sums(nums, r..(n))
+        right = get_max_sums(nums, r..(n - 1, -1, -1))
 
         ans = _INF = float('-inf')
 

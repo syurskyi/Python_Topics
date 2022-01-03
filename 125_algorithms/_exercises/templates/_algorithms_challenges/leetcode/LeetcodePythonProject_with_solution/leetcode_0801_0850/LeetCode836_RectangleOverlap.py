@@ -3,7 +3,7 @@ Created on Oct 8, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isRectangleOverlap(self, rec1, rec2):
         """
         :type rec1: List[int]
@@ -30,10 +30,10 @@ class Solution(object):
            (x21 <= x11 < x22 a.. (y21 < y12 <= y22 o. y11 <= y21 < y22 <= y12)) o.\
            (x21 < x12 <= x22 a.. (y21 <= y11 < y22 o. y11 <= y21 < y22 <= y12)) o.\
            (x21 < x12 <= x22 a.. (y21 < y12 <= y22 o. y11 <= y21 < y22 <= y12)):
-            r.. True
-        r.. False
+            r.. T..
+        r.. F..
 
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [229,-132,833,333],
@@ -49,7 +49,7 @@ class Solution(object):
             ],
         ]
         ___ rec1, rec2 __ testCases:
-            result = self.isRectangleOverlap(rec1, rec2)
+            result = isRectangleOverlap(rec1, rec2)
             print('result: %s' % result)
             print('-='*30+'-')
 

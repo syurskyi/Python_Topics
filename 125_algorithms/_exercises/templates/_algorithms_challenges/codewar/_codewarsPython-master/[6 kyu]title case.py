@@ -3,11 +3,11 @@ ___ title_case(title, minor_words = ''):
         r.. ''
     res = [title.t...s.. [0]]
     ___ word __ title.t...s.. [1:]:
-        __ word.lower() __ [w.lower() ___ w __ minor_words.s.. ]:
+        __ word.l.. __ [w.l.. ___ w __ minor_words.s.. ]:
             res.a..(word.lower())
         ____:
             res.a..(word)
-    r.. ' '.join(res)
+    r.. ' '.j..(res)
 
 print(title_case('a clash of KINGS', 'a an the of'))
 print(title_case('', ''))

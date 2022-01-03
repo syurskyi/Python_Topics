@@ -22,7 +22,7 @@ to
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ invertTree(self, root):
         """
         :type root: TreeNode
@@ -31,8 +31,8 @@ class Solution(object):
         __ root __ N..
             r.. N..
         ____:
-            left = self.invertTree(root.left)
-            right = self.invertTree(root.right)
+            left = invertTree(root.left)
+            right = invertTree(root.right)
             root.left = right
             root.right = left
             r.. root

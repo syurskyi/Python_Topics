@@ -4,7 +4,7 @@ Created on Apr 8, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ removeKdigits(self, num, k):
         n = l..(num)
         longest = n-k
@@ -16,11 +16,11 @@ class Solution(object):
                 k -= 1
             stack.a..(c)
         stack = stack[:longest]
-        res = ''.join(stack)
+        res = ''.j..(stack)
         res = res.lstrip('0')
         r.. res __ res ____ '0'
     
-    ___ test(self):
+    ___ test
         testCases = [
             ("1432219", 3),
             ("10200", 1),
@@ -32,7 +32,7 @@ class Solution(object):
         ___ num, k __ testCases:
             print('num: %s' % num)
             print('k: %s' % k)
-            result = self.removeKdigits(num, k)
+            result = removeKdigits(num, k)
             print('result: %s' % result)
             print('-='*20+'-')
 

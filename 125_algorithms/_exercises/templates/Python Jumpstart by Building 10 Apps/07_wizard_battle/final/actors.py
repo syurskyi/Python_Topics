@@ -1,28 +1,28 @@
 _______ random
 
 
-class Creature:
-    ___ __init__(self, name, the_level):
-        self.name  name
-        self.level  the_level
+c_ Creature:
+    ___ - , name, the_level):
+        name  name
+        level  the_level
 
-    ___ __repr__(self):
+    ___ __repr__
         r.. "Creature: {} of level {}".f..(
-            self.name, self.level
+            name, level
         )
 
-    ___ get_defensive_roll(self):
-        r.. random.randint(1, 12) * self.level
+    ___ get_defensive_roll
+        r.. random.randint(1, 12) * level
 
 
-class Wizard(Creature):
+c_ Wizard(Creature):
 
     ___ attack(self, creature):
         print("The wizard {} attacks {}!".f..(
-            self.name, creature.name
+            name, creature.name
         ))
 
-        my_roll  self.get_defensive_roll()
+        my_roll  get_defensive_roll()
         creature_roll  creature.get_defensive_roll()
 
         print("You roll {}...".f..(my_roll))
@@ -36,19 +36,19 @@ class Wizard(Creature):
             r.. F..
 
 
-class SmallAnimal(Creature):
-    ___ get_defensive_roll(self):
+c_ SmallAnimal(Creature):
+    ___ get_defensive_roll
         base_roll  super().get_defensive_roll()
         r.. base_roll / 2
 
 
-class Dragon(Creature):
-    ___ __init__(self, name, level, scaliness, breaths_fire):
+c_ Dragon(Creature):
+    ___ - , name, level, scaliness, breaths_fire):
         super().__init__(name, level)
-        self.breaths_fire  breaths_fire
-        self.scaliness  scaliness
+        breaths_fire  breaths_fire
+        scaliness  scaliness
 
-    ___ get_defensive_roll(self):
+    ___ get_defensive_roll
         base_roll  super().get_defensive_roll()
         # fire_modifier = None
         # if self.breaths_fire:
@@ -56,7 +56,7 @@ class Dragon(Creature):
         # else:
         #     fire_modifier = 1
         # fire_modifier = VALUE_IF_TRUE if SOME TEST else VALUE IF FALSE
-        fire_modifier  5 __ self.breaths_fire ____ 1
-        scale_modifier  self.scaliness / 10
+        fire_modifier  5 __ breaths_fire ____ 1
+        scale_modifier  scaliness / 10
 
         r.. base_roll * fire_modifier * scale_modifier

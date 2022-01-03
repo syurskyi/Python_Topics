@@ -11,7 +11,7 @@ __author__ = 'Daniel'
 _______ sys
 
 
-class Solution:
+c_ Solution:
     ___ maximumGap(self, nums):
         """
         Brute force O(n lgn)
@@ -30,8 +30,8 @@ class Solution:
         g_max = max(nums)
 
         bin_width = max(1, (g_max-g_min)/n)
-        bins_min = {}
-        bins_max = {}
+        bins_min    # dict
+        bins_max    # dict
         ___ v __ nums:
             bin_id = (v-g_min)/bin_width
             bins_min[bin_id] = m..(bins_min.get(bin_id, sys.maxint), v)

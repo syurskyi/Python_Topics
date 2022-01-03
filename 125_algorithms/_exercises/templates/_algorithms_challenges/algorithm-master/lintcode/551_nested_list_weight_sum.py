@@ -19,11 +19,11 @@ class NestedInteger(object):
 """
 
 
-class Solution(object):
+c_ Solution(object):
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
     ___ depthSum(self, L):
-        r.. self.dfs(L, 1)
+        r.. dfs(L, 1)
 
     ___ dfs(self, L, depth):
         _sum = 0
@@ -33,12 +33,12 @@ class Solution(object):
                 _sum += depth * obj.getInteger()
                 continue
 
-            _sum += self.dfs(obj.getList(), depth + 1)
+            _sum += dfs(obj.getList(), depth + 1)
 
         r.. _sum
 
 
-class Solution(object):
+c_ Solution(object):
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
     ___ depthSum(self, L):

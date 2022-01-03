@@ -14,7 +14,7 @@ Return:
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ findRepeatedDnaSequences(self, s):
         """
         Limited space of possible values --> rewrite hash function
@@ -32,7 +32,7 @@ class Solution:
         __ l..(s) < 10:
             r.. []
 
-        s = map(self.mapping, l..(s))
+        s = map(mapping, l..(s))
         h = set()
         # in_ret = set()
         ret = set()
@@ -52,7 +52,7 @@ class Solution:
             ____:
                 h.add(cur)
 
-        r.. map(self.decode, ret)
+        r.. map(decode, ret)
 
     ___ decode(self, s):
         dic = {
@@ -66,7 +66,7 @@ class Solution:
             ret.a..(dic[s%4])
             s >>= 2
 
-        r.. "".join(reversed(ret))
+        r.. "".j..(reversed(ret))
 
     ___ mapping(self, a):
         dic = {

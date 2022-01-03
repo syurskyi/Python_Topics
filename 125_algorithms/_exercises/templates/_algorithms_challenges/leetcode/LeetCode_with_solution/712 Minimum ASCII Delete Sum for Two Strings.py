@@ -26,7 +26,7 @@ All elements of each string will have an ASCII value in [97, 122].
 """
 
 
-class Solution:
+c_ Solution:
     ___ minimumDeleteSum(self, s1: s.., s2: s..) -> int:
         """
         let F[i][j] be the cost to delete & make s1[:i] == s2[:j]

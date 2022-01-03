@@ -3,7 +3,7 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ movesToChessboard(self, board):
         """
         :type board: List[List[int]]
@@ -36,7 +36,7 @@ class Solution(object):
             rowSwap = m..(n-rowSwap, rowSwap)
         r.. (colSwap+rowSwap)//2
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [0,1,1,0],
@@ -54,7 +54,7 @@ class Solution(object):
             ],
         ]
         ___ board __ testCases:
-            result = self.movesToChessboard(board)
+            result = movesToChessboard(board)
             print('result: %s' % result)
             print('-='*30+'-')
 

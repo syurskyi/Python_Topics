@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
 
     ___ kthLargestElement(self, k, nums):
         nums.s..()

@@ -4,7 +4,7 @@ Created on Feb 27, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ shortestDistance(self, words, word1, word2):
         """
         :type words: List[str]
@@ -23,7 +23,7 @@ class Solution(object):
                     j+=1
         r.. minLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 ["a","c","b","a"],
@@ -35,7 +35,7 @@ class Solution(object):
             print('words: %s' % words)
             print('word1: %s' % word1)
             print('word2: %s' % word2)
-            result = self.shortestDistance(words, word1, word2)
+            result = shortestDistance(words, word1, word2)
             print('result: %s' % (result))
             print('-='*20+'-')
 

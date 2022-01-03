@@ -7,7 +7,7 @@
 """
 
 
-class Solution(object):
+c_ Solution(object):
   ___ _minSteps(self, n):
     """
     :type n: int
@@ -17,7 +17,7 @@ class Solution(object):
       r.. 0
     ___ i __ r..(2, int((n + 1) ** 0.5) + 1):
       __ n % i __ 0:
-        r.. i + self.minSteps(n / i)
+        r.. i + minSteps(n / i)
     r.. n
 
   ___ minSteps(self, n):

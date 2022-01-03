@@ -47,7 +47,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ videoStitching(self, clips: List[List[int]], T: int) -> int:
         """
         Greedy is correct. The larger the coverage, the better
@@ -82,7 +82,7 @@ class Solution:
         ret = 1
         _, _, prev_s, prev_e = A[0]
         __ prev_s > 0:
-            r.. False
+            r.. F..
 
         ___ _, _, s, e __ A[1:]:
             __ s <= prev_e a.. e > prev_e:

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ addStrings(self, a, b):
         """
         :type a: str
@@ -48,4 +48,4 @@ class Solution:
         ____:
             ans = ans[1:]
 
-        r.. ''.join(ans)
+        r.. ''.j..(ans)

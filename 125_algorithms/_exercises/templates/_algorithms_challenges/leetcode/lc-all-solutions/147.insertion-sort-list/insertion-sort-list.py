@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ insertionSortList(self, head):
     p = dummy = ListNode(0)
     cur = dummy.next = head

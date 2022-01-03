@@ -34,7 +34,7 @@ Can you solve it in O(N) time and O(1) space?
 """
 
 
-class Solution:
+c_ Solution:
     ___ backspaceCompare(self, S: s.., T: s..) -> bool:
         """
         stk
@@ -44,7 +44,7 @@ class Solution:
         Iterate the string reversely. When encountering "#", count, and skip
         the chars based on skip count.
         """
-        r.. self.make_stk(S) __ self.make_stk(T)
+        r.. make_stk(S) __ make_stk(T)
 
     ___ make_stk(self, S):
         stk    # list

@@ -4,13 +4,13 @@ Created on Oct 12, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ findSecondMinimumValue(self, root):
         """
         :type root: TreeNode
@@ -33,12 +33,12 @@ class Solution(object):
                 queue.a..(node.right)
         r.. second __ second != float('inf') ____ -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             TreeNode(2, TreeNode(2), TreeNode(5, TreeNode(5), TreeNode(7))),
         ]
         ___ root __ testCases:
-            result = self.findSecondMinimumValue(root)
+            result = findSecondMinimumValue(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

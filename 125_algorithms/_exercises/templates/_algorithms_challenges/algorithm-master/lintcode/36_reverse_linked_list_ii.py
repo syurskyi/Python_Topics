@@ -8,7 +8,7 @@ class ListNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: head: ListNode head is the head of the linked list
     @param: m: An integer

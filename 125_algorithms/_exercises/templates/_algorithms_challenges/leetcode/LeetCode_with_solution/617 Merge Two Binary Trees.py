@@ -30,14 +30,14 @@ Note: The merging process must start from the root nodes of both trees.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
         __ n.. t1 a.. n.. t2:
             r..
@@ -45,6 +45,6 @@ class Solution:
         node = TreeNode(0)
         node.val += t1 a.. t1.val o. 0
         node.val += t2 a.. t2.val o. 0
-        node.left = self.mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
-        node.right = self.mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
+        node.left = mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
+        node.right = mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
         r.. node

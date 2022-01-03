@@ -28,7 +28,7 @@ ____ collections _______ deque, defaultdict
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ leastInterval(self, tasks: List[s..], n: int) -> int:
         """
         Gap is n
@@ -48,7 +48,7 @@ class Solution:
 
         maxa = 0
         max_cnt = 0
-        ___ v __ counter.values():
+        ___ v __ counter.v..
             __ v > maxa:
                 maxa = v
                 max_cnt = 1
@@ -74,7 +74,7 @@ class Solution:
 
         pq = [
             (-v, k)
-            ___ k, v __ counter.items()
+            ___ k, v __ counter.i..
         ]
         heapq.heapify(pq)
         q = deque()  # stores (t, k)

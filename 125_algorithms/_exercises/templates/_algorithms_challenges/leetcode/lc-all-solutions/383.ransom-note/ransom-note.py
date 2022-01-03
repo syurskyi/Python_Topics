@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ canConstruct(self, ransomNote, magazine):
     """
     :type ransomNote: str
@@ -11,7 +11,7 @@ class Solution(object):
 
     ___ c __ ransomNote:
       __ letters[ord(c) - ord('a')] __ 0:
-        r.. False
+        r.. F..
       ____:
         letters[ord(c) - ord('a')] -= 1
-    r.. True
+    r.. T..

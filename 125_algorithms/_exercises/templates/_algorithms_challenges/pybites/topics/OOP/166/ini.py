@@ -2,34 +2,34 @@ _______ configparser
 
 
 
-class ToxIniParser:
+c_ ToxIniParser:
 
-    ___ __init__(self, ini_file):
+    ___ - , ini_file):
         """Use configparser to load ini_file into self.config"""
-        self.config = configparser.ConfigParser()
-        self.config.read(ini_file)
+        config = configparser.ConfigParser()
+        config.read(ini_file)
 
-    @property
-    ___ number_of_sections(self):
+    $
+    ___ number_of_sections
         """Return the number of sections in the ini file.
            New to properties? -> https://pybit.es/property-decorator.html
         """
-        r.. l..(self.config.sections())
+        r.. l..(config.sections())
 
-    @property
-    ___ environments(self):
+    $
+    ___ environments
         """Return a list of environments
            (= "envlist" attribute of [tox] section)"""
-        clean_env = self.config['tox']['envlist'].r..('\n', ',')
+        clean_env = config['tox']['envlist'].r..('\n', ',')
         r.. s..([env.s.. ___ env __ clean_env.s..(',') __ l..(env) > 0])
 
-    @property
-    ___ base_python_versions(self):
+    $
+    ___ base_python_versions
         """Return a list of all basepython across the ini file"""
         base_pys = set()
-        ___ key __ self.config.keys():
-            __ 'basepython' __ self.config[key]:
-                base_pys.add(self.config[key]['basepython'])
+        ___ key __ config.k..:
+            __ 'basepython' __ config[key]:
+                base_pys.add(config[key]['basepython'])
         r.. l..(base_pys)
 
 

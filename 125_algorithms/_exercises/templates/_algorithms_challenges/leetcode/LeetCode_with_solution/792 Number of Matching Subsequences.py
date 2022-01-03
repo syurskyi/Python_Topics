@@ -21,7 +21,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ numMatchingSubseq(self, S: s.., words: List[s..]) -> int:
         """
         Linear O(|S| + sum(|word|))

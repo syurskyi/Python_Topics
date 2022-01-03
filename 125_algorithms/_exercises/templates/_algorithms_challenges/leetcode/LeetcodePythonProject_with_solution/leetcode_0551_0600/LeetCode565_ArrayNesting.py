@@ -3,13 +3,13 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ arrayNesting(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         maxLen = 0
         ___ num __ nums:
             __ num n.. __ hashmap:
@@ -25,14 +25,14 @@ class Solution(object):
                 maxLen = max(maxLen, count)
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [5,4,0,3,1,6,2],
             [0],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.arrayNesting(nums)
+            result = arrayNesting(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -67,7 +67,7 @@ True
 """
 
 
-class Solution:
+c_ Solution:
     """
     time: O(log n) or O(h), `n` is the number of nodes and `h` is the tree height
 
@@ -101,7 +101,7 @@ class Solution:
         r.. ans
 
 
-class Solution2:
+c_ Solution2:
     """
     time: O(n), `n` is the number of nodes
 
@@ -118,7 +118,7 @@ class Solution2:
 
         stack    # list
         node = root
-        got_target = False
+        got_target = F..
 
         w.... node o. stack:
             w.... node:
@@ -130,12 +130,12 @@ class Solution2:
             __ got_target:
                 r.. node
             __ node.val __ target.val:
-                got_target = True
+                got_target = T..
 
             node = node.right
 
 
-class Solution3:
+c_ Solution3:
     """
     * every node has `parent` pointer
     time: O(log n) or O(h), `n` is the number of nodes and `h` is the tree height
@@ -168,7 +168,7 @@ class Solution3:
         r.. ans
 
 
-class Solution4:
+c_ Solution4:
     """
     * every node has `parent` pointer
     time: O(log n) or O(h), `n` is the number of nodes and `h` is the tree height

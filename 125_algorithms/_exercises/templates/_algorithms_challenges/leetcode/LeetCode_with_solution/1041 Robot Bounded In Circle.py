@@ -43,7 +43,7 @@ instructions[i] is in {'G', 'L', 'R'}
 dirs = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 
-class Solution:
+c_ Solution:
     ___ isRobotBounded(self, instructions: s..) -> bool:
         """
         LL: op

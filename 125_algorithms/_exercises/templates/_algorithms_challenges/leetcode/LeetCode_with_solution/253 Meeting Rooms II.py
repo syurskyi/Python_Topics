@@ -9,13 +9,13 @@ _______ operator
 __author__ = 'Daniel'
 
 
-class Interval:
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval:
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
 
-class Solution(object):
+c_ Solution(object):
     ___ minMeetingRooms(self, intervals):
         """
 

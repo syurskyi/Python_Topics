@@ -6,7 +6,7 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ minArea(self, image, x, y):
         """
         :type image: List[List[str]]

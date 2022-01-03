@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   # O(nlogn) greedy to place most popular and distinct tasks first
   # Actually, I don't think this is greedy
   # We always place different tasks in a cycle which will minimize steps
@@ -12,7 +12,7 @@ class Solution(object):
     n += 1
     ans = 0
     d = collections.Counter(tasks)
-    heap = [-c ___ c __ d.values()]
+    heap = [-c ___ c __ d.v..
     heapq.heapify(heap)
     w.... heap:
       stack    # list

@@ -3,7 +3,7 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ mincostToHireWorkers(self, quality, wage, K):
         """
         :type quality: List[int]
@@ -26,12 +26,12 @@ class Solution(object):
                 res = m..(res, qsum*r)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ quality, wage, k __ testCases:
-            res = self.mincostToHireWorkers(quality, wage, k)
+            res = mincostToHireWorkers(quality, wage, k)
             print('res: %s' % res)
             print('-='*30 + '-')
 

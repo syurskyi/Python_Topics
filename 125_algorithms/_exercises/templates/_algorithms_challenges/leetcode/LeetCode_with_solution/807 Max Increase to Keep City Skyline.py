@@ -42,7 +42,7 @@ All buildings in grid[i][j] occupy the entire grid cell: that is, they are a
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxIncreaseKeepingSkyline(self, grid: List[List[int]]) -> int:
         """
         grow the to limit constraint by 2D skyline

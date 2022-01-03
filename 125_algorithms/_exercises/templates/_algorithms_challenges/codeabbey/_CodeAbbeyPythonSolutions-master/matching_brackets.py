@@ -1,10 +1,10 @@
-_______ re
+_______ __
 
 amount_values = int(input())
 results    # list
 
 ___ is_matching(word):
-    word = re.sub(r"[^()[\]{}<>]","",word)
+    word = __.sub(r"[^()[\]{}<>]","",word)
 
     open_brackets = ["[","(","{","<"]
     close_brackets = ["]",")","}",">"]

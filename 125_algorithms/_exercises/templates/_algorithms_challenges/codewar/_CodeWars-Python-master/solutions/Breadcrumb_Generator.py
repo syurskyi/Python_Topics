@@ -53,7 +53,7 @@ ___ generate_bc(url, separator):
         breadcrumb = '<a href="/">HOME</a>'
 
         ___ i, e __ e..(menus[:-1]):
-            breadcrumb += separator + '<a href="/{}/">{}</a>'.f..('/'.join(menus[:i + 1]), get_element_name(e))
+            breadcrumb += separator + '<a href="/{}/">{}</a>'.f..('/'.j..(menus[:i + 1]), get_element_name(e))
 
         breadcrumb += separator + '<span class="active">{}</span>'.f..(get_element_name(menus[-1]))
         r.. breadcrumb
@@ -75,9 +75,9 @@ ___ get_element_name(element):
         ___ i, c __ reversed(l..(e..(acronyms))):
             __ c __ ignore_words:
                 acronyms.pop(i)
-        r.. ''.join([s[0].upper() ___ s __ acronyms])
+        r.. ''.j..([s[0].upper() ___ s __ acronyms])
 
-    r.. ' '.join([s.upper() ___ s __ acronyms])
+    r.. ' '.j..([s.upper() ___ s __ acronyms])
 
 
 

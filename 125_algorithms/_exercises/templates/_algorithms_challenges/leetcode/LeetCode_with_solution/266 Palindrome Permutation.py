@@ -7,7 +7,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ canPermutePalindrome(self, s):
         """
         :type s: str
@@ -17,11 +17,11 @@ class Solution(object):
         ___ c __ s:
             m[c] += 1
 
-        once = False
-        ___ v __ m.values():
+        once = F..
+        ___ v __ m.v..
             __ v % 2 __ 1:
                 __ once:
-                    r.. False
-                once = True
+                    r.. F..
+                once = T..
 
-        r.. True
+        r.. T..

@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
   ___ hasCycle(self, head):
     """
     :type head: ListNode
@@ -15,5 +15,5 @@ class Solution(object):
       fast = fast.next.next
       slow = slow.next
       __ slow __ fast:
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..

@@ -14,5 +14,5 @@ ___ test_convert_to_datetime():
 
 ___ test_time_between_events():
     diff = time_between_shutdowns(loglines)
-    ... type(diff) __ t..
+    ... t..(diff) __ t..
     ... s..(diff) __ '0:03:31'

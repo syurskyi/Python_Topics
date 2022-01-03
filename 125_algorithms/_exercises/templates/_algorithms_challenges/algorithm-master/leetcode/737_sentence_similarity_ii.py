@@ -16,7 +16,7 @@ True
 """
 
 
-class Solution:
+c_ Solution:
     """
     UnionFind
     """
@@ -28,27 +28,27 @@ class Solution:
         :rtype: bool
         """
         __ l..(words1) != l..(words2):
-            r.. False
+            r.. F..
 
-        nodes = {}
+        nodes    # dict
 
         ___ a, b __ pairs:
-            self.union(nodes, a, b)
+            union(nodes, a, b)
 
         ___ i __ r..(l..(words1)):
             a = words1[i]
             b = words2[i]
-            _a = self.find(nodes, a)
-            _b = self.find(nodes, b)
+            _a = find(nodes, a)
+            _b = find(nodes, b)
 
             __ a != b a.. _a != _b:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ union(self, nodes, a, b):
-        _a = self.find(nodes, a)
-        _b = self.find(nodes, b)
+        _a = find(nodes, a)
+        _b = find(nodes, b)
 
         __ _a __ n.. _b:
             nodes[_a] = _b
@@ -62,14 +62,14 @@ class Solution:
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] = self.find(nodes, nodes[a])
+        nodes[a] = find(nodes, nodes[a])
         r.. nodes[a]
 
 
 _______ collections
 
 
-class Solution2:
+c_ Solution2:
     """
     DFS
     """
@@ -81,7 +81,7 @@ class Solution2:
         :rtype: bool
         """
         __ l..(words1) != l..(words2):
-            r.. False
+            r.. F..
 
         simils = collections.defaultdict(set)
 
@@ -93,17 +93,17 @@ class Solution2:
             a = words1[i]
             b = words2[i]
 
-            __ a != b a.. n.. self.dfs(a, b, simils, set()):
-                r.. False
+            __ a != b a.. n.. dfs(a, b, simils, set()):
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ dfs(self, start, end, simils, path):
         # check start and end are connected
         __ start __ end:
-            r.. True
+            r.. T..
         __ start n.. __ simils o. start __ path:
-            r.. False
+            r.. F..
 
         path.add(start)
 
@@ -111,9 +111,9 @@ class Solution2:
             __ nxt __ path:
                 continue
 
-            res = self.dfs(nxt, end, simils, path)
+            res = dfs(nxt, end, simils, path)
             __ res:
-                r.. True
+                r.. T..
 
         path.discard(start)
-        r.. False
+        r.. F..

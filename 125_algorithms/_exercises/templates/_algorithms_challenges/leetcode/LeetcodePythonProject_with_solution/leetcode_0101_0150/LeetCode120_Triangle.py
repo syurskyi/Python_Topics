@@ -3,7 +3,7 @@ Created on May 29, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minimumTotal(self, triangle):
         """
         :type triangle: List[List[int]]

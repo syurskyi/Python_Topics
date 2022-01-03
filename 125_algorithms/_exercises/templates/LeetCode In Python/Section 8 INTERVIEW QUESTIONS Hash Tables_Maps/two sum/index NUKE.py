@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ twoSum(self, nums: List[i..], target: i..) -> List[i..]:
         m  {}
         n  l..(nums)

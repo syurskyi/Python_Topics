@@ -1,10 +1,10 @@
 _______ os
 _______ urllib.request
-_______ re
+_______ __
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'safari.logs'
-SAFARI_LOGS = os.path.join(TMP, DATA)
+SAFARI_LOGS = os.path.j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'
 
 urllib.request.urlretrieve(
@@ -27,7 +27,7 @@ ___ create_chart():
                         print()
                     current_date = date
                     print(date,end=' ')
-                __ re.search(r'python',previous_line,flags=re.I):
+                __ __.s..(r'python',previous_line,flags=__.I):
                     char = PY_BOOK
                 ____:
                     char = OTHER_BOOK

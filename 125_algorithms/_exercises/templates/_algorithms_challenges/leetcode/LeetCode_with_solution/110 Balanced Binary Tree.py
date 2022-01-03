@@ -7,47 +7,47 @@ every node never differ by more than 1.
 __author__ = 'Danyang'
 
 
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.depth_bottom = {}
+c_ Solution(object):
+    ___ - ):
+        depth_bottom    # dict
 
     ___ isBalanced(self, root):
-        self.fathom(root, 0)
-        r.. self._is_balanced(root, 0)
+        fathom(root, 0)
+        r.. _is_balanced(root, 0)
 
     ___ _is_balanced(self, cur, depth):
         """
         :param depth: depth from root to current node.
         """
         __ n.. cur:
-            r.. True
+            r.. T..
 
         h1 = h2 = depth
-        __ cur.left: h1 = self.depth_bottom[cur.left]
-        __ cur.right: h2 = self.depth_bottom[cur.right]
+        __ cur.left: h1 = depth_bottom[cur.left]
+        __ cur.right: h2 = depth_bottom[cur.right]
 
         __ abs(h1 - h2) > 1:
-            r.. False
+            r.. F..
 
-        r.. a..([self._is_balanced(cur.left, depth+1), self._is_balanced(cur.right, depth+1)])
+        r.. a..([_is_balanced(cur.left, depth+1), _is_balanced(cur.right, depth+1)])
 
     ___ fathom(self, root, depth):
         __ n.. root:
             r.. depth-1
 
-        ret = max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
-        self.depth_bottom[root] = ret
+        ret = max(fathom(root.left, depth+1), fathom(root.right, depth+1))
+        depth_bottom[root] = ret
         r.. ret
 
 
-class SolutionSlow(object):
+c_ SolutionSlow(object):
     ___ isBalanced(self, root):
         """
         pre-order traversal
@@ -56,14 +56,14 @@ class SolutionSlow(object):
         :return: boolean
         """
         __ n.. root:
-            r.. True
-        __ abs(self.fathom(root.left, 0)-self.fathom(root.right, 0)) > 1:
-            r.. False
+            r.. T..
+        __ abs(fathom(root.left, 0)-fathom(root.right, 0)) > 1:
+            r.. F..
 
-        __ self.isBalanced(root.left) a.. self.isBalanced(root.right):
-            r.. True
+        __ isBalanced(root.left) a.. isBalanced(root.right):
+            r.. T..
         ____:
-            r.. False
+            r.. F..
 
     ___ fathom(self, root, depth):
         """
@@ -71,4 +71,4 @@ class SolutionSlow(object):
         """
         __ n.. root:
             r.. depth-1  # test cases
-        r.. max(self.fathom(root.left, depth+1), self.fathom(root.right, depth+1))
+        r.. max(fathom(root.left, depth+1), fathom(root.right, depth+1))

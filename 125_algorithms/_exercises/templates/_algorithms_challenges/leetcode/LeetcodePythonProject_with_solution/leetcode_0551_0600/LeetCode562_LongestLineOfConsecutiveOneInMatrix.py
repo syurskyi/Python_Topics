@@ -3,7 +3,7 @@ Created on Aug 29, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ longestLine(self, M):
         """
         :type M: List[List[int]]
@@ -32,7 +32,7 @@ class Solution(object):
                              dp[i][j][2], dp[i][j][3])
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [0,1,1,0],
@@ -41,8 +41,8 @@ class Solution(object):
             ],
         ]
         ___ matrix __ testCases:
-            print('\n'.join([s..(row) ___ row __ matrix]))
-            result = self.longestLine(matrix)
+            print('\n'.j..([s..(row) ___ row __ matrix]))
+            result = longestLine(matrix)
             print('result: %s' % result)
             print('-='*30+'-')
 

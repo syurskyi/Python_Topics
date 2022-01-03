@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: P: Given an integer array
     @return: Maximum profit

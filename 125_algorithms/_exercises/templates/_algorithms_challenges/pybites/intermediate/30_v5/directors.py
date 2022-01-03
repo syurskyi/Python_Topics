@@ -7,8 +7,8 @@ BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'
 TMP = '/tmp'
 
 fname = 'movie_metadata.csv'
-remote = os.path.join(BASE_URL, fname)
-local = os.path.join(TMP, fname)
+remote = os.path.j..(BASE_URL, fname)
+local = os.path.j..(TMP, fname)
 urlretrieve(remote, local)
 
 MOVIE_DATA = local
@@ -51,5 +51,5 @@ ___ get_average_scores(directors: defaultdict):
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    r.. s..([(d, calc_mean_score(directors[d])) ___ d __ directors.keys() __ l..(directors[d]) >= MIN_MOVIES],
+    r.. s..([(d, calc_mean_score(directors[d])) ___ d __ directors.k.. __ l..(directors[d]) >= MIN_MOVIES],
                   key=l.... x: -x[1])

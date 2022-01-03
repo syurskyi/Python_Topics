@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ getMaxRepetitions(self, s1, n1, s2, n2):
     """
     :type s1: str

@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 COURSE = ('Introduction 1 Lecture 01:47'
           'The Basics 4 Lectures 32:03'
@@ -16,7 +16,7 @@ ___ extract_course_times(course=COURSE):
     """Return the course timings from the passed in
        course string. Timings are in mm:ss (minutes:seconds)
     """
-    m = re.compile(r'\d+:\d+')
+    m = __.c..(r'\d+:\d+')
     r.. m.findall(course)
 
 
@@ -24,11 +24,11 @@ ___ get_all_hashtags_and_links(tweet=TWEET):
     """Get all hashtags and links from the tweet text
        that is passed into this function.
     """
-    m = re.compile(r'http\S+|#\w+')
+    m = __.c..(r'http\S+|#\w+')
     r.. m.findall(tweet)
 
 
 ___ match_first_paragraph(html=HTML):
     """Extract the first paragraph of the passed in html."""
-    m = re.compile(r'<p>(.+?)</p>')
+    m = __.c..(r'<p>(.+?)</p>')
     r.. m.findall(html)[0]

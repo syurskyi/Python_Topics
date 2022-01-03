@@ -2,7 +2,7 @@
 to borrow the idea of `./lintcode/515_paint_house.py`
 a house can be at one of two status: steal or not
 """
-class Solution:
+c_ Solution:
     """
     @param: A: An array of non-negative integers
     @return: The maximum amount of money you can rob tonight
@@ -26,7 +26,7 @@ class Solution:
         r.. max(dp[curr])
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: An array of non-negative integers
     @return: The maximum amount of money you can rob tonight
@@ -62,7 +62,7 @@ class Solution:
         r.. dp[curr]
 
 
-class Solution:
+c_ Solution:
     ___ houseRobber(self, A):
         """
         :type A: List[int]

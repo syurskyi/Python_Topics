@@ -9,7 +9,7 @@ The order of output does not matter.
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ findAnagrams(self, s, target):
         """
         Brute force: O(|target|) * O(cmp) * O(|s|)

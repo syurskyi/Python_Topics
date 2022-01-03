@@ -6,47 +6,47 @@ ____ anyall _______ (contains_only_vowels,
 
 
 @pytest.mark.parametrize("arg, expected", [
-    ('aioue', True),
-    ('EoUia', True),
-    ('aaAiIee', True),
-    ('AEIOU', True),
-    ('aaeeouu', True),
-    ('abcde', False),
-    ('AE123', False),
-    ('AiOuef', False),
+    ('aioue', T..),
+    ('EoUia', T..),
+    ('aaAiIee', T..),
+    ('AEIOU', T..),
+    ('aaeeouu', T..),
+    ('abcde', F..),
+    ('AE123', F..),
+    ('AiOuef', F..),
 ])
 ___ test_contains_only_vowels(arg, expected):
     ... bool(contains_only_vowels(arg)) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
-    ('Python', True),
-    ('pycharm', True),
-    ('PYTHON', True),
-    ('teaser', True),
-    ('bob', True),
-    ('julian', True),
-    ('yes', True),
-    ('no', True),
-    ('america', False),
-    ('B@b', False),
-    ('Jules', False),
-    ('agua', False),
-    ('123', False),
-    ('', False),
+    ('Python', T..),
+    ('pycharm', T..),
+    ('PYTHON', T..),
+    ('teaser', T..),
+    ('bob', T..),
+    ('julian', T..),
+    ('yes', T..),
+    ('no', T..),
+    ('america', F..),
+    ('B@b', F..),
+    ('Jules', F..),
+    ('agua', F..),
+    ('123', F..),
+    ('', F..),
 ])
 ___ test_contains_any_py_chars(arg, expected):
     ... bool(contains_any_py_chars(arg)) __ expected
 
 
 @pytest.mark.parametrize("arg, expected", [
-    ('yes1', True),
-    ('123', True),
-    ('hello2', True),
-    ('up2date', True),
-    ('yes', False),
-    ('hello', False),
-    ('', False),
+    ('yes1', T..),
+    ('123', T..),
+    ('hello2', T..),
+    ('up2date', T..),
+    ('yes', F..),
+    ('hello', F..),
+    ('', F..),
 ])
 ___ test_contains_digits(arg, expected):
     ... bool(contains_digits(arg)) __ expected

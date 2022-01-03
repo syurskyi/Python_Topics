@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ numWays_oneliner(self, n, k):
         r.. 0 __ n < 1 ____ s..(reduce(l.... F, i: [(k-1)*(F[0]+F[1]), F[0]], xrange(1, n), [k, 0]))
 

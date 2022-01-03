@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
   # @param {TreeNode} root
   # @return {string[]}
   ___ binaryTreePaths(self, root):
@@ -15,9 +15,9 @@ class Solution:
         left = helper(root.left, path, res)
         right = helper(root.right, path, res)
         __ n.. left a.. n.. right:
-          res.a..("->".join(path))
+          res.a..("->".j..(path))
         path.pop()
-        r.. True
+        r.. T..
 
     res    # list
     helper(root, [], res)

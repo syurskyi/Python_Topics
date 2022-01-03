@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param S: Generating set of rules.
     @param s: Start symbol.
@@ -9,7 +9,7 @@ class Solution:
         __ n.. start:
             start = ''
 
-        N = {}
+        N    # dict
 
         ___ s __ S:
             cur, nxt = s.s..(' -> ')
@@ -17,13 +17,13 @@ class Solution:
                 N[cur] = set()
             N[cur].add(nxt)
 
-        r.. self.dfs(N, end, start)
+        r.. dfs(N, end, start)
 
     ___ dfs(self, N, end, s):
         __ l..(s) > l..(end):
-            r.. False
+            r.. F..
         __ s __ end:
-            r.. True
+            r.. T..
 
         ___ i __ r..(l..(s)):
             __ (n.. ord('A') <= ord(s[i]) <= ord('Z') o.
@@ -31,8 +31,8 @@ class Solution:
                 continue
 
             ___ _s __ N[s[i]]:
-                res = self.dfs(N, end, s[:i] + _s + s[i + 1:])
+                res = dfs(N, end, s[:i] + _s + s[i + 1:])
                 __ res:
-                    r.. True
+                    r.. T..
 
-        r.. False
+        r.. F..

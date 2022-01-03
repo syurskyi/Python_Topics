@@ -4,7 +4,7 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ reconstructQueue(self, people):
         res    # list
         people.s..(key=l.... x: (-x[0], x[1]))
@@ -12,13 +12,13 @@ class Solution(object):
             res.insert(p[1], p)
         r.. res
         
-    ___ test(self):
+    ___ test
         testCases = [
             [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]],
         ]
         ___ people __ testCases:
             print('people: %s' % people)
-            result = self.reconstructQueue(people)
+            result = reconstructQueue(people)
             print('result: %s' % result)
             print('-='*30+'-')
 

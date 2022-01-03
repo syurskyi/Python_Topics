@@ -24,7 +24,7 @@ Output:
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ lastRemaining(self, n):
         """
         Brute force O(n): A = A[::2][::-1]
@@ -36,7 +36,7 @@ class Solution(object):
         remain = n
         head = 1
         step = 1
-        from_left = True
+        from_left = T..
         w.... remain > 1:
             __ from_left:
                 head += step

@@ -3,7 +3,7 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numDecodings(self, s):
         """
         :type s: str
@@ -23,7 +23,7 @@ class Solution(object):
             e0, e1, e2 = f0%MOD, f1, f2
         r.. e0
     
-    ___ test(self):
+    ___ test
         testCases = [
             '*',
             '1*',
@@ -31,7 +31,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.numDecodings(s)
+            result = numDecodings(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

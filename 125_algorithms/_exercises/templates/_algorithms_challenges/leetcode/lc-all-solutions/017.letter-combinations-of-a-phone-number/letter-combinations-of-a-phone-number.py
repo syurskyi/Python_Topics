@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ letterCombinations(self, digits):
     """
     :type digits: str
@@ -11,7 +11,7 @@ class Solution(object):
 
     ___ dfs(digits, index, path, res, d):
       __ index __ l..(digits):
-        res.a..("".join(path))
+        res.a..("".j..(path))
         r..
 
       digit = int(digits[index])

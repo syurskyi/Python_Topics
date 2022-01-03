@@ -1,15 +1,15 @@
-class Animal:
+c_ Animal:
     # 'Class variables'
     _zoo = N..
     _index = N..
 
-    ___ __init__(self, name: s..):
-        self.name = name.t..
-        self.index = self._next_index()
-        self._add_to_zoo(self)
+    ___ - , name: s..):
+        name = name.t..
+        index = _next_index()
+        _add_to_zoo(self)
 
-    ___ __repr__(self):
-        r.. f'{self.index}. {self.name}'
+    ___ __repr__
+        r.. f'{index}. {name}'
 
     @classmethod
     ___ _next_index(cls):

@@ -5,25 +5,25 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ countUnivalSubtrees(self, root):
     """
     :type root: TreeNode
     :rtype: int
     """
-    self.count = 0
+    count = 0
 
     ___ dfs(root, pv):
       __ n.. root:
-        r.. True
+        r.. T..
       left = dfs(root.left, root.val)
       right = dfs(root.right, root.val)
       __ left a.. right:
-        self.count += 1
+        count += 1
         __ root.val __ pv:
-          r.. True
-      r.. False
+          r.. T..
+      r.. F..
 
     __ root:
       dfs(root, root.val)
-    r.. self.count
+    r.. count

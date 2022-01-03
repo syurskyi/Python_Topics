@@ -41,11 +41,11 @@ All strings consists only of lower and upper case English letters.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ camelMatch(self, queries: List[s..], pattern: s..) -> List[bool]:
         ret    # list
         ___ q __ queries:
-            ret.a..(self.match(q, pattern))
+            ret.a..(match(q, pattern))
             
         r.. ret
 
@@ -68,4 +68,4 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().camelMatch(["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa") __ [True, False, True, False, False]
+    ... Solution().camelMatch(["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa") __ [T.., F.., T.., F.., F..]

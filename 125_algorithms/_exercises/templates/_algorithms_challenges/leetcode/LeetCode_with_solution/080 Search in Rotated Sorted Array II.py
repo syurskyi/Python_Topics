@@ -7,7 +7,7 @@ Would this affect the run-time complexity? How and why?
 Write a function to determine if a given target is in the array.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ search_set(self, A, target):
         """
         Follow up 033 Search in Rotated Sorted Array
@@ -35,7 +35,7 @@ class Solution:
             mid = (start+end)/2
             # found
             __ A[mid]__target:
-                r.. True
+                r.. T..
             # case 1
             __ A[start]<A[mid]<A[end]:
                 __ target>A[mid]:
@@ -55,9 +55,9 @@ class Solution:
                 ____:
                     start = mid+1
 
-        r.. False
+        r.. F..
 
-    ___ search(self, A, target):
+    ___ s..(self, A, target):
         """
         Follow up 033 Search in Rotated Sorted Array
         Duplicate allowed
@@ -82,7 +82,7 @@ class Solution:
             mid = (start+end)/2
             # found
             __ A[mid]__target:
-                r.. True
+                r.. T..
             # undetermined  # the only significant difference.
             __ A[start]__A[mid]:
                 start += 1
@@ -105,7 +105,7 @@ class Solution:
                 ____:
                     start = mid+1
 
-        r.. False
+        r.. F..
 
 __ __name____"__main__":
-    ... Solution().search([1,1,3,1], 3)__True
+    ... Solution().s..([1,1,3,1], 3)__True

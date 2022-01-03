@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ leastBricks(self, wall):
     """
     :type wall: List[List[int]]
@@ -6,7 +6,7 @@ class Solution(object):
     """
     ans = l..(wall)
     count = 0
-    d = {}
+    d    # dict
     ___ w __ wall:
       coverage = 0
       ___ brick __ w[:-1]:

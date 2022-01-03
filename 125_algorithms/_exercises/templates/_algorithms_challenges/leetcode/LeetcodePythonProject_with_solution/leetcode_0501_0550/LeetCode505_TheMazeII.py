@@ -4,7 +4,7 @@ Created on May 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ shortestDistance(self, maze, start, destination):
         """
         :type maze: List[List[int]]
@@ -17,13 +17,13 @@ class Solution(object):
         m, n = l..(maze), l..(maze[0])
         heap    # list
         heapq.heappush(heap, (0, start[0], start[1]))
-        visited = [[False]*n ___ _ __ r..(m)]
+        visited = [[F..]*n ___ _ __ r..(m)]
         w.... heap:
             currDist, i, j = heapq.heappop(heap)
             __ i __ destination[0] a.. j __ destination[1]:
                 r.. currDist
-            visited[i][j] = True
-            ___ x, y, dist __ self.getNextSteps(maze, i, j):
+            visited[i][j] = T..
+            ___ x, y, dist __ getNextSteps(maze, i, j):
                 __ n.. visited[x][y]:
                     heapq.heappush(heap, (currDist+dist, x, y))
         r.. -1

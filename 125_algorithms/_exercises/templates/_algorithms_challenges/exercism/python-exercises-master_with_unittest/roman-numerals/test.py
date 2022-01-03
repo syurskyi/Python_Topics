@@ -5,7 +5,7 @@ _______ roman_numerals
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-class RomanTest(unittest.TestCase):
+c_ RomanTest(unittest.TestCase):
     numerals = {
         1: 'I',
         2: 'II',
@@ -27,9 +27,9 @@ class RomanTest(unittest.TestCase):
         3000: 'MMM',
     }
 
-    ___ test_numerals(self):
-        ___ arabic, numeral __ self.numerals.items():
-            self.assertEqual(roman_numerals.numeral(arabic), numeral)
+    ___ test_numerals
+        ___ arabic, numeral __ numerals.i..:
+            assertEqual(roman_numerals.numeral(arabic), numeral)
 
 
 __ __name__ __ '__main__':

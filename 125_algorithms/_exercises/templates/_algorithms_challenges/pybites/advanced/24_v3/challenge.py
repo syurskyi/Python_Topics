@@ -1,42 +1,42 @@
 ____ abc _______ ABC, abstractmethod
 
 
-class Challenge(ABC):
-    ___ __init__(self, number, title):
-        self.number = number
-        self.title = title
+c_ Challenge(ABC):
+    ___ - , number, title):
+        number = number
+        title = title
 
     @abstractmethod
     ___ verify(self, _):
         raise TypeError()
 
-    @property
+    $
     @abstractmethod
-    ___ pretty_title(self):
+    ___ pretty_title
         raise TypeError()
 
 
-class BlogChallenge(Challenge):
-    ___ __init__(self, number, title, merged_prs):
+c_ BlogChallenge(Challenge):
+    ___ - , number, title, merged_prs):
         super().__init__(number, title)
-        self.merged_prs = merged_prs
+        merged_prs = merged_prs
 
     ___ verify(self, pr):
-        r.. pr __ self.merged_prs
+        r.. pr __ merged_prs
 
-    @property
-    ___ pretty_title(self):
-        r.. f'PCC{self.number} - {self.title}'
+    $
+    ___ pretty_title
+        r.. f'PCC{number} - {title}'
 
 
-class BiteChallenge(Challenge):
-    ___ __init__(self, number, title, result):
+c_ BiteChallenge(Challenge):
+    ___ - , number, title, result):
         super().__init__(number, title)
-        self.result = result
+        result = result
 
     ___ verify(self, result):
-        r.. result __ self.result
+        r.. result __ result
 
-    @property
-    ___ pretty_title(self):
-        r.. f'Bite {self.number}. {self.title}'
+    $
+    ___ pretty_title
+        r.. f'Bite {number}. {title}'

@@ -3,7 +3,7 @@ Created on Apr 23, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ uniqueMorseRepresentations(self, words):
         """
         :type words: List[str]
@@ -18,13 +18,13 @@ class Solution(object):
             hashset.add(tmp)
         r.. l..(hashset)
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["gin", "zen", "gig", "msg"],
         ]
         ___ words __ testCases:
             print('words: %s' % words)
-            result = self.uniqueMorseRepresentations(words)
+            result = uniqueMorseRepresentations(words)
             print('result: %s' % result)
             print('-='*30+'-')
 

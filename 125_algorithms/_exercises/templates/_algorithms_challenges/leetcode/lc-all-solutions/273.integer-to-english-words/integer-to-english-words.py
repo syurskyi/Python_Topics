@@ -5,7 +5,7 @@ tens = {2: "Twenty", 3: "Thirty", 4: "Forty", 5: "Fifty", 6: "Sixty", 7: "Sevent
 digit = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten"}
 
 
-class Solution(object):
+c_ Solution(object):
   ___ numberToWords(self, num):
     """
     :type num: int
@@ -32,7 +32,7 @@ class Solution(object):
         d = number
         __ d != 0:
           ans.a..(digit[d])
-      r.. " ".join(ans)
+      r.. " ".j..(ans)
 
     divider = 1000000000
     w.... num > 0:
@@ -43,4 +43,4 @@ class Solution(object):
       divider /= 1000
     __ n.. ans:
       r.. "Zero"
-    r.. " ".join(ans)
+    r.. " ".j..(ans)

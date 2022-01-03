@@ -15,7 +15,7 @@ The number of ways decoding "12" is 2.
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ numDecodings(self, s):
         """
         F

@@ -6,14 +6,14 @@ _______ xml.etree.ElementTree as ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.join(tmp, 'feed')
+tempfile = os.path.j..(tmp, 'feed')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )
 
 with open(tempfile) as f:
-    content = f.read().lower()
+    content = f.read().l..
 
 ___ get_pybites_top_tags(n=10):
     """use Counter to get the top 10 PyBites tags from the feed
@@ -26,7 +26,7 @@ ___ get_pybites_top_tags(n=10):
     
     ___ item __ root[0].findall("item"):
         ___ category __ item.findall('category'):
-            counter[category.text.lower()] += 1
+            counter[category.text.l..] += 1
 
 
     r.. counter.most_common(n)

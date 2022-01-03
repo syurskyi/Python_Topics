@@ -16,7 +16,7 @@ Test Case:
 : max_avg = 0 -> max_avg = float('-inf')
 """
 
-class Solution:
+c_ Solution:
     max_avg = float('-inf')
     max_node = N..
 
@@ -25,22 +25,22 @@ class Solution:
     @return: the root of the maximum average of subtree
     """
     ___ findSubtree2(self, root):
-        self._traversal(root)
-        r.. self.max_node
+        _traversal(root)
+        r.. max_node
 
     ___ _traversal(self, node):
         __ n.. node:
             r.. 0, 0
 
-        left_sum, left_size = self._traversal(node.left)
-        right_sum, right_size = self._traversal(node.right)
+        left_sum, left_size = _traversal(node.left)
+        right_sum, right_size = _traversal(node.right)
 
         subtree_sum = left_sum + right_sum + node.val
         subtree_size = left_size + right_size + 1
         subtree_avg = subtree_sum * 1.0 / subtree_size
 
-        __ subtree_avg > self.max_avg:
-            self.max_avg = subtree_avg
-            self.max_node = node
+        __ subtree_avg > max_avg:
+            max_avg = subtree_avg
+            max_node = node
 
         r.. subtree_sum, subtree_size

@@ -1,29 +1,29 @@
 # see __mro__ output in Bite description
 
 
-class Person:
+c_ Person:
 
-    ___ __str__(self):
+    ___ __str__
         r.. "I am a person"
 
-class Father(Person):
+c_ Father(Person):
 
-    ___ __str__(self):
+    ___ __str__
         r.. super().__str__() + " and cool daddy"
 
 
 
-class Mother(Person):
+c_ Mother(Person):
 
-    ___ __str__(self):
+    ___ __str__
         r.. super().__str__() + " and awesome mom"
 
 
 
-class Child(Father,Mother):
+c_ Child(Father,Mother):
 
 
-    ___ __str__(self):
+    ___ __str__
         r.. "I am the coolest kid"
 
 

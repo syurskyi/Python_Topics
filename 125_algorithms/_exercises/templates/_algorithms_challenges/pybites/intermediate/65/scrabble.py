@@ -5,14 +5,14 @@ _______ urllib.request
 # PREWORK
 TMP = os.getenv("TMP", "/tmp")
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.join(TMP, DICT)
+DICTIONARY = os.path.j..(TMP, DICT)
 urllib.request.urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
 )
 
 with open(DICTIONARY) as f:
-    dictionary = set([word.s...lower() ___ word __ f.read().s.. ])
+    dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
 
 print(dictionary)
 ___ get_possible_dict_words(draw):
@@ -28,7 +28,7 @@ ___ _get_permutations_draw(draw):
     
     ___ i __ r..(1,l..(draw) + 1):
         ___ word __ i...permutations(draw,i):
-            y.. ''.join(word).lower()
+            y.. ''.j..(word).l..
 
 
 

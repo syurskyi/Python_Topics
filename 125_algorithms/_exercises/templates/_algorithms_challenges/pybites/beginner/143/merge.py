@@ -13,8 +13,8 @@ ___ get_person_age(name):
     __ isi..(name, s..):
         age =0
         ___ group __ [group1, group2, group3]:
-            __ name.lower() __ group:
-                age = group[name.lower()]
+            __ name.l.. __ group:
+                age = group[name.l..]
         __ age __ 0:
             r.. NOT_FOUND
         ____:

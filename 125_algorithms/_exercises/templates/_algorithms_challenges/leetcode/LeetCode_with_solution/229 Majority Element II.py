@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ majorityElement(self, nums):
         """
         Since majority elements appears more than ⌊ n/3 ⌋ times, there are at most 2 majority number
@@ -22,13 +22,13 @@ class Solution:
                 __ l..(cnt) < 3-1:
                     cnt[num] += 1
                 ____:
-                    ___ k __ cnt.keys():
+                    ___ k __ cnt.k..:
                         cnt[k] -= 1
                         __ cnt[k] __ 0:
                             del cnt[k]
 
         ret    # list
-        ___ k __ cnt.keys():
+        ___ k __ cnt.k..:
             __ l..(filter(l.... x: x __ k, nums)) > l..(nums)/2:
                 ret.a..(k)
 

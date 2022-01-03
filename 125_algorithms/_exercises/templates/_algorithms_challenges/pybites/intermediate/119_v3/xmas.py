@@ -24,7 +24,7 @@ ___ generate_xmas_tree(rows=10):
         result.a..(line)
 
 
-    r.. ''.join(result)
+    r.. ''.j..(result)
 
 
 __ __name__ __ "__main__":

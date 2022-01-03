@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ numTilings(self, N):
         """
         :type N: int

@@ -1,7 +1,7 @@
 """
 DFS
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A set of numbers
     @return: A list of lists
@@ -11,7 +11,7 @@ class Solution:
             r.. [[]]
 
         ans    # list
-        self.dfs(s..(A), 0, ans, [])
+        dfs(s..(A), 0, ans, [])
         r.. ans
 
     ___ dfs(self, A, start, ans, subset):
@@ -21,13 +21,13 @@ class Solution:
             r..
 
         ___ i __ r..(start, l..(A)):
-            self.dfs(A, i + 1, ans, subset + [A[i]])
+            dfs(A, i + 1, ans, subset + [A[i]])
 
 
 """
 Bit Manipulation
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A set of numbers
     @return: A list of lists

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ mySqrt(self, x):
     """
     :type x: int

@@ -1,9 +1,9 @@
 ____ i.. _______ groupby
-_______ re
+_______ __
 
 
 ___ encode(string):
-    r.. ''.join([helper(g) ___ g __ [l..(group)
+    r.. ''.j..([helper(g) ___ g __ [l..(group)
                                         ___ _, group __ groupby(string)]])
 
 
@@ -12,10 +12,10 @@ ___ helper(g):
 
 
 ___ decode(string):
-    groups = re.findall(r'(\d*\D{1})', string)
-    pairs = [[re.match(r'\d*', g).group(), g[-1]] ___ g __ groups]
+    groups = __.findall(r'(\d*\D{1})', string)
+    pairs = [[__.match(r'\d*', g).group(), g[-1]] ___ g __ groups]
 
     # Fix hardcoded 0 and 1 indices
     # Also change name of x variable
-    r.. ''.join([int(x[0]) * x[1] __ x[0].isdigit() ____ x[1]
+    r.. ''.j..([int(x[0]) * x[1] __ x[0].isdigit() ____ x[1]
                     ___ x __ pairs])

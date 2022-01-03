@@ -7,10 +7,10 @@ ___ convert(value: float, fmt: s..) -> float:
     """
 
 
-    __ type(value) n.. __ (int,float):
+    __ t..(value) n.. __ (int,float):
         raise TypeError("Value must be numeric")
 
-    fmt = fmt.s...lower()
+    fmt = fmt.s...l..
     __ fmt n.. __ ('cm','in'):
         raise ValueError("Can only convert from cm to in or vice versa")
 

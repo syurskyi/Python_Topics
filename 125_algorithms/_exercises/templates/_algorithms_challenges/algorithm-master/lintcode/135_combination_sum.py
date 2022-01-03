@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @param: target: An integer
@@ -10,7 +10,7 @@ class Solution:
             r.. ans
 
         A.s..()
-        self.dfs(A, 0, target, ans, [])
+        dfs(A, 0, target, ans, [])
         r.. ans
 
     ___ dfs(self, A, start, remaining, ans, path):
@@ -26,5 +26,5 @@ class Solution:
                 r..
 
             path.a..(A[i])
-            self.dfs(A, i, remaining - A[i], ans, path)
+            dfs(A, i, remaining - A[i], ans, path)
             path.pop()

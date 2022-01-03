@@ -1,23 +1,23 @@
-class MultiplicationTable:
+c_ MultiplicationTable:
 
-    ___ __init__(self, length):
+    ___ - , length):
         """Create a 2D self._table of (x, y) coordinates and
            their calculations (form of caching)"""
-        self._length = length
-        self._table =[[s..(x * y) ___ y __ r..(1,length + 1)] ___ x __ r..(1,length + 1)]
+        _length = length
+        _table =[[s..(x * y) ___ y __ r..(1,length + 1)] ___ x __ r..(1,length + 1)]
 
-    ___ __len__(self):
+    ___ __len__
         """Returns the area of the table (len x* len y)"""
 
-        r.. self._length**2
+        r.. _length**2
 
-    ___ __str__(self):
+    ___ __str__
         """Returns a string representation of the table"""
 
         s = ''
 
-        ___ row __ self._table:
-            s += (' | '.join(row)) + '\n'
+        ___ row __ _table:
+            s += (' | '.j..(row)) + '\n'
 
 
         r.. s
@@ -31,9 +31,9 @@ class MultiplicationTable:
         """Takes x and y coords and returns the re-calculated result"""
 
 
-        __ n.. ((1 <= x <= self._length) a.. (1 <= y <= self._length)):
+        __ n.. ((1 <= x <= _length) a.. (1 <= y <= _length)):
             raise IndexError("Invalid x and y")
 
 
-        r.. int(self._table[x -1][y -1])
+        r.. int(_table[x -1][y -1])
 

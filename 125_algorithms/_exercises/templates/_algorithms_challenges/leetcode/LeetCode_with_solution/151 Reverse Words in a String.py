@@ -18,7 +18,7 @@ Reduce them to a single space in the reversed string.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ reverseWords(self, s):
         """
         Notice: ask how to deal with punctuations
@@ -27,4 +27,4 @@ class Solution:
         """
         words_lst = s.s..   # not s.split(" ")
         words_lst = reversed(words_lst)
-        r.. ' '.join(words_lst)
+        r.. ' '.j..(words_lst)

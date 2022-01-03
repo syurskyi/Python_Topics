@@ -1,4 +1,4 @@
-_______ re
+_______ __
 ____ collections _______ defaultdict
 ___ pair_files(filenames):
     """
@@ -15,11 +15,11 @@ ___ pair_files(filenames):
     ___ file __ filenames:
         
 
-        match = re.search(r'(\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=re.I)
+        match = __.s..(r'(\S+?_S[1-9][0-9]?_L\d{3})_R[12]_([0-9]{2}[1-9]).fastq.gz$',file,flags=__.I)
 
         __ match:
-            first_part = match.group(1).lower()
-            second_part = match.group(2).lower()
+            first_part = match.group(1).l..
+            second_part = match.group(2).l..
 
             combined = first_part + second_part
 
@@ -27,7 +27,7 @@ ___ pair_files(filenames):
 
     
     result    # list
-    ___ value __ mapping.values():
+    ___ value __ mapping.v..
         __ l..(value) __ 2:
 
             __ '_R1_' __ value[1]:

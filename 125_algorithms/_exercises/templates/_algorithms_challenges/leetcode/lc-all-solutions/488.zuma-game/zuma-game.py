@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findMinStep(self, board, hand):
     """
     :type board: str
@@ -50,7 +50,7 @@ class Solution(object):
           ____:
             ret.extend(line[i:i + dp[i]])
             i += dp[i]
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
       __ l..(line) < 3:
         r.. line
@@ -59,6 +59,6 @@ class Solution(object):
         ans = reducer(ans)
       r.. ans
 
-    visited = {}
-    ret = dfs(board, "".join(s..(hand)), visited)
+    visited    # dict
+    ret = dfs(board, "".j..(s..(hand)), visited)
     r.. ret __ ret != float("inf") ____ -1

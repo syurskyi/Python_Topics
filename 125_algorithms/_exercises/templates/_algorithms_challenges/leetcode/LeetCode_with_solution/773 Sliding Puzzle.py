@@ -60,7 +60,7 @@ dirs = (
 )
 
 
-class Solution:
+c_ Solution:
     ___ slidingPuzzle(self, board: List[List[int]]) -> int:
         """
         BFS + visited
@@ -76,27 +76,27 @@ class Solution:
         """
         visited = defaultdict(bool)
         m, n = l..(board), l..(board[0])
-        q = [(self.heuristic_dist(board) + 0, 0, board)]
+        q = [(heuristic_dist(board) + 0, 0, board)]
         target = [
             [1, 2, 3],
             [4, 5, 0],
         ]
         w.... q:
             heu, cur_dist, board = heapq.heappop(q)
-            visited[self.ser(board)] = True
+            visited[ser(board)] = T..
             __ board __ target:
                 r.. cur_dist
 
             cur_dist += 1
-            i, j = self.zero_pos(board)
+            i, j = zero_pos(board)
             ___ di, dj __ dirs:
                 I = i + di
                 J = j + dj
                 __ 0 <= I < m a.. 0 <= J < n:
                     B = deepcopy(board)   # need a copy in the queue
                     B[I][J], B[i][j] = B[i][j], B[I][J]
-                    __ n.. visited[self.ser(B)]:
-                        heapq.heappush(q, (self.heuristic_dist(B) + cur_dist, cur_dist, B))
+                    __ n.. visited[ser(B)]:
+                        heapq.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B))
         r.. -1
 
     ___ zero_pos(self, board):

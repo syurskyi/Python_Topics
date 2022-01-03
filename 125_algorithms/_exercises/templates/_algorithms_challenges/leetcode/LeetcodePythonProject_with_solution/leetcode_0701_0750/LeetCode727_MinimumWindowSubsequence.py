@@ -3,7 +3,7 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minWindow(self, S, T):
         """
         :type S: str
@@ -29,10 +29,10 @@ class Solution(object):
                     start = dp[m][j]-1
                     length = j-dp[m][j]+1
         print('dp:')
-        print('\n'.join([s..(row) ___ row __ dp]))
+        print('\n'.j..([s..(row) ___ row __ dp]))
         r.. '' __ length__n+1 ____ s[start:start+length]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'abcdebdde',
@@ -42,7 +42,7 @@ class Solution(object):
         ___ s, t __ testCases:
             print('s: %s' % s)
             print('t: %s' % t)
-            result = self.minWindow(s, t)
+            result = minWindow(s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 

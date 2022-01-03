@@ -9,7 +9,7 @@ may assume that each input would have exactly one solution.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ threeSumClosest(self, nums, target):
         """
         :type nums: List[int]

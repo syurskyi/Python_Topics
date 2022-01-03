@@ -23,7 +23,7 @@ ___ common_languages(programmers):
     """Receive a dict of keys -> names and values -> a sequence of
        of programming languages, return the common languages"""
     sets    # list
-    ___ key, value __ programmers.items():
+    ___ key, value __ programmers.i..:
         sets.a..(set(value))
     first_set = sets[0]
     remaining_sets = sets[1:]

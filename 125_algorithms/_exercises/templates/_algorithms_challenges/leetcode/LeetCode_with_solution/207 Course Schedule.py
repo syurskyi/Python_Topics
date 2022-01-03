@@ -22,7 +22,7 @@ is represented.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ canFinish(self, numCourses, prerequisites):
         """
         Determine whether the graph is cyclic
@@ -36,30 +36,30 @@ class Solution:
         ___ edge __ prerequisites:
             V[edge[0]].a..(edge[1])
 
-        visited = [False ___ _ __ xrange(numCourses)]  # visited and fine (cleared)
-        marked = [False ___ _ __ xrange(numCourses)]  # marked during one dfs
+        visited = [F.. ___ _ __ xrange(numCourses)]  # visited and fine (cleared)
+        marked = [F.. ___ _ __ xrange(numCourses)]  # marked during one dfs
         ___ i __ xrange(numCourses):
             __ n.. visited[i]:
-                __ self.dfs_have_cycle(V, i, visited, marked):
-                    r.. False
+                __ dfs_have_cycle(V, i, visited, marked):
+                    r.. F..
 
-        r.. True
+        r.. T..
 
     ___ dfs_have_cycle(self, V, i, visited, marked):
         __ marked[i]:
-            r.. True
+            r.. T..
 
-        marked[i] = True
+        marked[i] = T..
 
         ___ neighbor __ V[i]:
-            __ n.. visited[neighbor] a.. self.dfs_have_cycle(V, neighbor, visited, marked):
-                r.. True
+            __ n.. visited[neighbor] a.. dfs_have_cycle(V, neighbor, visited, marked):
+                r.. T..
 
         # clean up
-        marked[i] = False
-        visited[i] = True
-        r.. False
+        marked[i] = F..
+        visited[i] = T..
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().canFinish(2, [[1, 0], [0, 1]]) __ False
+    ... Solution().canFinish(2, [[1, 0], [0, 1]]) __ F..

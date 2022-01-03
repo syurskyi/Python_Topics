@@ -1,10 +1,10 @@
-class HitCounter(object):
+c_ HitCounter(object):
 
-  ___ __init__(self):
+  ___ - ):
     """
     Initialize your data structure here.
     """
-    self.q = [(0, 0)] * 300
+    q = [(0, 0)] * 300
 
   ___ hit(self, timestamp):
     """
@@ -14,11 +14,11 @@ class HitCounter(object):
     :rtype: void
     """
     idx = timestamp % 300
-    time, hit = self.q[idx]
+    time, hit = q[idx]
     __ time != timestamp:
-      self.q[idx] = timestamp, 1
+      q[idx] = timestamp, 1
     ____:
-      self.q[idx] = time, hit + 1
+      q[idx] = time, hit + 1
 
   ___ getHits(self, timestamp):
     """
@@ -28,8 +28,8 @@ class HitCounter(object):
     :rtype: int
     """
     ans = 0
-    ___ i __ r..(0, l..(self.q)):
-      time, hit = self.q[i]
+    ___ i __ r..(0, l..(q)):
+      time, hit = q[i]
       __ timestamp - time < 300:
         ans += hit
     r.. ans

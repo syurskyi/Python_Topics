@@ -14,7 +14,7 @@ ___ get_mapping(str_table=SIMPLE_COMPLEMENTS_STR):
     lines = str_table.splitlines()
     
     
-    mapping = {}
+    mapping    # dict
     ___ i __ r..(2,l..(lines)):
         values = lines[i].s.. 
         mapping[values[0]] = values[-1]
@@ -44,7 +44,7 @@ ___ _clean_sequence(sequence, str_table):
             new_string.a..(c)
     
 
-    r.. ''.join(new_string)
+    r.. ''.j..(new_string)
 
 
 
@@ -92,7 +92,7 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
             new_string.a..(mapping[character])
 
 
-    r.. ''.join(new_string)
+    r.. ''.j..(new_string)
 
 
 

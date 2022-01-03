@@ -6,8 +6,8 @@ param_1 = obj.sumRegion(x1,y1,x2,y2)
 """
 
 
-class NumMatrix:
-    ___ __init__(self, matrix):
+c_ NumMatrix:
+    ___ - , matrix):
         """
         :type matrix: List[List[int]]
         """
@@ -15,12 +15,12 @@ class NumMatrix:
             r..
 
         m, n = l..(matrix), l..(matrix[0])
-        self.bits = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # bits
-        self.incr = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # increments
+        bits = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # bits
+        incr = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # increments
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                self.update(x, y, matrix[x][y])
+                update(x, y, matrix[x][y])
 
     ___ update(self, x, y, val):
         """
@@ -32,15 +32,15 @@ class NumMatrix:
         i = x + 1
         j = y + 1
 
-        delta = val - self.incr[i][j]
-        self.incr[i][j] = val
+        delta = val - incr[i][j]
+        incr[i][j] = val
 
-        m, n = l..(self.incr), l..(self.incr[0])
+        m, n = l..(incr), l..(incr[0])
 
         w.... i < m:
             j = y + 1
             w.... j < n:
-                self.bits[i][j] += delta
+                bits[i][j] += delta
                 j += (j & -j)
             i += (i & -i)
 
@@ -53,10 +53,10 @@ class NumMatrix:
         :rtype: int
         """
         r.. s..((
-            self.s..(x2 + 1, y2 + 1),
-            - self.s..(x1, y2 + 1),
-            - self.s..(x2 + 1, y1),
-            self.s..(x1, y1),
+            s..(x2 + 1, y2 + 1),
+            - s..(x1, y2 + 1),
+            - s..(x2 + 1, y1),
+            s..(x1, y1),
         ))
 
     ___ s..(self, x, y):
@@ -67,7 +67,7 @@ class NumMatrix:
         w.... i > 0:
             j = y
             w.... j > 0:
-                res += self.bits[i][j]
+                res += bits[i][j]
                 j -= (j & -j)
             i -= (i & -i)
 

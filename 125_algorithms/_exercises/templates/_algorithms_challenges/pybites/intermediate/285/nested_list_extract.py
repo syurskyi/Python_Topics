@@ -1,15 +1,15 @@
-_______ re
+_______ __
 
 
 ___ is_valid_ip(s):
 
 
-    r.. re.search(r'^"\d+\.\d+\.\d+\.\d+"$',s) __ n.. N..
+    r.. __.s..(r'^"\d+\.\d+\.\d+\.\d+"$',s) __ n.. N..
 
 
 ___ is_valid_number(s):
 
-    r.. re.search(r'^\d+$',s) __ n.. N..
+    r.. __.s..(r'^\d+$',s) __ n.. N..
 
 ___ extract_ipv4(data):
     """
@@ -19,7 +19,7 @@ ___ extract_ipv4(data):
     
     result    # list
     ___ l __ data:
-        __ type(l) __ l..:
+        __ t..(l) __ l..:
             result.extend(extract_ipv4(l))
         ____ l __ 'ip':
             print(data)

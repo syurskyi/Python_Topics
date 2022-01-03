@@ -18,7 +18,7 @@ ___ text_to_columns(text):
     l    # list
     ___ paragraph __ paragraphs:
         paragraph = paragraph.s..
-        r = textwrap.wrap(paragraph,width=COL_WIDTH,break_long_words=True)
+        r = textwrap.wrap(paragraph,width=COL_WIDTH,break_long_words=T..)
         l.a..(r)
     
     
@@ -35,10 +35,10 @@ ___ text_to_columns(text):
             #print(f"{value:<25}",end='')
         #print()
 
-        result.a..(''.join(line))
+        result.a..(''.j..(line))
 
     
-    r.. '\n'.join(result)
+    r.. '\n'.j..(result)
 
 
 __ __name__ __ "__main__":

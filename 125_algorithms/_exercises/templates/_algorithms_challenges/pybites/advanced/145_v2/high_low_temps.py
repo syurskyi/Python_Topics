@@ -1,6 +1,6 @@
 _______ csv
 _______ os
-_______ re
+_______ __
 _______ urllib.request
 ____ collections _______ n..
 ____ d__ _______ d__
@@ -11,7 +11,7 @@ DATA_FILE = "http://projects.bobbelderbos.com/pcc/weather-ann-arbor.csv"
 STATION = n..("Station", "ID Date Value")
 
 TMP = '/tmp'
-LOCAL_FILE = os.path.join('/tmp', 'weather-ann-arbor.csv')
+LOCAL_FILE = os.path.j..('/tmp', 'weather-ann-arbor.csv')
 __ n.. os.path.isfile(LOCAL_FILE):
     urllib.request.urlretrieve(DATA_FILE, LOCAL_FILE)
 
@@ -55,7 +55,7 @@ ___ high_low_record_breakers_for_2015():
             'date': d__.strptime(x['Date'], '%Y-%m-%d').date(),
             'element': x['Element'],
             'value': int(x['Data_Value'])
-        } ___ x __ csv.DictReader(f) __ n.. re.match(r'\d{4}-02-29', x['Date'])],
+        } ___ x __ csv.DictReader(f) __ n.. __.match(r'\d{4}-02-29', x['Date'])],
             key=l.... x: (x['id'] + x['date'].strftime('%m%d%Y')))
     dataset = [{'id': x['id'],
                 'monthday': x['date'].strftime('%m%d'),
@@ -72,7 +72,7 @@ ___ high_low_record_breakers_for_2015():
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxa'})
 
-    early_dataset = data_before_2015_left.join(data_before_2015_right, lsuffix='_l', rsuffix='_r')
+    early_dataset = data_before_2015_left.j..(data_before_2015_right, lsuffix='_l', rsuffix='_r')
 
     data_for_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 a.. x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
@@ -82,9 +82,9 @@ ___ high_low_record_breakers_for_2015():
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
         ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxb'})
 
-    late_dataset = data_for_2015_left.join(data_for_2015_right)
+    late_dataset = data_for_2015_left.j..(data_for_2015_right)
 
-    compare_set = early_dataset.join(late_dataset)
+    compare_set = early_dataset.j..(late_dataset)
 
     result = {'min': [], 'max': []}
     ___ row __ compare_set.itertuples():

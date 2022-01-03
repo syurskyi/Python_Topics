@@ -4,13 +4,13 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ frequencySort(self, s):
-        hashmap = {}
+        hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         bucket = [[] ___ _ __ r..(l..(s)+1)]
-        ___ c, count __ hashmap.items():
+        ___ c, count __ hashmap.i..:
             bucket[count].a..(c)
         result = ''
         ___ i __ r..(l..(bucket)-1, -1, -1):
@@ -19,7 +19,7 @@ class Solution(object):
                 result += c*(i)
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aaaa',
             'tree',
@@ -28,7 +28,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.frequencySort(s)
+            result = frequencySort(s)
             print('result: %s' % result)
             print('-='*20+'-')
 

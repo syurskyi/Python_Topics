@@ -1,22 +1,22 @@
 _______ copy
 
 
-class Point(object):
-    ___ __init__(self, x, y):
-        self.x = x
-        self.y = y
+c_ Point(object):
+    ___ - , x, y):
+        x = x
+        y = y
 
-    ___ __repr__(self):
-        r.. 'Point({}:{})'.f..(self.x, self.y)
+    ___ __repr__
+        r.. 'Point({}:{})'.f..(x, y)
 
     ___ __add__(self, other):
-        r.. Point(self.x + other.x, self.y + other.y)
+        r.. Point(x + other.x, y + other.y)
 
     ___ __sub__(self, other):
-        r.. Point(self.x - other.x, self.y - other.y)
+        r.. Point(x - other.x, y - other.y)
 
     ___ __eq__(self, other):
-        r.. self.x __ other.x a.. self.y __ other.y
+        r.. x __ other.x a.. y __ other.y
 
     ___ __ne__(self, other):
         r.. n.. (self __ other)
@@ -26,33 +26,33 @@ DIRECTIONS = (Point(1, 0), Point(1, -1), Point(1, 1), Point(-1, -1),
               Point(0, -1), Point(0, 1), Point(-1, 1), Point(-1, 0))
 
 
-class WordSearch(object):
-    ___ __init__(self, puzzle):
-        self.rows = puzzle.s..
-        self.width = l..(self.rows[0])
-        self.height = l..(self.rows)
+c_ WordSearch(object):
+    ___ - , puzzle):
+        rows = puzzle.s..
+        width = l..(rows[0])
+        height = l..(rows)
 
     ___ find_char(self, coordinate):
-        __ coordinate.x < 0 o. coordinate.x >= self.width:
+        __ coordinate.x < 0 o. coordinate.x >= width:
             r..
-        __ coordinate.y < 0 o. coordinate.y >= self.height:
+        __ coordinate.y < 0 o. coordinate.y >= height:
             r..
-        r.. self.rows[coordinate.y][coordinate.x]
+        r.. rows[coordinate.y][coordinate.x]
 
     ___ find(self, word, position, direction):
         current = copy.copy(position)
         ___ letter __ word:
-            __ self.find_char(current) != letter:
+            __ find_char(current) != letter:
                 r..
             current += direction
         r.. position, current - direction
 
-    ___ search(self, word):
+    ___ s..(self, word):
         positions = (Point(x, y)
-                     ___ x __ r..(self.width) ___ y __ r..(self.height))
+                     ___ x __ r..(width) ___ y __ r..(height))
         ___ pos __ positions:
             ___ d __ DIRECTIONS:
-                result = self.find(word, pos, d)
+                result = find(word, pos, d)
                 __ result:
                     r.. result
         r.. N..

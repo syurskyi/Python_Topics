@@ -6,15 +6,15 @@ class TrieNode:
         self.children = collections.OrderedDict()
         self.top10 = []
 """
-class TrieService:
+c_ TrieService:
 
-    ___ __init__(self):
-        self.root = TrieNode()
+    ___ - ):
+        root = TrieNode()
 
-    ___ get_root(self):
+    ___ get_root
         # Return root of trie root, and
         # lintcode will print the tree struct.
-        r.. self.root
+        r.. root
 
     # @param {str} word a string
     # @param {int} frequency an integer
@@ -23,7 +23,7 @@ class TrieService:
         __ n.. word o. l..(word) < 1 \
                 o. n.. frequency:
             r..
-        parent = self.root
+        parent = root
         ___ char __ word:
             __ char n.. __ parent.children:
                 parent.children[char] = TrieNode()

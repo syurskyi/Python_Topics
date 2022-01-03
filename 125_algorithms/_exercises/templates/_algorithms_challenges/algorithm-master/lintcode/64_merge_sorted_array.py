@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ mergeSortedArray(self, a, m, b, n):
         """
         :type a: List[int]

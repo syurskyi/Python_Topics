@@ -5,7 +5,7 @@ ____ nolan _______ get_tree, get_movies, get_movie_longest_runtime
 
 ___ test_get_tree():
     tree = get_tree()
-    ... type(tree) __ (ET.ElementTree, ET.Element)
+    ... t..(tree) __ (ET.ElementTree, ET.Element)
     ... l..(l..(tree.iter(tag='movie'))) __ 5
 
 

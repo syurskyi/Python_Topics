@@ -21,7 +21,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
         """
         Two pointer

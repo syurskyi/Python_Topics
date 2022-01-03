@@ -19,7 +19,7 @@ isMatch("ab", "?*") -> true
 isMatch("aab", "c*a*b") -> false
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ isMatch_MLE(self, s, p):
         """
         dp, similar to 011 Regular Expression Matching.
@@ -36,9 +36,9 @@ class Solution:
 
         m = l..(tape)
         n = l..(pattern)
-        dp = [[False ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        dp = [[F.. ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
         # edge cases
-        dp[m][n] = True
+        dp[m][n] = T..
         ___ j __ xrange(n-1, -1 , -1):
             __ pattern[j]__"*":
                 dp[m][j] = dp[m][j+1]
@@ -51,7 +51,7 @@ class Solution:
                 ____ pattern[j]__"*":
                     dp[i][j] = dp[i][j+1] o. dp[i+1][j]  # zero or more
                 ____:
-                    dp[i][j] = False
+                    dp[i][j] = F..
 
 
         r.. dp[0][0]
@@ -79,18 +79,18 @@ class Solution:
         n = l..(pattern)
 
         __ n - l..(pattern).c.. "*") > m:
-            r.. False
+            r.. F..
 
-        dp = [False ___ _ __ xrange(m+1)]
-        dp[0] = True  # dummy
+        dp = [F.. ___ _ __ xrange(m+1)]
+        dp[0] = T..  # dummy
         ___ j __ xrange(1, n+1):
             __ pattern[j-1]__"*":
                 # for i in xrange(m, 0, -1):
                 #     dp[i] = any(dp[k] for k in xrange(i))  # Time Complexity
                 k = 0
-                w.... k<m+1 a.. dp[k]!=True: k+= 1
+                w.... k<m+1 a.. dp[k]!=T..: k+= 1
                 ___ i __ xrange(k, m+1):
-                    dp[i] = True
+                    dp[i] = T..
             ____:
                 ___ i __ xrange(m, 0, -1):
                     dp[i] = dp[i-1] a.. (tape[i-1]__pattern[j-1] o. pattern[j-1]__"?")

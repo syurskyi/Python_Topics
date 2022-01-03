@@ -12,22 +12,22 @@ which the depth of the two subtrees of every node never differ by more than 1.
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ isBalanced(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
         __ root __ N..
-            r.. True
+            r.. T..
         ____:
-            __ self.isBalanced(root.left) a.. self.isBalanced(root.right):
-                r.. abs(self.depth(root.left) - self.depth(root.right)) <= 1
+            __ isBalanced(root.left) a.. isBalanced(root.right):
+                r.. abs(depth(root.left) - depth(root.right)) <= 1
             ____:
-                r.. False
+                r.. F..
 
     ___ depth(self, root):
         __ root __ N..
             r.. -1
         ____:
-            r.. max(self.depth(root.left), self.depth(root.right)) + 1
+            r.. max(depth(root.left), depth(root.right)) + 1

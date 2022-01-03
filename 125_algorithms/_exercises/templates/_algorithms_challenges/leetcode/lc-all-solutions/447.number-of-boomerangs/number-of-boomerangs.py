@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ numberOfBoomerangs(self, points):
     """
     :type points: List[List[int]]
@@ -9,7 +9,7 @@ class Solution(object):
     # once we finish counting distance for one point, we calculate the combinations = 1 * C^1_N * C^1_(N-1)
     ans = 0
     ___ p1 __ points:
-      d = {}
+      d    # dict
       ___ p2 __ points:
         __ p1 != p2:
           dist = (p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2

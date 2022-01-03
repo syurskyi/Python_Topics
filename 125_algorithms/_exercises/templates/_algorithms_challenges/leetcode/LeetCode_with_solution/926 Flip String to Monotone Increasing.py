@@ -34,7 +34,7 @@ S only consists of '0' and '1' characters.
 """
 
 
-class Solution:
+c_ Solution:
     ___ minFlipsMonoIncr(self, S: s..) -> int:
         """
         let S[i] be the flipping point, leftside 0, rightside 1

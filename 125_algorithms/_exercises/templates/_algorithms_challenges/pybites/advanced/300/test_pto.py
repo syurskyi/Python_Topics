@@ -16,7 +16,7 @@ ___ test_four_day_weekends_default(capfd):
 
 
 ___ test_four_day_weekends_workdays(capfd):
-    four_day_weekends(show_workdays=True)
+    four_day_weekends(show_workdays=T..)
     output = capfd.readouterr()[0].splitlines()
     ... l..(output) __ 26
     ... "Remaining Work Days: 200 (25 days)" __ output[0]
@@ -25,7 +25,7 @@ ___ test_four_day_weekends_workdays(capfd):
 
 ___ test_four_day_weekends_invalid_call():
     with pytest.raises(ValueError) as e:
-        four_day_weekends(True)
+        four_day_weekends(T..)
     ... s..(e.value) __ pto.ERROR_MSG
 
 
@@ -33,7 +33,7 @@ ___ test_four_day_weekends_invalid_call_custom_error_message():
     new_msg = "You're calling it wrong dude!"
     pto.ERROR_MSG = new_msg
     with pytest.raises(ValueError) as e:
-        four_day_weekends(True)
+        four_day_weekends(T..)
     ... s..(e.value) __ new_msg
 
 
@@ -46,7 +46,7 @@ ___ test_four_day_weekends_october(capfd):
 
 
 ___ test_four_day_weekends_october_work_days(capfd):
-    four_day_weekends(start_month=10, show_workdays=True)
+    four_day_weekends(start_month=10, show_workdays=T..)
     output = capfd.readouterr()[0].splitlines()
     ... l..(output) __ 16
     ... "(15 days)" __ output[0]

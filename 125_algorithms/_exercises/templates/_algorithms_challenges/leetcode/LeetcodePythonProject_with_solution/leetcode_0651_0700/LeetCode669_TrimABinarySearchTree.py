@@ -4,13 +4,13 @@ Created on Oct 11, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ trimBST(self, root, L, R):
         """
         :type root: TreeNode
@@ -24,19 +24,19 @@ class Solution(object):
         val = root.val
         __ l <= val <= r:
             newRoot = TreeNode(val)
-            newRoot.left = self.trimBST(root, l, val-1)
-            newRoot.right = self.trimBST(root, val+1, r)
+            newRoot.left = trimBST(root, l, val-1)
+            newRoot.right = trimBST(root, val+1, r)
             r.. newRoot
         ____ val < l:
-            r.. self.trimBST(root.right, l, r)
+            r.. trimBST(root.right, l, r)
         ____:
-            r.. self.trimBST(root.left, l, r)
+            r.. trimBST(root.left, l, r)
     
-    ___ test(self):
+    ___ test
         testCases = [
         ]
         ___ root, l, r __ testCases:
-            newRoot = self.trimBST(root, l, r)
+            newRoot = trimBST(root, l, r)
             print(newRoot)
 
 __ __name__ __ '__main__':

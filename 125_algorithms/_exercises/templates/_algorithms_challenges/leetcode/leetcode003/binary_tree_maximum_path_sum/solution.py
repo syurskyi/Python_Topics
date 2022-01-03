@@ -19,22 +19,22 @@ Return 6.
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ maxPathSum(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
         max_res = [N..]
-        res = self.max_sum(root, max_res)
+        res = max_sum(root, max_res)
         r.. max(res, max_res[0])
 
     ___ max_sum(self, root, max_res):
         __ root __ N..
             r.. 0
         ____:
-            left_max = self.max_sum(root.left, max_res)
-            right_max = self.max_sum(root.right, max_res)
+            left_max = max_sum(root.left, max_res)
+            right_max = max_sum(root.right, max_res)
             root_max = max(root.val,
                            root.val + left_max,
                            root.val + right_max)

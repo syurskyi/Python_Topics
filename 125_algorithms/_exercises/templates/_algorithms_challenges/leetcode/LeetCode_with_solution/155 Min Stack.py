@@ -10,8 +10,8 @@ Stack Data Structure
 __author__ = 'Danyang'
 
 
-class MinStack:
-    ___ __init__(self):
+c_ MinStack:
+    ___ - ):
         """
         algorithm: non_asc stack keeps the items of the normal stack if they are in non-ascending order
         normal stack: 5 4 3 5 4 3 2 1
@@ -24,8 +24,8 @@ class MinStack:
         stack
         :return:
         """
-        self.stk    # list
-        self.non_asc    # list
+        stk    # list
+        non_asc    # list
 
     ___ push(self, x):
         """
@@ -33,30 +33,30 @@ class MinStack:
         :param x: int
         :return: int
         """
-        self.stk.a..(x)
-        __ l..(self.non_asc) __ 0 o. x <= self.non_asc[-1]:  # rather than <
-            self.non_asc.a..(x)
+        stk.a..(x)
+        __ l..(non_asc) __ 0 o. x <= non_asc[-1]:  # rather than <
+            non_asc.a..(x)
 
-    ___ pop(self):
+    ___ pop
         """
 
         :return: nothing
         """
-        x = self.stk.pop()
-        __ x __ self.non_asc[-1]:
-            self.non_asc.pop()
+        x = stk.pop()
+        __ x __ non_asc[-1]:
+            non_asc.pop()
 
-    ___ top(self):
+    ___ top
         """
 
         :return: int
         """
-        r.. self.stk[-1]
+        r.. stk[-1]
 
-    ___ getMin(self):
+    ___ getMin
         """
 
         :return: int
         """
-        r.. self.non_asc[-1]
+        r.. non_asc[-1]
 

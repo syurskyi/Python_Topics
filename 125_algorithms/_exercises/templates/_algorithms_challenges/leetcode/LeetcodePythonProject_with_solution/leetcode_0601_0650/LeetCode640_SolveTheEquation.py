@@ -3,7 +3,7 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ solveEquation(self, equation):
         """
         :type equation: str
@@ -12,8 +12,8 @@ class Solution(object):
         arr = equation.s..('=')
         s1 = arr[0]
         s2 = arr[1]
-        valX1, val1 = self.solveHelper(s1)
-        valX2, val2 = self.solveHelper(s2)
+        valX1, val1 = solveHelper(s1)
+        valX2, val2 = solveHelper(s2)
 #         print('valX1, val1: %s, %s' % (valX1, val1))
 #         print('valX2, val2: %s, %s' % (valX2, val2))
         __ val1 __ val2:
@@ -55,7 +55,7 @@ class Solution(object):
             i += 1
         r.. valX1, val1
     
-    ___ test(self):
+    ___ test
         testCases = [
             'x+5-3+x=6+x-2',
             'x=x',
@@ -65,7 +65,7 @@ class Solution(object):
         ]
         ___ equation __ testCases:
             print('equation: %s' % equation)
-            result = self.solveEquation(equation)
+            result = solveEquation(equation)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ combinationSum4(self, nums, target):
         __ n.. nums: r.. 0
         dp = [0]*(target+1)
@@ -15,14 +15,14 @@ class Solution(object):
                     dp[i+num] += dp[i]
         r.. dp[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([1, 2, 3], 4),
         ]
         ___ nums, target __ testCases:
             print('nums: %s' % (nums))
             print('target: %s' % target)
-            result = self.combinationSum4(nums, target)
+            result = combinationSum4(nums, target)
             print('result: %s' % result)
             print('-='*20+'-')
 

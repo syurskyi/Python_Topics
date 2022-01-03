@@ -14,7 +14,7 @@ AB | 0 | 1 | 2 |
  3. keep find the minest one in current heap, then we can find the kth child
 """
 
-class Solution:
+c_ Solution:
 
     """
     @param: A: an integer arrays sorted in ascending order

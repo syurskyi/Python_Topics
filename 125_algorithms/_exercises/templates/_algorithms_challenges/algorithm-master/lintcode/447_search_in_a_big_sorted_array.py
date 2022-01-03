@@ -11,7 +11,7 @@ Test Case:
 0
 """
 
-class Solution:
+c_ Solution:
     """
     @param: reader: An instance of ArrayReader.
     @param: target: An integer

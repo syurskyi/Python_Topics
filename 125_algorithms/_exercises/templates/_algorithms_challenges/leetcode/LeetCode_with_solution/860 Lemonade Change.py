@@ -51,7 +51,7 @@ bills[i] will be either 5, 10, or 20.
 """
 
 
-class Solution:
+c_ Solution:
     ___ lemonadeChange(self, bills: List[int]) -> bool:
         """
         count
@@ -62,7 +62,7 @@ class Solution:
                 five += 1
             ____ b __ 10:
                 __ five < 1:
-                    r.. False
+                    r.. F..
                 five -= 1
                 ten += 1
             ____:  # 20
@@ -72,6 +72,6 @@ class Solution:
                 ____ five >= 3:
                     five -= 3
                 ____:
-                    r.. False
+                    r.. F..
 
-        r.. True
+        r.. T..

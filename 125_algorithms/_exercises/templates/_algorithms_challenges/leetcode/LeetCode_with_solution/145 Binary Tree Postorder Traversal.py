@@ -14,13 +14,13 @@ Note: Recursive solution is trivial, could you do it iteratively? - see postTrav
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     ___ postorderTraversal(self, root):
         """
         dfs
@@ -29,7 +29,7 @@ class Solution:
         :return: a list of int
         """
         lst    # list
-        self.postTraverse_itr(root, lst)
+        postTraverse_itr(root, lst)
         r.. lst
 
 
@@ -37,8 +37,8 @@ class Solution:
     ___ postTraverse(self, node, lst):
         __ n.. node:
             r..
-        self.postTraverse(node.left, lst)
-        self.postTraverse(node.right, lst)
+        postTraverse(node.left, lst)
+        postTraverse(node.right, lst)
 
         lst.a..(node.val)
 

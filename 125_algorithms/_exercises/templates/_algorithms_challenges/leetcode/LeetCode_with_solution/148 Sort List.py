@@ -3,15 +3,15 @@ Sort a linked list in O(n log n) time using constant space complexity.
 """
 __author__ = 'Danyang'
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-    ___ __repr__(self):
-        r.. repr(self.val)
+    ___ __repr__
+        r.. repr(val)
 
-class Solution:
+c_ Solution:
     ___ sortList_array(self, head):
         """
         Workaround by sorted()
@@ -60,8 +60,8 @@ class Solution:
 
         # sort sub-problem
         slow_pre.next = N..  # break
-        head = self.sortList(head)
-        mid_head = self.sortList(mid_head)
+        head = sortList(head)
+        mid_head = sortList(mid_head)
 
         # then merge
         dummy.next = head

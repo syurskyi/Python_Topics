@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ uniquePathsWithObstacles(self, obstacleGrid):
         """
         :type obstacleGrid: List[List[int]]
@@ -32,7 +32,7 @@ class Solution(object):
                     dp[i][j] = dp[i][j-1] + dp[i-1][j]
         r.. dp[-1][-1]
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

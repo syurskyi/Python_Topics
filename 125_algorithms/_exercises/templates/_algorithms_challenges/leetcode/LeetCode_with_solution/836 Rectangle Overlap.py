@@ -25,7 +25,7 @@ All coordinates in rectangles will be between -10^9 and 10^9.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ isRectangleOverlap(self, rec1: List[int], rec2: List[int]) -> bool:
         """
         De Morgan's Law
@@ -44,7 +44,7 @@ class Solution:
 
     ___ isRectangleOverlap_error(self, rec1: List[int], rec2: List[int]) -> bool:
         __ rec1[0] > rec2[0]:
-            r.. self.isRectangleOverlap(rec2, rec1)
+            r.. isRectangleOverlap(rec2, rec1)
 
         r.. (
             rect1[0] < rect2[0] < rec1[2] a..

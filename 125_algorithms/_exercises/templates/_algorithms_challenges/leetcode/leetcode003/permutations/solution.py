@@ -8,7 +8,7 @@ For example,
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ permute(self, nums):
         """
         :type nums: List[int]
@@ -20,7 +20,7 @@ class Solution(object):
             res    # list
             ___ i, e __ e..(nums):
                 rest = nums[:i] + nums[i + 1:]
-                rest_perms = self.permute(rest)
+                rest_perms = permute(rest)
                 ___ perm __ rest_perms:
                     perm.a..(e)
                 res += rest_perms

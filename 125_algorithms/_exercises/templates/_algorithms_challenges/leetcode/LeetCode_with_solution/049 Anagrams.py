@@ -4,7 +4,7 @@ Given an array of strings, return all groups of strings that are anagrams.
 Note: All inputs will be in lower-case.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ anagrams_complicated(self, strs):
         """
         sorting
@@ -16,18 +16,18 @@ class Solution:
             __ string a.. string!="":  # avoid case of empty string
                 string = [char ___ char __ string]
                 string.s..()
-                string = "".join(string)
+                string = "".j..(string)
                 temp[ind] = string
 
 
-        hash_map = {}
+        hash_map    # dict
         ___ ind, string __ e..(temp):
             indexes = hash_map.get(string, [])
             indexes.a..(ind)  # side-effect
             hash_map[string] = indexes
 
         result    # list
-        ___ val __ hash_map.values():
+        ___ val __ hash_map.v..
             __ l..(val)>1:
                 # result.append([strs[i] for i in val])
                 result += [strs[i] ___ i __ val]
@@ -39,9 +39,9 @@ class Solution:
         :param strs: a list of strings
         :return: a list of strings
         """
-        hash_map = {}
+        hash_map    # dict
         ___ ind, string __ e..(strs):
-            string = "".join(s..(string))  # string reversing and sorting are a little different
+            string = "".j..(s..(string))  # string reversing and sorting are a little different
             __ string n.. __ hash_map:
                 hash_map[string] = [ind]
             ____:
@@ -51,7 +51,7 @@ class Solution:
             # hash_map[string] = indexes  # reassign
 
         result    # list
-        ___ val __ hash_map.values():
+        ___ val __ hash_map.v..
             __ l..(val)>1:
                 # result.append([strs[i] for i in val])
                 result += [strs[i] ___ i __ val]

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ smallestDistancePair(self, A, k):
         """
         :type A: List[int]
@@ -13,12 +13,12 @@ class Solution:
         left, right = 0, A[-1] - A[0]
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ self.check_valid(A, mid, k):
+            __ check_valid(A, mid, k):
                 right = mid
             ____:
                 left = mid
 
-        r.. left __ self.check_valid(A, left, k) ____ right
+        r.. left __ check_valid(A, left, k) ____ right
 
     ___ check_valid(self, A, mid, k):
         """
@@ -33,6 +33,6 @@ class Solution:
             cnt += right - left
 
             __ cnt >= k:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

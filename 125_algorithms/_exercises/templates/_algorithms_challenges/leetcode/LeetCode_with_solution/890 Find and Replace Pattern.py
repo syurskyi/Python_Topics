@@ -33,28 +33,28 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findAndReplacePattern(self, words: List[s..], pattern: s..) -> List[s..]:
         """
         mapping
         """
         ret    # list
         ___ w __ words:
-            __ self.match(w, pattern):
+            __ match(w, pattern):
                 ret.a..(w)
         r.. ret
 
     ___ match(self, word, pattern):
         __ l..(word) != l..(pattern):
-            r.. False
+            r.. F..
 
-        m = {}
-        m_inv = {}  # bijection
+        m    # dict
+        m_inv    # dict  # bijection
         ___ i __ r..(l..(word)):
             __ word[i] n.. __ m a.. pattern[i] n.. __ m_inv:
                 m[word[i]] = pattern[i]
                 m_inv[pattern[i]] = word[i]
             ____ word[i] n.. __ m o. m[word[i]] != pattern[i]:
-                r.. False
+                r.. F..
         ____:
-            r.. True
+            r.. T..

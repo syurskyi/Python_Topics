@@ -1,3 +1,3 @@
-class Luhn(object):
-    ___ __init__(self):
+c_ Luhn(object):
+    ___ - ):
         pass

@@ -1,7 +1,7 @@
 _______ string
 
 
-class PigLatinTranslator:
+c_ PigLatinTranslator:
 
     alpha = set(string.ascii_lowercase)
     vowels = set(['a', 'e', 'i', 'o', 'u'])
@@ -9,7 +9,7 @@ class PigLatinTranslator:
 
     @classmethod
     ___ translate_phrase(cls, phrase):
-        r.. ' '.join([cls.translate(word) ___ word __ phrase.s.. ])
+        r.. ' '.j..([cls.translate(word) ___ word __ phrase.s.. ])
 
     @classmethod
     ___ translate(cls, word):

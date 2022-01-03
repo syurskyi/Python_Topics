@@ -11,7 +11,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ lowestCommonAncestor3(self, root, a, b):
         """
         :type root: TreeNode
@@ -22,16 +22,16 @@ class Solution:
         __ n.. root:
             r..
 
-        lca, has_a, has_b = self.divide_conquer(root, a, b)
+        lca, has_a, has_b = divide_conquer(root, a, b)
 
         r.. lca __ has_a a.. has_b ____ N..
 
     ___ divide_conquer(self, node, a, b):
         __ n.. node:
-            r.. N.., False, False
+            r.. N.., F.., F..
 
-        left, a_in_left, b_in_left = self.divide_conquer(node.left, a, b)
-        right, a_in_right, b_in_right = self.divide_conquer(node.right, a, b)
+        left, a_in_left, b_in_left = divide_conquer(node.left, a, b)
+        right, a_in_right, b_in_right = divide_conquer(node.right, a, b)
 
         has_a = a_in_left o. a_in_right o. node __ a
         has_b = b_in_left o. b_in_right o. node __ b

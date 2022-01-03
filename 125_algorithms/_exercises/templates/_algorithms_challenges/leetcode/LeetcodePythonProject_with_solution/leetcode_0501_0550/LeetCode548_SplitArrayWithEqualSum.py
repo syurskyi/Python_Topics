@@ -3,13 +3,13 @@ Created on Aug 21, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ splitArray(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
-        __ n.. nums: r.. False
+        __ n.. nums: r.. F..
         sumVals = [nums[0]]
         n = l..(nums)
         ___ i __ r..(1, n):
@@ -22,16 +22,16 @@ class Solution(object):
             ___ k __ r..(j+2, n-1):
                 __ sumVals[n-1]-sumVals[k] __ sumVals[k-1]-sumVals[j] a..\
                     sumVals[k-1]-sumVals[j] __ hashset:
-                    r.. True
-        r.. False
+                    r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1,2,1,2,1,2,1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.splitArray(nums)
+            result = splitArray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

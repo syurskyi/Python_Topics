@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ removeKdigits(self, num, k):
     """
     :type num: str
@@ -13,4 +13,4 @@ class Solution(object):
       stack.a..(c)
     __ k > 0:
       stack = stack[:-k]
-    r.. "".join(stack).lstrip("0") o. "0"
+    r.. "".j..(stack).lstrip("0") o. "0"

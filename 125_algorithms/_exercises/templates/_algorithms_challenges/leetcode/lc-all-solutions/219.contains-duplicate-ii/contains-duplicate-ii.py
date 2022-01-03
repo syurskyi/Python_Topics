@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ containsNearbyDuplicate(self, nums, k):
     """
     :type nums: List[int]
@@ -9,9 +9,9 @@ class Solution(object):
     :rtype: bool
     """
     __ n.. nums:
-      r.. False
+      r.. F..
     __ k __ 0:
-      r.. False
+      r.. F..
     k = k + 1
     k = m..(k, l..(nums))
 
@@ -19,13 +19,13 @@ class Solution(object):
     d = set()
     ___ i __ r..(0, k):
       __ nums[i] __ d:
-        r.. True
+        r.. T..
       d |= {nums[i]}
       window.a..(i)
     ___ i __ r..(k, l..(nums)):
       d -= {nums[window.popleft()]}
       __ nums[i] __ d:
-        r.. True
+        r.. T..
       d |= {nums[i]}
       window.a..(i)
-    r.. False
+    r.. F..

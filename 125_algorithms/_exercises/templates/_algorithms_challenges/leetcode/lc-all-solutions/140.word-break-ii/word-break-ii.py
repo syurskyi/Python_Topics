@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ wordBreak(self, s, wordDict):
     """
     :type s: str
@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: List[str]
     """
     res    # list
-    __ n.. self.checkWordBreak(s, wordDict):
+    __ n.. checkWordBreak(s, wordDict):
       r.. res
     queue = [(0, "")]
     slen = l..(s)
@@ -40,9 +40,9 @@ class Solution(object):
         ___ l __ lenList:
           __ s[start:start + l] __ wordDict:
             __ start + l __ slen:
-              r.. True
+              r.. T..
             __ visited[start + l] __ 0:
               tmpqueue.a..(start + l)
               visited[start + l] = 1
       queue, tmpqueue = tmpqueue, []
-    r.. False
+    r.. F..

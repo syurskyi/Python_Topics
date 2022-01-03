@@ -3,13 +3,13 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minSwapsCouples(self, row):
         """
         :type row: List[int]
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         idx = 0
         res = 0
         w.... idx < l..(row):
@@ -27,14 +27,14 @@ class Solution(object):
             idx += 2
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [0, 2, 1, 3],
             [3, 2, 0, 1],
         ]
         ___ row __ testCases:
             print('row: %s' % row)
-            result = self.minSwapsCouples(row)
+            result = minSwapsCouples(row)
             print('result: %s' % result)
             print('-='*30+'-')
 

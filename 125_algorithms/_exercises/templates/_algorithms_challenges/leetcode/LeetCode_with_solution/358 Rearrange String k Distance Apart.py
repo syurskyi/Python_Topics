@@ -33,19 +33,19 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-class Val(object):
-    ___ __init__(self, cnt, val):
-        self.cnt = cnt
-        self.val = val
+c_ Val(object):
+    ___ - , cnt, val):
+        cnt = cnt
+        val = val
 
     ___ __cmp__(self, other):
-        __ self.cnt __ other.cnt:
-            r.. cmp(self.val, other.val)
+        __ cnt __ other.cnt:
+            r.. cmp(val, other.val)
 
-        r.. -cmp(self.cnt, other.cnt)
+        r.. -cmp(cnt, other.cnt)
 
 
-class Solution(object):
+c_ Solution(object):
     ___ rearrangeString(self, s, k):
         """
         Greedy, largest first, fill k first
@@ -61,7 +61,7 @@ class Solution(object):
             d[c] += 1
 
         h    # list
-        ___ char, cnt __ d.items():
+        ___ char, cnt __ d.i..:
             heapq.heappush(h, Val(cnt, char))
 
         ret    # list
@@ -69,7 +69,7 @@ class Solution(object):
             cur    # list
             ___ _ __ xrange(k):
                 __ n.. h:
-                    r.. "".join(ret) __ l..(ret) __ l..(s) ____ ""
+                    r.. "".j..(ret) __ l..(ret) __ l..(s) ____ ""
 
                 e = heapq.heappop(h)
                 ret.a..(e.val)
@@ -80,7 +80,7 @@ class Solution(object):
             ___ e __ cur:
                 heapq.heappush(h, e)
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 
 __ __name__ __ "__main__":

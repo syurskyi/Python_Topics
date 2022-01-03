@@ -4,7 +4,7 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minAbbreviation(self, target, dictionary):
         diffs    # list
         m = l..(target)
@@ -20,7 +20,7 @@ class Solution(object):
         abbrs    # list
         ___ i __ r..(2**m):
             __ a..(d&i ___ d __ diffs):
-                abbrs.a..(self.abbr(target, i))
+                abbrs.a..(abbr(target, i))
         r.. m..(abbrs, key=l.... x: l..(x))
     
     ___ abbr(self, target, num):
@@ -38,7 +38,7 @@ class Solution(object):
             word += s..(count)
         r.. word
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "apple",
@@ -52,7 +52,7 @@ class Solution(object):
         ___ target, dictionary __ testCases:
             print('target: %s' % target)
             print('dictionary: %s' % dictionary)
-            result = self.minAbbreviation(target, dictionary)
+            result = minAbbreviation(target, dictionary)
             print('result: %s' % result)
             print('-='*30+'-')
 

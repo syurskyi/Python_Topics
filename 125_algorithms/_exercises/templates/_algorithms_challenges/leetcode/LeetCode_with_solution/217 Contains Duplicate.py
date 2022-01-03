@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ containsDuplicate(self, nums):
         """
         Trival
@@ -14,8 +14,8 @@ class Solution:
         :rtype : bool
         """
         d = Counter(nums)
-        ___ k, v __ d.items():
+        ___ k, v __ d.i..:
             __ v > 1:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

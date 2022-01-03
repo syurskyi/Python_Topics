@@ -4,7 +4,7 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ majorityElement(self, nums):
         """
         :type nums: List[int]
@@ -20,7 +20,7 @@ class Solution(object):
                 count -= 1
         r.. cand
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 2, 3, 2],
             [5, 1, 1, 1, 3],
@@ -28,7 +28,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.majorityElement(nums)
+            result = majorityElement(nums)
             print('result: %s' % (result))
             print('-='*20 + '-')
 

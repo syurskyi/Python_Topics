@@ -5,22 +5,22 @@ __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ plusOne(self, head):
         """
         reverse, plus one, then reverse
         :type head: ListNode
         :rtype: ListNode
         """
-        head = self.revserse(head)
-        head = self.plus(head)
-        head = self.revserse(head)
+        head = revserse(head)
+        head = plus(head)
+        head = revserse(head)
         r.. head
 
     ___ plus(self, head):

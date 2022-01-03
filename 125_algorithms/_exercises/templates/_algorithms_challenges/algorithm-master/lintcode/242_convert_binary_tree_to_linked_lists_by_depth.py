@@ -13,7 +13,7 @@ class ListNode:
 """
 
 
-class Solution:
+c_ Solution:
     # @param {TreeNode} root the root of binary tree
     # @return {ListNode[]} a lists of linked list
     ___ binaryTreeToLists(self, root):

@@ -5,14 +5,14 @@ Created on Feb 4, 2017
 '''
 
 # Definition for binary tree with next pointer.
-class TreeLinkNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
-        self.next = N..
+c_ TreeLinkNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
+        next = N..
 
-class Solution:
+c_ Solution:
     # @param root, a tree link node
     # @return nothing
     ___ connect(self, root):

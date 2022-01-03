@@ -4,7 +4,7 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ calcEquation(self, equations, values, queries):
         """
         :type equations: List[List[str]]
@@ -12,8 +12,8 @@ class Solution(object):
         :type queries: List[List[str]]
         :rtype: List[float]
         """
-        valuesMap = {}
-        graph = {}
+        valuesMap    # dict
+        graph    # dict
         ___ e, v __ z..(equations, values):
             valuesMap[(e[0], e[1])] = v
             valuesMap[(e[1], e[0])] = 1.0/v
@@ -33,7 +33,7 @@ class Solution(object):
                 result.a..(1.0)
             ____:
                 tmp = [-1.0]
-                self.dfs(valuesMap, graph, query[0], query[1], 1.0, set(), tmp)
+                dfs(valuesMap, graph, query[0], query[1], 1.0, set(), tmp)
                 result.a..(tmp[0])
         r.. result
     
@@ -44,9 +44,9 @@ class Solution(object):
         __ start __ graph:
             ___ nextNode __ graph[start]:
                 __ nextNode n.. __ visited:
-                    self.dfs(valuesMap, graph, nextNode, target, curr*valuesMap[(start, nextNode)], visited, result)
+                    dfs(valuesMap, graph, nextNode, target, curr*valuesMap[(start, nextNode)], visited, result)
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 [["a", "b"], ["b", "c"]],
@@ -55,7 +55,7 @@ class Solution(object):
             ),
         ]
         ___ equations, values, queries __ testCases:
-            result = self.calcEquation(equations, values, queries)
+            result = calcEquation(equations, values, queries)
             print('result: %s' % result)
             print('-='*20+'-')
 

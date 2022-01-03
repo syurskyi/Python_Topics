@@ -1,5 +1,5 @@
-class Solution:
-    ___ search(self, nums, target):
+c_ Solution:
+    ___ s..(self, nums, target):
         """
         :type nums: List[int]
         :type target: int

@@ -9,7 +9,7 @@ _______ heapq
 dirs = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
-class Solution:
+c_ Solution:
     ___ shortestDistance(self, maze: List[List[int]], start: List[int], destination: List[int]) -> int:
         """
         No friction rolling ball

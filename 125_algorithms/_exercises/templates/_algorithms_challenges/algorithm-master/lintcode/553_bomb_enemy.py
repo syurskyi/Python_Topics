@@ -25,7 +25,7 @@ Main Concept:
 """
 
 
-class Solution:
+c_ Solution:
     WALL = 'W'
     ENEMY = 'E'
     EMPTY = '0'
@@ -45,26 +45,26 @@ class Solution:
         ___ x __ r..(m):
             ___ y __ r..(n):
                 # calculate bomb in cur section [x, 'WALL' | m) in col
-                __ x __ 0 o. grid[x - 1][y] __ self.WALL:
+                __ x __ 0 o. grid[x - 1][y] __ WALL:
                     cols[y] = 0
 
                     ___ i __ r..(x, m):
-                        __ grid[i][y] __ self.WALL:
+                        __ grid[i][y] __ WALL:
                             break
-                        __ grid[i][y] __ self.ENEMY:
+                        __ grid[i][y] __ ENEMY:
                             cols[y] += 1
 
                 # calculate bomb in cur section [y, 'WALL' | n) in row
-                __ y __ 0 o. grid[x][y - 1] __ self.WALL:
+                __ y __ 0 o. grid[x][y - 1] __ WALL:
                     row = 0
 
                     ___ i __ r..(y, n):
-                        __ grid[x][i] __ self.WALL:
+                        __ grid[x][i] __ WALL:
                             break
-                        __ grid[x][i] __ self.ENEMY:
+                        __ grid[x][i] __ ENEMY:
                             row += 1
 
-                __ grid[x][y] __ self.EMPTY a.. row + cols[y] > ans:
+                __ grid[x][y] __ EMPTY a.. row + cols[y] > ans:
                     ans = row + cols[y]
 
         r.. ans
@@ -74,7 +74,7 @@ class Solution:
 TLE
 time: O(m^2 * n^2)
 """
-class Solution:
+c_ Solution:
     WALL = 'W'
     ENEMY = 'E'
     EMPTY = '0'
@@ -90,10 +90,10 @@ class Solution:
 
         ___ x __ r..(l..(grid)):
             ___ y __ r..(l..(grid[0])):
-                __ grid[x][y] __ self.EMPTY:
+                __ grid[x][y] __ EMPTY:
                     ans = max(
                         ans,
-                        self.get_killed_cnt(grid, x, y)
+                        get_killed_cnt(grid, x, y)
                     )
 
         r.. ans
@@ -104,30 +104,30 @@ class Solution:
 
         # up
         ___ x __ r..(i, -1, -1):
-            __ grid[x][j] __ self.WALL:
+            __ grid[x][j] __ WALL:
                 break
-            __ grid[x][j] __ self.ENEMY:
+            __ grid[x][j] __ ENEMY:
                 cnt += 1
 
         # down
         ___ x __ r..(i, m):
-            __ grid[x][j] __ self.WALL:
+            __ grid[x][j] __ WALL:
                 break
-            __ grid[x][j] __ self.ENEMY:
+            __ grid[x][j] __ ENEMY:
                 cnt += 1
 
         # left
         ___ y __ r..(j, -1, -1):
-            __ grid[i][y] __ self.WALL:
+            __ grid[i][y] __ WALL:
                 break
-            __ grid[i][y] __ self.ENEMY:
+            __ grid[i][y] __ ENEMY:
                 cnt += 1
 
         # right
         ___ y __ r..(j, n):
-            __ grid[i][y] __ self.WALL:
+            __ grid[i][y] __ WALL:
                 break
-            __ grid[i][y] __ self.ENEMY:
+            __ grid[i][y] __ ENEMY:
                 cnt += 1
 
         r.. cnt

@@ -4,7 +4,7 @@ Created on Mar 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ intersection(self, nums1, nums2):
         s1 = set(nums1)
         s2 = set(nums2)

@@ -1,4 +1,4 @@
-_______ re
+_______ __
 ____ collections _______ defaultdict
 
 CHARACTERS = ['Red Riding Hood',
@@ -57,17 +57,17 @@ ___ make_character_index(text=text, characters=CHARACTERS):
     """
     d = defaultdict(l..)
     character_list    # list
-    new_text = text.lower().splitlines()
+    new_text = text.l...splitlines()
 
     # Clean up character list with multiple character names
     ___ character __ characters:
-        __ type(character) __ tuple:
-            character = '|'.join(l..(character))
+        __ t..(character) __ tuple:
+            character = '|'.j..(l..(character))
         character_list.a..(character.lower())
 
     ___ character __ character_list:
         ___ line __ e..(new_text):
-            __ re.search(character, line[1]):
+            __ __.s..(character, line[1]):
                 d[character.s..('|')[0]].a..(line[0])
 
     r.. d..(d)

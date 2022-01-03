@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ isSubtree(self, s, t):
     """
     :type s: TreeNode
@@ -27,6 +27,6 @@ class Solution(object):
           stack.a..((node.right, 1))
           stack.a..((node.left, 1))
           stack.a..((node, 0))
-      r.. ",".join(ans)
+      r.. ",".j..(ans)
 
     r.. serialize(t) __ serialize(s)

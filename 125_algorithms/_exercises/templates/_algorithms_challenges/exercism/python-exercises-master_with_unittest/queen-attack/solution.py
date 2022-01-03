@@ -5,7 +5,7 @@ ___ board(pos1, pos2):
     b = [['_'] * 8 ___ i __ r..(8)]
     b[x1][y1] = 'W'
     b[x2][y2] = 'B'
-    r.. [''.join(r) ___ r __ b]
+    r.. [''.j..(r) ___ r __ b]
 
 
 ___ can_attack(pos1, pos2):
@@ -15,8 +15,8 @@ ___ can_attack(pos1, pos2):
     dx = x1 - x2 __ x1 >= x2 ____ x2 - x1
     dy = y1 - y2 __ y1 >= y2 ____ y2 - y1
     __ dx __ dy o. dx __ 0 o. dy __ 0:
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..
 
 
 ___ validate_position(pos1, pos2):

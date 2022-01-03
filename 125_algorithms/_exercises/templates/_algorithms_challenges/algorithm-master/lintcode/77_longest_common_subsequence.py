@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: A string
     @param: B: A string

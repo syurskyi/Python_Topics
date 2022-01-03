@@ -13,7 +13,7 @@ ___ df():
 
 
 ___ test_load_excel_into_dataframe(df):
-    ... type(df) __ DataFrame
+    ... t..(df) __ DataFrame
     ... df.shape __ (43, 7)
 
 

@@ -12,7 +12,7 @@ Output: index1=1, index2=2
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ twoSum_TLE(self, num, target):
         """
         built-in method .index
@@ -42,7 +42,7 @@ class Solution:
         :param target: int
         :return: tuple, (index1, index2)
         """
-        hash_map = {}
+        hash_map    # dict
         ___ ind, val __ e..(num):
             hash_map[val] = ind
 

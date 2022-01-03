@@ -3,7 +3,7 @@ ____ enum _______ Enum
 ____ typing _______ Any, Dict, List, Optional, Tuple, Union
 
 
-class SQLiteType(Enum):
+c_ SQLiteType(Enum):
     """Enum matching SQLite data types to corresponding Python types.
 
     Supported SQLite types:
@@ -24,13 +24,13 @@ class SQLiteType(Enum):
     BLOB = bytes
 
 
-class SchemaError(Exception):
+c_ SchemaError(Exception):
     """Base Schema error class if a table schema is not respected."""
 
     pass
 
 
-class DB:
+c_ DB:
     """SQLite Database class.
 
     Supports all major CRUD operations.
@@ -49,20 +49,20 @@ class DB:
             column name and column type.
     """
 
-    ___ __init__(self, location: Optional[s..] = ":memory:"):
-        self.location = location
-        self.cursor = N..
-        self.connection = N..
-        self.table_schemas = {}
+    ___ - , location: Optional[s..] = ":memory:"):
+        location = location
+        cursor = N..
+        connection = N..
+        table_schemas    # dict
 
-    ___ __enter__(self):
-        self.connection = sqlite3.connect(self.location)
-        self.cursor = self.connection.cursor()
+    ___ __enter__
+        connection = sqlite3.connect(location)
+        cursor = connection.cursor()
 
         r.. self
 
     ___ __exit__(self, exc_type, exc_value, traceback):
-        self.connection.close()
+        connection.close()
 
     ___ create(
             self, table: s.., schema: List[Tuple[s.., SQLiteType]], primary_key: s..
@@ -93,8 +93,8 @@ class DB:
             item_type = item[1].name
             x = f"{item[0]} {item_type}"
             schema_new.a..(x)
-        schema_new = ', '.join(schema_new)
-        con = self.connection
+        schema_new = ', '.j..(schema_new)
+        con = connection
         cur = con.cursor()
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
@@ -139,7 +139,7 @@ class DB:
             SchemaError: If a value does not respect the table schema or
                 if there are more values than columns for the given table.
         """
-        con = self.connection
+        con = connection
         cur = con.cursor()
         ___ value __ values:
             y.. cur.execute(f"INSERT INTO {table} VALUES {value}")
@@ -180,7 +180,7 @@ class DB:
         """
         raise NotImplementedError("You have to implement this method first.")
 
-    @property
+    $
     ___ num_transactions(self) -> int:
         """The total number of changes since the database connection was opened.
 

@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return nothing, do it in place
     ___ flatten(self, root):
         __ root __ N..
             r..
-        self.flatten(root.left)
-        self.flatten(root.right)
+        flatten(root.left)
+        flatten(root.right)
         left = root.left
         right = root.right
         __ left __ n.. N..

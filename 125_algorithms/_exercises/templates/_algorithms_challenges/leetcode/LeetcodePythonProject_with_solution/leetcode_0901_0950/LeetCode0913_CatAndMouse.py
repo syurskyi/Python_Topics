@@ -1,6 +1,6 @@
 _______ collections
 
-class Solution(object):
+c_ Solution(object):
     ___ catMouseGame(self, graph):
         """
         :type graph: List[List[int]]
@@ -10,7 +10,7 @@ class Solution(object):
 
         DRAW, MOUSE, CAT = 0, 1, 2
         color = collections.defaultdict(int)
-        degree = {}
+        degree    # dict
         ___ m __ r..(N):
             ___ c __ r..(N):
                 degree[m, c, 1] = l..(graph[m])
@@ -27,7 +27,7 @@ class Solution(object):
 
         w.... queue:
             i, j, t, c = queue.popleft()
-            ___ i2, j2, t2 __ self.parents(graph, i, j, t):
+            ___ i2, j2, t2 __ parents(graph, i, j, t):
                 __ color[i2, j2, t2] __ DRAW:
                     __ t2 __ c:
                         color[i2, j2, t2] = c
@@ -50,12 +50,12 @@ class Solution(object):
                     res.a..((m, c2, 3-t))
         r.. res
 
-    ___ test(self):
+    ___ test
         testCases = [
             [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]],
         ]
         ___ graph __ testCases:
-            res = self.catMouseGame(graph)
+            res = catMouseGame(graph)
             print('res: %s' % res)
             print('-='*30+'-')
 

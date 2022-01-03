@@ -13,30 +13,30 @@ Hint:
 __author__ = 'Daniel'
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ kthSmallest(self, root, k):
         """
         :type root: TreeNode
         :type k: int
         :rtype: int
         """
-        l = self.cnt(root.left)
+        l = cnt(root.left)
         __ l+1 __ k:
             r.. root.val
         ____ l+1 < k:
-            r.. self.kthSmallest(root.right, k-(l+1))
+            r.. kthSmallest(root.right, k-(l+1))
         ____:
-            r.. self.kthSmallest(root.left, k)
+            r.. kthSmallest(root.left, k)
 
     ___ cnt(self, root):
         __ n.. root:
             r.. 0
 
-        r.. 1+self.cnt(root.left)+self.cnt(root.right)
+        r.. 1+cnt(root.left)+cnt(root.right)

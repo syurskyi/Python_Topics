@@ -31,7 +31,7 @@ or
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ integerReplacement(self, n):
         """
         Simulation using dp fails since bi-directional
@@ -65,8 +65,8 @@ class Solution(object):
 
         ret = 1
         __ n%2 __ 0:
-            ret += self.integerReplacement(n/2)
+            ret += integerReplacement(n/2)
         ____:
-            ret += m..(self.integerReplacement(n+1), self.integerReplacement(n-1))
+            ret += m..(integerReplacement(n+1), integerReplacement(n-1))
 
         r.. ret

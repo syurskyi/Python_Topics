@@ -8,8 +8,8 @@ You are given a target value to search. If found in the array return its index, 
 You may assume no duplicate exists in the array.
 """
 __author__ = 'Danyang'
-class Solution:
-    ___ search(self, A, target):
+c_ Solution:
+    ___ s..(self, A, target):
         """
         assume no duplicate exists in the array
         Algorithm: modification of binary search
@@ -66,4 +66,4 @@ class Solution:
         r.. -1
 
 __ __name____"__main__":
-    print Solution().search([5,1,3], 5)
+    print Solution().s..([5,1,3], 5)

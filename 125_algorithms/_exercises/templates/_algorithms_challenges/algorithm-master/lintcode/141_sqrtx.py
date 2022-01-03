@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ sqrt(self, x):
         """
         :type x: int

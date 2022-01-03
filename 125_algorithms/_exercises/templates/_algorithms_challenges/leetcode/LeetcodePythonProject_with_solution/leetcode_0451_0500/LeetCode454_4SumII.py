@@ -3,7 +3,7 @@ Created on Jan 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ fourSumCount(self, A, B, C, D):
         """
         :type A: List[int]
@@ -12,7 +12,7 @@ class Solution(object):
         :type D: List[int]
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         ___ a __ A:
             ___ b __ B:
                 hashmap[a+b] = hashmap.get(a+b, 0)+1
@@ -22,7 +22,7 @@ class Solution(object):
                 res += hashmap.get(-c-d, 0)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [ 1, 2],
@@ -32,7 +32,7 @@ class Solution(object):
             ],
         ]
         ___ nums1, nums2, nums3, nums4 __ testCases:
-            result = self.fourSumCount(nums1, nums2, nums3, nums4)
+            result = fourSumCount(nums1, nums2, nums3, nums4)
             print('result: %s' % result)
             print('-='*30+'-')
 

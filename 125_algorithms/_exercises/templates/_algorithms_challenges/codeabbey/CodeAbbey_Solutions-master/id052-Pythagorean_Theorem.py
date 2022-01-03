@@ -11,5 +11,5 @@ ___ pythagorean(triangles):
             answer.a..('A')
         ____ a**2 + b**2 < c**2:
             answer.a..('O')
-    print(' '.join(answer))
+    print(' '.j..(answer))
 pythagorean(int(input()))

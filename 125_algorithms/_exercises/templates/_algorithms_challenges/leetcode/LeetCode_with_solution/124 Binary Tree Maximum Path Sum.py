@@ -13,22 +13,22 @@ Return 6.
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     global_max = -1<<31
     ___ maxPathSum(self, root):
         """
         :param root: TreeNode
         :return: integer
         """
-        self.get_max_component(root)
+        get_max_component(root)
         # global_max can in ANY path in the tree
-        r.. self.global_max
+        r.. global_max
 
     ___ get_max_component(self, root):
         """
@@ -53,12 +53,12 @@ class Solution:
         __ n.. root:
             r.. 0
 
-        left_max_component = self.get_max_component(root.left)
-        right_max_component = self.get_max_component(root.right)
+        left_max_component = get_max_component(root.left)
+        right_max_component = get_max_component(root.right)
 
         # update global max
         current_max_sum = max(root.val, root.val+left_max_component, root.val+right_max_component, root.val+left_max_component+right_max_component)  # four situations
-        self.global_max = max(self.global_max, current_max_sum)
+        global_max = max(global_max, current_max_sum)
 
         # return value for upper layer to calculate the current_max_sum
         r.. max(root.val, root.val+left_max_component, root.val+right_max_component)  # excluding arch (i.e. root.val+left_max_component+right_max_component)

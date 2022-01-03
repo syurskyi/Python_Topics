@@ -4,7 +4,7 @@ Implement strStr().
 Returns a pointer to the first occurrence of needle in haystack, or null if needle is not part of haystack.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ strStr_brute_force(self, haystack, needle):
         """
         Algorithm:

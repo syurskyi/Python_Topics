@@ -3,7 +3,7 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ replaceWords(self, d.., sentence):
         """
         :type dict: List[str]
@@ -20,9 +20,9 @@ class Solution(object):
                     break
             __ i+1 > l..(resArr):
                 resArr.a..(word)
-        r.. ' '.join(resArr)
+        r.. ' '.j..(resArr)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["cat", "bat", "rat"],
@@ -32,7 +32,7 @@ class Solution(object):
         ___ d.., sentence __ testCases:
             print('dict: %s' % d..)
             print('sentence: %s' % sentence)
-            result = self.replaceWords(d.., sentence)
+            result = replaceWords(d.., sentence)
             print('result: %s' % result)
             print('-='*30+'-')
 

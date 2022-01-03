@@ -1,39 +1,39 @@
 ____ json _______ dumps
 
 
-class Tree(object):
-    ___ __init__(self, label, children=[]):
-        self.label = label
-        self.children = children
+c_ Tree(object):
+    ___ - , label, children=[]):
+        label = label
+        children = children
 
-    ___ __dict__(self):
-        r.. {self.label: [c.__dict__() ___ c __ s..(self.children)]}
+    ___ __dict__
+        r.. {label: [c.__dict__() ___ c __ s..(children)]}
 
     ___ __str__(self, indent_ N..
-        r.. dumps(self.__dict__(), indent=indent)
+        r.. dumps(__dict__(), indent=indent)
 
     ___ __lt__(self, other):
-        r.. self.label < other.label
+        r.. label < other.label
 
     ___ __eq__(self, other):
-        r.. self.__dict__() __ other.__dict__()
+        r.. __dict__() __ other.__dict__()
 
-    ___ __iter__(self):
-        y.. self.label
-        ___ child __ self.children:
+    ___ __iter__
+        y.. label
+        ___ child __ children:
             ___ gchild __ child:
                 y.. gchild
 
-    ___ dup(self):
-        r.. Tree(self.label, [c.dup() ___ c __ self.children])
+    ___ dup
+        r.. Tree(label, [c.dup() ___ c __ children])
 
     ___ add(self, other):
-        tree = self.dup()
+        tree = dup()
         tree.children.a..(other)
         r.. tree
 
     ___ remove(self, node):
-        tree = self.dup()
+        tree = dup()
         ___ child __ l..(tree.children):
             tree.children.remove(child)
             __ child.label __ node:
@@ -56,7 +56,7 @@ class Tree(object):
         raise ValueError("Tree could not be reoriented")
 
     ___ path_to(self, from_node, to_node):
-        reordered = self.from_pov(from_node)
+        reordered = from_pov(from_node)
         stack = reordered.children
         path = [from_node]
         w.... path[-1] != to_node:

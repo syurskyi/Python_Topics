@@ -11,7 +11,7 @@ Could you do it in O(n) time and O(1) space?
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
     ___ isPalindrome(self, head):
         """
         :type head: ListNode

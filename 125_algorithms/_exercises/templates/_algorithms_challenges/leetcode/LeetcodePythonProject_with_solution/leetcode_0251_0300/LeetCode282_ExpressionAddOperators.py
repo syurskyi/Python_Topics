@@ -3,7 +3,7 @@ Created on Mar 6, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ addOperators(self, num, target):
         """
         :type num: str
@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[str]
         """
         res    # list
-        self.helper(num, 0, target, '', 0, 0, res)
+        helper(num, 0, target, '', 0, 0, res)
         r.. res
     
     ___ helper(self, num, pos, target, curr, evalVal, mult, res):
@@ -25,13 +25,13 @@ class Solution(object):
                 break
             numStr = num[pos:i]
             __ pos __ 0:
-                self.helper(num, i, target, numStr, 0, int(numStr), res)
+                helper(num, i, target, numStr, 0, int(numStr), res)
             ____:
-                self.helper(num, i, target, curr+'+'+numStr, evalVal+mult, int(numStr), res)
-                self.helper(num, i, target, curr+'-'+numStr, evalVal+mult, -int(numStr), res)
-                self.helper(num, i, target, curr+'*'+numStr, evalVal, mult*int(numStr), res)
+                helper(num, i, target, curr+'+'+numStr, evalVal+mult, int(numStr), res)
+                helper(num, i, target, curr+'-'+numStr, evalVal+mult, -int(numStr), res)
+                helper(num, i, target, curr+'*'+numStr, evalVal, mult*int(numStr), res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('123', 6),
             ('232', 8),
@@ -42,7 +42,7 @@ class Solution(object):
         ___ num, target __ testCases:
             print('num: %s' % (num))
             print('target: %s' % (target))
-            result = self.addOperators(num, target)
+            result = addOperators(num, target)
             print('result: %s' % (result))
             print('-='*20+'-')
 

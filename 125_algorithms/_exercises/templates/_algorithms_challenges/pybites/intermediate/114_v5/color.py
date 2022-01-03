@@ -5,12 +5,12 @@ The following sites were consulted:
     https://www.webucator.com/blog/2015/03/python-color-constants-module/
 """
 _______ os
-_______ re
+_______ __
 _______ sys
 _______ urllib.request
 
 # PREWORK (don't modify): import colors, save to temp file and import
-color_values_module = os.path.join('/tmp', 'color_values.py')
+color_values_module = os.path.j..('/tmp', 'color_values.py')
 urllib.request.urlretrieve('https://bit.ly/2MSuu4z',
                            color_values_module)
 sys.path.a..('/tmp')
@@ -19,15 +19,15 @@ sys.path.a..('/tmp')
 ____ color_values _______ COLOR_NAMES  # noqa E402
 
 
-class Color:
+c_ Color:
     """Color class.
 
     Takes the string of a color name and returns its RGB value.
     """
 
-    ___ __init__(self, color: s..):
-        self.colorname = color
-        self.rgb = COLOR_NAMES.get(color.upper(), N..)
+    ___ - , color: s..):
+        colorname = color
+        rgb = COLOR_NAMES.get(color.upper(), N..)
 
     @classmethod
     ___ hex2rgb(cls, hex_str: s..) -> tuple:
@@ -52,10 +52,10 @@ class Color:
         except ValueError as exp:
             raise ValueError(f'Invalid rgb value ({exp.args})')
 
-    ___ __repr__(self):
+    ___ __repr__
         """Returns the repl of the object"""
-        r.. f"{self.__class__.__name__}('{self.colorname}')"
+        r.. f"{__class__.__name__}('{colorname}')"
 
-    ___ __str__(self):
+    ___ __str__
         """Returns the string value of the color object"""
-        r.. f'{self.rgb}' __ self.rgb __ n.. N.. ____ 'Unknown'
+        r.. f'{rgb}' __ rgb __ n.. N.. ____ 'Unknown'

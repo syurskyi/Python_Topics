@@ -16,7 +16,7 @@ If n = 4 and k = 2, a solution is:
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ combine(self, n, k):
         """
         :type n: int
@@ -24,7 +24,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         a = r..(1, n + 1)
-        r.. self.combine_aux(a, k)
+        r.. combine_aux(a, k)
 
     ___ combine_aux(self, a, k):
         __ k __ 0:
@@ -32,7 +32,7 @@ class Solution(object):
         ____:
             res    # list
             ___ i, e __ e..(a):
-                rest_comb = self.combine_aux(a[i + 1:], k - 1)
+                rest_comb = combine_aux(a[i + 1:], k - 1)
                 ___ comb __ rest_comb:
                     comb.insert(0, e)
                 res += rest_comb

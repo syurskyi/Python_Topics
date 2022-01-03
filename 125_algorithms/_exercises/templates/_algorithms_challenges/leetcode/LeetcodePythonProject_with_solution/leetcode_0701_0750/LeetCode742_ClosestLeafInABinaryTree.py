@@ -4,21 +4,21 @@ Created on Mar 21, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ findClosestLeaf(self, root, k):
         """
         :type root: TreeNode
         :type k: int
         :rtype: int
         """
-        backMap = {}
-        kNode = self.dfs(root, k, backMap)
+        backMap    # dict
+        kNode = dfs(root, k, backMap)
         queue = [kNode]
         visited = set([kNode])
         w.... queue:
@@ -41,22 +41,22 @@ class Solution(object):
             r.. root
         __ root.left:
             backMap[root.left] = root
-            left = self.dfs(root.left, k, backMap)
+            left = dfs(root.left, k, backMap)
             __ left:
                 r.. left
         __ root.right:
             backMap[root.right] = root
-            right = self.dfs(root.right, k, backMap)
+            right = dfs(root.right, k, backMap)
             __ right:
                 r.. right
         r.. N..
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ root, k __ testCases:
-            result = self.findClosestLeaf(root, k)
+            result = findClosestLeaf(root, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -42,17 +42,17 @@ ____ typing _______ List
 ____ collections _______ defaultdict, deque
 
 
-class Solution(object):
+c_ Solution(object):
     ___ alienOrder(self, words: List[s..]) -> s..:
-        G = self.construct_graph(words)
+        G = construct_graph(words)
         visited = defaultdict(int)  # 0 not visited, 1 visiting, 2 visted
         ret = deque()
-        ___ u __ G.keys():
+        ___ u __ G.k..:
             __ visited[u] __ 0:
-                __ n.. self.topo_dfs(G, u, visited, ret):
+                __ n.. topo_dfs(G, u, visited, ret):
                     r.. ""
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
     ___ construct_graph(self, words):
         G = defaultdict(l..)
@@ -80,14 +80,14 @@ class Solution(object):
         visited[u] = 1
         ___ nbr __ G[u]:
             __ visited[nbr] __ 1:
-                r.. False
+                r.. F..
             __ visited[nbr] __ 0:
-                __ n.. self.topo_dfs(G, nbr, visited, ret):
-                    r.. False
+                __ n.. topo_dfs(G, nbr, visited, ret):
+                    r.. F..
 
         visited[u] = 2
         ret.appendleft(u)  # visit larger first
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":

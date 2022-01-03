@@ -3,7 +3,7 @@ Created on Nov 19, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ largestPalindrome(self, n):
         """
         :type n: int
@@ -14,15 +14,15 @@ class Solution(object):
         lowerBound = upperBound//10
         maxNum = upperBound*upperBound
         firstHalf = maxNum//(10**n)
-        palindromeFound = False
+        palindromeFound = F..
         palindrome = 0
         w.... n.. palindromeFound:
-            palindrome = self.createPalindrome(firstHalf)
+            palindrome = createPalindrome(firstHalf)
             ___ i __ r..(upperBound, lowerBound, -1):
                 __ palindrome//i > maxNum o. i*i < palindrome:
                     break
                 __ palindrome % i __ 0:
-                    palindromeFound = True
+                    palindromeFound = T..
                     break
             firstHalf -= 1
         r.. int(palindrome%1337)
@@ -31,7 +31,7 @@ class Solution(object):
         s = s..(num)+s..(num)[::-1]
         r.. int(s)
     
-    ___ test(self):
+    ___ test
         testCases = [
             1,
             2,
@@ -42,7 +42,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.largestPalindrome(n)
+            result = largestPalindrome(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

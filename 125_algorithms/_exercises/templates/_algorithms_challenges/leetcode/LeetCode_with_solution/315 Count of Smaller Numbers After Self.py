@@ -15,29 +15,29 @@ Return the array [2, 1, 1, 0].
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    ___ __init__(self, start, end, cnt=0):
-        self.start = start
-        self.end = end
-        self.cnt = cnt
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , start, end, cnt=0):
+        start = start
+        end = end
+        cnt = cnt
+        left = N..
+        right = N..
 
 
-class SegmentTree(object):
-    ___ __init__(self, n):
-        self.root = self.build(0, n)
+c_ SegmentTree(object):
+    ___ - , n):
+        root = build(0, n)
 
     ___ build(self, start, end):
         __ start >= end: r..
         __ start __ end-1: r.. TreeNode(start, end)
         node = TreeNode(start, end)
-        node.left = self.build(start, (start+end)/2)
-        node.right = self.build((start+end)/2, end)
+        node.left = build(start, (start+end)/2)
+        node.right = build((start+end)/2, end)
         r.. node
 
     ___ inc(self, idx, val):
-        cur = self.root
+        cur = root
         w.... cur:
             cur.cnt += val
             mid = (cur.start+cur.end)/2
@@ -54,14 +54,14 @@ class SegmentTree(object):
 
         mid = (cur.start+cur.end)/2
         __ cur.start <= idx < mid:
-            r.. self.query_less(cur.left, idx)
+            r.. query_less(cur.left, idx)
         ____ mid <= idx < cur.end:
-            r.. (cur.left.cnt __ cur.left ____ 0) + self.query_less(cur.right, idx)
+            r.. (cur.left.cnt __ cur.left ____ 0) + query_less(cur.right, idx)
         ____:
             r.. 0
 
 
-class Solution(object):
+c_ Solution(object):
     ___ countSmaller(self, nums):
         """
         Brute force: O(n^2)
@@ -71,7 +71,7 @@ class Solution(object):
         :rtype: List[int]
         """
         # preprocess the array to make it discrete in [0, 1, ..., n-1]
-        h = {}
+        h    # dict
         ___ i, v __ e..(s..(nums)):
             h[v] = i  # override duplicates
 

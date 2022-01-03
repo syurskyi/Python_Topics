@@ -19,13 +19,13 @@ Note: The n belongs to [1, 10,000].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ checkPossibility(self, A: List[int]) -> bool:
         """
         greedy change
         two way of changing
         """
-        changed = False
+        changed = F..
         ___ i __ r..(l..(A) - 1):
             __ A[i] <= A[i + 1]:
                 continue
@@ -34,33 +34,33 @@ class Solution:
                     A[i] = A[i+1]
                 ____:
                     A[i+1] = A[i]
-                changed = True
+                changed = T..
             ____:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ checkPossibility_error(self, A: List[int]) -> bool:
         """
         greedy change
         """
-        changed = False
+        changed = F..
         ___ i __ r..(l..(A) - 1):
             __ A[i] <= A[i + 1]:
                 continue
             __ n.. changed:
                 A[i] = A[i + 1]  # Error
                 __ i - 1 < 0 o. A[i - 1] <= A[i]:
-                    changed = True
+                    changed = T..
                 ____:
-                    r.. False
+                    r.. F..
             ____:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":
-    ... Solution().checkPossibility([4,2,3]) __ True
-    ... Solution().checkPossibility([3,4,2,3]) __ False
-    ... Solution().checkPossibility([2,3,3,2,4]) __ True
+    ... Solution().checkPossibility([4,2,3]) __ T..
+    ... Solution().checkPossibility([3,4,2,3]) __ F..
+    ... Solution().checkPossibility([2,3,3,2,4]) __ T..

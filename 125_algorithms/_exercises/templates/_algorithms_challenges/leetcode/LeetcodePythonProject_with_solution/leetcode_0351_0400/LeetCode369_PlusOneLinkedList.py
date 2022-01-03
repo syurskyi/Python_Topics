@@ -5,15 +5,15 @@ Created on Mar 29, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ plusOne(self, head):
         __ n.. head: r.. ListNode(1)
-        newHead = self.reverse(head)
+        newHead = reverse(head)
         carry = 1
         node = newHead
         tail = node
@@ -29,7 +29,7 @@ class Solution(object):
             node = node.next
         __ carry:
             tail.next = ListNode(1)
-        r.. self.reverse(newHead)
+        r.. reverse(newHead)
     
     ___ reverse(self, head):
         p1 = head

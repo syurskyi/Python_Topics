@@ -4,7 +4,7 @@ Created on May 6, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ PredictTheWinner(self, nums):
         """
         :type nums: List[int]
@@ -25,31 +25,31 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        self.mem = {}
-        r.. self.helper(nums, 0, l..(nums)-1) >= 0
+        mem    # dict
+        r.. helper(nums, 0, l..(nums)-1) >= 0
     
     ___ helper(self, nums, start, end):
         n = l..(nums)
         num = start*n+end
-        __ num __ self.mem:
-            r.. self.mem[num]
+        __ num __ mem:
+            r.. mem[num]
         __ start __ end:
-            self.mem[num] = nums[start]
-            r.. self.mem[num]
-        res1 = nums[start]-self.helper(nums, start+1, end)
-        res2 = nums[end]-self.helper(nums, start, end-1)
+            mem[num] = nums[start]
+            r.. mem[num]
+        res1 = nums[start]-helper(nums, start+1, end)
+        res2 = nums[end]-helper(nums, start, end-1)
         result = max(res1, res2)
-        self.mem[num] = result
+        mem[num] = result
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 5, 2],
             [1, 5, 233, 7],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.PredictTheWinner_DnC(nums)
+            result = PredictTheWinner_DnC(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -3,7 +3,7 @@ Created on Mar 18, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ longestMountain_twoPassesONSpace(self, A):
         """
         :type A: List[int]
@@ -40,7 +40,7 @@ class Solution(object):
                 res = max(res, up+down+1)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2,1,4,7,3,2,5],
             [2,2,2],
@@ -50,7 +50,7 @@ class Solution(object):
             [4,3,2,1],
         ]
         ___ arr __ testCases:
-            result = self.longestMountain(arr)
+            result = longestMountain(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

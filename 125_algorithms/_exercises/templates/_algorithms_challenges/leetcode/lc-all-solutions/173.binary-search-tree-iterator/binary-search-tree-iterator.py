@@ -5,27 +5,27 @@
 #         self.left = None
 #         self.right = None
 
-class BSTIterator(object):
-  ___ __init__(self, root):
+c_ BSTIterator(object):
+  ___ - , root):
     """
     :type root: TreeNode
     """
-    self.p = N..
-    self.stack    # list
+    p = N..
+    stack    # list
     __ root:
-      self.stack.a..((1, root))
+      stack.a..((1, root))
 
-  ___ hasNext(self):
+  ___ hasNext
     """
     :rtype: bool
     """
-    r.. l..(self.stack) > 0
+    r.. l..(stack) > 0
 
-  ___ next(self):
+  ___ next
     """
     :rtype: int
     """
-    stack = self.stack
+    stack = stack
     w.... stack:
       p = stack.pop()
       __ n.. p[1]:

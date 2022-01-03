@@ -16,7 +16,7 @@ All the integers in the array will be in the range of [-10000, 10000].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ arrayPairSum(self, nums: List[int]) -> int:
         nums.s..()
         r.. s..(nums[::2])

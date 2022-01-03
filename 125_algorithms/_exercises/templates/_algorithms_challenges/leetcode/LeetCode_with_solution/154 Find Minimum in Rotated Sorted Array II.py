@@ -16,7 +16,7 @@ _______ sys
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findMin(self, A):
         """
         similar to find target in rotated sorted array

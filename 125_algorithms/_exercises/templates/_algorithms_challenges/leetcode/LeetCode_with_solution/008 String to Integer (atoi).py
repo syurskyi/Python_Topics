@@ -10,7 +10,7 @@ all the input requirements up front.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ atoi(self, s..):
         """
         Need to satisfy all the nuance requirements

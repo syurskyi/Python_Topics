@@ -34,7 +34,7 @@ A[i] is 0 or 1
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ prefixesDivBy5(self, A: List[int]) -> List[bool]:
         """
         brute force
@@ -45,8 +45,8 @@ class Solution:
             cur = (cur << 1) + a
             cur %= 5
             __ cur __ 0:
-                ret.a..(True)
+                ret.a..(T..)
             ____:
-                ret.a..(False)
+                ret.a..(F..)
 
         r.. ret

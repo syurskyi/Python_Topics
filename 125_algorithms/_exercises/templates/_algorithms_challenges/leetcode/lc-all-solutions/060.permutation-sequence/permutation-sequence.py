@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ getPermutation(self, n, k):
     """
     :type n: int

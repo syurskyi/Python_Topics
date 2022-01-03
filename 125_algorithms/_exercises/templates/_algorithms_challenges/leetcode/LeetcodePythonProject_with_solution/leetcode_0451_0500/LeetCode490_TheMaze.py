@@ -4,7 +4,7 @@ Created on May 8, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ hasPath(self, maze, start, destination):
         """
         :type maze: List[List[int]]
@@ -14,17 +14,17 @@ class Solution(object):
         """
         m, n = l..(maze), l..(maze[0])
         queue= [start]
-        visited = [[False]*n ___ _ __ r..(m)]
-        visited[start[0]][start[1]] = True
+        visited = [[F..]*n ___ _ __ r..(m)]
+        visited[start[0]][start[1]] = T..
         w.... queue:
             i, j = queue.pop(0)
             __ i __ destination[0] a.. j __ destination[1]:
-                r.. True
-            visited[i][j] = True
-            ___ x, y __ self.getNextSteps(maze, i, j):
+                r.. T..
+            visited[i][j] = T..
+            ___ x, y __ getNextSteps(maze, i, j):
                 __ n.. visited[x][y]:
                     queue.a..((x, y))
-        r.. False
+        r.. F..
     
     ___ getNextSteps(self, maze, i, j):
         result = set()

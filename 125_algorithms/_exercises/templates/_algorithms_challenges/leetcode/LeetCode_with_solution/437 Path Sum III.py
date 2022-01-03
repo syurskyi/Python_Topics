@@ -11,19 +11,19 @@ The tree has no more than 1,000 nodes and the values are in the range -1,000,000
 to 1,000,000.
 """
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ collections _______ defaultdict
 
 
-class Solution:
-    ___ __init__(self):
-        self.count = 0
+c_ Solution:
+    ___ - ):
+        count = 0
 
     ___ pathSum(self, root: TreeNode, target: int) -> int:
         """
@@ -32,8 +32,8 @@ class Solution:
 
         Downward path
         """
-        self.dfs(root, target, 0, defaultdict(int))
-        r.. self.count
+        dfs(root, target, 0, defaultdict(int))
+        r.. count
 
     ___ dfs(self, node, target, cur_sum, prefix_sum_counter):
         __ n.. node:
@@ -42,17 +42,17 @@ class Solution:
         cur_sum += node.val
         # delta = target - cur_sum  # error
         delta = cur_sum - target
-        self.count += prefix_sum_counter[delta]
+        count += prefix_sum_counter[delta]
         __ delta __ 0:
-            self.count += 1
+            count += 1
 
         prefix_sum_counter[cur_sum] += 1
-        self.dfs(node.left, target, cur_sum, prefix_sum_counter)
-        self.dfs(node.right, target, cur_sum, prefix_sum_counter)
+        dfs(node.left, target, cur_sum, prefix_sum_counter)
+        dfs(node.right, target, cur_sum, prefix_sum_counter)
         prefix_sum_counter[cur_sum] -= 1
         
 
-class SolutionComplex:
+c_ SolutionComplex:
     ___ pathSum(self, root, s..):
         """
         Brute force: two dfs, O(n^2)
@@ -63,7 +63,7 @@ class SolutionComplex:
         :rtype: int
         """
         count = [0]  # pass as a reference
-        self.dfs(root, s.., 0, {}, count)
+        dfs(root, s.., 0, {}, count)
         r.. count[0]
 
     ___ dfs(self, root, s.., cur_sum, prefix_sum, count):
@@ -83,6 +83,6 @@ class SolutionComplex:
             count[0] += 1
 
         prefix_sum[cur_sum] = prefix_sum.get(cur_sum, 0) + 1
-        self.dfs(root.left, s.., cur_sum, prefix_sum, count)
-        self.dfs(root.right, s.., cur_sum, prefix_sum, count)
+        dfs(root.left, s.., cur_sum, prefix_sum, count)
+        dfs(root.right, s.., cur_sum, prefix_sum, count)
         prefix_sum[cur_sum] -= 1  # pop to save space

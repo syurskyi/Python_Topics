@@ -32,29 +32,29 @@ p and q are different and both values will exist in the binary tree.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.ans = N..
+c_ Solution:
+    ___ - ):
+        ans = N..
 
     ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-        self.c.. root, p, q)
-        r.. self.ans
+        c.. root, p, q)
+        r.. ans
 
     ___ c.. self, node, p, q):
         __ n.. node:
             r.. 0
 
-        lcount = self.c.. node.left, p, q)
-        rcount = self.c.. node.right, p, q)
+        lcount = c.. node.left, p, q)
+        rcount = c.. node.right, p, q)
         mcount = 1 __ node __ p o. node __ q ____ 0
         ret = lcount + rcount + mcount
         __ lcount __ 1 a.. rcount __ 1 o. lcount __ 1 a.. mcount __ 1 o. rcount __ 1 a.. mcount __ 1:
-            self.ans = node
+            ans = node
         r.. ret

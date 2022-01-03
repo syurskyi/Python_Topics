@@ -7,7 +7,7 @@ class Point:
 """
 
 
-class Solution:
+c_ Solution:
     ___ numIslands2(self, m, n, operators):
         """
         :type m: int
@@ -21,7 +21,7 @@ class Solution:
             r.. ans
 
         cnt = 0
-        nodes = {}
+        nodes    # dict
 
         ___ op __ operators:
             node = (op.x, op.y)
@@ -44,7 +44,7 @@ class Solution:
                 ):
                     continue
 
-                __ self.union(nodes, node, (_x, _y)):
+                __ union(nodes, node, (_x, _y)):
                     cnt -= 1
 
             ans.a..(cnt)
@@ -52,14 +52,14 @@ class Solution:
         r.. ans
 
     ___ union(self, nodes, a, b):
-        _a = self.find(nodes, a)
-        _b = self.find(nodes, b)
+        _a = find(nodes, a)
+        _b = find(nodes, b)
 
         __ _a __ _b:
-            r.. False
+            r.. F..
 
         nodes[_b] = _a
-        r.. True
+        r.. T..
 
     ___ find(self, nodes, a):
         __ a n.. __ nodes:
@@ -68,5 +68,5 @@ class Solution:
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] = self.find(nodes, nodes[a])
+        nodes[a] = find(nodes, nodes[a])
         r.. nodes[a]

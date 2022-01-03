@@ -1,35 +1,35 @@
 _______ threading
 
 
-class BankAccount(object):
-    ___ __init__(self):
-        self.is_open = False
-        self.balance = 0
-        self.lock = threading.Lock()
+c_ BankAccount(object):
+    ___ - ):
+        is_open = F..
+        balance = 0
+        lock = threading.Lock()
 
-    ___ get_balance(self):
-        with self.lock:
-            __ self.is_open:
-                r.. self.balance
+    ___ get_balance
+        with lock:
+            __ is_open:
+                r.. balance
             ____:
                 raise ValueError
 
-    ___ open(self):
-        self.is_open = True
+    ___ open
+        is_open = T..
 
     ___ deposit(self, amount):
-        with self.lock:
-            __ self.is_open a.. amount > 0:
-                self.balance += amount
+        with lock:
+            __ is_open a.. amount > 0:
+                balance += amount
             ____:
                 raise ValueError
 
     ___ withdraw(self, amount):
-        with self.lock:
-            __ self.is_open a.. 0 < amount <= self.balance:
-                self.balance -= amount
+        with lock:
+            __ is_open a.. 0 < amount <= balance:
+                balance -= amount
             ____:
                 raise ValueError
 
-    ___ close(self):
-        self.is_open = False
+    ___ close
+        is_open = F..

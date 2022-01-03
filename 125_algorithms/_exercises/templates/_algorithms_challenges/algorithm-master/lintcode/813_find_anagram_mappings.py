@@ -1,7 +1,7 @@
 """
 Find last pos
 """
-class Solution:
+c_ Solution:
     ___ anagramMappings(self, a, b):
         """
         :type a: list[int]
@@ -13,7 +13,7 @@ class Solution:
 
         n = l..(a)
         ans = [-1] * n
-        b2i = {}
+        b2i    # dict
 
         ___ i __ r..(n):
             b2i[b[i]] = i
@@ -30,7 +30,7 @@ class Solution:
 """
 Strict
 """
-class Solution:
+c_ Solution:
     ___ anagramMappings(self, a, b):
         """
         :type a: list[int]
@@ -42,7 +42,7 @@ class Solution:
 
         n = l..(a)
         ans = [-1] * n
-        b2i = {}
+        b2i    # dict
 
         ___ i __ r..(n):
             __ b[i] n.. __ b2i:

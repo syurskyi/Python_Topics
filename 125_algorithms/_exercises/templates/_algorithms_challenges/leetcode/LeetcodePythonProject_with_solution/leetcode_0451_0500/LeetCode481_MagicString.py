@@ -4,7 +4,7 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ magicalString(self, n):
         """
         :type n: int

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findTheDifference(self, s, t):
         """
         :type s: str
@@ -15,7 +15,7 @@ class Solution:
         r.. chr(ans + a)
 
 
-class Solution:
+c_ Solution:
     ___ findTheDifference(self, s, t):
         """
         :type s: str
@@ -25,7 +25,7 @@ class Solution:
         __ n.. t:
             r.. ''
 
-        freq = {}
+        freq    # dict
 
         ___ c __ s:
             __ c n.. __ freq:
@@ -39,7 +39,7 @@ class Solution:
 
             freq[c] -= 1
 
-        ___ c, cnt __ freq.items():
+        ___ c, cnt __ freq.i..:
             __ cnt:
                 r.. c
 

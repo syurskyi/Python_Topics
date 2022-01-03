@@ -3,14 +3,14 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        hashmap = {}
+        hashmap    # dict
         res    # list
         ___ i, num __ e..(nums):
             __ target-num __ hashmap:

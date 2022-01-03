@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     dfs/dp: optimized by memory searching
     """
@@ -8,7 +8,7 @@ class Solution:
         :type words: list[str]
         :rtype: list[str]
         """
-        r.. self.dfs(s, set(words), {})
+        r.. dfs(s, set(words), {})
 
     ___ dfs(self, s, words, memo):
         __ s __ memo:
@@ -30,14 +30,14 @@ class Solution:
                 res.a..(prefix)
                 continue
 
-            ___ word __ self.dfs(s[size:], words, memo):
+            ___ word __ dfs(s[size:], words, memo):
                 res.a..('{0} {1}'.f..(prefix, word))
 
         memo[s] = res
         r.. res
 
 
-class Solution:
+c_ Solution:
     """
     dfs: TLE
 
@@ -56,13 +56,13 @@ class Solution:
         __ n.. words:
             r.. ans
 
-        self.dfs(s, words, ans, [])
+        dfs(s, words, ans, [])
 
         r.. ans
 
     ___ dfs(self, s, words, ans, path):
         __ n.. s:
-            ans.a..(' '.join(path))
+            ans.a..(' '.j..(path))
             r..
 
         ___ word __ words:
@@ -72,5 +72,5 @@ class Solution:
                 continue
 
             path.a..(word)
-            self.dfs(s[l..(word):], words, ans, path)
+            dfs(s[l..(word):], words, ans, path)
             path.pop()

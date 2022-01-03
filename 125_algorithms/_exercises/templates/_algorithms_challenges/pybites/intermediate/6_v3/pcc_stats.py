@@ -5,7 +5,7 @@ _______ urllib.request
 _______ sys
 # prep
 tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.join(tmp, 'dirnames')
+tempfile = os.path.j..(tmp, 'dirnames')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile
@@ -41,7 +41,7 @@ ___ gen_files(tempfile=tempfile):
 
     filtered = filter(l.... x: x.s..(',')[-1]__'True', lines)
     ___ line __ filtered:
-        y.. line.s..(',')[0].lower()
+        y.. line.s..(',')[0].l..
 
 
 
@@ -64,7 +64,7 @@ ___ diehard_pybites(files_ N..
     files = l..(filterfalse(l.... x: x.s..('/')[-1] __ IGNORE, files))
     users.update([f.s..('/')[-1] ___ f __ files])
     popular_challenges.update([f.s..('/')[0] ___ f __ files])
-    print(l..(files), file=sys.stderr, flush=True)
+    print(l..(files), file=sys.stderr, flush=T..)
     r.. Stats(user=users.most_common(1)[0][0],
                  challenge=(popular_challenges.most_common(1)[0][0],
                             popular_challenges.most_common(1)[0][1])

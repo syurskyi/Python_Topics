@@ -5,20 +5,20 @@ count = 0
 ___ i __ x:
     i = l..(i)
     j = 0
-    plus_check = False
+    plus_check = F..
     string = ''
     w.... i[j]!= '@':
-        __ plus_check __ False:
+        __ plus_check __ F..:
             __ i[j] __ '.':
                 i.pop(j)
             ____ i[j] __ '+':
-                plus_check = True
+                plus_check = T..
             ____:
                 j += 1
                 pass
         ____:
             i.pop(j)
-    string = ''.join(i)
+    string = ''.j..(i)
     __ string n.. __ store_add:
         store_add.a..(string)
         count += 1

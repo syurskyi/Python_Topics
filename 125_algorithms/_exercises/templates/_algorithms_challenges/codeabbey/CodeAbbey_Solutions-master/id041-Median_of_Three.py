@@ -7,5 +7,5 @@ ___ findMedian(amount):
                 ___ x __ [a, b, c]:
                     __ int(x) != minNum a.. int(x) != maxNum:
                         answer.a..(s..(x))
-        print(' '.join(answer))
+        print(' '.j..(answer))
 findMedian(input())

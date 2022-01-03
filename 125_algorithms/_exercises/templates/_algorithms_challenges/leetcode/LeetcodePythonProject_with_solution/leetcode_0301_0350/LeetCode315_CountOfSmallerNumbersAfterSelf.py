@@ -4,26 +4,26 @@ Created on Mar 15, 2017
 @author: MT
 '''
 
-class TreeNode(object):
-    ___ __init__(self, val, num=1):
-        self.val = val
-        self.num = num
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , val, num=1):
+        val = val
+        num = num
+        left = N..
+        right = N..
     
-    ___ __str__(self):
-        r.. '<val: %s, num: %s>' % (self.val, self.num)
+    ___ __str__
+        r.. '<val: %s, num: %s>' % (val, num)
     
-    ___ __repr__(self):
-        r.. self.__str__()
+    ___ __repr__
+        r.. __str__()
 
-class Solution(object):
+c_ Solution(object):
     ___ countSmaller(self, nums):
         __ n.. nums: r.. []
         root = TreeNode(nums[-1])
         result = [0]
         ___ i __ r..(l..(nums)-2, -1, -1):
-            result.insert(0, self.getVal(root, nums[i], 0))
+            result.insert(0, getVal(root, nums[i], 0))
         r.. result, root
     
     ___ getVal(self, root, val, num):
@@ -33,16 +33,16 @@ class Solution(object):
                 root.left = TreeNode(val)
                 r.. num
             ____:
-                r.. self.getVal(root.left, val, num)
+                r.. getVal(root.left, val, num)
         ____:
             num += root.num
             __ n.. root.right:
                 root.right = TreeNode(val)
                 r.. num
             ____:
-                r.. self.getVal(root.right, val, num)
+                r.. getVal(root.right, val, num)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [5, 2, 6, 1],
             [-1, -1],
@@ -50,7 +50,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result, root = self.countSmaller(nums)
+            result, root = countSmaller(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
             

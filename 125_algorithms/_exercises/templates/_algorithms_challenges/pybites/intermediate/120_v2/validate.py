@@ -9,7 +9,7 @@ ___ int_args(func):
     ___ wrapper(*args):
 
         ___ arg __ args:
-            __ type(arg) != int:
+            __ t..(arg) != int:
                 raise TypeError("All arguments passed in must be integers")
             
 

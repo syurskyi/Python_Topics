@@ -24,7 +24,7 @@ ___ test_help_text_hints(parser, capfd):
     with pytest.raises(SystemExit):
         parser.parse_args(['-h'])
 
-    output = capfd.readouterr()[0].lower()
+    output = capfd.readouterr()[0].l..
     ... 'usage' __ output
     ... 'a simple calculator' __ output
     ___ op __ 'add sub mul div'.s.. :

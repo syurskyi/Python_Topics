@@ -6,7 +6,7 @@ You may assume that the array is non-empty and the majority element always
 exist in the array.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ majorityElement(self, nums):
         """
         :type nums: List[int]

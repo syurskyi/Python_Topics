@@ -1,7 +1,7 @@
 """
 DP: TLE
 """
-class Solution:
+c_ Solution:
     """
     @param: P: an array of integers
     @param: k: An integer
@@ -60,7 +60,7 @@ class Solution:
 """
 DP
 """
-class Solution:
+c_ Solution:
     """
     @param: P: an array of integers
     @param: k: An integer
@@ -137,7 +137,7 @@ Binary Search
       t | ... m-2 m-1 m m+1 m+2 ...
       p | ..F  F   F  T  T   T  T..
 """
-class Solution:
+c_ Solution:
     """
     @param: P: an array of integers
     @param: k: An integer
@@ -162,7 +162,7 @@ class Solution:
 
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ self.check_if_possible(P, mid, k):
+            __ check_if_possible(P, mid, k):
                 right = mid
             ____:
                 left = mid
@@ -170,7 +170,7 @@ class Solution:
         """
         MUST check `left` first, since we need the min spent time
         """
-        r.. left __ self.check_if_possible(P, left, k) ____ right
+        r.. left __ check_if_possible(P, left, k) ____ right
 
     ___ check_if_possible(self, P, spent_time, max_copiers):
         """
@@ -188,7 +188,7 @@ class Solution:
                 copied_pages = 0
                 copiers += 1
             __ copiers > max_copiers:
-                r.. False
+                r.. F..
             copied_pages += P[i]
 
-        r.. True
+        r.. T..

@@ -32,7 +32,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ smallestRangeII(self, A: List[int], K: int) -> int:
         """
         Say A[i] is the largest i that goes up. A[i+1] would be the smallest

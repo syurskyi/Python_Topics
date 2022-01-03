@@ -15,7 +15,7 @@ In this case, you should ignore redundant slashes and return "/home/foo".
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ simplifyPath(self, path):
         """
         use "." as intermediate
@@ -43,7 +43,7 @@ class Solution(object):
             r.. "/"
 
         path = map(l.... x: "/"+x, path)
-        r.. "".join(path)
+        r.. "".j..(path)
 
 
 __ __name__ __ "__main__":

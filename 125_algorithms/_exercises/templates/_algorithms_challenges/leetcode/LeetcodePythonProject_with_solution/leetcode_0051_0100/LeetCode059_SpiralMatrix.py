@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ generateMatrix(self, n):
         """
         :type n: int
@@ -33,10 +33,10 @@ class Solution(object):
             left += 1
         r.. result
     
-    ___ test(self):
+    ___ test
         ___ n __ r..(1, 5):
             print('n: %s' % n)
-            matrix = self.generateMatrix(n)
+            matrix = generateMatrix(n)
             print('matrix: %s' % matrix)
             print('-='*15+'-')
 

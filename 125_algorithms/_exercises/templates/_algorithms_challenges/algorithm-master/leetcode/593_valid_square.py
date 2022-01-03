@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ validSquare(self, p1, p2, p3, p4):
         """
         :type p1: List[int]
@@ -11,20 +11,20 @@ class Solution:
 
         ___ p __ (p1, p2, p3, p4):
             __ n.. p:
-                r.. False
+                r.. F..
 
             ps.a..(p)
 
         ps.s..()
 
         # 0: lb, 1: lt, 2:rb, 3: rt
-        l01 = self.get_distance(ps[0], ps[1])
-        l02 = self.get_distance(ps[0], ps[2])
-        l13 = self.get_distance(ps[1], ps[3])
-        l23 = self.get_distance(ps[2], ps[3])
+        l01 = get_distance(ps[0], ps[1])
+        l02 = get_distance(ps[0], ps[2])
+        l13 = get_distance(ps[1], ps[3])
+        l23 = get_distance(ps[2], ps[3])
 
-        l03 = self.get_distance(ps[0], ps[3])
-        l12 = self.get_distance(ps[1], ps[2])
+        l03 = get_distance(ps[0], ps[3])
+        l12 = get_distance(ps[1], ps[2])
 
         r.. a..((
             l01 __ l02 __ l13 __ l23 > 0,

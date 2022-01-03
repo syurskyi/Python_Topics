@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ sumOfLeftLeaves(self, root):
     """
     :type root: TreeNode
@@ -15,8 +15,8 @@ class Solution(object):
     ___ helper(root, isLeft):
       __ n.. root:
         r.. N..
-      left = helper(root.left, True)
-      right = helper(root.right, False)
+      left = helper(root.left, T..)
+      right = helper(root.right, F..)
       ret = 0
       __ left __ N.. a.. right __ N.. a.. isLeft:
         r.. root.val
@@ -26,7 +26,7 @@ class Solution(object):
         ret += right
       r.. ret
 
-    ret = helper(root, False)
+    ret = helper(root, F..)
     __ ret:
       r.. ret
     r.. 0

@@ -3,7 +3,7 @@ Created on Sep 11, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ kSimilarity(self, A, B):
         """
         :type A: str
@@ -27,7 +27,7 @@ class Solution(object):
                 ___ j __ r..(i+1, l..(s)):
                     __ s[j] __ b[j] o. s[i] != b[j]:
                         continue
-                    tmp = self.swap(s, i, j)
+                    tmp = swap(s, i, j)
                     __ tmp __ b:
                         r.. res
                     __ tmp n.. __ hashset:
@@ -38,9 +38,9 @@ class Solution(object):
     ___ swap(self, s, i, j):
         l = l..(s)
         l[i], l[j] = l[j], l[i]
-        r.. ''.join(l)
+        r.. ''.j..(l)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'ab',
@@ -64,7 +64,7 @@ class Solution(object):
             ],
         ]
         ___ a, b __ testCases:
-            res = self.kSimilarity(a, b)
+            res = kSimilarity(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

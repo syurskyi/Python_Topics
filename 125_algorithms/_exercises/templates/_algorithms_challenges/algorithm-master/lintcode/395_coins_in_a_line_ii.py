@@ -15,21 +15,21 @@ case 2: if p2 will take the `i + 2`
 """
 
 
-class Solution:
+c_ Solution:
     ___ firstWillWin(self, values):
         """
         :type values: list[int]
         :rtype: bool
         """
         __ n.. values:
-            r.. False
+            r.. F..
 
         n = l..(values)
 
         __ n < 3:
-            r.. True
+            r.. T..
 
-        dp = [False] * n
+        dp = [F..] * n
         dp[-1] = values[-1]
         dp[-2] = values[-1] + values[-2]
 

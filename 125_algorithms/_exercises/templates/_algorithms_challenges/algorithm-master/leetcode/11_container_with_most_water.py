@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ maxArea(self, H):
         """
         :type H: List[int]

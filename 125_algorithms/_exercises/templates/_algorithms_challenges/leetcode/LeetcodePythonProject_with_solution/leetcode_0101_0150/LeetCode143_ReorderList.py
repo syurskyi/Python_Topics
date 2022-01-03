@@ -5,12 +5,12 @@ Created on Feb 9, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x, nextNode_ N..
-        self.val = x
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , x, nextNode_ N..
+        val = x
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ reorderList(self, head):
         """
         :type head: ListNode
@@ -27,8 +27,8 @@ class Solution(object):
             node = node.next
         head2 = node.next
         node.next = N..
-        head2 = self.reverse(head2)
-        self.merge(head, head2)
+        head2 = reverse(head2)
+        merge(head, head2)
     
     ___ reverse(self, root):
         __ n.. root o. n.. root.next: r.. root
@@ -50,7 +50,7 @@ class Solution(object):
             head1 = tmp1
             head2 = tmp2
     
-    ___ test(self):
+    ___ test
         testCases = [
             ListNode(1, ListNode(2, ListNode(3))),
             ListNode(1, ListNode(2, ListNode(3, ListNode(4)))),
@@ -63,7 +63,7 @@ class Solution(object):
                 print('%s, ' % node.val, end='')
                 node = node.next
             print()
-            self.reorderList(head)
+            reorderList(head)
             print('after:')
             node = head
             w.... node:

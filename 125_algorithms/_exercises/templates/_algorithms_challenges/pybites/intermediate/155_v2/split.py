@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 ___ split_words_and_quoted_text(text):
     """Split string text by space unless it is
@@ -14,7 +14,7 @@ ___ split_words_and_quoted_text(text):
     """
 
 
-    values = re.findall(r'"(.+?)"|(\w+)',text)
+    values = __.findall(r'"(.+?)"|(\w+)',text)
 
 
     r.. [value[0] __ value[0] ____ value[1] ___ value __ values]

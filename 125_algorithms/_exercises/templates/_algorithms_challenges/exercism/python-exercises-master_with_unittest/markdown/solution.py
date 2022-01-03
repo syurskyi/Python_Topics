@@ -1,10 +1,10 @@
-_______ re
+_______ __
 
 
 ___ parse_markdown(markdown):
     lines = markdown.s..('\n')
     html = ''
-    in_list = False
+    in_list = F..
     ___ line __ lines:
         res = parse_line(line, in_list)
         html += res['line']
@@ -21,7 +21,7 @@ ___ wrap(line, tag):
 ___ check_headers(line):
     pattern = '# (.*)'
     ___ i __ r..(6):
-        __ re.match(pattern, line):
+        __ __.match(pattern, line):
             r.. wrap(line[(i + 2):], 'h' + s..(i + 1))
         pattern = '#' + pattern
     r.. line
@@ -29,7 +29,7 @@ ___ check_headers(line):
 
 ___ check_bold(line):
     bold_pattern = '(.*)__(.*)__(.*)'
-    bold_match = re.match(bold_pattern, line)
+    bold_match = __.match(bold_pattern, line)
     __ bold_match:
         r.. bold_match.group(1) + wrap(bold_match.group(2), 'strong')\
             + bold_match.group(3)
@@ -39,7 +39,7 @@ ___ check_bold(line):
 
 ___ check_italic(line):
     italic_pattern = '(.*)_(.*)_(.*)'
-    italic_match = re.match(italic_pattern, line)
+    italic_match = __.match(italic_pattern, line)
     __ italic_match:
         r.. italic_match.group(1) + wrap(italic_match.group(2), 'em')\
             + italic_match.group(3)
@@ -50,24 +50,24 @@ ___ check_italic(line):
 ___ parse_line(line, in_list):
     res = check_headers(line)
 
-    list_match = re.match(r'\* (.*)', res)
+    list_match = __.match(r'\* (.*)', res)
 
     __ (list_match):
         __ n.. in_list:
             res = '<ul>' + wrap(list_match.group(1), 'li')
-            in_list = True
+            in_list = T..
         ____:
             res = wrap(list_match.group(1), 'li')
     ____:
         __ in_list:
             res += '</ul>'
-            in_list = False
+            in_list = F..
 
-    __ n.. re.match('<h|<ul|<li', res):
+    __ n.. __.match('<h|<ul|<li', res):
         res = wrap(res, 'p')
 
     __ list_match __ N..
-        res = re.sub('(.*)(<li>)(.*)(</li>)(.*)', r'\1\2<p>\3</p>\4\5', res)
+        res = __.sub('(.*)(<li>)(.*)(</li>)(.*)', r'\1\2<p>\3</p>\4\5', res)
 
     w.... check_bold(res):
         res = check_bold(res)

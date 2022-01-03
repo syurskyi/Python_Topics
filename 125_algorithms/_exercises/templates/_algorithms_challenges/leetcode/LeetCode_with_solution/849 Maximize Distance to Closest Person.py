@@ -34,7 +34,7 @@ seats contains only 0s or 1s, at least one 0, and at least one 1.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxDistToClosest(self, seats: List[int]) -> int:
         """
         DP from left and right - next array

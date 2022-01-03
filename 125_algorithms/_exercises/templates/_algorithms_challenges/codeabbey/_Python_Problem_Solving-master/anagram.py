@@ -1,12 +1,12 @@
 ___ anagram(s,t):
     
-    s = s.lower().r..(' ','')
-    t = t.lower().r..(' ','')
+    s = s.l...r..(' ','')
+    t = t.l...r..(' ','')
     __ l..(s) != l..(t):
-        r.. False
+        r.. F..
     ___ i __ t:
         __ i __ s:
             continue
-        r.. False
+        r.. F..
 
-    r.. True
+    r.. T..

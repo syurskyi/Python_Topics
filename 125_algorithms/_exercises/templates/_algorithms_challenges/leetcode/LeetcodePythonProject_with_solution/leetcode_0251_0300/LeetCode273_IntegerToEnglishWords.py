@@ -3,13 +3,13 @@ Created on Mar 5, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numberToWords_own(self, num):
         """
         :type num: int
         :rtype: str
         """
-        res = self.helper(num)
+        res = helper(num)
         r.. res __ res ____ 'Zero'
     
     ___ helper(self, num):
@@ -31,22 +31,22 @@ class Solution(object):
             first = num/100
             res += ' ' + tokens20[first-1] + ' Hundred'
             remaining = num-first*100
-            res += ' ' + self.helper(remaining)
+            res += ' ' + helper(remaining)
         ____ num < 1000000:
             first = num/1000
-            res += ' ' + self.helper(first) + ' Thousand'
+            res += ' ' + helper(first) + ' Thousand'
             remaining = num - first*1000
-            res += ' ' + self.helper(remaining)
+            res += ' ' + helper(remaining)
         ____ num < 1000000000:
             first = num/1000000
-            res += ' ' + self.helper(first) + ' Million'
+            res += ' ' + helper(first) + ' Million'
             remaining = num - first*1000000
-            res += ' ' + self.helper(remaining)
+            res += ' ' + helper(remaining)
         ____:
             first = num/1000000000
-            res += ' ' + self.helper(first) + ' Billion'
+            res += ' ' + helper(first) + ' Billion'
             remaining = num - first*1000000000
-            res += ' ' + self.helper(remaining)
+            res += ' ' + helper(remaining)
         r.. res.s..
     
     ___ numberToWords(self, num):
@@ -64,4 +64,4 @@ class Solution(object):
             ___ p, w __ e..(('Thousand', 'Million', 'Billion'), 1):
                 __ n < 1000**(p+1):
                     r.. words(n/1000**p) + [w] + words(n%1000**p)
-        r.. ' '.join((words(num))) o. 'Zero'
+        r.. ' '.j..((words(num))) o. 'Zero'

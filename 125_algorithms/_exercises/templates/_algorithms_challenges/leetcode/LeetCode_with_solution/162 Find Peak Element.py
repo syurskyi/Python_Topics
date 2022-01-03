@@ -14,17 +14,17 @@ __author__ = 'Daniel'
 _______ sys
 
 
-class Solution:
-    ___ __init__(self):
-        self.A = N..
+c_ Solution:
+    ___ - ):
+        A = N..
 
     ___ findPeakElement(self, nums):
         """
         :type nums: list[int]
         :rtype: int
         """
-        self.A = nums
-        n = l..(self.A)
+        A = nums
+        n = l..(A)
         __ n < 2:
             r.. 0
 
@@ -32,9 +32,9 @@ class Solution:
         h = n
         w.... l < h:
             m = (l+h)/2
-            __ self._get(m-1) < self._get(m) > self._get(m+1):
+            __ _get(m-1) < _get(m) > _get(m+1):
                 r.. m
-            ____ self._get(m+1) > self._get(m):
+            ____ _get(m+1) > _get(m):
                 l = m+1
             ____:
                 h = m
@@ -42,10 +42,10 @@ class Solution:
         r.. -1
 
     ___ _get(self, i):
-        __ i < 0 o. i >= l..(self.A):
+        __ i < 0 o. i >= l..(A):
             r.. -sys.maxint-1
         ____:
-            r.. self.A[i]
+            r.. A[i]
 
     ___ findPeakElement_complicated(self, nums):
         """

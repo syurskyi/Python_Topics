@@ -19,5 +19,5 @@ ___ BMI(users):
                 ____:
                         print("Error.")
                 pairCount += 1
-        print(' '.join(answer))
+        print(' '.j..(answer))
 BMI(input())

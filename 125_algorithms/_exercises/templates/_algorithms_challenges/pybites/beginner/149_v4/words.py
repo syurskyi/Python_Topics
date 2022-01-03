@@ -4,7 +4,7 @@ _______ string
 ___ _check(key):
     __ key[0] n.. __ string.digits:
         key = f'\1{key}'
-    r.. key.lower()
+    r.. key.l..
 
 
 ___ sort_words_case_insensitively(words):

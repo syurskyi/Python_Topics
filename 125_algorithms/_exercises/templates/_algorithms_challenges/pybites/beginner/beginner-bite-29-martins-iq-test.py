@@ -22,7 +22,7 @@ _______ string
 ____ enum _______ Enum
 
 
-class State(Enum):
+c_ State(Enum):
     ALPHANUMERIC = 1
     NON_ALPHANUMERIC = 2
 

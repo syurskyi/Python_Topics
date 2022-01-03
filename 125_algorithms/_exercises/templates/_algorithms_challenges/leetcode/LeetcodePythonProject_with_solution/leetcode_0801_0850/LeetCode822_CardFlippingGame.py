@@ -3,7 +3,7 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ flipgame(self, fronts, backs):
         """
         :type fronts: List[int]
@@ -27,24 +27,24 @@ class Solution(object):
         :type backs: List[int]
         :rtype: int
         """
-        hashmap1 = {}
-        hashmap2 = {}
+        hashmap1    # dict
+        hashmap2    # dict
         ___ f, b __ z..(fronts, backs):
             hashmap1[f] = hashmap1.get(f, 0)+1
             hashmap2[b] = hashmap2.get(b, 0)+1
-        self.res = float('inf')
-        self.helper(fronts, backs, 0, hashmap1, hashmap2)
-        r.. self.res __ self.res != float('inf') ____ 0
+        res = float('inf')
+        helper(fronts, backs, 0, hashmap1, hashmap2)
+        r.. res __ res != float('inf') ____ 0
         
     ___ helper(self, fronts, backs, i, hashmap1, hashmap2):
         __ i >= l..(fronts):
             r..
         __ backs[i] n.. __ hashmap1:
-            self.res = m..(self.res, backs[i])
-        self.helper(fronts, backs, i+1, hashmap1, hashmap2)
-        self.flip(fronts, backs, i, hashmap1, hashmap2)
-        self.helper(fronts, backs, i+1, hashmap1, hashmap2)
-        self.flip(fronts, backs, i, hashmap1, hashmap2)
+            res = m..(res, backs[i])
+        helper(fronts, backs, i+1, hashmap1, hashmap2)
+        flip(fronts, backs, i, hashmap1, hashmap2)
+        helper(fronts, backs, i+1, hashmap1, hashmap2)
+        flip(fronts, backs, i, hashmap1, hashmap2)
     
     ___ flip(self, fronts, backs, i, hashmap1, hashmap2):
         f, b = fronts[i], backs[i]
@@ -58,9 +58,9 @@ class Solution(object):
         __ hashmap2[b] __ 0:
             del hashmap2[b]
         __ backs[i] n.. __ hashmap1:
-            self.res = m..(self.res, backs[i])
+            res = m..(res, backs[i])
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,2,4,4,7],
@@ -74,7 +74,7 @@ class Solution(object):
         ___ fronts, backs __ testCases:
             print('fronts: %s' % fronts)
             print('backs: %s' % backs)
-            result = self.flipgame(fronts, backs)
+            result = flipgame(fronts, backs)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -4,14 +4,14 @@ Created on Feb 14, 2017
 @author: MT
 '''
 #TODO: cannot do this using Python 3 because cmp is not available
-class Solution:
+c_ Solution:
     # @param {integer[]} nums
     # @return {string}
     ___ largestNumber(self, nums):
         comp = l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
         nums = l..(map(s.., nums))
         nums.s..(cmp=comp, r.._T..
-        r.. ''.join(nums).lstrip('0')
+        r.. ''.j..(nums).lstrip('0')
     
     # @param {integer[]} nums
     # @return {string}
@@ -19,15 +19,15 @@ class Solution:
         #python 2 only
         num = [s..(x) ___ x __ nums]
 #         num.sort(cmp=lambda x, y: cmp(y+x, x+y))
-        r.. ''.join(num).lstrip('0') o. '0'
+        r.. ''.j..(num).lstrip('0') o. '0'
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 30, 34, 5, 9],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.largestNumber(nums)
+            result = largestNumber(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

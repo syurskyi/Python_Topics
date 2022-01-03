@@ -4,7 +4,7 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ rotate(self, nums, k):
         """
         :type nums: List[int]
@@ -21,14 +21,14 @@ class Solution(object):
         ___ i __ r..(length):
             nums[i] = arr[i]
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([1,2,3,4,5,6,7], 3),
         ]
         ___ nums, k __ testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
-            self.rotate(nums, k)
+            rotate(nums, k)
             print('after: %s' % (nums))
             print('-='*20+'-')
         

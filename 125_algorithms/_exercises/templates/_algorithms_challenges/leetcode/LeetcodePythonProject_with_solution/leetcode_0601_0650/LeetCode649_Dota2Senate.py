@@ -3,7 +3,7 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ predictPartyVictory(self, senate):
         """
         :type senate: str
@@ -26,7 +26,7 @@ class Solution(object):
                 queue2.a..(d_index+n)
         r.. 'Radiant' __ l..(queue1) > l..(queue2) ____ 'Dire'
     
-    ___ test(self):
+    ___ test
         testCases = [
             'RD',
             'RDD',
@@ -34,7 +34,7 @@ class Solution(object):
         ]
         ___ senate __ testCases:
             print('senate: %s' % senate)
-            result = self.predictPartyVictory(senate)
+            result = predictPartyVictory(senate)
             print('result: %s' % result)
             print('-='*30+'-')
 

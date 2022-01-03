@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ intersect(self, nums1, nums2):
     """
     :type nums1: List[int]

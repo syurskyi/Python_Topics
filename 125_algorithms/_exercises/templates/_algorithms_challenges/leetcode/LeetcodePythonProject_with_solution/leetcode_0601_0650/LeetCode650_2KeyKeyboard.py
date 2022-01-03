@@ -3,7 +3,7 @@ Created on Oct 3, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minSteps(self, n):
         """
         :type n: int
@@ -18,7 +18,7 @@ class Solution(object):
                     break
         r.. dp[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             1,
             2,
@@ -27,7 +27,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.minSteps(n)
+            result = minSteps(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

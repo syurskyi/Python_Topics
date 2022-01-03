@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ convertToTitle(self, n):
     """
     :type n: int

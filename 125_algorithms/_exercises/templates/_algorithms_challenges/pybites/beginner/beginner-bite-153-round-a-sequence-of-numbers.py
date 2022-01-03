@@ -8,14 +8,14 @@ full integer. Return a new list with the rounded int values.
 Use whatever method you see fit, good luck!
 """
 
-___ round_up_or_down(transactions, up=True):
+___ round_up_or_down(transactions, up=T..):
     """Round the list of transactions passed in.
        If up=True (default) ronud up, else round down.
        Return a new list of rounded values
     """
     rounded    # list
     ___ f __ transactions:
-        __ up __ True:
+        __ up __ T..:
             f = f + 1
         r = int(f)
         rounded.a..(r)
@@ -23,6 +23,6 @@ ___ round_up_or_down(transactions, up=True):
 
 
 l = [4.5, 3.2, 6.9]
-print(round_up_or_down(l, up=False))
+print(round_up_or_down(l, up=F..))
 
 

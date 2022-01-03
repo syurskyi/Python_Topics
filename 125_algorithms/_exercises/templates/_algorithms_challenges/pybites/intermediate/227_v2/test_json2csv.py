@@ -35,9 +35,9 @@ mount2_expected = [
 
 
 @pytest.mark.parametrize("file_no, expected, exception", [
-    (1, mount1_expected, False),
-    (2, mount2_expected, False),
-    (3, N.., True),
+    (1, mount1_expected, F..),
+    (2, mount2_expected, F..),
+    (3, N.., T..),
 ])
 ___ test_json2csv(file_no, expected, exception, capfd):
     mount_json = TMP / f'mount{file_no}.json'

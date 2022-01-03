@@ -27,8 +27,8 @@ The value of each element in nums will be in the range [-9999, 9999].
 ____ typing _______ List
 
 
-class Solution:
-    ___ search(self, nums: List[int], target: int) -> int:
+c_ Solution:
+    ___ s..(self, nums: List[int], target: int) -> int:
         lo = 0
         hi = l..(nums)
         w.... lo < hi:

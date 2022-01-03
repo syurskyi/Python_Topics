@@ -26,7 +26,7 @@ The length of both nums1 and nums2 would not exceed 1000.
 """
 
 
-class Solution:
+c_ Solution:
     ___ nextGreaterElement(self, nums1, nums2):
         """
         Brute force O(mn)
@@ -45,7 +45,7 @@ class Solution:
         :type nums2: List[int]
         :rtype: List[int]
         """
-        h = {}  # num -> next greater element
+        h    # dict  # num -> next greater element
         stk    # list
         ___ e __ nums2[::-1]:
             w.... stk a.. stk[-1] <= e:

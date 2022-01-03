@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution:
+c_ Solution:
     """
     @param start: The start points set
     @param end: The end points set
@@ -9,7 +9,7 @@ class Solution:
     """
     ___ isCyclicGraph(self, start, end):
         __ n.. start o. n.. end o. l..(start) != l..(end):
-            r.. False
+            r.. F..
 
         n = l..(start)
         nxt = collections.defaultdict(set)
@@ -22,24 +22,24 @@ class Solution:
         ___ i __ r..(n):
             __ start[i] __ visited:
                 continue
-            __ self.dfs(start[i], nxt, visited, rec_stack):
-                r.. True
+            __ dfs(start[i], nxt, visited, rec_stack):
+                r.. T..
 
-        r.. False
+        r.. F..
 
     ___ dfs(self, u, nxt, visited, rec_stack):
         __ u n.. __ nxt:
-            r.. False
+            r.. F..
 
         visited.add(u)
         rec_stack.add(u)
 
         ___ v __ nxt[u]:
             __ v __ rec_stack:
-                r.. True
+                r.. T..
 
-            __ v n.. __ visited a.. self.dfs(v, nxt, visited, rec_stack):
-                r.. True
+            __ v n.. __ visited a.. dfs(v, nxt, visited, rec_stack):
+                r.. T..
 
         rec_stack.discard(u)
-        r.. False
+        r.. F..

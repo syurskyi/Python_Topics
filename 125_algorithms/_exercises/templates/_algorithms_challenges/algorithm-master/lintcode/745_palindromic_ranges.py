@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ PalindromicRanges(self, left, right):
         """
         :type left: int
@@ -14,7 +14,7 @@ class Solution:
         # dp[0] = 0
 
         ___ num __ r..(left, right + 1):
-            __ self.is_palindrome(num):
+            __ is_palindrome(num):
                 dp[num - left + 1] = dp[num - left] + 1
             ____:
                 dp[num - left + 1] = dp[num - left]
@@ -30,16 +30,16 @@ class Solution:
 
     ___ is_palindrome(self, num):
         __ num // 10 __ 0:
-            r.. True
+            r.. T..
 
         s = s..(num)
         left, right = 0, l..(s) - 1
 
         w.... left < right:
             __ s[left] != s[right]:
-                r.. False
+                r.. F..
 
             left += 1
             right -= 1
 
-        r.. True
+        r.. T..

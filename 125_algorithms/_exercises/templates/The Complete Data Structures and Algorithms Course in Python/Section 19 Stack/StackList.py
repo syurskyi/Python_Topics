@@ -7,7 +7,7 @@ c_ Stack:
         li__  []
     
     ___ __str__(self
-        values  li__.re..
+        values  li__.__..
         values  [st.(x) ___ x __ li__]
         r_ '\n'.j..(values)
     

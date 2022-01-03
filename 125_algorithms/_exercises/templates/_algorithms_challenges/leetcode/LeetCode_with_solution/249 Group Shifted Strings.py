@@ -6,7 +6,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ groupStrings(self, strings):
         """
 

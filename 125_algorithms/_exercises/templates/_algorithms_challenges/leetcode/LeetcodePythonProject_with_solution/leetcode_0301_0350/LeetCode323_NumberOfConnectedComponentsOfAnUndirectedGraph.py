@@ -4,13 +4,13 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ countComponents(self, n, edges):
         count = n
         roots = [-1]*count
         ___ edge __ edges:
-            root1 = self.findRoot(roots, edge[0])
-            root2 = self.findRoot(roots, edge[1])
+            root1 = findRoot(roots, edge[0])
+            root2 = findRoot(roots, edge[1])
             __ root1 != root2:
                 roots[root1] = root2
                 count -= 1
@@ -26,8 +26,8 @@ class Solution(object):
         count = n
         roots = l..(r..(n))
         ___ edge __ edges:
-            root1 = self.find(roots, edge[0])
-            root2 = self.find(roots, edge[1])
+            root1 = find(roots, edge[0])
+            root2 = find(roots, edge[1])
             __ root1 != root2:
                 roots[root1] = roots[root2]
                 count -= 1
@@ -39,7 +39,7 @@ class Solution(object):
             ind = roots[ind]
         r.. ind
     
-    ___ test(self):
+    ___ test
         testCases = [
             (5, [[0, 1], [1, 2], [3, 4]]),
             (5, [[0, 1], [1, 2], [2, 3], [3, 4]]),
@@ -48,8 +48,8 @@ class Solution(object):
         ___ n, edges __ testCases:
             print('n: %s' % (n))
             print('edges: %s' % (edges))
-            result = self.countComponents(n, edges)
-            result = self.countComponentsOwn(n, edges)
+            result = countComponents(n, edges)
+            result = countComponentsOwn(n, edges)
             print('result: %s' % (result))
             print('-='*20+'-')
     

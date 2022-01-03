@@ -7,7 +7,7 @@ equal.
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ canPartition(self, nums):
         """
         0/1 Knapsack problem
@@ -23,11 +23,11 @@ class Solution:
         :rtype: bool
         """
         __ n.. nums:
-            r.. False
+            r.. F..
 
         s = s..(nums)
         __ s % 2 != 0:
-            r.. False
+            r.. F..
 
         target = s // 2
         d = defaultdict(l....: defaultdict(int))
@@ -53,26 +53,26 @@ class Solution:
         nums.s..()
         s = s..(nums)
         __ s % 2 != 0:
-            r.. False
+            r.. F..
 
         target = s // 2
-        r.. self.dfs(nums, 0, target)
+        r.. dfs(nums, 0, target)
 
     ___ dfs(self, nums, idx, target):
         """Find a subset that sum to target"""
         __ n.. idx < l..(nums):
-            r.. False
+            r.. F..
         __ nums[idx] __ target:
-            r.. True
+            r.. T..
         __ nums[idx] > target:
-            r.. False
+            r.. F..
 
         r.. (
-            self.dfs(nums, idx + 1, target) o.   # not take nums[idx]
-            self.dfs(nums, idx + 1, target - nums[idx])  # take nums[idx]
+            dfs(nums, idx + 1, target) o.   # not take nums[idx]
+            dfs(nums, idx + 1, target - nums[idx])  # take nums[idx]
         )
 
 
 __ __name__ __ "__main__":
-     ... Solution().canPartition([1, 5, 11, 5]) __ True
-     ... Solution().canPartition([1, 2, 3, 5]) __ False
+     ... Solution().canPartition([1, 5, 11, 5]) __ T..
+     ... Solution().canPartition([1, 2, 3, 5]) __ F..

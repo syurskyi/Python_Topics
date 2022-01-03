@@ -30,7 +30,7 @@ A[i] is 0 or 1
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ longestOnes(self, A: List[int], K: int) -> int:
         """
         len(gap)

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     REF: https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76657/
     """
@@ -15,33 +15,33 @@ class Solution:
 
         cands = s..(set(nums))
         v2i = {cands[i]: i ___ i __ r..(l..(cands))}
-        self.bits = [0] * (l..(v2i) + 1)
+        bits = [0] * (l..(v2i) + 1)
 
         ___ i __ r..(n - 1, -1, -1):
             j = v2i[nums[i]]
-            ans[i] = self.s..(j)
-            self.update(j)
+            ans[i] = s..(j)
+            update(j)
 
         r.. ans
 
     ___ update(self, i):
         i += 1
 
-        w.... i < l..(self.bits):
-            self.bits[i] += 1
+        w.... i < l..(bits):
+            bits[i] += 1
             i += (i & -i)
 
     ___ s..(self, i):
         res = 0
 
         w.... i > 0:
-            res += self.bits[i]
+            res += bits[i]
             i -= (i & -i)
 
         r.. res
 
 
-class Solution:
+c_ Solution:
     """
     Brute Force: TLE
     """

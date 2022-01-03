@@ -2,4 +2,4 @@
 
 ____ d__ _______ d__
 
-print(d__.now().strftime("Today is %A, %B %d, %Y"))
+print(d__.n...strftime("Today is %A, %B %d, %Y"))

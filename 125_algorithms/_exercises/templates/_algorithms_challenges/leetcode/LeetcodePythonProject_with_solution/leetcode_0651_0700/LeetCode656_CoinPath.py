@@ -3,7 +3,7 @@ Created on Oct 5, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ cheapestJump(self, A, B):
         """
         :type A: List[int]
@@ -34,7 +34,7 @@ class Solution(object):
             ind = pos[ind]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 2, 4, -1, 2],
@@ -52,7 +52,7 @@ class Solution(object):
         ___ a, b __ testCases:
             print('a: %s' % a)
             print('b: %s' % b)
-            result = self.cheapestJump(a, b)
+            result = cheapestJump(a, b)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -3,7 +3,7 @@ ____ d__ _______ d__
 
 TimeOffset = n..('TimeOffset', 'offset date_str divider')
 
-NOW = d__.now()
+NOW = d__.n..
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
     TimeOffset(10, 'just now', N..),

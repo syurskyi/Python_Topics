@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 DOWN, UP, LEFT, RIGHT = '⇓', '⇑', '⇐', '⇒'
 START_VALUE = 1
@@ -23,8 +23,8 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
        START_VALUE coordinates and move through the numbers in order printing
        them.  Each time you turn append the grid with its corresponding symbol
        (DOWN / UP / LEFT / RIGHT). See the TESTS for more info."""
-    grid_array = [[int(v) ___ v __ re.findall(r'(\d+)', line)]
-                  ___ line __ grid.splitlines(keepends=False)
+    grid_array = [[int(v) ___ v __ __.findall(r'(\d+)', line)]
+                  ___ line __ grid.splitlines(keepends=F..)
                   __ l..(line.r..('|', '').strip()) > 0]
 
     start_coordinates = [(row, col)
@@ -42,7 +42,7 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
         __ current_direction __ next_direction:
             current_vals.a..(s..(this_val))
         ____:
-            print(f'{" ".join(current_vals)} {next_direction}')
+            print(f'{" ".j..(current_vals)} {next_direction}')
             current_vals = [s..(this_val)]
             current_direction = next_direction
         this_val += 1

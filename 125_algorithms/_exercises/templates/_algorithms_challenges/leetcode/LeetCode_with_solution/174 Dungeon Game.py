@@ -32,7 +32,7 @@ __author__ = 'Daniel'
 _______ sys
 
 
-class Solution:
+c_ Solution:
     ___ calculateMinimumHP(self, dungeon):
         """
         dp

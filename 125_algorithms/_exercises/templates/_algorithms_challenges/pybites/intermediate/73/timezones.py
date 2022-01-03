@@ -21,5 +21,5 @@ ___ within_schedule(utc, *timezones):
       time_difference = utc.hour + utc_localized_offset
       
       __ time_difference n.. __ MEETING_HOURS:
-         r.. False
-   r.. True
+         r.. F..
+   r.. T..

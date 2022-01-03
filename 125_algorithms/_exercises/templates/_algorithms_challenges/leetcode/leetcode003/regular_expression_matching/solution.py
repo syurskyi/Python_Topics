@@ -1,11 +1,11 @@
-class Solution:
+c_ Solution:
     # @return a boolean
     ___ isMatch(self, s, p):
         __ n.. p:
             r.. n.. s
         __ n.. s:
-            r.. False
-        r.. self.is_match_aux(s, p, 0, 0)
+            r.. F..
+        r.. is_match_aux(s, p, 0, 0)
 
     ___ is_match_aux(self, s, p, si, pi):
         __ pi __ l..(p):
@@ -16,14 +16,14 @@ class Solution:
             ... p[pi] != '*'
             # si must be in bound
             is_cur_matched = si < l..(s) a.. (p[pi] __ s[si] o. p[pi] __ '.')
-            is_next_matched = self.is_match_aux(s, p, si + 1, pi + 1)
+            is_next_matched = is_match_aux(s, p, si + 1, pi + 1)
             r.. is_cur_matched a.. is_next_matched
         # Next char is *
         w.... si < l..(s) a.. pi < l..(p) a.. (p[pi] __ s[si] o. p[pi] __ '.'):
-            __ self.is_match_aux(s, p, si, pi + 2):
-                r.. True
+            __ is_match_aux(s, p, si, pi + 2):
+                r.. T..
             si += 1
-        r.. self.is_match_aux(s, p, si, pi + 2)
+        r.. is_match_aux(s, p, si, pi + 2)
 
 
 s = Solution()

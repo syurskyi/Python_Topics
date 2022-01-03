@@ -32,27 +32,27 @@ Each node has a unique integer value from 1 to 100.
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.pi    # list
-        self.depths    # list
+c_ Solution:
+    ___ - ):
+        pi    # list
+        depths    # list
 
     ___ isCousins(self, root: TreeNode, x: int, y: int) -> bool:
         """
         need to know parent and depth
         """
-        self.dfs(N.., root, x, 0)
-        self.dfs(N.., root, y, 0)
-        __ l..(self.pi) != 2:
-            r.. False
-        r.. self.pi[0] != self.pi[1] a.. self.depths[0] __ self.depths[1]
+        dfs(N.., root, x, 0)
+        dfs(N.., root, y, 0)
+        __ l..(pi) != 2:
+            r.. F..
+        r.. pi[0] != pi[1] a.. depths[0] __ depths[1]
 
 
     ___ dfs(self, pi, node, x, depth):
@@ -60,9 +60,9 @@ class Solution:
             r..
 
         __ node.val __ x:
-            self.pi.a..(pi)
-            self.depths.a..(depth)
+            pi.a..(pi)
+            depths.a..(depth)
             r..
 
-        self.dfs(node, node.left, x, depth + 1)
-        self.dfs(node, node.right, x, depth + 1)
+        dfs(node, node.left, x, depth + 1)
+        dfs(node, node.right, x, depth + 1)

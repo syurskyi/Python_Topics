@@ -4,7 +4,7 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ reverseWords(self, s):
         """
         :type s: str
@@ -14,10 +14,10 @@ class Solution(object):
         prev = 0
         ___ i, c __ e..(s):
             __ c __ ' ':
-                tmpRes = self.reverse(s, prev, i-1)
+                tmpRes = reverse(s, prev, i-1)
                 res += tmpRes + ' '
                 prev = i+1
-        tmpRes = self.reverse(s, prev, l..(s)-1)
+        tmpRes = reverse(s, prev, l..(s)-1)
         res += tmpRes
         r.. res
     

@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findLadders(self, beginWord, endWord, wordlist):
     """
     :type beginWord: str

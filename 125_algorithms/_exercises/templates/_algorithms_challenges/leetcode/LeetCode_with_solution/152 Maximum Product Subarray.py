@@ -7,7 +7,7 @@ the contiguous subarray [2,3] has the largest product = 6
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxProduct_oneline(self, nums):
         r.. max(reduce(l.... A, n: [max(A), m..(n, A[1]*n, A[2]*n), max(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
 

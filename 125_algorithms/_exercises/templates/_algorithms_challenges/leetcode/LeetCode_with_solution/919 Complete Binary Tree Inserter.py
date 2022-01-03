@@ -31,18 +31,18 @@ Every value of a given or inserted node is between 0 and 5000.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ collections _______ deque
 
 
-class CBTInserter:
-    ___ __init__(self, root: TreeNode):
+c_ CBTInserter:
+    ___ - , root: TreeNode):
         """
         Maintain a dequeue of insertion candidates
         Insertion candidates are non-full nodes (superset of leaf nodes)
@@ -51,8 +51,8 @@ class CBTInserter:
         During insertion, insert the node to the first insertion candidate's
         child. Then, the inserting node is the last in the candidate queue
         """
-        self.candidates = deque()
-        self.root = root
+        candidates = deque()
+        root = root
         q = [root]  # can also use deque
         w.... q:
             cur_q    # list
@@ -63,11 +63,11 @@ class CBTInserter:
                     cur_q.a..(e.right)
                 __ n.. e.left o. n.. e.right:
                     # non-full node
-                    self.candidates.a..(e)
+                    candidates.a..(e)
             q = cur_q
 
     ___ insert(self, v: int) -> int:
-        pi = self.candidates[0]
+        pi = candidates[0]
         node = TreeNode(v)
         __ n.. pi.left:
             pi.left = node
@@ -75,13 +75,13 @@ class CBTInserter:
             pi.right = node
 
         __ pi.left a.. pi.right:
-            self.candidates.popleft()
+            candidates.popleft()
 
-        self.candidates.a..(node)
+        candidates.a..(node)
         r.. pi.val
 
     ___ get_root(self) -> TreeNode:
-        r.. self.root
+        r.. root
 
 
 # Your CBTInserter object will be instantiated and called as such:

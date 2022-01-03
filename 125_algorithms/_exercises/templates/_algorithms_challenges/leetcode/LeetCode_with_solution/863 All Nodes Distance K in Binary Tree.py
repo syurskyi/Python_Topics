@@ -34,14 +34,14 @@ The target node is a node in the tree.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:
         """
         similar to SolutionComplicated
@@ -50,7 +50,7 @@ class Solution:
         O(N), vist each node 2 times
         """
         ret    # list
-        self.ancestor_dist(root, K, target, ret)
+        ancestor_dist(root, K, target, ret)
         r.. ret
 
     ___ dfs_down(self, node, d, ret):
@@ -62,8 +62,8 @@ class Solution:
         __ d __ 0:
             ret.a..(node.val)
         ____:
-            self.dfs_down(node.left, d - 1, ret)
-            self.dfs_down(node.right, d - 1, ret)
+            dfs_down(node.left, d - 1, ret)
+            dfs_down(node.right, d - 1, ret)
 
     ___ ancestor_dist(self, node, K, target, ret):
         __ n.. node:
@@ -71,22 +71,22 @@ class Solution:
 
         __ node.val __ target.val:
             # d = 0
-            self.dfs_down(node, K, ret)
+            dfs_down(node, K, ret)
             r.. 0
         ____:
-            l = self.ancestor_dist(node.left, K, target, ret)
-            r = self.ancestor_dist(node.right, K, target, ret)
+            l = ancestor_dist(node.left, K, target, ret)
+            r = ancestor_dist(node.right, K, target, ret)
             d = m..(l, r) + 1
             __ d __ K:
                 ret.a..(node.val)
             ____ l __ float('inf'):
-                self.dfs_down(node.left, K - d - 1, ret)
+                dfs_down(node.left, K - d - 1, ret)
             ____:  # r == float('inf')
-                self.dfs_down(node.right, K - d - 1, ret)
+                dfs_down(node.right, K - d - 1, ret)
             r.. d
 
 
-class SolutionComplicated:
+c_ SolutionComplicated:
     ___ distanceK(self, root: TreeNode, target: TreeNode, K: int) -> List[int]:
         """
         break the problem into two part
@@ -94,10 +94,10 @@ class SolutionComplicated:
         2nd problem:  mark parent, ancestor path length
         """
         ret    # list
-        self.dfs1(target, K, ret)
-        hm = {}
-        self.ancestor_dist(root, target, hm)
-        self.dfs2(root, target, K, float("inf"), hm, ret)
+        dfs1(target, K, ret)
+        hm    # dict
+        ancestor_dist(root, target, hm)
+        dfs2(root, target, K, float("inf"), hm, ret)
         r.. ret
 
     ___ dfs1(self, node, K, ret):
@@ -108,8 +108,8 @@ class SolutionComplicated:
         __ K __ 0:
             ret.a..(node.val)
         ____:
-            self.dfs1(node.left, K-1, ret)
-            self.dfs1(node.right, K-1, ret)
+            dfs1(node.left, K-1, ret)
+            dfs1(node.right, K-1, ret)
 
     ___ ancestor_dist(self, node, target, hm):
         __ n.. node:
@@ -118,8 +118,8 @@ class SolutionComplicated:
         __ node.val __ target.val:
             hm[node.val] = 0
         ____:
-            left = self.ancestor_dist(node.left, target, hm)
-            right = self.ancestor_dist(node.right, target, hm)
+            left = ancestor_dist(node.left, target, hm)
+            right = ancestor_dist(node.right, target, hm)
             hm[node.val] = m..(left, right) + 1
 
         r.. hm[node.val]
@@ -136,5 +136,5 @@ class SolutionComplicated:
         __ dist __ K:
             ret.a..(node.val)
 
-        self.dfs2(node.left, target, K, dist + 1, hm, ret)
-        self.dfs2(node.right, target, K, dist + 1, hm, ret)
+        dfs2(node.left, target, K, dist + 1, hm, ret)
+        dfs2(node.right, target, K, dist + 1, hm, ret)

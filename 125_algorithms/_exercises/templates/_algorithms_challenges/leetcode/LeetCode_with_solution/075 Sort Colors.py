@@ -17,7 +17,7 @@ and followed by 2's.
 Could you come up with an one-pass algorithm using only constant space?
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ sortColors(self, A):
         """
         Algorithm: pivoting. Similar concept as QuickSort

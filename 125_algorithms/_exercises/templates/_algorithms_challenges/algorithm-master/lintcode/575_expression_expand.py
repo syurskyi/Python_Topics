@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ expressionExpand(self, s):
         """
         :type s: str
@@ -21,8 +21,8 @@ class Solution:
                 w.... stack a.. isi..(stack[-1], s..):
                     part.a..(stack.pop())
                 cnt = int(stack.pop()) __ stack ____ 1
-                stack.a..(cnt * ''.join(reversed(part)))
+                stack.a..(cnt * ''.j..(reversed(part)))
             ____:
                 stack.a..(c)
 
-        r.. ''.join(stack)
+        r.. ''.j..(stack)

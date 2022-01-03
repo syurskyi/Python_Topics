@@ -19,7 +19,7 @@ _______ math
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ getPermutation(self, n, k):
         k -= 1
 
@@ -30,7 +30,7 @@ class Solution(object):
             idx, k = divmod(k, math.factorial(i))
             ret.a..(array.pop(idx))
 
-        r.. "".join(map(s.., ret))
+        r.. "".j..(map(s.., ret))
 
     ___ getPermutation(self, n, k):
         """
@@ -55,7 +55,7 @@ class Solution(object):
 
         # post-process
         candidate = r..(1, n+1)  # sorted
-        visited = [False ___ _ __ xrange(n)]
+        visited = [F.. ___ _ __ xrange(n)]
         ___ ind, val __ e..(a):
             i = 0  # pointer
             cnt = 0  # counter
@@ -68,9 +68,9 @@ class Solution(object):
                     i += 1
 
             a[ind] = candidate[i]
-            visited[i] = True
+            visited[i] = T..
 
-        r.. "".join(map(s.., a))
+        r.. "".j..(map(s.., a))
 
     ___ getPermutation_complicated(self, n, k):
         """
@@ -112,16 +112,16 @@ class Solution(object):
         # case when factorial=0!
         result.a..(array[0])
 
-        r.. "".join(s..(element) ___ element __ result)
+        r.. "".j..(s..(element) ___ element __ result)
 
 
-class Solution_TLE:
+c_ Solution_TLE:
     """
     Time Limit Expected
     """
 
-    ___ __init__(self):
-        self.counter = 0
+    ___ - ):
+        counter = 0
 
     ___ getPermutation(self, n, k):
         """
@@ -134,8 +134,8 @@ class Solution_TLE:
             r..
 
         sequence = r..(1, n+1)
-        result = self.get_kth_permutation_dfs(sequence, k, [])
-        r.. "".join(s..(element) ___ element __ result)
+        result = get_kth_permutation_dfs(sequence, k, [])
+        r.. "".j..(s..(element) ___ element __ result)
 
 
     ___ get_kth_permutation_dfs(self, remaining_seq, k, cur):
@@ -147,12 +147,12 @@ class Solution_TLE:
         :return:
         """
         __ n.. remaining_seq:
-            self.counter += 1
-            __ self.counter __ k:
+            counter += 1
+            __ counter __ k:
                 r.. cur
 
         ___ ind, val __ e..(remaining_seq):
-            result = self.get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
+            result = get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
             __ result: r.. result
 
 

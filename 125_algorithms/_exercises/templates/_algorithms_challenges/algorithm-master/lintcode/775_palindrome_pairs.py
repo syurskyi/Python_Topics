@@ -6,7 +6,7 @@ Main Concept:
 1. The <= in for (int j=0; j<=words[i].length(); j++) is aimed to handle empty string in the input. Consider the test case of [“a”, “”];
 2. Since we now use <= in for (int j=0; j<=words[i].length(); j++) instead of <. There may be duplicates in the output (consider test case [“abcd”, “dcba”]). Therefore I put a str2.length()!=0 to avoid duplicates.
 """
-class Solution:
+c_ Solution:
     ___ palindromePairs(self, words):
         """
         :type words: list[str]
@@ -18,7 +18,7 @@ class Solution:
             r.. ans
 
         n = l..(words)
-        w2i = {}
+        w2i    # dict
 
         ___ i __ r..(n):
             w2i[words[i]] = i
@@ -27,16 +27,16 @@ class Solution:
             ___ j __ r..(l..(words[i]) + 1):
                 s = words[i][:j]
                 t = words[i][j:]
-                _s = ''.join(reversed(s))
-                _t = ''.join(reversed(t))
+                _s = ''.j..(reversed(s))
+                _t = ''.j..(reversed(t))
 
-                __ (self.is_palindrome(s) a..
+                __ (is_palindrome(s) a..
                     _t __ w2i a..
                     w2i[_t] != i
                 ):
                     ans.a..([w2i[_t], i])
 
-                __ (self.is_palindrome(t) a..
+                __ (is_palindrome(t) a..
                     l..(t) != 0 a..  # since len(word) + 1, may empty here
                     _s __ w2i a..
                     w2i[_s] != i
@@ -51,18 +51,18 @@ class Solution:
 
         w.... left < right:
             __ word[left] != word[right]:
-                r.. False
+                r.. F..
 
             left += 1
             right -= 1
 
-        r.. True
+        r.. T..
 
 
 """
 TLE: Brute Force
 """
-class Solution:
+c_ Solution:
     ___ palindromePairs(self, words):
         """
         :type words: list[str]
@@ -77,10 +77,10 @@ class Solution:
 
         ___ i __ r..(n):
             ___ j __ r..(i):
-                __ self.is_palindrome(words, i, j):
+                __ is_palindrome(words, i, j):
                     ans.a..([i, j])
 
-                __ self.is_palindrome(words, j, i):
+                __ is_palindrome(words, j, i):
                     ans.a..([j, i])
 
         r.. ans
@@ -93,22 +93,22 @@ class Solution:
 
         w.... left < right:
             __ left >= a a.. t[left - a] != t[right - a]:
-                r.. False
+                r.. F..
             ____ right < a a.. s[left] != s[right]:
-                r.. False
+                r.. F..
             ____ left < a a.. right >= a a.. s[left] != t[right - a]:
-                r.. False
+                r.. F..
 
             left += 1
             right -= 1
 
-        r.. True
+        r.. T..
 
 
 """
 TLE: Brute Force
 """
-class Solution:
+c_ Solution:
     ___ palindromePairs(self, words):
         """
         :type words: list[str]
@@ -126,7 +126,7 @@ class Solution:
                 __ i __ j:
                     continue
 
-                __ self.is_palindrome(words[i] + words[j]):
+                __ is_palindrome(words[i] + words[j]):
                     ans.a..([i, j])
 
         r.. ans
@@ -137,9 +137,9 @@ class Solution:
 
         w.... left < right:
             __ s[left] != s[right]:
-                r.. False
+                r.. F..
 
             left += 1
             right -= 1
 
-        r.. True
+        r.. T..

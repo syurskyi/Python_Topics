@@ -3,7 +3,7 @@ Created on Apr 4, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxChunksToSorted(self, arr):
         """
         :type arr: List[int]
@@ -11,13 +11,13 @@ class Solution(object):
         """
         pass
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ arr __ testCases:
             print('arr: %s' % arr)
-            result = self.maxChunksToSorted(arr)
+            result = maxChunksToSorted(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

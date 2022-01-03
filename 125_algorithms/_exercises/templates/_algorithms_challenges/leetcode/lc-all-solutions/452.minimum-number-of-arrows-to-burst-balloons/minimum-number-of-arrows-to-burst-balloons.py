@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findMinArrowShots(self, points):
     """
     :type points: List[List[int]]

@@ -1,7 +1,7 @@
 _______ bisect
 _______ random
 
-class Solution:
+c_ Solution:
     """
     @param {int} n a positive integer
     @param {int} k a positive integer
@@ -12,8 +12,8 @@ class Solution:
         solution = cls()
         solution.n = n
         solution.k = k
-        solution.p2l = {} # point to location
-        solution.l2p = {} # location to points
+        solution.p2l    # dict # point to location
+        solution.l2p    # dict # location to points
         r.. solution
 
     """
@@ -21,13 +21,13 @@ class Solution:
     @return: a list of shard ids
     """
     ___ addMachine(self, machine_id):
-        item = self.l2p[machine_id]    # list
+        item = l2p[machine_id]    # list
         point = -1
-        ___ i __ r..(self.k):
-            point = random.randint(0, self.n - 1)
-            w.... point __ self.p2l:
-                point = random.randint(0, self.n - 1)
-            self.p2l[point] = machine_id
+        ___ i __ r..(k):
+            point = random.randint(0, n - 1)
+            w.... point __ p2l:
+                point = random.randint(0, n - 1)
+            p2l[point] = machine_id
             item.a..(point)
         item.s..()
         r.. item
@@ -37,10 +37,10 @@ class Solution:
     @return: A machine id
     """
     ___ getMachineIdByHashCode(self, hashcode):
-        points = s..(self.p2l.keys())
+        points = s..(p2l.keys())
         index = bisect.bisect_left(points, hashcode) % l..(points)
         # # counterclockwise
         # index = bisect.bisect(points, hashcode) - 1
         # if index < 0:
         #     index = len(points) - 1
-        r.. self.p2l[points[index]]
+        r.. p2l[points[index]]

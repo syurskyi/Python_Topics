@@ -3,7 +3,7 @@ ___ get_weekdays(calendar_output):
        keys are int days and values are the 2 letter weekdays (Su Mo Tu ...)"""
     
 
-    mapping = {}
+    mapping    # dict
     ___ i,line __ e..(calendar_output.s...splitlines()):
         __ i __ 0:
             continue

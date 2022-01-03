@@ -1,4 +1,4 @@
-class Binary:
+c_ Binary:
     VALID_CHARS = set("01")
 
     @classmethod

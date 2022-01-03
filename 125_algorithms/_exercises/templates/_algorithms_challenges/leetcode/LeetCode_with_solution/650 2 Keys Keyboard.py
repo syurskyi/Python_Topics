@@ -28,7 +28,7 @@ The n will be in the range [1, 1000].
 """
 
 
-class Solution:
+c_ Solution:
     ___ minSteps(self, n: int) -> int:
         """
         Prime numger

@@ -4,7 +4,7 @@ Created on Mar 17, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxProduct(self, words):
         __ n.. words: r.. 0
         arr = [0]*l..(words)
@@ -18,7 +18,7 @@ class Solution(object):
                     result = max(result, l..(words[i])*l..(words[j]))
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["abcw", "baz", "foo", "bar", "xtfn", "abcdef"],
             ["a", "ab", "abc", "d", "cd", "bcd", "abcd"],
@@ -26,7 +26,7 @@ class Solution(object):
         ]
         ___ words __ testCases:
             print('words: %s' % (words))
-            result = self.maxProduct(words)
+            result = maxProduct(words)
             print('result: %s' % (result))
             print('-='*20+'-')
 

@@ -5,55 +5,55 @@ support the peek() operation -- it essentially peek() at the element that will b
 __author__ = 'Daniel'
 
 
-class Iterator(object):
-    ___ __init__(self, nums):
+c_ Iterator(object):
+    ___ - , nums):
         """
         Initializes an iterator object to the beginning of a list.
         :type nums: List[int]
         """
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         Returns true if the iteration has more elements.
         :rtype: bool
         """
 
-    ___ next(self):
+    ___ next
         """
         Returns the next element in the iteration.
         :rtype: int
         """
 
 
-class PeekingIterator(object):
-    ___ __init__(self, iterator):
+c_ PeekingIterator(object):
+    ___ - , iterator):
         """
         Initialize your data structure here.
         :type iterator: Iterator
         """
-        self.nxt = N..
-        self.iterator = iterator
+        nxt = N..
+        iterator = iterator
 
-    ___ peek(self):
+    ___ peek
         """
         Returns the next element in the iteration without advancing the iterator.
         :rtype: int
         """
-        __ n.. self.nxt:
-            self.nxt = self.iterator.next()
+        __ n.. nxt:
+            nxt = iterator.next()
 
-        r.. self.nxt
+        r.. nxt
 
-    ___ next(self):
+    ___ next
         """
         :rtype: int
         """
-        ret = self.peek()
-        self.nxt = N..
+        ret = peek()
+        nxt = N..
         r.. ret
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         :rtype: bool
         """
-        r.. self.nxt __ n.. N.. o. self.iterator.hasNext()
+        r.. nxt __ n.. N.. o. iterator.hasNext()

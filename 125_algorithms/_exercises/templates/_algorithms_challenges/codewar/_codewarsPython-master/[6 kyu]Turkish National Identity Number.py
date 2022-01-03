@@ -1,13 +1,13 @@
 ___ check_valid_tr_number(number):
     __ l..(s..(number)) != 11 o. any([s..(c) n.. __ '0123456789' ___ c __ s..(number)]):
-        r.. False
+        r.. F..
     sum_13579 = s..([int(number[n]) * 7 ___ n __ r..(0,9) __ n __ (0,2,4,6,8)])
     sum_2468 = s..([int(number[n]) ___ n __ r..(0,9) __ n __ (1,3,5,7)])
     __ (sum_13579-sum_2468) % 10 != int(number[9]):
-        r.. False
+        r.. F..
     __ s..([int(number[n]) ___ n __ r..(10)]) % 10 != int(number[10]):
-        r.. False
-    r.. True
+        r.. F..
+    r.. T..
 
 
 print(check_valid_tr_number('10167994524'))    

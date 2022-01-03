@@ -30,7 +30,7 @@ ___ generate_improved_xmas_tree(rows=10):
 
       xmas_tree.a..((product * TRUNK).center(max_length))
    
-   r.. "\n".join(xmas_tree)
+   r.. "\n".j..(xmas_tree)
 
 __ __name__ __ "__main__":
   print(generate_improved_xmas_tree())

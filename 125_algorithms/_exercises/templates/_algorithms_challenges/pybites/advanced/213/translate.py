@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 
 ___ fix_translation(org_text, trans_text):
@@ -12,8 +12,8 @@ ___ fix_translation(org_text, trans_text):
         opening = '<' + tag + '>'
         closing = '</' + tag + '>'
         string = f"{opening}([\W\w]+?){closing}"
-        original = re.findall(string,org_text)
-        trans = re.findall(string,trans_text)
+        original = __.findall(string,org_text)
+        trans = __.findall(string,trans_text)
         print(original)
         print(trans)
 

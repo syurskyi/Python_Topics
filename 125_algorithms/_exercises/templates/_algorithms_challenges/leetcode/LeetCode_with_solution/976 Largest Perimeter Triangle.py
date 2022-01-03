@@ -31,7 +31,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ largestPerimeter(self, A: List[int]) -> int:
         """
         sort and scanning from right

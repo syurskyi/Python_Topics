@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ canMeasureWater(self, x, y, z):
     """
     :type x: int
@@ -7,18 +7,18 @@ class Solution(object):
     :rtype: bool
     """
     __ z > x + y:
-      r.. False
+      r.. F..
     __ z __ 0:
-      r.. True
+      r.. T..
     __ x __ z o. y __ z o. x + y __ z:
-      r.. True
+      r.. T..
     __ m..(x, y) __ 0:
-      r.. True __ max(x, y) __ z ____ False
+      r.. T.. __ max(x, y) __ z ____ F..
     n = m..(x, y)
     w.... n > 1:
       __ x % n __ 0 a.. y % n __ 0:
         break
       n -= 1
     __ z % n __ 0:
-      r.. True
-    r.. False
+      r.. T..
+    r.. F..

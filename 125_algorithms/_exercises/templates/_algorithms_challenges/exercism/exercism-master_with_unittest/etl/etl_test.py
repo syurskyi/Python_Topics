@@ -3,20 +3,20 @@ _______ unittest
 _______ etl
 
 
-class TransformTest(unittest.TestCase):
-    ___ test_transform_one_value(self):
+c_ TransformTest(unittest.TestCase):
+    ___ test_transform_one_value
         old = {1: ['WORLD']}
         expected = {'world': 1}
 
-        self.assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old))
 
-    ___ test_transform_more_values(self):
+    ___ test_transform_more_values
         old = {1: ['WORLD', 'GSCHOOLERS']}
         expected = {'world': 1, 'gschoolers': 1}
 
-        self.assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old))
 
-    ___ test_more_keys(self):
+    ___ test_more_keys
         old = {1: ['APPLE', 'ARTICHOKE'], 2: ['BOAT', 'BALLERINA']}
         expected = {
             'apple': 1,
@@ -25,9 +25,9 @@ class TransformTest(unittest.TestCase):
             'ballerina': 2
         }
 
-        self.assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old))
 
-    ___ test_full_dataset(self):
+    ___ test_full_dataset
         old = {
             1: "AEIOULNRST",
             2: "DG",
@@ -47,7 +47,7 @@ class TransformTest(unittest.TestCase):
             "z": 10
         }
 
-        self.assertEqual(expected, etl.transform(old))
+        assertEqual(expected, etl.transform(old))
 
 
 __ __name__ __ '__main__':

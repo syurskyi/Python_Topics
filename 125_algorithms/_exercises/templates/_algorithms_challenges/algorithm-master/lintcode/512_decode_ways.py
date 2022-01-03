@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: s: a string,  encoded message
     @return: an integer, the number of ways decoding

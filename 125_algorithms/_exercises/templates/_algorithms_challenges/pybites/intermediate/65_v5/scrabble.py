@@ -3,11 +3,11 @@ _______ os
 _______ urllib.request
 
 # PREWORK
-DICTIONARY = os.path.join('/tmp', 'dictionary.txt')
+DICTIONARY = os.path.j..('/tmp', 'dictionary.txt')
 urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 with open(DICTIONARY) as f:
-    dictionary = set([word.s...lower() ___ word __ f.read().s.. ])
+    dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
 
 
 ___ get_possible_dict_words(draw):
@@ -20,4 +20,4 @@ ___ get_possible_dict_words(draw):
 ___ _get_permutations_draw(draw):
     """Helper to get all permutations of a draw (list of letters), hint:
        use itertools.permutations (order of letters matters)"""
-    r.. [''.join(x).lower() ___ r __ r..(l..(draw)) ___ x __ i...permutations(draw, r + 1)]
+    r.. [''.j..(x).l.. ___ r __ r..(l..(draw)) ___ x __ i...permutations(draw, r + 1)]

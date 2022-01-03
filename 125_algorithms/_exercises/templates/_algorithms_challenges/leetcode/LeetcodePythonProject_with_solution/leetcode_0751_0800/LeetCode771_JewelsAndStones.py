@@ -3,7 +3,7 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numJewelsInStones(self, J, S):
         """
         :type J: str
@@ -18,7 +18,7 @@ class Solution(object):
                 res += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'aA',
@@ -32,7 +32,7 @@ class Solution(object):
         ___ j, s __ testCases:
             print('j: %s' % j)
             print('s: %s' % s)
-            result = self.numJewelsInStones(j, s)
+            result = numJewelsInStones(j, s)
             print('result: %s' % result)
             print('-='*30+'-')
 

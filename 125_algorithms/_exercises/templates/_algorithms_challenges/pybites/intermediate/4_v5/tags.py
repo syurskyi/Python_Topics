@@ -3,18 +3,18 @@ ____ collections _______ Counter
 _______ urllib.request
 
 # prep
-tempfile = os.path.join('/tmp', 'feed')
+tempfile = os.path.j..('/tmp', 'feed')
 urllib.request.urlretrieve('http://bit.ly/2zD8d8b', tempfile)
 
 with open(tempfile) as f:
-    content = f.read().lower()
+    content = f.read().l..
 
 # start coding
-_______ re
+_______ __
 
 
 ___ get_pybites_top_tags(n=10):
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
-    words = re.findall(r'<category>(\w+)</category>', content)
+    words = __.findall(r'<category>(\w+)</category>', content)
     r.. Counter(words).most_common(10)

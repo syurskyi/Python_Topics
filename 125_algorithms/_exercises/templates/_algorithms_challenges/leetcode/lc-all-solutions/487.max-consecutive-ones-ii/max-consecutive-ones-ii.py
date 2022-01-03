@@ -1,8 +1,8 @@
-class Solution(object):
-  ___ __init__(self):
-    self.ans = 0
-    self.count = 0
-    self.lastCount = 0
+c_ Solution(object):
+  ___ - ):
+    ans = 0
+    count = 0
+    lastCount = 0
 
   ___ findMaxConsecutiveOnes(self, nums):
     """
@@ -10,16 +10,16 @@ class Solution(object):
     :rtype: int
     """
     ___ num __ nums:
-      self.readNum(num)  # stream the input
-    r.. self.ans
+      readNum(num)  # stream the input
+    r.. ans
 
   ___ readNum(self, num):
     """
     :type nums: int
     """
     __ num __ 1:
-      self.count += 1
+      count += 1
     ____:
-      self.count = self.count - self.lastCount + 1
-      self.lastCount = self.count
-    self.ans = max(self.ans, self.count)
+      count = count - lastCount + 1
+      lastCount = count
+    ans = max(ans, count)

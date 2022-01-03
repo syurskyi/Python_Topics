@@ -24,7 +24,7 @@ Do not use the eval built-in library function.
 """
 
 
-class Solution:
+c_ Solution:
     ___ calculate(self, s: s..) -> int:
         """
         No brackets. Look at previous operand and operator, when finishing

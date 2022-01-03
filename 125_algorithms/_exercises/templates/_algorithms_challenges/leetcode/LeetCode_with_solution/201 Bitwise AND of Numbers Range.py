@@ -6,7 +6,7 @@ For example, given the range [5, 7], you should return 4.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ rangeBitwiseAnd(self, m, n):
         """
         Brute force O(N), which is suitable for all bit operations not just AND.

@@ -3,7 +3,7 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ allPathsSourceTarget(self, graph):
         """
         :type graph: List[List[int]]
@@ -21,12 +21,12 @@ class Solution(object):
                     queue.a..(path + [node])
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,2], [3], [3], []],
         ]
         ___ graph __ testCases:
-            result = self.allPathsSourceTarget(graph)
+            result = allPathsSourceTarget(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 

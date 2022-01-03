@@ -12,7 +12,7 @@ Examples:
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ removeInvalidParentheses(self, s):
         """
         Brute force: BFS and then validate
@@ -23,9 +23,9 @@ class Solution(object):
         :type s: str
         :rtype: List[str]
         """
-        rmcnt = self.minrm(s)
+        rmcnt = minrm(s)
         ret    # list
-        self.dfs(s, "", 0, N.., 0, rmcnt, ret)
+        dfs(s, "", 0, N.., 0, rmcnt, ret)
         r.. ret
 
     ___ minrm(self, s):
@@ -67,15 +67,15 @@ class Solution(object):
             r..
 
         __ s[i] n.. __ ("(", ")"):  # skip non-parenthesis
-            self.dfs(s, cur+s[i], left, N.., i+1, rmcnt, ret)
+            dfs(s, cur+s[i], left, N.., i+1, rmcnt, ret)
         ____:
             __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
                 w.... i < l..(s) a.. pi a.. pi __ s[i]: i, rmcnt = i+1, rmcnt-1
-                self.dfs(s, cur, left, pi, i, rmcnt, ret)
+                dfs(s, cur, left, pi, i, rmcnt, ret)
             ____:
-                self.dfs(s, cur, left, s[i], i+1, rmcnt-1, ret)
+                dfs(s, cur, left, s[i], i+1, rmcnt-1, ret)
                 L = left+1 __ s[i] __ "(" ____ left-1  # consume "("
-                self.dfs(s, cur+s[i], L, N.., i+1, rmcnt, ret)  # put
+                dfs(s, cur+s[i], L, N.., i+1, rmcnt, ret)  # put
 
 
 __ __name__ __ "__main__":

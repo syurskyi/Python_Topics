@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ isSameTree(self, p, q):
     """
     :type p: TreeNode
@@ -14,4 +14,4 @@ class Solution(object):
     """
     __ n.. p o. n.. q:
       r.. p __ q
-    r.. p.val __ q.val a.. self.isSameTree(p.left, q.left) a.. self.isSameTree(p.right, q.right)
+    r.. p.val __ q.val a.. isSameTree(p.left, q.left) a.. isSameTree(p.right, q.right)

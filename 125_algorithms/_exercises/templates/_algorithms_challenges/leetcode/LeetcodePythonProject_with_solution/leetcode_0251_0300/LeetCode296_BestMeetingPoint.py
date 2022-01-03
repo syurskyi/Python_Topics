@@ -4,7 +4,7 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minTotalDistance(self, grid):
         m, n = l..(grid), l..(grid[0])
         rows, cols    # list, []
@@ -21,7 +21,7 @@ class Solution(object):
             sumVal += abs(col - cols[l..(cols)//2])
         r.. sumVal
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 '10001',
@@ -32,7 +32,7 @@ class Solution(object):
         ___ grid __ testCases:
             grid = [[int(x) ___ x __ l] ___ l __ grid]
             print('grid: %s' % (grid))
-            result = self.minTotalDistance(grid)
+            result = minTotalDistance(grid)
             print('result: %s' % (result))
             print('-='*20 + '-')
 

@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 EMAIL_HEADER = """Return-Path: <bounces+5555-7602-redacted-info>
 ...
@@ -32,5 +32,5 @@ ___ get_email_details(header: s..) -> d..:
                 ^Subject:\s*(?P<subject>.*)$
                 (?:.*\n)*
                 ^Date:\s*(?P<date>.*?)\s+[-+]"""
-    results = re.search(regex, header, re.MULTILINE | re.VERBOSE)
+    results = __.s..(regex, header, __.MULTILINE | __.VERBOSE)
     r.. results.groupdict() __ results __ n.. N.. ____ results

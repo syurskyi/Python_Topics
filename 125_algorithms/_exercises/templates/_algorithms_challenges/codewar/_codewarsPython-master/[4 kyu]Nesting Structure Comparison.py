@@ -1,24 +1,24 @@
 ___ same_structure_as(original,other):
-    __ type(original) __ ('str','int') a.. type(other) __ ('str','int'):
-        __ ''.join(map(s..,original)) __ ''.join(map(s..,other)):
-            r.. True
-        __ ''.join(map(s..,original)) __ ''.join(map(s..,other))[::-1]:
-            r.. True
+    __ t..(original) __ ('str','int') a.. t..(other) __ ('str','int'):
+        __ ''.j..(map(s..,original)) __ ''.j..(map(s..,other)):
+            r.. T..
+        __ ''.j..(map(s..,original)) __ ''.j..(map(s..,other))[::-1]:
+            r.. T..
         ____:
-            r..  False
+            r..  F..
 
-    __ type(original) != type(other):
-        r.. False
+    __ t..(original) != t..(other):
+        r.. F..
 
     __ l..(original) != l..(other):
-        r.. False
+        r.. F..
     ___ ori,oth __ z..(original,other):
-        __ type(ori) != type(oth):
-            r.. False
-        ____ type(ori) __ type(oth) a.. isi..(ori,l..):
+        __ t..(ori) != t..(oth):
+            r.. F..
+        ____ t..(ori) __ t..(oth) a.. isi..(ori,l..):
             __ n.. same_structure_as(ori,oth) o. l..(ori) != l..(oth):
-                r.. False
-    r.. True
+                r.. F..
+    r.. T..
 
 
 print(same_structure_as([1,[1,1]],[2,[2,2],[2,3]]))

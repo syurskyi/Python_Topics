@@ -3,7 +3,7 @@ Created on Oct 15, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ flipLights(self, n, m):
         """
         :type n: int
@@ -19,7 +19,7 @@ class Solution(object):
         __ m >= 3: r.. 8
         r.. 8
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 1,
@@ -37,7 +37,7 @@ class Solution(object):
         ___ n, m __ testCases:
             print('n: %s' % n)
             print('m: %s' % m)
-            result = self.flipLights(n, m)
+            result = flipLights(n, m)
             print('result: %s' % result)
             print('-='*30+'-')
 

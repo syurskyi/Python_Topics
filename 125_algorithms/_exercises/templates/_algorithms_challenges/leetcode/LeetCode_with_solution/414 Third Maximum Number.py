@@ -8,7 +8,7 @@ __author__ = 'Danyang'
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ thirdMax(self, nums):
         """
         It is an easy question but error prone:

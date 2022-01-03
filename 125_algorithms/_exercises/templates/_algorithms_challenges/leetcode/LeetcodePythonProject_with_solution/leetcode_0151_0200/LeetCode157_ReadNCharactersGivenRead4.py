@@ -9,7 +9,7 @@ Created on May 23, 2018
 ___ read4(buf):
     pass
 
-class Solution(object):
+c_ Solution(object):
     ___ read(self, buf, n):
         """
         :type buf: Destination buffer (List[str])

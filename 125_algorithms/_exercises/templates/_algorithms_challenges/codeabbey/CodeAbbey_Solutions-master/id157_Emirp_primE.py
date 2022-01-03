@@ -14,12 +14,12 @@ ___ gen_primes(limit=300000000):
     global semirp
 
     # Sieve of Eratosthenes
-    sieve = [True] * (limit + 1)
+    sieve = [T..] * (limit + 1)
     ___ num __ r..(2, limit + 1):
         __ sieve[num]:
            primes.a..(num)
            ___ i __ r..(num * num, limit + 1, num):
-               sieve[i] = False
+               sieve[i] = F..
 
     # Find reversable primes
     ___ prime __ primes:
@@ -30,5 +30,5 @@ ___ gen_primes(limit=300000000):
     ___ entry __ data:
         answer.a..(s..(find_answer(entry)))
 
-    print(' '.join(answer))
+    print(' '.j..(answer))
 gen_primes()

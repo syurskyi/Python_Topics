@@ -1,6 +1,6 @@
 _______ os
 _______ pickle
-_______ re
+_______ __
 _______ urllib.request
 ____ collections _______ n..
 ____ d__ _______ t..
@@ -9,7 +9,7 @@ ____ d__ _______ t..
 # download pickle file and store it in a tmp file
 pkl_file = 'pycon_videos.pkl'
 data = 'http://projects.bobbelderbos.com/pcc/{}'.f..(pkl_file)
-pycon_videos = os.path.join('/tmp', pkl_file)
+pycon_videos = os.path.j..('/tmp', pkl_file)
 urllib.request.urlretrieve(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
@@ -41,7 +41,7 @@ ___ get_most_popular_talks_by_like_ratio(videos):
     r.. s..(videos, key=_like_ratio)
 
 
-duration_regex = re.compile(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S)?')
+duration_regex = __.c..(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S)?')
 
 
 ___ _vid_time(vid):

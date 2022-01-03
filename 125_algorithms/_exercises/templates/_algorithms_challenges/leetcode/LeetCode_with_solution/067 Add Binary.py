@@ -1,5 +1,5 @@
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ addBinary_builtin(self, a, b):
         """
         Built-in function
@@ -52,7 +52,7 @@ class Solution:
                                 break
 
         b.reverse()
-        r.. "".join(b)  # reversed back
+        r.. "".j..(b)  # reversed back
 
 __ __name____"__main__":
     print Solution().addBinary("11", "1")

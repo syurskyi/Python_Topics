@@ -1,5 +1,5 @@
 ___ get_profile(name, age, *args, **kwargs):
-    return_dict = {}
+    return_dict    # dict
     __ args:
         return_dict['sports'] = s..(l..(args))
     __ (isi..(age, int)) a.. l..(args) <= 5:

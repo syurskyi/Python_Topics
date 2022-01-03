@@ -15,5 +15,5 @@ ___ bulls_and_crows():
                 number_match += 1
             count += 1
         answer.a..('{0}-{1}'.f..(place_match, number_match))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 bulls_and_crows()

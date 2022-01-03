@@ -3,7 +3,7 @@ Created on Oct 15, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findNumberOfLIS(self, nums):
         """
         :type nums: List[int]
@@ -31,7 +31,7 @@ class Solution(object):
                 res = counts[i]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 3, 5, 4, 7],
             [2, 2, 2, 2, 2],
@@ -39,7 +39,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.findNumberOfLIS(nums)
+            result = findNumberOfLIS(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

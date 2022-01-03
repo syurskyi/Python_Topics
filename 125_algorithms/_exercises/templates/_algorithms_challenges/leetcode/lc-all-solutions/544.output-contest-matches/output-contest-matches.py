@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findContestMatch(self, n):
     """
     :type n: int

@@ -32,7 +32,7 @@ ___ get_srt_section_ids(text: s..) -> List[int]:
     sections = (text.s..('\n\n'))
     
 
-    id_to_speed = {}
+    id_to_speed    # dict
     ___ section __ sections:
         parts = section.s..('\n')
 
@@ -45,7 +45,7 @@ ___ get_srt_section_ids(text: s..) -> List[int]:
             hours,minutes,seconds = time.s..(':')
             hours = int(hours)
             minutes = int(hours)
-            seconds = float('.'.join(seconds.s..(',')))
+            seconds = float('.'.j..(seconds.s..(',')))
             td = t..(hours=hours,minutes=minutes,seconds=seconds)
             tds.a..(td)
 

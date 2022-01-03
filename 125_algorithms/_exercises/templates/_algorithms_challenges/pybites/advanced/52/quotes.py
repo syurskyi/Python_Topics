@@ -35,9 +35,9 @@ ___ _quote_exists(existing_quote):
 
     ___ quote __ quotes:
         __ quote['quote'] __ existing_quote['quote'] a.. quote['movie'] __ existing_quote['movie']:
-            r.. True
+            r.. T..
 
-    r.. False
+    r.. F..
 
     
 

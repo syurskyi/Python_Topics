@@ -3,16 +3,16 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ soupServings(self, N):
         """
         :type N: int
         :rtype: float
         """
         n = N
-        hashmap = {}
+        hashmap    # dict
         __ N < 5000:
-            r.. self.helper(hashmap, n, n)
+            r.. helper(hashmap, n, n)
         ____:
             r.. 1
     
@@ -26,19 +26,19 @@ class Solution(object):
         s = s..(a)+':'+s..(b)
         __ s n.. __ hashmap:
             hashmap[s] = 0.25*(
-                    self.helper(hashmap, a-100, b)+\
-                    self.helper(hashmap, a-25, b-75)+\
-                    self.helper(hashmap, a-75, b-25)+\
-                    self.helper(hashmap, a-50, b-50)
+                    helper(hashmap, a-100, b)+\
+                    helper(hashmap, a-25, b-75)+\
+                    helper(hashmap, a-75, b-25)+\
+                    helper(hashmap, a-50, b-50)
                 )
         r.. hashmap[s]
     
-    ___ test(self):
+    ___ test
         testCases = [
             50,
         ]
         ___ n __ testCases:
-            result = self.soupServings(n)
+            result = soupServings(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

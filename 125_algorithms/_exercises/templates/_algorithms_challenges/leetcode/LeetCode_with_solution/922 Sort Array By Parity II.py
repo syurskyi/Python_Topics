@@ -26,7 +26,7 @@ A.length % 2 == 0
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ sortArrayByParityII(self, A: List[int]) -> List[int]:
         even_idx = 0
         ___ odd_idx __ r..(1, l..(A), 2):

@@ -8,15 +8,15 @@ Created on Mar 28, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-class NestedInteger(object):
-    ___ __init__(self, value_ N..
+c_ NestedInteger(object):
+    ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
         Otherwise initializes a single integer equal to value.
         """
         pass
 
-    ___ isInteger(self):
+    ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
@@ -37,7 +37,7 @@ class NestedInteger(object):
         """
         pass
 
-    ___ getInteger(self):
+    ___ getInteger
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
@@ -45,7 +45,7 @@ class NestedInteger(object):
         """
         pass
 
-    ___ getList(self):
+    ___ getList
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -53,7 +53,7 @@ class NestedInteger(object):
         """
         pass
 
-class Solution(object):
+c_ Solution(object):
     ___ depthSumInverse(self, nestedList):
         queue = nestedList
         result = 0

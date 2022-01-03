@@ -1,4 +1,4 @@
-class Codec:
+c_ Codec:
   ___ encode(self, strs):
     """Encodes a list of strings to a single string.
     

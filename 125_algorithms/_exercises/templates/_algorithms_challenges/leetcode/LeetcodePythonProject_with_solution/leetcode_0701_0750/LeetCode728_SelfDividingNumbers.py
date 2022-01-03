@@ -3,7 +3,7 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ selfDividingNumbers(self, left, right):
         """
         :type left: int
@@ -12,7 +12,7 @@ class Solution(object):
         """
         res    # list
         ___ num __ r..(left, right+1):
-            __ self.isSelfDividing(num):
+            __ isSelfDividing(num):
                 res.a..(num)
         r.. res
         
@@ -20,17 +20,17 @@ class Solution(object):
         ___ digit __ s..(num):
             d = int(digit)
             __ d __ 0 o. num%d != 0:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 22],
         ]
         ___ left, right __ testCases:
             print('left: %s' % left)
             print('right: %s' % right)
-            result = self.selfDividingNumbers(left, right)
+            result = selfDividingNumbers(left, right)
             print('result: %s' % result)
             print('-='*30+'-')
 

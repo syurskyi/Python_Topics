@@ -3,7 +3,7 @@ Created on May 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ restoreIpAddresses(self, s):
         """
         :type s: str
@@ -11,12 +11,12 @@ class Solution(object):
         """
         __ l..(s) > 12: r.. []
         res    # list
-        self.helper(res, [], s, 0)
+        helper(res, [], s, 0)
         r.. res
     
     ___ helper(self, res, curr, s, ind):
         __ ind __ l..(s) a.. l..(curr) __ 4:
-            res.a..('.'.join(curr))
+            res.a..('.'.j..(curr))
         __ ind >= l..(s):
             r..
         ___ i __ r..(ind+1, ind+4):
@@ -26,5 +26,5 @@ class Solution(object):
             __ int(sub) > 255:
                 break
             curr.a..(sub)
-            self.helper(res, curr, s, i)
+            helper(res, curr, s, i)
             curr.pop()

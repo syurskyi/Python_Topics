@@ -7,7 +7,7 @@ __author__ = 'Danyang'
 INVALID = -1
 QUEEN = 1
 DEFAULT = 0
-class Solution:
+c_ Solution:
     ___ totalNQueens(self, n):
         """
         backtracking
@@ -16,7 +16,7 @@ class Solution:
         """
         result    # list
         current = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
-        self.backtrack(0, current, result)
+        backtrack(0, current, result)
         r.. l..(result)
 
     ___ backtrack(self, queen_index, current, result):
@@ -66,7 +66,7 @@ class Solution:
                 col = i-m
                 __ 0<=row<n a.. 0<=col<n a.. new_config[row][col]__DEFAULT: new_config[row][col] = INVALID
 
-            self.backtrack(queen_index+1, new_config, result)
+            backtrack(queen_index+1, new_config, result)
 
 
 __ __name____"__main__":

@@ -8,7 +8,7 @@ def read4(buf):
 """
 
 
-class Solution:
+c_ Solution:
     ___ read(self, buf, n):
         """
         :type buf: List[str], Destination buffer

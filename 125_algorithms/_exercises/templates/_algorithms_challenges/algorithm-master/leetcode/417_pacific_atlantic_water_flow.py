@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     BFS
 
@@ -30,8 +30,8 @@ class Solution:
         pvisited = set(pqueue)
         avisited = set(aqueue)
 
-        self.bfs(matrix, pqueue, pvisited)
-        self.bfs(matrix, aqueue, avisited)
+        bfs(matrix, pqueue, pvisited)
+        bfs(matrix, aqueue, avisited)
 
         r.. l..(pvisited & avisited)
 
@@ -57,7 +57,7 @@ class Solution:
                 visited.add((_x, _y))
 
 
-class Solution:
+c_ Solution:
     """
     DFS
     """
@@ -74,12 +74,12 @@ class Solution:
         avisited = set()
 
         ___ x __ r..(m):
-            self.dfs(matrix, x, 0, pvisited)
-            self.dfs(matrix, x, n - 1, avisited)
+            dfs(matrix, x, 0, pvisited)
+            dfs(matrix, x, n - 1, avisited)
 
         ___ y __ r..(n):
-            self.dfs(matrix, 0, y, pvisited)
-            self.dfs(matrix, m - 1, y, avisited)
+            dfs(matrix, 0, y, pvisited)
+            dfs(matrix, m - 1, y, avisited)
 
         r.. l..(pvisited & avisited)
 
@@ -103,4 +103,4 @@ class Solution:
             __ matrix[_x][_y] < matrix[x][y]:
                 continue
 
-            self.dfs(matrix, _x, _y, visited)
+            dfs(matrix, _x, _y, visited)

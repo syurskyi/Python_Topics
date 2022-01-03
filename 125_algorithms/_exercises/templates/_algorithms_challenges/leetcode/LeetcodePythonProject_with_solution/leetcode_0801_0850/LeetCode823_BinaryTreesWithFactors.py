@@ -3,7 +3,7 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numFactoredBinaryTrees(self, A):
         """
         :type A: List[int]
@@ -13,7 +13,7 @@ class Solution(object):
         MOD = 10**9+7
         res = 0
         arr.s..()
-        hashmap = {}
+        hashmap    # dict
         ___ i __ r..(l..(arr)):
             hashmap[arr[i]] = 1
             ___ j __ r..(i):
@@ -23,14 +23,14 @@ class Solution(object):
             res = (res+hashmap[arr[i]])%MOD
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 4],
             [2, 4, 5, 10],
         ]
         ___ arr __ testCases:
             print('arr: %s' % arr)
-            result = self.numFactoredBinaryTrees(arr)
+            result = numFactoredBinaryTrees(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

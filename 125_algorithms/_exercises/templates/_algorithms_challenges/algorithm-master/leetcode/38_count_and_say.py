@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ countAndSay(self, N):
         """
         :type N: int
@@ -24,6 +24,6 @@ class Solution:
                 char = c
 
             _queue.extend((s..(cnt), char))
-            queue, _queue = ''.join(_queue), []
+            queue, _queue = ''.j..(_queue), []
 
         r.. queue

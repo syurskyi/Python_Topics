@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ longestPalindromeSubseq(self, s):
     """
     :type s: str

@@ -14,7 +14,7 @@ The length of A and B will be between 1 and 10000.
 _______ math
 
 
-class Solution:
+c_ Solution:
     ___ repeatedStringMatch(self, A, B):
         r = math.ceil(l..(B) / l..(A))
         ___ count __ (r, r + 1):  # r + 1 when len(B) % len(A) == 0

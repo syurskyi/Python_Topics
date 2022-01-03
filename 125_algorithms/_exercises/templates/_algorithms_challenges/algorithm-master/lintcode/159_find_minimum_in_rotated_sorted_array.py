@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: nums: a rotated sorted array
     @return: the minimum number in the array

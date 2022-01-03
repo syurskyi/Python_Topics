@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ updateBoard(self, board, click):
     """
     :type board: List[List[str]]

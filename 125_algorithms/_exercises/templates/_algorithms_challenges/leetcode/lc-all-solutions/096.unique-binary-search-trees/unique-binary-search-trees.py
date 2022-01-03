@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ _numTrees(self, n):
     """
     :type n: int

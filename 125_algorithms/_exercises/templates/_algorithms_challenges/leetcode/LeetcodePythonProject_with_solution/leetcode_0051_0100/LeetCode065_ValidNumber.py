@@ -3,7 +3,7 @@ Created on Jan 22, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isNumber(self, s):
         """
         :type s: str
@@ -13,29 +13,29 @@ class Solution(object):
         s = s.lstrip('-')
         s = s.lstrip('+')
         i = 0
-        num, dot, exp = False, False, False
+        num, dot, exp = F.., F.., F..
         w.... i < l..(s):
             c = s[i]
             __ c.isdigit():
-                num = True
+                num = T..
             ____ c __ '.':
                 __ exp o. dot:
-                    r.. False
-                dot = True
+                    r.. F..
+                dot = T..
             ____ c __ 'e':
                 __ exp o. n.. num:
-                    r.. False
-                exp = True
-                num = False
+                    r.. F..
+                exp = T..
+                num = F..
             ____ c __ '+' o. c __ '-':
                 __ s[i-1] != 'e':
-                    r.. False
+                    r.. F..
             ____:
-                r.. False
+                r.. F..
             i += 1
         r.. num
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

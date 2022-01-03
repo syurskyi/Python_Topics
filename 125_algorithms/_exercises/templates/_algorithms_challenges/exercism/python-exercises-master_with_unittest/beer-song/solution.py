@@ -7,7 +7,7 @@ ___ song(first, last=0):
 
 
 ___ verse(number):
-    r.. ''.join([
+    r.. ''.j..([
         "%s of beer on the wall, " % _bottles(number).capitalize(),
         "%s of beer.\n" % _bottles(number),
         _action(number),

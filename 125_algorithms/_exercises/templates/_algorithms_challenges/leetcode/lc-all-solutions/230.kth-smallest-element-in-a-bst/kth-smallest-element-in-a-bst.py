@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ kthSmallest(self, root, k):
     """
     :type root: TreeNode

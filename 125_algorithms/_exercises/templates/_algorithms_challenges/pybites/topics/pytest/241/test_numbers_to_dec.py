@@ -11,7 +11,7 @@ ___ test_correct_result():
 
 ___ test_boolean():
     with pytest.raises(TypeError):
-        list_to_decimal([True])
+        list_to_decimal([T..])
 
 ___ test_float():
     with pytest.raises(TypeError):

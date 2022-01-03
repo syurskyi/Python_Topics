@@ -32,14 +32,14 @@ implicit stack space incurred due to recursion does not count).
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ findMode(self, root):
         """
         In-order traversal
@@ -51,8 +51,8 @@ class Solution:
         :rtype: List[int]
         """
         ret = [[], 0]  # [results, length]
-        self.find_mode(root, [N.., 0], ret, False)
-        self.find_mode(root, [N.., 0], ret, True)
+        find_mode(root, [N.., 0], ret, F..)
+        find_mode(root, [N.., 0], ret, T..)
         r.. ret[0]
 
     ___ find_mode(self, root, prev, ret, collect):
@@ -62,7 +62,7 @@ class Solution:
         __ n.. root:
             r..
 
-        self.find_mode(root.left, prev, ret, collect)
+        find_mode(root.left, prev, ret, collect)
 
         __ prev[0] __ root.val:
             prev[1] += 1
@@ -76,7 +76,7 @@ class Solution:
             __ prev[1] __ ret[1]:
                 ret[0].a..(root.val)
 
-        self.find_mode(root.right, prev, ret, collect)
+        find_mode(root.right, prev, ret, collect)
 
     ___ findMode_error(self, root):
         """
@@ -90,7 +90,7 @@ class Solution:
             r.. []
 
         ret = [0, []]
-        self.find_mode_error(root, root.val, ret)
+        find_mode_error(root, root.val, ret)
         r.. ret[1]
 
     ___ find_mode_error(self, root, target, ret):
@@ -100,13 +100,13 @@ class Solution:
 
         __ root.val __ target:
             cur += 1
-            cur += self.find_mode_error(root.left, root.val, ret)
-            cur += self.find_mode_error(root.right, root.val, ret)
+            cur += find_mode_error(root.left, root.val, ret)
+            cur += find_mode_error(root.right, root.val, ret)
             __ cur > ret[0]:
                 ret[0], ret[1] = cur, [target]
             ____ cur __ ret[0]:
                 ret[1].a..(target)
         ____:
-            self.find_mode_error(root, root.val, ret)
+            find_mode_error(root, root.val, ret)
 
         r.. cur

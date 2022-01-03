@@ -1,12 +1,12 @@
 ____ matmul _______ Matrix
 
 
-class MatrixWithoutMatMul(object):
+c_ MatrixWithoutMatMul(object):
 
-    ___ __init__(self, values):
-        self.values = values
-        self.col = l..(values[0])
-        self.row = l..(values)
+    ___ - , values):
+        values = values
+        col = l..(values[0])
+        row = l..(values)
 
     ___ __matmul__(self, other):
         r.. NotImplemented

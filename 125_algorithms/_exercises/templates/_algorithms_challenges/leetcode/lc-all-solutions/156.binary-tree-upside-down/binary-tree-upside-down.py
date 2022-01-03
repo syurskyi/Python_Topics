@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ upsideDownBinaryTree(self, root):
     """
     :type root: TreeNode
@@ -14,8 +14,8 @@ class Solution(object):
     __ n.. root:
       r..
 
-    left = self.upsideDownBinaryTree(root.left)
-    right = self.upsideDownBinaryTree(root.right)
+    left = upsideDownBinaryTree(root.left)
+    right = upsideDownBinaryTree(root.right)
     __ root.left:
       root.left.right = root
       root.left.left = root.right

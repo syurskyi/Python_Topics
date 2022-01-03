@@ -1,11 +1,11 @@
-class Solution:
+c_ Solution:
     """
     @param: s: the string that represents a number
     @return: whether the string is a valid number
     """
     ___ isNumber(self, s):
         __ n.. s:
-            r.. False
+            r.. F..
 
         n = l..(s)
         left, right = 0, n - 1
@@ -17,23 +17,23 @@ class Solution:
             left += 1
 
         __ left > right:
-            r.. False
+            r.. F..
 
         __ left != 0 o. right != n - 1:
             s = s[left:right + 1]
 
         zero = ord('0')
         nine = ord('9')
-        is_contained_dot = False
-        is_contained_num = False
+        is_contained_dot = F..
+        is_contained_num = F..
         ___ char __ s:
             __ char __ '.' a.. is_contained_dot:
-                r.. False
+                r.. F..
             __ n.. (char __ '.' o. zero <= ord(char) <= nine):
-                r.. False
+                r.. F..
             __ char __ '.':
-                is_contained_dot = True
+                is_contained_dot = T..
             __ zero <= ord(char) <= nine:
-                is_contained_num = True
+                is_contained_num = T..
 
         r.. is_contained_num

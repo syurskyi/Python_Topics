@@ -19,7 +19,7 @@ You may assume both s and t have the same length.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ isIsomorphic(self, s, t):
         """
 
@@ -27,7 +27,7 @@ class Solution:
         :param t:
         :rtype: bool
         """
-        m = {}
+        m    # dict
         mapped = set()  # case "ab", "aa"
         ___ i __ xrange(l..(s)):
             __ s[i] n.. __ m a.. t[i] n.. __ mapped:
@@ -36,6 +36,6 @@ class Solution:
             ____ s[i] __ m a.. m[s[i]] __ t[i]:
                 pass
             ____:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

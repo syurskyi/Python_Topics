@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ largestValues(self, root):
     """
     :type root: TreeNode
     :rtype: List[int]
     """
     ans    # list
-    d = {}
+    d    # dict
 
     ___ dfs(root, h, d):
       __ root:

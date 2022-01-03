@@ -14,7 +14,7 @@ Here is an example of version numbers ordering:
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ compareVersion(self, version1, version2):
         """
         :type version1: str

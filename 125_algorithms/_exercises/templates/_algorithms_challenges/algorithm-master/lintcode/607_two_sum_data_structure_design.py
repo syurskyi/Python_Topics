@@ -1,27 +1,27 @@
-class TwoSum:
-    count = {}
+c_ TwoSum:
+    count    # dict
 
     """
     @param: number: An integer
     @return: nothing
     """
     ___ add(self, number):
-        __ number __ self.count:
-            self.count[number] += 1
+        __ number __ count:
+            count[number] += 1
         ____:
-            self.count[number] = 1
+            count[number] = 1
 
     """
     @param: value: An integer
     @return: Find if there exists any pair of numbers which sum is equal to the value.
     """
     ___ find(self, value):
-        ___ num __ self.count:
+        ___ num __ count:
             remaining = value - num
-            __ remaining n.. __ self.count:
+            __ remaining n.. __ count:
                 continue
             __ remaining != num:
-                r.. True
-            __ remaining __ num a.. self.count[num] > 1:
-                r.. True
-        r.. False
+                r.. T..
+            __ remaining __ num a.. count[num] > 1:
+                r.. T..
+        r.. F..

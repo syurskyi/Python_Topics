@@ -14,7 +14,7 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxEnvelopes(self, A):
         """
         LIS

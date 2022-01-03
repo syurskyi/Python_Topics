@@ -3,7 +3,7 @@ Created on Sep 30, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ binaryGap(self, N):
         """
         :type N: int

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ solveNQueens(self, n):
     """
     :type n: int
@@ -20,8 +20,8 @@ class Solution(object):
     ___ isValidQueen(path, k):
       ___ i __ r..(l..(path)):
         __ abs(k - path[i]) __ abs(l..(path) - i):
-          r.. False
-      r.. True
+          r.. F..
+      r.. T..
 
     ___ drawChess(path):
       ret    # list
@@ -29,7 +29,7 @@ class Solution(object):
       ___ i __ r..(0, l..(path)):
         chess[i][path[i]] = "Q"
       ___ chs __ chess:
-        ret.a..("".join(chs))
+        ret.a..("".j..(chs))
       r.. ret
 
     dfs([], n, ans)

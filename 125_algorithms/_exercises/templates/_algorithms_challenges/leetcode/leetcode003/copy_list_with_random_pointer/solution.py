@@ -5,7 +5,7 @@
 #         self.next = None
 #         self.random = None
 
-class Solution:
+c_ Solution:
     # @param head, a RandomListNode
     # @return a RandomListNode
     ___ copyRandomList(self, head):

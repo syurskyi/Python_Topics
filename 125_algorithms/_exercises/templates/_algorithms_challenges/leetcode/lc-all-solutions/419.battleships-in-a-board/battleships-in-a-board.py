@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ countBattleships(self, board):
     """
     :type board: List[List[str]]

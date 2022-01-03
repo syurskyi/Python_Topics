@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ validWordSquare(self, words):
     """
     :type words: List[str]
@@ -7,5 +7,5 @@ class Solution(object):
     ___ i __ r..(0, l..(words)):
       ___ j __ r..(0, l..(words[i])):
         __ j >= l..(words) o. i >= l..(words[j]) o. words[j][i] != words[i][j]:
-          r.. False
-    r.. True
+          r.. F..
+    r.. T..

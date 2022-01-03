@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-class Solution(object):
+c_ Solution(object):
     ___ buildTree(self, P, I):
         """
         :type P: List[int]
@@ -18,6 +18,6 @@ class Solution(object):
 
         i = I.index(P.pop(0))
         node = TreeNode(I[i])
-        node.left = self.buildTree(P, I[:i])
-        node.right = self.buildTree(P, I[i + 1:])
+        node.left = buildTree(P, I[:i])
+        node.right = buildTree(P, I[i + 1:])
         r.. node

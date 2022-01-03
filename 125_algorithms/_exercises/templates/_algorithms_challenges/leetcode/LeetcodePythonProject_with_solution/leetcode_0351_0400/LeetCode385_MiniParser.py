@@ -8,15 +8,15 @@ Created on Apr 2, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-class NestedInteger(object):
-    ___ __init__(self, value_ N..
+c_ NestedInteger(object):
+    ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
         Otherwise initializes a single integer equal to value.
         """
         pass
 
-    ___ isInteger(self):
+    ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
@@ -37,7 +37,7 @@ class NestedInteger(object):
         """
         pass
 
-    ___ getInteger(self):
+    ___ getInteger
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
@@ -45,7 +45,7 @@ class NestedInteger(object):
         """
         pass
 
-    ___ getList(self):
+    ___ getList
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -53,7 +53,7 @@ class NestedInteger(object):
         """
         pass
 
-class Solution(object):
+c_ Solution(object):
     ___ deserialize(self, s):
         __ s[0] __ '[' a.. s[-1] __ ']':
             nestedInt = NestedInteger()
@@ -69,7 +69,7 @@ class Solution(object):
                             count -= 1
                         ____ s[i] __ '[':
                             count += 1
-                    nestedInt.add(self.deserialize(s[prev:i+1]))
+                    nestedInt.add(deserialize(s[prev:i+1]))
                     i+=1
                     prev = i+1
                 ____ s[i] __ ',':

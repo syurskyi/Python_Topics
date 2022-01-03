@@ -18,4 +18,4 @@ ___ list_to_decimal(nums: List[int]) -> int:
     __ n.. a..(num __ r..(0, 10) ___ num __ nums):
         raise ValueError
 
-    r.. int(''.join(map(s.., nums)))
+    r.. int(''.j..(map(s.., nums)))

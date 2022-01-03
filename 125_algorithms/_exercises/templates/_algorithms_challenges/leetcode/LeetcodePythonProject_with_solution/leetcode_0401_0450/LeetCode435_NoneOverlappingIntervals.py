@@ -5,12 +5,12 @@ Created on Apr 15, 2017
 '''
 
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
-class Solution(object):
+c_ Solution(object):
     ___ eraseOverlapIntervals(self, intervals):
         __ n.. intervals: r.. 0
         intervals.s..(key=l.... x: (x.end, x.start))
@@ -23,7 +23,7 @@ class Solution(object):
                 count += 1
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1, 2], [2, 3], [3, 4], [1, 3]],
             [[1, 2], [1, 2], [1, 2]],
@@ -32,7 +32,7 @@ class Solution(object):
         ___ intervals __ testCases:
             print('intervals: %s' % intervals)
             intervals = [Interval(interval[0], interval[1]) ___ interval __ intervals]
-            result = self.eraseOverlapIntervals(intervals)
+            result = eraseOverlapIntervals(intervals)
             print('result: %s' % result)
             print('-='*20+'-')
 

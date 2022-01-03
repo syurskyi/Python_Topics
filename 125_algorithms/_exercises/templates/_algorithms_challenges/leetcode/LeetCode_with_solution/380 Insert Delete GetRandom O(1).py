@@ -36,16 +36,16 @@ _______ random
 __author__ = 'Daniel'
 
 
-class RandomizedSet(object):
-    ___ __init__(self):
+c_ RandomizedSet(object):
+    ___ - ):
         """
         1. Use List of numbers to support O(1) getRandom
         2. need an efficient way to find and delete an element
         3. Use Map to get the location, move to end and pop
         Initialize your data structure here.
         """
-        self.lst    # list
-        self.pos = {}
+        lst    # list
+        pos    # dict
 
     ___ insert(self, val):
         """
@@ -53,13 +53,13 @@ class RandomizedSet(object):
         :type val: int
         :rtype: bool
         """
-        __ val __ self.pos:
-            r.. False
+        __ val __ pos:
+            r.. F..
 
-        self.lst.a..(val)
-        self.pos[val] = l..(self.lst) - 1
+        lst.a..(val)
+        pos[val] = l..(lst) - 1
 
-        r.. True
+        r.. T..
 
     ___ remove(self, val):
         """
@@ -67,34 +67,34 @@ class RandomizedSet(object):
         :type val: int
         :rtype: bool
         """
-        __ val n.. __ self.pos:
-            r.. False
+        __ val n.. __ pos:
+            r.. F..
 
-        idx, last = self.pos[val], l..(self.lst) - 1
+        idx, last = pos[val], l..(lst) - 1
 
         __ idx != last:
-            self.lst[idx], self.lst[last] = self.lst[last], self.lst[idx]
-            self.pos[self.lst[idx]] = idx
+            lst[idx], lst[last] = lst[last], lst[idx]
+            pos[lst[idx]] = idx
 
-        del self.pos[val]
-        self.lst.pop()
+        del pos[val]
+        lst.pop()
 
-        r.. True
+        r.. T..
 
-    ___ getRandom(self):
+    ___ getRandom
         """
         Gets a random element from the set.
         :rtype: int
         """
-        r.. random.choice(self.lst)
+        r.. random.choice(lst)
 
 
-class RandomizedSetTLE(object):
-    ___ __init__(self):
+c_ RandomizedSetTLE(object):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.set = set()
+        set = set()
 
     ___ insert(self, val):
         """
@@ -102,8 +102,8 @@ class RandomizedSetTLE(object):
         :type val: int
         :rtype: bool
         """
-        ret = val n.. __ self.set
-        self.set.add(val)
+        ret = val n.. __ set
+        set.add(val)
         r.. ret
 
     ___ remove(self, val):
@@ -112,16 +112,16 @@ class RandomizedSetTLE(object):
         :type val: int
         :rtype: bool
         """
-        ret = val __ self.set
-        self.set.discard(val)
+        ret = val __ set
+        set.discard(val)
         r.. ret
 
-    ___ getRandom(self):
+    ___ getRandom
         """
         Get a random element from the set.
         :rtype: int
         """
-        r.. random.sample(self.set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
+        r.. random.sample(set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
 
 
 

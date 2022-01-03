@@ -33,13 +33,13 @@ ____ typing _______ List
 MOD =  10 ** 9 + 7
 
 
-class Solution:
+c_ Solution:
     ___ numFactoredBinaryTrees(self, A: List[int]) -> int:
         """
         Let F[i] be the number of factored binary tree rooted at i
         """
         A.s..()
-        F = {}
+        F    # dict
         ___ i __ r..(l..(A)):
             F[A[i]] = 1
             ___ j __ r..(i):

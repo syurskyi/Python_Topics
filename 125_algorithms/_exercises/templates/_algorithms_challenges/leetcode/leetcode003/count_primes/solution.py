@@ -12,7 +12,7 @@ prime numbers up to n would be O(n2). Could we do better?
 
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ countPrimes(self, n):
         """
         :type n: int
@@ -20,7 +20,7 @@ class Solution(object):
         """
         res = 0
         ___ i __ r..(2, n):
-            __ self.is_prime(i):
+            __ is_prime(i):
                 res += 1
         r.. res
 
@@ -28,9 +28,9 @@ class Solution(object):
         i = 2
         w.... i * i <= k:
             __ k % i __ 0:
-                r.. False
+                r.. F..
             i += 1
-        r.. True
+        r.. T..
 
 
 s = Solution()

@@ -1,12 +1,12 @@
-class TopVotedCandidate(object):
+c_ TopVotedCandidate(object):
 
-    ___ __init__(self, persons, times):
+    ___ - , persons, times):
         """
         :type persons: List[int]
         :type times: List[int]
         """
-        self.arr    # list
-        hashmap = {}
+        arr    # list
+        hashmap    # dict
         maxNum = 0
         maxP = N..
         ___ p, t __ z..(persons, times):
@@ -14,21 +14,21 @@ class TopVotedCandidate(object):
             __ hashmap[p] >= maxNum:
                 maxP = p
                 maxNum = hashmap[p]
-            self.arr.a..([t, maxP])
+            arr.a..([t, maxP])
 
     ___ q(self, t):
         """
         :type t: int
         :rtype: int
         """
-        i, j = 0, l..(self.arr)
+        i, j = 0, l..(arr)
         w.... i < j:
             mid = (i+j)//2
-            __ t < self.arr[mid][0]:
+            __ t < arr[mid][0]:
                 j = mid
             ____:
                 i = mid+1
-        r.. self.arr[i-1][1]
+        r.. arr[i-1][1]
 
 
 __ __name__ __ '__main__':

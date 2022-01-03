@@ -35,14 +35,14 @@ _______ random
 __author__ = 'Daniel'
 
 
-class RandomizedCollection(object):
-    ___ __init__(self):
+c_ RandomizedCollection(object):
+    ___ - ):
         """
         pop set is O(1), deterministic depends on hash value
         Initialize your data structure here.
         """
-        self.lst    # list
-        self.pos = defaultdict(set)
+        lst    # list
+        pos = defaultdict(set)
 
     ___ insert(self, val):
         """
@@ -50,10 +50,10 @@ class RandomizedCollection(object):
         :type val: int
         :rtype: bool
         """
-        flag = True __ n.. self.pos[val] ____ False
+        flag = T.. __ n.. pos[val] ____ F..
 
-        self.lst.a..(val)
-        self.pos[val].add(l..(self.lst) - 1)
+        lst.a..(val)
+        pos[val].add(l..(lst) - 1)
 
         r.. flag
 
@@ -63,25 +63,25 @@ class RandomizedCollection(object):
         :type val: int
         :rtype: bool
         """
-        __ n.. self.pos[val]:
-            r.. False
+        __ n.. pos[val]:
+            r.. F..
 
-        idx, last = self.pos[val].pop(), l..(self.lst) - 1
+        idx, last = pos[val].pop(), l..(lst) - 1
         __ idx != last:
-            self.lst[idx], self.lst[last] = self.lst[last], self.lst[idx]
-            self.pos[self.lst[idx]].remove(last)
-            self.pos[self.lst[idx]].add(idx)
+            lst[idx], lst[last] = lst[last], lst[idx]
+            pos[lst[idx]].remove(last)
+            pos[lst[idx]].add(idx)
 
-        self.lst.pop()
+        lst.pop()
 
-        r.. True
+        r.. T..
 
-    ___ getRandom(self):
+    ___ getRandom
         """
         Get a random element from the collection.
         :rtype: int
         """
-        r.. random.choice(self.lst)
+        r.. random.choice(lst)
 
 
 # Your RandomizedCollection object will be instantiated and called as such:

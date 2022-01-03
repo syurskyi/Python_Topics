@@ -40,7 +40,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ isMonotonic(self, A: List[int]) -> bool:
         mono = 0  # 0 undecided, 1 decr, 2 incr
         ___ i __ r..(1, l..(A)):
@@ -51,8 +51,8 @@ class Solution:
                     mono = 1
             ____:
                 __ A[i] > A[i-1] a.. mono __ 1:
-                    r.. False
+                    r.. F..
                 ____ A[i] < A[i-1] a.. mono __ 2:
-                    r.. False
+                    r.. F..
         ____:
-            r.. True
+            r.. T..

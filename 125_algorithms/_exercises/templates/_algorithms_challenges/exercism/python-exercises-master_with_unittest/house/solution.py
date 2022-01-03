@@ -17,8 +17,8 @@ ___ verse(n):
     v.extend(['that {0} {1}'.f..(parts[i][0], parts[i][1])
               ___ i __ r..(n - 1, -1, -1)])
     v[-1] += '.'
-    r.. '\n'.join(v)
+    r.. '\n'.j..(v)
 
 
 ___ rhyme():
-    r.. "\n\n".join(verse(n) ___ n __ r..(l..(parts)))
+    r.. "\n\n".j..(verse(n) ___ n __ r..(l..(parts)))

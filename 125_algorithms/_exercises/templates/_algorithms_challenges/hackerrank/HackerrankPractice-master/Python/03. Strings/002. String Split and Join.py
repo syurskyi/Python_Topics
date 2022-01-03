@@ -3,4 +3,4 @@
 
 
 ___ split_and_join(line):
-    r.. "-".join(line.s..())
+    r.. "-".j..(line.s..())

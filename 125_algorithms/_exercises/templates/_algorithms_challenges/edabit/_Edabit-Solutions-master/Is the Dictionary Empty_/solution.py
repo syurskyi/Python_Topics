@@ -1,15 +1,15 @@
 ___ is_empty(dictionary):
     __ l..(dictionary) __ 0:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..
 
 
 ___ test():
     print("Test has started")
     d.. = {"Name": "Eleven"}
-    __ is_empty(d..) != False:
+    __ is_empty(d..) != F..:
         print("error1")
-    b_dict = {}
-    __ is_empty(b_dict) != True:
+    b_dict    # dict
+    __ is_empty(b_dict) != T..:
         print("error2")

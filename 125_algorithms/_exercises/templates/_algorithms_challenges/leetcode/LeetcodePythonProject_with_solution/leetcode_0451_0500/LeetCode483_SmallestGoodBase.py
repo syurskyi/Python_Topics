@@ -4,7 +4,7 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ smallestGoodBase(self, n):
         """
         :type n: str
@@ -19,7 +19,7 @@ class Solution(object):
                 r.. s..(k)
         r.. s..(n-1)
     
-    ___ test(self):
+    ___ test
         testCases = [
             '13',
             '4681',
@@ -27,7 +27,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.smallestGoodBase(n)
+            result = smallestGoodBase(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

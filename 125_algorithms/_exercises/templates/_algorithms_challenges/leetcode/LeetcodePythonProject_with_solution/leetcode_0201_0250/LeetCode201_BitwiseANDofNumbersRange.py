@@ -4,7 +4,7 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ rangeBitwiseAnd(self, m, n):
         """
         :type m: int
@@ -20,7 +20,7 @@ class Solution(object):
             moveFactor <<= 1
         r.. moveFactor*m
     
-    ___ test(self):
+    ___ test
         testCases = [
             (5, 7),
             (5, 20),
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ m, n __ testCases:
             print('m: %s, n: %s' % (m, n))
-            result = self.rangeBitwiseAnd(m, n)
+            result = rangeBitwiseAnd(m, n)
             print('result: %s' % (result))
             print('-='*20+'-')
 

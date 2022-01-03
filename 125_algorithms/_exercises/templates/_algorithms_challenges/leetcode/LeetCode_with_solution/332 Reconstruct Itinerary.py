@@ -21,7 +21,7 @@ ____ collections _______ defaultdict, deque
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findItinerary(self, tickets):
         """
         Euler path:
@@ -41,12 +41,12 @@ class Solution(object):
             heapq.heappush(G[s], e)  # heap lexical order
 
         ret = deque()
-        self.dfs(G, 'JFK', ret)
+        dfs(G, 'JFK', ret)
         r.. l..(ret)
 
     ___ dfs(self, G, cur, ret):
         w.... G[cur]:
-            self.dfs(G, heapq.heappop(G[cur]), ret)
+            dfs(G, heapq.heappop(G[cur]), ret)
 
         ret.appendleft(cur)
 

@@ -4,7 +4,7 @@ Created on Mar 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ countNumbersWithUniqueDigits(self, n):
         __ n __ 0: r.. 1
         res = 10

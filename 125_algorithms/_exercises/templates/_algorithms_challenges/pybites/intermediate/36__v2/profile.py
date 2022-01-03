@@ -10,7 +10,7 @@ ___ get_profile(name, age, *args, **kwargs):
     __ l..(args) > 5:
         raise ValueError
 
-    user_profile = {}
+    user_profile    # dict
 
     user_profile["name"] = name
     user_profile["age"] = age
@@ -21,7 +21,7 @@ ___ get_profile(name, age, *args, **kwargs):
         user_profile["sports"] = sport_list
 
     __ l..(kwargs) > 0:
-        award_dict = {key: value ___ key, value __ kwargs.items()}
+        award_dict = {key: value ___ key, value __ kwargs.i..}
         user_profile["awards"] = award_dict
     
     r.. user_profile

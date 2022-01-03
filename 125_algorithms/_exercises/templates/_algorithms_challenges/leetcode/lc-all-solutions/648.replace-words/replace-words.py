@@ -1,11 +1,11 @@
-class TrieNode(object):
-  ___ __init__(self):
-    self.children = {}
-    self.isWord = False
-    self.word = ""
+c_ TrieNode(object):
+  ___ - ):
+    children    # dict
+    isWord = F..
+    word = ""
 
 
-class Solution(object):
+c_ Solution(object):
   ___ replaceWords(self, d.., sentence):
     """
     :type dict: List[str]
@@ -19,7 +19,7 @@ class Solution(object):
         __ c n.. __ p.children:
           p.children[c] = TrieNode()
         p = p.children[c]
-      p.isWord = True
+      p.isWord = T..
       p.word = word
 
     words = sentence.s..
@@ -33,4 +33,4 @@ class Solution(object):
             break
         ____:
           break
-    r.. " ".join(words)
+    r.. " ".j..(words)

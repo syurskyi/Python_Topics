@@ -1,10 +1,10 @@
-_______ re
+_______ __
 
 pattern = "sc[a-zA-Z0-9]+@[a-zA-Z0-9]+\.(com|net)"
 
 user_input = input()
 
-__ (re.search(pattern, user_input)):
+__ (__.s..(pattern, user_input)):
     print("good")
 ____:
     print("no good")

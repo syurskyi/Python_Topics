@@ -9,7 +9,7 @@ money you can rob tonight without alerting the police.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ rob(self, nums):
         """
         DP

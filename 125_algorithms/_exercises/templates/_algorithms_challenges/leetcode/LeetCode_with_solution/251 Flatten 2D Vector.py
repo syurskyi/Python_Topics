@@ -4,36 +4,36 @@ Premium Question.
 __author__ = 'Daniel'
 
 
-class Vector2D:
-    ___ __init__(self, vec2d):
+c_ Vector2D:
+    ___ - , vec2d):
         """
         :type vec2d: list[list[int]]
         :type: None
         """
-        self.vec2d = vec2d
-        self.i = 0
-        self.j = 0
+        vec2d = vec2d
+        i = 0
+        j = 0
 
-    ___ next(self):
+    ___ next
         """
 
         :rtype: int
         """
         ret = N..
-        __ self.hasNext():
-            ret = self.vec2d[self.i][self.j]
-            self.j += 1
+        __ hasNext():
+            ret = vec2d[i][j]
+            j += 1
 
         r.. ret
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         This function structures the two pointers.
         :rtype: bool
         """
         # update
-        w.... self.i < l..(self.vec2d) a.. self.j >= l..(self.vec2d[self.i]):
-            self.i += 1
-            self.j = 0
+        w.... i < l..(vec2d) a.. j >= l..(vec2d[i]):
+            i += 1
+            j = 0
 
-        r.. self.i < l..(self.vec2d) a.. self.j < l..(self.vec2d[self.i])
+        r.. i < l..(vec2d) a.. j < l..(vec2d[i])

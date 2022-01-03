@@ -4,4 +4,4 @@ ___ proverb(itens, qualifier=''):
     qualifier += ' ' __ qualifier ____ ''
     phrases.a..('And all for the want of a {0}{1}.'.f..(qualifier,
                    itens[0]))
-    r.. '\n'.join(phrases)
+    r.. '\n'.j..(phrases)

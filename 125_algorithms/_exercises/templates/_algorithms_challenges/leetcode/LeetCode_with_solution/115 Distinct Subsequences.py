@@ -11,7 +11,7 @@ S = "rabbbit", T = "rabbit"
 Return 3.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ numDistinct(self, S, T):
         """
         Algorithm: dp, sub-sequence and matching

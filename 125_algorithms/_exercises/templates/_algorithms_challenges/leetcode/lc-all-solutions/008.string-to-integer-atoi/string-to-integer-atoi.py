@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ myAtoi(self, s):
     """
     :type str: str

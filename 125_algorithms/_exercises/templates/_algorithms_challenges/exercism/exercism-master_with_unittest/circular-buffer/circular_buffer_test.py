@@ -7,85 +7,85 @@ ____ circular_buffer _______ (
 )
 
 
-class CircularBufferTest(unittest.TestCase):
+c_ CircularBufferTest(unittest.TestCase):
 
-    ___ test_read_empty_buffer(self):
+    ___ test_read_empty_buffer
         buf = CircularBuffer(1)
-        with self.assertRaises(BufferEmptyException):
+        with assertRaises(BufferEmptyException):
             buf.read()
 
-    ___ test_write_and_read_back_one_item(self):
+    ___ test_write_and_read_back_one_item
         buf = CircularBuffer(1)
         buf.write('1')
-        self.assertEqual('1', buf.read())
-        with self.assertRaises(BufferEmptyException):
+        assertEqual('1', buf.read())
+        with assertRaises(BufferEmptyException):
             buf.read()
 
-    ___ test_write_and_read_back_multiple_items(self):
+    ___ test_write_and_read_back_multiple_items
         buf = CircularBuffer(2)
         buf.write('1')
         buf.write('2')
-        self.assertEqual('1', buf.read())
-        self.assertEqual('2', buf.read())
-        with self.assertRaises(BufferEmptyException):
+        assertEqual('1', buf.read())
+        assertEqual('2', buf.read())
+        with assertRaises(BufferEmptyException):
             buf.read()
 
-    ___ test_clearing_buffer(self):
+    ___ test_clearing_buffer
         buf = CircularBuffer(3)
         ___ c __ '123':
             buf.write(c)
         buf.clear()
-        with self.assertRaises(BufferEmptyException):
+        with assertRaises(BufferEmptyException):
             buf.read()
         buf.write('1')
         buf.write('2')
-        self.assertEqual('1', buf.read())
+        assertEqual('1', buf.read())
         buf.write('3')
-        self.assertEqual('2', buf.read())
+        assertEqual('2', buf.read())
 
-    ___ test_alternate_write_and_read(self):
+    ___ test_alternate_write_and_read
         buf = CircularBuffer(2)
         buf.write('1')
-        self.assertEqual('1', buf.read())
+        assertEqual('1', buf.read())
         buf.write('2')
-        self.assertEqual('2', buf.read())
+        assertEqual('2', buf.read())
 
-    ___ test_read_back_oldest_item(self):
+    ___ test_read_back_oldest_item
         buf = CircularBuffer(3)
         buf.write('1')
         buf.write('2')
         buf.read()
         buf.write('3')
         buf.read()
-        self.assertEqual('3', buf.read())
+        assertEqual('3', buf.read())
 
-    ___ test_write_full_buffer(self):
+    ___ test_write_full_buffer
         buf = CircularBuffer(2)
         buf.write('1')
         buf.write('2')
-        with self.assertRaises(BufferFullException):
+        with assertRaises(BufferFullException):
             buf.write('A')
 
-    ___ test_overwrite_full_buffer(self):
+    ___ test_overwrite_full_buffer
         buf = CircularBuffer(2)
         buf.write('1')
         buf.write('2')
         buf.overwrite('A')
-        self.assertEqual('2', buf.read())
-        self.assertEqual('A', buf.read())
-        with self.assertRaises(BufferEmptyException):
+        assertEqual('2', buf.read())
+        assertEqual('A', buf.read())
+        with assertRaises(BufferEmptyException):
             buf.read()
 
-    ___ test_overwrite_non_full_buffer(self):
+    ___ test_overwrite_non_full_buffer
         buf = CircularBuffer(2)
         buf.overwrite('1')
         buf.overwrite('2')
-        self.assertEqual('1', buf.read())
-        self.assertEqual('2', buf.read())
-        with self.assertRaises(BufferEmptyException):
+        assertEqual('1', buf.read())
+        assertEqual('2', buf.read())
+        with assertRaises(BufferEmptyException):
             buf.read()
 
-    ___ test_alternate_read_and_overwrite(self):
+    ___ test_alternate_read_and_overwrite
         buf = CircularBuffer(5)
         ___ c __ '123':
             buf.write(c)
@@ -97,12 +97,12 @@ class CircularBufferTest(unittest.TestCase):
             buf.write(c)
         buf.overwrite('A')
         buf.overwrite('B')
-        self.assertEqual('6', buf.read())
-        self.assertEqual('7', buf.read())
-        self.assertEqual('8', buf.read())
-        self.assertEqual('A', buf.read())
-        self.assertEqual('B', buf.read())
-        with self.assertRaises(BufferEmptyException):
+        assertEqual('6', buf.read())
+        assertEqual('7', buf.read())
+        assertEqual('8', buf.read())
+        assertEqual('A', buf.read())
+        assertEqual('B', buf.read())
+        with assertRaises(BufferEmptyException):
             buf.read()
 
 

@@ -28,7 +28,7 @@ pushed and popped have distinct values.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
         """
         maintain a stack and iterate through pushed

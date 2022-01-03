@@ -8,7 +8,7 @@ Given a = 1 and b = 2, return 3.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ getSum(self, a, b):
         """
         circuit full-adder
@@ -30,7 +30,7 @@ class Solution(object):
         out &= MSK
 
         __ carry != 0:
-            r.. self.getSum(out, carry)
+            r.. getSum(out, carry)
         ____:
             # handle overflow
             __ out < MAX:

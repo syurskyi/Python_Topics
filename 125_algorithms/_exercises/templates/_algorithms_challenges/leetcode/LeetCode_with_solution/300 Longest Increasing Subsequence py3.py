@@ -20,7 +20,7 @@ ____ typing _______ List
 ____ bisect _______ bisect_left
 
 
-class Solution:
+c_ Solution:
     ___ lengthOfLIS(self, nums: List[int]) -> int:
         """
         LIS dp + binary search

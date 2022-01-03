@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param {string} a
     # @param {string} b
     # @return {string}

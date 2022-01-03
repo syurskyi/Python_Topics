@@ -7,7 +7,7 @@ b = "1"
 Return "100".
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ addBinary(self, a, b):
         """
         :type a: str
@@ -38,7 +38,7 @@ class Solution(object):
                 break
         ____:
             res = ['0']
-        r.. ''.join(res)
+        r.. ''.j..(res)
 
 
 s = Solution()

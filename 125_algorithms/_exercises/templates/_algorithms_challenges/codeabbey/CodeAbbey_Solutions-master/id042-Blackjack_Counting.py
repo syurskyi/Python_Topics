@@ -28,5 +28,5 @@ ___ blackjack_counter(games):
         ____:
             answer.a..(s..(total))
 
-    print(' '.join(answer))
+    print(' '.j..(answer))
 blackjack_counter(input())

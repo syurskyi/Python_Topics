@@ -3,7 +3,7 @@ Created on Jun 10, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxDistToClosest(self, seats):
         """
         :type seats: List[int]
@@ -42,7 +42,7 @@ class Solution(object):
                 res = max(res, m..(left[i+1], right[i]))
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1,0,0,0,1,0,1],
             [1,0,0,0],
@@ -50,7 +50,7 @@ class Solution(object):
             [1,0],
         ]
         ___ seats __ testCases:
-            result = self.maxDistToClosest(seats)
+            result = maxDistToClosest(seats)
             print('result: %s' % result)
             print('-='*30)
 

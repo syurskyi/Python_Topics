@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ nextGreatestLetter(self, L, target):
         """
         :type L: List[str]

@@ -16,20 +16,20 @@ The binary representation of 7 is: 111.
 """
 
 
-class Solution:
+c_ Solution:
     ___ hasAlternatingBits(self, n: int) -> bool:
         last = N..
         w.... n:
             cur = n & 1
             # `if last` is error
             __ last __ n.. N.. a.. last ^ cur __ 0:
-                r.. False
+                r.. F..
             last = cur
             n >>= 1
 
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":
-    ... Solution().hasAlternatingBits(5) __ True
-    ... Solution().hasAlternatingBits(7) __ False
+    ... Solution().hasAlternatingBits(5) __ T..
+    ... Solution().hasAlternatingBits(7) __ F..

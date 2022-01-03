@@ -1,5 +1,5 @@
 _______ json
-_______ re
+_______ __
 
 members = """
 id,first_name,last_name,email
@@ -23,7 +23,7 @@ ___ convert_to_json(members=members):
             row = row.s..(",")
             id_h, first_h, last_h, email_h = row[0], row[1], row[2], row[3]
         ____:
-            row_split = re.s..("[|,;]", row)
+            row_split = __.s..("[|,;]", row)
             members_data.a..(row_split)
 
     members_stg    # list

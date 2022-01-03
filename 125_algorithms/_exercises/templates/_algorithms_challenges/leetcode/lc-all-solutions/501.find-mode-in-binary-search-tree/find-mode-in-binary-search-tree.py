@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ findMode(self, root):
     """
     :type root: TreeNode
@@ -13,17 +13,17 @@ class Solution(object):
     """
 
     ___ visit(v):
-      __ v != self.pre:
-        self.pre = v
-        self.cnt = 0
-      self.cnt += 1
-      __ self.cnt > self.maxFreq:
-        self.maxFreq = self.cnt
-        self.modeCnt = 1
-      ____ self.cnt __ self.maxFreq:
-        __ self.ans:
-          self.ans[self.modeCnt] = v
-        self.modeCnt += 1
+      __ v != pre:
+        pre = v
+        cnt = 0
+      cnt += 1
+      __ cnt > maxFreq:
+        maxFreq = cnt
+        modeCnt = 1
+      ____ cnt __ maxFreq:
+        __ ans:
+          ans[modeCnt] = v
+        modeCnt += 1
 
     ___ inorder(root):
       __ root:
@@ -31,11 +31,11 @@ class Solution(object):
         visit(root.val)
         inorder(root.right)
 
-    self.pre = N..
-    self.ans = N..
-    self.maxFreq = self.modeCnt = self.cnt = 0
+    pre = N..
+    ans = N..
+    maxFreq = modeCnt = cnt = 0
     inorder(root)
-    self.ans = [0] * self.modeCnt
-    self.modeCnt = self.cnt = 0
+    ans = [0] * modeCnt
+    modeCnt = cnt = 0
     inorder(root)
-    r.. self.ans
+    r.. ans

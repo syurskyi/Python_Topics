@@ -4,7 +4,7 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ getMaxRepetitions(self, s1, n1, s2, n2):
         """
         :type s1: str
@@ -14,8 +14,8 @@ class Solution(object):
         :rtype: int
         """
         __ n.. s1 o. n.. s2: r.. 0
-        res = self.countHelper(s1*(n1//n2), s2)
-        res += self.countHelper(s1*(n1%n2), s2*n2)
+        res = countHelper(s1*(n1//n2), s2)
+        res += countHelper(s1*(n1%n2), s2*n2)
         r.. res
     
     ___ countHelper(self, s1, s2):

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: an integer array and all positive numbers, no duplicates
     @param: target: An integer

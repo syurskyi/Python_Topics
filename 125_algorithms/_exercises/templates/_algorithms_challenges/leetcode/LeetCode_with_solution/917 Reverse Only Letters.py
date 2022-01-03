@@ -24,7 +24,7 @@ S doesn't contain \ or "
 """
 
 
-class Solution:
+c_ Solution:
     ___ reverseOnlyLetters(self, S: s..) -> s..:
         lst = l..(S)
         i = 0
@@ -43,7 +43,7 @@ class Solution:
             ____:
                 break
 
-        r.. "".join(lst)
+        r.. "".j..(lst)
 
 
 __ __name__ __ "__main__":

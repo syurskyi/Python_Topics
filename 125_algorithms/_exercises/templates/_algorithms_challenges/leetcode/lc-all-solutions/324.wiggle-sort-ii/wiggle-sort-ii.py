@@ -1,7 +1,7 @@
 _______ random
 
 
-class Solution(object):
+c_ Solution(object):
   ___ wiggleSort(self, nums):
     """
     :type nums: List[int]
@@ -11,7 +11,7 @@ class Solution(object):
       nums.s..()
       r..
     numscopy = nums + []
-    mid = self.quickselect(0, l..(nums) - 1, nums, l..(nums) / 2 - 1)
+    mid = quickselect(0, l..(nums) - 1, nums, l..(nums) / 2 - 1)
     ans = [mid] * l..(nums)
     __ l..(nums) % 2 __ 0:
       l = l..(nums) - 2
@@ -40,14 +40,14 @@ class Solution(object):
     __ start __ end:
       r.. A[start]
 
-    mid = self.partition(start, end, A)
+    mid = partition(start, end, A)
 
     __ mid __ k:
       r.. A[k]
     ____ mid > k:
-      r.. self.quickselect(start, mid - 1, A, k)
+      r.. quickselect(start, mid - 1, A, k)
     ____:
-      r.. self.quickselect(mid + 1, end, A, k)
+      r.. quickselect(mid + 1, end, A, k)
 
   ___ partition(self, start, end, A):
     left, right = start, end

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findComplement(self, num):
     i = 1
     w.... i <= num:

@@ -3,7 +3,7 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isToeplitzMatrix(self, matrix):
         """
         :type matrix: List[List[int]]
@@ -16,17 +16,17 @@ class Solution(object):
                 __ i+k >= m o. k >= n:
                     break
                 __ matrix[i+k][k] != val:
-                    r.. False
+                    r.. F..
         ___ j __ r..(n):
             val = matrix[0][j]
             ___ k __ r..(1, m):
                 __ j+k >= n o. k >= m:
                     break
                 __ matrix[k][j+k] != val:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,2,3,4],
@@ -39,7 +39,7 @@ class Solution(object):
             ],
         ]
         ___ matrix __ testCases:
-            result = self.isToeplitzMatrix(matrix)
+            result = isToeplitzMatrix(matrix)
             print('result: %s' % result)
             print('-='*30+'-')
 

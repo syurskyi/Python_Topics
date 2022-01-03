@@ -20,12 +20,12 @@ Artinine (R): CGU, CGC, CGA, CGG, AGA, AGG
 Glycine (G): GGU, GGC, GGA, GGG
 Stop Codon ('Stop'): UGA, UAA, UAG'''
 
-_______ re
+_______ __
 ___ protein(rna):
-    transDict = {}
+    transDict    # dict
     ___ line __ rnaDict.s..('\n'):
         ___ section __ line[line.index(':')+1:].r..(' ','').s..(','):
-            transDict[section] = re.findall(r'\(+\'?(\w+)',line)[0]
+            transDict[section] = __.findall(r'\(+\'?(\w+)',line)[0]
     codec = ''
     w.... l..(rna) > 0:
         __ transDict[rna[:3]] __ 'Stop':

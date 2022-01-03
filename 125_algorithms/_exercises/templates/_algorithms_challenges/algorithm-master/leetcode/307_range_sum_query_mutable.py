@@ -9,8 +9,8 @@ param_2 = obj.sumRange(i,j)
 """
 
 
-class NumArray:
-    ___ __init__(self, nums):
+c_ NumArray:
+    ___ - , nums):
         """
         :type nums: List[int]
         """
@@ -18,11 +18,11 @@ class NumArray:
             r..
 
         n = l..(nums)
-        self.bits = [0] * (n + 1)  # bits
-        self.incr = [0] * (n + 1)  # increments
+        bits = [0] * (n + 1)  # bits
+        incr = [0] * (n + 1)  # increments
 
         ___ i __ r..(n):
-            self.update(i, nums[i])
+            update(i, nums[i])
 
     ___ update(self, i, val):
         """
@@ -34,11 +34,11 @@ class NumArray:
         so look from outside, the `i` is just the index of `nums`
         """
         j = i + 1
-        delta = val - self.incr[j]
-        self.incr[j] = val
+        delta = val - incr[j]
+        incr[j] = val
 
-        w.... j < l..(self.incr):
-            self.bits[j] += delta
+        w.... j < l..(incr):
+            bits[j] += delta
             j += (j & -j)
 
     ___ sumRange(self, i, j):
@@ -47,14 +47,14 @@ class NumArray:
         :type j: int
         :rtype: int
         """
-        r.. self.s..(j + 1) - self.s..(i)
+        r.. s..(j + 1) - s..(i)
 
     ___ s..(self, i):
         res = 0
         j = i
 
         w.... j > 0:
-            res += self.bits[j]
+            res += bits[j]
             j -= (j & -j)
 
         r.. res

@@ -1,4 +1,4 @@
-class List(object):
+c_ List(object):
   @staticmethod
   ___ delete(elem):
     elem.prev.next = elem.next
@@ -25,36 +25,36 @@ class List(object):
     head.prev = head.next = head
 
 
-class Node(object):
-  ___ __init__(self, key, value, head):
-    self.key = key
-    self.value = value
-    self.head = head
-    self.prev = self.next = N..
+c_ Node(object):
+  ___ - , key, value, head):
+    key = key
+    value = value
+    head = head
+    prev = next = N..
 
-  ___ hit(self):
+  ___ hit
     List.delete(self)
-    List.a..(self.head, self)
+    List.a..(head, self)
 
 
-class LRUCache(object):
-  ___ __init__(self, capacity):
+c_ LRUCache(object):
+  ___ - , capacity):
     """
     :type capacity: int
     """
-    self.d = {}
-    self.cap = capacity
-    self.head = Node(-1, -1, N..)
-    List.initHead(self.head)
+    d    # dict
+    cap = capacity
+    head = Node(-1, -1, N..)
+    List.initHead(head)
 
   ___ get(self, key):
     """
     :rtype: int
     """
-    __ key n.. __ self.d:
+    __ key n.. __ d:
       r.. -1
-    self.d[key].hit()
-    r.. self.d[key].value
+    d[key].hit()
+    r.. d[key].value
 
   ___ set(self, key, value):
     """
@@ -62,17 +62,17 @@ class LRUCache(object):
     :type value: int
     :rtype: nothing
     """
-    __ self.cap __ 0:
+    __ cap __ 0:
       r..
 
-    __ key __ self.d:
-      self.d[key].hit()
-      self.d[key].value = value
+    __ key __ d:
+      d[key].hit()
+      d[key].value = value
     ____:
-      __ l..(self.d) >= self.cap:
-        oldNode = List.delete(self.head.next)
-        del self.d[oldNode.key]
+      __ l..(d) >= cap:
+        oldNode = List.delete(head.next)
+        del d[oldNode.key]
 
-      newNode = Node(key, value, self.head)
-      List.a..(self.head, newNode)
-      self.d[key] = newNode
+      newNode = Node(key, value, head)
+      List.a..(head, newNode)
+      d[key] = newNode

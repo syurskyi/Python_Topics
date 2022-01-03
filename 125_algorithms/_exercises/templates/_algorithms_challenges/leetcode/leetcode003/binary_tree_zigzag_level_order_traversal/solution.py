@@ -24,7 +24,7 @@ return its zigzag level order traversal as:
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return a list of lists of integers
     ___ zigzagLevelOrder(self, root):
@@ -32,7 +32,7 @@ class Solution:
             r.. []
         res    # list
         queue    # list
-        rev = False  # Reverse direction
+        rev = F..  # Reverse direction
         level    # list
         queue.a..(root)
         queue.a..(N..)

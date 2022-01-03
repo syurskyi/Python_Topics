@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ gameOfLife(self, board):
     """
     :type board: List[List[int]]

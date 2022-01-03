@@ -14,5 +14,5 @@ ___ i __ r..(1,int(d[0])+1):
         
         
     
-res = ' '.join(s..(e) ___ e __ result)
+res = ' '.j..(s..(e) ___ e __ result)
 print(res)

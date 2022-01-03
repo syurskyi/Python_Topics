@@ -38,12 +38,12 @@ ___ _clean_sequence(sequence, str_table):
     t!t%ttttAACCG --> TTTTTTAACCG
     """
     sequence_clean = [char.upper() ___ char __ l..(sequence) __ char.isalpha() a.. char.upper() __ str_table]
-    r.. "".join(sequence_clean)
+    r.. "".j..(sequence_clean)
 
 
 ___ _str_table_lookup(str_table):
     str_table_split = str_table.splitlines()
-    lookup = {}
+    lookup    # dict
     ___ i __ r..(l..(str_table_split)):
         __ i __ [0, 1]:
             continue
@@ -78,7 +78,7 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     ___ i __ r..(l..(sequence_clean)):
         sequence_clean[i] = str_table_lookup[sequence_clean[i]]
 
-    r.. "".join(sequence_clean)
+    r.. "".j..(sequence_clean)
 
 
 ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):

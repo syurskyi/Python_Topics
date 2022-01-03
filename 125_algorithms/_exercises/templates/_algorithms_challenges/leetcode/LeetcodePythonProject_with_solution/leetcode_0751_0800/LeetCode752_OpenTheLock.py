@@ -3,7 +3,7 @@ Created on Mar 27, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ openLock(self, deadends, target):
         """
         :type deadends: List[str]
@@ -42,7 +42,7 @@ class Solution(object):
             level += 1
         r.. -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["0201","0101","0102","1212","2002"],
@@ -62,7 +62,7 @@ class Solution(object):
             ],
         ]
         ___ deadends, target __ testCases:
-            result = self.openLock(deadends, target)
+            result = openLock(deadends, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -1,20 +1,20 @@
-class ConnectingGraph3:
+c_ ConnectingGraph3:
     """
     @param: n: An integer
     """
-    ___ __init__(self, n):
+    ___ - , n):
         __ n < 1:
             r..
-        self.nodes = {}
-        self.count = n
+        nodes    # dict
+        count = n
         ___ i __ r..(n):
-            self.nodes[i + 1] = i + 1
+            nodes[i + 1] = i + 1
 
     ___ find(self, a):
-        __ self.nodes[a] __ a:
+        __ nodes[a] __ a:
             r.. a
-        self.nodes[a] = self.find(self.nodes[a])
-        r.. self.nodes[a]
+        nodes[a] = find(nodes[a])
+        r.. nodes[a]
 
     """
     @param: a: An integer
@@ -22,14 +22,14 @@ class ConnectingGraph3:
     @return: nothing
     """
     ___ connect(self, a, b):
-        root_a = self.find(a)
-        root_b = self.find(b)
+        root_a = find(a)
+        root_b = find(b)
         __ root_a != root_b:
-            self.nodes[root_a] = root_b
-            self.count -= 1
+            nodes[root_a] = root_b
+            count -= 1
 
     """
     @return: An integer
     """
-    ___ query(self):
-        r.. self.count
+    ___ query
+        r.. count

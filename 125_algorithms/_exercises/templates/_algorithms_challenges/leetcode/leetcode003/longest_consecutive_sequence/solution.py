@@ -1,10 +1,10 @@
-class Solution:
+c_ Solution:
     # @param num, a list of integer
     # @return an integer
     ___ longestConsecutive(self, num):
         __ n.. num:
             r.. 0
-        d = {}
+        d    # dict
         ___ e __ num:
             __ e n.. __ d:
                 d[e] = 1

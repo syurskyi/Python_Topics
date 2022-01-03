@@ -12,10 +12,10 @@ ___ translate_cds(cds: s.., translation_table: s..) -> s..:
     # TODO: Put your code here
     #print(f'{cds}\n{translation_table}')
     try:
-        clean_cds = ''.join([char ___ char __ cds __ char.isalpha()])
+        clean_cds = ''.j..([char ___ char __ cds __ char.isalpha()])
         r.. s..(Seq(clean_cds)
                 .upper()
-                .translate(table=translation_table, to_stop=True, cds=True)
+                .translate(table=translation_table, to_stop=T.., cds=T..)
                 )
     except TranslationError:
         raise TranslationError

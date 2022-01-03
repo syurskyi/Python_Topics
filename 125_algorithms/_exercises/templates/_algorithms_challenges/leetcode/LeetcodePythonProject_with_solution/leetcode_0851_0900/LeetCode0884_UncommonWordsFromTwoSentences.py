@@ -3,7 +3,7 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ uncommonFromSentences(self, A, B):
         """
         :type A: str

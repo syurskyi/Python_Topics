@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ sortedArrayToBST(self, nums):
     """
     :type nums: List[int]
@@ -15,6 +15,6 @@ class Solution(object):
       midPos = l..(nums) / 2
       mid = nums[midPos]
       root = TreeNode(mid)
-      root.left = self.sortedArrayToBST(nums[:midPos])
-      root.right = self.sortedArrayToBST(nums[midPos + 1:])
+      root.left = sortedArrayToBST(nums[:midPos])
+      root.right = sortedArrayToBST(nums[midPos + 1:])
       r.. root

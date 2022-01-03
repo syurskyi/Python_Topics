@@ -18,30 +18,30 @@ Both of the given trees will have between 1 and 100 nodes.
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ leafSimilar(self, root1: TreeNode, root2: TreeNode) -> bool:
         """
         brute force, get all the leaf and then compare
         to save space, use generator
         O(lg n) space for the stack
         """
-        itr1 = self.dfs(root1)
-        itr2 = self.dfs(root2)
+        itr1 = dfs(root1)
+        itr2 = dfs(root2)
         w... T...
             a = next(itr1, N..)
             b = next(itr2, N..)
             __ a != b:
-                r.. False
+                r.. F..
             __ a __ N.. a.. b __ N..
                 break
-        r.. True
+        r.. T..
 
     ___ dfs(self, node):
         stk = [node]

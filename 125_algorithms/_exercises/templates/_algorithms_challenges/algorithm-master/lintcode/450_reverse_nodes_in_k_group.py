@@ -7,7 +7,7 @@ class ListNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: head: a ListNode
     @param: k: An integer
@@ -22,7 +22,7 @@ class Solution:
 
         head = dummy
         w.... head:
-            head = self.reverse_next_kth(head, k)
+            head = reverse_next_kth(head, k)
 
         r.. dummy.next
 
@@ -43,7 +43,7 @@ class Solution:
         r.. pre
 
     ___ reverse_next_kth(self, head, k):
-        nk = self.find_kth(head, k)
+        nk = find_kth(head, k)
         __ n.. nk:
             r..
         nk_nxt = nk.next
@@ -52,7 +52,7 @@ class Solution:
 
         nk.next = N..
 
-        self.reverse(n1)
+        reverse(n1)
         n1_pre.next = nk
         n1.next = nk_nxt
         r.. n1

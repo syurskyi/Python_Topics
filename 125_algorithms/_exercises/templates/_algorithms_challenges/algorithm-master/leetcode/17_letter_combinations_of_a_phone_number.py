@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ letterCombinations(self, s):
         """
         :type s: str

@@ -19,7 +19,7 @@ The input array may contain duplicates, so ascending order here means <=.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findUnsortedSubarray(self, nums: List[int]) -> int:
         """
         Sorted at both ends

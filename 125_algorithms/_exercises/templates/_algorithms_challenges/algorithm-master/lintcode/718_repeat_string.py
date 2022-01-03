@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ repeatedString(self, a, b):
         """
         :type a: str

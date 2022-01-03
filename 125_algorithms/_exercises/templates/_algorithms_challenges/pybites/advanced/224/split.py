@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 ___ get_sentences(text):
 
@@ -7,7 +7,7 @@ ___ get_sentences(text):
        A sentence starts with [A-Z] and ends with [.?!]"""
 
 
-    lines = re.findall(r'\s*([A-Z].+?[\?\!\.])\s+',text,flags=re.MULTILINE | re.DOTALL)
+    lines = __.findall(r'\s*([A-Z].+?[\?\!\.])\s+',text,flags=__.MULTILINE | __.DOTALL)
     
 
     r.. [line.r..('\n',' ') ___ line __ lines]

@@ -1,20 +1,20 @@
 
-class Solution(object):
+c_ Solution(object):
     ___ wiggleSort(self, nums):
-        median = self.kthLargestElement(nums, (l..(nums)+1)//2)
+        median = kthLargestElement(nums, (l..(nums)+1)//2)
         n = l..(nums)
         left = 0
         i = 0
         right = n-1
         w.... i <= right:
-            __ nums[self.newIndex(i, n)] > median:
-                nums[self.newIndex(left, n)], nums[self.newIndex(i, n)] =\
-                nums[self.newIndex(i, n)], nums[self.newIndex(left, n)]
+            __ nums[newIndex(i, n)] > median:
+                nums[newIndex(left, n)], nums[newIndex(i, n)] =\
+                nums[newIndex(i, n)], nums[newIndex(left, n)]
                 left += 1
                 i += 1
-            ____ nums[self.newIndex(i, n)] < median:
-                nums[self.newIndex(right, n)], nums[self.newIndex(i, n)] =\
-                nums[self.newIndex(i, n)], nums[self.newIndex(right, n)]
+            ____ nums[newIndex(i, n)] < median:
+                nums[newIndex(right, n)], nums[newIndex(i, n)] =\
+                nums[newIndex(i, n)], nums[newIndex(right, n)]
                 right -= 1
             ____:
                 i += 1
@@ -23,12 +23,12 @@ class Solution(object):
         r.. (1+2*index)%(n|1)
     
     ___ kthLargestElement(self, nums, k):
-        self.shuffle(nums)
+        shuffle(nums)
         lo = 0
         hi = l..(nums)-1
         k = l..(nums)-k
         w.... lo < hi:
-            j = self.partition(nums, lo, hi)
+            j = partition(nums, lo, hi)
             __ j < k:
                 lo = j+1
             ____ j > k:
@@ -61,7 +61,7 @@ class Solution(object):
         half = l..(nums[::2])-1
         nums[::2], nums[1::2] = nums[half::-1], nums[:half:-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 5, 1, 1, 6, 4],
             [1, 3, 2, 2, 3, 1],
@@ -69,7 +69,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            self.wiggleSort(nums)
+            wiggleSort(nums)
             print('sorted: %s' % (nums))
             print('-='*20+'-')
 

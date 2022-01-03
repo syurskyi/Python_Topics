@@ -6,7 +6,7 @@ movies = get_movie_data()
 
 ___ test_movie_data_structure():
     ... l..(movies) __ 5
-    ... a..(type(m) __ d.. ___ m __ movies)
+    ... a..(t..(m) __ d.. ___ m __ movies)
 
 
 ___ test_data_analysis():

@@ -32,11 +32,11 @@ A solution set is:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         ret    # list
         candidates.s..()
-        self.dfs(candidates, 0, [], 0, target, ret)
+        dfs(candidates, 0, [], 0, target, ret)
         r.. ret
 
     ___ dfs(self, candidates, i, cur, cur_sum, target, ret):
@@ -53,12 +53,12 @@ class Solution:
         w.... j < l..(candidates) a.. candidates[j] __ candidates[i]:
             j += 1
 
-        self.dfs(candidates, j, cur, cur_sum, target, ret)
+        dfs(candidates, j, cur, cur_sum, target, ret)
 
         # choose A_i
         cur.a..(candidates[i])
         cur_sum += candidates[i]
-        self.dfs(candidates, i + 1, cur, cur_sum, target, ret)
+        dfs(candidates, i + 1, cur, cur_sum, target, ret)
         cur.pop()
         cur_sum -= candidates[i]
 

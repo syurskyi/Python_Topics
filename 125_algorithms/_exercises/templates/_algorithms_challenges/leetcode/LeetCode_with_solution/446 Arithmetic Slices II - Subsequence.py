@@ -9,7 +9,7 @@ array A. (Subsequence rather than slide)
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ numberOfArithmeticSlices(self, A):
         """
         Subsequence, count the number, looks like dp

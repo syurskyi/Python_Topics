@@ -19,13 +19,13 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     ___ zigzagLevelOrder(self, root):
         """
         BFS, stack & queue
@@ -37,7 +37,7 @@ class Solution:
 
         result    # list
         lst = [root]
-        direction = False
+        direction = F..
         w.... lst:
             __ direction:
                 result.a..([element.val ___ element __ lst])

@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ simplifyPath(self, path):
         """
         :type path: str
@@ -30,14 +30,14 @@ class Solution(object):
             result = '/'
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             '/home/',
             '/a/./b/../../c/',
         ]
         ___ path __ testCases:
             print('path: %s' % path)
-            result = self.simplifyPath(path)
+            result = simplifyPath(path)
             print('result: %s' % result)
             print('-='*15+'-')
 

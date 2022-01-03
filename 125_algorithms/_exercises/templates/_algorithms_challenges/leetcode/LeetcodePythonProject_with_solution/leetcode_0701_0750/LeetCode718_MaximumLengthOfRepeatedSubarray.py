@@ -3,7 +3,7 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findLength(self, A, B):
         """
         :type A: List[int]
@@ -24,7 +24,7 @@ class Solution(object):
                         maxLen = max(maxLen, dp[i][j])
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,2,3,2,1],
@@ -42,7 +42,7 @@ class Solution(object):
         ___ nums1, nums2 __ testCases:
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
-            result = self.findLength(nums1, nums2)
+            result = findLength(nums1, nums2)
             print('result: %s' % result)
             print('-='*30+'-')
 

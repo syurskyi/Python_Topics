@@ -14,7 +14,7 @@ MORSE_CODE = {'.-...': '&', '--..--': ',', '....-': '4',
 ___ decodeMorse(morseCode):
     MORSE_CODE['@'] = ' '
     morseCode = morseCode.s...r..('  ',' @ ')
-    r.. ''.join([MORSE_CODE[code] ___ code __ morseCode.s.. ])
+    r.. ''.j..([MORSE_CODE[code] ___ code __ morseCode.s.. ])
 
 
 print(decodeMorse('.... . -.--   .--- ..- -.. .   '))

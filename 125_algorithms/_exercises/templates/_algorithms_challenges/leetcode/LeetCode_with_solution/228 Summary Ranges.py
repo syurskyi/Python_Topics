@@ -6,7 +6,7 @@ For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ summaryRanges(self, nums):
         """
         :type nums: list[int]

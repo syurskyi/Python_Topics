@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 ___ get_users(passwd: s..) -> d..:
     """Split password output by newline,
@@ -7,14 +7,14 @@ ___ get_users(passwd: s..) -> d..:
       replace multiple commas in name with a single space
       return dict of keys = user, values = name.
     """
-    pwdict = {}
+    pwdict    # dict
     ___ line __ passwd.splitlines():
       __ l..(line) > 0:
         parsed_pw  = line.s..(":")
         __ l..(parsed_pw[4]) __ 0:
           pwdict[parsed_pw[0]] = 'unknown'
         ____:
-          pwdict[parsed_pw[0]] = re.sub(',+', ' ', parsed_pw[4].rstrip(','))
+          pwdict[parsed_pw[0]] = __.sub(',+', ' ', parsed_pw[4].rstrip(','))
     r..(pwdict)
 
 

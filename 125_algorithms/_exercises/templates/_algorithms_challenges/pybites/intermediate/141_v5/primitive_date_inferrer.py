@@ -3,7 +3,7 @@ ____ d__ _______ d__
 ____ enum _______ Enum
 
 
-class DateFormat(Enum):
+c_ DateFormat(Enum):
     DDMMYY = 0  # dd/mm/yy
     MMDDYY = 1  # mm/dd/yy
     YYMMDD = 2  # yy/mm/dd
@@ -26,7 +26,7 @@ class DateFormat(Enum):
         raise ValueError
 
 
-class InfDateFmtError(Exception):
+c_ InfDateFmtError(Exception):
     """custom exception when it is not possible to infer a date format
     e.g. too many NONPARSABLE or a tie """
     pass

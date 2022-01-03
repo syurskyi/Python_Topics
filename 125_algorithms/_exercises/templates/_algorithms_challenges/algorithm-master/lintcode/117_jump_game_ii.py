@@ -1,7 +1,7 @@
 """
 Greedy
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @return: An integer
@@ -28,7 +28,7 @@ class Solution:
 """
 DP
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @return: An integer

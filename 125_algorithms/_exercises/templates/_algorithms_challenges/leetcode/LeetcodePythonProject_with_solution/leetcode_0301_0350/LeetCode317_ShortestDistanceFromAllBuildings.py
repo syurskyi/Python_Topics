@@ -4,7 +4,7 @@ Created on Mar 16, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ shortestDistance(self, grid):
         """
         :type grid: List[List[int]]
@@ -21,7 +21,7 @@ class Solution(object):
                 __ grid[i][j] __ 1:
                     buildingNum += 1
                     queue = [(i, j)]
-                    visited = [[False]*n ___ _ __ r..(m)]
+                    visited = [[F..]*n ___ _ __ r..(m)]
                     level = 1
                     w.... queue:
                         size = l..(queue)
@@ -32,7 +32,7 @@ class Solution(object):
                                     n.. visited[x][y] a.. grid[x][y] __ 0:
                                     distance[x][y] += level
                                     reach[x][y] += 1
-                                    visited[x][y] = True
+                                    visited[x][y] = T..
                                     queue.a..((x, y))
                         level += 1
         res = float('inf')
@@ -42,7 +42,7 @@ class Solution(object):
                     res = m..(res, distance[i][j])
         r.. res __ res != float('inf') ____ -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 0, 2, 0, 1],
@@ -51,7 +51,7 @@ class Solution(object):
             ]
         ]
         ___ grid __ testCases:
-            result = self.shortestDistance(grid)
+            result = shortestDistance(grid)
             print('result: %s' % (result))
             print('-='*20+'-')
 

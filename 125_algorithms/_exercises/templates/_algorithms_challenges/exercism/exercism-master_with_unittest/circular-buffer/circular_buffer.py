@@ -1,40 +1,40 @@
 ____ collections _______ deque
 
 
-class CircularBuffer:
+c_ CircularBuffer:
 
-    ___ __init__(self, capacity):
-        self.capacity = capacity
-        self.buffer = deque([], capacity)
+    ___ - , capacity):
+        capacity = capacity
+        buffer = deque([], capacity)
 
-    ___ read(self):
-        __ self.empty():
+    ___ read
+        __ empty():
             raise BufferEmptyException
-        r.. self.buffer.popleft()
+        r.. buffer.popleft()
 
     ___ write(self, data):
-        __ self.full():
+        __ full():
             raise BufferFullException
-        self.buffer.a..(data)
+        buffer.a..(data)
 
     ___ overwrite(self, data):
-        __ self.full():
-            self.buffer.popleft()
-        self.buffer.a..(data)
+        __ full():
+            buffer.popleft()
+        buffer.a..(data)
 
-    ___ clear(self):
-        self.buffer.clear()
+    ___ clear
+        buffer.clear()
 
-    ___ empty(self):
-        r.. l..(self.buffer) __ 0
+    ___ empty
+        r.. l..(buffer) __ 0
 
-    ___ full(self):
-        r.. l..(self.buffer) __ self.capacity
+    ___ full
+        r.. l..(buffer) __ capacity
 
 
-class BufferFullException(Exception):
+c_ BufferFullException(Exception):
     pass
 
 
-class BufferEmptyException(Exception):
+c_ BufferEmptyException(Exception):
     pass

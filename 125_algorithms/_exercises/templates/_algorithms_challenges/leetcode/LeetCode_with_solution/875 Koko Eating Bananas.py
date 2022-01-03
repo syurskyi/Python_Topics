@@ -38,7 +38,7 @@ ____ typing _______ List
 _______ math
 
 
-class Solution:
+c_ Solution:
     ___ minEatingSpeed(self, piles: List[int], H: int) -> int:
         """
         validation:

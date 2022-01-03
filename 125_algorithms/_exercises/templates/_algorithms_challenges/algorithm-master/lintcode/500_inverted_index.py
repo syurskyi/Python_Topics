@@ -5,13 +5,13 @@ class Document:
         self.id = id
         self.content = content
 '''
-class Solution:
+c_ Solution:
     # @param {Document[]} docs a list of documents
     # @return {dict(string, int[])} an inverted index
     ___ invertedIndex(self, docs):
         __ n.. docs o. l..(docs) < 1:
             r.. {}
-        result = {}
+        result    # dict
         ___ doc __ docs:
             __ n.. doc.content:
                 continue

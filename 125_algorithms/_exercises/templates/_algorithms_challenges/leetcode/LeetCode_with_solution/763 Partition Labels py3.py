@@ -20,9 +20,9 @@ S will consist of lowercase letters ('a' to 'z') only.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ partitionLabels(self, S: s..) -> List[int]:
-        lasts = {}
+        lasts    # dict
         n = l..(S)
         ___ i __ r..(n-1, -1, -1):
             __ S[i] n.. __ lasts:

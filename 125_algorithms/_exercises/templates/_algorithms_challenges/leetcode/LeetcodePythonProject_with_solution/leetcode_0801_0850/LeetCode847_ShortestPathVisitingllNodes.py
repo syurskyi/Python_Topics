@@ -4,7 +4,7 @@ Created on Apr 10, 2019
 @author: tongq
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ shortestPathLength(self, graph):
         """
         :type graph: List[List[int]]
@@ -34,13 +34,13 @@ class Solution(object):
                         hashset.add(t)
         r.. -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,2,3],[0],[0],[0]],
             [[1],[0,2,4],[1,3,4],[2],[1,2]],
         ]
         ___ graph __ testCases:
-            result = self.shortestPathLength(graph)
+            result = shortestPathLength(graph)
             print('result: %s' % result)
 
 __ __name__ __ '__main__':

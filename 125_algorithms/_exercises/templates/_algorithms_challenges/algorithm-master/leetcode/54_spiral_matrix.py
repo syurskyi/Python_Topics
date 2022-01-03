@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ spiralOrder(self, matrix):
         """
         :type matrix: List[List[int]]

@@ -28,18 +28,18 @@ The size of the given array will be in the range [1,1000].
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ typing _______ List
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
         """
         monotonic stack - a stack to keep a decreasing subsequence from left to
@@ -61,7 +61,7 @@ class Solution:
 
         r.. stk[0]
 
-class Solution_heap:
+c_ Solution_heap:
     ___ constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
         """
         heap O(n lgn)
@@ -79,7 +79,7 @@ class Solution_heap:
         root = N..
         w.... h:
             _, m = heapq.heappop(h)
-            root = self.insert(root, m, idx)
+            root = insert(root, m, idx)
 
         r.. root
 
@@ -88,9 +88,9 @@ class Solution_heap:
             r.. TreeNode(m)
 
         __ idx[m] < idx[node.val]:
-            node.left = self.insert(node.left, m, idx)
+            node.left = insert(node.left, m, idx)
         ____ idx[m] > idx[node.val]:
-            node.right = self.insert(node.right, m, idx)
+            node.right = insert(node.right, m, idx)
         ____:
             raise
 

@@ -3,13 +3,13 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-class Interval(object):
-    ___ __init__(self, start, end, height):
-        self.start = start
-        self.end = end
-        self.height = height
+c_ Interval(object):
+    ___ - , start, end, height):
+        start = start
+        end = end
+        height = height
 
-class Solution(object):
+c_ Solution(object):
     ___ fallingSquares(self, positions):
         """
         :type positions: List[List[int]]
@@ -20,7 +20,7 @@ class Solution(object):
         h = 0
         ___ pos __ positions:
             cur = Interval(pos[0], pos[0]+pos[1], pos[1])
-            h = max(h, self.getHeight(intervals, cur))
+            h = max(h, getHeight(intervals, cur))
             res.a..(h)
         r.. res
     
@@ -34,7 +34,7 @@ class Solution(object):
         intervals.a..(cur)
         r.. cur.height
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1, 2], [2, 3], [6, 1]],
             [[100, 100], [200, 100]],
@@ -42,7 +42,7 @@ class Solution(object):
         ]
         ___ positions __ testCases:
             print('positions: %s' % positions)
-            result = self.fallingSquares(positions)
+            result = fallingSquares(positions)
             print('result: %s' % result)
             print('-='*30+'-')
 

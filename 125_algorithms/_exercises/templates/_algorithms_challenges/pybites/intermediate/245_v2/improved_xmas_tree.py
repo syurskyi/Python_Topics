@@ -38,7 +38,7 @@ ___ generate_improved_xmas_tree(rows=10):
 
 
 
-    r.. '\n'.join(lines)
+    r.. '\n'.j..(lines)
 
 
 

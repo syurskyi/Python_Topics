@@ -7,38 +7,38 @@ param_2 = obj.findMedian()
 _______ heapq
 
 
-class MedianFinder:
-    ___ __init__(self):
-        self.minheap    # list
-        self.maxheap    # list
+c_ MedianFinder:
+    ___ - ):
+        minheap    # list
+        maxheap    # list
 
     ___ addNum(self, num):
         """
         :type num: int
         :rtype: void
         """
-        __ self.minheap a.. num < self.minheap[0]:
-            heapq.heappush(self.maxheap, -num)
+        __ minheap a.. num < minheap[0]:
+            heapq.heappush(maxheap, -num)
         ____:
-            heapq.heappush(self.minheap, num)
+            heapq.heappush(minheap, num)
 
-    ___ findMedian(self):
+    ___ findMedian
         """
         :rtype: float
         """
-        __ n.. self.minheap:
+        __ n.. minheap:
             r.. 0.0
 
         # to handle odd case, it make sure `minheap` has one more child than `maxheap`
-        w.... l..(self.minheap) > l..(self.maxheap) + 1:
-            heapq.heappush(self.maxheap, - heapq.heappop(self.minheap))
+        w.... l..(minheap) > l..(maxheap) + 1:
+            heapq.heappush(maxheap, - heapq.heappop(minheap))
 
         # to handle even case, it make sure `minheap` and `maxheap` are same size
-        w.... l..(self.maxheap) > l..(self.minheap):
-            heapq.heappush(self.minheap, - heapq.heappop(self.maxheap))
+        w.... l..(maxheap) > l..(minheap):
+            heapq.heappush(minheap, - heapq.heappop(maxheap))
 
-        __ l..(self.minheap) > l..(self.maxheap):
-            r.. self.minheap[0] * 1.0
+        __ l..(minheap) > l..(maxheap):
+            r.. minheap[0] * 1.0
 
         # since the child in maxheap is negative
-        r.. (self.minheap[0] - self.maxheap[0]) / 2.0
+        r.. (minheap[0] - maxheap[0]) / 2.0

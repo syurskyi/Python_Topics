@@ -1,9 +1,9 @@
 ____ collections _______ deque
 
 
-class SnakeGame(object):
+c_ SnakeGame(object):
 
-  ___ __init__(self, width, height, food):
+  ___ - , width, height, food):
     """
     Initialize your data structure here.
     @param width - screen width
@@ -14,13 +14,13 @@ class SnakeGame(object):
     :type height: int
     :type food: List[List[int]]
     """
-    self.snake = deque([(0, 0)])
-    self.snakeSet = set([(0, 0)])
-    self.width = width
-    self.height = height
-    self.food = deque(food)
-    self.directions = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
-    self.score = 0
+    snake = deque([(0, 0)])
+    snakeSet = set([(0, 0)])
+    width = width
+    height = height
+    food = deque(food)
+    directions = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
+    score = 0
 
   ___ move(self, direction):
     """
@@ -31,27 +31,27 @@ class SnakeGame(object):
     :type direction: str
     :rtype: int
     """
-    __ direction n.. __ self.directions:
+    __ direction n.. __ directions:
       r.. -1
-    di, dj = self.directions[direction]
-    ni, nj = self.snake[0][0] + di, self.snake[0][1] + dj
+    di, dj = directions[direction]
+    ni, nj = snake[0][0] + di, snake[0][1] + dj
 
-    __ ni < 0 o. ni >= self.height o. nj < 0 o. nj >= self.width:
+    __ ni < 0 o. ni >= height o. nj < 0 o. nj >= width:
       r.. -1
 
-    self.snake.appendleft((ni, nj))
+    snake.appendleft((ni, nj))
 
-    __ self.food a.. [ni, nj] __ self.food[0]:
-      self.score += 1
-      self.food.popleft()
+    __ food a.. [ni, nj] __ food[0]:
+      score += 1
+      food.popleft()
     ____:
-      self.snakeSet.discard(self.snake.pop())
+      snakeSet.discard(snake.pop())
 
-    __ (ni, nj) __ self.snakeSet:
+    __ (ni, nj) __ snakeSet:
       r.. -1
-    self.snakeSet |= {(ni, nj)}
+    snakeSet |= {(ni, nj)}
 
-    r.. self.score
+    r.. score
 
 # Your SnakeGame object will be instantiated and called as such:
 # obj = SnakeGame(width, height, food)

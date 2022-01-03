@@ -20,23 +20,23 @@ You may assume that all inputs are consist of lowercase letters a-z.
 __author__ = 'Daniel'
 
 
-class TrieNode(object):
-    ___ __init__(self, char):
-        self.char = char
-        self.word = N..
-        self.children = {}  # map from char to TrieNode
+c_ TrieNode(object):
+    ___ - , char):
+        char = char
+        word = N..
+        children    # dict  # map from char to TrieNode
 
-    ___ __repr__(self):
-        r.. repr(self.char)
+    ___ __repr__
+        r.. repr(char)
 
 
-class Trie(object):
-    ___ __init__(self):
-        self.root = TrieNode(N..)
+c_ Trie(object):
+    ___ - ):
+        root = TrieNode(N..)
 
     ___ add(self, word):
-        word = word.lower()
-        cur = self.root
+        word = word.l..
+        cur = root
         ___ c __ word:
             __ c n.. __ cur.children:
                 cur.children[c] = TrieNode(c)
@@ -44,9 +44,9 @@ class Trie(object):
         cur.word = word
 
 
-class Solution:
-    ___ __init__(self):
-        self.dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
+c_ Solution:
+    ___ - ):
+        dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 
     ___ findWords(self, board, words):
         """
@@ -65,7 +65,7 @@ class Solution:
         marked = set()
         ___ i __ xrange(l..(board)):
             ___ j __ xrange(l..(board[0])):
-                self.dfs(board, i, j, trie.root, marked, ret)
+                dfs(board, i, j, trie.root, marked, ret)
 
         r.. l..(ret)
 
@@ -82,10 +82,10 @@ class Solution:
             cur = parent.children[c]
             __ cur.word:
                 ret.add(cur.word)
-            ___ dir __ self.dirs:
+            ___ dir __ dirs:
                 row = i+dir[0]
                 col = j+dir[1]
                 __ 0 <= row < m a.. 0 <= col < n a.. (row, col) n.. __ marked:
-                    self.dfs(board, row, col, cur, marked, ret)
+                    dfs(board, row, col, cur, marked, ret)
 
         marked.remove((i, j))

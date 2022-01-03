@@ -1,5 +1,5 @@
 ___ same(a1, a2):
     __ l..(set(a1)) __ l..(set(a2)):
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

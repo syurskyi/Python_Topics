@@ -27,20 +27,20 @@ ___ i __ r..(int(input())):
                 pass
         __ l..(store_str) __ 1:
             print('0',end=' ')
-            checker = False
+            checker = F..
             break
         ____ l..(store_str) __ 0:
             print('1',end= ' ')
-            checker = False
+            checker = F..
             break
         ____:
-            checker = True
+            checker = T..
             pass
     #Step two is once the element next to each other which were pair are removed.
     #then we are left with nested loops
     #if the starting element and the last element of the list are same then pop, else the give string is not nested properly
     # and the result is 0
-    __ checker __ True:
+    __ checker __ T..:
         w.... l..(store_str) != 1:
             try:
                 __ p[store_str[0]] __ store_str[-1]:

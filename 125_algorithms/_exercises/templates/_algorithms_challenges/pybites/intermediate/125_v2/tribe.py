@@ -1,6 +1,6 @@
 ____ collections _______ Counter
 
-_______ re
+_______ __
 ____ bs4 _______ BeautifulSoup
 _______ requests
 
@@ -30,15 +30,15 @@ ___ get_top_books(content_ N..
     counts = Counter()
     soup = BeautifulSoup(content,'html.parser')
 
-    links =  soup.find_all('a',href=re.compile(r'amazon.com'))
+    links =  soup.find_all('a',href=__.c..(r'amazon.com'))
 
     ___ link __ links:
-        title = link.getText(strip=True)
+        title = link.getText(strip=T..)
         counts[title] += 1
 
     
 
-    r.. [value ___ value __ counts.items() __ value[1] >= MIN_COUNT]
+    r.. [value ___ value __ counts.i.. __ value[1] >= MIN_COUNT]
 
 
     # code here ...

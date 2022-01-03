@@ -20,7 +20,7 @@ names: List[s..] = [
 
 @dataclass
 @total_ordering
-class Ninja:
+c_ Ninja:
     """
     The Ninja class will have the following features:
 
@@ -33,17 +33,17 @@ class Ninja:
     bites: int
 
     ___ __lt__(self, other):
-        r.. self.bites < other.bites
+        r.. bites < other.bites
 
     ___ __eq__(self, other):
-        r.. self.bites __ other.bites
+        r.. bites __ other.bites
 
-    ___ __str__(self):
-        r.. f'[{self.bites}] {self.name}'
+    ___ __str__
+        r.. f'[{bites}] {name}'
 
 
 @dataclass
-class Rankings:
+c_ Rankings:
     """
     The Rankings class will have the following features:
 
@@ -61,26 +61,26 @@ class Rankings:
     ninja_list    # list
 
     ___ add(self, ninja):
-        __ ninja n.. __ self.ninja_list:
-            self.ninja_list.a..(ninja)
-        self.ninja_list.s..()
+        __ ninja n.. __ ninja_list:
+            ninja_list.a..(ninja)
+        ninja_list.s..()
 
-    ___ dump(self):
-        r.. self.ninja_list.pop(0)
+    ___ dump
+        r.. ninja_list.pop(0)
 
     ___ highest(self, count: int = 1):
-        result = self.ninja_list[-count:]
+        result = ninja_list[-count:]
         result.reverse()
         r.. result
 
     ___ lowest(self, count: int = 1):
-        result = self.ninja_list[:count]
+        result = ninja_list[:count]
         r.. result
 
     ___ pair_up(self, count: int = 3):
-        highest = self.highest(count)
-        lowest = self.lowest(count)
+        highest = highest(count)
+        lowest = lowest(count)
         r.. l..(z..(highest, lowest))
 
-    ___ __len__(self):
-        r.. l..(self.ninja_list)
+    ___ __len__
+        r.. l..(ninja_list)

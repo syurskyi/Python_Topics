@@ -1,7 +1,7 @@
 ____ collections _______ Counter
 
 
-class Solution(object):
+c_ Solution(object):
   ___ getHint(self, secret, guess):
     """
     :type secret: str

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ rotate(self, matrix):
         """
         :type matrix: List[List[int]]
@@ -24,7 +24,7 @@ class Solution:
                 matrix[i][j], matrix[x][y] = matrix[x][y], matrix[i][j]
 
 
-class Solution:
+c_ Solution:
     ___ rotate(self, matrix):
         """
         :type matrix: List[List[int]]

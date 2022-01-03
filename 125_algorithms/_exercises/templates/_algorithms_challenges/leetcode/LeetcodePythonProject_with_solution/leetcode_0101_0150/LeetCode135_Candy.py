@@ -4,7 +4,7 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ candy(self, ratings):
         """
         :type ratings: List[int]
@@ -30,7 +30,7 @@ class Solution(object):
             res += max(left[i], right[i])
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 0, 2],
             [1, 2, 2],
@@ -39,7 +39,7 @@ class Solution(object):
         ]
         ___ ratings __ testCases:
             print('ratings: %s' % (ratings))
-            result = self.candy(ratings)
+            result = candy(ratings)
             print('result: %s' % (result))
             print('-='*20+'-')
 

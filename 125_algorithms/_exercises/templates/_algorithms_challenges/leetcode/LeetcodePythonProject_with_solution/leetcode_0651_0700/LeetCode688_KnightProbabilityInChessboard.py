@@ -3,7 +3,7 @@ Created on Oct 23, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ knightProbability(self, N, K, r, c):
         """
         :type N: int
@@ -25,7 +25,7 @@ class Solution(object):
             dp = dp1
         r.. float(dp[r][c])/8**K
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 2, 0, 0],
         ]
@@ -34,7 +34,7 @@ class Solution(object):
             print('K: %s' % K)
             print('r: %s' % r)
             print('c: %s' % c)
-            result = self.knightProbability(N, K, r, c)
+            result = knightProbability(N, K, r, c)
             print('result: %s' % result)
             print('-='*30+'-')
 

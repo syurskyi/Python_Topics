@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ canFinish(self, n, P):
         """
         :type n: int

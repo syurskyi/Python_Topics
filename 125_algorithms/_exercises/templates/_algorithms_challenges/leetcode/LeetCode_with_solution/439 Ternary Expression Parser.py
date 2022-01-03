@@ -4,7 +4,7 @@ Premium question
 """
 
 
-class Solution:
+c_ Solution:
     ___ parseTernary(self, expression: s..) -> s..:
         """
         stk from right to left parsing, including the operand and operator

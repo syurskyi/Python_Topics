@@ -3,7 +3,7 @@ Created on Sep 24, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ shortestPathAllKeys(self, grid):
         """
         :type grid: List[str]
@@ -38,12 +38,12 @@ class Solution(object):
                         deque.a..([ni, nj, steps+1, keys, collectedKeys])
         r.. -1
     
-    ___ test(self):
+    ___ test
         testCase = [
             
         ]
         ___ grid __ testCase:
-            res = self.shortestPathAllKeys(grid)
+            res = shortestPathAllKeys(grid)
             print('res: %s' % res)
             print('-='*30+'-')
 

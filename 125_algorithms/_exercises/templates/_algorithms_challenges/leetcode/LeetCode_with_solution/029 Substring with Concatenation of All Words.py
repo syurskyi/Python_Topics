@@ -10,7 +10,7 @@ You should return the indices: [0,9].
 (order does not matter).
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ findSubstring_TLE(self, S, L):
         """
         Time limit exceeded
@@ -98,7 +98,7 @@ class Solution:
         k = l..(L[0])
         l = l..(L)
 
-        Lmap = {}  # map of L
+        Lmap    # dict  # map of L
         ___ item __ L:
             __ item __ Lmap:
                 Lmap[item] += 1

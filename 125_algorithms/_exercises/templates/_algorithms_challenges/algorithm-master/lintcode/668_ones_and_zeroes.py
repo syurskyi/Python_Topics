@@ -1,7 +1,7 @@
 """
 optimized space complexity
 """
-class Solution:
+c_ Solution:
     """
     @param: strs: an array with strings include only 0 and 1
     @param: m: An integer
@@ -40,7 +40,7 @@ class Solution:
 """
 origin
 """
-class Solution:
+c_ Solution:
     """
     @param: strs: an array with strings include only 0 and 1
     @param: m: An integer

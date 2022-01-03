@@ -6,25 +6,25 @@ ___ swap(a, b):
     r.. (b, a)
 
 
-___ build_chain(chain, domino):
-    __ chain __ n.. N..
-        last = chain[-1]
-        __ l..(chain) __ 1 a.. last[0] __ domino[0]:
+___ build_chain(c__, domino):
+    __ c__ __ n.. N..
+        last = c__[-1]
+        __ l..(c__) __ 1 a.. last[0] __ domino[0]:
             r.. [swap(*last), domino]
-        ____ l..(chain) __ 1 a.. last[0] __ domino[1]:
+        ____ l..(c__) __ 1 a.. last[0] __ domino[1]:
             r.. [swap(*last), swap(*domino)]
         ____ last[1] __ domino[0]:
-            r.. chain + [domino]
+            r.. c__ + [domino]
         ____ last[1] __ domino[1]:
-            r.. chain + [swap(*domino)]
+            r.. c__ + [swap(*domino)]
     r.. N..
 
 
-___ chain(dominoes):
+___ c__(dominoes):
     __ n.. any(dominoes):
         r.. []
     ___ perm __ permutations(dominoes):
-        chain = reduce(build_chain, perm[1:], [perm[0]])
-        __ chain __ n.. N.. a.. chain[0][0] __ chain[-1][1]:
-            r.. chain
+        c__ = reduce(build_chain, perm[1:], [perm[0]])
+        __ c__ __ n.. N.. a.. c__[0][0] __ c__[-1][1]:
+            r.. c__
     r.. N..

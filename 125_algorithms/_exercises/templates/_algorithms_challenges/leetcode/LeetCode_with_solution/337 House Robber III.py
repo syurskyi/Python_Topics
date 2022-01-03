@@ -25,17 +25,17 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.cache_rob = {}
-        self.cache_notrob = {}
+c_ Solution(object):
+    ___ - ):
+        cache_rob    # dict
+        cache_notrob    # dict
 
     ___ rob(self, root):
         """
@@ -46,14 +46,14 @@ class Solution(object):
         __ root __ N..
             r.. 0
 
-        __ root n.. __ self.cache_rob:
+        __ root n.. __ cache_rob:
             val = max(
-                self.notrob(root),
-                root.val + self.notrob(root.left) + self.notrob(root.right)
+                notrob(root),
+                root.val + notrob(root.left) + notrob(root.right)
             )
-            self.cache_rob[root] = val
+            cache_rob[root] = val
 
-        r.. self.cache_rob[root]
+        r.. cache_rob[root]
 
     ___ notrob(self, root):
         """
@@ -64,18 +64,18 @@ class Solution(object):
         __ root __ N..
             r.. 0
 
-        __ root n.. __ self.cache_notrob:
+        __ root n.. __ cache_notrob:
             val = (
-                self.rob(root.left) +
-                self.rob(root.right)
+                rob(root.left) +
+                rob(root.right)
             )
 
-            self.cache_notrob[root] = val
+            cache_notrob[root] = val
 
-        r.. self.cache_notrob[root]
+        r.. cache_notrob[root]
 
 
-class SolutionTLE(object):
+c_ SolutionTLE(object):
     ___ rob(self, root):
         """
         :type root: TreeNode
@@ -85,8 +85,8 @@ class SolutionTLE(object):
             r.. 0
 
         r.. max(
-            self.dorob(root),
-            self.notrob(root)
+            dorob(root),
+            notrob(root)
         )
 
     ___ dorob(self, root):
@@ -95,13 +95,13 @@ class SolutionTLE(object):
 
         r.. (
             root.val +
-            self.notrob(root.left) +
-            self.notrob(root.right)
+            notrob(root.left) +
+            notrob(root.right)
         )
 
     ___ notrob(self, root):
         __ root __ N..
             r.. 0
 
-        r.. (max(self.notrob(root.left), self.rob(root.left)) +
-                    max(self.notrob(root.right), self.rob(root.right)))
+        r.. (max(notrob(root.left), rob(root.left)) +
+                    max(notrob(root.right), rob(root.right)))

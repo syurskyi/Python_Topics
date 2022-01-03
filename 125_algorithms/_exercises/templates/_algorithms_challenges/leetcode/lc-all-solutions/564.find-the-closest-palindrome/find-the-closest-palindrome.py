@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ nearestPalindromic(self, n):
     """
     :type n: str

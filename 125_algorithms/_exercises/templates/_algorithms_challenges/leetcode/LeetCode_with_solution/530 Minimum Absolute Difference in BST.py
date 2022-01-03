@@ -24,14 +24,14 @@ Note: There are at least two nodes in this BST.
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ getMinimumDifference(self, root: 'TreeNode') -> int:
         """
         For every node, find min and max in left or right substree.
@@ -41,14 +41,14 @@ class Solution:
         recursively pass the min and max, O(n)
         """
         ret = [float('inf')]  # keep reference
-        self.dfs(root, ret)
+        dfs(root, ret)
         r.. ret[0]
 
     ___ dfs(self, node, ret):
         __ n.. node:
             r.. N.., N..
-        left_min, left_max = self.dfs(node.left, ret)
-        right_min, right_max = self.dfs(node.right, ret)
+        left_min, left_max = dfs(node.left, ret)
+        right_min, right_max = dfs(node.right, ret)
         __ left_max:
             ret[0] = m..(ret[0], abs(node.val - left_max))
         __ right_min:

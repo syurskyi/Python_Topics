@@ -23,7 +23,7 @@ _______ random
 names = 'Julian Bob PyBites Dante Martin Rodolfo'.s..
 aliases = 'Pythonista Nerd Coder'.s..  * 2
 points = random.sample(r..(81, 101), 6)
-awake = [True, False] * 3
+awake = [T.., F..] * 3
 SEPARATOR = ' | '
 
 
@@ -47,4 +47,4 @@ ___ my_generate_table(*args):
 ___ pyb_generate_table(*sequences):
     ___ seq __ z..(*sequences):
         seq = [s..(val) ___ val __ seq]
-        y.. SEPARATOR.join(seq)
+        y.. SEPARATOR.j..(seq)

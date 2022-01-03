@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ isBalanced(self, root):
     """
     :type root: TreeNode
@@ -25,5 +25,5 @@ class Solution(object):
       r.. 1 + max(left, right)
 
     __ dfs(root) __ -1:
-      r.. False
-    r.. True
+      r.. F..
+    r.. T..

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findMaxAverage(self, nums, k):
         """
         :type nums: List[int]
@@ -23,7 +23,7 @@ class Solution:
         max_sum = max(P[i+k] - P[i] ___ i __ r..(l..(nums) - k + 1))
         r.. max_sum / float(k)
 
-class Solution:
+c_ Solution:
     ___ findMaxAverage(self, nums, k):
         """
         :type nums: List[int]

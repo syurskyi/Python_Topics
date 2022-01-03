@@ -16,7 +16,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ canConstruct(self, ransomNote, magazine):
         """
         :type ransomNote: str
@@ -30,7 +30,7 @@ class Solution(object):
 
         ___ e __ ransomNote:
             __ d[e] __ 0:
-                r.. False
+                r.. F..
             d[e] -= 1
 
-        r.. True
+        r.. T..

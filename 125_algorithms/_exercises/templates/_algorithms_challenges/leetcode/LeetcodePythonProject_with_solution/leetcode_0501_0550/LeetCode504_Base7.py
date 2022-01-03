@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ convertToBase7(self, num):
         """
         :type num: int
@@ -25,13 +25,13 @@ class Solution(object):
         ____:
             r.. sig+res
     
-    ___ test(self):
+    ___ test
         testCases = [
             100,
             -7,
         ]
         ___ num __ testCases:
-            result = self.convertToBase7(num)
+            result = convertToBase7(num)
             print('result: %s' % result)
             print('-='*30+'-')
 

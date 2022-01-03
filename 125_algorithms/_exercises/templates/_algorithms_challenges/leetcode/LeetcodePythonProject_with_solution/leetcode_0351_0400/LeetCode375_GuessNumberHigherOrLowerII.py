@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ getMoneyAmount(self, n):
         dp = [[0]*(n+1) ___ _ __ r..(n+1)]
         ___ j __ r..(2, n+1):
@@ -19,13 +19,13 @@ class Solution(object):
                     dp[i][j] = globalMin
         r.. dp[1][n]
     
-    ___ test(self):
+    ___ test
         testCases = [
             10,
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.getMoneyAmount(n)
+            result = getMoneyAmount(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

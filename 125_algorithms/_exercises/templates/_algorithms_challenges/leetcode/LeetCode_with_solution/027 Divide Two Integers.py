@@ -6,7 +6,7 @@ MAX_INT = 2147483647
 MIN_INT = -2147483648
 
 
-class Solution:
+c_ Solution:
     ___ divide(self, dividend, divisor):
         """
         O(n lgn)

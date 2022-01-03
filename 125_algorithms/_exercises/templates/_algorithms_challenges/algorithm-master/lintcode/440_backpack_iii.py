@@ -1,7 +1,7 @@
 """
 Optimize Space
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an integer array
     @param: V: an integer array
@@ -29,7 +29,7 @@ class Solution:
 """
 Origin
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an integer array
     @param: V: an integer array

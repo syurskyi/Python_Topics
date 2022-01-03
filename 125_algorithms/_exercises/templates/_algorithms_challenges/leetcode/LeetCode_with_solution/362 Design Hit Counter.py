@@ -6,8 +6,8 @@ ____ collections _______ deque
 __author__ = 'Daniel'
 
 
-class HitCounter(object):
-    ___ __init__(self):
+c_ HitCounter(object):
+    ___ - ):
         """
         Initialize your data structure here.
 
@@ -15,7 +15,7 @@ class HitCounter(object):
         It is possible that several hits arrive roughly at the same time.
         What if the number of hits per second could be very large? Does your design scale?  # use counter
         """
-        self.q = deque()
+        q = deque()
 
     ___ hit(self, timestamp):
         """
@@ -24,8 +24,8 @@ class HitCounter(object):
         :type timestamp: int
         :rtype: void
         """
-        self.pop(timestamp)
-        self.q.a..(timestamp)
+        pop(timestamp)
+        q.a..(timestamp)
 
     ___ getHits(self, timestamp):
         """
@@ -34,12 +34,12 @@ class HitCounter(object):
         :type timestamp: int
         :rtype: int
         """
-        self.pop(timestamp)
-        r.. l..(self.q)
+        pop(timestamp)
+        r.. l..(q)
 
     ___ pop(self, timestamp):
-        w.... self.q a.. timestamp - self.q[0] >= 300:
-            self.q.popleft()
+        w.... q a.. timestamp - q[0] >= 300:
+            q.popleft()
 
 
 # Your HitCounter object will be instantiated and called as such:

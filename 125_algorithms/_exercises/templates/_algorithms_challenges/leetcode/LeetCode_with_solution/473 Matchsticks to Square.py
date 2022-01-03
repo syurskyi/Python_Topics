@@ -23,7 +23,7 @@ Explanation: You cannot find a way to form a square with all the matchsticks.
 """
 
 
-class Solution:
+c_ Solution:
     ___ makesquare(self, nums):
         """
         need to use up all the stics
@@ -34,30 +34,30 @@ class Solution:
         :rtype: bool
         """
         __ n.. nums:
-            r.. False
+            r.. F..
 
         square = [0 ___ _ __ r..(4)]
         l = s..(nums) // 4
         __ s..(nums) % 4 != 0:
-            r.. False
+            r.. F..
 
         nums.s..(r.._T..
-        r.. self.dfs(nums, 0, l, square)
+        r.. dfs(nums, 0, l, square)
 
     ___ dfs(self, nums, i, l, square):
         __ i >= l..(nums):
-            r.. True
+            r.. T..
 
         ___ j __ r..(l..(square)):
             __ nums[i] + square[j] <= l:
                 square[j] += nums[i]
-                __ self.dfs(nums, i + 1, l, square):
-                    r.. True
+                __ dfs(nums, i + 1, l, square):
+                    r.. T..
                 square[j] -= nums[i]
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().makesquare([1,1,2,2,2]) __ True
-    ... Solution().makesquare([3,3,3,3,4]) __ False
+    ... Solution().makesquare([1,1,2,2,2]) __ T..
+    ... Solution().makesquare([3,3,3,3,4]) __ F..

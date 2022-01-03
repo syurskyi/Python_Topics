@@ -1,13 +1,13 @@
 _______ os
-_______ re
+_______ __
 ____ difflib _______ SequenceMatcher
 _______ i..
 ____ urllib.request _______ urlretrieve
 
 # prep
-TAG_HTML = re.compile(r'<category>([^<]+)</category>')
+TAG_HTML = __.c..(r'<category>([^<]+)</category>')
 TMP = os.getenv("TMP", "/tmp")
-TEMPFILE = os.path.join(TMP, 'feed')
+TEMPFILE = os.path.j..(TMP, 'feed')
 MIN_TAG_LEN = 10
 IDENTICAL = 1.0
 SIMILAR = 0.95
@@ -22,7 +22,7 @@ ___ _get_tags(tempfile=TEMPFILE):
     """Helper to parse all tags from a static copy of PyBites' feed,
        providing this here so you can focus on difflib"""
     with open(tempfile) as f:
-        content = f.read().lower()
+        content = f.read().l..
     # take a small subset to keep it performant
     tags = TAG_HTML.findall(content)
     tags = [tag ___ tag __ tags __ l..(tag) > MIN_TAG_LEN]

@@ -18,7 +18,7 @@ All letters in S and C are lowercase.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ shortestToChar(self, S: s.., C: s..) -> List[int]:
         """
         get the sorted indexes of C

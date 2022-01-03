@@ -11,7 +11,7 @@ Follow up: Could you solve it without loops/recursion?
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isPowerOfFour(self, num):
         """
         Modular calculation
@@ -22,9 +22,9 @@ class Solution(object):
         :return:
         """
         __ num < 1:
-            r.. False
+            r.. F..
         __ num & num -1 != 0:
-            r.. False
+            r.. F..
 
         r.. num % 3 __ 1
 
@@ -35,14 +35,14 @@ class Solution(object):
         :rtype: bool
         """
         __ num < 1:
-            r.. False
+            r.. F..
         __ num & num-1 != 0:
-            r.. False
+            r.. F..
 
         w... T...
             __ num __ 0:
-                r.. False
+                r.. F..
             ____ num __ 1:
-                r.. True
+                r.. T..
 
             num >>= 2

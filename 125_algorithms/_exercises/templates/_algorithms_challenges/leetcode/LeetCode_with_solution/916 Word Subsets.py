@@ -46,7 +46,7 @@ ____ typing _______ List
 ____ collections _______ Counter, defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ wordSubsets(self, A: List[s..], B: List[s..]) -> List[s..]:
         """
         brute foce check b subset of a: two pointers O(|a| + |b|)
@@ -60,13 +60,13 @@ class Solution:
         mx = defaultdict(int)
         ___ b __ B:
             c = Counter(b)
-            ___ k, v __ c.items():
+            ___ k, v __ c.i..:
                 mx[k] = max(mx[k], v)
 
         ret    # list
         ___ a __ A:
             c = Counter(a)
-            ___ k, v __ mx.items():
+            ___ k, v __ mx.i..:
                 __ c[k] < v:
                     break
             ____:

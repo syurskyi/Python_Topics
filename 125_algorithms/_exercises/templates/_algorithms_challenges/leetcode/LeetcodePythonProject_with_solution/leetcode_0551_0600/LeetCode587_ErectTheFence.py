@@ -4,12 +4,12 @@ Created on Sep 4, 2017
 @author: MT
 '''
 # Definition for a point.
-class Point(object):
-    ___ __init__(self, a=0, b=0):
-        self.x = a
-        self.y = b
+c_ Point(object):
+    ___ - , a=0, b=0):
+        x = a
+        y = b
 
-class Solution(object):
+c_ Solution(object):
     ___ outerTrees(self, points):
         """
         :type points: List[Point]
@@ -25,23 +25,23 @@ class Solution(object):
         res.add(first)
         cur = first
         curInd = firstInd
-        flag = True
+        flag = T..
         w.... curInd != firstInd o. flag:
-            flag = False
+            flag = F..
             nextPoint = points[0]
             nextInd = 0
             ___ i __ r..(1, l..(points)):
                 __ i __ curInd:
                     continue
-                cross = self.crossProductLength(cur, points[i], nextPoint)
+                cross = crossProductLength(cur, points[i], nextPoint)
                 __ nextInd __ curInd o. cross > 0 o.\
-                    (cross __ 0 a.. self.distance(points[i], cur) > self.distance(nextPoint, cur)):
+                    (cross __ 0 a.. distance(points[i], cur) > distance(nextPoint, cur)):
                     nextPoint = points[i]
                     nextInd = i
             ___ i, point __ e..(points):
                 __ i __ curInd:
                     continue
-                cross = self.crossProductLength(cur, point, nextPoint)
+                cross = crossProductLength(cur, point, nextPoint)
                 __ cross __ 0:
                     res.add(points[i])
             cur = nextPoint
@@ -58,7 +58,7 @@ class Solution(object):
     ___ distance(self, p1, p2):
         r.. (p1.x-p2.x)**2+(p1.y-p2.y)**2
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]],
             [[1,2],[2,2],[4,2]],
@@ -66,7 +66,7 @@ class Solution(object):
         ___ points __ testCases:
             print('points: %s' % points)
             points = [Point(a, b) ___ a, b __ points]
-            result = self.outerTrees(points)
+            result = outerTrees(points)
             print('result: %s' % result)
             print('-='*30+'-')
 

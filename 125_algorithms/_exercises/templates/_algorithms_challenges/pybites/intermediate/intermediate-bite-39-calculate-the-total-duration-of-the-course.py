@@ -1,12 +1,12 @@
 ____ d__ _______ d__, t.., time
 _______ os
-_______ re
+_______ __
 _______ urllib.request
 
 # https://stackoverflow.com/questions/100210/what-is-the-standard-way-to-add-n-seconds-to-datetime-time-in-python
 
 # getting the data
-COURSE_TIMES = os.path.join(
+COURSE_TIMES = os.path.j..(
     os.getenv("TMP", "/tmp"),
     'course_timings'
 )
@@ -30,7 +30,7 @@ ___ get_all_timestamps():
     with open(COURSE_TIMES, 'r') as f:
         result    # list
         ___ line __ f:
-            timestamp = re.findall(r'(\d{1,2}:\d{1,2})', line)
+            timestamp = __.findall(r'(\d{1,2}:\d{1,2})', line)
             __ timestamp:
                 result.a..(timestamp[0])
         print(result)

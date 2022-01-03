@@ -4,7 +4,7 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ shortestPalindrome(self, s):
         """
         :type s: str
@@ -19,9 +19,9 @@ class Solution(object):
             r.. s
         mid = s[:i]
         suffix = s[i:]
-        r.. suffix[::-1]+self.shortestPalindrome(mid)+suffix
+        r.. suffix[::-1]+shortestPalindrome(mid)+suffix
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aacecaaa',
             'abcd',
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.shortestPalindrome(s)
+            result = shortestPalindrome(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 

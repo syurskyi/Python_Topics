@@ -3,7 +3,7 @@ ____ d__ _______ d__
 ____ collections _______ Counter
 
 
-class DateFormat(Enum):
+c_ DateFormat(Enum):
     DDMMYY = 0  # dd/mm/yy
     MMDDYY = 1  # mm/dd/yy
     YYMMDD = 2  # yy/mm/dd
@@ -26,7 +26,7 @@ class DateFormat(Enum):
         raise ValueError
 
 
-class InfDateFmtError(Exception):
+c_ InfDateFmtError(Exception):
     """custom exception when it is not possible to infer a date format
     e.g. too many NONPARSABLE or a tie """
     pass
@@ -67,12 +67,12 @@ ___ get_dates(dates):
     date_formats_to_try = DateFormat.get_d_parse_formats()
     # complete this method
     ___ date __ dates:
-        found = False
+        found = F..
         ___ i,date_format __ e..(date_formats_to_try):
             try:
                 d__.strptime(date,date_format)
                 format_counts[date_format] += 1
-                found = True
+                found = T..
             except:
                 pass
         __ n.. found:
@@ -81,7 +81,7 @@ ___ get_dates(dates):
 
     max_frequency,max_count = format_counts.most_common(1)[0]
 
-    __ max_frequency __ DateFormat.NONPARSABLE o. s..(value __ max_count ___ key,value __ format_counts.items() __ key != DateFormat.NONPARSABLE) >= 2:
+    __ max_frequency __ DateFormat.NONPARSABLE o. s..(value __ max_count ___ key,value __ format_counts.i.. __ key != DateFormat.NONPARSABLE) >= 2:
         raise InfDateFmtError
 
     result    # list

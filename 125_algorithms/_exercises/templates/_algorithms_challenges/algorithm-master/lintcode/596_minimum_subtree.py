@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     min_sum = float('inf')
     node = N..
 
@@ -16,19 +16,19 @@ class Solution:
     @return: the root of the minimum subtree
     """
     ___ findSubtree(self, root):
-        self._traversal(root)
-        r.. self.node
+        _traversal(root)
+        r.. node
 
     ___ _traversal(self, node):
         __ n.. node:
             r.. 0
 
-        left_sum = self._traversal(node.left)
-        right_sum = self._traversal(node.right)
+        left_sum = _traversal(node.left)
+        right_sum = _traversal(node.right)
         subtree_sum = left_sum + right_sum + node.val
 
-        __ subtree_sum < self.min_sum:
-            self.min_sum = subtree_sum
-            self.node = node
+        __ subtree_sum < min_sum:
+            min_sum = subtree_sum
+            node = node
 
         r.. subtree_sum

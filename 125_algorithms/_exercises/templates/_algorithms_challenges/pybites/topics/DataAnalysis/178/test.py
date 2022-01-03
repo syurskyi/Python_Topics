@@ -7,7 +7,7 @@ ____ d__ _______ d__
 
 ____ dateutil.parser _______ parse
 
-commits = os.path.join(os.getenv("TMP", "/tmp"), 'commits')
+commits = os.path.j..(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits
@@ -31,5 +31,5 @@ with open(commits) as f:
                 total_commit = int(commit_list[3])
             #print(f'{year_month} {total_commit}')
             commit_log[year_month] += total_commit
-    newlist = s..(commit_log.items(), key=l.... item: item[1], r.._T..
+    newlist = s..(commit_log.i.., key=l.... item: item[1], r.._T..
     print(newlist[-1][0], newlist[0][0])

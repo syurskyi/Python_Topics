@@ -14,7 +14,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLongestSubstringKDistinct(self, s, k):
         """
         Brute force: O(n^2 * n)

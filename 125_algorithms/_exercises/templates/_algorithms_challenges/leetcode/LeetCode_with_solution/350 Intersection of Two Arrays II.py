@@ -18,7 +18,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ intersect(self, nums1, nums2):
         """
         Hash table
@@ -35,7 +35,7 @@ class Solution(object):
             h2[b] += 1
 
         ret    # list
-        ___ k, v __ h1.items():
+        ___ k, v __ h1.i..:
             cnt = m..(v, h2[k])
             ret.extend([k]*cnt)
 

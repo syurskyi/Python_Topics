@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ longestIncreasingPath(self, G):
         """
         :type G: List[List[int]]
@@ -7,7 +7,7 @@ class Solution:
         __ n.. G o. n.. G[0]:
             r.. 0
 
-        self.V = (
+        V = (
             (-1,  0),
             ( 1,  0),
             ( 0, -1),
@@ -19,7 +19,7 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                size = self.dfs(G, x, y, memo)
+                size = dfs(G, x, y, memo)
                 __ size > ans:
                     ans = size
 
@@ -31,14 +31,14 @@ class Solution:
 
         res = 1
 
-        ___ dx, dy __ self.V:
+        ___ dx, dy __ V:
             _x = x + dx
             _y = y + dy
             __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0])):
                 continue
             __ G[x][y] >= G[_x][_y]:
                 continue
-            size = 1 + self.dfs(G, _x, _y, memo)
+            size = 1 + dfs(G, _x, _y, memo)
             __ size > res:
                 res = size
 

@@ -11,7 +11,7 @@ Given s = "Hello World",
 return 5.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ lengthOfLastWord(self, s):
         """
         String

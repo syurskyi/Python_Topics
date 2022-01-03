@@ -20,7 +20,7 @@ integer.
 """
 
 
-class Solution:
+c_ Solution:
     ___ checkSubarraySum(self, nums, k):
         """
         Two pointers algorithm won't work since it is multiple of k
@@ -38,13 +38,13 @@ class Solution:
                 s %= k
             __ s __ h:
                 __ l - h[s] >= 2:  # size at least 2
-                    r.. True
+                    r.. T..
             ____:
                 # only keep the lowest
                 h[s] = l
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().checkSubarraySum([23,2,4,6,7], 6) __ True
+    ... Solution().checkSubarraySum([23,2,4,6,7], 6) __ T..

@@ -1,30 +1,30 @@
-class SaddlePoints:
-    ___ __init__(self, matrix):
-        self.matrix = matrix
-        self.columns = l..(z..(*self.matrix))
+c_ SaddlePoints:
+    ___ - , matrix):
+        matrix = matrix
+        columns = l..(z..(*matrix))
 
-    ___ get_saddle_points(self):
-        __ self.invalid_matrix():
+    ___ get_saddle_points
+        __ invalid_matrix():
             raise ValueError('Matrix has rows of unequal length')
-        r.. self.saddle_points()
+        r.. saddle_points()
 
-    ___ saddle_points(self):
+    ___ saddle_points
         saddle_points = set()
-        ___ row __ r..(l..(self.matrix)):
-            ___ col __ r..(l..(self.matrix[row])):
-                __ self.saddle_point(row, col):
+        ___ row __ r..(l..(matrix)):
+            ___ col __ r..(l..(matrix[row])):
+                __ saddle_point(row, col):
                     saddle_points.add((row, col))
         r.. saddle_points
 
     ___ saddle_point(self, row, col):
-        r.. (self.matrix[row][col] __ max(self.matrix[row]) a..
-                self.matrix[row][col] __ m..(self.columns[col]))
+        r.. (matrix[row][col] __ max(matrix[row]) a..
+                matrix[row][col] __ m..(columns[col]))
 
-    ___ invalid_matrix(self):
-        ___ row __ r..(l..(self.matrix)):
-            __ l..(self.matrix[row]) != l..(self.matrix[0]):
-                r.. True
-        r.. False
+    ___ invalid_matrix
+        ___ row __ r..(l..(matrix)):
+            __ l..(matrix[row]) != l..(matrix[0]):
+                r.. T..
+        r.. F..
 
 
 ___ saddle_points(inp):

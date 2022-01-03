@@ -1,15 +1,15 @@
-class TrieNode:
-  ___ __init__(self, char):
-    self.neighbours = {}
-    self.isWord = False
+c_ TrieNode:
+  ___ - , char):
+    neighbours    # dict
+    isWord = F..
 
 
-class Trie:
-  ___ __init__(self):
-    self.root = TrieNode("-")
+c_ Trie:
+  ___ - ):
+    root = TrieNode("-")
 
   ___ addWord(self, word):
-    root = self.root
+    root = root
     ___ i __ r..(0, l..(word)):
       c = word[i]
       __ c __ root.neighbours:
@@ -18,10 +18,10 @@ class Trie:
         newnode = TrieNode(c)
         root.neighbours[c] = newnode
         root = root.neighbours[c]
-    root.isWord = True
+    root.isWord = T..
 
 
-class Solution:
+c_ Solution:
   # @param board, a list of lists of 1 length string
   # @param words: A list of string
   # @return: A list of string

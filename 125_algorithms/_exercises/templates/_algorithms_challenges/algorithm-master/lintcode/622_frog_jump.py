@@ -1,18 +1,18 @@
 """
 BFS
 """
-class Solution:
+c_ Solution:
     ___ canCross(self, stones):
         """
         :type stones: List[int]
         :rtype: bool
         """
         __ n.. stones:
-            r.. False
+            r.. F..
         __ l..(stones) < 2:
-            r.. True
+            r.. T..
         __ stones[1] != 1:
-            r.. False
+            r.. F..
 
         xs = set(stones)  # to check in O(1)
         queue = [(stones[0], 0)]
@@ -25,29 +25,29 @@ class Solution:
                 __ (pos + x, x) __ visited:
                     continue
                 __ pos + x __ stones[-1]:
-                    r.. True
+                    r.. T..
 
                 visited.add((pos + x, x))
                 queue.a..((pos + x, x))
 
-        r.. False
+        r.. F..
 
 
 """
 DP
 """
-class Solution:
+c_ Solution:
     ___ canCross(self, stones):
         """
         :type stones: List[int]
         :rtype: bool
         """
         __ n.. stones:
-            r.. False
+            r.. F..
         __ l..(stones) < 2:
-            r.. True
+            r.. T..
         __ stones[1] != 1:
-            r.. False
+            r.. F..
 
         dp = {pos: set() ___ pos __ stones}
         dp[stones[0]].add(0)

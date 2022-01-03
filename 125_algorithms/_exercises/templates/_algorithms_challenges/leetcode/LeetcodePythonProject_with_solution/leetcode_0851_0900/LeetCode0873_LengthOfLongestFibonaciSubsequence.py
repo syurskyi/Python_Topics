@@ -3,13 +3,13 @@ Created on Oct 3, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ lenLongestFibSubseq(self, A):
         """
         :type A: List[int]
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         hashset = set(A)
         ___ j __ r..(l..(A)):
             ___ i __ r..(j):

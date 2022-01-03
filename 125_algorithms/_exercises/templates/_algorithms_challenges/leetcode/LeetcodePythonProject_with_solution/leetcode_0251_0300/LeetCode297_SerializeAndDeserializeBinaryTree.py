@@ -5,13 +5,13 @@ Created on Mar 9, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Codec:
+c_ Codec:
     ___ serialize(self, root):
         stack = [root]
         result = ''
@@ -28,7 +28,7 @@ class Codec:
     ___ deserialize(self, data):
         arr = data.s..(',')
         ind = [0]
-        root = self.helper(arr, ind)
+        root = helper(arr, ind)
         r.. root
     
     ___ helper(self, arr, ind):
@@ -36,9 +36,9 @@ class Codec:
             r.. N..
         root = TreeNode(arr[ind[0]])
         ind[0]+=1
-        root.left = self.helper(arr, ind)
+        root.left = helper(arr, ind)
         ind[0]+=1
-        root.right = self.helper(arr, ind)
+        root.right = helper(arr, ind)
         r.. root
 
 __ __name__ __ '__main__':

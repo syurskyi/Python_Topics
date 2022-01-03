@@ -20,7 +20,7 @@ Note: Recursive solution is trivial, could you do it iteratively?
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ inorderTraversal(self, root):
         """
         :type root: TreeNode

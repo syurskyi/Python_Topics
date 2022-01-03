@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ shortestDistance(self, grid):
     """
     :type grid: List[List[int]]
@@ -32,8 +32,8 @@ class Solution(object):
       __ count != buildNum:
         print
         count, buildNum
-        r.. False
-      r.. True
+        r.. F..
+      r.. T..
 
     count = 0
     ___ i __ r..(0, l..(grid)):

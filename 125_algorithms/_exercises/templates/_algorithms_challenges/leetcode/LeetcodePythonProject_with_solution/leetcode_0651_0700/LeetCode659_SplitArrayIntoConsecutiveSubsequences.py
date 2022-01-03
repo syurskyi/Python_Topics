@@ -3,13 +3,13 @@ Created on Oct 7, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isPossible(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
-        freqMap, appendFreqMap = {}, {}
+        freqMap, appendFreqMap    # dict, {}
         ___ num __ nums:
             freqMap[num] = freqMap.get(num, 0)+1
         ___ num __ nums:
@@ -23,11 +23,11 @@ class Solution(object):
                 freqMap[num+2] -= 1
                 appendFreqMap[num+3] = appendFreqMap.get(num+3, 0)+1
             ____:
-                r.. False
+                r.. F..
             freqMap[num] -= 1
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 3, 3, 4, 5],
             [1, 2, 2, 3, 3, 3, 4, 4, 5],
@@ -36,7 +36,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.isPossible(nums)
+            result = isPossible(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

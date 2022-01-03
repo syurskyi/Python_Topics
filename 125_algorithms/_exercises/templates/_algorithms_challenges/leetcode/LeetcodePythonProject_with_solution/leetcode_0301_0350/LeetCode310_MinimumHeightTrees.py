@@ -3,7 +3,7 @@ Created on Mar 14, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findMinHeightTrees(self, n, edges):
         """
         :type n: int
@@ -33,14 +33,14 @@ class Solution(object):
             leaves = newLeaves
         r.. leaves
     
-    ___ test(self):
+    ___ test
         testCases = [
             (4, [[1, 0], [1, 2], [1, 3]]),
             (6, [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]),
         ]
         ___ n, edges __ testCases:
             print('edges: %s' % (edges))
-            result = self.findMinHeightTrees(n, edges)
+            result = findMinHeightTrees(n, edges)
             print('result: %s' % (result))
             print('-='*20+'-')
     

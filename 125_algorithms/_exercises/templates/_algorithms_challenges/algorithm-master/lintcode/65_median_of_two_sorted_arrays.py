@@ -4,7 +4,7 @@ Heap
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ findMedianSortedArrays(self, a, b):
         """
         :type a: list
@@ -42,7 +42,7 @@ class Solution:
 """
 Decreasing Approaching
 """
-class Solution:
+c_ Solution:
     """
     @param: A: An integer array
     @param: B: An integer array
@@ -51,11 +51,11 @@ class Solution:
     ___ findMedianSortedArrays(self, A, B):
         n = l..(A) + l..(B)
 
-        median = self.find_kth(A, 0, B, 0, n // 2 + 1)
+        median = find_kth(A, 0, B, 0, n // 2 + 1)
         __ n % 2 __ 1:
             r.. median
 
-        _median = self.find_kth(A, 0, B, 0, n // 2)
+        _median = find_kth(A, 0, B, 0, n // 2)
         r.. (median + _median) / 2.0
 
     ___ find_kth(self, A, i, B, j, k):
@@ -102,6 +102,6 @@ class Solution:
         b = B[_b] __ _b < l..(B) ____ float('inf')
 
         __ a < b:
-            r.. self.find_kth(A, i + k // 2, B, j, k - k // 2)
+            r.. find_kth(A, i + k // 2, B, j, k - k // 2)
         ____:
-            r.. self.find_kth(A, i, B, j + k // 2, k - k // 2)
+            r.. find_kth(A, i, B, j + k // 2, k - k // 2)

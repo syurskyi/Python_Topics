@@ -25,18 +25,18 @@ def test_promo_not_expired():
 
 ____ d__ _______ d__
 ____ d__ _______ t..
-NOW = d__.now()
+NOW = d__.n..
 
 
-class Promo:
+c_ Promo:
 
-    ___ __init__(self, name, expires=NOW):
-        self.name = name
-        self.expires = expires
+    ___ - , name, expires=NOW):
+        name = name
+        expires = expires
 
-    @property
-    ___ expired(self):
-        r.. d__.now() > self.expires
+    $
+    ___ expired
+        r.. d__.n.. > expires
 
 p = Promo('blackfriday', NOW + t..(days=5))
 

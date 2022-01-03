@@ -5,7 +5,7 @@ nums[0] <= nums[1] >= nums[2] <= nums[3]...
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ wiggleSort(self, nums):
         """
         Solve by enumerating examples

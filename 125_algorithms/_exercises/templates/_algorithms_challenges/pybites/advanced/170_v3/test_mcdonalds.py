@@ -32,7 +32,7 @@ ___ test_get_bodybuilder_friendly_foods():
 
 
 ___ test_get_bodybuilder_friendly_foods_excluding_liquid_food():
-    actual_wo_drinks = l..(get_bodybuilder_friendly_foods(excl_drinks=True))
+    actual_wo_drinks = l..(get_bodybuilder_friendly_foods(excl_drinks=T..))
     expected = ['Premium Bacon Ranch Salad with Grilled Chicken',
                 'Premium Southwest Salad with Grilled Chicken',
                 'Premium Grilled Chicken Classic Sandwich',

@@ -2,12 +2,12 @@
 3 kyu: Morse Encoding
 https://www.codewars.com/kata/morse-encoding/train/python
 """
-class Morse:
+c_ Morse:
 
     @classmethod
     ___ encode(self, message):
         words = message.s..(' ')
-        code = ('0' * 7).join(['000'.join([Morse.alpha[c.upper()]
+        code = ('0' * 7).j..(['000'.j..([Morse.alpha[c.upper()]
                                            ___ c __ word]) ___ word __ words])
         result    # list
         ___ i __ r..(0, l..(code), 32):
@@ -26,7 +26,7 @@ class Morse:
             ____:
                 code += bin(num)[2:].rjust(32, '0')
         code = code.rstrip('0')
-        result = ' '.join([''.join([next(k ___ k, v __ Morse.alpha.items() __ v __ char)
+        result = ' '.j..([''.j..([next(k ___ k, v __ Morse.alpha.i.. __ v __ char)
                                     ___ char __ words.s..('000')]) ___ words __ code.s..('0' * 7)])
 
         r.. result

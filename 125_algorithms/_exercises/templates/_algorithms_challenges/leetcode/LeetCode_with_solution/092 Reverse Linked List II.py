@@ -12,18 +12,18 @@ Given m, n satisfy the following condition:
 """
 __author__ = 'Danyang'
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-    ___ __repr__(self):
-        r.. repr(self.val)
+    ___ __repr__
+        r.. repr(val)
 
-    ___ __str__(self):
-        r.. s..(self.val)+", "+s..(self.next)
+    ___ __str__
+        r.. s..(val)+", "+s..(next)
 
-class Solution:
+c_ Solution:
     ___ reverseBetween(self, head, m, n):
         """
         Linked List

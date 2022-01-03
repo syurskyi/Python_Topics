@@ -16,7 +16,7 @@ ___ test_case_insensitive_lookup():
 ___ test_name_not_found():
     ... get_person_age('timothy') __ NOT_FOUND
     ... get_person_age(N..) __ NOT_FOUND
-    ... get_person_age(False) __ NOT_FOUND
+    ... get_person_age(F..) __ NOT_FOUND
     ... get_person_age(-1) __ NOT_FOUND
 
 

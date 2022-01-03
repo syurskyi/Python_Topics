@@ -3,7 +3,7 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ pourWater(self, heights, V, K):
         """
         :type heights: List[int]
@@ -33,7 +33,7 @@ class Solution(object):
             V -= 1
         r.. heights
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[2,1,1,2,1,2,2], 4, 3],
             [[1,2,3,4], 2, 2],
@@ -58,7 +58,7 @@ class Solution(object):
             print('heights: %s' % heights)
             print('v: %s' % v)
             print('k: %s' % k)
-            result = self.pourWater(heights, v, k)
+            result = pourWater(heights, v, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

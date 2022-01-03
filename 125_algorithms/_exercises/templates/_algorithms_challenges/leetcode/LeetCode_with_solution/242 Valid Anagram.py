@@ -13,7 +13,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ isAnagram(self, s, t):
         """
         bucket
@@ -28,12 +28,12 @@ class Solution:
 
         ___ c __ t:
             __ c n.. __ cnt o. cnt[c] < 1:
-                r.. False
+                r.. F..
 
             cnt[c] -= 1
 
-        ___ v __ cnt.values():
+        ___ v __ cnt.v..
             __ v != 0:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

@@ -3,7 +3,7 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isIdealPermutation(self, A):
         """
         :type A: List[int]
@@ -14,17 +14,17 @@ class Solution(object):
         ___ i __ r..(l..(arr)-2):
             cmax = max(cmax, arr[i])
             __ cmax > arr[i+2]:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1,0,2],
             [1,2,0],
         ]
         ___ arr __ testCases:
             print('arr: %s' % arr)
-            result = self.isIdealPermutation(arr)
+            result = isIdealPermutation(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -3,7 +3,7 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ nextGreatestLetter(self, letters, target):
         """
         :type letters: List[str]
@@ -19,7 +19,7 @@ class Solution(object):
                 r = mid
         r.. letters[l] __ l < l..(letters) ____ letters[0]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["c", "f", "j"],
@@ -39,7 +39,7 @@ class Solution(object):
             ],
         ]
         ___ letters, target __ testCases:
-            result = self.nextGreatestLetter(letters, target)
+            result = nextGreatestLetter(letters, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

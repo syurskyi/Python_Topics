@@ -6,7 +6,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLongestSubstringTwoDistinct(self, s):
         """
         Sliding Window

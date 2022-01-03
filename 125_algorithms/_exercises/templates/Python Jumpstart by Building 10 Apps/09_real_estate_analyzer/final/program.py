@@ -26,7 +26,7 @@ ___ print_header():
 
 ___ get_data_file():
     base_folder  os.path.dirname(__file__)
-    r.. os.path.join(base_folder, 'data',
+    r.. os.path.j..(base_folder, 'data',
                         'SacramentoRealEstateTransactions2008.csv')
 
 

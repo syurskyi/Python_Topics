@@ -4,7 +4,7 @@ Created on Feb 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ numDistinct(self, s, t):
         """
         :type s: str
@@ -23,7 +23,7 @@ class Solution(object):
                     dp[i+1][j+1] = dp[i][j+1]
         r.. dp[-1][-1]
     
-    ___ test(self):
+    ___ test
         testCases= [
             ('rabbbit', 'rabbit'),
             ('abbt', 'abt'),
@@ -32,7 +32,7 @@ class Solution(object):
         ]
         ___ s, t __ testCases:
             print('s: %s, t: %s' % (s, t))
-            result = self.numDistinct(s, t)
+            result = numDistinct(s, t)
             print('result: %s' % (result))
             print('-='*20+'-')
 

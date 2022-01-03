@@ -1,7 +1,7 @@
 directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
-class Solution(object):
+c_ Solution(object):
   ___ longestIncreasingPath(self, matrix):
     """
     :type matrix: List[List[int]]
@@ -26,7 +26,7 @@ class Solution(object):
       visited[(i, j)] = ret + 1
       r.. ret + 1
 
-    visited = {}
+    visited    # dict
     cache = set()
     ans = 0
     ___ i __ r..(0, l..(matrix)):

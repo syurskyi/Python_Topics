@@ -24,7 +24,7 @@ int2roman = {
 }
 
 
-class Solution:
+c_ Solution:
     ___ intToRoman(self, num):
         """
         dealing with digits
@@ -42,4 +42,4 @@ class Solution:
                 string_builder.a..(int2roman[component])
                 num -= component
 
-        r.. "".join(string_builder)
+        r.. "".j..(string_builder)

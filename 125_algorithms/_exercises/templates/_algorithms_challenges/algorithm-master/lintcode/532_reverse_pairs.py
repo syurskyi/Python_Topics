@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: an array
     @return: total of reverse pairs
@@ -6,7 +6,7 @@ class Solution:
     ___ reversePairs(self, A):
         n = l..(A)
         tmp = [0] * n
-        r.. self.merge_sort(A, 0, n - 1, tmp)
+        r.. merge_sort(A, 0, n - 1, tmp)
 
     ___ merge_sort(self, A, start, end, tmp):
         __ start >= end:
@@ -14,8 +14,8 @@ class Solution:
 
         mid = (start + end) // 2
         left, right = start, mid + 1
-        ans = self.merge_sort(A, left, mid, tmp)
-        ans += self.merge_sort(A, right, end, tmp)
+        ans = merge_sort(A, left, mid, tmp)
+        ans += merge_sort(A, right, end, tmp)
 
         i = start
         w.... left <= mid a.. right <= end:

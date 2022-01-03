@@ -11,7 +11,7 @@ For example, Given s = "Hello World",
 return 5.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLastWord(self, s):
         """
         :type s: str

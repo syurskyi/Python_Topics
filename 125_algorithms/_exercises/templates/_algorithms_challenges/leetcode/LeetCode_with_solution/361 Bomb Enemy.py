@@ -17,7 +17,7 @@ return 3. (Placing a bomb at (1,1) kills 3 enemies)
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxKilledEnemies(self, grid):
         """
         Brute force: O(n * n^2)

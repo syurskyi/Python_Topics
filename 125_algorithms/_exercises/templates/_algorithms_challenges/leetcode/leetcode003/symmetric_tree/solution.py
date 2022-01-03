@@ -24,25 +24,25 @@ But the following is not:
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ isSymmetric(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
         __ root __ N..
-            r.. True
+            r.. T..
         __ root.left __ N.. a.. root.right __ N..
-            r.. True
+            r.. T..
         __ root.left __ n.. N.. a.. root.right __ n.. N..
-            r.. self._isSymmetric(root.left, root.right)
-        r.. False
+            r.. _isSymmetric(root.left, root.right)
+        r.. F..
 
     ___ _isSymmetric(self, left, right):
         __ left __ N.. a.. right __ N..
-            r.. True
+            r.. T..
         __ left __ n.. N.. a.. right __ n.. N..
             r.. (left.val __ right.val a..
-                    self._isSymmetric(left.left, right.right) a..
-                    self._isSymmetric(left.right, right.left))
-        r.. False
+                    _isSymmetric(left.left, right.right) a..
+                    _isSymmetric(left.right, right.left))
+        r.. F..

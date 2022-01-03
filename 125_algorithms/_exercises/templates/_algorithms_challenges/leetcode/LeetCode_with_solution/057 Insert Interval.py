@@ -15,19 +15,19 @@ __author__ = 'Danyang'
 
 
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
-    ___ __str__(self):
-        r.. "[%d, %d]" % (self.start, self.end)
+    ___ __str__
+        r.. "[%d, %d]" % (start, end)
 
-    ___ __repr__(self):
-        r.. repr(self.__str__())
+    ___ __repr__
+        r.. repr(__str__())
 
 
-class Solution(object):
+c_ Solution(object):
     ___ insert(self, itvls, newItvl):
         s, e = newItvl.start, newItvl.end
         left = filter(l.... x: x.end < s, itvls)
@@ -44,14 +44,14 @@ class Solution(object):
         """
 
 
-class SolutionSlow(object):
+c_ SolutionSlow(object):
     ___ insert(self, itvls, newItvl):
         """
         :param itvls: a list of Intervals
         :param newItvl: a Interval
         :return: a list of Interval
         """
-        r.. self.merge(itvls+[newItvl])
+        r.. merge(itvls+[newItvl])
 
     ___ merge(self, itvls):
         """

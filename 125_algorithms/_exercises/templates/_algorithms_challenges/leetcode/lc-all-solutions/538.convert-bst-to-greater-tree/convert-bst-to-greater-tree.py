@@ -5,9 +5,9 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-  ___ __init__(self):
-    self.lSum = 0
+c_ Solution(object):
+  ___ - ):
+    lSum = 0
 
   ___ convertBST(self, root):
     """
@@ -16,8 +16,8 @@ class Solution(object):
     """
     __ n.. root:
       r.. N..
-    self.convertBST(root.right)
-    self.lSum += root.val
-    root.val = self.lSum
-    self.convertBST(root.left)
+    convertBST(root.right)
+    lSum += root.val
+    root.val = lSum
+    convertBST(root.left)
     r.. root

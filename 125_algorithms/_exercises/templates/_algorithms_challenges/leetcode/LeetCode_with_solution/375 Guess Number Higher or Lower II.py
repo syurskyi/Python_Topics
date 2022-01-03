@@ -24,7 +24,7 @@ Given a particular n >= 1, find out how much money you need to have to guarantee
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ getMoneyAmount(self, n):
         """
         Let F[i][j] be the min cost of guessing [i, j)

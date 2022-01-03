@@ -1,38 +1,38 @@
 # see __mro__ output in Bite description
 
-class Person:
+c_ Person:
 
-    ___ __init__(self):
+    ___ - ):
         pass
 
-    ___ __str__(self):
+    ___ __str__
         r.. "I am a person"
 
 
-class Father(Person):
+c_ Father(Person):
 
-    ___ __init__(self):
-        Person.__init__(self)
+    ___ - ):
+        Person.- )
 
-    ___ __str__(self):
+    ___ __str__
         r.. f"{Person.__str__(self)} and cool daddy"
 
 
-class Mother(Person):
+c_ Mother(Person):
 
-    ___ __init__(self):
-        Person.__init__(self)
+    ___ - ):
+        Person.- )
 
-    ___ __str__(self):
+    ___ __str__
         r.. f"{Person.__str__(self)} and awesome mom"
 
 
-class Child(Father, Mother):
+c_ Child(Father, Mother):
 
-    ___ __init__(self):
+    ___ - ):
         pass
 
-    ___ __str__(self):
+    ___ __str__
         r.. "I am the coolest kid"
 
 

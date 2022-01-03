@@ -7,7 +7,7 @@ ___ get_duplicate_indices(words):
       return [0, 1]:
       ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
       Make sure the returning list is unique and sorted in ascending order."""
-   duplicate_index = {}
+   duplicate_index    # dict
 
    ___ i __ r..(l..(words)):
       ___ j __ r..(l..(words)):
@@ -15,7 +15,7 @@ ___ get_duplicate_indices(words):
             __ words[i] n.. __ duplicate_index:
                duplicate_index[words[i]] = i
 
-   r.. [value ___ value __ duplicate_index.values()]
+   r.. [value ___ value __ duplicate_index.v..
 
    
 # if __name__ == "__main__":

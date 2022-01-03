@@ -15,5 +15,5 @@ w.... l..(lista) < d:
     lista.a..(result)
 
     
-resv =  ' '.join(s..(e) ___ e __ lista)
+resv =  ' '.j..(s..(e) ___ e __ lista)
 print(resv) 

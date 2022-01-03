@@ -21,15 +21,15 @@ All words contain only lowercase alphabetic characters.
 """
 __author__ = 'Danyang'
 
-class Solution_MLE:  # Memory Limit Exceeds
-    class Node:
-        ___ __init__(self, string, pre, d..):
-            self.string = string
-            self.pre = pre  # node
-            self.d.. = d..
+c_ Solution_MLE:  # Memory Limit Exceeds
+    c_ Node:
+        ___ - , string, pre, d..):
+            string = string
+            pre = pre  # node
+            d.. = d..
 
-        ___ __repr__(self):
-            r.. repr(self.string)
+        ___ __repr__
+            r.. repr(string)
 
     ___ findLadders(self, start, end, d..):
         """
@@ -43,14 +43,14 @@ class Solution_MLE:  # Memory Limit Exceeds
         result    # list
         lower_cases = [chr(i+ord('a')) ___ i __ xrange(26)]
 
-        start_node = self.Node(start, N.., d..-{start}|{end})
+        start_node = Node(start, N.., d..-{start}|{end})
         queue = [start_node]
         w.... queue:
             length_0 = l..(queue)
             ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
-                    self.a..(current, result)
+                    a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
@@ -60,9 +60,9 @@ class Solution_MLE:  # Memory Limit Exceeds
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char
-                        temp = "".join(lst)
+                        temp = "".j..(lst)
                         __ temp __ queue[i].d..:
-                            queue.a..(self.Node(temp, queue[i], queue[i].d..-{temp}))
+                            queue.a..(Node(temp, queue[i], queue[i].d..-{temp}))
 
             queue = queue[length_0:]
         r.. []  # natural break, no result
@@ -76,14 +76,14 @@ class Solution_MLE:  # Memory Limit Exceeds
         result.a..(lst)
 
 
-class Solution_TLE:
-    class Node:
-        ___ __init__(self, string, pre):
-            self.string = string
-            self.pre = pre  # node
+c_ Solution_TLE:
+    c_ Node:
+        ___ - , string, pre):
+            string = string
+            pre = pre  # node
 
-        ___ __repr__(self):
-            r.. repr(self.string)
+        ___ __repr__
+            r.. repr(string)
 
     ___ findLadders(self, start, end, d..):
         """
@@ -97,14 +97,14 @@ class Solution_TLE:
         result    # list
         lower_cases = [chr(i+ord('a')) ___ i __ xrange(26)]
 
-        start_node = self.Node(start, N..)
+        start_node = Node(start, N..)
         queue = [start_node]
         w.... queue:
             length_0 = l..(queue)
             ___ i __ xrange(length_0):  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
-                    self.a..(current, result)
+                    a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
@@ -114,9 +114,9 @@ class Solution_TLE:
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char
-                        temp = "".join(lst)
-                        __ temp __ d.. a.. n.. self.in_previous(queue[i], temp):
-                            queue.a..(self.Node(temp, queue[i]))
+                        temp = "".j..(lst)
+                        __ temp __ d.. a.. n.. in_previous(queue[i], temp):
+                            queue.a..(Node(temp, queue[i]))
 
             queue = queue[length_0:]
         r.. []  # natural break, no result
@@ -133,21 +133,21 @@ class Solution_TLE:
         cur = node
         w.... cur:
             __ cur.string__string:
-                r.. True
+                r.. T..
             cur = cur.pre
-        r.. False
+        r.. F..
 
 
-class Node:
-    ___ __init__(self, string, pre):
-        self.string = string
-        self.pre = pre  # node
+c_ Node:
+    ___ - , string, pre):
+        string = string
+        pre = pre  # node
         # self.pres = self.pre.pres|{string} if self.pre else {string}  # accelerate speed
 
-    ___ __repr__(self):
-        r.. repr(self.string)
+    ___ __repr__
+        r.. repr(string)
 
-class Solution_TLE2:
+c_ Solution_TLE2:
     ___ findLadders(self, start, end, d..):
         """
         bfs
@@ -181,7 +181,7 @@ class Solution_TLE2:
 
                 # check whether reached
                 __ current.string__end:  # reached
-                    self.a..(current, result)
+                    a..(current, result)
 
             __ result:  # shortest, thus pruning
                 r.. result
@@ -192,7 +192,7 @@ class Solution_TLE2:
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char
-                        temp = "".join(lst)
+                        temp = "".j..(lst)
                         __ temp __ d..:
                             queue.a..(Node(temp, queue[i]))
 
@@ -207,7 +207,7 @@ class Solution_TLE2:
             cur = cur.pre
         result.a..(lst)
 
-class Solution:  # use set to mimic queue, fastest
+c_ Solution:  # use set to mimic queue, fastest
     ___ findLadders(self, start, end, d..):
         """
         ref: http://www.cnblogs.com/zuoyuan/p/3697045.html
@@ -246,7 +246,7 @@ class Solution:  # use set to mimic queue, fastest
 
             __ l..(candidates[current])__0: r.. []  # path impossible
 
-        self.buildpath(prevMap, end, [], result)
+        buildpath(prevMap, end, [], result)
         r.. result
 
     ___ buildpath(self, prevMap, word, path, result):
@@ -259,7 +259,7 @@ class Solution:  # use set to mimic queue, fastest
 
         path.a..(word)
         ___ predecessor __ prevMap[word]:
-            self.buildpath(prevMap, predecessor, path, result)  # save memory
+            buildpath(prevMap, predecessor, path, result)  # save memory
         path.pop()
 
         # for predecessor in prevMap[word]:

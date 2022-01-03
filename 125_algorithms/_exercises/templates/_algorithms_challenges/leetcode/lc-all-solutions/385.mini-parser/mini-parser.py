@@ -41,7 +41,7 @@
 #        :rtype List[NestedInteger]
 #        """
 
-class Solution(object):
+c_ Solution(object):
   ___ deserialize(self, s):
     """
     :type s: str

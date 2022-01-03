@@ -11,62 +11,62 @@ _______ unittest
 ____ ocr_numbers _______ grid, number
 
 
-class OcrTest(unittest.TestCase):
-    ___ test_0(self):
-        self.assertEqual(number([" _ ",
+c_ OcrTest(unittest.TestCase):
+    ___ test_0
+        assertEqual(number([" _ ",
                                  "| |",
                                  "|_|",
                                  "   "]), '0')
 
-    ___ test_1(self):
-        self.assertEqual(number(["   ",
+    ___ test_1
+        assertEqual(number(["   ",
                                  "  |",
                                  "  |",
                                  "   "]), '1')
 
-    ___ test_garbage(self):
-        self.assertEqual(number([" _ ",
+    ___ test_garbage
+        assertEqual(number([" _ ",
                                  " _|",
                                  "  |",
                                  "   "]), '?')
 
-    ___ test_last_line_nonblank(self):
-        self.assertEqual(number(["   ",
+    ___ test_last_line_nonblank
+        assertEqual(number(["   ",
                                  "  |",
                                  "  |",
                                  "| |"]), '?')
 
-    ___ test_unknown_char(self):
-        self.assertEqual(number([" - ",
+    ___ test_unknown_char
+        assertEqual(number([" - ",
                                  " _|",
                                  " X|",
                                  "   "]), '?')
 
-    ___ test_too_short_row(self):
-        self.assertRaises(ValueError, number, ["   ",
+    ___ test_too_short_row
+        assertRaises(ValueError, number, ["   ",
                                                " _|",
                                                " |",
                                                "   "])
 
-    ___ test_insufficient_rows(self):
-        self.assertRaises(ValueError, number, ["   ",
+    ___ test_insufficient_rows
+        assertRaises(ValueError, number, ["   ",
                                                " _|",
                                                " X|"])
 
-    ___ test_grid0(self):
-        self.assertEqual(grid('0'), [" _ ",
+    ___ test_grid0
+        assertEqual(grid('0'), [" _ ",
                                      "| |",
                                      "|_|",
                                      "   "])
 
-    ___ test_grid1(self):
-        self.assertEqual(grid('1'), ["   ",
+    ___ test_grid1
+        assertEqual(grid('1'), ["   ",
                                      "  |",
                                      "  |",
                                      "   "])
 
-    ___ test_0010110(self):
-        self.assertEqual(
+    ___ test_0010110
+        assertEqual(
             number([
                 " _  _     _        _ ",
                 "| || |  || |  |  || |",
@@ -74,9 +74,9 @@ class OcrTest(unittest.TestCase):
                 "                     "
             ]), '0010110')
 
-    ___ test_3186547290(self):
+    ___ test_3186547290
         digits = '3186547290'
-        self.assertEqual(
+        assertEqual(
             number([
                 " _     _  _  _     _  _  _  _ ",
                 " _|  ||_||_ |_ |_|  | _||_|| |",
@@ -84,9 +84,9 @@ class OcrTest(unittest.TestCase):
                 "                              "
             ]), digits)
 
-    ___ test_Lost(self):
+    ___ test_Lost
         digits = '4815162342'
-        self.assertEqual(
+        assertEqual(
             number([
                 "    _     _     _  _  _     _ ",
                 "|_||_|  ||_   ||_  _| _||_| _|",
@@ -94,8 +94,8 @@ class OcrTest(unittest.TestCase):
                 "                              "
             ]), digits)
 
-    ___ test_garble_middle(self):
-        self.assertEqual(
+    ___ test_garble_middle
+        assertEqual(
             number([
                 "    _  _     _ ",
                 "  | _|  ||_||_ ",
@@ -103,9 +103,9 @@ class OcrTest(unittest.TestCase):
                 "               "
             ]), '12?45')
 
-    ___ test_grid3186547290(self):
+    ___ test_grid3186547290
         digits = '3186547290'
-        self.assertEqual(
+        assertEqual(
             grid(digits), [
                 " _     _  _  _     _  _  _  _ ",
                 " _|  ||_||_ |_ |_|  | _||_|| |",
@@ -113,8 +113,8 @@ class OcrTest(unittest.TestCase):
                 "                              "
             ])
 
-    ___ test_invalid_grid(self):
-        self.assertRaises(ValueError, grid, '123a')
+    ___ test_invalid_grid
+        assertRaises(ValueError, grid, '123a')
 
 
 __ __name__ __ '__main__':

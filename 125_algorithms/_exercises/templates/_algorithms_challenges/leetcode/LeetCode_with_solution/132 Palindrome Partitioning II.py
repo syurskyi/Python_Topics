@@ -9,7 +9,7 @@ Return 1 since the palindrome partitioning ["aa","b"] could be produced using 1 
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ minCut(self, s):
         """
         Let P[i][j] indicates whether s[i:j] is palindrome
@@ -21,11 +21,11 @@ class Solution(object):
         """
         n = l..(s)
 
-        P = [[False ___ _ __ xrange(n+1)] ___ _ __ xrange(n+1)]
+        P = [[F.. ___ _ __ xrange(n+1)] ___ _ __ xrange(n+1)]
         ___ i __ xrange(n+1):  # len 0
-            P[i][i] = True
+            P[i][i] = T..
         ___ i __ xrange(n):  # len 1
-            P[i][i+1] = True
+            P[i][i+1] = T..
 
         ___ i __ xrange(n, -1, -1):  # len 2 and above
             ___ j __ xrange(i+2, n+1):
@@ -81,11 +81,11 @@ class Solution(object):
 
         length = l..(s)
         # palindrome dp
-        P = [[False ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
+        P = [[F.. ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
         ___ i __ xrange(length+1):
             try:
-                P[i][i] = True
-                P[i][i+1] = True
+                P[i][i] = T..
+                P[i][i+1] = T..
             except IndexError:
                 pass
 
@@ -94,7 +94,7 @@ class Solution(object):
                 try:
                     P[i][j] = P[i+1][j-1] a.. s[i] __ s[j-1]
                 except IndexError:
-                    P[i][j] = True
+                    P[i][j] = T..
 
         # min cut dp
         D = [length-i-1 ___ i __ xrange(length)]  # max is all cut
@@ -121,7 +121,7 @@ class Solution(object):
             count += 1
             ___ cur_level __ xrange(length):
                 cur = q[cur_level]
-                __ a..(self.is_palindrome(item) ___ item __ cur):
+                __ a..(is_palindrome(item) ___ item __ cur):
                     r.. count
                 # 1 cut
                 ___ ind, val __ e..(cur):
@@ -170,7 +170,7 @@ class Solution(object):
 
         ___ i __ xrange(length, -1, -1):
             ___ k __ xrange(i, length+1):
-                __ self.is_palindrome(s[i:k]):
+                __ is_palindrome(s[i:k]):
                     dp[i][k] = 0
                 ____:
                     dp[i][k] = m..(1+dp[i][j]+dp[j][k] ___ j __ xrange(i+1, k))
@@ -211,11 +211,11 @@ class Solution(object):
 
         length = l..(s)
         # palindrome dp
-        dp2 = [[False ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
+        dp2 = [[F.. ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
         ___ i __ xrange(length+1):
             try:
-                dp2[i][i] = True
-                dp2[i][i+1] = True
+                dp2[i][i] = T..
+                dp2[i][i+1] = T..
             except IndexError:
                 pass
 
@@ -224,7 +224,7 @@ class Solution(object):
                 try:
                     dp2[i][j] = dp2[i+1][j-1] a.. s[i] __ s[j-1]
                 except IndexError:
-                    dp2[i][j] = True
+                    dp2[i][j] = T..
 
 
         # min cut dp

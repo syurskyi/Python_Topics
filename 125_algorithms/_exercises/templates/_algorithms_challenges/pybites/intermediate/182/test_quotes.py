@@ -37,7 +37,7 @@ ___ output_your_code():
 
 
 ___ test_quotes_type(output_your_code):
-    ... type(output_your_code) __ d..
+    ... t..(output_your_code) __ d..
 
 
 ___ test_quotes_len(output_your_code):

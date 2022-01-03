@@ -27,10 +27,10 @@ The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.cache = N..
-        self.dirs = ((-1, 0), (1, 0), (0, -1), (0, 1),)
+c_ Solution(object):
+    ___ - ):
+        cache = N..
+        dirs = ((-1, 0), (1, 0), (0, -1), (0, 1),)
 
     ___ longestIncreasingPath(self, matrix):
         """
@@ -41,11 +41,11 @@ class Solution(object):
         __ n.. matrix: r.. 0
 
         m, n = l..(matrix), l..(matrix[0])
-        self.cache = [[N.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        cache = [[N.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
         gmax = 1
         ___ i __ xrange(m):
             ___ j __ xrange(n):
-                gmax = max(gmax, self.longest(matrix, i, j))
+                gmax = max(gmax, longest(matrix, i, j))
 
         r.. gmax
 
@@ -53,17 +53,17 @@ class Solution(object):
         """
         Strictly increasing, thus no need to have a visited matrix
         """
-        __ n.. self.cache[i][j]:
+        __ n.. cache[i][j]:
             m, n = l..(matrix), l..(matrix[0])
             maxa = 1
-            ___ d __ self.dirs:
+            ___ d __ dirs:
                 I, J = i + d[0], j + d[1]
                 __ 0 <= I < m a.. 0 <= J < n a.. matrix[I][J] > matrix[i][j]:
-                    maxa = max(maxa, 1 + self.longest(matrix, I, J))
+                    maxa = max(maxa, 1 + longest(matrix, I, J))
 
-            self.cache[i][j] = maxa
+            cache[i][j] = maxa
 
-        r.. self.cache[i][j]
+        r.. cache[i][j]
 
 
 __ __name__ __ "__main__":

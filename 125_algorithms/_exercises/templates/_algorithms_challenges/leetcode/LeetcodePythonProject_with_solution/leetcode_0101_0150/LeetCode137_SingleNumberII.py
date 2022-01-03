@@ -4,7 +4,7 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ singleNumber(self, nums):
         """
         :type nums: List[int]
@@ -19,13 +19,13 @@ class Solution(object):
             num1 &= mask
         r.. num1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 1, 1, 3, 3, 3],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.singleNumber(nums)
+            result = singleNumber(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

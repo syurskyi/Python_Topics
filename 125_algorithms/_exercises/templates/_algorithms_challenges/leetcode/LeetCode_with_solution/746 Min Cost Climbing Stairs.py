@@ -23,7 +23,7 @@ Every cost[i] will be an integer in the range [0, 999].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ minCostClimbingStairs(self, cost: List[int]) -> int:
         """
         dp

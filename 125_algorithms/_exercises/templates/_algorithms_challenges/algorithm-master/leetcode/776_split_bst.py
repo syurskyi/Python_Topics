@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-class Solution:
+c_ Solution:
     ___ splitBST(self, root, target):
         """
         :type root: TreeNode
@@ -17,10 +17,10 @@ class Solution:
             r.. N.., N..
 
         __ root.val > target:
-            left, right = self.splitBST(root.left, target)
+            left, right = splitBST(root.left, target)
             root.left = right
             r.. left, root
         ____:
-            left, right = self.splitBST(root.right, target)
+            left, right = splitBST(root.right, target)
             root.right = left
             r.. root, right

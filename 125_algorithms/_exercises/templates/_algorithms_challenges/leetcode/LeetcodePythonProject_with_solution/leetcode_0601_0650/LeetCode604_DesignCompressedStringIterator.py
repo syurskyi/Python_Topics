@@ -3,46 +3,46 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-class StringIterator(object):
+c_ StringIterator(object):
 
-    ___ __init__(self, compressedString):
+    ___ - , compressedString):
         """
         :type compressedString: str
         """
-        self.cmpStr = compressedString
-        self.count = 0
-        self.ind = 0
-        __ self.cmpStr:
-            self.c = self.cmpStr[self.ind]
-            self.ind += 1
-            w.... self.ind < l..(self.cmpStr) a.. self.cmpStr[self.ind].isdigit():
-                self.ind += 1
-            self.count = int(self.cmpStr[1:self.ind])
+        cmpStr = compressedString
+        count = 0
+        ind = 0
+        __ cmpStr:
+            c = cmpStr[ind]
+            ind += 1
+            w.... ind < l..(cmpStr) a.. cmpStr[ind].isdigit():
+                ind += 1
+            count = int(cmpStr[1:ind])
 
-    ___ next(self):
+    ___ next
         """
         :rtype: str
         """
-        res = self.c
-        self.count -= 1
-        __ self.count __ 0:
-            __ self.ind __ l..(self.cmpStr):
-                self.c = ' '
+        res = c
+        count -= 1
+        __ count __ 0:
+            __ ind __ l..(cmpStr):
+                c = ' '
                 r.. res
-            self.c = self.cmpStr[self.ind]
-            self.ind += 1
-            ind = self.ind
-            w.... ind < l..(self.cmpStr) a.. self.cmpStr[ind].isdigit():
+            c = cmpStr[ind]
+            ind += 1
+            ind = ind
+            w.... ind < l..(cmpStr) a.. cmpStr[ind].isdigit():
                 ind += 1
-            self.count = int(self.cmpStr[self.ind:ind])
-            self.ind = ind
+            count = int(cmpStr[ind:ind])
+            ind = ind
         r.. res
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         :rtype: bool
         """
-        r.. self.c != ' '
+        r.. c != ' '
 
 __ __name__ __ '__main__':
     it = StringIterator('L1e2t1C1o1d1e1')

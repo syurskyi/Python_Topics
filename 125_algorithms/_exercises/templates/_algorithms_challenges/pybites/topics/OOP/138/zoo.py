@@ -1,20 +1,20 @@
-class Animal:
+c_ Animal:
     counter = 10000
     animals    # list
 
-    ___ __init__(self, name):
+    ___ - , name):
         Animal.counter += 1
-        self.name = name.t..
-        self.animals.a..(s..(self))
+        name = name.t..
+        animals.a..(s..(self))
         
 
-    ___ __str__(self):
-        r.. f'{Animal.counter}. {self.name}'
+    ___ __str__
+        r.. f'{Animal.counter}. {name}'
 
     @classmethod
     ___ zoo(cls):
         #print(cls.animals)
-        r.. '\n'.join(animal ___ animal __ cls.animals)
+        r.. '\n'.j..(animal ___ animal __ cls.animals)
 
 """
 dog = Animal('dog')

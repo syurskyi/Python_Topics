@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ getNumberOfWays(self, n, m, limit, cost):
         """
         :type n: int

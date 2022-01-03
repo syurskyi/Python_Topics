@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ coinChange(self, coins, amount):
     """
     :type coins: List[int]

@@ -27,11 +27,11 @@ ___ get_feed_entries(feed=FEED):
         result.a..(Entry(_convert_struct_time_to_dt(item.published_parsed),
                             item.title,
                             item.link,
-                            [t.term.lower() ___ t __ item.tags]))
+                            [t.term.l.. ___ t __ item.tags]))
     r.. result
 
 
-___ filter_entries_by_tag(search, entry):
+___ filter_entries_by_tag(s.., entry):
     """Check if search matches any tags as stored in the Entry namedtuple
        (case insensitive, only whole, not partial string matches).
        Returns bool: True if match, False if not.
@@ -42,11 +42,11 @@ ___ filter_entries_by_tag(search, entry):
           e.g. flask|django should match entries with either tag
        3. Else: match if search is in tags
     """
-    __ '&' __ search:
-        r.. a..(tag.lower() __ entry.tags ___ tag __ search.s..('&'))
-    __ '|' __ search:
-        r.. any(tag.lower() __ entry.tags ___ tag __ search.s..('|'))
-    r.. search.lower() __ entry.tags
+    __ '&' __ s..:
+        r.. a..(tag.l.. __ entry.tags ___ tag __ s...s..('&'))
+    __ '|' __ s..:
+        r.. any(tag.l.. __ entry.tags ___ tag __ s...s..('|'))
+    r.. s...l.. __ entry.tags
 
 
 ___ main():

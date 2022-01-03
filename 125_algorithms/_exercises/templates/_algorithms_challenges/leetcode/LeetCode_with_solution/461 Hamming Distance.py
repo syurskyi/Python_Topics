@@ -10,7 +10,7 @@ Note:
 """
 
 
-class Solution:
+c_ Solution:
     ___ hammingDistance(self, x, y):
         """
         :type x: int

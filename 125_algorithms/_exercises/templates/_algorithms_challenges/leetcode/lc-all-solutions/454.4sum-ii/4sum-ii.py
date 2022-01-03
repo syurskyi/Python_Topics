@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ fourSumCount(self, A, B, C, D):
     """
     :type A: List[int]
@@ -8,7 +8,7 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    abDict = {}
+    abDict    # dict
     ___ i __ r..(l..(A)):
       ___ j __ r..(l..(B)):
         __ A[i] + B[j] n.. __ abDict:

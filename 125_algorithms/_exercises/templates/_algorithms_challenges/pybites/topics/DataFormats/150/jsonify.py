@@ -33,6 +33,6 @@ ___ convert_to_json(members=members):
     r.. json.dumps(data)
 
 
-print(type(convert_to_json()))
+print(t..(convert_to_json()))
 
 data = json.loads(convert_to_json())

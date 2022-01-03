@@ -10,7 +10,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     Bottom Up
     """
@@ -22,7 +22,7 @@ class Solution:
         __ n.. root:
             r.. 0
 
-        r.. self.divide_conquer(root)[0]
+        r.. divide_conquer(root)[0]
 
     ___ divide_conquer(self, node):
         __ n.. node:
@@ -37,7 +37,7 @@ class Solution:
             __ n.. child:
                 continue
 
-            _size, _down = self.divide_conquer(child)
+            _size, _down = divide_conquer(child)
 
             __ child.val - 1 __ node.val a.. _down + 1 > down:
                 down = _down + 1
@@ -51,7 +51,7 @@ class Solution:
         r.. size, down
 
 
-class Solution:
+c_ Solution:
     """
     Top Down
     """
@@ -63,7 +63,7 @@ class Solution:
         __ n.. root:
             r.. 0
 
-        r.. self.divide_conquer(root, 0, 0)
+        r.. divide_conquer(root, 0, 0)
 
     ___ divide_conquer(self, node, parent_val, _size):
         __ n.. node:
@@ -74,7 +74,7 @@ class Solution:
         __ parent_val + 1 __ node.val:
             size += _size
 
-        left = self.divide_conquer(node.left, node.val, size)
-        right = self.divide_conquer(node.right, node.val, size)
+        left = divide_conquer(node.left, node.val, size)
+        right = divide_conquer(node.right, node.val, size)
 
         r.. max(size, left, right)

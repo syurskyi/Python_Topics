@@ -3,7 +3,7 @@ Created on Oct 24, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minStickers(self, stickers, target):
         """
         :type stickers: List[str]
@@ -15,9 +15,9 @@ class Solution(object):
         ___ i __ r..(n):
             ___ c __ stickers[i]:
                 mp[i][ord(c)-ord('a')] += 1
-        mem = {}
+        mem    # dict
         mem[''] = 0
-        r.. self.helper(mem, mp, target)
+        r.. helper(mem, mp, target)
     
     ___ helper(self, mem, mp, target):
         __ target __ mem:
@@ -34,13 +34,13 @@ class Solution(object):
             ___ j __ r..(26):
                 __ tar[j] > mp[i][j]:
                     s += chr(ord('a')+j)*(tar[j]-mp[i][j])
-            tmp = self.helper(mem, mp, s)
+            tmp = helper(mem, mp, s)
             __ tmp != -1:
                 res = m..(res, 1+tmp)
         mem[target] = -1 __ res __ float('inf') ____ res
         r.. mem[target]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["with", "example", "science"],
@@ -54,7 +54,7 @@ class Solution(object):
         ___ stickers, target __ testCases:
             print('stickers: %s' % stickers)
             print('target: %s' % target)
-            result = self.minStickers(stickers, target)
+            result = minStickers(stickers, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -2,7 +2,7 @@
 time: O(n)
 space: O(n)
 """
-class Solution:
+c_ Solution:
     """
     @param: nums: an array of integers
     @return: the number of unique integers
@@ -25,7 +25,7 @@ class Solution:
 time: O(nlogn)
 space: O(1)
 """
-class Solution:
+c_ Solution:
     """
     @param: nums: an array of integers
     @return: the number of unique integers

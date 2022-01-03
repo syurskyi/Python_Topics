@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: A Tree
     @return: A list of lists of integer include the zigzag level order traversal of its nodes' values.

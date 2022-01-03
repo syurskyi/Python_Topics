@@ -4,7 +4,7 @@ Created on Apr 27, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ totalHammingDistance(self, nums):
         res = 0
         ___ i __ r..(32):
@@ -15,13 +15,13 @@ class Solution(object):
             res += cnt*(l..(nums)-cnt)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [4, 14, 2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.totalHammingDistance(nums)
+            result = totalHammingDistance(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

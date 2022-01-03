@@ -6,12 +6,12 @@ Can you solve it without using extra space?
 """
 __author__ = 'Danyang'
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution:
+c_ Solution:
     ___ hasCycle(self, head):
         """
         if extra space available, use hash table
@@ -44,6 +44,6 @@ class Solution:
             hare = hare.next.next
             tortoise = tortoise.next
             __ hare__tortoise:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

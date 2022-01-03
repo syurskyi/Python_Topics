@@ -1,11 +1,11 @@
-class Solution:
+c_ Solution:
     # @param strs, a list of strings
     # @return a list of strings
     ___ anagrams(self, strs):
-        d = {}
+        d    # dict
         res    # list
         ___ i, s __ e..(strs):
-            key = self.make_key(s)
+            key = make_key(s)
             # First occurence of an anagram
             __ key n.. __ d:
                 d[key] = [s]
@@ -18,7 +18,7 @@ class Solution:
 
     ___ make_key(self, s):
         """Generate character-frequency key based on s"""
-        d = {}
+        d    # dict
         res    # list
         ___ c __ s:
             __ c __ d:
@@ -33,4 +33,4 @@ class Solution:
             __ c __ d:
                 res.a..(c)
                 res.a..(s..(d[c]))
-        r.. ''.join(res)
+        r.. ''.j..(res)

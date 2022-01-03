@@ -5,18 +5,18 @@ Created on Jan 21, 2017
 '''
 
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
     
-    ___ __str__(self):
-        r.. '<s: %s, e: %s>' % (self.start, self.end)
+    ___ __str__
+        r.. '<s: %s, e: %s>' % (start, end)
     
-    ___ __repr__(self):
-        r.. self.__str__()
+    ___ __repr__
+        r.. __str__()
 
-class Solution(object):
+c_ Solution(object):
     ___ insert(self, intervals, newInterval):
         """
         :type intervals: List[Interval]
@@ -37,7 +37,7 @@ class Solution(object):
         result.a..(newInterval)
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([[1,2],[3,5],[6,7],[8,10],[12,16]], [4,9]),
             ([[1,2],[3,5],[6,7],[8,10],[12,16],[15,23]], [4,9]),
@@ -47,7 +47,7 @@ class Solution(object):
             intervals = [Interval(x[0], x[1]) ___ x __ intervals]
             newInterval = Interval(newInterval[0], newInterval[1])
             print('intervals: %s' % (intervals))
-            result = self.insert(intervals, newInterval)
+            result = insert(intervals, newInterval)
             print('result: %s' % (result))
             print('-='*15+'-')
 

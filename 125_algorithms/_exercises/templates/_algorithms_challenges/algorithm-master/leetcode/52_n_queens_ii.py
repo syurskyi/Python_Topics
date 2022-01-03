@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ totalNQueens(self, n):
         """
         :type n: int
@@ -7,7 +7,7 @@ class Solution:
         Xs = set()
         DLs = set()  # left diagonal lines
         DRs = set()  # right diagonal lines
-        r.. self.divide_conquer(n, 0, 0, Xs, DLs, DRs)
+        r.. divide_conquer(n, 0, 0, Xs, DLs, DRs)
 
     ___ divide_conquer(self, n, y, cnt, Xs, DLs, DRs):
         ___ x __ r..(n):
@@ -29,7 +29,7 @@ class Solution:
             Xs.add(x)
             DLs.add(dl)
             DRs.add(dr)
-            cnt = self.divide_conquer(n, y + 1, cnt, Xs, DLs, DRs)
+            cnt = divide_conquer(n, y + 1, cnt, Xs, DLs, DRs)
             Xs.discard(x)
             DLs.discard(dl)
             DRs.discard(dr)

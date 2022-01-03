@@ -4,18 +4,18 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class TrieNode(object):
-    ___ __init__(self, c_ N..
-        self.c = c
-        self.children = {}
-        self.isLeaf = False
+c_ TrieNode(object):
+    ___ - , c_ N..
+        c = c
+        children    # dict
+        isLeaf = F..
 
-class WordDictionary(object):
-    ___ __init__(self):
-        self.root = TrieNode()
+c_ WordDictionary(object):
+    ___ - ):
+        root = TrieNode()
     
     ___ addWord(self, word):
-        children = self.root.children
+        children = root.children
         ___ i, c __ e..(word):
             __ c __ children:
                 t = children[c]
@@ -24,7 +24,7 @@ class WordDictionary(object):
                 children[c] = t
             children = t.children
             __ i __ l..(word)-1:
-                t.isLeaf = True
+                t.isLeaf = T..
     
     ___ searchDFS(self, children, word, startInd):
         __ startInd __ l..(word):
@@ -32,18 +32,18 @@ class WordDictionary(object):
         c = word[startInd]
         __ c __ children:
             __ startInd __ l..(word)-1 a.. children[c].isLeaf:
-                r.. True
-            r.. self.searchDFS(children[c].children, word, startInd+1)
+                r.. T..
+            r.. searchDFS(children[c].children, word, startInd+1)
         ____ c __ '.':
             ___ key, node __ children.iteritems():
                 __ startInd __ l..(word)-1 a.. node.isLeaf:
-                    r.. True
-                __ self.searchDFS(children[key].children, word, startInd+1):
-                    r.. True
-            r.. False
+                    r.. T..
+                __ searchDFS(children[key].children, word, startInd+1):
+                    r.. T..
+            r.. F..
         ____:
-            r.. False
+            r.. F..
     
-    ___ search(self, word):
-        r.. self.searchDFS(self.root.children, word, 0)
+    ___ s..(self, word):
+        r.. searchDFS(root.children, word, 0)
     

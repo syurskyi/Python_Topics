@@ -7,7 +7,7 @@ Main Concept:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: a string
     @param: B: a string
@@ -28,7 +28,7 @@ class Solution:
         n = l..(A)
         next_words = [N..] * n
         ___ i __ r..(n):
-            next_words[i] = W = {}
+            next_words[i] = W    # dict
             ___ word __ D:
                 key = word[:i] + word[i + 1:]
                 __ key n.. __ W:
@@ -40,13 +40,13 @@ class Solution:
         ___ word __ queue:
             __ word __ A:
                 break
-            ___ _word __ self.get_next_word(word, next_words):
+            ___ _word __ get_next_word(word, next_words):
                 __ _word __ distance:
                     continue
                 distance[_word] = distance[word] + 1
                 queue.a..(_word)
 
-        self.dfs(A, B, next_words, distance, ans, [A])
+        dfs(A, B, next_words, distance, ans, [A])
         r.. ans
 
     ___ dfs(self, word, B, next_words, distance, ans, path):
@@ -54,12 +54,12 @@ class Solution:
             ans.a..(path[:])
             r..
 
-        ___ _word __ self.get_next_word(word, next_words):
+        ___ _word __ get_next_word(word, next_words):
             __ (_word n.. __ distance o.
                 distance[_word] != distance[word] - 1):
                 continue
             path.a..(_word)
-            self.dfs(_word, B, next_words, distance, ans, path)
+            dfs(_word, B, next_words, distance, ans, path)
             path.pop()
 
     ___ get_next_word(self, word, next_words):

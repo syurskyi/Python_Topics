@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ nextGreaterElement(self, findNums, nums):
         """
         :type findNums: List[int]
@@ -22,7 +22,7 @@ class Solution(object):
                 res.a..(-1)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 [4, 1, 2],
@@ -30,7 +30,7 @@ class Solution(object):
             ),
         ]
         ___ findNums, nums __ testCases:
-            result = self.nextGreaterElement(findNums, nums)
+            result = nextGreaterElement(findNums, nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

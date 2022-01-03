@@ -11,7 +11,7 @@ You may assume the string contains only lowercase alphabets.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isAnagram(self, s, t):
         """
         :type s: str
@@ -19,8 +19,8 @@ class Solution(object):
         :rtype: bool
         """
         __ l..(s) != l..(t):
-            r.. False
-        d = {}
+            r.. F..
+        d    # dict
         ___ c __ s:
             __ c __ d:
                 d[c] += 1
@@ -28,12 +28,12 @@ class Solution(object):
                 d[c] = 1
         ___ c __ t:
             __ c n.. __ d:
-                r.. False
+                r.. F..
             ____:
                 d[c] -= 1
             __ d[c] < 0:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
 
 s = Solution()

@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 EMAIL_HEADER = """Return-Path: <bounces+5555-7602-redacted-info>
 ...
@@ -28,10 +28,10 @@ ___ get_email_details(header: s..) -> d..:
 
 
     try:
-        from_ = re.search(r'^From: (.+)',header,flags=re.MULTILINE).group(1).s..
-        to = re.search(r'^To: (.+)',header,flags=re.MULTILINE).group(1).s..
-        subject = re.search(r'^Subject: (.+)',header,flags=re.MULTILINE).group(1).s..
-        date = re.search(r'^Date: (.+) (?:\+|\-)',header,flags=re.MULTILINE).group(1).s..
+        from_ = __.s..(r'^From: (.+)',header,flags=__.MULTILINE).group(1).s..
+        to = __.s..(r'^To: (.+)',header,flags=__.MULTILINE).group(1).s..
+        subject = __.s..(r'^Subject: (.+)',header,flags=__.MULTILINE).group(1).s..
+        date = __.s..(r'^Date: (.+) (?:\+|\-)',header,flags=__.MULTILINE).group(1).s..
     except:
         r..
     ____:

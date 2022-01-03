@@ -3,7 +3,7 @@ Created on Oct 14, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ profitableSchemes(self, G, P, group, profit):
         """
         :type G: int
@@ -29,7 +29,7 @@ class Solution(object):
         :rtype: int
         """
         res = [0]
-        self.dfs(0, group, profit, G, P, [], 0, res)
+        dfs(0, group, profit, G, P, [], 0, res)
         r.. res[0]
     
     ___ dfs(self, ind, group, profit, G, P, curGroup, curProfit, res):
@@ -38,11 +38,11 @@ class Solution(object):
         ___ i __ r..(ind, l..(group)):
             curProfit += profit[i]
             curGroup.a..(group[i])
-            self.dfs(i+1, group, profit, G, P, curGroup, curProfit, res)
+            dfs(i+1, group, profit, G, P, curGroup, curProfit, res)
             curGroup.pop()
             curProfit -= profit[i]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 5, 3, [2,2], [2,3]
@@ -52,7 +52,7 @@ class Solution(object):
             ],
         ]
         ___ G, P, group, profit __ testCases:
-            res = self.profitableSchemes(G, P, group, profit)
+            res = profitableSchemes(G, P, group, profit)
             print('res: %s' % res)
             print('-='*30+'-')
 

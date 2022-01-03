@@ -1,7 +1,7 @@
-class Solution:
+c_ Solution:
     ___ reverseString(self, s):
         """
         :type s: str
         :rtype: str
         """
-        r.. ''.join(reversed(s))
+        r.. ''.j..(reversed(s))

@@ -5,18 +5,18 @@ Created on Feb 10, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ sortList(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        r.. self.helper(head)
+        r.. helper(head)
     
     ___ helper(self, node):
         __ n.. node o. n.. node.next:
@@ -33,9 +33,9 @@ class Solution(object):
             node2 = node2.next
         prev.next = N..
         mid = node1
-        result1 = self.helper(node)
-        result2 = self.helper(mid)
-        result = self.merge(result1, result2)
+        result1 = helper(node)
+        result2 = helper(mid)
+        result = merge(result1, result2)
         r.. result
     
     ___ merge(self, node1, node2):

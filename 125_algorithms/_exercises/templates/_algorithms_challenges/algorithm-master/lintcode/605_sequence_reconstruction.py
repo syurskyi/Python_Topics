@@ -7,7 +7,7 @@ Topological Sort
 """
 
 
-class Solution:
+c_ Solution:
     ___ sequenceReconstruction(self, org, seqs):
         """
         :type org: list[int]
@@ -15,7 +15,7 @@ class Solution:
         :rtype: bool
         """
         __ org __ N.. o. seqs __ N..
-            r.. False
+            r.. F..
 
         n = l..(org)
         edges = d...f..(org)
@@ -30,7 +30,7 @@ class Solution:
 
             ___ i __ r..(l..(seq)):
                 __ n.. (1 <= seq[i] <= n):
-                    r.. False
+                    r.. F..
                 __ n.. edges[seq[i]]:
                     edges[seq[i]] = set()
 
@@ -41,13 +41,13 @@ class Solution:
 
         # for case: org == [1], seqs == [[], []]
         __ cnt < n:
-            r.. False
+            r.. F..
 
         ___ i __ r..(n - 1):
             __ indeg[org[i]] != 0:
-                r.. False
+                r.. F..
             __ org[i + 1] n.. __ edges[org[i]]:
-                r.. False
+                r.. F..
             indeg[org[i + 1]] -= 1
 
-        r.. True
+        r.. T..

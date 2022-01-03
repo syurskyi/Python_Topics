@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ totalNQueens(self, n):
     """
     :type n: int
@@ -19,7 +19,7 @@ class Solution(object):
     ___ isValidQueen(path, k):
       ___ i __ r..(l..(path)):
         __ abs(k - path[i]) __ abs(l..(path) - i):
-          r.. False
-      r.. True
+          r.. F..
+      r.. T..
 
     r.. dfs([], n)

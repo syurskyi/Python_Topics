@@ -22,7 +22,7 @@ ___ print_header():
 ___ get_or_create_output_folder():
     base_folder  os.path.abspath(os.path.dirname(__file__))
     folder  'cat_pictures'
-    full_path  os.path.join(base_folder, folder)
+    full_path  os.path.j..(base_folder, folder)
 
     __ n.. os.path.exists(full_path) o. n.. os.path.isdir(full_path):
         print('Creating new directory at {}'.f..(full_path))

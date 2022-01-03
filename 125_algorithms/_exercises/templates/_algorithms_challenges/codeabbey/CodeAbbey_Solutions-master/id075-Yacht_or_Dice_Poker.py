@@ -6,7 +6,7 @@ ___ dice_poker():
     
     ___ roll __ r..(rolls):
         roll = input().s..
-        values = s..([x ___ x __ collections.Counter(roll).values()])
+        values = s..([x ___ x __ collections.Counter(roll).v..)
 
         __ s..(roll) __ ['2', '3', '4', '5', '6']:
             answer.a..('big-straight')
@@ -27,5 +27,5 @@ ___ dice_poker():
         ____:
             answer.a..('none')
         
-    print(' '.join(answer))
+    print(' '.j..(answer))
 dice_poker()

@@ -13,7 +13,7 @@ of space complexity analysis.)
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ productExceptSelf(self, nums):
         """
         dp

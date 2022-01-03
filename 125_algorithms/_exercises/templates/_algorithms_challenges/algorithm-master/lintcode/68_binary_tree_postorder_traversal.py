@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: A Tree
     @return: Postorder in ArrayList which contains node values.

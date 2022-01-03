@@ -24,7 +24,7 @@ ___ print_hanging_indents(poem):
         ____ current_line > 1:
             new = prefix + line
         target_poem.a..(new)
-    tar = '\n'.join(target_poem)
+    tar = '\n'.j..(target_poem)
     r.. tar
 
 # part of William Shakespeare's play Hamlet

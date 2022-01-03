@@ -9,7 +9,7 @@ return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ restoreIpAddresses(self, s):
         """
         dfs, branch factor 3, depth 4
@@ -18,7 +18,7 @@ class Solution:
         :return: list of strings
         """
         result    # list
-        self.dfs(s, [], result)
+        dfs(s, [], result)
         r.. result
 
     ___ dfs_complicated(self, seq, cur, result):
@@ -32,13 +32,13 @@ class Solution:
         __ l..(cur) > 4:
             r..
 
-        __ n.. cur o. self.is_valid(cur[-1]):
+        __ n.. cur o. is_valid(cur[-1]):
             __ l..(cur) __ 4 a.. n.. seq:  # check the last one first
-                result.a..(".".join(cur))
+                result.a..(".".j..(cur))
                 r..
 
             ___ i __ xrange(1, m..(3, l..(seq))+1):
-                self.dfs(seq[i:], cur+[seq[:i]], result)
+                dfs(seq[i:], cur+[seq[:i]], result)
 
     ___ dfs(self, seq, cur, result):
         """
@@ -54,7 +54,7 @@ class Solution:
         """
         # terminal condition
         __ n.. seq a.. l..(cur)__4:
-            result.a..(".".join(cur))
+            result.a..(".".j..(cur))
             r..
 
         # for i in xrange(1, 3+1):
@@ -62,14 +62,14 @@ class Solution:
         ___ i __ xrange(1, m..(3, l..(seq)) + 1):
             new_seg = seq[:i]
             # condition check
-            __ l..(cur) < 4 a.. self.is_valid(new_seg):
-                self.dfs(seq[i:], cur + [new_seg], result)
+            __ l..(cur) < 4 a.. is_valid(new_seg):
+                dfs(seq[i:], cur + [new_seg], result)
             ____:
                 r..
 
     ___ is_valid(self, s):
         __ n.. s:
-            r.. False
+            r.. F..
         r.. s __ "0" o. s[0]!="0" a.. 0<= int(s) <256  # ["0.0.0.0"]
 
 __ __name____"__main__":

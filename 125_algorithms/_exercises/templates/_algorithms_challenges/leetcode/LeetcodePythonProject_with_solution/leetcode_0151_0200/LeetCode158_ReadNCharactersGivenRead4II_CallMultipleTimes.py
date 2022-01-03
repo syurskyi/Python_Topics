@@ -9,9 +9,9 @@ Created on May 23, 2018
 ___ read4(buf):
     pass
 
-class Solution(object):
-    ___ __init__(self):
-        self.queue    # list
+c_ Solution(object):
+    ___ - ):
+        queue    # list
     
     ___ read(self, buf, n):
         """
@@ -23,10 +23,10 @@ class Solution(object):
         w... T...
             buf4 = ['']*4
             read4(buf4)
-            self.queue.extend(buf4)
-            curr = m..(l..(self.queue), n-idx)
+            queue.extend(buf4)
+            curr = m..(l..(queue), n-idx)
             ___ _ __ r..(curr):
-                buf[idx] = self.queue.pop(0)
+                buf[idx] = queue.pop(0)
                 idx += 1
             __ curr __ 0:
                 break

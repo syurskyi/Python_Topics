@@ -35,4 +35,4 @@ ___ get_income_distribution(xml=countries):
         income = tr.find('wb:incomelevel').text
         d[income].a..(name)
 
-    r.. d..(s..(d.items(), key=l.... item: item[1]))
+    r.. d..(s..(d.i.., key=l.... item: item[1]))

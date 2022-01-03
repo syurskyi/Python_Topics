@@ -4,7 +4,7 @@ Created on May 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findRelativeRanks(self, nums):
         """
         :type nums: List[int]
@@ -12,7 +12,7 @@ class Solution(object):
         """
         result    # list
         sortNums = s..(nums, r.._T..
-        hashmap = {}
+        hashmap    # dict
         ___ i, num __ e..(sortNums):
             hashmap[num] = i+1
         ___ num __ nums:

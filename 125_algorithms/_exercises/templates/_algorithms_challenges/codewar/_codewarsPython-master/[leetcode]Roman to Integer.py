@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param {string} s
     # @return {integer}
     ___ romanToInt(self, s):

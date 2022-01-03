@@ -5,13 +5,13 @@ Created on Feb 1, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ pathSum(self, root, sumVal):
         """
         :type root: TreeNode
@@ -22,7 +22,7 @@ class Solution(object):
         __ n.. root:
             r.. result
         elem = [root.val]
-        self.dfs(result, elem, root, sumVal-root.val)
+        dfs(result, elem, root, sumVal-root.val)
         r.. result
     
     ___ dfs(self, result, elem, root, sumVal):
@@ -33,17 +33,17 @@ class Solution(object):
             r..
         __ root.left:
             elem.a..(root.left.val)
-            self.dfs(result, elem, root.left, sumVal-root.left.val)
+            dfs(result, elem, root.left, sumVal-root.left.val)
             elem.pop()
         __ root.right:
             elem.a..(root.right.val)
-            self.dfs(result, elem, root.right, sumVal-root.right.val)
+            dfs(result, elem, root.right, sumVal-root.right.val)
             elem.pop()
     
-    ___ test(self):
+    ___ test
         root = TreeNode(5, TreeNode(4, TreeNode(11, TreeNode(7), TreeNode(2))), TreeNode(8, TreeNode(13), TreeNode(4, TreeNode(5), TreeNode(1))))
         sumVal = 22
-        result = self.pathSum(root, sumVal)
+        result = pathSum(root, sumVal)
         print('result: %s' % (result))
 
 __ __name__ __ '__main__':

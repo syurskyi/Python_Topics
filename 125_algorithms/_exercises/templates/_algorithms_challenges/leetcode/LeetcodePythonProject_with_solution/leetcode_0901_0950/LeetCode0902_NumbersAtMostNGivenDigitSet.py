@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ atMostNGivenDigitSet(self, D, N):
         """
         :type D: List[str]
@@ -16,7 +16,7 @@ class Solution(object):
                     dp[i] += dp[i+1]
         r.. dp[0] + s..(l..(D)**i ___ i __ r..(1, k))
 
-    ___ test(self):
+    ___ test
         testCases = [
             # [["3","4","8"], 4],
             # [['7'], 8],
@@ -24,7 +24,7 @@ class Solution(object):
             [["1","4","9"], 1000000000],
         ]
         ___ d, n __ testCases:
-            res = self.atMostNGivenDigitSet(d, n)
+            res = atMostNGivenDigitSet(d, n)
             print('res: %s' % res)
             print('-='*30+'-')
 

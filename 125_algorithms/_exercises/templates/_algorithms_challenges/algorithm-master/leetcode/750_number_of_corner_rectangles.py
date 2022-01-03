@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ countCornerRectangles(self, G):
         """
         :type G: List[List[int]]
@@ -26,7 +26,7 @@ class Solution:
             r.. ans
 
         n = 0
-        count = {}
+        count    # dict
         ___ R __ G:
             ___ end __ r..(1, l..(R)):
                 __ R[end] __ 0:

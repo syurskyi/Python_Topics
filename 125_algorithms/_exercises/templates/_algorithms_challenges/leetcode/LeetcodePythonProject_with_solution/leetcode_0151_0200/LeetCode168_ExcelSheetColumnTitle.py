@@ -4,7 +4,7 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ convertToTitle(self, n):
         """
         :type n: int
@@ -17,10 +17,10 @@ class Solution(object):
             n = int((n-mod)/26)
         r.. res
     
-    ___ test(self):
+    ___ test
         ___ n __ r..(30):
             print('n: %s' % (n))
-            result = self.convertToTitle(n)
+            result = convertToTitle(n)
             print('result: %s' % (result))
             print('-='*20 + '-')
 

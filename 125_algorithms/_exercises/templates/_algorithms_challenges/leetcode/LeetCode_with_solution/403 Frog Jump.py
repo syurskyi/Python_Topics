@@ -36,7 +36,7 @@ the gap between the 5th and 6th stone is too large.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ canCross(self, stones):
         """
         Instead of having F[i][step] = True/False, use F[i] = set of steps
@@ -48,7 +48,7 @@ class Solution(object):
         :type stones: List[int]
         :rtype: bool
         """
-        F = {}
+        F    # dict
         ___ stone __ stones:
             F[stone] = set()
 
@@ -60,10 +60,10 @@ class Solution(object):
                     __ nxt != stone a.. nxt __ F:
                         F[nxt].add(step + i)
 
-        r.. True __ F[stones[-1]] ____ False
+        r.. T.. __ F[stones[-1]] ____ F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().canCross([0, 2]) __ False
-    ... Solution().canCross([0, 1, 3, 5, 6, 8, 12, 17]) __ True
-    ... Solution().canCross([0, 1, 2, 3, 4, 8, 9, 11]) __ False
+    ... Solution().canCross([0, 2]) __ F..
+    ... Solution().canCross([0, 1, 3, 5, 6, 8, 12, 17]) __ T..
+    ... Solution().canCross([0, 1, 2, 3, 4, 8, 9, 11]) __ F..

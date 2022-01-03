@@ -11,7 +11,7 @@ PICKLE_INFILE = TMP / 'input.pkl'
 PICKLE_OUTFILE = TMP / 'output.pkl'
 
 
-class MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple):
     title: s..
     price: int
     date: date

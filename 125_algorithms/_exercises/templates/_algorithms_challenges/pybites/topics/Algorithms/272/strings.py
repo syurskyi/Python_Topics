@@ -1,7 +1,7 @@
 ____ typing _______ List
 
 ___ to_lower(in_list):
-        r.. [word.lower() ___ word __ in_list]
+        r.. [word.l.. ___ word __ in_list]
 
 ___ common_words(sentence1: List[s..], sentence2: List[s..]) -> List[s..]:
     """
@@ -12,8 +12,8 @@ ___ common_words(sentence1: List[s..], sentence2: List[s..]) -> List[s..]:
             If there are duplicate words in the results, just choose one word. 
             Returned words should be sorted by word's length.
     """
-    s1 = [word.lower() ___ word __ sentence1]
-    s2 = [word.lower() ___ word __ sentence2]
+    s1 = [word.l.. ___ word __ sentence1]
+    s2 = [word.l.. ___ word __ sentence2]
     r.. s..(set(s1).intersection(s2), key=l..)
 
 

@@ -1,25 +1,25 @@
-class Solution(object):
+c_ Solution(object):
   ___ wordsAbbreviation(self, d..):
     """
     :type dict: List[str]
     :rtype: List[str]
     """
     abbr2word = collections.defaultdict(set)
-    word2abbr = {}
+    word2abbr    # dict
 
     # group words into abbreivations
     ___ word __ d..:
-      abbr = self.getAbbreviation(word)
+      abbr = getAbbreviation(word)
       abbr2word[abbr].add(word)
 
     # resolve conflicts in each group
-    ___ abbr, words __ abbr2word.items():
+    ___ abbr, words __ abbr2word.i..:
       __ l..(words) > 1:
         ___ word __ words:
           ___ i __ r..(2, l..(word)):
             prefix = word[:i]
-            __ self.checkUnique(prefix, words):
-              nabbr = self.getAbbr(word, prefix)
+            __ checkUnique(prefix, words):
+              nabbr = getAbbr(word, prefix)
               word2abbr[word] = nabbr
               break
       ____:

@@ -4,25 +4,25 @@ Created on Aug 24, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ leastBricks(self, wall):
         """
         :type wall: List[List[int]]
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         ___ vals __ wall:
             sumVal = 0
             ___ val __ vals:
                 sumVal += val
                 hashmap[sumVal] = hashmap.get(sumVal, 0)+1
         minRes = l..(wall)
-        ___ val, count __ hashmap.items():
+        ___ val, count __ hashmap.i..:
             __ 1 <= val < s..(wall[0]): # not the start and end
                 minRes = m..(minRes, l..(wall)-count)
         r.. minRes
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,2,2,1],
@@ -35,8 +35,8 @@ class Solution(object):
         ]
         ___ wall __ testCases:
             print('wall:')
-            print('\n'.join([s..(row) ___ row __ wall]))
-            result = self.leastBricks(wall)
+            print('\n'.j..([s..(row) ___ row __ wall]))
+            result = leastBricks(wall)
             print('result: %s' % result)
             print('-='*30+'-')
 

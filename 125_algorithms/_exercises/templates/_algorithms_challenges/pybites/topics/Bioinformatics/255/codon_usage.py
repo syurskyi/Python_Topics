@@ -28,7 +28,7 @@ ___ _preload_sequences(url=URL):
     Provided helper function
     Returns coding sequences, one sequence each line
     """
-    filename = os.path.join(os.getenv("TMP", "/tmp"), "NC_009641.txt")
+    filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
     __ n.. os.path.isfile(filename):
         urlretrieve(url, filename)
     with open(filename, "r") as f:
@@ -69,7 +69,7 @@ ___ return_codon_usage_table(
     _, Base1 = translation_table_line[2].s..('  = ')
     _, Base2 = translation_table_line[3].s..('  = ')
     _, Base3 = translation_table_line[4].s..('  = ')
-    translation = {''.join(z[0:3]): z[3] ___ z __
+    translation = {''.j..(z[0:3]): z[3] ___ z __
         z..(Base1.r..('T', 'U'), Base2.r..('T', 'U'), Base3.r..('T', 'U'), AAs)}
     translation_list = l..(translation.keys())
     ___ i __ r..(0, l..(translation_list), 16):
@@ -80,7 +80,7 @@ ___ return_codon_usage_table(
                             translation
                             ))
         whole_table.a..(seperator)
-    r.. '\n'.join(whole_table)
+    r.. '\n'.j..(whole_table)
 
 
 

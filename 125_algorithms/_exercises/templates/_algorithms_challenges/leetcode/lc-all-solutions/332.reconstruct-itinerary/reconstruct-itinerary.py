@@ -1,13 +1,13 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findItinerary(self, tickets):
     """
     :type tickets: List[List[str]]
     :rtype: List[str]
     """
-    graph = {}
+    graph    # dict
     hashset = set([])
     ___ ticket __ tickets:
       graph[ticket[0]] = graph.get(ticket[0], []) + [ticket[1]]

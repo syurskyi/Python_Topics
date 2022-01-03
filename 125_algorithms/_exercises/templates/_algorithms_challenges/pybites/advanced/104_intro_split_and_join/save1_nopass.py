@@ -8,6 +8,6 @@ ___ split_in_columns(message = message):
     """Split the message by newline (\n) and join it together on '|'
        (pipe), return the obtained output string"""
     x = (message.s..("\n"))
-    print(x.join("|"))
+    print(x.j..("|"))
     #    return message.join("|")
     pass

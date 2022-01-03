@@ -23,7 +23,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ longestPalindrome(self, s):
         """
         :type s: str
@@ -34,10 +34,10 @@ class Solution(object):
             c[elt] += 1
 
         ret = 0
-        ___ v __ c.values():
+        ___ v __ c.v..
             ret += (v/2) * 2
 
-        __ any(map(l.... x: x % 2 __ 1, c.values())):
+        __ any(map(l.... x: x % 2 __ 1, c.v..:
             ret += 1
 
         r.. ret

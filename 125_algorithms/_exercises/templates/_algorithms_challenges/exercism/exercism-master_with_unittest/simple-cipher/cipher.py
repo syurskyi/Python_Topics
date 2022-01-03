@@ -2,35 +2,35 @@ _______ random
 _______ string
 
 
-class Cipher:
+c_ Cipher:
 
     random_key_length = 100
 
-    ___ __init__(self, key_ N..
-        self.key = key __ key __ n.. N.. ____ self.generate_random_key()
-        __ n.. self.valid_key():
+    ___ - , key_ N..
+        key = key __ key __ n.. N.. ____ generate_random_key()
+        __ n.. valid_key():
             raise ValueError()
 
     ___ encode(self, phrase):
-        r.. ''.join([chr(self.wrap(ord(c) + self.offset(i))) ___ i, c __
-                        e..(self.clean(phrase))])
+        r.. ''.j..([chr(wrap(ord(c) + offset(i))) ___ i, c __
+                        e..(clean(phrase))])
 
     ___ decode(self, phrase):
-        r.. ''.join([chr(self.wrap(ord(c) - self.offset(i))) ___ i, c __
-                        e..(self.clean(phrase))])
+        r.. ''.j..([chr(wrap(ord(c) - offset(i))) ___ i, c __
+                        e..(clean(phrase))])
 
     ___ clean(self, phrase):
         r.. l..(filter(s...isalpha, phrase.lower()))
 
-    ___ generate_random_key(self):
-        r.. ''.join(random.SystemRandom().choice(string.ascii_lowercase)
-                       ___ _ __ r..(self.random_key_length))
+    ___ generate_random_key
+        r.. ''.j..(random.SystemRandom().choice(string.ascii_lowercase)
+                       ___ _ __ r..(random_key_length))
 
-    ___ valid_key(self):
-        r.. self.key.isalpha() a.. self.key.islower()
+    ___ valid_key
+        r.. key.isalpha() a.. key.islower()
 
     ___ offset(self, index):
-        r.. self.wrap(ord(self.key[index % l..(self.key)]) - 97)
+        r.. wrap(ord(key[index % l..(key)]) - 97)
 
     ___ wrap(self, val):
         w.... val > 122:
@@ -40,7 +40,7 @@ class Cipher:
         r.. val
 
 
-class Caesar:
+c_ Caesar:
 
     cipher = Cipher('d')
 

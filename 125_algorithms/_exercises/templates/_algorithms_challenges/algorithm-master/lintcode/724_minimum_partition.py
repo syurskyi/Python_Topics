@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findMin(self, nums):
         """
         :type nums: list[int]
@@ -8,8 +8,8 @@ class Solution:
             r.. 0
 
         target = s..(nums)
-        dp = [False] * (target + 1)
-        dp[0] = True
+        dp = [F..] * (target + 1)
+        dp[0] = T..
 
         ans = float('inf')
 

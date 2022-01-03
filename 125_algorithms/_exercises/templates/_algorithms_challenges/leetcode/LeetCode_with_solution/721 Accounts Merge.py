@@ -41,7 +41,7 @@ The length of accounts[i][j] will be in the range [1, 30].
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ accountsMerge(self, accounts: List[List[s..]]) -> List[List[s..]]:
         """
         merge has to be dfs
@@ -53,23 +53,23 @@ class Solution:
                 email_to_ids[email].add(i)
 
         # graph nodes by ids, edges by email
-        visited = [False ___ _ __ accounts]
+        visited = [F.. ___ _ __ accounts]
         ret    # list
         ___ i, v __ e..(accounts):
             __ n.. visited[i]:
                 emails = set()
-                self.dfs(i, accounts, email_to_ids, emails, visited)
+                dfs(i, accounts, email_to_ids, emails, visited)
                 ret.a..([v[0]] + s..(emails))
 
         r.. ret
 
     ___ dfs(self, i, accounts, email_to_ids, emails, visited):
-        visited[i] = True
+        visited[i] = T..
         ___ email __ accounts[i][1:]:
             emails.add(email)
             ___ nbr __ email_to_ids[email]:
                 __ n.. visited[nbr]:
-                    self.dfs(nbr, accounts, email_to_ids, emails, visited)
+                    dfs(nbr, accounts, email_to_ids, emails, visited)
 
 
     ___ accountsMerge_error(self, accounts: List[List[s..]]) -> List[List[s..]]:
@@ -80,7 +80,7 @@ class Solution:
 
         mistake: not dfs, search on the first level
         """
-        email_id = {}
+        email_id    # dict
         id_emails = defaultdict(l..)
         ___ i __ r..(l..(accounts)):
             person = N..
@@ -99,7 +99,7 @@ class Solution:
                     id_emails[person].a..(email)
 
         ret    # list
-        ___ k, v __ id_emails.items():
+        ___ k, v __ id_emails.i..:
             ret.a..([accounts[k][0]] + s..(v))
 
         r.. ret

@@ -3,7 +3,7 @@ Created on Feb 22, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ calculate(self, s):
         """
         :type s: str
@@ -40,7 +40,7 @@ class Solution(object):
         res += preVal*sign
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             '(1+(4+5+2)-3)+(6+8)',
             '(1-3)+(3-5+(3-10)-10)',
@@ -51,7 +51,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.calculate(s)
+            result = calculate(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 

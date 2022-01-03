@@ -37,7 +37,7 @@ __ n.. pycons_file.exists() o. n.. nominatim_responses.exists():
 
 
 @dataclass
-class PyCon:
+c_ PyCon:
     name: s..
     city: s..
     country: s..
@@ -50,11 +50,11 @@ class PyCon:
 
     ___ __lt__(self,other):
         __ isi..(other,PyCon):
-            r.. self.start_date < other.start_date
+            r.. start_date < other.start_date
 
 
 @dataclass
-class Trip:
+c_ Trip:
     origin: PyCon
     destination: PyCon
     distance: float
@@ -94,8 +94,8 @@ ___ _extract_city_country_to_lat_lon():
     with open(nominatim_responses,'r') as f:
         places = json.load(f)
     
-    mapping = {}
-    ___ key,places __ places.items():
+    mapping    # dict
+    ___ key,places __ places.i..:
         ___ r __ places:
             __ r['type'] __ 'city':
                 city,*temp,country = r['display_name'].s..(',')

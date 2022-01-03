@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ lengthLongestPath(self, input):
     """
     :type input: str

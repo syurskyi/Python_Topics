@@ -4,48 +4,48 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class ZigzagIterator(object):
-    ___ __init__(self, v1, v2):
+c_ ZigzagIterator(object):
+    ___ - , v1, v2):
         """
         Initialize your data structure here.
         :type v1: List[int]
         :type v2: List[int]
         """
-        self.mat = [v1, v2]
-        self.maxa = max((c, r) ___ r, c __ e..(map(l.... x: l..(x)-1, self.mat)))
-        self.i = 0
-        self.j = 0
-        self._reposition()
+        mat = [v1, v2]
+        maxa = max((c, r) ___ r, c __ e..(map(l.... x: l..(x)-1, mat)))
+        i = 0
+        j = 0
+        _reposition()
 
-    ___ _reposition(self):
-        w.... self.i >= l..(self.mat) o. self.j >= l..(self.mat[self.i]):
-            __ n.. self.hasNext():
+    ___ _reposition
+        w.... i >= l..(mat) o. j >= l..(mat[i]):
+            __ n.. hasNext():
                 r..
 
-            ____ self.i >= l..(self.mat):
-                self.i = 0
-                self.j += 1
+            ____ i >= l..(mat):
+                i = 0
+                j += 1
 
-            ____ self.j >= l..(self.mat[self.i]):
-                self.i += 1
+            ____ j >= l..(mat[i]):
+                i += 1
 
-    ___ next(self):
+    ___ next
         """
         :rtype: int
         """
-        __ n.. self.hasNext():
+        __ n.. hasNext():
             raise StopIteration
 
-        ret = self.mat[self.i][self.j]
-        self.i += 1
-        self._reposition()
+        ret = mat[i][j]
+        i += 1
+        _reposition()
         r.. ret
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         :rtype: bool
         """
-        r.. self.j <= self.maxa[0]
+        r.. j <= maxa[0]
 
 
 __ __name__ __ "__main__":

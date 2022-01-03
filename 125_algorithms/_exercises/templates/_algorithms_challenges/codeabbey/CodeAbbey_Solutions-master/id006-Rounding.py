@@ -3,5 +3,5 @@ ___ roundNums(amount):
     ___ pairCount __ r..(amount):
         pair = raw_input().s..(' ')
         answers.a..(s..(int(round(float("%.02f" % (float(pair[0]) / float(pair[1])))))))
-    print(' '.join(answers))
+    print(' '.j..(answers))
 roundNums(input())

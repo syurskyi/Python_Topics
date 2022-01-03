@@ -1,7 +1,7 @@
 _______ heapq
 
 
-class Solution(object):
+c_ Solution(object):
   ___ nthSuperUglyNumber(self, n, primes):
     """
     :type n: int

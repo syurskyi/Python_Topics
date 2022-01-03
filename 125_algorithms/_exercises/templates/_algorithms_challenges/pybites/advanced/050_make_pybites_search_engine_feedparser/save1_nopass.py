@@ -2,7 +2,7 @@ ____ collections _______ n..
 ____ time _______ mktime
 ____ feedparser _______ parse
 ____ d__ _______ d__
-_______ re
+_______ __
 
 
 FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
@@ -16,7 +16,7 @@ ___ _convert_struct_time_to_dt(stime):
     time.struct_time(tm_year=2016, tm_mon=12, tm_mday=28, ...)
     -> date(2016, 12, 28)
     """
-    __ type(stime) __ s..:
+    __ t..(stime) __ s..:
         f.. = '%a, %d %b %Y %H:%M:%S %z'
         dt_object = d__.strptime(stime, f..)
         r.. dt_object.date()
@@ -37,7 +37,7 @@ ___ get_feed_entries(feed=FEED):
     r.. output
 
 
-___ filter_entries_by_tag(search, entry):
+___ filter_entries_by_tag(s.., entry):
     """Check if search matches any tags as stored in the Entry namedtuple
        (case insensitive, only whole, not partial string matches).
        Returns bool: True if match, False if not.
@@ -48,17 +48,17 @@ ___ filter_entries_by_tag(search, entry):
           e.g. flask|django should match entries with either tag
        3. Else: match if search is in tags
     """
-    search = search.lower()
+    s.. = s...l..
     tag_list = [tag ___ tag __ entry.tags]
-    __ n.. re.search(r'\|', search) a.. n.. re.search(r'\&', search):
-        r.. search __ tag_list
-    __ re.search(r'\|', search):
-        search = re.s..(r'\|', search)
-        r.. any([item __ tag_list ___ item __ search])
-    __ re.search(r'\&', search):
-        search = re.s..(r'\&', search)
-        r.. a..([item __ tag_list ___ item __ search])
-    r.. search
+    __ n.. __.s..(r'\|', s..) a.. n.. __.s..(r'\&', s..):
+        r.. s.. __ tag_list
+    __ __.s..(r'\|', s..):
+        s.. = __.s..(r'\|', s..)
+        r.. any([item __ tag_list ___ item __ s..])
+    __ __.s..(r'\&', s..):
+        s.. = __.s..(r'\&', s..)
+        r.. a..([item __ tag_list ___ item __ s..])
+    r.. s..
 
 
 ___ main():
@@ -90,7 +90,7 @@ ___ main():
                     output_list.a..(entry)
             output_list = s..(output_list, key=l.... x: x.date)
             
-            titles = ''.join([entry.title ___ entry __ output_list])
+            titles = ''.j..([entry.title ___ entry __ output_list])
 
             output_number = l..(output_list)
             __ output_number < 1:

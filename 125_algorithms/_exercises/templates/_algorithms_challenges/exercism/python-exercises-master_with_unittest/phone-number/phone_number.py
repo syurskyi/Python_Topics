@@ -1,3 +1,3 @@
-class Phone(object):
-    ___ __init__(self):
+c_ Phone(object):
+    ___ - ):
         pass

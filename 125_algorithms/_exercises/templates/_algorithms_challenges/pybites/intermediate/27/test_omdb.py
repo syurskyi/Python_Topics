@@ -40,7 +40,7 @@ ___ test_len_movie_data(movies):
 
 
 ___ test_type_of_movie_elements(movies):
-    ... a..(type(m) __ d.. ___ m __ movies)
+    ... a..(t..(m) __ d.. ___ m __ movies)
 
 
 @pytest.mark.parametrize("func, expected", [

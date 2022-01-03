@@ -1,4 +1,4 @@
-class Codec:
+c_ Codec:
 
   ___ encode(self, longUrl):
     """Encodes a URL to a shortened URL.

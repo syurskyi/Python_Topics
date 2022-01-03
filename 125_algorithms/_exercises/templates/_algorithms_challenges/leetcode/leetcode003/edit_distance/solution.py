@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @return an integer
     ___ minDistance(self, word1, word2):
         n = l..(word1)

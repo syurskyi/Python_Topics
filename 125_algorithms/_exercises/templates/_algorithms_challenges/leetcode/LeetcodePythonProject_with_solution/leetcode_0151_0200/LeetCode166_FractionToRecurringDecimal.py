@@ -4,7 +4,7 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ fractionToDecimal(self, numerator, denominator):
         """
         :type numerator: int
@@ -22,4 +22,4 @@ class Solution(object):
         idx = stack.index(remainder)
         result.insert(idx+2, '(')
         result.a..(')')
-        r.. ''.join(result).r..('(0)', '').rstrip('.')
+        r.. ''.j..(result).r..('(0)', '').rstrip('.')

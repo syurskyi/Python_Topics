@@ -3,7 +3,7 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ decodeAtIndex(self, S, K):
         """
         :type S: str

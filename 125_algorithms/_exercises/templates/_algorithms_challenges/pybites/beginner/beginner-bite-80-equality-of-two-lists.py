@@ -13,7 +13,7 @@ and finally return NO_EQUALITY if none of the previous cases match.
 
 ____ enum _______ Enum
 
-class Equality(Enum):
+c_ Equality(Enum):
     SAME_REFERENCE = 4
     SAME_ORDERED = 3
     SAME_UNORDERED = 2

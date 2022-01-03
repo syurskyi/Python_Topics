@@ -9,7 +9,7 @@ ___ get_word_max_vowels(text):
     top_vowel_count = float("-inf")
     top_word = N..
         
-    ___ word __ text.lower().s.. :
+    ___ word __ text.l...s.. :
         vowel_count = 0
         ___ character __ word:
             __ character __ VOWELS:

@@ -3,7 +3,7 @@ _______ unittest
 _______ roman
 
 
-class RomanTest(unittest.TestCase):
+c_ RomanTest(unittest.TestCase):
     numerals = {
         1: 'I',
         2: 'II',
@@ -25,9 +25,9 @@ class RomanTest(unittest.TestCase):
         3000: 'MMM',
     }
 
-    ___ test_numerals(self):
-        ___ arabic, numeral __ l..(self.numerals.items()):
-            self.assertEqual(numeral, roman.numeral(arabic))
+    ___ test_numerals
+        ___ arabic, numeral __ l..(numerals.items()):
+            assertEqual(numeral, roman.numeral(arabic))
 
 
 __ __name__ __ '__main__':

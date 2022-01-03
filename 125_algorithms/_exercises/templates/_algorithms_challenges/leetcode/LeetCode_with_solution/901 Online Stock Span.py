@@ -38,8 +38,8 @@ for all other languages.
 """
 
 
-class StockSpanner:
-    ___ __init__(self):
+c_ StockSpanner:
+    ___ - ):
         """
         Consecutive Backward <=
         insort? O(n) or O(log n) using BST. Probably not for consecutive days
@@ -47,14 +47,14 @@ class StockSpanner:
         Only interested in consecutive backwards <=, then only keep the
         previously >. A stack to maintain a list ">" (decreasing) elements
         """
-        self.stk    # list   # [(price, span)]
+        stk    # list   # [(price, span)]
 
     ___ next(self, price: int) -> int:
         cur_span = 1
-        w.... self.stk a.. self.stk[-1][0] <= price:
-            _, span = self.stk.pop()
+        w.... stk a.. stk[-1][0] <= price:
+            _, span = stk.pop()
             cur_span += span
-        self.stk.a..((price, cur_span))
+        stk.a..((price, cur_span))
         r.. cur_span
 
 

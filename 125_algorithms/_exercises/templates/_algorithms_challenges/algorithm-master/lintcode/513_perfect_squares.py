@@ -5,7 +5,7 @@ Test Case:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: n: a positive integer
     @return: An integer

@@ -9,7 +9,7 @@ Note: You may assume k is always valid, 1 <= k <= array's length.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findKthLargest(self, nums, k):
         """
         :type nums: List[int]
@@ -21,7 +21,7 @@ class Solution(object):
         left = 0
         right = l..(nums) - 1
         w.... left <= right:
-            pivot = self.partition(nums, left, right)
+            pivot = partition(nums, left, right)
             # nums[pivot] is (pivot + 1)th largest, so
             # if pivot == k - 1, it is kth largest.
             __ pivot __ k - 1:

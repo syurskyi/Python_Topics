@@ -7,7 +7,7 @@ class Point:
 """
 
 
-class Solution:
+c_ Solution:
     V = (
         (-2, -1),
         ( 2,  1),
@@ -42,7 +42,7 @@ class Solution:
             steps += 1
 
             ___ P __ queue:
-                ___ dx, dy __ self.V:
+                ___ dx, dy __ V:
                     _x = P.x + dx
                     _y = P.y + dy
 

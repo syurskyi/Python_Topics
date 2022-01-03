@@ -16,7 +16,7 @@ Output:  [1,2,4,7,5,3,6,8,9]
 """
 
 
-class Solution:
+c_ Solution:
     ___ findDiagonalOrder(self, matrix):
         """
         2nd approach
@@ -56,7 +56,7 @@ class Solution:
             r.. []
         i = 0
         j = 0
-        inc = True
+        inc = T..
         ret    # list
         R, C = l..(matrix), l..(matrix[0])
         w... T...
@@ -67,7 +67,7 @@ class Solution:
                 i -= 1
                 j += 1
                 __ i < 0 o. j >= C:
-                    inc = False
+                    inc = F..
                     __ i < 0 a.. j < C:
                         i = 0
                     ____:
@@ -77,7 +77,7 @@ class Solution:
                 i += 1
                 j -= 1
                 __ i >= R o. j < 0:
-                    inc = True
+                    inc = T..
                     __ j < 0 a.. i < R:
                         j = 0
                     ____:

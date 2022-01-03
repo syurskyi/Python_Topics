@@ -6,9 +6,9 @@ https://leetcode.com/problems/strobogrammatic-number/
 __author__ = 'Daniel'
 
 
-class Solution:
-    ___ __init__(self):
-        self.map = {
+c_ Solution:
+    ___ - ):
+        map = {
             "1": "1",
             "6": "9",
             "9": "6",
@@ -18,10 +18,10 @@ class Solution:
 
     ___ isStrobogrammatic(self, num):
         ___ i __ xrange(l..(num)/2+1):
-            __ num[i] n.. __ self.map o. self.map[num[i]] != num[l..(num)-1-i]:
-                r.. False
+            __ num[i] n.. __ map o. map[num[i]] != num[l..(num)-1-i]:
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ isStrobogrammatic_tedious(self, num):
         """
@@ -33,8 +33,8 @@ class Solution:
         rev    # list  # reverse
         ___ digit __ reversed(num):
             try:
-                rev.a..(self.map[digit])
+                rev.a..(map[digit])
             except KeyError:
-                r.. False
+                r.. F..
 
         r.. num __ rev

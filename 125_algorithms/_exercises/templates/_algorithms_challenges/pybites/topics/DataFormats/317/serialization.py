@@ -13,7 +13,7 @@ PICKLE_INFILE = TMP / 'input.pkl'
 PICKLE_OUTFILE = TMP / 'output.pkl'
 
 
-class MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple):
     title: s..
     price: int
     date: date
@@ -40,7 +40,7 @@ ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
     output_file = open(pkl_file, "wb")
     pickle.dump(data, output_file)
 
-class Bite(NamedTuple):
+c_ Bite(NamedTuple):
     title: s..
     number: int
     level: s..

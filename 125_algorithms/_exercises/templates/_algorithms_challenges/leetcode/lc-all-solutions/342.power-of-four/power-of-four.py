@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isPowerOfFour(self, num):
     """
     :type num: int

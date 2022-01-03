@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 _______ pytest
 
@@ -11,15 +11,15 @@ lines = [b'Hello world',
 
 @pytest.mark.parametrize("some_text, expected", [
     (lines[0], '1 2 11'),
-    (b'\n'.join(lines[:2]), '2 8 40'),
-    (b'\n'.join(lines), '3 12 60'),
+    (b'\n'.j..(lines[:2]), '2 8 40'),
+    (b'\n'.j..(lines), '3 12 60'),
 ])
 ___ test_wc(some_text, expected, tmp_path):
     f = tmp_path / "some_file.txt"
     f.write_bytes(some_text)
     output = wc(f.resolve())
     # replace tabs / multiple spaces by single space
-    output = re.sub(r'\t|\s+', ' ', output)
+    output = __.sub(r'\t|\s+', ' ', output)
 
     ... expected __ output
     # file with/without path allowed

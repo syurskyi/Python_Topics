@@ -3,7 +3,7 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ orderOfLargestPlusSign(self, N, mines):
         """
         :type N: int
@@ -53,7 +53,7 @@ class Solution(object):
                 maxLen = max(maxLen, m..(dp[i][j]))
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [5, [[4, 2]]],
             [2, []],
@@ -65,7 +65,7 @@ class Solution(object):
         ___ n, mines __ testCases:
             print('n: %s' % n)
             print('mines: %s' % mines)
-            result = self.orderOfLargestPlusSign(n, mines)
+            result = orderOfLargestPlusSign(n, mines)
             print('result: %s' % result)
             print('-='*30+'-')
 

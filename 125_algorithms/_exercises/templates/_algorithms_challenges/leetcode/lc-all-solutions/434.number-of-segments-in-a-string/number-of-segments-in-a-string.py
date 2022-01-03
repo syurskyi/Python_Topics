@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ countSegments(self, s):
     """
     :type s: str

@@ -7,7 +7,7 @@ class UndirectedGraphNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     Union Find
     """
@@ -19,17 +19,17 @@ class Solution:
         __ n.. nodes:
             r.. []
 
-        uf = {}
+        uf    # dict
 
         ___ node __ nodes:
             ___ neib __ node.neighbors:
-                self.union(uf, node, neib)
+                union(uf, node, neib)
 
-        ans = {}
+        ans    # dict
 
         ___ node __ nodes:
             # to correct root again
-            root = self.find(uf, node)
+            root = find(uf, node)
 
             __ root n.. __ ans:
                 ans[root]    # list
@@ -39,8 +39,8 @@ class Solution:
         r.. l..(ans.values())
 
     ___ union(self, nodes, a, b):
-        _a = self.find(nodes, a)
-        _b = self.find(nodes, b)
+        _a = find(nodes, a)
+        _b = find(nodes, b)
 
         __ _a __ n.. _b:
             nodes[_b] = _a
@@ -52,11 +52,11 @@ class Solution:
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] = self.find(nodes, nodes[a])
+        nodes[a] = find(nodes, nodes[a])
         r.. nodes[a]
 
 
-class Solution:
+c_ Solution:
     """
     DFS
     """
@@ -77,7 +77,7 @@ class Solution:
                 continue
 
             path    # list
-            self.dfs(node, visited, path)
+            dfs(node, visited, path)
             ans.a..(s..(path))
 
         r.. ans
@@ -90,4 +90,4 @@ class Solution:
             __ b __ visited:
                 continue
 
-            self.dfs(b, visited, path)
+            dfs(b, visited, path)

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ distributeCandies(self, candies):
     """
     :type candies: List[int]

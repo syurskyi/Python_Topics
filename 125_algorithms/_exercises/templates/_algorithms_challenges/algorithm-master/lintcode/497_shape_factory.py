@@ -4,34 +4,34 @@ sf = ShapeFactory()
 shape = sf.getShape(shapeType)
 shape.draw()
 """
-class Shape:
-    ___ draw(self):
+c_ Shape:
+    ___ draw
         raise NotImplementedError('This method should have implemented.')
 
 
-class Triangle(Shape):
-    ___ draw(self):
+c_ Triangle(Shape):
+    ___ draw
         print '  /\\'
         print ' /  \\'
         print '/____\\'
 
 
-class Rectangle(Shape):
-    ___ draw(self):
+c_ Rectangle(Shape):
+    ___ draw
         print ' ----'
         print '|    |'
         print ' ----'
 
 
-class Square(Shape):
-    ___ draw(self):
+c_ Square(Shape):
+    ___ draw
         print ' ----'
         print '|    |'
         print '|    |'
         print ' ----'
 
 
-class ShapeFactory:
+c_ ShapeFactory:
     # @param {string} shapeType a string
     # @return {Shape} Get object of type Shape
     ___ getShape(self, shapeType):

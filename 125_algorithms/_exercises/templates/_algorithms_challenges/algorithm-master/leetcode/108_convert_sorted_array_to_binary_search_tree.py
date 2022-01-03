@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-class Solution:
+c_ Solution:
     ___ sortedArrayToBST(self, nums):
         """
         :type nums: List[int]
@@ -17,7 +17,7 @@ class Solution:
 
         i = l..(nums) // 2
         node = TreeNode(nums[i])
-        node.left = self.sortedArrayToBST(nums[:i])
-        node.right = self.sortedArrayToBST(nums[i + 1:])
+        node.left = sortedArrayToBST(nums[:i])
+        node.right = sortedArrayToBST(nums[i + 1:])
 
         r.. node

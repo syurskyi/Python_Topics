@@ -5,7 +5,7 @@ Created on Oct 10, 2018
 '''
 _______ i..
 
-class Solution(object):
+c_ Solution(object):
     ___ numSimilarGroups(self, A):
         """
         :type A: List[str]
@@ -14,7 +14,7 @@ class Solution(object):
         arr = l..(set(A))
         parents = {x: x ___ x __ arr}
         n, m = l..(arr), l..(arr[0])
-        self.count = n
+        count = n
         
         ___ find(x):
             __ x != parents[x]:
@@ -25,9 +25,9 @@ class Solution(object):
             x, y = find(x), find(y)
             __ x != y:
                 parents[x] = y
-                self.count -= 1
-                r.. True
-            r.. False
+                count -= 1
+                r.. T..
+            r.. F..
         
         ___ similar(x, y):
             r.. s..(i != j ___ i, j __ z..(x, y)) __ 2
@@ -44,9 +44,9 @@ class Solution(object):
                     __ y __ parents:
                         union(x, y)
         
-        r.. self.count
+        r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["aaa", "aaa", "aaa"],
             ["tars","rats","arts","star"],
@@ -55,7 +55,7 @@ class Solution(object):
         ]
         ___ strs __ testCases:
             print('strs: %s' % strs)
-            result = self.numSimilarGroups(strs)
+            result = numSimilarGroups(strs)
             print('result: %s' % result)
             print('-='*30+'-')
 

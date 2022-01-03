@@ -5,14 +5,14 @@ https://leetcode.com/problems/closest-binary-search-tree-value-ii/
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ closestKValues(self, root, target, k):
         """
         consider the predecessors and successors of the closest node to the target
@@ -27,27 +27,27 @@ class Solution(object):
         """
         pre    # list
         suc    # list
-        self.predecessors(root, target, pre)
-        self.successors(root, target, suc)
-        r.. self.merge(target, k, pre, suc)
+        predecessors(root, target, pre)
+        successors(root, target, suc)
+        r.. merge(target, k, pre, suc)
 
     ___ predecessors(self, root, target, stk):
         __ n.. root:
             r..
 
-        self.predecessors(root.left, target, stk)
+        predecessors(root.left, target, stk)
         __ root.val <= target:
             stk.a..(root.val)
-            self.predecessors(root.right, target, stk)
+            predecessors(root.right, target, stk)
 
     ___ successors(self, root, target, stk):
         __ n.. root:
             r..
 
-        self.successors(root.right, target, stk)
+        successors(root.right, target, stk)
         __ root.val > target:
             stk.a..(root.val)
-            self.successors(root.left, target, stk)
+            successors(root.left, target, stk)
 
     ___ merge(self, target, k, pre, suc):
         ret    # list

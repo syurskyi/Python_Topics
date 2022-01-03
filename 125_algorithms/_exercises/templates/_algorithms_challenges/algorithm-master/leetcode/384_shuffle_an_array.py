@@ -1,28 +1,28 @@
 ____ random _______ randrange
 
 
-class Solution:
-    ___ __init__(self, nums):
+c_ Solution:
+    ___ - , nums):
         """
         :type nums: List[int]
         """
-        self.origin = nums[:]
-        self.nums = nums
+        origin = nums[:]
+        nums = nums
 
-    ___ reset(self):
+    ___ reset
         """
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        self.nums = self.origin[:]
-        r.. self.nums
+        nums = origin[:]
+        r.. nums
 
-    ___ shuffle(self):
+    ___ shuffle
         """
         Returns a random shuffling of the array.
         :rtype: List[int]
         """
-        a = self.nums
+        a = nums
         n = l..(a)
 
         ___ i __ r..(n):

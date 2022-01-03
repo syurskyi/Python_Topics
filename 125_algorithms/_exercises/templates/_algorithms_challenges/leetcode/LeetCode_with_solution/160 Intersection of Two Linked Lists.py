@@ -23,13 +23,13 @@ Your code should preferably run in O(n) time and use only O(1) memory.
 __author__ = 'Daniel'
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution:
+c_ Solution:
     ___ getIntersectionNode(self, headA, headB):
         """
         We can do something with the length difference.
@@ -38,8 +38,8 @@ class Solution:
         :type headB: ListNode
         :rtype: ListNode
         """
-        l_a = self._get_len(headA)
-        l_b = self._get_len(headB)
+        l_a = _get_len(headA)
+        l_b = _get_len(headB)
         __ l_a > l_b:
             l_a, l_b = l_b, l_a
             headA, headB = headB, headA

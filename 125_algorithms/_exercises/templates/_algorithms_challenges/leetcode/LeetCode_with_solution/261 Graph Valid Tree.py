@@ -6,7 +6,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ validTree(self, n, edges):
         """
         A graph is a tree:
@@ -26,21 +26,21 @@ class Solution(object):
 
         visited = set()
         pathset = set()
-        __ n.. self.dfs(V, edges[0][0], N.., pathset, visited):
-            r.. False
+        __ n.. dfs(V, edges[0][0], N.., pathset, visited):
+            r.. F..
 
         r.. l..(visited) __ n
 
     ___ dfs(self, V, v, pi, pathset, visited):
         __ v __ pathset:
-            r.. False
+            r.. F..
 
         pathset.add(v)
         ___ nbr __ V[v]:
             __ nbr != pi:  # since undirected graph
-                __ n.. self.dfs(V, nbr, v, pathset, visited):
-                    r.. False
+                __ n.. dfs(V, nbr, v, pathset, visited):
+                    r.. F..
 
         pathset.remove(v)
         visited.add(v)
-        r.. True
+        r.. T..

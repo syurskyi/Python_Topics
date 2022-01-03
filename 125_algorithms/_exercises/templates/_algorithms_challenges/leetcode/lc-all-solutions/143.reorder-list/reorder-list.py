@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
   ___ reorderList(self, head):
     """
     :type head: ListNode

@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ binaryTreePaths(self, root):
         """
         :type root: TreeNode
@@ -17,7 +17,7 @@ class Solution:
         __ n.. root:
             r.. ans
 
-        self.dfs(root, ans, [])
+        dfs(root, ans, [])
 
         r.. ans
 
@@ -25,14 +25,14 @@ class Solution:
         path.a..(s..(node.val))
 
         __ n.. node.left a.. n.. node.right:
-            ans.a..('->'.join(path))
+            ans.a..('->'.j..(path))
             path.pop()
             r..
 
         __ node.left:
-            self.dfs(node.left, ans, path)
+            dfs(node.left, ans, path)
 
         __ node.right:
-            self.dfs(node.right, ans, path)
+            dfs(node.right, ans, path)
 
         path.pop()

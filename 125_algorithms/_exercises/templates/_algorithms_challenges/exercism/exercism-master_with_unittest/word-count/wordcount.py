@@ -7,7 +7,7 @@ ___ word_count(phrase):
     words = [_f ___ _f __ words __ _f]
 
     # Initialize new dict for count of occurences
-    count = {}
+    count    # dict
     ___ word __ words:
         count[word] = 1 __ word n.. __ count ____ count[word] + 1
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     BFS
     """
@@ -37,7 +37,7 @@ class Solution:
         r.. -1
 
 
-class Solution:
+c_ Solution:
     """
     DP: TLE
     """

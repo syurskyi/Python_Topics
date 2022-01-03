@@ -4,7 +4,7 @@ Created on Apr 27, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findRadius(self, houses, heaters):
         houses.s..()
         heaters.s..()
@@ -22,7 +22,7 @@ class Solution(object):
             radius = max(radius, tmp)
         r.. radius
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 2, 3],
@@ -36,7 +36,7 @@ class Solution(object):
         ___ houses, heaters __ testCases:
             print('houses: %s' % houses)
             print('heaters: %s' % heaters)
-            result = self.findRadius(houses, heaters)
+            result = findRadius(houses, heaters)
             print('result: %s' % result)
             print('-='*30+'-')
 

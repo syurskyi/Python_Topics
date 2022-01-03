@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
+c_ Solution:
     # @param a ListNode
     # @return a ListNode
     ___ swapPairs(self, head):
@@ -12,6 +12,6 @@ class Solution:
             r.. head
         ____:
             t = head.next
-            head.next = self.swapPairs(t.next)
+            head.next = swapPairs(t.next)
             t.next = head
             r.. t

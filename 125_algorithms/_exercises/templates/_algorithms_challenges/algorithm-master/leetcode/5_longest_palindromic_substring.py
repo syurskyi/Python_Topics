@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ longestPalindrome(self, s):
         """
         :type s: str
@@ -10,13 +10,13 @@ class Solution:
         start = size = 0
 
         ___ i __ r..(l..(s)):
-            _start, _size = self.check_palindrome(s, i, i)
+            _start, _size = check_palindrome(s, i, i)
 
             __ _size > size:
                 size = _size
                 start = _start
 
-            _start, _size = self.check_palindrome(s, i, i + 1)
+            _start, _size = check_palindrome(s, i, i + 1)
 
             __ _size > size:
                 size = _size

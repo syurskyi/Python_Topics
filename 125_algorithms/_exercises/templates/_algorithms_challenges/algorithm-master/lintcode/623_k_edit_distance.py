@@ -1,18 +1,18 @@
-class TrieNode:
-    ___ __init__(self):
-        self.end_of = N..
-        self.children = {}
+c_ TrieNode:
+    ___ - ):
+        end_of = N..
+        children    # dict
 
 
-class Trie:
-    ___ __init__(self):
-        self.root = TrieNode()
+c_ Trie:
+    ___ - ):
+        root = TrieNode()
 
     ___ put(self, word):
         __ n.. isi..(word, s..):
             r..
 
-        node = self.root
+        node = root
 
         ___ c __ word:
             __ c n.. __ node.children:
@@ -23,7 +23,7 @@ class Trie:
         node.end_of = word
 
 
-class Solution:
+c_ Solution:
     ___ kDistance(self, words, target, k):
         """
         :type words: list[str]
@@ -39,7 +39,7 @@ class Solution:
         ans    # list
         dp = [i ___ i __ r..(l..(target) + 1)]
 
-        self.dfs(trie.root, k, target, ans, dp)
+        dfs(trie.root, k, target, ans, dp)
 
         r.. ans
 
@@ -68,4 +68,4 @@ class Solution:
                         pre[i - 1] + 1
                     )
 
-            self.dfs(node.children[c], k, target, ans, dp)
+            dfs(node.children[c], k, target, ans, dp)

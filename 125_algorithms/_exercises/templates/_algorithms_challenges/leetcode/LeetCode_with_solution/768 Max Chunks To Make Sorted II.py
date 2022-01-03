@@ -35,7 +35,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict, deque
 
 
-class Solution:
+c_ Solution:
     ___ maxChunksToSorted(self, arr: List[int]) -> int:
         """
         not necessarily distinct

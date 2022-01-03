@@ -1,7 +1,7 @@
 _______ gender_guesser.detector as gender
 ____ bs4 _______ BeautifulSoup as Soup
 _______ requests
-_______ re
+_______ __
 
 PYCON_HTML = 'https://bites-data.s3.us-east-2.amazonaws.com/pycon2019.html'
 
@@ -23,19 +23,19 @@ ___ get_pycon_speaker_first_names(soup_ N..
         speaker = speaker.text.s..
 
         # Multiple speakers separated by comma
-        __ re.match(r'.*,.*', speaker):
+        __ __.match(r'.*,.*', speaker):
             multiple_speakers = speaker.s..(', ')
             ___ s __ multiple_speakers:
                 speakers.a..(s.s.. [0])
 
         # Multiple speakers seperated by slash
-        ____ re.match(r'.*/.*', speaker):
+        ____ __.match(r'.*/.*', speaker):
             multiple_speakers = speaker.s..(' / ')
             ___ s __ multiple_speakers:
                 speakers.a..(s.s.. [0])
 
         # Speaker name begins with acronym
-        ____ re.match(r'[A-Z]\.', speaker):
+        ____ __.match(r'[A-Z]\.', speaker):
             speakers.a..(speaker.s.. [1])
 
         ____:
@@ -48,7 +48,7 @@ ___ get_percentage_of_female_speakers(first_names):
     """Run gender_guesser on the names returning a percentage
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""
-    d = gender.Detector(case_sensitive=False)
+    d = gender.Detector(case_sensitive=F..)
     genders = [d.get_gender(speaker) ___ speaker __ first_names]
     total_speakers = l..(genders)
     female_speakers = l..([g ___ g __ genders __ g __ 'female' o. g __ 'mostly_female'])

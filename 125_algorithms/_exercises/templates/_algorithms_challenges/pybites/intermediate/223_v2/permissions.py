@@ -31,7 +31,7 @@ ___ get_octal_from_file_permission(rwx: s..) -> s..:
         number.a..(s..(r))
 
 
-    r.. ''.join(number)
+    r.. ''.j..(number)
 
 
 

@@ -3,11 +3,11 @@ ranks = 'white yellow orange green blue brown black paneled red'.s..
 BELTS = d..(z..(scores, ranks))
 
 
-class NinjaBelt:
+c_ NinjaBelt:
 
-    ___ __init__(self, score=0):
-        self._score = score
-        self._last_earned_belt = N..
+    ___ - , score=0):
+        _score = score
+        _last_earned_belt = N..
 
     ___ _get_belt(self, new_score):
         """Might be a useful helper"""
@@ -15,32 +15,32 @@ class NinjaBelt:
     
 
 
-    ___ _get_score(self):
-        r.. self._score
+    ___ _get_score
+        r.. _score
 
     ___ _set_score(self, new_score):
 
         __ n.. isi..(new_score,int):
             raise ValueError("Score takes an int")
-        __ new_score < self.score:
+        __ new_score < score:
             raise ValueError("Cannot lower score")
 
 
         
-        self._score = new_score
+        _score = new_score
 
         ___ i,(score,rank) __ e..(z..(scores,ranks)):
-            __ score > self.score:
+            __ score > score:
                 rank = ranks[i -1]
                 break
 
 
-        __ rank != self._last_earned_belt:
-            self._last_earned_belt = rank
+        __ rank != _last_earned_belt:
+            _last_earned_belt = rank
 
-            print(f"Congrats, you earned {self.score} points obtaining the PyBites Ninja {self._last_earned_belt.capitalize()} Belt")
+            print(f"Congrats, you earned {score} points obtaining the PyBites Ninja {_last_earned_belt.capitalize()} Belt")
         ____:
-            print(f"Set new score to {self.score}")
+            print(f"Set new score to {score}")
 
 
 

@@ -1,4 +1,4 @@
-_______ re
+_______ __
 ____ typing _______ Tuple
 
 text = """
@@ -41,7 +41,7 @@ ___ strip_vowels(text: s..) -> Tuple[s.., int]:
        The str/int types in the function defintion above are part
        of Python's new type hinting:
        https://docs.python.org/3/library/typing.html"""
-    r.. (re.sub("[aeiouAEIOU]", "*", text), l..(re.findall("[aeiouAEIOU]", text)))
+    r.. (__.sub("[aeiouAEIOU]", "*", text), l..(__.findall("[aeiouAEIOU]", text)))
 
 #print(len(re.findall("[aeiouAEIOU]", text)))
 

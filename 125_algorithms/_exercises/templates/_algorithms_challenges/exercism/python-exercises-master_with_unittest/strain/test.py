@@ -3,42 +3,42 @@ _______ unittest
 ____ strain _______ keep, discard
 
 
-class StrainTest(unittest.TestCase):
-    ___ test_empty_sequence(self):
-        self.assertEqual(keep([], l.... x: x % 2 __ 0), [])
+c_ StrainTest(unittest.TestCase):
+    ___ test_empty_sequence
+        assertEqual(keep([], l.... x: x % 2 __ 0), [])
 
-    ___ test_empty_keep(self):
+    ___ test_empty_keep
         inp = [2, 4, 6, 8, 10]
         out    # list
-        self.assertEqual(keep(inp, l.... x: x % 2 __ 1), out)
+        assertEqual(keep(inp, l.... x: x % 2 __ 1), out)
 
-    ___ test_empty_discard(self):
+    ___ test_empty_discard
         inp = [2, 4, 6, 8, 10]
         out    # list
-        self.assertEqual(discard(inp, l.... x: x % 2 __ 0), out)
+        assertEqual(discard(inp, l.... x: x % 2 __ 0), out)
 
-    ___ test_keep_everything(self):
+    ___ test_keep_everything
         inp = [2, 4, 6, 8, 10]
-        self.assertEqual(keep(inp, l.... x: x % 2 __ 0), inp)
+        assertEqual(keep(inp, l.... x: x % 2 __ 0), inp)
 
-    ___ test_discard_endswith(self):
+    ___ test_discard_endswith
         inp = ['dough', 'cash', 'plough', 'though', 'through', 'enough']
         out = ['cash']
-        self.assertEqual(discard(inp, l.... x: s...endswith(x, 'ough')), out)
+        assertEqual(discard(inp, l.... x: s...endswith(x, 'ough')), out)
 
-    ___ test_keep_z(self):
+    ___ test_keep_z
         inp = ['zebra', 'arizona', 'apple', 'google', 'mozilla']
         out = ['zebra', 'arizona', 'mozilla']
-        self.assertEqual(keep(inp, l.... x: 'z' __ x), out)
+        assertEqual(keep(inp, l.... x: 'z' __ x), out)
 
-    ___ test_keep_discard(self):
+    ___ test_keep_discard
         inp = ['1,2,3', 'one', 'almost!', 'love']
-        self.assertEqual(discard(keep(inp, s...isalpha), s...isalpha), [])
+        assertEqual(discard(keep(inp, s...isalpha), s...isalpha), [])
 
-    ___ test_keep_plus_discard(self):
+    ___ test_keep_plus_discard
         inp = ['1,2,3', 'one', 'almost!', 'love']
         out = ['one', 'love', '1,2,3', 'almost!']
-        self.assertEqual(
+        assertEqual(
             keep(inp, s...isalpha) + discard(inp, s...isalpha), out)
 
 

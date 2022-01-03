@@ -3,14 +3,14 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ partitionLabels(self, S):
         """
         :type S: str
         :rtype: List[int]
         """
         s = S
-        hashmap = {}
+        hashmap    # dict
         res    # list
         ___ i, c __ e..(s):
             __ c n.. __ hashmap:
@@ -29,13 +29,13 @@ class Solution(object):
         res.a..(l..(s)-left)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             'ababcbacadefegdehijhklij',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.partitionLabels(s)
+            result = partitionLabels(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

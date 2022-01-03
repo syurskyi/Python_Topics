@@ -24,14 +24,14 @@ ____ collections _______ deque
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Codec:
+c_ Codec:
     ___ serialize(self, root):
         """
         bfs
@@ -53,13 +53,13 @@ class Codec:
             ___ i __ xrange(l):
                 cur = q[i]
                 __ cur.left: q.a..(cur.left)
-                ret.a..(self.encode(cur.left))
+                ret.a..(encode(cur.left))
                 __ cur.right: q.a..(cur.right)
-                ret.a..(self.encode(cur.right))
+                ret.a..(encode(cur.right))
 
             q = q[l:]
 
-        r.. ",".join(ret)
+        r.. ",".j..(ret)
 
     ___ deserialize(self, data):
         """
@@ -69,18 +69,18 @@ class Codec:
         :rtype: TreeNode
         """
         lst = data.s..(",")
-        root = self.decode(lst[0])
+        root = decode(lst[0])
 
         q = deque([root])
         i = 1
         w.... q:
             cur = q.popleft()
             __ i < l..(lst):
-                cur.left = self.decode(lst[i])
+                cur.left = decode(lst[i])
                 i += 1
                 __ cur.left: q.a..(cur.left)
             __ i < l..(lst):
-                cur.right = self.decode(lst[i])
+                cur.right = decode(lst[i])
                 i += 1
                 __ cur.right: q.a..(cur.right)
 

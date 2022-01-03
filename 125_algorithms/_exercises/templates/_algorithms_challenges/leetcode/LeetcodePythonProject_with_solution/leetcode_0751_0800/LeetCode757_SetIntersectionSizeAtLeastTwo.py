@@ -3,7 +3,7 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ intersectionSizeTwo(self, intervals):
         """
         :type intervals: List[List[int]]
@@ -38,14 +38,14 @@ class Solution(object):
             res += 2
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1, 3], [1, 4], [2, 5], [3, 5]],
             [[1, 2], [2, 3], [2, 4], [4, 5]],
         ]
         ___ intervals __ testCases:
             print('intervals: %s' % intervals)
-            result = self.intersectionSizeTwo(intervals)
+            result = intersectionSizeTwo(intervals)
             print('result: %s' % result)
             print('-='*30+'-')
 

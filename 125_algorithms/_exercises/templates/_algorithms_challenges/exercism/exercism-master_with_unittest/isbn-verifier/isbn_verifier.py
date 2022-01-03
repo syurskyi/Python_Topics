@@ -1,4 +1,4 @@
-class IsbnVerifier(object):
+c_ IsbnVerifier(object):
 
     VALID_SEPERATOR = "-"
     VALID_CHECK_CHARACTER = "X"
@@ -10,7 +10,7 @@ class IsbnVerifier(object):
     @classmethod
     ___ is_valid(cls, string):
         __ cls.invalid(string):
-            r.. False
+            r.. F..
         r.. cls.verify(string)
 
     @classmethod
@@ -46,7 +46,7 @@ class IsbnVerifier(object):
 
     @classmethod
     ___ remove_invalid_characters(cls, string):
-        r.. "".join(
+        r.. "".j..(
             [char ___ char __ string __ char __ cls.VALID_CHARACTERS])
 
     @classmethod
@@ -59,7 +59,7 @@ class IsbnVerifier(object):
 
     @classmethod
     ___ remove_seperator(cls, string):
-        r.. "".join(
+        r.. "".j..(
             [char ___ char __ string __ char != cls.VALID_SEPERATOR])
 
 

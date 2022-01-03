@@ -1,11 +1,11 @@
-class RandomizedCollection(object):
-  ___ __init__(self):
+c_ RandomizedCollection(object):
+  ___ - ):
     """
     Initialize your data structure here.
     """
-    self.dOfd = collections.defaultdict(d..)
-    self.d = collections.defaultdict(l..)
-    self.a    # list
+    dOfd = collections.defaultdict(d..)
+    d = collections.defaultdict(l..)
+    a    # list
 
   ___ insert(self, val):
     """
@@ -13,10 +13,10 @@ class RandomizedCollection(object):
     :type val: int
     :rtype: bool
     """
-    self.d[val].a..(l..(self.a))
-    self.dOfd[val][l..(self.a)] = l..(self.d[val]) - 1
-    self.a.a..(val)
-    r.. l..(self.d[val]) __ 1
+    d[val].a..(l..(a))
+    dOfd[val][l..(a)] = l..(d[val]) - 1
+    a.a..(val)
+    r.. l..(d[val]) __ 1
 
   ___ remove(self, val):
     """
@@ -24,11 +24,11 @@ class RandomizedCollection(object):
     :type val: int
     :rtype: bool
     """
-    dd = self.dOfd
-    a = self.a
-    d = self.d
+    dd = dOfd
+    a = a
+    d = d
     __ n.. d[val]:
-      r.. False
+      r.. F..
     idx = d[val][-1]
     a[idx] = a[-1]
     idxInDForLast = dd[a[-1]][l..(a) - 1]
@@ -39,14 +39,14 @@ class RandomizedCollection(object):
     del dd[a[-1]][l..(a) - 1]
     d[val].pop()
     a.pop()
-    r.. True
+    r.. T..
 
-  ___ getRandom(self):
+  ___ getRandom
     """
     Get a random element from the collection.
     :rtype: int
     """
-    r.. self.a[random.randrange(0, l..(self.a))]
+    r.. a[random.randrange(0, l..(a))]
 
 # Your RandomizedCollection object will be instantiated and called as such:
 # obj = RandomizedCollection()

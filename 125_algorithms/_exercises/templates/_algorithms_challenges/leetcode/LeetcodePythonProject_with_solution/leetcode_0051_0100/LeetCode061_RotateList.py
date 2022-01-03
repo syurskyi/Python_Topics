@@ -5,12 +5,12 @@ Created on Jan 22, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ rotateRight(self, head, k):
         """
         :type head: ListNode
@@ -40,7 +40,7 @@ class Solution(object):
         prev.next = N..
         r.. node
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

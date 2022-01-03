@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ isMonotonic(self, A):
         """
         :type A: List[int]
@@ -10,11 +10,11 @@ class Solution(object):
                 __ num __ A[i-1]:
                     continue
                 __ num > A[i-1]:
-                    __ increase __ False:
-                        r.. False
-                    increase = True
+                    __ increase __ F..:
+                        r.. F..
+                    increase = T..
                 __ num < A[i-1]:
-                    __ increase __ True:
-                        r.. False
-                    increase = False
-        r.. True
+                    __ increase __ T..:
+                        r.. F..
+                    increase = F..
+        r.. T..

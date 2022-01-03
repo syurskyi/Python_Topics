@@ -4,7 +4,7 @@ Created on Apr 12, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ wordsTyping(self, sentence, rows, cols):
         """
         :type sentence: List[str]
@@ -34,7 +34,7 @@ class Solution(object):
             ind = nextInd[ind]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             (["hello", "world"], 2, 8),
             (["a", "bcd", "e"], 3, 6),
@@ -44,7 +44,7 @@ class Solution(object):
             print('sentence: %s' % sentence)
             print('rows: %s' % rows)
             print('cols: %s' % cols)
-            result = self.wordsTyping(sentence, rows, cols)
+            result = wordsTyping(sentence, rows, cols)
             print('result: %s' % result)
             print('-='*20+'-')
 

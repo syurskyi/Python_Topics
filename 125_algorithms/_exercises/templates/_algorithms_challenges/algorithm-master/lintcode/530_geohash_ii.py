@@ -3,7 +3,7 @@ main concept is in `../module/geohash.py`
 """
 
 
-class GeoHash:
+c_ GeoHash:
     base32    # list
 
     """
@@ -13,22 +13,22 @@ class GeoHash:
     ___ decode(self, geohash):
         __ n.. geohash:
             r.. []
-        __ n.. self.base32:
-            self.base32 = self.get_base32_list()
+        __ n.. base32:
+            base32 = get_base32_list()
 
         bin_codes    # list
         ___ char __ geohash:
-            __ char n.. __ self.base32:
+            __ char n.. __ base32:
                 r.. []
-            bin_codes.extend(self._oct_to_bins(self.base32.index(char)))
+            bin_codes.extend(_oct_to_bins(base32.index(char)))
 
         n = l..(bin_codes)
         lat_codes = [bin_codes[i] ___ i __ r..(1, n, 2)]
         lng_codes = [bin_codes[i] ___ i __ r..(0, n, 2)]
 
         r.. [
-            self._bins_to_loc(lat_codes,  -90,  90),
-            self._bins_to_loc(lng_codes, -180, 180)
+            _bins_to_loc(lat_codes,  -90,  90),
+            _bins_to_loc(lng_codes, -180, 180)
         ]
 
     ___ _bins_to_loc(self, bins, left, right):
@@ -54,7 +54,7 @@ class GeoHash:
 
         r.. reversed(bins)
 
-    ___ get_base32_list(self):
+    ___ get_base32_list
         base32_list = [s..(i) ___ i __ r..(10)]
 
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))

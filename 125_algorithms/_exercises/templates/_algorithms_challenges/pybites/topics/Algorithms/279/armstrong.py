@@ -3,6 +3,6 @@ ___ is_armstrong(n: int) -> bool:
     ___ digit __ r..(l..(s..(n))):
         total += int(s..(n)[digit]) ** l..(s..(n))
     __ total __ n:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

@@ -25,7 +25,7 @@ Could you solve it in linear time?
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ maxSlidingWindow(self, nums, k):
         """
         Algorithms

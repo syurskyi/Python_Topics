@@ -9,7 +9,7 @@ class TreeLinkNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     Recursion
     """
@@ -29,11 +29,11 @@ class Solution:
 
         # leave to None if root.right: root.right.next = None
 
-        self.connect(root.left)
-        self.connect(root.right)
+        connect(root.left)
+        connect(root.right)
 
 
-class Solution:
+c_ Solution:
     """
     Iteration
     """

@@ -7,10 +7,10 @@ ___ is_full_house(hand):
   r.. a..([hand.c.. i) > 2 ___ i __ hand])
   
 # 3
-class IceCream:
-    ___ __init__(self, flavor, sprinkles):
-        self.flavor  flavor
-        self.sprinkles  sprinkles
+c_ IceCream:
+    ___ - , flavor, sprinkles):
+        flavor  flavor
+        sprinkles  sprinkles
         
 ___ sweetest_icecream(lst):
 	flavor_values  {
@@ -32,53 +32,53 @@ ___ check_sequence(lst):
     r.. 0
     
 # 5
-class Pagination:
+c_ Pagination:
     
-    ___ __init__(self, items[], page_size10):
-        self.items  items
-        self.page_size  page_size
-        self.total_pages  1 __ n.. self.items ____ (l..(self.items) // self.page_size) + 1
-        self.current_page  1
+    ___ - , items[], page_size10):
+        items  items
+        page_size  page_size
+        total_pages  1 __ n.. items ____ (l..(items) // page_size) + 1
+        current_page  1
         
-    ___ get_items(self):
-        r.. self.items
+    ___ get_items
+        r.. items
     
-    ___ get_page_size(self):
-        r.. self.page_size
+    ___ get_page_size
+        r.. page_size
     
-    ___ get_current_page(self):
-        r.. self.current_page
+    ___ get_current_page
+        r.. current_page
     
-    ___ prev_page(self):
-        __ self.current_page __ 1:
+    ___ prev_page
+        __ current_page __ 1:
             r.. self
-        self.current_page-1
+        current_page-1
         r.. self
     
-    ___ next_page(self):
-        __ self.current_page __ self.total_pages:
+    ___ next_page
+        __ current_page __ total_pages:
             r.. self
-        self.current_page+1
+        current_page+1
         r.. self
     
-    ___ first_page(self):
-        self.current_page  1
+    ___ first_page
+        current_page  1
         r.. self
     
-    ___ last_page(self):
-        self.current_page  self.total_pages
+    ___ last_page
+        current_page  total_pages
         r.. self
     
     ___ go_to_page(self, page):
         __ page < 1:
             page  1 
-        ____ page > self.total_pages:
-            page  self.total_pages
+        ____ page > total_pages:
+            page  total_pages
         
-        self.current_page  page
+        current_page  page
         r.. self
     
-    ___ get_visible_items(self):
-        start  (self.current_page - 1) * self.page_size
-        end  start+self.page_size
-        r.. self.items[start:end]
+    ___ get_visible_items
+        start  (current_page - 1) * page_size
+        end  start+page_size
+        r.. items[start:end]

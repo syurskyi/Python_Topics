@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ findDuplicateSubtrees(self, root):
     ____ hashlib _______ sha256
     ___ hash_(x):

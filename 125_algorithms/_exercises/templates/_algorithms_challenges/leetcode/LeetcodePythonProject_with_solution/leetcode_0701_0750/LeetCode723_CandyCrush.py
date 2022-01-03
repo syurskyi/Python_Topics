@@ -3,7 +3,7 @@ Created on Feb 20, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ candyCrush(self, board):
         """
         :type board: List[List[int]]
@@ -12,36 +12,36 @@ class Solution(object):
         m, n = l..(board), l..(board[0])
         res = [[0]*n ___ _ __ r..(m)]
         w... T...
-            changed = False
+            changed = F..
             ___ i __ r..(m):
                 ___ j __ r..(n):
-                    changed = self.bfs(board, i, j) o. changed
+                    changed = bfs(board, i, j) o. changed
             __ n.. changed:
                 res = board
                 break
-            self.convert(res, board)
+            convert(res, board)
             board = res
         r.. res
     
     ___ bfs(self, board, i, j):
-        __ board[i][j] __ 0: r.. False
+        __ board[i][j] __ 0: r.. F..
         m, n = l..(board), l..(board[0])
         val = abs(board[i][j])
-        changed = False
+        changed = F..
         __ i+2 < m a.. val __ abs(board[i+1][j]) __ abs(board[i+2][j]):
             ___ i0 __ r..(i+1, m):
                 __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
                 ____:
                     break
-            changed = True
+            changed = T..
         __ j+2 < n a.. val __ abs(board[i][j+1]) __ abs(board[i][j+2]):
             ___ j0 __ r..(j+1, n):
                 __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
                 ____:
                     break
-            changed = True
+            changed = T..
         __ changed:
             board[i][j] = -val
         r.. changed
@@ -57,7 +57,7 @@ class Solution(object):
             ___ i __ r..(i0, -1, -1):
                 res[i][j] = 0
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [110,5,112,113,114],
@@ -77,10 +77,10 @@ class Solution(object):
         ]
         ___ board __ testCases:
             print('board:')
-            print('\n'.join([s..(row) ___ row __ board]))
-            result = self.candyCrush(board)
+            print('\n'.j..([s..(row) ___ row __ board]))
+            result = candyCrush(board)
             print('result:')
-            print('\n'.join([s..(row) ___ row __ result]))
+            print('\n'.j..([s..(row) ___ row __ result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

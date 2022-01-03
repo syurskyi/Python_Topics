@@ -8,7 +8,7 @@ Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ countDigitOne(self, n):
         """
         Count the 1 occurrences at the digit i, due to:

@@ -17,10 +17,10 @@ IPINFO_URL = 'http://ipinfo.io/{ip}/json'
 
 ___ get_ip_country_2(ip_address):
     response = requests.get(IPINFO_URL.f..(ip=ip_address))
-    print(type(response.text))
+    print(t..(response.text))
     print(response.text)
     jso = j.loads(response.text)
-    print(type(jso))
+    print(t..(jso))
     print(jso['country'])
 
 

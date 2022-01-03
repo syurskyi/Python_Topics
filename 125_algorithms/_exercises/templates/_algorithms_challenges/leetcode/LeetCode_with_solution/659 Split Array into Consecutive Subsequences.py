@@ -30,7 +30,7 @@ ____ collections _______ defaultdict
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ isPossible(self, nums: List[int]) -> bool:
         """
         Attribute a number to a existing consecutive subsequences
@@ -60,27 +60,27 @@ class Solution:
                 counter[e + 1] -= 1
                 counter[e + 2] -= 1
             ____:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
             
-class Interval:
-    ___ __init__(self, end, length):
-        self.end = end
-        self.length = length
+c_ Interval:
+    ___ - , end, length):
+        end = end
+        length = length
 
     ___ __lt__(self, other):
-        __ self.end __ other.end:
-            r.. self.length < other.length
+        __ end __ other.end:
+            r.. length < other.length
 
-        r.. self.end < other.end
+        r.. end < other.end
 
-    ___ __repr__(self):
-        r.. repr((self.end, self.length))
+    ___ __repr__
+        r.. repr((end, length))
 
 
-class Solution2:
+c_ Solution2:
     ___ isPossible(self, nums: List[int]) -> bool:
         """
         (length, last)
@@ -94,7 +94,7 @@ class Solution2:
             w.... h a.. h[0].end + 1 < n:
                 itvl = heapq.heappop(h)
                 __ itvl.length < 3:
-                    r.. False
+                    r.. F..
 
             __ n.. h:
                 heapq.heappush(h, Interval(n, 1))
@@ -107,11 +107,11 @@ class Solution2:
 
         ___ itvl __ h:
             __ itvl.length < 3:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
 __ __name__ __ "__main__":
-    ... Solution().isPossible([1,2,3,3,4,5]) __ True
-    ... Solution().isPossible([1,2,3,3,4,4,5,5]) __ True
-    ... Solution().isPossible([1,2,3,4,4,5]) __ False
+    ... Solution().isPossible([1,2,3,3,4,5]) __ T..
+    ... Solution().isPossible([1,2,3,3,4,4,5,5]) __ T..
+    ... Solution().isPossible([1,2,3,4,4,5]) __ F..

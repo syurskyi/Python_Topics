@@ -1,7 +1,7 @@
 """
 Binary Searching
 """
-class Solution:
+c_ Solution:
     ___ longestIncreasingSubsequence(self, A):
         """
         :type A: List[int]
@@ -27,7 +27,7 @@ class Solution:
         P = [-INFINITY] + [INFINITY] * n
 
         ___ i __ r..(n):
-            j = self.binary_search(P, A[i])
+            j = binary_search(P, A[i])
             P[j] = A[i]
 
         ___ i __ r..(n, -1, -1):
@@ -52,7 +52,7 @@ class Solution:
 """
 DP + Print Paths
 """
-class Solution:
+c_ Solution:
     ___ longestIncreasingSubsequence(self, A):
         """
         :type A: List[int]

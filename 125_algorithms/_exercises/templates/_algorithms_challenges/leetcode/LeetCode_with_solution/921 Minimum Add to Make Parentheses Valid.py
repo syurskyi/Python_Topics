@@ -38,7 +38,7 @@ S only consists of '(' and ')' characters.
 """
 
 
-class Solution:
+c_ Solution:
     ___ minAddToMakeValid(self, S: s..) -> int:
         """
         stk

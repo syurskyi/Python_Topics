@@ -4,12 +4,12 @@ Created on Apr 8, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ readBinaryWatch(self, num):
         result    # list
         ___ i __ r..(12):
             ___ j __ r..(60):
-                total = self.countDigits(i) + self.countDigits(j)
+                total = countDigits(i) + countDigits(j)
                 __ total __ num:
                     s = '%s:%02d' % (i, j)
                     result.a..(s)

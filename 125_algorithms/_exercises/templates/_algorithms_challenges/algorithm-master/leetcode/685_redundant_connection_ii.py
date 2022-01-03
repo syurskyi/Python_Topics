@@ -14,7 +14,7 @@ REF: https://leetcode.com/problems/redundant-connection-ii/discuss/108070/Python
 _______ collections
 
 
-class Solution:
+c_ Solution:
     ___ findRedundantDirectedConnection(self, edges):
         """
         :type edges: List[List[int]]
@@ -31,7 +31,7 @@ class Solution:
             __ v __ has_parent:
                 ans = (u, v)
 
-            __ n.. self.union(uf, u, v):
+            __ n.. union(uf, u, v):
                 edge = (u, v)
 
             has_parent.add(v)
@@ -39,18 +39,18 @@ class Solution:
         __ n.. ans:
             r.. edge
 
-        res = self.dfs(ans[1], adj, set())
+        res = dfs(ans[1], adj, set())
         r.. res __ res ____ ans
 
     ___ union(self, uf, u, v):
-        a = self.find(uf, u)
-        b = self.find(uf, v)
+        a = find(uf, u)
+        b = find(uf, v)
 
         __ a __ b:
-            r.. False
+            r.. F..
 
         uf[b] = a
-        r.. True
+        r.. T..
 
     ___ find(self, uf, u):
         __ uf[u] __ 0:
@@ -59,7 +59,7 @@ class Solution:
         __ uf[u] __ u:
             r.. u
 
-        uf[u] = self.find(uf, uf[u])
+        uf[u] = find(uf, uf[u])
         r.. uf[u]
 
     ___ dfs(self, u, adj, visited):
@@ -70,6 +70,6 @@ class Solution:
             __ v __ visited:
                 r.. (u, v)
 
-            res = self.dfs(v, adj, visited)
+            res = dfs(v, adj, visited)
             __ res:
                 r.. res

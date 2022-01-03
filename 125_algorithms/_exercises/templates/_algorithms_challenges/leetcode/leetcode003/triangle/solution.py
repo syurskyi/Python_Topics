@@ -16,7 +16,7 @@ Bonus point if you are able to do this using only O(n) extra space, where n is
 the total number of rows in the triangle.
 """
 
-class Solution:
+c_ Solution:
     # @param triangle, a list of lists of integers
     # @return an integer
     ___ minimumTotal(self, triangle):

@@ -4,10 +4,10 @@ Created on Apr 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ sequenceReconstruction(self, org, seqs):
-        graph = {}
-        degree = {}
+        graph    # dict
+        degree    # dict
         ___ seq __ seqs:
             length = l..(seq)
             ___ i __ r..(length):
@@ -19,17 +19,17 @@ class Solution(object):
                     graph[seq[i-1]].a..(seq[i])
                     degree[seq[i]] += 1
         queue    # list
-        ___ key, val __ degree.items():
+        ___ key, val __ degree.i..:
             __ val __ 0:
                 queue.a..(key)
         index = 0
         w.... queue:
             size = l..(queue)
             __ size > 1:
-                r.. False
+                r.. F..
             curr = queue.pop(0)
             __ index >= l..(org) o. org[index] != curr:
-                r.. False
+                r.. F..
             index += 1
             __ curr __ graph:
                 ___ nextVal __ graph[curr]:

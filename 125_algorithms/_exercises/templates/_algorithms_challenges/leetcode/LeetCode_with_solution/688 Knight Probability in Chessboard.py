@@ -40,7 +40,7 @@ dirs = (
 )
 
 
-class Solution:
+c_ Solution:
     ___ knightProbability(self, N: int, K: int, r: int, c: int) -> float:
         """
         brute force K step

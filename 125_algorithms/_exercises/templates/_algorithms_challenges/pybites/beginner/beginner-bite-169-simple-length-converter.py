@@ -20,9 +20,9 @@ ___ convert(value: float, fmt: s..) -> float:
     :param fmt: String indicating format to convert to
     :return: Float rounded to 4 decimal places after conversion
     """
-    __ type(value) __ int o. type(value) __ float:
-        __ fmt.lower() __ "cm" o. fmt.lower() __ "in":
-            __ fmt.lower() __ "cm":
+    __ t..(value) __ int o. t..(value) __ float:
+        __ fmt.l.. __ "cm" o. fmt.l.. __ "in":
+            __ fmt.l.. __ "cm":
                 result = value*2.54
                 r.. round(result,4)
             ____:

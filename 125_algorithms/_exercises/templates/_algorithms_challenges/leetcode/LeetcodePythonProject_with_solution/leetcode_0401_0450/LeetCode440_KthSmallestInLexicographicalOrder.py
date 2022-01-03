@@ -4,12 +4,12 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findKthNumber(self, n, k):
         curr = 1
         k -= 1
         w.... k > 0:
-            steps = self.calSteps(n, curr, curr+1)
+            steps = calSteps(n, curr, curr+1)
             __ steps <= k:
                 curr += 1
                 k -= steps
@@ -26,7 +26,7 @@ class Solution(object):
             n2 *= 10
         r.. steps
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 13,
@@ -36,7 +36,7 @@ class Solution(object):
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = self.findKthNumber(n, k)
+            result = findKthNumber(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

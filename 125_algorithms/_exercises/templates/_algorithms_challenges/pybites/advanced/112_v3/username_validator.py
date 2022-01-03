@@ -1,6 +1,6 @@
 # nice snippet: https://gist.github.com/tonybruess/9405134
 ____ collections _______ n..
-_______ re
+_______ __
 
 social_platforms = """Twitter
   Min: 1
@@ -26,9 +26,9 @@ ___ parse_social_platforms_string():
     """Convert the social_platforms string above into a dict where
        keys = social platformsname and values = validator namedtuples"""
     result = d..()
-    plat = re.findall(r'(\w+)\s+Min: (\d+)\s+Max: (\d+)\s+Can contain: ([^\r\n]+)', social_platforms)
+    plat = __.findall(r'(\w+)\s+Min: (\d+)\s+Max: (\d+)\s+Can contain: ([^\r\n]+)', social_platforms)
     ___ p __ plat:
-        result[p[0]] = Validator(r..(int(p[1]), int(p[2])), re.compile(rf'^[{re.sub(r" ", "", p[3])}]*$'))
+        result[p[0]] = Validator(r..(int(p[1]), int(p[2])), __.c..(rf'^[{__.sub(r" ", "", p[3])}]*$'))
     r.. result
 
 

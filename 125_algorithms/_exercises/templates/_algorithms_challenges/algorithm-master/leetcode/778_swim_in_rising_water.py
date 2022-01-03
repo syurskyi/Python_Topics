@@ -1,7 +1,7 @@
 ____ heapq _______ heappush, heappop
 
 
-class Solution:
+c_ Solution:
     ___ swimInWater(self, G):
         """
         :type G: List[List[int]]
@@ -15,7 +15,7 @@ class Solution:
         V = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
         heap = [(G[0][0], 0, 0)]
-        visited = {(0, 0): True}
+        visited = {(0, 0): T..}
 
         w.... heap:
             depth, x, y = heappop(heap)
@@ -30,7 +30,7 @@ class Solution:
                     continue
                 __ (_x, _y) __ visited:
                     continue
-                visited[_x, _y] = True
+                visited[_x, _y] = T..
                 heappush(heap, (G[_x][_y], _x, _y))
 
         r.. ans

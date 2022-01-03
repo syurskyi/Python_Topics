@@ -3,14 +3,14 @@ Greedy
 
 https://leetcode.com/articles/jump-game/
 """
-class Solution:
+c_ Solution:
     ___ canJump(self, A):
         """
         :type A: List[int]
         :rtype: bool
         """
         __ n.. A:
-            r.. False
+            r.. F..
 
         last_at = l..(A) - 1
 
@@ -24,22 +24,22 @@ class Solution:
 """
 DP
 """
-class Solution:
+c_ Solution:
     ___ canJump(self, A):
         """
         :type A: List[int]
         :rtype: bool
         """
         __ n.. A:
-            r.. False
+            r.. F..
 
         n = l..(A)
-        dp = [False] * n
+        dp = [F..] * n
 
         """
         `dp[i]` means `i` could be reached
         """
-        dp[0] = True
+        dp[0] = T..
 
         ___ i __ r..(1, n):
             ___ j __ r..(i):
@@ -51,7 +51,7 @@ class Solution:
                     """
                     if jump from `j` can reach `i`
                     """
-                    dp[i] = True
+                    dp[i] = T..
                     break
 
         r.. dp[n - 1]

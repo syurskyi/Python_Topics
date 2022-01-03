@@ -10,7 +10,7 @@ Note:
 The solution is guaranteed to be unique.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ canCompleteCircuit(self, gas, cost):
         """
 

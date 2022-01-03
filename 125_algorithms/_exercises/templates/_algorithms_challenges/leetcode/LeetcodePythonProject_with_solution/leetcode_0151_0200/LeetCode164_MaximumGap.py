@@ -3,7 +3,7 @@ Created on Feb 12, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maximumGap(self, nums):
         """
         :type nums: List[int]
@@ -34,13 +34,13 @@ class Solution(object):
         maxGap = max(maxGap, maxVal-prev)
         r.. maxGap
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 1000],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.maximumGap(nums)
+            result = maximumGap(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

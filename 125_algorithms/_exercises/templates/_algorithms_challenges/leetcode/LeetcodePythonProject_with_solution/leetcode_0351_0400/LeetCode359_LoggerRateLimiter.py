@@ -4,13 +4,13 @@ Created on Mar 27, 2017
 @author: MT
 '''
 
-class Logger(object):
+c_ Logger(object):
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.hashmap = {}
+        hashmap    # dict
 
     ___ shouldPrintMessage(self, timestamp, message):
         """
@@ -21,13 +21,13 @@ class Logger(object):
         :type message: str
         :rtype: bool
         """
-        __ message n.. __ self.hashmap:
-            self.hashmap[message] = timestamp
-            r.. True
+        __ message n.. __ hashmap:
+            hashmap[message] = timestamp
+            r.. T..
         ____:
-            __ timestamp - self.hashmap[message] >= 10:
-                self.hashmap[message] = timestamp
-                r.. True
+            __ timestamp - hashmap[message] >= 10:
+                hashmap[message] = timestamp
+                r.. T..
             ____:
-                r.. False
+                r.. F..
     

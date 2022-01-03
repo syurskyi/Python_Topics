@@ -14,7 +14,7 @@ Return
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ generate(self, numRows):
         """
         :type numRows: int

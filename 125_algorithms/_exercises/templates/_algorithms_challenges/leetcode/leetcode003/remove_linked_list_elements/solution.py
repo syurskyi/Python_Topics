@@ -12,7 +12,7 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
     ___ removeElements(self, head, val):
         """
         :type head: ListNode

@@ -22,9 +22,9 @@ ___ my_file(tmp_path):
 
 
 ___ _create_and_verify_links(my_file, lines, expected_links):
-    my_file.write_bytes(b'\n'.join(lines))
+    my_file.write_bytes(b'\n'.j..(lines))
     cmd = f'cat {my_file.resolve()} | python {MY_CODE}'
-    output = subprocess.check_output(cmd, shell=True).splitlines()
+    output = subprocess.check_output(cmd, shell=T..).splitlines()
     ... a..(link __ output ___ link __ expected_links)
 
 

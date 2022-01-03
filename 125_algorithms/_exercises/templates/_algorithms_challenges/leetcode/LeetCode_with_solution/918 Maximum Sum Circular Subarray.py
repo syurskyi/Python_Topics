@@ -48,7 +48,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxSubarraySumCircular(self, A: List[int]) -> int:
         """
         Kadane's Algorithm
@@ -58,8 +58,8 @@ class Solution:
         (A0 + A1 + .. + Ai) + (Aj + ... + An-1)
         = sum(A) - (Ai+1 + ... + Aj-1)
         """
-        ret1 = self.max_subarray(A)
-        ret2 = s..(A) + self.max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
+        ret1 = max_subarray(A)
+        ret2 = s..(A) + max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
         r.. max(ret1, ret2)
 
     ___ max_subarray(self, A) -> int:

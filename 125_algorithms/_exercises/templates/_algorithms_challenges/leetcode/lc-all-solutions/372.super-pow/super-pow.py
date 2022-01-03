@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ superPow(self, a, b):
     """
     :type a: int

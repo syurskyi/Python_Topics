@@ -6,7 +6,7 @@ ____ bs4 _______ BeautifulSoup
 
 
 # prep data
-holidays_page = os.path.join('/tmp', 'us_holidays.php')
+holidays_page = os.path.j..('/tmp', 'us_holidays.php')
 urlretrieve('https://bit.ly/2LG098I', holidays_page)
 
 with open(holidays_page) as f:

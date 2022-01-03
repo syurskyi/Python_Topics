@@ -31,7 +31,7 @@ In this case, that line should be left-justified.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ fullJustify(self, words, L):
         """
 
@@ -40,8 +40,8 @@ class Solution:
         :return: a list of str
         """
         result    # list
-        self.break_line(words, L, result)
-        r.. self.distribute_space(L, result)
+        break_line(words, L, result)
+        r.. distribute_space(L, result)
 
     ___ break_line(self, words, L, result):
         __ n.. words:
@@ -59,7 +59,7 @@ class Solution:
             i += 1
 
         result.a..(lst)
-        self.break_line(words[i:], L, result)
+        break_line(words[i:], L, result)
 
 
     ___ distribute_space(self, L, result):
@@ -86,10 +86,10 @@ class Solution:
                     str_builder.a..(line[-1])
                     str_builder.a..(" "*space_cnt)
             ____:  # last line, special handling
-                str_builder = [" ".join(line)]
+                str_builder = [" ".j..(line)]
                 str_builder.a..(" "*(space_cnt-hole_cnt))
 
-            new_result.a..("".join(str_builder))
+            new_result.a..("".j..(str_builder))
 
         r.. new_result
 

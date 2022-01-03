@@ -21,15 +21,15 @@ All words contain only lowercase alphabetic characters.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ is_neighbor(self, p, q):
         diff = 0
         ___ a, b __ z..(p, q):
             __ a != b:
                 diff += 1
             __ diff > 1:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     ___ ladderLength(self, start, end, dct):
         """
@@ -44,7 +44,7 @@ class Solution:
                 __ a __ end:
                     r.. lvl
                 ___ b __ dct:
-                    __ b n.. __ visited a.. self.is_neighbor(a, b):
+                    __ b n.. __ visited a.. is_neighbor(a, b):
                         visited.add(b)
                         cur_q.a..(b)
 
@@ -86,11 +86,11 @@ class Solution:
                 dp[i][j] = diff_count(i, j)
                 dp[j][i] = dp[i][j]
 
-        visited = [False ___ _ __ lst]  # avoid loop
+        visited = [F.. ___ _ __ lst]  # avoid loop
         path_len = 0
 
         queue = [0]
-        visited[0] = True
+        visited[0] = T..
         w.... queue:
             path_len += 1
             length = l..(queue)
@@ -100,7 +100,7 @@ class Solution:
                 ___ ind __ xrange(1, l..(lst)):  # O(k), add next level
                     __ n.. visited[ind] a.. dp[ind][queue[i]]__1:
                         queue.a..(ind)
-                        visited[ind] = True
+                        visited[ind] = T..
             queue = queue[length:]
         r.. path_len
 
@@ -180,7 +180,7 @@ class Solution:
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char
-                        temp = "".join(lst)
+                        temp = "".j..(lst)
                         __ temp __ d..:
                             queue.a..(temp)
                             d...remove(temp)

@@ -22,9 +22,9 @@ Answer: 3
 __author__ = 'Daniel'
 
 
-class Solution:
-    ___ __init__(self):
-        self.dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+c_ Solution:
+    ___ - ):
+        dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ numIslands(self, grid):
         """
@@ -39,11 +39,11 @@ class Solution:
             r.. 0
 
         cnt = 0
-        visited = [[False ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
         ___ i __ xrange(m):
             ___ j __ xrange(n):
                 __ n.. visited[i][j] a.. grid[i][j] __ "1":
-                    self.dfs(grid, i, j, visited)
+                    dfs(grid, i, j, visited)
                     cnt += 1
 
         r.. cnt
@@ -54,13 +54,13 @@ class Solution:
         """
         m = l..(grid)
         n = l..(grid[0])
-        visited[i][j] = True
+        visited[i][j] = T..
 
-        ___ dir __ self.dirs:
+        ___ dir __ dirs:
             I = i+dir[0]
             J = j+dir[1]
             __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. grid[I][J] __ "1":
-                self.dfs(grid, I, J, visited)
+                dfs(grid, I, J, visited)
 
 
 __ __name__ __ "__main__":

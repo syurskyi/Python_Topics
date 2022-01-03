@@ -9,17 +9,17 @@ Output: 7 -> 0 -> 8
 __author__ = 'Danyang'
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-    ___ __repr__(self):
+    ___ __repr__
         # for debugging
-        r.. repr(self.val)
+        r.. repr(val)
 
 
-class Solution:
+c_ Solution:
     ___ addTwoNumbers(self, l1, l2):
         """
         Algorithm: Two pointers & math
@@ -36,7 +36,7 @@ class Solution:
         cur2 = l2
         cur = result_head
         w.... cur1 o. cur2:
-            cur.val = cur.val+self.addNode(cur1, cur2)
+            cur.val = cur.val+addNode(cur1, cur2)
             __ cur.val < 10:
                 __ cur1 a.. cur1.next o. cur2 a.. cur2.next:  # next node
                     cur.next = ListNode(0)

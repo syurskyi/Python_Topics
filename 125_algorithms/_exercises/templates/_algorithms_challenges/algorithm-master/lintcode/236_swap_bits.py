@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: x: An integer
     @return: An integer

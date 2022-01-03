@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     PEOPLE = 0
     ZOMBIE = 1
     WALL = 2
@@ -23,7 +23,7 @@ class Solution:
         days = -1
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] __ self.ZOMBIE:
+                __ grid[x][y] __ ZOMBIE:
                     queue.a..((x, y))
 
         w.... queue:
@@ -34,14 +34,14 @@ class Solution:
                     _x = x + dx
                     _y = y + dy
                     __ 0 <= _x < m a.. 0 <= _y < n \
-                            a.. grid[_x][_y] __ self.PEOPLE:
-                        grid[_x][_y] = self.ZOMBIE
+                            a.. grid[_x][_y] __ PEOPLE:
+                        grid[_x][_y] = ZOMBIE
                         _queue.a..((_x, _y))
             queue = _queue
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] __ self.PEOPLE:
+                __ grid[x][y] __ PEOPLE:
                     r.. -1
 
         r.. days

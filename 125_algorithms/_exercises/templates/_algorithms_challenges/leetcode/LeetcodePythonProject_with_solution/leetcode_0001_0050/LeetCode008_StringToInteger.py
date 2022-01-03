@@ -3,7 +3,7 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ myAtoi(self, s..):
         """
         :type str: str
@@ -29,13 +29,13 @@ class Solution(object):
         ____:
             r.. max(-2**31, sig*res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             '    010',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.myAtoi(s)
+            result = myAtoi(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

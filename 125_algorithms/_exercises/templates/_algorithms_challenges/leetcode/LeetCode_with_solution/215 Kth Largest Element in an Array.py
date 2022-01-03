@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ findKthLargest(self, nums, k):
         """
         Algorithm:

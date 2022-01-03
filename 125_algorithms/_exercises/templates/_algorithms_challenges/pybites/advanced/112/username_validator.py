@@ -1,6 +1,6 @@
 # nice snippet: https://gist.github.com/tonybruess/9405134
 ____ collections _______ n..
-_______ re
+_______ __
 
 social_platforms = """Twitter
   Min: 1
@@ -27,19 +27,19 @@ ___ parse_social_platforms_string():
        keys = social platformsname and values = validator namedtuples"""
     platforms = social_platforms.s..('\n\n')
     
-    platform_to_validator = {}
+    platform_to_validator    # dict
     
     ___ platform __ platforms:
-        result = re.search(r"(.+)\n.*Min: (\d+)\n.*Max: (\d+)\n.+: (.+)",platform,flags=re.M)
+        result = __.s..(r"(.+)\n.*Min: (\d+)\n.*Max: (\d+)\n.+: (.+)",platform,flags=__.M)
         
         values    # list
         ___ i __ r..(1,5):
             values.a..(result.group(i))
         platform_name = values[0]
         range_object = r..(int(values[1]),int(values[2]))
-        last = ''.join(values[-1].s..())
+        last = ''.j..(values[-1].s..())
         regex = '^[' + last + ']+$'
-        r = re.compile(regex)
+        r = __.c..(regex)
         validator = Validator(range_object,r)
         platform_to_validator[platform_name] = validator
 
@@ -57,7 +57,7 @@ ___ validate_username(platform, username):
         raise ValueError
     platform_validator = all_validators[platform]
 
-    r.. l..(username) __ platform_validator.r.. a.. platform_validator.regex.search(username)
+    r.. l..(username) __ platform_validator.r.. a.. platform_validator.regex.s..(username)
 
 
 

@@ -1,5 +1,5 @@
-_______ re
+_______ __
 
 ___ extract_non_ascii_words(text):
     '''Filter a text returning a list of non-ascii words'''
-    r.. re.findall(r'\w*[^\x00-\x7f]+\w*', text)
+    r.. __.findall(r'\w*[^\x00-\x7f]+\w*', text)

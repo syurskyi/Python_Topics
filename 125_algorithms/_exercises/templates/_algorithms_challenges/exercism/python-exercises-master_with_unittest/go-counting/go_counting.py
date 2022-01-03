@@ -1,12 +1,12 @@
 
-class Board:
+c_ Board:
     """Count territories of each player in a Go game
 
     Args:
         board (list[str]): A two-dimensional Go board
     """
 
-    ___ __init__(self, board):
+    ___ - , board):
         pass
 
     ___ territory(self, x, y):
@@ -25,7 +25,7 @@ class Board:
         """
         pass
 
-    ___ territories(self):
+    ___ territories
         """Find the owners and the territories of the whole board
 
         Args:

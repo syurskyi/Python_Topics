@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param {integer} n
     # @return {string}
     ___ convertToTitle(self, n):

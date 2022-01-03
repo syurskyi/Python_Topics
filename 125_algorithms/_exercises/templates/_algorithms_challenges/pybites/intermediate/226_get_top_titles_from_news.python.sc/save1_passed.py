@@ -1,7 +1,7 @@
 ____ collections _______ n..
 ____ bs4 _______ BeautifulSoup
 _______ requests
-_______ re
+_______ __
 
 # feed = https://news.python.sc/, to get predictable results we cached
 # first two pages - use these:
@@ -31,8 +31,8 @@ ___ get_top_titles(url, top=5):
 
     ___ entry __ soup.findAll('span', attrs={'class': 'smaller'}):
         entry = entry.get_text().s..
-        points = re.search(r'(\d*) points', entry)
-        comments = re.search(r'(\d*) comments', entry)
+        points = __.s..(r'(\d*) points', entry)
+        comments = __.s..(r'(\d*) comments', entry)
         __ points:
             point_list.a..(int(points.group(1)))
         __ comments:

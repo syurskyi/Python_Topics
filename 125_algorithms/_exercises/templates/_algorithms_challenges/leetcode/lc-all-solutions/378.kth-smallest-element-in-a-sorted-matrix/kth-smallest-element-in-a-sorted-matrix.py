@@ -1,7 +1,7 @@
 _______ heapq
 
 
-class Solution(object):
+c_ Solution(object):
   ___ kthSmallest(self, matrix, k):
     """
     :type matrix: List[List[int]]

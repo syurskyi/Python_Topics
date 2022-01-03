@@ -1,7 +1,7 @@
 ____ heapq _______ heappop, heappush
 
 
-class Solution:
+c_ Solution:
     ___ findKthLargest(self, A, k):
         """
         :type A: List[int]

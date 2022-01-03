@@ -21,12 +21,12 @@ _______ random
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self, nums):
+c_ Solution(object):
+    ___ - , nums):
         """
         :type nums: List[int]
         """
-        self.A = nums
+        A = nums
 
     ___ pick(self, target):
         """
@@ -37,7 +37,7 @@ class Solution(object):
         """
         sz = 0
         ret = N..
-        ___ idx, val __ e..(self.A):
+        ___ idx, val __ e..(A):
             __ val __ target:
                 sz += 1
                 p = random.randrange(0, sz)
@@ -47,28 +47,28 @@ class Solution(object):
         r.. ret
 
 
-class SolutionError(object):
-    ___ __init__(self, nums):
+c_ SolutionError(object):
+    ___ - , nums):
         """
         Reservoir Sampling
         Assume pick is only called once
         :type nums: List[int]
         """
-        self.d = {}
+        d    # dict
         ___ idx, val __ e..(nums):
-            __ val n.. __ self.d:
-                self.d[val] = (idx, 1)
+            __ val n.. __ d:
+                d[val] = (idx, 1)
             ____:
-                prev, sz = self.d[val]
+                prev, sz = d[val]
                 p = random.randrange(0, sz)
                 __ p < sz:
-                    self.d[val] = (idx, sz + 1)
+                    d[val] = (idx, sz + 1)
                 ____:
-                    self.d[val] = (prev, sz + 1)
+                    d[val] = (prev, sz + 1)
 
     ___ pick(self, target):
         """
         :type target: int
         :rtype: int
         """
-        r.. self.d[target][0]
+        r.. d[target][0]

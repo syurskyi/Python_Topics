@@ -17,23 +17,23 @@ Both the left and right subtrees must also be binary search trees.
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isValidBST(self, root):
-        self.prev = N..
-        r.. self.is_valid_bst_aux(root)
+        prev = N..
+        r.. is_valid_bst_aux(root)
 
     ___ is_valid_bst_aux(self, root):
         __ root __ N..
-            r.. True
+            r.. T..
         ____:
-            __ n.. self.is_valid_bst_aux(root.left):
-                r.. False
-            __ self.prev __ n.. N..
-                __ self.prev.val >= root.val:
-                    r.. False
-            self.prev = root
-            __ n.. self.is_valid_bst_aux(root.right):
-                r.. False
-            r.. True
+            __ n.. is_valid_bst_aux(root.left):
+                r.. F..
+            __ prev __ n.. N..
+                __ prev.val >= root.val:
+                    r.. F..
+            prev = root
+            __ n.. is_valid_bst_aux(root.right):
+                r.. F..
+            r.. T..

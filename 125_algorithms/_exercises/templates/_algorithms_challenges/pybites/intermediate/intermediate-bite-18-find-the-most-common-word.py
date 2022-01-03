@@ -15,14 +15,14 @@ _______ os
 _______ urllib.request
 _______ string
 ____ collections _______ Counter
-_______ re
+_______ __
 
 
 
 # data provided
 tmp = os.getenv("TMP", "/tmp")
-stopwords_file = os.path.join(tmp, 'stopwords')
-harry_text = os.path.join(tmp, 'harry')
+stopwords_file = os.path.j..(tmp, 'stopwords')
+harry_text = os.path.j..(tmp, 'harry')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file
@@ -52,7 +52,7 @@ ___ my_solution_get_harry_most_common_word():
     ___ line __ f2:
         ___ word __ line.s.. :
             print(word)
-            p = word.strip(string.punctuation).lower()
+            p = word.strip(string.punctuation).l..
 
             __ l..(p) > 0 a.. p n.. __ stopwords:
                 filtered.a..(word.strip(string.punctuation).lower())
@@ -63,11 +63,11 @@ ___ my_solution_get_harry_most_common_word():
 ___ pyb_solution_get_harry_most_common_word():
     ___ get_harry_most_common_word():
         with open(stopwords_file) as f:
-            stopwords = set(f.read().s...lower().s..('\n'))
+            stopwords = set(f.read().s...l...s..('\n'))
 
         with open(harry_text) as f:
-            words = [re.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]
-                     ___ word __ f.read().lower().s.. ]
+            words = [__.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]
+                     ___ word __ f.read().l...s.. ]
 
             words = [word ___ word __ words __ word.s..
                      a.. word n.. __ stopwords]

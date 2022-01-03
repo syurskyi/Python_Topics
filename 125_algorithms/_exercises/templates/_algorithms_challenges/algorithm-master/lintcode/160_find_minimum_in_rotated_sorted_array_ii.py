@@ -1,7 +1,7 @@
 """
 Iteration
 """
-class Solution:
+c_ Solution:
     """
     @param: A: a rotated sorted array
     @return: the minimum number in the array
@@ -22,7 +22,7 @@ class Solution:
 """
 Binary Searching
 """
-class Solution:
+c_ Solution:
     """
     @param: A: a rotated sorted array
     @return: the minimum number in the array

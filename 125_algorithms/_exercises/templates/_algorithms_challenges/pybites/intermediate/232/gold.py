@@ -21,7 +21,7 @@ ___ years_gold_value_decreased(gold_prices: s.. = gold_prices):
    """Analyze gold_prices returning a tuple of the year the gold price
       decreased the most and the year the gold price increased the most.
    """
-   price_delta = {}
+   price_delta    # dict
    prices_lines = gold_prices.s...s..("\n")
    ___ price_line __ prices_lines:
       ___ line __ price_line.s..(" "):

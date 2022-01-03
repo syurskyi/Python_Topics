@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maximalSquare(self, matrix):
     """
     :type matrix: List[List[str]]

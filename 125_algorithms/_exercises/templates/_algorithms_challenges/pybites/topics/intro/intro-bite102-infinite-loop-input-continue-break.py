@@ -6,7 +6,7 @@ ___ my_print_colors():
        'bye' and break, next check if given color is in VALID_COLORS, if not,
        continue, finally if that check passes, print the color"""
     w... T...
-        inp = input("Enter color:").lower()
+        inp = input("Enter color:").l..
         __ inp __ 'quit':
             print("bye")
             break
@@ -26,7 +26,7 @@ ___ print_colors():
        'bye' and break, next check if given color is in VALID_COLORS, if not,
        continue, finally if that check passes, print the color"""
     w... T...
-        color = input('Enter a color: ').lower()
+        color = input('Enter a color: ').l..
         __ color __ 'quit':
             print('bye')
             break

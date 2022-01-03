@@ -11,7 +11,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ lowestCommonAncestor(self, root, a, b):
         """
         :type root: TreeNode
@@ -22,8 +22,8 @@ class Solution:
         __ n.. root o. root __ a o. root __ b:
             r.. root
 
-        left = self.lowestCommonAncestor(root.left, a, b)
-        right = self.lowestCommonAncestor(root.right, a, b)
+        left = lowestCommonAncestor(root.left, a, b)
+        right = lowestCommonAncestor(root.right, a, b)
 
         __ left a.. right:
             r.. root

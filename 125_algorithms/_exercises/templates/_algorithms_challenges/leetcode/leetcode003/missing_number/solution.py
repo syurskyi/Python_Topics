@@ -10,7 +10,7 @@ Your algorithm should run in linear runtime complexity. Could you implement it
 using only constant extra space complexity?
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ missingNumber(self, nums):
         """
         :type nums: List[int]

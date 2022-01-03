@@ -4,7 +4,7 @@ Implement int sqrt(int x).
 Compute and return the square root of x.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ sqrt(self, x):
         """
         Newton's method

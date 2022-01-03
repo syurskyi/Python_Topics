@@ -1,4 +1,4 @@
-_______ re
+_______ __
 ____ dataclasses _______ dataclass, field
 ____ pathlib _______ Path
 ____ typing _______ List
@@ -14,7 +14,7 @@ URL = "https://www.digminecraft.com/lists/enchantment_list_pc.php"
 
 
 @dataclass
-class Enchantment:
+c_ Enchantment:
     """Minecraft enchantment class
     
     Implements the following: 
@@ -26,15 +26,15 @@ class Enchantment:
     description: s..
     items: List[s..] = field(default_factory=l..)
 
-    ___ __post_init__(self):
-        self.name = self.name.r..('_', ' ')
+    ___ __post_init__
+        name = name.r..('_', ' ')
 
-    ___ __repr__(self):
-        r.. f'{self.name} ({self.max_level}): {self.description}'
+    ___ __repr__
+        r.. f'{name} ({max_level}): {description}'
 
 
 @dataclass()
-class Item:
+c_ Item:
     """Minecraft enchantable item class
     
     Implements the following: 
@@ -46,10 +46,10 @@ class Item:
     # def __post_init__(self):
     #     self.name = self.name.replace('_',' ').title()
 
-    ___ __repr__(self):
+    ___ __repr__
         en = [f'  [{chant.max_level}] {chant.id_name}'
-              ___ chant __ s..(self.enchantments, key=l.... x : x.id_name)]
-        r.. f'{self.name.r..("_"," ").t..}: \n' + '\n'.join(en)
+              ___ chant __ s..(enchantments, key=l.... x : x.id_name)]
+        r.. f'{name.r..("_"," ").t..}: \n' + '\n'.j..(en)
 
 
 # Lookup values of the first five roman numerals
@@ -76,7 +76,7 @@ ___ generate_enchantments(soup):
         max_level = LEVEL_TRANSLATE[maxlevel.text.s..]
         description = descr.text
         item_url = item.img.attrs.get('data-src')
-        items = re.sub(r'.*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
+        items = __.sub(r'.*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
         items = items.r..('fishing_rod', 'FISHING=ROD')
         items = l..(map(l.... s: s.r..('FISHING=ROD', 'fishing_rod'), items.s..('_')))
 
@@ -96,13 +96,13 @@ ___ generate_items(data):
     With the key being the item name.
     """
     res = d..()
-    ___ enchantment __ data.values():
+    ___ enchantment __ data.v..
         ___ i __ enchantment.items:
-            __ i __ res.keys():
+            __ i __ res.k..:
                 res[i].enchantments.a..(enchantment)
             ____:
                 res[i] = Item(i, [enchantment])
-    r.. d..(s..(res.items(), key=l.... t: t[0]))
+    r.. d..(s..(res.i.., key=l.... t: t[0]))
 
 
 ___ get_soup(file=HTML_FILE):

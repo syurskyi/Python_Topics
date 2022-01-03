@@ -37,6 +37,6 @@ c_ Dictionary(page.Page):
     @staticmethod
     ___ get_definition(widget, msg):
         defined  definition.Definition(widget.value).get()
-        widget.outputdiv.text  " ".join(defined)
+        widget.outputdiv.text  " ".j..(defined)
 
 

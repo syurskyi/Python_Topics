@@ -7,7 +7,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ zigzagLevelOrder(self, root):
     """
     :type root: TreeNode
@@ -15,7 +15,7 @@ class Solution(object):
     """
     stack = deque([root])
     ans    # list
-    odd = True
+    odd = T..
     w.... stack:
       level    # list
       ___ k __ r..(0, l..(stack)):

@@ -4,7 +4,7 @@ Created on May 8, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findMaxConsecutiveOnes(self, nums):
         """
         :type nums: List[int]
@@ -21,14 +21,14 @@ class Solution(object):
         maxLen = max(maxLen, l..(nums)-left-1)
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 0, 1, 1, 0],
             [1, 0, 1, 1,0, 1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.findMaxConsecutiveOnes(nums)
+            result = findMaxConsecutiveOnes(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

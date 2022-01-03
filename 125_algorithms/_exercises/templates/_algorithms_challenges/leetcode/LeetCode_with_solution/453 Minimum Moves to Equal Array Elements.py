@@ -6,7 +6,7 @@ elements by 1.
 """
 
 
-class Solution:
+c_ Solution:
     ___ minMoves(self, nums):
         """
         List out, find the pattern

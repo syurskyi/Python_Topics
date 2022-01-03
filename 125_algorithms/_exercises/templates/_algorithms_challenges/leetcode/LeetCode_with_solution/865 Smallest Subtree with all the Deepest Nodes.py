@@ -26,53 +26,53 @@ Both the input and output have TreeNode type.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.deepest = -1
-        self.deepest_nodes = N..
-        self.ret = N..
+c_ Solution:
+    ___ - ):
+        deepest = -1
+        deepest_nodes = N..
+        ret = N..
 
     ___ subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
         """
         lowest common ancestor of deepest node
         """
-        self.down(root, 0)
-        __ l..(self.deepest_nodes) __ 1:
-            r.. self.deepest_nodes.pop()
+        down(root, 0)
+        __ l..(deepest_nodes) __ 1:
+            r.. deepest_nodes.pop()
 
-        self.c.. root)
-        r.. self.ret
+        c.. root)
+        r.. ret
 
     ___ down(self, node: TreeNode, d: int) -> N..
         __ n.. node:
             r..
 
-        __ d > self.deepest:
-            self.deepest = d
-            self.deepest_nodes = set([node])
-        ____ d __ self.deepest:
-            self.deepest_nodes.add(node)
+        __ d > deepest:
+            deepest = d
+            deepest_nodes = set([node])
+        ____ d __ deepest:
+            deepest_nodes.add(node)
 
-        self.down(node.left, d + 1)
-        self.down(node.right, d + 1)
+        down(node.left, d + 1)
+        down(node.right, d + 1)
 
     ___ c.. self, node: TreeNode) -> int:
         __ n.. node:
             r.. 0
 
-        l = self.c.. node.left)
-        r = self.c.. node.right)
-        __ l != 0 a.. r != 0 a.. l + r __ l..(self.deepest_nodes):
-            self.ret = node
+        l = c.. node.left)
+        r = c.. node.right)
+        __ l != 0 a.. r != 0 a.. l + r __ l..(deepest_nodes):
+            ret = node
 
         count = l + r
-        __ node __ self.deepest_nodes:
+        __ node __ deepest_nodes:
             count += 1
         r.. count

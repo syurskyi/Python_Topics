@@ -3,16 +3,16 @@ ____ unittest.mock _______ patch
 
 _______ pytest
 
-____ search _______ (_convert_struct_time_to_dt, get_feed_entries,
+____ s.. _______ (_convert_struct_time_to_dt, get_feed_entries,
                     filter_entries_by_tag, main, Entry)
 
 
-class AttrDict(d..):
+c_ AttrDict(d..):
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
-    ___ __init__(self, *args, **kwargs):
+    ___ - , *args, **kwargs):
         super(AttrDict, self).__init__(*args, **kwargs)
-        self.__dict__ = self
+        __dict__ = self
 
 
 dt1 = d__(2018, 2, 18, 19, 52, 0).timetuple()
@@ -74,17 +74,17 @@ ___ test_get_feed_entries(inp):
 
 
 @pytest.mark.parametrize("arg, ret", [
-    ('blabla', False),
-    ('tricks', True),
-    ('TRICKS', True),  # case should not matter
-    ('TriCkS', True),
-    ('python', False),  # whole term only so python != pythonic
-    ('matplotlib&pandas', True),
-    ('matplotlib&pandas&collections', True),
-    ('matplotlib&pandas&flask', False),
-    ('matplotlib|flask', True),
-    ('matplotlib|django|flask', True),
-    ('pyramid|django|flask', False),
+    ('blabla', F..),
+    ('tricks', T..),
+    ('TRICKS', T..),  # case should not matter
+    ('TriCkS', T..),
+    ('python', F..),  # whole term only so python != pythonic
+    ('matplotlib&pandas', T..),
+    ('matplotlib&pandas&collections', T..),
+    ('matplotlib&pandas&flask', F..),
+    ('matplotlib|flask', T..),
+    ('matplotlib|django|flask', T..),
+    ('pyramid|django|flask', F..),
 ])
 ___ test_filter_entries_by_tag(arg, ret):
     entry = Entry(date=date(2016, 12, 22),

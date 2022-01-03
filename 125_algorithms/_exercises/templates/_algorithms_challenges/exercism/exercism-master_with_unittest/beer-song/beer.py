@@ -1,16 +1,16 @@
-class Beer:
+c_ Beer:
 
     LAST_LINE = ('Go to the store and buy some more, '
                  '99 bottles of beer on the wall.')
 
     @classmethod
     ___ song(cls, start, stop):
-        r.. "\n".join([cls.verse(verse_num) ___ verse_num
+        r.. "\n".j..([cls.verse(verse_num) ___ verse_num
                           __ reversed(l..(r..(stop, start + 1)))]) + "\n"
 
     @classmethod
     ___ verse(cls, verse_num):
-        r.. "\n".join((cls.prefix(verse_num), cls.suffix(verse_num))) + "\n"
+        r.. "\n".j..((cls.prefix(verse_num), cls.suffix(verse_num))) + "\n"
 
     @classmethod
     ___ prefix(cls, verse_num):

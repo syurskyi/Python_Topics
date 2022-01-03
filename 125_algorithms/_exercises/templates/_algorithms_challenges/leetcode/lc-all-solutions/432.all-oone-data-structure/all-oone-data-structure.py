@@ -1,4 +1,4 @@
-class List(object):
+c_ List(object):
   @staticmethod
   ___ delete(elem):
     elem.prev.next = elem.next
@@ -30,37 +30,37 @@ class List(object):
     head.prev = head.next = head
 
 
-class Node(object):
-  ___ __init__(self, val):
-    self.val = val
-    self.prev = N..
-    self.next = N..
-    self.keys = set()
+c_ Node(object):
+  ___ - , val):
+    val = val
+    prev = N..
+    next = N..
+    keys = set()
 
   ___ add(self, key):
-    self.keys |= {key}
+    keys |= {key}
 
   ___ remove(self, key):
-    self.keys -= {key}
+    keys -= {key}
 
-  ___ isEmpty(self):
-    r.. l..(self.keys) __ 0
+  ___ isEmpty
+    r.. l..(keys) __ 0
 
-  ___ peepKey(self):
-    ___ k __ self.keys:
+  ___ peepKey
+    ___ k __ keys:
       r.. k
     r.. ""
 
 
-class AllOne(object):
+c_ AllOne(object):
 
-  ___ __init__(self):
+  ___ - ):
     """
     Initialize your data structure here.
     """
-    self.d = {}
-    self.head = Node(-1)
-    List.initHead(self.head)
+    d    # dict
+    head = Node(-1)
+    List.initHead(head)
 
   ___ inc(self, key):
     """
@@ -68,18 +68,18 @@ class AllOne(object):
     :type key: str
     :rtype: void
     """
-    head = self.head
-    __ key n.. __ self.d:
+    head = head
+    __ key n.. __ d:
       __ head.next.val __ 1:
-        self.d[key] = head.next
-        self.d[key].add(key)
+        d[key] = head.next
+        d[key].add(key)
       ____:
         newNode = Node(1)
         newNode.add(key)
         List.insertAfter(head, newNode)
-        self.d[key] = newNode
+        d[key] = newNode
     ____:
-      node = self.d[key]
+      node = d[key]
       newNode = N..
       __ node.next.val != node.val + 1:
         newNode = Node(node.val + 1)
@@ -92,8 +92,8 @@ class AllOne(object):
       node.remove(key)
       __ node.isEmpty():
         List.delete(node)
-        del self.d[key]
-      self.d[key] = newNode
+        del d[key]
+      d[key] = newNode
 
   ___ dec(self, key):
     """
@@ -101,15 +101,15 @@ class AllOne(object):
     :type key: str
     :rtype: void
     """
-    __ key n.. __ self.d:
+    __ key n.. __ d:
       r..
-    head = self.head
-    node = self.d[key]
+    head = head
+    node = d[key]
     __ node.val __ 1:
       node.remove(key)
       __ node.isEmpty():
         List.delete(node)
-      del self.d[key]
+      del d[key]
     ____:
       newNode = N..
       __ node.prev.val != node.val - 1:
@@ -122,22 +122,22 @@ class AllOne(object):
       node.remove(key)
       __ node.isEmpty():
         List.delete(node)
-        del self.d[key]
-      self.d[key] = newNode
+        del d[key]
+      d[key] = newNode
 
-  ___ getMaxKey(self):
+  ___ getMaxKey
     """
     Returns one of the keys with maximal value.
     :rtype: str
     """
-    r.. self.head.prev.peepKey()
+    r.. head.prev.peepKey()
 
-  ___ getMinKey(self):
+  ___ getMinKey
     """
     Returns one of the keys with Minimal value.
     :rtype: str
     """
-    r.. self.head.next.peepKey()
+    r.. head.next.peepKey()
 
 # Your AllOne object will be instantiated and called as such:
 # obj = AllOne()

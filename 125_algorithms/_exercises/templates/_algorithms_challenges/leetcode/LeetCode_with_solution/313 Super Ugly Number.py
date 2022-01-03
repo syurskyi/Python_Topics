@@ -18,7 +18,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ nthSuperUglyNumber(self, n, primes):
         """
         DP O(kn)
@@ -42,16 +42,16 @@ class Solution(object):
         r.. ret[n-1]
 
 
-class QueueWrapper(object):
-    ___ __init__(self, idx, q):
-        self.idx = idx
-        self.q = q
+c_ QueueWrapper(object):
+    ___ - , idx, q):
+        idx = idx
+        q = q
 
     ___ __cmp__(self, other):
-        r.. self.q[0] - other.q[0]
+        r.. q[0] - other.q[0]
 
 
-class SolutionHeap(object):
+c_ SolutionHeap(object):
     ___ nthSuperUglyNumber(self, n, primes):
         """
         O(k lg k) + O(nk)

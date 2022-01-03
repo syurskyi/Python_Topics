@@ -4,7 +4,7 @@ Created on Mar 28, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ largestDivisibleSubset(self, nums):
         __ n.. nums: r.. []
         nums.s..()
@@ -29,7 +29,7 @@ class Solution(object):
             ind = idx[ind]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 3],
             [1, 2, 3, 8],
@@ -39,7 +39,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.largestDivisibleSubset(nums)
+            result = largestDivisibleSubset(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

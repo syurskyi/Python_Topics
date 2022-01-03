@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: k: An integer
     @param: n: An integer
@@ -7,7 +7,7 @@ class Solution:
     ___ digitCounts(self, k, n):
         ans = 0
         ___ i __ r..(n + 1):
-            ans += self.c.. k, i)
+            ans += c.. k, i)
         r.. ans
 
     ___ c.. self, k, a):

@@ -11,13 +11,13 @@ ___ get_all_jeeps(cars=cars):
     """return a comma  + space (', ') separated string of jeep models
        (original order)"""
     jeeps = cars["Jeep"]
-    r.. ", ".join(jeeps)
+    r.. ", ".j..(jeeps)
 
 
 ___ get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
     first_model    # list
-    ___ model __ cars.values():
+    ___ model __ cars.v..
         first_model.a..(model[0])
     r.. first_model
 
@@ -27,9 +27,9 @@ ___ get_all_matching_models(cars=cars, grep='trail'):
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
     cars_to_return    # list
-    ___ car_type __ cars.values():
+    ___ car_type __ cars.v..
         ___ model __ car_type:
-            __ grep.lower() __ model.lower():
+            __ grep.l.. __ model.l..:
                 cars_to_return.a..(model)
     r.. cars_to_return
 

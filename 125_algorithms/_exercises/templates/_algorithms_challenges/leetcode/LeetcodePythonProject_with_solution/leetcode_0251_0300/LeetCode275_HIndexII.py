@@ -4,7 +4,7 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ hIndex(self, citations):
         """
         :type citations: List[int]

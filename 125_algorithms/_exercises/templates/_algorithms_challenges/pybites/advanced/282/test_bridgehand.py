@@ -8,7 +8,7 @@ ____ bridgehand _______ Suit, Rank, Card, BridgeHand
 
 
 @dataclass
-class TestHand:
+c_ TestHand:
     card_string: s..
     doubletons: int
     singletons: int
@@ -17,17 +17,17 @@ class TestHand:
     ssp: int
     total_points: int
     ltc: int
-    card_list: List[Card] = field(init=False)
+    card_list: List[Card] = field(init=F..)
 
-    ___ __post_init__(self):
+    ___ __post_init__
         """ Generate actual list of Card instances from card_string """
-        self.card_list    # list
-        ___ suit_holding __ self.card_string.s.. :
+        card_list    # list
+        ___ suit_holding __ card_string.s.. :
             suit = Suit[suit_holding[0]]
             ___ rank __ suit_holding[2:]:
                 card = Card(suit, Rank[rank])
-                self.card_list.a..(card)
-        shuffle(self.card_list)
+                card_list.a..(card)
+        shuffle(card_list)
 
 
 test_hands = [

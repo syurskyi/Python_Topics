@@ -50,7 +50,7 @@ ____ typing _______ List
 MAX = 2 ** 31 - 1
 
 
-class Solution:
+c_ Solution:
     ___ splitIntoFibonacci(self, S: s..) -> List[int]:
         """
         The first two elements of the array uniquely determine the rest of the

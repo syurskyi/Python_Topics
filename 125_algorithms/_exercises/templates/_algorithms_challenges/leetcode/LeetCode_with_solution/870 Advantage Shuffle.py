@@ -25,7 +25,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ advantageCount(self, A: List[int], B: List[int]) -> List[int]:
         """
         Gready select the smallest larger number

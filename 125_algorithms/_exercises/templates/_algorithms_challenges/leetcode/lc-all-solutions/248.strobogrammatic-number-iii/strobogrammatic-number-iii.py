@@ -1,25 +1,25 @@
-class Solution(object):
+c_ Solution(object):
   ___ findStrobogrammatic(self, n):
     """
     :type n: int
     :rtype: List[str]
     """
-    self.d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
+    d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
 
     ___ dfs(half, path, n):
       __ l..(path) __ half:
-        pathStr = "".join(path)
+        pathStr = "".j..(path)
         __ half * 2 __ n:
-          toAppend = pathStr + "".join([self.d[x] ___ x __ pathStr[::-1]])
+          toAppend = pathStr + "".j..([d[x] ___ x __ pathStr[::-1]])
           toAppendInt = int(toAppend)
-          __ self.low <= toAppendInt <= self.high:
-            self.count += 1
+          __ low <= toAppendInt <= high:
+            count += 1
         ____:
           ___ c __ "018":
-            toAppend = pathStr + c + "".join([self.d[x] ___ x __ pathStr[::-1]])
+            toAppend = pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]])
             toAppendInt = int(toAppend)
-            __ self.low <= toAppendInt <= self.high:
-              self.count += 1
+            __ low <= toAppendInt <= high:
+              count += 1
         r..
 
       ___ c __ "01689":
@@ -41,9 +41,9 @@ class Solution(object):
     """
     __ int(low) > int(high):
       r.. 0
-    self.count = 0
-    self.low = int(low)
-    self.high = int(high)
+    count = 0
+    low = int(low)
+    high = int(high)
     ___ length __ r..(l..(low), l..(high) + 1):
-      self.findStrobogrammatic(length)
-    r.. self.count
+      findStrobogrammatic(length)
+    r.. count

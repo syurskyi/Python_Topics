@@ -7,7 +7,7 @@ the sum of the three integers. You may assume that each input would have exactly
     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ threeSumClosest(self, num, target):
         """
         Three pointers scanning algorithm

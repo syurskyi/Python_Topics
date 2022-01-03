@@ -1,17 +1,17 @@
-class Luhn:
+c_ Luhn:
 
-    ___ __init__(self, number):
-        self.number = number
+    ___ - , number):
+        number = number
 
-    ___ checksum(self):
-        r.. s..(self.addends()) % 10
+    ___ checksum
+        r.. s..(addends()) % 10
 
-    ___ addends(self):
-        r.. [self.addend(idx, int(val)) ___ idx, val __
-                e..(reversed(s..(self.number)))]
+    ___ addends
+        r.. [addend(idx, int(val)) ___ idx, val __
+                e..(reversed(s..(number)))]
 
     ___ addend(self, idx, val):
-        r.. self.subtract_nine(idx, self.double_every_other(idx, val))
+        r.. subtract_nine(idx, double_every_other(idx, val))
 
     ___ double_every_other(self, idx, val):
         r.. val * 2 __ idx % 2 __ 1 ____ val
@@ -19,8 +19,8 @@ class Luhn:
     ___ subtract_nine(self, idx, val):
         r.. val - 9 __ val > 10 ____ val
 
-    ___ is_valid(self):
-        r.. self.checksum() __ 0
+    ___ is_valid
+        r.. checksum() __ 0
 
     @classmethod
     ___ create(cls, num):

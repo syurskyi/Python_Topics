@@ -4,7 +4,7 @@ ____ urllib.request _______ urlretrieve
 _______ pandas as pd
 
 TMP = os.getenv("TMP", "/tmp")
-EXCEL = os.path.join(TMP, 'order_data.xlsx')
+EXCEL = os.path.j..(TMP, 'order_data.xlsx')
 __ n.. os.path.isfile(EXCEL):
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/order_data.xlsx',

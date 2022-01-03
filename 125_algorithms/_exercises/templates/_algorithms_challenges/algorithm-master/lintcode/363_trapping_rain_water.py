@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: heights: a list of integers
     @return: a integer

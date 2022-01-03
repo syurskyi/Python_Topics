@@ -11,7 +11,7 @@ Note: It is intended for the problem statement to be ambiguous. You should gathe
 implementing one.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ isNumber_builtin(self, s):
         """
         using built-in function
@@ -20,9 +20,9 @@ class Solution:
         """
         try:
             float(s)
-            r.. True
+            r.. T..
         except ValueError:
-            r.. False
+            r.. F..
 
     ___ isNumber(self, s):
         """
@@ -55,7 +55,7 @@ class Solution:
         state = 0
         ___ char __ s:
             __ state__-1:
-                r.. False
+                r.. F..
             __ char__" ":
                 token = SPACE
             ____ char __ ("-", "+"):
@@ -71,9 +71,9 @@ class Solution:
 
             state = T[state][token]
         __ state __ (1, 4, 7, 8):  # accept state
-            r.. True
+            r.. T..
         ____:
-            r.. False
+            r.. F..
 
 __ __name____"__main__":
     ... Solution().isNumber(".2e81")__True

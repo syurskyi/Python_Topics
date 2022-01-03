@@ -10,15 +10,15 @@ return 1->2->2->4->3->5.
 """
 __author__ = 'Danyang'
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-    ___ __repr__(self):
-        r.. repr(self.val)
+    ___ __repr__
+        r.. repr(val)
 
-class Solution:
+c_ Solution:
     ___ partition(self, head, x):
         """
         Linked List

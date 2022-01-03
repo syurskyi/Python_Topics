@@ -48,7 +48,7 @@ ____ typing _______ List
 ____ functools _______ lru_cache
 
 
-class Solution:
+c_ Solution:
     ___ mergeStones(self, stones: List[int], K: int) -> int:
         """
         Mergeable? K -> 1. Reduction size (K - 1)

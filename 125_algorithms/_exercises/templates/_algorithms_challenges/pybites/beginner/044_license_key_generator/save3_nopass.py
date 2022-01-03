@@ -7,4 +7,4 @@ ___ gen_key(parts=4, chars_per_part=8):
     ___ part __ r..(parts):
         ___ char __ r..(chars_per_part):
             password += secrets.choice(string_alphabet)
-    r.. print('-'.join(password[i:i+parts] ___ i __ r..(0, l..(password), parts)))
+    r.. print('-'.j..(password[i:i+parts] ___ i __ r..(0, l..(password), parts)))

@@ -20,7 +20,7 @@ space: O(n) -> O(1)
 """
 
 
-class Solution:
+c_ Solution:
     ___ maxChunksToSorted(self, nums):
         """
         :type nums: List[int]
@@ -42,7 +42,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     ___ maxChunksToSorted(self, nums):
         """
         :type nums: List[int]

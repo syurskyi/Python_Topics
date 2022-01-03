@@ -4,14 +4,14 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Codec(object):
+c_ Codec(object):
     ___ encode(self, strs):
         """Encodes a list of strings to a single string.
         
         :type strs: List[str]
         :rtype: str
         """
-        r.. ''.join('%d:%s' % (l..(s), s) ___ s __ strs)
+        r.. ''.j..('%d:%s' % (l..(s), s) ___ s __ strs)
     
     ___ decode(self, s):
         """Decodes a single string to a list of strings.

@@ -8,7 +8,7 @@ ___ cart():
     # faking some data (normally would load from DB)
     products = 'celery apples water coffee chicken pizza'.s..
     prices = [1, 4, 2, 5, 6, 4]
-    cravings = False, False, False, False, False, True
+    cravings = F.., F.., F.., F.., F.., T..
 
     items    # list
     ___ item __ z..(products, prices, cravings):

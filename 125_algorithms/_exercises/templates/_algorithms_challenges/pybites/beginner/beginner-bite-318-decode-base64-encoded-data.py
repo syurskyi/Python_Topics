@@ -58,7 +58,7 @@ Jaclin,Tonge,3549852104724527"""
     # print(decoded)???
     print(bytes.decode(decoded, 'ascii'))
     inp = bytes.decode(decoded, 'ascii')
-    print(type(inp))
+    print(t..(inp))
     result = csv.reader(inp.splitlines())
     result = l..(result)
     r = result[1:]

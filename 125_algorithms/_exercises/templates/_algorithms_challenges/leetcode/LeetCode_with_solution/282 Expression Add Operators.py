@@ -12,7 +12,7 @@ Examples:
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ addOperators(self, num, target):
         """
         Adapted from https://leetcode.com/discuss/58614/java-standard-backtrace-ac-solutoin-short-and-clear
@@ -26,7 +26,7 @@ class Solution(object):
         :rtype: List[str]
         """
         ret    # list
-        self.dfs(num, target, 0, "", 0, 0, ret)
+        dfs(num, target, 0, "", 0, 0, ret)
         r.. ret
 
     ___ dfs(self, num, target, pos, cur_str, cur_val, mul, ret):
@@ -40,11 +40,11 @@ class Solution(object):
                 nxt_val = int(num[pos:i+1])
 
                 __ n.. cur_str:
-                    self.dfs(num, target, i+1, "%d"%nxt_val, nxt_val, nxt_val, ret)
+                    dfs(num, target, i+1, "%d"%nxt_val, nxt_val, nxt_val, ret)
                 ____:
-                    self.dfs(num, target, i+1, cur_str+"+%d"%nxt_val, cur_val+nxt_val, nxt_val, ret)
-                    self.dfs(num, target, i+1, cur_str+"-%d"%nxt_val, cur_val-nxt_val, -nxt_val, ret)
-                    self.dfs(num, target, i+1, cur_str+"*%d"%nxt_val, cur_val-mul+mul*nxt_val, mul*nxt_val, ret)
+                    dfs(num, target, i+1, cur_str+"+%d"%nxt_val, cur_val+nxt_val, nxt_val, ret)
+                    dfs(num, target, i+1, cur_str+"-%d"%nxt_val, cur_val-nxt_val, -nxt_val, ret)
+                    dfs(num, target, i+1, cur_str+"*%d"%nxt_val, cur_val-mul+mul*nxt_val, mul*nxt_val, ret)
 
 
 __ __name__ __ "__main__":

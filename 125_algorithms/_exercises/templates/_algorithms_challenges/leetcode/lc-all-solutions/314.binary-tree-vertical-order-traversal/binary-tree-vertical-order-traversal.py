@@ -1,7 +1,7 @@
 ____ collections _______ defaultdict
 
 
-class Solution(object):
+c_ Solution(object):
   ___ verticalOrder(self, root):
     """
     :type root: TreeNode
@@ -11,15 +11,15 @@ class Solution(object):
     ___ dfs(p, i, j, res):
       __ p:
         res[j].a..((p.val, i))
-        self.leftMost = m..(j, self.leftMost)
+        leftMost = m..(j, leftMost)
         dfs(p.left, i + 1, j - 1, res)
         dfs(p.right, i + 1, j + 1, res)
 
-    self.leftMost = float("inf")
+    leftMost = float("inf")
     ans    # list
     res = defaultdict(l..)
     dfs(root, 0, 0, res)
-    i = self.leftMost
+    i = leftMost
     w... T...
       __ n.. res[i]:
         break

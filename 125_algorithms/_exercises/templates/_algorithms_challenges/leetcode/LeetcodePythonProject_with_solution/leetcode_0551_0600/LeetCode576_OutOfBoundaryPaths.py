@@ -3,7 +3,7 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findPaths(self, m, n, N, i, j):
         """
         :type m: int
@@ -30,7 +30,7 @@ class Solution(object):
             count = tmp
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 2, 2, 0, 0],
             [1, 3, 3, 0, 1],
@@ -41,7 +41,7 @@ class Solution(object):
             print('N: %s' % N)
             print('i: %s' % i)
             print('j: %s' % j)
-            result = self.findPaths(m, n, N, i, j)
+            result = findPaths(m, n, N, i, j)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -4,12 +4,12 @@ Created on Nov 6, 2017
 @author: MT
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x, nextNode_ N..
-        self.val = x
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , x, nextNode_ N..
+        val = x
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ reverseKGroup(self, head, k):
         """
         :type head: ListNode
@@ -24,7 +24,7 @@ class Solution(object):
         node = head
         w.... node:
             __ count % k __ 0:
-                node = self.reverse(prev, node)
+                node = reverse(prev, node)
                 prev = node
             count += 1
             node = node.next

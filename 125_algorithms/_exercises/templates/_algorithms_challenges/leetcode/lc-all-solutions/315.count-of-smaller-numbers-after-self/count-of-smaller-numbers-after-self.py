@@ -1,7 +1,7 @@
 _______ bisect
 
 
-class Solution(object):
+c_ Solution(object):
   ___ countSmaller(self, nums):
     """
     :type nums: List[int]

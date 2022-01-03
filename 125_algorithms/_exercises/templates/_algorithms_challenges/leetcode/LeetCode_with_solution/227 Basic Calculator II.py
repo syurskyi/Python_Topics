@@ -17,15 +17,15 @@ Note: Do not use the eval built-in library function.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ calculate(self, s):
         """
         :type s: str
         :rtype: int
         """
-        lst = self.parse(s)
-        post = self.infix2postfix(lst)
-        r.. self.eval_postfix(post)
+        lst = parse(s)
+        post = infix2postfix(lst)
+        r.. eval_postfix(post)
 
     ___ parse(self, s):
         """
@@ -63,7 +63,7 @@ class Solution:
                     ret.a..(stk.pop())
                 stk.pop()
             ____:  # generalized to include * and /
-                w.... stk a.. self.precendece(elt) <= self.precendece(stk[-1]):
+                w.... stk a.. precendece(elt) <= precendece(stk[-1]):
                     ret.a..(stk.pop())
 
                 stk.a..(elt)

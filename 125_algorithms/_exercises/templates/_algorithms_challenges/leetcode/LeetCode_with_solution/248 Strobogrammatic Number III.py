@@ -8,10 +8,10 @@ ____ collections _______ deque
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.lst = ["11", "69", "88", "96", "00"]
-        self.middle = ["0", "1", "8"]
+c_ Solution(object):
+    ___ - ):
+        lst = ["11", "69", "88", "96", "00"]
+        middle = ["0", "1", "8"]
 
     ___ strobogrammaticInRange(self, low, high):
         """
@@ -21,14 +21,14 @@ class Solution(object):
         """
         cnt = 0
         ___ l __ xrange(l..(low), l..(high)+1):
-            cnt += l..(filter(l.... x: int(low) <= int(x) <= int(high), self.strobogrammatic(l)))
+            cnt += l..(filter(l.... x: int(low) <= int(x) <= int(high), strobogrammatic(l)))
 
         r.. cnt
 
     # below methods from strobogrammatic number ii
     ___ strobogrammatic(self, n):
         ret    # list
-        self.build(n, deque(), ret)
+        build(n, deque(), ret)
         r.. ret
 
     ___ build(self, n, cur, ret):
@@ -36,18 +36,18 @@ class Solution(object):
         build from inside
         """
         __ n%2 __ 1 a.. l..(cur) __ 0:
-            ___ elt __ self.middle:
+            ___ elt __ middle:
                 cur.a..(elt)
-                self.build(n, cur, ret)
+                build(n, cur, ret)
                 cur.pop()
         ____:
             __ l..(cur) __ n:
-                ret.a..("".join(cur))
+                ret.a..("".j..(cur))
                 r..
-            ___ elt __ self.lst:
+            ___ elt __ lst:
                 __ n.. (elt __ "00" a.. l..(cur) __ n-2):
                     cur.appendleft(elt[0])
                     cur.a..(elt[1])
-                    self.build(n, cur, ret)
+                    build(n, cur, ret)
                     cur.pop()
                     cur.popleft()

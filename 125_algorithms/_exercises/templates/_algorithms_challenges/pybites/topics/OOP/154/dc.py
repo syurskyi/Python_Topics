@@ -2,14 +2,14 @@ ____ dataclasses _______ dataclass
 
 # 'number': int, 'title': str, 'level': str
 
-@dataclass(order=True)
-class Bite:
+@dataclass(order=T..)
+c_ Bite:
 
     number: int
     title: s..
     level: s..
 
-    ___ __init__(self, number, title, level='Beginner'):
-        self.number = number
-        self.title = title.capitalize()
-        self.level = level
+    ___ - , number, title, level='Beginner'):
+        number = number
+        title = title.capitalize()
+        level = level

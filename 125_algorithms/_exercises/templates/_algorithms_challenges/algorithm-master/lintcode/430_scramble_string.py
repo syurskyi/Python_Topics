@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: s1: A string
     @param: s2: Another string
@@ -6,7 +6,7 @@ class Solution:
     """
     ___ isScramble(self, s1, s2):
         __ n.. s1 o. n.. s2 o. l..(s1) != l..(s2):
-            r.. False
+            r.. F..
 
         n = l..(s1)
 
@@ -14,7 +14,7 @@ class Solution:
         `dp[i][j][k]` means the substring in `s1` (start: `i`, len: `k`)
         could be transformed into the substring in `s2` (start: `j`, len: `k`)
         """
-        dp = [[[False] * (n + 1) ___ _ __ r..(n)] ___ _ __ r..(n)]
+        dp = [[[F..] * (n + 1) ___ _ __ r..(n)] ___ _ __ r..(n)]
 
         ___ i __ r..(n):
             ___ j __ r..(n):
@@ -68,10 +68,10 @@ class Solution:
                         s2: |`j`---`k-l`--->|`j+k-l`--`l`-->|
                         """
                         __ dp[i][j][l] a.. dp[i + l][j + l][k - l]:
-                            dp[i][j][k] = True
+                            dp[i][j][k] = T..
                             continue
 
                         __ dp[i][j + k - l][l] a.. dp[i + l][j][k - l]:
-                            dp[i][j][k] = True
+                            dp[i][j][k] = T..
 
         r.. dp[0][0][n]

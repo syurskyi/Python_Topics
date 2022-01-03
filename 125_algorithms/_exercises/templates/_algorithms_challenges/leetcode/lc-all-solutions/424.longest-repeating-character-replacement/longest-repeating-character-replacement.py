@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ characterReplacement(self, s, k):
     """
     :type s: str
@@ -9,7 +9,7 @@ class Solution(object):
     :rtype: int
     """
     ans = 0
-    d = {}
+    d    # dict
     start = 0
     maxCount = 0
     window = deque([])

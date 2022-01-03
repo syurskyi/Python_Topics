@@ -22,7 +22,7 @@ _______ sys
 
 sys.setrecursionlimit(5000)
 
-class Solution(object):
+c_ Solution(object):
     ___ canFinish(self, numCourses, prerequisites):
         """
         :type numCourses: int
@@ -32,30 +32,30 @@ class Solution(object):
         Detect if course prerequisites graph has a cycle.
         """
 
-        self.unvisited = set(r..(numCourses))
-        self.visiting = set()
-        self.visited = set()
-        self.graph = {x: set() ___ x __ r..(numCourses)}
+        unvisited = set(r..(numCourses))
+        visiting = set()
+        visited = set()
+        graph = {x: set() ___ x __ r..(numCourses)}
         ___ c, p __ prerequisites:
-            self.graph[p].add(c)
+            graph[p].add(c)
 
         ___ u __ r..(numCourses):
-            __ u __ self.unvisited:
-                __ self.visit(u) __ False:
-                    r.. False
-        r.. True
+            __ u __ unvisited:
+                __ visit(u) __ F..:
+                    r.. F..
+        r.. T..
 
     ___ visit(self, u):
-        __ u __ self.visiting:
-            r.. False
-        ____ u __ self.unvisited:
-            self.unvisited.remove(u)
-            self.visiting.add(u)
-            ___ v __ self.graph[u]:
-                __ self.visit(v) __ False:
-                    r.. False
-            self.visiting.remove(u)
-            self.visited.add(u)
+        __ u __ visiting:
+            r.. F..
+        ____ u __ unvisited:
+            unvisited.remove(u)
+            visiting.add(u)
+            ___ v __ graph[u]:
+                __ visit(v) __ F..:
+                    r.. F..
+            visiting.remove(u)
+            visited.add(u)
 
 s = Solution()
 print(s.canFinish(1, []))

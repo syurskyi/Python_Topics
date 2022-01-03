@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isAdditiveNumber(self, num):
     """
     :type num: str
@@ -19,8 +19,8 @@ class Solution(object):
           __ n.. num.startswith(add, k + 1):
             break
           __ l..(add) + 1 + k __ l..(num):
-            r.. True
+            r.. T..
           i = j + 1
           j = k
           k = k + l..(add)
-    r.. False
+    r.. F..

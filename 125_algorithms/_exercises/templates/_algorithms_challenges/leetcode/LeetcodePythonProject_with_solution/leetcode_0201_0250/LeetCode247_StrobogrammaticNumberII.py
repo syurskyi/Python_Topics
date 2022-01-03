@@ -4,29 +4,29 @@ Created on Feb 28, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findStrobogrammatic(self, n):
         """
         :type n: int
         :rtype: List[str]
         """
-        self.pairs = ['00', '11', '69', '96', '88']
+        pairs = ['00', '11', '69', '96', '88']
         res    # list
-        self.helper(0, n-1, ['']*n, res)
+        helper(0, n-1, ['']*n, res)
         r.. res
     
     ___ helper(self, l, r, curr, res):
         __ l > r:
-            res.a..(''.join(curr))
+            res.a..(''.j..(curr))
             r..
-        ___ p __ self.pairs:
+        ___ p __ pairs:
             curr[l] = p[0]
             curr[r] = p[1]
             __ l __ r a.. p[0] != p[1]:
                 continue
             ____ l __ 0 a.. l != r a.. p[0] __ '0':
                 continue
-            self.helper(l+1, r-1, curr, res)
+            helper(l+1, r-1, curr, res)
     
     ___ findStrobogrammatic_short(self, n):
         """
@@ -40,9 +40,9 @@ class Solution(object):
         __ n __ 2:
             r.. evenMidCandidate[:-1]
         __ n % 2 != 0:
-            pre, midCandidate = self.findStrobogrammatic(n-1), oddMidCandidate
+            pre, midCandidate = findStrobogrammatic(n-1), oddMidCandidate
         ____:
-            pre, midCandidate = self.findStrobogrammatic(n-2), evenMidCandidate
+            pre, midCandidate = findStrobogrammatic(n-2), evenMidCandidate
         premid = int((n-1)/2)
         result    # list
         ___ c __ midCandidate:
@@ -50,13 +50,13 @@ class Solution(object):
                 result.a..(p[:premid]+c+p[premid:])
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             4,
         ]
         ___ n __ testCases:
             print('n: %s' % (n))
-            result = self.findStrobogrammatic(n)
+            result = findStrobogrammatic(n)
             print('result: %s' % (result))
             print('-='*20+'-')
  

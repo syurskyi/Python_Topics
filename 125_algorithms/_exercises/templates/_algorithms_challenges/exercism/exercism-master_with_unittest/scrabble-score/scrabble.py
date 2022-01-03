@@ -1,4 +1,4 @@
-class Scrabble:
+c_ Scrabble:
 
     LETTER_VALUES = {
         'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4,
@@ -11,7 +11,7 @@ class Scrabble:
     ___ score(cls, word):
         __ n.. cls.valid(word):
             r.. 0
-        r.. s..([cls.LETTER_VALUES[c.lower()] ___ c __ word])
+        r.. s..([cls.LETTER_VALUES[c.l..] ___ c __ word])
 
     @classmethod
     ___ valid(cls, word):

@@ -6,8 +6,8 @@ ___ convert(value: float, fmt: s..) -> float:
     :return: Float rounded to 4 decimal places after conversion
     """
     __ isi..(value, int) o. isi..(value, float):
-        __ fmt.lower() __ 'cm' o. fmt.lower() __ 'in':
-            r.. round(value*2.54, 4) __ fmt.lower() __ 'cm' ____ round(value/2.54, 4)
+        __ fmt.l.. __ 'cm' o. fmt.l.. __ 'in':
+            r.. round(value*2.54, 4) __ fmt.l.. __ 'cm' ____ round(value/2.54, 4)
         ____:
             raise ValueError
     ____:

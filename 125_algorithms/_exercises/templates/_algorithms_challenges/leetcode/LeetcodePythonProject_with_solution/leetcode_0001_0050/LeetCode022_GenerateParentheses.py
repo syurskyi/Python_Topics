@@ -4,7 +4,7 @@ Created on Jan 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ generateParenthesis(self, n):
         """
         :type n: int
@@ -12,7 +12,7 @@ class Solution(object):
         """
         __ n <= 0: r.. []
         res    # list
-        self.dfs(n, n, '', res)
+        dfs(n, n, '', res)
         r.. res
     
     ___ dfs(self, left, right, curr, res):
@@ -21,14 +21,14 @@ class Solution(object):
         __ left > right:
             r..
         __ left > 0:
-            self.dfs(left-1, right, curr+'(', res)
+            dfs(left-1, right, curr+'(', res)
         __ right > 0:
-            self.dfs(left, right-1, curr+')', res)
+            dfs(left, right-1, curr+')', res)
     
-    ___ test(self):
+    ___ test
         ___ n __ r..(4):
             print('n: %s' % n)
-            result = self.generateParenthesis(n)
+            result = generateParenthesis(n)
             print('result: %s' % result)
             print('-='*15+'-')
 

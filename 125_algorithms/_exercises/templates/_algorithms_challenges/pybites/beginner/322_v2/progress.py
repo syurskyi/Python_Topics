@@ -7,7 +7,7 @@ ___ ontrack_reading(books_goal: int, books_read: int,
     
 
     __ books_read __ 0:
-        r..  False
+        r..  F..
 
 
     __ day_of_year __ N..

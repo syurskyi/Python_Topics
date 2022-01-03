@@ -72,7 +72,7 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) -> l..:
 
     output    # list
     test_result    # list
-    in_test = False
+    in_test = F..
     ___ line __ mutpy_output:
         __ in_test:
             __ line.startswith('['):
@@ -80,11 +80,11 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) -> l..:
                     output.extend(test_result)
                 test_result.clear()
                 output.a..(line)
-                in_test = False
+                in_test = F..
             ____:
                 test_result.a..(line)
         ____:
             __ line.startswith('   - [#'):
-                in_test = True
+                in_test = T..
             output.a..(line)
     r.. output

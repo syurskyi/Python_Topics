@@ -1,4 +1,4 @@
-class Allergies:
+c_ Allergies:
 
     ALLERGY_SCORES = {
         'eggs': 1,
@@ -11,10 +11,10 @@ class Allergies:
         'cats': 128
     }
 
-    ___ __init__(self, score):
-        self.score = score
-        self.lst = l..(allergy ___ allergy __ self.ALLERGY_SCORES __
-                        self.is_allergic_to(allergy))
+    ___ - , score):
+        score = score
+        lst = l..(allergy ___ allergy __ ALLERGY_SCORES __
+                        is_allergic_to(allergy))
 
     ___ is_allergic_to(self, allergen):
-        r.. self.ALLERGY_SCORES[allergen] & self.score
+        r.. ALLERGY_SCORES[allergen] & score

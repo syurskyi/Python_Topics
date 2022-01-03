@@ -4,7 +4,7 @@ Created on May 8, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ constructRectangle(self, area):
         """
         :type area: int

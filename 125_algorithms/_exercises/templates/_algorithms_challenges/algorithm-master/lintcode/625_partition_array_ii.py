@@ -1,7 +1,7 @@
 """
 Rainbow Sort
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an integer array
     @param: low: An integer

@@ -4,7 +4,7 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ subarraySum(self, nums, k):
         """
         :type nums: List[int]
@@ -21,7 +21,7 @@ class Solution(object):
             hashmap[sumVal] = hashmap.get(sumVal, 0)+1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 1, 1],
@@ -47,7 +47,7 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            res = self.subarraySum(nums, k)
+            res = subarraySum(nums, k)
             print('result: %s' % res)
             print('-='*30+'-')
 

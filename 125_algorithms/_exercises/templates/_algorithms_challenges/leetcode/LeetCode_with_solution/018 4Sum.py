@@ -13,7 +13,7 @@ The solution set must not contain duplicate quadruplets.
     (-2,  0, 0, 2)
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ fourSum_TLE(self, num, target):
         """
         Algorithm: pointers

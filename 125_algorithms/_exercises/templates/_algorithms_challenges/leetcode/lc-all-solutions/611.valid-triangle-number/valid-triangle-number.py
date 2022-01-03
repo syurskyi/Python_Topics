@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ triangleNumber(self, nums):
     ans = 0
     nums.s..()

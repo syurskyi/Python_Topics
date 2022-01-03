@@ -33,25 +33,25 @@ Note:
 0 <= B.length <= 20000
 A and B consist only of lowercase letters.
 """
-USED = True
+USED = T..
 
 
-class Solution:
+c_ Solution:
     ___ buddyStrings(self, A: s.., B: s..) -> bool:
         """
         iterate
         """
         __ l..(A) != l..(B):
-            r.. False
+            r.. F..
         __ A __ B:
             # find dup
             seen = set()
             ___ a __ A:
                 __ a __ seen:
-                    r.. True
+                    r.. T..
                 seen.add(a)
             ____:
-                r.. False
+                r.. F..
 
         # Find a pair
         pair = N..
@@ -62,9 +62,9 @@ class Solution:
                 ____ pair __ (B[i], A[i]):
                     pair = USED
                 ____:
-                    r.. False
+                    r.. F..
 
         __ pair __ N.. o. pair __ USED:
-            r.. True
+            r.. T..
 
-        r.. False
+        r.. F..

@@ -9,12 +9,12 @@ ___ count_words(filepath):
 print(count_words("words2.txt"))
 
 #Other solution using regular expressions
-_______ re
+_______ __
 
 ___ count_words_re(filepath):
     with open(filepath, 'r') as file:
         string  file.read()
-        string_list  re.s..(",| ", string)
+        string_list  __.s..(",| ", string)
         r.. l..(string_list)
 
 print(count_words_re("words2.txt"))

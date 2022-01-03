@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findPeak(self, nums):
         """
         :type nums: list

@@ -3,9 +3,9 @@ Created on Sep 24, 2017
 
 @author: MT
 '''
-class LogSystem(object):
-    ___ __init__(self):
-        self.units = {
+c_ LogSystem(object):
+    ___ - ):
+        units = {
             'Year': 4,
             'Month': 7,
             'Day': 10,
@@ -13,7 +13,7 @@ class LogSystem(object):
             'Minute':16,
             'Second':19
             }
-        self.timestamps    # list
+        timestamps    # list
 
     ___ put(self, id, timestamp):
         """
@@ -21,7 +21,7 @@ class LogSystem(object):
         :type timestamp: str
         :rtype: void
         """
-        self.timestamps.a..((id, timestamp))
+        timestamps.a..((id, timestamp))
 
     ___ retrieve(self, s, e, gra):
         """
@@ -31,8 +31,8 @@ class LogSystem(object):
         :rtype: List[int]
         """
         res    # list
-        idx = self.units[gra]
-        ___ timestamp __ self.timestamps:
+        idx = units[gra]
+        ___ timestamp __ timestamps:
             __ timestamp[1][:idx] >= s[:idx] a..\
                 timestamp[1][:idx] <= e[:idx]:
                 res.a..(timestamp[0])

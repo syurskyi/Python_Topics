@@ -9,16 +9,16 @@ ___ get_random_number():
     r.. random.randint(START, END)
 
 
-class Game:
+c_ Game:
     """Number guess class, make it callable to initiate game"""
 
-    ___ __init__(self):
+    ___ - ):
         """Init _guesses, _answer, _win to set(), get_random_number(), False"""
-        self._guesses = set()
-        self._answer = get_random_number()
-        self._win = False
+        _guesses = set()
+        _answer = get_random_number()
+        _win = F..
 
-    ___ guess(self):
+    ___ guess
         """Ask user for input, convert to int, raise ValueError outputting
            the following errors when applicable:
            'Please enter a number'
@@ -37,10 +37,10 @@ class Game:
         __ n.. (START <= guess <= END):
             print('Number not in range')
             raise ValueError('Out of range')
-        __ guess __ self._guesses:
+        __ guess __ _guesses:
             print('Already guessed')
             raise ValueError('Retry previous guess')
-        self._guesses.add(guess)
+        _guesses.add(guess)
         r.. guess
 
     ___ _validate_guess(self, guess):
@@ -49,27 +49,27 @@ class Game:
            {guess} is too low
            {guess} is too high
            Return a boolean"""
-        __ guess __ self._answer:
+        __ guess __ _answer:
             print(f'{guess} is correct!')
-            r.. True
-        ____ guess < self._answer:
+            r.. T..
+        ____ guess < _answer:
             print(f'{guess} is too low')
         ____:
             print(f'{guess} is too high')
-        r.. False
+        r.. F..
 
-    ___ __call__(self):
+    ___ __call__
         """Entry point / game loop, use a loop break/continue,
            see the tests for the exact win/lose messaging"""
-        w.... l..(self._guesses) < MAX_GUESSES a.. n.. self._win:
+        w.... l..(_guesses) < MAX_GUESSES a.. n.. _win:
             try:
-                this_guess = self.guess()
+                this_guess = guess()
             except ValueError:
                 continue
-            __ self._validate_guess(this_guess):
-                self._win = True
+            __ _validate_guess(this_guess):
+                _win = T..
                 r..
-        print(f'Guessed {MAX_GUESSES} times, answer was {self._answer}')
+        print(f'Guessed {MAX_GUESSES} times, answer was {_answer}')
         r..
 
 

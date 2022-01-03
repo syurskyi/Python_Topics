@@ -39,7 +39,7 @@ L + M <= A.length <= 1000
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxSumTwoNoOverlap(self, A: List[int], L: int, M: int) -> int:
         """
         Prefix sum + Brute force O(N^2)

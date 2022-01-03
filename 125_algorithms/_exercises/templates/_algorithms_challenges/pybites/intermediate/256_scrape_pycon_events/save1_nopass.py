@@ -88,9 +88,9 @@ ___ get_continent(country: s..) -> s..:
     :returns: The continent of the country
     :rtype: str
     """
-    ___ continent, countries __ country_lookup.items():
+    ___ continent, countries __ country_lookup.i..:
         ___ c __ countries:
-            __ country.lower() __ c.lower():
+            __ country.l.. __ c.l..:
                 r.. continent
 
 
@@ -107,7 +107,7 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
     application/ld+json data structure website data.
     """
     soup = Soup(data, features='html.parser')
-    data = soup.find_all('script', type='application/ld+json')
+    data = soup.find_all('script', t..='application/ld+json')
     event_list    # list
     ___ x __ data:
         event_list.a..(PyCon(name=json.loads(x.string)["name"],

@@ -7,7 +7,7 @@ return "blue is sky the".
 
 """
 
-class Solution:
+c_ Solution:
     # @param s, a string
     # @return a string
     ___ reverseWords(self, s):
@@ -37,7 +37,7 @@ class Solution:
         # Now start..end is the processed array of characters
 
         # Reverse all characters between start and end
-        self.reverse(ls, start, end)
+        reverse(ls, start, end)
 
         # Reverse each word
         ws = start  # Word start index
@@ -45,9 +45,9 @@ class Solution:
         ___ i __ r..(start, end + 1):
             __ ls[i] __ ' ' o. i __ end:
                 we = end __ i __ end ____ i - 1
-                self.reverse(ls, ws, we)
+                reverse(ls, ws, we)
                 ws = i + 1
-        r.. ''.join(ls[start:end + 1])
+        r.. ''.j..(ls[start:end + 1])
 
     ___ reverse(self, a, i, j):
         w.... i < j:
@@ -70,7 +70,7 @@ class Solution:
         __ left > right:
             r.. ''
         # Reverse the whole list
-        self.reverse(cs, left, right)
+        reverse(cs, left, right)
         # Remove multiple spaces between two words
         j = left
         ___ i __ r..(left, right + 1):
@@ -85,13 +85,13 @@ class Solution:
             w.... q <= right a.. cs[q] != ' ':
                 q += 1
             # q - 1 is the end index of the word
-            self.reverse(cs, start, q - 1)
+            reverse(cs, start, q - 1)
             # Start of next word
             start = q
             w.... start <= right a.. cs[start] __ ' ':
                 start += 1
             q = start
-        r.. ''.join(cs[left:right + 1])
+        r.. ''.j..(cs[left:right + 1])
 
 
 s = Solution()

@@ -5,7 +5,7 @@ Manhattan Distance
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ minTotalDistance_3lines(self, grid):
         x = s..([i ___ i, row __ e..(grid) ___ v __ row __ v __ 1])
         y = s..([j ___ row __ grid ___ j, v __ e..(row) __ v __ 1])

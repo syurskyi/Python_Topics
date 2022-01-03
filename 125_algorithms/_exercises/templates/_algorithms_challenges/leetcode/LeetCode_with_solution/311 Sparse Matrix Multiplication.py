@@ -5,7 +5,7 @@ https://leetcode.com/problems/sparse-matrix-multiplication/
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ multiply(self, A, B):
         """
         Brute force O(n^3)
@@ -33,7 +33,7 @@ class Solution(object):
         ___ i, row __ e..(A1):
             ___ j, col __ e..(B1):
                 s = 0
-                ___ k __ row.keys():
+                ___ k __ row.k..:
                     __ k __ col:
                         s += row[k]*col[k]
                 ret[i][j] = s

@@ -52,17 +52,17 @@ Could you do better than O(n2) per move() operation?
 __author__ = 'Daniel'
 
 
-class TicTacToe(object):
-    ___ __init__(self, n):
+c_ TicTacToe(object):
+    ___ - , n):
         """
         Initialize your data structure here.
         :type n: int
         """
-        self.n = n
-        self.rows_count = [0 ___ _ __ xrange(n)]
-        self.cols_count = [0 ___ _ __ xrange(n)]
-        self.diag_count = 0
-        self.diag_inv_count = 0
+        n = n
+        rows_count = [0 ___ _ __ xrange(n)]
+        cols_count = [0 ___ _ __ xrange(n)]
+        diag_count = 0
+        diag_inv_count = 0
 
     ___ move(self, row, col, player):
         """
@@ -83,16 +83,16 @@ class TicTacToe(object):
         :rtype: int
         """
         delta = -1 __ player __ 1 ____ 1
-        self.cols_count[col] += delta
-        self.rows_count[row] += delta
+        cols_count[col] += delta
+        rows_count[row] += delta
         __ col __ row:
-            self.diag_count += delta
-        __ col + row __ self.n - 1:
-            self.diag_inv_count += delta
+            diag_count += delta
+        __ col + row __ n - 1:
+            diag_inv_count += delta
 
         # since winning condition is taking up the entire row or col, the row or col must be consecutive
-        is_win = l.... count: delta * count __ self.n
-        __ any(map(is_win, [self.rows_count[row], self.cols_count[col], self.diag_count, self.diag_inv_count])):
+        is_win = l.... count: delta * count __ n
+        __ any(map(is_win, [rows_count[row], cols_count[col], diag_count, diag_inv_count])):
             r.. player
 
         r.. 0

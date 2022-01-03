@@ -9,7 +9,7 @@ Note: You may assume that n is not less than 2 and not larger than 58.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ integerBreak(self, n):
         """
         First visualize the breakdown process into a search tree. The search tree dynamic programming

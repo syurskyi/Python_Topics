@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ canPlaceFlowers(self, flowerbed, n):
     """
     :type flowerbed: List[int]

@@ -42,40 +42,40 @@ ____ typing _______ List
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.ret    # list
-        self.i = 0  # currently scanning index of voyage
+c_ Solution:
+    ___ - ):
+        ret    # list
+        i = 0  # currently scanning index of voyage
 
     ___ flipMatchVoyage(self, root: TreeNode, voyage: List[int]) -> List[int]:
         """
         match the voyage
         Flip the least number of nodes? There is only one answer
         """
-        self.dfs(root, voyage)
-        r.. self.ret
+        dfs(root, voyage)
+        r.. ret
 
     ___ dfs(self, node, voyage):
         __ n.. node:
             r..
 
-        __ node.val != voyage[self.i]:
-            self.ret = [-1]
+        __ node.val != voyage[i]:
+            ret = [-1]
             r..
 
-        self.i += 1
-        __ node.left a.. node.right a.. node.left.val != voyage[self.i]:
+        i += 1
+        __ node.left a.. node.right a.. node.left.val != voyage[i]:
             # flip left and right
-            self.ret.a..(node.val)
-            self.dfs(node.right, voyage)
-            self.dfs(node.left, voyage)
+            ret.a..(node.val)
+            dfs(node.right, voyage)
+            dfs(node.left, voyage)
         ____:
-            self.dfs(node.left, voyage)
-            self.dfs(node.right, voyage)
+            dfs(node.left, voyage)
+            dfs(node.right, voyage)

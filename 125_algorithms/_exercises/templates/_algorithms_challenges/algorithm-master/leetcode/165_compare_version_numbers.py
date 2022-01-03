@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ compareVersion(self, version1, version2):
         """
         :type version1: str
@@ -17,8 +17,8 @@ class Solution:
         m, n = l..(v), l..(w)
 
         ___ i __ r..(max(m, n)):
-            a = self.get_int(v[i]) __ i < m ____ 0
-            b = self.get_int(w[i]) __ i < n ____ 0
+            a = get_int(v[i]) __ i < m ____ 0
+            b = get_int(w[i]) __ i < n ____ 0
 
             __ a < b:
                 r.. -1

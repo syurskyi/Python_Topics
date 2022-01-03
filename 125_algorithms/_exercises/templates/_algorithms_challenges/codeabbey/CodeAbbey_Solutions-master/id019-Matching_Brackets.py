@@ -4,7 +4,7 @@ ___ check_brackets(checks):
     answer    # list
     ___ check __ r..(checks):
         raw_data = input()
-        data = (''.join([char ___ char __ raw_data __ char __('(){}[]<>')]))
+        data = (''.j..([char ___ char __ raw_data __ char __('(){}[]<>')]))
         
         # Set higher than len(data) to make sure while loop initates.
         old_data_length = l..(data) + 1
@@ -17,5 +17,5 @@ ___ check_brackets(checks):
             answer.a..('0') # String had incorrect bracket usage.
         ____:
             answer.a..('1') # String had completely correct bracket usage.
-    print(' '.join(answer))
+    print(' '.j..(answer))
 check_brackets(int(input()))

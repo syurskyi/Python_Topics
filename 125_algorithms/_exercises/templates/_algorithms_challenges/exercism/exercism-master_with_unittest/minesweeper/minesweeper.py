@@ -1,4 +1,4 @@
-class Minesweeper:
+c_ Minesweeper:
 
     MINE = "*"
     SPACE = " "
@@ -16,7 +16,7 @@ class Minesweeper:
     @classmethod
     ___ solve(cls, inp):
         inp = l..([l..(row) ___ row __ inp])
-        r.. l..(["".join(row) ___ row __ cls.generate_board(inp)])
+        r.. l..(["".j..(row) ___ row __ cls.generate_board(inp)])
 
     @classmethod
     ___ generate_board(cls, inp):

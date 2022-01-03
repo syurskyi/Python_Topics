@@ -4,9 +4,9 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ lastRemaining(self, n):
-        left = True
+        left = T..
         remaining = n
         head = 1
         step = 1
@@ -18,13 +18,13 @@ class Solution(object):
             left = n.. left
         r.. head
     
-    ___ test(self):
+    ___ test
         testCases = [
             9
         ]
         ___ num __ testCases:
             print('num: %s' % num)
-            result = self.lastRemaining(num)
+            result = lastRemaining(num)
             print('result1: %s' % result)
             print('-='*20+'-')
 

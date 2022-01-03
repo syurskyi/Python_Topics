@@ -3,7 +3,7 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ validTicTacToe(self, board):
         """
         :type board: List[str]
@@ -35,10 +35,10 @@ class Solution(object):
             cols[0]__-3 o. cols[1]__-3 o. cols[2]__-3 o.\
             diag __ -3 o. antidiag __ -3
         __ (xwin a.. turns __ 0) o. (owin a.. turns __ 1):
-            r.. False
+            r.. F..
         r.. (turns__0 o. turns__1) a.. (n.. xwin o. n.. owin)
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["O  ", "   ", "   "],
             ["XOX", " X ", "   "],
@@ -48,7 +48,7 @@ class Solution(object):
             ["OXX", "XOX", "OXO"],
         ]
         ___ board __ testCases:
-            result = self.validTicTacToe(board)
+            result = validTicTacToe(board)
             print('result: %s' % result)
             print('-='*30+'-')
 

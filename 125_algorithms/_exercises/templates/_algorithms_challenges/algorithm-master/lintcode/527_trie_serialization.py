@@ -7,7 +7,7 @@ class TrieNode:
 """
 
 
-class Solution:
+c_ Solution:
 
     '''
     @param root: An object of TrieNode, denote the root of the trie.
@@ -33,8 +33,8 @@ class Solution:
         __ n.. root:
             r.. ''
         data = ''
-        ___ key, node __ root.children.items():
-            data += key + self.serialize(node)
+        ___ key, node __ root.children.i..:
+            data += key + serialize(node)
         r.. '<%s>' % data
 
     '''

@@ -19,7 +19,7 @@ All the heaters follow your radius standard and the warm radius will the same.
 _______ bisect
 
 
-class Solution:
+c_ Solution:
     ___ findRadius(self, houses, heaters):
         """
         check the responsibility

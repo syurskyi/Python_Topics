@@ -1,8 +1,8 @@
-class Matrix:
+c_ Matrix:
 
-    ___ __init__(self, inp):
-        self.rows = self.build_rows(inp)
-        self.columns = l..(map(l.., l..(z..(*self.rows))))
+    ___ - , inp):
+        rows = build_rows(inp)
+        columns = l..(map(l.., l..(z..(*rows))))
 
     @staticmethod
     ___ build_rows(inp):

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ smallestRangeI(self, A, K):
         """
         :type A: List[int]
@@ -33,14 +33,14 @@ class Solution(object):
             minVal = m..(minVal, num)
         r.. maxVal - minVal
 
-    ___ test(self):
+    ___ test
         testCases = [
             [[1], 0],
             [[0,10], 2],
             [[1,3,6], 3],
         ]
         ___ a, k __ testCases:
-            res = self.smallestRangeI(a, k)
+            res = smallestRangeI(a, k)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -9,13 +9,13 @@ __author__ = 'Danyang'
 
 
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
 
-class Solution(object):
+c_ Solution(object):
     ___ merge(self, itvls):
         """
         scanning. No algorithm

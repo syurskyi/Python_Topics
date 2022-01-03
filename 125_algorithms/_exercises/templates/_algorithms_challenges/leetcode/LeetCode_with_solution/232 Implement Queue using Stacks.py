@@ -15,40 +15,40 @@ You may assume that all operations are valid (for example, no pop or peek operat
 __author__ = 'Daniel'
 
 
-class Queue:
-    ___ __init__(self):
-        self.in_stk    # list
-        self.out_stk    # list
+c_ Queue:
+    ___ - ):
+        in_stk    # list
+        out_stk    # list
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: None
         """
-        self.in_stk.a..(x)
+        in_stk.a..(x)
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: None
         """
-        __ n.. self.out_stk:
-            w.... self.in_stk:
-                self.out_stk.a..(self.in_stk.pop())
+        __ n.. out_stk:
+            w.... in_stk:
+                out_stk.a..(in_stk.pop())
 
-        self.out_stk.pop()
+        out_stk.pop()
 
-    ___ peek(self):
+    ___ peek
         """
         :rtype: int
         """
-        __ n.. self.out_stk:
-            w.... self.in_stk:
-                self.out_stk.a..(self.in_stk.pop())
+        __ n.. out_stk:
+            w.... in_stk:
+                out_stk.a..(in_stk.pop())
 
-        r.. self.out_stk[-1]
+        r.. out_stk[-1]
 
-    ___ empty(self):
+    ___ empty
         """
         :rtype: bool
         """
-        r.. n.. self.out_stk a.. n.. self.in_stk
+        r.. n.. out_stk a.. n.. in_stk

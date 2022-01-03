@@ -28,6 +28,6 @@ ___ strip_range(start, end):
 
             ___ k __ r..(this_start, this_end):
                 output[k] = '.'
-            r.. ''.join(output)
+            r.. ''.j..(output)
         r.. wrapper_replace
     r.. decorator_replace

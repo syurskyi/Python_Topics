@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
   ___ isPalindrome(self, head):
     """
     :type head: ListNode
@@ -31,7 +31,7 @@ class Solution(object):
     p2 = newHead
     w.... p1 a.. p2:
       __ p1.val != p2.val:
-        r.. False
+        r.. F..
       p1 = p1.next
       p2 = p2.next
-    r.. True
+    r.. T..

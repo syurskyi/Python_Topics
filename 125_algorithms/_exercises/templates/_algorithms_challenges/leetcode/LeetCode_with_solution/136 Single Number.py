@@ -5,7 +5,7 @@ Note:
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ singleNumber(self, A):
         """
         Cannot use hash table since extra memory

@@ -19,7 +19,7 @@ Elements of the given array will be in the range [-10,000, 10,000].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findMaxAverage(self, nums: List[int], k: int) -> float:
         """
         two pointers

@@ -38,7 +38,7 @@ ____ typing _______ List
 _______ math
 
 
-class Solution:
+c_ Solution:
     ___ minimizeError(self, prices: List[s..], target: int) -> s..:
         """
         to determine possible, floor all or ceil all

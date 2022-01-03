@@ -1,14 +1,14 @@
-class RecordScore():
+c_ RecordScore():
     """Class to track a game's maximum score"""
 
-    ___ __init__(self):
-        self.high_score = float('-inf')
+    ___ - ):
+        high_score = float('-inf')
 
     ___ __call__(self, score):
-        self.score = score
-        __ self.score > self.high_score:
-            self.high_score = self.score
-        r.. self.high_score
+        score = score
+        __ score > high_score:
+            high_score = score
+        r.. high_score
 
 
 record = RecordScore()

@@ -3,7 +3,7 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ reachableNodes(self, edges, M, N):
         """
         :type edges: List[List[int]]
@@ -18,7 +18,7 @@ class Solution(object):
             graph[edge[1]][edge[0]] = edge[2]
         res = 0
         h    # list
-        visited = [False]*N
+        visited = [F..]*N
         heapq.heappush(h, (-M, 0))
         w.... h:
             cur = heapq.heappop(h)
@@ -26,7 +26,7 @@ class Solution(object):
             move = -cur[0]
             __ visited[start]:
                 continue
-            visited[start] = True
+            visited[start] = T..
             res += 1
             ___ i __ r..(N):
                 __ graph[start][i] != -1:

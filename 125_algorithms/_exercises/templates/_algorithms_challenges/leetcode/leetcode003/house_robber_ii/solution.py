@@ -12,7 +12,7 @@ house, determine the maximum amount of money you can rob tonight without
 alerting the police.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ rob(self, nums):
         """
         :type nums: List[int]
@@ -23,7 +23,7 @@ class Solution(object):
             r.. 0
         ____ n __ 1:
             r.. nums[0]
-        r.. max(self.rob_aux(nums, 0), self.rob_aux(nums, 1))
+        r.. max(rob_aux(nums, 0), rob_aux(nums, 1))
 
     ___ rob_aux(self, nums, left):
         n = l..(nums) - 1

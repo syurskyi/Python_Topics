@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isIsomorphic(self, s, t):
     """
     :type s: str

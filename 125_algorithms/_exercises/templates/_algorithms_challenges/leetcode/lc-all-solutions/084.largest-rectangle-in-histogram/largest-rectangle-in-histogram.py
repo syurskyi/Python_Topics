@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ largestRectangleArea(self, height):
     """
     :type height: List[int]

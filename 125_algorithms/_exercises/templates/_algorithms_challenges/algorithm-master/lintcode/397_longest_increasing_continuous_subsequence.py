@@ -2,7 +2,7 @@
 DP + print path
 remove the single line comment to see the path in result
 """
-class Solution:
+c_ Solution:
     """
     @param: A: An array of Integer
     @return: an integer
@@ -11,9 +11,9 @@ class Solution:
         __ n.. A:
             r.. 0
 
-        size = self.get_lics_size(A)
+        size = get_lics_size(A)
         A.reverse()
-        _size = self.get_lics_size(A)
+        _size = get_lics_size(A)
 
         r.. max(size, _size)
 
@@ -50,7 +50,7 @@ class Solution:
 """
 Optimized
 """
-class Solution:
+c_ Solution:
     """
     @param: A: An array of Integer
     @return: an integer
@@ -59,9 +59,9 @@ class Solution:
         __ n.. A:
             r.. 0
 
-        size = self.get_lics_size(A)
+        size = get_lics_size(A)
         A.reverse()
-        _size = self.get_lics_size(A)
+        _size = get_lics_size(A)
 
         r.. max(size, _size)
 

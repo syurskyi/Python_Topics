@@ -30,7 +30,7 @@ Each element of A is an integer within the range [0, N-1].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ arrayNesting(self, nums: List[int]) -> int:
         """
         You can think of it as graph. If circle, then you can start with any
@@ -39,7 +39,7 @@ class Solution:
         visited = set()
         ret = 0
         ___ n __ nums:
-            count = self.dfs(nums, n, set(), visited)
+            count = dfs(nums, n, set(), visited)
             ret = max(ret, count)
 
         r.. ret
@@ -50,7 +50,7 @@ class Solution:
 
         visited.add(num)
         path.add(num)  # path is subset of visited
-        self.dfs(nums, nums[num], path, visited)
+        dfs(nums, nums[num], path, visited)
         r.. l..(path)
 
 

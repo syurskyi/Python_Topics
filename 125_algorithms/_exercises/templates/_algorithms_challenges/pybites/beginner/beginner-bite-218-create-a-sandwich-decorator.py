@@ -56,7 +56,7 @@ ___ sandwich_v2(func):
 
 @sandwich_v2
 ___ add_ingredients(ingredients):
-    print(' / '.join(ingredients))
+    print(' / '.j..(ingredients))
     r.. l..(ingredients)
 
 ingredients = ['bacon', 'lettuce', 'tomato']

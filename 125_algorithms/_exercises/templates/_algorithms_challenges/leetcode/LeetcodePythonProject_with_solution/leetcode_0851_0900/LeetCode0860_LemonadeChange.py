@@ -3,7 +3,7 @@ Created on Sep 15, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ lemonadeChange(self, bills):
         """
         :type bills: List[int]
@@ -19,7 +19,7 @@ class Solution(object):
                 __ hashmap[5] >= 1:
                     hashmap[5] -= 1
                 ____:
-                    r.. False
+                    r.. F..
             ____ b __ 20:
                 val = 20
                 __ hashmap[10] >= 1:
@@ -29,22 +29,22 @@ class Solution(object):
                     __ hashmap[5] >= 1:
                         hashmap[5] -= 1
                     ____:
-                        r.. False
+                        r.. F..
                 ____:
                     __ hashmap[5] >= 3:
                         hashmap[5] -= 3
                     ____:
-                        r.. False
+                        r.. F..
             hashmap[b] += 1
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             [5,5,5,10,20],
             [5, 5, 10, 10, 20],
         ]
         ___ bills __ testCases:
-            res = self.lemonadeChange(bills)
+            res = lemonadeChange(bills)
             print('res: %s' % res)
             print('-='*30+'-')
 

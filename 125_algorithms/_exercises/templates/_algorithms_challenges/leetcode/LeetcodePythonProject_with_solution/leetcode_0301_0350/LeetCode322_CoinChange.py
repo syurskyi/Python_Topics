@@ -4,7 +4,7 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ coinChange(self, coins, amount):
         dp = [float('inf')]*(amount+1)
         dp[0] = 0
@@ -16,7 +16,7 @@ class Solution(object):
             r.. -1
         r.. dp[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 [1, 2, 5],
@@ -26,7 +26,7 @@ class Solution(object):
         ___ coins, amount __ testCases:
             print('coins: %s' % (coins))
             print('amount: %s' % (amount))
-            result = self.coinChange(coins, amount)
+            result = coinChange(coins, amount)
             print('result: %s' % (result))
 
 __ __name__ __ '__main__':

@@ -38,47 +38,47 @@ seat number p.
 _______ bisect
 
 
-class ExamRoom:
-    ___ __init__(self, N: int):
+c_ ExamRoom:
+    ___ - , N: int):
         """
         Maintain a sorted array of index. BST
         BST -> bisect sort
         O(N) per query
         """
-        self.N = N
-        self.idxes    # list  # sorted arry of taken idx
+        N = N
+        idxes    # list  # sorted arry of taken idx
 
     ___ seat(self) -> int:
         """
         similar to 849
         """
-        __ n.. self.idxes:
+        __ n.. idxes:
             ret_idx = 0
         ____:
             max_dist, ret_idx = 0, 0
             # begin
-            dist = self.idxes[0] - 0
+            dist = idxes[0] - 0
             __ dist > max_dist:
                 max_dist = dist
                 ret_idx = 0
             # middle
-            ___ j __ r..(l..(self.idxes)-1):
-                i = (self.idxes[j] + self.idxes[j+1]) // 2
-                dist = m..(abs(self.idxes[j] - i), abs(self.idxes[j+1] - i))
+            ___ j __ r..(l..(idxes)-1):
+                i = (idxes[j] + idxes[j+1]) // 2
+                dist = m..(abs(idxes[j] - i), abs(idxes[j+1] - i))
                 __ dist > max_dist:
                     max_dist = dist
                     ret_idx = i
             # end
-            dist = self.N-1 - self.idxes[-1]
+            dist = N-1 - idxes[-1]
             __ dist > max_dist:
                 max_dist = dist
-                ret_idx = self.N-1
+                ret_idx = N-1
 
-        bisect.insort(self.idxes, ret_idx)
+        bisect.insort(idxes, ret_idx)
         r.. ret_idx
 
     ___ leave(self, p: int) -> N..
-        self.idxes.remove(p)
+        idxes.remove(p)
 
 
 # Your ExamRoom object will be instantiated and called as such:

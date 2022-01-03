@@ -3,7 +3,7 @@ Created on May 17, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ reverseWords(self, s):
         """
         :type str: List[str]
@@ -13,11 +13,11 @@ class Solution(object):
         i = 0
         w.... i < l..(s):
             __ s[i] __ ' ':
-                self.reverse(s, left, i-1)
+                reverse(s, left, i-1)
                 left = i+1
             i += 1
-        self.reverse(s, left, l..(s)-1)
-        self.reverse(s, 0, l..(s)-1)
+        reverse(s, left, l..(s)-1)
+        reverse(s, 0, l..(s)-1)
     
     ___ reverse(self, s, i, j):
         w.... i < j:

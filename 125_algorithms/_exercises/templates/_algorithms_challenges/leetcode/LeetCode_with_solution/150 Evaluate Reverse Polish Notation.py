@@ -1,7 +1,7 @@
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ evalRPN(self, tokens):
         """
         stack

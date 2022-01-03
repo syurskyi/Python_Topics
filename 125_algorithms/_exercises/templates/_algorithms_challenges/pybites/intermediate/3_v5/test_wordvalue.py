@@ -9,7 +9,7 @@ ___ test_load_words():
     ... l..(words) __ 235886
     ... words[0] __ 'A'
     ... words[-1] __ 'Zyzzogeton'
-    ... ' ' n.. __ ''.join(words)
+    ... ' ' n.. __ ''.j..(words)
 
 
 ___ test_calc_word_value():

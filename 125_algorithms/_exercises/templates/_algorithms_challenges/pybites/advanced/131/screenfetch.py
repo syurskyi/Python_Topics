@@ -1,4 +1,4 @@
-_______ re
+_______ __
 output = """
                                        mohh@SERENiTY
  MMMMMMMMMMMMMMMMMMMMMMMMMmds+.        OS: Mint 19 tara
@@ -24,16 +24,16 @@ ___ sysinfo_scrape(output):
     """Scrapes the output from screenfetch and returns a dictionary"""
     
 
-    mapping = {}
+    mapping    # dict
     
     lines = output.splitlines()
 
-    name = re.search(r'\S+$',lines[1]).group()
+    name = __.s..(r'\S+$',lines[1]).group()
     mapping['Name'] = name
     ___ i __ r..(2,l..(lines)):
         line = lines[i]
 
-        result = re.search(r'(\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
+        result = __.s..(r'(\S+\s{0,1}\S+):(?!.*:)\s(.+)$',line)
 
         __ result:
             key = result.group(1)

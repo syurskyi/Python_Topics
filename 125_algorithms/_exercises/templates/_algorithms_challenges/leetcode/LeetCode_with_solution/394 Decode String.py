@@ -18,7 +18,7 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ decodeString(self, s):
         """
         :type s: str
@@ -41,14 +41,14 @@ class Solution(object):
                 i += 1
             ____ s[i] __ ']':  # pop
                 cnt, partial = stk.pop()
-                partial = ''.join(partial) * cnt
+                partial = ''.j..(partial) * cnt
                 stk[-1][1].a..(partial)
                 i += 1
 
-        r.. ''.join(stk.pop()[1])
+        r.. ''.j..(stk.pop()[1])
 
 
-class SolutionVerbose(object):
+c_ SolutionVerbose(object):
     ___ decodeString(self, s):
         """
         :type s: str
@@ -73,7 +73,7 @@ class SolutionVerbose(object):
                 i += 1
             ____ s[i] __ ']':  # pop
                 cnt, partial = stk.pop()
-                partial = ''.join(partial) * cnt
+                partial = ''.j..(partial) * cnt
                 __ n.. stk:
                    ret.a..(partial)
                 ____:
@@ -81,10 +81,10 @@ class SolutionVerbose(object):
 
                 i += 1
 
-        r.. ''.join(ret)
+        r.. ''.j..(ret)
 
 
-class SolutionError(object):
+c_ SolutionError(object):
     ___ decodeString(self, s):
         """
         :type s: str
@@ -108,7 +108,7 @@ class SolutionError(object):
                 stk.pop()
                 i += 1
 
-        r.. ''.join(ret)
+        r.. ''.j..(ret)
 
 
 __ __name__ __ "__main__":

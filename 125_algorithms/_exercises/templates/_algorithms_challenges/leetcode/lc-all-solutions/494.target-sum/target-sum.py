@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findTargetSumWays(self, nums, S, visited={}, index=0):
     """
     :type nums: List[int]

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ calculate(self, s):
         """
         :type s: str
@@ -7,17 +7,17 @@ class Solution:
         __ n.. s:
             r.. 0
 
-        self.OP = {
+        OP = {
             '+': l.... a, b: a + b,
             '-': l.... a, b: a - b,
         }
 
-        s = self.to_rpn(s)
+        s = to_rpn(s)
 
         __ n.. s:
             r.. 0
 
-        r.. self.eval_rpn(s)
+        r.. eval_rpn(s)
 
     ___ to_rpn(self, s):
         stack, res    # list, []
@@ -29,8 +29,8 @@ class Solution:
                 res[-1] += char
             ____ char.isdigit():
                 res.a..(char)
-            ____ char __ self.OP:
-                w.... stack a.. stack[-1] __ self.OP:
+            ____ char __ OP:
+                w.... stack a.. stack[-1] __ OP:
                     res.a..(stack.pop())
                 stack.a..(char)
             ____ char __ '(':
@@ -51,15 +51,15 @@ class Solution:
         ___ char __ s:
             __ char.isdigit():
                 stack.a..(int(char))
-            ____ char __ self.OP:
+            ____ char __ OP:
                 b = stack.pop()
                 a = stack.pop()
-                stack.a..(self.OP[char](a, b))
+                stack.a..(OP[char](a, b))
 
         r.. stack[0]
 
 
-class Solution:
+c_ Solution:
     ___ calculate(self, s):
         """
         :type s: str
@@ -68,12 +68,12 @@ class Solution:
         __ n.. s:
             r.. 0
 
-        s = self.to_rpn(s)
+        s = to_rpn(s)
 
         __ n.. s:
             r.. 0
 
-        r.. self.eval_rpn(s)
+        r.. eval_rpn(s)
 
     ___ to_rpn(self, s):
         stack, res    # list, []

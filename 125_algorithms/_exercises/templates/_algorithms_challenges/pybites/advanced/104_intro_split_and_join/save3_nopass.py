@@ -9,6 +9,6 @@ ___ split_in_columns(message = message):
        (pipe), return the obtained output string"""
     x = (message.s..("\n"))
     s = "|"
-    print(s.join(x))
+    print(s.j..(x))
     #    return message.join("|")
     pass

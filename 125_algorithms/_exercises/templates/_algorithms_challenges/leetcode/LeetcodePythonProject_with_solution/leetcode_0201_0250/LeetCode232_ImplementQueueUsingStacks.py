@@ -3,32 +3,32 @@ Created on Feb 23, 2017
 
 @author: MT
 '''
-class Queue(object):
-    ___ __init__(self):
-        self.stack1    # list
-        self.stack2    # list
+c_ Queue(object):
+    ___ - ):
+        stack1    # list
+        stack2    # list
     
     ___ push(self, x):
-        __ self.empty():
-            self.stack1.a..(x)
-        ____ self.stack1:
-            self.stack1.a..(x)
+        __ empty():
+            stack1.a..(x)
+        ____ stack1:
+            stack1.a..(x)
         ____:
-            w.... self.stack2:
-                self.stack1.a..(self.stack2.pop())
-            self.stack1.a..(x)
+            w.... stack2:
+                stack1.a..(stack2.pop())
+            stack1.a..(x)
     
-    ___ pop(self):
-        __ self.stack1:
-            w.... self.stack1:
-                self.stack2.a..(self.stack1.pop())
-        r.. self.stack2.pop()
+    ___ pop
+        __ stack1:
+            w.... stack1:
+                stack2.a..(stack1.pop())
+        r.. stack2.pop()
     
-    ___ peep(self):
-        __ self.stack1:
-            w.... self.stack1:
-                self.stack2.a..(self.stack1.pop())
-        r.. self.stack2[-1]
+    ___ peep
+        __ stack1:
+            w.... stack1:
+                stack2.a..(stack1.pop())
+        r.. stack2[-1]
     
-    ___ empty(self):
-        r.. n.. self.stack1 a.. n.. self.stack2
+    ___ empty
+        r.. n.. stack1 a.. n.. stack2

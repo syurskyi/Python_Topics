@@ -12,7 +12,7 @@ ___ knows(a, b):
     """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findCelebrity(self, n):
         """
         :type n: int

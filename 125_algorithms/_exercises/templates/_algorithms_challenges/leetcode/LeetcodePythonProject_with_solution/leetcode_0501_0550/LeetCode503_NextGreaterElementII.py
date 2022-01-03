@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ nextGreaterElements(self, nums):
         """
         :type nums: List[int]
@@ -23,14 +23,14 @@ class Solution(object):
             stack.a..(i)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             [1, 2, 1],
             [1, 6, 2, 7, 4, 5],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.nextGreaterElements(nums)
+            result = nextGreaterElements(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

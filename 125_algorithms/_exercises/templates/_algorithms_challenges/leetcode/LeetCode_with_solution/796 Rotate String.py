@@ -20,22 +20,22 @@ A and B will have length at most 100.
 """
 
 
-class Solution:
+c_ Solution:
     ___ rotateString(self, A: s.., B: s..) -> bool:
         """
         brute force O(n^2), shift and compare but short circuit
         """
         __ l..(A) != l..(B):
-            r.. False
+            r.. F..
 
         __ n.. A a.. n.. B:
-            r.. True
+            r.. T..
 
         ___ i __ r..(1, l..(A)):
             ___ j __ r..(l..(B)):
                 __ A[(i + j) % l..(A)] != B[j]:
                     break
             ____:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

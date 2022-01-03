@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findMaxAverage(self, nums, k):
     """
     :type nums: List[int]

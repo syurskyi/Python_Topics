@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @return a list of integers
     ___ grayCode(self, n):
         m = 1 << n

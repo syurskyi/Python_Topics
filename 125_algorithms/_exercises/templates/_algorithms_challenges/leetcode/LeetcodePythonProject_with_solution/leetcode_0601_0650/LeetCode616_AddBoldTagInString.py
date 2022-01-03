@@ -3,7 +3,7 @@ Created on Sep 7, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ addBoldTag(self, s, d..):
         """
         :type s: str
@@ -14,7 +14,7 @@ class Solution(object):
         n = l..(s)
         res = ''
         maxLen = -1
-        started = False
+        started = F..
         ___ i __ r..(n):
             ___ word __ d..:
                 __ i+l..(word) <= n a.. s[i:i+l..(word)] __ word:
@@ -22,17 +22,17 @@ class Solution(object):
                     break
             __ maxLen > i a.. n.. started:
                 res += '<b>'+s[i]
-                started = True
+                started = T..
             ____ maxLen __ i:
                 res += '</b>'+s[i]
-                started = False
+                started = F..
             ____:
                 res += s[i]
         __ maxLen __ l..(s):
             res += '</b>'
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'abcxyz123',
@@ -50,7 +50,7 @@ class Solution(object):
         ___ s, d __ testCases:
             print('s: %s' % s)
             print('d: %s' % d)
-            result = self.addBoldTag(s, d)
+            result = addBoldTag(s, d)
             print('result: %s' % result)
             print('-='*30+'-')
 

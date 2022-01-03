@@ -22,13 +22,13 @@ n is a non-negative integer which won't exceed the input array size.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         """
         greedy
         """
         __ n __ 0:
-            r.. True
+            r.. T..
 
         ___ i __ r..(l..(flowerbed)):
             __ (
@@ -39,6 +39,6 @@ class Solution:
                 n -= 1
                 flowerbed[i] = 1
                 __ n __ 0:
-                    r.. True
+                    r.. T..
 
-        r.. False
+        r.. F..

@@ -42,7 +42,7 @@ ___ _parse_date(date_string: s..) -> date:
 
 
 ___ _date_conv(data: d..):
-    r.. {_parse_date(k): v ___ k, v __ data.items()}
+    r.. {_parse_date(k): v ___ k, v __ data.i..}
 
 
 ___ match_daily_rates(start: date,
@@ -60,7 +60,7 @@ ___ match_daily_rates(start: date,
         raise ValueError('Date out of range')
 
     days = get_all_days(start, end)
-    result = {}
+    result    # dict
     ___ day __ days:
         __ day __ data_days:
             match = day
@@ -83,8 +83,8 @@ ___ exchange_rates(
     __ start_date < m..(daily_rates.keys()) o. end_date > max(daily_rates.keys()):
         raise ValueError('Date out of range for data')
     matches = match_daily_rates(start_date, end_date, daily_rates)
-    result = {}
-    ___ day, match __ matches.items():
+    result    # dict
+    ___ day, match __ matches.i..:
         result[day] = {"Base Date": match, **daily_rates[match]}
 
     r.. result

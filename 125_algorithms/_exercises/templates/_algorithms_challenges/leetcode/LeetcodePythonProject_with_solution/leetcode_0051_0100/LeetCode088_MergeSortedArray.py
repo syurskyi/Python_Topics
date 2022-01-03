@@ -3,7 +3,7 @@ Created on May 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ merge(self, nums1, m, nums2, n):
         """
         :type nums1: List[int]

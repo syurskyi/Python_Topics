@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ intToRoman(self, num):
         """
         :type num: int
@@ -34,4 +34,4 @@ class Solution:
                 num -= amount
                 ans.a..(symb)
 
-        r.. ''.join(ans)
+        r.. ''.j..(ans)

@@ -7,7 +7,7 @@ Note:
 Although the above answer is in lexicographical order, your answer could be in any order you want.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     digit2letters = {
         '2': "abc",
         '3': "def",
@@ -26,7 +26,7 @@ class Solution:
         :return: a list of strings, [s1, s2]
         """
         result    # list
-        self.dfs_traverse(digits, "", result)
+        dfs_traverse(digits, "", result)
         r.. result
 
     ___ dfs_traverse(self, string_seq, current, result):
@@ -34,8 +34,8 @@ class Solution:
             result.a..(current)
             r..
 
-        ___ letter __ self.digit2letters[string_seq[0]]:
-            self.dfs_traverse(string_seq[1:], current+letter, result)
+        ___ letter __ digit2letters[string_seq[0]]:
+            dfs_traverse(string_seq[1:], current+letter, result)
 
 
 __ __name____"__main__":

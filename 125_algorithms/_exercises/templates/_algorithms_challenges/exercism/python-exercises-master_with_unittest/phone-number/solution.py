@@ -1,29 +1,29 @@
-_______ re
+_______ __
 
 
-class Phone(object):
-    ___ __init__(self, number):
-        self.number = self._clean(number)
+c_ Phone(object):
+    ___ - , number):
+        number = _clean(number)
 
-    ___ area_code(self):
-        r.. self.number[:3]
+    ___ area_code
+        r.. number[:3]
 
-    ___ exchange_code(self):
-        r.. self.number[3:6]
+    ___ exchange_code
+        r.. number[3:6]
 
-    ___ subscriber_number(self):
-        r.. self.number[-4:]
+    ___ subscriber_number
+        r.. number[-4:]
 
-    ___ pretty(self):
+    ___ pretty
         r.. "(%s) %s-%s" % (
-            self.area_code(),
-            self.exchange_code(),
-            self.subscriber_number()
+            area_code(),
+            exchange_code(),
+            subscriber_number()
         )
 
     ___ _clean(self, number):
-        r.. self._normalize(
-            re.sub(r'[^\d]', '', number)
+        r.. _normalize(
+            __.sub(r'[^\d]', '', number)
         )
 
     ___ _normalize(self, number):

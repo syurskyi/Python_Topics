@@ -1,2 +1,2 @@
 ___ reverse(input=''):
-    r.. ''.join(reversed(input))
+    r.. ''.j..(reversed(input))

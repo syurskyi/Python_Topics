@@ -17,7 +17,7 @@ Note:
 Your solution should be in logarithmic complexity.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ findPeakElement(self, nums):
         """
         :type nums: List[int]

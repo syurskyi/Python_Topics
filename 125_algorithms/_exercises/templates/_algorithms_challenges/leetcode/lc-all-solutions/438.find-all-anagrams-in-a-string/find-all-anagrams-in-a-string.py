@@ -1,7 +1,7 @@
 ____ collections _______ Counter
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findAnagrams(self, s, p):
     """
     :type s: str

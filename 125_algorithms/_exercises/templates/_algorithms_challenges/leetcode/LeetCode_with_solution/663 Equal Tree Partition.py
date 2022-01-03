@@ -4,45 +4,45 @@ premium question
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.sums    # list
+c_ Solution:
+    ___ - ):
+        sums    # list
 
     ___ checkEqualTree(self, root: TreeNode) -> bool:
         """
         To save 2nd pass, store sums
         space: O(N)
         """
-        self.dfs(root)
-        total = self.sums.pop()
-        r.. total % 2 __ 0 a.. total // 2 __ self.sums
+        dfs(root)
+        total = sums.pop()
+        r.. total % 2 __ 0 a.. total // 2 __ sums
 
     ___ dfs(self, node):
         __ n.. node:
             r.. 0
 
-        l = self.dfs(node.left)
-        r = self.dfs(node.right)
+        l = dfs(node.left)
+        r = dfs(node.right)
         s = l + r + node.val
-        self.sums.a..(s)
+        sums.a..(s)
         r.. s
 
 
-class Solution:
-    ___ __init__(self):
+c_ Solution:
+    ___ - ):
         """
         Save space, two passes
         """
-        self.exists = False
-        self.root = N..  # need to handle 0
-        self.total_sum = N..
+        exists = F..
+        root = N..  # need to handle 0
+        total_sum = N..
 
     ___ checkEqualTree(self, root: TreeNode) -> bool:
         """
@@ -54,19 +54,19 @@ class Solution:
         To save 2nd pass, store sums
         space: O(N)
         """
-        self.root = root
-        self.total_sum = self.dfs(root)
-        self.dfs(root)
-        r.. self.exists
+        root = root
+        total_sum = dfs(root)
+        dfs(root)
+        r.. exists
 
     ___ dfs(self, node):
         __ n.. node:
             r.. 0
 
-        l = self.dfs(node.left)
-        r = self.dfs(node.right)
+        l = dfs(node.left)
+        r = dfs(node.right)
         s = l + r + node.val
-        __ node != self.root a.. self.total_sum != N.. a.. self.total_sum __ s * 2:
-            self.exists = True
+        __ node != root a.. total_sum != N.. a.. total_sum __ s * 2:
+            exists = T..
 
         r.. s

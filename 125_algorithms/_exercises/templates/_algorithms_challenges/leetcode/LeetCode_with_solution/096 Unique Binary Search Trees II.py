@@ -15,16 +15,16 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.cache = {}
+c_ Solution(object):
+    ___ - ):
+        cache    # dict
 
     ___ generateTrees(self, n):
         """
@@ -36,19 +36,19 @@ class Solution(object):
         __ n __ 0:
             r.. [N..]
 
-        r.. self.generate_cache(1, n)
+        r.. generate_cache(1, n)
 
     ___ generate_cache(self, start, end):
         """80ms"""
-        __ (start, end) n.. __ self.cache:
+        __ (start, end) n.. __ cache:
             roots    # list
             __ start > end:
                 roots.a..(N..)
                 r.. roots
 
             ___ pivot __ r..(start, end+1):
-                left_roots = self.generate_cache(start, pivot-1)
-                right_roots = self.generate_cache(pivot+1, end)
+                left_roots = generate_cache(start, pivot-1)
+                right_roots = generate_cache(pivot+1, end)
                 ___ left_root __ left_roots:
                     ___ right_root __ right_roots:
                         root = TreeNode(pivot)
@@ -57,9 +57,9 @@ class Solution(object):
 
                         roots.a..(root)
 
-            self.cache[(start, end)] = roots
+            cache[(start, end)] = roots
 
-        r.. self.cache[(start, end)]
+        r.. cache[(start, end)]
 
     ___ generate(self, start, end):
         """
@@ -82,8 +82,8 @@ class Solution(object):
         # pivot
         # list of unique subtrees = list of unique left subtrees, pivot, list of unique right subtrees
         ___ pivot __ r..(start, end+1):
-            left_subtree_roots = self.generate(start, pivot-1)
-            right_subtree_roots = self.generate(pivot+1, end)
+            left_subtree_roots = generate(start, pivot-1)
+            right_subtree_roots = generate(pivot+1, end)
 
             ___ left_node __ left_subtree_roots:
                 ___ right_node __ right_subtree_roots:

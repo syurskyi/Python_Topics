@@ -14,25 +14,25 @@ For the purpose of this problem, we define empty string as valid palindrome.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isPalindrome(self, s):
         """
         :type s: str
         :rtype: bool
         """
         __ n.. s:
-            r.. True
+            r.. T..
         left = 0
         right = l..(s) - 1
         w.... left < right:
-            __ s[left].isalnum() a.. s[right].isalnum():
-                __ s[left].lower() != s[right].lower():
-                    r.. False
+            __ s[left].isalnum() a.. s[right].i..
+                __ s[left].l.. != s[right].l..:
+                    r.. F..
                 left += 1
                 right -= 1
             ____:
-                __ n.. s[left].isalnum():
+                __ n.. s[left].i..
                     left += 1
-                __ n.. s[right].isalnum():
+                __ n.. s[right].i..
                     right -= 1
-        r.. True
+        r.. T..

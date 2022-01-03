@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ wordPatternMatch(self, pattern, s..):
     """
     :type pattern: str
@@ -8,17 +8,17 @@ class Solution(object):
 
     ___ dfs(p, s, pathp, paths, visited):
       __ l..(p) __ l..(s) __ 0:
-        r.. True
+        r.. T..
       __ l..(p) __ 0 o. l..(p) > l..(s):
-        r.. False
+        r.. F..
       ___ i __ r..(0, l..(s)):
         pathp.a..(p[0])
         paths.a..(s[:i + 1])
         __ l..(pathp) __ l..(paths) a.. l..(set(paths)) __ l..(set(pathp)) __ l..(set(z..(paths, pathp))):
           __ dfs(p[1:], s[i + 1:], pathp, paths, visited):
-            r.. True
+            r.. T..
         pathp.pop()
         paths.pop()
-      r.. False
+      r.. F..
 
     r.. dfs(pattern, s.., [], [], {})

@@ -14,7 +14,7 @@ Could you solve it using only O(1) extra space?
 """
 
 
-class Solution:
+c_ Solution:
     ___ compress(self, chars):
         """
         tedious pointer manipulation

@@ -3,7 +3,7 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ xorGame(self, nums):
         """
         :type nums: List[int]
@@ -18,20 +18,20 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        mem = {}
-        r.. self.helper(nums, mem)
+        mem    # dict
+        r.. helper(nums, mem)
     
     ___ helper(self, nums, mem):
         s = s..(nums)
         __ s __ mem:
             r.. mem[s]
-        __ self.calc(nums) __ 0:
-            mem[s] = True
-            r.. True
-        flag = False
+        __ calc(nums) __ 0:
+            mem[s] = T..
+            r.. T..
+        flag = F..
         ___ i __ r..(l..(nums)):
-            __ n.. self.helper(nums[:i]+nums[i+1:], mem):
-                flag = True
+            __ n.. helper(nums[:i]+nums[i+1:], mem):
+                flag = T..
                 break
         mem[s] = flag
         r.. flag
@@ -42,14 +42,14 @@ class Solution(object):
             res ^= num
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             [1, 1, 2],
             [1, 1, 2, 3], # True
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.xorGame(nums)
+            result = xorGame(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

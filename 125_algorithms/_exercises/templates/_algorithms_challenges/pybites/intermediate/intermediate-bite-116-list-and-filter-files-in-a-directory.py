@@ -23,9 +23,9 @@ ___ get_files_implementation_1(dirname, size_in_kb):
 
     # os.listdir return both directories and files, so it has to be filtered
     # list comprehension
-    files = [f ___ f __ os.listdir(dirname) __ os.path.isfile(os.path.join(dirname, f))]
+    files = [f ___ f __ os.listdir(dirname) __ os.path.isfile(os.path.j..(dirname, f))]
     # list comprehension
-    files_over_limit = [f ___ f __ files __ (os.path.getsize(os.path.join(dirname,f))) / ONE_KB >= size_in_kb]
+    files_over_limit = [f ___ f __ files __ (os.path.getsize(os.path.j..(dirname,f))) / ONE_KB >= size_in_kb]
 
     r.. files_over_limit
 

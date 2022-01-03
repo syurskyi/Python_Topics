@@ -4,7 +4,7 @@ Created on Jan 25, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ largestRectangleArea(self, heights):
         """
         :type heights: List[int]
@@ -29,14 +29,14 @@ class Solution(object):
             area = max(area, w*h)
         r.. area
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             [2,1,5,6,2,3],
             [10, 11, 12, 15],
         ]
         ___ heights __ testCases:
             print('heights: %s' % (heights))
-            result = self.largestRectangleArea(heights)
+            result = largestRectangleArea(heights)
             print('result: %s' % (result))
             print('-='*15+'-')
 

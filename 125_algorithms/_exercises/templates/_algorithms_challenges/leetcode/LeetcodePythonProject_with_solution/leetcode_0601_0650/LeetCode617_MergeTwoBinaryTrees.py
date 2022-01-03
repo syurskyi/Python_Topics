@@ -4,13 +4,13 @@ Created on Sep 7, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ mergeTrees(self, t1, t2):
         """
         :type t1: TreeNode
@@ -20,21 +20,21 @@ class Solution(object):
         root = TreeNode(-1)
         __ t1 a.. n.. t2:
             root.val = t1.val
-            root.left = self.mergeTrees(t1.left, t2)
-            root.right = self.mergeTrees(t1.right, t2)
+            root.left = mergeTrees(t1.left, t2)
+            root.right = mergeTrees(t1.right, t2)
         ____ n.. t1 a.. t2:
             root.val = t2.val
-            root.left = self.mergeTrees(t1, t2.left)
-            root.right = self.mergeTrees(t1, t2.right)
+            root.left = mergeTrees(t1, t2.left)
+            root.right = mergeTrees(t1, t2.right)
         ____ t1 a.. t2:
             root.val = t1.val + t2.val
-            root.left = self.mergeTrees(t1.left, t2.left)
-            root.right = self.mergeTrees(t1.right, t2.right)
+            root.left = mergeTrees(t1.left, t2.left)
+            root.right = mergeTrees(t1.right, t2.right)
         ____:
             root = N..
         r.. root
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 TreeNode(1, TreeNode(3, TreeNode(5)), TreeNode(2)),
@@ -42,7 +42,7 @@ class Solution(object):
             ],
         ]
         ___ t1, t2 __ testCases:
-            root = self.mergeTrees(t1, t2)
+            root = mergeTrees(t1, t2)
             print(root.val)
 
 __ __name__ __ '__main__':

@@ -14,7 +14,7 @@ True
 """
 
 
-class Solution:
+c_ Solution:
     """
     Union Find
     """
@@ -32,20 +32,20 @@ class Solution:
         ans = n
 
         ___ a, b __ edges:
-            __ self.union(nodes, a, b):
+            __ union(nodes, a, b):
                 ans -= 1
 
         r.. ans
 
     ___ union(self, nodes, a, b):
-        _a = self.find(nodes, a)
-        _b = self.find(nodes, b)
+        _a = find(nodes, a)
+        _b = find(nodes, b)
 
         __ _a __ _b:
-            r.. False
+            r.. F..
 
         nodes[_b] = _a
-        r.. True
+        r.. T..
 
     ___ find(self, nodes, a):
         __ a n.. __ nodes:
@@ -54,11 +54,11 @@ class Solution:
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] = self.find(nodes[a])
+        nodes[a] = find(nodes[a])
         r.. nodes[a]
 
 
-class Solution2:
+c_ Solution2:
     """
     DFS
     """
@@ -73,7 +73,7 @@ class Solution2:
         __ n.. n o. n.. edges:
             r.. ans
 
-        adj = {}
+        adj    # dict
 
         ___ i __ r..(n):
             adj[i] = set()
@@ -89,7 +89,7 @@ class Solution2:
                 continue
 
             ans += 1
-            self.dfs(i, adj, visited)
+            dfs(i, adj, visited)
 
         r.. ans
 
@@ -103,4 +103,4 @@ class Solution2:
             __ b __ visited:
                 continue
 
-            self.dfs(b, adj, visited)
+            dfs(b, adj, visited)

@@ -6,7 +6,7 @@ is "b", with the length of 1.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ lengthOfLongestSubstring(self, s):
         """
         Algorithm: Hash Map, two pointers

@@ -8,7 +8,7 @@ class Point:
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     """
     max heap
     """
@@ -25,7 +25,7 @@ class Solution:
             r.. ans
 
         ___ i __ r..(l..(points)):
-            distance = self.get_distance(origin, points[i])
+            distance = get_distance(origin, points[i])
             heapq.heappush(ans, (-distance, i))
 
             __ l..(ans) > k:
@@ -44,7 +44,7 @@ class Solution:
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     """
     min heap
     """
@@ -63,7 +63,7 @@ class Solution:
         heap    # list
 
         ___ i __ r..(l..(points)):
-            distance = self.get_distance(origin, points[i])
+            distance = get_distance(origin, points[i])
             heapq.heappush(heap, (distance, i))
 
         ___ _ __ r..(k):

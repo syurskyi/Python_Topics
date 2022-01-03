@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ judgeSquareSum(self, c):
     """
     :type c: int
@@ -10,9 +10,9 @@ class Solution(object):
     w.... start <= end:
       mid = start ** 2 + end ** 2
       __ mid __ c:
-        r.. True
+        r.. T..
       ____ mid < c:
         start += 1
       ____:
         end -= 1
-    r.. False
+    r.. F..

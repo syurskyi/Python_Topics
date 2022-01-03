@@ -3,7 +3,7 @@ Created on Sep 17, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ shortestSubarray(self, A, K):
         """
         :type A: List[int]
@@ -25,7 +25,7 @@ class Solution(object):
             d.a..(i)
         r.. res __ res <= n ____ -1
     
-    ___ test(self):
+    ___ test
         testCase = [
             [
                 [56,-21,56,35,-9],
@@ -57,7 +57,7 @@ class Solution(object):
 #             ],
         ]
         ___ a, k __ testCase:
-            res = self.shortestSubarray(a, k)
+            res = shortestSubarray(a, k)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -8,7 +8,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ generatePalindromes(self, s):
         """
         :type s: str
@@ -19,7 +19,7 @@ class Solution(object):
             m[c] += 1
 
         odd = N..
-        ___ k, v __ m.items():
+        ___ k, v __ m.i..:
             __ v % 2 __ 1:
                 __ odd __ n.. N..
                     r.. []
@@ -32,7 +32,7 @@ class Solution(object):
 
         ret    # list
         # actually only need to build half
-        self.grow(s, m, N.., cur, ret)
+        grow(s, m, N.., cur, ret)
         r.. ret
 
     ___ grow(self, s, count_map, pi, cur, ret):
@@ -40,11 +40,11 @@ class Solution(object):
             ret.a..(cur)
             r..
 
-        ___ k __ count_map.keys():
+        ___ k __ count_map.k..:
             __ k != pi a.. count_map[k] > 0:
                 ___ i __ xrange(1, count_map[k]/2+1):  # jump the parent
                     count_map[k] -= i*2
-                    self.grow(s, count_map, k, k*i+cur+k*i, ret)
+                    grow(s, count_map, k, k*i+cur+k*i, ret)
                     count_map[k] += i*2
 
 

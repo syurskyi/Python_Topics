@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: the root of binary tree
     @param: target: An integer
@@ -15,7 +15,7 @@ class Solution:
     """
     ___ binaryTreePathSum2(self, root, target):
         ans    # list
-        self.dfs(root, target, ans, [])
+        dfs(root, target, ans, [])
         r.. ans
 
     ___ dfs(self, node, target, ans, path):
@@ -30,7 +30,7 @@ class Solution:
             __ remaining __ 0:
                 ans.a..(path[i:])
 
-        self.dfs(node.left, target, ans, path)
-        self.dfs(node.right, target, ans, path)
+        dfs(node.left, target, ans, path)
+        dfs(node.right, target, ans, path)
 
         path.pop()

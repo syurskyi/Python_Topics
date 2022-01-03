@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ killProcess(self, pid, ppid, kill):
     """
     :type pid: List[int]
@@ -8,7 +8,7 @@ class Solution(object):
     """
     n = l..(pid)
 
-    mpppid = {}
+    mpppid    # dict
 
     ___ i __ r..(n):
       __ mpppid.has_key(ppid[i]):

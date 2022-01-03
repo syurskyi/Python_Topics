@@ -4,14 +4,14 @@ Created on Sep 24, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ judgeSquareSum(self, c):
         """
         :type c: int
         :rtype: bool
         """
         _______ math
-        __ c < 0: r.. False
+        __ c < 0: r.. F..
         l, r = 0, int(math.sqrt(c))
         w.... l <= r:
             __ l*l + r*r < c:
@@ -19,10 +19,10 @@ class Solution(object):
             ____ l*l + r*r > c:
                 r -= 1
             ____:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             0,
             3,
@@ -31,7 +31,7 @@ class Solution(object):
         ]
         ___ c __ testCases:
             print(c)
-            result = self.judgeSquareSum(c)
+            result = judgeSquareSum(c)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -8,7 +8,7 @@ class ListNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: head: The first node of linked list.
     @return: The node where the cycle begins. if there is no cycle, return null

@@ -1,5 +1,5 @@
 ___ lessThanOrEqualToZero(num):
     __ num <= 0:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

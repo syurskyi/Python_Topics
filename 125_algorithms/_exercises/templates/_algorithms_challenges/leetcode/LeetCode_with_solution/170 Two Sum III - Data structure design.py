@@ -6,19 +6,19 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class TwoSum(object):
-    ___ __init__(self):
+c_ TwoSum(object):
+    ___ - ):
         """
         initialize your data structure here
         """
-        self.hash_map = defaultdict(int)
+        hash_map = defaultdict(int)
 
     ___ add(self, number):
         """
         Add the number to an internal data structure.
         :rtype: nothing
         """
-        self.hash_map[number] += 1
+        hash_map[number] += 1
 
     ___ find(self, value):
         """
@@ -27,8 +27,8 @@ class TwoSum(object):
         :rtype: bool
         """
         r.. any(
-            value-k __ self.hash_map a.. (value-k != k o. self.hash_map[k] > 1)
-            ___ k __ self.hash_map
+            value-k __ hash_map a.. (value-k != k o. hash_map[k] > 1)
+            ___ k __ hash_map
         )
 
     ___ find_TLE(self, value):
@@ -37,9 +37,9 @@ class TwoSum(object):
         :type value: int
         :rtype: bool
         """
-        ___ k __ self.hash_map.keys():
+        ___ k __ hash_map.k..:
             target = value - k
-            __ target __ self.hash_map a.. (target != k o. self.hash_map[target] > 1):
-                r.. True
+            __ target __ hash_map a.. (target != k o. hash_map[target] > 1):
+                r.. T..
 
-        r.. False
+        r.. F..

@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findWords(self, words):
         """
         :type words: List[str]
@@ -17,14 +17,14 @@ class Solution(object):
         result    # list
         ___ word __ words:
             ind = -1
-            valid = True
+            valid = T..
             ___ c __ word:
                 ___ i, set0 __ e..(sets):
-                    __ c.lower() __ set0:
+                    __ c.l.. __ set0:
                         __ ind __ -1:
                             ind = i
                         ____ i != ind:
-                            valid = False
+                            valid = F..
                         break
             __ valid:
                 result.a..(word)

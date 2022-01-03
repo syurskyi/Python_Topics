@@ -39,7 +39,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findMinHeightTrees(self, n, edges):
         """
         Longest path algorithm
@@ -57,8 +57,8 @@ class Solution(object):
             V[b].a..(a)
 
         # longest path algorithm
-        _, _, last = self.bfs(0, V)
-        level, pi, last = self.bfs(last, V)
+        _, _, last = bfs(0, V)
+        level, pi, last = bfs(last, V)
 
         ret    # list
         cur = last
@@ -73,7 +73,7 @@ class Solution(object):
 
     ___ bfs(self, s, V):
         # bfs
-        visited = [False ___ _ __ xrange(l..(V))]
+        visited = [F.. ___ _ __ xrange(l..(V))]
         pi = [-1 ___ _ __ xrange(l..(V))]
         last = s
         level = 0
@@ -84,7 +84,7 @@ class Solution(object):
             ___ i __ xrange(l):
                 cur = q[i]
                 last = cur
-                visited[cur] = True
+                visited[cur] = T..
                 ___ nbr __ V[cur]:
                     __ n.. visited[nbr]:
                         pi[nbr] = cur
@@ -96,7 +96,7 @@ class Solution(object):
         r.. level, pi, last
 
 
-class Solution_TLE(object):
+c_ Solution_TLE(object):
     ___ findMinHeightTrees_TLE(self, n, edges):
         """
         :type n: int
@@ -113,8 +113,8 @@ class Solution_TLE(object):
 
         ret    # list
         mini = n
-        ___ k __ V.keys():
-            l = self.bfs(k, V)
+        ___ k __ V.k..:
+            l = bfs(k, V)
             __ l < mini:
                 ret = [k]
                 mini = l
@@ -125,7 +125,7 @@ class Solution_TLE(object):
 
     ___ bfs(self, s, V):
         # bfs
-        visisted = [False ___ _ __ xrange(l..(V))]
+        visisted = [F.. ___ _ __ xrange(l..(V))]
         q    # list
         level = 0
         q.a..(s)
@@ -133,7 +133,7 @@ class Solution_TLE(object):
             l = l..(q)
             ___ i __ xrange(l):
                 cur = q[i]
-                visisted[cur] = True
+                visisted[cur] = T..
                 ___ nbr __ V[cur]:
                     __ n.. visisted[nbr]:
                         q.a..(nbr)
@@ -144,7 +144,7 @@ class Solution_TLE(object):
         r.. level
 
 
-class SolutionError(object):
+c_ SolutionError(object):
     ___ findMinHeightTrees(self, n, edges):
         """
         One pass
@@ -161,13 +161,13 @@ class SolutionError(object):
             V[b].a..(a)
 
         leaf = N..
-        ___ k, v __ V.items():
+        ___ k, v __ V.i..:
             __ l..(v) __ 1:
                 leaf = k
                 break
 
         # bfs
-        visisted = [False ___ _ __ xrange(n)]
+        visisted = [F.. ___ _ __ xrange(n)]
         h2v = defaultdict(l..)
         q    # list
         level = 0
@@ -177,7 +177,7 @@ class SolutionError(object):
             ___ i __ xrange(l):
                 cur = q[i]
                 h2v[level].a..(cur)
-                visisted[cur] = True
+                visisted[cur] = T..
                 ___ nbr __ V[cur]:
                     __ n.. visisted[nbr]:
                         q.a..(nbr)

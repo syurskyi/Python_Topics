@@ -24,12 +24,12 @@ nodes inside one path.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
         G = graph
         ret    # list
-        visited = [False ___ _ __ G]
-        self.dfs(G, 0, l..(G) - 1, [0], visited, ret)
+        visited = [F.. ___ _ __ G]
+        dfs(G, 0, l..(G) - 1, [0], visited, ret)
         r.. ret
 
     ___ dfs(self, G, cur, d, cur_path, visited, ret):
@@ -39,9 +39,9 @@ class Solution:
 
         ___ nbr __ G[cur]:
             __ n.. visited[nbr]:
-                visited[nbr] = True
+                visited[nbr] = T..
                 cur_path.a..(nbr)
                 # pre-check
-                self.dfs(G, nbr, d, cur_path, visited, ret)
+                dfs(G, nbr, d, cur_path, visited, ret)
                 cur_path.pop()
-                visited[nbr] = False
+                visited[nbr] = F..

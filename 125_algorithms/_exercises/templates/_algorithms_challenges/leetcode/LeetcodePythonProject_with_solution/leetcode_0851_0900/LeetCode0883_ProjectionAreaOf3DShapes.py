@@ -3,7 +3,7 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ projectionArea(self, grid):
         """
         :type grid: List[List[int]]
@@ -25,14 +25,14 @@ class Solution(object):
             res += maxNum
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[2]],
             [[1,0],[0,2]],
             [[1,1,1],[1,0,1],[1,1,1]],
         ]
         ___ grid __ testCases:
-            res = self.projectionArea(grid)
+            res = projectionArea(grid)
             print('res: %s' % res)
             print('-='*30+'-')
 

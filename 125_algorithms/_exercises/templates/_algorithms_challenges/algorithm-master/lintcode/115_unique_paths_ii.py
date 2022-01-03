@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: G: A list of lists of integers
     @return: An integer

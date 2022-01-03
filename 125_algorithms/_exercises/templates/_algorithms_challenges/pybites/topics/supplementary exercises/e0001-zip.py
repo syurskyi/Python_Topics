@@ -17,11 +17,11 @@ ___ test_case1():
     list3 = [ 'red', 'blue', 'green']
 
     result = z..(list1, list2, list3)
-    print(type(result))
+    print(t..(result))
 
     ___ e __ result:
         print(e)
-        print(type(e))
+        print(t..(e))
 
 # Test case 2 - when iterables are of unequal length
 ___ test_case2():
@@ -30,11 +30,11 @@ ___ test_case2():
     list3 = [ 'red', 'blue']
 
     result = z..(list1, list2, list3)
-    print(type(result))
+    print(t..(result))
 
     ___ e __ result:
         print(e)
-        print(type(e))
+        print(t..(e))
 
 
 

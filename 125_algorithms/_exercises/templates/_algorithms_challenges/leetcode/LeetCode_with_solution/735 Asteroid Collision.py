@@ -44,7 +44,7 @@ Each asteroid will be a non-zero integer in the range [-1000, 1000]..
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ asteroidCollision(self, asteroids: List[int]) -> List[int]:
         """
         simplified

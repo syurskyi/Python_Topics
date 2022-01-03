@@ -5,7 +5,7 @@
 #         self.y = b
 
 
-class Solution:
+c_ Solution:
     ___ maxPoints(self, P):
         """
         :type P: List[Point]
@@ -20,7 +20,7 @@ class Solution:
             r.. n
 
         ___ i __ r..(n):
-            S = {}
+            S    # dict
             points = dups = 0
             ___ j __ r..(i + 1, n):
                 dx = P[i].x - P[j].x
@@ -29,7 +29,7 @@ class Solution:
                     dups += 1
                     continue
 
-                gcd = self.get_gcd(dx, dy)
+                gcd = get_gcd(dx, dy)
                 __ gcd:
                     dx //= gcd
                     dy //= gcd
@@ -48,4 +48,4 @@ class Solution:
     ___ get_gcd(self, a, b):
         __ b __ 0:
             r.. a
-        r.. self.get_gcd(b, a % b)
+        r.. get_gcd(b, a % b)

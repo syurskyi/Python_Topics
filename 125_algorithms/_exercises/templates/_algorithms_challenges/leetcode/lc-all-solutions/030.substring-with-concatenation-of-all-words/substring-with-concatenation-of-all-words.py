@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findSubstring(self, s, words):
     """
     :type s: str
@@ -10,8 +10,8 @@ class Solution(object):
     """
     __ l..(words) > l..(s):
       r.. []
-    d = {}
-    t = {}
+    d    # dict
+    t    # dict
     ans    # list
     deq = deque([])
     wl = l..(words[0])

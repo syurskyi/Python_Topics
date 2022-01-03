@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ myPow(self, x, n):
     """
     :type x: float

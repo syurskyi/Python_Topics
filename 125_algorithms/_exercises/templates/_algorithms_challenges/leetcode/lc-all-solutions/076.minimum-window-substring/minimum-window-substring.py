@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minWindow(self, s, t):
     """
     :type s: str
@@ -8,7 +8,7 @@ class Solution(object):
     score = 0
     wanted = collections.Counter(t)
     start, end = l..(s), 3 * l..(s)
-    d = {}
+    d    # dict
     deq = collections.deque([])
     ___ i, c __ e..(s):
       __ c __ wanted:

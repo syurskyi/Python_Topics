@@ -12,7 +12,7 @@ Given numerator = 2, denominator = 3, return "0.(6)".
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ fractionToDecimal(self, numerator, denominator):
         """
         The key is the remainder
@@ -28,7 +28,7 @@ class Solution:
         frac_part = numerator-int_part*denominator
 
         __ frac_part:
-            decimal_part = self.frac(numerator-int_part*denominator, denominator)
+            decimal_part = frac(numerator-int_part*denominator, denominator)
             ret = s..(int_part)+"."+decimal_part
         ____:
             ret = s..(int_part)
@@ -43,7 +43,7 @@ class Solution:
         real fraction part
         """
         ret    # list
-        d = {}
+        d    # dict
         i = 0
 
         w.... num:
@@ -53,17 +53,17 @@ class Solution:
             __ (q, r) __ d:
                 ret.a..(")")
                 ret.insert(d[(q, r)], "(")
-                r.. "".join(ret)
+                r.. "".j..(ret)
 
             ret.a..(s..(q))
             d[(q, r)] = i
             i += 1
             num -= q*deno
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 
-class Solution_error:
+c_ Solution_error:
     ___ fractionToDecimal(self, numerator, denominator):
         """
         :type numerator: int
@@ -73,7 +73,7 @@ class Solution_error:
         int_part = numerator/denominator
         fract_part = numerator-int_part*denominator
         __ fract_part:
-            decimal_part = self.frac(numerator-int_part*denominator, denominator)
+            decimal_part = frac(numerator-int_part*denominator, denominator)
             ret = s..(int_part)+"."+decimal_part
         ____:
             ret = s..(int_part)
@@ -85,7 +85,7 @@ class Solution_error:
         real fraction part
         """
         ret    # list
-        d = {}
+        d    # dict
         i = 0
 
         w.... num:
@@ -98,7 +98,7 @@ class Solution_error:
             __ r __ d:
                 ret.a..(")")
                 ret.insert(d[r]-(l-1), "(")
-                r.. "".join(ret)
+                r.. "".j..(ret)
 
             ___ _ __ xrange(l-1):
                 ret.a..("0")
@@ -109,7 +109,7 @@ class Solution_error:
             i += 1
             num -= r*deno
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 __ __name__ __ "__main__":
     ... Solution().fractionToDecimal(1, 333) __ "0.(003)"

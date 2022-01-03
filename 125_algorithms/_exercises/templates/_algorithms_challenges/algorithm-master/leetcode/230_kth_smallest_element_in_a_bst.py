@@ -8,7 +8,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ kthSmallest(self, root, k):
         """
         :type root: TreeNode

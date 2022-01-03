@@ -1,15 +1,15 @@
 _______ heapq
 
 
-class Twitter(object):
+c_ Twitter(object):
 
-  ___ __init__(self):
+  ___ - ):
     """
     Initialize your data structure here.
     """
-    self.ts = 0
-    self.tweets = collections.defaultdict(l..)
-    self.friendship = collections.defaultdict(set)
+    ts = 0
+    tweets = collections.defaultdict(l..)
+    friendship = collections.defaultdict(set)
 
   ___ postTweet(self, userId, tweetId):
     """
@@ -18,9 +18,9 @@ class Twitter(object):
     :type tweetId: int
     :rtype: void
     """
-    tInfo = self.ts, tweetId, userId, l..(self.tweets[userId])
-    self.tweets[userId].a..(tInfo)
-    self.ts -= 1
+    tInfo = ts, tweetId, userId, l..(tweets[userId])
+    tweets[userId].a..(tInfo)
+    ts -= 1
 
   ___ getNewsFeed(self, userId):
     """
@@ -30,18 +30,18 @@ class Twitter(object):
     """
     ret    # list
     heap    # list
-    __ self.tweets[userId]:
-      heapq.heappush(heap, self.tweets[userId][-1])
+    __ tweets[userId]:
+      heapq.heappush(heap, tweets[userId][-1])
 
-    ___ followeeId __ self.friendship[userId]:
-      __ self.tweets[followeeId]:
-        heapq.heappush(heap, self.tweets[followeeId][-1])
+    ___ followeeId __ friendship[userId]:
+      __ tweets[followeeId]:
+        heapq.heappush(heap, tweets[followeeId][-1])
     cnt = 10
     w.... heap a.. cnt > 0:
       _, tid, uid, idx = heapq.heappop(heap)
       ret.a..(tid)
       __ idx > 0:
-        heapq.heappush(heap, self.tweets[uid][idx - 1])
+        heapq.heappush(heap, tweets[uid][idx - 1])
       cnt -= 1
     r.. ret
 
@@ -54,7 +54,7 @@ class Twitter(object):
     """
     __ followerId __ followeeId:
       r..
-    self.friendship[followerId] |= {followeeId}
+    friendship[followerId] |= {followeeId}
 
   ___ unfollow(self, followerId, followeeId):
     """
@@ -63,7 +63,7 @@ class Twitter(object):
     :type followeeId: int
     :rtype: void
     """
-    self.friendship[followerId] -= {followeeId}
+    friendship[followerId] -= {followeeId}
 
 # Your Twitter object will be instantiated and called as such:
 # obj = Twitter()

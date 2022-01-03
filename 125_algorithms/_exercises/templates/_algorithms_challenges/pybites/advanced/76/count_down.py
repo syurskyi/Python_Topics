@@ -11,7 +11,7 @@ ___ count_down(arg):
 @count_down.register(l..)
 ___ _(arg):
     ___ k __ r..(l..(arg)):
-        print(''.join(map(s.., arg)))
+        print(''.j..(map(s.., arg)))
         arg.pop()
 
 

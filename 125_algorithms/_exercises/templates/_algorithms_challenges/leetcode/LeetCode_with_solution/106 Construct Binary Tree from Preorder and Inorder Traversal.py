@@ -7,14 +7,14 @@ You may assume that duplicates do not exist in the tree.
 __author__ = 'Danyang'
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ buildTree_MLE(self, preorder, inorder):
         """
         Recursive algorithm. Pre-order, in-order, post-order traversal relationship
@@ -34,8 +34,8 @@ class Solution:
         root = TreeNode(preorder[0])
         root_index = inorder.index(root.val)
 
-        root.left = self.buildTree(preorder[1:root_index+1], inorder[0:root_index])
-        root.right = self.buildTree(preorder[root_index+1:], inorder[root_index+1:])
+        root.left = buildTree(preorder[1:root_index+1], inorder[0:root_index])
+        root.right = buildTree(preorder[root_index+1:], inorder[root_index+1:])
 
         r.. root
         
@@ -47,15 +47,15 @@ class Solution:
         :type inorder: List[int]
         :rtype: TreeNode
         """
-        self.preorder = preorder
-        self.inorder = inorder
-        r.. self._buildTree(0, l..(preorder), 0, l..(inorder))
+        preorder = preorder
+        inorder = inorder
+        r.. _buildTree(0, l..(preorder), 0, l..(inorder))
 
     ___ _buildTree(self, pre_start, pre_end, in_start, in_end):
         __ pre_start >= pre_end:
             r.. N..
-        root = TreeNode(self.preorder[pre_start])
-        offset = self.inorder[in_start:in_end + 1].index(root.val)
-        root.left = self._buildTree(pre_start + 1, pre_start + offset + 1, in_start, in_start + offset)
-        root.right = self._buildTree(pre_start + offset + 1, pre_end, in_start + offset + 1, in_end)
+        root = TreeNode(preorder[pre_start])
+        offset = inorder[in_start:in_end + 1].index(root.val)
+        root.left = _buildTree(pre_start + 1, pre_start + offset + 1, in_start, in_start + offset)
+        root.right = _buildTree(pre_start + offset + 1, pre_end, in_start + offset + 1, in_end)
         r.. root

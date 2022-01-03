@@ -5,7 +5,7 @@ Given a string, sort it in decreasing order based on the frequency of characters
 ____ collections _______ defaultdict
 
 
-class Solution(object):
+c_ Solution(object):
     ___ frequencySort(self, s):
         """
         Brute force: counter, sort O(n log n)
@@ -19,7 +19,7 @@ class Solution(object):
             counter[c] += 1
 
         bucket = {count: [] ___ count __ r..(1, l..(s)+1)}
-        ___ k, v __ counter.items():
+        ___ k, v __ counter.i..:
             bucket[v].a..(k)
 
         ret    # list
@@ -28,7 +28,7 @@ class Solution(object):
                 ___ c __ bucket[count]:
                     ret.a..(c * count)
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 
 __ __name__ __ "__main__":

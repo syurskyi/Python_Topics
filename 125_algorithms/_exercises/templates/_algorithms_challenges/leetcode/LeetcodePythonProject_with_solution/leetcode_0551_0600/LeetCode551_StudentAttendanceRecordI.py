@@ -4,32 +4,32 @@ Created on Aug 22, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ checkRecord(self, s):
         """
         :type s: str
         :rtype: bool
         """
-        absent = False
+        absent = F..
         ___ i, c __ e..(s):
             __ c __ 'A':
                 __ n.. absent:
-                    absent = True
+                    absent = T..
                 ____:
-                    r.. False
+                    r.. F..
             ____ c __ 'L':
                 __ i > 1 a.. s[i-1] __ 'L' a.. s[i-2] __ 'L':
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             'PPALLP',
             'PPALLL',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.checkRecord(s)
+            result = checkRecord(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

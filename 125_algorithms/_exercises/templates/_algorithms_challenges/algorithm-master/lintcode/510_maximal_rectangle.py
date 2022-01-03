@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ maximalRectangle(self, G):
         """
         :type G: List[List[str]]
@@ -9,7 +9,7 @@ class Solution:
             r.. ans
 
         m, n = l..(G), l..(G[0])
-        L, R, H = {}, {}, {}
+        L, R, H    # dict, {}, {}
 
         ___ i __ r..(m):
             curr = 0  # left boundary
@@ -86,7 +86,7 @@ max = 6 = (5 - 2) * 2
 
 # Mono Stack
 # This problem could be treated as histogram, see lintcode#122
-class Solution:
+c_ Solution:
     ___ maximalRectangle(self, G):
         """
         :type G: List[List[str]]
@@ -106,7 +106,7 @@ class Solution:
                 ____:
                     H[j] = 0
 
-            ans = max(ans, self.largestRectangleArea(H))
+            ans = max(ans, largestRectangleArea(H))
 
             # To remove the trick `0`
             H.pop()

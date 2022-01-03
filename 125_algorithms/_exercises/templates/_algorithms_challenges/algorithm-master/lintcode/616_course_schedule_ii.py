@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findOrder(self, n, prerequisites):
         """
         :type n: int

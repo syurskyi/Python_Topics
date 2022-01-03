@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ calculate(self, s):
         """
         :type s: str
@@ -7,7 +7,7 @@ class Solution:
         __ n.. s:
             r.. 0
 
-        s = self.to_rpn(s, {
+        s = to_rpn(s, {
             '+': 1,
             '-': 1,
             '*': 2,
@@ -17,7 +17,7 @@ class Solution:
         __ n.. s:
             r.. 0
 
-        r.. self.eval_rpn(s, {
+        r.. eval_rpn(s, {
             '+': l.... a, b: a + b,
             '-': l.... a, b: a - b,
             '*': l.... a, b: a * b,
@@ -64,7 +64,7 @@ class Solution:
         r.. stack[0]
 
 
-class Solution:
+c_ Solution:
     ___ calculate(self, s):
         """
         :type s: str
@@ -73,12 +73,12 @@ class Solution:
         __ n.. s:
             r.. 0
 
-        s = self.to_rpn(s)
+        s = to_rpn(s)
 
         __ n.. s:
             r.. 0
 
-        r.. self.eval_rpn(s)
+        r.. eval_rpn(s)
 
     ___ to_rpn(self, s):
         stack, res    # list, []

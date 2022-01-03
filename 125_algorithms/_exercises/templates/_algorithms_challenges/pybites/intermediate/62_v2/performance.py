@@ -22,15 +22,15 @@ ___ timing(f):
 ___ contains(sequence: List[int], num: int) -> bool:
     ___ n __ sequence:
         __ n __ num:
-            r.. True
-    r.. False
+            r.. T..
+    r.. F..
 
 
 @timing
 ___ contains_fast(sequence: Set[int], num: int) -> bool:
     __ num __ sequence:
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..
 
 
 @timing
@@ -53,7 +53,7 @@ ___ list_concat(sequence: List[s..]) -> s..:
 
 @timing
 ___ list_concat_fast(sequence: List[s..]) -> s..:
-    r.. ''.join(sequence)
+    r.. ''.j..(sequence)
 
 
 @timing

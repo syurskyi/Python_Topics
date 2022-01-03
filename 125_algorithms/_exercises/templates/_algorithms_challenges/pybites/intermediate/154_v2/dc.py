@@ -2,8 +2,8 @@ ____ dataclasses _______ dataclass
 
 
 
-@dataclass(order=True)
-class Bite:
+@dataclass(order=T..)
+c_ Bite:
     number: int
     title: s..
     level: s.. = "Beginner"
@@ -12,8 +12,8 @@ class Bite:
 
 
 
-    ___ __post_init__(self):
-        self.title = self.title.capitalize()
+    ___ __post_init__
+        title = title.capitalize()
 
 
 

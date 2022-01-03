@@ -30,7 +30,7 @@ arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxChunksToSorted(self, arr: List[int]) -> int:
         """
         compared to the sorted

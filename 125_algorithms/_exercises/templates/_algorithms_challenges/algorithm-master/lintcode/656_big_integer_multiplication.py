@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ multiply(self, a, b):
         """
         :type a: str
@@ -23,4 +23,4 @@ class Solution:
         w.... tmp[i] __ 0:
             i += 1
 
-        r.. ''.join([s..(j) ___ j __ tmp[i:]])
+        r.. ''.j..([s..(j) ___ j __ tmp[i:]])

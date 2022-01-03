@@ -25,7 +25,7 @@ there is error in that case if save the max size
 """
 
 
-class Solution:
+c_ Solution:
     ___ lengthLongestPath(self, path):
         """
         :type path: str

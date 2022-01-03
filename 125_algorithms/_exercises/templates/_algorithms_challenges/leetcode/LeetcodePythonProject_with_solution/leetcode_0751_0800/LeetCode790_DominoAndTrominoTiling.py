@@ -3,7 +3,7 @@ Created on Apr 15, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numTilings(self, N):
         """
         :type N: int
@@ -20,13 +20,13 @@ class Solution(object):
             p1 = cur
         r.. p1
     
-    ___ test(self):
+    ___ test
         testCases = [
             3,
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.numTilings(n)
+            result = numTilings(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -2,9 +2,9 @@ ___ is_iterable(thing):
     try:
         iter(thing)
     except TypeError:
-        r.. False
+        r.. F..
     ____:
-        r.. True
+        r.. T..
 
 
 ___ flatten(iterable):

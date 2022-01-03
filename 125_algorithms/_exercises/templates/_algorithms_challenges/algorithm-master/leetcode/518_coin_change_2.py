@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ change(self, amount, coins):
         """
         :type amount: int

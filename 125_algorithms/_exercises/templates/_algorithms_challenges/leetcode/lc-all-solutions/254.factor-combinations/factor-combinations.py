@@ -1,11 +1,11 @@
-class Solution(object):
+c_ Solution(object):
   ___ getFactors(self, n):
     """
     :type n: int
     :rtype: List[List[int]]
     """
     res    # list
-    self.dfsHelper(n, res, [], 2)
+    dfsHelper(n, res, [], 2)
     r.. res[1:]
 
   ___ dfsHelper(self, n, res, path, start):
@@ -17,11 +17,11 @@ class Solution(object):
       r..
 
     path.a..(n)
-    self.dfsHelper(n / n, res, path, n)
+    dfsHelper(n / n, res, path, n)
     path.pop()
 
     ___ i __ r..(start, int(n ** 0.5) + 1):
       __ n % i __ 0:
         path.a..(i)
-        self.dfsHelper(n / i, res, path, i)
+        dfsHelper(n / i, res, path, i)
         path.pop()

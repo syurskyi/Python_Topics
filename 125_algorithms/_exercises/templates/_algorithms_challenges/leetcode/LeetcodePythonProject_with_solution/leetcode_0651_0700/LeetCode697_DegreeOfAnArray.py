@@ -3,14 +3,14 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findShortestSubArray(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
         __ n.. nums: r.. 0
-        hashmap = {}
+        hashmap    # dict
         degree = 0
         cands = set()
         ___ i, num __ e..(nums):
@@ -27,14 +27,14 @@ class Solution(object):
             minLen = m..(minLen, hashmap[num][-1]-hashmap[num][0]+1)
         r.. minLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 2, 3, 1],
             [1, 2, 2, 3, 1, 4, 2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.findShortestSubArray(nums)
+            result = findShortestSubArray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

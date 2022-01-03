@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ twoSum(self, nums, target):
     """
     :type numbers: List[int]

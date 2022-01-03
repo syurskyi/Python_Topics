@@ -7,7 +7,7 @@ class ParentTreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: the root of binary tree
     @param: target: An integer
@@ -20,17 +20,17 @@ class Solution:
            to parent, left child, and right child.
         """
         ans    # list
-        self.dfs(root, target, ans)
+        dfs(root, target, ans)
         r.. ans
 
     ___ dfs(self, node, target, ans):
         __ n.. node:
             r..
 
-        self.find_path(node, node, target, ans, [])
+        find_path(node, node, target, ans, [])
 
-        self.dfs(node.left, target, ans)
-        self.dfs(node.right, target, ans)
+        dfs(node.left, target, ans)
+        dfs(node.right, target, ans)
 
     ___ find_path(self, node, start, remaining, ans, path):
         path.a..(node.val)
@@ -40,10 +40,10 @@ class Solution:
             ans.a..(path[:])
 
         __ node.parent a.. node.parent __ n.. start:
-            self.find_path(node.parent, node, remaining, ans, path)
+            find_path(node.parent, node, remaining, ans, path)
         __ node.left a.. node.left __ n.. start:
-            self.find_path(node.left, node, remaining, ans, path)
+            find_path(node.left, node, remaining, ans, path)
         __ node.right a.. node.right __ n.. start:
-            self.find_path(node.right, node, remaining, ans, path)
+            find_path(node.right, node, remaining, ans, path)
 
         path.pop()

@@ -38,7 +38,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ possibleBipartition(self, N: int, dislikes: List[List[int]]) -> bool:
         """
         If given likes, then we can use union-find. But this is dislikes.
@@ -52,21 +52,21 @@ class Solution:
             G[u].a..(v)
             G[v].a..(u)
 
-        visited = {}  # 0 color red, 1 color blue
+        visited    # dict  # 0 color red, 1 color blue
         ___ u __ r..(1, N+1):
             __ u n.. __ visited:
-                __ n.. self.dfs(u, G, visited, 0):
-                    r.. False
-        r.. True
+                __ n.. dfs(u, G, visited, 0):
+                    r.. F..
+        r.. T..
 
     ___ dfs(self, u, G, visited, color):
         visited[u] = color
         ___ nbr __ G[u]:
             __ nbr __ visited:
                 __ visited[nbr] __ color:
-                    r.. False
+                    r.. F..
             ____:
-                __ n.. self.dfs(nbr, G, visited, color ^ 1):
-                    r.. False
+                __ n.. dfs(nbr, G, visited, color ^ 1):
+                    r.. F..
 
-        r.. True
+        r.. T..

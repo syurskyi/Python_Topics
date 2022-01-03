@@ -5,13 +5,13 @@ Created on Feb 9, 2017
 '''
 
 # Definition for singly-linked list with a random pointer.
-class RandomListNode(object):
-    ___ __init__(self, x):
-        self.label = x
-        self.next = N..
-        self.random = N..
+c_ RandomListNode(object):
+    ___ - , x):
+        label = x
+        next = N..
+        random = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ copyRandomList(self, head):
         """
         :type head: RandomListNode
@@ -39,7 +39,7 @@ class Solution(object):
             newNode = newNode.next
         r.. newHead
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

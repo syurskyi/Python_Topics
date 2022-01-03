@@ -4,7 +4,7 @@ _______ urllib.request
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.join(tmp, 'dirnames')
+tempfile = os.path.j..(tmp, 'dirnames')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile
@@ -36,7 +36,7 @@ ___ gen_files(tempfile=tempfile):
     => Here you would return 03/mridubhatnagar (lowercased!)
        followed by 03/aleksandarknezevic
     """
-    file = open(tempfile).read().lower().splitlines()
+    file = open(tempfile).read().l...splitlines()
 
     names    # list
     ___ line __ file:

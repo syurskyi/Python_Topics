@@ -18,7 +18,7 @@ X O X X
 __author__ = 'Danyang'
 CONNECTED = 'C'
 directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-class Solution:
+c_ Solution:
     ___ solve(self, board):
         """
         Graph Theory

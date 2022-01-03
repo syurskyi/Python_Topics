@@ -3,16 +3,16 @@ ____ random _______ choice
 COLORS = 'red blue green yellow brown purple'.s.. 
 
 
-class EggCreator:
-    ___ __init__(self, limit: int):
-        self.limit = limit
-        self.current = 1
+c_ EggCreator:
+    ___ - , limit: int):
+        limit = limit
+        current = 1
 
-    ___ __iter__(self):
+    ___ __iter__
         r.. self
 
-    ___ __next__(self):
-        __ self.current > self.limit:
+    ___ __next__
+        __ current > limit:
             raise StopIteration
-        self.current += 1
+        current += 1
         r.. f'{choice(COLORS)} egg'

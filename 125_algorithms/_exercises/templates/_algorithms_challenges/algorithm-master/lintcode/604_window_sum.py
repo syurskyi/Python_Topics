@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: a list of integers.
     @param: k: length of window.

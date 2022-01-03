@@ -14,7 +14,7 @@ You should return the following matrix:
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ generateMatrix(self, n):
         """
         algorithm: array, simulation
@@ -51,7 +51,7 @@ class Solution:
         r.. result
 
 
-class SolutionError:
+c_ SolutionError:
     ___ generateMatrix(self, n):
         """
         algorithm: array, simulation

@@ -10,7 +10,7 @@ ___ df():
 
 
 ___ test_df_type(df):
-    ... type(df) __ DataFrame
+    ... t..(df) __ DataFrame
 
 
 ___ test_df_shape(df):

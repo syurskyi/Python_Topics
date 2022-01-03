@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     `dp[i]` means `s[:i]` is segmented by words
     """
@@ -9,21 +9,21 @@ class Solution:
         :rtype: bool
         """
         __ n.. s a.. n.. words:
-            r.. True
+            r.. T..
         __ n.. s o. n.. words:
-            r.. False
+            r.. F..
 
         max_size = max(l..(w) ___ w __ words)
         word_set = set(words)
 
         n = l..(s)
-        dp = [False] * (n + 1)
-        dp[0] = True
+        dp = [F..] * (n + 1)
+        dp[0] = T..
 
         ___ i __ r..(1, n + 1):
             ___ j __ r..(1, m..(i, max_size) + 1):
                 __ dp[i - j] a.. s[i - j:i] __ word_set:
-                    dp[i] = True
+                    dp[i] = T..
                     break
 
         r.. dp[n]

@@ -5,7 +5,7 @@
 ____ collections _______ Counter, OrderedDict
 
 
-class OrderedCounter(Counter, OrderedDict):
+c_ OrderedCounter(Counter, OrderedDict):
     pass
 
 

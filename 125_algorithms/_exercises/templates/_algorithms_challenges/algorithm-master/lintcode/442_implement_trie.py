@@ -1,12 +1,12 @@
-class TrieNode:
-    ___ __init__(self):
-        self.end_of = N..
-        self.children = {}
+c_ TrieNode:
+    ___ - ):
+        end_of = N..
+        children    # dict
 
 
-class Trie:
-    ___ __init__(self):
-        self.root = TrieNode()
+c_ Trie:
+    ___ - ):
+        root = TrieNode()
 
     """
     @param: word: a word
@@ -16,7 +16,7 @@ class Trie:
         __ word __ N..
             r..
 
-        node = self.root
+        node = root
 
         ___ c __ word:
             __ c n.. __ node.children:
@@ -30,15 +30,15 @@ class Trie:
     @param: word: A string
     @return: if the word is in the trie.
     """
-    ___ search(self, word):
+    ___ s..(self, word):
         __ word __ N..
-            r.. False
+            r.. F..
 
-        node = self.root
+        node = root
 
         ___ c __ word:
             __ c n.. __ node.children:
-                r.. False
+                r.. F..
 
             node = node.children[c]
 
@@ -50,14 +50,14 @@ class Trie:
     """
     ___ startsWith(self, prefix):
         __ prefix __ N..
-            r.. False
+            r.. F..
 
-        node = self.root
+        node = root
 
         ___ c __ prefix:
             __ c n.. __ node.children:
-                r.. False
+                r.. F..
 
             node = node.children[c]
 
-        r.. True
+        r.. T..

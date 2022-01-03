@@ -3,25 +3,25 @@ Created on Feb 12, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ accountsMerge(self, accounts):
         """
         :type accounts: List[List[str]]
         :rtype: List[List[str]]
         """
-        owner = {}
-        parents = {}
-        unions = {}
+        owner    # dict
+        parents    # dict
+        unions    # dict
         ___ a __ accounts:
             ___ i __ r..(1, l..(a)):
                 parents[a[i]] = a[i]
                 owner[a[i]] = a[0]
         ___ a __ accounts:
-            p = self.find(a[1], parents)
+            p = find(a[1], parents)
             ___ i __ r..(2, l..(a)):
-                parents[self.find(a[i], parents)] = p
+                parents[find(a[i], parents)] = p
         ___ a __ accounts:
-            p = self.find(a[1], parents)
+            p = find(a[1], parents)
             __ p n.. __ unions:
                 unions[p] = set()
             ___ i __ r..(1, l..(a)):
@@ -34,9 +34,9 @@ class Solution(object):
         r.. res
     
     ___ find(self, s, hashmap):
-        r.. s __ hashmap[s] __ s ____ self.find(hashmap[s], hashmap)
+        r.. s __ hashmap[s] __ s ____ find(hashmap[s], hashmap)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["John", "johnsmith@mail.com", "john00@mail.com"],
@@ -54,10 +54,10 @@ class Solution(object):
         ]
         ___ accounts __ testCases:
             print('accounts:')
-            print('\n'.join([s..(row) ___ row __ accounts]))
-            result = self.accountsMerge(accounts)
+            print('\n'.j..([s..(row) ___ row __ accounts]))
+            result = accountsMerge(accounts)
             print('result:')
-            print('\n'.join([s..(row) ___ row __ result]))
+            print('\n'.j..([s..(row) ___ row __ result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

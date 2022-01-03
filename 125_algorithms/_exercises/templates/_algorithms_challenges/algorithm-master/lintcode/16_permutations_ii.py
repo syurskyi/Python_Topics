@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     dfs with ignoring self and same num
     """
@@ -14,7 +14,7 @@ class Solution:
         ans    # list
 
         nums.s..()
-        self.dfs(nums, ans, [])
+        dfs(nums, ans, [])
 
         r.. ans
 
@@ -34,11 +34,11 @@ class Solution:
             ignore self
             """
             path.a..(nums[i])
-            self.dfs(nums[:i] + nums[i + 1:], ans, path)
+            dfs(nums[:i] + nums[i + 1:], ans, path)
             path.pop()
 
 
-class Solution:
+c_ Solution:
     """
     dfs with visited indices
     """
@@ -52,10 +52,10 @@ class Solution:
             r.. [[]]
 
         ans    # list
-        visited = [False] * l..(nums)
+        visited = [F..] * l..(nums)
 
         nums.s..()
-        self.dfs(nums, visited, ans, [])
+        dfs(nums, visited, ans, [])
 
         r.. ans
 
@@ -77,8 +77,8 @@ class Solution:
             __ i > 0 a.. n.. visited[i - 1] a.. nums[i] __ nums[i - 1]:
                 continue
 
-            visited[i] = True
+            visited[i] = T..
             path.a..(nums[i])
-            self.dfs(nums, visited, ans, path)
-            visited[i] = False
+            dfs(nums, visited, ans, path)
+            visited[i] = F..
             path.pop()

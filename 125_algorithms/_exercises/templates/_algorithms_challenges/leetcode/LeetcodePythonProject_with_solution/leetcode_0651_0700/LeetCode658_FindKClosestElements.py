@@ -3,7 +3,7 @@ Created on Oct 7, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findClosestElements(self, arr, k, x):
         """
         :type arr: List[int]
@@ -26,7 +26,7 @@ class Solution(object):
             res.a..(heapq.heappop(heap)[1])
         r.. s..(res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 2, 3, 4, 5],
@@ -48,7 +48,7 @@ class Solution(object):
             print('arr: %s' % arr)
             print('k: %s' % k)
             print('x: %s' % x)
-            result = self.findClosestElements(arr, k, x)
+            result = findClosestElements(arr, k, x)
             print('result: %s' % result)
             print('-='*30+'-')
 

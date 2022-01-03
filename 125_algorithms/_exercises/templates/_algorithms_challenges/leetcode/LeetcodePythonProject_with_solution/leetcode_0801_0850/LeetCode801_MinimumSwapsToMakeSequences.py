@@ -3,7 +3,7 @@ Created on Apr 19, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minSwap(self, A, B):
         """
         :type A: List[int]
@@ -36,22 +36,22 @@ class Solution(object):
         :rtype: int
         """
         arr1, arr2 = A, B
-        self.res = float('inf')
-        self.helper(arr1, arr2, 0, 0)
-        r.. self.res
+        res = float('inf')
+        helper(arr1, arr2, 0, 0)
+        r.. res
         
     ___ helper(self, arr1, arr2, i, cur):
         __ i __ l..(arr1):
-            self.res = m..(self.res, cur)
+            res = m..(res, cur)
             r..
         __ i __ 0 o. (arr1[i] > arr2[i-1] a.. arr2[i] > arr1[i-1]):
             arr1[i], arr2[i] = arr2[i], arr1[i]
-            self.helper(arr1, arr2, i+1, cur+1)
+            helper(arr1, arr2, i+1, cur+1)
             arr1[i], arr2[i] = arr2[i], arr1[i]
         __ i __ 0 o. (arr1[i] > arr1[i-1] a.. arr2[i] > arr2[i-1]):
-            self.helper(arr1, arr2, i+1, cur)
+            helper(arr1, arr2, i+1, cur)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,3,5,4],
@@ -65,7 +65,7 @@ class Solution(object):
         ___ arr1, arr2 __ testCases:
             print('arr1: %s' % arr1)
             print('arr2: %s' % arr2)
-            result = self.minSwap(arr1, arr2)
+            result = minSwap(arr1, arr2)
             print('result: %s' % result)
             print('-='*30+'-')
 

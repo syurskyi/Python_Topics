@@ -4,7 +4,7 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minPatches(self, nums, n):
         miss = 1
         added, i = 0, 0

@@ -5,7 +5,7 @@ run time complexity should be O(log (m+n)).
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ findMedianSortedArrays(self, A, B):
         """
         Merge two arrays to get the median, O((m+n)/2)
@@ -31,9 +31,9 @@ class Solution:
         m = l..(A)
         n = l..(B)
         __ ((m+n)&1 __ 0):
-            r.. (self.find_kth(A, B, (m+n)/2)+self.find_kth(A, B, (m+n)/2-1))/2.0
+            r.. (find_kth(A, B, (m+n)/2)+find_kth(A, B, (m+n)/2-1))/2.0
         ____:
-            r.. self.find_kth(A, B, (m+n)/2)
+            r.. find_kth(A, B, (m+n)/2)
 
     ___ find_kth(self, A, B, k):
         """
@@ -51,11 +51,11 @@ class Solution:
         # pay attention to consider the equal sign. Assigning equal sign is an art.
         __ A[m/2] >= B[n/2]:
             __ k > m/2+n/2:
-                r.. self.find_kth(A, B[n/2+1:], k-n/2-1)  # exclude B[n/2] to make progress
+                r.. find_kth(A, B[n/2+1:], k-n/2-1)  # exclude B[n/2] to make progress
             ____:
-                r.. self.find_kth(A[:m/2], B, k)  # exclude A[m/2] to make progress
+                r.. find_kth(A[:m/2], B, k)  # exclude A[m/2] to make progress
         ____:
-            r.. self.find_kth(B, A, k)
+            r.. find_kth(B, A, k)
 
 
 __ __name__ __ "__main__":

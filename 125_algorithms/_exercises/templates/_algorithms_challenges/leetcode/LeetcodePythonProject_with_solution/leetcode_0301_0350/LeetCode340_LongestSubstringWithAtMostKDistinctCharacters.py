@@ -4,10 +4,10 @@ Created on Mar 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLongestSubstringKDistinct(self, s, k):
         __ k <= 0: r.. 0
-        hashmap = {}
+        hashmap    # dict
         maxLen = 0
         left = 0
         ___ i, c __ e..(s):
@@ -19,14 +19,14 @@ class Solution(object):
             maxLen = max(maxLen, i-left+1)
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('eceba', 2),
             ('abddebddesbaddes', 3),
         ]
         ___ s, k __ testCases:
             print('s: %s, k: %s' % (s, k))
-            result = self.lengthOfLongestSubstringKDistinct(s, k)
+            result = lengthOfLongestSubstringKDistinct(s, k)
             print('result: %s' % (s..(result)))
             print('-='*20+'-')
 

@@ -22,21 +22,21 @@ ___ calculate_gc_content_1st_solution(sequence):
     Receives a DNA sequence (A, G, C, or T)
     Returns the percentage of GC content (rounded to the last two digits)
     """
-    counts = {}
-    bases_dict = {}
+    counts    # dict
+    bases_dict    # dict
     bases = "atgc"
-    sequence = sequence.lower()
+    sequence = sequence.l..
     ___ b __ bases:
-        bases_dict[b] = False
+        bases_dict[b] = F..
 
     ___ seq __ sequence:
-        bases_dict[seq] = True
+        bases_dict[seq] = T..
         try:
             counts[seq] += 1
         except KeyError:
             counts[seq] = 1
-    ___ k,v __ bases_dict.items():
-        __ v __ False:
+    ___ k,v __ bases_dict.i..:
+        __ v __ F..:
             counts[k] = 0
 
     result = float("{0:.2f}".f..(((counts['g'] + counts['c']) / (counts['a'] + counts['c'] + counts['g'] + counts['t'])) * 100))

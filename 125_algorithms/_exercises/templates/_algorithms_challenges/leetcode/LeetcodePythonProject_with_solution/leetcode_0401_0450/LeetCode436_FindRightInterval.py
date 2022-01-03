@@ -5,18 +5,18 @@ Created on Apr 16, 2017
 '''
 
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
-class Solution(object):
+c_ Solution(object):
     ___ findRightInterval(self, intervals):
         sortedList = [(interval.start, i) ___ i, interval __ e..(intervals)]
         sortedList.s..()
         result    # list
         ___ i, interval __ e..(intervals):
-            ind = self.binary_search(interval.end, sortedList)
+            ind = binary_search(interval.end, sortedList)
             __ ind != i:
                 result.a..(ind)
             ____:
@@ -43,7 +43,7 @@ class Solution(object):
             res.a..(l[r][1] __ r < l..(l) ____ -1)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [ [1,2] ],
             [ [3,4], [2,3], [1,2] ],
@@ -51,7 +51,7 @@ class Solution(object):
         ]
         ___ intervals __ testCases:
             intervals = [Interval(x[0], x[1]) ___ x __ intervals]
-            result = self.findRightInterval(intervals)
+            result = findRightInterval(intervals)
             print('result: %s' % result)
             print('-='*30+'-')
 

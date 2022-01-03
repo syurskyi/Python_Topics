@@ -4,7 +4,7 @@ Created on May 9, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findTargetSumWays(self, nums, S):
         """
         :type nums: List[int]
@@ -15,7 +15,7 @@ class Solution(object):
         __ sumVal < S o. (sumVal+S)%2 != 0:
             r.. 0
         target = (sumVal+S)//2
-        r.. self.helper(nums, target)
+        r.. helper(nums, target)
     
     ___ helper(self, nums, target):
         dp = [0]*(target+1)
@@ -26,7 +26,7 @@ class Solution(object):
                     dp[i] += dp[i-num]
         r.. dp[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 1, 1, 1, 1],
@@ -40,7 +40,7 @@ class Solution(object):
         ___ nums, S __ testCases:
             print('nums: %s' % nums)
             print('S: %s' % S)
-            result = self.findTargetSumWays(nums, S)
+            result = findTargetSumWays(nums, S)
             print('result: %s' % result)
             print('-='*30+'-')
 

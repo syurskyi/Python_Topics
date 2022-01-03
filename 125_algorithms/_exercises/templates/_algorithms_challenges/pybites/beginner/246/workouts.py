@@ -9,6 +9,6 @@ ___ print_workout_days(workout: s.., my_workouts: d.. = WORKOUTS) -> N..
        that (partially) match the workout string passed in. If no
        workout matches, print 'No matching workout'
     """
-    days = [day.t.. ___ day, wo __ my_workouts.items()
-            __ workout.lower() __ wo.lower()]
-    print(', '.join(days) __ days ____ 'No matching workout')
+    days = [day.t.. ___ day, wo __ my_workouts.i..
+            __ workout.l.. __ wo.l..]
+    print(', '.j..(days) __ days ____ 'No matching workout')

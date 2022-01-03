@@ -32,7 +32,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ validMountainArray(self, A: List[int]) -> bool:
         """
         related to 845 Longest Mountain in Array
@@ -42,14 +42,14 @@ class Solution:
         incr = 0  # 0 undecided, 1 increasing, 2 decresing
         ___ i __ r..(1, l..(A)):
             __ A[i] __ A[i-1]:
-                r.. False
+                r.. F..
             ____ A[i] > A[i-1]:
                 __ incr __ 2:
-                    r.. False
+                    r.. F..
                 incr = 1
             ____:
                 __ incr __ 0:
-                    r.. False
+                    r.. F..
                 incr = 2
 
         r.. incr __ 2

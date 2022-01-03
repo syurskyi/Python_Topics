@@ -28,7 +28,7 @@ ___ get_srt_section_ids(text: s..) -> List[int]:
    """
    sections_raw = [word.s.. ___ word __ text.s...s..("\n") __ word != ""]
    sections_clean = [sections_raw[i-3:i] ___ i __ r..(3, l..(sections_raw) +1, 3)]
-   sections_ranking = {}
+   sections_ranking    # dict
 
    ___ section __ sections_clean:
       start, stop = section[1].s..(" --> ")

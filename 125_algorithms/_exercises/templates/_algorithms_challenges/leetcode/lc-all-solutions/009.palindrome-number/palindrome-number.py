@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   # normal way
   ___ _isPalindrome(self, x):
     """
@@ -19,7 +19,7 @@ class Solution(object):
     :rtype: bool
     """
     __ x < 0 o. (x != 0 a.. x % 10 __ 0):
-      r.. False
+      r.. F..
     half = 0
     w.... x > half:
       half = half * 10 + x % 10

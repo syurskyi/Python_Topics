@@ -7,19 +7,19 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: a TreeNode, the root of the binary tree
     @return: nothing
     """
     ___ invertBinaryTree(self, root):
-        self.divide_conquer(root)
+        divide_conquer(root)
 
     ___ divide_conquer(self, node):
         __ n.. node:
             r..
 
-        self.divide_conquer(node.left)
-        self.divide_conquer(node.right)
+        divide_conquer(node.left)
+        divide_conquer(node.right)
 
         node.left, node.right = node.right, node.left

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minPathSum(self, grid):
     """
     :type grid: List[List[int]]

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: S: An array of char
     @param: x: An integer
@@ -10,9 +10,9 @@ class Solution:
 
         n = l..(S)
         x %= n
-        self.reverse(S, 0, n - x - 1)
-        self.reverse(S, n - x, n - 1)
-        self.reverse(S, 0, n - 1)
+        reverse(S, 0, n - x - 1)
+        reverse(S, n - x, n - 1)
+        reverse(S, 0, n - 1)
 
     ___ reverse(self, S, start, end):
         w.... start < end:

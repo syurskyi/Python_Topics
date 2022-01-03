@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ addBinary(self, a, b):
         """
         :type a: str
@@ -22,7 +22,7 @@ class Solution(object):
         length2 = l..(b)
         result = ''
         i1, i2 = length1-1, length2-1
-        carry = False
+        carry = F..
         w.... i2 >= 0:
             c1 = a[i1]
             c2 = b[i2]
@@ -31,33 +31,33 @@ class Solution(object):
                     result = '1' + result
                 ____:
                     result = '0' + result
-                carry = False
+                carry = F..
             ____ c1 __ '1' a.. c2 __ '1':
                 __ carry:
                     result = '1' + result
                 ____:
                     result = '0' + result
-                carry = True
+                carry = T..
             ____:
                 __ carry:
                     result = '0' + result
-                    carry = True
+                    carry = T..
                 ____:
                     result = '1' + result
-                    carry = False
+                    carry = F..
             i1 -= 1
             i2 -= 1
         __ carry:
             __ i1 __ -1:
                 result = '1' + result
             ____:
-                tmp = self.addBinary(a[:i1+1], '1')
+                tmp = addBinary(a[:i1+1], '1')
                 result = tmp + result
         ____:
             result = a[:i1+1]+ result
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('11', '1'),
             ('1', '1'),
@@ -65,7 +65,7 @@ class Solution(object):
         ]
         ___ a, b __ testCases:
             print('a: %s, b: %s' % (a, b))
-            result = self.addBinary(a, b)
+            result = addBinary(a, b)
             print('result: %s' % result)
             print('-='*15 + '-')
 

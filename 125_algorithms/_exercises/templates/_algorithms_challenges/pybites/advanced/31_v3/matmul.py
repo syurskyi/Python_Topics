@@ -1,13 +1,13 @@
-class Matrix(object):
+c_ Matrix(object):
 
-    ___ __init__(self, values):
-        self.values = values
+    ___ - , values):
+        values = values
 
-    ___ __repr__(self):
-        r.. f'<Matrix values="{self.values}">'
+    ___ __repr__
+        r.. f'<Matrix values="{values}">'
 
     ___ __matmul__(self, other):
-        A = self.values
+        A = values
         B = l..(z..(*other.values))
         print(A)
         print(B)
@@ -19,7 +19,7 @@ class Matrix(object):
 
     ___ __imatmul__(self, other):
         Y = self @ other
-        self.values = Y.values
+        values = Y.values
         r.. self
 
     ___ __rmatmul__(self, other):

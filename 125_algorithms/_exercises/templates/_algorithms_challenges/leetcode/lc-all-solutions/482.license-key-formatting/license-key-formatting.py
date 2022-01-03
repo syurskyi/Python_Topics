@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ licenseKeyFormatting(self, S, K):
     """
     :type S: str
@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: str
     """
     s = S.s..("-")
-    s = "".join(s)
+    s = "".j..(s)
     n = l..(s)
     start = n % K
     res    # list
@@ -15,4 +15,4 @@ class Solution(object):
     ___ k __ r..(0, (l..(s) - start) / K):
       res.a..(s[start:start + K].upper())
       start += K
-    r.. "-".join(res)
+    r.. "-".j..(res)

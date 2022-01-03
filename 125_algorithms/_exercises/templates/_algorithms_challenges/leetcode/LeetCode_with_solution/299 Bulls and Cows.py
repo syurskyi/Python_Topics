@@ -3,7 +3,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ getHint(self, secret, guess):
         """
         Need to revert B

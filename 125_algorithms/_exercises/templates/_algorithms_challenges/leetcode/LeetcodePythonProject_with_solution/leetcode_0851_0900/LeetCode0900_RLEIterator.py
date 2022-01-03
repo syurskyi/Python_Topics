@@ -1,15 +1,15 @@
 # Showing Memory Limit Exceeded only
 # I hope it's OK
 
-class RLEIterator(object):
+c_ RLEIterator(object):
 
-    ___ __init__(self, A):
+    ___ - , A):
         """
         :type A: List[int]
         """
-        self.arr = A
-        self.countIdx = 0
-        self.numIdx = 1
+        arr = A
+        countIdx = 0
+        numIdx = 1
 
     ___ next(self, n):
         """
@@ -18,14 +18,14 @@ class RLEIterator(object):
         """
         val = -1
         ___ _ __ r..(n):
-            w.... self.countIdx < l..(self.arr) a.. \
-                    self.arr[self.countIdx] __ 0:
-                self.countIdx += 2
-                self.numIdx += 2
-            __ self.countIdx >= l..(self.arr):
+            w.... countIdx < l..(arr) a.. \
+                    arr[countIdx] __ 0:
+                countIdx += 2
+                numIdx += 2
+            __ countIdx >= l..(arr):
                 r.. -1
-            val = self.arr[self.numIdx]
-            self.arr[self.countIdx] -= 1
+            val = arr[numIdx]
+            arr[countIdx] -= 1
         r.. val
 
 

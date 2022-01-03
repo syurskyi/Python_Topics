@@ -70,7 +70,7 @@ ___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) -> N.
     df = df.copy()
     df['year'] = df.month.dt.year
     s = df.groupby(['year']).agg({'sales': stats}).__str__().s..('\n')[1:]
-    print('\n'.join(s))
+    print('\n'.j..(s))
 
 
 

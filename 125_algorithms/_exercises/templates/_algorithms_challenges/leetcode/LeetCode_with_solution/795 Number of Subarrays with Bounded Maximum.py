@@ -22,7 +22,7 @@ The length of A will be in the range of [1, 50000].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ numSubarrayBoundedMax(self, A: List[int], L: int, R: int) -> int:
         """
         DP: Let F[i] be the num subarray with bounded max at A[i]

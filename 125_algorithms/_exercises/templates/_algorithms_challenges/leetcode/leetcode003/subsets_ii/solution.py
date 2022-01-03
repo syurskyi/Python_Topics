@@ -1,9 +1,9 @@
-class Solution:
+c_ Solution:
     # @param num, a list of integer
     # @return a list of lists of integer
     ___ subsetsWithDup(self, S):
         S.s..()
-        r.. self._subsets(S, l..(S))
+        r.. _subsets(S, l..(S))
 
     ___ _subsets(self, S, k):
         __ k __ 0:
@@ -14,7 +14,7 @@ class Solution:
                 __ i > 0 a.. S[i] __ S[i - 1]:
                     pass
                 ____:
-                    rest_subsets = self._subsets(S[i + 1:], k - 1)
+                    rest_subsets = _subsets(S[i + 1:], k - 1)
                     ___ subset __ rest_subsets:
                         subset.insert(0, S[i])
                     res += rest_subsets

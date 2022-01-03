@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Codec(object):
+c_ Codec(object):
     ___ encode(self, strs):
         """
         Encodes a list of strings to a single string.
@@ -35,7 +35,7 @@ class Codec(object):
         r.. strs
 
 
-class CodecMethod2(object):
+c_ CodecMethod2(object):
     ___ encode(self, strs):
         """
         Encodes a list of strings to a single string.
@@ -60,7 +60,7 @@ class CodecMethod2(object):
         r.. map(l.... x: x.r..("\n\n", "\n"), strs)
 
 
-class CodecError(object):
+c_ CodecError(object):
     ___ encode(self, strs):
         """
         Encodes a list of strings to a single string.

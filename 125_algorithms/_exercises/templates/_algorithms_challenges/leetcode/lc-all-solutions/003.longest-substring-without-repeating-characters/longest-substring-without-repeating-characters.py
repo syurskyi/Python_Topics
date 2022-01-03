@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ _lengthOfLongestSubstring(self, s):
     """
     :type s: str
@@ -16,7 +16,7 @@ class Solution(object):
     r.. ans
 
   ___ lengthOfLongestSubstring(self, s):
-    d = {}
+    d    # dict
     start = 0
     ans = 0
     ___ i, c __ e..(s):

@@ -3,7 +3,7 @@ Created on May 5, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isMatch(self, s, p):
         """
         :type s: str
@@ -11,11 +11,11 @@ class Solution(object):
         :rtype: bool
         """
         m, n = l..(s), l..(p)
-        dp = [[False]*(n+1) ___ _ __ r..(m+1)]
-        dp[0][0] = True
+        dp = [[F..]*(n+1) ___ _ __ r..(m+1)]
+        dp[0][0] = T..
         ___ j __ r..(n):
             __ p[j] __ '*' a.. dp[0][j-1]:
-                dp[0][j+1] = True
+                dp[0][j+1] = T..
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ s[i] __ p[j] o. p[j] __ '.':
@@ -27,7 +27,7 @@ class Solution(object):
                         dp[i+1][j+1] = dp[i+1][j-1]
         r.. dp[-1][-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             ['aa', 'a'],
             ['aa', 'a*'],
@@ -38,7 +38,7 @@ class Solution(object):
         ___ s, p __ testCases:
             print('s: %s' % s)
             print('p: %s' % p)
-            result = self.isMatch(s, p)
+            result = isMatch(s, p)
             print('result: %s' % result)
             print('-='*30+'-')
 

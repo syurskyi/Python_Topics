@@ -15,7 +15,7 @@ roman2int = {
 }
 
 
-class Solution:
+c_ Solution:
     ___ romanToInt(self, s):
         """
         What happens if current roman char larger than the previous roman char?

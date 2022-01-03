@@ -14,5 +14,5 @@ ___ playRPS(games):
             answer.a..("1")
         ____:
             answer.a..("2")
-    print(' '.join(answer))
+    print(' '.j..(answer))
 playRPS(input())

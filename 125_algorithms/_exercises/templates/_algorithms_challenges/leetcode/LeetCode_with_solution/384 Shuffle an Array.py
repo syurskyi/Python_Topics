@@ -21,29 +21,29 @@ _______ random
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self, nums):
+c_ Solution(object):
+    ___ - , nums):
         """
         :type nums: List[int]
         :type size: int
         """
-        self.original = nums
+        original = nums
 
-    ___ reset(self):
+    ___ reset
         """
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        r.. l..(self.original)
+        r.. l..(original)
 
-    ___ shuffle(self):
+    ___ shuffle
         """
         Returns a random shuffling of the array.
         like shuffle the poker cards
         in-place shuffling and avoid dynamic resizing the list
         :rtype: List[int]
         """
-        lst = self.reset()
+        lst = reset()
         n = l..(lst)
         ___ i __ xrange(n):
             j = random.randrange(i, n)

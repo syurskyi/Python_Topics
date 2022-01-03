@@ -16,17 +16,17 @@ True
 """
 
 
-class ValidWordAbbr:
-    ___ __init__(self, dictionary):
+c_ ValidWordAbbr:
+    ___ - , dictionary):
         """
         initialize your data structure here.
         :type dictionary: List[str]
         """
-        self.abbrs = {}
+        abbrs    # dict
 
         ___ word __ dictionary:
-            abbr = self.abbreviation(word)
-            self.abbrs[abbr] = word
+            abbr = abbreviation(word)
+            abbrs[abbr] = word
 
     ___ isUnique(self, word):
         """
@@ -34,8 +34,8 @@ class ValidWordAbbr:
         :type word: str
         :rtype: bool
         """
-        abbr = self.abbreviation(word)
-        r.. abbr n.. __ self.abbrs
+        abbr = abbreviation(word)
+        r.. abbr n.. __ abbrs
 
     ___ abbreviation(self, word):
         __ l..(word) < 3:

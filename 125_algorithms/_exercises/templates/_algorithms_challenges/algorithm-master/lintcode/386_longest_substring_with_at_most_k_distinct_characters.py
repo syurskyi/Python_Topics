@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution:
+c_ Solution:
     ___ lengthOfLongestSubstringKDistinct(self, s, k):
         """
         :type s: str

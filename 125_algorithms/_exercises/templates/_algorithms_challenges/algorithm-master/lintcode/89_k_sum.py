@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param A: An integer array
     @param K: A positive integer (K <= length(A))

@@ -23,7 +23,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxScoreSightseeingPair(self, A: List[int]) -> int:
         """
         Attribute the result to the ending element

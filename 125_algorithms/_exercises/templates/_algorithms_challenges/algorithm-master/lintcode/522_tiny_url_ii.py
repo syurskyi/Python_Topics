@@ -1,19 +1,19 @@
 _______ random
 
 
-class TinyUrl2:
-    ___ __init__(self):
-        self.chars = [s..(i) ___ i __ r..(10)]
-        self.chars.extend(chr(i) ___ i __ r..(ord('a'), ord('z') + 1))
-        self.chars.extend(chr(i) ___ i __ r..(ord('A'), ord('Z') + 1))
+c_ TinyUrl2:
+    ___ - ):
+        chars = [s..(i) ___ i __ r..(10)]
+        chars.extend(chr(i) ___ i __ r..(ord('a'), ord('z') + 1))
+        chars.extend(chr(i) ___ i __ r..(ord('A'), ord('Z') + 1))
 
-        self.host = 'http://tiny.url/'
-        self.size = 6
-        self.lg2st = {}
-        self.st2lg = {}
+        host = 'http://tiny.url/'
+        size = 6
+        lg2st    # dict
+        st2lg    # dict
 
-        self.custom_lg2st = {}
-        self.custom_st2lg = {}
+        custom_lg2st    # dict
+        custom_st2lg    # dict
 
     ___ createCustom(self, url, key):
         """
@@ -25,18 +25,18 @@ class TinyUrl2:
             r.. 'error'
 
         __ (
-            url __ self.custom_lg2st a..
-            key __ self.custom_st2lg
+            url __ custom_lg2st a..
+            key __ custom_st2lg
         ):
-            r.. self.get_tiny_url(key)
+            r.. get_tiny_url(key)
 
         __ (
-            url n.. __ self.custom_lg2st a..
-            key n.. __ self.custom_st2lg
+            url n.. __ custom_lg2st a..
+            key n.. __ custom_st2lg
         ):
-            self.custom_lg2st[url] = key
-            self.custom_st2lg[key] = url
-            r.. self.get_tiny_url(key)
+            custom_lg2st[url] = key
+            custom_st2lg[key] = url
+            r.. get_tiny_url(key)
 
         r.. 'error'
 
@@ -47,18 +47,18 @@ class TinyUrl2:
         """
         __ n.. url:
             r.. 'error'
-        __ url __ self.lg2st:
-            r.. self.get_tiny_url(self.lg2st[url])
-        __ url __ self.custom_lg2st:
-            r.. self.get_tiny_url(self.custom_lg2st[url])
+        __ url __ lg2st:
+            r.. get_tiny_url(lg2st[url])
+        __ url __ custom_lg2st:
+            r.. get_tiny_url(custom_lg2st[url])
 
-        key = self.get_hash_key(self.size)
-        w.... key __ self.st2lg:
-            key = self.get_hash_key(self.size)
+        key = get_hash_key(size)
+        w.... key __ st2lg:
+            key = get_hash_key(size)
 
-        self.lg2st[url] = key
-        self.st2lg[key] = url
-        r.. self.get_tiny_url(key)
+        lg2st[url] = key
+        st2lg[key] = url
+        r.. get_tiny_url(key)
 
     ___ shortToLong(self, url):
         """
@@ -68,20 +68,20 @@ class TinyUrl2:
         __ n.. url:
             r.. 'error'
 
-        key = url.r..(self.host, '')
+        key = url.r..(host, '')
 
-        __ key __ self.st2lg:
-            r.. self.st2lg[key]
-        __ key __ self.custom_st2lg:
-            r.. self.custom_st2lg[key]
+        __ key __ st2lg:
+            r.. st2lg[key]
+        __ key __ custom_st2lg:
+            r.. custom_st2lg[key]
 
         r.. 'error'
 
     ___ get_tiny_url(self, hash_key):
-        r.. '{}{}'.f..(self.host, hash_key)
+        r.. '{}{}'.f..(host, hash_key)
 
     ___ get_hash_key(self, size):
-        r.. ''.join(
-            random.choice(self.chars)
+        r.. ''.j..(
+            random.choice(chars)
             ___ _ __ r..(size)
         )

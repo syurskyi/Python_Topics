@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
+c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
     ___ sortList(self, head):
@@ -24,9 +24,9 @@ class Solution:
         __ slow != fast:
             prev.next = N..
             right = slow
-        left = self.sortList(left)
-        right = self.sortList(right)
-        r.. self.merge(left, right)
+        left = sortList(left)
+        right = sortList(right)
+        r.. merge(left, right)
 
     ___ merge(self, l1, l2):
         __ l1 __ N..

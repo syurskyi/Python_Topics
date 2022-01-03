@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param A: a sparse matrix
     @param B: a sparse matrix

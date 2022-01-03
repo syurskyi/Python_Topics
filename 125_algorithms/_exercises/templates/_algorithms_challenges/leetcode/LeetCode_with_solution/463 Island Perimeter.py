@@ -11,7 +11,7 @@ The island doesn't have "lakes" (water inside that isn't connected to the water
 around the island). One cell is a square with side length 1. The grid is
 rectangular, width and height don't exceed 100. Determine the perimeter of the island.
 """
-class Solution:
+c_ Solution:
     dirs = [(0, -1), (-1, 0), (0, 1), (1, 0)]
 
     ___ islandPerimeter(self, grid):
@@ -31,7 +31,7 @@ class Solution:
         ___ r0 __ r..(R):
             ___ c0 __ r..(C):
                 __ grid[r0][c0] __ 1:
-                    ___ dr, dc __ self.dirs:
+                    ___ dr, dc __ dirs:
                         r = r0 + dr
                         c = c0 + dc
                         __ r < 0 o. r >= R o. c < 0 o. c >= C:

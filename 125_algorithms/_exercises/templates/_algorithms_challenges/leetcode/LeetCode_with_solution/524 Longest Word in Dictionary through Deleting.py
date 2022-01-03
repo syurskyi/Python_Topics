@@ -26,7 +26,7 @@ The length of all the strings in the input won't exceed 1,000.
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ findLongestWord(self, s, d):
         """
         Compare subsequence: O(|S|) (two pointers)

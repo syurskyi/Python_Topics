@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ fourSumCount(self, A: List[i..], B: List[i..], C: List[i..], D: List[i..]) -> i..:
       m  {}
       ans  0

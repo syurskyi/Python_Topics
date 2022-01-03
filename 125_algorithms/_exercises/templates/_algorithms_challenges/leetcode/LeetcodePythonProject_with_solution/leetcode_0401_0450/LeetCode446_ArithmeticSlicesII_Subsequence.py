@@ -1,5 +1,5 @@
 
-class Solution(object):
+c_ Solution(object):
     ___ numberOfArithmeticSlices(self, A):
         nums = A
         n = l..(nums)
@@ -16,13 +16,13 @@ class Solution(object):
                 dp[i][diff] = c1+c2+1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 4, 6, 8, 10],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.numberOfArithmeticSlices(nums)
+            result = numberOfArithmeticSlices(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

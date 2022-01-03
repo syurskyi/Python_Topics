@@ -6,7 +6,7 @@ elements and if the difference between any two consecutive elements is the same.
 The function should return the number of arithmetic slices in the array A.
 """
 
-class Solution:
+c_ Solution:
     ___ c.. self, l):
         r.. (l-1) * l // 2
 
@@ -34,7 +34,7 @@ class Solution:
                 e += 1
 
             l = e - s
-            ret += self.c.. l)
+            ret += c.. l)
 
             s = e
 

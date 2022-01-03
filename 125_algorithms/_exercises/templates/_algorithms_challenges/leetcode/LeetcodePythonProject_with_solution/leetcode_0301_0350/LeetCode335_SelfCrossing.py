@@ -4,7 +4,7 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ isSelfCrossing(self, x):
         x = [0, 0, 0, 0]+x
         n = l..(x)
@@ -13,7 +13,7 @@ class Solution(object):
         w.... i < n a.. x[i] > x[i-2]:
             i += 1
         __ i __ n:
-            r.. False
+            r.. F..
         # check border
         __ x[i] >= x[i-2]-x[i-4]:
             x[i-1] -= x[i-3]
@@ -24,14 +24,14 @@ class Solution(object):
         r.. i != n
     
     ___ isSelfCrossing_another(self, x):
-        __ n.. x o. l..(x) < 3: r.. False
+        __ n.. x o. l..(x) < 3: r.. F..
         ___ i __ r..(3, l..(x)):
             __ x[i] >= x[i-2] a.. x[i-3] >= x[i-1]:
-                r.. True
+                r.. T..
             __ i >= 4 a.. x[i]+x[i-4] >= x[i-2] a.. x[i-1] __ x[i-3]:
-                r.. True
+                r.. T..
             __ i >= 5 a.. x[i-5]<=x[i-3] a.. x[i-4] <= x[i-2] a..\
                 x[i-1] <= x[i-3] a.. x[i-1]+x[i-4] >= x[i-3] a..\
                 x[i]+x[i-4] >= x[i-2] a.. x[i] <= x[i-2]:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..

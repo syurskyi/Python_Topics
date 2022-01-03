@@ -46,77 +46,77 @@ ____ threading _______ Semaphore
 
 ____ collections _______ deque
 
-class H2O:
-    ___ __init__(self):
-        self.hq = deque()
-        self.oq = deque()
+c_ H2O:
+    ___ - ):
+        hq = deque()
+        oq = deque()
 
     ___ hydrogen(self, releaseHydrogen: Callable[[], N..]) -> N..
-        self.hq.a..(releaseHydrogen)
-        self.try_output()
+        hq.a..(releaseHydrogen)
+        try_output()
 
     ___ oxygen(self, releaseOxygen: Callable[[], N..]) -> N..
-        self.oq.a..(releaseOxygen)
-        self.try_output()
+        oq.a..(releaseOxygen)
+        try_output()
 
-    ___ try_output(self):
-        __ l..(self.hq) >= 2 a.. l..(self.oq) >= 1:
-            self.hq.popleft()()
-            self.hq.popleft()()
-            self.oq.popleft()()
+    ___ try_output
+        __ l..(hq) >= 2 a.. l..(oq) >= 1:
+            hq.popleft()()
+            hq.popleft()()
+            oq.popleft()()
 
 
-class H2O_TLE2:
-    ___ __init__(self):
+c_ H2O_TLE2:
+    ___ - ):
         """
         Conditional Variable as counter? - Semaphore
         """
-        self.gates = [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
+        gates = [Semaphore(2), Semaphore(0)]  # inititally allow 2 H, 0 O
 
     ___ hydrogen(self, releaseHydrogen: Callable[[], N..]) -> N..
-        self.gates[0].a..
+        gates[0].a..
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
-        __ self.gates[0].acquire(blocking=False):  # self.gates[0]._value > 0
+        __ gates[0].acquire(blocking=F..):  # self.gates[0]._value > 0
             # still have available count
-            self.gates[0].release()
+            gates[0].release()
         ____:
-            self.gates[1].release()
+            gates[1].release()
 
 
     ___ oxygen(self, releaseOxygen: Callable[[], N..]) -> N..
-        self.gates[1].a..
+        gates[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
-        self.gates[0].release()
-        self.gates[0].release()
+        gates[0].release()
+        gates[0].release()
 
 
-class H2O_TLE:
-    ___ __init__(self):
+c_ H2O_TLE:
+    ___ - ):
         """
         Conditional Variable as counter?
         Fixed at HHO pattern
         """
-        self.h_cnt = 0
-        self.locks = [Lock() ___ _ __ r..(3)]
-        self.locks[1].a..
+        h_cnt = 0
+        locks = [Lock() ___ _ __ r..(3)]
+        locks[1].a..
 
 
     ___ hydrogen(self, releaseHydrogen: Callable[[], N..]) -> N..
-        self.locks[0].a..
-        self.h_cnt += 1
+        locks[0].a..
+        h_cnt += 1
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
-        __ self.h_cnt < 2:
-            self.locks[0].release()
+        __ h_cnt < 2:
+            locks[0].release()
         ____:
-            self.locks[1].release()
+            locks[1].release()
 
 
     ___ oxygen(self, releaseOxygen: Callable[[], N..]) -> N..
-        self.locks[1].a..
+        locks[1].a..
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
-        self.h_cnt = 0
-        self.locks[0].release()
+        h_cnt = 0
+        locks[0].release()

@@ -18,7 +18,7 @@ the h-index.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ hIndex(self, citations):
         """
         :type citations: List[int]

@@ -1,7 +1,7 @@
 ____ collections _______ Counter
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findContentChildren(self, children, cookies):
     """
     :type g: List[int]

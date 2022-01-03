@@ -3,7 +3,7 @@ Created on Feb 22, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ calculate(self, s):
         """
         :type s: str
@@ -40,7 +40,7 @@ class Solution(object):
         res += preVal
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             '3*3-5',
             '-5+3*5',
@@ -49,7 +49,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.calculate(s)
+            result = calculate(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 

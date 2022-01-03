@@ -7,7 +7,7 @@ Follow up:
 Could you do this in-place?
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ rotate(self, matrix):
         """
         rotate matrix n*n

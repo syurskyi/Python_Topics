@@ -3,7 +3,7 @@ Created on Jan 22, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ fullJustify(self, words, maxWidth):
         """
         :type words: List[str]
@@ -15,11 +15,11 @@ class Solution(object):
             __ num_of_letters + l..(w) + l..(cur) > maxWidth:
                 ___ i __ r..(maxWidth-num_of_letters):
                     cur[i%(l..(cur)-1 o. 1)] += ' '
-                res.a..(''.join(cur))
+                res.a..(''.j..(cur))
                 cur, num_of_letters    # list, 0
             cur += [w]
             num_of_letters += l..(w)
-        r.. res + [' '.join(cur).ljust(maxWidth)]
+        r.. res + [' '.j..(cur).ljust(maxWidth)]
     
     ___ fullJustify_orig(self, words, maxWidth):
         """
@@ -65,14 +65,14 @@ class Solution(object):
         result.a..(s)
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             (["This", "is", "an", "example", "of", "text", "justification."], 16),
         ]
         ___ words, maxWidth __ testCases:
             print('words: %s' % (words))
             print('maxWidth: %s' % (maxWidth))
-            result = self.fullJustify(words, maxWidth)
+            result = fullJustify(words, maxWidth)
             print('result: %s' % (result))
             print('-='*15+'-')
 

@@ -37,16 +37,16 @@ In calls to MyCalendar.book(start, end), start and end are integers in the range
 """
 
 
-class Node:
-    ___ __init__(self, s, e):
-        self.s = s
-        self.e = e
-        self.left = N..
-        self.right = N..
+c_ Node:
+    ___ - , s, e):
+        s = s
+        e = e
+        left = N..
+        right = N..
 
 
-class MyCalendar:
-    ___ __init__(self):
+c_ MyCalendar:
+    ___ - ):
         """
         binary search
         disregard
@@ -60,20 +60,20 @@ class MyCalendar:
         need a TreeMap
         but python does not have -> BST although unbalanced
         """
-        self.root = N..
+        root = N..
 
     ___ insert(self, node: Node, s: int, e: int) -> Node:
         __ n.. node:
             r.. Node(s, e)
 
         __ e <= node.s:
-            left = self.insert(node.left, s, e)
+            left = insert(node.left, s, e)
             __ left __ N..
                 r.. N..
             node.left = left
             r.. node
         ____ s >= node.e:
-            right = self.insert(node.right, s, e)
+            right = insert(node.right, s, e)
             __ right __ N..
                 r.. N..
             node.right = right
@@ -82,12 +82,12 @@ class MyCalendar:
             r.. N..
 
     ___ book(self, start: int, end: int) -> bool:
-        ret = self.insert(self.root, start, end)
+        ret = insert(root, start, end)
         __ ret __ N..
-            r.. False
+            r.. F..
 
-        self.root = ret
-        r.. True
+        root = ret
+        r.. T..
 
 
 # Your MyCalendar object will be instantiated and called as such:

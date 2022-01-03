@@ -3,7 +3,7 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ exclusiveTime(self, n, logs):
         """
         :type n: int
@@ -25,7 +25,7 @@ class Solution(object):
                 prevTime += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 2,
@@ -40,7 +40,7 @@ class Solution(object):
         ___ n, logs __ testCases:
             print('n: %s' % n)
             print('logs: %s' % logs)
-            result = self.exclusiveTime(n, logs)
+            result = exclusiveTime(n, logs)
             print('result: %s' % result)
             print('-='*30+'-')
 

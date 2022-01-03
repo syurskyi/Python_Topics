@@ -5,19 +5,19 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
     ___ hasPathSum(self, root, s..):
         __ root __ N..
-            r.. False
+            r.. F..
         ____ root.left __ N.. a.. root.right __ N..
             __ s.. __ root.val:
-                r.. True
+                r.. T..
             ____:
-                r.. False
+                r.. F..
         ____:
             s.. -= root.val
-            r.. (self.hasPathSum(root.left, s..)
-                    o. self.hasPathSum(root.right, s..))
+            r.. (hasPathSum(root.left, s..)
+                    o. hasPathSum(root.right, s..))

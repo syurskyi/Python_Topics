@@ -4,7 +4,7 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ parseTernary(self, expression):
         __ n.. expression: r.. ''
         stack    # list
@@ -55,4 +55,4 @@ class Solution(object):
         __ l..(subExp) __ 1:
             r.. subExp
         ____:
-            r.. self.parseTernary(subExp)
+            r.. parseTernary(subExp)

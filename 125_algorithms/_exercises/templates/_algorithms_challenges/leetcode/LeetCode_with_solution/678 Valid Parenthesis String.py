@@ -25,7 +25,7 @@ The string size will be in the range [1, 100].
 """
 
 
-class Solution:
+c_ Solution:
     ___ checkValidString(self, s: s..) -> bool:
         """
         Brute force: dfs branching on "*".
@@ -46,7 +46,7 @@ class Solution:
                 ____ stk_star:
                     stk_star.pop()
                 ____:
-                    r.. False
+                    r.. F..
 
         w.... stk_left a.. stk_star a.. stk_star[-1] > stk_left[-1]:
             stk_star.pop()
@@ -56,6 +56,6 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().checkValidString("(*))") __ True
-    ... Solution().checkValidString("*(") __ False
-    ... Solution().checkValidString("(*)") __ True
+    ... Solution().checkValidString("(*))") __ T..
+    ... Solution().checkValidString("*(") __ F..
+    ... Solution().checkValidString("(*)") __ T..

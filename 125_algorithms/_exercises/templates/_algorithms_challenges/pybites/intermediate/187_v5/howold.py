@@ -6,13 +6,13 @@ RETURN_FORMAT = '{name} was {age} years old when {movie} came out.'
 
 
 @dataclass
-class Actor:
+c_ Actor:
     name: s..
     born: s..
 
 
 @dataclass
-class Movie:
+c_ Movie:
     title: s..
     release_date: s..
 

@@ -3,7 +3,7 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ dominantIndex(self, nums):
         """
         :type nums: List[int]
@@ -22,14 +22,14 @@ class Solution(object):
                 second = num
         r.. fInd __ first >= 2*second ____ -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 6, 1, 0],
             [1, 2, 3, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.dominantIndex(nums)
+            result = dominantIndex(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

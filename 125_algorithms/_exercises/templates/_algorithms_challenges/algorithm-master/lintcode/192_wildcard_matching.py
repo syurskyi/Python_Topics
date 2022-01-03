@@ -20,7 +20,7 @@ case 3: `P[j-1]` is `a` and `a` == `P[j-1]` == `S[i-1]`
 """
 
 
-class Solution:
+c_ Solution:
     ___ isMatch(self, s, p):
         """
         :type s: str, target string
@@ -28,9 +28,9 @@ class Solution:
         :rtype: bool
         """
         __ s __ N.. o. p __ N..
-            r.. False
+            r.. F..
         __ s __ '' a.. p __ '':
-            r.. True
+            r.. T..
 
         ANY = '?'
         ANY_MULTI = '*'
@@ -40,8 +40,8 @@ class Solution:
         `dp[i][j]` means the substr end at `S[i - 1]` was matched by
         the substr end at `P[j - 1]`
         """
-        dp = [[False] * (n + 1) ___ _ __ r..(m + 1)]
-        dp[0][0] = True
+        dp = [[F..] * (n + 1) ___ _ __ r..(m + 1)]
+        dp[0][0] = T..
         # dp[i][0] = False
         # dp[0][j] -> need to check
 
@@ -50,8 +50,8 @@ class Solution:
                 __ p[j - 1] __ ANY_MULTI:
                     dp[i][j] = dp[i - 1][j] o. dp[i][j - 1]
                 ____ p[j - 1] __ ANY a.. dp[i - 1][j - 1]:
-                    dp[i][j] = True
+                    dp[i][j] = T..
                 ____ p[j - 1] __ s[i - 1] a.. dp[i - 1][j - 1]:
-                    dp[i][j] = True
+                    dp[i][j] = T..
 
         r.. dp[m][n]

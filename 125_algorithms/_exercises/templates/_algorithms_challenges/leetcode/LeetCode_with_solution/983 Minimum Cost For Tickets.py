@@ -47,7 +47,7 @@ costs.length == 3
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ mincostTickets(self, days: List[int], costs: List[int]) -> int:
         """
         Iterate backward.

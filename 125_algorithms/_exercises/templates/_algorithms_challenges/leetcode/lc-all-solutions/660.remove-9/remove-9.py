@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ newInteger(self, n):
     """
     :type n: int

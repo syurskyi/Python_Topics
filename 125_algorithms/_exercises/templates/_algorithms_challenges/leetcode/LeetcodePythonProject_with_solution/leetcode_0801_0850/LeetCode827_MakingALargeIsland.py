@@ -3,7 +3,7 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ largestIsland(self, grid):
         """
         :type grid: List[List[int]]
@@ -12,11 +12,11 @@ class Solution(object):
         n = l..(grid)
         index = 3
         res = 0
-        areaMap = {}
+        areaMap    # dict
         ___ i __ r..(n):
             ___ j __ r..(n):
                 __ grid[i][j] __ 1:
-                    areaMap[index] = self.dfs(grid, i, j, index)
+                    areaMap[index] = dfs(grid, i, j, index)
                     res = max(res, areaMap[index])
                     index += 1
         ___ i __ r..(n):
@@ -39,5 +39,5 @@ class Solution(object):
         grid[i][j] = index
         ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
             __ 0 <= x < n a.. 0 <= y < n a.. grid[x][y] __ 1:
-                area += self.dfs(grid, x, y, index)
+                area += dfs(grid, x, y, index)
         r.. area+1

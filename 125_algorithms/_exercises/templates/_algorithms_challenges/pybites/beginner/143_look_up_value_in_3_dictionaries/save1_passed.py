@@ -11,4 +11,4 @@ ___ get_person_age(name):
        greatest N (so group3 > group2 > group1)
     """
     groups = {**group1, **group2, **group3}
-    r.. groups.get(s..(name).lower(), NOT_FOUND)
+    r.. groups.get(s..(name).l.., NOT_FOUND)

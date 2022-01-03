@@ -5,11 +5,11 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @return a list of tree node
     ___ generateTrees(self, n):
         a = r..(1, n + 1)
-        r.. self.generate_bst(a)
+        r.. generate_bst(a)
 
     ___ generate_bst(self, a):
         __ n.. a:
@@ -17,8 +17,8 @@ class Solution:
         ____:
             res    # list
             ___ i, c __ e..(a):
-                left = self.generate_bst(a[:i])
-                right = self.generate_bst(a[i + 1:])
+                left = generate_bst(a[:i])
+                right = generate_bst(a[i + 1:])
                 ___ l __ left:
                     ___ r __ right:
                         root = TreeNode(c)

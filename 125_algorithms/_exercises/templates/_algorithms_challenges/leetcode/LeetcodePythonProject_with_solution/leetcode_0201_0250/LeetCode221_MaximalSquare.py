@@ -4,7 +4,7 @@ Created on Feb 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maximalSquare(self, matrix):
         """
         :type matrix: List[List[str]]
@@ -21,7 +21,7 @@ class Solution(object):
                     maxLen = max(maxLen, dp[i+1][j+1])
         r.. maxLen*maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 '111',
@@ -36,7 +36,7 @@ class Solution(object):
         ___ matrix __ testCases:
             print('matrix: %s' % matrix)
             matrix = [l..(x) ___ x __ matrix]
-            result = self.maximalSquare(matrix)
+            result = maximalSquare(matrix)
             print('result: %s' % (result))
             print('-='*20+'-')
     

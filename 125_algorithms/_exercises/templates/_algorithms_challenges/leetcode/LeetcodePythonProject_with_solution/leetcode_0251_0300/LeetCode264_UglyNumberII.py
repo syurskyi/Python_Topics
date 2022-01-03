@@ -4,7 +4,7 @@ Created on Mar 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ nthUglyNumber(self, n):
         """
         :type n: int
@@ -20,14 +20,14 @@ class Solution(object):
             __ val __ res[ind5]*5: ind5 += 1
         r.. res[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             10,
             20,
         ]
         ___ n __ testCases:
             print('n: %s' % (n))
-            result = self.nthUglyNumber(n)
+            result = nthUglyNumber(n)
             print('result: %s' % (result))
             print('-='*30+'-')
 

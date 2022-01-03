@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ decodeString(self, s):
     """
     :type s: str

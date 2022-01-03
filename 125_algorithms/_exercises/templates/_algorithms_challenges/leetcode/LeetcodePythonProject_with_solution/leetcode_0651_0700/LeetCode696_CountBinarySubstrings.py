@@ -3,7 +3,7 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ countBinarySubstrings(self, s):
         """
         :type s: str
@@ -27,7 +27,7 @@ class Solution(object):
             i += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             '00110011',
 #             '10101',
@@ -35,7 +35,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.countBinarySubstrings(s)
+            result = countBinarySubstrings(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

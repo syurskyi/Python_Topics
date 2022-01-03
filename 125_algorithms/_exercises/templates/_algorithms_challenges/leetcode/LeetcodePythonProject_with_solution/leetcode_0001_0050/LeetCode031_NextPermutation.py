@@ -4,7 +4,7 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ nextPermutation(self, nums):
         """
         :type nums: List[int]
@@ -13,7 +13,7 @@ class Solution(object):
         j = l..(nums)-1
         w.... j > 0 a.. nums[j-1] >= nums[j]:
             j -= 1
-        self.reverse(nums, j, l..(nums)-1)
+        reverse(nums, j, l..(nums)-1)
         __ j __ 0:
             r..
         i = j-1
@@ -27,7 +27,7 @@ class Solution(object):
             i += 1
             j -= 1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 3],
             [3, 2, 1],
@@ -35,7 +35,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            self.nextPermutation(nums)
+            nextPermutation(nums)
             print('nums: %s' % nums)
             print('-='*30+'-')
 

@@ -13,7 +13,7 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ singleNumber(self, nums):
         """
         Constant space

@@ -4,10 +4,10 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ isRectangleCover(self, rectangles):
         __ n.. rectangles:
-            r.. False
+            r.. F..
         x1, x2, y1, y2 = float('inf'), float('-inf'), float('inf'), float('-inf')
         hashset = set()
         area = 0
@@ -41,7 +41,7 @@ class Solution(object):
             (x2, y1) n.. __ hashset o.\
             (x2, y2) n.. __ hashset o.\
             l..(hashset) != 4:
-            r.. False
+            r.. F..
         
         r.. area __ (x2-x1)*(y2-y1)
         

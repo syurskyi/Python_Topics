@@ -13,7 +13,7 @@ Test Case:
 """
 
 
-class Solution:
+c_ Solution:
     NORMAL = 0
     VIRUS = 1
     EX_VIRUS = -1
@@ -37,7 +37,7 @@ class Solution:
             r.. walls
 
         w... T...
-            _walls = self.build_walls(G)
+            _walls = build_walls(G)
             __ _walls __ 0:
                 break
             walls += _walls
@@ -49,15 +49,15 @@ class Solution:
         ex_virus    # list
         spreading    # list
         walls    # list
-        visited = [[False] * n ___ _ __ r..(m)]
+        visited = [[F..] * n ___ _ __ r..(m)]
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ G[x][y] __ self.VIRUS a.. n.. visited[x][y]:
+                __ G[x][y] __ VIRUS a.. n.. visited[x][y]:
                     ex_virus.a..(set())
                     spreading.a..(set())
                     walls.a..(0)
-                    self.dfs(x, y, G, visited, ex_virus, spreading, walls)
+                    dfs(x, y, G, visited, ex_virus, spreading, walls)
 
         _max_save = _max_i = -1
         s = l..(spreading)
@@ -73,10 +73,10 @@ class Solution:
         ___ i __ r..(s):
             __ i __ _max_i:
                 ___ x, y __ ex_virus[i]:
-                    G[x][y] = self.EX_VIRUS
+                    G[x][y] = EX_VIRUS
             ____:
                 ___ x, y __ spreading[i]:
-                    G[x][y] = self.VIRUS
+                    G[x][y] = VIRUS
 
         r.. walls[_max_i]
 
@@ -85,13 +85,13 @@ class Solution:
         __ n.. (0 <= x < m a.. 0 <= y < n) o. visited[x][y]:
             r..
 
-        __ G[x][y] __ self.VIRUS:
-            visited[x][y] = True
+        __ G[x][y] __ VIRUS:
+            visited[x][y] = T..
             ex_virus[-1].add((x, y))
-            ___ dx, dy __ self.V:
+            ___ dx, dy __ V:
                 _x = x + dx
                 _y = y + dy
-                self.dfs(_x, _y, G, visited, ex_virus, spreading, walls)
-        ____ G[x][y] __ self.NORMAL:
+                dfs(_x, _y, G, visited, ex_virus, spreading, walls)
+        ____ G[x][y] __ NORMAL:
             spreading[-1].add((x, y))
             walls[-1] += 1

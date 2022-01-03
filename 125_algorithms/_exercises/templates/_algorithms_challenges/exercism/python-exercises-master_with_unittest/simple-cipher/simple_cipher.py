@@ -1,8 +1,8 @@
-class Cipher(object):
-    ___ __init__(self):
+c_ Cipher(object):
+    ___ - ):
         pass
 
 
-class Caesar(object):
-    ___ __init__(self):
+c_ Caesar(object):
+    ___ - ):
         pass

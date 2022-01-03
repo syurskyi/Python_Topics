@@ -28,16 +28,16 @@ cache.get(4);       // returns 4
 """
 
 
-class Node:
-    ___ __init__(self, key, val):
-        self.key = key
-        self.val = val
-        self.prev, self.next = N.., N..
+c_ Node:
+    ___ - , key, val):
+        key = key
+        val = val
+        prev, next = N.., N..
 
 
-class LRUCache:
+c_ LRUCache:
 
-    ___ __init__(self, capacity: int):
+    ___ - , capacity: int):
         """
         O(1) look up - Map
         O(1) update most recent vs. least recent - Linked List
@@ -47,47 +47,47 @@ class LRUCache:
 
         Essentially it is the OrderedDict
         """
-        self.head = Node(N.., N..)
-        self.tail = Node(N.., N..)
-        self.head.next = self.tail
-        self.tail.prev = self.head
-        self.cap = capacity
-        self.map = {}
+        head = Node(N.., N..)
+        tail = Node(N.., N..)
+        head.next = tail
+        tail.prev = head
+        cap = capacity
+        map    # dict
 
     ___ get(self, key: int) -> int:
-        __ key __ self.map:
-            node = self.map[key]
-            self._remove(key)
-            self._appendleft(node)
+        __ key __ map:
+            node = map[key]
+            _remove(key)
+            _appendleft(node)
             r.. node.val
 
         r.. -1
 
     ___ put(self, key: int, value: int) -> N..
-        __ key __ self.map:
-            self._remove(key)
-        ____ l..(self.map) >= self.cap:
-            node = self.tail.prev
-            self._remove(node.key)
+        __ key __ map:
+            _remove(key)
+        ____ l..(map) >= cap:
+            node = tail.prev
+            _remove(node.key)
 
         node = Node(key, value)
-        self._appendleft(node)
+        _appendleft(node)
 
     ___ _appendleft(self, node: Node):
-        self.map[node.key] = node  # update/delete map in these two operators
-        nxt = self.head.next
-        self.head.next = node
-        node.prev = self.head
+        map[node.key] = node  # update/delete map in these two operators
+        nxt = head.next
+        head.next = node
+        node.prev = head
         node.next = nxt
         nxt.prev = node
 
     ___ _remove(self, key: int):
-        node = self.map[key]
+        node = map[key]
         prev = node.prev
         nxt = node.next
         prev.next = nxt
         nxt.prev = prev
-        del self.map[key]  # update/delete map in these two operators
+        del map[key]  # update/delete map in these two operators
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)

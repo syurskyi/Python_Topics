@@ -18,7 +18,7 @@ The total number of unique paths is 2.
 Note: m and n will be at most 100.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ uniquePathsWithObstacles(self, obstacleGrid):
         """
         dp

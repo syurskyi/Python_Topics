@@ -3,7 +3,7 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ pyramidTransition(self, bottom, allowed):
         """
         :type bottom: str
@@ -11,8 +11,8 @@ class Solution(object):
         :rtype: bool
         """
         __ n.. bottom:
-            r.. False
-        hashmap = {}
+            r.. F..
+        hashmap    # dict
         ___ s __ allowed:
             __ s[:2] __ hashmap:
                 hashmap[s[:2]].add(s[-1])
@@ -23,9 +23,9 @@ class Solution(object):
         w.... queue:
             __ level __ 1:
                 __ queue a.. queue[0]:
-                    r.. True
+                    r.. T..
                 ____:
-                    r.. False
+                    r.. F..
             nextQueue = [set() ___ _ __ r..(level-1)]
             ___ i __ r..(level-1):
                 arr1 = queue[i]
@@ -35,12 +35,12 @@ class Solution(object):
                         __ c1+c2 __ hashmap:
                             nextQueue[i] = nextQueue[i].union(hashmap[c1+c2])
                 __ n.. nextQueue[i]:
-                    r.. False
+                    r.. F..
             queue = nextQueue
             level -= 1
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [ "XYZ", ["XYD", "YZE", "DEA", "FFF"], ],
             [ 'XXYX', ["XXX", "XXY", "XYX", "XYY", "YXZ"], ],
@@ -52,7 +52,7 @@ class Solution(object):
         ___ bottom, allowed __ testCases:
             print('bottom: %s' % bottom)
             print('allowed: %s' % allowed)
-            result = self.pyramidTransition(bottom, allowed)
+            result = pyramidTransition(bottom, allowed)
             print('result: %s' % result)
             print('-='*30+'-')
 

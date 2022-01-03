@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param s: the string that needs to be sorted
     @return: sorted string
@@ -7,4 +7,4 @@ class Solution:
         __ n.. s:
             r.. ''
 
-        r.. ''.join(s..(s, key=l.... c: (-s.c.. c), c)))
+        r.. ''.j..(s..(s, key=l.... c: (-s.c.. c), c)))

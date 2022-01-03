@@ -1,7 +1,7 @@
 _______ heapq
 
 
-class Solution(object):
+c_ Solution(object):
   ___ getSkyline(self, buildings):
     """
     :type buildings: List[List[int]]

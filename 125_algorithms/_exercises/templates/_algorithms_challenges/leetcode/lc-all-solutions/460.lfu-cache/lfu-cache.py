@@ -1,4 +1,4 @@
-class List(object):
+c_ List(object):
   @staticmethod
   ___ delete(elem):
     elem.prev.next = elem.next
@@ -30,72 +30,72 @@ class List(object):
     head.prev = head.next = head
 
 
-class FreqNode(object):
-  ___ __init__(self, freq):
-    self.prev = self.next = N..
-    self.freq = freq
-    self.head = Cache(-1, -1, self)
-    List.initHead(self.head)
+c_ FreqNode(object):
+  ___ - , freq):
+    prev = next = N..
+    freq = freq
+    head = Cache(-1, -1, self)
+    List.initHead(head)
 
-  ___ popCache(self):
-    head = self.head
+  ___ popCache
+    head = head
     ret = List.delete(head.next)
     __ List.isEmpty(head):
       List.delete(self)
     r.. ret
 
 
-class Cache(object):
-  ___ __init__(self, key, val, freqNode):
-    self.prev = self.next = N..
-    self.freqNode = freqNode
-    self.val = val
-    self.key = key
+c_ Cache(object):
+  ___ - , key, val, freqNode):
+    prev = next = N..
+    freqNode = freqNode
+    val = val
+    key = key
 
-  ___ increaseFreq(self):
-    freqNode = self.freqNode
+  ___ increaseFreq
+    freqNode = freqNode
     newFreqNode = N..
     __ List.isEmpty(freqNode) o. freqNode.next.freq != freqNode.freq + 1:
-      newFreqNode = FreqNode(self.freqNode.freq + 1)
+      newFreqNode = FreqNode(freqNode.freq + 1)
       List.insertAfter(freqNode, newFreqNode)
     ____:
       newFreqNode = freqNode.next
-    self.freqNode = newFreqNode
+    freqNode = newFreqNode
     List.delete(self)
     List.a..(newFreqNode.head, self)
     __ List.isEmpty(freqNode.head):
       List.delete(freqNode)
 
 
-class LFUCache(object):
-  ___ __init__(self, capacity):
-    self.d = {}
-    self.cap = capacity
-    self.head = FreqNode(-1)
-    List.initHead(self.head)
+c_ LFUCache(object):
+  ___ - , capacity):
+    d    # dict
+    cap = capacity
+    head = FreqNode(-1)
+    List.initHead(head)
 
   ___ get(self, key):
-    __ key n.. __ self.d:
+    __ key n.. __ d:
       r.. -1
-    cacheNode = self.d[key]
+    cacheNode = d[key]
     cacheNode.increaseFreq()
     r.. cacheNode.val
 
   ___ set(self, key, value):
-    __ self.cap __ 0:
+    __ cap __ 0:
       r..
-    __ key __ self.d:
-      cacheNode = self.d[key]
+    __ key __ d:
+      cacheNode = d[key]
       cacheNode.val = value
       cacheNode.increaseFreq()
     ____:
-      __ l..(self.d) >= self.cap:
-        del self.d[self.head.next.popCache().key]
+      __ l..(d) >= cap:
+        del d[head.next.popCache().key]
       newFreqNode = FreqNode(0)
       newCacheNode = Cache(key, value, newFreqNode)
       List.a..(newFreqNode.head, newCacheNode)
-      List.insertAfter(self.head, newFreqNode)
-      self.d[key] = newCacheNode
+      List.insertAfter(head, newFreqNode)
+      d[key] = newCacheNode
       newCacheNode.increaseFreq()
 
 # Your LFUCache object will be instantiated and called as such:

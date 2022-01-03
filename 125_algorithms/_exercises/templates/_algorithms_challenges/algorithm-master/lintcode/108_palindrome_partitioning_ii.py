@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param S, a string
     # @return an integer
     ___ minCut(self, S):
@@ -7,7 +7,7 @@ class Solution:
 
         n = l..(S)
         INFINITY = float('inf')
-        is_palindrome = self.get_palin_map(S)
+        is_palindrome = get_palin_map(S)
 
         """
         `dp[i]` means the minimum palindrome count
@@ -28,11 +28,11 @@ class Solution:
 
     ___ get_palin_map(self, S):
         n = l..(S)
-        is_palindrome = [[False] * n ___ _ __ r..(n)]
-        is_palindrome[0][0] = True
+        is_palindrome = [[F..] * n ___ _ __ r..(n)]
+        is_palindrome[0][0] = T..
 
         ___ end __ r..(1, n):
-            is_palindrome[end][end] = True
+            is_palindrome[end][end] = T..
 
             start = end - 1
             is_palindrome[start][end] = (S[start] __ S[end])

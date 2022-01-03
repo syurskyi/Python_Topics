@@ -1,4 +1,4 @@
-___ chain():
+___ c__():
 
     animals = ["fly", "spider", "bird", "cat", "dog", "goat", "cow", "horse"]
 
@@ -16,7 +16,7 @@ ___ chain():
 
     song = ""
     verse = ""
-    chain = ""
+    c__ = ""
 
     ___ number, animal __ e..(animals):
         verse = old_lady + animal + ".\n"
@@ -25,17 +25,17 @@ ___ chain():
             verse += phrases[6]
         ____:
             __ number __ 0:
-                chain = swallowed + animal + '.\n'
+                c__ = swallowed + animal + '.\n'
             ____ number __ 1:
                 verse += "It" + phrases[0] + "\n"
-                chain = chain.r..("<animal>", animal)
-                verse += chain
-                chain = swallowed+animal+" that"+phrases[0]+"\n"+chain
+                c__ = c__.r..("<animal>", animal)
+                verse += c__
+                c__ = swallowed+animal+" that"+phrases[0]+"\n"+c__
             ____:
                 verse += phrases[number-1] + "\n"
-                chain = chain.r..("<animal>", animal)
-                verse += chain
-                chain = swallowed + animal + ".\n" + chain
+                c__ = c__.r..("<animal>", animal)
+                verse += c__
+                c__ = swallowed + animal + ".\n" + c__
 
             verse += die + "\n"
 
@@ -50,7 +50,7 @@ ___ verses(letter):
 
 
 ___ recite(start_verse, end_verse):
-    generated = [verse.s...s..("\n") ___ verse __ verses(chain())]
+    generated = [verse.s...s..("\n") ___ verse __ verses(c__())]
     __ start_verse __ end_verse:
         r.. generated[start_verse-1]
     ____:

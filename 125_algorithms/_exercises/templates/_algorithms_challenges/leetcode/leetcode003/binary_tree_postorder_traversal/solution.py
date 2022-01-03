@@ -18,7 +18,7 @@ return [3,2,1].
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ postorderTraversal(self, root):
         """
         :type root: TreeNode

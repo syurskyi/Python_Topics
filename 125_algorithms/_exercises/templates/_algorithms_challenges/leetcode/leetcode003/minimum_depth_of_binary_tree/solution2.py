@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return an integer
     ___ minDepth(self, root):

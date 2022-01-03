@@ -5,14 +5,14 @@ _______ xml.etree.ElementTree as ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.join(tmp, 'feed')
+tempfile = os.path.j..(tmp, 'feed')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )
 
 with open(tempfile) as f:
-    content = f.read().lower()
+    content = f.read().l..
     root = ET.fromstring(content)
     categories = [category.text ___ category __ root.iter("category")]
 

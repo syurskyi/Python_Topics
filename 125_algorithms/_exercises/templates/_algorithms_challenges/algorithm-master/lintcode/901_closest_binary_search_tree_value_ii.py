@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ closestKValues(self, root, target, k):
         """
         :type root: TreeNode
@@ -20,7 +20,7 @@ class Solution:
             r.. ans
 
         vals    # list
-        self.inorder_traverse(root, vals)
+        inorder_traverse(root, vals)
 
         n = l..(vals)
         i = 0
@@ -55,6 +55,6 @@ class Solution:
         __ n.. root:
             r..
 
-        self.inorder_traverse(root.left, vals)
+        inorder_traverse(root.left, vals)
         vals.a..(root.val)
-        self.inorder_traverse(root.right, vals)
+        inorder_traverse(root.right, vals)

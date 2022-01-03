@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ romanToInt(self, s):
         """
         :type s: str

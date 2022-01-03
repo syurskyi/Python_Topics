@@ -4,28 +4,28 @@ ____ transpose _______ transpose
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-class TransposeTests(unittest.TestCase):
-    ___ test_empty_string(self):
+c_ TransposeTests(unittest.TestCase):
+    ___ test_empty_string
         input_line = ""
         expected = ""
-        self.assertEqual(
+        assertEqual(
             transpose(input_line),
             expected
         )
 
-    ___ test_two_characters_in_a_row(self):
-        self.assertEqual(
+    ___ test_two_characters_in_a_row
+        assertEqual(
             transpose("A1"),
-            "\n".join(["A", "1"])
+            "\n".j..(["A", "1"])
         )
 
-    ___ test_two_characters_in_a_column(self):
-        self.assertEqual(
-            transpose("\n".join(["A", "1"])),
+    ___ test_two_characters_in_a_column
+        assertEqual(
+            transpose("\n".j..(["A", "1"])),
             "A1"
         )
 
-    ___ test_simple(self):
+    ___ test_simple
         input_line = [
             "ABC",
             "123"
@@ -36,12 +36,12 @@ class TransposeTests(unittest.TestCase):
             "C3"
         ]
 
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
-    ___ test_single_line(self):
+    ___ test_single_line
         input_line = ["Single line."]
         expected = [
             "S",
@@ -57,12 +57,12 @@ class TransposeTests(unittest.TestCase):
             "e",
             "."
         ]
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
-    ___ test_first_line_longer_than_second_line(self):
+    ___ test_first_line_longer_than_second_line
         input_line = [
             "The fourth line.",
             "The fifth line."
@@ -85,12 +85,12 @@ class TransposeTests(unittest.TestCase):
             "e.",
             "."
         ]
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
-    ___ test_second_line_longer_than_first_line(self):
+    ___ test_second_line_longer_than_first_line
         input_line = [
             "The first line.",
             "The second line."
@@ -113,12 +113,12 @@ class TransposeTests(unittest.TestCase):
             ".e",
             " ."
         ]
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
-    ___ test_square(self):
+    ___ test_square
         input_line = [
             "HEART",
             "EMBER",
@@ -133,12 +133,12 @@ class TransposeTests(unittest.TestCase):
             "RESIN",
             "TREND"
         ]
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
-    ___ test_rectangle(self):
+    ___ test_rectangle
         input_line = [
             "FRACTURE",
             "OUTLINED",
@@ -155,12 +155,12 @@ class TransposeTests(unittest.TestCase):
             "RENT",
             "EDGE"
         ]
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
-    ___ test_triangle(self):
+    ___ test_triangle
         input_line = [
             "T",
             "EE",
@@ -177,12 +177,12 @@ class TransposeTests(unittest.TestCase):
             "    ER",
             "     R"
         ]
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
-    ___ test_many_lines(self):
+    ___ test_many_lines
         input_line = [
             "Chor. Two households, both alike in dignity,",
             "In fair Verona, where we lay our scene,",
@@ -254,9 +254,9 @@ class TransposeTests(unittest.TestCase):
             "          e  .",
             "          ,"
         ]
-        self.assertEqual(
-            transpose("\n".join(input_line)),
-            "\n".join(expected)
+        assertEqual(
+            transpose("\n".j..(input_line)),
+            "\n".j..(expected)
         )
 
 

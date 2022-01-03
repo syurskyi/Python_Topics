@@ -5,7 +5,7 @@ class Document:
         self.id = id
         self.content = content
 '''
-class InvertedIndex:
+c_ InvertedIndex:
 
     # @param {Document} value is a document
     ___ mapper(self, _, value):

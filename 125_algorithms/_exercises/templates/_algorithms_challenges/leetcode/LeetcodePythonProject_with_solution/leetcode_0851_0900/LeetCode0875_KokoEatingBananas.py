@@ -3,7 +3,7 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minEatingSpeed(self, piles, H):
         """
         :type piles: List[int]
@@ -22,7 +22,7 @@ class Solution(object):
                 l = mid+1
         r.. l
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [3,6,7,11],
@@ -38,7 +38,7 @@ class Solution(object):
             ],
         ]
         ___ piles, h __ testCases:
-            res = self.minEatingSpeed(piles, h)
+            res = minEatingSpeed(piles, h)
             print('res: %s' % s..(res))
             print('-='*30+'-')
 

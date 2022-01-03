@@ -1,6 +1,6 @@
 ____ typing _______ Tuple
 ____ collections _______ Counter
-_______ re
+_______ __
 
 PAT = r'^\W+|\W+$|^_+|_+$'  # leading or trailing non-word characters
 
@@ -20,7 +20,7 @@ ___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
     __ n.. isi..(text, s..):
         raise ValueError('bad input')
 
-    words = l..(map(l.... x: re.sub(PAT, '', x.r..('_', '')),
+    words = l..(map(l.... x: __.sub(PAT, '', x.r..('_', '')),
                      text.s..(' ')))
     counts    # list
     ___ word __ words:

@@ -4,12 +4,12 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ rob(self, nums):
         __ n.. nums: r.. 0
         __ l..(nums) __ 1: r.. nums[0]
-        r.. max(self.robHelper(nums, 0, l..(nums)-2),\
-                   self.robHelper(nums, 1, l..(nums)-1))
+        r.. max(robHelper(nums, 0, l..(nums)-2),\
+                   robHelper(nums, 1, l..(nums)-1))
     
     ___ robHelper(self, nums, lo, hi):
         include, exclude = 0, 0
@@ -44,7 +44,7 @@ class Solution(object):
                 dp1[i] = max(dp1[i-1], dp1[i-2] + nums[i])
         r.. max(dp0[-2], dp1[-1])
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 1, 1],
 #             [1, 1],
@@ -53,7 +53,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.rob(nums)
+            result = rob(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

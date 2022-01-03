@@ -1,12 +1,12 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ minArea(self, image, x, y):
-    top = self.searchRows(image, 0, x, True)
-    bottom = self.searchRows(image, x + 1, l..(image), False)
-    left = self.searchCols(image, 0, y, top, bottom, True)
-    right = self.searchCols(image, y + 1, l..(image[0]), top, bottom, False)
+    top = searchRows(image, 0, x, T..)
+    bottom = searchRows(image, x + 1, l..(image), F..)
+    left = searchCols(image, 0, y, top, bottom, T..)
+    right = searchCols(image, y + 1, l..(image[0]), top, bottom, F..)
     r.. (right - left) * (bottom - top)
 
   ___ searchRows(self, image, i, j, opt):

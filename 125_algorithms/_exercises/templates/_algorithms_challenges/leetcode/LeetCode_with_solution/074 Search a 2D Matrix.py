@@ -17,7 +17,7 @@ Given target = 3, return true.
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ searchMatrix(self, mat, target):
         """
         binary search. Two exactly the same binary search algorithm
@@ -26,7 +26,7 @@ class Solution(object):
         :return: a boolean
         """
         __ n.. mat:
-            r.. False
+            r.. F..
 
         m = l..(mat)
         n = l..(mat[0])
@@ -37,7 +37,7 @@ class Solution(object):
         w.... lo < hi:
             mid = (lo+hi)/2
             __ mat[mid][0] __ target:
-                r.. True
+                r.. T..
             ____ mat[mid][0] < target:
                 lo = mid+1
             ____:
@@ -51,14 +51,14 @@ class Solution(object):
         w.... lo < hi:
             mid = (lo+hi)/2
             __ lst[mid] __ target:
-                r.. True
+                r.. T..
             ____ lst[mid] < target:
                 lo = mid+1
             ____:
                 hi = mid
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().searchMatrix([[1], [3]], 3) __ True
+    ... Solution().searchMatrix([[1], [3]], 3) __ T..

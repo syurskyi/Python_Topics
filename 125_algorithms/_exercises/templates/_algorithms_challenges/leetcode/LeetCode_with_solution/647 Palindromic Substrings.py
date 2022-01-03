@@ -20,7 +20,7 @@ The input string length won't exceed 1000.
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ countSubstrings(self, s):
         """
         for every s[i:j], check whether it is a palindrome
@@ -37,15 +37,15 @@ class Solution:
         F = defaultdict(l....: defaultdict(bool))
         n = l..(s)
         ___ i __ r..(n):
-            F[i][i] = True
-            F[i][i+1] = True
+            F[i][i] = T..
+            F[i][i+1] = T..
 
         ___ i __ r..(n-1, -1, -1):
             ___ j __ r..(i+2, n+1):
                 __ s[i] __ s[j-1]:
                     F[i][j] = F[i+1][j-1]
                 ____:
-                    F[i][j] = False
+                    F[i][j] = F..
 
         r.. s..(
             1

@@ -3,8 +3,8 @@ _______ unittest
 ____ queen_attack _______ board, can_attack
 
 
-class QueenAttackTest(unittest.TestCase):
-    ___ test_board1(self):
+c_ QueenAttackTest(unittest.TestCase):
+    ___ test_board1
         ans = ['________',
                '________',
                '___W____',
@@ -13,9 +13,9 @@ class QueenAttackTest(unittest.TestCase):
                '______B_',
                '________',
                '________']
-        self.assertEqual(ans, board((2, 3), (5, 6)))
+        assertEqual(ans, board((2, 3), (5, 6)))
 
-    ___ test_board2(self):
+    ___ test_board2
         ans = ['______W_',
                '_______B',
                '________',
@@ -24,48 +24,48 @@ class QueenAttackTest(unittest.TestCase):
                '________',
                '________',
                '________']
-        self.assertEqual(ans, board((0, 6), (1, 7)))
+        assertEqual(ans, board((0, 6), (1, 7)))
 
-    ___ test_attack_true1(self):
-        self.assertEqual(True, can_attack((2, 3), (5, 6)))
+    ___ test_attack_true1
+        assertEqual(T.., can_attack((2, 3), (5, 6)))
 
-    ___ test_attack_true2(self):
-        self.assertEqual(True, can_attack((2, 6), (5, 3)))
+    ___ test_attack_true2
+        assertEqual(T.., can_attack((2, 6), (5, 3)))
 
-    ___ test_attack_true3(self):
-        self.assertEqual(True, can_attack((2, 4), (2, 7)))
+    ___ test_attack_true3
+        assertEqual(T.., can_attack((2, 4), (2, 7)))
 
-    ___ test_attack_true4(self):
-        self.assertEqual(True, can_attack((5, 4), (2, 4)))
+    ___ test_attack_true4
+        assertEqual(T.., can_attack((5, 4), (2, 4)))
 
-    ___ test_attack_true5(self):
-        self.assertEqual(True, can_attack((1, 1), (6, 6)))
+    ___ test_attack_true5
+        assertEqual(T.., can_attack((1, 1), (6, 6)))
 
-    ___ test_attack_true6(self):
-        self.assertEqual(True, can_attack((0, 6), (1, 7)))
+    ___ test_attack_true6
+        assertEqual(T.., can_attack((0, 6), (1, 7)))
 
-    ___ test_attack_false1(self):
-        self.assertEqual(False, can_attack((4, 2), (0, 5)))
+    ___ test_attack_false1
+        assertEqual(F.., can_attack((4, 2), (0, 5)))
 
-    ___ test_attack_false2(self):
-        self.assertEqual(False, can_attack((2, 3), (4, 7)))
+    ___ test_attack_false2
+        assertEqual(F.., can_attack((2, 3), (4, 7)))
 
     # If either board or can_attack are called with an invalid board position
     # they should raise a ValueError with a meaningful error message.
-    ___ test_invalid_position_board(self):
-        with self.assertRaises(ValueError):
+    ___ test_invalid_position_board
+        with assertRaises(ValueError):
             board((0, 0), (7, 8))
 
-    ___ test_invalid_position_can_attack(self):
-        with self.assertRaises(ValueError):
+    ___ test_invalid_position_can_attack
+        with assertRaises(ValueError):
             can_attack((0, 0), (7, 8))
 
-    ___ test_queens_same_position_board(self):
-        with self.assertRaises(ValueError):
+    ___ test_queens_same_position_board
+        with assertRaises(ValueError):
             board((2, 2), (2, 2))
 
-    ___ test_queens_same_position_can_attack(self):
-        with self.assertRaises(ValueError):
+    ___ test_queens_same_position_can_attack
+        with assertRaises(ValueError):
             can_attack((2, 2), (2, 2))
 
 

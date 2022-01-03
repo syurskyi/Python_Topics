@@ -11,13 +11,13 @@ ___ print_names_to_columns(names: List[s..], cols: int = 2) -> N..
     output = ''
     __ cols __ 1:
         ___ entry __ name_list:
-            output += ''.join(entry) + '\n'
+            output += ''.j..(entry) + '\n'
     __ cols != 1:
         breaks.pop(0)
         ___ entry __ name_list:
             __ entry __ breaks:
-                output += '\n' + ''.join(entry)
+                output += '\n' + ''.j..(entry)
             ____:
-                output += ''.join(entry)
+                output += ''.j..(entry)
 
     print(output)

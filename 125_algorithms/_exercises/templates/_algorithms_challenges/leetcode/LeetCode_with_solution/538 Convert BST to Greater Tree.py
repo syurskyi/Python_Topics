@@ -18,25 +18,25 @@ Output: The root of a Greater Tree like this:
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ convertBST(self, root: 'TreeNode') -> 'TreeNode':
         """
         in-order traversal, right first
         """
-        self.walk(root, 0)
+        walk(root, 0)
         r.. root
 
     ___ walk(self, node, cur_sum):
         """stateless walk"""
         __ n.. node:
             r.. cur_sum
-        s = self.walk(node.right, cur_sum)
+        s = walk(node.right, cur_sum)
         node.val += s
-        r.. self.walk(node.left, node.val)
+        r.. walk(node.left, node.val)

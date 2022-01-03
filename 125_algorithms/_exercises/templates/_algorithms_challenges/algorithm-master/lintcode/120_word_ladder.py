@@ -8,7 +8,7 @@ Test Case:
 """
 
 
-class Solution:
+c_ Solution:
     ___ ladderLength(self, s, e, D):
         """
         :type s: str
@@ -30,7 +30,7 @@ class Solution:
         n = l..(s)
         next_words = [N..] * n
         ___ i __ r..(n):
-            next_words[i] = _words = {}
+            next_words[i] = _words    # dict
             ___ word __ D:
                 key = word[:i] + word[i + 1:]
                 __ key n.. __ _words:
@@ -40,7 +40,7 @@ class Solution:
         queue = [e]
         distance = {e: 1}
         ___ word __ queue:
-            ___ _word __ self.get_next_word(word, next_words):
+            ___ _word __ get_next_word(word, next_words):
                 __ _word __ distance:
                     continue
                 distance[_word] = distance[word] + 1

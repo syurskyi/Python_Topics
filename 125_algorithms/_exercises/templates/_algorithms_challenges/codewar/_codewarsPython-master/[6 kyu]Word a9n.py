@@ -1,7 +1,7 @@
-_______ re
+_______ __
 ___ abbreviate(s):
     ___ abbr(s):
         r.. s[0] + s..(l..(s)-2) + s[-1]
-    r.. re.sub(r'\w{4,}',l.... m: abbr(m.group(0)),s)
+    r.. __.sub(r'\w{4,}',l.... m: abbr(m.group(0)),s)
 
 print(abbreviate('sits. is; cat; doggy. double-barreled.'))

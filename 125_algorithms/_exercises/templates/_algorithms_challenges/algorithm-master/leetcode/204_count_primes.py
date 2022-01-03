@@ -5,7 +5,7 @@ Count the number of prime numbers LESS THAN a non-negative number, n.
 """
 
 
-class Solution:
+c_ Solution:
     ___ countPrimes(self, n):
         """
         :type n: int
@@ -17,13 +17,13 @@ class Solution:
         __ n.. n o. n < 3:
             r.. 0
 
-        is_prime = [True] * n
-        is_prime[0] = is_prime[1] = False
+        is_prime = [T..] * n
+        is_prime[0] = is_prime[1] = F..
 
         ___ i __ r..(2, int(n ** 0.5) + 1):
             __ n.. is_prime[i]:
                 continue
             ___ j __ r..(i * i, n, i):
-                is_prime[j] = False
+                is_prime[j] = F..
 
         r.. s..(is_prime)

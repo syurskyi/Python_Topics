@@ -3,7 +3,7 @@ Created on Jan 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ longestWord(self, words):
         """
         :type words: List[str]
@@ -21,14 +21,14 @@ class Solution(object):
                 r.. s..(l..(dp[i])).pop(0)
         r.. ''
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["w","wo","wor","worl", "world"],
             ["a", "banana", "app", "appl", "ap", "apply", "apple"],
         ]
         ___ words __ testCases:
             print('words: %s' % words)
-            result = self.longestWord(words)
+            result = longestWord(words)
             print('result: %s' % result)
             print('-='*30+'-')
 

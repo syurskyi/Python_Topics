@@ -3,14 +3,14 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ uniqueLetterString(self, S):
         """
         :type S: str
         :rtype: int
         """
         s = S
-        hashmap = {}
+        hashmap    # dict
         ___ i, c __ e..(s):
             __ c __ hashmap:
                 l = hashmap[c]
@@ -19,7 +19,7 @@ class Solution(object):
             l.a..(i)
             hashmap[c] = l
         sumVal = 0
-        ___ c, l __ hashmap.items():
+        ___ c, l __ hashmap.i..:
             ___ i __ r..(l..(l)):
                 __ i __ 0:
                     left = l[i]
@@ -32,14 +32,14 @@ class Solution(object):
                 sumVal = (sumVal+1+left+right+left*right)%(10**9+7)
         r.. sumVal
     
-    ___ test(self):
+    ___ test
         testCases = [
             'ABC',
             'ABA',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.uniqueLetterString(s)
+            result = uniqueLetterString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

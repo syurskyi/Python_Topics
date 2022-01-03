@@ -12,7 +12,7 @@ Return
   ]
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ partition(self, s):
         """
         dfs
@@ -20,7 +20,7 @@ class Solution:
         :return: a list of lists of string
         """
         result    # list
-        self.get_partition(s, [], result)
+        get_partition(s, [], result)
         r.. result
 
     ___ get_partition(self, seq, cur, result):
@@ -29,8 +29,8 @@ class Solution:
 
         # partition seq
         ___ i __ xrange(l..(seq)):
-            __ self.is_palindrome(seq[:i+1]):  # otherwise prune
-                self.get_partition(seq[i+1:], cur+[seq[:i+1]], result)
+            __ is_palindrome(seq[:i+1]):  # otherwise prune
+                get_partition(seq[i+1:], cur+[seq[:i+1]], result)
 
 
     ___ is_palindrome(self, s):

@@ -7,7 +7,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ rightSideView(self, root):
     """
     :type root: TreeNode

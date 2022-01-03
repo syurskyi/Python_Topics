@@ -15,13 +15,13 @@ You may assume that all operations are valid (for example, no pop or top operati
 __author__ = 'Daniel'
 
 
-class Stack:
-    ___ __init__(self):
+c_ Stack:
+    ___ - ):
         """
         initialize your data structure here.
         One queue cannot mimic the stack, then you should use two queues.
         """
-        self.q = [[], []]
+        q = [[], []]
 
     ___ push(self, x):
         """
@@ -29,38 +29,38 @@ class Stack:
         :rtype: nothing
         """
         t = 0
-        __ n.. self.q[t]:
+        __ n.. q[t]:
             t ^= 1
 
-        self.q[t].a..(x)
+        q[t].a..(x)
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: nothing
         """
         t = 0
-        __ n.. self.q[t]:
+        __ n.. q[t]:
             t ^= 1
 
-        w.... l..(self.q[t]) > 1:
-            self.q[t^1].a..(self.q[t].pop(0))
+        w.... l..(q[t]) > 1:
+            q[t^1].a..(q[t].pop(0))
 
-        r.. self.q[t].pop()
+        r.. q[t].pop()
 
-    ___ top(self):
+    ___ top
         """
         :rtype:  int
         """
-        popped = self.pop()
+        popped = pop()
         t = 0
-        __ n.. self.q[t]:
+        __ n.. q[t]:
             t ^= 1
 
-        self.q[t].a..(popped)
+        q[t].a..(popped)
         r.. popped
 
-    ___ empty(self):
+    ___ empty
         """
         :rtype: bool
         """
-        r.. n.. self.q[0] a.. n.. self.q[1]
+        r.. n.. q[0] a.. n.. q[1]

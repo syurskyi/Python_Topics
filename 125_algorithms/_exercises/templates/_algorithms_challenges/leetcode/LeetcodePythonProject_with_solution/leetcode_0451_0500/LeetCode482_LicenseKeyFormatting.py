@@ -4,7 +4,7 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ licenseKeyFormatting(self, S, K):
         """
         :type S: str
@@ -21,12 +21,12 @@ class Solution(object):
                     res = '-' + res
         r.. res.lstrip('-')
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('abc-abc', 3),
         ]
         ___ s, k __ testCases:
-            result = self.licenseKeyFormatting(s, k)
+            result = licenseKeyFormatting(s, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

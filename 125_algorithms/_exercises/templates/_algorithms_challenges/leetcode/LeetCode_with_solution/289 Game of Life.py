@@ -22,9 +22,9 @@ problems when the active area encroaches the border of the array. How would you 
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.dirs = [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)]
+c_ Solution(object):
+    ___ - ):
+        dirs = [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)]
 
     ___ gameOfLife(self, board):
         """
@@ -51,7 +51,7 @@ class Solution(object):
                 lines[(i+1)%2][j] = board[i][j]
 
                 cnt = 0
-                ___ d __ self.dirs:
+                ___ d __ dirs:
                     I = i+d[0]
                     J = j+d[1]
                     __ 0 <= I < m a.. 0 <= J < n:

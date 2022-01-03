@@ -15,7 +15,7 @@ ___ get_credit_cards(data: bytes) -> List[s..]:
     decoded = base64.b64decode(data)
     message = decoded.decode('ascii')
 
-    r.. pd.read_csv(StringIO(message),usecols=['credit_card'],squeeze=True).astype(s..).tolist()
+    r.. pd.read_csv(StringIO(message),usecols=['credit_card'],squeeze=T..).astype(s..).tolist()
 
 
 

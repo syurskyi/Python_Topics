@@ -3,7 +3,7 @@ REF: http://www.cnblogs.com/yuzhangcmu/p/4200096.html
 """
 
 
-class Solution:
+c_ Solution:
     ___ firstMissingPositive(self, A):
         """
         :type A: List[int]

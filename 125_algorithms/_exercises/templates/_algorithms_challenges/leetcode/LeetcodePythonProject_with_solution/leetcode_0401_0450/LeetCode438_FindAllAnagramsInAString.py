@@ -4,7 +4,7 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findAnagrams(self, s, p):
         """
         :type s: str
@@ -54,15 +54,15 @@ class Solution(object):
                 left += 1
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('cbaebabacd', 'abc'),
             ('abab', 'ab'),
         ]
         ___ s, p __ testCases:
-            result = self.findAnagrams(s, p)
+            result = findAnagrams(s, p)
             print('result: %s' % result)
-            result0 = self.findAnagrams_orig(s, p)
+            result0 = findAnagrams_orig(s, p)
             print('result0: %s' % result0)
             print('-='*20+'-')
 

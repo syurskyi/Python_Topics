@@ -4,7 +4,7 @@ Created on Apr 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findDisappearedNumbers(self, nums):
         ___ num __ nums:
             ind = abs(num)-1

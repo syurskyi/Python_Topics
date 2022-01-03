@@ -1,9 +1,9 @@
-class BowlingGame(object):
-    ___ __init__(self):
+c_ BowlingGame(object):
+    ___ - ):
         pass
 
     ___ roll(self, pins):
         pass
 
-    ___ score(self):
+    ___ score
         pass

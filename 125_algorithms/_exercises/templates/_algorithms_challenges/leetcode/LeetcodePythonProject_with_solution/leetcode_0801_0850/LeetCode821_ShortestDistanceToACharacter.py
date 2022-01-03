@@ -3,7 +3,7 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ shortestToChar(self, S, C):
         """
         :type S: str
@@ -31,7 +31,7 @@ class Solution(object):
             res.a..(val)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'loveleetcode', 'e',
@@ -40,7 +40,7 @@ class Solution(object):
         ___ s, c __ testCases:
             print('s: %s' % s)
             print('c: %s' % c)
-            result = self.shortestToChar(s, c)
+            result = shortestToChar(s, c)
             print('result: %s' % result)
             print('-='*30+'-')
 

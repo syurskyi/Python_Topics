@@ -1,4 +1,4 @@
-solved = False
+solved = F..
 count = 0
 w.... n.. solved:
     cal = input().s..
@@ -12,5 +12,5 @@ w.... n.. solved:
         res *= int(cal[1])
     ____:
         res = res % int(cal[1])
-        solved = True
+        solved = T..
         print(res)

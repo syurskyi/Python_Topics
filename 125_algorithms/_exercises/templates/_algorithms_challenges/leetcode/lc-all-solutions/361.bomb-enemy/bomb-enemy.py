@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxKilledEnemies(self, grid):
     """
     :type grid: List[List[str]]

@@ -3,7 +3,7 @@ _______ os
 ____ urllib.request _______ urlretrieve
 ____ collections _______ defaultdict
 
-BATTLE_DATA = os.path.join('/tmp', 'battle-table.csv')
+BATTLE_DATA = os.path.j..('/tmp', 'battle-table.csv')
 __ n.. os.path.isfile(BATTLE_DATA):
     urlretrieve('https://bit.ly/2U3oHft', BATTLE_DATA)
 

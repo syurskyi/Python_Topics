@@ -4,7 +4,7 @@ Created on Sep 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxDistance(self, arrays):
         """
         :type arrays: List[List[int]]
@@ -23,7 +23,7 @@ class Solution(object):
             maxVal = max(maxVal, arr[-1])
         r.. maxDis
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,2,3],
@@ -33,7 +33,7 @@ class Solution(object):
         ]
         ___ arrays __ testCases:
             print('arrays: %s' % arrays)
-            result = self.maxDistance(arrays)
+            result = maxDistance(arrays)
             print('result: %s' % result)
             print('-='*30+'-')
 

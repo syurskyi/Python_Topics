@@ -33,7 +33,7 @@ If the scores of both players are equal, then player 1 is still the winner.
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ PredictTheWinner(self, nums):
         """
         Let F[i][j] be the max score choose from A[i:j]. The player has two
@@ -63,5 +63,5 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().PredictTheWinner([1, 5, 2]) __ False
-    ... Solution().PredictTheWinner([1, 5, 233, 7]) __ True
+    ... Solution().PredictTheWinner([1, 5, 2]) __ F..
+    ... Solution().PredictTheWinner([1, 5, 233, 7]) __ T..

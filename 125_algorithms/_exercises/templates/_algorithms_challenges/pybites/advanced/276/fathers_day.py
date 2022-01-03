@@ -1,7 +1,7 @@
 _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
-_______ re
+_______ __
 _______ d__
 
 ____ collections _______ defaultdict
@@ -30,7 +30,7 @@ ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days
                 continue
             ____ line.startswith('*'):
 
-                line = re.sub(r'\band\b','',line)
+                line = __.sub(r'\band\b','',line)
 
                 countries =  l..(map(l.... s: s.strip('* ').s..,line.s..(',')))
             ____:
@@ -113,7 +113,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
     ___ date __ dates:
         date = date.strftime('%B %d')
-        date = re.sub(r'0(\d)',r'\1',date)
+        date = __.sub(r'0(\d)',r'\1',date)
 
         countries = days_to_countries[date]
 

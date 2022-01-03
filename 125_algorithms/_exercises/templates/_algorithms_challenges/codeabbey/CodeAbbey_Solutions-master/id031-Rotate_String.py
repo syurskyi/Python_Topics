@@ -4,5 +4,5 @@ ___ rotateString(amount):
         data = raw_input().s..
         rotateNum,string = int(data[0]),data[1]
         answer.a..(string[rotateNum:]+string[:rotateNum])
-    print(' '.join(answer))
+    print(' '.j..(answer))
 rotateString(input())

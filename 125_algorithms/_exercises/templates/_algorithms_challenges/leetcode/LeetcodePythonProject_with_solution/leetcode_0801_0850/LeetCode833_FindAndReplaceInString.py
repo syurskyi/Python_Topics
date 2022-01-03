@@ -3,7 +3,7 @@ Created on Jun 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findReplaceString(self, S, indexes, sources, targets):
         """
         :type S: str
@@ -23,7 +23,7 @@ class Solution(object):
         res += s[prev:]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "abcd",
@@ -51,7 +51,7 @@ class Solution(object):
             ],
         ]
         ___ s, indexes, sources, targets __ testCases:
-            res = self.findReplaceString(s, indexes, sources, targets)
+            res = findReplaceString(s, indexes, sources, targets)
             print('res: %s' % res)
             print('-='*30+'-')
 

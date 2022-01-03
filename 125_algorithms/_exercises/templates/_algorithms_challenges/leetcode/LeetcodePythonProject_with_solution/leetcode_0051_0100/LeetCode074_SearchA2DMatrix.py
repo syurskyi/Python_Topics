@@ -3,7 +3,7 @@ Created on Jun 3, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ searchMatrix(self, matrix, target):
         """
         :type matrix: List[List[int]]
@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: bool
         """
         __ n.. matrix o. n.. matrix[0]:
-            r.. False
+            r.. F..
         m, n = l..(matrix), l..(matrix[0])
         l, r = 0, m*n-1
         w.... l < r:
@@ -29,13 +29,13 @@ class Solution(object):
         :rtype: bool
         """
         __ n.. matrix o. n.. matrix[0]:
-            r.. False
+            r.. F..
         m, n = l..(matrix), l..(matrix[0])
         lo, hi = 0, m
         w.... lo < hi:
             mid = (lo+hi)//2
             __ target __ matrix[mid][0]:
-                r.. True
+                r.. T..
             ____ target > matrix[mid][0]:
                 lo = mid+1
             ____:
@@ -45,9 +45,9 @@ class Solution(object):
         w.... lo < hi:
             mid = (lo+hi)//2
             __ target __ matrix[row][mid]:
-                r.. True
+                r.. T..
             ____ target > matrix[row][mid]:
                 lo = mid+1
             ____:
                 hi = mid
-        r.. False
+        r.. F..

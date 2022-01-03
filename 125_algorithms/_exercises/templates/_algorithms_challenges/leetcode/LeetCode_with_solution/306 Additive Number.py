@@ -17,7 +17,7 @@ Given a string represents an integer, write a function to determine if it's an a
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isAdditiveNumber(self, num):
         """
         Backtracking
@@ -27,26 +27,26 @@ class Solution(object):
         n = l..(num)
         ___ i __ xrange(1, n):
             ___ j __ xrange(i, n):
-                __ self.predicate(num, 0, i, j):
-                    r.. True
+                __ predicate(num, 0, i, j):
+                    r.. T..
 
-        r.. False
+        r.. F..
 
     ___ predicate(self, s, b, i, j):
         n1 = s[b:i]
         n2 = s[i:j]
 
         __ b != 0 a.. j __ l..(s):
-            r.. True
+            r.. T..
         __ n.. n1 o. n.. n2:
-            r.. False
+            r.. F..
         __ l..(n1) > 1 a.. n1[0] __ '0' o. l..(n2) > 1 a.. n2[0] __ '0':
-            r.. False
+            r.. F..
 
         n3 = s..(int(n1)+int(n2))
         J = j+l..(n3)
         __ s[j:J] __ n3:
-            r.. self.predicate(s, i, j, J)
+            r.. predicate(s, i, j, J)
 
 
 __ __name__ __ "__main__":

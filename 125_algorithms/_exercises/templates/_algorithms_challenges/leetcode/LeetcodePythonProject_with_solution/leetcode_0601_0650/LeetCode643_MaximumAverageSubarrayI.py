@@ -3,7 +3,7 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findMaxAverage(self, nums, k):
         """
         :type nums: List[int]
@@ -20,7 +20,7 @@ class Solution(object):
                 sumVal -= nums[i-k+1]
         r.. float(maxVal)/k
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 12, -5, -6, 50, 3],
@@ -34,7 +34,7 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = self.findMaxAverage(nums, k)
+            result = findMaxAverage(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -30,7 +30,7 @@ ___ _preload_sequences(url=URL):
     """
     #x = requests.get(url)
     #return x.text.splitlines()
-    filename = os.path.join(os.getenv("TMP", "/tmp"), "NC_009641.txt")
+    filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
     __ n.. os.path.isfile(filename):
         urlretrieve(url, filename)
     with open(filename, "r") as f:
@@ -48,7 +48,7 @@ ___ get_translation_table(TRANSL_TABLE_11):
     ___ i,line __ e..(lines):
         lines[i] = line.s..('=')[1].s..
     
-    mapping = {}
+    mapping    # dict
     ___ aa,b1,b2,b3 __ z..(*lines):
         __ aa __ 'U':
             aa = 'T'
@@ -92,7 +92,7 @@ ___ return_codon_usage_table(
     total = s..(codon_to_count.values())
 
 
-    ___ codon,count __ codon_to_count.items():
+    ___ codon,count __ codon_to_count.i..:
         amino_acid = amino_acid_mapping[codon]
         frequency_per_1000 = round((count/total) * 1000,1)
         codon_to_count[codon] = [amino_acid,frequency_per_1000,count]
@@ -118,7 +118,7 @@ ___ return_codon_usage_table(
                 data = f"|  {codon_text:<5} {aa:<2}  {freq:>4}  {count:>5}  "
                 row.a..(data)
             row.a..('|')
-            lines.a..(''.join(row))
+            lines.a..(''.j..(row))
             #print(''.join(row))
         
 
@@ -128,7 +128,7 @@ ___ return_codon_usage_table(
 
 
 
-    r.. '\n'.join(lines)
+    r.. '\n'.j..(lines)
 
 
 

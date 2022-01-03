@@ -1,15 +1,15 @@
-class TrieNode(object):
-  ___ __init__(self, bit_ N..
-    self.isWord = False
-    self.word = N..
-    self.one = N..
-    self.zero = N..
+c_ TrieNode(object):
+  ___ - , bit_ N..
+    isWord = F..
+    word = N..
+    one = N..
+    zero = N..
 
 
 count = 0
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findMaximumXOR(self, nums):
     """
     :type nums: List[int]
@@ -20,7 +20,7 @@ class Solution(object):
       __ n.. root:
         r..
       __ mask __ 0x00:
-        self.ans = max(self.ans, root.word ^ num)
+        ans = max(ans, root.word ^ num)
         r..
       __ mask & num:
         __ root.zero:
@@ -36,7 +36,7 @@ class Solution(object):
     __ l..(nums) < 2:
       r.. 0
     root = TrieNode()
-    self.ans = float("-inf")
+    ans = float("-inf")
     ___ num __ nums:
       mask = 0x80000000
       p = root
@@ -56,8 +56,8 @@ class Solution(object):
             node = p.zero
         p = node
         mask = mask >> 1
-      p.isWord = True
+      p.isWord = T..
       p.word = num
     ___ num __ nums:
       dfs(root, num, 0x80000000)
-    r.. self.ans
+    r.. ans

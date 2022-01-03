@@ -4,7 +4,7 @@ Created on Mar 6, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ moveZeroes(self, nums):
         """
         :type nums: List[int]

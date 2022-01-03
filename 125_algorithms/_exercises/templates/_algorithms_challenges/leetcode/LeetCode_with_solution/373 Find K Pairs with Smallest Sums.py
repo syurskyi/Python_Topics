@@ -32,7 +32,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ kSmallestPairs(self, nums1, nums2, k):
         """
         Maintain a heap of the k pairs
@@ -46,19 +46,19 @@ class Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        class Node(object):
-            ___ __init__(self, i, j):
-                self.i, self.j = i, j
+        c_ Node(object):
+            ___ - , i, j):
+                i, j = i, j
 
             ___ __cmp__(self, other):
-                r.. nums1[self.i] + nums2[self.j] - (nums1[other.i] + nums2[other.j])
+                r.. nums1[i] + nums2[j] - (nums1[other.i] + nums2[other.j])
 
-            ___ hasnext(self):
-                r.. self.j + 1 < l..(nums2)
+            ___ hasnext
+                r.. j + 1 < l..(nums2)
 
-            ___ next(self):
-                __ self.hasnext():
-                    r.. Node(self.i, self.j + 1)
+            ___ next
+                __ hasnext():
+                    r.. Node(i, j + 1)
 
                 raise StopIteration
 

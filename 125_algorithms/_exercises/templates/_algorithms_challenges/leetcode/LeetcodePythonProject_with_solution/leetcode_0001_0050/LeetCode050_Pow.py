@@ -4,7 +4,7 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ myPow(self, x, n):
         """
         :type x: float
@@ -17,11 +17,11 @@ class Solution(object):
             n = -n
             x = 1/x
         __ n%2__0:
-            r.. self.myPow(x*x, n/2)
+            r.. myPow(x*x, n/2)
         ____:
-            r.. x*self.myPow(x*x, n/2)
+            r.. x*myPow(x*x, n/2)
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

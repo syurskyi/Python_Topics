@@ -32,67 +32,67 @@ ____ typing _______ Callable
 ____ threading _______ Lock
 
 
-class Foo:
-    ___ __init__(self):
+c_ Foo:
+    ___ - ):
         """
         Two locks
         """
-        self.locks = [Lock(), Lock()]
-        self.locks[0].a..
-        self.locks[1].a..
+        locks = [Lock(), Lock()]
+        locks[0].a..
+        locks[1].a..
 
 
     ___ first(self, printFirst: Callable[[], N..]) -> N..
         # printFirst() outputs "first". Do not change or remove this line.
         printFirst()
-        self.locks[0].release()
+        locks[0].release()
 
 
 
     ___ second(self, printSecond: Callable[[], N..]) -> N..
-        with self.locks[0]:
+        with locks[0]:
             # printSecond() outputs "second". Do not change or remove this line.
             printSecond()
-            self.locks[1].release()
+            locks[1].release()
 
 
     ___ third(self, printThird: Callable[[], N..]) -> N..
-        with self.locks[1]:
+        with locks[1]:
             # printThird() outputs "third". Do not change or remove this line.
             printThird()
 
 
-class FooError:
-    ___ __init__(self):
+c_ FooError:
+    ___ - ):
         """
         Have a counter, and only the corresponding method can change update the
         counter.
 
         Error, will miss an input.
         """
-        self._value = 1
-        self._lock = Lock()
+        _value = 1
+        _lock = Lock()
 
 
     ___ first(self, printFirst: 'Callable[[], None]') -> N..
-        with self._lock:
-            __ self._value __ 1:
+        with _lock:
+            __ _value __ 1:
                 # printFirst() outputs "first". Do not change or remove this line.
-                self._value += 1
+                _value += 1
                 printFirst()
 
 
     ___ second(self, printSecond: 'Callable[[], None]') -> N..
-        with self._lock:
-            __ self._value __ 2:
+        with _lock:
+            __ _value __ 2:
                 # printSecond() outputs "second". Do not change or remove this line.
-                self._value += 1
+                _value += 1
                 printSecond()
 
 
     ___ third(self, printThird: 'Callable[[], None]') -> N..
-        with self._lock:
-            __ self._value __ 3:
+        with _lock:
+            __ _value __ 3:
                 # printThird() outputs "third". Do not change or remove this line.
-                self._value += 1
+                _value += 1
                 printThird()

@@ -3,7 +3,7 @@ words = ("It's almost Holidays and PyBites wishes You a "
 
 ___ f(e):
     d={int:1, float:1, s..:0}
-    r.. d.get(type(e), 0), e
+    r.. d.get(t..(e), 0), e
 
 
 print( s..( words, key=f ))

@@ -1,11 +1,11 @@
-class BankAccount(object):
-    ___ __init__(self):
+c_ BankAccount(object):
+    ___ - ):
         pass
 
-    ___ get_balance(self):
+    ___ get_balance
         pass
 
-    ___ open(self):
+    ___ open
         pass
 
     ___ deposit(self, amount):
@@ -14,5 +14,5 @@ class BankAccount(object):
     ___ withdraw(self, amount):
         pass
 
-    ___ close(self):
+    ___ close
         pass

@@ -11,5 +11,5 @@ ___ triangleArea(amount):
         s = (a + b + c) / 2 # s  = Semiperimeter
         area = sqrt(s*((s-a)*(s-b)*(s-c))) # Heron's Formula
         answer.a..(s..(area))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 triangleArea(input())

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     instance = N..
 
     # @return: The same instance of this class every time

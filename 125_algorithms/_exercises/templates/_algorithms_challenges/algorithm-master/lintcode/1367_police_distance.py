@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param matrix : the martix
     @return: the distance of grid to the police

@@ -19,16 +19,16 @@ guaranteed to be fit in 32-bit signed int.
 ____ typing _______ List
 
 
-class LenCnt:
-    ___ __init__(self, l, c):
-        self.l = l
-        self.c = c
+c_ LenCnt:
+    ___ - , l, c):
+        l = l
+        c = c
 
-    ___ __repr__(self):
-        r.. repr((self.l, self.c))
+    ___ __repr__
+        r.. repr((l, c))
 
 
-class Solution:
+c_ Solution:
     ___ findNumberOfLIS(self, A: List[int]) -> int:
         """
         Two pass - 1st pass find the LIS, 2nd pass find the number

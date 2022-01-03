@@ -15,8 +15,8 @@ ___ get_book():
 
     soup = Soup(CONTENT,"html.parser")
 
-    title = soup.find('div',class_='dotd-title').getText(strip=True)
-    description = soup.select_one('div[class="dotd-main-book-summary float-left"] > div:nth-child(4)').getText(strip=True)
+    title = soup.find('div',class_='dotd-title').getText(strip=T..)
+    description = soup.select_one('div[class="dotd-main-book-summary float-left"] > div:nth-child(4)').getText(strip=T..)
 
     link = soup.select_one('div.dotd-main-book-image > a')['href']
     image = soup.select_one('div.dotd-main-book-image > a > img')['data-original']

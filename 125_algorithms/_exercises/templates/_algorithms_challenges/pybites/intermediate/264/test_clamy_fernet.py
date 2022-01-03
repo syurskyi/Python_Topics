@@ -12,7 +12,7 @@ KEYS = (
     b"mAbAfF5CW3EGlngOEEroDqtxlxVlJILzoUE4TJScMIw=",
 )
 MESSAGE = "This is my secret message"
-TMP_FILE = NamedTemporaryFile(delete=False)
+TMP_FILE = NamedTemporaryFile(delete=F..)
 FILE = TMP_FILE.name
 
 
@@ -42,7 +42,7 @@ ___ test_clamyfernet_random_key(rcf):
     ... isi..(rcf.clf, Fernet)
     ... isi..(rcf.key, ByteString)
     ... isi..(rcf.kdf, PBKDF2HMAC)
-    ... dt.year __ d__.now().year
+    ... dt.year __ d__.n...year
 
 
 ___ test_clamyfernet(cf):

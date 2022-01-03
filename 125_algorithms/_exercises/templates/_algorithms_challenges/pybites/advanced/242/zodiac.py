@@ -30,7 +30,7 @@ ___ get_sign_with_most_famous_people(signs: l..):
 
 ___ signs_are_mutually_compatible(signs: l.., sign1: s.., sign2: s..) -> bool:
     """Given 2 signs return if they are compatible (compatibility field)"""
-    ret = False
+    ret = F..
     ___ sign __ signs:
         __ sign.name __ sign1:
             ret = sign2 __ sign.compatibility

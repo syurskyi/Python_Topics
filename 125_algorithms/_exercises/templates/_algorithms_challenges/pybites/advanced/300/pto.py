@@ -23,7 +23,7 @@ ___ four_day_weekends(*args,
         start_month: int = 8,
         paid_time_off: int = 200,
         year: int = 2020,
-        show_workdays: bool = False
+        show_workdays: bool = F..
     ) -> N..
     """Generates four day weekend report
 
@@ -136,10 +136,10 @@ ___ four_day_weekends(*args,
             print(f'Remaining Work Days: {workdays * 8} ({workdays} days)')
 
 
-            print('\n'.join(map(s..,workday_dates)))
+            print('\n'.j..(map(s..,workday_dates)))
 
 
 
 
 __ __name__ __ "__main__":
-    four_day_weekends(start_month=10,show_workdays=True)
+    four_day_weekends(start_month=10,show_workdays=T..)

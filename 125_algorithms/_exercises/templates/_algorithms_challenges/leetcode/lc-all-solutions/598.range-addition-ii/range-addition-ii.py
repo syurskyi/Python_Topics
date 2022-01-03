@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxCount(self, m, n, ops):
     """
     :type m: int

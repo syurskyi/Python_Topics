@@ -1,5 +1,5 @@
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
-_______ re
+_______ __
 _______ string
 
 ____ bs4 _______ BeautifulSoup
@@ -36,6 +36,6 @@ ___ extract_quotes(html: s.. = HTML) -> d..:
     content = root.find(class_='content').find_all('p')
     ___ para __ content:
         __ para.text[0] __ string.digits:
-            match = re.match(r'^\d+\.\s+"(.+?)" - (.*)$', para.text)
+            match = __.match(r'^\d+\.\s+"(.+?)" - (.*)$', para.text)
             result[match[2]] = match[1]
     r.. result

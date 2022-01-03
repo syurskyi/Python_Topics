@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: V: A list of integer
     @return: An integer, maximum coins

@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: The roots of binary tree A.
     @param: B: The roots of binary tree B.
@@ -16,24 +16,24 @@ class Solution:
     ___ isSubtree(self, A, B):
         __ n.. B:
             # Empty tree is also treated as subtree in Lintcode
-            r.. True
+            r.. T..
         __ n.. A:
-            r.. False
+            r.. F..
 
         r.. (
-            self.isEqual(A, B) o.
-            self.isSubtree(A.left, B) o.
-            self.isSubtree(A.right, B)
+            isEqual(A, B) o.
+            isSubtree(A.left, B) o.
+            isSubtree(A.right, B)
         )
 
     ___ isEqual(self, A, B):
         __ n.. A a.. n.. B:
-            r.. True
+            r.. T..
         __ n.. A o. n.. B:
-            r.. False
+            r.. F..
 
         r.. (
             A.val __ B.val a..
-            self.isEqual(A.left, B.left) a..
-            self.isEqual(A.right, B.right)
+            isEqual(A.left, B.left) a..
+            isEqual(A.right, B.right)
         )

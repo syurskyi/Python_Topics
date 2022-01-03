@@ -5,23 +5,23 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ getMinimumDifference(self, root):
     """
     :type root: TreeNode
     :rtype: int
     """
-    self.val = N..
-    self.ans = float("inf")
+    val = N..
+    ans = float("inf")
 
     ___ inorder(root):
       __ n.. root:
         r..
       inorder(root.left)
-      __ self.val __ n.. N..
-        self.ans = m..(self.ans, abs(root.val - self.val))
-      self.val = root.val
+      __ val __ n.. N..
+        ans = m..(ans, abs(root.val - val))
+      val = root.val
       inorder(root.right)
 
     inorder(root)
-    r.. self.ans
+    r.. ans

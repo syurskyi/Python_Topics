@@ -1,51 +1,51 @@
-class Trie:
-    ___ __init__(self):
-        self.root = {}
+c_ Trie:
+    ___ - ):
+        root    # dict
 
     ___ insert(self, string):
         __ n.. string:
             r..
-        parent = self.root
+        parent = root
         ___ char __ string:
             __ char __ parent:
                 parent = parent[char]
             ____:
-                parent[char] = {}
+                parent[char]    # dict
                 parent = parent[char]
-        parent['_end'] = True
+        parent['_end'] = T..
 
-    ___ search(self, string):
+    ___ s..(self, string):
         __ n.. string:
-            r.. False
-        parent = self.root
+            r.. F..
+        parent = root
         ___ char __ string:
             __ char __ parent:
                 parent = parent[char]
             ____:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     ___ search_in_regex(self, string):
         __ n.. string:
-            r.. False
-        r.. self._search_in_regex(string, self.root, 0)
+            r.. F..
+        r.. _search_in_regex(string, root, 0)
 
     ___ _search_in_regex(self, string, parent, i):
         __ i __ l..(string):
-            r.. parent.get('_end', False)
-        result = False
+            r.. parent.get('_end', F..)
+        result = F..
         __ string[i] __ '.':
             ___ child __ parent:
-                __ child[0] != '_' a.. self._search_in_regex(string, parent[child], i + 1):
-                    result = True
+                __ child[0] != '_' a.. _search_in_regex(string, parent[child], i + 1):
+                    result = T..
         ____ string[i] __ parent:
-            __ self._search_in_regex(string, parent[string[i]], i + 1):
-                result = True
+            __ _search_in_regex(string, parent[string[i]], i + 1):
+                result = T..
         r.. result
 
-class WordDictionary:
-    ___ __init__(self):
-        self.trie = Trie()
+c_ WordDictionary:
+    ___ - ):
+        trie = Trie()
 
     """
     @param: word: Adds a word into the data structure.
@@ -54,16 +54,16 @@ class WordDictionary:
     ___ addWord(self, word):
         __ n.. word:
             r..
-        self.trie.insert(word)
+        trie.insert(word)
 
     """
     @param: word: A word could contain the dot character '.' to represent any one letter.
     @return: if the word is in the data structure.
     """
-    ___ search(self, word):
+    ___ s..(self, word):
         __ n.. word:
-            r.. False
-        r.. self.trie.search_in_regex(word)
+            r.. F..
+        r.. trie.search_in_regex(word)
 
 
 # Your WordDictionary object will be instantiated and called as such:

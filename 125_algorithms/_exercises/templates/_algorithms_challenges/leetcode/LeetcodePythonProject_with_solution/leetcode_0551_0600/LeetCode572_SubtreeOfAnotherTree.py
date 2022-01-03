@@ -4,13 +4,13 @@ Created on Sep 3, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ isSubtree(self, s, t):
         """
         :type s: TreeNode
@@ -18,19 +18,19 @@ class Solution(object):
         :rtype: bool
         """
         __ n.. s a.. n.. t:
-            r.. True
+            r.. T..
         __ n.. s:
-            r.. False
-        r.. self.isSameTree(s, t) o.\
-            self.isSubtree(s.left, t) o.\
-            self.isSubtree(s.right, t)
+            r.. F..
+        r.. isSameTree(s, t) o.\
+            isSubtree(s.left, t) o.\
+            isSubtree(s.right, t)
     
     ___ isSameTree(self, s, t):
         __ n.. s a.. n.. t:
-            r.. True
+            r.. T..
         __ n.. s o. n.. t:
-            r.. False
+            r.. F..
         __ s.val != t.val:
-            r.. False
-        r.. self.isSameTree(s.left, t.left) a..\
-            self.isSameTree(s.right, t.right)
+            r.. F..
+        r.. isSameTree(s.left, t.left) a..\
+            isSameTree(s.right, t.right)

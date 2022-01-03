@@ -4,7 +4,7 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ threeSumSmaller(self, nums, target):
         """
         :type nums: List[int]
@@ -23,7 +23,7 @@ class Solution(object):
                     j += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([-2, 0, 1, 3], 2),
             ([3, 1, 0, -2], 4),
@@ -31,7 +31,7 @@ class Solution(object):
         ___ nums, target __ testCases:
             print('nums: %s' % (nums))
             print('target: %s' % (target))
-            result = self.threeSumSmaller(nums, target)
+            result = threeSumSmaller(nums, target)
             print('result: %s' % (result))
             print('-='*20+'-')
 

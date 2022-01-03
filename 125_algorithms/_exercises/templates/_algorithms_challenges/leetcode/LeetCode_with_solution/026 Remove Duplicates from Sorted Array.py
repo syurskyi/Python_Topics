@@ -9,7 +9,7 @@ Given input array A = [1,1,2],
 Your function should return length = 2, and A is now [1,2].
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ removeDuplicates(self, A):
         """
         Algorithms: Two Pointers, open & closed

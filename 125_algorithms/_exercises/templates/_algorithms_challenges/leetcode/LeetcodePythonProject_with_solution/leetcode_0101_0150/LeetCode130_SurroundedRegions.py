@@ -3,7 +3,7 @@ Created on Feb 8, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ solve(self, board):
         """
         :type board: List[List[str]]
@@ -13,14 +13,14 @@ class Solution(object):
         m, n = l..(board), l..(board[0])
         ___ i __ r..(m):
             __ board[i][0] __ 'O':
-                self.bfs(board, i, 0)
+                bfs(board, i, 0)
             __ board[i][n-1] __ 'O':
-                self.bfs(board, i, n-1)
+                bfs(board, i, n-1)
         ___ i __ r..(n):
             __ board[0][i] __ 'O':
-                self.bfs(board, 0, i)
+                bfs(board, 0, i)
             __ board[m-1][i] __ 'O':
-                self.bfs(board, m-1, i)
+                bfs(board, m-1, i)
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ board[i][j] __ 'O':
@@ -50,7 +50,7 @@ class Solution(object):
                 board[i][j+1] = '#'
                 queue.a..(i*n+j+1)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'XXXX',
@@ -63,7 +63,7 @@ class Solution(object):
             board = [l..(l) ___ l __ matrix]
             print('before')
             print('%s' % (board))
-            self.solve(board)
+            solve(board)
             print('after')
             print('%s' % (board))
             print('-='*20+'-')

@@ -3,20 +3,20 @@ Created on Mar 11, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numIslands2(self, m, n, positions):
         res    # list
         roots = [-1]*(m*n)
-        grid = [[False]*n ___ _ __ r..(m)]
+        grid = [[F..]*n ___ _ __ r..(m)]
         count = 0
         ___ pos __ positions:
             i, j = pos[0], pos[1]
-            grid[i][j] = True
+            grid[i][j] = T..
             count += 1
             root0 = i*n+j
             ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
                 __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y]:
-                    root = self.getRoot(roots, x*n+y)
+                    root = getRoot(roots, x*n+y)
                     __ root != root0:
                         count -= 1
                         roots[root] = root0
@@ -28,7 +28,7 @@ class Solution(object):
             ind = roots[ind]
         r.. ind
     
-    ___ test(self):
+    ___ test
         testCases = [
             (3, 3, [[0,0], [0,1], [1,2], [2,1]]),
             [
@@ -46,7 +46,7 @@ class Solution(object):
             print('m: %s' % (m))
             print('n: %s' % (n))
             print('positions: %s' % (positions))
-            result = self.numIslands2(m, n, positions)
+            result = numIslands2(m, n, positions)
             print('result: %s' % (result))
             print('-='*20+'-')
 

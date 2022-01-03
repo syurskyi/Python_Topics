@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 COURSE = ('Introduction 1 Lecture 01:47'
           'The Basics 4 Lectures 32:03'
@@ -20,7 +20,7 @@ ___ extract_course_times(course=COURSE):
        Return this list.
     """
 
-    r.. re.findall('\d\d:\d\d',course)
+    r.. __.findall('\d\d:\d\d',course)
 
 
 ___ get_all_hashtags_and_links(tweet=TWEET):
@@ -32,7 +32,7 @@ ___ get_all_hashtags_and_links(tweet=TWEET):
         '#APIs']
        Return this list.
     """
-    r.. re.findall(r'\#\S+|http\S+',tweet)
+    r.. __.findall(r'\#\S+|http\S+',tweet)
 
 
 ___ match_first_paragraph(html=HTML):
@@ -41,4 +41,4 @@ ___ match_first_paragraph(html=HTML):
        'pybites != greedy' (= content of first paragraph).
        Return this string.
     """
-    r.. re.search('<p>(.+?)</p>',html).group(1)
+    r.. __.s..('<p>(.+?)</p>',html).group(1)

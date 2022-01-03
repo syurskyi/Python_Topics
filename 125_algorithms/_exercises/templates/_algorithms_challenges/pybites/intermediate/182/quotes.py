@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
 HTML = """<!DOCTYPE html>
@@ -29,10 +29,10 @@ HTML = """<!DOCTYPE html>
 ___ extract_quotes(html: s.. = HTML) -> d..:
   """See instructions in the Bite description"""
 
-  quotes = {}
-  quotes_raw = re.s..("<p>", html)
+  quotes    # dict
+  quotes_raw = __.s..("<p>", html)
   ___ quote __ quotes_raw:
-    quote_temp = re.search("^\d", quote)
+    quote_temp = __.s..("^\d", quote)
     __ quote_temp:
       quote_clean_start = quote_temp.string.find('"')
       quote_clean_end = quote_temp.string.rfind('<')

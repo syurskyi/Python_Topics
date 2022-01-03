@@ -4,27 +4,27 @@ Created on Aug 21, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ longestConsecutive(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        self.maxLen = 0
-        self.helper(root)
-        r.. self.maxLen
+        maxLen = 0
+        helper(root)
+        r.. maxLen
     
     ___ helper(self, root):
         __ n.. root: r.. 0, 0
         increase, decrease = 1, 1
-        inLeft, deLeft = self.helper(root.left)
-        inRight, deRight = self.helper(root.right)
+        inLeft, deLeft = helper(root.left)
+        inRight, deRight = helper(root.right)
         __ root.left:
             __ root.left.val+1 __ root.val:
                 increase = inLeft+1
@@ -35,16 +35,16 @@ class Solution(object):
                 increase = max(increase, inRight+1)
             ____ root.right.val-1 __ root.val:
                 decrease = max(decrease, deRight+1)
-        self.maxLen = max(self.maxLen, increase+decrease-1)
+        maxLen = max(maxLen, increase+decrease-1)
         r.. increase, decrease
     
-    ___ test(self):
+    ___ test
         testCases = [
             TreeNode(1, TreeNode(2), TreeNode(3)),
             TreeNode(2, TreeNode(1), TreeNode(3)),
         ]
         ___ root __ testCases:
-            result = self.longestConsecutive(root)
+            result = longestConsecutive(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

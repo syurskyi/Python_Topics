@@ -4,7 +4,7 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ superPow(self, a, b):
         __ a % 1337 __ 0: r.. a
         p = 0
@@ -12,7 +12,7 @@ class Solution(object):
             p = (p*10+i)%1140
         __ p __ 0:
             p += 1440
-        r.. self.power(a, p, 1337)
+        r.. power(a, p, 1337)
     
     ___ power(self, a, n, mod):
         a %= mod
@@ -24,7 +24,7 @@ class Solution(object):
             n >>= 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, [3]],
             [2, [1, 0]],
@@ -32,7 +32,7 @@ class Solution(object):
         ___ a, b __ testCases:
             print('a: %s' % a)
             print('b: %s' % b)
-            result = self.superPow(a, b)
+            result = superPow(a, b)
             print('result: %s' % result)
             print('-='*30+'-')
 

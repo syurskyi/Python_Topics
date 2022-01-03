@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @return a list of strings, [s1, s2]
     ___ letterCombinations(self, digits):
         d = {
@@ -11,14 +11,14 @@ class Solution:
             '8': 'tuv',
             '9': 'wxyz',
         }
-        r.. self.combinations(digits, 0, d)
+        r.. combinations(digits, 0, d)
 
     ___ combinations(self, digits, i, d):
         __ i __ l..(digits):
             r.. ['']
         ____:
             res    # list
-            rest_combs = self.combinations(digits, i + 1, d)
+            rest_combs = combinations(digits, i + 1, d)
             ___ comb __ rest_combs:
                 number = digits[i]
                 letters = d[number]

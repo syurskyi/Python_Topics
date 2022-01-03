@@ -15,8 +15,8 @@ ___ within_schedule(utc, *timezones):
             raise ValueError
         city_local_time = utc.astimezone(pytz.timezone(timezone))
         __ city_local_time.hour n.. __ MEETING_HOURS:
-            r.. False
-    r.. True
+            r.. F..
+    r.. T..
 
 
 dt = d__(2018, 4, 18, 12, 28)

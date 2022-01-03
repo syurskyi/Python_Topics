@@ -1,6 +1,6 @@
 ___ transform(old):
     r.. {
-        letter.lower(): points
-        ___ points, letters __ old.items()
+        letter.l..: points
+        ___ points, letters __ old.i..
         ___ letter __ letters
     }

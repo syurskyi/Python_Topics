@@ -5,12 +5,12 @@ Created on Feb 18, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x, nextNode_ N..
-        self.val = x
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , x, nextNode_ N..
+        val = x
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ reverseList(self, head):
         """
         :type head: ListNode
@@ -35,24 +35,24 @@ class Solution(object):
         __ n.. head o. n.. head.next: r.. head
         second = head.next
         head.next = N..
-        rest = self.reverseListRecursive(second)
+        rest = reverseListRecursive(second)
         second.next = head
         r.. rest
     
-    ___ test(self):
+    ___ test
         head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
         node = head
         w.... node:
             print('%s => ' % node.val, end='')
             node = node.next
-        node = self.reverseList(head)
+        node = reverseList(head)
         print()
         newHead = node
         w.... node:
             print('%s => ' % node.val, end='')
             node = node.next
         print()
-        node = self.reverseListRecursive(newHead)
+        node = reverseListRecursive(newHead)
         w.... node:
             print('%s => ' % node.val, end='')
             node = node.next

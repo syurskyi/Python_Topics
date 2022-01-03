@@ -7,7 +7,7 @@ class UndirectedGraphNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: graph: a list of Undirected graph node
     @param: s: Undirected graph node

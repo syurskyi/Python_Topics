@@ -4,10 +4,10 @@ lookup  {'age': 42, 'loc': 'Italy'}
 lookup  d..(age42, loc'Italy')
 
 
-class Wizard:
-    ___ __init__(self, name, level):
-        self.level  level
-        self.name  name
+c_ Wizard:
+    ___ - , name, level):
+        level  level
+        name  name
 
 
 gandolf  Wizard("Gladolf", 42)

@@ -5,12 +5,12 @@ ___ calc_median_from_dict(d: d..) -> float:
     Example:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
-    ___ value __ d.values():
+    ___ value __ d.v..
         __ n.. isi..(value, int):
             raise TypeError
 
     frequency    # list
-    ___ key, value __ d.items():
+    ___ key, value __ d.i..:
         key_occurrence = value
         __ value > 100_000_000:
             key_occurrence = int(value / 100_000_000)

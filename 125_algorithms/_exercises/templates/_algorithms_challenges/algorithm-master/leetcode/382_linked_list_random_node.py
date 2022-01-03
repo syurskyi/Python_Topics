@@ -7,21 +7,21 @@
 ____ random _______ randint
 
 
-class Solution:
-    ___ __init__(self, head):
+c_ Solution:
+    ___ - , head):
         """
         @param head The linked list's head.
         Note that the head is guaranteed to be not null, so it contains at least one node.
         :type head: ListNode
         """
-        self.head = head
+        head = head
 
-    ___ getRandom(self):
+    ___ getRandom
         """
         Returns a random node's value.
         :rtype: int
         """
-        res = node = self.head
+        res = node = head
         i = 0
 
         w.... node:

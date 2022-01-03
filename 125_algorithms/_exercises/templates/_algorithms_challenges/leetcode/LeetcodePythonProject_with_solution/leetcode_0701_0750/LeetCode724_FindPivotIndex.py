@@ -3,7 +3,7 @@ Created on Feb 21, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ pivotIndex(self, nums):
         """
         :type nums: List[int]
@@ -18,7 +18,7 @@ class Solution(object):
             tmp += nums[i]
         r.. -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 7, 3, 6, 5, 6],
             [1, 2, 3],
@@ -26,7 +26,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.pivotIndex(nums)
+            result = pivotIndex(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

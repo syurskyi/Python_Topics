@@ -16,9 +16,9 @@ ___ check_lists(l1, l2):
 
 ___ contains(l1, l2):
     __ n.. l2:
-        r.. True
+        r.. T..
     __ l..(l2) > l..(l1):
-        r.. False
+        r.. F..
     ___ i __ r..(l..(l1) - l..(l2) + 1):
         __ l1[i] != l2[0]:
             continue
@@ -26,5 +26,5 @@ ___ contains(l1, l2):
             __ l1[i + j] != l2[j]:
                 break
         ____:
-            r.. True
-    r.. False
+            r.. T..
+    r.. F..

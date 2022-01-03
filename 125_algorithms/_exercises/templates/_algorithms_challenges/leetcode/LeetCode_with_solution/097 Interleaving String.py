@@ -12,7 +12,7 @@ When s3 = "aadbbbaccc", return false.
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isInterleave(self, s1, s2, s3):
         """
         dfs
@@ -55,12 +55,12 @@ class Solution(object):
         m = l..(s1)
         n = l..(s2)
         __ m+n != l..(s3):
-            r.. False
+            r.. F..
 
-        dp = [[False ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        dp = [[F.. ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
 
         # initialize boundary conditions
-        dp[0][0] = True
+        dp[0][0] = T..
         ___ i __ xrange(1, m+1):
             dp[i][0] = dp[i-1][0] a.. s3[i+0-1] __ s1[i-1]
         ___ j __ xrange(1, n+1):
@@ -86,18 +86,18 @@ class Solution(object):
         :return: boolean
         """
         __ n.. s3:
-            r.. True
+            r.. T..
         letter = s3[0]
         __ s1 a.. s1[0] __ letter:
-            __ self.isInterleave(s1[1:], s2, s3[1:]):
-                r.. True
+            __ isInterleave(s1[1:], s2, s3[1:]):
+                r.. T..
         __ s2 a.. s2[0] __ letter:
-            __ self.isInterleave(s1, s2[1:], s3[1:]):
-                r.. True
-        r.. False
+            __ isInterleave(s1, s2[1:], s3[1:]):
+                r.. T..
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().isInterleave("aa", "ab", "abaa") __ True
-    ... Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") __ True
-    ... Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") __ False
+    ... Solution().isInterleave("aa", "ab", "abaa") __ T..
+    ... Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") __ T..
+    ... Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") __ F..

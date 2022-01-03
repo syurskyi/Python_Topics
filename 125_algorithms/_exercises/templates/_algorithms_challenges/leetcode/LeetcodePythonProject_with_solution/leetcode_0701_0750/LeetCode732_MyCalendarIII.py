@@ -3,7 +3,7 @@ Created on Mar 6, 2018
 
 @author: tongq
 '''
-class MyCalendarThree(object):
+c_ MyCalendarThree(object):
     # Checkout Java Solution!
     pass
 

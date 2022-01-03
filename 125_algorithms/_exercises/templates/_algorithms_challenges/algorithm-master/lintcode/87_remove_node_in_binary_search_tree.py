@@ -11,7 +11,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: The root of the binary search tree.
     @param: target: Remove the node with given value.
@@ -27,16 +27,16 @@ class Solution:
             __ n.. root.right:
                 r.. root.left
 
-            min_node = self.find_min(root.right)
+            min_node = find_min(root.right)
             root.val = min_node.val
-            root.right = self.removeNode(root.right, root.val)
+            root.right = removeNode(root.right, root.val)
 
             r.. root
 
         __ target < root.val:
-            root.left = self.removeNode(root.left, target)
+            root.left = removeNode(root.left, target)
         ____:
-            root.right = self.removeNode(root.right, target)
+            root.right = removeNode(root.right, target)
 
         r.. root
 

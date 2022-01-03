@@ -5,19 +5,19 @@ Created on Jan 30, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ isValidBST(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        __ n.. root: r.. True
+        __ n.. root: r.. T..
         stack    # list
         prev = float('-inf')
         node = root
@@ -27,10 +27,10 @@ class Solution(object):
         w.... stack:
             node = stack.pop()
             __ prev >= node.val:
-                r.. False
+                r.. F..
             prev = node.val
             node0 = node.right
             w.... node0:
                 stack.a..(node0)
                 node0 = node0.left
-        r.. True
+        r.. T..

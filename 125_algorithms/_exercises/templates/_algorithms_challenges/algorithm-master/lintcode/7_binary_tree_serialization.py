@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     EMPTY = '#'
 
     ___ serialize(self, root):
@@ -24,17 +24,17 @@ class Solution:
 
         ___ node __ queue:
             __ n.. node:
-                vals.a..(self.EMPTY)
+                vals.a..(EMPTY)
                 continue
 
             vals.a..(s..(node.val))
             queue.a..(node.left)
             queue.a..(node.right)
 
-        w.... vals[-1] __ self.EMPTY:
+        w.... vals[-1] __ EMPTY:
             vals.pop()
 
-        r.. TEMPLATE.f..(','.join(vals))
+        r.. TEMPLATE.f..(','.j..(vals))
 
     ___ deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -62,7 +62,7 @@ class Solution:
 
                 __ i >= n:
                     break
-                __ vals[i] __ self.EMPTY:
+                __ vals[i] __ EMPTY:
                     continue
 
                 setattr(node, branch, TreeNode(int(vals[i])))

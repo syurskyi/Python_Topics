@@ -1,5 +1,5 @@
 ___ reverse(arg):
-    __ type(arg) != bool:
+    __ t..(arg) != bool:
         r.. "boolean expected"
     ____:
         r.. n.. arg

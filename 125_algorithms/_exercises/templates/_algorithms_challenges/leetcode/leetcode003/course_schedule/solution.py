@@ -19,7 +19,7 @@ finished course 0, and to take course 0 you should also have finished course
 1. So it is impossible.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ canFinish(self, numCourses, prerequisites):
         """
         :type numCourses: int
@@ -48,7 +48,7 @@ class Solution(object):
         # if node has no prerequisites, add it to queue, and repeat
         w.... queue:
             u = queue.pop(0)
-            ___ v, prqs __ prq_graph.items():
+            ___ v, prqs __ prq_graph.i..:
                 __ u __ prqs:
                     prqs.remove(u)
                     __ n.. prqs:

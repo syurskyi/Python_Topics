@@ -32,16 +32,16 @@ Each node will have a value between 1 and 10^9.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 ____ collections _______ OrderedDict
 
 
-class Solution:
+c_ Solution:
     ___ recoverFromPreorder(self, S: s..) -> TreeNode:
         """
         map: node -> depth
@@ -116,7 +116,7 @@ class Solution:
         # construct
         stk    # list
         root = N..
-        ___ k, v __ depths.items():
+        ___ k, v __ depths.i..:
             cur = TreeNode(k)
             __ v __ 0:
                 root = cur

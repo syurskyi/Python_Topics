@@ -5,13 +5,13 @@ Two binary trees are considered equal if they are structurally identical and the
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     ___ isSameTree(self, p, q):
         """
         dfs
@@ -22,13 +22,13 @@ class Solution:
 
         # trivial
         __ n.. p a.. n.. q:
-            r.. True
+            r.. T..
 
         # dfs
         try:
-            __ p.val__q.val a.. self.isSameTree(p.left, q.left) a.. self.isSameTree(p.right, q.right):
-                r.. True
+            __ p.val__q.val a.. isSameTree(p.left, q.left) a.. isSameTree(p.right, q.right):
+                r.. T..
         except AttributeError:
-            r.. False
+            r.. F..
 
-        r.. False
+        r.. F..

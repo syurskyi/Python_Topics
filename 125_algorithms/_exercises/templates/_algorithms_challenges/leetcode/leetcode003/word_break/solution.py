@@ -9,7 +9,7 @@ dict = ["leet", "code"].
 Return true because "leetcode" can be segmented as "leet code".
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ wordBreak(self, s, wordDict):
         """
         :type s: str
@@ -18,13 +18,13 @@ class Solution(object):
         """
         n = l..(s)
         # t[i] indicates s[:i + 1] is such a string
-        t = [False ___ i __ r..(n)]
+        t = [F.. ___ i __ r..(n)]
         ___ i __ r..(n):
             __ s[:i + 1] __ wordDict:
-                t[i] = True
+                t[i] = T..
             ____:
                 ___ j __ r..(i):
-                    __ t[j] __ True a.. s[j + 1:i + 1] __ wordDict:
-                        t[i] = True
+                    __ t[j] __ T.. a.. s[j + 1:i + 1] __ wordDict:
+                        t[i] = T..
                         break
         r.. t[-1]

@@ -3,21 +3,21 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ containVirus(self, grid):
         """
         :type grid: List[List[int]]
         :rtype: int
         """
         cost = [0]
-        w.... self.check(grid, cost):
+        w.... check(grid, cost):
             continue
         r.. cost[0]
     
     ___ check(self, grid, cost):
         count = 1
         maxVal = -1
-        flag = False
+        flag = F..
         info    # list
         m, n = l..(grid), l..(grid[0])
         ___ i __ r..(m):
@@ -27,16 +27,16 @@ class Solution(object):
                     walls = [[0]*n ___ _ __ r..(m)]
                     res = [0, 0]
                     grid[i][j] = count
-                    self.dfs(i, j, grid, count, walls, res)
+                    dfs(i, j, grid, count, walls, res)
                     __ res[0] != 0:
-                        flag = True
+                        flag = T..
                     __ maxVal __ -1 o. res[0] > info[maxVal][0]:
                         maxVal = count-2
                     info.a..(l..(res))
         __ count __ 1:
-            r.. False
+            r.. F..
         cost[0] += info[maxVal][1]
-        self.update(grid, maxVal+2)
+        update(grid, maxVal+2)
         r.. flag
     
     ___ dfs(self, row, col, grid, count, walls, res):
@@ -49,7 +49,7 @@ class Solution(object):
             __ 0 <= newRow < m a.. 0 <= newCol < n:
                 __ grid[newRow][newCol] __ 1:
                     grid[newRow][newCol] = count
-                    self.dfs(newRow, newCol, grid, count, walls, res)
+                    dfs(newRow, newCol, grid, count, walls, res)
                 ____ grid[newRow][newCol] __ 0:
                     __ walls[newRow][newCol] __ 0:
                         res[0] += 1
@@ -73,7 +73,7 @@ class Solution(object):
                 ____ grid[i][j] __ quarantine:
                     grid[i][j] = -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [0,1,0,0,0,0,0,1],
@@ -98,7 +98,7 @@ class Solution(object):
             ],
         ]
         ___ grid __ testCases:
-            result = self.containVirus(grid)
+            result = containVirus(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

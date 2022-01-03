@@ -13,5 +13,5 @@ ___ dec_to_base(number, base):
 
 
 
-print(type(dec_to_base(2020,8)))
+print(t..(dec_to_base(2020,8)))
 print(dec_to_base(2020,8))

@@ -6,7 +6,7 @@ Note: The numbers can be arbitrarily large and are non-negative.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ multiply(self, num1, num2):
         """
         :type num1: str
@@ -27,7 +27,7 @@ class Solution(object):
                 c = tmp / 10
             __ c > 0:
                 res[m + i] = s..(c)
-        res = ''.join(res[::-1])
+        res = ''.j..(res[::-1])
         ___ i, d __ e..(res):
             __ d != '0':
                 r.. res[i:]

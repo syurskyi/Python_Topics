@@ -24,7 +24,7 @@ Return 0.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ minPatches(self, nums, n):
         """
         https://discuss.leetcode.com/topic/35494/solution-explanation

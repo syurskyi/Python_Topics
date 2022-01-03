@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ canCompleteCircuit(self, gas, cost):
     """
     :type gas: List[int]

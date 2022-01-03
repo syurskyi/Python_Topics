@@ -4,11 +4,11 @@
 #         self.label = x
 #         self.neighbors = []
 
-class Solution:
+c_ Solution:
   # @param node, a undirected graph node
   # @return a undirected graph node
   ___ cloneGraph(self, node):
-    graph = {}
+    graph    # dict
     visited = set()
 
     ___ dfs(node, visited, graph):

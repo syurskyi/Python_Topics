@@ -4,7 +4,7 @@ ___ pattern(n):
     ___ i __ r..(n,0,-1):
         string += s..(i)
         res.a..(string)
-    r.. '\n'.join(res)
+    r.. '\n'.j..(res)
         
 
 

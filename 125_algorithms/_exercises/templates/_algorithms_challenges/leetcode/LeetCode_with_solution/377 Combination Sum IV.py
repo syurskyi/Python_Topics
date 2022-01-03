@@ -27,7 +27,7 @@ What limitation we need to add to the question to allow negative numbers?
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ combinationSum4(self, nums, target):
         """
         Let F[i] be the number of combinations ways for number i

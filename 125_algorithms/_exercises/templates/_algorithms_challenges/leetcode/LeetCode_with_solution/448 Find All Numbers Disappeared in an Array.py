@@ -8,7 +8,7 @@ Could you do it without extra space and in O(n) runtime? You may assume the retu
 """
 
 
-class Solution:
+c_ Solution:
     ___ findDisappearedNumbers(self, A):
         """
         You can use hash map with extra space O(n).

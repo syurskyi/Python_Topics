@@ -3,7 +3,7 @@ Created on May 25, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ ladderLength(self, beginWord, endWord, wordList):
         """
         :type beginWord: str
@@ -24,7 +24,7 @@ class Solution(object):
                 word = queue.pop(0)
                 __ word __ endWord:
                     r.. length
-                nextWords = self.getNext(word, wordSet)
+                nextWords = getNext(word, wordSet)
                 ___ nextWord __ nextWords:
                     __ nextWord n.. __ visited:
                         visited.add(nextWord)
@@ -42,7 +42,7 @@ class Solution(object):
                         res.a..(word0)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "hit",
@@ -56,7 +56,7 @@ class Solution(object):
             ],
         ]
         ___ beginWord, endWord, wordList __ testCases:
-            result = self.ladderLength(beginWord, endWord, wordList)
+            result = ladderLength(beginWord, endWord, wordList)
             print('result: %s' % result)
             print('-='*30+'-')
 

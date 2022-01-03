@@ -1,7 +1,7 @@
-class Solution:
+c_ Solution:
     # @return a tuple, (index1, index2)
     ___ twoSum(self, num, target):
-        d = {}
+        d    # dict
         ___ i, e __ e..(num):
             __ e __ d:
                 r.. d[e] + 1, i + 1

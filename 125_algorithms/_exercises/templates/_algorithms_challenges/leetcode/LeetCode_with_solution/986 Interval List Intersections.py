@@ -25,13 +25,13 @@ ____ typing _______ List
 
 
 # Definition for an interval.
-class Interval:
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval:
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
 
-class Solution:
+c_ Solution:
     ___ intervalIntersection(self, A: List[Interval], B: List[Interval]) -> List[Interval]:
         """
         Among the given intervals, consider the interval A[0] with the smallest

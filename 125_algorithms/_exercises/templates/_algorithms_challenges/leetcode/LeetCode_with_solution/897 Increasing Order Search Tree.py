@@ -42,36 +42,36 @@ Each node will have a unique integer value from 0 to 1000.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.prev = N..
-        self.root = N..
+c_ Solution:
+    ___ - ):
+        prev = N..
+        root = N..
 
     ___ increasingBST(self, root: TreeNode) -> TreeNode:
         """
         keep a previous index
         in-order is easy
         """
-        self.dfs(root)
-        r.. self.root
+        dfs(root)
+        r.. root
 
     ___ dfs(self, node):
         __ n.. node:
             r..
 
-        self.dfs(node.left)
-        __ n.. self.prev:
-            self.root = node
+        dfs(node.left)
+        __ n.. prev:
+            root = node
         ____:
-            self.prev.right = node
+            prev.right = node
             node.left = N..  # need test case to test it
 
-        self.prev = node
-        self.dfs(node.right)
+        prev = node
+        dfs(node.right)

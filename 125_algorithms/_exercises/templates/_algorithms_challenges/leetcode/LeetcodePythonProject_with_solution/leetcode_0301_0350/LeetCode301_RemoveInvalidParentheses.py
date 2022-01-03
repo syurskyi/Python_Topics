@@ -4,7 +4,7 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ removeInvalidParentheses(self, s):
         rmL, rmR = 0, 0
         ___ c __ s:
@@ -16,7 +16,7 @@ class Solution(object):
                 ____:
                     rmR += 1
         result = set()
-        self.helper(s, 0, result, '', rmL, rmR, 0)
+        helper(s, 0, result, '', rmL, rmR, 0)
         r.. l..(result)
     
     ___ helper(self, s, i, result, elem, rmL, rmR, openNum):
@@ -28,15 +28,15 @@ class Solution(object):
             r..
         c = s[i]
         __ c __ '(':
-            self.helper(s, i+1, result, elem+c, rmL, rmR, openNum+1)
-            self.helper(s, i+1, result, elem, rmL-1, rmR, openNum)
+            helper(s, i+1, result, elem+c, rmL, rmR, openNum+1)
+            helper(s, i+1, result, elem, rmL-1, rmR, openNum)
         ____ c __ ')':
-            self.helper(s, i+1, result, elem+c, rmL, rmR, openNum-1)
-            self.helper(s, i+1, result, elem, rmL, rmR-1, openNum)
+            helper(s, i+1, result, elem+c, rmL, rmR, openNum-1)
+            helper(s, i+1, result, elem, rmL, rmR-1, openNum)
         ____:
-            self.helper(s, i+1, result, elem+c, rmL, rmR, openNum)
+            helper(s, i+1, result, elem+c, rmL, rmR, openNum)
     
-    ___ test(self):
+    ___ test
         testCases = [
             '()())()',
             '(a)())()',
@@ -44,7 +44,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.removeInvalidParentheses(s)
+            result = removeInvalidParentheses(s)
             print('result: %s' % (result))
             print('-='*20+'-')
     

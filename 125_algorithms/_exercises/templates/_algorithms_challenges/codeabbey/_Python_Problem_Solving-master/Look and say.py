@@ -28,7 +28,7 @@ ___ look_and_say(data,maxlen):
                 __ k __ l..(data)-1:
                     res_string.a..(s..(count) + data[k])
         #print the updated string with updated count
-        data = ''.join(s..(e) ___ e __ res_string)
+        data = ''.j..(s..(e) ___ e __ res_string)
         result.a..(data)
         #print(start_num)
     r.. result

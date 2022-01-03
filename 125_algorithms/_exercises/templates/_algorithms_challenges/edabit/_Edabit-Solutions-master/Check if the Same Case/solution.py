@@ -1,14 +1,14 @@
 ___ same_case(txt):
-    __ txt.islower() o. txt.isupper() __ True:
-        r.. True
+    __ txt.islower() o. txt.isupper() __ T..:
+        r.. T..
     ____:
-        r.. False
+        r.. F..
 
 
 
 ___ test():
     print("Test has started")
-    __ same_case("mArmALadE") != False:
+    __ same_case("mArmALadE") != F..:
         print("error1")
-    __ same_case("MARMALADE") != True:
+    __ same_case("MARMALADE") != T..:
         print("error2")

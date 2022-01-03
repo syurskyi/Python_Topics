@@ -4,14 +4,14 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ inorderSuccessor(self, root, p):
         """
         search
@@ -22,15 +22,15 @@ class Solution(object):
         :rtype: TreeNode
         """
         find = [N..]
-        self.search(root, p, find)
+        s..(root, p, find)
         r.. find[0]
 
-    ___ search(self, cur, p, find):
+    ___ s..(self, cur, p, find):
         __ n.. cur:
             r..
 
         __ cur.val > p.val:
             find[0] = cur
-            self.search(cur.left, p, find)
+            s..(cur.left, p, find)
         ____:
-            self.search(cur.right, p, find)
+            s..(cur.right, p, find)

@@ -24,68 +24,68 @@ isFull(): Checks whether the circular queue is full or not.
 """
 
 
-class MyCircularQueue:
+c_ MyCircularQueue:
 
-    ___ __init__(self, k: int):
+    ___ - , k: int):
         """
         Initialize your data structure here. Set the size of the queue to be k.
         """
-        self.head = 0
-        self.tail = -1
-        self.sz = 0
-        self.k = k
-        self.lst = [N.. ___ _ __ r..(k)]
+        head = 0
+        tail = -1
+        sz = 0
+        k = k
+        lst = [N.. ___ _ __ r..(k)]
 
 
     ___ enQueue(self, value: int) -> bool:
         """
         Insert an element into the circular queue. Return true if the operation is successful.
         """
-        __ self.sz >= self.k:
-            r.. False
+        __ sz >= k:
+            r.. F..
 
-        self.tail += 1
-        self.lst[self.tail % self.k] = value
-        self.sz += 1
-        r.. True
+        tail += 1
+        lst[tail % k] = value
+        sz += 1
+        r.. T..
 
     ___ deQueue(self) -> bool:
         """
         Delete an element from the circular queue. Return true if the operation is successful.
         """
-        __ self.sz <= 0:
-            r.. False
+        __ sz <= 0:
+            r.. F..
 
-        self.lst[self.head % self.k] = N..
-        self.head += 1
-        self.sz -= 1
-        r.. True
+        lst[head % k] = N..
+        head += 1
+        sz -= 1
+        r.. T..
 
     ___ Front(self) -> int:
         """
         Get the front item from the queue.
         """
-        ret = self.lst[self.head % self.k]
+        ret = lst[head % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
     ___ Rear(self) -> int:
         """
         Get the last item from the queue.
         """
-        ret = self.lst[self.tail % self.k]
+        ret = lst[tail % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
     ___ isEmpty(self) -> bool:
         """
         Checks whether the circular queue is empty or not.
         """
-        r.. self.sz __ 0
+        r.. sz __ 0
 
     ___ isFull(self) -> bool:
         """
         Checks whether the circular queue is full or not.
         """
-        r.. self.sz __ self.k
+        r.. sz __ k
 
 
 # Your MyCircularQueue object will be instantiated and called as such:

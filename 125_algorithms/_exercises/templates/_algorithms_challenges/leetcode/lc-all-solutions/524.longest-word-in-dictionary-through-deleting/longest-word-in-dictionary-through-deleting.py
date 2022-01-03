@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findLongestWord(self, s, d):
     """
     :type s: str
@@ -16,8 +16,8 @@ class Solution(object):
         __ c __ word[i]:
           i += 1
         __ i __ l..(word):
-          r.. True
-      r.. False
+          r.. T..
+      r.. F..
 
     ___ word __ d:
       __ isSubseq(word, s):

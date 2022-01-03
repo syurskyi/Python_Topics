@@ -13,17 +13,17 @@ A = [2,3,1,1,4], return true.
 A = [3,2,1,0,4], return false.
 """
 
-class Solution:
+c_ Solution:
     # @param A, a list of integers
     # @return a boolean
     ___ canJump(self, A):
         n = l..(A)
         __ n __ 1:
-            r.. True
+            r.. T..
         t = 0  # Number of remaining steps
         ___ i __ r..(1, n):
             # t is max number of steps that remained if reaching A[i]
             t = max(t, A[i - 1]) - 1
             __ t < 0:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..

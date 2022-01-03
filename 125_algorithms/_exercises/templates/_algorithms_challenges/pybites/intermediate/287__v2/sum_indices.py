@@ -2,7 +2,7 @@ ____ typing _______ List
 
 
 ___ sum_indices(items: List[s..]) -> int:
-    duplicate_lookup = {}
+    duplicate_lookup    # dict
     running_total = 0
     ___ i __ r..(l..(items)):
         item = items[i]

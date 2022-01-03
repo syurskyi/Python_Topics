@@ -2,7 +2,7 @@ ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
 ____ collections _______ defaultdict
 
-class MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple):
     title: s..
     price: int
     date: date
@@ -39,4 +39,4 @@ ___ rent_or_stream(
        Check out the tests for examples.
     """
     r.. {key: RENT __ value <= STREAMING_COST_PER_MONTH ____ STREAM
-            ___ key, value __ collect_totals(renting_history).items()}
+            ___ key, value __ collect_totals(renting_history).i..}

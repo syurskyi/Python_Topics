@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ searchMatrix(self, matrix, target):
     """
     :type matrix: List[List[int]]
@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: bool
     """
     __ l..(matrix) __ 0 o. l..(matrix[0]) __ 0:
-      r.. False
+      r.. F..
 
     m = l..(matrix)
     n = l..(matrix[0])
@@ -19,9 +19,9 @@ class Solution(object):
       ____ matrix[mid / n][mid % n] < target:
         start = mid
       ____:
-        r.. True
+        r.. T..
     __ matrix[start / n][start % n] __ target:
-      r.. True
+      r.. T..
     __ matrix[end / n][end % n] __ target:
-      r.. True
-    r.. False
+      r.. T..
+    r.. F..

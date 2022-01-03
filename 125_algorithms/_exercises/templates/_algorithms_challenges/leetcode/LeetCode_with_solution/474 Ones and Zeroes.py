@@ -28,7 +28,7 @@ Explanation: You could form "10", but then you'd have nothing left. Better form
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ findMaxForm(self, strs, m, n):
         """
         0-1 knapsack
@@ -46,14 +46,14 @@ class Solution:
             r.. 0
 
         F = [[0 ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
-        z, o = self.c.. strs[0])
+        z, o = c.. strs[0])
         ___ i __ r..(m+1):
             ___ j __ r..(n+1):
                 __ i + z<= m a.. j + o <= n:
                     F[i][j] = 1
 
         ___ e __ r..(1, l..(strs)):
-            z, o = self.c.. strs[e])
+            z, o = c.. strs[e])
             ___ i __ r..(m+1):
                 ___ j __ r..(n+1):
                     __ i + z <= m a.. j + o <= n:

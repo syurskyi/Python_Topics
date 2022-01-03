@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ minWindow(self, s, t):
         """
         :type s: str
@@ -8,7 +8,7 @@ class Solution:
         __ n.. s o. n.. t:
             r.. ''
 
-        F = {}
+        F    # dict
         ___ c __ t:
             F[c] = F.get(c, 0) + 1
 

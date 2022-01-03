@@ -1,11 +1,11 @@
-class Solution(object):
+c_ Solution(object):
   ___ removeDuplicateLetters(self, s):
     """
     :type s: str
     :rtype: str
     """
-    d = {}
-    count = {}
+    d    # dict
+    count    # dict
     ___ c __ s:
       d[c] = d.get(c, 0) + 1
       count[c] = count.get(c, 0) + 1
@@ -18,4 +18,4 @@ class Solution(object):
         stack.a..(c)
         cache.add(c)
       count[c] -= 1
-    r.. "".join(stack)
+    r.. "".j..(stack)

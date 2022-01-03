@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @return a list of strings, [s1, s2]
     ___ letterCombinations(self, digits):
         d = {
@@ -13,17 +13,17 @@ class Solution:
         }
         cand    # list
         res    # list
-        self.letter_combination_aux(digits, d, cand, res)
+        letter_combination_aux(digits, d, cand, res)
         r.. res
 
     ___ letter_combination_aux(self, digits, d, cand, res):
         __ n.. digits:
-            res.a..(''.join(cand))
+            res.a..(''.j..(cand))
         ____:
             digit = digits[0]
             __ digit __ d:
                 letters = d[digit]
                 ___ letter __ letters:
                     cand.a..(letter)
-                    self.letter_combination_aux(digits[1:], d, cand, res)
+                    letter_combination_aux(digits[1:], d, cand, res)
                     cand.pop()

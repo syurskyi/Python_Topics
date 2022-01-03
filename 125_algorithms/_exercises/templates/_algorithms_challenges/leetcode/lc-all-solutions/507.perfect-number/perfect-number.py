@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ checkPerfectNumber(self, num):
     """
     :type num: int
@@ -11,4 +11,4 @@ class Solution(object):
         ans += div
         ans += num / div
       div += 1
-    r.. ans __ num __ num != 1 ____ False
+    r.. ans __ num __ num != 1 ____ F..

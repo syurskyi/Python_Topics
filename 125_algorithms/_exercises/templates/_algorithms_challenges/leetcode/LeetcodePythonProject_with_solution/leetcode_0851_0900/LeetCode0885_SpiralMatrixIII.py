@@ -3,7 +3,7 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ spiralMatrixIII(self, R, C, r0, c0):
         """
         :type R: int
@@ -38,7 +38,7 @@ class Solution(object):
         w.... l..(res) < R*C:
             ___ _ __ r..(2):
                 ___ _ __ r..(length):
-                    __ self.isInRange(pos, R, C):
+                    __ isInRange(pos, R, C):
                         res.a..(pos)
                     d = dirs[i%4]
                     pos = [pos[0]+d[0], pos[1]+d[1]]
@@ -49,12 +49,12 @@ class Solution(object):
     ___ isInRange(self, pos, R, C):
         r.. 0 <= pos[0] < R a.. 0 <= pos[1] < C
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 4, 0, 0],
         ]
         ___ R, C, r0, c0 __ testCases:
-            res = self.spiralMatrixIII(R, C, r0, c0)
+            res = spiralMatrixIII(R, C, r0, c0)
             print('res: %s' % res)
 
 __ __name__ __ '__main__':

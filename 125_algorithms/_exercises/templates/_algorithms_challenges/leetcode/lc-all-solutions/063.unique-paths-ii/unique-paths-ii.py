@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ uniquePathsWithObstacles(self, grid):
     """
     :type obstacleGrid: List[List[int]]

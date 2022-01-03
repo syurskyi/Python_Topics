@@ -21,12 +21,12 @@ Input: "2*3-4*5"
 (((2*3)-4)*5) = 10
 Output: [-34, -14, -10, -10, 10]
 """
-_______ re
+_______ __
 
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ diffWaysToCompute(self, input):
         """
         Looping + Divide & Conquer
@@ -34,10 +34,10 @@ class Solution:
         :type: input
         :rtype: list[]
         """
-        input_lst = re.s..(r"(\D)", input)  # capturing parentheses
-        nums = map(int, filter(l.... x: re.match(r"\d+", x), input_lst))
-        ops = filter(l.... x: re.match(r"\D", x), input_lst)
-        ret = self.dfs_eval(nums, ops)
+        input_lst = __.s..(r"(\D)", input)  # capturing parentheses
+        nums = map(int, filter(l.... x: __.match(r"\d+", x), input_lst))
+        ops = filter(l.... x: __.match(r"\D", x), input_lst)
+        ret = dfs_eval(nums, ops)
         r.. ret
 
     ___ dfs_eval(self, nums, ops):
@@ -47,11 +47,11 @@ class Solution:
             r.. nums
 
         ___ i, op __ e..(ops):
-            left_vals = self.dfs_eval(nums[:i+1], ops[:i])
-            right_vals = self.dfs_eval(nums[i+1:], ops[i+1:])
+            left_vals = dfs_eval(nums[:i+1], ops[:i])
+            right_vals = dfs_eval(nums[i+1:], ops[i+1:])
             ___ l __ left_vals:
                 ___ r __ right_vals:
-                    ret.a..(self._eval(l, r, op))
+                    ret.a..(_eval(l, r, op))
 
         r.. ret
 

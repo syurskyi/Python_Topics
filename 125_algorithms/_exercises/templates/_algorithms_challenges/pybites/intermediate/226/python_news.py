@@ -1,5 +1,5 @@
 ____ collections _______ n..
-_______ re
+_______ __
 
 ____ bs4 _______ BeautifulSoup
 _______ requests
@@ -28,18 +28,18 @@ ___ get_top_titles(url, top=5):
 
     
     entries    # list
-    rows = soup.find_all("tr",id=True)
+    rows = soup.find_all("tr",id=T..)
     
 
-    get_number = l.... s: int(re.search(r'\d+',s).group())
+    get_number = l.... s: int(__.s..(r'\d+',s).group())
 
 
     ___ row __ rows:
         links = row.select('span.title a')
-        title_text = links[0].getText(strip=True)
+        title_text = links[0].getText(strip=T..)
         link_text = ''
         __ l..(links) > 1:
-            link_text = links[1].getText(strip=True)
+            link_text = links[1].getText(strip=T..)
             link_text = f" ({link_text})"
 
 
@@ -54,7 +54,7 @@ ___ get_top_titles(url, top=5):
 
 
 
-        comments = next_row.select_one('span.naturaltime a').getText(strip=True)
+        comments = next_row.select_one('span.naturaltime a').getText(strip=T..)
 
         comments = get_number(comments)
 

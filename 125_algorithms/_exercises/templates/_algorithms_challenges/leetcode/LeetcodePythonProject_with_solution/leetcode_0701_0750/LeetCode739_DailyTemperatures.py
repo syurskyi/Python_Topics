@@ -3,7 +3,7 @@ Created on Mar 14, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ dailyTemperatures(self, temperatures):
         """
         :type temperatures: List[int]
@@ -22,13 +22,13 @@ class Solution(object):
             stack.a..(i)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [73, 74, 75, 71, 69, 72, 76, 73],
         ]
         ___ temperatures __ testCases:
             print('temperatures: %s' % temperatures)
-            result = self.dailyTemperatures(temperatures)
+            result = dailyTemperatures(temperatures)
             print('result: %s' % result)
             print('-='*30+'-')
 

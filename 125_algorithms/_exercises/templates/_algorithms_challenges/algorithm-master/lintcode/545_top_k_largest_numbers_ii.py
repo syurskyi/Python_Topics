@@ -1,13 +1,13 @@
 ____ heapq _______ heappop, heappush
 
 
-class Solution:
+c_ Solution:
     """
     @param: k: An integer
     """
-    ___ __init__(self, k):
-        self.k = k
-        self.tops    # list
+    ___ - , k):
+        k = k
+        tops    # list
 
     """
     @param: num: Number to be added
@@ -16,13 +16,13 @@ class Solution:
     ___ add(self, num):
         # push in first, since we cannot ensure
         # the incoming num will stay in tops
-        heappush(self.tops, num)
+        heappush(tops, num)
 
-        __ l..(self.tops) > self.k:
-            heappop(self.tops)
+        __ l..(tops) > k:
+            heappop(tops)
 
     """
     @return: Top k element
     """
-    ___ topk(self):
-        r.. s..(self.tops, r.._T..
+    ___ topk
+        r.. s..(tops, r.._T..

@@ -1,27 +1,27 @@
-class FileNode(object):
-  ___ __init__(self, name):
-    self.isFolder = True
-    self.childs = {}
-    self.name = name
-    self.data = ""
+c_ FileNode(object):
+  ___ - , name):
+    isFolder = T..
+    childs    # dict
+    name = name
+    data = ""
 
   ___ appendData(self, data):
-    self.data += data
+    data += data
 
-  ___ readAll(self):
-    r.. self.data
+  ___ readAll
+    r.. data
 
 
-class FileSystem(object):
-  ___ __init__(self):
-    self.root = FileNode("/")
+c_ FileSystem(object):
+  ___ - ):
+    root = FileNode("/")
 
   ___ ls(self, path):
     """
     :type path: str
     :rtype: List[str]
     """
-    fd = self.lookup(path, False)
+    fd = lookup(path, F..)
     __ n.. fd:
       r.. []
     __ n.. fd.isFolder:
@@ -34,7 +34,7 @@ class FileSystem(object):
 
   ___ lookup(self, path, isAutoCreate):
     path = path.s..("/")
-    p = self.root
+    p = root
     ___ name __ path:
       __ n.. name:
         continue
@@ -51,7 +51,7 @@ class FileSystem(object):
     :type path: str
     :rtype: void
     """
-    self.lookup(path, True)
+    lookup(path, T..)
 
   ___ addContentToFile(self, filePath, content):
     """
@@ -59,8 +59,8 @@ class FileSystem(object):
     :type content: str
     :rtype: void
     """
-    fd = self.lookup(filePath, True)
-    fd.isFolder = False
+    fd = lookup(filePath, T..)
+    fd.isFolder = F..
     fd.appendData(content)
 
   ___ readContentFromFile(self, filePath):
@@ -68,7 +68,7 @@ class FileSystem(object):
     :type filePath: str
     :rtype: str
     """
-    fd = self.lookup(filePath, False)
+    fd = lookup(filePath, F..)
     __ fd:
       r.. fd.readAll()
     r.. ""

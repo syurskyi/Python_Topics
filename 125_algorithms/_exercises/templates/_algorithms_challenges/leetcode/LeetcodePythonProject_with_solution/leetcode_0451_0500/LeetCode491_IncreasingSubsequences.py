@@ -4,14 +4,14 @@ Created on May 8, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findSubsequences(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
         res = set()
-        self.helper(nums, 0, [], res)
+        helper(nums, 0, [], res)
         r.. [l..(row) ___ row __ res]
     
     ___ helper(self, nums, ind, curr, res):
@@ -22,10 +22,10 @@ class Solution(object):
                 continue
             __ n.. curr o. curr[-1] <= nums[i]:
                 curr.a..(nums[i])
-                self.helper(nums, i+1, curr, res)
+                helper(nums, i+1, curr, res)
                 curr.pop()
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 1, 2, 3, 3],
             [4, 6, 7, 7],
@@ -33,7 +33,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.findSubsequences(nums)
+            result = findSubsequences(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

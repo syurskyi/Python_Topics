@@ -41,26 +41,26 @@ Output:
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
         """
         post-order traverse
         """
-        r.. self.walk(root, L, R)
+        r.. walk(root, L, R)
 
     ___ walk(self, node, L, R):
         __ n.. node:
             r.. N..
 
-        node.left = self.walk(node.left, L, R)
-        node.right = self.walk(node.right, L, R)
+        node.left = walk(node.left, L, R)
+        node.right = walk(node.right, L, R)
         __ node.val < L:
             r.. node.right
         ____ node.val > R:

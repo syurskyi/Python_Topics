@@ -89,10 +89,10 @@ ___ test_calculate_gc_content(dna, gc_content):
 
     ... calculate_gc_content(dna) __ gc_content
 
-    dna_with_spaces = "".join([base + " " ___ base __ dna])
+    dna_with_spaces = "".j..([base + " " ___ base __ dna])
     ... calculate_gc_content(dna_with_spaces) __ gc_content
 
-    dna_with_special_chars = "".join([base + ".!?/," ___ base __ dna])
+    dna_with_special_chars = "".j..([base + ".!?/," ___ base __ dna])
     ... calculate_gc_content(dna_with_special_chars) __ gc_content
 
     dna_line_breaks = "\n" + dna + "\n" + dna + "\n"

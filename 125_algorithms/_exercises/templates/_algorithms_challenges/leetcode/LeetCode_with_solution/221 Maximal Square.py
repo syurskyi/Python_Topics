@@ -12,7 +12,7 @@ Return 4.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ maximalSquare(self, matrix):
         """
         Brute force: O(n^3)

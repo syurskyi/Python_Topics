@@ -38,13 +38,13 @@ ___ trim_result(result):
         result.pop(0)
     w.... is_row_all_empty(result[-1]):
         result.pop()
-    start_empty, end_empty = True, True
+    start_empty, end_empty = T.., T..
     w.... start_empty o. end_empty:
         ___ r __ result:
             __ r[0] != 0:
-                start_empty = False
+                start_empty = F..
             __ r[-1] != 0:
-                end_empty = False
+                end_empty = F..
         ___ r __ result:
             __ start_empty:
                 r.pop(0)

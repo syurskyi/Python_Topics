@@ -3,7 +3,7 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ asteroidCollision(self, asteroids):
         """
         :type asteroids: List[int]
@@ -11,7 +11,7 @@ class Solution(object):
         """
         res    # list
         w... T...
-            changed = False
+            changed = F..
             i = 0
             w.... i < l..(asteroids):
                 __ i+1 <l..(asteroids) a..\
@@ -21,7 +21,7 @@ class Solution(object):
                             ____ asteroids[i+1]
                         res.a..(val)
                     i += 1
-                    changed = True
+                    changed = T..
                 ____:
                     res.a..(asteroids[i])
                 i += 1
@@ -31,7 +31,7 @@ class Solution(object):
             res    # list
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [5, 10, -5],
             [8, -8],
@@ -40,7 +40,7 @@ class Solution(object):
         ]
         ___ asteroids __ testCases:
             print('asteroids: %s' % asteroids)
-            result = self.asteroidCollision(asteroids)
+            result = asteroidCollision(asteroids)
             print('result: %s' % result)
             print('-='*30+'-')
 

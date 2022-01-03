@@ -3,37 +3,37 @@ _______ unittest
 ____ flatten_array _______ flatten
 
 
-class FlattenArrayTests(unittest.TestCase):
+c_ FlattenArrayTests(unittest.TestCase):
 
-    ___ test_no_nesting(self):
-        self.assertEqual(flatten([0, 1, 2]), [0, 1, 2])
+    ___ test_no_nesting
+        assertEqual(flatten([0, 1, 2]), [0, 1, 2])
 
-    ___ test_one_level_nesting(self):
-        self.assertEqual(flatten([0, [1], 2]), [0, 1, 2])
+    ___ test_one_level_nesting
+        assertEqual(flatten([0, [1], 2]), [0, 1, 2])
 
-    ___ test_two_level_nesting(self):
-        self.assertEqual(flatten([0, [1, [2, 3]], [4]]), [0, 1, 2, 3, 4])
+    ___ test_two_level_nesting
+        assertEqual(flatten([0, [1, [2, 3]], [4]]), [0, 1, 2, 3, 4])
 
-    ___ test_empty_nested_lists(self):
-        self.assertEqual(flatten([[()]]), [])
+    ___ test_empty_nested_lists
+        assertEqual(flatten([[()]]), [])
 
-    ___ test_with_none_values(self):
+    ___ test_with_none_values
         inputs = [0, 2, [[2, 3], 8, [[100]], N.., [[N..]]], -2]
         expected = [0, 2, 2, 3, 8, 100, -2]
-        self.assertEqual(flatten(inputs), expected)
+        assertEqual(flatten(inputs), expected)
 
-    ___ test_six_level_nesting(self):
+    ___ test_six_level_nesting
         inputs = [1, [2, [[3]], [4, [[5]]], 6, 7], 8]
         expected = [1, 2, 3, 4, 5, 6, 7, 8]
-        self.assertEqual(flatten(inputs), expected)
+        assertEqual(flatten(inputs), expected)
 
-    ___ test_all_values_are_none(self):
+    ___ test_all_values_are_none
         inputs = [N.., [[[N..]]], N.., N.., [[N.., N..], N..], N..]
         expected    # list
-        self.assertEqual(flatten(inputs), expected)
+        assertEqual(flatten(inputs), expected)
 
-    ___ test_strings(self):
-        self.assertEqual(flatten(['0', ['1', '2']]), ['0', '1', '2'])
+    ___ test_strings
+        assertEqual(flatten(['0', ['1', '2']]), ['0', '1', '2'])
 
 
 __ __name__ __ '__main__':

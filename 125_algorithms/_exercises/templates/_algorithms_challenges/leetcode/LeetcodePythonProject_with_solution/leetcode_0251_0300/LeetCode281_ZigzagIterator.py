@@ -4,25 +4,25 @@ Created on Mar 6, 2017
 @author: MT
 '''
 
-class ZigzagIterator(object):
-    ___ __init__(self, v1, v2):
-        self.vec = [v1, v2]
-        self.pointer = 0
+c_ ZigzagIterator(object):
+    ___ - , v1, v2):
+        vec = [v1, v2]
+        pointer = 0
     
-    ___ next(self):
-        w.... self.hashNext():
-            __ self.vec[self.pointer]:
-                val = self.vec[self.pointer][0]
-                self.vec[self.pointer].pop()
-                self.pointer += 1
-                __ self.pointer >= l..(self.vec):
-                    self.pointer = 0
+    ___ next
+        w.... hashNext():
+            __ vec[pointer]:
+                val = vec[pointer][0]
+                vec[pointer].pop()
+                pointer += 1
+                __ pointer >= l..(vec):
+                    pointer = 0
                 r.. val
             ____:
-                self.pointer += 1
-                __ self.pointer >= l..(self.vec):
-                    self.pointer = 0
+                pointer += 1
+                __ pointer >= l..(vec):
+                    pointer = 0
         r.. N..
     
-    ___ hasNext(self):
+    ___ hasNext
         r.. any([x !   # list ___ x __ self.vec])

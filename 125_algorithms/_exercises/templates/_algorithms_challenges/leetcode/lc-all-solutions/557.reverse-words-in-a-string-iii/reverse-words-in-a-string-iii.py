@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ reverseWords(self, s):
     """
     :type s: str
@@ -7,4 +7,4 @@ class Solution(object):
     s = s.s..
     ___ i, word __ e..(s):
       s[i] = word[::-1]
-    r.. " ".join(s)
+    r.. " ".j..(s)

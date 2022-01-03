@@ -1,11 +1,11 @@
-class Solution(object):
+c_ Solution(object):
   ___ twoSum(self, nums, target):
     """
     :type nums: List[int]
     :type target: int
     :rtype: List[int]
     """
-    d = {}
+    d    # dict
     ___ i, num __ e..(nums):
       __ target - num __ d:
         r.. [d[target - num], i]

@@ -17,7 +17,7 @@ ___ calculate_flux(XYZ: s..) -> l..:
     data['pct_flux'] = data.iloc[:,[-2,1]].pct_change(axis=1).dropna(axis=1)
 
 
-    r.. l..(data.to_records(index=False))
+    r.. l..(data.to_records(index=F..))
 
 
 

@@ -4,6 +4,6 @@ ___ can_capture(rooks):
     e1 = rooks[0][1]
     e2 = rooks[1][1]
     __ s1 __ s2 o. e1 __ e2:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

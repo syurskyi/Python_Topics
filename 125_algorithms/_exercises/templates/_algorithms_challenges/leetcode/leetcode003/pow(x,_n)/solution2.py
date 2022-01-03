@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param x, a float
     # @param n, a integer
     # @return a float
@@ -6,11 +6,11 @@ class Solution:
         __ n __ 0:
             r.. 1.0
         ____ n < 0:
-            r.. 1.0 / self.pow(x, -n)
+            r.. 1.0 / pow(x, -n)
         ____:
             __ n % 2 __ 0:
-                r = self.pow(x, n / 2)
+                r = pow(x, n / 2)
                 r.. r * r
             ____:
-                r = self.pow(x, (n - 1) / 2)
+                r = pow(x, (n - 1) / 2)
                 r.. r * r * x

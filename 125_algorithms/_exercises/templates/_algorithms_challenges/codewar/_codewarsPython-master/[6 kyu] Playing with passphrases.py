@@ -9,5 +9,5 @@ ___ play_pass(s, n):
             res += s.. (abs(9 - int(chr(c))))
         ____:
             res += s..(chr(c))
-    res = ''.join([res[i].upper() __ i % 2 __ 0 ____ res[i].lower() ___ i __ r..(l..(res))])
+    res = ''.j..([res[i].upper() __ i % 2 __ 0 ____ res[i].l.. ___ i __ r..(l..(res))])
     r.. res[::-1]

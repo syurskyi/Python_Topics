@@ -5,21 +5,21 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ diameterOfBinaryTree(self, root):
     """
     :type root: TreeNode
     :rtype: int
     """
-    self.ans = 0
+    ans = 0
 
     ___ dfs(root):
       __ n.. root:
         r.. 0
       left = dfs(root.left)
       right = dfs(root.right)
-      self.ans = max(self.ans, left + right)
+      ans = max(ans, left + right)
       r.. max(left, right) + 1
 
     dfs(root)
-    r.. self.ans
+    r.. ans

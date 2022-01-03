@@ -3,7 +3,7 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ swimInWater(self, grid):
         """
         :type grid: List[List[int]]
@@ -25,7 +25,7 @@ class Solution(object):
                     heapq.heappush(pq, (grid[i][j], i, j))
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [0,2],
@@ -40,7 +40,7 @@ class Solution(object):
             ],
         ]
         ___ grid __ testCases:
-            result = self.swimInWater(grid)
+            result = swimInWater(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

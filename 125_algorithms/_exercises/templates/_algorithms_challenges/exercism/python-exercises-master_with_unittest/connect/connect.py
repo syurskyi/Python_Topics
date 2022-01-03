@@ -1,7 +1,7 @@
 
-class ConnectGame:
-    ___ __init__(self, board):
+c_ ConnectGame:
+    ___ - , board):
         pass
 
-    ___ get_winner(self):
+    ___ get_winner
         pass

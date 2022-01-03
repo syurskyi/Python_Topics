@@ -6,13 +6,13 @@ Created on Mar 23, 2017
 
 _______ heapq
 
-class Solution(object):
+c_ Solution(object):
     ___ rearrangeString(self, s, k):
-        hashmap = {}
+        hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         heap    # list
-        ___ c, freq __ hashmap.items():
+        ___ c, freq __ hashmap.i..:
             heapq.heappush(heap, [-freq, c])
         queue    # list
         res    # list
@@ -26,9 +26,9 @@ class Solution(object):
             freq = -freq-1
             __ freq > 0:
                 heapq.heappush(heap, [-freq, c])
-        r.. ''.join(res) __ l..(res) __ l..(s) ____ ''
+        r.. ''.j..(res) __ l..(res) __ l..(s) ____ ''
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('aabbcc', 3),
             ('aaabc', 3),
@@ -37,7 +37,7 @@ class Solution(object):
         ___ s, k __ testCases:
             print('s: %s' % (s))
             print('k: %s' % (k))
-            result = self.rearrangeString(s, k)
+            result = rearrangeString(s, k)
             print('result: %s' % (result))
             print('-='*20+'-')
 

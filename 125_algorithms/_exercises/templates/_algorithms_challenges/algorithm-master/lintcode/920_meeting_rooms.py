@@ -12,7 +12,7 @@ Sweep Line
 time: O(n)
 space: O(n)
 """
-class Solution:
+c_ Solution:
     ___ canAttendMeetings(self, intervals):
         """
         :type intervals: list[Interval]
@@ -21,8 +21,8 @@ class Solution:
         timeline    # list
 
         ___ interval __ intervals:
-            timeline.a..((interval.start, True))
-            timeline.a..((interval.end, False))
+            timeline.a..((interval.start, T..))
+            timeline.a..((interval.end, F..))
 
         timeline.s..()
 
@@ -35,9 +35,9 @@ class Solution:
                 cnt -= 1
 
             __ cnt > 1:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
 
 """
@@ -45,7 +45,7 @@ Sorting
 time: O(nlogn)
 space: O(1)
 """
-class Solution:
+c_ Solution:
     ___ canAttendMeetings(self, intervals):
         """
         :type intervals: list[Interval]
@@ -55,6 +55,6 @@ class Solution:
 
         ___ i __ r..(1, l..(intervals)):
             __ intervals[i].start < intervals[i - 1].end:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

@@ -1,4 +1,4 @@
-class Calculator:
+c_ Calculator:
 
     OPERATORS = {"plus": "+",
                  "minus": "-",
@@ -9,50 +9,50 @@ class Calculator:
 
     VALID_TOKENS = set(OPERATORS.values())
 
-    ___ __init__(self, inp):
-        self.inp = inp
-        self.tokenized = self.tokenize(inp)
-        self.tokens = self.tokenized.s..(" ")
+    ___ - , inp):
+        inp = inp
+        tokenized = tokenize(inp)
+        tokens = tokenized.s..(" ")
 
-    ___ calculate(self):
-        __ n.. self.valid():
+    ___ calculate
+        __ n.. valid():
             raise ValueError
-        operator_stack = self.operator_stack()
-        num_stack = self.num_stack()
+        operator_stack = operator_stack()
+        num_stack = num_stack()
         w.... l..(operator_stack) > 0:
             operator = operator_stack.pop(0)
             num1 = num_stack.pop(0)
             num2 = num_stack.pop(0)
-            num_stack.insert(0, self.evaluate(operator, num1, num2))
+            num_stack.insert(0, evaluate(operator, num1, num2))
         r.. num_stack.pop(0)
 
     ___ evaluate(self, operator, num1, num2):
         r.. eval(s..(num1) + operator + s..(num2))
 
-    ___ num_stack(self):
-        r.. l..(map(int, l..(filter(self.digit, self.tokens))))
+    ___ num_stack
+        r.. l..(map(int, l..(filter(digit, tokens))))
 
-    ___ operator_stack(self):
-        r.. l..(filter(self.operator, self.tokens))
+    ___ operator_stack
+        r.. l..(filter(operator, tokens))
 
-    ___ valid(self):
-        r.. (self.valid_elements() a..
-                n.. self.consecutive_tokens() a..
-                n.. self.consecutive_digits())
+    ___ valid
+        r.. (valid_elements() a..
+                n.. consecutive_tokens() a..
+                n.. consecutive_digits())
 
-    ___ consecutive_tokens(self):
-        r.. any(self.operator(i) a.. self.operator(j) ___ i, j __
-                   self.slices_of_two())
+    ___ consecutive_tokens
+        r.. any(operator(i) a.. operator(j) ___ i, j __
+                   slices_of_two())
 
-    ___ consecutive_digits(self):
-        r.. any(self.digit(i) a.. self.digit(j) ___ i, j __
-                   self.slices_of_two())
+    ___ consecutive_digits
+        r.. any(digit(i) a.. digit(j) ___ i, j __
+                   slices_of_two())
 
-    ___ slices_of_two(self):
-        r.. l..(z..(self.tokens, self.tokens[1:]))
+    ___ slices_of_two
+        r.. l..(z..(tokens, tokens[1:]))
 
-    ___ valid_elements(self):
-        r.. a..(self.valid_element(element) ___ element __ self.tokens)
+    ___ valid_elements
+        r.. a..(valid_element(element) ___ element __ tokens)
 
     @classmethod
     ___ valid_element(cls, element):

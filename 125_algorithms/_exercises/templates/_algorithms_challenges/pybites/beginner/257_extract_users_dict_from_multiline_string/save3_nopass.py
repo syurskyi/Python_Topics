@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 ___ get_users(passwd: s..) -> d..:
     """Split password output by newline,
@@ -16,5 +16,5 @@ ___ get_users(passwd: s..) -> d..:
         __ l..(p.s..(':')[4]) __ 0:
             values.a..('unknown')
         ____:
-            values.a..(re.sub('\W+',' ', p.s..(':')[4]).rstrip())
+            values.a..(__.sub('\W+',' ', p.s..(':')[4]).rstrip())
     r.. d..(z..(keys, values))

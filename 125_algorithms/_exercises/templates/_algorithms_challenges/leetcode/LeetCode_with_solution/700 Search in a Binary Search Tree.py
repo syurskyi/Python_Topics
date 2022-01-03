@@ -29,14 +29,14 @@ expected output (serialized tree format) as [], not null.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ searchBST(self, root: TreeNode, val: int) -> TreeNode:
         __ n.. root:
             r.. N..
@@ -44,6 +44,6 @@ class Solution:
         __ root.val __ val:
             r.. root
         ____ root.val < val:
-            r.. self.searchBST(root.right, val)
+            r.. searchBST(root.right, val)
         ____:
-            r.. self.searchBST(root.left, val)
+            r.. searchBST(root.left, val)

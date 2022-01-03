@@ -14,7 +14,7 @@ function.
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
     ___ deleteNode(self, node):
         """
         :type node: ListNode

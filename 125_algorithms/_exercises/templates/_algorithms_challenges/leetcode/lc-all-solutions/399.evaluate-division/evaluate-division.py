@@ -1,17 +1,17 @@
 ____ collections _______ deque
 
 
-class Graph(object):
-  ___ __init__(self):
-    self.graph = {}
+c_ Graph(object):
+  ___ - ):
+    graph    # dict
 
   ___ get(self, label):
-    __ label n.. __ self.graph:
-      self.graph[label] = GraphNode(label)
-    r.. self.graph[label]
+    __ label n.. __ graph:
+      graph[label] = GraphNode(label)
+    r.. graph[label]
 
   ___ query(self, node1, node2):
-    g = self.graph
+    g = graph
     __ l..(node1.nbrs) __ 0 o. l..(node2.nbrs) __ 0:
       r.. -1.0
     __ node1 __ node2:
@@ -39,13 +39,13 @@ class Graph(object):
       node2.nbrs[node1.label] = float("inf")
 
 
-class GraphNode(object):
-  ___ __init__(self, label):
-    self.label = label
-    self.nbrs = {}
+c_ GraphNode(object):
+  ___ - , label):
+    label = label
+    nbrs    # dict
 
 
-class Solution(object):
+c_ Solution(object):
   ___ calcEquation(self, equations, values, queries):
     """
     :type equations: List[List[str]]
@@ -53,7 +53,7 @@ class Solution(object):
     :type queries: List[List[str]]
     :rtype: List[float]
     """
-    visited = {}
+    visited    # dict
     g = Graph()
     ans    # list
     ___ i __ r..(0, l..(equations)):

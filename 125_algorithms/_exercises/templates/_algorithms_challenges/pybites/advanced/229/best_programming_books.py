@@ -13,7 +13,7 @@ __ n.. html_file.exists():
 
 
 @dataclass
-class Book:
+c_ Book:
     """Book class should instatiate the following variables:
 
     title - as it appears on the page
@@ -29,14 +29,14 @@ class Book:
     rank: int
     rating: float
 
-    ___ _rating(self):
-        res = f"{self.rating:.2f}"
+    ___ _rating
+        res = f"{rating:.2f}"
         r.. res[:-1] __ res[-1] __ "0" ____ res
 
-    ___ __str__(self):
+    ___ __str__
         r.. (
-            f"[{self.rank:03}] {self.title} ({self.year})\n"
-            f"      {self.author} {self._rating()}"
+            f"[{rank:03}] {title} ({year})\n"
+            f"      {author} {_rating()}"
         )
 
 
@@ -78,11 +78,11 @@ ___ load_data():
     book: Tag
     ___ book __ book_list.find_all("div", {"class": "book"}):
         title = book.select("h2.main")[0].text
-        __ "python" n.. __ title.lower():
+        __ "python" n.. __ title.l..:
             continue
         try:
             author_a = book.select("h3.authors > a")[0].text.s..(" ")
-            author = f'{author_a[-1]}, {" ".join(author_a[:-1])}'
+            author = f'{author_a[-1]}, {" ".j..(author_a[:-1])}'
             date_span = book.select("span.date")
             __ l..(date_span) __ 0:
                 continue
@@ -97,7 +97,7 @@ ___ load_data():
     res    # list
     ___ n, b __ e..(
         s..(
-            books, key=l.... b: (-b.rating, b.year, b.title.lower(), b.author.lower())
+            books, key=l.... b: (-b.rating, b.year, b.title.l.., b.author.lower())
         ),
         start=1,
     ):

@@ -1,7 +1,7 @@
 ____ heapq _______ heappop, heappush
 
 
-class Solution:
+c_ Solution:
     """
     @param: G: k sorted integer arrays
     @return: a sorted array

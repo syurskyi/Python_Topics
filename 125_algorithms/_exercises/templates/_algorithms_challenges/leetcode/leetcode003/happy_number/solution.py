@@ -15,7 +15,7 @@ Example: 19 is a happy number
 1^2 + 0^2 + 0^2 = 1
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ isHappy(self, n):
         """
         :type n: int
@@ -34,8 +34,8 @@ class Solution(object):
                 t /= 10
             n = s
             __ n __ 1:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..
 
 
 s = Solution()

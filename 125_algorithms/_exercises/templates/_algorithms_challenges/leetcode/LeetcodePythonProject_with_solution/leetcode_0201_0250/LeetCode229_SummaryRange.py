@@ -4,7 +4,7 @@ Created on Feb 22, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ summaryRanges(self, nums):
         """
         :type nums: List[int]

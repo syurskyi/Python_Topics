@@ -3,7 +3,7 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ preimageSizeFZF(self, K):
         """
         :type K: int
@@ -19,14 +19,14 @@ class Solution(object):
             K = K%dp[i]
         r.. 5
     
-    ___ test(self):
+    ___ test
         testCases = [
             0,
             5,
         ]
         ___ k __ testCases:
             print('k: %s' % k)
-            result = self.preimageSizeFZF(k)
+            result = preimageSizeFZF(k)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ totalFruit(self, tree):
         """
         :type tree: List[int]
@@ -6,7 +6,7 @@ class Solution(object):
         """
         left = 0
         res = 0
-        hashmap = {}
+        hashmap    # dict
         ___ i, num __ e..(tree):
             hashmap[num] = hashmap.get(num, 0) + 1
             w.... l..(hashmap) > 2:
@@ -18,7 +18,7 @@ class Solution(object):
         res = max(res, l..(tree)-left)
         r.. res
 
-    ___ test(self):
+    ___ test
         testCases = [
             [0,1,2],
             [1,2,1],
@@ -27,7 +27,7 @@ class Solution(object):
             [3,3,3,1,2,1,1,2,3,3,4],
         ]
         ___ tree __ testCases:
-            res = self.totalFruit(tree)
+            res = totalFruit(tree)
             print('res: %s' % res)
             print('-='*30+'-')
 

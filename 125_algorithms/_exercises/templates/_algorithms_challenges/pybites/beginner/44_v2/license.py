@@ -10,10 +10,10 @@ ___ gen_key(parts=4,chars_per_part=8):
     
     different_parts    # list
     ___ i __ r..(parts):
-        different_parts.a..(''.join(secrets.choice(s) ___ _ __ r..(chars_per_part)))
+        different_parts.a..(''.j..(secrets.choice(s) ___ _ __ r..(chars_per_part)))
 
 
-    r.. '-'.join(different_parts)
+    r.. '-'.j..(different_parts)
 
 
         

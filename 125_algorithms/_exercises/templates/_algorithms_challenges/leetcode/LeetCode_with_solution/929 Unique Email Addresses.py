@@ -42,7 +42,7 @@ Local names do not start with a '+' character.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ numUniqueEmails(self, emails: List[s..]) -> int:
         """
         stemming
@@ -50,7 +50,7 @@ class Solution:
         s = set()
         ___ e __ emails:
             local, domain = e.s..("@")
-            local = self.stem(local)
+            local = stem(local)
             s.add((local, domain))
 
         r.. l..(s)

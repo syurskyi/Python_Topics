@@ -1,10 +1,10 @@
-class Logger(object):
+c_ Logger(object):
 
-  ___ __init__(self):
+  ___ - ):
     """
     Initialize your data structure here.
     """
-    self.d = {}
+    d    # dict
 
   ___ shouldPrintMessage(self, timestamp, message):
     """
@@ -15,13 +15,13 @@ class Logger(object):
     :type message: str
     :rtype: bool
     """
-    __ message n.. __ self.d:
-      self.d[message] = timestamp
-      r.. True
-    ____ timestamp - self.d[message] >= 10:
-      self.d[message] = timestamp
-      r.. True
-    r.. False
+    __ message n.. __ d:
+      d[message] = timestamp
+      r.. T..
+    ____ timestamp - d[message] >= 10:
+      d[message] = timestamp
+      r.. T..
+    r.. F..
 
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()

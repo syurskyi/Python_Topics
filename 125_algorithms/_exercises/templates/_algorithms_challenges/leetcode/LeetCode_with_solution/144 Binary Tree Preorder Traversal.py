@@ -16,14 +16,14 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ preorderTraversal(self, root):
         """Morris"""
         ret    # list
@@ -54,7 +54,7 @@ class Solution(object):
         :return:
         """
         lst    # list
-        self.preTraverse_itr(root, lst)
+        preTraverse_itr(root, lst)
         r.. lst
 
 
@@ -63,8 +63,8 @@ class Solution(object):
             r..
         lst.a..(node.val)
 
-        self.preTraverse(node.left, lst)
-        self.preTraverse(node.right, lst)
+        preTraverse(node.left, lst)
+        preTraverse(node.right, lst)
 
     ___ preTraverse_itr(self, root, lst):
         """

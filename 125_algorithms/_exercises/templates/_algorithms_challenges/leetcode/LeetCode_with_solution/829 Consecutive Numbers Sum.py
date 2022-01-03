@@ -22,7 +22,7 @@ Note: 1 <= N <= 10 ^ 9.
 """
 
 
-class Solution:
+c_ Solution:
     ___ consecutiveNumbersSum(self, N: int) -> int:
         """
         Arithmetic Array

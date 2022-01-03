@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ numberOfPatterns(self, m, n):
     """
     :type m: int
@@ -8,7 +8,7 @@ class Solution(object):
 
     ___ dfs(m, n, prev, visited, length):
       __ m <= length <= n:
-        self.ans += 1
+        ans += 1
 
       __ length __ n:
         r..
@@ -24,6 +24,6 @@ class Solution(object):
           visited.discard(i)
 
     visited = set()
-    self.ans = 0
+    ans = 0
     dfs(m, n, -99, visited, 0)
-    r.. self.ans
+    r.. ans

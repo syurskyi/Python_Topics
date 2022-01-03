@@ -12,7 +12,7 @@ Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 """
 
-class Solution:
+c_ Solution:
     ___ trap(self, height: List[int]) -> int:
         """
         At each position, the water is determined by the left and right max

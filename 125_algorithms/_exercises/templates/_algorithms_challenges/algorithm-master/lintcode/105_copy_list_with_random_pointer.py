@@ -13,13 +13,13 @@ using hashmap
 time: O(2n) => O(n)
 space: O(n)
 """
-class Solution:
+c_ Solution:
     ___ copyRandomList(self, head):
         """
         :type head: RandomListNode
         :rtype: RandomListNode
         """
-        N = {}
+        N    # dict
         dummy = tail = RandomListNode(-1)
 
         w.... head:
@@ -60,7 +60,7 @@ split_list/
          1'   ->    2'   ->    3'
          |--------->|
 """
-class Solution:
+c_ Solution:
     ___ copyRandomList(self, head):
         """
         :type head: RandomListNode

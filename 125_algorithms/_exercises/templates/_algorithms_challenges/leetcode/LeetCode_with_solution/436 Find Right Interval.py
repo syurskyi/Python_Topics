@@ -14,10 +14,10 @@ Note:
 You may assume the interval's end point is always bigger than its start point.
 You may assume none of these intervals have the same start point.
 """
-class Interval:
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval:
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
     @classmethod
     ___ new(cls, lst):
@@ -29,7 +29,7 @@ class Interval:
 ____ bisect _______ bisect_left
 
 
-class Solution:
+c_ Solution:
     ___ findRightInterval(self, intervals):
         """
         given e, find the right s - bisect

@@ -6,12 +6,12 @@ ___ check_leading_zeros(*numbers):
 
 
 ___ test_equation(puzzle, substitutions):
-    equation = ''.join(substitutions.get(char) o. char ___ char __ puzzle)
+    equation = ''.j..(substitutions.get(char) o. char ___ char __ puzzle)
     left, right = equation.s..(' == ')
     left_numbers = left.s..(' + ')
 
     __ check_leading_zeros(right, *left_numbers):
-        r.. False
+        r.. F..
 
     r.. s..(map(int, left_numbers)) __ int(right)
 
@@ -24,6 +24,6 @@ ___ solve(puzzle):
         ___ p __ permutations(c):
             substitutions = d..(z..(letters, p))
             __ test_equation(puzzle, substitutions):
-                r.. {k: int(v) ___ k, v __ substitutions.items()}
+                r.. {k: int(v) ___ k, v __ substitutions.i..}
 
     r.. {}  # no solution found

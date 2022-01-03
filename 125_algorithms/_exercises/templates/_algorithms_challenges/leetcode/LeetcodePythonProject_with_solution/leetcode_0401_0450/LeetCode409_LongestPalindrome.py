@@ -4,20 +4,20 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ longestPalindrome(self, s):
-        hashmap = {}
+        hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
-        singleNum = False
+        singleNum = F..
         result = 0
-        ___ count __ hashmap.values():
+        ___ count __ hashmap.v..
             __ count%2 != 0:
                 __ singleNum:
                     result += count-1
                 ____:
                     result += count
-                    singleNum = True
+                    singleNum = T..
             ____:
                 result += count
         r.. result

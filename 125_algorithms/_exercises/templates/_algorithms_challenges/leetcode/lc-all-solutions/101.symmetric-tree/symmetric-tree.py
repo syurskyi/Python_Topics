@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ isSymmetric(self, node):
     """
     :type root: TreeNode
@@ -14,9 +14,9 @@ class Solution(object):
 
     ___ helper(root, mirror):
       __ n.. root a.. n.. mirror:
-        r.. True
+        r.. T..
       __ root a.. mirror a.. root.val __ mirror.val:
         r.. helper(root.left, mirror.right) a.. helper(root.right, mirror.left)
-      r.. False
+      r.. F..
 
     r.. helper(node, node)

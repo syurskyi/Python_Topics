@@ -24,7 +24,7 @@ ____ i.. _______ izip
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ calcEquation(self, equations, values, queries):
         """
         transitive closure
@@ -39,7 +39,7 @@ class Solution(object):
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
-        r.. [self.dfs(G, s, e, set()) ___ s, e __ queries]
+        r.. [dfs(G, s, e, set()) ___ s, e __ queries]
 
     ___ dfs(self, G, s, e, path):
         __ s n.. __ G o. e n.. __ G:
@@ -49,7 +49,7 @@ class Solution(object):
         ___ nbr __ G[s]:
             __ nbr n.. __ path:
                 path.add(nbr)
-                val = self.dfs(G, nbr, e, path)
+                val = dfs(G, nbr, e, path)
                 __ val != -1.0:
                     r.. val * G[s][nbr]
                 path.remove(nbr)
@@ -57,7 +57,7 @@ class Solution(object):
         r.. -1.0
 
 
-class Solution(object):
+c_ Solution(object):
     ___ calcEquation(self, equations, values, queries):
         """
         Floyd-Warshall algorithm

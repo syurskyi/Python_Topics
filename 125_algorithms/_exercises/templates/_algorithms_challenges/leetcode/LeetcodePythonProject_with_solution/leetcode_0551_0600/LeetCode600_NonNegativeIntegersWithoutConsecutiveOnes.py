@@ -4,7 +4,7 @@ Created on Sep 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findIntegers(self, num):
         """
         :type num: int
@@ -26,14 +26,14 @@ class Solution(object):
                 res -= dp2[i]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             5,
             6,
         ]
         ___ num __ testCases:
             print('num: %s' % num)
-            result = self.findIntegers(num)
+            result = findIntegers(num)
             print('result: %s' % result)
             print('-='*30+'-')
 

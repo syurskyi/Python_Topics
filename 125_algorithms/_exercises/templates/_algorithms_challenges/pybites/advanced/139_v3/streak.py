@@ -1,4 +1,4 @@
-_______ re
+_______ __
 ____ d__ _______ d__, t.., date
 
 ONE_DAY = t..(days=1)
@@ -8,7 +8,7 @@ TODAY = date(2018, 11, 12)
 
 ___ extract_dates(data):
     """Extract unique dates from DB table representation as shown in Bite"""
-    dates = re.findall(r' (\d{4}-\d\d-\d\d) ', data)
+    dates = __.findall(r' (\d{4}-\d\d-\d\d) ', data)
     r.. set(d__.strptime(d, '%Y-%m-%d').date() ___ d __ dates)
 
 

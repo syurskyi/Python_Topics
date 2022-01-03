@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a list of lists of integers
@@ -14,7 +14,7 @@ class Solution:
             r.. []
         one    # list
         res    # list
-        self.ps(root, s.., one, res)
+        ps(root, s.., one, res)
         r.. res
 
     ___ ps(self, root, s.., one, res):
@@ -27,6 +27,6 @@ class Solution:
                 one.pop()
         ____:
             one.a..(root.val)
-            self.ps(root.left, s.. - root.val, one, res)
-            self.ps(root.right, s.. - root.val, one, res)
+            ps(root.left, s.. - root.val, one, res)
+            ps(root.right, s.. - root.val, one, res)
             one.pop()

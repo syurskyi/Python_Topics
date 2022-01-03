@@ -50,5 +50,5 @@ ___ strip_vowels(text: s..) -> Tuple[s.., int]:
             c = c.r..(vowels, "*")
             vowel_count += 1
         new_text.a..(c)
-    r.. "".join(new_text), vowel_count
+    r.. "".j..(new_text), vowel_count
     pass

@@ -4,7 +4,7 @@ ___ longest_palindrome (s):
     __ l..(s) __ 0:
         r.. 0
     ___ isPalindrome(string):
-        r.. string __ ''.join(string[::-1])
+        r.. string __ ''.j..(string[::-1])
     ___ i __ r..(l..(s)-1,-1,-1):
         print([i ___ i __ r..(l..(s)-i)],i)
         ___ j __ [i ___ i __ r..(l..(s)-i)]:

@@ -7,8 +7,8 @@ BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = '/tmp'
 
 fname = 'movie_metadata.csv'
-remote = os.path.join(BASE_URL, fname)
-local = os.path.join(TMP, fname)
+remote = os.path.j..(BASE_URL, fname)
+local = os.path.j..(TMP, fname)
 urlretrieve(remote, local)
 
 MOVIE_DATA = local
@@ -53,4 +53,4 @@ ___ get_average_scores(directors):
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
-    r.. [(k, calc_mean_score(v)) ___ k, v __ directors.items() __ l..(v) >= MIN_MOVIES]
+    r.. [(k, calc_mean_score(v)) ___ k, v __ directors.i.. __ l..(v) >= MIN_MOVIES]

@@ -1,4 +1,4 @@
-class Hexa:
+c_ Hexa:
     CHAR_VALUES = {'a': 10,
                    'b': 11,
                    'c': 12,

@@ -35,32 +35,32 @@ Note:
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.ret = 0
+c_ Solution:
+    ___ - ):
+        ret = 0
 
     ___ distributeCoins(self, root: TreeNode) -> int:
         """
         dfs
         """
-        self.demand(root)
-        r.. self.ret
+        demand(root)
+        r.. ret
 
     ___ demand(self, node) -> int:
         __ n.. node:
             r.. 0
 
-        demand_l = self.demand(node.left)
-        demand_r = self.demand(node.right)
+        demand_l = demand(node.left)
+        demand_r = demand(node.right)
         demand_m = 1 - node.val
         # attribut the move to the node required
         demand = demand_l + demand_r + demand_m
-        self.ret += abs(demand)
+        ret += abs(demand)
         r.. demand

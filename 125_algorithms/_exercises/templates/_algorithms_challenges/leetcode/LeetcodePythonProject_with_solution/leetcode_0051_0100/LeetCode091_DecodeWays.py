@@ -4,7 +4,7 @@ Created on Jan 28, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ numDecodings(self, s):
         """
         :type s: str
@@ -56,13 +56,13 @@ class Solution(object):
         
         r.. dp[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             '111',
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.numDecodings(s)
+            result = numDecodings(s)
             print('result: %s' % (result))
             print('-='*15+'-')
 

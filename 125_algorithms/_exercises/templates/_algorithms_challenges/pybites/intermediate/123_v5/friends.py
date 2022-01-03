@@ -17,5 +17,5 @@ ___ get_friend_with_most_friends(friendships, users=users):
     ___ u, f __ friendships:
         user_friends[u].add(f)
         user_friends[f].add(u)
-    res = s..(user_friends.items(), key=l.... x: -l..(x[1]))
+    res = s..(user_friends.i.., key=l.... x: -l..(x[1]))
     r.. users[res[0][0]], [users[id] ___ id __ res[0][1]]

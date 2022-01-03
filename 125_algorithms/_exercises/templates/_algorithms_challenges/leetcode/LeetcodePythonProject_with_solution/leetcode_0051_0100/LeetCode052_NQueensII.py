@@ -4,7 +4,7 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ totalNQueens(self, n):
         """
         :type n: int
@@ -14,7 +14,7 @@ class Solution(object):
             r.. []
         sumArr = [0]
         usedColumns = [0]*n
-        self.placeQueen(usedColumns, 0, sumArr)
+        placeQueen(usedColumns, 0, sumArr)
         r.. sumArr[0]
     
     ___ placeQueen(self, usedColumns, row, sumArr):
@@ -23,23 +23,23 @@ class Solution(object):
             sumArr[0] += 1
             r..
         ___ i __ r..(n):
-            __ self.isValid(usedColumns, row, i):
+            __ isValid(usedColumns, row, i):
                 usedColumns[row] = i
-                self.placeQueen(usedColumns, row+1, sumArr)
+                placeQueen(usedColumns, row+1, sumArr)
     
     ___ isValid(self, usedColumns, row, col):
         ___ i __ r..(row):
             __ usedColumns[i] __ col:
-                r.. False
+                r.. F..
             __ row-i __ abs(col-usedColumns[i]):
-                r.. False
+                r.. F..
         
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         ___ n __ r..(5):
             print('n: %s' % (n))
-            result = self.totalNQueens(n)
+            result = totalNQueens(n)
             print('result: %s' % result)
             print('-='*15+'-')
 

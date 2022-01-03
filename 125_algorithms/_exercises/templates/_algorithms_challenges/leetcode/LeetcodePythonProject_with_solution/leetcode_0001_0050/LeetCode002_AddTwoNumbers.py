@@ -4,12 +4,12 @@ Created on Nov 8, 2017
 @author: MT
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, val, nextNode_ N..
-        self.val = val
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , val, nextNode_ N..
+        val = val
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ addTwoNumbers(self, l1, l2):
         """
         :type l1: ListNode

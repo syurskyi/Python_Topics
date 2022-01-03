@@ -55,7 +55,7 @@ BRACKET = [
 ]
 
 
-class Taxes:
+c_ Taxes:
     """Taxes class
 
     Given a taxable income and optional tax bracket, it will
@@ -65,11 +65,11 @@ class Taxes:
 
     OUTPUT_WIDTH = 34
 
-    ___ __init__(self,salary,bracket=BRACKET):
-        self.salary = salary
-        self.income = salary
-        self.bracket = bracket
-        self.taxes_owed = self.taxes
+    ___ - ,salary,bracket=BRACKET):
+        salary = salary
+        income = salary
+        bracket = bracket
+        taxes_owed = taxes
 
 
     ___ __str__(self) -> s..:
@@ -93,10 +93,10 @@ class Taxes:
 
         s += '=' * 34 + '\n'
 
-        values = [("Taxable Income:",f"{self.salary:,.2f}"),("Taxes Owed:",f"{self.taxes:,.2f}"),("Tax Rate:",f"{self.tax_rate:.2f}%")]
+        values = [("Taxable Income:",f"{salary:,.2f}"),("Taxes Owed:",f"{taxes:,.2f}"),("Tax Rate:",f"{tax_rate:.2f}%")]
 
         largest_left_length = l..(values[0][0]) + 1
-        largest_right_length = l..(s..(int(self.salary))) + 4
+        largest_right_length = l..(s..(int(salary))) + 4
         spaces = 32 - (largest_left_length + largest_right_length)
 
         ___ i,(string,value) __ e..(values,1):
@@ -113,16 +113,16 @@ class Taxes:
 
 
 
-    ___ report(self):
+    ___ report
         """Prints taxes breakdown report"""
         print(self)
 
 
-        print(f"{'Taxes Breakdown':^{self.OUTPUT_WIDTH}}")
-        print("=" * self.OUTPUT_WIDTH)
+        print(f"{'Taxes Breakdown':^{OUTPUT_WIDTH}}")
+        print("=" * OUTPUT_WIDTH)
 
         largest_amount = largest_tax =  float("-inf")
-        ___ amount,rate,tax __ self.tax_amounts:
+        ___ amount,rate,tax __ tax_amounts:
             largest_amount = max(largest_amount,int(amount))
             largest_tax = max(largest_tax,int(tax))
     
@@ -132,21 +132,21 @@ class Taxes:
         largest_tax = l..(s..(largest_tax))
         largest_tax += 4
 
-        middle = self.OUTPUT_WIDTH - 3 - (largest_amount + 11) - (largest_tax + 4)
+        middle = OUTPUT_WIDTH - 3 - (largest_amount + 11) - (largest_tax + 4)
         spaces = ' ' * 5
-        ___ amount,rate,tax __ self.tax_amounts:
+        ___ amount,rate,tax __ tax_amounts:
             left_string = f"{amount:,.2f} x {rate:.2f} ="
             print(f"{left_string:>{largest_amount}}{spaces}{tax:>{largest_tax},.2f}")
         
-        print('-' *self.OUTPUT_WIDTH)
+        print('-' *OUTPUT_WIDTH)
 
 
-        print(f"{'Total =':>{largest_amount}}{spaces}{self.taxes_owed:>{largest_tax},.2f}")
+        print(f"{'Total =':>{largest_amount}}{spaces}{taxes_owed:>{largest_tax},.2f}")
 
         
 
 
-    @property
+    $
     ___ taxes(self) -> float:
         """Calculates the taxes owed
 
@@ -156,25 +156,25 @@ class Taxes:
         Returns:
             float -- The amount of taxes owed
         """
-        self.tax_amounts    # list
-        self.taxes_owed =0 
+        tax_amounts    # list
+        taxes_owed =0
         
-        value = self.salary
+        value = salary
         previous_end = 0
-        leave = False
-        ___ end,rate __ self.bracket:
+        leave = F..
+        ___ end,rate __ bracket:
             __ value >= end:
                 tax_paid = end - previous_end
             ____:
                 tax_paid = value - previous_end
-                leave = True
+                leave = T..
             
 
             tax_owed = tax_paid * rate
             #value -= tax_owed
-            self.taxes_owed += tax_owed
+            taxes_owed += tax_owed
             tax_amount = Taxed(tax_paid,rate,tax_owed)
-            self.tax_amounts.a..(tax_amount)
+            tax_amounts.a..(tax_amount)
             previous_end = end
             __ leave:
                 break
@@ -182,27 +182,27 @@ class Taxes:
 
 
 
-        r.. self.taxes_owed
+        r.. taxes_owed
 
 
 
-    @property
+    $
     ___ total(self) -> float:
         """Calculates total taxes owed
 
         Returns:
             float -- Total taxes owed
         """
-        r.. self.taxes_owed
+        r.. taxes_owed
 
-    @property
+    $
     ___ tax_rate(self) -> float:
         """Calculates the actual tax rate
 
         Returns:
             float -- Tax rate
         """
-        r.. round(self.taxes_owed / self.salary * 100,2)
+        r.. round(taxes_owed / salary * 100,2)
 
 
 __ __name__ __ "__main__":

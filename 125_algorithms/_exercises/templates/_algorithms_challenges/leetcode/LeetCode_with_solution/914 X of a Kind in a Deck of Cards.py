@@ -43,21 +43,21 @@ ____ typing _______ List
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ hasGroupsSizeX(self, deck: List[int]) -> bool:
         """
         gcd of all > 2
         """
         counter = Counter(deck)
         gcd = N..
-        ___ v __ counter.values():
+        ___ v __ counter.v..
             __ gcd __ N..
                 gcd = v
-            gcd = self.gcd(gcd, v)
+            gcd = gcd(gcd, v)
             __ gcd __ 1:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ gcd(self, a, b):
         """

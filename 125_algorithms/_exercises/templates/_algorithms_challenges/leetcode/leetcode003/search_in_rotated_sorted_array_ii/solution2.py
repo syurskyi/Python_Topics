@@ -12,8 +12,8 @@ Would this affect the run-time complexity? How and why?
 Write a function to determine if a given target is in the array.
 """
 
-class Solution(object):
-    ___ search(self, nums, target):
+c_ Solution(object):
+    ___ s..(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -24,7 +24,7 @@ class Solution(object):
         w.... left + 1 < right:
             mid = left + (right - left) / 2
             __ target __ nums[mid]:
-                r.. True
+                r.. T..
             # Left part is sorted
             ____ nums[mid] > nums[right]:
                 __ nums[left] <= target < nums[mid]:
@@ -40,5 +40,5 @@ class Solution(object):
             ____:
                 right -= 1
         __ nums[left] __ target o. nums[right] __ target:
-            r.. True
-        r.. False
+            r.. T..
+        r.. F..

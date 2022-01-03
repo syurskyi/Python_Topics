@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: Given the candidate numbers
     @param: target: Given the target number
@@ -10,7 +10,7 @@ class Solution:
             r.. ans
 
         A.s..()
-        self.dfs(A, 0, target, ans, [])
+        dfs(A, 0, target, ans, [])
         r.. ans
 
     ___ dfs(self, A, start, remaining, ans, path):
@@ -28,5 +28,5 @@ class Solution:
                 continue
 
             path.a..(A[i])
-            self.dfs(A, i + 1, remaining - A[i], ans, path)
+            dfs(A, i + 1, remaining - A[i], ans, path)
             path.pop()

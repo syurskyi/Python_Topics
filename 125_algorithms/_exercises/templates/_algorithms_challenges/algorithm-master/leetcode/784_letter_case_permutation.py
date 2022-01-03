@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ letterCasePermutation(self, s):
         """
         :type s: str
@@ -7,17 +7,17 @@ class Solution:
         __ n.. s:
             r.. ['']
         ans    # list
-        self.dfs(s, 0, ans, [])
+        dfs(s, 0, ans, [])
         r.. ans
 
     ___ dfs(self, s, i, ans, path):
         __ i __ l..(s):
-            ans.a..(''.join(path))
+            ans.a..(''.j..(path))
             r..
 
-        options = [s[i]] __ s[i].isdigit() ____ [s[i].lower(), s[i].upper()]
+        options = [s[i]] __ s[i].isdigit() ____ [s[i].l.., s[i].upper()]
 
         ___ c __ options:
             path.a..(c)
-            self.dfs(s, i + 1, ans, path)
+            dfs(s, i + 1, ans, path)
             path.pop()

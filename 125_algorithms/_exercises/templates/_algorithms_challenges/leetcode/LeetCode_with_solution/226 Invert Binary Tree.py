@@ -21,14 +21,14 @@ so fuck off.
 __author__ = 'Daniel'
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ invertTree_recur(self, root):
         """
         :type root: TreeNode
@@ -37,8 +37,8 @@ class Solution:
         __ n.. root:
             r.. N..
 
-        self.invertTree_recur(root.left)
-        self.invertTree_recur(root.right)
+        invertTree_recur(root.left)
+        invertTree_recur(root.right)
         root.left, root.right = root.right, root.left
         r.. root
 

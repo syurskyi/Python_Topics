@@ -3,7 +3,7 @@ Created on May 1, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ ambiguousCoordinates(self, S):
         """
         :type S: str
@@ -13,8 +13,8 @@ class Solution(object):
         n = l..(s)
         res    # list
         ___ i __ r..(1, n-2):
-            arrA = self.helper(s[1:i+1])
-            arrB = self.helper(s[i+1:n-1])
+            arrA = helper(s[1:i+1])
+            arrB = helper(s[i+1:n-1])
             ___ s1 __ arrA:
                 ___ s2 __ arrB:
                     res.a..('(%s, %s)' % (s1, s2))
@@ -35,7 +35,7 @@ class Solution(object):
             res.a..(s[:i]+'.'+s[i:])
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             '(123)',
             '(00011)',
@@ -44,7 +44,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.ambiguousCoordinates(s)
+            result = ambiguousCoordinates(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ topKFrequent(self, A, k):
         """
         :type A: List[int]
@@ -9,11 +9,11 @@ class Solution:
         __ n.. A:
             r.. ans
 
-        F = {}
+        F    # dict
         ___ a __ A:
             F[a] = F.get(a, 0) + 1
 
-        ___ a, _ __ s..(F.items(), key=l.... x: -x[1]):
+        ___ a, _ __ s..(F.i.., key=l.... x: -x[1]):
             __ k __ 0:
                 break
 

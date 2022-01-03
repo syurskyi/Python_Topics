@@ -88,9 +88,9 @@ ___ get_continent(country: s..) -> s..:
     :returns: The continent of the country
     :rtype: str
     """
-    ___ continent, countries __ country_lookup.items():
+    ___ continent, countries __ country_lookup.i..:
         ___ c __ countries:
-            __ country.lower() __ c.lower():
+            __ country.l.. __ c.l..:
                 r.. continent
 
 

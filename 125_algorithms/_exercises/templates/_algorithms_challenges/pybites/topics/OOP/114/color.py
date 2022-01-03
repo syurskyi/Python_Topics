@@ -4,7 +4,7 @@ _______ urllib.request
 
 # PREWORK (don't modify): import colors, save to temp file and import
 tmp = os.getenv("TMP", "/tmp")
-color_values_module = os.path.join(tmp, 'color_values.py')
+color_values_module = os.path.j..(tmp, 'color_values.py')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/color_values.py',
     color_values_module
@@ -15,15 +15,15 @@ sys.path.a..(tmp)
 ____ color_values _______ COLOR_NAMES  # noqa E402
 
 
-class Color:
+c_ Color:
     """Color class.
 
     Takes the string of a color name and returns its RGB value.
     """
 
-    ___ __init__(self, color):
-        self.rgb = COLOR_NAMES.get(color.upper())
-        self.color = color
+    ___ - , color):
+        rgb = COLOR_NAMES.get(color.upper())
+        color = color
 
     ___ hex2rgb(hex_value):
         """Class method that converts a hex value into an rgb one"""
@@ -43,13 +43,13 @@ class Color:
         hex = '#%02x%02x%02x' % rgb_value
         r.. hex
 
-    ___ __repr__(self):
+    ___ __repr__
         """Returns the repl of the object"""
-        r.. "%s(%r)"%(self.__class__.__name__, self.color)
+        r.. "%s(%r)"%(__class__.__name__, color)
 
-    ___ __str__(self):
+    ___ __str__
         """Returns the string value of the color object"""
-        r.. s..(self.rgb) __ self.rgb ____ "Unknown"
+        r.. s..(rgb) __ rgb ____ "Unknown"
 
 
 #color = Color('orange')

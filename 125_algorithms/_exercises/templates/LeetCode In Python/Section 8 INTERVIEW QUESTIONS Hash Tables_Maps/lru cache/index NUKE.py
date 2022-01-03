@@ -1,18 +1,18 @@
 ____ collections _______ deque
 
 
-class LRUCache:
+c_ LRUCache:
 
-    ___ __init__(self, capacity: i..):
-        self.c  capacity
-        self.m  d..()
-        self.deq  deque()
+    ___ - , capacity: i..):
+        c  capacity
+        m  d..()
+        deq  deque()
 
     ___ get(self, key: i..) -> i..:
-        __ key __ self.m:
-            value  self.m[key]
-            self.deq.remove(key)
-            self.deq.a..(key)
+        __ key __ m:
+            value  m[key]
+            deq.remove(key)
+            deq.a..(key)
             r.. value
         ____:
             r.. -1
@@ -23,12 +23,12 @@ class LRUCache:
         # obj = LRUCache(capacity)
         # param_1 = obj.get(key)
         # obj.put(key,value)
-        __ key n.. __ self.m:
-            __ l..(self.deq) __ self.c:
-                oldest  self.deq.popleft()
-                del self.m[oldest]
+        __ key n.. __ m:
+            __ l..(deq) __ c:
+                oldest  deq.popleft()
+                del m[oldest]
         ____:
-            self.deq.remove(key)
+            deq.remove(key)
 
-        self.m[key]  value
-        self.deq.a..(key)
+        m[key]  value
+        deq.a..(key)

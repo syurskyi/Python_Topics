@@ -3,7 +3,7 @@ Created on Feb 5, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxProfit(self, prices):
         """
         :type prices: List[int]
@@ -17,7 +17,7 @@ class Solution(object):
             minVal = m..(minVal, prices[i])
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [7, 1, 5, 3, 6, 4],
             [7, 6, 4, 3, 1],
@@ -25,7 +25,7 @@ class Solution(object):
         ]
         ___ prices __ testCases:
             print('prices: %s' % (prices))
-            result = self.maxProfit(prices)
+            result = maxProfit(prices)
             print('result: %s' % (result))
             print('-='*15+'-')
     

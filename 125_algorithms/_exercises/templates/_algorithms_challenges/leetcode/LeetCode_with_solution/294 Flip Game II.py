@@ -5,28 +5,28 @@ Game, Winner, Backtracking
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.d = {}
+c_ Solution(object):
+    ___ - ):
+        d    # dict
 
     ___ canWin(self, s):
         """
         memoization
         110ms
         """
-        __ s n.. __ self.d:
-            flag = False
+        __ s n.. __ d:
+            flag = F..
             ___ i __ xrange(l..(s)-1):
                 __ s[i:i+2] __ "++":
-                    __ n.. self.canWin(s[:i]+"--"+s[i+2:]):
-                        flag = True
+                    __ n.. canWin(s[:i]+"--"+s[i+2:]):
+                        flag = T..
                         break
-            self.d[s] = flag
+            d[s] = flag
 
-        r.. self.d[s]
+        r.. d[s]
 
     ___ canWin_oneline(self, s):
-        r.. any(n.. self.canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ xrange(l..(s)-1) __ s[i:i+2] __ "++")
+        r.. any(n.. canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ xrange(l..(s)-1) __ s[i:i+2] __ "++")
 
     ___ canWin_trivial(self, s):
         """
@@ -36,11 +36,11 @@ class Solution(object):
         """
         ___ i __ xrange(l..(s)-1):
             __ s[i:i+2] __ "++":
-                __ n.. self.canWin_trivial(s[:i]+"--"+s[i+2:]):
-                    r.. True
+                __ n.. canWin_trivial(s[:i]+"--"+s[i+2:]):
+                    r.. T..
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().canWin("+++++") __ False
+    ... Solution().canWin("+++++") __ F..

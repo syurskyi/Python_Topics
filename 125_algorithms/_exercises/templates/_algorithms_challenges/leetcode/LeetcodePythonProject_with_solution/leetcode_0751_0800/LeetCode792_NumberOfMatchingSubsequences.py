@@ -3,14 +3,14 @@ Created on Apr 16, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numMatchingSubseq(self, S, words):
         """
         :type S: str
         :type words: List[str]
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         ___ i __ r..(26):
             c = chr(ord('a')+i)
             hashmap[c]    # list
@@ -28,7 +28,7 @@ class Solution(object):
                     hashmap[word[1]].a..(word[1:])
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'abcde',
@@ -36,7 +36,7 @@ class Solution(object):
             ],
         ]
         ___ s, words __ testCases:
-            result = self.numMatchingSubseq(s, words)
+            result = numMatchingSubseq(s, words)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -60,13 +60,13 @@ ___ make_character_index(text=text, characters=CHARACTERS):
             continue
         ___ c __ characters:
             __ isi..(c, tuple):
-                flag = False
+                flag = F..
                 ___ p __ c:
-                    __ p.lower() __ s.lower():
-                        flag = True
+                    __ p.l.. __ s.l..:
+                        flag = T..
                 __ flag:
-                    result[c[0].lower()].a..(x)
+                    result[c[0].l..].a..(x)
             ____:
-                __ c.lower() __ s.lower():
-                    result[c.lower()].a..(x)
+                __ c.l.. __ s.l..:
+                    result[c.l..].a..(x)
     r.. result

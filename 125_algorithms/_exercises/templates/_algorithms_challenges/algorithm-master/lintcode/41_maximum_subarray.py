@@ -1,7 +1,7 @@
 """
 Prefix Sum: space optimization
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @return: A integer indicate the sum of max subarray
@@ -35,7 +35,7 @@ class Solution:
 """
 Prefix Sum
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @return: A integer indicate the sum of max subarray

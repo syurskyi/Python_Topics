@@ -2,7 +2,7 @@
 time: O(n)
 space: O(n)
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an array of Integer
     @param: target: target = A[index1] + A[index2]
@@ -13,7 +13,7 @@ class Solution:
         __ n.. A:
             r.. NOT_FOUND
 
-        remaining = {}
+        remaining    # dict
         ___ i __ r..(l..(A)):
             __ A[i] __ remaining:
                 r.. [
@@ -29,7 +29,7 @@ class Solution:
 time: O(n)
 space: O(1)
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an array of Integer
     @param: target: target = A[index1] + A[index2]

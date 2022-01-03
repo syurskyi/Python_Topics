@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
+c_ Solution:
     # @param head, a ListNode
     # @param m, an integer
     # @param n, an integer

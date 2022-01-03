@@ -16,7 +16,7 @@ _______ sys
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ largestRectangleArea(self, height):
         """
         O(2*n)

@@ -21,9 +21,9 @@ You cannot concatenate numbers together. For example, if the input is
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ judgePoint24(self, nums: List[int]) -> bool:
-        r.. self.dfs(nums, {})
+        r.. dfs(nums, {})
 
     ___ dfs(self, A, cache):
         __ tuple(A) n.. __ cache:
@@ -39,15 +39,15 @@ class Solution:
                         # if 0, duplicated as a * b 
                         A_new = A[:j] + A[j+1:i] + A[i+1:] + [c]
                         A_new.s..()
-                        __ self.dfs(A_new, cache):
-                            cache[tuple(A)] = True
+                        __ dfs(A_new, cache):
+                            cache[tuple(A)] = T..
                             r.. cache[tuple(A)]
 
-            cache[tuple(A)] = False
+            cache[tuple(A)] = F..
 
         r.. cache[tuple(A)]
 
 
 __ __name__ __ "__main__":
-    ... Solution().judgePoint24([4, 1, 8, 7]) __ True
-    ... Solution().judgePoint24([1, 2, 1, 2]) __ False
+    ... Solution().judgePoint24([4, 1, 8, 7]) __ T..
+    ... Solution().judgePoint24([1, 2, 1, 2]) __ F..

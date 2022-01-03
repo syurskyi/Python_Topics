@@ -28,7 +28,7 @@ ___ romanize(decimal_number):
             decimal_number = decimal_number % 1000
             roman_numeral += frequency * numeral_lookup[1000]
         ____:
-            ___ key __ s..(numeral_lookup.keys(), r.._T..:
+            ___ key __ s..(numeral_lookup.k.., r.._T..:
                 __ key > 4 a.. decimal_number % key __ 0:
                     roman_numeral += numeral_lookup[decimal_number]
                     decimal_number = 0

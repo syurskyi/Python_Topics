@@ -3,7 +3,7 @@ Created on Sep 9, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ loudAndRich(self, richer, quiet):
         """
         :type richer: List[List[int]]
@@ -11,14 +11,14 @@ class Solution(object):
         :rtype: List[int]
         """
         n = l..(quiet)
-        richer2 = {}
+        richer2    # dict
         ___ i __ r..(n):
             richer2[i]    # list
         ___ v __ richer:
             richer2[v[1]].a..(v[0])
         res = [-1 ___ i __ r..(n)]
         ___ i __ r..(n):
-            self.dfs(i, quiet, richer2, res)
+            dfs(i, quiet, richer2, res)
         r.. res
     
     ___ dfs(self, i, quiet, richer2, res):
@@ -26,11 +26,11 @@ class Solution(object):
             r.. res[i]
         res[i] = i
         ___ j __ richer2[i]:
-            __ quiet[res[i]] > quiet[self.dfs(j, quiet, richer2, res)]:
+            __ quiet[res[i]] > quiet[dfs(j, quiet, richer2, res)]:
                 res[i] = res[j]
         r.. res[i]
     
-    ___ test(self):
+    ___ test
         testCase = [
             [
                 [[1,0],[2,1],[3,1],[3,7],[4,3],[5,3],[6,3]],
@@ -38,7 +38,7 @@ class Solution(object):
             ],
         ]
         ___ richer, quiet __ testCase:
-            res = self.loudAndRich(richer, quiet)
+            res = loudAndRich(richer, quiet)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -6,7 +6,7 @@ Note: The numbers can be arbitrarily large and are non-negative.
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ multiply(self, num1, num2):
         """
         Google Phone Interview Question, 20 Sep 2013
@@ -28,7 +28,7 @@ class Solution(object):
 
         # pre processing
         __ l..(num1) > l..(num2):  # order them first
-            r.. self.multiply(num2, num1)
+            r.. multiply(num2, num1)
 
         # reverse them first
         num1 = map(int, l..(num1[::-1]))
@@ -36,14 +36,14 @@ class Solution(object):
 
         # multiply by 1 digit at a time
         ___ d __ num1:
-            result.a..(self.multiply_1_digit(d, num2))
+            result.a..(multiply_1_digit(d, num2))
 
         # add the temporary results up
-        lst = self.add_list(result)
+        lst = add_list(result)
 
         # post processing
         lst.reverse()  # reverse back
-        result = "".join(map(s.., lst)).lstrip("0")
+        result = "".j..(map(s.., lst)).lstrip("0")
         __ n.. result:
             r.. "0"
         r.. result
@@ -78,7 +78,7 @@ class Solution(object):
         ret = [0]
         ___ ind, val __ e..(lst):
             ___ i __ xrange(sig): val.insert(0, 0)  # possible deque
-            ret = self.add(ret, val)
+            ret = add(ret, val)
             sig += 1
         r.. ret
 
@@ -90,7 +90,7 @@ class Solution(object):
         """
 
         __ l..(num1) > l..(num2):
-            r.. self.add(num2, num1)
+            r.. add(num2, num1)
 
         ret    # list
         carry = 0

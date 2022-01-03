@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ splitArray(self, nums, m):
     """
     :type nums: List[int]
@@ -15,8 +15,8 @@ class Solution(object):
           count += 1
           total = num
           __ count > m:
-            r.. False
-      r.. True
+            r.. F..
+      r.. T..
 
     start, end = max(nums), s..(nums)
     mid = 0

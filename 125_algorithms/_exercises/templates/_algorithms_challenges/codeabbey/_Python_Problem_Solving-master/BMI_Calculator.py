@@ -17,7 +17,7 @@ ___ BMI_calculator():
         ____:
             continue
     
-    result = ' '.join(s..(e) ___ e __ result)
+    result = ' '.j..(s..(e) ___ e __ result)
     print(result)
     
 BMI_calculator()

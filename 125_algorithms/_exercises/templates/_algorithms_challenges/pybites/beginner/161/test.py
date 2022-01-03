@@ -15,9 +15,9 @@ filecount, dircount = 0, 0
 ___ root, dirs, files __ os.walk(DIR):
     ___ name __ files:
         filecount += 1
-        print(os.path.join(DIR, name))
+        print(os.path.j..(DIR, name))
     ___ name __ dirs:
         dircount += 1
-        print(os.path.join(DIR, name))
+        print(os.path.j..(DIR, name))
 
 print(filecount, dircount)

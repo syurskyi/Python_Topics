@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ wordPattern(self, pattern, s..):
     """
     :type pattern: str

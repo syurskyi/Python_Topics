@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution(object):
+c_ Solution(object):
   ___ sequenceReconstruction(self, org, seqs):
     """
     :type org: List[int]
@@ -10,7 +10,7 @@ class Solution(object):
     """
     n = l..(org)
     graph = collections.defaultdict(l..)
-    visited = {}
+    visited    # dict
     incomings = collections.defaultdict(int)
     nodes = set()
     ___ seq __ seqs:
@@ -27,7 +27,7 @@ class Solution(object):
       __ incomings[node] __ 0:
         count += 1
         __ count __ 2:
-          r.. False
+          r.. F..
     order    # list
     visited = collections.defaultdict(int)
     queue = [q ___ q __ incomings __ incomings[q] __ 0]
@@ -39,7 +39,7 @@ class Solution(object):
         __ incomings[nbr] __ 0:
           queue.a..(nbr)
     __ l..(queue) > 1:
-      r.. False
+      r.. F..
     __ order __ org a.. l..(order) __ l..(nodes):
-      r.. True
-    r.. False
+      r.. T..
+    r.. F..

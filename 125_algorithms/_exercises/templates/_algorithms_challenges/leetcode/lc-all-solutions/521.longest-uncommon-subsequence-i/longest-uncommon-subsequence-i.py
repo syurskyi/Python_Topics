@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findLUSlength(self, a, b):
     """
     :type a: str

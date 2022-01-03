@@ -38,7 +38,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ lenLongestFibSubseq(self, A: List[int]) -> int:
             """
             F[i][j] longest fib subsequence ending at A[i] with 2nd last element
@@ -57,7 +57,7 @@ class Solution:
                 ___ j __ r..(i):
                     F[i][j] = 2
 
-            idxes = {}
+            idxes    # dict
             ___ i __ r..(n):
                 idxes[A[i]] = i
 

@@ -3,7 +3,7 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findUnsortedSubarray(self, nums):
         """
         :type nums: List[int]
@@ -19,14 +19,14 @@ class Solution(object):
             j -= 1
         r.. j-i+1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 6, 4, 8, 10, 9, 15],
             [1, 2, 3, 5],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.findUnsortedSubarray(nums)
+            result = findUnsortedSubarray(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

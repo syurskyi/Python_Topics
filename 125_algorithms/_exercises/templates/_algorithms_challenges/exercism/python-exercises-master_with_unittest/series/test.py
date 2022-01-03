@@ -9,39 +9,39 @@ _______ unittest
 ____ series _______ slices
 
 
-class SeriesTest(unittest.TestCase):
-    ___ test_slices_of_one(self):
-        self.assertEqual(
+c_ SeriesTest(unittest.TestCase):
+    ___ test_slices_of_one
+        assertEqual(
             slices("01234", 1),
             [[0], [1], [2], [3], [4]], )
 
-    ___ test_slices_of_two(self):
-        self.assertEqual(
+    ___ test_slices_of_two
+        assertEqual(
             slices("97867564", 2),
             [[9, 7], [7, 8], [8, 6], [6, 7], [7, 5], [5, 6], [6, 4]], )
 
-    ___ test_slices_of_three(self):
-        self.assertEqual(
+    ___ test_slices_of_three
+        assertEqual(
             slices("97867564", 3),
             [[9, 7, 8], [7, 8, 6], [8, 6, 7], [6, 7, 5], [7, 5, 6], [5, 6, 4]],
         )
 
-    ___ test_slices_of_four(self):
-        self.assertEqual(
+    ___ test_slices_of_four
+        assertEqual(
             slices("01234", 4),
             [[0, 1, 2, 3], [1, 2, 3, 4]], )
 
-    ___ test_slices_of_five(self):
-        self.assertEqual(
+    ___ test_slices_of_five
+        assertEqual(
             slices("01234", 5),
             [[0, 1, 2, 3, 4]], )
 
-    ___ test_overly_long_slice(self):
-        with self.assertRaises(ValueError):
+    ___ test_overly_long_slice
+        with assertRaises(ValueError):
             slices("012", 4)
 
-    ___ test_overly_short_slice(self):
-        with self.assertRaises(ValueError):
+    ___ test_overly_short_slice
+        with assertRaises(ValueError):
             slices("01234", 0)
 
 

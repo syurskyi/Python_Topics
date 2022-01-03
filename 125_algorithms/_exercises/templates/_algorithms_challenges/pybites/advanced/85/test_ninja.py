@@ -55,14 +55,14 @@ ___ test_new_score_new_belt(ninja, capfd):
 
 ___ test_higher_belt(ninja, capfd):
     ninja.score = 177
-    ... ninja._last_earned_belt.lower() __ 'green'
+    ... ninja._last_earned_belt.l.. __ 'green'
     output = capfd.readouterr()[0].s..('\n')
     ... CONGRATS_MSG.f..(score=177, rank='Green') __ output
 
 
 ___ test_gt_max_score_highest_belt(ninja, capfd):
     ninja.score = 1010
-    ... ninja._last_earned_belt.lower() __ 'red'
+    ... ninja._last_earned_belt.l.. __ 'red'
     output = capfd.readouterr()[0].s..('\n')
     ... CONGRATS_MSG.f..(score=1010, rank='Red') __ output
 

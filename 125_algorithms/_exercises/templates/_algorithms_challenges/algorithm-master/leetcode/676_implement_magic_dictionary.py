@@ -6,12 +6,12 @@ param_2 = obj.search(word)
 """
 
 
-class MagicDictionary:
-    ___ __init__(self):
+c_ MagicDictionary:
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.words = collections.defaultdict(set)
+        words = collections.defaultdict(set)
 
     ___ buildDict(self, words):
         """
@@ -23,13 +23,13 @@ class MagicDictionary:
             ___ i __ r..(l..(word)):
                 key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
-                __ key n.. __ self.words:
-                    self.words[key] = set()
+                __ key n.. __ words:
+                    words[key] = set()
 
                 # add char to distinct word if its same
-                self.words[key].add(word[i])
+                words[key].add(word[i])
 
-    ___ search(self, word):
+    ___ s..(self, word):
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         :type word: str
@@ -38,14 +38,14 @@ class MagicDictionary:
         ___ i __ r..(l..(word)):
             key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
-            __ key n.. __ self.words:
+            __ key n.. __ words:
                 continue
 
-            words = self.words[key]
+            words = words[key]
 
             # 1. word[i] not in words => means not same word
             # 2. len(words) > 1 => if got same but still can mapping other
             __ word[i] n.. __ words o. l..(words) > 1:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

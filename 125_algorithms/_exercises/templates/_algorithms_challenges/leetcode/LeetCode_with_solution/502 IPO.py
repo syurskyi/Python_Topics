@@ -34,7 +34,7 @@ ____ typing _______ List
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ findMaximizedCapital(self, k: int, W: int, Profits: List[int], Capital: List[int]) -> int:
         """
         Greedy + dual PQ
@@ -77,7 +77,7 @@ class Solution:
         """
         capital = W
         n = l..(Profits)
-        visited = [False ___ _ __ r..(n)]
+        visited = [F.. ___ _ __ r..(n)]
         ___ _ __ r..(k):
             maxa = 0
             maxa_i = 0
@@ -87,7 +87,7 @@ class Solution:
                     maxa_i = i
             __ maxa > 0:
                 capital += maxa
-                visited[maxa_i] = True
+                visited[maxa_i] = T..
             ____:
                 break
 

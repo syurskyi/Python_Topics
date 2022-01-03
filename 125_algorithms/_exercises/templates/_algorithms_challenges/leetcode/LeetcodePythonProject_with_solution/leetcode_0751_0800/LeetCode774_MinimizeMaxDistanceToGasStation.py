@@ -3,7 +3,7 @@ Created on Apr 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minmaxGasDist(self, stations, K):
         """
         :type stations: List[int]
@@ -25,7 +25,7 @@ class Solution(object):
                 right = mid
         r.. right
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -39,7 +39,7 @@ class Solution(object):
         ___ stations, k __ testCases:
             print('stations: %s' % stations)
             print('K: %s' % k)
-            result = self.minmaxGasDist(stations, k)
+            result = minmaxGasDist(stations, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -36,7 +36,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ leastBricks(self, wall: List[List[int]]) -> int:
         """
         Iterate and count edge at a position

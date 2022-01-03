@@ -7,70 +7,70 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: : the root of tree
     @param: : the target sum
     @return: two numbers from tree which sum is n
     """
     ___ twoSum(self, root, n):
-        self.left = self.right = N..
-        self.head = self.tail = root
+        left = right = N..
+        head = tail = root
 
-        self.pre()
-        self.nxt()
+        pre()
+        nxt()
 
-        w.... self.left != self.right:
-            _sum = self.left.val + self.right.val
+        w.... left != right:
+            _sum = left.val + right.val
 
             __ _sum __ n:
-                r.. [self.left.val, self.right.val]
+                r.. [left.val, right.val]
 
             __ _sum < n:
-                self.nxt()
+                nxt()
             ____:
-                self.pre()
+                pre()
 
-    ___ pre(self):
-        w.... self.tail:
-            cur = self.tail.right
+    ___ pre
+        w.... tail:
+            cur = tail.right
 
-            __ cur a.. cur != self.right:
-                w.... cur.left a.. cur.left != self.tail:
+            __ cur a.. cur != right:
+                w.... cur.left a.. cur.left != tail:
                     cur = cur.left
 
-                __ cur.left __ self.tail:
-                    self.right = self.tail
+                __ cur.left __ tail:
+                    right = tail
 
                     cur.left = N..
-                    self.tail = self.tail.left
+                    tail = tail.left
                     break
                 ____:
-                    cur.left = self.tail
-                    self.tail = self.tail.right
+                    cur.left = tail
+                    tail = tail.right
             ____:
-                self.right = self.tail
-                self.tail = self.tail.left
+                right = tail
+                tail = tail.left
                 break
 
-    ___ nxt(self):
-        w.... self.head:
-            cur = self.head.left
+    ___ nxt
+        w.... head:
+            cur = head.left
 
-            __ cur a.. cur != self.left:
-                w.... cur.right a.. cur.right != self.head:
+            __ cur a.. cur != left:
+                w.... cur.right a.. cur.right != head:
                     cur = cur.right
 
-                __ cur.right __ self.head:
-                    self.left = self.head
+                __ cur.right __ head:
+                    left = head
 
                     cur.right = N..
-                    self.head = self.head.right
+                    head = head.right
                     break
                 ____:
-                    cur.right = self.head
-                    self.head = self.head.left
+                    cur.right = head
+                    head = head.left
             ____:
-                self.left = self.head
-                self.head = self.head.right
+                left = head
+                head = head.right
                 break

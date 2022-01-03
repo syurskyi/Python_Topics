@@ -28,9 +28,9 @@ No duplicates in both lists.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findRestaurant(self, list1: List[s..], list2: List[s..]) -> List[s..]:
-        index = {}
+        index    # dict
         ___ i, v __ e..(list2):
             index[v] = i
 

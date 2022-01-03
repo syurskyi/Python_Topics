@@ -26,7 +26,7 @@ ___ _make_emoji_mapping():
             try:
                 desc = what_means_emoji(emoji)
                 __ desc != 'Not found':
-                    res[emoji] = desc.lower()
+                    res[emoji] = desc.l..
             except ValueError:
                 pass
         _make_emoji_mapping.MAPPING = res
@@ -39,8 +39,8 @@ _make_emoji_mapping.MAPPING = N..
 ___ find_emoji(term):
     """Return emojis and their texts that match (case insensitive)
        term, print matches to console"""
-    term = term.lower()
+    term = term.l..
     emoji_mapping = _make_emoji_mapping()
-    ___ em, desc __ emoji_mapping.items():
+    ___ em, desc __ emoji_mapping.i..:
         __ term __ desc:
             print(f'{desc:40} | {em}')

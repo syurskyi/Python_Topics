@@ -1,3 +1,3 @@
-class Robot(object):
-    ___ __init__(self):
+c_ Robot(object):
+    ___ - ):
         pass

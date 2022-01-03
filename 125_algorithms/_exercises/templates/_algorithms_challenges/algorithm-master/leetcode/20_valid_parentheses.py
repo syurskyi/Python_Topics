@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ isValid(self, s):
         """
         :type s: str
@@ -11,8 +11,8 @@ class Solution:
             __ c __ '([{':
                 stack.a..(c)
             ____ c n.. __ ')]}':
-                r.. False
+                r.. F..
             ____ n.. stack o. pairs[c] != stack.pop():
-                r.. False
+                r.. F..
 
         r.. n.. stack

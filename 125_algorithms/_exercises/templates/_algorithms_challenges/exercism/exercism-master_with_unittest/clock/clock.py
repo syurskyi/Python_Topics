@@ -1,34 +1,34 @@
-class Clock:
-    ___ __init__(self, hours, mins):
-        self.hours = hours
-        self.mins = mins
-        self.fixup()
+c_ Clock:
+    ___ - , hours, mins):
+        hours = hours
+        mins = mins
+        fixup()
 
     ___ __eq__(self, other):
-        r.. self.hours __ other.hours a.. self.mins __ other.mins
+        r.. hours __ other.hours a.. mins __ other.mins
 
-    ___ __str__(self):
-        r.. (self.format_hours() + ':' +
-                self.format_mins())
+    ___ __str__
+        r.. (format_hours() + ':' +
+                format_mins())
 
     ___ add(self, additional_mins):
-        self.mins += additional_mins
-        self.fixup()
+        mins += additional_mins
+        fixup()
         r.. self
 
-    ___ fixup(self):
-        self.fixup_mins()
-        self.fixup_hours()
+    ___ fixup
+        fixup_mins()
+        fixup_hours()
 
-    ___ fixup_hours(self):
-        self.hours = int(self.hours % 24)
+    ___ fixup_hours
+        hours = int(hours % 24)
 
-    ___ fixup_mins(self):
-        self.hours += self.mins // 60
-        self.mins = int(self.mins % 60)
+    ___ fixup_mins
+        hours += mins // 60
+        mins = int(mins % 60)
 
-    ___ format_hours(self):
-        r.. s..(self.hours).zfill(2)
+    ___ format_hours
+        r.. s..(hours).zfill(2)
 
-    ___ format_mins(self):
-        r.. s..(self.mins).zfill(2)
+    ___ format_mins
+        r.. s..(mins).zfill(2)

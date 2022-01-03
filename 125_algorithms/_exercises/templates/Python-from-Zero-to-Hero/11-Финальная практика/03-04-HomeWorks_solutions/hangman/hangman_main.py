@@ -3,7 +3,7 @@ ____ hangman.game_status _______ GameStatus
 
 
 ___ chars_list_to_str(chars):
-    r.. ''.join(chars)
+    r.. ''.j..(chars)
 
 
 game  Game()

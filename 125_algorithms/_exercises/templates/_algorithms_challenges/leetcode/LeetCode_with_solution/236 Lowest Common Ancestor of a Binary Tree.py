@@ -18,14 +18,14 @@ a node can be a descendant of itself according to the LCA definition.
 __author__ = 'Daniel'
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ lowestCommonAncestor(self, root, p, q):
         """
         O(n)
@@ -37,8 +37,8 @@ class Solution:
         :rtype: TreeNode
         """
         path1, path2    # list, []
-        self.dfs(root, p, path1, [False])
-        self.dfs(root, q, path2, [False])
+        dfs(root, p, path1, [F..])
+        dfs(root, q, path2, [F..])
 
         i = 0
         w.... i < m..(l..(path1), l..(path2)):
@@ -54,10 +54,10 @@ class Solution:
 
         path.a..(root)
         __ root __ t:
-            found[0] = True
+            found[0] = T..
 
-        self.dfs(root.left, t, path, found)
-        self.dfs(root.right, t, path, found)
+        dfs(root.left, t, path, found)
+        dfs(root.right, t, path, found)
         __ n.. found[0]:
             path.pop()  # 1 pop() corresponds to 1 append()
 

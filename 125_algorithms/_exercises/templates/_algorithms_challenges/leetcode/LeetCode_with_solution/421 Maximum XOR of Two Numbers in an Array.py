@@ -8,7 +8,7 @@ Could you do this in O(n) runtime?
 """
 
 
-class Solution:
+c_ Solution:
     ___ findMaximumXOR(self, nums):
         """
         Brute force: O(n^2)

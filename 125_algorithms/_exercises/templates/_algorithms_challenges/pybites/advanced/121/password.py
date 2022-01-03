@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 
 ___ password_complexity(password):
@@ -8,21 +8,21 @@ ___ password_complexity(password):
     __ l..(password) >= 8:
         score += 1
         first_eight = password[:8]
-        __ n.. re.search(r'(.)\1',password):
+        __ n.. __.s..(r'(.)\1',password):
             score += 1
 
     
 
 
 
-    __ re.search(r'[a-z]',password) a.. re.search(r'[A-Z]',password):
+    __ __.s..(r'[a-z]',password) a.. __.s..(r'[A-Z]',password):
         score += 1
     
-    __ re.search(r'[^\sa-zA-Z0-9]',password):
+    __ __.s..(r'[^\sa-zA-Z0-9]',password):
         score += 1
 
 
-    __ re.search(r'\d',password) a.. re.search(r'[a-zA-Z]',password):
+    __ __.s..(r'\d',password) a.. __.s..(r'[a-zA-Z]',password):
         score += 1
 
 

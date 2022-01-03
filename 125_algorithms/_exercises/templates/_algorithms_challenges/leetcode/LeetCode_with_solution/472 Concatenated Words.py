@@ -25,10 +25,10 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
-    ___ __init__(self):
+c_ Solution:
+    ___ - ):
         TrieNode = l....: defaultdict(TrieNode)  # not defaultdict(lambda: TrieNode)
-        self.root = TrieNode()  # root of tire
+        root = TrieNode()  # root of tire
 
     ___ findAllConcatenatedWordsInADict(self, words: List[s..]) -> List[s..]:
         """
@@ -37,34 +37,34 @@ class Solution:
         words.s..(key=l..)
         ret    # list
         ___ w __ words:
-            __ self.can_concat(w, 0):
+            __ can_concat(w, 0):
                 ret.a..(w)
 
-            cur = self.root
+            cur = root
             ___ c __ w:
                 cur = cur[c]
-            cur["end"] = True
+            cur["end"] = T..
 
         r.. ret
 
     ___ can_concat(self, word, lo):
         __ n.. word:
-            r.. False
+            r.. F..
 
         k = l..(word)
         __ lo >= k:
-            r.. True
+            r.. T..
 
-        cur = self.root
+        cur = root
         ___ i __ r..(lo, k):
             cur = cur[word[i]]
-            __ cur.get("end", False) a.. self.can_concat(word, i + 1):
-                r.. True
+            __ cur.get("end", F..) a.. can_concat(word, i + 1):
+                r.. T..
 
-        r.. False
+        r.. F..
 
 
-class SolutionTLE:
+c_ SolutionTLE:
     ___ findAllConcatenatedWordsInADict(self, words: List[s..]) -> List[s..]:
         """
         Trie check cannot be greedy: cat sdog vs cats dog
@@ -86,24 +86,24 @@ class SolutionTLE:
         # words.sort()  # sorting is unnecessary
         visited = set(words)
         ___ w __ words:
-            __ self.can_concat(w, visited):
+            __ can_concat(w, visited):
                 ret.a..(w)
 
         r.. ret
 
     ___ can_concat(self, w, visited):
         __ n.. w:
-            r.. False
+            r.. F..
 
         k = l..(w)
-        F = [False ___ _ __ r..(k + 1)]
-        F[0] = True
+        F = [F.. ___ _ __ r..(k + 1)]
+        F[0] = T..
         ___ i __ r..(1, k + 1):
             ___ j __ r..(i):
                 __ j __ 0 a.. i __ k:
                     continue  # word itself
                 __ F[j] a.. w[j:i] __ visited:
-                    F[i] = True
+                    F[i] = T..
 
         r.. F[k]
 

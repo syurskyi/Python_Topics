@@ -6,14 +6,14 @@ ___ gen_primes(limit=3000000):
     primes, answer    # list, []
 
     # Sieve of Eratosthenes
-    sieve = [True] * (limit + 1)
+    sieve = [T..] * (limit + 1)
     ___ num __ r..(2, limit + 1):
         __ sieve[num]:
            primes.a..(num)
            ___ i __ r..(num * num, limit + 1, num):
-               sieve[i] = False
+               sieve[i] = F..
                
     ___ number __ data:
         answer.a..(s..(primes[number-1]))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 gen_primes()

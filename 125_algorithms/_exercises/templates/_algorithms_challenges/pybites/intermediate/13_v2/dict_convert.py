@@ -13,7 +13,7 @@ blog = d..(name='PyBites',
 # define namedtuple here
 
 
-Blog = n..("Blog",' '.join(blog.keys()))
+Blog = n..("Blog",' '.j..(blog.keys()))
 
 ___ dict2nt(dict_):
 

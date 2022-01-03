@@ -71,11 +71,11 @@ ___ test_get_values(alpha_series):
     ... a..(c __ r..(1, 27) ___ c __ vals)
 
 ___ test_all_even_indexes_returned(float_series):
-    ser = se.get_every_second_indexes(float_series, True)
+    ser = se.get_every_second_indexes(float_series, T..)
     ... a..(n % 2 __ 0 ___ n __ ser.index)
     ... round(s..(ser), 1) __ 250.5
 
 ___ test_all_odd_indexes_returned(float_series):
-    ser = se.get_every_second_indexes(float_series, False)
+    ser = se.get_every_second_indexes(float_series, F..)
     ... a..(n % 2 __ 1 ___ n __ ser.index)
     ... round(s..(ser), 1) __ 250.0

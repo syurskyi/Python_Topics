@@ -4,7 +4,7 @@ Created on Mar 15, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxCoins(self, nums):
         nums = [1] + nums + [1]
         n = l..(nums)
@@ -23,7 +23,7 @@ class Solution(object):
         nums = [1] + nums + [1]
         n = l..(nums)
         memo = [[0]*n ___ _ __ r..(n)]
-        r.. self.burst(memo, nums, 0, n-1)
+        r.. burst(memo, nums, 0, n-1)
     
     ___ burst(self, memo, nums, left, right):
         __ left+1 __ right: r.. 0
@@ -33,18 +33,18 @@ class Solution(object):
         ___ i __ r..(left+1, right):
             result = max(result,\
                 nums[left]*nums[i]*nums[right] + \
-                self.burst(memo, nums, left, i) +\
-                self.burst(memo, nums, i, right))
+                burst(memo, nums, left, i) +\
+                burst(memo, nums, i, right))
             memo[left][right] = result
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 1, 5, 8],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.maxCoins(nums)
+            result = maxCoins(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

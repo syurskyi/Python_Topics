@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ maxArea(self, height: List[i..]) -> i..:
 		maxarea  0
 		l  0

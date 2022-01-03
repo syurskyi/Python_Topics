@@ -18,7 +18,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ findLength(self, A: List[int], B: List[int]) -> int:
         """
         similar to longest substring

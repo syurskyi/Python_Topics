@@ -5,13 +5,13 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ sumNumbers(self, root):
     """
     :type root: TreeNode
     :rtype: int
     """
-    self.s.. = 0
+    s.. = 0
 
     ___ dfs(root, pathsum):
       __ root:
@@ -19,8 +19,8 @@ class Solution(object):
         left = dfs(root.left, pathsum * 10)
         right = dfs(root.right, pathsum * 10)
         __ n.. left a.. n.. right:
-          self.s.. += pathsum
-        r.. True
+          s.. += pathsum
+        r.. T..
 
     dfs(root, 0)
-    r.. self.s..
+    r.. s..

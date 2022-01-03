@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ addStrings(self, num1, num2):
     """
     :type num1: str

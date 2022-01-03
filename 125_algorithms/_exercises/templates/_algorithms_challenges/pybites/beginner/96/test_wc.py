@@ -12,8 +12,8 @@ py_file = 'https://bites-data.s3.us-east-2.amazonaws.com/driving.py'
 
 @pytest.mark.parametrize("some_text, expected", [
     (lines[0], '1 2 11'),
-    (b'\n'.join(lines[:2]), '2 8 40'),
-    (b'\n'.join(lines), '3 12 60'),
+    (b'\n'.j..(lines[:2]), '2 8 40'),
+    (b'\n'.j..(lines), '3 12 60'),
 ])
 ___ test_wc(some_text, expected, tmp_path):
     f = tmp_path / "some_file.txt"
@@ -21,7 +21,7 @@ ___ test_wc(some_text, expected, tmp_path):
     output = wc(f.resolve())
     print(output)
     # replace tabs / multiple spaces by single space
-    counts = ' '.join(output.s.. [:3])
+    counts = ' '.j..(output.s.. [:3])
     ... counts __ expected
     # file with/without path allowed
     ... f.name __ output
@@ -31,7 +31,7 @@ ___ test_wc_on_real_py_file(tmp_path):
     f = tmp_path / "driving.py"
     urlretrieve(py_file, f)
     output = wc(f.resolve())
-    counts = ' '.join(output.s.. [:3])
+    counts = ' '.j..(output.s.. [:3])
     # https://twitter.com/pybites/status/1175795375904628736
     expected = "7 29 216"  # not 8!
     ... counts __ expected

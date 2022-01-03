@@ -4,29 +4,29 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-class Vector2D(object):
-    ___ __init__(self, vec2d):
-        self.values = [row ___ row __ vec2d __ row]
-        self.row = 0
-        self.col = 0
+c_ Vector2D(object):
+    ___ - , vec2d):
+        values = [row ___ row __ vec2d __ row]
+        row = 0
+        col = 0
     
-    ___ next(self):
-        val = self.values[self.row][self.col]
-        __ self.col __ l..(self.values[self.row])-1:
-            self.row += 1
-            self.col = 0
+    ___ next
+        val = values[row][col]
+        __ col __ l..(values[row])-1:
+            row += 1
+            col = 0
         ____:
-            self.col += 1
+            col += 1
         r.. val
     
-    ___ hasNext(self):
-        __ self.row>=l..(self.values):
-            r.. False
-        ____ self.row < l..(self.values)-1:
-            r.. True
+    ___ hasNext
+        __ row>=l..(values):
+            r.. F..
+        ____ row < l..(values)-1:
+            r.. T..
         ____:
-            __ self.col < l..(self.values[self.row]):
-                r.. True
+            __ col < l..(values[row]):
+                r.. T..
             ____:
-                r.. False
+                r.. F..
         

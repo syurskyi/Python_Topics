@@ -32,7 +32,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxTurbulenceSize(self, A: List[int]) -> int:
         """
         scan

@@ -2,10 +2,10 @@
 which reads the same backward as forward"""
 _______ os
 _______ urllib.request
-_______ re
+_______ __
 
 TMP = os.getenv("TMP", "/tmp")
-DICTIONARY = os.path.join(TMP, 'dictionary_m_words.txt')
+DICTIONARY = os.path.j..(TMP, 'dictionary_m_words.txt')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dictionary_m_words.txt',
     DICTIONARY
@@ -15,7 +15,7 @@ urllib.request.urlretrieve(
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().s.. ___ word __ f.readlines())
+        r.. (word.l...s.. ___ word __ f.readlines())
 
 
 ___ is_palindrome(word):
@@ -26,19 +26,19 @@ ___ is_palindrome(word):
 
     
     
-    word = re.sub(r'\W','',word).lower()
+    word = __.sub(r'\W','',word).l..
 
     low,high = 0,l..(word) - 1
 
 
     w.... low < high:
         __ word[low] != word[high]:
-            r.. False
+            r.. F..
 
         low += 1
         high -= 1
 
-    r.. True
+    r.. T..
 
 
 

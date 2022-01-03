@@ -10,4 +10,4 @@ d = defaultdict(l..)
 ___ i __ r..(1, n + 1):
     d[input()].a..(s..(i))
 ___ i __ r..(m):
-    print(' '.join(d[input()]) o. -1)
+    print(' '.j..(d[input()]) o. -1)

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ groupAnagrams(self, strs):
     """
     :type strs: List[str]
@@ -13,7 +13,7 @@ class Solution(object):
         p1 *= p2
       r.. ret
 
-    d = {}
+    d    # dict
 
     ___ s.. __ strs:
       count = [0] * 26

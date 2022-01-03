@@ -25,41 +25,41 @@
 ____ collections _______ deque
 
 
-class NestedIterator(object):
+c_ NestedIterator(object):
 
-  ___ __init__(self, nestedList):
+  ___ - , nestedList):
     """
     Initialize your data structure here.
     :type nestedList: List[NestedInteger]
     """
-    self.stack = deque(nestedList[::-1])
-    self.value = N..
+    stack = deque(nestedList[::-1])
+    value = N..
 
-  ___ next(self):
+  ___ next
     """
     :rtype: int
     """
-    self.hasNext()
-    ret = self.value
-    self.value = N..
+    hasNext()
+    ret = value
+    value = N..
     r.. ret
 
-  ___ hasNext(self):
+  ___ hasNext
     """
     :rtype: bool
     """
-    __ self.value __ n.. N..
-      r.. True
+    __ value __ n.. N..
+      r.. T..
 
-    stack = self.stack
+    stack = stack
     w.... stack:
       top = stack.pop()
       __ top.isInteger():
-        self.value = top.getInteger()
-        r.. True
+        value = top.getInteger()
+        r.. T..
       ____:
         stack.extend(top.getList()[::-1])
-    r.. False
+    r.. F..
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

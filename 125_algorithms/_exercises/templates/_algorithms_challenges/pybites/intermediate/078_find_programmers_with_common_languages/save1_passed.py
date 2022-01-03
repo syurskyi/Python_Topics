@@ -6,4 +6,4 @@ ___ common_languages(programmers):
     programmer_count = l..(programmers)
     languages = [item ___ l __ programmers.values() ___ item __ l]
     language_dict = d..(Counter(languages))
-    r.. [k ___ k, v __ language_dict.items() __ v __ programmer_count]
+    r.. [k ___ k, v __ language_dict.i.. __ v __ programmer_count]

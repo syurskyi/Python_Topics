@@ -4,7 +4,7 @@ space: O(n)
 
 it works even if it's not sorted
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an array of Integer
     @param: target: an integer
@@ -15,7 +15,7 @@ class Solution:
         __ n.. A o. l..(A) < 2:
             r.. NOT_FOUND
 
-        remaining = {}
+        remaining    # dict
         ___ i __ r..(l..(A)):
             """
             if a - b = t
@@ -48,7 +48,7 @@ space: O(n)
 
 needs to sort in advance
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an array of Integer
     @param: target: an integer

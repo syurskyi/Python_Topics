@@ -13,7 +13,7 @@ The three ranges are : [0, 0], [2, 2], [0, 2] and their respective sums are: -2,
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ countRangeSum(self, nums, lower, upper):
         """
         MergeSort while counting required range sum

@@ -4,7 +4,7 @@ Created on Aug 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ checkRecord(self, n):
         """
         :type n: int
@@ -51,7 +51,7 @@ class Solution(object):
                     dp[i][j][k] = val
         r.. dp[-1][-1][-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             2,
             3,
@@ -59,7 +59,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.checkRecord(n)
+            result = checkRecord(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

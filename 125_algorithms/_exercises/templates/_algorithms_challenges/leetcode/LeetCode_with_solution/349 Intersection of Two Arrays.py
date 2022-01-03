@@ -12,7 +12,7 @@ The result can be in any order.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ intersection(self, nums1, nums2):
         """
         O(n+m)

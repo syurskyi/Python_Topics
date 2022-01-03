@@ -12,7 +12,7 @@ the number of teams would be greater.
 See the tests for more details. Enjoy :)
 """
 
-___ my_solution_friends_teams(friends: l.., team_size: int, order_does_matter: bool = False) -> l..:
+___ my_solution_friends_teams(friends: l.., team_size: int, order_does_matter: bool = F..) -> l..:
 
     __ order_does_matter:
         result = permutations(friends, team_size)
@@ -20,6 +20,6 @@ ___ my_solution_friends_teams(friends: l.., team_size: int, order_does_matter: b
         result = combinations(friends, team_size)
     r.. l..(result)
 
-result = my_solution_friends_teams(['Bob', 'Alice', 'John', 'Mary', 'Theo', 'Julius'], 2, order_does_matter = True)
+result = my_solution_friends_teams(['Bob', 'Alice', 'John', 'Mary', 'Theo', 'Julius'], 2, order_does_matter = T..)
 print(result)
 

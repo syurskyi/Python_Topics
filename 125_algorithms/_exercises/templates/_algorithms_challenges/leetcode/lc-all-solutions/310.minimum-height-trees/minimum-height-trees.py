@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findMinHeightTrees(self, n, edges):
     """
     :type n: int
@@ -33,16 +33,16 @@ class Solution(object):
     ___ dfs(graph, start, end, visited, path, res):
       __ start __ end:
         res.a..(path + [])
-        r.. True
+        r.. T..
       visited[start] = 1
       ___ child __ graph.get(start, []):
         __ visited[child] __ 0:
           path.a..(child)
           __ dfs(graph, child, end, visited, path, res):
-            r.. True
+            r.. T..
           path.pop()
 
-    graph = {}
+    graph    # dict
     ___ edge __ edges:
       graph[edge[0]] = graph.get(edge[0], []) + [edge[1]]
       graph[edge[1]] = graph.get(edge[1], []) + [edge[0]]

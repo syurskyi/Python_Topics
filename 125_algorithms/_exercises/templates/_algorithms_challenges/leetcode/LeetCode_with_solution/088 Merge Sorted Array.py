@@ -8,7 +8,7 @@ number of elements initialized in A and B are m and n respectively.
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ merge(self, A, m, B, n):
         """
         array, ascending order.

@@ -3,7 +3,7 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ expressiveWords(self, S, words):
         """
         :type S: str
@@ -13,16 +13,16 @@ class Solution(object):
         s = S
         res = 0
         ___ s0 __ words:
-            __ self.isstretchy(s0, s):
+            __ isstretchy(s0, s):
                 res += 1
         r.. res
     
     ___ isstretchy(self, s0, s):
         m, n = l..(s0), l..(s)
-        __ m > n: r.. False
-        __ m __ n a.. s0 != s: r.. False
+        __ m > n: r.. F..
+        __ m __ n a.. s0 != s: r.. F..
         i, j = 0, 0
-        flag = True
+        flag = T..
         w.... i < m a.. j < n:
             __ s0[i] __ s[j]:
                 i0, j0 = i, j
@@ -31,16 +31,16 @@ class Solution(object):
                 w.... j0 < n a.. s[j0] __ s[j]:
                     j0 += 1
                 __ j0-j < 3 a.. s0[i:i0] != s[j:j0]:
-                    flag = False
+                    flag = F..
                     break
                 i, j = i0, j0
             ____:
                 break
         __ i __ m a.. j __ n a.. flag:
-            r.. True
-        r.. False
+            r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "heeellooo",
@@ -59,7 +59,7 @@ class Solution(object):
         ___ s, words __ testCases:
             print('s: %s' % s)
             print('words: %s' % words)
-            result = self.expressiveWords(s, words)
+            result = expressiveWords(s, words)
             print('result: %s' % result)
             print('-='*30+'-')
 

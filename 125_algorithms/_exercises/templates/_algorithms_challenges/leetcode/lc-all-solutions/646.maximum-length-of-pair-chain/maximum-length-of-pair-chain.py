@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findLongestChain(self, pairs):
     """
     :type pairs: List[List[int]]

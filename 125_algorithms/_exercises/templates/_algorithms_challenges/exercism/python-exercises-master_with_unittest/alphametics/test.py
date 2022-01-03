@@ -5,22 +5,22 @@ ____ alphametics _______ solve
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-class TestAlphametics(unittest.TestCase):
-    ___ test_puzzle_with_three_letters(self):
-        self.assertEqual(solve("I + BB == ILL"), {"I": 1, "B": 9, "L": 0})
+c_ TestAlphametics(unittest.TestCase):
+    ___ test_puzzle_with_three_letters
+        assertEqual(solve("I + BB == ILL"), {"I": 1, "B": 9, "L": 0})
 
-    ___ solution_must_have_unique_value_for_each_letter(self):
-        self.assertEqual(solve("A == B"), {})
+    ___ solution_must_have_unique_value_for_each_letter
+        assertEqual(solve("A == B"), {})
 
-    ___ leading_zero_solution_is_invalid(self):
-        self.assertEqual(solve("ACA + DD == BD"), {})
+    ___ leading_zero_solution_is_invalid
+        assertEqual(solve("ACA + DD == BD"), {})
 
-    ___ test_puzzle_with_four_letters(self):
-        self.assertEqual(
+    ___ test_puzzle_with_four_letters
+        assertEqual(
             solve("AS + A == MOM"), {"A": 9, "S": 2, "M": 1, "O": 0})
 
-    ___ puzzle_with_six_letters(self):
-        self.assertEqual(
+    ___ puzzle_with_six_letters
+        assertEqual(
             solve("NO + NO + TOO == LATE"),
             {"N": 7,
              "O": 4,
@@ -29,8 +29,8 @@ class TestAlphametics(unittest.TestCase):
              "A": 0,
              "E": 2})
 
-    ___ test_puzzle_with_seven_letters(self):
-        self.assertEqual(
+    ___ test_puzzle_with_seven_letters
+        assertEqual(
             solve("HE + SEES + THE == LIGHT"),
             {"E": 4,
              "G": 2,
@@ -40,8 +40,8 @@ class TestAlphametics(unittest.TestCase):
              "S": 9,
              "T": 7})
 
-    ___ test_puzzle_with_eight_letters(self):
-        self.assertEqual(
+    ___ test_puzzle_with_eight_letters
+        assertEqual(
             solve("SEND + MORE == MONEY"),
             {"S": 9,
              "E": 5,
@@ -52,8 +52,8 @@ class TestAlphametics(unittest.TestCase):
              "R": 8,
              "Y": 2})
 
-    ___ test_puzzle_with_ten_letters(self):
-        self.assertEqual(
+    ___ test_puzzle_with_ten_letters
+        assertEqual(
             solve("AND + A + STRONG + OFFENSE + AS + A + GOOD == DEFENSE"),
             {"A": 5,
              "D": 3,

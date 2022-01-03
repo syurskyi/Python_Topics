@@ -1,20 +1,20 @@
-class Solution:
+c_ Solution:
     # @param matrix, a list of lists of integers
     # RETURN NOTHING, MODIFY matrix IN PLACE.
     ___ setZeroes(self, matrix):
         n = l..(matrix)
         m = l..(matrix[0])
-        column_zero = False
-        row_zero = False
+        column_zero = F..
+        row_zero = F..
         ___ i __ r..(n):
             ___ j __ r..(m):
                 __ matrix[i][j] __ 0:
                     # Check whether the first row and column contain
                     # zeroes before recording
                     __ i __ 0:
-                        row_zero = True
+                        row_zero = T..
                     __ j __ 0:
-                        column_zero = True
+                        column_zero = T..
                     # Record zeroes using the first row and column
                     matrix[i][0] = 0
                     matrix[0][j] = 0

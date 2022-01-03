@@ -29,7 +29,7 @@ difficulty[i], profit[i], worker[i]  are in range [1, 10^5]
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxProfitAssignment(self, difficulty: List[int], profit: List[int], worker: List[int]) -> int:
         """
         Greedy? Sort by profit

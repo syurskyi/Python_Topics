@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ lastRemaining(self, n):
     """
     :type n: int
@@ -6,7 +6,7 @@ class Solution(object):
     """
     count = n
     head = 1
-    isFromLeft = True
+    isFromLeft = T..
     step = 1
     w.... count > 1:
       __ isFromLeft o. count % 2 __ 1:

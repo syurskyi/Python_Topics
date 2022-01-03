@@ -4,7 +4,7 @@ Created on Mar 27, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxSumSubmatrix(self, matrix, k):
         pass
     

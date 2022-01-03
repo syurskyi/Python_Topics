@@ -3,7 +3,7 @@ Created on Oct 11, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ constructArray(self, n, k):
         """
         :type n: int
@@ -18,7 +18,7 @@ class Solution(object):
                 res.a..(n-i//2)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 3,
@@ -32,7 +32,7 @@ class Solution(object):
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = self.constructArray(n, k)
+            result = constructArray(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

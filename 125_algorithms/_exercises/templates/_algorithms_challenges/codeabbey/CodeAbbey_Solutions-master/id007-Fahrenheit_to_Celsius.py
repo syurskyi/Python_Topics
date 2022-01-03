@@ -4,5 +4,5 @@ ___ convert(variables):
         num = float(variables[x+1])
         num = int(round(float((num) - 32) * (5.0/9.0)))
         answer.a..(s..(num))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 convert(raw_input().s..())

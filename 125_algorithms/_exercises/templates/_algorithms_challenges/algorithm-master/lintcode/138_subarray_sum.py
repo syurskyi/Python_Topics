@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: nums: A list of integers
     @return: A list of integers includes the index of the first number and the index of the last number
@@ -17,7 +17,7 @@ class Solution:
         __ n.. nums:
             r.. []
 
-        sum_to_index = {}
+        sum_to_index    # dict
         sum_to_index[0] = -1
 
         prefix_sum = 0

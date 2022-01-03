@@ -1,11 +1,11 @@
-class Solution(object):
+c_ Solution(object):
   ___ topKFrequent(self, nums, k):
     """
     :type nums: List[int]
     :type k: int
     :rtype: List[int]
     """
-    d = {}
+    d    # dict
     res    # list
     ans    # list
     buckets = [[] ___ _ __ r..(l..(nums) + 1)]

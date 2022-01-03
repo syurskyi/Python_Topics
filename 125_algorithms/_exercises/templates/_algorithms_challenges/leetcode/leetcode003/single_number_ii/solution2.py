@@ -8,7 +8,7 @@ without using extra memory?
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ singleNumber(self, nums):
         """
         :type nums: List[int]

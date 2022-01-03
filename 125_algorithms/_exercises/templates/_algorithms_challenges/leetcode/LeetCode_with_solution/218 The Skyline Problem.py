@@ -35,22 +35,22 @@ ____ collections _______ defaultdict, n..
 _______ heapq
 
 
-class Building(object):
-    ___ __init__(self, h):
-        self.h = h
-        self.deleted = False  # lazy deletion
+c_ Building(object):
+    ___ - , h):
+        h = h
+        deleted = F..  # lazy deletion
 
     ___ __cmp__(self, other):
         # Reverse order by height to get max-heap
         ... isi..(other, Building)
-        r.. other.h - self.h
+        r.. other.h - h
 
 # An event represents the buildings that start and end at a particular
 # x-coordinate.
 Event = n..('Event', 'starts ends')
 
 
-class Solution:
+c_ Solution:
     ___ getSkyline(self, buildings):
         """
         Sweep line
@@ -75,7 +75,7 @@ class Solution:
             ___ building __ event.starts:
                 heapq.heappush(heap_h, building)
             ___ building __ event.ends:
-                building.deleted = True
+                building.deleted = T..
 
             # Pop any finished buildings from the top of the heap.
             # To avoid using multiset - lazy deletion.

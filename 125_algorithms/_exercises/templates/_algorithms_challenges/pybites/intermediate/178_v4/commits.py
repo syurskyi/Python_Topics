@@ -1,10 +1,10 @@
 ____ collections _______ Counter
-_______ re
+_______ __
 _______ os
 ____ urllib.request _______ urlretrieve
 ____ dateutil.parser _______ parse
 
-commits = os.path.join(os.getenv("TMP", "/tmp"), 'commits')
+commits = os.path.j..(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits
@@ -17,11 +17,11 @@ YEAR_MONTH = '{y}-{m:02d}'
 ___ _parse_line(line: s..) -> d..:
     """returns a line with the key of date type and value of add/del"""
     d_str, all_changes = line.s..(' | ')
-    date = parse(re.sub(r'Date:[ ]+', '', d_str)).date()
+    date = parse(__.sub(r'Date:[ ]+', '', d_str)).date()
 
     # add insertions and deletions
-    insertions = re.findall(r'([0-9]+) insertions', all_changes)
-    deletions = re.findall(r'([0-9]+) deletions', all_changes)
+    insertions = __.findall(r'([0-9]+) insertions', all_changes)
+    deletions = __.findall(r'([0-9]+) deletions', all_changes)
     changes = int(insertions[0]) __ insertions ____ 0
     changes += int(deletions[0]) __ deletions ____ 0
     r.. {'date': date, 'changes': changes}

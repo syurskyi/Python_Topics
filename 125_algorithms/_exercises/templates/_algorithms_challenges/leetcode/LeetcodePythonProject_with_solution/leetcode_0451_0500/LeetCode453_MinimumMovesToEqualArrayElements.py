@@ -4,7 +4,7 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minMoves(self, nums):
         res = 0
         minVal = m..(nums)

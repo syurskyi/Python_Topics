@@ -9,7 +9,7 @@ be made by splicing together the nodes of the first two lists.
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
     ___ mergeTwoLists(self, l1, l2):
         """
         :type l1: ListNode

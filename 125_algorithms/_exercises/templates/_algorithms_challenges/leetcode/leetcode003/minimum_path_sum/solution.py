@@ -5,7 +5,7 @@ to bottom right which minimizes the sum of all numbers along its path.
 Note: You can only move either down or right at any point in time.
 """
 
-class Solution:
+c_ Solution:
     # @param grid, a list of lists of integers
     # @return an integer
     ___ minPathSum(self, grid):

@@ -1,2 +1,2 @@
-class InvalidOperationException(Exception):
+c_ InvalidOperationException(Exception):
     pass

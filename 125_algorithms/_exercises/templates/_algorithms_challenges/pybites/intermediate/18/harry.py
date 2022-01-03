@@ -1,12 +1,12 @@
 _______ os
 _______ urllib.request
-_______ re
+_______ __
 ____ collections _______ Counter
 
 # data provided
 tmp = os.getenv("TMP", "/tmp")
-stopwords_file = os.path.join(tmp, 'stopwords')
-harry_text = os.path.join(tmp, 'harry')
+stopwords_file = os.path.j..(tmp, 'stopwords')
+harry_text = os.path.j..(tmp, 'harry')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file
@@ -26,7 +26,7 @@ ___ get_harry_most_common_word():
     # Harry text
     with open(harry_text) as file:
         content_remove_apos = [line.r..("'", "").r..("’", "") ___ line __ file]
-        harry_content = [re.sub(r"\W+", " ", line).s...lower() ___ line __ content_remove_apos]
+        harry_content = [__.sub(r"\W+", " ", line).s...l.. ___ line __ content_remove_apos]
 
         final_words    # list
         ___ line __ harry_content:

@@ -3,7 +3,7 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findErrorNums(self, nums):
         """
         :type nums: List[int]
@@ -22,13 +22,13 @@ class Solution(object):
         res.a..(sumVal)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 2, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.findErrorNums(nums)
+            result = findErrorNums(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

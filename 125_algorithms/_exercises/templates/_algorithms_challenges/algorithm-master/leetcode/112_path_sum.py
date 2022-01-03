@@ -8,7 +8,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ hasPathSum(self, root, target):
         """
         :type root: TreeNode
@@ -16,15 +16,15 @@ class Solution:
         :rtype: bool
         """
         __ n.. root:
-            r.. False
+            r.. F..
 
         __ n.. root.left a.. n.. root.right:
             r.. root.val __ target
 
-        __ root.left a.. self.hasPathSum(root.left, target - root.val):
-            r.. True
+        __ root.left a.. hasPathSum(root.left, target - root.val):
+            r.. T..
 
-        __ root.right a.. self.hasPathSum(root.right, target - root.val):
-            r.. True
+        __ root.right a.. hasPathSum(root.right, target - root.val):
+            r.. T..
 
-        r.. False
+        r.. F..

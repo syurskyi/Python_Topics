@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ rob(self, nums):
     """
     :type nums: List[int]
@@ -10,7 +10,7 @@ class Solution(object):
       r.. max(nums[:])
     # If we rob the first house, the problem becomes how to rob houses except the last one.
     # If we rob the last house, the problem becomes how to rob houses ecept the first one.
-    r.. max(self.robHelper(nums[1:]), self.robHelper(nums[:l..(nums) - 1]))
+    r.. max(robHelper(nums[1:]), robHelper(nums[:l..(nums) - 1]))
 
   ___ robHelper(self, nums):
     """

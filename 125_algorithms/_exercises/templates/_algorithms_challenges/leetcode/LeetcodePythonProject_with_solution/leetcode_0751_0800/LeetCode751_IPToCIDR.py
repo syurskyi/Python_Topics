@@ -3,7 +3,7 @@ Created on Mar 26, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ ipToCIDR(self, ip, n):
         """
         :type ip: str
@@ -19,7 +19,7 @@ class Solution(object):
             step = x &(-x)
             w.... step > n:
                 step /= 2
-            res.a..(self.long2ip(x, step))
+            res.a..(long2ip(x, step))
             x += step
             n -= step
         r.. res
@@ -33,9 +33,9 @@ class Solution(object):
         w.... step > 0:
             n -= 1
             step //= 2
-        r.. '.'.join([s..(s) ___ s __ res])+'/'+s..(n)
+        r.. '.'.j..([s..(s) ___ s __ res])+'/'+s..(n)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 '255.0.0.7',
@@ -43,7 +43,7 @@ class Solution(object):
             ],
         ]
         ___ ip, n __ testCases:
-            result = self.ipToCIDR(ip, n)
+            result = ipToCIDR(ip, n)
             print('result: %s' % result)
             print('-='*30+'-')
 

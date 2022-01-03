@@ -12,13 +12,13 @@ Output: 1->4->3->2->5->NULL
 
 
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution:
+c_ Solution:
     ___ reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
         prev = N..
         cur = head

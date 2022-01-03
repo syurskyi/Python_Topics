@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ compareVersion(self, version1, version2):
     """
     :type version1: str
@@ -16,8 +16,8 @@ class Solution(object):
         r.. -1
       ____:
         i += 1
-    __ i < l..(v1) a.. int("".join(v1[i:])) != 0:
+    __ i < l..(v1) a.. int("".j..(v1[i:])) != 0:
       r.. 1
-    __ i < l..(v2) a.. int("".join(v2[i:])) != 0:
+    __ i < l..(v2) a.. int("".j..(v2[i:])) != 0:
       r.. -1
     r.. 0

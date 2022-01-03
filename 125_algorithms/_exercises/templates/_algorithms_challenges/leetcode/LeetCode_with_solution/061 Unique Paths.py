@@ -15,7 +15,7 @@ _______ math
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ uniquePaths(self, m, n):
         """
         Math solution:

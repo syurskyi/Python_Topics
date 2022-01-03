@@ -1,15 +1,15 @@
-class CustomSet(object):
-    ___ __init__(self, elements=[]):
-        self.elements = l..(elements)
+c_ CustomSet(object):
+    ___ - , elements=[]):
+        elements = l..(elements)
 
-    ___ isempty(self):
-        r.. n.. self.elements
+    ___ isempty
+        r.. n.. elements
 
-    ___ __iter__(self):
-        r.. iter(self.elements)
+    ___ __iter__
+        r.. iter(elements)
 
     ___ __contains__(self, element):
-        r.. element __ self.elements
+        r.. element __ elements
 
     ___ issubset(self, other):
         r.. a..(x __ other ___ x __ self)
@@ -18,11 +18,11 @@ class CustomSet(object):
         r.. a..(x n.. __ other ___ x __ self)
 
     ___ __eq__(self, other):
-        r.. self.issubset(other) a.. other.issubset(self)
+        r.. issubset(other) a.. other.issubset(self)
 
     ___ add(self, element):
         __ element n.. __ self:
-            self.elements.a..(element)
+            elements.a..(element)
 
     ___ intersection(self, other):
         result = CustomSet()
@@ -39,7 +39,7 @@ class CustomSet(object):
         r.. result
 
     ___ __add__(self, other):
-        result = CustomSet(self.elements)
+        result = CustomSet(elements)
         ___ x __ other:
             result.add(x)
         r.. result

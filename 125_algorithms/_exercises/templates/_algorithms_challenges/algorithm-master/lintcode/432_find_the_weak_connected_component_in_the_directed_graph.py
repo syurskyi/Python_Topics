@@ -7,9 +7,9 @@ class DirectedGraphNode:
 """
 
 
-class Solution:
-    ___ __init__(self):
-        self.nodes = {}
+c_ Solution:
+    ___ - ):
+        nodes    # dict
 
     """
     @param {DirectedGraphNode[]} nodes a array of directed graph node
@@ -19,29 +19,29 @@ class Solution:
         # Build UnionFind
         ___ node __ nodes:
             ___ nei __ node.neighbors:
-                self.connect(nei.label, node.label)
+                connect(nei.label, node.label)
 
         # Categorify result
-        result = {}
+        result    # dict
         root_label = ''
         ___ node __ nodes:
-            root_label = self.find(node.label)
+            root_label = find(node.label)
             __ root_label n.. __ result:
                 result[root_label]    # list
             result[root_label].a..(node.label)
         r.. result.values()
 
     ___ connect(self, a, b):
-        root_a = self.find(a)
-        root_b = self.find(b)
+        root_a = find(a)
+        root_b = find(b)
         __ root_a __ n.. root_b:
-            self.nodes[root_a] = root_b
+            nodes[root_a] = root_b
 
     ___ find(self, a):
-        __ a n.. __ self.nodes:
-            self.nodes[a] = a
+        __ a n.. __ nodes:
+            nodes[a] = a
             r.. a
-        ____ self.nodes[a] __ a:
+        ____ nodes[a] __ a:
             r.. a
-        self.nodes[a] = self.find(self.nodes[a])
-        r.. self.nodes[a]
+        nodes[a] = find(nodes[a])
+        r.. nodes[a]

@@ -5,13 +5,13 @@ Created on Feb 26, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
@@ -22,9 +22,9 @@ class Solution(object):
         __ n.. root o. n.. p o. n.. q:
             r.. N..
         ____ p.val < root.val a.. q.val < root.val:
-            r.. self.lowestCommonAncestor(root.left, p, q)
+            r.. lowestCommonAncestor(root.left, p, q)
         ____ p.val > root.val a.. q.val > root.val:
-            r.. self.lowestCommonAncestor(root.right, p, q)
+            r.. lowestCommonAncestor(root.right, p, q)
         ____:
             r.. root
     

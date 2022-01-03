@@ -4,12 +4,12 @@ Created on Nov 6, 2017
 @author: MT
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, val, nextNode_ N..
-        self.val = val
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , val, nextNode_ N..
+        val = val
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ mergeKLists(self, lists):
         """
         :type lists: List[ListNode]
@@ -29,7 +29,7 @@ class Solution(object):
             prev = prev.next
         r.. dummy.next
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ListNode(-1, ListNode(-1, ListNode(-1))),
@@ -37,7 +37,7 @@ class Solution(object):
             ],
         ]
         ___ lists __ testCases:
-            node = self.mergeKLists(lists)
+            node = mergeKLists(lists)
             w.... node:
                 print('%s -> ' % node.val, end='')
                 node = node.next

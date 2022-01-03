@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minAbbreviation(self, target, dictionary):
     """
     :type target: str
@@ -20,9 +20,9 @@ class Solution(object):
           i += jump
         ____:
           __ c != dest[i]:
-            r.. False
+            r.. F..
           i += 1
-      r.. True
+      r.. T..
 
     __ n.. dictionary:
       r.. s..(l..(target))
@@ -33,11 +33,11 @@ class Solution(object):
     dictionary = filter(l.... s: l..(s) __ wordLen, dictionary)
 
     ___ w __ res:
-      allMiss = True
+      allMiss = T..
       ___ d __ dictionary:
         __ match(w, d):
-          allMiss = False
+          allMiss = F..
           break
       __ allMiss:
-        r.. "".join(w)
+        r.. "".j..(w)
     r.. N..

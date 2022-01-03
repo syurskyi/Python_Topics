@@ -3,7 +3,7 @@ Created on Oct 9, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ strangePrinter(self, s):
         """
         :type s: str
@@ -24,7 +24,7 @@ class Solution(object):
                     dp[j][j+i] = m..(dp[j][j+i], tmp)
         r.. dp[0][n-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aaabbb',
             'aba',
@@ -32,7 +32,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.strangePrinter(s)
+            result = strangePrinter(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

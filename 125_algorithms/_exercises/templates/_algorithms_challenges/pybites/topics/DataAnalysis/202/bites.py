@@ -18,7 +18,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
        most complex Bites.
     """
     with open(stats, encoding="utf-8-sig") as f:
-        bite_diff = {}
+        bite_diff    # dict
         lines = f.readlines()
         ___ line __ lines:
             __ line[:5] __ 'Bite ':

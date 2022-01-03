@@ -16,7 +16,7 @@ considered as a special case of increasing sequence.
 """
 
 
-class Solution:
+c_ Solution:
     ___ findSubsequences(self, nums):
         """
         2nd approach

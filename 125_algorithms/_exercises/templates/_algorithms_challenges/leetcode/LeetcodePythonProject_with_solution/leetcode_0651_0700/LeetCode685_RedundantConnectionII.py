@@ -3,7 +3,7 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findRedundantDirectedConnection(self, edges):
         """
         :type edges: List[List[int]]
@@ -27,7 +27,7 @@ class Solution(object):
                 continue
             child = edges[i][1]
             par = edges[i][0]
-            __ self.getRoot(parent, par) __ child:
+            __ getRoot(parent, par) __ child:
                 __ can1[0] __ -1:
                     r.. edges[i]
                 r.. can1
@@ -40,7 +40,7 @@ class Solution(object):
             i = parent[i]
         r.. i
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             [[1, 2], [1, 3], [2, 3]],
 #             [[1, 2], [2, 3], [3, 4], [4, 1], [1, 5]],
@@ -48,7 +48,7 @@ class Solution(object):
         ]
         ___ edges __ testCases:
             print('edges: %s' % edges)
-            result = self.findRedundantDirectedConnection(edges)
+            result = findRedundantDirectedConnection(edges)
             print('result: %s' % result)
             print('-='*30+'-')
 

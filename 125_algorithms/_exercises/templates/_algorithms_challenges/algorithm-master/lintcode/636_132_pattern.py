@@ -1,16 +1,16 @@
-class Solution:
+c_ Solution:
     """
     @param: A: a list of n integers
     @return: true if there is a 132 pattern or false
     """
     ___ find132pattern(self, A):
         __ n.. A:
-            r.. False
+            r.. F..
 
         stack = [float('-inf')]
         ___ i __ r..(l..(A) - 1, -1, -1):
             __ A[i] < stack[-1]:
-                r.. True
+                r.. T..
 
             v = N..
             w.... stack a.. A[i] > stack[-1]:
@@ -21,4 +21,4 @@ class Solution:
             __ v __ n.. N..
                 stack.a..(v)
 
-        r.. False
+        r.. F..

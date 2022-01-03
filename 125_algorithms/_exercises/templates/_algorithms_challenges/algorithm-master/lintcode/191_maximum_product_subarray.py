@@ -6,7 +6,7 @@ so we need record the minimum and the maximum number for each child in nums
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: An array of integers
     @return: An integer

@@ -1,7 +1,7 @@
 """
 DP: Memory Searching
 """
-class Solution:
+c_ Solution:
     """
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
@@ -10,7 +10,7 @@ class Solution:
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
-        r.. self.memo_search(0, 0, triangle, {})
+        r.. memo_search(0, 0, triangle, {})
 
     ___ memo_search(self, depth, start, triangle, memo):
         __ depth __ l..(triangle) - 1:
@@ -22,8 +22,8 @@ class Solution:
             r.. memo[key]
 
         memo[key] = m..(
-            self.memo_search(depth + 1, start, triangle, memo),
-            self.memo_search(depth + 1, start + 1, triangle, memo)
+            memo_search(depth + 1, start, triangle, memo),
+            memo_search(depth + 1, start + 1, triangle, memo)
         )
 
         memo[key] += triangle[depth][start]
@@ -34,7 +34,7 @@ class Solution:
 """
 DP: Top-down Recuring + Rolling Array
 """
-class Solution:
+c_ Solution:
     """
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
@@ -76,7 +76,7 @@ class Solution:
 """
 DP: Bottom-up Recuring + Rolling Array
 """
-class Solution:
+c_ Solution:
     """
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum

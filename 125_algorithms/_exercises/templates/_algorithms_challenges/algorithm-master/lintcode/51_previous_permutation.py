@@ -12,7 +12,7 @@ REF: [Next Permutation](https://leetcode.com/articles/next-permutation/)
 """
 
 
-class Solution:
+c_ Solution:
     ___ previousPermuation(self, nums):
         """
         :type nums: list[int]

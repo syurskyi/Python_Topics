@@ -18,32 +18,32 @@ BITES = {6: 'PyBites Die Hard',
 BITES_DONE = {6, 10, 16, 18, 21}
 
 
-class NoBitesAvailable(Exception):
+c_ NoBitesAvailable(Exception):
     """There are no more Bites available to pick from"""
 
 
-class Promo:
+c_ Promo:
 
-    ___ __init__(self):
+    ___ - ):
         # updated Bite to make local copies (avoid globals!)
-        self.all_bites = BITES.copy()
-        self.bites_done = BITES_DONE.copy()
+        all_bites = BITES.copy()
+        bites_done = BITES_DONE.copy()
 
-    ___ _pick_random_bite(self):
+    ___ _pick_random_bite
         """Pick a random Bite that is not done yet, if all
            Bites are done, raise a NoBitesAvailable exception"""
-        remaining_bites = l..(self.all_bites.keys() - self.bites_done)
+        remaining_bites = l..(all_bites.k.. - bites_done)
         __ remaining_bites:
             r.. random.choice(remaining_bites)
         ____:
             raise NoBitesAvailable
 
         
-    ___ new_bite(self):
+    ___ new_bite
         """Get  a random Bite using _pick_random_bite,
            add it to self.bites_done, then return it"""
-        rand_bites = self._pick_random_bite()
-        self.bites_done.add(rand_bites)
+        rand_bites = _pick_random_bite()
+        bites_done.add(rand_bites)
         r.. rand_bites
 
 promo = Promo()

@@ -8,7 +8,7 @@ ____ bs4 _______ BeautifulSoup
 # prep data
 tmp = os.getenv("TMP", "/tmp")
 page = 'us_holidays.html'
-holidays_page = os.path.join(tmp, page)
+holidays_page = os.path.j..(tmp, page)
 urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{page}',
     holidays_page
@@ -32,11 +32,11 @@ ___ get_us_bank_holidays(content=content):
     ___ i,row __ e..(table.find_all('tr')):
         __ i __ 0:
             continue
-        date = row.select_one('td:nth-child(2)').getText(strip=True)
+        date = row.select_one('td:nth-child(2)').getText(strip=T..)
         hyphen = date.index('-')
         date = date[hyphen+1:hyphen+ 3]
 
-        holiday = row.select_one('td:nth-child(4)').getText(strip=True)
+        holiday = row.select_one('td:nth-child(4)').getText(strip=T..)
         holidays[date].a..(holiday)
     
 

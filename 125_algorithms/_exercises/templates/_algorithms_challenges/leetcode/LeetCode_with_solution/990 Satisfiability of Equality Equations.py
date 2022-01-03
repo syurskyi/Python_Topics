@@ -46,21 +46,21 @@ equations[i][2] is '='
 ____ typing _______ List
 
 
-class DisjointSet:
-    ___ __init__(self):
-        self.pi = {}
+c_ DisjointSet:
+    ___ - ):
+        pi    # dict
 
     ___ union(self, x, y):
-        self.pi[self.find(x)] = self.find(y)
+        pi[find(x)] = find(y)
 
     ___ find(self, x):
-        __ x n.. __ self.pi:
-            self.pi[x] = x
-        ____ self.pi[x] != x:
-            self.pi[x] = self.find(self.pi[x])
-        r.. self.pi[x]
+        __ x n.. __ pi:
+            pi[x] = x
+        ____ pi[x] != x:
+            pi[x] = find(pi[x])
+        r.. pi[x]
 
-class Solution:
+c_ Solution:
     ___ equationsPossible(self, equations: List[s..]) -> bool:
         """
         union find
@@ -78,6 +78,6 @@ class Solution:
 
         ___ a, b __ neqs:
             __ ds.find(a) __ ds.find(b):
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

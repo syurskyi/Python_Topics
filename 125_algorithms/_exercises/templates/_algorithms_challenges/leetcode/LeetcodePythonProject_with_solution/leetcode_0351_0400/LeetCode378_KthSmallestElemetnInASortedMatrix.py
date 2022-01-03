@@ -4,12 +4,12 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ kthSmallest(self, matrix, k):
         lower, upper = matrix[0][0], matrix[-1][-1]
         w.... lower < upper:
             mid = (lower+upper)//2
-            __ self.c.. matrix, mid) < k:
+            __ c.. matrix, mid) < k:
                 lower = mid+1
             ____:
                 upper = mid
@@ -27,7 +27,7 @@ class Solution(object):
                 i -= 1
         r.. count
     
-    ___ test(self):
+    ___ test
         matrix = [
             [ 1,  5,  9],
             [10, 11, 13],
@@ -36,7 +36,7 @@ class Solution(object):
         nums = [1, 5, 9, 10, 13]
         ___ num __ nums:
             print('num: %s' % num)
-            print('count: %s' % self.c.. matrix, num))
+            print('count: %s' % c.. matrix, num))
             print('-='*20+'-')
 
 __ __name__ __ '__main__':

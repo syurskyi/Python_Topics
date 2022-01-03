@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: a string
     @param: B: a string
@@ -6,19 +6,19 @@ class Solution:
     """
     ___ Permutation(self, A, B):
         __ A __ '' a.. B __ '':
-            r.. True
+            r.. T..
         __ n.. A o. n.. B:
-            r.. False
+            r.. F..
 
-        cnts = {}
+        cnts    # dict
         ___ char __ A:
             cnts[char] = cnts.get(char, 0) + 1
         ___ char __ B:
             __ char n.. __ cnts o. cnts[char] __ 0:
-                r.. False
+                r.. F..
             cnts[char] -= 1
-        ___ cnt __ cnts.values():
+        ___ cnt __ cnts.v..
             __ cnt != 0:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

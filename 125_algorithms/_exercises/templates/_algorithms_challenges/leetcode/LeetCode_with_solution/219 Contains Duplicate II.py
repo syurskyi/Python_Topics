@@ -7,7 +7,7 @@ _______ heapq
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ containsNearbyDuplicate(self, nums, k):
         """
         hash with heap
@@ -18,13 +18,13 @@ class Solution:
         ___ i, v __ e..(nums):
             heapq.heappush(d[v], i)
 
-        ___ v __ d.values():
+        ___ v __ d.v..
             __ l..(v) > 1:
                 pre = heapq.heappop(v)
                 w.... v:
                     cur = heapq.heappop(v)
                     __ cur-pre <= k:
-                        r.. True
+                        r.. T..
                     pre = cur
 
-        r.. False
+        r.. F..

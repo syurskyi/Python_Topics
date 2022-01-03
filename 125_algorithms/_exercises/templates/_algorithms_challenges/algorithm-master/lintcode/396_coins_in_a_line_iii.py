@@ -25,19 +25,19 @@ chosen the maximum
 """
 
 
-class Solution:
+c_ Solution:
     ___ firstWillWin(self, values):
         """
         :type values: list[int]
         :rtype: bool
         """
         __ n.. values:
-            r.. False
+            r.. F..
 
         n = l..(values)
 
         __ n < 2:
-            r.. True
+            r.. T..
 
         dp = [[0] * n ___ _ __ r..(n)]
 

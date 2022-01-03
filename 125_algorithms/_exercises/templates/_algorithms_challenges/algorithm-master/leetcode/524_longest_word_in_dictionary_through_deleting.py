@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     1. to check the word in list is subsequence of given s
     2. ignoring if the length less than current ans
@@ -14,7 +14,7 @@ class Solution:
 
         ___ w __ words:
             __ any((
-                n.. self.is_subseq(s, w),
+                n.. is_subseq(s, w),
                 l..(w) < l..(ans),
                 l..(w) __ l..(ans) a.. w >= ans,  # means w has larger lexicographical order
             )):
@@ -39,7 +39,7 @@ class Solution:
         r.. j __ n
 
 
-class Solution:
+c_ Solution:
     """
     Brute Force: TLE
     """
@@ -50,7 +50,7 @@ class Solution:
         :rtype: str
         """
         cands    # list
-        self.find_cands(s, 0, cands, [])
+        find_cands(s, 0, cands, [])
 
         ans = ''
         target = set(words)
@@ -69,13 +69,13 @@ class Solution:
 
     ___ find_cands(self, s, i, cands, path):
         __ i __ l..(s):
-            cands.a..(''.join(path))
+            cands.a..(''.j..(path))
             r..
 
         # keep s[i]
         path.a..(s[i])
-        self.find_cands(s, i + 1, cands, path)
+        find_cands(s, i + 1, cands, path)
         path.pop()
 
         # ignore s[i]
-        self.find_cands(s, i + 1, cands, path)
+        find_cands(s, i + 1, cands, path)

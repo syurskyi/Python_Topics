@@ -4,7 +4,7 @@ ____ collections _______ defaultdict
 
 
 
-class MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple):
     title: s..
     price: int
     date: date

@@ -5,7 +5,7 @@ Smaller than the target.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ threeSumSmaller(self, nums, target):
         """
 

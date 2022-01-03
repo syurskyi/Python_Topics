@@ -21,22 +21,22 @@ You may assume that all words are consist of lowercase letters a-z.
 __author__ = 'Daniel'
 
 
-class TrieNode:
-    ___ __init__(self):
+c_ TrieNode:
+    ___ - ):
         """
         Initialize your data structure here.
         """
         # node value depends on the parent's hash mapping
-        self.ended = False
-        self.children = {}
+        ended = F..
+        children    # dict
 
 
-class WordDictionary:
-    ___ __init__(self):
+c_ WordDictionary:
+    ___ - ):
         """
         initialize your data structure here.
         """
-        self.root = TrieNode()
+        root = TrieNode()
 
     ___ addWord(self, word):
         """
@@ -44,22 +44,22 @@ class WordDictionary:
         :type word: str
         :rtype: None
         """
-        cur = self.root
+        cur = root
         ___ w __ word:
             __ w n.. __ cur.children:
                 cur.children[w] = TrieNode()
             cur = cur.children[w]
 
-        cur.ended = True
+        cur.ended = T..
 
-    ___ search(self, word):
+    ___ s..(self, word):
         """
         Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one
         letter.
         :type word: str
         :rtype: bool
         """
-        r.. self.__search(word, self.root)
+        r.. __search(word, root)
 
     ___ __search(self, word, cur):
         __ n.. word:
@@ -68,17 +68,17 @@ class WordDictionary:
         w = word[0]
         __ w != ".":
             __ w __ cur.children:
-                r.. self.__search(word[1:], cur.children[w])
+                r.. __search(word[1:], cur.children[w])
             ____:
-                r.. False
+                r.. F..
         ____:
-            ___ child __ cur.children.values():
-                __ self.__search(word[1:], child):
-                    r.. True
+            ___ child __ cur.children.v..
+                __ __search(word[1:], child):
+                    r.. T..
 
-        r.. False
+        r.. F..
 
 __ __name__ __ "__main__":
     dic = WordDictionary()
     dic.addWord("a")
-    ... dic.search(".") __ True
+    ... dic.s..(".") __ T..

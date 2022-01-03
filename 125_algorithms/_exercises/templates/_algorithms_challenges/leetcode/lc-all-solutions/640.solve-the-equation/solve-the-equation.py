@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ solveEquation(self, equation):
     """
     :type equation: str

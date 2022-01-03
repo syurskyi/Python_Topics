@@ -9,7 +9,7 @@ dict = ["leet", "code"].
 Return true because "leetcode" can be segmented as "leet code".
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ wordBreak(self, s, wordDict):
         """
         :type s: str
@@ -18,25 +18,25 @@ class Solution(object):
         """
         n = l..(s)
         t = [N.. ___ i __ r..(n)]
-        r.. self.word_break_aux(s, wordDict, n - 1, t)
+        r.. word_break_aux(s, wordDict, n - 1, t)
 
     ___ word_break_aux(self, s, wordDict, i, t):
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
         __ s[:i + 1] __ wordDict:
-            r.. True
+            r.. T..
         ____ t[i] __ n.. N..
             r.. t[i]
         ____:
             ___ j __ r..(i):
-                __ (self.word_break_aux(s, wordDict, j, t) __ True
+                __ (word_break_aux(s, wordDict, j, t) __ T..
                         a.. s[j + 1:i + 1] __ wordDict):
-                    t[i] = True
-                    r.. True
+                    t[i] = T..
+                    r.. T..
             ____:
-                t[i] = False
-                r.. False
+                t[i] = F..
+                r.. F..
 
 
 s = Solution()

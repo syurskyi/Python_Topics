@@ -21,7 +21,7 @@ No such pair of words.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxProduct(self, words):
         """
         Brute force: O(n*n*k)
@@ -30,7 +30,7 @@ class Solution(object):
         :rtype: int
         """
         l = map(l.., words)
-        codes = map(self.encode, words)
+        codes = map(encode, words)
         maxa = 0
         ___ i __ xrange(l..(codes)):
             ___ j __ xrange(i+1, l..(codes)):

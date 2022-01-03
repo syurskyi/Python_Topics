@@ -3,7 +3,7 @@ Created on Oct 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ new21Game(self, N, K, W):
         """
         :type N: int
@@ -21,14 +21,14 @@ class Solution(object):
             __ i - w >= 0: wSum -= dp[i-w]
         r.. s..(dp[k:])
     
-    ___ test(self):
+    ___ test
         testCases = [
             [10, 1, 10],
             [6, 1, 10],
             [21, 17, 10],
         ]
         ___ n, k, w __ testCases:
-            result = self.new21Game(n, k, w)
+            result = new21Game(n, k, w)
             print('result: %s' % result)
             print('-='*30+'-')
 

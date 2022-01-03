@@ -11,7 +11,7 @@ Follow up:
 Could you do it without any loop/recursion in O(1) runtime?
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ addDigits(self, num):
         """
         :type num: int

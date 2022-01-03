@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ hasPath(self, maze, start, destination):
         """
         :type maze: List[List[int]]
@@ -20,18 +20,18 @@ class Solution:
         False
         """
         __ n.. maze o. n.. maze[0] o. n.. start o. n.. destination:
-            r.. False
+            r.. F..
 
         x, y = start
         tx, ty = destination
         visited = set()
-        r.. self.dfs(maze, x, y, tx, ty, visited)
+        r.. dfs(maze, x, y, tx, ty, visited)
 
     ___ dfs(self, maze, x, y, tx, ty, visited):
         __ x __ tx a.. y __ ty:
-            r.. True
+            r.. T..
         __ (x, y) __ visited:
-            r.. False
+            r.. F..
 
         visited.add((x, y))
 
@@ -49,7 +49,7 @@ class Solution:
             _x -= dx
             _y -= dy
 
-            __ self.dfs(maze, _x, _y, tx, ty, visited):
-                r.. True
+            __ dfs(maze, _x, _y, tx, ty, visited):
+                r.. T..
 
-        r.. False
+        r.. F..

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param start, a string
     # @param end, a string
     # @param dict, a set of string
@@ -17,7 +17,7 @@ class Solution:
             cur = queue.pop(0)
             d = distance.pop(0)
             ___ word __ set(d..):  # Iterate over the copy of dict
-                __ self.is_adjacent(cur, word):
+                __ is_adjacent(cur, word):
                     d...remove(word)  # Mark as visited
                     queue.a..(word)
                     __ word __ end:

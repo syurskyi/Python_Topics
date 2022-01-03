@@ -6,26 +6,26 @@ Count the number of prime numbers less than a non-negative number, n.
 
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ countPrimes(self, n):
         """
         :type n: int
         :rtype: int
         """
-        t = [True ___ i __ r..(n)]
+        t = [T.. ___ i __ r..(n)]
         i = 2
         w.... i * i < n:
-            __ t[i] __ False:
+            __ t[i] __ F..:
                 i += 1
                 continue
             j = i * i
             w.... j < n:
-                t[j] = False
+                t[j] = F..
                 j += i
             i += 1
         res = 0
         ___ i __ r..(2, n):
-            __ t[i] __ True:
+            __ t[i] __ T..:
                 res += 1
         r.. res
 

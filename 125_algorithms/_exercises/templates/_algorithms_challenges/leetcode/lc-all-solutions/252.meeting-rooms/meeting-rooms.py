@@ -4,7 +4,7 @@
 #         self.start = s
 #         self.end = e
 
-class Solution(object):
+c_ Solution(object):
   ___ canAttendMeetings(self, intervals):
     """
     :type intervals: List[Interval]
@@ -13,5 +13,5 @@ class Solution(object):
     intervals = s..(intervals, key=l.... x: x.start)
     ___ i __ r..(1, l..(intervals)):
       __ intervals[i].start < intervals[i - 1].end:
-        r.. False
-    r.. True
+        r.. F..
+    r.. T..

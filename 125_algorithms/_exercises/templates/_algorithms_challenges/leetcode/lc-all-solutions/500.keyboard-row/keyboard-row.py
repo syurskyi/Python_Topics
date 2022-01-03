@@ -1,11 +1,11 @@
-class Solution(object):
+c_ Solution(object):
   ___ findWords(self, words):
     """
     :type words: List[str]
     :rtype: List[str]
     """
     ans    # list
-    d = {}
+    d    # dict
     row1 = "qwertyuiop"
     row2 = "asdfghjkl"
     row3 = "zxcvbnm"
@@ -17,13 +17,13 @@ class Solution(object):
       d[r] = 3.0
 
     ___ word __ words:
-      same = True
-      pre = d[word[0].lower()]
+      same = T..
+      pre = d[word[0].l..]
       ___ c __ word:
-        __ pre != d[c.lower()]:
-          same = False
+        __ pre != d[c.l..]:
+          same = F..
           break
-        pre = d[c.lower()]
+        pre = d[c.l..]
       __ same:
         ans.a..(word)
     r.. ans

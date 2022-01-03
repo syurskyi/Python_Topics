@@ -18,14 +18,14 @@ since a node can be a descendant of itself according to the LCA definition.
 __author__ = 'Daniel'
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ lowestCommonAncestor(self, root, p, q):
         """
 

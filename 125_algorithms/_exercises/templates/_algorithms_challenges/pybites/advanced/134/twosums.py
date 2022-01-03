@@ -35,7 +35,7 @@ ___ two_sums(numbers, target):
     
 
 
-    mapping = {}
+    mapping    # dict
 
     
     result = N..

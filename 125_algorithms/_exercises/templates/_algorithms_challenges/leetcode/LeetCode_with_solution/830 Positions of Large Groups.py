@@ -34,7 +34,7 @@ Note:  1 <= S.length <= 1000
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ largeGroupPositions(self, S: s..) -> List[List[int]]:
         i = 0
         j = 0

@@ -12,7 +12,7 @@ the nodes have the same value.
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ isSameTree(self, p, q):
         """
         :type p: TreeNode
@@ -20,10 +20,10 @@ class Solution(object):
         :rtype: bool
         """
         __ p __ N.. a.. q __ N..
-            r.. True
+            r.. T..
         ____ p __ n.. N.. a.. q __ n.. N..
             __ (p.val __ q.val a..
-                    self.isSameTree(p.left, q.left) a..
-                    self.isSameTree(p.right, q.right)):
-                r.. True
-        r.. False
+                    isSameTree(p.left, q.left) a..
+                    isSameTree(p.right, q.right)):
+                r.. T..
+        r.. F..

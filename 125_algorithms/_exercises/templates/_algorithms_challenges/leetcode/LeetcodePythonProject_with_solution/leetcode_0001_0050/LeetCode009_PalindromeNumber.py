@@ -3,13 +3,13 @@ Created on Jan 7, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isPalindrome(self, x):
         """
         :type x: int
         :rtype: bool
         """
-        __ x < 0: r.. False
+        __ x < 0: r.. F..
         div = 1
         w.... x//div >= 10:
             div *= 10
@@ -17,13 +17,13 @@ class Solution(object):
             first = x//div
             last  = x%10
             __ first != last:
-                r.. False
+                r.. F..
             x -= first*div
             x = (x-last)//10
             div //= 100
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             123,
             121,
@@ -36,7 +36,7 @@ class Solution(object):
         ]
         ___ x __ testCases:
             print('x: %s' % (x))
-            result = self.isPalindrome(x)
+            result = isPalindrome(x)
             print('result: %s' % (result))
             print('-='*30+'-')
 

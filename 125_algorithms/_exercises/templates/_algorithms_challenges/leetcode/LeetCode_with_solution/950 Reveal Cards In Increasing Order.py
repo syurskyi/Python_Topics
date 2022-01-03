@@ -43,7 +43,7 @@ ____ typing _______ List
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
         """
         Sorted is [2, 3, 5, 7, 11, 13, 17]

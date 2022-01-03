@@ -3,7 +3,7 @@ Created on Oct 13, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ nthMagicalNumber(self, N, A, B):
         """
         :type N: int
@@ -23,12 +23,12 @@ class Solution(object):
                 r = m
         r.. l % (10**9+7)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [5, 2, 4],
         ]
         ___ n, a, b __ testCases:
-            res = self.nthMagicalNumber(n, a, b)
+            res = nthMagicalNumber(n, a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

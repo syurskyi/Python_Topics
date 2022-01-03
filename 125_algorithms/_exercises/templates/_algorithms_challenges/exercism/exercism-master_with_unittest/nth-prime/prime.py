@@ -1,7 +1,7 @@
 _______ math
 
 
-class prime:
+c_ prime:
 
     @classmethod
     ___ nth_prime(cls, n):
@@ -17,8 +17,8 @@ class prime:
     ___ is_prime(x):
         ___ i __ r..(2, int(math.sqrt(x)) + 1):
             __ x % i __ 0:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     @staticmethod
     ___ possible_primes():

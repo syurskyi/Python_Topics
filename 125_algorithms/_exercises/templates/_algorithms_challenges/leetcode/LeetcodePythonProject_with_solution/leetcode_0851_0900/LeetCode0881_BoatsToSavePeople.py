@@ -3,7 +3,7 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numRescueBoats(self, people, limit):
         """
         :type people: List[int]
@@ -21,7 +21,7 @@ class Solution(object):
             r -= 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [3,2,3,2,2],
@@ -38,7 +38,7 @@ class Solution(object):
             ],
         ]
         ___ people, limit __ testCases:
-            res = self.numRescueBoats(people, limit)
+            res = numRescueBoats(people, limit)
             print('res: %s' % res)
             print('-='*30+'-')
 

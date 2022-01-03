@@ -22,7 +22,7 @@ ___ get_single_comedy(movies: l..) -> s..:
 ___ get_movie_most_nominations(movies: l..) -> s..:
     """Return the movie that had the most nominations"""
     # "Awards":"Nominated for 1 Oscar. Another 10 wins & 32 nominations."
-    nomination_count = {}
+    nomination_count    # dict
     ___ movie __ movies:
         nomination_count[movie['Title']] = int(movie['Awards'].s.. [-2])
     r.. max(nomination_count, key=nomination_count.get)
@@ -31,7 +31,7 @@ ___ get_movie_most_nominations(movies: l..) -> s..:
 ___ get_movie_longest_runtime(movies: l..) -> s..:
     """Return the movie that has the longest runtime"""
     #"Runtime":"107 min"
-    runtime = {}
+    runtime    # dict
     ___ movie __ movies:
         runtime[movie['Title']] = int(movie['Runtime'].s.. [0])
     r.. max(runtime, key=runtime.get)
@@ -49,7 +49,7 @@ ___ get_movie_longest_runtime(movies: l..) -> s..:
 print(l..(get_movie_data(['1.json', '2.json', '3.json', '4.json', '5.json'])))
 
 ___ m __ get_movie_data(['1.json', '2.json', '3.json', '4.json', '5.json']):
-    print(type(m))
+    print(t..(m))
 
 print(get_single_comedy(get_movie_data(['1.json', '2.json', '3.json', '4.json', '5.json'])))
 

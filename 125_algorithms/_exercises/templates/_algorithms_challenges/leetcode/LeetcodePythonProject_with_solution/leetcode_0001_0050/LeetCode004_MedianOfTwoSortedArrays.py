@@ -3,7 +3,7 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findMedianSortedArrays(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -38,7 +38,7 @@ class Solution(object):
                     min_of_right = m..(nums1[i], nums2[j])
                 r.. (max_of_left + min_of_right)/2.0
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 3],
@@ -52,7 +52,7 @@ class Solution(object):
         ___ nums1, nums2 __ testCases:
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
-            result = self.findMedianSortedArrays(nums1, nums2)
+            result = findMedianSortedArrays(nums1, nums2)
             print('result: %s' % result)
             print('-='*30+'-')
 

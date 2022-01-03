@@ -16,7 +16,7 @@ A solution set is:
 [1, 1, 6]
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ combinationSum2(self, candidates, target):
         """
         dfs
@@ -26,7 +26,7 @@ class Solution:
         """
         result    # list
         candidates.s..()
-        self.get_combination_sum(candidates, [], target, result)
+        get_combination_sum(candidates, [], target, result)
         r.. result
 
     ___ get_combination_sum(self, candidates, cur, target, result):
@@ -50,7 +50,7 @@ class Solution:
         # consider [1, 1, 1, 6], target 8
         ind = 0
         w.... ind<l..(candidates):
-            self.get_combination_sum(candidates[ind+1:], cur+[candidates[ind]], target, result)
+            get_combination_sum(candidates[ind+1:], cur+[candidates[ind]], target, result)
             # post-order jump
             w.... ind+1<l..(candidates) a.. candidates[ind]__candidates[ind+1]: ind+= 1  # jump to avoid duplicate
             ind += 1

@@ -1,61 +1,61 @@
-class Node(object):
-    ___ __init__(self, value, next=N.., prev_ N..
-        self.value = value
-        self.next = next
-        self.prev = prev
+c_ Node(object):
+    ___ - , value, next=N.., prev_ N..
+        value = value
+        next = next
+        prev = prev
 
 
-class LinkedList(object):
-    ___ __init__(self):
-        self.head = N..
-        self.tail = N..
-        self.length = 0
+c_ LinkedList(object):
+    ___ - ):
+        head = N..
+        tail = N..
+        length = 0
 
     ___ push(self, value):
         new_node = Node(value)
-        __ n.. self.head:
-            self.head = self.tail = new_node
+        __ n.. head:
+            head = tail = new_node
         ____:
-            new_node.prev = self.tail
-            self.tail.next = new_node
-            self.tail = new_node
-        self.length += 1
+            new_node.prev = tail
+            tail.next = new_node
+            tail = new_node
+        length += 1
 
-    ___ pop(self):
-        node = self.tail
+    ___ pop
+        node = tail
         __ node __ N.. o. node.prev __ N..
-            self.head = self.tail = N..
+            head = tail = N..
         ____:
-            self.tail = self.tail.prev
-            self.tail.next = N..
-        self.length -= 1
+            tail = tail.prev
+            tail.next = N..
+        length -= 1
         r.. node.value
 
-    ___ shift(self):
-        node = self.head
+    ___ shift
+        node = head
         __ node __ N.. o. node.next __ N..
-            self.head = self.tail = N..
+            head = tail = N..
         ____:
-            self.head = self.head.next
-            self.head.prev = N..
-        self.length -= 1
+            head = head.next
+            head.prev = N..
+        length -= 1
         r.. node.value
 
     ___ unshift(self, value):
         new_node = Node(value)
-        __ n.. self.head:
-            self.head = self.tail = new_node
+        __ n.. head:
+            head = tail = new_node
         ____:
-            new_node.next = self.head
-            self.head.prev = new_node
-            self.head = new_node
-        self.length += 1
+            new_node.next = head
+            head.prev = new_node
+            head = new_node
+        length += 1
 
-    ___ __len__(self):
-        r.. self.length
+    ___ __len__
+        r.. length
 
-    ___ __iter__(self):
-        current_node = self.head
+    ___ __iter__
+        current_node = head
         w.... (current_node):
             y.. current_node.value
             current_node = current_node.next

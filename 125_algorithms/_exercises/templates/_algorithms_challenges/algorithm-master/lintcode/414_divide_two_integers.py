@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ divide(self, a, b):
         """
         :type a: int

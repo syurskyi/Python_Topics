@@ -12,5 +12,5 @@ ___ findDivisors(pairs):
                 a,b = raw_input().s..
                 a,b = int(a), int(b)
                 answer.a..('('+s..(gcd(a,b))+' '+s..(lcm(a,b))+')')
-        print(' '.join(answer))
+        print(' '.j..(answer))
 findDivisors(input())

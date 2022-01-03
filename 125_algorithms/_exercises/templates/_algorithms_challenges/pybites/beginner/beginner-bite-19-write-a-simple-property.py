@@ -29,14 +29,14 @@ def test_promo_not_expired():
 
 ____ d__ _______ d__
 
-class Promo:
-    ___ __init__(self, name, expires):
-        self.name = name
-        self.expires = expires
+c_ Promo:
+    ___ - , name, expires):
+        name = name
+        expires = expires
 
-    @property
-    ___ expired(self):
-        r.. d__.now() > self.expires
+    $
+    ___ expired
+        r.. d__.n.. > expires
 
 
 

@@ -13,4 +13,4 @@ ___ solution(string, markers):
             __ index != -1:
                 line = line[:index]
         lines[i] = line.rstrip(' ')
-    r.. '\n'.join(lines)
+    r.. '\n'.j..(lines)

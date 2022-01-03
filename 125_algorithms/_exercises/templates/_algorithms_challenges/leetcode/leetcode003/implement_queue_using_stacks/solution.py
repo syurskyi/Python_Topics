@@ -16,49 +16,49 @@ use only standard operations of a stack.
 operations will be called on an empty queue).
 """
 
-class Queue(object):
-    ___ __init__(self):
+c_ Queue(object):
+    ___ - ):
         """
         initialize your data structure here.
         """
-        self.stack1    # list  # Push
-        self.stack2    # list  # Pop
+        stack1    # list  # Push
+        stack2    # list  # Pop
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: nothing
         """
-        self.stack1.a..(x)
+        stack1.a..(x)
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: nothing
         """
-        __ n.. self.stack2:
-            self._move()
-        self.stack2.pop()
+        __ n.. stack2:
+            _move()
+        stack2.pop()
 
-    ___ peek(self):
+    ___ peek
         """
         :rtype: int
         """
-        __ n.. self.stack2:
-            self._move()
-        r.. self.stack2[-1]
+        __ n.. stack2:
+            _move()
+        r.. stack2[-1]
 
-    ___ empty(self):
+    ___ empty
         """
         :rtype: bool
         """
-        __ n.. self.stack2:
-            self._move()
-        __ n.. self.stack2:
-            r.. True
+        __ n.. stack2:
+            _move()
+        __ n.. stack2:
+            r.. T..
         ____:
-            r.. False
+            r.. F..
 
-    ___ _move(self):
+    ___ _move
         """Move elements from stack1 to stack2"""
-        w.... self.stack1:
-            self.stack2.a..(self.stack1.pop())
+        w.... stack1:
+            stack2.a..(stack1.pop())

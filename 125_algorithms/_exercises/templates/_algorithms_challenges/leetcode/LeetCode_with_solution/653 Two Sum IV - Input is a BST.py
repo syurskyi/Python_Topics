@@ -33,39 +33,39 @@ Output: False
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ findTarget(self, root: TreeNode, k: int) -> bool:
-        self.root = root
-        r.. self.walk(root, k)
+        root = root
+        r.. walk(root, k)
 
     ___ walk(self, node, k):
         __ n.. node:
-            r.. False
+            r.. F..
 
         target = k - node.val
-        __ self.find(self.root, target, node):
-            r.. True
+        __ find(root, target, node):
+            r.. T..
 
-        __ self.walk(node.left, k) o. self.walk(node.right, k):
-            r.. True
+        __ walk(node.left, k) o. walk(node.right, k):
+            r.. T..
 
-        r.. False
+        r.. F..
 
     ___ find(self, node, target, existing):
         __ n.. node:
-            r.. False
+            r.. F..
 
         __ node.val __ target:
             r.. node != existing
 
         __ target < node.val:
-            r.. self.find(node.left, target, existing)
+            r.. find(node.left, target, existing)
         ____:
-            r.. self.find(node.right, target, existing)
+            r.. find(node.right, target, existing)

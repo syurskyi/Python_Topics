@@ -1,6 +1,6 @@
 _______ csv
 _______ random
-_______ re
+_______ __
 _______ string
 
 _______ pytest
@@ -20,7 +20,7 @@ string_classes = ['Formatter', 'Template']
 @pytest.mark.parametrize("mod, expected", [
     (csv, csv_classes),
     (random, random_classes),
-    (re, re_classes),
+    (__, re_classes),
     (string, string_classes),
 ])
 ___ test_cls(mod, expected):

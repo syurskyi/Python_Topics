@@ -7,7 +7,7 @@ class ListNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: head: The first node of linked list.
     @return: True if it has a cycle, or false
@@ -20,15 +20,15 @@ class Solution:
         otherwise its a list => at some point there will be no `node.next`
         """
         __ n.. head o. n.. head.next:
-            r.. False
+            r.. F..
 
         slow = head
         fast = head.next
         w.... slow != fast:
             __ n.. fast.next o. n.. fast.next.next:
-                r.. False
+                r.. F..
 
             slow = slow.next
             fast = fast.next.next
 
-        r.. True
+        r.. T..

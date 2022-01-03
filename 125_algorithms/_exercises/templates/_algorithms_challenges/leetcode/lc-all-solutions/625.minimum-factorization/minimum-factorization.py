@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   # while loop
   ___ smallestFactorization(self, a):
     """
@@ -18,7 +18,7 @@ class Solution(object):
     path.s..()
     __ a > 9 o. n.. path:
       r.. 0
-    ans = int("".join(path))
+    ans = int("".j..(path))
     r.. ans __ ans <= 0x7fffffff ____ 0
 
   # normal DFS
@@ -32,16 +32,16 @@ class Solution(object):
 
     ___ dfs(num, path):
       __ num __ 1:
-        self.ans = m..(self.ans, int("".join(s..(path))))
-        r.. True
+        ans = m..(ans, int("".j..(s..(path))))
+        r.. T..
       ___ i __ reversed(r..(2, 10)):
         __ num % i __ 0:
           path.a..(s..(i))
           __ dfs(num / i, path):
-            r.. True
+            r.. T..
           path.pop()
-      r.. False
+      r.. F..
 
-    self.ans = float("inf")
+    ans = float("inf")
     dfs(a, [])
-    r.. self.ans __ self.ans != float("inf") a.. self.ans <= 0x7fffffff ____ 0
+    r.. ans __ ans != float("inf") a.. ans <= 0x7fffffff ____ 0

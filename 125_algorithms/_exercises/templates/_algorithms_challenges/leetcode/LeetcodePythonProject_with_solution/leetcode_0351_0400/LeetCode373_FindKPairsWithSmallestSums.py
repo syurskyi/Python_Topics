@@ -4,7 +4,7 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ kSmallestPairs(self, nums1, nums2, k):
         _______ heapq
         heap    # list
@@ -19,7 +19,7 @@ class Solution(object):
             result.a..((num1, num2))
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 [1, 7, 11],
@@ -41,7 +41,7 @@ class Solution(object):
             print('nums1: %s' % nums1)
             print('nums2: %s' % nums2)
             print('k: %s' % k)
-            result = self.kSmallestPairs(nums1, nums2, k)
+            result = kSmallestPairs(nums1, nums2, k)
             print('result: %s' % result)
             print('-='*20+'-')
 

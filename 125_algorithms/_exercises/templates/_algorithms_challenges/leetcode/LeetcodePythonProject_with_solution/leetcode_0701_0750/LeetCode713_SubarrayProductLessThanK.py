@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numSubarrayProductLessThanK(self, nums, k):
         """
         :type nums: List[int]
@@ -22,7 +22,7 @@ class Solution(object):
             count += i-left+1
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [10, 5, 2, 6],
@@ -32,7 +32,7 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = self.numSubarrayProductLessThanK(nums, k)
+            result = numSubarrayProductLessThanK(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

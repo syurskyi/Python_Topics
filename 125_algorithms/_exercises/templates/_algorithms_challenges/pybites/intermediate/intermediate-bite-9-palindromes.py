@@ -14,9 +14,9 @@ which reads the same backward as forward.
 _______ os
 _______ urllib.request
 _______ string
-_______ re
+_______ __
 
-DICTIONARY = os.path.join(os.getenv('temp'), 'dictionary_m_words.txt')
+DICTIONARY = os.path.j..(os.getenv('temp'), 'dictionary_m_words.txt')
 urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 # How come it's a generator, if it doesn't have yield statement?
@@ -26,7 +26,7 @@ urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().s.. ___ word __ f.readlines())
+        r.. (word.l...s.. ___ word __ f.readlines())
 
 
 ___ is_palindrome(word):
@@ -34,16 +34,16 @@ ___ is_palindrome(word):
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
-    stripped = re.sub(r'[^a-z]', '', word.lower())
+    stripped = __.sub(r'[^a-z]', '', word.lower())
     i, j = 0, l..(stripped) - 1
     w.... i < j:
         __ stripped[i] != stripped[j]:
-            r.. False
+            r.. F..
         i, j = i + 1, j - 1
-    r.. True
+    r.. T..
 
 ___ is_palindrome_pybites_solution(word):
-    word = re.sub(r'\W+', '', word.lower())
+    word = __.sub(r'\W+', '', word.lower())
     r.. word __ word[::-1]
 
 # jak to elegancko przerobic, zeby spelnic kryterium zadania?

@@ -4,7 +4,7 @@ Determine whether an integer is a palindrome. Do this without extra space.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ isPalindrome(self, x):
         """
         Algorithm: int, compare lsb and msb
@@ -15,7 +15,7 @@ class Solution:
         :return: boolean
         """
         __ x < 0:
-            r.. False
+            r.. F..
 
         # find order of magnitude
         div = 1
@@ -27,7 +27,7 @@ class Solution:
             lsb = x%10
 
             __ msb != lsb:
-                r.. False
+                r.. F..
 
             # shrink
             x %= div
@@ -35,7 +35,7 @@ class Solution:
 
             div /= 100
 
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":

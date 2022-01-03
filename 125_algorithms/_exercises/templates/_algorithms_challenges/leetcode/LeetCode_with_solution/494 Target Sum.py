@@ -27,7 +27,7 @@ Your output answer is guaranteed to be fitted in a 32-bit integer.
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ findTargetSumWays(self, A, S):
         """
         Let F[i][k] be number of ways for A[:i] sum to k
@@ -42,7 +42,7 @@ class Solution:
         F = defaultdict(l....: defaultdict(int))
         F[0][0] = 1
         ___ i __ r..(l..(A)):
-            ___ k __ F[i].keys():  # F[i] for A[:i]
+            ___ k __ F[i].k..:  # F[i] for A[:i]
                 F[i+1][k-A[i]] += F[i][k]
                 F[i+1][k+A[i]] += F[i][k]
 

@@ -4,16 +4,16 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
-    ___ __init__(self, nums):
-        self.nums = nums
+c_ Solution(object):
+    ___ - , nums):
+        nums = nums
     
-    ___ reset(self):
-        r.. self.nums
+    ___ reset
+        r.. nums
     
-    ___ shuffle(self):
+    ___ shuffle
         _______ random
-        newNums = l..(self.nums)
+        newNums = l..(nums)
         __ n.. newNums:
             r.. newNums
         ___ i __ r..(l..(newNums)-1, 0, -1):

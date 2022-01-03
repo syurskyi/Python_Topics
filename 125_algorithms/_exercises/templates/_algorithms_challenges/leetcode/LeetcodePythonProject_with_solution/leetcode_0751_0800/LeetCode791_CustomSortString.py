@@ -3,7 +3,7 @@ Created on Apr 15, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ customSortString(self, S, T):
         """
         :type S: str
@@ -25,7 +25,7 @@ class Solution(object):
                 count[i] -= 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ['cba', 'abcd'],
             ["kqep", "pekeq"],
@@ -34,7 +34,7 @@ class Solution(object):
         ___ s, t __ testCases:
             print('s: %s' % s)
             print('t: %s' % t)
-            result = self.customSortString(s, t)
+            result = customSortString(s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 

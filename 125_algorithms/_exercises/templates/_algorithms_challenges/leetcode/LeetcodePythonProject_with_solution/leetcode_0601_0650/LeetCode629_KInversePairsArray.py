@@ -3,7 +3,7 @@ Created on Sep 10, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ kInversePairs(self, n, k):
         """
         :type n: int
@@ -40,7 +40,7 @@ class Solution(object):
             dp = new
         r.. (dp[k+1]-dp[k])%mod
     
-    ___ test(self):
+    ___ test
         testCases = [
             (3, 0),
             (3, 1),
@@ -49,9 +49,9 @@ class Solution(object):
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = self.kInversePairs(n, k)
+            result = kInversePairs(n, k)
             print('result: %s' % result)
-            result2 = self.kInversePairs_another(n, k)
+            result2 = kInversePairs_another(n, k)
             print('result2: %s' % result2)
             print('-='*30+'-')
 

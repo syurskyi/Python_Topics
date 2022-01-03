@@ -4,7 +4,7 @@
 #         self.start = s
 #         self.end = e
 
-class Solution:
+c_ Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
     ___ merge(self, intervals):

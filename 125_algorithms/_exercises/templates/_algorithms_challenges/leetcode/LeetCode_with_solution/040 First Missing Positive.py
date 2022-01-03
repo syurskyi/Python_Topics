@@ -8,7 +8,7 @@ and [3,4,-1,1] return 2.
 Your algorithm should run in O(n) time and uses constant space.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ firstMissingPositive(self, A):
         """
         Bucket Sort without extra space

@@ -10,7 +10,7 @@ ___ D():
 
 
 ___ test_object_type(D):
-    ... type(D) __ JS
+    ... t..(D) __ JS
 
 
 ___ test_assert_regular_dict_behavior(D):

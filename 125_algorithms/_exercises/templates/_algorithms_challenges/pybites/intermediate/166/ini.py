@@ -1,31 +1,31 @@
 _______ configparser
 
 
-class ToxIniParser:
+c_ ToxIniParser:
 
-    ___ __init__(self, ini_file):
+    ___ - , ini_file):
         """Use configparser to load ini_file into self.config"""
-        self.config = configparser.ConfigParser()
+        config = configparser.ConfigParser()
 
-        self.config.read(ini_file)
+        config.read(ini_file)
 
-    @property
-    ___ number_of_sections(self):
+    $
+    ___ number_of_sections
         """Return the number of sections in the ini file.
            New to properties? -> https://pybit.es/property-decorator.html
         """
-        r.. l..(self.config.sections())
+        r.. l..(config.sections())
 
-    @property
-    ___ environments(self):
+    $
+    ___ environments
         """Return a list of environments
            (= "envlist" attribute of [tox] section)"""
 
         
         envs    # list
-        __ 'tox' __ self.config:
-            __ '\n' __ self.config['tox']['envlist']:
-                lines = self.config['tox']['envlist'].s...splitlines()
+        __ 'tox' __ config:
+            __ '\n' __ config['tox']['envlist']:
+                lines = config['tox']['envlist'].s...splitlines()
                 ___ line __ lines:
                     __ ',' __ line:
                         values = line.s..(',')
@@ -35,7 +35,7 @@ class ToxIniParser:
                         envs.a..(line.strip())
                 r.. [env ___ env __ envs __ env != '']
             ____:
-                r.. [value.s.. ___ value __ self.config['tox']['envlist'].s...s..(',')]
+                r.. [value.s.. ___ value __ config['tox']['envlist'].s...s..(',')]
 
 
 
@@ -44,13 +44,13 @@ class ToxIniParser:
 
 
 
-    @property
-    ___ base_python_versions(self):
+    $
+    ___ base_python_versions
         """Return a list of all basepython across the ini file"""
         base_pythons = set()
-        ___ section __ self.config.sections():
-            __ 'basepython' __ self.config[section]:
-                base_pythons.add(self.config[section]['basepython'])
+        ___ section __ config.sections():
+            __ 'basepython' __ config[section]:
+                base_pythons.add(config[section]['basepython'])
 
 
         r.. l..(base_pythons)

@@ -14,16 +14,16 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-class Counter(object):
-    ___ __init__(self, val, cnt):
-        self.val = val
-        self.cnt = cnt
+c_ Counter(object):
+    ___ - , val, cnt):
+        val = val
+        cnt = cnt
 
     ___ __cmp__(self, other):
-        r.. self.cnt - other.cnt
+        r.. cnt - other.cnt
 
 
-class Solution(object):
+c_ Solution(object):
     ___ topKFrequent(self, nums, K):
         """
         Count and Maintain a heap with size k -> O(n lg k)
@@ -38,7 +38,7 @@ class Solution(object):
             cnt[e] += 1
 
         lst    # list
-        ___ k, v __ cnt.items():
+        ___ k, v __ cnt.i..:
             lst.a..(Counter(k, v))
 
         ret    # list

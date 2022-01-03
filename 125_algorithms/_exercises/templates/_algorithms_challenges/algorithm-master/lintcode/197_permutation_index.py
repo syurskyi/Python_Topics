@@ -8,7 +8,7 @@ before `A[i]`.
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: An array of integers
     @return: A long integer

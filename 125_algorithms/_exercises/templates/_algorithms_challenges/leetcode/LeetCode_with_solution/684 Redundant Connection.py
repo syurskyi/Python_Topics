@@ -37,44 +37,44 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class DisjointSet():
-    ___ __init__(self):
-        self.sz = {}  # element -> size
-        self.pi = {}  # element -> pi
+c_ DisjointSet():
+    ___ - ):
+        sz    # dict  # element -> size
+        pi    # dict  # element -> pi
 
     ___ add(self, x):
-        __ x n.. __ self.pi:  # need to check, otherwise override wrongly
-            self.sz[x] = 1
-            self.pi[x] = x
+        __ x n.. __ pi:  # need to check, otherwise override wrongly
+            sz[x] = 1
+            pi[x] = x
 
     ___ unionize(self, x, y):
-        p1 = self.root(x)
-        p2 = self.root(y)
+        p1 = root(x)
+        p2 = root(y)
         __ p1 != p2:
-            sz1 = self.sz[p1]
-            sz2 = self.sz[p2]
+            sz1 = sz[p1]
+            sz2 = sz[p2]
             __ sz1 > sz2:
                 p1, p2 = p2, p1
 
-            self.pi[p1] = p2
-            self.sz[p2] += self.sz[p1]
-            del self.sz[p1]
+            pi[p1] = p2
+            sz[p2] += sz[p1]
+            del sz[p1]
 
     ___ root(self, x):
-        p = self.pi[x]
+        p = pi[x]
         __ p != x:
-            self.pi[x] = self.root(p)
+            pi[x] = root(p)
 
-        r.. self.pi[x]
+        r.. pi[x]
 
     ___ is_union(self, x, y):
-        __ x __ self.pi a.. y __ self.pi:
-            r.. self.root(x) __ self.root(y)
+        __ x __ pi a.. y __ pi:
+            r.. root(x) __ root(y)
 
-        r.. False
+        r.. F..
 
 
-class Solution:
+c_ Solution:
     ___ findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
         """
         Union-find
@@ -90,7 +90,7 @@ class Solution:
 
         raise
 
-class Solution_dfs:
+c_ Solution_dfs:
     ___ findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
         """
         Construct graph: O(|E|)
@@ -103,9 +103,9 @@ class Solution_dfs:
             G[q].add(p)
 
         visited = set()
-        ___ k __ G.keys():
+        ___ k __ G.k..:
             __ k n.. __ visited:
-                circle = self.dfs(G, k, N.., set([k]), [k], visited)
+                circle = dfs(G, k, N.., set([k]), [k], visited)
                 __ circle:
                     ___ p, q __ reversed(edges):
                         __ p __ circle a.. q __ circle:
@@ -121,17 +121,17 @@ class Solution_dfs:
                 __ nbr __ path:
                     # extract the circle from path
                     circle = set()
-                    in_circle = False
+                    in_circle = F..
                     ___ e __ path_list:
                         __ e __ nbr:
-                            in_circle = True
+                            in_circle = T..
                         __ in_circle:
                             circle.add(e)
                     r.. circle
 
                 path.add(nbr)
                 path_list.a..(nbr)
-                circle = self.dfs(G, nbr, cur, path, path_list, visited)
+                circle = dfs(G, nbr, cur, path, path_list, visited)
                 __ circle:
                     r.. circle
                 path.remove(nbr)

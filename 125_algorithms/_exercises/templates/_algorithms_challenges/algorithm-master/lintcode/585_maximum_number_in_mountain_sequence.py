@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: nums: a mountain sequence which increase firstly and then decrease
     @return: then mountain top

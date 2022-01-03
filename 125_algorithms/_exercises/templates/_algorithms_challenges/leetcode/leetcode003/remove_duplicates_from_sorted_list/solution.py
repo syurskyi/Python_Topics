@@ -13,7 +13,7 @@ Given 1->1->2->3->3, return 1->2->3.
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
     ___ deleteDuplicates(self, head):
         """
         :type head: ListNode

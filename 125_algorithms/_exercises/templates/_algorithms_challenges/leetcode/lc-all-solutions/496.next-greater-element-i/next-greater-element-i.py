@@ -1,11 +1,11 @@
-class Solution(object):
+c_ Solution(object):
   ___ nextGreaterElement(self, findNums, nums):
     """
     :type findNums: List[int]
     :type nums: List[int]
     :rtype: List[int]
     """
-    d = {}
+    d    # dict
     ans = [-1] * l..(findNums)
     ___ i, num __ e..(findNums):
       d[num] = i

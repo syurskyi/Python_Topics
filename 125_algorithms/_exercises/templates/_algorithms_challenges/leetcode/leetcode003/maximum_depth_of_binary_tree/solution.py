@@ -12,12 +12,12 @@ node down to the farthest leaf node.
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return an integer
     ___ maxDepth(self, root):
         __ root __ N..
             r.. 0
-        left_max = self.maxDepth(root.left)
-        right_max = self.maxDepth(root.right)
+        left_max = maxDepth(root.left)
+        right_max = maxDepth(root.right)
         r.. max(left_max, right_max) + 1

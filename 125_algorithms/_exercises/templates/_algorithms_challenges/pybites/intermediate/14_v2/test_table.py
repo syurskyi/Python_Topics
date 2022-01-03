@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 ____ table _______ (names, aliases, points, awake,
                    SEPARATOR, generate_table)
@@ -20,5 +20,5 @@ ___ test_generate_table():
 
     ... table1[1].s..(SEPARATOR)[0] __ 'Bob'
     ... table2[1].s..(SEPARATOR)[1] __ 'Nerd'
-    ... re.match(r'\d+', table3[2].s..(SEPARATOR)[2])
+    ... __.match(r'\d+', table3[2].s..(SEPARATOR)[2])
     ... table4[2].s..(SEPARATOR)[3]

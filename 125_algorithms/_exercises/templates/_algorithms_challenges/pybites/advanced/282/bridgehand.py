@@ -11,8 +11,8 @@ HCP = {Rank.A: 4, Rank.K: 3, Rank.Q: 2, Rank.J: 1}
 SSP = {2: 1, 1: 2, 0: 3}  # cards in a suit -> short suit points
 
 
-class BridgeHand:
-    ___ __init__(self, cards: Sequence[Card]):
+c_ BridgeHand:
+    ___ - , cards: Sequence[Card]):
         """
         Process and store the sequence of Card objects passed in input.
         Raise TypeError if not a sequence
@@ -31,11 +31,11 @@ class BridgeHand:
             raise ValueError("Must have 13 cards")
         
 
-        self.cards = cards
+        cards = cards
 
-        self.suit_to_cards = defaultdict(l..)
-        ___ card __ self.cards:
-            self.suit_to_cards[card.suit].a..(card.Rank)
+        suit_to_cards = defaultdict(l..)
+        ___ card __ cards:
+            suit_to_cards[card.suit].a..(card.Rank)
 
 
 
@@ -58,14 +58,14 @@ class BridgeHand:
         
         s    # list
         ___ suit __ Suit:
-            __ suit __ self.suit_to_cards:
-                cards = self.suit_to_cards[suit]
+            __ suit __ suit_to_cards:
+                cards = suit_to_cards[suit]
                 cards.s..(key=l.... x: x.value)
-                cards = ''.join(card.name ___ card __ cards)
+                cards = ''.j..(card.name ___ card __ cards)
                 s.a..(f"{suit.name}:{cards}")
 
 
-        r.. ' '.join(s)
+        r.. ' '.j..(s)
             
 
 
@@ -79,55 +79,55 @@ class BridgeHand:
 
 
 
-    @property
+    $
     ___ hcp(self) -> int:
         """ Return the number of high card points contained in this hand """
 
-        r.. s..(HCP[card.Rank] ___ card __ self.cards __ card.Rank __ HCP)
+        r.. s..(HCP[card.Rank] ___ card __ cards __ card.Rank __ HCP)
 
-    @property
+    $
     ___ doubletons(self) -> int:
         """ Return the number of doubletons contained in this hand """
 
 
-        r.. s..(l..(cards) __ 2 ___ cards __ self.suit_to_cards.values())
+        r.. s..(l..(cards) __ 2 ___ cards __ suit_to_cards.values())
 
-    @property
+    $
     ___ singletons(self) -> int:
         """ Return the number of singletons contained in this hand """
-        r.. s..(l..(cards) __ 1 ___ cards __ self.suit_to_cards.values())
+        r.. s..(l..(cards) __ 1 ___ cards __ suit_to_cards.values())
 
-    @property
+    $
     ___ voids(self) -> int:
         """ Return the number of voids (missing suits) contained in
             this hand
         """
 
 
-        r.. l..(Suit) - l..(self.suit_to_cards)
+        r.. l..(Suit) - l..(suit_to_cards)
 
-    @property
+    $
     ___ ssp(self) -> int:
         """ Return the number of short suit points in this hand.
             Doubletons are worth one point, singletons two points,
             voids 3 points
         """
 
-        r.. self.doubletons + 2 * self.singletons + 3 * self.voids
+        r.. doubletons + 2 * singletons + 3 * voids
 
-    @property
+    $
     ___ total_points(self) -> int:
         """ Return the total points (hcp and ssp) contained in this hand """
-        r.. self.hcp + self.ssp
+        r.. hcp + ssp
 
-    @property
+    $
     ___ ltc(self) -> int:
         """ Return the losing trick count for this hand - see bite description
             for the procedure
         """
 
         losing_tricks = 0
-        ___ cards __ self.suit_to_cards.values():
+        ___ cards __ suit_to_cards.v..
 
             __ l..(cards) __ 1:
                 __ cards[0] != Rank.A:

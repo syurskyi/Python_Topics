@@ -1,9 +1,9 @@
-class Solution:
+c_ Solution:
     # @param {integer[]} nums
     # @return {integer}
     ___ majorityElement(self, nums):
         s..(nums)
-        numDict = {}
+        numDict    # dict
         ___ n __ nums:
             numDict[n] = numDict.get(n,0) + 1
         r.. max(numDict.values())

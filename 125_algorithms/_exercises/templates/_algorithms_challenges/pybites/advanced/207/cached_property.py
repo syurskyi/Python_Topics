@@ -15,27 +15,27 @@ ___ cached_property(func):
     r.. wrapper
 
 
-class Planet:
+c_ Planet:
     """the nicest little orb this side of Orion's Belt"""
 
     GRAVITY_CONSTANT = 42
     TEMPORAL_SHIFT = 0.12345
     SOLAR_MASS_UNITS = 'M\N{SUN}'
 
-    ___ __init__(self, color):
-        self.color = color
-        self._mass = N..
+    ___ - , color):
+        color = color
+        _mass = N..
 
-    ___ __repr__(self):
-        r.. f'{self.__class__.__name__}({repr(self.color)})'
+    ___ __repr__
+        r.. f'{__class__.__name__}({repr(color)})'
 
     @cached_property
-    ___ mass(self):
+    ___ mass
         scale_factor = random()
-        sleep(self.TEMPORAL_SHIFT)
-        self._mass = (f'{round(scale_factor * self.GRAVITY_CONSTANT, 4)} '
-                      f'{self.SOLAR_MASS_UNITS}')
-        r.. self._mass
+        sleep(TEMPORAL_SHIFT)
+        _mass = (f'{round(scale_factor * GRAVITY_CONSTANT, 4)} '
+                      f'{SOLAR_MASS_UNITS}')
+        r.. _mass
 
     ___ __setattr__(self, var, val):
         __ var __ 'mass':

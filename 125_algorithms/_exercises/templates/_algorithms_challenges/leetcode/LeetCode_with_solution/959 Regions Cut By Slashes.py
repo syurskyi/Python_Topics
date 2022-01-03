@@ -72,27 +72,27 @@ grid[i][j] is either '/', '\', or ' '.
 ____ typing _______ List
 
 
-class DisjointSet:
-    ___ __init__(self):
+c_ DisjointSet:
+    ___ - ):
         """
         unbalanced DisjointSet
         """
-        self.pi = {}
+        pi    # dict
 
     ___ union(self, x, y):
-        pi_x = self.find(x)
-        pi_y = self.find(y)
-        self.pi[pi_y] = pi_x
+        pi_x = find(x)
+        pi_y = find(y)
+        pi[pi_y] = pi_x
 
     ___ find(self, x):
         # LHS self.pi[x]
-        __ x n.. __ self.pi:
-            self.pi[x] = x
-        __ self.pi[x] != x:
-            self.pi[x] = self.find(self.pi[x])
-        r.. self.pi[x]
+        __ x n.. __ pi:
+            pi[x] = x
+        __ pi[x] != x:
+            pi[x] = find(pi[x])
+        r.. pi[x]
 
-class Solution:
+c_ Solution:
     ___ regionsBySlashes(self, grid: List[s..]) -> int:
         """
         in 1 x 1 cell
@@ -139,7 +139,7 @@ class Solution:
 
         r.. l..(set(
             ds.find(x)
-            ___ x __ ds.pi.keys()
+            ___ x __ ds.pi.k..
         ))
 
 

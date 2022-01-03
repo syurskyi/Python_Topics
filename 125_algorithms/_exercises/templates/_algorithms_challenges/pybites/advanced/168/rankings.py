@@ -20,7 +20,7 @@ names: List[s..] = [
 
 
 @dataclass
-class Ninja:
+c_ Ninja:
     """
     The Ninja class will have the following features:
 
@@ -36,7 +36,7 @@ class Ninja:
     ___ __lt__(self,other):
         __ isi..(other,Ninja):
 
-            r.. self.bites < other.bites
+            r.. bites < other.bites
 
         raise ValueError
     
@@ -44,19 +44,19 @@ class Ninja:
     ___ __gt__(self,other):
         __ isi..(other,Ninja):
 
-            r.. self.bites > other.bites
+            r.. bites > other.bites
 
         raise ValueError
 
     ___ __eq__(self,other):
         __ isi..(other,Ninja):
 
-            r.. self.bites __ other.bites
+            r.. bites __ other.bites
 
         raise ValueError
     
-    ___ __repr__(self):
-        r.. f"[{self.bites}] {self.name}"
+    ___ __repr__
+        r.. f"[{bites}] {name}"
 
 
 
@@ -67,7 +67,7 @@ class Ninja:
 
 
 @dataclass
-class Rankings:
+c_ Rankings:
     """
     The Rankings class will have the following features:
 
@@ -87,23 +87,23 @@ class Rankings:
 
 
     ___ add(self,ninja):
-        heapq.heappush(self.rankings,ninja)
+        heapq.heappush(rankings,ninja)
     
 
 
     ___ highest(self,count=1):
-        rankings = s..(self.rankings)
+        rankings = s..(rankings)
         
         r.. rankings[-count:][::-1]
     
     ___ lowest(self,count=1):
-        rankings = s..(self.rankings)
+        rankings = s..(rankings)
 
         r.. rankings[:count]
 
     
     ___ pair_up(self,n=3):
-        rankings = s..(self.rankings)
+        rankings = s..(rankings)
 
         start,end = 0,l..(rankings)  - 1
         pairs    # list
@@ -114,12 +114,12 @@ class Rankings:
 
 
 
-    ___ dump(self):
-        r.. heapq.heappop(self.rankings)
+    ___ dump
+        r.. heapq.heappop(rankings)
 
 
-    ___ __len__(self):
-        r.. l..(self.rankings)
+    ___ __len__
+        r.. l..(rankings)
 
 
 

@@ -34,8 +34,8 @@ ____ collections _______ defaultdict
 _______ bisect
 
 
-class TopVotedCandidate:
-    ___ __init__(self, persons: List[int], times: List[int]):
+c_ TopVotedCandidate:
+    ___ - , persons: List[int], times: List[int]):
         """
         Running top vote
         Need to maintain list
@@ -43,23 +43,23 @@ class TopVotedCandidate:
         but time is too large to enumerate. Cannot have direct access, then
         query is binary search
         """
-        self.maxes    # list  # [(t, i)]  at time t
+        maxes    # list  # [(t, i)]  at time t
         counter = defaultdict(int)
         tp = s..(z..(times, persons))
         ___ t, p __ tp:
             counter[p] += 1
-            __ n.. self.maxes o. counter[self.maxes[-1][1]] <= counter[p]:
-                self.maxes.a..((t, p))
+            __ n.. maxes o. counter[maxes[-1][1]] <= counter[p]:
+                maxes.a..((t, p))
 
     ___ q(self, t: int) -> int:
-        i = bisect.bisect(self.maxes, (t, 0))
+        i = bisect.bisect(maxes, (t, 0))
         # equal
-        __ i < l..(self.maxes) a.. self.maxes[i][0] __ t:
-            r.. self.maxes[i][1]
+        __ i < l..(maxes) a.. maxes[i][0] __ t:
+            r.. maxes[i][1]
 
         # smaller
         i -= 1
-        r.. self.maxes[i][1]
+        r.. maxes[i][1]
 
 
 # Your TopVotedCandidate object will be instantiated and called as such:

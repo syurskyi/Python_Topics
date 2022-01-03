@@ -7,7 +7,7 @@
 ____ collections _______ deque
 
 
-class Codec:
+c_ Codec:
 
   ___ serialize(self, root):
     """Encodes a tree to a single string.
@@ -26,7 +26,7 @@ class Codec:
         ret.a..(s..(top.val))
       queue.a..(top.left)
       queue.a..(top.right)
-    r.. ",".join(ret)
+    r.. ",".j..(ret)
 
   ___ deserialize(self, data):
     """Decodes your encoded data to tree.

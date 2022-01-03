@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maximumProduct(self, nums):
     """
     :type nums: List[int]

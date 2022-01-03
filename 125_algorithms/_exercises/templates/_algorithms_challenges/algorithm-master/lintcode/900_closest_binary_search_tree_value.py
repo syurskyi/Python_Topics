@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ closestValue(self, root, target):
         """
         :type root: TreeNode
@@ -18,13 +18,13 @@ class Solution:
             r.. float('-inf')
 
         __ root.left a.. target < root.val:
-            left = self.closestValue(root.left, target)
+            left = closestValue(root.left, target)
 
             __ abs(left - target) < abs(root.val - target):
                 r.. left
 
         __ root.right a.. target > root.val:
-            right = self.closestValue(root.right, target)
+            right = closestValue(root.right, target)
 
             __ abs(right - target) < abs(root.val - target):
                 r.. right

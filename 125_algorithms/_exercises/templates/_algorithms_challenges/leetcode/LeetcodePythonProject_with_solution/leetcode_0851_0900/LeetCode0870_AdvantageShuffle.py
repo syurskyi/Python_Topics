@@ -3,7 +3,7 @@ Created on Oct 2, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ advantageCount(self, A, B):
         """
         :type A: List[int]
@@ -30,7 +30,7 @@ class Solution(object):
                 l += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [2,7,11,15],
@@ -42,7 +42,7 @@ class Solution(object):
             ],
         ]
         ___ a, b __ testCases:
-            res = self.advantageCount(a, b)
+            res = advantageCount(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -5,7 +5,7 @@ Created on Oct 16, 2017
 '''
 _______ heapq
 
-class Solution(object):
+c_ Solution(object):
     ___ cutOffTree(self, forest):
         """
         :type forest: List[List[int]]
@@ -22,7 +22,7 @@ class Solution(object):
         x, y = 0, 0
         w.... heap:
             h, i, j = heapq.heappop(heap)
-            step = self.minStep(forest, x, y, i, j, h, m, n)
+            step = minStep(forest, x, y, i, j, h, m, n)
             __ step < 0: r.. -1
             sumVal += step
             x, y = i, j
@@ -30,8 +30,8 @@ class Solution(object):
     
     ___ minStep(self, forest, x, y, i, j, h, m, n):
         step = 0
-        visited = [[False]*n ___ _ __ r..(m)]
-        visited[x][y] = True
+        visited = [[F..]*n ___ _ __ r..(m)]
+        visited[x][y] = T..
         queue    # list
         queue.a..((x, y))
         w.... queue:
@@ -44,11 +44,11 @@ class Solution(object):
                         forest[i1][j1] __ 0 o. visited[i1][j1]:
                         continue
                     queue.a..((i1, j1))
-                    visited[i1][j1] = True
+                    visited[i1][j1] = T..
             step += 1
         r.. -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,2,3],
@@ -75,7 +75,7 @@ class Solution(object):
         ]
         ___ forest __ testCases:
             print('forest: %s' % forest)
-            result = self.cutOffTree(forest)
+            result = cutOffTree(forest)
             print('result: %s' % result)
             print('-='*30+'-')
 

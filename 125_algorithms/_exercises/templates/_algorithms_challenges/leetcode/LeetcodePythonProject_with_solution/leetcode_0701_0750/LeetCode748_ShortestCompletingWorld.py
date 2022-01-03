@@ -3,36 +3,36 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ shortestCompletingWord(self, licensePlate, words):
         """
         :type licensePlate: str
         :type words: List[str]
         :rtype: str
         """
-        hashmap = {}
+        hashmap    # dict
         ___ c __ licensePlate:
             __ n.. c.isdigit() a.. c != ' ':
-                hashmap[c.lower()] = hashmap.get(c.lower(), 0)+1
+                hashmap[c.l..] = hashmap.get(c.l.., 0)+1
         res = ''
         l = float('inf')
         ___ word __ words:
             __ l..(word) < l:
-                __ self.contains(hashmap, word):
+                __ contains(hashmap, word):
                     res = word
                     l = l..(res)
         r.. res
     
     ___ contains(self, hashmap, word):
-        hashmap0 = {}
+        hashmap0    # dict
         ___ c __ word:
             hashmap0[c] = hashmap0.get(c, 0)+1
         ___ c __ hashmap:
             __ hashmap[c] > hashmap0.get(c, 0):
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 '1s3 PSt',
@@ -50,7 +50,7 @@ class Solution(object):
         ___ licensePlate, words __ testCases:
             print('licensePlate: %s' % licensePlate)
             print('words: %s' % words)
-            result = self.shortestCompletingWord(licensePlate, words)
+            result = shortestCompletingWord(licensePlate, words)
             print('result: %s' % result)
             print('-='*30+'-')
 

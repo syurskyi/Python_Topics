@@ -55,7 +55,7 @@ Note:
 ____ tying _______ List
 
 
-class Solution:
+c_ Solution:
     ___ shipWithinDays(self, weights: List[int], D: int) -> int:
         """
         Must respect conveyor's order

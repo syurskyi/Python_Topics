@@ -159,7 +159,7 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map):
         (np.repeat("1", 9).reshape(3, 3), KERNEL_3x3_BLUR, N.., 1, TypeError),
         (IMAGE_5x5_INNER_SQUARE, np.repeat("1", 9).reshape(3, 3), N.., 1, TypeError),
         (
-            np.repeat(True, 9).reshape(3, 3),
+            np.repeat(T.., 9).reshape(3, 3),
             KERNEL_3x3_HORIZONTAL_EDGE,
             N..,
             1,

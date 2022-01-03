@@ -6,7 +6,7 @@ The digits are stored such that the most significant digit is at the head of the
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ plusOne(self, digits):
         """
         Math

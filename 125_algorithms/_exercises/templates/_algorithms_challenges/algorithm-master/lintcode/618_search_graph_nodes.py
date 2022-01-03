@@ -15,7 +15,7 @@ class UndirectedGraphNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param {UndirectedGraphNode[]} graph a list of undirected graph node
     @param {dict} values a dict, <UndirectedGraphNode, (int)value>
@@ -28,10 +28,10 @@ class Solution:
             r..
 
         queue = [node]
-        visited = {_node: False ___ _node __ graph}
+        visited = {_node: F.. ___ _node __ graph}
 
         ___ _node __ queue:
-            visited[_node] = True
+            visited[_node] = T..
             __ values[_node] __ target:
                 r.. _node
             ___ _neighbor __ _node.neighbors:

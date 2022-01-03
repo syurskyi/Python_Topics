@@ -6,6 +6,6 @@ ___ same_ascii(a, b):
     ___ i __ b:
         s2 += ord(i)
     __ s1 __ s2:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

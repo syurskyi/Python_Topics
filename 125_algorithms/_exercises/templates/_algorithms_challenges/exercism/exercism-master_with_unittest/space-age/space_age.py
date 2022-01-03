@@ -1,4 +1,4 @@
-class SpaceAge:
+c_ SpaceAge:
 
     ORBITAL_PERIODS = {
         'mercury': 7600530.24,
@@ -11,15 +11,15 @@ class SpaceAge:
         'neptune': 5200418592.0
     }
 
-    ___ __init__(self, seconds):
-        self.seconds = seconds
+    ___ - , seconds):
+        seconds = seconds
 
     ___ on_planet(self, planet):
-        r.. round(self.seconds / self.ORBITAL_PERIODS[planet], 2)
+        r.. round(seconds / ORBITAL_PERIODS[planet], 2)
 
 
 ___ add_on_planet_fn(planet):
-    setattr(SpaceAge, 'on_' + planet, l.... self: self.on_planet(planet))
+    setattr(SpaceAge, 'on_' + planet, l.... self: on_planet(planet))
 
 
 ___ planet __ l..(SpaceAge.ORBITAL_PERIODS.keys()):

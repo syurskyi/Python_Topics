@@ -9,7 +9,7 @@ You may not engage in multiple transactions at the same time (ie, you must sell 
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ maxProfit(self, prices):
         """
         Algorithm: dp

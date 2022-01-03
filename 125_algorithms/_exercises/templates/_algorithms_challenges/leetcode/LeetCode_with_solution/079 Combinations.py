@@ -14,7 +14,7 @@ If n = 4 and k = 2, a solution is:
 ]
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ combine(self, n, k):
         """
         Similar to 045 Permutation
@@ -25,7 +25,7 @@ class Solution:
         """
         result    # list
         nums = [i+1 ___ i __ xrange(n)]  # sorted, avoid duplicate
-        self.get_combination(k, nums, [], result)
+        get_combination(k, nums, [], result)
         r.. result
 
     ___ get_combination(self, k, nums, current, result):
@@ -37,7 +37,7 @@ class Solution:
 
         ___ ind, val __ e..(nums):
             # try:
-            self.get_combination(k, nums[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
+            get_combination(k, nums[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:
             #     self.get_combination(k, [], current+[val], result)
             # array slice out of index will return []

@@ -14,5 +14,5 @@ ___ triangle(calculations):
             answer.a..(s..('1'))
         ____:
             answer.a..(s..('0'))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 triangle(input())

@@ -5,7 +5,7 @@
 #         self.next = None
 
 
-class Solution:
+c_ Solution:
     ___ isPalindrome(self, head):
         """
         :type head: ListNode
@@ -28,7 +28,7 @@ class Solution:
         r.. n.. rev
 
 
-class Solution:
+c_ Solution:
     ___ isPalindrome(self, head):
         """
         :type head: ListNode

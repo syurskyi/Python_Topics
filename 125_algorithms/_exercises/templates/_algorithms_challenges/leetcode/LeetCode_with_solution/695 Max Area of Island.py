@@ -31,7 +31,7 @@ ____ typing _______ List
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
-class Solution:
+c_ Solution:
     ___ maxAreaOfIsland(self, grid: List[List[int]]) -> int:
         """
         dfs
@@ -41,23 +41,23 @@ class Solution:
 
         ret = 0
         m, n = l..(grid), l..(grid[0])
-        visited = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
+        visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ n.. visited[i][j] a.. grid[i][j] __ 1:
-                    ret = max(ret, self.dfs(grid, i, j, visited))
+                    ret = max(ret, dfs(grid, i, j, visited))
 
         r.. ret
 
     ___ dfs(self, grid, i, j, visited) -> int:
-        visited[i][j] = True
+        visited[i][j] = T..
         ret = 1
         m, n = l..(grid), l..(grid[0])
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. grid[I][J] __ 1:
-                ret += self.dfs(grid, I, J, visited)
+                ret += dfs(grid, I, J, visited)
 
         r.. ret
 

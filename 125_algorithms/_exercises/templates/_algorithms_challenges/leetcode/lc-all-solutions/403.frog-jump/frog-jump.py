@@ -1,10 +1,10 @@
-class Solution(object):
+c_ Solution(object):
   ___ canCross(self, stones):
     """
     :type stones: List[int]
     :rtype: bool
     """
-    dp = {}
+    dp    # dict
 
     ___ dfs(stones, pos, k):
       key = pos + k * 10000;
@@ -16,11 +16,11 @@ class Solution(object):
           __ step < k - 1:
             continue;
           __ step > k + 1:
-            dp[key] = False
-            r.. False
+            dp[key] = F..
+            r.. F..
           __ dfs(stones, i, step):
-            dp[key] = True
-            r.. True
+            dp[key] = T..
+            r.. T..
       dp[key] = (pos __ l..(stones) - 1)
       r.. (pos __ l..(stones) - 1)
 

@@ -5,14 +5,14 @@ _______ urllib.request
 # PREWORK
 TMP = os.getenv("TMP", "/tmp")
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.join(TMP, DICT)
+DICTIONARY = os.path.j..(TMP, DICT)
 urllib.request.urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
 )
 
 with open(DICTIONARY) as f:
-    dictionary = set([word.s...lower() ___ word __ f.read().s.. ])
+    dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
@@ -28,16 +28,16 @@ ___ get_possible_dict_words(draw):
     """Get all possible words from a draw (list of letters) which are
        valid dictionary words. Use _get_permutations_draw and provided
        dictionary"""
-    possible_word = {}
-    in_str = ''.join([letter ___ letter __ draw __ letter.isalpha()])
+    possible_word    # dict
+    in_str = ''.j..([letter ___ letter __ draw __ letter.isalpha()])
     permute_list = _get_permutations_draw(in_str)
     ___ word __ permute_list:
-        temp_word = ''.join(word)
-        __ temp_word.lower() __ dictionary:
-            possible_word[temp_word.lower()] = calc_word_value(temp_word.lower())
+        temp_word = ''.j..(word)
+        __ temp_word.l.. __ dictionary:
+            possible_word[temp_word.l..] = calc_word_value(temp_word.lower())
     listOfKeys = l..()
     max_value = max(possible_word.values())
-    ___ key, value __ possible_word.items():
+    ___ key, value __ possible_word.i..:
         __ value __ max_value:
             listOfKeys.a..(key)
     r.. listOfKeys
@@ -52,6 +52,6 @@ ___ _get_permutations_draw(draw):
         permute_words_list += permute_words
     return permute_words_list
      """
-    lowered = ''.join(draw).lower()
+    lowered = ''.j..(draw).l..
     ___ i __ r..(1, l..(draw) + 1):
         y.. ____ i...permutations(lowered, i)

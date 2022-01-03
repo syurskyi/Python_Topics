@@ -4,14 +4,14 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ canPermutePalindrome(self, s):
-        __ n.. s: r.. False
-        hashmap = {}
+        __ n.. s: r.. F..
+        hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         odd = 0
-        ___ value __ hashmap.values():
+        ___ value __ hashmap.v..
             __ value%2 != 0:
                 odd += 1
         __ l..(s)%2 __ 0:

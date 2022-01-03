@@ -1,8 +1,8 @@
-class Solution:
+c_ Solution:
     # @param {character[][]} grid
     # @return {integer}
     ___ numIslands(self, grid):
-        self.islands = set()  # coordinates of 1s (set of tuples)
+        islands = set()  # coordinates of 1s (set of tuples)
         res = 0
         n = l..(grid)
         __ n __ 0:
@@ -12,8 +12,8 @@ class Solution:
             r.. 0
         ___ y __ r..(n):
             ___ x __ r..(m):
-                __ grid[y][x] __ '1' a.. (x, y) n.. __ self.islands:
-                    self.probe(grid, x, y, m, n)
+                __ grid[y][x] __ '1' a.. (x, y) n.. __ islands:
+                    probe(grid, x, y, m, n)
                     res += 1
         r.. res
 
@@ -26,9 +26,9 @@ class Solution:
         ____ grid[y][x] __ '0':
             r..
         ____:
-            self.islands.add((x, y))
-            self.probe(grid, x + 1, y, m, n)
-            self.probe(grid, x, y + 1, m, n)
+            islands.add((x, y))
+            probe(grid, x + 1, y, m, n)
+            probe(grid, x, y + 1, m, n)
 
 
 g1 = [

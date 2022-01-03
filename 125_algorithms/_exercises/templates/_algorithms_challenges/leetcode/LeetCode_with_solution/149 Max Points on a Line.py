@@ -3,18 +3,18 @@ Given n points on a 2D plane, find the maximum number of points that lie on the 
 """
 __author__ = 'Danyang'
 #Definition for a point
-class Point:
-    ___ __init__(self, a=0, b=0):
+c_ Point:
+    ___ - , a=0, b=0):
         """
 
         :param a: int
         :param b: int
         :return:
         """
-        self.x = a
-        self.y = b
+        x = a
+        y = b
 
-class Solution:
+c_ Solution:
     ___ maxPoints_complicated(self, points):
         """
 
@@ -22,7 +22,7 @@ class Solution:
         :return: int
         """
 
-        hash_map = {}  # key -> inner_dict, where key = (k, b), inner_dict is index -> list
+        hash_map    # dict  # key -> inner_dict, where key = (k, b), inner_dict is index -> list
 
         length = l..(points)
         ___ i __ xrange(length):
@@ -53,7 +53,7 @@ class Solution:
             r.. 0
 
         maxa = -1<<32
-        ___ key, item __ hash_map.items():
+        ___ key, item __ hash_map.i..:
             # current = len(filter(lambda x: x==1, item)) # increase complexity
             current = item.c.. 1)
             __ current>maxa:
@@ -73,7 +73,7 @@ class Solution:
             r.. length
 
         ___ i __ xrange(length):
-            hash_map = {}
+            hash_map    # dict
             duplicate = 1 # point_i itself
             ___ j __ xrange(length):
                 __ i__j:

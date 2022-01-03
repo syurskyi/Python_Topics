@@ -12,5 +12,5 @@ WORKOUTS = {'mon': 'upper body #1',
 ___ test_print_workout_days(capfd):
     workout = print_workout_days()
     output = capfd.readouterr()[0]
-    ... type(output) __ s..
+    ... t..(output) __ s..
     ... workout('upper body #1') __ 'Mon'

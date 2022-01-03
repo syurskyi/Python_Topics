@@ -5,14 +5,14 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you
 climb to the top?
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ climbStairs(self, n):
         """
         :type n: int
         :rtype: int
         """
         t = [0 ___ i __ r..(n + 1)]
-        r.. self.climb(n, t)
+        r.. climb(n, t)
 
     ___ climb(self, n, t):
         __ n __ 0:
@@ -22,7 +22,7 @@ class Solution(object):
         ____ t[n] != 0:
             r.. t[n]
         ____:
-            t[n] = self.climb(n - 1, t) + self.climb(n - 2, t)
+            t[n] = climb(n - 1, t) + climb(n - 2, t)
             r.. t[n]
 
 

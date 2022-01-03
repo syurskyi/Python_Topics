@@ -17,7 +17,7 @@ If S = [1,2,2], a solution is:
 ]
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ subsetsWithDup(self, S):
         """
         dfs
@@ -27,7 +27,7 @@ class Solution:
         """
         S.s..()
         result    # list
-        self.get_subset(S, [], result)
+        get_subset(S, [], result)
         r.. result
 
     ___ get_subset(self, S, current, result):
@@ -36,7 +36,7 @@ class Solution:
             # JUMP, avoid duplicates
             __ ind-1>=0 a.. val__S[ind-1]:  # ensure uni-direction
                 continue
-            self.get_subset(S[ind+1:], current+[val], result)
+            get_subset(S[ind+1:], current+[val], result)
 
 
 __ __name____"__main__":

@@ -39,7 +39,7 @@ ____ typing _______ List
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
-class Solution:
+c_ Solution:
     ___ orangesRotting(self, grid: List[List[int]]) -> int:
         """
         maintain a q for the newly rotten

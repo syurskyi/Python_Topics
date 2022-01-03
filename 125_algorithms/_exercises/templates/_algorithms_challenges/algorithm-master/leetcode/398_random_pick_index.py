@@ -1,12 +1,12 @@
 ____ random _______ randint
 
 
-class Solution:
-    ___ __init__(self, A):
+c_ Solution:
+    ___ - , A):
         """
         :type A: List[int]
         """
-        self.A = A
+        A = A
 
     ___ pick(self, target):
         """
@@ -16,8 +16,8 @@ class Solution:
         res = -1
         cnt = 0
 
-        ___ i __ r..(l..(self.A)):
-            __ self.A[i] != target:
+        ___ i __ r..(l..(A)):
+            __ A[i] != target:
                 continue
             cnt += 1
             __ randint(1, cnt) __ cnt:

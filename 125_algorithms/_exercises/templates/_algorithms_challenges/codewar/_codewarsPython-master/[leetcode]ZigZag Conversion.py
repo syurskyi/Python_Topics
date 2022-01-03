@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param {string} s
     # @param {integer} numRows
     # @return {string}
@@ -8,7 +8,7 @@ class Solution:
         shift = (numRows - 1) * 2 __ numRows > 1 ____ 1
         ___ i __ r..(l..(s)):
             contain[trans[i%shift]].a..(s[i])
-        r.. ''.join([''.join(con) ___ con __ contain])
+        r.. ''.j..([''.j..(con) ___ con __ contain])
 
 test = Solution()
 print(test.convert("PAYPALISHIRING", 3))

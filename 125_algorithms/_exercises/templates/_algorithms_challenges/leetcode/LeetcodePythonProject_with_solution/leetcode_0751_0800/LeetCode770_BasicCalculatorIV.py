@@ -3,7 +3,7 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ basicCalculatorIV(self, expression, evalvars, evalints):
         """
         :type expression: str
@@ -13,7 +13,7 @@ class Solution(object):
         """
         pass
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "e + 8 - a + 5",
@@ -42,7 +42,7 @@ class Solution(object):
             ],
         ]
         ___ expression, evalvars, evalints __ testCases:
-            result = self.basicCalculatorIV(expression, evalvars, evalints)
+            result = basicCalculatorIV(expression, evalvars, evalints)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findShortestSubArray(self, A):
         """
         :type A: List[int]
@@ -8,7 +8,7 @@ class Solution:
             r.. 0
 
         n = l..(A)
-        L, R, C = {}, {}, {}
+        L, R, C    # dict, {}, {}
         ___ i __ r..(n):
             __ A[i] n.. __ L:
                 L[A[i]] = i
@@ -17,7 +17,7 @@ class Solution:
 
         ans = l..(A)
         degree = max(C.values())
-        ___ a, c __ C.items():
+        ___ a, c __ C.i..:
             __ c __ degree a.. R[a] - L[a] + 1 < ans:
                 ans = R[a] - L[a] + 1
 

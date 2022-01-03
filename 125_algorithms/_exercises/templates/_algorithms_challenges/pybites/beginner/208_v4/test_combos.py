@@ -24,5 +24,5 @@ ___ _sort_all(ret):
 ])
 ___ test_find_number_pairs(numbers, N, expected):
     actual = find_number_pairs(numbers, N=N)
-    ... type(actual) __ l..
+    ... t..(actual) __ l..
     ... _sort_all(actual) __ _sort_all(expected)

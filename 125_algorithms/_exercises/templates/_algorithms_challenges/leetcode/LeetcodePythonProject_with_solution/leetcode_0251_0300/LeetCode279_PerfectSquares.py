@@ -4,7 +4,7 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ numSquares(self, n):
         """
         :type n: int
@@ -22,7 +22,7 @@ class Solution(object):
                     dp[i] = m..(dp[i], dp[i-j*j]+1)
         r.. dp[-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             12,
             13,
@@ -30,7 +30,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % (n))
-            result = self.numSquares(n)
+            result = numSquares(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 

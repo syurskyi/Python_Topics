@@ -3,7 +3,7 @@ Created on Mar 10, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ evaluate(self, expression):
         """
         :type expression: str
@@ -45,8 +45,8 @@ class Solution(object):
         :type expression: str
         :rtype: int
         """
-        hashmap = {}
-        r.. self.helper(expression, hashmap)
+        hashmap    # dict
+        r.. helper(expression, hashmap)
     
     ___ helper(self, exp, hashmap):
         __ exp[0] __ '-' o. exp.isdigit():
@@ -56,23 +56,23 @@ class Solution(object):
         ____:
             exp = exp[1:-1]
             __ exp[:3] __ 'add':
-                sub1, i = self.nextElem(exp, 4)
-                sub2, _ = self.nextElem(exp, i+1)
-                res = self.helper(sub1, hashmap)+self.helper(sub2, hashmap)
+                sub1, i = nextElem(exp, 4)
+                sub2, _ = nextElem(exp, i+1)
+                res = helper(sub1, hashmap)+helper(sub2, hashmap)
                 r.. res
             ____ exp[:4] __ 'mult':
-                sub1, i = self.nextElem(exp, 5)
-                sub2, _ = self.nextElem(exp, i+1)
-                res = self.helper(sub1, hashmap)*self.helper(sub2, hashmap)
+                sub1, i = nextElem(exp, 5)
+                sub2, _ = nextElem(exp, i+1)
+                res = helper(sub1, hashmap)*helper(sub2, hashmap)
                 r.. res
             ____:
                 i = 3
                 w... T...
-                    sub1, i = self.nextElem(exp, i+1)
+                    sub1, i = nextElem(exp, i+1)
                     __ i __ l..(exp):
-                        r.. self.helper(sub1, hashmap)
-                    sub2, i = self.nextElem(exp, i+1)
-                    hashmap[sub1] = self.helper(sub2, hashmap)
+                        r.. helper(sub1, hashmap)
+                    sub2, i = nextElem(exp, i+1)
+                    hashmap[sub1] = helper(sub2, hashmap)
     
     ___ nextElem(self, s, i):
         res = ''
@@ -96,7 +96,7 @@ class Solution(object):
                 i += 1
             r.. res, i
     
-    ___ test(self):
+    ___ test
         testCases = [
             '(add 1 2)',
             '(mult 3 (add 2 3))',
@@ -109,7 +109,7 @@ class Solution(object):
         ]
         ___ expression __ testCases:
             print('expression: %s' % expression)
-            result = self.evaluate(expression)
+            result = evaluate(expression)
             print('result: %s' % result)
             print('-='*30+'-')
 

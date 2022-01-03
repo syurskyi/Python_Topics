@@ -48,5 +48,5 @@ ___ fromAscii85(data):
             __ padding > 0:
                 encoded_byte = encoded_byte[:-padding * 2]
             index += 5
-            result += ''.join([chr(int(encoded_byte[i:i + 2], 16)) ___ i __ r..(0, l..(encoded_byte), 2)])
+            result += ''.j..([chr(int(encoded_byte[i:i + 2], 16)) ___ i __ r..(0, l..(encoded_byte), 2)])
     r.. result

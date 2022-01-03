@@ -4,7 +4,7 @@ Created on Mar 7, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ wallsAndGates(self, rooms):
         """
         :type rooms: List[List[int]]
@@ -15,7 +15,7 @@ class Solution(object):
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ rooms[i][j] __ 0:
-                    self.bfs(rooms, i, j)
+                    bfs(rooms, i, j)
     
     ___ bfs(self, rooms, i, j):
         m, n = l..(rooms), l..(rooms[0])
@@ -29,7 +29,7 @@ class Solution(object):
                     __ rooms[x][y] > rooms[i0][j0]:
                         queue.a..((x, y, newDist))
     
-    ___ test(self):
+    ___ test
         matrix = [
             [float('inf'), -1, 0, float('inf')],
             [float('inf'), float('inf'), float('inf'), -1],
@@ -37,10 +37,10 @@ class Solution(object):
             [0, -1, float('inf'), float('inf')],
         ]
         print('before:')
-        print('\n'.join([s..(l) ___ l __ matrix]))
-        self.wallsAndGates(matrix)
+        print('\n'.j..([s..(l) ___ l __ matrix]))
+        wallsAndGates(matrix)
         print('after:')
-        print('\n'.join([s..(l) ___ l __ matrix]))
+        print('\n'.j..([s..(l) ___ l __ matrix]))
         print('-='*30+'-')
 
 __ __name__ __ '__main__':

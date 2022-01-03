@@ -11,7 +11,7 @@ ___ decompress(string: s.., table: Dict[s.., s..]) -> s..:
         ____:
             result.a..(c)
 
-    r.. ''.join(result)
+    r.. ''.j..(result)
 
 
 

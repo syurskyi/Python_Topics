@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: K: An integer
     @param: A: An integer array
@@ -8,7 +8,7 @@ class Solution:
         """
         the index of `K`th child is `K - 1`
         """
-        r.. self.quick_select(K - 1, A, 0, l..(A) - 1)
+        r.. quick_select(K - 1, A, 0, l..(A) - 1)
 
     ___ quick_select(self, k, A, start, end):
         __ start >= end:
@@ -29,8 +29,8 @@ class Solution:
                 right -= 1
 
         __ start <= k <= right:
-            r.. self.quick_select(k, A, start, right)
+            r.. quick_select(k, A, start, right)
         ____ left <= k <= end:
-            r.. self.quick_select(k, A, left, end)
+            r.. quick_select(k, A, left, end)
         ____:
             r.. A[k]

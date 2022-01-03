@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ readBinaryWatch(self, num):
     """
     :type num: int

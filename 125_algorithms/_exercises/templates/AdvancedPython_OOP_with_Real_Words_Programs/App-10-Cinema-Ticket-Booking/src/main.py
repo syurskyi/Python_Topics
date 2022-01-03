@@ -71,11 +71,11 @@ c_ Card:
 
     database  "banking.db"
 
-    ___  -    type, number, cvc, holder):
+    ___  -    t.., number, cvc, holder):
         holder  holder
         cvc  cvc
         number  number
-        type  type
+        t..  t..
 
     ___ validate   price):
         """Checks if Card is valid and has balance.
@@ -105,7 +105,7 @@ c_ Ticket:
     ___  -    user, price, seat_number):
         user  user
         price  price
-        id  "".join([random.choice(string.ascii_letters) ___ i __ r..(8)])
+        id  "".j..([random.choice(string.ascii_letters) ___ i __ r..(8)])
         seat_number  seat_number
 
     ___ to_pdf _

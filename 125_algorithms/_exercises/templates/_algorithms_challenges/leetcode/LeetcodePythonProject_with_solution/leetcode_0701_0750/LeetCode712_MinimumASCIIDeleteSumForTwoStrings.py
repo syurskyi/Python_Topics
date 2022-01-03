@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minimumDeleteSum(self, s1, s2):
         """
         :type s1: str
@@ -24,7 +24,7 @@ class Solution(object):
                     dp[i+1][j+1] = m..(dp[i+1][j]+ord(s2[j]), dp[i][j+1]+ord(s1[i]))
         r.. dp[-1][-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'sea',
@@ -38,7 +38,7 @@ class Solution(object):
         ___ s1, s2 __ testCases:
             print('s1: %s' % s1)
             print('s2: %s' % s2)
-            result = self.minimumDeleteSum(s1, s2)
+            result = minimumDeleteSum(s1, s2)
             print('result: %s' % result)
             print('-='*30+'-')
 

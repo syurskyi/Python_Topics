@@ -31,7 +31,7 @@ ___ is_winner(board):
     player_two_won = has_the_moves(player_two, player_two_moves)
 
     __ player_one_won o. player_two_won:
-        r.. True
+        r.. T..
     ____:
         r.. N..
 
@@ -53,4 +53,4 @@ ___ tic_tac_toe(games):
 
 __ __name__ __ '__main__':
     tic_tac_toe(input())
-    print(' '.join(answer))
+    print(' '.j..(answer))

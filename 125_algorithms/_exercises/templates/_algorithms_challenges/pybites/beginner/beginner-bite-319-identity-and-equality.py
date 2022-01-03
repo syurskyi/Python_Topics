@@ -43,20 +43,20 @@ Check out the articles below for additional pointers to solve the bite:
 """
 
 # TODO: Fix age and same_configuration functions (see test results)
-class Car:
+c_ Car:
     """
     Car class
     -> Have a closer look at lines marked with '# *'
     """
 
-    ___ __init__(self, model, color):
-        self.model = model
-        self.color = color
+    ___ - , model, color):
+        model = model
+        color = color
 
     ___ __eq__(self, other_car):
         r.. (
-            self.model.lower() __ other_car.model.lower()
-            a.. self.color.lower() __ other_car.color.lower()
+            model.l.. __ other_car.model.l..
+            a.. color.l.. __ other_car.color.l..
         )
 
     @staticmethod
@@ -73,7 +73,7 @@ class Car:
 
     @staticmethod
     ___ has_same_configuration(config1, config2):
-        __ type(config1) != l.. o. type(config2) != l..:  # *
+        __ t..(config1) != l.. o. t..(config2) != l..:  # *
             raise TypeError()
         r.. config1 __ config2  # *
 
@@ -84,9 +84,9 @@ ___ is_same_car_color_and_model(car1, car2):
     Returns true if car1 and car2 are the of same model and color
     """
     __ car1.__eq__(car2):
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..
 
 
 # TODO: Complete function
@@ -95,15 +95,15 @@ ___ is_same_instance_of_car(car1, car2):
     Returns true if car1 and car2 are exactly the same object (instance)
     """
     __ car1 __ car2:
-        r.. True
+        r.. T..
     ____:
         r.. false
 
 
-config1 = {}
+config1    # dict
 config2 = [['gas', 'electro', 'hybrid'], '200 PS', 'radio']
 
-__ type(config1) != l.. o. type(config2) != l..:
+__ t..(config1) != l.. o. t..(config2) != l..:
     raise TypeError()
 ____:
     print("OK")

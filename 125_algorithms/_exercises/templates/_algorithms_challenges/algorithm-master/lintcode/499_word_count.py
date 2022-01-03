@@ -1,4 +1,4 @@
-class WordCount:
+c_ WordCount:
 
     # @param {str} line a text, for example "Bye Bye see you next"
     ___ mapper(self, _, line):

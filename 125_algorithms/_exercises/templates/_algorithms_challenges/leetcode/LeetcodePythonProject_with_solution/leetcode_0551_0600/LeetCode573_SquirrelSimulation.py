@@ -3,7 +3,7 @@ Created on Sep 3, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     # Don't need extra space if using maxDiff
     ___ minDistance(self, height, width, tree, squirrel, nuts):
         """
@@ -44,7 +44,7 @@ class Solution(object):
             minVal = m..(minVal, dist)
         r.. minVal
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 5,
@@ -62,7 +62,7 @@ class Solution(object):
             ],
         ]
         ___ height, width, tree, squirrel, nuts __ testCases:
-            result = self.minDistance(height, width, tree, squirrel, nuts)
+            result = minDistance(height, width, tree, squirrel, nuts)
             print('result: %s' % result)
             print('-='*30+'-')
 

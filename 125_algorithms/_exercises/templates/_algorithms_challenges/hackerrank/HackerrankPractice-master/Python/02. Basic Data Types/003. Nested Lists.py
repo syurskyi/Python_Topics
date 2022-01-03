@@ -12,4 +12,4 @@ numberOfStudents = int(input())
 classList    # list
 ___ i __ r..(numberOfStudents):
     classList.a..([s..(input()), float(input())])
-print('\n'.join(secondLowestGrade(classList)))
+print('\n'.j..(secondLowestGrade(classList)))

@@ -13,7 +13,7 @@ bad version.
 """
 
 
-class Solution:
+c_ Solution:
     ___ findFirstBadVersion(self, n):
         """
         :type n: int

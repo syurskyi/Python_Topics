@@ -3,7 +3,7 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ calPoints(self, ops):
         """
         :type ops: List[str]
@@ -26,14 +26,14 @@ class Solution(object):
                 valids.a..(int(c))
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             ["5","2","C","D","+"],
             ["5","-2","4","C","D","9","+","+"],
         ]
         ___ ops __ testCases:
             print('ops: %s' % ops)
-            result = self.calPoints(ops)
+            result = calPoints(ops)
             print('result: %s' % result)
             print('-='*30+'-')
 

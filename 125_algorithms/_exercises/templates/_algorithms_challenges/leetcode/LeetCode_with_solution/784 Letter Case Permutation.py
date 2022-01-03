@@ -21,9 +21,9 @@ S will consist only of letters or digits.
 ____ typing _______ List
 
 
-class Solution:
-    ___ __init__(self):
-        self.ret    # list
+c_ Solution:
+    ___ - ):
+        ret    # list
 
     ___ letterCasePermutation(self, S: s..) -> List[s..]:
         """
@@ -31,27 +31,27 @@ class Solution:
         """
         # S_lst = S.split()  # error
         S_lst = l..(S)
-        self.dfs([], S_lst, 0)
+        dfs([], S_lst, 0)
         r.. [
-            "".join(e)
-            ___ e __ self.ret
+            "".j..(e)
+            ___ e __ ret
         ]
 
     ___ dfs(self, lst, S_lst, i):
         __ l..(lst) __ l..(S_lst):
-            self.ret.a..(l..(lst))
+            ret.a..(l..(lst))
             r..
 
         __ S_lst[i].isdigit():
             lst.a..(S_lst[i])
-            self.dfs(lst, S_lst, i + 1)
+            dfs(lst, S_lst, i + 1)
             lst.pop()
         ____:
             lst.a..(S_lst[i].lower())
-            self.dfs(lst, S_lst, i + 1)
+            dfs(lst, S_lst, i + 1)
             lst.pop()
             lst.a..(S_lst[i].upper())
-            self.dfs(lst, S_lst, i + 1)
+            dfs(lst, S_lst, i + 1)
             lst.pop()
 
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ calculateMinimumHP(self, G):
         """
         :type G: List[List[int]]

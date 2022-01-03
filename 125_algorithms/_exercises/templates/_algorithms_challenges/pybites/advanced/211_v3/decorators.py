@@ -3,7 +3,7 @@ ____ functools _______ wraps
 MAX_RETRIES = 3
 
 
-class MaxRetriesException(Exception):
+c_ MaxRetriesException(Exception):
     pass
 
 

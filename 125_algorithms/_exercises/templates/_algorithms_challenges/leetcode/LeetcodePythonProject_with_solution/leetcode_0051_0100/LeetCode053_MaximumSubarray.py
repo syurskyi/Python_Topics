@@ -4,7 +4,7 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxSubArray(self, nums):
         """
         :type nums: List[int]
@@ -27,13 +27,13 @@ class Solution(object):
         # Divide and Co
         pass
     
-    ___ test(self):
+    ___ test
         testCases = [
             [-2,1,-3,4,-1,2,1,-5,4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.maxSubArray(nums)
+            result = maxSubArray(nums)
             print('result: %s' % (result))
             print('-='*15+'-')
 

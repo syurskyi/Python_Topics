@@ -3,7 +3,7 @@ Created on Apr 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numberOfLines(self, widths, S):
         """
         :type widths: List[int]

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ complexNumberMultiply(self, a, b):
     """
     :type a: str

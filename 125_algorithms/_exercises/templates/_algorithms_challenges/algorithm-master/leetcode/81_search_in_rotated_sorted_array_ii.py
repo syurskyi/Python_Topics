@@ -1,15 +1,15 @@
-class Solution:
-    ___ search(self, nums, target):
+c_ Solution:
+    ___ s..(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: bool
         """
         __ n.. nums:
-            r.. False
+            r.. F..
 
         ___ num __ nums:
             __ num __ target:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

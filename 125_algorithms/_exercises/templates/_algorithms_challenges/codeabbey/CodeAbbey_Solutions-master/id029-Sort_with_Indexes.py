@@ -5,5 +5,5 @@ ___ sortIndexes(amount, values):
         ___ x __ r..(amount):
             __ sortedValue __ values[x]:
                 answer.a..(s..(x+1))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 sortIndexes(input(),[int(x) ___ x __ raw_input().s.. ])

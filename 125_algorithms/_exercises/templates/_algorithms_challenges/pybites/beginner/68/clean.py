@@ -2,7 +2,7 @@ _______ string
 
 ___ remove_punctuation(input_string):
     """Return a str with punctuation chars stripped out"""
-    r..  ''.join([i ___ i __ input_string __ i n.. __ string.punctuation])
+    r..  ''.j..([i ___ i __ input_string __ i n.. __ string.punctuation])
 
 
 

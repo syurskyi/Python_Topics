@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ wiggleSort(self, nums):
         """
         :type nums: list[int]

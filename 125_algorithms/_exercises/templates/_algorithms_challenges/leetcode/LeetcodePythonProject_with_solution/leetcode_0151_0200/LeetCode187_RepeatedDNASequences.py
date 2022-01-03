@@ -4,7 +4,7 @@ Created on Feb 15, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findRepeatedDnaSequences(self, s):
         """
         :type s: str
@@ -15,7 +15,7 @@ class Solution(object):
         __ n.. s o. l..(s) < 10: r.. []
         ___ i __ r..(0, l..(s)-9):
             subStr = s[i:i+10]
-            code = self.encode(subStr)
+            code = encode(subStr)
             __ code __ resultCodes:
                 result.add(subStr)
             ____:
@@ -35,18 +35,18 @@ class Solution(object):
                 sumVal = sumVal*4+3
         r.. sumVal
     
-    ___ test(self):
+    ___ test
         testCases = [
             'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT',
             'AAAAAAAAAAAA',
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.findRepeatedDnaSequences(s)
+            result = findRepeatedDnaSequences(s)
             print('result: %s' % (result))
             print('-='*20+'-')
-        print(self.encode('AAAAACCCCC'))
-        print(self.encode('CCCCCAAAAA'))
+        print(encode('AAAAACCCCC'))
+        print(encode('CCCCCAAAAA'))
 
 __ __name__ __ '__main__':
     Solution().test()

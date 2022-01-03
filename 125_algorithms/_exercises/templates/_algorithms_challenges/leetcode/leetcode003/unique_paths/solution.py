@@ -9,7 +9,7 @@ diagram below).
 How many possible unique paths are there?
 """
 
-class Solution:
+c_ Solution:
     # @return an integer
     ___ uniquePaths(self, m, n):
         t = [[1] * m] * n

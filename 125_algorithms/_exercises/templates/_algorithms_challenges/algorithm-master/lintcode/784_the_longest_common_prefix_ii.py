@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param D: the n strings
     @param target: the target string

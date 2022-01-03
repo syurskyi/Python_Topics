@@ -1,17 +1,17 @@
-class TwoSum(object):
+c_ TwoSum(object):
 
-  ___ __init__(self):
+  ___ - ):
     """
     initialize your data structure here
     """
-    self.nums = {}
+    nums    # dict
 
   ___ add(self, number):
     """
     Add the number to an internal data structure.
     :rtype: nothing
     """
-    self.nums[number] = self.nums.get(number, 0) + 1
+    nums[number] = nums.get(number, 0) + 1
 
   ___ find(self, value):
     """
@@ -19,17 +19,17 @@ class TwoSum(object):
     :type value: int
     :rtype: bool
     """
-    d = self.nums
+    d = nums
     ___ num __ d:
       t = value - num
       __ t __ d:
         __ t __ num:
           __ d[t] >= 2:
-            r.. True
+            r.. T..
         ____:
-          r.. True
+          r.. T..
 
-    r.. False
+    r.. F..
 
 # Your TwoSum object will be instantiated and called as such:
 # twoSum = TwoSum()

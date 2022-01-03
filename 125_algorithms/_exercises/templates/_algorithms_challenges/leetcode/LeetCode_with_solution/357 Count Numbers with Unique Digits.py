@@ -8,7 +8,7 @@ Given n = 2, return 91. (The answer should be the total numbers in the range of 
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ countNumbersWithUniqueDigits(self, n):
         """
         Let F(i) be the number of numbers with unique digits of length i

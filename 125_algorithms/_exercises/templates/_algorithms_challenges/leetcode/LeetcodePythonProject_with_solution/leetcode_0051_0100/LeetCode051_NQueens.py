@@ -4,7 +4,7 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ solveNQueens(self, n):
         """
         :type n: int
@@ -12,8 +12,8 @@ class Solution(object):
         """
         __ n <= 0: r.. []
         res    # list
-        self.helper(n, res, [], 0)
-        res = self.convert(res)
+        helper(n, res, [], 0)
+        res = convert(res)
         r.. res
     
     ___ helper(self, n, res, cur, ind):
@@ -21,9 +21,9 @@ class Solution(object):
             res.a..(l..(cur))
             r..
         ___ val __ r..(n):
-            __ self.isValid(cur, ind, val):
+            __ isValid(cur, ind, val):
                 cur.a..(val)
-                self.helper(n, res, cur, ind+1)
+                helper(n, res, cur, ind+1)
                 cur.pop()
     
     ___ convert(self, nums):
@@ -40,12 +40,12 @@ class Solution(object):
     ___ isValid(self, cur, ind, val):
         ___ i __ r..(ind):
             __ cur[i] __ val:
-                r.. False
+                r.. F..
             __ abs(i-ind) __ abs(cur[i]-val):
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             1,
             2,
@@ -55,10 +55,10 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            results = self.solveNQueens(n)
+            results = solveNQueens(n)
             print('results')
             ___ res __ results:
-                print('\n'.join(res))
+                print('\n'.j..(res))
                 print('-'*20)
             print('-='*30+'-')
 

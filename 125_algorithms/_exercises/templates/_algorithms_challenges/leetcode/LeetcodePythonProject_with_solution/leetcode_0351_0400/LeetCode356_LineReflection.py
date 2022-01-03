@@ -4,10 +4,10 @@ Created on Mar 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ isReflected(self, points):
         minVal, maxVal = float('inf'), float('-inf')
-        hashmap = {}
+        hashmap    # dict
         ___ point __ points:
             x, y = point[0], point[1]
             minVal = m..(minVal, x)
@@ -23,5 +23,5 @@ class Solution(object):
                 continue
             ____:
                 __ 2*mid-x n.. __ hashmap[point[1]]:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findDiagonalOrder(self, matrix):
     """
     :type matrix: List[List[int]]

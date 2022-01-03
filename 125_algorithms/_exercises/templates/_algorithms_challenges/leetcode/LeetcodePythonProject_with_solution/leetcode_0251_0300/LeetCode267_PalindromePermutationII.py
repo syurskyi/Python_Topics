@@ -4,19 +4,19 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ generatePalindromes(self, s):
         """
         :type s: str
         :rtype: List[str]
         """
-        __ n.. s: r.. False
-        hashmap = {}
+        __ n.. s: r.. F..
+        hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         odd = 0
         oddVal = ''
-        ___ key, value __ hashmap.items():
+        ___ key, value __ hashmap.i..:
             __ value%2 != 0:
                 oddVal = key
                 odd += 1
@@ -27,20 +27,20 @@ class Solution(object):
             __ odd >= 2:
                 r.. []
         result    # list
-        self.helper(oddVal, l..(s), hashmap, result)
+        helper(oddVal, l..(s), hashmap, result)
         r.. result
     
     ___ helper(self, s0, length, hashmap, result):
         __ l..(s0) >= length:
             result.a..(s0)
             r..
-        ___ c, val __ hashmap.items():
+        ___ c, val __ hashmap.i..:
             __ val >= 2:
                 hashmap[c] -= 2
-                self.helper(c+s0+c, length, hashmap, result)
+                helper(c+s0+c, length, hashmap, result)
                 hashmap[c] += 2
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aaabb',
             'abc',
@@ -48,7 +48,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.generatePalindromes(s)
+            result = generatePalindromes(s)
             print('result: %s' % (result))
             print('-='*20+'-')
             

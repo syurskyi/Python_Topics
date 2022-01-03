@@ -3,13 +3,13 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLongestSubstringTwoDistinct(self, s):
         """
         :type s: str
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         l = 0
         res = 0
         ___ i, c __ e..(s):
@@ -22,7 +22,7 @@ class Solution(object):
         res = max(res, l..(s)-l)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             'abccccbbb',
             'eceba',
@@ -30,7 +30,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.lengthOfLongestSubstringTwoDistinct(s)
+            result = lengthOfLongestSubstringTwoDistinct(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

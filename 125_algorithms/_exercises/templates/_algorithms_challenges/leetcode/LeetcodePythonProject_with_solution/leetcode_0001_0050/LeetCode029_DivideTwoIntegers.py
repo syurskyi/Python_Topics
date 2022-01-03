@@ -3,7 +3,7 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ divide(self, dividend, divisor):
         """
         :type dividend: int
@@ -20,7 +20,7 @@ class Solution(object):
         __ divisor __ 0: r.. 2**32-1
         __ dividend __ 0 o. dividend < divisor:
             r.. 0
-        res = self.ldivide(dividend, divisor)
+        res = ldivide(dividend, divisor)
         __ res >= 2**31-1:
             res = 2**31-1 __ sign __ 1 ____ -2**31
         ____:
@@ -34,9 +34,9 @@ class Solution(object):
         w.... sumVal+sumVal <= dividend:
             sumVal += sumVal
             multiple += multiple
-        r.. multiple + self.ldivide(dividend-sumVal, divisor)
+        r.. multiple + ldivide(dividend-sumVal, divisor)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 1],
             [5, 2],
@@ -46,7 +46,7 @@ class Solution(object):
         ___ dividend, divisor __ testCases:
             print('dividend: %s' % dividend)
             print('divisor: %s' % divisor)
-            result = self.divide(dividend, divisor)
+            result = divide(dividend, divisor)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -19,7 +19,7 @@ True
 _______ collections
 
 
-class Solution:
+c_ Solution:
     ___ areSentencesSimilar(self, words1, words2, pairs):
         """
         :type words1: List[str]
@@ -28,7 +28,7 @@ class Solution:
         :rtype: bool
         """
         __ l..(words1) != l..(words2):
-            r.. False
+            r.. F..
 
         simils = collections.defaultdict(set)
 
@@ -41,6 +41,6 @@ class Solution:
             b = words2[i]
 
             __ a != b a.. b n.. __ simils[a]:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

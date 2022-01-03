@@ -6,6 +6,6 @@ ___ min_of_three():
     ___ run __ r..(runs):
         answer.a..(s..(m..([int(x) ___ x __ input().s.. ])))
         
-    print(' '.join(answer))
+    print(' '.j..(answer))
 
 min_of_three()

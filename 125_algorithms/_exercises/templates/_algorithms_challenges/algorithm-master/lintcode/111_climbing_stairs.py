@@ -1,7 +1,7 @@
 """
 DP: rolling array with `n + 1`
 """
-class Solution:
+c_ Solution:
     """
     @param n: An integer
     @return: An integer
@@ -28,7 +28,7 @@ class Solution:
 """
 DP: origin `n`
 """
-class Solution:
+c_ Solution:
     """
     @param n: An integer
     @return: An integer
@@ -51,7 +51,7 @@ class Solution:
 """
 DP: origin `n + 1`
 """
-class Solution:
+c_ Solution:
     """
     @param n: An integer
     @return: An integer

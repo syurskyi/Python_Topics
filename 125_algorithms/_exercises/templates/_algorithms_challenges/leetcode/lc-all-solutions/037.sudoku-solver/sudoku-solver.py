@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ solveSudoku(self, board):
     """
     :type board: List[List[str]]
@@ -20,25 +20,25 @@ class Solution(object):
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 1
           board[i][j] = s..(k)
           __ i __ j __ l..(board) - 1:
-            r.. True
+            r.. T..
           __ i + 1 < l..(board):
             __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox):
-              r.. True
+              r.. T..
           ____ j + 1 < l..(board):
             __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox):
-              r.. True
+              r.. T..
           board[i][j] = "."
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 0
       ____:
         __ i __ j __ l..(board) - 1:
-          r.. True
+          r.. T..
         __ i + 1 < l..(board):
           __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox):
-            r.. True
+            r.. T..
         ____ j + 1 < l..(board):
           __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox):
-            r.. True
-      r.. False
+            r.. T..
+      r.. F..
 
     ___ i __ r..(l..(board)):
       ___ j __ r..(l..(board)):

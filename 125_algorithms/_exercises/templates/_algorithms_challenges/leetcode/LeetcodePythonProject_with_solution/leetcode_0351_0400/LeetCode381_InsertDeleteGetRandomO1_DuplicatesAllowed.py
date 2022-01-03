@@ -4,35 +4,35 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-class RandomizedCollection(object):
-    ___ __init__(self):
-        self.vals    # list
-        self.pos = {}
+c_ RandomizedCollection(object):
+    ___ - ):
+        vals    # list
+        pos    # dict
     
     ___ insert(self, val):
-        self.vals.a..(val)
-        __ val __ self.pos:
-            self.pos[val].add(l..(self.vals)-1)
-            r.. False
+        vals.a..(val)
+        __ val __ pos:
+            pos[val].add(l..(vals)-1)
+            r.. F..
         ____:
-            self.pos[val] = set([l..(self.vals)-1])
-            r.. True
+            pos[val] = set([l..(vals)-1])
+            r.. T..
     
     ___ remove(self, val):
-        __ val __ self.pos:
-            lastVal = self.vals[-1]
-            ind = self.pos[val].pop()
-            self.vals[ind] = lastVal
-            __ self.pos[lastVal]:
-                self.pos[lastVal].add(ind)
-                self.pos[lastVal].discard(l..(self.vals)-1)
-            self.vals.pop()
-            __ n.. self.pos[val]:
-                del self.pos[val]
-            r.. True
-        r.. False
+        __ val __ pos:
+            lastVal = vals[-1]
+            ind = pos[val].pop()
+            vals[ind] = lastVal
+            __ pos[lastVal]:
+                pos[lastVal].add(ind)
+                pos[lastVal].discard(l..(vals)-1)
+            vals.pop()
+            __ n.. pos[val]:
+                del pos[val]
+            r.. T..
+        r.. F..
     
-    ___ getRandom(self):
+    ___ getRandom
         _______ random
-        r.. random.choice(self.vals)
+        r.. random.choice(vals)
     

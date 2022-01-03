@@ -33,7 +33,7 @@ ____ typing _______ List
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ numRescueBoats(self, people: List[int], limit: int) -> int:
         """
         sort + gready

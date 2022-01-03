@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ maxNumber(self, a, b, k):
         """
         :type a: list[int]
@@ -12,9 +12,9 @@ class Solution:
             max(0, k - l..(a)),
             m..(k, l..(b)) + 1
         ):
-            res = self.merge(
-                self.get_max(a, k - size),
-                self.get_max(b, size)
+            res = merge(
+                get_max(a, k - size),
+                get_max(b, size)
             )
             ans = max(ans, res)
 

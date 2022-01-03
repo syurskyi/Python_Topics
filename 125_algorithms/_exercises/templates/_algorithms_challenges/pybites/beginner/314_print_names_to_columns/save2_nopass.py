@@ -9,4 +9,4 @@ ___ print_names_to_columns(names: List[s..], cols: int = 2) -> N..
         ____:
             x.a..(f'| {name:{10}}')
 
-    print(''.join(x))
+    print(''.j..(x))

@@ -3,7 +3,7 @@ Created on Sep 24, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findDerangement(self, n):
         """
         :type n: int
@@ -18,7 +18,7 @@ class Solution(object):
             dn1 = res
         r.. int(res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             1,
             2,
@@ -28,7 +28,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.findDerangement(n)
+            result = findDerangement(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

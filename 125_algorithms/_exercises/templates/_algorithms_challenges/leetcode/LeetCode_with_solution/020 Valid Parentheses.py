@@ -6,7 +6,7 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ isValid(self, s):
         """
         Algorithm: Stack
@@ -23,9 +23,9 @@ class Solution:
                 stack.a..(pair[element])
             ____ element __ pop_set:
                 __ n.. stack o. element != stack.pop():  # check NullPointer, otherwise, IndexError: pop from empty list
-                    r.. False
+                    r.. F..
 
-        r.. True __ n.. stack ____ False
+        r.. T.. __ n.. stack ____ F..
 
 
 __ __name__ __ "__main__":

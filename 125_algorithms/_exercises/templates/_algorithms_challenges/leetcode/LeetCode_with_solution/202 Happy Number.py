@@ -16,7 +16,7 @@ Example: 19 is a happy number
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ isHappy(self, n):
         """
         Start with several simple cases and find the pattern.
@@ -33,9 +33,9 @@ class Solution:
             n /= 10
             __ n __ 0:
                 __ nxt __ 1:
-                    r.. True
+                    r.. T..
                 __ nxt __ appeared:
-                    r.. False
+                    r.. F..
 
                 appeared.add(nxt)
                 n = nxt

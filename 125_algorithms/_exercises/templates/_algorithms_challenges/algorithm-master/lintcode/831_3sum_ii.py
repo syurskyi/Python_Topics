@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param n: an integer
     @return: the number of solutions
@@ -40,7 +40,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     """
     @param n: an integer
     @return: the number of solutions

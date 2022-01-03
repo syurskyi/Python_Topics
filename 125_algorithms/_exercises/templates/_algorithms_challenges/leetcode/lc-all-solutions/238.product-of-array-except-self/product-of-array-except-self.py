@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   # better way
   ___ productExceptSelf(self, nums):
     """

@@ -32,7 +32,7 @@ K will be an integer in the range [1, 2^(N-1)].
 """
 
 
-class Solution:
+c_ Solution:
     ___ kthGrammar(self, N: int, K: int) -> int:
         """
         pattern
@@ -43,16 +43,16 @@ class Solution:
         0110 1001
         recursive go thorugh the pattern
         """
-        r.. self.dfs(N, K, True)
+        r.. dfs(N, K, T..)
 
     ___ dfs(self, N, K, not_flip):
         __ N __ 1:
             r.. 0 __ not_flip ____ 1
         half_l = 2 ** (N - 1) // 2
         __ K <= half_l:
-            r.. self.dfs(N - 1, K, not_flip)
+            r.. dfs(N - 1, K, not_flip)
         ____:
-            r.. self.dfs(N - 1, K - half_l, n.. not_flip)
+            r.. dfs(N - 1, K - half_l, n.. not_flip)
 
     ___ kthGrammar_TLE(self, N: int, K: int) -> int:
         """

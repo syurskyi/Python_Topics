@@ -5,7 +5,7 @@ http://www.codewars.com/kata/52bb6539a4cf1b12d90005b7/train/python
 
 
 ___ validateBattlefield(field):
-    ships = {}
+    ships    # dict
     ___ row __ r..(l..(field[0])):
         ___ col __ r..(l..(field)):
             __ field[row][col] __ 1:
@@ -13,13 +13,13 @@ ___ validateBattlefield(field):
                     result = getShipSize(row, col, field)
                     ships[result] = ships.get(result, 0) + 1
                 except ValueError:
-                    r.. False
+                    r.. F..
     r.. ships.get(4, 0) __ 1 a.. ships.get(3, 0) __ 2 a.. ships.get(2, 0) __ 3 a.. ships.get(1, 0) __ 4
 
 
 ___ isCornerValid(row, col, field):
     __ row __ l..(field) - 1:
-        r.. True
+        r.. T..
     __ col __ 0:
         r.. field[row + 1][col + 1] != 1
     __ col __ l..(field[0]) - 1:
@@ -29,7 +29,7 @@ ___ isCornerValid(row, col, field):
 
 ___ isSideValid(row, col, field):
     __ row __ l..(field) - 1 o. col __ l..(field[0]) - 1:
-        r.. True
+        r.. T..
     r.. n.. (field[row + 1][col] != 0 a.. field[row][col + 1] != 0)
 
 

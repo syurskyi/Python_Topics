@@ -1,26 +1,26 @@
-class TrieNode:
-    ___ __init__(self):
-        self.children = {}
-        self.end_of = N..
+c_ TrieNode:
+    ___ - ):
+        children    # dict
+        end_of = N..
 
 
-class Solution:
+c_ Solution:
     ___ boggleGame(self, board, words):
         """
         :type board: list[list[str]]
         :type words: list[str]
         :rtype: int
         """
-        self.ans = 0
+        ans = 0
 
         __ n.. board o. n.. board[0]:
-            r.. self.ans
+            r.. ans
 
 
         root = TrieNode()
 
         ___ word __ words:
-            self.put(root, word)
+            put(root, word)
 
 
         m, n = l..(board), l..(board[0])
@@ -28,10 +28,10 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                self.dfs(board, x, y, root, visited, 0)
+                dfs(board, x, y, root, visited, 0)
 
 
-        r.. self.ans
+        r.. ans
 
     ___ dfs(self, board, i, j, root, visited, cnt):
         m, n = l..(board), l..(board[0])
@@ -39,13 +39,13 @@ class Solution:
         ___ x __ r..(i, m):
             ___ y __ r..(j, n):
                 next_words    # list
-                self.find_next_words(board, x, y, visited, cnt, root, next_words, [])
+                find_next_words(board, x, y, visited, cnt, root, next_words, [])
 
                 ___ pos __ next_words:
                     ___ p __ pos:
                         visited.add(p)
 
-                    self.dfs(board, x, y, root, visited, cnt + 1)
+                    dfs(board, x, y, root, visited, cnt + 1)
 
                     ___ p __ pos:
                         visited.discard(p)
@@ -64,7 +64,7 @@ class Solution:
 
         __ node.end_of __ n.. N..
             next_words.a..(path[:])
-            self.ans = max(self.ans, cnt + 1)
+            ans = max(ans, cnt + 1)
         ____:
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
@@ -76,7 +76,7 @@ class Solution:
                 __ n.. (0 <= _x < m a.. 0 <= _y < n):
                     continue
 
-                self.find_next_words(board, _x, _y, visited, cnt, node, next_words, path)
+                find_next_words(board, _x, _y, visited, cnt, node, next_words, path)
 
         path.pop()
         visited.discard((x, y))

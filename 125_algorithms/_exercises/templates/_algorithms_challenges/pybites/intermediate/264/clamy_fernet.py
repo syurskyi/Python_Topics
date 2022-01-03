@@ -8,7 +8,7 @@ ____ os _______ urandom
 ____ typing _______ ByteString, Tuple, Optional
 
 
-class ClamyFernet:
+c_ ClamyFernet:
     """Fernet implementation by clamytoe
 
     Takes a bytestring as a password and derives a Fernet
@@ -23,40 +23,40 @@ class ClamyFernet:
     urlsafe_b64encoded key using self.clf().
     """
     
-    ___ __init__(self,password=b"pybites",key_ N..
-        self._kdf = PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=os.urandom(16),iterations=100000,backend=default_backend())
-        self.password = password
+    ___ - ,password=b"pybites",key_ N..
+        _kdf = PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=os.urandom(16),iterations=100000,backend=default_backend())
+        password = password
         
         __ n.. key:
-            self.key = base64.urlsafe_b64encode(self.kdf.derive(password))
+            key = base64.urlsafe_b64encode(kdf.derive(password))
         ____:
-            self.key = key
+            key = key
 
-        self._clf = Fernet(self.key)
+        _clf = Fernet(key)
 
-    @property
-    ___ kdf(self):
+    $
+    ___ kdf
         """Derives the key from the password
 
         Uses PBKDF2HMAC to generate a secure key. This is where you will
         use the salt, algorithm, length, iterations, and backend variables.
         """
-        r.. self._kdf
+        r.. _kdf
 
 
-    @property
-    ___ clf(self):
+    $
+    ___ clf
         """Generates a Fernet object
 
         Key that is derived from cryptogrophy's fermet.
         """
 
-        r.. self._clf
+        r.. _clf
 
     ___ encrypt(self, message: s..) -> ByteString:
         """Encrypts the message passed to it"""
-        r.. self.clf.encrypt(message.encode())
+        r.. clf.encrypt(message.encode())
 
     ___ decrypt(self, token: ByteString) -> s..:
         """Decrypts the encrypted message passed to it"""
-        r.. self.clf.decrypt(token).decode()
+        r.. clf.decrypt(token).decode()

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findMissingRanges(self, nums, lower, upper):
     """
     :type nums: List[int]

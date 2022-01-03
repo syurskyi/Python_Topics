@@ -11,7 +11,7 @@ Can you solve it without using extra space?
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
     ___ hasCycle(self, head):
         """
         :type head: ListNode
@@ -23,5 +23,5 @@ class Solution(object):
             slow = slow.next
             fast = fast.next.next
             __ slow __ fast:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..

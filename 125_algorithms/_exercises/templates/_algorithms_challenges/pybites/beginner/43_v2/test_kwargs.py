@@ -14,13 +14,13 @@ ___ test_one_positional_arg():
 
 ___ test_wrong_single_kw():
     with pytest.raises(TypeError):
-        get_profile(test=True)
+        get_profile(test=T..)
 
 
 ___ test_wrong_additional_kw():
     with pytest.raises(TypeError):
         get_profile(name='bob', profession='software developer',
-                    another_flag=False)
+                    another_flag=F..)
 
 
 ___ test_correct_kw_second_default():

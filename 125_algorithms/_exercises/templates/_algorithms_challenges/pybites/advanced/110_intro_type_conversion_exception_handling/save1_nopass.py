@@ -9,6 +9,6 @@ ___ divide_numbers(numerator, denominator):
         r.. 0
     ___ number __ numerator, denominator:
         r.. int(number)
-        __ False:
+        __ F..:
             raise TypeError("Only integers are allowed")
     r.. (numerator % denominator)

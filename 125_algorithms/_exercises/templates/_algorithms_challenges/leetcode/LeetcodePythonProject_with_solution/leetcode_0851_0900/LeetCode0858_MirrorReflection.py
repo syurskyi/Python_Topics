@@ -3,7 +3,7 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ mirrorReflection(self, p, q):
         """
         :type p: int
@@ -19,12 +19,12 @@ class Solution(object):
         ____:
             r.. 1
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ p, q __ testCases:
-            res = self.mirrorReflection(p, q)
+            res = mirrorReflection(p, q)
             print('res: %s' % res)
             print('-='*30+'-')
 

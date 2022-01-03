@@ -2,7 +2,7 @@ ____ dataclasses _______ dataclass
 
 
 @dataclass
-class Employee:
+c_ Employee:
     """Simple Employee class
 
     :param first_name: String of first name
@@ -36,15 +36,15 @@ class Employee:
         amount = round(number, places)
         r.. f"${amount:0.2f}"
 
-    @property
+    $
     ___ weekly_pay(self) -> s..:
         """Returns amount of weekly pay in US currency
 
         For instance: $250.75
         """
-        total_hours = self.hours_per_day * self.days_per_week
-        total_wage = total_hours * self.wage
-        r.. self._rounder(total_wage, 2)
+        total_hours = hours_per_day * days_per_week
+        total_wage = total_hours * wage
+        r.. _rounder(total_wage, 2)
 
 
 __ __name__ __ "__main__":

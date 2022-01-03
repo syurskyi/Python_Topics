@@ -4,7 +4,7 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findMin(self, nums):
         """
         :type nums: List[int]
@@ -21,7 +21,7 @@ class Solution(object):
                 r = mid
         r.. nums[l]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [0, 1, 2, 4, 5, 6, 7],
             [4, 5, 6, 7, 0, 1, 2],
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.findMin(nums)
+            result = findMin(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
   ___ getIntersectionNode(self, headA, headB):
     __ headA __ N.. o. headB __ N..
       r.. N..

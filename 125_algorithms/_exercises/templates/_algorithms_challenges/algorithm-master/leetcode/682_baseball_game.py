@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ calPoints(self, ops):
         """
         :type ops: List[str]

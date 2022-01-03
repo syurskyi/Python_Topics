@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numDistinctIslands2(self, grid):
         """
         :type grid: List[List[int]]
@@ -18,12 +18,12 @@ class Solution(object):
                 __ grid[i][j] __ 1:
                     res = [i, i, j, j]
                     grid[i][j] = 2
-                    self.helper(grid, i, j, res)
-                    keys = self.generateKeys(grid, res)
-                    found = False
+                    helper(grid, i, j, res)
+                    keys = generateKeys(grid, res)
+                    found = F..
                     ___ key __ keys:
                         __ key __ hashset:
-                            found = True
+                            found = T..
                             break
                     __ n.. found:
                         hashset.add(keys.pop())
@@ -39,7 +39,7 @@ class Solution(object):
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
             __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:
                 grid[x][y] = 2
-                self.helper(grid, x, y, res)
+                helper(grid, x, y, res)
     
     ___ generateKeys(self, grid, res):
         hashset = set()
@@ -50,7 +50,7 @@ class Solution(object):
             ___ j __ r..(left, right+1):
                 tmp.a..(grid[i][j])
             subGrid.a..(tmp)
-        self.addRotationKeys(subGrid, hashset)
+        addRotationKeys(subGrid, hashset)
         r.. hashset
     
     ___ addRotationKeys(self, grid, hashset):
@@ -65,7 +65,7 @@ class Solution(object):
                 ___ i __ r..(m):
                     ___ j __ r..(n):
                         newGrid[j][i] = grid0[i][j]
-                hashset.add(self.getKey(newGrid))
+                hashset.add(getKey(newGrid))
                 grid0 = newGrid
             ___ _ __ r..(4):
                 m, n = l..(grid0), l..(grid0[0])
@@ -73,13 +73,13 @@ class Solution(object):
                 ___ i __ r..(m):
                     ___ j __ r..(n):
                         newGrid[n-1-j][m-1-i] = grid0[i][j]
-                hashset.add(self.getKey(newGrid))
+                hashset.add(getKey(newGrid))
                 grid0 = newGrid
     
     ___ getKey(self, grid):
-        r.. ','.join([''.join([s..(num) ___ num __ row]) ___ row __ grid])
+        r.. ','.j..([''.j..([s..(num) ___ num __ row]) ___ row __ grid])
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 '11000',
@@ -164,8 +164,8 @@ class Solution(object):
         ___ grid __ testCases:
             print('grid:')
             grid = [[int(c) ___ c __ row] ___ row __ grid]
-            print('\n'.join([s..(row) ___ row __ grid]))
-            result = self.numDistinctIslands2(grid)
+            print('\n'.j..([s..(row) ___ row __ grid]))
+            result = numDistinctIslands2(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

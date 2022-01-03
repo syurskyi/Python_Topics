@@ -4,7 +4,7 @@
 #         self.start = s
 #         self.end = e
 
-class Solution(object):
+c_ Solution(object):
   ___ insert(self, intervals, newInterval):
     """
     :type intervals: List[Interval]

@@ -1,20 +1,20 @@
-class Solution(object):
+c_ Solution(object):
 
-  ___ __init__(self, nums):
+  ___ - , nums):
     """
 
     :type nums: List[int]
     :type size: int
     """
-    self.nums = nums
-    self.reset = l....: self.nums
+    nums = nums
+    reset = l....: nums
 
-  ___ shuffle(self):
+  ___ shuffle
     """
     Returns a random shuffling of the array.
     :rtype: List[int]
     """
-    nums = self.nums + []
+    nums = nums + []
     ___ i __ reversed(r..(0, l..(nums))):
       idx = random.randrange(0, i + 1)
       nums[i], nums[idx] = nums[idx], nums[i]

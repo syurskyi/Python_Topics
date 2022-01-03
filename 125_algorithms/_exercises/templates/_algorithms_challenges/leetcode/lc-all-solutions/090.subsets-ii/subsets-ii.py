@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ subsetsWithDup(self, nums):
     """
     :type nums: List[int]
@@ -20,6 +20,6 @@ class Solution(object):
 
     nums.s..()
     res    # list
-    visited = {}
+    visited    # dict
     dfs(0, nums, [], res, visited)
     r.. res

@@ -4,7 +4,7 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findOrder(self, numCourses, prerequisites):
         """
         :type numCourses: int
@@ -32,7 +32,7 @@ class Solution(object):
                     queue.a..(node0)
         r.. res __ count __ numCourses ____ []
     
-    ___ test(self):
+    ___ test
         testCases = [
             [4, [[1,0],[2,0],[3,1],[3,2]]],
             [4, [[1,0],[2,0],[0,2],[3,1]]],
@@ -41,7 +41,7 @@ class Solution(object):
         ___ numCourses, prerequisites __ testCases:
             print('numCourses: %s' % (numCourses))
             print('prerequisites: %s' % (prerequisites))
-            result = self.findOrder(numCourses, prerequisites)
+            result = findOrder(numCourses, prerequisites)
             print('result: %s' % (result))
             print('-='*20+'-')
 

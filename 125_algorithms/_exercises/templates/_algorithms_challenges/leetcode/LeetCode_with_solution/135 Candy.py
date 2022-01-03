@@ -8,7 +8,7 @@ Children with a higher rating get more candies than their neighbors.
 What is the minimum candies you must give?
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ candy(self, ratings):
         """
         dp & re-adjustment
@@ -37,11 +37,11 @@ class Solution:
 
             # trough in the middle
             __ ind+1<length a.. ratings[ind-1]>val a.. val<=ratings[ind+1]:
-                self.re_adjust(ratings, dp, ind)
+                re_adjust(ratings, dp, ind)
 
         # trough at the end
         __ ratings[length-2]>ratings[length-1]:
-            self.re_adjust(ratings, dp, length-1)
+            re_adjust(ratings, dp, length-1)
 
         r.. s..(dp)
 

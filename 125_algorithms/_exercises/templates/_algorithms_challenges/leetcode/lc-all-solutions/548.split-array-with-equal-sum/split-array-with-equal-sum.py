@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ splitArray(self, nums):
     """
     :type nums: List[int]

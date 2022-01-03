@@ -1,11 +1,11 @@
-class InputCell(object):
-    ___ __init__(self, initial_value):
-        self.value = N..
+c_ InputCell(object):
+    ___ - , initial_value):
+        value = N..
 
 
-class ComputeCell(object):
-    ___ __init__(self, inputs, compute_function):
-        self.value = N..
+c_ ComputeCell(object):
+    ___ - , inputs, compute_function):
+        value = N..
 
     ___ add_callback(self, callback):
         pass

@@ -8,21 +8,21 @@ prime factor 7.
 Note that 1 is typically treated as an ugly number.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ isUgly(self, num):
         """
         :type num: int
         :rtype: bool
         """
         __ num __ 0:
-            r.. False
+            r.. F..
         factors = [2, 3, 5]
         ___ factor __ factors:
             w.... num % factor __ 0:
                 num /= factor
         __ num __ 1:
-            r.. True
-        r.. False
+            r.. T..
+        r.. F..
 
 
 s = Solution()

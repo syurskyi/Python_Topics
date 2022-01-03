@@ -23,9 +23,9 @@ ___ simple_calculator(calculation):
             float(x)
             int(x)
         except:
-            r.. False
+            r.. F..
         ____:
-            r.. True
+            r.. T..
     
 
     values = calculation.s..

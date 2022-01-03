@@ -4,7 +4,7 @@ Created on Jan 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ letterCombinations(self, digits):
         """
         :type digits: str
@@ -30,7 +30,7 @@ class Solution(object):
         __ n.. l: r.. []
         elem = ''
         result    # list
-        self.dfs(l, 0, elem, result)
+        dfs(l, 0, elem, result)
         r.. result
     
     ___ dfs(self, l, ind, elem, result):
@@ -39,10 +39,10 @@ class Solution(object):
             r.. result
         ___ c __ l[ind]:
             elem += c
-            self.dfs(l, ind+1, elem, result)
+            dfs(l, ind+1, elem, result)
             elem = elem[:-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             '',
             '001',
@@ -53,7 +53,7 @@ class Solution(object):
         
         ___ digits __ testCases:
             print('digits: %s' % (digits))
-            result = self.letterCombinations(digits)
+            result = letterCombinations(digits)
             print('result: %s' % (result))
             print('-+'*15+'-')
 

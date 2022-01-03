@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 code = '''
 """this is
@@ -46,14 +46,14 @@ ___ strip_comments(code):
     
 
     # remove single line comment
-    code = re.sub(r'\n\s*#.*','',code,re.MULTILINE)
+    code = __.sub(r'\n\s*#.*','',code,__.MULTILINE)
 
     # remove inline comment
 
-    code = re.sub(r'\s{2}#\s.*','',code,re.MULTILINE)
+    code = __.sub(r'\s{2}#\s.*','',code,__.MULTILINE)
 
     # remove multi line comments
-    code = re.sub(r'\s*"""[^"]*\n?([^"]*\n)*\s*"""','',code,re.MULTILINE)
+    code = __.sub(r'\s*"""[^"]*\n?([^"]*\n)*\s*"""','',code,__.MULTILINE)
     r.. code
 
 

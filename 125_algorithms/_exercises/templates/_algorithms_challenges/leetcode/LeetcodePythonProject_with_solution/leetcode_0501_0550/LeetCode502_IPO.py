@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findMaximizedCapital(self, k, W, Profits, Capital):
         """
         :type k: int

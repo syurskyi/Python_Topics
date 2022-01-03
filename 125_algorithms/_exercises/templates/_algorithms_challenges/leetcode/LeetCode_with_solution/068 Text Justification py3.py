@@ -57,7 +57,7 @@ Output:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ fullJustify(self, words: List[s..], maxWidth: int) -> List[s..]:
         """
         Round robin distribution of spaces
@@ -78,18 +78,18 @@ class Solution:
                 ___ i __ r..(maxWidth - char_cnt):
                     cur_words[i % max(1, l..(cur_words) - 1)] += " "
 
-                ret.a..("".join(cur_words))
+                ret.a..("".j..(cur_words))
 
                 cur_words = [w]
                 char_cnt = l..(w)
 
         # last line
-        last = " ".join(cur_words)
+        last = " ".j..(cur_words)
         ret.a..(last + " " * (maxWidth - l..(last)))
         r.. ret
 
 
-class Solution2:
+c_ Solution2:
     ___ fullJustify(self, words: List[s..], maxWidth: int) -> List[s..]:
         """
         Round robin distribution of spaces
@@ -109,7 +109,7 @@ class Solution2:
                 ___ i __ r..(maxWidth - char_cnt):
                     cur_words[i % max(1, l..(cur_words) - 1)] += " "  # insert in between
                     # len(cur_words) - 1 can be 0
-                ret.a..("".join(cur_words))
+                ret.a..("".j..(cur_words))
 
                 cur_words    # list
                 char_cnt = 0
@@ -118,7 +118,7 @@ class Solution2:
             char_cnt += l..(w)
 
         # last line
-        last = " ".join(cur_words)
+        last = " ".j..(cur_words)
         ret.a..(last + " " * (maxWidth - l..(last)))
         r.. ret
 

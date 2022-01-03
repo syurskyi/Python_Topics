@@ -28,7 +28,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ shiftingLetters(self, S: s.., shifts: List[int]) -> s..:
         """
         preprocess shifts
@@ -44,7 +44,7 @@ class Solution:
             b = chr(b)
             ret.a..(b)
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 
 __ __name__ __ "__main__":

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxArea(self, height):
     """
     :type height: List[int]

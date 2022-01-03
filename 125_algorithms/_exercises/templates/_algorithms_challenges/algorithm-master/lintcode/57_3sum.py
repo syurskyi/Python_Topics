@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ threeSum(self, nums):
         """
         :type nums: List[int]

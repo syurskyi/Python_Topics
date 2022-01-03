@@ -3,7 +3,7 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ removeDuplicates(self, nums):
         """
         :type nums: List[int]

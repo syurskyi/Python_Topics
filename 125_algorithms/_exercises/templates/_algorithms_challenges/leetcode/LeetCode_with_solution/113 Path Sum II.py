@@ -18,13 +18,13 @@ return
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     ___ pathSum(self, root, s..):
         """
         :param root: TreeNode
@@ -32,7 +32,7 @@ class Solution:
         :return: a list of lists of integers
         """
         result    # list
-        self.accumulatePathSum(root, s.., [], result)
+        accumulatePathSum(root, s.., [], result)
         r.. result
 
     ___ accumulatePathSum(self, root, s.., cur_path, result):
@@ -52,5 +52,5 @@ class Solution:
             r..
 
         # dfs with pre-checking
-        __ root.left: self.accumulatePathSum(root.left, s.., l..(cur_path), result)  # new copy
-        __ root.right: self.accumulatePathSum(root.right, s.., l..(cur_path), result)  # new copy
+        __ root.left: accumulatePathSum(root.left, s.., l..(cur_path), result)  # new copy
+        __ root.right: accumulatePathSum(root.right, s.., l..(cur_path), result)  # new copy

@@ -31,7 +31,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ minFallingPathSum(self, A: List[List[int]]) -> int:
         """
         dp, build from bottom

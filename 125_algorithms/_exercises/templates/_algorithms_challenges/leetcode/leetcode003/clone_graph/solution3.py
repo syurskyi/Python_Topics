@@ -9,7 +9,7 @@ of its neighbors.
 #         self.label = x
 #         self.neighbors = []
 
-class Solution(object):
+c_ Solution(object):
     ___ cloneGraph(self, node):
         """
         :type node: UndirectedGraphNode

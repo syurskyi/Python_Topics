@@ -34,56 +34,56 @@ ____ typing _______ Callable
 ____ threading _______ Lock
 
 
-class ZeroEvenOdd:
-    ___ __init__(self, n):
+c_ ZeroEvenOdd:
+    ___ - , n):
         """
         only use 3 locks, and zero() knows and commonds which lock to release,
         determing whether even() or odd() will run.
         """
-        self.n = n
-        self.locks = [Lock() ___ _ __ r..(3)]
-        self.locks[1].a..
-        self.locks[2].a..
+        n = n
+        locks = [Lock() ___ _ __ r..(3)]
+        locks[1].a..
+        locks[2].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
     ___ zero(self, printNumber: Callable[[int], N..]) -> N..
-        ___ i __ r..(self.n):
-            self.locks[0].a..
+        ___ i __ r..(n):
+            locks[0].a..
             printNumber(0)
             __ (i + 1) % 2 __ 1:
-                self.locks[1].release()
+                locks[1].release()
             ____:
-                self.locks[2].release()
+                locks[2].release()
 
     ___ odd(self, printNumber: Callable[[int], N..]) -> N..
-        ___ i __ r..((self.n + 1) // 2):
-            self.locks[1].a..
+        ___ i __ r..((n + 1) // 2):
+            locks[1].a..
             printNumber(i * 2 + 1)
-            self.locks[0].release()
+            locks[0].release()
 
     ___ even(self, printNumber: Callable[[int], N..]) -> N..
-        ___ i __ r..(self.n // 2):
-            self.locks[2].a..
+        ___ i __ r..(n // 2):
+            locks[2].a..
             printNumber(i * 2 + 2)
-            self.locks[0].release()
+            locks[0].release()
 
 
-class ZeroEvenOddError:
-    ___ __init__(self, n):
+c_ ZeroEvenOddError:
+    ___ - , n):
         """
         Like 1115, two layer of locks can do: zero and non-zero alternating,
         odd and even alternating. 4 locks required.
 
         Using only 3 locks?
         """
-        self.n = n
-        self.locks = [Lock(), Lock(), Lock(), Lock()]
-        ___ i __ r..(1, l..(self.locks)):
-            self.locks[i].a..
+        n = n
+        locks = [Lock(), Lock(), Lock(), Lock()]
+        ___ i __ r..(1, l..(locks)):
+            locks[i].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
     ___ zero(self, printNumber: 'Callable[[int], None]') -> N..
-        with self.locks[0]:
+        with locks[0]:
             printNumber(0)
 
     ___ even(self, printNumber: 'Callable[[int], None]') -> N..

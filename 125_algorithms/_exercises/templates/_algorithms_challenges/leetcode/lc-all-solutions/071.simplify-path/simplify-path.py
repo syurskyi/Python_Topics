@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ simplifyPath(self, path):
     """
     :type path: str
@@ -14,4 +14,4 @@ class Solution(object):
           stack.pop()
       ____:
         stack.a..(p)
-    r.. "/" + "/".join(stack)
+    r.. "/" + "/".j..(stack)

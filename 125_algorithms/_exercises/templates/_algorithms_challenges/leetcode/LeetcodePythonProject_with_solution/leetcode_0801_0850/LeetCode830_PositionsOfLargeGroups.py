@@ -3,7 +3,7 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ largeGroupPositions(self, S):
         """
         :type S: str
@@ -19,7 +19,7 @@ class Solution(object):
                 left = i
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aaa',
             'abbxxxxzzy',
@@ -27,7 +27,7 @@ class Solution(object):
             'abcdddeeeeaabbbcd',
         ]
         ___ s __ testCases:
-            result = self.largeGroupPositions(s)
+            result = largeGroupPositions(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

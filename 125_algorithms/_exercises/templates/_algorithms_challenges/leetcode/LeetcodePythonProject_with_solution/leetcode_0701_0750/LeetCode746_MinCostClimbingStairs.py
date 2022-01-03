@@ -3,7 +3,7 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minCostClimbingStairs(self, cost):
         """
         :type cost: List[int]
@@ -16,13 +16,13 @@ class Solution(object):
                 cost[i] += m..(cost[i-1], cost[i-2])
         r.. m..(cost[-1], cost[-2])
     
-    ___ test(self):
+    ___ test
         testCases = [
             [10, 15, 20],
             [1, 100, 1, 1, 1, 100, 1, 1, 100, 1],
         ]
         ___ cost __ testCases:
-            result = self.minCostClimbingStairs(cost)
+            result = minCostClimbingStairs(cost)
             print('result: %s' % result)
             print('-='*30+'-')
 

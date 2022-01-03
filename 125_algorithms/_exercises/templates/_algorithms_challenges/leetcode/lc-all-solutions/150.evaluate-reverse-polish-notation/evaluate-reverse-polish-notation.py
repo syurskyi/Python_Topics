@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ evalRPN(self, tokens):
     """
     :type tokens: List[str]

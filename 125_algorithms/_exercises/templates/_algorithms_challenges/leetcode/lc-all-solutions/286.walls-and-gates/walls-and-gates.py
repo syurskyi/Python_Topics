@@ -3,7 +3,7 @@ ____ collections _______ deque
 INF = 2147483647
 
 
-class Solution(object):
+c_ Solution(object):
   ___ wallsAndGates(self, rooms):
     """
     :type rooms: List[List[int]]

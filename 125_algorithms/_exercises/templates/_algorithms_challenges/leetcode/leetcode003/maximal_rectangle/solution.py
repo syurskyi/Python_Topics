@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param matrix, a list of lists of 1 length string
     # @return an integer
     ___ maximalRectangle(self, matrix):
@@ -19,7 +19,7 @@ class Solution:
                         hist[i][j] = 1 + hist[i - 1][j]
         res = 0
         ___ row __ hist:
-            res = max(res, self.max_hist_rect(row))
+            res = max(res, max_hist_rect(row))
         r.. res
 
     ___ max_hist_rect(self, heights):

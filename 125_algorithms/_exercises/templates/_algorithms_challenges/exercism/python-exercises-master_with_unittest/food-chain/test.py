@@ -5,25 +5,25 @@ ____ food_chain _______ recite
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.1.0
 
-class FoodChainTest(unittest.TestCase):
+c_ FoodChainTest(unittest.TestCase):
 
-    ___ test_fly(self):
+    ___ test_fly
         expected = [
             "I know an old lady who swallowed a fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
         ]
-        self.assertEqual(recite(1, 1), expected)
+        assertEqual(recite(1, 1), expected)
 
-    ___ test_spider(self):
+    ___ test_spider
         expected = [
             "I know an old lady who swallowed a spider.",
             "It wriggled and jiggled and tickled inside her.",
             "She swallowed the spider to catch the fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
         ]
-        self.assertEqual(recite(2, 2), expected)
+        assertEqual(recite(2, 2), expected)
 
-    ___ test_bird(self):
+    ___ test_bird
         expected = [
             "I know an old lady who swallowed a bird.",
             "How absurd to swallow a bird!",
@@ -32,9 +32,9 @@ class FoodChainTest(unittest.TestCase):
             "She swallowed the spider to catch the fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
         ]
-        self.assertEqual(recite(3, 3), expected)
+        assertEqual(recite(3, 3), expected)
 
-    ___ test_cat(self):
+    ___ test_cat
         expected = [
             "I know an old lady who swallowed a cat.",
             "Imagine that, to swallow a cat!",
@@ -44,9 +44,9 @@ class FoodChainTest(unittest.TestCase):
             "She swallowed the spider to catch the fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
         ]
-        self.assertEqual(recite(4, 4), expected)
+        assertEqual(recite(4, 4), expected)
 
-    ___ test_dog(self):
+    ___ test_dog
         expected = [
             "I know an old lady who swallowed a dog.",
             "What a hog, to swallow a dog!",
@@ -57,9 +57,9 @@ class FoodChainTest(unittest.TestCase):
             "She swallowed the spider to catch the fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
         ]
-        self.assertEqual(recite(5, 5), expected)
+        assertEqual(recite(5, 5), expected)
 
-    ___ test_goat(self):
+    ___ test_goat
         expected = [
             "I know an old lady who swallowed a goat.",
             "Just opened her throat and swallowed a goat!",
@@ -71,9 +71,9 @@ class FoodChainTest(unittest.TestCase):
             "She swallowed the spider to catch the fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
         ]
-        self.assertEqual(recite(6, 6), expected)
+        assertEqual(recite(6, 6), expected)
 
-    ___ test_cow(self):
+    ___ test_cow
         expected = [
             "I know an old lady who swallowed a cow.",
             "I don't know how she swallowed a cow!",
@@ -86,25 +86,25 @@ class FoodChainTest(unittest.TestCase):
             "She swallowed the spider to catch the fly.",
             "I don't know why she swallowed the fly. Perhaps she'll die.",
         ]
-        self.assertEqual(recite(7, 7), expected)
+        assertEqual(recite(7, 7), expected)
 
-    ___ test_horse(self):
+    ___ test_horse
         expected = [
             "I know an old lady who swallowed a horse.",
             "She's dead, of course!",
         ]
-        self.assertEqual(recite(8, 8), expected)
+        assertEqual(recite(8, 8), expected)
 
-    ___ test_multiple_verses(self):
+    ___ test_multiple_verses
         expected = recite(1, 1) + [""] + recite(2, 2) + [""] + recite(3, 3)
-        self.assertEqual(recite(1, 3), expected)
+        assertEqual(recite(1, 3), expected)
 
-    ___ test_full_song(self):
+    ___ test_full_song
         expected    # list
         ___ n __ r..(1, 9):
             expected += recite(n, n) + [""]
         expected.pop()
-        self.assertEqual(recite(1, 8), expected)
+        assertEqual(recite(1, 8), expected)
 
 
 __ __name__ __ '__main__':

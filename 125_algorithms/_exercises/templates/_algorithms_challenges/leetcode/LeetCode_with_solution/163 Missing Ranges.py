@@ -6,7 +6,7 @@ For example, given [0, 1, 3, 50, 75], lower = 0 and upper = 99, return ["2", "4-
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findMissingRanges(self, nums, lower, upper):
         """
         :type nums: List[int]
@@ -18,7 +18,7 @@ class Solution(object):
         ret    # list
         __ n.. nums:
             ret.a..([lower, upper])
-            r.. map(self.mapper, ret)
+            r.. map(mapper, ret)
 
         __ nums[0] > lower:
             ret.a..([lower, nums[0]-1])
@@ -30,7 +30,7 @@ class Solution(object):
         __ upper > nums[-1]:
             ret.a..([nums[-1]+1, upper])
 
-        r.. map(self.mapper, ret)
+        r.. map(mapper, ret)
 
     ___ mapper(self, x):
         __ x[0] __ x[1]:

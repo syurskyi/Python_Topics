@@ -15,7 +15,7 @@ _______ math
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ numTrees_math(self, n):
         """
         number of unique binary search tree

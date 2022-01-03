@@ -1,89 +1,89 @@
-class NORTH:
+c_ NORTH:
     @staticmethod
     ___ advance(self, x, y):
         r.. (x, y + 1)
 
     @staticmethod
-    ___ turn_right(self):
+    ___ turn_right
         r.. EAST
 
     @staticmethod
-    ___ turn_left(self):
+    ___ turn_left
         r.. WEST
 
 
-class EAST:
+c_ EAST:
     @staticmethod
     ___ advance(self, x, y):
         r.. (x + 1, y)
 
     @staticmethod
-    ___ turn_right(self):
+    ___ turn_right
         r.. SOUTH
 
     @staticmethod
-    ___ turn_left(self):
+    ___ turn_left
         r.. NORTH
 
 
-class SOUTH:
+c_ SOUTH:
     @staticmethod
     ___ advance(self, x, y):
         r.. (x, y - 1)
 
     @staticmethod
-    ___ turn_right(self):
+    ___ turn_right
         r.. WEST
 
     @staticmethod
-    ___ turn_left(self):
+    ___ turn_left
         r.. EAST
 
 
-class WEST:
+c_ WEST:
     @staticmethod
     ___ advance(self, x, y):
         r.. (x - 1, y)
 
     @staticmethod
-    ___ turn_right(self):
+    ___ turn_right
         r.. NORTH
 
     @staticmethod
-    ___ turn_left(self):
+    ___ turn_left
         r.. SOUTH
 
 
-class Robot:
+c_ Robot:
 
-    ___ __init__(self, direction=NORTH, x=0, y=0):
-        self.coordinates = (x, y)
-        self.bearing = direction
+    ___ - , direction=NORTH, x=0, y=0):
+        coordinates = (x, y)
+        bearing = direction
 
-    ___ advance(self):
-        self.coordinates = self.bearing.advance(self.bearing,
-                                                self.x(), self.y())
+    ___ advance
+        coordinates = bearing.advance(bearing,
+                                                x(), y())
 
-    ___ turn_right(self):
-        self.bearing = self.bearing.turn_right(self.bearing)
+    ___ turn_right
+        bearing = bearing.turn_right(bearing)
 
-    ___ turn_left(self):
-        self.bearing = self.bearing.turn_left(self.bearing)
+    ___ turn_left
+        bearing = bearing.turn_left(bearing)
 
     ___ simulate(self, instructions):
         ___ i __ instructions:
-            self.execute_instruction(i)
+            execute_instruction(i)
 
     ___ execute_instruction(self, i):
         __ i __ 'A':
-            self.advance()
+            advance()
         ____ i __ 'L':
-            self.turn_left()
+            turn_left()
         ____ i __ 'R':
-            self.turn_right()
+            turn_right()
 
-    ___ x(self):
-        r.. self.coordinates[0]
+    ___ x
+        r.. coordinates[0]
 
-    ___ y(self):
-        r.. self.coordinates[1]
+    ___ y
+        r.. coordinates[1]

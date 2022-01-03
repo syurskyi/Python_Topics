@@ -27,7 +27,7 @@ _______ heapq
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maximumProduct(self, nums: List[int]) -> int:
         """
         heapq nlargest nsmallest

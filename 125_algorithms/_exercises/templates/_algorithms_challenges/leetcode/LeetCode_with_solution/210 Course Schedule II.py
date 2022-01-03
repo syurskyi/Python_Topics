@@ -28,7 +28,7 @@ is represented.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ findOrder(self, numCourses, prerequisites):
         """
         Graph -> Start from V with no predecessor (pi) -> Topological Sorting
@@ -36,23 +36,23 @@ class Solution:
         :type prerequisites: list[list[int]]
         :rtype: list[int]
         """
-        V = {}
+        V    # dict
         ___ i __ xrange(numCourses):
             V[i]    # list
 
         ___ edge __ prerequisites:
             V[edge[1]].a..(edge[0])
 
-        r.. self.topological_sort(V)
+        r.. topological_sort(V)
 
     ___ topological_sort(self, V):
         visited = set()
         marked = set()
         ret    # list
 
-        ___ k __ V.keys():
+        ___ k __ V.k..:
             __ k n.. __ visited:
-                __ n.. self.dfs(V, k, visited, marked, ret):
+                __ n.. dfs(V, k, visited, marked, ret):
                     r.. []
 
         ret.reverse()
@@ -65,18 +65,18 @@ class Solution:
         :return: whether it is acyclic
         """
         __ k __ marked:
-            r.. False
+            r.. F..
 
         marked.add(k)
         ___ neighbor __ V[k]:
             __ neighbor n.. __ visited:
-                __ n.. self.dfs(V, neighbor, visited, marked, ret):
-                    r.. False
+                __ n.. dfs(V, neighbor, visited, marked, ret):
+                    r.. F..
 
         marked.remove(k)
         visited.add(k)
         ret.a..(k)
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":

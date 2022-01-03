@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ getHeight(self, root):
     height = 0
     w.... root:
@@ -16,7 +16,7 @@ class Solution(object):
   ___ countNodes(self, root):
     count = 0
     w.... root:
-      l, r = map(self.getHeight, (root.left, root.right))
+      l, r = map(getHeight, (root.left, root.right))
       __ l __ r:
         count += 2 ** l
         root = root.right

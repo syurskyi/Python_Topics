@@ -15,5 +15,5 @@ ___ get_hundred_weekdays(start_date=TODAY):
     r.. [pb.date() ___ pb __ pb_list]
 
 dt_list = get_hundred_weekdays()
-print(type(dt_list))
-print(type(dt_list[0]))
+print(t..(dt_list))
+print(t..(dt_list[0]))

@@ -1,3 +1,3 @@
-class Scale(object):
-    ___ __init__(self):
+c_ Scale(object):
+    ___ - ):
         pass

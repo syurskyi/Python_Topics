@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @return an integer
     ___ numDistinct(self, S, T):
         m = l..(S)

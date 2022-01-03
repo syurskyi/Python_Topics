@@ -36,16 +36,16 @@ Output for Retrieve has no order required.
 _______ bisect
 
 
-class LogSystem:
-    ___ __init__(self):
+c_ LogSystem:
+    ___ - ):
         """
         BST - TreeMap (java)
         binary search using time stamp
         """
-        self.lst    # list
+        lst    # list
 
     ___ put(self, id: int, timestamp: s..) -> N..
-        bisect.insort(self.lst, (timestamp, id))
+        bisect.insort(lst, (timestamp, id))
 
     ___ retrieve(self, s: s.., e: s.., gra: s..) -> List[int]:
         """
@@ -65,9 +65,9 @@ class LogSystem:
 
         s = s[:pre] + lo[pre:]
         e = e[:pre] + hi[pre:]
-        i = bisect.bisect_left(self.lst, (s, 0))
-        j = bisect.bisect_right(self.lst, (e, float("inf")))
-        r.. [id ___ _, id __ self.lst[i:j]]
+        i = bisect.bisect_left(lst, (s, 0))
+        j = bisect.bisect_right(lst, (e, float("inf")))
+        r.. [id ___ _, id __ lst[i:j]]
 
 
 # Your LogSystem object will be instantiated and called as such:

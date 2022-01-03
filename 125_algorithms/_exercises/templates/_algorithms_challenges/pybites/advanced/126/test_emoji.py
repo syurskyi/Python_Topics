@@ -2,18 +2,18 @@ ____ emoji _______ what_means_emoji, find_emoji
 
 
 ___ test_what_means_emoji_found():
-    what_means_emoji('🐶').lower() __ 'dog face'
-    what_means_emoji('🏋').lower() __ 'weight lifter'
-    what_means_emoji('🌇').lower() __ 'sunset over buildings'
+    what_means_emoji('🐶').l.. __ 'dog face'
+    what_means_emoji('🏋').l.. __ 'weight lifter'
+    what_means_emoji('🌇').l.. __ 'sunset over buildings'
 
 
 ___ test_what_means_emoji_not_found():
-    ... what_means_emoji('aaa').lower() __ 'not found'
+    ... what_means_emoji('aaa').l.. __ 'not found'
 
 
 ___ test_find_matches(capfd):
     find_emoji('sun')
-    output = capfd.readouterr()[0].lower()
+    output = capfd.readouterr()[0].l..
     # some of the results you should get back
     ... 'sunrise' __ output
     ... '🌅' __ output
@@ -25,5 +25,5 @@ ___ test_find_matches(capfd):
 
 ___ test_find_no_match(capfd):
     find_emoji('awesome')
-    output = capfd.readouterr()[0].lower()
-    ... n.. output.s.. o. 'no matches' __ output.lower()
+    output = capfd.readouterr()[0].l..
+    ... n.. output.s.. o. 'no matches' __ output.l..

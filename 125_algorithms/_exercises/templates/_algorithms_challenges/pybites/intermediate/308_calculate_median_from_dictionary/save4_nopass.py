@@ -8,7 +8,7 @@ ___ calc_median_from_dict(d: d..) -> float:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
 
-    values_sorted = d..(OrderedDict(s..(d.items(), key=l.... t: t[0])))
+    values_sorted = d..(OrderedDict(s..(d.i.., key=l.... t: t[0])))
 
     __ l..(values_sorted) __ 1:
         r.. l..(values_sorted.keys())[0]
@@ -19,7 +19,7 @@ ___ calc_median_from_dict(d: d..) -> float:
     i2 = 0
     the_key    # list
 
-    ___ key, value __ values_sorted.items():
+    ___ key, value __ values_sorted.i..:
         __ i < determinate:
             i += value
         ____:
@@ -27,7 +27,7 @@ ___ calc_median_from_dict(d: d..) -> float:
             i2 += value
 
     the_key_true = the_key[0]
-    before = [key ___ key __ values_sorted.keys() __ key < the_key_true][-1]
+    before = [key ___ key __ values_sorted.k.. __ key < the_key_true][-1]
 
     __ i __ i2:
         r.. (before + the_key_true) / 2

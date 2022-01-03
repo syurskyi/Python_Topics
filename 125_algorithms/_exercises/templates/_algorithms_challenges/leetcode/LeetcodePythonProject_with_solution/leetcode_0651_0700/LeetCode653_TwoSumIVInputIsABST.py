@@ -4,24 +4,24 @@ Created on Oct 4, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ findTarget(self, root, k):
-        r.. self.dfs(root, set(), k)
+        r.. dfs(root, set(), k)
     
     ___ dfs(self, root, hashset, k):
         __ n.. root:
-            r.. False
+            r.. F..
         __ k-root.val __ hashset:
-            r.. True
+            r.. T..
         hashset.add(root.val)
-        r.. self.dfs(root.left, hashset, k) o.\
-            self.dfs(root.right, hashset, k)
+        r.. dfs(root.left, hashset, k) o.\
+            dfs(root.right, hashset, k)
     
     ___ findTargetSpace(self, root, k):
         """
@@ -29,7 +29,7 @@ class Solution(object):
         :type k: int
         :rtype: bool
         """
-        __ n.. root: r.. False
+        __ n.. root: r.. F..
         arr    # list
         stack    # list
         node = root
@@ -46,14 +46,14 @@ class Solution(object):
         i, j = 0, l..(arr)-1
         w.... i < j:
             __ k __ arr[i]+arr[j]:
-                r.. True
+                r.. T..
             ____ k > arr[i]+arr[j]:
                 i += 1
             ____:
                 j -= 1
-        r.. False
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 TreeNode(2, TreeNode(1), TreeNode(3)),
@@ -69,7 +69,7 @@ class Solution(object):
             ],
         ]
         ___ root, k __ testCases:
-            result = self.findTarget(root, k)
+            result = findTarget(root, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

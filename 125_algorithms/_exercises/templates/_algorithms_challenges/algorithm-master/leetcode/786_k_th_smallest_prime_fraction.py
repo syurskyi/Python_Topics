@@ -13,7 +13,7 @@ example: [1, 2, 5, 7]
 ____ heapq _______ heappush, heappop
 
 
-class Solution:
+c_ Solution:
     ___ kthSmallestPrimeFraction(self, A, K):
         """
         :type A: List[int]

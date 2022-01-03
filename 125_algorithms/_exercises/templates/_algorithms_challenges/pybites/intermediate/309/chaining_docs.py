@@ -1,15 +1,15 @@
 ____ __future__ _______ annotations
 _______ string
-_______ re
+_______ __
 
 EOL_PUNCTUATION = ".!?"
 
 
-class Document:
-    ___ __init__(self) -> N..
+c_ Document:
+    ___ - ) -> N..
         # it is up to you how to implement this method
         # feel free to alter this method and its parameters to your liking
-        self.lines    # list
+        lines    # list
 
     ___ add_line(self, line: s.., index: int = N..) -> Document:
         """Add a new line to the document.
@@ -24,9 +24,9 @@ class Document:
             Document: The changed document with the new line.
         """
         __ index __ N..
-            self.lines.a..(line)
+            lines.a..(line)
         ____:
-            self.lines.insert(index,line)
+            lines.insert(index,line)
         r.. self
 
 
@@ -47,7 +47,7 @@ class Document:
             r.. self
 
         try:
-            self.lines[index_one],self.lines[index_two] = self.lines[index_two],self.lines[index_one]
+            lines[index_one],lines[index_two] = lines[index_two],lines[index_one]
         except IndexError:
             raise IndexError("Invalid indexes")
 
@@ -71,14 +71,14 @@ class Document:
         
         lines    # list
         ___ index __ indices:
-            lines.a..(self.lines[index].strip())
+            lines.a..(lines[index].strip())
         
         
         
-        self.lines[indices[0]]= ' '.join(lines)
+        lines[indices[0]]= ' '.j..(lines)
         
 
-        self.lines = [line ___ i,line __ e..(self.lines) __ i n.. __ indices[1:]]
+        lines = [line ___ i,line __ e..(lines) __ i n.. __ indices[1:]]
         
 
 
@@ -101,25 +101,25 @@ class Document:
             Document: The document with the changed line.
         """
 
-        line = self.lines[index]
+        line = lines[index]
         __ line a.. line[-1] __ EOL_PUNCTUATION:
             line = line[:-1] + punctuation
         ____:
             line += punctuation
-        self.lines[index] = line
+        lines[index] = line
         r.. self
 
     ___ word_count(self) -> int:
         """Return the total number of words in the document."""
-        r.. s..(l..(self._remove_punctuation(line).s..()) ___ line __ self.lines)
+        r.. s..(l..(_remove_punctuation(line).s..()) ___ line __ lines)
 
-    @property
+    $
     ___ words(self) -> l..:
         """Return a list of unique words, sorted and case insensitive."""
         all_words = set()
-        ___ line __ self.lines:
-            line = line.lower()
-            w = self._remove_punctuation(line)
+        ___ line __ lines:
+            line = line.l..
+            w = _remove_punctuation(line)
             ___ x __ w.s.. :
                 all_words.add(x)
 
@@ -133,19 +133,19 @@ class Document:
         # you can use this function as helper method for
         # Document.word_count() and Document.words
         # or you can totally ignore it
-        r.. re.sub(r'[^\w\s]','',line)
+        r.. __.sub(r'[^\w\s]','',line)
 
 
 
 
 
-    ___ __len__(self):
+    ___ __len__
         """Return the length of the document (i.e. line count)."""
-        r.. l..(self.lines)
+        r.. l..(lines)
 
-    ___ __str__(self):
+    ___ __str__
         """Return the content of the document as string."""
-        r.. '\n'.join(self.lines)
+        r.. '\n'.j..(lines)
 
 
 __ __name__ __ "__main__":

@@ -5,65 +5,65 @@ Created on Jan 31, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ isSymmetricRecursive(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        __ n.. root: r.. True
-        r.. self.helper(root.left, root.left)
+        __ n.. root: r.. T..
+        r.. helper(root.left, root.left)
     
     ___ helper(self, left, right):
         __ n.. left a.. n.. right:
-            r.. True
+            r.. T..
         ____ n.. left o. n.. right:
-            r.. False
+            r.. F..
         ____ left.val != right.val:
-            r.. False
+            r.. F..
         ____:
-            r.. self.helper(left.left, right.right) a..\
-                self.helper(left.right, right.left)
+            r.. helper(left.left, right.right) a..\
+                helper(left.right, right.left)
     
     ___ isSymmetric(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        __ n.. root: r.. True
+        __ n.. root: r.. T..
         stack    # list
         __ root.left:
-            __ n.. root.right: r.. False
+            __ n.. root.right: r.. F..
             stack.a..(root.left)
             stack.a..(root.right)
         ____ root.right:
-            r.. False
+            r.. F..
         w.... stack:
             __ l..(stack)%2 != 0:
-                r.. False
+                r.. F..
             right = stack.pop()
             left = stack.pop()
             __ right.val != left.val:
-                r.. False
+                r.. F..
             __ left.left:
                 __ n.. right.right:
-                    r.. False
+                    r.. F..
                 stack.a..(left.left)
                 stack.a..(right.right)
             ____ right.right:
-                r.. False
+                r.. F..
             __ left.right:
                 __ n.. right.left:
-                    r.. False
+                    r.. F..
                 stack.a..(left.right)
                 stack.a..(right.left)
             ____ right.left:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
         

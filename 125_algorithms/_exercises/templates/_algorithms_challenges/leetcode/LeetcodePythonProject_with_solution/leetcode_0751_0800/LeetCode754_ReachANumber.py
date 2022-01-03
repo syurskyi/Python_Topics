@@ -3,7 +3,7 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ reachNumber(self, target):
         """
         :type target: int
@@ -20,14 +20,14 @@ class Solution(object):
             sumVal += step
         r.. step
     
-    ___ test(self):
+    ___ test
         testCases = [
             3,
             2,
         ]
         ___ target __ testCases:
             print('target: %s' % target)
-            result = self.reachNumber(target)
+            result = reachNumber(target)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: s: a string
     @return: it's index
@@ -7,7 +7,7 @@ class Solution:
         __ n.. s:
             r.. -1
 
-        D = {}
+        D    # dict
         ___ c __ s:
             D[c] = D.get(c, 0) + 1
 

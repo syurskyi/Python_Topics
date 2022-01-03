@@ -3,7 +3,7 @@ Created on Oct 15, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findLengthOfLCIS(self, nums):
         """
         :type nums: List[int]
@@ -21,14 +21,14 @@ class Solution(object):
             i += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 3, 5, 4, 7],
             [2, 2, 2, 2, 2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.findLengthOfLCIS(nums)
+            result = findLengthOfLCIS(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

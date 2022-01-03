@@ -5,9 +5,9 @@
 ____ collections _______ deque
 
 
-class Solution(object):
-  ___ __init__(self):
-    self.rBuf = deque([])
+c_ Solution(object):
+  ___ - ):
+    rBuf = deque([])
 
   ___ read(self, buf, n):
     """
@@ -20,9 +20,9 @@ class Solution(object):
     w.... cnt < n:
       r = read4(tmp)
       ___ i __ r..(r):
-        self.rBuf.a..(tmp[i])
-      ___ i __ r..(m..(n - cnt, l..(self.rBuf))):
-        buf[cnt] = self.rBuf.popleft()
+        rBuf.a..(tmp[i])
+      ___ i __ r..(m..(n - cnt, l..(rBuf))):
+        buf[cnt] = rBuf.popleft()
         cnt += 1
       __ r __ 0:
         break

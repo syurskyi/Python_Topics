@@ -3,7 +3,7 @@ Created on Feb 16, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ hammingWeight(self, n):
         """
         :type n: int
@@ -15,13 +15,13 @@ class Solution(object):
                 count+=1
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             int('00000000000000000000000000001011', 2),
         ]
         ___ n __ testCases:
             print('n:      {0:032b}'.f..(n))
-            result = self.hammingWeight(n)
+            result = hammingWeight(n)
             print('result: {0:d}'.f..(result))
             print('-='*20+'-')
 

@@ -25,7 +25,7 @@ itself according to the LCA definition.
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
@@ -39,6 +39,6 @@ class Solution(object):
             __ m..(p.val, q.val) <= root.val <= max(p.val, q.val):
                 r.. root
             ____ root.val > max(p.val, q.val):
-                r.. self.lowestCommonAncestor(root.left, p, q)
+                r.. lowestCommonAncestor(root.left, p, q)
             ____:
-                r.. self.lowestCommonAncestor(root.right, p, q)
+                r.. lowestCommonAncestor(root.right, p, q)

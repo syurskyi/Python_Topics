@@ -15,7 +15,7 @@ True
 """
 
 
-class Solution:
+c_ Solution:
     ___ addBoldTag(self, s, words):
         """
         :type s: str
@@ -28,7 +28,7 @@ class Solution:
         TMPL = '<b>{}</b>'
         n = l..(s)
         ans    # list
-        is_bold = [False] * n
+        is_bold = [F..] * n
         left = right = 0
 
         ___ left __ r..(n):
@@ -56,4 +56,4 @@ class Solution:
             ans.a..(TMPL.f..(s[left:right]))
             left = right  # imply left' = left + 1
 
-        r.. ''.join(ans)
+        r.. ''.j..(ans)

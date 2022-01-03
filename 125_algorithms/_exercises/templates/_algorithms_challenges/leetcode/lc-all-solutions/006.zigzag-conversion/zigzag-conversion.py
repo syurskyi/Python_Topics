@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ convert(self, s, numRows):
     """
     :type s: str
@@ -20,4 +20,4 @@ class Solution(object):
           ans.a..(s[one])
         one += step
         two += step
-    r.. "".join(ans)
+    r.. "".j..(ans)

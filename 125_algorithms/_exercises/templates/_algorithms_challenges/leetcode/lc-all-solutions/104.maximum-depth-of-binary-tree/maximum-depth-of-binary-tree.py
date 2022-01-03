@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ maxDepth(self, root):
     """
     :type root: TreeNode
@@ -13,4 +13,4 @@ class Solution(object):
     """
     __ n.. root:
       r.. 0
-    r.. max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
+    r.. max(maxDepth(root.left), maxDepth(root.right)) + 1

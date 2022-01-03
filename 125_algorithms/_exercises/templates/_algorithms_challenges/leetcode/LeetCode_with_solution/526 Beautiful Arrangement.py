@@ -35,13 +35,13 @@ N is a positive integer and will not exceed 15.
 """
 
 
-class Solution:
+c_ Solution:
     ___ countArrangement(self, N: int) -> int:
         """
         dfs
         """
         candidates = set(r..(1, N+1))
-        ret = self.dfs(candidates, 1, N)
+        ret = dfs(candidates, 1, N)
         r.. ret
 
     ___ dfs(self, candidates, i, N):
@@ -52,7 +52,7 @@ class Solution:
         ___ c __ candidates:
             __ c % i __ 0 o. i % c __ 0:
                 candidates.remove(c)
-                ret += self.dfs(candidates, i+1, N)
+                ret += dfs(candidates, i+1, N)
                 candidates.add(c)
         r.. ret
 

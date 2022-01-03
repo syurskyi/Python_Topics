@@ -5,35 +5,35 @@ http://www.codewars.com/kata/52d2e2be94d26fc622000735/train/python
 """
 
 
-class VigenereAutokeyCipher:
-    ___ __init__(self, key, abc):
-        self.key = key
-        self.abc = abc
+c_ VigenereAutokeyCipher:
+    ___ - , key, abc):
+        key = key
+        abc = abc
 
     ___ encode(self, text):
         result    # list
-        key = self.key + ''.join([t ___ t __ text __ t __ self.abc])
+        key = key + ''.j..([t ___ t __ text __ t __ abc])
         index = 0
         ___ c __ text:
-            __ c __ self.abc:
-                offset = self.abc.index(key[index])
-                result.a..(self.abc[(self.abc.index(c) + offset) % l..(self.abc)])
+            __ c __ abc:
+                offset = abc.index(key[index])
+                result.a..(abc[(abc.index(c) + offset) % l..(abc)])
                 index += 1
             ____:
                 result.a..(c)
-        r.. ''.join(result)
+        r.. ''.j..(result)
 
     ___ decode(self, text):
         result    # list
-        key = self.key
+        key = key
         index = 0
         ___ c __ text:
-            __ c __ self.abc:
-                offset = self.abc.index(key[index])
-                decoded = self.abc[(self.abc.index(c) - offset) % l..(self.abc)]
+            __ c __ abc:
+                offset = abc.index(key[index])
+                decoded = abc[(abc.index(c) - offset) % l..(abc)]
                 result.a..(decoded)
                 key += decoded
                 index += 1
             ____:
                 result.a..(c)
-        r.. ''.join(result)
+        r.. ''.j..(result)

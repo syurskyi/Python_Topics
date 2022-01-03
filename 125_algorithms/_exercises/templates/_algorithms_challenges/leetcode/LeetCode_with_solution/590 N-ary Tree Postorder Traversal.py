@@ -12,17 +12,17 @@ Recursive solution is trivial, could you do it iteratively?
 
 
 # Definition for a Node.
-class Node:
-    ___ __init__(self, val, children):
-        self.val = val
-        self.children = children
+c_ Node:
+    ___ - , val, children):
+        val = val
+        children = children
 
 
 ____ typing _______ List
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ postorder(self, root: 'Node') -> List[int]:
         """
         maintain a stack, pop and reverse

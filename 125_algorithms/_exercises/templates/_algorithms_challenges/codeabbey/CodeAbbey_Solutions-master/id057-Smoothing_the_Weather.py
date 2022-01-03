@@ -6,5 +6,5 @@ ___ smooth(amount, numbers):
         ____:
             smoothNum = (float(numbers[x-1]) + float(numbers[x]) + float(numbers[x+1])) / 3
             answer.a..(s..(smoothNum))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 smooth(input(),raw_input().s..())

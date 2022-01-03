@@ -1,11 +1,11 @@
-class Solution(object):
+c_ Solution(object):
   ___ palindromePairs(self, words):
     """
     :type words: List[str]
     :rtype: List[List[int]]
     """
     ans    # list
-    d = {}
+    d    # dict
     ___ i, word __ e..(words):
       d[word] = i
 

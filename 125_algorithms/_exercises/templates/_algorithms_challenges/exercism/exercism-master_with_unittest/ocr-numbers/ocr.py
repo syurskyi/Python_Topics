@@ -1,4 +1,4 @@
-class Ocr:
+c_ Ocr:
 
     NUM_ROWS = 4
     NUM_COLS = 3
@@ -14,22 +14,22 @@ class Ocr:
                  "8": [" _ ", "|_|", "|_|", "   "],
                  "9": [" _ ", "|_|", " _|", "   "]}
 
-    NUMS = {"".join(value): key ___ key, value __ l..(GRID_NUMS.items())}
+    NUMS = {"".j..(value): key ___ key, value __ l..(GRID_NUMS.items())}
 
     @classmethod
     ___ numbers(cls, inp):
-        r.. "".join(map(cls.number, l..(
+        r.. "".j..(map(cls.number, l..(
             z..(*l..(map(cls.split_every_three, inp))))))
 
     @classmethod
     ___ grids(cls, inp):
-        r.. l..(map("".join, l..(z..(*l..(map(cls.grid, inp))))))
+        r.. l..(map("".j.., l..(z..(*l..(map(cls.grid, inp))))))
 
     @classmethod
     ___ number(cls, inp):
         __ n.. cls.valid_num(inp):
             raise ValueError
-        r.. cls.NUMS.get("".join(inp), cls.UNRECOGNIZED_NUM)
+        r.. cls.NUMS.get("".j..(inp), cls.UNRECOGNIZED_NUM)
 
     @classmethod
     ___ grid(cls, inp):

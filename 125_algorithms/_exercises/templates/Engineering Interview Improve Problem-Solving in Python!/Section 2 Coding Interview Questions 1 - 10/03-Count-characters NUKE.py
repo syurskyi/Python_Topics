@@ -4,7 +4,7 @@ ___ count_characters(s):
     result  {}
     ___ c __ s:
         result[c]  result.get(c, 0) + 1
-    ___ key, value __ result.items():
+    ___ key, value __ result.i..:
         print(key, value)
     #return result
 

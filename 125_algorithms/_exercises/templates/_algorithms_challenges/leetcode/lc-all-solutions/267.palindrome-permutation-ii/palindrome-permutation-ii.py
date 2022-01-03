@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution(object):
+c_ Solution(object):
   ___ generatePalindromes(self, s):
     """
     :type s: str
@@ -10,7 +10,7 @@ class Solution(object):
 
     ___ helper(s, path, ans, visited):
       __ l..(path) __ l..(s):
-        ans.a..("".join(path))
+        ans.a..("".j..(path))
         r..
 
       ___ i __ r..(l..(s)):

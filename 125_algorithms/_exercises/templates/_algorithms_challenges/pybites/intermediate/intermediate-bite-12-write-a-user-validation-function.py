@@ -17,19 +17,19 @@ User = n..('User', 'name role expired')
 USER, ADMIN = 'user', 'admin'
 SECRET = 'I am a very secret token'
 
-julian = User(name='Julian', role=USER, expired=False)
-bob = User(name='Bob', role=USER, expired=True)
-pybites = User(name='PyBites', role=ADMIN, expired=False)
+julian = User(name='Julian', role=USER, expired=F..)
+bob = User(name='Bob', role=USER, expired=T..)
+pybites = User(name='PyBites', role=ADMIN, expired=F..)
 USERS = (julian, bob, pybites)
 
 # define exception classes here
-class UserDoesNotExist(Exception):
+c_ UserDoesNotExist(Exception):
     pass
 
-class UserAccessExpired(Exception):
+c_ UserAccessExpired(Exception):
     pass
 
-class UserNoPermission(Exception):
+c_ UserNoPermission(Exception):
     pass
 
 ### My solution
@@ -37,7 +37,7 @@ class UserNoPermission(Exception):
 ___ get_secret_token(username):
     ___ user __ USERS:
         __ user.name __ username:
-            __ user.expired __ False:
+            __ user.expired __ F..:
                 __ user.role __ ADMIN:
                     r.. SECRET
                 ____:
@@ -63,7 +63,7 @@ ___ pyb_get_user(username):
 
 ___ pyb_get_secret_token(username):
     user = pyb_get_user(username)
-    print(type(user))
+    print(t..(user))
     print(user)
     # Big question here how to test for None: if not x vs if x is None
     # https://stackoverflow.com/questions/24270344/is-there-a-difference-between-if-not-x-and-if-x-is-none

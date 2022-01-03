@@ -17,9 +17,9 @@ Input: sum("ap"), Output: 5
 """
 
 
-class MapSum:
+c_ MapSum:
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
 
@@ -29,16 +29,16 @@ class MapSum:
         """
         ____ collections _______ defaultdict
 
-        class TrieNode:
-            ___ __init__(self, chr, s.., val):
-                self.chr = chr
-                self.s.. = s..
-                self.val = val
-                self.children = defaultdict(l....: N..)
+        c_ TrieNode:
+            ___ - , chr, s.., val):
+                chr = chr
+                s.. = s..
+                val = val
+                children = defaultdict(l....: N..)
 
-        class Trie:
-            ___ __init__(self):
-                self.root = TrieNode(N.., 0, 0)  # dummy root
+        c_ Trie:
+            ___ - ):
+                root = TrieNode(N.., 0, 0)  # dummy root
 
             ___ insert(self, cur, key, i, val):
                 __ n.. cur:
@@ -48,19 +48,19 @@ class MapSum:
                     delta = val - cur.val
                     cur.val = val
                 ____:
-                    cur.children[key[i+1]], delta = self.insert(cur.children[key[i+1]], key, i + 1, val)
+                    cur.children[key[i+1]], delta = insert(cur.children[key[i+1]], key, i + 1, val)
 
                 cur.s.. += delta
                 r.. cur, delta
 
-        self.trie = Trie()
+        trie = Trie()
 
     ___ insert(self, key: s.., val: int) -> N..
-        root = self.trie.root
-        root.children[key[0]], _ = self.trie.insert(root.children[key[0]], key, 0, val)
+        root = trie.root
+        root.children[key[0]], _ = trie.insert(root.children[key[0]], key, 0, val)
 
     ___ s..(self, prefix: s..) -> int:
-        node = self.trie.root
+        node = trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:
                 r.. 0
@@ -70,9 +70,9 @@ class MapSum:
         r.. node.s..
 
 
-class MapSum2:
+c_ MapSum2:
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
 
@@ -80,16 +80,16 @@ class MapSum2:
 
         update using delta
         """
-        class TrieNode:
-            ___ __init__(self, chr, s.., val):
-                self.chr = chr
-                self.s.. = s..
-                self.val = val
-                self.children = {}
+        c_ TrieNode:
+            ___ - , chr, s.., val):
+                chr = chr
+                s.. = s..
+                val = val
+                children    # dict
 
-        class Trie:
-            ___ __init__(self):
-                self.root = TrieNode(N.., 0, 0)  # dummy root
+        c_ Trie:
+            ___ - ):
+                root = TrieNode(N.., 0, 0)  # dummy root
 
             ___ insert(self, pi, key, i, val):
                 __ key[i] n.. __ pi.children:
@@ -98,7 +98,7 @@ class MapSum2:
 
                 cur = pi.children[key[i]]
                 __ i + 1 < l..(key):
-                    cur.children[key[i+1]], delta = self.insert(cur, key, i + 1, val)
+                    cur.children[key[i+1]], delta = insert(cur, key, i + 1, val)
                 ____:
                     delta = val - cur.val
                     cur.val = val
@@ -106,13 +106,13 @@ class MapSum2:
                 cur.s.. += delta
                 r.. cur, delta
 
-        self.trie = Trie()
+        trie = Trie()
 
     ___ insert(self, key: s.., val: int) -> N..
-        self.trie.insert(self.trie.root, key, 0, val)
+        trie.insert(trie.root, key, 0, val)
 
     ___ s..(self, prefix: s..) -> int:
-        node = self.trie.root
+        node = trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:
                 r.. 0

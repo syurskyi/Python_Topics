@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ encode(self, s, dp={}):
     """
     :type s: str
@@ -11,10 +11,10 @@ class Solution(object):
     dp[s] = s
     idx = (2 * s).find(s, 1)
     __ 0 <= idx < l..(s):
-      dp[s] = s..(l..(s) / idx) + "[" + self.encode(s[:idx], dp) + "]"
+      dp[s] = s..(l..(s) / idx) + "[" + encode(s[:idx], dp) + "]"
     ___ i __ r..(1, l..(s)):
-      left = self.encode(s[:i], dp)
-      right = self.encode(s[i:], dp)
+      left = encode(s[:i], dp)
+      right = encode(s[i:], dp)
       __ l..(left) + l..(right) < l..(dp[s]):
         dp[s] = left + right
     r.. dp[s]

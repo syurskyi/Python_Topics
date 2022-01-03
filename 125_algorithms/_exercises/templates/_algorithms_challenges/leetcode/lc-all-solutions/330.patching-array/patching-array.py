@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minPatches(self, nums, n):
     """
     :type nums: List[int]

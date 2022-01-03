@@ -32,7 +32,7 @@ range [0, graph.length - 1].
 ____ typing _______ List, Set
 
 
-class Solution:
+c_ Solution:
     ___ eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
         """
         detect cycle in the node
@@ -42,7 +42,7 @@ class Solution:
         acyclic: Set[int] = set()
         ___ u __ r..(l..(graph)):
             __ visit[u] __ 0:
-                self.dfs(graph, u, visit, acyclic)
+                dfs(graph, u, visit, acyclic)
 
         r.. [
             u
@@ -60,15 +60,15 @@ class Solution:
                     break
             __ visit[nbr] __ 1:
                 break
-            __ visit[nbr] __ 0 a.. n.. self.dfs(graph, nbr, visit, acyclic):
+            __ visit[nbr] __ 0 a.. n.. dfs(graph, nbr, visit, acyclic):
                 break
         ____:
             acyclic.add(cur)
             visit[cur] = 2
-            r.. True
+            r.. T..
 
         visit[cur] = 2
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":

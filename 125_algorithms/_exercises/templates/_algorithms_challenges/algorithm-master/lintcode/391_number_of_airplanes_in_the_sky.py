@@ -7,7 +7,7 @@ class Interval(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: airplanes: An interval array
     @return: Count of airplanes are in the sky.

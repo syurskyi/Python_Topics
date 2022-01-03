@@ -8,7 +8,7 @@ _______ heapq
 # overwrite the comparison function, so the node can be comparable
 ListNode.__lt__ = l.... x, y: (x.val < y.val)
 
-class Solution(object):
+c_ Solution(object):
   ___ mergeKLists(self, lists):
     """
     :type lists: List[ListNode]

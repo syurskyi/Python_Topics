@@ -30,16 +30,16 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Node:
-    ___ __init__(self, chr):
-        self.chr = chr
-        self.ended = False
-        self.children = defaultdict(l....: N..)
+c_ Node:
+    ___ - , chr):
+        chr = chr
+        ended = F..
+        children = defaultdict(l....: N..)
 
 
-class Trie:
-    ___ __init__(self):
-        self.root = Node(N..)  # dummy
+c_ Trie:
+    ___ - ):
+        root = Node(N..)  # dummy
 
     @classmethod
     ___ insert(cls, node, w, i):
@@ -47,7 +47,7 @@ class Trie:
             node = Node(w[i])
 
         __ i __ l..(w) - 1:
-            node.ended = True
+            node.ended = T..
         ____:
             nxt = w[i + 1]
             node.children[nxt] = cls.insert(node.children[nxt], w, i + 1)
@@ -55,7 +55,7 @@ class Trie:
         r.. node
 
     @classmethod
-    ___ search(cls, node, w, i):
+    ___ s..(cls, node, w, i):
         __ n.. node:
             r..
 
@@ -65,11 +65,11 @@ class Trie:
         __ node.ended:
             r.. w[:i+1]
         ____ i + 1 < l..(w):
-            r.. cls.search(node.children[w[i + 1]], w, i + 1)
+            r.. cls.s..(node.children[w[i + 1]], w, i + 1)
         ____:
             r..
 
-class Solution:
+c_ Solution:
     ___ replaceWords(self, dic: List[s..], sentence: s..) -> s..:
         trie = Trie()
         ___ word __ dic:
@@ -78,15 +78,15 @@ class Solution:
 
         ret    # list
         ___ word __ sentence.s..(" "):
-            ___ child __ trie.root.children.values():
-                searched = Trie.search(child, word, 0)
+            ___ child __ trie.root.children.v..
+                searched = Trie.s..(child, word, 0)
                 __ searched:
                     ret.a..(searched)
                     break
             ____:
                 ret.a..(word)
 
-        r.. " ".join(ret)
+        r.. " ".j..(ret)
 
 
 __ __name__ __ "__main__":

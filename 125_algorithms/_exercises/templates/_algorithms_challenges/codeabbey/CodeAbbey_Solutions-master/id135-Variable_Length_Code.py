@@ -19,14 +19,14 @@ ___ compress_string(string):
         'q': '000000000001',   'z': '000000000000',
         }
     
-    string = string[::].lower()
+    string = string[::].l..
 
     # Convert to assigned values.
     eight_bit    # list
     ___ char __ string[::]:
         bits = ("%s") % (value_dict[char])
         eight_bit.a..(bits)
-    eight_bit = (''.join(eight_bit))
+    eight_bit = (''.j..(eight_bit))
 
     # Split into chunks of 8
     chunks    # list
@@ -47,6 +47,6 @@ ___ compress_string(string):
         __ l..(encoded_value) __ 1:
             encoded_value = '0' + encoded_value
         answer.a..(encoded_value)
-    print(' '.join(answer))
+    print(' '.j..(answer))
     
 compress_string(raw_input())

@@ -4,7 +4,7 @@
 #         self.x = a
 #         self.y = b
 
-class Solution(object):
+c_ Solution(object):
   ___ maxPoints(self, points):
     """
     :type points: List[Point]
@@ -17,7 +17,7 @@ class Solution(object):
       r.. a
 
     ans = 1
-    d = {}
+    d    # dict
     points.s..(key=l.... p: (p.x, p.y))
     ___ i __ r..(0, l..(points)):
       __ i > 0 a.. (points[i].x, points[i].y) __ (points[i - 1].x, points[i - 1].y):

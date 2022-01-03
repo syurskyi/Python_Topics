@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ longestConsecutive(self, root):
     """
     :type root: TreeNode

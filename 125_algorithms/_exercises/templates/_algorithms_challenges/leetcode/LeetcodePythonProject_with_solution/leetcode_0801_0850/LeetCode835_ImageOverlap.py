@@ -3,7 +3,7 @@ Created on Jun 10, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ largestOverlap(self, A, B):
         """
         :type A: List[List[int]]
@@ -33,7 +33,7 @@ class Solution(object):
         n = l..(A)
         la = [i/n*100 + i%n ___ i __ r..(n*n) __ A[i/n][i%n]]
         lb = [i/n*100 + i%n ___ i __ r..(n*n) __ B[i/n][i%n]]
-        count = {}
+        count    # dict
         ___ i __ la:
             ___ j __ lb:
                 count[i-j] = count.get(i-j, 0)+1

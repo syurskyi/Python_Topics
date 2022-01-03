@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ wordsTyping(self, sentence, rows, cols):
     """
     :type sentence: List[str]
@@ -6,7 +6,7 @@ class Solution(object):
     :type cols: int
     :rtype: int
     """
-    s = " ".join(sentence) + " "
+    s = " ".j..(sentence) + " "
     n = l..(s)
     start = 0
     ___ _ __ r..(rows):

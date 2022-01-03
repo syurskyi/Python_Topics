@@ -8,7 +8,7 @@ ____ identity_and_equality _______ (
 
 
 # `NewList` for tests
-class NewList(l..):
+c_ NewList(l..):
     pass
 
 
@@ -47,14 +47,14 @@ ___ test_car_age(days, expected):
 @pytest.mark.parametrize(
     "list1, list2, expected",
     [
-        ([], [], True),  # Empty
-        (l1, l2, True),  # same instance
-        (l1, l1[:], True),  # full copy
-        (l1, l3, True),  # full copy
-        (l5, l6, True),  # Two identical short lists
-        (l5[0], l6[0], True),  # First element of short lists (same instances)
-        (l1, l7, True),  # One list, one NewList, same contents
-        (l1, l8, False),  # Two completely different lists
+        ([], [], T..),  # Empty
+        (l1, l2, T..),  # same instance
+        (l1, l1[:], T..),  # full copy
+        (l1, l3, T..),  # full copy
+        (l5, l6, T..),  # Two identical short lists
+        (l5[0], l6[0], T..),  # First element of short lists (same instances)
+        (l1, l7, T..),  # One list, one NewList, same contents
+        (l1, l8, F..),  # Two completely different lists
     ],
 )
 ___ test_the_same_configuration(list1, list2, expected):
@@ -64,10 +64,10 @@ ___ test_the_same_configuration(list1, list2, expected):
 @pytest.mark.parametrize(
     "car1, car2, expected",
     [
-        (my_car, my_car, True),  # Identical cars (same instance)
-        (my_car, other_car1, True),  # Identical cars (same instance)
-        (my_car, other_car2, True),  # Car of the same model and color
-        (other_car2, other_car3, False),  # Completely different cars
+        (my_car, my_car, T..),  # Identical cars (same instance)
+        (my_car, other_car1, T..),  # Identical cars (same instance)
+        (my_car, other_car2, T..),  # Car of the same model and color
+        (other_car2, other_car3, F..),  # Completely different cars
     ],
 )
 ___ test_is_same_car_color_and_model(car1, car2, expected):
@@ -77,9 +77,9 @@ ___ test_is_same_car_color_and_model(car1, car2, expected):
 @pytest.mark.parametrize(
     "car1, car2, expected",
     [
-        (my_car, my_car, True),  # Same instance
-        (my_car, other_car1, True),  # Same Car, different instance
-        (other_car1, other_car2, False),  # Completely different cars
+        (my_car, my_car, T..),  # Same instance
+        (my_car, other_car1, T..),  # Same Car, different instance
+        (other_car1, other_car2, F..),  # Completely different cars
     ],
 )
 ___ test_is_the_same_instance_of_car(car1, car2, expected):

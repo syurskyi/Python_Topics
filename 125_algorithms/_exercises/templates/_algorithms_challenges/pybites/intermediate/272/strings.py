@@ -11,9 +11,9 @@ ___ common_words(sentence1: List[s..], sentence2: List[s..]) -> List[s..]:
             Returned words should be sorted by word's length.
     """
     common = set()
-    sentence2 = l..(map(l.... x: x.lower(), sentence2))
+    sentence2 = l..(map(l.... x: x.l.., sentence2))
     ___ word __ sentence1:
-        word_lower = word.lower()
+        word_lower = word.l..
         __ word_lower __ sentence2:
                 common.add(word_lower)
 

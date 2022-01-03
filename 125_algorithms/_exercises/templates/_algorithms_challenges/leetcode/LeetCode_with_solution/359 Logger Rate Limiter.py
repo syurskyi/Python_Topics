@@ -4,12 +4,12 @@ Premium question
 __author__ = 'Daniel'
 
 
-class Logger(object):
-    ___ __init__(self):
+c_ Logger(object):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.h = {}
+        h    # dict
 
 
     ___ shouldPrintMessage(self, timestamp, message):
@@ -21,11 +21,11 @@ class Logger(object):
         :type message: str
         :rtype: bool
         """
-        __ message n.. __ self.h o. timestamp - self.h[message] >= 10:
-            self.h[message] = timestamp
-            r.. True
+        __ message n.. __ h o. timestamp - h[message] >= 10:
+            h[message] = timestamp
+            r.. T..
 
-        r.. False
+        r.. F..
 
 
 # Your Logger object will be instantiated and called as such:

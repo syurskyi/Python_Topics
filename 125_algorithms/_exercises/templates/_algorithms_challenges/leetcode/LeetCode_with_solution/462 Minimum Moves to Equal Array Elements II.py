@@ -22,7 +22,7 @@ element):
 """
 
 
-class Solution:
+c_ Solution:
     ___ pivot(self, A, lo, hi):
         pivot = lo
         closed = pivot  # closed == pivot, means no closed set
@@ -36,13 +36,13 @@ class Solution:
 
     ___ quick_select(self, nums, lo, hi, k):
         """find k-th (0-indexed)"""
-        pivot = self.pivot(nums, lo, hi)
+        pivot = pivot(nums, lo, hi)
         __ pivot __ k:
             r.. nums[pivot]
         ____ pivot > k:
-            r.. self.quick_select(nums, lo, pivot, k)
+            r.. quick_select(nums, lo, pivot, k)
         ____:
-            r.. self.quick_select(nums, pivot + 1, hi, k)
+            r.. quick_select(nums, pivot + 1, hi, k)
 
 
     ___ minMoves2(self, nums):
@@ -58,7 +58,7 @@ class Solution:
         :rtype: int
         """
         n = l..(nums)
-        median = self.quick_select(nums, 0, n, n//2)
+        median = quick_select(nums, 0, n, n//2)
         r.. s..(map(l.... x: abs(x - median), nums))
 
     ___ find_median(self, nums):

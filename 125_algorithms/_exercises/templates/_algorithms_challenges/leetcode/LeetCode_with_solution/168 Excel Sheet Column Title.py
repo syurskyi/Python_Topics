@@ -14,7 +14,7 @@ For example:
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ convertToTitle(self, n):
         """
         :type n: int
@@ -26,5 +26,5 @@ class Solution:
             sb.a..(chr(ord("A")+n%26))
             n /= 26
 
-        r.. "".join(reversed(sb))
+        r.. "".j..(reversed(sb))
 

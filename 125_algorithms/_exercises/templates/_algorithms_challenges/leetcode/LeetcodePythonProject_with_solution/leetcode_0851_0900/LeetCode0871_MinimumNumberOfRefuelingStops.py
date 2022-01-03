@@ -3,7 +3,7 @@ Created on Oct 3, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minRefuelStops(self, target, startFuel, stations):
         """
         :type target: int

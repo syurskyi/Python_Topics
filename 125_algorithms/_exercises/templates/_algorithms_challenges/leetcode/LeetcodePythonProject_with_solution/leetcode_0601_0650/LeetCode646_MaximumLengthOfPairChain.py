@@ -3,7 +3,7 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findLongestChain(self, pairs):
         """
         :type pairs: List[List[int]]
@@ -19,14 +19,14 @@ class Solution(object):
                 res += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1, 2], [2, 3], [3, 4]],
             [[1, 10], [2, 3], [4, 5], [6, 7]],
         ]
         ___ pairs __ testCases:
             print('pairs: %s' % pairs)
-            result = self.findLongestChain(pairs)
+            result = findLongestChain(pairs)
             print('result: %s' % result)
             print('-='*30+'-')
 

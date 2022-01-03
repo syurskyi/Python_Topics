@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
+c_ Solution:
     # @return a ListNode
     ___ removeNthFromEnd(self, head, n):
         __ head __ N..

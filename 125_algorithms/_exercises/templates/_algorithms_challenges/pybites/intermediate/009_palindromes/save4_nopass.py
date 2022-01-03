@@ -3,14 +3,14 @@ which reads the same backward as forward"""
 _______ os
 _______ urllib.request
 
-DICTIONARY = os.path.join('/tmp', 'dictionary_m_words.txt')
+DICTIONARY = os.path.j..('/tmp', 'dictionary_m_words.txt')
 urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().s.. ___ word __ f.readlines())
+        r.. (word.l...s.. ___ word __ f.readlines())
 
 
 ___ is_palindrome(word):
@@ -18,8 +18,8 @@ ___ is_palindrome(word):
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
-    w = word.r..(' ', '').lower()
-    output = ''.join(ch ___ ch __ w __ ch.isalnum())
+    w = word.r..(' ', '').l..
+    output = ''.j..(ch ___ ch __ w __ ch.isalnum())
     r.. output __ output[::-1]
 
 

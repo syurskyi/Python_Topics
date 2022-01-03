@@ -25,35 +25,35 @@ Each node will have value between 0 and 100000.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.ret = 0
+c_ Solution:
+    ___ - ):
+        ret = 0
 
     ___ maxAncestorDiff(self, root: TreeNode) -> int:
         """
         dfs return min and max
         """
-        self.dfs(root)
-        r.. self.ret
+        dfs(root)
+        r.. ret
 
     ___ dfs(self, node):
         __ n.. node:
             r.. float("inf"), -float("inf")
 
-        lmin, lmax = self.dfs(node.left)
-        rmin, rmax = self.dfs(node.right)
+        lmin, lmax = dfs(node.left)
+        rmin, rmax = dfs(node.right)
         mini = m..(lmin, rmin)
         maxa = max(lmax, rmax)
         __ mini != float("inf"):
-            self.ret = max(self.ret, abs(mini - node.val))
+            ret = max(ret, abs(mini - node.val))
         __ maxa != -float("inf"):
-            self.ret = max(self.ret, abs(maxa - node.val))
+            ret = max(ret, abs(maxa - node.val))
 
         r.. m..(mini, node.val), max(maxa, node.val)

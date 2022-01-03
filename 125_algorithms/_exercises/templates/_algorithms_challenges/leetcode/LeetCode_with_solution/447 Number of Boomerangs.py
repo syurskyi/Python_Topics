@@ -10,7 +10,7 @@ coordinates of points are all in the range [-10000, 10000] (inclusive).
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ distance(self, a, b):
         r.. (a[0] - b[0])**2 + (a[1] - b[1])**2
 
@@ -25,10 +25,10 @@ class Solution:
             dist_cnt = Counter()
             ___ j __ r..(l..(points)):
                 __ i != j:
-                    d = self.distance(points[i], points[j])
+                    d = distance(points[i], points[j])
                     dist_cnt[d] += 1
 
-            ___ v __ dist_cnt.values():
+            ___ v __ dist_cnt.v..
                 # Permutation: P v 2
                 ret += v * (v - 1)
 
@@ -46,7 +46,7 @@ class Solution:
             dist_lst    # list
             ___ j __ r..(l..(points)):
                 __ i != j:
-                    d = self.distance(points[i], points[j])
+                    d = distance(points[i], points[j])
                     dist_lst.a..(d)
                     dist_cnt[d] += 1
 

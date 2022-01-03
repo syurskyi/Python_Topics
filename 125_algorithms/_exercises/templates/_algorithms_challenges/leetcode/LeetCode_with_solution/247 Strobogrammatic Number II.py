@@ -7,14 +7,14 @@ ____ collections _______ deque
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.lst = ["11", "69", "88", "96", "00"]  # use list rather than map since no need to look up
-        self.middle = ["0", "1", "8"]
+c_ Solution(object):
+    ___ - ):
+        lst = ["11", "69", "88", "96", "00"]  # use list rather than map since no need to look up
+        middle = ["0", "1", "8"]
 
     ___ findStrobogrammatic(self, n):
         ret    # list
-        self.build(n, deque(), ret)
+        build(n, deque(), ret)
         r.. ret
 
     ___ build(self, n, cur, ret):
@@ -22,26 +22,26 @@ class Solution(object):
         build from inside
         """
         __ n%2 __ 1 a.. l..(cur) __ 0:
-            ___ elt __ self.middle:
+            ___ elt __ middle:
                 cur.a..(elt)
-                self.build(n, cur, ret)
+                build(n, cur, ret)
                 cur.pop()
         ____:
             __ l..(cur) __ n:
-                ret.a..("".join(cur))
+                ret.a..("".j..(cur))
                 r..
-            ___ elt __ self.lst:
+            ___ elt __ lst:
                 __ n.. (elt __ "00" a.. l..(cur) __ n-2):
                     cur.appendleft(elt[0])
                     cur.a..(elt[1])
-                    self.build(n, cur, ret)
+                    build(n, cur, ret)
                     cur.pop()
                     cur.popleft()
 
 
-class SolutionArray(object):
-    ___ __init__(self):
-        self.map1 = ["11", "69", "88", "96", "00"]
+c_ SolutionArray(object):
+    ___ - ):
+        map1 = ["11", "69", "88", "96", "00"]
 
     ___ findStrobogrammatic(self, n):
         """
@@ -49,7 +49,7 @@ class SolutionArray(object):
         :rtype: List[str]
         """
         ret    # list
-        self.build(n, [], ret)
+        build(n, [], ret)
         r.. ret
 
     ___ build(self, n, cur, ret):
@@ -59,33 +59,33 @@ class SolutionArray(object):
         __ n%2 __ 1 a.. l..(cur) __ 0:
             ___ i __ ["0", "1", "8"]:
                 cur.a..(i)
-                self.build(n, cur, ret)
+                build(n, cur, ret)
                 cur.pop()
             r..
 
         __ l..(cur)/2 __ n/2:
-            ret.a..("".join(cur))
+            ret.a..("".j..(cur))
             r..
 
-        ___ elt __ self.map1:
+        ___ elt __ map1:
             __ elt != "00" o. l..(cur) != n-2:
                 cur.insert(0, elt[0])
                 cur.a..(elt[1])
-                self.build(n, cur, ret)
+                build(n, cur, ret)
                 cur.pop()
                 cur.pop(0)
 
 
-class SolutionOutputLimitExceeded(object):
-    ___ __init__(self):
-        self.map = {
+c_ SolutionOutputLimitExceeded(object):
+    ___ - ):
+        map = {
             "1": "1",
             "6": "9",
             "9": "6",
             "8": "8",
             "0": "0"
         }
-        self.middle = ["1", "8", "0"]
+        middle = ["1", "8", "0"]
 
     ___ findStrobogrammatic(self, n):
         """
@@ -93,31 +93,31 @@ class SolutionOutputLimitExceeded(object):
         :rtype: List[str]
         """
         ret    # list
-        self.build(0, n, [], ret)
+        build(0, n, [], ret)
         r.. ret
 
     ___ build(self, idx, n, cur, ret):
         __ idx __ n/2:
             __ n % 2 != 0:
-                ___ m __ self.middle:
+                ___ m __ middle:
                     __ m != "0" o. idx != 0:
                         temp = l..(cur)
                         temp.a..(m)
                         ___ i __ xrange(idx-1, -1, -1):
-                            temp.a..(self.map[temp[i]])
-                        ret.a..("".join(temp))
+                            temp.a..(map[temp[i]])
+                        ret.a..("".j..(temp))
             ____:
                 temp = l..(cur)
                 ___ i __ xrange(idx-1, -1, -1):
-                    temp.a..(self.map[temp[i]])
-                    ret.a..("".join(temp))
+                    temp.a..(map[temp[i]])
+                    ret.a..("".j..(temp))
 
             r..
 
-        ___ k __ self.map.keys():
+        ___ k __ map.k..:
             __ k != "0" o. idx != 0:
                 cur.a..(k)
-                self.build(idx+1, n, cur, ret)
+                build(idx+1, n, cur, ret)
                 cur.pop()
 
 

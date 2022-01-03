@@ -8,15 +8,15 @@ Created on Mar 20, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-class NestedInteger(object):
-    ___ isInteger(self):
+c_ NestedInteger(object):
+    ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
         pass
 
-    ___ getInteger(self):
+    ___ getInteger
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
@@ -24,7 +24,7 @@ class NestedInteger(object):
         """
         pass
 
-    ___ getList(self):
+    ___ getList
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -32,8 +32,8 @@ class NestedInteger(object):
         """
         pass
 
-class NestedIterator(object):
-    ___ __init__(self, nestedList):
+c_ NestedIterator(object):
+    ___ - , nestedList):
         deque = nestedList
         result    # list
         w.... deque:
@@ -45,13 +45,13 @@ class NestedIterator(object):
                 l.reverse()
                 ___ ni0 __ l:
                     deque.insert(0, ni0)
-        self.result = result
+        result = result
 
-    ___ next(self):
-        r.. self.result.pop(0)
+    ___ next
+        r.. result.pop(0)
 
-    ___ hasNext(self):
-        __ self.result:
-            r.. True
-        r.. False
+    ___ hasNext
+        __ result:
+            r.. T..
+        r.. F..
 

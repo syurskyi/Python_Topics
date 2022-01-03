@@ -42,35 +42,35 @@ Each node's value will be between 0 and 1000.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ collections _______ defaultdict
 
 
-class Solution:
-    ___ __init__(self):
-        self.mp = defaultdict(l..)  # element (-Y, val)  # from left to right, top to bottom
+c_ Solution:
+    ___ - ):
+        mp = defaultdict(l..)  # element (-Y, val)  # from left to right, top to bottom
 
     ___ verticalTraversal(self, root: TreeNode) -> List[List[int]]:
-        self.dfs(root, 0, 0)
+        dfs(root, 0, 0)
         ret    # list
-        mn = m..(self.mp)
-        mx = max(self.mp)
+        mn = m..(mp)
+        mx = max(mp)
         ___ i __ r..(mn, mx+1):
             ret.a..([
                 val
-                ___ _, val __ s..(self.mp[i])
+                ___ _, val __ s..(mp[i])
             ])
         r.. ret
 
     ___ dfs(self, node, x, y):
         __ n.. node:
             r..
-        self.mp[x].a..((-y, node.val))
-        self.dfs(node.left, x-1, y-1)
-        self.dfs(node.right, x+1, y-1)
+        mp[x].a..((-y, node.val))
+        dfs(node.left, x-1, y-1)
+        dfs(node.right, x+1, y-1)

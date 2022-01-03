@@ -6,17 +6,17 @@ ___ climbingLeaderboard(leaderboard, aliceScores):
     rankings = createRankings(leaderboard)
     i = l..(leaderboard) - 1
     ___ score __ aliceScores:
-        flag = True
+        flag = T..
         w.... flag:
             __ i __ -1:
                 print(1)
-                flag = False
+                flag = F..
             ____ score < leaderboard[i]:
                 print(rankings[i] + 1)
-                flag = False
+                flag = F..
             ____ score __ leaderboard[i]:
                 print(rankings[i])
-                flag = False
+                flag = F..
             ____ score > leaderboard[i]:
                 i -= 1
     r..

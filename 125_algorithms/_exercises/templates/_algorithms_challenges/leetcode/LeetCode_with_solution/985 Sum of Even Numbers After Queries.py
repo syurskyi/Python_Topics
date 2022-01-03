@@ -34,7 +34,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ sumEvenAfterQueries(self, A: List[int], queries: List[List[int]]) -> List[int]:
         """
         maintain a sum

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ multiply(self, A, B):
     """
     :type A: List[List[int]]

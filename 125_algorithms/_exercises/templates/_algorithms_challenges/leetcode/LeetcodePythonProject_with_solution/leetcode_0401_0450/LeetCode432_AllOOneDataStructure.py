@@ -4,32 +4,32 @@ Created on Apr 15, 2017
 @author: MT
 '''
 
-class Bucket(object):
-    ___ __init__(self, value):
-        self.keySet = set()
-        self.value = value
-        self.next = N..
-        self.prev = N..
+c_ Bucket(object):
+    ___ - , value):
+        keySet = set()
+        value = value
+        next = N..
+        prev = N..
 
-class AllOne(object):
-    ___ __init__(self):
-        self.keyBucketMap = {}
-        self.head = N..
-        self.tail = N..
+c_ AllOne(object):
+    ___ - ):
+        keyBucketMap    # dict
+        head = N..
+        tail = N..
     
     ___ inc(self, key):
-        __ key __ self.keyBucketMap:
-            bucket = self.keyBucketMap[key]
+        __ key __ keyBucketMap:
+            bucket = keyBucketMap[key]
             nextBucket = bucket.next
             __ nextBucket a.. nextBucket.value __ bucket.value+1:
                 nextBucket.keySet.add(key)
-                self.keyBucketMap[key] = nextBucket
+                keyBucketMap[key] = nextBucket
             ____ n.. nextBucket:
                 nextBucket = Bucket(bucket.value+1)
                 nextBucket.keySet.add(key)
-                self.tail = nextBucket
+                tail = nextBucket
                 bucket.next = nextBucket
-                self.keyBucketMap[key] = nextBucket
+                keyBucketMap[key] = nextBucket
             ____:
                 newBucket = Bucket(bucket.value+1)
                 newBucket.keySet.add(key)
@@ -37,7 +37,7 @@ class AllOne(object):
                 newBucket.next = nextBucket
                 bucket.next = newBucket
                 newBucket.prev = bucket
-                self.keyBucketMap[key] = newBucket
+                keyBucketMap[key] = newBucket
             bucket.keySet.remove(key)
             __ n.. bucket.keySet:
                 prevBucket = bucket.prev
@@ -48,32 +48,32 @@ class AllOne(object):
                 ____:
                     nextBucket = bucket.next
                     nextBucket.prev = N..
-                    self.head = nextBucket
+                    head = nextBucket
         ____:
-            __ self.head:
-                __ self.head.value __ 1:
-                    self.head.keySet.add(key)
+            __ head:
+                __ head.value __ 1:
+                    head.keySet.add(key)
                 ____:
                     bucket = Bucket(1)
                     bucket.keySet.add(key)
-                    self.head.prev = bucket
-                    bucket.next = self.head
-                    self.head = bucket
+                    head.prev = bucket
+                    bucket.next = head
+                    head = bucket
             ____:
                 bucket= Bucket(1)
                 bucket.keySet.add(key)
-                self.head = bucket
-                self.tail = bucket
-            self.keyBucketMap[key] = self.head
+                head = bucket
+                tail = bucket
+            keyBucketMap[key] = head
     
     ___ dec(self, key):
-        __ key __ self.keyBucketMap:
-            bucket = self.keyBucketMap[key]
+        __ key __ keyBucketMap:
+            bucket = keyBucketMap[key]
             prevBucket = bucket.prev
             __ prevBucket:
                 __ prevBucket.value+1 __ bucket.value:
                     prevBucket.keySet.add(key)
-                    self.keyBucketMap[key] = prevBucket
+                    keyBucketMap[key] = prevBucket
                 ____:
                     newBucket = Bucket(bucket.value-1)
                     newBucket.keySet.add(key)
@@ -81,29 +81,29 @@ class AllOne(object):
                     newBucket.next = bucket
                     prevBucket.next = newBucket
                     bucket.prev = newBucket
-                    self.keyBucketMap[key] = newBucket
+                    keyBucketMap[key] = newBucket
             ____:
                 __ bucket.value __ 1:
-                    del self.keyBucketMap[key]
+                    del keyBucketMap[key]
                 ____:
                     newBucket = Bucket(bucket.value-1)
                     newBucket.keySet.add(key)
                     newBucket.next = bucket
                     bucket.prev = newBucket
-                    self.head = newBucket
-                    self.keyBucketMap[key] = newBucket
+                    head = newBucket
+                    keyBucketMap[key] = newBucket
             bucket.keySet.remove(key)
             __ n.. bucket.keySet:
                 __ n.. bucket.prev a.. n.. bucket.next:
-                    self.head = N..
-                    self.tail = N..
+                    head = N..
+                    tail = N..
                 ____ bucket.prev a.. n.. bucket.next:
                     bucket.prev.next = N..
-                    self.tail = bucket.prev
+                    tail = bucket.prev
                     bucket.prev = N..
                 ____ bucket.next a.. n.. bucket.prev:
                     bucket.next.prev = N..
-                    self.head = bucket.next
+                    head = bucket.next
                     bucket.next = N..
                 ____:
                     bucket.next.prev = bucket.prev
@@ -111,18 +111,18 @@ class AllOne(object):
                     bucket.prev = N..
                     bucket.next = N..
         
-    ___ getMax(self):
-        __ self.tail:
-            val = self.tail.keySet.pop()
-            self.tail.keySet.add(val)
+    ___ getMax
+        __ tail:
+            val = tail.keySet.pop()
+            tail.keySet.add(val)
             r.. val
         ____:
             r.. ''
     
-    ___ getMin(self):
-        __ self.head:
-            val = self.head.keySet.pop()
-            self.head.keySet.add(val)
+    ___ getMin
+        __ head:
+            val = head.keySet.pop()
+            head.keySet.add(val)
             r.. val
         ____:
             r.. ''

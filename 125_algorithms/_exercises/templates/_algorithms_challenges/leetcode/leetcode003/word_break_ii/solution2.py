@@ -11,7 +11,7 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 A solution is ["cats and dog", "cat sand dog"].
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ wordBreak(self, s, wordDict):
         """
         :type s: str
@@ -20,7 +20,7 @@ class Solution(object):
         """
         n = l..(s)
         t = [N.. ___ i __ r..(n)]
-        res = self.word_break_aux(s, wordDict, n - 1, t)
+        res = word_break_aux(s, wordDict, n - 1, t)
         r.. res
 
     ___ word_break_aux(self, s, wordDict, i, t):
@@ -35,7 +35,7 @@ class Solution(object):
         ____:
             res    # list
             ___ j __ r..(i):
-                rest = self.word_break_aux(s, wordDict, j, t)
+                rest = word_break_aux(s, wordDict, j, t)
                 word = s[j + 1:i + 1]
                 __ rest a.. word __ wordDict:
                     ___ r __ rest:

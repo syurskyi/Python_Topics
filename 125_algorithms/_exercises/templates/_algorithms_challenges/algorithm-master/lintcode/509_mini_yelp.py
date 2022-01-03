@@ -64,7 +64,7 @@ _______ bisect
 ____ YelpHelper _______ Location, Restaurant, GeoHash, Helper
 
 
-class MiniYelp:
+c_ MiniYelp:
     ERROR_IN_KM = (
         2500, 630, 78,
         20, 2.4, 0.61,
@@ -72,8 +72,8 @@ class MiniYelp:
         0.0005971, 0.0001492, 0.0000186
     )
 
-    restaurants = {}
-    restr_to_geohash = {}
+    restaurants    # dict
+    restr_to_geohash    # dict
     geohashs    # list
 
     # @param {str} name
@@ -81,41 +81,41 @@ class MiniYelp:
     # @return {int} restaurant's id
     ___ add_restaurant(self, name, location):
         restaurant = Restaurant.create(name, location)
-        hashcode = self.get_restr_hashcode(restaurant)
+        hashcode = get_restr_hashcode(restaurant)
 
-        self.restaurants[hashcode] = restaurant
-        self.restr_to_geohash[restaurant.id] = hashcode
-        bisect.insort(self.geohashs, hashcode)
+        restaurants[hashcode] = restaurant
+        restr_to_geohash[restaurant.id] = hashcode
+        bisect.insort(geohashs, hashcode)
 
         r.. restaurant.id
 
     # @param {int} restaurant_id
     # @return nothing
     ___ remove_restaurant(self, restaurant_id):
-        hashcode = self.restr_to_geohash[restaurant_id]
-        index = bisect.bisect_left(self.geohashs, hashcode)
+        hashcode = restr_to_geohash[restaurant_id]
+        index = bisect.bisect_left(geohashs, hashcode)
 
-        self.geohashs.pop(index)
-        del self.restaurants[hashcode]
-        del self.restr_to_geohash[restaurant_id]
+        geohashs.pop(index)
+        del restaurants[hashcode]
+        del restr_to_geohash[restaurant_id]
 
     # @param {Location} location
     # @param {double} k, distance smaller than k miles
     # @return {str[]} a list of restaurant's name and sort by
     # distance from near to far.
     ___ neighbors(self, location, k):
-        length = self.get_length(k)
+        length = get_length(k)
         prefix = GeoHash.encode(location)[:length]
 
         # chr(ord('z') + 1) == '{'
-        left = bisect.bisect_left(self.geohashs, prefix)
-        right = bisect.bisect(self.geohashs, prefix + '{')
+        left = bisect.bisect_left(geohashs, prefix)
+        right = bisect.bisect(geohashs, prefix + '{')
 
         neighbors    # list
         hashcode = restaurant = distance = N..
         ___ i __ r..(left, right):
-            hashcode = self.geohashs[i]
-            restaurant = self.restaurants[hashcode]
+            hashcode = geohashs[i]
+            restaurant = restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
             __ distance <= k:
                 neighbors.a..((distance, restaurant))
@@ -127,10 +127,10 @@ class MiniYelp:
         ]
 
     ___ get_length(self, k):
-        n = l..(self.ERROR_IN_KM)
+        n = l..(ERROR_IN_KM)
 
         ___ i __ r..(n):
-            __ k > self.ERROR_IN_KM[i]:
+            __ k > ERROR_IN_KM[i]:
                 r.. i
 
         r.. n
@@ -148,22 +148,22 @@ trie
 ____ YelpHelper _______ Location, Restaurant, GeoHash, Helper
 
 
-class Trie:
-    ___ __init__(self):
-        self.root = self._new_node()
+c_ Trie:
+    ___ - ):
+        root = _new_node()
 
-    ___ __repr__(self):
-        r.. repr(self.root)
+    ___ __repr__
+        r.. repr(root)
 
     ___ put(self, key):
         __ n.. key:
             r..
 
-        parent = self.root
+        parent = root
         parent['keys'].add(key)
         ___ char __ key:
             __ char n.. __ parent['children']:
-                parent['children'][char] = self._new_node()
+                parent['children'][char] = _new_node()
             parent['children'][char]['keys'].add(key)
             parent = parent['children'][char]
 
@@ -171,7 +171,7 @@ class Trie:
         __ n.. key:
             r..
 
-        parent = self.root
+        parent = root
         parent['keys'].discard(key)
         ___ char __ key:
             __ char n.. __ parent['children']:
@@ -180,7 +180,7 @@ class Trie:
             parent['keys'].discard(key)
 
     ___ get_keys_by_prefix(self, prefix):
-        parent = self.root
+        parent = root
         __ n.. prefix:
             r.. l..(parent['keys'])
 
@@ -191,14 +191,14 @@ class Trie:
 
         r.. l..(parent['keys'])
 
-    ___ _new_node(self):
+    ___ _new_node
         r.. {
             'keys': set(),
             'children': {}
         }
 
 
-class MiniYelp:
+c_ MiniYelp:
     ERROR_IN_KM = (
         2500, 630, 78,
         20, 2.4, 0.61,
@@ -207,44 +207,44 @@ class MiniYelp:
     )
 
     trie = Trie()
-    restaurants = {}
-    restr_to_geohash = {}
+    restaurants    # dict
+    restr_to_geohash    # dict
 
     # @param {str} name
     # @param {Location} location
     # @return {int} restaurant's id
     ___ add_restaurant(self, name, location):
         restaurant = Restaurant.create(name, location)
-        hashcode = self.get_restr_hashcode(restaurant)
+        hashcode = get_restr_hashcode(restaurant)
 
-        self.restaurants[hashcode] = restaurant
-        self.restr_to_geohash[restaurant.id] = hashcode
-        self.trie.put(hashcode)
+        restaurants[hashcode] = restaurant
+        restr_to_geohash[restaurant.id] = hashcode
+        trie.put(hashcode)
 
         r.. restaurant.id
 
     # @param {int} restaurant_id
     # @return nothing
     ___ remove_restaurant(self, restaurant_id):
-        hashcode = self.restr_to_geohash[restaurant_id]
+        hashcode = restr_to_geohash[restaurant_id]
 
-        del self.restaurants[hashcode]
-        del self.restr_to_geohash[restaurant_id]
-        self.trie.pick(hashcode)
+        del restaurants[hashcode]
+        del restr_to_geohash[restaurant_id]
+        trie.pick(hashcode)
 
     # @param {Location} location
     # @param {double} k, distance smaller than k miles
     # @return {str[]} a list of restaurant's name and sort by
     # distance from near to far.
     ___ neighbors(self, location, k):
-        length = self.get_length(k)
+        length = get_length(k)
         prefix = GeoHash.encode(location)[:length]
-        hashcodes = self.trie.get_keys_by_prefix(prefix)
+        hashcodes = trie.get_keys_by_prefix(prefix)
 
         neighbors    # list
         restaurant = distance = N..
         ___ hashcode __ hashcodes:
-            restaurant = self.restaurants[hashcode]
+            restaurant = restaurants[hashcode]
             distance = Helper.get_distance(location, restaurant.location)
             __ distance <= k:
                 neighbors.a..((distance, restaurant))
@@ -256,10 +256,10 @@ class MiniYelp:
         ]
 
     ___ get_length(self, k):
-        n = l..(self.ERROR_IN_KM)
+        n = l..(ERROR_IN_KM)
 
         ___ i __ r..(n):
-            __ k > self.ERROR_IN_KM[i]:
+            __ k > ERROR_IN_KM[i]:
                 r.. i
 
         r.. n

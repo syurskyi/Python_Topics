@@ -3,7 +3,7 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ bestRotation(self, A):
         """
         :type A: List[int]
@@ -27,7 +27,7 @@ class Solution(object):
         arr = A
         idx, maxVal = 0, float('-inf')
         ___ i __ r..(l..(arr)):
-            val = self.getScore(arr, i)
+            val = getScore(arr, i)
             __ val > maxVal:
                 maxVal = val
                 idx = i
@@ -40,14 +40,14 @@ class Solution(object):
             __ num <= i: res += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 3, 1, 4, 0],
             [1, 3, 0, 2, 4],
         ]
         ___ arr __ testCases:
             print('arr: %s' % arr)
-            result = self.bestRotation(arr)
+            result = bestRotation(arr)
             print('result: %s' % result)
             print('-='*30+'-')
 

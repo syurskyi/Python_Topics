@@ -4,7 +4,7 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ thirdMax(self, nums):
         first, second, third = float('-inf'), float('-inf'), float('-inf')
         ___ num __ nums:
@@ -19,13 +19,13 @@ class Solution(object):
                 third = num
         r.. third __ third != float('-inf') ____ first
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 2, 3, 1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.thirdMax(nums)
+            result = thirdMax(nums)
             print('result: %s' % result)
             print('-='*20+'-')
 

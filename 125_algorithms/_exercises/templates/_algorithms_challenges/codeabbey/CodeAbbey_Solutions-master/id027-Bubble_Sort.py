@@ -1,12 +1,12 @@
 ___ bubbleSort(amount, numbers):
-    s.. = False
+    s.. = F..
     swapCount, passCount = 0,0
 
     w.... n.. s..:
-        s.. = True
+        s.. = T..
         ___ i __ r..(amount-1):
             __ numbers[i] > numbers[i+1]:
-                s.. = False
+                s.. = F..
                 swapCount += 1
                 numbers[i], numbers[i+1] = numbers[i+1], numbers[i]
         passCount += 1

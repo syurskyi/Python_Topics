@@ -3,7 +3,7 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findMissingRanges(self, nums, lower, upper):
         """
         :type nums: List[int]
@@ -27,7 +27,7 @@ class Solution(object):
             res.a..('%s->%s' % (prev, upper))
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [0,1,3,50,75],
@@ -38,7 +38,7 @@ class Solution(object):
             print('nums: %s' % nums)
             print('lower: %s' % lower)
             print('upper: %s' % upper)
-            result = self.findMissingRanges(nums, lower, upper)
+            result = findMissingRanges(nums, lower, upper)
             print('result: %s' % result)
             print('-='*30+'-')
 

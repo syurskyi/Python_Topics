@@ -3,7 +3,7 @@ Created on Oct 31, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ sumSubseqWidths(self, A):
         """
         :type A: List[int]
@@ -23,7 +23,7 @@ class Solution(object):
         """
         nums    # list
         arr = A
-        self.dfs(arr, 0, [], nums)
+        dfs(arr, 0, [], nums)
         res = 0
         ___ arr __ nums:
             res = (res + max(arr) - m..(arr)) % (10**9+7)
@@ -34,15 +34,15 @@ class Solution(object):
             nums.a..(l..(curr))
         ___ i __ r..(idx, l..(arr)):
             curr.a..(arr[i])
-            self.dfs(arr, i+1, curr, nums)
+            dfs(arr, i+1, curr, nums)
             curr.pop()
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 1, 3],
         ]
         ___ arr __ testCases:
-            res = self.sumSubseqWidths(arr)
+            res = sumSubseqWidths(arr)
             print('res: %s' % res)
 
 __ __name__ __ '__main__':

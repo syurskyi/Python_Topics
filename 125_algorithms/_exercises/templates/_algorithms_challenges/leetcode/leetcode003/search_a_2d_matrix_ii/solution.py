@@ -21,7 +21,7 @@ Given target = 5, return true.
 Given target = 20, return false.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ searchMatrix(self, matrix, target):
         """
         :type matrix: List[List[int]]
@@ -31,18 +31,18 @@ class Solution(object):
         n = l..(matrix)
         m = l..(matrix[0])
         __ target < matrix[0][0] o. target > matrix[n - 1][m - 1]:
-            r.. False
+            r.. F..
         # Step-wise Linear Search from upper right
         y = 0
         x = m - 1
         w.... x >= 0 a.. y <= n - 1:
             __ target __ matrix[y][x]:
-                r.. True
+                r.. T..
             ____ target < matrix[y][x]:
                 x -= 1
             ____:
                 y += 1
-        r.. False
+        r.. F..
 
 
 a1 = [

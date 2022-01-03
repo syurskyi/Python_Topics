@@ -3,22 +3,22 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maskPII(self, S):
         """
         :type S: str
         :rtype: str
         """
-        _______ re
+        _______ __
         s = S
-        __ re.match('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s):
-            s = s.lower()
+        __ __.match('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s):
+            s = s.l..
             ind = s.find('@')
             name = s[:ind]
             mail = s[ind:]
             r.. name[0]+'*****'+name[-1]+mail
         ____:
-            s0 = re.sub('[{|}|(|)|\+|\-|\s]', '', s)
+            s0 = __.sub('[{|}|(|)|\+|\-|\s]', '', s)
             __ l..(s0) __ 11 a.. s0[0] __ '1' a.. s[0]!='+':
                 s0 = s0[1:]
             __ l..(s0) __ 10:
@@ -27,7 +27,7 @@ class Solution(object):
                 cnt = l..(s0)-10
                 r.. '+'+'*'*cnt+('-***-***-%s' % s0[-4:])
     
-    ___ test(self):
+    ___ test
         testCases = [
             'LeetCode@LeetCode.com',
             'AB@qq.com',
@@ -38,7 +38,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.maskPII(s)
+            result = maskPII(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

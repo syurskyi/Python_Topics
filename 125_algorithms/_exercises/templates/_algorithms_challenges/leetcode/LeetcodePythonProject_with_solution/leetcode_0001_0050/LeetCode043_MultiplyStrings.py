@@ -3,7 +3,7 @@ Created on Jun 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ multiply(self, num1, num2):
         """
         :type num1: str
@@ -20,5 +20,5 @@ class Solution(object):
                 sumVal = val+pos[p2]
                 pos[p1] += sumVal//10
                 pos[p2] = sumVal%10
-        res = ''.join([s..(n) ___ n __ pos]).lstrip('0')
+        res = ''.j..([s..(n) ___ n __ pos]).lstrip('0')
         r.. res __ res ____ '0'

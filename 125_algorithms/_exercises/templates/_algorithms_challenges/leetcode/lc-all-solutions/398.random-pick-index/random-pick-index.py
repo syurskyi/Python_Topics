@@ -1,12 +1,12 @@
-class Solution(object):
+c_ Solution(object):
 
-  ___ __init__(self, nums):
+  ___ - , nums):
     """
     
     :type nums: List[int]
     :type numsSize: int
     """
-    self.nums = nums
+    nums = nums
 
   ___ pick(self, target):
     """
@@ -15,8 +15,8 @@ class Solution(object):
     """
     count = 0
     ans = -1
-    ___ i __ r..(0, l..(self.nums)):
-      __ self.nums[i] __ target:
+    ___ i __ r..(0, l..(nums)):
+      __ nums[i] __ target:
         count += 1
         __ random.randrange(0, count) __ 0:
           ans = i

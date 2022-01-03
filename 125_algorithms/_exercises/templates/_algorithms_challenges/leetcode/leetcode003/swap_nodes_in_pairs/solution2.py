@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution:
+c_ Solution:
     # @param a ListNode
     # @return a ListNode
     ___ swapPairs(self, head):

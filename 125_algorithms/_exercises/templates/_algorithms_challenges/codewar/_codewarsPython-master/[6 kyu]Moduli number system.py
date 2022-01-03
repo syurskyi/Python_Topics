@@ -8,7 +8,7 @@ ___ fromNb2Str(n, modsys):
     
     __ reduce(l.... x,y:x*y, modsys) < n:
         r.. 'Not applicable'
-    r.. '-' + '--'.join([s..(n%num) ___ num __ modsys]) + '-'
+    r.. '-' + '--'.j..([s..(n%num) ___ num __ modsys]) + '-'
 
 print(fromNb2Str(187,[8,7,5,3]))
 print(fromNb2Str(15,[8,6,5,3]))

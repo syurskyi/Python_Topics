@@ -4,7 +4,7 @@ Created on Aug 24, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ splitLoopedString(self, strs):
         """
         :type strs: List[str]
@@ -16,18 +16,18 @@ class Solution(object):
             ___ start __ (s, s[::-1]):
                 ___ j __ r..(l..(start)+1):
                     __ n.. res:
-                        res = start[j:] + ''.join(arr[i+1:]+arr[:i]) + start[:j]
+                        res = start[j:] + ''.j..(arr[i+1:]+arr[:i]) + start[:j]
                     ____:
-                        res = max(res, start[j:] + ''.join(arr[i+1:]+arr[:i]) + start[:j])
+                        res = max(res, start[j:] + ''.j..(arr[i+1:]+arr[:i]) + start[:j])
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ['abc', 'xyz'],
         ]
         ___ strs __ testCases:
             print('strs: %s' % strs)
-            result = self.splitLoopedString(strs)
+            result = splitLoopedString(strs)
             print('result: %s' % result)
             print('-='*30+'-')
 

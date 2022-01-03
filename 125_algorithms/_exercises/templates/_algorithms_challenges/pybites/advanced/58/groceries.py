@@ -4,12 +4,12 @@ ____ collections _______ n..
 Item = n..('Item', 'product price craving')
 
 
-class Groceries:
+c_ Groceries:
 
-    ___ __init__(self, items_ N..
+    ___ - , items_ N..
         """This cart can be instantiated with a list of namedtuple
            items, if not provided use an empty list"""
-        self._items = items __ items __ n.. N.. ____ []
+        _items = items __ items __ n.. N.. ____ []
 
     ___ show(self, items_ N..
         """Print a simple table of cart items with total at the end"""
@@ -19,7 +19,7 @@ class Groceries:
             __ item.craving:
                 product += ' (craving)'
             print(f'{product:<30} | {item.price:>3}')
-        self._print_total(items)
+        _print_total(items)
 
     ___ _print_total(self, items):
         """Calculate and print total price of cart"""
@@ -29,40 +29,40 @@ class Groceries:
 
     ___ add(self, new_item):
         """Add a new item to cart, exceptions left out for simplicity"""
-        self._items.a..(new_item)
-        self.show()
+        _items.a..(new_item)
+        show()
 
     ___ delete(self, product):
         """Delete item matching 'product', raises IndexError
            if no item matches"""
-        ___ i, item __ e..(self):
+        ___ i, item __ e..
             __ item.product __ product:
-                self._items.pop(i)
+                _items.pop(i)
                 break
         ____:
             raise IndexError(f'{product} not in cart')
-        self.show()
+        show()
 
-    ___ search(self, search):
+    ___ s..(self, s..):
         """Filters items matching insensitive 'contains' search, and passes
            them to show for printing"""
-        items = [item ___ item __ self __ search.lower()
-                 __ item.product.lower()]
-        self.show(items)
+        items = [item ___ item __ self __ s...l..
+                 __ item.product.l..]
+        show(items)
 
-    @property
-    ___ due(self):
+    $
+    ___ due
         r.. s..(item.price ___ item __ self)
 
-    ___ __len__(self):
+    ___ __len__
         """The len of cart"""
-        r.. l..(self._items)
+        r.. l..(_items)
 
     ___ __getitem__(self, index):
         """Making the class iterable (cart = Groceries() -> cart[1] etc)
            without this dunder I would get 'TypeError: 'Cart' object does
            not support indexing' when trying to index it"""
-        r.. self._items[index]
+        r.. _items[index]
 
 
 ___ create_parser():
@@ -73,7 +73,7 @@ ___ create_parser():
 
     ap = argparse.ArgumentParser()
     group = ap.add_argument_group(title="Grocery Store",description='interface to grocery store')
-    g1 = group.add_mutually_exclusive_group(required=True)
+    g1 = group.add_mutually_exclusive_group(required=T..)
     g1.add_argument("-a","--add",help="add item providing name (str), price (int), and craving (bool)",nargs=3)
     g1.add_argument("-d","--delete",help="delete a product by name (str)")
     g1.add_argument("-l","--list",help="show items in cart",action='store_true')
@@ -98,7 +98,7 @@ ___ handle_args(args=N.., cart_ N..
         cart = Groceries()
 
     # different crud operations - please complete ...
-    __ args['list'] __ True:
+    __ args['list'] __ T..:
         cart.show()
     ____ args['add']:
         item,price,craving = args['add']
@@ -112,7 +112,7 @@ ___ handle_args(args=N.., cart_ N..
         cart.delete(item)
     ____:
         item = args['search']
-        cart.search(item)
+        cart.s..(item)
 
 
 

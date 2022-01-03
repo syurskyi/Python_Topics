@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ getHint(self, secret, guess):
         """
         :type secret: str
@@ -32,7 +32,7 @@ class Solution:
         r.. TMPL.f..(bulls, cows)
 
 
-class Solution:
+c_ Solution:
     ___ getHint(self, secret, guess):
         """
         :type secret: str

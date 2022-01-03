@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findCheapestPrice(self, n, flights, src, dst, K):
         """
         :type n: int
@@ -20,7 +20,7 @@ class Solution:
         r.. costs[dst] __ costs[dst] < float('inf') ____ -1
 
 
-class Solution:
+c_ Solution:
     ___ findCheapestPrice(self, n, flights, src, dst, K):
         """
         :type n: int

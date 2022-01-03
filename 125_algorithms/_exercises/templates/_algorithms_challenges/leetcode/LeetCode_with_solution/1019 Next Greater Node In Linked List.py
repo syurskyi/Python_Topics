@@ -31,16 +31,16 @@ The given list has length in the range [0, 10000].
 """
 
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ nextLargerNodes(self, head: ListNode) -> List[int]:
         """
         If input is an array, use stack from right to left. Maintain a decreasing stack

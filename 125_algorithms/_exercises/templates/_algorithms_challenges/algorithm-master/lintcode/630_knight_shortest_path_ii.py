@@ -1,7 +1,7 @@
 """
 DFS
 """
-class Solution:
+c_ Solution:
     """
     @param: G: a chessboard included 0 and 1
     @return: the shortest path
@@ -42,7 +42,7 @@ class Solution:
 """
 DP
 """
-class Solution:
+c_ Solution:
     """
     @param: G: a chessboard included 0 and 1
     @return: the shortest path

@@ -4,7 +4,7 @@ _______ urllib.request
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.join(tmp, 'dirnames')
+tempfile = os.path.j..(tmp, 'dirnames')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile
@@ -42,7 +42,7 @@ ___ gen_files(tempfile=tempfile):
         ___ row __ data:
             current = row.strip("\n").s..(",")
             __ current[1] __ 'True':
-                y.. current[0].lower()
+                y.. current[0].l..
 
 
 ___ diehard_pybites(files_ N..

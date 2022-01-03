@@ -6,5 +6,5 @@ ___ pretty_string(obj: Any) -> s..:
     # TODO: your code
     
 
-    pp = pprint.PrettyPrinter(width=60,depth=2,sort_dicts=True)
+    pp = pprint.PrettyPrinter(width=60,depth=2,sort_dicts=T..)
     r.. pp.pformat(obj)

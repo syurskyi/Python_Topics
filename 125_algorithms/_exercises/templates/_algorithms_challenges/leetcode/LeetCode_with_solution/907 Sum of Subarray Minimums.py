@@ -26,7 +26,7 @@ ____ typing _______ List
 MOD = 10 ** 9 + 7
 
 
-class Solution:
+c_ Solution:
     ___ sumSubarrayMins(self, A: List[int]) -> int:
         """
         Let F[i][j] be the min of A[i:j]
@@ -79,7 +79,7 @@ class Solution:
         r.. ret
 
 
-class Solution:
+c_ Solution:
     ___ sumSubarrayMins(self, A: List[int]) -> int:
         """
         Improve the above solution using one stack

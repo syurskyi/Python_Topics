@@ -50,23 +50,23 @@ Each call to RLEIterator.next(int n) will have 1 <= n <= 10^9.
 ____ typing _______ List
 
 
-class RLEIterator:
-    ___ __init__(self, A: List[int]):
+c_ RLEIterator:
+    ___ - , A: List[int]):
         """
         counter
         """
-        self.cur_i = 0
-        self.cur_used = 0
-        self.A = A
+        cur_i = 0
+        cur_used = 0
+        A = A
 
     ___ next(self, n: int) -> int:
-        run = self.cur_used + n
-        w.... self.cur_i < l..(self.A) a.. run > self.A[self.cur_i]:
-            run -= self.A[self.cur_i]
-            self.cur_i += 2
+        run = cur_used + n
+        w.... cur_i < l..(A) a.. run > A[cur_i]:
+            run -= A[cur_i]
+            cur_i += 2
 
-        __ self.cur_i >= l..(self.A):
+        __ cur_i >= l..(A):
             r.. -1
 
-        self.cur_used = run
-        r.. self.A[self.cur_i + 1]
+        cur_used = run
+        r.. A[cur_i + 1]

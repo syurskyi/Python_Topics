@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: s: A string
     @return: A string
@@ -8,4 +8,4 @@ class Solution:
         __ n.. s:
             r.. ''
 
-        r.. ' '.join(reversed(s.s..()))
+        r.. ' '.j..(reversed(s.s..()))

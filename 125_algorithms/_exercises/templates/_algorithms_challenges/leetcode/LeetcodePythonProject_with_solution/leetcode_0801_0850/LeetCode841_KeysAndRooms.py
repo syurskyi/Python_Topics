@@ -3,7 +3,7 @@ Created on Jan 30, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ canVisitAllRooms(self, rooms):
         """
         :type rooms: List[List[int]]
@@ -18,10 +18,10 @@ class Solution(object):
                     dfs.a..(j)
                     seen.add(j)
                     __ l..(seen) __ l..(rooms):
-                        r.. True
+                        r.. T..
         r.. l..(seen) __ l..(rooms)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1],[2],[3],[]],
             [[1,3],[3,0,1],[2],[0]],
@@ -30,7 +30,7 @@ class Solution(object):
         ]
         ___ rooms __ testCases:
             print('rooms: %s' % rooms)
-            res = self.canVisitAllRooms(rooms)
+            res = canVisitAllRooms(rooms)
             print('res: %s' % res)
             print('-='*30+'-')
 

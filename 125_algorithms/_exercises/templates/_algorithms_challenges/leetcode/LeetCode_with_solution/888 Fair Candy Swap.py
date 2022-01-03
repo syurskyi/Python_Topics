@@ -44,7 +44,7 @@ ____ typing _______ List
 _______ bisect
 
 
-class Solution:
+c_ Solution:
     ___ fairCandySwap(self, A: List[int], B: List[int]) -> List[int]:
         """
         It is a search problem. Use set as search.
@@ -69,7 +69,7 @@ class Solution:
         sum_A = s..(A)
         sum_B = s..(B)
         __ sum_A > sum_B:
-            r.. self.fairCandySwap(B, A)[::-1]
+            r.. fairCandySwap(B, A)[::-1]
 
         A.s..()
         B.s..()

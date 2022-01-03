@@ -27,17 +27,17 @@ and [1,6]) and another arrow at x = 11 (bursting the other two balloons).
 _______ heapq
 
 
-class Balloon:
-    ___ __init__(self, s, e):
-        self.s = s
-        self.e = e
+c_ Balloon:
+    ___ - , s, e):
+        s = s
+        e = e
 
     ___ __lt__(self, other):
         # __cmp__ removed in py3
-        r.. self.e < other.e
+        r.. e < other.e
 
 
-class Solution:
+c_ Solution:
     ___ findMinArrowShots(self, points):
         """
         greedy shot since if two balloon no overlap, then must shot separately

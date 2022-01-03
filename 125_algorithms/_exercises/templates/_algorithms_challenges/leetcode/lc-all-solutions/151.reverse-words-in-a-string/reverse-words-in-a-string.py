@@ -1,7 +1,7 @@
-class Solution(object):
+c_ Solution(object):
   ___ reverseWords(self, s):
     """
     :type s: str
     :rtype: str
     """
-    r.. " ".join(s.s.. [::-1])
+    r.. " ".j..(s.s.. [::-1])

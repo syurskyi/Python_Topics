@@ -20,7 +20,7 @@ ____ collections _______ deque
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ largestDivisibleSubset(self, A):
         """
         Given a divisible subset, when adding a new number, we only needs to validate whether the new number is
@@ -34,8 +34,8 @@ class Solution(object):
         """
         __ n.. A: r.. []
 
-        F = {}
-        pi = {}
+        F    # dict
+        pi    # dict
         A.s..()
         ___ i __ xrange(l..(A)):
             F[i] = 1
@@ -47,7 +47,7 @@ class Solution(object):
                         pi[i] = j
 
         max_i, max_v = 0, 1
-        ___ k, v __ F.items():
+        ___ k, v __ F.i..:
             __ v > max_v:
                 max_i, max_v = k, v
 

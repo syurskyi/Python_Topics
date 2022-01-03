@@ -4,7 +4,7 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findContentChildren(self, g, s):
         """
         :type g: List[int]
@@ -24,7 +24,7 @@ class Solution(object):
                 j += 1
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([1,2,3], [1,1]),
             ([1,2], [1,2,3]),
@@ -33,7 +33,7 @@ class Solution(object):
         ___ g, s __ testCases:
             print('g: %s' % g)
             print('s: %s' % s)
-            result = self.findContentChildren(g, s)
+            result = findContentChildren(g, s)
             print('result: %s' % result)
             print('-='*20+'-')
 

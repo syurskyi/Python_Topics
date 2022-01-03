@@ -3,7 +3,7 @@ Created on Oct 5, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ judgeCircle(self, moves):
         """
         :type moves: str
@@ -21,14 +21,14 @@ class Solution(object):
                 up -= 1
         r.. up __ 0 a.. left __ 0
     
-    ___ test(self):
+    ___ test
         testCases = [
             'UD',
             'LL',
         ]
         ___ moves __ testCases:
             print('moves: %s' % moves)
-            result = self.judgeCircle(moves)
+            result = judgeCircle(moves)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param gas, a list of integers
     # @param cost, a list of integers
     # @return an integer
@@ -29,10 +29,10 @@ class Solution:
                 continue
             carry = gas[i] - cost[i]
             j = (i + 1) % n
-            flag = True
+            flag = T..
             w.... j != i % n:
                 __ carry + gas[j] - cost[j] < 0:
-                    flag = False
+                    flag = F..
                     break
                 j = (j + 1) % n
             __ flag:

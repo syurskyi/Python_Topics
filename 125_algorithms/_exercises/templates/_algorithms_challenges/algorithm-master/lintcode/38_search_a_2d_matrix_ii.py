@@ -4,7 +4,7 @@ Heap
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ searchMatrix(self, matrix, target):
         """
         :type matrix: list[list[int]]
@@ -46,7 +46,7 @@ else:
     all cells before `x + 1` are confirmed in last iteration
     need to check `y + 1`
 """
-class Solution:
+c_ Solution:
     ___ searchMatrix(self, matrix, target):
         """
         :type matrix: list[list[int]]

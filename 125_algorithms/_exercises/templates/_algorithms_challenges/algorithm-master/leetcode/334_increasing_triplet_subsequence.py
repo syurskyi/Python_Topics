@@ -1,11 +1,11 @@
-class Solution:
+c_ Solution:
     ___ increasingTriplet(self, A):
         """
         :type A: List[int]
         :rtype: bool
         """
         __ n.. A:
-            r.. False
+            r.. F..
 
         a = b = float('inf')
 
@@ -15,6 +15,6 @@ class Solution:
             ____ x <= b:
                 b = x
             ____:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

@@ -4,7 +4,7 @@ Created on Aug 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ optimalDivision(self, nums):
         """
         :type nums: List[int]
@@ -20,13 +20,13 @@ class Solution(object):
             res += ')'
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1000,100,10,2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.optimalDivision(nums)
+            result = optimalDivision(nums)
             print('result: %s' % result)
             print('-='*30+'-')
         

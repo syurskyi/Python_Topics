@@ -28,7 +28,7 @@ A[i], B[i] are integer values in the range [0, 2000].
 """
 
 
-class Solution:
+c_ Solution:
     ___ minSwap(self, A: List[int], B: List[int]) -> int:
         """
         Let F[0][i] be number of swaps to make satisfy if not swap A[i], B[i]

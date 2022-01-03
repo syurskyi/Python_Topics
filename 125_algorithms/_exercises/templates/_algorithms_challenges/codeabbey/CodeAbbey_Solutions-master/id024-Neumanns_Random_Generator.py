@@ -7,7 +7,7 @@ ___ neumanns(inputs):
         new_num = num * num
         temp = ''
         repeats = [s..(num)]
-        no_repition = True
+        no_repition = T..
 
         w.... no_repition:
             __ loop_count != 0:
@@ -20,9 +20,9 @@ ___ neumanns(inputs):
 
             loop_count += 1
             __ new_num __ repeats:
-                no_repition = False
+                no_repition = F..
                 
             repeats.a..(new_num)
         answer.a..(s..(loop_count))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 neumanns(input()) # This is input() is required to be wasted. Please ignore.

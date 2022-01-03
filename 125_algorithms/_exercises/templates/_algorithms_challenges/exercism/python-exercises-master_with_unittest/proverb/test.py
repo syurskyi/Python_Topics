@@ -3,31 +3,31 @@ _______ unittest
 ____ proverb _______ proverb
 
 
-class ProverbTest(unittest.TestCase):
-    ___ test_a_single_consequence(self):
+c_ ProverbTest(unittest.TestCase):
+    ___ test_a_single_consequence
         expected = 'For want of a nail the shoe was lost.\n'\
                    'And all for the want of a nail.'
-        self.assertEqual(proverb(['nail', 'shoe']), expected)
+        assertEqual(proverb(['nail', 'shoe']), expected)
 
-    ___ test_short_list(self):
+    ___ test_short_list
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'And all for the want of a nail.'
-        self.assertEqual(proverb(['nail', 'shoe', 'horse']), expected)
+        assertEqual(proverb(['nail', 'shoe', 'horse']), expected)
 
-    ___ test_long_list(self):
+    ___ test_long_list
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
                    'And all for the want of a nail.'
-        self.assertEqual(proverb(['nail', 'shoe', 'horse', 'rider']), expected)
+        assertEqual(proverb(['nail', 'shoe', 'horse', 'rider']), expected)
 
-    ___ test_new_itens(self):
+    ___ test_new_itens
         expected = 'For want of a key the value was lost.\n'\
                    'And all for the want of a key.'
-        self.assertEqual(proverb(['key', 'value']), expected)
+        assertEqual(proverb(['key', 'value']), expected)
 
-    ___ test_whole_proverb(self):
+    ___ test_whole_proverb
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
@@ -35,13 +35,13 @@ class ProverbTest(unittest.TestCase):
                    'For want of a message the battle was lost.\n'\
                    'For want of a battle the kingdom was lost.\n'\
                    'And all for the want of a nail.'
-        self.assertEqual(
+        assertEqual(
             proverb([
                 'nail', 'shoe', 'horse', 'rider', 'message', 'battle',
                 'kingdom'
             ]), expected)
 
-    ___ test_qualifier(self):
+    ___ test_qualifier
         expected = 'For want of a nail the shoe was lost.\n'\
                    'For want of a shoe the horse was lost.\n'\
                    'For want of a horse the rider was lost.\n'\
@@ -49,7 +49,7 @@ class ProverbTest(unittest.TestCase):
                    'For want of a message the battle was lost.\n'\
                    'For want of a battle the kingdom was lost.\n'\
                    'And all for the want of a horseshoe nail.'
-        self.assertEqual(
+        assertEqual(
             proverb(
                 [
                     'nail', 'shoe', 'horse', 'rider', 'message', 'battle',

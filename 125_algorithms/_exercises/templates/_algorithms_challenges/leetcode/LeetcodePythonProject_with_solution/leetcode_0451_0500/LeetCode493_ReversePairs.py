@@ -4,21 +4,21 @@ Created on May 9, 2017
 @author: MT
 '''
 
-class Node(object):
-    ___ __init__(self, val):
-        self.val = val
-        self.less = 0
-        self.same = 1
-        self.left = N..
-        self.right = N..
+c_ Node(object):
+    ___ - , val):
+        val = val
+        less = 0
+        same = 1
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ reversePairs_mergeSort(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        self.cnt = 0
+        cnt = 0
         ___ msort(lst):
             n = l..(lst)
             __ n <= 1:
@@ -31,11 +31,11 @@ class Solution(object):
                 __ left[l] <= 2*right[r]:
                     l += 1
                 ____:
-                    self.cnt += l..(left)-l
+                    cnt += l..(left)-l
                     r += 1
             r.. s..(left+right)
         msort(nums)
-        r.. self.cnt
+        r.. cnt
     
     ___ reversePairs(self, nums):
         """
@@ -46,20 +46,20 @@ class Solution(object):
         cnt = [0]
         ___ i __ r..(l..(nums)-1, -1, -1):
             num = nums[i]
-            self.search(cnt, root, num/2.0)
-            root = self.build(num, root)
+            s..(cnt, root, num/2.0)
+            root = build(num, root)
         r.. cnt[0]
     
-    ___ search(self, cnt, node, target):
+    ___ s..(self, cnt, node, target):
         __ n.. node:
             r..
         ____ target __ node.val:
             cnt[0] += node.less
         ____ target < node.val:
-            self.search(cnt, node.left, target)
+            s..(cnt, node.left, target)
         ____:
             cnt[0] += node.less + node.same
-            self.search(cnt, node.right, target)
+            s..(cnt, node.right, target)
     
     ___ build(self, val, node):
         __ n.. node:
@@ -67,20 +67,20 @@ class Solution(object):
         ____ val __ node.val:
             node.same += 1
         ____ val > node.val:
-            node.right = self.build(val, node.right)
+            node.right = build(val, node.right)
         ____:
             node.less += 1
-            node.left = self.build(val, node.left)
+            node.left = build(val, node.left)
         r.. node
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 3, 2, 3, 1],
             [2, 4, 3, 5, 1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.reversePairs_mergeSort(nums)
+            result = reversePairs_mergeSort(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -13,8 +13,8 @@ ___ rand7():
     r.. 0
 
 
-class Solution:
-    ___ rand10(self):
+c_ Solution:
+    ___ rand10
         """
         generate 7 twice, (rv1, rv2), 49 combination
         assign 40 combinations for the 1 to 10 respectively

@@ -17,9 +17,9 @@ ___ within_schedule(utc, *timezones):
         date = utc.astimezone(timezone)
 
         __ n.. date.hour __ MEETING_HOURS:
-            r.. False
+            r.. F..
 
-    r.. True
+    r.. T..
 
 
 

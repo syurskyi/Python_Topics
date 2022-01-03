@@ -1,37 +1,37 @@
 ____ heapq _______ heappush, heappop
 
 
-class HashHeapq:
-    ___ __init__(self):
-        self.heap    # list
-        self.deleted = {}
+c_ HashHeapq:
+    ___ - ):
+        heap    # list
+        deleted    # dict
 
     ___ push(self, val):
-        heappush(self.heap, val)
+        heappush(heap, val)
 
-    ___ pop(self):
-        __ self.is_empty():
+    ___ pop
+        __ is_empty():
             r..
-        heappop(self.heap)
+        heappop(heap)
 
     ___ remove(self, val):
-        __ self.is_empty():
+        __ is_empty():
             r..
-        self.deleted[val] = self.deleted.get(val, 0) + 1
+        deleted[val] = deleted.get(val, 0) + 1
 
-    ___ top(self):
-        __ self.is_empty():
+    ___ top
+        __ is_empty():
             r..
-        r.. self.heap[0]
+        r.. heap[0]
 
-    ___ is_empty(self):
-        w.... self.heap a.. self.deleted.get(self.heap[0]):
-            self.deleted[self.heap[0]] -= 1
-            heappop(self.heap)
-        r.. n.. self.heap
+    ___ is_empty
+        w.... heap a.. deleted.get(heap[0]):
+            deleted[heap[0]] -= 1
+            heappop(heap)
+        r.. n.. heap
 
 
-class Solution:
+c_ Solution:
     ___ maxSlidingWindow(self, A, k):
         """
         :type A: List[int]
@@ -57,7 +57,7 @@ class Solution:
 Failed Solution
 Since its a O(n*k) solution
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @param: k: An integer

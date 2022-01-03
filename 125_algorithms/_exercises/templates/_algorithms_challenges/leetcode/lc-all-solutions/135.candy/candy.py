@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ candy(self, ratings):
     """
     :type ratings: List[int]

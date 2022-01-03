@@ -27,7 +27,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ numBusesToDestination(self, routes: List[List[int]], S: int, T: int) -> int:
         """
         BFS
@@ -54,7 +54,7 @@ class Solution:
         target_set = set([i ___ i, stops __ e..(routes) __ T __ stops])
         visited = defaultdict(bool)
         ___ i __ q:
-            visited[i] = True
+            visited[i] = T..
         step = 1
         w.... q:
             cur_q    # list
@@ -63,7 +63,7 @@ class Solution:
                     r.. step
                 ___ nbr __ G[e]:
                     __ n.. visited[nbr]:
-                        visited[nbr] = True
+                        visited[nbr] = T..
                         cur_q.a..(nbr)
 
             step += 1
@@ -89,7 +89,7 @@ class Solution:
         q = [S]
         step = 0
         visited = defaultdict(bool)
-        visited[S] = True  # avoid add duplicate
+        visited[S] = T..  # avoid add duplicate
         w.... q:
             cur_q    # list
             ___ e __ q:
@@ -97,7 +97,7 @@ class Solution:
                     r.. step
                 ___ nbr __ G[e]:
                     __ n.. visited[nbr]:
-                        visited[nbr] = True
+                        visited[nbr] = T..
                         cur_q.a..(nbr)
 
             step += 1

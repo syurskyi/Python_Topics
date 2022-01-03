@@ -1,12 +1,12 @@
-class TrieNode:
-    ___ __init__(self, val_ N..
-        self.end_at = val
-        self.children = {}
+c_ TrieNode:
+    ___ - , val_ N..
+        end_at = val
+        children    # dict
 
 
-class Trie:
-    ___ __init__(self):
-        self.trie = TrieNode()
+c_ Trie:
+    ___ - ):
+        trie = TrieNode()
 
     ___ insert(self, word):
         """
@@ -17,26 +17,26 @@ class Trie:
         __ n.. word:
             r..
 
-        node = self.trie
+        node = trie
         ___ char __ word:
             __ char n.. __ node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
         node.end_at = word
 
-    ___ search(self, word):
+    ___ s..(self, word):
         """
         Returns if the word is in the trie.
         :type word: str
         :rtype: bool
         """
         __ n.. word:
-            r.. False
+            r.. F..
 
-        node = self.trie
+        node = trie
         ___ char __ word:
             __ char n.. __ node.children:
-                r.. False
+                r.. F..
             node = node.children[char]
         r.. node.end_at __ word
 
@@ -47,14 +47,14 @@ class Trie:
         :rtype: bool
         """
         __ n.. prefix:
-            r.. False
+            r.. F..
 
-        node = self.trie
+        node = trie
         ___ char __ prefix:
             __ char n.. __ node.children:
-                r.. False
+                r.. F..
             node = node.children[char]
-        r.. True
+        r.. T..
 
 
 # Your Trie object will be instantiated and called as such:

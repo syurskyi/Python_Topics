@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ nextPermutation(self, nums):
     """
     :type nums: List[int]
@@ -17,7 +17,7 @@ class Solution(object):
       p -= 1
 
     __ pos __ N..
-      self.reverse(nums, 0, l..(nums) - 1)
+      reverse(nums, 0, l..(nums) - 1)
       r..
 
     # find the min value in the rest of the array
@@ -28,7 +28,7 @@ class Solution(object):
         minPos = i
     # swap the two above number and reverse the array from `pos`
     nums[pos], nums[minPos] = nums[minPos], nums[pos]
-    self.reverse(nums, pos + 1, l..(nums) - 1)
+    reverse(nums, pos + 1, l..(nums) - 1)
 
   ___ reverse(self, nums, start, end):
     w.... start < end:

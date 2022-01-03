@@ -3,7 +3,7 @@ Created on Oct 11, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findKthNumber(self, m, n, k):
         """
         :type m: int
@@ -14,7 +14,7 @@ class Solution(object):
         low, high = 1, m*n+1
         w.... low < high:
             mid = (low+high)//2
-            c = self.c.. mid, m, n)
+            c = c.. mid, m, n)
             __ c >= k:
                 high = mid
             ____:
@@ -28,7 +28,7 @@ class Solution(object):
             count += tmp
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 3,
@@ -45,7 +45,7 @@ class Solution(object):
             print('m: %s' % m)
             print('n: %s' % n)
             print('k: %s' % k)
-            result = self.findKthNumber(m, n, k)
+            result = findKthNumber(m, n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

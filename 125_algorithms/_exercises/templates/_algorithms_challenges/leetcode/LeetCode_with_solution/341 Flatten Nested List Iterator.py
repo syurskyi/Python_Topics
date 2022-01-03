@@ -22,15 +22,15 @@ You should not implement it, or speculate about its implementation
 """
 
 
-class NestedInteger(object):
-    ___ isInteger(self):
+c_ NestedInteger(object):
+    ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
-        r.. True
+        r.. T..
 
-    ___ getInteger(self):
+    ___ getInteger
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
@@ -38,7 +38,7 @@ class NestedInteger(object):
         """
         r.. 0
 
-    ___ getList(self):
+    ___ getList
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -47,8 +47,8 @@ class NestedInteger(object):
         r.. []
 
 
-class NestedIterator(object):
-    ___ __init__(self, nestedList):
+c_ NestedIterator(object):
+    ___ - , nestedList):
         """
         Initialize your data structure here.
         :type nestedList: List[NestedInteger]
@@ -60,41 +60,41 @@ class NestedIterator(object):
 
         Possible to compile nl and idx into a tuple.
         """
-        self.stk = [[nestedList, 0]]  # stack of iterators
+        stk = [[nestedList, 0]]  # stack of iterators
 
-    ___ next(self):
+    ___ next
         """
         :rtype: int
         """
-        nl, idx = self.stk[-1]
+        nl, idx = stk[-1]
         nxt = nl[idx].getInteger()
-        self.stk[-1][1] = idx + 1  # advance the index
+        stk[-1][1] = idx + 1  # advance the index
         r.. nxt
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         Put the pointer movement logic in the hasNext()
         :rtype: bool
         """
-        w.... self.stk:
-            nl, idx = self.stk[-1]
+        w.... stk:
+            nl, idx = stk[-1]
             __ idx < l..(nl):
                 ni = nl[idx]
                 __ ni.isInteger():
-                    r.. True
+                    r.. T..
                 ____:
-                    self.stk[-1][1] = idx + 1  # prepare the parent, otherwise dead loop
+                    stk[-1][1] = idx + 1  # prepare the parent, otherwise dead loop
                     nxt_nl = ni.getList()
-                    self.stk.a..([nxt_nl, 0])
+                    stk.a..([nxt_nl, 0])
             ____:
-                self.stk.pop()
+                stk.pop()
 
-        r.. False
+        r.. F..
 
 
 
-class NestedIteratorVerbose(object):
-    ___ __init__(self, nestedList):
+c_ NestedIteratorVerbose(object):
+    ___ - , nestedList):
         """
         Initialize your data structure here.
         :type nestedList: List[NestedInteger]
@@ -105,45 +105,45 @@ class NestedIteratorVerbose(object):
 
         Possible to compile nl and idx into a tuple.
         """
-        self.nl_stk = [nestedList]
-        self.idx_stk = [0]
+        nl_stk = [nestedList]
+        idx_stk = [0]
 
-    ___ next(self):
+    ___ next
         """
         :rtype: int
         """
-        __ self.hasNext():
-            nl = self.nl_stk[-1]
-            idx = self.idx_stk[-1]
+        __ hasNext():
+            nl = nl_stk[-1]
+            idx = idx_stk[-1]
             nxt = nl[idx]
-            self.idx_stk[-1] = idx + 1
+            idx_stk[-1] = idx + 1
             r.. nxt
 
         raise StopIteration()
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         Put the pointer movement logic in the hasNext()
         :rtype: bool
         """
-        w.... self.nl_stk:
-            nl = self.nl_stk[-1]
-            idx = self.idx_stk[-1]
+        w.... nl_stk:
+            nl = nl_stk[-1]
+            idx = idx_stk[-1]
             __ idx < l..(nl):
                 ni = nl[idx]
                 __ ni.isInteger():
-                    r.. True
+                    r.. T..
                 ____:
-                    self.idx_stk[-1] = idx+1
+                    idx_stk[-1] = idx+1
                     nxt_nl = ni.getList()
                     nxt_idx = 0
-                    self.nl_stk.a..(nxt_nl)
-                    self.idx_stk.a..(nxt_idx)
+                    nl_stk.a..(nxt_nl)
+                    idx_stk.a..(nxt_idx)
             ____:
-                self.nl_stk.pop()
-                self.idx_stk.pop()
+                nl_stk.pop()
+                idx_stk.pop()
 
-        r.. False
+        r.. F..
 
 
 # Your NestedIterator object will be instantiated and called as such:

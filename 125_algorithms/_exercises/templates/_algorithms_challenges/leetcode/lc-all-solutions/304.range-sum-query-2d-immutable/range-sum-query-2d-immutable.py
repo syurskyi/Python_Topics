@@ -1,18 +1,18 @@
-class NumMatrix(object):
-  ___ __init__(self, matrix):
+c_ NumMatrix(object):
+  ___ - , matrix):
     """
     initialize your data structure here.
     :type matrix: List[List[int]]
     """
-    self.dp = [[0] * l..(matrix[0]) ___ i __ r..(0, l..(matrix))]
+    dp = [[0] * l..(matrix[0]) ___ i __ r..(0, l..(matrix))]
     ___ i __ r..(0, l..(matrix)):
       ___ j __ r..(0, l..(matrix[0])):
         __ i __ 0:
-          self.dp[0][j] = self.dp[0][j - 1] + matrix[i][j]
+          dp[0][j] = dp[0][j - 1] + matrix[i][j]
         ____ j __ 0:
-          self.dp[i][0] = self.dp[i - 1][0] + matrix[i][j]
+          dp[i][0] = dp[i - 1][0] + matrix[i][j]
         ____:
-          self.dp[i][j] = self.dp[i - 1][j] + self.dp[i][j - 1] - self.dp[i - 1][j - 1] + matrix[i][j]
+          dp[i][j] = dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1] + matrix[i][j]
 
   ___ sumRegion(self, row1, col1, row2, col2):
     """
@@ -23,7 +23,7 @@ class NumMatrix(object):
     :type col2: int
     :rtype: int
     """
-    dp = self.dp
+    dp = dp
 
     diagSum = dp[row1 - 1][col1 - 1]
     totalSum = dp[row2][col2]

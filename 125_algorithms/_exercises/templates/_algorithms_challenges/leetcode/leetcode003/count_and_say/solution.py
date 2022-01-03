@@ -11,7 +11,7 @@ Note: The sequence of integers will be represented as a string.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ countAndSay(self, n):
         """
         :type n: int
@@ -33,7 +33,7 @@ class Solution(object):
             tn.a..(s..(count))
             tn.a..(s..(prev))
             ln = tn
-        r.. ''.join(ln)
+        r.. ''.j..(ln)
 
 
 s = Solution()

@@ -36,7 +36,7 @@ The number of keys in all rooms combined is at most 3000.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ canVisitAllRooms(self, G: List[List[int]]) -> bool:
         """
         starting from 0
@@ -46,16 +46,16 @@ class Solution:
         """
         n = l..(G)
         visited = [0 ___ _ __ r..(n)]  # 0 locked, 1 visited
-        self.dfs(G, 0, visited)
+        dfs(G, 0, visited)
         r.. a..(e __ 1 ___ e __ visited)
 
     ___ dfs(self, G, u, visited):
         visited[u] = 1
         ___ nbr __ G[u]:
             __ n.. visited[nbr]:
-                self.dfs(G, nbr, visited)
+                dfs(G, nbr, visited)
 
 
 __ __name__ __ "__main__":
-    ... Solution().canVisitAllRooms([[1],[2],[3],[]]) __ True
-    ... Solution().canVisitAllRooms([[1,3],[3,0,1],[2],[0]]) __ False
+    ... Solution().canVisitAllRooms([[1],[2],[3],[]]) __ T..
+    ... Solution().canVisitAllRooms([[1,3],[3,0,1],[2],[0]]) __ F..

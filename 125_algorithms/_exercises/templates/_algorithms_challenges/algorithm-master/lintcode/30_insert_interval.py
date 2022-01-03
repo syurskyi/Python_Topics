@@ -15,7 +15,7 @@ class Interval(object):
 """
 
 
-class Solution:
+c_ Solution:
     ___ insert(self, intvs, intv):
         """
         :type intvs: list[Interval]

@@ -39,16 +39,16 @@ Each value of a node in the input will be an integer in the range [0, 999].
 k will be an integer in the range [1, 50].
 """
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
 _______ math
 
 
-class Solution:
+c_ Solution:
     ___ splitListToParts(self, root: ListNode, k: int) -> List[ListNode]:
         """
         calculate the chunk/page size at a time

@@ -4,7 +4,7 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findMinArrowShots(self, points):
         __ n.. points: r.. 0
         points.s..(key=l.... x: (x[1], x[0]))
@@ -17,13 +17,13 @@ class Solution(object):
                 count += 1
         r.. l..(points)-count
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[10,16], [2,8], [1,6], [7,12]],
         ]
         ___ points __ testCases:
             print('points: %s' % points)
-            result = self.findMinArrowShots(points)
+            result = findMinArrowShots(points)
             print('result: %s' % result)
             print('-='*20+'-')
 

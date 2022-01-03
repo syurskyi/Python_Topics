@@ -4,12 +4,12 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
   ___ reverseList(self, root):
     __ n.. root o. n.. root.next:
       r.. root
 
-    ret = self.reverseList(root.next)
+    ret = reverseList(root.next)
     root.next.next = root
     root.next = N..
     r.. ret
@@ -41,7 +41,7 @@ class Solution(object):
 
   # easily leads to a circle. Remove current node's next after recursive call.
   ___ ___reverseList(self, head):
-    self.newHead = N..
+    newHead = N..
 
     ___ rec(head):
       __ n.. head:
@@ -51,8 +51,8 @@ class Solution(object):
       __ p:
         p.next = head
       ____:
-        self.newHead = head
+        newHead = head
       r.. head
 
     rec(head)
-    r.. self.newHead
+    r.. newHead

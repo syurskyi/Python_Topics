@@ -9,7 +9,7 @@ Assume that the total area is never beyond the maximum possible value of int.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ computeArea(self, A, B, C, D, E, F, G, H):
         """
         Follow the graph

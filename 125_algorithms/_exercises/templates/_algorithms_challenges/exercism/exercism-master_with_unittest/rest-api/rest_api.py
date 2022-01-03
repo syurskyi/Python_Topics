@@ -1,10 +1,10 @@
 _______ json
 
 
-class RestAPI(object):
+c_ RestAPI(object):
 
-    ___ __init__(self, database_ N..
-        self.database = database
+    ___ - , database_ N..
+        database = database
 
     # Description: List of user information
     # HTTP method: GET
@@ -15,12 +15,12 @@ class RestAPI(object):
     ___ get(self, url, payload_ N..
         __ payload __ N..
             # List of all User objects
-            r.. json.dumps(self.database)
+            r.. json.dumps(database)
 
         # List of User objects for <users> (sorted by name)
         payload = json.loads(payload)
         usernames = payload['users']
-        r.. json.dumps({'users': self.get_users(usernames)})
+        r.. json.dumps({'users': get_users(usernames)})
 
     ___ post(self, url, payload_ N..
         __ payload __ N..
@@ -28,9 +28,9 @@ class RestAPI(object):
 
         payload = json.loads(payload)
         __ url __ '/add':
-            r.. self.add(payload)
+            r.. add(payload)
         ____ url __ '/iou':
-            r.. self.iou(payload)
+            r.. iou(payload)
 
     # Private methods
 
@@ -43,8 +43,8 @@ class RestAPI(object):
     ___ add(self, payload):
         username = payload['user']
 
-        self.create_user(username)
-        r.. json.dumps(self.get_user(username))
+        create_user(username)
+        r.. json.dumps(get_user(username))
 
     # Description: Create IOU
     # HTTP method: POST
@@ -59,26 +59,26 @@ class RestAPI(object):
         borrower_username = payload['borrower']
         amount = payload['amount']
 
-        lender = self.get_user(lender_username)
-        borrower = self.get_user(borrower_username)
+        lender = get_user(lender_username)
+        borrower = get_user(borrower_username)
 
-        self.execute_iou(lender, borrower, amount)
+        execute_iou(lender, borrower, amount)
 
-        users = self.get_users([lender_username, borrower_username])
+        users = get_users([lender_username, borrower_username])
         r.. json.dumps({'users': users})
 
     ___ execute_iou(self, lender, borrower, amount):
-        self.update_balance(lender, borrower, amount)
+        update_balance(lender, borrower, amount)
 
-        __ n.. self.lender_owes_borrower(lender, borrower):
-            self.execute_borrow(lender, borrower, amount)
+        __ n.. lender_owes_borrower(lender, borrower):
+            execute_borrow(lender, borrower, amount)
         ____:
             # if lender owes borrower, pay off debt first then execute a borrow
             # if necessary.
-            remaining_amount_to_borrow = self.pay_debt(lender, borrower,
+            remaining_amount_to_borrow = pay_debt(lender, borrower,
                                                        amount)
             __ remaining_amount_to_borrow != 0:
-                self.execute_borrow(lender, borrower,
+                execute_borrow(lender, borrower,
                                     remaining_amount_to_borrow)
 
     ___ execute_borrow(self, lender, borrower, amount):
@@ -119,14 +119,14 @@ class RestAPI(object):
             'balance': 0,
         }
 
-        self.database['users'].a..(new_user)
+        database['users'].a..(new_user)
 
     ___ get_users(self, usernames):
-        users = [self.get_user(username) ___ username __ usernames]
+        users = [get_user(username) ___ username __ usernames]
         r.. s..(users, key=l.... user: user['name'])
 
     ___ get_user(self, username):
-        users = self.database['users']
+        users = database['users']
         ___ user __ users:
             __ user['name'] __ username:
                 r.. user

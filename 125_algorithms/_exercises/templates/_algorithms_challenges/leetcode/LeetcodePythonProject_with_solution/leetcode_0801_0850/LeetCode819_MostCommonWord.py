@@ -3,14 +3,14 @@ Created on May 1, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ mostCommonWord(self, paragraph, banned):
         """
         :type paragraph: str
         :type banned: List[str]
         :rtype: str
         """
-        hashmap = {}
+        hashmap    # dict
         res = ''
         freq = 0
         banned = set(banned)
@@ -19,14 +19,14 @@ class Solution(object):
             c = paragraph[j]
             __ n.. (ord('a') <= ord(c) <= ord('z') o.\
                 ord('A') <= ord(c) <= ord('Z')):
-                word = paragraph[i:j].lower()
+                word = paragraph[i:j].l..
                 __ word a.. word n.. __ banned:
                     hashmap[word] = hashmap.get(word, 0)+1
                     __ hashmap[word] > freq:
                         res = word
                         freq = hashmap[word]
                 i = j+1
-        word = paragraph[i:].lower()
+        word = paragraph[i:].l..
         __ word a.. word n.. __ banned:
             hashmap[word] = hashmap.get(word, 0)+1
             __ hashmap[word] > freq:

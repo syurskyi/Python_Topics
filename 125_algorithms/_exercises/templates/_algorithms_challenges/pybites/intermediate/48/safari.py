@@ -3,7 +3,7 @@ _______ urllib.request
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'safari.logs'
-SAFARI_LOGS = os.path.join(TMP, DATA)
+SAFARI_LOGS = os.path.j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'
 
 urllib.request.urlretrieve(
@@ -13,7 +13,7 @@ urllib.request.urlretrieve(
 
 
 ___ create_chart():
-    slack_frequency = {}
+    slack_frequency    # dict
 
     with open(SAFARI_LOGS) as file:
         safari_logs = file.readlines()
@@ -30,7 +30,7 @@ ___ create_chart():
                     __ 'Python' __ previous:
                         slack_frequency[current[:5]].a..(slack_frequency[current[:5]][0])
 
-    ___ key, value __ slack_frequency.items():
+    ___ key, value __ slack_frequency.i..:
 
         bar = ""
         __ l..(value) __ 1:

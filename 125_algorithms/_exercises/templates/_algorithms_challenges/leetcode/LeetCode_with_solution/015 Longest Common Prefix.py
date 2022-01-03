@@ -4,7 +4,7 @@ Write a function to find the longest common prefix string amongst an array of st
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ longestCommonPrefix(self, strs):
         __ n.. strs: r.. ""
         l = m..(map(l.., strs))

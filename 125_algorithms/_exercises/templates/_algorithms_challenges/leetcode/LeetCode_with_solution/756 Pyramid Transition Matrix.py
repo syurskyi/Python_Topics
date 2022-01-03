@@ -49,7 +49,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ pyramidTransition(self, bottom: s.., allowed: List[s..]) -> bool:
         """
         Need search, since multiple placements are possible
@@ -59,20 +59,20 @@ class Solution:
         ___ a, b, c __ allowed:
             T[a, b].add(c)
 
-        r.. self.dfs(T, bottom)
+        r.. dfs(T, bottom)
 
     ___ dfs(self, T, level) -> bool:
         __ l..(level) __ 1:
-            r.. True
+            r.. T..
 
         # for nxt_level in self.gen_nxt_level(T, level, 0):
         ___ nxt_level __ i...product(
             *[T[a, b] ___ a, b __ z..(level, level[1:])]
         ):
-            __ self.dfs(T, nxt_level):
-                r.. True
+            __ dfs(T, nxt_level):
+                r.. T..
 
-        r.. False
+        r.. F..
 
     ___ gen_nxt_level(self, T, level, lo):
         """
@@ -84,25 +84,25 @@ class Solution:
             r..
 
         ___ head __ T[level[lo], level[lo + 1]]:
-            ___ tail __ self.gen_nxt_level(T, level, lo + 1):
+            ___ tail __ gen_nxt_level(T, level, lo + 1):
                 y.. head + tail
 
 
     ___ dfs_deep(self, T, level, lo, nxt_level) -> bool:
         __ lo + 1 __ l..(level):
-            r.. True
+            r.. T..
 
         ___ nxt __ T[level[lo], level[lo + 1]]:
             nxt_level.a..(nxt)
-            __ self.dfs(T, level, lo + 1, nxt_level):
+            __ dfs(T, level, lo + 1, nxt_level):
                 # Too deep - check till top
-                __ self.dfs(T, nxt_level, 0, []):
-                    r.. True
+                __ dfs(T, nxt_level, 0, []):
+                    r.. T..
             nxt_level.pop()
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().pyramidTransition("BCD", ["BCG", "CDE", "GEA", "FFF"]) __ True
-    ... Solution().pyramidTransition("AABA", ["AAA", "AAB", "ABA", "ABB", "BAC"]) __ False
+    ... Solution().pyramidTransition("BCD", ["BCG", "CDE", "GEA", "FFF"]) __ T..
+    ... Solution().pyramidTransition("AABA", ["AAA", "AAB", "ABA", "ABB", "BAC"]) __ F..

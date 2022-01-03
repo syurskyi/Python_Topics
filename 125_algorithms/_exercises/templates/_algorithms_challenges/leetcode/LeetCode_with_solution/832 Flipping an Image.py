@@ -29,7 +29,7 @@ Notes:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:
         """
         one pass

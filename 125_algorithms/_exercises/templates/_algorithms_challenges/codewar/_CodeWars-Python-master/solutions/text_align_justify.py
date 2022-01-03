@@ -27,6 +27,6 @@ ___ justify(text, width):
                     break
                 line_words[index] += ' '
                 space_need -= 1
-        lines[i] = ''.join(line_words) + '\n'
-    lines[-1] = ' '.join(lines[-1])
-    r.. ''.join(lines)
+        lines[i] = ''.j..(line_words) + '\n'
+    lines[-1] = ' '.j..(lines[-1])
+    r.. ''.j..(lines)

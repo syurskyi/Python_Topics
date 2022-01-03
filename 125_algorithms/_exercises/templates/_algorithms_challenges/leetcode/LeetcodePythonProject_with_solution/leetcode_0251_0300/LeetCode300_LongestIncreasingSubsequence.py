@@ -4,7 +4,7 @@ Created on Mar 9, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLIS(self, nums):
         _______ bisect
         dp = [0]*l..(nums)
@@ -17,13 +17,13 @@ class Solution(object):
         print('dp: %s' % dp)
         r.. length
     
-    ___ test(self):
+    ___ test
         testCases = [
             [10, 9, 2, 5, 3, 7, 101, 18],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.lengthOfLIS(nums)
+            result = lengthOfLIS(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

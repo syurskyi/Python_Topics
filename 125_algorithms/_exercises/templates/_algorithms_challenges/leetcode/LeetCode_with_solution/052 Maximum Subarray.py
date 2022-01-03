@@ -11,7 +11,7 @@ If you have figured out the O(n) solution, try coding another solution using the
 more subtle.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ maxSubArray(self, A):
         """
         maximum sub-array problem.

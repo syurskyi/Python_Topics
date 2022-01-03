@@ -1,22 +1,22 @@
-class User:
+c_ User:
     """A User class
        (Django's User model inspired us)
     """
 
-    ___ __init__(self, first_name, last_name):
+    ___ - , first_name, last_name):
         """Constructor, base values"""
-        self.first_name = first_name
-        self.last_name = last_name
+        first_name = first_name
+        last_name = last_name
 
-    @property
-    ___ get_full_name(self):
+    $
+    ___ get_full_name
         """Return first separated by a whitespace
            and using title case for both.
         """
-        r.. s..(self.first_name).t.. + ' ' + s..(self.last_name).t..
+        r.. s..(first_name).t.. + ' ' + s..(last_name).t..
 
-    @property
-    ___ username(self):
+    $
+    ___ username
         """A username consists of the first char of
            the user's first_name and the first 7 chars
            of the user's last_name, both lowercased.
@@ -24,13 +24,13 @@ class User:
            If this is your first property, check out:
            https://pybit.es/property-decorator.html
         """
-        r.. s..(self.first_name)[:1].lower() + s..(self.last_name)[:7].lower()
+        r.. s..(first_name)[:1].l.. + s..(last_name)[:7].l..
 
-    ___ __str__(self):
-        r.. s..(self.get_full_name) + ' (' + s..(self.username) + ')'
+    ___ __str__
+        r.. s..(get_full_name) + ' (' + s..(username) + ')'
 
-    ___ __repr__(self):
+    ___ __repr__
         """Don't hardcode the class name, hint: use a
            special attribute of self.__class__ ...
         """
-        r.. f'{self.__class__.__name__}("{self.first_name}", "{self.last_name}")'
+        r.. f'{__class__.__name__}("{first_name}", "{last_name}")'

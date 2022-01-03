@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: x: a double
     @return: the square root of x

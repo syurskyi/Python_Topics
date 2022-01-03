@@ -1,34 +1,34 @@
 ____ collections _______ deque
 
 
-class MovingAverage(object):
+c_ MovingAverage(object):
 
-  ___ __init__(self, size):
+  ___ - , size):
     """
     Initialize your data structure here.
     :type size: int
     """
-    self.windowSize = size
-    self.windowSum = 0.0
-    self.data = deque([])
+    windowSize = size
+    windowSum = 0.0
+    data = deque([])
 
   ___ next(self, val):
     """
     :type val: int
     :rtype: float
     """
-    self.windowSum += val
-    data = self.data
+    windowSum += val
+    data = data
 
     leftTop = 0
-    __ l..(data) >= self.windowSize:
+    __ l..(data) >= windowSize:
       leftTop = data.popleft()
     data.a..(val)
 
-    self.windowSum -= leftTop
-    __ l..(data) < self.windowSize:
-      r.. self.windowSum / l..(data)
-    r.. self.windowSum / self.windowSize
+    windowSum -= leftTop
+    __ l..(data) < windowSize:
+      r.. windowSum / l..(data)
+    r.. windowSum / windowSize
 
 # Your MovingAverage object will be instantiated and called as such:
 # obj = MovingAverage(size)

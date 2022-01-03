@@ -1,11 +1,11 @@
 ___ matches(line, pattern, flags):
     __ '-i' __ flags:  # case-insensitive
-        line = line.lower()
-        pattern = pattern.lower()
+        line = line.l..
+        pattern = pattern.l..
 
     __ '-x' __ flags:  # match entire lines
         __ l..(pattern) != l..(line.rstrip()):
-            r.. False
+            r.. F..
 
     __ '-v' __ flags:  # invert matching
         r.. pattern n.. __ line
@@ -39,7 +39,7 @@ ___ format_lines(matched_lines, files, flags):
 
         result.a..(line_result)
 
-    r.. ''.join(result)
+    r.. ''.j..(result)
 
 
 ___ grep(pattern, files, flags=''):

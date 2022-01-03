@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isConvex(self, points):
     """
     :type points: List[List[int]]
@@ -16,10 +16,10 @@ class Solution(object):
       __ pre __ N..
         pre = c
       __ pre * c < 0:
-        r.. False
+        r.. F..
       pre = c
     __ pre * calcDir(points[-1], points[0], points[1]) < 0:
-      r.. False
+      r.. F..
     __ pre * calcDir(points[-2], points[-1], points[0]) < 0:
-      r.. False
-    r.. True
+      r.. F..
+    r.. T..

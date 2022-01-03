@@ -2,7 +2,7 @@ ____ collections _______ n..
 
 Pair = n..('Pair', ['sum', 'index'])
 
-class Solution:
+c_ Solution:
     """
     @param: nums: A list of integers
     @return: A list of integers includes the index of the first number and the index of the last number

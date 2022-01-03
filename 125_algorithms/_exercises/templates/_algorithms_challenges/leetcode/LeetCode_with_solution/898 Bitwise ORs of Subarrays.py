@@ -39,7 +39,7 @@ Note:
 0 <= A[i] <= 10^9
 """
 
-class Solution:
+c_ Solution:
     ___ subarrayBitwiseORs(self, A: List[int]) -> int:
         """
         Use a dp array to record OR

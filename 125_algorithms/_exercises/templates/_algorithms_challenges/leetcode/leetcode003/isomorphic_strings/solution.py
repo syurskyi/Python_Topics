@@ -18,28 +18,28 @@ Note:
 You may assume both s and t have the same length.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ isIsomorphic(self, s, t):
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        d = {}
+        d    # dict
         ___ i, c __ e..(s):
             __ c n.. __ d:
                 d[c] = t[i]
             ____:
                 __ d[c] != t[i]:
-                    r.. False
-        d = {}
+                    r.. F..
+        d    # dict
         ___ i, c __ e..(t):
             __ c n.. __ d:
                 d[c] = s[i]
             ____:
                 __ d[c] != s[i]:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..
 
 
 s = Solution()

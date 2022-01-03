@@ -20,7 +20,7 @@ according to REF, the relation of `x` is below
 """
 cumulative the sum of the triangle
 """
-class Solution:
+c_ Solution:
     """
     @param: n: An integer
     @return: The sum of a and b
@@ -50,7 +50,7 @@ so `x` can start from `sqrt(2n)`
 ____ math _______ sqrt
 
 
-class Solution:
+c_ Solution:
     """
     @param: n: An integer
     @return: The sum of a and b

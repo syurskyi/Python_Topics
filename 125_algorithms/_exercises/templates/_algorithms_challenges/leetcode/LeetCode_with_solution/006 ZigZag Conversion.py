@@ -14,7 +14,7 @@ convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ convert(self, s, nRows):
         """
         Algorithm: matrix
@@ -41,8 +41,8 @@ class Solution:
             except IndexError:
                 break
 
-        lst = ["".join(element) ___ element __ matrix]
-        r.. "".join(lst)
+        lst = ["".j..(element) ___ element __ matrix]
+        r.. "".j..(lst)
 
 
 __ __name__ __ "__main__":

@@ -18,22 +18,22 @@ BITES = {6: 'PyBites Die Hard',
 bites_done = {6, 10, 16, 18, 21}
 
 
-class NoBitesAvailable(Exception):
+c_ NoBitesAvailable(Exception):
     pass
 
 
-class Promo:
+c_ Promo:
 
-    ___ __init__(self, bites_done=bites_done):
-        self.bites_done = bites_done
+    ___ - , bites_done=bites_done):
+        bites_done = bites_done
 
-    ___ _pick_random_bite(self):
-        bites_available = [x ___ x, _ __ BITES.items() __ x n.. __ self.bites_done]
+    ___ _pick_random_bite
+        bites_available = [x ___ x, _ __ BITES.i.. __ x n.. __ bites_done]
         __ l..(bites_available) < 1:
             raise NoBitesAvailable
         r.. random.choice(bites_available)
 
-    ___ new_bite(self):
-        picked = self._pick_random_bite()
-        self.bites_done.add(picked)
+    ___ new_bite
+        picked = _pick_random_bite()
+        bites_done.add(picked)
         r.. BITES[picked]

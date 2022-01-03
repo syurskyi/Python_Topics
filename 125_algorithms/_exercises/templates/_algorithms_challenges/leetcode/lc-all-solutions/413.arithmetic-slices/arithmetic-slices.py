@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ numberOfArithmeticSlices(self, nums):
     """
     :type nums: List[int]

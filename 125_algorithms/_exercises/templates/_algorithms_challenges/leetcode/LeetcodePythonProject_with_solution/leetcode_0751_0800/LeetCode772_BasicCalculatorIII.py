@@ -3,7 +3,7 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ calculate(self, s):
         """
         :type s: str
@@ -44,7 +44,7 @@ class Solution(object):
             i += 1
         r.. l1+o1*l2
     
-    ___ test(self):
+    ___ test
         testCases = [
             "1 + 1",
             " 6-4 / 2 ",
@@ -53,7 +53,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.calculate(s)
+            result = calculate(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

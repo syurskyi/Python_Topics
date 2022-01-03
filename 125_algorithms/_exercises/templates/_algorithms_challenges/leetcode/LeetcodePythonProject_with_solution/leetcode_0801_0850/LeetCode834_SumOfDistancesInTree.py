@@ -3,14 +3,14 @@ Created on Jun 10, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ sumOfDistancesInTree(self, N, edges):
         """
         :type N: int
         :type edges: List[List[int]]
         :rtype: List[int]
         """
-        graph = {}
+        graph    # dict
         ___ i __ r..(N):
             graph[i] = set()
         ___ i, j __ edges:
@@ -18,15 +18,15 @@ class Solution(object):
             graph[j].add(i)
         res = [0]*N
         count = [0]*N
-        self.dfs(0, set(), graph, res, count)
-        self.dfs2(0, set(), graph, res, count, N)
+        dfs(0, set(), graph, res, count)
+        dfs2(0, set(), graph, res, count, N)
         r.. res
     
     ___ dfs(self, root, visited, graph, res, count):
         visited.add(root)
         ___ i __ graph[root]:
             __ i n.. __ visited:
-                self.dfs(i, visited, graph, res, count)
+                dfs(i, visited, graph, res, count)
                 count[root] += count[i]
                 res[root] += res[i]+count[i]
         count[root] += 1
@@ -36,7 +36,7 @@ class Solution(object):
         ___ i __ graph[root]:
             __ i n.. __ visited:
                 res[i] = res[root] - count[i] + N - count[i]
-                self.dfs2(i, visited, graph, res, count, N)
+                dfs2(i, visited, graph, res, count, N)
     
     ##########################################################
     ######################## OWN TLE #########################
@@ -48,7 +48,7 @@ class Solution(object):
         :rtype: List[int]
         """
         n = N
-        graph = {}
+        graph    # dict
         ___ i __ r..(n):
             graph[i]    # list
         ___ edge __ edges:
@@ -56,7 +56,7 @@ class Solution(object):
             graph[edge[1]].a..(edge[0])
         res    # list
         ___ i __ r..(n):
-            res.a..(self.bfs(graph, i))
+            res.a..(bfs(graph, i))
         r.. res
     
     ___ bfs(self, graph, i):
@@ -76,7 +76,7 @@ class Solution(object):
             level += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 6,
@@ -86,7 +86,7 @@ class Solution(object):
         ___ n, edges __ testCases:
             print('n: %s' % n)
             print('edges: %s' % edges)
-            result = self.sumOfDistancesInTree(n, edges)
+            result = sumOfDistancesInTree(n, edges)
             print('result: %s' % result)
             print('-='*30+'-')
 

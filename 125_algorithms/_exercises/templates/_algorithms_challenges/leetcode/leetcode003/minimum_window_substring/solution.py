@@ -1,10 +1,10 @@
-class Solution:
+c_ Solution:
     # @return a string
     ___ minWindow(self, S, T):
         s = S
         t = T
-        d = {}
-        td = {}
+        d    # dict
+        td    # dict
         ___ c __ t:
             td[c] = td.get(c, 0) + 1
         left = 0
@@ -14,7 +14,7 @@ class Solution:
         ___ i, c __ e..(s):
             __ c __ td:
                 d[c] = d.get(c, 0) + 1
-                __ self.contains(d, td):  # Contains all characters
+                __ contains(d, td):  # Contains all characters
                     right = i
                     # Move left pointers
                     cc = s[left]
@@ -39,5 +39,5 @@ class Solution:
     ___ contains(self, d, td):
         ___ k __ td:
             __ k n.. __ d o. d[k] < td[k]:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..

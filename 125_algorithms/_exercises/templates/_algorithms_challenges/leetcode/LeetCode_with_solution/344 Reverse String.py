@@ -4,7 +4,7 @@ Write a function that takes a string as input and returns the string reversed.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ reverseString(self, s):
         """
         :type s: str

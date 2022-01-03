@@ -29,7 +29,7 @@ ___ create_chart():
                         print(outstr)
                         outstr = ''
                         outstr += log_date+' '
-                    __ 'python' __ second.lower():
+                    __ 'python' __ second.l..:
                         outstr += PY_BOOK
                     ____:
                         outstr += OTHER_BOOK

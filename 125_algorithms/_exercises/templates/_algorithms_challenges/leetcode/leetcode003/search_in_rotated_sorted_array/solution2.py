@@ -9,8 +9,8 @@ index, otherwise return -1.
 You may assume no duplicate exists in the array.
 """
 
-class Solution(object):
-    ___ search(self, nums, target):
+c_ Solution(object):
+    ___ s..(self, nums, target):
         """
         :type nums: List[int]
         :type target: int

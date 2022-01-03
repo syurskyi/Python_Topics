@@ -1,7 +1,7 @@
 THUMBS_UP, THUMBS_DOWN = '👍', '👎'
 
 
-class Thumbs:
+c_ Thumbs:
     
     ___ __mul__(self, other):
         __ other __ 0:
@@ -13,7 +13,7 @@ class Thumbs:
         r.. f"{THUMBS_UP __ other > 0 ____ THUMBS_DOWN} ({abs(other)}x)"
 
     ___ __rmul__(self, other):
-        r.. self.__mul__(other)
+        r.. __mul__(other)
 
 
 __ __name__ __ "__main__":

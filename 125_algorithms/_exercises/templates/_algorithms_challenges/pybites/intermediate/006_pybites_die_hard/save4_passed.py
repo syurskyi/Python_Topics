@@ -4,7 +4,7 @@ _______ urllib.request
 
 
 tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.join(tmp, 'dirnames')
+tempfile = os.path.j..(tmp, 'dirnames')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile
@@ -34,7 +34,7 @@ ___ gen_files(tempfile=tempfile):
     => Here you would return 03/mridubhatnagar (lowercased!)
        followed by 03/aleksandarknezevic
     """
-    file = open(tempfile).read().lower().splitlines()
+    file = open(tempfile).read().l...splitlines()
 
     names    # list
     ___ line __ file:
@@ -79,7 +79,7 @@ ___ diehard_pybites(files_ N..
 
     ___ entry __ files:
         entry = entry.s..('/')
-        ___ challenge, number __ popular_challenges.items():
+        ___ challenge, number __ popular_challenges.i..:
             __ entry[0] __ challenge:
                 stats_list.a..(Stats(user=entry[1], challenge=(entry[0], number)))
 

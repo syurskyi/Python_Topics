@@ -1,10 +1,10 @@
 _______ os
-_______ re
+_______ __
 ____ collections _______ Counter
 ____ urllib.request _______ urlretrieve
 ____ dateutil.parser _______ parse
 
-commits = os.path.join('/tmp', 'commits')
+commits = os.path.j..('/tmp', 'commits')
 urlretrieve('https://bit.ly/2H1EuZQ', commits)
 
 # you can use this constant as key to the yyyymm:count dict
@@ -26,9 +26,9 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     # Example log line:
     # Date:   Tue Mar 5 22:34:33 2019 +0100 | 2 files changed, 4 insertions(+), 4 deletions(-)
     # Groups:    (                         )                  ( )              ( )
-    log_regex = re.compile(
+    log_regex = __.c..(
         r'^Date: +\w+ (\w+ \d+ \d+:\d+:\d+ \d{4} [+-]\d{4}) .+ged(?:, (\d+) ins.*?)?(?:, (\d+) del.*?)?$',
-        flags=re.MULTILINE)
+        flags=__.MULTILINE)
 
     log = Counter()
     c = 0
@@ -38,5 +38,5 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
             dt = parse(x[0])
             __ year __ N.. o. year __ dt.year:
                 log += Counter({(YEAR_MONTH.f..(y=dt.year, m=dt.month)): int('0' + x[1]) - int('0' + x[2])})
-    lst = s..([(k, v) ___ k, v __ log.items()], key=l.... x: x[1])
+    lst = s..([(k, v) ___ k, v __ log.i..], key=l.... x: x[1])
     r.. lst[0][0], lst[-1][0]

@@ -35,20 +35,20 @@ tree is not more than 1000.
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.ret = 0
+c_ Solution:
+    ___ - ):
+        ret = 0
 
     ___ longestUnivaluePath(self, root: TreeNode) -> int:
-        self.find(root)
-        r.. self.ret
+        find(root)
+        r.. ret
 
     ___ find(self, node):
         """
@@ -57,21 +57,21 @@ class Solution:
         __ n.. node:
             r.. 0
 
-        left = self.find(node.left)
-        right = self.find(node.right)
+        left = find(node.left)
+        right = find(node.right)
         left_path = left + 1 __ node.left a.. node.left.val __ node.val ____ 0
         right_path = right + 1 __ node.right a.. node.right.val __ node.val ____ 0
-        self.ret = max(self.ret, left_path + right_path)
+        ret = max(ret, left_path + right_path)
         r.. max(left_path, right_path)
 
 
-class Solution_error:
-    ___ __init__(self):
-        self.ret = 0
+c_ Solution_error:
+    ___ - ):
+        ret = 0
 
     ___ longestUnivaluePath(self, root: TreeNode) -> int:
-        self.find(root)
-        r.. self.ret
+        find(root)
+        r.. ret
 
     ___ find(self, node):
         """
@@ -80,8 +80,8 @@ class Solution_error:
         __ n.. node:
             r.. 0
 
-        left = self.find(node.left)
-        right = self.find(node.right)
+        left = find(node.left)
+        right = find(node.right)
         cur = 1  # node.val
         path = 1
         __ left a.. node.left.val __ node.val:
@@ -93,5 +93,5 @@ class Solution_error:
             __ right > left:
                 cur = right + 1
 
-        self.ret = max(self.ret, path - 1)
+        ret = max(ret, path - 1)
         r.. cur

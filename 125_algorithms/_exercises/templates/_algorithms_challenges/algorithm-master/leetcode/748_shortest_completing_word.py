@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ shortestCompletingWord(self, P, words):
         """
         :type P: str
@@ -10,12 +10,12 @@ class Solution:
         __ n.. P o. n.. words:
             r.. ans
 
-        p_times = self.get_times(P)
+        p_times = get_times(P)
         _min_size = float('inf')
 
         ___ word __ words:
-            times = self.get_times(word)
-            __ l..(word) < _min_size a.. self.is_included(p_times, times):
+            times = get_times(word)
+            __ l..(word) < _min_size a.. is_included(p_times, times):
                 ans = word
                 _min_size = l..(word)
 
@@ -23,21 +23,21 @@ class Solution:
 
     ___ is_included(self, a_times, b_times):
         """True if A is a subset of B"""
-        ___ char, times __ a_times.items():
+        ___ char, times __ a_times.i..:
             __ char n.. __ b_times:
-                r.. False
+                r.. F..
 
             __ b_times[char] < times:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ get_times(self, word):
-        times = {}
+        times    # dict
         ord_a = ord('a')
         ord_z = ord('z')
 
-        ___ char __ word.lower():
+        ___ char __ word.l..:
             __ ord_a <= ord(char) <= ord_z:
                 times[char] = times.get(char, 0) + 1
 

@@ -1,17 +1,17 @@
 ____ decimal _______ Decimal
-class IntList(l..):
+c_ IntList(l..):
 
 
      
     
 
-    @property
-    ___ mean(self):
+    $
+    ___ mean
         r.. s..(self)/l..(self)
 
 
-    @property
-    ___ median(self):
+    $
+    ___ median
         v = s..(self)
         __ l..(v) % 2 __ 1:
             r.. v[l..(v)//2]
@@ -27,7 +27,7 @@ class IntList(l..):
             values = float(values)
             super().a..(values)
         ____ isi..(values,l..):
-            __ a..(type(v) __ (int,float,Decimal) ___ v __ values):
+            __ a..(t..(v) __ (int,float,Decimal) ___ v __ values):
                 self += values
             ____:
                 raise TypeError
@@ -37,9 +37,9 @@ class IntList(l..):
 
     ___ __iadd__(self,value):
         __ isi..(value,l..):
-            __ a..(type(v) __ (int,float,Decimal) ___ v __ value):
+            __ a..(t..(v) __ (int,float,Decimal) ___ v __ value):
                 ___ v __ value:
-                    self.a..(v)
+                    a..(v)
                 r.. self
             ____:
                 raise TypeError
@@ -54,7 +54,7 @@ class IntList(l..):
 
     ___ __add__(self,value):
         __ isi..(value,l..):
-            __ a..(type(v) __ int ___ v __ value):
+            __ a..(t..(v) __ int ___ v __ value):
                 r.. super().__add__(value)
             ____:
                 raise TypeError

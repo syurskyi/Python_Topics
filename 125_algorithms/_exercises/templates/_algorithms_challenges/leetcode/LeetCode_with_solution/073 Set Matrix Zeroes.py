@@ -10,7 +10,7 @@ A simple improvement uses O(m + n) space, but still not the best solution.
 Could you devise a constant space solution?
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ setZeroes_error(self, matrix):
         """
         store the zero at the head
@@ -56,14 +56,14 @@ class Solution:
         n = l..(matrix[0])
 
         # special treatment for row and col 
-        clear_first_row = False
-        clear_first_col = False
+        clear_first_row = F..
+        clear_first_col = F..
         ___ row __ xrange(m):
             __ matrix[row][0]__0:
-                clear_first_col = True
+                clear_first_col = T..
         ___ col __ xrange(n):
             __ matrix[0][col]__0:
-                clear_first_row = True
+                clear_first_row = T..
 
         ___ row __ xrange(1, m):
             ___ col __ xrange(1, n):

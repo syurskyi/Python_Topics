@@ -3,7 +3,7 @@ ____ d__ _______ d__, t..
 
 TimeOffset = n..('TimeOffset', 'offset date_str divider')
 
-NOW = d__.now()
+NOW = d__.n..
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
     TimeOffset(10, 'just now', N..),
@@ -31,7 +31,7 @@ ___ pretty_date(date):
     r.. date.strftime("%m/%d/%y")
 
 
-dt = d__.now() - t..(days=2, hours=22, minutes=14, seconds=15)
+dt = d__.n.. - t..(days=2, hours=22, minutes=14, seconds=15)
 #dt = datetime.now() - timedelta(seconds=125)
 #print(dt)
 print(pretty_date(dt))

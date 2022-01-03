@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findMinMoves(self, machines):
     """
     :type machines: List[int]

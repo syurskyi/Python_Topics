@@ -1,40 +1,40 @@
-class Triangle:
+c_ Triangle:
 
     EQUILATERAL = "equilateral"
     ISOSCELES = "isosceles"
     SCALENE = "scalene"
 
-    ___ __init__(self, a, b, c):
-        self.a = a
-        self.b = b
-        self.c = c
-        __ self.error():
+    ___ - , a, b, c):
+        a = a
+        b = b
+        c = c
+        __ error():
             raise TriangleError
 
-    ___ kind(self):
-        __ self.equilateral():
-            r.. self.EQUILATERAL
-        __ self.isosceles():
-            r.. self.ISOSCELES
-        r.. self.SCALENE
+    ___ kind
+        __ equilateral():
+            r.. EQUILATERAL
+        __ isosceles():
+            r.. ISOSCELES
+        r.. SCALENE
 
-    ___ equilateral(self):
-        r.. self.a __ self.b __ self.c
+    ___ equilateral
+        r.. a __ b __ c
 
-    ___ isosceles(self):
-        r.. self.a __ self.b o. self.b __ self.c o. self.a __ self.c
+    ___ isosceles
+        r.. a __ b o. b __ c o. a __ c
 
-    ___ error(self):
-        r.. self.negative_sides() o. self.triangle_inequality()
+    ___ error
+        r.. negative_sides() o. triangle_inequality()
 
-    ___ negative_sides(self):
-        r.. self.a <= 0 o. self.b <= 0 o. self.c <= 0
+    ___ negative_sides
+        r.. a <= 0 o. b <= 0 o. c <= 0
 
-    ___ triangle_inequality(self):
-        r.. (self.a + self.b <= self.c o.
-                self.b + self.c <= self.a o.
-                self.a + self.c <= self.b)
+    ___ triangle_inequality
+        r.. (a + b <= c o.
+                b + c <= a o.
+                a + c <= b)
 
 
-class TriangleError(Exception):
+c_ TriangleError(Exception):
     pass

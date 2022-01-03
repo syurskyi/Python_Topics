@@ -3,7 +3,7 @@ Created on Jan 31, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ splitIntoFibonacci(self, S):
         """
         :type S: str
@@ -11,12 +11,12 @@ class Solution(object):
         """
         s = S
         res    # list
-        self.helper(s, 0, res)
+        helper(s, 0, res)
         r.. res __ l..(res) > 2 ____ []
     
     ___ helper(self, s, i, res):
         __ i >= l..(s) a.. l..(res) > 2:
-            r.. True
+            r.. T..
         ___ j __ r..(i+1, l..(s)+1):
             s0 = s[i:j]
             num = int(s0)
@@ -24,12 +24,12 @@ class Solution(object):
                 break
             __ l..(res) < 2 o. res[-2] + res[-1] __ num:
                 res.a..(num)
-                __ self.helper(s, j, res):
-                    r.. True
+                __ helper(s, j, res):
+                    r.. T..
                 res.pop()
-        r.. False
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             '123456579',
             '11235813',
@@ -40,7 +40,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.splitIntoFibonacci(s)
+            result = splitIntoFibonacci(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

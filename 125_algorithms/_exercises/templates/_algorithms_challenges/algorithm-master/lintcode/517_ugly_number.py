@@ -1,13 +1,13 @@
-class Solution:
+c_ Solution:
     ___ isUgly(self, num):
         """
         :type num: int
         :rtype: bool
         """
         __ n.. num:
-            r.. False
+            r.. F..
         __ num __ 1:
-            r.. True
+            r.. T..
 
         ___ factor __ (
             125, 27, 8,
@@ -17,6 +17,6 @@ class Solution:
                 num //= factor
 
             __ num __ 1:
-                r.. True
+                r.. T..
 
         r.. num __ 1

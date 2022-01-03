@@ -15,17 +15,17 @@ There are many calls to sumRange function.
 __author__ = 'Daniel'
 
 
-class NumArray(object):
-    ___ __init__(self, nums):
+c_ NumArray(object):
+    ___ - , nums):
         """
         initialize your data structure here.
         dp
         :type nums: List[int]
         """
         n = l..(nums)
-        self.F = [0 ___ _ __ xrange(n+1)]
+        F = [0 ___ _ __ xrange(n+1)]
         ___ i __ xrange(1, n+1):
-            self.F[i] = self.F[i-1] + nums[i-1]
+            F[i] = F[i-1] + nums[i-1]
 
     ___ sumRange(self, i, j):
         """
@@ -34,4 +34,4 @@ class NumArray(object):
         :type j: int
         :rtype: int
         """
-        r.. self.F[j+1] - self.F[i]
+        r.. F[j+1] - F[i]

@@ -1,4 +1,4 @@
-class Roman:
+c_ Roman:
 
     NUMERALS = {
         1: "I",
@@ -18,7 +18,7 @@ class Roman:
 
     @classmethod
     ___ numeral(cls, arabic):
-        r.. ''.join([cls.NUMERALS[key]
+        r.. ''.j..([cls.NUMERALS[key]
                         ___ key __ cls.get_components(arabic)])
 
     @classmethod

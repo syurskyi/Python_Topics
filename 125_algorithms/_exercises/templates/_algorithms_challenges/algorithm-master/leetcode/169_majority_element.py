@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ majorityElement(self, nums):
         """
         :type nums: List[int]
@@ -21,7 +21,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     ___ majorityElement(self, nums):
         """
         :type nums: List[int]
@@ -35,7 +35,7 @@ class Solution:
         r.. nums[l..(nums) // 2]
 
 
-class Solution:
+c_ Solution:
     ___ majorityElement(self, nums):
         """
         :type nums: List[int]
@@ -46,12 +46,12 @@ class Solution:
         __ n.. nums:
             r.. NOT_FOUND
 
-        freq = {}
+        freq    # dict
 
         ___ a __ nums:
             freq[a] = freq.get(a, 0) + 1
 
-        ___ a, cnt __ freq.items():
+        ___ a, cnt __ freq.i..:
             __ cnt > l..(nums) // 2:
                 r.. a
 

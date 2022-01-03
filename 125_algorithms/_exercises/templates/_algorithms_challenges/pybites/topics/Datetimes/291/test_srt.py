@@ -32,8 +32,8 @@ scroll down to 'Focus Mode'.
 00:01:28,200 --> 00:01:35,180
 You can actually hide the sidebar and have only the description and the code editor.
 """  # noqa E501
-text3 = '\n'.join(text1.splitlines()[:9])
-text4 = '\n'.join(text2.splitlines()[5:])
+text3 = '\n'.j..(text1.splitlines()[:9])
+text4 = '\n'.j..(text2.splitlines()[5:])
 # testing hours as well
 text5 = """
 32

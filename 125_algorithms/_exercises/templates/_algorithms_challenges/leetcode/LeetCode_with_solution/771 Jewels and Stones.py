@@ -19,7 +19,7 @@ Output: 0
 """
 
 
-class Solution:
+c_ Solution:
     ___ numJewelsInStones(self, J: s.., S: s..) -> int:
         """
         hash map

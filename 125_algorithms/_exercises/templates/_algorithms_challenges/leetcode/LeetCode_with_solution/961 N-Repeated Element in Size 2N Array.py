@@ -28,7 +28,7 @@ A.length is even
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ repeatedNTimes(self, A: List[int]) -> int:
         """
         Counter. Straightforward. O(N) space

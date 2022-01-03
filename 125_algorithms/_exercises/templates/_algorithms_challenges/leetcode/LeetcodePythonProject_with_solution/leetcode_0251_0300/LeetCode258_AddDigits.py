@@ -3,7 +3,7 @@ Created on May 13, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ addDigits(self, num):
         """
         :type num: int

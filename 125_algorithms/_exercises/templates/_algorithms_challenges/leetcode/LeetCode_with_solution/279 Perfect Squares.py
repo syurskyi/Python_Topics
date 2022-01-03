@@ -10,7 +10,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     F = [0]  # static dp for all test cases
 
     ___ numSquares(self, n):
@@ -39,7 +39,7 @@ class Solution(object):
         :rtype: int
         """
         q = [0]
-        visited = [False ___ _ __ xrange(n+1)]
+        visited = [F.. ___ _ __ xrange(n+1)]
 
         level = 0
         w.... q:
@@ -51,7 +51,7 @@ class Solution(object):
                     __ nxt <= n a.. visited[nxt]:
                         continue
                     ____ nxt < n:
-                        visited[nxt] = True
+                        visited[nxt] = T..
                         q.a..(nxt)
                     ____ nxt __ n:
                         r.. level

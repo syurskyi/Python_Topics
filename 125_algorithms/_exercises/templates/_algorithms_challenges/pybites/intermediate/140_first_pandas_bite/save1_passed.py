@@ -10,9 +10,9 @@ ___ athletes_most_medals(data=data):
     df_grouped = df_grouped['Medal'].reset_index()
 
     mens = df_grouped[df_grouped['Gender'] __ 'Men'].\
-        sort_values(by='Medal', ascending=False).head(1)
+        sort_values(by='Medal', ascending=F..).head(1)
     womens = df_grouped[df_grouped['Gender'] __ 'Women'].\
-        sort_values(by='Medal', ascending=False).head(1)
+        sort_values(by='Medal', ascending=F..).head(1)
 
     output = pd.merge(mens, womens, how='outer')[['Athlete', 'Medal']].\
         set_index('Athlete')

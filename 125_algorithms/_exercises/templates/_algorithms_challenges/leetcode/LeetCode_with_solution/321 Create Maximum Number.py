@@ -24,7 +24,7 @@ return [9, 8, 9]
 __author__ = 'Daniel'
 
 
-class SolutionTLE(object):
+c_ SolutionTLE(object):
     ___ maxNumber(self, nums1, nums2, k):
         """
         http://algobox.org/2015/12/24/create-maximum-number/
@@ -39,15 +39,15 @@ class SolutionTLE(object):
         ___ l1 __ xrange(m..(n1, k)+1):
             l2 = k - l1
             ... l2 >= 0
-            A1, A2 = self.maxNumberSingle(nums1, l1), self.maxNumberSingle(nums2, l2)
-            cur = self.maxNumberDual(A1, A2)
-            __ n.. maxa o. self.eval(maxa) < self.eval(cur):
+            A1, A2 = maxNumberSingle(nums1, l1), maxNumberSingle(nums2, l2)
+            cur = maxNumberDual(A1, A2)
+            __ n.. maxa o. eval(maxa) < eval(cur):
                 maxa = cur
 
         r.. maxa
 
     ___ eval(self, lst):
-        r.. int("".join(map(s.., lst)))
+        r.. int("".j..(map(s.., lst)))
 
     ___ maxNumberSingle(self, A, k):
         """

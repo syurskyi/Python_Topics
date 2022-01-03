@@ -10,21 +10,21 @@ You should not implement it, or speculate about its implementation
 """
 
 
-class NestedInteger(object):
-    ___ isInteger(self):
+c_ NestedInteger(object):
+    ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
 
-    ___ getInteger(self):
+    ___ getInteger
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
 
-    ___ getList(self):
+    ___ getList
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -32,9 +32,9 @@ class NestedInteger(object):
         """
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.s.. = 0
+c_ Solution(object):
+    ___ - ):
+        s.. = 0
 
     ___ depthSum(self, nestedList):
         """
@@ -43,14 +43,14 @@ class Solution(object):
         :rtype: int
         """
         ___ elt __ nestedList:
-            self.dfs(elt, 1)
+            dfs(elt, 1)
 
-        r.. self.s..
+        r.. s..
 
     ___ dfs(self, ni, depth):
         __ ni.isInteger():
-            self.s.. += ni.getInteger() * depth
+            s.. += ni.getInteger() * depth
         ____:
             lst = ni.getList()
             ___ elt __ lst:
-                self.dfs(elt, depth + 1)
+                dfs(elt, depth + 1)

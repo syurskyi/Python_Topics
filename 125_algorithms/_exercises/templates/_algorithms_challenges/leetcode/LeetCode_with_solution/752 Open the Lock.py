@@ -49,7 +49,7 @@ the 10,000 possibilities '0000' to '9999'.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ openLock(self, deadends: List[s..], target: s..) -> int:
         """
         bfs

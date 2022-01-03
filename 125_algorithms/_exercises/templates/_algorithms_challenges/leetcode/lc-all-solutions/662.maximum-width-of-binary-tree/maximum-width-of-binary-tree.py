@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ widthOfBinaryTree(self, root):
     """
     :type root: TreeNode

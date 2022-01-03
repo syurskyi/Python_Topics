@@ -36,7 +36,7 @@ The characters of name and typed are lowercase letters.
 """
 
 
-class Solution:
+c_ Solution:
     ___ isLongPressedName(self, name: s.., typed: s..) -> bool:
         """
         two pointers
@@ -50,7 +50,7 @@ class Solution:
             ____ j - 1 >= 0 a.. typed[j-1] __ typed[j]:
                 j += 1
             ____:
-                r.. False
+                r.. F..
 
         # tail
         w.... j - 1 >= 0 a.. j < n a.. typed[j-1] __ typed[j]:

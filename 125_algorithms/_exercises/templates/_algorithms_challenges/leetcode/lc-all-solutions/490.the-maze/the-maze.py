@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ hasPath(self, maze, start, destination):
     """
     :type maze: List[List[int]]
@@ -31,8 +31,8 @@ class Solution(object):
       __ curr __ visited:
         continue
       __ curr __ destination:
-        r.. True
+        r.. T..
       visited |= {curr}
       ___ nbr __ next(curr, maze):
         queue.a..(nbr)
-    r.. False
+    r.. F..

@@ -4,9 +4,9 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ increasingTriplet(self, nums):
-        __ n.. nums: r.. False
+        __ n.. nums: r.. F..
 #         first = float('inf')
         first = nums[0]
         second = float('inf')
@@ -16,10 +16,10 @@ class Solution(object):
             ____ nums[i] <= second:
                 second = nums[i]
             ____:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 3],
             [5, 4, 3, 2, 1],
@@ -33,7 +33,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.increasingTriplet(nums)
+            result = increasingTriplet(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

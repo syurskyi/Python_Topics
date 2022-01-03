@@ -17,20 +17,20 @@ Return the sum = 12 + 13 = 25.
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     ___ sumNumbers(self, root):
         """
         :param root: TreeNode
         :return: Integer
         """
         result    # list
-        self.dfs(root, "", result)
+        dfs(root, "", result)
         result = [int(element) ___ element __ result]
         r.. s..(result)
 
@@ -50,9 +50,9 @@ class Solution:
             r..
 
         __ root.left:
-            self.dfs(root.left, cur, result)
+            dfs(root.left, cur, result)
         __ root.right:
-            self.dfs(root.right, cur, result)
+            dfs(root.right, cur, result)
 
 
     ___ dfs_error(self, root, cur, result):
@@ -73,9 +73,9 @@ class Solution:
             r..
 
         __ root.left:
-            self.dfs_error(root.left, cur, result)  # reference to the same list
+            dfs_error(root.left, cur, result)  # reference to the same list
         __ root.right:
-            self.dfs_error(root.right, cur, result)
+            dfs_error(root.right, cur, result)
 
 
 __ __name____"__main__":

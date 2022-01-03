@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
   ___ sortList(self, head):
     """
     :type head: ListNode
@@ -23,8 +23,8 @@ class Solution(object):
         r.. head
       pre.next = N..
 
-      left = self.sortList(head)
-      right = self.sortList(slow)
+      left = sortList(head)
+      right = sortList(slow)
 
       p = dummy = ListNode(-1)
       w.... left a.. right:

@@ -4,8 +4,8 @@ ___ convert_pybites_chars(text):
     PYBITES = "pybites"
     new_str    # list
     ___ t __ text:
-        __ t.lower() __ l..(PYBITES):
+        __ t.l.. __ l..(PYBITES):
             new_str.a..(t.swapcase())
         ____:
             new_str.a..(t)
-    r.. "".join(new_str)
+    r.. "".j..(new_str)

@@ -27,7 +27,7 @@ Output:
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ toHex(self, num):
         """
         All use bit manipulation
@@ -36,10 +36,10 @@ class Solution(object):
         """
         ret    # list
         w.... l..(ret) < 8 a.. num:
-            ret.a..(self.encode(num & 0xf))
+            ret.a..(encode(num & 0xf))
             num >>= 4
 
-        r.. ''.join(ret[::-1]) o. '0'
+        r.. ''.j..(ret[::-1]) o. '0'
 
     ___ toHexNormal(self, num):
         """
@@ -49,10 +49,10 @@ class Solution(object):
         """
         ret    # list
         w.... l..(ret) < 8 a.. num:
-            ret.a..(self.encode(num % 16))
+            ret.a..(encode(num % 16))
             num /= 16
 
-        r.. ''.join(ret[::-1]) o. '0'
+        r.. ''.j..(ret[::-1]) o. '0'
 
     ___ encode(self, d):
         __ 0 <= d < 10:

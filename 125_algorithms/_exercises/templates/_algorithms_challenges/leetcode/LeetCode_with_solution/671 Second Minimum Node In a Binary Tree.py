@@ -32,16 +32,16 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ findSecondMinimumValue(self, root: TreeNode) -> int:
-        ret = self.find(root)
+        ret = find(root)
         r.. -1 __ ret __ float('inf') ____ ret
 
     ___ find(self, root: TreeNode) -> int:
@@ -53,12 +53,12 @@ class Solution:
 
         __ root.left a.. root.right:
             __ root.left.val __ root.val:
-                left = self.find(root.left)
+                left = find(root.left)
             ____:
                 left = root.left.val
 
             __ root.right.val __ root.val:
-                right = self.find(root.right)
+                right = find(root.right)
             ____:
                 right = root.right.val
 

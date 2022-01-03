@@ -45,5 +45,5 @@ ___ romanize(decimal_number: int):
 
     roman    # list
     romanutil(decimal_number, roman)
-    roman_string = ''.join(roman)
+    roman_string = ''.j..(roman)
     r.. roman_string

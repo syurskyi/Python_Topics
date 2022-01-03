@@ -36,7 +36,7 @@ ___ get_feed_entries(feed=FEED):
         link = entry.link
         date = entry.published_parsed
         tags = entry.tags
-        tags = [t.get('term').lower() ___ t __ tags]
+        tags = [t.get('term').l.. ___ t __ tags]
 
         date = _convert_struct_time_to_dt(date)
 
@@ -51,7 +51,7 @@ ___ get_feed_entries(feed=FEED):
 
 
 
-___ filter_entries_by_tag(search, entry):
+___ filter_entries_by_tag(s.., entry):
     """Check if search matches any tags as stored in the Entry namedtuple
        (case insensitive, only whole, not partial string matches).
        Returns bool: True if match, False if not.
@@ -64,15 +64,15 @@ ___ filter_entries_by_tag(search, entry):
     """
         
     entry_tags = entry.tags
-    __ '&' __ search:
-        splits = search.s..('&')
+    __ '&' __ s..:
+        splits = s...s..('&')
 
-        r.. a..(s...lower() __ entry_tags ___ s.. __ splits)
-    ____ '|' __ search:
-        splits = search.s..('|')
-        r.. any(s...lower() __ entry_tags ___ s.. __ splits)
+        r.. a..(s...l.. __ entry_tags ___ s.. __ splits)
+    ____ '|' __ s..:
+        splits = s...s..('|')
+        r.. any(s...l.. __ entry_tags ___ s.. __ splits)
     ____:
-        r.. search.lower() __ entry_tags
+        r.. s...l.. __ entry_tags
 
 ___ main():
     """Entry point to the program

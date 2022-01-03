@@ -26,5 +26,5 @@ ___ i __ r..(T):
     string = '('+s..(int(z[0]))+' '+s..(int(z[1]))+')'
     res.a..(string)
                                   
-final = ' '.join(s..(e) ___ e __ res)
+final = ' '.j..(s..(e) ___ e __ res)
 print(final)

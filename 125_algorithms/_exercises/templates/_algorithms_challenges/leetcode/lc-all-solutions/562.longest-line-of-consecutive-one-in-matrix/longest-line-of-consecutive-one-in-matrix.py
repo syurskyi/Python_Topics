@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ longestLine(self, M):
     """
     :type M: List[List[int]]

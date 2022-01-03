@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 
 ___ validate_license(key: s..) -> bool:
@@ -7,7 +7,7 @@ ___ validate_license(key: s..) -> bool:
     """
 
     
-    r.. re.match(r"PB(\-[A-Z\d]{8}){4}$",key) __ n.. N..
+    r.. __.match(r"PB(\-[A-Z\d]{8}){4}$",key) __ n.. N..
 
 
 

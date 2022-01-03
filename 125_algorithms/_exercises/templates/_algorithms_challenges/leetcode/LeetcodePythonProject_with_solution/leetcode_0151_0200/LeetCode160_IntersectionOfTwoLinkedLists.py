@@ -4,19 +4,19 @@ Created on May 22, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x, nextNode):
-        self.val = x
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , x, nextNode):
+        val = x
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ getIntersectionNode(self, headA, headB):
         """
         :type head1, head1: ListNode
         :rtype: ListNode
         """
-        lenA = self.getLength(headA)
-        lenB = self.getLength(headB)
+        lenA = getLength(headA)
+        lenB = getLength(headB)
         __ n.. lenA o. n.. lenB: r.. N..
         __ lenA < lenB:
             headA, headB = headB, headA

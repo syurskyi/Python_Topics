@@ -4,7 +4,7 @@ _______ os
 _______ urllib.request
 
 TMP = os.getenv("TMP", "/tmp")
-DICTIONARY = os.path.join(TMP, 'dictionary_m_words.txt')
+DICTIONARY = os.path.j..(TMP, 'dictionary_m_words.txt')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dictionary_m_words.txt',
     DICTIONARY
@@ -14,11 +14,11 @@ urllib.request.urlretrieve(
 ___ load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        r.. (word.lower().s.. ___ word __ f.readlines())
+        r.. (word.l...s.. ___ word __ f.readlines())
 
 
 ___ _clean_word(word):
-    r.. "".join([char.lower() ___ char __ word __ char.isalnum()])
+    r.. "".j..([char.l.. ___ char __ word __ char.isalnum()])
 
 
 ___ is_palindrome(word):
@@ -28,8 +28,8 @@ ___ is_palindrome(word):
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
     word_clean = _clean_word(word)
     __ word_clean __ word_clean[::-1]:
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..
 
 
 ___ get_longest_palindrome(words_ N..
@@ -39,7 +39,7 @@ ___ get_longest_palindrome(words_ N..
     __ words __ N..
         words = load_dictionary()
 
-    palindrome = {}
+    palindrome    # dict
     ___ word __ words:
         __ is_palindrome(word):
             palindrome_length = l..(_clean_word(word))

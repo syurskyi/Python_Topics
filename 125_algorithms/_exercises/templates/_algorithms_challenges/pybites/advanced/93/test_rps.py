@@ -74,4 +74,4 @@ ___ test_computer_move():
     computer_moves = set()
     ___ i __ r..(1000):
         computer_moves.add(_get_computer_move())
-    ... computer_moves __ defeated_by.keys()
+    ... computer_moves __ defeated_by.k..

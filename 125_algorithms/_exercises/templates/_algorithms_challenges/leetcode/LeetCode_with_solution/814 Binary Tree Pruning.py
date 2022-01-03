@@ -38,28 +38,28 @@ The value of each node will only be 0 or 1.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ typing _______ Tuple
 
 
-class Solution:
+c_ Solution:
     ___ pruneTree(self, root: TreeNode) -> TreeNode:
-        root, _ = self.prune(root)
+        root, _ = prune(root)
         r.. root
 
     ___ prune(self, node) -> Tuple[TreeNode, bool]:
         __ n.. node:
-            r.. N.., False
+            r.. N.., F..
 
-        node.left, contain_left = self.prune(node.left)
-        node.right, contain_right = self.prune(node.right)
+        node.left, contain_left = prune(node.left)
+        node.right, contain_right = prune(node.right)
         __ n.. contain_left a.. n.. contain_right a.. node.val __ 0:
-            r.. N.., False
+            r.. N.., F..
 
-        r.. node, True
+        r.. node, T..

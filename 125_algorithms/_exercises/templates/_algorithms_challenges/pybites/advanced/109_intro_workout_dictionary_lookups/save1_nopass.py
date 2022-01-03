@@ -29,7 +29,7 @@ ___ get_workout_motd(day):
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'
     """
-    day = WORKOUT_SCHEDULE.keys()
+    day = WORKOUT_SCHEDULE.k..
     day = day.t..
     __ day n.. __ WORKOUT_SCHEDULE:
         r.. INVALID_DAY

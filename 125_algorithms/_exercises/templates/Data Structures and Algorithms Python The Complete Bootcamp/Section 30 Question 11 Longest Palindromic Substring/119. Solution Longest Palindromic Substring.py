@@ -1,10 +1,10 @@
-class Solution:
+c_ Solution:
 
     ___ longestPalindrome(self, s):
         result  ""
         ___ i __ r..(l..(s)):
-            word1  self.checkPalindrome(s, i, i)
-            word2  self.checkPalindrome(s, i, i + 1)
+            word1  checkPalindrome(s, i, i)
+            word2  checkPalindrome(s, i, i + 1)
 
             __ l..(word1) > l..(word2):
                 longest  word1

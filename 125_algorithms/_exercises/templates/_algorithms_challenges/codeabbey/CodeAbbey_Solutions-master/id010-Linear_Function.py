@@ -14,6 +14,6 @@ ___ linear_function():
         m = int(find_slope(a, b, c, d))
         g = int(find_intercept(a, b, m))
         answer.a..('({0} {1})'.f..(m, g))
-    print(' '.join(answer))
+    print(' '.j..(answer))
     
 linear_function()

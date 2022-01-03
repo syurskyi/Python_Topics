@@ -11,5 +11,5 @@ ___ get_duplicate_indices(words):
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
     counts = Counter(words)
-    dupes = [k ___ k, v __ counts.items() __ v > 1]
+    dupes = [k ___ k, v __ counts.i.. __ v > 1]
     r.. s..([words.index(dupe) ___ dupe __ dupes])

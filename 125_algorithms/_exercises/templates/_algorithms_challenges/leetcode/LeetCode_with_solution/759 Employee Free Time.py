@@ -43,7 +43,7 @@ S = 0
 E = 1
 
 
-class Solution:
+c_ Solution:
     ___ employeeFreeTime(self, schedule: List[List[List[int]]]) -> List[List[int]]:
         """
         Method 1

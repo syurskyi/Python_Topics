@@ -3,7 +3,7 @@ Created on Feb 8, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ partition(self, s):
         """
         :type s: str
@@ -11,7 +11,7 @@ class Solution(object):
         """
         result    # list
         __ n.. s: r.. result
-        self.helper(s, 0, [], result)
+        helper(s, 0, [], result)
         r.. result
     
     ___ helper(self, s, startInd, elem, result):
@@ -19,22 +19,22 @@ class Solution(object):
             result.a..(l..(elem))
             r..
         ___ i __ r..(startInd, l..(s)):
-            __ self.isPalindrome(s[startInd:i+1]):
+            __ isPalindrome(s[startInd:i+1]):
                 elem.a..(s[startInd:i+1])
-                self.helper(s, i+1, elem, result)
+                helper(s, i+1, elem, result)
                 elem.pop()
     
     ___ isPalindrome(self, s):
-        __ n.. s: r.. False
+        __ n.. s: r.. F..
         start, end = 0, l..(s)-1
         w.... start<=end:
             __ s[start] != s[end]:
-                r.. False
+                r.. F..
             start += 1
             end -= 1
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aab',
             'aabbcc',
@@ -42,7 +42,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.partition(s)
+            result = partition(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 

@@ -3,7 +3,7 @@ ___ gen_primes(a, limit):
     primes    # list
 
     # Sieve of Eratosthenes
-    sieve = [True] * (limit + 1)
+    sieve = [T..] * (limit + 1)
     ___ num __ r..(2, limit + 1):
         __ num < a:
             pass
@@ -11,17 +11,17 @@ ___ gen_primes(a, limit):
            __ num >= a:
                primes.a..(num)
            ___ i __ r..(num * num, limit + 1, num):
-               sieve[i] = False
+               sieve[i] = F..
     r.. primes
 
 ___ primes_between():
   searches = int(input())
   answer    # list
-  ___ search __ r..(searches):
+  ___ s.. __ r..(searches):
     a, b = input().s.. 
     a, b = int(a), int(b)
     primes = gen_primes(a, b)
     count = l..(s..(primes).s..())
     answer.a..(s..(count))
-  print(' '.join(answer))
+  print(' '.j..(answer))
 primes_between()

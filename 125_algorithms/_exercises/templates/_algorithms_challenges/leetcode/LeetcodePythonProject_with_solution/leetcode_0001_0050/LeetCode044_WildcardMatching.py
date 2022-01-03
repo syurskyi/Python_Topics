@@ -3,20 +3,20 @@ Created on Jun 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isMatch(self, s, p):
         """
         :type s: str
         :type p: str
         :rtype: bool
         """
-        __ n.. s a.. n.. p: r.. True
+        __ n.. s a.. n.. p: r.. T..
         m, n = l..(s), l..(p)
-        dp = [[False]*(n+1) ___ _ __ r..(m+1)]
-        dp[-1][-1] = True
+        dp = [[F..]*(n+1) ___ _ __ r..(m+1)]
+        dp[-1][-1] = T..
         j = n-1
         w.... j >= 0 a.. p[j] __ '*':
-            dp[-1][j] = True
+            dp[-1][j] = T..
             j -= 1
         ___ i __ r..(m-1, -1, -1):
             ___ j __ r..(n-1, -1, -1):

@@ -3,7 +3,7 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isBipartite(self, graph):
         """
         :type graph: List[List[int]]
@@ -12,27 +12,27 @@ class Solution(object):
         n = l..(graph)
         colors = [-1]*n
         ___ i __ r..(n):
-            __ colors[i] __ -1 a.. n.. self.validColor(graph, colors, 0, i):
-                r.. False
-        r.. True
+            __ colors[i] __ -1 a.. n.. validColor(graph, colors, 0, i):
+                r.. F..
+        r.. T..
     
     ___ validColor(self, graph, colors, color, node):
         __ colors[node] != -1:
             r.. colors[node] __ color
         colors[node] = color
         ___ nextNode __ graph[node]:
-            __ n.. self.validColor(graph, colors, 1-color, nextNode):
-                r.. False
-        r.. True
+            __ n.. validColor(graph, colors, 1-color, nextNode):
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,3], [0,2], [1,3], [0,2]],
             [[1,2,3], [0,2], [0,1,3], [0,2]],
         ]
         ___ graph __ testCases:
             print('graph: %s' % graph)
-            result = self.isBipartite(graph)
+            result = isBipartite(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -3,7 +3,7 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ matrixReshape(self, nums, r, c):
         """
         :type nums: List[List[int]]
@@ -28,7 +28,7 @@ class Solution(object):
             res.a..(cur)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [[1, 2],
@@ -45,12 +45,12 @@ class Solution(object):
         ]
         ___ nums, r, c __ testCases:
             print('nums:')
-            print('\n'.join([s..(row) ___ row __ nums]))
+            print('\n'.j..([s..(row) ___ row __ nums]))
             print('r: %s' % r)
             print('c: %s' % c)
-            result = self.matrixReshape(nums, r, c)
+            result = matrixReshape(nums, r, c)
             print('result:')
-            print('\n'.join([s..(row) ___ row __ result]))
+            print('\n'.j..([s..(row) ___ row __ result]))
             print('-='*30)
 
 __ __name__ __ '__main__':

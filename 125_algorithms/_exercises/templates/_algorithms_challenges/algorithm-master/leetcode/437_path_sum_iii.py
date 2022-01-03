@@ -8,7 +8,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     find path count
     """
@@ -22,9 +22,9 @@ class Solution:
             r.. 0
 
         r.. s..((
-            self.count_valid_path(root, target),
-            self.pathSum(root.left, target),
-            self.pathSum(root.right, target),
+            count_valid_path(root, target),
+            pathSum(root.left, target),
+            pathSum(root.right, target),
         ))
 
     ___ count_valid_path(self, node, remaining):
@@ -33,12 +33,12 @@ class Solution:
 
         r.. s..((
             int(node.val __ remaining),
-            self.count_valid_path(node.left, remaining - node.val),
-            self.count_valid_path(node.right, remaining - node.val),
+            count_valid_path(node.left, remaining - node.val),
+            count_valid_path(node.right, remaining - node.val),
         ))
 
 
-class Solution:
+c_ Solution:
     """
     print path
     """
@@ -53,7 +53,7 @@ class Solution:
         __ n.. root:
             r.. ans
 
-        self.dfs(root, target, ans, [])
+        dfs(root, target, ans, [])
 
         r.. ans
 
@@ -70,6 +70,6 @@ class Solution:
             __ remaining __ 0:
                 ans.a..(path[i:])
 
-        self.dfs(node.left, target, ans, path)
-        self.dfs(node.right, target, ans, path)
+        dfs(node.left, target, ans, path)
+        dfs(node.right, target, ans, path)
         path.pop()

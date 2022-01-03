@@ -4,7 +4,7 @@ Created on Apr 12, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ countBattleships(self, board):
         """
         :type board: List[List[str]]

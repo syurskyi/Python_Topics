@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ longestValidParentheses(self, s):
     """
     :type s: str

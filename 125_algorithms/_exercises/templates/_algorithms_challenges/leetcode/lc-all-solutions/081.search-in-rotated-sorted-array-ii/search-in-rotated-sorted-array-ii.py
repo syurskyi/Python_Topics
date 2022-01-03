@@ -1,5 +1,5 @@
-class Solution(object):
-  ___ search(self, nums, target):
+c_ Solution(object):
+  ___ s..(self, nums, target):
     """
     :type nums: List[int]
     :type target: int
@@ -9,7 +9,7 @@ class Solution(object):
     w.... start + 1 < end:
       mid = start + (end - start) / 2
       __ nums[mid] __ target:
-        r.. True
+        r.. T..
       __ nums[start] < nums[mid]:
         __ nums[start] <= target <= nums[mid]:
           end = mid
@@ -24,7 +24,7 @@ class Solution(object):
         start += 1
 
     __ nums[start] __ target:
-      r.. True
+      r.. T..
     __ nums[end] __ target:
-      r.. True
-    r.. False
+      r.. T..
+    r.. F..

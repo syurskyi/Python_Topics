@@ -4,7 +4,7 @@ Created on Jan 24, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ removeDuplicates(self, nums):
         """
         :type nums: List[int]
@@ -20,7 +20,7 @@ class Solution(object):
             curr += 1
         r.. prev + 1
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

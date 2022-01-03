@@ -4,7 +4,7 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minSubArrayLen(self, s, nums):
         """
         :type s: int
@@ -34,7 +34,7 @@ class Solution(object):
             sums[i] = sums[i-1] + nums[i-1]
         minLen = l..(nums)+1
         ___ i __ r..(l..(sums)):
-            end = self.binarySearch(i+1, l..(sums)-1, sums[i]+s, sums)
+            end = binarySearch(i+1, l..(sums)-1, sums[i]+s, sums)
             __ end __ l..(sums):
                 break
             minLen = m..(minLen, end-i)
@@ -49,7 +49,7 @@ class Solution(object):
                 low = mid+1
         r.. low
     
-    ___ test(self):
+    ___ test
         testCases = [
             (7, [2, 3, 1, 2, 4, 3]),
             (4, [1, 4, 4]),
@@ -58,9 +58,9 @@ class Solution(object):
         ___ s, nums __ testCases:
             print('nums: %s' % (nums))
             print('s: %s' % (s))
-            result = self.minSubArrayLen(s, nums)
+            result = minSubArrayLen(s, nums)
             print('result: %s' % (result))
-            resultBS = self.minSubArrayLenBS(s, nums)
+            resultBS = minSubArrayLenBS(s, nums)
             print('resultBS: %s' % (resultBS))
             print('-='*20+'-')
 

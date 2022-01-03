@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: num: a non negative integer number
     @return: an array represent the number of 1's in their binary

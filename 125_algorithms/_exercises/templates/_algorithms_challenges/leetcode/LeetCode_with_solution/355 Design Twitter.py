@@ -43,31 +43,31 @@ __author__ = 'Daniel'
 SZ = 10
 
 
-class Tweet(object):
+c_ Tweet(object):
     central_clk = 0
 
-    ___ __init__(self, id, nxt_ N..
-        self.timestamp = Tweet.central_clk
-        self.id = id
-        self.next = nxt  # LinkedList
+    ___ - , id, nxt_ N..
+        timestamp = Tweet.central_clk
+        id = id
+        next = nxt  # LinkedList
         Tweet.central_clk += 1
 
     ___ __cmp__(self, other):
-        r.. - (self.timestamp - other.timestamp)
+        r.. - (timestamp - other.timestamp)
 
 
-class Twitter(object):
+c_ Twitter(object):
     """
     need assumption about the frequency of calls of each method
 
     most efficient heap of list
     """
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.tweets = defaultdict(l....: N..)
-        self.followees = defaultdict(set)
+        tweets = defaultdict(l....: N..)
+        followees = defaultdict(set)
 
     ___ postTweet(self, userId, tweetId):
         """
@@ -76,8 +76,8 @@ class Twitter(object):
         :type tweetId: int
         :rtype: void
         """
-        nxt = self.tweets[userId]  # previous post
-        self.tweets[userId] = Tweet(tweetId, nxt)
+        nxt = tweets[userId]  # previous post
+        tweets[userId] = Tweet(tweetId, nxt)
 
     ___ getNewsFeed(self, userId):
         """
@@ -87,13 +87,13 @@ class Twitter(object):
         :rtype: List[int]
         """
         h    # list
-        __ userId n.. __ self.followees[userId] a.. self.tweets[userId]:
+        __ userId n.. __ followees[userId] a.. tweets[userId]:
             # possible following oneself
-            heapq.heappush(h, self.tweets[userId])
+            heapq.heappush(h, tweets[userId])
 
-        ___ followee __ self.followees[userId]:
-            __ self.tweets[followee]:
-                heapq.heappush(h, self.tweets[followee])
+        ___ followee __ followees[userId]:
+            __ tweets[followee]:
+                heapq.heappush(h, tweets[followee])
 
         ret    # list
         w.... h a.. l..(ret) < SZ:
@@ -111,7 +111,7 @@ class Twitter(object):
         :type followeeId: int
         :rtype: void
         """
-        self.followees[followerId].add(followeeId)
+        followees[followerId].add(followeeId)
 
     ___ unfollow(self, followerId, followeeId):
         """
@@ -120,7 +120,7 @@ class Twitter(object):
         :type followeeId: int
         :rtype: void
         """
-        self.followees[followerId].discard(followeeId)  # no KeyError compared to .remove()
+        followees[followerId].discard(followeeId)  # no KeyError compared to .remove()
 
 
 # Your Twitter object will be instantiated and called as such:

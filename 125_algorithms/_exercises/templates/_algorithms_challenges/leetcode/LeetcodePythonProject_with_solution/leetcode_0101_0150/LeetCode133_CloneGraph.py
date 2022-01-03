@@ -4,12 +4,12 @@ Created on Feb 8, 2017
 @author: MT
 '''
 # Definition for a undirected graph node
-class UndirectedGraphNode:
-    ___ __init__(self, x):
-        self.label = x
-        self.neighbors    # list
+c_ UndirectedGraphNode:
+    ___ - , x):
+        label = x
+        neighbors    # list
 
-class Solution:
+c_ Solution:
     # @param node, a undirected graph node
     # @return a undirected graph node
     ___ cloneGraph(self, node):

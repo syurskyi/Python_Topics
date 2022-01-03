@@ -3,27 +3,27 @@ _______ unittest
 ____ crypto_square _______ encode
 
 
-class CryptoSquareTest(unittest.TestCase):
+c_ CryptoSquareTest(unittest.TestCase):
 
-    ___ test_empty_string(self):
-        self.assertEqual('', encode(''))
+    ___ test_empty_string
+        assertEqual('', encode(''))
 
-    ___ test_perfect_square(self):
-        self.assertEqual('ac bd', encode('ABCD'))
+    ___ test_perfect_square
+        assertEqual('ac bd', encode('ABCD'))
 
-    ___ test_small_imperfect_square(self):
-        self.assertEqual('tis hsy ie sa', encode('This is easy!'))
+    ___ test_small_imperfect_square
+        assertEqual('tis hsy ie sa', encode('This is easy!'))
 
-    ___ test_punctuation_and_numbers(self):
+    ___ test_punctuation_and_numbers
         msg = "1, 2, 3, Go! Go, for God's sake!"
         ciph = '1gga 2ook 3fde gos ors'
-        self.assertEqual(ciph, encode(msg))
+        assertEqual(ciph, encode(msg))
 
-    ___ test_long_string(self):
+    ___ test_long_string
         msg = ("If man was meant to stay on the ground, god would have given "
                "us roots.")
         ciph = "imtgdvs fearwer mayoogo anouuio ntnnlvt wttddes aohghn sseoau"
-        self.assertEqual(ciph, encode(msg))
+        assertEqual(ciph, encode(msg))
 
 
 __ __name__ __ '__main__':

@@ -14,7 +14,7 @@ Note: If there are several possible values for h, the maximum one is taken as th
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ hIndex(self, A):
         """
         Determine the range of output (i.e. h-index):

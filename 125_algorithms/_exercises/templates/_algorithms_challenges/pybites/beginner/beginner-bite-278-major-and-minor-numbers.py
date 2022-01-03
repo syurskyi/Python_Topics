@@ -38,13 +38,13 @@ ___ major_n_minor(numbers):
         except:
             d[num] = 1
     #print(d)
-    d.. = {}
+    d..    # dict
     ___ num __ numbers:
         try:
             d..[num] += 1
         except:
             d..[num] = 1
-    s.. = s..(d...items(), key=l.... x: x[1] )
+    s.. = s..(d...i.., key=l.... x: x[1] )
     r.. s..[-1][0], s..[0][0]
     # difference between for i in d:
     # for i in d.items(): ?

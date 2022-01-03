@@ -1,7 +1,7 @@
 ____ heapq _______ heappush, heappop
 
 
-class Solution:
+c_ Solution:
     """
     @param A: the numbers
     @return: the minimum cost

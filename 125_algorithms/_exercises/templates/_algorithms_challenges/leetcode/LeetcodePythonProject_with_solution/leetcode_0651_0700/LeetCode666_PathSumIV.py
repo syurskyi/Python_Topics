@@ -3,21 +3,21 @@ Created on Oct 10, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ pathSum(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
         __ n.. nums: r.. 0
-        hashmap = {}
+        hashmap    # dict
         ___ num __ nums:
             key = num//10
             value = num%10
             hashmap[key] = value
-        self.sumVal = 0
-        self.traverse(nums[0]//10, 0, hashmap)
-        r.. self.sumVal
+        sumVal = 0
+        traverse(nums[0]//10, 0, hashmap)
+        r.. sumVal
     
     ___ traverse(self, root, preSum, hashmap):
         level = root//10
@@ -26,14 +26,14 @@ class Solution(object):
         right = (level+1)*10+pos*2
         curSum = preSum + hashmap[root]
         __ left n.. __ hashmap a.. right n.. __ hashmap:
-            self.sumVal += curSum
+            sumVal += curSum
             r..
         __ left __ hashmap:
-            self.traverse(left, curSum, hashmap)
+            traverse(left, curSum, hashmap)
         __ right __ hashmap:
-            self.traverse(right, curSum, hashmap)
+            traverse(right, curSum, hashmap)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [113, 215, 221],
             [113, 221],
@@ -41,7 +41,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.pathSum(nums)
+            result = pathSum(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

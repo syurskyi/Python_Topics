@@ -10,7 +10,7 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 """
 
 
-class Solution:
+c_ Solution:
     ___ int(self, n):
         r.. ord(n) - ord("0")
 
@@ -31,9 +31,9 @@ class Solution:
         idx = 0
         w.... idx < l..(num2):
             __ idx < l..(num1):
-                s = self.int(num1[idx]) + self.int(num2[idx]) + carry
+                s = int(num1[idx]) + int(num2[idx]) + carry
             ____:
-                s = self.int(num2[idx]) + carry
+                s = int(num2[idx]) + carry
 
             __ s >= 10:
                 s -= 10
@@ -47,7 +47,7 @@ class Solution:
         __ carry:
             ret.a..(carry)
 
-        r.. "".join(map(s.., ret[::-1]))
+        r.. "".j..(map(s.., ret[::-1]))
 
 
 __ __name__ __ "__main__":

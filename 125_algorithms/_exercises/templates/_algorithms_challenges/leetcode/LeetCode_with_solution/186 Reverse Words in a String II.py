@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ reverseWords(self, s):
         """
         in-place without allocating extra space
@@ -12,14 +12,14 @@ class Solution(object):
         :type s: a list of 1 length strings (List[str])
         :rtype: nothing
         """
-        self.reverse(s, 0, l..(s))
+        reverse(s, 0, l..(s))
         i = 0
         w.... i < l..(s):
             j = i+1
             w.... j < l..(s) a.. s[j] != " ":
                 j += 1
 
-            self.reverse(s, i, j)
+            reverse(s, i, j)
             i = j+1
 
     ___ reverse(self, s, start, end):
@@ -33,4 +33,4 @@ class Solution(object):
 __ __name__ __ "__main__":
     lst = l..("the sky is blue")
     Solution().reverseWords(lst)
-    ... "".join(lst) __ "blue is sky the"
+    ... "".j..(lst) __ "blue is sky the"

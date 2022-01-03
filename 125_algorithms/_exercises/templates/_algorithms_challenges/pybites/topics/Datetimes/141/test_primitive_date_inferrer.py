@@ -154,7 +154,7 @@ ___ test_different_enum():
     # import the module with the tested code which contains the original emum
     _______ primitive_date_inferrer as pdi
 
-    class DateFormat_ext(Enum):
+    c_ DateFormat_ext(Enum):
         DDMMYYYY = 0
         DDMMYY = 1
         YYMMDD = 2

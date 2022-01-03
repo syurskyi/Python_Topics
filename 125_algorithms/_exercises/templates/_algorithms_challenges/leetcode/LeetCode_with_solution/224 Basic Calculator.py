@@ -15,7 +15,7 @@ Note: Do not use the eval built-in library function.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ calculate(self, s):
         """
         * infix to postfix
@@ -23,9 +23,9 @@ class Solution:
         :type s: str
         :rtype: int
         """
-        lst = self.to_list(s)
-        postfix = self.infix2postfix(lst)
-        r.. self.eval_postfix(postfix)
+        lst = to_list(s)
+        postfix = infix2postfix(lst)
+        r.. eval_postfix(postfix)
 
     ___ to_list(self, s):
         i = 0
@@ -59,7 +59,7 @@ class Solution:
                     ret.a..(stk.pop())
                 stk.pop()
             ____:  # generalized to include * and /
-                w.... stk a.. self.precendece(elt) <= self.precendece(stk[-1]):
+                w.... stk a.. precendece(elt) <= precendece(stk[-1]):
                     ret.a..(stk.pop())
 
                 stk.a..(elt)

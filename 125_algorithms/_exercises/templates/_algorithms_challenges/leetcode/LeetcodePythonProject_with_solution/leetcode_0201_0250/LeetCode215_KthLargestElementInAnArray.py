@@ -3,7 +3,7 @@ Created on Feb 20, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findKthLargest(self, nums, k):
         """
         :type nums: List[int]
@@ -15,7 +15,7 @@ class Solution(object):
         __ k < 1 o. n.. nums:
             r.. 0
         k = l..(nums)-k
-        r.. self.helper(nums, 0, l..(nums)-1, k)
+        r.. helper(nums, 0, l..(nums)-1, k)
     
     ___ helper(self, nums, i, j, k):
         i0, j0 = i, j
@@ -33,9 +33,9 @@ class Solution(object):
         __ i __ k:
             r.. nums[i]
         ____ i < k:
-            r.. self.helper(nums, i+1, j0, k)
+            r.. helper(nums, i+1, j0, k)
         ____:
-            r.. self.helper(nums, i0, i-1, k)
+            r.. helper(nums, i0, i-1, k)
     
     ___ findKthLargestHeap(self, nums, k):
         """
@@ -49,7 +49,7 @@ class Solution(object):
             result = heapq.heappop(nums)
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([2, 1], 1),
             ([3,2,1,5,6,4], 5),
@@ -58,9 +58,9 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
-            result = self.findKthLargest(nums, k)
+            result = findKthLargest(nums, k)
             print('result: %s' % (result))
-            resultHeap = self.findKthLargestHeap(nums, k)
+            resultHeap = findKthLargestHeap(nums, k)
             print('resultHeap: %s' % (resultHeap))
             print('-='*20+'-')
 

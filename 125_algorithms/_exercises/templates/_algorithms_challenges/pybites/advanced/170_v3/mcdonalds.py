@@ -9,11 +9,11 @@ pd.options.mode.chained_assignment = N..  # ignore warnings
 
 ___ get_food_most_calories(df=df):
     """Return the food "Item" string with most calories"""
-    s = df.sort_values(by='Calories', ascending=False)
+    s = df.sort_values(by='Calories', ascending=F..)
     r.. s['Item'].head(1).values
 
 
-___ get_bodybuilder_friendly_foods(df=df, excl_drinks=False):
+___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..):
     """Calulate the Protein/Calories ratio of foods and return the
        5 foods with the best ratio.
 
@@ -28,5 +28,5 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=False):
     __ excl_drinks:
         s = s[~s.Category.isin(['Coffee & Tea', 'Beverages'])]
     s['Ratio'] = s.Protein / s.Calories
-    s = s.sort_values(by='Ratio', ascending=False)
+    s = s.sort_values(by='Ratio', ascending=F..)
     r.. s['Item'].head(5).values

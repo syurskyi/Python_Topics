@@ -11,7 +11,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ sortedListToBST(self, head):
     """
     :type head: ListNode
@@ -27,6 +27,6 @@ class Solution(object):
       root = TreeNode(slow.val)
       __ pre:
         pre.next = N..
-        root.left = self.sortedListToBST(head)
-      root.right = self.sortedListToBST(slow.next)
+        root.left = sortedListToBST(head)
+      root.right = sortedListToBST(slow.next)
       r.. root

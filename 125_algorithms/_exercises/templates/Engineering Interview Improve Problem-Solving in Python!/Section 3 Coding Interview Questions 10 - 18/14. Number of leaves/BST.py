@@ -1,26 +1,26 @@
-class Node:
+c_ Node:
     val  0
     left  0
     right  0
-    ___ __init__(self, val):
-        self.val  val
+    ___ - , val):
+        val  val
 
-class BST:
+c_ BST:
     
-    ___ __init__(self, val):
-        self.root  Node(val)
+    ___ - , val):
+        root  Node(val)
 
     ___ insert(self, val, node):
         __ node.val < val:
             __ node.right:
                 #go right
-                self.insert(val, node.right)
+                insert(val, node.right)
             ____:
                 node.right  Node(val) #insert
         ____ val < node.val:
             __ node.left:
                 #go left
-                self.insert(val, node.left)
+                insert(val, node.left)
             ____:
                 node.left  Node(val)
         ____:
@@ -28,18 +28,18 @@ class BST:
 
     ___ number_of_leaves(self, node):
         __ node.left a.. node.right:
-            r.. self.number_of_leaves(node.left) + self.number_of_leaves(node.right)
+            r.. number_of_leaves(node.left) + number_of_leaves(node.right)
         ____ node.left:
-            r.. self.number_of_leaves(node.left)
+            r.. number_of_leaves(node.left)
         ____ node.right:
-            r.. self.number_of_leaves(node.right)
+            r.. number_of_leaves(node.right)
         ____:
             #leave
             r.. 1
     
-    ___ number_of_leaves_i(self):
+    ___ number_of_leaves_i
         leaves  0
-        nodes  [self.root]
+        nodes  [root]
         w___ nodes:
             node  nodes[0]
             __ node.left:
@@ -53,20 +53,20 @@ class BST:
 
     ___ height(self, node):
         __ node.left a.. node.right:
-            print(node.val, " Height of left ", self.height(node.left)," Hegiht of right ", self.height(node.right))
-            r.. 1 + max(self.height(node.left), self.height(node.right))
+            print(node.val, " Height of left ", height(node.left)," Hegiht of right ", height(node.right))
+            r.. 1 + max(height(node.left), height(node.right))
         ____ node.left:
             #print(node.val, self.height(node.left))
-            r.. 1 + self.height(node.left)
+            r.. 1 + height(node.left)
         ____ node.right:
             #print(node.val, self.height(node.right))
-            r.. 1 + self.height(node.right)
+            r.. 1 + height(node.right)
         ____:
             #print(node.val)
             r.. 1
 
     ___ is_identical(self, second_root):
-        nodes1  [self.root]
+        nodes1  [root]
         nodes2  [second_root]
         w___ nodes1 a.. nodes2:
             node  nodes1[0]

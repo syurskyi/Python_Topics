@@ -2,14 +2,14 @@ ____ collections _______ n..
 _______ os
 _______ pickle
 _______ urllib.request
-_______ re
+_______ __
 
 # prework
 # download pickle file and store it in a tmp file
 pkl_file = 'pycon_videos.pkl'
 data = f'https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
 tmp = os.getenv("TMP", "/tmp")
-pycon_videos = os.path.join(tmp, pkl_file)
+pycon_videos = os.path.j..(tmp, pkl_file)
 urllib.request.urlretrieve(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
@@ -52,7 +52,7 @@ ___ get_talks_lt_twentyfour_min(videos):
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
 
-    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. int(re.search(r"(\d+)M",video.duration).group(1)) < 24)]
+    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. int(__.s..(r"(\d+)M",video.duration).group(1)) < 24)]
 
 
 __ __name__ __ "__main__":

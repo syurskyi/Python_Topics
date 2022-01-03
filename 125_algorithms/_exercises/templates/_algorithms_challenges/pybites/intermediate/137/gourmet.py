@@ -112,7 +112,7 @@ ___ best_match_per_wine(wine_type="all"):
     ___ wine __ wines:
         ___ cheese __ CHEESES:
 
-            match_score = s..((Counter(wine.lower()) & Counter(cheese.lower()
+            match_score = s..((Counter(wine.lower()) & Counter(cheese.l..
             )).values())
             similarity_score = match_score / (1 + pow(l..(wine) - l..(cheese), 2))
 
@@ -136,17 +136,17 @@ ___ match_wine_5cheeses():
     ]
     """
     all_wines = RED_WINES + WHITE_WINES + SPARKLING_WINES
-    wine_match_scoring = {}
+    wine_match_scoring    # dict
     ___ wine __ all_wines:
         wine_match_scoring[wine]    # list
         ___ cheese __ CHEESES:
-            match_score = s..((Counter(wine.lower()) & Counter(cheese.lower()
+            match_score = s..((Counter(wine.lower()) & Counter(cheese.l..
             )).values())
             similarity_score = match_score / (1 + pow(l..(wine) - l..(cheese), 2))
             wine_match_scoring[wine].a..((cheese, similarity_score))
 
     best_5matches    # list
-    ___ wine, cheeses_scored __ wine_match_scoring.items():
+    ___ wine, cheeses_scored __ wine_match_scoring.i..:
         cheese = s..(cheeses_scored, key=operator.itemgetter(1), r.._T..[:10]
         cheese = s..(cheese, key=l.... x: (-x[1], x[0]))[:5]
         best_5matches.a..((wine, [name ___ name, score __ cheese]))

@@ -29,8 +29,8 @@ ___ grouping2():
 
 
 ___ test_return_type(grouping1, grouping2):
-    ... type(grouping1) __ defaultdict
-    ... type(grouping2) __ defaultdict
+    ... t..(grouping1) __ defaultdict
+    ... t..(grouping2) __ defaultdict
 
 
 ___ test_return_dict_len(grouping1, grouping2):

@@ -12,7 +12,7 @@ the ans is `S[i] - S[queue[0]]`
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: an array of integers
     @param: k1: An integer

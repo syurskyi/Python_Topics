@@ -8,5 +8,5 @@ ___ progressionCalc(calculations):
         ___ x __ r..(c):
             total += (a + (b*x))
         answer.a..(s..(total))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 progressionCalc(input())

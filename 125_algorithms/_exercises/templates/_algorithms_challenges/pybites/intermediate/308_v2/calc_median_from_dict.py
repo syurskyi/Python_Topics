@@ -11,11 +11,11 @@ ___ calc_median_from_dict(d: d..) -> float:
 
     total_values = s..(d.values())
 
-    odd = False
+    odd = F..
     __ total_values % 2 __ 0:
         median_count = total_values//2
     ____:
-        odd = True
+        odd = T..
         median_count = total_values//2 + 1
 
 

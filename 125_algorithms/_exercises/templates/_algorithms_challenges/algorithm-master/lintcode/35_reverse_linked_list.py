@@ -9,7 +9,7 @@ class ListNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: head: n
     @return: The new head of reversed linked list.

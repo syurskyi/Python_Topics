@@ -3,7 +3,7 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ checkValidString(self, s):
         """
         :type s: str
@@ -23,10 +23,10 @@ class Solution(object):
                     low -= 1
                 high += 1
             __ high < 0:
-                r.. False
+                r.. F..
         r.. low __ 0
     
-    ___ test(self):
+    ___ test
         testCases = [
             '()',
             '(*)',
@@ -36,7 +36,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.checkValidString(s)
+            result = checkValidString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

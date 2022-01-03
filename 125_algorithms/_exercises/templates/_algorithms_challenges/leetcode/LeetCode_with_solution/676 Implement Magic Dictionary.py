@@ -19,69 +19,69 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class MagicDictionary:
+c_ MagicDictionary:
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        class Node:
-            ___ __init__(self, chr):
-                self.chr = chr
-                self.end = False  # a word ends here
-                self.children = defaultdict(l....: N..)
+        c_ Node:
+            ___ - , chr):
+                chr = chr
+                end = F..  # a word ends here
+                children = defaultdict(l....: N..)
 
-        class Trie:
-            ___ __init__(self):
-                self.root = Node(N..)
+        c_ Trie:
+            ___ - ):
+                root = Node(N..)
 
             ___ insert(self, cur, s, i):
                 __ n.. cur:
                     cur = Node(s[i])
 
                 __ i __ l..(s) -1:
-                    cur.end = True
+                    cur.end = T..
                 ____:
                     nxt = s[i+1]
-                    cur.children[nxt] = self.insert(cur.children[nxt], s, i + 1)
+                    cur.children[nxt] = insert(cur.children[nxt], s, i + 1)
 
                 r.. cur
 
-            ___ search(self, cur, s, i, modified):
+            ___ s..(self, cur, s, i, modified):
                 __ cur.chr != s[i]:
                     __ modified:
-                        r.. False
-                    modified = True
+                        r.. F..
+                    modified = T..
 
                 __ i __ l..(s) - 1:
                     # modified exactly once and have a word ends here 
                     r.. modified a.. cur.end
 
-                ___ child __ cur.children.values():
-                    __ self.search(child, s, i + 1, modified):
-                        r.. True
+                ___ child __ cur.children.v..
+                    __ s..(child, s, i + 1, modified):
+                        r.. T..
 
-                r.. False
+                r.. F..
 
-        self.trie = Trie()
+        trie = Trie()
 
     ___ buildDict(self, dic: List[s..]) -> N..
         """
         Build a dictionary through a list of words
         """
         ___ s __ dic:
-            root = self.trie.root
-            root.children[s[0]] = self.trie.insert(root.children[s[0]], s, 0)
+            root = trie.root
+            root.children[s[0]] = trie.insert(root.children[s[0]], s, 0)
 
-    ___ search(self, word: s..) -> bool:
+    ___ s..(self, word: s..) -> bool:
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         """
-        ___ child __ self.trie.root.children.values():
-            __ self.trie.search(child, word, 0, False):
-                r.. True
+        ___ child __ trie.root.children.v..
+            __ trie.s..(child, word, 0, F..):
+                r.. T..
 
-        r.. False
+        r.. F..
 
 
 # Your MagicDictionary object will be instantiated and called as such:

@@ -3,7 +3,7 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ smallestDistancePair(self, nums, k):
         """
         :type nums: List[int]
@@ -18,7 +18,7 @@ class Solution(object):
         high = nums[-1]-nums[0]
         w.... low < high:
             mid = (low+high)//2
-            __ self.countPair(nums, mid) < k:
+            __ countPair(nums, mid) < k:
                 low = mid+1
             ____:
                 high = mid
@@ -28,7 +28,7 @@ class Solution(object):
         n = l..(nums)
         res = 0
         ___ i __ r..(n):
-            res += self.upperBound(nums, i, n-1, nums[i]+mid)-i-1
+            res += upperBound(nums, i, n-1, nums[i]+mid)-i-1
         r.. res
     
     ___ upperBound(self, nums, low, high, key):
@@ -52,7 +52,7 @@ class Solution(object):
             res += j-i-1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 3, 1],
@@ -66,7 +66,7 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = self.smallestDistancePair(nums, k)
+            result = smallestDistancePair(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

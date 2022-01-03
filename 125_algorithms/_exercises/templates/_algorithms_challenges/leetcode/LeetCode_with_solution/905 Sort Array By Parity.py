@@ -22,7 +22,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ sortArrayByParity(self, A: List[int]) -> List[int]:
         """
         pointer

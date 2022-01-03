@@ -1,11 +1,11 @@
 __author__ = 'Danyang'
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution:
+c_ Solution:
     # ascending
     ___ insertionSortList_TLE(self, head):
         """

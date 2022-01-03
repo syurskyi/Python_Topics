@@ -19,7 +19,7 @@ ___ my_print_game_stats(games_won=games_won):
        print how many games each person has won, pluralize
        'game' based on number"""
     print(games_won)
-    ___ key, value __ games_won.items():
+    ___ key, value __ games_won.i..:
         __ value __ 1:
             print(f"{key} has won {value} game")
         ____:
@@ -31,7 +31,7 @@ ___ print_game_stats(games_won=games_won):
     """Loop through games_won's dict k, v pairs (items) and
        print how many games each person has won, pluralize
        'game' based on number"""
-    ___ name, num_games __ games_won.items():
+    ___ name, num_games __ games_won.i..:
         games = "game" __ num_games __ 1 ____ "games"
         print(f'{name} has won {num_games} {games}')
 

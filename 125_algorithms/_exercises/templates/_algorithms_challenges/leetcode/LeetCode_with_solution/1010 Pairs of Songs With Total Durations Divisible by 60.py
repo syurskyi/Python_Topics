@@ -28,7 +28,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ numPairsDivisibleBy60(self, time: List[int]) -> int:
         """
         Running attribution
@@ -55,7 +55,7 @@ class Solution:
             hm[t % 60] += 1
 
         ret = 0
-        ___ k, v __ hm.items():
+        ___ k, v __ hm.i..:
             __ k __ 0:
                 ret += (v * (v - 1)) // 2
             ____ k <= 60 - k:  # attribution

@@ -9,7 +9,7 @@ You may not engage in multiple transactions at the same time (ie, you must sell 
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ maxProfit(self, k, prices):
         """
         DP
@@ -22,7 +22,7 @@ class Solution:
         """
         n = l..(prices)
         __ k >= n:
-            r.. self.maxProfit_unlimited_transactions(prices)
+            r.. maxProfit_unlimited_transactions(prices)
 
         l = [0 ___ _ __ xrange(k+1)]  # local max
         g = [0 ___ _ __ xrange(k+1)]  # global max

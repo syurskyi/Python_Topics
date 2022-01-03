@@ -3,7 +3,7 @@ Created on Mar 13, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ areSentencesSimilarTwo(self, words1, words2, pairs):
         """
         :type words1: List[str]
@@ -12,8 +12,8 @@ class Solution(object):
         :rtype: bool
         """
         __ l..(words1) != l..(words2):
-            r.. False
-        pairInfo = {}
+            r.. F..
+        pairInfo    # dict
         ___ p __ pairs:
             __ p[0] n.. __ pairInfo:
                 pairInfo[p[0]] = set()
@@ -25,19 +25,19 @@ class Solution(object):
             __ w1 __ w2:
                 continue
             __ w1 n.. __ pairInfo:
-                r.. False
-            __ n.. self.dfs(w1, w2, pairInfo, set()):
-                r.. False
-        r.. True
+                r.. F..
+            __ n.. dfs(w1, w2, pairInfo, set()):
+                r.. F..
+        r.. T..
     
     ___ dfs(self, source, target, pairInfo, visited):
         __ target __ pairInfo.get(source, set()):
-            r.. True
+            r.. T..
         visited.add(source)
         ___ nextWord __ pairInfo.get(source, set()):
-            __ nextWord n.. __ visited a.. self.dfs(nextWord, target, pairInfo, visited):
-                r.. True
-        r.. False
+            __ nextWord n.. __ visited a.. dfs(nextWord, target, pairInfo, visited):
+                r.. T..
+        r.. F..
     
     # This is Exceeding Time Limit
     ___ areSentencesSimilarTwo_own(self, words1, words2, pairs):
@@ -48,8 +48,8 @@ class Solution(object):
         :rtype: bool
         """
         __ l..(words1) != l..(words2):
-            r.. False
-        hashmap = {}
+            r.. F..
+        hashmap    # dict
         n = 0
         l    # list
         ___ p __ pairs:
@@ -63,27 +63,27 @@ class Solution(object):
                 n += 1
         roots = [-1]*n
         ___ p __ pairs:
-            root0 = self.getRoot(roots, hashmap[p[0]])
-            root1 = self.getRoot(roots, hashmap[p[1]])
+            root0 = getRoot(roots, hashmap[p[0]])
+            root1 = getRoot(roots, hashmap[p[1]])
             roots[root0] = root1
         ___ w1, w2 __ z..(words1, words2):
             __ w1 __ w2:
                 continue
             ____ w1 n.. __ hashmap o. w2 n.. __ hashmap:
-                r.. False
+                r.. F..
             ____:
-                r1 = self.getRoot(roots, hashmap[w1])
-                r2 = self.getRoot(roots, hashmap[w2])
+                r1 = getRoot(roots, hashmap[w1])
+                r2 = getRoot(roots, hashmap[w2])
                 __ r1 != r2:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..
     
     ___ getRoot(self, roots, ind):
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["great", "acting", "skills"],
@@ -112,7 +112,7 @@ class Solution(object):
             ],
         ]
         ___ words1, words2, pairs __ testCases:
-            result = self.areSentencesSimilarTwo(words1, words2, pairs)
+            result = areSentencesSimilarTwo(words1, words2, pairs)
             print('result: %s' % result)
             print('-='*30+'-')
 

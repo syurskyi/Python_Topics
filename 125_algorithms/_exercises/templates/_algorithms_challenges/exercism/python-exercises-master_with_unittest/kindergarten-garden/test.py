@@ -3,37 +3,37 @@ _______ unittest
 ____ kindergarten_garden _______ Garden
 
 
-class KindergartenGardenTests(unittest.TestCase):
-    ___ test_alices_garden(self):
-        self.assertEqual(
+c_ KindergartenGardenTests(unittest.TestCase):
+    ___ test_alices_garden
+        assertEqual(
             Garden("RC\nGG").plants("Alice"),
             "Radishes Clover Grass Grass".s..())
 
-    ___ test_bob_and_charlies_gardens(self):
+    ___ test_bob_and_charlies_gardens
         garden = Garden("VVCCGG\nVVCCGG")
-        self.assertEqual(garden.plants("Bob"), ["Clover"] * 4)
-        self.assertEqual(garden.plants("Charlie"), ["Grass"] * 4)
+        assertEqual(garden.plants("Bob"), ["Clover"] * 4)
+        assertEqual(garden.plants("Charlie"), ["Grass"] * 4)
 
-    ___ test_full_garden(self):
+    ___ test_full_garden
         garden = Garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV")
-        self.assertEqual(
+        assertEqual(
             garden.plants("Alice"),
             "Violets Radishes Violets Radishes".s..())
-        self.assertEqual(
+        assertEqual(
             garden.plants("Bob"), "Clover Grass Clover Clover".s..())
-        self.assertEqual(
+        assertEqual(
             garden.plants("Kincaid"), "Grass Clover Clover Grass".s..())
-        self.assertEqual(
+        assertEqual(
             garden.plants("Larry"), "Grass Violets Clover Violets".s..())
 
-    ___ test_disordered_test(self):
+    ___ test_disordered_test
         garden = Garden(
             "VCRRGVRG\nRVGCCGCV",
             students="Samantha Patricia Xander Roger".s..())
-        self.assertEqual(
+        assertEqual(
             garden.plants("Patricia"),
             "Violets Clover Radishes Violets".s..())
-        self.assertEqual(
+        assertEqual(
             garden.plants("Xander"), "Radishes Grass Clover Violets".s..())
 
 

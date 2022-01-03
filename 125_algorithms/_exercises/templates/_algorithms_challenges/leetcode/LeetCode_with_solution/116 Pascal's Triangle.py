@@ -13,7 +13,7 @@ Return
 ]
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ generate(self, numRows):
         """
         math

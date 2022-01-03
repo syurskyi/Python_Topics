@@ -1,57 +1,57 @@
 _______ heapq
 
 
-class HashHeapq:
-    ___ __init__(self):
-        self.__heap    # list
+c_ HashHeapq:
+    ___ - ):
+        __heap    # list
 
-    ___ __repr__(self):
-        r.. repr(self.__heap)
+    ___ __repr__
+        r.. repr(__heap)
 
-    ___ __len__(self):
-        r.. l..(self.__heap)
+    ___ __len__
+        r.. l..(__heap)
 
-    ___ __bool__(self):
-        r.. bool(self.__heap)
+    ___ __bool__
+        r.. bool(__heap)
 
     ___ push(self, val):
-        heapq.heappush(self.__heap, val)
+        heapq.heappush(__heap, val)
 
-    ___ pop(self):
-        __ n.. self.__heap:
+    ___ pop
+        __ n.. __heap:
             r..
 
-        r.. heapq.heappop(self.__heap)
+        r.. heapq.heappop(__heap)
 
     ___ remove(self, val):
-        __ n.. self.__heap:
+        __ n.. __heap:
             r..
 
         i = 0
-        n = l..(self.__heap)
+        n = l..(__heap)
 
-        w.... i < n a.. self.__heap[i] != val:
+        w.... i < n a.. __heap[i] != val:
             i += 1
 
         __ i __ n:
             r..
 
         __ i __ n - 1:
-            self.__heap.pop()
+            __heap.pop()
         ____:
-            self.__heap[i] = self.__heap[-1]
-            self.__heap.pop()
-            heapq._siftup(self.__heap, i)
-            heapq._siftdown(self.__heap, 0, i)
+            __heap[i] = __heap[-1]
+            __heap.pop()
+            heapq._siftup(__heap, i)
+            heapq._siftdown(__heap, 0, i)
 
-    ___ top(self):
-        __ n.. self.__heap:
+    ___ top
+        __ n.. __heap:
             r..
 
-        r.. self.__heap[0]
+        r.. __heap[0]
 
 
-class Solution:
+c_ Solution:
     ___ medianSlidingWindow(self, nums, k):
         """
         :type nums: List[int]
@@ -63,40 +63,40 @@ class Solution:
         __ n.. nums o. k <= 0 o. l..(nums) < k:
             r.. ans
 
-        self.minheap = HashHeapq()
-        self.maxheap = HashHeapq()
+        minheap = HashHeapq()
+        maxheap = HashHeapq()
 
         ___ i __ r..(l..(nums)):
             # remove nums[i - k]
             __ i >= k:
-                __ self.minheap a.. nums[i - k] >= self.minheap.top():
-                    self.minheap.remove(nums[i - k])
+                __ minheap a.. nums[i - k] >= minheap.top():
+                    minheap.remove(nums[i - k])
                 ____:
-                    self.maxheap.remove(- nums[i - k])
+                    maxheap.remove(- nums[i - k])
 
             # add nums[i]
-            __ self.minheap a.. nums[i] >= self.minheap.top():
-                self.minheap.push(nums[i])
+            __ minheap a.. nums[i] >= minheap.top():
+                minheap.push(nums[i])
             ____:
-                self.maxheap.push(- nums[i])
+                maxheap.push(- nums[i])
 
             # get median
             __ i >= k - 1:
-                ans.a..(self.get_median())
+                ans.a..(get_median())
 
         r.. ans
 
-    ___ get_median(self):
-        __ n.. self.minheap a.. n.. self.maxheap:
+    ___ get_median
+        __ n.. minheap a.. n.. maxheap:
             r.. 0.0
 
-        w.... l..(self.minheap) > l..(self.maxheap) + 1:
-            self.maxheap.push(- self.minheap.pop())
+        w.... l..(minheap) > l..(maxheap) + 1:
+            maxheap.push(- minheap.pop())
 
-        w.... l..(self.maxheap) > l..(self.minheap):
-            self.minheap.push(- self.maxheap.pop())
+        w.... l..(maxheap) > l..(minheap):
+            minheap.push(- maxheap.pop())
 
-        __ l..(self.minheap) > l..(self.maxheap):
-            r.. self.minheap.top() * 1.0
+        __ l..(minheap) > l..(maxheap):
+            r.. minheap.top() * 1.0
 
-        r.. (self.minheap.top() - self.maxheap.top()) / 2.0
+        r.. (minheap.top() - maxheap.top()) / 2.0

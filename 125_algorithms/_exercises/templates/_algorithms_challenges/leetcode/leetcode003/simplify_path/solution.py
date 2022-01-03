@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param path, a string
     # @return a string
     ___ simplifyPath(self, path):
@@ -12,4 +12,4 @@ class Solution:
                 pass
             ____:
                 res.a..(d)
-        r.. '/' + '/'.join(res)
+        r.. '/' + '/'.j..(res)

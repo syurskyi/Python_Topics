@@ -23,7 +23,7 @@
 #        :rtype List[NestedInteger]
 #        """
 
-class Solution(object):
+c_ Solution(object):
   ___ depthSum(self, nestedList):
     """
     :type nestedList: List[NestedInteger]

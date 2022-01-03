@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: key: A string you should hash
     @param: HASH_SIZE: An integer

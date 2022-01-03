@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxSlidingWindow(self, nums, k):
     """
     :type nums: List[int]

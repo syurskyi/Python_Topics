@@ -19,7 +19,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ coinChange(self, coins, amount):
         """
         DP with early prune
@@ -47,7 +47,7 @@ class Solution(object):
         r.. F[amount] __ F[amount] != sys.maxint ____ -1
 
 
-class SolutionTLE(object):
+c_ SolutionTLE(object):
     ___ coinChange(self, coins, amount):
         """
         Let F[i] be the fewest number of coins make to i

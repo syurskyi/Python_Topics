@@ -7,7 +7,7 @@ Trie + DFS
 """
 TLE: DFS
 """
-class Solution:
+c_ Solution:
     ___ wordSquares(self, words):
         """
         :type words: list[str]
@@ -17,13 +17,13 @@ class Solution:
         __ n.. words:
             r.. ans
 
-        self.dfs(words, l..(words[0]), ans, [])
+        dfs(words, l..(words[0]), ans, [])
 
         r.. ans
 
     ___ dfs(self, words, n, ans, path):
         __ (l..(path) __ n a..
-            self.is_valid(path)):
+            is_valid(path)):
             ans.a..(path[:])
             r..
 
@@ -32,16 +32,16 @@ class Solution:
 
         ___ i __ r..(l..(words)):
             path.a..(words[i])
-            self.dfs(words, n, ans, path)
+            dfs(words, n, ans, path)
             path.pop()
 
     ___ is_valid(self, path):
         __ n.. path o. l..(path) != l..(path[0]):
-            r.. False
+            r.. F..
 
         ___ i __ r..(1, l..(path)):
             ___ j __ r..(i):
                 __ path[i][j] != path[j][i]:
-                    r.. False
+                    r.. F..
 
-        r.. True
+        r.. T..

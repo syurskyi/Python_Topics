@@ -1,5 +1,5 @@
 # Reverse bit every 4 bits
-class Solution:
+c_ Solution:
     # @param n, an integer
     # @return an integer
     ___ reverseBits(self, n):
@@ -21,7 +21,7 @@ class Solution:
 
 
 # Reverse bit every 1 bits
-class Solution:
+c_ Solution:
     # @param n, an integer
     # @return an integer
     ___ reverseBits(self, n):

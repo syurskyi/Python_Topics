@@ -3,7 +3,7 @@ Created on Jun 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ combinationSum(self, candidates, target):
         """
         :type candidates: List[int]
@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         res    # list
-        self.helper(candidates, 0, [], target, res)
+        helper(candidates, 0, [], target, res)
         r.. res
     
     ___ helper(self, nums, ind, curr, target, res):
@@ -22,5 +22,5 @@ class Solution(object):
             r..
         ___ i __ r..(ind, l..(nums)):
             curr.a..(nums[i])
-            self.helper(nums, i, curr, target-nums[i], res)
+            helper(nums, i, curr, target-nums[i], res)
             curr.pop()

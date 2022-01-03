@@ -19,5 +19,5 @@ ___ check_anagram():
                                # the word is not the exact word, count it.
         answer.a..(s..(count)) # Store answer and reset for next word.
         anagram_count = 0
-    print(' '.join(answer))
+    print(' '.j..(answer))
 check_anagram()

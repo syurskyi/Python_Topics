@@ -4,7 +4,7 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ spiralOrder(self, matrix):
         """
         :type matrix: List[List[int]]
@@ -44,7 +44,7 @@ class Solution(object):
         
         r.. result
     
-    ___ test(self):
+    ___ test
         matrixes = [
             [
                 [ 1, 2, 3 ],
@@ -73,7 +73,7 @@ class Solution(object):
         
         ___ matrix __ matrixes:
             print(matrix)
-            result = self.spiralOrder(matrix)
+            result = spiralOrder(matrix)
             print(result)
             print('-='*15+'-')
 

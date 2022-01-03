@@ -3,16 +3,16 @@ Created on May 14, 2018
 
 @author: tongq
 '''
-class WordDistance(object):
+c_ WordDistance(object):
 
-    ___ __init__(self, words):
+    ___ - , words):
         """
         :type words: List[str]
         """
-        hashmap = {}
+        hashmap    # dict
         ___ i, word __ e..(words):
             hashmap[word] = hashmap.get(word, [])+[i]
-        self.hashmap = hashmap
+        hashmap = hashmap
     
     ___ shortest(self, word1, word2):
         """
@@ -22,7 +22,7 @@ class WordDistance(object):
         """
         i, j = 0, 0
         res = float('inf')
-        arr1, arr2 = self.hashmap[word1], self.hashmap[word2]
+        arr1, arr2 = hashmap[word1], hashmap[word2]
         w.... i < l..(arr1) a.. j < l..(arr2):
             res = m..(res, abs(arr1[i]-arr2[j]))
             __ arr1[i] > arr2[j]:

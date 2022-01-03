@@ -44,7 +44,7 @@ ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
        'Illinois' returns 'IL'.
        If the state is not in the dict, return 'N/A' which we stored
        in the NOT_FOUND constant (takeaway: dicts are great for lookups)"""
-    __ state_name n.. __ us_state_abbrev.keys():
+    __ state_name n.. __ us_state_abbrev.k..:
         r.. NOT_FOUND
     ____:
         r.. us_state_abbrev[state_name]

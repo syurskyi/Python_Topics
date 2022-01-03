@@ -13,4 +13,4 @@ ___ common_words(sentence1: List[s..], sentence2: List[s..]) -> List[s..]:
 
 
 
-    r.. s..(l..(set(word.lower() ___ word __ sentence1) & set(word.lower() ___ word __ sentence2)),key=l..)
+    r.. s..(l..(set(word.l.. ___ word __ sentence1) & set(word.l.. ___ word __ sentence2)),key=l..)

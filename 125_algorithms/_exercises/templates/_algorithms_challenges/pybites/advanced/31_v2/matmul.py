@@ -1,14 +1,14 @@
-class Matrix(object):
+c_ Matrix(object):
 
-    ___ __init__(self, values):
-        self._values = values
+    ___ - , values):
+        _values = values
 
-    ___ __repr__(self):
-        r.. f'<Matrix values="{self.values}">'
+    ___ __repr__
+        r.. f'<Matrix values="{values}">'
 
-    @property
-    ___ values(self):
-        r.. self._values
+    $
+    ___ values
+        r.. _values
 
     @staticmethod
     ___ _matrix_mult(mat1, mat2):
@@ -16,11 +16,11 @@ class Matrix(object):
         r.. result
 
     ___ __matmul__(self, other):
-        r.. Matrix(self._matrix_mult(self.values, other.values))
+        r.. Matrix(_matrix_mult(values, other.values))
 
     ___ __rmatmul__(self, other):
-        r.. Matrix(self._matrix_mult(other.values, self.values))
+        r.. Matrix(_matrix_mult(other.values, values))
 
     ___ __imatmul__(self, other):
-        self._values = self._matrix_mult(self.values, other.values)
+        _values = _matrix_mult(values, other.values)
         r.. self

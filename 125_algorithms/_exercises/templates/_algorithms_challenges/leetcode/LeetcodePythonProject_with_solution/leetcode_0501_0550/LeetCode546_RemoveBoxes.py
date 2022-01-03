@@ -4,7 +4,7 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ removeBoxes(self, boxes):
         """
         :type boxes: List[int]
@@ -13,7 +13,7 @@ class Solution(object):
         __ n.. boxes: r.. 0
         n = l..(boxes)
         dp = [[[0]*n ___ _ __ r..(n)] ___ _ __ r..(n)]
-        r.. self.helper(dp, boxes, 0, n-1, 1)
+        r.. helper(dp, boxes, 0, n-1, 1)
     
     ___ helper(self, dp, boxes, i, j, k):
         __ i > j:
@@ -23,21 +23,21 @@ class Solution(object):
         ____ dp[i][j][k] != 0:
             r.. dp[i][j][k]
         ____:
-            tmp = self.helper(dp, boxes, i+1, j, 1) + k*k
+            tmp = helper(dp, boxes, i+1, j, 1) + k*k
             ___ m __ r..(i+1, j+1):
                 __ boxes[i] __ boxes[m]:
-                    tmp = max(tmp, self.helper(dp, boxes, i+1, m-1, 1)+\
-                              self.helper(dp, boxes, m, j, k+1))
+                    tmp = max(tmp, helper(dp, boxes, i+1, m-1, 1)+\
+                              helper(dp, boxes, m, j, k+1))
             dp[i][j][k] = tmp
             r.. tmp
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 3, 2, 2, 2, 3, 4, 3, 1],
         ]
         ___ boxes __ testCases:
             print('boxes: %s' % boxes)
-            result = self.removeBoxes(boxes)
+            result = removeBoxes(boxes)
             print('result: %s' % result)
             print('-='*30+'-')
 

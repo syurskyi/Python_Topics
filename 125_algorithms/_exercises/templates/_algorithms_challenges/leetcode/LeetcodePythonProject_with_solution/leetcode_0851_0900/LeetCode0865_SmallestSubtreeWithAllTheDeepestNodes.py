@@ -4,24 +4,24 @@ Created on Sep 29, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ subtreeWithAllDeepest(self, root):
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
-        r.. self.deep(root)[1]
+        r.. deep(root)[1]
     
     ___ deep(self, root):
         __ n.. root:
             r.. 0, N..
-        l, r = self.deep(root.left), self.deep(root.right)
+        l, r = deep(root.left), deep(root.right)
         __ l[0] > r[0]:
             r.. l[0]+1, l[1]
         ____ l[0] < r[0]:
@@ -34,11 +34,11 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        hashmap = {}
-        self.gatherDepths(root, 0, hashmap)
+        hashmap    # dict
+        gatherDepths(root, 0, hashmap)
         maxDepth = max(hashmap.keys())
         nodes = hashmap[maxDepth]
-        r.. self.getCommonParent(root, nodes)
+        r.. getCommonParent(root, nodes)
     
     ___ gatherDepths(self, root, depth, hashmap):
         __ n.. root:
@@ -47,36 +47,36 @@ class Solution(object):
             hashmap[depth].a..(root)
         ____:
             hashmap[depth] = [root]
-        self.gatherDepths(root.left, depth+1, hashmap)
-        self.gatherDepths(root.right, depth+1, hashmap)
+        gatherDepths(root.left, depth+1, hashmap)
+        gatherDepths(root.right, depth+1, hashmap)
     
     ___ getCommonParent(self, root, nodes):
         __ n.. root:
             r.. N..
-        isLeft = True
+        isLeft = T..
         ___ node __ nodes:
-            __ n.. self.isSubTree(root.left, node):
-                isLeft = False
+            __ n.. isSubTree(root.left, node):
+                isLeft = F..
                 break
         __ isLeft:
-            r.. self.getCommonParent(root.left, nodes)
-        isRight = True
+            r.. getCommonParent(root.left, nodes)
+        isRight = T..
         ___ node __ nodes:
-            __ n.. self.isSubTree(root.right, node):
-                isRight = False
+            __ n.. isSubTree(root.right, node):
+                isRight = F..
                 break
         __ isRight:
-            r.. self.getCommonParent(root.right, nodes)
+            r.. getCommonParent(root.right, nodes)
         ____:
             r.. root
     
     ___ isSubTree(self, root, node):
         __ n.. root:
-            r.. False
+            r.. F..
         __ root __ node:
-            r.. True
-        __ self.isSubTree(root.left, node) o. self.isSubTree(root.right, node):
-            r.. True
+            r.. T..
+        __ isSubTree(root.left, node) o. isSubTree(root.right, node):
+            r.. T..
 
 __ __name__ __ '__main__':
     Solution().test()

@@ -5,7 +5,7 @@ ____ numbers_to_dec _______ list_to_decimal
 
 @pytest.mark.parametrize('test_input',
                          [(['1', 2, 3, 4, 5]),
-                          ([True, 1, 2, 3, 4])])
+                          ([T.., 1, 2, 3, 4])])
 ___ test_type_error(test_input):
     with pytest.raises(TypeError):
         list_to_decimal(test_input)

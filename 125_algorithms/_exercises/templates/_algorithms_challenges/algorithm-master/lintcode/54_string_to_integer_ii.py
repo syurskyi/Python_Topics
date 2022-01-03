@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: s: A string
     @return: An integer
@@ -9,7 +9,7 @@ class Solution:
             r.. NOT_FOUND
 
         n = l..(s)
-        is_negative = False
+        is_negative = F..
         left, right = 0, n - 1
 
         w.... left < n a.. s[left] __ ' ':

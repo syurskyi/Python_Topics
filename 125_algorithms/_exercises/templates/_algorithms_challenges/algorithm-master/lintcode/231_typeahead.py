@@ -1,27 +1,27 @@
-class Typeahead:
+c_ Typeahead:
     """
     @param: dict: A dictionary of words dict
     """
-    ___ __init__(self, d..):
-        self.map = {}
+    ___ - , d..):
+        map    # dict
         n = 0
         ___ key __ d..:
             n = l..(key)
             ___ l __ r..(n):
                 ___ r __ r..(l + 1, n + 1):
                     substr = key[l:r]
-                    __ substr n.. __ self.map:
-                        self.map[substr] = [key]
-                    ____ self.map[substr][-1] != key:
-                        self.map[substr].a..(key)
+                    __ substr n.. __ map:
+                        map[substr] = [key]
+                    ____ map[substr][-1] != key:
+                        map[substr].a..(key)
 
     """
     @param: str: a string
     @return: a list of words
     """
-    ___ search(self, s..):
-        __ s.. __ self.map:
-            r.. self.map[s..]
+    ___ s..(self, s..):
+        __ s.. __ map:
+            r.. map[s..]
         r.. []
 
 
@@ -32,11 +32,11 @@ Since the description said 'return all words that contains the string as a subst
 
 But its a good solution for the auto-completion
 '''
-class Trie:
-    ___ __init__(self):
-        self.root = self.new_node()
+c_ Trie:
+    ___ - ):
+        root = new_node()
 
-    ___ new_node(self):
+    ___ new_node
         r.. {
             'result': [],
             'children': {}
@@ -46,21 +46,21 @@ class Trie:
         __ n.. key:
             r..
         ___ word __ key.s.. :
-            self._put(word, key)
+            _put(word, key)
 
     ___ _put(self, word, key):
-        parent = self.root
-        ___ char __ word.lower():
+        parent = root
+        ___ char __ word.l..:
             __ char n.. __ parent['children']:
-                parent['children'][char] = self.new_node()
+                parent['children'][char] = new_node()
             parent = parent['children'][char]
             parent['result'].a..(key)
 
-    ___ search(self, key):
+    ___ s..(self, key):
         __ n.. key:
             r.. []
-        parent = self.root
-        ___ char __ key.lower():
+        parent = root
+        ___ char __ key.l..:
             __ char n.. __ parent['children']:
                 r.. []
             parent = parent['children'][char]
@@ -82,18 +82,18 @@ class Trie:
     #         parent = parent['children'][char]
     #     return parent['result']
 
-class Typeahead:
+c_ Typeahead:
     """
     @param: dict: A dictionary of words dict
     """
-    ___ __init__(self, d..):
-        self.trie = Trie()
+    ___ - , d..):
+        trie = Trie()
         ___ word __ d..:
-            self.trie.put(word)
+            trie.put(word)
 
     """
     @param: str: a string
     @return: a list of words
     """
-    ___ search(self, s..):
-        r.. self.trie.search(s..)
+    ___ s..(self, s..):
+        r.. trie.s..(s..)

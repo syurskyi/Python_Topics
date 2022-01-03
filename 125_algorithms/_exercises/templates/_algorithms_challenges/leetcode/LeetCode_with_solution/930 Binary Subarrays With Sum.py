@@ -23,7 +23,7 @@ A[i] is either 0 or 1.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ numSubarraysWithSum(self, A: List[int], S: int) -> int:
         """
         Two pointers

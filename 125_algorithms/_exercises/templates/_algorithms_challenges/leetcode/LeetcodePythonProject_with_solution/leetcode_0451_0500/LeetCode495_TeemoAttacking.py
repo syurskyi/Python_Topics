@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findPoisonedDurationAnother(self, timeSeries, duration):
         """
         :type timeSeries: List[int]
@@ -35,7 +35,7 @@ class Solution(object):
         result += maxTime-prev
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 4],
@@ -49,7 +49,7 @@ class Solution(object):
         ___ timeSeries, duration __ testCases:
             print('timeSeries: %s' % timeSeries)
             print('duration: %s' % duration)
-            result = self.findPoisonedDurationAnother(timeSeries, duration)
+            result = findPoisonedDurationAnother(timeSeries, duration)
             print('result: %s' % result)
             print('-='*30+'-')
 

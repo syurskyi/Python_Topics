@@ -1,28 +1,28 @@
-class Zipper(object):
+c_ Zipper(object):
     @staticmethod
     ___ from_tree(tree):
         pass
 
-    ___ value(self):
+    ___ value
         pass
 
-    ___ set_value(self):
+    ___ set_value
         pass
 
-    ___ left(self):
+    ___ left
         pass
 
-    ___ set_left(self):
+    ___ set_left
         pass
 
-    ___ right(self):
+    ___ right
         pass
 
-    ___ set_right(self):
+    ___ set_right
         pass
 
-    ___ up(self):
+    ___ up
         pass
 
-    ___ to_tree(self):
+    ___ to_tree
         pass

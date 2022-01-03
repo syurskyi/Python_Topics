@@ -4,7 +4,7 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ arrangeCoins(self, n):
         start, end = 1, n
         w.... start <= end:

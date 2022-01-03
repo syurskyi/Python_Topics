@@ -17,19 +17,19 @@ The total number of nodes is at most 5000.
 
 
 # Definition for a Node.
-class Node:
-    ___ __init__(self, val, children):
-        self.val = val
-        self.children = children
+c_ Node:
+    ___ - , val, children):
+        val = val
+        children = children
 
 
-class Solution:
+c_ Solution:
     ___ maxDepth(self, root: "Node") -> int:
         __ n.. root:
             r.. 0
 
         max_child_depth = max([
-            self.maxDepth(child)
+            maxDepth(child)
             ___ child __ root.children
         ] o. [0])
         

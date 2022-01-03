@@ -4,26 +4,26 @@ ty = ToyFactory()
 toy = ty.getToy(type)
 toy.talk()
 """
-class Toy:
-    ___ talk(self):
+c_ Toy:
+    ___ talk
         raise NotImplementedError('This method should have implemented.')
 
 
-class Dog(Toy):
-    ___ talk(self):
+c_ Dog(Toy):
+    ___ talk
         print 'Wow'
 
 
-class Cat(Toy):
-    ___ talk(self):
+c_ Cat(Toy):
+    ___ talk
         print 'Meow'
 
 
-class ToyFactory:
+c_ ToyFactory:
     # @param {string} shapeType a string
     # @return {Toy} Get object of the type
-    ___ getToy(self, type):
-        __ type __ 'Dog':
+    ___ getToy(self, t..):
+        __ t.. __ 'Dog':
             r.. Dog()
-        __ type __ 'Cat':
+        __ t.. __ 'Cat':
             r.. Cat()

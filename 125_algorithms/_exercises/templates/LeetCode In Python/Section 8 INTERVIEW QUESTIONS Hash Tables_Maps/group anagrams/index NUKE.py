@@ -1,17 +1,17 @@
-class Solution:
+c_ Solution:
     ___ findHash(self,s):
-        r.. ''.join(s..(s))
+        r.. ''.j..(s..(s))
     ___ groupAnagrams(self, strs: List[s..]) -> List[List[s..]]:
         answers  []
         m  {}
 
         ___ s __ strs:
-            hashed  self.findHash(s)
+            hashed  findHash(s)
             __(hashed n.. __ m):
                 m[hashed]  []
             m[hashed].a..(s)
         
-        ___ p __ m.values():
+        ___ p __ m.v..
             answers.a..(p)
         
         r.. answers

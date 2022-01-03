@@ -11,7 +11,7 @@ Given "abcd", return "dcbabcd".
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ shortestPalindrome(self, s):
         """
         KMP

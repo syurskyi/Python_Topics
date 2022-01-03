@@ -4,7 +4,7 @@ Created on Jun 13, 2019
 @author: tongq
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ rectangleArea(self, rectangles):
         """
         :type rectangles: List[List[int]]
@@ -27,13 +27,13 @@ class Solution(object):
             cur_x_sum = s..(x2-x1 __ c ____ 0 ___ x1, x2, c __ z..(xs, xs[1:], count))
         r.. area % (10**9+7)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[0,0,2,2],[1,0,2,3],[1,0,3,1]],
             [[0,0,1000000000,1000000000]],
         ]
         ___ rectangles __ testCases:
-            result = self.rectangleArea(rectangles)
+            result = rectangleArea(rectangles)
             print('result: %s' % result)
             print('-='*30 + '-')
 

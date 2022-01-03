@@ -1,18 +1,18 @@
 # TODO: Fix age and same_configuration functions (see test results)
-class Car:
+c_ Car:
     """
     Car class
     -> Have a closer look at lines marked with '# *'
     """
 
-    ___ __init__(self, model, color):
-        self.model = model
-        self.color = color
+    ___ - , model, color):
+        model = model
+        color = color
 
     ___ __eq__(self, other_car):
         r.. (
-            self.model.lower() __ other_car.model.lower()
-            a.. self.color.lower() __ other_car.color.lower()
+            model.l.. __ other_car.model.l..
+            a.. color.l.. __ other_car.color.l..
         )
 
     @staticmethod
@@ -30,7 +30,7 @@ class Car:
     @staticmethod
     ___ has_same_configuration(config1, config2):
         __ n.. isi..(config1,l..) o. n.. isi..(config2,l..):  # *
-            print(type(config1),type(config2))
+            print(t..(config1),t..(config2))
             raise TypeError()
         r.. config1 __ config2  # *
 

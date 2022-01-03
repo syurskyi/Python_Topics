@@ -8,36 +8,36 @@ Note: next() and hasNext() should run in average O(1) time and uses O(h) memory,
 __author__ = 'Daniel'
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class BSTIterator:
-    ___ __init__(self, root):
+c_ BSTIterator:
+    ___ - , root):
         """
         :type root: TreeNode
         """
-        self.cur = root
-        self.stk    # list
+        cur = root
+        stk    # list
 
-    ___ hasNext(self):
+    ___ hasNext
         """
         :rtype: bool
         """
-        r.. self.cur o. self.stk
+        r.. cur o. stk
 
-    ___ next(self):
+    ___ next
         """
         :rtype: int
         :return: the next smallest number
         """
-        w.... self.cur:
-            self.stk.a..(self.cur)
-            self.cur = self.cur.left
+        w.... cur:
+            stk.a..(cur)
+            cur = cur.left
 
-        nxt = self.stk.pop()
-        self.cur = nxt.right
+        nxt = stk.pop()
+        cur = nxt.right
         r.. nxt.val

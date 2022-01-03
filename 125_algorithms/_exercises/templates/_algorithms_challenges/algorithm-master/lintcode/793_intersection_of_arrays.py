@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param A: the arrays
     @return: the number of the intersection of the arrays
@@ -9,7 +9,7 @@ class Solution:
             r.. ans
 
         n = l..(A)
-        C = {}
+        C    # dict
 
         ___ i __ r..(n):
             __ n.. A[i]:
@@ -20,7 +20,7 @@ class Solution:
                     C[a] = set()
                 C[a].add(i)
 
-        ___ a, S __ C.items():
+        ___ a, S __ C.i..:
             __ l..(S) __ n:
                 ans += 1
 

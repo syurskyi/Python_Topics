@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
   ___ oddEvenList(self, head):
     """
     :type head: ListNode
@@ -13,15 +13,15 @@ class Solution(object):
     o = odd = ListNode(-1)
     e = even = ListNode(-1)
     p = head
-    isOdd = True
+    isOdd = T..
     w.... p:
       __ isOdd:
         o.next = p
         o = o.next
-        isOdd = False
+        isOdd = F..
       ____:
         e.next = p
-        isOdd = True
+        isOdd = T..
         e = e.next
       p = p.next
     e.next = N..

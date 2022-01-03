@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ longestSubstring(self, s, k):
         """
         :type s: str

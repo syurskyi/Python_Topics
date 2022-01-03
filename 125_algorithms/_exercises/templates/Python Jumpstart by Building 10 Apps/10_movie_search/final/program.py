@@ -15,13 +15,13 @@ ___ print_header():
 
 
 ___ search_event_loop():
-    search  'ONCE_THROUGH_LOOP'
+    s..  'ONCE_THROUGH_LOOP'
 
-    w___ search ! 'x':
+    w___ s.. ! 'x':
         try:
-            search  input('Movie search text (x to exit): ')
-            __ search ! 'x':
-                results  movie_svc.find_movies(search)
+            s..  input('Movie search text (x to exit): ')
+            __ s.. ! 'x':
+                results  movie_svc.find_movies(s..)
                 print("Found {} results.".f..(l..(results)))
                 ___ r __ results:
                     print('{} -- {}'.f..(

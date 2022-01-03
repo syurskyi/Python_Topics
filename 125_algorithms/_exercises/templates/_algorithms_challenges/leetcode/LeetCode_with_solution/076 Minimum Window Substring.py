@@ -17,7 +17,7 @@ _______ sys
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ minWindow(self, S, T):
         """
         Algorithm:

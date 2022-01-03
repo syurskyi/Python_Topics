@@ -5,12 +5,12 @@ Created on Mar 1, 2017
 '''
 
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
-class Solution(object):
+c_ Solution(object):
     ___ canAttendMeetings(self, intervals):
         """
         :type intervals: List[Interval]
@@ -22,5 +22,5 @@ class Solution(object):
             curr = intervals[i]
             nextInter = intervals[i+1]
             __ curr.end > nextInter.start:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..

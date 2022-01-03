@@ -1,21 +1,21 @@
-class ConnectingGraph2:
+c_ ConnectingGraph2:
     """
     @param: n: An integer
     """
-    ___ __init__(self, n):
+    ___ - , n):
         __ n < 1:
             r..
-        self.nodes = {}
-        self.count = {}
+        nodes    # dict
+        count    # dict
         ___ i __ r..(n):
-            self.nodes[i + 1] = i + 1
-            self.count[i + 1] = 1
+            nodes[i + 1] = i + 1
+            count[i + 1] = 1
 
     ___ find(self, a):
-        __ self.nodes[a] __ a:
+        __ nodes[a] __ a:
             r.. a
-        self.nodes[a] = self.find(self.nodes[a])
-        r.. self.nodes[a]
+        nodes[a] = find(nodes[a])
+        r.. nodes[a]
 
     """
     @param: a: An integer
@@ -23,17 +23,17 @@ class ConnectingGraph2:
     @return: nothing
     """
     ___ connect(self, a, b):
-        root_a = self.find(a)
-        root_b = self.find(b)
+        root_a = find(a)
+        root_b = find(b)
         __ root_a != root_b:
             # Assign a as b's child set
-            self.nodes[root_a] = root_b
-            self.count[root_b] += self.count[root_a]
+            nodes[root_a] = root_b
+            count[root_b] += count[root_a]
 
     """
     @param: a: An integer
     @return: An integer
     """
     ___ query(self, a):
-        root_a = self.find(a)
-        r.. self.count[root_a]
+        root_a = find(a)
+        r.. count[root_a]

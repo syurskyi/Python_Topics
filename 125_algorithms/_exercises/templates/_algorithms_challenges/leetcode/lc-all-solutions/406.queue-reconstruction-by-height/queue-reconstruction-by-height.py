@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ reconstructQueue(self, people):
     """
     :type people: List[List[int]]

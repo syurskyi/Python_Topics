@@ -24,7 +24,7 @@ Output:
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ combinationSum3(self, k, n):
         """
         Backtracking
@@ -34,7 +34,7 @@ class Solution:
         :rtype: list[list[int]]
         """
         ret    # list
-        self.dfs(k, n, [], ret)
+        dfs(k, n, [], ret)
         r.. ret
 
     ___ dfs(self, remain_k, remain_n, cur, ret):
@@ -51,7 +51,7 @@ class Solution:
             start = cur[-1] + 1  # unique
         ___ i __ xrange(start, 10):
             cur.a..(i)
-            self.dfs(remain_k - 1, remain_n - i, cur, ret)
+            dfs(remain_k - 1, remain_n - i, cur, ret)
             cur.pop()
 
 

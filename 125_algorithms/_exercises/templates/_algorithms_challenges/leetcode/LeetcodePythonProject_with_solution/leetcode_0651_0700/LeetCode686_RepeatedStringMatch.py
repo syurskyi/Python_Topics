@@ -3,7 +3,7 @@ Created on Oct 22, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ repeatedStringMatch(self, A, B):
         """
         :type A: str
@@ -19,7 +19,7 @@ class Solution(object):
             k -= 1
         r.. k+1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'abcd',
@@ -29,7 +29,7 @@ class Solution(object):
         ___ A, B __ testCases:
             print('A: %s' % A)
             print('B: %s' % B)
-            result = self.repeatedStringMatch(A, B)
+            result = repeatedStringMatch(A, B)
             print('result: %s' % result)
             print('-='*30+'-')
 

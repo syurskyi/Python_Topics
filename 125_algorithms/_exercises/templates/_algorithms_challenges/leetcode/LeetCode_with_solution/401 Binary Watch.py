@@ -23,10 +23,10 @@ The minute must be consist of two digits and may contain a leading zero, for exa
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.hours = (1, 2, 4, 8)
-        self.minutes = (1, 2, 4, 8, 16, 32)
+c_ Solution(object):
+    ___ - ):
+        hours = (1, 2, 4, 8)
+        minutes = (1, 2, 4, 8, 16, 32)
 
     ___ readBinaryWatch(self, num):
         """
@@ -37,8 +37,8 @@ class Solution(object):
         """
         ___ gen():
             ___ hour_n __ xrange(m..(num, 4)+1):
-                ___ hour __ self.hour(hour_n):
-                    ___ minute __ self.minute(num-hour_n):
+                ___ hour __ hour(hour_n):
+                    ___ minute __ minute(num-hour_n):
                         hour = s..(hour)
                         minute = ('0' + s..(minute))[-2:]
                         y.. hour + ':' + minute
@@ -53,7 +53,7 @@ class Solution(object):
             y.. 0
 
         ___ i __ xrange(head, l..(lst)):
-            ___ rest __ self.gen(n-1, i+1, lst, func):
+            ___ rest __ gen(n-1, i+1, lst, func):
                 __ rest __ n.. N..
                     ret = lst[i]+rest
                     __ func(ret):
@@ -62,10 +62,10 @@ class Solution(object):
                         break
 
     ___ hour(self, n):
-        r.. self.gen(n, 0, self.hours, l.... x: x < 12)
+        r.. gen(n, 0, hours, l.... x: x < 12)
 
     ___ minute(self, n):
-        r.. self.gen(n, 0, self.minutes, l.... x: x < 60)
+        r.. gen(n, 0, minutes, l.... x: x < 60)
 
 
 __ __name__ __ "__main__":

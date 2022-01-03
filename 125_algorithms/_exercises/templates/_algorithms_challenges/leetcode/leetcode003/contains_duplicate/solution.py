@@ -4,7 +4,7 @@ function should return true if any value appears at least twice in the array,
 and it should return false if every element is distinct.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ containsDuplicate(self, nums):
         """
         :type nums: List[int]
@@ -13,7 +13,7 @@ class Solution(object):
         d = set()
         ___ i __ nums:
             __ i __ d:
-                r.. True
+                r.. T..
             ____:
                 d.add(i)
-        r.. False
+        r.. F..

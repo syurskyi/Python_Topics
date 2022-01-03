@@ -35,24 +35,24 @@ relationship between the input and the output.
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ tree2str(self, t: TreeNode) -> s..:
         __ n.. t:
             r.. ""
 
-        left = self.tree2str(t.left)
-        right = self.tree2str(t.right)
+        left = tree2str(t.left)
+        right = tree2str(t.right)
         ret = [s..(t.val)]
         __ left o. right:
             ret.a..("(" + left + ")")
         __ right:
             ret.a..("(" + right + ")")
 
-        r.. "".join(ret)
+        r.. "".j..(ret)

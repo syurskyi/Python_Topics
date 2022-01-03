@@ -3,23 +3,23 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-class TreeNode(object):
-    ___ __init__(self, val):
-        self.val = val
-        self.children = {}
-        self.isLeaf = False
-        self.candidates = set()
+c_ TreeNode(object):
+    ___ - , val):
+        val = val
+        children    # dict
+        isLeaf = F..
+        candidates = set()
 
-class WordFilter(object):
+c_ WordFilter(object):
 
-    ___ __init__(self, words):
+    ___ - , words):
         """
         :type words: List[str]
         """
-        self.root1 = TreeNode('')
-        self.root2 = TreeNode('')
-        self.buildTree(self.root1, words, False)
-        self.buildTree(self.root2, words, True)
+        root1 = TreeNode('')
+        root2 = TreeNode('')
+        buildTree(root1, words, F..)
+        buildTree(root2, words, T..)
     
     ___ buildTree(self, root, words, reverse):
         ___ i0, word __ e..(words):
@@ -33,7 +33,7 @@ class WordFilter(object):
                 node = node.children[c]
                 node.candidates.add(i0)
                 __ i __ l..(word)-1:
-                    node.isLeaf = True
+                    node.isLeaf = T..
     
     ___ f(self, prefix, suffix):
         """
@@ -41,8 +41,8 @@ class WordFilter(object):
         :type suffix: str
         :rtype: int
         """
-        cand1 = self.helper(self.root1, prefix)
-        cand2 = self.helper(self.root2, suffix[::-1])
+        cand1 = helper(root1, prefix)
+        cand2 = helper(root2, suffix[::-1])
         res = -1
         ___ i __ cand1:
             __ i __ cand2:

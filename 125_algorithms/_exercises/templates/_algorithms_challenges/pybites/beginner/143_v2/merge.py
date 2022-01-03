@@ -12,7 +12,7 @@ ___ get_person_age(name):
     """
 
     try:
-        name = name.lower()
+        name = name.l..
     except:
         r.. "Not found"
 

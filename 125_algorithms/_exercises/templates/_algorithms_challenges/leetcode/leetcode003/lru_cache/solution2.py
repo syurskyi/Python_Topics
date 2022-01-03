@@ -12,22 +12,22 @@ used item before inserting a new item.
 """
 
 
-class LRUCache(object):
-    ___ __init__(self, capacity):
+c_ LRUCache(object):
+    ___ - , capacity):
         """
         :type capacity: int
         """
-        self.capacity = capacity
-        self.times = List()
-        self.cache = {}
+        capacity = capacity
+        times = List()
+        cache    # dict
 
     ___ get(self, key):
         """
         :rtype: int
         """
-        __ key __ self.cache:
-            node = self.cache[key]
-            self.times.touch(node)
+        __ key __ cache:
+            node = cache[key]
+            times.touch(node)
             r.. node.value
         r.. -1
 
@@ -37,45 +37,45 @@ class LRUCache(object):
         :type value: int
         :rtype: nothing
         """
-        __ key __ self.cache:
-            node = self.cache[key]
+        __ key __ cache:
+            node = cache[key]
             node.value = value
-            self.times.touch(node)
+            times.touch(node)
         ____:
-            __ self.times.size >= self.capacity:
-                tail_node = self.times.tail
-                self.times.remove(tail_node)
-                del self.cache[tail_node.key]
+            __ times.size >= capacity:
+                tail_node = times.tail
+                times.remove(tail_node)
+                del cache[tail_node.key]
             node = ListNode(key, value)
-            self.cache[key] = node
+            cache[key] = node
             # Insert node with key to the head
-            self.times.insert(node)
+            times.insert(node)
 
 
-class ListNode(object):
+c_ ListNode(object):
     """Doubly Linked List node"""
-    ___ __init__(self, key, value):
-        self.prev = N..
-        self.next = N..
-        self.key = key
-        self.value = value
+    ___ - , key, value):
+        prev = N..
+        next = N..
+        key = key
+        value = value
 
 
-class List(object):
-    ___ __init__(self):
-        self.head = N..
-        self.tail = N..
-        self.size = 0
+c_ List(object):
+    ___ - ):
+        head = N..
+        tail = N..
+        size = 0
 
     ___ insert(self, node):
         """Insert node to the head"""
-        node.next = self.head
-        __ self.head __ n.. N..
-            self.head.prev = node
+        node.next = head
+        __ head __ n.. N..
+            head.prev = node
         ____:
-            self.tail = node
-        self.head = node
-        self.size += 1
+            tail = node
+        head = node
+        size += 1
 
     ___ touch(self, node):
         """Move node to the head"""
@@ -86,11 +86,11 @@ class List(object):
             __ next_node __ n.. N..
                 next_node.prev = prev_node
             ____:
-                self.tail = prev_node
+                tail = prev_node
             node.prev = N..
-            node.next = self.head
-            self.head.prev = node
-            self.head = node
+            node.next = head
+            head.prev = node
+            head = node
 
     ___ remove(self, node):
         """Remove a node"""
@@ -103,8 +103,8 @@ class List(object):
             __ next_node __ n.. N..
                 next_node.prev = prev_node
             ____:
-                self.tail = prev_node
+                tail = prev_node
         ____:
-            self.head = N..
-            self.tail = N..
-        self.size -= 1
+            head = N..
+            tail = N..
+        size -= 1

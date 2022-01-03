@@ -19,8 +19,8 @@ You may assume that all operations are valid (for example, no pop or top
 operations will be called on an empty stack).
 """
 
-class Stack(object):
-    ___ __init__(self):
+c_ Stack(object):
+    ___ - ):
         """
         initialize your data structure here.
         pop()
@@ -40,33 +40,33 @@ class Stack(object):
             queue1 = [x, a, b, c]
             queue2 = []
         """
-        self.queue1    # list
-        self.queue2    # list
+        queue1    # list
+        queue2    # list
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: nothing
         """
-        self.queue2.a..(x)
-        w.... self.queue1:
-            self.queue2.a..(self.queue1.pop(0))
-        self.queue1, self.queue2 = self.queue2, self.queue1
+        queue2.a..(x)
+        w.... queue1:
+            queue2.a..(queue1.pop(0))
+        queue1, queue2 = queue2, queue1
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: nothing
         """
-        r.. self.queue1.pop(0)
+        r.. queue1.pop(0)
 
-    ___ top(self):
+    ___ top
         """
         :rtype: int
         """
-        r.. self.queue1[0]
+        r.. queue1[0]
 
-    ___ empty(self):
+    ___ empty
         """
         :rtype: bool
         """
-        r.. n.. self.queue1
+        r.. n.. queue1

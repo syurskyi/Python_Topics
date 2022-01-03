@@ -18,7 +18,7 @@ Consider the following matrix:
 Given target = 3, return true.
 """
 
-class Solution:
+c_ Solution:
     # @param matrix, a list of lists of integers
     # @param target, an integer
     # @return a boolean
@@ -34,14 +34,14 @@ class Solution:
                 w.... left <= right:
                     mid = left + (right - left) / 2
                     __ target __ row[mid]:
-                        r.. True
+                        r.. T..
                     ____ target < row[mid]:
                         right = mid - 1
                     ____:
                         left = mid + 1
-                r.. False
+                r.. F..
             ____ target < row[0]:
                 row_right = row_mid - 1
             ____:
                 row_left = row_mid + 1
-        r.. False
+        r.. F..

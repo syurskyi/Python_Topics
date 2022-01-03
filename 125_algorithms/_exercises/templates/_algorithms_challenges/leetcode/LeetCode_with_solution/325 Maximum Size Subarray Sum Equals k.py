@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxSubArrayLen(self, A, k):
         """
         Search problem

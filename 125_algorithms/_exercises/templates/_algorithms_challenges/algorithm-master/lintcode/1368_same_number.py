@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param nums: the arrays
     @param k: the distance of the same number
@@ -10,12 +10,12 @@ class Solution:
         __ n.. nums o. n.. k:
             r.. RES[0]
 
-        idx = {}
-        gotcha = False
+        idx    # dict
+        gotcha = F..
 
         ___ i __ r..(l..(nums)):
             __ nums[i] __ idx a.. i - idx[nums[i]] < k:
-                gotcha = True
+                gotcha = T..
 
             idx[nums[i]] = i
 

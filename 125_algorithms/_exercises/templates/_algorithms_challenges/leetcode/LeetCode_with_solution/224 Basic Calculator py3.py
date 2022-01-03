@@ -24,14 +24,14 @@ Do not use the eval built-in library function.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ calculate(self, s: s..) -> int:
         """
         1. treat +/- as unary operator
         2. maintain stk of operands to sum
         3. handle bracket recursively
         """
-        ret, _ = self.eval(s + "\0", 0, [])
+        ret, _ = eval(s + "\0", 0, [])
         r.. ret
 
     ___ eval(self, s: s.., start: int, stk: List[int]) -> int:
@@ -56,7 +56,7 @@ class Solution:
                     r.. s..(stk), i
             ____ s[i] __ "(":
                 # avoid setting operand to 0
-                operand, i = self.eval(s, i + 1, [])
+                operand, i = eval(s, i + 1, [])
             ____:
                 raise
 

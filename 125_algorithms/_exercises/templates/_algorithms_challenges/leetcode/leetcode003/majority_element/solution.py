@@ -6,14 +6,14 @@ You may assume that the array is non-empty and the majority element always
 exist in the array.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ majorityElement(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
         m = l..(nums) / 2
-        d = {}
+        d    # dict
         ___ k __ nums:
             __ k n.. __ d:
                 d[k] = 1

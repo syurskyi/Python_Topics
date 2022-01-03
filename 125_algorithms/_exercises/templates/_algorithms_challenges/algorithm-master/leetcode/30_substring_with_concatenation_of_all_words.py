@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ findSubstring(self, s, S):
         """
         :type s: str
@@ -10,19 +10,19 @@ class Solution:
             r.. ans
 
         n, m, k = l..(s), l..(S), l..(S[0])
-        F = {}
+        F    # dict
         ___ c __ S:
             F[c] = F.get(c, 0) + 1
 
         ___ start __ r..(k):
-            _F = {}
+            _F    # dict
             cnt = 0
             left = start
 
             ___ right __ r..(start, n - k + 1, k):
                 sr = s[right:right + k]
                 __ sr n.. __ F:
-                    _F = {}
+                    _F    # dict
                     cnt = 0
                     left = right + k
                     continue

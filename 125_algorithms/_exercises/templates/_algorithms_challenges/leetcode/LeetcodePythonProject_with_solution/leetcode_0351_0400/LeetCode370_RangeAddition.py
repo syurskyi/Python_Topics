@@ -4,7 +4,7 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ getModifiedArray(self, length, updates):
         result = [0]*length
         ___ update __ updates:

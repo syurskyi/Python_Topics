@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: Given an integer array
     @return: nothing
@@ -6,7 +6,7 @@ class Solution:
     ___ heapify(self, A):
         # start from mid-depth to sift down
         ___ i __ r..(l..(A) // 2, -1, -1):
-            self.siftdown(A, i)
+            siftdown(A, i)
 
     ___ siftdown(self, A, i):
         """

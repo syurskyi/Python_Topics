@@ -7,13 +7,13 @@ become 1 -> 2 -> 4 after calling your function.
 __author__ = 'Daniel'
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution:
+c_ Solution:
     ___ deleteNode(self, node):
         """
         Only access to the node to be deleted.

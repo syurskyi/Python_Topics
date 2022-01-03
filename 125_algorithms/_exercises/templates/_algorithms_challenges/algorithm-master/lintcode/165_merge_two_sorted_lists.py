@@ -5,7 +5,7 @@
 #         self.next = None
 
 
-class Solution:
+c_ Solution:
     ___ mergeTwoLists(self, a, b):
         """
         :type a: ListNode

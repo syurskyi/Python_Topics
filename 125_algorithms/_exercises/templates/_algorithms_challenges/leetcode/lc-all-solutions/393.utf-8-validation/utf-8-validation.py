@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ validUtf8(self, data):
     """
     :type data: List[int]
@@ -6,7 +6,7 @@ class Solution(object):
     """
     features = {0x00: 0, 0xc0: 1, 0xe0: 2, 0xf0: 3}
     masks = [0xf8, 0xf0, 0xe0, 0x80]
-    new = True
+    new = T..
     followed = 0
     i = 0
     w.... i < l..(data):
@@ -17,17 +17,17 @@ class Solution(object):
             followed = features[data[i] & mask]
             break
         __ followed __ -1:
-          r.. False
+          r.. F..
         ____ followed != 0:
-          new = False
+          new = F..
         ____:
-          new = True
+          new = T..
       ____:
         __ (data[i] & 0xc0) != 0x80:
-          r.. False
+          r.. F..
         followed -= 1
         __ followed __ 0:
-          new = True
+          new = T..
       i += 1
 
     r.. followed __ 0

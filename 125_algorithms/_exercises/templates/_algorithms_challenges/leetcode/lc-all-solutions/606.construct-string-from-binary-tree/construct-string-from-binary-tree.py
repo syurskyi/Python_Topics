@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ tree2str(self, t):
     """
     :type t: TreeNode
@@ -7,8 +7,8 @@ class Solution(object):
     __ n.. t:
       r.. ""
     res = ""
-    left = self.tree2str(t.left)
-    right = self.tree2str(t.right)
+    left = tree2str(t.left)
+    right = tree2str(t.right)
     __ left o. right:
       res += "(%s)" % left
     __ right:

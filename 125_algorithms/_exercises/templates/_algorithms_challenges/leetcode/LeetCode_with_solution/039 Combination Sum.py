@@ -13,7 +13,7 @@ A solution set is:
 [2, 2, 3]
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ combinationSum(self, candidates, target):
         """
         dfs
@@ -25,7 +25,7 @@ class Solution:
         """
         candidates.s..()
         result    # list
-        self.get_combination(target, candidates, [], result)
+        get_combination(target, candidates, [], result)
         r.. result
 
     ___ get_combination(self, target, candidates, current, result):
@@ -37,7 +37,7 @@ class Solution:
 
         # add one of from the candidates
         ___ ind, val __ e..(candidates):
-            self.get_combination(target, candidates[ind:], current+[val], result)  # candidates[ind:] since possible repeat
+            get_combination(target, candidates[ind:], current+[val], result)  # candidates[ind:] since possible repeat
 
 
 

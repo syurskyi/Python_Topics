@@ -4,7 +4,7 @@ space: O(n)
 
 it works even if it's not sorted
 """
-class Solution:
+c_ Solution:
     """
     @param: A: An array of Integer
     @param: target: target = A[index1] + A[index2]
@@ -15,7 +15,7 @@ class Solution:
         __ n.. A o. l..(A) < 2:
             r.. NOT_FOUND
 
-        remaining = {}
+        remaining    # dict
         ___ i __ r..(l..(A)):
             __ A[i] __ remaining:
                 r.. [
@@ -34,7 +34,7 @@ space: O(n)
 
 needs to sort in advance
 """
-class Solution:
+c_ Solution:
     """
     @param: A: An array of Integer
     @param: target: target = A[index1] + A[index2]

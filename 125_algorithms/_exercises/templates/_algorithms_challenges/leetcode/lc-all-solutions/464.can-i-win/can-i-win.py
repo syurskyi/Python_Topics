@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ canIWin(self, maxChoosableInteger, desiredTotal):
     """
     :type maxChoosableInteger: int
@@ -10,31 +10,31 @@ class Solution(object):
       __ pool __ visited:
         r.. visited[pool]
       __ target <= 0:
-        r.. False
-      __ pool >= self.maxPool:
-        r.. True
+        r.. F..
+      __ pool >= maxPool:
+        r.. T..
 
       mask = 0x01
       ___ i __ r..(0, maxChoosableInteger):
         __ pool & mask __ 0:
           newPool = pool | mask
-          __ helper(newPool, target - (i + 1), visited) __ False:
-            visited[pool] = True
-            r.. True
+          __ helper(newPool, target - (i + 1), visited) __ F..:
+            visited[pool] = T..
+            r.. T..
         mask = mask << 1
-      visited[pool] = False
-      r.. False
+      visited[pool] = F..
+      r.. F..
 
     __ (1 + maxChoosableInteger) * (maxChoosableInteger / 2) < desiredTotal:
-      r.. False
+      r.. F..
 
     __ desiredTotal __ 0:
-      r.. True
-    self.maxPool = 0
+      r.. T..
+    maxPool = 0
     mask = 1
     ___ i __ r..(0, maxChoosableInteger):
-      self.maxPool |= mask
+      maxPool |= mask
       mask = mask << 1
     pool = 0
-    visited = {}
+    visited    # dict
     r.. helper(pool, desiredTotal, visited)

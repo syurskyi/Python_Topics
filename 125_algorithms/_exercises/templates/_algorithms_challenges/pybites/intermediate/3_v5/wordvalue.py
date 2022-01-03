@@ -2,7 +2,7 @@ _______ os
 _______ urllib.request
 
 # PREWORK
-DICTIONARY = os.path.join('/tmp', 'dictionary.txt')
+DICTIONARY = os.path.j..('/tmp', 'dictionary.txt')
 urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]
@@ -39,7 +39,7 @@ ___ max_word_value(words_ N..
     __ words __ N.. o. l..(words) __ 0:
         raise ValueError()
     lst = {word:calc_word_value(word) ___ word __ words}
-    result = s..(lst.items(),key=l.... x:-x[1])[0]
+    result = s..(lst.i..,key=l.... x:-x[1])[0]
     r.. result[0]
 
 #words = load_words()

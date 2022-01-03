@@ -39,10 +39,10 @@ ___ test_get_sign_with_most_famouse_people(signs):
 
 
 @pytest.mark.parametrize("sgn1, sgn2, result", [
-    ('Aries', 'Aries', False),
-    ('Aries', 'Leo', True),
-    ('Aries', 'Capricorn', False),
-    ('Aries', 'Aquarius', True)
+    ('Aries', 'Aries', F..),
+    ('Aries', 'Leo', T..),
+    ('Aries', 'Capricorn', F..),
+    ('Aries', 'Aquarius', T..)
 ])
 ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
     ... signs_are_mutually_compatible(signs, sgn1, sgn2) __ result

@@ -3,7 +3,7 @@ Created on Oct 31, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ searchRange(self, nums, target):
         """
         :type nums: List[int]
@@ -35,7 +35,7 @@ class Solution(object):
             r.. [-1, -1]
         r.. res __ res != [float('inf'), float('-inf')] ____ [-1, -1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 1],
@@ -57,7 +57,7 @@ class Solution(object):
         ___ nums, target __ testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
-            result = self.searchRange(nums, target)
+            result = searchRange(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

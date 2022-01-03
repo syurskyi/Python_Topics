@@ -3,44 +3,44 @@ _______ unittest
 ____ twelve_days _______ sing, verse, verses
 
 
-class TwelveDaysTests(unittest.TestCase):
+c_ TwelveDaysTests(unittest.TestCase):
 
-    ___ test_verse1(self):
+    ___ test_verse1
         expected = ("On the first day of Christmas my true love gave to me, "
                     "a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(1))
+        assertEqual(expected, verse(1))
 
-    ___ test_verse2(self):
+    ___ test_verse2
         expected = ("On the second day of Christmas my true love gave to me, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(2))
+        assertEqual(expected, verse(2))
 
-    ___ test_verse3(self):
+    ___ test_verse3
         expected = ("On the third day of Christmas my true love gave to me, "
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(3))
+        assertEqual(expected, verse(3))
 
-    ___ test_verse4(self):
+    ___ test_verse4
         expected = ("On the fourth day of Christmas my true love gave to me, "
                     "four Calling Birds, "
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(4))
+        assertEqual(expected, verse(4))
 
-    ___ test_verse5(self):
+    ___ test_verse5
         expected = ("On the fifth day of Christmas my true love gave to me, "
                     "five Gold Rings, "
                     "four Calling Birds, "
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(5))
+        assertEqual(expected, verse(5))
 
-    ___ test_verse6(self):
+    ___ test_verse6
         expected = ("On the sixth day of Christmas my true love gave to me, "
                     "six Geese-a-Laying, "
                     "five Gold Rings, "
@@ -48,9 +48,9 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(6))
+        assertEqual(expected, verse(6))
 
-    ___ test_verse7(self):
+    ___ test_verse7
         expected = ("On the seventh day of Christmas my true love gave to me, "
                     "seven Swans-a-Swimming, "
                     "six Geese-a-Laying, "
@@ -59,9 +59,9 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(7))
+        assertEqual(expected, verse(7))
 
-    ___ test_verse8(self):
+    ___ test_verse8
         expected = ("On the eighth day of Christmas my true love gave to me, "
                     "eight Maids-a-Milking, "
                     "seven Swans-a-Swimming, "
@@ -71,9 +71,9 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(8))
+        assertEqual(expected, verse(8))
 
-    ___ test_verse9(self):
+    ___ test_verse9
         expected = ("On the ninth day of Christmas my true love gave to me, "
                     "nine Ladies Dancing, "
                     "eight Maids-a-Milking, "
@@ -84,9 +84,9 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(9))
+        assertEqual(expected, verse(9))
 
-    ___ test_verse10(self):
+    ___ test_verse10
         expected = ("On the tenth day of Christmas my true love gave to me, "
                     "ten Lords-a-Leaping, "
                     "nine Ladies Dancing, "
@@ -98,9 +98,9 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(10))
+        assertEqual(expected, verse(10))
 
-    ___ test_verse11(self):
+    ___ test_verse11
         expected = ("On the eleventh day of Christmas "
                     "my true love gave to me, "
                     "eleven Pipers Piping, "
@@ -114,9 +114,9 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(11))
+        assertEqual(expected, verse(11))
 
-    ___ test_verse12(self):
+    ___ test_verse12
         expected = ("On the twelfth day of Christmas my true love gave to me, "
                     "twelve Drummers Drumming, "
                     "eleven Pipers Piping, "
@@ -130,9 +130,9 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n")
-        self.assertEqual(expected, verse(12))
+        assertEqual(expected, verse(12))
 
-    ___ test_multiple_verses(self):
+    ___ test_multiple_verses
         expected = ("On the first day of Christmas my true love gave to me, "
                     "a Partridge in a Pear Tree.\n\n"
                     "On the second day of Christmas my true love gave to me, "
@@ -142,10 +142,10 @@ class TwelveDaysTests(unittest.TestCase):
                     "three French Hens, "
                     "two Turtle Doves, "
                     "and a Partridge in a Pear Tree.\n\n")
-        self.assertEqual(expected, verses(1, 3))
+        assertEqual(expected, verses(1, 3))
 
-    ___ test_the_whole_song(self):
-        self.assertEqual(verses(1, 12), sing())
+    ___ test_the_whole_song
+        assertEqual(verses(1, 12), sing())
 
 
 __ __name__ __ '__main__':

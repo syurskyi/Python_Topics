@@ -3,7 +3,7 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ threeSumClosest(self, nums, target):
         """
         :type nums: List[int]
@@ -28,7 +28,7 @@ class Solution(object):
                     j += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [-1, 2, 1, -4],
@@ -38,7 +38,7 @@ class Solution(object):
         ___ nums, target __ testCases:
             print('nums: %s' % nums)
             print('target: %s' % target)
-            result = self.threeSumClosest(nums, target)
+            result = threeSumClosest(nums, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

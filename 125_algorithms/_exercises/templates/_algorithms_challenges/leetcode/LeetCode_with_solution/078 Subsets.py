@@ -19,7 +19,7 @@ If S = [1,2,3], a solution is:
 ]
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ subsets(self, S):
         """
         Similar to permutation and combinations
@@ -28,13 +28,13 @@ class Solution:
         """
         S.s..()
         result    # list
-        self.generate_subsets(S, [], result)
+        generate_subsets(S, [], result)
         r.. result
 
     ___ generate_subsets(self, S, current, result):
         result.a..(current)
         ___ ind, val __ e..(S):
-            self.generate_subsets(S[ind+1:], current+[val], result)
+            generate_subsets(S[ind+1:], current+[val], result)
 
 __ __name____"__main__":
     print Solution().subsets([1, 2, 3])

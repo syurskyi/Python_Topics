@@ -6,6 +6,6 @@ ___ is_in_range(n, r):
             i __ "max"
             b = i
     __ n >= r[s] a.. n <= r[b]:
-            r.. True
+            r.. T..
     ____:
-        r.. False
+        r.. F..

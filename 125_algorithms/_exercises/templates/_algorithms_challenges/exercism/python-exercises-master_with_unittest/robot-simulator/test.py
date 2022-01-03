@@ -2,71 +2,71 @@ _______ unittest
 ____ robot_simulator _______ Robot, NORTH, EAST, SOUTH, WEST
 
 
-class RobotTests(unittest.TestCase):
+c_ RobotTests(unittest.TestCase):
 
-    ___ test_init(self):
+    ___ test_init
         robot = Robot()
-        self.assertEqual(robot.coordinates, (0, 0))
-        self.assertEqual(robot.bearing, NORTH)
+        assertEqual(robot.coordinates, (0, 0))
+        assertEqual(robot.bearing, NORTH)
 
-    ___ test_setup(self):
+    ___ test_setup
         robot = Robot(SOUTH, -1, 1)
-        self.assertEqual(robot.coordinates, (-1, 1))
-        self.assertEqual(robot.bearing, SOUTH)
+        assertEqual(robot.coordinates, (-1, 1))
+        assertEqual(robot.bearing, SOUTH)
 
-    ___ test_turn_right(self):
+    ___ test_turn_right
         robot = Robot()
         ___ direction __ [EAST, SOUTH, WEST, NORTH]:
             robot.turn_right()
-            self.assertEqual(robot.bearing, direction)
+            assertEqual(robot.bearing, direction)
 
-    ___ test_turn_left(self):
+    ___ test_turn_left
         robot = Robot()
         ___ direction __ [WEST, SOUTH, EAST, NORTH]:
             robot.turn_left()
-            self.assertEqual(robot.bearing, direction)
+            assertEqual(robot.bearing, direction)
 
-    ___ test_advance_positive_north(self):
+    ___ test_advance_positive_north
         robot = Robot(NORTH, 0, 0)
         robot.advance()
-        self.assertEqual(robot.coordinates, (0, 1))
-        self.assertEqual(robot.bearing, NORTH)
+        assertEqual(robot.coordinates, (0, 1))
+        assertEqual(robot.bearing, NORTH)
 
-    ___ test_advance_positive_east(self):
+    ___ test_advance_positive_east
         robot = Robot(EAST, 0, 0)
         robot.advance()
-        self.assertEqual(robot.coordinates, (1, 0))
-        self.assertEqual(robot.bearing, EAST)
+        assertEqual(robot.coordinates, (1, 0))
+        assertEqual(robot.bearing, EAST)
 
-    ___ test_advance_negative_south(self):
+    ___ test_advance_negative_south
         robot = Robot(SOUTH, 0, 0)
         robot.advance()
-        self.assertEqual(robot.coordinates, (0, -1))
-        self.assertEqual(robot.bearing, SOUTH)
+        assertEqual(robot.coordinates, (0, -1))
+        assertEqual(robot.bearing, SOUTH)
 
-    ___ test_advance_positive_west(self):
+    ___ test_advance_positive_west
         robot = Robot(WEST, 0, 0)
         robot.advance()
-        self.assertEqual(robot.coordinates, (-1, 0))
-        self.assertEqual(robot.bearing, WEST)
+        assertEqual(robot.coordinates, (-1, 0))
+        assertEqual(robot.bearing, WEST)
 
-    ___ test_simulate_prog1(self):
+    ___ test_simulate_prog1
         robot = Robot(NORTH, 0, 0)
         robot.simulate("LAAARALA")
-        self.assertEqual(robot.coordinates, (-4, 1))
-        self.assertEqual(robot.bearing, WEST)
+        assertEqual(robot.coordinates, (-4, 1))
+        assertEqual(robot.bearing, WEST)
 
-    ___ test_simulate_prog2(self):
+    ___ test_simulate_prog2
         robot = Robot(EAST, 2, -7)
         robot.simulate("RRAAAAALA")
-        self.assertEqual(robot.coordinates, (-3, -8))
-        self.assertEqual(robot.bearing, SOUTH)
+        assertEqual(robot.coordinates, (-3, -8))
+        assertEqual(robot.bearing, SOUTH)
 
-    ___ test_simulate_prog3(self):
+    ___ test_simulate_prog3
         robot = Robot(SOUTH, 8, 4)
         robot.simulate("LAAARRRALLLL")
-        self.assertEqual(robot.coordinates, (11, 5))
-        self.assertEqual(robot.bearing, NORTH)
+        assertEqual(robot.coordinates, (11, 5))
+        assertEqual(robot.bearing, NORTH)
 
 
 __ __name__ __ '__main__':
@@ -77,4 +77,4 @@ __ __name__ __ '__main__':
     line_compare = l.... a, b: get_line_number(a) - get_line_number(b)
     loader.sortTestMethodsUsing = line_compare
 
-    unittest.main(testLoader=loader, failfast=True, verbosity=2)
+    unittest.main(testLoader=loader, failfast=T.., verbosity=2)

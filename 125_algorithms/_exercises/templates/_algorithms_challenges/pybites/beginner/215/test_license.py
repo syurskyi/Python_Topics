@@ -7,8 +7,8 @@ ALPHABET = ascii_uppercase + digits
 
 
 ___ _create_license():
-    r.. 'PB-' + '-'.join(
-        [''.join(random.sample(ALPHABET, 8))
+    r.. 'PB-' + '-'.j..(
+        [''.j..(random.sample(ALPHABET, 8))
          ___ _ __ r..(4)]
     )
 
@@ -21,13 +21,13 @@ ___ test_valid_license():
 
 ___ test_return_type():
     key = _create_license()
-    ... validate_license(key) __ True
-    ... validate_license(key[:-1]) __ False
+    ... validate_license(key) __ T..
+    ... validate_license(key[:-1]) __ F..
 
 
 ___ test_invalid_license():
     pool = [_create_license() ___ _ __ r..(5)]
-    lcase_key = pool[0].lower()
+    lcase_key = pool[0].l..
     ... n.. validate_license(lcase_key)
     shorter_key = pool[1][:-2]
     ... n.. validate_license(shorter_key)

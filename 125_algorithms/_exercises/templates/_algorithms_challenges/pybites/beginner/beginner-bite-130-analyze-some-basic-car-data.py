@@ -40,7 +40,7 @@ with requests.Session() as s:
 ___ most_prolific_automaker(year):
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
-    result = {}
+    result    # dict
     ___ d __ data:
         __ d['year'] __ year:
             try:
@@ -49,7 +49,7 @@ ___ most_prolific_automaker(year):
                 result[d['automaker']] = 0
     t = ""
     cur = 0
-    ___ k,v __ result.items():
+    ___ k,v __ result.i..:
         __ v > cur:
             t = k
             cur = v

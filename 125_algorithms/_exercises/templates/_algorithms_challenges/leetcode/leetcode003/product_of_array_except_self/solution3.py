@@ -12,7 +12,7 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ productExceptSelf(self, nums):
         """
         :type nums: List[int]

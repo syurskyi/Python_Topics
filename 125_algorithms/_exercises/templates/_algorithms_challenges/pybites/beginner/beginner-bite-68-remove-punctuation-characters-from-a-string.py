@@ -14,13 +14,13 @@ ___ remove_punctuation_solution_1(input_string):
         __ c __ string.punctuation:
             continue
         new_str.a..(c)
-    out = ''.join(new_str)
+    out = ''.j..(new_str)
     print(out)
 
 ___ remove_punctuation_solution_2(input_string):
     """Return a str with punctuation chards stripped out"""
     new_list = [i ___ i __ input_string __ i n.. __ string.punctuation]
-    out = ''.join(new_list)
+    out = ''.j..(new_list)
     r.. out
 
 ___ remove_punctuation_solution_3(input_string):

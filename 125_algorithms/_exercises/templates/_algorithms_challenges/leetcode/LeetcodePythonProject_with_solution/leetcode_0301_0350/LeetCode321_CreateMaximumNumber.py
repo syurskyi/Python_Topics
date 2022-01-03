@@ -4,7 +4,7 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxNumber(self, nums1, nums2, k):
         len1, len2 = l..(nums1), l..(nums2)
         result    # list
@@ -12,9 +12,9 @@ class Solution(object):
             j = k-i
             __ i > len1 o. j > len2:
                 continue
-            left = self.getMax(nums1, i)
-            right = self.getMax(nums2, j)
-            tmpResult = self.merge(left, right)
+            left = getMax(nums1, i)
+            right = getMax(nums2, j)
+            tmpResult = merge(left, right)
             result = max(result, tmpResult)
         r.. result
     
@@ -41,7 +41,7 @@ class Solution(object):
             result.a..(nums2.pop(0))
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 [3, 4, 6, 5],
@@ -68,7 +68,7 @@ class Solution(object):
             print('nums1: %s' % (nums1))
             print('nums2: %s' % (nums2))
             print('k: %s' % (k))
-            result = self.maxNumber(nums1, nums2, k)
+            result = maxNumber(nums1, nums2, k)
             print('result: %s' % (result))
             print('-='*20+'-')
 

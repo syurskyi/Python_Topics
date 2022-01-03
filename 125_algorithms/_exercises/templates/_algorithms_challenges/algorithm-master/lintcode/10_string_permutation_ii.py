@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: S: A string
     @return: all permutations
@@ -10,17 +10,17 @@ class Solution:
         S = s..(S)
 
         ans    # list
-        self.dfs(S, ans, [])
+        dfs(S, ans, [])
         r.. ans
 
     ___ dfs(self, S, ans, path):
         __ n.. S:
-            ans.a..(''.join(path))
+            ans.a..(''.j..(path))
             r..
 
         ___ i __ r..(l..(S)):
             __ i > 0 a.. S[i] __ S[i - 1]:
                 continue
             path.a..(S[i])
-            self.dfs(S[:i] + S[i + 1:], ans, path)
+            dfs(S[:i] + S[i + 1:], ans, path)
             path.pop()

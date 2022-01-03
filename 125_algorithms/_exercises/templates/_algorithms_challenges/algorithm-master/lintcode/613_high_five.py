@@ -8,17 +8,17 @@ class Record:
 ____ heapq _______ heappop, heappush
 
 
-class Solution:
+c_ Solution:
     # @param {Record[]} results a list of <student_id, score>
     # @return {dict(id, average)} find the average of 5 highest scores for each person
     # <key, value> (student_id, average_score)
     ___ highFive(self, results):
-        ans = {}
+        ans    # dict
         __ n.. results:
             r.. ans
 
         k = 5
-        top_k = {}
+        top_k    # dict
 
         ___ r __ results:
             __ r.id n.. __ top_k:
@@ -30,7 +30,7 @@ class Solution:
                 heappop(top_k[r.id])
 
         _sum = 0
-        ___ id, scores __ top_k.items():
+        ___ id, scores __ top_k.i..:
             _sum = 0
             ___ score __ scores:
                 _sum += score

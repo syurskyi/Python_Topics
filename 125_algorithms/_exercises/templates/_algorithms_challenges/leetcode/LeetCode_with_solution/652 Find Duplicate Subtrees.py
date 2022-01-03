@@ -27,34 +27,34 @@ Therefore, you need to return above trees' root in the form of a list.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class MerkleHash:
-    ___ __init__(self):
-        self.start_key = 0
-        self.merkle_hash = defaultdict(self._auto_incr)  # subtree -> id
+c_ MerkleHash:
+    ___ - ):
+        start_key = 0
+        merkle_hash = defaultdict(_auto_incr)  # subtree -> id
 
-    ___ _auto_incr(self):
-        self.start_key += 1
-        r.. self.start_key
+    ___ _auto_incr
+        start_key += 1
+        r.. start_key
 
     ___ __call__(self, val):
-        r.. self.merkle_hash[val]
+        r.. merkle_hash[val]
 
 
-class Solution:
-    ___ __init__(self):
-        self.counter = defaultdict(int)
-        self.merkle_hash = MerkleHash()
+c_ Solution:
+    ___ - ):
+        counter = defaultdict(int)
+        merkle_hash = MerkleHash()
 
     ___ findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
         """
@@ -63,7 +63,7 @@ class Solution:
         Chain of hash can uniquely identify a subtree
         """
         ret    # list
-        self.walk(root, ret)
+        walk(root, ret)
         r.. ret
 
     ___ walk(self, cur, ret) -> int:
@@ -71,24 +71,24 @@ class Solution:
         return merkle hash id
         """
         __ n.. cur:
-            r.. self.merkle_hash(N..)
+            r.. merkle_hash(N..)
 
-        subtree_value = (cur.val, self.walk(cur.left, ret), self.walk(cur.right, ret))
-        merkle_hash = self.merkle_hash(subtree_value)
-        __ self.counter[merkle_hash] __ 1:
+        subtree_value = (cur.val, walk(cur.left, ret), walk(cur.right, ret))
+        merkle_hash = merkle_hash(subtree_value)
+        __ counter[merkle_hash] __ 1:
             ret.a..(cur)
 
-        self.counter[merkle_hash] += 1
+        counter[merkle_hash] += 1
         r.. merkle_hash
 
 
-class Solution2:
+c_ Solution2:
     ___ findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
         """
         Only need to return the root
         """
         ret    # list
-        self.walk(root, defaultdict(int), ret)
+        walk(root, defaultdict(int), ret)
         r.. ret
 
     ___ walk(self, cur, counter, ret) -> s..:
@@ -114,9 +114,9 @@ class Solution2:
         __ n.. cur:
             r.. "None"
 
-        cur_key = ",".join([
-            self.walk(cur.left, counter, ret),
-            self.walk(cur.right, counter, ret),
+        cur_key = ",".j..([
+            walk(cur.left, counter, ret),
+            walk(cur.right, counter, ret),
             s..(cur.val),
         ])
         __ counter[cur_key] __ 1:

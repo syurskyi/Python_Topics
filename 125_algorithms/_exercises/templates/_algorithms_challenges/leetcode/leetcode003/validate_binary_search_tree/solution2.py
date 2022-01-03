@@ -17,23 +17,23 @@ Both the left and right subtrees must also be binary search trees.
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isValidBST(self, root):
         maxsize = 9223372036854775806  # Assumed sys.maxsize on 64-bit platform
         INT_MIN = -maxsize - 1
         INT_MAX = maxsize
-        r.. self.is_valid_bst_aux(root, INT_MIN, INT_MAX)
+        r.. is_valid_bst_aux(root, INT_MIN, INT_MAX)
 
     ___ is_valid_bst_aux(self, root, min_val, max_val):
         """Assume that keys are distinct integers"""
         __ root __ N..
-            r.. True
+            r.. T..
         __ root.val < min_val o. root.val > max_val:
-            r.. False
+            r.. F..
         # If non-distinct values are allowed, + 1 and - 1 to root.val can be
         # removed
-        is_left_bst = self.is_valid_bst_aux(root.left, min_val, root.val - 1)
-        is_right_bst = self.is_valid_bst_aux(root.right, root.val + 1, max_val)
+        is_left_bst = is_valid_bst_aux(root.left, min_val, root.val - 1)
+        is_right_bst = is_valid_bst_aux(root.right, root.val + 1, max_val)
         r.. is_left_bst a.. is_right_bst

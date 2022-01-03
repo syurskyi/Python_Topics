@@ -3,7 +3,7 @@ Created on Oct 10, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ pushDominoes(self, dominoes):
         """
         :type dominoes: str
@@ -16,22 +16,22 @@ class Solution(object):
             i += 1
         __ i < n a.. arr[i] __ 'L' a.. i > 0:
             arr[0] = 'L'
-            self.setVals(arr, 0, i)
+            setVals(arr, 0, i)
         w.... i < n:
             __ arr[i] __ 'L' o. arr[i] __ 'R':
                 j = i+1
                 w.... j < n a.. arr[j] __ '.':
                     j += 1
                 __ j < n:
-                    self.setVals(arr, i, j)
+                    setVals(arr, i, j)
             i += 1
         i = n-1
         w.... i >= 0 a.. arr[i] __ '.':
             i -= 1
         __ i >= 0 a.. arr[i] __ 'R' a.. i < n:
             arr[-1] = 'R'
-            self.setVals(arr, i, n-1)
-        r.. ''.join(arr)
+            setVals(arr, i, n-1)
+        r.. ''.j..(arr)
     
     ___ setVals(self, arr, i, j):
         __ arr[i] __ arr[j]:
@@ -45,7 +45,7 @@ class Solution(object):
                 i += 1
                 j -= 1
     
-    ___ test(self):
+    ___ test
         testCases = [
             '.',
             '.L.R...LR..L..',
@@ -55,7 +55,7 @@ class Solution(object):
         ]
         ___ dominoes __ testCases:
             print('origin: %s' % dominoes)
-            result = self.pushDominoes(dominoes)
+            result = pushDominoes(dominoes)
             print('result: %s' % result)
             print('-='*30+'-')
 

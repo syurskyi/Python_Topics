@@ -6,7 +6,7 @@ THUMBS_UP = '👍'  # in case you go f-string ...
 
 # move these into an Enum:
 
-class Score(Enum):
+c_ Score(Enum):
     BEGINNER = 2
     INTERMEDIATE = 3
     ADVANCED = 4
@@ -14,8 +14,8 @@ class Score(Enum):
 
     
 
-    ___ __str__(self):
-        r.. f"{self.name} => {THUMBS_UP * self.value}"
+    ___ __str__
+        r.. f"{name} => {THUMBS_UP * value}"
 
 
 

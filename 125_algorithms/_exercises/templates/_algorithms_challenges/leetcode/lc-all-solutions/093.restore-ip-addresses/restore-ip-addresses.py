@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ restoreIpAddresses(self, s):
     """
     :type s: str
@@ -9,10 +9,10 @@ class Solution(object):
 
     ___ isValid(num):
       __ l..(num) __ 1:
-        r.. True
+        r.. T..
       __ l..(num) > 1 a.. num[0] != "0" a.. int(num) <= 255:
-        r.. True
-      r.. False
+        r.. T..
+      r.. F..
 
     ___ i __ r..(0, m..(3, n - 3)):
       a = s[:i + 1]

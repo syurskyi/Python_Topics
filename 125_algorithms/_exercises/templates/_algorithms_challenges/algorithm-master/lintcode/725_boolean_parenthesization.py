@@ -3,7 +3,7 @@ REF: https://blog.csdn.net/zhaohengchuan/article/details/78937943
 """
 
 
-class Solution:
+c_ Solution:
     ___ countParenth(self, symb, oper):
         """
         :type symb: list[str]

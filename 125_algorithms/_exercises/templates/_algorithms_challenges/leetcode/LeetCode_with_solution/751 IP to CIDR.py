@@ -65,7 +65,7 @@ weights = [
 ]
 
 
-class Solution:
+c_ Solution:
     ___ ipToCIDR(self, ip: s.., n: int) -> List[s..]:
         """
         bit manipulation
@@ -88,17 +88,17 @@ class Solution:
         Iterate LSB to the next LSB skipping 1's
         num += lsb
         """
-        num_ip = self.to_bin(ip)
+        num_ip = to_bin(ip)
         ret    # list
         w.... n > 0:
-            lsb = self.get_lsb(num_ip)
+            lsb = get_lsb(num_ip)
             w.... (1 << lsb) > n:
                 lsb -= 1
 
             cur_cover = 1 << lsb
             n -= cur_cover
             ret.a..(
-                self.to_ip(num_ip) + f"/{32-lsb}"
+                to_ip(num_ip) + f"/{32-lsb}"
             )
             num_ip += cur_cover
 
@@ -117,7 +117,7 @@ class Solution:
             ret.a..(
                 (bin >> w) & 255
             )
-        r.. ".".join(map(s.., ret))
+        r.. ".".j..(map(s.., ret))
 
     ___ get_lsb(self, n):
         lsb = 0

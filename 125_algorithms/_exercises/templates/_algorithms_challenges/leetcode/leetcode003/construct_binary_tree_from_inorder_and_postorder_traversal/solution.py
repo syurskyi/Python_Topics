@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param inorder, a list of integers
     # @param postorder, a list of integers
     # @return a tree node
@@ -16,8 +16,8 @@ class Solution:
             d = postorder[-1]
             root = TreeNode(d)
             i = inorder.index(d)
-            left = self.buildTree(inorder[:i], postorder[:i])
-            right = self.buildTree(inorder[i + 1:], postorder[i:-1])
+            left = buildTree(inorder[:i], postorder[:i])
+            right = buildTree(inorder[i + 1:], postorder[i:-1])
             root.left = left
             root.right = right
             r.. root

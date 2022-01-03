@@ -5,13 +5,13 @@ Given an n-ary tree, return the level order traversal of its nodes' values. (ie,
 
 
 # Definition for a Node.
-class Node:
-    ___ __init__(self, val, children):
-        self.val = val
-        self.children = children
+c_ Node:
+    ___ - , val, children):
+        val = val
+        children = children
 
 
-class Solution:
+c_ Solution:
     ___ levelOrder(self, root):
         """
         BFS

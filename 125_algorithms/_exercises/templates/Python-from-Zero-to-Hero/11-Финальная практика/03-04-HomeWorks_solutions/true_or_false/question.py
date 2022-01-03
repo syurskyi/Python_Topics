@@ -2,7 +2,7 @@ ____ dataclasses _______ dataclass
 
 
 @dataclass(frozenTrue)
-class Question:
+c_ Question:
     text: s..
     is_true: bool
     explanation: s..

@@ -1,3 +1,3 @@
-class SpaceAge(object):
-    ___ __init__(self):
+c_ SpaceAge(object):
+    ___ - ):
         pass

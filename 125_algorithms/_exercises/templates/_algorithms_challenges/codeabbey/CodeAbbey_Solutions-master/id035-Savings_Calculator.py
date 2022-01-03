@@ -11,5 +11,5 @@ ___ savingsCalc(calculations):
             start *= rate
             year += 1
         answer.a..(s..(year))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 savingsCalc(input())

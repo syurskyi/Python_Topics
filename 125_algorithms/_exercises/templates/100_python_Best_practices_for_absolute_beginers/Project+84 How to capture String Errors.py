@@ -1,6 +1,6 @@
 x  input("Insert numbers only: ")
 
-w___ type(x) ! float:
+w___ t..(x) ! float:
     try:
         x  float(x)
     except ValueError:

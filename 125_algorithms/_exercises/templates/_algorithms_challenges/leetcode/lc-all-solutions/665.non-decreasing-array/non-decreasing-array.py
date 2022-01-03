@@ -1,10 +1,10 @@
-class Solution(object):
+c_ Solution(object):
   ___ checkPossibility(self, nums):
     """
     :type nums: List[int]
     :rtype: bool
     """
-    flag = False
+    flag = F..
     pre = float("-inf")
     ___ i __ r..(l..(nums) - 1):
       __ nums[i] < pre:
@@ -12,7 +12,7 @@ class Solution(object):
           nums[i] = nums[i + 1]
         ____:
           nums[i - 1] = nums[i]
-        flag = True
+        flag = T..
         break
       pre = nums[i]
     __ n.. flag a.. l..(nums) > 1 a.. nums[-1] < nums[-2]:
@@ -20,6 +20,6 @@ class Solution(object):
     pre = float("-inf")
     ___ num __ nums:
       __ num < pre:
-        r.. False
+        r.. F..
       pre = num
-    r.. True
+    r.. T..

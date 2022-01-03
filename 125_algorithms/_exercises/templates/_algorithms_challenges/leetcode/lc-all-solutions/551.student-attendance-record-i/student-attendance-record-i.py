@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ checkRecord(self, s):
     """
     :type s: str
@@ -14,5 +14,5 @@ class Solution(object):
       ____:
         l = 0
       __ a > 1 o. l > 2:
-        r.. False
-    r.. True
+        r.. F..
+    r.. T..

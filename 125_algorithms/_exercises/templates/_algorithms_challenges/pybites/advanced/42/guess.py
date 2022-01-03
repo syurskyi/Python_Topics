@@ -8,20 +8,20 @@ ___ get_random_number():
     r.. random.randint(START, END)
 
 
-class Game:
+c_ Game:
     """Number guess class, make it callable to initiate game"""
 
-    ___ __init__(self):
+    ___ - ):
         """Init _guesses, _answer, _win to set(), get_random_number(), False"""
-        self._guesses = set()
-        self._answer = get_random_number()
-        self._win = False
+        _guesses = set()
+        _answer = get_random_number()
+        _win = F..
 
 
 
 
 
-    ___ guess(self):
+    ___ guess
         """Ask user for input, convert to int, raise ValueError outputting
            the following errors when applicable:
            'Please enter a number'
@@ -43,10 +43,10 @@ class Game:
             ____:
                 __ n.. START <= result <= END:
                     print('Number not in range')
-                ____ result __ self._guesses:
+                ____ result __ _guesses:
                     print('Already guessed')
                 ____:
-                    self._guesses.add(result)
+                    _guesses.add(result)
                     r.. result
                 raise ValueError
              
@@ -65,17 +65,17 @@ class Game:
            {guess} is too high
            Return a boolean"""
         
-        correct = False
-        __ guess __ self._answer:
+        correct = F..
+        __ guess __ _answer:
             print(f"{guess} is correct!")
-            correct = True
-        ____ guess > self._answer:
+            correct = T..
+        ____ guess > _answer:
             print(f"{guess} is too high")
         ____:
             print(f"{guess} is too low")
         
         r.. correct
-    ___ __call__(self):
+    ___ __call__
         """Entry point / game loop, use a loop break/continue,
            see the tests for the exact win/lose messaging"""
 
@@ -83,24 +83,24 @@ class Game:
         ___ i __ r..(1,MAX_GUESSES + 1):
             w... T...
                 try:
-                    user_guess = self.guess()
+                    user_guess = guess()
                 except ValueError:
                     pass
                 ____:
                     break
 
             
-            self._win = self._validate_guess(user_guess)
+            _win = _validate_guess(user_guess)
 
 
-            __ self._win:
+            __ _win:
                 break
 
 
-        __ self._win:
+        __ _win:
             print(f"It took you {i} guesses")
         ____:
-            print(f"Guessed 5 times, answer was {self._answer}")
+            print(f"Guessed 5 times, answer was {_answer}")
             
 
 

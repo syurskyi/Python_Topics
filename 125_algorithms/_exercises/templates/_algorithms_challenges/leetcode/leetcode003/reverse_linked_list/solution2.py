@@ -9,13 +9,13 @@ implement both?
 """
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ reverseList(self, head):
         """
         :type head: ListNode
@@ -26,7 +26,7 @@ class Solution(object):
         __ head __ N..
             r.. N..
         ____:
-            rev_rest = self.reverseList(head.next)
+            rev_rest = reverseList(head.next)
             current = rev_rest
             __ current __ N..
                 r.. head

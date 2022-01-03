@@ -26,7 +26,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ longestSubstring(self, s, k):
         """
         D & C, forming boundary by the letter of min count
@@ -49,5 +49,5 @@ class Solution(object):
             r.. l..(s)
 
         r.. max(
-            map(l.... x: self.longestSubstring(x, k), s.s..(c))
+            map(l.... x: longestSubstring(x, k), s.s..(c))
         )

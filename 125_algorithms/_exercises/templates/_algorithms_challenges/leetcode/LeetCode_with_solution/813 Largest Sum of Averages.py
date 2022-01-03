@@ -29,7 +29,7 @@ Answers within 10^-6 of the correct answer will be accepted as correct.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ largestSumOfAverages(self, A: List[int], K: int) -> float:
         """
         Memoized Backtracking + Prefix sum
@@ -44,8 +44,8 @@ class Solution:
         ___ i __ r..(1, n+1):
             prefix_sum[i] = prefix_sum[i-1] + A[i-1]
 
-        F = {}
-        self.dfs(A, n, prefix_sum, F, K)
+        F    # dict
+        dfs(A, n, prefix_sum, F, K)
         r.. F[n, K]
 
     ___ dfs(self, A, l, prefix_sum, F, k):
@@ -66,7 +66,7 @@ class Solution:
                     trail = (prefix_sum[l] - prefix_sum[j]) / (l - j)
                     ret = max(
                         ret,
-                        self.dfs(A, j, prefix_sum, F, k-1) + trail
+                        dfs(A, j, prefix_sum, F, k-1) + trail
                     )
 
             F[l, k] = ret
@@ -87,7 +87,7 @@ class Solution:
             ret += avg
             ret += max(
                 # error
-                self.dfs(A, j, prefix_sum, F, k - 1)
+                dfs(A, j, prefix_sum, F, k - 1)
                 ___ j __ r..(i, l..(A))
             )
             F[i, k] = ret

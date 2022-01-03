@@ -34,6 +34,6 @@ ____ typing _______ List
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ kClosest(self, points: List[List[int]], K: int) -> List[List[int]]:
         r.. heapq.nsmallest(K, points, key=l.... x: x[0]**2 + x[1]**2)

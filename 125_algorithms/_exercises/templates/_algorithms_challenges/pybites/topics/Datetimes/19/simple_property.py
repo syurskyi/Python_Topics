@@ -1,12 +1,12 @@
 ____ d__ _______ d__
 
-NOW = d__.now()
+NOW = d__.n..
 
-class Promo:
-    ___ __init__(self, app, expirydate):
-        self.app = app
-        self.expirydate = expirydate
+c_ Promo:
+    ___ - , app, expirydate):
+        app = app
+        expirydate = expirydate
 
-    @property
-    ___ expired(self):
-        r.. NOW > self.expirydate
+    $
+    ___ expired
+        r.. NOW > expirydate

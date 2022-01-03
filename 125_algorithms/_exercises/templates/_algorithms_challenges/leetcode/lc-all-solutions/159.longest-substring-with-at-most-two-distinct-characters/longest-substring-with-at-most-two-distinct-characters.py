@@ -1,10 +1,10 @@
-class Solution(object):
+c_ Solution(object):
   ___ lengthOfLongestSubstringTwoDistinct(self, s):
     """
     :type s: str
     :rtype: int
     """
-    r.. self.lengthOfLongestSubstringKDistinct(s, 2)
+    r.. lengthOfLongestSubstringKDistinct(s, 2)
 
   ___ lengthOfLongestSubstringKDistinct(self, s, k):
     """
@@ -17,7 +17,7 @@ class Solution(object):
     ans = 0
     j = 0
     score = 0
-    chashmap = {}
+    chashmap    # dict
     ___ i __ r..(0, l..(s)):
       w.... j < l..(s) a.. (score < k o. chashmap.get(s[j], 0) != 0):
         __ chashmap.get(s[j], 0) __ 0:

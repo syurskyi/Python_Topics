@@ -5,25 +5,25 @@ Created on Mar 8, 2017
 '''
 
 _______ heapq
-class MedianFinder(object):
-    ___ __init__(self):
+c_ MedianFinder(object):
+    ___ - ):
         # minHeap save positive values: 7, 9
-        self.minHeap    # list
+        minHeap    # list
         # maxHeap save negative values: -5, -3, -2
-        self.maxHeap    # list
+        maxHeap    # list
 
     ___ addNum(self, num):
-        __ (n.. self.minHeap a.. n.. self.maxHeap) o. num < -self.maxHeap[0]:
-            heapq.heappush(self.maxHeap, -num)
-            __ l..(self.maxHeap) > l..(self.minHeap) + 1:
-                heapq.heappush(self.minHeap, -heapq.heappop(self.maxHeap))
+        __ (n.. minHeap a.. n.. maxHeap) o. num < -maxHeap[0]:
+            heapq.heappush(maxHeap, -num)
+            __ l..(maxHeap) > l..(minHeap) + 1:
+                heapq.heappush(minHeap, -heapq.heappop(maxHeap))
         ____:
-            heapq.heappush(self.minHeap, num)
-            __ l..(self.minHeap) > l..(self.maxHeap):
-                heapq.heappush(self.maxHeap, -heapq.heappop(self.minHeap))
+            heapq.heappush(minHeap, num)
+            __ l..(minHeap) > l..(maxHeap):
+                heapq.heappush(maxHeap, -heapq.heappop(minHeap))
     
-    ___ findMedian(self):
-        __ l..(self.minHeap) __ l..(self.maxHeap):
-            r.. (self.minHeap[0] - self.maxHeap[0])/2.0
+    ___ findMedian
+        __ l..(minHeap) __ l..(maxHeap):
+            r.. (minHeap[0] - maxHeap[0])/2.0
         ____:
-            r.. -self.maxHeap[0]
+            r.. -maxHeap[0]

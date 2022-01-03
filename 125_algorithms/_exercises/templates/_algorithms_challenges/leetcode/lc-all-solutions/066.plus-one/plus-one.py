@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ plusOne(self, digits):
     """
     :type digits: List[int]

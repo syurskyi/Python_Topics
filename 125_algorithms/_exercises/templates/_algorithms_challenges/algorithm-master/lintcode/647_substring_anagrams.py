@@ -3,7 +3,7 @@ REF: https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/
 """
 
 
-class Solution:
+c_ Solution:
     ___ findAnagrams(self, s, t):
         """
         :type s: str
@@ -14,7 +14,7 @@ class Solution:
         __ n.. s o. n.. t o. l..(t) > l..(s):
             r.. ans
 
-        F = {}
+        F    # dict
         ___ c __ t:
             F[c] = F.get(c, 0) + 1
 

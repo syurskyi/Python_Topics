@@ -1,7 +1,7 @@
-_______ re
+_______ __
 
 
-class Solution:
+c_ Solution:
     ___ fractionAddition(self, E):
         """
         :type E: str
@@ -18,7 +18,7 @@ class Solution:
 
         a, b = 0, 1
         i = 0
-        ___ frac __ re.s..('\+|-', E):
+        ___ frac __ __.s..('\+|-', E):
             __ n.. frac:
                 continue
 
@@ -34,7 +34,7 @@ class Solution:
 
             b = b * _b
 
-            gcd = self.get_gcd(a, b)
+            gcd = get_gcd(a, b)
             a //= gcd
             b //= gcd
 

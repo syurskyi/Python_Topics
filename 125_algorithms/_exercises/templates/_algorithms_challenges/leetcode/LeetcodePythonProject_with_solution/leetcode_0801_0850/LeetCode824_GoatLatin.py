@@ -3,7 +3,7 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ toGoatLatin(self, S):
         """
         :type S: str
@@ -24,14 +24,14 @@ class Solution(object):
             res += ' ' + word
         r.. res[1:]
     
-    ___ test(self):
+    ___ test
         testCases = [
             'I speak Goat Latin',
             'The quick brown fox jumped over the lazy dog',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.toGoatLatin(s)
+            result = toGoatLatin(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

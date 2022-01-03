@@ -2,7 +2,7 @@ ___ romanize(decimal_number):
     """Takes a decimal number int and converts its Roman Numeral str"""
 
 
-    __ type(decimal_number) != int o. n.. 0 < decimal_number < 4000:
+    __ t..(decimal_number) != int o. n.. 0 < decimal_number < 4000:
         raise ValueError("Invalid number")
 
 
@@ -11,7 +11,7 @@ ___ romanize(decimal_number):
 
     result    # list
 
-    ___ base_value,numeral __ number_to_numeral.items():
+    ___ base_value,numeral __ number_to_numeral.i..:
         
         __ base_value > decimal_number:
             continue
@@ -23,7 +23,7 @@ ___ romanize(decimal_number):
             break
 
 
-    r.. ''.join(result)
+    r.. ''.j..(result)
     
 
 

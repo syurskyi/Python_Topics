@@ -1,17 +1,17 @@
-class Solution:
+c_ Solution:
     ___ containsDuplicate(self, A):
         """
         :type A: List[int]
         :rtype: bool
         """
         __ n.. A:
-            r.. False
+            r.. F..
 
         S = set()
 
         ___ a __ A:
             __ a __ S:
-                r.. True
+                r.. T..
             S.add(a)
 
-        r.. False
+        r.. F..

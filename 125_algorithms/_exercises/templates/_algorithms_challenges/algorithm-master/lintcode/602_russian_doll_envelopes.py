@@ -6,7 +6,7 @@ REF: https://leetcode.com/problems/russian-doll-envelopes/discuss/82763
 ____ bisect _______ bisect_left
 
 
-class Solution:
+c_ Solution:
     """
     @param: E: a number of envelopes with widths and heights
     @return: the maximum number of envelopes
@@ -31,7 +31,7 @@ class Solution:
 """
 DP: TLE
 """
-class Solution:
+c_ Solution:
     """
     @param: E: a number of envelopes with widths and heights
     @return: the maximum number of envelopes

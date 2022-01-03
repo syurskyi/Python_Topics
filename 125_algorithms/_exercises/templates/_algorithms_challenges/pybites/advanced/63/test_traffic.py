@@ -34,7 +34,7 @@ ___ test_equal_values_in_islice(slice1):
 
 
 ___ test_return_types(slice2):
-    ... a..(type(state) __ State ___ state __ slice2)
+    ... a..(t..(state) __ State ___ state __ slice2)
 
 
 @pytest.mark.parametrize("color, expected", [

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: nums: an integer array
     @param: target: An integer

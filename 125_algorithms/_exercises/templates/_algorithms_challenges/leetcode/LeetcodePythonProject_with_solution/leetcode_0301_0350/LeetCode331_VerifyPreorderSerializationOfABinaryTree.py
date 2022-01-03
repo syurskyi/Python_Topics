@@ -4,9 +4,9 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ isValidSerialization(self, preorder):
-        __ n.. preorder: r.. False
+        __ n.. preorder: r.. F..
         nodes = preorder.s..(',')
         stack    # list
         ___ node __ nodes:

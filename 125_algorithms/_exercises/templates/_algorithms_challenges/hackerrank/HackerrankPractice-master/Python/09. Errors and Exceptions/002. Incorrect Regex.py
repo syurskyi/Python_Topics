@@ -2,11 +2,11 @@
 # Score: 20
 
 
-_______ re
+_______ __
 
 
 ___ _ __ r..(int(input())):
     try:
-        print(bool(re.compile(input())))
-    except re.error:
+        print(bool(__.c..(input())))
+    except __.error:
         print('False')

@@ -3,7 +3,7 @@ Created on Sep 12, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ scoreOfParentheses(self, S):
         """
         :type S: str
@@ -19,7 +19,7 @@ class Solution(object):
                 cur += stack.pop() + max(cur, 1)
         r.. cur
     
-    ___ test(self):
+    ___ test
         testCases = [
             '()',
             '(())',
@@ -28,7 +28,7 @@ class Solution(object):
             '(()(()))',
         ]
         ___ s __ testCases:
-            res = self.scoreOfParentheses(s)
+            res = scoreOfParentheses(s)
             print('res: %s' % res)
             print('-='*30+'-')
 

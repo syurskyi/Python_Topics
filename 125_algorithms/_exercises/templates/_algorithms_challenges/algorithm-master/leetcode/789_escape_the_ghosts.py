@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ escapeGhosts(self, ghosts, target):
         """
         :type ghosts: List[List[int]]
@@ -11,6 +11,6 @@ class Solution:
         ___ x, y __ ghosts:
             ghost_dist = abs(R - x) + abs(C - y)
             __ ghost_dist <= pacman_dist:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..

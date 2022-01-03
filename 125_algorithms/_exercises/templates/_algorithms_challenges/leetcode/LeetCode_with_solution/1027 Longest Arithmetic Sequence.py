@@ -33,7 +33,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ longestArithSeqLength(self, A: List[int]) -> int:
         """
         Brute force O(n^2)
@@ -47,8 +47,8 @@ class Solution:
                 F[i][delta] = F[j][delta] + 1
 
         ret = 0
-        ___ d __ F.values():
-            ___ v __ d.values():
+        ___ d __ F.v..
+            ___ v __ d.v..
                 ret = max(ret, v)
 
         r.. ret

@@ -5,7 +5,7 @@ ____ eggs _______ EggCreator, COLORS
 
 ___ test_iterator_type():
     eg = EggCreator(10)
-    ... type(eg) __ EggCreator
+    ... t..(eg) __ EggCreator
 
 
 ___ test_len_iterator_is_limit_input_arg():

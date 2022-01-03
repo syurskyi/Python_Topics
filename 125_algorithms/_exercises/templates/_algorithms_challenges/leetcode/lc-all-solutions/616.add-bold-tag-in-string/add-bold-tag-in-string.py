@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ addBoldTag(self, s, d..):
     """
     :type s: str
@@ -15,8 +15,8 @@ class Solution(object):
         start = loc + 1
         loc = s.find(word, start)
 
-    intervals = self.merge(intervals)
-    d = {}
+    intervals = merge(intervals)
+    d    # dict
     ___ start, end __ intervals:
       d[start] = end
     i = 0
@@ -27,7 +27,7 @@ class Solution(object):
       ____:
         ans.a..(s[i])
         i += 1
-    r.. "".join(ans)
+    r.. "".j..(ans)
 
   ___ merge(self, intervals):
     ans    # list

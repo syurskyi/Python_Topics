@@ -5,7 +5,7 @@ Non-dp version of edit distance
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isOneEditDistance(self, s, t):
         """
         String
@@ -15,8 +15,8 @@ class Solution(object):
         :rtype: bool
         """
         m, n = l..(s), l..(t)
-        __ m > n: r.. self.isOneEditDistance(t, s)
-        __ n-m > 1: r.. False
+        __ m > n: r.. isOneEditDistance(t, s)
+        __ n-m > 1: r.. F..
 
         diff = 0
         i, j = 0, 0
@@ -36,14 +36,14 @@ class Solution(object):
         r.. diff __ 1 o. diff __ 0 a.. m != n
 
 
-class Solution1(object):
+c_ Solution1(object):
     ___ isOneEditDistance(self, s, t):
         """
         Iterator version
         """
         m, n = l..(s), l..(t)
-        __ m > n: r.. self.isOneEditDistance(t, s)
-        __ n-m > 1: r.. False
+        __ m > n: r.. isOneEditDistance(t, s)
+        __ n-m > 1: r.. F..
 
         diff = 0
         i, j = iter(s), iter(t)

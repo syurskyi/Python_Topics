@@ -8,7 +8,7 @@ class ListNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param hash_table: A list of The first node of linked list
     @return: A list of The first node of linked list which have twice size

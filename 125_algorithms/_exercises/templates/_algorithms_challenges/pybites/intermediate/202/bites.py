@@ -17,7 +17,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
        Return a list of Bite IDs (int or str values are fine) of the N
        most complex Bites.
     """
-    bites = {}
+    bites    # dict
     with open(stats) as csv_file:
         csv_reader = csv.reader(csv_file)
         line_count = 0
@@ -32,7 +32,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
                 bite_num = row[0][:num_identifier].s..(" ")[1]
                 bites[bite_num] = bite_score
 
-    r.. [bite[0] ___ bite __ s..(bites.items(), key=l.... item: item[1], r.._T..[:10]][:N]
+    r.. [bite[0] ___ bite __ s..(bites.i.., key=l.... item: item[1], r.._T..[:10]][:N]
             
 
 

@@ -4,7 +4,7 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
        and return a list of dependencies that have been upgraded
        (have a newer version)
     """
-    mapping = {}
+    mapping    # dict
 
 
     ___ req __ old_reqs.s...splitlines():

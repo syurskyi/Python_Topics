@@ -1,4 +1,4 @@
-class Scale(object):
+c_ Scale(object):
 
     ASCENDING_INTERVALS = ['m', 'M', 'A']
     CHROMATIC_SCALE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A',
@@ -8,28 +8,28 @@ class Scale(object):
     FLAT_KEYS = ['F', 'Bb', 'Eb', 'Ab', 'Db', 'Gb', 'd', 'g', 'c', 'f', 'bb',
                  'eb']
 
-    ___ __init__(self, tonic, scale_name, pattern_ N..
-        self.tonic = tonic.capitalize()
-        self.name = self.tonic + ' ' + scale_name
-        self.pattern = pattern
-        self.chromatic_scale = (self.FLAT_CHROMATIC_SCALE
-                                __ tonic __ self.FLAT_KEYS ____
-                                self.CHROMATIC_SCALE)
-        self.pitches = self._assign_pitches()
+    ___ - , tonic, scale_name, pattern_ N..
+        tonic = tonic.capitalize()
+        name = tonic + ' ' + scale_name
+        pattern = pattern
+        chromatic_scale = (FLAT_CHROMATIC_SCALE
+                                __ tonic __ FLAT_KEYS ____
+                                CHROMATIC_SCALE)
+        pitches = _assign_pitches()
 
-    ___ _assign_pitches(self):
-        __ self.pattern __ N..
-            r.. self._reorder_chromatic_scale()
+    ___ _assign_pitches
+        __ pattern __ N..
+            r.. _reorder_chromatic_scale()
         last_index = 0
         pitches    # list
-        scale = self._reorder_chromatic_scale()
-        ___ i, interval __ e..(self.pattern):
+        scale = _reorder_chromatic_scale()
+        ___ i, interval __ e..(pattern):
             pitches.a..(scale[last_index])
-            last_index += self.ASCENDING_INTERVALS.index(interval) + 1
+            last_index += ASCENDING_INTERVALS.index(interval) + 1
         __ pitches[0] != scale[last_index % l..(scale)]:
             raise ValueError()
         r.. pitches
 
-    ___ _reorder_chromatic_scale(self):
-        index = self.chromatic_scale.index(self.tonic)
-        r.. self.chromatic_scale[index:] + self.chromatic_scale[:index]
+    ___ _reorder_chromatic_scale
+        index = chromatic_scale.index(tonic)
+        r.. chromatic_scale[index:] + chromatic_scale[:index]

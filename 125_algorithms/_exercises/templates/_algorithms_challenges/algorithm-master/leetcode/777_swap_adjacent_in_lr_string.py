@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ canTransform(self, start, end):
         """
         :type start: str
@@ -6,7 +6,7 @@ class Solution:
         :rtype: bool
         """
         __ l..(start) != l..(end):
-            r.. False
+            r.. F..
 
         m, n = l..(start), l..(end)
         i = j = 0
@@ -18,18 +18,18 @@ class Solution:
                 j += 1
 
             __ i __ m a.. j __ n:
-                r.. True
+                r.. T..
             __ i __ m o. j __ n:
-                r.. False
+                r.. F..
 
             __ start[i] != end[j]:
-                r.. False
+                r.. F..
             __ start[i] __ 'L' a.. j > i:
-                r.. False
+                r.. F..
             __ start[i] __ 'R' a.. i > j:
-                r.. False
+                r.. F..
 
             i += 1
             j += 1
 
-        r.. True
+        r.. T..

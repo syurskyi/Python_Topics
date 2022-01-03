@@ -1,7 +1,7 @@
 ____ enum _______ Enum
 
 
-class GameStatus(Enum):
+c_ GameStatus(Enum):
     WON  1
     LOST  2
     IN_PROGRESS  3

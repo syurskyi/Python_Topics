@@ -1,16 +1,16 @@
-class Record():
-    ___ __init__(self, record_id, parent_id):
-        self.record_id = record_id
-        self.parent_id = parent_id
+c_ Record():
+    ___ - , record_id, parent_id):
+        record_id = record_id
+        parent_id = parent_id
 
-    ___ equal_id(self):
-        r.. self.record_id __ self.parent_id
+    ___ equal_id
+        r.. record_id __ parent_id
 
 
-class Node():
-    ___ __init__(self, node_id):
-        self.node_id = node_id
-        self.children    # list
+c_ Node():
+    ___ - , node_id):
+        node_id = node_id
+        children    # list
 
 
 ___ validateRecord(record):
@@ -21,8 +21,8 @@ ___ validateRecord(record):
 
 
 ___ BuildTree(records):
-    parent_dict = {}
-    node_dict = {}
+    parent_dict    # dict
+    node_dict    # dict
     ordered_id = s..((i.record_id ___ i __ records))
     ___ record __ records:
         validateRecord(record)

@@ -8,8 +8,8 @@ ___ login_required(func):
     @functools.wraps(func)
     ___ wrapper(*args, **kwargs):
         user, *_ = args
-        __ user.lower() __ known_users:
-            __ user.lower() __ loggedin_users:
+        __ user.l.. __ known_users:
+            __ user.l.. __ loggedin_users:
                 r.. func(*args, **kwargs)
             ____:
                 r.. "please login"

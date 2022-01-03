@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ updateMatrix(self, matrix):
         """
         :type matrix: List[List[int]]

@@ -26,7 +26,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ findShortestSubArray(self, nums: List[int]) -> int:
         """
         counter + two pointers does not work
@@ -36,7 +36,7 @@ class Solution:
             r..
 
         counter = defaultdict(int)
-        first = {}  # map from number to index
+        first    # dict  # map from number to index
         mx = [0, 0]  #  [degree, length]
         ___ i, n __ e..(nums):
             __ n n.. __ first:

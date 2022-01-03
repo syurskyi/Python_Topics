@@ -10,10 +10,10 @@ each other.
 """
 
 # Definition for an interval.
-class Interval:
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval:
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
     @classmethod
     ___ new(cls, lst):
@@ -23,7 +23,7 @@ class Interval:
         ]
         
 
-class Solution:
+c_ Solution:
     ___ eraseOverlapIntervals(self, intervals):
         """
         Greedy remove the large e when overlapping

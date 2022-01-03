@@ -19,7 +19,7 @@ All words have the same length.
 All words contain only lowercase alphabetic characters.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ ladderLength(self, beginWord, endWord, wordDict):
         """
         :type beginWord: str
@@ -29,8 +29,8 @@ class Solution(object):
         """
         queue    # list
         queue.a..((beginWord, 0))
-        self.letters = map(chr, r..(ord('a'), ord('z') + 1))
-        self.word_dict = wordDict
+        letters = map(chr, r..(ord('a'), ord('z') + 1))
+        word_dict = wordDict
         # Remove words that are same as beginWord
         ___ word __ set(wordDict):
             __ beginWord __ word:
@@ -40,7 +40,7 @@ class Solution(object):
             cur = queue.pop(0)
             __ cur[0] __ endWord:
                 r.. cur[1] + 1
-            ___ word __ self.get_adjacent(cur[0]):
+            ___ word __ get_adjacent(cur[0]):
                 wordDict.remove(word)  # Mark as visited
                 queue.a..((word, cur[1] + 1))
         r.. 0
@@ -48,9 +48,9 @@ class Solution(object):
     ___ get_adjacent(self, word1):
         res    # list
         ___ i, e __ e..(word1):
-            ___ letter __ self.letters:
+            ___ letter __ letters:
                 word = word1[:i] + letter + word1[i + 1:]
-                __ word __ self.word_dict:
+                __ word __ word_dict:
                     res.a..(word)
         r.. res
 

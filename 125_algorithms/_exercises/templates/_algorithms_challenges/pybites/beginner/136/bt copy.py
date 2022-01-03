@@ -14,7 +14,7 @@ Keywords: enum, exception handling, multi type input
 ____ enum _______ Enum
 
 
-class Bloodtype(Enum):
+c_ Bloodtype(Enum):
     ZERO_NEG = 0
     ZERO_POS = 1
     B_NEG = 2
@@ -46,29 +46,29 @@ ___ check_bt(donor, recipient):
         bool: True for compatability, False otherwise.
     """
 
-    __ type(donor) __ int a.. (donor < 0 o. donor > 7):
+    __ t..(donor) __ int a.. (donor < 0 o. donor > 7):
         raise ValueError
-    ____ type(donor) __ float:
+    ____ t..(donor) __ float:
         raise TypeError
-    ____ type(donor) __ s..:
+    ____ t..(donor) __ s..:
         __ donor __ blood_type_text:
             donor = blood_type_text[donor].value
         ____:
             raise ValueError
-    ____ type(donor) __ Bloodtype:
+    ____ t..(donor) __ Bloodtype:
         donor = donor.value
 
     
-    __ type(recipient) __ int a.. (recipient < 0 o. recipient > 7):
+    __ t..(recipient) __ int a.. (recipient < 0 o. recipient > 7):
         raise ValueError
-    ____ type(recipient) __ float:
+    ____ t..(recipient) __ float:
         raise TypeError
-    ____ type(recipient) __ s..:
+    ____ t..(recipient) __ s..:
         __ recipient __ blood_type_text:
             recipient = blood_type_text[recipient].value
         ____:
             raise ValueError
-    ____ type(recipient) __ Bloodtype:
+    ____ t..(recipient) __ Bloodtype:
         recipient = recipient.value
 
     print(donor, recipient)

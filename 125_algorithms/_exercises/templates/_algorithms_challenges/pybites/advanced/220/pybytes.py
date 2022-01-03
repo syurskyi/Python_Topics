@@ -1,5 +1,5 @@
 ____ collections _______ n.., Counter
-_______ re
+_______ __
 ____ typing _______ NamedTuple
 
 _______ feedparser
@@ -16,11 +16,11 @@ IGNORE_DOMAINS = {'https://pythonbytes.fm', 'http://pythonbytes.fm',
                   'https://talkpython.fm', 'http://testandcode.com'}
 
 
-class PythonBytes:
+c_ PythonBytes:
 
-    ___ __init__(self, url=URL):
+    ___ - , url=URL):
         """Load the feed url into self.entries using the feedparser module."""
-        self.entries = feedparser.parse(URL)['entries']
+        entries = feedparser.parse(URL)['entries']
 
 
     ___ get_episode_numbers_for_mentioned_domain(self, domain: s..) -> l..:
@@ -31,7 +31,7 @@ class PythonBytes:
         episode_ids    # list
 
 
-        ___ entry __ self.entries:
+        ___ entry __ entries:
             #summary = entry['summary']
             summary = entry['summary']
             __ domain __ summary:
@@ -56,9 +56,9 @@ class PythonBytes:
            Return a list of (domain, count) tuples (use Counter).
         """
         counts = Counter()
-        ___ entry __ self.entries:
+        ___ entry __ entries:
             summary = entry['summary']
-            domains = set(re.findall(r'https?://[^/]+',summary))
+            domains = set(__.findall(r'https?://[^/]+',summary))
             ___ domain __ domains:
                 __ domain n.. __ IGNORE_DOMAINS:
                     counts[domain] += 1
@@ -73,7 +73,7 @@ class PythonBytes:
            featured (use SPECIAL_GUEST).
         """
 
-        r.. s..(SPECIAL_GUEST __ entry['summary'] ___ entry __ self.entries)
+        r.. s..(SPECIAL_GUEST __ entry['summary'] ___ entry __ entries)
 
     ___ get_average_duration_episode_in_seconds(self) -> NamedTuple:
         """Return the average duration in seconds of a Python Bytes episode, as
@@ -88,7 +88,7 @@ class PythonBytes:
         duration_sums = 0
 
 
-        ___ entry __ self.entries:
+        ___ entry __ entries:
             duration= entry['itunes_duration']
             hours,minutes,seconds = map(int,duration.s..(':'))
             total_seconds = 3600 * hours + 60 * minutes + seconds
@@ -100,7 +100,7 @@ class PythonBytes:
                 max_duration_seconds = total_seconds
                 max_duration = duration
 
-        average_duration = int(duration_sums/ l..(self.entries))
+        average_duration = int(duration_sums/ l..(entries))
         r.. Duration(average_duration,max_duration,min_duration)
 
 

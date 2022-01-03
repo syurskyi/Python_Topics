@@ -46,7 +46,7 @@ ___ test_max_letter_word(given, expected):
     ... result __ expected
 
 
-@pytest.mark.parametrize("bad_input", [N.., True, 1, 1.0, [], {}])
+@pytest.mark.parametrize("bad_input", [N.., T.., 1, 1.0, [], {}])
 ___ test_max_letter_word_exceptions(bad_input):
     with pytest.raises(ValueError):
         max_letter_word(bad_input)

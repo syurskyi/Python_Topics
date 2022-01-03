@@ -1,4 +1,4 @@
-_______ re
+_______ __
 _______ pdb
 ___ get_users(passwd: s..) -> d..:
     """Split password output by newline,
@@ -8,7 +8,7 @@ ___ get_users(passwd: s..) -> d..:
       return dict of keys = user, values = name.
     """
     
-    passwords = {}
+    passwords    # dict
     #pdb.set_trace()
     ___ line __ passwd.splitlines():
         __ n.. line:
@@ -17,7 +17,7 @@ ___ get_users(passwd: s..) -> d..:
         username,name = values[0],values[4]
         name = name.strip(',')
         __ name != '':
-            name = re.sub(r'\,+',' ',name)
+            name = __.sub(r'\,+',' ',name)
         ____:
             name = 'unknown'
 

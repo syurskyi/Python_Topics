@@ -4,7 +4,7 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ sortColors(self, nums):
         """
         :type nums: List[int]
@@ -22,13 +22,13 @@ class Solution(object):
             ____:
                 j += 1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 1, 0, 0, 1, 2, 2, 1],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            self.sortColors(nums)
+            sortColors(nums)
             print('After sort')
             print('nums: %s' % (nums))
             print('-='*15+'-')

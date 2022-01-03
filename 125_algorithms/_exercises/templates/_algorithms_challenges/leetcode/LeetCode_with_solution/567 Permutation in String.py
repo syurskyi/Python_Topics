@@ -18,7 +18,7 @@ The length of both given strings is in range [1, 10,000].
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ checkInclusion(self, s1: s.., s2: s..) -> bool:
         """
         counter + two pointers
@@ -34,7 +34,7 @@ class Solution:
             __ counter[s2[j]] > 0:
                 counter[s2[j]] -= 1
                 __ j - i + 1 __ l..(s1):
-                    r.. True
+                    r.. T..
                 j += 1
             ____:
                 __ s2[i] __ s1_set:
@@ -44,9 +44,9 @@ class Solution:
                 __ j < i:
                     j = i
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().checkInclusion("ab", "eidbaooo") __ True
-    ... Solution().checkInclusion("ab", "eidboaoo") __ False
+    ... Solution().checkInclusion("ab", "eidbaooo") __ T..
+    ... Solution().checkInclusion("ab", "eidboaoo") __ F..

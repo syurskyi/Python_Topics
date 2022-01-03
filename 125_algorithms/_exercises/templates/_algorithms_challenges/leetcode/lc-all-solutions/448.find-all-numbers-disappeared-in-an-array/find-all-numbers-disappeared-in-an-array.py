@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findDisappearedNumbers(self, nums):
     """
     :type nums: List[int]

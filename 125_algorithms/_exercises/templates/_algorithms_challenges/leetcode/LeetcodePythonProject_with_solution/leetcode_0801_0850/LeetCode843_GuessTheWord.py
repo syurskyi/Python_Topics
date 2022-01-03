@@ -10,7 +10,7 @@ Created on Mar 6, 2019
 
 _______ collections, i..
 
-class Master(object):
+c_ Master(object):
     ___ guess(self, word):
         """
         :type word: str
@@ -18,7 +18,7 @@ class Master(object):
         """
         pass
 
-class Solution(object):
+c_ Solution(object):
     ___ findSecretWord(self, wordlist, master):
         """
         :type wordlist: List[Str]
@@ -27,10 +27,10 @@ class Solution(object):
         """
         n = 0
         w.... n < 6:
-            count = collections.Counter(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ self.match(w1, w2) __ 0)
+            count = collections.Counter(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ match(w1, w2) __ 0)
             guess = m..(wordlist, key=l.... w:count[w])
             n = master.guess(guess)
-            wordlist = [w ___ w __ wordlist __ self.match(w, guess) __ n]
+            wordlist = [w ___ w __ wordlist __ match(w, guess) __ n]
     
     ___ match(self, w1, w2):
         matches = 0
@@ -38,12 +38,12 @@ class Solution(object):
             __ c1 __ c2: matches += 1
         r.. matches
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ wordlist, master __ testCases:
-            result = self.findSecretWord(wordlist, master)
+            result = findSecretWord(wordlist, master)
             print('result: %s' % result)
 
 __ __name__ __ '__main__':

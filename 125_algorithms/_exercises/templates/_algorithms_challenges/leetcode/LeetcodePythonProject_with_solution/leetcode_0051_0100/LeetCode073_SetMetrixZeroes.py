@@ -4,20 +4,20 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ setZeroes(self, matrix):
         """
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
-        isColEmpty, isRowEmpty = False, False
+        isColEmpty, isRowEmpty = F.., F..
         ___ i __ r..(l..(matrix)):
             __ matrix[i][0] __ 0:
-                isColEmpty = True
+                isColEmpty = T..
                 break
         ___ i __ r..(l..(matrix[0])):
             __ matrix[0][i] __ 0:
-                isRowEmpty = True
+                isRowEmpty = T..
                 break
         ___ i __ r..(1, l..(matrix)):
             ___ j __ r..(1, l..(matrix[0])):
@@ -39,7 +39,7 @@ class Solution(object):
             ___ j __ r..(l..(matrix[0])):
                 matrix[0][j] = 0
     
-    ___ test(self):
+    ___ test
         pass
 
 Solution().test()

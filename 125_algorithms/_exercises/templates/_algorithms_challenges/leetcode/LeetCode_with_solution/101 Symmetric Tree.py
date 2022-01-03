@@ -23,14 +23,14 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isSymmetric(self, root):
         """
         dfs
@@ -38,17 +38,17 @@ class Solution(object):
         :return: boolean
         """
         __ n.. root:
-            r.. True
+            r.. T..
 
-        r.. self.isSymmetrical(root.left, root.right)
+        r.. isSymmetrical(root.left, root.right)
 
     ___ isSymmetrical(self, l, r):
         __ n.. l a.. n.. r:
-            r.. True
+            r.. T..
 
         # recursive
         __ (l a.. r a..
-            l.val __ r.val a.. self.isSymmetrical(l.left, r.right) a.. self.isSymmetrical(l.right, r.left)):
-            r.. True
+            l.val __ r.val a.. isSymmetrical(l.left, r.right) a.. isSymmetrical(l.right, r.left)):
+            r.. T..
 
-        r.. False
+        r.. F..

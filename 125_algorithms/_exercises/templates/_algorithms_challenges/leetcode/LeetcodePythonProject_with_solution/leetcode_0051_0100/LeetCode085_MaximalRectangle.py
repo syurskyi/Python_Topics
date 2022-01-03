@@ -3,7 +3,7 @@ Created on Jan 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maximalRectangle(self, matrix):
         """
         :type matrix: List[List[str]]
@@ -20,7 +20,7 @@ class Solution(object):
                 ____:
                     heights[i+1][j] = heights[i][j]+1
         ___ i __ r..(m):
-            area = max(area, self.getArea(heights[i+1]))
+            area = max(area, getArea(heights[i+1]))
         r.. area
     
     ___ getArea(self, heights):
@@ -38,7 +38,7 @@ class Solution(object):
                 area = max(area, h*w)
         r.. area
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["1","0","1","0","0"],
@@ -48,7 +48,7 @@ class Solution(object):
             ],
         ]
         ___ matrix __ testCases:
-            result = self.maximalRectangle(matrix)
+            result = maximalRectangle(matrix)
             print('result: %s' % result)
             print('-='*30+'-')
 

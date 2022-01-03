@@ -4,7 +4,7 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ canJump(self, nums):
         """
         :type nums: List[int]
@@ -15,17 +15,17 @@ class Solution(object):
             __ furthest >= i:
                 furthest = max(furthest, i+num)
             __ furthest >= l..(nums)-1:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2,3,1,1,4],
             [3,2,1,0,4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.canJump(nums)
+            result = canJump(nums)
             print('result: %s' % (result))
             print('-='*15+'-')
 

@@ -44,7 +44,7 @@ ____ collections _______ defaultdict
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, K: int) -> int:
         """
         dijkstra
@@ -62,7 +62,7 @@ class Solution:
 
             stops = k - 1 + 1
             __ stops <= K:
-                ___ v, w __ G[u].items():
+                ___ v, w __ G[u].i..:
                     heapq.heappush(pq, (cost + w, k + 1, v))
 
 

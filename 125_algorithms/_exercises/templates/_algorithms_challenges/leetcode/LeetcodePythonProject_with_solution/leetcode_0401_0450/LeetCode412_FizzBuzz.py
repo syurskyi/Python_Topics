@@ -4,7 +4,7 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ fizzBuzz(self, n):
         result    # list
         ___ num __ r..(1, n+1):

@@ -34,7 +34,7 @@ Can you solve it in O(1) space?
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ longestMountain(self, A: List[int]) -> int:
         """
         dp
@@ -83,13 +83,13 @@ class Solution:
         """
         ret = 0
         l = 1
-        expect_incr = True
+        expect_incr = T..
         ___ i __ r..(1, l..(A)):
             __ expect_incr:
                 __ A[i] > A[i-1]:
                     l += 1
                 ____ A[i] < A[i-1] a.. l >= 2:
-                    expect_incr = False
+                    expect_incr = F..
                     l += 1
                     ret = max(ret, l)
                 ____:
@@ -100,10 +100,10 @@ class Solution:
                     l += 1
                     ret = max(ret, l)
                 ____ A[i] __ A[i-1]:
-                    expect_incr = True
+                    expect_incr = T..
                     l = 1
                 ____:
-                    expect_incr = True
+                    expect_incr = T..
                     l = 2
 
         r.. ret __ ret >= 3 ____ 0

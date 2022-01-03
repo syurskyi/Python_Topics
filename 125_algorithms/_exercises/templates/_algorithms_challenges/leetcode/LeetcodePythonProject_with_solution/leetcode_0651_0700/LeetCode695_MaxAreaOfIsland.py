@@ -3,7 +3,7 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxAreaOfIsland(self, grid):
         """
         :type grid: List[List[int]]
@@ -15,7 +15,7 @@ class Solution(object):
         maxArea = 0
         ___ i __ r..(m):
             ___ j __ r..(n):
-                maxArea = max(maxArea, self.bfs(grid, m, n, i, j))
+                maxArea = max(maxArea, bfs(grid, m, n, i, j))
         r.. maxArea
     
     ___ bfs(self, grid, m, n, i, j):
@@ -33,12 +33,12 @@ class Solution(object):
                     grid[x][y] = -1
         r.. area
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]],
         ]
         ___ grid __ testCases:
-            result = self.maxAreaOfIsland(grid)
+            result = maxAreaOfIsland(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -3,7 +3,7 @@ Created on Mar 7, 2017
 
 @author: MT
 '''
-class Solution():
+c_ Solution():
     ___ gameOfLife(self, board):
         """
         :type board: List[List[int]]
@@ -14,7 +14,7 @@ class Solution():
         m, n = l..(board), l..(board[0])
         ___ i __ r..(m):
             ___ j __ r..(n):
-                liveNum = self.liveNeighborNum(board, i, j)
+                liveNum = liveNeighborNum(board, i, j)
                 __ board[i][j] __ 1:
                     __ liveNum < 2 o. liveNum > 3:
                         board[i][j] = 2
@@ -37,7 +37,7 @@ class Solution():
                     count+=1
         r.. count
     
-    ___ test(self):
+    ___ test
         board = [
             [0,0,0,0,0],
             [0,0,1,0,0],
@@ -46,10 +46,10 @@ class Solution():
             [0,0,0,0,0],
         ]
         print('before:')
-        print('\n'.join([s..(l) ___ l __ board]))
+        print('\n'.j..([s..(l) ___ l __ board]))
         print('after:')
-        self.gameOfLife(board)
-        print('\n'.join([s..(l) ___ l __ board]))
+        gameOfLife(board)
+        print('\n'.j..([s..(l) ___ l __ board]))
 
 __ __name__ __ '__main__':
     Solution().test()

@@ -6,23 +6,23 @@ REF: https://leetcode.com/problems/partition-equal-subset-sum/discuss/90592
 """
 
 
-class Solution:
+c_ Solution:
     ___ canPartition(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
         __ n.. nums:
-            r.. True
+            r.. T..
 
         target = s..(nums)
 
         __ target & 1 __ 1:
-            r.. False
+            r.. F..
 
         target //= 2
-        dp = [False] * (target + 1)
-        dp[0] = True
+        dp = [F..] * (target + 1)
+        dp[0] = T..
 
         ___ a __ nums:
             ___ s __ r..(target, a - 1, -1):

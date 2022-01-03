@@ -40,7 +40,7 @@ Note:
 """
 
 
-class Solution:
+c_ Solution:
     ___ brokenCalc(self, X: int, Y: int) -> int:
         """
         greedy + work backward
@@ -66,7 +66,7 @@ class Solution:
         """
         q = [X]
         t = 0
-        has_larger = False
+        has_larger = F..
         w.... q:
             cur_q    # list
             ___ e __ q:
@@ -76,7 +76,7 @@ class Solution:
                 cur = e * 2
                 __ cur >= 1:
                     __ cur > Y a.. n.. has_larger:
-                        has_larger = True
+                        has_larger = T..
                         cur_q.a..(cur)
                     ____ cur <= Y:
                         cur_q.a..(cur)

@@ -33,7 +33,7 @@ ___ test_invalid_type_string():
 
 ___ test_invalid_type_boolean():
     with pytest.raises(ValueError):
-        list_to_decimal([12,True,4])
+        list_to_decimal([12,T..,4])
 
 
 ___ test_negative():

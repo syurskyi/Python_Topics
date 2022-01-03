@@ -3,7 +3,7 @@ Created on Aug 29, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ nearestPalindromic(self, n):
         """
         :type n: str
@@ -25,14 +25,14 @@ class Solution(object):
                     res = cand
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             '123',
             '12122',
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.nearestPalindromic(n)
+            result = nearestPalindromic(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

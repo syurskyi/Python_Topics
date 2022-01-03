@@ -4,18 +4,18 @@ ____ d__ _______ date
 MSG = 'Hey {}, there are more people with your birthday!'
 
 
-class BirthdayDict(d..):
+c_ BirthdayDict(d..):
     """Override dict to print a message every time a new person is added that has
        the same birthday (day+month) as somebody already in the dict"""
 
-    ___ __init__(self, *args, **kwargs):
-        self.update(*args, **kwargs)
+    ___ - , *args, **kwargs):
+        update(*args, **kwargs)
 
     ___ __setitem__(self, name, birthday):
-        ___ date __ self.values():
+        ___ date __ v..
             __ date.month __ birthday.month a.. date.day __ birthday.day:
                 print(MSG.f..(name))
-        self.update({name: birthday})
+        update({name: birthday})
 
 bd = BirthdayDict()
 bd['khoo'] = date(1968,4,29)

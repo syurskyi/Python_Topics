@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ hammingDistance(self, x, y):
     """
     :type x: int

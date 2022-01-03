@@ -32,7 +32,7 @@ ___ save(name, journal_data):
 
 
 ___ get_full_pathname(name):
-    filename  os.path.abspath(os.path.join('.', 'journals', name + '.jrl'))
+    filename  os.path.abspath(os.path.j..('.', 'journals', name + '.jrl'))
     r.. filename
 
 

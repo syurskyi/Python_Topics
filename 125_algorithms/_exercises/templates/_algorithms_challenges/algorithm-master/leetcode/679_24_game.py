@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     EPS = 1e-6
     OP = (
         l.... a, b: a + b,
@@ -13,12 +13,12 @@ class Solution:
         :rtype: bool
         """
         __ n.. nums:
-            r.. False
+            r.. F..
 
         n = l..(nums)
 
         __ n __ 1:
-            r.. abs(nums[0] - 24) < self.EPS
+            r.. abs(nums[0] - 24) < EPS
 
         ___ i __ r..(n):
             ___ j __ r..(n):
@@ -27,7 +27,7 @@ class Solution:
 
                 nxts = [nums[k] ___ k __ r..(n) __ i != k != j]  # i != j != k is different
 
-                ___ k __ r..(l..(self.OP)):
+                ___ k __ r..(l..(OP)):
                     __ i < j a.. k < 2:
                         # since a + b == b + a, so just do half in j >= i
                         # same for `*`
@@ -36,11 +36,11 @@ class Solution:
                         # divide by 0
                         continue
 
-                    nxts.a..(self.OP[k](nums[i], nums[j]))
+                    nxts.a..(OP[k](nums[i], nums[j]))
 
-                    __ self.judgePoint24(nxts):
-                        r.. True
+                    __ judgePoint24(nxts):
+                        r.. T..
 
                     nxts.pop()
 
-        r.. False
+        r.. F..

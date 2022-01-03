@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ rotate(self, nums, k):
     """
     :type nums: List[int]

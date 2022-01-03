@@ -1,11 +1,11 @@
 ____ d__ _______ d__, t..
 ____ http.client _______ SEE_OTHER
 _______ os
-_______ re
+_______ __
 _______ urllib.request
 
 # getting the data
-COURSE_TIMES = os.path.join(
+COURSE_TIMES = os.path.j..(
     os.getenv("TMP", "/tmp"),
     'course_timings'
 )

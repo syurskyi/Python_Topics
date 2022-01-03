@@ -3,7 +3,7 @@ Created on Oct 8, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ stoneGame(self, piles):
         """
         :type piles: List[int]
@@ -18,13 +18,13 @@ class Solution(object):
                 dp[i][i+d] = max(piles[i]-dp[i+1][i+d], piles[i+d]-dp[i][i+d-1])
         r.. dp[0][-1] > 0
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3,7,2,3],
             [5,3,4,5],
         ]
         ___ piles __ testCases:
-            res = self.stoneGame(piles)
+            res = stoneGame(piles)
             print('res: %s' % res)
             print('-='*30+'-')
 

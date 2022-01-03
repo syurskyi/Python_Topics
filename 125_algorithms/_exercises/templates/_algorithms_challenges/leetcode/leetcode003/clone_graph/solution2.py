@@ -9,7 +9,7 @@ of its neighbors.
 #         self.label = x
 #         self.neighbors = []
 
-class Solution(object):
+c_ Solution(object):
     ___ cloneGraph(self, node):
         """
         :type node: UndirectedGraphNode
@@ -19,23 +19,23 @@ class Solution(object):
         """
         __ node __ N..
             r.. N..
-        self.visited = set()
+        visited = set()
         cloned_node = UndirectedGraphNode(node.label)
-        self.d = {node: cloned_node}
-        self.visit(node)
-        r.. self.d[node]
+        d = {node: cloned_node}
+        visit(node)
+        r.. d[node]
 
     ___ visit(self, node):
-        __ node n.. __ self.visited:
-            self.visited.add(node)
-            cloned_node = self.d[node]
+        __ node n.. __ visited:
+            visited.add(node)
+            cloned_node = d[node]
             cloned_neighbors    # list
             ___ neighbor __ node.neighbors:
-                __ neighbor n.. __ self.d:
+                __ neighbor n.. __ d:
                     cloned_neighbor = UndirectedGraphNode(neighbor.label)
-                    self.d[neighbor] = cloned_neighbor
+                    d[neighbor] = cloned_neighbor
                 ____:
-                    cloned_neighbor = self.d[neighbor]
+                    cloned_neighbor = d[neighbor]
                 cloned_neighbors.a..(cloned_neighbor)
-                self.visit(neighbor)
+                visit(neighbor)
             cloned_node.neighbors = cloned_neighbors

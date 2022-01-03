@@ -17,14 +17,14 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 
 
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ inorderTraversal(self, root):
         """
         Morris Traversal
@@ -57,7 +57,7 @@ class Solution(object):
         :return: a list of integers
         """
         lst    # list
-        self.inorderTraverse_itr(root, lst)
+        inorderTraverse_itr(root, lst)
         r.. lst
 
     ___ inorderTraverse(self, root, lst):
@@ -66,9 +66,9 @@ class Solution(object):
         """
         __ n.. root:
             r..
-        self.inorderTraverse(root.left, lst)
+        inorderTraverse(root.left, lst)
         lst.a..(root.val)
-        self.inorderTraverse(root.right, lst)
+        inorderTraverse(root.right, lst)
 
     ___ inorderTraverse_itr(self, root, lst):
         """

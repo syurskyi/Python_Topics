@@ -36,7 +36,7 @@ ____ typing _______ List
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ canReorderDoubled(self, A: List[int]) -> bool:
         A.s..(key=abs)
         counter = Counter(A)
@@ -44,12 +44,12 @@ class Solution:
             __ counter[a] __ 0:
                 continue
             __ counter[2*a] __ 0:
-                r.. False
+                r.. F..
 
             counter[a] -= 1
             counter[2*a] -= 1
 
-        r.. True
+        r.. T..
 
     ___ canReorderDoubled_positive_negative(self, A: List[int]) -> bool:
         """
@@ -64,17 +64,17 @@ class Solution:
             __ a > 0:
                 target = 2 * a
             ____ a % 2 != 0:
-                r.. False
+                r.. F..
             ____:
                 target = a // 2
 
             __ counter[target] > 0:
                 counter[target] -= 1
             ____:
-                r.. False
+                r.. F..
 
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":
-    ... Solution().canReorderDoubled([4,-2,2,-4]) __ True
+    ... Solution().canReorderDoubled([4,-2,2,-4]) __ T..

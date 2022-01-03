@@ -4,13 +4,13 @@ Created on Oct 5, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ constructMaximumBinaryTree(self, nums):
         """
         :type nums: List[int]
@@ -20,17 +20,17 @@ class Solution(object):
         maxVal = max(nums)
         ind = nums.index(maxVal)
         root = TreeNode(maxVal)
-        root.left = self.constructMaximumBinaryTree(nums[:ind])
-        root.right = self.constructMaximumBinaryTree(nums[ind+1:])
+        root.left = constructMaximumBinaryTree(nums[:ind])
+        root.right = constructMaximumBinaryTree(nums[ind+1:])
         r.. root
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 2, 1, 6, 0, 5]
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            newNode = self.constructMaximumBinaryTree(nums)
+            newNode = constructMaximumBinaryTree(nums)
             __ newNode:
                 print(newNode.val)
             ____:

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: The integer array you should partition
     @param: k: An integer

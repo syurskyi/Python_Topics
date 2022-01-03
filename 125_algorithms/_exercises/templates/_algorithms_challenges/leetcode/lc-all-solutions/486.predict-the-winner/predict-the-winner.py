@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ PredictTheWinner(self, nums):
     """
     :type nums: List[int]
@@ -13,22 +13,22 @@ class Solution(object):
         # print "order=", order, partSum, maxSum
         __ order __ 0:
           __ partSum >= maxSum - partSum:
-            r.. False
-          r.. True
+            r.. F..
+          r.. T..
         ____:
           __ partSum >= maxSum - partSum:
-            r.. True
-          r.. False
+            r.. T..
+          r.. F..
 
-      visited[start, end, partSum, order] = False
+      visited[start, end, partSum, order] = F..
       __ n.. canWin(nums, start + 1, end, visited, partSum - order * nums[start], maxSum, ~order):
-        visited[start, end, partSum, order] = True
+        visited[start, end, partSum, order] = T..
         # print "order=", order, "return True"
-        r.. True
+        r.. T..
       __ n.. canWin(nums, start, end - 1, visited, partSum - order * nums[end], maxSum, ~order):
-        visited[start, end, partSum, order] = True
+        visited[start, end, partSum, order] = T..
         # print "order=", order, "return True"
-        r.. True
+        r.. T..
       r.. visited[start, end, partSum, order]
 
     r.. canWin(nums, 0, l..(nums) - 1, {}, 0, s..(nums), -1)

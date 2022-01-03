@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ parseTernary(self, expression):
     """
     :type expression: str

@@ -1,4 +1,4 @@
-_______ re
+_______ __
 _______ xml.etree.ElementTree as ET
 
 # from OMDB
@@ -23,7 +23,7 @@ ___ get_movies():
         y.. movie.attrib['title']
 
 
-running_time = re.compile(r'(\d+) min')
+running_time = __.c..(r'(\d+) min')
 
 
 ___ _get_runtime(tim):

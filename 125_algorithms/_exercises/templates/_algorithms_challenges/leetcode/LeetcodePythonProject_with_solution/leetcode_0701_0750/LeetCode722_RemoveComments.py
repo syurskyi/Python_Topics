@@ -3,32 +3,32 @@ Created on Feb 19, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ removeComments(self, source):
         """
         :type source: List[str]
         :rtype: List[str]
         """
         res    # list
-        isComment = False
-        isLineComment = False
+        isComment = F..
+        isLineComment = F..
         line = ''
         ___ src __ source:
             j = 0
-            isLineComment = False
+            isLineComment = F..
             w.... j < l..(src):
                 c = src[j]
                 __ j < l..(src)-1 a.. src[j:j+2] __ '//' a.. n.. isComment:
                     __ line a.. n.. isComment:
                         res.a..(line)
-                    isLineComment = True
+                    isLineComment = T..
                     line = ''
                 ____ j < l..(src)-1 a.. src[j:j+2] __ '/*' a.. n.. isLineComment a.. n.. isComment:
                     j += 1
-                    isComment = True
+                    isComment = T..
                 ____ j < l..(src)-1 a.. src[j:j+2] __ '*/' a.. isComment:
                     j += 1
-                    isComment = False
+                    isComment = F..
                 ____ n.. isComment a.. n.. isLineComment:
                     line += c
                 __ j __ l..(src)-1 a.. n.. isComment:
@@ -38,7 +38,7 @@ class Solution(object):
                 j += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "/*Test program */",
@@ -90,7 +90,7 @@ class Solution(object):
         ]
         ___ source __ testCases:
             print('source: %s' % source)
-            result = self.removeComments(source)
+            result = removeComments(source)
             print('result: %s' % result)
             print('-='*30+'-')
 

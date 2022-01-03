@@ -30,7 +30,7 @@ It is guaranteed that costs.length is even.
 """
 
 
-class Solution:
+c_ Solution:
     ___ twoCitySchedCost(self, costs: List[List[int]]) -> int:
         """
         sort by city A and greedy? [30, 20]?

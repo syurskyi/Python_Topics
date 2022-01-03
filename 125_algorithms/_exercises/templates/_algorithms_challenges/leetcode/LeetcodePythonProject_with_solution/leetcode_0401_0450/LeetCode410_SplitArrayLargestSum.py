@@ -4,7 +4,7 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ splitArray(self, nums, m):
         left, right = 0, 0
         ___ num __ nums:
@@ -12,7 +12,7 @@ class Solution(object):
             right += num
         w.... left < right:
             mid = (left+right)//2
-            __ self.doable(nums, m-1, mid):
+            __ doable(nums, m-1, mid):
                 right = mid
             ____:
                 left = mid+1
@@ -22,17 +22,17 @@ class Solution(object):
         acc = 0
         ___ num __ nums:
             __ num > maxVal:
-                r.. False
+                r.. F..
             ____ acc+num <= maxVal:
                 acc += num
             ____:
                 cuts -= 1
                 acc = num
                 __ cuts < 0:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [7,2,5,10,8],
@@ -42,7 +42,7 @@ class Solution(object):
         ___ nums, m __ testCases:
             print('nums: %s' % nums)
             print('m: %s' % m)
-            result = self.splitArray(nums, m)
+            result = splitArray(nums, m)
             print('result: %s' % result)
             print('-='*30+'-')
 

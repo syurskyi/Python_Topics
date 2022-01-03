@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isValidSudoku(self, board):
     """
     :type board: List[List[str]]
@@ -15,8 +15,8 @@ class Solution(object):
           continue
         num = int(board[i][j]) - 1
         __ cacheRow[i][num] != 0 o. cacheCol[j][num] != 0 o. cacheBox[ib][num] != 0:
-          r.. False
+          r.. F..
         cacheRow[i][num] = 1
         cacheCol[j][num] = 1
         cacheBox[ib][num] = 1
-    r.. True
+    r.. T..

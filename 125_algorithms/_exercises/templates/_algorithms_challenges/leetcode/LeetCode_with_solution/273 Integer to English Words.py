@@ -9,9 +9,9 @@ For example,
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.table = {
+c_ Solution(object):
+    ___ - ):
+        table = {
             0: N..,
             1: "One",
             2: "Two",
@@ -55,9 +55,9 @@ class Solution(object):
         __ num __ 0: r.. "Zero"
 
         ret    # list
-        self.toWords(num, ret)
+        toWords(num, ret)
         ret = filter(l.... x: x, ret)  # filter None as zeros
-        r.. " ".join(map(s.., ret))
+        r.. " ".j..(map(s.., ret))
 
     ___ toWords(self, num, ret):
         """
@@ -67,14 +67,14 @@ class Solution(object):
         """
         SIGS = [1000000000, 1000000, 1000, 100]
         ___ SIG __ SIGS:
-            self.partial_parse(num, SIG, ret)
+            partial_parse(num, SIG, ret)
             num %= SIG
 
         TEN = 10
         __ num/TEN > 1:
-            ret.a..(self.table[(num/TEN)*TEN])
+            ret.a..(table[(num/TEN)*TEN])
 
-        ret.a..(self.table[num%TEN])
+        ret.a..(table[num%TEN])
 
     ___ partial_parse(self, num, sig, ret):
         """
@@ -82,9 +82,9 @@ class Solution(object):
         """
         __ num/sig:
             prefix    # list
-            self.toWords(num/sig, prefix)
+            toWords(num/sig, prefix)
             ret.extend(prefix)
-            ret.a..(self.table[sig])
+            ret.a..(table[sig])
 
 
 __ __name__ __ "__main__":

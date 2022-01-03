@@ -3,19 +3,19 @@ Created on Apr 10, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ trapRainWater(self, heightMap):
         _______ heapq
         __ n.. heightMap o. n.. heightMap[0]:
             r.. 0
         m, n = l..(heightMap), l..(heightMap[0])
         heap    # list
-        visited = [[False]*n ___ _ __ r..(m)]
+        visited = [[F..]*n ___ _ __ r..(m)]
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ i__0 o. j__0 o. i__m-1 o. j__n-1:
                     heapq.heappush(heap, (heightMap[i][j], i, j))
-                    visited[i][j] = True
+                    visited[i][j] = T..
         res = 0
         w.... heap:
             height, i, j = heapq.heappop(heap)
@@ -23,10 +23,10 @@ class Solution(object):
                 __ 0<=x<m a.. 0<=y<n a.. n.. visited[x][y]:
                     res += max(0, height-heightMap[x][y])
                     heapq.heappush(heap, (max(height, heightMap[x][y]), x, y))
-                    visited[x][y] = True
+                    visited[x][y] = T..
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1,4,3,1,3,2],
@@ -36,8 +36,8 @@ class Solution(object):
         ]
         ___ heightMap __ testCases:
             print('heightMap:')
-            print('\n'.join([s..(row) ___ row __ heightMap]))
-            result = self.trapRainWater(heightMap)
+            print('\n'.j..([s..(row) ___ row __ heightMap]))
+            result = trapRainWater(heightMap)
             print('result: %s' % result)
             print('-='*30+'-')
 

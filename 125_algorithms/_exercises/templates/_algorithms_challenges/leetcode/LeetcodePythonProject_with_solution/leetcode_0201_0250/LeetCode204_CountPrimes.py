@@ -4,20 +4,20 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ countPrimes(self, n):
         """
         :type n: int
         :rtype: int
         """
-        notPrime = [False]*(n)
+        notPrime = [F..]*(n)
         count = 0
         ___ i __ r..(2, n):
             __ n.. notPrime[i]:
                 count += 1
                 j = 2
                 w.... i*j < n:
-                    notPrime[i*j] = True
+                    notPrime[i*j] = T..
                     j += 1
         r.. count
     
@@ -29,24 +29,24 @@ class Solution(object):
         _______ math
         __ n <= 2:
             r.. 0
-        primes = [False,]*2 + [True,]*(n-2)
+        primes = [F..,]*2 + [T..,]*(n-2)
         ___ i __ r..(2, int(math.sqrt(n-1))+1):
             __ primes[i]:
                 ___ j __ r..(i+i, n, i):
-                    primes[j] = False
+                    primes[j] = F..
         count = 0
         ___ i __ r..(2, n):
             __ primes[i]: count += 1
         print(primes)
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             6,
         ]
         ___ n __ testCases:
             print('n: %s' % (n))
-            result = self.countPrimes(n)
+            result = countPrimes(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 

@@ -8,7 +8,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) -> int:
        You need to redirect stdout from the help builtin.
        If the the object passed in is not a builtin, raise a ValueError.
     """
-    __ type(builtin) __ n.. BuiltinFunctionType:
+    __ t..(builtin) __ n.. BuiltinFunctionType:
         raise ValueError
     std_out = StringIO()
     with redirect_stdout(std_out):

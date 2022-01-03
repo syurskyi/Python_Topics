@@ -13,13 +13,13 @@ A = [2,3,1,1,4], return true.
 A = [3,2,1,0,4], return false.
 """
 
-class Solution:
+c_ Solution:
     # @param A, a list of integers
     # @return a boolean
     ___ canJump(self, A):
         n = l..(A)
         __ n __ 1:
-            r.. True
+            r.. T..
         # d[i] is the max index A[i] can reach in A
         d = [i + A[i] ___ i __ r..(n)]
         reach = n - 1

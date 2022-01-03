@@ -1,7 +1,7 @@
 _______ random
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findKthLargest(self, nums, k):
     """
     :type A: List[int]

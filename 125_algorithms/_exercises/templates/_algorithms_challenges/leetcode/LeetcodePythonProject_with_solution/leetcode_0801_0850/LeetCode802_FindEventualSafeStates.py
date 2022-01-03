@@ -3,7 +3,7 @@ Created on Apr 20, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ eventualSafeNodes(self, graph):
         """
         :type graph: List[List[int]]
@@ -38,29 +38,29 @@ class Solution(object):
         :rtype: List[int]
         """
         n = l..(graph)
-        isCycle = [False]*n
+        isCycle = [F..]*n
         ___ i __ r..(n):
             visited = set()
-            self.getIsCycle(i, i, graph, visited, isCycle)
+            getIsCycle(i, i, graph, visited, isCycle)
         r.. [i ___ i __ r..(n) __ n.. isCycle[i]]
     
     ___ getIsCycle(self, i, start, graph, visited, isCycle):
         __ start __ visited o. isCycle[start]:
-            isCycle[i] = True
+            isCycle[i] = T..
             r..
         visited.add(start)
         ___ nextVal __ graph[start]:
-            self.getIsCycle(i, nextVal, graph, visited, isCycle)
+            getIsCycle(i, nextVal, graph, visited, isCycle)
         visited.remove(start)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,2],[2,3],[5],[0],[5],[],[]],
             [[],[0,2,3,4],[3],[4],[]],
         ]
         ___ graph __ testCases:
             print('graph: %s' % graph)
-            result = self.eventualSafeNodes(graph)
+            result = eventualSafeNodes(graph)
             print('result: %s' % result)
             print('-='*30+'-')
 

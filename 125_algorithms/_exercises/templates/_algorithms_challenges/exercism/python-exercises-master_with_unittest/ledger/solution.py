@@ -10,28 +10,28 @@ ___ truncate(s, length=25):
     r.. s[:length - 3] + '...'
 
 
-class LCInfo(object):
-    ___ __init__(self, locale, currency, columns):
-        self.columns = columns
+c_ LCInfo(object):
+    ___ - , locale, currency, columns):
+        columns = columns
         __ locale __ 'en_US':
             headers = ['Date', 'Description', 'Change']
-            self.datefmt = '{0.month:02}/{0.day:02}/{0.year:04}'
-            self.cur_fmt = u'{}{}{}{}'
-            self.lead_neg = '('
-            self.trail_neg = ')'
-            self.thousands = ','
-            self.decimal = '.'
+            datefmt = '{0.month:02}/{0.day:02}/{0.year:04}'
+            cur_fmt = u'{}{}{}{}'
+            lead_neg = '('
+            trail_neg = ')'
+            thousands = ','
+            decimal = '.'
         ____ locale __ 'nl_NL':
             headers = ['Datum', 'Omschrijving', 'Verandering']
-            self.datefmt = '{0.day:02}-{0.month:02}-{0.year:04}'
-            self.cur_fmt = u'{1} {0}{2}{3}'
-            self.lead_neg = '-'
-            self.trail_neg = ' '
-            self.thousands = '.'
-            self.decimal = ','
+            datefmt = '{0.day:02}-{0.month:02}-{0.year:04}'
+            cur_fmt = u'{1} {0}{2}{3}'
+            lead_neg = '-'
+            trail_neg = ' '
+            thousands = '.'
+            decimal = ','
         fmt = ROW_FMT.f..('<', *columns)
-        self.headers = fmt.f..(*headers)
-        self.cur_symbol = {
+        headers = fmt.f..(*headers)
+        cur_symbol = {
             'USD': '$',
             'EUR': u'€',
         }.get(currency)
@@ -43,32 +43,32 @@ class LCInfo(object):
             n_int, x = divmod(n_int, 1000)
             n_int_parts.insert(0, s..(x))
         r.. '{}{}{:02}'.f..(
-            self.thousands.join(n_int_parts) o. '0',
-            self.decimal,
+            thousands.j..(n_int_parts) o. '0',
+            decimal,
             n_float,
         )
 
     ___ currency(self, change):
-        r.. self.cur_fmt.f..(
-            self.lead_neg __ change < 0 ____ '',
-            self.cur_symbol,
-            self.number(change),
-            self.trail_neg __ change < 0 ____ ' ',
+        r.. cur_fmt.f..(
+            lead_neg __ change < 0 ____ '',
+            cur_symbol,
+            number(change),
+            trail_neg __ change < 0 ____ ' ',
         )
 
     ___ entry(self, entry):
         date, change, desc = entry
-        fmt = ROW_FMT.f..('>', *self.columns)
+        fmt = ROW_FMT.f..('>', *columns)
         r.. fmt.f..(
-            self.datefmt.f..(date),
+            datefmt.f..(date),
             truncate(desc),
-            self.currency(change),
+            currency(change),
         )
 
     ___ table(self, entries):
-        lines = [self.headers]
-        lines.extend(map(self.entry, s..(entries)))
-        r.. '\n'.join(lines)
+        lines = [headers]
+        lines.extend(map(entry, s..(entries)))
+        r.. '\n'.j..(lines)
 
 
 ___ create_entry(date, description, change):

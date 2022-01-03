@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ preorderTraversal(self, root):
     res, stack    # list, [(1, root)]
     w.... stack:

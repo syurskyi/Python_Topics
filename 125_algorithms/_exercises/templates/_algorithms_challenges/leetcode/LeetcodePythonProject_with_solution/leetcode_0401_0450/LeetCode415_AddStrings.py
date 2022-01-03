@@ -4,7 +4,7 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ addStrings(self, num1, num2):
         __ l..(num2) > l..(num1):
             num1, num2 = num2, num1

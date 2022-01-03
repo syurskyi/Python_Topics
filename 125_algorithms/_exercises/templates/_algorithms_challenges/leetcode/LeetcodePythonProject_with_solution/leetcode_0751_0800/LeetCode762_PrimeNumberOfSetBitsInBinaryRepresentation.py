@@ -3,7 +3,7 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ countPrimeSetBits(self, L, R):
         """
         :type L: int
@@ -21,7 +21,7 @@ class Solution(object):
             cnt += 1 __ bits __ primes ____ 0
         r.. cnt
     
-    ___ test(self):
+    ___ test
         testCases = [
             [6, 10],
             [10, 15],
@@ -30,7 +30,7 @@ class Solution(object):
         ___ l, r __ testCases:
             print('l: %s' % l)
             print('r: %s' % r)
-            result = self.countPrimeSetBits(l, r)
+            result = countPrimeSetBits(l, r)
             print('result: %s' % result)
             print('-='*30+'-')
 

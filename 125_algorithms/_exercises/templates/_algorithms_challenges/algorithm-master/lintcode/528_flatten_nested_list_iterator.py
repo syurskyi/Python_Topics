@@ -24,23 +24,23 @@ class NestedInteger(object):
 """
 
 
-class NestedIterator(object):
-    ___ __init__(self, nestedList):
-        self.stack = [[nestedList, 0]]
+c_ NestedIterator(object):
+    ___ - , nestedList):
+        stack = [[nestedList, 0]]
 
     # @return {int} the next element in the iteration
-    ___ next(self):
-        __ n.. self.hasNext():
+    ___ next
+        __ n.. hasNext():
             r.. -1
 
-        lst, i = self.stack[-1]
-        self.stack[-1][1] += 1
+        lst, i = stack[-1]
+        stack[-1][1] += 1
 
         r.. lst[i].getInteger()
 
     # @return {boolean} true if the iteration has more element or false
-    ___ hasNext(self):
-        stack = self.stack
+    ___ hasNext
+        stack = stack
 
         w.... stack:
             lst, i = stack[-1]
@@ -48,10 +48,10 @@ class NestedIterator(object):
             __ i >= l..(lst):
                 stack.pop()
             ____ lst[i].isInteger():
-                r.. True
+                r.. T..
             ____:
                 # lst[i] is list
                 stack[-1][1] += 1
                 stack.a..([lst[i].getList(), 0])
 
-        r.. False
+        r.. F..

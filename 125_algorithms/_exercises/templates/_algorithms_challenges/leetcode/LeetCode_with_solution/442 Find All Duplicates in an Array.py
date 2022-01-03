@@ -16,7 +16,7 @@ Output:
 """
 
 
-class Solution:
+c_ Solution:
     ___ idx(self, a):
         r.. a - 1
 
@@ -30,17 +30,17 @@ class Solution:
         :rtype: List[int]
         """
         ___ i __ r..(l..(A)):
-            t = self.idx(A[i])
+            t = idx(A[i])
             w.... i != t:
                 __ A[i] __ A[t]:
                     break
                 ____:
                     A[i], A[t] = A[t], A[i]
-                    t = self.idx(A[i])
+                    t = idx(A[i])
 
         ret    # list
         ___ i __ r..(l..(A)):
-            __ self.idx(A[i]) != i:
+            __ idx(A[i]) != i:
                 ret.a..(A[i])
 
         r.. ret

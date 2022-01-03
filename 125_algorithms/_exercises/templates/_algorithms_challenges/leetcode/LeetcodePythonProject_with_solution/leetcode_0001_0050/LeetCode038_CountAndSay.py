@@ -3,7 +3,7 @@ Created on Jun 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ countAndSay(self, n):
         """
         :type n: int

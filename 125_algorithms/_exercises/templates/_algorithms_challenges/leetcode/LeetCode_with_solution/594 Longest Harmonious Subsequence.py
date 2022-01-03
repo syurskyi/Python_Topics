@@ -17,7 +17,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ findLHS(self, nums: List[int]) -> int:
         """
         counter and iterate
@@ -27,7 +27,7 @@ class Solution:
             counter[n] += 1
 
         ret = 0
-        ___ k, v __ counter.items():
+        ___ k, v __ counter.i..:
             __ k + 1 __ counter:
                 ret = max(ret, v + counter[k + 1])
 

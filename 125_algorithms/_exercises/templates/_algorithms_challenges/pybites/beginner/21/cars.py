@@ -1,4 +1,4 @@
-____ i.. _______ chain
+____ i.. _______ c__
 
 cars = {
     'Ford': ['Falcon', 'Focus', 'Festiva', 'Fairlane'],
@@ -44,10 +44,10 @@ ___ get_all_matching_models(cars=cars, grep='trail'):
 ___ sort_car_models(cars=cars):
     """return a copy of the cars dict with the car models (values)
        sorted alphabetically"""
-    newdict = {}
+    newdict    # dict
     ___ car __ cars:
         newdict[car] = s..(cars[car])
     r.. newdict
 
 
-print(l..(chain.from_iterable(cars.values())))
+print(l..(c__.f..(cars.values())))

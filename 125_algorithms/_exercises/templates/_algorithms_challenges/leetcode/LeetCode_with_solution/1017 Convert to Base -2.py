@@ -30,7 +30,7 @@ Note:
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ baseNeg2(self, N: int) -> s..:
         """
         % -2, // -2 ? not really
@@ -59,7 +59,7 @@ class Solution:
             N -= r
             N //= -2
 
-        r.. "".join(map(s.., ret)) o. "0"
+        r.. "".j..(map(s.., ret)) o. "0"
 
 
 __ __name__ __ "__main__":

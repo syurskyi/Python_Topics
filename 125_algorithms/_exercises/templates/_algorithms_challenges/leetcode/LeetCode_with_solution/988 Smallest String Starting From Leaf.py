@@ -31,31 +31,31 @@ Each node in the tree will have a value between 0 and 25.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ typing _______ Tuple
 ____ collections _______ deque
 
 
-class Solution:
-    ___ __init__(self):
-        self.mn: Tuple[int] = N..
+c_ Solution:
+    ___ - ):
+        mn: Tuple[int] = N..
 
     ___ smallestFromLeaf(self, root: TreeNode) -> s..:
         """
         dfs
         """
-        self.dfs(root, deque())
-        __ n.. self.mn:
+        dfs(root, deque())
+        __ n.. mn:
             r.. ""
-        r.. "".join(
+        r.. "".j..(
             chr(e + ord("a"))
-            ___ e __ self.mn
+            ___ e __ mn
         )
 
     ___ dfs(self, node, cur_deque):
@@ -65,10 +65,10 @@ class Solution:
         cur_deque.appendleft(node.val)
         __ n.. node.left a.. n.. node.right:
             t = tuple(cur_deque)
-            __ n.. self.mn o. t < self.mn:
-                self.mn = t
+            __ n.. mn o. t < mn:
+                mn = t
         ____:
-            self.dfs(node.left, cur_deque)
-            self.dfs(node.right, cur_deque)
+            dfs(node.left, cur_deque)
+            dfs(node.right, cur_deque)
         # need to pop at the end
         cur_deque.popleft()

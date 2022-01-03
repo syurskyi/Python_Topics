@@ -6,13 +6,13 @@ You may assume that duplicates do not exist in the tree.
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution:
+c_ Solution:
     ___ buildTree(self, inorder, postorder):
         """
         Recursive algorithm. Pre-order, in-order, post-order traversal relationship
@@ -30,7 +30,7 @@ class Solution:
         root = TreeNode(postorder[-1])
         root_index = inorder.index(root.val)
 
-        root.left = self.buildTree(inorder[:root_index], postorder[:root_index])
-        root.right = self.buildTree(inorder[root_index+1:], postorder[root_index:-1])
+        root.left = buildTree(inorder[:root_index], postorder[:root_index])
+        root.right = buildTree(inorder[root_index+1:], postorder[root_index:-1])
 
         r.. root

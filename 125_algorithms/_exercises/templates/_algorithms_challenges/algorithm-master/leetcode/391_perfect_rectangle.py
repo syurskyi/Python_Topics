@@ -1,14 +1,14 @@
 _______ collections
 
 
-class Solution:
+c_ Solution:
     ___ isRectangleCover(self, recs):
         """
         :type recs: List[List[int]]
         :rtype: bool
         """
         __ n.. recs:
-            r.. False
+            r.. F..
 
         left = bottom = float('inf')
         right = top = float('-inf')
@@ -27,15 +27,15 @@ class Solution:
                 (l, t, 8),
             ):
                 __ points[x, y] & val:
-                    r.. False
+                    r.. F..
                 points[x, y] |= val
 
         __ any(
             # only check the mid-points
             val n.. __ (3, 6, 9, 12, 15)
-            ___ (x, y), val __ points.items()
+            ___ (x, y), val __ points.i..
             __ left < x < right o. bottom < y < top
         ):
-            r.. False
+            r.. F..
 
-        r.. True
+        r.. T..

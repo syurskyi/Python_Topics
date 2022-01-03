@@ -15,8 +15,8 @@ ___ create_parser():
        returns a argparse.ArgumentParser object"""
     ap = argparse.ArgumentParser()
 
-    ap.add_argument("-w","--weight",help="Your weight in kg",type=float)
-    ap.add_argument("-l","--length",help="Your length in cm",type=float)
+    ap.add_argument("-w","--weight",help="Your weight in kg",t..=float)
+    ap.add_argument("-l","--length",help="Your length in cm",t..=float)
     r.. ap
 
 

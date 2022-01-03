@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     V = (
         (-1,  0),
         ( 1,  0),
@@ -13,23 +13,23 @@ class Solution:
     """
     ___ exist(self, G, s):
         __ G __ N.. o. G[0] __ N.. o. s __ N..
-            r.. False
+            r.. F..
 
         m, n = l..(G), l..(G[0])
-        visited = [[False] * n ___ _ __ r..(m)]
+        visited = [[F..] * n ___ _ __ r..(m)]
         ___ x __ r..(m):
             ___ y __ r..(n):
                 __ (G[x][y] __ s[0] a..
-                    self.dfs(G, x, y, s, 1, visited)):
-                    r.. True
+                    dfs(G, x, y, s, 1, visited)):
+                    r.. T..
 
-        r.. False
+        r.. F..
 
     ___ dfs(self, G, x, y, s, i, visited):
         __ i >= l..(s):
-            r.. True
+            r.. T..
 
-        ___ dx, dy __ self.V:
+        ___ dx, dy __ V:
             _x = x + dx
             _y = y + dy
             __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0])):
@@ -37,9 +37,9 @@ class Solution:
             __ visited[_x][_y] o. G[_x][_y] != s[i]:
                 continue
 
-            visited[_x][_y] = True
-            __ self.dfs(G, _x, _y, s, i + 1, visited):
-                r.. True
-            visited[_x][_y] = False
+            visited[_x][_y] = T..
+            __ dfs(G, _x, _y, s, i + 1, visited):
+                r.. T..
+            visited[_x][_y] = F..
 
-        r.. False
+        r.. F..

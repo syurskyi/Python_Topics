@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @return an integer
     ___ maxArea(self, height):
         n = l..(height)

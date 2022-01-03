@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ maxPathSum2(self, root):
         """
         :type root: TreeNode
@@ -16,7 +16,7 @@ class Solution:
         __ n.. root:
             r.. 0
 
-        left = self.maxPathSum2(root.left)
-        right = self.maxPathSum2(root.right)
+        left = maxPathSum2(root.left)
+        right = maxPathSum2(root.right)
 
         r.. root.val + max(0, left, right)

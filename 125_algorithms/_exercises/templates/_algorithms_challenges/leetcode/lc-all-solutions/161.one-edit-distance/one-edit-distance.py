@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isOneEditDistance(self, s, t):
     """
     :type s: str
@@ -11,4 +11,4 @@ class Solution(object):
         i += 1
       r.. s != t a.. (s[i + 1:] __ t[i:] __ l..(s) != l..(t) ____ s[i + 1:] __ t[i + 1:])
     ____:
-      r.. self.isOneEditDistance(t, s)
+      r.. isOneEditDistance(t, s)

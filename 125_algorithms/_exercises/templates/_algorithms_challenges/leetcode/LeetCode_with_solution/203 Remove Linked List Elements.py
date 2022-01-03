@@ -8,13 +8,13 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
 __author__ = 'Daniel'
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution:
+c_ Solution:
     ___ removeElements(self, head, val):
         """
 

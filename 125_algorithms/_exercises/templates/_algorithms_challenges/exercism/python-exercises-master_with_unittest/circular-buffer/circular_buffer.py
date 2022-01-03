@@ -1,11 +1,11 @@
-class BufferFullException(Exception):
+c_ BufferFullException(Exception):
     pass
 
 
-class BufferEmptyException(Exception):
+c_ BufferEmptyException(Exception):
     pass
 
 
-class CircularBuffer(object):
-    ___ __init__(self):
+c_ CircularBuffer(object):
+    ___ - ):
         pass

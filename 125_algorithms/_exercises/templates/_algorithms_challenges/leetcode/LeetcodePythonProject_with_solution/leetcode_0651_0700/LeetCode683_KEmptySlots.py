@@ -3,7 +3,7 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ kEmptySlots(self, flowers, k):
         """
         :type flowers: List[int]
@@ -12,7 +12,7 @@ class Solution(object):
         """
         __ n.. flowers: r.. -1
         n = l..(flowers)
-        days = [False]*n
+        days = [F..]*n
         ___ i __ r..(n):
             days[flowers[i]-1] = i+1
         left, right = 0, k+1
@@ -26,7 +26,7 @@ class Solution(object):
                 right = k+1+i
         r.. res __ res != float('inf') ____ -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 3, 2],
@@ -44,7 +44,7 @@ class Solution(object):
         ___ flowers, k __ testCases:
             print('flowers: %s' % flowers)
             print('k: %s' % k)
-            result = self.kEmptySlots(flowers, k)
+            result = kEmptySlots(flowers, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

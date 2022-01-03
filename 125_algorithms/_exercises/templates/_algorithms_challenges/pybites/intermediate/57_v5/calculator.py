@@ -28,14 +28,14 @@ ___ create_parser():
        Note that type=float times out here so do the casting in the calculator
        function above!"""
     parser = argparse.ArgumentParser(description='A simple calculator')
-    parser.add_argument('-a', '--add', type=s.., nargs='+', help='Sums numbers')
-    parser.add_argument('-s', '--sub', type=s.., nargs='+', help='Subtracts numbers')
-    parser.add_argument('-m', '--mul', type=s.., nargs='+', help='Multiplies numbers')
-    parser.add_argument('-d', '--div', type=s.., nargs='+', help='Divides numbers')
+    parser.add_argument('-a', '--add', t..=s.., nargs='+', help='Sums numbers')
+    parser.add_argument('-s', '--sub', t..=s.., nargs='+', help='Subtracts numbers')
+    parser.add_argument('-m', '--mul', t..=s.., nargs='+', help='Multiplies numbers')
+    parser.add_argument('-d', '--div', t..=s.., nargs='+', help='Divides numbers')
     r.. parser
 
 
-___ call_calculator(args=N.., stdout=False):
+___ call_calculator(args=N.., stdout=F..):
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
@@ -47,7 +47,7 @@ ___ call_calculator(args=N.., stdout=False):
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
-    ___ operation, numbers __ vars(args).items():
+    ___ operation, numbers __ vars(args).i..:
         __ numbers __ N..
             continue
 
@@ -63,4 +63,4 @@ ___ call_calculator(args=N.., stdout=False):
 
 
 __ __name__ __ '__main__':
-    call_calculator(stdout=True)
+    call_calculator(stdout=T..)

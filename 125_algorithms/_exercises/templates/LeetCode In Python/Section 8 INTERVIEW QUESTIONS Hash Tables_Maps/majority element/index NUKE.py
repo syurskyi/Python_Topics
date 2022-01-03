@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ majorityElement(self, nums: List[i..]) -> i..:
         m  {}
         ___ num __ nums:

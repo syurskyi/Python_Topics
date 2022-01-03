@@ -3,7 +3,7 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ areSentencesSimilar(self, words1, words2, pairs):
         """
         :type words1: List[str]
@@ -11,7 +11,7 @@ class Solution(object):
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        hashmap = {}
+        hashmap    # dict
         ___ w1, w2 __ pairs:
             __ w1 n.. __ hashmap:
                 hashmap[w1] = set()
@@ -20,13 +20,13 @@ class Solution(object):
             hashmap[w1].add(w2)
             hashmap[w2].add(w1)
         __ l..(words1) != l..(words2):
-            r.. False
+            r.. F..
         ___ w1, w2 __ z..(words1, words2):
             __ w1 != w2 a.. (w1 n.. __ hashmap o. w2 n.. __ hashmap[w1]):
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ["a","very","delicious","meal"],
@@ -43,7 +43,7 @@ class Solution(object):
             print('words1: %s' % words1)
             print('words2: %s' % words2)
             print('pairs: %s' % pairs)
-            result = self.areSentencesSimilar(words1, words2, pairs)
+            result = areSentencesSimilar(words1, words2, pairs)
             print('result: %s' % result)
             print('-='*30+'-')
 

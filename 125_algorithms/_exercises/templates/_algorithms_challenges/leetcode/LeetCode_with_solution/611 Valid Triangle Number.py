@@ -19,7 +19,7 @@ The integers in the given array are in the range of [0, 1000].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ triangleNumber(self, nums: List[int]) -> int:
         """
         b - a < c < a + b
@@ -76,7 +76,7 @@ class Solution:
 
         Cache + Prune
         """
-        cache = {}
+        cache    # dict
         nums.s..()
         n = l..(nums)
         ret = 0

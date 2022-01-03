@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ searchInsert(self, nums, target):
     """
     :type nums: List[int]

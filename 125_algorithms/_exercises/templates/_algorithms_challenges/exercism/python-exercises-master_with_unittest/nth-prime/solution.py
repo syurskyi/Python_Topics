@@ -13,10 +13,10 @@ ___ nth_prime(n):
         sqrt_m = sqrt(m)
         ___ k __ known:
             __ k > sqrt_m:
-                r.. True
+                r.. T..
             ____ m % k __ 0:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     w.... l..(known) < n:
         x = next(candidates)

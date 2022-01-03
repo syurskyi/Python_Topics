@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-class Solution(object):
+c_ Solution(object):
     ___ lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode

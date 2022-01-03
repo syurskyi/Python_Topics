@@ -4,14 +4,14 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ alienOrder(self, words):
         """
         :type words: List[str]
         :rtype: str
         """
-        graph = {}
-        degree = {}
+        graph    # dict
+        degree    # dict
         ___ word __ words:
             ___ c __ word:
                 degree[c] = 0
@@ -29,7 +29,7 @@ class Solution(object):
                     graph[c1].add(c2)
                     break
         queue    # list
-        ___ c, cnt __ degree.items():
+        ___ c, cnt __ degree.i..:
             __ cnt __ 0:
                 queue.a..(c)
         res = ''
@@ -42,7 +42,7 @@ class Solution(object):
                     queue.a..(c0)
         r.. res __ l..(res) __ l..(degree) ____ ''
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "wrt",
@@ -65,7 +65,7 @@ class Solution(object):
         ]
         ___ words __ testCases:
             print('words: %s' % (words))
-            result = self.alienOrder(words)
+            result = alienOrder(words)
             print('result: %s' % (result))
             print('-='*20+'-')
     

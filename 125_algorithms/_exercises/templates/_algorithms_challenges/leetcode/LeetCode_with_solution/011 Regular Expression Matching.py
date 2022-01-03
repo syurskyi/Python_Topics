@@ -19,7 +19,7 @@ isMatch("aab", "c*a*b") -> true
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ isMatch_error(self, s, p):
         """
         Using FSA? It is complicated to build compared to 066 Valid Number, since you have to construct the transition
@@ -55,7 +55,7 @@ class Solution:
                             count = 1
 
                     ____:
-                        r.. True
+                        r.. T..
             ____:  # no * appended
                 __ char __ regex[state] o. regex[state] __ ".":
                     index += 1
@@ -64,8 +64,8 @@ class Solution:
                     break
 
         __ index __ l..(tape) a.. state __ l..(regex):
-            r.. True
-        r.. False
+            r.. T..
+        r.. F..
 
 
     ___ isMatch_TLE(self, s, p):
@@ -87,29 +87,29 @@ class Solution:
 
         # dfs terminal condition
         __ n.. tape a.. n.. regex:
-            r.. True
+            r.. T..
         # if not s and p or s and not p:
         __ tape a.. n.. regex:  # possible "", "a*"
-            r.. False
+            r.. F..
 
         __ n.. tape a.. regex:
             __ state+1 < l..(regex) a.. regex[state+1] __ "*":
-                r.. self.isMatch(tape, regex[state+2:])
+                r.. isMatch(tape, regex[state+2:])
             ____:
-                r.. False
+                r.. F..
 
         __ state+1 < l..(regex) a.. regex[state+1] __ "*":
             __ tape[index] __ regex[state] o. regex[state] __ ".":  # consume tokens
-                r.. self.isMatch(tape[index+1:], regex[state:]) o. \
-                       self.isMatch(tape[index+1:], regex[state+2:]) o. \
-                       self.isMatch(tape[index:], regex[state+2:])
+                r.. isMatch(tape[index+1:], regex[state:]) o. \
+                       isMatch(tape[index+1:], regex[state+2:]) o. \
+                       isMatch(tape[index:], regex[state+2:])
             ____:
-                r.. self.isMatch(tape[index:], regex[state+2:])
+                r.. isMatch(tape[index:], regex[state+2:])
         ____:  # without trailing *
             __ tape[index] __ regex[state] o. regex[state] __ ".":
-                r.. self.isMatch(tape[index+1:], regex[state+1:])
+                r.. isMatch(tape[index+1:], regex[state+1:])
             ____:
-                r.. False
+                r.. F..
 
     ___ isMatch(self, s, p):
         """
@@ -139,17 +139,17 @@ class Solution:
         m = l..(tape)
         n = l..(regex)
 
-        dp = [[False ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        dp = [[F.. ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
 
         # edge cases
-        dp[m][n] = True
+        dp[m][n] = T..
         ___ j __ xrange(n-1, -1, -1):
             __ regex[j] __ "*":
                 dp[m][j] = dp[m][j+1]
             ____ j+1 < n a.. regex[j+1] __ "*":
                 dp[m][j] = dp[m][j+1]
             ____:
-                dp[m][j] = False
+                dp[m][j] = F..
 
         # normal cases
         ___ i __ xrange(m-1, -1, -1):
@@ -158,7 +158,7 @@ class Solution:
                     __ j-1 >= 0 a.. regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip
                     ____:
-                        r.. False  # two consecutive *
+                        r.. F..  # two consecutive *
                 ____ j+1 < n a.. regex[j+1] __ "*":
                     __ tape[i] __ regex[j] o. regex[j] __ ".":
                         dp[i][j] = dp[i][j+2] o. dp[i+1][j] o. dp[i+1][j+2]  # what is done in dfs
@@ -168,7 +168,7 @@ class Solution:
                     __ tape[i] __ regex[j] o. regex[j] __ ".":
                         dp[i][j] = dp[i+1][j+1]
                     ____:
-                        dp[i][j] = False
+                        dp[i][j] = F..
 
         # notice that in edge cases and normal cases, checking conditions are exactly the same
 
@@ -176,12 +176,12 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().isMatch("aa", "a") __ False
-    ... Solution().isMatch("aa", "aa") __ True
-    ... Solution().isMatch("aaa", "aa") __ False
-    ... Solution().isMatch("aa", "a*") __ True
-    ... Solution().isMatch("ab", ".*") __ True
-    ... Solution().isMatch("aab", "c*a*b") __ True
-    ... Solution().isMatch("aaa", "a*a") __ True
-    ... Solution().isMatch("bbbba", ".*a*a") __ True
-    ... Solution().isMatch("a", "aa*") __ True
+    ... Solution().isMatch("aa", "a") __ F..
+    ... Solution().isMatch("aa", "aa") __ T..
+    ... Solution().isMatch("aaa", "aa") __ F..
+    ... Solution().isMatch("aa", "a*") __ T..
+    ... Solution().isMatch("ab", ".*") __ T..
+    ... Solution().isMatch("aab", "c*a*b") __ T..
+    ... Solution().isMatch("aaa", "a*a") __ T..
+    ... Solution().isMatch("bbbba", ".*a*a") __ T..
+    ... Solution().isMatch("a", "aa*") __ T..

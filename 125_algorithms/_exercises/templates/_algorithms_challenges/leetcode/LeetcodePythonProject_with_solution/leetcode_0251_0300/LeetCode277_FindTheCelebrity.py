@@ -11,7 +11,7 @@ ___ knows(a, b):
     _______ random
     r.. random(0, 1) __ 0
 
-class Solution(object):
+c_ Solution(object):
     ___ findCelebrity(self, n):
         """
         :type n: int

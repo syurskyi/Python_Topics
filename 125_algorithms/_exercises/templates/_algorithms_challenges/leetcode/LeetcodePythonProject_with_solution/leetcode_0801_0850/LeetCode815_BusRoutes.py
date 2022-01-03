@@ -3,7 +3,7 @@ Created on Apr 30, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numBusesToDestination(self, routes, S, T):
         """
         :type routes: List[List[int]]
@@ -13,7 +13,7 @@ class Solution(object):
         """
         s, t = S, T
         __ s __ t: r.. 0
-        hashmap = {}
+        hashmap    # dict
         ___ i __ r..(l..(routes)):
             ___ j __ r..(l..(routes[i])):
                 __ routes[i][j] n.. __ hashmap:
@@ -44,7 +44,7 @@ class Solution(object):
                     addedRoute.add(r)
         r.. -1
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [[1, 2, 7], [3, 6, 7]],
@@ -56,7 +56,7 @@ class Solution(object):
             ],
         ]
         ___ routes, s, t __ testCases:
-            result = self.numBusesToDestination(routes, s, t)
+            result = numBusesToDestination(routes, s, t)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -17,13 +17,13 @@ For example:
     BA -> 52 + 1 = 53
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ titleToNumber(self, s):
         """
         :type s: str
         :rtype: int
         """
-        d = {}
+        d    # dict
         res = 0
         ___ i, k __ e..(r..(ord('A'), ord('Z') + 1), start=1):
             d[chr(k)] = i

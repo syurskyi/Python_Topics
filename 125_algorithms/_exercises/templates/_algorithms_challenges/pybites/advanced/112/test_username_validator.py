@@ -1,4 +1,4 @@
-____ typing.re _______ Pattern
+____ typing.__ _______ Pattern
 
 _______ pytest
 
@@ -10,9 +10,9 @@ ____ username_validator _______ (Validator,
 ___ test_parse_social_platforms_string():
     platforms = parse_social_platforms_string()
     ... l..(platforms) __ 3
-    ... a..([type(nw) __ Validator ___ nw __ platforms.values()])
+    ... a..([t..(nw) __ Validator ___ nw __ platforms.v..)
     twitter = platforms.get('Twitter')
-    ... type(twitter.r..) __ r..  # range upper limit = exclusive!
+    ... t..(twitter.r..) __ r..  # range upper limit = exclusive!
     ... isi..(twitter.regex, Pattern)  # nope, no regex here ;)
 
 

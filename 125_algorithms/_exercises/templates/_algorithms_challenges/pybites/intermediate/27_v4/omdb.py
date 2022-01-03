@@ -1,5 +1,5 @@
 _______ sys
-_______ re
+_______ __
 _______ json
 
 
@@ -20,7 +20,7 @@ ___ get_single_comedy(movies: l..) -> s..:
 
 ___ _get_wins_noms(awards: s..) -> int:
     """return the number of wins and noms from award string or 0 if none"""
-    wins = re.findall(r'([0-9]+) ', awards)
+    wins = __.findall(r'([0-9]+) ', awards)
     r.. s..(map(int, wins)) __ wins ____ 0
 
 
@@ -31,7 +31,7 @@ ___ get_movie_most_nominations(movies: l..) -> s..:
 
 ___ _get_runtime(runtime: s..) -> int:
     """return the integer runtime from a runtime string"""
-    r.. int(re.findall(r'([0-9]+) ', runtime)[0])
+    r.. int(__.findall(r'([0-9]+) ', runtime)[0])
 
 
 ___ get_movie_longest_runtime(movies: l..) -> s..:

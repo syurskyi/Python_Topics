@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 _______ sys
 
 
-class Solution:
+c_ Solution:
     ___ minSubArrayLen(self, s, nums):
         """
         Brute force: O(n^2)

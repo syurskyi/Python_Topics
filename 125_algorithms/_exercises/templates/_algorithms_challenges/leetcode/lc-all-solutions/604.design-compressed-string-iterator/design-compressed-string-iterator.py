@@ -1,42 +1,42 @@
-class StringIterator(object):
+c_ StringIterator(object):
 
-  ___ __init__(self, compressedString):
+  ___ - , compressedString):
     """
     :type compressedString: str
     """
-    self.data = compressedString
-    self.idx = -1
-    self.decodeNext()
+    data = compressedString
+    idx = -1
+    decodeNext()
 
-  ___ decodeNext(self):
-    self.idx += 1
-    __ self.idx + 1 < l..(self.data):
-      self.cur = self.data[self.idx]
-      end = self.idx + 1
-      w.... end < l..(self.data) a.. self.data[end].isdigit():
+  ___ decodeNext
+    idx += 1
+    __ idx + 1 < l..(data):
+      cur = data[idx]
+      end = idx + 1
+      w.... end < l..(data) a.. data[end].isdigit():
         end += 1
       print
       end
-      self.num = int(self.data[self.idx + 1:end])
-      self.idx = end - 1
+      num = int(data[idx + 1:end])
+      idx = end - 1
 
-  ___ next(self):
+  ___ next
     """
     :rtype: str
     """
-    __ self.hasNext():
-      ret = self.cur
-      self.num -= 1
-      __ self.num <= 0:
-        self.decodeNext()
+    __ hasNext():
+      ret = cur
+      num -= 1
+      __ num <= 0:
+        decodeNext()
       r.. ret
     r.. " "
 
-  ___ hasNext(self):
+  ___ hasNext
     """
     :rtype: bool
     """
-    r.. self.idx < l..(self.data) a.. self.num > 0
+    r.. idx < l..(data) a.. num > 0
 
 # Your StringIterator object will be instantiated and called as such:
 # obj = StringIterator(compressedString)

@@ -7,7 +7,7 @@ class ListNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ addLists2(self, a, b):
         """
         :type a: ListNode
@@ -21,8 +21,8 @@ class Solution:
         __ n.. b:
             r.. a
 
-        a = self.rev_list(a)
-        b = self.rev_list(b)
+        a = rev_list(a)
+        b = rev_list(b)
 
         dummy = tail = ListNode(0)
         carry = 0
@@ -52,7 +52,7 @@ class Solution:
         __ carry:
             tail.next = ListNode(carry)
 
-        r.. self.rev_list(dummy.next)
+        r.. rev_list(dummy.next)
 
     ___ rev_list(self, head):
         pre = nxt = N..

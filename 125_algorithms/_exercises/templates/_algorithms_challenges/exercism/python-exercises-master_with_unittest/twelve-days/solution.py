@@ -18,14 +18,14 @@ ORDINAL = [N.., 'first', 'second', 'third', 'fourth', 'fifth', 'sixth',
 ___ verse(n):
     gifts = GIFTS[-n:]
     __ l..(gifts) > 1:
-        gifts[:-1] = [', '.join(gifts[:-1])]
-    gifts = ', and '.join(gifts)
+        gifts[:-1] = [', '.j..(gifts[:-1])]
+    gifts = ', and '.j..(gifts)
     r.. 'On the {} day of Christmas my true love gave to me, {}.\n'.f..(
         ORDINAL[n], gifts)
 
 
 ___ verses(start, end):
-    r.. ''.join([verse(n) + '\n'
+    r.. ''.j..([verse(n) + '\n'
                     ___ n __ r..(start, end + 1)])
 
 

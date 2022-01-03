@@ -1,33 +1,33 @@
-class Node(object):
-    ___ __init__(self, value):
+c_ Node(object):
+    ___ - , value):
         pass
 
-    ___ value(self):
+    ___ value
         pass
 
-    ___ next(self):
+    ___ next
         pass
 
 
-class LinkedList(object):
-    ___ __init__(self, values=[]):
+c_ LinkedList(object):
+    ___ - , values=[]):
         pass
 
-    ___ __len__(self):
+    ___ __len__
         pass
 
-    ___ head(self):
+    ___ head
         pass
 
     ___ push(self, value):
         pass
 
-    ___ pop(self):
+    ___ pop
         pass
 
-    ___ reversed(self):
+    ___ reversed
         pass
 
 
-class EmptyListException(Exception):
+c_ EmptyListException(Exception):
     pass

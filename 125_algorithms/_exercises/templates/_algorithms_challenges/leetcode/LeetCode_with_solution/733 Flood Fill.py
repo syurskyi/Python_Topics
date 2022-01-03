@@ -39,7 +39,7 @@ ____ typing _______ List
 dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
 
-class Solution:
+c_ Solution:
     ___ floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
         """
         dfs fill
@@ -50,7 +50,7 @@ class Solution:
         __ cur_color __ newColor:
             r.. image
 
-        self.dfs(image, sr, sc, cur_color, newColor)
+        dfs(image, sr, sc, cur_color, newColor)
         r.. image
 
     ___ dfs(self, image, i, j, cur_color, new_color):
@@ -60,4 +60,4 @@ class Solution:
             I = i + di
             J = j + dj
             __ 0 <= I < m a.. 0 <= J < n a.. image[I][J] __ cur_color:
-                self.dfs(image, I, J, cur_color, new_color)
+                dfs(image, I, J, cur_color, new_color)

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   # naive pre-order traversal on denary tree
   ___ _findKthNumber(self, n, k):
     """
@@ -8,9 +8,9 @@ class Solution(object):
     """
 
     ___ dfs(cur, n):
-      __ self.k __ 0:
+      __ k __ 0:
         r.. cur
-      self.k -= 1
+      k -= 1
       __ cur __ 0:
         ___ i __ r..(1, 10):
           __ i > n:
@@ -26,7 +26,7 @@ class Solution(object):
           __ ret:
             r.. ret
 
-    self.k = k
+    k = k
     r.. dfs(0, n)
 
   # optimized solution

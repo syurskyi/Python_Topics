@@ -7,7 +7,7 @@ not exceed 10000.
 """
 
 
-class Solution:
+c_ Solution:
     ___ repeatedSubstringPattern(self, s):
         """
         The start of the substring is always 0, then incr the ending index e
@@ -37,7 +37,7 @@ class Solution:
         :rtype: bool
         """
         __ n.. s:
-            r.. False
+            r.. F..
         p1 = 0
         e = 1  # ending s[0:e] is the substring
         p2 = 1
@@ -56,6 +56,6 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().repeatedSubstringPattern("abab") __ True
-    ... Solution().repeatedSubstringPattern("abcd") __ False
-    ... Solution().repeatedSubstringPattern("abacababacab") __ True
+    ... Solution().repeatedSubstringPattern("abab") __ T..
+    ... Solution().repeatedSubstringPattern("abcd") __ F..
+    ... Solution().repeatedSubstringPattern("abacababacab") __ T..

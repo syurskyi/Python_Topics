@@ -10,7 +10,7 @@ class MultiTreeNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     Bottom Up
     """
@@ -22,7 +22,7 @@ class Solution:
         __ n.. root:
             r.. 0
 
-        r.. self.divide_conquer(root)[0]
+        r.. divide_conquer(root)[0]
 
     ___ divide_conquer(self, node):
         __ n.. node:
@@ -35,7 +35,7 @@ class Solution:
             __ n.. child:
                 continue
 
-            _size, _up, _down = self.divide_conquer(child)
+            _size, _up, _down = divide_conquer(child)
 
             __ child.val + 1 __ node.val a.. _up + 1 > up:
                 up = _up + 1

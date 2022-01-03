@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ longestCommonPrefix(self, strs):
     """
     :type strs: List[str]

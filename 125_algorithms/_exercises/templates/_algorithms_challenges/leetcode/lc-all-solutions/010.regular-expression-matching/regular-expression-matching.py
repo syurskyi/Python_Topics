@@ -1,12 +1,12 @@
-class Solution(object):
+c_ Solution(object):
   ___ isMatch(self, s, p):
     """
     :type s: str
     :type p: str
     :rtype: bool
     """
-    dp = [[False] * (l..(p) + 1) ___ _ __ r..(l..(s) + 1)]
-    dp[0][0] = True
+    dp = [[F..] * (l..(p) + 1) ___ _ __ r..(l..(s) + 1)]
+    dp[0][0] = T..
     ___ j __ r..(1, l..(p) + 1):
       __ p[j - 1] __ "*":
         dp[0][j] = dp[0][j - 2]

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ multiply(self, num1, num2):
     """
     :type num1: str
@@ -13,4 +13,4 @@ class Solution(object):
         ans[i + j] %= 10
     w.... l..(ans) > 1 a.. ans[-1] __ 0:
       ans.pop()
-    r.. "".join(map(s.., ans[::-1]))
+    r.. "".j..(map(s.., ans[::-1]))

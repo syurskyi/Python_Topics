@@ -27,7 +27,7 @@ ____ typing _______ List
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ minIncrementForUnique(self, A: List[int]) -> int:
         """
         sort + at least previous + 1
@@ -49,7 +49,7 @@ class Solution:
         r.. ret
 
 
-class Solution:
+c_ Solution:
     ___ minIncrementForUnique(self, A: List[int]) -> int:
         """
         fill the slot and count
@@ -66,7 +66,7 @@ class Solution:
                 ret += i - q.pop()
         r.. ret
 
-class Solution:
+c_ Solution:
     ___ minIncrementForUnique(self, A: List[int]) -> int:
         """
         sort, a "brute force" solution of incrementing it repeatedly until it is

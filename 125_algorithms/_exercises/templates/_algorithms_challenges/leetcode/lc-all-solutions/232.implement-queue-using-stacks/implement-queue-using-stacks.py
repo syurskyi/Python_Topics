@@ -1,41 +1,41 @@
 ____ collections _______ deque
 
 
-class Queue(object):
-  ___ __init__(self):
+c_ Queue(object):
+  ___ - ):
     """
     initialize your data structure here.
     """
-    self.stack1 = deque([])
-    self.stack2 = deque([])
+    stack1 = deque([])
+    stack2 = deque([])
 
   ___ push(self, x):
     """
     :type x: int
     :rtype: nothing
     """
-    self.stack1.a..(x)
+    stack1.a..(x)
 
-  ___ pop(self):
+  ___ pop
     """
     :rtype: nothing
     """
-    self.peek()
-    self.stack2.pop()
+    peek()
+    stack2.pop()
 
-  ___ peek(self):
+  ___ peek
     """
     :rtype: int
     """
-    __ n.. self.stack2:
-      w.... self.stack1:
-        self.stack2.a..(self.stack1.pop())
-      r.. self.stack2[-1]
+    __ n.. stack2:
+      w.... stack1:
+        stack2.a..(stack1.pop())
+      r.. stack2[-1]
     ____:
-      r.. self.stack2[-1]
+      r.. stack2[-1]
 
-  ___ empty(self):
+  ___ empty
     """
     :rtype: bool
     """
-    r.. n.. self.stack1 a.. n.. self.stack2
+    r.. n.. stack1 a.. n.. stack2

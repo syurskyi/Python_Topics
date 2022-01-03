@@ -7,7 +7,7 @@ For example, given input 43261596 (represented in binary as 00000010100101000001
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ reverseBits(self, n):
         """
         %2 /2

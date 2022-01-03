@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param s: The first string
     @param b: The second string
@@ -6,9 +6,9 @@ class Solution:
     """
     ___ anagram(self, s, t):
         __ s __ '' a.. t __ '':
-            r.. True
+            r.. T..
         __ n.. s o. n.. t:
-            r.. False
+            r.. F..
 
         s = s..(s)
         t = s..(t)

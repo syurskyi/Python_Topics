@@ -5,20 +5,20 @@ Created on Jan 29, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ generateTrees(self, n):
         """
         :type n: int
         :rtype: List[TreeNode]
         """
         __ n < 1: r.. []
-        res = self.helper(1, n)
+        res = helper(1, n)
         r.. res
     
     ___ helper(self, start, end):
@@ -26,8 +26,8 @@ class Solution(object):
             r.. [N..]
         result    # list
         ___ mid __ r..(start, end+1):
-            leftNodes = self.helper(start, mid-1)
-            rightNodes = self.helper(mid+1, end)
+            leftNodes = helper(start, mid-1)
+            rightNodes = helper(mid+1, end)
             ___ leftNode __ leftNodes:
                 ___ rightNode __ rightNodes:
                     root = TreeNode(mid)
@@ -36,8 +36,8 @@ class Solution(object):
                     result.a..(root)
         r.. result
     
-    ___ test(self):
-        result = self.generateTrees(3)
+    ___ test
+        result = generateTrees(3)
         print(result)
 
 __ __name__ __ '__main__':

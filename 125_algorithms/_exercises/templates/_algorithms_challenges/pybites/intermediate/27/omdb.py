@@ -20,7 +20,7 @@ ___ get_single_comedy(movies: l..) -> s..:
 
 ___ get_movie_most_nominations(movies: l..) -> s..:
     """Return the movie that had the most nominations"""
-    nominations_dict = {}
+    nominations_dict    # dict
     ___ movie __ movies:
         nominations_index = movie["Awards"].rfind("nominations")
         nominations_count = movie["Awards"][nominations_index -3: nominations_index]
@@ -33,7 +33,7 @@ ___ get_movie_most_nominations(movies: l..) -> s..:
 
 ___ get_movie_longest_runtime(movies: l..) -> s..:
     """Return the movie that has the longest runtime"""
-    runtime_dict = {}
+    runtime_dict    # dict
     ___ movie __ movies:
         runtime_index = movie["Runtime"].rfind(" min")
         movie_runtime = movie["Runtime"][:runtime_index]

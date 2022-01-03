@@ -9,7 +9,7 @@ Note that 1 is typically treated as an ugly number.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isUgly(self, num):
         """
         Prime factors: 2, 3, 5
@@ -18,9 +18,9 @@ class Solution(object):
         :rtype: bool
         """
         __ num < 1:
-            r.. False
+            r.. F..
         __ num __ 1:
-            r.. True
+            r.. T..
 
         ugly = {2, 3, 5}
 
@@ -31,9 +31,9 @@ class Solution(object):
             ____:
                 num /= prime
                 __ prime n.. __ ugly:
-                    r.. False
+                    r.. F..
 
         __ num n.. __ ugly:
-            r.. False
+            r.. F..
 
-        r.. True
+        r.. T..

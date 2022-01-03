@@ -62,7 +62,7 @@ nbrs = {
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ knightDialer(self, N: int) -> int:
         """
         DP
@@ -86,50 +86,50 @@ class Solution:
         r.. ret
 
 
-class SolutionTLE2:
-    ___ __init__(self):
-        self.cache = {}
+c_ SolutionTLE2:
+    ___ - ):
+        cache    # dict
 
     ___ knightDialer(self, N: int) -> int:
         ret = 0
         ___ i __ r..(10):
-            ret += self.dfs(i, N-1)
+            ret += dfs(i, N-1)
             ret %= MOD
 
         r.. ret
 
     ___ dfs(self, i, r):
-        __ (i, r) n.. __ self.cache:
+        __ (i, r) n.. __ cache:
             ret = 0
             __ r __ 0:
                 ret = 1
             ____:
                 ___ nbr __ nbrs[i]:
-                    ret += self.dfs(nbr, r-1)
+                    ret += dfs(nbr, r-1)
 
-            self.cache[i, r] = ret
+            cache[i, r] = ret
 
-        r.. self.cache[i, r]
+        r.. cache[i, r]
 
 
-class SolutionTLE:
-    ___ __init__(self):
+c_ SolutionTLE:
+    ___ - ):
         # row, col size
-        self.m = 4
-        self.n = 3
-        self.cache = {}
+        m = 4
+        n = 3
+        cache    # dict
 
     ___ knightDialer(self, N: int) -> int:
         ret = 0
-        ___ i __ r..(self.m):
-            ___ j __ r..(self.n):
+        ___ i __ r..(m):
+            ___ j __ r..(n):
                 __ (i, j) != (3, 0) a.. (i, j) != (3, 2):
-                    ret += self.dfs(i, j, N-1)
+                    ret += dfs(i, j, N-1)
                     ret %= MOD
         r.. ret
 
     ___ dfs(self, i, j, r):
-        __ (i, j, r) n.. __ self.cache:
+        __ (i, j, r) n.. __ cache:
             ret = 0
             __ r __ 0:
                 ret = 1
@@ -137,13 +137,13 @@ class SolutionTLE:
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < self.m a.. 0 <= J < self.n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2):
-                        ret += self.dfs(I, J, r - 1)
+                    __ 0 <= I < m a.. 0 <= J < n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2):
+                        ret += dfs(I, J, r - 1)
                         ret %= MOD
 
-            self.cache[i, j, r] = ret
+            cache[i, j, r] = ret
 
-        r.. self.cache[i, j, r]
+        r.. cache[i, j, r]
 
 
 __ __name__ __ "__main__":

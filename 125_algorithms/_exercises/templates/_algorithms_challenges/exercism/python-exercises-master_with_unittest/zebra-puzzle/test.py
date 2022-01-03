@@ -3,9 +3,9 @@ _______ unittest
 ____ zebra_puzzle _______ solution
 
 
-class ZebraPuzzleTest(unittest.TestCase):
-    ___ test_solution(self):
-        self.assertEqual(solution(),
+c_ ZebraPuzzleTest(unittest.TestCase):
+    ___ test_solution
+        assertEqual(solution(),
                          ("It is the Norwegian who drinks the water.\n"
                           "The Japanese keeps the zebra."))
 

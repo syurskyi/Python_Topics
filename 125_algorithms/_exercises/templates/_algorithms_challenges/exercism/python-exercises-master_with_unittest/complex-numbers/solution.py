@@ -1,42 +1,42 @@
 _______ math
 
 
-class ComplexNumber(object):
-    ___ __init__(self, real, imaginary):
-        self.real = real
-        self.imaginary = imaginary
+c_ ComplexNumber(object):
+    ___ - , real, imaginary):
+        real = real
+        imaginary = imaginary
 
     ___ add(self, other):
-        r = self.real + other.real
-        i = self.imaginary + other.imaginary
+        r = real + other.real
+        i = imaginary + other.imaginary
         r.. ComplexNumber(r, i)
 
     ___ mul(self, other):
-        r = self.real * other.real
-        i = self.imaginary * other.imaginary
+        r = real * other.real
+        i = imaginary * other.imaginary
         r.. ComplexNumber(r, i)
 
     ___ sub(self, other):
-        r = self.real - other.real
-        i = self.imaginary - other.imaginary
+        r = real - other.real
+        i = imaginary - other.imaginary
         r.. ComplexNumber(r, i)
 
     ___ div(self, other):
         d = other.real * other.real + other.imaginary * other.imaginary
-        r = (self.real * other.real + self.imaginary *
+        r = (real * other.real + imaginary *
              other.imaginary) / float(d)
-        i = (self.imaginary * other.real - self.real *
-             self.real * other.imaginary) / float(d)
+        i = (imaginary * other.real - real *
+             real * other.imaginary) / float(d)
         r.. ComplexNumber(r, i)
 
-    ___ abs(self):
-        square_sum = self.real * self.real + self.imaginary * self.imaginary
+    ___ abs
+        square_sum = real * real + imaginary * imaginary
         r.. math.sqrt(square_sum)
 
-    ___ conjugate(self):
-        r.. ComplexNumber(self.real, -1 * self.imaginary)
+    ___ conjugate
+        r.. ComplexNumber(real, -1 * imaginary)
 
-    ___ exp(self):
-        r = round(math.cos(self.imaginary), 8) * math.exp(self.real)
-        i = round(math.sin(self.imaginary), 8) * math.exp(self.real)
+    ___ exp
+        r = round(math.cos(imaginary), 8) * math.exp(real)
+        i = round(math.sin(imaginary), 8) * math.exp(real)
         r.. ComplexNumber(r, i)

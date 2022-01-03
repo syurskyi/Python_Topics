@@ -25,5 +25,5 @@ ___ text_to_columns(text):
        line1\nline2\nline3\n ... etc ...
        See also the tests for more info."""
     lines = [_divide_line(col) ___ col __ (text.s..('\n\n'))]
-    rv = [' '.join(combination) ___ combination __ zip_longest(*lines, fillvalue=' ')]
-    r.. '\n'.join(rv)
+    rv = [' '.j..(combination) ___ combination __ zip_longest(*lines, fillvalue=' ')]
+    r.. '\n'.j..(rv)

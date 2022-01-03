@@ -8,10 +8,10 @@ param = obj.getRandom()
 _______ random
 
 
-class RandomizedSet:
-    ___ __init__(self):
-        self.nums    # list
-        self.val2idx = {}
+c_ RandomizedSet:
+    ___ - ):
+        nums    # list
+        val2idx    # dict
 
     ___ insert(self, val):
         """
@@ -19,8 +19,8 @@ class RandomizedSet:
         :type val: int
         :rtype: bool
         """
-        self.val2idx[val] = l..(self.nums)
-        self.nums.a..(val)
+        val2idx[val] = l..(nums)
+        nums.a..(val)
 
     ___ remove(self, val):
         """
@@ -28,23 +28,23 @@ class RandomizedSet:
         :type val: int
         :rtype: bool
         """
-        __ val n.. __ self.val2idx:
-            r.. False
+        __ val n.. __ val2idx:
+            r.. F..
 
-        i = self.val2idx[val]
-        key = self.nums[-1]
+        i = val2idx[val]
+        key = nums[-1]
 
-        self.val2idx[key] = i
-        self.nums[i] = self.nums[-1]
+        val2idx[key] = i
+        nums[i] = nums[-1]
 
-        self.nums.pop()
-        del self.val2idx[val]
-        r.. True
+        nums.pop()
+        del val2idx[val]
+        r.. T..
 
-    ___ getRandom(self):
+    ___ getRandom
         """
         Get a random element from the set.
         :rtype: int
         """
-        i = random.randrange(l..(self.nums))
-        r.. self.nums[i]
+        i = random.randrange(l..(nums))
+        r.. nums[i]

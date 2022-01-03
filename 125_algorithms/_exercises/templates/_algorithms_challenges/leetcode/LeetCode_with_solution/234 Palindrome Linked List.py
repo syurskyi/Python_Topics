@@ -7,13 +7,13 @@ Could you do it in O(n) time and O(1) space?
 __author__ = 'Daniel'
 
 
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution:
+c_ Solution:
     ___ isPalindrome(self, head):
         """
         Algorithms:
@@ -23,20 +23,20 @@ class Solution:
         :type head: ListNode
         :rtype: bool
         """
-        n = self.l..(head)
+        n = l..(head)
         m = n/2
-        mid = self.get(head, m)
+        mid = get(head, m)
         __ n%2 != 0:
             mid = mid.next
 
-        mid = self.reverse(mid)
+        mid = reverse(mid)
         w.... head a.. mid:
             __ head.val != mid.val:
-                r.. False
+                r.. F..
             head = head.next
             mid = mid.next
 
-        r.. True
+        r.. T..
 
     ___ l..(self, head):
         cnt = 0

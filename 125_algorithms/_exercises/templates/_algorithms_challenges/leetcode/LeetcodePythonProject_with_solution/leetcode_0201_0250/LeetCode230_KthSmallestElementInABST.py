@@ -5,13 +5,13 @@ Created on Feb 23, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ kthSmallest(self, root, k):
         """
         :type root: TreeNode
@@ -33,7 +33,7 @@ class Solution(object):
                     stack.a..(node)
                     node = node.left
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 TreeNode(2, TreeNode(1)),
@@ -41,7 +41,7 @@ class Solution(object):
             ),
         ]
         ___ root, k __ testCases:
-            result = self.kthSmallest(root, k)
+            result = kthSmallest(root, k)
             print('result: %s' % (result))
 
 __ __name__ __ '__main__':

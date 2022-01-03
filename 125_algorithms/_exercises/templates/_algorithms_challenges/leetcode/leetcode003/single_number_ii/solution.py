@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param A, a list of integer
     # @return an integer
     ___ singleNumber(self, A):
@@ -10,7 +10,7 @@ class Solution:
         ___ num __ A:
             bit = 1 __ num & (1 << (num_of_bits - 1)) != 0 ____ 0
             res_bit = (res_bit + bit) % 3
-        positive = True __ res_bit __ 0 ____ False
+        positive = T.. __ res_bit __ 0 ____ F..
 
         ___ i __ r..(num_of_bits - 1):
             res_bit = 0

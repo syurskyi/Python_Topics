@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ getRow(self, rowIndex):
     """
     :type rowIndex: int

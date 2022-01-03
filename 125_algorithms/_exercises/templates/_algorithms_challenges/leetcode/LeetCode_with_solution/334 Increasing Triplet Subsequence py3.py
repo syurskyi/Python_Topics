@@ -22,7 +22,7 @@ ____ typing _______ List
 ____ bisect _______ bisect_left
 
 
-class Solution:
+c_ Solution:
     ___ increasingTriplet(self, nums: List[int]) -> bool:
         """
         Patience sort
@@ -32,7 +32,7 @@ class Solution:
         ___ n __ nums:
             i = bisect_left(F, n)
             __ i >= 2:
-                r.. True
+                r.. T..
             F[i] = n
 
-        r.. False
+        r.. F..

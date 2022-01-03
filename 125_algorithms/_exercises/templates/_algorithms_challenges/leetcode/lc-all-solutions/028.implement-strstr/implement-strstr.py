@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ strStr(self, haystack, needle):
     """
     :type haystack: str

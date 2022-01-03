@@ -1,7 +1,7 @@
 """
 dp: space optimized by rolling array
 """
-class Solution:
+c_ Solution:
     """
     @param: n: An integer
     @return: An integer
@@ -22,7 +22,7 @@ class Solution:
 """
 dp
 """
-class Solution:
+c_ Solution:
     """
     @param: n: An integer
     @return: An integer

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ lengthOfLongestSubstringKDistinct(self, s, k):
     """
     :type s: str
@@ -7,7 +7,7 @@ class Solution(object):
     """
     j = 0
     ans = 0
-    d.. = {}
+    d..    # dict
     ___ i __ r..(l..(s)):
       d..[s[i]] = d...get(s[i], 0) + 1
       w.... j <= i a.. l..(d..) > k:

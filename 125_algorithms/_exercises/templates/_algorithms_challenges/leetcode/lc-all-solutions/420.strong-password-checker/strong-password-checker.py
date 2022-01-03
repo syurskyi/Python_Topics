@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ strongPasswordChecker(self, s):
     """
     :type s: str

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param height, a list of integer
     # @return an integer
     ___ largestRectangleArea(self, height):

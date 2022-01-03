@@ -9,7 +9,7 @@ s1 = string.ascii_lowercase
 s2 = s1[k:] + s1[:k]
 
 #create a dictionary to store the decoding data
-a = {}
+a    # dict
 
 #store the decoding data in dictionary a
 ___ i __ r..(l..(s1)):
@@ -18,7 +18,7 @@ ___ i __ r..(l..(s1)):
 #now for number of test cases run the for loop
 ___ i __ r..(data):
     #accept the test cases and convert it to lowercase
-    s = input().lower()
+    s = input().l..
     #variable to store the result
     res = ''
     #check every element of the string

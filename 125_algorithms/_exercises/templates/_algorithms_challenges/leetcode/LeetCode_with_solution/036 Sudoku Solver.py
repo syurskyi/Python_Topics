@@ -6,7 +6,7 @@ Empty cells are indicated by the character '.'.
 You may assume that there will be only one unique solution.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ solveSudoku(self, board):
         """
         Solve the Sudoku by modifying the input board in-place.
@@ -19,9 +19,9 @@ class Solution:
         # break board
         ___ row __ xrange(l..(board)):
             board[row] = l..(board[row])
-        self.solve(board, 0, 0)
+        solve(board, 0, 0)
         ___ row __ xrange(l..(board)):
-            board[row] = "".join(board[row])
+            board[row] = "".j..(board[row])
 
     ___ solve_TLE(self, board):
         """
@@ -31,7 +31,7 @@ class Solution:
         """
         n = l..(board)
         __ a..([board[i/n][i%n]!="." ___ i __ xrange(n*n)]):
-            r.. True
+            r.. T..
 
         ___ i __ xrange(n):
             ___ j __ xrange(n):
@@ -47,12 +47,12 @@ class Solution:
 
                         __ condition_col a.. condition_row a.. condition_square:
                             board[i][j] = num_str
-                            __ n.. self.solve(board):
+                            __ n.. solve(board):
                                 board[i][j] = "."
                             ____:
-                                r.. True
+                                r.. T..
 
-        r.. False
+        r.. F..
 
     ___ solve(self, board, i, j):
         """
@@ -61,9 +61,9 @@ class Solution:
         :return: Boolean
         """
         __ j>=9:
-            r.. self.solve(board, i+1, 0)
+            r.. solve(board, i+1, 0)
         __ i__9:
-            r.. True
+            r.. T..
 
         __ board[i][j]__".":
             ___ num __ r..(1, 10):
@@ -74,14 +74,14 @@ class Solution:
                         a..([board[row][j]!=num_str ___ row __ xrange(9)]) a.. \
                         a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ xrange(9)]):
                     board[i][j] = num_str
-                    __ n.. self.solve(board, i, j+1):
+                    __ n.. solve(board, i, j+1):
                         board[i][j] = "."  # restore, backtrack, save space
                     ____:
-                        r.. True
+                        r.. T..
         ____:
-            r.. self.solve(board, i, j+1)
+            r.. solve(board, i, j+1)
 
-        r.. False
+        r.. F..
 
 __ __name____"__main__":
     Solution().solveSudoku(

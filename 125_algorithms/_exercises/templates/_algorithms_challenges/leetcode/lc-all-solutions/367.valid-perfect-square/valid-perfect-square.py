@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isPerfectSquare(self, num):
     """
     :type num: int

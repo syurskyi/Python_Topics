@@ -4,7 +4,7 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ wordBreak(self, s, wordDict):
         """
         :type s: str
@@ -12,8 +12,8 @@ class Solution(object):
         :rtype: bool
         """
         wordDict = set(wordDict)
-        dp = [False]*(l..(s)+1)
-        dp[0] = True
+        dp = [F..]*(l..(s)+1)
+        dp[0] = T..
         ___ i __ r..(l..(s)):
             __ n.. dp[i]:
                 continue
@@ -21,10 +21,10 @@ class Solution(object):
                 end = i+l..(word)
                 sub = s[i:end]
                 __ sub __ word:
-                    dp[end] = True
+                    dp[end] = T..
         r.. dp[-1]
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

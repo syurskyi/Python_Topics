@@ -4,7 +4,7 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findPeakElement(self, nums):
         """
         :type nums: List[int]
@@ -25,7 +25,7 @@ class Solution(object):
                     end = mid-1
         r.. start
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 3, 1],
             [1, 8, 2, 1, 3, 4],
@@ -33,7 +33,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.findPeakElement(nums)
+            result = findPeakElement(nums)
             print('result: %s' % (result))
             print('-='*20 + '-')
 

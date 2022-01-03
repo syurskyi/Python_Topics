@@ -1,7 +1,7 @@
 ____ heapq _______ heappop, heappush
 
 
-class Solution:
+c_ Solution:
     """
     @param: nums: an integer unsorted array
     @param: k: an integer from 1 to n

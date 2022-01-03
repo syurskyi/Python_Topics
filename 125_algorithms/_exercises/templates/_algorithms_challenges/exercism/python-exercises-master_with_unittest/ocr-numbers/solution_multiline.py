@@ -52,12 +52,12 @@ ___ _convert_ocr_line(ocr_numbers: List[s..]) -> s..:
         s..(OCR_NUMBERS.index(ocr)) __ ocr __ OCR_NUMBERS ____ '?'
         ___ ocr __ ocrs_split
     ]
-    r.. ''.join(numbers)
+    r.. ''.j..(numbers)
 
 
 ___ number(ocr_numbers: List[s..]) -> s..:
     validate_ocr_numbers(ocr_numbers)
-    r.. ','.join(
+    r.. ','.j..(
         [_convert_ocr_line(line) ___ line __ split_ocr_lines(ocr_numbers)]
     )
 
@@ -68,7 +68,7 @@ ___ grid(numbers: s..) -> List[s..]:
         OCR_NUMBERS[int(number)] ___ number __ numbers
     ]
     r.. [
-        ''.join(lines) ___ lines __ z..(*ocr_numbers_split)
+        ''.j..(lines) ___ lines __ z..(*ocr_numbers_split)
     ]
 
 

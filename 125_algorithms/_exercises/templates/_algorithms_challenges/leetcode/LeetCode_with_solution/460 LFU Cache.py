@@ -33,9 +33,9 @@ ____ collections _______ defaultdict, OrderedDict
 DUMMY = N..
 
 
-class LFUCache:
+c_ LFUCache:
 
-    ___ __init__(self, capacity: int):
+    ___ - , capacity: int):
         """
         Need priority queue (pq) to keep contract of frequency
 
@@ -49,45 +49,45 @@ class LFUCache:
 
         min count is +1
         """
-        self.cap = capacity
-        self.values = {}
-        self.freqs = defaultdict(int)
-        self.keys = defaultdict(OrderedDict)
-        self.mini = -1  # mini frequency
+        cap = capacity
+        values    # dict
+        freqs = defaultdict(int)
+        keys = defaultdict(OrderedDict)
+        mini = -1  # mini frequency
 
     ___ get(self, key: int) -> int:
-        __ key __ self.values:
-            val = self.values[key]
-            freq_org = self.freqs[key]
-            self.freqs[key] += 1
-            del self.keys[freq_org][key]
-            self.keys[freq_org + 1][key] = DUMMY  # dummy
+        __ key __ values:
+            val = values[key]
+            freq_org = freqs[key]
+            freqs[key] += 1
+            del keys[freq_org][key]
+            keys[freq_org + 1][key] = DUMMY  # dummy
 
-            __ freq_org __ self.mini a.. l..(self.keys[self.mini]) __ 0:
-                self.mini = freq_org + 1
+            __ freq_org __ mini a.. l..(keys[mini]) __ 0:
+                mini = freq_org + 1
 
             r.. val
         ____:
             r.. - 1
 
     ___ put(self, key: int, value: int) -> N..
-        __ self.cap __ 0:  # trivial
+        __ cap __ 0:  # trivial
             r..
 
-        __ key __ self.values:
-            self.values[key] = value
-            self.get(key)  # update
+        __ key __ values:
+            values[key] = value
+            get(key)  # update
         ____:
-            __ l..(self.values) >= self.cap:
-                evit_key, _ = self.keys[self.mini].popitem(last=False)  # least recent is at head
-                del self.values[evit_key]
-                del self.freqs[evit_key]
+            __ l..(values) >= cap:
+                evit_key, _ = keys[mini].popitem(last=F..)  # least recent is at head
+                del values[evit_key]
+                del freqs[evit_key]
 
-            self.values[key] = value
-            self.freqs[key] = 0
-            self.keys[0][key] = DUMMY
-            self.get(key)  # update
-            self.mini = 1
+            values[key] = value
+            freqs[key] = 0
+            keys[0][key] = DUMMY
+            get(key)  # update
+            mini = 1
 
 
 # Your LFUCache object will be instantiated and called as such:

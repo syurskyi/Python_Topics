@@ -26,25 +26,25 @@ Each value in each tree will be a unique integer in the range [0, 99].
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ flipEquiv(self, root1: TreeNode, root2: TreeNode) -> bool:
         """
         O(N)
         """
         __ n.. root1 a.. n.. root2:
-            r.. True
+            r.. T..
         ____ n.. root1 o. n.. root2:
-            r.. False
+            r.. F..
 
         __ root1.val != root2.val:
-            r.. False
+            r.. F..
 
-        r.. self.flipEquiv(root1.left, root2.left) a.. self.flipEquiv(root1.right, root2.right) o. \
-            self.flipEquiv(root1.left, root2.right) a.. self.flipEquiv(root1.right, root2.left)
+        r.. flipEquiv(root1.left, root2.left) a.. flipEquiv(root1.right, root2.right) o. \
+            flipEquiv(root1.left, root2.right) a.. flipEquiv(root1.right, root2.left)

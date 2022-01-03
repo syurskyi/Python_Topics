@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ reverseStr(self, s, k):
     """
     :type s: str
@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: str
     """
     cnt = 0
-    isFirst = True
+    isFirst = T..
     a = ""
     b = ""
     ans    # list
@@ -25,4 +25,4 @@ class Solution(object):
           b = ""
         isFirst = n.. isFirst
         cnt = 0
-    r.. "".join(ans) + a + b
+    r.. "".j..(ans) + a + b

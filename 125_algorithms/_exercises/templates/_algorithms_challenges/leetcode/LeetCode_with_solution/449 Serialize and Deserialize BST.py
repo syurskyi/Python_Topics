@@ -14,14 +14,14 @@ The encoded string should be as compact as possible.
 
 
 # Definition for a binary tree node.
-class TreeNode(object):
-  ___ __init__(self, x):
-      self.val = x
-      self.left = N..
-      self.right = N..
+c_ TreeNode(object):
+  ___ - , x):
+      val = x
+      left = N..
+      right = N..
 
 
-class Codec:
+c_ Codec:
     DELIMITER = ","
 
     ___ serialize(self, root):
@@ -50,7 +50,7 @@ class Codec:
 
         ret    # list
         traverse(root, ret)
-        r.. self.DELIMITER.join(map(s.., ret))
+        r.. DELIMITER.j..(map(s.., ret))
 
     ___ deserialize(self, data):
         """Decodes your encoded data to tree.
@@ -62,7 +62,7 @@ class Codec:
         __ n.. data:
             r..
             
-        lst = l..(map(int, data.s..(self.DELIMITER)))
+        lst = l..(map(int, data.s..(DELIMITER)))
         root = TreeNode(lst[0])
         ___ insert(root, val):
             # need to keep the parent

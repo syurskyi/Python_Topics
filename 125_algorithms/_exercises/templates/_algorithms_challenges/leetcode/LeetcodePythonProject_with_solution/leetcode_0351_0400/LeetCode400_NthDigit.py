@@ -4,7 +4,7 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findNthDigit(self, n):
         length, count, start = 1, 9, 1
         w.... n > length*count:
@@ -16,7 +16,7 @@ class Solution(object):
         s = s..(start)
         r.. int(s[(n-1)%length])
     
-    ___ test(self):
+    ___ test
         testCases = [
             3,
             11,
@@ -25,7 +25,7 @@ class Solution(object):
         ]
         ___ num __ testCases:
             print('num: %s' % num)
-            result = self.findNthDigit(num)
+            result = findNthDigit(num)
             print('result: %s' % result)
             print('-='*20+'-')
 

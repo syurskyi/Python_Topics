@@ -12,9 +12,9 @@ ___ test_get_movies_by_director():
 
 
 ___ test_director_movies_data_structure():
-    ... type(director_movies) __ (d.., defaultdict)
-    ... type(director_movies['Peter Jackson']) __ l..
-    ... type(director_movies['Peter Jackson'][0]) __ Movie
+    ... t..(director_movies) __ (d.., defaultdict)
+    ... t..(director_movies['Peter Jackson']) __ l..
+    ... t..(director_movies['Peter Jackson'][0]) __ Movie
 
 
 ___ test_calc_mean_score():

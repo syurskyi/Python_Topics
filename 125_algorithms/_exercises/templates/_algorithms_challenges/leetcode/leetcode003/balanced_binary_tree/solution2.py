@@ -12,27 +12,27 @@ which the depth of the two subtrees of every node never differ by more than 1.
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ isBalanced(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
         __ root __ N..
-            r.. True
+            r.. T..
         ____:
-            __ self.height(root) != -1:
-                r.. True
+            __ height(root) != -1:
+                r.. T..
             ____:
-                r.. False
+                r.. F..
 
     ___ height(self, root):
         # Return -1 if not balanced
         __ root __ N..
             r.. 0
         ____:
-            left_height = self.height(root.left)
-            right_height = self.height(root.right)
+            left_height = height(root.left)
+            right_height = height(root.right)
             __ left_height __ -1 o. right_height __ -1:
                 r.. -1
             ____:

@@ -23,14 +23,14 @@ ____ typing _______ List
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ constructFromPrePost(self, pre: List[int], post: List[int]) -> TreeNode:
         """
         use stack
@@ -76,7 +76,7 @@ class Solution:
         __ pre[1] __ post[-2]:
             # multiple answers
             left = N..
-            right = self.constructFromPrePost(pre[1:], post[:-1])
+            right = constructFromPrePost(pre[1:], post[:-1])
         ____:
             l = 0
             ___ a __ post:
@@ -86,8 +86,8 @@ class Solution:
             ____:
                 raise
 
-            left = self.constructFromPrePost(pre[1:1+l], post[:l])
-            right = self.constructFromPrePost(pre[1+l:], post[l:-1])
+            left = constructFromPrePost(pre[1:1+l], post[:l])
+            right = constructFromPrePost(pre[1+l:], post[l:-1])
 
         root.left = left
         root.right = right

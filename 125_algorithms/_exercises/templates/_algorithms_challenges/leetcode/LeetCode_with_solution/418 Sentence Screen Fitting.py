@@ -56,14 +56,14 @@ The character '-' signifies an empty space on the screen.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ wordsTyping(self, sentence: List[s..], rows: int, cols: int) -> int:
         """
         How many times to fit
 
         Combine the words in to a string and wrap it around
         """
-        sentence = " ".join(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
+        sentence = " ".j..(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
         i = 0
         ___ r __ r..(rows):
             i += cols

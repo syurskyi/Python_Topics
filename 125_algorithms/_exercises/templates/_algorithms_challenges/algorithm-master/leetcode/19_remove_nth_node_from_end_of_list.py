@@ -7,7 +7,7 @@ class ListNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ removeNthFromEnd(self, head, n):
         """
         :type head: ListNode

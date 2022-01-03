@@ -23,7 +23,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ kthSmallest(self, matrix, k):
         """
         Heap of list
@@ -33,20 +33,20 @@ class Solution(object):
         """
         m, n = l..(matrix), l..(matrix[0])
 
-        class Node(object):
-            ___ __init__(self, i, j):
-                self.i = i
-                self.j = j
+        c_ Node(object):
+            ___ - , i, j):
+                i = i
+                j = j
 
             ___ __cmp__(self, other):
-                r.. matrix[self.i][self.j] - matrix[other.i][other.j]
+                r.. matrix[i][j] - matrix[other.i][other.j]
 
-            ___ hasnext(self):
-                r.. self.j+1 < n
+            ___ hasnext
+                r.. j+1 < n
 
-            ___ next(self):
-                __ self.hasnext():
-                    r.. Node(self.i, self.j + 1)
+            ___ next
+                __ hasnext():
+                    r.. Node(i, j + 1)
 
                 raise StopIteration
 

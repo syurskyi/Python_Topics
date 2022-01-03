@@ -1,20 +1,20 @@
 ____ typing _______ Dict, Any
 ____ d__ _______ d__
 
-_______ re
+_______ __
 
 
 ___ rename_keys(data: Dict[Any, Any]) -> Dict[Any, Any]:
 
 
-    new_dict = {}
+    new_dict    # dict
 
 
-    ___ key,value __ data.items():
+    ___ key,value __ data.i..:
 
 
         __ isi..(key,s..):
-            key = re.sub(r'^@','',key)
+            key = __.sub(r'^@','',key)
 
         __ isi..(value,d..):
             new_dict[key] = rename_keys(value)
@@ -41,14 +41,14 @@ __ __name__ __ "__main__":
     d = {'@contentUrl': 'contentUrl',
          '@createdAt': d__.strptime('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
           '@defaultViewId': 'defaultViewId',
-          '@encryptExtracts': False,
+          '@encryptExtracts': F..,
           '@id': 'id',
           '@name': 'Login',
-          '@showTabs': True,
+          '@showTabs': T..,
           '@size': 1,
           '@updatedAt': d__.strptime('2020-07-20T06:41:34Z', '%Y-%m-%dT%H:%M:%SZ'),
           '@webpageUrl': 'webpageUrl',
-          'dataAccelerationConfig': {'@accelerationEnabled': False},
+          'dataAccelerationConfig': {'@accelerationEnabled': F..},
           'owner': {'@id': 'id', '@name': 'name'},
           'project': {'@id': 'id', '@name': 'name'},
           'tags': {'tag': {'@label': 'label'}},

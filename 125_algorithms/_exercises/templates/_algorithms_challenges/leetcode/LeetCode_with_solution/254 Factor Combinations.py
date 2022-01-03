@@ -6,7 +6,7 @@ ____ math _______ sqrt
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ getFactors(self, n):
         """
 
@@ -14,7 +14,7 @@ class Solution:
         :rtype: list[list[int]]
         """
         ret    # list
-        self.dfs([n], ret)
+        dfs([n], ret)
         r.. ret
 
     ___ dfs(self, cur, ret):
@@ -40,7 +40,7 @@ class Solution:
             __ n % i __ 0:
                 cur.a..(i)
                 cur.a..(n/i)
-                self.dfs(cur, ret)
+                dfs(cur, ret)
                 cur.pop()
 
     ___ dfs2(self, n, cur, ret):
@@ -51,7 +51,7 @@ class Solution:
         ___ i __ xrange(start, int(sqrt(n))+1):
             __ n%i __ 0:
                 cur.a..(i)
-                self.dfs(n/i, cur, ret)
+                dfs(n/i, cur, ret)
                 cur.pop()
 
     ___ dfs_TLE(self, n, cur, ret):
@@ -66,7 +66,7 @@ class Solution:
         ___ i __ xrange(start, int(sqrt(n+1))):
             __ n%i __ 0:
                 cur.a..(i)
-                self.dfs_TLE(n/i, cur, ret)
+                dfs_TLE(n/i, cur, ret)
                 cur.pop()
 
 

@@ -5,7 +5,7 @@ in product case, needs to remove product in last recursion, and adds the product
 """
 
 
-class Solution:
+c_ Solution:
     ___ addOperators(self, s, target):
         """
         :type s: str
@@ -17,12 +17,12 @@ class Solution:
         __ n.. s:
             r.. ans
 
-        self.dfs(s, 0, target, 0, 0, ans, [])
+        dfs(s, 0, target, 0, 0, ans, [])
         r.. ans
 
     ___ dfs(self, s, start, target, val, multi, ans, path):
         __ start __ l..(s) a.. target __ val:
-            ans.a..(''.join(path))
+            ans.a..(''.j..(path))
             r..
         __ start >= l..(s):
             r..
@@ -36,9 +36,9 @@ class Solution:
             a = int(sa)
 
             __ start __ 0:
-                self.dfs(s, i + 1, target, a, a, ans, [sa])
+                dfs(s, i + 1, target, a, a, ans, [sa])
                 continue
 
-            self.dfs(s, i + 1, target, val + a, a, ans, path + ['+', sa])
-            self.dfs(s, i + 1, target, val - a, -a, ans, path + ['-', sa])
-            self.dfs(s, i + 1, target, val - multi + multi * a, multi * a, ans, path + ['*', sa])
+            dfs(s, i + 1, target, val + a, a, ans, path + ['+', sa])
+            dfs(s, i + 1, target, val - a, -a, ans, path + ['-', sa])
+            dfs(s, i + 1, target, val - multi + multi * a, multi * a, ans, path + ['*', sa])

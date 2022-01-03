@@ -1,5 +1,5 @@
 # Using bit manipulation
-class Solution:
+c_ Solution:
     # @param S, a list of integer
     # @return a list of lists of integer
     ___ subsets(self, S):
@@ -8,7 +8,7 @@ class Solution:
         n = 2 ** k
         res    # list
         ___ i __ r..(n):
-            s = self.filter(S, k, i)
+            s = filter(S, k, i)
             res.a..(s)
         r.. res
 

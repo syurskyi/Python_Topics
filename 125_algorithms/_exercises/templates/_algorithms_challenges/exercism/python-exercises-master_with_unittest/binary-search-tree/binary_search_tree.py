@@ -1,20 +1,20 @@
-class TreeNode(object):
-    ___ __init__(self, data, left, right):
-        self.data = N..
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , data, left, right):
+        data = N..
+        left = N..
+        right = N..
 
-    ___ __str__(self):
+    ___ __str__
         fmt = 'TreeNode(data={}, left={}, right={})'
-        r.. fmt.f..(self.data, self.left, self.right)
+        r.. fmt.f..(data, left, right)
 
 
-class BinarySearchTree(object):
-    ___ __init__(self, tree_data):
+c_ BinarySearchTree(object):
+    ___ - , tree_data):
         pass
 
-    ___ data(self):
+    ___ data
         pass
 
-    ___ sorted_data(self):
+    ___ sorted_data
         pass

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minDistance(self, word1, word2):
     """
     :type word1: str

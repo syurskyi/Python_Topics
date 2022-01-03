@@ -7,7 +7,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ wordsAbbreviation(self, words: List[s..]) -> List[s..]:
         """
         Sort the word, check prefix and last word
@@ -24,7 +24,7 @@ class Solution:
 
         TrieNode = l....: defaultdict(TrieNode)
 
-        ___ lst __ hm.values():
+        ___ lst __ hm.v..
             root = TrieNode()
             ___ i __ lst:
                 w = words[i]
@@ -43,7 +43,7 @@ class Solution:
                     __ cur["count"] __ 1:
                         break
 
-                ret[i] = self.abbrev(w, prefix_l)
+                ret[i] = abbrev(w, prefix_l)
 
         r.. ret
 

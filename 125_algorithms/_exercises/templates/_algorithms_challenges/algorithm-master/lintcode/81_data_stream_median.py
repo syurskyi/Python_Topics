@@ -1,7 +1,7 @@
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ medianII(self, nums):
         """
         :type nums: list[int]

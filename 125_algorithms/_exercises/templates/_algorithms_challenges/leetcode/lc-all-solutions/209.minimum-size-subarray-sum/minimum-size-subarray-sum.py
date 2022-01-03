@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minSubArrayLen(self, target, nums):
     """
     :type target: int

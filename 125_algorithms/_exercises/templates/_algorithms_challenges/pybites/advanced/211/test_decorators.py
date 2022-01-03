@@ -1,5 +1,5 @@
 _______ random
-_______ re
+_______ __
 
 _______ pytest
 
@@ -14,7 +14,7 @@ ___ get_two_numbers(numbers):
        if both are not ints raise a ValueError
     """
     chosen = random.sample(numbers, 2)
-    __ n.. a..(type(i) __ int ___ i __ chosen):
+    __ n.. a..(t..(i) __ int ___ i __ chosen):
         raise ValueError('not all ints')
 
 
@@ -36,4 +36,4 @@ ___ test_decorated_function_preserves_docstring(capfd):
     ... docstring __ n.. N..
     line1 = "Give a list of items pick 2 random ones,"
     line2 = "if both are not ints raise a ValueError"
-    ... re.search(rf'{line1}\s+{line2}', docstring)
+    ... __.s..(rf'{line1}\s+{line2}', docstring)

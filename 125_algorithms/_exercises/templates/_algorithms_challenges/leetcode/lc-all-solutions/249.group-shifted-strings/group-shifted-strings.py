@@ -1,10 +1,10 @@
-class Solution(object):
+c_ Solution(object):
   ___ groupStrings(self, strings):
     """
     :type strings: List[str]
     :rtype: List[List[str]]
     """
-    d = {}
+    d    # dict
     ans    # list
     single    # list
     ___ s __ strings:
@@ -16,7 +16,7 @@ class Solution(object):
       ___ i __ r..(1, l..(s)):
         hashcodeArray.a..(s..(((ord(s[i]) - ord("a")) - pre) % 26))
         pre = ord(s[i]) - ord("a")
-      hashcode = ",".join(hashcodeArray)
+      hashcode = ",".j..(hashcodeArray)
       __ hashcode n.. __ d:
         d[hashcode] = [s]
       ____:

@@ -10,7 +10,7 @@ filled cells need to be validated.
 
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ isValidSudoku(self, board):
         """
         :type board: List[List[str]]
@@ -18,34 +18,34 @@ class Solution(object):
         """
         # Check rows
         ___ i __ r..(9):
-            d = {}
+            d    # dict
             ___ j __ r..(9):
                 __ board[i][j] __ '.':
                     pass
                 ____ board[i][j] __ d:
-                    r.. False
+                    r.. F..
                 ____:
-                    d[board[i][j]] = True
+                    d[board[i][j]] = T..
         # Check columns
         ___ j __ r..(9):
-            d = {}
+            d    # dict
             ___ i __ r..(9):
                 __ board[i][j] __ '.':
                     pass
                 ____ board[i][j] __ d:
-                    r.. False
+                    r.. F..
                 ____:
-                    d[board[i][j]] = True
+                    d[board[i][j]] = T..
         # Check sub-boxes
         ___ m __ r..(0, 9, 3):
             ___ n __ r..(0, 9, 3):
-                d = {}
+                d    # dict
                 ___ i __ r..(n, n + 3):
                     ___ j __ r..(m, m + 3):
                         __ board[i][j] __ '.':
                             pass
                         ____ board[i][j] __ d:
-                            r.. False
+                            r.. F..
                         ____:
-                            d[board[i][j]] = True
-        r.. True
+                            d[board[i][j]] = T..
+        r.. T..

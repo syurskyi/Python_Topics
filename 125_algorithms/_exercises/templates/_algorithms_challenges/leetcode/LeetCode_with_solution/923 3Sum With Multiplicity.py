@@ -38,7 +38,7 @@ ____ collections _______ defaultdict
 MOD = 10 ** 9 + 7
 
 
-class Solution:
+c_ Solution:
     ___ threeSumMulti(self, A: List[int], target: int) -> int:
         """
         Adapted from 3 sum

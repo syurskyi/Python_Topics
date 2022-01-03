@@ -28,7 +28,7 @@ Output: 1
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ change(self, amount, coins):
         """
         let F[amount][l] = # ways ending (but not necesserily) using coins[l-1]

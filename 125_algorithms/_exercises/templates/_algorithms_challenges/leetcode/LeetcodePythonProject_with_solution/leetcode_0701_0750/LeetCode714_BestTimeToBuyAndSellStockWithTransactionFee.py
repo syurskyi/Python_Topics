@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxProfit(self, prices, fee):
         """
         :type prices: List[int]
@@ -20,7 +20,7 @@ class Solution(object):
             sell[i] = max(sell[i-1], buy[i-1]+prices[i]-fee)
         r.. max(buy[-1], sell[-1])
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 3, 2, 8, 4, 9],
@@ -34,7 +34,7 @@ class Solution(object):
         ___ prices, fee __ testCases:
             print('prices: %s' % prices)
             print('fee: %s' % fee)
-            result = self.maxProfit(prices, fee)
+            result = maxProfit(prices, fee)
             print('result: %s' % result)
             print('-='*30+'-')
 

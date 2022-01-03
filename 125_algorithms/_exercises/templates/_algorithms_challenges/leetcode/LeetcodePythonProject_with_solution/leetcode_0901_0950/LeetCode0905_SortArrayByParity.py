@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ sortArrayByParity(self, A):
         """
         :type A: List[int]

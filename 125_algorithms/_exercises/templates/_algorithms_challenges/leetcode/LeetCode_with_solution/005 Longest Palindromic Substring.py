@@ -5,7 +5,7 @@ there exists one unique longest palindromic substring.
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ longestPalindrome(self, s):
         """
         O(n^2)
@@ -20,9 +20,9 @@ class Solution(object):
 
         ret = s[0]
         ___ i __ xrange(0, n):
-            cur = self.get_palindrome_from_center(s, i, i)  # odd length
+            cur = get_palindrome_from_center(s, i, i)  # odd length
             __ l..(cur) > l..(ret): ret = cur
-            cur = self.get_palindrome_from_center(s, i, i+1)
+            cur = get_palindrome_from_center(s, i, i+1)
             __ l..(cur) > l..(ret): ret = cur
         r.. ret
 
@@ -48,19 +48,19 @@ class Solution(object):
         :return: string
         """
         length = l..(s)
-        dp = [[False ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
+        dp = [[F.. ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
         ___ i __ xrange(length+1):
-            dp[i][i] = True
+            dp[i][i] = T..
 
         longest = [0, 0]
         ___ j __ xrange(length+1):
             ___ i __ xrange(j-1, -1, -1):
                 __ i+1 __ j:
-                    dp[i][j] = True
+                    dp[i][j] = T..
                 ____:
                     dp[i][j] = s[i] __ s[j-1] a.. dp[i+1][j-1]  # pre-access? starting backward
 
-                __ dp[i][j] __ True a.. longest[1]-longest[0] < j-i:
+                __ dp[i][j] __ T.. a.. longest[1]-longest[0] < j-i:
                     longest[0], longest[1] = i, j
 
         r.. s[longest[0]:longest[1]]
@@ -73,11 +73,11 @@ class Solution(object):
         length = l..(s)
 
         longest = ""
-        dp = [[False ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]  # larger than usual
+        dp = [[F.. ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]  # larger than usual
         ___ i __ xrange(length+1):
-            dp[i][i] = True  # empty
+            dp[i][i] = T..  # empty
         ___ i __ xrange(length):
-            dp[i][i+1] = True  # single char
+            dp[i][i+1] = T..  # single char
         ___ i __ xrange(length-1):
             dp[i][i+2] = s[i] __ s[i+1]
             __ dp[i][i+1]:
@@ -88,7 +88,7 @@ class Solution(object):
                 __ s[i] __ s[i+l-1]:
                     dp[i][i+l] = dp[i+1][i+l-1]
                 ____:
-                    dp[i][i+l] = False
+                    dp[i][i+l] = F..
 
                 __ dp[i][i+l] a.. l..(longest) < l:
                     longest = s[i:i+l]

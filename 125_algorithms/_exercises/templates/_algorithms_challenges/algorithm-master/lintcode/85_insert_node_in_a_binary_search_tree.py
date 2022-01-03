@@ -8,7 +8,7 @@ class TreeNode:
 
 
 # recursion
-class Solution:
+c_ Solution:
     """
     @param: root: The root of the binary search tree.
     @param: node: insert this node into the binary search tree
@@ -19,15 +19,15 @@ class Solution:
             r.. node
 
         __ node.val < root.val:
-            root.left = self.insertNode(root.left, node)
+            root.left = insertNode(root.left, node)
         ____:
-            root.right = self.insertNode(root.right, node)
+            root.right = insertNode(root.right, node)
 
         r.. root
 
 
 # iteration
-class Solution:
+c_ Solution:
     """
     @param: root: The root of the binary search tree.
     @param: node: insert this node into the binary search tree

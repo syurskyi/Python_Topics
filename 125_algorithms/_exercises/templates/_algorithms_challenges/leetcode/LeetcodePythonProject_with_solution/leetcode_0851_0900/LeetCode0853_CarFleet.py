@@ -3,7 +3,7 @@ Created on Sep 10, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ carFleet(self, target, position, speed):
         """
         :type target: int
@@ -19,7 +19,7 @@ class Solution(object):
                 cur = t
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 12,
@@ -28,7 +28,7 @@ class Solution(object):
             ],
         ]
         ___ target, position, speed __ testCases:
-            res = self.carFleet(target, position, speed)
+            res = carFleet(target, position, speed)
             print('res: %s' % res)
             print('-='*30+'-')
 

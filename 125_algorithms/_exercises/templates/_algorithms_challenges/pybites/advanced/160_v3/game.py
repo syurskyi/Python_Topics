@@ -5,7 +5,7 @@ ____ collections _______ defaultdict
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'battle-table.csv'
-BATTLE_DATA = os.path.join(TMP, DATA)
+BATTLE_DATA = os.path.j..(TMP, DATA)
 __ n.. os.path.isfile(BATTLE_DATA):
     urlretrieve(
         f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
@@ -22,7 +22,7 @@ ___ _create_defeat_mapping():
         rows = l..(csv.DictReader(f))
 
     ___ row __ rows:
-        defeat_map[row['Attacker']] = [k ___ k, v __ row.items() __ v __ 'win']
+        defeat_map[row['Attacker']] = [k ___ k, v __ row.i.. __ v __ 'win']
     r.. defeat_map
 
 

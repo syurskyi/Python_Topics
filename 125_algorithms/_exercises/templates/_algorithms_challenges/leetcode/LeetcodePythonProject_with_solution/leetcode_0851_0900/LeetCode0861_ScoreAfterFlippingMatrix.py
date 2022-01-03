@@ -3,7 +3,7 @@ Created on Sep 17, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ matrixScore(self, A):
         """
         :type A: List[List[int]]
@@ -32,7 +32,7 @@ class Solution(object):
             res += num
         r.. res
     
-    ___ test(self):
+    ___ test
         testCase = [
 #             [
 #                 [0,0,1,1],
@@ -45,7 +45,7 @@ class Solution(object):
             ],
         ]
         ___ matrix __ testCase:
-            res = self.matrixScore(matrix)
+            res = matrixScore(matrix)
             print('res: %s' % res)
             print('-='*30+'-')
 

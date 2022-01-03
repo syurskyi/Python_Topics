@@ -1,7 +1,7 @@
 ____ collections _______ Counter
 ____ bs4 _______ BeautifulSoup
 _______ requests
-_______ re
+_______ __
 
 AMAZON = "amazon.com"
 # static copy
@@ -31,7 +31,7 @@ ___ get_top_books(content_ N..
 
     books = [row.text.s..
              ___ row __ right_table.find_all(
-            'a', href=re.compile(AMAZON))]
+            'a', href=__.c..(AMAZON))]
     c = Counter(books)
 
     books_final    # list

@@ -4,4 +4,4 @@ ___ i __ input().s.. :
     __ n.. c.c.. "1") % 2:
         answers.a..(chr(int(i) % 128))
 
-print(''.join(answers))
+print(''.j..(answers))

@@ -28,7 +28,7 @@ process:
 """
 
 
-class Solution:
+c_ Solution:
     ___ reconstructQueue(self, people):
         """
         :type people: List[List[int]]
@@ -47,7 +47,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     ___ reconstructQueue(self, people):
         """
         :type people: List[List[int]]
@@ -58,7 +58,7 @@ class Solution:
         __ n.. people:
             r.. ans
 
-        h2mans = {}
+        h2mans    # dict
         heights    # list
 
         ___ i __ r..(l..(people)):

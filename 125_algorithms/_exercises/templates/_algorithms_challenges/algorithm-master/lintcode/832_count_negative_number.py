@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param g: the sorted matrix
     @return: the number of Negative Number

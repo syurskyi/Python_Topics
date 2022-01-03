@@ -15,7 +15,7 @@ transactions = [buy, sell, cooldown, buy, sell]
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxProfit(self, A):
         """
         O(n^2)

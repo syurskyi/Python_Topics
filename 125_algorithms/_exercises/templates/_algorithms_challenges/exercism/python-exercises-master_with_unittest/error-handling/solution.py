@@ -11,9 +11,9 @@ ___ handle_error_by_returning_none(input_data):
 
 ___ handle_error_by_returning_tuple(input_data):
     try:
-        r.. (True, int(input_data))
+        r.. (T.., int(input_data))
     except ValueError:
-        r.. (False, N..)
+        r.. (F.., N..)
 
 
 ___ filelike_objects_are_closed_on_exception(filelike_object):

@@ -1,6 +1,6 @@
 _______ heapq
 
-class Solution:
+c_ Solution:
     """
     @param: matrix: a matrix of integers
     @param: k: An integer

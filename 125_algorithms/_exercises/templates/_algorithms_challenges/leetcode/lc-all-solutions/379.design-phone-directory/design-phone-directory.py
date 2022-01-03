@@ -1,26 +1,26 @@
 ____ collections _______ deque
 
 
-class PhoneDirectory(object):
+c_ PhoneDirectory(object):
 
-  ___ __init__(self, maxNumbers):
+  ___ - , maxNumbers):
     """
     Initialize your data structure here
     @param maxNumbers - The maximum numbers that can be stored in the phone directory.
     :type maxNumbers: int
     """
-    self.taken = [True] * maxNumbers
-    self.q = deque([i ___ i __ r..(0, maxNumbers)])
+    taken = [T..] * maxNumbers
+    q = deque([i ___ i __ r..(0, maxNumbers)])
 
-  ___ get(self):
+  ___ get
     """
     Provide a number which is not assigned to anyone.
     @return - Return an available number. Return -1 if none is available.
     :rtype: int
     """
-    __ self.q:
-      self.taken[self.q[0]] = False
-      r.. self.q.popleft()
+    __ q:
+      taken[q[0]] = F..
+      r.. q.popleft()
     r.. -1
 
   ___ check(self, number):
@@ -29,7 +29,7 @@ class PhoneDirectory(object):
     :type number: int
     :rtype: bool
     """
-    r.. self.taken[number]
+    r.. taken[number]
 
   ___ release(self, number):
     """
@@ -37,9 +37,9 @@ class PhoneDirectory(object):
     :type number: int
     :rtype: void
     """
-    __ n.. self.taken[number]:
-      self.taken[number] = True
-      self.q.a..(number)
+    __ n.. taken[number]:
+      taken[number] = T..
+      q.a..(number)
 
 # Your PhoneDirectory object will be instantiated and called as such:
 # obj = PhoneDirectory(maxNumbers)

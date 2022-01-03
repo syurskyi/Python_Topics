@@ -3,7 +3,7 @@ Created on Oct 29, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ fairCandySwap(self, A, B):
         """
         :type A: List[int]

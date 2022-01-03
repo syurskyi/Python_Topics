@@ -6,7 +6,7 @@
 #         self.right = None
 #         self.next = None
 
-class Solution:
+c_ Solution:
   # @param root, a tree link node
   # @return nothing
   ___ connect(self, root):

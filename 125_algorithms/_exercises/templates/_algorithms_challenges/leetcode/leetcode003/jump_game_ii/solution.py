@@ -14,7 +14,7 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from
 index 0 to 1, then 3 steps to the last index.)
 """
 
-class Solution:
+c_ Solution:
     ___ jump(self, nums):
         """
         :type nums: List[int]
@@ -26,17 +26,17 @@ class Solution:
         start = 1
         end = nums[0]  # `end` is nums[start - 1]
         res = 1  # At least one step if len(nums) > 1
-        reached = False
+        reached = F..
         w.... end < n - 1:
             res += 1
             max_end = end  # `end` for the next loop
             ___ i __ r..(start, end + 1):
                 __ i + nums[i] > max_end:
                     max_end = i + nums[i]
-                    reached = True
+                    reached = T..
             __ n.. reached:
                 r.. -1
-            reached = False
+            reached = F..
             start = end + 1
             end = max_end
         r.. res

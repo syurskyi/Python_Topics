@@ -1,6 +1,6 @@
 ____ collections _______ Counter, n..
 _______ csv
-_______ re
+_______ __
 
 _______ requests
 
@@ -23,7 +23,7 @@ ___ load_data():
     content = _get_csv_data()
     reader = csv.DictReader(content.splitlines(), delimiter=',')
     ___ row __ reader:
-        name = re.sub(r'(.*?)\(.*', r'\1', row['name']).s..
+        name = __.sub(r'(.*?)\(.*', r'\1', row['name']).s..
         y.. Character(pid=row['page_id'],
                         name=name,
                         sid=row['ID'],

@@ -1,7 +1,7 @@
 """
 Rolling Array
 """
-class Solution:
+c_ Solution:
     """
     @param: m: An integer m denotes the size of a backpack
     @param: A: Given n items with size A[i]
@@ -35,7 +35,7 @@ class Solution:
 """
 Origin
 """
-class Solution:
+c_ Solution:
     """
     @param: m: An integer m denotes the size of a backpack
     @param: A: Given n items with size A[i]

@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ searchRange(self, root, a, b):
         """
         :type root: TreeNode
@@ -20,7 +20,7 @@ class Solution:
         __ n.. root:
             r.. ans
 
-        self.dfs(root, a, b, ans)
+        dfs(root, a, b, ans)
 
         r.. ans
 
@@ -28,9 +28,9 @@ class Solution:
         __ n.. node:
             r..
 
-        self.dfs(node.left, a, b, ans)
+        dfs(node.left, a, b, ans)
 
         __ a <= node.val <= b:
             ans.a..(node.val)
 
-        self.dfs(node.right, a, b, ans)
+        dfs(node.right, a, b, ans)

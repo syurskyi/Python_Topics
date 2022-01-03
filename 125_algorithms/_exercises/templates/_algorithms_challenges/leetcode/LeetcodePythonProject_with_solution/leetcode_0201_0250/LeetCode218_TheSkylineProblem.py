@@ -3,7 +3,7 @@ Created on Feb 20, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ getSkyline(self, buildings):
         """
         :type buildings: List[List[int]]
@@ -30,13 +30,13 @@ class Solution(object):
             prev = curr
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [ [2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8] ],
         ]
         ___ buildings __ testCases:
             print('buildings: %s' % (buildings))
-            result = self.getSkyline(buildings)
+            result = getSkyline(buildings)
             print('result: %s' % (result))
             print('-='*20+'-')
     

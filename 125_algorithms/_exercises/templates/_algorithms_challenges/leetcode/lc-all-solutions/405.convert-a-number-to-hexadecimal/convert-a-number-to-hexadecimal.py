@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ toHex(self, num):
     """
     :type num: int
@@ -8,11 +8,11 @@ class Solution(object):
          13: "d", 14: "e", 15: "f"}
     ans = ""
     mask = 0xf0000000
-    flag = False
+    flag = F..
     ___ i __ r..(0, 8):
       halfb = (num & mask) >> 28
       __ halfb != 0:
-        flag = True
+        flag = T..
       __ flag:
         ans = ans + d[(num & mask) >> 28]
       num = num << 4

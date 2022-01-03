@@ -3,13 +3,13 @@ _______ math
 _______ i..
 
 
-class CryptoSquare:
+c_ CryptoSquare:
 
     @classmethod
     ___ encode(cls, msg):
         __ l..(cls.normalize(msg)) __ 0:
             r.. ''
-        r.. ' '.join(cls.transpose_square(cls.squarify(cls.normalize(msg))))
+        r.. ' '.j..(cls.transpose_square(cls.squarify(cls.normalize(msg))))
 
     @classmethod
     ___ squarify(cls, msg):
@@ -20,11 +20,11 @@ class CryptoSquare:
     ___ transpose_square(cls, square):
         matrix = [l..(row) ___ row __ square]
         transposed_matrix = cls.transpose_uneven_matrix(matrix)
-        r.. [''.join(row) ___ row __ transposed_matrix]
+        r.. [''.j..(row) ___ row __ transposed_matrix]
 
     @staticmethod
     ___ normalize(msg):
-        r.. ''.join(ch.lower() ___ ch __ msg __ ch n.. __
+        r.. ''.j..(ch.l.. ___ ch __ msg __ ch n.. __
                        set(string.punctuation + ' '))
 
     @staticmethod

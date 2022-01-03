@@ -1,7 +1,7 @@
-class TriangleError(Exception):
+c_ TriangleError(Exception):
     pass
 
 
-class Triangle(object):
-    ___ __init__(self):
+c_ Triangle(object):
+    ___ - ):
         pass

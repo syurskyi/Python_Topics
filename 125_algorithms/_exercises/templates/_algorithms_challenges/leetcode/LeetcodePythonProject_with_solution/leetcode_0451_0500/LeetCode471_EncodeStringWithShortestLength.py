@@ -4,16 +4,16 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ encode_short(self, s):
-        r.. self.helper(s, {})
+        r.. helper(s, {})
     
     ___ helper(self, s, mem):
         __ s n.. __ mem:
             n = l..(s)
             i = (s+s).find(s, 1)
-            one = '%d[%s]' % (n/i, self.encode_short(s[:i])) __ i < n ____ s
-            multi = [self.encode(s[:i]) + self.encode(s[i:]) ___ i __ r..(1, n)]
+            one = '%d[%s]' % (n/i, encode_short(s[:i])) __ i < n ____ s
+            multi = [encode(s[:i]) + encode(s[i:]) ___ i __ r..(1, n)]
             mem[s] = m..([s, one] + multi, key=l..)
         r.. mem[s]
     
@@ -43,7 +43,7 @@ class Solution(object):
                                 dp[i][j] = ss
         r.. dp[0][-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aaa',
             'aaaaa',
@@ -53,9 +53,9 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.encode(s)
+            result = encode(s)
             print('result: %s' % result)
-            result2 = self.encode_short(s)
+            result2 = encode_short(s)
             print('result: %s' % result2)
             print('-='*20+'-')
 

@@ -3,7 +3,7 @@ Created on Mar 20, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ countBits(self, num):
         result = [0]*(num+1)
         ___ i __ r..(1, num+1):

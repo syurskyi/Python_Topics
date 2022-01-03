@@ -22,7 +22,7 @@ True
 """
 
 
-class Solution:
+c_ Solution:
     ___ nextClosestTime(self, time):
         """
         :type time: str
@@ -46,7 +46,7 @@ class Solution:
         ids = [digits.index(t) ___ t __ times]
         ids[-1] += 1
 
-        w.... n.. self.is_valid(ids, digits):
+        w.... n.. is_valid(ids, digits):
             ids[-1] += 1
 
         h = digits[ids[0]] * 10 + digits[ids[1]]
@@ -70,12 +70,12 @@ class Solution:
 
         __ carry:
             ids[:] = [0] * l..(ids)
-            r.. True
+            r.. T..
 
         h = digits[ids[0]] * 10 + digits[ids[1]]
         m = digits[ids[2]] * 10 + digits[ids[3]]
 
         __ 0 <= h < 24 a.. 0 <= m < 60:
-            r.. True
+            r.. T..
 
-        r.. False
+        r.. F..

@@ -37,7 +37,7 @@ We say that "rgtae" is a scrambled string of "great".
 Given two strings s1 and s2 of the same length, determine if s2 is a scrambled string of s1.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ isScramble(self, s1, s2):
         """
         dfs
@@ -55,7 +55,7 @@ class Solution:
         :return: boolean
         """
         __ l..(s1)!=l..(s2):
-            r.. False
+            r.. F..
         chars = [0 ___ _ __ xrange(26)]
         ___ char __ s1:
             chars[ord(char)-ord('a')] += 1
@@ -66,18 +66,18 @@ class Solution:
         #     return False
         ___ val __ chars:
             __ val!=0:
-                r.. False
+                r.. F..
 
         __ l..(s1)__1:
-            r.. True
+            r.. T..
 
 
         ___ i __ xrange(1, l..(s1)):
-            __ self.isScramble(s1[:i], s2[:i]) a.. self.isScramble(s1[i:], s2[i:]) o. \
-                self.isScramble(s1[:i], s2[-i:]) a.. self.isScramble(s1[i:], s2[:l..(s2)-i]):
-                r.. True
+            __ isScramble(s1[:i], s2[:i]) a.. isScramble(s1[i:], s2[i:]) o. \
+                isScramble(s1[:i], s2[-i:]) a.. isScramble(s1[i:], s2[:l..(s2)-i]):
+                r.. T..
 
-        r.. False
+        r.. F..
 
 
 

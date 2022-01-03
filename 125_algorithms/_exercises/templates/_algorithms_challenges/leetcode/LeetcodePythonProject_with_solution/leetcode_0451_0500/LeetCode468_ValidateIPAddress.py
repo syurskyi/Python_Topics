@@ -4,39 +4,39 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ validIPAddress(self, IP):
         """
         :type IP: str
         :rtype: str
         """
-        __ ':' __ IP a.. self.checkIP6(IP):
+        __ ':' __ IP a.. checkIP6(IP):
             r.. 'IPv6'
-        ____ '.' __ IP a.. self.checkIP4(IP):
+        ____ '.' __ IP a.. checkIP4(IP):
             r.. 'IPv4'
         r.. 'Neither'
     
     ___ checkIP4(self, ip):
         arr = ip.s..('.')
-        __ l..(arr) != 4: r.. False
+        __ l..(arr) != 4: r.. F..
         ___ elem __ arr:
-            __ n.. elem: r.. False
-            __ elem.startswith('0') a.. l..(elem) > 1: r.. False
+            __ n.. elem: r.. F..
+            __ elem.startswith('0') a.. l..(elem) > 1: r.. F..
             __ n.. elem.isdigit() o. int(elem) > 255:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
     ___ checkIP6(self, ip):
         arr = ip.s..(':')
-        __ l..(arr) != 8: r.. False
+        __ l..(arr) != 8: r.. F..
         digits = set(l..('0123456789abcdefABCDEF'))
         ___ i, elem __ e..(arr):
-            __ i > 0 a.. l..(elem) > 4: r.. False
+            __ i > 0 a.. l..(elem) > 4: r.. F..
             __ i __ 0 a.. l..(elem) > 4:
                 __ elem[:l..(elem)-4] != '0'*(l..(elem)-4):
-                    r.. False
-            __ n.. elem: r.. False
+                    r.. F..
+            __ n.. elem: r.. F..
             ___ c __ elem:
                 __ c n.. __ digits:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..

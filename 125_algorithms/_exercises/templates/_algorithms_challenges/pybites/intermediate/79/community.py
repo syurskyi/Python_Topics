@@ -19,7 +19,7 @@ ___ get_csv():
 ___ create_user_bar_chart(content):
    """Receives csv file (decoded) content and print a table of timezones
       and their corresponding member counts in pluses to standard output"""
-   tz_frequency = {}
+   tz_frequency    # dict
 
    ___ i, row __ e..(content):
       __ i __ 0:

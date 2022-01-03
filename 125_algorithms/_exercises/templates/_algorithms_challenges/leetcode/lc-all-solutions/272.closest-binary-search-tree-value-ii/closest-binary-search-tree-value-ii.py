@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ closestKValues(self, root, target, k):
     """
     :type root: TreeNode

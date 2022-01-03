@@ -33,7 +33,7 @@ parentheses in above matrix).
 dirs = ((0, 1), (0, -1), (1, 0), (-1, 0))
 
 
-class Solution:
+c_ Solution:
     ___ pacificAtlantic(self, matrix):
         """
         dfs, visisted O(1)
@@ -57,17 +57,17 @@ class Solution:
 
         m, n = l..(matrix), l..(matrix[0])  # row, col
         # don't do [[False] * n ] * m, memory management, all rows reference the same row
-        P = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
-        A = [[False ___ _ __ r..(n)] ___ _ __ r..(m)]
+        P = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
+        A = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
 
         # starting from edge point
         ___ i __ r..(m):
-            self.dfs(matrix, i, 0, P)
-            self.dfs(matrix, i, n-1, A)
+            dfs(matrix, i, 0, P)
+            dfs(matrix, i, n-1, A)
 
         ___ j __ r..(n):
-            self.dfs(matrix, 0, j, P)
-            self.dfs(matrix, m-1, j, A)
+            dfs(matrix, 0, j, P)
+            dfs(matrix, m-1, j, A)
 
         ret = [
             [i, j]
@@ -79,14 +79,14 @@ class Solution:
 
     ___ dfs(self, matrix, i, j, C):
         # check before dfs (to be consistent)
-        C[i][j] = True
+        C[i][j] = T..
         m, n = l..(matrix), l..(matrix[0])
         ___ x, y __ dirs:
             I = i + x
             J = j + y
             __ 0 <= I < m a.. 0 <= J < n a.. matrix[i][j] <= matrix[I][J]:
                 __ n.. C[I][J]:
-                    self.dfs(matrix, I, J, C)
+                    dfs(matrix, I, J, C)
 
 
     ___ pacificAtlantic_error(self, matrix):
@@ -100,18 +100,18 @@ class Solution:
             r.. []
 
         m, n = l..(matrix), l..(matrix[0])  # row, col
-        P = [[False] * n ] * m
-        A = [[False] * n ] * m
+        P = [[F..] * n ] * m
+        A = [[F..] * n ] * m
 
-        visisted = [[False] * n ] * m
+        visisted = [[F..] * n ] * m
         ___ i __ r..(m):
             ___ j __ r..(n):
-                self.dfs_error(matrix, i, j, visisted, P, l.... i, j: i < 0 o. j <0)
+                dfs_error(matrix, i, j, visisted, P, l.... i, j: i < 0 o. j <0)
 
-        visisted = [[False] * n ] * m
+        visisted = [[F..] * n ] * m
         ___ i __ r..(m):
             ___ j __ r..(n):
-                self.dfs_error(matrix, i, j, visisted, A, l.... i, j: i >= m o. j >= n)
+                dfs_error(matrix, i, j, visisted, A, l.... i, j: i >= m o. j >= n)
 
         ret = [
             [i, j]
@@ -127,15 +127,15 @@ class Solution:
         __ visisted[i][j]:
             r.. C[i][j]
 
-        visisted[i][j] = True
+        visisted[i][j] = T..
         ___ x, y __ dirs:
             i2 = i + x
             j2= j + y
             __ 0 <= i2 < m a.. 0 <= j2 < n:
-                __ self.dfs_error(matrix, i2, j2, visisted, C, predicate) a.. matrix[i][j] >= matrix[i2][j2]:
-                    C[i][j] = True
+                __ dfs_error(matrix, i2, j2, visisted, C, predicate) a.. matrix[i][j] >= matrix[i2][j2]:
+                    C[i][j] = T..
             ____ predicate(i2, j2):
-                C[i][j] = True
+                C[i][j] = T..
 
         r.. C[i][j]
 

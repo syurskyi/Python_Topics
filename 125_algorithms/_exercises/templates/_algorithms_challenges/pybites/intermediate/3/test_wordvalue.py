@@ -4,11 +4,11 @@ words = load_words()
 
 
 ___ test_load_words():
-    ... type(words) __ l..
+    ... t..(words) __ l..
     ... l..(words) __ 235886
     ... words[0] __ 'A'
     ... words[-1] __ 'Zyzzogeton'
-    ... ' ' n.. __ ''.join(words)
+    ... ' ' n.. __ ''.j..(words)
 
 
 ___ test_calc_word_value():

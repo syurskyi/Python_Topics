@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ findFrequentTreeSum(self, root):
     """
     :type root: TreeNode
@@ -21,7 +21,7 @@ class Solution(object):
       d[subtreeSum] = d.get(subtreeSum, 0) + 1
       r.. subtreeSum
 
-    d = {}
+    d    # dict
     helper(root, d)
     mostFreq = 0
     ans    # list

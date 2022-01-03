@@ -16,7 +16,7 @@ ____ typing _______ List
 ____ bisect _______ bisect_right
 
 
-class Solution:
+c_ Solution:
     ___ singleNonDuplicate(self, nums: List[int]) -> int:
         """
         sorted array

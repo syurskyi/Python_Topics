@@ -11,7 +11,7 @@ complexity?
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ missingNumber(self, nums):
         """
         Algorithm:

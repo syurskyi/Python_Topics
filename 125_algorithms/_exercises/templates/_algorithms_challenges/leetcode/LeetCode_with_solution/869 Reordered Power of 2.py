@@ -35,7 +35,7 @@ Note:
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ reorderedPowerOf2(self, N: int) -> bool:
         """
         count the digit and compare
@@ -43,6 +43,6 @@ class Solution:
         counts = Counter(s..(N))
         ___ i __ r..(31):  # 32 bit unsighed int
             __ counts __ Counter(s..(1 << i)):
-                r.. True
+                r.. T..
         ____:
-            r.. False
+            r.. F..

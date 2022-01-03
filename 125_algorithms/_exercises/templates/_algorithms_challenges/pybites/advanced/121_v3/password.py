@@ -1,4 +1,4 @@
-_______ re
+_______ __
 
 
 ___ password_complexity(password: s..):
@@ -23,6 +23,6 @@ ___ password_complexity(password: s..):
         score += 1
     __ l..(password) >= 8:
         score += 1
-        __ n.. re.search(r'(.)\1', password):
+        __ n.. __.s..(r'(.)\1', password):
             score += 1
     r.. score

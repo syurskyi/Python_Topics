@@ -4,7 +4,7 @@ Created on Feb 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxProfit(self, prices):
         """
         :type prices: List[int]
@@ -16,7 +16,7 @@ class Solution(object):
                 res += prices[i] - prices[i-1]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 9, 2, 1, 3, 7, 2],
             [1, 2],
@@ -25,7 +25,7 @@ class Solution(object):
         ]
         ___ prices __ testCases:
             print('prices: %s' % prices)
-            result = self.maxProfit(prices)
+            result = maxProfit(prices)
             print('result: %s' % (result))
             print('-='*15+'-')
 

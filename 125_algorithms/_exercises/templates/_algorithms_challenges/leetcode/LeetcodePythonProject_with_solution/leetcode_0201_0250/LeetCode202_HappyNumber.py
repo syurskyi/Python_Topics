@@ -4,7 +4,7 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ isHappy(self, n):
         """
         :type n: int
@@ -18,12 +18,12 @@ class Solution(object):
                 num += (n % 10)**2
                 n = int(n/10)
             __ num __ hashset:
-                r.. False
+                r.. F..
             hashset.add(num)
             n = num
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             19,
             1,
@@ -31,7 +31,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % (n))
-            result = self.isHappy(n)
+            result = isHappy(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 

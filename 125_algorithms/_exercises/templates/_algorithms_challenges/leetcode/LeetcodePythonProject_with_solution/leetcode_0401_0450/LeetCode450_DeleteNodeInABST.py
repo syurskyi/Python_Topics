@@ -4,15 +4,15 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ deleteNode(self, root, key):
         __ n.. root: r.. N..
-        parent, node = self.findNode(key, root, N..)
+        parent, node = findNode(key, root, N..)
         __ n.. node: r.. root
         __ n.. parent:
-            r.. self.removeNode(node)
+            r.. removeNode(node)
         ____:
-            newNode = self.removeNode(node)
+            newNode = removeNode(node)
             __ node __ parent.left:
                 parent.left = newNode
             ____:
@@ -45,6 +45,6 @@ class Solution(object):
         __ root.val __ key:
             r.. parent, root
         ____ root.val > key:
-            r.. self.findNode(key, root.left, root)
+            r.. findNode(key, root.left, root)
         ____:
-            r.. self.findNode(key, root.right, root)
+            r.. findNode(key, root.right, root)

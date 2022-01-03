@@ -5,7 +5,7 @@ alphabet on only one row's of American keyboard like the image below.
 """
 
 
-class Solution:
+c_ Solution:
     ___ findWords(self, words):
         """
         :type words: List[str]
@@ -24,7 +24,7 @@ class Solution:
         r.. [
             w
             ___ w __ words
-            __ a..(d[w[0].lower()] __ d[l.lower()] ___ l __ w)
+            __ a..(d[w[0].l..] __ d[l.l..] ___ l __ w)
         ]
 
 

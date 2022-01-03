@@ -20,7 +20,7 @@ __author__ = 'Daniel'
 C = 1337
 
 
-class Solution(object):
+c_ Solution(object):
     ___ superPow(self, a, b):
         """
         since b is given as a list rather than a number, we need to process it digit by digit.
@@ -39,7 +39,7 @@ class Solution(object):
         lsd = b.pop()  # list significant digit
         s *= (a % C) ** lsd
         s %= C
-        rest = self.superPow(a, b)
+        rest = superPow(a, b)
         s *= rest ** 10
         s %= C
         r.. s

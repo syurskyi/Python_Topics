@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minTransfers(self, transactions):
     balances = collections.defaultdict(int)
     people = set()
@@ -6,7 +6,7 @@ class Solution(object):
       balances[giver] -= amount
       balances[receiver] += amount
       people |= {giver, receiver}
-    ___ person, balance __ balances.items():
+    ___ person, balance __ balances.i..:
       __ balance __ 0:
         people.discard(person)
         del balances[person]

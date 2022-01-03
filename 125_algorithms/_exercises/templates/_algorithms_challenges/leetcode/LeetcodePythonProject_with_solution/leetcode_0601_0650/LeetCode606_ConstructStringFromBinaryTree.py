@@ -4,13 +4,13 @@ Created on Sep 6, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ tree2str(self, t):
         """
         :type t: TreeNode
@@ -20,8 +20,8 @@ class Solution(object):
         __ t:
             res += s..(t.val)
             __ t.right:
-                res += '(%s)' % self.tree2str(t.left)
-                res += '(%s)' % self.tree2str(t.right)
+                res += '(%s)' % tree2str(t.left)
+                res += '(%s)' % tree2str(t.right)
             ____ t.left:
-                res += '(%s)' % self.tree2str(t.left)
+                res += '(%s)' % tree2str(t.left)
         r.. res

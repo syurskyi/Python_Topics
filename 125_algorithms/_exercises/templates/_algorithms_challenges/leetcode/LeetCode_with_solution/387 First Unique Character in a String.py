@@ -15,7 +15,7 @@ Note: You may assume the string contain only lowercase letters.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ firstUniqChar(self, s):
         """
         :type s: str
@@ -24,7 +24,7 @@ class Solution(object):
         __ n.. s:
             r.. -1
 
-        first = {}
+        first    # dict
         ___ i, v __ e..(l..(s)):
             __ v n.. __ first:
                 first[v] = i

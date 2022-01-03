@@ -4,7 +4,7 @@ Created on Feb 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ combinationSum3(self, k, n):
         """
         :type k: int
@@ -13,7 +13,7 @@ class Solution(object):
         """
         elem    # list
         result    # list
-        self.helper(elem, 1, k, n, result)
+        helper(elem, 1, k, n, result)
         r.. result
     
     ___ helper(self, elem, start, k, n, result):
@@ -24,10 +24,10 @@ class Solution(object):
             r..
         ___ i __ r..(start, 10):
             elem.a..(i)
-            self.helper(elem, i+1, k, n-i, result)
+            helper(elem, i+1, k, n-i, result)
             elem.pop()
     
-    ___ test(self):
+    ___ test
         testCases = [
             (3, 7),
             (3, 9),
@@ -35,7 +35,7 @@ class Solution(object):
         ___ k, n __ testCases:
             print('k: %s' % (k))
             print('n: %s' % (n))
-            result = self.combinationSum3(k, n)
+            result = combinationSum3(k, n)
             print('result: %s' % (result))
             print('-='*20+'-')
 

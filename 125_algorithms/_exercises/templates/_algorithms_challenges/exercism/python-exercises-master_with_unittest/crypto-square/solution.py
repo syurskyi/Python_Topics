@@ -11,14 +11,14 @@ ___ encode(msg):
     msg = _cleanse(msg)
     square_size = int(ceil(sqrt(l..(msg))))
     square = _chunks_of(msg, square_size)
-    r.. ' '.join([''.join(col)
+    r.. ' '.j..([''.j..(col)
                      ___ col __ zip_longest(*square, fillvalue='')])
 
 
 ___ _cleanse(s):
     """Lowercase a string and remove punctuation and whitespace
     """
-    r.. ''.join([c ___ c __ s __ c.isalnum()]).lower()
+    r.. ''.j..([c ___ c __ s __ c.isalnum()]).l..
 
 
 ___ _chunks_of(s, n):

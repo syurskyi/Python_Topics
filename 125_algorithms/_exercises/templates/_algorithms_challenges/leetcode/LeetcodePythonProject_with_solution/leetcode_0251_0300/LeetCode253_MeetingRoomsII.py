@@ -4,12 +4,12 @@ Created on Mar 1, 2017
 @author: MT
 '''
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
-class Solution(object):
+c_ Solution(object):
     ___ minMeetingRooms(self, intervals):
         """
         :type intervals: List[Interval]
@@ -26,7 +26,7 @@ class Solution(object):
             maxLen = max(maxLen, l..(heap))
         r.. maxLen
      
-    ___ test(self):
+    ___ test
         testCases = [
             [[0, 30], [5, 10], [15, 20]],
             [[0, 50], [5, 10], [15, 20], [17, 23], [19, 30]],
@@ -36,7 +36,7 @@ class Solution(object):
         ___ intervals __ testCases:
             print('intervals: %s' % (intervals))
             intervals = [Interval(inter[0], inter[1]) ___ inter __ intervals]
-            result = self.minMeetingRooms(intervals)
+            result = minMeetingRooms(intervals)
             print('result: %s' % result)
             print('-='*20+'-')
 

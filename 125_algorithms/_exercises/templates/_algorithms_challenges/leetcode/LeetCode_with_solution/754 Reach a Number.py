@@ -26,7 +26,7 @@ target will be a non-zero integer in the range [-10^9, 10^9].
 """
 
 
-class Solution:
+c_ Solution:
     ___ reachNumber(self, target: int) -> int:
         """
         math

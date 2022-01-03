@@ -4,14 +4,14 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ upsideDownBinaryTree(self, root):
         """
         single recursive
@@ -24,16 +24,16 @@ class Solution(object):
             r.. root
 
         left, right = root.left, root.right
-        root_new = self.upsideDownBinaryTree(root.left)
+        root_new = upsideDownBinaryTree(root.left)
         left.left, left.right = right, root
         root.left, root.right = N.., N..
         r.. root_new
 
 
-class SolutionComplex(object):
-    ___ __init__(self):
-        self.root = TreeNode(0)
-        self.cur_new = self.root
+c_ SolutionComplex(object):
+    ___ - ):
+        root = TreeNode(0)
+        cur_new = root
 
     ___ upsideDownBinaryTree(self, root):
         """
@@ -45,8 +45,8 @@ class SolutionComplex(object):
         __ n.. root:
             r..
 
-        self.traverse(root)
-        r.. self.root
+        traverse(root)
+        r.. root
 
     ___ traverse(self, cur):
         """
@@ -58,10 +58,10 @@ class SolutionComplex(object):
             r..
 
         __ n.. cur.left:
-            self.cur_new.val = cur.val
+            cur_new.val = cur.val
             r..
 
-        self.traverse(cur.left)
-        __ cur.right: self.cur_new.left = TreeNode(cur.right.val)
-        self.cur_new.right = TreeNode(cur.val)
-        self.cur_new = self.cur_new.right
+        traverse(cur.left)
+        __ cur.right: cur_new.left = TreeNode(cur.right.val)
+        cur_new.right = TreeNode(cur.val)
+        cur_new = cur_new.right

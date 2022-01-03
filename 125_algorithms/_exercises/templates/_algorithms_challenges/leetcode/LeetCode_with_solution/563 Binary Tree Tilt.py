@@ -27,17 +27,17 @@ All the tilt values won't exceed the range of 32-bit integer.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ findTilt(self, root: TreeNode) -> int:
         ret = [0]
-        self.walk(root, ret)
+        walk(root, ret)
         r.. ret[0]
 
     ___ walk(self, node: TreeNode, ret) -> int:
@@ -45,7 +45,7 @@ class Solution:
         __ n.. node:
             r.. 0
 
-        l = self.walk(node.left, ret)
-        r = self.walk(node.right, ret)
+        l = walk(node.left, ret)
+        r = walk(node.right, ret)
         ret[0] += abs(l - r)
         r.. l + node.val + r

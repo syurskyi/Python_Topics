@@ -3,23 +3,23 @@ Created on Feb 13, 2017
 
 @author: MT
 '''
-class TwoSum(object):
+c_ TwoSum(object):
 
-    ___ __init__(self):
+    ___ - ):
         """
         initialize your data structure here
         """
-        self.elements = {}
+        elements    # dict
 
     ___ add(self, number):
         """
         Add the number to an internal data structure.
         :rtype: nothing
         """
-        __ number __ self.elements:
-            self.elements[number] += 1
+        __ number __ elements:
+            elements[number] += 1
         ____:
-            self.elements[number] = 1
+            elements[number] = 1
 
     ___ find(self, value):
         """
@@ -27,10 +27,10 @@ class TwoSum(object):
         :type value: int
         :rtype: bool
         """
-        ___ num __ self.elements:
+        ___ num __ elements:
             target = value-num
-            __ target __ self.elements:
-                __ target __ num a.. self.elements[target]<2:
+            __ target __ elements:
+                __ target __ num a.. elements[target]<2:
                     continue
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..

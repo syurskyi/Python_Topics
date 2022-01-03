@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findRotateSteps(self, ring, key):
     """
     :type ring: str
@@ -23,7 +23,7 @@ class Solution(object):
       cache[pointTo, key] = minDist
       r.. minDist
 
-    cache = {}
+    cache    # dict
     d = collections.defaultdict(l..)
     ___ i, c __ e..(ring):
       d[c].a..(i)

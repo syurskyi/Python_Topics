@@ -4,7 +4,7 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findSubstringInWraproundString(self, p):
         """
         :type p: str
@@ -20,7 +20,7 @@ class Solution(object):
             count[ord(c)-ord('a')] = max(count[ord(c)-ord('a')], maxCurrLen)
         r.. s..(count)
     
-    ___ test(self):
+    ___ test
         testCases = [
             'a',
             'cac',
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ p __ testCases:
             print('p: %s' % p)
-            result = self.findSubstringInWraproundString(p)
+            result = findSubstringInWraproundString(p)
             print('result: %s' % result)
             print('-='*30+'-')
 

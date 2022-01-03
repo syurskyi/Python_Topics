@@ -3,23 +3,23 @@ Created on Oct 9, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ checkPossibility(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
         prev = nums[0]
-        modified = False
+        modified = F..
         ___ i __ r..(1, l..(nums)):
             __ nums[i] < prev:
                 __ modified:
-                    r.. False
-                modified = True
+                    r.. F..
+                modified = T..
                 __ i-2 >= 0 a.. nums[i-2] > nums[i]:
                     continue
             prev = nums[i]
-        r.. True
+        r.. T..
     
     ___ checkPossibility_modifying(self, nums):
         """
@@ -29,15 +29,15 @@ class Solution(object):
         modified = 0
         ___ i __ r..(1, l..(nums)):
             __ nums[i-1] > nums[i]:
-                __ modified != 0: r.. False
+                __ modified != 0: r.. F..
                 modified += 1
                 __ i - 2 < 0 o. nums[i-2] <= nums[i]:
                     nums[i-1] = nums[i]
                 ____:
                     nums[i] = nums[i-1]
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [4, 2, 3],
             [4, 2, 1],
@@ -49,7 +49,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.checkPossibility(nums)
+            result = checkPossibility(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

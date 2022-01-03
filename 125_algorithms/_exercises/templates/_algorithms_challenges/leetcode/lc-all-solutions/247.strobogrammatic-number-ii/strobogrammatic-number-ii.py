@@ -1,19 +1,19 @@
-class Solution(object):
+c_ Solution(object):
   ___ findStrobogrammatic(self, n):
     """
     :type n: int
     :rtype: List[str]
     """
-    self.d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
+    d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
 
     ___ dfs(half, path, res, n):
       __ l..(path) __ half:
-        pathStr = "".join(path)
+        pathStr = "".j..(path)
         __ half * 2 __ n:
-          res.a..(pathStr + "".join([self.d[x] ___ x __ pathStr[::-1]]))
+          res.a..(pathStr + "".j..([d[x] ___ x __ pathStr[::-1]]))
         ____:
           ___ c __ "018":
-            res.a..(pathStr + c + "".join([self.d[x] ___ x __ pathStr[::-1]]))
+            res.a..(pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]]))
         r..
 
       ___ c __ "01689":

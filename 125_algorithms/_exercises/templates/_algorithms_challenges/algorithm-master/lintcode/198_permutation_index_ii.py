@@ -7,7 +7,7 @@ e.g., 3 `A[i]`s and 4 `A[j]`s in `A`
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: An array of integers
     @return: A long integer
@@ -19,7 +19,7 @@ class Solution:
 
         n = l..(A)
         factorial = dup_fact = 1
-        dups = {}
+        dups    # dict
 
         ___ i __ r..(n - 1, -1, -1):
             dups[A[i]] = dups.get(A[i], 0) + 1

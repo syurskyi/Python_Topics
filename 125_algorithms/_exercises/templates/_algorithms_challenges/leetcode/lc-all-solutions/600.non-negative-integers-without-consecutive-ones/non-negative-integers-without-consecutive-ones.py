@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findIntegers(self, num):
     """
     :type num: int

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @return: An integer indicate the value of maximum difference between two substrings
@@ -9,10 +9,10 @@ class Solution:
 
         n = l..(A)
         B = [-1 * num ___ num __ A]
-        Lmin = self.get_sum(B, r..(n), factor=-1)
-        Lmax = self.get_sum(A, r..(n), factor=1)
-        Rmin = self.get_sum(B, r..(n - 1, -1, -1), factor=-1)
-        Rmax = self.get_sum(A, r..(n - 1, -1, -1), factor=1)
+        Lmin = get_sum(B, r..(n), factor=-1)
+        Lmax = get_sum(A, r..(n), factor=1)
+        Rmin = get_sum(B, r..(n - 1, -1, -1), factor=-1)
+        Rmax = get_sum(A, r..(n - 1, -1, -1), factor=1)
 
         ans = float('-inf')
         ___ i __ r..(n - 1):

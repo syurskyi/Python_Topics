@@ -2,7 +2,7 @@ _______ heapq
 _______ random
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findKthLargest(self, nums, k):
     """
     :type A: List[int]
@@ -68,5 +68,5 @@ class Solution(object):
     heap += [prices[p - 1] - prices[v] ___ v, p __ stack]
     __ l..(heap) < k:
       r.. s..(heap)
-    self.findKthLargest(heap, k)
+    findKthLargest(heap, k)
     r.. s..(heap[:k])

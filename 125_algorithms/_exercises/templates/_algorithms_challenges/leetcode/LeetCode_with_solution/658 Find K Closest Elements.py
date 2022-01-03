@@ -20,7 +20,7 @@ ____ bisect _______ bisect_left
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ findClosestElements(self, A: List[int], k: int, x: int) -> List[int]:
         """
         binary search without two pointers scanning

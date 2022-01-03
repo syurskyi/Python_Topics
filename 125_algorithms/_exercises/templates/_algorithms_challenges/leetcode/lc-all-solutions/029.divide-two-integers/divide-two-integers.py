@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ divide(self, dividend, divisor):
     """
     :type dividend: int

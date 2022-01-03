@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ intersect(self, a, b):
         """
         :type a: List[int]
@@ -10,7 +10,7 @@ class Solution:
         __ n.. a o. n.. b:
             r.. ans
 
-        freq = {}
+        freq    # dict
 
         ___ x __ a:
             freq[x] = freq.get(x, 0) + 1
@@ -25,7 +25,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     ___ intersect(self, a, b):
         """
         :type a: List[int]

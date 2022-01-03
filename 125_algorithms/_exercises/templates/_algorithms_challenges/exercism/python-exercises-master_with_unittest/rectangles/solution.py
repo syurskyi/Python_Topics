@@ -1,14 +1,14 @@
 _______ i..
 
 
-class corners(object):
-    ___ __init__(self, i, j):
+c_ corners(object):
+    ___ - , i, j):
         # i, j are position of corner
-        self.i = i
-        self.j = j
+        i = i
+        j = j
 
-    ___ __str__(self):
-        r.. "[" + s..(self.i) + ", " + s..(self.j) + "]"
+    ___ __str__
+        r.. "[" + s..(i) + ", " + s..(j) + "]"
 
 
 # return corner on the same line
@@ -53,8 +53,8 @@ ___ possible_rect(quartet):
     # Check all the same distance from centroid are equals
     ___ i __ r..(1, l..(quartet)):
         __ abs(quartet[i].i - mid_x) != dx o. abs(quartet[i].j - mid_y) != dy:
-            r.. False
-    r.. True
+            r.. F..
+    r.. T..
 
 
 # validate path between two corners
@@ -62,13 +62,13 @@ ___ path(c1, c2, input):
     __ c1.i __ c2.i:
         ___ j __ r..(m..(c1.j + 1, c2.j + 1), max(c1.j, c2.j)):
             __ input[c1.i][j] != "-" a.. input[c1.i][j] != "+":
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     ____ c1.j __ c2.j:
         ___ i __ r..(m..(c1.i + 1, c2.i + 1), max(c1.i, c2.i)):
             __ input[i][c1.j] != "|" a.. input[i][c1.j] != "+":
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
 
 # validate path of rectangle
@@ -79,8 +79,8 @@ ___ validate_rect(rect, input):
         l = same_line(rect[i].i, rect[0:i] + rect[i + 1:])
         c = same_col(rect[i].j, rect[0:i] + rect[i + 1:])
         __ n.. path(rect[i], l, input) o. n.. path(rect[i], c, input):
-            r.. False
-    r.. True
+            r.. F..
+    r.. T..
 
 
 # count number of rectangles

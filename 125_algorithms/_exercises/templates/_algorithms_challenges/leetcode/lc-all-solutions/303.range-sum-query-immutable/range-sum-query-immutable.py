@@ -1,12 +1,12 @@
-class NumArray(object):
-  ___ __init__(self, nums):
+c_ NumArray(object):
+  ___ - , nums):
     """
     initialize your data structure here.
     :type nums: List[int]
     """
-    self.dp = [0] * (l..(nums) + 1)
+    dp = [0] * (l..(nums) + 1)
     ___ i __ r..(0, l..(nums)):
-      self.dp[i + 1] = self.dp[i] + nums[i]
+      dp[i + 1] = dp[i] + nums[i]
 
   ___ sumRange(self, i, j):
     """
@@ -15,7 +15,7 @@ class NumArray(object):
     :type j: int
     :rtype: int
     """
-    r.. self.dp[j + 1] - self.dp[i]
+    r.. dp[j + 1] - dp[i]
 
 # Your NumArray object will be instantiated and called as such:
 # numArray = NumArray(nums)

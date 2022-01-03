@@ -30,7 +30,7 @@ ___ get_income_distribution(xml=countries):
         level = ""
         country = ""
         ___ ele __ child:
-            element = ele.tag[ele.tag.rfind("}") +1:].lower()
+            element = ele.tag[ele.tag.rfind("}") +1:].l..
 
             __ element __ "incomelevel":
                 level = ele.text

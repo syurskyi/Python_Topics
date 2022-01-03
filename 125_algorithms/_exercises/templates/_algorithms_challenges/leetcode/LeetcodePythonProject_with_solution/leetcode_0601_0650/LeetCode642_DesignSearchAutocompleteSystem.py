@@ -3,32 +3,32 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-class TreeNode(object):
-    ___ __init__(self, val):
-        self.val = val
-        self.children = {}
-        self.candidates = {}
-        self.isLeaf = False
+c_ TreeNode(object):
+    ___ - , val):
+        val = val
+        children    # dict
+        candidates    # dict
+        isLeaf = F..
 
-class AutocompleteSystem(object):
+c_ AutocompleteSystem(object):
 
-    ___ __init__(self, sentences, times):
+    ___ - , sentences, times):
         """
         :type sentences: List[str]
         :type times: List[int]
         """
-        self.root = TreeNode(N..)
-        self.node = self.root
-        self.s = ''
+        root = TreeNode(N..)
+        node = root
+        s = ''
         ___ s, count __ z..(sentences, times):
-            node = self.root
+            node = root
             ___ c __ s:
                 __ c n.. __ node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
                 node.candidates[s] = node.candidates.get(s, 0)+count
-            node.isLeaf = True
+            node.isLeaf = T..
 
     ___ input(self, c):
         """
@@ -37,33 +37,33 @@ class AutocompleteSystem(object):
         """
         __ c __ '#':
             res    # list
-            self.node = self.root
-            self.addCandidate(self.s)
-            self.s = ''
+            node = root
+            addCandidate(s)
+            s = ''
             r.. res
         ____:
-            self.s += c
-            __ self.node a.. c __ self.node.children:
-                node = self.node.children[c]
-                self.node = node
+            s += c
+            __ node a.. c __ node.children:
+                node = node.children[c]
+                node = node
                 candidates = node.candidates
-                res = [(-count, s) ___ s, count __ candidates.items()]
+                res = [(-count, s) ___ s, count __ candidates.i..]
                 res.s..()
                 res = res[:3]
                 r.. [s ___ count, s __ res]
             ____:
-                self.node = N..
+                node = N..
                 r.. []
     
     ___ addCandidate(self, s):
-        node = self.root
+        node = root
         ___ c __ s:
             __ c n.. __ node.children:
                 newNode = TreeNode(c)
                 node.children[c] = newNode
             node = node.children[c]
             node.candidates[s] = node.candidates.get(s, 0)+1
-        node.isLeaf = True
+        node.isLeaf = T..
 
 __ __name__ __ '__main__':
 #     autoSys = AutocompleteSystem(["i love you", "island","ironman", "i love leetcode"], [5,3,2,2])

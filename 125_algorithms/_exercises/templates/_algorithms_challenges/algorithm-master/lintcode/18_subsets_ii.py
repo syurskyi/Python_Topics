@@ -1,7 +1,7 @@
 """
 DFS
 """
-class Solution:
+c_ Solution:
     """
     @param: A: A set of numbers.
     @return: A list of lists. All valid subsets.
@@ -11,7 +11,7 @@ class Solution:
             r.. [[]]
 
         ans    # list
-        self.dfs(s..(A), 0, ans, [])
+        dfs(s..(A), 0, ans, [])
         r.. ans
 
     ___ dfs(self, A, start, ans, subset):
@@ -24,7 +24,7 @@ class Solution:
             __ i - 1 >= start a.. A[i] __ A[i - 1]:
                 continue
 
-            self.dfs(A, i + 1, ans, subset + [A[i]])
+            dfs(A, i + 1, ans, subset + [A[i]])
 
             """
             backtracking if using same list

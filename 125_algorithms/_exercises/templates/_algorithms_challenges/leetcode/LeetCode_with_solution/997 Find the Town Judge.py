@@ -48,7 +48,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ findJudge(self, N: int, trust: List[List[int]]) -> int:
         """
         like the find the celebrity

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findAllConcatenatedWordsInADict(self, words):
     """
     :type words: List[str]
@@ -7,15 +7,15 @@ class Solution(object):
 
     ___ wordBreak(word, cands):
       __ n.. cands:
-        r.. False
-      dp = [False] * (l..(word) + 1)
-      dp[0] = True
+        r.. F..
+      dp = [F..] * (l..(word) + 1)
+      dp[0] = T..
       ___ i __ r..(1, l..(word) + 1):
         ___ j __ reversed(r..(0, i)):
           __ n.. dp[j]:
             continue
           __ word[j:i] __ cands:
-            dp[i] = True
+            dp[i] = T..
             break
       r.. dp[-1]
 

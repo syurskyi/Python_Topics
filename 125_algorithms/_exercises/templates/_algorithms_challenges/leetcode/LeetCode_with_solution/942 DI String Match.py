@@ -31,7 +31,7 @@ S only contains characters "I" or "D".
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ diStringMatch(self, S: s..) -> List[int]:
         """
         Looking at prev rather than cur

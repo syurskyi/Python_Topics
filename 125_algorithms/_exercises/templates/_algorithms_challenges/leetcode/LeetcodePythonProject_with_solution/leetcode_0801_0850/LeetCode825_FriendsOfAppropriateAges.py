@@ -3,7 +3,7 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numFriendRequests(self, ages):
         """
         :type ages: List[int]
@@ -19,7 +19,7 @@ class Solution(object):
             count[i] += count[i-1]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [16,16],
             [16,17,18],
@@ -28,7 +28,7 @@ class Solution(object):
         ]
         ___ ages __ testCases:
             print('ages: %s' % ages)
-            result = self.numFriendRequests(ages)
+            result = numFriendRequests(ages)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -4,7 +4,7 @@ Given an integer n, return the number of trailing zeroes in n!.
 Note: Your solution should be in logarithmic time complexity.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ trailingZeroes(self, n):
         """
         :type n: int

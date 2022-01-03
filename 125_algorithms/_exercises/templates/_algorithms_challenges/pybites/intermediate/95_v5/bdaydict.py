@@ -1,15 +1,15 @@
 MSG = 'Hey {}, there are more people with your birthday!'
 
 
-class BirthdayDict(d..):
+c_ BirthdayDict(d..):
     """Override dict to print a message every time a new person is added that has
        the same birthday (day+month) as somebody already in the dict"""
 
-    ___ __init__(self, *args, **kwargs):
+    ___ - , *args, **kwargs):
         super().__init__()
-        self.update(*args, **kwargs)
+        update(*args, **kwargs)
 
     ___ __setitem__(self, name, birthday):
-        __ any((birthday.day __ x.day a.. birthday.month __ x.month) ___ (_, x) __ self.items()):
+        __ any((birthday.day __ x.day a.. birthday.month __ x.month) ___ (_, x) __ items()):
             print(MSG.f..(name))
         d...__setitem__(self, name, birthday)

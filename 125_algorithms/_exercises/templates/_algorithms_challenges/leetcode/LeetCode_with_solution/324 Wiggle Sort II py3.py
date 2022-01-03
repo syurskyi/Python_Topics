@@ -20,7 +20,7 @@ Can you do it in O(n) time and/or in-place with O(1) extra space?
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ wiggleSort(self, nums: List[int]) -> N..
         """
         Do not return anything, modify nums in-place instead.
@@ -54,13 +54,13 @@ class Solution:
                 i += 1
 
     ___ find_kth(self, A, lo, hi, k):
-        p = self.pivot(A, lo, hi)
+        p = pivot(A, lo, hi)
         __ k __ p:
             r.. p
         ____ k > p:
-            r.. self.find_kth(A, p + 1, hi, k)
+            r.. find_kth(A, p + 1, hi, k)
         ____:
-            r.. self.find_kth(A, lo, p, k)
+            r.. find_kth(A, lo, p, k)
 
     ___ pivot(self, A, lo, hi):
         # need 3-way pivot, otherwise TLE

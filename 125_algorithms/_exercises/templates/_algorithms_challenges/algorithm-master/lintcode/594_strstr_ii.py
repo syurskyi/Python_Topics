@@ -31,7 +31,7 @@ Test Case:
 """
 
 
-class Solution:
+c_ Solution:
     ___ strStr2(self, S, T):
         """
         :type S: List[str]

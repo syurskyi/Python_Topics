@@ -3,7 +3,7 @@ nums = {0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six
 feature = {0: "z", 1: "o", 2: "w", 3: "r", 4: "u", 5: "v", 6: "x", 7: "s", 8: "g", 9: "i", 10: "t"}
 
 
-class Solution(object):
+c_ Solution(object):
   ___ originalDigits(self, s):
     """
     :type s: str
@@ -11,7 +11,7 @@ class Solution(object):
     """
     global nums, feature
     ans    # list
-    count = {}
+    count    # dict
     ___ c __ s:
       count[c] = count.get(c, 0) + 1
     ___ num __ [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
@@ -22,4 +22,4 @@ class Solution(object):
         ___ c __ word:
           count[c] -= featureNum
     ans.s..()
-    r.. "".join(ans)
+    r.. "".j..(ans)

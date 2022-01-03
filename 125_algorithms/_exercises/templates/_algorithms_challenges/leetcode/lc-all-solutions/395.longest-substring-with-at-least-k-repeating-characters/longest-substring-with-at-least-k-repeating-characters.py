@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ longestSubstring(self, s, k):
     """
     :type s: str
@@ -7,5 +7,5 @@ class Solution(object):
     """
     ___ c __ set(s):
       __ s.c.. c) < k:
-        r.. max([self.longestSubstring(t, k) ___ t __ s.s..(c)])
+        r.. max([longestSubstring(t, k) ___ t __ s.s..(c)])
     r.. l..(s)

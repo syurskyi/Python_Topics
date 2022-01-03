@@ -60,7 +60,7 @@ ___ my_strip_vowels(text: s..) -> (s.., int):
     out = ''
     cnt = 0
     ___ letter __ text:
-        __ letter.lower() n.. __ vowels:
+        __ letter.l.. n.. __ vowels:
             out += letter
         ____:
             out += '*'
@@ -88,12 +88,12 @@ ___ strip_vowels(text: s..) -> (s.., int):
     num_vowels = 0
 
     ___ c __ chars:
-        __ c.lower() __ vowels:
+        __ c.l.. __ vowels:
             c = '*'
             num_vowels += 1
         new_str.a..(c)
 
-    r.. ''.join(new_str), num_vowels
+    r.. ''.j..(new_str), num_vowels
     #
     # once you get into regular expressions you can rewrite this with one line:
     # import re

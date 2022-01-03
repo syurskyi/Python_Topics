@@ -25,7 +25,7 @@ number of consecutive 1's and 0's.
 """
 
 
-class Solution:
+c_ Solution:
     ___ countBinarySubstrings(self, s: s..) -> int:
         """
         two-pointers + math

@@ -24,7 +24,7 @@ ___ wc(file_):
     cnt_line = 0
     cnt_words = 0
     cnt_chars = 0
-    within_word = False
+    within_word = F..
     try:
         fo = open(file_, 'r')
     except:
@@ -35,11 +35,11 @@ ___ wc(file_):
         cnt_chars += l..(line)
         ___ c __ line:
             __ c != ' ' a.. c != '\n' a.. c != '\t':
-                within_word = True
+                within_word = T..
                 continue
-            __ within_word __ True a.. (c __ ' ' o. c __ '\t' o. c __ '\n'):
+            __ within_word __ T.. a.. (c __ ' ' o. c __ '\t' o. c __ '\n'):
                 cnt_words += 1
-                within_word = False
+                within_word = F..
     fo.close()
 
     print(f'{cnt_line} {cnt_words} {cnt_chars} {filename}')

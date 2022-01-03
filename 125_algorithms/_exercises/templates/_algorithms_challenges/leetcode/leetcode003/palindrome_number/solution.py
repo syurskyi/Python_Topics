@@ -1,15 +1,15 @@
-class Solution:
+c_ Solution:
     # @return a boolean
     ___ isPalindrome(self, x):
         __ x < 0:
-            r.. False
+            r.. F..
         num_digit = 0
         y = x
         w.... y != 0:
             y /= 10
             num_digit += 1
         __ num_digit <= 1:
-            r.. True
+            r.. T..
         # Reverse the right half
         i = 0
         t = 0
@@ -22,6 +22,6 @@ class Solution:
             x /= 10
         # Compare t and x
         __ t __ x:
-            r.. True
+            r.. T..
         ____:
-            r.. False
+            r.. F..

@@ -5,13 +5,13 @@ Created on Mar 5, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ closestKValues(self, root, target, k):
         """
         :type root: TreeNode
@@ -21,8 +21,8 @@ class Solution(object):
         """
         stack1, stack2    # list, []
         res    # list
-        self.inOrderReg(root, target, stack1)
-        self.inOrderRev(root, target, stack2)
+        inOrderReg(root, target, stack1)
+        inOrderRev(root, target, stack2)
         print('stack1: %s' % stack1)
         print('stack2: %s' % stack2)
         ___ _ __ r..(k):
@@ -38,23 +38,23 @@ class Solution(object):
     
     ___ inOrderReg(self, root, target, stack):
         __ n.. root: r..
-        self.inOrderReg(root.left, target, stack)
+        inOrderReg(root.left, target, stack)
         __ root.val > target: r..
         stack.a..(root.val)
-        self.inOrderReg(root.right, target, stack)
+        inOrderReg(root.right, target, stack)
     
     ___ inOrderRev(self, root, target, stack):
         __ n.. root: r..
-        self.inOrderRev(root.right, target, stack)
+        inOrderRev(root.right, target, stack)
         __ root.val <= target: r..
         stack.a..(root.val)
-        self.inOrderRev(root.left, target, stack)
+        inOrderRev(root.left, target, stack)
     
-    ___ test(self):
+    ___ test
         root = TreeNode(10, TreeNode(5, TreeNode(1), TreeNode(7)), TreeNode(15, TreeNode(13), TreeNode(20)))
         target = 13.5
         k = 5
-        result = self.closestKValues(root, target, k)
+        result = closestKValues(root, target, k)
         print('result: %s' % (result))
         print('-='*30+'-')
 

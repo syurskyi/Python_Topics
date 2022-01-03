@@ -7,7 +7,7 @@ but "(]" and "([)]" are not.
 """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isValid(self, s):
         """
         :type s: str
@@ -29,10 +29,10 @@ class Solution(object):
                     __ stack[-1] __ pars[c]:
                         stack.pop()
                     ____:
-                        r.. False
+                        r.. F..
                 ____:
-                    r.. False
+                    r.. F..
         __ stack:
-            r.. False
+            r.. F..
         ____:
-            r.. True
+            r.. T..

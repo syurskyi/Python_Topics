@@ -1,11 +1,11 @@
-class Allergies(object):
+c_ Allergies(object):
 
-    ___ __init__(self, number):
+    ___ - , number):
         pass
 
     ___ is_allergic_to(self, string):
         pass
 
-    @property
-    ___ lst(self):
+    $
+    ___ lst
         pass

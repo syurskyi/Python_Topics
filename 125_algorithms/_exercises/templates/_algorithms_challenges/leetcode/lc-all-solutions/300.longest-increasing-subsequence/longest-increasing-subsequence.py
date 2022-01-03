@@ -2,7 +2,7 @@
 # and then replace it with nums[i] and discard the list in the same length
 # which is implemented by `tail[idx] = num`
 
-class Solution(object):
+c_ Solution(object):
   ___ lengthOfLIS(self, nums):
     """
     :type nums: List[int]

@@ -1,6 +1,6 @@
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
-_______ re
+_______ __
 
 tmp = Path('/tmp')
 timings_log = tmp / 'pytest_timings.out'
@@ -21,7 +21,7 @@ ___ get_bite_with_fastest_avg_test(timings: l..) -> s..:
 
 
     ___ timing __ timings:
-        print(re.findall(r'[\d\.]+',timing))
+        print(__.findall(r'[\d\.]+',timing))
         break
 
 

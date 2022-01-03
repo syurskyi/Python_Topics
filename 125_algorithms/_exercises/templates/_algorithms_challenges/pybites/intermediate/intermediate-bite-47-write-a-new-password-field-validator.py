@@ -1,39 +1,39 @@
 _______ string
-_______ re
+_______ __
 
 PUNCTUATION_CHARS = l..(string.punctuation)
 used_passwords = set('PassWord@1 PyBit$s9'.s..())
 
 ___ validate_password_1(password):
     __ l..(password) < 6 o. l..(password) > 12:
-        r.. False
+        r.. F..
     __ n.. any(elem __ password ___ elem __ string.ascii_lowercase):
-        r.. False
+        r.. F..
     __ n.. any(elem __ password ___ elem __ string.ascii_uppercase):
-        r.. False
+        r.. F..
     __ n.. any(elem __ password ___ elem __ PUNCTUATION_CHARS):
-        r.. False
+        r.. F..
     __ password __ used_passwords:
-        r.. False
+        r.. F..
 
     used_passwords.add(password)
-    r.. True
+    r.. T..
 
 ___ validate_password_2(password):
     __ l..(password) < 6 o. l..(password) > 12:
-        r.. False
-    __ n.. re.search(r'[0-9]', password):
-        r.. False
-    __ n.. re.search(r'[a-z]', password):
-        r.. False
-    __ n.. re.search(r'[A-Z]', password):
-        r.. False
+        r.. F..
+    __ n.. __.s..(r'[0-9]', password):
+        r.. F..
+    __ n.. __.s..(r'[a-z]', password):
+        r.. F..
+    __ n.. __.s..(r'[A-Z]', password):
+        r.. F..
     __ n.. any(elem __ password ___ elem __ PUNCTUATION_CHARS):
-        r.. False
+        r.. F..
     __ password __ used_passwords:
-        r.. False
+        r.. F..
 
     used_passwords.add(password)
-    r.. True
+    r.. T..
 
 validate_password("passWord9_")

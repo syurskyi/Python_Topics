@@ -9,7 +9,7 @@ Try to come up as many solutions as you can, there are at least 3 different ways
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ rotate(self, nums, k):
         """
         in place

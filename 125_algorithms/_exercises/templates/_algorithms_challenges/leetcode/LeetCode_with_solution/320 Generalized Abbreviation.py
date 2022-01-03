@@ -7,7 +7,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ generateAbbreviations(self, word):
         """
         backtracking, pivoting letter
@@ -20,16 +20,16 @@ class Solution(object):
         ret    # list
         ___ i __ xrange(l..(word)+1):
             left_num = s..(i) __ i ____ ""
-            ___ right __ self.generateAbbreviations(word[i+1:]):
+            ___ right __ generateAbbreviations(word[i+1:]):
                 cur = left_num + word[i:i+1] + right
                 ret.a..(cur)
 
         r.. ret
 
 
-class SolutionTLE(object):
-    ___ __init__(self):
-        self.cache = defaultdict(l..)
+c_ SolutionTLE(object):
+    ___ - ):
+        cache = defaultdict(l..)
 
     ___ generateAbbreviations(self, word):
         """
@@ -38,16 +38,16 @@ class SolutionTLE(object):
         :type word: str
         :rtype: List[str]
         """
-        r.. l..(set(self.dfs(word)))
+        r.. l..(set(dfs(word)))
 
     ___ dfs(self, word):
-        __ word n.. __ self.cache:
+        __ word n.. __ cache:
             ret    # list
             ___ l __ xrange(1, l..(word)+1):
                 pivot = s..(l)
                 ___ i __ xrange(l..(word)-l+1):
-                    lefts = self.dfs(word[:i])
-                    rights = self.dfs(word[i+l:])
+                    lefts = dfs(word[:i])
+                    rights = dfs(word[i+l:])
                     ___ left __ lefts:
                         ___ right __ rights:
                             __ left a.. left[-1].isdigit() o. right a.. right[0].isdigit():
@@ -56,9 +56,9 @@ class SolutionTLE(object):
                             ret.a..(left+pivot+right)
 
             ret.a..(word)
-            self.cache[word] = ret
+            cache[word] = ret
 
-        r.. self.cache[word]
+        r.. cache[word]
 
 
 __ __name__ __ "__main__":

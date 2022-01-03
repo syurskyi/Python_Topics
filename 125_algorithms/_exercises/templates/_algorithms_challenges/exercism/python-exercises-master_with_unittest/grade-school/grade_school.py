@@ -1,3 +1,3 @@
-class School(object):
-    ___ __init__(self):
+c_ School(object):
+    ___ - ):
         pass

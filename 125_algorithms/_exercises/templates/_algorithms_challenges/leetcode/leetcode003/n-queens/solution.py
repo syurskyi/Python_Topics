@@ -1,10 +1,10 @@
-class Solution:
+c_ Solution:
     # @return a list of lists of string
     ___ solveNQueens(self, n):
-        self.n = n
+        n = n
         res    # list
         columns = [-1 ___ i __ r..(n)]
-        self.solve(columns, 0, res)
+        solve(columns, 0, res)
         r.. res
 
     ___ make_string_list(self, columns):
@@ -13,23 +13,23 @@ class Solution:
         ___ c __ columns:
             new_row = row[:]
             new_row[c] = 'Q'
-            sol.a..(''.join(new_row))
+            sol.a..(''.j..(new_row))
         r.. sol
 
     ___ is_valid(self, columns, row, col):
         ___ r __ r..(row):
             c = columns[r]
             __ c __ col:
-                r.. False
+                r.. F..
             __ abs(c - col) __ row - r:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     ___ solve(self, columns, row, res):
-        __ row __ self.n:
-            res.a..(self.make_string_list(columns))
+        __ row __ n:
+            res.a..(make_string_list(columns))
         ____:
-            ___ col __ r..(self.n):
-                __ self.is_valid(columns, row, col):
+            ___ col __ r..(n):
+                __ is_valid(columns, row, col):
                     columns[row] = col
-                    self.solve(columns, row + 1, res)
+                    solve(columns, row + 1, res)

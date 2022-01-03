@@ -3,7 +3,7 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ countPalindromicSubsequences(self, S):
         """
         :type S: str
@@ -39,14 +39,14 @@ class Solution(object):
                 dp[i][j] = dp[i][j]%MOD
         r.. dp[0][-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             'bccb',
             'abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.countPalindromicSubsequences(s)
+            result = countPalindromicSubsequences(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -36,14 +36,14 @@ ___ sort_books_by_first_authors_last_name(books=books):
     f = s..(author_list,
                key=l.... x: x.s..(' ')[-1],
                r.._T..[0]
-    r.. ''.join([t.title
+    r.. ''.j..([t.title
                     ___ t __ books
                     __ t.authors __ f])
 
 
 ___ sort_books_by_number_of_page(books=books):
     page_list = [entry.pages ___ entry __ books]
-    r.. ''.join([t.title
+    r.. ''.j..([t.title
                     ___ t __ books
                     __ t.pages __ max(page_list)])
 
@@ -52,6 +52,6 @@ ___ sort_books_by_published_date(books=books):
     date_list = [d__.strptime(entry.published, '%Y-%m-%d')
                  ___ entry __ books]
     l_pub = s..(date_list, r.._T..[0]
-    r.. ''.join([t.title
+    r.. ''.j..([t.title
                     ___ t __ books
                     __ t.published __ d__.strftime(l_pub, '%Y-%m-%d')])

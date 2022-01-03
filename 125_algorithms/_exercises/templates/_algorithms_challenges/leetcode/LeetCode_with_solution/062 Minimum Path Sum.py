@@ -5,7 +5,7 @@ of all numbers along its path.
 Note: You can only move either down or right at any point in time.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ minPathSum(self, grid):
         """
         dp

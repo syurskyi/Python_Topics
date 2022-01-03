@@ -18,7 +18,7 @@ The given array's numbers won't have any order.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findErrorNums(self, nums: List[int]) -> List[int]:
         """
         https://leetcode.com/problems/set-mismatch/discuss/113999/C%2B%2B-True-O(1)-space-O(n)-time-(No-input-modifying)-with-clear-explanation

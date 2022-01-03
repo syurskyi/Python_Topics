@@ -11,4 +11,4 @@ ___ generate_xmas_tree(rows=10):
     tree = [line.center(l..(tree_stars[-1]), ' ')
             ___ line __ tree_stars[1:]]
 
-    r.. '\n'.join(tree)
+    r.. '\n'.j..(tree)

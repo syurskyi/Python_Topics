@@ -4,7 +4,7 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ wiggleSort(self, nums):
         """
         :type nums: List[int]
@@ -17,13 +17,13 @@ class Solution(object):
             ____ i%2 __ 0 a.. nums[i-1] < nums[i]:
                 nums[i], nums[i-1] = nums[i-1], nums[i]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 5, 2, 1, 6, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            self.wiggleSort(nums)
+            wiggleSort(nums)
             print('after sort: %s' % (nums))
             print('-='*20+'-')
 

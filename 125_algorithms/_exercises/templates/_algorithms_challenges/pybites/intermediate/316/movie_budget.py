@@ -2,7 +2,7 @@ ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
 
 
-class MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple):
     title: s..
     price: int
     date: date
@@ -28,7 +28,7 @@ ___ rent_or_stream(
 
        Check out the tests for examples.
     """
-    movie_history = {}
+    movie_history    # dict
     ___ movie __ renting_history:
         movie_date = movie.date.strftime("%Y-%m")
         __ movie_date n.. __ movie_history:
@@ -36,7 +36,7 @@ ___ rent_or_stream(
         ____:
             movie_history[movie_date].a..(movie.price)
 
-    ___ key, value __ movie_history.items():
+    ___ key, value __ movie_history.i..:
         __ s..(value) <= streaming_cost_per_month:
             movie_history[key] = "rent"
         ____:

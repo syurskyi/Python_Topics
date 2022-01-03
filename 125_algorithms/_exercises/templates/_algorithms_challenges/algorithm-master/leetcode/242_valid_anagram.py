@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ isAnagram(self, s, t):
         """
         :type s: str
@@ -6,18 +6,18 @@ class Solution:
         :rtype: bool
         """
         __ s __ t:
-            r.. True
+            r.. T..
         __ n.. s o. n.. t o. l..(s) != l..(t):
-            r.. False
+            r.. F..
 
-        freq = {}
+        freq    # dict
 
         ___ c __ s:
             freq[c] = freq.get(c, 0) + 1
 
         ___ c __ t:
             __ c n.. __ freq:
-                r.. False
+                r.. F..
 
             freq[c] -= 1
 

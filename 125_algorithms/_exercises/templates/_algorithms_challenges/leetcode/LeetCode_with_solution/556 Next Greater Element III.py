@@ -17,7 +17,7 @@ Output: -1
 """
 
 
-class Solution:
+c_ Solution:
     ___ nextGreaterElement(self, n: int) -> int:
         """
         next permutation
@@ -45,7 +45,7 @@ class Solution:
 
         seq[i], seq[j] = seq[j], seq[i]
         seq[i+1:] = reversed(seq[i+1:])
-        ret = int("".join(seq))
+        ret = int("".j..(seq))
         __ ret <= 1 << 31 - 1:
             r.. ret
         ____:
@@ -75,7 +75,7 @@ class Solution:
             __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]
                 seq[i+1:] = s..(seq[i+1:])  # reversed also good
-                ret = int("".join(map(s.., seq)))
+                ret = int("".j..(map(s.., seq)))
                 __ ret <= 1 << 31 - 1:
                     r.. ret
                 ____:

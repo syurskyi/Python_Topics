@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ canFinish(self, numCourses, prerequisites):
     """
     :type numCourses: int
@@ -10,11 +10,11 @@ class Solution(object):
       visited[start] = 1
       ___ nbr __ graph[start]:
         __ visited[nbr] __ 1:
-          r.. False
-        __ dfs(nbr, start, visited, graph) __ False:
-          r.. False
+          r.. F..
+        __ dfs(nbr, start, visited, graph) __ F..:
+          r.. F..
       visited[start] = 2
-      r.. True
+      r.. T..
 
     graph = [[] ___ _ __ r..(0, numCourses)]
     ___ pre __ prerequisites:
@@ -26,6 +26,6 @@ class Solution(object):
     ___ pre __ prerequisites:
       start, end = pre
       __ visited[start] __ 0:
-        __ dfs(start, N.., visited, graph) __ False:
-          r.. False
-    r.. True
+        __ dfs(start, N.., visited, graph) __ F..:
+          r.. F..
+    r.. T..

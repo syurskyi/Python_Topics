@@ -3,13 +3,13 @@ ____ __future__ _______ division
 ____ fractions _______ gcd
 
 
-class Rational(object):
+c_ Rational(object):
     """
     Toyish implementation of rational numbers. For production purpose,
     please use `fractions.Fraction` in standard library instead.
     """
-    ___ __init__(self, numer, denom):
-        self.numer, self.denom = self._reduce(numer, denom)
+    ___ - , numer, denom):
+        numer, denom = _reduce(numer, denom)
 
     ___ _reduce(self, numer, denom):
         __ numer __ 0:
@@ -22,37 +22,37 @@ class Rational(object):
         r.. n, d
 
     ___ __eq__(self, other):
-        r.. self.numer __ other.numer a.. self.denom __ other.denom
+        r.. numer __ other.numer a.. denom __ other.denom
 
-    ___ __repr__(self):
-        r.. '{}/{}'.f..(self.numer, self.denom)
+    ___ __repr__
+        r.. '{}/{}'.f..(numer, denom)
 
     ___ __add__(self, other):
         r.. Rational(
-            self.numer*other.denom + self.denom*other.numer,
-            self.denom*other.denom
+            numer*other.denom + denom*other.numer,
+            denom*other.denom
         )
 
     ___ __sub__(self, other):
         r.. Rational(
-            self.numer*other.denom - self.denom*other.numer,
-            self.denom*other.denom
+            numer*other.denom - denom*other.numer,
+            denom*other.denom
         )
 
     ___ __mul__(self, other):
-        r.. Rational(self.numer * other.numer, self.denom * other.denom)
+        r.. Rational(numer * other.numer, denom * other.denom)
 
     ___ __truediv__(self, other):
-        r.. Rational(self.numer * other.denom, self.denom * other.numer)
+        r.. Rational(numer * other.denom, denom * other.numer)
 
-    ___ __abs__(self):
-        __ self.numer >= 0:
+    ___ __abs__
+        __ numer >= 0:
             r.. self
         ____:
-            r.. Rational(-self.numer, self.denom)
+            r.. Rational(-numer, denom)
 
     ___ __pow__(self, power):
-        r.. Rational(self.numer ** power, self.denom ** power)
+        r.. Rational(numer ** power, denom ** power)
 
     ___ __rpow__(self, base):
-        r.. base ** (self.numer / self.denom)
+        r.. base ** (numer / denom)

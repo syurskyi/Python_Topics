@@ -3,7 +3,7 @@ Created on Sep 12, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ scheduleCourse(self, courses):
         """
         :type courses: List[List[int]]
@@ -20,7 +20,7 @@ class Solution(object):
                 time -= -heapq.heappop(heap)
         r.. l..(heap)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,2]],
             [[100, 200], [200, 1300], [1000, 1250], [2000, 3200]],
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ courses __ testCases:
             print('courses: %s' % courses)
-            result = self.scheduleCourse(courses)
+            result = scheduleCourse(courses)
             print('result: %s' % result)
             print('-='*30+'-')
 

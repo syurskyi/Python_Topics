@@ -3,17 +3,17 @@ Created on Sep 13, 2017
 
 @author: MT
 '''
-class Excel(object):
+c_ Excel(object):
 
-    ___ __init__(self, H, W):
+    ___ - , H, W):
         """
         :type H: int
         :type W: str
         """
         m = H
         n = ord(W)-ord('A')+1
-        self.matrix = [[0]*n ___ _ __ r..(m)]
-        self.hashmap = {}
+        matrix = [[0]*n ___ _ __ r..(m)]
+        hashmap    # dict
 
     ___ set(self, r, c, v):
         """
@@ -24,12 +24,12 @@ class Excel(object):
         """
         i = r-1
         j = ord(c)-ord('A')
-        diff = v-self.matrix[i][j]
-        self.matrix[i][j] = v
-        ___ (i0, j0), vals __ self.hashmap.items():
-            self.matrix[i0][j0] += diff*(vals.count((i, j)))
-        __ (i, j) __ self.hashmap:
-            del self.hashmap[(i, j)]
+        diff = v-matrix[i][j]
+        matrix[i][j] = v
+        ___ (i0, j0), vals __ hashmap.i..:
+            matrix[i0][j0] += diff*(vals.count((i, j)))
+        __ (i, j) __ hashmap:
+            del hashmap[(i, j)]
 
     ___ get(self, r, c):
         """
@@ -38,7 +38,7 @@ class Excel(object):
         :rtype: int
         """
         i, j = r-1, ord(c)-ord('A')
-        r.. self.matrix[i][j]
+        r.. matrix[i][j]
 
     ___ s..(self, r, c, strs):
         """
@@ -48,13 +48,13 @@ class Excel(object):
         :rtype: int
         """
         i, j = r-1, ord(c)-ord('A')
-        ___ (i0, j0), vals __ self.hashmap.items():
+        ___ (i0, j0), vals __ hashmap.i..:
             __ i0 __ i a.. j0 __ j:
-                del self.hashmap[(i, j)]
+                del hashmap[(i, j)]
                 break
             ___ i1, j1 __ vals:
-                __ i1 __ i a.. j1 __ j a.. (i, j) __ self.hashmap:
-                    del self.hashmap[(i, j)]
+                __ i1 __ i a.. j1 __ j a.. (i, j) __ hashmap:
+                    del hashmap[(i, j)]
                     break
         vals    # list
         sumVal = 0
@@ -64,7 +64,7 @@ class Excel(object):
                 x = int(arr[0][1:])-1
                 y = ord(arr[0][0])-ord('A')
                 vals.a..((x, y))
-                sumVal += self.matrix[x][y]
+                sumVal += matrix[x][y]
             ____:
                 x0 = int(arr[0][1:])-1
                 y0 = ord(arr[0][0])-ord('A')
@@ -73,9 +73,9 @@ class Excel(object):
                 ___ i0 __ r..(x0, x1+1):
                     ___ j0 __ r..(y0, y1+1):
                         vals.a..((i0, j0))
-                        sumVal += self.matrix[i0][j0]
-        self.hashmap[(i, j)] = vals
-        self.matrix[i][j] = sumVal
+                        sumVal += matrix[i0][j0]
+        hashmap[(i, j)] = vals
+        matrix[i][j] = sumVal
         r.. sumVal
 
 __ __name__ __ '__main__':

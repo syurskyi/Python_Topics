@@ -3,7 +3,7 @@ Created on Apr 14, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ escapeGhosts(self, ghosts, target):
         """
         :type ghosts: List[List[int]]
@@ -14,15 +14,15 @@ class Solution(object):
         ___ g __ ghosts:
             d = abs(g[0]-target[0])+abs(g[1]-target[1])
             __ d <= maxVal:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ ghosts, target __ testCases:
-            result = self.escapeGhosts(ghosts, target)
+            result = escapeGhosts(ghosts, target)
             print('result: %s' % result)
             print('-='*30+'-')
 

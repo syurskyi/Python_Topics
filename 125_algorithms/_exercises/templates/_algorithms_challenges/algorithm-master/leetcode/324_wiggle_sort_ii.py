@@ -3,7 +3,7 @@ Follow Up: https://discuss.leetcode.com/topic/32929/o-n-o-1-after-median-virtual
 """
 
 
-class Solution:
+c_ Solution:
     ___ wiggleSort(self, A):
         """
         :type A: List[int]

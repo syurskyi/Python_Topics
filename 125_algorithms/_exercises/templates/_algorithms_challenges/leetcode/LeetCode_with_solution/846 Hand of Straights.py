@@ -32,7 +32,7 @@ ____ collections _______ Counter, deque
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ isNStraightHand(self, A: List[int], W: int) -> bool:
         """
         sort + queue
@@ -46,7 +46,7 @@ class Solution:
         prev_cnt = 0
         ___ k __ s..(counter):  # sorted by key
             __ prev_cnt > counter[k] o. prev_cnt > 0 a.. k > prev + 1:
-                r.. False
+                r.. F..
                 
             q.a..(counter[k] - prev_cnt)
             prev, prev_cnt = k, counter[k]
@@ -63,9 +63,9 @@ class Solution:
         """
         A.s..()
         __ l..(A) % W != 0:
-            r.. False
+            r.. F..
         __ W __ 1:
-            r.. True
+            r.. T..
 
 
         h    # list  # tuple of (-3, [1, 2, 3])
@@ -82,14 +82,14 @@ class Solution:
                 __ l..(lst) < W:
                     heapq.heappush(h, (a, lst))
             ____:
-                r.. False
+                r.. F..
 
         __ h:
-            r.. False
+            r.. F..
 
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":
-    ... Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) __ True
-    ... Solution().isNStraightHand([1,1,2,2,3,3], 3) __ True
+    ... Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) __ T..
+    ... Solution().isNStraightHand([1,1,2,2,3,3], 3) __ T..

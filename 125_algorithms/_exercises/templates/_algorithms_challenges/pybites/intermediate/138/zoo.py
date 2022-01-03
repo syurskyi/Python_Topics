@@ -1,20 +1,20 @@
 ____ i.. _______ count
 
-class Animal:
+c_ Animal:
 
     instances = l..()
     animal_sequence = c.. 10001, 1)
 
-    ___ __init__(self, name):
-        self._name = name.capitalize()
-        self.instances.a..(self)
+    ___ - , name):
+        _name = name.capitalize()
+        instances.a..(self)
 
-    ___ __str__(self):
-        r.. f"{next(Animal.animal_sequence)}. {self._name}"
+    ___ __str__
+        r.. f"{next(Animal.animal_sequence)}. {_name}"
 
     @classmethod
     ___ zoo(cls):
-        r.. "\n".join([cls_inst.__str__() ___ cls_inst __ cls.instances])
+        r.. "\n".j..([cls_inst.__str__() ___ cls_inst __ cls.instances])
 
 
 # if __name__ == "__main__":

@@ -15,7 +15,7 @@ Characters in given words can only be lower-case letters.
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ minDistance(self, word1: s.., word2: s..) -> int:
         """
         Longest Common Subsequence (LCS)

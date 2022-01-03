@@ -25,24 +25,24 @@ ____ typing _______ List
 _______ heapq
 
 
-class KthLargest:
+c_ KthLargest:
 
-    ___ __init__(self, k: int, nums: List[int]):
+    ___ - , k: int, nums: List[int]):
         """
         heap
         min-heap, since we want the head be the k-th largest
         """
-        self.h    # list
-        self.k = k
+        h    # list
+        k = k
         ___ n __ nums:
-            self.add(n)
+            add(n)
 
     ___ add(self, val: int) -> int:
-        heapq.heappush(self.h, val)
-        __ l..(self.h) > self.k:
-            heapq.heappop(self.h)
+        heapq.heappush(h, val)
+        __ l..(h) > k:
+            heapq.heappop(h)
 
-        r.. self.h[0]
+        r.. h[0]
 
 
 

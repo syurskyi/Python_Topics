@@ -1,16 +1,16 @@
 ____ __future__ _______ division
 
 
-class Rational(object):
-    ___ __init__(self, numer, denom):
-        self.numer = N..
-        self.denom = N..
+c_ Rational(object):
+    ___ - , numer, denom):
+        numer = N..
+        denom = N..
 
     ___ __eq__(self, other):
-        r.. self.numer __ other.numer a.. self.denom __ other.denom
+        r.. numer __ other.numer a.. denom __ other.denom
 
-    ___ __repr__(self):
-        r.. '{}/{}'.f..(self.numer, self.denom)
+    ___ __repr__
+        r.. '{}/{}'.f..(numer, denom)
 
     ___ __add__(self, other):
         pass
@@ -24,7 +24,7 @@ class Rational(object):
     ___ __truediv__(self, other):
         pass
 
-    ___ __abs__(self):
+    ___ __abs__
         pass
 
     ___ __pow__(self, power):

@@ -1,7 +1,7 @@
 _______ math
 
 
-class Solution(object):
+c_ Solution(object):
     ___ superpalindromesInRange(self, L, R):
         """
         :type L: str
@@ -12,10 +12,10 @@ class Solution(object):
         high = int(math.sqrt(int(R)))
 
         res = 1 __ low <= 3 <= high ____ 0
-        res += self.dfs(low, high, '')
-        res += self.dfs(low, high, '0')
-        res += self.dfs(low, high, '1')
-        res += self.dfs(low, high, '2')
+        res += dfs(low, high, '')
+        res += dfs(low, high, '0')
+        res += dfs(low, high, '1')
+        res += dfs(low, high, '2')
 
         r.. res
 
@@ -27,10 +27,10 @@ class Solution(object):
             num = int(s)
             __ num > high:
                 r.. 0
-            __ num >= low a.. self.isPalindrome(num*num):
+            __ num >= low a.. isPalindrome(num*num):
                 count += 1
         ___ c __ l..('012'):
-            count += self.dfs(low, high, c+s+c)
+            count += dfs(low, high, c+s+c)
         r.. count
 
     ___ isPalindrome(self, num):

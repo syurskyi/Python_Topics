@@ -6,8 +6,8 @@ ____ pathlib _______ Path
 ____ typing _______ List
 
 
-@dataclass(frozen=True)
-class ServiceIPRange:
+@dataclass(frozen=T..)
+c_ ServiceIPRange:
     """
     Represents an IPv4 public network range, allocated by AWS for use with
     a specific service and region.
@@ -17,9 +17,9 @@ class ServiceIPRange:
     region: s..
     cidr: IPv4Network
 
-    ___ __str__(self):
-        r.. (f"{self.cidr} is allocated to the {self.service} "
-                f"service in the {self.region} region")
+    ___ __str__
+        r.. (f"{cidr} is allocated to the {service} "
+                f"service in the {region} region")
 
 
 ___ parse_ipv4_service_ranges(source: Path) -> List[ServiceIPRange]:

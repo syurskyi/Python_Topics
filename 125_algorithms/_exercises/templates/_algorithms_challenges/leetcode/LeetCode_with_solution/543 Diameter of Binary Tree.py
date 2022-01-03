@@ -19,23 +19,23 @@ between them.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
+c_ Solution:
+    ___ - ):
         """
         dfs, return the longest path (#nodes) ended at the subroot/current node
         """
-        self.ret = 0
+        ret = 0
 
     ___ diameterOfBinaryTree(self, root: TreeNode) -> int:
-        self.dfs(root)
-        r.. self.ret
+        dfs(root)
+        r.. ret
 
     ___ dfs(self, node):
         """
@@ -44,7 +44,7 @@ class Solution:
         __ n.. node:
             r.. 0
 
-        l = self.dfs(node.left)
-        r = self.dfs(node.right)
-        self.ret = max(self.ret, l + 1 + r - 1)  # path length is the #nodes - 1
+        l = dfs(node.left)
+        r = dfs(node.right)
+        ret = max(ret, l + 1 + r - 1)  # path length is the #nodes - 1
         r.. max(l, r) + 1

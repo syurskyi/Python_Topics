@@ -6,7 +6,7 @@ For example,
 Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ trap(self, A):
         """
         Simplified version of Palantir Technology Online Test 2013

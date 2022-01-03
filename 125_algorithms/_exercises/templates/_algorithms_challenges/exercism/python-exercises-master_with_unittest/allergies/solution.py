@@ -1,4 +1,4 @@
-class Allergies(object):
+c_ Allergies(object):
 
     _allergies = [
         "eggs",
@@ -11,13 +11,13 @@ class Allergies(object):
         "cats"
     ]
 
-    ___ __init__(self, score):
-        self.score = score
+    ___ - , score):
+        score = score
 
     ___ is_allergic_to(self, allergy):
-        r.. self.score & 1 << self._allergies.index(allergy)
+        r.. score & 1 << _allergies.index(allergy)
 
-    @property
-    ___ lst(self):
-        r.. [allergy ___ allergy __ self._allergies
-                __ self.is_allergic_to(allergy)]
+    $
+    ___ lst
+        r.. [allergy ___ allergy __ _allergies
+                __ is_allergic_to(allergy)]

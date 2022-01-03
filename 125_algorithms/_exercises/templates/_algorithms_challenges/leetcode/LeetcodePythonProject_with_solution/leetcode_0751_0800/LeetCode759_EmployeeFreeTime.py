@@ -4,12 +4,12 @@ Created on Mar 30, 2018
 @author: tongq
 '''
 # Definition for an interval.
-class Interval(object):
-    ___ __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+c_ Interval(object):
+    ___ - , s=0, e=0):
+        start = s
+        end = e
 
-class Solution(object):
+c_ Solution(object):
     ___ employeeFreeTime(self, schedule):
         """
         :type schedule: List[List[Interval]]
@@ -32,7 +32,7 @@ class Solution(object):
                 heapq.heappop(heap) 
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [[1,2],[5,6]],
@@ -49,7 +49,7 @@ class Solution(object):
             ___ arr0 __ schedule:
                 arr.a..([Interval(inter[0], inter[1]) ___ inter __ arr0])
             schedule = arr
-            result = self.employeeFreeTime(schedule)
+            result = employeeFreeTime(schedule)
             res = [[inter.start, inter.end] ___ inter __ result]
             print('result: %s' % res)
             print('-='*30+'-')

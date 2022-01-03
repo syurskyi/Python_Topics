@@ -9,7 +9,7 @@ Note:
 A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ isValidSudoku(self, board):
         """
         Brute force - check rows, cols, and squares and maintain a hashmap to store the previously seen elements
@@ -41,7 +41,7 @@ class Solution:
                 try:
                     row_element = int(board[i][j])
                     __ row_element __ row:
-                        r.. False
+                        r.. F..
                     ____:
                         row.a..(row_element)
                 except ValueError:
@@ -51,7 +51,7 @@ class Solution:
                 try:
                     column_element = int(board[j][i])
                     __ column_element __ column:
-                        r.. False
+                        r.. F..
                     ____:
                         column.a..(column_element)
                 except ValueError:
@@ -61,13 +61,13 @@ class Solution:
                 try:
                     square_element = int(board[i/3*3 + j/3][i%3*3 + j%3])
                     __ square_element __ square:
-                        r.. False
+                        r.. F..
                     ____:
                         square.a..(square_element)
                 except ValueError:
                     pass
 
-        r.. True
+        r.. T..
 
 __ __name____"__main__":
     ... Solution().isValidSudoku(

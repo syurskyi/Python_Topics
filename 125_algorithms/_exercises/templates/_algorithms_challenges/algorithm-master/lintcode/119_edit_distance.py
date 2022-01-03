@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ minDistance(self, s, t):
         """
         :type s: str

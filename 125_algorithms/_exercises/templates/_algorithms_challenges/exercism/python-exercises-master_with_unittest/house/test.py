@@ -5,30 +5,30 @@ _______ unittest
 ____ house _______ rhyme, verse
 
 
-class VerseTest(unittest.TestCase):
-    ___ test_verse_0(self):
+c_ VerseTest(unittest.TestCase):
+    ___ test_verse_0
         expected = 'This is the house that Jack built.'
-        self.assertEqual(verse(0), expected)
+        assertEqual(verse(0), expected)
 
-    ___ test_verse_1(self):
+    ___ test_verse_1
         expected = 'This is the malt\n'\
                    'that lay in the house that Jack built.'
-        self.assertEqual(verse(1), expected)
+        assertEqual(verse(1), expected)
 
-    ___ test_verse_2(self):
+    ___ test_verse_2
         expected = 'This is the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        self.assertEqual(verse(2), expected)
+        assertEqual(verse(2), expected)
 
-    ___ test_verse_3(self):
+    ___ test_verse_3
         expected = 'This is the cat\n'\
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        self.assertEqual(verse(3), expected)
+        assertEqual(verse(3), expected)
 
-    ___ test_verse_11(self):
+    ___ test_verse_11
         expected = 'This is the horse and the hound and the horn\n'\
                    'that belonged to the farmer sowing his corn\n'\
                    'that kept the rooster that crowed in the morn\n'\
@@ -41,9 +41,9 @@ class VerseTest(unittest.TestCase):
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        self.assertEqual(verse(11), expected)
+        assertEqual(verse(11), expected)
 
-    ___ test_rhyme(self):
+    ___ test_rhyme
         expected = 'This is the house that Jack built.\n\n'\
                    'This is the malt\n'\
                    'that lay in the house that Jack built.\n\n'\
@@ -122,7 +122,7 @@ class VerseTest(unittest.TestCase):
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        self.assertEqual(rhyme(), expected)
+        assertEqual(rhyme(), expected)
 
 
 __ __name__ __ '__main__':

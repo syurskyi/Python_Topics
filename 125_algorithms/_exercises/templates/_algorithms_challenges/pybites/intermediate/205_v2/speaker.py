@@ -29,8 +29,8 @@ ___ get_pycon_speaker_first_names(soup_ N..
     first_names    # list
 
     ___ speaker __ speakers:
-        text = speaker.getText(strip=True)
-        result = re.s..(r'\s*,|/\s*',text)
+        text = speaker.getText(strip=T..)
+        result = __.s..(r'\s*,|/\s*',text)
         first_names.extend(r.s.. [0] ___ r __ result)
 
     r.. first_names
@@ -47,7 +47,7 @@ ___ get_percentage_of_female_speakers(first_names):
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""
     
-    d = gender.Detector(case_sensitive=False)
+    d = gender.Detector(case_sensitive=F..)
     labels = ('mostly_female','female')
     female_count = 0
     ___ first_name __ first_names:

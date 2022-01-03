@@ -21,7 +21,7 @@ Output: False
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ canMeasureWater(self, x, y, z):
         """
         Number theory
@@ -34,10 +34,10 @@ class Solution(object):
         :type z: int
         :rtype: bool
         """
-        __ x + y < z: r.. False
-        __ x __ z o. y __ z: r.. True
+        __ x + y < z: r.. F..
+        __ x __ z o. y __ z: r.. T..
 
-        r.. z % self.gcd(x, y) __ 0
+        r.. z % gcd(x, y) __ 0
 
     ___ gcd(self, a, b):
         w.... b:

@@ -19,7 +19,7 @@ The number of given pairs will be in the range [1, 1000].
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findLongestChain(self, pairs: List[List[int]]) -> int:
         """
         Greedy
@@ -63,7 +63,7 @@ class Solution:
         r.. ret
 
 
-class Solution2:
+c_ Solution2:
     ___ findLongestChain(self, pairs: List[List[int]]) -> int:
         """
         Let F[i] be the longest chain   ended at A[i]

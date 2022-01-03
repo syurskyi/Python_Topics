@@ -5,8 +5,8 @@ param_1 = obj.sumRange(i,j)
 """
 
 
-class NumArray:
-    ___ __init__(self, nums):
+c_ NumArray:
+    ___ - , nums):
         """
         :type nums: List[int]
         """
@@ -14,10 +14,10 @@ class NumArray:
             r..
 
         n = l..(nums)
-        self.prefix_sum = [0] * (n + 1)
+        prefix_sum = [0] * (n + 1)
 
         ___ i __ r..(1, n + 1):
-            self.prefix_sum[i] = self.prefix_sum[i - 1] + nums[i - 1]
+            prefix_sum[i] = prefix_sum[i - 1] + nums[i - 1]
 
     ___ sumRange(self, i, j):
         """
@@ -26,9 +26,9 @@ class NumArray:
         :rtype: int
         """
         __ (
-            n.. self.prefix_sum o.
+            n.. prefix_sum o.
             i < 0 o.
-            j + 1 >= l..(self.prefix_sum)
+            j + 1 >= l..(prefix_sum)
         ):
             r.. 0
-        r.. self.prefix_sum[j + 1] - self.prefix_sum[i]
+        r.. prefix_sum[j + 1] - prefix_sum[i]

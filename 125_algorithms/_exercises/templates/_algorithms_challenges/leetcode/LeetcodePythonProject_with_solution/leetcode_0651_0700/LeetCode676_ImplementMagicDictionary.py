@@ -3,19 +3,19 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-class TreeNode(object):
-    ___ __init__(self, val):
-        self.val = val
-        self.children = {}
-        self.isLeaf = False
+c_ TreeNode(object):
+    ___ - , val):
+        val = val
+        children    # dict
+        isLeaf = F..
 
-class MagicDictionary(object):
+c_ MagicDictionary(object):
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.root = TreeNode(N..)
+        root = TreeNode(N..)
 
     ___ buildDict(self, d..):
         """
@@ -23,43 +23,43 @@ class MagicDictionary(object):
         :type dict: List[str]
         :rtype: void
         """
-        self.root = TreeNode(N..)
+        root = TreeNode(N..)
         ___ word __ d..:
-            node = self.root
+            node = root
             ___ c __ word:
                 __ c n.. __ node.children:
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
-            node.isLeaf = True
+            node.isLeaf = T..
 
-    ___ search(self, word):
+    ___ s..(self, word):
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         :type word: str
         :rtype: bool
         """
-        r.. self.helper(self.root, word, 0, False)
+        r.. helper(root, word, 0, F..)
     
     ___ helper(self, node, word, ind, diffFlag):
-        __ n.. node: r.. False
+        __ n.. node: r.. F..
         __ ind __ l..(word):
             __ node.isLeaf a.. diffFlag:
-                r.. True
-            r.. False
+                r.. T..
+            r.. F..
         c = word[ind]
         ___ c0 __ node.children:
             __ c0 != c a.. diffFlag:
                 continue
-            __ self.helper(node.children.get(c, N..), word, ind+1, diffFlag) o.\
-                (c0 != c a.. self.helper(node.children[c0], word, ind+1, True)):
-                r.. True
-        r.. False
+            __ helper(node.children.get(c, N..), word, ind+1, diffFlag) o.\
+                (c0 != c a.. helper(node.children[c0], word, ind+1, T..)):
+                r.. T..
+        r.. F..
 
 __ __name__ __ '__main__':
     magicDict = MagicDictionary()
     magicDict.buildDict(['hello', 'leetcode', 'hallo'])
-    print(magicDict.search('hello'))
-    print(magicDict.search('hhllo'))
-    print(magicDict.search('hell'))
-    print(magicDict.search('leetcoded'))
+    print(magicDict.s..('hello'))
+    print(magicDict.s..('hhllo'))
+    print(magicDict.s..('hell'))
+    print(magicDict.s..('leetcoded'))

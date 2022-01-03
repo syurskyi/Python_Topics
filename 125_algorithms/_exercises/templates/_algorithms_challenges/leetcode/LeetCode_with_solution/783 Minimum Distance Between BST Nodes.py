@@ -29,17 +29,17 @@ is different.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.prev = N..
-        self.ret = float('inf')
+c_ Solution:
+    ___ - ):
+        prev = N..
+        ret = float('inf')
 
     ___ minDiffInBST(self, root: TreeNode) -> int:
         """
@@ -48,9 +48,9 @@ class Solution:
         __ n.. root:
             r..
 
-        self.minDiffInBST(root.left)
-        __ self.prev:
-            self.ret = m..(self.ret, root.val - self.prev)
-        self.prev = root.val
-        self.minDiffInBST(root.right)
-        r.. self.ret
+        minDiffInBST(root.left)
+        __ prev:
+            ret = m..(ret, root.val - prev)
+        prev = root.val
+        minDiffInBST(root.right)
+        r.. ret

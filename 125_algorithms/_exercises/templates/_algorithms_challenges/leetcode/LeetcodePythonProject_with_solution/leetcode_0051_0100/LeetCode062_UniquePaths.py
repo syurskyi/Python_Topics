@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ uniquePaths(self, m, n):
         """
         :type m: int
@@ -42,7 +42,7 @@ class Solution(object):
                     dp[i][j] = dp[i-1][j] + dp[i][j-1]
         r.. dp[-1][-1]
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

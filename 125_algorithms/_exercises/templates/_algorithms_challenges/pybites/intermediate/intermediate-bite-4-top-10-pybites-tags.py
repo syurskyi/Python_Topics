@@ -15,19 +15,19 @@ Keep calm and code in Python! :)
 _______ os
 ____ collections _______ Counter
 _______ urllib.request
-_______ re
+_______ __
 
 # prep
 DIR = os.getenv('TMP', '/tmp')
 FILENAME = "feed.txt"
-tempfile = os.path.join(DIR, FILENAME)
+tempfile = os.path.j..(DIR, FILENAME)
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )
 
 with open(tempfile) as f:
-    content = f.read().lower()
+    content = f.read().l..
 
 
 # start coding
@@ -35,7 +35,7 @@ with open(tempfile) as f:
 ___ get_pybites_top_tags(n=10):
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
-    match = re.findall(r'<category>([a-z]+)<\/category>', content)
+    match = __.findall(r'<category>([a-z]+)<\/category>', content)
     c = Counter(match)
     r..(c.most_common(10))
 

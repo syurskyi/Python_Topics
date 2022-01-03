@@ -20,7 +20,7 @@ ___ _make_emoji_mapping():
        - return dict with keys=emojis, values=names"""
 
 
-    mapping = {}
+    mapping    # dict
 
 
     ___ i __ r..(START_EMOJI_RANGE,sys.maxunicode + 1):
@@ -37,14 +37,14 @@ ___ _make_emoji_mapping():
 ___ find_emoji(term):
     """Return emojis and their texts that match (case insensitive)
        term, print matches to console"""
-    term = term.lower()
+    term = term.l..
 
     emoji_mapping = _make_emoji_mapping()
 
     # ... your turn ...
 
-    ___ emoji,meaning __ emoji_mapping.items():
-        __ term __ meaning.lower():
+    ___ emoji,meaning __ emoji_mapping.i..:
+        __ term __ meaning.l..:
             print(meaning,emoji)
 
 

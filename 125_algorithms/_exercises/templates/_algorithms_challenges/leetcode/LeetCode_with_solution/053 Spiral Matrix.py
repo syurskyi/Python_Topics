@@ -14,7 +14,7 @@ You should return [1,2,3,6,9,8,7,4,5].
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ spiralOrder(self, matrix):
         """
               top

@@ -1,7 +1,7 @@
 _______ bisect
 
 
-class Solution(object):
+c_ Solution(object):
   ___ maxSumSubmatrix(self, matrix, k):
     """
     :type matrix: List[List[int]]

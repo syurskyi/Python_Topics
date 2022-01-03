@@ -1,25 +1,25 @@
-class StockSpanner(object):
+c_ StockSpanner(object):
 
-    ___ __init__(self):
-        self.prices    # list
-        self.dp    # list
-        self.idx = 0
+    ___ - ):
+        prices    # list
+        dp    # list
+        idx = 0
 
     ___ next(self, price):
         """
         :type price: int
         :rtype: int
         """
-        __ self.idx __ 0 o. self.prices[-1] > price:
-            self.dp.a..(1)
+        __ idx __ 0 o. prices[-1] > price:
+            dp.a..(1)
         ____:
-            i = self.idx -1
-            w.... i >= 0 a.. price >= self.prices[i]:
-                i -= self.dp[i]
-            self.dp.a..(self.idx-i)
-        self.prices.a..(price)
-        self.idx += 1
-        r.. self.dp[-1]
+            i = idx -1
+            w.... i >= 0 a.. price >= prices[i]:
+                i -= dp[i]
+            dp.a..(idx-i)
+        prices.a..(price)
+        idx += 1
+        r.. dp[-1]
 
 # Your StockSpanner object will be instantiated and called as such:
 # obj = StockSpanner()

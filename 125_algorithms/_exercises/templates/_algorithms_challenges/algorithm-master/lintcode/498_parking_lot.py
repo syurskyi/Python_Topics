@@ -5,72 +5,72 @@ VEHICLE_ID = {
 }
 
 
-class Vehicle:
-    ___ __init__(self):
-        self.type = ''
-        self.costs = 0
-        self.at_level = N..
-        self.at_spots = N..
+c_ Vehicle:
+    ___ - ):
+        t.. = ''
+        costs = 0
+        at_level = N..
+        at_spots = N..
 
-    ___ unpark(self):
-        __ n.. self.at_level:
+    ___ unpark
+        __ n.. at_level:
             r..
 
-        ___ x, y __ self.at_spots:
-            self.at_level.spots[x, y] = N..
+        ___ x, y __ at_spots:
+            at_level.spots[x, y] = N..
 
-        self.at_level = N..
-        self.at_spots = N..
-
-
-class Motorcycle(Vehicle):
-    ___ __init__(self):
-        self.type = VEHICLE_ID['MOTOCYCLE']
-        self.costs = 1
+        at_level = N..
+        at_spots = N..
 
 
-class Car(Vehicle):
-    ___ __init__(self):
-        self.type = VEHICLE_ID['CAR']
-        self.costs = 1
+c_ Motorcycle(Vehicle):
+    ___ - ):
+        t.. = VEHICLE_ID['MOTOCYCLE']
+        costs = 1
 
 
-class Bus(Vehicle):
-    ___ __init__(self):
-        self.type = VEHICLE_ID['BUS']
-        self.costs = 5
+c_ Car(Vehicle):
+    ___ - ):
+        t.. = VEHICLE_ID['CAR']
+        costs = 1
 
 
-class Level:
-    ___ __init__(self, id, m, n):
-        self.id = id
-        self.m = m
-        self.n = n
-        self.spots = {}
+c_ Bus(Vehicle):
+    ___ - ):
+        t.. = VEHICLE_ID['BUS']
+        costs = 5
+
+
+c_ Level:
+    ___ - , id, m, n):
+        id = id
+        m = m
+        n = n
+        spots    # dict
 
     ___ get_range(self, vehicle_type):
-        quarter = self.n // 4
+        quarter = n // 4
 
         __ vehicle_type __ VEHICLE_ID['BUS']:
-            r.. r..(quarter * 3, self.n)
+            r.. r..(quarter * 3, n)
 
         __ vehicle_type __ VEHICLE_ID['CAR']:
-            r.. r..(quarter, self.n)
+            r.. r..(quarter, n)
 
-        r.. r..(self.n)
+        r.. r..(n)
 
     ___ park_vehicle(self, vehicle):
         """
         :type vehicle: Vehicle
         :rtype: bool
         """
-        RANGE = self.get_range(vehicle.type)
+        RANGE = get_range(vehicle.t..)
 
-        ___ x __ r..(self.m):
+        ___ x __ r..(m):
             gotcha = 0
 
             ___ y __ RANGE:
-                __ self.spots.get((x, y)):
+                __ spots.get((x, y)):
                     gotcha = 0
                     continue
 
@@ -81,23 +81,23 @@ class Level:
 
                     ___ i __ r..(y, y - gotcha, -1):
                         spots.a..((x, i))
-                        self.spots[x, i] = vehicle
+                        spots[x, i] = vehicle
 
                     vehicle.at_level = self
                     vehicle.at_spots = spots
-                    r.. True
+                    r.. T..
 
-        r.. False
+        r.. F..
 
 
-class ParkingLot:
-    ___ __init__(self, k, m, n):
+c_ ParkingLot:
+    ___ - , k, m, n):
         """
         :type k: int, number of levels
         :type m: int, each level has m rows of spots
         :type n: int, each row has n spots
         """
-        self.levels = [Level(i, m, n) ___ i __ r..(k)]
+        levels = [Level(i, m, n) ___ i __ r..(k)]
 
     ___ park_vehicle(self, vehicle):
         """
@@ -106,11 +106,11 @@ class ParkingLot:
         """
         __ any(
             level.park_vehicle(vehicle)
-            ___ level __ self.levels
+            ___ level __ levels
         ):
-            r.. True
+            r.. T..
 
-        r.. False
+        r.. F..
 
     ___ unpark_vehicle(self, vehicle):
         """

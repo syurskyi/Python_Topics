@@ -26,7 +26,7 @@ INVALID = -1
 QUEEN = 1
 DEFAULT = 0
 directions = [(+1, +1), (-1, -1), (-1, +1), (+1, -1)]
-class Solution:
+c_ Solution:
     ___ solveNQueens(self, n):
         """
         backtracking
@@ -35,8 +35,8 @@ class Solution:
         """
         result    # list
         current = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
-        self.backtrack(0, current, result)
-        r.. self.transform2string(result)
+        backtrack(0, current, result)
+        r.. transform2string(result)
 
     ___ backtrack(self, queen_index, current, result):
         """
@@ -98,7 +98,7 @@ class Solution:
 
             # dfs
             # backtrack by using clone of the board configuration
-            self.backtrack(queen_index+1, new_config, result)
+            backtrack(queen_index+1, new_config, result)
 
 
     ___ transform2string(self, result):
@@ -107,7 +107,7 @@ class Solution:
             current    # list
             ___ row __ configuration:
                 row = map(l.... x: "." __ x__-1 ____ "Q", row)
-                row = "".join(row)
+                row = "".j..(row)
                 current.a..(row)
             string_result.a..(current)
         r.. string_result

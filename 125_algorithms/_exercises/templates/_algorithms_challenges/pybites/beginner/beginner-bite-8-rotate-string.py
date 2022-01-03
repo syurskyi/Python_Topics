@@ -26,7 +26,7 @@ ___ rotate(string, n):
     """
     d = collections.deque(string)
     d.rotate(-n)
-    result = ''.join(d)
+    result = ''.j..(d)
     print(result)
 
 

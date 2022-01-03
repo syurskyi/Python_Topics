@@ -4,20 +4,20 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-class STreeNode(object):
-    ___ __init__(self, left, right, sumVal=0):
-        self.start = left
-        self.end = right
-        self.sumVal = sumVal
-        self.leftChild = N..
-        self.rightChild = N..
+c_ STreeNode(object):
+    ___ - , left, right, sumVal=0):
+        start = left
+        end = right
+        sumVal = sumVal
+        leftChild = N..
+        rightChild = N..
 
-class NumArray(object):
-    ___ __init__(self, nums):
+c_ NumArray(object):
+    ___ - , nums):
         __ n.. nums:
-            self.root = N..
+            root = N..
         ____:
-            self.root = self.buildTree(nums, 0, l..(nums)-1)
+            root = buildTree(nums, 0, l..(nums)-1)
     
     ___ buildTree(self, nums, i, j):
         __ n.. nums o. i > j:
@@ -26,29 +26,29 @@ class NumArray(object):
             r.. STreeNode(i, j, nums[i])
         curr = STreeNode(i, j)
         mid = i+(j-i)//2
-        curr.leftChild = self.buildTree(nums, i, mid)
-        curr.rightChild = self.buildTree(nums, mid+1, j)
+        curr.leftChild = buildTree(nums, i, mid)
+        curr.rightChild = buildTree(nums, mid+1, j)
         curr.sumVal = curr.leftChild.sumVal + curr.rightChild.sumVal
         r.. curr
     
     ___ update(self, i, val):
-        self.updateHelper(self.root, i, val)
+        updateHelper(root, i, val)
     
     ___ updateHelper(self, root, i, val):
         __ n.. root:
             r..
         mid = root.start+(root.end-root.start)//2
         __ i <= mid:
-            self.updateHelper(root.leftChild, i, val)
+            updateHelper(root.leftChild, i, val)
         ____:
-            self.updateHelper(root.rightChild, i, val)
+            updateHelper(root.rightChild, i, val)
         __ root.start __ i a.. root.end __ i:
             root.sumVal = val
             r..
         root.sumVal = root.leftChild.sumVal + root.rightChild.sumVal
     
     ___ sumRange(self, i, j):
-        r.. self.sumRangeHelper(self.root, i, j)
+        r.. sumRangeHelper(root, i, j)
     
     ___ sumRangeHelper(self, root, i, j):
         __ n.. root o. i > j o. j < root.start o. i > root.end:
@@ -56,7 +56,7 @@ class NumArray(object):
         __ i __ root.start a.. j __ root.end:
             r.. root.sumVal
         mid = root.start + (root.end-root.start)//2
-        result = self.sumRangeHelper(root.leftChild, i, m..(j, mid)) +\
-            self.sumRangeHelper(root.rightChild, max(i, mid+1), j)
+        result = sumRangeHelper(root.leftChild, i, m..(j, mid)) +\
+            sumRangeHelper(root.rightChild, max(i, mid+1), j)
         r.. result
     

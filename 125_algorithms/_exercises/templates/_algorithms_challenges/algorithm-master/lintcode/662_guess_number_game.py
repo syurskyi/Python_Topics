@@ -6,7 +6,7 @@ you can call Guess.guess(num)
 """
 
 
-class Solution:
+c_ Solution:
     ___ guessNumber(self, n):
         """
         :type n: int

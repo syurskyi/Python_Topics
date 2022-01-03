@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   # brutal force TLE
   ___ _shortestPalindrome(self, s):
     """
@@ -10,10 +10,10 @@ class Solution(object):
       start, end = 0, l..(cand) - 1
       w.... start < end:
         __ cand[start] != cand[end]:
-          r.. False
+          r.. F..
         start += 1
         end -= 1
-      r.. True
+      r.. T..
 
     n = l..(s)
     ans = s[::-1] + s

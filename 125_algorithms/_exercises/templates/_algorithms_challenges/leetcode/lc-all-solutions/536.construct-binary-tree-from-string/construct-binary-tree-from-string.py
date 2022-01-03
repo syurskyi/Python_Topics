@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ str2tree(self, s):
     """
     :type s: str
@@ -25,7 +25,7 @@ class Solution(object):
           cnt -= 1
           __ cnt __ 0:
             __ n.. root.left:
-              root.left = self.str2tree(s[start:i])
+              root.left = str2tree(s[start:i])
             ____:
-              root.right = self.str2tree(s[start:i])
+              root.right = str2tree(s[start:i])
       r.. root __ root ____ TreeNode(s)

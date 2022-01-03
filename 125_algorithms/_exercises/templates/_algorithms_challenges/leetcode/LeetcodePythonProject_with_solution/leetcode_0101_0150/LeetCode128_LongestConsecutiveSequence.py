@@ -4,7 +4,7 @@ Created on Feb 7, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ longestConsecutive(self, nums):
         """
         :type nums: List[int]
@@ -20,13 +20,13 @@ class Solution(object):
                 maxLen = max(y-x, maxLen)
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [100, 4, 200, 1, 3, 2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.longestConsecutive(nums)
+            result = longestConsecutive(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

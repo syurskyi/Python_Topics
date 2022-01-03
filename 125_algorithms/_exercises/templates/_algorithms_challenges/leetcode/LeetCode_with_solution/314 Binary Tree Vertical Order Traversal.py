@@ -4,25 +4,25 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution(object):
+c_ Solution(object):
     ___ verticalOrder(self, root):
         """
         O(N)
         :type root: TreeNode
         :rtype: List[List[int]]
         """
-        l = self.leftmost(root, 0)
-        r = self.rightmost(root, 0)
+        l = leftmost(root, 0)
+        r = rightmost(root, 0)
 
         ret = [[] ___ _ __ xrange(r-l-1)]
-        self.bfs(root, -l-1, ret)
+        bfs(root, -l-1, ret)
         r.. ret
 
     ___ bfs(self, cur, col, ret):
@@ -42,12 +42,12 @@ class Solution(object):
 
     ___ leftmost(self, cur, l):
         __ n.. cur: r.. l
-        r.. m..(self.leftmost(cur.left, l-1), self.leftmost(cur.right, l+1))
+        r.. m..(leftmost(cur.left, l-1), leftmost(cur.right, l+1))
 
     ___ rightmost(self, cur, r):
         __ n.. cur: r.. r
-        r.. max(self.rightmost(cur.left, r-1), self.rightmost(cur.right, r+1))
+        r.. max(rightmost(cur.left, r-1), rightmost(cur.right, r+1))
 
     ___ sidemost(self, cur, p, f):
         __ n.. cur: r.. p
-        r.. f(self.sidemost(cur.left, p-1, f), self.sidemost(cur.right, p+1, f))
+        r.. f(sidemost(cur.left, p-1, f), sidemost(cur.right, p+1, f))

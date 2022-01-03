@@ -8,8 +8,8 @@ BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = os.getenv("TMP", "/tmp")
 
 fname = 'movie_metadata.csv'
-remote = os.path.join(BASE_URL, fname)
-local = os.path.join(TMP, fname)
+remote = os.path.j..(BASE_URL, fname)
+local = os.path.j..(TMP, fname)
 urlretrieve(remote, local)
 
 MOVIE_DATA = local
@@ -69,7 +69,7 @@ ___ get_average_scores(directors):
     
     result    # list
 
-    ___ director,movies __ directors.items():
+    ___ director,movies __ directors.i..:
         __ l..(movies) >= MIN_MOVIES:
             mean_score = calc_mean_score(movies)
             result.a..((director,mean_score))

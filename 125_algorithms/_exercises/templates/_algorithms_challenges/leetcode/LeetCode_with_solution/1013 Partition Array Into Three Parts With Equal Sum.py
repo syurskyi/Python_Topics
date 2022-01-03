@@ -30,11 +30,11 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ canThreePartsEqualSum(self, A: List[int]) -> bool:
         s = s..(A)
         __ s % 3 != 0:
-            r.. False
+            r.. F..
 
         target = s // 3
         count = 0
@@ -52,4 +52,4 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]) __ True
+    ... Solution().canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]) __ T..

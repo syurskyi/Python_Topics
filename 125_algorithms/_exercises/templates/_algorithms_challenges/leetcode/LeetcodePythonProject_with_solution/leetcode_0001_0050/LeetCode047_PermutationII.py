@@ -3,7 +3,7 @@ Created on Jan 19, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ permuteUnique(self, nums):
         """
         :type nums: List[int]
@@ -12,7 +12,7 @@ class Solution(object):
         __ n.. nums: r.. []
         __ nums __ []: r.. [[]]
         res    # list
-        self.dfs(s..(nums), [], res)
+        dfs(s..(nums), [], res)
         r.. res
     
     ___ dfs(self, nums, curr, res):
@@ -23,17 +23,17 @@ class Solution(object):
             __ i > 0 a.. nums[i] __ nums[i-1]:
                 continue
             curr.a..(num)
-            self.dfs(nums[:i]+nums[i+1:], curr, res)
+            dfs(nums[:i]+nums[i+1:], curr, res)
             curr.pop()
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1,1,2],
             [3,3,0,3],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.permuteUnique(nums)
+            result = permuteUnique(nums)
             print('result: %s' % result)
             print('-='*15+'-')
 

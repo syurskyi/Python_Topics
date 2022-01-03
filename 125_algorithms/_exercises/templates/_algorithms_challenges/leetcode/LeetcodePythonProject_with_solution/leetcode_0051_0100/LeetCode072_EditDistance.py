@@ -4,7 +4,7 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minDistance(self, word1, word2):
         """
         :type word1: str
@@ -31,7 +31,7 @@ class Solution(object):
                     dp[i+1][j+1] = m..((r.., insert, delete))
         r.. dp[-1][-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('', 'a'),
             ('horse', 'rose'),
@@ -40,7 +40,7 @@ class Solution(object):
         ___ word1, word2 __ testCases:
             print('word1: %s' % (word1))
             print('word2: %s' % (word2))
-            result = self.minDistance(word1, word2)
+            result = minDistance(word1, word2)
             print('result: %s' % (result))
             print('-='*15+'-')
 

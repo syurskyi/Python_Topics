@@ -3,7 +3,7 @@ Created on Sep 10, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ peakIndexInMountainArray(self, A):
         """
         :type A: List[int]
@@ -33,13 +33,13 @@ class Solution(object):
             val = max(val, num)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [0,1,0],
             [0,2,1,0],
         ]
         ___ a __ testCases:
-            res = self.peakIndexInMountainArray(a)
+            res = peakIndexInMountainArray(a)
             print('result: %s' % res)
             print('-='*30+'-')
 

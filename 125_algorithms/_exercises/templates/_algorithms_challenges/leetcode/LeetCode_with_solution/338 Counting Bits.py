@@ -17,7 +17,7 @@ language.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ countBits(self, num):
         """
         Dynamic programming: make use of what you have produced already

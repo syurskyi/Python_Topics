@@ -12,7 +12,7 @@ Find the minimum element.
 The array may contain duplicates.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ findMin(self, nums):
         """
         :type nums: List[int]

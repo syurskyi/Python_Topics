@@ -1,7 +1,7 @@
 _______ os
 ____ pathlib _______ Path
 _______ bisect
-_______ re
+_______ __
 ____ urllib.request _______ urlretrieve
 ____ bs4 _______ BeautifulSoup as Soup
 
@@ -14,41 +14,41 @@ URL = ("https://bites-data.s3.us-east-2.amazonaws.com/"
        "minecraft-enchantment.html")
 
 
-class Enchantment:
+c_ Enchantment:
     """Minecraft enchantment class
     
     Implements the following: 
         id_name, name, max_level, description, items
     """
 
-    ___ __init__(self,id_name,name,max_level,description):
-        self.id_name = id_name
-        self.name = name
-        self.max_level = max_level
-        self.description = description
-        self.items    # list
+    ___ - ,id_name,name,max_level,description):
+        id_name = id_name
+        name = name
+        max_level = max_level
+        description = description
+        items    # list
 
-    ___ __str__(self):
-        r.. f"{self.name} ({self.max_level}): {self.description}"
+    ___ __str__
+        r.. f"{name} ({max_level}): {description}"
     
-class Item:
+c_ Item:
     """Minecraft enchantable item class
     
     Implements the following: 
         name, enchantments
     """
 
-    ___ __init__(self,name):
-        self.name = name
-        self.enchantments    # list
+    ___ - ,name):
+        name = name
+        enchantments    # list
 
     ___ add_enchantment(self,enchantment):
-        self.enchantments.a..(enchantment)
+        enchantments.a..(enchantment)
     
 
-    ___ __str__(self):
-        string = self.name.r..('_',' ').t.. + ': '
-        sorted_enchantments = s..(self.enchantments,key=l.... x: x.id_name)
+    ___ __str__
+        string = name.r..('_',' ').t.. + ': '
+        sorted_enchantments = s..(enchantments,key=l.... x: x.id_name)
         ___ enchantment __ sorted_enchantments:
             string += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
         r.. string
@@ -59,7 +59,7 @@ ___ generate_enchantments(soup):
     With the key being the id_name of the enchantment.
     """
 
-    enchantment_dict = {}
+    enchantment_dict    # dict
     mapping = {'I': 1,'II': 2,'III': 3,'IV': 4,'V': 5}
     table = soup.find('table',id="minecraft_items")
     all_values    # list
@@ -72,7 +72,7 @@ ___ generate_enchantments(soup):
         
         image_source = table_row.find('img')['data-src']
         last_part = image_source.s..('/')[-1]
-        last_part = re.sub(r'\.|png|sm|enchanted|iron','',last_part)
+        last_part = __.sub(r'\.|png|sm|enchanted|iron','',last_part)
         
         items = last_part.s...s..('_')
         valid_items    # list
@@ -85,8 +85,8 @@ ___ generate_enchantments(soup):
                 ____:
                     valid_items.a..(item)
                                                
-        id_name = re.search(r'\((.+)\)',values[0]).group(1)
-        name= re.sub(r'\(.+\)','',values[0])
+        id_name = __.s..(r'\((.+)\)',values[0]).group(1)
+        name= __.sub(r'\(.+\)','',values[0])
         level = int(mapping[values[1]])
         description = values[2]
 
@@ -110,10 +110,10 @@ ___ generate_items(data):
     """
     
 
-    item_mapping = {}
+    item_mapping    # dict
     
 
-    ___ enchantment_id,enchantment __ data.items():
+    ___ enchantment_id,enchantment __ data.i..:
 
         ___ item __ enchantment.items:
             __ item n.. __ item_mapping:
@@ -123,7 +123,7 @@ ___ generate_items(data):
             item_mapping[item].add_enchantment(enchantment)
     
     
-    item_mapping = d..(s..(item_mapping.items(),key=l.... x:x[0]))
+    item_mapping = d..(s..(item_mapping.i..,key=l.... x:x[0]))
 
     r.. item_mapping
 

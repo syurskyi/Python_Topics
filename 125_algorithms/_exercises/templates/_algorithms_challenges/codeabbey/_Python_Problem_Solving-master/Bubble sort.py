@@ -8,7 +8,7 @@ pass_count = 0
 # first loop is to traverse all elements N-1 times and it acts like pass_count
 # boolean is required to check whether the array is sorted or no
 ___ i __ r..(0, l..(a)-1):
-    swap = False
+    swap = F..
     #second loop traverse through all elements checking for greater number and sorting them accordingly
     ___ j __ r..(l..(a)-1):
         #print('\n',i,'comparing ',a[j],'with jth term', a[j+1])
@@ -16,9 +16,9 @@ ___ i __ r..(0, l..(a)-1):
             a[j],a[j+1] = a[j+1],a[j]
             swap_count += 1
             #print('swaping',swap_count)
-            swap= True
+            swap= T..
             #print(a)
-    __ swap __ False:
+    __ swap __ F..:
         #print('im breaking up')
         break
             

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ largestDivisibleSubset(self, A):
         """
         :type A: List[int]

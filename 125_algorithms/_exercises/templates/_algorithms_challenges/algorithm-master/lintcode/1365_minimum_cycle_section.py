@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param array: an integer array
     @return: the length of the minimum cycle section
@@ -10,11 +10,11 @@ class Solution:
         n = l..(array)
 
         ___ size __ r..(1, n + 1):
-            gotcha = True
+            gotcha = T..
 
             ___ i __ r..(size):
                 __ any(array[i] != array[j] ___ j __ r..(i + size, n, size)):
-                    gotcha = False
+                    gotcha = F..
 
             __ gotcha:
                 r.. size

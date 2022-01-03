@@ -12,19 +12,19 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-class Node(object):
+c_ Node(object):
     """
     Data structure is key
     """
-    ___ __init__(self, origin, q):
-        self.origin = origin
-        self.q = q
+    ___ - , origin, q):
+        origin = origin
+        q = q
 
     ___ __cmp__(self, other):
-        r.. self.q[0] - other.q[0]
+        r.. q[0] - other.q[0]
 
 
-class Solution(object):
+c_ Solution(object):
     ___ nthUglyNumber(self, n):
         """
         Prime factor: 2, 3, 5

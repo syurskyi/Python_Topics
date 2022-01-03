@@ -1,7 +1,7 @@
-_______ re
+_______ __
 
-re_cons = re.compile('^([^aeiou]?qu|[^aeiou]+)([a-z]*)')
-re_vowel = re.compile('^([aeiou]|y[^aeiou]|xr)[a-z]*')
+re_cons = __.c..('^([^aeiou]?qu|[^aeiou]+)([a-z]*)')
+re_vowel = __.c..('^([aeiou]|y[^aeiou]|xr)[a-z]*')
 
 
 ___ split_initial_consonant_sound(word):
@@ -20,4 +20,4 @@ ___ translate(text):
         ____:
             head, tail = split_initial_consonant_sound(word)
             words.a..(tail + head + 'ay')
-    r.. ' '.join(words)
+    r.. ' '.j..(words)

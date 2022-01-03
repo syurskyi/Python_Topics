@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxRotateFunction(self, A):
     """
     :type A: List[int]

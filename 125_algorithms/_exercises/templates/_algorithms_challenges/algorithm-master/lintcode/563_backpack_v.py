@@ -1,7 +1,7 @@
 """
 DP: MLE
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an integer array and all positive numbers
     @param: target: An integer
@@ -27,7 +27,7 @@ class Solution:
 """
 DP: optimized space complexity
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an integer array and all positive numbers
     @param: target: An integer

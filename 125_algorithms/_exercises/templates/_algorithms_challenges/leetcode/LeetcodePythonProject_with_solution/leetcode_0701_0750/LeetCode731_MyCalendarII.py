@@ -3,10 +3,10 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-class MyCalendarTwo(object):
-    ___ __init__(self):
-        self.overlaps    # list
-        self.calendar    # list
+c_ MyCalendarTwo(object):
+    ___ - ):
+        overlaps    # list
+        calendar    # list
 
     ___ book(self, start, end):
         """
@@ -14,14 +14,14 @@ class MyCalendarTwo(object):
         :type end: int
         :rtype: bool
         """
-        ___ i, j __ self.overlaps:
+        ___ i, j __ overlaps:
             __ start < j a.. end > i:
-                r.. False
-        ___ i, j __ self.calendar:
+                r.. F..
+        ___ i, j __ calendar:
             __ start < j a.. end > i:
-                self.overlaps.a..((max(start, i), m..(end, j)))
-        self.calendar.a..((start, end))
-        r.. True
+                overlaps.a..((max(start, i), m..(end, j)))
+        calendar.a..((start, end))
+        r.. T..
 
 __ __name__ __ '__main__':
     pass

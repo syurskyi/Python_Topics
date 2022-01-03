@@ -3,7 +3,7 @@ http://www.cnblogs.com/sherylwang/p/5635665.html
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: A list of integers
     @param: k: An integer denote to find k non-overlapping subarrays

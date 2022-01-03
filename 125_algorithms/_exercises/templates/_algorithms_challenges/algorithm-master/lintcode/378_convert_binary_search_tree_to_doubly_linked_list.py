@@ -13,7 +13,7 @@ class DoublyListNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: The root of tree
     @return: the head of doubly list node

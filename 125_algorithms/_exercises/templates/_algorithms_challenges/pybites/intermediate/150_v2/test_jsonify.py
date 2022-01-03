@@ -11,12 +11,12 @@ ___ output():
 
 
 ___ test_return_type(output):
-    ... type(output) __ s..
+    ... t..(output) __ s..
 
 
 ___ test_extracted_data_is_correct(output):
     data = json.loads(output)
-    ... type(data) __ l..
+    ... t..(data) __ l..
     ... l..(data) __ 10
     ___ row __ [{"id": "1", "first_name": "Junie", "last_name": "Kybert",
                  "email": "jkybert0@army.mil"},

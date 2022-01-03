@@ -1,31 +1,31 @@
-class StackUnderflowError(Exception):
+c_ StackUnderflowError(Exception):
     pass
 
 
 ___ is_integer(string):
     try:
         int(string)
-        r.. True
+        r.. T..
     except ValueError:
-        r.. False
+        r.. F..
 
 
 ___ evaluate(input_data):
     __ n.. input_data:
         r.. []
-    defines = {}
+    defines    # dict
     w.... input_data[0][:1] __ ':':
         values = input_data.pop(0).s.. 
         values.pop()
         values.pop(0)
-        key = values.pop(0).lower()
+        key = values.pop(0).l..
         __ is_integer(key):
             raise ValueError("Integers cannot be redefined")
         defines[key] = values
     stack    # list
     input_data = input_data[-1].s.. 
     w.... any(input_data):
-        word = input_data.pop(0).lower()
+        word = input_data.pop(0).l..
         try:
             __ is_integer(word):
                 stack.a..(int(word))

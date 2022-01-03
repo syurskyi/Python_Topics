@@ -68,7 +68,7 @@ slightly smaller time limit.)
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ orderOfLargestPlusSign(self, N: int, mines: List[List[int]]) -> int:
         """
         < ^ > V four directions

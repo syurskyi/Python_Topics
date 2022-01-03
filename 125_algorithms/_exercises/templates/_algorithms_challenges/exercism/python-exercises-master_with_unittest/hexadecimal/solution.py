@@ -5,7 +5,7 @@ valid_hexchars = set('0123456789abcdef')
 
 
 ___ hexa(hexstring):
-    s = hexstring.lower()
+    s = hexstring.l..
     __ n.. s o. set(s) - valid_hexchars:
         raise ValueError('Invalid hexadecimal string')
     hexchars_as_ints = [

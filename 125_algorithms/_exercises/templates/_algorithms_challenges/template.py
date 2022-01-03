@@ -16,9 +16,9 @@ checkdupsorting(myarray)
 
 ___ getfirstnonrepeated(myarray):
     print("Given array:", myarray)
-    tab = {}  # hash
+    tab    # dict  # hash
     # #print "tab created:", tab
-    ___ ele __ myarray.lower():
+    ___ ele __ myarray.l..:
         __ ele __ tab:
             tab[ele] += 1
         ____ ele != " ":
@@ -27,7 +27,7 @@ ___ getfirstnonrepeated(myarray):
             tab[ele] = 0
     # print "in loop:",tab,"for","'",ele,"'","in",myarray
 
-    ___ ele __ myarray.lower():
+    ___ ele __ myarray.l..:
         __ tab[ele] __ 1:
             print("the first non repeated character is: %s" % (ele))
             r.. ele
@@ -42,14 +42,14 @@ getfirstnonrepeated("abccdef")
 ____ nose.tools _______ assert_equal
 
 
-class AnagramTest(object):
+c_ AnagramTest(object):
 
     ___ test(self, sol):
-        assert_equal(sol('go go go', 'gggooo'), True)
-        assert_equal(sol('abc', 'cba'), True)
-        assert_equal(sol('hi man', 'hi     man'), True)
-        assert_equal(sol('aabbcc', 'aabbc'), False)
-        assert_equal(sol('123', '1 2'), False)
+        assert_equal(sol('go go go', 'gggooo'), T..)
+        assert_equal(sol('abc', 'cba'), T..)
+        assert_equal(sol('hi man', 'hi     man'), T..)
+        assert_equal(sol('aabbcc', 'aabbc'), F..)
+        assert_equal(sol('123', '1 2'), F..)
         print("ALL TEST CASES PASSED")
 
 
@@ -70,7 +70,7 @@ t.test(anagram2)
 ___ balance_check(s):
     # Check is even number of brackets
     __ l..(s) % 2 != 0:
-        r.. False
+        r.. F..
 
     # Set of opening brackets
     opening = set('([{')
@@ -92,14 +92,14 @@ ___ balance_check(s):
 
             # Check that there are parentheses in Stack
             __ l..(stack) __ 0:
-                r.. False
+                r.. F..
 
             # Check the last open parenthesis
             last_open = stack.pop()
 
             # Check if it has a closing match
             __ (last_open, paren) n.. __ matches:
-                r.. False
+                r.. F..
 
     r.. l..(stack) __ 0
 
@@ -120,12 +120,12 @@ RUN THIS CELL TO TEST YOUR SOLUTION
 ____ nose.tools _______ assert_equal
 
 
-class TestBalanceCheck(object):
+c_ TestBalanceCheck(object):
 
     ___ test(self, sol):
-        assert_equal(sol('[](){([[[]]])}('), False)
-        assert_equal(sol('[{{{(())}}}]((()))'), True)
-        assert_equal(sol('[[[]])]'), False)
+        assert_equal(sol('[](){([[[]]])}('), F..)
+        assert_equal(sol('[{{{(())}}}]((()))'), T..)
+        assert_equal(sol('[[[]])]'), F..)
         print 'ALL TEST CASES PASSED'
 
 

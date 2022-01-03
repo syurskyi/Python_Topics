@@ -32,7 +32,7 @@ ____ typing _______ List
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ addToArrayForm(self, A: List[int], K: int) -> List[int]:
         """
         carry

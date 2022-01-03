@@ -4,7 +4,7 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ updateMatrix(self, matrix):
         """
         :type matrix: List[List[int]]

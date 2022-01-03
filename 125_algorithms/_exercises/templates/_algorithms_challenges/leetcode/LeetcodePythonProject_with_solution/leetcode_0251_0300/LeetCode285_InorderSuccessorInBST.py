@@ -5,19 +5,19 @@ Created on Mar 6, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ inorderSuccessor(self, root, p):
         __ n.. root: r.. N..
         __ root.val <= p.val:
-            r.. self.inorderSuccessor(root.right, p)
+            r.. inorderSuccessor(root.right, p)
         ____:
-            left = self.inorderSuccessor(root.left, p)
+            left = inorderSuccessor(root.left, p)
             __ left:
                 r.. left
             ____:

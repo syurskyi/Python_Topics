@@ -12,5 +12,5 @@ ___ two_printers():
         answer_2 = int(max(a * x, (b + 1) * y))
 
         answer.a..(s..(m..(answer_1, answer_2)))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 two_printers()

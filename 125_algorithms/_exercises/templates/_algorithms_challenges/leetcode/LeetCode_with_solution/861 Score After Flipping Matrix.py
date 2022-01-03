@@ -27,7 +27,7 @@ A[i][j] is 0 or 1.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ matrixScore(self, A: List[List[int]]) -> int:
         """
         MSB > sum of remaining digit

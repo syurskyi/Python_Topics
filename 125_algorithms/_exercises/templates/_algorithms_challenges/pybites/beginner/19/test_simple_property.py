@@ -1,20 +1,20 @@
-____ d__ _______ t..
-_______ i___
-
-____ simple_property _______ Promo, NOW
-
-
-___ test_promo_expired():
-    past_time = NOW - t..(seconds=3)
-    twitter_promo = Promo('twitter', past_time)
-    ... twitter_promo.expired
-
-
-___ test_promo_not_expired():
-    future_date = NOW + t..(days=1)
-    newsletter_promo = Promo('newsletter', future_date)
-    ... n.. newsletter_promo.expired
-
-
-___ test_uses_property():
-    ... 'property' __ i___.getsource(Promo)
+# ____ d__ _______ t..
+# _______ i___
+#
+# ____ s.. _______ P.. N..
+#
+#
+# ___ test_promo_expired
+#     past_time  N.. - t.. s.._3
+#     twitter_promo  P.. 'twitter' ?
+#     ... ?.e..
+#
+#
+# ___ test_promo_not_expired
+#     future_date  N.. + t.. d.._1
+#     newsletter_promo  P.. 'newsletter' ?
+#     ... n.. ?.e..
+#
+#
+# ___ test_uses_property
+#     ... 'property' __ i___.g.. ?

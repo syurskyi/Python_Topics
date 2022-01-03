@@ -3,7 +3,7 @@ Created on Mar 14, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ monotoneIncreasingDigits(self, N):
         """
         :type N: int
@@ -23,7 +23,7 @@ class Solution(object):
         res = res.lstrip('0')
         r.. int(res) __ res != '' ____ 0
     
-    ___ test(self):
+    ___ test
         testCases = [
             10,
             1111,
@@ -34,7 +34,7 @@ class Solution(object):
         ]
         ___ N __ testCases:
             print('N: %s' % N)
-            result = self.monotoneIncreasingDigits(N)
+            result = monotoneIncreasingDigits(N)
             print('result: %s' % result)
             print('-='*30+'-')
 

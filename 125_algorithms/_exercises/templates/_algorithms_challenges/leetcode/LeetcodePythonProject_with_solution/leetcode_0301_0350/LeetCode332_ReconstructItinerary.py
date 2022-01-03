@@ -6,25 +6,25 @@ Created on Mar 19, 2017
 
 _______ heapq
 
-class Solution(object):
+c_ Solution(object):
     ___ findItinerary_orig(self, tickets):
         __ n.. tickets:
             r.. []
-        hashmap = {}
+        hashmap    # dict
         ___ t1, t2 __ tickets:
             __ t1 n.. __ hashmap:
                 hashmap[t1]    # list
             heapq.heappush(hashmap[t1], t2)
         result    # list
-        self.dfs(result, hashmap, 'JFK')
+        dfs(result, hashmap, 'JFK')
         r.. result
         
     ___ dfs(self, result, hashmap, elem):
         w.... hashmap.get(elem):
-            self.dfs(result, hashmap, heapq.heappop(hashmap[elem]))
+            dfs(result, hashmap, heapq.heappop(hashmap[elem]))
         result.insert(0, elem)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]],
             [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]],
@@ -32,7 +32,7 @@ class Solution(object):
         ]
         ___ tickets __ testCases:
             print('tickets: %s' % tickets)
-            result = self.findItinerary(tickets)
+            result = findItinerary(tickets)
             print('result: %s' % result)
             print('-='*20+'-')
 

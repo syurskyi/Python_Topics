@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ firstUniqChar(self, s):
         """
         :type s: str
@@ -7,7 +7,7 @@ class Solution:
         __ n.. s:
             r.. -1
 
-        freq = {}
+        freq    # dict
 
         ___ c __ s:
             freq[c] = freq.get(c, 0) + 1

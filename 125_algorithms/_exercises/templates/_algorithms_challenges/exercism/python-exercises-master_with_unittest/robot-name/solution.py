@@ -1,41 +1,41 @@
 _______ random
 
 
-class Robot(object):
+c_ Robot(object):
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    ___ __init__(self):
-        self._name = N..
-        self._past_names = set()
+    ___ - ):
+        _name = N..
+        _past_names = set()
 
-    ___ prefix(self):
-        r.. ''.join([
-            random.choice(self.alphabet)
+    ___ prefix
+        r.. ''.j..([
+            random.choice(alphabet)
             ___ _ __ r..(0, 2)
         ])
 
-    ___ suffix(self):
-        r.. ''.join([
+    ___ suffix
+        r.. ''.j..([
             s..(random.choice(r..(0, 10)))
             ___ _ __ r..(0, 3)
         ])
 
-    ___ get_name(self):
-        __ n.. self._name:
+    ___ get_name
+        __ n.. _name:
 
             # Collision detection
             w... T...
-                self._name = self.prefix() + self.suffix()
-                __ self._name n.. __ self._past_names:
-                    self._past_names.add(self._name)
+                _name = prefix() + suffix()
+                __ _name n.. __ _past_names:
+                    _past_names.add(_name)
                     break
 
-        r.. self._name
+        r.. _name
 
-    ___ del_name(self):
-        self._name = N..
+    ___ del_name
+        _name = N..
 
     name = property(get_name, N.., del_name)
 
-    ___ reset(self):
-        del self.name
+    ___ reset
+        del name

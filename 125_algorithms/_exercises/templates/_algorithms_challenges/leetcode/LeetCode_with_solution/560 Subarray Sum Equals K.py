@@ -15,7 +15,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ subarraySum(self, nums: List[int], k: int) -> int:
         """
         prefix sum

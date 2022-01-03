@@ -3,7 +3,7 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ consecutiveNumbersSum(self, N):
         """
         :type N: int

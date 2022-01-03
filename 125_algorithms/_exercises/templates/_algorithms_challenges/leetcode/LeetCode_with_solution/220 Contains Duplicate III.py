@@ -7,7 +7,7 @@ ____ collections _______ OrderedDict
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ containsNearbyAlmostDuplicate(self, nums, k, t):
         """
         Two Intervals k & t:
@@ -21,10 +21,10 @@ class Solution:
         :rtype: bool
         """
         __ k < 1 o. t < 0:
-            r.. False
+            r.. F..
 
         __ t __ 0:
-            r.. self.containsNearByDuplicate(nums, k)
+            r.. containsNearByDuplicate(nums, k)
 
         od = OrderedDict()  # keep the window
         ___ n __ nums:
@@ -32,27 +32,27 @@ class Solution:
             ___ j __ (-1, 0, 1):  # (n-t, n, n+t), shrink the interval
                 m = od.get(key+j)
                 __ m __ n.. N.. a.. abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
-                    r.. True
+                    r.. T..
 
             w.... l..(od) >= k:
-                od.popitem(False)  # not last, i.e. the first
+                od.popitem(F..)  # not last, i.e. the first
 
             od[key] = n
 
-        r.. False
+        r.. F..
 
     ___ containsNearByDuplicate(self, nums, k):
         od = OrderedDict()
         ___ n __ nums:
             __ od.get(n):
-                r.. True
+                r.. T..
 
             w.... l..(od) >= k:
-                od.popitem(False)
+                od.popitem(F..)
 
             od[n] = n
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":

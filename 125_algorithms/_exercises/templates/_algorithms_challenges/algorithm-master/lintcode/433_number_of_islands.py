@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ numIslands(self, grid):
         """
         :type grid: list[list[int]]
@@ -15,7 +15,7 @@ class Solution:
             ___ y __ r..(n):
                 __ grid[x][y] __ 1:
                     ans += 1
-                    self.dfs(grid, x, y)
+                    dfs(grid, x, y)
 
         r.. ans
 
@@ -37,4 +37,4 @@ class Solution:
             ):
                 continue
 
-            self.dfs(grid, _x, _y)
+            dfs(grid, _x, _y)

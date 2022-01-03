@@ -3,20 +3,20 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-class TreeNode(object):
-    ___ __init__(self, val):
-        self.val = val
-        self.s.. = 0
-        self.children = {}
+c_ TreeNode(object):
+    ___ - , val):
+        val = val
+        s.. = 0
+        children    # dict
 
-class MapSum(object):
+c_ MapSum(object):
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.hashmap = {}
-        self.root = TreeNode(N..)
+        hashmap    # dict
+        root = TreeNode(N..)
 
     ___ insert(self, key, val):
         """
@@ -25,10 +25,10 @@ class MapSum(object):
         :rtype: void
         """
         diff = 0
-        __ key __ self.hashmap:
-            diff = -self.hashmap[key]
-        self.hashmap[key] = val
-        node = self.root
+        __ key __ hashmap:
+            diff = -hashmap[key]
+        hashmap[key] = val
+        node = root
         ___ c __ key:
             __ c n.. __ node.children:
                 newNode = TreeNode(c)
@@ -41,7 +41,7 @@ class MapSum(object):
         :type prefix: str
         :rtype: int
         """
-        node = self.root
+        node = root
         ___ c __ prefix:
             __ c n.. __ node.children:
                 r.. 0

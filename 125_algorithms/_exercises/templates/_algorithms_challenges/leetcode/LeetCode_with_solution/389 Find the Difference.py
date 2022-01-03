@@ -23,7 +23,7 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findTheDifference(self, s, t):
         """
         :type s: str

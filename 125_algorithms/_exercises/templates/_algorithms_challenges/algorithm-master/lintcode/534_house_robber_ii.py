@@ -25,7 +25,7 @@ Test Case:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: An array of non-negative integers.
     @return: The maximum amount of money you can rob tonight
@@ -39,8 +39,8 @@ class Solution:
         dp = [[0] * 2 ___ _ __ r..(2)]
 
         r.. max(
-            self.houseRobber(A, 0, dp),
-            self.houseRobber(A, 1, dp)
+            houseRobber(A, 0, dp),
+            houseRobber(A, 1, dp)
         )
 
     ___ houseRobber(self, A, start, dp):
@@ -59,7 +59,7 @@ class Solution:
         r.. max(dp[curr])
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: An array of non-negative integers.
     @return: The maximum amount of money you can rob tonight
@@ -78,9 +78,9 @@ class Solution:
 
         r.. max(
             # range(0, n - 1)
-            self.houseRobber(A, 0, dp),
+            houseRobber(A, 0, dp),
             # range(1, n)
-            self.houseRobber(A, 1, dp)
+            houseRobber(A, 1, dp)
         )
 
     ___ houseRobber(self, A, start, dp):
@@ -98,7 +98,7 @@ class Solution:
         r.. dp[curr]
 
 
-class Solution:
+c_ Solution:
     ___ houseRobber2(self, A):
         """
         :type A: List[int]
@@ -111,8 +111,8 @@ class Solution:
             r.. A[0]
 
         r.. max(
-            self.rob_in_line(A, 0, n - 2),
-            self.rob_in_line(A, 1, n - 1)
+            rob_in_line(A, 0, n - 2),
+            rob_in_line(A, 1, n - 1)
         )
 
     ___ rob_in_line(self, A, start, end):

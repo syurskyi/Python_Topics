@@ -6,14 +6,14 @@ For example, given n = 3, a solution set is:
 "((()))", "(()())", "(())()", "()(())", "()()()"
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ generateParenthesis(self, n):
         """
         :param n: integer
         :return: list of string
         """
         result    # list
-        self.generateParenthesisDfs(result, "", n, n)
+        generateParenthesisDfs(result, "", n, n)
         r.. result
 
     ___ generateParenthesisDfs(self, result, cur, left, right):
@@ -31,10 +31,10 @@ class Solution:
 
         # add left parenthesis
         __ left > 0:
-            self.generateParenthesisDfs(result, cur + "(", left - 1, right)
+            generateParenthesisDfs(result, cur + "(", left - 1, right)
         # add right parenthesis
         __ right > left:
-            self.generateParenthesisDfs(result, cur + ")", left, right - 1)
+            generateParenthesisDfs(result, cur + ")", left, right - 1)
 
 
 __ __name____"__main__":

@@ -5,19 +5,19 @@ Created on Apr 15, 2017
 '''
 ____ lib2to3.pytree _______ Node
 
-class TrieNode(object):
-    ___ __init__(self, val):
-        self.val = val
-        self.children = {}
-        self.candidates = set()
+c_ TrieNode(object):
+    ___ - , val):
+        val = val
+        children    # dict
+        candidates = set()
 
-class Solution(object):
+c_ Solution(object):
     ___ wordSquares(self, words):
         __ n.. words: r.. []
-        self.root = TrieNode(-1)
-        self.buildTrie(words)
+        root = TrieNode(-1)
+        buildTrie(words)
         res    # list
-        self.dfs(words, [], res, words)
+        dfs(words, [], res, words)
         r.. res
     
     ___ dfs(self, words, elems, result, nextWords):
@@ -30,16 +30,16 @@ class Solution(object):
                 prefix = ''
                 ___ i __ r..(l..(elems)):
                     prefix += elems[i][l..(elems)]
-                candidates = self.wordsWithPrefix(prefix)
+                candidates = wordsWithPrefix(prefix)
             ____:
                 candidates    # list
-            self.dfs(words, elems, result, candidates)
+            dfs(words, elems, result, candidates)
             elems.pop()
     
     ___ buildTrie(self, words):
-        self.root.candidates = words
+        root.candidates = words
         ___ word __ words:
-            children = self.root.children
+            children = root.children
             ___ c __ word:
                 __ c __ children:
                     node = children[c]
@@ -51,7 +51,7 @@ class Solution(object):
     
     ___ wordsWithPrefix(self, prefix):
         __ n.. prefix: r.. []
-        children = self.root.children
+        children = root.children
         ___ i, c __ e..(prefix):
             __ c __ children:
                 node = children[c]
@@ -63,14 +63,14 @@ class Solution(object):
                 r.. []
         r.. []
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["area","lead","wall","lady","ball"],
             ["abat","baba","atan","atal"],
         ]
         ___ words __ testCases:
             print('words: %s' % words)
-            result = self.wordSquares(words)
+            result = wordSquares(words)
             print('result: %s' % result)
             print('-='*20+'-')
 

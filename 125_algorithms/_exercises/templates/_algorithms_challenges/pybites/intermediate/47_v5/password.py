@@ -7,9 +7,9 @@ used_passwords = set("PassWord@1 PyBit$s9".s..())
 
 ___ validate_password(password: s..) -> bool:
     __ n.. (6 <= l..(password) <= 12):
-        r.. False
+        r.. F..
     __ password __ used_passwords:
-        r.. False
+        r.. F..
     digits = lcase = ucase = punc = 0
     ___ c __ password:
         __ c.isdigit():
@@ -22,5 +22,5 @@ ___ validate_password(password: s..) -> bool:
             punc += 1
     __ digits > 0 a.. lcase > 1 a.. ucase > 0 a.. punc > 0:
         used_passwords.add(password)
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..

@@ -7,7 +7,7 @@ class Interval(object):
 """
 
 
-class Solution:
+c_ Solution:
     ___ minMeetingRooms(self, intervals):
         """
         :type intervals: list[Interval]
@@ -21,8 +21,8 @@ class Solution:
         time    # list
 
         ___ x __ intervals:
-            time.a..((x.start, True))
-            time.a..((x.end, False))
+            time.a..((x.start, T..))
+            time.a..((x.end, F..))
 
         time.s..()
 

@@ -4,7 +4,7 @@ _______ random
 ____ robot_name _______ Robot
 
 
-class RobotTest(unittest.TestCase):
+c_ RobotTest(unittest.TestCase):
     # assertRegex() alias to adress DeprecationWarning
     # assertRegexpMatches got renamed in version 3.2
     __ n.. hasattr(unittest.TestCase, "assertRegex"):
@@ -12,21 +12,21 @@ class RobotTest(unittest.TestCase):
 
     name_re = r'^[A-Z]{2}\d{3}$'
 
-    ___ test_has_name(self):
-        self.assertRegex(Robot().name, self.name_re)
+    ___ test_has_name
+        assertRegex(Robot().name, name_re)
 
-    ___ test_name_sticks(self):
+    ___ test_name_sticks
         robot = Robot()
         robot.name
-        self.assertEqual(robot.name, robot.name)
+        assertEqual(robot.name, robot.name)
 
-    ___ test_different_robots_have_different_names(self):
-        self.assertNotEqual(
+    ___ test_different_robots_have_different_names
+        assertNotEqual(
             Robot().name,
             Robot().name
         )
 
-    ___ test_reset_name(self):
+    ___ test_reset_name
         # Set a seed
         seed = "Totally random."
 
@@ -43,8 +43,8 @@ class RobotTest(unittest.TestCase):
         # Call the generator again
         robot.reset()
         name2 = robot.name
-        self.assertNotEqual(name, name2)
-        self.assertRegex(name2, self.name_re)
+        assertNotEqual(name, name2)
+        assertRegex(name2, name_re)
 
 
 __ __name__ __ '__main__':

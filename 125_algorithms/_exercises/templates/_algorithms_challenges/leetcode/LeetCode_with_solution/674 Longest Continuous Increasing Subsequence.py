@@ -20,7 +20,7 @@ Note: Length of the array will not exceed 10,000.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findLengthOfLCIS(self, nums: List[int]) -> int:
         """
         pointer is sufficient

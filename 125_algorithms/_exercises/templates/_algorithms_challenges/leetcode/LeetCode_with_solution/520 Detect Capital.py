@@ -22,27 +22,27 @@ latin letters.
 """
 
 
-class Solution:
+c_ Solution:
     ___ detectCapitalUse(self, word: s..) -> bool:
         """
         Two passes is easy
         How to do it in one pass
         """
         __ n.. word:
-            r.. True
+            r.. T..
 
         head_upper = word[0].isupper()
 
         # except for the head
-        has_lower = False
-        has_upper = False
+        has_lower = F..
+        has_upper = F..
         ___ w __ word[1:]:
             __ w.isupper():
-                has_upper = True
+                has_upper = T..
                 __ has_lower o. n.. head_upper:
-                    r.. False
+                    r.. F..
             ____:
-                has_lower = True
+                has_lower = T..
                 __ has_upper:
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..

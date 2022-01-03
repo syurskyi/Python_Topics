@@ -5,7 +5,7 @@ ranges.
 For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ summaryRanges(self, nums):
         """
         :type nums: List[int]
@@ -21,13 +21,13 @@ class Solution(object):
                 end = 0
             ____:
                 __ e != nums[i - 1] + 1:
-                    r = self.make_range(start, end, nums)
+                    r = make_range(start, end, nums)
                     res.a..(r)
                     start = i
                 end = i
             __ i __ n - 1:
                 end = i
-                r = self.make_range(start, end, nums)
+                r = make_range(start, end, nums)
                 res.a..(r)
         r.. res
 

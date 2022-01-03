@@ -19,26 +19,26 @@ how datetime implements them:
 Good luck and keep calm and code in Python!
 '''
 
-class User:
+c_ User:
     """A User class
        (Django's User model inspired us)
     """
 
-    ___ __init__(self, first_name, last_name):
+    ___ - , first_name, last_name):
         """Constructor, base values"""
-        self.first_name = first_name
-        self.last_name = last_name
+        first_name = first_name
+        last_name = last_name
 
-    @property
-    ___ get_full_name(self):
+    $
+    ___ get_full_name
         """Return first separated by a whitespace
            and using title case for both.
         """
         # TODO 1: you code
-        r.. f"{self.first_name.capitalize()} {self.last_name.capitalize()}"
+        r.. f"{first_name.capitalize()} {last_name.capitalize()}"
 
-    @property
-    ___ username(self):
+    $
+    ___ username
         """A username consists of the first char of
            the user's first_name and the first 7 chars
            of the user's last_name, both lowercased.
@@ -46,8 +46,8 @@ class User:
            If this is your first property, check out:
            https://pybit.es/property-decorator.html
         """
-        f = self.first_name[0:1].lower()
-        l = self.last_name[0:7].lower()
+        f = first_name[0:1].l..
+        l = last_name[0:7].l..
         r.. f"{f}{l}"
 
     # TODO 3: you code
@@ -58,14 +58,14 @@ class User:
     #
     # see also TESTS for required output
 
-    ___ __str__(self):
-        r.. f"{self.first_name.capitalize()} {self.last_name.capitalize()} ({self.username})"
+    ___ __str__
+        r.. f"{first_name.capitalize()} {last_name.capitalize()} ({username})"
 
-    ___ __repr__(self):
+    ___ __repr__
         """Don't hardcode the class name, hint: use a
            special attribute of self.__class__ ...
         """
-        r.. f"{self.__class__.__name__}(\"{self.first_name}\", \"{self.last_name}\")"
+        r.. f"{__class__.__name__}(\"{first_name}\", \"{last_name}\")"
 
 u = User("bob", "belderbos")
 

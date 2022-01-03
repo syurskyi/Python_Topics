@@ -8,26 +8,26 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ isSymmetric(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
         __ n.. root:
-            r.. True
+            r.. T..
 
-        r.. self.divide_conquer(root.left, root.right)
+        r.. divide_conquer(root.left, root.right)
 
     ___ divide_conquer(self, left, right):
         __ n.. left a.. n.. right:
-            r.. True
+            r.. T..
         __ n.. left o. n.. right:
-            r.. False
+            r.. F..
         __ left.val != right.val:
-            r.. False
-        __ n.. self.divide_conquer(left.left, right.right):
-            r.. False
-        __ n.. self.divide_conquer(left.right, right.left):
-            r.. False
-        r.. True
+            r.. F..
+        __ n.. divide_conquer(left.left, right.right):
+            r.. F..
+        __ n.. divide_conquer(left.right, right.left):
+            r.. F..
+        r.. T..

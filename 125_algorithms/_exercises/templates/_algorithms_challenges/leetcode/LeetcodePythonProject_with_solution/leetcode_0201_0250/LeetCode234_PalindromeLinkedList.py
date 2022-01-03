@@ -5,19 +5,19 @@ Created on Feb 25, 2017
 '''
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ isPalindrome(self, head):
         """
         :type head: ListNode
         :rtype: bool
         """
         __ n.. head o. n.. head.next:
-            r.. True
+            r.. T..
         node1 = head
         node2 = head
         w.... node2 a.. node2.next:
@@ -38,7 +38,7 @@ class Solution(object):
         node2 = p1
         w.... node1 a.. node2:
             __ node1.val != node2.val:
-                r.. False
+                r.. F..
             node1 = node1.next
             node2 = node2.next
-        r.. True
+        r.. T..

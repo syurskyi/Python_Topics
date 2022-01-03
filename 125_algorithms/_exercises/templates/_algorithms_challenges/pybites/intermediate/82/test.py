@@ -1,7 +1,7 @@
 
 
 
-class Test:
+c_ Test:
     x = 4
 
     @classmethod

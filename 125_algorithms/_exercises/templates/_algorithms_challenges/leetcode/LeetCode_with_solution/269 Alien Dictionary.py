@@ -44,22 +44,22 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ alienOrder(self, words):
         """
         :type words: List[str]
         :rtype: str
         """
-        V = self.construct_graph(words)
+        V = construct_graph(words)
         visited = set()
         pathset = set()
         ret    # list
-        ___ v __ V.keys():
+        ___ v __ V.k..:
             __ v n.. __ visited:
-                __ n.. self.topo_dfs(V, v, visited, pathset, ret):
+                __ n.. topo_dfs(V, v, visited, pathset, ret):
                     r.. ""
 
-        r.. "".join(reversed(ret))
+        r.. "".j..(reversed(ret))
 
     ___ construct_graph(self, words):
         V = defaultdict(l..)
@@ -86,18 +86,18 @@ class Solution(object):
         :return: whether contains cycles
         """
         __ v __ pathset:
-            r.. False
+            r.. F..
 
         pathset.add(v)
         ___ nbr __ V[v]:
             __ nbr n.. __ visited:
-                __ n.. self.topo_dfs(V, nbr, visited, pathset, ret):
-                    r.. False
+                __ n.. topo_dfs(V, nbr, visited, pathset, ret):
+                    r.. F..
 
         pathset.remove(v)
         visited.add(v)  # add visited is in the end rather than at the begining
         ret.a..(v)  # append after lower values
-        r.. True
+        r.. T..
 
     ___ construct_graph_tedious(self, words, up, down, ptr, V):
         """
@@ -120,7 +120,7 @@ class Solution(object):
                 w.... j < down a.. ptr < l..(words[j]) a.. words[j][ptr] __ words[i][ptr]:
                     j += 1
 
-                self.construct_graph_tedious(words, i, j, ptr+1, V)
+                construct_graph_tedious(words, i, j, ptr+1, V)
                 __ j < down a.. ptr < l..(words[j]):
                     V[words[i][ptr]].a..(words[j][ptr])
 

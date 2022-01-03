@@ -35,69 +35,69 @@ ____ typing _______ List
 _______ heapq
 
 
-class DualHeap:
-    ___ __init__(self):
+c_ DualHeap:
+    ___ - ):
         """
         ---- number line --->
         --- max heap --- |  --- min heap ---
         """
-        self.max_h    # list  # List[Tuple[comparator, num]]
-        self.min_h    # list
-        self.max_sz = 0
-        self.min_sz = 0
-        self.to_remove = set()  # value, error mapping index in nums
+        max_h    # list  # List[Tuple[comparator, num]]
+        min_h    # list
+        max_sz = 0
+        min_sz = 0
+        to_remove = set()  # value, error mapping index in nums
 
     ___ insert(self, num):
-        __ self.max_h a.. num > self.max_h[0][1]:
-            heapq.heappush(self.min_h, (num, num))
-            self.min_sz += 1
+        __ max_h a.. num > max_h[0][1]:
+            heapq.heappush(min_h, (num, num))
+            min_sz += 1
         ____:
-            heapq.heappush(self.max_h, (-num, num))
-            self.max_sz += 1
-        self.balance()
+            heapq.heappush(max_h, (-num, num))
+            max_sz += 1
+        balance()
 
     ___ pop(self, num):
-        self.to_remove.add(num)
-        __ self.max_h a.. num > self.max_h[0][1]:
-            self.min_sz -= 1
+        to_remove.add(num)
+        __ max_h a.. num > max_h[0][1]:
+            min_sz -= 1
         ____:
-            self.max_sz -= 1
-        self.balance()
+            max_sz -= 1
+        balance()
 
-    ___ clean_top(self):
-        w.... self.max_h a.. self.max_h[0][1] __ self.to_remove:
-            _, num = heapq.heappop(self.max_h)
-            self.to_remove.remove(num)
-        w.... self.min_h a.. self.min_h[0][1] __ self.to_remove:
-            _, num = heapq.heappop(self.min_h)
-            self.to_remove.remove(num)
+    ___ clean_top
+        w.... max_h a.. max_h[0][1] __ to_remove:
+            _, num = heapq.heappop(max_h)
+            to_remove.remove(num)
+        w.... min_h a.. min_h[0][1] __ to_remove:
+            _, num = heapq.heappop(min_h)
+            to_remove.remove(num)
 
-    ___ balance(self):
+    ___ balance
         # keep skew in max sz
-        w.... self.max_sz < self.min_sz :
-            self.clean_top()
-            _, num =heapq.heappop(self.min_h)
-            heapq.heappush(self.max_h, (-num, num))
-            self.min_sz -= 1
-            self.max_sz += 1
-        w.... self.max_sz > self.min_sz + 1:
-            self.clean_top()
-            _, num = heapq.heappop(self.max_h)
-            heapq.heappush(self.min_h, (num, num))
-            self.min_sz += 1
-            self.max_sz -= 1
+        w.... max_sz < min_sz :
+            clean_top()
+            _, num =heapq.heappop(min_h)
+            heapq.heappush(max_h, (-num, num))
+            min_sz -= 1
+            max_sz += 1
+        w.... max_sz > min_sz + 1:
+            clean_top()
+            _, num = heapq.heappop(max_h)
+            heapq.heappush(min_h, (num, num))
+            min_sz += 1
+            max_sz -= 1
 
-        self.clean_top()
+        clean_top()
 
     ___ get_median(self, k):
-        self.clean_top()
+        clean_top()
         __ k % 2 __ 1:
-            r.. self.max_h[0][1]
+            r.. max_h[0][1]
         ____:
-            r.. 0.5 * (self.max_h[0][1] + self.min_h[0][1])
+            r.. 0.5 * (max_h[0][1] + min_h[0][1])
 
 
-class Solution:
+c_ Solution:
     ___ medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
         """
         1. BST, proxied by bisect

@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution:
+c_ Solution:
     ___ calcEquation(self, equations, values, queries):
         """
         :type equations: List[List[str]]
@@ -30,7 +30,7 @@ class Solution:
             evals[b, a] = 1.0 / values[i]
 
         ___ a, b __ queries:
-            res = self.dfs(a, b, 1, nexts, evals, set())
+            res = dfs(a, b, 1, nexts, evals, set())
             ans.a..(float(res))
 
         r.. ans
@@ -51,7 +51,7 @@ class Solution:
             __ c __ visited o. (a, c) n.. __ evals:
                 continue
 
-            res = self.dfs(c, b, val * evals[a, c], nexts, evals, visited)
+            res = dfs(c, b, val * evals[a, c], nexts, evals, visited)
 
             __ res != -1:
                 break

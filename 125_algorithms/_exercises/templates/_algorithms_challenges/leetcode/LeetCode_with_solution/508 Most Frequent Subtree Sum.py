@@ -27,17 +27,17 @@ signed integer.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ findFrequentTreeSum(self, root):
         """
         traverse with counter
@@ -45,9 +45,9 @@ class Solution:
         :rtype: List[int]
         """
         counter = defaultdict(int)
-        self.traverse(root, counter)
+        traverse(root, counter)
         ret = [[], 0]
-        ___ k, v __ counter.items():
+        ___ k, v __ counter.i..:
             __ v > ret[1]:
                 ret[0] = [k]
                 ret[1] = v
@@ -61,7 +61,7 @@ class Solution:
             r.. 0
 
         cur = root.val
-        cur += self.traverse(root.left, counter)
-        cur += self.traverse(root.right, counter)
+        cur += traverse(root.left, counter)
+        cur += traverse(root.right, counter)
         counter[cur] += 1
         r.. cur

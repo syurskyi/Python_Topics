@@ -9,64 +9,64 @@ should invalidate the least recently used item before inserting a new item.
 __author__ = 'Danyang'
 
 
-class Node(object):
-    ___ __init__(self, key, val):
-        self.key = key
-        self.val = val
-        self.pre, self.next = N.., N..
+c_ Node(object):
+    ___ - , key, val):
+        key = key
+        val = val
+        pre, next = N.., N..
 
 
-class LRUCache(object):
-    ___ __init__(self, capacity):
-        self.cap = capacity
-        self.map = {}  # key to node
-        self.head = N..
-        self.tail = N..
+c_ LRUCache(object):
+    ___ - , capacity):
+        cap = capacity
+        map    # dict  # key to node
+        head = N..
+        tail = N..
 
     ___ get(self, key):
-        __ key __ self.map:
-            cur = self.map[key]
-            self._elevate(cur)
+        __ key __ map:
+            cur = map[key]
+            _elevate(cur)
             r.. cur.val
 
         r.. -1
 
     ___ set(self, key, value):
-        __ key __ self.map:
-            cur = self.map[key]
+        __ key __ map:
+            cur = map[key]
             cur.val = value
-            self._elevate(cur)
+            _elevate(cur)
         ____:
             cur = Node(key, value)
-            self.map[key] = cur
-            self._appendleft(cur)
+            map[key] = cur
+            _appendleft(cur)
 
-            __ l..(self.map) > self.cap:
-                last = self._pop()
-                del self.map[last.key]
+            __ l..(map) > cap:
+                last = _pop()
+                del map[last.key]
 
     # doubly linked-list operations only
     ___ _appendleft(self, cur):
         """Normal or initially empty"""
-        __ n.. self.head a.. n.. self.tail:
-            self.head = cur
-            self.tail = cur
+        __ n.. head a.. n.. tail:
+            head = cur
+            tail = cur
             r..
 
-        head = self.head
+        head = head
         cur.next, cur.pre, head.pre = head, N.., cur
-        self.head = cur
+        head = cur
 
-    ___ _pop(self):
+    ___ _pop
         """Normal or resulting empty"""
-        last = self.tail
-        __ self.head __ self.tail:
-            self.head, self.tail = N.., N..
+        last = tail
+        __ head __ tail:
+            head, tail = N.., N..
             r.. last
 
         pre = last.pre
         pre.next = N..
-        self.tail = pre
+        tail = pre
         r.. last
 
     ___ _elevate(self, cur):
@@ -75,25 +75,25 @@ class LRUCache(object):
         __ n.. pre:
             r..
         ____ n.. nxt:
-            ... self.tail __ cur
-            self._pop()
+            ... tail __ cur
+            _pop()
         ____:
             pre.next, nxt.pre = nxt, pre
 
-        self._appendleft(cur)
+        _appendleft(cur)
 
 
-class LRUCache_TLE(object):
-    ___ __init__(self, capacity):
-        self.capacity = capacity
-        self.q    # list  # order by key
-        self.dic = {}
+c_ LRUCache_TLE(object):
+    ___ - , capacity):
+        capacity = capacity
+        q    # list  # order by key
+        dic    # dict
 
     ___ get(self, key):
-        __ key __ self.dic:
-            self.q.remove(key)
-            self.q.insert(0, key)
-            r.. self.dic[key]
+        __ key __ dic:
+            q.remove(key)
+            q.insert(0, key)
+            r.. dic[key]
         ____:
             r.. -1
 
@@ -106,14 +106,14 @@ class LRUCache_TLE(object):
         :param value: int
         :return: value
         """
-        __ key __ self.dic:
-            self.q.remove(key)
-            self.q.insert(0, key)
+        __ key __ dic:
+            q.remove(key)
+            q.insert(0, key)
         ____:
-            __ l..(self.q)+1 <= self.capacity:
-                self.q.insert(0, key)
+            __ l..(q)+1 <= capacity:
+                q.insert(0, key)
             ____:
-                self.dic.pop(self.q.pop())
-                self.q.insert(0, key)
+                dic.pop(q.pop())
+                q.insert(0, key)
 
-        self.dic[key] = value
+        dic[key] = value

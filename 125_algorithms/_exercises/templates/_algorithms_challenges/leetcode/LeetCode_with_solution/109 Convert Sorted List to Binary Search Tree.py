@@ -3,23 +3,23 @@ Given a singly linked list where elements are sorted in ascending order, convert
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution:
+c_ Solution:
     # class attribute to keep trace the currently processing nodes
     # current_node = None
-    ___ __init__(self):
-        self.current_node = N..  # !important, avoid time complexity of look up
+    ___ - ):
+        current_node = N..  # !important, avoid time complexity of look up
 
     ___ sortedListToBST(self, head):
         """
@@ -32,18 +32,18 @@ class Solution:
         __ n.. head:
             r.. head
 
-        self.current_node = head
-        length = self.getLength(head)
-        r.. self.sortedListToBST_dfs(0, length-1)
+        current_node = head
+        length = getLength(head)
+        r.. sortedListToBST_dfs(0, length-1)
 
     ___ sortedListToBST_dfs(self, start, end):
         __ start>end:
             r..
         mid = (start+end)/2
-        left_subtree = self.sortedListToBST_dfs(start, mid-1)
-        root = TreeNode(self.current_node.val)
-        self.current_node = self.current_node.next
-        right_subtree = self.sortedListToBST_dfs(mid+1, end)
+        left_subtree = sortedListToBST_dfs(start, mid-1)
+        root = TreeNode(current_node.val)
+        current_node = current_node.next
+        right_subtree = sortedListToBST_dfs(mid+1, end)
 
         root.left = left_subtree
         root.right = right_subtree

@@ -4,7 +4,7 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ getFactors(self, n):
         """
         :type n: int
@@ -31,7 +31,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         result    # list
-        self.helper(result, [], n, 2)
+        helper(result, [], n, 2)
         r.. result
     
     ___ helper(self, result, item, n, start):
@@ -43,10 +43,10 @@ class Solution(object):
         ___ i __ r..(start, n+1):
             __ n % i __ 0:
                 item.a..(i)
-                self.helper(result, item, int(n/i), i)
+                helper(result, item, int(n/i), i)
                 item.pop()
     
-    ___ test(self):
+    ___ test
         testCases = [
             8,
             1,
@@ -56,7 +56,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % (n))
-            result = self.getFactors(n)
+            result = getFactors(n)
             print('result: %s' % result)
             print('-='*20+'-')
 

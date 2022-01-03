@@ -9,20 +9,20 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-    ___ __repr__(self):
-        r.. repr(self.val)
+    ___ __repr__
+        r.. repr(val)
 
-class Solution:
-    ___ __init__(self):
-        self.swapped_pair    # list
-        self.current = N..
-        self.pre = N..
+c_ Solution:
+    ___ - ):
+        swapped_pair    # list
+        current = N..
+        pre = N..
 
     ___ recoverTree(self, root):
         """
@@ -47,27 +47,27 @@ class Solution:
         :param root: TreeNode
         :return: TreeNode
         """
-        self.in_order(root)
-        __ l..(self.swapped_pair)__2:
-            self.swapped_pair[0][0].val, self.swapped_pair[1][1].val = self.swapped_pair[1][1].val, self.swapped_pair[0][0].val
+        in_order(root)
+        __ l..(swapped_pair)__2:
+            swapped_pair[0][0].val, swapped_pair[1][1].val = swapped_pair[1][1].val, swapped_pair[0][0].val
         ____: # neighboring
-            self.swapped_pair[0][0].val, self.swapped_pair[0][1].val = self.swapped_pair[0][1].val, self.swapped_pair[0][0].val
+            swapped_pair[0][0].val, swapped_pair[0][1].val = swapped_pair[0][1].val, swapped_pair[0][0].val
         r.. root
 
     ___ in_order(self, current):
         __ n.. current:
             r..
 
-        self.in_order(current.left)
+        in_order(current.left)
         # update global
-        self.pre = self.current
-        self.current = current
-        __ self.pre a.. n.. self.pre.val<self.current.val:
-            __ n.. self.swapped_pair:
-                self.swapped_pair.a..((self.pre, self.current))  # pre is wrong
+        pre = current
+        current = current
+        __ pre a.. n.. pre.val<current.val:
+            __ n.. swapped_pair:
+                swapped_pair.a..((pre, current))  # pre is wrong
             ____:
-                self.swapped_pair.a..((self.pre, self.current))  # current is wrong
-        self.in_order(current.right)
+                swapped_pair.a..((pre, current))  # current is wrong
+        in_order(current.right)
 
     # def __get_smallest(self, root):
     #     if not root.left and not root.right:

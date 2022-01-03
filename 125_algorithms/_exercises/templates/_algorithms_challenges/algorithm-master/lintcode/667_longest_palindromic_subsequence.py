@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: s: the maximum length of s is 1000
     @return: the longest palindromic subsequence's length

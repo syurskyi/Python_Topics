@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ twoSum(self, numbers, target):
         """
         :type numbers: List[int]

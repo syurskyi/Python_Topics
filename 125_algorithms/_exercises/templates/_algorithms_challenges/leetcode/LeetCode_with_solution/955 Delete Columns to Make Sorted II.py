@@ -49,7 +49,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ minDeletionSize(self, A: List[s..]) -> int:
         """
         Greedily delete
@@ -60,7 +60,7 @@ class Solution:
         handle equal case [aa, ab, aa]
         """
         m, n = l..(A), l..(A[0])
-        lt = [False ___ i __ r..(m)]
+        lt = [F.. ___ i __ r..(m)]
         deleted = 0
         ___ j __ r..(n):
             ___ i __ r..(m-1):

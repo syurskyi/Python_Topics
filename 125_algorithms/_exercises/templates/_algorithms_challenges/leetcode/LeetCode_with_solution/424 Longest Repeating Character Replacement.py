@@ -9,7 +9,7 @@ _______ string
 _______ operator
 
 
-class Solution:
+c_ Solution:
     ___ characterReplacement(self, s, k):
         """
         Replace any letter with another letter - replace any letter with any

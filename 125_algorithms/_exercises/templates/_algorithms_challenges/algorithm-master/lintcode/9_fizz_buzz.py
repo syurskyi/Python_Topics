@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ fizzBuzz(self, n):
         """
         :type n: int
@@ -22,7 +22,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     ___ fizzBuzz(self, n):
         """
         :type n: int

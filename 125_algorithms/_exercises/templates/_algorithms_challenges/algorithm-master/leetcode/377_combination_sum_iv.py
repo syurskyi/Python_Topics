@@ -5,7 +5,7 @@
 """
 
 
-class Solution:
+c_ Solution:
     """
     Dynamic Programming
     """
@@ -31,7 +31,7 @@ class Solution:
         r.. dp[target]
 
 
-class Solution:
+c_ Solution:
     """
     Memory Search /
     Dynamic Programming /
@@ -48,7 +48,7 @@ class Solution:
 
         dp = [-1] * (target + 1)
         dp[0] = 1
-        self.memo_search(nums, target, dp)
+        memo_search(nums, target, dp)
         r.. dp[target]
 
     ___ memo_search(self, nums, remain, dp):
@@ -61,13 +61,13 @@ class Solution:
             __ remain < a:
                 continue
 
-            res += self.memo_search(nums, remain - a, dp)
+            res += memo_search(nums, remain - a, dp)
 
         dp[remain] = res
         r.. res
 
 
-class Solution:
+c_ Solution:
     """
     DFS: TLE
     """
@@ -82,7 +82,7 @@ class Solution:
 
         ans    # list
         nums.s..(r.._T..
-        self.dfs(nums, target, ans, [])
+        dfs(nums, target, ans, [])
 
         r.. l..(ans)
 
@@ -96,14 +96,14 @@ class Solution:
                 continue
 
             path.a..(a)
-            self.dfs(nums, remain - a, ans, path)
+            dfs(nums, remain - a, ans, path)
             path.pop()
 
 
 # ======
 
 
-class Solution:
+c_ Solution:
     """
     Dynamic Programming: wrong answer for this question
 

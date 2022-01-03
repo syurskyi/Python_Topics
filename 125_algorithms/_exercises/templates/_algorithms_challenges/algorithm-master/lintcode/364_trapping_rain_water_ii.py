@@ -1,6 +1,6 @@
 ____ heapq _______ heappush, heappop
 
-class Solution:
+c_ Solution:
     """
     @param: heights: a matrix of integers
     @return: an integer

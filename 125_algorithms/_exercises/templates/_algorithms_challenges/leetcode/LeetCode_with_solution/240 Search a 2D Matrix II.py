@@ -21,7 +21,7 @@ Given target = 20, return false.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ searchMatrix(self, mat, target):
         """
         Manhattan work
@@ -39,16 +39,16 @@ class Solution(object):
         j = n-1
         w.... i < m a.. 0 <= j:
             __ mat[i][j] __ target:
-                r.. True
+                r.. T..
             ____ mat[i][j] > target:
                 j -= 1
             ____:
                 i += 1
 
-        r.. False
+        r.. F..
 
 
-class SolutionBinSearch(object):
+c_ SolutionBinSearch(object):
     ___ searchMatrix(self, mat, target):
         """
         Binary search
@@ -66,19 +66,19 @@ class SolutionBinSearch(object):
         n = l..(mat[0])
 
         col = [mat[i][0] ___ i __ xrange(m)]
-        row_by_first = self.bin_search(col, target)
+        row_by_first = bin_search(col, target)
 
         col = [mat[i][-1] ___ i __ xrange(m)]
-        row_by_last = self.bin_search(col, target, False)
+        row_by_last = bin_search(col, target, F..)
 
         ___ i __ r..(row_by_first, row_by_last-1, -1):
-            col = self.bin_search(mat[i], target)
+            col = bin_search(mat[i], target)
             __ mat[i][col] __ target:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..
 
-    ___ bin_search(self, A, t, lower=True):
+    ___ bin_search(self, A, t, lower=T..):
         lo = 0
         hi = l..(A)
         w.... lo < hi:
@@ -96,5 +96,5 @@ class SolutionBinSearch(object):
             r.. lo
 
 __ __name__ __ "__main__":
-    ... Solution().searchMatrix([[1, 4], [2, 5]], 4) __ True
-    ... SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) __ True
+    ... Solution().searchMatrix([[1, 4], [2, 5]], 4) __ T..
+    ... SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) __ T..

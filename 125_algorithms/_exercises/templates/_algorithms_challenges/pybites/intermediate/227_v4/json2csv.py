@@ -28,7 +28,7 @@ ___ convert_to_csv(json_file):
     with open(json_file, 'r') as f:
         try:
             data = json.load(f)
-            fields = data['mounts']['collected'][0].keys()
+            fields = data['mounts']['collected'][0].k..
             with open(csv_file, 'w') as csv_fp:
                 writer = csv.DictWriter(csv_fp, fieldnames=fields)
                 writer.writeheader()

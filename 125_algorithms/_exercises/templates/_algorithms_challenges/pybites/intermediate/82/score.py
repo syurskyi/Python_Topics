@@ -9,18 +9,18 @@ THUMBS_UP = '👍'  # in case you go f-string ...
 # CHEATED = 1
 
 
-class Score(Enum):
+c_ Score(Enum):
     
     BEGINNER = 2
     INTERMEDIATE = 3
     ADVANCED = 4
     CHEATED = 1
 
-    ___ __repr__(self):
-        r.. f"{self.__class__.__name__}.{self.name}"
+    ___ __repr__
+        r.. f"{__class__.__name__}.{name}"
 
-    ___ __str__(self):
-        r.. f"{self.name} => {THUMBS_UP * self.value}"
+    ___ __str__
+        r.. f"{name} => {THUMBS_UP * value}"
 
     @classmethod
     ___ average(cls):

@@ -3,7 +3,7 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ hasAlternatingBits(self, n):
         """
         :type n: int
@@ -14,12 +14,12 @@ class Solution(object):
         w.... n > 0:
             digit = n & 1
             __ n.. digit ^ prev:
-                r.. False
+                r.. F..
             prev = digit
             n >>= 1
-        r.. True
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             4,
             5,
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.hasAlternatingBits(n)
+            result = hasAlternatingBits(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ checkEqualTree(self, root):
     ___ s..(node):
       __ n.. node:

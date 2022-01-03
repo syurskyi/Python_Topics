@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param A a list of integers
     # @return nothing, sort in place
     ___ sortColors(self, A):

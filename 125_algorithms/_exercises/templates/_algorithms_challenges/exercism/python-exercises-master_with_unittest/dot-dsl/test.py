@@ -3,51 +3,51 @@ _______ unittest
 ____ dot_dsl _______ Graph, Node, Edge, NODE, EDGE, ATTR
 
 
-class DotDslTest(unittest.TestCase):
-    ___ test_empty_graph(self):
+c_ DotDslTest(unittest.TestCase):
+    ___ test_empty_graph
         g = Graph()
 
-        self.assertEqual(g.nodes, [])
-        self.assertEqual(g.edges, [])
-        self.assertEqual(g.attrs, {})
+        assertEqual(g.nodes, [])
+        assertEqual(g.edges, [])
+        assertEqual(g.attrs, {})
 
-    ___ test_graph_with_one_node(self):
+    ___ test_graph_with_one_node
         g = Graph([
             (NODE, "a", {})
         ])
 
-        self.assertEqual(g.nodes, [Node("a")])
-        self.assertEqual(g.edges, [])
-        self.assertEqual(g.attrs, {})
+        assertEqual(g.nodes, [Node("a")])
+        assertEqual(g.edges, [])
+        assertEqual(g.attrs, {})
 
-    ___ test_graph_with_one_node_with_keywords(self):
+    ___ test_graph_with_one_node_with_keywords
         g = Graph([
             (NODE, "a", {"color": "green"})
         ])
 
-        self.assertEqual(g.nodes, [Node("a", {"color": "green"})])
-        self.assertEqual(g.edges, [])
-        self.assertEqual(g.attrs, {})
+        assertEqual(g.nodes, [Node("a", {"color": "green"})])
+        assertEqual(g.edges, [])
+        assertEqual(g.attrs, {})
 
-    ___ test_graph_with_one_edge(self):
+    ___ test_graph_with_one_edge
         g = Graph([
             (EDGE, "a", "b", {})
         ])
 
-        self.assertEqual(g.nodes, [])
-        self.assertEqual(g.edges, [Edge("a", "b", {})])
-        self.assertEqual(g.attrs, {})
+        assertEqual(g.nodes, [])
+        assertEqual(g.edges, [Edge("a", "b", {})])
+        assertEqual(g.attrs, {})
 
-    ___ test_graph_with_one_attribute(self):
+    ___ test_graph_with_one_attribute
         g = Graph([
             (ATTR, "foo", "1")
         ])
 
-        self.assertEqual(g.nodes, [])
-        self.assertEqual(g.edges, [])
-        self.assertEqual(g.attrs, {"foo": "1"})
+        assertEqual(g.nodes, [])
+        assertEqual(g.edges, [])
+        assertEqual(g.attrs, {"foo": "1"})
 
-    ___ test_graph_with_attributes(self):
+    ___ test_graph_with_attributes
         g = Graph([
             (ATTR, "foo", "1"),
             (ATTR, "title", "Testing Attrs"),
@@ -59,68 +59,68 @@ class DotDslTest(unittest.TestCase):
             (ATTR, "bar", "true")
         ])
 
-        self.assertEqual(g.nodes, [Node("a", {"color": "green"}),
+        assertEqual(g.nodes, [Node("a", {"color": "green"}),
                                    Node("c", {}),
                                    Node("b", {"label": "Beta!"})])
-        self.assertEqual(g.edges, [Edge("b", "c", {}),
+        assertEqual(g.edges, [Edge("b", "c", {}),
                                    Edge("a", "b", {"color": "blue"})])
-        self.assertEqual(g.attrs, {
+        assertEqual(g.attrs, {
             "foo": "1",
             "title": "Testing Attrs",
             "bar": "true"
         })
 
-    ___ test_malformed_graph(self):
-        with self.assertRaisesWithMessage(TypeError):
+    ___ test_malformed_graph
+        with assertRaisesWithMessage(TypeError):
             Graph(1)
 
-        with self.assertRaisesWithMessage(TypeError):
+        with assertRaisesWithMessage(TypeError):
             Graph("problematic")
 
-    ___ test_malformed_graph_item(self):
-        with self.assertRaisesWithMessage(TypeError):
+    ___ test_malformed_graph_item
+        with assertRaisesWithMessage(TypeError):
             Graph([
                 ()
             ])
 
-        with self.assertRaisesWithMessage(TypeError):
+        with assertRaisesWithMessage(TypeError):
             Graph([
                 (ATTR, )
             ])
 
-    ___ test_malformed_attr(self):
-        with self.assertRaisesWithMessage(ValueError):
+    ___ test_malformed_attr
+        with assertRaisesWithMessage(ValueError):
             Graph([
                 (ATTR, 1, 2, 3)
             ])
 
-    ___ test_malformed_node(self):
-        with self.assertRaisesWithMessage(ValueError):
+    ___ test_malformed_node
+        with assertRaisesWithMessage(ValueError):
             Graph([
                 (NODE, 1, 2, 3)
             ])
 
-    ___ test_malformed_EDGE(self):
-        with self.assertRaisesWithMessage(ValueError):
+    ___ test_malformed_EDGE
+        with assertRaisesWithMessage(ValueError):
             Graph([
                 (EDGE, 1, 2)
             ])
 
-    ___ test_unknown_item(self):
-        with self.assertRaisesWithMessage(ValueError):
+    ___ test_unknown_item
+        with assertRaisesWithMessage(ValueError):
             Graph([
                 (99, 1, 2)
             ])
 
     # Utility methods
-    ___ setUp(self):
+    ___ setUp
         try:
-            self.assertRaisesRegex
+            assertRaisesRegex
         except AttributeError:
-            self.assertRaisesRegex = self.assertRaisesRegexp
+            assertRaisesRegex = assertRaisesRegexp
 
     ___ assertRaisesWithMessage(self, exception):
-        r.. self.assertRaisesRegex(exception, r".+")
+        r.. assertRaisesRegex(exception, r".+")
 
 
 __ __name__ __ '__main__':

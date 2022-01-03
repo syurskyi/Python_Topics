@@ -19,43 +19,43 @@
 #         :rtype: int
 #         """
 
-class PeekingIterator(object):
-  ___ __init__(self, iterator):
+c_ PeekingIterator(object):
+  ___ - , iterator):
     """
     Initialize your data structure here.
     :type iterator: Iterator
     """
-    self.iter = iterator
-    self.nextElem = N..
+    iter = iterator
+    nextElem = N..
 
-  ___ peek(self):
+  ___ peek
     """
     Returns the next element in the iteration without advancing the iterator.
     :rtype: int
     """
-    __ self.nextElem:
-      r.. self.nextElem
-    __ self.iter.hasNext():
-      self.nextElem = self.iter.next()
-    r.. self.nextElem
+    __ nextElem:
+      r.. nextElem
+    __ iter.hasNext():
+      nextElem = iter.next()
+    r.. nextElem
 
-  ___ next(self):
+  ___ next
     """
     :rtype: int
     """
-    ret = self.nextElem
+    ret = nextElem
 
-    __ self.nextElem:
-      self.nextElem = N..
+    __ nextElem:
+      nextElem = N..
       r.. ret
 
-    r.. self.iter.next()
+    r.. iter.next()
 
-  ___ hasNext(self):
+  ___ hasNext
     """
     :rtype: bool
     """
-    r.. (self.nextElem __ n.. N..) o. self.iter.hasNext()
+    r.. (nextElem __ n.. N..) o. iter.hasNext()
 
 # Your PeekingIterator object will be instantiated and called as such:
 # iter = PeekingIterator(Iterator(nums))

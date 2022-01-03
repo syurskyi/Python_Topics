@@ -1,19 +1,19 @@
 _______ collections
 
 
-class Node(object):
-  ___ __init__(self, val):
-    self.val = val
-    self.neighbors    # list
+c_ Node(object):
+  ___ - , val):
+    val = val
+    neighbors    # list
 
   ___ connect(self, node):
-    self.neighbors.a..(node)
+    neighbors.a..(node)
 
-  ___ getNbrs(self):
-    r.. self.neighbors
+  ___ getNbrs
+    r.. neighbors
 
 
-class Solution(object):
+c_ Solution(object):
   ___ alienOrder(self, words):
     """
     :type words: List[str]
@@ -25,18 +25,18 @@ class Solution(object):
       ___ nbr __ graph[root].getNbrs():
         __ visited[nbr.val] __ 0:
           __ n.. dfs(nbr.val, graph, visited):
-            r.. False
+            r.. F..
         ____ visited[nbr.val] __ 1:
-          r.. False
+          r.. F..
 
       visited[root] = 2
-      self.ans += root
-      r.. True
+      ans += root
+      r.. T..
 
-    self.ans = ""
-    graph = {}
+    ans = ""
+    graph    # dict
     visited = collections.defaultdict(int)
-    self.topNum = 0
+    topNum = 0
     ___ i __ r..(0, l..(words) - 1):
       a = words[i]
       b = words[i + 1]
@@ -72,5 +72,5 @@ class Solution(object):
 
     ___ c __ unUsedSet:
       __ c n.. __ graph:
-        self.ans += c
-    r.. self.ans[::-1]
+        ans += c
+    r.. ans[::-1]

@@ -35,7 +35,7 @@ Return false
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isValidSerialization(self, preorder):
         """
         :type preorder: str
@@ -50,7 +50,7 @@ class Solution(object):
             ____:
                 child_cnt -= 2
                 __ child_cnt < 0:
-                    r.. False
+                    r.. F..
 
                 stk.pop()
                 child_cnt += 1
@@ -74,7 +74,7 @@ class Solution(object):
                     stk.pop()
                     child_stk.a..('#')
                 except IndexError:
-                    r.. False
+                    r.. F..
 
         r.. n.. stk a.. l..(child_stk) __ 1
 

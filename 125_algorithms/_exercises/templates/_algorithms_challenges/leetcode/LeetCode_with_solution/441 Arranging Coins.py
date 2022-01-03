@@ -8,7 +8,7 @@ n is a non-negative integer and fits within the range of a 32-bit signed integer
 """
 
 
-class Solution:
+c_ Solution:
     ___ arrangeCoins(self, n):
         """
         Solve a math equation

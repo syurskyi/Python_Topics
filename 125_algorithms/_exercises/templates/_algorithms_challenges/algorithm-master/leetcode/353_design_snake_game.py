@@ -35,8 +35,8 @@ True
 _______ collections
 
 
-class SnakeGame:
-    ___ __init__(self, width, height, food):
+c_ SnakeGame:
+    ___ - , width, height, food):
         """
         :type width: int, screen width
         :type height: int, screen height
@@ -49,19 +49,19 @@ class SnakeGame:
             # raise error
             r..
 
-        self.width = width
-        self.height = height
-        self.food = food
-        self.fi = 0
+        width = width
+        height = height
+        food = food
+        fi = 0
 
-        self.is_over = False
-        self.SCORE_IN_OVER = -1
+        is_over = F..
+        SCORE_IN_OVER = -1
 
         pos = [(0, 0)]
-        self.snake = collections.deque(pos)
-        self.body = set(pos)
+        snake = collections.deque(pos)
+        body = set(pos)
 
-        self.dn = {
+        dn = {
             'U': (-1,  0),
             'D': ( 1,  0),
             'L': ( 0, -1),
@@ -75,57 +75,57 @@ class SnakeGame:
 
         Game over when snake crosses the screen boundary or bites its body.
         """
-        __ direction n.. __ self.dn:
+        __ direction n.. __ dn:
             # treat this move as invalid action
-            r.. l..(self.snake) - 1
+            r.. l..(snake) - 1
 
-        __ self.is_over:
+        __ is_over:
             # this game is over
-            r.. self.SCORE_IN_OVER
+            r.. SCORE_IN_OVER
 
         """
         new head will hit wall?
         """
-        x, y = self.snake[0]
-        dx, dy = self.dn[direction]
+        x, y = snake[0]
+        dx, dy = dn[direction]
         hx = x + dx
         hy = y + dy
 
-        __ n.. (0 <= hx < self.height a.. 0 <= hy < self.width):
-            self.is_over = True
-            r.. self.SCORE_IN_OVER
+        __ n.. (0 <= hx < height a.. 0 <= hy < width):
+            is_over = T..
+            r.. SCORE_IN_OVER
 
         """
         eat food or not
         """
-        fx, fy = self.food[self.fi]
+        fx, fy = food[fi]
 
         __ fx __ hx a.. fy __ hy:
             # eat that food
-            self.fi += 1
+            fi += 1
         ____:
             # move to empty cell and need to remove tail
-            tail = self.snake.pop()
-            self.body.discard(tail)
+            tail = snake.pop()
+            body.discard(tail)
 
         """
         new head will hit its self?
         this detection MUST AFTER removing tail
         """
-        __ (hx, hy) __ self.body:
-            self.is_over = True
-            r.. self.SCORE_IN_OVER
+        __ (hx, hy) __ body:
+            is_over = T..
+            r.. SCORE_IN_OVER
 
         """
         new head is valid, track it
         """
-        self.snake.appendleft((hx, hy))
-        self.body.add((hx, hy))
+        snake.appendleft((hx, hy))
+        body.add((hx, hy))
 
         """
         There is no food anymore
         """
-        __ self.fi >= l..(self.food):
-            self.is_over = True
+        __ fi >= l..(food):
+            is_over = T..
 
-        r.. l..(self.snake) - 1
+        r.. l..(snake) - 1

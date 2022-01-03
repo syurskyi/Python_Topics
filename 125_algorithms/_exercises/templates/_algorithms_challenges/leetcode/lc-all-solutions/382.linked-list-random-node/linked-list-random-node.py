@@ -6,23 +6,23 @@
 _______ random
 
 
-class Solution(object):
+c_ Solution(object):
 
-  ___ __init__(self, head):
+  ___ - , head):
     """
     @param head The linked list's head.
     Note that the head is guaranteed to be not null, so it contains at least one node.
     :type head: ListNode
     """
-    self.head = head
+    head = head
 
-  ___ getRandom(self):
+  ___ getRandom
     """
     Returns a random node's value.
     :rtype: int
     """
-    ans = self.head.val
-    head = self.head
+    ans = head.val
+    head = head
     idx = 1
     w.... head:
       __ random.randrange(1, idx + 1) __ idx:

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ matrixReshape(self, nums, r, c):
     """
     :type nums: List[List[int]]

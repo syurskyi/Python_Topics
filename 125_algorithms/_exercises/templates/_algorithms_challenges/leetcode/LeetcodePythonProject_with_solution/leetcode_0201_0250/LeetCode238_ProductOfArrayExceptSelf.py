@@ -4,7 +4,7 @@ Created on Feb 26, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ productExceptSelf(self, nums):
         """
         :type nums: List[int]
@@ -42,14 +42,14 @@ class Solution(object):
             result.a..(left[i]*right[i])
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2, 3, 4],
             [9, 0, -2],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.productExceptSelf(nums)
+            result = productExceptSelf(nums)
             print('result: %s' % (result))
             print('-='*20+'-')
 

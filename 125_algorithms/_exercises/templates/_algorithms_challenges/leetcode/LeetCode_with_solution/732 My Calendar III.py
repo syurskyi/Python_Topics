@@ -44,17 +44,17 @@ range [0, 10^9].
 _______ bisect
 
 
-class MyCalendarThree:
+c_ MyCalendarThree:
 
-    ___ __init__(self):
-        self.lst    # list
+    ___ - ):
+        lst    # list
 
     ___ book(self, start: int, end: int) -> int:
-        bisect.insort(self.lst, (start, "start"))
-        bisect.insort(self.lst, (end, "end"))
+        bisect.insort(lst, (start, "start"))
+        bisect.insort(lst, (end, "end"))
         ret = 0
         count = 0
-        ___ _, flag __ self.lst:
+        ___ _, flag __ lst:
             count += 1 __ flag __ "start" ____ -1
             ret = max(ret, count)
 

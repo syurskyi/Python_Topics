@@ -40,7 +40,7 @@ String dominoes contains only 'L', 'R' and '.'
 """
 
 
-class Solution:
+c_ Solution:
     ___ pushDominoes(self, dominoes: s..) -> s..:
         """
         DP L & R from both ends
@@ -80,7 +80,7 @@ class Solution:
                 cur = "L"
             ret.a..(cur)
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 
 __ __name__ __ "__main__":

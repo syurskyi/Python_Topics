@@ -30,7 +30,7 @@ ___ get_industry_cap(industry):
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
-    industry_cap_lookup = {}
+    industry_cap_lookup    # dict
     ___ stock __ data:
         cap = _cap_str_to_mln_float(stock["cap"])
         __ stock["industry"] n.. __ industry_cap_lookup:
@@ -43,7 +43,7 @@ ___ get_industry_cap(industry):
 ___ get_stock_symbol_with_highest_cap():
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
-    highest_cap = {}
+    highest_cap    # dict
     ___ stock __ data:
         cap = _cap_str_to_mln_float(stock["cap"])
         highest_cap[stock["symbol"]] = cap

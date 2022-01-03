@@ -5,22 +5,22 @@ Created on Mar 28, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ findLeaves(self, root):
         res    # list
-        self.helper(root, res)
+        helper(root, res)
         r.. res
     
     ___ helper(self, root, res):
         __ n.. root: r.. -1
-        left = self.helper(root.left, res)
-        right = self.helper(root.right, res)
+        left = helper(root.left, res)
+        right = helper(root.right, res)
         level = max(left, right)+1
         __ level < l..(res):
             res[level].a..(root.val)
@@ -35,7 +35,7 @@ class Solution(object):
         dummy.left = root
         w.... dummy.left:
             tmpResult    # list
-            self.getLeaves(dummy, root, tmpResult)
+            getLeaves(dummy, root, tmpResult)
             result.a..(tmpResult)
         r.. result
     
@@ -47,15 +47,15 @@ class Solution(object):
             ____:
                 parent.right = N..
             result.a..(root.val)
-        self.getLeaves(root, root.left, result)
-        self.getLeaves(root, root.right, result)
+        getLeaves(root, root.left, result)
+        getLeaves(root, root.right, result)
     
-    ___ test(self):
+    ___ test
         testCases = [
             TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3)),
         ]
         ___ root __ testCases:
-            result = self.findLeaves(root)
+            result = findLeaves(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

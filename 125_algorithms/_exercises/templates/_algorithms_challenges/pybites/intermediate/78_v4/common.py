@@ -6,4 +6,4 @@ ___ common_languages(programmers):
        of programming languages, return the common languages"""
     r.. l..(reduce(l.... x, y: set.intersection(set(x),
                                                      set(y)),
-                                                     programmers.values()))
+                                                     programmers.v..

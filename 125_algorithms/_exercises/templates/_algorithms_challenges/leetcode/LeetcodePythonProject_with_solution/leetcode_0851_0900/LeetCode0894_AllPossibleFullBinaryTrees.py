@@ -4,15 +4,15 @@ Created on Nov 5, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
-    ___ __init__(self):
-        self.cache = {}
+c_ Solution(object):
+    ___ - ):
+        cache    # dict
     
     ___ allPossibleFBT(self, N):
         """
@@ -22,14 +22,14 @@ class Solution(object):
         res    # list
         __ N%2 __ 0:
             r.. res
-        __ N __ self.cache:
-            r.. self.cache[N]
+        __ N __ cache:
+            r.. cache[N]
         __ N __ 1:
             res.a..(TreeNode(0))
             r.. res
         ___ i __ r..(N):
-            left = self.allPossibleFBT(i)
-            right = self.allPossibleFBT(N-i-1)
+            left = allPossibleFBT(i)
+            right = allPossibleFBT(N-i-1)
             ___ leftNode __ left:
                 ___ rightNode __ right:
                     root = TreeNode(0)
@@ -49,8 +49,8 @@ class Solution(object):
             r.. [TreeNode(0)]
         res    # list
         ___ i __ r..(N):
-            left = self.allPossibleFBT(i)
-            right = self.allPossibleFBT(N-i-1)
+            left = allPossibleFBT(i)
+            right = allPossibleFBT(N-i-1)
             ___ leftNode __ left:
                 ___ rightNode __ right:
                     root = TreeNode(0)

@@ -12,22 +12,22 @@ _______ string
 ___ contains_only_vowels(input_str):
     """Receives input string and checks if all chars are
        VOWELS. Match is case insensitive."""
-    lower = input_str.lower()
+    lower = input_str.l..
     vowels = "aeoiu"
     ___ c __ lower:
         __ c n.. __ vowels:
-            r.. False
-    r.. True
+            r.. F..
+    r.. T..
 
 ___ contains_any_py_chars(input_str):
     """Receives input string and checks if any of the PYTHON
        chars are in it. Match is case insensitive."""
-    chars = "PYTHON".lower()
-    lower = input_str.lower()
+    chars = "PYTHON".l..
+    lower = input_str.l..
     ___ c __ lower:
         __ c __ chars:
-            r.. True
-    r.. False
+            r.. T..
+    r.. F..
 
 
 ___ contains_digits(input_str):
@@ -35,7 +35,7 @@ ___ contains_digits(input_str):
        one or more digits."""
     ___ c __ input_str:
         __ c __ string.digits:
-            r.. True
-    r.. False
+            r.. T..
+    r.. F..
 
 

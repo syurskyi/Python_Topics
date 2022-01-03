@@ -56,12 +56,12 @@ ___ make_character_index(text=text, characters=CHARACTERS):
     """
     index = defaultdict(l..)
 
-    ___ n, line __ e..(text.lower().splitlines()):
+    ___ n, line __ e..(text.l...splitlines()):
         ___ char __ characters:
             __ isi..(char, tuple):
-                __ any(map(l.... c: c.lower() __ line, char)):
-                    index[char[0].lower()].a..(n)
+                __ any(map(l.... c: c.l.. __ line, char)):
+                    index[char[0].l..].a..(n)
             ____:
-                __ char.lower() __ line:
-                    index[char.lower()].a..(n)
+                __ char.l.. __ line:
+                    index[char.l..].a..(n)
     r.. index

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ removeBoxes(self, A):
     N = l..(A)
     memo = [[[0] * N ___ _ __ r..(N)] ___ _ __ r..(N)]

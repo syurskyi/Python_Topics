@@ -3,13 +3,13 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findDuplicate(self, paths):
         """
         :type paths: List[str]
         :rtype: List[List[str]]
         """
-        hashmap = {}
+        hashmap    # dict
         ___ path __ paths:
             arr = path.s..(' ')
             folder = arr[0]
@@ -21,18 +21,18 @@ class Solution(object):
                 fullPath = folder+'/'+filename
                 hashmap[content] = hashmap.get(content, []) + [fullPath]
         res    # list
-        ___ _, value __ hashmap.items():
+        ___ _, value __ hashmap.i..:
             __ l..(value) > 1:
                 res.a..(value)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"],
         ]
         ___ paths __ testCases:
             print('paths: %s' % paths)
-            result = self.findDuplicate(paths)
+            result = findDuplicate(paths)
             print('result: %s' % result)
             print('-='*30+'-')
 

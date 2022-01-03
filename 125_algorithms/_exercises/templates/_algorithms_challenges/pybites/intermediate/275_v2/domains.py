@@ -1,5 +1,5 @@
 ____ collections _______ Counter
-_______ re
+_______ __
 ____ bs4 _______ BeautifulSoup
 _______ requests
 
@@ -24,13 +24,13 @@ ___ get_common_domains(url=COMMON_DOMAINS):
     rows = soup.find(attrs=TARGET_DIV).find_all('tr')
 
 
-    r.. [value.getText(strip=True) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
+    r.. [value.getText(strip=T..) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
 
 
 ___ get_domain(string):
 
 
-    r.. re.search(r'@(.+)',string).group(1)
+    r.. __.s..(r'@(.+)',string).group(1)
 
 
 ___ get_most_common_domains(emails, common_domains_ N..

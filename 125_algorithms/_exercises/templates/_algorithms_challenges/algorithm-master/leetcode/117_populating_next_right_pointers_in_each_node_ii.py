@@ -9,7 +9,7 @@ class TreeLinkNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     Recursion
     1. recursion from right to left
@@ -42,11 +42,11 @@ class Solution:
         __ root.left:
             root.left.next = nxt
 
-        self.connect(root.right)
-        self.connect(root.left)
+        connect(root.right)
+        connect(root.left)
 
 
-class Solution:
+c_ Solution:
     """
     Iteration
     """
@@ -79,7 +79,7 @@ class Solution:
                 nxt = nxt.next
 
 
-class Solution:
+c_ Solution:
     """
     Level Traversal
     """

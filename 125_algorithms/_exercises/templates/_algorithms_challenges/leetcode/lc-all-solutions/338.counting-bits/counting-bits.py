@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ countBits(self, num):
     """
     :type num: int

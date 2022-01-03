@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxProfit(self, prices):
     """
     :type prices: List[int]

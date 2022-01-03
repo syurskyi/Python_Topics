@@ -5,7 +5,7 @@ Note:
 """
 
 
-class Solution:
+c_ Solution:
     """
     Prefix Sum + Binary Searching
     http://yuanyuanzhangcs.blogspot.hk/2017/02/build-post-office.html
@@ -39,7 +39,7 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] != self.HOUSE:
+                __ grid[x][y] != HOUSE:
                     continue
                 xs.a..(x)
                 ys.a..(y)
@@ -60,10 +60,10 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] != self.EMPTY:
+                __ grid[x][y] != EMPTY:
                     continue
 
-                step = self.get_step(psx, xs, x) + self.get_step(psy, ys, y)
+                step = get_step(psx, xs, x) + get_step(psy, ys, y)
 
                 __ step < ans:
                     ans = step
@@ -94,7 +94,7 @@ class Solution:
         ))
 
 
-class Solution:
+c_ Solution:
     """
     BFS: TLE
 
@@ -120,7 +120,7 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] __ self.HOUSE:
+                __ grid[x][y] __ HOUSE:
                     houses.a..((x, y))
                     xc += x
                     yc += y
@@ -133,8 +133,8 @@ class Solution:
         visited = set(queue)
 
         ___ x, y __ queue:
-            __ grid[x][y] __ self.EMPTY:
-                ans = m..(ans, self.get_step(houses, x, y))
+            __ grid[x][y] __ EMPTY:
+                ans = m..(ans, get_step(houses, x, y))
 
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
@@ -162,7 +162,7 @@ class Solution:
         r.. step
 
 
-class Solution:
+c_ Solution:
     """
     BFS: TLE
 
@@ -186,14 +186,14 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] __ self.HOUSE:
-                    self.bfs(grid, x, y, steps)
+                __ grid[x][y] __ HOUSE:
+                    bfs(grid, x, y, steps)
 
         ans = INF = float('inf')
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] != self.EMPTY:
+                __ grid[x][y] != EMPTY:
                     continue
                 __ steps[x][y] < ans:
                     ans = steps[x][y]

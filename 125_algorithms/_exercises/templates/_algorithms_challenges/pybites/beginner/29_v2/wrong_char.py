@@ -11,7 +11,7 @@ ___ get_index_different_char(chars):
     ___ i,char __ e..(chars):
         
         char = s..(char)
-        __ char.isalnum():
+        __ char.i..
             alnum_index = i
             alnum_count += 1
         ____:

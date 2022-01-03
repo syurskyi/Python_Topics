@@ -1,17 +1,17 @@
 ____ collections _______ defaultdict
 
 
-class School(object):
-    ___ __init__(self, name):
-        self.name = name
-        self.db = defaultdict(set)
+c_ School(object):
+    ___ - , name):
+        name = name
+        db = defaultdict(set)
 
     ___ add(self, student, grade):
-        self.db[grade].add(student)
+        db[grade].add(student)
 
     ___ grade(self, level):
-        r.. self.db[level]
+        r.. db[level]
 
-    ___ s..(self):
+    ___ s..
         r.. s..((grade, tuple(s..(students)))
-                      ___ grade, students __ self.db.items())
+                      ___ grade, students __ db.items())

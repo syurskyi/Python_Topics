@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ validWordAbbreviation(self, word, abbr):
         """
         pointers
@@ -23,7 +23,7 @@ class Solution(object):
                 w += num
             ____:
                 __ word[w] != abbr[a]:
-                    r.. False
+                    r.. F..
 
                 w += 1
                 a += 1
@@ -32,5 +32,5 @@ class Solution(object):
 
 
 __ __name__ __ "__main__":
-    ... Solution().validWordAbbreviation("internationalization", "i12iz4n") __ True
-    ... Solution().validWordAbbreviation("apple", "a2e") __ False
+    ... Solution().validWordAbbreviation("internationalization", "i12iz4n") __ T..
+    ... Solution().validWordAbbreviation("apple", "a2e") __ F..

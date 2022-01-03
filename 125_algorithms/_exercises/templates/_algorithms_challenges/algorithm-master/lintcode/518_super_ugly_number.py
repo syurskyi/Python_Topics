@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ nthSuperUglyNumber(self, n, primes):
         """
         :type n: int

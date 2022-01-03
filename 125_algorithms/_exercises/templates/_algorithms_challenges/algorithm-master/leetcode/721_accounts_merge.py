@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ accountsMerge(self, A):
         """
         :type A: List[List[str]]
@@ -7,28 +7,28 @@ class Solution:
         __ n.. A:
             r.. []
 
-        M = {}  # mails
-        M2N = {}  # mail to name
+        M    # dict  # mails
+        M2N    # dict  # mail to name
         ___ L __ A:
             ___ i __ r..(1, l..(L)):
                 M2N[L[i]] = L[0]
-                self.connect(M, L[i], L[1])
+                connect(M, L[i], L[1])
 
         ___ a __ M:
-            self.find(M, a)
+            find(M, a)
 
-        res = {}
-        ___ m1, m0 __ M.items():
+        res    # dict
+        ___ m1, m0 __ M.i..:
             __ m0 n.. __ res:
                 res[m0]    # list
 
             res[m0].a..(m1)
 
-        r.. [[M2N[m]] + s..(M) ___ m, M __ res.items()]
+        r.. [[M2N[m]] + s..(M) ___ m, M __ res.i..]
 
     ___ connect(self, N, a, b):
-        _a = self.find(N, a)
-        _b = self.find(N, b)
+        _a = find(N, a)
+        _b = find(N, b)
 
         __ _a __ n.. _b:
             N[_a] = _b
@@ -40,5 +40,5 @@ class Solution:
         __ N[a] __ a:
             r.. a
 
-        N[a] = self.find(N, N[a])
+        N[a] = find(N, N[a])
         r.. N[a]

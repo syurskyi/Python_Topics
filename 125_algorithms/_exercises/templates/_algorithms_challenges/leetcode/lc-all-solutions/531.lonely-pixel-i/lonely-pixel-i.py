@@ -1,6 +1,6 @@
 ____ collections _______ defaultdict
 
-class Solution(object):
+c_ Solution(object):
   
   ___ findLonelyPixel(self, picture):
 

@@ -1,6 +1,6 @@
 #accepting the two strings
-s1 = ''.join(i ___ i __ input() __ i.islower())
-s2 = ''.join(i ___ i __ input() __ i.islower())
+s1 = ''.j..(i ___ i __ input() __ i.islower())
+s2 = ''.j..(i ___ i __ input() __ i.islower())
 #using sorted to arrange the string in order before processing them
 s1 = s..(s1)
 s2 = s..(s2)
@@ -8,15 +8,15 @@ s2 = s..(s2)
 #defining the method mix
 ___ mix(s1,s2):
     
-    s1 = ''.join(i ___ i __ s1 __ i.islower())
-    s2 = ''.join(i ___ i __ s2 __ i.islower())
+    s1 = ''.j..(i ___ i __ s1 __ i.islower())
+    s2 = ''.j..(i ___ i __ s2 __ i.islower())
 
     s1 = s..(s1)
     s2 = s..(s2)
     #s1_dic is used to store the count of occurance of a particular
     #alphabet in string s1 and similarly of s2_dic for string s2
-    s1_dic = {}
-    s2_dic = {}
+    s1_dic    # dict
+    s2_dic    # dict
     
     #sub_str is used to store the alphabets for the number of counts(iterations)
     # for example: count of n is 5 thus sub_str will hold sub_str = 'nnnnn'
@@ -133,7 +133,7 @@ ___ mix(s1,s2):
                 pass
     
     
-    main_string = '/'.join(s..(e) ___ e __ res_string)
+    main_string = '/'.j..(s..(e) ___ e __ res_string)
     r.. main_string
     
 mix(s1,s2)

@@ -29,9 +29,9 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
-    ___ __init__(self):
-        self.cache = {}
+c_ Solution:
+    ___ - ):
+        cache    # dict
 
     ___ numsSameConsecDiff(self, N: int, K: int) -> List[int]:
         """
@@ -39,31 +39,31 @@ class Solution:
         """
         ret    # list
         ___ i __ r..(1, 10):
-            ret.extend(self.dfs(i, N, K))
+            ret.extend(dfs(i, N, K))
 
         __ N __ 1:
             ret.a..([0])  # special case
 
         r.. l..(
-            map(l.... x: int("".join(map(s.., x))), ret)
+            map(l.... x: int("".j..(map(s.., x))), ret)
         )
 
     ___ dfs(self, start: int, N: int, K: int) -> List[List[int]]:
-        __ (start, N, K) n.. __ self.cache:
+        __ (start, N, K) n.. __ cache:
             ret    # list
             __ N __ 1:
                 ret = [[start]]
             ____ N > 1:
                 __ start + K <= 9:
-                    ___ e __ self.dfs(start + K, N - 1, K):
+                    ___ e __ dfs(start + K, N - 1, K):
                         ret.a..([start] + e)
                 __ start - K >= 0 a.. K != 0:  # special case
-                    ___ e __ self.dfs(start - K, N - 1, K):
+                    ___ e __ dfs(start - K, N - 1, K):
                         ret.a..([start] + e)
 
-            self.cache[start, N, K] = ret
+            cache[start, N, K] = ret
 
-        r.. self.cache[start, N, K]
+        r.. cache[start, N, K]
 
 
 __ __name__ __ "__main__":

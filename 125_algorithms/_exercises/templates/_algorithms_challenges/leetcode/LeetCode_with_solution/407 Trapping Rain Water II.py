@@ -26,19 +26,19 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-class Cell:
-    ___ __init__(self, i, j, h):
-        self.i = i
-        self.j = j
-        self.h = h
+c_ Cell:
+    ___ - , i, j, h):
+        i = i
+        j = j
+        h = h
 
     ___ __cmp__(self, other):
-        r.. self.h - other.h
+        r.. h - other.h
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+c_ Solution(object):
+    ___ - ):
+        dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ trapRainWater(self, mat):
         """
@@ -52,26 +52,26 @@ class Solution(object):
         __ n.. mat: r.. 0
 
         m, n = l..(mat), l..(mat[0])
-        visited = [[False ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
         h    # list
         # add cells at the four edges
         ___ i __ xrange(m):
-            visited[i][0] = True
+            visited[i][0] = T..
             heapq.heappush(h, Cell(i, 0, mat[i][0]))
-            visited[i][n-1] = True
+            visited[i][n-1] = T..
             heapq.heappush(h, Cell(i, n-1, mat[i][n-1]))
 
         ___ j __ xrange(1, n-1):
-            visited[0][j] = True
+            visited[0][j] = T..
             heapq.heappush(h, Cell(0, j, mat[0][j]))
-            visited[m-1][j] = True
+            visited[m-1][j] = T..
             heapq.heappush(h, Cell(m-1, j, mat[m-1][j]))
 
         # BFS with heap
         trapped = 0
         w.... h:
             cur = heapq.heappop(h)
-            ___ dir __ self.dirs:
+            ___ dir __ dirs:
                 I, J = cur.i+dir[0], cur.j+dir[1]
                 __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J]:
                     nxt = Cell(I, J, mat[I][J])
@@ -79,7 +79,7 @@ class Solution(object):
                         trapped += cur.h - nxt.h
                         nxt.h = cur.h
 
-                    visited[I][J] = True
+                    visited[I][J] = T..
                     heapq.heappush(h, nxt)
 
         r.. trapped

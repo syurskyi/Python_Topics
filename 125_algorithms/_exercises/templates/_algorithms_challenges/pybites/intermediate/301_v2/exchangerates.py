@@ -48,7 +48,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, da
 
 
     
-    mapping = {}
+    mapping    # dict
     
     current_date = start
         
@@ -81,8 +81,8 @@ ___ exchange_rates(
     matching_dates = match_daily_rates(parse(start_date).date(),parse(end_date).date(),data['rates']) 
 
 
-    result = {}
-    ___ date_1,date_2 __ matching_dates.items():
+    result    # dict
+    ___ date_1,date_2 __ matching_dates.i..:
         date = date_2.strftime("%Y-%m-%d")
         value = {'Base Date': date_2,'USD': data['rates'][date]['USD'],'GBP': data['rates'][date]['GBP']}
         result[date_1] = value

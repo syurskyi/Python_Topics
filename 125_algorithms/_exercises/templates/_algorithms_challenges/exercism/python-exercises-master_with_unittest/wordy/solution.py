@@ -14,7 +14,7 @@ VALID_OPERATIONS = {"plus": add, "minus": sub,
 ___ calculate(stmt):
     __ n.. (stmt.startswith("What is ") a.. stmt.endswith("?")):
         raise ValueError("Ill-formed question")
-    l = stmt[8:-1].s...lower().s..
+    l = stmt[8:-1].s...l...s..
     __ n.. l:
         raise ValueError("Ill-formed question")
     l.reverse()
@@ -33,7 +33,7 @@ ___ calculate(stmt):
                 oprt.a..(next_tk)
         ____:
             raise ValueError("Ill-formed question")
-        oprt = " ".join(oprt)
+        oprt = " ".j..(oprt)
         try:
             op1 = VALID_OPERATIONS[oprt](op1, op2)
         except KeyError:

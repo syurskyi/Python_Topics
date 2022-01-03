@@ -7,7 +7,7 @@ class ListNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ addLists(self, A, B):
         """
         :type A: ListNode

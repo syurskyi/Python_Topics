@@ -6,7 +6,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ minCostII(self, costs):
         """
         Lef F[i][j] be the total min costs when the houses BEFORE i are painted, with (i-1)-th house pained as color j

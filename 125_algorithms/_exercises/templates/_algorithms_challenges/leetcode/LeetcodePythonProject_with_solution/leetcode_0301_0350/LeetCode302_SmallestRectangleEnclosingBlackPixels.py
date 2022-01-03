@@ -4,13 +4,13 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minArea(self, image, x, y):
         m, n = l..(image), l..(image[0])
-        left = self.searchColumns(image, 0, y, 0, m, True)
-        right = self.searchColumns(image, y+1, n, 0, m, False)
-        top = self.searchRows(image, 0, x, left, right, True)
-        bottom = self.searchRows(image, x+1, m, left, right, False)
+        left = searchColumns(image, 0, y, 0, m, T..)
+        right = searchColumns(image, y+1, n, 0, m, F..)
+        top = searchRows(image, 0, x, left, right, T..)
+        bottom = searchRows(image, x+1, m, left, right, F..)
         r.. (right-left)*(bottom-top)
     
     ___ searchColumns(self, image, i, j, top, bottom, opt):
@@ -35,7 +35,7 @@ class Solution(object):
                 i  = mid+1
         r.. i
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 [
@@ -47,7 +47,7 @@ class Solution(object):
             ),
         ]
         ___ image, x, y __ testCases:
-            result = self.minArea(image, x, y)
+            result = minArea(image, x, y)
             print('result: %s' % (result))
             print('-='*20+'-')
 

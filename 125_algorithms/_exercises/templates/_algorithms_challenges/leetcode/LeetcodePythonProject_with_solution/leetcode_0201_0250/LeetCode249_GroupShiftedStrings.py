@@ -4,18 +4,18 @@ Created on Feb 28, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ groupStrings(self, strings):
         """
         :type strings: List[str]
         :rtype: List[List[str]]
         """
-        hashmap = {}
+        hashmap    # dict
         ___ s __ strings:
-            hashStr = self.getHash(s)
+            hashStr = getHash(s)
             hashmap[hashStr] = hashmap.get(hashStr, []) + [s]
         res    # list
-        ___ vals __ hashmap.values():
+        ___ vals __ hashmap.v..
             res.a..(vals)
         r.. res
     
@@ -37,21 +37,21 @@ class Solution(object):
         """
         result    # list
         ___ s __ strings:
-            added = False
+            added = F..
             ___ l __ result:
-                __ self.isSameGroup(l[0], s):
+                __ isSameGroup(l[0], s):
                     l.a..(s)
-                    added = True
+                    added = T..
             __ n.. added:
                 result.a..([s])
         r.. result
     
     ___ isSameGroup(self, s1, s2):
         __ l..(s1) != l..(s2):
-            r.. False
+            r.. F..
         length = l..(s1)
         __ length __ 1:
-            r.. True
+            r.. T..
         diff = ord(s1[0]) - ord(s2[0])
         __ diff < 0:
             diff += 26
@@ -62,16 +62,16 @@ class Solution(object):
             __ d > 26:
                 d -= 26
             __ d != diff:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["abc","bcd","acef","xyz","az","ba","a","z"],
         ]
         ___ strings __ testCases:
             print('strs: %s' % (strings))
-            result = self.groupStrings(strings)
+            result = groupStrings(strings)
             print('result: %s' % (result))
             print('-='*20+'-')
     

@@ -4,7 +4,7 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ lexicalOrder(self, n):
         res    # list
         curr = 1
@@ -20,13 +20,13 @@ class Solution(object):
                 curr = curr//10+1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             113,
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.lexicalOrder(n)
+            result = lexicalOrder(n)
             print('result: %s' % result)
             print('-='*20+'-')
 

@@ -18,7 +18,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ increasingTriplet(self, nums):
         """
         Brute force: O(N^3)
@@ -35,9 +35,9 @@ class Solution(object):
             ____ e != min1 a.. e < min2:
                 min2 = e
             ____ e > min2:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..
 
     ___ increasingTripletError(self, nums):
         """
@@ -52,6 +52,6 @@ class Solution(object):
 
             stk.a..(elt)
             __ l..(stk) >= 3:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..

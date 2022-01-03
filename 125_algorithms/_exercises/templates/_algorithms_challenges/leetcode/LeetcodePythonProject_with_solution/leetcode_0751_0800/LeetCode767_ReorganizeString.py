@@ -3,7 +3,7 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ reorganizeString(self, S):
         """
         :type S: str
@@ -11,11 +11,11 @@ class Solution(object):
         """
         _______ heapq
         s = S
-        hashmap = {}
+        hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
         heap    # list
-        ___ c, freq __ hashmap.items():
+        ___ c, freq __ hashmap.i..:
             heapq.heappush(heap, [-freq, c])
         res = ''
         w.... heap:
@@ -30,9 +30,9 @@ class Solution(object):
                     heapq.heappush(heap, [freq2+1, c2])
             __ freq1+1 < 0:
                 heapq.heappush(heap, [freq1+1, c1])
-        r.. ''.join(res)
+        r.. ''.j..(res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             "vvvlo",
             "aab",
@@ -40,7 +40,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.reorganizeString(s)
+            result = reorganizeString(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

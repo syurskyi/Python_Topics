@@ -1,4 +1,4 @@
-_______ re
+_______ __
 ____ collections _______ Counter
 ____ dataclasses _______ dataclass, field
 ____ string _______ punctuation
@@ -35,7 +35,7 @@ But, in a larger sense, we cannot dedicate—we cannot consecrate—we cannot ha
 
 
 @dataclass
-class Corpora:
+c_ Corpora:
     """Add the inital variables along with creating any methods that
     will get this working as described in the bite's description.
     """
@@ -43,12 +43,12 @@ class Corpora:
     count: int = 5
     tag: s.. = '#'
     extra: List[s..] = field(default_factory=l..)
-    stopwords: Set[s..] = field(init=False)
+    stopwords: Set[s..] = field(init=F..)
 
-    ___ __post_init__(self):
-        self.stopwords = STOPWORDS
+    ___ __post_init__
+        stopwords = STOPWORDS
 
-    @property
+    $
     ___ cleaned(self) -> s..:
         """Takes a corpus and cleans it up.
 
@@ -59,12 +59,12 @@ class Corpora:
         :param txt: Corpus of text
         :return: cleaned up corpus
         """
-        text = ''.join(c ___ c __ self.txt.lower() __ c n.. __ punctuation)
-        ___ x __ self.extra:
-            text = re.sub(x, ' ', text)
+        text = ''.j..(c ___ c __ txt.l.. __ c n.. __ punctuation)
+        ___ x __ extra:
+            text = __.sub(x, ' ', text)
         r.. text
 
-    @property
+    $
     ___ metrics(self) -> List[Tuple[s.., int]]:
         """Generates word count metrics.
 
@@ -74,12 +74,12 @@ class Corpora:
 
         :return: List of tuples, i.e. ("word", count)
         """
-        wordlist = [word ___ word __ self.cleaned.s..  __ n.. word __ self.stopwords]
+        wordlist = [word ___ word __ cleaned.s..  __ n.. word __ stopwords]
         metrics = Counter(wordlist)
 
-        r.. metrics.most_common(self.count)
+        r.. metrics.most_common(count)
 
-    @property
+    $
     ___ graph(self) -> N..
         """Generates a textual graph of the words
 
@@ -105,6 +105,6 @@ class Corpora:
         :param metrics: List of tuples with word counts
         :return: None
         """
-        ___ m __ self.metrics:
-            print(f'{m[0]:>10} {self.tag * m[1]}')
+        ___ m __ metrics:
+            print(f'{m[0]:>10} {tag * m[1]}')
         r.. N..

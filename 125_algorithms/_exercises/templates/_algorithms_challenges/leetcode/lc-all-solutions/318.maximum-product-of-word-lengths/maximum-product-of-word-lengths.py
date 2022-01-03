@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxProduct(self, words):
     """
     :type words: List[str]

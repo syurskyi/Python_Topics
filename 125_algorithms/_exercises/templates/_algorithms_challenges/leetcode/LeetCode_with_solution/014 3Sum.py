@@ -14,7 +14,7 @@ The solution set must not contain duplicate triplets.
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ threeSum_duplicate(self, num):
         """
         Hash
@@ -22,7 +22,7 @@ class Solution:
         :param num: array
         :return: a list of lists of length 3, [[val1,val2,val3]]
         """
-        reverse_map = {}
+        reverse_map    # dict
         ___ ind, val __ e..(num):
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
@@ -50,14 +50,14 @@ class Solution:
         """
 
         # hash
-        reverse_map = {}
+        reverse_map    # dict
         ___ ind, val __ e..(num):
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
             ____:
                 reverse_map[val].a..(ind)
 
-        result = {}
+        result    # dict
         ___ i __ xrange(l..(num)):
             ___ j __ xrange(i, l..(num)):
                 target = 0-num[i]-num[j]
@@ -70,7 +70,7 @@ class Solution:
                         result[lst] = 1  # hash
                         break
 
-        r.. result.keys()
+        r.. result.k..
 
     ___ threeSum(self, num):
         """

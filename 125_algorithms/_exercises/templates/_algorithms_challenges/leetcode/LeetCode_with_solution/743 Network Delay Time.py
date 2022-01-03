@@ -21,7 +21,7 @@ ____ collections _______ defaultdict
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
         """
         Dijkstra's algorithm
@@ -36,7 +36,7 @@ class Solution:
         w.... h:
             t, s = heapq.heappop(h)
             __ s __ G:
-                ___ d, w __ G[s].items():
+                ___ d, w __ G[s].i..:
                     __ t + w < reach_time[d]:
                         reach_time[d] = t + w
                         heapq.heappush(h, (t + w, d))

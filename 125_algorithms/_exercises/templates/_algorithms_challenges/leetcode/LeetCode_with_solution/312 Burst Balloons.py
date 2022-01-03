@@ -22,7 +22,7 @@ Return 167
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxCoins(self, A):
         """
         Divide & Conquer <- Divide Boundary <- Reverse Thinking

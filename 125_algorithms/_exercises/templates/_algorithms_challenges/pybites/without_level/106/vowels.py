@@ -44,9 +44,9 @@ ___ strip_vowels(text: s..) -> (s.., int):
     ___ line __ lines:
         newline = ''
         ___ c __ line:
-            __ c.lower() __ vowels:
+            __ c.l.. __ vowels:
                 c = '*'
                 count += 1
             newline += c
         results.a..(newline)
-    r.. '\n'.join(results), count
+    r.. '\n'.j..(results), count

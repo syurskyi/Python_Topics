@@ -63,7 +63,7 @@ ___ test_game_win(inp, capfd):
     game._answer = 6
 
     game()
-    ... game._win __ True
+    ... game._win __ T..
 
     out, _ = capfd.readouterr()
     expected = ['4 is too low', 'Number not in range',
@@ -81,7 +81,7 @@ ___ test_game_lose(inp, capfd):
     game._answer = 13
 
     game()
-    ... game._win __ False
+    ... game._win __ F..
 
     out, _ = capfd.readouterr()
     expected = ['Please enter a number', '5 is too low',

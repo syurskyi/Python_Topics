@@ -44,7 +44,7 @@ graph[j].
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ isBipartite(self, graph: List[List[int]]) -> bool:
         """
         coloring the graph
@@ -55,39 +55,39 @@ class Solution:
         ___ k __ r..(l..(G)):
             __ k n.. __ color:
                 color[k] = 0
-                __ n.. self.dfs(G, k, color):
-                    r.. False
+                __ n.. dfs(G, k, color):
+                    r.. F..
             # if colored, don't vist
 
-        r.. True
+        r.. T..
 
     ___ dfs(self, G, u, color):
         ___ nbr __ G[u]:
             __ nbr __ color:
                 __ color[nbr] __ color[u]:
-                    r.. False
+                    r.. F..
             ____:
                 color[nbr] = 1 - color[u]  # can be (0, 1) or (-1, 1)
-                __ n.. self.dfs(G, nbr, color):
-                    r.. False
+                __ n.. dfs(G, nbr, color):
+                    r.. F..
 
-        r.. True
+        r.. T..
 
 
-class SolutionError:
+c_ SolutionError:
     ___ isBipartite(self, graph: List[List[int]]) -> bool:
         G = graph
         A, B = set(), set()
         visited = defaultdict(bool)
         ___ k __ r..(l..(G)):
             __ n.. visited[k]:
-                __ n.. self.dfs(G, visited, k, A, B, True):
-                    r.. False
+                __ n.. dfs(G, visited, k, A, B, T..):
+                    r.. F..
 
-        r.. True
+        r.. T..
 
     ___ dfs(self, G, visited, u, A, B, is_A):
-        visited[u] = True
+        visited[u] = T..
         __ is_A:
             A.add(u)
         ____:
@@ -95,9 +95,9 @@ class SolutionError:
 
         ___ nbr __ G[u]:
             __ nbr __ A __ is_A ____ B:
-                r.. False
+                r.. F..
             __ n.. visited[nbr]:
-                __ n.. self.dfs(G, visited, nbr, A, B, False):
-                    r.. False
+                __ n.. dfs(G, visited, nbr, A, B, F..):
+                    r.. F..
 
-        r.. True
+        r.. T..

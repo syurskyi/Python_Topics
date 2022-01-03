@@ -2,11 +2,11 @@ amount_values = int(input())
 results    # list
 
 ___ c.. decimal_number):
-    is_negative = False
+    is_negative = F..
     __(decimal_number < 0):
         decimal_number *= -1
         decimal_number -=1
-        is_negative = True
+        is_negative = T..
     counter = 0
     w....(decimal_number != 0):
         remainder = decimal_number%2

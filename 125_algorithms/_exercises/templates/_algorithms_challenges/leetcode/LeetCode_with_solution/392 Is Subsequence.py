@@ -20,7 +20,7 @@ Return false.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ isSubsequence(self, s, t):
         """
         Greedy matching

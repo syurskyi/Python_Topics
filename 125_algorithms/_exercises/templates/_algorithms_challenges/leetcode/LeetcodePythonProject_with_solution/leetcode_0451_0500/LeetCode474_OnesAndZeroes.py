@@ -4,7 +4,7 @@ Created on Apr 26, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findMaxForm(self, strs, m, n):
         """
         :type strs: List[str]
@@ -49,7 +49,7 @@ class Solution(object):
                         dp[i][j] = max(dp[i][j], dp[i-count0][j-count1]+1)
         r.. dp[-1][-1]
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 ["10", "0001", "111001", "1", "0"], 5, 3
@@ -59,7 +59,7 @@ class Solution(object):
             ),
         ]
         ___ strs, m, n __ testCases:
-            result = self.findMaxForm(strs, m, n)
+            result = findMaxForm(strs, m, n)
             print('result: %s' % result)
             print('-='*20+'-')
 

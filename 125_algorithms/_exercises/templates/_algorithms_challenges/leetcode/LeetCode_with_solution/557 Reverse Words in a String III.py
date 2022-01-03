@@ -11,6 +11,6 @@ be any extra space in the string.
 """
 
 
-class Solution:
+c_ Solution:
     ___ reverseWords(self, s: s..) -> s..:
-        r.. " ".join(map(l.... x: x[::-1], s.s..(" ")))
+        r.. " ".j..(map(l.... x: x[::-1], s.s..(" ")))

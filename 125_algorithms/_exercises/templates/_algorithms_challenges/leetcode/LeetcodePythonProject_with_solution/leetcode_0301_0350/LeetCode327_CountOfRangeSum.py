@@ -3,19 +3,19 @@ Created on Mar 18, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ countRangeSum(self, nums, lower, upper):
         first = [0]
         ___ num __ nums:
             first.a..(first[-1]+num)
-        r.. self.mergeSort(0, l..(first), first, lower, upper)
+        r.. mergeSort(0, l..(first), first, lower, upper)
     
     ___ mergeSort(self, l, r, first, lower, upper):
         mid = (l+r)//2
         __ mid __ l:
             r.. 0
-        count = self.mergeSort(l, mid, first, lower, upper)+\
-            self.mergeSort(mid, r, first, lower, upper)
+        count = mergeSort(l, mid, first, lower, upper)+\
+            mergeSort(mid, r, first, lower, upper)
         i, j = mid, mid
         ___ left __ first[l:mid]:
             w.... i < r a.. first[i]-left <  lower: i+=1
@@ -24,7 +24,7 @@ class Solution(object):
         first[l:r] = s..(first[l:r])
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             (
                 [-2,5,-1],
@@ -43,7 +43,7 @@ class Solution(object):
             print('nums: %s' % (nums))
             print('lower: %s' % (lower))
             print('upper: %s' % (upper))
-            result = self.countRangeSum(nums, lower, upper)
+            result = countRangeSum(nums, lower, upper)
             print('result: %s' % (result))
             print('-='*20+'-')
 

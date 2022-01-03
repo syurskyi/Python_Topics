@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     Main Concept:
 
@@ -29,7 +29,7 @@ class Solution:
         r.. start __ tank >= 0 ____ NOT_FOUND
 
 
-class Solution:
+c_ Solution:
     """
     TLE: Simulate the process
     """
@@ -49,12 +49,12 @@ class Solution:
 
         ___ start __ r..(n):
             tank = 0
-            is_failed = False
+            is_failed = F..
 
             ___ mid __ RANGE[start:n] + RANGE[:start]:
                 tank += gas[mid]
                 __ tank < cost[mid]:
-                    is_failed = True
+                    is_failed = T..
                     break
                 tank -= cost[mid]
 

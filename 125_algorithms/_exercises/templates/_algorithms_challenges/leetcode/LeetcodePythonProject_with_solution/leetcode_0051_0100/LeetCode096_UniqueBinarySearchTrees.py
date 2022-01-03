@@ -3,7 +3,7 @@ Created on Jan 30, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numTrees(self, n):
         """
         :type n: int

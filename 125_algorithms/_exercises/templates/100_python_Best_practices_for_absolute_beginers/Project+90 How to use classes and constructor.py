@@ -1,10 +1,10 @@
-class company:
-    ___ __init__(self, employee_firstname, employee_surname):
-        self.firstname  employee_firstname
-        self.surname  employee_surname
+c_ company:
+    ___ - , employee_firstname, employee_surname):
+        firstname  employee_firstname
+        surname  employee_surname
 
-    ___ employee(self):
-        r.. self.firstname + ' ' + self.surname
+    ___ employee
+        r.. firstname + ' ' + surname
 
 staff  []
 ___ i __ r..(3):

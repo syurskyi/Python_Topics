@@ -16,7 +16,7 @@ string is 50000.
 """
 
 
-class Solution:
+c_ Solution:
     ___ validPalindrome(self, s: s..) -> bool:
         """
         Brute force, delete and check. O(n^2)
@@ -34,14 +34,14 @@ class Solution:
             ____:
                 # error, for -1, start > end. Indexing is like range
                 # return s[i:j] == s[i:j:-1] or s[i+1:j+1] == s[i+1:j+1:-1]
-                r.. self.is_palindrome(s[i:j]) o. self.is_palindrome(s[i+1:j+1])
+                r.. is_palindrome(s[i:j]) o. is_palindrome(s[i+1:j+1])
 
-        r.. True
+        r.. T..
 
     ___ is_palindrome(self, s):
         r.. s __ s[::-1]
 
 
 __ __name__ __ "__main__":
-    ... Solution().validPalindrome("aba") __ True
-    ... Solution().validPalindrome("abca") __ True
+    ... Solution().validPalindrome("aba") __ T..
+    ... Solution().validPalindrome("abca") __ T..

@@ -7,7 +7,7 @@ Please note that the string does not contain any non-printable characters.
 """
 
 
-class Solution:
+c_ Solution:
     ___ countSegments(self, s):
         """
         I could use split but it may not be the intention of this problem

@@ -19,7 +19,7 @@ _______ math
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ bulbSwitch(self, n):
         """
         Only bulbs with index being a perfect square number toggled odd number of times

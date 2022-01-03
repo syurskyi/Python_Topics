@@ -10,7 +10,7 @@ ___ test_zoo_5_animals():
                 "10003. Fish",
                 "10004. Lion",
                 "10005. Mouse")
-    ... zoo __ '\n'.join(expected)
+    ... zoo __ '\n'.j..(expected)
 
 """
 def test_animal_instance_str():

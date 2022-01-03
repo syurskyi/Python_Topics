@@ -11,22 +11,22 @@ ___ is_merge(s, part1, part2):
     ___ findall(part):
         pointer = 0
         ___ c __ part:
-            found = False
+            found = F..
             ___ i __ r..(pointer, l..(result)):
                 __ result[i] __ c:
                     pointer = i + 1
-                    found = True
+                    found = T..
                     break
             __ n.. found:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     ___ removechar(part):
         ___ c __ part:
             __ c __ result:
                 result.remove(c)
             ____:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     r.. findall(part1) a.. findall(part2) a.. removechar(part1 + part2) a.. l..(result) __ 0

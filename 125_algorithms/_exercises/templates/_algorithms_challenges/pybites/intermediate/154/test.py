@@ -3,7 +3,7 @@ ____ dataclasses _______ dataclass,field
 
 
 @dataclass
-class Test:
+c_ Test:
     x: l.. = field(default_factory=l..)
 
 

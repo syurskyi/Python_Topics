@@ -32,7 +32,7 @@ ____ typing _______ List
 ____ collections _______ Counter
 
 
-class Solution:
+c_ Solution:
     ___ uncommonFromSentences(self, A: s.., B: s..) -> List[s..]:
         """
         need counter, only need to appear once
@@ -40,7 +40,7 @@ class Solution:
         c = Counter(A.s..()) + Counter(B.s..())
         ret = [
             k
-            ___ k, v __ c.items()
+            ___ k, v __ c.i..
             __ v __ 1
         ]
         r.. ret
@@ -51,11 +51,11 @@ class Solution:
         """
         c_A, c_B = Counter(A.s..()), Counter(B.s..())
         ret    # list
-        ___ k, v __ c_A.items():
+        ___ k, v __ c_A.i..:
             __ v __ 1 a.. k n.. __ c_B:
                 ret.a..(k)
 
-        ___ k, v __ c_B.items():
+        ___ k, v __ c_B.i..:
             __ v __ 1 a.. k n.. __ c_A:
                 ret.a..(k)
 

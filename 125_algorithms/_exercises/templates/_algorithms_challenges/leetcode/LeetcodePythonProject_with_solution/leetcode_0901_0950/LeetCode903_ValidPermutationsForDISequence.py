@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ numPermsDISequence(self, S):
         """
         :type S: str
@@ -18,12 +18,12 @@ class Solution(object):
                         dp[i][j] = (dp[i-1][k] + dp[i][j]) % MOD
         r.. s..(dp[-1]) % MOD
 
-    ___ test(self):
+    ___ test
         testCases = [
             'DID',
         ]
         ___ s __ testCases:
-            res = self.numPermsDISequence(s)
+            res = numPermsDISequence(s)
             print('res: %s' % res)
             print('-='*30+'-')
 

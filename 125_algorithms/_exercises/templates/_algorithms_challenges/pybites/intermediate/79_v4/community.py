@@ -18,7 +18,7 @@ ___ create_user_bar_chart(content):
        and their corresponding member counts in pluses to standard output
     """
     rows = csv.DictReader(content.splitlines())
-    counts = s..(Counter([r['tz'] ___ r __ rows]).items(),
+    counts = s..(Counter([r['tz'] ___ r __ rows]).i..,
                     key=l.... x: x[0])
 
     ___ c __ counts:

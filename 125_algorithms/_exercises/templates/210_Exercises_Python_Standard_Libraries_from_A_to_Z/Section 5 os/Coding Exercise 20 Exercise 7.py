@@ -1,8 +1,8 @@
 _______ os
 
 base_dir  'images'
-png_dir  os.path.join(base_dir, 'images_png')
-jpg_dir  os.path.join(base_dir, 'images_jpg')
+png_dir  os.path.j..(base_dir, 'images_png')
+jpg_dir  os.path.j..(base_dir, 'images_jpg')
 
 __ n.. os.path.exists(base_dir):
     os.mkdir(base_dir)

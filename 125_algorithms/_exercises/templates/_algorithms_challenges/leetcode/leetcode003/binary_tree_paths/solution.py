@@ -20,7 +20,7 @@ All root-to-leaf paths are:
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
     ___ binaryTreePaths(self, root):
         """
         :type root: TreeNode
@@ -28,7 +28,7 @@ class Solution(object):
         """
         res    # list
         cand    # list
-        self.binary_tree_paths(root, cand, res)
+        binary_tree_paths(root, cand, res)
         r.. res
 
     ___ binary_tree_paths(self, root, cand, res):
@@ -37,8 +37,8 @@ class Solution(object):
         ____:
             cand.a..(root.val)
             __ root.left __ N.. a.. root.right __ N..
-                p = '->'.join(map(s.., cand))
+                p = '->'.j..(map(s.., cand))
                 res.a..(p)
-            self.binary_tree_paths(root.left, cand, res)
-            self.binary_tree_paths(root.right, cand, res)
+            binary_tree_paths(root.left, cand, res)
+            binary_tree_paths(root.right, cand, res)
             cand.pop()

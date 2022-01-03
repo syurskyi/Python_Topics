@@ -1,12 +1,12 @@
 ___ test_jackpot(result):
     __ l..(set(result)) __ 1:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..
 
 ___ test():
     print("test has started")
-    __ test_jackpot(['@', '@', '@', '@']) != True:
+    __ test_jackpot(['@', '@', '@', '@']) != T..:
         print("error1")
-    __ test_jackpot(['SS', 'SS', 'SS', 'Ss']) != False:
+    __ test_jackpot(['SS', 'SS', 'SS', 'Ss']) != F..:
         print("error2")

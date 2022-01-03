@@ -9,7 +9,7 @@ _______ pytest
 TMP = '/tmp'
 SCRIPT = 'links.py'
 IS_LOCAL = platform.system() __ ['Darwin', 'Linux']
-MY_CODE = SCRIPT __ IS_LOCAL ____ path.join(TMP, SCRIPT)
+MY_CODE = SCRIPT __ IS_LOCAL ____ path.j..(TMP, SCRIPT)
 
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
@@ -21,9 +21,9 @@ ___ my_file(tmp_path):
 
 
 ___ _create_and_verify_links(my_file, lines, expected_links):
-    my_file.write_bytes(b'\n'.join(lines))
+    my_file.write_bytes(b'\n'.j..(lines))
     cmd = f'cat {my_file.resolve()} | python {MY_CODE}'
-    output = subprocess.check_output(cmd, shell=True).splitlines()
+    output = subprocess.check_output(cmd, shell=T..).splitlines()
     ... a..(link __ output ___ link __ expected_links)
 
 

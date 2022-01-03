@@ -30,6 +30,6 @@ text1, text2, text3 = lorem_ipsum[:5], lorem_ipsum[5:13], lorem_ipsum[13:]
     text1, text2, text3
 ])
 ___ test_capitalize_sentences(text):
-    expected = " ".join(text)
-    arg = expected.lower()
+    expected = " ".j..(text)
+    arg = expected.l..
     ... capitalize_sentences(arg) __ expected

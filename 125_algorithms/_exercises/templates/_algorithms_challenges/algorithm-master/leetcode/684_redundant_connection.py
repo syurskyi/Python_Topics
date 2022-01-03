@@ -7,7 +7,7 @@ given input is an undirected graph
 """
 
 
-class Solution:
+c_ Solution:
     """
     UnionFind
     """
@@ -19,23 +19,23 @@ class Solution:
         __ n.. edges:
             r.. []
 
-        nodes = {}
+        nodes    # dict
 
         ___ u, v __ edges:
-            __ n.. self.union(nodes, u, v):
+            __ n.. union(nodes, u, v):
                 r.. [u, v]
 
         r.. []
 
     ___ union(self, nodes, u, v):
-        a = self.find(nodes, u)
-        b = self.find(nodes, v)
+        a = find(nodes, u)
+        b = find(nodes, v)
 
         __ a __ b:
-            r.. False
+            r.. F..
 
         nodes[a] = b
-        r.. True
+        r.. T..
 
     ___ find(self, nodes, u):
         __ u n.. __ nodes:
@@ -44,14 +44,14 @@ class Solution:
         __ nodes[u] __ u:
             r.. u
 
-        nodes[u] = self.find(nodes, nodes[u])
+        nodes[u] = find(nodes, nodes[u])
         r.. nodes[u]
 
 
 _______ collections
 
 
-class Solution:
+c_ Solution:
     """
     DFS
     """
@@ -67,7 +67,7 @@ class Solution:
 
         ___ u, v __ edges:
             # dfs to check u and v are connected already => cycle
-            __ u __ nodes a.. v __ nodes a.. self.dfs(nodes, u, v, set()):
+            __ u __ nodes a.. v __ nodes a.. dfs(nodes, u, v, set()):
                 r.. [u, v]
 
             nodes[u].add(v)
@@ -77,14 +77,14 @@ class Solution:
 
     ___ dfs(self, nodes, u, v, visited):
         __ u __ v:
-            r.. True
+            r.. T..
         __ u __ visited:
-            r.. False
+            r.. F..
 
         visited.add(u)
 
         ___ x __ nodes[u]:
-            __ self.dfs(nodes, x, v, visited):
-                r.. True
+            __ dfs(nodes, x, v, visited):
+                r.. T..
 
-        r.. False
+        r.. F..

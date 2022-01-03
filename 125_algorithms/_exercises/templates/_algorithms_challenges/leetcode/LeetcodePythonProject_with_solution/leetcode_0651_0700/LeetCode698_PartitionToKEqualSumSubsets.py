@@ -3,7 +3,7 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ canPartitionKSubsets(self, nums, k):
         """
         :type nums: List[int]
@@ -12,27 +12,27 @@ class Solution(object):
         """
         sumVal = s..(nums)
         __ sumVal%k != 0:
-            r.. False
+            r.. F..
         nums.s..(r.._T..
-        r.. self.helper(nums, [0]*k, sumVal//k, 0, k)
+        r.. helper(nums, [0]*k, sumVal//k, 0, k)
     
     ___ helper(self, nums, elems, target, ind, k):
         __ ind __ k:
-            r.. True
+            r.. T..
         ___ i __ r..(l..(nums)):
             __ elems[ind]+nums[i] <= target:
                 elems[ind] += nums[i]
                 __ elems[ind] __ target a..\
-                    self.helper(nums[:i]+nums[i+1:], elems, target, ind+1, k):
-                    r.. True
-                ____ self.helper(nums[:i]+nums[i+1:], elems, target, ind, k):
-                    r.. True
+                    helper(nums[:i]+nums[i+1:], elems, target, ind+1, k):
+                    r.. T..
+                ____ helper(nums[:i]+nums[i+1:], elems, target, ind, k):
+                    r.. T..
                 elems[ind] -= nums[i]
             ____:
                 break
-        r.. False
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [4, 3, 2, 3, 5, 2, 1],
@@ -50,7 +50,7 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = self.canPartitionKSubsets(nums, k)
+            result = canPartitionKSubsets(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

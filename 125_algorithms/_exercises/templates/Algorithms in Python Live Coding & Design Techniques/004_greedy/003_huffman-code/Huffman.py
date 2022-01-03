@@ -12,7 +12,7 @@ st.  'ABBCCCCGGGGDEAAAEDBBBDFAGG'
 
 ___ generate_tree(mapping
 
-    keySet  mapping.keys()
+    keySet  mapping.k..
     priorityQ  []
 
     ___ c __ keySet:

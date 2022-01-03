@@ -14,7 +14,7 @@ elements in their original order.
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ wiggleMaxLength(self, A):
         """
         Let H[i] be max wiggle length for [0, i] with A[i] as high point

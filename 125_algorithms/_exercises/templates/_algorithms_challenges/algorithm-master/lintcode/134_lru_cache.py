@@ -12,28 +12,28 @@ Dm <-> a <-> b <-> c <-> dm  |<- cache_list (dll)
 """
 
 
-class LRUCache:
-    ___ __init__(self, capacity):
+c_ LRUCache:
+    ___ - , capacity):
         """
         :type capacity: int
         """
-        self.cap = capacity
-        self.nodes = {}
-        self.D = CacheNode(-1)
-        self.d = CacheNode(-1)
-        self.D.nxt = self.d
-        self.d.pre = self.D
+        cap = capacity
+        nodes    # dict
+        D = CacheNode(-1)
+        d = CacheNode(-1)
+        D.nxt = d
+        d.pre = D
 
     ___ get(self, key):
         """
         :type key: int
         :rtype: int
         """
-        __ key n.. __ self.nodes:
+        __ key n.. __ nodes:
             r.. -1
 
-        self._update(key)
-        r.. self.nodes[key].val
+        _update(key)
+        r.. nodes[key].val
 
     ___ set(self, key, val):
         """
@@ -41,58 +41,58 @@ class LRUCache:
         :type val: int
         :rtype: void
         """
-        __ self.cap <= 0:
+        __ cap <= 0:
             r..
 
-        __ key __ self.nodes:
-            self._update(key, val)
+        __ key __ nodes:
+            _update(key, val)
             r..
 
-        w.... l..(self.nodes) >= self.cap:
-            self._evict()
+        w.... l..(nodes) >= cap:
+            _evict()
 
-        self._add(key, val)
+        _add(key, val)
 
-    ___ _evict(self):
-        node = self._pop_head()
-        del self.nodes[node.key]
+    ___ _evict
+        node = _pop_head()
+        del nodes[node.key]
 
     ___ _update(self, key, val_ N..
-        node = self.nodes[key]
+        node = nodes[key]
 
         __ val:
             node.val = val
 
         node.unlink()
-        self._add_tail(node)
+        _add_tail(node)
 
     ___ _add(self, key, val):
-        self.nodes[key] = CacheNode(key, val)
-        self._add_tail(self.nodes[key])
+        nodes[key] = CacheNode(key, val)
+        _add_tail(nodes[key])
 
-    ___ _pop_head(self):
-        node = self.D.nxt
+    ___ _pop_head
+        node = D.nxt
         node.unlink()
         r.. node
 
     ___ _add_tail(self, node):
-        node.link(self.d.pre, self.d)
+        node.link(d.pre, d)
 
 
-class CacheNode:
-    ___ __init__(self, key, val=N.., pre=N.., nxt_ N..
-        self.key = key
-        self.val = val
-        self.pre = pre
-        self.nxt = nxt
+c_ CacheNode:
+    ___ - , key, val=N.., pre=N.., nxt_ N..
+        key = key
+        val = val
+        pre = pre
+        nxt = nxt
 
     ___ link(self, pre, nxt):
-        self.pre = pre
-        self.nxt = nxt
+        pre = pre
+        nxt = nxt
         pre.nxt = self
         nxt.pre = self
 
-    ___ unlink(self):
-        self.pre.nxt = self.nxt
-        self.nxt.pre = self.pre
-        self.pre = self.nxt = N..
+    ___ unlink
+        pre.nxt = nxt
+        nxt.pre = pre
+        pre = nxt = N..

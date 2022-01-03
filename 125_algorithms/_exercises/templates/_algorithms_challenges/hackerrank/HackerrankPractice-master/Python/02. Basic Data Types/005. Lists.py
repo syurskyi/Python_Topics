@@ -9,7 +9,7 @@ ___ handler(result):
     __ command __ 'print':
         print(result)
     ____:
-        execute = 'result.' + command + "(" + ",".join(values) + ")"
+        execute = 'result.' + command + "(" + ",".j..(values) + ")"
         eval(execute)
 
 

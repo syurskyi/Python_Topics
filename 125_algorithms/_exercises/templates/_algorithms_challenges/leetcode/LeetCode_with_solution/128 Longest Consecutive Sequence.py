@@ -8,7 +8,7 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 Your algorithm should run in O(n) complexity.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ longestConsecutive_TLE(self, num):
         """
         O(n) within in one scan
@@ -54,7 +54,7 @@ class Solution:
         :param num: a list of integer
         :return: an integer
         """
-        visited = {item: False ___ item __ num}
+        visited = {item: F.. ___ item __ num}
 
         max_length = -1<<31
         ___ ind, val __ e..(num):
@@ -65,14 +65,14 @@ class Solution:
             # check val--
             sequence_val_expected = val-1
             w.... sequence_val_expected __ visited:
-                visited[sequence_val_expected] = True
+                visited[sequence_val_expected] = T..
                 sequence_val_expected -= 1
                 current_length += 1
 
             # check val++
             sequence_val_expected = val+1
             w.... sequence_val_expected __ visited:
-                visited[sequence_val_expected] = True
+                visited[sequence_val_expected] = T..
                 sequence_val_expected += 1
                 current_length += 1
 

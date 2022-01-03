@@ -4,7 +4,7 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ trailingZeroes(self, n):
         """
         :type n: int
@@ -18,7 +18,7 @@ class Solution(object):
             i *= 5
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             3,
             5,
@@ -26,7 +26,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % (n))
-            result = self.trailingZeroes(n)
+            result = trailingZeroes(n)
             print('result: %s' % (result))
             print('-='*20+'-')
 

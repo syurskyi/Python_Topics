@@ -14,7 +14,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ isValidBST(self, root):
         """
         :type root: TreeNode
@@ -32,17 +32,17 @@ class Solution:
             node = stack.pop()
 
             __ pre a.. node.val <= pre.val:
-                r.. False
+                r.. F..
 
             pre = node
 
             node = node.right
 
-        r.. True
+        r.. T..
 
 
-class Solution:
-    ans = True
+c_ Solution:
+    ans = T..
     pre = N..
 
     ___ isValidBST(self, root):
@@ -51,16 +51,16 @@ class Solution:
         :rtype: bool
         """
         __ n.. root:
-            r.. self.ans
+            r.. ans
 
-        self.isValidBST(root.left)
+        isValidBST(root.left)
 
-        __ self.pre a.. root.val <= self.pre.val:
-            self.ans = False
-            r.. self.ans
+        __ pre a.. root.val <= pre.val:
+            ans = F..
+            r.. ans
 
-        self.pre = root
+        pre = root
 
-        self.isValidBST(root.right)
+        isValidBST(root.right)
 
-        r.. self.ans
+        r.. ans

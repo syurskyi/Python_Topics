@@ -15,7 +15,7 @@ convert it to a height balanced BST.
 #         self.val = x
 #         self.next = None
 
-class Solution:
+c_ Solution:
     # @param head, a list node
     # @return a tree node
     ___ sortedListToBST(self, head):
@@ -35,8 +35,8 @@ class Solution:
             __ prev __ n.. N..
                 prev.next = N..
             root = TreeNode(slow.val)
-            left = self.sortedListToBST(head)
-            right = self.sortedListToBST(slow.next)
+            left = sortedListToBST(head)
+            right = sortedListToBST(slow.next)
             root.left = left
             root.right = right
             r.. root

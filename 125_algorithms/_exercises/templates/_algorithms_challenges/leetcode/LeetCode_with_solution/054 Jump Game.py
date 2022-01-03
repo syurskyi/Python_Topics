@@ -11,7 +11,7 @@ A = [2,3,1,1,4], return true.
 A = [3,2,1,0,4], return false.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ canJump_TLE(self, A):
         """
         dp with data structure.
@@ -50,13 +50,13 @@ class Solution:
         :return:
         """
         l = l..(A)
-        dp = [False ___ _ __ xrange(l+1)]  # last one is dummy
-        dp[0] = True
+        dp = [F.. ___ _ __ xrange(l+1)]  # last one is dummy
+        dp[0] = T..
         ___ ind, val __ e..(A):
             __ dp[ind]:
                 ___ i __ xrange(1, val+1):  # now jumping
                     __ ind+i<l+1:
-                        dp[ind+i] = True
+                        dp[ind+i] = T..
                     ____:
                         break
         r.. dp[-1]
@@ -77,7 +77,7 @@ class Solution:
         l = l..(A)
         # trivial
         __ l<=1:
-            r.. True
+            r.. T..
 
         # dp = [-1]*(l-1)  # normally starting from \phi
         dp = [-1 ___ _ __ xrange(l)]  # no need dummy here
@@ -87,16 +87,16 @@ class Solution:
             # check terminal condition first
             # able to reach the end index
             __ dp[i-1]>=l-1:  # directly reach the end
-                r.. True
+                r.. T..
 
             # fail to reach current index
             __ dp[i-1]<i:
-                r.. False
+                r.. F..
 
             # transition function
             dp[i] = max(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
 
-        r.. False
+        r.. F..
 
 
 

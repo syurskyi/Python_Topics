@@ -1,7 +1,7 @@
 _______ string
 
 
-class Solution(object):
+c_ Solution(object):
   ___ reverseVowels(self, s):
     """
     :type s: str
@@ -19,4 +19,4 @@ class Solution(object):
         s[start], s[end] = s[end], s[start]
         start += 1
         end -= 1
-    r.. "".join(s)
+    r.. "".j..(s)

@@ -1,13 +1,13 @@
-class Solution:
+c_ Solution:
     # @param {string} s
     # @param {string} t
     # @return {boolean}
     ___ isIsomorphic(self, s, t):
         ___ isomorphic(s,t):
-            d = {}
+            d    # dict
             ___ k,v __ z..(s,t):
                 d[k] = v
-            r.. ''.join([d[c] ___ c __ s]) __ t
+            r.. ''.j..([d[c] ___ c __ s]) __ t
         r.. isomorphic(s,t) a.. isomorphic(t,s)
 
 test = Solution()

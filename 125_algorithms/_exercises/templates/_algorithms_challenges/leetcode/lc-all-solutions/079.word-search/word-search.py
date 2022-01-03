@@ -1,35 +1,35 @@
-class Solution:
+c_ Solution:
   # @param board, a list of lists of 1 length string
   # @param word, a string
   # @return a boolean
   ___ exist(self, board, word):
     # write your code here
     __ word __ "":
-      r.. True
+      r.. T..
     __ l..(board) __ 0:
-      r.. False
+      r.. F..
     visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board))]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     ___ dfs(i, j, board, visited, word, index):
       __ word[index] != board[i][j]:
-        r.. False
+        r.. F..
       __ l..(word) - 1 __ index:
-        r.. True
+        r.. T..
       ___ direction __ directions:
         ni, nj = i + direction[0], j + direction[1]
         __ ni >= 0 a.. ni < l..(board) a.. nj >= 0 a.. nj < l..(board[0]):
           __ visited[ni][nj] __ 0:
             visited[ni][nj] = 1
             __ dfs(ni, nj, board, visited, word, index + 1):
-              r.. True
+              r.. T..
             visited[ni][nj] = 0
-      r.. False
+      r.. F..
 
     ___ i __ r..(0, l..(board)):
       ___ j __ r..(0, l..(board[0])):
         visited[i][j] = 1
         __ dfs(i, j, board, visited, word, 0):
-          r.. True
+          r.. T..
         visited[i][j] = 0
-    r.. False
+    r.. F..

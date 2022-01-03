@@ -4,7 +4,7 @@ Created on Mar 7, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findDuplicate(self, nums):
         """
         :type nums: List[int]

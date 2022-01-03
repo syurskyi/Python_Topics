@@ -3,7 +3,7 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findMin(self, nums):
         """
         :type nums: List[int]

@@ -7,7 +7,7 @@
 _______ collections
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findLeaves(self, root):
     """
     :type root: TreeNode

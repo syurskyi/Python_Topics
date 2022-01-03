@@ -1,5 +1,5 @@
 ____ d__ _______ d__, t.., date
-_______ re
+_______ __
 
 TODAY = date(2018, 11, 12)
 
@@ -14,7 +14,7 @@ ___ extract_dates(data):
     lines = data.splitlines()
     ___ i,line __ e..(lines):
         __ i > 2 a.. i != l..(lines) - 1:
-            date_ = re.search(r'^\s*\|\s(\S+)\s\|',line).group(1)
+            date_ = __.s..(r'^\s*\|\s(\S+)\s\|',line).group(1)
             year,month,day = map(int,date_.s..("-"))
 
             date_ = date y.._year, m.._month, d.._day)

@@ -4,18 +4,18 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class TrieNode(object):
-    ___ __init__(self, s = N..):
-        self.c = s
-        self.children = {}
-        self.isLeaf = False
+c_ TrieNode(object):
+    ___ - , s = N..):
+        c = s
+        children    # dict
+        isLeaf = F..
 
-class Trie(object):
-    ___ __init__(self):
-        self.root = TrieNode()
+c_ Trie(object):
+    ___ - ):
+        root = TrieNode()
     
     ___ insert(self, word):
-        children = self.root.children
+        children = root.children
         ___ i, c __ e..(word):
             __ c __ children:
                 t = children[c]
@@ -24,10 +24,10 @@ class Trie(object):
                 children[c] = t
             children = t.children
             __ i __ l..(word)-1:
-                t.isLeaf = True
+                t.isLeaf = T..
     
     ___ searchNode(self, word):
-        children = self.root.children
+        children = root.children
         ___ c __ word:
             __ c __ children:
                 t = children[c]
@@ -36,12 +36,12 @@ class Trie(object):
                 r.. N..
         r.. t
     
-    ___ search(self, word):
-        t = self.searchNode(word)
+    ___ s..(self, word):
+        t = searchNode(word)
         r.. bool(t a.. t.isLeaf)
     
     ___ startsWith(self, prefix):
-        t = self.searchNode(prefix)
+        t = searchNode(prefix)
         r.. bool(t __ n.. N..)
     
     

@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ isValidBST(self, root):
     """
     :type root: TreeNode
@@ -19,10 +19,10 @@ class Solution(object):
         continue
       __ p[0] __ 0:
         __ p[1].val <= prev:
-          r.. False
+          r.. F..
         prev = p[1].val
       ____:
         stack.a..((1, p[1].right))
         stack.a..((0, p[1]))
         stack.a..((1, p[1].left))
-    r.. True
+    r.. T..

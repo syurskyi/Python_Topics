@@ -1,6 +1,6 @@
-_______ re
+_______ __
 ___ autocorrect(input):
-    r.. re.sub(r'\bu\b|\b[Yy]ou\b|\byou+\b','your sister',input)
+    r.. __.sub(r'\bu\b|\b[Yy]ou\b|\byou+\b','your sister',input)
 
 print(autocorrect('You'))
 

@@ -29,7 +29,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ maxWidthRamp(self, A: List[int]) -> int:
         """
         Use stack? No, since require the furthest element rather than the closest

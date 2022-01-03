@@ -3,7 +3,7 @@ Created on Mar 20, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ cherryPickup(self, grid):
         """
         :type grid: List[List[int]]
@@ -31,7 +31,7 @@ class Solution(object):
                         dp[i][p] += grid[i][j]+(grid[p][q] __ i!=p ____ 0)
         r.. max(dp[-1][-1], 0)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [0, 1, -1],
@@ -40,7 +40,7 @@ class Solution(object):
             ],
         ]
         ___ grid __ testCases:
-            result = self.cherryPickup(grid)
+            result = cherryPickup(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

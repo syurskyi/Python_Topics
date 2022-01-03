@@ -3,7 +3,7 @@ Created on Oct 8, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ imageSmoother(self, M):
         """
         :type M: List[List[int]]
@@ -29,7 +29,7 @@ class Solution(object):
                 res[i][j] = tmp
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [2,3],
@@ -49,10 +49,10 @@ class Solution(object):
         ]
         ___ matrix __ testCases:
             print('matrix:')
-            print('\n'.join([s..(row) ___ row __ matrix]))
-            result = self.imageSmoother(matrix)
+            print('\n'.j..([s..(row) ___ row __ matrix]))
+            result = imageSmoother(matrix)
             print('result:')
-            print('\n'.join([s..(row) ___ row __ result]))
+            print('\n'.j..([s..(row) ___ row __ result]))
             print('-='*30+'-')
 
 __ __name__ __ '__main__':

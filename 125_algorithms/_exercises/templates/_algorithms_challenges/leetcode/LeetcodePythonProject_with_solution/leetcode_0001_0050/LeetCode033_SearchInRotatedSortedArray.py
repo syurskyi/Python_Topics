@@ -3,8 +3,8 @@ Created on Oct 31, 2017
 
 @author: MT
 '''
-class Solution(object):
-    ___ search(self, nums, target):
+c_ Solution(object):
+    ___ s..(self, nums, target):
         """
         :type nums: List[int]
         :type target: int

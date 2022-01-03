@@ -3,13 +3,13 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ slidingPuzzle(self, board):
         """
         :type board: List[List[int]]
         :rtype: int
         """
-        s = ''.join([s..(n) ___ n __ board[0]])+''.join([s..(n) ___ n __ board[1]])
+        s = ''.j..([s..(n) ___ n __ board[0]])+''.j..([s..(n) ___ n __ board[1]])
         visited = set([s])
         target = '123450'
         queue = [s]
@@ -28,7 +28,7 @@ class Solution(object):
                         continue
                     arr = l..(s)
                     arr[i], arr[j] = arr[j], arr[i]
-                    newS = ''.join(arr)
+                    newS = ''.j..(arr)
                     __ newS n.. __ visited:
                         visited.add(newS)
                         queue.a..(newS)
@@ -41,7 +41,7 @@ class Solution(object):
                 __ board[i][j] __ 0:
                     r.. i, j
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,2,3],[4,0,5]],
             [[1,2,3],[5,4,0]],
@@ -50,8 +50,8 @@ class Solution(object):
         ]
         ___ board __ testCases:
             print('board')
-            print('\n'.join([s..(row) ___ row __ board]))
-            result = self.slidingPuzzle(board)
+            print('\n'.j..([s..(row) ___ row __ board]))
+            result = slidingPuzzle(board)
             print('result: %s' % result)
             print('-='*30+'-')
 

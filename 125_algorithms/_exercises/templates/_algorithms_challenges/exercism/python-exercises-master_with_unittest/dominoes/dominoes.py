@@ -1,2 +1,2 @@
-___ chain(dominoes):
+___ c__(dominoes):
     pass

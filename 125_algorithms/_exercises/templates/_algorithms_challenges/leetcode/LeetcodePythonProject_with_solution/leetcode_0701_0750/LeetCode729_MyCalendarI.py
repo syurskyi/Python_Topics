@@ -3,15 +3,15 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-class Interval(object):
-    ___ __init__(self, start, end):
-        self.start = start
-        self.end = end
+c_ Interval(object):
+    ___ - , start, end):
+        start = start
+        end = end
 
-class MyCalendar(object):
+c_ MyCalendar(object):
 
-    ___ __init__(self):
-        self.intervals    # list
+    ___ - ):
+        intervals    # list
 
     ___ book(self, start, end):
         """
@@ -20,16 +20,16 @@ class MyCalendar(object):
         :rtype: bool
         """
         newInterval = Interval(start, end)
-        ___ i, interval __ e..(self.intervals):
+        ___ i, interval __ e..(intervals):
             __ newInterval.end <= interval.start:
-                self.intervals.insert(i, newInterval)
-                r.. True
+                intervals.insert(i, newInterval)
+                r.. T..
             ____ newInterval.start >= interval.end:
                 continue
             ____:
-                r.. False
-        self.intervals.a..(newInterval)
-        r.. True
+                r.. F..
+        intervals.a..(newInterval)
+        r.. T..
 
 __ __name__ __ '__main__':
     cal = MyCalendar()

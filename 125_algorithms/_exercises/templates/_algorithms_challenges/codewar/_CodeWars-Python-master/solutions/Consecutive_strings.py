@@ -23,7 +23,7 @@ ___ longest_consec(strarr, k):
             longest = length
             index = i
 
-    r.. ''.join(strarr[index: index + k])
+    r.. ''.j..(strarr[index: index + k])
 
 
 ... longest_consec(["zone", "abigail", "theta", "form", "libe", "zas"], 2) __ "abigailtheta"

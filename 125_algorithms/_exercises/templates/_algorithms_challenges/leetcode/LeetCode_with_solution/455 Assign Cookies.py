@@ -13,7 +13,7 @@ You cannot assign more than one cookie to one child.
 """
 
 
-class Solution:
+c_ Solution:
     ___ findContentChildren(self, g, s):
         """
         Greedy

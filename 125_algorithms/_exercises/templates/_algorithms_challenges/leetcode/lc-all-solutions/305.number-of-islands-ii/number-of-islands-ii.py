@@ -1,28 +1,28 @@
-class UnionFind(object):
-  ___ __init__(self, m, n):
-    self.dad = [i ___ i __ r..(m * n)]
-    self.rank = [0 ___ _ __ r..(m * n)]
+c_ UnionFind(object):
+  ___ - , m, n):
+    dad = [i ___ i __ r..(m * n)]
+    rank = [0 ___ _ __ r..(m * n)]
 
   ___ find(self, x):
-    __ self.dad[x] != x:
-      self.dad[x] = self.find(self.dad[x])
-    r.. self.dad[x]
+    __ dad[x] != x:
+      dad[x] = find(dad[x])
+    r.. dad[x]
 
   ___ union(self, xy):
-    x, y = map(self.find, xy)
+    x, y = map(find, xy)
     __ x __ y:
-      r.. False
-    __ self.rank[x] > self.rank[y]:
-      self.dad[y] = x
-    ____ self.rank[x] < self.rank[y]:
-      self.dad[x] = y
+      r.. F..
+    __ rank[x] > rank[y]:
+      dad[y] = x
+    ____ rank[x] < rank[y]:
+      dad[x] = y
     ____:
-      self.dad[y] = x
-      self.rank[x] += 1
-    r.. True
+      dad[y] = x
+      rank[x] += 1
+    r.. T..
 
 
-class Solution(object):
+c_ Solution(object):
   ___ numIslands2(self, m, n, positions):
     """
     :type m: int

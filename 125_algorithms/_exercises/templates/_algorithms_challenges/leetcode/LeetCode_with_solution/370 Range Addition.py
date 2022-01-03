@@ -4,7 +4,7 @@ Premium question
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ getModifiedArray(self, length, updates):
         """
         Brute force: O(kn)

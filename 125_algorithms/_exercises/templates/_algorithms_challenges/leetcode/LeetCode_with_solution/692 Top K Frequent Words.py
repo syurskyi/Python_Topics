@@ -27,19 +27,19 @@ ____ collections _______ defaultdict
 ____ typing _______ List
 
 
-class Word:
-    ___ __init__(self, content, count):
-        self.content = content
-        self.count = count
+c_ Word:
+    ___ - , content, count):
+        content = content
+        count = count
 
     ___ __lt__(self, other):
-        __ self.count __ other.count:
-            r.. self.content > other.content
+        __ count __ other.count:
+            r.. content > other.content
 
-        r.. self.count < other.count
+        r.. count < other.count
 
 
-class Solution:
+c_ Solution:
     ___ topKFrequent(self, words: List[s..], k: int) -> List[s..]:
         """
         quick select log n
@@ -50,7 +50,7 @@ class Solution:
         ___ w __ words:
             counter[w] += 1
 
-        ___ w, c __ counter.items():
+        ___ w, c __ counter.i..:
             heapq.heappush(h, Word(w, c))
             __ l..(h) > k:
                 heapq.heappop(h)

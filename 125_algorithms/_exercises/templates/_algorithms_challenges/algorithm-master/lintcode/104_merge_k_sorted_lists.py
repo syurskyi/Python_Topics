@@ -8,7 +8,7 @@ class ListNode(object):
 _______ heapq
 
 
-class Solution:
+c_ Solution:
     ___ mergeKLists(self, lists):
         """
         :type lists: list[ListNode]

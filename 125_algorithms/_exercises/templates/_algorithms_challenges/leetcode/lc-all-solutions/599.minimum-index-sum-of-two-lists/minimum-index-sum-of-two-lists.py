@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findRestaurant(self, list1, list2):
     """
     :type list1: List[str]
@@ -7,7 +7,7 @@ class Solution(object):
     """
     minSum = float("inf")
     ans    # list
-    d = {}
+    d    # dict
     ___ i, name __ e..(list2):
       d[name] = i
     ___ i, name __ e..(list1):

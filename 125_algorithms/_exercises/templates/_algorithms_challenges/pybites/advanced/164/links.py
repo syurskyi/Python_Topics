@@ -15,11 +15,11 @@ ___ make_html_links():
             link_name = link_name.s..
 
 
-            domain = re.search(r'https?//(.+?)/').group(1)
+            domain = __.s..(r'https?//(.+?)/').group(1)
             __ domain n.. __ INTERNAL_LINKS:
-                add_target = True
+                add_target = T..
             ____:
-                add_target = False
+                add_target = F..
 
 
             

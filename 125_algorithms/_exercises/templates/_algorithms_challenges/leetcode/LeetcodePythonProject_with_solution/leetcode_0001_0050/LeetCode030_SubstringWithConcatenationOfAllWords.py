@@ -3,7 +3,7 @@ Created on Nov 1, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findSubstring(self, s, words):
         """
         :type s: str
@@ -12,12 +12,12 @@ class Solution(object):
         """
         res    # list
         __ n.. words o. n.. s: r.. res
-        hashmap0 = {}
+        hashmap0    # dict
         ___ word __ words:
             hashmap0[word] = hashmap0.get(word, 0)+1
         wordLen = l..(words[0])
         ___ j __ r..(wordLen):
-            hashmap = {}
+            hashmap    # dict
             start = j
             count = 0
             ___ i __ r..(j, l..(s)-wordLen+1, wordLen):
@@ -37,12 +37,12 @@ class Solution(object):
                         count -= 1
                         start += wordLen
                 ____:
-                    hashmap = {}
+                    hashmap    # dict
                     start = i+wordLen
                     count = 0
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 'barfoothefoobarman',
@@ -64,7 +64,7 @@ class Solution(object):
         ___ s, words __ testCases:
             print('s: %s' % s)
             print('words: %s' % words)
-            result = self.findSubstring(s, words)
+            result = findSubstring(s, words)
             print('result: %s' % result)
             print('-='*30+'-')
 

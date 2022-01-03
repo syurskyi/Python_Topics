@@ -5,7 +5,7 @@ _______ urllib.request
 TMP = os.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.join(TMP, DICT)
+DICTIONARY = os.path.j..(TMP, DICT)
 urllib.request.urlretrieve(f'{S3}{DICT}', DICTIONARY)
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),

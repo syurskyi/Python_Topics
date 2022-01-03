@@ -9,7 +9,7 @@ Note: n will be less than 15,000.
 """
 
 
-class Solution:
+c_ Solution:
     ___ find132pattern(self, nums):
         """
         Brute force i, j, k O(n^3)
@@ -39,11 +39,11 @@ class Solution:
             w.... stack a.. stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
                 stack.pop()
             __ stack a.. stack[-1][0] < v:
-                r.. True
+                r.. T..
             mini = m..(mini, v)
             stack.a..((mini, v))
 
-        r.. False
+        r.. F..
 
 
     ___ find132pattern_TLE(self, nums):
@@ -59,14 +59,14 @@ class Solution:
             ___ j __ r..(i + 1, l..(nums)):
                 __ nums[j] > nums[i]:
                     __ nums[j] < maxa:
-                        r.. True
+                        r.. T..
                     maxa = max(maxa, nums[j])
 
-        r.. False
+        r.. F..
 
 
 __ __name__ __ "__main__":
-    ... Solution().find132pattern([1, 2, 3, 4]) __ False
-    ... Solution().find132pattern([3, 1, 4, 2]) __ True
-    ... Solution().find132pattern([-1, 3, 2, 0]) __ True
-    ... Solution().find132pattern([-2, 1, 1]) __ True
+    ... Solution().find132pattern([1, 2, 3, 4]) __ F..
+    ... Solution().find132pattern([3, 1, 4, 2]) __ T..
+    ... Solution().find132pattern([-1, 3, 2, 0]) __ T..
+    ... Solution().find132pattern([-2, 1, 1]) __ T..

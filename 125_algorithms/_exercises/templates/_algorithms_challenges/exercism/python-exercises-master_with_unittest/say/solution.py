@@ -1,4 +1,4 @@
-___ say(number, recursive=False):
+___ say(number, recursive=F..):
     small = d..(e..((
         'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
         'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
@@ -30,13 +30,13 @@ ___ say(number, recursive=False):
     __ number < m:
         __ number % k __ 0:
             r.. say(number // k) + ' thousand'
-        r.. say(number // k) + ' thousand ' + say(number % k, True)
+        r.. say(number // k) + ' thousand ' + say(number % k, T..)
 
     __ number < b:
         __ number % m __ 0:
             r.. say(number // m) + ' million'
-        r.. say(number // m) + ' million ' + say(number % m, True)
+        r.. say(number // m) + ' million ' + say(number % m, T..)
 
     __ number % b __ 0:
         r.. say(number // b) + ' billion'
-    r.. say(number // b) + ' billion ' + say(number % b, True)
+    r.. say(number // b) + ' billion ' + say(number % b, T..)

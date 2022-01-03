@@ -17,7 +17,7 @@ Note: The length of given array won't exceed 10000.
 ____ bisect _______ bisect
 
 
-class Solution:
+c_ Solution:
     ___ nextGreaterElements(self, nums):
         """
         scan the nums from right to left, since next largest number, you can

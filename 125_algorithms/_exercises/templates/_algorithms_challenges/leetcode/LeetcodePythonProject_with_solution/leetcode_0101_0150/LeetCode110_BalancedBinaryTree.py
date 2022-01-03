@@ -5,32 +5,32 @@ Created on Feb 1, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ isBalanced(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
         __ n.. root:
-            r.. True
+            r.. T..
         ____ n.. root.left a.. n.. root.right:
-            r.. True
+            r.. T..
         ____:
-            r.. abs(self.getHeight(root.left)-self.getHeight(root.right)) <= 1 a..\
-                self.isBalanced(root.left) a.. self.isBalanced(root.right)
+            r.. abs(getHeight(root.left)-getHeight(root.right)) <= 1 a..\
+                isBalanced(root.left) a.. isBalanced(root.right)
     
     ___ getHeight(self, root):
         __ n.. root:
             r.. 0
-        leftHeight = self.getHeight(root.left)
-        rightHeight = self.getHeight(root.right)
+        leftHeight = getHeight(root.left)
+        rightHeight = getHeight(root.right)
         r.. max(leftHeight, rightHeight) + 1
     
-    ___ test(self):
+    ___ test
         pass

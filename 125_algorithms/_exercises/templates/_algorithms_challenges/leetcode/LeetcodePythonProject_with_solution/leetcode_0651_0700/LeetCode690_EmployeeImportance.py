@@ -15,14 +15,14 @@ class Employee(object):
         # the id of direct subordinates
         self.subordinates = subordinates
 """
-class Solution(object):
+c_ Solution(object):
     ___ getImportance(self, employees, id):
         """
         :type employees: Employee
         :type id: int
         :rtype: int
         """
-        hashmap = {}
+        hashmap    # dict
         ___ emp __ employees:
             hashmap[emp.id] = hashmap.get(emp.id, []) + [emp]
         queue    # list

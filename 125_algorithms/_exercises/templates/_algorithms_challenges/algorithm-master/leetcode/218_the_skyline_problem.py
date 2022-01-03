@@ -4,44 +4,44 @@ REF: https://briangordon.github.io/2014/08/the-skyline-problem.html
 _______ heapq
 
 
-class HashHeapq:
-    ___ __init__(self):
-        self.heap    # list
-        self.deleted = {}
+c_ HashHeapq:
+    ___ - ):
+        heap    # list
+        deleted    # dict
 
     ___ push(self, val):
-        heapq.heappush(self.heap, val)
+        heapq.heappush(heap, val)
 
-    ___ pop(self):
-        __ self.is_empty():
+    ___ pop
+        __ is_empty():
             r.. -1
 
-        r.. heapq.heappop(self.heap)
+        r.. heapq.heappop(heap)
 
     ___ remove(self, val):
-        __ self.is_empty():
+        __ is_empty():
             r..
 
-        __ val n.. __ self.deleted:
-            self.deleted[val] = 0
+        __ val n.. __ deleted:
+            deleted[val] = 0
 
-        self.deleted[val] += 1
+        deleted[val] += 1
 
-    ___ top(self):
-        __ self.is_empty():
+    ___ top
+        __ is_empty():
             r.. -1
 
-        r.. self.heap[0]
+        r.. heap[0]
 
-    ___ is_empty(self):
-        w.... self.heap a.. self.deleted.get(self.heap[0]):
-            val = heapq.heappop(self.heap)
-            self.deleted[val] -= 1
+    ___ is_empty
+        w.... heap a.. deleted.get(heap[0]):
+            val = heapq.heappop(heap)
+            deleted[val] -= 1
 
-        r.. n.. self.heap
+        r.. n.. heap
 
 
-class Solution:
+c_ Solution:
     ___ getSkyline(self, buildings):
         """
         :type buildings: List[List[int]]
@@ -54,8 +54,8 @@ class Solution:
         time    # list
 
         ___ x, _x, height __ buildings:
-            time.a..((x, height, True))
-            time.a..((_x, height, False))
+            time.a..((x, height, T..))
+            time.a..((_x, height, F..))
 
         time.s..()
         heap = HashHeapq()

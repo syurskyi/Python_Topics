@@ -68,15 +68,15 @@ ___ update_quote(qid):
     __ l..(q) __ 0:
         abort(404)
     q = q[0]
-    dirty = False
+    dirty = F..
     quote_str = request.json.get('quote')
     __ quote_str:
         q['quote'] = quote_str
-        dirty = True
+        dirty = T..
     movie_str = request.json.get('movie')
     __ movie_str:
         q['movie'] = movie_str
-        dirty = True
+        dirty = T..
     __ n.. dirty:
         abort(400)
     r.. jsonify(quote=q), 200

@@ -4,7 +4,7 @@ Given an integer, write a function to determine if it is a power of two.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ isPowerOfTwo(self, n):
         """
         Bit manipulation
@@ -12,6 +12,6 @@ class Solution:
         :rtype: bool
         """
         __ n <= 0:
-            r.. False
+            r.. F..
 
         r.. n & (n-1) __ 0

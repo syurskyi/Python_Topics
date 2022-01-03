@@ -4,7 +4,7 @@ Created on Mar 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ integerBreak(self, n):
         dp = [0]*(n+1)
         ___ i __ r..(1, n):

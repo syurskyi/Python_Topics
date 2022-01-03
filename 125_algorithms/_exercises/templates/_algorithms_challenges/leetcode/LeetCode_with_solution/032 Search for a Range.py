@@ -11,7 +11,7 @@ return [3, 4].
 """
 
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ searchRange(self, A, target):
         """
         Binary Search Twice

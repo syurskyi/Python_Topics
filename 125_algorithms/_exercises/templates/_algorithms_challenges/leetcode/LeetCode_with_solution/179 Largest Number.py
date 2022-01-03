@@ -8,7 +8,7 @@ Note: The result may be very large, so you need to return a string instead of an
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ largestNumber(self, nums):
         """
         Start off by enumerate simple examples
@@ -20,8 +20,8 @@ class Solution:
         :rtype: str
         """
         nums = map(s.., nums)
-        nums.s..(cmp=self.cmp, r.._T..
-        nums = "".join(nums)
+        nums.s..(cmp=cmp, r.._T..
+        nums = "".j..(nums)
         nums = nums.lstrip("0")
         __ n.. nums:
             nums = "0"
@@ -45,7 +45,7 @@ class Solution:
         __ l..(a) __ l..(b):
             r.. 0
 
-        r.. order*self.cmp(a, b[l..(a):])
+        r.. order*cmp(a, b[l..(a):])
 
 
 __ __name__ __ "__main__":

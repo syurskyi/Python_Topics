@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ maxEnvelopes(self, envelopes):
     """
     :type envelopes: List[List[int]]

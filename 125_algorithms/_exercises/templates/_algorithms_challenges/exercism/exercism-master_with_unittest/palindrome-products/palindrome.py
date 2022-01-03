@@ -2,7 +2,7 @@ ____ operator _______ mul
 ____ functools _______ reduce
 
 
-class Palindromes:
+c_ Palindromes:
     @classmethod
     ___ smallest_palindrome(cls, max_factor, min_factor=0):
         r.. m..(cls.palindromes(max_factor, min_factor), key=l....
@@ -30,7 +30,7 @@ class Palindromes:
 
     @staticmethod
     ___ is_palindrome(num):
-        r.. s..(num) __ ''.join(reversed(s..(num)))
+        r.. s..(num) __ ''.j..(reversed(s..(num)))
 
 
 ___ smallest_palindrome(max_factor, min_factor=0):

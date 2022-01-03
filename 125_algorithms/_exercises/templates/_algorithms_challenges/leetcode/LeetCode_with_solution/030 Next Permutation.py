@@ -13,7 +13,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ nextPermutation(self, num):
         """
         Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.

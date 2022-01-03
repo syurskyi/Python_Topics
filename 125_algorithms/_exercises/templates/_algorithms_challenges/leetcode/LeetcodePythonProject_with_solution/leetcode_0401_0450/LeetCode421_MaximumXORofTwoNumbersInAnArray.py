@@ -4,7 +4,7 @@ Created on Apr 13, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findMaximumXOR(self, nums):
         """
         :type nums: List[int]

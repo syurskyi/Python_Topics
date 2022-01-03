@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ lengthOfLastWord(self, s: s..) -> int:
         l = l..(s)-1
         count = 0

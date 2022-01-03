@@ -4,20 +4,20 @@ distinct indices i and j in the array such that nums[i] = nums[j] and the
 difference between i and j is at most k.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ containsNearbyDuplicate(self, nums, k):
         """
         :type nums: List[int]
         :type k: int
         :rtype: bool
         """
-        d = {}
+        d    # dict
         ___ i, e __ e..(nums):
             __ e __ d:
                 __ i - d[e] <= k:
-                    r.. True
+                    r.. T..
             d[e] = i
-        r.. False
+        r.. F..
 
 
 args1 = [[1, 0, 1, 1], 1]

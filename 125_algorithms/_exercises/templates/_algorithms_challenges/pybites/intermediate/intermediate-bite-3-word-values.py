@@ -22,7 +22,7 @@ TMP = os.getenv("TMP", "/tmp")
 print(TMP)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.join(TMP, DICT)
+DICTIONARY = os.path.j..(TMP, DICT)
 print(DICTIONARY)
 urllib.request.urlretrieve(f'{S3}{DICT}', DICTIONARY)
 

@@ -3,7 +3,7 @@ Created on Sep 3, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ distributeCandies(self, candies):
         """
         :type candies: List[int]
@@ -13,14 +13,14 @@ class Solution(object):
         candies = set(candies)
         r.. m..(n, l..(candies))
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1,1,2,3],
             [1,1,2,2,3,3],
         ]
         ___ candies __ testCases:
             print('candies: %s' % candies)
-            result = self.distributeCandies(candies)
+            result = distributeCandies(candies)
             print('result: %s' % result)
             print('-='*30+'-')
 

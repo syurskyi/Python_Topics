@@ -8,7 +8,7 @@ Given sorted array A = [1,1,1,2,2,3],
 Your function should return length = 5, and A is now [1,1,2,2,3].
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ removeDuplicates_complicated(self, A):
         """
         Two pointers algorithm, open_ptr & closed_ptr
@@ -56,14 +56,14 @@ class Solution:
             r.. length
 
         close_ptr = 0
-        duplicate_once = False  # flag
+        duplicate_once = F..  # flag
         ___ open_ptr __ r..(close_ptr+1, length):
             __ A[close_ptr]!=A[open_ptr]:  # found non-duplicate
-                duplicate_once = False
+                duplicate_once = F..
                 close_ptr += 1
                 A[close_ptr] = A[open_ptr]
             ____ n.. duplicate_once:  # found duplicate, but not duplicated before
-                duplicate_once = True
+                duplicate_once = T..
                 close_ptr += 1
                 A[close_ptr] = A[open_ptr]
             ____:  # found duplicate, and duplicated before, continue searching

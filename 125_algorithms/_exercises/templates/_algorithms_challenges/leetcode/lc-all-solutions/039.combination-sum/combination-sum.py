@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ combinationSum(self, candidates, target):
     """
     :type candidates: List[int]

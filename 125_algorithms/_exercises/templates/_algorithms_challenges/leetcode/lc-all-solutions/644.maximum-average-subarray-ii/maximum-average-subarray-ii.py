@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   # just guess the answer by binary search
   # note that we can check if there is a subarray that has avg. sum >= a certain value in linear time
   # then overall time complexity is O(nlog(max(nums) - min(nums)))
@@ -14,14 +14,14 @@ class Solution(object):
       ___ i __ r..(k):
         sums += nums[i] - mid
       __ sums >= 0:
-        r.. True
+        r.. T..
       ___ i __ r..(k, l..(nums)):
         sums += nums[i] - mid
         preSums += nums[i - k] - mid
         minSum = m..(minSum, preSums)
         __ sums - minSum >= 0:
-          r.. True
-      r.. False
+          r.. T..
+      r.. F..
 
     lo = m..(nums)
     hi = max(nums)

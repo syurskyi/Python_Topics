@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ validWordAbbreviation(self, dest, src):
     """
     :type word: str
@@ -6,27 +6,27 @@ class Solution(object):
     :rtype: bool
     """
     start = j = 0
-    digit = False
+    digit = F..
     ___ i __ r..(0, l..(src)):
       __ src[i].isdigit():
         __ n.. digit:
           __ src[i] __ "0":
-            r.. False
+            r.. F..
           start = i
-          digit = True
+          digit = T..
       ____:
         __ digit:
           jump = int(src[start:i])
-          digit = False
+          digit = F..
           j += jump
         __ j >= l..(dest) o. src[i] != dest[j]:
-          r.. False
+          r.. F..
         j += 1
       __ i __ l..(src) - 1:
         __ digit:
           jump = int(src[start:i + 1])
-          digit = False
+          digit = F..
           j += jump
           __ j != l..(dest):
-            r.. False
-    r.. True
+            r.. F..
+    r.. T..

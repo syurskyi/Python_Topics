@@ -1,29 +1,29 @@
-class Vector2D(object):
+c_ Vector2D(object):
 
-  ___ __init__(self, vec2d):
+  ___ - , vec2d):
     """
     Initialize your data structure here.
     :type vec2d: List[List[int]]
     """
-    self.x = self.y = 0
-    self.m = vec2d
+    x = y = 0
+    m = vec2d
 
-  ___ next(self):
+  ___ next
     """
     :rtype: int
     """
-    self.y += 1
-    r.. self.m[self.x][self.y - 1]
+    y += 1
+    r.. m[x][y - 1]
 
-  ___ hasNext(self):
+  ___ hasNext
     """
     :rtype: bool
     """
-    m = self.m
-    w.... self.x < l..(m) a.. self.y >= l..(m[self.x]):
-      self.x += 1
-      self.y = 0
-    r.. self.x < l..(m)
+    m = m
+    w.... x < l..(m) a.. y >= l..(m[x]):
+      x += 1
+      y = 0
+    r.. x < l..(m)
 
 # Your Vector2D object will be instantiated and called as such:
 # i, v = Vector2D(vec2d), []

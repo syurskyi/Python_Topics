@@ -1,18 +1,18 @@
-class ValidWordAbbr(object):
-  ___ __init__(self, dictionary):
+c_ ValidWordAbbr(object):
+  ___ - , dictionary):
     """
     initialize your data structure here.
     :type dictionary: List[str]
     """
-    self.d = {}
-    self.d.. = dictionary = set(dictionary)
+    d    # dict
+    d.. = dictionary = set(dictionary)
     ___ word __ dictionary:
       wordLen = l..(word)
       __ wordLen > 2:
         key = word[0] + s..(wordLen - 2) + word[-1]
-        self.d[key] = self.d.get(key, 0) + 1
+        d[key] = d.get(key, 0) + 1
       ____:
-        self.d[word] = self.d.get(word, 0) + 1
+        d[word] = d.get(word, 0) + 1
 
   ___ isUnique(self, word):
     """
@@ -26,12 +26,12 @@ class ValidWordAbbr(object):
       key = word[0] + s..(wordLen - 2) + word[-1]
     ____:
       key = word
-    __ key __ self.d:
-      __ self.d[key] __ 1 a.. word __ self.d..:
-        r.. True
-      r.. False
+    __ key __ d:
+      __ d[key] __ 1 a.. word __ d..:
+        r.. T..
+      r.. F..
     ____:
-      r.. True
+      r.. T..
 
 # Your ValidWordAbbr object will be instantiated and called as such:
 # vwa = ValidWordAbbr(dictionary)

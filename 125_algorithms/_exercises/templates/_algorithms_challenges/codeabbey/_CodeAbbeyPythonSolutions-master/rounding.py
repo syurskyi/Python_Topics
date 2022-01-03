@@ -3,10 +3,10 @@ results    # list
 
 ___ round(num1, num2):
     result = num1/num2
-    is_negative = False
+    is_negative = F..
     __(result < 0):
         result = result * -1
-        is_negative = True
+        is_negative = T..
     __(result + 0.5 >= int(result+1)):
         result = int(result + 1)
     ____:

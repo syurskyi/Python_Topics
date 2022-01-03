@@ -1,6 +1,6 @@
 ___ is_omnipresent(lst, val):
     ___ i __ lst:
         __ val __ i:
-            r.. True
+            r.. T..
         ____:
-            r.. False
+            r.. F..

@@ -30,7 +30,7 @@ It is guaranteed there is at least one way to partition A as described.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ partitionDisjoint(self, A: List[int]) -> int:
         """
         max(left) <= min(right)

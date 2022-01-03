@@ -1,4 +1,4 @@
-____ i.. _______ chain
+____ i.. _______ c__
 
 
 ___ sum_of_multiples(limit, factors):
@@ -7,7 +7,7 @@ ___ sum_of_multiples(limit, factors):
 
 ___ all_multiples(limit, factors):
     multiples = [get_multiples(limit, factor) ___ factor __ factors]
-    r.. set(l..(chain(*multiples)))  # remove duplicates
+    r.. set(l..(c__(*multiples)))  # remove duplicates
 
 
 ___ get_multiples(limit, factor):

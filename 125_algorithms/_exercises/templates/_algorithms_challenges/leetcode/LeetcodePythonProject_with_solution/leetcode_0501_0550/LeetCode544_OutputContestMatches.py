@@ -4,14 +4,14 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findContestMatch(self, n):
         """
         :type n: int
         :rtype: str
         """
         l = l..(r..(1, n+1))
-        r.. self.helper(l)
+        r.. helper(l)
     
     ___ helper(self, l):
         __ l..(l) <= 2:
@@ -19,10 +19,10 @@ class Solution(object):
         l0    # list
         w.... l:
             l0.a..('(%s,%s)' % (l.pop(0), l.pop()))
-        res = self.helper(l0)
+        res = helper(l0)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             2,
             4,
@@ -30,7 +30,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            res = self.findContestMatch(n)
+            res = findContestMatch(n)
             print('result: %s' % res)
             print('-='*30+'-')
     

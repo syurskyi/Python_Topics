@@ -14,4 +14,4 @@ ___ generate_improved_xmas_tree(rows=10):
     trunk = TRUNK * (rows + (1 __ rows % 2 __ 0 ____ 0))
     out.a..(f'{trunk:^{width}}')
     out.a..(f'{trunk:^{width}}')
-    r.. '\n'.join(out)
+    r.. '\n'.j..(out)

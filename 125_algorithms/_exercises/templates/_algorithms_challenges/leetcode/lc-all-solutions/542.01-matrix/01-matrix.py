@@ -1,7 +1,7 @@
 ____ collections _______ deque
 
 
-class Solution(object):
+c_ Solution(object):
   ___ updateMatrix(self, matrix):
     """
     :type matrix: List[List[int]]

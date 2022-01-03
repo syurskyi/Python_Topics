@@ -4,7 +4,7 @@ Created on May 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ findPermutation(self, s):
         """
         :type s: str
@@ -18,7 +18,7 @@ class Solution(object):
                 prev = i
                 w.... i+1 < n a.. s[i+1]__'D':
                     i += 1
-                self.reverse(res, prev, i+1)
+                reverse(res, prev, i+1)
             i += 1
         r.. res
     
@@ -28,7 +28,7 @@ class Solution(object):
             l += 1
             r -= 1
     
-    ___ test(self):
+    ___ test
         testCases = [
             'I',
             'DI',
@@ -38,7 +38,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.findPermutation(s)
+            result = findPermutation(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

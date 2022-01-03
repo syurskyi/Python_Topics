@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param m: the rows of matrix
     @param n: the cols of matrix

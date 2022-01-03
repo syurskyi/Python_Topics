@@ -30,29 +30,29 @@ Every node has value 0.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.covered = {N..}
-        self.cnt = 0
+c_ Solution:
+    ___ - ):
+        covered = {N..}
+        cnt = 0
 
     ___ minCameraCover(self, root: TreeNode) -> int:
         """
         Greedy?
         Bottom up, cover leaf's parent is strictly better than cover leaf
         """
-        self.dfs(root, N..)
-        __ root n.. __ self.covered:
-            self.covered.add(root)
-            self.cnt += 1
+        dfs(root, N..)
+        __ root n.. __ covered:
+            covered.add(root)
+            cnt += 1
 
-        r.. self.cnt
+        r.. cnt
 
 
     ___ dfs(self, node, pi):
@@ -63,19 +63,19 @@ class Solution:
         __ n.. node:
             r..
 
-        self.dfs(node.left, node)
-        self.dfs(node.right, node)
-        __ node.left n.. __ self.covered o. node.right n.. __ self.covered:
-            self.cnt += 1
-            self.covered.add(node.left)
-            self.covered.add(node.right)
-            self.covered.add(node)
-            self.covered.add(pi)
+        dfs(node.left, node)
+        dfs(node.right, node)
+        __ node.left n.. __ covered o. node.right n.. __ covered:
+            cnt += 1
+            covered.add(node.left)
+            covered.add(node.right)
+            covered.add(node)
+            covered.add(pi)
 
 
-class SolutionErrror:
-    ___ __init__(self):
-        self.covered = set()
+c_ SolutionErrror:
+    ___ - ):
+        covered = set()
 
     ___ minCameraCover(self, root: TreeNode) -> int:
         """
@@ -85,9 +85,9 @@ class SolutionErrror:
         """
         dummy = TreeNode(0)
         dummy.left = root
-        self.dfs(root, dummy)
-        self.covered.discard(dummy)  # swallow KeyError
-        r.. l..(self.covered)
+        dfs(root, dummy)
+        covered.discard(dummy)  # swallow KeyError
+        r.. l..(covered)
 
     ___ dfs(self, node, pi):
         """
@@ -96,12 +96,12 @@ class SolutionErrror:
         __ n.. node:
             r..
 
-        self.dfs(node.left, node)
-        self.dfs(node.right, node)
+        dfs(node.left, node)
+        dfs(node.right, node)
         # post oder
         __ (
-            (n.. node.left o. node.left __ self.covered) a..
-            (n.. node.right o. node.right __ self.covered)
+            (n.. node.left o. node.left __ covered) a..
+            (n.. node.right o. node.right __ covered)
         ):
-            self.covered.add(pi)
+            covered.add(pi)
             r..

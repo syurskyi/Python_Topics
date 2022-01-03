@@ -7,7 +7,7 @@ Example2: x = -123, return -321
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ reverse(self, x):
         """
         Sign for preserving negative number of positive number
@@ -28,7 +28,7 @@ class Solution(object):
         x = s..(x)
         lst = l..(x)  # list('123') returns ['1', '2', '3']
         lst.reverse()
-        x = "".join(lst)
+        x = "".j..(lst)
         x = int(x)
         r.. sign*x
 

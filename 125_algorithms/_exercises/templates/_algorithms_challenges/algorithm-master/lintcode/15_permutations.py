@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ permute(self, nums):
         """
         :type nums: list[int]
@@ -10,7 +10,7 @@ class Solution:
         ans    # list
 
         nums.s..()
-        self.dfs(nums, ans, [])
+        dfs(nums, ans, [])
 
         r.. ans
 
@@ -21,5 +21,5 @@ class Solution:
 
         ___ i __ r..(l..(nums)):
             path.a..(nums[i])
-            self.dfs(nums[:i] + nums[i + 1:], ans, path)
+            dfs(nums[:i] + nums[i + 1:], ans, path)
             path.pop()

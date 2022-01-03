@@ -19,19 +19,19 @@ ___ convert_pybites_chars(text):
        Return the resulting string."""
     output = ''
     ___ char __ text:
-        __ char.lower() __ PYBITES:
+        __ char.l.. __ PYBITES:
             __ char.isupper():
-                output += output.join(char.lower())
+                output += output.j..(char.lower())
             ____:
-                output += output.join(char.upper())
+                output += output.j..(char.upper())
         ____:
-            output += output.join(char)
+            output += output.j..(char)
     r.. output
 
 ___ convert_pybites_chars_pybites_solution(text):
     """Swap case all characters in the word pybites for the given text.
        Return the resulting string."""
-    r.. ''.join(c.swapcase() __ c.lower() __ PYBITES ____ c
+    r.. ''.j..(c.swapcase() __ c.l.. __ PYBITES ____ c
                    ___ c __ text)
 
 print(convert_pybites_chars(t))

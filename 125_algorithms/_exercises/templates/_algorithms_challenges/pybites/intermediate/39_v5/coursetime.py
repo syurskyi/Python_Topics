@@ -1,10 +1,10 @@
 ____ d__ _______ d__, t..
 _______ os
-_______ re
+_______ __
 _______ urllib.request
 
 # getting the data
-COURSE_TIMES = os.path.join('/tmp', 'course_timings')
+COURSE_TIMES = os.path.j..('/tmp', 'course_timings')
 urllib.request.urlretrieve('http://bit.ly/2Eb0iQF', COURSE_TIMES)
 
 
@@ -22,7 +22,7 @@ ___ get_all_timestamps():
     result    # list
     with open(COURSE_TIMES) as ct:
         ___ line __ ct.readlines():
-            times = re.findall(r'\((\d\d?:\d\d)\)', line)
+            times = __.findall(r'\((\d\d?:\d\d)\)', line)
             __ l..(times) > 0:
                 result.a..(times[0])
     r.. result

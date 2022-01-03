@@ -4,7 +4,7 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ canFinishBFS(self, numCourses, prerequisites):
         """
         :type numCourses: int
@@ -33,9 +33,9 @@ class Solution(object):
         print('graph:  %s' % (graph))
         print('degree: %s' % (degree))
         __ count __ numCourses:
-            r.. True
+            r.. T..
         ____:
-            r.. False
+            r.. F..
     
     ___ canFinishDFS(self, numCourses, prerequisites):
         """
@@ -44,26 +44,26 @@ class Solution(object):
         :rtype: bool
         """
         graph = [[] ___ _ __ r..(numCourses)]
-        visited = [False]*numCourses
+        visited = [F..]*numCourses
         ___ i, prereq __ e..(prerequisites):
             graph[prereq[1]].a..(prereq[0])
         ___ i __ r..(numCourses):
-            __ n.. self.dfs(graph, visited, i):
-                r.. False
-        r.. True
+            __ n.. dfs(graph, visited, i):
+                r.. F..
+        r.. T..
     
     ___ dfs(self, graph, visited, course):
         __ visited[course]:
-            r.. False
+            r.. F..
         ____:
-            visited[course] = True
+            visited[course] = T..
         ___ precourse __ graph[course]:
-            __ n.. self.dfs(graph, visited, precourse):
-                r.. False
-        visited[course] = False
-        r.. True
+            __ n.. dfs(graph, visited, precourse):
+                r.. F..
+        visited[course] = F..
+        r.. T..
     
-    ___ test(self):
+    ___ test
         testCases = [
             (2, [[1, 0]]),
             (5, [[0, 1], [1, 2], [2, 3]]),
@@ -74,9 +74,9 @@ class Solution(object):
         ___ numCourses, prerequisites __ testCases:
             print('numCourses: %s' % (numCourses))
             print('prerequisites: %s' % (prerequisites))
-            result = self.canFinishDFS(numCourses, prerequisites)
+            result = canFinishDFS(numCourses, prerequisites)
             print('DFS Result: %s' % (result))
-            result = self.canFinishBFS(numCourses, prerequisites)
+            result = canFinishBFS(numCourses, prerequisites)
             print('BFS Result: %s' % (result))
             print('-='*20+'-')
 

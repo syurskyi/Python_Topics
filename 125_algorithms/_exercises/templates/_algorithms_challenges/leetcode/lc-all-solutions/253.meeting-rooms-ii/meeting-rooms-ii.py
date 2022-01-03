@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minMeetingRooms(self, intervals):
     """
     :type intervals: List[Interval]

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findMaxForm(self, strs, m, n):
     """
     :type strs: List[str]

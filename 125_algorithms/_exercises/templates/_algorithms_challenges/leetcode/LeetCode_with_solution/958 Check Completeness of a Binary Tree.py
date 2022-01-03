@@ -22,17 +22,17 @@ Explanation: The node with value 7 isn't as far left as possible.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.max_depth = -float("inf")
-        self.expecting_partial = False
+c_ Solution:
+    ___ - ):
+        max_depth = -float("inf")
+        expecting_partial = F..
 
     ___ isCompleteTree(self, root: TreeNode) -> bool:
         """
@@ -41,22 +41,22 @@ class Solution:
         Record the max depth and expecting partial fill in the last level
         Need a special flag to tell whether expecting partial now
         """
-        r.. self.dfs(root, 0)
+        r.. dfs(root, 0)
 
     ___ dfs(self, node, d):
         __ n.. node:
             # empty node (below leaf) is the key decision point
-            __ self.max_depth __ -float("inf"):  # leftmost empty node
-                self.max_depth = d - 1
-                r.. True
-            ____ self.expecting_partial:
-                r.. d __ self.max_depth
+            __ max_depth __ -float("inf"):  # leftmost empty node
+                max_depth = d - 1
+                r.. T..
+            ____ expecting_partial:
+                r.. d __ max_depth
             ____:
-                __ d __ self.max_depth + 1:
-                    r.. True
-                __ d __ self.max_depth:
-                    self.expecting_partial = True
-                    r.. True
-                r.. False
+                __ d __ max_depth + 1:
+                    r.. T..
+                __ d __ max_depth:
+                    expecting_partial = T..
+                    r.. T..
+                r.. F..
 
-        r.. self.dfs(node.left, d + 1) a.. self.dfs(node.right, d + 1)
+        r.. dfs(node.left, d + 1) a.. dfs(node.right, d + 1)

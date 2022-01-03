@@ -32,20 +32,20 @@ p and q are different and both values will exist in the BST.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-        r.. self.walk(root, p, q)
+        r.. walk(root, p, q)
 
     ___ walk(self, node, p, q):
         __ p.val > node.val a.. q.val > node.val:
-            r.. self.walk(node.right, p, q)
+            r.. walk(node.right, p, q)
         __ p.val < node.val a.. q.val < node.val:
-            r.. self.walk(node.left, p, q)
+            r.. walk(node.left, p, q)
         r.. node

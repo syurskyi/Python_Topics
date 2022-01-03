@@ -4,7 +4,7 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ numIslands(self, grid):
         """
         :type grid: List[List[str]]
@@ -18,7 +18,7 @@ class Solution(object):
                 __ grid[i][j] __ '1':
                     grid[i][j] = '#'
                     res += 1
-                    self.bfs(grid, i, j)
+                    bfs(grid, i, j)
         r.. res
     
     ___ bfs(self, grid, i, j):
@@ -31,7 +31,7 @@ class Solution(object):
                     grid[x][y] = '#'
                     queue.a..([x, y])
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             [
 #                 '11110',
@@ -48,7 +48,7 @@ class Solution(object):
         ]
         ___ grid __ testCases:
             grid = [l..(x) ___ x __ grid]
-            result = self.numIslands(grid)
+            result = numIslands(grid)
             print('result: %s' % (result))
             print('-='*20+'-')
 

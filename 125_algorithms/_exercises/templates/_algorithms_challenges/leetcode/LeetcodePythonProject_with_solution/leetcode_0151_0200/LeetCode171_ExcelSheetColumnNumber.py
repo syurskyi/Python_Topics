@@ -4,7 +4,7 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ titleToNumber(self, s):
         """
         :type s: str
@@ -17,7 +17,7 @@ class Solution(object):
             result += num
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             'A',
             'B',
@@ -27,7 +27,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.titleToNumber(s)
+            result = titleToNumber(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 

@@ -3,7 +3,7 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ crackSafe(self, n, k):
         """
         :type n: int
@@ -13,25 +13,25 @@ class Solution(object):
         total = k**n
         arr = ['0']*n
         visited = set(['0'*n])
-        self.dfs(arr, total, visited, n, k)
-        r.. ''.join(arr)
+        dfs(arr, total, visited, n, k)
+        r.. ''.j..(arr)
     
     ___ dfs(self, arr, goal, visited, n, k):
-        __ l..(visited) __ goal: r.. True
+        __ l..(visited) __ goal: r.. T..
         prevArr = arr[l..(arr)-n+1:]
         ___ i __ r..(k):
             nextArr = prevArr+[s..(i)]
-            nextStr = ''.join(nextArr)
+            nextStr = ''.j..(nextArr)
             __ nextStr n.. __ visited:
                 visited.add(nextStr)
                 arr.a..(s..(i))
-                __ self.dfs(arr, goal, visited, n, k):
-                    r.. True
+                __ dfs(arr, goal, visited, n, k):
+                    r.. T..
                 visited.remove(nextStr)
                 arr.pop()
-        r.. False
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 2],
             [2, 2],
@@ -39,7 +39,7 @@ class Solution(object):
         ___ n, k __ testCases:
             print('n: %s' % n)
             print('k: %s' % k)
-            result = self.crackSafe(n, k)
+            result = crackSafe(n, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

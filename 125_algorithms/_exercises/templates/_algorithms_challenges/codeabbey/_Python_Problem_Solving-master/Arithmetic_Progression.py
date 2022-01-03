@@ -15,5 +15,5 @@ w.... count < d:
     res.a..(result)
     count = count + 1
     
-res = ' '.join(s..(j) ___ j __ res)
+res = ' '.j..(s..(j) ___ j __ res)
 print(res)

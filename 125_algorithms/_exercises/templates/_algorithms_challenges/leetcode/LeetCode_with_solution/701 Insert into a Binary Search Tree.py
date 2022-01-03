@@ -35,22 +35,22 @@ This tree is also valid:
           4
 """
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:
         __ n.. root:
             r.. TreeNode(val)
 
         __ root.val < val:
-            root.right = self.insertIntoBST(root.right, val)
+            root.right = insertIntoBST(root.right, val)
         ____ root.val > val:
-            root.left = self.insertIntoBST(root.left, val)
+            root.left = insertIntoBST(root.left, val)
         ____:
             raise
 

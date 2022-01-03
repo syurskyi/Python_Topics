@@ -28,7 +28,7 @@ tweets = [
 ]
 
 
-___ filter_tweets_on_polarity(tweets, keep_positive=True):
+___ filter_tweets_on_polarity(tweets, keep_positive=T..):
     """Filter the tweets by polarity score, receives keep_positive bool which
        determines what to keep. Returns a list of filtered tweets."""
     positive    # list
@@ -38,12 +38,12 @@ ___ filter_tweets_on_polarity(tweets, keep_positive=True):
             positive.a..(tweet)
         ____:
             negative.a..(tweet)
-    r.. [positive __ keep_positive __ True ____ negative]
+    r.. [positive __ keep_positive __ T.. ____ negative]
 
-___ order_tweets_by_polarity(tweets, positive_highest=True):
+___ order_tweets_by_polarity(tweets, positive_highest=T..):
     """Sort the tweets by polarity, receives positive_highest which determines
        the order. Returns a list of ordered tweets."""
-    __ positive_highest __ True:
+    __ positive_highest __ T..:
         r.. s..(tweets, key=attrgetter('polarity'), r.._T..
     ____:
         r.. s..(tweets, key=attrgetter('polarity'), r.._F..

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ combinationSum3(self, k, n):
     """
     :type k: int

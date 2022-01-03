@@ -4,21 +4,21 @@ Created on Apr 30, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ pruneTree(self, root):
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
         __ n.. root: r.. root
-        left  = self.pruneTree(root.left)
-        right = self.pruneTree(root.right)
+        left  = pruneTree(root.left)
+        right = pruneTree(root.right)
         __ left __ N.. a.. right __ N.. a.. root.val __ 0:
             r.. N..
         ____:
@@ -26,12 +26,12 @@ class Solution(object):
             root.right = right
             r.. root
     
-    ___ test(self):
+    ___ test
         testCases = [
             
         ]
         ___ root __ testCases:
-            result = self.pruneTree(root)
+            result = pruneTree(root)
 
 __ __name__ __ '__main__':
     Solution().test()

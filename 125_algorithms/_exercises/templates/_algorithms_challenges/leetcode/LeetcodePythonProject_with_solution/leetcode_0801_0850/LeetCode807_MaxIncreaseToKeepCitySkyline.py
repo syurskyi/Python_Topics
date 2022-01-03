@@ -3,7 +3,7 @@ Created on Apr 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ maxIncreaseKeepingSkyline(self, grid):
         """
         :type grid: List[List[int]]
@@ -28,12 +28,12 @@ class Solution(object):
                 res += m..(rows[i][0], cols[j][0])
         r.. res - sumVal
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]],
         ]
         ___ grid __ testCases:
-            result = self.maxIncreaseKeepingSkyline(grid)
+            result = maxIncreaseKeepingSkyline(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

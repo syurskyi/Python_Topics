@@ -2,11 +2,11 @@
 ____ d__ _______ d__
 
 
-class LedgerEntry(object):
-    ___ __init__(self):
-        self.date = N..
-        self.description = N..
-        self.change = N..
+c_ LedgerEntry(object):
+    ___ - ):
+        date = N..
+        description = N..
+        change = N..
 
 
 ___ create_entry(date, description, change):

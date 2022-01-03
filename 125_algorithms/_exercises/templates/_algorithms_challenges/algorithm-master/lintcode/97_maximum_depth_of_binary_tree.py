@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param root: The root of binary tree.
     @return: An integer
@@ -17,6 +17,6 @@ class Solution:
             r.. 0
 
         r.. 1 + max(
-            self.maxDepth(root.left),
-            self.maxDepth(root.right)
+            maxDepth(root.left),
+            maxDepth(root.right)
         )

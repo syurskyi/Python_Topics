@@ -34,7 +34,7 @@ ___ get_matching_files(directory: PosixPath, filter_str: s..) -> l..:
     files = os.listdir(directory)
     ___ file __ files:
 
-        __ file.lower() __ filter_str:
+        __ file.l.. __ filter_str:
             exact_matches.a..(file)
     
         
@@ -42,7 +42,7 @@ ___ get_matching_files(directory: PosixPath, filter_str: s..) -> l..:
         r.. exact_matches
 
 
-    close_matches = difflib.get_close_matches(filter_str,(file.lower() ___ file __ files))
+    close_matches = difflib.get_close_matches(filter_str,(file.l.. ___ file __ files))
     r.. close_matches
 
 

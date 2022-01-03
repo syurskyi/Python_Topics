@@ -2,7 +2,7 @@ ____ d__ _______ *
 ____ dateutil.relativedelta _______ *
 ____ dateutil.rrule _______ *
 
-NOW = d__.now()
+NOW = d__.n..
 TODAY = date.today()
 
 print(NOW, TODAY)

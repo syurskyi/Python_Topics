@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ mergeTrees(self, t1, t2):
     """
     :type t1: TreeNode
@@ -14,6 +14,6 @@ class Solution(object):
     """
     __ t1 o. t2:
       root = TreeNode((t1 a.. t1.val o. 0) + (t2 a.. t2.val o. 0))
-      root.left = self.mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
-      root.right = self.mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
+      root.left = mergeTrees(t1 a.. t1.left, t2 a.. t2.left)
+      root.right = mergeTrees(t1 a.. t1.right, t2 a.. t2.right)
       r.. root

@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ verifyPreorder(self, preorder):
         """
         * Draw a valid BST, and swap a pair of nodes to get an invalid BST.
@@ -17,16 +17,16 @@ class Solution:
         stk    # list
         ___ num __ preorder:
             __ left_finished a.. num < left_finished:
-                r.. False
+                r.. F..
 
             w.... stk a.. stk[-1] < num:
                 left_finished = stk.pop()
 
             stk.a..(num)
 
-        r.. True
+        r.. T..
 
 
 __ __name__ __ "__main__":
     preorder = [3, 5, 2, 1, 4, 7, 6, 9, 8, 10]
-    ... Solution().verifyPreorder(preorder) __ False
+    ... Solution().verifyPreorder(preorder) __ F..

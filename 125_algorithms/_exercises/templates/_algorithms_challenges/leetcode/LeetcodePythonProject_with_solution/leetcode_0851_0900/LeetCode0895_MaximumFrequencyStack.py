@@ -1,65 +1,65 @@
 _______ heapq
 
 
-class FreqStack(object):
+c_ FreqStack(object):
 
-    ___ __init__(self):
-        self.hashmap = {}
-        self.heap    # list
-        self.size = 0
+    ___ - ):
+        hashmap    # dict
+        heap    # list
+        size = 0
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: None
         """
-        self.size += 1
-        self.hashmap[x] = self.hashmap.get(x, 0) + 1
-        heapq.heappush(self.heap, (-self.hashmap[x], -self.size, x))
+        size += 1
+        hashmap[x] = hashmap.get(x, 0) + 1
+        heapq.heappush(heap, (-hashmap[x], -size, x))
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: int
         """
-        _, _, val = heapq.heappop(self.heap)
-        self.hashmap[val] -= 1
+        _, _, val = heapq.heappop(heap)
+        hashmap[val] -= 1
         r.. val
 
 
-class ListNode(object):
-    ___ __init__(self, val):
-        self.val = val
-        self.freq = 0
-        self.prev = N..
-        self.next = N..
-        self.indexes    # list
+c_ ListNode(object):
+    ___ - , val):
+        val = val
+        freq = 0
+        prev = N..
+        next = N..
+        indexes    # list
 
 
-class FreqStack_self(object):
+c_ FreqStack_self(object):
 
-    ___ __init__(self):
-        self.idx = 0
-        self.hashmap = {}
-        self.head = N..
-        self.tail = N..
-        self.idx = 0
+    ___ - ):
+        idx = 0
+        hashmap    # dict
+        head = N..
+        tail = N..
+        idx = 0
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: None
         """
-        self.idx += 1
-        __ x n.. __ self.hashmap:
+        idx += 1
+        __ x n.. __ hashmap:
             node = ListNode(x)
-            self.hashmap[x] = node
+            hashmap[x] = node
         ____:
-            node = self.hashmap[x]
+            node = hashmap[x]
         node.freq += 1
-        node.indexes.a..(self.idx)
-        __ n.. self.head:
-            self.head = node
-            self.tail = node
+        node.indexes.a..(idx)
+        __ n.. head:
+            head = node
+            tail = node
         ____:
             node0 = node.next
             w.... node0 a.. node0.freq <= node.freq:
@@ -69,18 +69,18 @@ class FreqStack_self(object):
                 node0.next = node
                 node.next = nextNode
             ____:
-                self.tail.next = node
+                tail.next = node
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: int
         """
-        node = self.tail
+        node = tail
         node.freq -= 1
         node.indexes.pop()
         val = node.val
         __ node.freq __ 0:
-            del self.hashmap[val]
+            del hashmap[val]
             prevNode = node.prev
             nextNode = node.next
             __ prevNode:
@@ -88,14 +88,14 @@ class FreqStack_self(object):
                 __ nextNode:
                     nextNode.prev = prevNode
                 ____:
-                    self.tail = prevNode
+                    tail = prevNode
             ____:
-                self.head = nextNode
+                head = nextNode
                 __ nextNode:
                     nextNode.prev = prevNode
                 ____:
-                    self.head = N..
-                    self.tail = N..
+                    head = N..
+                    tail = N..
         ____:
             node0 = node.prev
             w.... node0 a.. (node0.freq > node.freq o.
@@ -107,7 +107,7 @@ class FreqStack_self(object):
                 node0.prev = node
                 node.prev = prevNode
             ____:
-                self.head.prev = node
+                head.prev = node
         r.. val
 
 

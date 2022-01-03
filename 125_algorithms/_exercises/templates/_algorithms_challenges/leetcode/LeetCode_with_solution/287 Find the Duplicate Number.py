@@ -11,7 +11,7 @@ There is only one duplicate number in the array, but it could be repeated more t
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ findDuplicate(self, nums):
         """
         Condition for convert the array problem to linked list problem:

@@ -23,29 +23,29 @@ __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode(object):
+    ___ - , x):
+        val = x
+        next = N..
 
 
-class Solution(object):
-    ___ __init__(self, head):
+c_ Solution(object):
+    ___ - , head):
         """
         Reservoir sampling
         :param: head The linked list's head.
         Note that the head is guaranteed to be not null, so it contains at least one node.
         :type head: ListNode
         """
-        self.head = head
+        head = head
 
-    ___ getRandom(self):
+    ___ getRandom
         """
         Returns a random node's value.
         :rtype: int
         """
-        ret = self.head
-        cur = self.head.next
+        ret = head
+        cur = head.next
         idx = 1
         w.... cur:
             __ random.randrange(0, idx+1) __ 0:

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param a list of integers
     # @return an integer
     ___ removeDuplicates(self, A):

@@ -3,7 +3,7 @@ REF: http://massivealgorithms.blogspot.jp/2014/07/dynamic-programming-set-11-egg
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: m: the number of eggs
     @param: n: the number of floors

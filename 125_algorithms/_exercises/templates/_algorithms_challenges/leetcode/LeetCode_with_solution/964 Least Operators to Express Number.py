@@ -43,7 +43,7 @@ Note:
 ____ functools _______ lru_cache
 
 
-class Solution:
+c_ Solution:
     ___ leastOpsExpressTarget(self, x: int, target: int) -> int:
         """
         x/x is 1
@@ -53,7 +53,7 @@ class Solution:
 
         To make target divisible, it can be target - a0 or target + (x^1 - a0)
         """
-        r.. self.dfs(target, x, 0) - 1
+        r.. dfs(target, x, 0) - 1
 
     @lru_cache(maxsize=N..)
     ___ dfs(self, target, x, power):
@@ -64,13 +64,13 @@ class Solution:
             r.. 0
 
         __ target __ 1:
-            r.. self.ops(power)
+            r.. ops(power)
 
         d, r = target // x, target % x
-        ret = r * self.ops(power) + self.dfs(d, x, power + 1)
+        ret = r * ops(power) + dfs(d, x, power + 1)
         # either -r or +(x-r)
         __ r != 0:
-            ret2 = (x - r) * self.ops(power) + self.dfs(d + 1, x, power + 1)
+            ret2 = (x - r) * ops(power) + dfs(d + 1, x, power + 1)
             ret = m..(ret, ret2)
 
         r.. ret

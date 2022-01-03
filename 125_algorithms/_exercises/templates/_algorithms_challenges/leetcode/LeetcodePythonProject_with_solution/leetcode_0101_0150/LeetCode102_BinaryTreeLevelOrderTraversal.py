@@ -4,7 +4,7 @@ Created on Feb 1, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ levelOrder(self, root):
         """
         :type root: TreeNode

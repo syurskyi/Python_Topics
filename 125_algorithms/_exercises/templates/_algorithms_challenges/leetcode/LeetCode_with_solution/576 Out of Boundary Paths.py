@@ -29,7 +29,7 @@ MOD = 10 ** 9 + 7
 dirs = ((0, 1), (0, -1), (1, 0), (-1, 0))
 
 
-class Solution:
+c_ Solution:
     ___ findPaths(self, m: int, n: int, N: int, r: int, c: int) -> int:
         """
         iterate N epoch

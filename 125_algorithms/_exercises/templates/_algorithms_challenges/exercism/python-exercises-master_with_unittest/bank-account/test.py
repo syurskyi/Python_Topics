@@ -6,95 +6,95 @@ _______ unittest
 ____ bank_account _______ BankAccount
 
 
-class BankAccountTest(unittest.TestCase):
+c_ BankAccountTest(unittest.TestCase):
 
-    ___ setUp(self):
-        self.account = BankAccount()
+    ___ setUp
+        account = BankAccount()
 
-    ___ test_newly_opened_account_has_zero_balance(self):
-        self.account.open()
-        self.assertEqual(self.account.get_balance(), 0)
+    ___ test_newly_opened_account_has_zero_balance
+        account.open()
+        assertEqual(account.get_balance(), 0)
 
-    ___ test_can_deposit_money(self):
-        self.account.open()
-        self.account.deposit(100)
-        self.assertEqual(self.account.get_balance(), 100)
+    ___ test_can_deposit_money
+        account.open()
+        account.deposit(100)
+        assertEqual(account.get_balance(), 100)
 
-    ___ test_can_deposit_money_sequentially(self):
-        self.account.open()
-        self.account.deposit(100)
-        self.account.deposit(50)
+    ___ test_can_deposit_money_sequentially
+        account.open()
+        account.deposit(100)
+        account.deposit(50)
 
-        self.assertEqual(self.account.get_balance(), 150)
+        assertEqual(account.get_balance(), 150)
 
-    ___ test_can_withdraw_money(self):
-        self.account.open()
-        self.account.deposit(100)
-        self.account.withdraw(50)
+    ___ test_can_withdraw_money
+        account.open()
+        account.deposit(100)
+        account.withdraw(50)
 
-        self.assertEqual(self.account.get_balance(), 50)
+        assertEqual(account.get_balance(), 50)
 
-    ___ test_can_withdraw_money_sequentially(self):
-        self.account.open()
-        self.account.deposit(100)
-        self.account.withdraw(20)
-        self.account.withdraw(80)
+    ___ test_can_withdraw_money_sequentially
+        account.open()
+        account.deposit(100)
+        account.withdraw(20)
+        account.withdraw(80)
 
-        self.assertEqual(self.account.get_balance(), 0)
+        assertEqual(account.get_balance(), 0)
 
-    ___ test_checking_balance_of_closed_account_throws_error(self):
-        self.account.open()
-        self.account.close()
+    ___ test_checking_balance_of_closed_account_throws_error
+        account.open()
+        account.close()
 
-        with self.assertRaises(ValueError):
-            self.account.get_balance()
+        with assertRaises(ValueError):
+            account.get_balance()
 
-    ___ test_deposit_into_closed_account(self):
-        self.account.open()
-        self.account.close()
+    ___ test_deposit_into_closed_account
+        account.open()
+        account.close()
 
-        with self.assertRaises(ValueError):
-            self.account.deposit(50)
+        with assertRaises(ValueError):
+            account.deposit(50)
 
-    ___ test_withdraw_from_closed_account(self):
-        self.account.open()
-        self.account.close()
+    ___ test_withdraw_from_closed_account
+        account.open()
+        account.close()
 
-        with self.assertRaises(ValueError):
-            self.account.withdraw(50)
+        with assertRaises(ValueError):
+            account.withdraw(50)
 
-    ___ test_cannot_withdraw_more_than_deposited(self):
-        self.account.open()
-        self.account.deposit(25)
+    ___ test_cannot_withdraw_more_than_deposited
+        account.open()
+        account.deposit(25)
 
-        with self.assertRaises(ValueError):
-            self.account.withdraw(50)
+        with assertRaises(ValueError):
+            account.withdraw(50)
 
-    ___ test_cannot_withdraw_negative(self):
-        self.account.open()
-        self.account.deposit(100)
+    ___ test_cannot_withdraw_negative
+        account.open()
+        account.deposit(100)
 
-        with self.assertRaises(ValueError):
-            self.account.withdraw(-50)
+        with assertRaises(ValueError):
+            account.withdraw(-50)
 
-    ___ test_cannot_deposit_negative(self):
-        self.account.open()
+    ___ test_cannot_deposit_negative
+        account.open()
 
-        with self.assertRaises(ValueError):
-            self.account.deposit(-50)
+        with assertRaises(ValueError):
+            account.deposit(-50)
 
-    ___ test_can_handle_concurrent_transactions(self):
-        self.account.open()
-        self.account.deposit(1000)
+    ___ test_can_handle_concurrent_transactions
+        account.open()
+        account.deposit(1000)
 
         ___ _ __ r..(10):
-            self.adjust_balance_concurrently()
+            adjust_balance_concurrently()
 
-    ___ adjust_balance_concurrently(self):
+    ___ adjust_balance_concurrently
         ___ transact():
-            self.account.deposit(5)
+            account.deposit(5)
             time.sleep(0.001)
-            self.account.withdraw(5)
+            account.withdraw(5)
 
         # Greatly improve the chance of an operation being interrupted
         # by thread switch, thus testing synchronization effectively
@@ -111,9 +111,9 @@ class BankAccountTest(unittest.TestCase):
             t.start()
 
         ___ thread __ threads:
-            thread.join()
+            thread.j..()
 
-        self.assertEqual(self.account.get_balance(), 1000)
+        assertEqual(account.get_balance(), 1000)
 
 
 __ __name__ __ '__main__':

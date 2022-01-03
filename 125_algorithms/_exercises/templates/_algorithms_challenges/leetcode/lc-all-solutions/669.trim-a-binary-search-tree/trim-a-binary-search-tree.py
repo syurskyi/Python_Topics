@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     ___ trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
         __ n.. root:
             r.. N..
         __ L > root.val:
-            r.. self.trimBST(root.right, L, R)
+            r.. trimBST(root.right, L, R)
         ____ R < root.val:
-            r.. self.trimBST(root.left, L, R)
-        root.left = self.trimBST(root.left, L, R)
-        root.right = self.trimBST(root.right, L, R)
+            r.. trimBST(root.left, L, R)
+        root.left = trimBST(root.left, L, R)
+        root.right = trimBST(root.right, L, R)
         r.. root

@@ -33,13 +33,13 @@ __author__ = 'Daniel'
 # """
 
 
-class NestedInteger(object):
-    ___ __init__(self, value_ N..
+c_ NestedInteger(object):
+    ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
         Otherwise initializes a single integer equal to value.
         """
-    ___ isInteger(self):
+    ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
@@ -57,14 +57,14 @@ class NestedInteger(object):
         :rtype void
         """
 
-    ___ getInteger(self):
+    ___ getInteger
         """
         @return the single integer that this NestedInteger holds, if it holds a single integer
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
 
-    ___ getList(self):
+    ___ getList
         """
         @return the nested list that this NestedInteger holds, if it holds a nested list
         Return None if this NestedInteger holds a single integer
@@ -72,7 +72,7 @@ class NestedInteger(object):
         """
 
 
-class Solution(object):
+c_ Solution(object):
     ___ deserialize(self, s):
         """
         NestedInteger is a UnionType in functional programming jargon.

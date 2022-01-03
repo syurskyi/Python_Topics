@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 _______ bisect
 
 
-class Solution(object):
+c_ Solution(object):
     ___ sortTransformedArray(self, nums, a, b, c):
         """
         Key points:
@@ -22,7 +22,7 @@ class Solution(object):
         :rtype: List[int]
         """
         __ a __ 0:
-            ret = map(l.... x: self.f(x, a, b, c), nums)
+            ret = map(l.... x: f(x, a, b, c), nums)
             r.. ret __ b > 0 ____ ret[::-1]
 
         mid = - float(b) / (2*a)
@@ -30,8 +30,8 @@ class Solution(object):
         le = ri - 1
         ret    # list
         w.... le >= 0 a.. ri < l..(nums) a.. le < ri:
-            f_le = self.f(nums[le], a, b, c)
-            f_ri = self.f(nums[ri], a, b, c)
+            f_le = f(nums[le], a, b, c)
+            f_ri = f(nums[ri], a, b, c)
             __ a > 0 a.. f_le < f_ri o. a < 0 a.. f_le > f_ri:
                 ret.a..(f_le)
                 le -= 1
@@ -40,10 +40,10 @@ class Solution(object):
                 ri += 1
 
         w.... le >= 0:
-            ret.a..(self.f(nums[le], a, b, c))
+            ret.a..(f(nums[le], a, b, c))
             le -= 1
         w.... ri < l..(nums):
-            ret.a..(self.f(nums[ri], a, b, c))
+            ret.a..(f(nums[ri], a, b, c))
             ri += 1
 
         r.. ret __ a > 0 ____ ret[::-1]

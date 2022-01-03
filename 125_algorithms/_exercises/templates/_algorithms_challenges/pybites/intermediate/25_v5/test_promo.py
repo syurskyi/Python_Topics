@@ -26,7 +26,7 @@ ___ test_bites_not_done_start(promo):
 ___ test_pick_random_bite_returns_not_done_bite(promo):
     ___ _ __ r..(10):
         bite = promo._pick_random_bite()
-        ... type(bite) __ int
+        ... t..(bite) __ int
         ... bite __ BITES
         ... bite n.. __ promo.bites_done
 

@@ -4,7 +4,7 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ hIndex(self, citations):
         """
         :type citations: List[int]
@@ -25,13 +25,13 @@ class Solution(object):
                 r.. i
         r.. 0
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 0, 6, 1, 5],
         ]
         ___ citations __ testCases:
             print('citations: %s' % (citations))
-            result = self.hIndex(citations)
+            result = hIndex(citations)
             print('result: %s' % (result))
             print('-='*20+'-')
 

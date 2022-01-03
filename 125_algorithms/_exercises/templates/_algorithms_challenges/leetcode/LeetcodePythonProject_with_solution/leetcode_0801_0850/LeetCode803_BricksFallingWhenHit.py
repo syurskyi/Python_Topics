@@ -3,7 +3,7 @@ Created on Apr 21, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ hitBricks(self, grid, hits):
         """
         :type grid: List[List[int]]
@@ -42,7 +42,7 @@ class Solution(object):
                 res[k] = dfs(i, j)-1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [
@@ -62,7 +62,7 @@ class Solution(object):
         ___ grid, hits __ testCases:
             print('grid: %s' % grid)
             print('hits: %s' % hits)
-            result = self.hitBricks(grid, hits)
+            result = hitBricks(grid, hits)
             print('result: %s' % result)
             print('-='*30+'-')
 

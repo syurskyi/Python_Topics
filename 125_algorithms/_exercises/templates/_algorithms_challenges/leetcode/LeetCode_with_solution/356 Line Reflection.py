@@ -6,9 +6,9 @@ ____ collections _______ defaultdict
 __author__ = 'Daniel'
 
 
-class Solution(object):
-    ___ __init__(self):
-        self.x = N..
+c_ Solution(object):
+    ___ - ):
+        x = N..
 
     ___ isReflected(self, points):
         """
@@ -19,11 +19,11 @@ class Solution(object):
         ___ x, y __ points:
             d[y].a..(x)
 
-        ___ v __ d.values():
-            __ n.. self.check(v):
-                r.. False
+        ___ v __ d.v..
+            __ n.. check(v):
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ check(self, lst):
         lst.s..()
@@ -31,21 +31,21 @@ class Solution(object):
         j = l..(lst) - 1
         w.... i < j:
             x = (lst[i] + lst[j]) / float(2)
-            __ n.. self.x:
-                self.x = x
-            ____ self.x != x:
-                r.. False
+            __ n.. x:
+                x = x
+            ____ x != x:
+                r.. F..
 
             i += 1
             j -= 1
 
         __ i __ j:
-            __ n.. self.x:
-                self.x = lst[i]
-            ____ self.x != lst[i]:
-                r.. False
+            __ n.. x:
+                x = lst[i]
+            ____ x != lst[i]:
+                r.. F..
 
-        r.. True
+        r.. T..
 
 __ __name__ __ "__main__":
-    ... Solution().isReflected([[1,1],[-1,-1]]) __ False
+    ... Solution().isReflected([[1,1],[-1,-1]]) __ F..

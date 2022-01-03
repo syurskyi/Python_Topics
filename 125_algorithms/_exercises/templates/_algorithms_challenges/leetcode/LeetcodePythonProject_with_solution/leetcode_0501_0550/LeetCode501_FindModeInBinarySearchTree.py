@@ -5,13 +5,13 @@ Created on May 10, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ findMode(self, root):
         """
         :type root: TreeNode
@@ -44,12 +44,12 @@ class Solution(object):
                 node0 = node0.left
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             TreeNode(1),
         ]
         ___ root __ testCases:
-            result = self.findMode(root)
+            result = findMode(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

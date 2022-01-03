@@ -1,5 +1,5 @@
 _______ string
-_______ re
+_______ __
 
 
 ___ extract_non_ascii_words(text):

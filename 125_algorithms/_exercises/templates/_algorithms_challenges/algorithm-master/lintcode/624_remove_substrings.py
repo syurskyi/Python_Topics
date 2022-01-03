@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: s: a string
     @param: D: a set of n substrings

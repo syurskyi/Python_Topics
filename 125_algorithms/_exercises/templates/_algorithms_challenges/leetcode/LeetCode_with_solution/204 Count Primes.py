@@ -8,7 +8,7 @@ _______ math
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ countPrimes(self, n):
         """
         Find prime using Sieve's algorithm
@@ -18,14 +18,14 @@ class Solution:
         __ n < 3:
             r.. 0
 
-        is_prime = [True ___ _ __ xrange(n)]
-        is_prime[0], is_prime[1] = False, False
+        is_prime = [T.. ___ _ __ xrange(n)]
+        is_prime[0], is_prime[1] = F.., F..
         ___ i __ xrange(2, int(math.sqrt(n))+1):
             __ is_prime[i]:
                 ___ j __ xrange(i*i, n, i):
-                    is_prime[j] = False
+                    is_prime[j] = F..
 
-        r.. is_prime.c.. True)
+        r.. is_prime.c.. T..)
 
 
 __ __name__ __ "__main__":

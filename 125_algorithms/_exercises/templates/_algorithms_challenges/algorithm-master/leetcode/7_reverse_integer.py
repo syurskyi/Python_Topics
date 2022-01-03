@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ reverse(self, x):
         """
         :type x: int

@@ -4,13 +4,13 @@ Created on May 30, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ zigzagLevelOrder(self, root):
         """
         :type root: TreeNode
@@ -19,7 +19,7 @@ class Solution(object):
         res    # list
         __ n.. root: r.. res
         queue, nextQueue, elem = [root], [], []
-        order = True
+        order = T..
         w.... queue:
             node = queue.pop(0)
             elem.a..(node.val)

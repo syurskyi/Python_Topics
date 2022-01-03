@@ -3,20 +3,20 @@ Created on Feb 21, 2018
 
 @author: tongq
 '''
-_______ re
-class Solution(object):
+_______ __
+c_ Solution(object):
     ___ countOfAtoms(self, formula):
         """
         :type formula: str
         :rtype: str
         """
-        hashmap = self.helper(formula)
-        arr = s..([s..(c)+s..(count) __ count > 1 ____ s..(c) ___ c, count __ hashmap.items()])
-        res = ''.join(arr)
+        hashmap = helper(formula)
+        arr = s..([s..(c)+s..(count) __ count > 1 ____ s..(c) ___ c, count __ hashmap.i..])
+        res = ''.j..(arr)
         r.. res
     
     ___ helper(self, s):
-        hashmap = {}
+        hashmap    # dict
         i = 0
         w.... i < l..(s):
             __ s[i] __ '(':
@@ -29,7 +29,7 @@ class Solution(object):
                     ____ s[i] __ '(':
                         count0 += 1
                     i += 1
-                hashmap0 = self.helper(s[prev:i-1])
+                hashmap0 = helper(s[prev:i-1])
                 __ i __ l..(s) o. n.. s[i].isdigit():
                     count = 1
                 ____:
@@ -37,10 +37,10 @@ class Solution(object):
                     w.... i < l..(s) a.. s[i].isdigit():
                         i += 1
                     count = int(s[prev:i])
-                ___ elem, freq __ hashmap0.items():
+                ___ elem, freq __ hashmap0.i..:
                     hashmap[elem] = hashmap.get(elem, 0)+freq*count
             ____:
-                __ i+1 < l..(s) a.. re.match('[a-z]', s[i+1]):
+                __ i+1 < l..(s) a.. __.match('[a-z]', s[i+1]):
                     elem = s[i:i+2]
                     i+=1
                 ____:
@@ -56,7 +56,7 @@ class Solution(object):
                 hashmap[elem] = hashmap.get(elem, 0)+count
         r.. hashmap
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             'H2O',
 #             'Mg(OH)2',
@@ -66,7 +66,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.countOfAtoms(s)
+            result = countOfAtoms(s)
             print('result: %s' % result)
             print('-='*30+'-')
         

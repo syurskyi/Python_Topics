@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ pacificAtlantic(self, matrix):
     """
     :type matrix: List[List[int]]

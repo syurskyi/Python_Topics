@@ -19,7 +19,7 @@ Note: N is an integer in the range [0, 10^9].
 """
 
 
-class Solution:
+c_ Solution:
     ___ monotoneIncreasingDigits(self, N: int) -> int:
         """
         332
@@ -38,7 +38,7 @@ class Solution:
         ___ i __ r..(pointer, l..(digits)):
             digits[i] = 9
 
-        r.. int("".join(map(s.., digits)))
+        r.. int("".j..(map(s.., digits)))
 
 
 __ __name__ __ "__main__":

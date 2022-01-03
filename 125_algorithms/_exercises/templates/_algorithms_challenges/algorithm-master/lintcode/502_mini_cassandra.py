@@ -7,9 +7,9 @@ class Column:
 """
 
 
-class MiniCassandra:
+c_ MiniCassandra:
 
-    storage = {}
+    storage    # dict
 
     """
     @param: raw_key: a string
@@ -18,10 +18,10 @@ class MiniCassandra:
     @return: nothing
     """
     ___ insert(self, raw_key, column_key, column_value):
-        __ raw_key n.. __ self.storage:
-            self.storage[raw_key] = {}
+        __ raw_key n.. __ storage:
+            storage[raw_key]    # dict
 
-        self.storage[raw_key][column_key] = Column(column_key, column_value)
+        storage[raw_key][column_key] = Column(column_key, column_value)
 
     """
     @param: raw_key: a string
@@ -30,12 +30,12 @@ class MiniCassandra:
     @return: a list of Columns
     """
     ___ query(self, raw_key, column_start, column_end):
-        __ raw_key n.. __ self.storage:
+        __ raw_key n.. __ storage:
             r.. []
 
         result = [
             column
-            ___ column_key, column __ self.storage[raw_key].items()
+            ___ column_key, column __ storage[raw_key].i..
             __ column_start <= column_key <= column_end
         ]
 

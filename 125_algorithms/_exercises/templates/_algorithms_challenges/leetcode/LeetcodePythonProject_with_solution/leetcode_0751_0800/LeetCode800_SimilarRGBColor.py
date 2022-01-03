@@ -3,23 +3,23 @@ Created on Apr 19, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ similarRGB(self, color):
         """
         :type color: str
         :rtype: str
         """
-        r, g, b = color[1:3].lower(), color[3:5].lower(), color[5:7].lower()
+        r, g, b = color[1:3].l.., color[3:5].l.., color[5:7].l..
         print(r, g, b)
-        r.. '#' + self.getTwoDigits(r) + self.getTwoDigits(g) + self.getTwoDigits(b)
+        r.. '#' + getTwoDigits(r) + getTwoDigits(g) + getTwoDigits(b)
     
     ___ getTwoDigits(self, s):
         res = 0
         diff = float('inf')
         ___ s0 __ ['00', '11', '22', '33', '44', '55', '66', '77', '88', '99',\
                    'aa', 'bb', 'cc', 'dd', 'ee', 'ff']:
-            num0 = self.convert(s0)
-            num = self.convert(s)
+            num0 = convert(s0)
+            num = convert(s)
             diff0 = (num0-num)**2
             __ diff0 < diff:
                 res = s0
@@ -31,13 +31,13 @@ class Solution(object):
         num += (ord(s[1])-ord('0') __ s[1].isdigit() ____ ord(s[1])-ord('a')+10)
         r.. num
     
-    ___ test(self):
+    ___ test
         testCases = [
             '#09f166',
         ]
         ___ color __ testCases:
             print('color: %s' % color)
-            result = self.similarRGB(color)
+            result = similarRGB(color)
             print('result: %s' % result)
             print('-='*30+'-')
 

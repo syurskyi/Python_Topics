@@ -7,13 +7,13 @@ For example,
 [1,1,2], [1,2,1], and [2,1,1].
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ permuteUnique(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        r.. self.permute(s..(nums))
+        r.. permute(s..(nums))
 
     ___ permute(self, nums):
         __ n.. nums:
@@ -24,7 +24,7 @@ class Solution(object):
             ___ i, e __ e..(nums):
                 __ prev __ N.. o. prev != e:
                     rest = nums[:i] + nums[i + 1:]
-                    rest_perms = self.permute(rest)
+                    rest_perms = permute(rest)
                     ___ perm __ rest_perms:
                         perm.a..(e)
                     res += rest_perms

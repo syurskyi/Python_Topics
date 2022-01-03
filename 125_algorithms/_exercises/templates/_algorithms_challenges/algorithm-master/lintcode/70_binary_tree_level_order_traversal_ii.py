@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: A tree
     @return: buttom-up level order a list of lists of integer
@@ -18,7 +18,7 @@ class Solution:
             r.. ans
 
         preorder = [(root, 1)]
-        self.dfs(root, ans, preorder, 0)
+        dfs(root, ans, preorder, 0)
 
         """
         cannot do append in dfs,
@@ -38,8 +38,8 @@ class Solution:
 
         __ node.left:
             preorder.a..((node.left, depth))
-            self.dfs(node.left, ans, preorder, l..(preorder) - 1)
+            dfs(node.left, ans, preorder, l..(preorder) - 1)
 
         __ node.right:
             preorder.a..((node.right, depth))
-            self.dfs(node.right, ans, preorder, l..(preorder) - 1)
+            dfs(node.right, ans, preorder, l..(preorder) - 1)

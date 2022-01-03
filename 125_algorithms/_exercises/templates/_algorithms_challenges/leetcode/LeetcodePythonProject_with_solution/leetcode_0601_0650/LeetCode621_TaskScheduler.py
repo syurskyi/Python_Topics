@@ -3,7 +3,7 @@ Created on Sep 9, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ leastInterval(self, tasks, n):
         """
         :type tasks: List[str]
@@ -26,11 +26,11 @@ class Solution(object):
         :rtype: int
         """
         _______ heapq
-        hashmap = {}
+        hashmap    # dict
         ___ task __ tasks:
             hashmap[task] = hashmap.get(task, 0)+1
         heap    # list
-        ___ c, count __ hashmap.items():
+        ___ c, count __ hashmap.i..:
             heapq.heappush(heap, (-count, c))
         res = 0
         queue    # list
@@ -57,7 +57,7 @@ class Solution(object):
                     res += n+1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 ['A', 'A', 'A', 'B', 'B', 'B'],
@@ -71,8 +71,8 @@ class Solution(object):
         ___ tasks, n __ testCases:
             print('tasks: %s' % tasks)
             print('n: %s' % n)
-            result = self.leastInterval(tasks, n)
-            result2 = self.leastInterval_own(tasks, n)
+            result = leastInterval(tasks, n)
+            result2 = leastInterval_own(tasks, n)
             print('result: %s' % result)
             print('result2: %s' % result2)
             print('-='*30+'-')

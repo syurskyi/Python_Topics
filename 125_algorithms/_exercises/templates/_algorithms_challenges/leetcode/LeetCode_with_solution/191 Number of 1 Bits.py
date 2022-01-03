@@ -8,7 +8,7 @@ return 3.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ hammingWeight(self, n):
         """
         /2 and %2

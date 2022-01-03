@@ -25,21 +25,21 @@ Each node's value will be an integer in the range [0, 99].
 """
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ isUnivalTree(self, root: TreeNode) -> bool:
-        r.. self.dfs(root, root.val __ root ____ N..)
+        r.. dfs(root, root.val __ root ____ N..)
 
     ___ dfs(self, node, val) -> bool:
         __ n.. node:
-            r.. True
+            r.. T..
         __ node.val != val:
-            r.. False
+            r.. F..
 
-        r.. self.dfs(node.left, val) a.. self.dfs(node.right, val)
+        r.. dfs(node.left, val) a.. dfs(node.right, val)

@@ -8,7 +8,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     Recursion
     time: O(n)
@@ -23,20 +23,20 @@ class Solution:
         :rtype: int
         """
         __ n.. root:
-            r.. self.ans
+            r.. ans
 
-        self.minDiffInBST(root.left)
+        minDiffInBST(root.left)
 
-        __ self.pre a.. root.val - self.pre.val < self.ans:
-            self.ans = root.val - self.pre.val
+        __ pre a.. root.val - pre.val < ans:
+            ans = root.val - pre.val
 
-        self.pre = root
+        pre = root
 
-        self.minDiffInBST(root.right)
-        r.. self.ans
+        minDiffInBST(root.right)
+        r.. ans
 
 
-class Solution:
+c_ Solution:
     """
     Iteration
     time: O(n)

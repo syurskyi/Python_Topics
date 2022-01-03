@@ -18,34 +18,34 @@ BITES = {6: 'PyBites Die Hard',
 BITES_DONE = {6, 10, 16, 18, 21}
 
 
-class NoBitesAvailable(Exception):
+c_ NoBitesAvailable(Exception):
     pass
 
 
-class Promo:
+c_ Promo:
 
-    ___ __init__(self):
+    ___ - ):
         # updated Bite to make local copies (avoid globals!)
-        self.all_bites = BITES.copy()
-        self.bites_done = BITES_DONE.copy()
+        all_bites = BITES.copy()
+        bites_done = BITES_DONE.copy()
     
 
-    @property
-    ___ all_bites_done(self):
-        r.. l..(self.all_bites) __len(self.bites_done)
-    ___ _pick_random_bite(self):
+    $
+    ___ all_bites_done
+        r.. l..(all_bites) __len(bites_done)
+    ___ _pick_random_bite
         """Pick a random Bite that is not done yet, if all
            Bites are done, raise a NoBitesAvailable exception"""
-        __ self.all_bites_done:
+        __ all_bites_done:
             raise NoBitesAvailable
-        r.. random.choice([key ___ key __ BITES.keys() __ key n.. __ self.bites_done])
+        r.. random.choice([key ___ key __ BITES.k.. __ key n.. __ bites_done])
 
-    ___ new_bite(self):
+    ___ new_bite
         """Get  a random Bite using _pick_random_bite,
            add it to self.bites_done, then return it"""
-        bite = self._pick_random_bite()
+        bite = _pick_random_bite()
 
-        self.bites_done.add(bite)
+        bites_done.add(bite)
 
         r.. bite
 

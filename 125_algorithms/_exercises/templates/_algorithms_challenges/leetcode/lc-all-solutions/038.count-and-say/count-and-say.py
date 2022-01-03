@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ countAndSay(self, n):
     """
     :type n: int

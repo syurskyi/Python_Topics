@@ -4,22 +4,22 @@ User = n..('User', 'name role expired')
 USER, ADMIN = 'user', 'admin'
 SECRET = 'I am a very secret token'
 
-julian = User(name='Julian', role=USER, expired=False)
-bob = User(name='Bob', role=USER, expired=True)
-pybites = User(name='PyBites', role=ADMIN, expired=False)
+julian = User(name='Julian', role=USER, expired=F..)
+bob = User(name='Bob', role=USER, expired=T..)
+pybites = User(name='PyBites', role=ADMIN, expired=F..)
 USERS = (julian, bob, pybites)
 
 # define exception classes here
 
 
-class UserDoesNotExist(Exception):
+c_ UserDoesNotExist(Exception):
     pass
 
-class UserAccessExpired(Exception):
+c_ UserAccessExpired(Exception):
     pass
 
 
-class UserNoPermission(Exception):
+c_ UserNoPermission(Exception):
     pass
 
 

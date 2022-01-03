@@ -7,7 +7,7 @@ ___ ontrack_reading(books_goal: int, books_read: int,
         day = [day_of_year 
         __ day_of_year ____ today.timetuple().tm_yday][0]
     __ books_read >= books_goal:
-        r.. True
+        r.. T..
     ____:
         reading_speed = 365 / books_goal
         days_left = 365 - day

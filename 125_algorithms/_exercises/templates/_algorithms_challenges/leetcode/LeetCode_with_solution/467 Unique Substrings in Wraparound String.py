@@ -29,7 +29,7 @@ Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string
 """
 
 
-class Solution:
+c_ Solution:
     ___ findSubstringInWraproundString(self, p):
         """
         wrap around: +1 (delta=1)
@@ -80,7 +80,7 @@ class Solution:
             w.... j < l..(p) a.. (ord(p[j]) - ord(cur[-1]) __ 1 o. p[j] __ "a" a.. cur[-1] __ "z"):
                 cur.a..(p[j])
                 j += 1
-            ret.add("".join(cur))
+            ret.add("".j..(cur))
             i = j
 
         r.. s..(map(l.... x: (l..(x) + 1) * l..(x) // 2, ret))

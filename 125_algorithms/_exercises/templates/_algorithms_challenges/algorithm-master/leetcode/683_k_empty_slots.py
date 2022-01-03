@@ -14,7 +14,7 @@ True
 _______ bisect
 
 
-class Solution:
+c_ Solution:
     """
     Maintain pos by bloom order
     """
@@ -37,7 +37,7 @@ class Solution:
         r.. -1
 
 
-class Solution2:
+c_ Solution2:
     """
     Two Pointer:
     https://blog.csdn.net/magicbean2/article/details/79235465

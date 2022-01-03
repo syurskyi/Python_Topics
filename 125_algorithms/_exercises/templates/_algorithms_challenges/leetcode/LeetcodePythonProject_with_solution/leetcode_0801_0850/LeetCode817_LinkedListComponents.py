@@ -4,12 +4,12 @@ Created on May 1, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-class ListNode(object):
-    ___ __init__(self, x, nextNode_ N..
-        self.val = x
-        self.next = nextNode
+c_ ListNode(object):
+    ___ - , x, nextNode_ N..
+        val = x
+        next = nextNode
 
-class Solution(object):
+c_ Solution(object):
     ___ numComponents(self, head, G):
         """
         :type head: ListNode
@@ -30,7 +30,7 @@ class Solution(object):
             head = head.next
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [0,1,2,3],
@@ -47,7 +47,7 @@ class Solution(object):
             ___ num __ l:
                 node.next = ListNode(num)
                 node = node.next
-            result = self.numComponents(dummy.next, g)
+            result = numComponents(dummy.next, g)
             print('result: %s' % result)
             print('-='*30+'-')
 

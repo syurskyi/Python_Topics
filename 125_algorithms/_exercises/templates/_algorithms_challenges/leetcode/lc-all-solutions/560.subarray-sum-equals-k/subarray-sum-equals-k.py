@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ subarraySum(self, nums, k):
     """
     :type nums: List[int]

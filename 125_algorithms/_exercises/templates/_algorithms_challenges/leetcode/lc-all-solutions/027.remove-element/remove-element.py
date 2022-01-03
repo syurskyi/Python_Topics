@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ removeElement(self, nums, val):
     """
     :type nums: List[int]

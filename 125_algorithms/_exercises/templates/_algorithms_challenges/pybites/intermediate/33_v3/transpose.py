@@ -19,9 +19,9 @@ ___ transpose(data):
     """
 
 
-    __ type(data) __ d..:
+    __ t..(data) __ d..:
         r.. [tuple(data.keys()),tuple(data.values())]
-    ____ type(data) __ l..:
+    ____ t..(data) __ l..:
         
         r.. [z ___ z __ z..(*(tuple(d) ___ d __ data))]
 

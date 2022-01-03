@@ -1,8 +1,8 @@
 ___ XO(txt):
-    s = txt.lower()
+    s = txt.l..
     __ s.c.. "x") __ 0 a.. s.c.. "o") __ 0:
-        r.. True
+        r.. T..
     ____ s.c.. "x") __ s.c.. "o"):
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

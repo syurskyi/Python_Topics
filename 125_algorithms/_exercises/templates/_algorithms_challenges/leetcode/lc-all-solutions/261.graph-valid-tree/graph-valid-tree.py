@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
   # @param {int} n an integer
   # @param {int[][]} edges a list of undirected edges
   # @return {boolean} true if it's a valid tree, or false
@@ -11,22 +11,22 @@ class Solution:
         __ nbr __ parent:
           continue
         ____ visited[nbr] != 0:
-          r.. False
+          r.. F..
         __ n.. dfs(nbr, graph, visited, root):
-          r.. False
+          r.. F..
       visited[root] = 2
-      self.nodeVisited += 1
-      r.. True
+      nodeVisited += 1
+      r.. T..
 
     visited = [0 ___ _ __ r..(n)]
-    graph = {}
-    self.nodeVisited = 0
+    graph    # dict
+    nodeVisited = 0
     ___ edge __ edges:
       start, end = edge[0], edge[1]
       graph[start] = graph.get(start, []) + [end]
       graph[end] = graph.get(end, []) + [start]
 
-    __ dfs(0, graph, visited, -1) a.. self.nodeVisited __ n:
-      r.. True
+    __ dfs(0, graph, visited, -1) a.. nodeVisited __ n:
+      r.. T..
     ____:
-      r.. False
+      r.. F..

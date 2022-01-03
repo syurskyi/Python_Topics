@@ -10,7 +10,7 @@
 # so it must be valid)
 # moreover, we have more available time for taking more courses
 
-class Solution(object):
+c_ Solution(object):
   ___ scheduleCourse(self, courses):
     """
     :type courses: List[List[int]]

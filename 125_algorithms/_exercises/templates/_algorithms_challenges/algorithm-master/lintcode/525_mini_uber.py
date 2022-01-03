@@ -15,9 +15,9 @@ class Helper:
 ____ Trip _______ Trip, Helper
 
 
-class MiniUber:
-    driver_to_locs = {}
-    driver_to_trip = {}
+c_ MiniUber:
+    driver_to_locs    # dict
+    driver_to_trip    # dict
     INFINITY = float('inf')
 
     # @param {int} driver_id an integer
@@ -28,14 +28,14 @@ class MiniUber:
         __ n.. driver_id:
             r..
 
-        __ driver_id __ self.driver_to_trip:
-            r.. self.driver_to_trip[driver_id]
+        __ driver_id __ driver_to_trip:
+            r.. driver_to_trip[driver_id]
 
-        __ driver_id __ self.driver_to_locs:
-            self.driver_to_locs[driver_id]['lat'] = lat
-            self.driver_to_locs[driver_id]['lng'] = lng
+        __ driver_id __ driver_to_locs:
+            driver_to_locs[driver_id]['lat'] = lat
+            driver_to_locs[driver_id]['lng'] = lng
         ____:
-            self.driver_to_locs[driver_id] = self._new_location(lat, lng)
+            driver_to_locs[driver_id] = _new_location(lat, lng)
 
     # @param rider_id an integer
     # @param lat, lng rider's location
@@ -44,10 +44,10 @@ class MiniUber:
         __ n.. rider_id:
             r..
         trip = Trip(rider_id, lat, lng)
-        _distance = distance = self.INFINITY
+        _distance = distance = INFINITY
         driver_id = -1
 
-        ___ _driver_id, _loc __ self.driver_to_locs.items():
+        ___ _driver_id, _loc __ driver_to_locs.i..:
             _distance = Helper.get_distance(_loc['lat'], _loc['lng'], lat, lng)
             __ _distance < distance:
                 driver_id = _driver_id
@@ -57,8 +57,8 @@ class MiniUber:
             r.. trip
 
         trip.driver_id = driver_id
-        self.driver_to_trip[driver_id] = trip
-        del self.driver_to_locs[driver_id]
+        driver_to_trip[driver_id] = trip
+        del driver_to_locs[driver_id]
 
         r.. trip
 

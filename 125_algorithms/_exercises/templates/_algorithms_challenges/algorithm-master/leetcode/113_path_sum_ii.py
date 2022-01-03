@@ -8,7 +8,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ pathSum(self, root, target):
         """
         :type root: TreeNode
@@ -20,7 +20,7 @@ class Solution:
         __ n.. root:
             r.. ans
 
-        self.dfs(root, target, ans, [])
+        dfs(root, target, ans, [])
 
         r.. ans
 
@@ -33,7 +33,7 @@ class Solution:
         __ n.. node.left a.. n.. node.right a.. remaining __ node.val:
             ans.a..(path[:])
         ____:
-            self.dfs(node.left, remaining - node.val, ans, path)
-            self.dfs(node.right, remaining - node.val, ans, path)
+            dfs(node.left, remaining - node.val, ans, path)
+            dfs(node.right, remaining - node.val, ans, path)
 
         path.pop()

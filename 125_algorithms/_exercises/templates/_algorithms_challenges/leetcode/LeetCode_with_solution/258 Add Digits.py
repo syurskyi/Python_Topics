@@ -11,7 +11,7 @@ Could you do it without any loop/recursion in O(1) runtime?
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ addDigits(self, num):
         """
         Enumerate and find the pattern

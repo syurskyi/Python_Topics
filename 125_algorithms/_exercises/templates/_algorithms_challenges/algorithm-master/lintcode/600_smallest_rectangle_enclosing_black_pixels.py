@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ minArea(self, image, x, y):
         """
         :type image: list[str]
@@ -11,10 +11,10 @@ class Solution:
 
         m, n = l..(image), l..(image[0])
 
-        top = self.binary_search(image, 0, x, self.is_empty_row)
-        bottom = self.binary_search(image, m - 1, x, self.is_empty_row)
-        left = self.binary_search(image, 0, y, self.is_empty_col)
-        right = self.binary_search(image, n - 1, y, self.is_empty_col)
+        top = binary_search(image, 0, x, is_empty_row)
+        bottom = binary_search(image, m - 1, x, is_empty_row)
+        left = binary_search(image, 0, y, is_empty_col)
+        right = binary_search(image, n - 1, y, is_empty_col)
 
         r.. (bottom - top + 1) * (right - left + 1)
 
@@ -39,11 +39,11 @@ class Solution:
     ___ is_empty_row(self, image, x):
         ___ col __ image[x]:
             __ col __ '1':
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     ___ is_empty_col(self, image, y):
         ___ row __ image:
             __ row[y] __ '1':
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..

@@ -8,7 +8,7 @@ Note:
 _______ collections
 
 
-class Solution:
+c_ Solution:
     """
     BFS
 
@@ -37,13 +37,13 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] __ self.HOUSE:
+                __ grid[x][y] __ HOUSE:
                     cnt += 1
-                    self.bfs(grid, x, y, times, steps)
+                    bfs(grid, x, y, times, steps)
 
         ans = INF = float('inf')
 
-        ___ (x, y), t __ times.items():
+        ___ (x, y), t __ times.i..:
             __ t __ cnt a.. steps[x, y] < ans:
                 ans = steps[x, y]
 
@@ -68,7 +68,7 @@ class Solution:
 
                     __ n.. (0 <= _x < m a.. 0 <= _y < n):
                         continue
-                    __ grid[_x][_y] != self.EMPTY:
+                    __ grid[_x][_y] != EMPTY:
                         continue
                     __ (_x, _y) __ visited:
                         continue
@@ -85,7 +85,7 @@ class Solution:
 _______ collections
 
 
-class Solution:
+c_ Solution:
     """
     DFS: TLE
 
@@ -112,16 +112,16 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                __ grid[x][y] != self.HOUSE:
+                __ grid[x][y] != HOUSE:
                     continue
 
                 cnt += 1
                 step = collections.defaultdict(int)  # steps for current house
-                self.dfs(grid, x, y, cnt, ids, steps, step)
+                dfs(grid, x, y, cnt, ids, steps, step)
 
         ans = INF = float('inf')
 
-        ___ (x, y), hids __ ids.items():
+        ___ (x, y), hids __ ids.i..:
             __ l..(hids) __ cnt a.. steps[x, y] < ans:
                 ans = steps[x, y]
 
@@ -139,7 +139,7 @@ class Solution:
 
             __ n.. (0 <= _x < m a.. 0 <= _y < n):
                 continue
-            __ grid[_x][_y] != self.EMPTY:
+            __ grid[_x][_y] != EMPTY:
                 continue
             __ step[x, y] + 1 >= step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
                 continue
@@ -150,4 +150,4 @@ class Solution:
             step[_x, _y] = step[x, y] + 1
             steps[_x, _y] += step[_x, _y]
 
-            self.dfs(grid, _x, _y, id, ids, steps, step)
+            dfs(grid, _x, _y, id, ids, steps, step)

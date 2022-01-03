@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: A Tree
     @return: Preorder in ArrayList which contains node values.
@@ -16,7 +16,7 @@ class Solution:
         ans    # list
         __ n.. root:
             r.. ans
-        self._traversal(root, ans)
+        _traversal(root, ans)
         r.. ans
 
     ___ _traversal(self, node, res):
@@ -24,5 +24,5 @@ class Solution:
             r..
 
         res.a..(node.val)
-        self._traversal(node.left, res)
-        self._traversal(node.right, res)
+        _traversal(node.left, res)
+        _traversal(node.right, res)

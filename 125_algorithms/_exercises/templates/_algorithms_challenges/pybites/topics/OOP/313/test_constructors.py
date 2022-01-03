@@ -25,7 +25,7 @@ ___ test_invalid_domain():
 ])
 ___ test_create_domain_from_url(arg, expected):
     domain = Domain.parse_url(arg)
-    ... type(domain) __ Domain
+    ... t..(domain) __ Domain
     ... s..(domain) __ expected
 
 
@@ -37,5 +37,5 @@ ___ test_create_domain_from_url(arg, expected):
 ])
 ___ test_create_domain_from_email(arg, expected):
     domain = Domain.parse_email(arg)
-    ... type(domain) __ Domain
+    ... t..(domain) __ Domain
     ... s..(domain) __ expected

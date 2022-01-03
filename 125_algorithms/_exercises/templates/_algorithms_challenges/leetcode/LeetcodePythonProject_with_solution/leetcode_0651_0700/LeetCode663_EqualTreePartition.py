@@ -4,45 +4,45 @@ Created on Oct 8, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N..,right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N..,right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ checkEqualTree(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
-        __ n.. root: r.. False
-        r.. self.helper(root, 0, True)
+        __ n.. root: r.. F..
+        r.. helper(root, 0, T..)
     
     ___ helper(self, root, sumVal, firstLevel):
         __ n.. root:
-            r.. False
-        __ sumVal __ self.s..(root) a.. n.. firstLevel:
-            r.. True
-        __ (root.left a.. self.helper(root.left, sumVal+root.val+self.s..(root.right), False)) o.\
-            (root.right a.. self.helper(root.right, sumVal+root.val+self.s..(root.left), False)):
-            r.. True
-        r.. False
+            r.. F..
+        __ sumVal __ s..(root) a.. n.. firstLevel:
+            r.. T..
+        __ (root.left a.. helper(root.left, sumVal+root.val+s..(root.right), F..)) o.\
+            (root.right a.. helper(root.right, sumVal+root.val+s..(root.left), F..)):
+            r.. T..
+        r.. F..
     
     ___ s..(self, root):
         __ n.. root: r.. 0
         res = root.val
-        res += self.s..(root.left)
-        res += self.s..(root.right)
+        res += s..(root.left)
+        res += s..(root.right)
         r.. res
     
     ___ sumVal(self, root):
         __ n.. root: r.. 0
         r.. root.val +\
-            self.sumVal(root.left)+\
-            self.sumVal(root.right)
+            sumVal(root.left)+\
+            sumVal(root.right)
     
-    ___ test(self):
+    ___ test
         testCases = [
             TreeNode(5, TreeNode(10), TreeNode(10, TreeNode(2), TreeNode(3))),
             TreeNode(1, TreeNode(2), TreeNode(10, TreeNode(2), TreeNode(20))),
@@ -51,7 +51,7 @@ class Solution(object):
             TreeNode(2, TreeNode(1, TreeNode(0), TreeNode(2, TreeNode(3))), TreeNode(3)),
         ]
         ___ root __ testCases:
-            result = self.checkEqualTree(root)
+            result = checkEqualTree(root)
             print('result: %s' % result)
             print('-='*30+'-')
 

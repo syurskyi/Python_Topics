@@ -4,7 +4,7 @@ Created on Mar 16, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ removeDuplicateLetters(self, s):
         __ n.. s: r.. ''
         cnt = [0]*26
@@ -17,11 +17,11 @@ class Solution(object):
             cnt[ord(c)-ord('a')] -= 1
             __ cnt[ord(c)-ord('a')] __ 0:
                 break
-        r.. s[pos]+self.removeDuplicateLetters(s[pos+1:].r..(s[pos], ''))
+        r.. s[pos]+removeDuplicateLetters(s[pos+1:].r..(s[pos], ''))
     
     ___ removeDuplicateLetters_another(self, s):
         __ n.. s: r.. ''
-        lastPosMap = {}
+        lastPosMap    # dict
         ___ i, c __ e..(s):
             lastPosMap[c] = i
         length = l..(lastPosMap)
@@ -38,16 +38,16 @@ class Solution(object):
                 break
             del lastPosMap[minChar]
             end = m..(lastPosMap.values())
-        r.. ''.join(res)
+        r.. ''.j..(res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             'bcabc',
             'cbacbcbc',
         ]
         ___ s __ testCases:
             print('s: %s' % (s))
-            result = self.removeDuplicateLetters(s)
+            result = removeDuplicateLetters(s)
             print('result: %s' % (result))
             print('-='*20+'-')
 

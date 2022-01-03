@@ -41,7 +41,7 @@ The decoded string is guaranteed to have less than 2^63 letters.
 """
 
 
-class Solution:
+c_ Solution:
     ___ decodeAtIndex(self, S: s.., K: int) -> s..:
         """
         walk backward

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ orderlyQueue(self, S, K):
         """
         :type S: str
@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: str
         """
         __ K > 1:
-            r.. ''.join(s..(S))
+            r.. ''.j..(s..(S))
         n = l..(S)
         minIdx = 0
         ___ i __ r..(1, n):
@@ -18,7 +18,7 @@ class Solution(object):
                     break
         r.. S[minIdx:] + S[:minIdx]
 
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "cba", 1,
@@ -31,7 +31,7 @@ class Solution(object):
             ],
         ]
         ___ s, k __ testCases:
-            res = self.orderlyQueue(s, k)
+            res = orderlyQueue(s, k)
             print('res: %s' % res)
             print('-='*30+'-')
 

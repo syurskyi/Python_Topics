@@ -15,16 +15,16 @@ All inputs will be in lower-case.
 
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ groupAnagrams(self, strs):
         """
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        d = {}
+        d    # dict
         res    # list
         ___ s __ strs:
-            k = self.make_key(s)
+            k = make_key(s)
             __ k n.. __ d:
                 d[k] = [s]
             ____:
@@ -34,7 +34,7 @@ class Solution(object):
         r.. res
 
     ___ make_key(self, s):
-        r.. ''.join(s..(s))
+        r.. ''.j..(s..(s))
 
 
 s = Solution()

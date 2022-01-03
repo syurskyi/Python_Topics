@@ -4,7 +4,7 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ isOneEditDistance(self, s, t):
         """
         :type s: str
@@ -12,10 +12,10 @@ class Solution(object):
         :rtype: bool
         """
         __ s __ N.. o. t __ N..
-            r.. False
+            r.. F..
         m, n = l..(t), l..(s)
         __ abs(m-n) > 1:
-            r.. False
+            r.. F..
         i, j, count = 0, 0, 0
         w.... i < n a.. j < m:
             __ s[i] __ t[j]:
@@ -24,7 +24,7 @@ class Solution(object):
             ____:
                 count+=1
                 __ count>1:
-                    r.. False
+                    r.. F..
                 __ m>n:
                     j+=1
                 ____ n>m:
@@ -35,10 +35,10 @@ class Solution(object):
         __ i < n o. j < m:
             count += 1
         __ count __ 1:
-            r.. True
-        r.. False
+            r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

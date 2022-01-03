@@ -3,7 +3,7 @@ Created on Sep 30, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ transpose(self, A):
         """
         :type A: List[List[int]]

@@ -3,7 +3,7 @@ ____ d__ _______ d__
 
 TimeOffset = n..('TimeOffset', 'offset date_str divider')
 
-NOW = d__.now()
+NOW = d__.n..
 MINUTE, HOUR, DAY = 60, 60*60, 24*60*60
 TIME_OFFSETS = (
     TimeOffset(10, 'just now', N..),
@@ -21,7 +21,7 @@ ___ pretty_date(date):
        using TIME_OFFSETS"""
     
 
-    __ type(date) != d__:
+    __ t..(date) != d__:
         raise ValueError("Not a datetime")
 
     __ date > NOW:

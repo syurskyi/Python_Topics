@@ -9,7 +9,7 @@ ___ bowling_score(rolls):
 
     total = 0
     frame = 0
-    newframe = True
+    newframe = T..
     ___ index, roll __ e..(rolls):
         __ frame __ 10:
             break
@@ -21,9 +21,9 @@ ___ bowling_score(rolls):
             __ rolls[index - 1] + roll __ 10:
                 total += rolls[index + 1]
             frame += 1
-            newframe = True
+            newframe = T..
         ____:
-            newframe = False
+            newframe = F..
         total += roll
 
     r.. total

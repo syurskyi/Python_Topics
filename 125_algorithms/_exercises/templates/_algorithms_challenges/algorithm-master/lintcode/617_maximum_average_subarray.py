@@ -29,7 +29,7 @@ valid    T      T    T    F     F
 """
 
 
-class Solution:
+c_ Solution:
     ___ maxAverage(self, nums, k):
         """
         :type nums: list[int]
@@ -54,7 +54,7 @@ class Solution:
         w.... right - left > EPS:
             mid = (left + right) / 2.0
 
-            __ self.is_valid(nums, k, mid, s):
+            __ is_valid(nums, k, mid, s):
                 left = mid
             ____:
                 right = mid
@@ -75,9 +75,9 @@ class Solution:
             => it's valid even if just only one, return True immediately
             """
             __ s[i] >= smin:  # s[i] - smin >= 0
-                r.. True
+                r.. T..
 
             __ s[i - k + 1] < smin:
                 smin = s[i - k + 1]
 
-        r.. False
+        r.. F..

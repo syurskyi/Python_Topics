@@ -14,43 +14,43 @@ TLE
 """
 
 
-class LRUCache:
+c_ LRUCache:
 
     # @param capacity, an integer
-    ___ __init__(self, capacity):
-        self.capacity = capacity
-        self.times = {}
-        self.cache = {}
-        self.timestamp = 0
+    ___ - , capacity):
+        capacity = capacity
+        times    # dict
+        cache    # dict
+        timestamp = 0
 
     # @return an integer
     ___ get(self, key):
-        self.timestamp += 1
-        __ key __ self.cache:
-            self.times[key] = self.timestamp
-            r.. self.cache[key]
+        timestamp += 1
+        __ key __ cache:
+            times[key] = timestamp
+            r.. cache[key]
         r.. -1
 
     # @param key, an integer
     # @param value, an integer
     # @return nothing
     ___ set(self, key, value):
-        self.timestamp += 1
-        __ key __ self.cache:
-            self.times[key] = self.timestamp
+        timestamp += 1
+        __ key __ cache:
+            times[key] = timestamp
         ____:
-            __ l..(self.cache) >= self.capacity:
-                lru_key = self.get_lru_key()
-                del self.cache[lru_key]
-                del self.times[lru_key]
-            self.cache[key] = value
-            self.times[key] = self.timestamp
+            __ l..(cache) >= capacity:
+                lru_key = get_lru_key()
+                del cache[lru_key]
+                del times[lru_key]
+            cache[key] = value
+            times[key] = timestamp
 
-    ___ get_lru_key(self):
-        min_time = self.timestamp
+    ___ get_lru_key
+        min_time = timestamp
         res = N..
-        ___ key __ self.times:
-            __ self.times[key] <= min_time:
+        ___ key __ times:
+            __ times[key] <= min_time:
                 res = key
-                min_time = self.times[key]
+                min_time = times[key]
         r.. res

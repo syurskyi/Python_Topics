@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     maintain a set to record if there is unused cands
     """
@@ -38,7 +38,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     """
     1. sorted
     2. if its consecutive, add 1 for size

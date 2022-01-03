@@ -13,7 +13,7 @@ sum(P) - sum(N) = target
 """
 
 
-class Solution:
+c_ Solution:
     ___ findTargetSumWays(self, A, target):
         """
         :type A: List[int]
@@ -27,7 +27,7 @@ class Solution:
         __ _sum < target o. (_sum + target) % 2 __ 1:
             r.. 0
 
-        r.. self.subset_sum(A, (_sum + target) // 2)
+        r.. subset_sum(A, (_sum + target) // 2)
 
     ___ subset_sum(self, A, target):
         """

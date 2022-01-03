@@ -9,7 +9,7 @@ b) Delete a character
 c) Replace a character
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ minDistance(self, word1, word2):
         """
         dp: Wagner-Fischer algorithm

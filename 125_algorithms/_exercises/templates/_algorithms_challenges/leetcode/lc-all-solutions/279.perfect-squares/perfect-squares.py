@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ numSquares(self, n):
     """
     :type n: int
@@ -11,7 +11,7 @@ class Solution(object):
       j += 1
     level = 0
     queue = [n]
-    visited = [False] * (n + 1)
+    visited = [F..] * (n + 1)
     w.... queue:
       level += 1
       temp    # list
@@ -24,6 +24,6 @@ class Solution(object):
           __ visited[q - factor]:
             continue
           temp.a..(q - factor)
-          visited[q - factor] = True
+          visited[q - factor] = T..
       queue = temp
     r.. level

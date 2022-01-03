@@ -8,7 +8,7 @@ dict = ["leet", "code"].
 Return true because "leetcode" can be segmented as "leet code".
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ wordBreak_TLE(self, s, d..):
         """
         TLE
@@ -23,21 +23,21 @@ class Solution:
         """
         string_builder = ""
         __ s__"":
-            r.. True
+            r.. T..
 
         # greedy
         ___ i __ r..(l..(s)):
             string_builder += s[i]
             __ string_builder __ d..:
                 try:
-                    __ self.wordBreak_TLE(s[i+1:], d..):
-                        r.. True
+                    __ wordBreak_TLE(s[i+1:], d..):
+                        r.. T..
                     ____:
                         continue
                 except IndexError:
-                    r.. True
+                    r.. T..
 
-        r.. False
+        r.. F..
 
     ___ wordBreak(self, s, d..):
         """
@@ -67,8 +67,8 @@ class Solution:
         :param dict: a set of string
         :return: a boolean
         """
-        dp = [False] * (l..(s)+1)
-        dp[0] = True # dummy
+        dp = [F..] * (l..(s)+1)
+        dp[0] = T.. # dummy
 
         ___ i __ r..(l..(dp)):  # [0, len(s)+1)
             # continue from matched condition
@@ -81,7 +81,7 @@ class Solution:
 
                         # main
                         __ s[i:i+l..(word)]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
-                            dp[i+l..(word)] = True  # record the checking
+                            dp[i+l..(word)] = T..  # record the checking
                     except IndexError:
                         continue
 

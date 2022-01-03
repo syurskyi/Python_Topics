@@ -14,7 +14,7 @@ Keywords: enum, exception handling, multi type input
 ____ enum _______ Enum
 
 
-class Bloodtype(Enum):
+c_ Bloodtype(Enum):
     ZERO_NEG = 0
     ZERO_POS = 1
     B_NEG = 2
@@ -69,7 +69,7 @@ ___ _check_convert_input(inpval):
         ____:
             raise ValueError
     __ isi..(inpval, s..):
-        __ inpval __ blood_type_text.keys():
+        __ inpval __ blood_type_text.k..:
             r.. blood_type_text[inpval]
         ____:
             raise ValueError

@@ -6,5 +6,5 @@ ___ foolsDay(problems):
         ___ num __ numbers:
             total += int(num)*int(num)
         answer.a..(s..(total))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 foolsDay(input())

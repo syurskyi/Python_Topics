@@ -1,22 +1,22 @@
 ____ json _______ dumps
 
 
-class Tree(object):
-    ___ __init__(self, label, children=[]):
-        self.label = label
-        self.children = children
+c_ Tree(object):
+    ___ - , label, children=[]):
+        label = label
+        children = children
 
-    ___ __dict__(self):
-        r.. {self.label: [c.__dict__() ___ c __ s..(self.children)]}
+    ___ __dict__
+        r.. {label: [c.__dict__() ___ c __ s..(children)]}
 
     ___ __str__(self, indent_ N..
-        r.. dumps(self.__dict__(), indent=indent)
+        r.. dumps(__dict__(), indent=indent)
 
     ___ __lt__(self, other):
-        r.. self.label < other.label
+        r.. label < other.label
 
     ___ __eq__(self, other):
-        r.. self.__dict__() __ other.__dict__()
+        r.. __dict__() __ other.__dict__()
 
     ___ from_pov(self, from_node):
         pass

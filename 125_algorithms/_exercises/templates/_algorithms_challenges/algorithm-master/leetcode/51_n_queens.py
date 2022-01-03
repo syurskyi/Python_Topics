@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ solveNQueens(self, n):
         """
         :type n: int
@@ -9,18 +9,18 @@ class Solution:
             r.. ans
 
         G = [['.'] * n ___ _ __ r..(n)]
-        self.dfs(G, 0, ans)
+        dfs(G, 0, ans)
         r.. ans
 
     ___ dfs(self, G, y, ans):
         __ y __ l..(G):
-            ans.a..(self.clone_board(G))
+            ans.a..(clone_board(G))
             r..
 
         ___ x __ r..(l..(G)):
-            __ self.is_valid(G, x, y):
+            __ is_valid(G, x, y):
                 G[x][y] = 'Q'
-                self.dfs(G, y + 1, ans)
+                dfs(G, y + 1, ans)
                 G[x][y] = '.'
 
     ___ is_valid(self, G, x, y):
@@ -39,11 +39,11 @@ class Solution:
                 __ (x + j __ y + i o.
                     x + y __ i + j o.
                     x __ i):
-                    r.. False
-        r.. True
+                    r.. F..
+        r.. T..
 
     ___ clone_board(self, G):
         res    # list
         ___ R __ G:
-            res.a..(''.join(R))
+            res.a..(''.j..(R))
         r.. res

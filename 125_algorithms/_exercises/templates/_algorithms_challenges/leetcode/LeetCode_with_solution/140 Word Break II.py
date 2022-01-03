@@ -14,7 +14,7 @@ __author__ = 'Danyang'
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ wordBreak(self, s, d..):
         """
         .______   .______       _______  _______  __  ___   ___  _______     _______.
@@ -57,7 +57,7 @@ class Solution:
             r.. []
 
         result    # list
-        self.build_result(dp, l..(s), deque(), result)
+        build_result(dp, l..(s), deque(), result)
         r.. result
 
 
@@ -69,13 +69,13 @@ class Solution:
         """
         # reached, build the result from cur_sentence
         __ cur_index __ 0:
-            result.a..(" ".join(cur_sentence))
+            result.a..(" ".j..(cur_sentence))
             r..
 
         # dfs
         ___ prefix __ dp[cur_index]:
             cur_sentence.appendleft(prefix)
-            self.build_result(dp, cur_index - l..(prefix), cur_sentence, result)
+            build_result(dp, cur_index - l..(prefix), cur_sentence, result)
             cur_sentence.popleft()
 
 

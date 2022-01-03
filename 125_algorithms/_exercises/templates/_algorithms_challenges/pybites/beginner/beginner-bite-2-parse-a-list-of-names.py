@@ -23,7 +23,7 @@ ___ dedup_and_title_case_names(names):
 
 ___ sort_by_surname_desc(names):
     """Returns names list sorted desc by surname"""
-    r.. s..(names, key=l.... x: x.s..(" ")[1], reverse = True)
+    r.. s..(names, key=l.... x: x.s..(" ")[1], reverse = T..)
 
 
 ___ shortest_first_name(names):

@@ -17,7 +17,7 @@ ___ rebase(from_base, digits, to_base):
     __ (to_base < 2):
         raise ValueError("Invalid output base.")
 
-    __ any(True ___ d __ digits __ d < 0 o. d >= from_base):
+    __ any(T.. ___ d __ digits __ d < 0 o. d >= from_base):
         raise ValueError("Invalid input digit.")
 
     r.. to_digits(from_digits(digits, from_base), to_base)

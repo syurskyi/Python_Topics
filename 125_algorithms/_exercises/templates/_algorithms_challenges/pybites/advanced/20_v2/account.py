@@ -1,22 +1,22 @@
-class Account:
+c_ Account:
 
-    ___ __init__(self):
-        self._transactions    # list
+    ___ - ):
+        _transactions    # list
 
-    @property
-    ___ balance(self):
-        r.. s..(self._transactions)
+    $
+    ___ balance
+        r.. s..(_transactions)
 
     ___ __add__(self, amount):
-        self._transactions.a..(amount)
+        _transactions.a..(amount)
 
     ___ __sub__(self, amount):
-        self._transactions.a..(-amount)
+        _transactions.a..(-amount)
 
-    ___ __enter__(self):
+    ___ __enter__
         r.. self
 
     ___ __exit__(self, *_):
-        w.... self.balance < 0:
-            self._transactions.pop()
+        w.... balance < 0:
+            _transactions.pop()
         r.. self

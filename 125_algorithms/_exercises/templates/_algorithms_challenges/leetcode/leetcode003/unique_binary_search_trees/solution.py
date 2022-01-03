@@ -12,14 +12,14 @@ Given n = 3, there are a total of 5 unique BST's.
    2     1         2                 3
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ numTrees(self, n):
         """
         :type n: int
         :rtype: int
         """
         t = [-1 ___ _ __ r..(n + 1)]
-        r.. self.num_trees_aux(n, t)
+        r.. num_trees_aux(n, t)
 
     ___ num_trees_aux(self, n, t):
         __ n __ 0 o. n __ 1:
@@ -29,7 +29,7 @@ class Solution(object):
         ____:
             res = 0
             ___ i __ r..(n):
-                res += self.num_trees_aux(i, t) * \
-                    self.num_trees_aux(n - 1 - i, t)
+                res += num_trees_aux(i, t) * \
+                    num_trees_aux(n - 1 - i, t)
             t[n] = res
             r.. res

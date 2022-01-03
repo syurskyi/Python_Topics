@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ minDepth(self, root):
     """
     :type root: TreeNode
@@ -13,8 +13,8 @@ class Solution(object):
     """
     __ n.. root:
       r.. 0
-    left = self.minDepth(root.left)
-    right = self.minDepth(root.right)
+    left = minDepth(root.left)
+    right = minDepth(root.right)
     __ n.. left a.. n.. right:
       r.. 1
     ____ n.. left:

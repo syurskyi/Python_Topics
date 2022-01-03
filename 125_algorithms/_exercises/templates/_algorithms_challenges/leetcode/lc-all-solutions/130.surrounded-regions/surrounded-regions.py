@@ -1,32 +1,32 @@
-class UnionFind():
-  ___ __init__(self, m, n):
-    self.dad = [i ___ i __ r..(0, m * n)]
-    self.rank = [0 ___ i __ r..(0, m * n)]
-    self.m = m
-    self.n = n
+c_ UnionFind():
+  ___ - , m, n):
+    dad = [i ___ i __ r..(0, m * n)]
+    rank = [0 ___ i __ r..(0, m * n)]
+    m = m
+    n = n
 
   ___ find(self, x):
-    dad = self.dad
+    dad = dad
     __ dad[x] != x:
-      dad[x] = self.find(dad[x])
+      dad[x] = find(dad[x])
     r.. dad[x]
 
   ___ union(self, xy):
-    dad = self.dad
-    rank = self.rank
-    x, y = map(self.find, xy)
+    dad = dad
+    rank = rank
+    x, y = map(find, xy)
     __ x __ y:
-      r.. False
+      r.. F..
     __ rank[x] > rank[y]:
       dad[y] = x
     ____:
       dad[x] = y
       __ rank[x] __ rank[y]:
         rank[y] += 1
-    r.. True
+    r.. T..
 
 
-class Solution:
+c_ Solution:
   # @param {list[list[str]]} board a 2D board containing 'X' and 'O'
   # @return nothing 
   ___ solve(self, board):

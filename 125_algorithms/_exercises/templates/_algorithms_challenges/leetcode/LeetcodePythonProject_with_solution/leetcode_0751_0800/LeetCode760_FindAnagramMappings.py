@@ -3,7 +3,7 @@ Created on Mar 31, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ anagramMappings(self, A, B):
         """
         :type A: List[int]
@@ -11,7 +11,7 @@ class Solution(object):
         :rtype: List[int]
         """
         arr1, arr2 = A, B
-        hashmap = {}
+        hashmap    # dict
         ___ i, num __ e..(arr2):
             __ num n.. __ hashmap:
                 hashmap[num]    # list
@@ -21,7 +21,7 @@ class Solution(object):
             res.a..(hashmap[num].pop())
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [12, 28, 46, 32, 50],
@@ -31,7 +31,7 @@ class Solution(object):
         ___ arr1, arr2 __ testCases:
             print('arr1: %s' % arr1)
             print('arr2: %s' % arr2)
-            result = self.anagramMappings(arr1, arr2)
+            result = anagramMappings(arr1, arr2)
             print('result: %s' % result)
             print('-='*30+'-')
 

@@ -9,5 +9,5 @@ ___ find_nth(entries):
             x_next = (A * x_cur + C) % M
             x_cur = x_next
         answer.a..(s..(x_cur))
-    print(' '.join(answer))
+    print(' '.j..(answer))
 find_nth(input())

@@ -3,7 +3,7 @@ Created on May 24, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findLadders(self, beginWord, endWord, wordList):
         """
         :type beginWord: str
@@ -13,10 +13,10 @@ class Solution(object):
         """
         wordSet = set(wordList)
         wordSet.add(beginWord)
-        distance = {}
-        self.bfs(beginWord, endWord, distance, wordSet)
+        distance    # dict
+        bfs(beginWord, endWord, distance, wordSet)
         res    # list
-        self.dfs(beginWord, endWord, distance, wordSet, res, [])
+        dfs(beginWord, endWord, distance, wordSet, res, [])
         r.. res
     
     ___ bfs(self, beginWord, endWord, distance, wordSet):
@@ -24,7 +24,7 @@ class Solution(object):
         distance[beginWord] = 0
         w.... queue:
             word = queue.pop(0)
-            nextWords = self.getNextWords(word, wordSet)
+            nextWords = getNextWords(word, wordSet)
             ___ nextWord __ nextWords:
                 __ nextWord n.. __ distance:
                     distance[nextWord] = distance[word]+1
@@ -35,9 +35,9 @@ class Solution(object):
         __ word __ beginWord:
             res.a..(l..(curr))
         ____:
-            ___ nextWord __ self.getNextWords(word, wordSet):
+            ___ nextWord __ getNextWords(word, wordSet):
                 __ nextWord __ distance a.. distance[nextWord]+1 __ distance.get(word, 0):
-                    self.dfs(beginWord, nextWord, distance, wordSet, res, curr)
+                    dfs(beginWord, nextWord, distance, wordSet, res, curr)
         curr.pop(0)
     
     ___ getNextWords(self, word, wordSet):
@@ -50,7 +50,7 @@ class Solution(object):
                         res.a..(word0)
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 "hit",
@@ -59,7 +59,7 @@ class Solution(object):
             ],
         ]
         ___ beginWord, endWord, wordList __ testCases:
-            result = self.findLadders(beginWord, endWord, wordList)
+            result = findLadders(beginWord, endWord, wordList)
             print('result: %s' % result)
             print('-='*30+'-')
 

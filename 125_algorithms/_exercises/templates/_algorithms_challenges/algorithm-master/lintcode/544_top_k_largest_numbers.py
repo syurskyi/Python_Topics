@@ -1,7 +1,7 @@
 ____ heapq _______ heappush, heappop
 
 
-class Solution:
+c_ Solution:
     """
     @param: nums: an integer array
     @param: k: An integer

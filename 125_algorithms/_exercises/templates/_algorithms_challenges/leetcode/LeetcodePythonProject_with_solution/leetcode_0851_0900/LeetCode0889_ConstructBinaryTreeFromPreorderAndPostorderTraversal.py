@@ -4,20 +4,20 @@ Created on Oct 29, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ constructFromPrePost(self, pre, post):
         """
         :type pre: List[int]
         :type post: List[int]
         :rtype: TreeNode
         """
-        r.. self.helper(pre, 0, l..(pre)-1, post, 0, l..(post)-1)
+        r.. helper(pre, 0, l..(pre)-1, post, 0, l..(post)-1)
     
     ___ helper(self, pre, preStart, preEnd, post, postStart, postEnd):
         __ preStart > preEnd:
@@ -31,14 +31,14 @@ class Solution(object):
         val = pre[preStart+1]
         nextPostEnd = post.index(val)
         nextPreEnd = nextPreStart+(nextPostEnd-postStart)
-        leftNode = self.helper(pre, nextPreStart, nextPreEnd, post, postStart, nextPostEnd)
-        rightNode = self.helper(pre, nextPreEnd+1, preEnd, post, nextPostEnd+1, postEnd-1)
+        leftNode = helper(pre, nextPreStart, nextPreEnd, post, postStart, nextPostEnd)
+        rightNode = helper(pre, nextPreEnd+1, preEnd, post, nextPostEnd+1, postEnd-1)
 
         node.left = leftNode
         node.right = rightNode
         r.. node
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [2,1,3],
@@ -54,7 +54,7 @@ class Solution(object):
 #             ],
         ]
         ___ pre, post __ testCases:
-            node = self.constructFromPrePost(pre, post)
+            node = constructFromPrePost(pre, post)
             print(node)
 
 __ __name__ __ '__main__':

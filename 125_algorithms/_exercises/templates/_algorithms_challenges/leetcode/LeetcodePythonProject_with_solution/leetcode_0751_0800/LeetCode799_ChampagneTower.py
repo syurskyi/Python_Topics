@@ -3,7 +3,7 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ champagneTower(self, poured, query_row, query_glass):
         """
         :type poured: int
@@ -21,7 +21,7 @@ class Solution(object):
                     result[i][j] = 1.0
         r.. result[query_row][query_glass]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1, 1, 1], # 0.0
             [2, 1, 1], # 0.5
@@ -35,7 +35,7 @@ class Solution(object):
             print('poured: %s' % poured)
             print('query_row: %s' % query_row)
             print('query_glass: %s' % query_glass)
-            result = self.champagneTower(poured, query_row, query_glass)
+            result = champagneTower(poured, query_row, query_glass)
             print('result: %s' % result)
             print('-='*30+'-')
 

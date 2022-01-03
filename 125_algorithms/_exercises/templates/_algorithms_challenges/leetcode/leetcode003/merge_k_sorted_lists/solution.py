@@ -5,7 +5,7 @@ _______ heapq
 #         self.val = x
 #         self.next = None
 
-class Solution:
+c_ Solution:
     # @param a list of ListNode
     # @return a ListNode
     ___ mergeKLists(self, lists):
@@ -15,9 +15,9 @@ class Solution:
         __ n __ 1:
             r.. lists[0]
         mid = n / 2
-        l1 = self.mergeKLists(lists[:mid])
-        l2 = self.mergeKLists(lists[mid:])
-        r.. self.merge(l1, l2)
+        l1 = mergeKLists(lists[:mid])
+        l2 = mergeKLists(lists[mid:])
+        r.. merge(l1, l2)
 
     ___ merge(self, l1, l2):
         res = N..

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     BFS
     """
@@ -64,7 +64,7 @@ class Solution:
 _______ heapq
 
 
-class Solution2:
+c_ Solution2:
     """
     Dijkstra
     """

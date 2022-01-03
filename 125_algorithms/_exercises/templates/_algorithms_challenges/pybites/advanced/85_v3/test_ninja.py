@@ -47,4 +47,4 @@ ___ test_add_score_go_two_belts_up(ninja, capfd):
     ninja.score = 177
     output = capfd.readouterr()[0].s..('\n')
     ... CONGRATS_MSG.f..(score=177, rank='Green') __ output
-    ... ninja._last_earned_belt.lower() __ 'green'
+    ... ninja._last_earned_belt.l.. __ 'green'

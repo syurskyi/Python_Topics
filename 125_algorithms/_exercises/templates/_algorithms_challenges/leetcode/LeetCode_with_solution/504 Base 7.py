@@ -13,7 +13,7 @@ Note: The input will be in range of [-1e7, 1e7].
 """
 
 
-class Solution:
+c_ Solution:
     ___ convertToBase7(self, num):
         """
         simplfied for negative number
@@ -28,7 +28,7 @@ class Solution:
             ret.a..(n % 7)
             n //= 7
 
-        ret = "".join(map(s.., ret[::-1]))
+        ret = "".j..(map(s.., ret[::-1]))
         __ num < 0:
             ret = "-" + ret
 

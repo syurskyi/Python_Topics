@@ -4,7 +4,7 @@ Created on Apr 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ validUtf8(self, data):
         count = 0
         ___ v __ data:
@@ -18,11 +18,11 @@ class Solution(object):
                 ____ v | 0b01111111 __ 0b01111111:
                     count = 0
                 ____:
-                    r.. False
+                    r.. F..
             ____:
                 __ v & 0b10000000 a.. v & 0b11000000 __ 0b10000000:
                     count -= 1
                 ____:
-                    r.. False
+                    r.. F..
         r.. count __ 0
 

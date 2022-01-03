@@ -17,24 +17,24 @@ Both the left and right subtrees must also be binary search trees.
 #         self.left = None
 #         self.right = None
 
-class Solution:
+c_ Solution:
     # @param root, a tree node
     # @return a boolean
     ___ isValidBST(self, root):
         __ root __ N..
-            r.. True
+            r.. T..
         ____:
-            left = True
-            right = True
+            left = T..
+            right = T..
             __ root.left __ n.. N..
-                left = (self.max_node(root.left).val < root.val
-                        a.. self.isValidBST(root.left))
+                left = (max_node(root.left).val < root.val
+                        a.. isValidBST(root.left))
             __ root.right __ n.. N..
-                right = (self.min_node(root.right).val > root.val
-                         a.. self.isValidBST(root.right))
+                right = (min_node(root.right).val > root.val
+                         a.. isValidBST(root.right))
             __ left a.. right:
-                r.. True
-            r.. False
+                r.. T..
+            r.. F..
 
     ___ min_node(self, root):
         w.... root.left __ n.. N..

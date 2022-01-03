@@ -3,7 +3,7 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ findMaxAverage(self, nums, k):
         """
         :type nums: List[int]
@@ -37,7 +37,7 @@ class Solution(object):
         l, r = -float(2**31), float(2**31)
         w.... r-l > 10**-5:
             mid = (l+r)/2.0
-            __ self.check(nums, k, mid):
+            __ check(nums, k, mid):
                 l = mid
             ____:
                 r = mid
@@ -49,7 +49,7 @@ class Solution(object):
         ___ i __ r..(k):
             now += dp[i]
         __ now > 0:
-            r.. True
+            r.. T..
         ___ i __ r..(k, l..(nums)):
             now += dp[i]
             last += dp[i-k]
@@ -57,10 +57,10 @@ class Solution(object):
                 now -= last
                 last = 0
             __ now > 0:
-                r.. True
-        r.. False
+                r.. T..
+        r.. F..
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 12, -5, -6, 50, 3],
@@ -74,9 +74,9 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % nums)
             print('k: %s' % k)
-            result = self.findMaxAverage_binarySearch(nums, k)
+            result = findMaxAverage_binarySearch(nums, k)
             print('binary search result: %s' % result)
-            result = self.findMaxAverage(nums, k)
+            result = findMaxAverage(nums, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

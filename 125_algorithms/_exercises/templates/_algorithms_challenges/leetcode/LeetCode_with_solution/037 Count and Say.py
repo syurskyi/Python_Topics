@@ -10,7 +10,7 @@ Given an integer n, generate the nth sequence.
 Note: The sequence of integers will be represented as a string.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ countAndSay(self, n):
         """
         :param n: integer
@@ -18,7 +18,7 @@ class Solution:
         """
         string = "1"
         ___ i __ r..(1, n):
-            string = self.singleCountAndSay(string)
+            string = singleCountAndSay(string)
         r.. string
 
 

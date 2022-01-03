@@ -3,7 +3,7 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ minimumLengthEncoding(self, words):
         """
         :type words: List[str]
@@ -18,14 +18,14 @@ class Solution(object):
             res += l..(word)+1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ["time", "me", "bell"],
             ["me", "time"],
         ]
         ___ words __ testCases:
             print('words: %s' % words)
-            result = self.minimumLengthEncoding(words)
+            result = minimumLengthEncoding(words)
             print('result: %s' % result)
             print('-='*30+'-')
 

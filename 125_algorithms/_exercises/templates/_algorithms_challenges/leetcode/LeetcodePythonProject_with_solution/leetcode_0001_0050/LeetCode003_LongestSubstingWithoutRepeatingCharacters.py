@@ -4,7 +4,7 @@ Created on May 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLongestSubstring(self, s):
         """
         :type s: str
@@ -21,7 +21,7 @@ class Solution(object):
             maxLen = max(maxLen, i-left+1)
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             'abc',
             'bbbb',
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.lengthOfLongestSubstring(s)
+            result = lengthOfLongestSubstring(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

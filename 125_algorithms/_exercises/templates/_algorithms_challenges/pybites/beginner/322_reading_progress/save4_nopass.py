@@ -9,5 +9,5 @@ ___ ontrack_reading(books_goal: int, books_read: int,
     days_left = 365 - day
     books_left = books_goal - books_read
     __ books_left __ 0:
-        r.. True
+        r.. T..
     r.. (days_left / books_left) > reading_speed

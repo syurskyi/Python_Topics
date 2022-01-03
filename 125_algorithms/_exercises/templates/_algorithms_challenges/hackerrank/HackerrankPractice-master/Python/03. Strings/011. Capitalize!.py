@@ -3,4 +3,4 @@
 
 
 st = input()
-print(' '.join(word.capitalize() ___ word __ st.s..(' ')))
+print(' '.j..(word.capitalize() ___ word __ st.s..(' ')))

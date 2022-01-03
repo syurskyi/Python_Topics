@@ -10,9 +10,9 @@ ___ contains_only_vowels(input_str):
         __ char __ VOWELS:
             vowel_count.a..(char)
     __ l..(vowel_count) __ l..(input_str):
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..
 
 
 ___ contains_any_py_chars(input_str):
@@ -23,9 +23,9 @@ ___ contains_any_py_chars(input_str):
         __ char __ PYTHON:
             python_count.a..(char)
     __ l..(python_count) > 0:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..
 
 
 ___ contains_digits(input_str):
@@ -36,6 +36,6 @@ ___ contains_digits(input_str):
         __ char.isdigit():
             digits.a..(char)
     __ l..(digits) > 0:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

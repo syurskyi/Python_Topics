@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ increasingTriplet(self, nums):
     """
     :type nums: List[int]
@@ -11,5 +11,5 @@ class Solution(object):
       ____ num <= b:
         b = num
       ____:
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..

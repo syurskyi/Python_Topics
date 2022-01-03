@@ -8,7 +8,7 @@ lives == 3      => 0 -> 1
 """
 
 
-class Solution:
+c_ Solution:
     """
     Use bits to save the status in next round
     """
@@ -24,7 +24,7 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                lives = self.get_live_neibs(board, x, y)
+                lives = get_live_neibs(board, x, y)
 
                 __ board[x][y] __ 1 a.. lives __ (2, 3):
                     board[x][y] = 3
@@ -55,7 +55,7 @@ class Solution:
         r.. cnt
 
 
-class Solution:
+c_ Solution:
     """
     Not in-place solution
     """
@@ -72,7 +72,7 @@ class Solution:
 
         ___ x __ r..(m):
             ___ y __ r..(n):
-                lives = self.get_live_neibs(board, x, y)
+                lives = get_live_neibs(board, x, y)
                 ans[x][y] = board[x][y]
 
                 __ board[x][y] __ 1 a.. lives < 2:

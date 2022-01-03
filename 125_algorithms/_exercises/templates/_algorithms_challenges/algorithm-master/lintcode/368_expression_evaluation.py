@@ -4,7 +4,7 @@ REF: [Direct Algebraic Logic to Reverse Polish Notation](http://blog.csdn.net/sg
 """
 
 
-class Solution:
+c_ Solution:
     P = {
         '+': 1,
         '-': 1,
@@ -20,7 +20,7 @@ class Solution:
         __ n.. E:
             r.. 0
 
-        E = self.dal2rpn(E)
+        E = dal2rpn(E)
 
         """
         for cases like `["(","(","(","(","(",")",")",")",")",")"]`
@@ -28,7 +28,7 @@ class Solution:
         __ n.. E:
             r.. 0
 
-        r.. self.eval_rpn(E)
+        r.. eval_rpn(E)
 
     ___ dal2rpn(self, E):
         """
@@ -46,15 +46,15 @@ class Solution:
                 res.a..(char)
                 continue
 
-            __ char __ self.P:
+            __ char __ P:
                 """
                 if `stack` is not empty
                 and `stack[-1]` is an operator
                 and its priority is higher or same ('*' == '/' > '+' == '-')
                 then pop and output
                 """
-                w.... (stack a.. stack[-1] __ self.P a..
-                       self.P[stack[-1]] >= self.P[char]):
+                w.... (stack a.. stack[-1] __ P a..
+                       P[stack[-1]] >= P[char]):
                     res.a..(stack.pop())
                 stack.a..(char)
             ____ char __ '(':

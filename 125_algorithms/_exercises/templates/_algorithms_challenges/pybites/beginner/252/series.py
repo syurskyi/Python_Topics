@@ -52,7 +52,7 @@ ___ get_values(ser: pd.Series) -> np.ndarray:
 
 
 ___ get_every_second_indexes(ser: pd.Series,
-                             even_index=True) -> pd.core.series.Series:
+                             even_index=T..) -> pd.core.series.Series:
     """Return all rows where the index is either even or odd.
     If even_index is True return every index where idx % 2 == 0
     If even_index is False return every index where idx % 2 != 0

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ medianSlidingWindow(self, nums, k):
     window = s..(nums[:k])
     medians    # list

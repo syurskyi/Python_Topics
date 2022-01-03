@@ -4,7 +4,7 @@ Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle con
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ maximalRectangle(self, matrix):
         """
         Algorithm 1:

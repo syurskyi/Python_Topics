@@ -8,7 +8,7 @@ Main Concept:
 """
 
 
-class Solution:
+c_ Solution:
     ___ nthUglyNumber(self, n):
         """
         :type n: int

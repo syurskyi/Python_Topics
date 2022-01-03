@@ -16,7 +16,7 @@ For example, given n = 3, a solution set is:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ generateParenthesis(self, n: int) -> List[s..]:
         """
         Method 1 - backtracking

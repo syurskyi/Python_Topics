@@ -1,18 +1,18 @@
 # TODO: Fix age and same_configuration functions (see test results)
-class Car:
+c_ Car:
     """
     Car class
     -> Have a closer look at lines marked with '# *'
     """
 
-    ___ __init__(self, model, color):
-        self.model = model
-        self.color = color
+    ___ - , model, color):
+        model = model
+        color = color
 
     ___ __eq__(self, other_car):
         r.. (
-            self.model.lower() __ other_car.model.lower()
-            a.. self.color.lower() __ other_car.color.lower()
+            model.l.. __ other_car.model.l..
+            a.. color.l.. __ other_car.color.l..
         )
 
     @staticmethod
@@ -52,15 +52,15 @@ ___ is_same_instance_of_car(car1, car2):
 
 #print(Car.age(335))
 
-class NewList(l..):
+c_ NewList(l..):
     pass
 
 list1 = [['gas', 'electro', 'hybrid'], '200 PS', 'radio']
 list2 = NewList(list1)
 
-print(type(list1))
+print(t..(list1))
 print(isi..(list1,l..))
-print(type(list2))
+print(t..(list2))
 print(isi..(list2,l..))
 
 

@@ -20,7 +20,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ subarraysDivByK_2(self, A: List[int], K: int) -> int:
         """
         count the prefix sum mod K
@@ -35,7 +35,7 @@ class Solution:
             counter[prefix_sum] += 1
 
         ret = 0
-        ___ v __ counter.values():
+        ___ v __ counter.v..
             ret += v * (v-1) // 2
 
         r.. ret

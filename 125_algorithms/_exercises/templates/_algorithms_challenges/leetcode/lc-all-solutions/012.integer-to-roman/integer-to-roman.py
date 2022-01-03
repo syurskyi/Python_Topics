@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ intToRoman(self, num):
     """
     :type num: int
@@ -9,15 +9,15 @@ class Solution(object):
     literals = ["M", "D", "C", "L", "X", "V", "I"]
     ___ idx __ [0, 2, 4]:
       k = num / values[literals[idx]]
-      re = (num % values[literals[idx]]) / values[literals[idx + 2]]
+      __ = (num % values[literals[idx]]) / values[literals[idx + 2]]
       ans += k * literals[idx]
-      __ re >= 9:
+      __ __ >= 9:
         ans += literals[idx + 2] + literals[idx]
-      ____ re >= 5:
-        ans += literals[idx + 1] + (re - 5) * literals[idx + 2]
-      ____ re __ 4:
+      ____ __ >= 5:
+        ans += literals[idx + 1] + (__ - 5) * literals[idx + 2]
+      ____ __ __ 4:
         ans += literals[idx + 2] + literals[idx + 1]
       ____:
-        ans += re * literals[idx + 2]
+        ans += __ * literals[idx + 2]
       num %= values[literals[idx + 2]]
     r.. ans

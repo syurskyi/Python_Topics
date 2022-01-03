@@ -37,7 +37,7 @@ ___ get_top_books(content_ N..
     ___ book __ amazon_books:
         amazon_books_counter.update(book)
 
-    r.. [(key, value) ___ key, value __ amazon_books_counter.items() __ value >= MIN_COUNT]
+    r.. [(key, value) ___ key, value __ amazon_books_counter.i.. __ value >= MIN_COUNT]
 
 
 __ __name__ __ "__main__":

@@ -14,7 +14,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     ___ levelOrder(self, root):
         """
         :type root: TreeNode

@@ -7,7 +7,7 @@ algorithm to find the maximum profit.
 __author__ = 'Danyang'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ maxProfit(self, A):
         """
         Maximum subarray sum

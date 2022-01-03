@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution:
+c_ Solution:
     """
     DP:
     1. init the first pos as 1
@@ -47,7 +47,7 @@ class Solution:
         r.. s..(dp.values())
 
 
-class Solution:
+c_ Solution:
     """
     BFS: TLE
     """

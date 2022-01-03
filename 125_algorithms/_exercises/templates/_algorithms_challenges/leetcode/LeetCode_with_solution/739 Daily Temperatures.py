@@ -14,7 +14,7 @@ ____ typing _______ List
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ dailyTemperatures(self, T: List[int]) -> List[int]:
         """
         maintain a stack of monotonously decresing from right to left

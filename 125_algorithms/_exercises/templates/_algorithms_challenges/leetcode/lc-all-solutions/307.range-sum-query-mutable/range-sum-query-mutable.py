@@ -1,16 +1,16 @@
 # Segment tree node
-class STNode(object):
-  ___ __init__(self, start, end):
-    self.start = start
-    self.end = end
-    self.total = 0
-    self.left = N..
-    self.right = N..
+c_ STNode(object):
+  ___ - , start, end):
+    start = start
+    end = end
+    total = 0
+    left = N..
+    right = N..
 
 
-class SegmentedTree(object):
-  ___ __init__(self, nums, start, end):
-    self.root = self.buildTree(nums, start, end)
+c_ SegmentedTree(object):
+  ___ - , nums, start, end):
+    root = buildTree(nums, start, end)
 
   ___ buildTree(self, nums, start, end):
     __ start > end:
@@ -24,8 +24,8 @@ class SegmentedTree(object):
     mid = start + (end - start) / 2
 
     root = STNode(start, end)
-    root.left = self.buildTree(nums, start, mid)
-    root.right = self.buildTree(nums, mid + 1, end)
+    root.left = buildTree(nums, start, mid)
+    root.right = buildTree(nums, mid + 1, end)
     root.total = root.left.total + root.right.total
     r.. root
 
@@ -43,7 +43,7 @@ class SegmentedTree(object):
       root.total = root.left.total + root.right.total
       r.. root.total
 
-    r.. updateVal(self.root, i, val)
+    r.. updateVal(root, i, val)
 
   ___ sumRange(self, i, j):
     ___ rangeSum(root, start, end):
@@ -58,16 +58,16 @@ class SegmentedTree(object):
       ____:
         r.. rangeSum(root.left, start, mid) + rangeSum(root.right, mid + 1, end)
 
-    r.. rangeSum(self.root, i, j)
+    r.. rangeSum(root, i, j)
 
 
-class NumArray(object):
-  ___ __init__(self, nums):
+c_ NumArray(object):
+  ___ - , nums):
     """
     initialize your data structure here.
     :type nums: List[int]
     """
-    self.stTree = SegmentedTree(nums, 0, l..(nums) - 1)
+    stTree = SegmentedTree(nums, 0, l..(nums) - 1)
 
   ___ update(self, i, val):
     """
@@ -75,7 +75,7 @@ class NumArray(object):
     :type val: int
     :rtype: int
     """
-    r.. self.stTree.updateVal(i, val)
+    r.. stTree.updateVal(i, val)
 
   ___ sumRange(self, i, j):
     """
@@ -84,7 +84,7 @@ class NumArray(object):
     :type j: int
     :rtype: int
     """
-    r.. self.stTree.sumRange(i, j)
+    r.. stTree.sumRange(i, j)
 
 # Your NumArray object will be instantiated and called as such:
 # numArray = NumArray(nums)

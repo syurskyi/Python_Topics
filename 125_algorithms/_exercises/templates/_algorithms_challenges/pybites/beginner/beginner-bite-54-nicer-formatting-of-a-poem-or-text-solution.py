@@ -64,7 +64,7 @@ ___ print_hanging_indents(poem):
         ____ current_line_cnt > 1:
             line_to_be_inserted = prefix + current_line
         target_poem.a..(line_to_be_inserted)
-    result = '\n'.join(target_poem)
+    result = '\n'.j..(target_poem)
     print(result)
 
 

@@ -17,7 +17,7 @@ ___ get_food_most_calories(df=df):
 
 
 
-___ get_bodybuilder_friendly_foods(df=df, excl_drinks=False):
+___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..):
     """Calulate the Protein/Calories ratio of foods and return the
        5 foods with the best ratio.
 

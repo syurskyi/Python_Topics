@@ -3,7 +3,7 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ buddyStrings(self, A, B):
         """
         :type A: str
@@ -11,8 +11,8 @@ class Solution(object):
         :rtype: bool
         """
         a, b = A, B
-        __ l..(a) != l..(b): r.. False
-        __ a __ b a.. l..(set(a)) < l..(a): r.. True
+        __ l..(a) != l..(b): r.. F..
+        __ a __ b a.. l..(set(a)) < l..(a): r.. T..
         dif = [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
         r.. l..(dif) __ 2 a.. dif[0] __ dif[1][::-1]
     
@@ -24,18 +24,18 @@ class Solution(object):
         """
         a, b = A, B
         __ l..(a) != l..(b):
-            r.. False
+            r.. F..
         c01, c02 = '', ''
         times = 0
         ___ c1, c2 __ z..(a, b):
             __ c1 != c2:
                 __ times > 1:
-                    r.. False
+                    r.. F..
                 ____ times __ 1:
                     __ c01 __ c2 a.. c02 __ c1:
                         times += 1
                     ____:
-                        r.. False
+                        r.. F..
                 ____:
                     c01, c02 = c1, c2
                     times += 1
@@ -43,7 +43,7 @@ class Solution(object):
             r.. l..(set(a)) < l..(a)
         r.. times __ 2
     
-    ___ test(self):
+    ___ test
         testCase = [
             ['ab', 'ba'],
             ['ab', 'ab'],
@@ -52,7 +52,7 @@ class Solution(object):
             ['', 'aa'],
         ]
         ___ a, b __ testCase:
-            res = self.buddyStrings(a, b)
+            res = buddyStrings(a, b)
             print('res: %s' % res)
             print('-='*30+'-')
 

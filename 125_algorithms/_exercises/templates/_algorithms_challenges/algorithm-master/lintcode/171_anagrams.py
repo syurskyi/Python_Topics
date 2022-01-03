@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: S: A list of strings
     @return: A list of strings
@@ -8,14 +8,14 @@ class Solution:
         __ n.. S:
             r.. ans
 
-        D = {}
+        D    # dict
         ___ s __ S:
-            _s = ''.join(s..(s))
+            _s = ''.j..(s..(s))
             __ _s n.. __ D:
                 D[_s]    # list
             D[_s].a..(s)
 
-        ___ k, S __ D.items():
+        ___ k, S __ D.i..:
             __ l..(S) > 1:
                 ans.extend(S)
 

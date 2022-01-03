@@ -11,5 +11,5 @@ ___ fibDiv(tests):
                 break
             a = b
             b = c
-    print(' '.join(answer))
+    print(' '.j..(answer))
 fibDiv(input())

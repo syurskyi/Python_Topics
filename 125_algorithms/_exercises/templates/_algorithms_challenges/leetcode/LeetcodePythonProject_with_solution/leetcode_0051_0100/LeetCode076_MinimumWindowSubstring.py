@@ -4,20 +4,20 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minWindow(self, s, t):
         """
         :type s: str
         :type t: str
         :rtype: str
         """
-        hashmap0 = {}
+        hashmap0    # dict
         ___ c __ t:
             hashmap0[c] = hashmap0.get(c, 0)+1
         left = 0
         res = ''
         minLen = float('inf')
-        hashmap = {}
+        hashmap    # dict
         count = 0
         ___ i, c __ e..(s):
             hashmap[c] = hashmap.get(c, 0)+1
@@ -42,11 +42,11 @@ class Solution(object):
         :type t: str
         :rtype: str
         """
-        hashmap = {}
+        hashmap    # dict
         ___ c __ t:
             hashmap[c] = hashmap.get(c, 0)+1
         left = 0
-        hashmapAll = {}
+        hashmapAll    # dict
         hashset = set()
         res = ''
         minLen = float('inf')
@@ -67,7 +67,7 @@ class Solution(object):
                     res = s[left:i+1]
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             ('ADOBECODEBANC', 'ABC'),
             ['a', 'b'],
@@ -76,7 +76,7 @@ class Solution(object):
         ___ s, t __ testCases:
             print('s: %s' % (s))
             print('t: %s' % (t))
-            result = self.minWindow(s, t)
+            result = minWindow(s, t)
             print('result: %s' % (result))
             print('-='*15 + '-')
 

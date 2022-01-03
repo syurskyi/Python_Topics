@@ -3,7 +3,7 @@ Created on Nov 15, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ compress(self, chars):
         """
         :type chars: List[str]
@@ -32,7 +32,7 @@ class Solution(object):
             i += 1
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             'aabbccc',
             'a',
@@ -41,7 +41,7 @@ class Solution(object):
         ___ chars __ testCases:
             chars = l..(chars)
             print('chars: %s' % chars)
-            result = self.compress(chars)
+            result = compress(chars)
             print('result: %s' % result)
             print('chars: %s' % chars)
             print('-='*30+'-')

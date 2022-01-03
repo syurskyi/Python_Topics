@@ -12,7 +12,7 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from inde
 index.)
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ jump_TLE(self, A):
         """
         bfs

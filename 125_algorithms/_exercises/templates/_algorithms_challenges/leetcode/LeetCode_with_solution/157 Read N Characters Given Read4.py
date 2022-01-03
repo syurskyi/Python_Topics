@@ -14,7 +14,7 @@ ___ read4(buf):
     r.. 0
 
 
-class Solution(object):
+c_ Solution(object):
     ___ read(self, buf, n):
         """
         read n chars to buf

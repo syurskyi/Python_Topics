@@ -8,7 +8,7 @@ Note:
 Could you optimize your algorithm to use only O(k) extra space?
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ getRow(self, rowIndex):
         """
         iteration.

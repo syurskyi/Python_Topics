@@ -22,17 +22,17 @@ ___ create_parser():
        Note that type=float times out here so do the casting in the calculator
        function above!"""
     ap = argparse.ArgumentParser("A simple calculator")
-    group = ap.add_mutually_exclusive_group(required=True)
+    group = ap.add_mutually_exclusive_group(required=T..)
     group.add_argument("-m",'--mul',action='store_true',help="Multiplies numbers")
     group.add_argument("-s",'--sub',action='store_true',help="Subtracts numbers")
     group.add_argument("-a",'--add',action='store_true',help="Sums numbers")
     group.add_argument("-d",'--div',action='store_true',help="Divides numbers")
-    ap.add_argument('numbers',nargs='+',type=float)
+    ap.add_argument('numbers',nargs='+',t..=float)
 
     r.. ap
 
 
-___ call_calculator(args=N.., stdout=False):
+___ call_calculator(args=N.., stdout=F..):
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
@@ -70,4 +70,4 @@ ___ call_calculator(args=N.., stdout=False):
 
 
 __ __name__ __ '__main__':
-    call_calculator(stdout=True)
+    call_calculator(stdout=T..)

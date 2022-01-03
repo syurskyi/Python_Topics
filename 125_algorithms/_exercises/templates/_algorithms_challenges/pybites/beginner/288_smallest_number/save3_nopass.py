@@ -9,7 +9,7 @@ ___ minimum_number(digits: List[int]) -> int:
         l..    # list
         ___ i __ digits:
             ___ set __ i...permutations(digits, r_ N..
-                l...a..("".join(filter(s...isdigit, s..(set))))
+                l...a..("".j..(filter(s...isdigit, s..(set))))
         ___ i __ r..(l..(l..)):
             __ l..[0] > l..[i]:
                 l..[0] = l..[i]

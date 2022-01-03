@@ -46,15 +46,15 @@ memory at once?
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
         m, n = l..(matrix), l..(matrix[0])
         ___ i __ r..(1, m):
             ___ j __ r..(1, n):
                 __ matrix[i][j] != matrix[i-1][j-1]:
-                    r.. False
+                    r.. F..
 
-        r.. True
+        r.. T..
 
     ___ isToeplitzMatrix_complex(self, matrix: List[List[int]]) -> bool:
         """
@@ -69,7 +69,7 @@ class Solution:
             cur = matrix[r][c]
             w.... r < m a.. c < n:
                 __ cur != matrix[r][c]:
-                    r.. False
+                    r.. F..
                 r += 1
                 c += 1
 
@@ -79,9 +79,9 @@ class Solution:
             cur = matrix[r][c]
             w.... r < m a.. c < n:
                 __ cur != matrix[r][c]:
-                    r.. False
+                    r.. F..
 
                 r += 1
                 c += 1
 
-        r.. True
+        r.. T..

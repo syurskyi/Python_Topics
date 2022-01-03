@@ -1,35 +1,35 @@
-class UnionFind(object):
-  ___ __init__(self, n):
-    self.dad = [i ___ i __ r..(n)]
-    self.rank = [0 ___ i __ r..(n)]
-    self.count = n
+c_ UnionFind(object):
+  ___ - , n):
+    dad = [i ___ i __ r..(n)]
+    rank = [0 ___ i __ r..(n)]
+    count = n
 
   ___ find(self, x):
-    dad = self.dad
+    dad = dad
     __ dad[x] != x:
-      dad[x] = self.find(dad[x])
+      dad[x] = find(dad[x])
     r.. dad[x]
 
   ___ union(self, x, y):
-    dad = self.dad
-    rank = self.rank
-    x, y = map(self.find, [x, y])
+    dad = dad
+    rank = rank
+    x, y = map(find, [x, y])
     __ x __ y:
-      r.. False
+      r.. F..
     __ rank[x] > rank[y]:
       dad[y] = x
     ____:
       dad[x] = y
       __ rank[x] __ rank[y]:
         rank[y] += 1
-    self.count -= 1
-    r.. True
+    count -= 1
+    r.. T..
 
-  ___ getCount(self):
-    r.. self.count
+  ___ getCount
+    r.. count
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findCircleNum(self, M):
     """
     :type M: List[List[int]]

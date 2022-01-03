@@ -14,12 +14,12 @@ ___ ontrack_reading(books_goal: int, books_read: int,
         remaining_days = days_in_year - day_of_year
 
         __ (books_goal - books_read) * book_per_days < remaining_days :
-            r.. True
+            r.. T..
 
     __ books_goal __ books_read a.. day_of_year <= days_in_year:
-        r.. True
+        r.. T..
 
-    r.. False
+    r.. F..
 
 
 # if __name__ == "__main__":

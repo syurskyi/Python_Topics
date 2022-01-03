@@ -16,14 +16,14 @@ All root-to-leaf paths are:
 __author__ = 'Daniel'
 
 
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
+c_ Solution:
     ___ binaryTreePaths(self, root):
         """
 
@@ -34,7 +34,7 @@ class Solution:
             r.. []
 
         ret    # list
-        self.dfs(root, [], ret)
+        dfs(root, [], ret)
         r.. ret
 
     ___ dfs(self, cur, path, ret):
@@ -43,15 +43,15 @@ class Solution:
         """
         path.a..(cur)
         __ n.. cur.left a.. n.. cur.right:
-            ret.a..("->".join(map(l.... x: s..(x.val), path)))
+            ret.a..("->".j..(map(l.... x: s..(x.val), path)))
             r..
 
         __ cur.left:
-            self.dfs(cur.left, path, ret)
+            dfs(cur.left, path, ret)
             path.pop()  # pop the shared path
 
         __ cur.right:
-            self.dfs(cur.right, path, ret)
+            dfs(cur.right, path, ret)
             path.pop()  # pop the shared path
 
     ___ dfs_path(self, cur, path, ret):
@@ -60,8 +60,8 @@ class Solution:
 
         path.a..(cur)
         __ n.. cur.left a.. n.. cur.right:
-            ret.a..("->".join(map(l.... x: s..(x.val), path)))
+            ret.a..("->".j..(map(l.... x: s..(x.val), path)))
 
-        self.dfs_path(cur.left, path, ret)
-        self.dfs_path(cur.right, path, ret)
+        dfs_path(cur.left, path, ret)
+        dfs_path(cur.right, path, ret)
         path.pop()

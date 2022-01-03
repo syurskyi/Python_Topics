@@ -3,7 +3,7 @@ Created on Mar 14, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ deleteAndEarn(self, nums):
         """
         :type nums: List[int]
@@ -17,14 +17,14 @@ class Solution(object):
             dp[i] = max(count[i]+dp[i+2], dp[i+1])
         r.. dp[0]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [3, 4, 2],
             [2, 2, 3, 3, 3, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.deleteAndEarn(nums)
+            result = deleteAndEarn(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

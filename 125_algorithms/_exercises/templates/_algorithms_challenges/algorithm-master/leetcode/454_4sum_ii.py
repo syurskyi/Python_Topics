@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ fourSumCount(self, A, B, C, D):
         """
         :type A: List[int]
@@ -11,7 +11,7 @@ class Solution:
         __ n.. A o. n.. B o. n.. C o. n.. D:
             r.. ans
 
-        S = {}
+        S    # dict
 
         ___ c __ C:
             ___ d __ D:

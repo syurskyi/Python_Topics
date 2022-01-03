@@ -1,10 +1,10 @@
-class Solution(object):
+c_ Solution(object):
   ___ findRepeatedDnaSequences(self, s):
     """
     :type s: str
     :rtype: List[str]
     """
-    d = {}
+    d    # dict
     ans    # list
     ___ i __ r..(l..(s) - 9):
       key = s[i:i + 10]

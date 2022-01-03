@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ sortTransformedArray(self, nums, a, b, c):
     """
     :type nums: List[int]

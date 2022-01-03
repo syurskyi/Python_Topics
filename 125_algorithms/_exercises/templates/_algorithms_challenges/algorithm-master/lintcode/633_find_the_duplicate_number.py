@@ -7,7 +7,7 @@ Binary Searching
 for each `num < a`: `cnt(num) == num`
 for each `num >= a`: `cnt(num) > num`
 """
-class Solution:
+c_ Solution:
     ___ findDuplicate(self, A):
         """
         :type A: List[int]
@@ -20,14 +20,14 @@ class Solution:
 
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ self.after_dup(A, mid):
+            __ after_dup(A, mid):
                 right = mid
             ____:
                 left = mid
 
-        __ self.after_dup(A, left):
+        __ after_dup(A, left):
             r.. left
-        __ self.after_dup(A, right):
+        __ after_dup(A, right):
             r.. right
         r.. -1
 
@@ -38,9 +38,9 @@ class Solution:
             __ a <= mid:
                 cnt += 1
             __ cnt > mid:
-                r.. True
+                r.. T..
 
-        r.. False
+        r.. F..
 
 
 """
@@ -62,7 +62,7 @@ a  5, 4, 4, 3, 2, 1
       f  s
                sf
 """
-class Solution:
+c_ Solution:
     """
     @param: A: an array containing n + 1 integers which is between 1 and n
     @return: the duplicate one

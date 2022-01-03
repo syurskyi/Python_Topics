@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: the root of binary tree A.
     @param: B: the root of binary tree B.
@@ -15,15 +15,15 @@ class Solution:
     """
     ___ isIdentical(self, A, B):
         __ n.. A a.. n.. B:
-            r.. True
+            r.. T..
 
         __ n.. A o. n.. B:
-            r.. False
+            r.. F..
 
         __ A.val != B.val:
-            r.. False
+            r.. F..
 
         r.. (
-            self.isIdentical(A.left, B.left) a..
-            self.isIdentical(A.right, B.right)
+            isIdentical(A.left, B.left) a..
+            isIdentical(A.right, B.right)
         )

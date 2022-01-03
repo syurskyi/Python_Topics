@@ -1,49 +1,49 @@
-class MinStack:
-    ___ __init__(self):
-        self.stack    # list
-        self.mins    # list
+c_ MinStack:
+    ___ - ):
+        stack    # list
+        mins    # list
 
     ___ push(self, x):
         """
         :type x: int
         :rtype: void
         """
-        self.stack.a..(x)
+        stack.a..(x)
 
-        __ n.. self.mins o. x <= self.mins[-1]:
-            self.mins.a..(x)
+        __ n.. mins o. x <= mins[-1]:
+            mins.a..(x)
 
-    ___ pop(self):
+    ___ pop
         """
         :rtype: int
         """
-        __ n.. self.stack:
+        __ n.. stack:
             r.. -1
 
-        x = self.stack.pop()
+        x = stack.pop()
 
-        __ self.mins a.. x __ self.mins[-1]:
-            self.mins.pop()
+        __ mins a.. x __ mins[-1]:
+            mins.pop()
 
         r.. x
 
-    ___ top(self):
+    ___ top
         """
         :rtype: int
         """
-        __ n.. self.stack:
+        __ n.. stack:
             r.. -1
 
-        r.. self.stack[-1]
+        r.. stack[-1]
 
-    ___ m..(self):
+    ___ m..
         """
         :rtype: int
         """
-        __ n.. self.mins:
+        __ n.. mins:
             r.. -1
 
-        r.. self.mins[-1]
+        r.. mins[-1]
 
 
 # Your MinStack object will be instantiated and called as such:

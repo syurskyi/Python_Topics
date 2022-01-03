@@ -4,7 +4,7 @@ Created on Mar 3, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ minCostII(self, costs):
         """
         :type costs: List[List[int]]
@@ -45,13 +45,13 @@ class Solution(object):
                 costs[i][j] += m..(minList)
         r.. m..(costs[-1])
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,5,3],[2,9,4]],
         ]
         ___ costs __ testCases:
             print('costs: %s' % costs)
-            result = self.minCostII(costs)
+            result = minCostII(costs)
             print('result: %s' % result)
             print('-='*20+'-')
 

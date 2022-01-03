@@ -6,75 +6,75 @@ Output result
 """
 
 
-class ZigzagIterator2:
+c_ ZigzagIterator2:
     """
     @param: vecs: a list of 1d vectors
     """
-    ___ __init__(self, vecs):
-        self.g = vecs
-        self.x = 0
-        self.y = 0
-        self.max_y = max(l..(vec) ___ vec __ vecs)
+    ___ - , vecs):
+        g = vecs
+        x = 0
+        y = 0
+        max_y = max(l..(vec) ___ vec __ vecs)
 
     """
     @return: An integer
     """
-    ___ next(self):
-        __ n.. self.hasNext():
+    ___ next
+        __ n.. hasNext():
             r.. -1
 
-        x = self.x
-        y = self.y
+        x = x
+        y = y
 
-        self.x += 1
+        x += 1
 
-        r.. self.g[x][y]
+        r.. g[x][y]
 
     """
     @return: True if has next
     """
-    ___ hasNext(self):
-        w.... self.y < self.max_y:
+    ___ hasNext
+        w.... y < max_y:
             __ (
-                self.x < l..(self.g) a..
-                self.y < l..(self.g[self.x])
+                x < l..(g) a..
+                y < l..(g[x])
             ):
-                r.. True
+                r.. T..
 
-            __ self.x >= l..(self.g):
-                self.x = 0
-                self.y += 1
+            __ x >= l..(g):
+                x = 0
+                y += 1
 
-            __ self.y >= l..(self.g[self.x]):
-                self.x += 1
+            __ y >= l..(g[x]):
+                x += 1
 
-        r.. False
+        r.. F..
 
 
-class ZigzagIterator2:
+c_ ZigzagIterator2:
     """
     @param: vecs: a list of 1d vectors
     """
-    ___ __init__(self, vecs):
-        self.queue = [vec ___ vec __ vecs __ vec]
+    ___ - , vecs):
+        queue = [vec ___ vec __ vecs __ vec]
 
     """
     @return: An integer
     """
-    ___ next(self):
-        __ n.. self.hasNext():
+    ___ next
+        __ n.. hasNext():
             r.. -1
 
-        vec = self.queue.pop(0)
+        vec = queue.pop(0)
         val = vec.pop(0)
 
         __ vec:
-            self.queue.a..(vec)
+            queue.a..(vec)
 
         r.. val
 
     """
     @return: True if has next
     """
-    ___ hasNext(self):
-        r.. bool(self.queue)
+    ___ hasNext
+        r.. bool(queue)

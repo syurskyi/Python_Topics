@@ -5,31 +5,31 @@
 #         self.left = None
 #         self.right = None
 
-class BSTIterator(object):
-    ___ __init__(self, root):
-        self._arr    # list
-        self._inorder(root)
-        self._cur = -1
+c_ BSTIterator(object):
+    ___ - , root):
+        _arr    # list
+        _inorder(root)
+        _cur = -1
 
     # @return a boolean, whether we have a next smallest number
-    ___ hasNext(self):
-        __ self._arr[self._cur + 1:]:
-            r.. True
-        r.. False
+    ___ hasNext
+        __ _arr[_cur + 1:]:
+            r.. T..
+        r.. F..
 
     # @return an integer, the next smallest number
-    ___ next(self):
-        __ self.hasNext():
-            self._cur += 1
-            r.. self._arr[self._cur]
+    ___ next
+        __ hasNext():
+            _cur += 1
+            r.. _arr[_cur]
 
     ___ _inorder(self, root):
         __ root __ n.. N..
             __ root.left __ n.. N..
-                self._inorder(root.left)
-            self._arr.a..(root.val)
+                _inorder(root.left)
+            _arr.a..(root.val)
             __ root.right __ n.. N..
-                self._inorder(root.right)
+                _inorder(root.right)
 
 # Your BSTIterator will be called like this:
 # i, v = BSTIterator(root), []

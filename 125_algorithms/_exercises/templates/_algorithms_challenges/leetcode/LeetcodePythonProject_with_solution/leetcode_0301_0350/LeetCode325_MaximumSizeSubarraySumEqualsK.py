@@ -4,9 +4,9 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxSubArrayLen(self, nums, k):
-        hashmap = {}
+        hashmap    # dict
         sumVal = 0
         maxLen = 0
         ___ i, num __ e..(nums):
@@ -19,7 +19,7 @@ class Solution(object):
                 hashmap[sumVal] = i
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             ([1, -1, 5, -2, 3], 3),
             ([-2, -1, 2, 1], 1),
@@ -27,7 +27,7 @@ class Solution(object):
         ___ nums, k __ testCases:
             print('nums: %s' % (nums))
             print('k: %s' % (k))
-            result = self.maxSubArrayLen(nums, k)
+            result = maxSubArrayLen(nums, k)
             print('result: %s' % (result))
             print('-='*20+'-')
     

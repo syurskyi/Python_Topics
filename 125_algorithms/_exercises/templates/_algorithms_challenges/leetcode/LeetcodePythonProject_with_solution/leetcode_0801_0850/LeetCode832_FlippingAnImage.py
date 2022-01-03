@@ -3,7 +3,7 @@ Created on Jun 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ flipAndInvertImage(self, A):
         """
         :type A: List[List[int]]
@@ -23,12 +23,12 @@ class Solution(object):
                 l -= 1
         r.. image
     
-    ___ test(self):
+    ___ test
         testCases = [
             [[1,1,0],[1,0,1],[0,0,0]],
         ]
         ___ image __ testCases:
-            res = self.flipAndInvertImage(image)
+            res = flipAndInvertImage(image)
             print('res: %s' % res)
 
 __ __name__ __ '__main__':

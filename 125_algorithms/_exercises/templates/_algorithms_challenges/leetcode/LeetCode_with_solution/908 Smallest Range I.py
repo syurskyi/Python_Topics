@@ -33,7 +33,7 @@ Note:
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ smallestRangeI(self, A: List[int], K: int) -> int:
         """
         only need the max and min

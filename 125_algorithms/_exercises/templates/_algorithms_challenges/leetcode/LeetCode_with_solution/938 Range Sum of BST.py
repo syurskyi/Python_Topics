@@ -23,34 +23,34 @@ The final answer is guaranteed to be less than 2^31.
 
 
 # Definition for a binary tree node.
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
 
-class Solution:
-    ___ __init__(self):
-        self.ret = 0
+c_ Solution:
+    ___ - ):
+        ret = 0
 
     ___ rangeSumBST(self, root: TreeNode, L: int, R: int) -> int:
         """
         traverse
         """
-        self.dfs(root, L, R)
-        r.. self.ret
+        dfs(root, L, R)
+        r.. ret
 
     ___ dfs(self, node, L, R):
         __ n.. node:
             r..
 
         __ L <= node.val <= R:
-            self.ret += node.val
-            self.dfs(node.left, L, R)
-            self.dfs(node.right, L, R)
+            ret += node.val
+            dfs(node.left, L, R)
+            dfs(node.right, L, R)
 
         ____ node.val > R:
-            self.dfs(node.left, L, R)
+            dfs(node.left, L, R)
         ____:
-            self.dfs(node.right, L, R)
+            dfs(node.right, L, R)

@@ -5,7 +5,7 @@ ____ quotes _______ app
 API_ENDPOINT = 'http://127.0.0.1:5000/api/quotes'
 
 client = app.test_client()
-client.testing = True
+client.testing = T..
 
 
 ___ test_get_quotes():
@@ -53,7 +53,7 @@ ___ test_create_quote():
 
 
 ___ test_create_quote_missing_data():
-    new_quote = {}
+    new_quote    # dict
     response = client.post(API_ENDPOINT,
                            data=json.dumps(new_quote),
                            content_type='application/json')
@@ -93,7 +93,7 @@ ___ test_update_quote():
 
 
 ___ test_update_no_data():
-    update_quote = {}
+    update_quote    # dict
     response = client.put(API_ENDPOINT + '/4',
                           data=json.dumps(update_quote),
                           content_type='application/json')

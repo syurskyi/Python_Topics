@@ -4,22 +4,22 @@ Created on Oct 3, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ leafSimilar(self, root1, root2):
         """
         :type root1: TreeNode
         :type root2: TreeNode
         :rtype: bool
         """
-        __ n.. root1 a.. n.. root2: r.. True
-        __ n.. root1 o. n.. root2: r.. False
-        r.. self.getLeaves(root1) __ self.getLeaves(root2)
+        __ n.. root1 a.. n.. root2: r.. T..
+        __ n.. root1 o. n.. root2: r.. F..
+        r.. getLeaves(root1) __ getLeaves(root2)
         
     
     ___ getLeaves(self, root):

@@ -46,7 +46,7 @@ S is a valid parentheses string
 ____ collections _______ deque
 
 
-class Solution:
+c_ Solution:
     ___ removeOuterParentheses(self, S: s..) -> s..:
         """
         Primitive parentheses will have equal number of opened and closed
@@ -67,7 +67,7 @@ class Solution:
                 __ cnt > 0:
                     ret.a..(e)
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 
     ___ removeOuterParentheses_error(self, S: s..) -> s..:
@@ -89,7 +89,7 @@ class Solution:
                     ret.extend(cur_q)
                     cur_q = deque()
 
-        r.. "".join(ret)
+        r.. "".j..(ret)
 
 
 __ __name__ __ "__main__":

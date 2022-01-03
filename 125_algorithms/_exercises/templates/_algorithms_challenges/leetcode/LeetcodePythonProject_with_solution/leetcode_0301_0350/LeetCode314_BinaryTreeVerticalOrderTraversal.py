@@ -5,16 +5,16 @@ Created on Mar 15, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
+c_ TreeNode(object):
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
 
-class Solution(object):
+c_ Solution(object):
     ___ verticalOrder(self, root):
         __ n.. root: r.. []
-        hashmap = {}
+        hashmap    # dict
         result    # list
         queue = [(0, root)]
         minLevel, maxLevel = 0, 0

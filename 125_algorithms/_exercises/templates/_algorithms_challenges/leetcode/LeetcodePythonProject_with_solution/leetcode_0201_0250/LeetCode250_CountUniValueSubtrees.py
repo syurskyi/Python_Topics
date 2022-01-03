@@ -4,13 +4,13 @@ Created on May 13, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ countUnivalSubtrees(self, root):
         """
         :type root: TreeNode
@@ -18,18 +18,18 @@ class Solution(object):
         """
         res = 0
         __ n.. root: r.. res
-        __ self.isUniVal(root):
+        __ isUniVal(root):
             res += 1
-        res += self.countUnivalSubtrees(root.left)+\
-            self.countUnivalSubtrees(root.right)
+        res += countUnivalSubtrees(root.left)+\
+            countUnivalSubtrees(root.right)
         r.. res
     
     ___ isUniVal(self, root):
         __ n.. root.left a.. n.. root.right:
-            r.. True
+            r.. T..
         __ n.. root.right:
-            r.. root.val __ root.left.val a.. self.isUniVal(root.left)
+            r.. root.val __ root.left.val a.. isUniVal(root.left)
         __ n.. root.left:
-            r.. root.val __ root.right.val a.. self.isUniVal(root.right)
+            r.. root.val __ root.right.val a.. isUniVal(root.right)
         r.. root.left.val __ root.val a.. root.right.val __ root.val a..\
-            self.isUniVal(root.left) a.. self.isUniVal(root.right)
+            isUniVal(root.left) a.. isUniVal(root.right)

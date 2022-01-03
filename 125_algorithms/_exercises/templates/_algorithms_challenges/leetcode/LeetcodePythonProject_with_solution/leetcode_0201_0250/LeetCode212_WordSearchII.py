@@ -3,11 +3,11 @@ Created on Feb 19, 2017
 
 @author: MT
 '''
-class TrieNode(object):
-    ___ __init__(self, c_ N..
-        self.c = c
-        self.children = {}
-        self.isLeaf = False
+c_ TrieNode(object):
+    ___ - , c_ N..
+        c = c
+        children    # dict
+        isLeaf = F..
 
 ___ buildTrie(words):
     root = TrieNode()
@@ -21,10 +21,10 @@ ___ buildTrie(words):
                 t = p.children[c]
             p = t
             __ i __ l..(word)-1:
-                t.isLeaf = True
+                t.isLeaf = T..
     r.. root
 
-class Solution(object):
+c_ Solution(object):
     ___ findWords(self, board, words):
         """
         :type board: List[List[str]]
@@ -36,7 +36,7 @@ class Solution(object):
         m, n = l..(board), l..(board[0])
         ___ i __ r..(m):
             ___ j __ r..(n):
-                self.dfs(board, i, j, root, [], result)
+                dfs(board, i, j, root, [], result)
         r.. l..(result)
     
     ___ dfs(self, board, i, j, p, elem, result):
@@ -45,7 +45,7 @@ class Solution(object):
         p = p.children[c]
         __ p.isLeaf:
             elem.a..(c)
-            result.add(''.join(elem))
+            result.add(''.j..(elem))
             elem.pop()
         m, n = l..(board), l..(board[0])
         
@@ -53,11 +53,11 @@ class Solution(object):
             __ 0 <= x < m a.. 0 <= y < n:
                 board[i][j] = '#'
                 elem.a..(c)
-                self.dfs(board, x, y, p, elem, result)
+                dfs(board, x, y, p, elem, result)
                 board[i][j] = c
                 elem.pop()
         
-    ___ test(self):
+    ___ test
         testCases = [
 #             (
 #                 [
@@ -86,7 +86,7 @@ class Solution(object):
             ),
         ]
         ___ board, words __ testCases:
-            result = self.findWords(board, words)
+            result = findWords(board, words)
             print(result)
             print('-='*20 + '-')
 

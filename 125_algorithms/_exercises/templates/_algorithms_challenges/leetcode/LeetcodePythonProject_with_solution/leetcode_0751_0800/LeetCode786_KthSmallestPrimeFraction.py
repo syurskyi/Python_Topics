@@ -3,7 +3,7 @@ Created on Apr 10, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ kthSmallestPrimeFraction(self, A, K):
         """
         :type A: List[int]
@@ -13,7 +13,7 @@ class Solution(object):
         # Use Java PriorityQueue comparator
         pass
     
-    ___ test(self):
+    ___ test
         testCases = [
             [ [1, 2, 3, 5], 3 ],
             [ [1, 7], 1 ],
@@ -21,7 +21,7 @@ class Solution(object):
         ___ arr, k __ testCases:
             print('arr: %s' % arr)
             print('k: %s' % k)
-            result = self.kthSmallestPrimeFraction(arr, k)
+            result = kthSmallestPrimeFraction(arr, k)
             print('result: %s' % result)
             print('-='*30+'-')
 

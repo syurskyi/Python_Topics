@@ -10,7 +10,7 @@ class UndirectedGraphNode:
 """
 Iteration
 """
-class Solution:
+c_ Solution:
     ___ cloneGraph(self, node):
         """
         :type node: UndirectedGraphNode
@@ -41,7 +41,7 @@ class Solution:
 """
 Recursion
 """
-class Solution:
+c_ Solution:
     ___ cloneGraph(self, node):
         """
         :type node: UndirectedGraphNode
@@ -50,7 +50,7 @@ class Solution:
         __ n.. node:
             r..
 
-        r.. self.dfs(node, {})
+        r.. dfs(node, {})
 
     ___ dfs(self, node, N):
         __ node.label __ N:
@@ -58,6 +58,6 @@ class Solution:
 
         N[node.label] = UndirectedGraphNode(node.label)
         ___ neighbor __ node.neighbors:
-            N[node.label].neighbors.a..(self.dfs(neighbor, N))
+            N[node.label].neighbors.a..(dfs(neighbor, N))
 
         r.. N[node.label]

@@ -10,17 +10,17 @@ ___ get_index_different_char(chars):
     problem that if I count 2 of one type I know the majority and can exit
     as soon as I have come across a minority type.
     '''
-    an = {False: 0, True: 0}  # alphanumeric counter
+    an = {F..: 0, T..: 0}  # alphanumeric counter
     p = 0  # tracks alphanumericity (I'm sure this is not a word) of the first character
     ___ ch __ chars:
         c = s..(ch).isalnum()  # the defacto test
         # In the case when the odd character is in the first 2 characters, the 'p'
         # variable allows me to determine the initial characters type and locate the
         # position of the minority type within the first 2 characters.
-        __ an[False] __ 1 __ an[True]:
+        __ an[F..] __ 1 __ an[T..]:
             r.. 1 - p __ c ____ p
         an[c] += 1
-        __ (c a.. an[False] < 2) o. (n.. c a.. an[True] < 2):
+        __ (c a.. an[F..] < 2) o. (n.. c a.. an[T..] < 2):
             __ c a.. s..(an) __ 0:
                 p = 1
             continue

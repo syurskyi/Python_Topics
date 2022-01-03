@@ -3,7 +3,7 @@ Created on Oct 8, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ newInteger(self, n):
         """
         :type n: int
@@ -15,13 +15,13 @@ class Solution(object):
             n //= 9
         r.. int(res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             9,
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.newInteger(n)
+            result = newInteger(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

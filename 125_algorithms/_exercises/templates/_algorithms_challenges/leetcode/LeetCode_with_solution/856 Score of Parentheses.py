@@ -33,7 +33,7 @@ S is a balanced parentheses string, containing only ( and ).
 """
 
 
-class Solution:
+c_ Solution:
     ___ scoreOfParentheses(self, S: s..) -> int:
         """
         stk

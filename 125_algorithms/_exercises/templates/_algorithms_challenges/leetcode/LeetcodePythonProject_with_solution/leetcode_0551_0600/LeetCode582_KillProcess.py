@@ -3,7 +3,7 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ killProcess(self, pid, ppid, kill):
         """
         :type pid: List[int]
@@ -11,7 +11,7 @@ class Solution(object):
         :type kill: int
         :rtype: List[int]
         """
-        hashmap = {}
+        hashmap    # dict
         ___ p, pp __ z..(pid, ppid):
             hashset = hashmap.get(pp, set())
             hashset.add(p)
@@ -28,7 +28,7 @@ class Solution(object):
                     queue.a..(node0)
         r.. l..(result)
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 3, 10, 5],
@@ -40,7 +40,7 @@ class Solution(object):
             print('pid: %s' % pid)
             print('ppid: %s' % ppid)
             print('kill: %s' % kill)
-            result = self.killProcess(pid, ppid, kill)
+            result = killProcess(pid, ppid, kill)
             print('result: %s' % result)
             print('-='*30+'-')
 

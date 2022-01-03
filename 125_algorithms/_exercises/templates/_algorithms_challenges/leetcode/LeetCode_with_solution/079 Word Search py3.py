@@ -26,33 +26,33 @@ ____ collections _______ defaultdict
 dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 
-class Solution:
+c_ Solution:
     ___ exist(self, board: List[List[s..]], word: s..) -> bool:
         m, n = l..(board), l..(board[0])
         visited = defaultdict(l....: defaultdict(bool))
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ board[i][j] __ word[0]:
-                    __ self.dfs(board, visited, i, j, word, 1):
-                        r.. True
+                    __ dfs(board, visited, i, j, word, 1):
+                        r.. T..
 
-        r.. False
+        r.. F..
 
     ___ dfs(self, board, visited, i, j, word, idx):
-        visited[i][j] = True
+        visited[i][j] = T..
         __ idx >= l..(word):
-            r.. True
+            r.. T..
 
         m, n = l..(board), l..(board[0])
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
             __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. board[I][J] __ word[idx]:
-                __ self.dfs(board, visited, I, J, word, idx + 1):
-                    r.. True
+                __ dfs(board, visited, I, J, word, idx + 1):
+                    r.. T..
 
-        visited[i][j] = False  # restore
-        r.. False
+        visited[i][j] = F..  # restore
+        r.. F..
 
 
 __ __name__ __ "__main__":
@@ -60,4 +60,4 @@ __ __name__ __ "__main__":
         ["A","B","C","E"],
         ["S","F","E","S"],
         ["A","D","E","E"]
-    ], "ABCESEEEFS") __ True
+    ], "ABCESEEEFS") __ T..

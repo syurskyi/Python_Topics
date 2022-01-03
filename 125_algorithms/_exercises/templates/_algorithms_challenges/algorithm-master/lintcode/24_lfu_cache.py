@@ -17,28 +17,28 @@ Dm <-> 2 <-> 3 <-> 8 <-> dm   |<- freq_list (dll)
 """
 
 
-class LFUCache:
-    ___ __init__(self, capacity):
+c_ LFUCache:
+    ___ - , capacity):
         """
         :type capacity: int
         """
-        self.cap = capacity
-        self.nodes = {}
-        self.D = FreqNode(-1)
-        self.d = FreqNode(-1)
-        self.D.nxt = self.d
-        self.d.pre = self.D
+        cap = capacity
+        nodes    # dict
+        D = FreqNode(-1)
+        d = FreqNode(-1)
+        D.nxt = d
+        d.pre = D
 
     ___ get(self, key):
         """
         :type key: int
         :rtype: int
         """
-        __ key n.. __ self.nodes:
+        __ key n.. __ nodes:
             r.. -1
 
-        self._update(key)
-        r.. self.nodes[key].val
+        _update(key)
+        r.. nodes[key].val
 
     ___ set(self, key, val):
         """
@@ -46,28 +46,28 @@ class LFUCache:
         :type val: int
         :rtype: void
         """
-        __ self.cap <= 0:
+        __ cap <= 0:
             r..
 
-        __ key __ self.nodes:
-            self._update(key, val)
+        __ key __ nodes:
+            _update(key, val)
             r..
 
-        w.... l..(self.nodes) >= self.cap:
-            self._evict()
+        w.... l..(nodes) >= cap:
+            _evict()
 
-        self._add(key, val)
+        _add(key, val)
 
-    ___ _evict(self):
-        freq_head = self.D.nxt
+    ___ _evict
+        freq_head = D.nxt
         cache_node = freq_head.pop_head()
-        del self.nodes[cache_node.key]
+        del nodes[cache_node.key]
 
         __ freq_head.is_empty():
             freq_head.unlink()
 
     ___ _update(self, key, val_ N..
-        cache_node = self.nodes[key]
+        cache_node = nodes[key]
 
         __ val:
             cache_node.val = val
@@ -89,73 +89,73 @@ class LFUCache:
 
     ___ _add(self, key, val):
         cache_node = CacheNode(key, val)
-        self.nodes[key] = cache_node
+        nodes[key] = cache_node
 
-        freq_head = self.D.nxt
+        freq_head = D.nxt
         __ freq_head a.. freq_head.freq __ 0:
             freq_head.append_tail(cache_node)
             r..
 
         freq_head = FreqNode(0)
         freq_head.append_tail(cache_node)
-        self.D.after(freq_head)
+        D.after(freq_head)
 
 
-class CacheNode:
-    ___ __init__(self, key, val=N.., freq_node=N.., pre=N.., nxt_ N..
-        self.key = key
-        self.val = val
-        self.freq_node = freq_node
-        self.pre = pre
-        self.nxt = nxt
+c_ CacheNode:
+    ___ - , key, val=N.., freq_node=N.., pre=N.., nxt_ N..
+        key = key
+        val = val
+        freq_node = freq_node
+        pre = pre
+        nxt = nxt
 
     # to change self in cache nodes
-    ___ unlink(self):
-        self.pre.nxt = self.nxt
-        self.nxt.pre = self.pre
-        self.freq_node = self.pre = self.nxt = N..
+    ___ unlink
+        pre.nxt = nxt
+        nxt.pre = pre
+        freq_node = pre = nxt = N..
 
 
-class FreqNode:
-    ___ __init__(self, freq, pre=N.., nxt_ N..
-        self.freq = freq
-        self.pre = pre
-        self.nxt = nxt
-        self.D = CacheNode(-1)
-        self.d = CacheNode(-1)
-        self.D.nxt = self.d
-        self.d.pre = self.D
+c_ FreqNode:
+    ___ - , freq, pre=N.., nxt_ N..
+        freq = freq
+        pre = pre
+        nxt = nxt
+        D = CacheNode(-1)
+        d = CacheNode(-1)
+        D.nxt = d
+        d.pre = D
 
     # to change self in freq nodes
-    ___ unlink(self):
-        self.pre.nxt = self.nxt
-        self.nxt.pre = self.pre
-        self.pre = self.nxt = self.D = self.d = N..
+    ___ unlink
+        pre.nxt = nxt
+        nxt.pre = pre
+        pre = nxt = D = d = N..
 
     # to change self in freq nodes
     ___ after(self, freq_node):
         freq_node.pre = self
-        freq_node.nxt = self.nxt
-        self.nxt.pre = freq_node
-        self.nxt = freq_node
+        freq_node.nxt = nxt
+        nxt.pre = freq_node
+        nxt = freq_node
 
     # to manage cache nodes
-    ___ is_empty(self):
-        r.. self.D.nxt __ self.d
+    ___ is_empty
+        r.. D.nxt __ d
 
     # to manage cache nodes
-    ___ pop_head(self):
-        __ self.is_empty():
+    ___ pop_head
+        __ is_empty():
             r..
 
-        head = self.D.nxt
+        head = D.nxt
         head.unlink()
         r.. head
 
     # to manage cache nodes
     ___ append_tail(self, cache_node):
         cache_node.freq_node = self
-        cache_node.pre = self.d.pre
-        cache_node.nxt = self.d
-        self.d.pre.nxt = cache_node
-        self.d.pre = cache_node
+        cache_node.pre = d.pre
+        cache_node.nxt = d
+        d.pre.nxt = cache_node
+        d.pre = cache_node

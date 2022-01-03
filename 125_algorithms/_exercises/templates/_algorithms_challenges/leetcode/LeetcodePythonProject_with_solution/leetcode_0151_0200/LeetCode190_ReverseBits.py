@@ -4,7 +4,7 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-class Solution:
+c_ Solution:
     # @param n, an integer
     # @return an integer
     ___ reverseBits(self, n):

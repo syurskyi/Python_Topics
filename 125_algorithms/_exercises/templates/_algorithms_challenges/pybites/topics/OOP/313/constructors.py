@@ -1,17 +1,17 @@
-_______ re
+_______ __
 
 
-class DomainException(Exception):
+c_ DomainException(Exception):
     """Raised when an invalid is created."""
 
 
-class Domain:
+c_ Domain:
 
-    ___ __init__(self, name):
+    ___ - , name):
         # validate a current domain (r'.*\.[a-z]{2,3}$' is fine)
         # if not valid, raise a DomainException
-        self.name = name
-        __ n.. re.match(r'.*\.[a-z]{2,3}$', self.name):
+        name = name
+        __ n.. __.match(r'.*\.[a-z]{2,3}$', name):
             raise DomainException
         
     # next add a __str__ method and write 2 class methods
@@ -20,16 +20,16 @@ class Domain:
 
     @classmethod
     ___ parse_url(cls, url):
-        url_domain = re.findall(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
+        url_domain = __.findall(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
         r.. Domain(url_domain[0][0])
 
     @classmethod
     ___ parse_email(cls, email):
-        email_domain = re.findall(r'@(.*\.[a-z]+)', email)
+        email_domain = __.findall(r'@(.*\.[a-z]+)', email)
         r.. Domain(email_domain[0])
 
     ___ __str__(self) -> s..:
-        r.. f'{self.name}'
+        r.. f'{name}'
 
 print(Domain.parse_url('http://www.khooville.com'))
 #print(Domain.parse_email('sckhoo@khooville.com'))

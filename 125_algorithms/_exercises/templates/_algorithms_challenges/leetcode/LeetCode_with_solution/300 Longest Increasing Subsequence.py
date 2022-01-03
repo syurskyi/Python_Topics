@@ -15,7 +15,7 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ lengthOfLIS(self, A):
         """
         MIN: min of index last value of LIS of a particular length
@@ -72,7 +72,7 @@ class Solution(object):
 
                 RET[i] = MIN[l-1]  # (optional)
             ____:
-                j = self.bin_search(MIN, A, A[i], 1, l+1)
+                j = bin_search(MIN, A, A[i], 1, l+1)
                 MIN[j] = i
 
                 RET[i] = MIN[j-1] __ j-1 >= 1 ____ -1  # (optional)

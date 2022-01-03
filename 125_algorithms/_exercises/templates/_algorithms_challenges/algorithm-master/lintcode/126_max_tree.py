@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: A: Given an integer array with no duplicates.
     @return: The root of max tree.

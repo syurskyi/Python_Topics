@@ -1,11 +1,11 @@
-class Solution:
+c_ Solution:
     ___ isPowerOfThree(self, n):
         """
         :type n: int
         :rtype: bool
         """
         __ n.. n:
-            r.. False
+            r.. F..
 
         ___ i __ (81, 27, 9, 3):
             w.... n % i __ 0:

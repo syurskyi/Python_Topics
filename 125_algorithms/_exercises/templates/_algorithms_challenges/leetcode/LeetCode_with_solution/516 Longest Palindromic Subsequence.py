@@ -21,7 +21,7 @@ One possible longest palindromic subsequence is "bb".
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ longestPalindromeSubseq(self, s):
         """
         Brute force 0-1, exponential

@@ -4,12 +4,12 @@ _______ numpy as np
 _______ pandas as pd
 
 
-class LightsGrid:
+c_ LightsGrid:
 
-    ___ __init__(self, grid_size: int, instructions: List[s..]):
-        self.grid_size = grid_size
-        self.grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=int))
-        self.instructions = instructions
+    ___ - , grid_size: int, instructions: List[s..]):
+        grid_size = grid_size
+        grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=int))
+        instructions = instructions
 
     ___ process_grid_coordinates(self, s1: s.., s2: s..):
         """A helper function you might want to create to process
@@ -37,12 +37,12 @@ class LightsGrid:
 
 
 
-    ___ validate_grid(self):
+    ___ validate_grid
         """A helper function you might want to write to verify that:
           - no lights are brighter than 5
           - no lights are less than 0"""
 
-        r.. self.grid.applymap(l.... value: 0 <= value <= 5).a..().a..()
+        r.. grid.applymap(l.... value: 0 <= value <= 5).a..().a..()
 
 
 
@@ -67,12 +67,12 @@ class LightsGrid:
         # Finally overwrite the grid with the new values
 
 
-        row_start,row_end,col_start,col_end = self.process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
 
 
-        df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
+        df = grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
-        self.grid.iloc[row_start:row_end + 1,col_start:col_end + 1] = df.applymap(l.... value: 1 __ value __ 0 ____ value)
+        grid.iloc[row_start:row_end + 1,col_start:col_end + 1] = df.applymap(l.... value: 1 __ value __ 0 ____ value)
 
 
 
@@ -85,8 +85,8 @@ class LightsGrid:
         :param s1: The bottom right hand corner of the grid to operate on
 
         Turn off all lights in the grid slice given."""
-        row_start,row_end,col_start,col_end = self.process_grid_coordinates(s1,s2)
-        self.grid.iloc[row_start:row_end +1,col_start:col_end +1] = 0
+        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
+        grid.iloc[row_start:row_end +1,col_start:col_end +1] = 0
 
     ___ turn_up(self, amount: int, s1: s.., s2: s..):
         """The turn_up function takes 3 parameters:
@@ -97,12 +97,12 @@ class LightsGrid:
 
         For each light in the grid slice given turn the light up
           by the given amount. Don't turn a light up past 5"""
-        row_start,row_end,col_start,col_end = self.process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
 
-        df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
+        df = grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        self.grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount))
+        grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount))
 
 
     ___ turn_down(self, amount: int, s1: s.., s2: s..):
@@ -114,12 +114,12 @@ class LightsGrid:
 
         For each light in the grid slice given turn the light down
           by the given amount. Don't turn a light down past 0"""
-        row_start,row_end,col_start,col_end = self.process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
 
-        df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
+        df = grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        self.grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: max(0,value - amount))
+        grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: max(0,value - amount))
 
     ___ toggle(self, s1: s.., s2: s..):
         """The toggle function takes 2 parameters:
@@ -141,21 +141,21 @@ class LightsGrid:
         # Set all lights that are off to 3 in the slice
 
         # Finally overwrite the grid with the new values
-        row_start,row_end,col_start,col_end = self.process_grid_coordinates(s1,s2)
+        row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
 
-        df = self.grid.iloc[row_start:row_end + 1,col_start:col_end +1]
+        df = grid.iloc[row_start:row_end + 1,col_start:col_end +1]
 
 
-        self.grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: 0 __ value != 0 ____ 3)
+        grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: 0 __ value != 0 ____ 3)
 
-    ___ follow_instructions(self):
+    ___ follow_instructions
         """Function to process all instructions.
 
         Each instruction should be processed in sequence,
           excluding the first instruction of course.
         """
 
-        ___ instruction __ self.instructions:
+        ___ instruction __ instructions:
             values = instruction.s..
 
             s2 = values[-1]
@@ -163,28 +163,28 @@ class LightsGrid:
 
                 __ values[1] __ 'on':
                     s1 = values[2]
-                    self.turn_on(s1,s2)
+                    turn_on(s1,s2)
                 ____ values[1] __ 'off':
                     s1 = values[2]
-                    self.turn_off(s1,s2)
+                    turn_off(s1,s2)
                 ____:
                     s1 = values[3]
                     amount = int(values[2])
                     __ values[1] __ 'up':
-                        self.turn_up(amount,s1,s2)
+                        turn_up(amount,s1,s2)
                     ____:
-                        self.turn_down(amount,s1,s2)
+                        turn_down(amount,s1,s2)
             ____:
                 s1 = values[1]
-                self.toggle(s1,s2)
+                toggle(s1,s2)
 
             
 
 
-    @property
-    ___ lights_intensity(self):
+    $
+    ___ lights_intensity
         """(given) get the total intensity of all lights"""
-        r.. self.grid.to_numpy().s..()
+        r.. grid.to_numpy().s..()
 
 
 # Main function that can be used to test the Class methods

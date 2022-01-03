@@ -3,7 +3,7 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ letterCasePermutation(self, S):
         """
         :type S: str
@@ -11,7 +11,7 @@ class Solution(object):
         """
         s = S
         res = set()
-        self.helper(s, 0, '', res)
+        helper(s, 0, '', res)
         r.. l..(res)
     
     ___ helper(self, s, i, curr, res):
@@ -19,12 +19,12 @@ class Solution(object):
             res.add(curr)
             r..
         __ s[i].isdigit():
-            self.helper(s, i+1, curr+s[i], res)
+            helper(s, i+1, curr+s[i], res)
         ____:
-            self.helper(s, i+1, curr+s[i].upper(), res)
-            self.helper(s, i+1, curr+s[i].lower(), res)
+            helper(s, i+1, curr+s[i].upper(), res)
+            helper(s, i+1, curr+s[i].l.., res)
     
-    ___ test(self):
+    ___ test
         testCases = [
             "a1b2",
             "3z4",
@@ -32,7 +32,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.letterCasePermutation(s)
+            result = letterCasePermutation(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

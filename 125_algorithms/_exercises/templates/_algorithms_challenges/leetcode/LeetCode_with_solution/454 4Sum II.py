@@ -26,7 +26,7 @@ The two tuples are:
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ fourSumCount(self, A, B, C, D):
         """
         Brute force with map: O(N^3)
@@ -53,7 +53,7 @@ class Solution:
 
         ret = 0
         # O(N^2)
-        ___ gross, count __ AB.items():
+        ___ gross, count __ AB.i..:
             target = 0 - gross
             ret += count * CD[target]
 

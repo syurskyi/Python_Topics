@@ -5,25 +5,25 @@ ____ diamond _______ make_diamond
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-class DiamondTests(unittest.TestCase):
-    ___ test_degenerate_case_with_a_single_row(self):
-        self.assertMultiLineEqual(make_diamond('A'), 'A\n')
+c_ DiamondTests(unittest.TestCase):
+    ___ test_degenerate_case_with_a_single_row
+        assertMultiLineEqual(make_diamond('A'), 'A\n')
 
-    ___ test_degenerate_case_with_two_rows(self):
+    ___ test_degenerate_case_with_two_rows
         result = [' A ',
                   'B B',
                   ' A ']
-        self.assertMultiLineEqual(make_diamond('B'), '\n'.join(result) + '\n')
+        assertMultiLineEqual(make_diamond('B'), '\n'.j..(result) + '\n')
 
-    ___ test_smallest_non_degenerate_case_with_odd_diamond_side_length(self):
+    ___ test_smallest_non_degenerate_case_with_odd_diamond_side_length
         result = ['  A  ',
                   ' B B ',
                   'C   C',
                   ' B B ',
                   '  A  ']
-        self.assertMultiLineEqual(make_diamond('C'), '\n'.join(result) + '\n')
+        assertMultiLineEqual(make_diamond('C'), '\n'.j..(result) + '\n')
 
-    ___ test_smallest_non_degenerate_case_with_even_diamond_side_length(self):
+    ___ test_smallest_non_degenerate_case_with_even_diamond_side_length
         result = ['   A   ',
                   '  B B  ',
                   ' C   C ',
@@ -31,9 +31,9 @@ class DiamondTests(unittest.TestCase):
                   ' C   C ',
                   '  B B  ',
                   '   A   ']
-        self.assertMultiLineEqual(make_diamond('D'), '\n'.join(result) + '\n')
+        assertMultiLineEqual(make_diamond('D'), '\n'.j..(result) + '\n')
 
-    ___ test_largest_possible_diamond(self):
+    ___ test_largest_possible_diamond
         result = ['                         A                         ',
                   '                        B B                        ',
                   '                       C   C                       ',
@@ -85,7 +85,7 @@ class DiamondTests(unittest.TestCase):
                   '                       C   C                       ',
                   '                        B B                        ',
                   '                         A                         ']
-        self.assertMultiLineEqual(make_diamond('Z'), '\n'.join(result) + '\n')
+        assertMultiLineEqual(make_diamond('Z'), '\n'.j..(result) + '\n')
 
 
 __ __name__ __ '__main__':

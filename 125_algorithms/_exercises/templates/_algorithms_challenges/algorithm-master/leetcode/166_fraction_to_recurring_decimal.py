@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ fractionToDecimal(self, a, b):
         """
         :type a: int
@@ -23,7 +23,7 @@ class Solution:
 
         a %= b
         __ a __ 0:
-            r.. ''.join(ans)
+            r.. ''.j..(ans)
 
         ans.a..('.')
         D = {a: l..(ans)}  # the index of first occurrence of `a`
@@ -39,4 +39,4 @@ class Solution:
 
             D[a] = l..(ans)
 
-        r.. ''.join(ans)
+        r.. ''.j..(ans)

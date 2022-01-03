@@ -1,9 +1,9 @@
-class Anagram:
+c_ Anagram:
 
     # @param {str} line a text, for example "Bye Bye see you next"
     ___ mapper(self, _, line):
         ___ word __ line.s.. :
-            y.. ''.join(s..(word.lower())), word
+            y.. ''.j..(s..(word.lower())), word
 
     # @param key is from mapper
     # @param values is a set of value with the same key

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ checkSubarraySum(self, nums, k):
     """
     :type nums: List[int]
@@ -6,9 +6,9 @@ class Solution(object):
     :rtype: bool
     """
     __ k __ 0:
-      r.. "0,0" __ ",".join([s..(n) ___ n __ nums])
+      r.. "0,0" __ ",".j..([s..(n) ___ n __ nums])
     __ l..(nums) < 2:
-      r.. False
+      r.. F..
     __ l..(nums) __ 2:
       r.. s..(nums) % k __ 0
     ppSum = 0
@@ -19,5 +19,5 @@ class Solution(object):
       d |= {ppSum}
       subSum = (subSum + nums[i]) % k
       __ subSum % k __ d:
-        r.. True
-    r.. False
+        r.. T..
+    r.. F..

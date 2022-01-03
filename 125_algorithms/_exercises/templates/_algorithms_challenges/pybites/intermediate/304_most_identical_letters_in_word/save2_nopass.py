@@ -1,21 +1,21 @@
 ____ typing _______ Tuple
 ____ collections _______ Counter
-_______ re
+_______ __
 _______ pandas as pd
 
 
 ___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
-    __ text __ [N.., True, 1, 1.0, [], {}]:
+    __ text __ [N.., T.., 1, 1.0, [], {}]:
         r.. N..
     text = text.r..('_', '').r..('--', '').r..('-', 'placeholder').r..('\'', 'pxaceholder')
-    text = re.sub('\W', ' ', text) #remove not word characters
-    text = re.sub(' +', ' ', text) #remove extra spaces
-    t = ''.join(s ___ s __ text __ n.. any(c.isdigit() ___ c __ s)) #remove digit words
+    text = __.sub('\W', ' ', text) #remove not word characters
+    text = __.sub(' +', ' ', text) #remove extra spaces
+    t = ''.j..(s ___ s __ text __ n.. any(c.isdigit() ___ c __ s)) #remove digit words
 
     words = t.s.. 
     df = pd.DataFrame(words, columns=['word'])
 
-    __ df.empty __ True:
+    __ df.empty __ T..:
         r.. '', '', 0
 
     df['casefold'] = df['word'].s...r..('placeholder', '')
@@ -24,7 +24,7 @@ ___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
 
     df['casefold'] = df[df['casefold'].s...s...astype(bool)]
     df = df.dropna()
-    df['casefold'] = df['casefold'].s...lower()
+    df['casefold'] = df['casefold'].s...l..
     df['casefold'] = df['casefold'].s...r..('ß', 'ss')
 
     l_column   # list
@@ -38,7 +38,7 @@ ___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
     df['letter'] = l_column
     df['count'] = c_column
     df = df.dropna()
-    df = df.sort_values(by='count', ascending=False)
+    df = df.sort_values(by='count', ascending=F..)
 
     output = df['word'].iloc[0], df['letter'].iloc[0], df['count'].iloc[0]
 

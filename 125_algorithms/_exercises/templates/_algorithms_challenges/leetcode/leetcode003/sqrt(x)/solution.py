@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     # @param x, an integer
     # @return an integer
     ___ sqrt(self, x):

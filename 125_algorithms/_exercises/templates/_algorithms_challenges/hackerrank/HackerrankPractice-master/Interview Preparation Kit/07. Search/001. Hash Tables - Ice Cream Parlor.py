@@ -8,7 +8,7 @@ ___ i __ r..(t):
     n = int(input())
     arr = l..(map(int, input().s..()))
 
-    saved_values = {}
+    saved_values    # dict
     ___ counter, value __ e..(arr):
         __ money-value __ saved_values:
             print(saved_values[money-value] + 1, counter + 1)

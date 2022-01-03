@@ -18,7 +18,7 @@ word = "SEE", -> returns true,
 word = "ABCB", -> returns false.
 """
 __author__ = 'Danyang'
-class Solution:
+c_ Solution:
     ___ exist(self, board, word):
         """
         dfs
@@ -33,19 +33,19 @@ class Solution:
 
         m = l..(board)
         n = l..(board[0])
-        visited = [[False ___ _ __ xrange(n)] ___ _ __ xrange(m)]  # avoid loop
+        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]  # avoid loop
         ___ i __ xrange(m):
             ___ j __ xrange(n):
                 __ board[i][j]__word[0]:
-                    visited[i][j] = True
-                    __ self.search(board, i, j, word[1:], visited):
-                        r.. True
-                    visited[i][j] = False
-        r.. False
+                    visited[i][j] = T..
+                    __ s..(board, i, j, word[1:], visited):
+                        r.. T..
+                    visited[i][j] = F..
+        r.. F..
 
-    ___ search(self, board, pre_row, pre_col, word, visited):
+    ___ s..(self, board, pre_row, pre_col, word, visited):
         __ n.. word:
-            r.. True
+            r.. T..
         # searching for word[0]
         m = l..(board)
         n = l..(board[0])
@@ -53,11 +53,11 @@ class Solution:
         ___ next_position __ next_positions:
             __ 0<=next_position[0]<m a.. 0<=next_position[1]<n:  # pre-checking
                 __ visited[next_position[0]][next_position[1]]__False a.. board[next_position[0]][next_position[1]]__word[0]:
-                    visited[next_position[0]][next_position[1]] = True
-                    __ self.search(board, next_position[0], next_position[1], word[1:], visited):
-                        r.. True
-                    visited[next_position[0]][next_position[1]] = False  # restore
-        r.. False
+                    visited[next_position[0]][next_position[1]] = T..
+                    __ s..(board, next_position[0], next_position[1], word[1:], visited):
+                        r.. T..
+                    visited[next_position[0]][next_position[1]] = F..  # restore
+        r.. F..
 
 
 

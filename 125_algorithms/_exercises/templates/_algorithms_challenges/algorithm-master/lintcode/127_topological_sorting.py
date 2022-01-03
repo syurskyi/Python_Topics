@@ -7,7 +7,7 @@ class DirectedGraphNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: graph: A list of Directed graph node
     @return: Any topological order for the given graph.
@@ -17,7 +17,7 @@ class Solution:
         __ n.. graph:
             r.. ans
 
-        indegs = {}
+        indegs    # dict
         ___ node __ graph:
             __ node n.. __ indegs:
                 indegs[node] = 0
@@ -26,7 +26,7 @@ class Solution:
                     indegs[_node] = 0
                 indegs[_node] += 1
 
-        queue = [node ___ node, indeg __ indegs.items() __ indeg __ 0]
+        queue = [node ___ node, indeg __ indegs.i.. __ indeg __ 0]
         ___ node __ queue:
             ans.a..(node)
             ___ _node __ node.neighbors:

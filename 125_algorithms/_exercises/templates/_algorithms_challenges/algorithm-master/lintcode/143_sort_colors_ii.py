@@ -2,7 +2,7 @@
 Rainbow Sort
 time: O(nlogk)
 """
-class Solution:
+c_ Solution:
     """
     @param: colors: A list of integer
     @param: k: An integer
@@ -11,7 +11,7 @@ class Solution:
     ___ sortColors2(self, colors, k):
         __ n.. colors o. n.. k:
             r..
-        self.rainbow_sort(colors, 0, l..(colors) - 1, 1, k)
+        rainbow_sort(colors, 0, l..(colors) - 1, 1, k)
 
     ___ rainbow_sort(self, colors, start, end, color_from, color_to):
         """
@@ -34,8 +34,8 @@ class Solution:
                 left += 1
                 right -= 1
 
-        self.rainbow_sort(colors, start, right, color_from, color_mid)
-        self.rainbow_sort(colors, left, end, color_mid + 1, color_to)
+        rainbow_sort(colors, start, right, color_from, color_mid)
+        rainbow_sort(colors, left, end, color_mid + 1, color_to)
 
 
 """
@@ -43,7 +43,7 @@ TLE
 Extend from sort color
 time: O(nk)
 """
-class Solution:
+c_ Solution:
     """
     @param: colors: A list of integer
     @param: k: An integer

@@ -6,7 +6,7 @@ Note: Your solution should be in logarithmic time complexity.
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ trailingZeroes(self, n):
         """
         10 = 5*2

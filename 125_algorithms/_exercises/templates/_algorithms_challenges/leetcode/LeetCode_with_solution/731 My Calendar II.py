@@ -46,32 +46,32 @@ In calls to MyCalendar.book(start, end), start and end are integers in the range
 _______ bisect
 
 
-class MyCalendarTwo:
+c_ MyCalendarTwo:
 
-    ___ __init__(self):
+    ___ - ):
         """
         triple booking
         boundary counting
         bisect.insort
         """
-        self.lst    # list  # can be TreeMap(), ordered map
+        lst    # list  # can be TreeMap(), ordered map
 
 
     ___ book(self, start: int, end: int) -> bool:
         """
         O(lg n) + O(n)
         """
-        bisect.insort(self.lst, (start, "start"))
-        bisect.insort(self.lst, (end, "end"))
+        bisect.insort(lst, (start, "start"))
+        bisect.insort(lst, (end, "end"))
         count = 0
-        ___ _, flag __ self.lst:
+        ___ _, flag __ lst:
             count += 1 __ flag __ "start" ____ -1
             __ count > 2:
-                self.lst.remove((start, "start"))
-                self.lst.remove((end, "end"))
-                r.. False
+                lst.remove((start, "start"))
+                lst.remove((end, "end"))
+                r.. F..
 
-        r.. True
+        r.. T..
 
 # Your MyCalendarTwo object will be instantiated and called as such:
 # obj = MyCalendarTwo()

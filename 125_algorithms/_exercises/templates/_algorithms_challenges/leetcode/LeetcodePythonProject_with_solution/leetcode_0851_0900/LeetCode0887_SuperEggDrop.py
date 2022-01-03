@@ -3,7 +3,7 @@ Created on Oct 24, 2019
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ superEggDrop(self, K, N):
         """
         :type K: int

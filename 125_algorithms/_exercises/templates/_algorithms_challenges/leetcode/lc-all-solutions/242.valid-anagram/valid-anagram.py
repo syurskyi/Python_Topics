@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isAnagram(self, s, t):
     """
     :type s: str
@@ -6,7 +6,7 @@ class Solution(object):
     :rtype: bool
     """
     __ n.. l..(s) __ l..(t):
-      r.. False
+      r.. F..
 
     sHash = tHash = 1
     sCount = [0] * 26

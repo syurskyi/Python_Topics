@@ -25,15 +25,15 @@ You may assume start and end string is not the same.
 """
 
 
-class Solution:
+c_ Solution:
     ___ is_neighbor(self, p, q):
         diff = 0
         ___ a, b __ z..(p, q):
             __ a != b:
                 diff += 1
             __ diff > 1:
-                r.. False
-        r.. True
+                r.. F..
+        r.. T..
 
     ___ minMutation(self, start, end, bank):
         """
@@ -55,7 +55,7 @@ class Solution:
                 __ e __ end:
                     r.. lvl
                 ___ t __ bank:
-                    __ t n.. __ visited a.. self.is_neighbor(e, t):
+                    __ t n.. __ visited a.. is_neighbor(e, t):
                         visited.add(t)
                         cur_q.a..(t)
 

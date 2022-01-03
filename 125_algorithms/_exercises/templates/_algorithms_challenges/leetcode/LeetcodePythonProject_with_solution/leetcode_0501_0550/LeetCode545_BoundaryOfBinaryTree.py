@@ -5,13 +5,13 @@ Created on Aug 20, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ boundaryOfBinaryTree(self, root):
         """
         :type root: TreeNode
@@ -19,10 +19,10 @@ class Solution(object):
         """
         __ n.. root: r.. []
         __ n.. root.left a.. n.. root.right: r.. [root.val]
-        leftBoundary = self.getLeft(root)
+        leftBoundary = getLeft(root)
         leaves    # list
-        self.getLeaves(root, leaves)
-        rightBoundary = self.getRight(root)
+        getLeaves(root, leaves)
+        rightBoundary = getRight(root)
         r.. leftBoundary + leaves + rightBoundary
     
     ___ getLeft(self, root):
@@ -42,8 +42,8 @@ class Solution(object):
         __ n.. root.left a.. n.. root.right:
             leaves.a..(root.val)
             r..
-        self.getLeaves(root.left, leaves)
-        self.getLeaves(root.right, leaves)
+        getLeaves(root.left, leaves)
+        getLeaves(root.right, leaves)
     
     ___ getRight(self, root):
         result    # list
@@ -58,12 +58,12 @@ class Solution(object):
         result.reverse()
         r.. result
     
-    ___ test(self):
+    ___ test
         testCases = [
             TreeNode(1, N.., TreeNode(2, TreeNode(3), TreeNode(4))),
         ]
         ___ root __ testCases:
-            res = self.boundaryOfBinaryTree(root)
+            res = boundaryOfBinaryTree(root)
             print('result: %s' % res)
             print('-='*30+'-')
 

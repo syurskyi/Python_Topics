@@ -5,41 +5,41 @@ Created on Jan 31, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ recoverTree(self, root):
         """
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
         """
         __ n.. root: r..
-        self.first = N..
-        self.second = N..
-        self.prev = N..
-        self.inOrder(root)
-        __ self.second a.. self.first:
-            val = self.second.val
-            self.second.val = self.first.val
-            self.first.val = val
+        first = N..
+        second = N..
+        prev = N..
+        inOrder(root)
+        __ second a.. first:
+            val = second.val
+            second.val = first.val
+            first.val = val
     
     ___ inOrder(self, root):
         __ n.. root:
             r..
-        self.inOrder(root.left)
-        __ self.prev:
-            __ root.val < self.prev.val:
-                __ n.. self.first:
-                    self.first = self.prev
-                self.second = root
-        self.prev = root
-        self.inOrder(root.right)
+        inOrder(root.left)
+        __ prev:
+            __ root.val < prev.val:
+                __ n.. first:
+                    first = prev
+                second = root
+        prev = root
+        inOrder(root.right)
     
-    ___ test(self):
+    ___ test
         pass
 
 __ __name__ __ '__main__':

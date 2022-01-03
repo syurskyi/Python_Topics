@@ -43,7 +43,7 @@ After calling your function, the tree should look like:
 #         self.right = None
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
     ___ connect(self, root):
         """
         :type root: TreeLinkNode
@@ -54,5 +54,5 @@ class Solution(object):
                 root.left.next = root.right
             __ root.right __ n.. N.. a.. root.next __ n.. N..
                 root.right.next = root.next.left
-            self.connect(root.left)
-            self.connect(root.right)
+            connect(root.left)
+            connect(root.right)

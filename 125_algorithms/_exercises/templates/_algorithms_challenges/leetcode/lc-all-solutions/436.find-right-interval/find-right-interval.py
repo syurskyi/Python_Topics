@@ -3,25 +3,25 @@
 #     def __init__(self, s=0, e=0):
 #         self.start = s
 #         self.end = e
-class IntvArray(object):
-  ___ __init__(self):
-    self._array    # list
-    self.a.. = l.... x: self._array.a..(x)
-    self.s.. = self._array.s..
+c_ IntvArray(object):
+  ___ - ):
+    _array    # list
+    a.. = l.... x: _array.a..(x)
+    s.. = _array.s..
 
-  ___ __len__(self):
-    r.. l..(self._array)
+  ___ __len__
+    r.. l..(_array)
 
   ___ __getitem__(self, x):
-    r.. self._array[x][0]
+    r.. _array[x][0]
 
   ___ getIdx(self, x):
-    __ x >= l..(self._array):
+    __ x >= l..(_array):
       r.. -1
-    r.. self._array[x][1]
+    r.. _array[x][1]
 
 
-class Solution(object):
+c_ Solution(object):
   ___ findRightInterval(self, intervals):
     """
     :type intervals: List[Interval]

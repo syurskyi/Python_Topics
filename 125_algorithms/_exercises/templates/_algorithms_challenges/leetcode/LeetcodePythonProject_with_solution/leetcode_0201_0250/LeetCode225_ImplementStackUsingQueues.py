@@ -4,38 +4,38 @@ Created on Feb 22, 2017
 @author: MT
 '''
 
-class Solution(object):
-    ___ __init__(self):
-        self.queue1    # list
-        self.queue2    # list
+c_ Solution(object):
+    ___ - ):
+        queue1    # list
+        queue2    # list
     
     ___ push(self, x):
-        __ self.empty():
-            self.queue1.a..(x)
+        __ empty():
+            queue1.a..(x)
         ____:
-            __ self.queue1:
-                self.queue2.a..(x)
-                w.... self.queue1:
-                    self.queue2.a..(self.queue1.pop(0))
+            __ queue1:
+                queue2.a..(x)
+                w.... queue1:
+                    queue2.a..(queue1.pop(0))
             ____:
-                self.queue1.a..(x)
-                w.... self.queue2:
-                    self.queue1.a..(self.queue2.pop(0))
+                queue1.a..(x)
+                w.... queue2:
+                    queue1.a..(queue2.pop(0))
     
-    ___ pop(self):
-        __ self.queue1:
-            r.. self.queue1.pop(0)
+    ___ pop
+        __ queue1:
+            r.. queue1.pop(0)
         ____:
-            r.. self.queue2.pop(0)
+            r.. queue2.pop(0)
     
-    ___ top(self):
-        __ self.queue1:
-            r.. self.queue1[0]
+    ___ top
+        __ queue1:
+            r.. queue1[0]
         ____:
-            r.. self.queue2[0]
+            r.. queue2[0]
     
-    ___ empty(self):
-        r.. n.. self.queue1 a.. n.. self.queue2
+    ___ empty
+        r.. n.. queue1 a.. n.. queue2
 
 __ __name__ __ '__main__':
     stack = Solution()

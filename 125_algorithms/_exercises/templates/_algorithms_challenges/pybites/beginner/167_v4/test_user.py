@@ -30,7 +30,7 @@ ___ test_noah_use_dunder_in_repr():
        name hardcoded.
        Also tests for a shorter surname.
     """
-    class SpecialUser(User):
+    c_ SpecialUser(User):
         pass
 
     noah = SpecialUser('Noah', 'Kagan')

@@ -3,7 +3,7 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ triangleNumber(self, nums):
         """
         :type nums: List[int]
@@ -21,13 +21,13 @@ class Solution(object):
                     l += 1
         r.. count
     
-    ___ test(self):
+    ___ test
         testCases = [
             [2, 2, 3, 4],
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.triangleNumber(nums)
+            result = triangleNumber(nums)
             print('result: %s' % result)
             print('-='*30+'-')
 

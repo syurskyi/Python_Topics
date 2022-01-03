@@ -1,12 +1,12 @@
-class WordDistance(object):
-  ___ __init__(self, words):
+c_ WordDistance(object):
+  ___ - , words):
     """
     initialize your data structure here.
     :type words: List[str]
     """
-    self.d = {}
+    d    # dict
     ___ i __ r..(0, l..(words)):
-      self.d[words[i]] = self.d.get(words[i], []) + [i]
+      d[words[i]] = d.get(words[i], []) + [i]
 
   ___ shortest(self, word1, word2):
     """
@@ -15,8 +15,8 @@ class WordDistance(object):
     :type word2: str
     :rtype: int
     """
-    l1 = self.d[word1]
-    l2 = self.d[word2]
+    l1 = d[word1]
+    l2 = d[word2]
     i = j = 0
     ans = float("inf")
     w.... i < l..(l1) a.. j < l..(l2):

@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ snakesAndLadders(self, board):
         """
         :type board: List[List[int]]
@@ -30,7 +30,7 @@ class Solution(object):
                         queue.a..((board[j]-1, d+1))
         r.. -1
 
-    ___ test(self):
+    ___ test
         testCases = [
             [[-1, 1, 2,-1],
              [2, 13,15,-1],
@@ -64,7 +64,7 @@ class Solution(object):
              [-1,15,-1,-1,-1,-1]],
         ]
         ___ board __ testCases:
-            res = self.snakesAndLadders(board)
+            res = snakesAndLadders(board)
             print('res: %s' % res)
             print('-='*30+'-')
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param s: the given array of strings
     @return: The anagrams which have been divided into groups
@@ -7,12 +7,12 @@ class Solution:
         __ n.. s:
             r.. []
 
-        group = {}
+        group    # dict
 
         ___ w __ s:
-            key = ''.join(s..(w))
+            key = ''.j..(s..(w))
             __ key n.. __ group:
                 group[key]    # list
             group[key].a..(w)
 
-        r.. s..([s..(g) ___ g __ group.values()])
+        r.. s..([s..(g) ___ g __ group.v..)

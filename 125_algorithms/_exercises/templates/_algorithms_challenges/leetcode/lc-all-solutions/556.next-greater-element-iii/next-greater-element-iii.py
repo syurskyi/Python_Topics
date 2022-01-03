@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ nextGreaterElement(self, n):
     """
     :type n: int
@@ -18,7 +18,7 @@ class Solution(object):
 
     n[leftMost], n[pos] = n[pos], n[leftMost]
     n[leftMost + 1:] = s..(n[leftMost + 1:])
-    n = int("".join(n))
+    n = int("".j..(n))
     print
     n
     __ n <= num o. n > 0x7fffffff:

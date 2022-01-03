@@ -18,7 +18,7 @@ desiredTotal will not be larger than 300.
 """
 
 
-class Solution:
+c_ Solution:
     ___ canIWin(self, maxChoosableInteger, desiredTotal):
         """
         can p win?
@@ -31,30 +31,30 @@ class Solution:
         :type desiredTotal: int
         :rtype: bool
         """
-        cache = {}
+        cache    # dict
         # set is not hashable while frozenset is
         choices = frozenset([choice ___ choice __ r..(1, maxChoosableInteger + 1)])
-        r.. self._can_win(desiredTotal, choices, s..(choices), cache)
+        r.. _can_win(desiredTotal, choices, s..(choices), cache)
 
     ___ _can_win(self, total, choices, gross,cache):
         __ (total, choices) __ cache:
             r.. cache[(total, choices)]
 
-        ret = False
+        ret = F..
         __ max(choices) >= total:
-            ret = True
+            ret = T..
 
         ____ gross < total:
-            ret = False
+            ret = F..
         ____:
             ___ choice __ choices:
-                __ n.. self._can_win(
+                __ n.. _can_win(
                         total - choice,
                         choices - set([choice]),
                         gross - choice,
                         cache
                 ):
-                    ret = True
+                    ret = T..
                     break
 
         cache[(total, choices)] = ret
@@ -62,6 +62,6 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().canIWin(10, 11) __ False
-    ... Solution().canIWin(10, 0) __ True
-    ... Solution().canIWin(13, 11) __ True
+    ... Solution().canIWin(10, 11) __ F..
+    ... Solution().canIWin(10, 0) __ T..
+    ... Solution().canIWin(13, 11) __ T..

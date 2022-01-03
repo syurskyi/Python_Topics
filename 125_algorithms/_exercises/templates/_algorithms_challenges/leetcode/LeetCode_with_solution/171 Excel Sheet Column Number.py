@@ -17,7 +17,7 @@ For example:
 __author__ = 'Daniel'
 
 
-class Solution:
+c_ Solution:
     ___ titleToNumber(self, s):
         """
         :type s: str

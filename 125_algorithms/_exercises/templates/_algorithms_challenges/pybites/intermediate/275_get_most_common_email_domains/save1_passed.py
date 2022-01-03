@@ -1,7 +1,7 @@
 ____ collections _______ Counter
 ____ bs4 _______ BeautifulSoup
 _______ requests
-_______ re
+_______ __
 
 COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
                   "common-domains.html")
@@ -18,7 +18,7 @@ ___ get_common_domains(url=COMMON_DOMAINS):
     domains    # list
     ___ row __ right_table.findAll('tr'):
         cells = row.findAll('td')
-        domains.a..(cells[2].find(text=True))
+        domains.a..(cells[2].find(text=T..))
 
     r.. domains
 
@@ -31,7 +31,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
 
     l    # list
     ___ email __ emails:
-        match = re.findall(r'@(\w+.\w+)', email)[0]
+        match = __.findall(r'@(\w+.\w+)', email)[0]
         __ match n.. __ get_common_domains():
             l.a..(match)
 

@@ -14,7 +14,7 @@ Test Case
 ,[ 10, 12, 11 ]]
 """
 
-class Solution:
+c_ Solution:
     NULL_POS = [-1, -1]
     dx = [1, -1, 0, 0]
     dy = [0, 0, 1, -1]
@@ -35,17 +35,17 @@ class Solution:
     """
     ___ findPeakII(self, A):
         __ n.. A:
-            r.. self.NULL_POS
+            r.. NULL_POS
 
-        self.m, self.n = l..(A), l..(A[0])
-        left, col, right = 0, 0, self.n - 1
-        up, row, down = 0, 0, self.m - 1
+        m, n = l..(A), l..(A[0])
+        left, col, right = 0, 0, n - 1
+        up, row, down = 0, 0, m - 1
 
         w.... left + 1 < right o. up + 1 < down:
             __ down - up > right - left:
                 row = up + (down - up) // 2
-                col = self.findRowMax(A, row, left, right)
-                __ self.isPeak(A, row, col):
+                col = findRowMax(A, row, left, right)
+                __ isPeak(A, row, col):
                     r.. [row, col]
                 __ A[row][col] < A[row-1][col]:
                     down = row
@@ -53,8 +53,8 @@ class Solution:
                     up = row
             ____:
                 col = left + (right - left) // 2
-                row = self.findColMax(A, col, up, down)
-                __ self.isPeak(A, row, col):
+                row = findColMax(A, col, up, down)
+                __ isPeak(A, row, col):
                     r.. [row, col]
                 __ A[row][col] < A[row][col-1]:
                     right = col
@@ -62,9 +62,9 @@ class Solution:
                     left = col
         ___ r __ [up, down]:
             ___ c __ [left, right]:
-                __ self.isPeak(A, r, c):
+                __ isPeak(A, r, c):
                     r.. [r, c]
-        r.. self.NULL_POS
+        r.. NULL_POS
 
     # given col index, return the row index of the max value on that col
     ___ findColMax(self, A, col, up, down):
@@ -85,10 +85,10 @@ class Solution:
     ___ isPeak(self, A, row, col):
         _r = _c = 0
         ___ i __ r..(4):
-            _r = row + self.dx[i]
-            _c = col + self.dy[i]
-            __ 0 <= _r < self.m \
-                    a.. 0 <= _c < self.n \
+            _r = row + dx[i]
+            _c = col + dy[i]
+            __ 0 <= _r < m \
+                    a.. 0 <= _c < n \
                     a.. A[row][col] < A[_r][_c]:
                 r.. 0
         r.. 1

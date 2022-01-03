@@ -1,15 +1,15 @@
-class TrieNode:
-  ___ __init__(self):
-    self.neighbours = {}
-    self.isWord = False
+c_ TrieNode:
+  ___ - ):
+    neighbours    # dict
+    isWord = F..
 
 
-class Trie:
-  ___ __init__(self):
-    self.root = TrieNode()
+c_ Trie:
+  ___ - ):
+    root = TrieNode()
 
   ___ addWord(self, word):
-    root = self.root
+    root = root
     ___ i __ r..(0, l..(word)):
       c = word[i]
       __ c __ root.neighbours:
@@ -18,38 +18,38 @@ class Trie:
         newnode = TrieNode()
         root.neighbours[c] = newnode
         root = root.neighbours[c]
-    root.isWord = True
+    root.isWord = T..
 
 
-class WordDictionary:
-  ___ __init__(self):
-    self.trie = Trie()
-    self.cache = set([])
+c_ WordDictionary:
+  ___ - ):
+    trie = Trie()
+    cache = set([])
 
   ___ addWord(self, word):
-    self.trie.addWord(word)
-    self.cache.add(word)
+    trie.addWord(word)
+    cache.add(word)
 
-  ___ search(self, word):
-    __ word __ self.cache:
-      r.. True
+  ___ s..(self, word):
+    __ word __ cache:
+      r.. T..
 
     ___ dfsHelper(root, word, index):
       __ n.. root:
-        r.. False
+        r.. F..
 
       __ l..(word) __ index:
         __ root.isWord:
-          r.. True
-        r.. False
+          r.. T..
+        r.. F..
 
       __ word[index] != ".":
         __ dfsHelper(root.neighbours.get(word[index], N..), word, index + 1):
-          r.. True
+          r.. T..
       ____:
         ___ nbr __ root.neighbours:
           __ dfsHelper(root.neighbours[nbr], word, index + 1):
-            r.. True
-      r.. False
+            r.. T..
+      r.. F..
 
-    r.. dfsHelper(self.trie.root, word, 0)
+    r.. dfsHelper(trie.root, word, 0)

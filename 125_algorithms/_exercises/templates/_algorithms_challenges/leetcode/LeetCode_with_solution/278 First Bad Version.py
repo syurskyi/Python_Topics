@@ -16,7 +16,7 @@ ___ isBadVersion(version):
     pass
 
 
-class Solution(object):
+c_ Solution(object):
     ___ firstBadVersion(self, n):
         """
         :param n: An integers.

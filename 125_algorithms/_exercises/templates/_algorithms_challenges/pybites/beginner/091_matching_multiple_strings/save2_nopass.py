@@ -7,9 +7,9 @@ ___ contains_only_vowels(input_str):
        VOWELS. Match is case insensitive."""
     ___ char __ input_str.casefold():
         __ char n.. __ VOWELS:
-            r.. False
+            r.. F..
         ____:
-            r.. True
+            r.. T..
 
 
 ___ contains_any_py_chars(input_str):
@@ -17,11 +17,11 @@ ___ contains_any_py_chars(input_str):
        chars are in it. Match is case insensitive."""
     ___ char __ input_str.casefold():
         __ char __ PYTHON:
-            r.. True
+            r.. T..
         ____ char __ N..
-            r.. False
+            r.. F..
         ____:
-            r.. False
+            r.. F..
 
 
 ___ contains_digits(input_str):
@@ -32,6 +32,6 @@ ___ contains_digits(input_str):
         __ char.isdigit():
             digits.a..(char)
     __ l..(digits) > 0:
-        r.. True
+        r.. T..
     ____:
-        r.. False
+        r.. F..

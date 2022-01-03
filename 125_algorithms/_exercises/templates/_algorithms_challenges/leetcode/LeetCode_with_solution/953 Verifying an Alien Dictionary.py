@@ -39,17 +39,17 @@ All characters in words[i] and order are english lowercase letters.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ isAlienSorted(self, words: List[s..], order: s..) -> bool:
-        h = {}
+        h    # dict
         ___ i, c __ e..(order):
             h[c] = i
 
         ___ i __ r..(1, l..(words)):
-            __ self.cmp(words[i], words[i-1], h) __ -1:
-                r.. False
+            __ cmp(words[i], words[i-1], h) __ -1:
+                r.. F..
 
-        r.. True
+        r.. T..
 
     ___ cmp(self, w1, w2, h):
         ___ c1, c2 __ z..(w1, w2):
@@ -67,4 +67,4 @@ class Solution:
 
 
 __ __name__ __ "__main__":
-    ... Solution().isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz") __ True
+    ... Solution().isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz") __ T..

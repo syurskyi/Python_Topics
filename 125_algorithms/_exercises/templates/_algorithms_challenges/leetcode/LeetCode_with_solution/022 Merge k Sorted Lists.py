@@ -4,12 +4,12 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 __author__ = 'Danyang'
 _______ heapq
 # Definition for singly-linked list.
-class ListNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.next = N..
+c_ ListNode:
+    ___ - , x):
+        val = x
+        next = N..
 
-class Solution:
+c_ Solution:
     ___ mergeKLists_TLE1(self, lists):
         """
         k lists; each list has N items
@@ -36,7 +36,7 @@ class Solution:
             i = 0
             w... T...
                 try:
-                    lists[i] = self.mergeTwoLists(lists[i], lists[i+factor/2])
+                    lists[i] = mergeTwoLists(lists[i], lists[i+factor/2])
                 except IndexError:
                     break
                 i += factor
@@ -58,7 +58,7 @@ class Solution:
 
         result = lists[0]
         ___ i __ xrange(1, l..(lists)):
-            result = self.mergeTwoLists(result, lists[i])
+            result = mergeTwoLists(result, lists[i])
         r.. result
 
 

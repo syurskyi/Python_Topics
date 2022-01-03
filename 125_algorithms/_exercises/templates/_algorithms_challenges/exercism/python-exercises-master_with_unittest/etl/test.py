@@ -5,21 +5,21 @@ ____ etl _______ transform
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-class TransformTest(unittest.TestCase):
-    ___ test_a_single_letter(self):
-        self.assertEqual(transform({1: ['A']}), {'a': 1})
+c_ TransformTest(unittest.TestCase):
+    ___ test_a_single_letter
+        assertEqual(transform({1: ['A']}), {'a': 1})
 
-    ___ test_single_score_with_multiple_letters(self):
+    ___ test_single_score_with_multiple_letters
         legacy_data = {1: ["A", "E", "I", "O", "U"]}
         data = {"a": 1, "e": 1, "i": 1, "o": 1, "u": 1}
-        self.assertEqual(transform(legacy_data), data)
+        assertEqual(transform(legacy_data), data)
 
-    ___ test_multiple_scores_with_multiple_letters(self):
+    ___ test_multiple_scores_with_multiple_letters
         legacy_data = {1: ["A", "E"], 2: ["D", "G"]}
         data = {"a": 1, "d": 2, "e": 1, "g": 2}
-        self.assertEqual(transform(legacy_data), data)
+        assertEqual(transform(legacy_data), data)
 
-    ___ test_multiple_scores_with_differing_numbers_of_letters(self):
+    ___ test_multiple_scores_with_differing_numbers_of_letters
         legacy_data = {
             1: ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
             2: ["D", "G"],
@@ -36,7 +36,7 @@ class TransformTest(unittest.TestCase):
             "s": 1, "t": 1, "u": 1, "v": 4, "w": 4, "x": 8,
             "y": 4, "z": 10
         }
-        self.assertEqual(transform(legacy_data), data)
+        assertEqual(transform(legacy_data), data)
 
 
 __ __name__ __ '__main__':

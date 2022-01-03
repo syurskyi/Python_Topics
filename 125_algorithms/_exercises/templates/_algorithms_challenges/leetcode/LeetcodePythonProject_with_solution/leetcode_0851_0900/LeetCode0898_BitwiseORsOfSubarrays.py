@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
     ___ subarrayBitwiseORs(self, A):
         """
         :type A: List[int]
@@ -15,14 +15,14 @@ class Solution(object):
             prevSet = currSet
         r.. l..(uniqSet)
 
-    ___ test(self):
+    ___ test
         testCases = [
             # [0],
             # [1, 1, 2],
             [1, 2, 4],
         ]
         ___ arr __ testCases:
-            res = self.subarrayBitwiseORs(arr)
+            res = subarrayBitwiseORs(arr)
             print('res: %s' % res)
             print('-='*30+'-')
 

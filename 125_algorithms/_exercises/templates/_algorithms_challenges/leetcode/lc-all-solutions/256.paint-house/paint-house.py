@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ minCost(self, costs):
     """
     :type costs: List[List[int]]

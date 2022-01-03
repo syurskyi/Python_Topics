@@ -14,7 +14,7 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from
 index 0 to 1, then 3 steps to the last index.)
 """
 
-class Solution:
+c_ Solution:
     # @param A, a list of integers
     # @return an integer
     ___ jump(self, A):
@@ -28,17 +28,17 @@ class Solution:
         min_i = n - 1  # Mininum index able to reach `cur`
         cur = n - 1  # Current index to reach (in a loop)
         i = cur - 1
-        reached = False  # Whether `cur` can be reached by previous elements
+        reached = F..  # Whether `cur` can be reached by previous elements
         # Worst case: O(n^2)
         w.... i >= 0:
             w.... i >= 0:
                 __ t[i] >= cur:
                     min_i = i
-                    reached = True
+                    reached = T..
                 i -= 1
             __ n.. reached:
                 r.. -1
-            reached = False
+            reached = F..
             count += 1
             cur = min_i
             i = cur - 1

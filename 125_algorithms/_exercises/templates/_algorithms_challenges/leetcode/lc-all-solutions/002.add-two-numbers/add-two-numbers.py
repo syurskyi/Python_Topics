@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-class Solution(object):
+c_ Solution(object):
   # maybe standard version
   ___ _addTwoNumbers(self, l1, l2):
     """

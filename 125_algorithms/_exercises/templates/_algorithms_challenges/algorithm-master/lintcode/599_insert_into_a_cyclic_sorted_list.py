@@ -8,7 +8,7 @@ class ListNode(object):
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: node: a list node in the list
     @param: x: An integer

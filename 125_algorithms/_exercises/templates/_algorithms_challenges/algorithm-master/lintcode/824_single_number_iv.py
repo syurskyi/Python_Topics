@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     ___ getSingleNumber(self, nums):
         """
         :type nums: list[int]

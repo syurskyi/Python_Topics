@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
+c_ Solution(object):
   ___ inorderSuccessor(self, root, q):
     """
     :type root: TreeNode
@@ -13,7 +13,7 @@ class Solution(object):
     :rtype: TreeNode
     """
     __ root a.. q:
-      flag = False
+      flag = F..
       stack = [(1, root)]
       w.... stack:
         p = stack.pop()
@@ -23,7 +23,7 @@ class Solution(object):
           __ flag:
             r.. p[1]
           __ p[1] __ q:
-            flag = True
+            flag = T..
         ____:
           stack.extend([(1, p[1].right), (0, p[1]), (1, p[1].left)])
 

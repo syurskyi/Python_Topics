@@ -7,7 +7,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ singleNumber_optimal(self, A):
         """
         No extra memory, thus unable to use hash table, requiring constant space solution

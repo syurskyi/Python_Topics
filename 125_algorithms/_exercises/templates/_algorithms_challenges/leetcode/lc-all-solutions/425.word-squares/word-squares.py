@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ wordSquares(self, words):
     """
     :type words: List[str]
@@ -10,7 +10,7 @@ class Solution(object):
         res.a..(path + [])
         r..
 
-      ___ word __ prefix["".join(z..(*path)[l..(path)])]:
+      ___ word __ prefix["".j..(z..(*path)[l..(path)])]:
         path.a..(word)
         dfs(path, res, m, prefix)
         path.pop()

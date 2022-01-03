@@ -7,7 +7,7 @@ class TreeNode:
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: The root of binary tree
     @return: An integer
@@ -35,7 +35,7 @@ class Solution:
         r.. ans
 
 
-class Solution:
+c_ Solution:
     """
     @param: root: The root of binary tree
     @return: An integer
@@ -47,8 +47,8 @@ class Solution:
         __ n.. root.left a.. n.. root.right:
             r.. 1
 
-        left = self.minDepth(root.left)
-        right = self.minDepth(root.right)
+        left = minDepth(root.left)
+        right = minDepth(root.right)
 
         __ left __ 0:
             r.. right + 1

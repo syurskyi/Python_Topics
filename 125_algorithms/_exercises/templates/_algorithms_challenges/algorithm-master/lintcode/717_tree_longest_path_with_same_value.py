@@ -3,7 +3,7 @@ REF: https://blog.csdn.net/zhaohengchuan/article/details/78833501
 """
 
 
-class Solution:
+c_ Solution:
     ___ LongestPathWithSameValue(self, a, e):
         """
         :type a: list[int]
@@ -20,10 +20,10 @@ class Solution:
             neibs[e[i]].a..(e[i + 1])
             neibs[e[i + 1]].a..(e[i])
 
-        self.ans = 0
-        res = self.dfs(0, 1, a, neibs)
+        ans = 0
+        res = dfs(0, 1, a, neibs)
 
-        r.. max(self.ans, res)
+        r.. max(ans, res)
 
     ___ dfs(self, root, curr, a, neibs):
         tmp    # list
@@ -33,7 +33,7 @@ class Solution:
             __ neib __ root:
                 continue
 
-            res = self.dfs(curr, neib, a, neibs)
+            res = dfs(curr, neib, a, neibs)
 
             # incr the res and append to tmp
             # if both `neib` and `curr` have same value
@@ -44,6 +44,6 @@ class Solution:
         tmp.extend((0, 0))
         tmp.s..(r.._T..
 
-        self.ans = max(self.ans, tmp[0] + tmp[1])
+        ans = max(ans, tmp[0] + tmp[1])
 
         r.. tmp[0]

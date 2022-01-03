@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ wiggleMaxLength(self, nums):
         __ n.. nums: r.. 0
         maxLen = 1
@@ -21,7 +21,7 @@ class Solution(object):
             i += 1
         r.. maxLen
     
-    ___ test(self):
+    ___ test
         testCases = [
             [1,7,4,9,2,5],
             [1,17,5,10,13,15,10,5,16,8],
@@ -29,7 +29,7 @@ class Solution(object):
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = self.wiggleMaxLength(nums)
+            result = wiggleMaxLength(nums)
             print('result: %s' % result)
             print('-='*20+'-')
 

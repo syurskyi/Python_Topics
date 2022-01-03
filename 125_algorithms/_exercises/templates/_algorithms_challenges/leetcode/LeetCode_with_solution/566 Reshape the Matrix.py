@@ -15,7 +15,7 @@ the new reshaped matrix; Otherwise, output the original matrix.
 """
 ____ typing _______ List
 
-class Solution:
+c_ Solution:
     ___ matrixReshape(self, nums: List[List[int]], r: int, c: int) -> List[List[int]]:
         m, n = l..(nums), l..(nums[0])
         __ m * n != r * c:

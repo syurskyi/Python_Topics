@@ -36,7 +36,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ deleteAndEarn(self, nums: List[int]) -> int:
         """
         reduce to house rob problem

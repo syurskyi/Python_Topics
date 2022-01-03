@@ -51,9 +51,9 @@ _______ bisect
 ____ collections _______ defaultdict
 
 
-class TimeMap:
+c_ TimeMap:
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
         Looks like Cassandra
@@ -61,18 +61,18 @@ class TimeMap:
         BST
         Bineary search
         """
-        self.m = defaultdict(l..)
+        m = defaultdict(l..)
 
     ___ set(self, key: s.., value: s.., timestamp: int) -> N..
         n = (timestamp, value)
-        bisect.insort(self.m[key], n)
+        bisect.insort(m[key], n)
 
     ___ get(self, key: s.., timestamp: int) -> s..:
-        __ key n.. __ self.m:
+        __ key n.. __ m:
             r.. ""
 
         # find the largest v, s.t. v <= t
-        lst = self.m[key]
+        lst = m[key]
         i = bisect.bisect(lst, (timestamp, ""))
         __ i < l..(lst) a.. lst[i][0] __ timestamp:
             r.. lst[i][1]

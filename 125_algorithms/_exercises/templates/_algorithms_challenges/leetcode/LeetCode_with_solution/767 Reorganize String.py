@@ -21,7 +21,7 @@ S will consist of lowercase letters and have length in range [1, 500].
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ reorganizeString(self, S: s..) -> s..:
         """
         piles by max char and circular append
@@ -32,7 +32,7 @@ class Solution:
 
         lst = [
             (-n, n, c)
-            ___ c, n __ counter.items()
+            ___ c, n __ counter.i..
         ]
         lst.s..()
         piles    # list
@@ -49,8 +49,8 @@ class Solution:
         __ l..(piles) > 1 a.. l..(piles[-2]) __ 1:
             r.. ""
 
-        r.. "".join(
-            map(l.... x: "".join(x), piles)
+        r.. "".j..(
+            map(l.... x: "".j..(x), piles)
         )
 
 

@@ -3,14 +3,14 @@ DP:
 time: O(n^2)
 space: O(n)
 """
-class Solution:
+c_ Solution:
     ___ PredictTheWinner(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
         __ n.. nums:
-            r.. False
+            r.. F..
 
         n = l..(nums)
         dp = [0] * n
@@ -30,14 +30,14 @@ DP:
 time: O(n^2)
 space: O(n^2)
 """
-class Solution:
+c_ Solution:
     ___ PredictTheWinner(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
         __ n.. nums:
-            r.. False
+            r.. F..
 
         n = l..(nums)
         dp = [[0] * n ___ _ __ r..(n)]

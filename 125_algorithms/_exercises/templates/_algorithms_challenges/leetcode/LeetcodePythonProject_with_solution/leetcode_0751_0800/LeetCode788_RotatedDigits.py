@@ -3,7 +3,7 @@ Created on Apr 12, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ rotatedDigits(self, N):
         """
         :type N: int
@@ -11,7 +11,7 @@ class Solution(object):
         """
         cnt = 0
         ___ num __ r..(1, N+1):
-            __ self.checkNum(num):
+            __ checkNum(num):
                 cnt += 1
         r.. cnt
     
@@ -34,10 +34,10 @@ class Solution(object):
                 i += 1
                 j -= 1
             ____:
-                r.. False
+                r.. F..
         r.. arr0 != arr
     
-    ___ test(self):
+    ___ test
         testCases = [
             10,
             100,
@@ -45,7 +45,7 @@ class Solution(object):
         ]
         ___ n __ testCases:
             print('n: %s' % n)
-            result = self.rotatedDigits(n)
+            result = rotatedDigits(n)
             print('result: %s' % result)
             print('-='*30+'-')
 

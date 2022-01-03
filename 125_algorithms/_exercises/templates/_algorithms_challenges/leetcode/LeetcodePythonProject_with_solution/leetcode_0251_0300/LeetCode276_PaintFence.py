@@ -4,7 +4,7 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ numWays(self, n, k):
         """
         :type n: int
@@ -22,7 +22,7 @@ class Solution(object):
             prev1 = curr
         r.. curr
     
-    ___ test(self):
+    ___ test
         testCases = [
             (4, 3),
             (3, 2),
@@ -30,7 +30,7 @@ class Solution(object):
         ___ n, k __ testCases:
             print('n: %s' % (n))
             print('k: %s' % (k))
-            result = self.numWays(n, k)
+            result = numWays(n, k)
             print('result: %s' % (result))
             print('-='*20+'-')
 

@@ -4,7 +4,7 @@ Created on Mar 14, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ longestValidParentheses(self, s):
         left = -1
         stack    # list
@@ -23,7 +23,7 @@ class Solution(object):
                     left = i
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             '()',
             '(()',
@@ -31,7 +31,7 @@ class Solution(object):
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.longestValidParentheses(s)
+            result = longestValidParentheses(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

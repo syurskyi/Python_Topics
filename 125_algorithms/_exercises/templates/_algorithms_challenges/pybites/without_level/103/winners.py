@@ -17,5 +17,5 @@ ___ print_game_stats(games_won=games_won):
        (Note that as of Python 3.7 - which we're using atm - dict insert order is retained
         so no sorting is required for this Bite.)
     """
-    ___ name, score __ games_won.items():
+    ___ name, score __ games_won.i..:
         print(f"{name} has won {score} game{'' __ score __ 1 ____ 's'}")

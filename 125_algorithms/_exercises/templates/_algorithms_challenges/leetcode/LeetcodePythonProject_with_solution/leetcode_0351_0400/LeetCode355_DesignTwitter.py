@@ -3,22 +3,22 @@ Created on Feb 28, 2018
 
 @author: tongq
 '''
-class TweetObj(object):
-    ___ __init__(self, tweet_id, user_id, tweetId, prevTweet_ N..
-        self.user_id = user_id
-        self.tweetContext = tweetId
-        self.prevTweet = prevTweet
-        self.tweet_id = tweet_id
+c_ TweetObj(object):
+    ___ - , tweet_id, user_id, tweetId, prevTweet_ N..
+        user_id = user_id
+        tweetContext = tweetId
+        prevTweet = prevTweet
+        tweet_id = tweet_id
 
-class Twitter(object):
+c_ Twitter(object):
 
-    ___ __init__(self):
+    ___ - ):
         """
         Initialize your data structure here.
         """
-        self.following = {}
-        self.latestTweets = {}
-        self.tweet_id = 0
+        following    # dict
+        latestTweets    # dict
+        tweet_id = 0
 
     ___ postTweet(self, userId, tweetId):
         """
@@ -27,16 +27,16 @@ class Twitter(object):
         :type tweetId: int
         :rtype: void
         """
-        __ userId n.. __ self.following:
-            self.following[userId] = set([userId])
-        self.tweet_id += 1
-        __ userId __ self.latestTweets:
-            prevTweet = self.latestTweets[userId]
-            tweet = TweetObj(self.tweet_id, userId, tweetId, prevTweet)
-            self.latestTweets[userId] = tweet
+        __ userId n.. __ following:
+            following[userId] = set([userId])
+        tweet_id += 1
+        __ userId __ latestTweets:
+            prevTweet = latestTweets[userId]
+            tweet = TweetObj(tweet_id, userId, tweetId, prevTweet)
+            latestTweets[userId] = tweet
         ____:
-            tweet = TweetObj(self.tweet_id, userId, tweetId, N..)
-            self.latestTweets[userId] = tweet
+            tweet = TweetObj(tweet_id, userId, tweetId, N..)
+            latestTweets[userId] = tweet
 
     ___ getNewsFeed(self, userId):
         """
@@ -48,13 +48,13 @@ class Twitter(object):
         """
         _______ heapq
         heap    # list
-        __ userId n.. __ self.following:
+        __ userId n.. __ following:
             r.. []
-        followingUsers = self.following[userId]
+        followingUsers = following[userId]
         followingUsers.add(userId)
         ___ following_id __ followingUsers:
-            __ following_id __ self.latestTweets:
-                latestTweet = self.latestTweets[following_id]
+            __ following_id __ latestTweets:
+                latestTweet = latestTweets[following_id]
                 tweetTuple = (-latestTweet.tweet_id, latestTweet.tweetContext, latestTweet.prevTweet)
                 heapq.heappush(heap, tweetTuple)
         result    # list
@@ -76,10 +76,10 @@ class Twitter(object):
         :type followeeId: int
         :rtype: void
         """
-        __ followerId __ self.following:
-            self.following[followerId].add(followeeId)
+        __ followerId __ following:
+            following[followerId].add(followeeId)
         ____:
-            self.following[followerId] = set([followeeId])
+            following[followerId] = set([followeeId])
 
     ___ unfollow(self, followerId, followeeId):
         """
@@ -88,8 +88,8 @@ class Twitter(object):
         :type followeeId: int
         :rtype: void
         """
-        __ followerId __ self.following a.. followerId != followeeId:
-            self.following[followerId].discard(followeeId)
+        __ followerId __ following a.. followerId != followeeId:
+            following[followerId].discard(followeeId)
 
 # Your Twitter object will be instantiated and called as such:
 # obj = Twitter()

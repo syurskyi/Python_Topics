@@ -5,7 +5,7 @@ simple DFS
 __author__ = 'Daniel'
 
 
-class Solution(object):
+c_ Solution(object):
     ___ countComponents(self, n, edges):
         """
         :type n: int
@@ -17,17 +17,17 @@ class Solution(object):
             V[e[0]].a..(e[1])
             V[e[1]].a..(e[0])
 
-        visited = [False ___ _ __ xrange(n)]
+        visited = [F.. ___ _ __ xrange(n)]
         cnt = 0
         ___ v __ xrange(n):
             __ n.. visited[v]:
                 cnt += 1
-                self.dfs(V, v, visited)
+                dfs(V, v, visited)
 
         r.. cnt
 
     ___ dfs(self, V, v, visited):
-        visited[v] = True
+        visited[v] = T..
         ___ nbr __ V[v]:
             __ n.. visited[nbr]:
-                self.dfs(V, nbr, visited)
+                dfs(V, nbr, visited)

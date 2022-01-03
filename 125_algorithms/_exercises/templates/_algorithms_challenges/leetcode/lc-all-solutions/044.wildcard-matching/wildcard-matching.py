@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ isMatch(self, s, p):
     """
     :type s: str
@@ -23,7 +23,7 @@ class Solution(object):
         lastMatchPos += 1
         j = lastStarPos + 1
       ____:
-        r.. False
+        r.. F..
     w.... j < lenP a.. p[j] __ "*":
       j += 1
     r.. j __ lenP

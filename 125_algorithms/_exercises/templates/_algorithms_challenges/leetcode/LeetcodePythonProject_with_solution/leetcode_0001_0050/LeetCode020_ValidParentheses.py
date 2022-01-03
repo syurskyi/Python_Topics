@@ -3,7 +3,7 @@ Created on Nov 6, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ isValid(self, s):
         """
         :type s: str
@@ -19,16 +19,16 @@ class Solution(object):
                     (c __ '}' a.. stack a.. stack[-1]__'{'):
                     stack.pop()
                 ____:
-                    r.. False
+                    r.. F..
         r.. stack __ []
     
-    ___ test(self):
+    ___ test
         testCases = [
             '(){}[]',
         ]
         ___ s __ testCases:
             print('s: %s' % s)
-            result = self.isValid(s)
+            result = isValid(s)
             print('result: %s' % result)
             print('-='*30+'-')
 

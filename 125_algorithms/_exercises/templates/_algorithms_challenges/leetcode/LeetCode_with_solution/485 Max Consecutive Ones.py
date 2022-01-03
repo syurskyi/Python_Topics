@@ -4,7 +4,7 @@ Given a binary array, find the maximum number of consecutive 1s in this array.
 """
 
 
-class Solution:
+c_ Solution:
     ___ findMaxConsecutiveOnes(self, nums):
         """
         two pointers

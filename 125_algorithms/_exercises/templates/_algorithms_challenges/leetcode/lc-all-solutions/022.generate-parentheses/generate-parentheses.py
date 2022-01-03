@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ generateParenthesis(self, n):
     """
     :type n: int
@@ -8,7 +8,7 @@ class Solution(object):
     ___ dfs(left, path, res, n):
       __ l..(path) __ 2 * n:
         __ left __ 0:
-          res.a..("".join(path))
+          res.a..("".j..(path))
         r..
 
       __ left < n:

@@ -3,7 +3,7 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-class Solution(object):
+c_ Solution(object):
     ___ numDistinctIslands(self, grid):
         """
         :type grid: List[List[int]]
@@ -15,7 +15,7 @@ class Solution(object):
             ___ j __ r..(n):
                 __ grid[i][j] __ 1:
                     island = set()
-                    self.dfs(i, j, i, j, m, n, grid, island)
+                    dfs(i, j, i, j, m, n, grid, island)
                     islands.add(tuple(island))
         r.. l..(islands)
     
@@ -25,9 +25,9 @@ class Solution(object):
         grid[i][j] = -1
         island.add((i-i0, j-j0))
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
-            self.dfs(i0, j0, x, y, m, n, grid, island)
+            dfs(i0, j0, x, y, m, n, grid, island)
     
-    ___ test(self):
+    ___ test
         testCases = [
 #             [
 #                 '11000',
@@ -81,7 +81,7 @@ class Solution(object):
             print('grid:')
 #             print('\n'.join(grid))
             grid = [[int(c) ___ c __ row ] ___ row __ grid]
-            result = self.numDistinctIslands(grid)
+            result = numDistinctIslands(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

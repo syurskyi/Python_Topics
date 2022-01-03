@@ -1,10 +1,10 @@
 ____ d__ _______ d__, t..
 _______ os
-_______ re
+_______ __
 _______ urllib.request
 
 # getting the data
-COURSE_TIMES = os.path.join(
+COURSE_TIMES = os.path.j..(
     os.getenv("TMP", "/tmp"),
     'course_timings'
 )
@@ -28,14 +28,14 @@ ___ get_all_timestamps():
     with open(COURSE_TIMES) as f:
         file = f.readlines()
 
-    r = re.compile(r'\(\d+:\d+\)')
+    r = __.c..(r'\(\d+:\d+\)')
 
     l    # list
     ___ t __ file:
-        t = re.search(r, t)
+        t = __.s..(r, t)
         __ t != N..
             t = t.group()
-            l.a..(re.sub(r'[\(\)]','', t))
+            l.a..(__.sub(r'[\(\)]','', t))
 
     r.. l
 

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param: nums: An integer array sorted in ascending order
     @param: target: An integer

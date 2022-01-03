@@ -16,7 +16,7 @@ and the time complexity becomes `O(n * 2k)` => `O(nk)`
 """
 
 
-class Solution:
+c_ Solution:
     """
     @param: C: n x k cost matrix
     @return: an integer, the minimum cost to paint all houses

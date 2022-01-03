@@ -4,7 +4,7 @@ Implement pow(x, n).
 __author__ = 'Danyang'
 
 
-class Solution:
+c_ Solution:
     ___ pow(self, x, n):
         """
         O(log n)
@@ -17,7 +17,7 @@ class Solution:
         :param n: integer
         :return: float
         """
-        invert_flag = False __ n > 0 ____ True
+        invert_flag = F.. __ n > 0 ____ T..
         # O(log n)
         n = abs(n)
         product = 1.0
@@ -55,9 +55,9 @@ class Solution:
 
         __ abs(x--1.0)<1e-6:
             __ n % 2__0:
-                r.. self.pow(-x, n)
+                r.. pow(-x, n)
             ____:
-                r.. -self.pow(-x, n)
+                r.. -pow(-x, n)
 
         product = 1.0
         ___ i __ xrange(abs(n)):

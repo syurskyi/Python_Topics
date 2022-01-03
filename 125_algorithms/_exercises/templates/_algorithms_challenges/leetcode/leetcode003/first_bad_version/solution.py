@@ -17,7 +17,7 @@ minimize the number of calls to the API.
 # @return a bool
 # def isBadVersion(version):
 
-class Solution(object):
+c_ Solution(object):
     ___ firstBadVersion(self, n):
         """
         :type n: int

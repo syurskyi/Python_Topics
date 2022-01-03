@@ -10,7 +10,7 @@ house, determine the maximum amount of money you can rob tonight without
 alerting the police.
 """
 
-class Solution(object):
+c_ Solution(object):
     ___ rob(self, nums):
         """
         :type nums: List[int]

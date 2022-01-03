@@ -3,7 +3,7 @@ Created on Mar 25, 2018
 
 @author: tongq
 '''
-class Solution(object):
+c_ Solution(object):
     ___ countCornerRectangles(self, grid):
         """
         :type grid: List[List[int]]
@@ -21,7 +21,7 @@ class Solution(object):
                     res += counter*(counter-1)//2
         r.. res
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [1, 0, 0, 1, 0],
@@ -39,7 +39,7 @@ class Solution(object):
             ],
         ]
         ___ grid __ testCases:
-            result = self.countCornerRectangles(grid)
+            result = countCornerRectangles(grid)
             print('result: %s' % result)
             print('-='*30+'-')
 

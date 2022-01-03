@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findPoisonedDuration(self, timeSeries, duration):
     """
     :type timeSeries: List[int]

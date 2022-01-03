@@ -1,9 +1,9 @@
 ____ lintcode _______ ListNode
 
 
-class Stack:
-    ___ __init__(self):
-        self.dummy = self.tail = ListNode(-1)
+c_ Stack:
+    ___ - ):
+        dummy = tail = ListNode(-1)
 
     """
     @param: x: An integer
@@ -11,30 +11,30 @@ class Stack:
     """
     ___ push(self, x):
         node = ListNode(x)
-        node.pre = self.tail
-        self.tail.nxt = node
-        self.tail = node
+        node.pre = tail
+        tail.nxt = node
+        tail = node
 
     """
     @return: nothing
     """
-    ___ pop(self):
-        __ self.isEmpty():
+    ___ pop
+        __ isEmpty():
             r..
-        node = self.tail
-        self.tail = node.pre
-        self.tail.nxt = node.pre = N..
+        node = tail
+        tail = node.pre
+        tail.nxt = node.pre = N..
 
     """
     @return: An integer
     """
-    ___ top(self):
-        __ self.isEmpty():
+    ___ top
+        __ isEmpty():
             r..
-        r.. self.tail.val
+        r.. tail.val
 
     """
     @return: True if the stack is empty
     """
-    ___ isEmpty(self):
-        r.. self.dummy __ self.tail
+    ___ isEmpty
+        r.. dummy __ tail

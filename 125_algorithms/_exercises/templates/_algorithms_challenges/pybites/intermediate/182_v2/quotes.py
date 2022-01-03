@@ -1,5 +1,5 @@
 ____ bs4 _______ BeautifulSoup
-_______ re
+_______ __
 # source: https://www.virgin.com/richard-branson/my-top-10-quotes-living-life-better
 HTML = """<!DOCTYPE html>
 <head>
@@ -30,17 +30,17 @@ ___ extract_quotes(html: s.. = HTML) -> d..:
     """See instructions in the Bite description"""
     soup = BeautifulSoup(html)
 
-    author_to_quotes = {}
+    author_to_quotes    # dict
 
     quotes = soup.find_all('p')
     ___ quote __ quotes:
-        quote_text = quote.getText(strip=True)
-        match = re.search(r'"(.+)"',quote_text)
+        quote_text = quote.getText(strip=T..)
+        match = __.s..(r'"(.+)"',quote_text)
         __ match:
             a = match.group(1)
         ____:
             continue
-        author = re.search(r'-\s?(.+)$',quote_text).group(1)
+        author = __.s..(r'-\s?(.+)$',quote_text).group(1)
 
 
         author_to_quotes[author] = a

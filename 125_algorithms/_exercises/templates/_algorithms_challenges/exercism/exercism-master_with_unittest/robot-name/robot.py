@@ -2,20 +2,20 @@ _______ string
 _______ random
 
 
-class Robot:
+c_ Robot:
 
-    ___ __init__(self):
-        self.name = self.generate_name()
+    ___ - ):
+        name = generate_name()
 
-    ___ reset(self):
-        self.name = self.generate_name()
+    ___ reset
+        name = generate_name()
 
-    ___ generate_name(self):
+    ___ generate_name
         random.seed()
-        r.. self.random_prefix(2) + self.random_suffix(3)
+        r.. random_prefix(2) + random_suffix(3)
 
     ___ random_prefix(self, n):
-        r.. ''.join(random.sample(string.ascii_uppercase, n))
+        r.. ''.j..(random.sample(string.ascii_uppercase, n))
 
     ___ random_suffix(self, n):
-        r.. ''.join(random.sample(string.digits, n))
+        r.. ''.j..(random.sample(string.digits, n))

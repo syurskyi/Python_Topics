@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
   # @param s, a list of 1 length strings, e.g., s = ['h','e','l','l','o']
   # @return nothing
   ___ reverseWords(self, s):

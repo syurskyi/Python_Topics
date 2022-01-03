@@ -1,13 +1,13 @@
-class Record():
-    ___ __init__(self, record_id, parent_id):
-        self.record_id = record_id
-        self.parent_id = parent_id
+c_ Record():
+    ___ - , record_id, parent_id):
+        record_id = record_id
+        parent_id = parent_id
 
 
-class Node():
-    ___ __init__(self, node_id):
-        self.node_id = node_id
-        self.children    # list
+c_ Node():
+    ___ - , node_id):
+        node_id = node_id
+        children    # list
 
 
 ___ BuildTree(records):
@@ -20,7 +20,7 @@ ___ BuildTree(records):
         __ ordered_id[0] != 0:
             raise ValueError
     trees    # list
-    parent = {}
+    parent    # dict
     ___ i __ r..(l..(ordered_id)):
         ___ j __ records:
             __ ordered_id[i] __ j.record_id:

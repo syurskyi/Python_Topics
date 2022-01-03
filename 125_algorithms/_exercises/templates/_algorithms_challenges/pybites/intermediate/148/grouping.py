@@ -23,7 +23,7 @@ ___ group_cars_by_manufacturer(cars):
        No return here, just print to the console. We use pytest > capfd to
        validate your output :)
     """
-    cars_grouped = {}
+    cars_grouped    # dict
     ___ model, make __ cars:
         __ model n.. __ cars_grouped:
             cars_grouped[model] = [make]

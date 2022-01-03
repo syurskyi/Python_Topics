@@ -22,15 +22,15 @@ After calling your function, the tree should look like:
 """
 __author__ = 'Danyang'
 # Definition for a  binary tree node
-class TreeNode:
-    ___ __init__(self, x):
-        self.val = x
-        self.left = N..
-        self.right = N..
-        self.next = N..
+c_ TreeNode:
+    ___ - , x):
+        val = x
+        left = N..
+        right = N..
+        next = N..
 
 
-class Solution:
+c_ Solution:
     ___ connect(self, root):
         """
         bfs

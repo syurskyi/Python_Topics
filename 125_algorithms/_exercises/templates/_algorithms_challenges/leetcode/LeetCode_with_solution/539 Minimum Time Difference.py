@@ -12,18 +12,18 @@ The input time is legal and ranges from 00:00 to 23:59.
 ____ typing _______ List
 
 
-class Solution:
+c_ Solution:
     ___ findMinDifference(self, timePoints: List[s..]) -> int:
         """
         sort and minus
         """
         ret = float("inf")
-        A = l..(s..(map(self.minutes, timePoints)))
+        A = l..(s..(map(minutes, timePoints)))
         n = l..(A)
         ___ i __ r..(n - 1):
-            ret = m..(ret, self.diff(A[i+1], A[i]))
+            ret = m..(ret, diff(A[i+1], A[i]))
 
-        ret = m..(ret, self.diff(A[n-1], A[0]))
+        ret = m..(ret, diff(A[n-1], A[0]))
         r.. ret
 
     ___ diff(self, b, a):

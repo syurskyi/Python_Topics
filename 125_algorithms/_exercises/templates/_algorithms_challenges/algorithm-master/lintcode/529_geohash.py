@@ -3,7 +3,7 @@ main concept is in `../module/geohash.py`
 """
 
 
-class GeoHash:
+c_ GeoHash:
     base32    # list
 
     """
@@ -13,12 +13,12 @@ class GeoHash:
     @return: a base32 string
     """
     ___ encode(self, latitude, longitude, precision=5):
-        __ n.. self.base32:
-            self.base32 = self.get_base32_list()
+        __ n.. base32:
+            base32 = get_base32_list()
 
         times = (precision * 5) // 2 + 1
-        lat_codes = self._loc_to_bins( latitude, times,  -90,  90)
-        lng_codes = self._loc_to_bins(longitude, times, -180, 180)
+        lat_codes = _loc_to_bins( latitude, times,  -90,  90)
+        lng_codes = _loc_to_bins(longitude, times, -180, 180)
 
         bin_codes    # list
         ___ i __ r..(times):
@@ -27,10 +27,10 @@ class GeoHash:
         hash_codes    # list
         hash_code = ''
         ___ i __ r..(0, l..(bin_codes), 5):
-            hash_code = int(''.join(bin_codes[i : i + 5]), 2)
-            hash_codes.a..(self.base32[hash_code])
+            hash_code = int(''.j..(bin_codes[i : i + 5]), 2)
+            hash_codes.a..(base32[hash_code])
 
-        r.. ''.join(hash_codes[:precision])
+        r.. ''.j..(hash_codes[:precision])
 
     ___ _loc_to_bins(self, location, times, left, right):
         mid = 0
@@ -47,7 +47,7 @@ class GeoHash:
 
         r.. bins
 
-    ___ get_base32_list(self):
+    ___ get_base32_list
         base32_list = [s..(i) ___ i __ r..(10)]
 
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))

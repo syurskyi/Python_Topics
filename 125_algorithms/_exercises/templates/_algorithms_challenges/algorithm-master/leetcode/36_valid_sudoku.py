@@ -1,11 +1,11 @@
-class Solution:
+c_ Solution:
     ___ isValidSudoku(self, board):
         """
         :type board: List[List[str]]
         :rtype: bool
         """
         __ n.. board o. n.. board[0] o. l..(board) != l..(board[0]):
-            r.. False
+            r.. F..
 
         n = l..(board)
         EMPTY = '.'
@@ -18,9 +18,9 @@ class Solution:
                 __ board[x][y] __ EMPTY:
                     continue
                 __ board[x][y] n.. __ CANDS:
-                    r.. False
+                    r.. F..
                 __ board[x][y] __ used:
-                    r.. False
+                    r.. F..
                 used.add(board[x][y])
 
         ___ y __ r..(n):
@@ -30,7 +30,7 @@ class Solution:
                 __ board[x][y] __ EMPTY:
                     continue
                 __ board[x][y] __ used:
-                    r.. False
+                    r.. F..
                 used.add(board[x][y])
 
         ___ i __ r..(3):
@@ -42,7 +42,7 @@ class Solution:
                         __ board[x][y] __ EMPTY:
                             continue
                         __ board[x][y] __ used:
-                            r.. False
+                            r.. F..
                         used.add(board[x][y])
 
-        r.. True
+        r.. T..

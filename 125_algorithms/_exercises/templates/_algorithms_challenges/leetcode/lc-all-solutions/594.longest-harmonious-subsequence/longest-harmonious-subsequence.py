@@ -1,4 +1,4 @@
-class Solution(object):
+c_ Solution(object):
   ___ findLHS(self, nums):
     """
     :type nums: List[int]

@@ -1,4 +1,4 @@
-class Solution:
+c_ Solution:
     """
     @param logs: Sequence of processes
     @param queries: Sequence of queries
@@ -18,7 +18,7 @@ class Solution:
         time.s..()
 
         cnt = 0
-        time2cnt = {}
+        time2cnt    # dict
 
         ___ t, status __ time:
             __ status __ 0:

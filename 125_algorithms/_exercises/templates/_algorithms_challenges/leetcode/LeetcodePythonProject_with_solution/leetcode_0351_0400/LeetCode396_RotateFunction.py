@@ -4,7 +4,7 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ maxRotateFunction(self, A):
         nums = A
         sumVal = 0
@@ -18,13 +18,13 @@ class Solution(object):
             maxVal = max(maxVal, sample)
         r.. maxVal
 
-    ___ test(self):
+    ___ test
         testCases = [
             [4, 3, 2, 6],
         ]
         ___ nums __ testCases:
             print('nums: %s' % (nums))
-            result = self.maxRotateFunction(nums)
+            result = maxRotateFunction(nums)
             print('result: %s' % result)
             print('-='*20+'-')
 

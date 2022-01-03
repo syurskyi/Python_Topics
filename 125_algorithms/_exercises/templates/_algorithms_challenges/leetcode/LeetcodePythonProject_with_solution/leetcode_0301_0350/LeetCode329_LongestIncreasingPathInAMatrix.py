@@ -4,7 +4,7 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-class Solution(object):
+c_ Solution(object):
     ___ longestIncreasingPath(self, matrix):
         __ n.. matrix: r.. 0
         m, n = l..(matrix), l..(matrix[0])
@@ -12,7 +12,7 @@ class Solution(object):
         maxPath = 0
         ___ i __ r..(m):
             ___ j __ r..(n):
-                maxPath = max(maxPath, self.helper(matrix, i, j, mem))
+                maxPath = max(maxPath, helper(matrix, i, j, mem))
         r.. maxPath
     
     ___ helper(self, matrix, i, j, mem):
@@ -21,11 +21,11 @@ class Solution(object):
             r.. mem[i][j]
         ___ x, y __ ((i+1, j), (i-1, j), (i, j+1), (i, j-1)):
             __ 0 <= x < m a.. 0 <= y < n a.. matrix[x][y] > matrix[i][j]:
-                mem[i][j] = max(mem[i][j], self.helper(matrix, x, y, mem))
+                mem[i][j] = max(mem[i][j], helper(matrix, x, y, mem))
         mem[i][j] += 1
         r.. mem[i][j]
     
-    ___ test(self):
+    ___ test
         testCases = [
             [
                 [9,9,4],
@@ -39,7 +39,7 @@ class Solution(object):
             ],
         ]
         ___ matrix __ testCases:
-            result = self.longestIncreasingPath(matrix)
+            result = longestIncreasingPath(matrix)
             print('result: %s' % (result))
             print('-='*20+'-')
 

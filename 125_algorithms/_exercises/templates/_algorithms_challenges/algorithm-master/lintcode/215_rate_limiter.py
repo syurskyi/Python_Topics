@@ -1,7 +1,7 @@
 _______ collections
 
 
-class Solution:
+c_ Solution:
     """
     maintain a list to record the timestamps for every event
     and if a query coming => we need ensure
@@ -13,14 +13,14 @@ class Solution:
     4. count the child between res of (3) to the end of list
     5. if cnt >= freq => is limited
     """
-    ___ __init__(self):
-        self.times = {
+    ___ - ):
+        times = {
             's': 1,
             'm': 60,
             'h': 3600,
             'd': 86400,
         }
-        self.logs = collections.defaultdict(l..)
+        logs = collections.defaultdict(l..)
 
     ___ isRatelimited(self, timestamp, event, rate, increment):
         """
@@ -31,20 +31,20 @@ class Solution:
         :rtype: bool
         """
         __ '/' n.. __ rate:
-            r.. False
+            r.. F..
 
         freq, t = rate.s..('/')
         freq = int(freq)
-        begin_time = timestamp - self.times.get(t, 1) + 1
-        is_limited = self.check_limited(event, freq, begin_time)
+        begin_time = timestamp - times.get(t, 1) + 1
+        is_limited = check_limited(event, freq, begin_time)
 
         __ increment a.. n.. is_limited:
-            self.logs[event].a..(timestamp)
+            logs[event].a..(timestamp)
 
         r.. is_limited
 
     ___ check_limited(self, event, freq, begin_time):
-        logs = self.logs[event]
+        logs = logs[event]
 
         __ n.. logs o. logs[-1] < begin_time:
             # if freq is 0 => is limited

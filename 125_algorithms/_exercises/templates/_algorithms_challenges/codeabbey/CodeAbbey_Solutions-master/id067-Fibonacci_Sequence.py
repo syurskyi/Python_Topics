@@ -9,5 +9,5 @@ ___ fibonacci_search(amount):
                         b = c
                         count += 1
                 answer.a..(s..(count))
-        print(' '.join(answer))
+        print(' '.j..(answer))
 fibonacci_search(input())

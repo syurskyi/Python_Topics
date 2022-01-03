@@ -48,7 +48,7 @@ query_glass and query_row will be in the range of [0, 99].
 ____ collections _______ defaultdict
 
 
-class Solution:
+c_ Solution:
     ___ champagneTower(self, poured: int, query_row: int, query_glass: int) -> float:
         """
         Simulation

@@ -5,13 +5,13 @@ Created on Apr 9, 2017
 '''
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    ___ __init__(self, x, left=N.., right_ N..
-        self.val = x
-        self.left = left
-        self.right = right
+c_ TreeNode(object):
+    ___ - , x, left=N.., right_ N..
+        val = x
+        left = left
+        right = right
 
-class Solution(object):
+c_ Solution(object):
     ___ sumOfLeftLeaves(self, root):
         __ n.. root: r.. 0
         sumVal = 0
@@ -19,9 +19,9 @@ class Solution(object):
             __ n.. root.left.left a.. n.. root.left.right:
                 sumVal += root.left.val
             ____:
-                sumVal += self.sumOfLeftLeaves(root.left)
+                sumVal += sumOfLeftLeaves(root.left)
         __ root.right:
-            sumVal += self.sumOfLeftLeaves(root.right)
+            sumVal += sumOfLeftLeaves(root.right)
         r.. sumVal
     
     

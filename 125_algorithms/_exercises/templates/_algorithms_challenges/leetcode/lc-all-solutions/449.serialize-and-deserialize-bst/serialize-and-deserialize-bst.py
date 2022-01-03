@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-class Codec:
+c_ Codec:
   ___ serialize(self, root):
     """Encodes a tree to a single string.
     
@@ -24,7 +24,7 @@ class Codec:
         stack.a..((1, node.right))
         stack.a..((1, node.left))
         stack.a..((0, node))
-    r.. ",".join(ans)
+    r.. ",".j..(ans)
 
   ___ deserialize(self, data):
     """Decodes your encoded data to tree.
@@ -37,15 +37,15 @@ class Codec:
     vals = data.s..(",")
     preOrder = map(int, vals)
     inOrder = s..(preOrder)
-    self.preIdx = 0
-    d = {}
+    preIdx = 0
+    d    # dict
     ___ i __ r..(0, l..(inOrder)):
       d[inOrder[i]] = i
 
     ___ helper(preOrder, start, end, inOrder, d):
       __ start <= end:
-        rootVal = preOrder[self.preIdx]
-        self.preIdx += 1
+        rootVal = preOrder[preIdx]
+        preIdx += 1
         root = TreeNode(rootVal)
         midPos = d[rootVal]
         root.left = helper(preOrder, start, midPos - 1, inOrder, d)
