@@ -73,6 +73,6 @@ c_ Game:
         r..
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     game = Game()
     game()

@@ -43,6 +43,6 @@ c_ Solution(object):
 ___ main
     Solution().test()
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()
 

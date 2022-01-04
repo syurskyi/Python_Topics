@@ -1,5 +1,5 @@
 _______ csv
-____ collections _______ defaultdict, n..
+____ c.. _______ defaultdict, n..
 _______ os
 ____ urllib.request _______ urlretrieve
 

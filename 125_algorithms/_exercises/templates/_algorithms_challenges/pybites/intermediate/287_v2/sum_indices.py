@@ -1,5 +1,5 @@
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 ___ sum_indices(items: List[s..]) __ i..:

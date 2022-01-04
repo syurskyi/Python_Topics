@@ -1,4 +1,4 @@
-____ collections _______ n.., Counter
+____ c.. _______ n.., Counter
 _______ __
 ____ typing _______ NamedTuple
 

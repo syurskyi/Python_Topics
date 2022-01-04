@@ -56,7 +56,7 @@ c_ MagicDictionary(object):
                 r.. T..
         r.. F..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     magicDict = MagicDictionary()
     magicDict.buildDict(['hello', 'leetcode', 'hallo'])
     print(magicDict.s..('hello'))

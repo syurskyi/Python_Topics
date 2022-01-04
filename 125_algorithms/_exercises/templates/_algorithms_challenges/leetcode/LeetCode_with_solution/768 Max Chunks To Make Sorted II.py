@@ -32,7 +32,7 @@ arr will have length in range [1, 2000].
 arr[i] will be an integer in range [0, 10**8].
 """
 ____ typing _______ List
-____ collections _______ defaultdict, deque
+____ c.. _______ defaultdict, d..
 
 
 c_ Solution:
@@ -43,7 +43,7 @@ c_ Solution:
         For the smae element, the right ones should get larget assigned index
         """
         A = s..(arr)
-        hm = defaultdict(deque)
+        hm = defaultdict(d..)
         ___ i, e __ e..(A):
             hm[e].a..(i)
 

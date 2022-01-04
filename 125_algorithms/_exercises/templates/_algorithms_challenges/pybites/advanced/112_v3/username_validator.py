@@ -1,5 +1,5 @@
 # nice snippet: https://gist.github.com/tonybruess/9405134
-____ collections _______ n..
+____ c.. _______ n..
 _______ __
 
 social_platforms = """Twitter

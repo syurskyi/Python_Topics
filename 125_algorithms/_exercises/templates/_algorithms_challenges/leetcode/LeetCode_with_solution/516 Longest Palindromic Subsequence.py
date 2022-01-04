@@ -18,7 +18,7 @@ Output:
 2
 One possible longest palindromic subsequence is "bb".
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

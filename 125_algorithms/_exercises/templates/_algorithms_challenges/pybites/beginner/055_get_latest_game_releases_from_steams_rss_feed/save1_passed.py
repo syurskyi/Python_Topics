@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 _______ feedparser
 
 # cached version to have predictable results for testing

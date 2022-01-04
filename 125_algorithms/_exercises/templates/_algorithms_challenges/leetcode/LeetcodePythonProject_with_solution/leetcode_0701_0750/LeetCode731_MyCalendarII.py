@@ -23,5 +23,5 @@ c_ MyCalendarTwo(object):
         calendar.a..((start, end))
         r.. T..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     p..

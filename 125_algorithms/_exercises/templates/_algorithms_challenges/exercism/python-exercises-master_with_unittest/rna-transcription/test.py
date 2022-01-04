@@ -31,5 +31,5 @@ c_ DNATests(unittest.TestCase):
         assertMultiLineEqual(to_rna('ACGTXXXCTTAA'), '')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

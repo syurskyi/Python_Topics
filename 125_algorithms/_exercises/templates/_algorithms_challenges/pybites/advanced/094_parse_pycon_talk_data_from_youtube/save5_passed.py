@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 _______ d__
 
 # CANNOT USE ISODATE MODULE IN PYBITES

@@ -30,7 +30,7 @@ Note:
 1 <= people[i] <= limit <= 30000
 """
 ____ typing _______ List
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -39,7 +39,7 @@ c_ Solution:
         sort + gready
         """
         ret = 0
-        q = deque(s..(people))
+        q = d..(s..(people))
         w.... q:
             tail = q.pop()
             ret += 1

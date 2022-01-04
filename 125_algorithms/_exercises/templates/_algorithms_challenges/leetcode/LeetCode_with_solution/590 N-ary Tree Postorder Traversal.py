@@ -19,7 +19,7 @@ c_ Node:
 
 
 ____ typing _______ List
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -30,7 +30,7 @@ c_ Solution:
         __ n.. root:
             r.. []
 
-        ret = deque()
+        ret = d..()
         stk = [root]
         visited = set()
         w.... stk:

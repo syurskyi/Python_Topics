@@ -65,5 +65,5 @@ c_ LinkedListTest(unittest.TestCase):
         assertEqual(next(iterator), 20)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

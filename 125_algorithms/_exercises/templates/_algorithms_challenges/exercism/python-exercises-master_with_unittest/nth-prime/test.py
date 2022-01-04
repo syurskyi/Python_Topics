@@ -29,5 +29,5 @@ c_ NthPrimeTests(unittest.TestCase):
                          [nth_prime(n) ___ n __ r..(1, 21)])
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

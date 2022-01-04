@@ -87,7 +87,7 @@ c_ LRUCache(object):
                         head = node
                         tail = node
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     cache = LRUCache(2)
     cache.set(1, 1)
     cache.set(2, 2)

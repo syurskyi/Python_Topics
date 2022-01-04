@@ -1,6 +1,6 @@
 _______ os
 ____ pathlib _______ Path
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ urllib.request _______ urlretrieve
 ____ bs4 _______ BeautifulSoup
 

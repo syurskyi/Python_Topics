@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 
 ___ is_anagram(word1, word2):
     """Receives two words and returns True/False (boolean) if word2 is

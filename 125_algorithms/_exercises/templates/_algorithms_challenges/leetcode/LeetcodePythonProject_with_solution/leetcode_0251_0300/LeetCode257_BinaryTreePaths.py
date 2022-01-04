@@ -37,5 +37,5 @@ c_ Solution:
             result = binaryTreePaths(root)
             print('result: %s' % (result))
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

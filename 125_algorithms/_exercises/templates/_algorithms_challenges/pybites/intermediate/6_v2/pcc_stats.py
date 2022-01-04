@@ -1,4 +1,4 @@
-____ collections _______ Counter, n..
+____ c.. _______ Counter, n..
 _______ os
 _______ urllib.request
 

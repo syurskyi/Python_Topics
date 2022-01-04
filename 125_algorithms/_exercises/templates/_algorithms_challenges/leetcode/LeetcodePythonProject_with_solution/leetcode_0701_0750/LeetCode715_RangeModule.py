@@ -125,7 +125,7 @@ c_ RangeModule_own(object):
                     res.a..(tmpInterval)
         intervals = res
 
-__ __name__ __ '__main__':
+__ _____ __ _____
 #     rangeModule = RangeModule()
 #     rangeModule.addRange(10, 20)
 #     rangeModule.removeRange(14, 16)

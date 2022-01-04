@@ -40,5 +40,5 @@ c_ BinarySearchTests(unittest.TestCase):
         assertRaises(ValueError, binary_search, [], 1)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

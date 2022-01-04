@@ -1,11 +1,11 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 ___ my_queue(n=5):
-    r.. deque(maxlen=n)
+    r.. d..(maxlen=n)
 
  
-__ __name__ __ '__main__':
+__ _____ __ _____
     mq = my_queue()
     ___ i __ r..(10):
         mq.a..(i)

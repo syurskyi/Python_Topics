@@ -28,7 +28,7 @@ Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases
 """
 ____ bisect _______ bisect_left
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

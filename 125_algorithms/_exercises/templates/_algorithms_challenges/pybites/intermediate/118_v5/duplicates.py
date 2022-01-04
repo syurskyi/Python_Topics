@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 ___ get_duplicate_indices(words):

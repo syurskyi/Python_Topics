@@ -8,7 +8,7 @@ Created on Mar 6, 2019
 # You should not implement it, or speculate about its implementation
 # """
 
-_______ collections, i..
+_______ c.., i..
 
 c_ Master(object):
     ___ guess(self, word):
@@ -27,7 +27,7 @@ c_ Solution(object):
         """
         n = 0
         w.... n < 6:
-            count = collections.Counter(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ m..(w1, w2) __ 0)
+            count = c...Counter(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ m..(w1, w2) __ 0)
             guess = m..(wordlist, key=l.... w:count[w])
             n = master.guess(guess)
             wordlist = [w ___ w __ wordlist __ m..(w, guess) __ n]
@@ -46,5 +46,5 @@ c_ Solution(object):
             result = findSecretWord(wordlist, master)
             print('result: %s' % result)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

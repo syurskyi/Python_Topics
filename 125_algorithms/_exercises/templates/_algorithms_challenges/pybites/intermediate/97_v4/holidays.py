@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ os
 ____ urllib.request _______ urlretrieve
 ____ d__ _______ d__

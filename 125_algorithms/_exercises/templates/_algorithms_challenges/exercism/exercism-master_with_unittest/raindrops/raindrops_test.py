@@ -61,5 +61,5 @@ c_ RaindropsTest(unittest.TestCase):
         assertEqual(raindrops(12121), "12121")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

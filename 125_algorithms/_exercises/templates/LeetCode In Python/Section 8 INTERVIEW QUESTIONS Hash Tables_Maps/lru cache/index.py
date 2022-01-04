@@ -1,4 +1,4 @@
-____ co.. ______ deque
+____ co.. ______ d..
 
 
 c_ LRUCache:
@@ -6,7 +6,7 @@ c_ LRUCache:
     ___  -  capacity: __.
         .c _ capacity
         .m _ di.. 
-        .deq _ deque 
+        .deq _ d..
 
     ___ g.. key: __.  __.:
         __ key __ .m:

@@ -10,5 +10,5 @@ c_ ZebraPuzzleTest(unittest.TestCase):
                           "The Japanese keeps the zebra."))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -26,5 +26,5 @@ ___ process_line(line):
     r.. ''
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     make_html_links()

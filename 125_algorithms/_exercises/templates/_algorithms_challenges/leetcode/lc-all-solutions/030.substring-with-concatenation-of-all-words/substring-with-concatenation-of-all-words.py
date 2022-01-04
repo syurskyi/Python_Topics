@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -13,7 +13,7 @@ c_ Solution(object):
     d    # dict
     t    # dict
     ans    # list
-    deq = deque([])
+    deq = d..([])
     wl = l..(words[0])
     fullscore = 0
     ___ word __ words:

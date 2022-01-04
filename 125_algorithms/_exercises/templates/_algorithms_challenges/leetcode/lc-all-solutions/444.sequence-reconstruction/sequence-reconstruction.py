@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution(object):
@@ -9,9 +9,9 @@ c_ Solution(object):
     :rtype: bool
     """
     n = l..(org)
-    graph = collections.defaultdict(l..)
+    graph = c...defaultdict(l..)
     visited    # dict
-    incomings = collections.defaultdict(i..)
+    incomings = c...defaultdict(i..)
     nodes = set()
     ___ seq __ seqs:
       nodes |= set(seq)
@@ -29,7 +29,7 @@ c_ Solution(object):
         __ count __ 2:
           r.. F..
     order    # list
-    visited = collections.defaultdict(i..)
+    visited = c...defaultdict(i..)
     queue = [q ___ q __ incomings __ incomings[q] __ 0]
     w.... l..(queue) __ 1:
       top = queue.pop()

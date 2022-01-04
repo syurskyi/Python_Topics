@@ -38,5 +38,5 @@ c_ PrimeFactorsTest(unittest.TestCase):
         assertEqual([11, 9539, 894119], prime_factors(93819012551))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

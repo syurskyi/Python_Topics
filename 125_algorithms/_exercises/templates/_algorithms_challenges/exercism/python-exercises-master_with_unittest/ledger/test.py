@@ -143,5 +143,5 @@ c_ LedgerTest(unittest.TestCase):
         assertEqual(format_entries(currency, locale, entries), expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 ____ d__ _______ d__
 _______ os
 _______ __
@@ -32,7 +32,7 @@ ___ get_month_most_posts(dates):
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
     posts_yr_mo = [post_date.strftime("%Y-%m") ___ post_date __ dates]
-    posts_frequency = collections.Counter(posts_yr_mo)
+    posts_frequency = c...Counter(posts_yr_mo)
     r.. posts_frequency.most_common()[0][0]
     
 

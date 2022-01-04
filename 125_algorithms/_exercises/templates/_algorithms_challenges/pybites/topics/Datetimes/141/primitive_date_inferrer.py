@@ -1,6 +1,6 @@
 ____ enum _______ Enum
 ____ d__ _______ d__
-____ collections _______ Counter, defaultdict
+____ c.. _______ Counter, defaultdict
 
 
 c_ DateFormat(Enum):

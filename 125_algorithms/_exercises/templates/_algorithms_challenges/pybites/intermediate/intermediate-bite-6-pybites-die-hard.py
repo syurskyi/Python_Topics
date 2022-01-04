@@ -9,7 +9,7 @@ Good luck and have fun!
 
 """Checks community branch dir structure to see who submitted most
    and what challenge is more popular by number of PRs"""
-____ collections _______ Counter, n..
+____ c.. _______ Counter, n..
 _______ os
 _______ urllib.request
 

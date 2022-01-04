@@ -31,7 +31,7 @@ c_ TopVotedCandidate(object):
         r.. arr[i-1][1]
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     candidate = TopVotedCandidate(
         [0,  1, 0, 1, 1],
         [24,29,31,76,81]

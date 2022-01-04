@@ -1,4 +1,4 @@
-____ collections _______ OrderedDict
+____ c.. _______ OrderedDict
 """
 You are given a list of integers. Write code to find the majority and minorty numbers in that list.
 Definition: a majority number is the one appearing most frequently, a minority number appears least frequently.

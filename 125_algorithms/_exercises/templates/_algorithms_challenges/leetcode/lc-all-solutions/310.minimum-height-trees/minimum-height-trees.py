@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -14,7 +14,7 @@ c_ Solution(object):
       r.. []
 
     ___ bfs(graph, start):
-      queue = deque([(start, N..)])
+      queue = d..([(start, N..)])
       level = 0
       maxLevel = -1
       farthest = N..

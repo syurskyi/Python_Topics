@@ -31,6 +31,6 @@ ___ get_most_complex_bites(N=10, stats=stats):
 
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     res = get_most_complex_bites()
     print(res)

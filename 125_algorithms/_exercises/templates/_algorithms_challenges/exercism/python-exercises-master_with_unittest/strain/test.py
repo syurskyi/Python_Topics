@@ -42,5 +42,5 @@ c_ StrainTest(unittest.TestCase):
             keep(inp, s...isalpha) + discard(inp, s...isalpha), out)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

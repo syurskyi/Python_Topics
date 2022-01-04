@@ -1,7 +1,7 @@
-_______ collections
+_______ c..
 
 ___ my_queue(n=5):
-    d = collections.deque('', n)
+    d = c...d..('', n)
     r.. d
 
 mq = my_queue()

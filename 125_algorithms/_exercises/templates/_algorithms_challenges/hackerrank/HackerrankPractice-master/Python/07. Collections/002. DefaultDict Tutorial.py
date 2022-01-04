@@ -2,7 +2,7 @@
 # Score: 20
 
 
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 n, m = map(i.., input().s..())

@@ -12,7 +12,7 @@ The range of numbers in the array is [-1000, 1000] and the range of the integer
 k is [-1e7, 1e7].
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

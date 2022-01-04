@@ -16,7 +16,7 @@ Input: search("hell"), Output: False
 Input: search("leetcoded"), Output: False
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ MagicDictionary:

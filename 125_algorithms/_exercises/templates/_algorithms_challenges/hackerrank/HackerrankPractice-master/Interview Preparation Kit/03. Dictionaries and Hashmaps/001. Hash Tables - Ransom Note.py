@@ -2,7 +2,7 @@
 #  Score: 25
 
 
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 ___ checkMagazine(magazine, note):

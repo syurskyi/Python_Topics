@@ -12,7 +12,7 @@ Note:
 (3) 0 < k ≤ 100, 0 < n ≤ 106, 0 < primes[i] < 1000.
 """
 _______ heapq
-____ collections _______ deque
+____ c.. _______ d..
 _______ sys
 
 __author__ = 'Daniel'
@@ -60,7 +60,7 @@ c_ SolutionHeap(object):
         :rtype: int
         """
         ret = 1
-        h = [QueueWrapper(i, deque([v])) ___ i, v __ e..(primes)]
+        h = [QueueWrapper(i, d..([v])) ___ i, v __ e..(primes)]
         dic = {e.idx: e ___ e __ h}
 
         heapq.heapify(h)

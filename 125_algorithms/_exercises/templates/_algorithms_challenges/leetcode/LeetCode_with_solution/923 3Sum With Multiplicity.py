@@ -32,7 +32,7 @@ Note:
 0 <= target <= 300
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 MOD = 10 ** 9 + 7

@@ -18,10 +18,10 @@ c_ Solution(object):
             hashmap[word[0]].a..(word)
         count = 0
         ___ c __ S:
-            deque = hashmap[c]
-            size = l..(deque)
+            d.. = hashmap[c]
+            size = l..(d..)
             ___ i __ r..(size):
-                word = deque.pop(0)
+                word = d...pop(0)
                 __ l..(word) __ 1:
                     count += 1
                 ____:
@@ -40,5 +40,5 @@ c_ Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

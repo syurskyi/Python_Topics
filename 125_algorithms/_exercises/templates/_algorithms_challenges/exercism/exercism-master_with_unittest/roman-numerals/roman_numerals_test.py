@@ -30,5 +30,5 @@ c_ RomanTest(unittest.TestCase):
             assertEqual(numeral, roman.numeral(arabic))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

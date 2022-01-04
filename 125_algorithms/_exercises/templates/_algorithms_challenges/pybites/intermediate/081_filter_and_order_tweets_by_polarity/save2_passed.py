@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 ____ operator _______ attrgetter
 
 Tweet = n..('Tweet', 'text polarity')

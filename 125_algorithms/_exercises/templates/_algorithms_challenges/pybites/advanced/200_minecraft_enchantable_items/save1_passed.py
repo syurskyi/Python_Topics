@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ dataclasses _______ dataclass, field
 ____ functools _______ total_ordering
 ____ pathlib _______ Path

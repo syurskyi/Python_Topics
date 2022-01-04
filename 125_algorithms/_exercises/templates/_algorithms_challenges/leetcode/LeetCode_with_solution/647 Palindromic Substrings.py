@@ -17,7 +17,7 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 Note:
 The input string length won't exceed 1000.
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

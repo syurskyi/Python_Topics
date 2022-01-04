@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 RESULTS = d..(win=0, draw=1, loss=2)
 

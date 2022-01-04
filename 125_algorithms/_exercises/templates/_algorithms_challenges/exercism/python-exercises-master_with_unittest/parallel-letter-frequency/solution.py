@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-____ collections _______ Counter
+____ c.. _______ Counter
 ____ threading _______ Lock, Thread
 ____ time _______ sleep
 _______ sys

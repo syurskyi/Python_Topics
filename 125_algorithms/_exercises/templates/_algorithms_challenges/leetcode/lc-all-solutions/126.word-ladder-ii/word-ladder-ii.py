@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -22,7 +22,7 @@ c_ Solution(object):
 
     ___ bfs(beginWord, endWord, wordList):
       distance = {beginWord: 0}
-      queue = deque([beginWord])
+      queue = d..([beginWord])
       length = 0
       w.... queue:
         length += 1

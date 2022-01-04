@@ -26,7 +26,7 @@ Note:
 The length of the input is in range of [1, 10000]
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ heapq
 
 

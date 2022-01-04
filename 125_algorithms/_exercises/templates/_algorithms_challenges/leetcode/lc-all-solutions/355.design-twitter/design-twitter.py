@@ -8,8 +8,8 @@ c_ Twitter(object):
     Initialize your data structure here.
     """
     ts = 0
-    tweets = collections.defaultdict(l..)
-    friendship = collections.defaultdict(set)
+    tweets = c...defaultdict(l..)
+    friendship = c...defaultdict(set)
 
   ___ postTweet(self, userId, tweetId):
     """

@@ -38,5 +38,5 @@ c_ DNATest(unittest.TestCase):
         assertEqual(nucleotide_counts(dna), expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

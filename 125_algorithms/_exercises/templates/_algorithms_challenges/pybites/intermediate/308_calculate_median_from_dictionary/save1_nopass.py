@@ -1,4 +1,4 @@
-____ collections _______ OrderedDict
+____ c.. _______ OrderedDict
 ____ statistics _______ median
 
 ___ calc_median_from_dict(d: d..) __ float:

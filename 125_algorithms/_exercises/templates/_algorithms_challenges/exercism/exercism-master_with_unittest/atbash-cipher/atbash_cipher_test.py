@@ -65,5 +65,5 @@ c_ AtbashCipherTest(unittest.TestCase):
             decode(encode("Testing, 1 2 3, testing.")), "testing123testing")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

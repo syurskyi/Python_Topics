@@ -41,7 +41,7 @@ c_ Codec:
         root.right = helper(arr, ind)
         r.. root
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     root = TreeNode(1, TreeNode(2), TreeNode(3, TreeNode(4), TreeNode(5)))
     codec = Codec()
     s = codec.serialize(root)

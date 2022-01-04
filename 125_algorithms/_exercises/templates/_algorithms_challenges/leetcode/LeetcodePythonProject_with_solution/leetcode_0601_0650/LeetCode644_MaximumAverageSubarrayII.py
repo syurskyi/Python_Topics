@@ -10,14 +10,14 @@ c_ Solution(object):
         :type k: int
         :rtype: float
         """
-        _______ collections
+        _______ c..
         n = l..(nums)
         dp = [0]
         ___ num __ nums:
             dp.a..(dp[-1] + num)
         ___ d(x, y):
             r.. (dp[y+1]-dp[x])/float(y+1-x)
-        hull = collections.deque()
+        hull = c...d..()
         ans = float('-inf')
         ___ j __ r..(k-1, n):
             w.... l..(hull) >= 2 a.. d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k):
@@ -80,5 +80,5 @@ c_ Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

@@ -62,5 +62,5 @@ c_ BracketPushTest(unittest.TestCase):
                  "x} &... x^2 \\end{array}\\right)")), T..)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

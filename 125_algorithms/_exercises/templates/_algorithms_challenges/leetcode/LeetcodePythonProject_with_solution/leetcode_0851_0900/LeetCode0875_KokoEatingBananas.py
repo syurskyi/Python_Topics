@@ -42,7 +42,7 @@ c_ Solution(object):
             print('res: %s' % s..(res))
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     _______ math
     print(math.ceil(float(3)/3))
     print(math.ceil(float(4)/3))

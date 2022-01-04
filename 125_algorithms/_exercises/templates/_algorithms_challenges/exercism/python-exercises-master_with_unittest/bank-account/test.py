@@ -116,5 +116,5 @@ c_ BankAccountTest(unittest.TestCase):
         assertEqual(account.get_balance(), 1000)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

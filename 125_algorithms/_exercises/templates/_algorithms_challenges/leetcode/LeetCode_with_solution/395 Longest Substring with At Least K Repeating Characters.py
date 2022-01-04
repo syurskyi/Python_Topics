@@ -21,7 +21,7 @@ Output:
 
 The longest substring is "ababb", as 'a' is repeated 2 times and 'b' is repeated 3 times.
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 __author__ = 'Daniel'
 

@@ -208,5 +208,5 @@ c_ CustomSetTest(unittest.TestCase):
         assertEqual(set1 + set2, expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -15,7 +15,7 @@ c_ HitCounter(object):
         It is possible that several hits arrive roughly at the same time.
         What if the number of hits per second could be very large? Does your design scale?  # use counter
         """
-        q = deque()
+        q = d..()
 
     ___ hit(self, timestamp):
         """

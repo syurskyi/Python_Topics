@@ -38,5 +38,5 @@ c_ TestIsogram(unittest.TestCase):
         assertFalse(is_isogram("Aleph Bot Chap"))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

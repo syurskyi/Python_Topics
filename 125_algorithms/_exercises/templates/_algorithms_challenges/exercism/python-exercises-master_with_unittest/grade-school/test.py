@@ -1,5 +1,5 @@
 _______ unittest
-____ collections _______ Sequence
+____ c.. _______ Sequence
 ____ types _______ GeneratorType
 
 ____ grade_school _______ School
@@ -63,5 +63,5 @@ c_ SchoolTest(unittest.TestCase):
         assertEqual(students, result_list)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

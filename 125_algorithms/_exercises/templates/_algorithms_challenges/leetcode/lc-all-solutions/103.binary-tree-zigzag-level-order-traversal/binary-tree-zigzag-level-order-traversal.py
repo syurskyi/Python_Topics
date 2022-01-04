@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -13,7 +13,7 @@ c_ Solution(object):
     :type root: TreeNode
     :rtype: List[List[int]]
     """
-    stack = deque([root])
+    stack = d..([root])
     ans    # list
     odd = T..
     w.... stack:

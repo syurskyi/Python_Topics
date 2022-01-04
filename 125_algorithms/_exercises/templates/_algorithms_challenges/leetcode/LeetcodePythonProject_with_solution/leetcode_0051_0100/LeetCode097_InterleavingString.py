@@ -43,5 +43,5 @@ c_ Solution(object):
             print('result: %s' % (result))
             print('-='*15+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

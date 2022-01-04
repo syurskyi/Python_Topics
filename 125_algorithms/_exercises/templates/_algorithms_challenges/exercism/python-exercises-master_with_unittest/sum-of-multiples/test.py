@@ -52,5 +52,5 @@ c_ SumOfMultiplesTest(unittest.TestCase):
         assertEqual(sum_of_multiples(10000, []), 0)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

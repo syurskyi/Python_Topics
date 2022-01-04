@@ -1,6 +1,6 @@
 _______ csv
 _______ os
-____ collections _______ defaultdict, n..
+____ c.. _______ defaultdict, n..
 ____ urllib.request _______ urlretrieve
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'

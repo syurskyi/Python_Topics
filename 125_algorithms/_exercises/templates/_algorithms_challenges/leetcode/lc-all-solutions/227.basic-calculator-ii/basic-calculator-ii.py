@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -8,7 +8,7 @@ c_ Solution(object):
     :rtype: int
     """
     i = 0
-    queue = deque([])
+    queue = d..([])
     w.... i < l..(s):
       __ s[i] __ " ":
         i += 1

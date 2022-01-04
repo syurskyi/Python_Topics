@@ -64,5 +64,5 @@ c_ Solution(object):
             print('resultBS: %s' % (resultBS))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

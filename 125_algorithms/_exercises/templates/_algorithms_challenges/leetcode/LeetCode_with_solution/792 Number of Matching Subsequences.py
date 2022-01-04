@@ -18,7 +18,7 @@ The length of words will be in the range of [1, 5000].
 The length of words[i] will be in the range of [1, 50].
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

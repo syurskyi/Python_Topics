@@ -2,11 +2,11 @@
 # Score: 50
 
 
-____ collections _______ deque
+____ c.. _______ d..
 
 
 ___ i __ r..(i..(input())):
-    _, n = input(), deque(map(i.., input().s..()))
+    _, n = input(), d..(map(i.., input().s..()))
     ans = T..
 
     ___ j __ r..(l..(n) - 1):

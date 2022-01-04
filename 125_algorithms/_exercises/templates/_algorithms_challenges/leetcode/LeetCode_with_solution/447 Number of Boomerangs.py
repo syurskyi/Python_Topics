@@ -7,7 +7,7 @@ distance between i and k (the order of the tuple matters).
 Find the number of boomerangs. You may assume that n will be at most 500 and
 coordinates of points are all in the range [-10000, 10000] (inclusive).
 """
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 names = 'bob julian tim martin rod sara joyce nick beverly kevin'.s.. 
 ids = r..(l..(names))

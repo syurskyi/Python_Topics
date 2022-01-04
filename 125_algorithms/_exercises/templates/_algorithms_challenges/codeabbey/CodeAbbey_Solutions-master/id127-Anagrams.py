@@ -1,5 +1,5 @@
 # Python 3.4
-____ collections _______ Counter
+____ c.. _______ Counter
 
 ___ check_anagram
     amount = i..(input()) # Amount of words to check (CodeAbbey requirement.)

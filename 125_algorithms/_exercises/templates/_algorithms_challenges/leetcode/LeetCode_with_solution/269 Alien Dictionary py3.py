@@ -39,14 +39,14 @@ Output: ""
 Explanation: The order is invalid, so return "".
 """
 ____ typing _______ List
-____ collections _______ defaultdict, deque
+____ c.. _______ defaultdict, d..
 
 
 c_ Solution(object):
     ___ alienOrder(self, words: List[s..]) __ s..:
         G = construct_graph(words)
         visited = defaultdict(i..)  # 0 not visited, 1 visiting, 2 visted
-        ret = deque()
+        ret = d..()
         ___ u __ G.k..:
             __ visited[u] __ 0:
                 __ n.. topo_dfs(G, u, visited, ret):

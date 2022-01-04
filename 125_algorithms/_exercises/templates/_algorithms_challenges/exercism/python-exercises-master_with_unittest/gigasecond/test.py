@@ -41,5 +41,5 @@ c_ GigasecondTest(unittest.TestCase):
         assertEqual(add_gigasecond(your_birthday), your_gigasecond)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

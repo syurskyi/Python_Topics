@@ -1,5 +1,5 @@
 _______ os
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ urllib.request
 _______ ___.e__.E__ __ ET
 

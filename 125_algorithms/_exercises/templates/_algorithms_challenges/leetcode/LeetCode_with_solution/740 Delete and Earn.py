@@ -33,7 +33,7 @@ The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

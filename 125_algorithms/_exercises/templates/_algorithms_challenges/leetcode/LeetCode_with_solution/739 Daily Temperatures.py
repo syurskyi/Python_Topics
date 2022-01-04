@@ -11,7 +11,7 @@ Note: The length of temperatures will be in the range [1, 30000]. Each
 temperature will be an integer in the range [30, 100].
 """
 ____ typing _______ List
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -25,7 +25,7 @@ c_ Solution:
         scanning from right
         [73, 74, 75, 71, 69, 72, 76, 73]
         """
-        ret = deque()
+        ret = d..()
         stk    # list
         ___ i __ r..(l..(T) - 1, -1 , -1):
             w.... stk a.. T[stk[-1]] <= T[i]:  # disregard smaller ones

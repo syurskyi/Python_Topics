@@ -11,7 +11,7 @@ c_ Solution(object):
         """
         l1, o1 = 0, 1
         l2, o2 = 1, 1
-        deque    # list
+        d..    # list
         i = 0
         w.... i < l..(s):
             c = s[i]
@@ -22,18 +22,18 @@ c_ Solution(object):
                     num = num*10+ord(s[i])-ord('0')
                 l2 = l2*num __ o2__1 ____ l2//num
             ____ c __ '(':
-                deque.insert(0, l1)
-                deque.insert(0, o1)
-                deque.insert(0, l2)
-                deque.insert(0, o2)
+                d...insert(0, l1)
+                d...insert(0, o1)
+                d...insert(0, l2)
+                d...insert(0, o2)
                 l1, o1 = 0, 1
                 l2, o2 = 1, 1
             ____ c __ ')':
                 num = l1+o1*l2
-                o2 = deque.pop(0)
-                l2 = deque.pop(0)
-                o1 = deque.pop(0)
-                l1 = deque.pop(0)
+                o2 = d...pop(0)
+                l2 = d...pop(0)
+                o1 = d...pop(0)
+                l1 = d...pop(0)
                 l2 = l2*num __ o2 __ 1 ____ l2//num
             ____ c __ '*' o. c __ '/':
                 o2 = 1 __ c__'*' ____ -1
@@ -57,5 +57,5 @@ c_ Solution(object):
             print('result: %s' % result)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

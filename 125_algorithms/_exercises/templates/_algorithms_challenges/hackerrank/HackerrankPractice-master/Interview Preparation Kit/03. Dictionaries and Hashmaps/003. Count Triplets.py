@@ -2,7 +2,7 @@
 #  Score: 25
 
 
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 ___ count_triplets(arr, r):

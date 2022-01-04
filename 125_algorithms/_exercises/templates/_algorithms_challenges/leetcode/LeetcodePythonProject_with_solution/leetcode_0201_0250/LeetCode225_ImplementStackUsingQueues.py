@@ -37,7 +37,7 @@ c_ Solution(object):
     ___ empty
         r.. n.. queue1 a.. n.. queue2
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     stack = Solution()
     stack.push(123)
     stack.push('a')

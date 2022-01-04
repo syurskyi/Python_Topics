@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution(object):
@@ -26,7 +26,7 @@ c_ Solution(object):
     res    # list
     ss = ""
     mid = ""
-    counter = collections.Counter(s)
+    counter = c...Counter(s)
     oddChars = filter(l.... x: counter[x] % 2 __ 1, counter)
     __ l..(s) % 2 __ 1:
       __ l..(oddChars) __ 1:

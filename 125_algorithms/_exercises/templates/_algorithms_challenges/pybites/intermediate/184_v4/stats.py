@@ -1,7 +1,7 @@
 ____ csv _______ DictReader
 _______ os
 ____ urllib.request _______ urlretrieve
-____ collections _______ Counter
+____ c.. _______ Counter
 
 TMP = os.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'

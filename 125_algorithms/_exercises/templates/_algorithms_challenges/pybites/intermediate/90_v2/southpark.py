@@ -1,4 +1,4 @@
-____ collections _______ Counter, defaultdict
+____ c.. _______ Counter, defaultdict
 ____ io _______ StringIO
 _______ pandas __ pd
 _______ csv

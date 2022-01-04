@@ -7,5 +7,5 @@ c_ MyCalendarThree(object):
     # Checkout Java Solution!
     p..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     p..

@@ -34,17 +34,17 @@ c_ NestedInteger(object):
 
 c_ NestedIterator(object):
     ___ - , nestedList):
-        deque = nestedList
+        d.. = nestedList
         result    # list
-        w.... deque:
-            ni = deque.pop(0)
+        w.... d..:
+            ni = d...pop(0)
             __ ni.isInteger
                 result.a..(ni.getInteger())
             ____:
                 l = ni.getList()
                 l.reverse()
                 ___ ni0 __ l:
-                    deque.insert(0, ni0)
+                    d...insert(0, ni0)
         result = result
 
     ___ next

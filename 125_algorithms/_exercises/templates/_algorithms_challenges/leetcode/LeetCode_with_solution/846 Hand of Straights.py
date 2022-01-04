@@ -28,7 +28,7 @@ Note:
 1 <= W <= hand.length
 """
 ____ typing _______ List
-____ collections _______ Counter, deque
+____ c.. _______ Counter, d..
 _______ heapq
 
 
@@ -40,7 +40,7 @@ c_ Solution:
         prev = previous value
         prev_cnt = previous value count
         """
-        q = deque()
+        q = d..()
         counter = Counter(A)
         prev = 0
         prev_cnt = 0

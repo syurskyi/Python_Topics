@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 
 ___ freq_digit(num: i..) __ i..:
     d.. = Counter(s..(num))

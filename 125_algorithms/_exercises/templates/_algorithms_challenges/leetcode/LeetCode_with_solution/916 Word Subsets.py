@@ -43,7 +43,7 @@ A[i] and B[i] consist only of lowercase letters.
 All words in A[i] are unique: there isn't i != j with A[i] == A[j].
 """
 ____ typing _______ List
-____ collections _______ Counter, defaultdict
+____ c.. _______ Counter, defaultdict
 
 
 c_ Solution:

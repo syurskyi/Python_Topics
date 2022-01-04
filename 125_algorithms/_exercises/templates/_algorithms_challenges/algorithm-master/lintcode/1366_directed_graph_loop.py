@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -12,7 +12,7 @@ c_ Solution:
             r.. F..
 
         n = l..(start)
-        nxt = collections.defaultdict(set)
+        nxt = c...defaultdict(set)
         visited = set()
         rec_stack = set()
 

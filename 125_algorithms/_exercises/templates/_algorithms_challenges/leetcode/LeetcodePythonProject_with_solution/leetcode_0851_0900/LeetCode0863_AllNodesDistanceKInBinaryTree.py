@@ -48,7 +48,7 @@ c_ Solution(object):
         dfs(root.left, target, k, length+1, res, hashmap)
         dfs(root.right, target, k, length+1, res, hashmap)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     root = TreeNode(0)
     root.left = TreeNode(1)
     root.left.left = TreeNode(3)

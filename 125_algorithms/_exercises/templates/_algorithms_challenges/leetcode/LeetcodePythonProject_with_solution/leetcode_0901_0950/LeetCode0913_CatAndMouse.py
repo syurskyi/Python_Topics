@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 c_ Solution(object):
     ___ catMouseGame(self, graph):
@@ -9,14 +9,14 @@ c_ Solution(object):
         N = l..(graph)
 
         DRAW, MOUSE, CAT = 0, 1, 2
-        color = collections.defaultdict(i..)
+        color = c...defaultdict(i..)
         degree    # dict
         ___ m __ r..(N):
             ___ c __ r..(N):
                 degree[m, c, 1] = l..(graph[m])
                 degree[m, c, 2] = l..(graph[c]) - (0 __ graph[c])
 
-        queue = collections.deque([])
+        queue = c...d..([])
         ___ i __ r..(N):
             ___ t __ r..(1, 3):
                 color[0, i, t] = MOUSE
@@ -60,5 +60,5 @@ c_ Solution(object):
             print('-='*30+'-')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

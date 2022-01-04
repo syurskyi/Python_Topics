@@ -1,4 +1,4 @@
-____ collections _______ defaultdict, Counter
+____ c.. _______ defaultdict, Counter
 ____ csv _______ DictReader
 _______ os
 ____ urllib.request _______ urlretrieve

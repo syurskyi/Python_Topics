@@ -33,7 +33,7 @@ The number of bricks in each row is in range [1,10,000]. The height of wall is
 in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000.
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

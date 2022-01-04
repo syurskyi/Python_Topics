@@ -67,5 +67,5 @@ c_ SayTest(unittest.TestCase):
                          say(987654321123))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

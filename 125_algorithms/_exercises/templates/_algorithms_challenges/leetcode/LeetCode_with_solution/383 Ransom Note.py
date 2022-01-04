@@ -11,7 +11,7 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 __author__ = 'Daniel'
 

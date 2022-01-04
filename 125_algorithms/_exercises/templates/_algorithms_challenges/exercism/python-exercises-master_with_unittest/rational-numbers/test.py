@@ -128,5 +128,5 @@ c_ RationalNumbersTest(unittest.TestCase):
         assertEqual(Rational(13, 13), Rational(1, 1))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -72,5 +72,5 @@ c_ ZipperTest(unittest.TestCase):
                          zipper.right().to_tree())
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

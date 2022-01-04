@@ -51,5 +51,5 @@ ___ add_entry(data):
 # print("__file__ " + __file__)
 # print("__name__ " + __name__)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

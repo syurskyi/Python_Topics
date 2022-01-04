@@ -44,5 +44,5 @@ c_ RotationalCipher(unittest.TestCase):
             "Gur dhvpx oebja sbk whzcf bire gur ynml qbt.")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

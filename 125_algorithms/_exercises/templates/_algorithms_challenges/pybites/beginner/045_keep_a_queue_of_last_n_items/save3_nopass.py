@@ -1,9 +1,9 @@
-_______ collections
+_______ c..
 
 
 ___ my_queue(n=5):
     to_print    # list
-    mq = collections.deque(maxlen=n)
+    mq = c...d..(maxlen=n)
     ___ i __ r..(n):
         mq.a..(i)
         print((i, l..(mq)))

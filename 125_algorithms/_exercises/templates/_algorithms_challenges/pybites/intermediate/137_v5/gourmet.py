@@ -5,7 +5,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
 ____ i.. _______ product, groupby
-____ collections _______ Counter, n..
+____ c.. _______ Counter, n..
 _______ operator
 
 CHEESES = [

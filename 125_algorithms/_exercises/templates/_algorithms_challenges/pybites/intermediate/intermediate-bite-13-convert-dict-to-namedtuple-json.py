@@ -4,8 +4,8 @@ Write a second function to convert the resulting namedtuple to json.
 Here you probably need to use 2 of the _ methods of namedtuple :)
 """
 
-____ collections _______ n..
-____ collections _______ OrderedDict
+____ c.. _______ n..
+____ c.. _______ OrderedDict
 ____ d__ _______ d__
 _______ json
 

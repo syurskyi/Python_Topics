@@ -10,6 +10,6 @@ ___ cached_fib(n):
         r.. (cached_fib(n - 1) + cached_fib(n - 2))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ___ x __ r..(11):
         print(f'fib({x}) = {cached_fib(x)}')

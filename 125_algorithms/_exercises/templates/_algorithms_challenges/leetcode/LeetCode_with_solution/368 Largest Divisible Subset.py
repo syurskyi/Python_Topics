@@ -15,7 +15,7 @@ nums: [1,2,4,8]
 
 Result: [1,2,4,8]
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -51,7 +51,7 @@ c_ Solution(object):
             __ v > max_v:
                 max_i, max_v = k, v
 
-        ret = deque()
+        ret = d..()
         cur = max_i
         ret.appendleft(A[cur])
         w.... pi[cur] != cur:

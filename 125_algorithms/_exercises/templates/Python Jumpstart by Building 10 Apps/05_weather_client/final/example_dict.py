@@ -42,5 +42,5 @@ ___ main
     print(w.get('forecast').get('temp'))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

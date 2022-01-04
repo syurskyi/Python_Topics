@@ -117,5 +117,5 @@ ___ announce(item, msg):
     r.. item
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

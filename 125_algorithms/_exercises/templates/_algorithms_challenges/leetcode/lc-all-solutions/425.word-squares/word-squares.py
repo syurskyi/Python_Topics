@@ -18,7 +18,7 @@ c_ Solution(object):
     __ n.. words:
       r.. []
 
-    prefix = collections.defaultdict(l..)
+    prefix = c...defaultdict(l..)
     ___ word __ words:
       ___ i __ r..(0, l..(word)):
         prefix[word[:i]].a..(word)

@@ -5,7 +5,7 @@ c_ Solution(object):
     :rtype: int
     """
     ans = 0
-    dp = [collections.defaultdict(i..) ___ _ __ A]
+    dp = [c...defaultdict(i..) ___ _ __ A]
     ___ i __ r..(l..(A)):
       ___ j __ r..(i):
         diff = A[i] - A[j]

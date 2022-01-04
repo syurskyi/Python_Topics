@@ -103,5 +103,5 @@ c_ OcrTest(unittest.TestCase):
         assertRaises(ValueError, grid, '123a')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

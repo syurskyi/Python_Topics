@@ -20,7 +20,7 @@ Given word = "SEE", return true.
 Given word = "ABCB", return false.
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]

@@ -22,5 +22,5 @@ c_ LeapTest(unittest.TestCase):
         assertIs(is_leap_year(1800), F..)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

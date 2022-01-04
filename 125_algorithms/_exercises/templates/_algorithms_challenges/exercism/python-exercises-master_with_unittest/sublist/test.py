@@ -131,5 +131,5 @@ c_ SublistTest(unittest.TestCase):
         assertEqual(check_lists(multiples_of_15, multiples_of_3), UNEQUAL)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

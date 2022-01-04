@@ -89,5 +89,5 @@ c_ WordTest(unittest.TestCase):
         assertEqual(c.. lines), 60)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

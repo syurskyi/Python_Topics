@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ MovingAverage(object):
@@ -10,7 +10,7 @@ c_ MovingAverage(object):
     """
     windowSize = size
     windowSum = 0.0
-    data = deque([])
+    data = d..([])
 
   ___ next(self, val):
     """

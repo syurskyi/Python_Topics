@@ -18,13 +18,13 @@ def test_rotate():
     assert rotate(string, -15) == expected
 
 """
-_______ collections
+_______ c..
 
 ___ rotate(s__, n):
     """Rotate characters in a string. Expects string and n (int) for
        number of characters to move.
     """
-    d = collections.deque(s__)
+    d = c...d..(s__)
     d.rotate(-n)
     result = ''.j..(d)
     print(result)

@@ -51,6 +51,6 @@ ___ tic_tac_toe(games):
             __ turn __ l..(moves) - 1:
                 answer.a..('0') # Tie game
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     tic_tac_toe(input())
     print(' '.j..(answer))

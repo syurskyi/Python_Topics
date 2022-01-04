@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 _______ __
 
 ____ bs4 _______ BeautifulSoup

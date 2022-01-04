@@ -1,5 +1,5 @@
 _______ csv
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ requests
 
 CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'

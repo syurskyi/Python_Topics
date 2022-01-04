@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -15,7 +15,7 @@ c_ Solution(object):
     k = k + 1
     k = m..(k, l..(nums))
 
-    window = deque([])
+    window = d..([])
     d = set()
     ___ i __ r..(0, k):
       __ nums[i] __ d:

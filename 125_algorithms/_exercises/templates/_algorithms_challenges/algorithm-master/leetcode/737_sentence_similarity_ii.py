@@ -66,7 +66,7 @@ c_ Solution:
         r.. nodes[a]
 
 
-_______ collections
+_______ c..
 
 
 c_ Solution2:
@@ -83,7 +83,7 @@ c_ Solution2:
         __ l..(words1) != l..(words2):
             r.. F..
 
-        simils = collections.defaultdict(set)
+        simils = c...defaultdict(set)
 
         ___ a, b __ pairs:
             simils[a].add(b)

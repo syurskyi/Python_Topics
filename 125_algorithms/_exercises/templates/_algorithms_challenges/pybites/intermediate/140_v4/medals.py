@@ -17,5 +17,5 @@ ___ athletes_most_medals(data: s.. = data) __ pd.Series:
             .set_index('Athlete').squeeze(axis=1)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     print(athletes_most_medals())

@@ -11,7 +11,7 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 A solution is ["cats and dog", "cat sand dog"].
 """
 __author__ = 'Danyang'
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -57,7 +57,7 @@ c_ Solution:
             r.. []
 
         result    # list
-        build_result(dp, l..(s), deque(), result)
+        build_result(dp, l..(s), d..(), result)
         r.. result
 
 

@@ -70,5 +70,5 @@ c_ RobotTests(unittest.TestCase):
         assertEqual(NORTH, robot.bearing)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

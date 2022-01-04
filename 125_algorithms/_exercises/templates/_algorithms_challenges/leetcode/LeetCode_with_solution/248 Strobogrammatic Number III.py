@@ -3,7 +3,7 @@ Premium Question
 Generation
 https://leetcode.com/problems/strobogrammatic-number-iii/
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -28,7 +28,7 @@ c_ Solution(object):
     # below methods from strobogrammatic number ii
     ___ strobogrammatic(self, n):
         ret    # list
-        build(n, deque(), ret)
+        build(n, d..(), ret)
         r.. ret
 
     ___ build(self, n, cur, ret):

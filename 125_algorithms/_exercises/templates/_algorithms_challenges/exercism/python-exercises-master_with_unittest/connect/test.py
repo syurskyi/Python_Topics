@@ -114,5 +114,5 @@ c_ ConnectTest(unittest.TestCase):
                              % (testcase["description"], expected, got))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

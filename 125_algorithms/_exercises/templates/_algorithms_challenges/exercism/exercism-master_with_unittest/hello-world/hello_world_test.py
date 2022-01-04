@@ -10,5 +10,5 @@ c_ HelloWorldTest(unittest.TestCase):
         assertEqual(hello_world.hello(), 'Hello, World!')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

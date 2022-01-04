@@ -1,4 +1,4 @@
-____ collections _______ OrderedDict
+____ c.. _______ OrderedDict
 ____ functools _______ reduce
 
 # NUMERALS = OrderedDict(((1000, 'M'), (500, 'D'), (100, 'C'),

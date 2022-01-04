@@ -11,7 +11,7 @@ c_ Solution(object):
     """
     n += 1
     ans = 0
-    d = collections.Counter(tasks)
+    d = c...Counter(tasks)
     heap = [-c ___ c __ d.v..
     heapq.heapify(heap)
     w.... heap:
@@ -36,7 +36,7 @@ c_ Solution(object):
   # and it won't cause any conflicts with requirement since even most frequent can be settle
   # finally, return max(# of task, total counted number)
   ___ leastInterval(self, tasks, n):
-    d = collections.Counter(tasks)
+    d = c...Counter(tasks)
     counts = d.v..
     longest = max(counts)
     ans = (longest - 1) * (n + 1)

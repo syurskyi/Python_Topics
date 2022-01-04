@@ -34,7 +34,7 @@ c_ Solution:
         r.. i
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     data = 'abcdferrdsjfklsdjfdsr'
     n = l..(data)
     i = 0

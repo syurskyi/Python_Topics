@@ -110,5 +110,5 @@ c_ DominoesTest(unittest.TestCase):
         assertIsNone(output_chain, msg)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

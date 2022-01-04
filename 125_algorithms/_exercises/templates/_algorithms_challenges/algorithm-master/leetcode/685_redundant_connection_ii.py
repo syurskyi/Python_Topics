@@ -11,7 +11,7 @@ REF: https://leetcode.com/problems/redundant-connection-ii/discuss/108070/Python
 """
 
 
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -21,8 +21,8 @@ c_ Solution:
         :rtype: List[int]
         """
         ans = edge = N..  # `edge` is the last edge in a loop
-        adj = collections.defaultdict(set)
-        uf = collections.defaultdict(i..)
+        adj = c...defaultdict(set)
+        uf = c...defaultdict(i..)
         has_parent = set()
 
         ___ u, v __ edges:

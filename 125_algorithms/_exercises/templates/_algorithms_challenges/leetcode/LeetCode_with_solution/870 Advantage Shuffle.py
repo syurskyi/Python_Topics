@@ -22,7 +22,7 @@ Note:
 0 <= B[i] <= 10^9
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

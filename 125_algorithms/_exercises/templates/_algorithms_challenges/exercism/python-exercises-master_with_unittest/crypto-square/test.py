@@ -25,5 +25,5 @@ c_ CryptoSquareTest(unittest.TestCase):
         assertEqual(encode(msg), ciph)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

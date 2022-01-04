@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 ____ d__ _______ date
 
 _______ feedparser
@@ -76,5 +76,5 @@ ___ main
         print(f'\n{l..(matches)} entr{"y" __ l..(matches) __ 1 ____ "ies"} matched')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

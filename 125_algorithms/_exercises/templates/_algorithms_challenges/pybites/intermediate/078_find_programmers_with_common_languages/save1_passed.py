@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 
 ___ common_languages(programmers):
     """Receive a dict of keys -> names and values -> a sequence of

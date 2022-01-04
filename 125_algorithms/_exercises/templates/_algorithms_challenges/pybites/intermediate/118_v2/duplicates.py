@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ___ get_duplicate_indices(words):
     """Given a list of words, loop through the words and check for each
        word if it occurs more than once.

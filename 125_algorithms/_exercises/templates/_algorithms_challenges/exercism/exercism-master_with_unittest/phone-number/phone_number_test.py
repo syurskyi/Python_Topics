@@ -37,5 +37,5 @@ c_ PhoneTest(unittest.TestCase):
         assertEqual("(123) 456-7890", number.pretty())
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

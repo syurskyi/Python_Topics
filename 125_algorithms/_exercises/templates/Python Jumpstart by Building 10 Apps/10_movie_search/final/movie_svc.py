@@ -1,7 +1,7 @@
-_______ collections
+_______ c..
 _______ requests
 
-MovieResult  collections.n..(
+MovieResult  c...n..(
     'MovieResult',
     "imdb_code,title,duration,director,year,rating,imdb_score,keywords,genres")
 

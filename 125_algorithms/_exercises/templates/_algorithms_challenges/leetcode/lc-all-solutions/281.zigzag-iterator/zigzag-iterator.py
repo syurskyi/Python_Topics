@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ ZigzagIterator(object):
@@ -9,7 +9,7 @@ c_ ZigzagIterator(object):
     :type v1: List[int]
     :type v2: List[int]
     """
-    iters = deque(map(i.., [v1, v2]))
+    iters = d..(map(i.., [v1, v2]))
     total = s..(map(l.., [v1, v2]))
 
   ___ next

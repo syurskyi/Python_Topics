@@ -4,7 +4,7 @@ c_ Solution(object):
     :type paths: List[str]
     :rtype: List[List[str]]
     """
-    d = collections.defaultdict(l..)
+    d = c...defaultdict(l..)
     ___ path __ paths:
       raw = path.s..(" ")
       dirPath = raw[0]

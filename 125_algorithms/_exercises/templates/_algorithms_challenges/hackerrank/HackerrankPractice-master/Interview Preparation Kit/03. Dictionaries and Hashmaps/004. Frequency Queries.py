@@ -2,7 +2,7 @@
 #  Score: 40
 
 
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 arr = defaultdict(i..)

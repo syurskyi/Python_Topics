@@ -43,5 +43,5 @@ c_ Solution(object):
         print('\n'.j..([s..(l) ___ l __ matrix]))
         print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -7,7 +7,7 @@ c_ Solution(object):
     :type matrix: List[List[int]]
     :rtype: List[List[int]]
     """
-    queue = deque([])
+    queue = d..([])
     directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
     ___ i __ r..(l..(matrix)):

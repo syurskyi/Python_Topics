@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -16,11 +16,11 @@ c_ Solution:
         :type c: int
         :rtype: float
         """
-        dp = collections.defaultdict(i..)
+        dp = c...defaultdict(i..)
         dp[r, c] = 1.0
 
         ___ _ __ r..(k):
-            nxt = collections.defaultdict(i..)
+            nxt = c...defaultdict(i..)
 
             ___ x __ r..(n):
                 ___ y __ r..(n):

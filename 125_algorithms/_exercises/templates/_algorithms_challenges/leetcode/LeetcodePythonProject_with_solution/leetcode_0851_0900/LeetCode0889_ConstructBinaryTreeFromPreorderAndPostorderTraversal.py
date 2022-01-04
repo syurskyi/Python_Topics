@@ -57,6 +57,6 @@ c_ Solution(object):
             node = constructFromPrePost(pre, post)
             print(node)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()
 

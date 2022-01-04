@@ -50,5 +50,5 @@ c_ TransformTest(unittest.TestCase):
         assertEqual(expected, etl.transform(old))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

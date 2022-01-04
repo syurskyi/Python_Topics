@@ -2,7 +2,7 @@ _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 ____ bs4 _______ BeautifulSoup
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 # import the countries xml file
 tmp = Path(os.getenv("TMP", "/tmp"))

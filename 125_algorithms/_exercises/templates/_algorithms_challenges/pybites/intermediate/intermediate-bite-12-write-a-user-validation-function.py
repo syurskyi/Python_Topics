@@ -10,7 +10,7 @@ If one of the conditions is not True raise an exception you define yourself: Use
 UserAccessExpired and UserNoPermission respectively. Check out the tests for more detail.
 """
 
-____ collections _______ n..
+____ c.. _______ n..
 
 # https://stackoverflow.com/questions/2970608/what-are-named-tuples-in-python
 User = n..('User', 'name role expired')

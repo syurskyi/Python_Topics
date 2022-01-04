@@ -38,5 +38,5 @@ ___ search_event_loop
     print('exiting...')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

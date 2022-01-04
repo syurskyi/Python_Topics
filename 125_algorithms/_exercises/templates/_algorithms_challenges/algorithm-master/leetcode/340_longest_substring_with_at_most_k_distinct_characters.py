@@ -4,7 +4,7 @@
 """
 
 
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -19,7 +19,7 @@ c_ Solution:
         __ n.. s o. n.. k o. k < 0:
             r.. ans
 
-        freqs = collections.defaultdict(i..)
+        freqs = c...defaultdict(i..)
         i = cnt = 0
 
         ___ j __ r..(l..(s)):

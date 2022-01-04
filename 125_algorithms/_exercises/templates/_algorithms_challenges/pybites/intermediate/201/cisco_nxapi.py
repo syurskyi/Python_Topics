@@ -19,6 +19,6 @@ ___ nxapi_show_version
     r.. version
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     result = nxapi_show_version()
     print(result)

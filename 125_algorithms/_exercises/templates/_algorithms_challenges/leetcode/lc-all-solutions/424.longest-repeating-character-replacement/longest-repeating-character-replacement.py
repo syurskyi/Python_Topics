@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -12,7 +12,7 @@ c_ Solution(object):
     d    # dict
     start = 0
     maxCount = 0
-    window = deque([])
+    window = d..([])
     ___ end __ r..(0, l..(s)):
       d[s[end]] = d.get(s[end], 0) + 1
       maxCount = max(maxCount, d[s[end]])

@@ -30,7 +30,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
         newlist = [w ___ w __ s..(bite_diff, key=bite_diff.get, r.._T..]
         r.. newlist[0:N]
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     res = get_most_complex_bites()
     print(res)
 

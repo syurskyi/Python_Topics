@@ -32,5 +32,5 @@ c_ ArmstrongNumbersTest(unittest.TestCase):
         assertIs(is_armstrong(9926314), F..)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

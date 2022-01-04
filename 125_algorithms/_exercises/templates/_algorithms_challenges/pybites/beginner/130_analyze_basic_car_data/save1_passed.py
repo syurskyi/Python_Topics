@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ requests
 
 CAR_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/cars.json'

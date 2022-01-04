@@ -2,7 +2,7 @@
 Premium Question
 """
 ____ bisect _______ bisect_left
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ sys
 
 __author__ = 'Daniel'

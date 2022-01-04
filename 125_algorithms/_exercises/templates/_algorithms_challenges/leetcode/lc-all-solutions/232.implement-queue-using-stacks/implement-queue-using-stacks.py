@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Queue(object):
@@ -6,8 +6,8 @@ c_ Queue(object):
     """
     initialize your data structure here.
     """
-    stack1 = deque([])
-    stack2 = deque([])
+    stack1 = d..([])
+    stack2 = d..([])
 
   ___ push(self, x):
     """

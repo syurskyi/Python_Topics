@@ -120,5 +120,5 @@ c_ ScaleGeneratorTest(unittest.TestCase):
             Scale('G', 'enigmatic', 'mAMMMmM')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

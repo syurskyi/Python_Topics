@@ -1,4 +1,4 @@
-____ collections _______ OrderedDict
+____ c.. _______ OrderedDict
 
 ____ attr.validators _______ deep_iterable
 

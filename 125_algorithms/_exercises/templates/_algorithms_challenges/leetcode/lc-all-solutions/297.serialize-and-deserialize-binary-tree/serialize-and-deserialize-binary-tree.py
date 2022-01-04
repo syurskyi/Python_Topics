@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Codec:
@@ -16,7 +16,7 @@ c_ Codec:
     :rtype: str
     """
     ret    # list
-    queue = deque([root])
+    queue = d..([root])
     w.... queue:
       top = queue.popleft()
       __ n.. top:
@@ -40,7 +40,7 @@ c_ Codec:
     __ data[0] __ "None":
       r.. N..
     root = TreeNode(i..(data[0]))
-    queue = deque([root])
+    queue = d..([root])
     i = 0
     w.... queue a.. i < l..(data):
       top = queue.popleft()

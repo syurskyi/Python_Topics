@@ -80,5 +80,5 @@ ___ game_loop
         print()
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

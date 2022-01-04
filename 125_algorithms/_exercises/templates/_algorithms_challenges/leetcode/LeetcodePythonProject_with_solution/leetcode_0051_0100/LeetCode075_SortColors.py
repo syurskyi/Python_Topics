@@ -32,5 +32,5 @@ c_ Solution(object):
             print('After sort')
             print('nums: %s' % (nums))
             print('-='*15+'-')
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

@@ -1,5 +1,5 @@
 _______ __
-____ collections _______ Counter
+____ c.. _______ Counter
 ____ dataclasses _______ dataclass, field
 ____ s__ _______ punctuation
 ____ typing _______ List, Set, Tuple

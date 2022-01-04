@@ -23,5 +23,5 @@ ___ spinner(seconds):
         sleep(STATE_TRANSITION_TIME)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     spinner(2)

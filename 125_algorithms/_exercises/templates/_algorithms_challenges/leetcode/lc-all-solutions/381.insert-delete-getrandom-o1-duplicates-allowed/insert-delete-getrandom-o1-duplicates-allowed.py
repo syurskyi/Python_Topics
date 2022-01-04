@@ -3,8 +3,8 @@ c_ RandomizedCollection(object):
     """
     Initialize your data structure here.
     """
-    dOfd = collections.defaultdict(d..)
-    d = collections.defaultdict(l..)
+    dOfd = c...defaultdict(d..)
+    d = c...defaultdict(l..)
     a    # list
 
   ___ insert(self, val):

@@ -1,5 +1,5 @@
 _______ __
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 CHARACTERS = ['Red Riding Hood',
               # we're omitting 'mother' here for simplicity

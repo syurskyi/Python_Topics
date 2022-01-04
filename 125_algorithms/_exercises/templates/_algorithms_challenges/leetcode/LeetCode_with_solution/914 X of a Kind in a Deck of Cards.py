@@ -40,7 +40,7 @@ Note:
 0 <= deck[i] < 10000
 """
 ____ typing _______ List
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

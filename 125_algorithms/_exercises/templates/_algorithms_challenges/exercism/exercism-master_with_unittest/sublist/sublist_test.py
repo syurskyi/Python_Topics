@@ -80,5 +80,5 @@ c_ SublistTest(unittest.TestCase):
         assertEqual(UNEQUAL, check_lists([1, 2, 3], [3, 2, 1]))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

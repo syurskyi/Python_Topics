@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 Member = n..("Member",'name since_days karma_points bitecoin_earned')
 
 

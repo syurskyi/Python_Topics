@@ -48,7 +48,7 @@ c_ MapSum(object):
             node = node.children[c]
         r.. node.s..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     mapSum = MapSum()
     mapSum.insert('aa', 3)
     mapSum.insert('aa', 2)

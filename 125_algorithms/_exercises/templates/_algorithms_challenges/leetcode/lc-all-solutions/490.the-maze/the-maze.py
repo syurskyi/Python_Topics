@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -23,7 +23,7 @@ c_ Solution(object):
           dist += 1
         y.. (i, j)
 
-    queue = deque([tuple(start)])
+    queue = d..([tuple(start)])
     visited = set()
     destination = tuple(destination)
     w.... queue:

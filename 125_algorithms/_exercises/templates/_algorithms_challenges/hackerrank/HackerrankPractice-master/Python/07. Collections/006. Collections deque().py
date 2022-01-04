@@ -2,10 +2,10 @@
 # Score: 20
 
 
-____ collections _______ deque
+____ c.. _______ d..
 
 
-d = deque()
+d = d..()
 ___ _ __ r..(i..(input())):
     line = input().s..
     __ line[0] __ 'append':

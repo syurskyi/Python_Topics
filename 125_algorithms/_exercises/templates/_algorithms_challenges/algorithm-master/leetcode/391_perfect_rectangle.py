@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -12,7 +12,7 @@ c_ Solution:
 
         left = bottom = float('inf')
         right = top = float('-inf')
-        points = collections.defaultdict(i..)
+        points = c...defaultdict(i..)
 
         ___ l, b, r, t __ recs:
             left = m..(left, l)

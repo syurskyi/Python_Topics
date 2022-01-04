@@ -1,7 +1,7 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ os
 ____ urllib.request _______ urlretrieve
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ d__ _______ d__
 
 

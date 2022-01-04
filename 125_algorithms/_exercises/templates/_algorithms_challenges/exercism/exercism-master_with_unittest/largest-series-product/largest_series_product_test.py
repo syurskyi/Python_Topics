@@ -42,5 +42,5 @@ c_ SeriesTest(unittest.TestCase):
             largest_product("012", 4)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -1,7 +1,7 @@
 _______ csv
 _______ os
 ____ urllib.request _______ urlretrieve
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 BATTLE_DATA = os.path.j..('/tmp', 'battle-table.csv')
 __ n.. os.path.isfile(BATTLE_DATA):

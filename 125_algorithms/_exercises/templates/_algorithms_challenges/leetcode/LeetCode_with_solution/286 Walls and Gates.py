@@ -67,11 +67,11 @@ c_ Solution_slow(object):
             level += 1
 
     ___ bfs_deque(self, rooms, x, y):
-        ____ collections _______ deque
+        ____ c.. _______ d..
 
         m = l..(rooms)
         n = l..(rooms[0])
-        q = deque()
+        q = d..()
         q.a..((x, y, 0))
         w.... q:
             i, j, level = q.popleft()

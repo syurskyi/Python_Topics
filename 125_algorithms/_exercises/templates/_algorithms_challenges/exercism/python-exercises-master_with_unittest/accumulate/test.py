@@ -35,5 +35,5 @@ c_ AccumulateTest(unittest.TestCase):
                 inp, l.... x: accumulate(l..('123'), l.... y: x + y)), out)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

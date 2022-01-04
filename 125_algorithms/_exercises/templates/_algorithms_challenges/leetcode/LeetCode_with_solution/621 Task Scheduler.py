@@ -24,7 +24,7 @@ The number of tasks is in the range [1, 10000].
 The integer n is in the range [0, 100].
 """
 ____ typing _______ List
-____ collections _______ deque, defaultdict
+____ c.. _______ d.., defaultdict
 _______ heapq
 
 
@@ -77,7 +77,7 @@ c_ Solution:
             ___ k, v __ counter.i..
         ]
         heapq.heapify(pq)
-        q = deque()  # stores (t, k)
+        q = d..()  # stores (t, k)
         clock = 0
         w.... pq o. q:
             __ q a.. q[0][0] <= clock:

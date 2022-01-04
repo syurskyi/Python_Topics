@@ -46,7 +46,7 @@ Letters in all strings will be chosen from the set {'A', 'B', 'C', 'D', 'E',
 """
 _______ i..
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

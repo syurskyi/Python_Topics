@@ -43,5 +43,5 @@ c_ PalindromesTests(unittest.TestCase):
         assertEqual(set(factors), {101, 101})
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

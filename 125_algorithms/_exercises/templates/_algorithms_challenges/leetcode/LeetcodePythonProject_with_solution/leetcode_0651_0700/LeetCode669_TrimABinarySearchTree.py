@@ -39,5 +39,5 @@ c_ Solution(object):
             newRoot = trimBST(root, l, r)
             print(newRoot)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

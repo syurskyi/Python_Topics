@@ -4,7 +4,7 @@ a  l..(set(a))
 print(a)
 
 #If you want to keep the order, you need OrderedDict
-____ collections _______ OrderedDict
+____ c.. _______ OrderedDict
 a  ["1", 1, "1", 2]
 a  l..(OrderedDict.f..(a))
 print(a)

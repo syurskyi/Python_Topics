@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 ____ functools _______ partial
 
 YACHT = 0

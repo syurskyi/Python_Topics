@@ -65,5 +65,5 @@ c_ SumOfMultiplesTest(unittest.TestCase):
                                           [2, 3, 5, 7, 11]), 39614537)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

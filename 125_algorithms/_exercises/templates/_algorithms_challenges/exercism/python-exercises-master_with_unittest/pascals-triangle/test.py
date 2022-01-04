@@ -34,5 +34,5 @@ c_ PascalsTriangleTest(unittest.TestCase):
         assertEqual(row(7), ans)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

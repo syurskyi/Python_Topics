@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ i..
 
 # fake data from https://www.mockaroo.com

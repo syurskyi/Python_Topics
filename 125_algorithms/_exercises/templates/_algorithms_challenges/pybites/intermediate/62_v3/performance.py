@@ -1,7 +1,7 @@
 ____ functools _______ wraps
 ____ time _______ time
 ____ typing _______ Deque, List, Set, Generator
-____ collections _______ deque
+____ c.. _______ d..
 
 
 ___ timing(f):
@@ -66,7 +66,7 @@ ___ list_inserts(n: i..) __ List[i..]:
 
 @timing
 ___ list_inserts_fast(n: i..) __ Deque[i..]:
-    queue = deque()
+    queue = d..()
     ___ i __ r..(n):
         queue.appendleft(i)
     r.. l..(queue)

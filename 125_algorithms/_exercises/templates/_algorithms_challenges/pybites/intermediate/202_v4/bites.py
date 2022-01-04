@@ -32,6 +32,6 @@ ___ get_most_complex_bites(N=10, stats=stats):
     r.. [_bitenum(b[0]) ___ b __ n_most_comp]
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     res = get_most_complex_bites()
     print(res)

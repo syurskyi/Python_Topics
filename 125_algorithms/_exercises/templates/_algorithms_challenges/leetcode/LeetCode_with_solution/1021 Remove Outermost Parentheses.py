@@ -43,7 +43,7 @@ S.length <= 10000
 S[i] is "(" or ")"
 S is a valid parentheses string
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -76,7 +76,7 @@ c_ Solution:
         """
         ret    # list
         stk    # list
-        cur_q = deque()
+        cur_q = d..()
         ___ e __ S:
             __ e __ "(":
                 stk.a..(e)
@@ -87,7 +87,7 @@ c_ Solution:
                     cur_q.a..(e)
                 ____:
                     ret.extend(cur_q)
-                    cur_q = deque()
+                    cur_q = d..()
 
         r.. "".j..(ret)
 

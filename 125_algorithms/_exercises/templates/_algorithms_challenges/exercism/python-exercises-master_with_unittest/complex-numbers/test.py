@@ -152,5 +152,5 @@ c_ ComplexNumbersTest(unittest.TestCase):
         assertEqual(expected.imaginary, input_number.exp().imaginary)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

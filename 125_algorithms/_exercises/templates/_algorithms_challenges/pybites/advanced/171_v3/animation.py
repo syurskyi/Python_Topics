@@ -20,5 +20,5 @@ ___ spinner(seconds):
             break
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     spinner(2)

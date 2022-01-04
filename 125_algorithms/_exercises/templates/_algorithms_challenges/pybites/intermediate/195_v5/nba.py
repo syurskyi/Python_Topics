@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 _______ csv
 ____ pathlib _______ Path
 _______ sqlite3

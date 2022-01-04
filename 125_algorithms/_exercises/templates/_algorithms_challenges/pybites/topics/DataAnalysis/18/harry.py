@@ -1,6 +1,6 @@
 _______ os
 _______ urllib.request
-____ collections _______ Counter
+____ c.. _______ Counter
 
 # data provided
 tmp = os.getenv("TMP", "/tmp")

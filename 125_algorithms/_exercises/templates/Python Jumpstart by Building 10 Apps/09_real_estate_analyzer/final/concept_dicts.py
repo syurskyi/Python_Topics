@@ -23,9 +23,9 @@ __ 'cat' __ lookup:
 
 # Suppose these came from a data source, e.g. database, web service, etc
 # And we want to randomly access them
-_______ collections
+_______ c..
 
-User  collections.n..('User', 'id, name, email')
+User  c...n..('User', 'id, name, email')
 users  [
     User(1, 'user1', 'user1@talkpython.fm'),
     User(2, 'user2', 'user2@talkpython.fm'),

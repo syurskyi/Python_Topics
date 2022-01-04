@@ -90,7 +90,7 @@ c_ Morse:
         '@': '10111011101011101',
         ' ': '0'}
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     print(Morse.encode('hello world'))
     # print(Morse.encode('EEEEEEEIE'))
     # print(Morse.decode([-2004318070, 536870912]))

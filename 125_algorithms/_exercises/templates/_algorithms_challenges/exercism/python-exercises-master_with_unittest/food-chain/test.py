@@ -107,5 +107,5 @@ c_ FoodChainTest(unittest.TestCase):
         assertEqual(recite(1, 8), expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

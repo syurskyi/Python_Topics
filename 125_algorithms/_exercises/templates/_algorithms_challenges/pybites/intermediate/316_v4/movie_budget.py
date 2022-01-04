@@ -1,6 +1,6 @@
 ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 c_ MovieRented(NamedTuple):
     title: s..

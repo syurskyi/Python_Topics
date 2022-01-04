@@ -48,7 +48,7 @@ TimeMap.set and TimeMap.get functions will be called a total of 120000 times
 combined) per test case.
 """
 _______ bisect
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ TimeMap:

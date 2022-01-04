@@ -69,7 +69,7 @@ c_ RobotTests(unittest.TestCase):
         assertEqual(robot.bearing, NORTH)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     # Sort test methods by order of definition
     # https://stackoverflow.com/a/18499093
     loader = unittest.TestLoader()

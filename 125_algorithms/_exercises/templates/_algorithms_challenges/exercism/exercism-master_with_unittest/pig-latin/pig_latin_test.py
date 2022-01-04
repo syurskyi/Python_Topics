@@ -50,5 +50,5 @@ c_ PigLatinTests(unittest.TestCase):
         assertEqual("xrayay", translate("xray"))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -22,7 +22,7 @@ All the input string will only include lower case letters.
 The returned elements order does not matter.
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

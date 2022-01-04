@@ -44,12 +44,12 @@ Total number of O will be n in the input string.
 ____ typing _______ Callable
 ____ threading _______ Semaphore
 
-____ collections _______ deque
+____ c.. _______ d..
 
 c_ H2O:
     ___ - ):
-        hq = deque()
-        oq = deque()
+        hq = d..()
+        oq = d..()
 
     ___ hydrogen(self, releaseHydrogen: Callable[[], N..]) __ N..
         hq.a..(releaseHydrogen)

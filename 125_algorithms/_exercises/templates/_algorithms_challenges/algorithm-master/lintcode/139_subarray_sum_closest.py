@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 
 Pair = n..('Pair', ['sum', 'index'])
 

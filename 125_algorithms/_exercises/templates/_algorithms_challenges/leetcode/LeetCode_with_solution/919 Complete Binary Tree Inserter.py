@@ -38,7 +38,7 @@ c_ TreeNode:
         right = N..
 
 
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ CBTInserter:
@@ -51,7 +51,7 @@ c_ CBTInserter:
         During insertion, insert the node to the first insertion candidate's
         child. Then, the inserting node is the last in the candidate queue
         """
-        candidates = deque()
+        candidates = d..()
         root = root
         q = [root]  # can also use deque
         w.... q:

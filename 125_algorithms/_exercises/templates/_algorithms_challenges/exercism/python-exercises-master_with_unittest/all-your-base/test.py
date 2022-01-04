@@ -80,5 +80,5 @@ c_ AllYourBaseTests(unittest.TestCase):
             rebase(-2, [1], -7)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

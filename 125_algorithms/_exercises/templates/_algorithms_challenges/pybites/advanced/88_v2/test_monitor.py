@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 ____ d__ _______ date
 ____ unittest.mock _______ patch, MagicMock
 

@@ -28,5 +28,5 @@ c_ CollatzConjectureTests(unittest.TestCase):
         assertEqual(collatz_steps(-15), N..)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

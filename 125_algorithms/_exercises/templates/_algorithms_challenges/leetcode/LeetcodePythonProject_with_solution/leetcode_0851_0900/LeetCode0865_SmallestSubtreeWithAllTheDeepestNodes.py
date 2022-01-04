@@ -78,5 +78,5 @@ c_ Solution(object):
         __ isSubTree(root.left, node) o. isSubTree(root.right, node):
             r.. T..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

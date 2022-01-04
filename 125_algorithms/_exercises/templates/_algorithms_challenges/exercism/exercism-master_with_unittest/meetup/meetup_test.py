@@ -38,5 +38,5 @@ c_ MeetupTest(unittest.TestCase):
                          meetup_day(2012, 2, 'Wednesday', 'last'))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

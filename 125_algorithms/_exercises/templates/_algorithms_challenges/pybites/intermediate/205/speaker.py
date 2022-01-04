@@ -58,7 +58,7 @@ ___ get_percentage_of_female_speakers(first_names):
 
     r.. round((female_counter/l..(first_names)*100), 2)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     names = get_pycon_speaker_first_names()
     perc = get_percentage_of_female_speakers(names)
     print(perc)

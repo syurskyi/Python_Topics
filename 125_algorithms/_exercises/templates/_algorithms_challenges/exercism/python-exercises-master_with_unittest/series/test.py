@@ -45,5 +45,5 @@ c_ SeriesTest(unittest.TestCase):
             slices("01234", 0)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

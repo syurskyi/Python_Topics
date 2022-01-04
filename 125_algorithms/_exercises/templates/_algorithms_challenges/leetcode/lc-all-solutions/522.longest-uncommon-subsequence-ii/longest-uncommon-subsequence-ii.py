@@ -9,7 +9,7 @@ c_ Solution(object):
       r.. max(l..(a), l..(b)) __ a != b ____ -1
 
     ___ isSubsequence(s, t):
-      d = collections.defaultdict(l..)
+      d = c...defaultdict(l..)
       ___ i, c __ e..(t):
         d[c].a..(i)
       start = 0

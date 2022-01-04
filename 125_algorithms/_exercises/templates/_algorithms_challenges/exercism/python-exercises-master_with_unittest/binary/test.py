@@ -44,5 +44,5 @@ c_ BinaryTests(unittest.TestCase):
         assertRaises(ValueError, parse_binary, "nope10")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

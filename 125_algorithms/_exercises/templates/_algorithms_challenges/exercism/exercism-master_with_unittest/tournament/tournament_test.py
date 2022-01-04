@@ -113,5 +113,5 @@ c_ TournamentTest(unittest.TestCase):
         assertEqual(tally(results), table)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

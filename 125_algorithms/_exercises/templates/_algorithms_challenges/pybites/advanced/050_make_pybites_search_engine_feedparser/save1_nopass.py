@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 ____ time _______ mktime
 ____ feedparser _______ parse
 ____ d__ _______ d__
@@ -107,7 +107,7 @@ ___ main
             break
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()
 
 

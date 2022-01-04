@@ -16,7 +16,7 @@ True
 """
 
 
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -30,7 +30,7 @@ c_ Solution:
         __ l..(words1) != l..(words2):
             r.. F..
 
-        simils = collections.defaultdict(set)
+        simils = c...defaultdict(set)
 
         ___ a, b __ pairs:
             simils[a].add(b)

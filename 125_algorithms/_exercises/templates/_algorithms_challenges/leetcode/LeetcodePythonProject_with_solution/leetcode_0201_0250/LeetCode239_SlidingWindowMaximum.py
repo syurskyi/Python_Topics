@@ -12,15 +12,15 @@ c_ Solution(object):
         :rtype: List[int]
         """
         res    # list
-        deque    # list
+        d..    # list
         ___ i, num __ e..(nums):
-            __ deque a.. deque[0] __ i-k:
-                deque.pop(0)
-            w.... deque a.. nums[deque[-1]] < num:
-                deque.pop()
-            deque.a..(i)
+            __ d.. a.. d..[0] __ i-k:
+                d...pop(0)
+            w.... d.. a.. nums[d..[-1]] < num:
+                d...pop()
+            d...a..(i)
             __ i+1>=k:
-                res.a..(nums[deque[0]])
+                res.a..(nums[d..[0]])
         r.. res
     
     ___ test
@@ -33,5 +33,5 @@ c_ Solution(object):
             print('result: %s' % (result))
             print('-='*20+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

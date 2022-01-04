@@ -13,7 +13,7 @@ Keep calm and code in Python! :)
 """
 
 _______ os
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ urllib.request
 _______ __
 

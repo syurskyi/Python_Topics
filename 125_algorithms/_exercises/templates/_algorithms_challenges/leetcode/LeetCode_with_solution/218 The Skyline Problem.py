@@ -31,7 +31,7 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 as such: [...[2 3], [4 5], [12 7], ...]
 """
 __author__ = 'Daniel'
-____ collections _______ defaultdict, n..
+____ c.. _______ defaultdict, n..
 _______ heapq
 
 

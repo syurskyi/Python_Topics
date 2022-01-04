@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -19,8 +19,8 @@ c_ Solution:
         ):
             r.. ans
 
-        nexts = collections.defaultdict(set)
-        evals = collections.defaultdict(float)
+        nexts = c...defaultdict(set)
+        evals = c...defaultdict(float)
 
         ___ i __ r..(l..(equations)):
             a, b = equations[i]

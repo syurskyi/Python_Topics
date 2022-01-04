@@ -25,7 +25,7 @@ Example 3:
 Input: amount = 10, coins = [10]
 Output: 1
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

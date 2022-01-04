@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 c_ Solution:
     ___ containsDuplicate(self, nums: List[i..]) __ bool:

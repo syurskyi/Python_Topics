@@ -32,7 +32,7 @@ Note:
 
 1 <= N <= 10^9
 """
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

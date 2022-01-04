@@ -9,7 +9,7 @@ ___ wc(file_):
     r.. s..(l..(lines.splitlines()))+"\t"+s..(l..(lines.r..("\n", " ").s..()))+"\t"+s..(l..(lines.r..("\n", " ")))+"\t"+s..(file_)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     # make it work from cli like original unix wc
     _______ sys
     output = wc(sys.argv[1])

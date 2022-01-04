@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 ____ i.. _______ cycle, islice
 ____ time _______ sleep
 
@@ -20,7 +20,7 @@ ___ traffic_light
 
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     # print a sample of 10 states if run as standalone program
     ___ state __ islice(traffic_light(), 10):
         print(f'{state.command}! The light is {state.color}')

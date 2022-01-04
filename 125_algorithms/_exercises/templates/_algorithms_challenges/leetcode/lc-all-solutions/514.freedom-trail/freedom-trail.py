@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution(object):
@@ -24,7 +24,7 @@ c_ Solution(object):
       r.. minDist
 
     cache    # dict
-    d = collections.defaultdict(l..)
+    d = c...defaultdict(l..)
     ___ i, c __ e..(ring):
       d[c].a..(i)
     length = l..(ring)

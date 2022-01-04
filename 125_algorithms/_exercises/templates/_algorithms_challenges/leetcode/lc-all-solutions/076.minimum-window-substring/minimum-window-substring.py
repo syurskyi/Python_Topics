@@ -6,10 +6,10 @@ c_ Solution(object):
     :rtype: str
     """
     score = 0
-    wanted = collections.Counter(t)
+    wanted = c...Counter(t)
     start, end = l..(s), 3 * l..(s)
     d    # dict
-    deq = collections.deque([])
+    deq = c...d..([])
     ___ i, c __ e..(s):
       __ c __ wanted:
         deq.a..(i)

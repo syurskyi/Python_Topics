@@ -7,7 +7,7 @@ c_ Solution(object):
     """
     __ k < 2:
       r.. s
-    d = collections.Counter(s)
+    d = c...Counter(s)
     heap = [(-d[key], key) ___ key __ d]
     heapq.heapify(heap)
     ans    # list

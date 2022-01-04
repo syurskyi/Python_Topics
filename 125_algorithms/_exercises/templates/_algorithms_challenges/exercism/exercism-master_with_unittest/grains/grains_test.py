@@ -33,5 +33,5 @@ c_ GrainsTest(unittest.TestCase):
         assertEqual(18446744073709551615, total_after(64))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

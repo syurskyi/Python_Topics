@@ -24,5 +24,5 @@ c_ DifferenceOfSquaresTest(unittest.TestCase):
         assertEqual(25164150, difference(100))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -83,5 +83,5 @@ c_ PythagoreanTripletTest(unittest.TestCase):
         assertRaises(ValueError, primitive_triplets, 5)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

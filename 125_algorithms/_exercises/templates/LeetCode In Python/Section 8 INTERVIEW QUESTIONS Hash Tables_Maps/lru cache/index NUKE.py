@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ LRUCache:
@@ -6,7 +6,7 @@ c_ LRUCache:
     ___ - , capacity: i..):
         c  capacity
         m  d..()
-        deq  deque()
+        deq  d..()
 
     ___ get(self, key: i..) __ i..:
         __ key __ m:

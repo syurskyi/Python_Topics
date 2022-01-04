@@ -23,5 +23,5 @@ c_ Solution(object):
     ___ test
         p..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

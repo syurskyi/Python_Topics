@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -14,7 +14,7 @@ c_ Solution(object):
     :rtype: List[float]
     """
     ans    # list
-    queue = deque([root])
+    queue = d..([root])
     w.... queue:
       s = 0
       n = l..(queue)

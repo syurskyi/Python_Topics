@@ -4,7 +4,7 @@ c_ Solution(object):
     :type s: str
     :rtype: int
     """
-    d = collections.defaultdict(i..)
+    d = c...defaultdict(i..)
     l = ans = 0
     ___ i, c __ e..(s):
       w.... l > 0 a.. d[c] > 0:

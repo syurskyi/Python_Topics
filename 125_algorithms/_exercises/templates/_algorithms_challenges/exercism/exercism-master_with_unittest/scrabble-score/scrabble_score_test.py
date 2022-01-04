@@ -26,5 +26,5 @@ c_ WordTest(unittest.TestCase):
         assertEqual(41, score("OxyphenButazone"))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ PhoneDirectory(object):
@@ -10,7 +10,7 @@ c_ PhoneDirectory(object):
     :type maxNumbers: int
     """
     taken = [T..] * maxNumbers
-    q = deque([i ___ i __ r..(0, maxNumbers)])
+    q = d..([i ___ i __ r..(0, maxNumbers)])
 
   ___ get
     """

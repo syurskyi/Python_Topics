@@ -88,5 +88,5 @@ c_ DiamondTests(unittest.TestCase):
         assertMultiLineEqual(make_diamond('Z'), '\n'.j..(result) + '\n')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

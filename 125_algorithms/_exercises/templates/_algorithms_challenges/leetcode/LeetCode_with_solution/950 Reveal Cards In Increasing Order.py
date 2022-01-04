@@ -40,7 +40,7 @@ Note:
 A[i] != A[j] for all i != j
 """
 ____ typing _______ List
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -57,7 +57,7 @@ c_ Solution:
         Reverse the proess of move top card to the bottom - move the bottom card
         to the top
         """
-        q = deque()
+        q = d..()
         deck.s..()
         ___ i __ r..(l..(deck) - 1, -1, -1):
             __ q:

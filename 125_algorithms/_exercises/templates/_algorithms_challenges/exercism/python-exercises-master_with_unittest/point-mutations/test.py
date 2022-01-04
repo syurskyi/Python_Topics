@@ -32,5 +32,5 @@ c_ PointMutationsTest(unittest.TestCase):
             hamming_distance('GACTACGGACAGGGTAGGGAAT', 'GACATCGCACACC'), 5)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

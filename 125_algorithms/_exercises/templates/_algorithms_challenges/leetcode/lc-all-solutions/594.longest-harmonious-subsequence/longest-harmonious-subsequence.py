@@ -5,7 +5,7 @@ c_ Solution(object):
     :rtype: int
     """
     ans = 0
-    d = collections.Counter(nums)
+    d = c...Counter(nums)
     ___ num __ nums:
       __ num + 1 __ d:
         ans = max(ans, d[num] + d[num + 1])

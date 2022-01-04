@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ __
 ____ bs4 _______ BeautifulSoup
 _______ requests

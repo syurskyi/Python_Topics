@@ -9,7 +9,7 @@ and then we using a queue to record the minimum of the index
 
 the ans is `S[i] - S[queue[0]]`
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -25,7 +25,7 @@ c_ Solution:
 
         n = l..(A)
         S = [0] * (n + 1)
-        queue = deque()
+        queue = d..()
         ans = float('-inf')
 
         ___ i __ r..(1, n + 1):

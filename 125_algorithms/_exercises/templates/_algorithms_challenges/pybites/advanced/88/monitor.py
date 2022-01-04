@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 ____ contextlib _______ contextmanager
 ____ d__ _______ date
 ____ time _______ time

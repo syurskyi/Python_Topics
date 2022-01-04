@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 __author__ = 'Daniel'
 

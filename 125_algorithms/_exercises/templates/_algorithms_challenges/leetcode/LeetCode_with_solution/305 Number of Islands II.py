@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ collections _______ n..
+____ c.. _______ n..
 
 __author__ = 'Daniel'
 

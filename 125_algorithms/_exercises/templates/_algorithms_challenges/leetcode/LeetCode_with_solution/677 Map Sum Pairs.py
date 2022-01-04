@@ -27,7 +27,7 @@ c_ MapSum:
 
         update using delta
         """
-        ____ collections _______ defaultdict
+        ____ c.. _______ defaultdict
 
         c_ TrieNode:
             ___ - , chr, s.., val):

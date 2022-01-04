@@ -22,7 +22,7 @@ c_ NumMatrix(object):
             tbl[row1][col2+1]+\
             tbl[row1][col1]
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     matrix = [
         [3, 0, 1, 4, 2],
         [5, 6, 3, 2, 1],

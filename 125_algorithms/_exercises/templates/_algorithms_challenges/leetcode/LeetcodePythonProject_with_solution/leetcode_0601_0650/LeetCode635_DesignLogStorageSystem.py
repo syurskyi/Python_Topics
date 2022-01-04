@@ -38,7 +38,7 @@ c_ LogSystem(object):
                 res.a..(timestamp[0])
         r.. res
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     log = LogSystem()
     log.put(1, "2017:01:01:23:59:59")
     log.put(2, "2017:01:01:22:59:59")

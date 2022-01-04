@@ -25,7 +25,7 @@ c_ StockSpanner(object):
 # obj = StockSpanner()
 # param_1 = obj.next(price)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     stockSpanner = StockSpanner()
     # print(stockSpanner.next(100))
     # print(stockSpanner.next(80))

@@ -5,7 +5,7 @@ c_ Solution(object):
     :type t: str
     :rtype: bool
     """
-    d = collections.defaultdict(l..)
+    d = c...defaultdict(l..)
     ___ i, c __ e..(t):
       d[c].a..(i)
     start = 0

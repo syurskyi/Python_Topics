@@ -111,7 +111,7 @@ c_ FreqStack_self(object):
         r.. val
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     freqStack = FreqStack()
     freqStack.push(5)
     freqStack.push(7)

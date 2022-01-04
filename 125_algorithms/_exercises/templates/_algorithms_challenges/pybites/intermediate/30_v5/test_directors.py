@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ directors _______ (get_movies_by_director, get_average_scores,
                        calc_mean_score, Movie)
 

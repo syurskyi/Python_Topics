@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 
 ___ get_duplicate_indices(words):
     '''Loop through a list of words and check if each word occurs more than once.

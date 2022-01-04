@@ -23,7 +23,7 @@ All the strings in the input will only contain lower-case letters.
 The size of the dictionary won't exceed 1,000.
 The length of all the strings in the input won't exceed 1,000.
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

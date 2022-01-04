@@ -5,7 +5,7 @@ Note:
 """
 
 
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -32,8 +32,8 @@ c_ Solution:
 
         m, n = l..(grid), l..(grid[0])
         cnt = 0
-        times = collections.defaultdict(i..)
-        steps = collections.defaultdict(i..)
+        times = c...defaultdict(i..)
+        steps = c...defaultdict(i..)
 
         ___ x __ r..(m):
             ___ y __ r..(n):
@@ -82,7 +82,7 @@ c_ Solution:
             queue, _queue = _queue, []
 
 
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -107,8 +107,8 @@ c_ Solution:
 
         m, n = l..(grid), l..(grid[0])
         cnt = 0
-        ids = collections.defaultdict(set)  # record house ids
-        steps = collections.defaultdict(i..)  # total steps for all houses
+        ids = c...defaultdict(set)  # record house ids
+        steps = c...defaultdict(i..)  # total steps for all houses
 
         ___ x __ r..(m):
             ___ y __ r..(n):
@@ -116,7 +116,7 @@ c_ Solution:
                     continue
 
                 cnt += 1
-                step = collections.defaultdict(i..)  # steps for current house
+                step = c...defaultdict(i..)  # steps for current house
                 dfs(grid, x, y, cnt, ids, steps, step)
 
         ans = INF = float('inf')

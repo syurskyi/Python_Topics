@@ -10,5 +10,5 @@ ___ get_attendees
         print(participant)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     get_attendees()

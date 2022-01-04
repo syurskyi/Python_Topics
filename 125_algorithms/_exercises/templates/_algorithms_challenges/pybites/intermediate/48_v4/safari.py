@@ -1,7 +1,7 @@
 _______ os
 _______ __
 _______ urllib.request
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ d__ _______ d__
 
 TMP = os.getenv("TMP", "/tmp")

@@ -19,5 +19,5 @@ c_ NthPrimeTests(unittest.TestCase):
         assertEqual(104729, nth_prime(10000))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

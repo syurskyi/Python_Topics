@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 ____ d__ _______ d__
 _______ os
 _______ __
@@ -34,7 +34,7 @@ ___ get_month_most_posts(dates):
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
     new_list = [logdate.strftime("%Y-%m") ___ logdate __ dates]
-    r.. collections.Counter(new_list).most_common(1)[0][0]
+    r.. c...Counter(new_list).most_common(1)[0][0]
 
 converted_dates = [convert_to_datetime(d) ___ d __ _get_dates()]
 print(converted_dates[:3])

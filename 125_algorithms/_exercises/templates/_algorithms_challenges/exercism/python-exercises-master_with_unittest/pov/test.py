@@ -218,5 +218,5 @@ c_ PovTest(unittest.TestCase):
                          '{} != {}'.f..(result, expected))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

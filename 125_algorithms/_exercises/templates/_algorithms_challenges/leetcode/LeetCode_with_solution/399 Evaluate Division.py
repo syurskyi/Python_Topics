@@ -18,7 +18,7 @@ values = [2.0, 3.0],
 queries = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x", "x"] ].
 
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ i.. _______ izip
 
 __author__ = 'Daniel'

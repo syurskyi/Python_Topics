@@ -14,7 +14,7 @@ updated ninja_belts dict as well, see the TESTS tab.
 '''
 
 
-____ collections _______ n..
+____ c.. _______ n..
 
 BeltStats = n..('BeltStats', 'score ninjas')
 

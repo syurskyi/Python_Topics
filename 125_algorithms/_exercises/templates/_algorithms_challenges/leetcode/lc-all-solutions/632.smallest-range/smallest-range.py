@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -8,7 +8,7 @@ c_ Solution(object):
     :rtype: List[int]
     """
     k = l..(nums)
-    d = collections.defaultdict(i..)
+    d = c...defaultdict(i..)
     tuples    # list
 
     ___ i __ r..(l..(nums)):
@@ -19,7 +19,7 @@ c_ Solution(object):
     length = l..(tuples)
     left = tuples[0][0]
     right = tuples[-1][0]
-    deq = deque([])
+    deq = d..([])
     ___ i __ r..(length):
       num, no = tuples[i]
       deq.a..(tuples[i])

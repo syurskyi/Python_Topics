@@ -1,5 +1,5 @@
 _______ s__
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -21,7 +21,7 @@ c_ Solution(object):
           __ newWord __ wordList o. newWord __ dest:
             y.. newWord
 
-    queue = deque([beginWord])
+    queue = d..([beginWord])
     length = 0
     w.... queue:
       length += 1

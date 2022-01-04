@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 ____ operator _______ attrgetter
 
 Book = n..('Book', 'title authors pages published')

@@ -1,5 +1,5 @@
 _______ requests
-____ collections _______ Counter
+____ c.. _______ Counter
 
 STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 

@@ -39,5 +39,5 @@ c_ Solution(object):
             print('nums: %s' % nums)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -10,7 +10,7 @@ c_ Solution(object):
 
     ___ bfs(si, sj, grid, buildNum, hit):
       dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-      queue = deque([(si, sj, 0)])
+      queue = d..([(si, sj, 0)])
       visited = set([(si, sj)])
       count = 1
       w.... queue:

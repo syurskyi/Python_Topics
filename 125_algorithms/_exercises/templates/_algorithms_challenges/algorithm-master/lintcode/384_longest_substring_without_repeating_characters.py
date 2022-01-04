@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -12,7 +12,7 @@ c_ Solution:
         __ n.. s:
             r.. ans
 
-        freqs = collections.defaultdict(i..)
+        freqs = c...defaultdict(i..)
         i = rep = 0
 
         ___ j __ r..(l..(s)):

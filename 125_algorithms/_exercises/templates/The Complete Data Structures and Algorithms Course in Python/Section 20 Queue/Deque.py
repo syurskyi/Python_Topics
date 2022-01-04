@@ -3,9 +3,9 @@
 
 # How to use collections.deque as a FIFO queue:
 
-____ collections _____ deque
+____ c.. _____ d..
 
-customQueue  deque(maxlen3)
+customQueue  d..(maxlen3)
 print(customQueue)
 
 customQueue.ap..(1)

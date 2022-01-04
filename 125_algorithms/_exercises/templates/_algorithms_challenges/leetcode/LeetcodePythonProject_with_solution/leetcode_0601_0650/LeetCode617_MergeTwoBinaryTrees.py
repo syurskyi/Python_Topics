@@ -45,5 +45,5 @@ c_ Solution(object):
             root = mergeTrees(t1, t2)
             print(root.val)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-_______ collections
+_______ c..
 
 
 c_ Solution(object):
@@ -24,7 +24,7 @@ c_ Solution(object):
       r.. depth
 
     ans    # list
-    res = collections.defaultdict(l..)
+    res = c...defaultdict(l..)
     helper(root, res)
     ___ i __ r..(1, l..(res) + 1):
       ans.a..(res[i])

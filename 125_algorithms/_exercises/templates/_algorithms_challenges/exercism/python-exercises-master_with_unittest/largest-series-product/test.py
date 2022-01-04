@@ -88,5 +88,5 @@ c_ SeriesTest(unittest.TestCase):
         assertEqual(largest_product(series, 13), 23514624000)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

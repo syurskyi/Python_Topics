@@ -1,5 +1,5 @@
 ____ typing _______ Tuple
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ __
 _______ pandas __ pd
 

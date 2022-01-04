@@ -26,5 +26,5 @@ c_ TrinaryTest(unittest.TestCase):
         assertEqual(trinary('13201'), 0)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

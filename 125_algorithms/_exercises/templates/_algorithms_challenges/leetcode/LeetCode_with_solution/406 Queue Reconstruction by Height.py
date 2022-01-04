@@ -14,7 +14,7 @@ Input:
 Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 __author__ = 'Daniel'
 

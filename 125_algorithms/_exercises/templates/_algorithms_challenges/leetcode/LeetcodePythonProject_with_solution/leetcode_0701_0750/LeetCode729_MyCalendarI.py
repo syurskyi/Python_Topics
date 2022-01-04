@@ -31,7 +31,7 @@ c_ MyCalendar(object):
         intervals.a..(newInterval)
         r.. T..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     cal = MyCalendar()
     print(cal.book(10, 20))
     print(cal.book(15, 25))

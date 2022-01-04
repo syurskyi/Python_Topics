@@ -33,7 +33,7 @@ A.length is even
 -100000 <= A[i] <= 100000
 """
 ____ typing _______ List
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

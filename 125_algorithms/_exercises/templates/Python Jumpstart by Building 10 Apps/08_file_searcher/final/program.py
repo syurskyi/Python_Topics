@@ -1,7 +1,7 @@
 _______ os
-_______ collections
+_______ c..
 
-SearchResult  collections.n..('SearchResult',
+SearchResult  c...n..('SearchResult',
                                       'file, line, text')
 
 
@@ -100,5 +100,5 @@ ___ search_file(filename, search_text):
         print("NOTICE: Binary file {} skipped.".f..(filename))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

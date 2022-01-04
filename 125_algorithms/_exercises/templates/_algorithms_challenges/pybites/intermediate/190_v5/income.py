@@ -1,5 +1,5 @@
 ____ pathlib _______ Path
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ urllib.request _______ urlretrieve
 _______ ___.e__.E__ __ ET
 

@@ -19,7 +19,7 @@ Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]

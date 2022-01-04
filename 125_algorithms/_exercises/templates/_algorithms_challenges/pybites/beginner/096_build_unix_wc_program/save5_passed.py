@@ -16,7 +16,7 @@ ___ wc(file_):
     r.. f'{line} {word} {char} /tmp/{file_name}'
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     # make it work from cli like original unix wc
     _______ sys
     __ l..(sys.argv) > 1:

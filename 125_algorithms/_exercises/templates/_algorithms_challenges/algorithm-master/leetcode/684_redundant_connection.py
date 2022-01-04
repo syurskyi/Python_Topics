@@ -48,7 +48,7 @@ c_ Solution:
         r.. nodes[u]
 
 
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -63,7 +63,7 @@ c_ Solution:
         __ n.. edges:
             r.. []
 
-        nodes = collections.defaultdict(set)
+        nodes = c...defaultdict(set)
 
         ___ u, v __ edges:
             # dfs to check u and v are connected already => cycle

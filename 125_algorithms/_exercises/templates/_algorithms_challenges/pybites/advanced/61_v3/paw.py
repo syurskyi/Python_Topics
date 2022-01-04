@@ -1,5 +1,5 @@
 _______ r__
-____ collections _______ n..
+____ c.. _______ n..
 ____ math _______ ceil
 
 LETTER_A_CODE = 65

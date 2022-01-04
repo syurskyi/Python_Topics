@@ -6,7 +6,7 @@ Strings consists of lowercase English letters only and the length of both string
 
 The order of output does not matter.
 """
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

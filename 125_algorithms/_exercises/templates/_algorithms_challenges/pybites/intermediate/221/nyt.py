@@ -60,6 +60,6 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
 
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     ret = get_best_seller_titles()
     print(ret)

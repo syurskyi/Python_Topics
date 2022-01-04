@@ -44,5 +44,5 @@ ___ make_html_links
 
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     make_html_links()

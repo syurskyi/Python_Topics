@@ -16,7 +16,7 @@ Return ["JFK","ATL","JFK","SFO","ATL","SFO"].
 Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"]. But it is larger in lexical order.
 """
 _______ heapq
-____ collections _______ defaultdict, deque
+____ c.. _______ defaultdict, d..
 
 __author__ = 'Daniel'
 
@@ -40,7 +40,7 @@ c_ Solution(object):
         ___ s, e __ tickets:
             heapq.heappush(G[s], e)  # heap lexical order
 
-        ret = deque()
+        ret = d..()
         dfs(G, 'JFK', ret)
         r.. l..(ret)
 

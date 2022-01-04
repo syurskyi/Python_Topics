@@ -156,5 +156,5 @@ c_ MinesweeperTest(unittest.TestCase):
         assertRaises(ValueError, board, inp)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -1,7 +1,7 @@
 _______ os
 #from typing import Counter
 ____ urllib.request _______ urlretrieve
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 # Translation Table:

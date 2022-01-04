@@ -102,5 +102,5 @@ c_ PokerTest(unittest.TestCase):
             [spadeStraightTo9, diamondStraightTo9, threeOf4]))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

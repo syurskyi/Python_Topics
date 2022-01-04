@@ -32,7 +32,7 @@ True
 >>> all(snake.move(d) == -1 for d in 'RUDL')
 True
 """
-_______ collections
+_______ c..
 
 
 c_ SnakeGame:
@@ -58,7 +58,7 @@ c_ SnakeGame:
         SCORE_IN_OVER = -1
 
         pos = [(0, 0)]
-        snake = collections.deque(pos)
+        snake = c...d..(pos)
         body = set(pos)
 
         dn = {

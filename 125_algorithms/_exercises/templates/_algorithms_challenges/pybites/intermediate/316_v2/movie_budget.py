@@ -1,6 +1,6 @@
 ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
-____ collections _______ n..,defaultdict
+____ c.. _______ n..,defaultdict
 
 
 

@@ -39,5 +39,5 @@ c_ PerfectNumbersTest(unittest.TestCase):
         assertTrue(is_perfect(137438691328))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

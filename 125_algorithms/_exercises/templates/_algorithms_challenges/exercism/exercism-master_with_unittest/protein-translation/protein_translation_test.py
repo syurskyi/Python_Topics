@@ -72,5 +72,5 @@ c_ ProteinTranslationTest(unittest.TestCase):
         assertEqual(proteins(strand), expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

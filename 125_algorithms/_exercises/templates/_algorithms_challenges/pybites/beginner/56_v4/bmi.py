@@ -37,5 +37,5 @@ ___ handle_args(args_ N..
         r.. SystemExit
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     handle_args()

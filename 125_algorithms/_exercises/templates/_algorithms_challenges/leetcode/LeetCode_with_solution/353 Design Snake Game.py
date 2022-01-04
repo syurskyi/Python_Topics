@@ -1,7 +1,7 @@
 """
 Design a Snake game that is played on a device with screen size = width x height.
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -20,8 +20,8 @@ c_ SnakeGame(object):
         """
         w = width
         h = height
-        food = deque(food)
-        body = deque([(0, 0)])
+        food = d..(food)
+        body = d..([(0, 0)])
         dirs = {
             'U': (-1, 0),
             'L': (0, -1),

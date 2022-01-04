@@ -4,7 +4,7 @@ such that nums[i] = nums[j] and the difference between i and j is at most k.
 """
 __author__ = 'Daniel'
 _______ heapq
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

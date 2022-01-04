@@ -31,5 +31,5 @@ c_ Solution(object):
             res = flipAndInvertImage(image)
             print('res: %s' % res)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

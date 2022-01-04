@@ -97,5 +97,5 @@ c_ ListOpsTest(unittest.TestCase):
             list_ops.reverse(["xyz", 4.0, "cat", 1]), [1, "cat", 4.0, "xyz"])
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

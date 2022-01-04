@@ -34,7 +34,7 @@ twitter.unfollow(1, 2);
 // since user 1 is no longer following user 2.
 twitter.getNewsFeed(1);
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ heapq
 
 __author__ = 'Daniel'

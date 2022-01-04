@@ -40,7 +40,7 @@ The price of each flight will be in the range [1, 10000].
 k is in the range of [0, n - 1].
 There will not be any duplicated flights or self cycles.
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ heapq
 
 

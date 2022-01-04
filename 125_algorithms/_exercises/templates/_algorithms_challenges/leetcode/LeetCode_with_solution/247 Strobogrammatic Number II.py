@@ -3,7 +3,7 @@ Premium Question
 Generation
 https://leetcode.com/problems/strobogrammatic-number-ii/
 """
-____ collections _______ deque
+____ c.. _______ d..
 __author__ = 'Daniel'
 
 
@@ -14,7 +14,7 @@ c_ Solution(object):
 
     ___ findStrobogrammatic(self, n):
         ret    # list
-        build(n, deque(), ret)
+        build(n, d..(), ret)
         r.. ret
 
     ___ build(self, n, cur, ret):

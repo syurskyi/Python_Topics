@@ -39,5 +39,5 @@ c_ TransformTest(unittest.TestCase):
         assertEqual(transform(legacy_data), data)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

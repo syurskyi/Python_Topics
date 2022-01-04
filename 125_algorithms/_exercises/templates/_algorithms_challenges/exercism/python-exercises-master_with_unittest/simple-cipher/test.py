@@ -72,5 +72,5 @@ c_ CipherTest(unittest.TestCase):
         assertRaises(ValueError, Cipher, 'aBcde')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

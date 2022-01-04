@@ -34,5 +34,5 @@ c_ RailFenceTests(unittest.TestCase):
             '112358132134558914423337761098715972584418167651094617711286')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

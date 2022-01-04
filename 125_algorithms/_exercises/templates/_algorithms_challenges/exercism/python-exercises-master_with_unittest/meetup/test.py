@@ -403,5 +403,5 @@ c_ MeetupTest(unittest.TestCase):
                           '5th')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

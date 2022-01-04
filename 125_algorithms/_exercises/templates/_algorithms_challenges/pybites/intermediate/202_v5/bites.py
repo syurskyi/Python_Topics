@@ -21,6 +21,6 @@ ___ get_most_complex_bites(N=10, stats=stats):
              __ x['Difficulty'] != 'None'], key=l.... x: x[1], r.._T..[:N]]
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     res = get_most_complex_bites()
     print(res)

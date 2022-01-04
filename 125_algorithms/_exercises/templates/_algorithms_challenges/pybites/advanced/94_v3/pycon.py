@@ -2,7 +2,7 @@ _______ os
 _______ pickle
 _______ __
 _______ urllib.request
-____ collections _______ n..
+____ c.. _______ n..
 ____ d__ _______ t..
 
 # prework

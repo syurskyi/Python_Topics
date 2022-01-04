@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 ____ d__ _______ d__
 _______ os
 _______ __
@@ -30,7 +30,7 @@ ___ convert_to_datetime(date_str):
 ___ get_month_most_posts(dates):
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
-    months = collections.defaultdict(i..)
+    months = c...defaultdict(i..)
     ___ x __ dates:
         months[f'{x.year:04}-{x.month:02}'] += 1
     r.. s..(months.i.., key=l.... k_v: -k_v[1])[0][0]

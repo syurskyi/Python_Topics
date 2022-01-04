@@ -18,7 +18,7 @@ Note:
 
 S will consist of lowercase letters and have length in range [1, 500].
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

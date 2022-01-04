@@ -36,5 +36,5 @@ c_ Solution(object):
             result = preorderTraversal(root)
             print('result: %s' % (result))
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

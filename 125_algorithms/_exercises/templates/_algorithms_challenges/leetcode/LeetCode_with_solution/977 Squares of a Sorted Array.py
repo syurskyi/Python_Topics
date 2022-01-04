@@ -20,7 +20,7 @@ Note:
 A is sorted in non-decreasing order.
 """
 ____ typing _______ List
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -29,7 +29,7 @@ c_ Solution:
         started from two ends
         """
         n = l..(A)
-        ret = deque()
+        ret = d..()
         lo = 0
         hi = n
         w.... lo < hi:

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -13,7 +13,7 @@ c_ MovingAverage(object):
         :type size: int
         """
         size = size
-        q = deque()
+        q = d..()
         s.. = 0
 
     ___ next(self, val):

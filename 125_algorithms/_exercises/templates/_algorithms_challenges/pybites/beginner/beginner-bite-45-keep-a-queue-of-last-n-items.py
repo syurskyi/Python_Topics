@@ -12,10 +12,10 @@ Check the standard library to see how you can do this in the shortest/most effic
 See an example output below and the tests that check for various values of n. Have fun!
 '''
 
-_______ collections
+_______ c..
 
 ___ my_queue(n=5):
-    d = collections.deque('', n)
+    d = c...d..('', n)
     r.. d
 
 mq = my_queue()

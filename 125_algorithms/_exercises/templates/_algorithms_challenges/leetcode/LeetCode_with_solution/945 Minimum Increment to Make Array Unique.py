@@ -24,7 +24,7 @@ Note:
 0 <= A[i] < 40000
 """
 ____ typing _______ List
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

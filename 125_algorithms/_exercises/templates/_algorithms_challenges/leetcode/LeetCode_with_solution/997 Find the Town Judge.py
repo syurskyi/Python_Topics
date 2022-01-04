@@ -45,7 +45,7 @@ trust[i][0] != trust[i][1]
 1 <= trust[i][0], trust[i][1] <= N
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

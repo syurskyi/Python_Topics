@@ -78,7 +78,7 @@ c_ Excel(object):
         matrix[i][j] = sumVal
         r.. sumVal
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     excel = Excel(3, 'C')
     excel.set(1, 'A', 2)
     print(excel.s..(3, 'C', ['A1', 'A1:B2']))

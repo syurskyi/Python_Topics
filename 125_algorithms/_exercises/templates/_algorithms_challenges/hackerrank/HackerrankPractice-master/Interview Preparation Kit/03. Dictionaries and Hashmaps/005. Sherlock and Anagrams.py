@@ -2,7 +2,7 @@
 #  Score: 50
 
 
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 ___ t __ r..(i..(input())):

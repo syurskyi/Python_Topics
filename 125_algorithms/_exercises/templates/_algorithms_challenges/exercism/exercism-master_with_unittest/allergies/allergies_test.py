@@ -37,5 +37,5 @@ c_ AllergiesTests(unittest.TestCase):
         assertEqual(['eggs'], Allergies(257).lst)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -16,5 +16,5 @@ c_ TwoFerTest(unittest.TestCase):
         assertEqual(two_fer("Bob"), "One for Bob, one for me.")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

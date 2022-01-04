@@ -1,7 +1,7 @@
 _______ csv
 _______ os
 ____ urllib.request _______ urlretrieve
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'battle-table.csv'

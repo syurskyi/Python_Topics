@@ -14,7 +14,7 @@ KEYWORDS: Counter, data analysis, list comprehensions
 _______ os
 _______ urllib.request
 _______ s__
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ __
 
 

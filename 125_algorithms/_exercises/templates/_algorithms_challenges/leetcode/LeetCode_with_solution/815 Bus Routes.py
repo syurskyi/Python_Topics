@@ -24,7 +24,7 @@ Note:
 0 <= routes[i][j] < 10 ^ 6.
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

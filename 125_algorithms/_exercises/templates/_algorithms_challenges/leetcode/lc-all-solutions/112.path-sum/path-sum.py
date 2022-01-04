@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -15,7 +15,7 @@ c_ Solution(object):
     :rtype: bool
     """
     __ root:
-      queue = deque([(root, root.val)])
+      queue = d..([(root, root.val)])
       w.... queue:
         p, s = queue.popleft()
         left, right = p.left, p.right

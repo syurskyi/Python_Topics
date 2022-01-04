@@ -1,8 +1,8 @@
-_______ collections
+_______ c..
 _______ requests
 
-Location  collections.n..('Location', 'city state country')
-Weather  collections.n..('Weather', 'location units temp condition')
+Location  c...n..('Location', 'city state country')
+Weather  c...n..('Weather', 'location units temp condition')
 
 
 ___ main
@@ -111,5 +111,5 @@ ___ show_header
     print()
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     main()

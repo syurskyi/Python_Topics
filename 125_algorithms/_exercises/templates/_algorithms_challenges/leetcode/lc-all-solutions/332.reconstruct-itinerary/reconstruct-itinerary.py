@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -15,7 +15,7 @@ c_ Solution(object):
     maxLen = l..(tickets) + 1
 
     ___ k __ graph:
-      graph[k] = deque(s..(graph[k]))
+      graph[k] = d..(s..(graph[k]))
 
     ___ dfs(path, graph, maxLen, start):
       __ l..(path) __ maxLen:

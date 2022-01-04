@@ -1,7 +1,7 @@
 _______ os
 ____ urllib.request _______ urlretrieve
 _______ requests
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ i.. _______ combinations
 
 # Translation Table:

@@ -1,5 +1,5 @@
 _______ __
-____ collections _______ n..
+____ c.. _______ n..
 
 _______ requests
 ____ bs4 _______ BeautifulSoup

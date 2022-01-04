@@ -125,5 +125,5 @@ c_ VerseTest(unittest.TestCase):
         assertEqual(expected, rhyme())
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

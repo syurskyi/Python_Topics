@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 
 BeltStats = n..('BeltStats', 'score ninjas')
 

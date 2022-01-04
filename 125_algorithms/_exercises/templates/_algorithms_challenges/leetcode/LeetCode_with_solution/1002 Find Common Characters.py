@@ -28,7 +28,7 @@ A[i][j] is a lowercase letter
 _______ s__
 
 ____ typing _______ List
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

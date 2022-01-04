@@ -362,5 +362,5 @@ c_ ForthCaseInsensitivityTest(unittest.TestCase):
         assertEqual(evaluate(input_data), expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

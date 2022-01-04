@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Node(object):
@@ -35,7 +35,7 @@ c_ Solution(object):
 
     ans = ""
     graph    # dict
-    visited = collections.defaultdict(i..)
+    visited = c...defaultdict(i..)
     topNum = 0
     ___ i __ r..(0, l..(words) - 1):
       a = words[i]

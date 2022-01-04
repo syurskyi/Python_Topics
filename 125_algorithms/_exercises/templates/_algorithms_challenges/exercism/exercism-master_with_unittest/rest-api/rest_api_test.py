@@ -376,5 +376,5 @@ c_ RestAPITest(unittest.TestCase):
         assertDictEqual(json.loads(response), expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

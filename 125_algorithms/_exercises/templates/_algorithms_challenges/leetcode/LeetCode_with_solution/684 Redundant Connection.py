@@ -34,7 +34,7 @@ Every integer represented in the 2D-array will be between 1 and N, where N is
 the size of the input array.
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ DisjointSet

@@ -41,5 +41,5 @@ c_ OctalTest(unittest.TestCase):
         assertEqual(parse_octal("011"), 9)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -9,7 +9,7 @@ c_ Solution(object):
     :rtype: List[List[str]]
     """
     numbers = "B123456789"
-    queue = deque([click])
+    queue = d..([click])
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (1, 1), (-1, -1), (1, -1), (-1, 1)]
     w.... queue:
       i, j = queue.popleft()

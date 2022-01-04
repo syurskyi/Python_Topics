@@ -26,5 +26,5 @@ c_ PangramTests(unittest.TestCase):
                                    ' großen Sylter Deich.'))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

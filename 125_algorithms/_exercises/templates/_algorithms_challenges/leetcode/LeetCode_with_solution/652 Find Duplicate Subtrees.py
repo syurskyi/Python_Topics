@@ -35,7 +35,7 @@ c_ TreeNode:
 
 
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ MerkleHash:

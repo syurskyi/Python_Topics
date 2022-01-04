@@ -29,7 +29,7 @@ Output: [1,0,0,0,0,0,0,0,0,0,0]
 Explanation: 9999999999 + 1 = 10000000000
 """
 ____ typing _______ List
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -43,7 +43,7 @@ c_ Solution:
             carry = A[i] // 10
             A[i] %= 10
             
-        head = deque()
+        head = d..()
         w.... carry:
             head.appendleft(carry % 10)
             carry //= 10

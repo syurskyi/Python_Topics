@@ -2,7 +2,7 @@
 # Score: 30
 
 
-____ collections _______ Counter, OrderedDict
+____ c.. _______ Counter, OrderedDict
 
 
 c_ OrderedCounter(Counter, OrderedDict):

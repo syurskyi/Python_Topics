@@ -36,5 +36,5 @@ c_ SpiralMatrixTest(unittest.TestCase):
                                      [13, 12, 11, 10, 9]])
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

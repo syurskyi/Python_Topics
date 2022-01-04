@@ -2,7 +2,7 @@
 # Score: 20
 
 
-____ collections _______ n..
+____ c.. _______ n..
 
 
 n, Student = i..(input()), n..('Student', input())

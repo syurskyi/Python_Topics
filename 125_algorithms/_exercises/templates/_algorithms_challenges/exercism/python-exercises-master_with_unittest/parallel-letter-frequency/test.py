@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ unittest
 
 ____ parallel_letter_frequency _______ calculate
@@ -57,5 +57,5 @@ c_ ParallelLetterFrequencyTest(unittest.TestCase):
         assertDictEqual(actual, expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

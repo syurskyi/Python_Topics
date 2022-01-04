@@ -43,5 +43,5 @@ c_ Solution(object):
             result = shortestPathLength(graph)
             print('result: %s' % result)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

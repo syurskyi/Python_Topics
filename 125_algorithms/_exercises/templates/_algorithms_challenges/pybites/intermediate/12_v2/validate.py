@@ -1,4 +1,4 @@
-____ collections _______ n..
+____ c.. _______ n..
 
 User = n..('User', 'name role expired')
 USER, ADMIN = 'user', 'admin'

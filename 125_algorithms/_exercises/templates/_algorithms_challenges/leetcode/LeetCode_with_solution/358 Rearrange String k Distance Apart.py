@@ -27,7 +27,7 @@ Another possible answer is: "abcabcda"
 The same letters are at least distance 2 from each other.
 
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ heapq
 
 __author__ = 'Daniel'

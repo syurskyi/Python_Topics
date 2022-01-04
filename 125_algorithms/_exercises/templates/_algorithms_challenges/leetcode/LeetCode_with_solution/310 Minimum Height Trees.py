@@ -34,7 +34,7 @@ Given n = 6, edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]
         5
 return [3, 4]
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 __author__ = 'Daniel'
 

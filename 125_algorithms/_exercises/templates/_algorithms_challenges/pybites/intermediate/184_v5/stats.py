@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 ____ csv _______ DictReader
 ____ os _______ path
 ____ urllib.request _______ urlretrieve

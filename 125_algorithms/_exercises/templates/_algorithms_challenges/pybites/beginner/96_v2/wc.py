@@ -20,7 +20,7 @@ ___ wc(file_):
 
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     # make it work from cli like original unix wc
     _______ sys
     print(wc(sys.argv[1]))

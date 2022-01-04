@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 _______ operator
 
 ___ major_n_minor(numbers):

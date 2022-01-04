@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 # fake data from https://www.mockaroo.com
 data = """last_name,first_name,country_code

@@ -39,7 +39,7 @@ c_ TreeNode:
 
 
 ____ typing _______ Tuple
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -50,7 +50,7 @@ c_ Solution:
         """
         dfs
         """
-        dfs(root, deque())
+        dfs(root, d..())
         __ n.. mn:
             r.. ""
         r.. "".j..(

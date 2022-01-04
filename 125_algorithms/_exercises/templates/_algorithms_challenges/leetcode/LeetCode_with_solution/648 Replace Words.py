@@ -27,7 +27,7 @@ The input will only have lower-case letters.
 1 <= sentence words length <= 1000
 """
 ____ typing _______ List
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Node:

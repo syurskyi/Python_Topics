@@ -1,4 +1,4 @@
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ____ typing _______ Counter
 
 count = defaultdict(Counter)

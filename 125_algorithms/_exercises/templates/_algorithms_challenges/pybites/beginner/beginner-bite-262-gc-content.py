@@ -1,4 +1,4 @@
-____ collections _______ Counter
+____ c.. _______ Counter
 """
 The DNA of all organsims consists of the letters (bases) A, C, T and G. Every organism has a
 different ratio of these bases, known as the GC content. This information can not only give

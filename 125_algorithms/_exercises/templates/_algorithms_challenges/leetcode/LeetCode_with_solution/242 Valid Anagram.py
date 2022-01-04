@@ -8,7 +8,7 @@ s = "rat", t = "car", return false.
 Note:
 You may assume the string contains only lowercase alphabets.
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 __author__ = 'Daniel'
 

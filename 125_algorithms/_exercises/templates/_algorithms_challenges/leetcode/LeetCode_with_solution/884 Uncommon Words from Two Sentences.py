@@ -29,7 +29,7 @@ Note:
 A and B both contain only spaces and lowercase letters.
 """
 ____ typing _______ List
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

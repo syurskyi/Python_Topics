@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
@@ -10,7 +10,7 @@ c_ Solution(object):
     """
     s = 0
     ans = float("-inf")
-    queue = deque([])
+    queue = d..([])
     ___ num __ nums:
       queue.a..(num)
       s += num

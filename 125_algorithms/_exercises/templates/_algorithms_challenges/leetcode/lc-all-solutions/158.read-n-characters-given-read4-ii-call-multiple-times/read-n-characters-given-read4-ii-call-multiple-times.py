@@ -2,12 +2,12 @@
 # @param buf, a list of characters
 # @return an integer
 # def read4(buf):
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution(object):
   ___ - ):
-    rBuf = deque([])
+    rBuf = d..([])
 
   ___ read(self, buf, n):
     """

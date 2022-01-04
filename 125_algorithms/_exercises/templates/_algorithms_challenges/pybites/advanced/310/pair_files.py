@@ -1,5 +1,5 @@
 _______ __
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 ___ pair_files(filenames):
     """
     Function that pairs filenames

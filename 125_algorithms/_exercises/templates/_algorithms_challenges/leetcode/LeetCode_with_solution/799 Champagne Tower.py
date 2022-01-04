@@ -45,7 +45,7 @@ Note:
 poured will be in the range of [0, 10 ^ 9].
 query_glass and query_row will be in the range of [0, 99].
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

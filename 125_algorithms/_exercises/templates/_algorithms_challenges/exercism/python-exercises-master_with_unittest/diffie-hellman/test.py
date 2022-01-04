@@ -52,5 +52,5 @@ c_ DiffieHellmanTest(unittest.TestCase):
         assertEqual(secret_a, secret_b)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

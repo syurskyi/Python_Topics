@@ -59,5 +59,5 @@ c_ AnagramTest(unittest.TestCase):
         assertEqual(find_anagrams("BANANA", candidates), [])
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

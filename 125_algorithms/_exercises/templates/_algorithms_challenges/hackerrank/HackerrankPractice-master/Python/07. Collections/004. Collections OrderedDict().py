@@ -2,7 +2,7 @@
 # Score: 20
 
 
-____ collections _______ OrderedDict
+____ c.. _______ OrderedDict
 
 
 ordered_dictionary = OrderedDict()

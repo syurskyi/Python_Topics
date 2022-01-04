@@ -1,7 +1,7 @@
 _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 _______ ___.e__.E__ __ ET
 
 # import the countries xml file

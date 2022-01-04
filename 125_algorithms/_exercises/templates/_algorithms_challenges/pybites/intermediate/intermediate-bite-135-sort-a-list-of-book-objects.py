@@ -4,7 +4,7 @@ Complete the 4 functions below. Consider using lambda and/or one or more helper 
 attrgetter (operator module). Good luck and have fun!
 """
 
-____ collections _______ n..
+____ c.. _______ n..
 ____ d__ _______ d__
 ____ operator _______ attrgetter
 

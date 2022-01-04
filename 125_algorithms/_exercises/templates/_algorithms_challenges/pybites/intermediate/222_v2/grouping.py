@@ -28,7 +28,7 @@ ___ group(iterable, n):
     r.. l..(islice(iterable,0,l..(iterable),n))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     iterable = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     n = 3
     ret = group(iterable, n)

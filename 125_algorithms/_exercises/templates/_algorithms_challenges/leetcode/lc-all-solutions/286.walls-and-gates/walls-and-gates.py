@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 INF = 2147483647
 
@@ -9,7 +9,7 @@ c_ Solution(object):
     :type rooms: List[List[int]]
     :rtype: void Do not return anything, modify rooms in-place instead.
     """
-    queue = deque([])
+    queue = d..([])
     directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
     ___ i __ r..(0, l..(rooms)):
       ___ j __ r..(0, l..(rooms[0])):

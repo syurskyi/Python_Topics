@@ -1,7 +1,7 @@
-____ collections _______ n..,defaultdict
+____ c.. _______ n..,defaultdict
 ____ enum _______ Enum
 ____ typing _______ Sequence
-____ collections.abc _______ Sequence __ seq
+____ c...abc _______ Sequence __ seq
 
 Suit = Enum("Suit", l..("SHDC"))
 Rank = Enum("Rank", l..("AKQJT98765432"))

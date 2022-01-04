@@ -4,7 +4,7 @@ ____ pathlib _______ Path
 ____ typing _______ Dict, List, OrderedDict
 ____ urllib.request _______ urlretrieve
 _______ json
-____ collections _______ OrderedDict
+____ c.. _______ OrderedDict
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))

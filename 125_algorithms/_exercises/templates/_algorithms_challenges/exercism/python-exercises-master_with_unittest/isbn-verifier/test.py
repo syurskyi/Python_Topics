@@ -53,5 +53,5 @@ c_ IsbnVerifierTest(unittest.TestCase):
         assertIs(verify('134456729'), F..)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

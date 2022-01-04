@@ -1,5 +1,5 @@
 _______ argparse
-____ collections _______ n..
+____ c.. _______ n..
 
 Item = n..('Item', 'product price craving')
 

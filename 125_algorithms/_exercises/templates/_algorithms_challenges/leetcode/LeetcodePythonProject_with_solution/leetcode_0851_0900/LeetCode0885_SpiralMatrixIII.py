@@ -57,5 +57,5 @@ c_ Solution(object):
             res = spiralMatrixIII(R, C, r0, c0)
             print('res: %s' % res)
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

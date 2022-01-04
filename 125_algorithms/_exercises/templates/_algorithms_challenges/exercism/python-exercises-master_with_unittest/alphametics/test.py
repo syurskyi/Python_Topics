@@ -67,5 +67,5 @@ c_ TestAlphametics(unittest.TestCase):
              "T": 9})
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

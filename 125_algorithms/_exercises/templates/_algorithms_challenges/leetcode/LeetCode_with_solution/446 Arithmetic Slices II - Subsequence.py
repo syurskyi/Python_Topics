@@ -6,7 +6,7 @@ elements and if the difference between any two consecutive elements is the same.
 The function should return the number of arithmetic subsequence slices in the
 array A. (Subsequence rather than slide)
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 
 c_ Solution:

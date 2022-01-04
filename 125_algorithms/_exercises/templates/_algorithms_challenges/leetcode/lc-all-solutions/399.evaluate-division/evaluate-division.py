@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Graph(object):
@@ -16,7 +16,7 @@ c_ Graph(object):
       r.. -1.0
     __ node1 __ node2:
       r.. 1.0
-    queue = deque([(node1, 1)])
+    queue = d..([(node1, 1)])
     visited = set([node1.label])
     w.... queue:
       node, ans = queue.popleft()

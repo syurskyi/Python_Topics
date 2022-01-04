@@ -1,11 +1,11 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ CircularBuffer:
 
     ___ - , capacity):
         capacity = capacity
-        buffer = deque([], capacity)
+        buffer = d..([], capacity)
 
     ___ read
         __ empty

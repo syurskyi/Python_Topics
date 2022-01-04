@@ -59,7 +59,7 @@ c_ WordFilter(object):
             __ i __ l..(word)-1:
                 r.. root.candidates
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     wordFilter = WordFilter(["abbbababbb","baaabbabbb","abababbaaa","abbbbbbbba","bbbaabbbaa","ababbaabaa","baaaaabbbb","babbabbabb","ababaababb","bbabbababa"])
     res = wordFilter.f("","abaa")
     print('res: %s' % res)

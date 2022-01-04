@@ -55,5 +55,5 @@ c_ ProteinTranslationTests(unittest.TestCase):
             of_rna('CARROT')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

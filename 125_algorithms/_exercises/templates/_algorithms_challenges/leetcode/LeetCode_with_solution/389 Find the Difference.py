@@ -18,7 +18,7 @@ Explanation:
 'e' is the letter that was added.
 
 """
-____ collections _______ defaultdict
+____ c.. _______ defaultdict
 
 __author__ = 'Daniel'
 

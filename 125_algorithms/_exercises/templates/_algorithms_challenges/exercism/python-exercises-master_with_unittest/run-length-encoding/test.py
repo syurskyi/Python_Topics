@@ -50,5 +50,5 @@ c_ WordCountTests(unittest.TestCase):
         assertMultiLineEqual(decode(encode('zzz ZZ  zZ')), 'zzz ZZ  zZ')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

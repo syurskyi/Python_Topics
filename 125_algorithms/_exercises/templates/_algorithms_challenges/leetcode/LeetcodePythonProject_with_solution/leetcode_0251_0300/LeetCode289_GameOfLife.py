@@ -51,5 +51,5 @@ c_ Solution
         gameOfLife(board)
         print('\n'.j..([s..(l) ___ l __ board]))
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

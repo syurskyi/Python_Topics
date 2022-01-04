@@ -26,5 +26,5 @@ c_ AcronymTest(unittest.TestCase):
             abbreviate('Complementary metal-oxide semiconductor'), 'CMOS')
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

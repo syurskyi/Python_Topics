@@ -4,7 +4,7 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-____ collections _______ Counter,defaultdict
+____ c.. _______ Counter,defaultdict
 _______ operator
 _______ i..
 

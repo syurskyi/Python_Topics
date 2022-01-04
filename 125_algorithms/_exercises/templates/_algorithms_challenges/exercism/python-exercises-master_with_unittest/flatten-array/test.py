@@ -36,5 +36,5 @@ c_ FlattenArrayTests(unittest.TestCase):
         assertEqual(flatten(['0', ['1', '2']]), ['0', '1', '2'])
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

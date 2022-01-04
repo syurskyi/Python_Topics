@@ -20,10 +20,10 @@ c_ Solution(object):
                     startj = j
                 ____ grid[i][j] __ 'abcdef':
                     numOfKeys += 1
-        deque    # list
-        deque.a..([starti, startj, 0, '.@abcdef', 0])
-        w.... deque:
-            i, j, steps, keys, collectedKeys = deque.pop(0)
+        d..    # list
+        d...a..([starti, startj, 0, '.@abcdef', 0])
+        w.... d..:
+            i, j, steps, keys, collectedKeys = d...pop(0)
             __ grid[i][j] __ 'abcdef' a.. grid[i][j].u.. n.. __ keys:
                 keys += grid[i][j].u..
                 collectedKeys += 1
@@ -35,7 +35,7 @@ c_ Solution(object):
                 __ 0<=ni<m a.. 0<=nj<n a.. grid[ni][nj] __ keys:
                     __ (ni, nj, keys) n.. __ moves:
                         moves.add((ni, nj, keys))
-                        deque.a..([ni, nj, steps+1, keys, collectedKeys])
+                        d...a..([ni, nj, steps+1, keys, collectedKeys])
         r.. -1
     
     ___ test
@@ -47,5 +47,5 @@ c_ Solution(object):
             print('res: %s' % res)
             print('-='*30+'-')
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     Solution().test()

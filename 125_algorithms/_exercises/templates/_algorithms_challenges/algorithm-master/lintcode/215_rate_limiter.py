@@ -1,4 +1,4 @@
-_______ collections
+_______ c..
 
 
 c_ Solution:
@@ -20,7 +20,7 @@ c_ Solution:
             'h': 3600,
             'd': 86400,
         }
-        logs = collections.defaultdict(l..)
+        logs = c...defaultdict(l..)
 
     ___ isRatelimited(self, timestamp, event, rate, increment):
         """

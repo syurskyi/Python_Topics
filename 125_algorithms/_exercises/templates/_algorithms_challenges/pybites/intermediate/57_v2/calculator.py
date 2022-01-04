@@ -69,5 +69,5 @@ ___ call_calculator(args=N.., stdout=F..):
 
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     call_calculator(stdout=T..)

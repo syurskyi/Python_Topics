@@ -17,7 +17,7 @@ Absolute value of elements in the array and x will not exceed 104
 """
 ____ typing _______ List
 ____ bisect _______ bisect_left
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ Solution:
@@ -45,7 +45,7 @@ c_ Solution:
         """
         n = l..(A)
         idx = bisect_left(A, x)
-        ret = deque()
+        ret = d..()
         i = idx - 1
         j = idx
         w.... k:

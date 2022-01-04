@@ -1,5 +1,5 @@
 ____ r__ _______ randint
-____ collections _______ n..
+____ c.. _______ n..
 
 ____ transpose _______ transpose
 

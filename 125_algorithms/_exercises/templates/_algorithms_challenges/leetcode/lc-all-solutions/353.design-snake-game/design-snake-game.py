@@ -1,4 +1,4 @@
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ SnakeGame(object):
@@ -14,11 +14,11 @@ c_ SnakeGame(object):
     :type height: int
     :type food: List[List[int]]
     """
-    snake = deque([(0, 0)])
+    snake = d..([(0, 0)])
     snakeSet = set([(0, 0)])
     width = width
     height = height
-    food = deque(food)
+    food = d..(food)
     directions = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
     score = 0
 

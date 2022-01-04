@@ -55,5 +55,5 @@ c_ HammingTest(unittest.TestCase):
             hamming.distance("ATA", "AGTG")
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

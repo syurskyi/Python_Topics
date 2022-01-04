@@ -65,7 +65,7 @@ c_ AutocompleteSystem(object):
             node.candidates[s] = node.candidates.get(s, 0)+1
         node.isLeaf = T..
 
-__ __name__ __ '__main__':
+__ _____ __ _____
 #     autoSys = AutocompleteSystem(["i love you", "island","ironman", "i love leetcode"], [5,3,2,2])
 #     print(autoSys.input('i'))
 #     print(autoSys.input(' '))

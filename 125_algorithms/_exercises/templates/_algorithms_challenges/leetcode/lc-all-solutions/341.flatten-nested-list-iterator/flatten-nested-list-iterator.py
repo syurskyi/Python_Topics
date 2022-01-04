@@ -22,7 +22,7 @@
 #        Return None if this NestedInteger holds a single integer
 #        :rtype List[NestedInteger]
 #        """
-____ collections _______ deque
+____ c.. _______ d..
 
 
 c_ NestedIterator(object):
@@ -32,7 +32,7 @@ c_ NestedIterator(object):
     Initialize your data structure here.
     :type nestedList: List[NestedInteger]
     """
-    stack = deque(nestedList[::-1])
+    stack = d..(nestedList[::-1])
     value = N..
 
   ___ next

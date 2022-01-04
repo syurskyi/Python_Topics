@@ -3,7 +3,7 @@ Given an array of integers, find if the array contains any duplicates. Your func
 appears at least twice in the array, and it should return false if every element is distinct.
 """
 __author__ = 'Daniel'
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

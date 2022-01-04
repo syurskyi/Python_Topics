@@ -30,7 +30,7 @@ Explanation: The robot moves left twice. It ends up two "moves" to the left of
 the origin. We return false because it is not at the origin at the end of its
 moves.
 """
-____ collections _______ Counter
+____ c.. _______ Counter
 
 
 c_ Solution:

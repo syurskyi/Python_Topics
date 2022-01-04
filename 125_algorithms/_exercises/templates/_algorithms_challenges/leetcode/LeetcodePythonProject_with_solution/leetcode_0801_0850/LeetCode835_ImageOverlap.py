@@ -10,13 +10,13 @@ c_ Solution(object):
         :type B: List[List[int]]
         :rtype: int
         """
-        _______ collections
+        _______ c..
         n = l..(A)
         #encode the position of 1 in A and B
         #we can' t use i//n*n + i%n. Although it is a distinct way to encode position
         LA = [(i, j) ___ i __ r..(n) ___ j __ r..(n) __ A[i][j] __ 1]
         LB = [(i, j) ___ i __ r..(n) ___ j __ r..(n) __ B[i][j] __ 1]
-        counts = collections.defaultdict(i..)
+        counts = c...defaultdict(i..)
         res = 0
         ___ i __ LA:
             ___ j __ LB:

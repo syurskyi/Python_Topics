@@ -46,5 +46,5 @@ c_ PythagoreanTripletTest(unittest.TestCase):
         assertEqual(triplets_with_sum(30000), expected)
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()

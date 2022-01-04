@@ -19,7 +19,7 @@ follow this format, so please be creative and come up with different approaches 
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should
 be stateless.
 """
-____ collections _______ deque
+____ c.. _______ d..
 
 __author__ = 'Daniel'
 
@@ -71,7 +71,7 @@ c_ Codec:
         lst = data.s..(",")
         root = decode(lst[0])
 
-        q = deque([root])
+        q = d..([root])
         i = 1
         w.... q:
             cur = q.popleft()

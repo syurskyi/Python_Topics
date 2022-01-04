@@ -158,5 +158,5 @@ c_ ClockTest(unittest.TestCase):
         assertEqual(Clock(18, 7), Clock(-54, -11513))
 
 
-__ __name__ __ '__main__':
+__ _____ __ _____
     unittest.main()
