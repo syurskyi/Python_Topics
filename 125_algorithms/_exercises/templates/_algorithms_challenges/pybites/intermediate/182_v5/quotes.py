@@ -35,7 +35,7 @@ ___ extract_quotes(html: s.. = HTML) -> d..:
     root = BeautifulSoup(html, 'html.parser')
     content = root.find(class_='content').find_all('p')
     ___ para __ content:
-        __ para.text[0] __ string.digits:
-            match = __.match(r'^\d+\.\s+"(.+?)" - (.*)$', para.text)
-            result[match[2]] = match[1]
+        __ para.text[0] __ string.d..:
+            m.. = __.m..(r'^\d+\.\s+"(.+?)" - (.*)$', para.text)
+            result[m..[2]] = m..[1]
     r.. result

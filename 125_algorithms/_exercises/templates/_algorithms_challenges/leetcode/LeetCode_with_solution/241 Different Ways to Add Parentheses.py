@@ -35,8 +35,8 @@ c_ Solution:
         :rtype: list[]
         """
         input_lst = __.s..(r"(\D)", input)  # capturing parentheses
-        nums = map(int, filter(l.... x: __.match(r"\d+", x), input_lst))
-        ops = filter(l.... x: __.match(r"\D", x), input_lst)
+        nums = map(int, filter(l.... x: __.m..(r"\d+", x), input_lst))
+        ops = filter(l.... x: __.m..(r"\D", x), input_lst)
         ret = dfs_eval(nums, ops)
         r.. ret
 

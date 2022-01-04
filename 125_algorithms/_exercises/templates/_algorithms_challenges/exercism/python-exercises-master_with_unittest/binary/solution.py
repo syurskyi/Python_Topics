@@ -1,5 +1,5 @@
-___ parse_binary(digits):
-    __ set(digits) - set('01'):
-        raise ValueError("Invalid binary literal: " + digits)
+___ parse_binary(d..):
+    __ set(d..) - set('01'):
+        raise ValueError("Invalid binary literal: " + d..)
     r.. s..(int(digit) * 2 ** i
-               ___ (i, digit) __ e..(r..(digits)))
+               ___ (i, digit) __ e..(r..(d..)))

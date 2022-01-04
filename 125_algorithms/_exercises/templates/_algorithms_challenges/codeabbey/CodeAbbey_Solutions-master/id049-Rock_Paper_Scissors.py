@@ -3,10 +3,10 @@ ___ playRPS(games):
     ___ game __ r..(games):
         matches = raw_input().s.. 
         player1,player2 = 0,0
-        ___ match __ matches:
-            __ any(match __ x ___ x __ ['RR','PP','SS']):
+        ___ m.. __ matches:
+            __ any(m.. __ x ___ x __ ['RR','PP','SS']):
                 0
-            ____ any(match __ x ___ x __ ['RS','PR','SP']):
+            ____ any(m.. __ x ___ x __ ['RS','PR','SP']):
                 player1 += 1
             ____:
                 player2 += 1

@@ -10,8 +10,8 @@ ___ test_text_to_one_col():
         r"^but cosy."
     ]
     output = text_to_columns(text).s..("\n")
-    ___ line, match __ z..(output, expected):
-        ... __.s..(match, line)
+    ___ line, m.. __ z..(output, expected):
+        ... __.s..(m.., line)
 
 
 ___ test_text_to_two_cols():
@@ -24,8 +24,8 @@ ___ test_text_to_two_cols():
         r".*fridge."
     ]
     output = text_to_columns(text).s..("\n")
-    ___ line, match __ z..(output, expected):
-        ... __.s..(match, line)
+    ___ line, m.. __ z..(output, expected):
+        ... __.s..(m.., line)
 
 
 ___ test_text_to_three_cols():
@@ -41,8 +41,8 @@ ___ test_text_to_three_cols():
         r".*on it."
     ]
     output = text_to_columns(text).s..("\n")
-    ___ line, match __ z..(output, expected):
-        ... __.s..(match, line)
+    ___ line, m.. __ z..(output, expected):
+        ... __.s..(m.., line)
 
 
 ___ test_text_to_four_cols():
@@ -61,5 +61,5 @@ ___ test_text_to_four_cols():
         r".*on it\.\s+I had a garden",
     ]
     output = text_to_columns(text).s..("\n")
-    ___ line, match __ z..(output, expected):
-        ... __.s..(match, line)
+    ___ line, m.. __ z..(output, expected):
+        ... __.s..(m.., line)

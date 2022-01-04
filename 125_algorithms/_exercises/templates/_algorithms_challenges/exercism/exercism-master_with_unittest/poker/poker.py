@@ -15,7 +15,7 @@ c_ Poker:
 
     ___ best_hand
         r.. [hand.hand ___ hand, score __ l..(
-            scores().items()) __ score __ best_score()]
+            scores().i.. __ score __ best_score()]
 
     ___ best_score
         r.. max(scores(), key=scores().get).score()
@@ -102,7 +102,7 @@ c_ Card:
 
     @classmethod
     ___ numberify_face_cards(cls, rank):
-        __ rank __ l..(cls.FACE_CARDS.keys()):
+        __ rank __ l..(cls.FACE_CARDS.k..
             r.. cls.FACE_CARDS[rank]
         r.. int(rank)
 

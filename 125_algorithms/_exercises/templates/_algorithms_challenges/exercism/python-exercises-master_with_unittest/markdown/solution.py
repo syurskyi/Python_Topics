@@ -21,7 +21,7 @@ ___ wrap(line, tag):
 ___ check_headers(line):
     pattern = '# (.*)'
     ___ i __ r..(6):
-        __ __.match(pattern, line):
+        __ __.m..(pattern, line):
             r.. wrap(line[(i + 2):], 'h' + s..(i + 1))
         pattern = '#' + pattern
     r.. line
@@ -29,7 +29,7 @@ ___ check_headers(line):
 
 ___ check_bold(line):
     bold_pattern = '(.*)__(.*)__(.*)'
-    bold_match = __.match(bold_pattern, line)
+    bold_match = __.m..(bold_pattern, line)
     __ bold_match:
         r.. bold_match.group(1) + wrap(bold_match.group(2), 'strong')\
             + bold_match.group(3)
@@ -39,7 +39,7 @@ ___ check_bold(line):
 
 ___ check_italic(line):
     italic_pattern = '(.*)_(.*)_(.*)'
-    italic_match = __.match(italic_pattern, line)
+    italic_match = __.m..(italic_pattern, line)
     __ italic_match:
         r.. italic_match.group(1) + wrap(italic_match.group(2), 'em')\
             + italic_match.group(3)
@@ -50,7 +50,7 @@ ___ check_italic(line):
 ___ parse_line(line, in_list):
     res = check_headers(line)
 
-    list_match = __.match(r'\* (.*)', res)
+    list_match = __.m..(r'\* (.*)', res)
 
     __ (list_match):
         __ n.. in_list:
@@ -63,7 +63,7 @@ ___ parse_line(line, in_list):
             res += '</ul>'
             in_list = F..
 
-    __ n.. __.match('<h|<ul|<li', res):
+    __ n.. __.m..('<h|<ul|<li', res):
         res = wrap(res, 'p')
 
     __ list_match __ N..

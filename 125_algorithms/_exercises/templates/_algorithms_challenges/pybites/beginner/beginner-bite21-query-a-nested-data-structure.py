@@ -19,26 +19,26 @@ cars = {
     'Jeep': ['Grand Cherokee', 'Cherokee', 'Trailhawk', 'Trackhawk']
 }
 
-___ get_all_jeeps(cars=cars):
+___ get_all_jeeps cars=cars
     """return a comma  + space (', ') separated string of jeep models (original order)"""
     separator = ', '
     r..(separator.j..(cars['Jeep']))
 
-___ get_first_model_each_manufacturer(cars=cars):
+___ get_first_model_each_manufacturer cars=cars
     """return a list of matching models (original ordering)"""
     output    # list
     ___ key, value __ cars.i..:
         output.a..(value[0])
     r.. output
 
-___ get_all_matching_models(cars=cars, grep='trail'):
+___ get_all_matching_models cars=cars, grep='trail'
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
     pass
 
 
-___ sort_car_models(cars=cars):
+___ sort_car_models cars=cars
     """sort the car models (values) and return the resulting cars dict"""
     pass
 

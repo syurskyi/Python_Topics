@@ -68,11 +68,11 @@ ___ test_gt_max_score_highest_belt(ninja, capfd):
 
 
 ___ test_new_score_should_be_int(ninja):
-    with pytest.raises(ValueError, match="Score takes an int"):
+    with pytest.raises(ValueError, m..="Score takes an int"):
         ninja.score = 'a'
 
 
 ___ test_new_score_should_be_higher(yellow_belt):
     ... yellow_belt.score __ 50
-    with pytest.raises(ValueError, match="Cannot lower score"):
+    with pytest.raises(ValueError, m..="Cannot lower score"):
         yellow_belt.score = 40

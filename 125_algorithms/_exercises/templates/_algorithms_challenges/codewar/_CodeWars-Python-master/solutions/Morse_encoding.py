@@ -7,7 +7,7 @@ c_ Morse:
     @classmethod
     ___ encode(self, message):
         words = message.s..(' ')
-        code = ('0' * 7).j..(['000'.j..([Morse.alpha[c.upper()]
+        code = ('0' * 7).j..(['000'.j..([Morse.alpha[c.u..]
                                            ___ c __ word]) ___ word __ words])
         result    # list
         ___ i __ r..(0, l..(code), 32):

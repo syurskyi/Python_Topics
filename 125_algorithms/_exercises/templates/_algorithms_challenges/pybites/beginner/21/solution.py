@@ -25,7 +25,7 @@
 #        'grep' string which defaults to 'trail' for this exercise,
 #        sort the resulting sequence alphabetically"""
 #     grep  ?.l..
-#     # flatten list of lists (less obvious way: "sum(cars.values(), [])")
+#     # flatten list of lists (less obvious way: "sum(cars.v.., [])")
 #     models  l.. c__.f..(cars.v..
 #     matching_models  [model ___ ? __ ?
 #                        __ ? __ ?.l..]

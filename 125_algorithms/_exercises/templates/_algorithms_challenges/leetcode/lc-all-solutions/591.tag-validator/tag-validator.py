@@ -35,7 +35,7 @@ c_ Solution(object):
       __ n.. 1 <= l..(tag) <= 9:
         r.. F..
       ___ c __ tag:
-        __ c n.. __ string.ascii_uppercase:
+        __ c n.. __ string.a..:
           r.. F..
       r.. T..
 

@@ -45,5 +45,5 @@ ___ convert_emea_date_to_amer_date(date):
     """Convert dd/mm/yyyy (EMEA date format) to mm/dd/yyyy
        (AMER date format)"""
     pattern = __.c..(r'(\d{2})/(\d{2})/(\d{4})')
-    m = pattern.match(date)
+    m = pattern.m..(date)
     r.. f'{m.group(2)}/{m.group(1)}/{m.group(3)}' __ m ____ date

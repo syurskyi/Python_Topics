@@ -33,7 +33,7 @@ ___ test_log_it(msg, level, caplog):
     log_it(LOG_LEVEL[level], msg)
     ... l..(caplog.records) __ 1
     ___ record __ caplog.records:
-        ... record.levelname __ level.upper()
+        ... record.levelname __ level.u..
         ... record.message __ msg
         ... record.name __ "pybites_logger"
 

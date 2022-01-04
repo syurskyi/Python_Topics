@@ -10,6 +10,6 @@ c_ BirthdayDict(d..):
         update(*args, **kwargs)
 
     ___ __setitem__(self, name, birthday):
-        __ any((birthday.day __ x.day a.. birthday.month __ x.month) ___ (_, x) __ items()):
+        __ any((birthday.day __ x.day a.. birthday.month __ x.month) ___ (_, x) __ i..:
             print(MSG.f..(name))
         d...__setitem__(self, name, birthday)

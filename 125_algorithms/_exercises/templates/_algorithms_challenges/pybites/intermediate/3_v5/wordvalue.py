@@ -29,7 +29,7 @@ ___ calc_word_value(word):
     """given a word calculate its value using LETTER_SCORES"""
     result = 0
     ___ l __ word:
-        lu = l.upper()
+        lu = l.u..
         result += LETTER_SCORES[lu] __ lu __ LETTER_SCORES ____ 0
     r.. result
 

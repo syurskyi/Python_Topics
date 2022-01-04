@@ -1,5 +1,5 @@
 ____ string _______ ascii_lowercase as alpha_lower
-____ string _______ ascii_uppercase as alpha_upper
+____ string _______ a.. as alpha_upper
 ALPHA_LEN = l..(alpha_lower)
 
 

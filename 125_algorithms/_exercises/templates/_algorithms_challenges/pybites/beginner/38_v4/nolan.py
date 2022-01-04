@@ -1,5 +1,5 @@
 _______ __
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>

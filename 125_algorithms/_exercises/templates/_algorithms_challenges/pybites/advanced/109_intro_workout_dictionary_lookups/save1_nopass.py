@@ -34,5 +34,5 @@ ___ get_workout_motd(day):
     __ day n.. __ WORKOUT_SCHEDULE:
         r.. INVALID_DAY
     ____:
-            print(WORKOUT_SCHEDULE.values()[day])
+            print(WORKOUT_SCHEDULE.v..[day])
     r..

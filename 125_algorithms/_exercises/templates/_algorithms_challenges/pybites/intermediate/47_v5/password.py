@@ -10,17 +10,17 @@ ___ validate_password(password: s..) -> bool:
         r.. F..
     __ password __ used_passwords:
         r.. F..
-    digits = lcase = ucase = punc = 0
+    d.. = lcase = ucase = punc = 0
     ___ c __ password:
         __ c.isdigit():
-            digits += 1
+            d.. += 1
         ____ c.isl..
             lcase += 1
         ____ c.isupper():
             ucase += 1
         ____ c __ PUNCTUATION_CHARS:
             punc += 1
-    __ digits > 0 a.. lcase > 1 a.. ucase > 0 a.. punc > 0:
+    __ d.. > 0 a.. lcase > 1 a.. ucase > 0 a.. punc > 0:
         used_passwords.add(password)
         r.. T..
     r.. F..

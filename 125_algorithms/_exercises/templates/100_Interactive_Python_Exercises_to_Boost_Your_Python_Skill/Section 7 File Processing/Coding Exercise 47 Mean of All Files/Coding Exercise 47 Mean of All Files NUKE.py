@@ -11,5 +11,5 @@ all_lines  s..(lists, [])
 
 matches  [__.c..("[0-9]+\.*[0-9]*").s..(line) ___ line __ all_lines]
 
-numbers  [float(match.group(0)) ___ match __ matches __ match]
+numbers  [float(m...group(0)) ___ m.. __ matches __ m..]
 print(s..(numbers)/l..(numbers))

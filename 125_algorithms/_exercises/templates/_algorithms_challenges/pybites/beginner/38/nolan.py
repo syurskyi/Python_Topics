@@ -1,4 +1,4 @@
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 _______ __
 
 # from OMDB
@@ -12,46 +12,37 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 </root>'''  # noqa E501
 
 
-___ get_tree():
+___ get_tree
     """You probably want to use ET.fromstring"""
-    root = ET.fromstring(xmlstring)
-    r.. root
+    root  ?.f.. ?
+    r.. ?
 
 
-___ get_movies():
+___ get_movies
     """Call get_tree and retrieve all movie titles, return a list or generator"""
 
-    ___ child __ get_tree():
-        y.. child.attrib['title']
+    ___ child __ g..
+        y.. ?.a.. title
 
 
-___ _get_runtime_helper(child):
+___ _get_runtime_helper child
 
 
-    r.. int(__.s..(r'\d+',child.attrib['runtime']).group())
+    r.. i.. __.s.. r'\d+' c__.a.. runtime .g..
 
-___ get_movie_longest_runtime():
+___ get_movie_longest_runtime
     """Call get_tree again and return the movie title for the movie with the longest
        runtime in minutes, for latter consider adding a _get_runtime helper"""
 
-    tree = get_tree()
+    tree  g..
 
-    longest_title = N..
-    longest_run_time = float("-inf")
-    ___ child __ get_tree():
-        __ _get_runtime_helper(child) > longest_run_time:
-            longest_run_time = _get_runtime_helper(child)
-            longest_title = child.attrib['title']
-
-
-    r.. longest_title
+    longest_title  N..
+    longest_run_time  f.. "-inf"
+    ___ child __ g..
+        __ _g.. ? > l..
+            longest_run_time  _g.. ?
+            longest_title  ?.a.. title
 
 
-
-
-
-
-
-
-
+    r.. ?
 

@@ -41,5 +41,5 @@ ___ validate_username(platform, username):
         raise ValueError
     plat = all_validators[platform]
     plat_range = l..(username) __ plat.r..
-    plat_match = plat.regex.match(username) __ n.. N..
+    plat_match = plat.regex.m..(username) __ n.. N..
     r.. plat_range a.. plat_match

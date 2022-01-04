@@ -15,4 +15,4 @@ c_ Solution(object):
             ___ i __ r..(j):
                 __ A[j]-A[i] < A[i] a.. A[j]-A[i] __ hashset:
                     hashmap[A[i], A[j]] = hashmap.get((A[j]-A[i], A[i]), 2) + 1
-        r.. max(hashmap.values() o. [0])
+        r.. max(hashmap.v.. o. [0])

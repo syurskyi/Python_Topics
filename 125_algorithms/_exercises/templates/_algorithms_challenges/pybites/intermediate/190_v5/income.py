@@ -1,7 +1,7 @@
 ____ pathlib _______ Path
 ____ collections _______ defaultdict
 ____ urllib.request _______ urlretrieve
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 
 # import the countries xml file
 tmp = Path('/tmp')
@@ -11,7 +11,7 @@ __ n.. countries.exists():
     urlretrieve('https://bit.ly/2IzGKav', countries)
 
 
-___ get_income_distribution(xml=countries):
+___ get_income_distribution(___=countries):
     """
     - Read in the countries xml as stored in countries variable.
     - Parse the XML
@@ -19,7 +19,7 @@ ___ get_income_distribution(xml=countries):
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    tree = ET.parse(xml)
+    tree = ET.parse(___)
     root = tree.getroot()
     namespaces = {'wb': 'http://www.worldbank.org'}
 

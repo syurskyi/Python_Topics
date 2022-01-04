@@ -35,8 +35,8 @@ with open(tempfile) as f:
 ___ get_pybites_top_tags(n=10):
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
-    match = __.findall(r'<category>([a-z]+)<\/category>', content)
-    c = Counter(match)
+    m.. = __.findall(r'<category>([a-z]+)<\/category>', content)
+    c = Counter(m..)
     r..(c.most_common(10))
 
 get_pybites_top_tags()

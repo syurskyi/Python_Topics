@@ -5,7 +5,7 @@ Created on Jan 10, 2017
 '''
 
 c_ Solution(object):
-    ___ letterCombinations(self, digits):
+    ___ letterCombinations(self, d..):
         """
         :type digits: str
         :rtype: List[str]
@@ -23,7 +23,7 @@ c_ Solution(object):
             9: l..('wxyz'),
         }
         l    # list
-        ___ d __ digits:
+        ___ d __ d..:
             d = int(d)
             __ d n.. __ (0, 1):
                 l.a..(letMap[d])
@@ -51,9 +51,9 @@ c_ Solution(object):
             '239',
         ]
         
-        ___ digits __ testCases:
-            print('digits: %s' % (digits))
-            result = letterCombinations(digits)
+        ___ d.. __ testCases:
+            print('digits: %s' % (d..))
+            result = letterCombinations(d..)
             print('result: %s' % (result))
             print('-+'*15+'-')
 

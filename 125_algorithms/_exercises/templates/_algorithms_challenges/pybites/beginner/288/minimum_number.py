@@ -1,9 +1,9 @@
 ____ typing _______ List
 
 
-___ minimum_number(digits: List[int]) -> int:
-    digits = s..(set(digits))
-    r.. 0 __ l..(digits)__0 ____ int("".j..(s..(i) ___ i __ digits))
+___ minimum_number(d..: List[int]) -> int:
+    d.. = s..(set(d..))
+    r.. 0 __ l..(d..)__0 ____ int("".j..(s..(i) ___ i __ d..))
 
 
 

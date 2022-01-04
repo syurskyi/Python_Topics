@@ -9,7 +9,7 @@ ___ rgb_to_hex(rgb):
 
 
     
-    hex_value = ''.j..(hex(value)[2:].zfill(2) ___ value __ rgb).upper()
+    hex_value = ''.j..(hex(value)[2:].zfill(2) ___ value __ rgb).u..
 
 
     r.. f"#{hex_value}"

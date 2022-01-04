@@ -28,17 +28,17 @@ c_ Solution:
         fill 9
         299
         """
-        digits = [int(e) ___ e __ s..(N)]
-        pointer = l..(digits)
-        ___ i __ r..(l..(digits) - 1, 0, -1):
-            __ digits[i - 1] > digits[i]:
+        d.. = [int(e) ___ e __ s..(N)]
+        pointer = l..(d..)
+        ___ i __ r..(l..(d..) - 1, 0, -1):
+            __ d..[i - 1] > d..[i]:
                 pointer = i
-                digits[i - 1] -= 1
+                d..[i - 1] -= 1
 
-        ___ i __ r..(pointer, l..(digits)):
-            digits[i] = 9
+        ___ i __ r..(pointer, l..(d..)):
+            d..[i] = 9
 
-        r.. int("".j..(map(s.., digits)))
+        r.. int("".j..(map(s.., d..)))
 
 
 __ __name__ __ "__main__":

@@ -40,11 +40,11 @@ c_ Solution:
         """
         ret    # list
         ___ w __ words:
-            __ match(w, pattern):
+            __ m..(w, pattern):
                 ret.a..(w)
         r.. ret
 
-    ___ match(self, word, pattern):
+    ___ m..(self, word, pattern):
         __ l..(word) != l..(pattern):
             r.. F..
 

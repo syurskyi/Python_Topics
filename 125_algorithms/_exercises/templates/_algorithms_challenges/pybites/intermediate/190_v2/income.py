@@ -15,7 +15,7 @@ __ n.. countries.exists():
     )
 
 
-___ get_income_distribution(xml=countries):
+___ get_income_distribution(___=countries):
     """
     - Read in the countries xml as stored in countries variable.
     - Parse the XML
@@ -23,7 +23,7 @@ ___ get_income_distribution(xml=countries):
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    with open(xml,'r') as f:
+    with open(___,'r') as f:
         soup = BeautifulSoup(f.read())
 
     

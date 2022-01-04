@@ -18,7 +18,7 @@ Assuming dictionary like this:
 
 With following code:
 
-for k, v in stats.values():
+for k, v in stats.v..:
    print(k)
    print(v)
 

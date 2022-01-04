@@ -14,7 +14,7 @@ ___ transpose(data):
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
     __ isi..(data, d..):
-        r.. z..(*data.items())
+        r.. z..(*data.i..
     ____:
         r.. z..(*data)
 

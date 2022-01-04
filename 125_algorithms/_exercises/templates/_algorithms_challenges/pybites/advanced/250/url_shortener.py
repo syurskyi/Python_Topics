@@ -1,8 +1,8 @@
 ____ math _______ floor
-____ string _______ ascii_lowercase, ascii_uppercase, digits
+____ string _______ ascii_lowercase, a.., d..
 ____ typing _______ Dict
 
-CODEX: s.. = digits + ascii_lowercase + ascii_uppercase
+CODEX: s.. = d.. + ascii_lowercase + a..
 BASE: int = l..(CODEX)
 # makeshift database record
 LINKS: Dict[int, s..] = {

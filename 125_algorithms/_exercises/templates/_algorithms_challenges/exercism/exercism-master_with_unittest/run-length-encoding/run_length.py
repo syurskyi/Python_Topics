@@ -13,7 +13,7 @@ ___ helper(g):
 
 ___ decode(string):
     groups = __.findall(r'(\d*\D{1})', string)
-    pairs = [[__.match(r'\d*', g).group(), g[-1]] ___ g __ groups]
+    pairs = [[__.m..(r'\d*', g).group(), g[-1]] ___ g __ groups]
 
     # Fix hardcoded 0 and 1 indices
     # Also change name of x variable

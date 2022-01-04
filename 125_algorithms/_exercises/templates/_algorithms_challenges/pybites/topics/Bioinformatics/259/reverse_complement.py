@@ -45,7 +45,7 @@ ___ _clean_sequence(sequence, str_table):
     t!t%ttttAACCG --> TTTTTTAACCG
     """
     bases = ''.j..([base.s...s..('\t')[0] ___ base __ str_table.splitlines() __ base[0] != '#' a.. base[:5] != ' Base'])
-    return_str = ''.j..([char.upper() ___ char __ sequence __ char.upper() __ bases])
+    return_str = ''.j..([char.u.. ___ char __ sequence __ char.u.. __ bases])
     r.. return_str
 
 

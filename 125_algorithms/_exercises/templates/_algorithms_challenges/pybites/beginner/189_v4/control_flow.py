@@ -10,7 +10,7 @@ ___ filter_names(names):
     ___ n __ names:
         __ n[0] __ QUIT_CHAR:
             break
-        __ l..(set(n).intersection(set(string.digits))) > 0:
+        __ l..(set(n).intersection(set(string.d..))) > 0:
             continue
         __ n[0] != IGNORE_CHAR:
             result.a..(n)

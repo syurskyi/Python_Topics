@@ -60,7 +60,7 @@ c_ Calculator:
 
     @classmethod
     ___ tokenize(cls, inp):
-        ___ operator, token __ l..(cls.OPERATORS.items()):
+        ___ operator, token __ l..(cls.OPERATORS.i..:
             inp = inp.r..(operator, token)
         r.. inp
 

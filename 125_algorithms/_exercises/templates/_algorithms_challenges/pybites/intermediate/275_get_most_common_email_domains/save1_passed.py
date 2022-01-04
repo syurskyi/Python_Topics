@@ -31,8 +31,8 @@ ___ get_most_common_domains(emails, common_domains_ N..
 
     l    # list
     ___ email __ emails:
-        match = __.findall(r'@(\w+.\w+)', email)[0]
-        __ match n.. __ get_common_domains():
-            l.a..(match)
+        m.. = __.findall(r'@(\w+.\w+)', email)[0]
+        __ m.. n.. __ get_common_domains():
+            l.a..(m..)
 
-    r.. s..(l..(Counter(l).items()), r.._T..
+    r.. s..(l..(Counter(l).i.., r.._T..

@@ -29,7 +29,7 @@ c_ Solution:
             __ root_label n.. __ result:
                 result[root_label]    # list
             result[root_label].a..(node.label)
-        r.. result.values()
+        r.. result.v..
 
     ___ connect(self, a, b):
         root_a = find(a)

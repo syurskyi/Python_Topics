@@ -14,7 +14,7 @@ c_ Ocr:
                  "8": [" _ ", "|_|", "|_|", "   "],
                  "9": [" _ ", "|_|", " _|", "   "]}
 
-    NUMS = {"".j..(value): key ___ key, value __ l..(GRID_NUMS.items())}
+    NUMS = {"".j..(value): key ___ key, value __ l..(GRID_NUMS.i..}
 
     @classmethod
     ___ numbers(cls, inp):

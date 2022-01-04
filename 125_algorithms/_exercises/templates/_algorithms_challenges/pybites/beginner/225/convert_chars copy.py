@@ -6,9 +6,9 @@ ___ convert_pybites_chars(text):
        Return the resulting string."""
     temp = ''
     ___ letter __ text:
-        __ letter.upper() __ PYBITES.upper():
+        __ letter.u.. __ PYBITES.u..:
             __ letter.isl..
-                temp += letter.upper()
+                temp += letter.u..
             ____ letter.isupper():
                 temp += letter.l..
         ____:

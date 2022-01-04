@@ -20,4 +20,4 @@ ___ group_names_by_country(data: s.. = data) -> defaultdict:
     ___ line __ data:
         lastname, name, country = line.s..(",")
         countries[country].a..(f"{name} {lastname}")
-    r.. s..(countries.items())
+    r.. s..(countries.i..

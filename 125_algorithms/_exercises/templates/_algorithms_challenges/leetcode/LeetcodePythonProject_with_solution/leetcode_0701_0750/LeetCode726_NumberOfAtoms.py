@@ -40,7 +40,7 @@ c_ Solution(object):
                 ___ elem, freq __ hashmap0.i..:
                     hashmap[elem] = hashmap.get(elem, 0)+freq*count
             ____:
-                __ i+1 < l..(s) a.. __.match('[a-z]', s[i+1]):
+                __ i+1 < l..(s) a.. __.m..('[a-z]', s[i+1]):
                     elem = s[i:i+2]
                     i+=1
                 ____:

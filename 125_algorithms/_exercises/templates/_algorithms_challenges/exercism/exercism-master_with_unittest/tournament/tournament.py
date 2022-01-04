@@ -52,7 +52,7 @@ c_ Tournament:
         r.. "\n".j..(table)
 
     ___ sorted_teams
-        alphabetic = s..(_teams.values(), key=l.... team: team.name)
+        alphabetic = s..(_teams.v.., key=l.... team: team.name)
         alphabetic_descending_points = s..(
             alphabetic, key=l.... team: team.points, r.._T..
         r.. alphabetic_descending_points

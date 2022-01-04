@@ -1,6 +1,6 @@
 ____ collections _______ n..
 _______ random
-____ string _______ ascii_uppercase
+____ string _______ a..
 
 ACTIONS = ['draw_card', 'play_again',
            'interchange_cards', 'change_turn_direction']

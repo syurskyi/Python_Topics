@@ -73,15 +73,15 @@ c_ OcrTest(unittest.TestCase):
                                             "                     "]))
 
     ___ test_3186547290
-        digits = '3186547290'
-        assertEqual(digits, number([" _     _  _  _     _  _  _  _ ",
+        d.. = '3186547290'
+        assertEqual(d.., number([" _     _  _  _     _  _  _  _ ",
                                          " _|  ||_||_ |_ |_|  | _||_|| |",
                                          " _|  ||_||_| _|  |  ||_  _||_|",
                                          "                              "]))
 
     ___ test_Lost
-        digits = '4815162342'
-        assertEqual(digits, number(["    _     _     _  _  _     _ ",
+        d.. = '4815162342'
+        assertEqual(d.., number(["    _     _     _  _  _     _ ",
                                          "|_||_|  ||_   ||_  _| _||_| _|",
                                          "  ||_|  | _|  ||_||_  _|  ||_ ",
                                          "                              "]))
@@ -93,11 +93,11 @@ c_ OcrTest(unittest.TestCase):
                                           "               "]))
 
     ___ test_grid3186547290
-        digits = '3186547290'
+        d.. = '3186547290'
         assertEqual([" _     _  _  _     _  _  _  _ ",
                           " _|  ||_||_ |_ |_|  | _||_|| |",
                           " _|  ||_||_| _|  |  ||_  _||_|",
-                          "                              "], grid(digits))
+                          "                              "], grid(d..))
 
     ___ test_invalid_grid
         assertRaises(ValueError, grid, '123a')

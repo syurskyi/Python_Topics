@@ -1,12 +1,12 @@
 ____ typing _______ List
 
 
-___ minimum_number(digits: List[int]) -> int:
+___ minimum_number(d..: List[int]) -> int:
     
-    __ n.. digits:
+    __ n.. d..:
         r.. 0
 
-    unique = set(digits)
+    unique = set(d..)
 
     unique = s..(unique)
 

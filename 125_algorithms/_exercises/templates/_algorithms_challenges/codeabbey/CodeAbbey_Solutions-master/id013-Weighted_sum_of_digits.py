@@ -3,9 +3,9 @@ ___ wsd(numOfSums): #wsd = Weighted sum of digits
         answer    # list
         ___ number __ sums:
                     num = 0
-                    digits = l..(number)
-                    ___ x __ r..(l..(digits)):
-                            num += int(digits[x]) * (x+1)
+                    d.. = l..(number)
+                    ___ x __ r..(l..(d..)):
+                            num += int(d..[x]) * (x+1)
                     answer.a..(s..(num))
         print(' '.j..(answer))
 wsd(input())

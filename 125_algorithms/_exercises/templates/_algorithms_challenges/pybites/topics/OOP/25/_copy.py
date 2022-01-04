@@ -33,7 +33,7 @@ c_ Promo:
         """Pick a random Bite that is not done yet, if all
            Bites are done, raise a NoBitesAvailable exception"""
         __ l..(all_bites) > l..(bites_done):
-            entry_list = l..(all_bites.items())
+            entry_list = l..(all_bites.i..
             w... T...
                 random_entry = random.choice(entry_list)
                 __ random_entry[0] n.. __ bites_done:

@@ -2,7 +2,7 @@ _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 ____ collections _______ defaultdict
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 
 # import the countries xml file
 tmp = Path(os.getenv("TMP", "/tmp"))
@@ -15,7 +15,7 @@ __ n.. countries.exists():
     )
 
 
-___ get_income_distribution(xml=countries):
+___ get_income_distribution(___=countries):
     """
     - Read in the countries xml as stored in countries variable.
     - Parse the XML

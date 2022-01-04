@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. s:
             r.. 0
 
-        s = s.upper()
+        s = s.u..
 
         ans = 0
         BASE = ord('A') - 1

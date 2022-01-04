@@ -27,12 +27,12 @@ c_ Solution(object):
         """
         n = 0
         w.... n < 6:
-            count = collections.Counter(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ match(w1, w2) __ 0)
+            count = collections.Counter(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ m..(w1, w2) __ 0)
             guess = m..(wordlist, key=l.... w:count[w])
             n = master.guess(guess)
-            wordlist = [w ___ w __ wordlist __ match(w, guess) __ n]
+            wordlist = [w ___ w __ wordlist __ m..(w, guess) __ n]
     
-    ___ match(self, w1, w2):
+    ___ m..(self, w1, w2):
         matches = 0
         ___ c1, c2 __ z..(w1, w2):
             __ c1 __ c2: matches += 1

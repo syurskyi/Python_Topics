@@ -71,8 +71,8 @@ ___ main():
             print('Bye')
             break
         matches = s..([entry ___ entry __ entries __ filter_entries_by_tag(term, entry)])
-        ___ match __ matches:
-            print(f'{match.date:10} | {match.title:50} | {match.link}')
+        ___ m.. __ matches:
+            print(f'{m...date:10} | {m...title:50} | {m...link}')
         print(f'\n{l..(matches)} entr{"y" __ l..(matches) __ 1 ____ "ies"} matched')
 
 

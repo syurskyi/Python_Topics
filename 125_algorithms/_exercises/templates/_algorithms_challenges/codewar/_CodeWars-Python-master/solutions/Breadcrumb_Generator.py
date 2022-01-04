@@ -75,9 +75,9 @@ ___ get_element_name(element):
         ___ i, c __ r..(l..(e..(acronyms))):
             __ c __ ignore_words:
                 acronyms.pop(i)
-        r.. ''.j..([s[0].upper() ___ s __ acronyms])
+        r.. ''.j..([s[0].u.. ___ s __ acronyms])
 
-    r.. ' '.j..([s.upper() ___ s __ acronyms])
+    r.. ' '.j..([s.u.. ___ s __ acronyms])
 
 
 

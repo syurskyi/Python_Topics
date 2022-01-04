@@ -25,7 +25,7 @@ ___ calc_word_value(word):
     """Given a word calculate its value using the LETTER_SCORES dict"""
     scores = d..(scrabble_scores)
     final_score    # list
-    ___ ch __ word.upper():
+    ___ ch __ word.u..:
         ___ key, value __ scores.i..:
             __ ch __ l..(value):
                 final_score.a..(key)

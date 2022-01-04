@@ -11,7 +11,7 @@ c_ Solution(object):
         """
         _______ __
         s = S
-        __ __.match('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s):
+        __ __.m..('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s):
             s = s.l..
             ind = s.find('@')
             name = s[:ind]

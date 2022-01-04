@@ -28,7 +28,7 @@ HTML = """<!DOCTYPE html>
 
 ___ extract_quotes(html: s.. = HTML) -> d..:
     d    # dict
-    match = __.findall(r'<p>\d+.\s"(.*)"\s-\s(.*)</p>', html)
-    ___ quote, author __ match:
+    m.. = __.findall(r'<p>\d+.\s"(.*)"\s-\s(.*)</p>', html)
+    ___ quote, author __ m..:
         d[author] = quote
     r.. d

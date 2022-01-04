@@ -34,7 +34,7 @@ ___ contains_digits(input_str):
     """Receives input string and checks if it contains
        one or more digits."""
     ___ c __ input_str:
-        __ c __ string.digits:
+        __ c __ string.d..:
             r.. T..
     r.. F..
 

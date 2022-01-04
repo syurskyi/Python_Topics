@@ -5,7 +5,7 @@ Luckily most APIs switched to JSON, but sometimes XML is all there is, so at lea
 Complete the get_tree, get_movies and get_movie_longest_runtime functions below. See the docstrings and tests for more info.
 '''
 
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
@@ -21,7 +21,7 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 ___ get_tree():
     """You probably want to use ET.fromstring"""
     #tree = ET.fromstring(xmlstring)
-    r.. ET.ElementTree(ET.fromstring(xmlstring))
+    r.. ET.E__(ET.fromstring(xmlstring))
     #return tree
 
 ___ get_movies():

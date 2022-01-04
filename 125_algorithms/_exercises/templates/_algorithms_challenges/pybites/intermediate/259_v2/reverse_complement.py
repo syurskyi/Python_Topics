@@ -39,7 +39,7 @@ ___ _clean_sequence(sequence, str_table):
     
     new_string    # list
     ___ c __ sequence:
-        c = c.upper()
+        c = c.u..
         __ c __ mapping:
             new_string.a..(c)
     
@@ -87,7 +87,7 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     
     new_string    # list
     ___ character __ sequence:
-        character = character.upper()
+        character = character.u..
         __ character __ mapping:
             new_string.a..(mapping[character])
 

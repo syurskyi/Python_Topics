@@ -1,5 +1,5 @@
 _______ os
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 ____ collections _______ defaultdict
@@ -15,7 +15,7 @@ __ n.. countries.exists():
     )
 
 
-___ get_income_distribution(xml=countries):
+___ get_income_distribution(___=countries):
     """
     - Read in the countries xml as stored in countries variable.
     - Parse the XML
@@ -24,7 +24,7 @@ ___ get_income_distribution(xml=countries):
       - values = list of country names (wb:name)
     """
     country_incomes = defaultdict(l..)
-    tree = ET.parse(xml)
+    tree = ET.parse(___)
     root = tree.getroot()
     ___ child __ root:
         level = ""

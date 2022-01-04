@@ -1,11 +1,11 @@
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 
 ____ nolan _______ get_tree, get_movies, get_movie_longest_runtime
 
 
 ___ test_get_tree():
     tree = get_tree()
-    ... t..(tree) __ (ET.ElementTree, ET.Element)
+    ... t..(tree) __ (ET.E__, ET.Element)
     ... l..(l..(tree.iter(tag='movie'))) __ 5
 
 

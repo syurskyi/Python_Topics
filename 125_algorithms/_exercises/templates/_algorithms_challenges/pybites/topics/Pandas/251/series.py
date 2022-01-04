@@ -34,7 +34,7 @@ ___ object_values_series() -> pd.Series:
     so index 101='A', 102='B' ... 125='Y', 126='Z'
     Don't worry about the series name.
     """
-    r.. pd.Series(l..(string.ascii_uppercase), index=[i+101 ___ i __ r..(26)])
+    r.. pd.Series(l..(string.a..), index=[i+101 ___ i __ r..(26)])
 
 
 print(alpha_index_series())

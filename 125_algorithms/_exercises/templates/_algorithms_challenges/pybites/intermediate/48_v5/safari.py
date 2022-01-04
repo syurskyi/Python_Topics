@@ -13,7 +13,7 @@ ___ create_chart():
     last_date = ''
     with open(LOG) as log:
         ___ line __ log:
-            (d,i,t) = line_check.match(line).groups()
+            (d,i,t) = line_check.m..(line).groups()
             __ d != last_date:
                 print(f'\n{d} ',end='')
                 last_date = d

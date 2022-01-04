@@ -21,7 +21,7 @@ c_ Solution(object):
         __ s[i].isdigit():
             helper(s, i+1, curr+s[i], res)
         ____:
-            helper(s, i+1, curr+s[i].upper(), res)
+            helper(s, i+1, curr+s[i].u.., res)
             helper(s, i+1, curr+s[i].l.., res)
     
     ___ test

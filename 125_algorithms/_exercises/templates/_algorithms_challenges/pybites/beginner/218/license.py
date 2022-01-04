@@ -7,7 +7,7 @@ ___ validate_license(key: s..) -> bool:
     """
 
     
-    r.. __.match(r"PB(\-[A-Z\d]{8}){4}$",key) __ n.. N..
+    r.. __.m..(r"PB(\-[A-Z\d]{8}){4}$",key) __ n.. N..
 
 
 

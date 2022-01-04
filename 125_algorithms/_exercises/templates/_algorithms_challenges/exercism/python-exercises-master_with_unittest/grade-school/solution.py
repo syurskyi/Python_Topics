@@ -14,4 +14,4 @@ c_ School(object):
 
     ___ s..
         r.. s..((grade, tuple(s..(students)))
-                      ___ grade, students __ db.items())
+                      ___ grade, students __ db.i..

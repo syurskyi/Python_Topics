@@ -35,30 +35,30 @@ c_ Solution:
             r.. ''
 
         times = [int(t) ___ t __ time __ t != ':']
-        digits    # list
+        d..    # list
 
         ___ a __ s..(times):
-            __ digits a.. a __ digits[-1]:
+            __ d.. a.. a __ d..[-1]:
                 continue
 
-            digits.a..(a)
+            d...a..(a)
 
-        ids = [digits.index(t) ___ t __ times]
+        ids = [d...index(t) ___ t __ times]
         ids[-1] += 1
 
-        w.... n.. is_valid(ids, digits):
+        w.... n.. is_valid(ids, d..):
             ids[-1] += 1
 
-        h = digits[ids[0]] * 10 + digits[ids[1]]
-        m = digits[ids[2]] * 10 + digits[ids[3]]
+        h = d..[ids[0]] * 10 + d..[ids[1]]
+        m = d..[ids[2]] * 10 + d..[ids[3]]
 
         r.. '{}:{}'.f..(
             '0' + s..(h) __ h < 10 ____ s..(h),
             '0' + s..(m) __ m < 10 ____ s..(m)
         )
 
-    ___ is_valid(self, ids, digits):
-        n = l..(digits)
+    ___ is_valid(self, ids, d..):
+        n = l..(d..)
         carry = 0
         i = l..(ids) - 1
 
@@ -72,8 +72,8 @@ c_ Solution:
             ids |  = [0] * l..(ids)
             r.. T..
 
-        h = digits[ids[0]] * 10 + digits[ids[1]]
-        m = digits[ids[2]] * 10 + digits[ids[3]]
+        h = d..[ids[0]] * 10 + d..[ids[1]]
+        m = d..[ids[2]] * 10 + d..[ids[3]]
 
         __ 0 <= h < 24 a.. 0 <= m < 60:
             r.. T..

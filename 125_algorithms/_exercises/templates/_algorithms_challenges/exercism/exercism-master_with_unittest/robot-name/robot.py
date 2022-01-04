@@ -15,7 +15,7 @@ c_ Robot:
         r.. random_prefix(2) + random_suffix(3)
 
     ___ random_prefix(self, n):
-        r.. ''.j..(random.sample(string.ascii_uppercase, n))
+        r.. ''.j..(random.sample(string.a.., n))
 
     ___ random_suffix(self, n):
-        r.. ''.j..(random.sample(string.digits, n))
+        r.. ''.j..(random.sample(string.d.., n))

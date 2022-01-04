@@ -58,7 +58,7 @@ c_ JsObject:
         r.. _local.k..
 
     ___ values
-        r.. _local.values()
+        r.. _local.v..
 
     ___ update(self, data):
         ___ k, v __ data.i..:

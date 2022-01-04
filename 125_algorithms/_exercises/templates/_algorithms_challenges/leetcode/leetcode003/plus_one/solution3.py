@@ -7,13 +7,13 @@ the list.
 """
 
 c_ Solution(object):
-    ___ plusOne(self, digits):
+    ___ plusOne(self, d..):
         """
         :type digits: List[int]
         :rtype: List[int]
         """
-        digits = digits[::-1]
-        n = l..(digits)
+        d.. = d..[::-1]
+        n = l..(d..)
         temp = 0
         # Treat "plus one" as the initial carry being 1
         carry = 1
@@ -22,7 +22,7 @@ c_ Solution(object):
         w.... i < n o. carry > 0:
             temp = 0
             __ i < n:
-                temp += digits[i]
+                temp += d..[i]
             __ carry > 0:
                 temp += carry
             digit = temp % 10

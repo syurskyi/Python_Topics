@@ -1,9 +1,9 @@
-____ string _______ ascii_uppercase,digits
+____ string _______ a..,d..
 _______ random
 _______ secrets
 
 
-s = ascii_uppercase + digits
+s = a.. + d..
 
 ___ gen_key(parts=4,chars_per_part=8):
 

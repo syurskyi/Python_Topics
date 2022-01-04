@@ -5,16 +5,16 @@ ___ is_armstrong(n: int) -> bool:
 
     actual_num = n 
 
-    digits = math.floor(math.log(n,10)) + 1
+    d.. = math.floor(math.log(n,10)) + 1
 
-    print(digits)
+    print(d..)
 
 
     
     sum_digits =0
 
     w.... n:
-        sum_digits += (n % 10)**digits
+        sum_digits += (n % 10)**d..
         n //= 10
 
     

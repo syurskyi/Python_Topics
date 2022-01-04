@@ -30,7 +30,7 @@ ___ create_user_bar_chart(content):
       ____:
          tz_frequency[tz] += 1
    
-   tz_frequency = s..(tz_frequency.items())
+   tz_frequency = s..(tz_frequency.i..
 
    table = ""
    ___ tz __ tz_frequency:

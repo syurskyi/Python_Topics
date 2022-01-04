@@ -10,7 +10,7 @@ ___ calculate_gc_content(sequence):
 
     counts = Counter()
 
-    ___ character __ sequence.upper():
+    ___ character __ sequence.u..:
         __ character __ dna:
             counts[character] += 1
 

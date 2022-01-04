@@ -51,7 +51,7 @@ ___ actual():
     r.. get_income_distribution()
 
 
-@pytest.mark.parametrize("income, countries", EXPECTED.items())
+@pytest.mark.parametrize("income, countries", EXPECTED.i..
 ___ test_return_function(actual, income, countries):
     ... income __ actual
     ... s..(actual[income]) __ s..(countries)

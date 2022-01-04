@@ -27,7 +27,7 @@ c_ Color:
 
     ___ - , color: s..):
         colorname = color
-        rgb = COLOR_NAMES.get(color.upper(), N..)
+        rgb = COLOR_NAMES.get(color.u.., N..)
 
     @classmethod
     ___ hex2rgb(cls, hex_str: s..) -> tuple:

@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a list of strings, [s1, s2]
-    ___ letterCombinations(self, digits):
+    ___ letterCombinations(self, d..):
         d = {
             '2': 'abc',
             '3': 'def',
@@ -11,16 +11,16 @@ c_ Solution:
             '8': 'tuv',
             '9': 'wxyz',
         }
-        r.. combinations(digits, 0, d)
+        r.. combinations(d.., 0, d)
 
-    ___ combinations(self, digits, i, d):
-        __ i __ l..(digits):
+    ___ combinations(self, d.., i, d):
+        __ i __ l..(d..):
             r.. ['']
         ____:
             res    # list
-            rest_combs = combinations(digits, i + 1, d)
+            rest_combs = combinations(d.., i + 1, d)
             ___ comb __ rest_combs:
-                number = digits[i]
+                number = d..[i]
                 letters = d[number]
                 ___ letter __ letters:
                     res.a..(letter + comb)

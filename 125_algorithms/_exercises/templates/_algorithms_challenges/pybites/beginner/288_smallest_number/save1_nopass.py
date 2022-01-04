@@ -1,14 +1,14 @@
 ____ typing _______ List
 _______ i..
 
-___ minimum_number(digits: List[int]) -> int:
+___ minimum_number(d..: List[int]) -> int:
     l..    # list
-    ___ i __ r..(l..(digits)):
-        __ l..(digits) __ 1:
-            l...a..(digits)
-        __ digits __ 0:
+    ___ i __ r..(l..(d..)):
+        __ l..(d..) __ 1:
+            l...a..(d..)
+        __ d.. __ 0:
             l...a..(o)
-        ___ set __ i...permutations(digits, r_ N..
+        ___ set __ i...permutations(d.., r_ N..
             l...a..("".j..(filter(s...isdigit, s..(set))))
     new_list = l..[1:]
     ___ i __ r..(0, l..(new_list)):

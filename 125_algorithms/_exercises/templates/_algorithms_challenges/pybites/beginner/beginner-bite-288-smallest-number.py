@@ -21,10 +21,10 @@ ____ typing _______ List
 # s = ('').join(lista)
 # jak zamienic liste intow na liste str?
 # d = [str(x) for x in c]
-___ minimum_number(digits: List[int]) -> int:
-    __ l..(digits) __ 0:
+___ minimum_number(d..: List[int]) -> int:
+    __ l..(d..) __ 0:
         r.. 0
-    reduced = set(digits)
+    reduced = set(d..)
     s.. = s..(reduced)
     r = ""
     ___ e __ s..:

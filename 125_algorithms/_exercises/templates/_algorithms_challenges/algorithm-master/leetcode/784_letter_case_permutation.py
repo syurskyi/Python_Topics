@@ -15,7 +15,7 @@ c_ Solution:
             ans.a..(''.j..(path))
             r..
 
-        options = [s[i]] __ s[i].isdigit() ____ [s[i].l.., s[i].upper()]
+        options = [s[i]] __ s[i].isdigit() ____ [s[i].l.., s[i].u..]
 
         ___ c __ options:
             path.a..(c)

@@ -9,7 +9,7 @@ ___ validate_password_1(password):
         r.. F..
     __ n.. any(elem __ password ___ elem __ string.ascii_lowercase):
         r.. F..
-    __ n.. any(elem __ password ___ elem __ string.ascii_uppercase):
+    __ n.. any(elem __ password ___ elem __ string.a..):
         r.. F..
     __ n.. any(elem __ password ___ elem __ PUNCTUATION_CHARS):
         r.. F..

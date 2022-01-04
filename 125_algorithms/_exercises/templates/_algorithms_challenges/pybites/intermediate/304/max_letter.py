@@ -37,7 +37,7 @@ ___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
             __ most_common_count > max_count:
 
                 max_count = most_common_count
-                max_word = word.strip(string.punctuation + string.digits + '«¿')
+                max_word = word.strip(string.punctuation + string.d.. + '«¿')
                 max_letter = most_common_letter
 
 

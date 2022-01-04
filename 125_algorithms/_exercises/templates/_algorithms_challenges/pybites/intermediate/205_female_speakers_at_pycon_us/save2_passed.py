@@ -23,19 +23,19 @@ ___ get_pycon_speaker_first_names(soup_ N..
         speaker = speaker.text.s..
 
         # Multiple speakers separated by comma
-        __ __.match(r'.*,.*', speaker):
+        __ __.m..(r'.*,.*', speaker):
             multiple_speakers = speaker.s..(', ')
             ___ s __ multiple_speakers:
                 speakers.a..(s.s.. [0])
 
         # Multiple speakers seperated by slash
-        ____ __.match(r'.*/.*', speaker):
+        ____ __.m..(r'.*/.*', speaker):
             multiple_speakers = speaker.s..(' / ')
             ___ s __ multiple_speakers:
                 speakers.a..(s.s.. [0])
 
         # Speaker name begins with acronym
-        ____ __.match(r'[A-Z]\.', speaker):
+        ____ __.m..(r'[A-Z]\.', speaker):
             speakers.a..(speaker.s.. [1])
 
         ____:

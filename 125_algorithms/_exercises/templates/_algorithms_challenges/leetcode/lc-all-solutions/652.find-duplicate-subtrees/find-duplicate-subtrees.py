@@ -24,4 +24,4 @@ c_ Solution(object):
 
     count = collections.defaultdict(l..)
     merkle(root)
-    r.. [nodes.pop() ___ nodes __ count.values() __ l..(nodes) >= 2]
+    r.. [nodes.pop() ___ nodes __ count.v.. __ l..(nodes) >= 2]

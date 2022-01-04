@@ -4,7 +4,7 @@ ____ time _______ mktime
 ____ feedparser _______ parse
 _______ __
 
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 
 FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 

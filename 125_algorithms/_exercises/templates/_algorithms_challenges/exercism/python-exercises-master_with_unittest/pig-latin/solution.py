@@ -5,11 +5,11 @@ re_vowel = __.c..('^([aeiou]|y[^aeiou]|xr)[a-z]*')
 
 
 ___ split_initial_consonant_sound(word):
-    r.. re_cons.match(word).groups()
+    r.. re_cons.m..(word).groups()
 
 
 ___ starts_with_vowel_sound(word):
-    r.. re_vowel.match(word) __ n.. N..
+    r.. re_vowel.m..(word) __ n.. N..
 
 
 ___ translate(text):

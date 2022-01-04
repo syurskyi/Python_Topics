@@ -55,7 +55,7 @@ ___ high_low_record_breakers_for_2015():
             'date': d__.strptime(x['Date'], '%Y-%m-%d').date(),
             'element': x['Element'],
             'value': int(x['Data_Value'])
-        } ___ x __ csv.DictReader(f) __ n.. __.match(r'\d{4}-02-29', x['Date'])],
+        } ___ x __ csv.DictReader(f) __ n.. __.m..(r'\d{4}-02-29', x['Date'])],
             key=l.... x: (x['id'] + x['date'].strftime('%m%d%Y')))
     dataset = [{'id': x['id'],
                 'monthday': x['date'].strftime('%m%d'),

@@ -7,7 +7,7 @@ lose = '{} beats {}, you lose!'
 win = '{} beats {}, you win!'
 tie = 'tie!'
 
-choices = defeated_by.values()
+choices = defeated_by.v..
 
 ___ _get_computer_move():
     """Randomly select a move"""

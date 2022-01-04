@@ -15,7 +15,7 @@ c_ Solution(object):
         count = 0
         ___ i __ r..(l..(S)-1, -1, -1):
             __ S[i] != '-':
-                res = S[i].upper() + res
+                res = S[i].u.. + res
                 count += 1
                 __ count > 0 a.. count % K __ 0:
                     res = '-' + res

@@ -19,11 +19,11 @@ ___ convert(number: int, base: int = 2) -> s..:
     __ base < 2 o. base > 36:
         raise ValueError
 
-    digits    # list
+    d..    # list
     w.... number > 0:
-        digits.a..(number % base)
+        d...a..(number % base)
         number //= base
 
-    digits = l..(map(digit_map, digits))
+    d.. = l..(map(digit_map, d..))
 
-    r.. ''.j..(r..(digits))
+    r.. ''.j..(r..(d..))

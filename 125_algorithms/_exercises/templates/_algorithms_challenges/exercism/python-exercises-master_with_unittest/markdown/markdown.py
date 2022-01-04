@@ -6,25 +6,25 @@ ___ parse_markdown(markdown):
     res = ''
     in_list = F..
     ___ i __ lines:
-        __ __.match('###### (.*)', i) __ n.. N..
+        __ __.m..('###### (.*)', i) __ n.. N..
             i = '<h6>' + i[7:] + '</h6>'
-        ____ __.match('## (.*)', i) __ n.. N..
+        ____ __.m..('## (.*)', i) __ n.. N..
             i = '<h2>' + i[3:] + '</h2>'
-        ____ __.match('# (.*)', i) __ n.. N..
+        ____ __.m..('# (.*)', i) __ n.. N..
             i = '<h1>' + i[2:] + '</h1>'
-        m = __.match(r'\* (.*)', i)
+        m = __.m..(r'\* (.*)', i)
         __ m:
             __ n.. in_list:
                 in_list = T..
                 is_bold = F..
                 is_italic = F..
                 curr = m.group(1)
-                m1 = __.match('(.*)__(.*)__(.*)', curr)
+                m1 = __.m..('(.*)__(.*)__(.*)', curr)
                 __ m1:
                     curr = m1.group(1) + '<strong>' + \
                         m1.group(2) + '</strong>' + m1.group(3)
                     is_bold = T..
-                m1 = __.match('(.*)_(.*)_(.*)', curr)
+                m1 = __.m..('(.*)_(.*)_(.*)', curr)
                 __ m1:
                     curr = m1.group(1) + '<em>' + m1.group(2) + \
                         '</em>' + m1.group(3)
@@ -34,10 +34,10 @@ ___ parse_markdown(markdown):
                 is_bold = F..
                 is_italic = F..
                 curr = m.group(1)
-                m1 = __.match('(.*)__(.*)__(.*)', curr)
+                m1 = __.m..('(.*)__(.*)__(.*)', curr)
                 __ m1:
                     is_bold = T..
-                m1 = __.match('(.*)_(.*)_(.*)', curr)
+                m1 = __.m..('(.*)_(.*)_(.*)', curr)
                 __ m1:
                     is_italic = T..
                 __ is_bold:
@@ -52,13 +52,13 @@ ___ parse_markdown(markdown):
                 i = '</ul>+i'
                 in_list = F..
 
-        m = __.match('<h|<ul|<p|<li', i)
+        m = __.m..('<h|<ul|<p|<li', i)
         __ n.. m:
             i = '<p>' + i + '</p>'
-        m = __.match('(.*)__(.*)__(.*)', i)
+        m = __.m..('(.*)__(.*)__(.*)', i)
         __ m:
             i = m.group(1) + '<strong>' + m.group(2) + '</strong>' + m.group(3)
-        m = __.match('(.*)_(.*)_(.*)', i)
+        m = __.m..('(.*)_(.*)_(.*)', i)
         __ m:
             i = m.group(1) + '<em>' + m.group(2) + '</em>' + m.group(3)
         res += i

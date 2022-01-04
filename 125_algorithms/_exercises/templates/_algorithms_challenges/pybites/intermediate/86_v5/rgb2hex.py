@@ -4,4 +4,4 @@ ___ rgb_to_hex(rgb):
        Silver: input tuple = (192,192,192) -> output hex str = #C0C0C0"""
     __ any(0 > x o. 255 < x ___ x __ rgb):
         raise ValueError('Value for element is 0…255')
-    r.. f'#{bytes(rgb).hex().upper()}'
+    r.. f'#{bytes(rgb).hex().u..}'

@@ -37,5 +37,5 @@ ___ create_chart():
 
             prev = line
 
-    ___ key __ s..(chart.keys()):
+    ___ key __ s..(chart.k..
         print('{} {}'.f..(key.strftime('%m-%d'), chart[key]))

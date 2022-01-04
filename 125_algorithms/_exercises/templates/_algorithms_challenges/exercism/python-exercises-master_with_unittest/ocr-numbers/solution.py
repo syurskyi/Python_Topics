@@ -21,23 +21,23 @@ ___ number(ocr):
             any(l..(r) != l..(ocr[0]) ___ r __ ocr)):
         raise ValueError('Wrong grid size.')
     numbers = split_ocr(ocr)
-    digits = ''
+    d.. = ''
     ___ n __ numbers:
         try:
-            digits += s..(OCR_LIST.index(n))
+            d.. += s..(OCR_LIST.index(n))
         except ValueError:
-            digits += '?'
-    r.. digits
+            d.. += '?'
+    r.. d..
 
 
-___ grid(digits):
+___ grid(d..):
     try:
-        __ n.. digits.isdigit():
+        __ n.. d...isdigit():
             raise ValueError('String should be numeric.')
     except AttributeError:
         raise ValueError('Argument should be a string.')
     ocr = ['' ___ i __ r..(ROW)]
-    ___ d __ digits:
+    ___ d __ d..:
         ___ r __ r..(ROW):
             ocr[r] += OCR_LIST[int(d)][r]
     r.. ocr

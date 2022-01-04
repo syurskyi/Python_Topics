@@ -37,9 +37,9 @@ ___ get_scale(weather):
 
 ___ get_location_name(location):
     __ n.. location.state:
-        r.. f'{location.city.capitalize()}, {location.country.upper()}'
+        r.. f'{location.city.capitalize()}, {location.country.u..}'
     ____:
-        r.. f'{location.city.capitalize()}, {location.state.upper()}, {location.country.upper()}'
+        r.. f'{location.city.capitalize()}, {location.state.u..}, {location.country.u..}'
 
 
 ___ call_weather_api(loc):

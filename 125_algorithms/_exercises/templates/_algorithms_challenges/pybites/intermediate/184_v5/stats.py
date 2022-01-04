@@ -30,23 +30,23 @@ c_ BiteStats:
     $
     ___ number_bites_accessed(self) -> int:
         """Get the number of unique Bites accessed"""
-        r.. l..(_count_attribute('bite').items())
+        r.. l..(_count_attribute('bite').i..
 
     $
     ___ number_bites_resolved(self) -> int:
         """Get the number of unique Bites resolved (completed=True)"""
-        r.. l..(_count_attribute('bite', T..).items())
+        r.. l..(_count_attribute('bite', T..).i..
 
     $
     ___ number_users_active(self) -> int:
         """Get the number of unique users in the data set"""
-        r.. l..(_count_attribute('user').items())
+        r.. l..(_count_attribute('user').i..
 
     $
     ___ number_users_solving_bites(self) -> int:
         """Get the number of unique users that resolved
            one or more Bites"""
-        r.. l..(_count_attribute('user', T..).items())
+        r.. l..(_count_attribute('user', T..).i..
 
     $
     ___ top_bite_by_number_of_clicks(self) -> s..:

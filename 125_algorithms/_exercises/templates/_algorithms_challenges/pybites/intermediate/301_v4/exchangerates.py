@@ -63,14 +63,14 @@ ___ match_daily_rates(start: date,
     result    # dict
     ___ day __ days:
         __ day __ data_days:
-            match = day
+            m.. = day
         ____:
             closest = m..(data_days, key=l.... x: abs((x-day).days))
             __ closest > day:
-                match = data_days[data_days.index(closest) - 1]
+                m.. = data_days[data_days.index(closest) - 1]
             ____:
-                match = closest
-        result[day] = match
+                m.. = closest
+        result[day] = m..
 
     r.. result
 
@@ -80,11 +80,11 @@ ___ exchange_rates(
 ) -> OrderedDict:
     daily_rates = _date_conv(json.loads(RATES_FILE.read_text())['rates'])
     start_date, end_date = map(_parse_date, [start_date, end_date])
-    __ start_date < m..(daily_rates.keys()) o. end_date > max(daily_rates.keys()):
+    __ start_date < m..(daily_rates.keys()) o. end_date > max(daily_rates.k..
         raise ValueError('Date out of range for data')
     matches = match_daily_rates(start_date, end_date, daily_rates)
     result    # dict
-    ___ day, match __ matches.i..:
-        result[day] = {"Base Date": match, **daily_rates[match]}
+    ___ day, m.. __ matches.i..:
+        result[day] = {"Base Date": m.., **daily_rates[m..]}
 
     r.. result

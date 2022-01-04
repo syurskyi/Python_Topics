@@ -37,7 +37,7 @@ c_ Solution(object):
   # finally, return max(# of task, total counted number)
   ___ leastInterval(self, tasks, n):
     d = collections.Counter(tasks)
-    counts = d.values()
+    counts = d.v..
     longest = max(counts)
     ans = (longest - 1) * (n + 1)
     ___ count __ counts:

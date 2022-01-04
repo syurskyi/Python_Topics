@@ -108,7 +108,7 @@ ___ similarity(s1, s2):
             common.a..(c)
             s2.remove(c)
 
-    vals = Counter(common).values()
+    vals = Counter(common).v..
     r.. s..(vals) / (1 + pow(dlen, 2))
 
 

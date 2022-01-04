@@ -1,9 +1,9 @@
-_______ string
-_______ secrets
-
-___ gen_key(parts=4, chars_per_part=8):
-    alphabet = string.ascii_uppercase + string.digits
-    segment = [''.j..(secrets.choice(alphabet) ___ i __ r..(chars_per_part)) ___ j __ r..(parts)]
-    r.. ('-'.j..(part ___ part __ segment))
-
-#print(gen_key(parts=8, chars_per_part=2))
+# _______ s..
+# _______ se..
+#
+# ___ gen_key parts=4, chars_per_part=8
+#     alphabet s__.a.. + s__.d..
+#     segment  [''.j.. se__.c.. ? ___ i __ r.. c.. ___ j __ r.. p..
+#     r..  '-'.j.. part ___ ? __ ?
+#
+# #print(gen_key(parts=8, chars_per_part=2))

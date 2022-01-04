@@ -13,4 +13,4 @@ ___ get_duplicate_indices(words):
     wordlist = defaultdict(l..)
     ___ pos, word __ e..(words):
         wordlist[word].a..(pos)
-    r.. s..(p[0] ___ p __ wordlist.values() __ l..(p) > 1)
+    r.. s..(p[0] ___ p __ wordlist.v.. __ l..(p) > 1)

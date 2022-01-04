@@ -75,24 +75,24 @@ c_ OcrTest(unittest.TestCase):
             ]), '0010110')
 
     ___ test_3186547290
-        digits = '3186547290'
+        d.. = '3186547290'
         assertEqual(
             number([
                 " _     _  _  _     _  _  _  _ ",
                 " _|  ||_||_ |_ |_|  | _||_|| |",
                 " _|  ||_||_| _|  |  ||_  _||_|",
                 "                              "
-            ]), digits)
+            ]), d..)
 
     ___ test_Lost
-        digits = '4815162342'
+        d.. = '4815162342'
         assertEqual(
             number([
                 "    _     _     _  _  _     _ ",
                 "|_||_|  ||_   ||_  _| _||_| _|",
                 "  ||_|  | _|  ||_||_  _|  ||_ ",
                 "                              "
-            ]), digits)
+            ]), d..)
 
     ___ test_garble_middle
         assertEqual(
@@ -104,9 +104,9 @@ c_ OcrTest(unittest.TestCase):
             ]), '12?45')
 
     ___ test_grid3186547290
-        digits = '3186547290'
+        d.. = '3186547290'
         assertEqual(
-            grid(digits), [
+            grid(d..), [
                 " _     _  _  _     _  _  _  _ ",
                 " _|  ||_||_ |_ |_|  | _||_|| |",
                 " _|  ||_||_| _|  |  ||_  _||_|",

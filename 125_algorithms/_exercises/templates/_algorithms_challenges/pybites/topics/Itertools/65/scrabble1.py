@@ -22,7 +22,7 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 
 ___ calc_word_value(word):
     """Calc a given word value based on Scrabble LETTER_SCORES mapping"""
-    r.. s..(LETTER_SCORES.get(char.upper(), 0) ___ char __ word)
+    r.. s..(LETTER_SCORES.get(char.u.., 0) ___ char __ word)
 
 ___ get_possible_dict_words(draw):
     """Get all possible words from a draw (list of letters) which are

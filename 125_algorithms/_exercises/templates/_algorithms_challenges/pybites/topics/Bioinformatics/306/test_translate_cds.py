@@ -89,7 +89,7 @@ ___ test_translate_cds(cds, table, expected):
     """
     result = translate_cds(cds, table)
     ... isi..(result, s..)
-    ... result.upper() __ expected
+    ... result.u.. __ expected
 
 
 @pytest.mark.parametrize(

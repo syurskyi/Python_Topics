@@ -32,6 +32,6 @@ ___ test_object_values_series():
     ser = se.object_values_series()
     ... isi..(ser, pd.Series)
     ... l..(ser) __ 26
-    ... a..(c __ string.ascii_uppercase ___ c __ ser.values)
+    ... a..(c __ string.a.. ___ c __ ser.values)
     ... ser[101] __ "A"
     ... ser[126] __ "Z"

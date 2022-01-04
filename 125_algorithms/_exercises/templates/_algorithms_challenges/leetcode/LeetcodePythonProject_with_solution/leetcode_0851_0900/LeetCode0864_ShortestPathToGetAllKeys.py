@@ -24,8 +24,8 @@ c_ Solution(object):
         deque.a..([starti, startj, 0, '.@abcdef', 0])
         w.... deque:
             i, j, steps, keys, collectedKeys = deque.pop(0)
-            __ grid[i][j] __ 'abcdef' a.. grid[i][j].upper() n.. __ keys:
-                keys += grid[i][j].upper()
+            __ grid[i][j] __ 'abcdef' a.. grid[i][j].u.. n.. __ keys:
+                keys += grid[i][j].u..
                 collectedKeys += 1
             __ collectedKeys __ numOfKeys:
                 r.. steps

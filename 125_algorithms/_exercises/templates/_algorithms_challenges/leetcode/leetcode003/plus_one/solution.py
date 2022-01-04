@@ -1,13 +1,13 @@
 c_ Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
-    ___ plusOne(self, digits):
-        digits.reverse()
+    ___ plusOne(self, d..):
+        d...reverse()
         res    # list
-        t = (digits[0] + 1) % 10
-        carry = (digits[0] + 1) / 10
+        t = (d..[0] + 1) % 10
+        carry = (d..[0] + 1) / 10
         res.a..(t)
-        ___ d __ digits[1:]:
+        ___ d __ d..[1:]:
             t = (d + carry) % 10
             carry = (d + carry) / 10
             res.a..(t)

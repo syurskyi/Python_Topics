@@ -1,15 +1,15 @@
 ____ functools _______ reduce
 
 
-___ largest_product(digits, size):
-    products = [reduce(l.... x, y: x * y, s, 1) ___ s __ slices(digits, size)]
+___ largest_product(d.., size):
+    products = [reduce(l.... x, y: x * y, s, 1) ___ s __ slices(d.., size)]
     r.. max(products)
 
 
-___ slices(digits, size):
-    __ l..(digits) < size:
+___ slices(d.., size):
+    __ l..(d..) < size:
         raise ValueError
-    r.. each_cons(l..(map(int, l..(digits))), size)
+    r.. each_cons(l..(map(int, l..(d..))), size)
 
 
 ___ each_cons(x, size):

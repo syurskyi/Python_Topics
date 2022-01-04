@@ -14,7 +14,7 @@ ___ translate_cds(cds: s.., translation_table: s..) -> s..:
     try:
         clean_cds = ''.j..([char ___ char __ cds __ char.isalpha()])
         r.. s..(Seq(clean_cds)
-                .upper()
+                .u..
                 .translate(table=translation_table, to_stop=T.., cds=T..)
                 )
     except TranslationError:

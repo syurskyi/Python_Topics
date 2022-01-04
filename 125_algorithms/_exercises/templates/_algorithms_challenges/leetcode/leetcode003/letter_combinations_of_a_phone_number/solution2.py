@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a list of strings, [s1, s2]
-    ___ letterCombinations(self, digits):
+    ___ letterCombinations(self, d..):
         d = {
             '2': 'abc',
             '3': 'def',
@@ -13,17 +13,17 @@ c_ Solution:
         }
         cand    # list
         res    # list
-        letter_combination_aux(digits, d, cand, res)
+        letter_combination_aux(d.., d, cand, res)
         r.. res
 
-    ___ letter_combination_aux(self, digits, d, cand, res):
-        __ n.. digits:
+    ___ letter_combination_aux(self, d.., d, cand, res):
+        __ n.. d..:
             res.a..(''.j..(cand))
         ____:
-            digit = digits[0]
+            digit = d..[0]
             __ digit __ d:
                 letters = d[digit]
                 ___ letter __ letters:
                     cand.a..(letter)
-                    letter_combination_aux(digits[1:], d, cand, res)
+                    letter_combination_aux(d..[1:], d, cand, res)
                     cand.pop()

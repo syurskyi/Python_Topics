@@ -26,7 +26,7 @@ c_ Solution:
         """
         counter = {
             alphabet: 0
-            ___ alphabet __ string.ascii_uppercase
+            ___ alphabet __ string.a..
         }
         lo = 0
         ret = 0

@@ -37,7 +37,7 @@ ___ _clean_sequence(sequence, str_table):
     characters
     t!t%ttttAACCG --> TTTTTTAACCG
     """
-    sequence_clean = [char.upper() ___ char __ l..(sequence) __ char.isalpha() a.. char.upper() __ str_table]
+    sequence_clean = [char.u.. ___ char __ l..(sequence) __ char.isalpha() a.. char.u.. __ str_table]
     r.. "".j..(sequence_clean)
 
 

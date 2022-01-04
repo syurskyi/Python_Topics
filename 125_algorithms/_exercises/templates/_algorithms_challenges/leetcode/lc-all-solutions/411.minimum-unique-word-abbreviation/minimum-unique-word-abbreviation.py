@@ -12,7 +12,7 @@ c_ Solution(object):
         ___ l __ r..(r..(1, l..(w) - i + 1)):
           dfs(w[:i] + [s..(l)] + w[i + l:], i + 2, res)
 
-    ___ match(src, dest):
+    ___ m..(src, dest):
       i = 0
       ___ c __ src:
         __ c.isdigit():
@@ -35,7 +35,7 @@ c_ Solution(object):
     ___ w __ res:
       allMiss = T..
       ___ d __ dictionary:
-        __ match(w, d):
+        __ m..(w, d):
           allMiss = F..
           break
       __ allMiss:

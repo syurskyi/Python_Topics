@@ -1,9 +1,9 @@
-____ string _______ ascii_uppercase
+____ string _______ a..
 ____ i.. _______ cycle
 
 
 ___ sequence_generator():
-    alphabet_list = cycle(ascii_uppercase)
+    alphabet_list = cycle(a..)
     number_list = cycle(r..(1,27))
     ___ i __ r..(100):
         y.. next(number_list)

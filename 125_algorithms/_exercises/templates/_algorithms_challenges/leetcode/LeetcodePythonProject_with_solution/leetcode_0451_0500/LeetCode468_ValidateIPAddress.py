@@ -29,7 +29,7 @@ c_ Solution(object):
     ___ checkIP6(self, ip):
         arr = ip.s..(':')
         __ l..(arr) != 8: r.. F..
-        digits = set(l..('0123456789abcdefABCDEF'))
+        d.. = set(l..('0123456789abcdefABCDEF'))
         ___ i, elem __ e..(arr):
             __ i > 0 a.. l..(elem) > 4: r.. F..
             __ i __ 0 a.. l..(elem) > 4:
@@ -37,6 +37,6 @@ c_ Solution(object):
                     r.. F..
             __ n.. elem: r.. F..
             ___ c __ elem:
-                __ c n.. __ digits:
+                __ c n.. __ d..:
                     r.. F..
         r.. T..

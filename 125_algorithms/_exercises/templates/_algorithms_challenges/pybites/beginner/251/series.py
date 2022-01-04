@@ -37,4 +37,4 @@ ___ object_values_series() -> pd.Series:
     Don't worry about the series name.
     """
 
-    r.. pd.Series(l..(string.ascii_uppercase),index=r..(101,127))
+    r.. pd.Series(l..(string.a..),index=r..(101,127))

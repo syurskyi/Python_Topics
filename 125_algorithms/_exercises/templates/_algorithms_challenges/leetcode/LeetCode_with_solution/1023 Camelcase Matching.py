@@ -45,11 +45,11 @@ c_ Solution:
     ___ camelMatch(self, queries: List[s..], pattern: s..) -> List[bool]:
         ret    # list
         ___ q __ queries:
-            ret.a..(match(q, pattern))
+            ret.a..(m..(q, pattern))
             
         r.. ret
 
-    ___ match(self, q, p):
+    ___ m..(self, q, p):
         i = 0
         j = 0
         w.... i < l..(q) a.. j < l..(p):

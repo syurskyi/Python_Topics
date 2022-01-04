@@ -2,7 +2,7 @@ _______ string
 
 
 ___ _check(key):
-    __ key[0] n.. __ string.digits:
+    __ key[0] n.. __ string.d..:
         key = f'\1{key}'
     r.. key.l..
 

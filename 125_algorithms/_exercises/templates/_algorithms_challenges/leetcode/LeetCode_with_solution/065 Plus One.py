@@ -7,7 +7,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ plusOne(self, digits):
+    ___ plusOne(self, d..):
         """
         Math
 
@@ -15,43 +15,43 @@ c_ Solution(object):
         :param digits: a list of integer digits
         :return: a list of integer digits
         """
-        ___ i __ xrange(l..(digits)-1, -1, -1):
-            digits[i] += 1
-            __ digits[i] < 10:
-                r.. digits
+        ___ i __ xrange(l..(d..)-1, -1, -1):
+            d..[i] += 1
+            __ d..[i] < 10:
+                r.. d..
             ____:
-                digits[i] -= 10
+                d..[i] -= 10
 
         # MSB
-        digits.insert(0, 1)
-        r.. digits
+        d...insert(0, 1)
+        r.. d..
 
-    ___ plusOne(self, digits):
+    ___ plusOne(self, d..):
         """
         Good habit to reverse it first
         :param digits:
         :return:
         """
-        digits.reverse()
+        d...reverse()
 
-        digits[0] += 1
+        d..[0] += 1
         carry = 0
-        ___ i __ xrange(l..(digits)):  # for ind, val in enumerate(digits):
-            digits[i] += carry
-            __ digits[i] > 9:
-                digits[i] -= 10
+        ___ i __ xrange(l..(d..)):  # for ind, val in enumerate(digits):
+            d..[i] += carry
+            __ d..[i] > 9:
+                d..[i] -= 10
                 carry = 1
             ____:
                 carry = 0
                 break
 
         __ carry:
-            digits.a..(1)
+            d...a..(1)
 
-        digits.reverse()
-        r.. digits
+        d...reverse()
+        r.. d..
 
 
 __ __name__ __ "__main__":
-    digits = [9]
-    ... Solution().plusOne(digits) __ [1, 0]
+    d.. = [9]
+    ... Solution().plusOne(d..) __ [1, 0]

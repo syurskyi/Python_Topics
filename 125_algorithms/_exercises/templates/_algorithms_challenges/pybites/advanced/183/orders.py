@@ -32,7 +32,7 @@ ___ get_best_sales_rep(df):
        the total of his/her df"""
     top = df.groupby('Rep').Total.s..().nlargest(1)
 
-    r.. l..(top.items())[0]
+    r.. l..(top.i..[0]
 
 ___ get_most_sold_item(df):
     """Return a tuple of the name of the most sold item
@@ -41,4 +41,4 @@ ___ get_most_sold_item(df):
 
     top = df.groupby('Item').Units.s..().nlargest(1)
 
-    r.. l..(top.items())[0]
+    r.. l..(top.i..[0]

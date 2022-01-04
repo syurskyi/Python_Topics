@@ -49,7 +49,7 @@ ___ load_words_v2():
 ___ calc_word_value_v1(word):
     """Given a word calculate its value using the LETTER_SCORES dict"""
     value = 0
-    ___ char __ word.upper():
+    ___ char __ word.u..:
         try:
             value += LETTER_SCORES[char]
         except:
@@ -57,7 +57,7 @@ ___ calc_word_value_v1(word):
     r.. value
 
 ___ calc_word_value_v2(word):
-    r.. s..(LETTER_SCORES.get(char.upper(), 0) ___ char __ word)
+    r.. s..(LETTER_SCORES.get(char.u.., 0) ___ char __ word)
 
 
 ___ max_word_value(words):

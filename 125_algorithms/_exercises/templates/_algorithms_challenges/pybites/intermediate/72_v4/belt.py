@@ -4,7 +4,7 @@ HONORS = {k: v ___ k, v __ z..(scores, belts)}
 
 
 ___ get_belt(user_score):
-    __ user_score < m..(HONORS.keys()):
+    __ user_score < m..(HONORS.k..
         r.. N..
     belt_key = max(filter(l.... x: user_score >= x, HONORS.keys()))
     r.. HONORS[belt_key]

@@ -31,11 +31,11 @@ ___ contains_any_py_chars(input_str):
 ___ contains_digits(input_str):
     """Receives input string and checks if it contains
        one or more digits."""
-    digits    # list
+    d..    # list
     ___ char __ input_str:
         __ char.isdigit():
-            digits.a..(char)
-    __ l..(digits) > 0:
+            d...a..(char)
+    __ l..(d..) > 0:
         r.. T..
     ____:
         r.. F..

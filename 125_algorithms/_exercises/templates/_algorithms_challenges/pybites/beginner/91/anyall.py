@@ -14,7 +14,7 @@ ___ contains_any_py_chars(input_str):
     """Receives input string and checks if any of the PYTHON
        chars are in it. Match is case insensitive."""
     #PY = 'PYTHON'
-    count = [letter ___ letter __ input_str.upper() __ letter __ 'PYTHON']
+    count = [letter ___ letter __ input_str.u.. __ letter __ 'PYTHON']
     r.. T.. __ l..(count) > 0 ____ F..
 
 

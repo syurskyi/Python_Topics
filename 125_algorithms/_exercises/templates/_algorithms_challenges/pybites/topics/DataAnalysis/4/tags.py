@@ -1,7 +1,7 @@
 _______ os
 ____ collections _______ Counter
 _______ urllib.request
-_______ xml.etree.ElementTree as ET
+_______ ___.e__.E__ as ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")

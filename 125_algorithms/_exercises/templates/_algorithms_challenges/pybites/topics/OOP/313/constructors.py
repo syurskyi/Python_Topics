@@ -11,7 +11,7 @@ c_ Domain:
         # validate a current domain (r'.*\.[a-z]{2,3}$' is fine)
         # if not valid, raise a DomainException
         name = name
-        __ n.. __.match(r'.*\.[a-z]{2,3}$', name):
+        __ n.. __.m..(r'.*\.[a-z]{2,3}$', name):
             raise DomainException
         
     # next add a __str__ method and write 2 class methods

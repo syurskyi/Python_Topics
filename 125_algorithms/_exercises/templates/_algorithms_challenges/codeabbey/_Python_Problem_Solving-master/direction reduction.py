@@ -1,7 +1,7 @@
 #accepting the directions from the user
 direction = l..(map(s.., input().s..()))
 #Modifying the directions to uppercase
-direction = [x.upper() ___ x __ direction]
+direction = [x.u.. ___ x __ direction]
 
 #defining the definition of the direction reduction
 ___ dirReduc(dir    # list):

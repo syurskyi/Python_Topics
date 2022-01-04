@@ -45,7 +45,7 @@ duration_regex = __.c..(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+
 
 
 ___ _vid_time(vid):
-    time_parts = duration_regex.match(vid.duration).groupdict(default=0)
+    time_parts = duration_regex.m..(vid.duration).groupdict(default=0)
     r.. t..(hours=int(time_parts['hrs']), minutes=int(time_parts['mins']), seconds=int(time_parts['secs']))
 
 

@@ -32,7 +32,7 @@ ___ group_cars_by_manufacturer(cars):
     
     cars_description = ""
     ___ idx, value __ e..(s..(cars_grouped.items())):
-        cars_description += f"{value[0].upper()}\n"
+        cars_description += f"{value[0].u..}\n"
         ___ model __ value[1]:
             cars_description += f"- {model}\n"
         __ idx != l..(cars_grouped):

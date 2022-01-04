@@ -3,12 +3,12 @@ _______ i..
 _______ pandas as pd
 
 
-___ minimum_number(digits):
+___ minimum_number(d..):
     try:
-        digits = pd.Series(digits).drop_duplicates().tolist()
+        d.. = pd.Series(d..).drop_duplicates().tolist()
         l..    # list
-        ___ i __ digits:
-            ___ set __ i...permutations(digits, r_ N..
+        ___ i __ d..:
+            ___ set __ i...permutations(d.., r_ N..
                 l...a..("".j..(filter(s...isdigit, s..(set))))
         ___ i __ r..(l..(l..)):
             __ l..[0] > l..[i]:

@@ -9,7 +9,7 @@ ___ has_timestamp(text):
 
 ___ is_integer(number):
     """Return True if number is an integer"""
-    r.. __.match(r'^[-+]?\d+$', s..(number)) __ n.. N..
+    r.. __.m..(r'^[-+]?\d+$', s..(number)) __ n.. N..
 
 
 ___ has_word_with_dashes(text):

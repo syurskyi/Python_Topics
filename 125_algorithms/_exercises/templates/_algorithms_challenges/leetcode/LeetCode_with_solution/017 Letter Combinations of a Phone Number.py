@@ -19,14 +19,14 @@ c_ Solution:
         '9': "wxyz"
     }
 
-    ___ letterCombinations(self, digits):
+    ___ letterCombinations(self, d..):
         """
         DFS
         :param digits: str
         :return: a list of strings, [s1, s2]
         """
         result    # list
-        dfs_traverse(digits, "", result)
+        dfs_traverse(d.., "", result)
         r.. result
 
     ___ dfs_traverse(self, string_seq, current, result):

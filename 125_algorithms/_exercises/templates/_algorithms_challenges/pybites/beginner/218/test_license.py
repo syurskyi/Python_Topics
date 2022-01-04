@@ -1,9 +1,9 @@
-____ string _______ ascii_uppercase, digits
+____ string _______ a.., d..
 _______ random
 
 ____ license _______ validate_license
 
-ALPHABET = ascii_uppercase + digits
+ALPHABET = a.. + d..
 
 
 ___ _create_license():
