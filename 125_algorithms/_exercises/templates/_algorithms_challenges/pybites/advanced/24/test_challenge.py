@@ -1,5 +1,5 @@
 _______ i___
-_______ random
+_______ r__
 
 _______ p__
 
@@ -32,7 +32,7 @@ ___ test_super_and_abst_method_implementation
     except T..:
         p__.fail("Unexpected TypeError, missing methods/properties?")
 
-    ... blog.verify(random.choice(merged_prs))
+    ... blog.verify(r__.choice(merged_prs))
     ... n.. blog.verify(43)
     ... blog.pretty_title __ 'PCC1 - Wordvalues'
 

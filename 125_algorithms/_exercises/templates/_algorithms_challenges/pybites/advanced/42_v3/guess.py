@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 
 MAX_GUESSES = 5
 START, END = 1, 20
@@ -6,7 +6,7 @@ START, END = 1, 20
 
 ___ get_random_number
     """Get a random number between START and END, returns int"""
-    r.. random.randint(START, END)
+    r.. r__.randint(START, END)
 
 
 c_ Game:

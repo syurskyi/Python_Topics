@@ -1,4 +1,4 @@
-____ random _______ randrange
+____ r__ _______ randrange
 
 
 c_ Solution:

@@ -1,4 +1,4 @@
-____ random _______ random
+____ r__ _______ r__
 ____ time _______ sleep
 ____ functools _______ wraps
 
@@ -31,7 +31,7 @@ c_ Planet:
 
     @cached_property
     ___ mass
-        scale_factor = random()
+        scale_factor = r__()
         sleep(TEMPORAL_SHIFT)
         _mass = (f'{round(scale_factor * GRAVITY_CONSTANT, 4)} '
                       f'{SOLAR_MASS_UNITS}')

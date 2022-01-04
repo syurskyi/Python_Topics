@@ -1,8 +1,8 @@
 ___ rotateString(amount):
     answer    # list
-    ___ string __ r..(amount):
+    ___ s__ __ r..(amount):
         data = raw_input().s..
-        rotateNum,string = i..(data[0]),data[1]
-        answer.a..(string[rotateNum:]+string[:rotateNum])
+        rotateNum,s__ = i..(data[0]),data[1]
+        answer.a..(s__[rotateNum:]+s__[:rotateNum])
     print(' '.j..(answer))
 rotateString(input())

@@ -1,5 +1,5 @@
 _______ p__
-____ random _______ sample, seed
+____ r__ _______ sample, seed
 
 ____ twosums _______ two_sums
 

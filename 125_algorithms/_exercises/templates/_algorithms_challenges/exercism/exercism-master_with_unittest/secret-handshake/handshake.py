@@ -51,8 +51,8 @@ c_ Handshake:
         r.. integer >= 0
 
     @staticmethod
-    ___ valid_string(string):
-        r.. n.. bool(__.s..('[^01]', string))
+    ___ valid_string(s__):
+        r.. n.. bool(__.s..('[^01]', s__))
 
     @staticmethod
     ___ testBit(int_type, offset):

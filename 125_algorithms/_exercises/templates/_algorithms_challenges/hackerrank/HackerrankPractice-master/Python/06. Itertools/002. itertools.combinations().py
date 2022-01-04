@@ -6,6 +6,6 @@ _______ i..
 
 
 s = input().s..
-string, number = s..(s[0]), i..(s[1])
+s__, number = s..(s[0]), i..(s[1])
 ___ i __ r..(1, number + 1):
-    print(*l..(map(''.j.., i...combinations(string, i))), sep='\n')
+    print(*l..(map(''.j.., i...combinations(s__, i))), sep='\n')

@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 _______ pandas __ pd
 
@@ -28,13 +28,13 @@ ___ test_alpha_index_series
     ... ser.dtype __ "int64"
     ... l..(ser) __ 26
     ... s..(ser.values) __ 351
-    ... a..(c __ string.ascii_lowercase ___ c __ ser.index)
+    ... a..(c __ s__.ascii_lowercase ___ c __ ser.index)
 
 
 ___ test_object_values_series
     ser = se.object_values_series()
     ... isi..(ser, pd.Series)
     ... l..(ser) __ 26
-    ... a..(c __ string.a.. ___ c __ ser.values)
+    ... a..(c __ s__.a.. ___ c __ ser.values)
     ... ser[101] __ "A"
     ... ser[126] __ "Z"

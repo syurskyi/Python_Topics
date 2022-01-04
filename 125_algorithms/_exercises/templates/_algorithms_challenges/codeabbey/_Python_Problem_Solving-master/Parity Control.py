@@ -5,7 +5,7 @@ ___ i __ a:
     ____:
         bits = '{:08b}'.f..(i)
         temp_bin    # list
-        string = ''
+        s__ = ''
         dec = 0
         ___ j __ bits:
             temp_bin.a..(j)
@@ -13,8 +13,8 @@ ___ i __ a:
             __ temp_bin[0] __ '1':
                 temp_bin[0] = '0'
                 ___ k __ temp_bin:
-                    string += k
-                dec = i..(string,2)
+                    s__ += k
+                dec = i..(s__,2)
                 print(chr(dec),end='')
             ____:
                 print(chr(i),end='')
@@ -25,8 +25,8 @@ ___ i __ a:
                 temp_bin[0] = '1'
                 
                 ___ k __ temp_bin:
-                    string += k
-                dec = i..(string,2)
+                    s__ += k
+                dec = i..(s__,2)
                 __ 128<= dec <= 255:
                     p..
                 ____:

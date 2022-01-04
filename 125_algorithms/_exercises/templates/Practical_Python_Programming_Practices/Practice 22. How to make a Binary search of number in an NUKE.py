@@ -1,8 +1,8 @@
-____ random _______ random
+____ r__ _______ r__
 N  20
 array  []
 ___ x __ r..(N):
-    array.a..(i..(random()*100))
+    array.a..(i..(r__()*100))
 
 array.s..()
 print(array)

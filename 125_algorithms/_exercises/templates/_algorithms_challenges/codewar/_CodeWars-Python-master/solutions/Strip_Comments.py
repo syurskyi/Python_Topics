@@ -5,8 +5,8 @@ http://www.codewars.com/kata/51c8e37cee245da6b40000bd/train/python
 """
 
 
-___ solution(string, markers):
-    lines = string.s..('\n')
+___ solution(s__, markers):
+    lines = s__.s..('\n')
     ___ i, line __ e..(lines):
         ___ marker __ markers:
             index = line.find(marker)

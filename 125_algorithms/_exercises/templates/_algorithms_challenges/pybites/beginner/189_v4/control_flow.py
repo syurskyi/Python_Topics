@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 IGNORE_CHAR = 'b'
 QUIT_CHAR = 'q'
@@ -10,7 +10,7 @@ ___ filter_names(names):
     ___ n __ names:
         __ n[0] __ QUIT_CHAR:
             break
-        __ l..(set(n).intersection(set(string.d..))) > 0:
+        __ l..(set(n).intersection(set(s__.d..))) > 0:
             continue
         __ n[0] != IGNORE_CHAR:
             result.a..(n)

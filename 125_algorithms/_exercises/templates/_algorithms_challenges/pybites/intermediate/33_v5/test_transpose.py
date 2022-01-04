@@ -1,4 +1,4 @@
-____ random _______ randint
+____ r__ _______ randint
 ____ collections _______ n..
 
 ____ transpose _______ transpose

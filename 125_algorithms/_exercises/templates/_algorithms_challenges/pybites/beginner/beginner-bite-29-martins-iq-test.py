@@ -18,7 +18,7 @@ Examples:
 See the TESTS tab for more details
 '''
 
-_______ string
+_______ s__
 ____ enum _______ Enum
 
 
@@ -28,13 +28,13 @@ c_ State(Enum):
 
 ___ get_index_different_char(chars):
     index = 1
-    __ chars[0] __ string.ascii_letters o. string.d..:
+    __ chars[0] __ s__.ascii_letters o. s__.d..:
         state = State.ALPHANUMERIC
     ____:
         state = State.NON_ALPHANUMERIC
     ___ c __ chars[1:]:
-        __ c __ (string.ascii_letters o. string.d..) a.. state __ State.ALPHANUMERIC:
+        __ c __ (s__.ascii_letters o. s__.d..) a.. state __ State.ALPHANUMERIC:
             continue
-        __ c __ (string.ascii_letters o. string.d..) a.. state __ State.NON_ALPHANUMERIC:
+        __ c __ (s__.ascii_letters o. s__.d..) a.. state __ State.NON_ALPHANUMERIC:
 
 

@@ -1,8 +1,8 @@
 #FromScratch - Create a script that generates a file where all letters of English alphabet are listed three in each line
 
-_______ string
+_______ s__
 
-letters  string.ascii_lowercase + " "
+letters  s__.ascii_lowercase + " "
 
 slice1  letters[0::3]
 slice2  letters[1::3]

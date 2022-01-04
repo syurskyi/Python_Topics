@@ -1,6 +1,6 @@
 ____ typing _______ Tuple
 ____ collections _______ Counter
-_______ string
+_______ s__
 _______ __
 
 
@@ -37,7 +37,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
             __ most_common_count > max_count:
 
                 max_count = most_common_count
-                max_word = word.strip(string.punctuation + string.d.. + '«¿')
+                max_word = word.strip(s__.punctuation + s__.d.. + '«¿')
                 max_letter = most_common_letter
 
 

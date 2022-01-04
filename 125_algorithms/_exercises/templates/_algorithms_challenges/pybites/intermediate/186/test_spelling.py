@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 _______ p__
 
@@ -11,7 +11,7 @@ ___ a_words
     words = load_words()
     r.. {word ___ word __ words
             __ word.startswith('a') a.. l..(word) > 1
-            a.. word[1] __ string.ascii_letters[:13]}
+            a.. word[1] __ s__.ascii_letters[:13]}
 
 
 @p__.mark.parametrize("word, expected", [

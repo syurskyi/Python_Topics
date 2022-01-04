@@ -1,5 +1,5 @@
-_______ random
-_______ string
+_______ r__
+_______ s__
 
 
 c_ Cipher:
@@ -23,7 +23,7 @@ c_ Cipher:
         r.. l..(filter(s...isalpha, phrase.lower()))
 
     ___ generate_random_key
-        r.. ''.j..(random.SystemRandom().choice(string.ascii_lowercase)
+        r.. ''.j..(r__.SystemRandom().choice(s__.ascii_lowercase)
                        ___ _ __ r..(random_key_length))
 
     ___ valid_key

@@ -18,7 +18,7 @@ c_ Solution(object):
     ___ i __ r..(0, l..(nums)):
       __ nums[i] __ target:
         count += 1
-        __ random.randrange(0, count) __ 0:
+        __ r__.randrange(0, count) __ 0:
           ans = i
     r.. ans
 

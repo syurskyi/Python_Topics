@@ -30,7 +30,7 @@ collection.remove(1);
 collection.getRandom();
 """
 ____ collections _______ defaultdict
-_______ random
+_______ r__
 
 __author__ = 'Daniel'
 
@@ -81,7 +81,7 @@ c_ RandomizedCollection(object):
         Get a random element from the collection.
         :rtype: int
         """
-        r.. random.choice(lst)
+        r.. r__.choice(lst)
 
 
 # Your RandomizedCollection object will be instantiated and called as such:

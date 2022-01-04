@@ -2,5 +2,5 @@
 # Score: 10
 
 
-___ wrap(string, max_width):
-    r.. textwrap.fill(string, max_width)
+___ wrap(s__, max_width):
+    r.. textwrap.fill(s__, max_width)

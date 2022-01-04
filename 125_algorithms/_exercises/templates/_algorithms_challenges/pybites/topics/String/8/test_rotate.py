@@ -7,20 +7,20 @@ ___ test_small_rotate
 
 
 ___ test_bigger_rotation_of_positive_n
-    string = 'bob and julian love pybites!'
+    s__ = 'bob and julian love pybites!'
     expected = 'love pybites!bob and julian '
-    ... rotate(string, 15) __ expected
+    ... rotate(s__, 15) __ expected
 
 
 ___ test_bigger_rotation_of_negative_n
-    string = 'pybites loves julian and bob!'
+    s__ = 'pybites loves julian and bob!'
     expected = 'julian and bob!pybites loves '
-    ... rotate(string, -15) __ expected
+    ... rotate(s__, -15) __ expected
 
 
 ___ test_rotation_of_n_same_as_len_str
-    string = expected = 'julian and bob!'
-    ... rotate(string, l..(string)) __ expected
+    s__ = expected = 'julian and bob!'
+    ... rotate(s__, l..(s__)) __ expected
 
 
 ___ test_rotation_of_n_bigger_than_string
@@ -44,12 +44,12 @@ ___ test_rotation_of_n_bigger_than_string
     This means any additional rotations can be considered equivalent to
     rotating the string by rotations % len(string) = expected_solution2
     """
-    string = 'julian and bob!'
+    s__ = 'julian and bob!'
     expected_solution1 = 'julian and bob!'
     expected_solution2 = ' bob!julian and'
-    ... rotate(string, 100) __ (expected_solution1,
+    ... rotate(s__, 100) __ (expected_solution1,
                                    expected_solution2)
 
-    mod = 100 % l..(string)  # 10
-    ... rotate(string, mod) __ (expected_solution1,
+    mod = 100 % l..(s__)  # 10
+    ... rotate(s__, mod) __ (expected_solution1,
                                    expected_solution2)

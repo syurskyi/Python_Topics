@@ -1,7 +1,7 @@
 #import string
-___ solution(string,markers):
+___ solution(s__,markers):
     
-    stringSplit = string.s..('\n')
+    stringSplit = s__.s..('\n')
 
     ___ stripSentence(s):
         afterStrip = s

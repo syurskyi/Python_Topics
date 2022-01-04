@@ -27,10 +27,10 @@ ___ get_common_domains(url=COMMON_DOMAINS):
     r.. [value.getText(strip=T..) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
 
 
-___ get_domain(string):
+___ get_domain(s__):
 
 
-    r.. __.s..(r'@(.+)',string).group(1)
+    r.. __.s..(r'@(.+)',s__).group(1)
 
 
 ___ get_most_common_domains(emails, common_domains_ N..

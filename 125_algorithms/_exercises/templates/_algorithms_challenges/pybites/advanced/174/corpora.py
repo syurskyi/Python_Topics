@@ -1,7 +1,7 @@
 _______ __
 ____ collections _______ Counter
 ____ dataclasses _______ dataclass, field
-____ string _______ punctuation
+____ s__ _______ punctuation
 ____ typing _______ List, Set, Tuple
 
 STOPWORDS: set = {

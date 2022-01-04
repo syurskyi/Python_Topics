@@ -47,11 +47,11 @@ c_ Item:
     
 
     ___ __str__
-        string = name.r..('_',' ').t.. + ': '
+        s__ = name.r..('_',' ').t.. + ': '
         sorted_enchantments = s..(enchantments,key=l.... x: x.id_name)
         ___ enchantment __ sorted_enchantments:
-            string += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
-        r.. string
+            s__ += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
+        r.. s__
 
 ___ generate_enchantments(soup):
     """Generates a dictionary of Enchantment objects

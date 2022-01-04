@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 
 BITES = {6: 'PyBites Die Hard',
          7: 'Parsing dates from logs',
@@ -34,7 +34,7 @@ c_ Promo:
            Bites are done, raise a NoBitesAvailable exception"""
         remaining_bites = l..(all_bites.k.. - bites_done)
         __ remaining_bites:
-            r.. random.choice(remaining_bites)
+            r.. r__.choice(remaining_bites)
         ____:
             r.. NoBitesAvailable
 

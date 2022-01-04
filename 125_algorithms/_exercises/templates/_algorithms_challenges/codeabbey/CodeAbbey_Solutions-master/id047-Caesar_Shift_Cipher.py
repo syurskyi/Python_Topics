@@ -1,10 +1,10 @@
 # Python 2.7
-_______ string
+_______ s__
 
 ___ encrypt(msg_count, key):
-    alphabet = string.a..
+    alphabet = s__.a..
     alphabet_shifted = alphabet[key:] + alphabet[:key]
-    caesar_shift = string.maketrans(alphabet, alphabet_shifted)
+    caesar_shift = s__.maketrans(alphabet, alphabet_shifted)
     answer    # list
 
     ___ msg __ r..(msg_count):
@@ -15,9 +15,9 @@ ___ encrypt(msg_count, key):
 
 ___ decrypt(msg_count, key):
     key = 26 - key
-    alphabet = string.a..
+    alphabet = s__.a..
     alphabet_shifted = alphabet[key:] + alphabet[:key]
-    caesar_shift = string.maketrans(alphabet, alphabet_shifted)
+    caesar_shift = s__.maketrans(alphabet, alphabet_shifted)
     answer    # list
 
     ___ msg __ r..(msg_count):

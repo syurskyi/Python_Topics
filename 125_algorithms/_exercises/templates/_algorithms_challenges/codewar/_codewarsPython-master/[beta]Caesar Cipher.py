@@ -1,9 +1,9 @@
-_______ string
+_______ s__
 ___ caesar(s, shift):
     transDict    # dict
-    alpha = string.ascii_lowercase
+    alpha = s__.ascii_lowercase
     alphaTrans = alpha[shift:] + alpha[:shift]
-    ___ key,value __ z..(string.ascii_lowercase,alphaTrans):
+    ___ key,value __ z..(s__.ascii_lowercase,alphaTrans):
         transDict[key] = value
         transDict[key.u..] = value.u..
 

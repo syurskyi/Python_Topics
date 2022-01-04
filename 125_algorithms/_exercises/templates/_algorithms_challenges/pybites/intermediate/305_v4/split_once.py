@@ -1,11 +1,11 @@
 ____ typing _______ List
-_______ string
+_______ s__
 
 
 ___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
     print(f'{text=}')
     __ separators __ N..
-        separators = string.whitespace
+        separators = s__.whitespace
 
 
     indices = [text.index(sep) ___ sep __ separators __ sep __ text]

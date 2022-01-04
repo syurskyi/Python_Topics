@@ -18,8 +18,8 @@ ___ is_palindrome(word: s..):
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
-    string = ''.j..(c.l.. ___ c __ word __ c.isalpha())
-    r.. string __ string[::-1]
+    s__ = ''.j..(c.l.. ___ c __ word __ c.isalpha())
+    r.. s__ __ s__[::-1]
 
 
 ___ get_longest_palindrome(words_ N..

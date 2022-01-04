@@ -1,2 +1,2 @@
-___ hey(string):
+___ hey(s__):
     p..

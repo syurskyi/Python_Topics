@@ -1,5 +1,5 @@
 ____ __future__ _______ annotations
-_______ string
+_______ s__
 _______ __
 
 EOL_PUNCTUATION = ".!?"

@@ -1,7 +1,7 @@
 _______ csv
-_______ random
+_______ r__
 _______ __
-_______ string
+_______ s__
 
 _______ p__
 
@@ -19,9 +19,9 @@ string_classes = ['Formatter', 'Template']
 
 @p__.mark.parametrize("mod, expected", [
     (csv, csv_classes),
-    (random, random_classes),
+    (r__, random_classes),
     (__, re_classes),
-    (string, string_classes),
+    (s__, string_classes),
 ])
 ___ test_cls(mod, expected):
     actual = get_classes(mod)

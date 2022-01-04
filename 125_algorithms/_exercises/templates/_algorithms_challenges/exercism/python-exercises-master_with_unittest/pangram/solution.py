@@ -1,4 +1,4 @@
-____ string _______ ascii_lowercase
+____ s__ _______ ascii_lowercase
 
 
 ___ is_pangram(sentence):

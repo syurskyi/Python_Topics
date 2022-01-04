@@ -31,7 +31,7 @@ randomSet.insert(2);
 // Since 1 is the only number in the set, getRandom always return 1.
 randomSet.getRandom();
 """
-_______ random
+_______ r__
 
 __author__ = 'Daniel'
 
@@ -86,7 +86,7 @@ c_ RandomizedSet(object):
         Gets a random element from the set.
         :rtype: int
         """
-        r.. random.choice(lst)
+        r.. r__.choice(lst)
 
 
 c_ RandomizedSetTLE(object):
@@ -121,7 +121,7 @@ c_ RandomizedSetTLE(object):
         Get a random element from the set.
         :rtype: int
         """
-        r.. random.sample(set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
+        r.. r__.sample(set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
 
 
 

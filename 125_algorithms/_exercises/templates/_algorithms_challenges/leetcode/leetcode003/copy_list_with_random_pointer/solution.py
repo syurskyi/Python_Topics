@@ -24,8 +24,8 @@ c_ Solution:
         w.... p __ n.. N..
             next_node = p.next.next
             new_node = p.next
-            __ p.random __ n.. N..
-                new_node.random = p.random.next
+            __ p.r__ __ n.. N..
+                new_node.r__ = p.r__.next
             p = next_node
         # Split the list
         res = N..

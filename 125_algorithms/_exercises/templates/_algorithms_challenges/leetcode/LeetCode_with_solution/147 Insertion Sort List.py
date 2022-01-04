@@ -88,8 +88,8 @@ c_ Solution:
         r.. dummy.next
 
 __ __name____"__main__":
-    _______ random
-    lst = [ListNode(i) ___ i __ random.sample(xrange(-1000, 1000), 1000)]
+    _______ r__
+    lst = [ListNode(i) ___ i __ r__.sample(xrange(-1000, 1000), 1000)]
     # lst = [ListNode(1), ListNode(3), ListNode(2)]
     # lst = [ListNode(i) for i in range(10, -1, -1)]
     ___ i __ r..(l..(lst)):

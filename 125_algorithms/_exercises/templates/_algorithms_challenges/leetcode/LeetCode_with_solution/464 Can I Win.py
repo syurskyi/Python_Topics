@@ -33,31 +33,31 @@ c_ Solution:
         """
         cache    # dict
         # set is not hashable while frozenset is
-        choices = frozenset([choice ___ choice __ r..(1, maxChoosableInteger + 1)])
-        r.. _can_win(desiredTotal, choices, s..(choices), cache)
+        c.. = frozenset([choice ___ choice __ r..(1, maxChoosableInteger + 1)])
+        r.. _can_win(desiredTotal, c.., s..(c..), cache)
 
-    ___ _can_win(self, total, choices, gross,cache):
-        __ (total, choices) __ cache:
-            r.. cache[(total, choices)]
+    ___ _can_win(self, total, c.., gross,cache):
+        __ (total, c..) __ cache:
+            r.. cache[(total, c..)]
 
         ret = F..
-        __ max(choices) >= total:
+        __ max(c..) >= total:
             ret = T..
 
         ____ gross < total:
             ret = F..
         ____:
-            ___ choice __ choices:
+            ___ choice __ c..:
                 __ n.. _can_win(
                         total - choice,
-                        choices - set([choice]),
+                        c.. - set([choice]),
                         gross - choice,
                         cache
                 ):
                     ret = T..
                     break
 
-        cache[(total, choices)] = ret
+        cache[(total, c..)] = ret
         r.. ret
 
 

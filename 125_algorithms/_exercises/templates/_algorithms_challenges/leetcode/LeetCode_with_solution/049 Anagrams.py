@@ -12,19 +12,19 @@ c_ Solution:
         :return: a list of strings
         """
         temp = l..(strs)
-        ___ ind, string __ e..(temp):
-            __ string a.. string!="":  # avoid case of empty string
-                string = [char ___ char __ string]
-                string.s..()
-                string = "".j..(string)
-                temp[ind] = string
+        ___ ind, s__ __ e..(temp):
+            __ s__ a.. s__!="":  # avoid case of empty string
+                s__ = [char ___ char __ s__]
+                s__.s..()
+                s__ = "".j..(s__)
+                temp[ind] = s__
 
 
         hash_map    # dict
-        ___ ind, string __ e..(temp):
-            indexes = hash_map.get(string, [])
+        ___ ind, s__ __ e..(temp):
+            indexes = hash_map.get(s__, [])
             indexes.a..(ind)  # side-effect
-            hash_map[string] = indexes
+            hash_map[s__] = indexes
 
         result    # list
         ___ val __ hash_map.v..
@@ -40,12 +40,12 @@ c_ Solution:
         :return: a list of strings
         """
         hash_map    # dict
-        ___ ind, string __ e..(strs):
-            string = "".j..(s..(string))  # string reversing and sorting are a little different
-            __ string n.. __ hash_map:
-                hash_map[string] = [ind]
+        ___ ind, s__ __ e..(strs):
+            s__ = "".j..(s..(s__))  # string reversing and sorting are a little different
+            __ s__ n.. __ hash_map:
+                hash_map[s__] = [ind]
             ____:
-                hash_map[string].a..(ind)
+                hash_map[s__].a..(ind)
             # indexes = hash_map.get(string, [])
             # indexes.append(ind)  # side-effect
             # hash_map[string] = indexes  # reassign

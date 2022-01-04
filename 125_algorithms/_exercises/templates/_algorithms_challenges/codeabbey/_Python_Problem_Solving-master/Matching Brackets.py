@@ -1,7 +1,7 @@
 #take the number of strings that are needed to be checked
 ___ i __ r..(i..(input())):
     #accept the string
-    string = input()
+    s__ = input()
     #store_str is used to store only the brackets
     store_str    # list
     #para list is used to check whether the character in string is equal to elements of para
@@ -10,7 +10,7 @@ ___ i __ r..(i..(input())):
     p = {'(':')','[':']','<':'>','{':'}'}
     
     #here we remove all alphabets, digits and unwanted special characters
-    ___ j __ string:
+    ___ j __ s__:
         #if in para list then only form the list
         __ j __ para:
             store_str.a..(j)

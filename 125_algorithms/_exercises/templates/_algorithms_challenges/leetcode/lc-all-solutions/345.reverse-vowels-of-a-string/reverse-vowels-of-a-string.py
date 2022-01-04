@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 
 c_ Solution(object):

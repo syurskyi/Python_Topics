@@ -1,5 +1,5 @@
 _______ heapq
-_______ random
+_______ r__
 
 
 c_ Solution(object):
@@ -24,7 +24,7 @@ c_ Solution(object):
         r.. quickselect(start, mid - 1, nums, k)
 
     ___ partition(start, end, nums):
-      p = random.randrange(start, end + 1)
+      p = r__.randrange(start, end + 1)
       pv = nums[p]
       nums[end], nums[p] = nums[p], nums[end]
       mid = start

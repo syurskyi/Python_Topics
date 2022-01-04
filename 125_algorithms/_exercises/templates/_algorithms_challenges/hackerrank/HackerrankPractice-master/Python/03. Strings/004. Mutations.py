@@ -2,5 +2,5 @@
 # Score: 10
 
 
-___ mutate_string(string, position, character):
-    r.. string[:position] + character + string[position + 1:]
+___ mutate_string(s__, position, character):
+    r.. s__[:position] + character + s__[position + 1:]

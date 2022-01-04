@@ -10,8 +10,8 @@ c_ Solution(object):
         :type k: int
         :rtype: int
         """
-        _______ random
-        random.shuffle(nums)
+        _______ r__
+        r__.shuffle(nums)
         __ k < 1 o. n.. nums:
             r.. 0
         k = l..(nums)-k

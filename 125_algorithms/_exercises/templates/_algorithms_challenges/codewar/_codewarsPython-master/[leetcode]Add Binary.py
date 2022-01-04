@@ -3,8 +3,8 @@ c_ Solution:
     # @param {string} b
     # @return {string}
     ___ addBinary(self, a, b):
-        ___ binToDecimal(string):
-            r.. s..([i..(n) * (2**i) ___ i,n __ e..(r..(string),0)])
+        ___ binToDecimal(s__):
+            r.. s..([i..(n) * (2**i) ___ i,n __ e..(r..(s__),0)])
         r.. bin(binToDecimal(a) + binToDecimal(b))[2:]
 
 test = Solution()

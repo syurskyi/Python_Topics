@@ -1,4 +1,4 @@
-____ random _______ random
+____ r__ _______ r__
 
 row  5
 col  10
@@ -6,7 +6,7 @@ matrix  []
 ___ i __ r..(row):
     myrow  []
     ___ j __ r..(col):
-        myrow.a..(i..(random()*50)+10)
+        myrow.a..(i..(r__()*50)+10)
     matrix.a..(myrow)
 
 ___ myrow __ matrix:

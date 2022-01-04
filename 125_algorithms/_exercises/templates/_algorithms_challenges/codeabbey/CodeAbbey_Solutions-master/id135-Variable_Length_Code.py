@@ -1,6 +1,6 @@
 # Python 2.7
 
-___ compress_string(string):
+___ compress_string(s__):
     answer    # list
     value_dict = {
         ' ': '11',             'e': '101',
@@ -19,11 +19,11 @@ ___ compress_string(string):
         'q': '000000000001',   'z': '000000000000',
         }
     
-    string = string[::].l..
+    s__ = s__[::].l..
 
     # Convert to assigned values.
     eight_bit    # list
-    ___ char __ string[::]:
+    ___ char __ s__[::]:
         bits = ("%s") % (value_dict[char])
         eight_bit.a..(bits)
     eight_bit = (''.j..(eight_bit))

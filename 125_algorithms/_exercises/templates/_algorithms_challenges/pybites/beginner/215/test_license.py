@@ -1,5 +1,5 @@
-____ string _______ a.., d..
-_______ random
+____ s__ _______ a.., d..
+_______ r__
 
 ____ license _______ validate_license
 
@@ -8,7 +8,7 @@ ALPHABET = a.. + d..
 
 ___ _create_license
     r.. 'PB-' + '-'.j..(
-        [''.j..(random.sample(ALPHABET, 8))
+        [''.j..(r__.sample(ALPHABET, 8))
          ___ _ __ r..(4)]
     )
 

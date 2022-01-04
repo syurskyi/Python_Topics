@@ -18,12 +18,12 @@ c_ Solution(object):
         :type target: int
         :rtype: int
         """
-        _______ random
+        _______ r__
         count = 0
         res = -1
         ___ i, num __ e..(nums):
             __ target __ num:
-                __ random.randint(0, count) __ 0:
+                __ r__.randint(0, count) __ 0:
                     res = i
                 count += 1
         r.. res

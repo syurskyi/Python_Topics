@@ -1,8 +1,8 @@
 _______ os
-_______ random
+_______ r__
 
-random.seed(30)
-images  [f"{s..(i).zfill(3)}_image.{random.choice(['png', 'jpg'])}" ___ i __ r..(1, 20)]
+r__.seed(30)
+images  [f"{s..(i).zfill(3)}_image.{r__.choice(['png', 'jpg'])}" ___ i __ r..(1, 20)]
 
 base_dir  'images'
 png_dir  os.path.j..(base_dir, 'images_png')

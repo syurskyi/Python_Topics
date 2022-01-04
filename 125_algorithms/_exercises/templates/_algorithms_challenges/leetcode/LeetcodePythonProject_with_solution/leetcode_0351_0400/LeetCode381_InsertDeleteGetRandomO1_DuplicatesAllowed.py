@@ -33,6 +33,6 @@ c_ RandomizedCollection(object):
         r.. F..
     
     ___ getRandom
-        _______ random
-        r.. random.choice(vals)
+        _______ r__
+        r.. r__.choice(vals)
     

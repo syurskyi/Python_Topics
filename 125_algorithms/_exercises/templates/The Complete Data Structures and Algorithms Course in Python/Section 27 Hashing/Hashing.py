@@ -8,9 +8,9 @@ ___ mod(number, cellNumber
 # print(mod(400, 24))
 
 
-___ modASCII(string, cellNumber
+___ modASCII(s__, cellNumber
     total  0
-    ___ i __ string:
+    ___ i __ s__:
         total + ord(i)
     r_ total % cellNumber
 

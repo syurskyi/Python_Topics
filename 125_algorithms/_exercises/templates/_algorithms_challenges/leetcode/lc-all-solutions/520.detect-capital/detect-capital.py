@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 
 c_ Solution(object):
@@ -7,8 +7,8 @@ c_ Solution(object):
     :type word: str
     :rtype: bool
     """
-    ud = set(string.uppercase)
-    ld = set(string.lowercase)
+    ud = set(s__.uppercase)
+    ld = set(s__.lowercase)
     n = l..(word)
     cap = 0
     ___ c __ word:

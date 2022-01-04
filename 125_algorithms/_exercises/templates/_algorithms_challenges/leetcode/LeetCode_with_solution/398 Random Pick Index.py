@@ -16,7 +16,7 @@ solution.pick(3);
 // pick(1) should return 0. Since in the array only nums[0] is equal to 1.
 solution.pick(1);
 """
-_______ random
+_______ r__
 
 __author__ = 'Daniel'
 
@@ -40,7 +40,7 @@ c_ Solution(object):
         ___ idx, val __ e..(A):
             __ val __ target:
                 sz += 1
-                p = random.randrange(0, sz)
+                p = r__.randrange(0, sz)
                 __ p __ 0:
                     ret = idx
 
@@ -60,7 +60,7 @@ c_ SolutionError(object):
                 d[val] = (idx, 1)
             ____:
                 prev, sz = d[val]
-                p = random.randrange(0, sz)
+                p = r__.randrange(0, sz)
                 __ p < sz:
                     d[val] = (idx, sz + 1)
                 ____:

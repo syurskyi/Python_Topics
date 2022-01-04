@@ -9,10 +9,10 @@ c_ Node(
         next  next
     
     ___ __str__(self
-        string  st.(value)
+        s__  st.(value)
         __ next:
-            string + ',' + st.(next)
-        r_ string
+            s__ + ',' + st.(next)
+        r_ s__
 
 c_ Stack(
     ___  - (self

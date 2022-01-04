@@ -3,8 +3,8 @@ _______ csv
 _______ os
 ____ pathlib _______ Path
 _______ sqlite3
-_______ random
-_______ string
+_______ r__
+_______ s__
 
 _______ requests
 
@@ -12,7 +12,7 @@ DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 salt = ''.j..(
-    random.choice(string.ascii_lowercase) ___ i __ r..(20)
+    r__.choice(s__.ascii_lowercase) ___ i __ r..(20)
 )
 DB = TMP / f'nba_{salt}.db'
 

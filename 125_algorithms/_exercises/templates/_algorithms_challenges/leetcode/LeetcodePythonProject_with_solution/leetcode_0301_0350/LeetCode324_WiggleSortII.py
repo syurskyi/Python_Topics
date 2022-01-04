@@ -51,9 +51,9 @@ c_ Solution(object):
         r.. j
     
     ___ shuffle(self, nums):
-        _______ random
+        _______ r__
         ___ i __ r..(l..(nums)-1, 0, -1):
-            ind = random.randint(0, i)
+            ind = r__.randint(0, i)
             nums[i], nums[ind] = nums[ind], nums[i]
     
     ___ wiggleSortWithSorting(self, nums):

@@ -20,11 +20,11 @@ def test_rotate():
 """
 _______ collections
 
-___ rotate(string, n):
+___ rotate(s__, n):
     """Rotate characters in a string. Expects string and n (int) for
        number of characters to move.
     """
-    d = collections.deque(string)
+    d = collections.deque(s__)
     d.rotate(-n)
     result = ''.j..(d)
     print(result)

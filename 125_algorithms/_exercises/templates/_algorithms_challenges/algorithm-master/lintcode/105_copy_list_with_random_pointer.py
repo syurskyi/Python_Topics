@@ -24,7 +24,7 @@ c_ Solution:
 
         w.... head:
             node = RandomListNode(head.label)
-            node.random = head.random
+            node.r__ = head.r__
             tail.next = node
             N[head] = node
             tail = tail.next
@@ -32,8 +32,8 @@ c_ Solution:
 
         head = dummy.next
         w.... head:
-            __ head.random:
-                head.random = N[head.random]
+            __ head.r__:
+                head.r__ = N[head.r__]
             head = head.next
 
         r.. dummy.next
@@ -73,15 +73,15 @@ c_ Solution:
         node = N..
         w.... tail:
             node = RandomListNode(tail.label)
-            node.random = tail.random
+            node.r__ = tail.r__
             node.next = tail.next
             tail.next = node
             tail = tail.next.next
 
         tail = head
         w.... tail:
-            __ tail.next a.. tail.random:
-                tail.next.random = tail.random.next
+            __ tail.next a.. tail.r__:
+                tail.next.r__ = tail.r__.next
             tail = tail.next.next
 
         node = tail = head.next

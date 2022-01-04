@@ -38,7 +38,7 @@ c_ RandomizedSet(object):
     Get a random element from the set.
     :rtype: int
     """
-    r.. a[random.randrange(0, l..(a))]
+    r.. a[r__.randrange(0, l..(a))]
 
 # Your RandomizedSet object will be instantiated and called as such:
 # obj = RandomizedSet()

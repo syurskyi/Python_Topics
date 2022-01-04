@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 '''
 Bite 109. Workout dict lookups and raising an exception
 In this Bite you learn how to lookup values from a dictionary or in Python: dict.

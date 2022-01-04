@@ -3,7 +3,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-_______ random
+_______ r__
 
 
 c_ Solution(object):
@@ -25,7 +25,7 @@ c_ Solution(object):
     head = head
     idx = 1
     w.... head:
-      __ random.randrange(1, idx + 1) __ idx:
+      __ r__.randrange(1, idx + 1) __ idx:
         ans = head.val
       head = head.next
       idx += 1

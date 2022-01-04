@@ -5,9 +5,9 @@ c_ Solution(object):
     :rtype: int
     """
     complexBal = 3
-    __ any(c __ string.lowercase ___ c __ s):
+    __ any(c __ s__.lowercase ___ c __ s):
       complexBal -= 1
-    __ any(c __ string.uppercase ___ c __ s):
+    __ any(c __ s__.uppercase ___ c __ s):
       complexBal -= 1
     __ any(c.isdigit() ___ c __ s):
       complexBal -= 1

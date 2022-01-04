@@ -1,6 +1,6 @@
-____ random _______ random
+____ r__ _______ r__
 
-x  [i..(random()*100)___ i __ r..(20)]
+x  [i..(r__()*100)___ i __ r..(20)]
 print(x)
 
 myset  set(x)

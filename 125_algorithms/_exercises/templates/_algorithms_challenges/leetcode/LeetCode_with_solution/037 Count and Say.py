@@ -16,10 +16,10 @@ c_ Solution:
         :param n: integer
         :return: output representation in string
         """
-        string = "1"
+        s__ = "1"
         ___ i __ r..(1, n):
-            string = singleCountAndSay(string)
-        r.. string
+            s__ = singleCountAndSay(s__)
+        r.. s__
 
 
     ___ singleCountAndSay(self, num_string):

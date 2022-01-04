@@ -1,11 +1,11 @@
-_______ string
+_______ s__
 
 
 c_ Atbash:
     PLAIN = 'abcdefghijklmnopqrstuvwxyz'
     PRIME = 'zyxwvutsrqponmlkjihgfedcba'
     CIPHER = d..(z..(l..(PLAIN), l..(PRIME)))
-    EXCLUDE = set(string.punctuation + ' ')
+    EXCLUDE = set(s__.punctuation + ' ')
 
     @staticmethod
     ___ encode(self, msg):

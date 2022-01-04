@@ -1,4 +1,4 @@
-_____ random
+_____ r__
 
 
 c_ QuickSelect:
@@ -15,7 +15,7 @@ c_ QuickSelect:
     ___ partition  first_index, last_index
 
         # generate a random value within the range [first, last]
-        pivot_index  random.randint(first_index, last_index)
+        pivot_index  r__.randint(first_index, last_index)
 
         swap(pivot_index, last_index)
 

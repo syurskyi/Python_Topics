@@ -1,4 +1,4 @@
-____ string _______ a..
+____ s__ _______ a..
 
 
 ___ sequence_generator

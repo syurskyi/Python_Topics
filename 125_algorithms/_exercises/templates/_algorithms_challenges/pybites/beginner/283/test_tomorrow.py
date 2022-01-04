@@ -1,5 +1,5 @@
 _______ d__
-____ random _______ randint
+____ r__ _______ randint
 
 ____ freezegun _______ freeze_time
 

@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 
 
 c_ TinyUrl2:
@@ -82,6 +82,6 @@ c_ TinyUrl2:
 
     ___ get_hash_key(self, size):
         r.. ''.j..(
-            random.choice(chars)
+            r__.choice(chars)
             ___ _ __ r..(size)
         )

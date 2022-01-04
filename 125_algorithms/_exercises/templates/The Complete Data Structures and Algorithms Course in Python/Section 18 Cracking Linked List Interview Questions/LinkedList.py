@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov on 17/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-____ random _____ randint
+____ r__ _____ randint
 c_ Node:
     ___  -   valueN..
         value  value

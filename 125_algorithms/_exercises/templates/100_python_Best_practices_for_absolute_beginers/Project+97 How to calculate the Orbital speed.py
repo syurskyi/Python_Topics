@@ -1,6 +1,6 @@
-____ random _______ random
+____ r__ _______ r__
 
-x  random()*900+100
+x  r__()*900+100
 x  i..(x)
 print(x)
 

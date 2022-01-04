@@ -7,7 +7,7 @@ contains_any_py_chars, and contains_digits below. See more info in the docstring
 
 VOWELS = 'aeiou'
 PYTHON = 'python'
-_______ string
+_______ s__
 
 ___ contains_only_vowels(input_str):
     """Receives input string and checks if all chars are
@@ -34,7 +34,7 @@ ___ contains_digits(input_str):
     """Receives input string and checks if it contains
        one or more digits."""
     ___ c __ input_str:
-        __ c __ string.d..:
+        __ c __ s__.d..:
             r.. T..
     r.. F..
 

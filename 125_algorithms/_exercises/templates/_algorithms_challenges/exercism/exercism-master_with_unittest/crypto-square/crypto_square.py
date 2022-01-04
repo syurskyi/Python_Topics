@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 _______ math
 _______ i..
 
@@ -25,7 +25,7 @@ c_ CryptoSquare:
     @staticmethod
     ___ normalize(msg):
         r.. ''.j..(ch.l.. ___ ch __ msg __ ch n.. __
-                       set(string.punctuation + ' '))
+                       set(s__.punctuation + ' '))
 
     @staticmethod
     ___ square_size(msg_length):

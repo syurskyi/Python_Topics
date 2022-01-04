@@ -16,7 +16,7 @@ solution.reset();
 // Returns the random shuffling of array [1,2,3].
 solution.shuffle();
 """
-_______ random
+_______ r__
 
 __author__ = 'Daniel'
 
@@ -46,7 +46,7 @@ c_ Solution(object):
         lst = reset()
         n = l..(lst)
         ___ i __ xrange(n):
-            j = random.randrange(i, n)
+            j = r__.randrange(i, n)
             lst[i], lst[j] = lst[j], lst[i]
 
         r.. lst

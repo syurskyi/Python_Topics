@@ -10,10 +10,10 @@
 # False
 
 ______ __
-___ is_allowed_specific_char string:
+___ is_allowed_specific_char s__:
     charRe _ __.c.. r'[^a-zA-Z0-9.]'
-    string _ charRe.s.. string
-    r_ no. bool string
+    s__ _ charRe.s.. s__
+    r_ no. bool s__
 
 print is_allowed_specific_char "ABCDEFabcdef123450"
 print is_allowed_specific_char "*&%@#!}{"

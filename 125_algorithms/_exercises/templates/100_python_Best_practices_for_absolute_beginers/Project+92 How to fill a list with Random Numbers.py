@@ -1,4 +1,4 @@
-____ random _______ randint
+____ r__ _______ randint
 
 mini  i..(input("Insert minimum number: "))
 maxi  i..(input("Insert maximum number: "))

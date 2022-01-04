@@ -55,9 +55,9 @@ c_ Solution(object):
 __ __name__ __ '__main__':
     Solution().test()
     
-    _______ random
+    _______ r__
     ___ num __ r..(30):
-        num = random.randint(0, num)
+        num = r__.randint(0, num)
         print('num:  %08s' % bin(num & 0b11111111))
         print('-num: %8s' % bin(-num & 0b11111111))
         diff = num&(-num)

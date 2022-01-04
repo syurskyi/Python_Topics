@@ -9,7 +9,7 @@ c_ RandomListNode(object):
     ___ - , x):
         label = x
         next = N..
-        random = N..
+        r__ = N..
 
 c_ Solution(object):
     ___ copyRandomList(self, head):
@@ -31,10 +31,10 @@ c_ Solution(object):
         node = head
         newNode = newHead
         w.... node:
-            __ node.random:
-                newNode.random = hashmap[node.random]
+            __ node.r__:
+                newNode.r__ = hashmap[node.r__]
             ____:
-                newNode.random = N..
+                newNode.r__ = N..
             node = node.next
             newNode = newNode.next
         r.. newHead

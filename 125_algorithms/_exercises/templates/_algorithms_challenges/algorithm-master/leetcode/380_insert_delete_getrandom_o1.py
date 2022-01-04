@@ -5,7 +5,7 @@ param = obj.insert(val)
 param = obj.remove(val)
 param = obj.getRandom()
 """
-_______ random
+_______ r__
 
 
 c_ RandomizedSet:
@@ -46,5 +46,5 @@ c_ RandomizedSet:
         Get a random element from the set.
         :rtype: int
         """
-        i = random.randrange(l..(nums))
+        i = r__.randrange(l..(nums))
         r.. nums[i]

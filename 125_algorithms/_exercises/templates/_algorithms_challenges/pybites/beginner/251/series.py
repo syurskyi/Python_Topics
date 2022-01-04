@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 _______ numpy __ np
 _______ pandas __ pd
 
@@ -27,7 +27,7 @@ ___ alpha_index_series() __ pd.Series:
     so index 'a'=1, 'b'=2 ... 'y'=25, 'z'=26
     Don't worry about the series name.
     """
-    r.. pd.Series(r..(1,27),dtype='int64',index=l..(string.ascii_lowercase))
+    r.. pd.Series(r..(1,27),dtype='int64',index=l..(s__.ascii_lowercase))
 
 
 ___ object_values_series() __ pd.Series:
@@ -37,4 +37,4 @@ ___ object_values_series() __ pd.Series:
     Don't worry about the series name.
     """
 
-    r.. pd.Series(l..(string.a..),index=r..(101,127))
+    r.. pd.Series(l..(s__.a..),index=r..(101,127))

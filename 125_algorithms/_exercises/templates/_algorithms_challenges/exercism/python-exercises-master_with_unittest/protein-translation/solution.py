@@ -21,5 +21,5 @@ ___ of_rna(strand):
     r.. proteins
 
 
-___ _chunkstring(string, n):
-    r.. (string[i:n + i] ___ i __ r..(0, l..(string), n))
+___ _chunkstring(s__, n):
+    r.. (s__[i:n + i] ___ i __ r..(0, l..(s__), n))

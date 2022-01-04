@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-____ random _______ randint
+____ r__ _______ randint
 
 
 c_ Solution:

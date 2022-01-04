@@ -1,11 +1,11 @@
-_______ secrets
-_______ string
-
-___ gen_key(parts=4, chars_per_part=8):
-    string_alphabet = string.a.. + string.d..
-    password = ""
-    ___ part __ r..(parts):
-        ___ char __ r..(chars_per_part):
-            password += secrets.choice(string_alphabet)
-        password += '-'
-    r.. password[:-1]
+# _______ s__
+# _______ s__
+#
+# ___ gen_key parts=4, chars_per_part=8
+#     string_alphabet = s__.a.. + s__.d..
+#     password = ""
+#     ___ part __ r.. ?
+#         ___ char __ r.. ?
+#             ? += s__.c.. ?
+#         ? += '-'
+#     r.. ? |-1

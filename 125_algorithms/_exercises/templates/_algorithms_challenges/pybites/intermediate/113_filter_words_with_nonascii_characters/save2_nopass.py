@@ -1,4 +1,4 @@
-____ string _______ printable
+____ s__ _______ printable
 
 '''
 original code:

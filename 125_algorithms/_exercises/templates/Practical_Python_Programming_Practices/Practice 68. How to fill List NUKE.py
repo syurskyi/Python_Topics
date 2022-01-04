@@ -1,4 +1,4 @@
-____ random _______ randint
+____ r__ _______ randint
 
 ___ list_fill(first, qyt, mini, maxi):
     ___ i __ r..(qyt):

@@ -1,5 +1,5 @@
-___ get_profile(**kwargs):
-    ___ key __ kwargs:
-        __ key n.. __ ['name', 'profession']:
-            r.. T..
-    r.. f"{kwargs.get('name', 'julian')} is a {kwargs.get('profession', 'programmer')}"
+# ___ get_profile $$
+#     ___ key __ ?
+#         __ ? n.. __ 'name', 'profession'
+#             r.. T..
+#     r.. _* ?.g.. 'name', 'julian' is a ?.g.. 'profession', 'programmer'

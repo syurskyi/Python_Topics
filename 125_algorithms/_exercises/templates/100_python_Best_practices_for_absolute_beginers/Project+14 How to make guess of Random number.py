@@ -1,4 +1,4 @@
-____ random _______ randint
+____ r__ _______ randint
 
 guess_num  randint(1,100)
 user_input  0

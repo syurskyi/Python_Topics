@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 input_string = "khoo swee chuan"
 

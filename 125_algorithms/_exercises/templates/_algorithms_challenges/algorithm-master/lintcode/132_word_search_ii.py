@@ -10,16 +10,16 @@ c_ Solution:
             'children': {}
         }
 
-    ___ put(self, parent, string):
-        __ n.. string:
+    ___ put(self, parent, s__):
+        __ n.. s__:
             r..
-        ___ char __ string:
+        ___ char __ s__:
             __ char __ parent['children']:
                 parent = parent['children'][char]
             ____:
                 parent['children'][char] = new_node()
                 parent = parent['children'][char]
-        parent['end_of'] = string
+        parent['end_of'] = s__
 
     """
     @param: board: A list of lists of character

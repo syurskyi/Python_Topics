@@ -5,11 +5,11 @@
 n = i..(input())
 s = set(map(i.., input().s..()))
 ___ i __ r..(i..(input())):
-    string = input().s.. 
-    __ string[0] __ 'pop':
+    s__ = input().s..
+    __ s__[0] __ 'pop':
         s.pop()
-    ____ string[0] __ 'remove':
-        s.remove(i..(string[1]))
-    ____ string[0] __ 'discard':
-        s.discard(i..(string[1]))
+    ____ s__[0] __ 'remove':
+        s.remove(i..(s__[1]))
+    ____ s__[0] __ 'discard':
+        s.discard(i..(s__[1]))
 print(s..(s))

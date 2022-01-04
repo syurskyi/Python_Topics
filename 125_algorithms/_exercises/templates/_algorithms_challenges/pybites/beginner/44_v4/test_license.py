@@ -1,19 +1,19 @@
-_______ __
-
-____ Previous.license _______ gen_key
-
-default_key = __.c..(r'^([A-Z0-9]{8}-){3}[A-Z0-9]{8}$')
-shorter_key = __.c..(r'^([A-Z0-9]{4}-){2}[A-Z0-9]{4}$')
-longer_key = __.c..(r'^([A-Z0-9]{10}-){9}[A-Z0-9]{10}$')
-
-
-___ test_gen_default_key
-    ... default_key.m..(gen_key())
-
-
-___ test_gen_shorter_key
-    ... shorter_key.m..(gen_key(parts=3, chars_per_part=4))
-
-
-___ test_gen_longer_key
-    ... longer_key.m..(gen_key(parts=10, chars_per_part=10))
+# _______ __
+#
+# ____ P__.l.. _______ g..
+#
+# default_key = __.c.. _*_ A-Z0-9]{8}-){3}[A-Z0-9]{8}_
+# shorter_key = __.c.. _*_ A-Z0-9]{4}-){2}[A-Z0-9]{4}_
+# longer_key = __.c.. _*_ A-Z0-9]{10}-){9}[A-Z0-9]{10}_
+#
+#
+# ___ test_gen_default_key
+#     ... ?.m.. ?
+#
+#
+# ___ test_gen_shorter_key
+#     ... ?.m.. ? parts=3 chars_per_part=4
+#
+#
+# ___ test_gen_longer_key
+#     ... ?.m.. ? parts=10 chars_per_part=10

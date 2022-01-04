@@ -1,2 +1,2 @@
 ___ foo(mylist):
-    r.. [string ___ string __ mylist __ isi..(string, s..) a.. "xxx" __ string ]
+    r.. [s__ ___ s__ __ mylist __ isi..(s__, s..) a.. "xxx" __ s__ ]

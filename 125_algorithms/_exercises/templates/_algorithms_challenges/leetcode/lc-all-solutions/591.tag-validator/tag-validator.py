@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 
 c_ Solution(object):
@@ -35,7 +35,7 @@ c_ Solution(object):
       __ n.. 1 <= l..(tag) <= 9:
         r.. F..
       ___ c __ tag:
-        __ c n.. __ string.a..:
+        __ c n.. __ s__.a..:
           r.. F..
       r.. T..
 

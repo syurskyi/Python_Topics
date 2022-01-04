@@ -1,5 +1,5 @@
 ____ math _______ floor
-____ string _______ ascii_lowercase, a.., d..
+____ s__ _______ ascii_lowercase, a.., d..
 ____ typing _______ Dict
 
 CODEX: s.. = d.. + ascii_lowercase + a..

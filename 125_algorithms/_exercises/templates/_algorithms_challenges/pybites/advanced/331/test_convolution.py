@@ -4,9 +4,9 @@ _______ p__
 ____ convolution _______ convolution2D
 
 IMAGE_1x1 = np.array([[1]])
-IMAGE_3x3 = np.random.rand(3, 3)
-IMAGE_9x9 = np.random.rand(9, 9)
-IMAGE_256x256 = np.random.rand(256, 256)
+IMAGE_3x3 = np.r__.rand(3, 3)
+IMAGE_9x9 = np.r__.rand(9, 9)
+IMAGE_256x256 = np.r__.rand(256, 256)
 
 IMAGE_5x5_OUTER_SQUARE = np.array(
     [
@@ -41,7 +41,7 @@ KERNEL_3x3_SHARPEN = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
 KERNEL_3x3_BLUR = np.ones((3, 3)) * 1 / 9
 KERNEL_3x3_HORIZONTAL_EDGE = np.array([[-1, -2, -1], [0, 0, 0], [1, 2, 1]])
 KERNEL_3x3_VERTICAL_EDGE = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
-KERNEL_5x5 = np.random.rand(5, 5)
+KERNEL_5x5 = np.r__.rand(5, 5)
 KERNEL_5x5_ONES = np.diag(np.ones(5))
 
 
@@ -152,10 +152,10 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map):
         (IMAGE_5x5_INNER_SQUARE, np.ones((3, 3, 3)), N.., 1, ValueError),
         (np.array([]), KERNEL_3x3_BLUR, N.., 1, ValueError),
         (IMAGE_5x5_SQUARES, np.array([]), N.., 1, ValueError),
-        (np.random.rand(3, 2), KERNEL_3x3_BLUR, N.., 1, ValueError),
-        (np.random.rand(3, 5), KERNEL_3x3_BLUR, N.., 1, ValueError),
-        (IMAGE_256x256, np.random.rand(33, 17), N.., 1, ValueError),
-        (IMAGE_256x256, np.random.rand(17, 33), N.., 1, ValueError),
+        (np.r__.rand(3, 2), KERNEL_3x3_BLUR, N.., 1, ValueError),
+        (np.r__.rand(3, 5), KERNEL_3x3_BLUR, N.., 1, ValueError),
+        (IMAGE_256x256, np.r__.rand(33, 17), N.., 1, ValueError),
+        (IMAGE_256x256, np.r__.rand(17, 33), N.., 1, ValueError),
         (np.repeat("1", 9).reshape(3, 3), KERNEL_3x3_BLUR, N.., 1, T..),
         (IMAGE_5x5_INNER_SQUARE, np.repeat("1", 9).reshape(3, 3), N.., 1, T..),
         (

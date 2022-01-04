@@ -20,7 +20,7 @@ c_ Solution(object):
 
     p = head
     w.... p:
-      p.next.random = p.random a.. p.random.next
+      p.next.r__ = p.r__ a.. p.r__.next
       p = p.next.next
 
     p = head

@@ -1,4 +1,4 @@
-____ random _______ randint
+____ r__ _______ randint
 
 
 c_ HashFunc:

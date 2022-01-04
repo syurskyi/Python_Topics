@@ -1,5 +1,5 @@
 _______ i___
-_______ string
+_______ s__
 
 _______ p__
 _______ numpy __ np
@@ -17,7 +17,7 @@ ___ float_series
 @p__.fixture()
 ___ alpha_series
     """Returns a pandas Series containing floats"""
-    dictionary = d..(z..(string.ascii_lowercase, r..(1, 27)))
+    dictionary = d..(z..(s__.ascii_lowercase, r..(1, 27)))
     r.. pd.Series(dictionary)
 
 
@@ -61,7 +61,7 @@ ___ test_get_index(alpha_series):
     idx = se.get_index(alpha_series)
     ... isi..(idx, pd.core.indexes.base.Index)
     ... l..(idx) __ 26
-    ... a..(c __ string.ascii_lowercase ___ c __ idx.values)
+    ... a..(c __ s__.ascii_lowercase ___ c __ idx.values)
     ... ".index" __ i___.getsource(se.get_index)
 
 ___ test_get_values(alpha_series):

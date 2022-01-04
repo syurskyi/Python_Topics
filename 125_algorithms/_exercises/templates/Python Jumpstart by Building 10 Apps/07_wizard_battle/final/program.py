@@ -1,5 +1,5 @@
 _______ t__
-_______ random
+_______ r__
 
 ____ actors _______ Wizard, Creature, SmallAnimal, Dragon
 
@@ -49,7 +49,7 @@ ___ game_loop
 
     w___ T...
 
-        active_creature  random.choice(creatures)
+        active_creature  r__.choice(creatures)
         print('A {} of level {} has appeared from a dark and foggy forest...'
               .f..(active_creature.name, active_creature.level))
         print()

@@ -1,11 +1,11 @@
 ____ typing _______ List
-_______ string
+_______ s__
 
 
 ___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
 
     __ separators __ N..
-        separators = string.whitespace 
+        separators = s__.whitespace
 
     separators= set(separators)
     result    # list

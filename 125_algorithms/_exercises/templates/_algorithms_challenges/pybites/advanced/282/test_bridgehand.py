@@ -1,5 +1,5 @@
 ____ dataclasses _______ dataclass, field
-____ random _______ shuffle
+____ r__ _______ shuffle
 ____ typing _______ List
 
 _______ p__

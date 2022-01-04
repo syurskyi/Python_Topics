@@ -1,2 +1,2 @@
-___ check_brackets(string):
+___ check_brackets(s__):
     p..

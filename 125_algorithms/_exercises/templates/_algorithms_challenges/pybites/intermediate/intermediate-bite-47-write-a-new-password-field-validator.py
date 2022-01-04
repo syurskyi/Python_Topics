@@ -1,15 +1,15 @@
-_______ string
+_______ s__
 _______ __
 
-PUNCTUATION_CHARS = l..(string.punctuation)
+PUNCTUATION_CHARS = l..(s__.punctuation)
 used_passwords = set('PassWord@1 PyBit$s9'.s..())
 
 ___ validate_password_1(password):
     __ l..(password) < 6 o. l..(password) > 12:
         r.. F..
-    __ n.. any(elem __ password ___ elem __ string.ascii_lowercase):
+    __ n.. any(elem __ password ___ elem __ s__.ascii_lowercase):
         r.. F..
-    __ n.. any(elem __ password ___ elem __ string.a..):
+    __ n.. any(elem __ password ___ elem __ s__.a..):
         r.. F..
     __ n.. any(elem __ password ___ elem __ PUNCTUATION_CHARS):
         r.. F..

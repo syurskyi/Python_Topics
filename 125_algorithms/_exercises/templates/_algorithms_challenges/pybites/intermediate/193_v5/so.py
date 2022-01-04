@@ -19,8 +19,8 @@ ___ top_python_questions(url=cached_so_url):
     """
     content = load_page(url)
     soup = BeautifulSoup(content)
-    questions = [(question.select_one('a.question-hyperlink').string.s..,
-                  i..(question.select_one('span.vote-count-post').string.strip()))
+    questions = [(question.select_one('a.question-hyperlink').s__.s..,
+                  i..(question.select_one('span.vote-count-post').s__.strip()))
                  ___ question __ soup.find_all(class_='question-summary')
-                 __ question.select_one('div.views').string.s...endswith('m views')]
+                 __ question.select_one('div.views').s__.s...endswith('m views')]
     r.. s..(questions, key=l.... x: -x[1])

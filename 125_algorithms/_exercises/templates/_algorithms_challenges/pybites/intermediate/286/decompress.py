@@ -1,11 +1,11 @@
 ____ typing _______ Dict
 
 
-___ decompress(string: s.., table: Dict[s.., s..]) __ s..:
+___ decompress(s__: s.., table: Dict[s.., s..]) __ s..:
 
 
     result    # list
-    ___ c __ string:
+    ___ c __ s__:
         __ c __ table:
             result.extend(decompress(table[c],table))
         ____:

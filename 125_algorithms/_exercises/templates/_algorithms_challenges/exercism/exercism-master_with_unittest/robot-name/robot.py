@@ -1,5 +1,5 @@
-_______ string
-_______ random
+_______ s__
+_______ r__
 
 
 c_ Robot:
@@ -11,11 +11,11 @@ c_ Robot:
         name = generate_name()
 
     ___ generate_name
-        random.seed()
+        r__.seed()
         r.. random_prefix(2) + random_suffix(3)
 
     ___ random_prefix(self, n):
-        r.. ''.j..(random.sample(string.a.., n))
+        r.. ''.j..(r__.sample(s__.a.., n))
 
     ___ random_suffix(self, n):
-        r.. ''.j..(random.sample(string.d.., n))
+        r.. ''.j..(r__.sample(s__.d.., n))

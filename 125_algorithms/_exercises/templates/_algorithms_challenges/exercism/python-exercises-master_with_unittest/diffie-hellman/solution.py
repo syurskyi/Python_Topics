@@ -1,8 +1,8 @@
-_______ random
+_______ r__
 
 
 ___ private_key(p):
-    r.. random.randint(2, p-1)
+    r.. r__.randint(2, p-1)
 
 
 ___ public_key(p, g, a):

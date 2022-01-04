@@ -1,4 +1,4 @@
-____ random _______ choice
+____ r__ _______ choice
 
 defeated_by = d..(paper='scissors',
                    rock='paper',
@@ -11,9 +11,9 @@ tie = 'tie!'
 ___ _get_computer_move
     """Randomly select a move"""
 
-    choices = ['scissors','paper','rock']
+    c.. = ['scissors','paper','rock']
 
-    r.. choice(choices)
+    r.. choice(c..)
 
 
 

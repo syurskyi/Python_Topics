@@ -3,17 +3,17 @@ _______ __
 amount_values = i..(input())
 results    # list
 
-___ is_palindrome(string):
-    string = string.r..(" ", "")
-    string = __.sub(r'[^\w\s]','',string).l..
-    string_length = l..(string)
+___ is_palindrome(s__):
+    s__ = s__.r..(" ", "")
+    s__ = __.sub(r'[^\w\s]','',s__).l..
+    string_length = l..(s__)
     ___ i __ r..(string_length//2):
-        __(string[i] != string[string_length-i-1]):
+        __(s__[i] != s__[string_length-i-1]):
             r.. "N"
     r.. "Y"
 
 ___ i __ r..(amount_values):
-    string = input()
-    results.a..(is_palindrome(string))
+    s__ = input()
+    results.a..(is_palindrome(s__))
 
 print(*results)

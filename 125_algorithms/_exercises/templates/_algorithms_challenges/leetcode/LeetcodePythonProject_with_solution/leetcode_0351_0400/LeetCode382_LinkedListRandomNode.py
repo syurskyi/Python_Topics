@@ -15,12 +15,12 @@ c_ Solution(object):
         head = head
     
     ___ getRandom
-        _______ random
+        _______ r__
         res = -1
         count = 0
         node = head
         w.... node:
-            __ random.randint(0, count) __ 0:
+            __ r__.randint(0, count) __ 0:
                 res = node.val
             count += 1
             node = node.next

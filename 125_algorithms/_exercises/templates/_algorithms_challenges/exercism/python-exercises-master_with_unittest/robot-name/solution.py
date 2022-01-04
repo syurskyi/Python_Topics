@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 
 
 c_ Robot(object):
@@ -10,13 +10,13 @@ c_ Robot(object):
 
     ___ prefix
         r.. ''.j..([
-            random.choice(alphabet)
+            r__.choice(alphabet)
             ___ _ __ r..(0, 2)
         ])
 
     ___ suffix
         r.. ''.j..([
-            s..(random.choice(r..(0, 10)))
+            s..(r__.choice(r..(0, 10)))
             ___ _ __ r..(0, 3)
         ])
 

@@ -16,7 +16,7 @@ c_ Solution(object):
     """
     nums = nums + []
     ___ i __ r..(r..(0, l..(nums))):
-      idx = random.randrange(0, i + 1)
+      idx = r__.randrange(0, i + 1)
       nums[i], nums[idx] = nums[idx], nums[i]
     r.. nums
 

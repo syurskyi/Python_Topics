@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-____ random _______ choice
+____ r__ _______ choice
 ____ tempfile _______ NamedTemporaryFile
 
 _______ p__

@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 
 BITES = {6: 'PyBites Die Hard',
          7: 'Parsing dates from logs',
@@ -31,7 +31,7 @@ c_ Promo:
         bites_available = [x ___ x, _ __ BITES.i.. __ x n.. __ bites_done]
         __ l..(bites_available) < 1:
             r.. NoBitesAvailable
-        r.. random.choice(bites_available)
+        r.. r__.choice(bites_available)
 
     ___ new_bite
         picked = _pick_random_bite()

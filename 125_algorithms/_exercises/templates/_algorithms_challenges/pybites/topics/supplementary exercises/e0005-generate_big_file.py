@@ -1,5 +1,5 @@
-____ random _______ choice
-____ string _______ a..
+____ r__ _______ choice
+____ s__ _______ a..
 
 fh = open('bigfile.txt', 'w')
 

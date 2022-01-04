@@ -11,9 +11,9 @@ ___ fix_translation(org_text, trans_text):
     ___ tag __ tags:
         opening = '<' + tag + '>'
         closing = '</' + tag + '>'
-        string = f"{opening}([\W\w]+?){closing}"
-        original = __.f..(string,org_text)
-        trans = __.f..(string,trans_text)
+        s__ = f"{opening}([\W\w]+?){closing}"
+        original = __.f..(s__,org_text)
+        trans = __.f..(s__,trans_text)
         print(original)
         print(trans)
 

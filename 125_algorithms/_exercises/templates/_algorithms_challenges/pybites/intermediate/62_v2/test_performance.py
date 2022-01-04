@@ -1,4 +1,4 @@
-____ string _______ ascii_lowercase
+____ s__ _______ ascii_lowercase
 
 ____ performance _______ (contains, contains_fast,
                          ordered_list_max, ordered_list_max_fast,

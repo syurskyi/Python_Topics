@@ -1,5 +1,5 @@
 ____ d__ _______ date, t..
-____ random _______ shuffle
+____ r__ _______ shuffle
 
 _______ p__
 

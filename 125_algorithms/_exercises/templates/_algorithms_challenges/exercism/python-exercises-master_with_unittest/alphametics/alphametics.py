@@ -1,2 +1,2 @@
-___ solve(string):
+___ solve(s__):
     p..

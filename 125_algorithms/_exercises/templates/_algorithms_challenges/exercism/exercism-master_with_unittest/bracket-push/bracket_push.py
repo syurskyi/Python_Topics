@@ -30,8 +30,8 @@ c_ CheckBrackets:
     ___ matching_brackets(self, opener, closer):
         r.. BRACKETS[opener] __ closer
 
-    ___ get_brackets(self, string):
-        r.. [char ___ char __ string __ is_bracket(char)]
+    ___ get_brackets(self, s__):
+        r.. [char ___ char __ s__ __ is_bracket(char)]
 
     ___ is_opening_bracket(self, bracket):
         r.. bracket __ OPENING_BRACKET

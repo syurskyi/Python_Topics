@@ -1,8 +1,8 @@
 s ='HEELLLLOO'
-string = ''
+s__ = ''
 ___ i __ r..(l..(s)):
     __ 'A='<= s[i] <= 'Z':
-        string += chr((ord(s[i])) + 32)
+        s__ += chr((ord(s[i])) + 32)
     ____:
-        string += s[i]
-print(string)
+        s__ += s[i]
+print(s__)

@@ -2,11 +2,11 @@ c_ Trie:
     ___ - ):
         root    # dict
 
-    ___ insert(self, string):
-        __ n.. string:
+    ___ insert(self, s__):
+        __ n.. s__:
             r..
         parent = root
-        ___ char __ string:
+        ___ char __ s__:
             __ char __ parent:
                 parent = parent[char]
             ____:
@@ -14,32 +14,32 @@ c_ Trie:
                 parent = parent[char]
         parent['_end'] = T..
 
-    ___ s..(self, string):
-        __ n.. string:
+    ___ s..(self, s__):
+        __ n.. s__:
             r.. F..
         parent = root
-        ___ char __ string:
+        ___ char __ s__:
             __ char __ parent:
                 parent = parent[char]
             ____:
                 r.. F..
         r.. T..
 
-    ___ search_in_regex(self, string):
-        __ n.. string:
+    ___ search_in_regex(self, s__):
+        __ n.. s__:
             r.. F..
-        r.. _search_in_regex(string, root, 0)
+        r.. _search_in_regex(s__, root, 0)
 
-    ___ _search_in_regex(self, string, parent, i):
-        __ i __ l..(string):
+    ___ _search_in_regex(self, s__, parent, i):
+        __ i __ l..(s__):
             r.. parent.get('_end', F..)
         result = F..
-        __ string[i] __ '.':
+        __ s__[i] __ '.':
             ___ child __ parent:
-                __ child[0] != '_' a.. _search_in_regex(string, parent[child], i + 1):
+                __ child[0] != '_' a.. _search_in_regex(s__, parent[child], i + 1):
                     result = T..
-        ____ string[i] __ parent:
-            __ _search_in_regex(string, parent[string[i]], i + 1):
+        ____ s__[i] __ parent:
+            __ _search_in_regex(s__, parent[s__[i]], i + 1):
                 result = T..
         r.. result
 

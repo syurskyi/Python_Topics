@@ -1,5 +1,5 @@
 ____ d__ _______ date, t..
-____ random _______ shuffle
+____ r__ _______ shuffle
 
 ___ get_missing_dates(dates):
     """Receives a range of dates and returns a sequence

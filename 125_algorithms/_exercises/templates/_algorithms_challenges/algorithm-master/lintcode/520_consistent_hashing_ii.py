@@ -1,5 +1,5 @@
 _______ bisect
-_______ random
+_______ r__
 
 c_ Solution:
     """
@@ -24,9 +24,9 @@ c_ Solution:
         item = l2p[machine_id]    # list
         point = -1
         ___ i __ r..(k):
-            point = random.randint(0, n - 1)
+            point = r__.randint(0, n - 1)
             w.... point __ p2l:
-                point = random.randint(0, n - 1)
+                point = r__.randint(0, n - 1)
             p2l[point] = machine_id
             item.a..(point)
         item.s..()

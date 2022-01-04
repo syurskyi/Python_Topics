@@ -46,7 +46,7 @@ c_ RandomizedCollection(object):
     Get a random element from the collection.
     :rtype: int
     """
-    r.. a[random.randrange(0, l..(a))]
+    r.. a[r__.randrange(0, l..(a))]
 
 # Your RandomizedCollection object will be instantiated and called as such:
 # obj = RandomizedCollection()

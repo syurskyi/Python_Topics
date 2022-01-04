@@ -1,9 +1,9 @@
-___ rotate(string, n):
-    __ n > l..(string) o. n < (l..(string)*-1):
-        n = n % l..(string)
+___ rotate(s__, n):
+    __ n > l..(s__) o. n < (l..(s__)*-1):
+        n = n % l..(s__)
     __ n __ 0:
-        r.. string
+        r.. s__
     ____ n > 0:
-        r.. string[n:l..(string)] + string[0:n]
+        r.. s__[n:l..(s__)] + s__[0:n]
     ____ n < 0:
-        r.. string[n:] + string[0:n]
+        r.. s__[n:] + s__[0:n]

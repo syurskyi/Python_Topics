@@ -1,7 +1,7 @@
 _______ sys
 
 __ sys.version_info[0] __ 2:
-    ____ string _______ maketrans
+    ____ s__ _______ maketrans
 ____:
     maketrans = s...maketrans
 

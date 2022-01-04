@@ -2,9 +2,9 @@ c_ StackUnderflowError(Exception):
     p..
 
 
-___ is_integer(string):
+___ is_integer(s__):
     try:
-        i..(string)
+        i..(s__)
         r.. T..
     except ValueError:
         r.. F..

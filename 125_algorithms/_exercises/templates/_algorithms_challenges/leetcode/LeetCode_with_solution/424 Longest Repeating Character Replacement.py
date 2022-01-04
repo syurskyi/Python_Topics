@@ -5,7 +5,7 @@ any letter in the string with another letter at most k times. Find the length of
 a longest substring containing all repeating letters you can get after
 performing the above operations.
 """
-_______ string
+_______ s__
 _______ operator
 
 
@@ -26,7 +26,7 @@ c_ Solution:
         """
         counter = {
             alphabet: 0
-            ___ alphabet __ string.a..
+            ___ alphabet __ s__.a..
         }
         lo = 0
         ret = 0

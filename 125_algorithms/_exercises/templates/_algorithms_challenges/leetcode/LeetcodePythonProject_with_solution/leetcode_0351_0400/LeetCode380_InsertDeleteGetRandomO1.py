@@ -29,5 +29,5 @@ c_ RandomizedSet(object):
         r.. F..
     
     ___ getRandom
-        _______ random
-        r.. random.choice(nums)
+        _______ r__
+        r.. r__.choice(nums)

@@ -18,11 +18,11 @@ Example call (look at the tests for more detail):
 Bonus: use a generator to build up the table rows.
 """
 
-_______ random
+_______ r__
 
 names = 'Julian Bob PyBites Dante Martin Rodolfo'.s..
 aliases = 'Pythonista Nerd Coder'.s..  * 2
-points = random.sample(r..(81, 101), 6)
+points = r__.sample(r..(81, 101), 6)
 awake = [T.., F..] * 3
 SEPARATOR = ' | '
 

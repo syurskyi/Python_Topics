@@ -1,4 +1,4 @@
-____ random _______ choice
+____ r__ _______ choice
 
 defeated_by = d..(paper='scissors',
                    rock='paper',
@@ -7,17 +7,17 @@ lose = '{} beats {}, you lose!'
 win = '{} beats {}, you win!'
 tie = 'tie!'
 
-choices = defeated_by.v..
+c.. = defeated_by.v..
 
 ___ _get_computer_move
     """Randomly select a move"""
-    r.. choice(choices)
+    r.. choice(c..)
 
 
 ___ _get_winner(computer_choice, player_choice):
     """Return above lose/win/tie strings populated with the
        appropriate values (computer vs player)"""
-    __ player_choice n.. __ choices:
+    __ player_choice n.. __ c..:
         r.. 'Invalid choice'
     __ computer_choice __ player_choice:
         r.. tie

@@ -11,8 +11,8 @@ c_ Calculator(object):
     ___ - ):
         result    # list
 
-    ___ evaluate(self, string):
-        result = string.s..(' ')
+    ___ evaluate(self, s__):
+        result = s__.s..(' ')
         _loop('*/')
         _loop('+-')
         r.. float(result[0])

@@ -1,8 +1,8 @@
-_______ string
+_______ s__
 
 
 ___ _check(key):
-    __ key[0] n.. __ string.d..:
+    __ key[0] n.. __ s__.d..:
         key = f'\1{key}'
     r.. key.l..
 

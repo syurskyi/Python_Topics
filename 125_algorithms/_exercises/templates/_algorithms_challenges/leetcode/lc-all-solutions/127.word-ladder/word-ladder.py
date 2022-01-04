@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 ____ collections _______ deque
 
 
@@ -13,7 +13,7 @@ c_ Solution(object):
 
     ___ getNbrs(src, dest, wordList):
       res    # list
-      ___ c __ string.ascii_lowercase:
+      ___ c __ s__.ascii_lowercase:
         ___ i __ r..(0, l..(src)):
           newWord = src[:i] + c + src[i + 1:]
           __ newWord __ src:

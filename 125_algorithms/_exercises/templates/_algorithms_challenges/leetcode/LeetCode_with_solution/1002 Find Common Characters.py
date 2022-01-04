@@ -25,7 +25,7 @@ Note:
 1 <= A[i].length <= 100
 A[i][j] is a lowercase letter
 """
-_______ string
+_______ s__
 
 ____ typing _______ List
 ____ collections _______ Counter
@@ -43,10 +43,10 @@ c_ Solution:
         counter = Counter(A[0])
         ___ a __ A[1:]:
             cur = Counter(a)
-            ___ c __ string.ascii_lowercase:
+            ___ c __ s__.ascii_lowercase:
                 counter[c] = m..(counter[c], cur[c])
 
-        ___ c __ string.ascii_lowercase:
+        ___ c __ s__.ascii_lowercase:
             __ counter[c] > 0:
                 ret.extend([c] * counter[c])
 

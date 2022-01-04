@@ -1,2 +1,2 @@
-___ is_isogram(string):
+___ is_isogram(s__):
     p..

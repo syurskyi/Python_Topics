@@ -6,7 +6,7 @@ ___ i __ x:
     i = l..(i)
     j = 0
     plus_check = F..
-    string = ''
+    s__ = ''
     w.... i[j]!= '@':
         __ plus_check __ F..:
             __ i[j] __ '.':
@@ -18,9 +18,9 @@ ___ i __ x:
                 p..
         ____:
             i.pop(j)
-    string = ''.j..(i)
-    __ string n.. __ store_add:
-        store_add.a..(string)
+    s__ = ''.j..(i)
+    __ s__ n.. __ store_add:
+        store_add.a..(s__)
         count += 1
     
 r..(count)

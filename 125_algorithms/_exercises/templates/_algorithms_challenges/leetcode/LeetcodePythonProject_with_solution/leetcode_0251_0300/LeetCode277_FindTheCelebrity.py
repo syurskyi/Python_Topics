@@ -8,8 +8,8 @@ Created on May 12, 2018
 # @param b, person b
 # @return a boolean, whether a knows b
 ___ knows(a, b):
-    _______ random
-    r.. random(0, 1) __ 0
+    _______ r__
+    r.. r__(0, 1) __ 0
 
 c_ Solution(object):
     ___ findCelebrity(self, n):

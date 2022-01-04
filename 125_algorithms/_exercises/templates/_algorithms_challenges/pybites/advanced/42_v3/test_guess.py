@@ -1,12 +1,12 @@
 ____ unittest.mock _______ patch
-_______ random
+_______ r__
 
 _______ p__
 
 ____ guess _______ get_random_number, Game
 
 
-@patch.object(random, 'randint')
+@patch.object(r__, 'randint')
 ___ test_get_random_number(m):
     m.return_value = 17
     ... get_random_number() __ 17

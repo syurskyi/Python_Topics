@@ -10,7 +10,7 @@ c_ RandomListNode:
     ___ - , x):
         label = x
         next = N..
-        random = N..
+        r__ = N..
 
 c_ Solution:
     ___ copyRandomList(self, head):
@@ -50,8 +50,8 @@ c_ Solution:
         w.... pre.next:
             cur = pre.next
 
-            __ cur.random:
-                cur.next.random = cur.random.next  # for duplicated node. NEXT IS RANDOM
+            __ cur.r__:
+                cur.next.r__ = cur.r__.next  # for duplicated node. NEXT IS RANDOM
 
             pre = pre.next.next
 

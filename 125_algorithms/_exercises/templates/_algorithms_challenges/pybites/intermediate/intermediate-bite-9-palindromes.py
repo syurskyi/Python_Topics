@@ -13,7 +13,7 @@ which reads the same backward as forward.
 
 _______ os
 _______ urllib.request
-_______ string
+_______ s__
 _______ __
 
 DICTIONARY = os.path.j..(os.getenv('temp'), 'dictionary_m_words.txt')

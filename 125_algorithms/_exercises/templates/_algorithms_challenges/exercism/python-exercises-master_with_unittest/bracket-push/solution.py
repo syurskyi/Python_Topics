@@ -1,8 +1,8 @@
-___ check_brackets(string):
+___ check_brackets(s__):
     counterparts = {')': '(', '}': '{', ']': '['}
 
     stack    # list
-    ___ char __ string:
+    ___ char __ s__:
         __ char __ counterparts.v..
             stack.a..(char)
         ____ char __ counterparts:

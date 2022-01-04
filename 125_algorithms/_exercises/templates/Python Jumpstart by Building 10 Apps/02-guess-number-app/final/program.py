@@ -1,11 +1,11 @@
-_______ random
+_______ r__
 
 print('---------------------------------')
 print('   GUESS THAT NUMBER GAME')
 print('---------------------------------')
 print()
 
-the_number  random.randint(0, 100)
+the_number  r__.randint(0, 100)
 guess  -1
 
 name  input('Player what is your name? ')

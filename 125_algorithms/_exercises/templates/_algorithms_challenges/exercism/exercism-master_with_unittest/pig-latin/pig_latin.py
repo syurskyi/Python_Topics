@@ -1,9 +1,9 @@
-_______ string
+_______ s__
 
 
 c_ PigLatinTranslator:
 
-    alpha = set(string.ascii_lowercase)
+    alpha = set(s__.ascii_lowercase)
     vowels = set(['a', 'e', 'i', 'o', 'u'])
     consonants = alpha - vowels
 

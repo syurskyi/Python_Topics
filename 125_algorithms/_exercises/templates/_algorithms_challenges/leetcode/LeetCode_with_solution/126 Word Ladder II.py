@@ -23,13 +23,13 @@ __author__ = 'Danyang'
 
 c_ Solution_MLE:  # Memory Limit Exceeds
     c_ Node:
-        ___ - , string, pre, d..):
-            string = string
+        ___ - , s__, pre, d..):
+            s__ = s__
             pre = pre  # node
             d.. = d..
 
         ___ __repr__
-            r.. repr(string)
+            r.. repr(s__)
 
     ___ findLadders(self, start, end, d..):
         """
@@ -55,7 +55,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
                 r.. result
 
             ___ i __ xrange(length_0):
-                current = queue[i].string
+                current = queue[i].s__
                 ___ pos __ xrange(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
@@ -71,19 +71,19 @@ c_ Solution_MLE:  # Memory Limit Exceeds
         cur = node
         lst    # list
         w.... cur:
-            lst.insert(0, cur.string)
+            lst.insert(0, cur.s__)
             cur = cur.pre
         result.a..(lst)
 
 
 c_ Solution_TLE:
     c_ Node:
-        ___ - , string, pre):
-            string = string
+        ___ - , s__, pre):
+            s__ = s__
             pre = pre  # node
 
         ___ __repr__
-            r.. repr(string)
+            r.. repr(s__)
 
     ___ findLadders(self, start, end, d..):
         """
@@ -109,7 +109,7 @@ c_ Solution_TLE:
                 r.. result
 
             ___ i __ xrange(length_0):
-                current = queue[i].string
+                current = queue[i].s__
                 ___ pos __ xrange(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
@@ -125,11 +125,11 @@ c_ Solution_TLE:
         cur = node
         lst    # list
         w.... cur:
-            lst.insert(0, cur.string)
+            lst.insert(0, cur.s__)
             cur = cur.pre
         result.a..(lst)
 
-    ___ in_previous(self, node, string):
+    ___ in_previous(self, node, s__):
         cur = node
         w.... cur:
             __ cur.string__string:
@@ -139,13 +139,13 @@ c_ Solution_TLE:
 
 
 c_ Node:
-    ___ - , string, pre):
-        string = string
+    ___ - , s__, pre):
+        s__ = s__
         pre = pre  # node
         # self.pres = self.pre.pres|{string} if self.pre else {string}  # accelerate speed
 
     ___ __repr__
-        r.. repr(string)
+        r.. repr(s__)
 
 c_ Solution_TLE2:
     ___ findLadders(self, start, end, d..):
@@ -177,7 +177,7 @@ c_ Solution_TLE2:
 
                 # greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
                 # the paths downwards are independent of the path before that.
-                d.. -= {current.string}
+                d.. -= {current.s__}
 
                 # check whether reached
                 __ current.string__end:  # reached
@@ -187,7 +187,7 @@ c_ Solution_TLE2:
                 r.. result
 
             ___ i __ xrange(length_0):
-                current = queue[i].string
+                current = queue[i].s__
                 ___ pos __ xrange(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
@@ -203,7 +203,7 @@ c_ Solution_TLE2:
         cur = node
         lst    # list
         w.... cur:
-            lst.insert(0, cur.string)
+            lst.insert(0, cur.s__)
             cur = cur.pre
         result.a..(lst)
 

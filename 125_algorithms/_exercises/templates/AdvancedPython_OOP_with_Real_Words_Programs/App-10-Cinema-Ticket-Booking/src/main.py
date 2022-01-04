@@ -1,6 +1,6 @@
 ____ fpdf _____ FPDF
-_____ random
-_____ string
+_____ r__
+_____ s__
 _____ sqlite3
 
 
@@ -105,7 +105,7 @@ c_ Ticket:
     ___  -    user, price, seat_number):
         user  user
         price  price
-        id  "".j..([random.choice(string.ascii_letters) ___ i __ r..(8)])
+        id  "".j..([r__.choice(s__.ascii_letters) ___ i __ r..(8)])
         seat_number  seat_number
 
     ___ to_pdf _

@@ -6,7 +6,7 @@ a = [i..(num) ___ num __ input().s.. ]
 #create a dictionary to store the index of the list
 ele    # dict
 #create the string to store the position of the sorted index
-string = ''
+s__ = ''
 
 #storing the index of the elements
 ___ x __ r..(l..(a)):
@@ -23,7 +23,7 @@ ___ i __ r..(l..(a)):
 ___ ele_list __ a:
     ___ dic __ ele.k..:
         __ ele_list __ dic:
-            string +=s..(ele[dic])
-            string +=' '
+            s__ +=s..(ele[dic])
+            s__ +=' '
             
-print(string)
+print(s__)

@@ -17,7 +17,7 @@ Solution solution = new Solution(head);
 // getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning.
 solution.getRandom();
 """
-_______ random
+_______ r__
 
 __author__ = 'Daniel'
 
@@ -48,7 +48,7 @@ c_ Solution(object):
         cur = head.next
         idx = 1
         w.... cur:
-            __ random.randrange(0, idx+1) __ 0:
+            __ r__.randrange(0, idx+1) __ 0:
                 ret = cur
             cur = cur.next
             idx += 1

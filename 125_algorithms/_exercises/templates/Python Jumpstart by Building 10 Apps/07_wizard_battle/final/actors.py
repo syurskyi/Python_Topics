@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 
 
 c_ Creature:
@@ -12,7 +12,7 @@ c_ Creature:
         )
 
     ___ get_defensive_roll
-        r.. random.randint(1, 12) * level
+        r.. r__.randint(1, 12) * level
 
 
 c_ Wizard(Creature):

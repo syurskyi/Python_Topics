@@ -1,8 +1,8 @@
-_______ string
+_______ s__
 _______ i..
 
 ___ sequence_generator
-    letters = [letter ___ letter __ string.a..]
+    letters = [letter ___ letter __ s__.a..]
     numbers = [num ___ num __ r..(1, l..(letters) +1, 1)]
     
     sequence    # list

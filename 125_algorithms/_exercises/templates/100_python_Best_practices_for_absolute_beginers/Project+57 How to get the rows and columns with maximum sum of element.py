@@ -1,11 +1,11 @@
-____ random _______ random
+____ r__ _______ r__
 
 matrix  []
 
 ___ i __ r..(6):
     row  []
     ___ j __ r..(6):
-        row.a..(i..(random()*10))
+        row.a..(i..(r__()*10))
     matrix.a..(row)
 
 ___ row __ matrix:

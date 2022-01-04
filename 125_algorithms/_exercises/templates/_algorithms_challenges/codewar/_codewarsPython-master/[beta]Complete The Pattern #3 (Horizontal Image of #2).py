@@ -1,9 +1,9 @@
 ___ pattern(n):
-    string = ''
+    s__ = ''
     res    # list
     ___ i __ r..(n,0,-1):
-        string += s..(i)
-        res.a..(string)
+        s__ += s..(i)
+        res.a..(s__)
     r.. '\n'.j..(res)
         
 

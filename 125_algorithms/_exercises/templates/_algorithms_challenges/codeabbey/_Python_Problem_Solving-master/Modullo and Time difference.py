@@ -1,5 +1,5 @@
 data = i..(input())
-string = ''
+s__ = ''
 
 ___ i __ r..(data):
     a = [i..(j) ___ j __ input().s.. ]
@@ -34,7 +34,7 @@ ___ i __ r..(data):
     
     day = day_b - day_a
     
-    string += '('+s..(i..(day))+' '+s..(i..(hour))+' '+s..(i..(mino))+' '+s..(i..(sec))+')'
-    string += ' '
+    s__ += '('+s..(i..(day))+' '+s..(i..(hour))+' '+s..(i..(mino))+' '+s..(i..(sec))+')'
+    s__ += ' '
     
-print(string)
+print(s__)

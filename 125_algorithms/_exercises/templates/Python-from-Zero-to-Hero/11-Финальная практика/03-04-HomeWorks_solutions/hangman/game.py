@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 
 ____ hangman.game_status _______ GameStatus
 ____ hangman.invalid_operation_exception _______ InvalidOperationException
@@ -26,7 +26,7 @@ c_ Game:
             ___ line __ file:
                 words.a..(line.rstrip('\n'))
 
-        rand_index  random.randint(0, l..(words) - 1)
+        rand_index  r__.randint(0, l..(words) - 1)
 
         __word  words[rand_index]
 

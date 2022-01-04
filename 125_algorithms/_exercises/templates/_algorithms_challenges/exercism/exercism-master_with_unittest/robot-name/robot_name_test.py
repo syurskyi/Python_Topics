@@ -1,7 +1,7 @@
 _______ unittest
 
 ____ robot _______ Robot
-_______ random
+_______ r__
 
 
 c_ RobotTest(unittest.TestCase):
@@ -26,14 +26,14 @@ c_ RobotTest(unittest.TestCase):
         seed = "Totally random."
 
         # Initialize RNG using the seed
-        random.seed(seed)
+        r__.seed(seed)
 
         # Call the generator
         robot = Robot()
         name = robot.name
 
         # Reinitialize RNG using seed
-        random.seed(seed)
+        r__.seed(seed)
 
         # Call the generator again
         robot.reset()

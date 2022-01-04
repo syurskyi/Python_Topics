@@ -1,9 +1,9 @@
-_______ string
+_______ s__
 #accept the data
 data, k = l..(map(i..,input().s..()))
 
 # import string is used to get all 26 alphabets 
-s1 = string.ascii_lowercase
+s1 = s__.ascii_lowercase
 
 # according to the requirement of the alphabets encoding move the alphabets 
 s2 = s1[k:] + s1[:k]

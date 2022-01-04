@@ -1,12 +1,12 @@
-_______ string
+_______ s__
 _______ __
 
 
 ___ extract_non_ascii_words(text):
     """Filter a text returning a list of non-ascii words"""
-    ascii = string.ascii_letters
-    punctuation = string.punctuation
-    d.. = string.d..
+    ascii = s__.ascii_letters
+    punctuation = s__.punctuation
+    d.. = s__.d..
 
     results    # list
 

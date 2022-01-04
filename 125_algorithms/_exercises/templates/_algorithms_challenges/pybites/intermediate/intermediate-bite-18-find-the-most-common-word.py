@@ -13,7 +13,7 @@ KEYWORDS: Counter, data analysis, list comprehensions
 
 _______ os
 _______ urllib.request
-_______ string
+_______ s__
 ____ collections _______ Counter
 _______ __
 
@@ -52,10 +52,10 @@ ___ my_solution_get_harry_most_common_word
     ___ line __ f2:
         ___ word __ line.s.. :
             print(word)
-            p = word.strip(string.punctuation).l..
+            p = word.strip(s__.punctuation).l..
 
             __ l..(p) > 0 a.. p n.. __ stopwords:
-                filtered.a..(word.strip(string.punctuation).lower())
+                filtered.a..(word.strip(s__.punctuation).lower())
 
     counter = Counter(filtered)
     r.. counter.most_common(1)[0]

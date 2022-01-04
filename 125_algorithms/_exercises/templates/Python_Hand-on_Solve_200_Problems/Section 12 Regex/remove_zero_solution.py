@@ -9,7 +9,7 @@
 
 ______ __
 ip _ "216.08.094.196"
-string _ __.sub '\.[0]*', '.', ip
-print string
+s__ _ __.sub '\.[0]*', '.', ip
+print s__
 
 

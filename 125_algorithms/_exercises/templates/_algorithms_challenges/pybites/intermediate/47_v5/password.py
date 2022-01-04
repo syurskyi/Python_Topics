@@ -1,6 +1,6 @@
-_______ string
+_______ s__
 
-PUNCTUATION_CHARS = l..(string.punctuation)
+PUNCTUATION_CHARS = l..(s__.punctuation)
 
 used_passwords = set("PassWord@1 PyBit$s9".s..())
 

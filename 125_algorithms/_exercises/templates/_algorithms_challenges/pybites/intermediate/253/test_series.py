@@ -1,4 +1,4 @@
-_______ string
+_______ s__
 
 _______ p__
 _______ pandas __ pd
@@ -36,7 +36,7 @@ ___ int_series_vsmall_offset_index
 @p__.fixture()
 ___ letters_series
     """Returns a pandas Series containing all lower case letters"""
-    r.. pd.Series(l..(string.ascii_lowercase))
+    r.. pd.Series(l..(s__.ascii_lowercase))
 
 
 @p__.mark.parametrize(

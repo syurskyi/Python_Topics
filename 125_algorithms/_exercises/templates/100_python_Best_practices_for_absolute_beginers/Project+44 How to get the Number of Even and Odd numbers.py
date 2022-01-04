@@ -1,8 +1,8 @@
-_______ random
+_______ r__
 
 x  []
 ___ i __ r..(10):
-    x.a..(i..(random.random()*1000))
+    x.a..(i..(r__.r__()*1000))
 print(x)
 
 even  odd 0

@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 ____ collections _______ n..
 ____ math _______ ceil
 
@@ -18,5 +18,5 @@ ___ create_paw_deck(n=8):
     ___ suit __ r..(n):
         deck.extend(f'{chr(LETTER_A_CODE + suit)}{x}' ___ x __ NUMBERS)
     actions = l..((ACTIONS * ceil(n / 4))[:n]) + ([N..] * 3 * n)
-    random.shuffle(actions)
+    r__.shuffle(actions)
     r.. [PawCard(card, action) ___ card, action __ z..(deck, actions)]

@@ -32,7 +32,7 @@ c_ Solution(object):
         n = l..(strs)
 
         str_builder = ""
-        min_len = m..(l..(string) ___ string __ strs)
+        min_len = m..(l..(s__) ___ s__ __ strs)
         ___ i __ r..(min_len):
             char = strs[0][i]
 

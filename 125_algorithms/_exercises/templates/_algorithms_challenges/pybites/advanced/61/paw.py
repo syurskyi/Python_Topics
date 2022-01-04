@@ -1,6 +1,6 @@
 ____ collections _______ n..
-_______ random
-____ string _______ a..
+_______ r__
+____ s__ _______ a..
 
 ACTIONS = ['draw_card', 'play_again',
            'interchange_cards', 'change_turn_direction']
@@ -17,13 +17,13 @@ ___ create_paw_deck(n=8):
     pawcards    # list
     ___ i __ r..(n):
 
-        r = random.randint(1,4)
+        r = r__.randint(1,4)
         ___ j __ r..(1,5):
             letter = chr(ord('A') + i)
             action = N..
             card = f"{letter}{j}"
             __ r __ j:
-                action = random.choice(ACTIONS)
+                action = r__.choice(ACTIONS)
 
 
             pawcard = PawCard(card,action)

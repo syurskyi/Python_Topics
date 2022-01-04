@@ -1,4 +1,4 @@
-_______ random
+_______ r__
 _______ __
 
 _______ p__
@@ -13,7 +13,7 @@ ___ get_two_numbers(numbers):
     """Give a list of items pick 2 random ones,
        if both are not ints raise a ValueError
     """
-    chosen = random.sample(numbers, 2)
+    chosen = r__.sample(numbers, 2)
     __ n.. a..(t..(i) __ i.. ___ i __ chosen):
         r.. ValueError('not all ints')
 

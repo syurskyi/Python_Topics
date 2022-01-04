@@ -1,4 +1,4 @@
-____ random _______ choice
+____ r__ _______ choice
 
 COLORS = 'red blue green yellow brown purple'.s..
 

@@ -12,18 +12,18 @@ c_ Thumbs:
     ___ __mul__(self,number):
         __ isi..(number,i..):
             __ number > 0:
-                string = THUMBS_UP
+                s__ = THUMBS_UP
             ____ number < 0:
                 number = abs(number)
-                string = THUMBS_DOWN
+                s__ = THUMBS_DOWN
             ____:
                 r.. ValueError("Specify a number")
             
             
             __ number <= 3:
-                r.. string * number
+                r.. s__ * number
             ____:
-                r.. f"{string} ({number}x)"
+                r.. f"{s__} ({number}x)"
             
         ____:
             r.. T..("Can only multiple by intger")

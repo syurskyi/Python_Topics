@@ -6,5 +6,5 @@ _______ i..
 
 
 s = input().s.. 
-string, number = s..(s[0]), i..(s[1])
-print(*l..(map(''.j.., i...permutations(string, number))), sep='\n')
+s__, number = s..(s[0]), i..(s[1])
+print(*l..(map(''.j.., i...permutations(s__, number))), sep='\n')

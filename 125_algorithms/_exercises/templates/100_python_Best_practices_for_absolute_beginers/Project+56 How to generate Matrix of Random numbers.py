@@ -1,4 +1,4 @@
-____ random _______ randint
+____ r__ _______ randint
 
 row  6
 col  6

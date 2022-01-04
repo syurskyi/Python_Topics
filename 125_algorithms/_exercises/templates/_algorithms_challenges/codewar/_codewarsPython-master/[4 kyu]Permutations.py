@@ -1,5 +1,5 @@
 _______ i..
-___ permutations(string):
-    r.. s..([''.j..(p) ___ p __ set(i...permutations(string,l..(string)))])
+___ permutations(s__):
+    r.. s..([''.j..(p) ___ p __ set(i...permutations(s__,l..(s__)))])
 
 print(permutations('aabb'))    
