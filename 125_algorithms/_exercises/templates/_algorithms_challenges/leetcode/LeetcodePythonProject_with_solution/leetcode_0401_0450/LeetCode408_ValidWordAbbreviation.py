@@ -8,12 +8,12 @@ c_ Solution(object):
     ___ validWordAbbreviation(self, word, abbr):
         i, j = 0, 0
         w.... i < l..(word) a.. j < l..(abbr):
-            __ abbr[j].isdigit():
+            __ abbr[j].isdigit
                 prev = j
-                w.... j+1 < l..(abbr) a.. abbr[j+1].isdigit():
+                w.... j+1 < l..(abbr) a.. abbr[j+1].isdigit
                     j+=1
                 __ abbr[prev:j+1].startswith('0'): r.. F..
-                num = int(abbr[prev:j+1])
+                num = i..(abbr[prev:j+1])
                 i += num
                 j += 1
             ____:

@@ -28,7 +28,7 @@ ____ packaging _______ version
 # """
 
 
-___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
+___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
    """Compare old vs new requirement multiline strings
       and return a list of dependencies that have been upgraded
       (have a newer version)

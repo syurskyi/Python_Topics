@@ -42,7 +42,7 @@ ___ compress_string(string):
 
     # Convert into hex and print answer.
     ___ chunk __ chunks:
-        chunk = int(chunk, 2)
+        chunk = i..(chunk, 2)
         encoded_value = hex(chunk)[2:].u.. #[2:] to remove the '0x'
         __ l..(encoded_value) __ 1:
             encoded_value = '0' + encoded_value

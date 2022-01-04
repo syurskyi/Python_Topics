@@ -38,7 +38,7 @@ c_ Solution:
         stack, res    # list, []
 
         ___ char __ E:
-            __ char.isdigit():
+            __ char.isdigit
                 """
                 if its digit
                 then directly output
@@ -80,12 +80,12 @@ c_ Solution:
     ___ eval_rpn(self, E):
         stack    # list
         ___ char __ E:
-            __ char.isdigit():
+            __ char.isdigit
                 """
                 if its digit
                 then temply save in `stack`
                 """
-                stack.a..(int(char))
+                stack.a..(i..(char))
                 continue
 
             """

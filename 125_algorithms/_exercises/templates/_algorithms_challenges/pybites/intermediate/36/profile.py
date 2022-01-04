@@ -2,7 +2,7 @@ ___ get_profile(name, age, *args, **kwargs):
     return_dict    # dict
     __ args:
         return_dict['sports'] = s..(l..(args))
-    __ (isi..(age, int)) a.. l..(args) <= 5:
+    __ (isi..(age, i..)) a.. l..(args) <= 5:
         return_dict['name'] = name
         return_dict['age'] = age
         __ args:

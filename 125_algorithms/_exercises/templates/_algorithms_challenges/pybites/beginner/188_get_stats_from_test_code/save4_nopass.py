@@ -1,16 +1,16 @@
-_______ pandas as pd
-_______ statistics as st
+_______ pandas __ pd
+_______ statistics __ st
 
 url = 'https://bites-data.s3.us-east-2.amazonaws.com/testfiles_number_loc.txt'
 DATA = pd.read_csv(url, header=N..)
 
 
-___ get_all_line_counts(data: s.. = DATA) -> l..:
+___ get_all_line_counts(data: s.. = DATA) __ l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     values    # list
     ___ value __ DATA[DATA.columns[0]]:
-        values.a..(int(value.s.. [0]))
+        values.a..(i..(value.s.. [0]))
     r.. values
 
 

@@ -20,10 +20,10 @@ ___ simple_calculator(calculation):
         }
 
     try:
-        x = int(calculation.s.. [0])
-        y = int(calculation.s.. [2])
+        x = i..(calculation.s.. [0])
+        y = i..(calculation.s.. [2])
         operator = calculation.s.. [1]
-        r.. operation[operator](int(x), int(y))
+        r.. operation[operator](i..(x), i..(y))
     
     except (ValueError, KeyError, ZeroDivisionError):
         raise ValueError

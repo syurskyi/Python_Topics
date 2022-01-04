@@ -10,4 +10,4 @@ ___ shorten(string, length, glue="..."):
     __ length __ l..(glue) + 1 o. l..(glue) > length:
         r.. string[:length]
     shortened = length - l..(glue)
-    r.. string[:int(shortened / 2)] + glue + string[-(int(shortened / 2) + (shortened % 2)):]
+    r.. string[:i..(shortened / 2)] + glue + string[-(i..(shortened / 2) + (shortened % 2)):]

@@ -2,7 +2,7 @@
 
 ___ gen_primes(limit=3000000):
     ignore_this = raw_input() # CodeAbbey required wasted input.
-    data = [int(x) ___ x __ raw_input().s.. ]
+    data = [i..(x) ___ x __ raw_input().s.. ]
     primes, answer    # list, []
 
     # Sieve of Eratosthenes

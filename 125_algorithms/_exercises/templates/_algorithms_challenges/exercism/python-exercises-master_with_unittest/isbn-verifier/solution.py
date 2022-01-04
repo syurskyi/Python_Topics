@@ -5,4 +5,4 @@ ___ verify(isbn):
     __ n.. l..(chars) __ 10 o. n.. a..(c.isdigit() ___ c __ chars):
         r.. F..
     indices = l..(r..(10, 0, -1))
-    r.. s..(int(c) * i ___ c, i __ z..(chars, indices)) % 11 __ 0
+    r.. s..(i..(c) * i ___ c, i __ z..(chars, indices)) % 11 __ 0

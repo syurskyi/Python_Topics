@@ -3,7 +3,7 @@ ____ typing _______ List
 ___ to_lower(in_list):
         r.. [word.l.. ___ word __ in_list]
 
-___ common_words(sentence1: List[s..], sentence2: List[s..]) -> List[s..]:
+___ common_words(sentence1: List[s..], sentence2: List[s..]) __ List[s..]:
     """
     Input:  Two sentences - each is a  list of words in case insensitive ways.
     Output: those common words appearing in both sentences. Capital and lowercase 

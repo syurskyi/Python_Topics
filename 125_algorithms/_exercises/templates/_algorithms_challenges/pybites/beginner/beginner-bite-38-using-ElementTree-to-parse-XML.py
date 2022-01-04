@@ -5,7 +5,7 @@ Luckily most APIs switched to JSON, but sometimes XML is all there is, so at lea
 Complete the get_tree, get_movies and get_movie_longest_runtime functions below. See the docstrings and tests for more info.
 '''
 
-_______ ___.e__.E__ as ET
+_______ ___.e__.E__ __ ET
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
@@ -18,13 +18,13 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 </root>'''  # noqa E501
 
 
-___ get_tree():
+___ get_tree
     """You probably want to use ET.fromstring"""
     #tree = ET.fromstring(xmlstring)
-    r.. ET.E__(ET.fromstring(xmlstring))
+    r.. ET.E__(ET.f..(xmlstring))
     #return tree
 
-___ get_movies():
+___ get_movies
     """Call get_tree and retrieve all movie titles, return a list or generator"""
     tree = get_tree().getroot()
     result    # list
@@ -32,15 +32,15 @@ ___ get_movies():
         result.a..(m.attrib['title'])
     r.. result
 
-___ get_movie_longest_runtime():
+___ get_movie_longest_runtime
     """Call get_tree again and return the movie with the longest runtime in minutes,
        for latter consider adding a _get_runtime helper"""
     tree = get_tree().getroot()
     current_longest_runtime = 0
     current_longest_title = "None"
     ___ m __ tree:
-        __ int(m.attrib['runtime'].s.. [0]) > int(current_longest_runtime):
-            current_longest_runtime = int(m.attrib['runtime'].s.. [0])
+        __ i..(m.attrib['runtime'].s.. [0]) > i..(current_longest_runtime):
+            current_longest_runtime = i..(m.attrib['runtime'].s.. [0])
             current_longest_title = m.attrib['title']
 
     r.. current_longest_title

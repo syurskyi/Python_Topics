@@ -31,7 +31,7 @@ ____ collections _______ deque
 
 
 c_ Solution:
-    ___ baseNeg2(self, N: int) -> s..:
+    ___ baseNeg2(self, N: i..) __ s..:
         """
         % -2, // -2 ? not really
 

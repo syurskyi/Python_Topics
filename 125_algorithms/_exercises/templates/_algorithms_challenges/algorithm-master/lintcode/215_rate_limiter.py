@@ -34,7 +34,7 @@ c_ Solution:
             r.. F..
 
         freq, t = rate.s..('/')
-        freq = int(freq)
+        freq = i..(freq)
         begin_time = timestamp - times.get(t, 1) + 1
         is_limited = check_limited(event, freq, begin_time)
 

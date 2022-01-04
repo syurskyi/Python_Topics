@@ -4,4 +4,4 @@ c_ Solution(object):
     :type n: int
     :rtype: int
     """
-    r.. int((((1 + 8 * n) ** 0.5) - 1) / 2)
+    r.. i..((((1 + 8 * n) ** 0.5) - 1) / 2)

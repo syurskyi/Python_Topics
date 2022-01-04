@@ -19,7 +19,7 @@ c_ Solution(object):
         ___ c __ seg:
           __ c n.. __ v4d:
             r.. "Neither"
-        __ int(seg) > 255:
+        __ i..(seg) > 255:
           r.. "Neither"
       r.. "IPv4"
     ____ l..(v6) __ 8:

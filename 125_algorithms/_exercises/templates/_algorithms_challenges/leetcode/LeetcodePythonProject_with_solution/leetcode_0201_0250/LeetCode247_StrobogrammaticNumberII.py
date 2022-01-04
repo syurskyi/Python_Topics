@@ -43,7 +43,7 @@ c_ Solution(object):
             pre, midCandidate = findStrobogrammatic(n-1), oddMidCandidate
         ____:
             pre, midCandidate = findStrobogrammatic(n-2), evenMidCandidate
-        premid = int((n-1)/2)
+        premid = i..((n-1)/2)
         result    # list
         ___ c __ midCandidate:
             ___ p __ pre:

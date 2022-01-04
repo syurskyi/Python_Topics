@@ -11,7 +11,7 @@ ___ get_weekdays(calendar_output):
             days_length = l..(line)
             days = line.s..
         ____:
-            numbers = [int(line[i:i+2]) __ n.. line[i:i+2].isspace() ____ 0 ___ i __ r..(0,l..(line) - 1,3)]
+            numbers = [i..(line[i:i+2]) __ n.. line[i:i+2].isspace() ____ 0 ___ i __ r..(0,l..(line) - 1,3)]
             print(numbers)
 
 

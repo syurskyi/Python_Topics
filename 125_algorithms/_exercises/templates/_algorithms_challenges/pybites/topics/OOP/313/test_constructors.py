@@ -3,14 +3,14 @@ _______ pytest
 ____ constructors _______ Domain, DomainException
 
 
-___ test_create_domain_from_name():
+___ test_create_domain_from_name
     domain = Domain("google.com")
     ... s..(domain) __ "google.com"
     domain = Domain("nu.nl")
     ... s..(domain) __ "nu.nl"
 
 
-___ test_invalid_domain():
+___ test_invalid_domain
     with pytest.raises(DomainException):
         Domain("nu.nlll")
 

@@ -51,7 +51,7 @@ MAX = 2 ** 31 - 1
 
 
 c_ Solution:
-    ___ splitIntoFibonacci(self, S: s..) -> List[int]:
+    ___ splitIntoFibonacci(self, S: s..) __ List[i..]:
         """
         The first two elements of the array uniquely determine the rest of the
         sequence.
@@ -65,7 +65,7 @@ c_ Solution:
             __ l..(num_str) > 1 a.. num_str.startswith("0"):
                 continue
 
-            num = int(num_str)
+            num = i..(num_str)
             __ num > MAX:
                 break
 
@@ -74,7 +74,7 @@ c_ Solution:
                 __ l..(num2_str) > 1 a.. num2_str.startswith("0"):
                     continue
 
-                num2 = int(num2_str)
+                num2 = i..(num2_str)
                 __ num2 > MAX:
                     break
 

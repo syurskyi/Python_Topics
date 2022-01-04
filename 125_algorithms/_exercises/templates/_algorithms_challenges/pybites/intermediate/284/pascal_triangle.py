@@ -13,7 +13,7 @@ ____ typing _______ List
 
 
 
-___ pascal(N: int) -> List[int]:
+___ pascal(N: i..) __ List[i..]:
 
 
     current_row = [1]

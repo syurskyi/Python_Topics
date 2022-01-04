@@ -27,7 +27,7 @@ dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 
 c_ Solution:
-    ___ exist(self, board: List[List[s..]], word: s..) -> bool:
+    ___ exist(self, board: List[List[s..]], word: s..) __ bool:
         m, n = l..(board), l..(board[0])
         visited = defaultdict(l....: defaultdict(bool))
         ___ i __ r..(m):

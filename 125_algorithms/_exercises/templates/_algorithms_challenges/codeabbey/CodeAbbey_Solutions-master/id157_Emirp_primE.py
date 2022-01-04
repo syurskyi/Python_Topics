@@ -9,7 +9,7 @@ ___ find_answer(entry):
             r.. emirp
 
 ___ gen_primes(limit=300000000):
-    data = [int(input()) ___ x __ r..(int(input()))]
+    data = [i..(input()) ___ x __ r..(i..(input()))]
     primes, semirp, answer    # list, [], []
     global semirp
 
@@ -23,7 +23,7 @@ ___ gen_primes(limit=300000000):
 
     # Find reversable primes
     ___ prime __ primes:
-        __ int(s..(prime)[::-1]) __ primes:
+        __ i..(s..(prime)[::-1]) __ primes:
             semirp.a..(prime)
 
     # Find answer

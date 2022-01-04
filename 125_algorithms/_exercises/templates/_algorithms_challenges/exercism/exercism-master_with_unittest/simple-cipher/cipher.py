@@ -8,7 +8,7 @@ c_ Cipher:
 
     ___ - , key_ N..
         key = key __ key __ n.. N.. ____ generate_random_key()
-        __ n.. valid_key():
+        __ n.. valid_key
             raise ValueError()
 
     ___ encode(self, phrase):

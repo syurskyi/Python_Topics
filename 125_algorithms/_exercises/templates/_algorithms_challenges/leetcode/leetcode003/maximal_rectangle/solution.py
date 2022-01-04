@@ -13,7 +13,7 @@ c_ Solution:
         ___ i __ r..(n):
             ___ j __ r..(m):
                 __ i __ 0:
-                    hist[i][j] = int(matrix[i][j])
+                    hist[i][j] = i..(matrix[i][j])
                 ____:
                     __ matrix[i][j] __ '1':
                         hist[i][j] = 1 + hist[i - 1][j]

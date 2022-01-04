@@ -40,11 +40,11 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ findSecondMinimumValue(self, root: TreeNode) -> int:
+    ___ findSecondMinimumValue(self, root: TreeNode) __ i..:
         ret = find(root)
         r.. -1 __ ret __ float('inf') ____ ret
 
-    ___ find(self, root: TreeNode) -> int:
+    ___ find(self, root: TreeNode) __ i..:
         """
         find the second min
         """

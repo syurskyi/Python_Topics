@@ -44,7 +44,7 @@ c_ Solution:
         pi    # list
         depths    # list
 
-    ___ isCousins(self, root: TreeNode, x: int, y: int) -> bool:
+    ___ isCousins(self, root: TreeNode, x: i.., y: i..) __ bool:
         """
         need to know parent and depth
         """

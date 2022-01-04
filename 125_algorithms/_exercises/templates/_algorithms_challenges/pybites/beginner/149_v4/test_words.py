@@ -1,7 +1,7 @@
 ____ words _______ sort_words_case_insensitively
 
 
-___ test_sort_words_case_insensitively():
+___ test_sort_words_case_insensitively
     words = ("It's almost Holidays and PyBites wishes You a "
              "Merry Christmas and a Happy 2019").s..
     actual = sort_words_case_insensitively(words)
@@ -11,7 +11,7 @@ ___ test_sort_words_case_insensitively():
     ... actual __ expected
 
 
-___ test_sort_words_case_insensitively_another_phrase():
+___ test_sort_words_case_insensitively_another_phrase
     words = ("Andrew Carnegie's 64-room chateau at 2 East 91st "
              "Street was converted into the Cooper-Hewitt National "
              "Design Museum of the Smithsonian Institution "

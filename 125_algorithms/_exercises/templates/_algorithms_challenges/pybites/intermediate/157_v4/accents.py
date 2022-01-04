@@ -1,4 +1,4 @@
-_______ unicodedata as ud
+_______ unicodedata __ ud
 
 ___ filter_accents(text):
     """Return a sequence of accented characters found in

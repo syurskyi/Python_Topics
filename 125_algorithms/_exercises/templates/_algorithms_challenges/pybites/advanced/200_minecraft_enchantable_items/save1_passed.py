@@ -6,7 +6,7 @@ ____ __ _______ c.., s..
 ____ typing _______ Any, DefaultDict, List
 ____ urllib.request _______ urlretrieve
 
-____ bs4 _______ BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup __ Soup
 
 out_dir = "/tmp"
 html_file = f"{out_dir}/enchantment_list_pc.html"
@@ -27,7 +27,7 @@ c_ Enchantment:
 
     id_name: s..
     name: s..
-    max_level: int
+    max_level: i..
     description: s..
     items: List[s..] = field(default_factory=l..)
 
@@ -150,10 +150,10 @@ ___ get_soup(file=HTML_FILE):
     :return: BeautifulSoup object
     """
     __ isi..(file, Path):
-        __ n.. HTML_FILE.is_file():
+        __ n.. HTML_FILE.is_file
             urlretrieve(URL, HTML_FILE)
 
-        with file.open() as html_source:
+        with file.open() __ html_source:
             soup = Soup(html_source, "html.parser")
     ____:
         soup = Soup(file, "html.parser")
@@ -161,7 +161,7 @@ ___ get_soup(file=HTML_FILE):
     r.. soup
 
 
-___ main():
+___ main
     """This function is here to help you test your final code"""
     soup = get_soup()
     enchantment_data = generate_enchantments(soup)

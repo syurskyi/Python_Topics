@@ -6,7 +6,7 @@ NOW = d__ y.._2019,  m.._2,  d.._6,
 
 
 ___ add_todo(delay_time: s.., task: s..,
-             start_time: d__ = NOW) -> s..:
+             start_time: d__ = NOW) __ s..:
     """
     Add a todo list item in the future with a delay time.
 
@@ -27,7 +27,7 @@ ___ add_todo(delay_time: s.., task: s..,
 
     days = seconds = minutes = hours = 0 
     ___ value __ values:
-        v = int(value) __ value[-1].isdigit() ____ int(value[:-1])
+        v = i..(value) __ value[-1].isdigit() ____ i..(value[:-1])
         __ value[-1].isdigit() o. value[-1] __ 's':
             seconds = v
         ____ value[-1] __ 'd':

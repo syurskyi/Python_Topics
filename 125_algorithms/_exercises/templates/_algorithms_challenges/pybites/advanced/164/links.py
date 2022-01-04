@@ -3,7 +3,7 @@ _______ sys
 INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 
 
-___ make_html_links():
+___ make_html_links
 
     ___ line __ sys.stdin:
         

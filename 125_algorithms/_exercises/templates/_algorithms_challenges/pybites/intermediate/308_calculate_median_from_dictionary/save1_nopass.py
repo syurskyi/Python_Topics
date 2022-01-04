@@ -1,7 +1,7 @@
 ____ collections _______ OrderedDict
 ____ statistics _______ median
 
-___ calc_median_from_dict(d: d..) -> float:
+___ calc_median_from_dict(d: d..) __ float:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median

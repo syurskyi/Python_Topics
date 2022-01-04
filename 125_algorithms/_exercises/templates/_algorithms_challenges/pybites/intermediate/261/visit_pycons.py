@@ -31,7 +31,7 @@ print(pycons)
 
 
 
-__ n.. pycons_file.exists() o. n.. nominatim_responses.exists():
+__ n.. pycons_file.exists() o. n.. nominatim_responses.exists
     urlretrieve(URL, pycons_file)
     urlretrieve(RESPONSES, nominatim_responses)
 
@@ -60,11 +60,11 @@ c_ Trip:
     distance: float
 
 
-___ _get_pycons():
+___ _get_pycons
     """Helper function that retrieves required PyCon data
        and returns a list of PyCon objects
     """
-    with open(pycons_file, "r", encoding="utf-8") as f:
+    with open(pycons_file, "r", encoding="utf-8") __ f:
         r.. [
             PyCon(
                 pycon["name"],
@@ -88,10 +88,10 @@ ___ _km_distance(origin, destination):
     )
 
 
-___ _extract_city_country_to_lat_lon():
+___ _extract_city_country_to_lat_lon
         
     
-    with open(nominatim_responses,'r') as f:
+    with open(nominatim_responses,'r') __ f:
         places = json.load(f)
     
     mapping    # dict

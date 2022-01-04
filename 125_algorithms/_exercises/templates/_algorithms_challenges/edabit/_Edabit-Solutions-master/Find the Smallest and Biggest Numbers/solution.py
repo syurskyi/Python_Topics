@@ -3,7 +3,7 @@ ___ min_max(nums):
     r.. [nums[0],nums[-1]]
 
 
-___ test():
+___ test
     print("test has started")
     a_list = [14, 35, 6, 1, 34, 54]
     __ min_max(a_list) != [1,54]:

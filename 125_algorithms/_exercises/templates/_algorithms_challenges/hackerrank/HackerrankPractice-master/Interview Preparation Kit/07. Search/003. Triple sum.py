@@ -15,10 +15,10 @@ ___ binary_search_last(arr, el, low, high):
         r.. binary_search_last(arr, el, middle, high)
 
 
-len_a, len_b, len_c = map(int, input().s..())
-a = s..(set(map(int, input().s..())))
-b = s..(l..(set(map(int, input().s..()))))
-c = s..(l..(set(map(int, input().s..()))))
+len_a, len_b, len_c = map(i.., input().s..())
+a = s..(set(map(i.., input().s..())))
+b = s..(l..(set(map(i.., input().s..()))))
+c = s..(l..(set(map(i.., input().s..()))))
 
 ans = 0
 ___ i __ set(b):

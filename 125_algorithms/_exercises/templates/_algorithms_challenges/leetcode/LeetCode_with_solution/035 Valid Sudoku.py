@@ -39,33 +39,33 @@ c_ Solution:
             ___ j __ xrange(9):
                 # check row
                 try:
-                    row_element = int(board[i][j])
+                    row_element = i..(board[i][j])
                     __ row_element __ row:
                         r.. F..
                     ____:
                         row.a..(row_element)
                 except ValueError:
-                    pass
+                    p..
 
                 # check column
                 try:
-                    column_element = int(board[j][i])
+                    column_element = i..(board[j][i])
                     __ column_element __ column:
                         r.. F..
                     ____:
                         column.a..(column_element)
                 except ValueError:
-                    pass
+                    p..
 
                 # check square
                 try:
-                    square_element = int(board[i/3*3 + j/3][i%3*3 + j%3])
+                    square_element = i..(board[i/3*3 + j/3][i%3*3 + j%3])
                     __ square_element __ square:
                         r.. F..
                     ____:
                         square.a..(square_element)
                 except ValueError:
-                    pass
+                    p..
 
         r.. T..
 

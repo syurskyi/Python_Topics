@@ -48,7 +48,7 @@ c_ ToxIniParser:
     ___ base_python_versions
         """Return a list of all basepython across the ini file"""
         base_pythons = set()
-        ___ section __ config.sections():
+        ___ section __ config.sections
             __ 'basepython' __ config[section]:
                 base_pythons.add(config[section]['basepython'])
 

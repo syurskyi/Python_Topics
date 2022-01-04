@@ -1,2 +1,2 @@
-___ nth_prime():
-    pass
+___ nth_prime
+    p..

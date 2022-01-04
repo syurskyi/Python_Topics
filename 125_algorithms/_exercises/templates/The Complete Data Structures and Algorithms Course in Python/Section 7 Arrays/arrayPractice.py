@@ -71,7 +71,7 @@ print("Step 13")
 strTemp  my_array.tostring()
 print(strTemp)
 ints  array('i')
-ints.fromstring(strTemp)
+ints.f..(strTemp)
 print(ints)
 
 # 14. Convert array to a python list with same elements using tolist() method

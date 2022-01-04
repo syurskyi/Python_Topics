@@ -47,7 +47,7 @@ c_ Solution:
     """
     ___ threeSum2(self, n):
         ans = 0
-        m = int(n ** 0.5)
+        m = i..(n ** 0.5)
 
         ___ a __ r..(m + 1):
             target = n - a * a

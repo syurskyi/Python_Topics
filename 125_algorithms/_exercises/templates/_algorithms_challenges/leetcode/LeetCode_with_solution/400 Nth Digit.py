@@ -42,4 +42,4 @@ c_ Solution(object):
         n -= 1  # debugging: without -1, it just pass over the target digit
         q, r = n / digit_cnt, n % digit_cnt
         target = num_cnt / 9 + q
-        r.. int(s..(target)[r])
+        r.. i..(s..(target)[r])

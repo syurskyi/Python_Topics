@@ -4,7 +4,7 @@ ___ test_jackpot(result):
     ____:
         r.. F..
 
-___ test():
+___ test
     print("test has started")
     __ test_jackpot(['@', '@', '@', '@']) != T..:
         print("error1")

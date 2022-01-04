@@ -1,6 +1,6 @@
 ____ typing _______ List
 _______ i..
-_______ pandas as pd
+_______ pandas __ pd
 
 
 ___ minimum_number(d..):
@@ -13,6 +13,6 @@ ___ minimum_number(d..):
         ___ i __ r..(l..(l..)):
             __ l..[0] > l..[i]:
                 l..[0] = l..[i]
-        r.. int(l..[0])
+        r.. i..(l..[0])
     except:
-        r.. int(0)
+        r.. i..(0)

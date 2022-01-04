@@ -65,7 +65,7 @@ c_ Groceries:
         r.. _items[index]
 
 
-___ create_parser():
+___ create_parser
     parse = argparse.ArgumentParser(description='')
     group = parse.add_mutually_exclusive_group()
     group.add_argument('-a', '--add', nargs=3, help='add item providing name (str), price (int), and craving (bool)')
@@ -85,7 +85,7 @@ ___ handle_args(args=N.., cart_ N..
 
     ___ op, param __ vars(args).i..:
         __ op __ 'add' a.. param:
-            cart.add(Item(param[0], int(param[1]), param[2].l.. __ 'true'))
+            cart.add(Item(param[0], i..(param[1]), param[2].l.. __ 'true'))
         ____ op __ 'delete' a.. param:
             cart.delete(param[0])
         ____ op __ 'list' a.. param:

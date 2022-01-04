@@ -27,7 +27,7 @@ c_ Solution(object):
         :type n: int
         :rtype: int
         """
-        cnt = int(math.sqrt(n))
+        cnt = i..(math.sqrt(n))
         r.. cnt
 
 

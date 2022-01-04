@@ -1,13 +1,13 @@
 ____ dataclasses _______ dataclass, field
 
 
-___ get_level():
+___ get_level
     r.. "Beginner"
 
 @dataclass(order=T..)
 c_ Bite:
 
-    number: int
+    number: i..
     title: s..
     level: s.. = field(default_factory=get_level)
 

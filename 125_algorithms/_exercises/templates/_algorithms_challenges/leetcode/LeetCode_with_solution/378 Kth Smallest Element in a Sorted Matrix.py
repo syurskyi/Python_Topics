@@ -45,7 +45,7 @@ c_ Solution(object):
                 r.. j+1 < n
 
             ___ next
-                __ hasnext():
+                __ hasnext
                     r.. Node(i, j + 1)
 
                 raise StopIteration
@@ -57,7 +57,7 @@ c_ Solution(object):
         ret = N..
         ___ _ __ xrange(k):
             ret = heapq.heappop(h)
-            __ ret.hasnext():
+            __ ret.hasnext
                 heapq.heappush(h, ret.next())
 
         r.. matrix[ret.i][ret.j]

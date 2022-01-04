@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ majorityElement(self, nums: List[i..]) -> i..:
+    ___ majorityElement(self, nums: List[i..]) __ i..:
         m  {}
         ___ num __ nums:
             m[num]  m.get(num,0)+1

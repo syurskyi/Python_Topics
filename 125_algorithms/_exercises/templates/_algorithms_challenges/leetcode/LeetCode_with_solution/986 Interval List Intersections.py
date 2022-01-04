@@ -32,7 +32,7 @@ c_ Interval:
 
 
 c_ Solution:
-    ___ intervalIntersection(self, A: List[Interval], B: List[Interval]) -> List[Interval]:
+    ___ intervalIntersection(self, A: List[Interval], B: List[Interval]) __ List[Interval]:
         """
         Among the given intervals, consider the interval A[0] with the smallest
         endpoint. (Without loss of generality, this interval occurs in array A.)
@@ -62,7 +62,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ intervalIntersection_complex(self, A: List[Interval], B: List[Interval]) -> List[Interval]:
+    ___ intervalIntersection_complex(self, A: List[Interval], B: List[Interval]) __ List[Interval]:
         """
         like merge
         """

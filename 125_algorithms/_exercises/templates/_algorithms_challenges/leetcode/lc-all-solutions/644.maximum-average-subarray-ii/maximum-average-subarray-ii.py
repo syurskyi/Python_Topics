@@ -35,7 +35,7 @@ c_ Solution(object):
 
   # have to use this hack to pass OJ
   ___ findMaxAverage(self, nums, k):
-    _______ numpy as np
+    _______ numpy __ np
     lo, hi = m..(nums), max(nums)
     nums = np.array([0] + nums)
     w.... hi - lo > 1e-5:

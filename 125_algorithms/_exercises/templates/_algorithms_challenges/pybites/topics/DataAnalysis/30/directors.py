@@ -18,15 +18,15 @@ MIN_YEAR = 1960
 Movie = n..('Movie', 'title year score')
 
 
-___ get_movies_by_director():
+___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     director = defaultdict(l..)
-    with open(local, encoding="utf-8") as f:
+    with open(local, encoding="utf-8") __ f:
         movies = csv.DictReader(f)
         ___ movie __ movies:
-            __ movie['title_year'] != '' a.. int(movie['title_year']) > 1960:
+            __ movie['title_year'] != '' a.. i..(movie['title_year']) > 1960:
                 director[movie['director_name']].a..(
                     Movie(
                         movie['movie_title'].s..,
@@ -57,7 +57,7 @@ ___ get_average_scores(directors):
             total = 0
             ___ i __ r..(l..(directors[director])):
                 #print(director, int(directors[director][i][1]))
-                __ directors[director][i][1] a.. int(directors[director][i][1]) >1960:
+                __ directors[director][i][1] a.. i..(directors[director][i][1]) >1960:
                     total += float(directors[director][i][2])
             local_list.a..((director, round(total/l..(directors[director]),1)))
     r.. s..(local_list, key=l.... x: x[1], r.._T..

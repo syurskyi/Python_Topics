@@ -32,7 +32,7 @@ c_ TrieNode:
 
 
 c_ Solution:
-    ___ findWords(self, board: List[List[s..]], words: List[s..]) -> List[s..]:
+    ___ findWords(self, board: List[List[s..]], words: List[s..]) __ List[s..]:
         root = construct(words)
         m, n = l..(board), l..(board[0])
         visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]

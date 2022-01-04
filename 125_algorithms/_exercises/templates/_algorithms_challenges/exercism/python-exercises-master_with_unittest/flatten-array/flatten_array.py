@@ -1,2 +1,2 @@
-___ flatten():
-    pass
+___ flatten
+    p..

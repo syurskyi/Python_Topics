@@ -61,14 +61,14 @@ c_ Excel(object):
         ___ s __ strs:
             arr = s.s..(':')
             __ l..(arr) __ 1:
-                x = int(arr[0][1:])-1
+                x = i..(arr[0][1:])-1
                 y = ord(arr[0][0])-ord('A')
                 vals.a..((x, y))
                 sumVal += matrix[x][y]
             ____:
-                x0 = int(arr[0][1:])-1
+                x0 = i..(arr[0][1:])-1
                 y0 = ord(arr[0][0])-ord('A')
-                x1 = int(arr[1][1:])-1
+                x1 = i..(arr[1][1:])-1
                 y1 = ord(arr[1][0])-ord('A')
                 ___ i0 __ r..(x0, x1+1):
                     ___ j0 __ r..(y0, y1+1):

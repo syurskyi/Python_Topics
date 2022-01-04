@@ -47,7 +47,7 @@ c_ SolutionTLE(object):
         r.. maxa
 
     ___ eval(self, lst):
-        r.. int("".j..(map(s.., lst)))
+        r.. i..("".j..(map(s.., lst)))
 
     ___ maxNumberSingle(self, A, k):
         """

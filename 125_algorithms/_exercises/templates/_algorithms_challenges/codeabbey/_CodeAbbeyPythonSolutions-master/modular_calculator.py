@@ -9,7 +9,7 @@ w... T...
         values.a..(line.r..(" ", ""))
     ____:
         break
-mod = int(values[l..(values)-1][1:])
+mod = i..(values[l..(values)-1][1:])
 
 ___ i __ values:
     strValues += i

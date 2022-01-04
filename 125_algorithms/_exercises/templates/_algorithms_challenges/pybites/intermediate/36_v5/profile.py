@@ -1,5 +1,5 @@
-___ get_profile(name: s.., age: int, *sports, **awards):
-    __ n.. isi..(age, int):
+___ get_profile(name: s.., age: i.., *sports, **awards):
+    __ n.. isi..(age, i..):
         raise ValueError("Age must be a whole number")
     __ l..(sports) > 5:
         raise ValueError("A maximum of five sports are allowed")

@@ -1,7 +1,7 @@
 ____ tags _______ get_pybites_top_tags
 
 
-___ test_get_pybites_top_10_tags():
+___ test_get_pybites_top_10_tags
     expected = [('python', 79),
                 ('learning', 79),
                 ('codechallenges', 72),
@@ -16,7 +16,7 @@ ___ test_get_pybites_top_10_tags():
     ... actual __ expected
 
 
-___ test_get_pybites_top_5_tags():
+___ test_get_pybites_top_5_tags
     expected = [('python', 79),
                 ('learning', 79),
                 ('codechallenges', 72),

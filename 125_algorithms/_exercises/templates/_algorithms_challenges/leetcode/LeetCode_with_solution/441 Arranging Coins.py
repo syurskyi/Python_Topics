@@ -16,7 +16,7 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        r.. int(
+        r.. i..(
             (2*n + 1/4)**(1/2)  - 1/2
         )
 

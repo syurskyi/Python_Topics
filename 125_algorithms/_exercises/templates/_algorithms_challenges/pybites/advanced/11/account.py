@@ -45,14 +45,14 @@ c_ Account:
     
 
     ___ __add__(self,other):
-        __ isi..(other,int):
+        __ isi..(other,i..):
             _transactions.a..(other)
         ____:
             raise TypeError("can only subtract integer")
     
 
     ___ __sub__(self,other):
-        __ isi..(other,int):
+        __ isi..(other,i..):
             _transactions.a..(-other)
         ____:
             raise TypeError("can only subtract integer")

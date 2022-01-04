@@ -24,7 +24,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxScoreSightseeingPair(self, A: List[int]) -> int:
+    ___ maxScoreSightseeingPair(self, A: List[i..]) __ i..:
         """
         Attribute the result to the ending element
 
@@ -39,7 +39,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ maxScoreSightseeingPair_error(self, A: List[int]) -> int:
+    ___ maxScoreSightseeingPair_error(self, A: List[i..]) __ i..:
         """
         brute force O(N^2)
 

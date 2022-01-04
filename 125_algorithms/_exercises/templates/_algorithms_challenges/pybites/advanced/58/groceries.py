@@ -65,7 +65,7 @@ c_ Groceries:
         r.. _items[index]
 
 
-___ create_parser():
+___ create_parser
     """TODO 1
        Create an ArgumentParser object giving it the required options,
        note that the options are mutually exclusive. 
@@ -102,7 +102,7 @@ ___ handle_args(args=N.., cart_ N..
         cart.show()
     ____ args['add']:
         item,price,craving = args['add']
-        price = int(price)
+        price = i..(price)
         craving = eval(craving)
 
         item = Item(item,price,craving)

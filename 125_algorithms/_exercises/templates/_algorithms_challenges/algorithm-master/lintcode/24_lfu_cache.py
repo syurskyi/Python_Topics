@@ -63,7 +63,7 @@ c_ LFUCache:
         cache_node = freq_head.pop_head()
         del nodes[cache_node.key]
 
-        __ freq_head.is_empty():
+        __ freq_head.is_empty
             freq_head.unlink()
 
     ___ _update(self, key, val_ N..
@@ -84,7 +84,7 @@ c_ LFUCache:
         cache_node.unlink()
         to_freq.append_tail(cache_node)
 
-        __ from_freq.is_empty():
+        __ from_freq.is_empty
             from_freq.unlink()
 
     ___ _add(self, key, val):
@@ -145,7 +145,7 @@ c_ FreqNode:
 
     # to manage cache nodes
     ___ pop_head
-        __ is_empty():
+        __ is_empty
             r..
 
         head = D.nxt

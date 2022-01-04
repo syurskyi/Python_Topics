@@ -14,7 +14,7 @@ c_ Solution(object):
           a, b = b, a % b
         r.. a
 
-      (an, ad), (bn, bd) = map(int, a.s..("/")), map(int, b.s..("/"))
+      (an, ad), (bn, bd) = map(i.., a.s..("/")), map(i.., b.s..("/"))
       lcm = (ad * bd) / (gcd(ad, bd))
       an, bn = an * (lcm / ad), bn * (lcm / bd)
       n = an + bn

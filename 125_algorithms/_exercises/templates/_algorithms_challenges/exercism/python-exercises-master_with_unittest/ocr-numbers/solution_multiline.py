@@ -10,7 +10,7 @@ OCR_WIDTH = 3
 OCR_HEIGHT = 4
 
 
-___ split_ocr_numbers(ocr_numbers: List[s..]) -> List[List[s..]]:
+___ split_ocr_numbers(ocr_numbers: List[s..]) __ List[List[s..]]:
     ocrs_split    # list
     len_line = l..(ocr_numbers[0])
     ___ start __ r..(0, len_line, OCR_WIDTH):
@@ -22,7 +22,7 @@ ___ split_ocr_numbers(ocr_numbers: List[s..]) -> List[List[s..]]:
 OCR_NUMBERS = split_ocr_numbers(OCR_INPUT)
 
 
-___ split_ocr_lines(ocr_numbers: List[s..]) -> List[List[s..]]:
+___ split_ocr_lines(ocr_numbers: List[s..]) __ List[List[s..]]:
     ocr_lines    # list
     ___ start __ r..(0, l..(ocr_numbers), OCR_HEIGHT):
         ocr_lines.a..(ocr_numbers[start:start+OCR_HEIGHT])
@@ -42,11 +42,11 @@ ___ validate_ocr_numbers(ocr_numbers: List[s..]):
 
 
 ___ validate_numbers(numbers: s..):
-    __ n.. numbers.isdigit():
+    __ n.. numbers.isdigit
         raise ValueError(numbers + ' is not a digit')
 
 
-___ _convert_ocr_line(ocr_numbers: List[s..]) -> s..:
+___ _convert_ocr_line(ocr_numbers: List[s..]) __ s..:
     ocrs_split = split_ocr_numbers(ocr_numbers)
     numbers = [
         s..(OCR_NUMBERS.index(ocr)) __ ocr __ OCR_NUMBERS ____ '?'
@@ -55,17 +55,17 @@ ___ _convert_ocr_line(ocr_numbers: List[s..]) -> s..:
     r.. ''.j..(numbers)
 
 
-___ number(ocr_numbers: List[s..]) -> s..:
+___ number(ocr_numbers: List[s..]) __ s..:
     validate_ocr_numbers(ocr_numbers)
     r.. ','.j..(
         [_convert_ocr_line(line) ___ line __ split_ocr_lines(ocr_numbers)]
     )
 
 
-___ grid(numbers: s..) -> List[s..]:
+___ grid(numbers: s..) __ List[s..]:
     validate_numbers(numbers)
     ocr_numbers_split = [
-        OCR_NUMBERS[int(number)] ___ number __ numbers
+        OCR_NUMBERS[i..(number)] ___ number __ numbers
     ]
     r.. [
         ''.j..(lines) ___ lines __ z..(*ocr_numbers_split)

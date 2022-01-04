@@ -36,7 +36,7 @@ ____ collections _______ Counter
 
 
 c_ Solution:
-    ___ reorderedPowerOf2(self, N: int) -> bool:
+    ___ reorderedPowerOf2(self, N: i..) __ bool:
         """
         count the digit and compare
         """

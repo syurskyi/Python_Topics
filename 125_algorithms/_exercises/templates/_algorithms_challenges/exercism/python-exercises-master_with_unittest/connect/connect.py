@@ -1,7 +1,7 @@
 
 c_ ConnectGame:
     ___ - , board):
-        pass
+        p..
 
     ___ get_winner
-        pass
+        p..

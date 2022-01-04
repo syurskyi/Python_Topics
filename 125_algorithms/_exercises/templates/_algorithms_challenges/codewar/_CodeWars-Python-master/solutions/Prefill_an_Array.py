@@ -9,7 +9,7 @@ ___ prefill(n, v='undefined'):
     __ n __ N..
         raise TypeError("None is invalid")
     try:
-        n = int(n)
+        n = i..(n)
     except ValueError:
         raise TypeError(n + " is invalid")
     r.. [v] * n

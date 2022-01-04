@@ -5,7 +5,7 @@ ___ wsd(numOfSums): #wsd = Weighted sum of digits
                     num = 0
                     d.. = l..(number)
                     ___ x __ r..(l..(d..)):
-                            num += int(d..[x]) * (x+1)
+                            num += i..(d..[x]) * (x+1)
                     answer.a..(s..(num))
         print(' '.j..(answer))
 wsd(input())

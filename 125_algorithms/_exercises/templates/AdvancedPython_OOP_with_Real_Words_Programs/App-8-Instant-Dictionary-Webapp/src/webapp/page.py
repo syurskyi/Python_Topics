@@ -4,4 +4,4 @@ c_ Page(ABC):
 
     @abstractmethod
     ___ serve _
-        pass
+        p..

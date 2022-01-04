@@ -4,17 +4,17 @@ ____ karma _______ User, Transaction
 
 
 @pytest.fixture
-___ bob():
+___ bob
     r.. User('bob')
 
 
 @pytest.fixture
-___ tim():
+___ tim
     r.. User('tim')
 
 
 @pytest.fixture
-___ alice():
+___ alice
     r.. User('alice')
 
 

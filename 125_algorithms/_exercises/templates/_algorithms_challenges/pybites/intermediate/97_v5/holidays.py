@@ -9,7 +9,7 @@ ____ bs4 _______ BeautifulSoup
 holidays_page = os.path.j..('/tmp', 'us_holidays.php')
 urlretrieve('https://bit.ly/2LG098I', holidays_page)
 
-with open(holidays_page) as f:
+with open(holidays_page) __ f:
     content = f.read()
 
 holidays = defaultdict(l..)

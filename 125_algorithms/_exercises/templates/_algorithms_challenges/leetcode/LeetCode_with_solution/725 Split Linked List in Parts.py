@@ -49,7 +49,7 @@ _______ math
 
 
 c_ Solution:
-    ___ splitListToParts(self, root: ListNode, k: int) -> List[ListNode]:
+    ___ splitListToParts(self, root: ListNode, k: i..) __ List[ListNode]:
         """
         calculate the chunk/page size at a time
 
@@ -87,7 +87,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ splitListToParts_2(self, root: ListNode, k: int) -> List[ListNode]:
+    ___ splitListToParts_2(self, root: ListNode, k: i..) __ List[ListNode]:
         """
         [1,2,3,4,5,6,7]
         3
@@ -125,7 +125,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ splitListToParts_error(self, root: ListNode, k: int) -> List[ListNode]:
+    ___ splitListToParts_error(self, root: ListNode, k: i..) __ List[ListNode]:
         """
         mistake, the length should be dynamically calculated
 

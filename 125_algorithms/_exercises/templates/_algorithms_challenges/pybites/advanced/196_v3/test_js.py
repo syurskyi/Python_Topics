@@ -1,10 +1,10 @@
 _______ pytest
 
-____ js _______ JsObject as JS
+____ js _______ JsObject __ JS
 
 
 @pytest.fixture
-___ D():
+___ D
     """Create a JsObject object"""
     r.. JS(a=1, b=2, c=3)
 

@@ -52,8 +52,8 @@ c_ Solution:
             __ secret[i] __ guess[i]:
                 bulls += 1
             ____:
-                cnt_s[int(secret[i])] += 1
-                cnt_g[int(guess[i])] += 1
+                cnt_s[i..(secret[i])] += 1
+                cnt_g[i..(guess[i])] += 1
 
         ___ i __ r..(10):
             cows += m..(cnt_s[i], cnt_g[i])

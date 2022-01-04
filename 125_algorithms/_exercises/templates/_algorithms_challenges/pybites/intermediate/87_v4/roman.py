@@ -10,7 +10,7 @@ NUMERALS = {1: 'I', 4: 'IV', 5: 'V', 9: 'IX', 10: 'X',
 NUMS = l..(r..(l..(NUMERALS.keys())))
 
 
-___ romanutil(n: int, queue: l..):
+___ romanutil(n: i.., queue: l..):
     '''utility function for romanize recursive implementation'''
     print(f'entering romanutil with {n=}')
     print(f'{NUMS=}')
@@ -37,10 +37,10 @@ ___ romanutil(n: int, queue: l..):
         romanutil(remainder, queue)
 
 
-___ romanize(decimal_number: int):
+___ romanize(decimal_number: i..):
     """Takes a decimal number int and converts its Roman Numeral str"""
 
-    __ n.. isi..(decimal_number, int) o. 4000 <= decimal_number <= 0:
+    __ n.. isi..(decimal_number, i..) o. 4000 <= decimal_number <= 0:
         raise ValueError
 
     roman    # list

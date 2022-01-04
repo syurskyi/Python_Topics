@@ -6,13 +6,13 @@ ____ traffic _______ traffic_light, State
 
 
 @pytest.fixture(scope="module")
-___ slice1():
+___ slice1
     it = traffic_light()
     r.. l..(islice(it, 96))
 
 
 @pytest.fixture(scope="module")
-___ slice2():
+___ slice2
     it = traffic_light()
     r.. l..(islice(it, 100, 217))
 

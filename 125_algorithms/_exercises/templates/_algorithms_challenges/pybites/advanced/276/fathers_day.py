@@ -15,14 +15,14 @@ fathers_days_countries = TMP / 'fathers-day-countries.txt'
 fathers_days_recurring = TMP / 'fathers-day-recurring.txt'
 
 ___ file_ __ (fathers_days_countries, fathers_days_recurring):
-    __ n.. file_.exists():
+    __ n.. file_.exists
         urlretrieve(base_url + file_.name, file_)
 
 
 ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days_countries):
     """Helper to parse fathers_days_countries"""
     year = s..(year)
-    with open(filename,'r') as f:
+    with open(filename,'r') __ f:
 
         ___ line __ f:
             line = line.s..
@@ -45,7 +45,7 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
     """Helper to parse fathers_days_recurring"""
 
 
-    with open(filename,'r') as f:
+    with open(filename,'r') __ f:
         ___ line __ f:
             line = line.s..
             __ n.. line o. line.startswith('#'):

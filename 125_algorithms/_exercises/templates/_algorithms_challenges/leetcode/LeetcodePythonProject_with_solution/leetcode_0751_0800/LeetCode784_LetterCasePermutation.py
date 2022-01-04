@@ -18,7 +18,7 @@ c_ Solution(object):
         __ i __ l..(s):
             res.add(curr)
             r..
-        __ s[i].isdigit():
+        __ s[i].isdigit
             helper(s, i+1, curr+s[i], res)
         ____:
             helper(s, i+1, curr+s[i].u.., res)

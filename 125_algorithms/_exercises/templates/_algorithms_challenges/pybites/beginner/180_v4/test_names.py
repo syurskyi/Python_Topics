@@ -19,12 +19,12 @@ Pigney,Gavrielle,ID"""
 
 
 @pytest.fixture
-___ grouping1():
+___ grouping1
     r.. group_names_by_country(data)
 
 
 @pytest.fixture
-___ grouping2():
+___ grouping2
     r.. group_names_by_country(data2)
 
 

@@ -9,7 +9,7 @@ this in our Parsing Twitter Geo Data and Mocking API Calls by Example article.
 Querying APIs is a common need so this should become second nature :) - enjoy!
 """
 _______ requests
-_______ json as j
+_______ json __ j
 
 # https://stackoverflow.com/questions/58048879/what-is-the-difference-between-json-method-and-json-loads
 

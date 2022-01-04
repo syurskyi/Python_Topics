@@ -45,13 +45,13 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ isBipartite(self, graph: List[List[int]]) -> bool:
+    ___ isBipartite(self, graph: List[List[i..]]) __ bool:
         """
         coloring the graph
         dfs coloring
         """
         G = graph
-        color = defaultdict(int)
+        color = defaultdict(i..)
         ___ k __ r..(l..(G)):
             __ k n.. __ color:
                 color[k] = 0
@@ -75,7 +75,7 @@ c_ Solution:
 
 
 c_ SolutionError:
-    ___ isBipartite(self, graph: List[List[int]]) -> bool:
+    ___ isBipartite(self, graph: List[List[i..]]) __ bool:
         G = graph
         A, B = set(), set()
         visited = defaultdict(bool)

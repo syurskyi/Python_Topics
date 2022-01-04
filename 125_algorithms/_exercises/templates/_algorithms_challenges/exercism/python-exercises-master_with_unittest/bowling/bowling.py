@@ -1,9 +1,9 @@
 c_ BowlingGame(object):
     ___ - ):
-        pass
+        p..
 
     ___ roll(self, pins):
-        pass
+        p..
 
     ___ score
-        pass
+        p..

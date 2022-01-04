@@ -35,7 +35,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ largestSumAfterKNegations(self, A: List[int], K: int) -> int:
+    ___ largestSumAfterKNegations(self, A: List[i..], K: i..) __ i..:
         """
         revert all the negative, if positive, revert multiple times the smallest
 

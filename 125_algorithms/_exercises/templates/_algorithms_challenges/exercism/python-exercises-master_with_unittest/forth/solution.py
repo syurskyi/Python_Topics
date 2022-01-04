@@ -1,10 +1,10 @@
 c_ StackUnderflowError(Exception):
-    pass
+    p..
 
 
 ___ is_integer(string):
     try:
-        int(string)
+        i..(string)
         r.. T..
     except ValueError:
         r.. F..
@@ -28,7 +28,7 @@ ___ evaluate(input_data):
         word = input_data.pop(0).l..
         try:
             __ is_integer(word):
-                stack.a..(int(word))
+                stack.a..(i..(word))
             ____ word __ defines:
                 input_data = defines[word] + input_data
             ____ word __ '+':
@@ -41,7 +41,7 @@ ___ evaluate(input_data):
                 divisor = stack.pop()
                 __ divisor __ 0:
                     raise ZeroDivisionError("Attempted to divide by zero")
-                stack.a..(int(stack.pop() / divisor))
+                stack.a..(i..(stack.pop() / divisor))
             ____ word __ 'dup':
                 stack.a..(stack[-1])
             ____ word __ 'drop':

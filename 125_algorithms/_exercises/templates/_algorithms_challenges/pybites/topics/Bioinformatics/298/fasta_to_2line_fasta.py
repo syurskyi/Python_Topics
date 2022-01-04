@@ -10,13 +10,13 @@ FASTA_FILE = os.path.j..(os.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 __ n.. os.path.isfile(FASTA_FILE):
     urllib.request.urlretrieve(URL, FASTA_FILE)
 
-___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) -> int:
+___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
     """
     :param fasta_file: Filename of multi-line FASTA file
     :param fasta_2line_file: Filename of 2-line FASTA file
     :return: Number of records
     """
-    with open(fasta_2line_file, 'w') as f:
+    with open(fasta_2line_file, 'w') __ f:
         sequence = l..(SeqIO.parse(fasta_file, "fasta"))
         ___ record __ sequence:
             #print(f'>{record.description}\n{record.seq}')

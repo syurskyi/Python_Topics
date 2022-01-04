@@ -16,7 +16,7 @@ c_ Solution(object):
             num = 0
             w.... n > 0:
                 num += (n % 10)**2
-                n = int(n/10)
+                n = i..(n/10)
             __ num __ hashset:
                 r.. F..
             hashset.add(num)

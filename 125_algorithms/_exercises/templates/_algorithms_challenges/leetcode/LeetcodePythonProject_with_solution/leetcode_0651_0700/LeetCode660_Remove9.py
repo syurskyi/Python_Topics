@@ -13,7 +13,7 @@ c_ Solution(object):
         w.... n:
             res = s..(n%9) + res
             n //= 9
-        r.. int(res)
+        r.. i..(res)
     
     ___ test
         testCases = [

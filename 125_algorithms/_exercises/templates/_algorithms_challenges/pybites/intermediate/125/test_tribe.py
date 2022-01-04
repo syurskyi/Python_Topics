@@ -4,7 +4,7 @@ ____ tribe _______ get_top_books, load_page
 
 
 @pytest.fixture(scope='module')
-___ content():
+___ content
     """Load content once for all test"""
     r.. load_page()
 

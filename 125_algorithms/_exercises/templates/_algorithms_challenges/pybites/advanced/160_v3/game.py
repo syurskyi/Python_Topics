@@ -13,12 +13,12 @@ __ n.. os.path.isfile(BATTLE_DATA):
     )
 
 
-___ _create_defeat_mapping():
+___ _create_defeat_mapping
     """Parse battle-table.csv building up a defeat_mapping dict
        with keys = attackers / values = who they defeat.
     """
     defeat_map = defaultdict(l..)
-    with open(BATTLE_DATA) as f:
+    with open(BATTLE_DATA) __ f:
         rows = l..(csv.DictReader(f))
 
     ___ row __ rows:

@@ -1,6 +1,6 @@
-___ on_square():
-    pass
+___ on_square
+    p..
 
 
-___ total_after():
-    pass
+___ total_after
+    p..

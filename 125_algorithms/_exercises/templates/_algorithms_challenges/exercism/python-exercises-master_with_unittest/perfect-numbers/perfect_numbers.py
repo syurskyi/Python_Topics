@@ -1,6 +1,6 @@
-___ divisor_generator():
-    pass
+___ divisor_generator
+    p..
 
 
-___ is_perfect():
-    pass
+___ is_perfect
+    p..

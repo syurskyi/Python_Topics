@@ -4,8 +4,8 @@ ____ timings _______ timings_log, get_bite_with_fastest_avg_test
 
 
 @pytest.fixture(scope='module')
-___ timings():
-    with open(timings_log) as f:
+___ timings
+    with open(timings_log) __ f:
         r.. f.readlines()
 
 

@@ -70,7 +70,7 @@ c_ Trie:
             r..
 
 c_ Solution:
-    ___ replaceWords(self, dic: List[s..], sentence: s..) -> s..:
+    ___ replaceWords(self, dic: List[s..], sentence: s..) __ s..:
         trie = Trie()
         ___ word __ dic:
             root = trie.root

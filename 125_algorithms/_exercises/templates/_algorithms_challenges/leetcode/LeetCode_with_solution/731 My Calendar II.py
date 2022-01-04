@@ -57,7 +57,7 @@ c_ MyCalendarTwo:
         lst    # list  # can be TreeMap(), ordered map
 
 
-    ___ book(self, start: int, end: int) -> bool:
+    ___ book(self, start: i.., end: i..) __ bool:
         """
         O(lg n) + O(n)
         """

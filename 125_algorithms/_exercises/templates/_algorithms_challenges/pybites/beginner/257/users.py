@@ -1,6 +1,6 @@
 _______ __
 
-___ get_users(passwd: s..) -> d..:
+___ get_users(passwd: s..) __ d..:
     """Split password output by newline,
       extract user and name (1st and 5th columns),
       strip trailing commas from name,
@@ -8,7 +8,7 @@ ___ get_users(passwd: s..) -> d..:
       return dict of keys = user, values = name.
     """
     pwdict    # dict
-    ___ line __ passwd.splitlines():
+    ___ line __ passwd.splitlines
       __ l..(line) > 0:
         parsed_pw  = line.s..(":")
         __ l..(parsed_pw[4]) __ 0:

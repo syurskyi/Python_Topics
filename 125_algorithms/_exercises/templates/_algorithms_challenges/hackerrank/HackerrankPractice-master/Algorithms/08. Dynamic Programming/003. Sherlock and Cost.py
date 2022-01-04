@@ -2,10 +2,10 @@
 # Score: 50
 
 
-test = int(input())
+test = i..(input())
 ___ i __ r..(test):
-    n = int(input())
-    b = l..(map(int, input().s..()))
+    n = i..(input())
+    b = l..(map(i.., input().s..()))
 
     dp = [[0], [0]]
 

@@ -36,7 +36,7 @@ The judging time limit has been reduced for this question.
 
 
 c_ Solution:
-    ___ new21Game(self, N: int, K: int, W: int) -> float:
+    ___ new21Game(self, N: i.., K: i.., W: i..) __ float:
         """
         F[i]: probability of get points i
         F[i] = F[j] * (1 / W) for every i - j <= W
@@ -66,7 +66,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ new21Game_error(self, N: int, K: int, W: int) -> float:
+    ___ new21Game_error(self, N: i.., K: i.., W: i..) __ float:
         """
         DP
         Let F[i] be the probability of reaching point i

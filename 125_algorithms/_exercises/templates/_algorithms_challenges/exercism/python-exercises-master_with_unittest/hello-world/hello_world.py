@@ -1,2 +1,2 @@
-___ hello():
-    pass
+___ hello
+    p..

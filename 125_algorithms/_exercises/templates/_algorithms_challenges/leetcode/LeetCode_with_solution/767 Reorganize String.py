@@ -22,11 +22,11 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ reorganizeString(self, S: s..) -> s..:
+    ___ reorganizeString(self, S: s..) __ s..:
         """
         piles by max char and circular append
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ c __ S:
             counter[c] += 1
 

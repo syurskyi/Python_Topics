@@ -41,7 +41,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ nextLargerNodes(self, head: ListNode) -> List[int]:
+    ___ nextLargerNodes(self, head: ListNode) __ List[i..]:
         """
         If input is an array, use stack from right to left. Maintain a decreasing stack
 

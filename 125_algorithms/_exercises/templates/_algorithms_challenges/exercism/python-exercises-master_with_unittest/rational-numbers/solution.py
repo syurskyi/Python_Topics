@@ -16,7 +16,7 @@ c_ Rational(object):
             n, d = 0, 1
         ____:
             g = gcd(numer, denom)
-            n, d = int(numer/g), int(denom/g)
+            n, d = i..(numer/g), i..(denom/g)
             __ n > 0 a.. d < 0:
                 n, d = -n, -d
         r.. n, d

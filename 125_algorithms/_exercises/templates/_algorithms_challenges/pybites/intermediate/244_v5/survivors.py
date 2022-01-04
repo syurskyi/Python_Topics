@@ -7,16 +7,16 @@ FILE_NAME = "mutpy.out"
 TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, FILE_NAME)
 
-__ n.. PATH.exists():
+__ n.. PATH.exists
     urlretrieve(S3.f..(FILE_NAME), PATH)
 
 
 ___ _get_data(path=PATH):
-    with open(path) as f:
+    with open(path) __ f:
         r.. [line.rstrip() ___ line __ f.readlines()]
 
 
-___ filter_killed_mutants(mutpy_output: l.. = N..) -> l..:
+___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
     """Read in the passed in mutpy output and filter out the code snippets of
        mutation tests that were killed. Surviving mutants should be shown in
        full, as well the surrounding output.

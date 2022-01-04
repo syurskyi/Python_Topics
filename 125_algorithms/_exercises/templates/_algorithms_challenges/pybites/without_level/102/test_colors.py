@@ -5,12 +5,12 @@ ____ colors _______ print_colors
 NOT_VALID = 'Not a valid color'
 
 
-___ call_print_colors():
+___ call_print_colors
     # some people prefer sys.exit instead of break
     try:
         print_colors()
     except SystemExit:
-        pass
+        p..
 
 
 @patch("builtins.input", side_effect=['quit'])

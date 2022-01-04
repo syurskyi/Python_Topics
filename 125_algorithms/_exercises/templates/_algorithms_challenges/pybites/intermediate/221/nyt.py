@@ -35,10 +35,10 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
     try:
         response = requests.get(url,params=params)
         response.raise_for_status()
-    except requests.HTTPError as e:
+    except requests.HTTPError __ e:
         print('HTTP Error')
         print(e)
-    except Exception as e:
+    except Exception __ e:
         print('Other exception')
         print(e)
     ____:

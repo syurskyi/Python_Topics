@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ calc(A, B, C):
@@ -12,7 +12,7 @@ ___ sum_digits(num):
     r.. s..
 
 ___ i __ r..(amount_values):
-    A, B, C = map(int, input().s..())
+    A, B, C = map(i.., input().s..())
     num = calc(A,B,C)
     results.a..(sum_digits(num))
 

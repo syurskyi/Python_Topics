@@ -29,7 +29,7 @@ c_ Solution(object):
         _sum = 0
 
         ___ obj __ L:
-            __ obj.isInteger():
+            __ obj.isInteger
                 _sum += depth * obj.getInteger()
                 continue
 
@@ -53,7 +53,7 @@ c_ Solution(object):
             depth += 1
 
             ___ obj __ queue:
-                __ obj.isInteger():
+                __ obj.isInteger
                     ans += depth * obj.getInteger()
                     continue
 

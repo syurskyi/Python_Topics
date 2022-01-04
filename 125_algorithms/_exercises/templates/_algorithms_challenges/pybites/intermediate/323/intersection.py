@@ -2,7 +2,7 @@ _______ functools
 ____ typing _______ Iterable, Set, Any, cast
 
 
-___ intersection(*args: Iterable) -> Set[Any]:
+___ intersection(*args: Iterable) __ Set[Any]:
     cast_to_set = [set(arg) ___ arg __ args __ arg != N.. a.. l..(arg) != 0]
 
     __ l..(cast_to_set) __ 0:

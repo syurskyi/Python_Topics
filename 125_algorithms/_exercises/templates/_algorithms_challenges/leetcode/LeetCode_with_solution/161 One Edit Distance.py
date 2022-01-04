@@ -46,7 +46,7 @@ c_ Solution1(object):
         __ n-m > 1: r.. F..
 
         diff = 0
-        i, j = iter(s), iter(t)
+        i, j = i..(s), i..(t)
         a, b = next(i, N..), next(j, N..)
         w.... a a.. b a.. diff < 2:
             __ a __ b:

@@ -6,26 +6,26 @@ ____ license _______ validate_license
 ALPHABET = a.. + d..
 
 
-___ _create_license():
+___ _create_license
     r.. 'PB-' + '-'.j..(
         [''.j..(random.sample(ALPHABET, 8))
          ___ _ __ r..(4)]
     )
 
 
-___ test_valid_license():
+___ test_valid_license
     ___ _ __ r..(10):
         key = _create_license()
         ... validate_license(key)
 
 
-___ test_return_type():
+___ test_return_type
     key = _create_license()
     ... validate_license(key) __ T..
     ... validate_license(key[:-1]) __ F..
 
 
-___ test_invalid_license():
+___ test_invalid_license
     pool = [_create_license() ___ _ __ r..(5)]
     lcase_key = pool[0].l..
     ... n.. validate_license(lcase_key)
@@ -41,7 +41,7 @@ ___ test_invalid_license():
     ... n.. validate_license(key_reversed)
 
 
-___ test_valid_prefix():
+___ test_valid_prefix
     license = "PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4"
     ... validate_license(license)
     ... n.. validate_license(license.r..('PB', 'APB'))

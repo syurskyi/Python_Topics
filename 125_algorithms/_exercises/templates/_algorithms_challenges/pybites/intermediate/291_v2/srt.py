@@ -2,7 +2,7 @@ ____ d__ _______ t..
 ____ typing _______ List
 
 
-___ get_srt_section_ids(text: s..) -> List[int]:
+___ get_srt_section_ids(text: s..) __ List[i..]:
     """Parse a caption (srt) text passed in and return a
        list of section numbers ordered descending by
        highest speech speed
@@ -43,8 +43,8 @@ ___ get_srt_section_ids(text: s..) -> List[int]:
         tds    # list
         ___ time __ (start_time,end_time):
             hours,minutes,seconds = time.s..(':')
-            hours = int(hours)
-            minutes = int(hours)
+            hours = i..(hours)
+            minutes = i..(hours)
             seconds = float('.'.j..(seconds.s..(',')))
             td = t..(hours=hours,minutes=minutes,seconds=seconds)
             tds.a..(td)
@@ -56,7 +56,7 @@ ___ get_srt_section_ids(text: s..) -> List[int]:
         characters_per_second = characters/time_elapsed
 
 
-        id_to_speed[int(id_)]  = characters_per_second
+        id_to_speed[i..(id_)]  = characters_per_second
 
 
     

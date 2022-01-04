@@ -1,13 +1,13 @@
 ____ pathlib _______ Path
 ____ collections _______ defaultdict
 ____ urllib.request _______ urlretrieve
-_______ ___.e__.E__ as ET
+_______ ___.e__.E__ __ ET
 
 # import the countries xml file
 tmp = Path('/tmp')
 countries = tmp / 'countries.xml'
 
-__ n.. countries.exists():
+__ n.. countries.exists
     urlretrieve('https://bit.ly/2IzGKav', countries)
 
 
@@ -25,7 +25,7 @@ ___ get_income_distribution(___=countries):
 
     xpath = f".//wb:country"
     country_list = defaultdict(l..)
-    ___ x __ root.findall(xpath, namespaces):
+    ___ x __ root.f..(xpath, namespaces):
         country_list[x.find('wb:incomeLevel', namespaces).text].a..(x.find('wb:name', namespaces).text)
 
     r.. country_list

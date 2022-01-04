@@ -38,7 +38,7 @@ ___ is_winner(board):
 ___ tic_tac_toe(games):
     ___ game __ r..(games):
         board = [s..(x) ___ x __ r..(1, 10)] # Create the 3x3 Tic-Tac-Toe board.
-        moves = [int(x) ___ x __ raw_input().s.. ] # Logs all player moves.
+        moves = [i..(x) ___ x __ raw_input().s.. ] # Logs all player moves.
 
         ___ turn, move __ e..(moves):
             # Take turns rewriting the default board to player 1's X

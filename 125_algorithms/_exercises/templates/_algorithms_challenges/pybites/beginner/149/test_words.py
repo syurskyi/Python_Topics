@@ -1,7 +1,7 @@
 ____ words _______ sort_words_case_insensitively
 
 
-___ test_sort_words_case_insensitively():
+___ test_sort_words_case_insensitively
     words = ("It's almost Holidays and PyBites wishes You a "
              "Merry Christmas and a Happy 2019").s..
     actual = sort_words_case_insensitively(words)
@@ -10,7 +10,7 @@ ___ test_sort_words_case_insensitively():
                 'wishes', 'You', '2019']
     ... actual __ expected
 
-___ test_sort_words_case_insensitively_another_phrase():
+___ test_sort_words_case_insensitively_another_phrase
     words = ("Andrew Carnegie's 64-room chateau at 2 East 91st "
              "Street was converted into the Cooper-Hewitt National "
              "Design Museum of the Smithsonian Institution "
@@ -23,7 +23,7 @@ ___ test_sort_words_case_insensitively_another_phrase():
                 '64-room', '91st']
     ... actual __ expected
 
-___ test_digit_inside_word_does_not_matter():
+___ test_digit_inside_word_does_not_matter
     """We only care about the first char being a number"""
     words = ("It was the twenty9th of October when it was questioned"
              "the meaning of nuMbers and weather hiding a number Inside"
@@ -36,7 +36,7 @@ ___ test_digit_inside_word_does_not_matter():
                 'was', 'weather', 'when', 'word']
     ... actual __ expected
 
-___ test_words_with_mixed_chars_and_digits():
+___ test_words_with_mixed_chars_and_digits
     words = ("Let's see how4 this 1sorts, hope it works 4 this "
              "B1te 22 55abc abc55").s..
     actual = sort_words_case_insensitively(words)

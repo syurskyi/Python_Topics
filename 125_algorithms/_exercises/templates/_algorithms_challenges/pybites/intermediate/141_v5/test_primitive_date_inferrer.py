@@ -2,7 +2,7 @@ _______ pytest
 ____ primitive_date_inferrer _______ get_dates, InfDateFmtError
 
 
-___ test_tie():
+___ test_tie
     """ any date string can be parsed using the following formats:
     dd/mm/yy , mm/dd/yy, yy/mm/dd
     so no the prevalent format cannot be inferred """
@@ -24,7 +24,7 @@ ___ test_tie():
         get_dates(dates)
 
 
-___ test_too_many_nonparsable():
+___ test_too_many_nonparsable
     """{<DateFormat.MMDDYY: 1>: 2,  <DateFormat.NONPARSABLE: -999>: 5,
          <DateFormat.DDMMYY: 0>: 2, <DateFormat.YYMMDD: 2>: 3}
     """
@@ -46,7 +46,7 @@ ___ test_too_many_nonparsable():
         get_dates(dates)
 
 
-___ test_mmddyy():
+___ test_mmddyy
     """ {<DateFormat.MMDDYY: 1>: 7, <DateFormat.DDMMYY: 0>: 5,
          <DateFormat.YYMMDD: 2>: 5, <DateFormat.NONPARSABLE: -999>: 2}
         the single most prevalent format is mm/dd/yy
@@ -82,7 +82,7 @@ ___ test_mmddyy():
     ... get_dates(dates) __ results
 
 
-___ test_yymmdd():
+___ test_yymmdd
     """ {<DateFormat.YYMMDD: 2>: 7, <DateFormat.NONPARSABLE: -999>: 1,
          <DateFormat.MMDDYY: 1>: 3, <DateFormat.DDMMYY: 0>: 3}
          the single most prevalent format is yy/mm/dd """
@@ -117,7 +117,7 @@ ___ test_yymmdd():
     ... get_dates(dates) __ results
 
 
-___ test_ddmmyy():
+___ test_ddmmyy
     """ {<DateFormat.MMDDYY: 1>: 7, <DateFormat.DDMMYY: 0>: 9,
         <DateFormat.YYMMDD: 2>: 4}
         the single most prevalent format is dd/mm/yy """
@@ -152,12 +152,12 @@ ___ test_ddmmyy():
     ... get_dates(dates) __ results
 
 
-___ test_different_enum():
+___ test_different_enum
     """ Modified enum - now it supports 4 different time formats.
         Order of formats is changed as well"""
     ____ enum _______ Enum
     # import the module with the tested code which contains the original emum
-    _______ primitive_date_inferrer as pdi
+    _______ primitive_date_inferrer __ pdi
 
     c_ DateFormat_ext(Enum):
         DDMMYYYY = 0

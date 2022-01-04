@@ -26,7 +26,7 @@ c_ Solution(object):
         w.... j < l..(s) a.. arr[j] <= arr[ind-1]:
             j += 1
         arr[ind-1], arr[j] = arr[j], arr[ind-1]
-        res = int(''.j..(arr))
+        res = i..(''.j..(arr))
         __ res >= 1 << 32-1:
             r.. -1
         r.. res

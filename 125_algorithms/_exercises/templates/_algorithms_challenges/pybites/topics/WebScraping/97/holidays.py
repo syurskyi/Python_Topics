@@ -3,7 +3,7 @@ _______ os
 ____ urllib.request _______ urlretrieve
 
 #from bs4 import BeautifulSoup
-____ bs4 _______ BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup __ Soup
 
 
 # prep data
@@ -15,7 +15,7 @@ urlretrieve(
     holidays_page
 )
 
-with open(holidays_page) as f:
+with open(holidays_page) __ f:
     content = f.read()
 
 holidays = defaultdict(l..)

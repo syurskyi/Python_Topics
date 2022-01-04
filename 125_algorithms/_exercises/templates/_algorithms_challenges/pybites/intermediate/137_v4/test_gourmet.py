@@ -2,7 +2,7 @@ _______ pytest
 ____ gourmet _______ best_match_per_wine, match_wine_5cheeses
 
 
-___ test_best_match_per_wine_all():
+___ test_best_match_per_wine_all
     ... best_match_per_wine()[2] __ 13.0
 
 
@@ -19,12 +19,12 @@ ___ test_best_match_per_wine_type(case):
     ... best_match_per_wine(wine_type) __ tuple(result)
 
 
-___ test_invalid_wine_type():
+___ test_invalid_wine_type
     with pytest.raises(ValueError):
         best_match_per_wine("cocacola")
 
 
-___ test_all_wines_included():
+___ test_all_wines_included
     ... l..(match_wine_5cheeses()) __ 26
 
 

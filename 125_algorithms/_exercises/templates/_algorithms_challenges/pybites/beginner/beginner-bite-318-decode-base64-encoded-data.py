@@ -35,7 +35,7 @@ an excellent service to quickly get realistic fake data.
 _______ base64
 _______ csv
 
-___ encode():
+___ encode
     input = """first_name,last_name,credit_card
 Keelby,MacCafferky,6393719433329924
 Linnell,Clemmett,3555584924093954

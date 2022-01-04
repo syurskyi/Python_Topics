@@ -42,31 +42,31 @@ The decoded string is guaranteed to have less than 2^63 letters.
 
 
 c_ Solution:
-    ___ decodeAtIndex(self, S: s.., K: int) -> s..:
+    ___ decodeAtIndex(self, S: s.., K: i..) __ s..:
         """
         walk backward
         """
         l = 0
         ___ s __ S:
-            __ s.isdigit():
-                l *= int(s)
+            __ s.isdigit
+                l *= i..(s)
             ____:
                 l += 1
 
         # walk backward
         ___ s __ r..(S):
             K %= l
-            __ K __ 0 a.. s.isalpha():
+            __ K __ 0 a.. s.isalpha
                 # K == l * n, return the last chr
                 r.. s
-            __ s.isdigit():
-                l //= int(s)
+            __ s.isdigit
+                l //= i..(s)
             ____:
                 l -= 1
 
         raise
 
-    ___ decodeAtIndex_error(self, S: s.., K: int) -> s..:
+    ___ decodeAtIndex_error(self, S: s.., K: i..) __ s..:
         """
         don't generate the final string, too memory expensive
         two pointer
@@ -79,11 +79,11 @@ c_ Solution:
         last = N..
         n = l..(S)
         w.... j < n:
-            __ S[j].isdigit():
+            __ S[j].isdigit
                 __ n.. last:
                     last = j
 
-                d = int(S[j])
+                d = i..(S[j])
                 l = last - i
                 w.... K >= l a.. d > 0:
                     K -= l

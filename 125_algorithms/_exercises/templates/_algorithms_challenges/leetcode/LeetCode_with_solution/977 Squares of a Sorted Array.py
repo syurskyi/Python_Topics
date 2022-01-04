@@ -24,7 +24,7 @@ ____ collections _______ deque
 
 
 c_ Solution:
-    ___ sortedSquares(self, A: List[int]) -> List[int]:
+    ___ sortedSquares(self, A: List[i..]) __ List[i..]:
         """
         started from two ends
         """

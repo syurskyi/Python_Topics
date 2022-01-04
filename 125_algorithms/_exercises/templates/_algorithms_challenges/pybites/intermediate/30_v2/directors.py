@@ -2,7 +2,7 @@ _______ csv
 ____ collections _______ defaultdict, n..
 _______ os
 ____ urllib.request _______ urlretrieve
-_______ pandas as pd
+_______ pandas __ pd
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = os.getenv("TMP", "/tmp")
@@ -19,7 +19,7 @@ MIN_YEAR = 1960
 Movie = n..('Movie', 'title year score')
 
 
-___ get_movies_by_director():
+___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
@@ -31,7 +31,7 @@ ___ get_movies_by_director():
     result = defaultdict(l..)
 
 
-    ___ _,row __ data.iterrows():
+    ___ _,row __ data.iterrows
         director = row.director_name
         movie_title = row.movie_title
         movie_year = row.title_year

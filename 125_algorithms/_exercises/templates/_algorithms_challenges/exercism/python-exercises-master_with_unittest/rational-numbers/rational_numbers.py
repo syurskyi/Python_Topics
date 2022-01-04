@@ -13,22 +13,22 @@ c_ Rational(object):
         r.. '{}/{}'.f..(numer, denom)
 
     ___ __add__(self, other):
-        pass
+        p..
 
     ___ __sub__(self, other):
-        pass
+        p..
 
     ___ __mul__(self, other):
-        pass
+        p..
 
     ___ __truediv__(self, other):
-        pass
+        p..
 
     ___ __abs__
-        pass
+        p..
 
     ___ __pow__(self, power):
-        pass
+        p..
 
     ___ __rpow__(self, base):
-        pass
+        p..

@@ -13,7 +13,7 @@ c_ Solution(object):
         :type s: str
         :rtype: int
         """
-        m = defaultdict(int)
+        m = defaultdict(i..)
         i = 0
         j = 0
         maxa = 0

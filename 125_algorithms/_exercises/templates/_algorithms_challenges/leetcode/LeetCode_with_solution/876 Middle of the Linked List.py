@@ -32,7 +32,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ middleNode(self, head: ListNode) -> ListNode:
+    ___ middleNode(self, head: ListNode) __ ListNode:
         """
         """
         l = 0

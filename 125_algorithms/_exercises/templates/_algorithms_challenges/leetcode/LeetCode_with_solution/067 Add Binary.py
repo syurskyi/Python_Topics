@@ -7,8 +7,8 @@ c_ Solution:
         :param b: string
         :return: string
         """
-        a = int(a, 2)
-        b = int(b, 2)
+        a = i..(a, 2)
+        b = i..(b, 2)
         r.. bin(a+b)[2:]
 
     ___ addBinary(self, a, b):

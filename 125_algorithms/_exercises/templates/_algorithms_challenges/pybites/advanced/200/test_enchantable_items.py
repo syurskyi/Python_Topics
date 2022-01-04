@@ -55,7 +55,7 @@ mock_html = """
 
 
 @pytest.fixture(scope="module")
-___ enchantment_mock():
+___ enchantment_mock
     enchant = Enchantment(
         "python_developer",
         "Python Developer",
@@ -72,7 +72,7 @@ ___ item_mock(enchantment_mock):
 
 
 @pytest.fixture(scope="module")
-___ mock_soup():
+___ mock_soup
     r.. get_soup(mock_html)
 
 
@@ -87,7 +87,7 @@ ___ mocked_generate_items(mock_data):
 
 
 @pytest.fixture(scope="module")
-___ coders_dataset():
+___ coders_dataset
     soup = get_soup()
     mc_data = generate_enchantments(soup)
     items = generate_items(mc_data)
@@ -160,7 +160,7 @@ ___ test_generate_enchantments_with_mock(mock_data):
     )
 
 
-___ test_generate_enchantments_from_source():
+___ test_generate_enchantments_from_source
     soup = get_soup()
     data = generate_enchantments(soup)
     ... l..(data.keys()) __ 38

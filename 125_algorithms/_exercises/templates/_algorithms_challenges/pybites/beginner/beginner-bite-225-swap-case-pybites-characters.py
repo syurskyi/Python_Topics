@@ -20,7 +20,7 @@ ___ convert_pybites_chars(text):
     output = ''
     ___ char __ text:
         __ char.l.. __ PYBITES:
-            __ char.isupper():
+            __ char.isupper
                 output += output.j..(char.lower())
             ____:
                 output += output.j..(char.upper())

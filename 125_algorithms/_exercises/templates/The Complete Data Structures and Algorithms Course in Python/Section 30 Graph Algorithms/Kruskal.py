@@ -2,7 +2,7 @@
 #   Copyright © 2021 AppMillers. All rights reserved.
 
 # Kruskal Algorithm  in Python
-_____ DisjointSet as dst
+_____ DisjointSet __ dst
 
 c_ Graph:
     ___  -   vertices

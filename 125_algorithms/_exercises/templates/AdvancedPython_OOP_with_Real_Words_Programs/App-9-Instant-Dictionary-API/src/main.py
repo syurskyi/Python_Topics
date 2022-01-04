@@ -1,7 +1,7 @@
 _____ api
 _____ documentation
 
-_____ justpy as jp
+_____ justpy __ jp
 
 jp.Route("/api", api.Api.serve)
 jp.Route("/", documentation.Doc.serve)

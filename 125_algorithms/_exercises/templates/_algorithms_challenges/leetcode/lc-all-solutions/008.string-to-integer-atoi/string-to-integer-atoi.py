@@ -14,8 +14,8 @@ c_ Solution(object):
       s = s[1:]
     ans = 0
     ___ c __ s:
-      __ c.isdigit():
-        ans = ans * 10 + int(c)
+      __ c.isdigit
+        ans = ans * 10 + i..(c)
       ____:
         break
     ans *= sign

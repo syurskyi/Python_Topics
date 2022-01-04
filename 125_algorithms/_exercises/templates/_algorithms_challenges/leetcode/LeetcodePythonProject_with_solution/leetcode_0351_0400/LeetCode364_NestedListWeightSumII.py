@@ -14,28 +14,28 @@ c_ NestedInteger(object):
         If value is not specified, initializes an empty list.
         Otherwise initializes a single integer equal to value.
         """
-        pass
+        p..
 
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
-        pass
+        p..
 
     ___ add(self, elem):
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
-        pass
+        p..
 
     ___ setInteger(self, value):
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
         """
-        pass
+        p..
 
     ___ getInteger
         """
@@ -43,7 +43,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
-        pass
+        p..
 
     ___ getList
         """
@@ -51,7 +51,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a single integer
         :rtype List[NestedInteger]
         """
-        pass
+        p..
 
 c_ Solution(object):
     ___ depthSumInverse(self, nestedList):
@@ -63,10 +63,10 @@ c_ Solution(object):
             size = l..(queue)
             ___ _ __ r..(size):
                 ni = queue.pop(0)
-                __ ni.isInteger():
+                __ ni.isInteger
                     sumVal += ni.getInteger()
                 ____:
-                    ___ ni0 __ ni.getList():
+                    ___ ni0 __ ni.getList
                         queue.a..(ni0)
             prev += sumVal
             result += prev

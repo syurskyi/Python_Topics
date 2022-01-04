@@ -3,12 +3,12 @@ ____ regex _______ (extract_course_times,
                    match_first_paragraph)
 
 
-___ test_extract_course_times_default_arg():
+___ test_extract_course_times_default_arg
     expected = ['01:47', '32:03', '41:51', '27:48', '05:02']
     ... extract_course_times() __ expected
 
 
-___ test_extract_course_times_other_course_input():
+___ test_extract_course_times_other_course_input
     course = ('00:40 Lesson introduction'
               '01:33 Your 3 day overview'
               '08:12 Learning datetime and date'
@@ -18,12 +18,12 @@ ___ test_extract_course_times_other_course_input():
     ... extract_course_times(course) __ expected
 
 
-___ test_get_all_hashtags_and_links_default_arg():
+___ test_get_all_hashtags_and_links_default_arg
     expected = ['http://pybit.es/requests-cache.html', '#python', '#APIs']
     ... get_all_hashtags_and_links() __ expected
 
 
-___ test_get_all_hashtags_and_links_other_tweet():
+___ test_get_all_hashtags_and_links_other_tweet
     tweet = ('PyBites My Reading List | 12 Rules for Life - #books '
              'that expand the mind! '
              'http://pbreadinglist.herokuapp.com/books/'
@@ -36,12 +36,12 @@ ___ test_get_all_hashtags_and_links_other_tweet():
     ... get_all_hashtags_and_links(tweet) __ expected
 
 
-___ test_match_first_paragraph_default_arg():
+___ test_match_first_paragraph_default_arg
     expected = 'pybites != greedy'
     ... match_first_paragraph() __ expected
 
 
-___ test_match_first_paragraph_other_html():
+___ test_match_first_paragraph_other_html
     html = ('<p>Match only this paragraph.</p>'
             '<p>Not this one!</p><p>And this one neither.</p>')
     expected = 'Match only this paragraph.'

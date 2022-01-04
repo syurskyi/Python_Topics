@@ -15,7 +15,7 @@ ____ collections _______ deque
 
 
 c_ Solution:
-    ___ dailyTemperatures(self, T: List[int]) -> List[int]:
+    ___ dailyTemperatures(self, T: List[i..]) __ List[i..]:
         """
         maintain a stack of monotonously decresing from right to left
         (i.e. monotonously increasing from left to right)

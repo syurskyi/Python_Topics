@@ -19,7 +19,7 @@ BITES_DONE = {6, 10, 16, 18, 21}
 
 
 c_ NoBitesAvailable(Exception):
-    pass
+    p..
 
 
 c_ Promo:

@@ -17,7 +17,7 @@ c_ Movie:
     release_date: s..
 
 
-___ get_age(actor: Actor, movie: Movie) -> s..:
+___ get_age(actor: Actor, movie: Movie) __ s..:
     """Calculates age of actor / actress when movie was released,
        return a string like this:
 

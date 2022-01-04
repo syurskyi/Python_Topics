@@ -6,8 +6,8 @@ ____ collections _______ defaultdict
 
 
 ___ count_triplets(arr, r):
-    arr2 = defaultdict(int)
-    arr3 = defaultdict(int)
+    arr2 = defaultdict(i..)
+    arr3 = defaultdict(i..)
     count = 0
     ___ i __ arr:
         count += arr3[i]
@@ -16,6 +16,6 @@ ___ count_triplets(arr, r):
     r.. count
 
 
-n, r = map(int, input().s..())
-arr = l..(map(int, input().s..()))
+n, r = map(i.., input().s..())
+arr = l..(map(i.., input().s..()))
 print(count_triplets(arr, r))

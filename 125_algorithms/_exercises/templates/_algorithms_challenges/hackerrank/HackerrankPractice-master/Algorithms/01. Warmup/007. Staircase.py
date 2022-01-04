@@ -7,5 +7,5 @@ ___ staircase(a):
         print((a - i) * ' ' + i * "#")
 
 
-n = int(input())
+n = i..(input())
 staircase(n)

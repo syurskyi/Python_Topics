@@ -1,7 +1,7 @@
 ____ typing _______ List
 
 
-___ minimum_number(d..: List[int]) -> int:
+___ minimum_number(d..: List[i..]) __ i..:
     
     __ n.. d..:
         r.. 0
@@ -11,7 +11,7 @@ ___ minimum_number(d..: List[int]) -> int:
     unique = s..(unique)
 
 
-    r.. int(''.j..(map(s..,unique)))
+    r.. i..(''.j..(map(s..,unique)))
 
 
 

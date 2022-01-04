@@ -32,8 +32,8 @@ ___ createRankings(leaderboard):
     r.. rankings
 
 
-lenOfLeaderboard = int(input())
-leaderboard = l..(map(int, input().rstrip().s..()))
-lenOfAliceScores = int(input())
-aliceScores = l..(map(int, input().rstrip().s..()))
+lenOfLeaderboard = i..(input())
+leaderboard = l..(map(i.., input().rstrip().s..()))
+lenOfAliceScores = i..(input())
+aliceScores = l..(map(i.., input().rstrip().s..()))
 climbingLeaderboard(leaderboard, aliceScores)

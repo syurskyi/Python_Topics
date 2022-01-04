@@ -6,7 +6,7 @@ ____ seq_gen _______ sequence_generator
 
 
 @pytest.fixture
-___ gen():
+___ gen
     """Return a fresh new generator object for each test"""
     r.. sequence_generator()
 

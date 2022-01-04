@@ -28,7 +28,7 @@ c_ Solution:
         r.. 0
 
     ___ get_int(self, s):
-        __ n.. s o. n.. s.isdigit():
+        __ n.. s o. n.. s.isdigit
             r.. 0
 
         res = 0

@@ -4,7 +4,7 @@ c_ Solution(object):
     :type c: int
     :rtype: bool
     """
-    n = int(c ** 0.5)
+    n = i..(c ** 0.5)
     start = 0
     end = n
     w.... start <= end:

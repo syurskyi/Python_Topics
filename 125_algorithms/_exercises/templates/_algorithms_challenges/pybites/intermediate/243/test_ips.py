@@ -15,13 +15,13 @@ IP = IPv4Network('192.0.2.8/29')
 
 
 @pytest.fixture(scope='module')
-___ json_file():
+___ json_file
     """Import data into tmp folder"""
     urlretrieve(URL, PATH)
     r.. PATH
 
 
-___ test_ServiceIPRange():
+___ test_ServiceIPRange
     serv = ServiceIPRange(
         service='Tester',
         region='Bolton',
@@ -44,6 +44,6 @@ ___ test_get_aws_service_range(json_file):
     ... set(s.region ___ s __ service_range) __ {'eu-west-1'}
     ... set(s.service ___ s __ service_range) __ {'AMAZON', 'GLOBALACCELERATOR'}
     ... get_aws_service_range('158.152.1.65', services) __ []
-    with pytest.raises(ValueError) as exc:
+    with pytest.raises(ValueError) __ exc:
         get_aws_service_range('0.0.0.256', services)
     ... 'Address must be a valid IPv4 address' __ s..(exc.value)

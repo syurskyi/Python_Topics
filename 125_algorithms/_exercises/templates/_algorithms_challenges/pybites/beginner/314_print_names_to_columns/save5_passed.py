@@ -1,7 +1,7 @@
 ____ typing _______ List  # not needed when we upgrade to 3.9
 
 
-___ print_names_to_columns(names: List[s..], cols: int = 2) -> N..
+___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
     name_list = [f'| {name:{10}}' ___ name __ names]
 
     breaks    # list

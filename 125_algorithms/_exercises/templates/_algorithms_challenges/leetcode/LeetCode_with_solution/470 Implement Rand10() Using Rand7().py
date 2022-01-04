@@ -9,7 +9,7 @@ Do NOT use system's Math.random().
 
 
 # The rand7() API is already defined for you.
-___ rand7():
+___ rand7
     r.. 0
 
 

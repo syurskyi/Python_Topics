@@ -5,7 +5,7 @@ ____ typing _______ List  # python 3.9 we can drop this
 logger = logging.getLogger('app')
 
 
-___ sum_even_numbers(numbers: List[float]) -> float:
+___ sum_even_numbers(numbers: List[float]) __ float:
     """
     1. Of the numbers passed in sum the even ones
        and return the result.
@@ -21,7 +21,7 @@ ___ sum_even_numbers(numbers: List[float]) -> float:
     try:
         ___ num __ filter(l.... x: x % 2 __ 0,numbers):
             s += num
-    except Exception as e:
+    except Exception __ e:
         logger.exception(f'Bad inputs: {numbers}')
         raise
 

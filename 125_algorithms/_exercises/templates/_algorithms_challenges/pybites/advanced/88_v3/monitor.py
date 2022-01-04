@@ -11,13 +11,13 @@ ALERT_MSG = 'ALERT: suffering performance hit today'
 violations = Counter()
 
 
-___ get_today():
+___ get_today
     """Making it easier to test/mock"""
     r.. date.today()
 
 
 @contextmanager
-___ timeit() -> N..
+___ timeit() __ N..
     start = time()
     try:
         y..

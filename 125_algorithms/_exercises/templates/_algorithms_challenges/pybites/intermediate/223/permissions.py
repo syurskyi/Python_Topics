@@ -1,4 +1,4 @@
-___ get_octal_from_file_permission(rwx: s..) -> s..:
+___ get_octal_from_file_permission(rwx: s..) __ s..:
    """Receive a Unix file permission and convert it to
       its octal representation.
 

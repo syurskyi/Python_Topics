@@ -12,7 +12,7 @@ ___ checkMagazine(magazine, note):
         r.. 'No'
 
 
-m, n = map(int, input().s..())
+m, n = map(i.., input().s..())
 magazine = l..(input().s..())
 note = l..(input().s..())
 print(checkMagazine(magazine, note))

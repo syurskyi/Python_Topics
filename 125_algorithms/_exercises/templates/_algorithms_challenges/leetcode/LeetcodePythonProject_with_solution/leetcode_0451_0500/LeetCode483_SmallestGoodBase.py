@@ -11,10 +11,10 @@ c_ Solution(object):
         :rtype: str
         """
         _______ math
-        n = int(n)
-        max_n = int(math.log(n, 2))
+        n = i..(n)
+        max_n = i..(math.log(n, 2))
         ___ m __ r..(max_n, 1, -1):
-            k = int(n**m**-1)
+            k = i..(n**m**-1)
             __ (k**(m+1)-1)//(k-1) __ n:
                 r.. s..(k)
         r.. s..(n-1)

@@ -2,7 +2,7 @@ ___ sqRoot(numbers):
     answer    # list
     ___ number __ r..(numbers):
         data = raw_input().s.. 
-        value,runs = int(data[0]),int(data[1])
+        value,runs = i..(data[0]),i..(data[1])
         root = 1.00
 
         __ root __ 0:

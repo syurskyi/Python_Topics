@@ -5,7 +5,7 @@ c_ Solution:
     """
     ___ consistentHashing(self, n):
         res = [[0, 359, 1]]
-        __ n.. isi..(n, int) \
+        __ n.. isi..(n, i..) \
             o. n < 2:
             r.. res
         ti = 0 # ti: target_index for the **upcoming** machine in results

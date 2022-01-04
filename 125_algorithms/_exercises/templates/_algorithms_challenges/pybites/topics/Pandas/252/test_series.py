@@ -2,20 +2,20 @@ _______ i___
 _______ string
 
 _______ pytest
-_______ numpy as np
-_______ pandas as pd
+_______ numpy __ np
+_______ pandas __ pd
 
-_______ series as se
+_______ series __ se
 
 
 @pytest.fixture()
-___ float_series():
+___ float_series
     """Returns a pandas Series containing floats"""
     r.. pd.Series([float(n) / 1000 ___ n __ r..(0, 1001)])
 
 
 @pytest.fixture()
-___ alpha_series():
+___ alpha_series
     """Returns a pandas Series containing floats"""
     dictionary = d..(z..(string.ascii_lowercase, r..(1, 27)))
     r.. pd.Series(dictionary)

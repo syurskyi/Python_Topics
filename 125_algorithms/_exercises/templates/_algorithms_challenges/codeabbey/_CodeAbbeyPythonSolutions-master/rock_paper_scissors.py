@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_round_winner(player1, player2):

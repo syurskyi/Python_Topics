@@ -1,2 +1,2 @@
 ___ solve(string):
-    pass
+    p..

@@ -46,7 +46,7 @@ ___ check_bt(donor, recipient):
         bool: True for compatability, False otherwise.
     """
 
-    __ t..(donor) __ int a.. (donor < 0 o. donor > 7):
+    __ t..(donor) __ i.. a.. (donor < 0 o. donor > 7):
         raise ValueError
     ____ t..(donor) __ float:
         raise TypeError
@@ -59,7 +59,7 @@ ___ check_bt(donor, recipient):
         donor = donor.value
 
     
-    __ t..(recipient) __ int a.. (recipient < 0 o. recipient > 7):
+    __ t..(recipient) __ i.. a.. (recipient < 0 o. recipient > 7):
         raise ValueError
     ____ t..(recipient) __ float:
         raise TypeError
@@ -79,7 +79,7 @@ ___ check_bt(donor, recipient):
 
 
 # hint
-___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
+___ _particular_antigen_comp(donor: i.., recipient: i..) __ tuple:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.

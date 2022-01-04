@@ -40,7 +40,7 @@ c_ Solution:
 
             ____:
                 b = i
-                w.... i < l..(s) a.. s[i].isdigit():
+                w.... i < l..(s) a.. s[i].isdigit
                     i += 1
                 ret.a..(s[b:i])
 
@@ -50,7 +50,7 @@ c_ Solution:
         stk    # list  # store operators in strictly increasing precedence
         ret    # list
         ___ elt __ lst:
-            __ elt.isdigit():
+            __ elt.isdigit
                 ret.a..(elt)
             ____ elt __ "(":
                 stk.a..(elt)
@@ -79,8 +79,8 @@ c_ Solution:
         stk    # list
         ___ elt __ post:
             __ elt __ ("+", "-"):
-                b = int(stk.pop())
-                a = int(stk.pop())
+                b = i..(stk.pop())
+                a = i..(stk.pop())
                 __ elt __ "+":
                     stk.a..(a+b)
                 ____:
@@ -89,7 +89,7 @@ c_ Solution:
                 stk.a..(elt)
 
         ... l..(stk) __ 1
-        r.. int(stk[-1])
+        r.. i..(stk[-1])
 
 
 __ __name__ __ "__main__":

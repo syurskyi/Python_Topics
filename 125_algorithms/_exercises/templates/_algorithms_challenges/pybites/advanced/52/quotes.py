@@ -42,13 +42,13 @@ ___ _quote_exists(existing_quote):
     
 
 
-___ _get_max_id():
+___ _get_max_id
     
 
     r.. max(quote['id'] ___ quote __ quotes)
 
 @app.route('/api/quotes', methods=['GET'])
-___ get_quotes():
+___ get_quotes
 
     r.. jsonify({'quotes': quotes})
 
@@ -65,7 +65,7 @@ ___ get_quote(qid):
 
 
 @app.route('/api/quotes', methods=['POST'])
-___ create_quote():
+___ create_quote
 
     data = request.json
 

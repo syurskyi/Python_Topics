@@ -1,10 +1,10 @@
 ____ typing _______ Tuple
 ____ collections _______ Counter
 _______ __
-_______ pandas as pd
+_______ pandas __ pd
 
 
-___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
+___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     __ text __ N..
         r.. N..
     __ text __ T..:

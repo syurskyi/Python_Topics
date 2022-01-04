@@ -25,13 +25,13 @@ reboot    ~                         Sat Oct  3 18:57
 """
 
 
-___ test_default_output():
+___ test_default_output
     ... calc_max_uptime(MAC1) __ (30, '2019-02-17')
 
 
-___ test_different_output():
+___ test_different_output
     ... calc_max_uptime(MAC2) __ (22, '2019-09-22')
 
 
-___ test_yet_another_output():
+___ test_yet_another_output
     ... calc_max_uptime(MAC3) __ (24, '2019-12-11')

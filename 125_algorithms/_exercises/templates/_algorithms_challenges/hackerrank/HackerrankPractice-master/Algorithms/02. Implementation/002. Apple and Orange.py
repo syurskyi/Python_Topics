@@ -2,8 +2,8 @@
 # Score: 10
 
 
-s, t, a, b, m, n = map(int, input().s..  + input().s..  + input().s..())
-apple = l..(map(int, input().s..()))
-orange = l..(map(int, input().s..()))
+s, t, a, b, m, n = map(i.., input().s..  + input().s..  + input().s..())
+apple = l..(map(i.., input().s..()))
+orange = l..(map(i.., input().s..()))
 print(s..(s <= a + i <= t ___ i __ apple))
 print(s..(s <= b + i <= t ___ i __ orange))

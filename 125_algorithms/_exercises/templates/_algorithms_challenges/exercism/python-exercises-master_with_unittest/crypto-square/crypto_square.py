@@ -1,2 +1,2 @@
-___ encode():
-    pass
+___ encode
+    p..

@@ -10,7 +10,7 @@ c_ Solution(object):
         queue2    # list
     
     ___ push(self, x):
-        __ empty():
+        __ empty
             queue1.a..(x)
         ____:
             __ queue1:

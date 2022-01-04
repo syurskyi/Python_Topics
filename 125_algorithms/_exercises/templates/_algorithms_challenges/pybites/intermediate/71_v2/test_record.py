@@ -4,7 +4,7 @@ ____ record _______ RecordScore
 
 
 @pytest.fixture()
-___ record():
+___ record
     """Make a RecordScore object with a few scores"""
     record = RecordScore()
     record(10)
@@ -31,7 +31,7 @@ ___ test_record_got_beaten(record):
     ... record(4) __ 16
 
 
-___ test_record_got_beaten_negative_values():
+___ test_record_got_beaten_negative_values
     record = RecordScore()
     record(-5)
     ... record(-4) __ -4

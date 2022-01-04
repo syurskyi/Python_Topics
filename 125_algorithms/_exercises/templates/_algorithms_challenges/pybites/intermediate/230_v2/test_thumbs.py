@@ -4,7 +4,7 @@ ____ thumbs _______ Thumbs
 
 
 @pytest.fixture(scope="module")
-___ thumbs():
+___ thumbs
     r.. Thumbs()
 
 

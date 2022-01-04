@@ -21,7 +21,7 @@ c_ Solution(object):
         s = s.lstrip('0')
         res = 0
         ___ c __ s:
-            __ n.. c.isdigit():
+            __ n.. c.isdigit
                 break
             res = 10*res + ord(c) - ord('0') 
         __ sig > 0:

@@ -5,7 +5,7 @@ ____ urllib.request _______ urlretrieve
 tmp = Path('/tmp')
 stats = tmp / 'bites.csv'
 
-__ n.. stats.exists():
+__ n.. stats.exists
     urlretrieve('https://bit.ly/2MQyqXQ', stats)
 
 
@@ -15,7 +15,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
        Return a list of Bite IDs (int or str values are fine) of the N
        most complex Bites.
     """
-    with open(stats, encoding="utf-8-sig") as s:
+    with open(stats, encoding="utf-8-sig") __ s:
         r.. [x[0] ___ x __ s..(
             [[round(float(x['Bite'].s..(' ')[1])), float(x['Difficulty'])] ___ x __ csv.DictReader(s, delimiter=';')
              __ x['Difficulty'] != 'None'], key=l.... x: x[1], r.._T..[:N]]

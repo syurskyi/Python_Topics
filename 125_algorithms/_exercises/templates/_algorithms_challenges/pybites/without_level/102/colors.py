@@ -1,7 +1,7 @@
 VALID_COLORS = ['blue', 'yellow', 'red']
 
 
-___ print_colors():
+___ print_colors
     """In the while loop ask the user to enter a color,
        lowercase it and store it in a variable. Next check:
        - if 'quit' was entered for color, print 'bye' and break.

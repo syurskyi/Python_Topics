@@ -22,12 +22,12 @@ ___ test_ontrack_reading(args, expected):
     ... ontrack_reading(*args) __ expected
 
 @freeze_time('2021-07-09')
-___ test_without_days_arg_current_date_july():
+___ test_without_days_arg_current_date_july
     ... ontrack_reading(60, 31) __ F..
     ... ontrack_reading(60, 34) __ T..
 
 
 @freeze_time('2021-12-09')
-___ test_without_days_arg_current_date_december():
+___ test_without_days_arg_current_date_december
     ... ontrack_reading(30, 28) __ F..
     ... ontrack_reading(30, 29) __ T..

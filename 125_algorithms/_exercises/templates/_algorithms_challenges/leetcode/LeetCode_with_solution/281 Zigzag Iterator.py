@@ -19,7 +19,7 @@ c_ ZigzagIterator(object):
 
     ___ _reposition
         w.... i >= l..(mat) o. j >= l..(mat[i]):
-            __ n.. hasNext():
+            __ n.. hasNext
                 r..
 
             ____ i >= l..(mat):
@@ -33,7 +33,7 @@ c_ ZigzagIterator(object):
         """
         :rtype: int
         """
-        __ n.. hasNext():
+        __ n.. hasNext
             raise StopIteration
 
         ret = mat[i][j]
@@ -52,5 +52,5 @@ __ __name__ __ "__main__":
     v1 = [1, 2]
     v2 = [3, 4, 5, 6]
     itr = ZigzagIterator(v1, v2)
-    w.... itr.hasNext():
+    w.... itr.hasNext
         print itr.next()

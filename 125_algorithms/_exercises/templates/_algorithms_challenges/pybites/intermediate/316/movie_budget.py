@@ -4,7 +4,7 @@ ____ typing _______ Dict, Sequence, NamedTuple
 
 c_ MovieRented(NamedTuple):
     title: s..
-    price: int
+    price: i..
     date: date
 
 
@@ -15,8 +15,8 @@ STREAM, RENT = 'stream', 'rent'
 
 ___ rent_or_stream(
     renting_history: RentingHistory,
-    streaming_cost_per_month: int = STREAMING_COST_PER_MONTH
-) -> Dict[s.., s..]:
+    streaming_cost_per_month: i.. = STREAMING_COST_PER_MONTH
+) __ Dict[s.., s..]:
     """Function that calculates if renting movies one by one is
        cheaper than streaming movies by months.
 

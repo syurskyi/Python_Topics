@@ -5,21 +5,21 @@ _______ subprocess
 _______ cat_service
 
 
-___ main():
+___ main
     print_header()
     folder  get_or_create_output_folder()
     download_cats(folder)
     display_cats(folder)
 
 
-___ print_header():
+___ print_header
     print('----------------------------------')
     print('        CAT FACTORY')
     print('----------------------------------')
     print()
 
 
-___ get_or_create_output_folder():
+___ get_or_create_output_folder
     base_folder  os.path.abspath(os.path.dirname(__file__))
     folder  'cat_pictures'
     full_path  os.path.j..(base_folder, folder)

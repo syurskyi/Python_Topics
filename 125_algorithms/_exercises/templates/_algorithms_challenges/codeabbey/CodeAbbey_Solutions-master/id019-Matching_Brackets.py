@@ -18,4 +18,4 @@ ___ check_brackets(checks):
         ____:
             answer.a..('1') # String had completely correct bracket usage.
     print(' '.j..(answer))
-check_brackets(int(input()))
+check_brackets(i..(input()))

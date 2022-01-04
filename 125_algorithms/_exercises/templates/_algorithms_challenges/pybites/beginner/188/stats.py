@@ -27,16 +27,16 @@ Estimated variance for sample:
 """
 
 
-___ get_all_line_counts(data: s.. = STATS) -> l..:
+___ get_all_line_counts(data: s.. = STATS) __ l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
     lines    # list
-    with open(data,'r') as f:
+    with open(data,'r') __ f:
         ___ line __ f:
             line = line.s..
             space_index = line.index(' ')
-            lines.a..(int(line[:space_index]))
+            lines.a..(i..(line[:space_index]))
     
     r.. lines
 

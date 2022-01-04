@@ -14,7 +14,7 @@ c_ Game:
         r.. Question(text, is_correct, explanation)
 
     ___ __fill_in_questions(self, file_path, questions: []):
-        with open(file_path, encoding'UTF8') as file:
+        with open(file_path, encoding'UTF8') __ file:
             ___ line __ file:
                 q  __parse_line(line)
                 questions.a..(q)
@@ -34,16 +34,16 @@ c_ Game:
         r.. __questions[__counter]
 
     ___ give_answer(self, answer):
-        ___ is_last_question():
+        ___ is_last_question
             r.. __counter __ l..(__questions) - 1
 
-        ___ exceeded_allowed_mistakes():
+        ___ exceeded_allowed_mistakes
             r.. __mistakes > __allowed_mistakes
 
         __ __questions[__counter].is_true ! answer:
             __mistakes + 1
 
-        __ is_last_question() o. exceeded_allowed_mistakes():
+        __ is_last_question() o. exceeded_allowed_mistakes
             __game_status  GameStatus.GAME_IS_OVER
 
             result  GameResult(__counter, __mistakes, __mistakes < __allowed_mistakes)

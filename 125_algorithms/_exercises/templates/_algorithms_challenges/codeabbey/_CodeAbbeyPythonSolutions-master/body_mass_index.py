@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_bmi(weight, height):

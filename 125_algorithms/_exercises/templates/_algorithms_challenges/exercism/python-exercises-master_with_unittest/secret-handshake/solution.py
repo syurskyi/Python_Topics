@@ -24,9 +24,9 @@ ___ code(seq):
 
 
 ___ sanitize(s):
-    __ n..(isi..(s, int) o. isi..(s, s..)):
+    __ n..(isi..(s, i..) o. isi..(s, s..)):
         raise TypeError('Unknown type')
-    __ isi..(s, int):
+    __ isi..(s, i..):
         __ s < 0:
             r.. ""
         s = bin(s)[2:]

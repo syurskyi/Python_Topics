@@ -2,7 +2,7 @@ _______ functools
 ____ typing _______ Iterable, Set, Any
 
 
-___ intersection(*args: Iterable) -> Set[Any]:
+___ intersection(*args: Iterable) __ Set[Any]:
 
     
     result = [set(arg) ___ arg __ args __ arg]

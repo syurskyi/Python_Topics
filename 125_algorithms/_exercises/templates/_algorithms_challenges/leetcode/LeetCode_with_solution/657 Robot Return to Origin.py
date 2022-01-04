@@ -34,6 +34,6 @@ ____ collections _______ Counter
 
 
 c_ Solution:
-    ___ judgeCircle(self, moves: s..) -> bool:
+    ___ judgeCircle(self, moves: s..) __ bool:
         counter = Counter(moves)
         r.. counter["L"] __ counter["R"] a.. counter["U"] __ counter["D"]

@@ -13,7 +13,7 @@ c_ Solution(object):
         __ l..(nums) __ 1: r.. 0
         start, end = 0, l..(nums)-1
         w.... start < end:
-            mid = int((start+end)/2)
+            mid = i..((start+end)/2)
             __ (mid __ 0 a.. nums[mid] > nums[mid+1]) o. (mid __ l..(nums)-1 a.. nums[mid] > nums[mid-1]):
                 r.. mid
             ____:

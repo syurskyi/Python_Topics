@@ -6,7 +6,7 @@ FEED_URL = "https://bites-data.s3.us-east-2.amazonaws.com/steam_gaming.xml"
 
 Game = n..('Game', 'title link')
 
-___ get_games():
+___ get_games
     """Parses Steam's RSS feed and returns a list of Game namedtuples"""
     file = feedparser.parse(FEED_URL)
     count = 0

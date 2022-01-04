@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ checkPossibility(self, A: List[int]) -> bool:
+    ___ checkPossibility(self, A: List[i..]) __ bool:
         """
         greedy change
         two way of changing
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ checkPossibility_error(self, A: List[int]) -> bool:
+    ___ checkPossibility_error(self, A: List[i..]) __ bool:
         """
         greedy change
         """

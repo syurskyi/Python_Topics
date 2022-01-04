@@ -7,7 +7,7 @@ Created on May 23, 2018
 # @param buf, a list of characters
 # @return an integer
 ___ read4(buf):
-    pass
+    p..
 
 c_ Solution(object):
     ___ - ):

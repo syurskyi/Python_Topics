@@ -29,7 +29,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findRestaurant(self, list1: List[s..], list2: List[s..]) -> List[s..]:
+    ___ findRestaurant(self, list1: List[s..], list2: List[s..]) __ List[s..]:
         index    # dict
         ___ i, v __ e..(list2):
             index[v] = i

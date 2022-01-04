@@ -41,7 +41,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ findTarget(self, root: TreeNode, k: int) -> bool:
+    ___ findTarget(self, root: TreeNode, k: i..) __ bool:
         root = root
         r.. walk(root, k)
 

@@ -5,7 +5,7 @@ ____ speaker _______ (get_pycon_speaker_first_names,
 
 
 @pytest.fixture(scope='module')
-___ first_names():
+___ first_names
     r.. get_pycon_speaker_first_names()
 
 

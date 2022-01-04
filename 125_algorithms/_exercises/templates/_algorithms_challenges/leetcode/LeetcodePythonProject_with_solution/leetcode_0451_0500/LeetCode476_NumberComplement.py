@@ -3,7 +3,7 @@ Created on Apr 27, 2017
 
 @author: MT
 '''
-c_ Solution():
+c_ Solution
     ___ findComplement(self, num):
         i = 1
         w.... i <= num:

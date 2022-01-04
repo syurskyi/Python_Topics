@@ -15,7 +15,7 @@ c_ NestedInteger(object):
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
-        pass
+        p..
 
     ___ getInteger
         """
@@ -23,7 +23,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
-        pass
+        p..
 
     ___ getList
         """
@@ -31,7 +31,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a single integer
         :rtype List[NestedInteger]
         """
-        pass
+        p..
 
 c_ Solution(object):
     ___ depthSum(self, nestedList):
@@ -44,7 +44,7 @@ c_ Solution(object):
     ___ helper(self, nestedList, level):
         sumVal = 0
         ___ ni __ nestedList:
-            __ ni.isInteger():
+            __ ni.isInteger
                 sumVal += ni.getInteger()*level
             ____:
                 sumVal += helper(ni.getList(), level+1)

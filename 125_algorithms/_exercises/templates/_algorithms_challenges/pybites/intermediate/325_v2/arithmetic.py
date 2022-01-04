@@ -10,7 +10,7 @@ ___ my_round(n):
     r.. floor(n*100 + .5) / 100
 
 
-___ calc_sums(values: s.. = VALUES) -> Generator[s.., N.., N..]:
+___ calc_sums(values: s.. = VALUES) __ Generator[s.., N.., N..]:
     """
     Process the above JSON-encoded string of values and calculate the sum of each adjacent pair.
 

@@ -7,7 +7,7 @@ data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
 TMP = Path(os.getenv("TMP", "/tmp"))
 stats = TMP / 'bites.csv'
 
-__ n.. stats.exists():
+__ n.. stats.exists
     urlretrieve(data, stats)
 
 
@@ -18,7 +18,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
        most complex Bites.
     """
     bites    # dict
-    with open(stats) as csv_file:
+    with open(stats) __ csv_file:
         csv_reader = csv.reader(csv_file)
         line_count = 0
         ___ row __ csv_reader:

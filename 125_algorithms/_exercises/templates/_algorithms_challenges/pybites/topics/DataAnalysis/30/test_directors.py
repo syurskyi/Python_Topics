@@ -7,7 +7,7 @@ ____ directors _______ (get_movies_by_director, get_average_scores,
 
 
 @pytest.fixture(scope="module")
-___ movies():
+___ movies
     r.. get_movies_by_director()
 
 

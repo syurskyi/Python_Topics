@@ -1,8 +1,8 @@
 c_ Cipher(object):
     ___ - ):
-        pass
+        p..
 
 
 c_ Caesar(object):
     ___ - ):
-        pass
+        p..

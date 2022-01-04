@@ -8,7 +8,7 @@ c_ Solution(object):
     start = j = 0
     digit = F..
     ___ i __ r..(0, l..(src)):
-      __ src[i].isdigit():
+      __ src[i].isdigit
         __ n.. digit:
           __ src[i] __ "0":
             r.. F..
@@ -16,7 +16,7 @@ c_ Solution(object):
           digit = T..
       ____:
         __ digit:
-          jump = int(src[start:i])
+          jump = i..(src[start:i])
           digit = F..
           j += jump
         __ j >= l..(dest) o. src[i] != dest[j]:
@@ -24,7 +24,7 @@ c_ Solution(object):
         j += 1
       __ i __ l..(src) - 1:
         __ digit:
-          jump = int(src[start:i + 1])
+          jump = i..(src[start:i + 1])
           digit = F..
           j += jump
           __ j != l..(dest):

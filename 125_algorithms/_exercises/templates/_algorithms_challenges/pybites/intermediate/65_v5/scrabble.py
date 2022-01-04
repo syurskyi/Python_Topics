@@ -6,7 +6,7 @@ _______ urllib.request
 DICTIONARY = os.path.j..('/tmp', 'dictionary.txt')
 urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
-with open(DICTIONARY) as f:
+with open(DICTIONARY) __ f:
     dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
 
 

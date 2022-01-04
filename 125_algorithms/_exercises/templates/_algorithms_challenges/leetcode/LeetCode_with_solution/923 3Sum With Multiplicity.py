@@ -39,13 +39,13 @@ MOD = 10 ** 9 + 7
 
 
 c_ Solution:
-    ___ threeSumMulti(self, A: List[int], target: int) -> int:
+    ___ threeSumMulti(self, A: List[i..], target: i..) __ i..:
         """
         Adapted from 3 sum
         3 pointers O(N + K^2)
         j, k scan each element once
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ a __ A:
             counter[a] += 1
 
@@ -82,7 +82,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ threeSumMulti_TLE(self, A: List[int], target: int) -> int:
+    ___ threeSumMulti_TLE(self, A: List[i..], target: i..) __ i..:
         """
         Adapted from 3 sum
         3 pointers O(N^2)
@@ -120,7 +120,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ threeSumMulti_TLE(self, A: List[int], target: int) -> int:
+    ___ threeSumMulti_TLE(self, A: List[i..], target: i..) __ i..:
         """
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
@@ -142,12 +142,12 @@ c_ Solution:
         print(F[n][target][3])
         r.. F[n][target][3]
 
-    ___ threeSumMulti_TLE(self, A: List[int], target: int) -> int:
+    ___ threeSumMulti_TLE(self, A: List[i..], target: i..) __ i..:
         """
         O(n * target * 3)
         Let F[i][t][k] be the number of k sums using A[:i] to target t
         """
-        F = defaultdict(l....: defaultdict(l....: defaultdict(int)))
+        F = defaultdict(l....: defaultdict(l....: defaultdict(i..)))
         n = l..(A)
         ___ i __ r..(n+1):
             F[i][0][0] = 1

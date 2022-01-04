@@ -2,6 +2,6 @@
 # Score: 10
 
 
-n = int(input())
-ar = l..(map(int, input().s..()))
+n = i..(input())
+ar = l..(map(i.., input().s..()))
 print(ar.c.. max(ar)))

@@ -60,7 +60,7 @@ November 8
 - Sweden"""
 
 
-___ test_get_father_days_default():
+___ test_get_father_days_default
     father_days = get_father_days()
     ... l..(father_days) __ 12
     number_countries = s..(l..(val) ___ val __ father_days.values())
@@ -75,7 +75,7 @@ ___ test_get_father_days_default():
     ... father_days['May 21'] __ ['Germany']
 
 
-___ test_get_father_days_other_years():
+___ test_get_father_days_other_years
     father_days = get_father_days y.._2021)
     # changing dates
     ... father_days['June 20'] __ ['U.S.', 'Canada', 'U.K.']

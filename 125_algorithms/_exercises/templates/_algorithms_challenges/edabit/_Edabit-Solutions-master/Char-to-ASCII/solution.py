@@ -5,7 +5,7 @@ ___ ctoa(char):
 
 
 
-___ test_ctoa():
+___ test_ctoa
     print("test has started")
     __ ctoa("M") != 77:
         print("error1")

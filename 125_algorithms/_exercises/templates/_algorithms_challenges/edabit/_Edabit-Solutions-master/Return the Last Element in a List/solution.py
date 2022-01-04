@@ -3,7 +3,7 @@ ___ getLastItem(lst):
 
 
 
-___ test():
+___ test
     print("test has started")
     a_list = [2,4,6]
     __ getLastItem(a_list) != 6:

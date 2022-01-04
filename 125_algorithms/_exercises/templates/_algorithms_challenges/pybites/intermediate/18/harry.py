@@ -17,14 +17,14 @@ urllib.request.urlretrieve(
 )
 
 
-___ get_harry_most_common_word():
+___ get_harry_most_common_word
 
     # Stopwords
-    with open(stopwords_file) as file:
+    with open(stopwords_file) __ file:
         stopwords = [word.s.. ___ word __ file]
 
     # Harry text
-    with open(harry_text) as file:
+    with open(harry_text) __ file:
         content_remove_apos = [line.r..("'", "").r..("’", "") ___ line __ file]
         harry_content = [__.sub(r"\W+", " ", line).s...l.. ___ line __ content_remove_apos]
 

@@ -15,8 +15,8 @@ c_ Solution(object):
     ___ m..(src, dest):
       i = 0
       ___ c __ src:
-        __ c.isdigit():
-          jump = int(c)
+        __ c.isdigit
+          jump = i..(c)
           i += jump
         ____:
           __ c != dest[i]:

@@ -4,7 +4,7 @@ ____ common _______ common_languages
 
 
 @pytest.fixture()
-___ programmers():
+___ programmers
     r.. d..(bob=['JS', 'PHP', 'Python', 'Perl', 'Java'],
                 tim=['Python', 'Haskell', 'C++', 'JS'],
                 sara=['Perl', 'C', 'Java', 'Python', 'JS'],

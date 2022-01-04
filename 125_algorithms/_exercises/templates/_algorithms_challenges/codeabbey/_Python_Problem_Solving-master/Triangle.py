@@ -1,10 +1,10 @@
-data = int(input())
+data = i..(input())
 
 res= ''
 ___ i __ r..(0,data):
     para = input().s.. 
     
-    para = l..(map(int,para))
+    para = l..(map(i..,para))
     
     a = para[0]
     b = para[1]

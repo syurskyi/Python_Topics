@@ -1,7 +1,7 @@
 ____ Previous.wrong_char _______ get_index_different_char
 
 
-___ test_wrong_char():
+___ test_wrong_char
     inputs = (
         ['A', 'f', '.', 'Q', 2],
         ['.', '{', ' ^', '%', 'a'],

@@ -13,18 +13,18 @@ PICKLE_OUTFILE = TMP / 'output.pkl'
 
 c_ MovieRented(NamedTuple):
     title: s..
-    price: int
+    price: i..
     date: date
 
 
-___ download_pickle_file():
+___ download_pickle_file
     """download a pickle file we created with a
        list of namedtuples
     """
     urlretrieve(f'{S3}/bite317.pkl', PICKLE_INFILE)
 
 
-___ deserialize(pkl_file: Path = PICKLE_INFILE) -> Sequence[NamedTuple]:
+___ deserialize(pkl_file: Path = PICKLE_INFILE) __ Sequence[NamedTuple]:
     """Load the list of namedtuples from the pickle file passed in"""
 
 
@@ -33,7 +33,7 @@ ___ deserialize(pkl_file: Path = PICKLE_INFILE) -> Sequence[NamedTuple]:
 
 
 ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
-              data: Sequence[NamedTuple] = N..) -> N..
+              data: Sequence[NamedTuple] = N..) __ N..
     """Save the data passed in to the pickle file passed in"""
     __ data __ N..
         data = deserialize()

@@ -18,7 +18,7 @@ c_ Solution(object):
     path.s..()
     __ a > 9 o. n.. path:
       r.. 0
-    ans = int("".j..(path))
+    ans = i..("".j..(path))
     r.. ans __ ans <= 0x7fffffff ____ 0
 
   # normal DFS
@@ -32,7 +32,7 @@ c_ Solution(object):
 
     ___ dfs(num, path):
       __ num __ 1:
-        ans = m..(ans, int("".j..(s..(path))))
+        ans = m..(ans, i..("".j..(s..(path))))
         r.. T..
       ___ i __ r..(r..(2, 10)):
         __ num % i __ 0:

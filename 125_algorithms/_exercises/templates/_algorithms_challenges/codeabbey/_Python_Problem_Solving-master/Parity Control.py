@@ -1,4 +1,4 @@
-a = l..(map(int,input().s..()))
+a = l..(map(i..,input().s..()))
 ___ i __ a:
     __ 1 <=i <= 8 o. 9<= i <= 31 o. 33<= i <=45  :
         continue
@@ -14,21 +14,21 @@ ___ i __ a:
                 temp_bin[0] = '0'
                 ___ k __ temp_bin:
                     string += k
-                dec = int(string,2)
+                dec = i..(string,2)
                 print(chr(dec),end='')
             ____:
                 print(chr(i),end='')
         ____:
             __ temp_bin[0] __ '1':
-                pass
+                p..
             ____:
                 temp_bin[0] = '1'
                 
                 ___ k __ temp_bin:
                     string += k
-                dec = int(string,2)
+                dec = i..(string,2)
                 __ 128<= dec <= 255:
-                    pass
+                    p..
                 ____:
                     #print(dec)
                     print(chr(dec),end='')

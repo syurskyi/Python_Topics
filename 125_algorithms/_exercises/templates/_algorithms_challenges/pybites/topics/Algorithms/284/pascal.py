@@ -1,7 +1,7 @@
 ____ typing _______ List
 
 
-___ pascal(N: int) -> List[int]:
+___ pascal(N: i..) __ List[i..]:
     """
     Return the Nth row of Pascal triangle
     """

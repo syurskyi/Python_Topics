@@ -8,12 +8,12 @@ __ n.. os.path.isfile(BATTLE_DATA):
     urlretrieve('https://bit.ly/2U3oHft', BATTLE_DATA)
 
 
-___ _create_defeat_mapping():
+___ _create_defeat_mapping
     """Parse battle-table.csv building up a defeat_mapping dict
        with keys = attackers / values = who they defeat.
     """
     result = defaultdict(d..)
-    with open(BATTLE_DATA) as b:
+    with open(BATTLE_DATA) __ b:
         reader = csv.DictReader(b)
         ___ row __ reader:
             result[row['Attacker']] = row

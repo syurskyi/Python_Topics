@@ -28,5 +28,5 @@ ___ test_divide_numbers_raises_value_error(numerator, denominator):
         divide_numbers(numerator, denominator)
 
 
-___ test_divide_by_zero_does_not_raise_zero_division_exception():
+___ test_divide_by_zero_does_not_raise_zero_division_exception
     ... divide_numbers(10, 0) __ 0

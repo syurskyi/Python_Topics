@@ -1,6 +1,6 @@
 _______ pytest
 
-____ Previous.animation _______ spinner, SPINNER_STATES as states
+____ Previous.animation _______ spinner, SPINNER_STATES __ states
 
 
 @pytest.mark.parametrize("seconds, rounds, slice_", [

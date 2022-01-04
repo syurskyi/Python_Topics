@@ -6,7 +6,7 @@ cached_so_url = 'https://bit.ly/2IMrXdp'
 
 ___ load_page(url):
     """Download the blog html and return its decoded content"""
-    with requests.Session() as session:
+    with requests.Session() __ session:
         r.. session.get(url).content.decode('utf-8')
 
 
@@ -20,7 +20,7 @@ ___ top_python_questions(url=cached_so_url):
     content = load_page(url)
     soup = BeautifulSoup(content)
     questions = [(question.select_one('a.question-hyperlink').string.s..,
-                  int(question.select_one('span.vote-count-post').string.strip()))
+                  i..(question.select_one('span.vote-count-post').string.strip()))
                  ___ question __ soup.find_all(class_='question-summary')
                  __ question.select_one('div.views').string.s...endswith('m views')]
     r.. s..(questions, key=l.... x: -x[1])

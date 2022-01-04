@@ -41,4 +41,4 @@ ___ getUniquePrimeFactorsWithProducts(n):
 
 
 ___ isvalidparameter(n):
-    r.. isi..(n, int) a.. n > 0
+    r.. isi..(n, i..) a.. n > 0

@@ -14,7 +14,7 @@ c_ Solution(object):
             start *= 10
         start += (n-1)//length
         s = s..(start)
-        r.. int(s[(n-1)%length])
+        r.. i..(s[(n-1)%length])
     
     ___ test
         testCases = [

@@ -21,7 +21,7 @@ c_ Point(object):
 
 c_ WordSearch(object):
     ___ - , puzzle):
-        pass
+        p..
 
     ___ s..(self, word):
         r.. N..

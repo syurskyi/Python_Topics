@@ -32,7 +32,7 @@ ____ collections _______ Counter
 
 
 c_ Solution:
-    ___ commonChars(self, A: List[s..]) -> List[s..]:
+    ___ commonChars(self, A: List[s..]) __ List[s..]:
         """
         running counter
         """

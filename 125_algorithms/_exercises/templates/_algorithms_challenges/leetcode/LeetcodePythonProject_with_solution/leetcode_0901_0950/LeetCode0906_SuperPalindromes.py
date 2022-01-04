@@ -8,8 +8,8 @@ c_ Solution(object):
         :type R: str
         :rtype: int
         """
-        low = int(math.sqrt(int(L)))
-        high = int(math.sqrt(int(R)))
+        low = i..(math.sqrt(i..(L)))
+        high = i..(math.sqrt(i..(R)))
 
         res = 1 __ low <= 3 <= high ____ 0
         res += dfs(low, high, '')
@@ -24,7 +24,7 @@ c_ Solution(object):
             r.. 0
         count = 0
         __ s a.. s[0] != '0':
-            num = int(s)
+            num = i..(s)
             __ num > high:
                 r.. 0
             __ num >= low a.. isPalindrome(num*num):

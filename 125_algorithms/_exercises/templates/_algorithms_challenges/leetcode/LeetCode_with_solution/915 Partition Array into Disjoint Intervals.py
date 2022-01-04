@@ -31,7 +31,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ partitionDisjoint(self, A: List[int]) -> int:
+    ___ partitionDisjoint(self, A: List[i..]) __ i..:
         """
         max(left) <= min(right)
 
@@ -50,7 +50,7 @@ c_ Solution:
                 r.. l
         raise
 
-    ___ partitionDisjoint_2(self, A: List[int]) -> int:
+    ___ partitionDisjoint_2(self, A: List[i..]) __ i..:
         """
         max(left) <= min(right)
         """

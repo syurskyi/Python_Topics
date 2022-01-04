@@ -61,7 +61,7 @@ dirs = (
 
 
 c_ Solution:
-    ___ slidingPuzzle(self, board: List[List[int]]) -> int:
+    ___ slidingPuzzle(self, board: List[List[i..]]) __ i..:
         """
         BFS + visited
 

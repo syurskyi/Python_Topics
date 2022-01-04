@@ -1,2 +1,2 @@
-___ trinary():
-    pass
+___ trinary
+    p..

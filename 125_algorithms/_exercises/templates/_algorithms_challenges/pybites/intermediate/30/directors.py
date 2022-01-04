@@ -18,20 +18,20 @@ MIN_YEAR = 1960
 Movie = n..('Movie', 'title year score')
 
 
-___ get_movies_by_director():
+___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
 
     movie_metadata = defaultdict(l..)
 
-    with open(local) as file:
+    with open(local) __ file:
         csv_content = csv.DictReader(file)
 
         ___ row __ csv_content:
 
             __ row["title_year"] != "":
-                title_year = int(row["title_year"])
+                title_year = i..(row["title_year"])
             ____:
                 continue
 

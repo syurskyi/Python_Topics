@@ -16,7 +16,7 @@ c_ Solution(object):
         
         ___ evaluate(tokens):
             __ tokens[0] __ ('add', 'mult'):
-                tmp = l..(map(int, map(getVal, tokens[1:])))
+                tmp = l..(map(i.., map(getVal, tokens[1:])))
                 r.. s..(tmp[0]+tmp[1] __ tokens[0]__'add' ____ tmp[0]*tmp[1])
             ____:
                 ___ i __ r..(1, l..(tokens)-1, 2):
@@ -38,7 +38,7 @@ c_ Solution(object):
                 tokens[-1] += val
             ____:
                 tokens[-1] += c
-        r.. int(tokens[0])
+        r.. i..(tokens[0])
     
     ___ evaluate_own_error(self, expression):
         """
@@ -49,8 +49,8 @@ c_ Solution(object):
         r.. helper(expression, hashmap)
     
     ___ helper(self, exp, hashmap):
-        __ exp[0] __ '-' o. exp.isdigit():
-            r.. int(exp)
+        __ exp[0] __ '-' o. exp.isdigit
+            r.. i..(exp)
         ____ exp[0] != '(':
             r.. hashmap[exp]
         ____:

@@ -35,7 +35,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ longestMountain(self, A: List[int]) -> int:
+    ___ longestMountain(self, A: List[i..]) __ i..:
         """
         dp
         """
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ longestMountain(self, A: List[int]) -> int:
+    ___ longestMountain(self, A: List[i..]) __ i..:
         """
         dp
         """
@@ -76,7 +76,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ longestMountain_complicated(self, A: List[int]) -> int:
+    ___ longestMountain_complicated(self, A: List[i..]) __ i..:
         """
         a flag to indicate expecting increase or decrease
         one-pass can

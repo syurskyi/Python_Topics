@@ -1,27 +1,27 @@
-_______ memory_profiler as mem_profile
+_______ memory_profiler __ mem_profile
 _______ random
 _______ time
 
 
-___ function_1():
-    with open("sample_file.txt") as infile:
+___ function_1
+    with open("sample_file.txt") __ infile:
         ___ line __ infile:
             print(line.strip())
 
-___ function_2():
+___ function_2
 
-    with open("sample_file.txt") as infile:
+    with open("sample_file.txt") __ infile:
         print(t..(infile))
         data = infile.readlines()
         ___ line __ data:
             print(line.strip())
 
-___ function_3():
-    with open("sample_file.txt") as infile:
+___ function_3
+    with open("sample_file.txt") __ infile:
         r.. (word ___ word __ infile.readline())
-___ gen():
+___ gen
 
-    with open("sample_file.txt") as infile:
+    with open("sample_file.txt") __ infile:
         ___ line __ infile:
             y.. line
 

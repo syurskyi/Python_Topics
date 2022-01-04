@@ -1,11 +1,11 @@
-c_ Node():
+c_ Node
 
     ___  -   value):
         value  value
         adjacentlist  []
         visited  F..
 
-c_ Graph():
+c_ Graph
     p..
 
 node1  Node("A")

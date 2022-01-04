@@ -20,7 +20,7 @@ Note: N is an integer in the range [0, 10^9].
 
 
 c_ Solution:
-    ___ monotoneIncreasingDigits(self, N: int) -> int:
+    ___ monotoneIncreasingDigits(self, N: i..) __ i..:
         """
         332
         322
@@ -28,7 +28,7 @@ c_ Solution:
         fill 9
         299
         """
-        d.. = [int(e) ___ e __ s..(N)]
+        d.. = [i..(e) ___ e __ s..(N)]
         pointer = l..(d..)
         ___ i __ r..(l..(d..) - 1, 0, -1):
             __ d..[i - 1] > d..[i]:
@@ -38,7 +38,7 @@ c_ Solution:
         ___ i __ r..(pointer, l..(d..)):
             d..[i] = 9
 
-        r.. int("".j..(map(s.., d..)))
+        r.. i..("".j..(map(s.., d..)))
 
 
 __ __name__ __ "__main__":

@@ -44,7 +44,7 @@ ____ collections _______ deque
 
 
 c_ Solution:
-    ___ deckRevealedIncreasing(self, deck: List[int]) -> List[int]:
+    ___ deckRevealedIncreasing(self, deck: List[i..]) __ List[i..]:
         """
         Sorted is [2, 3, 5, 7, 11, 13, 17]
         17 is the last card, start from the right

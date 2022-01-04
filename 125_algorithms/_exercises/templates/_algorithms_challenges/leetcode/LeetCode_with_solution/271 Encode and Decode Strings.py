@@ -28,7 +28,7 @@ c_ Codec(object):
         i = 0
         w.... i < l..(s):
             j = s.index("/", i)
-            l = int(s[i:j])
+            l = i..(s[i:j])
             strs.a..(s[j+1:j+1+l])
             i = j+1+l
 

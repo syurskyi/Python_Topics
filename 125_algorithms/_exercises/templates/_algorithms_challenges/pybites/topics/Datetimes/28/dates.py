@@ -10,7 +10,7 @@ PUB_DATE = __.c..(r'<pubDate>(.*?)</pubDate>')
 TMP = os.getenv("TMP", "/tmp")
 
 
-___ _get_dates():
+___ _get_dates
     """Downloads PyBites feed and parses out all pub dates returning
        a list of date strings, e.g.: ['Sun, 07 Jan 2018 12:00:00 +0100',
        'Sun, 07 Jan 2018 11:00:00 +0100', ... ]"""
@@ -18,8 +18,8 @@ ___ _get_dates():
     local = os.path.j..(TMP, RSS_FEED)
     urlretrieve(remote, local)
 
-    with open(local) as f:
-        r.. PUB_DATE.findall(f.read())
+    with open(local) __ f:
+        r.. PUB_DATE.f..(f.read())
 
 
 ___ convert_to_datetime(date_str):

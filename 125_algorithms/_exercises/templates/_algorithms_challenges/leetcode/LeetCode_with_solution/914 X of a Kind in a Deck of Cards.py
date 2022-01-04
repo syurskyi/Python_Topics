@@ -44,7 +44,7 @@ ____ collections _______ Counter
 
 
 c_ Solution:
-    ___ hasGroupsSizeX(self, deck: List[int]) -> bool:
+    ___ hasGroupsSizeX(self, deck: List[i..]) __ bool:
         """
         gcd of all > 2
         """

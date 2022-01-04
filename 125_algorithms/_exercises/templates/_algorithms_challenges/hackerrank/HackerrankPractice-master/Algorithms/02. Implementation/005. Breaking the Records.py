@@ -15,6 +15,6 @@ ___ breaking_records(score):
     r.. max_count, min_count
 
 
-n = int(input())
-score = l..(map(int, input().s..()))
+n = i..(input())
+score = l..(map(i.., input().s..()))
 print(*breaking_records(score))

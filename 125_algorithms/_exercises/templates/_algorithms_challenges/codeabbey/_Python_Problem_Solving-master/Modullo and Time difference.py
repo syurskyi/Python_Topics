@@ -1,8 +1,8 @@
-data = int(input())
+data = i..(input())
 string = ''
 
 ___ i __ r..(data):
-    a = [int(j) ___ j __ input().s.. ]
+    a = [i..(j) ___ j __ input().s.. ]
     dest_a = a[:l..(a)//2]
     dest_b = a[l..(a)//2:]
     day_a, hour_a, min_a,sec_a = dest_a
@@ -34,7 +34,7 @@ ___ i __ r..(data):
     
     day = day_b - day_a
     
-    string += '('+s..(int(day))+' '+s..(int(hour))+' '+s..(int(mino))+' '+s..(int(sec))+')'
+    string += '('+s..(i..(day))+' '+s..(i..(hour))+' '+s..(i..(mino))+' '+s..(i..(sec))+')'
     string += ' '
     
 print(string)

@@ -11,7 +11,7 @@ c_ TwoSum(object):
         """
         initialize your data structure here
         """
-        hash_map = defaultdict(int)
+        hash_map = defaultdict(i..)
 
     ___ add(self, number):
         """

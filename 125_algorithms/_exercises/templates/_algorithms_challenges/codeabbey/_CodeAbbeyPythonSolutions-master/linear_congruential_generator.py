@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_x_next(A,C,M,X0,N):
@@ -8,7 +8,7 @@ ___ get_x_next(A,C,M,X0,N):
     r.. get_x_next(A,C,M, x_next, N-1)
 
 ___ i __ r..(amount_values):
-    A,C,M,X0,N = map(int, input().s..())
+    A,C,M,X0,N = map(i.., input().s..())
     results.a..(get_x_next(A,C,M,X0,N))
 
 print(*results)

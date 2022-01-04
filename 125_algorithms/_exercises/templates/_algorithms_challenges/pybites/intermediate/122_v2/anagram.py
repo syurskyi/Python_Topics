@@ -7,7 +7,7 @@ ___ is_anagram(word1, word2):
     word1 = word1.l..
     word2 = word2.l..
 
-    word_2_counts = defaultdict(int)
+    word_2_counts = defaultdict(i..)
 
 
     ___ character __ word2:

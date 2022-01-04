@@ -11,10 +11,10 @@ c_ TreeNode(object):
 
 c_ BinarySearchTree(object):
     ___ - , tree_data):
-        pass
+        p..
 
     ___ data
-        pass
+        p..
 
     ___ sorted_data
-        pass
+        p..

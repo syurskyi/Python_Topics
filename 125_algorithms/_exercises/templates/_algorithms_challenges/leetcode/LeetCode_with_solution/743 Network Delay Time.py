@@ -22,7 +22,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
+    ___ networkDelayTime(self, times: List[List[i..]], N: i.., K: i..) __ i..:
         """
         Dijkstra's algorithm
         """

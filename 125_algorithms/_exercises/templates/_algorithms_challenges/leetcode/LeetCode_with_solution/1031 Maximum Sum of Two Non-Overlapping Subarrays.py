@@ -40,7 +40,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxSumTwoNoOverlap(self, A: List[int], L: int, M: int) -> int:
+    ___ maxSumTwoNoOverlap(self, A: List[i..], L: i.., M: i..) __ i..:
         """
         Prefix sum + Brute force O(N^2)
         two pointer i, j

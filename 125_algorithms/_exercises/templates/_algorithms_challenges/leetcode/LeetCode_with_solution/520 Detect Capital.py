@@ -23,7 +23,7 @@ latin letters.
 
 
 c_ Solution:
-    ___ detectCapitalUse(self, word: s..) -> bool:
+    ___ detectCapitalUse(self, word: s..) __ bool:
         """
         Two passes is easy
         How to do it in one pass
@@ -37,7 +37,7 @@ c_ Solution:
         has_lower = F..
         has_upper = F..
         ___ w __ word[1:]:
-            __ w.isupper():
+            __ w.isupper
                 has_upper = T..
                 __ has_lower o. n.. head_upper:
                     r.. F..

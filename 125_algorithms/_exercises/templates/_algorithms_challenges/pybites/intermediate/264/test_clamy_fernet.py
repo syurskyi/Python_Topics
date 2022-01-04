@@ -17,14 +17,14 @@ FILE = TMP_FILE.name
 
 
 @pytest.fixture(scope="function")
-___ rcf():
+___ rcf
     password = b"#clamybite"
     key = choice(KEYS)
     r.. ClamyFernet(password, key)
 
 
 @pytest.fixture(scope="module")
-___ cf():
+___ cf
     r.. ClamyFernet(key=KEYS[0])
 
 

@@ -25,15 +25,15 @@ S doesn't contain \ or "
 
 
 c_ Solution:
-    ___ reverseOnlyLetters(self, S: s..) -> s..:
+    ___ reverseOnlyLetters(self, S: s..) __ s..:
         lst = l..(S)
         i = 0
         n = l..(lst)
         j = n - 1
         w... T...
-            w.... i < n a.. n.. lst[i].isalpha():
+            w.... i < n a.. n.. lst[i].isalpha
                 i += 1
-            w.... j >= 0 a.. n.. lst[j].isalpha():
+            w.... j >= 0 a.. n.. lst[j].isalpha
                 j -= 1
 
             __ i < j a.. i < n a.. j >= 0:

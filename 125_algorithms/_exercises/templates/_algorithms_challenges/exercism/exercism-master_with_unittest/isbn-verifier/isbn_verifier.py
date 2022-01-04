@@ -51,7 +51,7 @@ c_ IsbnVerifier(object):
 
     @classmethod
     ___ convert_char_to_int(cls, char):
-        r.. int(cls.convert_check_character_to_ten(char))
+        r.. i..(cls.convert_check_character_to_ten(char))
 
     @classmethod
     ___ convert_check_character_to_ten(cls, char):

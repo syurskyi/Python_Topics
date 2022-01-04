@@ -26,7 +26,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ convertBST(self, root: 'TreeNode') -> 'TreeNode':
+    ___ convertBST(self, root: 'TreeNode') __ 'TreeNode':
         """
         in-order traversal, right first
         """

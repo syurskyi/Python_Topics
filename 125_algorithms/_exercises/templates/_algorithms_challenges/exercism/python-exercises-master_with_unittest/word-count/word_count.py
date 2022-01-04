@@ -1,2 +1,2 @@
-___ word_count():
-    pass
+___ word_count
+    p..

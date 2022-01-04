@@ -1,2 +1,2 @@
 ___ is_isogram(string):
-    pass
+    p..

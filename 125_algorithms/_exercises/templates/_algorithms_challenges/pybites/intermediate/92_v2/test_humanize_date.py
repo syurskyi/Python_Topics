@@ -33,11 +33,11 @@ ___ test_pretty_date(arg, expected):
     ... pretty_date(arg) __ expected
 
 
-___ test_input_variable_of_wrong_type():
+___ test_input_variable_of_wrong_type
     with pytest.raises(ValueError):
         pretty_date(123)
 
 
-___ test_input_variable_future_date():
+___ test_input_variable_future_date
     with pytest.raises(ValueError):
         pretty_date(NOW + t..(days=1))

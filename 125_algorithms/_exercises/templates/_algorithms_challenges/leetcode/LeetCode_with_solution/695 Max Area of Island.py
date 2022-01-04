@@ -32,7 +32,7 @@ dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
 c_ Solution:
-    ___ maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+    ___ maxAreaOfIsland(self, grid: List[List[i..]]) __ i..:
         """
         dfs
         """
@@ -49,7 +49,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ dfs(self, grid, i, j, visited) -> int:
+    ___ dfs(self, grid, i, j, visited) __ i..:
         visited[i][j] = T..
         ret = 1
         m, n = l..(grid), l..(grid[0])

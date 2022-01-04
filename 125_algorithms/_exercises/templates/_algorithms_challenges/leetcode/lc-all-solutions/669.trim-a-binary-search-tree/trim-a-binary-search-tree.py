@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution:
-    ___ trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
+    ___ trimBST(self, root: TreeNode, L: i.., R: i..) __ TreeNode:
         __ n.. root:
             r.. N..
         __ L > root.val:

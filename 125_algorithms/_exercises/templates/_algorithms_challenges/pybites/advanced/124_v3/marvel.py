@@ -11,13 +11,13 @@ Character = n..('Character', 'pid name sid align sex first_appearance appearance
 
 # csv parsing code provided so this Bite can focus on the parsing
 
-___ _get_csv_data():
+___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
-    with requests.Session() as session:
+    with requests.Session() __ session:
         r.. session.get(MARVEL_CSV).content.decode('utf-8')
 
 
-___ load_data():
+___ load_data
     """Converts marvel.csv into a sequence of Character namedtuples
        as defined above"""
     content = _get_csv_data()
@@ -44,14 +44,14 @@ ___ most_popular_characters(characters=characters, top=5):
        return top n characters (default 5)
     """
     top_lst = s..(characters,
-                     key=l.... x: int(x.appearances) __ x.appearances ____ 0,
+                     key=l.... x: i..(x.appearances) __ x.appearances ____ 0,
                      r.._T..[:top]
     r.. [char.name ___ char __ top_lst]
 
 
 ___ _year_app(mon_yr):
     """ return the year based on the MON-YY string from FIRST APPEARANCE field"""
-    year = int(mon_yr.s..('-')[-1])
+    year = i..(mon_yr.s..('-')[-1])
     r.. s..(1900 + year) __ year > 20 ____ s..(2000 + year)
 
 

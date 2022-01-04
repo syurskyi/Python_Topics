@@ -1,6 +1,6 @@
 ____ typing _______ List
 _______ i..
-_______ pandas as pd
+_______ pandas __ pd
 
 
 ___ minimum_number(d..):

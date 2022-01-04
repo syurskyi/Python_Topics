@@ -16,8 +16,8 @@ c_ Solution(object):
         dp[0] = 1
         dp[1] = 0 __ s[0] __ '0' ____ 1
         ___ i __ r..(2, n+1):
-            first = int(s[i-1])
-            second = int(s[i-2:i])
+            first = i..(s[i-1])
+            second = i..(s[i-2:i])
             __ 1 <= first <= 9:
                 dp[i] += dp[i-1]
             __ 10 <= second <= 26:
@@ -35,7 +35,7 @@ c_ Solution(object):
             r.. 1
         dp = [0]*(l..(s))
         dp[0] = 1
-        __ int(s[0:2]) > 26:
+        __ i..(s[0:2]) > 26:
             __ s[1] != '0':
                 dp[1] = 1
             ____:
@@ -50,7 +50,7 @@ c_ Solution(object):
         ___ i __ r..(2, n):
             __ s[i] != '0':
                 dp[i] += dp[i-1]
-            val = int(s[i-1:i+1])
+            val = i..(s[i-1:i+1])
             __ val<=26 a.. val>=10:
                 dp[i] += dp[i-2]
         

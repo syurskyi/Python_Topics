@@ -41,7 +41,7 @@ Note:
 
 
 c_ Solution:
-    ___ brokenCalc(self, X: int, Y: int) -> int:
+    ___ brokenCalc(self, X: i.., Y: i..) __ i..:
         """
         greedy + work backward
 
@@ -60,7 +60,7 @@ c_ Solution:
 
         r.. t + X - Y
 
-    ___ brokenCalc_TLE(self, X: int, Y: int) -> int:
+    ___ brokenCalc_TLE(self, X: i.., Y: i..) __ i..:
         """
         BFS
         """

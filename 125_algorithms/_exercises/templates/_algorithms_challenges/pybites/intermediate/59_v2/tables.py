@@ -35,5 +35,5 @@ c_ MultiplicationTable:
             raise IndexError("Invalid x and y")
 
 
-        r.. int(_table[x -1][y -1])
+        r.. i..(_table[x -1][y -1])
 

@@ -42,7 +42,7 @@ c_ Solution(object):
         ___ i __ xrange(2, n+1):
             __ s[i-1] != "0":
                 F[i] = F[i-1]
-                __ 10 <= int(s[i-2]+s[i-1]) < 27:
+                __ 10 <= i..(s[i-2]+s[i-1]) < 27:
                     F[i] += F[i-2]
             ____:  # 0 is special
                 __ s[i-2] __ ("1", "2"):

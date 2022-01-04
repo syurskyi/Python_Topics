@@ -2,6 +2,6 @@
 # Score: 10
 
 
-n = int(input())
-arr = l..(map(int, input().s..()))
+n = i..(input())
+arr = l..(map(i.., input().s..()))
 print(max([x ___ x __ arr __ x != max(arr)]))

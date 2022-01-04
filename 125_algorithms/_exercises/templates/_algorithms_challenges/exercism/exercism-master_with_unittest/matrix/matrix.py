@@ -6,4 +6,4 @@ c_ Matrix:
 
     @staticmethod
     ___ build_rows(inp):
-        r.. [[int(val) ___ val __ row.s.. ] ___ row __ inp.s..('\n')]
+        r.. [[i..(val) ___ val __ row.s.. ] ___ row __ inp.s..('\n')]

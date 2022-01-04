@@ -31,7 +31,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ longestOnes(self, A: List[int], K: int) -> int:
+    ___ longestOnes(self, A: List[i..], K: i..) __ i..:
         """
         len(gap)
         But there is multiple gap need to fill, and which gaps to fill is

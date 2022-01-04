@@ -11,10 +11,10 @@ ___ sort_words_case_insensitively(words):
     temp = s..(words, key=s...lower)
     temp1    # list
     ___ index, word __ e..(temp):
-        __ n.. word[0].isdigit():
+        __ n.. word[0].isdigit
             temp1.a..(temp[index])
     ___ index, word __ e..(temp):
-        __ word[0].isdigit():
+        __ word[0].isdigit
             temp1.a..(temp[index])
     r.. temp1
 

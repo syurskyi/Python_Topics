@@ -82,7 +82,7 @@ c_ BinarySearchTreeTest(unittest.TestCase):
         __ tree_one.left a.. tree_two.left:
             compare_tree(tree_one.left, tree_two.left)
         ____ tree_one.left __ N.. a.. tree_two.left __ N..
-            pass
+            p..
         ____:
             raise AssertionError
 
@@ -90,7 +90,7 @@ c_ BinarySearchTreeTest(unittest.TestCase):
         __ tree_one.right a.. tree_two.right:
             compare_tree(tree_one.right, tree_two.right)
         ____ tree_one.right __ N.. a.. tree_two.right __ N..
-            pass
+            p..
         ____:
             raise AssertionError
 

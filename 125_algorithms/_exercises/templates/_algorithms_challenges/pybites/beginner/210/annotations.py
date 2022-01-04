@@ -1,6 +1,6 @@
 _______ typing
 
-___ sum_numbers(numbers: typing.List[int]) -> int:
+___ sum_numbers(numbers: typing.List[i..]) __ i..:
     """Sums numbers
 
     :param numbers: a list of numbers
@@ -9,6 +9,6 @@ ___ sum_numbers(numbers: typing.List[int]) -> int:
     :return: sum of numbers
     :rtype: int
     """
-    pass
+    p..
 
 print(sum_numbers.__annotations__)

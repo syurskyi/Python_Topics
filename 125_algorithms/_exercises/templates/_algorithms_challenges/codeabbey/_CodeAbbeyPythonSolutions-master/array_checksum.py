@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 
 ___ get_checksum(values):
     limit = 10000007
@@ -12,7 +12,7 @@ ___ get_checksum(values):
 
     r.. result
 
-values = l..(map(int, input().s..()))
+values = l..(map(i.., input().s..()))
 
 __ __name__ __ "__get_checksum__":
     get_checksum(values)

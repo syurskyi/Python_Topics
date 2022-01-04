@@ -49,14 +49,14 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ champagneTower(self, poured: int, query_row: int, query_glass: int) -> float:
+    ___ champagneTower(self, poured: i.., query_row: i.., query_glass: i..) __ float:
         """
         Simulation
         Instead of keeping track of how much champagne should end up in a
         glass, keep track of the total amount of champagne that flows through a
         glass.
         """
-        G = defaultdict(l....: defaultdict(int))
+        G = defaultdict(l....: defaultdict(i..))
         G[0][0] = poured
         ___ i __ r..(query_row):
             ___ j __ r..(i+1):  # i + 1 glasses at row i

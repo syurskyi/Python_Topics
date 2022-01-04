@@ -36,4 +36,4 @@ c_ Solution:
             currentHead = N..
     
     ___ test
-        pass
+        p..

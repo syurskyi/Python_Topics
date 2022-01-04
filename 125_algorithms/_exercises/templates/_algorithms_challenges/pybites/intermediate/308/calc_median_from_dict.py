@@ -1,4 +1,4 @@
-___ calc_median_from_dict(d: d..) -> float:
+___ calc_median_from_dict(d: d..) __ float:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
@@ -6,14 +6,14 @@ ___ calc_median_from_dict(d: d..) -> float:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
     ___ value __ d.v..
-        __ n.. isi..(value, int):
+        __ n.. isi..(value, i..):
             raise TypeError
 
     frequency    # list
     ___ key, value __ d.i..:
         key_occurrence = value
         __ value > 100_000_000:
-            key_occurrence = int(value / 100_000_000)
+            key_occurrence = i..(value / 100_000_000)
         ___ _ __ r..(key_occurrence):
             frequency.a..(key)
 

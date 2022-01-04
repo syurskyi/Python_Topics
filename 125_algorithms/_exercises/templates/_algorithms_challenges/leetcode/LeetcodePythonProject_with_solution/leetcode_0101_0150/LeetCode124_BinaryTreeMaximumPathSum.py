@@ -29,7 +29,7 @@ c_ Solution(object):
         r.. single, gbl
     
     ___ test
-        pass
+        p..
     
 __ __name__ __ '__main__':
     Solution().test()

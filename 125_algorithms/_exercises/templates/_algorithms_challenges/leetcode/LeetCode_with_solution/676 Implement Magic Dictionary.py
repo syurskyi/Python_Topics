@@ -65,7 +65,7 @@ c_ MagicDictionary:
 
         trie = Trie()
 
-    ___ buildDict(self, dic: List[s..]) -> N..
+    ___ buildDict(self, dic: List[s..]) __ N..
         """
         Build a dictionary through a list of words
         """
@@ -73,7 +73,7 @@ c_ MagicDictionary:
             root = trie.root
             root.children[s[0]] = trie.insert(root.children[s[0]], s, 0)
 
-    ___ s..(self, word: s..) -> bool:
+    ___ s..(self, word: s..) __ bool:
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         """

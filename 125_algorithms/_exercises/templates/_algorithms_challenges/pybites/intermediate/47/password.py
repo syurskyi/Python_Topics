@@ -10,13 +10,13 @@ ___ validate_password(password):
     __ n.. l..(password) >= 6 a.. l..(password) <= 12:
         r.. F..
     
-    __ l..(__.findall(r"\d", password)) < 1:
+    __ l..(__.f..(r"\d", password)) < 1:
         r.. F..
     
-    __ l..(__.findall(r"[a-z]", password)) < 2:
+    __ l..(__.f..(r"[a-z]", password)) < 2:
         r.. F..
 
-    __ l..(__.findall(r"[A-Z]", password)) < 1:
+    __ l..(__.f..(r"[A-Z]", password)) < 1:
         r.. F..
 
     char_count = 0

@@ -18,21 +18,21 @@ c_ HashHeapqWithLazy:
         __size += 1
 
     ___ pop
-        __ _is_empty():
+        __ _is_empty
             r..
 
         __size -= 1
         r.. heapq.heappop(__heap)
 
     ___ remove(self, val):
-        __ _is_empty():
+        __ _is_empty
             r..
 
         __size -= 1
         __deleted[val] = __deleted.get(val, 0) + 1
 
     ___ top
-        __ _is_empty():
+        __ _is_empty
             r..
 
         r.. __heap[0]
@@ -63,13 +63,13 @@ c_ Solution:
         ___ i __ r..(l..(nums)):
             # remove nums[i - k]
             __ i >= k:
-                __ minheap a.. nums[i - k] >= minheap.top():
+                __ minheap a.. nums[i - k] >= minheap.top
                     minheap.remove(nums[i - k])
                 ____:
                     maxheap.remove(-1 * nums[i - k])
 
             # add nums[i]
-            __ minheap a.. nums[i] >= minheap.top():
+            __ minheap a.. nums[i] >= minheap.top
                 minheap.push(nums[i])
             ____:
                 maxheap.push(-1 * nums[i])

@@ -23,7 +23,7 @@ c_ Solution(object):
         :type magazine: str
         :rtype: bool
         """
-        d = defaultdict(int)
+        d = defaultdict(i..)
 
         ___ e __ magazine:
             d[e] += 1

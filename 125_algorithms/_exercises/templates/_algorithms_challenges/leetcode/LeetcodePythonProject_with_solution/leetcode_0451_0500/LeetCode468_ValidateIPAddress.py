@@ -22,7 +22,7 @@ c_ Solution(object):
         ___ elem __ arr:
             __ n.. elem: r.. F..
             __ elem.startswith('0') a.. l..(elem) > 1: r.. F..
-            __ n.. elem.isdigit() o. int(elem) > 255:
+            __ n.. elem.isdigit() o. i..(elem) > 255:
                 r.. F..
         r.. T..
     

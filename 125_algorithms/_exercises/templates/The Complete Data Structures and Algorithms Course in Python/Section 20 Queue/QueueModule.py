@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov on 31/05/2020.
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-_____ queue as q
+_____ queue __ q
 
 customQueue  q.Queue(maxsize3)
 print(customQueue.empty())

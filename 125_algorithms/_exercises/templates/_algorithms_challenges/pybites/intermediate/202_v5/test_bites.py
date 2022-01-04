@@ -22,9 +22,9 @@ Bite 110. Type conversion and exception handling;1.5
 
 
 @pytest.fixture
-___ intro_bites():
+___ intro_bites
     with TemporaryDirectory(dir=TMP):
-        with open(BITES_CSV, 'w') as f:
+        with open(BITES_CSV, 'w') __ f:
             f.write(INTRO_BITE_STATS)
     r.. BITES_CSV
 

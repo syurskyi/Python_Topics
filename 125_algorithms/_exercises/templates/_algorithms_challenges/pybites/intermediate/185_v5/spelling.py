@@ -7,13 +7,13 @@ __ n.. path.isfile(DICTIONARY):
     urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 
-___ load_words():
+___ load_words
     """Return a set of words from DICTIONARY"""
-    with open(DICTIONARY) as f:
+    with open(DICTIONARY) __ f:
         r.. {word.s...l.. ___ word __ f.readlines()}
 
 
-___ suggest_word(misspelled_word: s.., words: set = N..) -> s..:
+___ suggest_word(misspelled_word: s.., words: set = N..) __ s..:
     """Return a valid alternative word that best matches
        the entered misspelled word"""
     __ words __ N..

@@ -45,7 +45,7 @@ c_ Solution:
     ___ - ):
         cache    # dict
 
-    ___ cherryPickup(self, grid: List[List[int]]) -> int:
+    ___ cherryPickup(self, grid: List[List[i..]]) __ i..:
         """
         DP go and back
         Go back probably related - yes it is related
@@ -69,7 +69,7 @@ c_ Solution:
                         ret += grid[r2][c2]
 
                     __ r1 __ n - 1 a.. c1 __ n - 1:
-                        pass  # seed, otherwise -inf 
+                        p..  # seed, otherwise -inf
                     ____:
                         ret += max(
                             F(grid, r1+1, c1, r2+1),   # down, down

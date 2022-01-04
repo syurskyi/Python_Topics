@@ -9,7 +9,7 @@ c_ Solution:
                 __ res:
                     res.pop()
             ____ d __ '.' o. d __ '':
-                pass
+                p..
             ____:
                 res.a..(d)
         r.. '/' + '/'.j..(res)

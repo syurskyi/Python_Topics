@@ -1,2 +1,2 @@
-___ numeral():
-    pass
+___ numeral
+    p..

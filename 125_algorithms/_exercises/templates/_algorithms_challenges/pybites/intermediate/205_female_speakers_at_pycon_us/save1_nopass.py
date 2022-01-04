@@ -1,15 +1,15 @@
 ____ urllib.request _______ urlretrieve
 ____ pathlib _______ Path
 
-_______ gender_guesser.detector as gender
-____ bs4 _______ BeautifulSoup as Soup
+_______ gender_guesser.detector __ gender
+____ bs4 _______ BeautifulSoup __ Soup
 
 TMP = Path('/tmp')
 PYCON_HTML = TMP / "pycon2019.html"
 PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
-__ n.. PYCON_HTML.exists():
+__ n.. PYCON_HTML.exists
     urlretrieve(PYCON_PAGE, PYCON_HTML)
 
 
@@ -23,14 +23,14 @@ ___ get_pycon_speaker_first_names(soup_ N..
        multiple speakers so you need to extract them.
        Return a list of first names
     """
-    pass
+    p..
 
 
 ___ get_percentage_of_female_speakers(first_names):
     """Run gender_guesser on the names returning a percentage
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""
-    pass
+    p..
 
 
 __ __name__ __ '__main__':

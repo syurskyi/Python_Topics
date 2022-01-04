@@ -1,11 +1,11 @@
 c_ Allergies(object):
 
     ___ - , number):
-        pass
+        p..
 
     ___ is_allergic_to(self, string):
-        pass
+        p..
 
     $
     ___ lst
-        pass
+        p..

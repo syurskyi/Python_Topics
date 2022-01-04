@@ -21,11 +21,11 @@ c_ Clock:
         fixup_hours()
 
     ___ fixup_hours
-        hours = int(hours % 24)
+        hours = i..(hours % 24)
 
     ___ fixup_mins
         hours += mins // 60
-        mins = int(mins % 60)
+        mins = i..(mins % 60)
 
     ___ format_hours
         r.. s..(hours).zfill(2)

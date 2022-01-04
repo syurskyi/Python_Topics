@@ -1,8 +1,8 @@
 ____ typing _______ List, TypeVar
-T = TypeVar('T', int, float)
+T = TypeVar('T', i.., float)
 
 
-___ n_digit_numbers(numbers: List[T], n: int) -> List[int]:
+___ n_digit_numbers(numbers: List[T], n: i..) __ List[i..]:
     # Checks
     __ n < 1:
         raise ValueError
@@ -16,9 +16,9 @@ ___ n_digit_numbers(numbers: List[T], n: int) -> List[int]:
         numbers[i] = round(numbers[i] * n_multiply_lookup[n])
         __ l..(s..(numbers[i])) > n:
             __ numbers[i] > 0:
-                numbers[i] = int(s..(numbers[i])[:n])
+                numbers[i] = i..(s..(numbers[i])[:n])
             ____:
-                numbers[i] = int(s..(numbers[i])[:n +1])
+                numbers[i] = i..(s..(numbers[i])[:n +1])
 
     r.. numbers
 

@@ -21,7 +21,7 @@ c_ Solution(object):
         """
         cnt = 0
         ___ l __ xrange(l..(low), l..(high)+1):
-            cnt += l..(filter(l.... x: int(low) <= int(x) <= int(high), strobogrammatic(l)))
+            cnt += l..(filter(l.... x: i..(low) <= i..(x) <= i..(high), strobogrammatic(l)))
 
         r.. cnt
 

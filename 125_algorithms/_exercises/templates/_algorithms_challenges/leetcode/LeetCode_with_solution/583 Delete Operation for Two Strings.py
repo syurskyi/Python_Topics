@@ -16,7 +16,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ minDistance(self, word1: s.., word2: s..) -> int:
+    ___ minDistance(self, word1: s.., word2: s..) __ i..:
         """
         Longest Common Subsequence (LCS)
         Find the LCS, and delete the char in BOTH strings into LCS
@@ -26,7 +26,7 @@ c_ Solution:
         F[i][j] = F[i-1][j-1] + 1 if word1[i-1] == word2[j-1]
         F[i][j] = max(F[i-1][j], F[i][j-1])
         """
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         m = l..(word1)
         n = l..(word2)
 
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. m - F[m][n] + n - F[m][n]
 
-    ___ minDistance_edit_distance(self, word1: s.., word2: s..) -> int:
+    ___ minDistance_edit_distance(self, word1: s.., word2: s..) __ i..:
         """
         Edit distance
 
@@ -51,7 +51,7 @@ c_ Solution:
         F[i][j] = F[i-1][j-1] if word1[i-1] == word2[j-1]
         F[i][j] = min(F[i-1][j] + 1, F[i][j-1] + 1)
         """
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         m = l..(word1)
         n = l..(word2)
 

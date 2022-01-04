@@ -16,10 +16,10 @@ c_ Solution(object):
         preVal = 0
         sign = '+'
         w.... i < l..(s):
-            __ s[i].isdigit():
+            __ s[i].isdigit
                 curVal = 0
-                w.... i < l..(s) a.. s[i].isdigit():
-                    curVal = curVal*10+int(s[i])
+                w.... i < l..(s) a.. s[i].isdigit
+                    curVal = curVal*10+i..(s[i])
                     i += 1
             __ sign __ '+':
                 res += preVal

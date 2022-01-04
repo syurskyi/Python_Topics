@@ -32,12 +32,12 @@ ___ number(ocr):
 
 ___ grid(d..):
     try:
-        __ n.. d...isdigit():
+        __ n.. d...isdigit
             raise ValueError('String should be numeric.')
     except AttributeError:
         raise ValueError('Argument should be a string.')
     ocr = ['' ___ i __ r..(ROW)]
     ___ d __ d..:
         ___ r __ r..(ROW):
-            ocr[r] += OCR_LIST[int(d)][r]
+            ocr[r] += OCR_LIST[i..(d)][r]
     r.. ocr

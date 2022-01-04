@@ -1,5 +1,5 @@
 #take the number of strings that are needed to be checked
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     #accept the string
     string = input()
     #store_str is used to store only the brackets
@@ -24,7 +24,7 @@ ___ i __ r..(int(input())):
                     store_str.pop(k)
                     store_str.pop(k)
             except:
-                pass
+                p..
         __ l..(store_str) __ 1:
             print('0',end=' ')
             checker = F..
@@ -35,7 +35,7 @@ ___ i __ r..(int(input())):
             break
         ____:
             checker = T..
-            pass
+            p..
     #Step two is once the element next to each other which were pair are removed.
     #then we are left with nested loops
     #if the starting element and the last element of the list are same then pop, else the give string is not nested properly

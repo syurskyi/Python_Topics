@@ -15,13 +15,13 @@ c_ prime:
 
     @staticmethod
     ___ is_prime(x):
-        ___ i __ r..(2, int(math.sqrt(x)) + 1):
+        ___ i __ r..(2, i..(math.sqrt(x)) + 1):
             __ x % i __ 0:
                 r.. F..
         r.. T..
 
     @staticmethod
-    ___ possible_primes():
+    ___ possible_primes
         y.. 2
         n = 3
         w... T...

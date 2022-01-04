@@ -16,10 +16,10 @@ ___ top_python_questions(url=cached_so_url):
     try:
         response = requests.get(url)
         response.raise_for_status()
-    except requests.HTTPError as err:
+    except requests.HTTPError __ err:
         print('HTTP Error')
         print(err)
-    except Exception as err:
+    except Exception __ err:
         print('Other Error')
         print(err)
     ____:
@@ -32,7 +32,7 @@ ___ top_python_questions(url=cached_so_url):
             question_text = question.find('a',class_='question-hyperlink').getText()
             views = question.find('div',class_='views').getText()
             __ views.s...s.. [0][-1] __ 'm':
-                votes = int(question.find('span',class_='vote-count-post').strong.getText())
+                votes = i..(question.find('span',class_='vote-count-post').strong.getText())
                 results.a..((question_text,votes))
 
         

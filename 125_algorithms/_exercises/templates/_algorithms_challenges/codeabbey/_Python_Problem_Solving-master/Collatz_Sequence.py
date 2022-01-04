@@ -1,6 +1,6 @@
-data = int(input())
+data = i..(input())
 
-a = [int(x) ___ x __ input().s.. ]
+a = [i..(x) ___ x __ input().s.. ]
 #print(len(a))
 res    # list
 ___ i __ r..(l..(a)):

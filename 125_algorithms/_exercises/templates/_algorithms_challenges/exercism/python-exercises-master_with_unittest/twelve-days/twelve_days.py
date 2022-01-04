@@ -1,10 +1,10 @@
-___ verse():
-    pass
+___ verse
+    p..
 
 
-___ verses():
-    pass
+___ verses
+    p..
 
 
-___ sing():
-    pass
+___ sing
+    p..

@@ -19,13 +19,13 @@ ___ test_get_number_books_read(goal, date_str, expected):
     ... get_number_books_read(goal, date_str) __ expected
 
 
-___ test_not_positive_goal_exception():
+___ test_not_positive_goal_exception
     with pytest.raises(ValueError):
         get_number_books_read(0)
     with pytest.raises(ValueError):
         get_number_books_read(-1)
 
 
-___ test_past_date_exception():
+___ test_past_date_exception
     with pytest.raises(ValueError):
         get_number_books_read(52, '5-20-2018')

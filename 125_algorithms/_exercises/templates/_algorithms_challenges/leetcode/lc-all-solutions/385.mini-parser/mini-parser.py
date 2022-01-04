@@ -64,7 +64,7 @@ c_ Solution(object):
         j = i
         w.... j < l..(s) a.. s[j] __ "-0123456789":
           j += 1
-        r.. NestedInteger(int(s[i:j])), j
+        r.. NestedInteger(i..(s[i:j])), j
 
     res, _ = parse(s, 0)
     r.. res

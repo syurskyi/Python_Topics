@@ -8,12 +8,12 @@ url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
 tmp = Path(os.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
-__ n.. json_input_file.exists():
+__ n.. json_input_file.exists
     urlretrieve(url.f..(filename=filename), json_input_file)
 
 
-___ get_json_data():
-    with open(json_input_file) as file_in:
+___ get_json_data
+    with open(json_input_file) __ file_in:
         r.. json.load(file_in)
 
 
@@ -30,7 +30,7 @@ ___ get_passing_code(json_data=json_data):
     """
     ___ row __ json_data["bites"]:
         filename_pre = row["bite"].s..(".")[0].r..(" ", "")
-        with open(f"{tmp}/{filename_pre}.py", "w") as f:
+        with open(f"{tmp}/{filename_pre}.py", "w") __ f:
             f.write(row["passing_code"])
 
 

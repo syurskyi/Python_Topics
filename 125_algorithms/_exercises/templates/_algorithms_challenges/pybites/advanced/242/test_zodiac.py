@@ -16,10 +16,10 @@ PATH = Path(TMP, "zodiac.json")
 
 
 @pytest.fixture(scope='module')
-___ signs():
-    __ n.. PATH.exists():
+___ signs
+    __ n.. PATH.exists
         urlretrieve(URL, PATH)
-    with open(PATH) as f:
+    with open(PATH) __ f:
         data = json.loads(f.read())
     r.. get_signs(data)
 

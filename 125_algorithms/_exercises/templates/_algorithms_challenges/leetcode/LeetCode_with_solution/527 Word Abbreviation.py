@@ -8,7 +8,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ wordsAbbreviation(self, words: List[s..]) -> List[s..]:
+    ___ wordsAbbreviation(self, words: List[s..]) __ List[s..]:
         """
         Sort the word, check prefix and last word
 

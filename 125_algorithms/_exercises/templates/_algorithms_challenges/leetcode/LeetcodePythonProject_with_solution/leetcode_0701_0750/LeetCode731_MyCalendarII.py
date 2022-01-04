@@ -24,4 +24,4 @@ c_ MyCalendarTwo(object):
         r.. T..
 
 __ __name__ __ '__main__':
-    pass
+    p..

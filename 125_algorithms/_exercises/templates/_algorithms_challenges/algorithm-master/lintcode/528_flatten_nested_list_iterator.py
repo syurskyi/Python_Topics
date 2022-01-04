@@ -30,7 +30,7 @@ c_ NestedIterator(object):
 
     # @return {int} the next element in the iteration
     ___ next
-        __ n.. hasNext():
+        __ n.. hasNext
             r.. -1
 
         lst, i = stack[-1]
@@ -47,7 +47,7 @@ c_ NestedIterator(object):
 
             __ i >= l..(lst):
                 stack.pop()
-            ____ lst[i].isInteger():
+            ____ lst[i].isInteger
                 r.. T..
             ____:
                 # lst[i] is list

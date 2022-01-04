@@ -5,7 +5,7 @@ ____ movies _______ group_by_genre
 
 
 @pytest.fixture(scope="module")
-___ df():
+___ df
     r.. group_by_genre()
 
 

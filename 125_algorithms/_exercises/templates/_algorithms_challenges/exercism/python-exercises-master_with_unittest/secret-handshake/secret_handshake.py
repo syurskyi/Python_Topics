@@ -1,6 +1,6 @@
-___ handshake():
-    pass
+___ handshake
+    p..
 
 
-___ code():
-    pass
+___ code
+    p..

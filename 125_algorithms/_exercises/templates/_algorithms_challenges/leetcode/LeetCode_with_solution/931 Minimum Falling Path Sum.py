@@ -32,7 +32,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ minFallingPathSum(self, A: List[List[int]]) -> int:
+    ___ minFallingPathSum(self, A: List[List[i..]]) __ i..:
         """
         dp, build from bottom
         let F[i][j] be the min falling path sum at A[i][j]
@@ -52,7 +52,7 @@ c_ Solution:
             ___ j __ r..(n)
         )
 
-    ___ minFallingPathSum_std(self, A: List[List[int]]) -> int:
+    ___ minFallingPathSum_std(self, A: List[List[i..]]) __ i..:
         """
         dp, build from bottom
         let F[i][j] be the min falling path sum at A[i][j]

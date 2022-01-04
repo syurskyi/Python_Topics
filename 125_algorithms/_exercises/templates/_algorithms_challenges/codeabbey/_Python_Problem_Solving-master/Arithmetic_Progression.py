@@ -1,9 +1,9 @@
-d = int(input())
+d = i..(input())
 count = 0
 res    # list
 w.... count < d:
     a = input().s..
-    a = l..(map(int,a))
+    a = l..(map(i..,a))
     val = a[0]
     step = a[1]
     ___ i __ r..(0,a[2]):

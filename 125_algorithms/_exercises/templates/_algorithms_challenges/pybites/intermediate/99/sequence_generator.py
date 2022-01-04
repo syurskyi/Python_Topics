@@ -1,7 +1,7 @@
 _______ string
 _______ i..
 
-___ sequence_generator():
+___ sequence_generator
     letters = [letter ___ letter __ string.a..]
     numbers = [num ___ num __ r..(1, l..(letters) +1, 1)]
     

@@ -5,8 +5,8 @@ ___  fact(n):
     ___ i __ r..(n,0,-1):
         res = res * i
     r.. res
-___ i __ r..(int(input())):
-    n,k = l..(map(int,input().s..()))
+___ i __ r..(i..(input())):
+    n,k = l..(map(i..,input().s..()))
     result = 0
     result = fact(n) / (fact(k) * fact(n-k))
-    print(int(result),end=' ')
+    print(i..(result),end=' ')

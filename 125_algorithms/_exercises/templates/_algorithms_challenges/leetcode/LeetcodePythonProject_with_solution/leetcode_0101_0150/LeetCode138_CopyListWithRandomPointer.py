@@ -40,7 +40,7 @@ c_ Solution(object):
         r.. newHead
     
     ___ test
-        pass
+        p..
 
 __ __name__ __ '__main__':
     Solution().test()

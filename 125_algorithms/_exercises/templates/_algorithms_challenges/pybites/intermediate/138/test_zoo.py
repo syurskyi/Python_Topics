@@ -1,7 +1,7 @@
 ____ zoo _______ Animal
 
 
-___ test_zoo_5_animals():
+___ test_zoo_5_animals
     ___ animal __ 'dog cat fish lion mouse'.s.. :
         Animal(animal)
     zoo = Animal.zoo()
@@ -13,7 +13,7 @@ ___ test_zoo_5_animals():
     ... zoo __ '\n'.j..(expected)
 
 
-___ test_animal_instance_str():
+___ test_animal_instance_str
     horse = Animal('horse')
     ... s..(horse) __ "10006. Horse"
     monkey = Animal('monkey')

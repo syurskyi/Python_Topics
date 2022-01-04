@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ gcd(num1, num2):
@@ -15,7 +15,7 @@ ___ get_lcm_and_gcd(num1,num2):
     r.. "("+s..(gcd(num1,num2))+" "+ s..(lcm(num1, num2))+")"
 
 ___ i __ r..(amount_values):
-    num1, num2 = map(int, input().s..())
+    num1, num2 = map(i.., input().s..())
     results.a..(get_lcm_and_gcd(num1,num2))
 
 print(*results)

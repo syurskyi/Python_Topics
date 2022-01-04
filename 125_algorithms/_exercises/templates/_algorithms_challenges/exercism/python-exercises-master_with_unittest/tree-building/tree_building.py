@@ -1,10 +1,10 @@
-c_ Record():
+c_ Record
     ___ - , record_id, parent_id):
         record_id = record_id
         parent_id = parent_id
 
 
-c_ Node():
+c_ Node
     ___ - , node_id):
         node_id = node_id
         children    # list

@@ -2,7 +2,7 @@ ____ d__ _______ d__, t..
 ____ typing _______ List
 
 
-___ get_srt_section_ids(text: s..) -> List[int]:
+___ get_srt_section_ids(text: s..) __ List[i..]:
    """Parse a caption (srt) text passed in and return a
       list of section numbers ordered descending by
       highest speech speed
@@ -35,10 +35,10 @@ ___ get_srt_section_ids(text: s..) -> List[int]:
       total_chars = l..(section[2])
       start_h, start_m, start_s = start.s..(":")
       stop_h, stop_m, stop_s = stop.s..(":")
-      start = t..(hours=int(start_h), minutes=int(start_m), seconds=int(start_s[:2]))
-      stop = t..(hours=int(stop_h), minutes=int(stop_m), seconds=int(stop_s[:2]))
+      start = t..(hours=i..(start_h), minutes=i..(start_m), seconds=i..(start_s[:2]))
+      stop = t..(hours=i..(stop_h), minutes=i..(stop_m), seconds=i..(stop_s[:2]))
       time_delta = stop - start
-      sections_ranking[int(section[0])] = total_chars / time_delta.seconds
+      sections_ranking[i..(section[0])] = total_chars / time_delta.seconds
 
    r.. s..(sections_ranking, key=sections_ranking.get, r.._T..
 

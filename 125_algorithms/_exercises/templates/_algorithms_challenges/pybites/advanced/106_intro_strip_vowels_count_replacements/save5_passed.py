@@ -26,7 +26,7 @@ Namespaces are one honking great idea -- let's do more of those!
 vowels = 'aeiou'
 
 
-___ strip_vowels(text: s..) -> Tuple[s.., int]:
+___ strip_vowels(text: s..) __ Tuple[s.., i..]:
     """Replace all vowels in the input text string by a star
        character (*).
        Return a tuple of (replaced_text, number_of_vowels_found)

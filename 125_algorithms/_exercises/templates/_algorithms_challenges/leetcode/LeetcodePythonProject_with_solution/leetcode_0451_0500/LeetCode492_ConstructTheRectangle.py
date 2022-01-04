@@ -11,7 +11,7 @@ c_ Solution(object):
         :rtype: List[int]
         """
         _______ math
-        l = int(math.sqrt(area))
+        l = i..(math.sqrt(area))
         w.... l < area:
             __ area%l __ 0:
                 r.. [max(l, area/l), m..(l, area/l)]

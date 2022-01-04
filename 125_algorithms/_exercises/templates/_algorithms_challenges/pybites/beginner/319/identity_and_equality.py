@@ -53,7 +53,7 @@ ___ is_same_instance_of_car(car1, car2):
 #print(Car.age(335))
 
 c_ NewList(l..):
-    pass
+    p..
 
 list1 = [['gas', 'electro', 'hybrid'], '200 PS', 'radio']
 list2 = NewList(list1)

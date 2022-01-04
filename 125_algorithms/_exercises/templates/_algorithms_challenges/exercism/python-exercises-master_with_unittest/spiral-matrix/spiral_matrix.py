@@ -1,2 +1,2 @@
 ___ spiral(size):
-    pass
+    p..

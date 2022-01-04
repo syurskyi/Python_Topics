@@ -47,7 +47,7 @@ c_ Tournament:
 
     ___ results_table
         table = [table_header()]
-        ___ team __ sorted_teams():
+        ___ team __ sorted_teams
             table.a..(s..(team))
         r.. "\n".j..(table)
 

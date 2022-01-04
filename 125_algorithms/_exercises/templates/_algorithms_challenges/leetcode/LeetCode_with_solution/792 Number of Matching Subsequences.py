@@ -22,7 +22,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ numMatchingSubseq(self, S: s.., words: List[s..]) -> int:
+    ___ numMatchingSubseq(self, S: s.., words: List[s..]) __ i..:
         """
         Linear O(|S| + sum(|word|))
         no need to if-check
@@ -32,7 +32,7 @@ c_ Solution:
         itrs_m = defaultdict(l..)
         ___ w __ words:
             itrs_m[w[0]].a..(
-                iter(w[1:])
+                i..(w[1:])
             )
         ___ a __ S:
             itrs = itrs_m.pop(a, [])
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. l..(itrs_m[N..])
 
-    ___ numMatchingSubseq_TLE(self, S: s.., words: List[s..]) -> int:
+    ___ numMatchingSubseq_TLE(self, S: s.., words: List[s..]) __ i..:
         """
         Brute force O(|S| |Words| M)
 

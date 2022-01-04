@@ -1,6 +1,6 @@
 ____ collections _______ OrderedDict
 
-___ calc_median_from_dict(d: d..) -> float:
+___ calc_median_from_dict(d: d..) __ float:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
@@ -11,7 +11,7 @@ ___ calc_median_from_dict(d: d..) -> float:
     values_sorted = d..(OrderedDict(s..(d.i.., key=l.... t: t[0])))
 
     ___ value __ values_sorted.v..
-        __ t..(value) __ n.. int:
+        __ t..(value) __ n.. i..:
             raise TypeError
 
     __ l..(values_sorted) __ 1:

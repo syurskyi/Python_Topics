@@ -1,2 +1,2 @@
-___ rotate():
-    pass
+___ rotate
+    p..

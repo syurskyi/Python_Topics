@@ -19,7 +19,7 @@ c_ Solution(object):
         result = ''
         ___ i __ r..(l..(res)-1, -1, -1):
             result += s..(res[i])
-        result = int(result)
+        result = i..(result)
         r.. result __ result < 2**31-1 ____ 0
     
     ___ test

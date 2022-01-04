@@ -9,7 +9,7 @@ ___ check_sum(data):
     r..(result)
 
 ___ bubble_in_array(data):
-    numbers = [int(x) ___ x __ data[:-1]]
+    numbers = [i..(x) ___ x __ data[:-1]]
     swap_count = 0
 
     ___ x __ xrange(l..(numbers)-1):

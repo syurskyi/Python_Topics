@@ -14,19 +14,19 @@ bracket_2020 = [
 
 
 @pytest.fixture(scope="module")
-___ taxes_2019():
+___ taxes_2019
     income = 40_000
     r.. Taxes(income)
 
 
 @pytest.fixture(scope="module")
-___ taxes_2020_low():
+___ taxes_2020_low
     income = 8_000
     r.. Taxes(income, bracket_2020)
 
 
 @pytest.fixture(scope="module")
-___ taxes_2020_over():
+___ taxes_2020_over
     income = 1_000_000
     r.. Taxes(income, bracket_2020)
 

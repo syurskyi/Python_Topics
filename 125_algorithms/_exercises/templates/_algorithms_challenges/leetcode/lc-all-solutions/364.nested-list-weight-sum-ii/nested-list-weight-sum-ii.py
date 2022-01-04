@@ -51,14 +51,14 @@ c_ Solution(object):
     ___ getDepth(root):
       res = 0
       ___ nested __ root:
-        __ n.. nested.isInteger():
+        __ n.. nested.isInteger
           res = max(res, getDepth(nested.getList()))
       r.. res + 1
 
     ___ helper(root, depth, maxDepth):
       res = 0
       ___ nested __ root:
-        __ nested.isInteger():
+        __ nested.isInteger
           res += (maxDepth - depth) * nested.getInteger()
         ____:
           res += helper(nested.getList(), depth + 1, maxDepth)

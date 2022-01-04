@@ -1,8 +1,8 @@
 #accept the number of test cases
-d = int(input())
+d = i..(input())
 
 #accept the decimal numbers to be converted to binary
-binary  = l..(map(int,input().s..()))
+binary  = l..(map(i..,input().s..()))
 
 #loop through all the elements
 ___ j __ binary:
@@ -14,7 +14,7 @@ ___ j __ binary:
         #append in the list
         bin_list.a..(j)
         w.... j != 1:
-            j =int(j / 2)
+            j =i..(j / 2)
             bin_list.a..(j)
             
         #store the binary format according to the result
@@ -30,7 +30,7 @@ ___ j __ binary:
         j = abs(j)
         bin_list.a..(j)
         w.... j != 1:
-            j =int(j / 2)
+            j =i..(j / 2)
             bin_list.a..(j)
         count = 0
         #we are doing 1's compliement 
@@ -46,7 +46,7 @@ ___ j __ binary:
         result = ''
         #here we are doing 2's compliement
         ___ i __ r..(l..(res_str)-1,-1,-1):
-            res = int(res_str[i]) + res + carry
+            res = i..(res_str[i]) + res + carry
             __ res __ 3:
                 carry = 1
                 res = 1
@@ -64,7 +64,7 @@ ___ j __ binary:
                 res = 0
                 result = '0' + result
             ____:
-                pass
+                p..
         #if at the end carry has 1 then append 1
         __ carry __ 1:
             result = '1' + result

@@ -73,7 +73,7 @@ c_ Solution:
             try:
                 lst.a..(lst1[i])
             except IndexError:
-                pass
+                p..
             lst.a..(lst2[i])
 
         ___ i __ r..(l..(lst)):

@@ -40,7 +40,7 @@ c_ Solution(object):
             print('result: %s' % result)
             print('-='*20+'-')
 
-___ main():
+___ main
     Solution().test()
 
 __ __name__ __ '__main__':

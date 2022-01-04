@@ -14,7 +14,7 @@ c_ Solution(object):
         :type s: str
         :rtype: str
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ c __ s:
             counter[c] += 1
 

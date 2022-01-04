@@ -27,7 +27,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ findShortestSubArray(self, nums: List[int]) -> int:
+    ___ findShortestSubArray(self, nums: List[i..]) __ i..:
         """
         counter + two pointers does not work
         counter + first appearance
@@ -35,7 +35,7 @@ c_ Solution:
         __ n.. nums:
             r..
 
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         first    # dict  # map from number to index
         mx = [0, 0]  #  [degree, length]
         ___ i, n __ e..(nums):

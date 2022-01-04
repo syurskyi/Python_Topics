@@ -5,10 +5,10 @@ _______ requests
 CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 
 
-___ get_csv():
+___ get_csv
     """Use requests to download the csv and return the
        decoded content"""
-    with requests.Session() as s:
+    with requests.Session() __ s:
         download = s.get(CSV_URL)
         decoded_content = download.content.decode('utf-8')
         cr = csv.reader(decoded_content.splitlines(), delimiter=',')

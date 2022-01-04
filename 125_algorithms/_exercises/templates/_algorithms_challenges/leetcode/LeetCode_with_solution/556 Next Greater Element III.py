@@ -18,7 +18,7 @@ Output: -1
 
 
 c_ Solution:
-    ___ nextGreaterElement(self, n: int) -> int:
+    ___ nextGreaterElement(self, n: i..) __ i..:
         """
         next permutation
 
@@ -45,13 +45,13 @@ c_ Solution:
 
         seq[i], seq[j] = seq[j], seq[i]
         seq[i+1:] = r..(seq[i+1:])
-        ret = int("".j..(seq))
+        ret = i..("".j..(seq))
         __ ret <= 1 << 31 - 1:
             r.. ret
         ____:
             r.. -1
 
-    ___ nextGreaterElement_sort(self, n: int) -> int:
+    ___ nextGreaterElement_sort(self, n: i..) __ i..:
         """
         Looking at the decimal digits rather than binary digits
 
@@ -64,7 +64,7 @@ c_ Solution:
         from right to left
         find the first digit that has min larger, then sort the rest
         """
-        seq = [int(e) ___ e __ s..(n)]
+        seq = [i..(e) ___ e __ s..(n)]
         stk    # list  # record index
         ___ i __ r..(l..(seq) - 1, -1 , -1):
             e = seq[i]
@@ -75,7 +75,7 @@ c_ Solution:
             __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]
                 seq[i+1:] = s..(seq[i+1:])  # reversed also good
-                ret = int("".j..(map(s.., seq)))
+                ret = i..("".j..(map(s.., seq)))
                 __ ret <= 1 << 31 - 1:
                     r.. ret
                 ____:

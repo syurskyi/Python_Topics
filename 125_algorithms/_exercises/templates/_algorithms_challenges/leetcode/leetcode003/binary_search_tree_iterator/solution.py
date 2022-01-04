@@ -19,7 +19,7 @@ c_ BSTIterator(object):
 
     # @return an integer, the next smallest number
     ___ next
-        __ hasNext():
+        __ hasNext
             _cur += 1
             r.. _arr[_cur]
 

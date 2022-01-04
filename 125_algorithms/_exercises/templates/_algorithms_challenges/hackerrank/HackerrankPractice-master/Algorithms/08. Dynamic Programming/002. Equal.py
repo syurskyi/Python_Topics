@@ -16,7 +16,7 @@ ___ solution(arr):
     r.. m..(results)
 
 
-___ t __ r..(int(input())):
+___ t __ r..(i..(input())):
     input()
-    items = l..(map(int, input().s..()))
+    items = l..(map(i.., input().s..()))
     print(solution(items))

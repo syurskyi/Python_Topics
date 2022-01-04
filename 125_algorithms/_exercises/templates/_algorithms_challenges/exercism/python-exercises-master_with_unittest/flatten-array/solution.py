@@ -1,6 +1,6 @@
 ___ is_iterable(thing):
     try:
-        iter(thing)
+        i..(thing)
     except TypeError:
         r.. F..
     ____:

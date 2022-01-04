@@ -1,5 +1,5 @@
 #Ask for how number to be entered
-data = int(input())
+data = i..(input())
 result = 0
 arr    # list
 
@@ -12,7 +12,7 @@ w.... l..(arr) < data:
     ___ x __ r..(l..(arr)):
         
         #print('current array is :', currarr)
-        result =  (result + int(arr[x])) * 113
+        result =  (result + i..(arr[x])) * 113
         #print('result of calculation of ',arr[x],' is : ',result)
         __ result > 10000007:
             #print('result is greater than 10000007 for ',arr[x],' thus iam performing mod')

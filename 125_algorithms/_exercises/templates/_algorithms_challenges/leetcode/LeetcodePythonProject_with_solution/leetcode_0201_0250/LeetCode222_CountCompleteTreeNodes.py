@@ -22,7 +22,7 @@ c_ Solution(object):
         leftHeight = getLeftHeight(root)
         rightHeight = getRightHeight(root)
         __ leftHeight __ rightHeight:
-            r.. int(math.pow(2, leftHeight)) - 1
+            r.. i..(math.pow(2, leftHeight)) - 1
         ____:
             r.. countNodes(root.left) + countNodes(root.right) + 1
     

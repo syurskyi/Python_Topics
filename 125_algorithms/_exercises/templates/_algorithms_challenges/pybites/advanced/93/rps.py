@@ -8,7 +8,7 @@ win = '{} beats {}, you win!'
 tie = 'tie!'
 
 
-___ _get_computer_move():
+___ _get_computer_move
     """Randomly select a move"""
 
     choices = ['scissors','paper','rock']
@@ -43,7 +43,7 @@ ___ _get_winner(computer_choice, player_choice):
 
 
 
-___ game():
+___ game
     """Game loop, receive player's choice via the generator's
        send method and get a random move from computer (_get_computer_move).
        Raise a StopIteration exception if user value received = 'q'.

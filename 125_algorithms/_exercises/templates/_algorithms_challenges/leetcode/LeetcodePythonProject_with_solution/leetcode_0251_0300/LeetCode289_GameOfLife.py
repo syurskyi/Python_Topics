@@ -3,7 +3,7 @@ Created on Mar 7, 2017
 
 @author: MT
 '''
-c_ Solution():
+c_ Solution
     ___ gameOfLife(self, board):
         """
         :type board: List[List[int]]

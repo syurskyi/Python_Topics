@@ -29,7 +29,7 @@ The n will be in the range [1, 1000].
 
 
 c_ Solution:
-    ___ minSteps(self, n: int) -> int:
+    ___ minSteps(self, n: i..) __ i..:
         """
         Prime numger
         To get 12
@@ -47,7 +47,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ minSteps_dp(self, n: int) -> int:
+    ___ minSteps_dp(self, n: i..) __ i..:
         """
         Let F[i][j] be the minimum number to reach i A's with j copies
         F[i][k] = min

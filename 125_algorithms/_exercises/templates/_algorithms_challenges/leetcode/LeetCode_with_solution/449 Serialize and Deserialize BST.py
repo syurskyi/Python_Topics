@@ -62,7 +62,7 @@ c_ Codec:
         __ n.. data:
             r..
             
-        lst = l..(map(int, data.s..(DELIMITER)))
+        lst = l..(map(i.., data.s..(DELIMITER)))
         root = TreeNode(lst[0])
         ___ insert(root, val):
             # need to keep the parent

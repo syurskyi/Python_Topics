@@ -4,7 +4,7 @@ ____ d__ _______ d__
 _______ __
 
 
-___ rename_keys(data: Dict[Any, Any]) -> Dict[Any, Any]:
+___ rename_keys(data: Dict[Any, Any]) __ Dict[Any, Any]:
 
 
     new_dict    # dict

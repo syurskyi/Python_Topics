@@ -21,7 +21,7 @@ c_ Solution:
             m = m - float(m*m-x)/(2*m)
             __ abs(m-m_before)<1e-7: break
 
-        r.. int(m)
+        r.. i..(m)
 
 __ __name____"__main__":
     print Solution().sqrt(2)

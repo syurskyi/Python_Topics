@@ -2,7 +2,7 @@ ____ dataclasses _______ dataclass
 ____ functools _______ total_ordering
 ____ typing _______ List
 
-bites: List[int] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
+bites: List[i..] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
 names: List[s..] = [
     "snow",
     "natalia",
@@ -30,7 +30,7 @@ c_ Ninja:
     print out in the following format: [469] bob
     """
     name: s..
-    bites: int
+    bites: i..
 
     ___ __lt__(self, other):
         r.. bites < other.bites
@@ -68,16 +68,16 @@ c_ Rankings:
     ___ dump
         r.. ninja_list.pop(0)
 
-    ___ highest(self, count: int = 1):
+    ___ highest(self, count: i.. = 1):
         result = ninja_list[-count:]
         result.reverse()
         r.. result
 
-    ___ lowest(self, count: int = 1):
+    ___ lowest(self, count: i.. = 1):
         result = ninja_list[:count]
         r.. result
 
-    ___ pair_up(self, count: int = 3):
+    ___ pair_up(self, count: i.. = 3):
         highest = highest(count)
         lowest = lowest(count)
         r.. l..(z..(highest, lowest))

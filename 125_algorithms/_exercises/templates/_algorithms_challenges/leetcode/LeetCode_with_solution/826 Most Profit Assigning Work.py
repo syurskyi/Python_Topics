@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxProfitAssignment(self, difficulty: List[int], profit: List[int], worker: List[int]) -> int:
+    ___ maxProfitAssignment(self, difficulty: List[i..], profit: List[i..], worker: List[i..]) __ i..:
         """
         Greedy? Sort by profit
         """

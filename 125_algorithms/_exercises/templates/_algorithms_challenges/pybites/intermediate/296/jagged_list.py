@@ -4,7 +4,7 @@ ___ find_max_list(lol):
     len_lol = [l..(i) ___ i __ lol]
     r.. max(len_lol) __ len_lol ____ 0
 
-___ jagged_list(lst_of_lst: List[List[int]], fillvalue: int = 0) -> List[List[int]]:
+___ jagged_list(lst_of_lst: List[List[i..]], fillvalue: i.. = 0) __ List[List[i..]]:
     #print(len(lst_of_lst))
     new_lol    # list
     max_len = find_max_list(lst_of_lst)

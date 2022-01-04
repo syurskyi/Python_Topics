@@ -1,6 +1,6 @@
 ___ divide_numbers(*, numerator, demoninator ):
     try:
-        r.. int(numerator)/int(demoninator)
+        r.. i..(numerator)/i..(demoninator)
     except ZeroDivisionError:
         r.. 0
 

@@ -1,9 +1,9 @@
 ____ typing _______ List
 _______ i..
-_______ pandas as pd
+_______ pandas __ pd
 
 
-___ minimum_number(d..: List[int]) -> int:
+___ minimum_number(d..: List[i..]) __ i..:
     try:
         d.. = pd.Series(d..).drop_duplicates().tolist()
         l..    # list

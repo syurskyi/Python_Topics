@@ -5,7 +5,7 @@ ____ hundred_days _______ get_hundred_weekdays, TODAY
 OTHER_START_DATE = TODAY + t..(days=55)
 
 
-___ test_get_hundred_weekdays_default_start_date():
+___ test_get_hundred_weekdays_default_start_date
     days = get_hundred_weekdays(start_date=TODAY)
     ... l..(days) __ 100
     # check start and end dates
@@ -18,7 +18,7 @@ ___ test_get_hundred_weekdays_default_start_date():
     ... days[fri_index + 1] __ date(2019, 1, 21)
 
 
-___ test_get_hundred_weekdays_different_start_date():
+___ test_get_hundred_weekdays_different_start_date
     days = get_hundred_weekdays(start_date=OTHER_START_DATE)
     ... l..(days) __ 100
     # check start and end dates

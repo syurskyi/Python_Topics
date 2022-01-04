@@ -17,7 +17,7 @@ ____ bisect _______ bisect_right
 
 
 c_ Solution:
-    ___ singleNonDuplicate(self, nums: List[int]) -> int:
+    ___ singleNonDuplicate(self, nums: List[i..]) __ i..:
         """
         sorted array
 
@@ -42,7 +42,7 @@ c_ Solution:
         r.. nums[lo]
 
 
-    ___ singleNonDuplicate_error(self, nums: List[int]) -> int:
+    ___ singleNonDuplicate_error(self, nums: List[i..]) __ i..:
         """
         sorted array
 
@@ -63,7 +63,7 @@ c_ Solution:
         r.. nums[hi - 1]
 
 
-    ___ singleNonDuplicate_xor(self, nums: List[int]) -> int:
+    ___ singleNonDuplicate_xor(self, nums: List[i..]) __ i..:
         """
         XOR O(n)
         """

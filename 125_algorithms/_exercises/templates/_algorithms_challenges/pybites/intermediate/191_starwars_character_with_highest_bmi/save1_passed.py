@@ -36,7 +36,7 @@ ___ person_max_bmi(data=data):
         i += 1
 
     ___ x, y __ BMI_info:
-        BMI_final.a..(float(y) / (int(x) / 100) ** 2)
+        BMI_final.a..(float(y) / (i..(x) / 100) ** 2)
 
     highest_BMI_position = BMI_final.index(max(BMI_final))
     highest_BMI_name = data[highest_BMI_position].s...s..(',')[0]

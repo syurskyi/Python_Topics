@@ -17,7 +17,7 @@ ___ within_schedule(utc, *timezones):
       new_tz = pytz.timezone(time_z)
          
       utc_localized = new_tz.localize(utc)
-      utc_localized_offset = int(utc_localized.utcoffset().total_seconds()/60/60)
+      utc_localized_offset = i..(utc_localized.utcoffset().total_seconds()/60/60)
       time_difference = utc.hour + utc_localized_offset
       
       __ time_difference n.. __ MEETING_HOURS:

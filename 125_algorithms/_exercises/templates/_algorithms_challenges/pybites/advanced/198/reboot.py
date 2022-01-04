@@ -1,4 +1,4 @@
-_______ d__ as td
+_______ d__ __ td
 ____ dateutil.parser _______ parse
 MAC1 = """
 reboot    ~                         Wed Apr 10 22:39

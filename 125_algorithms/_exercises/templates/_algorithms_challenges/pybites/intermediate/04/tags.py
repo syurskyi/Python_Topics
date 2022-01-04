@@ -1,8 +1,8 @@
 _______ os
-_______ pprint as pp
+_______ pprint __ pp
 ____ collections _______ Counter
 _______ urllib.request
-_______ ___.e__.E__ as ET
+_______ ___.e__.E__ __ ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
     tempfile
 )
 
-with open(tempfile) as f:
+with open(tempfile) __ f:
     content = f.read().l..
 
 ___ get_pybites_top_tags(n=10):
@@ -22,10 +22,10 @@ ___ get_pybites_top_tags(n=10):
 
     counter = Counter()
 
-    root = ET.fromstring(content)
+    root = ET.f..(content)
     
-    ___ item __ root[0].findall("item"):
-        ___ category __ item.findall('category'):
+    ___ item __ root[0].f..("item"):
+        ___ category __ item.f..('category'):
             counter[category.text.l..] += 1
 
 

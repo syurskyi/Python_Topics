@@ -39,7 +39,7 @@ ___ convert_to_csv(json_file):
     field_names = l..(creatures[0].keys())
 
     
-    with open(csv_file,'w') as csv_file:
+    with open(csv_file,'w') __ csv_file:
         writer = csv.DictWriter(csv_file,fieldnames=fieldnames)
         writer.writeheader()
 

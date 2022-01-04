@@ -52,7 +52,7 @@ bills[i] will be either 5, 10, or 20.
 
 
 c_ Solution:
-    ___ lemonadeChange(self, bills: List[int]) -> bool:
+    ___ lemonadeChange(self, bills: List[i..]) __ bool:
         """
         count
         """

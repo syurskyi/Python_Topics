@@ -717,7 +717,7 @@ ___ load_pycon_data(pycon_videos=pycon_videos):
 
 ___ get_most_popular_talks_by_views(videos):
     """Return the pycon video list sorted by viewCount"""
-    r.. s..(videos, key=l.... x: int(x.metrics['viewCount']), r.._T..
+    r.. s..(videos, key=l.... x: i..(x.metrics['viewCount']), r.._T..
 
 
 ___ get_most_popular_talks_by_like_ratio(videos):
@@ -727,10 +727,10 @@ ___ get_most_popular_talks_by_like_ratio(videos):
        Return the filtered list"""
     video_list    # list
     ___ video __ videos:
-        __ int(video.metrics['likeCount'])- int(video.metrics['dislikeCount']) > 0:
+        __ i..(video.metrics['likeCount'])- i..(video.metrics['dislikeCount']) > 0:
             video_list.a..(video)
     output = s..(video_list,
-                  key=l.... x: int(x.metrics['viewCount']) / (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount'])),
+                  key=l.... x: i..(x.metrics['viewCount']) / (i..(x.metrics['likeCount']) - i..(x.metrics['dislikeCount'])),
                   r.._F..[:7]
     r.. output
 
@@ -755,8 +755,8 @@ ___ parse_isoduration(s):
     seconds, s = get_isosplit(s, 'S')
 
     # Convert all to seconds
-    dt = d__.t..(days=int(days), hours=int(hours), minutes=int(minutes), seconds=int(seconds))
-    r.. int(dt.total_seconds())
+    dt = d__.t..(days=i..(days), hours=i..(hours), minutes=i..(minutes), seconds=i..(seconds))
+    r.. i..(dt.total_seconds())
 
 
 ___ get_talks_gt_one_hour(videos):

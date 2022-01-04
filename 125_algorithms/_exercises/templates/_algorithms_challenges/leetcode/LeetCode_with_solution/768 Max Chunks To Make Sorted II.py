@@ -36,7 +36,7 @@ ____ collections _______ defaultdict, deque
 
 
 c_ Solution:
-    ___ maxChunksToSorted(self, arr: List[int]) -> int:
+    ___ maxChunksToSorted(self, arr: List[i..]) __ i..:
         """
         not necessarily distinct
         sort and assign index

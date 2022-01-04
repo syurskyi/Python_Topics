@@ -4,7 +4,7 @@ ___ programmers(one, two, three):
     r.. a_list[-1] - a_list[0]
 
 
-___ test_programmers():
+___ test_programmers
     print("test has started")
     __ programmers(5, 10, 3) != 7:
         print("error1")

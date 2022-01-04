@@ -35,7 +35,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ findMaximizedCapital(self, k: int, W: int, Profits: List[int], Capital: List[int]) -> int:
+    ___ findMaximizedCapital(self, k: i.., W: i.., Profits: List[i..], Capital: List[i..]) __ i..:
         """
         Greedy + dual PQ
         Greedy: need max profit meeting the current capital requirement
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. capital
 
-    ___ findMaximizedCapital_TLE(self, k: int, W: int, Profits: List[int], Capital: List[int]) -> int:
+    ___ findMaximizedCapital_TLE(self, k: i.., W: i.., Profits: List[i..], Capital: List[i..]) __ i..:
         """
         Knapsack problem
 

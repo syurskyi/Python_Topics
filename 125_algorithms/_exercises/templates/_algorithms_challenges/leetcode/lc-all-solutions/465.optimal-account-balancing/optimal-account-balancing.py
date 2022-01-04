@@ -1,6 +1,6 @@
 c_ Solution(object):
   ___ minTransfers(self, transactions):
-    balances = collections.defaultdict(int)
+    balances = collections.defaultdict(i..)
     people = set()
     ___ giver, receiver, amount __ transactions:
       balances[giver] -= amount

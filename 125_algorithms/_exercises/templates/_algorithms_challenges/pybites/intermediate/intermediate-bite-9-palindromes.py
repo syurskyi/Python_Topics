@@ -23,9 +23,9 @@ urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 # It's a generator expression
 # What is the memory requirement for this code?
 #
-___ load_dictionary():
+___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
-    with open(DICTIONARY) as f:
+    with open(DICTIONARY) __ f:
         r.. (word.l...s.. ___ word __ f.readlines())
 
 
@@ -60,7 +60,7 @@ ___ get_longest_palindrome(words_ N..
                     max_pal = l..(word)
                     pal = word
     ____:
-        ___ word __ load_dictionary():
+        ___ word __ load_dictionary
             __ is_palindrome(word):
                 __ l..(word) > max_pal:
                     max_pal = l..(word)

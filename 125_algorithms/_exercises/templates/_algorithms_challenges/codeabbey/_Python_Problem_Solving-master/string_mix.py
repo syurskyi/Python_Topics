@@ -103,7 +103,7 @@ ___ mix(s1,s2):
                     check_int1 = float(res_string[j][0])
                     check_int2 = float(res_string[j+1][0])
                     #if the variable is in integer form then proceed
-                    __ check_int1.is_integer() a.. check_int2.is_integer():
+                    __ check_int1.is_integer() a.. check_int2.is_integer
                         
                         #Here we check if the integer is greater or no if yes then swap
                         __ check_int1 > check_int2:
@@ -128,9 +128,9 @@ ___ mix(s1,s2):
                         res_string[j],res_string[j+1] = res_string[j+1],res_string[j]
                     
                     ____:
-                        pass
+                        p..
             ____:
-                pass
+                p..
     
     
     main_string = '/'.j..(s..(e) ___ e __ res_string)

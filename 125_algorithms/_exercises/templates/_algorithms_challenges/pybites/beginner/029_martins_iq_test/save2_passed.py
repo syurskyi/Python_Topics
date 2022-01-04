@@ -5,6 +5,6 @@ ___ get_index_different_char(chars):
             alphanumeric.add(i)
         ____:
             non_alphanumeric.add(i)
-    r.. next(iter(alphanumeric)) \
+    r.. next(i..(alphanumeric)) \
         __ l..(alphanumeric) __ 1 \
-        ____ next(iter(non_alphanumeric))
+        ____ next(i..(non_alphanumeric))

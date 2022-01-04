@@ -3,7 +3,7 @@
 ___ find_nth(entries):
     answer    # list
     ___ x __ r..(entries):
-        A, C, M, X0, N = [int(x) ___ x __ raw_input().s.. ]
+        A, C, M, X0, N = [i..(x) ___ x __ raw_input().s.. ]
         x_cur = X0
         ___ x __ r..(N):
             x_next = (A * x_cur + C) % M

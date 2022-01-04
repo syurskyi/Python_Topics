@@ -28,9 +28,9 @@ c_ Solution(object):
         hi = [sys.float_info.max]
         find(root, target, hi, F..)
         __ hi[0] - target < target - lo[0]:
-            r.. int(hi[0])
+            r.. i..(hi[0])
         ____:
-            r.. int(lo[0])
+            r.. i..(lo[0])
 
     ___ find(self, root, target, ret, lower=T..):
         __ n.. root:

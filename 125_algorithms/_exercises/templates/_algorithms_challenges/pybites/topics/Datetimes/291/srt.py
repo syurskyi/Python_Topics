@@ -15,7 +15,7 @@ he is talking slooooow
 she is talking super fast here!
 """
 
-___ get_srt_section_ids(text: s..) -> List[int]:
+___ get_srt_section_ids(text: s..) __ List[i..]:
     """Parse a caption (srt) text passed in and return a
        list of section numbers ordered descending by
        highest speech speed
@@ -46,7 +46,7 @@ ___ get_srt_section_ids(text: s..) -> List[int]:
        index, timestamp, line = dialog.s...splitlines()
        begintime, endtime = timestamp.s..(' --> ')
        duration = d__.fromisoformat(f'{epoch} {endtime[:8]}') - d__.fromisoformat(f'{epoch} {begintime[:8]}')
-       line_dict[int(index)] = l..(line)/duration.total_seconds()
+       line_dict[i..(index)] = l..(line)/duration.total_seconds()
     r.. s..(line_dict, key=line_dict.get, reverse=T.. )
 
 

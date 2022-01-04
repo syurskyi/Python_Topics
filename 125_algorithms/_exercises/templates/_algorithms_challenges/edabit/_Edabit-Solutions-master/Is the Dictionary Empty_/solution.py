@@ -5,7 +5,7 @@ ___ is_empty(dictionary):
         r.. F..
 
 
-___ test():
+___ test
     print("Test has started")
     d.. = {"Name": "Eleven"}
     __ is_empty(d..) != F..:

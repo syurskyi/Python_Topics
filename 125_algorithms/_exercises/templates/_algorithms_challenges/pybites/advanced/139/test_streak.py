@@ -3,7 +3,7 @@ _______ d__
 ____ streak _______ extract_dates, calculate_streak
 
 
-___ test_extract_dates():
+___ test_extract_dates
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -26,7 +26,7 @@ ___ test_extract_dates():
     ... d__.date(2018, 11, 9) __ dates
 
 
-___ test_streak_of_0_days():
+___ test_streak_of_0_days
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -47,7 +47,7 @@ ___ test_streak_of_0_days():
     ... streak __ 0
 
 
-___ test_streak_of_1_day_can_still_make_today():
+___ test_streak_of_1_day_can_still_make_today
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -68,7 +68,7 @@ ___ test_streak_of_1_day_can_still_make_today():
     ... streak __ 1
 
 
-___ test_streak_of_1_day_thanks_to_todays_progress():
+___ test_streak_of_1_day_thanks_to_todays_progress
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -89,7 +89,7 @@ ___ test_streak_of_1_day_thanks_to_todays_progress():
     ... streak __ 1
 
 
-___ test_streak_of_3_days():
+___ test_streak_of_3_days
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -110,7 +110,7 @@ ___ test_streak_of_3_days():
     ... streak __ 3
 
 
-___ test_streak_of_10_days():
+___ test_streak_of_10_days
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -132,7 +132,7 @@ ___ test_streak_of_10_days():
     ... streak __ 10
 
 
-___ test_streak_of_almost_10_days_but_gap_so_only_5_days():
+___ test_streak_of_almost_10_days_but_gap_so_only_5_days
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |
@@ -153,7 +153,7 @@ ___ test_streak_of_almost_10_days_but_gap_so_only_5_days():
     ... streak __ 5
 
 
-___ test_streak_of_5_days_dates_out_of_order():
+___ test_streak_of_5_days_dates_out_of_order
     data = """
     +------------+------------+---------+
     | date       | activity   | count   |

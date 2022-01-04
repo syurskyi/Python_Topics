@@ -4,7 +4,7 @@ ____ typing _______ Type
 ___ get_profile(name, age, *args, **kwargs):
 
     # Validations
-    __ n.. isi..(age, int):
+    __ n.. isi..(age, i..):
         raise ValueError
 
     __ l..(args) > 5:

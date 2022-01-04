@@ -22,7 +22,7 @@ c_ Game:
         filename  "data\\WordsStockRus.txt"
 
         words  []
-        with open(filename, encoding'UTF8') as file:
+        with open(filename, encoding'UTF8') __ file:
             ___ line __ file:
                 words.a..(line.rstrip('\n'))
 
@@ -64,7 +64,7 @@ c_ Game:
 
         __tried_letters.a..(letter)
 
-        __ __is_winning():
+        __ __is_winning
             __game_status  GameStatus.WON
         ____ tries_counter __ allowed_misses:
             __game_status  GameStatus.LOST

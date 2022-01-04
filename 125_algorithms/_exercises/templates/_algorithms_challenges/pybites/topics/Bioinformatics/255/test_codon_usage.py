@@ -98,7 +98,7 @@ ___ get_table_bars(table):
     Receives a results table
     Returns a list of bars/pipes (|) per line
     """
-    r.. [l..(__.findall(r"\|", line)) ___ line __ table.s..("\n")]
+    r.. [l..(__.f..(r"\|", line)) ___ line __ table.s..("\n")]
 
 
 ___ get_table_dividers(table):
@@ -106,7 +106,7 @@ ___ get_table_dividers(table):
     Receives a results table
     Returns a list of divider rows (------)
     """
-    r.. [l..(__.findall(r"^-{3,}$", line)) ___ line __ table.s..("\n")]
+    r.. [l..(__.f..(r"^-{3,}$", line)) ___ line __ table.s..("\n")]
 
 
 # ############################################################################
@@ -115,7 +115,7 @@ ___ get_table_dividers(table):
 
 
 @pytest.fixture(scope="module")
-___ result():
+___ result
     """
     Provide codon usage table for tests
     """

@@ -38,12 +38,12 @@ earnings_mln = [
 
 
 ___ get_largest_number(numbers, n=3):
-    pass
+    p..
 
 
 ___ get_latest_dates(dates, n=3):
-    pass
+    p..
 
 
 ___ get_highest_earnings(earnings_mln, n=3):
-    pass
+    p..

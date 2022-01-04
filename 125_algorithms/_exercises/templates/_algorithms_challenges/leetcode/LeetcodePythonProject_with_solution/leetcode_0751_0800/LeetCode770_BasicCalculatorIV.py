@@ -11,7 +11,7 @@ c_ Solution(object):
         :type evalints: List[int]
         :rtype: List[str]
         """
-        pass
+        p..
     
     ___ test
         testCases = [

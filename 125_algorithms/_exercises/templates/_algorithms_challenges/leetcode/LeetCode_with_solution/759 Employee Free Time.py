@@ -44,7 +44,7 @@ E = 1
 
 
 c_ Solution:
-    ___ employeeFreeTime(self, schedule: List[List[List[int]]]) -> List[List[int]]:
+    ___ employeeFreeTime(self, schedule: List[List[List[i..]]]) __ List[List[i..]]:
         """
         Method 1
         Looking at the head of each list through iterator
@@ -89,7 +89,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ employeeFreeTime(self, schedule: List[List[List[int]]]) -> List[List[int]]:
+    ___ employeeFreeTime(self, schedule: List[List[List[i..]]]) __ List[List[i..]]:
         """
         Method 2
         """
@@ -116,12 +116,12 @@ c_ Solution:
 
         r.. ret
 
-    ___ employeeFreeTime_error(self, schedule: List[List[List[int]]]) -> List[List[int]]:
+    ___ employeeFreeTime_error(self, schedule: List[List[List[i..]]]) __ List[List[i..]]:
         """
         Cannot store iterator in the heap to compare
         use index instead
         """
-        schedules = l..(map(iter, schedule))
+        schedules = l..(map(i.., schedule))
         cur_max_end = m..(
             itv[E]
             ___ emp __ schedule

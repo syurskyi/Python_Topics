@@ -9,7 +9,7 @@ ___ largest_product(d.., size):
 ___ slices(d.., size):
     __ l..(d..) < size:
         raise ValueError
-    r.. each_cons(l..(map(int, l..(d..))), size)
+    r.. each_cons(l..(map(i.., l..(d..))), size)
 
 
 ___ each_cons(x, size):

@@ -12,4 +12,4 @@ ___ bubbleSort(amount, numbers):
         passCount += 1
     print('%s %s') % (passCount, swapCount)
 
-bubbleSort(input(),[int(x) ___ x __ raw_input().s.. ])
+bubbleSort(input(),[i..(x) ___ x __ raw_input().s.. ])

@@ -6,7 +6,7 @@ file_list  glob.iglob("letters/*.txt")
 check  "python"
 
 ___ filename __ file_list:
-    with open(filename,"r") as file:
+    with open(filename,"r") __ file:
         letter  file.read().strip("\n")
         __ letter __ check:
             letters.a..(letter)

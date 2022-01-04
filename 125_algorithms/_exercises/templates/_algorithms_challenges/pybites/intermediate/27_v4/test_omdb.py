@@ -13,17 +13,17 @@ S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'omdb_data'
 
 DATA_LOCAL = TMP / DATA
-__ n.. Path(DATA_LOCAL).exists():
+__ n.. Path(DATA_LOCAL).exists
     urlretrieve(S3 + DATA, DATA_LOCAL)
 
 
 @pytest.fixture(scope="module")
-___ movies():
+___ movies
     files    # list
-    with open(DATA_LOCAL) as f:
+    with open(DATA_LOCAL) __ f:
         ___ i, line __ e..(f.readlines(), 1):
             movie_json = TMP / f'{i}.json'
-            with open(movie_json, 'w') as f:
+            with open(movie_json, 'w') __ f:
                 f.write(f'{line}\n')
             files.a..(movie_json)
 

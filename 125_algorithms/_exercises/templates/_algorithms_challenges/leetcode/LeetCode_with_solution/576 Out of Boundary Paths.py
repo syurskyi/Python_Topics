@@ -30,7 +30,7 @@ dirs = ((0, 1), (0, -1), (1, 0), (-1, 0))
 
 
 c_ Solution:
-    ___ findPaths(self, m: int, n: int, N: int, r: int, c: int) -> int:
+    ___ findPaths(self, m: i.., n: i.., N: i.., r: i.., c: i..) __ i..:
         """
         iterate N epoch
         let F[i][j] be the number of paths to reach i, j

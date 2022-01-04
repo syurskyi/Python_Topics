@@ -32,7 +32,7 @@ CAR_DATA = 'https://bit.ly/2Ov65SJ'
 
 # pre-work: load JSON data into program
 
-with requests.Session() as s:
+with requests.Session() __ s:
     data = s.get(CAR_DATA).json()
 
 

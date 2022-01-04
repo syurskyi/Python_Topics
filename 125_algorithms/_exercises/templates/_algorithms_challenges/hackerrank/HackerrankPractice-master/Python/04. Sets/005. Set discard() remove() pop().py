@@ -2,14 +2,14 @@
 # Score: 10
 
 
-n = int(input())
-s = set(map(int, input().s..()))
-___ i __ r..(int(input())):
+n = i..(input())
+s = set(map(i.., input().s..()))
+___ i __ r..(i..(input())):
     string = input().s.. 
     __ string[0] __ 'pop':
         s.pop()
     ____ string[0] __ 'remove':
-        s.remove(int(string[1]))
+        s.remove(i..(string[1]))
     ____ string[0] __ 'discard':
-        s.discard(int(string[1]))
+        s.discard(i..(string[1]))
 print(s..(s))

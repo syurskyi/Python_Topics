@@ -40,7 +40,7 @@ c_ Solution(object):
         result = inorderTraversal(root)
         print(result)
 
-___ main():
+___ main
     Solution().test()
 
 __ __name__ __ '__main__':

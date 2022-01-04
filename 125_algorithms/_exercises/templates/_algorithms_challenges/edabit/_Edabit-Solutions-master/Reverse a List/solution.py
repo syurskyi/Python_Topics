@@ -2,7 +2,7 @@ ___ reverse(lst):
     r.. lst[::-1]
 
 
-___ test():
+___ test
     print("test has started")
     __ reverse([1, 2, 3, 4]) != [4, 3, 2, 1]:
         print("error1")

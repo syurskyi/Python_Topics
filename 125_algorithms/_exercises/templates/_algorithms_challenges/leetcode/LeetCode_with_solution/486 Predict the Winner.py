@@ -52,7 +52,7 @@ c_ Solution:
         ___ e __ nums:
             gross.a..(gross[-1] + e)
 
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         ___ i __ r..(l-1, -1, -1):
             ___ j __ r..(i+1, l+1):
                 F[i][j] = max(

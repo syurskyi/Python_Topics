@@ -15,7 +15,7 @@ ___ counting_valleys(n, s):
     r.. count
 
 
-n = int(input().strip())
+n = i..(input().strip())
 s = input().s..
 result = counting_valleys(n, s)
 print(result)

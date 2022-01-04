@@ -1,4 +1,4 @@
-___ get_username():
+___ get_username
     # Ask the user to enter their username in this function
     # and return the username
     username = input("What is your username?")

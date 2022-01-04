@@ -14,7 +14,7 @@ ___ next_to(x, y):
     r.. abs(x - y) __ 1
 
 
-___ solution():
+___ solution
     houses = first, _, middle, _, _ = r..(5)
     orderings = l..(permutations(houses))
     result = next(

@@ -29,7 +29,7 @@ c_ Solution(object):
         :type s: str
         :rtype: int
         """
-        c = defaultdict(int)
+        c = defaultdict(i..)
         ___ elt __ s:
             c[elt] += 1
 

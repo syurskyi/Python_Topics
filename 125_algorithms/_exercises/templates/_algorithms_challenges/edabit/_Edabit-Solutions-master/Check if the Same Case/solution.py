@@ -6,7 +6,7 @@ ___ same_case(txt):
 
 
 
-___ test():
+___ test
     print("Test has started")
     __ same_case("mArmALadE") != F..:
         print("error1")

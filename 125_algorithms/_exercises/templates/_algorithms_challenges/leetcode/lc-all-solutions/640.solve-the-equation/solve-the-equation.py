@@ -16,11 +16,11 @@ c_ Solution(object):
       __ param[-1] __ "x":
         k = 1
         __ l..(param) > 2:
-          k = int(param[1:-1])
+          k = i..(param[1:-1])
         __ param[0] __ "-":
           a -= k
         ____:
           a += k
       ____:
-        b -= int(param)
+        b -= i..(param)
     r.. "x={0}".f..(s..(b / a)) __ a ____ "No solution" __ b ____ "Infinite solutions"

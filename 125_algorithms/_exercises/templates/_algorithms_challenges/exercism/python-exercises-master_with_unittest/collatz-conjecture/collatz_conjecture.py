@@ -1,2 +1,2 @@
-___ collatz_steps():
-    pass
+___ collatz_steps
+    p..

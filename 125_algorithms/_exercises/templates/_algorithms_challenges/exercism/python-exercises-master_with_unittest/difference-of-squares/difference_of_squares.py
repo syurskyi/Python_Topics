@@ -1,10 +1,10 @@
-___ square_of_sum():
-    pass
+___ square_of_sum
+    p..
 
 
-___ sum_of_squares():
-    pass
+___ sum_of_squares
+    p..
 
 
-___ difference():
-    pass
+___ difference
+    p..

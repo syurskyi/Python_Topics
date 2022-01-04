@@ -19,7 +19,7 @@ c_ Solution(object):
             r.. T..
         ___ j __ r..(i+1, l..(s)+1):
             s0 = s[i:j]
-            num = int(s0)
+            num = i..(s0)
             __ num > 2**31-1 o. (s0[0] __ '0' a.. l..(s0) > 1):
                 break
             __ l..(res) < 2 o. res[-2] + res[-1] __ num:

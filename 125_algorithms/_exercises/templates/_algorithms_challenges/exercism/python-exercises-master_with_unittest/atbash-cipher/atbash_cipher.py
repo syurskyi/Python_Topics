@@ -1,6 +1,6 @@
 ___ encode(string):
-    pass
+    p..
 
 
 ___ decode(string):
-    pass
+    p..

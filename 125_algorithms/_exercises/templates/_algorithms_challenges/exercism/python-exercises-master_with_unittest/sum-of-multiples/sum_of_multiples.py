@@ -1,2 +1,2 @@
-___ sum_of_multiples():
-    pass
+___ sum_of_multiples
+    p..

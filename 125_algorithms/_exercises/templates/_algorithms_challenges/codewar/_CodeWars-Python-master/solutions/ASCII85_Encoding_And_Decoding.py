@@ -16,7 +16,7 @@ ___ toAscii85(data):
         __ encode_block __ '0' * 8 a.. padding __ 0:
             result += 'z'
         ____:
-            encode_block_int = int(encode_block, 16) / (85 ** padding)
+            encode_block_int = i..(encode_block, 16) / (85 ** padding)
             encode_block_result = ''
             ___ _ __ r..(5 - padding):
                 encode_block_int, remainder = divmod(encode_block_int, 85)
@@ -48,5 +48,5 @@ ___ fromAscii85(data):
             __ padding > 0:
                 encoded_byte = encoded_byte[:-padding * 2]
             index += 5
-            result += ''.j..([chr(int(encoded_byte[i:i + 2], 16)) ___ i __ r..(0, l..(encoded_byte), 2)])
+            result += ''.j..([chr(i..(encoded_byte[i:i + 2], 16)) ___ i __ r..(0, l..(encoded_byte), 2)])
     r.. result

@@ -6,7 +6,7 @@ ___ filter_names(names):
     names_list_number = 0
     ___ name __ names:
         __ name n.. __ names_list:
-            __ name.isalpha():
+            __ name.isalpha
                 __ IGNORE_CHAR __ name[0]:
                     continue
                 ____ QUIT_CHAR __ name:

@@ -36,7 +36,7 @@ N is a positive integer and will not exceed 15.
 
 
 c_ Solution:
-    ___ countArrangement(self, N: int) -> int:
+    ___ countArrangement(self, N: i..) __ i..:
         """
         dfs
         """

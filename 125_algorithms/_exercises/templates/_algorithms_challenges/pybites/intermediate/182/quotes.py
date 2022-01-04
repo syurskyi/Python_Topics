@@ -26,7 +26,7 @@ HTML = """<!DOCTYPE html>
 </html>"""
 
 
-___ extract_quotes(html: s.. = HTML) -> d..:
+___ extract_quotes(html: s.. = HTML) __ d..:
   """See instructions in the Bite description"""
 
   quotes    # dict

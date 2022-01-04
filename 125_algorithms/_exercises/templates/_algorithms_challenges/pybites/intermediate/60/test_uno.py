@@ -13,7 +13,7 @@ ___ _count_suitcard(deck, suit, name):
 
 
 @pytest.fixture(scope="module")
-___ deck():
+___ deck
     r.. create_uno_deck()
 
 

@@ -1,5 +1,5 @@
 input()
-data = l..(map(int, input().s..()))
+data = l..(map(i.., input().s..()))
 index = s..(data)
 print(index)
 ___ i __ index:

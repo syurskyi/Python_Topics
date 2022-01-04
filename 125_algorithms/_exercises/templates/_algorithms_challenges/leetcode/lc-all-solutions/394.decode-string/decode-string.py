@@ -10,7 +10,7 @@ c_ Solution(object):
       __ c __ "0123456789":
         num += c
       ____ c __ "[":
-        stack.a..(["", int(num)])
+        stack.a..(["", i..(num)])
         num = ""
       ____ c __ "]":
         ss, k = stack.pop()

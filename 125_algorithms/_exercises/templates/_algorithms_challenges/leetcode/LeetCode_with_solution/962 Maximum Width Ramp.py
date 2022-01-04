@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxWidthRamp(self, A: List[int]) -> int:
+    ___ maxWidthRamp(self, A: List[i..]) __ i..:
         """
         Use stack? No, since require the furthest element rather than the closest
         Sort the values, keep its index

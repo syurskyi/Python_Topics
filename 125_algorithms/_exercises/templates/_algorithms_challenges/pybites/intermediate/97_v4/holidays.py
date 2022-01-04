@@ -14,7 +14,7 @@ urlretrieve(
     holidays_page
 )
 
-with open(holidays_page) as f:
+with open(holidays_page) __ f:
     content = f.read()
 
 holidays = defaultdict(l..)
@@ -25,7 +25,7 @@ ___ _parse_date(date: s..):
     r.. d__.strptime(date.s.. [0], '%Y-%m-%d%B')
 
 
-___ _get_table(content=content) -> l..:
+___ _get_table(content=content) __ l..:
     """returns the cleaned table with datetimes for the dates"""
     soup = BeautifulSoup(content, 'html.parser')
     raw_table = soup.find('table', {'class': 'list-table'})

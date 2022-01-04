@@ -9,6 +9,6 @@ ___ sum_numbers(numbers):
     :return: sum of numbers
     :rtype: int
     """
-    pass
+    p..
 
 print(sum_numbers.__doc__)

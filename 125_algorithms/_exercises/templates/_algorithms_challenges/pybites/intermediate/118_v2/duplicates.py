@@ -12,7 +12,7 @@ ___ get_duplicate_indices(words):
     result = set()
     
 
-    occurences = defaultdict(int)
+    occurences = defaultdict(i..)
 
     ___ i,word __ e..(words):
         __ word __ occurences:

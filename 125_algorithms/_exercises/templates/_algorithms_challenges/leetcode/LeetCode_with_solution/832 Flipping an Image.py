@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:
+    ___ flipAndInvertImage(self, A: List[List[i..]]) __ List[List[i..]]:
         """
         one pass
         """

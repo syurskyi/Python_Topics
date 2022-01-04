@@ -49,7 +49,7 @@ c_ Solution(object):
             node = node.next
         print
 
-___ main():
+___ main
     Solution().test()
 
 __ __name__ __ '__main__':

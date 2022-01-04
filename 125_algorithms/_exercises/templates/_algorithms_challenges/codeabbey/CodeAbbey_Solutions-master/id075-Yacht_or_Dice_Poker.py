@@ -1,7 +1,7 @@
 _______ collections
 
-___ dice_poker():
-    rolls = int(input())
+___ dice_poker
+    rolls = i..(input())
     answer    # list
     
     ___ roll __ r..(rolls):

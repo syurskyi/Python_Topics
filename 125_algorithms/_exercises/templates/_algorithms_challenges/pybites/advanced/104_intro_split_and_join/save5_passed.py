@@ -11,4 +11,4 @@ ___ split_in_columns(message = message):
     s = "|"
     r.. s.j..(x)
     #    return message.join("|")
-    pass
+    p..

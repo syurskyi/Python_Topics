@@ -1,11 +1,11 @@
 win_dic = {'S':'P','P':'R','R':'S'}
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     count1 = 0
     count2 = 0
     a = l..(map(s..,input().s..()))
     ___ j __ a:
         __ j[0] __ j[1]:
-            pass
+            p..
         ____ j[1] __ win_dic[j[0]]:
             count1 += 1
         ____:

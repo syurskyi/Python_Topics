@@ -4,7 +4,7 @@
 
 ___ handler(a):
     command = input().s.. [0]
-    new_set = set(map(int, input().s..()))
+    new_set = set(map(i.., input().s..()))
     __ command __ 'intersection_update':
         a.intersection_update(new_set)
     __ command __ 'update':
@@ -15,7 +15,7 @@ ___ handler(a):
         a.difference_update(new_set)
 
 
-_, a = input(), set(map(int, input().s..()))
-___ i __ r..(int(input())):
+_, a = input(), set(map(i.., input().s..()))
+___ i __ r..(i..(input())):
     handler(a)
 print(s..(a))

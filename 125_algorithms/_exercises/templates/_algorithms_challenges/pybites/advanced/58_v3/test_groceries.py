@@ -4,7 +4,7 @@ ____ groceries _______ Item, Groceries, create_parser, handle_args
 
 
 @pytest.fixture
-___ cart():
+___ cart
     # faking some data (normally would load from DB)
     products = 'celery apples water coffee chicken pizza'.s..
     prices = [1, 4, 2, 5, 6, 4]
@@ -18,7 +18,7 @@ ___ cart():
 
 
 @pytest.fixture
-___ parser():
+___ parser
     r.. create_parser()
 
 

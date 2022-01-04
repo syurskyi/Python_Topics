@@ -1,2 +1,2 @@
-___ slices():
-    pass
+___ slices
+    p..

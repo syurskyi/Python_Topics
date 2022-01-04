@@ -28,7 +28,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ minimumLengthEncoding(self, words: List[s..]) -> int:
+    ___ minimumLengthEncoding(self, words: List[s..]) __ i..:
         """
         suffix trie
         only suffix matters

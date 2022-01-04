@@ -10,7 +10,7 @@ c_ Solution(object):
     ___ isValid(num):
       __ l..(num) __ 1:
         r.. T..
-      __ l..(num) > 1 a.. num[0] != "0" a.. int(num) <= 255:
+      __ l..(num) > 1 a.. num[0] != "0" a.. i..(num) <= 255:
         r.. T..
       r.. F..
 

@@ -38,7 +38,7 @@ c_ Handshake:
         r.. curr
 
     ___ valid_inp(self, inp):
-        __ isi..(inp, int):
+        __ isi..(inp, i..):
             r.. valid_integer(inp)
         ____ isi..(inp, s..):
             r.. valid_string(inp)
@@ -67,7 +67,7 @@ c_ Handshake:
     @staticmethod
     ___ to_num(inp):
         __ isi..(inp, s..):
-            r.. int(inp, 2)
+            r.. i..(inp, 2)
         r.. inp
 
 

@@ -11,13 +11,13 @@ Character = n..('Character', 'pid name sid align sex appearances year')
 
 # csv parsing code provided so this Bite can focus on the parsing
 
-___ _get_csv_data():
+___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
-    with requests.Session() as session:
+    with requests.Session() __ session:
         r.. session.get(MARVEL_CSV).content.decode('utf-8')
 
 
-___ load_data():
+___ load_data
     """Converts marvel.csv into a sequence of Character namedtuples
        as defined above"""
     content = _get_csv_data()
@@ -48,8 +48,8 @@ ___ most_popular_characters(characters=characters, top=5):
 
     ___ character __ characters:
         __ character.appearances:
-            __ character.name n.. __ character_counts o. (character.name __ character_counts a.. int(character.appearances) > character_counts[character.name]):
-                character_counts[character.name] = int(character.appearances)
+            __ character.name n.. __ character_counts o. (character.name __ character_counts a.. i..(character.appearances) > character_counts[character.name]):
+                character_counts[character.name] = i..(character.appearances)
     
     r.. [character[0] ___ character __ character_counts.most_common(top)]
 

@@ -35,7 +35,7 @@ DUMMY = N..
 
 c_ LFUCache:
 
-    ___ - , capacity: int):
+    ___ - , capacity: i..):
         """
         Need priority queue (pq) to keep contract of frequency
 
@@ -51,11 +51,11 @@ c_ LFUCache:
         """
         cap = capacity
         values    # dict
-        freqs = defaultdict(int)
+        freqs = defaultdict(i..)
         keys = defaultdict(OrderedDict)
         mini = -1  # mini frequency
 
-    ___ get(self, key: int) -> int:
+    ___ get(self, key: i..) __ i..:
         __ key __ values:
             val = values[key]
             freq_org = freqs[key]
@@ -70,7 +70,7 @@ c_ LFUCache:
         ____:
             r.. - 1
 
-    ___ put(self, key: int, value: int) -> N..
+    ___ put(self, key: i.., value: i..) __ N..
         __ cap __ 0:  # trivial
             r..
 

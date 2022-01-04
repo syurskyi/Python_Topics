@@ -42,7 +42,7 @@ mac = """
 
 
 @pytest.fixture(scope="module")
-___ sysinfo():
+___ sysinfo
     """Make a module scope sysinfo object"""
     r.. sysinfo_scrape(output)
 
@@ -85,13 +85,13 @@ ___ test_sysinfo_scrape_values(sysinfo):
     ... l..(sysinfo.values()) __ expected
 
 
-___ test_sysinfo_scrape_debian():
+___ test_sysinfo_scrape_debian
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(debian)
     ... sysinfo["Resolution"] __ "1366x768"
 
 
-___ test_sysinfo_scrape_mac():
+___ test_sysinfo_scrape_mac
     """Test to see if it works with different distro logos"""
     sysinfo = sysinfo_scrape(mac)
     ... sysinfo["Name"] __ "ejo@BlackOil"

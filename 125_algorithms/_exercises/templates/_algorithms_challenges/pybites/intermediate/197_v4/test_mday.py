@@ -5,7 +5,7 @@ _______ pytest
 ____ mday _______ get_mothers_day_date
 
 
-___ test_check_type():
+___ test_check_type
     ... t..(get_mothers_day_date(2019)) __ date
 
 

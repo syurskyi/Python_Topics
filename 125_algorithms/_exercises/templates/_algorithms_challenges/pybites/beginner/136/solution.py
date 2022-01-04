@@ -63,7 +63,7 @@ ___ _check_convert_input(inpval):
     """
     __ isi..(inpval, Bloodtype):
         r.. inpval
-    __ isi..(inpval, int):
+    __ isi..(inpval, i..):
         __ 0 <= inpval <= 7:
             r.. Bloodtype(inpval)
         ____:

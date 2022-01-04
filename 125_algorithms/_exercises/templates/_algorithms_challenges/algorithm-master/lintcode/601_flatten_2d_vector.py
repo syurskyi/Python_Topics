@@ -14,7 +14,7 @@ c_ Vector2D:
 
     # @return {int} a next element
     ___ next
-        __ n.. hasNext():
+        __ n.. hasNext
             r.. -1
 
         x = x

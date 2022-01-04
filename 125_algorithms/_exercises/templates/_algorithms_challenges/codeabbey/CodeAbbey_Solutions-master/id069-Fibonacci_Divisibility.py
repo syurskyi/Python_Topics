@@ -4,9 +4,9 @@ ___ fibDiv(tests):
     
     ___ test __ r..(tests):
         a,b,c = 0,1,0
-        ___ count __ r..(int(max(numbers))):
+        ___ count __ r..(i..(max(numbers))):
             c = a + b
-            __ c % int(numbers[test]) __ 0:
+            __ c % i..(numbers[test]) __ 0:
                 answer.a..(s..(count+2))
                 break
             a = b

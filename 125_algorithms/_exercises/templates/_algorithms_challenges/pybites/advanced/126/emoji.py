@@ -14,7 +14,7 @@ ___ what_means_emoji(emoji):
         r.. 'Not found'
 
 
-___ _make_emoji_mapping():
+___ _make_emoji_mapping
     """Helper to make a mapping of all possible emojis:
        - loop through range(START_EMOJI_RANGE, sys.maxunicode +1)
        - return dict with keys=emojis, values=names"""
@@ -28,7 +28,7 @@ ___ _make_emoji_mapping():
             meaning = what_means_emoji(chr(i))
             mapping[chr(i)] = meaning
         except:
-            pass
+            p..
 
     r.. mapping
 

@@ -27,7 +27,7 @@ c_ NinjaBelt:
         Set the current score and update any belt qualification
         new_score must be an integer and cannot be less than the current score
         """
-        __ n.. isi..(new_score, int):
+        __ n.. isi..(new_score, i..):
             raise ValueError('Score can only be an integer')
         __ _score > new_score:
             raise ValueError(f'New score ({new_score}) must be higher than previous score ({_score})')

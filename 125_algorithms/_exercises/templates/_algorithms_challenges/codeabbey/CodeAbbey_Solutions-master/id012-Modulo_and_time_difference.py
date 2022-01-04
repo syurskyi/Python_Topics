@@ -4,7 +4,7 @@ ___ timeCalc(calculations):
         solution = 0
         # Day | hour | minute | second
         d1,h1,m1,s1,d2,h2,m2,s2 = raw_input().s..
-        d1,h1,m1,s1,d2,h2,m2,s2 = int(d1),int(h1),int(m1),int(s1),int(d2),int(h2),int(m2),int(s2)
+        d1,h1,m1,s1,d2,h2,m2,s2 = i..(d1),i..(h1),i..(m1),i..(s1),i..(d2),i..(h2),i..(m2),i..(s2)
     
         __ s2 >= s1:
             s = s2 - s1

@@ -1,4 +1,4 @@
-___ two_sums(numbers: l.., target: int):
+___ two_sums(numbers: l.., target: i..):
     """Finds the indexes of the two numbers that add up to target.
 
     :param numbers: list - random unique numbers

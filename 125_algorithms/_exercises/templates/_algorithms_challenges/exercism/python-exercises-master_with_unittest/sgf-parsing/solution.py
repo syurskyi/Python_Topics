@@ -62,13 +62,13 @@ ___ parse(input_string):
             )
     assert_that(stack)
 
-    ___ pop():
+    ___ pop
         __ stack[0] __ '\\':
             stack.pop(0)
         ch = stack.pop(0)
         r.. ' ' __ ch __ ['\t'] ____ ch
 
-    ___ peek():
+    ___ peek
         r.. stack[0]
 
     ___ pop_until(ch):

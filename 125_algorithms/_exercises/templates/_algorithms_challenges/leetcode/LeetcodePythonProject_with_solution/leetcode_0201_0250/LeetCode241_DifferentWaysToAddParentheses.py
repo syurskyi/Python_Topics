@@ -24,7 +24,7 @@ c_ Solution(object):
                         ____:
                             res.a..(num1*num2)
         __ n.. res:
-            res = [int(s)]
+            res = [i..(s)]
         r.. res
     
     ___ test

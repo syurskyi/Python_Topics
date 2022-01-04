@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_sorting_indexes(array):
@@ -14,7 +14,7 @@ ___ get_sorting_indexes(array):
     ___ i __ sorted_array:
         results.a..(array.index(i)+1)
 
-array = l..(map(int, input().s..()))
+array = l..(map(i.., input().s..()))
 get_sorting_indexes(array)
 
 print(*results)

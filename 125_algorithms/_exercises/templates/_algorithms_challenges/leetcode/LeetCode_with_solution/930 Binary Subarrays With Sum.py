@@ -24,7 +24,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ numSubarraysWithSum(self, A: List[int], S: int) -> int:
+    ___ numSubarraysWithSum(self, A: List[i..], S: i..) __ i..:
         """
         Two pointers
         i_lo and i_hi
@@ -49,7 +49,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ numSubarraysWithSum_error(self, A: List[int], S: int) -> int:
+    ___ numSubarraysWithSum_error(self, A: List[i..], S: i..) __ i..:
         """
         Continuous subarrays sum using prefix sum to target O(N), space O(N)
         Two pointer, O(N), space O(1)

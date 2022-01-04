@@ -4,7 +4,7 @@ ____ bmi _______ create_parser, handle_args
 
 
 @pytest.fixture
-___ parser():
+___ parser
     r.. create_parser()
 
 

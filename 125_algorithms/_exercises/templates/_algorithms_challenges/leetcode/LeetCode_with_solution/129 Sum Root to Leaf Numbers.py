@@ -31,7 +31,7 @@ c_ Solution:
         """
         result    # list
         dfs(root, "", result)
-        result = [int(element) ___ element __ result]
+        result = [i..(element) ___ element __ result]
         r.. s..(result)
 
     ___ dfs(self, root, cur, result):

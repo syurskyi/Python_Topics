@@ -90,7 +90,7 @@ c_ Codec:
         __ s __ "null":
             r.. N..
         ____:
-            r.. TreeNode(int(s))
+            r.. TreeNode(i..(s))
 
     ___ encode(self, node):
         __ n.. node:

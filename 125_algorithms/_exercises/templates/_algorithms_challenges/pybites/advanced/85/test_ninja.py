@@ -8,19 +8,19 @@ NEW_SCORE_MSG = 'Set new score to {score}'
 
 
 @pytest.fixture
-___ ninja():
+___ ninja
     r.. NinjaBelt()
 
 
 @pytest.fixture
-___ white_belt():
+___ white_belt
     ninja = NinjaBelt(score=10)
     ninja._last_earned_belt = 'white'
     r.. ninja
 
 
 @pytest.fixture
-___ yellow_belt():
+___ yellow_belt
     ninja = NinjaBelt(score=50)
     ninja._last_earned_belt = 'yellow'
     r.. ninja

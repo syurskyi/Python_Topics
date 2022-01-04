@@ -1,7 +1,7 @@
 ____ typing _______ List
 
 
-___ list_to_decimal(nums: List[int]) -> int:
+___ list_to_decimal(nums: List[i..]) __ i..:
     """Accept a list of positive integers in the range(0, 10)
        and return a integer where each int of the given list represents
        decimal place values from first element to last.  E.g
@@ -13,12 +13,12 @@ ___ list_to_decimal(nums: List[int]) -> int:
         1000's, 100's, 10's, 1's
     """
     ___ num __ nums:
-        __ isi..(num, bool) o. n.. isi..(num, int):
+        __ isi..(num, bool) o. n.. isi..(num, i..):
             raise TypeError
         ____ n.. num __ r..(0, 10):
             raise ValueError
 
-    r.. int(''.j..(map(s.., nums)))
+    r.. i..(''.j..(map(s.., nums)))
 
 
 #print(list_to_decimal([1,2,10,4]))

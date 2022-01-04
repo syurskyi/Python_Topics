@@ -1,4 +1,4 @@
-___ get_users(passwd: s..) -> d..:
+___ get_users(passwd: s..) __ d..:
     """Split password output by newline,
       extract user and name (1st and 5th columns),
       strip trailing commas from name,

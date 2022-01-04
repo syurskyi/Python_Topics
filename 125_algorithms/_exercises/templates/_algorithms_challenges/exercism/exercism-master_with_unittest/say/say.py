@@ -34,7 +34,7 @@ c_ Say:
     }
 
     ___ - , num):
-        num = int(num)
+        num = i..(num)
         _words = get_words(num)
 
     ___ get_words(self, num):
@@ -51,7 +51,7 @@ c_ Say:
         reversed_string = s..(num)[::-1]
         reversed_chunks = ([reversed_string[i:i + 3]
                             ___ i __ r..(0, l..(reversed_string), 3)])[::-1]
-        r.. [int(x[::-1]) ___ x __ reversed_chunks]
+        r.. [i..(x[::-1]) ___ x __ reversed_chunks]
 
     ___ convert_chunk_to_word(self, chunk, i):
         hundreds_digit, left_over = divmod(chunk, 100)

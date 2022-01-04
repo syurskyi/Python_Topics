@@ -5,7 +5,7 @@
 _______ __
 
 
-___ _ __ r..(int(input())):
+___ _ __ r..(i..(input())):
     try:
         print(bool(__.c..(input())))
     except __.error:

@@ -7,7 +7,7 @@ CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 FMT_STR = '{tz:21}| {bar}'
 
 
-___ get_csv():
+___ get_csv
     """Use requests to download the csv and return the
        decoded content"""
     r.. requests.get(url=CSV_URL).content.decode()

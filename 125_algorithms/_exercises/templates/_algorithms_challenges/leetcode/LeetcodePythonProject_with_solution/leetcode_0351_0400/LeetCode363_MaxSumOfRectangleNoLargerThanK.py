@@ -6,7 +6,7 @@ Created on Mar 27, 2017
 
 c_ Solution(object):
     ___ maxSumSubmatrix(self, matrix, k):
-        pass
+        p..
     
     # still not working!
     ___ maxSumSubmatrixBinarySearch(self, matrix, k):

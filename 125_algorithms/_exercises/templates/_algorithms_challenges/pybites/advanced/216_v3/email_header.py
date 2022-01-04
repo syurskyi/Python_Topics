@@ -19,7 +19,7 @@ X-SG-EID: P3IPuU2e1Ijn5xEegYUQ...
 X-SendGrid-Contentd-ID: {"test_id":"1371661776"}"""  # noqa E501
 
 
-___ get_email_details(header: s..) -> d..:
+___ get_email_details(header: s..) __ d..:
     """User re.search or re.match to capture the from, to, subject
        and date fields. Return the groupdict() of matching object, see:
        https://docs.python.org/3.7/library/re.html#re.Match.groupdict

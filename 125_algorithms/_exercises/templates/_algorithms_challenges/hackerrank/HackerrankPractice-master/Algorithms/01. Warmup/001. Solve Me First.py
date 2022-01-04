@@ -2,5 +2,5 @@
 # Score: 1
 
 
-a, b = int(input()), int(input())
+a, b = i..(input()), i..(input())
 print(a + b)

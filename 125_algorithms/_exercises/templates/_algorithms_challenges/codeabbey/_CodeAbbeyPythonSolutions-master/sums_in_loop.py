@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_sum(values):
@@ -11,7 +11,7 @@ ___ get_sum(values):
     r.. result
 
 ___ i __ r..(amount_values):
-    values = l..(map(int, input().s..()))
+    values = l..(map(i.., input().s..()))
     results.a..(get_sum(values))
 
 print(*results)

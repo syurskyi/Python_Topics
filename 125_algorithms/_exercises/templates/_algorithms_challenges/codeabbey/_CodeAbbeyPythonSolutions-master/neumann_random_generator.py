@@ -1,4 +1,4 @@
-amount_value = int(input())
+amount_value = i..(input())
 
 generator_list    # list
 results    # list
@@ -12,7 +12,7 @@ ___ generate(num, counter):
     num = (num//100)%10000
     r.. generate(num, counter+1)
 
-values = l..(map(int, input().s..()))
+values = l..(map(i.., input().s..()))
 
 ___ i __ r..(amount_value):
     results.a..(generate(values[i],0))

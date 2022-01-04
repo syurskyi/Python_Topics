@@ -5,7 +5,7 @@ c_ Board:
     ___ - , white_coords, black_coords):
         white_coords = white_coords
         black_coords = black_coords
-        __ n.. valid_coords():
+        __ n.. valid_coords
             raise ValueError
         board = generate_board()
 

@@ -9,7 +9,7 @@ c_ Solution(object):
         N = l..(graph)
 
         DRAW, MOUSE, CAT = 0, 1, 2
-        color = collections.defaultdict(int)
+        color = collections.defaultdict(i..)
         degree    # dict
         ___ m __ r..(N):
             ___ c __ r..(N):

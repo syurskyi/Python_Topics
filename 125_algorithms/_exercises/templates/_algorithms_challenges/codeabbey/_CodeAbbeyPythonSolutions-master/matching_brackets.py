@@ -1,6 +1,6 @@
 _______ __
 
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ is_matching(word):

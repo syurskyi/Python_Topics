@@ -14,7 +14,7 @@ dot (.) should not end this sentence, the next one should. Have fun!
 """  # contains 6 sentences
 
 
-___ test_get_sentences():
+___ test_get_sentences
     actual = get_sentences(TEXT)
     expected = [
         "PyBites was founded 19th of December 2016.",
@@ -26,7 +26,7 @@ ___ test_get_sentences():
     ... actual __ expected
 
 
-___ test_dot_mid_sentence():
+___ test_dot_mid_sentence
     actual = get_sentences(TEXT_WITH_DOTS)
     expected = [
         ("We are looking forward attending the next Pycon in the "

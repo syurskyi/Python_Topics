@@ -6,17 +6,17 @@ ____ paw _______ create_paw_deck
 
 
 @pytest.fixture(scope="module")
-___ deck():
+___ deck
     r.. l..(create_paw_deck())
 
 
 @pytest.fixture(scope="module")
-___ small_deck():
+___ small_deck
     r.. l..(create_paw_deck(4))
 
 
 @pytest.fixture(scope="module")
-___ big_deck():
+___ big_deck
     r.. l..(create_paw_deck(16))
 
 
@@ -69,12 +69,12 @@ ___ test_deck_cards_numbers_constant(deck, small_deck, big_deck):
         ... s..(1 ___ card __ big_deck __ card.card[0] __ i) __ 4
 
 
-___ test_deck_numbers_used():
+___ test_deck_numbers_used
     ___ i __ r..(1, 27):
         deck = l..(create_paw_deck(i))
-        ... s..(1 ___ card __ deck __ int(card.card[1:]) __ 1) __ i
+        ... s..(1 ___ card __ deck __ i..(card.card[1:]) __ 1) __ i
 
 
-___ test_out_of_bound_arg():
+___ test_out_of_bound_arg
     with pytest.raises(ValueError):
         create_paw_deck(n=27)

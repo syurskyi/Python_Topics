@@ -1,18 +1,18 @@
 c_ BankAccount(object):
     ___ - ):
-        pass
+        p..
 
     ___ get_balance
-        pass
+        p..
 
     ___ open
-        pass
+        p..
 
     ___ deposit(self, amount):
-        pass
+        p..
 
     ___ withdraw(self, amount):
-        pass
+        p..
 
     ___ close
-        pass
+        p..

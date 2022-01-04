@@ -10,13 +10,13 @@ c_ Challenge(ABC):
 
     @abstractmethod
     ___ verify(self,other):
-        pass
+        p..
 
 
     $
     @abstractmethod
     ___ pretty_title
-        pass
+        p..
 
 
 c_ BlogChallenge(Challenge):

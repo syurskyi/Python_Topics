@@ -7,7 +7,7 @@ PYBITES = 'pybit.es'
 
 
 @pytest.fixture(scope="module")
-___ pb():
+___ pb
     r.. PythonBytes()
 
 
@@ -82,7 +82,7 @@ ___ test_average_episode_duration_full_feed(pb):
 
 ___ test_average_episode_duration_half_feed(pb):
     """To prevent hardcoding the answer"""
-    num_half_episodes = int(l..(pb.entries)/2)
+    num_half_episodes = i..(l..(pb.entries)/2)
     org_entries = pb.entries
     pb.entries = pb.entries[:num_half_episodes]
     actual = pb.get_average_duration_episode_in_seconds()

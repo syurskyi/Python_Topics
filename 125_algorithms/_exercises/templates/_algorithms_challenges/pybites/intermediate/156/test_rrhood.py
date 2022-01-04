@@ -21,7 +21,7 @@ The tree saw the change in the elder brother’s heart and gave them all the gol
 characters = ('elder brother', 'younger brother', ('the tree', 'magical tree'))
 
 
-___ test_make_character_index_with_default_args():
+___ test_make_character_index_with_default_args
     keys = ('red riding hood', 'grandmother', 'wolf', 'woodsman')
     values = (
         [1, 2, 3, 6, 7, 8, 11, 18, 19, 21, 24, 26, 28, 30, 33, 36],
@@ -34,7 +34,7 @@ ___ test_make_character_index_with_default_args():
     ... actual __ expected
 
 
-___ test_make_character_index_with_other_args():
+___ test_make_character_index_with_other_args
     keys = ('elder brother', 'younger brother', 'the tree')
     values = (
         [2, 3, 7, 9, 10, 11, 14, 15],

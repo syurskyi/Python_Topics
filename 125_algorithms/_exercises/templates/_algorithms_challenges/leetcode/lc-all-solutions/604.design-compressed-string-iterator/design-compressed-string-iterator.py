@@ -13,18 +13,18 @@ c_ StringIterator(object):
     __ idx + 1 < l..(data):
       cur = data[idx]
       end = idx + 1
-      w.... end < l..(data) a.. data[end].isdigit():
+      w.... end < l..(data) a.. data[end].isdigit
         end += 1
       print
       end
-      num = int(data[idx + 1:end])
+      num = i..(data[idx + 1:end])
       idx = end - 1
 
   ___ next
     """
     :rtype: str
     """
-    __ hasNext():
+    __ hasNext
       ret = cur
       num -= 1
       __ num <= 0:

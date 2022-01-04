@@ -8,13 +8,13 @@ c_ Triangle:
         a = a
         b = b
         c = c
-        __ error():
+        __ error
             raise TriangleError
 
     ___ kind
-        __ equilateral():
+        __ equilateral
             r.. EQUILATERAL
-        __ isosceles():
+        __ isosceles
             r.. ISOSCELES
         r.. SCALENE
 
@@ -37,4 +37,4 @@ c_ Triangle:
 
 
 c_ TriangleError(Exception):
-    pass
+    p..

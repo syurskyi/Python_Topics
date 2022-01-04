@@ -1,11 +1,11 @@
 ____ typing _______ Optional
 
-_______ numpy as np
+_______ numpy __ np
 
 
 ___ convolution2D(
-    image: np.array, kernel: np.array, padding: Optional[int] = N.., stride: int = 1
-) -> np.array:
+    image: np.array, kernel: np.array, padding: Optional[i..] = N.., stride: i.. = 1
+) __ np.array:
     """Calculate the convolution between the input image and a filter, returning the feature map.
 
     Args:
@@ -26,7 +26,7 @@ ___ convolution2D(
     __ n.. a..(array.ndim __ 2 ___ array __ arrays):
         raise ValueError("kernel and filter must be size 2")
         
-    is_not_integer = l.... x: n.. isi..(x,int) o. (isi..(x,float) a.. n.. x.is_integer())
+    is_not_integer = l.... x: n.. isi..(x,i..) o. (isi..(x,float) a.. n.. x.is_integer())
     
     
     __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays):
@@ -61,17 +61,17 @@ ___ convolution2D(
                 raise ValueError(f"{type_}, must be greater than zero")
     
 
-    stride = int(stride) # inc ase they passed a value like 2.0
+    stride = i..(stride) # inc ase they passed a value like 2.0
 
              
     __ padding __ N..
         padding = (kernel.shape[0] - 1)//2
     ____:
-        padding = int(padding)
+        padding = i..(padding)
 
 
 
-    output_array_size = int(np.floor((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1))
+    output_array_size = i..(np.floor((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1))
 
 
     output_array = np.zeros((output_array_size,) * 2)

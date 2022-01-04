@@ -1,2 +1,2 @@
-___ poker():
-    pass
+___ poker
+    p..

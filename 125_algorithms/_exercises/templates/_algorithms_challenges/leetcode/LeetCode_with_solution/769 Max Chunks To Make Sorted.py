@@ -31,7 +31,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxChunksToSorted(self, arr: List[int]) -> int:
+    ___ maxChunksToSorted(self, arr: List[i..]) __ i..:
         """
         compared to the sorted
         [0, 1, 2, 3, 4]

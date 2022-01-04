@@ -5,7 +5,7 @@ ____ dict_convert _______ blog, dict2nt, nt2json
 nt = dict2nt(blog)
 
 
-___ test_dict2nt():
+___ test_dict2nt
     ... nt.name __ 'PyBites'
     ... nt.founders[1] __ 'Bob'
     ... nt.tags[2] __ 'Learn by Doing'
@@ -14,7 +14,7 @@ ___ test_dict2nt():
     ... nt.__class__.__base__ __ tuple
     ... hasattr(nt, '_asdict')
 
-___ test_nt2json():
+___ test_nt2json
     output = nt2json(nt)
     ... t..(output) __ s..
 

@@ -1,6 +1,6 @@
 _______ __
 _______ pdb
-___ get_users(passwd: s..) -> d..:
+___ get_users(passwd: s..) __ d..:
     """Split password output by newline,
       extract user and name (1st and 5th columns),
       strip trailing commas from name,
@@ -10,7 +10,7 @@ ___ get_users(passwd: s..) -> d..:
     
     passwords    # dict
     #pdb.set_trace()
-    ___ line __ passwd.splitlines():
+    ___ line __ passwd.splitlines
         __ n.. line:
             continue
         values = line.s..(':')

@@ -23,4 +23,4 @@ c_ SgfTree(object):
 
 
 ___ parse(input_string):
-    pass
+    p..

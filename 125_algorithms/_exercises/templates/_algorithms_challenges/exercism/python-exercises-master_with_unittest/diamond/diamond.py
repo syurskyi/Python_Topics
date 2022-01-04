@@ -1,2 +1,2 @@
-___ make_diamond():
-    pass
+___ make_diamond
+    p..

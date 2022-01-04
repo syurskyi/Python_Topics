@@ -34,9 +34,9 @@ ___ get_top_titles(url, top=5):
         points = __.s..(r'(\d*) points', entry)
         comments = __.s..(r'(\d*) comments', entry)
         __ points:
-            point_list.a..(int(points.group(1)))
+            point_list.a..(i..(points.group(1)))
         __ comments:
-            comment_list.a..(int(comments.group(1)))
+            comment_list.a..(i..(comments.group(1)))
 
     output    # list
     ___ entry __ z..(title_list, point_list, comment_list):

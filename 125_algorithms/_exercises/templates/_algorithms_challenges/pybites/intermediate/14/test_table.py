@@ -10,7 +10,7 @@ table3 = l..(generate_table(names, aliases, points))
 table4 = l..(generate_table(names, aliases, points, awake))
 
 
-___ test_generate_table():
+___ test_generate_table
     ... l..(table1) __ l..(table2) __ l..(table3) __ l..(table4) __ 6
 
     ... table1[0].c.. SEPARATOR) __ 0

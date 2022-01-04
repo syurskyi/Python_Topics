@@ -44,9 +44,9 @@ ____ collections _______ deque
 
 c_ Solution:
     ___ - ):
-        mn: Tuple[int] = N..
+        mn: Tuple[i..] = N..
 
-    ___ smallestFromLeaf(self, root: TreeNode) -> s..:
+    ___ smallestFromLeaf(self, root: TreeNode) __ s..:
         """
         dfs
         """

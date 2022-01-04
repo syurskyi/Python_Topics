@@ -10,7 +10,7 @@ NAMES = ['Bob', 'Julian', 'Tim', 'Carmen', 'Henk', 'Sofia', 'Bernard']
 Member = n..('Member', 'name since_days karma_points bitecoin_earned')
 
 
-___ _gen_community():
+___ _gen_community
     ___ name __ NAMES:
         y.. Member(name=name,
                      since_days=randint(1, 365),
@@ -18,14 +18,14 @@ ___ _gen_community():
                      bitecoin_earned=randint(1, 100))
 
 
-___ test_transpose_dict():
+___ test_transpose_dict
     months, num_posts = transpose(POSTS)
     ... l..(months) __ ['2017-8', '2017-9', '2017-10',
                             '2017-11', '2017-12', '2018-1']
     ... l..(num_posts) __ [19, 13, 13, 12, 11, 3]
 
 
-___ test_transpose_list_tuplies():
+___ test_transpose_list_tuplies
     community = l..(_gen_community())
     names, days, karma, bitecoin = transpose(community)
     ... l..(names) __ NAMES

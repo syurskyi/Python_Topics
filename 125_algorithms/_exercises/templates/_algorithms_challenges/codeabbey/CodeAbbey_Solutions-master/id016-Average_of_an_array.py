@@ -12,10 +12,10 @@ ___ average(amount):
                 array = cleanData(array)
                 total, average, y = 0,0,0
                 w.... y < l..(array):
-                        total += int(array[y])
+                        total += i..(array[y])
                         y+=1
                         average = "%.02f" % ((float(total)) / float(l..(array)))
-                        average = int(round(float(average)))
+                        average = i..(round(float(average)))
                 answer.a..(s..(average))
         print(' '.j..(answer))
 average(input())

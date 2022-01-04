@@ -12,7 +12,7 @@ c_ Solution:
 
         left = bottom = float('inf')
         right = top = float('-inf')
-        points = collections.defaultdict(int)
+        points = collections.defaultdict(i..)
 
         ___ l, b, r, t __ recs:
             left = m..(left, l)

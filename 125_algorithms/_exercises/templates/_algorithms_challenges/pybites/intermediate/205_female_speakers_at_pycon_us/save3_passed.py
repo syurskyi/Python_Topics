@@ -1,5 +1,5 @@
-_______ gender_guesser.detector as gender
-____ bs4 _______ BeautifulSoup as Soup
+_______ gender_guesser.detector __ gender
+____ bs4 _______ BeautifulSoup __ Soup
 _______ requests
 _______ __
 

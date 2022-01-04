@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maxArea(self, height: List[i..]) -> i..:
+    ___ maxArea(self, height: List[i..]) __ i..:
 		maxarea  0
 		l  0
 		r  l..(height)-1

@@ -8,20 +8,20 @@ ___ sum_numbers(*numbers):
     r.. s..(numbers)
 
 
-___ test_valid_args():
+___ test_valid_args
     ... sum_numbers(1, 2, 3) __ 6
 
 
-___ test_invalid_type_str():
+___ test_invalid_type_str
     with pytest.raises(TypeError):
         sum_numbers(1, 'string', 3)
 
 
-___ test_invalid_type_float():
+___ test_invalid_type_float
     with pytest.raises(TypeError):
         sum_numbers(1, 2.1, 3)
 
 
-___ test_negative_number():
+___ test_negative_number
     with pytest.raises(ValueError):
         sum_numbers(1, 2, -3)

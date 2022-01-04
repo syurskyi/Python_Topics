@@ -12,7 +12,7 @@ c_ Solution(object):
         """
         _______ math
         __ c < 0: r.. F..
-        l, r = 0, int(math.sqrt(c))
+        l, r = 0, i..(math.sqrt(c))
         w.... l <= r:
             __ l*l + r*r < c:
                 l += 1

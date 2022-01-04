@@ -28,7 +28,7 @@ ___ get_most_popular_talks_by_views(videos):
     
 
 
-    r.. s..(videos,r.._T..key=l.... x: int(x.metrics['viewCount']))
+    r.. s..(videos,r.._T..key=l.... x: i..(x.metrics['viewCount']))
 
 
 ___ get_most_popular_talks_by_like_ratio(videos):
@@ -38,7 +38,7 @@ ___ get_most_popular_talks_by_like_ratio(videos):
        Return the filtered list"""
 
 
-    r.. s..(videos,r.._T..key=l.... x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount']))/int(x.metrics['viewCount']))
+    r.. s..(videos,r.._T..key=l.... x: (i..(x.metrics['likeCount']) - i..(x.metrics['dislikeCount']))/i..(x.metrics['viewCount']))
 
 
 ___ get_talks_gt_one_hour(videos):
@@ -52,7 +52,7 @@ ___ get_talks_lt_twentyfour_min(videos):
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
 
-    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. int(__.s..(r"(\d+)M",video.duration).group(1)) < 24)]
+    r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. i..(__.s..(r"(\d+)M",video.duration).group(1)) < 24)]
 
 
 __ __name__ __ "__main__":

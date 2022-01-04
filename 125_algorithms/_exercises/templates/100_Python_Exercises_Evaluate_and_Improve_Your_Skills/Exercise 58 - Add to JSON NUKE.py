@@ -2,7 +2,7 @@
 
 _______ json
 
-with open("company1.json", "r+") as file:
+with open("company1.json", "r+") __ file:
     d  json.loads(file.read())
     d["employees"].a..(d..(firstName  "Albert", lastName  "Bert"))
     file.seek(0)

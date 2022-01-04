@@ -4,8 +4,8 @@ ___ wc(file_):
        3 12 60 /tmp/somefile
        (both tabs and spaces are allowed as separator)"""
     lines = words = chars = 0
-    with open(file_) as f:
-        ___ line __ f.readlines():
+    with open(file_) __ f:
+        ___ line __ f.readlines
             lines += 1
             words += l..(line.s..())
             chars += l..(line)

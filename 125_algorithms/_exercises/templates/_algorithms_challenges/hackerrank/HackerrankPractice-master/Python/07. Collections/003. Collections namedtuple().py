@@ -5,5 +5,5 @@
 ____ collections _______ n..
 
 
-n, Student = int(input()), n..('Student', input())
-print("{:.2f}".f..(s..([int(Student(*input().s..()).MARKS) ___ _ __ r..(n)]) / n))
+n, Student = i..(input()), n..('Student', input())
+print("{:.2f}".f..(s..([i..(Student(*input().s..()).MARKS) ___ _ __ r..(n)]) / n))

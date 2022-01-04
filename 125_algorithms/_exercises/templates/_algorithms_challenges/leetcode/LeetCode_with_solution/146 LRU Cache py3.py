@@ -37,7 +37,7 @@ c_ Node:
 
 c_ LRUCache:
 
-    ___ - , capacity: int):
+    ___ - , capacity: i..):
         """
         O(1) look up - Map
         O(1) update most recent vs. least recent - Linked List
@@ -54,7 +54,7 @@ c_ LRUCache:
         cap = capacity
         map    # dict
 
-    ___ get(self, key: int) -> int:
+    ___ get(self, key: i..) __ i..:
         __ key __ map:
             node = map[key]
             _remove(key)
@@ -63,7 +63,7 @@ c_ LRUCache:
 
         r.. -1
 
-    ___ put(self, key: int, value: int) -> N..
+    ___ put(self, key: i.., value: i..) __ N..
         __ key __ map:
             _remove(key)
         ____ l..(map) >= cap:
@@ -81,7 +81,7 @@ c_ LRUCache:
         node.next = nxt
         nxt.prev = node
 
-    ___ _remove(self, key: int):
+    ___ _remove(self, key: i..):
         node = map[key]
         prev = node.prev
         nxt = node.next

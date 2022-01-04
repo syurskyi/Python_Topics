@@ -23,7 +23,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ numSubarrayBoundedMax(self, A: List[int], L: int, R: int) -> int:
+    ___ numSubarrayBoundedMax(self, A: List[i..], L: i.., R: i..) __ i..:
         """
         DP: Let F[i] be the num subarray with bounded max at A[i]
         if L <= A[i] <= R: F[i] = i - prev, where prev is previously invalid F[prev] = 0
@@ -48,7 +48,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ numSubarrayBoundedMax_error(self, A: List[int], L: int, R: int) -> int:
+    ___ numSubarrayBoundedMax_error(self, A: List[i..], L: i.., R: i..) __ i..:
         """
         DP: Let F[i] be the num subarray with bounded max at A[i]
         if L <= A[i] <= R: F[i] = F[i-1] + 1  # append itself to every array in F[i-1] and one more itself

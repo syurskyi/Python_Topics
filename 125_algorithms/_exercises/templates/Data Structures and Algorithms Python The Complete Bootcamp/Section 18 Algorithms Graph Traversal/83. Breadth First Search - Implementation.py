@@ -1,4 +1,4 @@
-c_ Node():
+c_ Node
 
     ___  -   value):
         value  value
@@ -6,7 +6,7 @@ c_ Node():
         visited  F..
 
 
-c_ Graph():
+c_ Graph
 
     ___ BFS  node):
 

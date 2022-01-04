@@ -11,11 +11,11 @@ ____ serialization _______ (download_pickle_file,
 
 c_ Bite(NamedTuple):
     title: s..
-    number: int
+    number: i..
     level: s..
 
 
-___ test_deserialize_movie_rented_data():
+___ test_deserialize_movie_rented_data
     download_pickle_file()
     expected = [
         MovieRented('Mad Max Fury Road', 4, date(2020, 12, 1)),
@@ -30,12 +30,12 @@ ___ test_deserialize_movie_rented_data():
     ... actual __ expected
 
 
-___ test_serialize_and_deserialize_other_data():
+___ test_serialize_and_deserialize_other_data
     data = [
         Bite('Sum of Numbers', 1, 'Beginner'),
         Bite('Regex Fun', 2, 'Advanced'),
     ]
-    pkl_file = TMP / s..(int(time.time()))
+    pkl_file = TMP / s..(i..(time.time()))
     serialize(pkl_file, data=data)
     actual = deserialize(pkl_file)
     expected = data

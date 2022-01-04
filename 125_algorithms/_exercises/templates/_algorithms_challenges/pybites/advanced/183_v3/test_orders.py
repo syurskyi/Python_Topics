@@ -8,7 +8,7 @@ ____ orders _______ (load_excel_into_dataframe,
 
 
 @pytest.fixture(scope="module")
-___ df():
+___ df
     r.. load_excel_into_dataframe()
 
 
@@ -41,4 +41,4 @@ ___ test_get_best_sales_rep(df):
 ___ test_get_most_sold_item(df):
     most_sold = get_most_sold_item(df)
     ... most_sold[0] __ 'Binder'
-    ... int(most_sold[1]) __ 722
+    ... i..(most_sold[1]) __ 722

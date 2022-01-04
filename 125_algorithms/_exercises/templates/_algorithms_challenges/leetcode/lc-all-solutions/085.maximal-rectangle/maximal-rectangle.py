@@ -23,7 +23,7 @@ c_ Solution(object):
     dp = [[0] * l..(matrix[0]) ___ _ __ r..(0, l..(matrix))]
     ___ i __ r..(r..(0, l..(matrix))):
       __ i __ l..(matrix) - 1:
-        dp[i] = [int(h) ___ h __ matrix[i]]
+        dp[i] = [i..(h) ___ h __ matrix[i]]
       ____:
         ___ j __ r..(0, l..(matrix[0])):
           __ matrix[i][j] != "0":

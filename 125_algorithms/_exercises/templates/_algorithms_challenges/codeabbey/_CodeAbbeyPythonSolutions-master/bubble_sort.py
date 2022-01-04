@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 
 ___ get_pass_and_swap_number(array):
     passed = 0
@@ -19,5 +19,5 @@ ___ get_pass_and_swap_number(array):
 
     print (passed, swapped)
 
-array = l..(map(int, input().s..()))
+array = l..(map(i.., input().s..()))
 get_pass_and_swap_number(array)

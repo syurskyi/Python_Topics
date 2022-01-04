@@ -18,7 +18,7 @@ c_ SQLiteType(Enum):
     """
 
     NULL = N..
-    INTEGER = int
+    INTEGER = i..
     REAL = float
     TEXT = s..
     BLOB = bytes
@@ -27,7 +27,7 @@ c_ SQLiteType(Enum):
 c_ SchemaError(Exception):
     """Base Schema error class if a table schema is not respected."""
 
-    pass
+    p..
 
 
 c_ DB:
@@ -143,7 +143,7 @@ c_ DB:
             table: s..,
             columns: Optional[List[s..]] = N..,
             target: Optional[Tuple[s.., Optional[s..], Any]] = N..,
-    ) -> List[Tuple]:
+    ) __ List[Tuple]:
         """Selects records from the database.
 
         If there are no columns given, select all available columns as default.
@@ -175,7 +175,7 @@ c_ DB:
         raise NotImplementedError("You have to implement this method first.")
 
     $
-    ___ num_transactions(self) -> int:
+    ___ num_transactions(self) __ i..:
         """The total number of changes since the database connection was opened.
 
         Returns:

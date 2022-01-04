@@ -17,7 +17,7 @@ The binary representation of 7 is: 111.
 
 
 c_ Solution:
-    ___ hasAlternatingBits(self, n: int) -> bool:
+    ___ hasAlternatingBits(self, n: i..) __ bool:
         last = N..
         w.... n:
             cur = n & 1

@@ -1,4 +1,4 @@
-___ get_profile(*args, **kwargs) -> s..:
+___ get_profile(*args, **kwargs) __ s..:
     name = profession = N..
     ___ kw __ kwargs:
         __ kw __ 'name':

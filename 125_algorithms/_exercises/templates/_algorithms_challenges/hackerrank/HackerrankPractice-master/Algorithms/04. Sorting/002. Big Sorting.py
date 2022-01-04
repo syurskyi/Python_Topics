@@ -2,10 +2,10 @@
 # Score: 20
 
 
-n = int(input())
+n = i..(input())
 arr    # list
 ___ i __ r..(n):
     arr.a..(input())
-arr.s..(key=int)
+arr.s..(key=i..)
 ___ _ __ arr:
     print(_)

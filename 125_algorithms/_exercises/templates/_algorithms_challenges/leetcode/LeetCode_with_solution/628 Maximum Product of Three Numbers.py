@@ -28,7 +28,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maximumProduct(self, nums: List[int]) -> int:
+    ___ maximumProduct(self, nums: List[i..]) __ i..:
         """
         heapq nlargest nsmallest
         """

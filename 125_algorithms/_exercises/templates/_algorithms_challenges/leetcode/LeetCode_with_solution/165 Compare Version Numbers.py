@@ -21,14 +21,14 @@ c_ Solution:
         :type version2: str
         :rtype int
         """
-        version1 = map(int, version1.s..("."))
-        version2 = map(int, version2.s..("."))
+        version1 = map(i.., version1.s..("."))
+        version2 = map(i.., version2.s..("."))
         n1 = l..(version1)
         n2 = l..(version2)
 
         ___ i __ xrange(m..(n1, n2)):
             __ version1[i] __ version2[i]:
-                pass
+                p..
             ____:
                 r.. -1 __ version1[i] < version2[i] ____ 1
 

@@ -43,7 +43,7 @@ c_ Solution(object):
         ___ i __ r..(start, n+1):
             __ n % i __ 0:
                 item.a..(i)
-                helper(result, item, int(n/i), i)
+                helper(result, item, i..(n/i), i)
                 item.pop()
     
     ___ test

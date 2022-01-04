@@ -35,7 +35,7 @@ Note:
 
 
 c_ Solution:
-    ___ bitwiseComplement(self, N: int) -> int:
+    ___ bitwiseComplement(self, N: i..) __ i..:
         """
         invert the bit, and the mask it
         """

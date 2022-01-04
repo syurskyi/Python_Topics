@@ -25,7 +25,7 @@ c_ Solution(object):
         :rtype: int
         """
         # Divide and Co
-        pass
+        p..
     
     ___ test
         testCases = [

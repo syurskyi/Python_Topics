@@ -8,7 +8,7 @@ ____ bs4 _______ BeautifulSoup
 tmp = Path(os.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
-__ n.. countries.exists():
+__ n.. countries.exists
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/countries.xml',
         countries
@@ -23,7 +23,7 @@ ___ get_income_distribution(___=countries):
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    with open(___,'r') as f:
+    with open(___,'r') __ f:
         soup = BeautifulSoup(f.read())
 
     

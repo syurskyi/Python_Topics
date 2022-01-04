@@ -15,7 +15,7 @@ ___ simple_calculator(calculation):
    """
    try:
       num1, op, num2 = calculation.s..(" ")
-      num1, num2 = int(num1), int(num2)
+      num1, num2 = i..(num1), i..(num2)
    except ValueError:
       raise ValueError
 

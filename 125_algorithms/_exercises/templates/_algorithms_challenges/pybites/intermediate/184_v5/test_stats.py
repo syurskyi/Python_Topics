@@ -4,7 +4,7 @@ ____ Previous.stats _______ BiteStats
 
 
 @pytest.fixture(scope="module")
-___ bite_stats():
+___ bite_stats
     r.. BiteStats()
 
 
@@ -25,7 +25,7 @@ ___ test_number_users_solving_bites(bite_stats):
 
 
 ___ test_top_bite_by_number_of_clicks(bite_stats):
-    ... int(bite_stats.top_bite_by_number_of_clicks) __ 101
+    ... i..(bite_stats.top_bite_by_number_of_clicks) __ 101
 
 
 ___ test_top_user_by_bites_completed(bite_stats):

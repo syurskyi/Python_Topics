@@ -25,14 +25,14 @@ c_ Solution:
     ___ - ):
         count = 0
 
-    ___ pathSum(self, root: TreeNode, target: int) -> int:
+    ___ pathSum(self, root: TreeNode, target: i..) __ i..:
         """
         The path does not need to start or end at the root or a leaf, but it
         must go downwards (traveling only from parent nodes to child nodes).
 
         Downward path
         """
-        dfs(root, target, 0, defaultdict(int))
+        dfs(root, target, 0, defaultdict(i..))
         r.. count
 
     ___ dfs(self, node, target, cur_sum, prefix_sum_counter):

@@ -4,7 +4,7 @@ ____ functools _______ singledispatch
 @singledispatch
 ___ count_down(arg):
     __ n.. isi..(arg, (s.., tuple, set,
-                            int, float, d.., r..)):
+                            i.., float, d.., r..)):
         raise ValueError
 
 
@@ -23,7 +23,7 @@ ___ _(arg):
     count_down(l..(arg))
 
 
-@count_down.register(int)
+@count_down.register(i..)
 @count_down.register(float)
 ___ _(arg):
     count_down(l..(s..(arg)))

@@ -11,7 +11,7 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 
 
 c_ Solution:
-    ___ int(self, n):
+    ___ i..(self, n):
         r.. ord(n) - ord("0")
 
     ___ addStrings(self, num1, num2):
@@ -31,9 +31,9 @@ c_ Solution:
         idx = 0
         w.... idx < l..(num2):
             __ idx < l..(num1):
-                s = int(num1[idx]) + int(num2[idx]) + carry
+                s = i..(num1[idx]) + i..(num2[idx]) + carry
             ____:
-                s = int(num2[idx]) + carry
+                s = i..(num2[idx]) + carry
 
             __ s >= 10:
                 s -= 10

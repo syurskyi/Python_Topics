@@ -3,5 +3,5 @@ car_brands = ['Mazda', 'McLaren', 'Opel', 'Toyota', 'Honda']
 
 
 # Pass in the car_brands list and code the for loop.
-___ list_cars():
+___ list_cars
     print(cars)

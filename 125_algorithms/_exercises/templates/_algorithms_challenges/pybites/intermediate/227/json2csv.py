@@ -26,7 +26,7 @@ ___ convert_to_csv(json_file):
    csv_file = TMP / json_file.name.r..('.json', '.csv')
 
    # you code
-   with open(json_file) as f:
+   with open(json_file) __ f:
       try:
          data = json.loads(f.read())
       except JSONDecodeError:
@@ -34,7 +34,7 @@ ___ convert_to_csv(json_file):
          raise
 
    mounts = data["mounts"]["collected"]
-   with open(csv_file, "w") as f:
+   with open(csv_file, "w") __ f:
       headers = [key ___ key __ mounts[0].k..]
       writer = csv.DictWriter(f, fieldnames=headers)
 

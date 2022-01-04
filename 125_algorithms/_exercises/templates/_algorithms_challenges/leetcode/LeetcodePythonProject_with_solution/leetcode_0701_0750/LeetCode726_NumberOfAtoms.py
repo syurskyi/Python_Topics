@@ -30,13 +30,13 @@ c_ Solution(object):
                         count0 += 1
                     i += 1
                 hashmap0 = helper(s[prev:i-1])
-                __ i __ l..(s) o. n.. s[i].isdigit():
+                __ i __ l..(s) o. n.. s[i].isdigit
                     count = 1
                 ____:
                     prev = i
-                    w.... i < l..(s) a.. s[i].isdigit():
+                    w.... i < l..(s) a.. s[i].isdigit
                         i += 1
-                    count = int(s[prev:i])
+                    count = i..(s[prev:i])
                 ___ elem, freq __ hashmap0.i..:
                     hashmap[elem] = hashmap.get(elem, 0)+freq*count
             ____:
@@ -50,9 +50,9 @@ c_ Solution(object):
                     count = 1
                 ____:
                     prev = i
-                    w.... i < l..(s) a.. s[i].isdigit():
+                    w.... i < l..(s) a.. s[i].isdigit
                         i += 1
-                    count = int(s[prev:i])
+                    count = i..(s[prev:i])
                 hashmap[elem] = hashmap.get(elem, 0)+count
         r.. hashmap
     

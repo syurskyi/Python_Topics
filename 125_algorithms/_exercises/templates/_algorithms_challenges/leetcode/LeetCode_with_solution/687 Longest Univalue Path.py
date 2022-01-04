@@ -46,7 +46,7 @@ c_ Solution:
     ___ - ):
         ret = 0
 
-    ___ longestUnivaluePath(self, root: TreeNode) -> int:
+    ___ longestUnivaluePath(self, root: TreeNode) __ i..:
         find(root)
         r.. ret
 
@@ -69,7 +69,7 @@ c_ Solution_error:
     ___ - ):
         ret = 0
 
-    ___ longestUnivaluePath(self, root: TreeNode) -> int:
+    ___ longestUnivaluePath(self, root: TreeNode) __ i..:
         find(root)
         r.. ret
 

@@ -30,7 +30,7 @@ c_ Solution(object):
         __ n <= 2:
             r.. 0
         primes = [F..,]*2 + [T..,]*(n-2)
-        ___ i __ r..(2, int(math.sqrt(n-1))+1):
+        ___ i __ r..(2, i..(math.sqrt(n-1))+1):
             __ primes[i]:
                 ___ j __ r..(i+i, n, i):
                     primes[j] = F..

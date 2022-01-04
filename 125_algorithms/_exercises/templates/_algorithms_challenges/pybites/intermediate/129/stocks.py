@@ -4,7 +4,7 @@ STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
 # pre-work: load JSON data into program
 
-with requests.Session() as s:
+with requests.Session() __ s:
     data = s.get(STOCK_DATA).json()
 
 
@@ -40,7 +40,7 @@ ___ get_industry_cap(industry):
     r.. round(s..(industry_cap_lookup[industry]), 2)
 
 
-___ get_stock_symbol_with_highest_cap():
+___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
     highest_cap    # dict
@@ -50,7 +50,7 @@ ___ get_stock_symbol_with_highest_cap():
     r.. max(highest_cap, key=highest_cap.get)
 
 
-___ get_sectors_with_max_and_min_stocks():
+___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
     counter = collections.Counter([stock["sector"] ___ stock __ data __ stock["sector"] != "n/a"])

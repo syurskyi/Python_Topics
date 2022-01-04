@@ -1,10 +1,10 @@
-___ triangle():
-    pass
+___ triangle
+    p..
 
 
-___ is_triangle():
-    pass
+___ is_triangle
+    p..
 
 
-___ row():
-    pass
+___ row
+    p..

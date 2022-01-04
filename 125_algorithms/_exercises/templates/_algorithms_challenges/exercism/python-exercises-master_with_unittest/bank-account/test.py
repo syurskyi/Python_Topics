@@ -91,7 +91,7 @@ c_ BankAccountTest(unittest.TestCase):
             adjust_balance_concurrently()
 
     ___ adjust_balance_concurrently
-        ___ transact():
+        ___ transact
             account.deposit(5)
             time.sleep(0.001)
             account.withdraw(5)

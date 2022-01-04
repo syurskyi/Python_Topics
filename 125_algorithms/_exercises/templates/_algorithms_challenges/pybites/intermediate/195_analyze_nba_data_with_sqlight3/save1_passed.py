@@ -23,8 +23,8 @@ conn = sqlite3.connect(DB)
 cur = conn.cursor()
 
 
-___ import_data():
-    with requests.Session() as session:
+___ import_data
+    with requests.Session() __ session:
         content = session.get(DATA_URL).content.decode('utf-8')
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
@@ -51,7 +51,7 @@ ___ import_data():
 import_data()
 
 
-___ player_with_max_points_per_game():
+___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
     r.. l..(cur.execute('SELECT name '
@@ -59,14 +59,14 @@ ___ player_with_max_points_per_game():
                             'ORDER BY CAST(avg_points as FLOAT) DESC'))[0][0]
 
 
-___ number_of_players_from_duke():
+___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
     r.. l..(l..(cur.execute('SELECT name '
                                 'FROM players '
                                 'WHERE college = "Duke University"')))
 
 
-___ avg_years_active_players_stanford():
+___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
     r.. l..(cur.execute('SELECT ROUND(AVG(active), 2) '
@@ -74,7 +74,7 @@ ___ avg_years_active_players_stanford():
                             'WHERE college = "Stanford University"'))[0][0]
 
 
-___ year_with_most_drafts():
+___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
     r.. l..(cur.execute('SELECT year, COUNT(*) as draft_count '
                             'FROM players '

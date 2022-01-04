@@ -2,7 +2,7 @@ ____ typing _______ List, Union
 
 
 
-___ join_lists(lst_of_lst: List[List[s..]], sep: s..) -> Union[List[s..], N..]:
+___ join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:
 
     __ n.. lst_of_lst:
         r.. N..

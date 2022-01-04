@@ -13,5 +13,5 @@ ___ _choice(which):
     __ which __ 'teenth':
         r.. l.... dates: next(d ___ d __ dates __ 13 <= d.day <= 19)
 
-    ix = -1 __ (which __ 'last') ____ (int(which[0]) - 1)
+    ix = -1 __ (which __ 'last') ____ (i..(which[0]) - 1)
     r.. l.... dates: dates[ix]

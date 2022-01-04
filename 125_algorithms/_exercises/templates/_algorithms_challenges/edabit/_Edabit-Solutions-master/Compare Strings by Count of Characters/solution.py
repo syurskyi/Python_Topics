@@ -5,7 +5,7 @@ ___ comp(txt1, txt2):
         r.. F..
 
 
-___ test_comp():
+___ test_comp
     print("test has started")
     __ comp("test","food") != T..:
         print("error")

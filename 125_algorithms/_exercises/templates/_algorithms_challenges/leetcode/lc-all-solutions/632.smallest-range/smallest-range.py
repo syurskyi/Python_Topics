@@ -8,7 +8,7 @@ c_ Solution(object):
     :rtype: List[int]
     """
     k = l..(nums)
-    d = collections.defaultdict(int)
+    d = collections.defaultdict(i..)
     tuples    # list
 
     ___ i __ r..(l..(nums)):

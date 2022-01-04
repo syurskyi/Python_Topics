@@ -11,7 +11,7 @@ ___ int_args(func):
             raise TypeError
         ____ s..(n < 0 ___ n __ args):
             raise ValueError
-        ____ a..(isi..(n, int) ___ n __ args):
+        ____ a..(isi..(n, i..) ___ n __ args):
             r.. func(*args)
     r.. wrapper
 """ 

@@ -20,7 +20,7 @@ c_ ZigzagIterator2:
     @return: An integer
     """
     ___ next
-        __ n.. hasNext():
+        __ n.. hasNext
             r.. -1
 
         x = x
@@ -62,7 +62,7 @@ c_ ZigzagIterator2:
     @return: An integer
     """
     ___ next
-        __ n.. hasNext():
+        __ n.. hasNext
             r.. -1
 
         vec = queue.pop(0)

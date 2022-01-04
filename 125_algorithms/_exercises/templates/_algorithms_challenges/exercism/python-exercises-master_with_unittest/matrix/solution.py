@@ -1,6 +1,6 @@
 c_ Matrix(object):
     ___ - , s):
-        rows = [[int(n) ___ n __ row.s.. ]
+        rows = [[i..(n) ___ n __ row.s.. ]
                      ___ row __ s.s..('\n')]
 
     $

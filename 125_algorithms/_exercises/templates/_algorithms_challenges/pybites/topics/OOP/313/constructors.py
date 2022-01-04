@@ -20,15 +20,15 @@ c_ Domain:
 
     @classmethod
     ___ parse_url(cls, url):
-        url_domain = __.findall(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
+        url_domain = __.f..(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
         r.. Domain(url_domain[0][0])
 
     @classmethod
     ___ parse_email(cls, email):
-        email_domain = __.findall(r'@(.*\.[a-z]+)', email)
+        email_domain = __.f..(r'@(.*\.[a-z]+)', email)
         r.. Domain(email_domain[0])
 
-    ___ __str__(self) -> s..:
+    ___ __str__(self) __ s..:
         r.. f'{name}'
 
 print(Domain.parse_url('http://www.khooville.com'))

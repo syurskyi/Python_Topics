@@ -27,7 +27,7 @@ c_ GeoHash:
         hash_codes    # list
         hash_code = ''
         ___ i __ r..(0, l..(bin_codes), 5):
-            hash_code = int(''.j..(bin_codes[i : i + 5]), 2)
+            hash_code = i..(''.j..(bin_codes[i : i + 5]), 2)
             hash_codes.a..(base32[hash_code])
 
         r.. ''.j..(hash_codes[:precision])

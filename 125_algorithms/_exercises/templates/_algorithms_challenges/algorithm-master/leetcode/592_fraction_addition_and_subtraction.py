@@ -23,8 +23,8 @@ c_ Solution:
                 continue
 
             _a, _b = frac.s..('/')
-            _a = int(_a)
-            _b = int(_b)
+            _a = i..(_a)
+            _b = i..(_b)
 
             # if needs to prevent overflow, `// gcd`
             __ S[i] __ '+':

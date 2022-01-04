@@ -11,8 +11,8 @@ c_ Solution:
         stack    # list
 
         ___ c __ s:
-            __ c.isdigit():
-                times = times * 10 + int(c)
+            __ c.isdigit
+                times = times * 10 + i..(c)
             ____ c __ '[':
                 stack.a..(times)
                 times = 0
@@ -20,7 +20,7 @@ c_ Solution:
                 part    # list
                 w.... stack a.. isi..(stack[-1], s..):
                     part.a..(stack.pop())
-                cnt = int(stack.pop()) __ stack ____ 1
+                cnt = i..(stack.pop()) __ stack ____ 1
                 stack.a..(cnt * ''.j..(r..(part)))
             ____:
                 stack.a..(c)

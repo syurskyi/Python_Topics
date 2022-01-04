@@ -20,11 +20,11 @@ HOURS = 8
 
 
 ___ four_day_weekends(*args,
-        start_month: int = 8,
-        paid_time_off: int = 200,
-        year: int = 2020,
+        start_month: i.. = 8,
+        paid_time_off: i.. = 200,
+        year: i.. = 2020,
         show_workdays: bool = F..
-    ) -> N..
+    ) __ N..
     """Generates four day weekend report
 
     The four day weekends are calculated from the start_month through the end of the year

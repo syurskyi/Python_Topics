@@ -1,7 +1,7 @@
-amount_values = int(input())
-values = l..(map(int, input().s..()))
+amount_values = i..(input())
+values = l..(map(i.., input().s..()))
 
-___ get_sum():
+___ get_sum
 
     result = 0
     ___ i __ values:

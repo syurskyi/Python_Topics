@@ -15,7 +15,7 @@ FEED_URL = "http://bit.ly/2IkFe9B"
 Game = n..('Game', 'title link')
 
 
-___ get_games():
+___ get_games
     """Parses Steam's RSS feed and returns a list of Game namedtuples"""
     d = feedparser.parse(FEED_URL)
     print(d)

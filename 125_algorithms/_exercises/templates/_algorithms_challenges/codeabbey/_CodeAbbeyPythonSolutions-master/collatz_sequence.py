@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_seq(Xnext, counter=0):
@@ -10,7 +10,7 @@ ___ get_seq(Xnext, counter=0):
         ____:
             r.. get_seq(3*Xnext+1, counter+1)
 
-XList = l..(map(int, input().s..()))
+XList = l..(map(i.., input().s..()))
 ___ i __ XList:
     seq = get_seq(i)
     results.a..(seq)

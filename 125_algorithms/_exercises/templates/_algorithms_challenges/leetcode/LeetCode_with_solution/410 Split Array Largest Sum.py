@@ -28,7 +28,7 @@ ____ functools _______ lru_cache
 
 
 c_ SolutionDP:
-    ___ splitArray(self, nums: List[int], m: int) -> int:
+    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
         """
         non-aftereffect, dp
         Let F[l][k] be the minimized max sum in nums[:l] with k parts
@@ -55,7 +55,7 @@ c_ SolutionDP:
 
 
 c_ Solution:
-    ___ splitArray(self, nums: List[int], m: int) -> int:
+    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
         """
         Binary search over the subarray sum values
         """
@@ -86,7 +86,7 @@ c_ SolutionTLE2:
     ___ - ):
         sums = [0]
 
-    ___ splitArray(self, nums: List[int], m: int) -> int:
+    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
         """
         memoization with 1 less param
         """
@@ -118,7 +118,7 @@ c_ SolutionTLE:
     ___ - ):
         sums = [0]
 
-    ___ splitArray(self, nums: List[int], m: int) -> int:
+    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
         """
         Minimize the largest subarray sum
 

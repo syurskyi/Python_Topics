@@ -37,11 +37,11 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ leastBricks(self, wall: List[List[int]]) -> int:
+    ___ leastBricks(self, wall: List[List[i..]]) __ i..:
         """
         Iterate and count edge at a position
         """
-        h = defaultdict(int)
+        h = defaultdict(i..)
         m = l..(wall)
         ___ i __ r..(m):
             s = 0

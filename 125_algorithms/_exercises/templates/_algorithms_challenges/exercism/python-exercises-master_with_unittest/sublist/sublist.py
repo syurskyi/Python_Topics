@@ -1,2 +1,2 @@
-___ check_lists():
-    pass
+___ check_lists
+    p..

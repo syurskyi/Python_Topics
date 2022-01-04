@@ -103,7 +103,7 @@ c_ Solution(object):
                 j = i
                 w.... j < l..(s) a.. (s[j].isdigit() o. s[j] __ '-'): j += 1
 
-                ni = NestedInteger(int(s[i: j]) __ s[i: j] ____ N..)
+                ni = NestedInteger(i..(s[i: j]) __ s[i: j] ____ N..)
                 __ n.. stk: r.. ni
                 stk[-1].add(ni)
                 i = j

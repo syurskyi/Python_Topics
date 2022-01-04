@@ -5,8 +5,8 @@
 ____ collections _______ deque
 
 
-___ i __ r..(int(input())):
-    _, n = input(), deque(map(int, input().s..()))
+___ i __ r..(i..(input())):
+    _, n = input(), deque(map(i.., input().s..()))
     ans = T..
 
     ___ j __ r..(l..(n) - 1):

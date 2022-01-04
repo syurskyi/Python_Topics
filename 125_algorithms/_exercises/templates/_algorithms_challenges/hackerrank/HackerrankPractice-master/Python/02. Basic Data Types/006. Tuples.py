@@ -2,5 +2,5 @@
 # Score: 10
 
 
-n = int(input())
-print(hash(tuple(map(int, input().s..()))))
+n = i..(input())
+print(hash(tuple(map(i.., input().s..()))))

@@ -49,7 +49,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ findJudge(self, N: int, trust: List[List[int]]) -> int:
+    ___ findJudge(self, N: i.., trust: List[List[i..]]) __ i..:
         """
         like the find the celebrity
         """

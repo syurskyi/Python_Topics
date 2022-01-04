@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ romanToInt(self, s: s..) -> int:
+    ___ romanToInt(self, s: s..) __ i..:
         rom_dic = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
         count = 0
         #i will track the length of the string
@@ -16,7 +16,7 @@ c_ Solution:
                         i += 2
                         continue
                 except:
-                    pass
+                    p..
             __ s[i] __ 'X':
                 try:
                     __ s[i+1]__'L':
@@ -28,7 +28,7 @@ c_ Solution:
                         i += 2
                         continue
                 except:
-                    pass
+                    p..
             __ s[i] __ 'C':
                 try:
                     __ s[i+1]__'D':
@@ -40,7 +40,7 @@ c_ Solution:
                         i += 2
                         continue
                 except:
-                    pass
+                    p..
             __ s[i] __ rom_dic:
                 count += rom_dic[s[i]]
                 i += 1

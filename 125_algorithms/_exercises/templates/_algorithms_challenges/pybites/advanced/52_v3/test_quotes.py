@@ -8,7 +8,7 @@ client = app.test_client()
 client.testing = T..
 
 
-___ test_get_quotes():
+___ test_get_quotes
     response = client.get(API_ENDPOINT)
     ... response.status_code __ 200
 
@@ -21,7 +21,7 @@ ___ test_get_quotes():
     ... quotes[0] __ expected
 
 
-___ test_get_existing_quote():
+___ test_get_existing_quote
     response = client.get(API_ENDPOINT + '/2')
     ... response.status_code __ 200
 
@@ -33,12 +33,12 @@ ___ test_get_existing_quote():
     ... quotes[0] __ expected
 
 
-___ test_get_not_existing_quote():
+___ test_get_not_existing_quote
     response = client.get(API_ENDPOINT + '/4')
     ... response.status_code __ 404
 
 
-___ test_create_quote():
+___ test_create_quote
     new_quote = d..(quote='You talking to me?',
                      movie='Taxi driver')
     response = client.post(API_ENDPOINT,
@@ -52,7 +52,7 @@ ___ test_create_quote():
     ... new_quote['movie'] __ 'Taxi driver'
 
 
-___ test_create_quote_missing_data():
+___ test_create_quote_missing_data
     new_quote    # dict
     response = client.post(API_ENDPOINT,
                            data=json.dumps(new_quote),
@@ -60,7 +60,7 @@ ___ test_create_quote_missing_data():
     ... response.status_code __ 400
 
 
-___ test_create_quote_imcomplete_data():
+___ test_create_quote_imcomplete_data
     new_quote = d..(quote='You talking to me?')
     response = client.post(API_ENDPOINT,
                            data=json.dumps(new_quote),
@@ -68,7 +68,7 @@ ___ test_create_quote_imcomplete_data():
     ... response.status_code __ 400
 
 
-___ test_create_existing_quote():
+___ test_create_existing_quote
     new_quote = d..(quote='You talking to me?',
                      movie='Taxi driver')
     response = client.post(API_ENDPOINT,
@@ -77,7 +77,7 @@ ___ test_create_existing_quote():
     ... response.status_code __ 400
 
 
-___ test_update_quote():
+___ test_update_quote
     update_quote = d..(quote='You talking to me?!',
                         movie='Taxi driver (1976)')
     response = client.put(API_ENDPOINT + '/4',
@@ -92,7 +92,7 @@ ___ test_update_quote():
     ... updated_quote['movie'] __ 'Taxi driver (1976)'
 
 
-___ test_update_no_data():
+___ test_update_no_data
     update_quote    # dict
     response = client.put(API_ENDPOINT + '/4',
                           data=json.dumps(update_quote),
@@ -100,7 +100,7 @@ ___ test_update_no_data():
     ... response.status_code __ 400
 
 
-___ test_update_not_existing_quote():
+___ test_update_not_existing_quote
     update_quote = d..(quote='You talking to me?!')
     response = client.put(API_ENDPOINT + '/5',
                           data=json.dumps(update_quote),
@@ -108,7 +108,7 @@ ___ test_update_not_existing_quote():
     ... response.status_code __ 404
 
 
-___ test_update_no_changes():
+___ test_update_no_changes
     update_quote = d..(quote='Get to the choppa!',
                         movie='Predator')
     response = client.put(API_ENDPOINT + '/2',
@@ -123,7 +123,7 @@ ___ test_update_no_changes():
     ... updated_quote['movie'] __ 'Predator'
 
 
-___ test_delete_existing_quote():
+___ test_delete_existing_quote
     response = client.delete(API_ENDPOINT + '/2')
     ... response.status_code __ 204
 
@@ -134,6 +134,6 @@ ___ test_delete_existing_quote():
     ... l..(quotes) __ 3
 
 
-___ test_delete_not_existing_quote():
+___ test_delete_not_existing_quote
     response = client.delete(API_ENDPOINT + '/5')
     ... response.status_code __ 404

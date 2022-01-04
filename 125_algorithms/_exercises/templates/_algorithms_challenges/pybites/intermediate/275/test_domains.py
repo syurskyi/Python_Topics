@@ -4,7 +4,7 @@ ____ domains _______ get_common_domains, get_most_common_domains
 
 
 @pytest.fixture(scope="module")
-___ common_domains():
+___ common_domains
     r.. l..(get_common_domains())
 
 

@@ -37,7 +37,7 @@ c_ Solution(object):
             ___ i __ xrange(pos, l..(num)):
                 __ i != pos a.. num[pos] __ "0":
                     continue
-                nxt_val = int(num[pos:i+1])
+                nxt_val = i..(num[pos:i+1])
 
                 __ n.. cur_str:
                     dfs(num, target, i+1, "%d"%nxt_val, nxt_val, nxt_val, ret)

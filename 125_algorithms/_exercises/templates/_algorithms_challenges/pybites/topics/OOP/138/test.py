@@ -1,7 +1,7 @@
 
 c_ Employee:
 
-    ___ - , fname, lname, score) -> N..
+    ___ - , fname, lname, score) __ N..
         first = fname.t..
         last = lname.t..
         score = score

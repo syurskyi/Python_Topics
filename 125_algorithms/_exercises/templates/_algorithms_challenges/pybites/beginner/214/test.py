@@ -1,4 +1,4 @@
-___ infinite_sequence():
+___ infinite_sequence
     num = 0
     w... T...
         y.. num

@@ -7,7 +7,7 @@ ___ equal_slices(total, people, each):
         r.. F..
 
 
-___ test():
+___ test
     print("test has started")
     __ equal_slices(100, 0, 50) != F..:
         print("error1")

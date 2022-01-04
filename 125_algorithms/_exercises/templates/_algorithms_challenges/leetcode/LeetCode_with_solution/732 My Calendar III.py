@@ -49,7 +49,7 @@ c_ MyCalendarThree:
     ___ - ):
         lst    # list
 
-    ___ book(self, start: int, end: int) -> int:
+    ___ book(self, start: i.., end: i..) __ i..:
         bisect.insort(lst, (start, "start"))
         bisect.insort(lst, (end, "end"))
         ret = 0

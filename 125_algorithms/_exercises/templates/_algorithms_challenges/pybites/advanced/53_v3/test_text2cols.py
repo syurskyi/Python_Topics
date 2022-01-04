@@ -3,7 +3,7 @@ _______ __
 ____ text2cols _______ text_to_columns
 
 
-___ test_text_to_one_col():
+___ test_text_to_one_col
     text = """My house is small but cosy."""
     expected = [
         r"^My house is small",
@@ -14,7 +14,7 @@ ___ test_text_to_one_col():
         ... __.s..(m.., line)
 
 
-___ test_text_to_two_cols():
+___ test_text_to_two_cols
     text = """My house is small but cosy.
 
     It has a white kitchen and an empty fridge."""
@@ -28,7 +28,7 @@ ___ test_text_to_two_cols():
         ... __.s..(m.., line)
 
 
-___ test_text_to_three_cols():
+___ test_text_to_three_cols
     text = """My house is small but cosy.
 
     It has a white kitchen and an empty fridge.
@@ -45,7 +45,7 @@ ___ test_text_to_three_cols():
         ... __.s..(m.., line)
 
 
-___ test_text_to_four_cols():
+___ test_text_to_four_cols
     text = """My house is small but cosy.
 
     It has a white kitchen and an empty fridge.

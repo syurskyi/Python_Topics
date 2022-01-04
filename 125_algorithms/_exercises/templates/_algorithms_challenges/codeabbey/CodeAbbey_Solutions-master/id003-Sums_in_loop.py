@@ -4,7 +4,7 @@ ___ find_Sums(pairAmount):
                 numbers = raw_input().s..(' ')
                 s.. = 0
                 ___ x __ r..(0, 2):
-                        s.. += int(numbers[x])
+                        s.. += i..(numbers[x])
                 answer.a..(s..(s..))
         print(' '.j..(answer))
 find_Sums(input())

@@ -4,7 +4,7 @@ ____ calculator _______ create_parser, call_calculator
 
 
 @pytest.fixture
-___ parser():
+___ parser
     r.. create_parser()
 
 

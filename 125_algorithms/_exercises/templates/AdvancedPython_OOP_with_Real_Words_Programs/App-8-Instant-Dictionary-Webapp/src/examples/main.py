@@ -1,7 +1,7 @@
-_____ justpy as jp
+_____ justpy __ jp
 
 @jp.SetRoute("/home")
-___ home():
+___ home
     wp  jp.QuasarPage(tailwindTrue)
     div  jp.Div(awp, classes"bg-gray-200 h-screen")
 
@@ -25,7 +25,7 @@ ___ home():
     r_ wp
 
 @jp.SetRoute("/about")
-___ about():
+___ about
     wp  jp.QuasarPage(tailwindTrue)
 
 ___ sum_up(widget, msg):

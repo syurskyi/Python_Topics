@@ -8,7 +8,7 @@ ___ divide_numbers(numerator, denominator):
     __ denominator __ 0:
         r.. 0
     ___ number __ numerator, denominator:
-        r.. int(number)
+        r.. i..(number)
         __ F..:
             raise TypeError("Only integers are allowed")
     r.. (numerator % denominator)

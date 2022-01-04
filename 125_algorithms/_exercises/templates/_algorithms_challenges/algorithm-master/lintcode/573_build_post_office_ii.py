@@ -32,8 +32,8 @@ c_ Solution:
 
         m, n = l..(grid), l..(grid[0])
         cnt = 0
-        times = collections.defaultdict(int)
-        steps = collections.defaultdict(int)
+        times = collections.defaultdict(i..)
+        steps = collections.defaultdict(i..)
 
         ___ x __ r..(m):
             ___ y __ r..(n):
@@ -108,7 +108,7 @@ c_ Solution:
         m, n = l..(grid), l..(grid[0])
         cnt = 0
         ids = collections.defaultdict(set)  # record house ids
-        steps = collections.defaultdict(int)  # total steps for all houses
+        steps = collections.defaultdict(i..)  # total steps for all houses
 
         ___ x __ r..(m):
             ___ y __ r..(n):
@@ -116,7 +116,7 @@ c_ Solution:
                     continue
 
                 cnt += 1
-                step = collections.defaultdict(int)  # steps for current house
+                step = collections.defaultdict(i..)  # steps for current house
                 dfs(grid, x, y, cnt, ids, steps, step)
 
         ans = INF = float('inf')

@@ -41,7 +41,7 @@ c_ Solution(object):
         r.. node
     
     ___ test
-        pass
+        p..
 
 __ __name__ __ '__main__':
     Solution().test()

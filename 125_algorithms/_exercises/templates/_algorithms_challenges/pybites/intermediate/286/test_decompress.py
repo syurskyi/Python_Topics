@@ -1,19 +1,19 @@
 ____ decompress _______ decompress
 
 
-___ test_empty_string():
+___ test_empty_string
     ... decompress('', {'[', 'L'}) __ ''
 
 
-___ test_empty_table():
+___ test_empty_table
     ... decompress('Hello World!', {}) __ 'Hello World!'
 
 
-___ test_no_conversions():
+___ test_no_conversions
     ... decompress('Hello World!', {'*': 'o', '#': 'h'}) __ 'Hello World!'
 
 
-___ test_example():
+___ test_example
     table = {'$': 's',
              '%': 'y',
              '/': 't'
@@ -22,7 +22,7 @@ ___ test_example():
     ... decompress('P%Bi/e$', table) __ 'PyBites'
 
 
-___ test_short():
+___ test_short
     table = {'*': 'c',
              '#': '00',
              '$': '*y',
@@ -31,7 +31,7 @@ ___ test_short():
     ... decompress('$3#', table) __ 'cy300'
 
 
-___ test_long():
+___ test_long
     table = {'#': 'hem',
              '@': 'T#',
              '$': 't#',

@@ -5,18 +5,18 @@ PUNCTUATION_CHARS = l..(string.punctuation)
 used_passwords = set("PassWord@1 PyBit$s9".s..())
 
 
-___ validate_password(password: s..) -> bool:
+___ validate_password(password: s..) __ bool:
     __ n.. (6 <= l..(password) <= 12):
         r.. F..
     __ password __ used_passwords:
         r.. F..
     d.. = lcase = ucase = punc = 0
     ___ c __ password:
-        __ c.isdigit():
+        __ c.isdigit
             d.. += 1
         ____ c.isl..
             lcase += 1
-        ____ c.isupper():
+        ____ c.isupper
             ucase += 1
         ____ c __ PUNCTUATION_CHARS:
             punc += 1

@@ -1,7 +1,7 @@
 _______ os
 _______ json
 ____ d__ _______ date
-_______ d__ as dt
+_______ d__ __ dt
 ____ pathlib _______ Path
 ____ typing _______ Dict, List
 ____ urllib.request _______ urlretrieve
@@ -11,11 +11,11 @@ URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
-__ n.. RATES_FILE.exists():
+__ n.. RATES_FILE.exists
     urlretrieve(URL, RATES_FILE)
 
 
-___ get_all_days(start_date: date, end_date: date) -> List[date]:
+___ get_all_days(start_date: date, end_date: date) __ List[date]:
 
     dates    # list
 
@@ -33,7 +33,7 @@ ___ get_all_days(start_date: date, end_date: date) -> List[date]:
 
 
 
-___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, date]:
+___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
 
     
     
@@ -71,10 +71,10 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, da
 
 ___ exchange_rates(
     start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
-) -> Dict[date, d..]:
+) __ Dict[date, d..]:
     
 
-    with open(RATES_FILE,'r') as f:
+    with open(RATES_FILE,'r') __ f:
         data = json.load(f)
     __ (start_date < data['start_at']) o. (end_date > data['end_at']):
         raise ValueError("Invalid dates")

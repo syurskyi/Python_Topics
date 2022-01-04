@@ -10,7 +10,7 @@ c_ Thumbs:
         r.. self * number
 
     ___ __mul__(self,number):
-        __ isi..(number,int):
+        __ isi..(number,i..):
             __ number > 0:
                 string = THUMBS_UP
             ____ number < 0:

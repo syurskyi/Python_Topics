@@ -8,6 +8,6 @@ ___ multiply_numbers(a, b):
     r.. a * b
 
 
-___ enter_name():
+___ enter_name
     username = input("What is your name?")
     r.. username

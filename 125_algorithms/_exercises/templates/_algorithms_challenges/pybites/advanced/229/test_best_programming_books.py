@@ -4,7 +4,7 @@ ____ best_programming_books _______ Book, display_books, load_data
 
 
 @pytest.fixture(scope="session")
-___ dummy_book():
+___ dummy_book
     title = "Python Testing with pytest"
     author = "Okken, Brian"
     year = 2017
@@ -14,14 +14,14 @@ ___ dummy_book():
 
 
 @pytest.fixture(scope="session")
-___ python_books():
+___ python_books
     data = load_data()
     __ isi..(data, l..):
         r.. data
     r.. l..(data)
 
 
-___ test_book_class_incorrectly():
+___ test_book_class_incorrectly
     with pytest.raises(TypeError):
         Book()
 

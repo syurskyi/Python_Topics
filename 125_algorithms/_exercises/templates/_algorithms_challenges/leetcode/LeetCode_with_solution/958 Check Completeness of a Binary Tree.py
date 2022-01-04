@@ -34,7 +34,7 @@ c_ Solution:
         max_depth = -float("inf")
         expecting_partial = F..
 
-    ___ isCompleteTree(self, root: TreeNode) -> bool:
+    ___ isCompleteTree(self, root: TreeNode) __ bool:
         """
         Do it in one pass
         Left first dfs

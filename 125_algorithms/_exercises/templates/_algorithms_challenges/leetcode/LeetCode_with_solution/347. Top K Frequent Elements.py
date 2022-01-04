@@ -33,7 +33,7 @@ c_ Solution(object):
         :type K: int
         :rtype: List[int]
         """
-        cnt = defaultdict(int)
+        cnt = defaultdict(i..)
         ___ e __ nums:
             cnt[e] += 1
 

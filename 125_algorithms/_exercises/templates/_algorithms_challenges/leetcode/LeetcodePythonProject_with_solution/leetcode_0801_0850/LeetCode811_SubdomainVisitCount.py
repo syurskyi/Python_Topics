@@ -12,7 +12,7 @@ c_ Solution(object):
         hashmap    # dict
         ___ s __ cpdomains:
             cnt, s = s.s..(' ')
-            cnt = int(cnt)
+            cnt = i..(cnt)
             arr = s.s..('.')[::-1]
             ___ i __ r..(1, l..(arr)+1):
                 s0 = '.'.j..(arr[:i][::-1])

@@ -2,8 +2,8 @@ ____ d__ _______ d__
 ____ freezegun _______ freeze_time
 
 
-___ ontrack_reading(books_goal: int, books_read: int,
-                    day_of_year: int = N..) -> bool:
+___ ontrack_reading(books_goal: i.., books_read: i..,
+                    day_of_year: i.. = N..) __ bool:
     __ day_of_year __ N..
         today = d__.today()
         first_day = d__(2021,1,1)

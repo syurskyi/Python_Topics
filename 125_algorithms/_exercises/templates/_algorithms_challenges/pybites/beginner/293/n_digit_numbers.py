@@ -1,8 +1,8 @@
 ____ typing _______ List, TypeVar
-T = TypeVar('T', int, float)
+T = TypeVar('T', i.., float)
 
 
-___ n_digit_numbers(numbers: List[T], n: int) -> List[int]:
+___ n_digit_numbers(numbers: List[T], n: i..) __ List[i..]:
     new_numbers    # list
     __ n >= 1:
         ___ number __ numbers:
@@ -11,7 +11,7 @@ ___ n_digit_numbers(numbers: List[T], n: int) -> List[int]:
                 new_number = new_number[:n+1]
             ____:
                 new_number = new_number[:n]
-            new_numbers.a..(int(new_number))
+            new_numbers.a..(i..(new_number))
         print(new_numbers)
         r.. [number*(10**(n-l..(s..(number))))
                 __ number > 0 ____ number*(10**(n-l..(s..(number).r..('-',''))))

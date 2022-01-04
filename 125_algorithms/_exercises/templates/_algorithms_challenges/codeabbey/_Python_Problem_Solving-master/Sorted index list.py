@@ -1,7 +1,7 @@
 #take the input of how many elements you want
-data = int(input())
+data = i..(input())
 # take the input of the numbers to be sorted
-a = [int(num) ___ num __ input().s.. ]
+a = [i..(num) ___ num __ input().s.. ]
 
 #create a dictionary to store the index of the list
 ele    # dict
@@ -18,7 +18,7 @@ ___ i __ r..(l..(a)):
         __ a[j] > a[j+1]:
             a[j],a[j+1]=a[j+1],a[j]
         ____:
-            pass
+            p..
 #identifying the elements which are sorted with the dictionary key and printing the original index in sorted form
 ___ ele_list __ a:
     ___ dic __ ele.k..:

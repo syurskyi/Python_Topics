@@ -1,6 +1,6 @@
 ____ collections _______ Counter, defaultdict
 ____ io _______ StringIO
-_______ pandas as pd
+_______ pandas __ pd
 _______ csv
 
 _______ requests
@@ -11,7 +11,7 @@ CSV_URL = 'https://raw.githubusercontent.com/pybites/SouthParkData/master/by-sea
 ___ get_season_csv_file(season):
     """Receives a season int, and downloads loads in its
        corresponding CSV_URL"""
-    with requests.Session() as s:
+    with requests.Session() __ s:
         download = s.get(CSV_URL.f..(season))
         r.. download.content.decode('utf-8')
 

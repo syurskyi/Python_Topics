@@ -4,7 +4,7 @@ ____ to_columns _______ print_names_to_columns
 
 
 @pytest.fixture
-___ names():
+___ names
     r.. "Bob Julian Tim Sara Eva Ana Jake Maria".s..
 
 

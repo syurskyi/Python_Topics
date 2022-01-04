@@ -1,24 +1,24 @@
 c_ ComplexNumber(object):
     ___ - , real, imaginary):
-        pass
+        p..
 
     ___ add(self, other):
-        pass
+        p..
 
     ___ mul(self, other):
-        pass
+        p..
 
     ___ sub(self, other):
-        pass
+        p..
 
     ___ div(self, other):
-        pass
+        p..
 
     ___ abs
-        pass
+        p..
 
     ___ conjugate
-        pass
+        p..
 
     ___ exp
-        pass
+        p..

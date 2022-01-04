@@ -29,7 +29,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ leastInterval(self, tasks: List[s..], n: int) -> int:
+    ___ leastInterval(self, tasks: List[s..], n: i..) __ i..:
         """
         Gap is n
 
@@ -42,7 +42,7 @@ c_ Solution:
         Free page size is n + 1 - (# of max)
         Find the idle count
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ t __ tasks:
             counter[t] += 1
 
@@ -62,13 +62,13 @@ c_ Solution:
         r.. l..(tasks) + idle
 
 
-    ___ leastInterval_complicated(self, tasks: List[s..], n: int) -> int:
+    ___ leastInterval_complicated(self, tasks: List[s..], n: i..) __ i..:
         """
         greedy
         max heap, most tasks first
         cool down queue
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ t __ tasks:
             counter[t] += 1
 

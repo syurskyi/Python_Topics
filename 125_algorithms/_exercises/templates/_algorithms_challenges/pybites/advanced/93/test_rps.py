@@ -9,7 +9,7 @@ ____ rps _______ (_get_winner, game,
 
 
 @pytest.fixture()
-___ my_game():
+___ my_game
     """Initialize game and move it to point where to
        receive first player (send) input"""
     gen = game()
@@ -70,7 +70,7 @@ ___ test_stop_iteration(my_game):
         my_game.send('q')
 
 
-___ test_computer_move():
+___ test_computer_move
     computer_moves = set()
     ___ i __ r..(1000):
         computer_moves.add(_get_computer_move())

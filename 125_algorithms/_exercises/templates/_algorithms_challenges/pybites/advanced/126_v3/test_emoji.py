@@ -1,13 +1,13 @@
 ____ emoji _______ what_means_emoji, find_emoji
 
 
-___ test_what_means_emoji_found():
+___ test_what_means_emoji_found
     what_means_emoji('🐶').l.. __ 'dog face'
     what_means_emoji('🏋').l.. __ 'weight lifter'
     what_means_emoji('🌇').l.. __ 'sunset over buildings'
 
 
-___ test_what_means_emoji_not_found():
+___ test_what_means_emoji_not_found
     ... what_means_emoji('aaa').l.. __ 'not found'
 
 

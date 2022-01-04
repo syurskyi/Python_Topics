@@ -50,7 +50,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ pyramidTransition(self, bottom: s.., allowed: List[s..]) -> bool:
+    ___ pyramidTransition(self, bottom: s.., allowed: List[s..]) __ bool:
         """
         Need search, since multiple placements are possible
         The order of allowed matters
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. dfs(T, bottom)
 
-    ___ dfs(self, T, level) -> bool:
+    ___ dfs(self, T, level) __ bool:
         __ l..(level) __ 1:
             r.. T..
 
@@ -88,7 +88,7 @@ c_ Solution:
                 y.. head + tail
 
 
-    ___ dfs_deep(self, T, level, lo, nxt_level) -> bool:
+    ___ dfs_deep(self, T, level, lo, nxt_level) __ bool:
         __ lo + 1 __ l..(level):
             r.. T..
 

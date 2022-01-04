@@ -16,7 +16,7 @@ keep enjoying our bites!
 """
 
 
-___ slice_and_dice(text: s.. = text) -> l..:
+___ slice_and_dice(text: s.. = text) __ l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     #strip off any leading spaces,

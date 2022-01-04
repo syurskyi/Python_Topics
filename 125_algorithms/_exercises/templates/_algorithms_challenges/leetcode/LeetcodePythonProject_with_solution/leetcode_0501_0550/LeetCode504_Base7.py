@@ -19,7 +19,7 @@ c_ Solution(object):
         w.... num > 0:
             digit = num%7
             res = s..(digit)+res
-            num = int((num-digit)/7)
+            num = i..((num-digit)/7)
         __ n.. res:
             r.. '0'
         ____:

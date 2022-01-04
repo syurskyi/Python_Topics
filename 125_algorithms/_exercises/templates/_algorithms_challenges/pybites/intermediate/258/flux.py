@@ -1,9 +1,9 @@
-_______ pandas as pd
+_______ pandas __ pd
 XYZ = "https://bites-data.s3.us-east-2.amazonaws.com/xyz.csv"
 THRESHOLDS = (5000, 0.05)
 
 
-___ calculate_flux(XYZ: s..) -> l..:
+___ calculate_flux(XYZ: s..) __ l..:
     """Read the data in from xyz.csv
     add two new columns, one to calculate dollar flux,
     and the other to calculate percentage flux
@@ -11,7 +11,7 @@ ___ calculate_flux(XYZ: s..) -> l..:
     """
 
 
-    data = pd.read_csv(XYZ,dtype={'12/31/2020': int,'12/31/2019': int})
+    data = pd.read_csv(XYZ,dtype={'12/31/2020': i..,'12/31/2019': i..})
 
     data['dollar_flux'] = data.iloc[:,1].sub(data.iloc[:,2])
     data['pct_flux'] = data.iloc[:,[-2,1]].pct_change(axis=1).dropna(axis=1)
@@ -27,7 +27,7 @@ ___ calculate_flux(XYZ: s..) -> l..:
 
 
 
-___ identify_flux(xyz: l..) -> l..:
+___ identify_flux(xyz: l..) __ l..:
     """Load the list of tuples, iterate through
     each item and determine if it is above both
     thresholds. if so, add to the list

@@ -4,7 +4,7 @@ ____ validate _______ (get_secret_token, SECRET,
                       UserDoesNotExist, UserAccessExpired, UserNoPermission)
 
 
-___ test_get_secret_token():
+___ test_get_secret_token
     ... issubclass(UserDoesNotExist, Exception)
     ... issubclass(UserAccessExpired, Exception)
     ... issubclass(UserNoPermission, Exception)

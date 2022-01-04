@@ -43,7 +43,7 @@ c_ Solution:
     ___ - ):
         ans = N..
 
-    ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+    ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) __ TreeNode:
         c.. root, p, q)
         r.. ans
 

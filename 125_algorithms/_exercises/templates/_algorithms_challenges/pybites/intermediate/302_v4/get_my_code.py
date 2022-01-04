@@ -8,12 +8,12 @@ url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
 tmp = Path(os.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
-__ n.. json_input_file.exists():
+__ n.. json_input_file.exists
     urlretrieve(url.f..(filename=filename), json_input_file)
 
 
-___ get_json_data():
-    with open(json_input_file) as file_in:
+___ get_json_data
+    with open(json_input_file) __ file_in:
         r.. json.load(file_in)
 
 

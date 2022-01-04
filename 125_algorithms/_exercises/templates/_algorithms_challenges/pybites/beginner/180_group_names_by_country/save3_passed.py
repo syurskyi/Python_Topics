@@ -13,9 +13,9 @@ Parrett,Ines,CN
 Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
-___ group_names_by_country(data: s.. = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) __ defaultdict:
     countries = defaultdict(l..)
-    data = iter(data.splitlines())
+    data = i..(data.splitlines())
     next(data)
     ___ line __ data:
         lastname, name, country = line.s..(",")

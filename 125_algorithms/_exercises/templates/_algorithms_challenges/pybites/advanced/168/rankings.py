@@ -3,7 +3,7 @@ ____ typing _______ List, Tuple
 _______ heapq
 
 
-bites: List[int] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
+bites: List[i..] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
 names: List[s..] = [
     "snow",
     "natalia",
@@ -30,7 +30,7 @@ c_ Ninja:
     print out in the following format: [469] bob
     """
     name: s..
-    bites: int
+    bites: i..
 
     
     ___ __lt__(self,other):
@@ -82,7 +82,7 @@ c_ Rankings:
             parameter indicating how many Ninjas to pair up
     returns List containing tuples of the paired up Ninja objects
     """
-    rankings: List[int] = field(default_factory=l..)
+    rankings: List[i..] = field(default_factory=l..)
 
 
 

@@ -2,7 +2,7 @@ _______ urllib.request
 _______ __
 
 
-___ create_chart():
+___ create_chart
     resp = urllib.request.urlopen(f'https://bites-data.s3.us-east-2.amazonaws.com/safari.logs').read()
     html = resp.decode('UTF-8')
     paragraphs = html.s..('\n')

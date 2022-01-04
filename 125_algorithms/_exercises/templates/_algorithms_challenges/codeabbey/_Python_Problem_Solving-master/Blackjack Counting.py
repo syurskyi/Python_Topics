@@ -1,5 +1,5 @@
 #accept the range of input
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     #accept the types of card
     a = input().s..
     # sort the list keeping A at the end
@@ -31,7 +31,7 @@ ___ i __ r..(int(input())):
                     tot += 11
     #check the tot
     __ tot <= 21:
-        print(int(tot),end= ' ')
+        print(i..(tot),end= ' ')
     ____:
         print("Bust",end = ' ')
 

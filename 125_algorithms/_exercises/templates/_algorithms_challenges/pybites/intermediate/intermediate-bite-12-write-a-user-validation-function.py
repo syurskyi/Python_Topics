@@ -24,13 +24,13 @@ USERS = (julian, bob, pybites)
 
 # define exception classes here
 c_ UserDoesNotExist(Exception):
-    pass
+    p..
 
 c_ UserAccessExpired(Exception):
-    pass
+    p..
 
 c_ UserNoPermission(Exception):
-    pass
+    p..
 
 ### My solution
 
@@ -86,9 +86,9 @@ ___ pyb_get_secret_token(username):
 
 try:
     print(pyb_get_secret_token('Tim'))
-except UserAccessExpired as e:
+except UserAccessExpired __ e:
     print("Caught exception UserAccessExpired")
-except UserNoPermission as e:
+except UserNoPermission __ e:
     print("Caught exception UserNoPermission")
-except UserDoesNotExist as e:
+except UserDoesNotExist __ e:
     print("Caught exception UserDoesNotExist")

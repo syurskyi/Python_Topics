@@ -1,10 +1,10 @@
 ____ typing _______ List  # not needed when we upgrade to 3.9
 _______ math
 
-___ print_names_to_columns(names: List[s..], cols: int = 2) -> N..
+___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
 
     
-    rows = int(math.ceil(l..(names) / cols))
+    rows = i..(math.ceil(l..(names) / cols))
 
     
     ___ row __ r..(rows):

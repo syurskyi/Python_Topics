@@ -44,7 +44,7 @@ c_ Solution:
         :type root: TreeNode
         :rtype: List[int]
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         traverse(root, counter)
         ret = [[], 0]
         ___ k, v __ counter.i..:

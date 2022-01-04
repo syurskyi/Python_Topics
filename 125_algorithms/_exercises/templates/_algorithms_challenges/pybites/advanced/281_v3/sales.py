@@ -5,7 +5,7 @@ ____ base64 _______ b64decode
 ____ pathlib _______ Path
 ____ typing _______ Dict, List, Union
 
-_______ pandas as pd  # type: ignore
+_______ pandas __ pd  # type: ignore
 _______ requests
 
 URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
@@ -13,7 +13,7 @@ STATS: List[s..] = ["sum", "mean", "max"]
 TMP: Path = Path(os.getenv("TMP", "/tmp")) / "MonthlySales.csv"
 
 
-___ get_data(url: s..) -> Dict[s.., s..]:
+___ get_data(url: s..) __ Dict[s.., s..]:
     """Get data from Github
 
     Args:
@@ -22,18 +22,18 @@ ___ get_data(url: s..) -> Dict[s.., s..]:
     Returns:
         Dict[str, str]: The dictionary extracted from the data
     """
-    __ TMP.exists():
+    __ TMP.exists
         data = json.loads(TMP.read_text())
     ____:
         response = requests.get(url)
         response.raise_for_status()
         data = json.loads(response.text)
-        with TMP.open("w") as tmp:
+        with TMP.open("w") __ tmp:
             json.dump(data, tmp)
     r.. data
 
 
-___ process_data(url: s..) -> pd.DataFrame:
+___ process_data(url: s..) __ pd.DataFrame:
     """Process the data from the Github API
 
     Args:
@@ -47,7 +47,7 @@ ___ process_data(url: s..) -> pd.DataFrame:
 
 
 
-___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) -> N..
+___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) __ N..
     """Summary report generated from the DataFrame and list of stats
 
     Will aggregate statistics for sum, mean, and max by default.
@@ -74,7 +74,7 @@ ___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) -> N.
 
 
 
-___ yearly_report(df: pd.DataFrame, year: int) -> N..
+___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     """Generate a sales report for the given year
 
     Args:
@@ -105,7 +105,7 @@ ___ yearly_report(df: pd.DataFrame, year: int) -> N..
         11     78628.72
         12     69545.62
     """
-    __ year n.. __ df.month.dt.year.unique():
+    __ year n.. __ df.month.dt.year.unique
         raise ValueError(f'The year {year} is not included in the report!')
     df = df.c..
     df['year'] = df.month.dt.year
@@ -119,7 +119,7 @@ ___ yearly_report(df: pd.DataFrame, year: int) -> N..
 __ __name__ __ "__main__":
     data = process_data(URL)
     summary_report(data)
-    ___ year __ (data["month"].dt.year).unique():
+    ___ year __ (data["month"].dt.year).unique
         yearly_report(data, year)
 
     yearly_report(data, 2020)

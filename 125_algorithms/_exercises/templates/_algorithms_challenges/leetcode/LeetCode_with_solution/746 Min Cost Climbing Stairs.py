@@ -24,7 +24,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ minCostClimbingStairs(self, cost: List[int]) -> int:
+    ___ minCostClimbingStairs(self, cost: List[i..]) __ i..:
         """
         dp
         let F[i] be the cost to reach i-th stair

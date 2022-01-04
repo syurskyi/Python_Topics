@@ -2,7 +2,7 @@ _______ base64
 ____ typing _______ List  # will remove with 3.9
 
 
-___ get_credit_cards(data: bytes) -> List[s..]:
+___ get_credit_cards(data: bytes) __ List[s..]:
     """Decode the base64 encoded data which gives you a csv
     of "first_name,last_name,credit_card", from which you have
     to extract the credit card numbers.

@@ -19,6 +19,6 @@ ___ test_n_digit_numbers(input_list, n, expected):
     ... n_digit_numbers(input_list, n) __ expected
 
 
-___ test_invalid_n():
+___ test_invalid_n
     with pytest.raises(ValueError):
         n_digit_numbers([1, 2, 3], 0)

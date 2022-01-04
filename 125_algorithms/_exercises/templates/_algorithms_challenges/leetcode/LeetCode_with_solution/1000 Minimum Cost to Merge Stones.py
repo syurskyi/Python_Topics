@@ -49,7 +49,7 @@ ____ functools _______ lru_cache
 
 
 c_ Solution:
-    ___ mergeStones(self, stones: List[int], K: int) -> int:
+    ___ mergeStones(self, stones: List[i..], K: i..) __ i..:
         """
         Mergeable? K -> 1. Reduction size (K - 1)
         N - (K - 1) * m = 1

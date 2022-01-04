@@ -47,7 +47,7 @@ EXPECTED = {'High income': ['Aruba',
 
 
 @pytest.fixture(scope="module")
-___ actual():
+___ actual
     r.. get_income_distribution()
 
 

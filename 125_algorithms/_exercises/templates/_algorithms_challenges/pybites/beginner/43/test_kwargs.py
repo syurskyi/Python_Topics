@@ -3,30 +3,30 @@ _______ pytest
 ____ kwargs _______ get_profile
 
 
-___ test_no_arguments():
+___ test_no_arguments
     ... get_profile() __ 'julian is a programmer'
 
 
-___ test_one_positional_arg():
+___ test_one_positional_arg
     with pytest.raises(TypeError):
         get_profile('julian')
 
 
-___ test_wrong_single_kw():
+___ test_wrong_single_kw
     with pytest.raises(TypeError):
         get_profile(test=T..)
 
 
-___ test_wrong_additional_kw():
+___ test_wrong_additional_kw
     with pytest.raises(TypeError):
         get_profile(name='bob', profession='software developer',
                     another_flag=F..)
 
 
-___ test_correct_kw_second_default():
+___ test_correct_kw_second_default
     ... get_profile(name='bob') __ 'bob is a programmer'
 
 
-___ test_two_correct_kws():
+___ test_two_correct_kws
     ret = get_profile(name='bob', profession='software developer')
     ... ret __ 'bob is a software developer'

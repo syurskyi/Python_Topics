@@ -2,7 +2,7 @@
 # Score: 10
 
 
-k = int(input())
-room_number_list = l..(map(int, input().s..()))
+k = i..(input())
+room_number_list = l..(map(i.., input().s..()))
 captain_room_number = (s..(set(room_number_list)) * k - s..(room_number_list)) // (k - 1)
 print(captain_room_number)

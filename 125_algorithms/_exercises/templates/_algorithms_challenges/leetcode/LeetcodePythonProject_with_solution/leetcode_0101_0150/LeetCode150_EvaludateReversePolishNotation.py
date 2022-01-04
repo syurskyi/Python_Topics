@@ -28,9 +28,9 @@ c_ Solution(object):
             ____ token __ '/':
                 num1 = stack.pop()
                 num2 = stack.pop()
-                stack.a..(int(operator.truediv(num2, num1) ))
+                stack.a..(i..(operator.truediv(num2, num1) ))
             ____:
-                stack.a..(int(token))
+                stack.a..(i..(token))
         r.. stack[-1]
     
     ___ test

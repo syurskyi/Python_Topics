@@ -6,7 +6,7 @@ ____ collections _______ deque
 
 
 d = deque()
-___ _ __ r..(int(input())):
+___ _ __ r..(i..(input())):
     line = input().s..
     __ line[0] __ 'append':
         d.a..(line[1])

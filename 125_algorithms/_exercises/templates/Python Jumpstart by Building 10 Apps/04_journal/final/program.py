@@ -3,18 +3,18 @@ _______ journal
 # from journal import *
 
 
-___ main():
+___ main
     print_header()
     run_event_loop()
 
 
-___ print_header():
+___ print_header
     print('------------------------')
     print('    JOURNAL APP')
     print('------------------------')
 
 
-___ run_event_loop():
+___ run_event_loop
     print('What do you want to do with your journal?')
     cmd  'EMPTY'
     journal_name  'default'

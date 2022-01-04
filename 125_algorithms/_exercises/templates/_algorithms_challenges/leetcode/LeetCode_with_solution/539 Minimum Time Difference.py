@@ -13,7 +13,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findMinDifference(self, timePoints: List[s..]) -> int:
+    ___ findMinDifference(self, timePoints: List[s..]) __ i..:
         """
         sort and minus
         """
@@ -35,7 +35,7 @@ c_ Solution:
 
     ___ minutes(self, a):
         h, m = a.s..(":")
-        minutes = 60 * int(h) + int(m)
+        minutes = 60 * i..(h) + i..(m)
         r.. minutes
 
 

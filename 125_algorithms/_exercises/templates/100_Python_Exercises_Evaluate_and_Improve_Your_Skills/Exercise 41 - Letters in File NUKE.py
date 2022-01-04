@@ -5,6 +5,6 @@
 
 _______ string
 
-with open("letters.txt", "w") as file:
+with open("letters.txt", "w") __ file:
     ___ letter __ string.ascii_lowercase:
         file.write(letter + "\n")

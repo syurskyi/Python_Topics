@@ -8,7 +8,7 @@ ___ print_hanging_indents(poem):
     prefix = INDENTS*whitespace
     current_line = 0
     target_poem    # list
-    ___ line __ poem.splitlines():
+    ___ line __ poem.splitlines
         # adjust counters
         line = line.s..
         __ line __ "":

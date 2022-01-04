@@ -25,11 +25,11 @@ c_ Solution(object):
                 break
             numStr = num[pos:i]
             __ pos __ 0:
-                helper(num, i, target, numStr, 0, int(numStr), res)
+                helper(num, i, target, numStr, 0, i..(numStr), res)
             ____:
-                helper(num, i, target, curr+'+'+numStr, evalVal+mult, int(numStr), res)
-                helper(num, i, target, curr+'-'+numStr, evalVal+mult, -int(numStr), res)
-                helper(num, i, target, curr+'*'+numStr, evalVal, mult*int(numStr), res)
+                helper(num, i, target, curr+'+'+numStr, evalVal+mult, i..(numStr), res)
+                helper(num, i, target, curr+'-'+numStr, evalVal+mult, -i..(numStr), res)
+                helper(num, i, target, curr+'*'+numStr, evalVal, mult*i..(numStr), res)
     
     ___ test
         testCases = [

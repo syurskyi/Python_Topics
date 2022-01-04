@@ -1,2 +1,2 @@
-___ abbreviate():
-    pass
+___ abbreviate
+    p..

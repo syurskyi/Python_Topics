@@ -32,7 +32,7 @@ _______ functools
 ____ typing _______ Iterable, Set, Any
 
 # First attempt - crap and ugly
-___ intersection(*args: Iterable) -> Set[Any]:
+___ intersection(*args: Iterable) __ Set[Any]:
     # Filter out inputs, store them in a list
     # I want iterables that are not None and not empty
     # Edge condition:
@@ -48,7 +48,7 @@ ___ intersection(*args: Iterable) -> Set[Any]:
     try:
         first = l[0]
         r..(first.intersection(*l))
-    except IndexError as e:
+    except IndexError __ e:
         print(e)
         r..(set())
 

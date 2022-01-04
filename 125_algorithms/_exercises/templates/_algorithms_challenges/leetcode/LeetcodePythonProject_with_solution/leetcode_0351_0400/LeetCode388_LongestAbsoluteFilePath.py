@@ -8,7 +8,7 @@ c_ Solution(object):
     ___ lengthLongestPath(self, input):
         maxLen = 0
         pathLen = {0:0}
-        ___ line __ input.splitlines():
+        ___ line __ input.splitlines
             name = line.lstrip('\t')
             depth = l..(line)-l..(name)
             __ '.' __ name:

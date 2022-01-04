@@ -21,7 +21,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findLengthOfLCIS(self, nums: List[int]) -> int:
+    ___ findLengthOfLCIS(self, nums: List[i..]) __ i..:
         """
         pointer is sufficient
         """

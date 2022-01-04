@@ -22,7 +22,7 @@ c_ Solution(object):
                     break
             __ flag:
                 break
-        r.. int(''.j..(arr))
+        r.. i..(''.j..(arr))
     
     ___ test
         testCases = [

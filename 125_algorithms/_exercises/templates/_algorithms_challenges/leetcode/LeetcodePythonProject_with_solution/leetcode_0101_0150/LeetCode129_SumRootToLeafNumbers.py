@@ -20,7 +20,7 @@ c_ Solution(object):
         __ n.. root: r.. 0
         res    # list
         helper(root, s..(root.val), res)
-        resNum = s..([int(val) ___ val __ res])
+        resNum = s..([i..(val) ___ val __ res])
         r.. resNum
         
     ___ helper(self, root, curr, res):

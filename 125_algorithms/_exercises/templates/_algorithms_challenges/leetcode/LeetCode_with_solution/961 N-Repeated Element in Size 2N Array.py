@@ -29,7 +29,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ repeatedNTimes(self, A: List[int]) -> int:
+    ___ repeatedNTimes(self, A: List[i..]) __ i..:
         """
         Counter. Straightforward. O(N) space
 

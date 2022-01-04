@@ -8,7 +8,7 @@ ___ hurdle_jump(hurdles, jump_height):
         r.. F..
 
 
-___ test():
+___ test
     print("test has started")
     __ hurdle_jump([1,2,1], 1) != F..:
         print("error1")

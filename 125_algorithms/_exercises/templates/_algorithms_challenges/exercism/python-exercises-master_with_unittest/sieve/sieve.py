@@ -1,2 +1,2 @@
-___ sieve():
-    pass
+___ sieve
+    p..

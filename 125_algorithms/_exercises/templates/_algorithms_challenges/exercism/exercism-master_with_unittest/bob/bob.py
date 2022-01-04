@@ -3,7 +3,7 @@ ___ hey(phrase):
 
     __ n.. phrase:
         r.. "Fine. Be that way!"
-    ____ phrase.isupper():
+    ____ phrase.isupper
         r.. "Whoa, chill out!"
     ____ phrase.endswith("?"):
         r.. "Sure."

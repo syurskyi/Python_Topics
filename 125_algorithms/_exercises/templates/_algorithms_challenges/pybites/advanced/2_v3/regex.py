@@ -20,7 +20,7 @@ ___ extract_course_times(course=COURSE):
        ['01:47', '32:03', '41:51', '27:48', '05:02']
        Return this list.
     """
-    r.. __.findall(r'(\d\d:\d\d)', course)
+    r.. __.f..(r'(\d\d:\d\d)', course)
 
 
 ___ get_all_hashtags_and_links(tweet=TWEET):
@@ -32,7 +32,7 @@ ___ get_all_hashtags_and_links(tweet=TWEET):
         '#APIs']
        Return this list.
     """
-    r.. __.findall(r'(#\w+|https?://[^\s]*)', tweet)
+    r.. __.f..(r'(#\w+|https?://[^\s]*)', tweet)
 
 
 ___ match_first_paragraph(html=HTML):

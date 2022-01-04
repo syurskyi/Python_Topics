@@ -1,10 +1,10 @@
-n = int(input())
+n = i..(input())
 ___ i __ r..(n):
     d1, h1, m1, s1, d2, h2, m2, s2 = input().s.. 
-    d = (int(d2)-int(d1)) * 24 * 60 * 60
-    h = (int(h2)-int(h1)) * 60 * 60
-    m = (int(m2)-int(m1)) * 60
-    s = int(s2)-int(s1)
+    d = (i..(d2)-i..(d1)) * 24 * 60 * 60
+    h = (i..(h2)-i..(h1)) * 60 * 60
+    m = (i..(m2)-i..(m1)) * 60
+    s = i..(s2)-i..(s1)
     zman = d + h + m + s
    
     d = zman // (24*60*60)

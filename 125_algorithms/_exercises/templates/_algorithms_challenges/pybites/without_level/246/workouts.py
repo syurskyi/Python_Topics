@@ -5,7 +5,7 @@ WORKOUTS = {'mon': 'upper body #1',
             'fri': 'lower body #2'}
 
 
-___ print_workout_days(workout: s.., my_workouts: d.. = WORKOUTS) -> N..
+___ print_workout_days(workout: s.., my_workouts: d.. = WORKOUTS) __ N..
     """Print the days (comma separated and title cased) of my_workouts
        that (partially) match the workout string passed in. If no
        workout matches, print 'No matching workout'

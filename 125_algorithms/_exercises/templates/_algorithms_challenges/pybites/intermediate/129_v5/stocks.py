@@ -6,7 +6,7 @@ STOCK_DATA = 'https://bit.ly/2MzKAQg'
 
 # pre-work: load JSON data into program
 
-with requests.Session() as s:
+with requests.Session() __ s:
     data = s.get(STOCK_DATA).json()
 
 
@@ -36,13 +36,13 @@ ___ get_industry_cap(industry):
     r.. round(s..([_cap_str_to_mln_float(co['cap']) ___ co __ data __ co['industry'] __ industry]), 3)
 
 
-___ get_stock_symbol_with_highest_cap():
+___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
     r.. s..([(co['symbol'], _cap_str_to_mln_float(co['cap'])) ___ co __ data], key=l.... x: x[1])[-1][0]
 
 
-___ get_sectors_with_max_and_min_stocks():
+___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
     sector_list = Counter()

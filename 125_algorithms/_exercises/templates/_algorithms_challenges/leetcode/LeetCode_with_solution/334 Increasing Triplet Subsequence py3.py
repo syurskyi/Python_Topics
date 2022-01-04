@@ -23,7 +23,7 @@ ____ bisect _______ bisect_left
 
 
 c_ Solution:
-    ___ increasingTriplet(self, nums: List[int]) -> bool:
+    ___ increasingTriplet(self, nums: List[i..]) __ bool:
         """
         Patience sort
         LIS dp with binary search

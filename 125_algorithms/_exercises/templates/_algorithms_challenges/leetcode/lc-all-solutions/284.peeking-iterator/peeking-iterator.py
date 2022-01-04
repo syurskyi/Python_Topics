@@ -25,7 +25,7 @@ c_ PeekingIterator(object):
     Initialize your data structure here.
     :type iterator: Iterator
     """
-    iter = iterator
+    i.. = iterator
     nextElem = N..
 
   ___ peek
@@ -35,8 +35,8 @@ c_ PeekingIterator(object):
     """
     __ nextElem:
       r.. nextElem
-    __ iter.hasNext():
-      nextElem = iter.next()
+    __ i...hasNext
+      nextElem = i...next()
     r.. nextElem
 
   ___ next
@@ -49,13 +49,13 @@ c_ PeekingIterator(object):
       nextElem = N..
       r.. ret
 
-    r.. iter.next()
+    r.. i...next()
 
   ___ hasNext
     """
     :rtype: bool
     """
-    r.. (nextElem __ n.. N..) o. iter.hasNext()
+    r.. (nextElem __ n.. N..) o. i...hasNext()
 
 # Your PeekingIterator object will be instantiated and called as such:
 # iter = PeekingIterator(Iterator(nums))

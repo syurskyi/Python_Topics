@@ -98,7 +98,7 @@ c_ DualHeap:
 
 
 c_ Solution:
-    ___ medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
+    ___ medianSlidingWindow(self, nums: List[i..], k: i..) __ List[float]:
         """
         1. BST, proxied by bisect
         dual heap + lazy removal + balance the valid element

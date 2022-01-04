@@ -8,7 +8,7 @@ COURSE_TIMES = os.path.j..('/tmp', 'course_timings')
 urllib.request.urlretrieve('http://bit.ly/2Eb0iQF', COURSE_TIMES)
 
 
-___ get_all_timestamps():
+___ get_all_timestamps
     """Read in the COURSE_TIMES and extract all MM:SS timestamps.
        Here is a snippet of the input file:
 
@@ -20,9 +20,9 @@ ___ get_all_timestamps():
         Return a list of MM:SS timestamps
     """
     result    # list
-    with open(COURSE_TIMES) as ct:
-        ___ line __ ct.readlines():
-            times = __.findall(r'\((\d\d?:\d\d)\)', line)
+    with open(COURSE_TIMES) __ ct:
+        ___ line __ ct.readlines
+            times = __.f..(r'\((\d\d?:\d\d)\)', line)
             __ l..(times) > 0:
                 result.a..(times[0])
     r.. result

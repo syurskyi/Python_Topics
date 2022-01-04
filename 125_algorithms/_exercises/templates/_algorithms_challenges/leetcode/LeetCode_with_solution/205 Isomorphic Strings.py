@@ -34,7 +34,7 @@ c_ Solution:
                 m[s[i]] = t[i]
                 mapped.add(t[i])
             ____ s[i] __ m a.. m[s[i]] __ t[i]:
-                pass
+                p..
             ____:
                 r.. F..
 

@@ -2,8 +2,8 @@
 #  Score: 35
 
 
-n, k = map(int, input().s..())
-prices = s..(l..(map(int, input().s..())))
+n, k = map(i.., input().s..())
+prices = s..(l..(map(i.., input().s..())))
 
 count = 0
 total_sum = 0

@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 ___ isBadVersion(version):
-    pass
+    p..
 
 
 c_ Solution(object):

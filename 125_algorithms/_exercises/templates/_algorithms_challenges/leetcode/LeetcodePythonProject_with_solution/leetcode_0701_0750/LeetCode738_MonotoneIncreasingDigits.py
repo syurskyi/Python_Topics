@@ -18,10 +18,10 @@ c_ Solution(object):
         w.... i > 0 a.. s[i-1] __ s[i]:
             i -= 1
         res = s[:i]
-        res += s..(int(s[i])-1)
+        res += s..(i..(s[i])-1)
         res += '9'*(l..(s)-i-1)
         res = res.lstrip('0')
-        r.. int(res) __ res != '' ____ 0
+        r.. i..(res) __ res != '' ____ 0
     
     ___ test
         testCases = [

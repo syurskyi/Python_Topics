@@ -35,8 +35,8 @@ c_ Solution:
                     slope = float(point1.y-point2.y)/(point1.x-point2.x)
                     intersection = slope*point1.x - point1.y
 
-                    slope = int(slope*1000) # avoid numeric errors
-                    intersection = int(intersection*1000) # avoid numeric errors
+                    slope = i..(slope*1000) # avoid numeric errors
+                    intersection = i..(intersection*1000) # avoid numeric errors
 
                     key = (slope, intersection)  # only tuples can be hashed, whereas lists cannot
 
@@ -88,7 +88,7 @@ c_ Solution:
                     key = 1<<32
                 ____:
                     slope = float(point1.y-point2.y)/(point1.x-point2.x)
-                    slope = int(slope*10000) # avoid numeric errors
+                    slope = i..(slope*10000) # avoid numeric errors
                     # no need to calculate intersection. During this iteration, all lines pass point1
                     key = slope
 

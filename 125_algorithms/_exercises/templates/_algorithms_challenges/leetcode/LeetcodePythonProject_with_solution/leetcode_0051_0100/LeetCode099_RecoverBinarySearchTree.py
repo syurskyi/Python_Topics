@@ -40,7 +40,7 @@ c_ Solution(object):
         inOrder(root.right)
     
     ___ test
-        pass
+        p..
 
 __ __name__ __ '__main__':
     Solution().test()

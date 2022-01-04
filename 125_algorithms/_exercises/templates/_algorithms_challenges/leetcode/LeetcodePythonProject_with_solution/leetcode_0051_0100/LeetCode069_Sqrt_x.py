@@ -22,7 +22,7 @@ c_ Solution(object):
         r.. start __ start __ 0 ____ start-1
     
     ___ test
-        pass
+        p..
 
 __ __name__ __ '__main__':
     Solution().test()

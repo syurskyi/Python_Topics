@@ -5,7 +5,7 @@ Premium question
 
 
 c_ Solution:
-    ___ parseTernary(self, expression: s..) -> s..:
+    ___ parseTernary(self, expression: s..) __ s..:
         """
         stk from right to left parsing, including the operand and operator
         """
@@ -25,7 +25,7 @@ c_ Solution:
 
         r.. stk[0]
 
-    ___ parseTernary_complex(self, expression: s..) -> s..:
+    ___ parseTernary_complex(self, expression: s..) __ s..:
         """
         tokenize + recursive (dfs)?
 

@@ -2,7 +2,7 @@ ____ pcc_stats _______ (diehard_pybites,
                        gen_files, Stats)
 
 
-___ test_gen_files():
+___ test_gen_files
     ret = l..(gen_files())
     ... ret[:3] __ ["03/mridubhatnagar",
                        "03/aleksandarknezevic",
@@ -12,12 +12,12 @@ ___ test_gen_files():
                         "25/santiagobenitez"]
 
 
-___ test_diehard_pybites():
+___ test_diehard_pybites
     ret = diehard_pybites()
     ... ret __ Stats(user='clamytoe', challenge=('01', 7))
 
 
-___ test_diehard_other_input():
+___ test_diehard_other_input
     ret = diehard_pybites(
         files=[
             "22/wonderfulboyx",

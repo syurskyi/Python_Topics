@@ -6,7 +6,7 @@ ____ countdown _______ countdown
 
 
 @pytest.fixture
-___ cd():
+___ cd
     r.. countdown()
 
 

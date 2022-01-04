@@ -7,7 +7,7 @@ ____ rps _______ (_get_winner, game,
 
 
 @pytest.fixture()
-___ my_game():
+___ my_game
     """Initialize game and move it to point where to
        receive first player (send) input"""
     gen = game()

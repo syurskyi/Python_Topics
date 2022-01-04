@@ -17,7 +17,7 @@ string is 50000.
 
 
 c_ Solution:
-    ___ validPalindrome(self, s: s..) -> bool:
+    ___ validPalindrome(self, s: s..) __ bool:
         """
         Brute force, delete and check. O(n^2)
 

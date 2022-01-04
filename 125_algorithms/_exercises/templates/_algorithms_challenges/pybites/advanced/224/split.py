@@ -7,7 +7,7 @@ ___ get_sentences(text):
        A sentence starts with [A-Z] and ends with [.?!]"""
 
 
-    lines = __.findall(r'\s*([A-Z].+?[\?\!\.])\s+',text,flags=__.MULTILINE | __.DOTALL)
+    lines = __.f..(r'\s*([A-Z].+?[\?\!\.])\s+',text,flags=__.MULTILINE | __.DOTALL)
     
 
     r.. [line.r..('\n',' ') ___ line __ lines]

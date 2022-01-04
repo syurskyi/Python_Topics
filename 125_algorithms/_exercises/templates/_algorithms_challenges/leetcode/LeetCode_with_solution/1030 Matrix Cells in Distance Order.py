@@ -38,7 +38,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ allCellsDistOrder(self, R: int, C: int, r0: int, c0: int) -> List[List[int]]:
+    ___ allCellsDistOrder(self, R: i.., C: i.., r0: i.., c0: i..) __ List[List[i..]]:
         """
         bucket sort
         """

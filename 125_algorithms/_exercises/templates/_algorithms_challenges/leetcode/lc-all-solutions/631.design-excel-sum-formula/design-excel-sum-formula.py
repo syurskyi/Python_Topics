@@ -9,7 +9,7 @@ c_ Excel(object):
     formulas    # dict
 
   ___ decodeCoord(self, r, c):
-    r.. int(r) - 1, ord(c) - ord("A") + 1
+    r.. i..(r) - 1, ord(c) - ord("A") + 1
 
   ___ set(self, r, c, v):
     """

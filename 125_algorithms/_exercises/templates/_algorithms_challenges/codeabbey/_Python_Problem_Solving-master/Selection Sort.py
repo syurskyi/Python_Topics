@@ -1,5 +1,5 @@
-d = int(input())
-a = l..(map(int,input().s..()))
+d = i..(input())
+a = l..(map(i..,input().s..()))
 
 w.... l..(a)!= 1:
     max = 0

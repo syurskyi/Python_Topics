@@ -1,8 +1,8 @@
 #initializing the number of elements and different types of number 
 num_ele, num_type_element = input().s..
-num_ele = int(num_ele)
-num_ele = int(num_ele)
-num_type_element = int(num_type_element)
+num_ele = i..(num_ele)
+num_ele = i..(num_ele)
+num_type_element = i..(num_type_element)
 #print(num_ele, num_type_element)
 
 #to store the elements

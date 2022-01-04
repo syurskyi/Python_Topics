@@ -42,7 +42,7 @@ ____ i.. _______ islice
 
 PYBITES_BORN = d__ y.._2016,  m.._12,  d.._19)
 
-___ gen_special_pybites_dates_1():
+___ gen_special_pybites_dates_1
 
     days = 0
     w... T...
@@ -50,7 +50,7 @@ ___ gen_special_pybites_dates_1():
         __ days % 100 __ 0 o. days % 365 __ 0:
             y.. PYBITES_BORN + t..(days=days)
 
-___ gen_special_pybites_dates_2():
+___ gen_special_pybites_dates_2
 
     plus365 = t..(days=365)
     plus100 = t..(days=100)

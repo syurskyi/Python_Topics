@@ -3,7 +3,7 @@
 ___ find_name(amount_of_cards):
     #amount_of_cards is a wasted variable required by CodeAbbey.
     answer    # list
-    cards = [int(x) ___ x __ raw_input().s.. ]
+    cards = [i..(x) ___ x __ raw_input().s.. ]
     suits = ['Clubs', 'Spades', 'Diamonds', 'Hearts']
     ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10',
              'Jack','Queen', 'King', 'Ace']

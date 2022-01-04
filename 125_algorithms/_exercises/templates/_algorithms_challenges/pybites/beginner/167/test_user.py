@@ -1,7 +1,7 @@
 ____ user _______ User
 
 
-___ test_bob_lowercase():
+___ test_bob_lowercase
     bob = User('bob', 'belderbos')
     ... bob.get_full_name __ 'Bob Belderbos'
     ... bob.username __ 'bbelderb'  # lowercase!
@@ -9,7 +9,7 @@ ___ test_bob_lowercase():
     ... repr(bob) __ 'User("bob", "belderbos")'
 
 
-___ test_julian_mixed_case():
+___ test_julian_mixed_case
     bob = User('julian', 'Sequeira')
     ... bob.get_full_name __ 'Julian Sequeira'
     ... bob.username __ 'jsequeir'  # lowercase!
@@ -17,7 +17,7 @@ ___ test_julian_mixed_case():
     ... repr(bob) __ 'User("julian", "Sequeira")'
 
 
-___ test_tania_title_name():
+___ test_tania_title_name
     bob = User('Tania', 'Courageous')
     ... bob.get_full_name __ 'Tania Courageous'  # aka PyBites Ninja
     ... bob.username __ 'tcourage'  # lowercase!
@@ -25,13 +25,13 @@ ___ test_tania_title_name():
     ... repr(bob) __ 'User("Tania", "Courageous")'
 
 
-___ test_noah_use_dunder_in_repr():
+___ test_noah_use_dunder_in_repr
     """Make sure repr does not have the class
        name hardcoded.
        Also tests for a shorter surname.
     """
     c_ SpecialUser(User):
-        pass
+        p..
 
     noah = SpecialUser('Noah', 'Kagan')
     ... noah.get_full_name __ 'Noah Kagan'

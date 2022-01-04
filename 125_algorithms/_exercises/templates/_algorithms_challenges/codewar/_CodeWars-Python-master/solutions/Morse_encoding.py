@@ -12,7 +12,7 @@ c_ Morse:
         result    # list
         ___ i __ r..(0, l..(code), 32):
             num = code[i:i + 32].ljust(32, '0')
-            result.a..(int(num[1:], 2) -
+            result.a..(i..(num[1:], 2) -
                           (0 __ num[0] __ '0' ____ Morse.neg))
         r.. result
 

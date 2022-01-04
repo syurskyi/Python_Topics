@@ -30,7 +30,7 @@ c_ Color:
         __ l..(hex_value) != 7 o. hex_value[0] != '#':
             raise ValueError
         try:
-            rgb = tuple(int(hex_value.lstrip('#')[i:i+2], 16) ___ i __ (0, 2, 4))
+            rgb = tuple(i..(hex_value.lstrip('#')[i:i+2], 16) ___ i __ (0, 2, 4))
         except ValueError:
             raise ValueError
         r.. rgb
@@ -38,7 +38,7 @@ c_ Color:
     ___ rgb2hex(rgb_value):
         """Class method that converts an rgb value into a hex one"""
         ___ value __ rgb_value:
-            __ int(value) < 0 o. int(value) > 255:
+            __ i..(value) < 0 o. i..(value) > 255:
                 raise ValueError
         hex = '#%02x%02x%02x' % rgb_value
         r.. hex

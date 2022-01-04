@@ -60,7 +60,7 @@ c_ LinkedListTest(unittest.TestCase):
         lst = LinkedList()
         lst.push(10)
         lst.push(20)
-        iterator = iter(lst)
+        iterator = i..(lst)
         assertEqual(next(iterator), 10)
         assertEqual(next(iterator), 20)
 

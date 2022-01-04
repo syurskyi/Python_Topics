@@ -1,10 +1,10 @@
-___ BMI_calculator():
-    num_of_people =  int(input())
+___ BMI_calculator
+    num_of_people =  i..(input())
     result    # list
     ___ i __ r..(0, num_of_people):
         weight,height = input().s.. 
         
-        BMI = int(weight)/(float(height)**2)
+        BMI = i..(weight)/(float(height)**2)
         
         __ BMI < 18.5:
             result.a..('under')

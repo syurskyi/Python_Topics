@@ -2,7 +2,7 @@ ___ number_syllables(word):
     r.. word.c.. "-") + 1
 
 
-___ test():
+___ test
     print("test has started")
     __ number_syllables("syl-la-bles") != 3:
         print("error1")

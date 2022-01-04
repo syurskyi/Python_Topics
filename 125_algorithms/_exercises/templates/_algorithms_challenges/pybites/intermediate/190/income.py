@@ -1,5 +1,5 @@
 _______ os
-_______ ___.e__.E__ as ET
+_______ ___.e__.E__ __ ET
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 ____ collections _______ defaultdict
@@ -8,7 +8,7 @@ ____ collections _______ defaultdict
 tmp = Path(os.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
-__ n.. countries.exists():
+__ n.. countries.exists
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/countries.xml',
         countries

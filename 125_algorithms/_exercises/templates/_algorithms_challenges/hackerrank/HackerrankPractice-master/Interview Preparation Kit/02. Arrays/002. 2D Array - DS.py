@@ -8,7 +8,7 @@ ___ hourglasses(arr, i, j):
 
 arr    # list
 ___ i __ r..(6):
-    arr.a..(l..(map(int, input().s..())))
+    arr.a..(l..(map(i.., input().s..())))
 
 ans = hourglasses(arr, 0, 0)
 ___ i __ r..(4):

@@ -10,7 +10,7 @@ NUMBERS = [
     3783, 3585, 7531, 4748, 353, 6819, 9117, 1639, 3046, 4857, 1981]
 
 
-___ test_two_sums():
+___ test_two_sums
     """Test of the example given in the description"""
     numbers = [3, 10, 14, 8, 15, 5, 16, 13, 9, 2]
     expected = (2, 6)
@@ -32,7 +32,7 @@ ___ test_two_sums_param(target, expected):
     ... result __ expected
 
 
-___ test_two_sums_random():
+___ test_two_sums_random
     seed(1)
     numbers = sample(r..(1, 1_000_000), 1_000)
     picked = sample(numbers, 2)
@@ -45,6 +45,6 @@ ___ test_two_sums_random():
     ... result __ expected
 
 
-___ test_two_sums_none():
+___ test_two_sums_none
     result = two_sums(NUMBERS, 7000)
     ... result __ N..

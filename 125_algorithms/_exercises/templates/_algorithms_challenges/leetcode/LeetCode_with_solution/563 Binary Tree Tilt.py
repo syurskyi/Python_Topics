@@ -35,12 +35,12 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ findTilt(self, root: TreeNode) -> int:
+    ___ findTilt(self, root: TreeNode) __ i..:
         ret = [0]
         walk(root, ret)
         r.. ret[0]
 
-    ___ walk(self, node: TreeNode, ret) -> int:
+    ___ walk(self, node: TreeNode, ret) __ i..:
         """get the sum of the subtree and add the tilt"""
         __ n.. node:
             r.. 0

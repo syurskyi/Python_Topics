@@ -24,7 +24,7 @@ ___ test_wrong_inputs(arg):
         calculate_score(arg)
 
 
-___ test_winner_3_players():
+___ test_winner_3_players
     players = [
       Player(name='player 1', scores=[1, 3, 2, 5]),
       Player(name='player 2', scores=[1, 1, 1, 1]),
@@ -33,7 +33,7 @@ ___ test_winner_3_players():
     ... get_winner(players) __ players[-1]
 
 
-___ test_winner_shorter_score_len_raises_exception():
+___ test_winner_shorter_score_len_raises_exception
     players = [
       Player(name='player 1', scores=[4, 3, 5, 5]),
       Player(name='player 2', scores=[4, 4, 6]),  # lacks one score
@@ -43,7 +43,7 @@ ___ test_winner_shorter_score_len_raises_exception():
         get_winner(players)
 
 
-___ test_winner_longer_score_len_raises_exception():
+___ test_winner_longer_score_len_raises_exception
     players = [
       Player(name='player 1', scores=[4, 3, 5, 5, 4]),
       Player(name='player 2', scores=[4, 4, 6, 6, 3, 2]),  # 1 more

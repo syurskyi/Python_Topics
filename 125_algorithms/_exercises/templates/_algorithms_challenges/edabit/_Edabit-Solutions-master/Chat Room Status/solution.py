@@ -11,7 +11,7 @@ ___ chatroom_status(users):
         # print(var_2)
         r.. var_2
 
-___ test():
+___ test
     print("test has started")
     __ chatroom_status([]) != "no one online":
         print("error1")

@@ -5,33 +5,33 @@ try:
     _______ statistics
 except:
     # error code instead
-    _______ statistics_standin_for_py2 as statistics
+    _______ statistics_standin_for_py2 __ statistics
 
 ____ data_types _______ Purchase
 
 
-___ main():
+___ main
     print_header()
     filename  get_data_file()
     data  load_file(filename)
     query_data(data)
 
 
-___ print_header():
+___ print_header
     print('----------------------------------')
     print('  REAL ESTATE DATA MINING APP')
     print('----------------------------------')
     print()
 
 
-___ get_data_file():
+___ get_data_file
     base_folder  os.path.dirname(__file__)
     r.. os.path.j..(base_folder, 'data',
                         'SacramentoRealEstateTransactions2008.csv')
 
 
 ___ load_file(filename):
-    with open(filename, 'r', encoding'utf-8') as fin:
+    with open(filename, 'r', encoding'utf-8') __ fin:
         # with open(filename, 'r') as fin:
         reader  csv.DictReader(fin)
         purchases  []

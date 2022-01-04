@@ -8,7 +8,7 @@ ___ romanize(decimal_number):
 
     numeral_lookup = OrderedDict([(1, "I"), (4, "IV"), (5, "V"), (9, "IX"), (10, "X"), (40, "XL"), (50, "L"), (90, "XC"), (100, "C"), (400, "CD"), (500, "D"), (900, "CM"), (1000, "M")])
 
-    __ isi..(decimal_number, int):
+    __ isi..(decimal_number, i..):
         __ decimal_number <= 0 o. decimal_number >= 4000:
             raise ValueError
     ____:
@@ -18,13 +18,13 @@ ___ romanize(decimal_number):
         numeral = numeral_lookup[decimal_number]
         r.. numeral
     except Exception:
-        pass
+        p..
 
     roman_numeral = ""
     w.... decimal_number != 0:
 
         __ decimal_number > 1000:
-            frequency = int(decimal_number / 1000)
+            frequency = i..(decimal_number / 1000)
             decimal_number = decimal_number % 1000
             roman_numeral += frequency * numeral_lookup[1000]
         ____:
@@ -41,7 +41,7 @@ ___ romanize(decimal_number):
                         continue
                     ____:
                         __ frequency > 1:
-                            roman_numeral += int(frequency) * numeral_lookup[key]
+                            roman_numeral += i..(frequency) * numeral_lookup[key]
                         ____:
                             roman_numeral += numeral_lookup[key]
                         decimal_number = remainder

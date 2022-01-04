@@ -12,9 +12,9 @@ urllib.request.urlretrieve(
 )
 
 
-___ load_dictionary():
+___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
-    with open(DICTIONARY) as f:
+    with open(DICTIONARY) __ f:
         r.. (word.l...s.. ___ word __ f.readlines())
 
 

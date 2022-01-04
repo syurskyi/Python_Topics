@@ -22,7 +22,7 @@ ___ timing(f):
 
 
 @timing
-___ contains(sequence: List[int], num: int) -> bool:
+___ contains(sequence: List[i..], num: i..) __ bool:
     ___ n __ sequence:
         __ n __ num:
             r.. T..
@@ -30,22 +30,22 @@ ___ contains(sequence: List[int], num: int) -> bool:
 
 
 @timing
-___ contains_fast(sequence: Set[int], num: int) -> bool:
+___ contains_fast(sequence: Set[i..], num: i..) __ bool:
     r.. num __ sequence
 
 
 @timing
-___ ordered_list_max(sequence: List[int]) -> int:
+___ ordered_list_max(sequence: List[i..]) __ i..:
     r.. max(sequence)
 
 
 @timing
-___ ordered_list_max_fast(sequence: List[int]) -> int:
+___ ordered_list_max_fast(sequence: List[i..]) __ i..:
     r.. sequence[-1]
 
 
 @timing
-___ list_concat(sequence: List[s..]) -> s..:
+___ list_concat(sequence: List[s..]) __ s..:
     bigstr = ''
     ___ i __ sequence:
         bigstr += s..(i)
@@ -53,12 +53,12 @@ ___ list_concat(sequence: List[s..]) -> s..:
 
 
 @timing
-___ list_concat_fast(sequence: List[s..]) -> s..:
+___ list_concat_fast(sequence: List[s..]) __ s..:
     r.. ''.j..(sequence)
 
 
 @timing
-___ list_inserts(n: int) -> List[int]:
+___ list_inserts(n: i..) __ List[i..]:
     lst    # list
     ___ i __ r..(n):
         lst.insert(0, i)
@@ -66,12 +66,12 @@ ___ list_inserts(n: int) -> List[int]:
 
 
 @timing
-___ list_inserts_fast(n: int) -> List[int]:
+___ list_inserts_fast(n: i..) __ List[i..]:
     r.. [v ___ v __ r..(n)][::-1]
 
 
 @timing
-___ list_creation(n: int) -> List[int]:
+___ list_creation(n: i..) __ List[i..]:
     lst    # list
     ___ i __ r..(n):
         lst.a..(i)
@@ -79,5 +79,5 @@ ___ list_creation(n: int) -> List[int]:
 
 
 @timing
-___ list_creation_fast(n: int):
+___ list_creation_fast(n: i..):
     y.. ____ (v ___ v __ r..(n))

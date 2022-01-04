@@ -5,7 +5,7 @@ ___ say_hello_bye(name, num):
         r.. "Bye " + name.capitalize()
 
 
-___ test():
+___ test
     print("test has started")
     __ say_hello_bye("ram", 2) != "Bye Ram":
         print("error1")

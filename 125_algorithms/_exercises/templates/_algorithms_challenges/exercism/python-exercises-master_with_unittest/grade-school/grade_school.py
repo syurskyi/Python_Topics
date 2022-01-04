@@ -1,3 +1,3 @@
 c_ School(object):
     ___ - ):
-        pass
+        p..

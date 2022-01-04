@@ -7,12 +7,12 @@ ____ exchangerates _______ RATES_FILE, exchange_rates, get_all_days, match_daily
 
 
 @pytest.fixture(scope="session")
-___ exchange_rates_result():
+___ exchange_rates_result
     r.. exchange_rates()
 
 
 @pytest.fixture(scope="session")
-___ matching_result():
+___ matching_result
     start = date(2020, 1, 1)
     end = date(2020, 9, 1)
     daily_rates = json.loads(RATES_FILE.read_text())["rates"]
@@ -88,11 +88,11 @@ ___ test_exchange_rates_order(exchange_rates_result):
     ... actual __ expected
 
 
-___ test_exchange_rates_validate_start():
+___ test_exchange_rates_validate_start
     with pytest.raises(ValueError):
         exchange_rates(start_date="1950-01-01")
 
 
-___ test_exchange_rates_validate_end():
+___ test_exchange_rates_validate_end
     with pytest.raises(ValueError):
         exchange_rates(end_date="2050-01-01")

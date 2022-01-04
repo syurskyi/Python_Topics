@@ -10,8 +10,8 @@ c_ Solution(object):
         :rtype: str
         """
         arr = l..(time[:2]+time[3:])
-        hh = int(''.j..(arr[:2]))
-        mm = int(''.j..(arr[2:]))
+        hh = i..(''.j..(arr[:2]))
+        mm = i..(''.j..(arr[2:]))
         charSet = set(arr)
         __ l..(charSet) __ 1:
             r.. time

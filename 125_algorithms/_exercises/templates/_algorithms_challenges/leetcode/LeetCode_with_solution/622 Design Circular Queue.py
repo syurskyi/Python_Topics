@@ -26,7 +26,7 @@ isFull(): Checks whether the circular queue is full or not.
 
 c_ MyCircularQueue:
 
-    ___ - , k: int):
+    ___ - , k: i..):
         """
         Initialize your data structure here. Set the size of the queue to be k.
         """
@@ -37,7 +37,7 @@ c_ MyCircularQueue:
         lst = [N.. ___ _ __ r..(k)]
 
 
-    ___ enQueue(self, value: int) -> bool:
+    ___ enQueue(self, value: i..) __ bool:
         """
         Insert an element into the circular queue. Return true if the operation is successful.
         """
@@ -49,7 +49,7 @@ c_ MyCircularQueue:
         sz += 1
         r.. T..
 
-    ___ deQueue(self) -> bool:
+    ___ deQueue(self) __ bool:
         """
         Delete an element from the circular queue. Return true if the operation is successful.
         """
@@ -61,27 +61,27 @@ c_ MyCircularQueue:
         sz -= 1
         r.. T..
 
-    ___ Front(self) -> int:
+    ___ Front(self) __ i..:
         """
         Get the front item from the queue.
         """
         ret = lst[head % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
-    ___ Rear(self) -> int:
+    ___ Rear(self) __ i..:
         """
         Get the last item from the queue.
         """
         ret = lst[tail % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
-    ___ isEmpty(self) -> bool:
+    ___ isEmpty(self) __ bool:
         """
         Checks whether the circular queue is empty or not.
         """
         r.. sz __ 0
 
-    ___ isFull(self) -> bool:
+    ___ isFull(self) __ bool:
         """
         Checks whether the circular queue is full or not.
         """

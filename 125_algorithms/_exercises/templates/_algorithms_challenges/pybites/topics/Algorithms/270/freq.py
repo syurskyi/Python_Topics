@@ -1,5 +1,5 @@
-___ freq_digit(num: int) -> int:
-    templist = [int(i) ___ i __ s..(num)]
+___ freq_digit(num: i..) __ i..:
+    templist = [i..(i) ___ i __ s..(num)]
     r.. max(templist, key = templist.count)
 
 

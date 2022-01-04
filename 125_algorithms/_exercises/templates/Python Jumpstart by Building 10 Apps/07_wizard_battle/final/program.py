@@ -4,12 +4,12 @@ _______ random
 ____ actors _______ Wizard, Creature, SmallAnimal, Dragon
 
 
-___ main():
+___ main
     print_header()
     game_loop()
 
 
-___ print_header():
+___ print_header
     # Yes, I added this after I recorded the video
     # but I thought you'd get a kick out if it. ;)
     print()
@@ -34,7 +34,7 @@ ___ print_header():
     print()
 
 
-___ game_loop():
+___ game_loop
     creatures  [
         SmallAnimal('Toad', 1),
         Creature('Tiger', 12),

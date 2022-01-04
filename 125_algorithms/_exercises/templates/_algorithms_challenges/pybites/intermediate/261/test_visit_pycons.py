@@ -6,7 +6,7 @@ ____ visit_pycons _______ (
 )
 
 
-___ test_update_pycons_lat_lon():
+___ test_update_pycons_lat_lon
     pycons = _get_pycons()
     update_pycons_lat_lon(pycons)
     ___ pycon __ pycons:
@@ -14,7 +14,7 @@ ___ test_update_pycons_lat_lon():
         ... isi..(pycon.lon, float)
 
 
-___ test_create_travel_plan():
+___ test_create_travel_plan
     pycons = _get_pycons()
     update_pycons_lat_lon(pycons)
     travel_plan = create_travel_plan(pycons)
@@ -25,7 +25,7 @@ ___ test_create_travel_plan():
     ... travel_plan[-1].destination.name __ "PyCon Ireland"
 
 
-___ test_total_travel_distance():
+___ test_total_travel_distance
     pycons = _get_pycons()
     update_pycons_lat_lon(pycons)
     travel_plan = create_travel_plan(pycons)

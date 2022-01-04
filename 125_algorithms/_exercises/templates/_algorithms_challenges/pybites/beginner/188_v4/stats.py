@@ -1,6 +1,6 @@
 _______ __
 ____ os _______ path
-_______ statistics as st
+_______ statistics __ st
 ____ urllib.request _______ urlretrieve
 
 STATS = path.j..('/tmp', 'testfiles_number_loc.txt')
@@ -25,13 +25,13 @@ Estimated variance for sample:
 """
 
 
-___ get_all_line_counts(data: s.. = STATS) -> l..:
+___ get_all_line_counts(data: s.. = STATS) __ l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
-    with open(data) as f:
+    with open(data) __ f:
         content = f.read()
-    r.. l..(map(int, __.findall(r'\s+(\d+)\s+.*?\n', content)))
+    r.. l..(map(i.., __.f..(r'\s+(\d+)\s+.*?\n', content)))
 
 
 ___ create_stats_report(data_ N..

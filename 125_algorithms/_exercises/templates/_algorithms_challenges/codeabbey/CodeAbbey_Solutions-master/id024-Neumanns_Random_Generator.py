@@ -2,7 +2,7 @@
 
 ___ neumanns(inputs):
     answer    # list
-    ___ num __ [int(x) ___ x __ input().s.. ]:
+    ___ num __ [i..(x) ___ x __ input().s.. ]:
         loop_count = 0
         new_num = num * num
         temp = ''
@@ -11,7 +11,7 @@ ___ neumanns(inputs):
 
         w.... no_repition:
             __ loop_count != 0:
-                new_num = int(new_num) * int(new_num)
+                new_num = i..(new_num) * i..(new_num)
                 
             new_num = s..(new_num)
             w.... l..(new_num) < 8:

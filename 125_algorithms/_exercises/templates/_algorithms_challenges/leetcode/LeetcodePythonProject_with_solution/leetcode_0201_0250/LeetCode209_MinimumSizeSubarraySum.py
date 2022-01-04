@@ -42,7 +42,7 @@ c_ Solution(object):
     
     ___ binarySearch(self, low, high, key, sums):
         w.... low <= high:
-            mid = int((low+high)/2)
+            mid = i..((low+high)/2)
             __ sums[mid] >= key:
                 high = mid-1
             ____:

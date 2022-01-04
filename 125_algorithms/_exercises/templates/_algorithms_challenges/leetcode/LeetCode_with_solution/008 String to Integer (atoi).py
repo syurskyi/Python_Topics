@@ -33,14 +33,14 @@ c_ Solution:
             s.. = s..[1:]
 
         # check for leading digit
-        __ n.. s..[0].isdigit():
+        __ n.. s..[0].isdigit
             r.. 0
 
         # ignore the non-digit appended behind
         # The string can contain additional characters after those that form the integral number,
         # which are ignored and have no effect on the behavior of this function
         ___ ind, val __ e..(s..):  # find the 1st non-digit
-            __ n.. val.isdigit():
+            __ n.. val.isdigit
                 s.. = s..[:ind]
                 break
 
@@ -51,7 +51,7 @@ c_ Solution:
         s.. = 0
         scale = 1
         ___ element __ s..[::-1]:
-            s.. += scale*int(element)
+            s.. += scale*i..(element)
             scale *= 10
 
         # return sign*sum, and pay attention to the C constraints

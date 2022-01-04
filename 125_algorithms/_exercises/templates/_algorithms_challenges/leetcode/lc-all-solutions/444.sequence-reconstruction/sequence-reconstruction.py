@@ -11,7 +11,7 @@ c_ Solution(object):
     n = l..(org)
     graph = collections.defaultdict(l..)
     visited    # dict
-    incomings = collections.defaultdict(int)
+    incomings = collections.defaultdict(i..)
     nodes = set()
     ___ seq __ seqs:
       nodes |= set(seq)
@@ -29,7 +29,7 @@ c_ Solution(object):
         __ count __ 2:
           r.. F..
     order    # list
-    visited = collections.defaultdict(int)
+    visited = collections.defaultdict(i..)
     queue = [q ___ q __ incomings __ incomings[q] __ 0]
     w.... l..(queue) __ 1:
       top = queue.pop()

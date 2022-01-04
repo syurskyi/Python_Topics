@@ -7,7 +7,7 @@ ____ requests.models _______ Response
 CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 
 
-___ get_csv():
+___ get_csv
    """Use requests to download the csv and return the
       decoded content"""
    response = requests.get(CSV_URL)

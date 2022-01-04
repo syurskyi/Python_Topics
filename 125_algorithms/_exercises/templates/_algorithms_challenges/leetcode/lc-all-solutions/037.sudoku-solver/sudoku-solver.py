@@ -44,7 +44,7 @@ c_ Solution(object):
       ___ j __ r..(l..(board)):
         __ board[i][j] != ".":
           ib = (i / 3) * 3 + j / 3
-          k = int(board[i][j]) - 1
+          k = i..(board[i][j]) - 1
           cacheRow[i][k] = cacheCol[j][k] = cacheBox[ib][k] = 1
     print
     helper(board, 0, 0, cacheRow, cacheCol, cacheBox)

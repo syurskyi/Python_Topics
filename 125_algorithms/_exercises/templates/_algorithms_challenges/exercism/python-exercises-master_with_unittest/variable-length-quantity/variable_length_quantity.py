@@ -1,6 +1,6 @@
-___ encode():
-    pass
+___ encode
+    p..
 
 
-___ decode():
-    pass
+___ decode
+    p..

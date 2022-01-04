@@ -42,7 +42,7 @@ Sample output from running the code in the if/main clause:
 ____ dataclasses _______ dataclass, field
 ____ typing _______ List, NamedTuple
 
-Bracket = NamedTuple("Bracket", [("end", int), ("rate", float)])
+Bracket = NamedTuple("Bracket", [("end", i..), ("rate", float)])
 Taxed = NamedTuple("Taxed", [("amount", float), ("rate", float), ("tax", float)])
 BRACKET = [
     Bracket(9_700, 0.1),
@@ -72,7 +72,7 @@ c_ Taxes:
         taxes_owed = taxes
 
 
-    ___ __str__(self) -> s..:
+    ___ __str__(self) __ s..:
         """Summary Report
 
         Returns:
@@ -96,7 +96,7 @@ c_ Taxes:
         values = [("Taxable Income:",f"{salary:,.2f}"),("Taxes Owed:",f"{taxes:,.2f}"),("Tax Rate:",f"{tax_rate:.2f}%")]
 
         largest_left_length = l..(values[0][0]) + 1
-        largest_right_length = l..(s..(int(salary))) + 4
+        largest_right_length = l..(s..(i..(salary))) + 4
         spaces = 32 - (largest_left_length + largest_right_length)
 
         ___ i,(string,value) __ e..(values,1):
@@ -123,8 +123,8 @@ c_ Taxes:
 
         largest_amount = largest_tax =  float("-inf")
         ___ amount,rate,tax __ tax_amounts:
-            largest_amount = max(largest_amount,int(amount))
-            largest_tax = max(largest_tax,int(tax))
+            largest_amount = max(largest_amount,i..(amount))
+            largest_tax = max(largest_tax,i..(tax))
     
         
         largest_amount = l..(s..(largest_amount))
@@ -147,7 +147,7 @@ c_ Taxes:
 
 
     $
-    ___ taxes(self) -> float:
+    ___ taxes(self) __ float:
         """Calculates the taxes owed
 
         As it's calculating the taxes, it is also populating the tax_amounts list
@@ -187,7 +187,7 @@ c_ Taxes:
 
 
     $
-    ___ total(self) -> float:
+    ___ total(self) __ float:
         """Calculates total taxes owed
 
         Returns:
@@ -196,7 +196,7 @@ c_ Taxes:
         r.. taxes_owed
 
     $
-    ___ tax_rate(self) -> float:
+    ___ tax_rate(self) __ float:
         """Calculates the actual tax rate
 
         Returns:

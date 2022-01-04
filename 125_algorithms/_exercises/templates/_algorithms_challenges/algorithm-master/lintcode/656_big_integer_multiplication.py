@@ -14,7 +14,7 @@ c_ Solution:
         ___ i __ r..(m - 1, -1, -1):
             carry = 0
             ___ j __ r..(n - 1, -1, -1):
-                carry += tmp[i + j + 1] + int(a[i]) * int(b[j])
+                carry += tmp[i + j + 1] + i..(a[i]) * i..(b[j])
                 tmp[i + j + 1] = carry % 10
                 carry //= 10
             tmp[i] = carry

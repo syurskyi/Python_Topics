@@ -25,7 +25,7 @@ c_ Solution(object):
                         __ matrix[x][y] != 0:
                             count += float(matrix[x][y])
                         num += 1
-                tmp = int(math.floor(count/num))
+                tmp = i..(math.floor(count/num))
                 res[i][j] = tmp
         r.. res
     

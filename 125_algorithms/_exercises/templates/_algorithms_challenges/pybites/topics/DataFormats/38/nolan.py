@@ -1,4 +1,4 @@
-_______ ___.e__.E__ as ET
+_______ ___.e__.E__ __ ET
 
 # from OMDB
 xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
@@ -11,22 +11,22 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 </root>'''  # noqa E501
 
 
-___ get_tree():
+___ get_tree
     """You probably want to use ET.fromstring"""
-    r..(ET.fromstring(xmlstring))
+    r..(ET.f..(xmlstring))
 
 
 
-___ get_movies():
+___ get_movies
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    r.. [movie.get('title') ___ movie __ get_tree().iter('movie')]
+    r.. [movie.get('title') ___ movie __ get_tree().i..('movie')]
 
 
-___ get_movie_longest_runtime():
+___ get_movie_longest_runtime
     """Call get_tree again and return the movie title for the movie with the longest
        runtime in minutes, for latter consider adding a _get_runtime helper"""
-    longest = s..([int(movie.get('runtime')[:3]) ___ movie __ get_tree().iter('movie')], r.._T..[0]
-    root = ET.fromstring(xmlstring)
-    ___ movie __ root.findall('movie'):
-        __ int(movie.get('runtime')[:3]) __ longest:
+    longest = s..([i..(movie.get('runtime')[:3]) ___ movie __ get_tree().i..('movie')], r.._T..[0]
+    root = ET.f..(xmlstring)
+    ___ movie __ root.f..('movie'):
+        __ i..(movie.get('runtime')[:3]) __ longest:
             r..(movie.get('title'))

@@ -25,7 +25,7 @@ c_ Solution(object):
         :rtype: int
         """
         st = 0  # start
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         maxa = 0
         ___ idx, val __ e..(s):
             __ counter[val] __ 0:

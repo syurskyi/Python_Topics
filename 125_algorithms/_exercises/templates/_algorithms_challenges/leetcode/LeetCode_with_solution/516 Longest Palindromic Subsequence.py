@@ -36,7 +36,7 @@ c_ Solution:
         :rtype: int
         """
         n = l..(s)
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         ___ i __ r..(n):
             F[i][i] = 1
 

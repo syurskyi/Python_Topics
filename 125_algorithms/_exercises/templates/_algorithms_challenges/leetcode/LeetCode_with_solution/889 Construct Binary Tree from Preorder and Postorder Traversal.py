@@ -31,7 +31,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ constructFromPrePost(self, pre: List[int], post: List[int]) -> TreeNode:
+    ___ constructFromPrePost(self, pre: List[i..], post: List[i..]) __ TreeNode:
         """
         use stack
         Preorder generate TreeNodes, push them to stack and postorder pop them out.
@@ -58,7 +58,7 @@ c_ Solution:
         ... j __ l..(post)
         r.. popped  # root is the last popped element
 
-    ___ constructFromPrePost_complex(self, pre: List[int], post: List[int]) -> TreeNode:
+    ___ constructFromPrePost_complex(self, pre: List[i..], post: List[i..]) __ TreeNode:
         """
         draw a full tree
         pre order & post order

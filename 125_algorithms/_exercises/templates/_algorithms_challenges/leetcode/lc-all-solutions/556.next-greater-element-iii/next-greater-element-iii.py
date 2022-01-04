@@ -18,7 +18,7 @@ c_ Solution(object):
 
     n[leftMost], n[pos] = n[pos], n[leftMost]
     n[leftMost + 1:] = s..(n[leftMost + 1:])
-    n = int("".j..(n))
+    n = i..("".j..(n))
     print
     n
     __ n <= num o. n > 0x7fffffff:

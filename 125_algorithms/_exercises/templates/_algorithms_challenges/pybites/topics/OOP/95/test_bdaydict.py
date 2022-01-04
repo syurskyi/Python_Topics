@@ -6,7 +6,7 @@ ____ bdaydict _______ BirthdayDict, MSG
 
 
 @pytest.fixture(scope='module')
-___ bd():
+___ bd
     """This creates a bday dict that can be shared among the tests
        (scope = module)"""
     r.. BirthdayDict()

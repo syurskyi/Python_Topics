@@ -66,10 +66,10 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
+    ___ addOneRow(self, root: TreeNode, v: i.., d: i..) __ TreeNode:
         r.. add(root, v, d, 1, "left")
 
-    ___ add(self, node, v, d, cur_d, child) -> TreeNode:
+    ___ add(self, node, v, d, cur_d, child) __ TreeNode:
         # use the return value for parent's reference 
         __ cur_d __ d:
             new = TreeNode(v)
@@ -83,7 +83,7 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ addOneRow(self, root: TreeNode, v: int, d: int) -> TreeNode:
+    ___ addOneRow(self, root: TreeNode, v: i.., d: i..) __ TreeNode:
         __ d __ 1:
             node = TreeNode(v)
             node.left = root
@@ -92,7 +92,7 @@ c_ Solution2:
         add(self, root, v, d, 1)
         r.. root
 
-    ___ add(self, node, v, d, cur_d) -> N..
+    ___ add(self, node, v, d, cur_d) __ N..
         __ n.. node:
             r..
 

@@ -34,7 +34,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ longestArithSeqLength(self, A: List[int]) -> int:
+    ___ longestArithSeqLength(self, A: List[i..]) __ i..:
         """
         Brute force O(n^2)
 

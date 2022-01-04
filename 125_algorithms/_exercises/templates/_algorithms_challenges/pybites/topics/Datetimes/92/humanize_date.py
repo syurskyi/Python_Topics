@@ -26,7 +26,7 @@ ___ pretty_date(date):
         __ elapsed < timeoffset.offset:
             __ timeoffset.divider:
                 elapsed = elapsed/timeoffset.divider
-            elapsed = int(elapsed)
+            elapsed = i..(elapsed)
             r.. timeoffset.date_str.f..(elapsed)
     r.. date.strftime("%m/%d/%y")
 

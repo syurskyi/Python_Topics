@@ -1,8 +1,8 @@
 ___ reverse_it(data):
     __ isi..(data,bool):
         r.. data
-    ____ isi..(data,int):
-        r.. int(s..(data)[::-1])
+    ____ isi..(data,i..):
+        r.. i..(s..(data)[::-1])
     ____ isi..(data,s..):
         r.. data[::-1]
     ____ isi..(data,float):

@@ -7,5 +7,5 @@ ___ repeated_string(s, n):
 
 
 s = input()
-n = int(input())
+n = i..(input())
 print(repeated_string(s, n))

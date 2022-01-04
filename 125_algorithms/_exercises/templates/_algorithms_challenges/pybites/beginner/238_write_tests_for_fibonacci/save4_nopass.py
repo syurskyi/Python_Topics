@@ -2,7 +2,7 @@ ____ fibonacci _______ fib
 _______ pytest
 
 
-___ test_fib():
+___ test_fib
     try:
         ... fib(0) __ 0
         ... fib(1) __ 1

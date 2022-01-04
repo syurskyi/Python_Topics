@@ -3,7 +3,7 @@ ____ collections _______ n..
 ____ typing _______ List
 
 _______ requests
-____ bs4 _______ BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup __ Soup
 ____ dateutil.parser _______ parse
 
 PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
@@ -79,7 +79,7 @@ country_lookup = {
 }
 
 
-___ get_continent(country: s..) -> s..:
+___ get_continent(country: s..) __ s..:
     """
     Given a country name returns the associated continent of the country.
 
@@ -94,13 +94,13 @@ ___ get_continent(country: s..) -> s..:
                 r.. continent
 
 
-___ _get_pycon_data():
+___ _get_pycon_data
     """Helper function that retrieves the required PyCon data"""
-    with requests.Session() as session:
+    with requests.Session() __ session:
         r.. session.get(PYCON_DATA).content.decode("utf-8")
 
 
-___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
+___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
     """
     Scrape the PyCon events from the given website data and
     return a list of PyCon namedtuples. Pay attention to the
@@ -136,8 +136,8 @@ ___ get_pycon_events(data=_get_pycon_data()) -> List[PyCon]:
 
 
 ___ filter_pycons(pycons: List[PyCon],
-                  year: int = 2019,
-                  continent: s.. = "Europe") -> List[PyCon]:
+                  year: i.. = 2019,
+                  continent: s.. = "Europe") __ List[PyCon]:
     """
     Given a list of PyCons a year and a continent return
     a list of PyCons that take place in that year and on
@@ -148,7 +148,7 @@ ___ filter_pycons(pycons: List[PyCon],
         event_year = pycon.start_date.year
         event_continent = get_continent(pycon.country)
         print(event_year, event_continent)
-        __ int(event_year) __ year a.. event_continent __ continent:
+        __ i..(event_year) __ year a.. event_continent __ continent:
             filtered_event.a..(pycon)
     r.. s..(filtered_event, key=l.... x: x.city)
 

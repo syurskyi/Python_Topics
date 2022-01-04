@@ -40,7 +40,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ isAlienSorted(self, words: List[s..], order: s..) -> bool:
+    ___ isAlienSorted(self, words: List[s..], order: s..) __ bool:
         h    # dict
         ___ i, c __ e..(order):
             h[c] = i

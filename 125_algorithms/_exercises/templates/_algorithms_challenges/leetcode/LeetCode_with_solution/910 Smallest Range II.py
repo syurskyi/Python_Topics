@@ -33,7 +33,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ smallestRangeII(self, A: List[int], K: int) -> int:
+    ___ smallestRangeII(self, A: List[i..], K: i..) __ i..:
         """
         Say A[i] is the largest i that goes up. A[i+1] would be the smallest
         goes down
@@ -50,7 +50,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ smallestRangeII_error(self, A: List[int], K: int) -> int:
+    ___ smallestRangeII_error(self, A: List[i..], K: i..) __ i..:
         """
         find the min max is not enough, since the min max after +/- K may change
         """

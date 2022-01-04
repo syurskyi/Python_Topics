@@ -1,4 +1,4 @@
-c_ Queue():
+c_ Queue
     ___  -
         items  []
 
@@ -14,14 +14,14 @@ c_ Queue():
             r_ items[0].value
 
 
-c_ Node():
+c_ Node
     ___  -   value):
         value  value
         left  N..
         right  N..
 
 
-c_ BinaryTree():
+c_ BinaryTree
     ___  -   value):
         root  Node(value)
 

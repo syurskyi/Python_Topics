@@ -26,7 +26,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ advantageCount(self, A: List[int], B: List[int]) -> List[int]:
+    ___ advantageCount(self, A: List[i..], B: List[i..]) __ List[i..]:
         """
         Gready select the smallest larger number
         Then we need sort A

@@ -5,9 +5,9 @@
 ____ collections _______ defaultdict
 
 
-___ t __ r..(int(input())):
+___ t __ r..(i..(input())):
     s = input()
-    substrings = defaultdict(int)
+    substrings = defaultdict(i..)
 
     ___ i __ r..(1, l..(s)):
         ___ j __ r..(l..(s) - i + 1):

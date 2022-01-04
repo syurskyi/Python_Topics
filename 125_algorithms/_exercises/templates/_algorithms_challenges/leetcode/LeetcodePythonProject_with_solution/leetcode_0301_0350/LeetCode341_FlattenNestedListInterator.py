@@ -14,7 +14,7 @@ c_ NestedInteger(object):
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
-        pass
+        p..
 
     ___ getInteger
         """
@@ -22,7 +22,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
-        pass
+        p..
 
     ___ getList
         """
@@ -30,7 +30,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a single integer
         :rtype List[NestedInteger]
         """
-        pass
+        p..
 
 c_ NestedIterator(object):
     ___ - , nestedList):
@@ -38,7 +38,7 @@ c_ NestedIterator(object):
         result    # list
         w.... deque:
             ni = deque.pop(0)
-            __ ni.isInteger():
+            __ ni.isInteger
                 result.a..(ni.getInteger())
             ____:
                 l = ni.getList()

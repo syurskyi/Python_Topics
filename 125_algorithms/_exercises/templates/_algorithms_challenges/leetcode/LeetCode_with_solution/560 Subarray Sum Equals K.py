@@ -16,11 +16,11 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ subarraySum(self, nums: List[int], k: int) -> int:
+    ___ subarraySum(self, nums: List[i..], k: i..) __ i..:
         """
         prefix sum
         """
-        h = defaultdict(int)
+        h = defaultdict(i..)
         ret = 0
         s = 0
         h[s] += 1

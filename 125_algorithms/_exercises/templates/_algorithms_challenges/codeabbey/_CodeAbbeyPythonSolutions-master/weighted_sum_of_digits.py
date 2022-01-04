@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_weight(num):
@@ -9,7 +9,7 @@ ___ get_weight(num):
         num //= 10
     results.a..(weight_sum)
 
-values = l..(map(int, input().s..()))
+values = l..(map(i.., input().s..()))
 ___ i __ r..(amount_values):
     get_weight(values[i])
 

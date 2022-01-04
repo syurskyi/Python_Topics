@@ -4,8 +4,8 @@ c_ Solution(object):
   
   ___ findLonelyPixel(self, picture):
 
-      col = defaultdict(int)
-      row = defaultdict(int)
+      col = defaultdict(i..)
+      row = defaultdict(i..)
 
       ___ i, r __ e..(picture):
         ___ j, pixel __ e..(r):

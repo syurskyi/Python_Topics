@@ -18,16 +18,16 @@ urllib.request.urlretrieve(
 ___ _parse_book_line(line):
     """returns a dict representing the line"""
     out_dict = d..()
-    date = __.findall(r'^([0-9]{2}-[0-9]{2})', line)[0]
+    date = __.f..(r'^([0-9]{2}-[0-9]{2})', line)[0]
     out_dict['date'] = d__.strptime(date, '%m-%d')
-    out_dict['title'] = __.findall(r'DEBUG.*- (.*)', line)[0]
+    out_dict['title'] = __.f..(r'DEBUG.*- (.*)', line)[0]
     r.. out_dict
 
 
-___ create_chart():
+___ create_chart
 
     chart = defaultdict(s..)
-    with open(SAFARI_LOGS, 'r') as f:
+    with open(SAFARI_LOGS, 'r') __ f:
         prev = f.readline()
         ___ line __ f:
             __ 'sending to slack channel' __ line:

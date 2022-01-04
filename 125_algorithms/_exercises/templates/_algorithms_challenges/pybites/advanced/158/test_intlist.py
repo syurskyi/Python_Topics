@@ -6,12 +6,12 @@ ____ intlist _______ IntList
 
 
 @pytest.fixture()
-___ list1():
+___ list1
     r.. IntList([1, 3, 5])
 
 
 @pytest.fixture()
-___ list2():
+___ list2
     r.. IntList([2, 3, 4, 5, 7])
 
 
@@ -58,6 +58,6 @@ ___ test_cannot_append_non_int_values_via_inplace_overloading(list2):
 ___ test_can_append_list_of_ints(list1):
     try:
         list1 += [1, 2, 3]
-    except Exception as exc:
+    except Exception __ exc:
         pytest.fail(exc)
     ... list1 __ [1, 3, 5, 1, 2, 3]

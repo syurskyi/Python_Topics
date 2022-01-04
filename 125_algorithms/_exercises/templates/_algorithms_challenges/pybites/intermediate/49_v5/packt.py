@@ -1,6 +1,6 @@
 ____ collections _______ n..
 
-____ bs4 _______ BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup __ Soup
 _______ requests
 
 CONTENT = requests.get('http://bit.ly/2EN2Ntv').text
@@ -8,7 +8,7 @@ CONTENT = requests.get('http://bit.ly/2EN2Ntv').text
 Book = n..('Book', 'title description image link')
 
 
-___ get_book():
+___ get_book
     """make a Soup object, parse the relevant html sections, and return a Book namedtuple"""
     soup = Soup(CONTENT)
     dotd = soup.find(id='deal-of-the-day')

@@ -63,7 +63,7 @@ ___ convert_emea_date_to_amer_date(date):
 
 
     try:
-        dates = __.findall(r"(\d\d)/(\d\d)/(\d{4})",date)[0]
+        dates = __.f..(r"(\d\d)/(\d\d)/(\d{4})",date)[0]
     except:
         r.. date
     ____:

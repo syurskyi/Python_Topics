@@ -5,14 +5,14 @@ ____ southpark _______ (get_season_csv_file,
 
 
 @pytest.fixture(scope="module")
-___ words_spoken_s1():
+___ words_spoken_s1
     # module scope to not call requests for every test function
     content = get_season_csv_file(season=1)
     r.. get_num_words_spoken_by_character_per_episode(content)
 
 
 @pytest.fixture(scope="module")
-___ words_spoken_s5():
+___ words_spoken_s5
     content = get_season_csv_file(season=5)
     r.. get_num_words_spoken_by_character_per_episode(content)
 

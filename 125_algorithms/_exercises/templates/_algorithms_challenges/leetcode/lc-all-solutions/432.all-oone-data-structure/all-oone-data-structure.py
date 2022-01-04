@@ -90,7 +90,7 @@ c_ AllOne(object):
         newNode.add(key)
 
       node.remove(key)
-      __ node.isEmpty():
+      __ node.isEmpty
         List.delete(node)
         del d[key]
       d[key] = newNode
@@ -107,7 +107,7 @@ c_ AllOne(object):
     node = d[key]
     __ node.val __ 1:
       node.remove(key)
-      __ node.isEmpty():
+      __ node.isEmpty
         List.delete(node)
       del d[key]
     ____:
@@ -120,7 +120,7 @@ c_ AllOne(object):
         newNode = node.prev
         newNode.add(key)
       node.remove(key)
-      __ node.isEmpty():
+      __ node.isEmpty
         List.delete(node)
         del d[key]
       d[key] = newNode

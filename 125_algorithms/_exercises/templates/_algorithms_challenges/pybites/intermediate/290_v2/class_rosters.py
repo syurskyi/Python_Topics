@@ -9,7 +9,7 @@ ___ class_rosters(input_file):
      
     school_year = 2020 
     result    # list
-    with open(input_file,'r') as f:
+    with open(input_file,'r') __ f:
         data = csv.reader(f)
 
         ___ row __ data:

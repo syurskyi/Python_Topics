@@ -1,4 +1,4 @@
-values = l..(map(int, input().s..()))
+values = l..(map(i.., input().s..()))
 amount_values = values[0]
 results    # list
 

@@ -4,8 +4,8 @@ c_ Solution(object):
     :type area: int
     :rtype: List[int]
     """
-    root = int(area ** 0.5)
+    root = i..(area ** 0.5)
     w.... root > 0:
       __ area % root __ 0:
-        r.. int(area / root), root
+        r.. i..(area / root), root
       root -= 1

@@ -56,7 +56,7 @@ c_ Solution:
     ___ - ):
         mp = defaultdict(l..)  # element (-Y, val)  # from left to right, top to bottom
 
-    ___ verticalTraversal(self, root: TreeNode) -> List[List[int]]:
+    ___ verticalTraversal(self, root: TreeNode) __ List[List[i..]]:
         dfs(root, 0, 0)
         ret    # list
         mn = m..(mp)

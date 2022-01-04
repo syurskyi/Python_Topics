@@ -9,6 +9,6 @@ POINTS = {
 
 
 ___ score(word):
-    __ n.. word.isalpha():
+    __ n.. word.isalpha
         r.. 0
     r.. s..(POINTS[letter] ___ letter __ word.lower())

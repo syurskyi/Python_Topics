@@ -6,7 +6,7 @@ ___ limit_number(num, range_low, range_high):
     ____:
         r.. num
 
-___ test():
+___ test
     print("test has started")
     __ limit_number(5, 1, 10) != 5:
         print("error1")

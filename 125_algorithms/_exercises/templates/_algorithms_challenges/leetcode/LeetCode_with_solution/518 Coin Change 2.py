@@ -42,7 +42,7 @@ c_ Solution:
         :type coins: List[int]
         :rtype: int
         """
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         n = l..(coins)
         ___ l __ r..(n + 1):
             F[0][l] = 1   # trivial case
@@ -72,7 +72,7 @@ c_ Solution:
 
         coins.s..()
         n = l..(coins)
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         ___ i __ r..(n):
             F[coins[i]][i] = 1
 

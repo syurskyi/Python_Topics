@@ -23,7 +23,7 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
        START_VALUE coordinates and move through the numbers in order printing
        them.  Each time you turn append the grid with its corresponding symbol
        (DOWN / UP / LEFT / RIGHT). See the TESTS for more info."""
-    grid_array = [[int(v) ___ v __ __.findall(r'(\d+)', line)]
+    grid_array = [[i..(v) ___ v __ __.f..(r'(\d+)', line)]
                   ___ line __ grid.splitlines(keepends=F..)
                   __ l..(line.r..('|', '').strip()) > 0]
 

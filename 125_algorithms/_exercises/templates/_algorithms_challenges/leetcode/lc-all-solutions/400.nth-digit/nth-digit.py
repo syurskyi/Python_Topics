@@ -10,4 +10,4 @@ c_ Solution(object):
       size += 1
       start *= 10
       step *= 10
-    r.. int(s..(start + (n - 1) // size)[(n - 1) % size])
+    r.. i..(s..(start + (n - 1) // size)[(n - 1) % size])

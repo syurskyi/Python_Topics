@@ -1,2 +1,2 @@
-___ transpose():
-    pass
+___ transpose
+    p..

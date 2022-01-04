@@ -30,7 +30,7 @@ c_ Solution(object):
             ],
         ]
         ___ grid __ testCases:
-            grid = [[int(x) ___ x __ l] ___ l __ grid]
+            grid = [[i..(x) ___ x __ l] ___ l __ grid]
             print('grid: %s' % (grid))
             result = minTotalDistance(grid)
             print('result: %s' % (result))

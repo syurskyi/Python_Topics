@@ -6,7 +6,7 @@ ____ notifications _______ gen_bite_planning
 TODAY = date(2019, 8, 25)
 
 
-___ test_one_bite_a_day():
+___ test_one_bite_a_day
     gen = gen_bite_planning(num_bites=1, num_days=1, start_date=TODAY)
     actual = l..(islice(gen, 10))
     expected = [date(2019, 8, 26), date(2019, 8, 27),
@@ -17,7 +17,7 @@ ___ test_one_bite_a_day():
     ... actual __ expected
 
 
-___ test_two_bites_every_three_days():
+___ test_two_bites_every_three_days
     gen = gen_bite_planning(num_bites=2, num_days=3, start_date=TODAY)
     actual = l..(islice(gen, 10))
     expected = [date(2019, 8, 28), date(2019, 8, 28),
@@ -28,7 +28,7 @@ ___ test_two_bites_every_three_days():
     ... actual __ expected
 
 
-___ test_one_bite_every_other_day():
+___ test_one_bite_every_other_day
     gen = gen_bite_planning(num_bites=1, num_days=2, start_date=TODAY)
     actual = l..(islice(gen, 10))
     expected = [date(2019, 8, 27), date(2019, 8, 29),

@@ -38,7 +38,7 @@ c_ Color:
         ___ i __ r..(1,l..(hex_value),2):
             h = hex_value[i:i + 2]
             try:
-                value = int(h,16)
+                value = i..(h,16)
             except:
                 raise 
             ____:

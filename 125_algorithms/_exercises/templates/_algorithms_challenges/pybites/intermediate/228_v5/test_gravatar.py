@@ -7,7 +7,7 @@ HASHED_INFO_EMAIL = "ff2de96de035e1ccdb39ca31d3fe4a5c"
 HASHED_SUPPORT_EMAIL = "1c888a408baa7a685c7c06155e48de84"
 SIZE, DEFAULT = 200, 'robohash'
 
-EXPECTED = iter([  # make an iterator
+EXPECTED = i..([  # make an iterator
     f'{BASE_URL}{HASHED_INFO_EMAIL}?s={SIZE}&r=g&d={DEFAULT}',
     f'{BASE_URL}{HASHED_INFO_EMAIL}?s={SIZE}&r=g&d={DEFAULT}',
     f'{BASE_URL}{HASHED_INFO_EMAIL}?s=40&r=g&d={DEFAULT}',

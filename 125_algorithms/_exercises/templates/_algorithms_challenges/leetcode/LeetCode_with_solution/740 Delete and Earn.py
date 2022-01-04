@@ -37,7 +37,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ deleteAndEarn(self, nums: List[int]) -> int:
+    ___ deleteAndEarn(self, nums: List[i..]) __ i..:
         """
         reduce to house rob problem
         whether to pick the number or not
@@ -59,7 +59,7 @@ c_ Solution:
 
         r.. cur
 
-    ___ deleteAndEarn_dp(self, nums: List[int]) -> int:
+    ___ deleteAndEarn_dp(self, nums: List[i..]) __ i..:
         """
         reduce to house rob problem
         whether to pick the number or not
@@ -68,7 +68,7 @@ c_ Solution:
             F[n-2] + reward if pick n
 
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ n __ nums:
             counter[n] += 1
 
@@ -81,7 +81,7 @@ c_ Solution:
             )
         r.. F[-1]
 
-    ___ deleteAndEarn_slow(self, nums: List[int]) -> int:
+    ___ deleteAndEarn_slow(self, nums: List[i..]) __ i..:
         """
         geedy + dp: chose to delete max or max - 1
         O(n lg n)

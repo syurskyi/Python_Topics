@@ -34,7 +34,7 @@ c_ Solution:
     ___ - ):
         ret = 0
 
-    ___ rangeSumBST(self, root: TreeNode, L: int, R: int) -> int:
+    ___ rangeSumBST(self, root: TreeNode, L: i.., R: i..) __ i..:
         """
         traverse
         """

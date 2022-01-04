@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ largestSumOfAverages(self, A: List[int], K: int) -> float:
+    ___ largestSumOfAverages(self, A: List[i..], K: i..) __ float:
         """
         Memoized Backtracking + Prefix sum
         My first hunch is correct

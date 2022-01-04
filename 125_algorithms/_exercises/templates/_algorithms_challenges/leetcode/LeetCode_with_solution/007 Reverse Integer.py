@@ -29,7 +29,7 @@ c_ Solution(object):
         lst = l..(x)  # list('123') returns ['1', '2', '3']
         lst.reverse()
         x = "".j..(lst)
-        x = int(x)
+        x = i..(x)
         r.. sign*x
 
 

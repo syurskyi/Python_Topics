@@ -1,5 +1,5 @@
 #The word or whole phrase which has the same sequence of letters in both directions is called a palindrome.
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     rev_str = ''
     string = ''.j..(e ___ e __ input().l.. __ e.islower())
     #here iam storing the string in the reverse form

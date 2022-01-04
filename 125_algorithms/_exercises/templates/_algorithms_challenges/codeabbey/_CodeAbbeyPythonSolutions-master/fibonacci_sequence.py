@@ -1,6 +1,6 @@
-_______ math as m
+_______ math __ m
 
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_index_of_fib_number(num):
@@ -10,7 +10,7 @@ ___ get_index_of_fib_number(num):
     r.. round(index)
 
 ___ i __ r..(amount_values):
-    results.a..(get_index_of_fib_number(int(input())))
+    results.a..(get_index_of_fib_number(i..(input())))
 
 print(*results)
 

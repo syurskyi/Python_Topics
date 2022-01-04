@@ -29,7 +29,7 @@ c_ CryptoSquare:
 
     @staticmethod
     ___ square_size(msg_length):
-        r.. int(math.ceil(msg_length ** 0.5))
+        r.. i..(math.ceil(msg_length ** 0.5))
 
     # https://stackoverflow.com/a/4938130/2813210
     @staticmethod

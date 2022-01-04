@@ -39,7 +39,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ possibleBipartition(self, N: int, dislikes: List[List[int]]) -> bool:
+    ___ possibleBipartition(self, N: i.., dislikes: List[List[i..]]) __ bool:
         """
         If given likes, then we can use union-find. But this is dislikes.
         Two bipartition, A, B. For each dislike, do a dfs on A, B.

@@ -4,7 +4,7 @@ ____ time _______ mktime
 ____ feedparser _______ parse
 _______ __
 
-_______ ___.e__.E__ as ET
+_______ ___.e__.E__ __ ET
 
 # FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 
@@ -101,7 +101,7 @@ ___ filter_entries_by_tag(s.., entry):
     r.. s..
 
 
-___ main():
+___ main
     """Entry point to the program
        1. Call get_feed_entries and store them in entries
        2. Initiate an infinite loop

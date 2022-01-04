@@ -13,7 +13,7 @@ LOG_LEVEL = {
 }
 
 
-___ test_callable_log_levels():
+___ test_callable_log_levels
     ___ level __ LOG_LEVEL:
         ... callable(LOG_LEVEL[level])
 

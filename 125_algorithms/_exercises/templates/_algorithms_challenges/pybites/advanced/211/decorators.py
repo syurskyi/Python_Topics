@@ -5,7 +5,7 @@ MAX_RETRIES = 3
 
 
 c_ MaxRetriesException(Exception):
-    pass
+    p..
 
 
 ___ retry(func):
@@ -26,7 +26,7 @@ ___ retry(func):
             try:
                 vals = func(*args, **kwargs)
                 break
-            except Exception as e:
+            except Exception __ e:
                 retries += 1
                 print(e)
         ____:

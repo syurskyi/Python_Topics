@@ -6,9 +6,9 @@ OCR_INPUT = [
 ]
 
 
-___ number():
-    pass
+___ number
+    p..
 
 
-___ grid():
-    pass
+___ grid
+    p..

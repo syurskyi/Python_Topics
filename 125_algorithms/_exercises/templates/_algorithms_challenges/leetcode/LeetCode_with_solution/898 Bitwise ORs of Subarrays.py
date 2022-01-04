@@ -40,7 +40,7 @@ Note:
 """
 
 c_ Solution:
-    ___ subarrayBitwiseORs(self, A: List[int]) -> int:
+    ___ subarrayBitwiseORs(self, A: List[i..]) __ i..:
         """
         Use a dp array to record OR
         F[i][j]

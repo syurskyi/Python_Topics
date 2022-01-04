@@ -46,7 +46,7 @@ c_ Solution(object):
             level += 1
             l = l..(q)
             ___ i __ xrange(l):
-                ___ j __ xrange(1, int(math.sqrt(n))+1):
+                ___ j __ xrange(1, i..(math.sqrt(n))+1):
                     nxt = q[i]+j*j
                     __ nxt <= n a.. visited[nxt]:
                         continue
@@ -69,7 +69,7 @@ c_ Solution(object):
         """
         F = [i ___ i __ xrange(n+1)]
         ___ i __ xrange(1, n+1):
-            ___ j __ xrange(1, int(math.sqrt(i))+1):
+            ___ j __ xrange(1, i..(math.sqrt(i))+1):
                 __ i-j*j >= 0:
                     F[i] = m..(F[i], F[i-j*j]+1)
 

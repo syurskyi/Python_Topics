@@ -15,10 +15,10 @@ c_ Solution(object):
         sign = 1
         preVal = 0
         w.... i < l..(s):
-            __ s[i].isdigit():
+            __ s[i].isdigit
                 preVal = 0
-                w.... i < l..(s) a.. s[i].isdigit():
-                    preVal = preVal*10 + int(s[i])
+                w.... i < l..(s) a.. s[i].isdigit
+                    preVal = preVal*10 + i..(s[i])
                     i += 1
                 i -= 1
             ____ s[i] __ '(':

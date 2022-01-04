@@ -27,11 +27,11 @@ c_ Solution(object):
             i = n - 1 - k
             __ k < m:
                 j = m - 1 - k
-                r = (int(a[i]) + int(b[j]) + c) % 2
-                c = (int(a[i]) + int(b[j]) + c) / 2
+                r = (i..(a[i]) + i..(b[j]) + c) % 2
+                c = (i..(a[i]) + i..(b[j]) + c) / 2
             ____:
-                r = (int(a[i]) + c) % 2
-                c = (int(a[i]) + c) / 2
+                r = (i..(a[i]) + c) % 2
+                c = (i..(a[i]) + c) / 2
             res.insert(0, s..(r))
         __ c __ 1:
             res.insert(0, s..(c))

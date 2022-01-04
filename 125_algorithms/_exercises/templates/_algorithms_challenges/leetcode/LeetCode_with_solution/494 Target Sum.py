@@ -39,7 +39,7 @@ c_ Solution:
         """
         __ n.. A:
             r..
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         F[0][0] = 1
         ___ i __ r..(l..(A)):
             ___ k __ F[i].k..:  # F[i] for A[:i]

@@ -47,7 +47,7 @@ __ __name__ __ "__main__":
 
     ap = argparse.ArgumentParser("rhombus generator")
 
-    ap.add_argument("-w","--width",t..=int,required=T..,help="width of rhombus")
+    ap.add_argument("-w","--width",t..=i..,required=T..,help="width of rhombus")
 
     args = vars(ap.parse_args())
     width = args["width"]

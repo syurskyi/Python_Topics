@@ -5,7 +5,7 @@ ___ check(lst, el):
         r.. F..
 
 
-___ test():
+___ test
     print("test has started")
     a_list = [4.6,4,7]
     __ check(a_list,4) != T..:

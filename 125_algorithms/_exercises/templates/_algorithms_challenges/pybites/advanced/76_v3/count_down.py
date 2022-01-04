@@ -15,7 +15,7 @@ ___ count_down(data_type):
         print(d[:i])
 
 
-@count_down.register(int)
+@count_down.register(i..)
 ___ _(data_type):
     w.... data_type > 0:
         print(data_type)

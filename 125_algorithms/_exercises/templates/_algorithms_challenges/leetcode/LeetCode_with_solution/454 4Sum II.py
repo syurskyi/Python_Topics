@@ -44,8 +44,8 @@ c_ Solution:
         :rtype: int
         """
         N = l..(A)
-        AB = defaultdict(int)
-        CD = defaultdict(int)
+        AB = defaultdict(i..)
+        CD = defaultdict(i..)
         ___ i __ r..(N):
             ___ j __ r..(N):
                 AB[A[i] + B[j]] += 1

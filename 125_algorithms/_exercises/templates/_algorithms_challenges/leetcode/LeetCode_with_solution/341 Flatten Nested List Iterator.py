@@ -80,7 +80,7 @@ c_ NestedIterator(object):
             nl, idx = stk[-1]
             __ idx < l..(nl):
                 ni = nl[idx]
-                __ ni.isInteger():
+                __ ni.isInteger
                     r.. T..
                 ____:
                     stk[-1][1] = idx + 1  # prepare the parent, otherwise dead loop
@@ -112,7 +112,7 @@ c_ NestedIteratorVerbose(object):
         """
         :rtype: int
         """
-        __ hasNext():
+        __ hasNext
             nl = nl_stk[-1]
             idx = idx_stk[-1]
             nxt = nl[idx]
@@ -131,7 +131,7 @@ c_ NestedIteratorVerbose(object):
             idx = idx_stk[-1]
             __ idx < l..(nl):
                 ni = nl[idx]
-                __ ni.isInteger():
+                __ ni.isInteger
                     r.. T..
                 ____:
                     idx_stk[-1] = idx+1

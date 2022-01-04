@@ -2,8 +2,8 @@
 #  Score: 30
 
 
-n = int(input())
-a = l..(map(int, input().s..()))
+n = i..(input())
+a = l..(map(i.., input().s..()))
 
 count = 0
 

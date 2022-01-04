@@ -15,7 +15,7 @@ c_ Calculator:
         tokens = tokenized.s..(" ")
 
     ___ calculate
-        __ n.. valid():
+        __ n.. valid
             raise ValueError
         operator_stack = operator_stack()
         num_stack = num_stack()
@@ -30,7 +30,7 @@ c_ Calculator:
         r.. eval(s..(num1) + operator + s..(num2))
 
     ___ num_stack
-        r.. l..(map(int, l..(filter(digit, tokens))))
+        r.. l..(map(i.., l..(filter(digit, tokens))))
 
     ___ operator_stack
         r.. l..(filter(operator, tokens))

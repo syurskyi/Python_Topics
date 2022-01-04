@@ -9,7 +9,7 @@ ____ identity_and_equality _______ (
 
 # `NewList` for tests
 c_ NewList(l..):
-    pass
+    p..
 
 
 # A bunch of lists to test

@@ -7,7 +7,7 @@ c_ Solution(object):
     ans = 24 * 60
     times = [0] * l..(timePoints)
     ___ i, time __ e..(timePoints):
-      h, m = map(int, time.s..(":"))
+      h, m = map(i.., time.s..(":"))
       times[i] = h * 60 + m
 
     times.s..()

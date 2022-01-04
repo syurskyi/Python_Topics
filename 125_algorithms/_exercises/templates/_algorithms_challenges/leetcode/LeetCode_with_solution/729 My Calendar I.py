@@ -62,7 +62,7 @@ c_ MyCalendar:
         """
         root = N..
 
-    ___ insert(self, node: Node, s: int, e: int) -> Node:
+    ___ insert(self, node: Node, s: i.., e: i..) __ Node:
         __ n.. node:
             r.. Node(s, e)
 
@@ -81,7 +81,7 @@ c_ MyCalendar:
         ____:
             r.. N..
 
-    ___ book(self, start: int, end: int) -> bool:
+    ___ book(self, start: i.., end: i..) __ bool:
         ret = insert(root, start, end)
         __ ret __ N..
             r.. F..

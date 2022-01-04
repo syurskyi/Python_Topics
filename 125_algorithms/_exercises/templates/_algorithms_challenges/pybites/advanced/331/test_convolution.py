@@ -1,4 +1,4 @@
-_______ numpy as np
+_______ numpy __ np
 _______ pytest
 
 ____ convolution _______ convolution2D

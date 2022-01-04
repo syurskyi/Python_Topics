@@ -38,7 +38,7 @@ c_ Solution(object):
                     ___ k __ r..(l..(substr)):
                         repeatStr = substr[:k+1]
                         __ repeatStr a.. l..(substr)%l..(repeatStr)__0 a.. substr.r..(repeatStr, '') __ '':
-                            ss = s..(int(l..(substr)/l..(repeatStr))) + '[' + dp[i][i+k] + ']'
+                            ss = s..(i..(l..(substr)/l..(repeatStr))) + '[' + dp[i][i+k] + ']'
                             __ l..(ss) < l..(dp[i][j]):
                                 dp[i][j] = ss
         r.. dp[0][-1]

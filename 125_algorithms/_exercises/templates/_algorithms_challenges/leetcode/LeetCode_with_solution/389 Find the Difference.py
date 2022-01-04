@@ -30,7 +30,7 @@ c_ Solution(object):
         :type t: str
         :rtype: str
         """
-        d = defaultdict(int)
+        d = defaultdict(i..)
         ___ e __ s:
             d[e] += 1
 

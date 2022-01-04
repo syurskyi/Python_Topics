@@ -13,7 +13,7 @@ c_ Solution(object):
         x = 0
         ips= ip.s..('.')
         ___ ip __ ips:
-            x = int(ip) + x*256
+            x = i..(ip) + x*256
         res    # list
         w.... n > 0:
             step = x &(-x)

@@ -10,7 +10,7 @@ EXPECTED = (
 )
 
 
-___ test_calc_sums():
+___ test_calc_sums
     i = 0
     ___ i, line __ e..(calc_sums(VALUES)):
         n1, n2, sum_ = EXPECTED[i]

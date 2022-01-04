@@ -28,7 +28,7 @@ c_ Bloodtype(Enum):
     ___ __lte__(self,other):
 
 
-        r.. int(self) <= int(other)
+        r.. i..(self) <= i..(other)
 
 
 
@@ -56,7 +56,7 @@ ___ check_bt(donor, recipient):
     
     
     ___ blood_type __ (donor,recipient):
-        __ t..(blood_type) n.. __ (s..,int,Bloodtype):
+        __ t..(blood_type) n.. __ (s..,i..,Bloodtype):
             raise TypeError("Invalid types")
     
 
@@ -67,7 +67,7 @@ ___ check_bt(donor, recipient):
             __ blood_type n.. __ blood_type_text:
                 raise ValueError
             blood_types.a..(blood_type_text[blood_type])
-        ____ t..(blood_type) __ int:
+        ____ t..(blood_type) __ i..:
             blood_types.a..(Bloodtype(blood_type))
         ____:
             blood_types.a..(blood_type)
@@ -104,7 +104,7 @@ ___ check_bt(donor, recipient):
 
 
 # hint
-___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
+___ _particular_antigen_comp(donor: i.., recipient: i..) __ tuple:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.

@@ -18,7 +18,7 @@ c_ Solution(object):
         
     ___ isSelfDividing(self, num):
         ___ digit __ s..(num):
-            d = int(digit)
+            d = i..(digit)
             __ d __ 0 o. num%d != 0:
                 r.. F..
         r.. T..

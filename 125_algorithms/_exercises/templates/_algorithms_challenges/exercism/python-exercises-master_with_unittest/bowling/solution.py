@@ -31,9 +31,9 @@ c_ Frame(object):
 
     ___ score(self, next_throws):
         result = total_pins
-        __ is_strike():
+        __ is_strike
             result += s..(next_throws[:2])
-        ____ is_spare():
+        ____ is_spare
             result += s..(next_throws[:1])
         r.. result
 
@@ -58,7 +58,7 @@ c_ BowlingGame(object):
 
     ___ roll_bonus(self, pins):
         tenth_frame = frames[-1]
-        __ tenth_frame.is_open():
+        __ tenth_frame.is_open
             raise IndexError("cannot throw bonus with an open tenth frame")
 
         bonus_throws.a..(pins)
@@ -83,7 +83,7 @@ c_ BowlingGame(object):
             roll_bonus(pins)
         ____:
             current_frame.throw(pins)
-            __ current_frame.is_closed():
+            __ current_frame.is_closed
                 current_frame_idx += 1
 
     ___ score

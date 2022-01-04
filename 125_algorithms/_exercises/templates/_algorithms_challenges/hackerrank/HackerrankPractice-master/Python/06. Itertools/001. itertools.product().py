@@ -5,6 +5,6 @@
 ____ i.. _______ product
 
 
-a = l..(map(int, input().s..()))
-b = l..(map(int, input().s..()))
+a = l..(map(i.., input().s..()))
+b = l..(map(i.., input().s..()))
 print(*l..(product(a, b)))

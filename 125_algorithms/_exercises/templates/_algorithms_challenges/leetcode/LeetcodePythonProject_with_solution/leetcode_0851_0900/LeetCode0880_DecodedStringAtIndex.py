@@ -12,14 +12,14 @@ c_ Solution(object):
         """
         n = 0
         ___ i, c __ e..(S):
-            __ c.isdigit():
-                n = n*int(c)
+            __ c.isdigit
+                n = n*i..(c)
             ____:
                 n += 1
         ___ j __ r..(i, -1, -1):
             c = S[j]
-            __ c.isdigit():
-                n //= int(c)
+            __ c.isdigit
+                n //= i..(c)
                 K %= n
             ____:
                 __ K __ n o. K __ 0:
@@ -34,8 +34,8 @@ c_ Solution(object):
         """
         tmp = ''
         ___ c __ S:
-            __ c.isdigit():
-                tmp += tmp*(int(c)-1)
+            __ c.isdigit
+                tmp += tmp*(i..(c)-1)
             ____:
                 tmp += c
             __ K-1 < l..(tmp):

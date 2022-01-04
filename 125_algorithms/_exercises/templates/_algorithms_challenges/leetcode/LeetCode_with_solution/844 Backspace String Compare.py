@@ -35,7 +35,7 @@ Can you solve it in O(N) time and O(1) space?
 
 
 c_ Solution:
-    ___ backspaceCompare(self, S: s.., T: s..) -> bool:
+    ___ backspaceCompare(self, S: s.., T: s..) __ bool:
         """
         stk
         use a stk to build the string

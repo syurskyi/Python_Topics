@@ -3,7 +3,7 @@ ___ get_word(left, right):
 
 
 
-___ test():
+___ test
     print("test has started")
     __ get_word("reli", "able") != "Reliable":
         print("error1")

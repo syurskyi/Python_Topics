@@ -14,9 +14,9 @@ WORD_REGEX = r"(['\w]+)"
 word_regex = __.c..(WORD_REGEX)
 
 
-___ get_harry_most_common_word():
-    with open(harry_text) as f:
-        words = word_regex.findall(f.read().lower())
-    with open(stopwords_file) as f:
-        stops = word_regex.findall(f.read().lower())
+___ get_harry_most_common_word
+    with open(harry_text) __ f:
+        words = word_regex.f..(f.read().lower())
+    with open(stopwords_file) __ f:
+        stops = word_regex.f..(f.read().lower())
     r.. Counter([x ___ x __ words __ x n.. __ stops]).most_common(1)[0]

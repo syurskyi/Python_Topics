@@ -46,7 +46,7 @@ ___ test_json2csv(file_no, expected, exception, capfd):
     urlretrieve(mount_data.f..(file_no), mount_json)
 
     __ exception:
-        with pytest.raises(JSONDecodeError) as exc:
+        with pytest.raises(JSONDecodeError) __ exc:
             convert_to_csv(mount_json)
             ... 'Invalid control character' __ s..(exc)
 
@@ -56,6 +56,6 @@ ___ test_json2csv(file_no, expected, exception, capfd):
         r..
 
     convert_to_csv(mount_json)
-    with open(mount_csv) as csv_file:
+    with open(mount_csv) __ csv_file:
         actual = l..(csv.reader(csv_file))
         ... actual __ expected

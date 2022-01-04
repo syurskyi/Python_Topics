@@ -37,7 +37,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ canVisitAllRooms(self, G: List[List[int]]) -> bool:
+    ___ canVisitAllRooms(self, G: List[List[i..]]) __ bool:
         """
         starting from 0
 

@@ -1,6 +1,6 @@
-___ largest_palindrome():
-    pass
+___ largest_palindrome
+    p..
 
 
-___ smallest_palindrome():
-    pass
+___ smallest_palindrome
+    p..

@@ -9,4 +9,4 @@ ___ sum_numbers(numbers):
     :return: sum of numbers
     :rtype: int
     """
-    pass
+    p..

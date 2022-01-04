@@ -1,13 +1,13 @@
 ____ collections _______ n..
 ____ d__ _______ date
 
-_______ pandas as pd
+_______ pandas __ pd
 
 DATA_FILE = "https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv"
 STATION = n..("Station", "ID Date Value")
 
 
-___ high_low_record_breakers_for_2015():
+___ high_low_record_breakers_for_2015
     """Extract the high and low record breaking temperatures for 2015
 
     The expected value will be a tuple with the highest and lowest record

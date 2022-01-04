@@ -1,2 +1,2 @@
-___ prime_factors():
-    pass
+___ prime_factors
+    p..

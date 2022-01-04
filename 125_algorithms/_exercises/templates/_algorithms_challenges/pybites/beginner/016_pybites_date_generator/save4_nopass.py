@@ -10,12 +10,12 @@ ___ looping_100days(d__):
     start_date = date(2016, 12, 19)
     end_date = date(2020, 12, 19)
     """Making cardinal numbers"""
-    day = int(d__.day)
+    day = i..(d__.day)
     suffix = ['th', 'st', 'nd', 'rd', 'th'][m..(day % 10, 4)]
     __ 11 <= (day % 100) <= 13:
         suffix = 'th'
     w.... start_date <= end_date:
-        special_month = int(start_date.month)
+        special_month = i..(start_date.month)
         more_special_month = calendar.month_abbr[special_month]
         print(f"{s..(start_date.day) + suffix} of {more_special_month} {start_date.year}")
         start_date += delta_days
@@ -25,7 +25,7 @@ ___ gen_special_pybites_dates(d__):
     month = calendar.month_abbr[d__.month]
     year = d__.year
     """Making cardinal numbers"""
-    day = int(d__.day)
+    day = i..(d__.day)
     suffix = ['th', 'st', 'nd', 'rd', 'th'][m..(day % 10, 4)]
     __ 11 <= (day % 100) <= 13:
         suffix = 'th'

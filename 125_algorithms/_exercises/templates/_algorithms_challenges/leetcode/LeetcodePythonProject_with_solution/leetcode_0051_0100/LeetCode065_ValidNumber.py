@@ -16,7 +16,7 @@ c_ Solution(object):
         num, dot, exp = F.., F.., F..
         w.... i < l..(s):
             c = s[i]
-            __ c.isdigit():
+            __ c.isdigit
                 num = T..
             ____ c __ '.':
                 __ exp o. dot:
@@ -36,7 +36,7 @@ c_ Solution(object):
         r.. num
     
     ___ test
-        pass
+        p..
 
 __ __name__ __ '__main__':
     Solution().test()

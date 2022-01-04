@@ -6,7 +6,7 @@ ____ collections _______ Counter, OrderedDict
 
 
 c_ OrderedCounter(Counter, OrderedDict):
-    pass
+    p..
 
 
 letters = OrderedCounter(s..(input())).most_common(3)

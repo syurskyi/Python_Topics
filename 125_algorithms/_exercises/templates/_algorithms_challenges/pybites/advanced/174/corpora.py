@@ -40,7 +40,7 @@ c_ Corpora:
     will get this working as described in the bite's description.
     """
     txt: s..
-    count: int = 5
+    count: i.. = 5
     tag: s.. = '#'
     extra: List[s..] = field(default_factory=l..)
     stopwords: Set[s..] = field(init=F..)
@@ -49,7 +49,7 @@ c_ Corpora:
         stopwords = STOPWORDS
 
     $
-    ___ cleaned(self) -> s..:
+    ___ cleaned(self) __ s..:
         """Takes a corpus and cleans it up.
 
         * All text is made lowercase
@@ -65,7 +65,7 @@ c_ Corpora:
         r.. text
 
     $
-    ___ metrics(self) -> List[Tuple[s.., int]]:
+    ___ metrics(self) __ List[Tuple[s.., i..]]:
         """Generates word count metrics.
 
         * Using the cleaned up corpus, count up how many times each word is used
@@ -80,7 +80,7 @@ c_ Corpora:
         r.. metrics.most_common(count)
 
     $
-    ___ graph(self) -> N..
+    ___ graph(self) __ N..
         """Generates a textual graph of the words
 
         * Prints out the words along with a "tag" bar graph, defaults to using

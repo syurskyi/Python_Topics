@@ -1,5 +1,5 @@
-___ get_sum():
-    A, B = map(int, input().s..())
+___ get_sum
+    A, B = map(i.., input().s..())
     result = A+B    
     
     r.. result

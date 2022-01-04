@@ -1,5 +1,5 @@
-_______ pandas as pd
-_______ numpy as np
+_______ pandas __ pd
+_______ numpy __ np
 
 movie_excel_file = "https://bites-data.s3.us-east-2.amazonaws.com/movies.xlsx"
 
@@ -21,7 +21,7 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=F..):
                 index=idx)
              .assign(**{col:np.concatenate(df.loc[lens>0, col].values)
                             ___ col __ lst_cols}))
-    __ (lens __ 0).any():
+    __ (lens __ 0).any
         res = (res.a..(df.loc[lens__0, idx_cols], s..=F..)
                   .fillna(fill_value))
     res = res.sort_index()

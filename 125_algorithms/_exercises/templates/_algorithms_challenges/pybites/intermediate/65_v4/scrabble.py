@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
     DICTIONARY
 )
 
-with open(DICTIONARY) as f:
+with open(DICTIONARY) __ f:
     dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
 
 

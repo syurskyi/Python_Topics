@@ -1,6 +1,6 @@
 ___ verse(number):
-    pass
+    p..
 
 
 ___ song(number1, number2=0):
-    pass
+    p..

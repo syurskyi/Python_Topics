@@ -20,5 +20,5 @@ ___ login_required(func):
 @login_required
 ___ welcome(user):
     '''Return a welcome message if logged in'''
-    pass
+    p..
 

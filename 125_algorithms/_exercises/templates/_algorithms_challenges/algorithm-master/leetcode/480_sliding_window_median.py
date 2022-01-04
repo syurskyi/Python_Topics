@@ -69,13 +69,13 @@ c_ Solution:
         ___ i __ r..(l..(nums)):
             # remove nums[i - k]
             __ i >= k:
-                __ minheap a.. nums[i - k] >= minheap.top():
+                __ minheap a.. nums[i - k] >= minheap.top
                     minheap.remove(nums[i - k])
                 ____:
                     maxheap.remove(- nums[i - k])
 
             # add nums[i]
-            __ minheap a.. nums[i] >= minheap.top():
+            __ minheap a.. nums[i] >= minheap.top
                 minheap.push(nums[i])
             ____:
                 maxheap.push(- nums[i])

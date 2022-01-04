@@ -3,9 +3,9 @@ ____ string _______ ascii_lowercase, a.., d..
 ____ typing _______ Dict
 
 CODEX: s.. = d.. + ascii_lowercase + a..
-BASE: int = l..(CODEX)
+BASE: i.. = l..(CODEX)
 # makeshift database record
-LINKS: Dict[int, s..] = {
+LINKS: Dict[i.., s..] = {
     1: "https://pybit.es",
     45: "https://pybit.es/pages/articles.html",
     255: "http://pbreadinglist.herokuapp.com",
@@ -19,7 +19,7 @@ INVALID = "Not a valid PyBites shortened url"
 NO_RECORD = "Not a valid shortened url"
 
 
-___ encode(record: int) -> s..:
+___ encode(record: i..) __ s..:
     """Encodes an integer into Base62"""
     
 
@@ -47,7 +47,7 @@ ___ encode(record: int) -> s..:
 
 
 
-___ decode(short_url: s..) -> int:
+___ decode(short_url: s..) __ i..:
     """Decodes the Base62 string into a Base10 integer"""
 
     value = 0
@@ -59,7 +59,7 @@ ___ decode(short_url: s..) -> int:
 
 
 
-___ redirect(url: s..) -> s..:
+___ redirect(url: s..) __ s..:
     """Retrieves URL from shortened DB (LINKS)
 
     1. Check for valid domain
@@ -88,7 +88,7 @@ ___ redirect(url: s..) -> s..:
 
 
 
-___ shorten_url(url: s.., next_record: int) -> s..:
+___ shorten_url(url: s.., next_record: i..) __ s..:
     """Shortens URL and updates the LINKS DB
 
     1. Encode next_record

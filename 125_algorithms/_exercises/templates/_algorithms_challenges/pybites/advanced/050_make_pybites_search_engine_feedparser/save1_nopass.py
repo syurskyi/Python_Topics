@@ -61,7 +61,7 @@ ___ filter_entries_by_tag(s.., entry):
     r.. s..
 
 
-___ main():
+___ main
     """Entry point to the program
        1. Call get_feed_entries and store them in entries
        2. Initiate an infinite loop

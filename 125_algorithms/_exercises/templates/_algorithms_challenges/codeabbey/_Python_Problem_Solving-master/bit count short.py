@@ -1,4 +1,4 @@
-___ bitCount():
+___ bitCount
 
     codeAbbeyWaste = input() # Required by CodeAbbey
 
@@ -8,7 +8,7 @@ ___ bitCount():
 
     ___ num __ numbers:
 
-        data = int(num) % 0x100000000
+        data = i..(num) % 0x100000000
 
         bits = f..(data, 'b')
 

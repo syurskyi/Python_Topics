@@ -1,2 +1,2 @@
 ___ reverse(text=''):
-    pass
+    p..

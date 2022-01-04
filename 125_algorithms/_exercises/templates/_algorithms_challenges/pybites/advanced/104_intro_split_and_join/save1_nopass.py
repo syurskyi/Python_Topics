@@ -10,4 +10,4 @@ ___ split_in_columns(message = message):
     x = (message.s..("\n"))
     print(x.j..("|"))
     #    return message.join("|")
-    pass
+    p..

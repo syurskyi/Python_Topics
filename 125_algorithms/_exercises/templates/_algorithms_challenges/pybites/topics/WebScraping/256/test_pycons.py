@@ -7,7 +7,7 @@ ____ pycons _______ (get_pycon_events, filter_pycons,
 
 
 @pytest.fixture(scope="session")
-___ pycon_events():
+___ pycon_events
     events = get_pycon_events()
     r.. events
 

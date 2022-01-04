@@ -3,7 +3,7 @@
 
 
 _ = input()
-calories = l..(map(int, input().s..()))
+calories = l..(map(i.., input().s..()))
 calories = s..(calories, r.._T..
 ans = 0
 ___ index, cupcake __ e..(calories):

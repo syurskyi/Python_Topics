@@ -1,2 +1,2 @@
 ___ hey(string):
-    pass
+    p..

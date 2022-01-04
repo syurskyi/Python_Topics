@@ -32,7 +32,7 @@ c_ Solution:
             r.. 0
 
         r.. s..((
-            int(node.val __ remaining),
+            i..(node.val __ remaining),
             count_valid_path(node.left, remaining - node.val),
             count_valid_path(node.right, remaining - node.val),
         ))

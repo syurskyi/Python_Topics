@@ -23,7 +23,7 @@ Note: Do not use the eval built-in library function.
 
 
 c_ Solution:
-    ___ calculate(self, s: s..) -> int:
+    ___ calculate(self, s: s..) __ i..:
         """
         make +, - lower precedence operator as a unary operation
         recursively handle bracket
@@ -41,9 +41,9 @@ c_ Solution:
         w.... i < l..(s):
             c = s[i]
             __ c __ " ":
-                pass  # not continue since need trigger i += 1
-            ____ c.isdigit():
-                operand = operand * 10 + int(c)
+                p..  # not continue since need trigger i += 1
+            ____ c.isdigit
+                operand = operand * 10 + i..(c)
             ____ c __ ("+", "-", "*", "/", ")", "\0"):   # delimiter
                 __ prev_op __ "+":
                     stk.a..(operand)
@@ -54,7 +54,7 @@ c_ Solution:
                     stk.a..(prev_operand * operand)
                 ____ prev_op __ "/":
                     prev_operand = stk.pop()
-                    stk.a..(int(prev_operand / operand))
+                    stk.a..(i..(prev_operand / operand))
 
                 __ c __ ("+", "-", "*", "/"):
                     operand = 0

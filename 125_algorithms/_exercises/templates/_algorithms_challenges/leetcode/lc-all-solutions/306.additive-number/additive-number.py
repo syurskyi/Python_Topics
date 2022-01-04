@@ -13,9 +13,9 @@ c_ Solution(object):
           break
         i, j, k = 0, x, y
         w.... k < n:
-          a = int(num[i:j + 1])
-          b = int(num[j + 1:k + 1])
-          add = s..(int(a + b))
+          a = i..(num[i:j + 1])
+          b = i..(num[j + 1:k + 1])
+          add = s..(i..(a + b))
           __ n.. num.startswith(add, k + 1):
             break
           __ l..(add) + 1 + k __ l..(num):

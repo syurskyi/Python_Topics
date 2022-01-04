@@ -1,10 +1,10 @@
-___ primitive_triplets():
-    pass
+___ primitive_triplets
+    p..
 
 
-___ triplets_in_range():
-    pass
+___ triplets_in_range
+    p..
 
 
-___ is_triplet():
-    pass
+___ is_triplet
+    p..

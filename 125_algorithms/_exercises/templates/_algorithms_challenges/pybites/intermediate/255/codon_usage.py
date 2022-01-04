@@ -33,7 +33,7 @@ ___ _preload_sequences(url=URL):
     filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
     __ n.. os.path.isfile(filename):
         urlretrieve(url, filename)
-    with open(filename, "r") as f:
+    with open(filename, "r") __ f:
         r.. f.readlines()
 
 
@@ -77,7 +77,7 @@ ___ return_codon_usage_table(
     
     amino_acid_mapping = get_translation_table(translation_table_str)
     total = 0
-    codon_to_count = defaultdict(int)
+    codon_to_count = defaultdict(i..)
     
     ___ sequence __ sequences:
         sequence = sequence.s..

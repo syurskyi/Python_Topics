@@ -11,7 +11,7 @@ c_ Solution(object):
         :rtype: List[int]
         """
         # Use Java PriorityQueue comparator
-        pass
+        p..
     
     ___ test
         testCases = [

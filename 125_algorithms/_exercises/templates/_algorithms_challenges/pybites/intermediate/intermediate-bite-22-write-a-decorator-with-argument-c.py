@@ -19,7 +19,7 @@ ___ make_html(param):
     ___ decorator(func):
         print('Inside decorator')
 
-        ___ wrapper():
+        ___ wrapper
             print('Inside wrapper')
             print(f"<{param}>" + func() + f"</{param}>")
         r.. wrapper

@@ -9,4 +9,4 @@ ___ wierd(n):
         print('Not Weird')
 
 
-wierd(int(input()))
+wierd(i..(input()))

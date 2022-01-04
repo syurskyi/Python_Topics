@@ -39,7 +39,7 @@ c_ Solution:
         deepest_nodes = N..
         ret = N..
 
-    ___ subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
+    ___ subtreeWithAllDeepest(self, root: TreeNode) __ TreeNode:
         """
         lowest common ancestor of deepest node
         """
@@ -50,7 +50,7 @@ c_ Solution:
         c.. root)
         r.. ret
 
-    ___ down(self, node: TreeNode, d: int) -> N..
+    ___ down(self, node: TreeNode, d: i..) __ N..
         __ n.. node:
             r..
 
@@ -63,7 +63,7 @@ c_ Solution:
         down(node.left, d + 1)
         down(node.right, d + 1)
 
-    ___ c.. self, node: TreeNode) -> int:
+    ___ c.. self, node: TreeNode) __ i..:
         __ n.. node:
             r.. 0
 

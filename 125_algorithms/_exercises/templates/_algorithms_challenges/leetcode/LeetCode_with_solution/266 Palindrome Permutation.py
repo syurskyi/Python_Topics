@@ -13,7 +13,7 @@ c_ Solution(object):
         :type s: str
         :rtype: bool
         """
-        m = defaultdict(int)
+        m = defaultdict(i..)
         ___ c __ s:
             m[c] += 1
 

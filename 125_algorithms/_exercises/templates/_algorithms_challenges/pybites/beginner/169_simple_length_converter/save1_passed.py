@@ -1,4 +1,4 @@
-___ convert(value: float, fmt: s..) -> float:
+___ convert(value: float, fmt: s..) __ float:
     """Converts the value to the designated format.
 
     :param value: The value to be converted must be numeric or raise a TypeError

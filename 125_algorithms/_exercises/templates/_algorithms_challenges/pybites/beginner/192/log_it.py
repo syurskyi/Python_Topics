@@ -8,7 +8,7 @@ WARNING = logger.warning
 ERROR = logger.error
 CRITICAL = logger.critical
 
-___ log_it(level: Callable, msg: s..) -> N..
+___ log_it(level: Callable, msg: s..) __ N..
     level(msg)
 
 __ __name__ __ "__main__":

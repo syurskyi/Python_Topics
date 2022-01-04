@@ -3,7 +3,7 @@ ___ checkSum(numbers):
     result = 0
     
     ___ number __ r..(numbers):
-        result += int(array[number])
+        result += i..(array[number])
         result *= 113
         result %= 10000007
         

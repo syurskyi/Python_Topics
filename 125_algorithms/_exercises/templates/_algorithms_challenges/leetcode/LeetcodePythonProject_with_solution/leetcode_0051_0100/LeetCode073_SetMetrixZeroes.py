@@ -40,6 +40,6 @@ c_ Solution(object):
                 matrix[0][j] = 0
     
     ___ test
-        pass
+        p..
 
 Solution().test()

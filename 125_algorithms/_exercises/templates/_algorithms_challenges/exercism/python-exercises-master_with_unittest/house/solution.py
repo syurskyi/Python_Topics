@@ -20,5 +20,5 @@ ___ verse(n):
     r.. '\n'.j..(v)
 
 
-___ rhyme():
+___ rhyme
     r.. "\n\n".j..(verse(n) ___ n __ r..(l..(parts)))

@@ -41,7 +41,7 @@ c_ Solution:
             bcnt += 1 __ b[j] __ BACK ____ -1
             j -= 1
 
-        r.. RES[int(i __ j)]
+        r.. RES[i..(i __ j)]
 
 
 """
@@ -82,4 +82,4 @@ c_ Solution:
                 # c == RM
                 _stack.pop()
 
-        r.. RES[int(stack __ _stack)]
+        r.. RES[i..(stack __ _stack)]

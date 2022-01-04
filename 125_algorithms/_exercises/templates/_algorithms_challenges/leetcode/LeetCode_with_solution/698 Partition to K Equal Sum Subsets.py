@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
+    ___ canPartitionKSubsets(self, nums: List[i..], k: i..) __ bool:
         """
         resurive search
         """
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 c_ Solution_TLE:
-    ___ canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
+    ___ canPartitionKSubsets(self, nums: List[i..], k: i..) __ bool:
         """
         resurive search
         """

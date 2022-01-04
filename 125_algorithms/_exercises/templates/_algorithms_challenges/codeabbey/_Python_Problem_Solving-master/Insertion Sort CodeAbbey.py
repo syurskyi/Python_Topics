@@ -1,5 +1,5 @@
 a = input()
-x = l..(map(int, input().s..()))
+x = l..(map(i.., input().s..()))
 
 temp = 0
 temp_ind    # list

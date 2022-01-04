@@ -37,7 +37,7 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-c_ DisjointSet():
+c_ DisjointSet
     ___ - ):
         sz    # dict  # element -> size
         pi    # dict  # element -> pi
@@ -75,7 +75,7 @@ c_ DisjointSet():
 
 
 c_ Solution:
-    ___ findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+    ___ findRedundantConnection(self, edges: List[List[i..]]) __ List[i..]:
         """
         Union-find
         """
@@ -91,7 +91,7 @@ c_ Solution:
         raise
 
 c_ Solution_dfs:
-    ___ findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
+    ___ findRedundantConnection(self, edges: List[List[i..]]) __ List[i..]:
         """
         Construct graph: O(|E|)
         Find circle through dfs: O(|V|)

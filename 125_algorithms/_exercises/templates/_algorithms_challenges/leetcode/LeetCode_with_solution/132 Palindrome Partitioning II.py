@@ -87,7 +87,7 @@ c_ Solution(object):
                 P[i][i] = T..
                 P[i][i+1] = T..
             except IndexError:
-                pass
+                p..
 
         ___ i __ xrange(length, -1, -1):
             ___ j __ xrange(i+2, length+1):
@@ -166,7 +166,7 @@ c_ Solution(object):
                 dp[i][i] = 0
                 dp[i][i+1] = 0
             except IndexError:
-                pass
+                p..
 
         ___ i __ xrange(length, -1, -1):
             ___ k __ xrange(i, length+1):
@@ -217,7 +217,7 @@ c_ Solution(object):
                 dp2[i][i] = T..
                 dp2[i][i+1] = T..
             except IndexError:
-                pass
+                p..
 
         ___ i __ xrange(length, -1, -1):
             ___ j __ xrange(i+2, length+1):
@@ -234,7 +234,7 @@ c_ Solution(object):
                 dp[i][i] = 0
                 dp[i][i+1] = 0
             except IndexError:
-                pass
+                p..
 
         ___ i __ xrange(length, -1, -1):
             ___ k __ xrange(i, length+1):

@@ -3,7 +3,7 @@ ___ increment_string(strng):
     strMatch = __.m..(r'([\w]*)(\d*)',strng)
     stringPart,numberPart = strMatch.group(1),strMatch.group(2)
     number = __.m..(r'0*(\d*)',numberPart).group(1)
-    number = 1 __ l..(number) __ 0 ____ int(number) + 1
+    number = 1 __ l..(number) __ 0 ____ i..(number) + 1
     __ l..(s..(number)) >= l..(numberPart):
         number = number
     ____ :

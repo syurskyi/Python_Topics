@@ -5,7 +5,7 @@ locations = 'DE ES AUS NL BR US'.s..
 confirmed = [F.., T.., T.., F.., T..]
 
 
-___ get_attendees():
+___ get_attendees
     attendee_list = l..(i...zip_longest(
         names, locations, confirmed, fillvalue='-'))
     ___ entry __ attendee_list:

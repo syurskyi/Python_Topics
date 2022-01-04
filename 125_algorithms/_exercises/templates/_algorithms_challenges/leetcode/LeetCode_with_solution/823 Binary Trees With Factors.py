@@ -34,7 +34,7 @@ MOD =  10 ** 9 + 7
 
 
 c_ Solution:
-    ___ numFactoredBinaryTrees(self, A: List[int]) -> int:
+    ___ numFactoredBinaryTrees(self, A: List[i..]) __ i..:
         """
         Let F[i] be the number of factored binary tree rooted at i
         """

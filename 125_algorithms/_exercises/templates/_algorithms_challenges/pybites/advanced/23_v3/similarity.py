@@ -20,10 +20,10 @@ urlretrieve(
 ___ _get_tags(tempfile=TEMPFILE):
     """Helper to parse all tags from a static copy of PyBites' feed,
        providing this here so you can focus on difflib"""
-    with open(tempfile) as f:
+    with open(tempfile) __ f:
         content = f.read().l..
     # take a small subset to keep it performant
-    tags = TAG_HTML.findall(content)
+    tags = TAG_HTML.f..(content)
     tags = [tag ___ tag __ tags __ l..(tag) > MIN_TAG_LEN]
     r.. set(tags)
 

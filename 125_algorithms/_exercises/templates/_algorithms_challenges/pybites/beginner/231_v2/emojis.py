@@ -6,7 +6,7 @@ ____ typing _______ List
 IS_EMOJI = __.c..(r'[^\w\s,]')
 
 
-___ get_emoji_indices(text: s..) -> List[int]:
+___ get_emoji_indices(text: s..) __ List[i..]:
     """Given a text return indices of emoji characters"""
 
 

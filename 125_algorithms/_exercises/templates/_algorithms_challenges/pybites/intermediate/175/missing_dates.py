@@ -1,4 +1,4 @@
-_______ pandas as pd
+_______ pandas __ pd
 ____ d__ _______ date
 
 ___ get_missing_dates(dates):

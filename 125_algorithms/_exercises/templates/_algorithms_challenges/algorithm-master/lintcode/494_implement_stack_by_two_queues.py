@@ -19,7 +19,7 @@ c_ Stack:
     @return: nothing
     """
     ___ pop
-        __ isEmpty():
+        __ isEmpty
             r..
         node = tail
         tail = node.pre
@@ -29,7 +29,7 @@ c_ Stack:
     @return: An integer
     """
     ___ top
-        __ isEmpty():
+        __ isEmpty
             r..
         r.. tail.val
 

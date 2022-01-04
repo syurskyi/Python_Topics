@@ -34,7 +34,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ flipEquiv(self, root1: TreeNode, root2: TreeNode) -> bool:
+    ___ flipEquiv(self, root1: TreeNode, root2: TreeNode) __ bool:
         """
         O(N)
         """

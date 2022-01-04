@@ -3,7 +3,7 @@ MAX_GUESSES = 5
 START, END = 1, 20
 
 
-___ get_random_number():
+___ get_random_number
     """Get a random number between START and END, returns int"""
     r.. random.randint(START, END)
 
@@ -33,7 +33,7 @@ c_ Game:
         w... T...
             try:
                 number = input("Guess a number between 1 and 20: ")
-                result = int(number)
+                result = i..(number)
             except:
                 __ number __ N.. o. l..(number) __ 0:
                     print('Please enter a number')
@@ -85,7 +85,7 @@ c_ Game:
                 try:
                     user_guess = guess()
                 except ValueError:
-                    pass
+                    p..
                 ____:
                     break
 

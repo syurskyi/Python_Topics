@@ -50,13 +50,13 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ openLock(self, deadends: List[s..], target: s..) -> int:
+    ___ openLock(self, deadends: List[s..], target: s..) __ i..:
         """
         bfs
         """
-        destination = tuple(int(c) ___ c __ target)
+        destination = tuple(i..(c) ___ c __ target)
         deadends_set = set(
-            tuple(int(c) ___ c __ s)
+            tuple(i..(c) ___ c __ s)
             ___ s __ deadends
         )
         q = [(0, 0, 0, 0)]

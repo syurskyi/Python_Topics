@@ -37,7 +37,7 @@ c_ Solution(object):
         __ n.. s:
             r.. 0
 
-        cnt = defaultdict(int)
+        cnt = defaultdict(i..)
         ___ e __ s: cnt[e] += 1
 
         c = m..(

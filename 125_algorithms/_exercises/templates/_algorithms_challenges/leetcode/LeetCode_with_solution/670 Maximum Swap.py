@@ -17,7 +17,7 @@ The given number is in the range [0, 108]
 
 
 c_ Solution:
-    ___ maximumSwap(self, num: int) -> int:
+    ___ maximumSwap(self, num: i..) __ i..:
         """
         stk maintain a increasing stack from right to left
         """
@@ -37,7 +37,7 @@ c_ Solution:
                 nums[i], nums[j] = nums[j], nums[i]
                 break
 
-        r.. int("".j..(nums))
+        r.. i..("".j..(nums))
 
 
 __ __name__ __ "__main__":

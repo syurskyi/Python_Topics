@@ -23,11 +23,11 @@ c_ Solution(object):
                 __ s __ target:
                     r.. level
                 ___ i __ r..(4):
-                    s01 = int(s[i])+1
+                    s01 = i..(s[i])+1
                     __ s01 >= 10:
                         s01 -= 10
                     s01 = s..(s01)
-                    s02 = int(s[i])-1
+                    s02 = i..(s[i])-1
                     __ s02 < 0:
                         s02 += 10
                     s02 = s..(s02)

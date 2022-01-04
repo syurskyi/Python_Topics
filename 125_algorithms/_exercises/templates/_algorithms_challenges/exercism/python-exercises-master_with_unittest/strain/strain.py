@@ -1,6 +1,6 @@
-___ keep():
-    pass
+___ keep
+    p..
 
 
-___ discard():
-    pass
+___ discard
+    p..

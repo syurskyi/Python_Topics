@@ -24,7 +24,7 @@ c_ Solution(object):
         }
         l    # list
         ___ d __ d..:
-            d = int(d)
+            d = i..(d)
             __ d n.. __ (0, 1):
                 l.a..(letMap[d])
         __ n.. l: r.. []

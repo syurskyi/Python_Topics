@@ -48,7 +48,7 @@ ___ test_trunk_used(size, expected):
     ... generate_improved_xmas_tree(size).c.. "|") __ expected
 
 
-___ test_outputs():
+___ test_outputs
     actual_tree = generate_improved_xmas_tree().strip("\n").s..("\n")
     expected_tree = default_tree.strip("\n").s..("\n")
     ___ i, j __ z..(actual_tree, expected_tree):

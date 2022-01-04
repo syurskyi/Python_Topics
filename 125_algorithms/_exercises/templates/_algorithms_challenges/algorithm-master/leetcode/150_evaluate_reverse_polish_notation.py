@@ -17,12 +17,12 @@ c_ Solution:
 
         ___ char __ E:
             __ char n.. __ operation:
-                stack.a..(int(char))
+                stack.a..(i..(char))
                 continue
 
             b = stack.pop()
             a = stack.pop()
 
-            stack.a..(int(operation[char](a, b)))
+            stack.a..(i..(operation[char](a, b)))
 
         r.. stack[0]

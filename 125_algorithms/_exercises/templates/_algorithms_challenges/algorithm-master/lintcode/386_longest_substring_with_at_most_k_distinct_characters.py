@@ -13,7 +13,7 @@ c_ Solution:
         __ n.. s o. n.. k:
             r.. ans
 
-        freq = collections.defaultdict(int)
+        freq = collections.defaultdict(i..)
         n = l..(s)
         left = right = cnt = 0
 

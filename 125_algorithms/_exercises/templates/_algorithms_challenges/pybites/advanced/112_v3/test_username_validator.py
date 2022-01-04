@@ -7,7 +7,7 @@ ____ username_validator _______ (Validator,
                                 validate_username)
 
 
-___ test_parse_social_platforms_string():
+___ test_parse_social_platforms_string
     platforms = parse_social_platforms_string()
     ... l..(platforms) __ 3
     ... a..([t..(nw) __ Validator ___ nw __ platforms.v..)
@@ -16,18 +16,18 @@ ___ test_parse_social_platforms_string():
     ... isi..(twitter.regex, Pattern)  # nope, no regex here ;)
 
 
-___ test_validate_username_wrong_validator():
+___ test_validate_username_wrong_validator
     with pytest.raises(ValueError):
         validate_username('Github', 'bob')
 
 
-___ test_validate_username_twitter_range():
+___ test_validate_username_twitter_range
     ... validate_username('Twitter', 'a')
     ... n.. validate_username('Twitter', '')
     ... n.. validate_username('Twitter', 'a'*16)
 
 
-___ test_validate_username_twitter_regex():
+___ test_validate_username_twitter_regex
     ... validate_username('Twitter', 'bob')
     ... validate_username('Twitter', 'boB123')
     ... validate_username('Twitter', 'bo__89A')
@@ -36,13 +36,13 @@ ___ test_validate_username_twitter_regex():
     ... n.. validate_username('Twitter', 'bob.')
 
 
-___ test_validate_username_facebook_range():
+___ test_validate_username_facebook_range
     ... validate_username('Facebook', 'abc123')
     ... n.. validate_username('Facebook', 'bob')
     ... n.. validate_username('Facebook', 'a'*51)
 
 
-___ test_validate_username_facebook_regex():
+___ test_validate_username_facebook_regex
     ... validate_username('Facebook', 'bobb.')
     ... validate_username('Facebook', 'bob.PyBites')
     ... validate_username('Facebook', 'aAbB123')
@@ -51,13 +51,13 @@ ___ test_validate_username_facebook_regex():
     ... n.. validate_username('Facebook', 'bob123_')
 
 
-___ test_validate_username_reddit_range():
+___ test_validate_username_reddit_range
     ... validate_username('Reddit', 'abc')
     ... n.. validate_username('Reddit', 'ab')
     ... n.. validate_username('Reddit', 'a'*21)
 
 
-___ test_validate_username_reddit_regex():
+___ test_validate_username_reddit_regex
     ... validate_username('Reddit', 'bob_PyBites')
     ... validate_username('Reddit', '-123ABC')
     ... validate_username('Reddit', '123-abc__')

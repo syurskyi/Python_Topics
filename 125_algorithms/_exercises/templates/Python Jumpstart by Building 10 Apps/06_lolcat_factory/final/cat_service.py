@@ -17,5 +17,5 @@ ___ get_data_from_url(url):
 
 ___ save_image(folder, name, data):
     file_name  os.path.j..(folder, name + '.jpg')
-    with open(file_name, 'wb') as fout:
+    with open(file_name, 'wb') __ fout:
         shutil.copyfileobj(data, fout)

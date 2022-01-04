@@ -16,7 +16,7 @@ YEAR_MONTH = '{y}-{m:02d}'
 
 
 ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
-                                  year: int = N..) -> (s.., s..):
+                                  year: i.. = N..) __ (s.., s..):
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -31,7 +31,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     month_changes = Counter()
 
 
-    with open(commit_log,'r') as f:
+    with open(commit_log,'r') __ f:
         ___ line __ f:
             date_section, change_section = line.s..('|')
             date = parse(date_section,fuzzy=T..)
@@ -42,9 +42,9 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
                 __ date.year > year:
                     continue
 
-            numbers = __.findall(r'(\d+) (?:insertions|deletions)',change_section)
+            numbers = __.f..(r'(\d+) (?:insertions|deletions)',change_section)
 
-            changes= s..(map(int,numbers))
+            changes= s..(map(i..,numbers))
 
 
             month_changes[date.strftime('%Y-%m')] += changes

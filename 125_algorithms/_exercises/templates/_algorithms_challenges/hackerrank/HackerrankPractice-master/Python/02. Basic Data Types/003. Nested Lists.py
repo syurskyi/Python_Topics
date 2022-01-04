@@ -8,7 +8,7 @@ ___ secondLowestGrade(classList):
     r.. result
 
 
-numberOfStudents = int(input())
+numberOfStudents = i..(input())
 classList    # list
 ___ i __ r..(numberOfStudents):
     classList.a..([s..(input()), float(input())])

@@ -1,10 +1,10 @@
-___ fence_pattern():
-    pass
+___ fence_pattern
+    p..
 
 
-___ encode():
-    pass
+___ encode
+    p..
 
 
-___ decode():
-    pass
+___ decode
+    p..

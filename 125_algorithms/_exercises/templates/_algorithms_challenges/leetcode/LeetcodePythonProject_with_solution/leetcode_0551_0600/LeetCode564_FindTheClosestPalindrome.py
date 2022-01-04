@@ -11,17 +11,17 @@ c_ Solution(object):
         """
         k = l..(n)
         candidates = [s..(10**k0+d) ___ k0 __ (k-1, k) ___ d __ (-1, 1)]
-        prefix = n[:int((k+1)/2)]
-        p = int(prefix)
+        prefix = n[:i..((k+1)/2)]
+        p = i..(prefix)
         ___ start __ map(s.., (p-1, p, p+1)):
             candidates.a..(start+(start[:-1] __ k%2 ____ start)[::-1])
         ___ delta(x):
-            r.. abs(int(n)-int(x))
+            r.. abs(i..(n)-i..(x))
         res = N..
         ___ cand __ candidates:
             __ cand != n a.. n.. cand.startswith('00'):
                 __ res __ N.. o. delta(cand) < delta(res) o.\
-                    delta(cand) __ delta(res) a.. int(cand) < int(res):
+                    delta(cand) __ delta(res) a.. i..(cand) < i..(res):
                     res = cand
         r.. res
     

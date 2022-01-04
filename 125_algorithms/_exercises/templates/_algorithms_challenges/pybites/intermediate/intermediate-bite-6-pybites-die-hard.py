@@ -30,7 +30,7 @@ Stats = n..('Stats', 'user challenge')
 
 # code
 
-___ gen_files():
+___ gen_files
     """Return a generator of dir names reading in tempfile
 
        tempfile has this format:
@@ -44,24 +44,24 @@ ___ gen_files():
 
        -> use last column to filter out directories (= True)
     """
-    with open(tempfile) as infile:
+    with open(tempfile) __ infile:
         ___ line __ infile:
             chunks = line.s..(',')
             __ chunks[1].s.. __ "True":
                 s = chunks[0].s..('/')
                 y.. s[1]
 
-___ diehard_pybites():
+___ diehard_pybites
     """Return a Stats namedtuple (defined above) that contains the user that
        made the most PRs (ignoring the users in IGNORE) and a challenge tuple
        of most popular challenge and the amount of PRs for that challenge.
        Calling this function on the dataset (held tempfile) should return:
        Stats(user='clamytoe', challenge=('01', 7))
     """
-    ___ i __ gen_files():
+    ___ i __ gen_files
         __ i n.. __ IGNORE:
             users[i] += 1
-    with open(tempfile) as infile:
+    with open(tempfile) __ infile:
         ___ line __ infile:
             chunks = line.s..(',')
             __ chunks[1].s.. __ "True":

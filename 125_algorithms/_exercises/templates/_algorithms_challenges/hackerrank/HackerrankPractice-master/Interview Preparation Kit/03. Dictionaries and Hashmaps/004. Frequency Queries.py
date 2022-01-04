@@ -5,11 +5,11 @@
 ____ collections _______ defaultdict
 
 
-arr = defaultdict(int)
-frequencies = defaultdict(int)
+arr = defaultdict(i..)
+frequencies = defaultdict(i..)
 result    # list
-___ i __ r..(int(input())):
-    command, value = map(int, input().s..())
+___ i __ r..(i..(input())):
+    command, value = map(i.., input().s..())
     __ command __ 1:
         arr[value] += 1
         frequencies[arr[value]] += 1

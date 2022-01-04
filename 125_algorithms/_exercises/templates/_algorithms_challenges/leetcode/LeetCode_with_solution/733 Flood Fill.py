@@ -40,7 +40,7 @@ dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
 
 c_ Solution:
-    ___ floodFill(self, image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
+    ___ floodFill(self, image: List[List[i..]], sr: i.., sc: i.., newColor: i..) __ List[List[i..]]:
         """
         dfs fill
 

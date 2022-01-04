@@ -18,7 +18,7 @@ c_ Solution(object):
     
     ___ helper(self, low, high, l, r, curr, res):
         __ l > r:
-            __ int(low) <= int(''.j..(curr)) <= int(high):
+            __ i..(low) <= i..(''.j..(curr)) <= i..(high):
                 res[0] += 1
             r..
         ___ p __ pairs:

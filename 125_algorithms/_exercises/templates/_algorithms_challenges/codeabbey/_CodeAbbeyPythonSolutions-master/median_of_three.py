@@ -1,9 +1,9 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_median(values):
     diff    # list
-    avg = int(s..(values)//l..(values))
+    avg = i..(s..(values)//l..(values))
     ___ i __ values:
         diff.a..(abs(i-avg))
     
@@ -11,7 +11,7 @@ ___ get_median(values):
     results.a..(med)
 
 ___ i __ r..(amount_values):
-    valeus = l..(map(int, input().s..()))
+    valeus = l..(map(i.., input().s..()))
     get_median(valeus)
 
 print(*results)

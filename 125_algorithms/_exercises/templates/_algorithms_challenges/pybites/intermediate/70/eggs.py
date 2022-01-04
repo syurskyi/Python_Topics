@@ -4,7 +4,7 @@ COLORS = 'red blue green yellow brown purple'.s..
 
 
 c_ EggCreator:
-    ___ - , max) -> N..
+    ___ - , max) __ N..
         max = max
         count = 0
 

@@ -23,8 +23,8 @@ conn = sqlite3.connect(DB)
 cur = conn.cursor()
 
 
-___ import_data():
-    with requests.Session() as session:
+___ import_data
+    with requests.Session() __ session:
         content = session.get(DATA_URL).content.decode('utf-8')
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
@@ -53,7 +53,7 @@ import_data()
 
 # you code:
 
-___ player_with_max_points_per_game():
+___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
     cursor = cur.execute(
@@ -66,7 +66,7 @@ ___ player_with_max_points_per_game():
     r.. next(cursor)[0]
 
 
-___ number_of_players_from_duke():
+___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
     cursor = cur.execute(
         """
@@ -79,7 +79,7 @@ ___ number_of_players_from_duke():
     r.. next(cursor)[0]
 
 
-___ avg_years_active_players_stanford():
+___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
     cursor = cur.execute(
@@ -93,7 +93,7 @@ ___ avg_years_active_players_stanford():
     r.. next(cursor)[0]
 
 
-___ year_with_most_new_players():
+___ year_with_most_new_players
     """Return the year with the most new players.
        Hint: you can use GROUP BY on the year column.
     """

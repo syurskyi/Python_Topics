@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_progression(start, inc, s..):
@@ -9,6 +9,6 @@ ___ get_progression(start, inc, s..):
     results.a..(progress)
 
 ___ i __ r..(amount_values):
-    start, inc, s.. = map(int, input().s..())
+    start, inc, s.. = map(i.., input().s..())
     get_progression(start,inc,s..)
 print(*results)

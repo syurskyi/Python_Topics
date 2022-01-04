@@ -19,13 +19,13 @@ Video = n..('Video', 'id title duration metrics')
 ___ load_pycon_data(pycon_videos=pycon_videos):
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
-    with open(pycon_videos, 'rb') as pkl:
+    with open(pycon_videos, 'rb') __ pkl:
         r.. pickle.load(pkl)
 
 
 ___ get_most_popular_talks_by_views(videos):
     """Return the pycon video list sorted by viewCount"""
-    r.. s..(videos, key=l.... vid: -int(vid.metrics['viewCount']))
+    r.. s..(videos, key=l.... vid: -i..(vid.metrics['viewCount']))
 
 
 ___ _like_ratio(vid):
@@ -46,7 +46,7 @@ duration_regex = __.c..(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+
 
 ___ _vid_time(vid):
     time_parts = duration_regex.m..(vid.duration).groupdict(default=0)
-    r.. t..(hours=int(time_parts['hrs']), minutes=int(time_parts['mins']), seconds=int(time_parts['secs']))
+    r.. t..(hours=i..(time_parts['hrs']), minutes=i..(time_parts['mins']), seconds=i..(time_parts['secs']))
 
 
 ___ get_talks_gt_one_hour(videos):

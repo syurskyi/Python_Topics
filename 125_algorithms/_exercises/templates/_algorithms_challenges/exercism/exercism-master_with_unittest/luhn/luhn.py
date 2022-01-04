@@ -7,7 +7,7 @@ c_ Luhn:
         r.. s..(addends()) % 10
 
     ___ addends
-        r.. [addend(idx, int(val)) ___ idx, val __
+        r.. [addend(idx, i..(val)) ___ idx, val __
                 e..(r..(s..(number)))]
 
     ___ addend(self, idx, val):
@@ -25,5 +25,5 @@ c_ Luhn:
     @classmethod
     ___ create(cls, num):
         ___ i __ r..(0, 10):
-            __ cls(int(s..(num) + s..(i))).is_valid():
-                r.. int(s..(num) + s..(i))
+            __ cls(i..(s..(num) + s..(i))).is_valid
+                r.. i..(s..(num) + s..(i))

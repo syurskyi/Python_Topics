@@ -9,9 +9,9 @@ TIM_BLOG = ('https://bites-data.s3.us-east-2.amazonaws.com/'
 MIN_COUNT = 3
 
 
-___ load_page():
+___ load_page
     """Download the blog html and return its decoded content"""
-    with requests.Session() as session:
+    with requests.Session() __ session:
         r.. session.get(TIM_BLOG).content.decode('utf-8')
 
 

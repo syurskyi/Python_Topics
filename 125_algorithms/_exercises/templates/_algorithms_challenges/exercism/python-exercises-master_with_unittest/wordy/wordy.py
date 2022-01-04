@@ -1,2 +1,2 @@
-___ calculate():
-    pass
+___ calculate
+    p..

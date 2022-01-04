@@ -3,7 +3,7 @@
 c_ Person:
 
     ___ - ):
-        pass
+        p..
 
     ___ __str__
         r.. "I am a person"
@@ -30,7 +30,7 @@ c_ Mother(Person):
 c_ Child(Father, Mother):
 
     ___ - ):
-        pass
+        p..
 
     ___ __str__
         r.. "I am the coolest kid"

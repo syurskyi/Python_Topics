@@ -1,33 +1,33 @@
 c_ Node(object):
     ___ - , value):
-        pass
+        p..
 
     ___ value
-        pass
+        p..
 
     ___ next
-        pass
+        p..
 
 
 c_ LinkedList(object):
     ___ - , values=[]):
-        pass
+        p..
 
     ___ __len__
-        pass
+        p..
 
     ___ head
-        pass
+        p..
 
     ___ push(self, value):
-        pass
+        p..
 
     ___ pop
-        pass
+        p..
 
     ___ r..
-        pass
+        p..
 
 
 c_ EmptyListException(Exception):
-    pass
+    p..

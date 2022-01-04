@@ -25,11 +25,11 @@ c_ Solution(object):
                     palindromeFound = T..
                     break
             firstHalf -= 1
-        r.. int(palindrome%1337)
+        r.. i..(palindrome%1337)
     
     ___ createPalindrome(self, num):
         s = s..(num)+s..(num)[::-1]
-        r.. int(s)
+        r.. i..(s)
     
     ___ test
         testCases = [

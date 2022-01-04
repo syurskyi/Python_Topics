@@ -23,7 +23,7 @@ c_ Solution(object):
             sub = s[ind:i]
             __ sub[0] __ '0' a.. l..(sub) > 1:
                 break
-            __ int(sub) > 255:
+            __ i..(sub) > 255:
                 break
             curr.a..(sub)
             helper(res, curr, s, i)

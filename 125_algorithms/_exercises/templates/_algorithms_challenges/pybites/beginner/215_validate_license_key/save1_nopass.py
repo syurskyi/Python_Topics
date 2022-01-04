@@ -1,7 +1,7 @@
 _______ __
 
 
-___ validate_license(key: s..) -> bool:
+___ validate_license(key: s..) __ bool:
     """Write a regex that matches a PyBites license key
        (e.g. PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4)
     """

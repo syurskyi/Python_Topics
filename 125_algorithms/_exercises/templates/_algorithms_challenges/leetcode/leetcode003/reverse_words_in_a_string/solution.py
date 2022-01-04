@@ -29,7 +29,7 @@ c_ Solution:
         k = start  # Last processed
         ___ p __ r..(start, end + 1):
             __ p > start a.. ls[p] __ ' ' a.. ls[p] __ ls[p - 1]:
-                pass
+                p..
             ____:
                 ls[k] = ls[p]
                 k += 1

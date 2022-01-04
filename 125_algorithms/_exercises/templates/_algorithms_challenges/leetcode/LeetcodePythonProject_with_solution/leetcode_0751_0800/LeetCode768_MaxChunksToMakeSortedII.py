@@ -9,7 +9,7 @@ c_ Solution(object):
         :type arr: List[int]
         :rtype: int
         """
-        pass
+        p..
     
     ___ test
         testCases = [

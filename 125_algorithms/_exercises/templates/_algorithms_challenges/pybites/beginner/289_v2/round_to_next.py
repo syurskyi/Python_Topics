@@ -1,5 +1,5 @@
 _______ math
-___ round_to_next(number: int, multiple: int):
+___ round_to_next(number: i.., multiple: i..):
 
 
 

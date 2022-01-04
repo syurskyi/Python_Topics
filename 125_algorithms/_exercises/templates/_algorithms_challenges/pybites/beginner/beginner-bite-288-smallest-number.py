@@ -21,7 +21,7 @@ ____ typing _______ List
 # s = ('').join(lista)
 # jak zamienic liste intow na liste str?
 # d = [str(x) for x in c]
-___ minimum_number(d..: List[int]) -> int:
+___ minimum_number(d..: List[i..]) __ i..:
     __ l..(d..) __ 0:
         r.. 0
     reduced = set(d..)
@@ -29,7 +29,7 @@ ___ minimum_number(d..: List[int]) -> int:
     r = ""
     ___ e __ s..:
         r += s..(e)
-    r.. int(r)
+    r.. i..(r)
 
 
 print(minimum_number([1,9,5,9,1]))

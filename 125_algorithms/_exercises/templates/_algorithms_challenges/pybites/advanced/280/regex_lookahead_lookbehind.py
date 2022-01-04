@@ -13,7 +13,7 @@ ___ count_n_repetitions(text, n=1):
     my_regex = r"(.)(?=\1{" + s..(n) + r"})"
     
 
-    counts = __.findall(my_regex,text,flags=__.DOTALL)
+    counts = __.f..(my_regex,text,flags=__.DOTALL)
 
 
     r.. l..(counts)
@@ -36,7 +36,7 @@ ___ count_n_reps_or_n_chars_following(text, n=1, char=""):
     ____:
         my_regex = r"(.)(?=\1{" + s..(n) + r"})"
 
-    counts = __.findall(my_regex,text,flags=__.DOTALL)
+    counts = __.f..(my_regex,text,flags=__.DOTALL)
 
 
     r.. l..(counts)
@@ -56,7 +56,7 @@ ___ check_surrounding_chars(text, surrounding_chars):
 
 
     my_regex = r'(?<=' + text + r')(.)' + r'(?=' + text + r')'
-    counts = __.findall(my_regex,s,flags=__.DOTALL)
+    counts = __.f..(my_regex,s,flags=__.DOTALL)
 
     r.. l..(counts)
 

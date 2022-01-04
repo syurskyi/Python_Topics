@@ -22,7 +22,7 @@ Reddit
 Validator = n..('Validator', 'range regex')
 
 
-___ parse_social_platforms_string():
+___ parse_social_platforms_string
     """Convert the social_platforms string above into a dict where
        keys = social platformsname and values = validator namedtuples"""
     platforms = social_platforms.s..('\n\n')
@@ -36,7 +36,7 @@ ___ parse_social_platforms_string():
         ___ i __ r..(1,5):
             values.a..(result.group(i))
         platform_name = values[0]
-        range_object = r..(int(values[1]),int(values[2]))
+        range_object = r..(i..(values[1]),i..(values[2]))
         last = ''.j..(values[-1].s..())
         regex = '^[' + last + ']+$'
         r = __.c..(regex)

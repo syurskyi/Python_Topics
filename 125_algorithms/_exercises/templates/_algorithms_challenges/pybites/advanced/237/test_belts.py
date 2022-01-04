@@ -7,13 +7,13 @@ ___ get_data(file_no=1, tmp=TMP):
     file_name = f'bite_scores{file_no}.json'
     file_path = TMP / file_name
     remote = 'https://bites-data.s3.us-east-2.amazonaws.com/'
-    __ n.. file_path.exists():
+    __ n.. file_path.exists
         urlretrieve(f'{remote}{file_name}',
                     file_path)
     r.. file_path
 
 
-___ test_data_set1():
+___ test_data_set1
     data = get_data(1)
     actual = get_belts(data)
     # py 3.7 we should be able to rely on ordering
@@ -26,7 +26,7 @@ ___ test_data_set1():
     ... actual __ expected
 
 
-___ test_data_set2():
+___ test_data_set2
     data = get_data(2)
     actual = get_belts(data)
     expected = {

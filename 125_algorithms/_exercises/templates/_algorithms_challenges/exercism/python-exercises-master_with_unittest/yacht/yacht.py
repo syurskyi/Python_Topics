@@ -15,4 +15,4 @@ CHOICE = N..
 
 
 ___ score(dice, category):
-    pass
+    p..

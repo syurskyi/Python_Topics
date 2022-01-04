@@ -16,7 +16,7 @@ c_ Solution(object):
         :type guess: str
         :rtype: str
         """
-        cnt = defaultdict(int)
+        cnt = defaultdict(i..)
         A = 0
         B = 0
         ___ c __ secret:

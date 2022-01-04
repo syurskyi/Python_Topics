@@ -47,7 +47,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
+    ___ isToeplitzMatrix(self, matrix: List[List[i..]]) __ bool:
         m, n = l..(matrix), l..(matrix[0])
         ___ i __ r..(1, m):
             ___ j __ r..(1, n):
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ isToeplitzMatrix_complex(self, matrix: List[List[int]]) -> bool:
+    ___ isToeplitzMatrix_complex(self, matrix: List[List[i..]]) __ bool:
         """
         Brute force iteration will work
 

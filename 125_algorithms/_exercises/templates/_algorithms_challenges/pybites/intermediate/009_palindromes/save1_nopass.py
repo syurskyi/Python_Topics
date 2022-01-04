@@ -7,9 +7,9 @@ DICTIONARY = os.path.j..('/tmp', 'dictionary_m_words.txt')
 urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 
-___ load_dictionary():
+___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
-    with open(DICTIONARY) as f:
+    with open(DICTIONARY) __ f:
         r.. (word.l...s.. ___ word __ f.readlines())
 
 
@@ -29,7 +29,7 @@ ___ get_longest_palindrome(words_ N..
        to populate the words list"""
     __ words __ N..
         words    # list
-        ___ word __ load_dictionary():
+        ___ word __ load_dictionary
             w = word.r..(' ', '').l..
             final_word = ''.j..(ch ___ ch __ w __ ch.isalnum())
             words.a..(final_word)

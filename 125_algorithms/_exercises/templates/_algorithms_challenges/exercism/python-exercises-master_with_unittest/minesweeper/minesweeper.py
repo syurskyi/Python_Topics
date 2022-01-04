@@ -1,2 +1,2 @@
-___ board():
-    pass
+___ board
+    p..

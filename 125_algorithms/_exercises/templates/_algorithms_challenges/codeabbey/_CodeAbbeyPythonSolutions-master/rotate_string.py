@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ rotate(index, string):
@@ -10,7 +10,7 @@ ___ rotate(index, string):
 
 ___ i __ r..(amount_values):
     index, string = map(s.., input().s..())
-    index = int(index)
+    index = i..(index)
     results.a..(rotate(index, string))
 
 print(*results)

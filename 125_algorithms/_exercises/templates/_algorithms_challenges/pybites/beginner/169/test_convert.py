@@ -3,17 +3,17 @@ _______ pytest
 ____ convert _______ convert
 
 
-___ test_non_numeric_value():
+___ test_non_numeric_value
     with pytest.raises(TypeError):
         convert("153.67", "in")
 
 
-___ test_unsupported_formats():
+___ test_unsupported_formats
     with pytest.raises(ValueError):
         convert(300, "km")
 
 
-___ test_with_mixed_case_formats():
+___ test_with_mixed_case_formats
     expected = 153.67
     ... convert(60.5, "CM") __ expected
 

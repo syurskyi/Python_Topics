@@ -80,14 +80,14 @@ ___ test_team_of_three_order_does_matter(test_input, expected):
     ... l..(combos) __ 24
     ... test_input __ combos
 
-___ test_default_team_size():
+___ test_default_team_size
     friends = ("Bob", "Dante", "Julian")
     combos = l..(friends_teams(friends, order_does_matter=T..))
     ... l..(combos) __ 6
     ... ("Bob", "Dante") __ combos
 
 
-___ test_default_order_matters():
+___ test_default_order_matters
     friends = ("Bob", "Dante", "Julian")
     combos = l..(friends_teams(friends, team_size=2))
     ... l..(combos) __ 3

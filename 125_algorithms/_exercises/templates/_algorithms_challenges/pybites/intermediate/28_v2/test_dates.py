@@ -6,7 +6,7 @@ ____ dates _______ _get_dates, convert_to_datetime, get_month_most_posts
 
 
 @pytest.fixture(scope="module")
-___ dates():
+___ dates
     r.. _get_dates()
 
 

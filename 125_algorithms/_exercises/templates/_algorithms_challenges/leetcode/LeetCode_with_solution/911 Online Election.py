@@ -35,7 +35,7 @@ _______ bisect
 
 
 c_ TopVotedCandidate:
-    ___ - , persons: List[int], times: List[int]):
+    ___ - , persons: List[i..], times: List[i..]):
         """
         Running top vote
         Need to maintain list
@@ -44,14 +44,14 @@ c_ TopVotedCandidate:
         query is binary search
         """
         maxes    # list  # [(t, i)]  at time t
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         tp = s..(z..(times, persons))
         ___ t, p __ tp:
             counter[p] += 1
             __ n.. maxes o. counter[maxes[-1][1]] <= counter[p]:
                 maxes.a..((t, p))
 
-    ___ q(self, t: int) -> int:
+    ___ q(self, t: i..) __ i..:
         i = bisect.bisect(maxes, (t, 0))
         # equal
         __ i < l..(maxes) a.. maxes[i][0] __ t:

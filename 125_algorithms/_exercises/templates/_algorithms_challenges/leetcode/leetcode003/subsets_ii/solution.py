@@ -12,7 +12,7 @@ c_ Solution:
             res = [[]]
             ___ i __ r..(l..(S)):
                 __ i > 0 a.. S[i] __ S[i - 1]:
-                    pass
+                    p..
                 ____:
                     rest_subsets = _subsets(S[i + 1:], k - 1)
                     ___ subset __ rest_subsets:

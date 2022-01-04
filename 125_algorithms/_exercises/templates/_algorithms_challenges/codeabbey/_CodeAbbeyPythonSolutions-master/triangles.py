@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ is_triangle(sides):
@@ -12,7 +12,7 @@ ___ is_triangle(sides):
         r.. 1
 
 ___ i __ r..(amount_values):
-    sides = l..(map(int, input().s..()))
+    sides = l..(map(i.., input().s..()))
     results.a..(is_triangle(sides))
 
 print(*results)

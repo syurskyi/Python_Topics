@@ -57,7 +57,7 @@ c_ LinkedListTests(unittest.TestCase):
     ___ test_iterator
         l...push(10)
         l...push(20)
-        iterator = iter(l..)
+        iterator = i..(l..)
         assertEqual(next(iterator), 10)
         assertEqual(next(iterator), 20)
 

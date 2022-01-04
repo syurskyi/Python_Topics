@@ -35,7 +35,7 @@ c_ Solution(object):
         queue = [index]
         w.... queue:
             nextInd = queue.pop(0)
-            i = int(nextInd/n)
+            i = i..(nextInd/n)
             j = nextInd%n
             __ i > 1 a.. board[i-1][j] __ 'O':
                 board[i-1][j] = '#'

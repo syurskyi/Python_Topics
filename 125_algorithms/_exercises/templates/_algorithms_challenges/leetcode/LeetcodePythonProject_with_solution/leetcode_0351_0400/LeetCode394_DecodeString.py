@@ -9,10 +9,10 @@ c_ Solution(object):
         stack = [['', 1]]
         num = ''
         ___ c __ s:
-            __ c.isdigit():
+            __ c.isdigit
                 num += c
             ____ c __ '[':
-                stack.a..(['', int(num)])
+                stack.a..(['', i..(num)])
                 num = ''
             ____ c __ ']':
                 st, k = stack.pop()
@@ -41,12 +41,12 @@ c_ Solution(object):
                 subStr = s[i+1:j-1]
                 tmp = decodeString(subStr)
                 j = i
-                w.... j-1 >= 0 a.. s[j-1].isdigit():
+                w.... j-1 >= 0 a.. s[j-1].isdigit
                     j-=1
-                times = int(s[j:i])
+                times = i..(s[j:i])
                 result += times*tmp
                 i = nextInd
-            ____ n.. c.isdigit():
+            ____ n.. c.isdigit
                 result += c
                 i += 1
             ____:

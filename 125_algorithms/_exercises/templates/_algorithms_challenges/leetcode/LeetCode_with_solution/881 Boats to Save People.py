@@ -34,7 +34,7 @@ ____ collections _______ deque
 
 
 c_ Solution:
-    ___ numRescueBoats(self, people: List[int], limit: int) -> int:
+    ___ numRescueBoats(self, people: List[i..], limit: i..) __ i..:
         """
         sort + gready
         """

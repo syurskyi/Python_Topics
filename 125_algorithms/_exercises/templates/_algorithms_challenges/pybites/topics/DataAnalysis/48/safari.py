@@ -12,9 +12,9 @@ PY_BOOK, OTHER_BOOK = '🐍', '.'
 #)
 
 
-___ create_chart():
+___ create_chart
     #count = 0
-    with open('safari.logs', encoding="utf-8") as f:
+    with open('safari.logs', encoding="utf-8") __ f:
         all_lines = f.readlines()
         lines = [line.rstrip() ___ line __ all_lines]
         #print(len(lines))

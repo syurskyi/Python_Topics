@@ -19,4 +19,4 @@ c_ Solution:
 
             idx[nums[i]] = i
 
-        r.. RES[int(gotcha)]
+        r.. RES[i..(gotcha)]

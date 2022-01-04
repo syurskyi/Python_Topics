@@ -2,11 +2,11 @@
 #  Score: 35
 
 
-t = int(input())
+t = i..(input())
 ___ i __ r..(t):
-    money = int(input())
-    n = int(input())
-    arr = l..(map(int, input().s..()))
+    money = i..(input())
+    n = i..(input())
+    arr = l..(map(i.., input().s..()))
 
     saved_values    # dict
     ___ counter, value __ e..(arr):

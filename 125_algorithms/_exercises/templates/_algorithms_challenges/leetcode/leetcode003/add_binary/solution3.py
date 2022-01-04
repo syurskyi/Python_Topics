@@ -24,9 +24,9 @@ c_ Solution(object):
         w.... i < m o. i < n o. c > 0:
             tmp = c
             __ i < m:
-                tmp += int(a[i])
+                tmp += i..(a[i])
             __ i < n:
-                tmp += int(b[i])
+                tmp += i..(b[i])
             bit = tmp % 2
             c = tmp / 2
             res[i] = s..(bit)

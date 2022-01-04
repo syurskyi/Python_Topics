@@ -47,7 +47,7 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-___ group_names_by_country(data: s.. = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) __ defaultdict:
     countries = defaultdict(l..)
     # you code
     split_lines = data.splitlines()

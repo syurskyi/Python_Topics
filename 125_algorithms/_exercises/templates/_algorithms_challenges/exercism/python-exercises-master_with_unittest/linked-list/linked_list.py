@@ -1,8 +1,8 @@
 c_ Node(object):
     ___ - ):
-        pass
+        p..
 
 
 c_ LinkedList(object):
     ___ - ):
-        pass
+        p..

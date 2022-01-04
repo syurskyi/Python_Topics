@@ -8,17 +8,17 @@ c_ CircularBuffer:
         buffer = deque([], capacity)
 
     ___ read
-        __ empty():
+        __ empty
             raise BufferEmptyException
         r.. buffer.popleft()
 
     ___ write(self, data):
-        __ full():
+        __ full
             raise BufferFullException
         buffer.a..(data)
 
     ___ overwrite(self, data):
-        __ full():
+        __ full
             buffer.popleft()
         buffer.a..(data)
 
@@ -33,8 +33,8 @@ c_ CircularBuffer:
 
 
 c_ BufferFullException(Exception):
-    pass
+    p..
 
 
 c_ BufferEmptyException(Exception):
-    pass
+    p..

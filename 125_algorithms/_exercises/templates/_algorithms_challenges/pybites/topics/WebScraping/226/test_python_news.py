@@ -6,7 +6,7 @@ page2 = ("https://bites-data.s3.us-east-2.amazonaws.com/"
          "news.python.sc/index2.html")
 
 
-___ test_homepage():
+___ test_homepage
     actual = get_top_titles(homepage)
     expected = [
         Entry(title='How do you set up your Python development environment?',
@@ -23,7 +23,7 @@ ___ test_homepage():
     ... actual __ expected
 
 
-___ test_page2():
+___ test_page2
     actual = get_top_titles(page2, top=2)
     expected = [
         Entry(title='Django REST Framework - Typed Views (github.com)',

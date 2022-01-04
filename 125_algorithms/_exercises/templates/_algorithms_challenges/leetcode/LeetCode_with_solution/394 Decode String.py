@@ -29,11 +29,11 @@ c_ Solution(object):
         ]  # with default
         i = 0
         w.... i < l..(s):
-            __ s[i].isdigit():  # construct number from digit
+            __ s[i].isdigit  # construct number from digit
                 j = i+1
                 w.... s[j] != '[': j += 1
                 stk.a..([
-                    int(s[i:j]), []
+                    i..(s[i:j]), []
                 ])
                 i = j+1
             ____ s[i].isl..  # append alphabet
@@ -58,11 +58,11 @@ c_ SolutionVerbose(object):
         i = 0
         ret    # list
         w.... i < l..(s):
-            __ s[i].isdigit():  # construct number from digit
+            __ s[i].isdigit  # construct number from digit
                 j = i+1
                 w.... s[j] != '[': j += 1
                 stk.a..([
-                    int(s[i:j]), []
+                    i..(s[i:j]), []
                 ])
                 i = j+1
             ____ s[i].isl..  # append alphabet
@@ -94,11 +94,11 @@ c_ SolutionError(object):
         i = 0
         ret    # list
         w.... i < l..(s):
-            __ s[i].isdigit():
+            __ s[i].isdigit
                 j = i + 1
                 w.... s[j] != '[': j += 1
                 prev = stk[-1] __ stk ____ 1
-                stk.a..(prev * int(s[i:j]))
+                stk.a..(prev * i..(s[i:j]))
                 i = j + 1
             ____ s[i].isl..
                 repeat = stk[-1] __ stk ____ 1

@@ -66,7 +66,7 @@ c_ CBTInserter:
                     candidates.a..(e)
             q = cur_q
 
-    ___ insert(self, v: int) -> int:
+    ___ insert(self, v: i..) __ i..:
         pi = candidates[0]
         node = TreeNode(v)
         __ n.. pi.left:
@@ -80,7 +80,7 @@ c_ CBTInserter:
         candidates.a..(node)
         r.. pi.val
 
-    ___ get_root(self) -> TreeNode:
+    ___ get_root(self) __ TreeNode:
         r.. root
 
 

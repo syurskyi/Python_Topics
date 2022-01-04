@@ -27,7 +27,7 @@ All elements of each string will have an ASCII value in [97, 122].
 
 
 c_ Solution:
-    ___ minimumDeleteSum(self, s1: s.., s2: s..) -> int:
+    ___ minimumDeleteSum(self, s1: s.., s2: s..) __ i..:
         """
         let F[i][j] be the cost to delete & make s1[:i] == s2[:j]
         F[i][j] = min
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. F[m][n]
 
-    ___ minimumDeleteSum_error(self, s1: s.., s2: s..) -> int:
+    ___ minimumDeleteSum_error(self, s1: s.., s2: s..) __ i..:
         """
         let F[i][j] be the cost to make s1[:i] == s2[:j]
         F[i][j] = min

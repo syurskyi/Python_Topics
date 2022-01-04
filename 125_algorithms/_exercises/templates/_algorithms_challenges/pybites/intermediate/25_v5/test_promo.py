@@ -13,7 +13,7 @@ ___ grab_bites(promo, amount=BITES_AVAILABLE):
 
 
 @pytest.fixture
-___ promo():
+___ promo
     """Make a fresh new promo object for each test"""
     r.. Promo(bites_done=bites_done.copy())
 
@@ -26,7 +26,7 @@ ___ test_bites_not_done_start(promo):
 ___ test_pick_random_bite_returns_not_done_bite(promo):
     ___ _ __ r..(10):
         bite = promo._pick_random_bite()
-        ... t..(bite) __ int
+        ... t..(bite) __ i..
         ... bite __ BITES
         ... bite n.. __ promo.bites_done
 

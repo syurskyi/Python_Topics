@@ -28,7 +28,7 @@ c_ Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        h1, h2 = defaultdict(int), defaultdict(int)
+        h1, h2 = defaultdict(i..), defaultdict(i..)
         ___ a __ nums1:
             h1[a] += 1
         ___ b __ nums2:

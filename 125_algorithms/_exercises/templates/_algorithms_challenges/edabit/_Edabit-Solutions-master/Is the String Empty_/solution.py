@@ -4,7 +4,7 @@ ___ is_empty(s):
     ____:
         r.. F..
 
-___ test_empty():
+___ test_empty
     print("test has started")
     __ is_empty("") != T..:
         print("error1")

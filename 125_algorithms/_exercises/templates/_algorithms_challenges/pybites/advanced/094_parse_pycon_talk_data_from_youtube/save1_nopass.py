@@ -701,7 +701,7 @@ ___ load_pycon_data(pycon_videos=pycon_videos):
 
 ___ get_most_popular_talks_by_views(videos):
     """Return the pycon video list sorted by viewCount"""
-    r.. s..(videos, key=l.... x: int(x.metrics['viewCount']), r.._T..
+    r.. s..(videos, key=l.... x: i..(x.metrics['viewCount']), r.._T..
 
 
 ___ get_most_popular_talks_by_like_ratio(videos):
@@ -710,7 +710,7 @@ ___ get_most_popular_talks_by_like_ratio(videos):
        12 likes on 300 views. Discount the dislikeCount from the likeCount.
        Return the filtered list"""
     r.. s..(videos,
-                  key=l.... x: (int(x.metrics['likeCount']) - int(x.metrics['dislikeCount'])) / int(x.metrics['viewCount']),
+                  key=l.... x: (i..(x.metrics['likeCount']) - i..(x.metrics['dislikeCount'])) / i..(x.metrics['viewCount']),
                   r.._T..
 
 

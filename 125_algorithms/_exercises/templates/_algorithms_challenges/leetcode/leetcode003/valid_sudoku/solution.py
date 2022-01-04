@@ -21,7 +21,7 @@ c_ Solution(object):
             d    # dict
             ___ j __ r..(9):
                 __ board[i][j] __ '.':
-                    pass
+                    p..
                 ____ board[i][j] __ d:
                     r.. F..
                 ____:
@@ -31,7 +31,7 @@ c_ Solution(object):
             d    # dict
             ___ i __ r..(9):
                 __ board[i][j] __ '.':
-                    pass
+                    p..
                 ____ board[i][j] __ d:
                     r.. F..
                 ____:
@@ -43,7 +43,7 @@ c_ Solution(object):
                 ___ i __ r..(n, n + 3):
                     ___ j __ r..(m, m + 3):
                         __ board[i][j] __ '.':
-                            pass
+                            p..
                         ____ board[i][j] __ d:
                             r.. F..
                         ____:

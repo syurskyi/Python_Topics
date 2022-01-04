@@ -46,7 +46,7 @@ c_ ZeroEvenOdd:
         locks[2].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
-    ___ zero(self, printNumber: Callable[[int], N..]) -> N..
+    ___ zero(self, printNumber: Callable[[i..], N..]) __ N..
         ___ i __ r..(n):
             locks[0].a..
             printNumber(0)
@@ -55,13 +55,13 @@ c_ ZeroEvenOdd:
             ____:
                 locks[2].release()
 
-    ___ odd(self, printNumber: Callable[[int], N..]) -> N..
+    ___ odd(self, printNumber: Callable[[i..], N..]) __ N..
         ___ i __ r..((n + 1) // 2):
             locks[1].a..
             printNumber(i * 2 + 1)
             locks[0].release()
 
-    ___ even(self, printNumber: Callable[[int], N..]) -> N..
+    ___ even(self, printNumber: Callable[[i..], N..]) __ N..
         ___ i __ r..(n // 2):
             locks[2].a..
             printNumber(i * 2 + 2)
@@ -82,14 +82,14 @@ c_ ZeroEvenOddError:
             locks[i].a..
 
 	# printNumber(x) outputs "x", where x is an integer.
-    ___ zero(self, printNumber: 'Callable[[int], None]') -> N..
+    ___ zero(self, printNumber: 'Callable[[int], None]') __ N..
         with locks[0]:
             printNumber(0)
 
-    ___ even(self, printNumber: 'Callable[[int], None]') -> N..
+    ___ even(self, printNumber: 'Callable[[int], None]') __ N..
         # cannot lock self.locks[1] from both "even" and "odd"
-        pass
+        p..
 
 
-    ___ odd(self, printNumber: 'Callable[[int], None]') -> N..
-        pass
+    ___ odd(self, printNumber: 'Callable[[int], None]') __ N..
+        p..

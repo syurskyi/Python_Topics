@@ -1,6 +1,6 @@
 ____ collections _______ n..
 
-____ bs4 _______ BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup __ Soup
 _______ requests
 
 PACKT = 'https://bites-data.s3.us-east-2.amazonaws.com/packt.html'
@@ -9,9 +9,9 @@ CONTENT = requests.get(PACKT).text
 Book = n..('Book', 'title description image link')
 
 
-___ get_book():
+___ get_book
     """make a Soup object, parse the relevant html sections, and return a Book namedtuple"""
-    pass
+    p..
 
     soup = Soup(CONTENT, 'html.parser')
 

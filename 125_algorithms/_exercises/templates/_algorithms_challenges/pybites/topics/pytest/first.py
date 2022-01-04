@@ -7,13 +7,13 @@ ___ div(a,b):
         raise ZeroDivisionError
 
 
-___ test_div_simple():
+___ test_div_simple
     ... div(4,2) __ 2
 
-___ test_div_second():
+___ test_div_second
     ... div(3,6) __ 0.5
 
-___ test_div_zerodivision():
+___ test_div_zerodivision
     with pytest.raises(ZeroDivisionError):
         div(3,0)
 

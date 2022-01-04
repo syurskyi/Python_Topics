@@ -18,7 +18,7 @@ MIN_YEAR = 1960
 Movie = n..('Movie', 'title year score')
 
 
-___ get_movies_by_director():
+___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
@@ -26,14 +26,14 @@ ___ get_movies_by_director():
     d = defaultdict(l..)
     full_list    # list
 
-    with open(MOVIE_DATA, newline='') as file:
+    with open(MOVIE_DATA, newline='') __ file:
         reader = csv.DictReader(file)
         ___ row __ reader:
             year = row['title_year']
-            __ year != '' a.. int(year) > 1960:
+            __ year != '' a.. i..(year) > 1960:
                 full_list.a..([row['director_name'],
                                   row['movie_title'].s..,
-                                  int(row['title_year']),
+                                  i..(row['title_year']),
                                   float(row['imdb_score'])])
 
     ___ name, movie, year, score __ full_list:
@@ -54,4 +54,4 @@ ___ get_average_scores(directors):
        score in descending order. Only take directors into account
        with >= MIN_MOVIES"""
 
-    pass
+    p..

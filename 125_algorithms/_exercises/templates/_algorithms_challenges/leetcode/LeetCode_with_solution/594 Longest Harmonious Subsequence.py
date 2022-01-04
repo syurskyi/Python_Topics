@@ -18,11 +18,11 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ findLHS(self, nums: List[int]) -> int:
+    ___ findLHS(self, nums: List[i..]) __ i..:
         """
         counter and iterate
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ n __ nums:
             counter[n] += 1
 

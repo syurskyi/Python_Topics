@@ -5,5 +5,5 @@
 _______ calendar
 
 
-m, d, y = map(int, input().s..())
+m, d, y = map(i.., input().s..())
 print(calendar.day_name[calendar.weekday(y, m, d)].upper())

@@ -3,7 +3,7 @@ ___ first_last(lst):
 
 
 
-___ test():
+___ test
     print("test has started")
     a_list = [2,1,3,4]
     __ first_last(a_list) != [2,4]:

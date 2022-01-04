@@ -1,28 +1,28 @@
 c_ Zipper(object):
     @staticmethod
     ___ from_tree(tree):
-        pass
+        p..
 
     ___ value
-        pass
+        p..
 
     ___ set_value
-        pass
+        p..
 
     ___ left
-        pass
+        p..
 
     ___ set_left
-        pass
+        p..
 
     ___ right
-        pass
+        p..
 
     ___ set_right
-        pass
+        p..
 
     ___ up
-        pass
+        p..
 
     ___ to_tree
-        pass
+        p..

@@ -18,7 +18,7 @@ ___ dirReduc(dir    # list):
                 dir.pop(i)
                 break
             ____:
-                pass
+                p..
     #print the result of the direction reduction
     print(dir)
 #calling the direction reduciton function

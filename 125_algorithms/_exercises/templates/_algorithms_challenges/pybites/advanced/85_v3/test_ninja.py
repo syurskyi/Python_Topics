@@ -8,7 +8,7 @@ NEW_SCORE_MSG = 'Set new score to {score}'
 
 
 @pytest.fixture(scope="module")
-___ ninja():
+___ ninja
     """Make a module scope ninja object (save state
        between tests)"""
     r.. NinjaBelt()

@@ -2,19 +2,19 @@ _______ movie_svc
 _______ requests.exceptions
 
 
-___ main():
+___ main
     print_header()
     search_event_loop()
 
 
-___ print_header():
+___ print_header
     print('--------------------------------')
     print('        MOVIE SEARCH APP')
     print('--------------------------------')
     print()
 
 
-___ search_event_loop():
+___ search_event_loop
     s..  'ONCE_THROUGH_LOOP'
 
     w___ s.. ! 'x':
@@ -32,7 +32,7 @@ ___ search_event_loop():
             print("Error: Search text is required")
         except requests.exceptions.ConnectionError:
             print("Error: Your network is down.")
-        except Exception as x:
+        except Exception __ x:
             print("Unexpected error. Details: {}".f..(x))
 
     print('exiting...')

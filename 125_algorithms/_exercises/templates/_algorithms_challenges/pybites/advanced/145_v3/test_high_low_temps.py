@@ -3,11 +3,11 @@ _______ d__
 _______ pytest
 
 ____ high_low_temps _______ STATION
-____ high_low_temps _______ high_low_record_breakers_for_2015 as hl_2015
+____ high_low_temps _______ high_low_record_breakers_for_2015 __ hl_2015
 
 
 @pytest.fixture(scope="module")
-___ high_low():
+___ high_low
     r.. hl_2015()
 
 

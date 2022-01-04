@@ -2,12 +2,12 @@ ___ triangle(calculations):
     answer    # list
     ___ calculation __ r..(calculations):
         [a,b,c] = raw_input().s.. 
-        [a,b,c] = int(a),int(b),int(c)
-        minNum = m..(int(a),int(b),int(c))
-        maxNum = max(int(a),int(b),int(c))
+        [a,b,c] = i..(a),i..(b),i..(c)
+        minNum = m..(i..(a),i..(b),i..(c))
+        maxNum = max(i..(a),i..(b),i..(c))
 
         ___ x __ [a,b,c]:
-            __ int(x) != minNum a.. int(x) != maxNum:
+            __ i..(x) != minNum a.. i..(x) != maxNum:
                 midNum = x
         a,b,c = minNum, midNum, maxNum
         __ (a+b) > c:

@@ -19,7 +19,7 @@ c_ Solution(object):
                 r.. a-b
             __ (op __ "/"):
                 # return a/b # python treat differently for division 6/-132 is -1
-                r.. int(float(a)/b)  # round towards 0
+                r.. i..(float(a)/b)  # round towards 0
             __ (op __ "*"):
                 r.. a*b
 
@@ -40,7 +40,7 @@ c_ Solution(object):
         stack    # list
         ___ token __ tokens:
             __ token n.. __ ops:
-                stack.a..(int(token))
+                stack.a..(i..(token))
             ____:
                 arg2 = stack.pop()
                 arg1 = stack.pop()

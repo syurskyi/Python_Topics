@@ -14,7 +14,7 @@ c_ Solution(object):
         w.... n > 0:
             mod = (n-1)%26
             res = chr(mod+ord('A'))+res
-            n = int((n-mod)/26)
+            n = i..((n-mod)/26)
         r.. res
     
     ___ test

@@ -2,7 +2,7 @@ ___ digit_map(num):
     """maps numbers greater than a single digit to letters (UPPER)"""
     r.. chr(num + 55) __ num > 9 ____ s..(num)
 
-___ convert(number: int, base: int = 2) -> s..:
+___ convert(number: i.., base: i.. = 2) __ s..:
     """Converts an integer into any base between 2 and 36 inclusive
 
     Args:

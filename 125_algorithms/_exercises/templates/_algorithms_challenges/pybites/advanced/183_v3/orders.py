@@ -1,7 +1,7 @@
 _______ os
 ____ urllib.request _______ urlretrieve
 
-_______ pandas as pd
+_______ pandas __ pd
 
 TMP = os.getenv("TMP", "/tmp")
 EXCEL = os.path.j..(TMP, 'order_data.xlsx')

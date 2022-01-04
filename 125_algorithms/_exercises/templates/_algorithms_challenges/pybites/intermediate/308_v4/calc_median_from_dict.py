@@ -1,7 +1,7 @@
 ____ i.. _______ accumulate
 
 
-___ calc_median_from_dict(d: d..) -> float:
+___ calc_median_from_dict(d: d..) __ float:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
@@ -11,7 +11,7 @@ ___ calc_median_from_dict(d: d..) -> float:
     __ n.. isi..(d, d..) o. d __ N..
         raise TypeError
 
-    __ n.. a..([isi..(k, (int, float)) a.. k ___ k __ d.v..):
+    __ n.. a..([isi..(k, (i.., float)) a.. k ___ k __ d.v..):
         raise TypeError
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts

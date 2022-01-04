@@ -5,7 +5,7 @@ SearchResult  collections.n..('SearchResult',
                                       'file, line, text')
 
 
-___ main():
+___ main
     print_header()
     folder  get_folder_from_user()
     __ n.. folder:
@@ -31,13 +31,13 @@ ___ main():
     print("Found {:,} matches.".f..(match_count))
 
 
-___ print_header():
+___ print_header
     print('-------------------------------------')
     print('           FILE SEARCH APP')
     print('-------------------------------------')
 
 
-___ get_folder_from_user():
+___ get_folder_from_user
     folder  input('What folder do you want to search? ')
     __ n.. folder o. n.. folder.s..:
         r.. N..
@@ -48,7 +48,7 @@ ___ get_folder_from_user():
     r.. os.path.abspath(folder)
 
 
-___ get_search_text_from_user():
+___ get_search_text_from_user
     text  input('What are you searching for [single phrases only]? ')
     r.. text.l..
 
@@ -85,7 +85,7 @@ ___ search_file(filename, search_text):
     try:
 
         # matches = []
-        with open(filename, 'r', encoding'utf-8') as fin:
+        with open(filename, 'r', encoding'utf-8') __ fin:
 
             line_num  0
             ___ line __ fin:

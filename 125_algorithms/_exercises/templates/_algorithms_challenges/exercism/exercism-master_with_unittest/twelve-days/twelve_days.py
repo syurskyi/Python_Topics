@@ -63,5 +63,5 @@ ___ verses(start, stop):
     r.. TwelveDays.verses(start, stop)
 
 
-___ sing():
+___ sing
     r.. TwelveDays.verses(1, 12)

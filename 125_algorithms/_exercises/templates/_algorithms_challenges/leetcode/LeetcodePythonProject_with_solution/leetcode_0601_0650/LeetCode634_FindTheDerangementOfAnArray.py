@@ -16,7 +16,7 @@ c_ Solution(object):
             res = ((i-1)*(dn1+dn2))%(10**9+7)
             dn2 = dn1
             dn1 = res
-        r.. int(res)
+        r.. i..(res)
     
     ___ test
         testCases = [

@@ -22,7 +22,7 @@ c_ Solution:
             sign = -1 __ s[i] __ '-' ____ 1
             i += 1
 
-        w.... i < N a.. s[i].isdigit():
+        w.... i < N a.. s[i].isdigit
             val = ord(s[i]) - ZERO
 
             __ (ans > INT_MAX // 10 o.

@@ -14,7 +14,7 @@ c_ Solution(object):
             total = (stack[-1][2] + (i-stack[-1][1]) * num) % MOD
             stack.a..([num, i, total])
             res = (res + total) % MOD
-        r.. int(res)
+        r.. i..(res)
 
     ___ test
         testCases = [

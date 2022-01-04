@@ -40,7 +40,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+    ___ lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) __ TreeNode:
         r.. walk(root, p, q)
 
     ___ walk(self, node, p, q):

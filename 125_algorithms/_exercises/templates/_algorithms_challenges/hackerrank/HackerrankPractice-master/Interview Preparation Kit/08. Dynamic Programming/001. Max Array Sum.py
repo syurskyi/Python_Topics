@@ -13,6 +13,6 @@ ___ max_subset_sum(arr):
     r.. ans
 
 
-n = int(input())
-arr = l..(map(int, input().s..()))
+n = i..(input())
+arr = l..(map(i.., input().s..()))
 print(max_subset_sum(arr))

@@ -1,7 +1,7 @@
 c_ Solution:
     ___ findHash(self,s):
         r.. ''.j..(s..(s))
-    ___ groupAnagrams(self, strs: List[s..]) -> List[List[s..]]:
+    ___ groupAnagrams(self, strs: List[s..]) __ List[List[s..]]:
         answers  []
         m  {}
 

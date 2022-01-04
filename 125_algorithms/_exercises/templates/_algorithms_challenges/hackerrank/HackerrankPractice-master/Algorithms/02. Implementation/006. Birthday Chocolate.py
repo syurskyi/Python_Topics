@@ -2,6 +2,6 @@
 # Score: 10
 
 
-n, s = int(input().strip()), l..(map(int, input().s..()))
-d, m = map(int, input().s..())
+n, s = i..(input().strip()), l..(map(i.., input().s..()))
+d, m = map(i.., input().s..())
 print(s..([s..(s[i: i + m]) __ d ___ i __ r..(l..(s) - m + 1)]))

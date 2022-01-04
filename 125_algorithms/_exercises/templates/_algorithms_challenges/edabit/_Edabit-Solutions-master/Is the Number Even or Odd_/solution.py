@@ -5,7 +5,7 @@ ___ isEvenOrOdd(num):
         r.. "odd"
 
 
-___ test():
+___ test
     print("test has started")
     __ isEvenOrOdd(3) != "odd":
         print("error1")

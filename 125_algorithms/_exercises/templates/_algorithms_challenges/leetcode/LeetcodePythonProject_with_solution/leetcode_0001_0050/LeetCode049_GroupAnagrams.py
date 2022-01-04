@@ -27,7 +27,7 @@ c_ Solution(object):
         r.. res
     
     ___ test
-        pass
+        p..
 
 __ __name__ __ '__main__':
     Solution().test()

@@ -5,11 +5,11 @@ ___ calc_bmi(weight, length):
     """Provided/DONE:
        Calc BMI give a weight in kg and length in cm, return the BMI
        rounded on 2 decimals"""
-    bmi = int(weight) / ((int(length) / 100) ** 2)
+    bmi = i..(weight) / ((i..(length) / 100) ** 2)
     r.. round(bmi, 2)
 
 
-___ create_parser():
+___ create_parser
     """TODO:
        Create an ArgumentParser adding the right arguments to pass the tests,
        returns a argparse.ArgumentParser object"""

@@ -12,7 +12,7 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 
 # start coding
 
-___ load_words():
+___ load_words
     """load the words dictionary (DICTIONARY constant) into a list and return it"""
     try:
         d = open(DICTIONARY,'r')

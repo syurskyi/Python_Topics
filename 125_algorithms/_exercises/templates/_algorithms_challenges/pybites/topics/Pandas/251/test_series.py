@@ -1,11 +1,11 @@
 _______ string
 
-_______ pandas as pd
+_______ pandas __ pd
 
-_______ series as se
+_______ series __ se
 
 
-___ test_basic_series():
+___ test_basic_series
     ser = se.basic_series()
     ... isi..(ser, pd.Series)
     ... ser.name __ "Fred"
@@ -13,14 +13,14 @@ ___ test_basic_series():
     ... a..(n __ [1, 2, 3, 4, 5] ___ n __ ser.values)
     ... l..(ser.values) __ 5
 
-___ test_floats_series():
+___ test_floats_series
     ser = se.float_series()
     ... isi..(ser, pd.Series)
     ... ser.dtype __ "float64"
     ... l..(ser) __ 1001
     ... ser.s..() __ 500.5
 
-___ test_alpha_index_series():
+___ test_alpha_index_series
     ser = se.alpha_index_series()
     ... isi..(ser, pd.Series)
     ... ser.dtype __ "int64"
@@ -28,7 +28,7 @@ ___ test_alpha_index_series():
     ... s..(ser.values) __ 351
     ... a..(c __ string.ascii_lowercase ___ c __ ser.index)
 
-___ test_object_values_series():
+___ test_object_values_series
     ser = se.object_values_series()
     ... isi..(ser, pd.Series)
     ... l..(ser) __ 26

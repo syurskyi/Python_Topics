@@ -6,7 +6,7 @@ ____ top_n _______ (numbers, dates, earnings_mln,
                    get_highest_earnings)
 
 
-___ test_get_top_n():
+___ test_get_top_n
     ... get_largest_number(numbers) __ [6, 5, 4]
     ... get_largest_number(numbers, n=2) __ [6, 5]
     ... get_largest_number(numbers, n=4) __ [6, 5, 4, 3]
@@ -24,7 +24,7 @@ ___ test_get_top_n():
                                                    'earnings': 93}]
 
 
-___ test_heapq_used():
+___ test_heapq_used
     err_msg = 'We want you to play with heapq for this one :)'
     ... 'heapq' __ i___.getsource(get_largest_number), err_msg
     ... 'heapq' __ i___.getsource(get_latest_dates), err_msg

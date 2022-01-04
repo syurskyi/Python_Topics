@@ -25,7 +25,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
+    ___ allPathsSourceTarget(self, graph: List[List[i..]]) __ List[List[i..]]:
         G = graph
         ret    # list
         visited = [F.. ___ _ __ G]

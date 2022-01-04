@@ -1,4 +1,4 @@
-___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
+___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
     """Compare old vs new requirement multiline strings
        and return a list of dependencies that have been upgraded
        (have a newer version)
@@ -34,14 +34,14 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
             __ k1 __ k2:
                 __ l..(v1) > l..(v2):
                     v1 = v1[:l..(v2)]
-                    __ int(v2) > int(v1):
+                    __ i..(v2) > i..(v1):
                         output.a..(k1)
                 ____ l..(v2) > l..(v1):
                     v2 = v2[:l..(v1)]
-                    __ int(v2) > int(v1):
+                    __ i..(v2) > i..(v1):
                         output.a..(k1)
                 ____ l..(v1) __ l..(v2):
-                    __ int(v2) > int(v1):
+                    __ i..(v2) > i..(v1):
                         output.a..(k1)
 
     r.. output

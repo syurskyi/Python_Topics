@@ -33,7 +33,7 @@ c_ Solution(object):
     ___ helper(root, depth):
       res = 0
       ___ nested __ root:
-        __ nested.isInteger():
+        __ nested.isInteger
           res += depth * nested.getInteger()
         ____:
           res += helper(nested.getList(), depth + 1)

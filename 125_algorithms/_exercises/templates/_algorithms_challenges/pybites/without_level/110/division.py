@@ -6,11 +6,11 @@ ___ divide_numbers(numerator, denominator):
        However if denominator is 0 catch the corresponding exception Python
        throws (cannot divide by 0), and return 0"""
     try:
-        num = int(numerator)
+        num = i..(numerator)
     except:
         raise
     try:
-        den = int(denominator)
+        den = i..(denominator)
     except:
         raise
 

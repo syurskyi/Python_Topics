@@ -1,7 +1,7 @@
 VALID_COLORS = ['blue', 'yellow', 'red']
 
 
-___ my_print_colors():
+___ my_print_colors
     """Ask for color, lowercase it, check if 'quit' is entered, if so print
        'bye' and break, next check if given color is in VALID_COLORS, if not,
        continue, finally if that check passes, print the color"""
@@ -21,7 +21,7 @@ ___ my_print_colors():
     # thou shall not stop after a match!!!
             break
 
-___ print_colors():
+___ print_colors
     """Ask for color, lowercase it, check if 'quit' is entered, if so print
        'bye' and break, next check if given color is in VALID_COLORS, if not,
        continue, finally if that check passes, print the color"""

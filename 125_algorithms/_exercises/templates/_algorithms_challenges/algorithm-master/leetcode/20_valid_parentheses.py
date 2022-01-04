@@ -12,7 +12,7 @@ c_ Solution:
                 stack.a..(c)
             ____ c n.. __ ')]}':
                 r.. F..
-            ____ n.. stack o. pairs[c] != stack.pop():
+            ____ n.. stack o. pairs[c] != stack.pop
                 r.. F..
 
         r.. n.. stack

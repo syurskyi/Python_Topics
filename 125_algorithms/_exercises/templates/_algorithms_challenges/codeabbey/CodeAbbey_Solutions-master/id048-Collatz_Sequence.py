@@ -4,7 +4,7 @@ ___ collatzSequence(tests):
     
     ___ test __ r..(tests):
         count = 0
-        value = int(data[test])
+        value = i..(data[test])
         
         w.... value != 1:
             __ value % 2 __ 0:

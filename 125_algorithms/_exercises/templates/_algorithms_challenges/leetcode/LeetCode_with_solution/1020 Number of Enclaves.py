@@ -34,7 +34,7 @@ dirs = ((0, -1), (0, 1), (1, 0), (-1, 0))
 
 
 c_ Solution:
-    ___ numEnclaves(self, A: List[List[int]]) -> int:
+    ___ numEnclaves(self, A: List[List[i..]]) __ i..:
         """
         not dfs from any cell, but dfs from the edges
         """
@@ -66,7 +66,7 @@ c_ SolutionError:
     ___ - ):
         ret = 0
 
-    ___ numEnclaves(self, A: List[List[int]]) -> int:
+    ___ numEnclaves(self, A: List[List[i..]]) __ i..:
         """
         dfs coloring
         """

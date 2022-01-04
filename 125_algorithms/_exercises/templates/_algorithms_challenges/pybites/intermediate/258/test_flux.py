@@ -1,7 +1,7 @@
 ____ flux _______ XYZ, calculate_flux, identify_flux
 
 
-___ test_calculate():
+___ test_calculate
     calc = calculate_flux(XYZ)
     ... isi..(calc, l..)
     ... l..(calc) __ 11
@@ -13,7 +13,7 @@ ___ test_calculate():
     ... round(perc, 2) __ 0.04
 
 
-___ test_identify():
+___ test_identify
     flux = identify_flux(calculate_flux(XYZ))
     ... isi..(flux, l..)
     ... l..(flux) __ 5

@@ -14,7 +14,7 @@ Braunle,Kermit,PL
 Halbard,Davie,CN"""
 
 
-___ group_names_by_country(data: s.. = data) -> defaultdict:
+___ group_names_by_country(data: s.. = data) __ defaultdict:
     countries = defaultdict(l..)
     ___ line __ data.s..('\n')[1:]:
         lname, fname, country = line.s..(',')

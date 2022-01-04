@@ -11,7 +11,7 @@ c_ Solution(object):
         :rtype: int
         """
         _______ math
-        maxVal = int(math.sqrt(n))+1
+        maxVal = i..(math.sqrt(n))+1
         __ n < 0: r.. 0
         dp = [float('inf')]*(n+1)
         dp[0] = 0

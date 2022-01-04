@@ -17,6 +17,6 @@ ___ minimum_time(goal, machines):
     r.. min_days
 
 
-n, goal = map(int, input().s..())
-machines = l..(map(int, input().s..()))
+n, goal = map(i.., input().s..())
+machines = l..(map(i.., input().s..()))
 print(minimum_time(goal, machines))

@@ -22,7 +22,7 @@ c_ Solution:
         :type t: str
         :rtype: bool
         """
-        cnt = defaultdict(int)
+        cnt = defaultdict(i..)
         ___ c __ s:
             cnt[c] += 1
 

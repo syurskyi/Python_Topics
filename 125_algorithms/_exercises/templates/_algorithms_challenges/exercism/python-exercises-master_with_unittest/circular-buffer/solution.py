@@ -1,9 +1,9 @@
 c_ BufferFullException(Exception):
-    pass
+    p..
 
 
 c_ BufferEmptyException(Exception):
-    pass
+    p..
 
 
 c_ CircularBuffer(object):

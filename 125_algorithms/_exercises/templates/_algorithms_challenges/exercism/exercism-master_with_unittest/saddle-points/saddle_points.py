@@ -4,7 +4,7 @@ c_ SaddlePoints:
         columns = l..(z..(*matrix))
 
     ___ get_saddle_points
-        __ invalid_matrix():
+        __ invalid_matrix
             raise ValueError('Matrix has rows of unequal length')
         r.. saddle_points()
 

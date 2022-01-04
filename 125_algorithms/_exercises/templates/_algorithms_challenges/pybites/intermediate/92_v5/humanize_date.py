@@ -22,7 +22,7 @@ ___ pretty_date(date: d__):
     __ n.. isi..(date, d__) o. date > NOW:
         raise ValueError('pretty_date() only accepts datetime objects in the past')
     diff = NOW - date
-    seconds = int(diff.total_seconds())
+    seconds = i..(diff.total_seconds())
     minutes = seconds // 60
     hours = minutes // 60
     # This doesn't _feel_ very pythonic…

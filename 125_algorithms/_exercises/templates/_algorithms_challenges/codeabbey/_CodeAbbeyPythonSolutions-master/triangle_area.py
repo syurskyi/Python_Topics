@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_area(x1, y1, x2, y2, x3, y3):
@@ -6,7 +6,7 @@ ___ get_area(x1, y1, x2, y2, x3, y3):
 
 
 ___ i __ r..(amount_values):
-    x1, y1, x2, y2, x3, y3 = map(int, input().s..())
+    x1, y1, x2, y2, x3, y3 = map(i.., input().s..())
     area_of_triangle = get_area(x1,y1,x2,y2,x3,y3)
 
     __(area_of_triangle < 0):

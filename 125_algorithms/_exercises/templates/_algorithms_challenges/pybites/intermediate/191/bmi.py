@@ -30,7 +30,7 @@ ___ person_max_bmi(data=data):
     ___ row __ data_list:
        current = row.s...s..(",")
        __ l..(current) > 1:
-         bmi[current[0]] = float(current[2]) / ((int(current[1])) / 100) ** 2
+         bmi[current[0]] = float(current[2]) / ((i..(current[1])) / 100) ** 2
 
     name_max_bmi = max(bmi, key = bmi.get)
     r.. (name_max_bmi, round(bmi[name_max_bmi], 2))

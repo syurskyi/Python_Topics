@@ -29,7 +29,7 @@ c_ Codec(object):
                 j = i
                 w.... j < n a.. s[j] != '#':
                     j += 1
-                __ s[i+1:j].isdigit() a.. int(s[i+1:j]) __ l..(sub):
+                __ s[i+1:j].isdigit() a.. i..(s[i+1:j]) __ l..(sub):
                     arr.a..(sub)
                     i = j
                     prev = i+1
@@ -41,6 +41,6 @@ c_ Codec(object):
         i = 0
         w.... i < l..(s):
             j = s.find(':', i)
-            i = j+1+int(s[i:j])
+            i = j+1+i..(s[i:j])
             result.a..(s[j+1:i])
         r.. result

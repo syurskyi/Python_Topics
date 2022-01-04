@@ -9,6 +9,6 @@ ___ divide_numbers(numerator, denominator):
         __ denominator __ 0:
             r.. 0
         ____:
-            r.. int(numerator) / int(denominator)
+            r.. i..(numerator) / i..(denominator)
     except ValueError:
         r.. print("Input integer")

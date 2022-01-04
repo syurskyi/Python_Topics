@@ -42,7 +42,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ camelMatch(self, queries: List[s..], pattern: s..) -> List[bool]:
+    ___ camelMatch(self, queries: List[s..], pattern: s..) __ List[bool]:
         ret    # list
         ___ q __ queries:
             ret.a..(m..(q, pattern))

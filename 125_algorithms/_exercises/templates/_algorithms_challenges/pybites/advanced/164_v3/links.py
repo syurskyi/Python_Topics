@@ -4,7 +4,7 @@ ____ urllib.parse _______ urlparse
 INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 
 
-___ make_html_links():
+___ make_html_links
     ___ line __ sys.stdin:
         res = process_line(line)
         __ res a.. l..(res.strip()) > 0:

@@ -32,21 +32,21 @@ c_ Hand:
         suits = [card.suit ___ card __ cards]
 
     ___ score
-        __ straight_flush():
+        __ straight_flush
             r.. STRAIGHT_FLUSH + high_card()
-        ____ four_of_a_kind():
+        ____ four_of_a_kind
             r.. FOUR_OF_A_KIND + rank_of_card_with_highest_occurence()
-        ____ full_house():
+        ____ full_house
             r.. FULL_HOUSE + rank_of_card_with_highest_occurence()
-        ____ flush():
+        ____ flush
             r.. FLUSH + high_card()
-        ____ straight():
+        ____ straight
             r.. STRAIGHT + high_card()
-        ____ three_of_a_kind():
+        ____ three_of_a_kind
             r.. THREE_OF_A_KIND + rank_of_card_with_highest_occurence()
-        ____ two_pair():
+        ____ two_pair
             r.. TWO_PAIR + high_card()
-        ____ one_pair():
+        ____ one_pair
             r.. ONE_PAIR + rank_of_card_with_highest_occurence()
         ____:
             r.. high_card()
@@ -104,7 +104,7 @@ c_ Card:
     ___ numberify_face_cards(cls, rank):
         __ rank __ l..(cls.FACE_CARDS.k..
             r.. cls.FACE_CARDS[rank]
-        r.. int(rank)
+        r.. i..(rank)
 
 
 ___ poker(inp):

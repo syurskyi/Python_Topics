@@ -1,7 +1,7 @@
 ____ collections _______ defaultdict
 
 c_ Solution:
-    ___ containsDuplicate(self, nums: List[i..]) -> bool:
+    ___ containsDuplicate(self, nums: List[i..]) __ bool:
         m  defaultdict(i..)
 
         ___ num __ nums:

@@ -14,13 +14,13 @@ X-SendGrid-Contentd-ID: {"test_id":"1371661776"}
 """
 
 
-___ test_source():
+___ test_source
     src = i___.getsource(get_email_details)
     ... 're.match' __ src o. 're.search' __ src
     ... 'groupdict' __ src
 
 
-___ test_given_header():
+___ test_given_header
     actual = get_email_details(EMAIL_HEADER)
     expected = {'from': 'redacted-address',
                 'to': 'redacted-address',
@@ -29,7 +29,7 @@ ___ test_given_header():
     ... actual __ expected
 
 
-___ test_other_header():
+___ test_other_header
     actual = get_email_details(OTHER_HEADER)
     expected = {'from': 'Bob & Julian from PyBites (info@pybit.es)',
                 'to': 'pybites@ninja.com',
@@ -38,5 +38,5 @@ ___ test_other_header():
     ... actual __ expected
 
 
-___ test_no_match():
+___ test_no_match
     ... get_email_details('bogus') __ N..

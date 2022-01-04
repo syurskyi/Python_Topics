@@ -1,11 +1,11 @@
 _______ requests
-____ bs4 _______ BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup __ Soup
 
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
 ___ load_page(so_url):
     """Download the blog html and return its decoded content"""
-    with requests.Session() as session:
+    with requests.Session() __ session:
         r.. session.get(so_url).content.decode('utf-8')
 
 ___ top_python_questions(url=cached_so_url):
@@ -24,7 +24,7 @@ ___ top_python_questions(url=cached_so_url):
         question_vote = question.find('span', class_='vote-count-post').strong.text.s..
         question_view = question.find('div', class_='views').text.s..
         __ 'm views' __ question_view:
-            faq.a..((question_text,int(question_vote)))
+            faq.a..((question_text,i..(question_vote)))
     r.. s..(faq, key=l.... x:x[1], r.._T..
 
 

@@ -3,7 +3,7 @@ ____ pathlib _______ Path
 _______ bisect
 _______ __
 ____ urllib.request _______ urlretrieve
-____ bs4 _______ BeautifulSoup as Soup
+____ bs4 _______ BeautifulSoup __ Soup
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 HTML_FILE = TMP / "enchantment_list_pc.html"
@@ -87,7 +87,7 @@ ___ generate_enchantments(soup):
                                                
         id_name = __.s..(r'\((.+)\)',values[0]).group(1)
         name= __.sub(r'\(.+\)','',values[0])
-        level = int(mapping[values[1]])
+        level = i..(mapping[values[1]])
         description = values[2]
 
         enchantment = Enchantment(id_name,name,level,description)
@@ -133,10 +133,10 @@ ___ generate_items(data):
 ___ get_soup(file=HTML_FILE):
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
     __ isi..(file, Path):
-        __ n.. file.is_file():
+        __ n.. file.is_file
             urlretrieve(URL, file)
 
-        with file.open() as html_source:
+        with file.open() __ html_source:
             soup = Soup(html_source, "html.parser")
     ____:
         soup = Soup(file, "html.parser")
@@ -144,7 +144,7 @@ ___ get_soup(file=HTML_FILE):
     r.. soup
 
 
-___ main():
+___ main
     """This function is here to help you test your final code.
     
     Once complete, the print out should match what's at the bottom of this file"""

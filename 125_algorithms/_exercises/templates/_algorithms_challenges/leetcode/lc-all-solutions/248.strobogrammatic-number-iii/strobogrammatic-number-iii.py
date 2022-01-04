@@ -11,13 +11,13 @@ c_ Solution(object):
         pathStr = "".j..(path)
         __ half * 2 __ n:
           toAppend = pathStr + "".j..([d[x] ___ x __ pathStr[::-1]])
-          toAppendInt = int(toAppend)
+          toAppendInt = i..(toAppend)
           __ low <= toAppendInt <= high:
             count += 1
         ____:
           ___ c __ "018":
             toAppend = pathStr + c + "".j..([d[x] ___ x __ pathStr[::-1]])
-            toAppendInt = int(toAppend)
+            toAppendInt = i..(toAppend)
             __ low <= toAppendInt <= high:
               count += 1
         r..
@@ -39,11 +39,11 @@ c_ Solution(object):
     :type high: str
     :rtype: int
     """
-    __ int(low) > int(high):
+    __ i..(low) > i..(high):
       r.. 0
     count = 0
-    low = int(low)
-    high = int(high)
+    low = i..(low)
+    high = i..(high)
     ___ length __ r..(l..(low), l..(high) + 1):
       findStrobogrammatic(length)
     r.. count

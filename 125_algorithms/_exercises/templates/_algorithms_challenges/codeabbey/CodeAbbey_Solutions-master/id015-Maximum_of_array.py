@@ -3,9 +3,9 @@ ___ findRange(numbers):
     minNum, maxNum = 0,0
     numbers = numbers.s..
     ___ x __ numbers:
-        __ int(x) < int(minNum):
+        __ i..(x) < i..(minNum):
             minNum = x
-        __ int(x) > int(maxNum):
+        __ i..(x) > i..(maxNum):
             maxNum = x
     print(s..(maxNum) + " " + s..(minNum))
 findRange(raw_input())

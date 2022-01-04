@@ -32,7 +32,7 @@ urllib.request.urlretrieve(
     harry_text
 )
 
-___ my_solution_get_harry_most_common_word():
+___ my_solution_get_harry_most_common_word
     """
     High level concept:
     * prepare a list with stopwords
@@ -60,12 +60,12 @@ ___ my_solution_get_harry_most_common_word():
     counter = Counter(filtered)
     r.. counter.most_common(1)[0]
 
-___ pyb_solution_get_harry_most_common_word():
-    ___ get_harry_most_common_word():
-        with open(stopwords_file) as f:
+___ pyb_solution_get_harry_most_common_word
+    ___ get_harry_most_common_word
+        with open(stopwords_file) __ f:
             stopwords = set(f.read().s...l...s..('\n'))
 
-        with open(harry_text) as f:
+        with open(harry_text) __ f:
             words = [__.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]
                      ___ word __ f.read().l...s.. ]
 

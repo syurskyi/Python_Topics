@@ -49,7 +49,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
+    ___ trimBST(self, root: TreeNode, L: i.., R: i..) __ TreeNode:
         """
         post-order traverse
         """

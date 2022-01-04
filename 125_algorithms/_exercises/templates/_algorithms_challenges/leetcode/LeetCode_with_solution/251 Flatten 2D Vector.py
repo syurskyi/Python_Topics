@@ -20,7 +20,7 @@ c_ Vector2D:
         :rtype: int
         """
         ret = N..
-        __ hasNext():
+        __ hasNext
             ret = vec2d[i][j]
             j += 1
 

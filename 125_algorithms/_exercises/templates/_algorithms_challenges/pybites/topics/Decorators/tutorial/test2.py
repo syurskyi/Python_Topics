@@ -3,7 +3,7 @@ ____ functools _______ wraps
 ___ int_inputs(func):
     @wraps(func)
     ___ wrapper(*args):
-        newargs = [int(a) ___ a __ args]
+        newargs = [i..(a) ___ a __ args]
         r.. func(*newargs)
     r.. wrapper
 

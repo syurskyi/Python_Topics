@@ -3,7 +3,7 @@
 
 checklist  ["Portugal", "Germany", "Munster", "Spain"]
 
-with open("countries_clean.txt", "r") as file:
+with open("countries_clean.txt", "r") __ file:
     content  file.readlines()
 
 content  [i.rstrip('\n') ___ i __ content]

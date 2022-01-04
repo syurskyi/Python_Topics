@@ -15,9 +15,9 @@ c_ Solution(object):
         i = 0
         w.... i < l..(s):
             c = s[i]
-            __ c.isdigit():
+            __ c.isdigit
                 num = ord(c)-ord('0')
-                w.... i+1 < l..(s) a.. s[i+1].isdigit():
+                w.... i+1 < l..(s) a.. s[i+1].isdigit
                     i += 1
                     num = num*10+ord(s[i])-ord('0')
                 l2 = l2*num __ o2__1 ____ l2//num

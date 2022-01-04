@@ -9,7 +9,7 @@ ___ convert_pybites_chars(text):
         __ letter.u.. __ PYBITES.u..:
             __ letter.isl..
                 temp += letter.u..
-            ____ letter.isupper():
+            ____ letter.isupper
                 temp += letter.l..
         ____:
             temp += letter

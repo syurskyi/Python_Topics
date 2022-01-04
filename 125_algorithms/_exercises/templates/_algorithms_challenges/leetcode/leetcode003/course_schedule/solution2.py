@@ -60,8 +60,8 @@ c_ Solution(object):
 s = Solution()
 print(s.canFinish(1, []))
 print(s.canFinish(3, [[1, 0], [0, 1]]))
-with open('test.txt') as f:
+with open('test.txt') __ f:
     args = f.read().s..
-    arg0 = int(args[0][:-1])
+    arg0 = i..(args[0][:-1])
     arg1 = eval(args[1])
     print(s.canFinish(arg0, arg1))

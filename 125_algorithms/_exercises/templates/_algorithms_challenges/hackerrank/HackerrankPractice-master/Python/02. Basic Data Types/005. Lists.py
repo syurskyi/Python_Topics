@@ -14,5 +14,5 @@ ___ handler(result):
 
 
 result    # list
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     handler(result)

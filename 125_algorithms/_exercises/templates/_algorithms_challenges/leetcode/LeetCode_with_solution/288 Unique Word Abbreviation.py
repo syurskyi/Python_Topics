@@ -12,7 +12,7 @@ c_ ValidWordAbbr(object):
         initialize your data structure here.
         :type dictionary: List[str]
         """
-        abbrev = defaultdict(int)
+        abbrev = defaultdict(i..)
         dictionary = set(dictionary)
 
         ___ word __ dictionary:

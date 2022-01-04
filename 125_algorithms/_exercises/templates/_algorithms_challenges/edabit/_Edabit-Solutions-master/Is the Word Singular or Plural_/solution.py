@@ -5,7 +5,7 @@ ___ is_plural(word):
         r.. F..
 
 
-___ test():
+___ test
     print("test has started")
     __ is_plural("dudes") != T..:
         print("error1")

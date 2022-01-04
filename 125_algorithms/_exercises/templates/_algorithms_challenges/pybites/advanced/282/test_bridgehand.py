@@ -10,13 +10,13 @@ ____ bridgehand _______ Suit, Rank, Card, BridgeHand
 @dataclass
 c_ TestHand:
     card_string: s..
-    doubletons: int
-    singletons: int
-    voids: int
-    hcp: int
-    ssp: int
-    total_points: int
-    ltc: int
+    doubletons: i..
+    singletons: i..
+    voids: i..
+    hcp: i..
+    ssp: i..
+    total_points: i..
+    ltc: i..
     card_list: List[Card] = field(init=F..)
 
     ___ __post_init__
@@ -61,17 +61,17 @@ malformed_hands = [
 ]
 
 
-___ test_null_cards():
+___ test_null_cards
     with pytest.raises(TypeError):
         BridgeHand(N..)
 
 
-___ test_wrong_type():
+___ test_wrong_type
     with pytest.raises(TypeError):
         BridgeHand(42)
 
 
-___ test_wrong_cards():
+___ test_wrong_cards
     with pytest.raises(ValueError):
         BridgeHand([Card(Suit.S, Rank.A)] + [N..] * 12)
 

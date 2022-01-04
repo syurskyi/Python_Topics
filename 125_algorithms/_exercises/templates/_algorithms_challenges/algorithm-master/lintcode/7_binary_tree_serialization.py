@@ -53,7 +53,7 @@ c_ Solution:
         n = l..(vals)
         i = 0
 
-        root = TreeNode(int(vals[i]))
+        root = TreeNode(i..(vals[i]))
         queue = [root]
 
         ___ node __ queue:
@@ -65,7 +65,7 @@ c_ Solution:
                 __ vals[i] __ EMPTY:
                     continue
 
-                setattr(node, branch, TreeNode(int(vals[i])))
+                setattr(node, branch, TreeNode(i..(vals[i])))
                 queue.a..(getattr(node, branch))
 
         r.. root

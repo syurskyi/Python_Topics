@@ -8,10 +8,10 @@ c_ ComputeCell(object):
         value = N..
 
     ___ add_callback(self, callback):
-        pass
+        p..
 
     ___ remove_callback(self, callback):
-        pass
+        p..
 
     ___ expect_callback_values(self, callback):
-        pass
+        p..

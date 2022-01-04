@@ -1,2 +1,2 @@
-___ is_leap_year():
-    pass
+___ is_leap_year
+    p..

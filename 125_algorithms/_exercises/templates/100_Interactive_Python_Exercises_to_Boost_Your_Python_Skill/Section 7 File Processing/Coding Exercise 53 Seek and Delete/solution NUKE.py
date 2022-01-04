@@ -4,7 +4,7 @@ _______ os
 text_files  glob.glob("*.txt")
 
 ___ text_file __ text_files:
-    with open(text_file) as file:
+    with open(text_file) __ file:
         content  file.read().l..
 
     __ "xxx" __ content:

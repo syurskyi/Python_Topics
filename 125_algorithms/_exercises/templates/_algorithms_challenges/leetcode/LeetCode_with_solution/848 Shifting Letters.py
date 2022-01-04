@@ -29,7 +29,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ shiftingLetters(self, S: s.., shifts: List[int]) -> s..:
+    ___ shiftingLetters(self, S: s.., shifts: List[i..]) __ s..:
         """
         preprocess shifts
         """

@@ -1,7 +1,7 @@
 c_ TriangleError(Exception):
-    pass
+    p..
 
 
 c_ Triangle(object):
     ___ - ):
-        pass
+        p..

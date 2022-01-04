@@ -1,2 +1,2 @@
-___ solution():
-    pass
+___ solution
+    p..

@@ -33,17 +33,17 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 
 # start coding
 
-___ load_words_v1():
+___ load_words_v1
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
     l    # list
-    with open(DICTIONARY) as file:
+    with open(DICTIONARY) __ file:
         ___ line __ file:
             l.a..(line.strip())
     r.. l
 
-___ load_words_v2():
+___ load_words_v2
 
-    with open(DICTIONARY) as file:
+    with open(DICTIONARY) __ file:
         r.. [word.s.. ___ word __ file.read().s.. ]
 
 ___ calc_word_value_v1(word):
@@ -65,7 +65,7 @@ ___ max_word_value(words):
     max = ()
     ___ word __ words:
         value = calc_word_value(word)
-        __ max __ ():
+        __ max __
             max = (word, value)
         ____:
             __ value > max[1]:

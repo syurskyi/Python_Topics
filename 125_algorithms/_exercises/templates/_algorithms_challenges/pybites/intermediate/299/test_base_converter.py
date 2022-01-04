@@ -40,6 +40,6 @@ ___ test_convert_base_high(number, base):
         convert(number, base)
 
 
-___ test_convert_non_base10_number():
+___ test_convert_non_base10_number
     with pytest.raises(TypeError):
         convert("FF", 10)

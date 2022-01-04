@@ -7,6 +7,6 @@ c_ Solution(object):
     s = "122"
     p = 2
     w.... l..(s) < n:
-      s += s..((3 - int(s[-1]))) * int(s[p])
+      s += s..((3 - i..(s[-1]))) * i..(s[p])
       p += 1
     r.. s[:n].c.. "1")

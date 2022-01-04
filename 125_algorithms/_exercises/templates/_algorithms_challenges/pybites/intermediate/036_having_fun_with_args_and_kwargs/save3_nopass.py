@@ -1,7 +1,7 @@
 ___ get_profile(name, age, *sports, **awards):
     sports = s..(l..(sports))
 
-    __ n.. isi..(age, int):
+    __ n.. isi..(age, i..):
         raise ValueError
     __ l..(sports) > 5:
         raise ValueError

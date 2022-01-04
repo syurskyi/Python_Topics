@@ -24,7 +24,7 @@ c_ Node:
 
 
 c_ Solution:
-    ___ maxDepth(self, root: "Node") -> int:
+    ___ maxDepth(self, root: "Node") __ i..:
         __ n.. root:
             r.. 0
 

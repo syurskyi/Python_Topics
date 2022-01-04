@@ -31,8 +31,8 @@ c_ Solution(object):
             r.. multiply(num2, num1)
 
         # reverse them first
-        num1 = map(int, l..(num1[::-1]))
-        num2 = map(int, l..(num2[::-1]))
+        num1 = map(i.., l..(num1[::-1]))
+        num2 = map(i.., l..(num2[::-1]))
 
         # multiply by 1 digit at a time
         ___ d __ num1:

@@ -1,6 +1,6 @@
-___ verse():
-    pass
+___ verse
+    p..
 
 
-___ rhyme():
-    pass
+___ rhyme
+    p..

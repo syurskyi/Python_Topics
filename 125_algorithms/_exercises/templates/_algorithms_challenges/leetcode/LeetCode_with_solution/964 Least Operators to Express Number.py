@@ -44,7 +44,7 @@ ____ functools _______ lru_cache
 
 
 c_ Solution:
-    ___ leastOpsExpressTarget(self, x: int, target: int) -> int:
+    ___ leastOpsExpressTarget(self, x: i.., target: i..) __ i..:
         """
         x/x is 1
         x * x is power 2

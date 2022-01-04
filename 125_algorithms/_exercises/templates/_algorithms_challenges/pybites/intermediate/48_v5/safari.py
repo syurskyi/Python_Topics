@@ -7,11 +7,11 @@ PY_BOOK, OTHER_BOOK = '🐍', '.'
 urllib.request.urlretrieve('http://bit.ly/2BLsCYc', LOG)
 
 
-___ create_chart():
+___ create_chart
     line_check = __.c..(r'^(\d\d-\d\d) \d\d:\d\d \w+\s+DEBUG\s+(\w*) - (.*)$')
     book = ''
     last_date = ''
-    with open(LOG) as log:
+    with open(LOG) __ log:
         ___ line __ log:
             (d,i,t) = line_check.m..(line).groups()
             __ d != last_date:

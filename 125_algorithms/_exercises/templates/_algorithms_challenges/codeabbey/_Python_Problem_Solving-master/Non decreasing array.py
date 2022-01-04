@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ checkPossibility(self, nums: List[int]) -> bool:
+    ___ checkPossibility(self, nums: List[i..]) __ bool:
                 i = 0
                 non_count = 0
                 equals = F..
@@ -30,7 +30,7 @@ c_ Solution:
                         ____:
                             i += 1
                     except:
-                        pass
+                        p..
                     __ non_count >= 2:
                         break
                 __ non_count <= 1:

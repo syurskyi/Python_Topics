@@ -14,7 +14,7 @@ c_ Solution(object):
         res.a..("".j..(path))
         r..
 
-      digit = int(d..[index])
+      digit = i..(d..[index])
       ___ c __ d.get(digit, []):
         path.a..(c)
         dfs(d.., index + 1, path, res, d)

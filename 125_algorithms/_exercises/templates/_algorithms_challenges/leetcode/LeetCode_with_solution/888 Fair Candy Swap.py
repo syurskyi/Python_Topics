@@ -45,7 +45,7 @@ _______ bisect
 
 
 c_ Solution:
-    ___ fairCandySwap(self, A: List[int], B: List[int]) -> List[int]:
+    ___ fairCandySwap(self, A: List[i..], B: List[i..]) __ List[i..]:
         """
         It is a search problem. Use set as search.
         """
@@ -59,7 +59,7 @@ c_ Solution:
                 
         raise
 
-    ___ fairCandySwap_complex(self, A: List[int], B: List[int]) -> List[int]:
+    ___ fairCandySwap_complex(self, A: List[i..], B: List[i..]) __ List[i..]:
         """
         sum, to figure out the target O(N)
         exchange one

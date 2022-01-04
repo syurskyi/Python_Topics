@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ c.. decimal_number):
@@ -18,7 +18,7 @@ ___ c.. decimal_number):
         r.. 32-counter
     r.. counter
 
-values = l..(map(int, input().s..()))
+values = l..(map(i.., input().s..()))
 ___ i __ r..(amount_values):
     results.a..(c.. values[i]))
 

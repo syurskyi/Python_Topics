@@ -25,7 +25,7 @@ Do not use the eval built-in library function.
 
 
 c_ Solution:
-    ___ calculate(self, s: s..) -> int:
+    ___ calculate(self, s: s..) __ i..:
         """
         No brackets. Look at previous operand and operator, when finishing
         scanning current operand.
@@ -34,8 +34,8 @@ c_ Solution:
         stk    # list
         prev_op = "+"
         ___ i, c __ e..(s):
-            __ c.isdigit():
-                operand = operand * 10 + int(c)
+            __ c.isdigit
+                operand = operand * 10 + i..(c)
 
             #  i == len(s) - 1
             delimited = c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
@@ -49,7 +49,7 @@ c_ Solution:
                 ____:
                     ... prev_op __ "/"
                     # instead of op1 // op2 due to negative handling, -3 // 2 == -2
-                    cur = int(stk.pop() / operand)
+                    cur = i..(stk.pop() / operand)
 
                 stk.a..(cur)
                 prev_op = c
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. s..(stk)
 
-    ___ calculate_error(self, s: s..) -> int:
+    ___ calculate_error(self, s: s..) __ i..:
         """
         cannot use dictionary, since it is eager evaluation
         """
@@ -65,8 +65,8 @@ c_ Solution:
         stk    # list
         prev_op = "+"
         ___ i, c __ e..(s):
-            __ c.isdigit():
-                operand = operand * 10 + int(c)
+            __ c.isdigit
+                operand = operand * 10 + i..(c)
 
             #  i == len(s) - 1
             delimited = c __ ("+", "-", "*", "/") o. i __ l..(s) - 1
@@ -75,7 +75,7 @@ c_ Solution:
                     "+": operand,
                     "-": -operand,
                     "*": stk.pop() * operand,
-                    "/": int(stk.pop() / operand),  # instead of op1 // op2 due to negative handling, -3 // 2 == -2
+                    "/": i..(stk.pop() / operand),  # instead of op1 // op2 due to negative handling, -3 // 2 == -2
                 }[prev_op]
                 stk.a..(cur)
 

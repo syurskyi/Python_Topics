@@ -1,3 +1,3 @@
 c_ SpaceAge(object):
     ___ - ):
-        pass
+        p..

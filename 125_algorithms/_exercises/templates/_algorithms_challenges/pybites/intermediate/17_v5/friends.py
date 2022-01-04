@@ -1,6 +1,6 @@
 ____ i.. _______ combinations, permutations
 
-___ friends_teams(friend_list: l.., team_size: int, order_does_matter: bool = F..) -> l..:
+___ friends_teams(friend_list: l.., team_size: i.., order_does_matter: bool = F..) __ l..:
     __ order_does_matter:
         r.. [x ___ x __ permutations(friend_list,team_size)]
     ____:

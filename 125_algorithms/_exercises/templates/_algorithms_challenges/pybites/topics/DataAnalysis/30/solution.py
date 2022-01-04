@@ -18,17 +18,17 @@ MIN_YEAR = 1960
 Movie = n..('Movie', 'title year score')
 
 
-___ get_movies_by_director():
+___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     directors = defaultdict(l..)
-    with open(MOVIE_DATA) as f:
+    with open(MOVIE_DATA) __ f:
         ___ line __ csv.DictReader(f):
             try:
                 director = line['director_name']
                 movie = line['movie_title'].r..('\xa0', '')
-                year = int(line['title_year'])
+                year = i..(line['title_year'])
                 score = float(line['imdb_score'])
             except ValueError:
                 continue

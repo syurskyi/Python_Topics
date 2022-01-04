@@ -6,7 +6,7 @@ PAT = r'^\W+|\W+$|^_+|_+$'  # leading or trailing non-word characters
 
 
 
-___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
+___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     """
     Find the word in text with the most repeated letters. If more than one word
     has the highest number of repeated letters choose the first one. Return a
@@ -32,7 +32,7 @@ ___ max_letter_word(text: s..) -> Tuple[s.., s.., int]:
     __ counts:
         result = max(counts, key=l.... x: x[1].most_common(1)[0][1])
 
-        __ result[1].most_common():
+        __ result[1].most_common
             letter, count = result[1].most_common(1)[0]
             r.. result[0], letter, count
     ____:

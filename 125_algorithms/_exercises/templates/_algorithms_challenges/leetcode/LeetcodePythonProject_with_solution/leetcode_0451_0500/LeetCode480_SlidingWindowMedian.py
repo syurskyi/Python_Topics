@@ -12,7 +12,7 @@ c_ Solution(object):
         :type k: int
         :rtype: List[float]
         """
-        pass
+        p..
     
     
     ___ medianSlidingWindow_another(self, nums, k):
@@ -51,7 +51,7 @@ c_ Solution(object):
             heapq.heappush(maxHeap, -val)
     
     ___ remove(self, num):
-        __ num >= getMedian():
+        __ num >= getMedian
             minHeap.remove(num)
             heapq.heapify(minHeap)
         ____:

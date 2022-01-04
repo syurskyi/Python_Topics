@@ -14,28 +14,28 @@ c_ NestedInteger(object):
         If value is not specified, initializes an empty list.
         Otherwise initializes a single integer equal to value.
         """
-        pass
+        p..
 
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
         :rtype bool
         """
-        pass
+        p..
 
     ___ add(self, elem):
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
-        pass
+        p..
 
     ___ setInteger(self, value):
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
         """
-        pass
+        p..
 
     ___ getInteger
         """
@@ -43,7 +43,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a nested list
         :rtype int
         """
-        pass
+        p..
 
     ___ getList
         """
@@ -51,7 +51,7 @@ c_ NestedInteger(object):
         Return None if this NestedInteger holds a single integer
         :rtype List[NestedInteger]
         """
-        pass
+        p..
 
 c_ Solution(object):
     ___ deserialize(self, s):
@@ -73,13 +73,13 @@ c_ Solution(object):
                     i+=1
                     prev = i+1
                 ____ s[i] __ ',':
-                    nestedInt.add(int(s[prev:i]))
+                    nestedInt.add(i..(s[prev:i]))
                     prev = i+1
                 i+=1
             r.. nestedInt
         ____:
             nestedInt = NestedInteger()
             __ s:
-                nestedInt.setInteger(int(s))
+                nestedInt.setInteger(i..(s))
             r.. nestedInt
 

@@ -1,14 +1,14 @@
 _______ d__
 
 
-___ print_header():
+___ print_header
     print('---------------------------')
     print('      BIRTHDAY APP')
     print('---------------------------')
     print()
 
 
-___ get_birthday_from_user():
+___ get_birthday_from_user
     print("When were you born? ")
     year  i..(input("Year [YYYY]: "))
     month  i..(input("Month [MM]: "))
@@ -34,7 +34,7 @@ ___ print_birthday_information(days):
         print("Happy birthday!!!")
 
 
-___ main():
+___ main
     print_header()
     bday  get_birthday_from_user()
     today  d__.date.today()

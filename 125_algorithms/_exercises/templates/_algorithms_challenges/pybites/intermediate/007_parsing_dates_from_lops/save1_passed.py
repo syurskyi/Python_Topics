@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
     logfile
 )
 
-with open(logfile) as f:
+with open(logfile) __ f:
     loglines = f.readlines()
 
 ___ convert_to_datetime(line):

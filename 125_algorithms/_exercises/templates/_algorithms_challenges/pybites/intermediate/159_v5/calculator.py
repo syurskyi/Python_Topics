@@ -7,7 +7,7 @@ ___ simple_calculator(calculation):
     funcs = {'+': add, '-': sub, '*': mul, '/': truediv}
     try:
         a, op, b = calculation.s..
-        a, b = int(a), int(b)
+        a, b = i..(a), i..(b)
         r.. funcs[op](a, b)
     except Exception:
         raise ValueError

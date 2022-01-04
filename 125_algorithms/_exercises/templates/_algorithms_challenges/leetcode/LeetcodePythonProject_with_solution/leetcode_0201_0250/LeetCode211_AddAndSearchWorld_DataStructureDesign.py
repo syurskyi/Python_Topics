@@ -35,7 +35,7 @@ c_ WordDictionary(object):
                 r.. T..
             r.. searchDFS(children[c].children, word, startInd+1)
         ____ c __ '.':
-            ___ key, node __ children.iteritems():
+            ___ key, node __ children.iteritems
                 __ startInd __ l..(word)-1 a.. node.isLeaf:
                     r.. T..
                 __ searchDFS(children[key].children, word, startInd+1):

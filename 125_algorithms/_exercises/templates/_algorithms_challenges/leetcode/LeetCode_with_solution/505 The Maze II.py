@@ -10,7 +10,7 @@ dirs = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
 c_ Solution:
-    ___ shortestDistance(self, maze: List[List[int]], start: List[int], destination: List[int]) -> int:
+    ___ shortestDistance(self, maze: List[List[i..]], start: List[i..], destination: List[i..]) __ i..:
         """
         No friction rolling ball
 

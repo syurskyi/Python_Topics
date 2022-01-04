@@ -1,7 +1,7 @@
 #   Created by Elshad Karimov 
 #   Copyright © 2020 AppMillers. All rights reserved.
 
-_____ QueueLinkedList as queue
+_____ QueueLinkedList __ queue
 
 c_ TreeNode:
     ___  -   data

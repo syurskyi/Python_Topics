@@ -1,4 +1,4 @@
-___ convert(number: int, base: int = 2) -> s..:
+___ convert(number: i.., base: i.. = 2) __ s..:
     """Converts an integer into any base between 2 and 36 inclusive
 
     Args:
@@ -11,10 +11,10 @@ ___ convert(number: int, base: int = 2) -> s..:
     Returns:
         str: The returned value as a string
     """
-    __ (1 < base < 37) a.. (isi..(number, int)):
+    __ (1 < base < 37) a.. (isi..(number, i..)):
         base_num = ""
         w.... number>0:
-            dig = int(number%base)
+            dig = i..(number%base)
             __ dig<10:
                 base_num += s..(dig)
             ____:
@@ -23,7 +23,7 @@ ___ convert(number: int, base: int = 2) -> s..:
 
         base_num = base_num[::-1]  #To reverse the string
         r.. base_num
-    ____ n.. (isi..(number, int)):
+    ____ n.. (isi..(number, i..)):
         raise TypeError
     ____:
         raise ValueError

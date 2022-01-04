@@ -6,11 +6,11 @@ ___ password_complexity(password: s..):
        return: score int"""
     up = lo = num = spec = 0
     ___ l __ password:
-        __ l.isupper():
+        __ l.isupper
             up += 1
         ____ l.isl..
             lo += 1
-        ____ l.isdigit():
+        ____ l.isdigit
             num += 1
         ____:
             spec += 1

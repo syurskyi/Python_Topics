@@ -1,9 +1,9 @@
-_______ pandas as pd
+_______ pandas __ pd
 
 
 ___ series_simple_math(
-    ser: pd.Series, function: s.., number: int
-) -> pd.core.series.Series:
+    ser: pd.Series, function: s.., number: i..
+) __ pd.core.series.Series:
     """Write some simple math helper functions for series.
     Take the given series, perfrom the required operation and
         return the new series.
@@ -41,7 +41,7 @@ ___ series_simple_math(
 
 ___ complex_series_maths(
     ser_01: pd.Series, ser_02: pd.Series, function: s..
-) -> pd.core.series.Series:
+) __ pd.core.series.Series:
     """Write some math helper functions for series.
     Take the two given series, perfrom the required operation and
         return the new series.
@@ -87,7 +87,7 @@ ___ complex_series_maths(
     r.. func(ser_02)
 
 
-___ create_series_mask(ser: pd.Series, mask: l..) -> pd.core.series.Series:
+___ create_series_mask(ser: pd.Series, mask: l..) __ pd.core.series.Series:
     """Write a trivial function to create a pandas series mask of a list
     of letters.
     Be careful, although this sounds very similar to the .mask() method,
@@ -131,7 +131,7 @@ ___ create_series_mask(ser: pd.Series, mask: l..) -> pd.core.series.Series:
 
 
 ___ custom_series_function(ser: pd.Series,
-                           within: int) -> pd.core.series.Series:
+                           within: i..) __ pd.core.series.Series:
     """A more challenging mask to apply.
     When passed a series of floats, return all values
         within the given rage of:

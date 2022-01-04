@@ -6,7 +6,7 @@ ___ play_pass(s, n):
         ____ c __ r..(97,123):
             res += chr((((c-97) + n) % 26) + 97)
         ____ c __ r..(48,58):
-            res += s.. (abs(9 - int(chr(c))))
+            res += s.. (abs(9 - i..(chr(c))))
         ____:
             res += s..(chr(c))
     res = ''.j..([res[i].u.. __ i % 2 __ 0 ____ res[i].l.. ___ i __ r..(l..(res))])

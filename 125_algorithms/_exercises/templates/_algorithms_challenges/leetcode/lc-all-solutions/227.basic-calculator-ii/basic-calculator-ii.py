@@ -19,7 +19,7 @@ c_ Solution(object):
         start = i
         w.... i < l..(s) a.. s[i] n.. __ "+-*/ ":
           i += 1
-        num = int(s[start:i])
+        num = i..(s[start:i])
         queue.a..(num)
         w.... l..(queue) > 2 a.. queue[-2] __ "*/":
           b = queue.pop()
@@ -28,7 +28,7 @@ c_ Solution(object):
           __ ops __ "*":
             queue.a..(a * b)
           ____ ops __ "/":
-            queue.a..(int(float(a) / b))
+            queue.a..(i..(float(a) / b))
           ____:
             r.. "invalid"
     __ queue:

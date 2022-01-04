@@ -40,6 +40,6 @@ c_ Solution(object):
         start = i
         w.... i < l..(s) a.. s[i] n.. __ "-+() ":
           i += 1
-        num = int(s[start:i])
+        num = i..(s[start:i])
         stack.a..(num)
     r.. stack[0]

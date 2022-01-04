@@ -31,7 +31,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ arrayNesting(self, nums: List[int]) -> int:
+    ___ arrayNesting(self, nums: List[i..]) __ i..:
         """
         You can think of it as graph. If circle, then you can start with any
         node

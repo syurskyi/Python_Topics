@@ -6,7 +6,7 @@ ____ dc _______ Bite
 
 
 @pytest.fixture()
-___ bites():
+___ bites
     b1 = Bite(number=1, title="sum of numbers")
     b2 = Bite(number=2, title="a second bite", level="Intermediate")
     b3 = Bite(number=3, title="a hard bite", level="Advanced")
@@ -14,8 +14,8 @@ ___ bites():
     r.. bites
 
 
-___ test_type_annotations():
-    ... Bite.__annotations__ __ {'number': int, 'title': s.., 'level': s..}
+___ test_type_annotations
+    ... Bite.__annotations__ __ {'number': i.., 'title': s.., 'level': s..}
 
 
 ___ test_getting_str_for_free(bites):

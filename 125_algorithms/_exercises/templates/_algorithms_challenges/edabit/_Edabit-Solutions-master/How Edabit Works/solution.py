@@ -1,2 +1,2 @@
-___ hello():
+___ hello
     r.. "hello edabit.com"

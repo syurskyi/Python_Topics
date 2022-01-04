@@ -4,11 +4,11 @@ ____ fibonacci _______ fib
 
 
 
-___ test_fib_1():
+___ test_fib_1
 
     ... fib(1) __ 1
 
 
 
-___ test_fib_5():
+___ test_fib_5
     ... fib(5) __ 5

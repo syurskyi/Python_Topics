@@ -1,11 +1,11 @@
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     K,Q = l..(map(s..,input().s..()))
     # k and q consist of the character which K[0] and Q[0] holds respectively
     k = K[0]
     q = Q[0]
     # kp and qp are the position where the king and queen are located
-    kp = int(K[1])
-    qp = int(Q[1])
+    kp = i..(K[1])
+    qp = i..(Q[1])
     
     #first condition check if the character of kind and queen are the same
     __ k __ q:

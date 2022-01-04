@@ -46,12 +46,12 @@ EXTRA_CHAR = ["—", "\n", "  "]
 
 
 @pytest.fixture
-___ getty():
+___ getty
     r.. Corpora(GETTYSBURG)
 
 
 @pytest.fixture
-___ beer_tax():
+___ beer_tax
     r.. Corpora(TAX_SYSTEM_IN_US)
 
 

@@ -21,7 +21,7 @@ ___ simple_calculator(calculation):
 
         try:
             float(x)
-            int(x)
+            i..(x)
         except:
             r.. F..
         ____:

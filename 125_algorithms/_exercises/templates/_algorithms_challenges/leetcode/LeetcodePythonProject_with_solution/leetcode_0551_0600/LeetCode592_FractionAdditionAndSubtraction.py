@@ -10,7 +10,7 @@ c_ Solution(object):
         :rtype: str
         """
         _______ __
-        ints = map(int, __.findall('[+-]?\d+', expression))
+        ints = map(i.., __.f..('[+-]?\d+', expression))
         A, B = 0, 1
         ___ a __ ints:
             b = next(ints)

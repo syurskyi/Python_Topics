@@ -8,7 +8,7 @@ url = "https://bites-data.s3.us-east-2.amazonaws.com/" "best-programming-books.h
 tmp = Path("/tmp")
 html_file = tmp / "books.html"
 
-__ n.. html_file.exists():
+__ n.. html_file.exists
     urlretrieve(url, html_file)
 
 
@@ -25,8 +25,8 @@ c_ Book:
 
     title: s..
     author: s..
-    year: int
-    rank: int
+    year: i..
+    rank: i..
     rating: float
 
     ___ _rating
@@ -60,7 +60,7 @@ ___ display_books(books, limit=10, year_ N..
             limit -= 1
 
 
-___ load_data():
+___ load_data
     """Loads the data from the html file
 
     Creates the soup object and processes it to extract the information
@@ -86,8 +86,8 @@ ___ load_data():
             date_span = book.select("span.date")
             __ l..(date_span) __ 0:
                 continue
-            year = int(date_span[0].text[-4:])
-            rank = int(book.select("div.rank > span")[0].text)
+            year = i..(date_span[0].text[-4:])
+            rank = i..(book.select("div.rank > span")[0].text)
             rating = float(book.select("span.our-rating")[0].text)
         except AttributeError:
             continue
@@ -106,7 +106,7 @@ ___ load_data():
     r.. res
 
 
-___ main():
+___ main
     books = load_data()
     display_books(books, limit=5, year=2017)
     """If done correctly, the previous function call should display the

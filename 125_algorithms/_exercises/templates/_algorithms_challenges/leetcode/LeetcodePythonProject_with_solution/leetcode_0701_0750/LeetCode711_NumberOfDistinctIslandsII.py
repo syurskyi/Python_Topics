@@ -163,7 +163,7 @@ c_ Solution(object):
         ]
         ___ grid __ testCases:
             print('grid:')
-            grid = [[int(c) ___ c __ row] ___ row __ grid]
+            grid = [[i..(c) ___ c __ row] ___ row __ grid]
             print('\n'.j..([s..(row) ___ row __ grid]))
             result = numDistinctIslands2(grid)
             print('result: %s' % result)

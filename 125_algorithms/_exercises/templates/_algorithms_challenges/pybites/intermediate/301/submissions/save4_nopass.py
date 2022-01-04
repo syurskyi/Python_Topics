@@ -8,15 +8,15 @@ URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
-__ n.. RATES_FILE.exists():
+__ n.. RATES_FILE.exists
     urlretrieve(URL, RATES_FILE)
 
 
-___ get_all_days(start_date: date, end_date: date) -> List[date]:
+___ get_all_days(start_date: date, end_date: date) __ List[date]:
     delta = end_date - start_date
     r.. [start_date+t..(days=x) ___ x __ r..(delta.days+1)]
 
-___ _parse_date(date_string: s..) -> date:
+___ _parse_date(date_string: s..) __ date:
     y,m,d = date_string.s.. 
     r.. date(days=d,  m.._m, year=y)
 
@@ -37,7 +37,7 @@ ___ _parse_date(date_string: s..) -> date:
     }
 }"""
 
-___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, date]:
+___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
     
     r_start = _parse_date(daily_rates['start_at'])
     r_end = _parse_date(daily_rates['end_at'])
@@ -50,5 +50,5 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) -> Dict[date, da
 
 ___ exchange_rates(
     start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
-) -> Dict[date, d..]:
-    pass
+) __ Dict[date, d..]:
+    p..

@@ -20,7 +20,7 @@ c_ Solution:
 
         is_prime = [T.. ___ _ __ xrange(n)]
         is_prime[0], is_prime[1] = F.., F..
-        ___ i __ xrange(2, int(math.sqrt(n))+1):
+        ___ i __ xrange(2, i..(math.sqrt(n))+1):
             __ is_prime[i]:
                 ___ j __ xrange(i*i, n, i):
                     is_prime[j] = F..

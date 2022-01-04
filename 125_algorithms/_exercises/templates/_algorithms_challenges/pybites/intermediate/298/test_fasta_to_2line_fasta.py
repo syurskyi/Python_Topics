@@ -3,7 +3,7 @@ ____ fasta_to_2line_fasta _______ fasta_to_2line_fasta, FASTA_FILE
 EXPECTED_RECORDS = 59
 
 
-___ test_well_formed_fasta():
+___ test_well_formed_fasta
     """
     Test if output is correct with well-formed input.
     """
@@ -11,14 +11,14 @@ ___ test_well_formed_fasta():
     CONVERTED_FASTA = f"{FASTA_FILE}-test.fasta"
 
     ... fasta_to_2line_fasta(FASTA_FILE, CONVERTED_FASTA) __ EXPECTED_RECORDS
-    with open(FASTA_FILE, "r") as f:
+    with open(FASTA_FILE, "r") __ f:
         f.readline()
         ... (
             f.readline().s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
         )
 
-    with open(CONVERTED_FASTA, "r") as f_conv:
+    with open(CONVERTED_FASTA, "r") __ f_conv:
         f_conv.readline()
         ... (
             f_conv.readline().s..
@@ -30,21 +30,21 @@ ___ test_well_formed_fasta():
         )
 
 
-___ test_malformed_fasta():
+___ test_malformed_fasta
     """
     Test if output is correct with mal-formed input.
     """
     MALFORMED_FASTA = f"{FASTA_FILE}.malformed.fasta"
     CONVERTED_FASTA = f"{FASTA_FILE}.malformed-test.fasta"
 
-    with open(FASTA_FILE, "r") as f_in, open(MALFORMED_FASTA, "w") as f_out:
+    with open(FASTA_FILE, "r") __ f_in, open(MALFORMED_FASTA, "w") __ f_out:
         f_out.write(f_in.read()[1:])
 
     ... (
         fasta_to_2line_fasta(MALFORMED_FASTA, CONVERTED_FASTA) __ EXPECTED_RECORDS - 1
     )
 
-    with open(CONVERTED_FASTA, "r") as f_conv:
+    with open(CONVERTED_FASTA, "r") __ f_conv:
         ... (
             f_conv.readline().s..
             __ ">sp|Q74NT6|ARSC1_BACC1 Arsenate reductase 1 OS=Bacillus cereu"

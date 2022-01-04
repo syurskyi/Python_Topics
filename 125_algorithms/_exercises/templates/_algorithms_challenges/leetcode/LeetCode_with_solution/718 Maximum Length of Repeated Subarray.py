@@ -19,7 +19,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ findLength(self, A: List[int], B: List[int]) -> int:
+    ___ findLength(self, A: List[i..], B: List[i..]) __ i..:
         """
         similar to longest substring
         Brute force O(mn)
@@ -30,7 +30,7 @@ c_ Solution:
         F[i][j] = F[i-1][j-1] + 1 if A[i-1] == B[i-1] else 0
         """
         m, n = l..(A), l..(B)
-        F = defaultdict(l....: defaultdict(int))
+        F = defaultdict(l....: defaultdict(i..))
         ___ i __ r..(1, m+1):
             ___ j __ r..(1, n+1):
                 __ A[i-1] __ B[j-1]:

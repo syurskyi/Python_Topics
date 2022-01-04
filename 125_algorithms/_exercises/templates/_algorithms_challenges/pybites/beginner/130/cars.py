@@ -1,5 +1,5 @@
 ____ collections _______ Counter
-_______ pandas as pd
+_______ pandas __ pd
 
 _______ requests
 

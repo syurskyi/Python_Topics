@@ -1,6 +1,6 @@
-___ board():
-    pass
+___ board
+    p..
 
 
-___ can_attack():
-    pass
+___ can_attack
+    p..

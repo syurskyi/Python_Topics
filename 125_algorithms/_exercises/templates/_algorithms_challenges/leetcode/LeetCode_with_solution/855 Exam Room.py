@@ -39,7 +39,7 @@ _______ bisect
 
 
 c_ ExamRoom:
-    ___ - , N: int):
+    ___ - , N: i..):
         """
         Maintain a sorted array of index. BST
         BST -> bisect sort
@@ -48,7 +48,7 @@ c_ ExamRoom:
         N = N
         idxes    # list  # sorted arry of taken idx
 
-    ___ seat(self) -> int:
+    ___ seat(self) __ i..:
         """
         similar to 849
         """
@@ -77,7 +77,7 @@ c_ ExamRoom:
         bisect.insort(idxes, ret_idx)
         r.. ret_idx
 
-    ___ leave(self, p: int) -> N..
+    ___ leave(self, p: i..) __ N..
         idxes.remove(p)
 
 

@@ -3,15 +3,15 @@ ____ urllib.request _______ urlretrieve
 _______ os
 ____ pathlib _______ Path
 
-_______ gender_guesser.detector as gender
-____ bs4 _______ BeautifulSoup as Soup
+_______ gender_guesser.detector __ gender
+____ bs4 _______ BeautifulSoup __ Soup
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 PYCON_HTML = TMP / "pycon2019.html"
 PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
-__ n.. PYCON_HTML.exists():
+__ n.. PYCON_HTML.exists
     urlretrieve(PYCON_PAGE, PYCON_HTML)
 
 

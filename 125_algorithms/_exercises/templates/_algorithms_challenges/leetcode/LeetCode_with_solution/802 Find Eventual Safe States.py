@@ -33,13 +33,13 @@ ____ typing _______ List, Set
 
 
 c_ Solution:
-    ___ eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
+    ___ eventualSafeNodes(self, graph: List[List[i..]]) __ List[i..]:
         """
         detect cycle in the node
         prune by nodes with no cycle
         """
-        visit: List[int] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
-        acyclic: Set[int] = set()
+        visit: List[i..] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
+        acyclic: Set[i..] = set()
         ___ u __ r..(l..(graph)):
             __ visit[u] __ 0:
                 dfs(graph, u, visit, acyclic)

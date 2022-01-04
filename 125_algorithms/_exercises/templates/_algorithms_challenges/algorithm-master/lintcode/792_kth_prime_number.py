@@ -10,7 +10,7 @@ c_ Solution:
         is_prime = [T..] * n
         is_prime[0] = is_prime[1] = F..
 
-        ___ i __ r..(2, int(n ** 0.5) + 1):
+        ___ i __ r..(2, i..(n ** 0.5) + 1):
             __ n.. is_prime[i]:
                 continue
             ___ j __ r..(i * i, n, i):

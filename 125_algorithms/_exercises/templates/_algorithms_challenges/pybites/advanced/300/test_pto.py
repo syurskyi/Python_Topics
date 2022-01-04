@@ -23,16 +23,16 @@ ___ test_four_day_weekends_workdays(capfd):
     ... output[-1] __ "2020-12-31"
 
 
-___ test_four_day_weekends_invalid_call():
-    with pytest.raises(ValueError) as e:
+___ test_four_day_weekends_invalid_call
+    with pytest.raises(ValueError) __ e:
         four_day_weekends(T..)
     ... s..(e.value) __ pto.ERROR_MSG
 
 
-___ test_four_day_weekends_invalid_call_custom_error_message():
+___ test_four_day_weekends_invalid_call_custom_error_message
     new_msg = "You're calling it wrong dude!"
     pto.ERROR_MSG = new_msg
-    with pytest.raises(ValueError) as e:
+    with pytest.raises(ValueError) __ e:
         four_day_weekends(T..)
     ... s..(e.value) __ new_msg
 

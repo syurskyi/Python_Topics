@@ -1,2 +1,2 @@
-___ hexa():
-    pass
+___ hexa
+    p..

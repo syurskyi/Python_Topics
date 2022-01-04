@@ -5,7 +5,7 @@ ____ dataclasses _______ dataclass
 @dataclass(order=T..)
 c_ Bite:
 
-    number: int
+    number: i..
     title: s..
     level: s..
 

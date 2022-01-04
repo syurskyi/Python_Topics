@@ -44,11 +44,11 @@ ___ remove_file(file_name):
     try:
         os.remove(file_name)
     except OSError:
-        pass
+        p..
 
 
 ___ create_file(name, contents):
-    with open(name, 'w') as f:
+    with open(name, 'w') __ f:
         f.write(contents)
 
 

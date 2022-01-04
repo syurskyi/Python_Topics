@@ -4,9 +4,9 @@ ___ multicast_mac_to_ip(mac_address):
 
     mac_bytes = mac_address.s..(":")
     ip_mask = 0xe0000000
-    ip_mask |= int(mac_bytes[3], 16) << 16
-    ip_mask |= int(mac_bytes[4], 16) << 8
-    ip_mask |= int(mac_bytes[5], 16)
+    ip_mask |= i..(mac_bytes[3], 16) << 16
+    ip_mask |= i..(mac_bytes[4], 16) << 8
+    ip_mask |= i..(mac_bytes[5], 16)
     result = l..()
 
     ___ i __ r..(0,31):

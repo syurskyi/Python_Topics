@@ -30,11 +30,11 @@ c_ Solution:
         """
         __ n.. (
             time a.. l..(time) __ 5 a.. time[2] __ ':' a..
-            0 <= int(time[:2]) < 24 a.. 0 <= int(time[3:]) < 60
+            0 <= i..(time[:2]) < 24 a.. 0 <= i..(time[3:]) < 60
         ):
             r.. ''
 
-        times = [int(t) ___ t __ time __ t != ':']
+        times = [i..(t) ___ t __ time __ t != ':']
         d..    # list
 
         ___ a __ s..(times):

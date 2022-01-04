@@ -20,11 +20,11 @@ Movie = n..('Movie', 'title year score')
 
 # field conversion
 fields = ['movie_title', 'title_year', 'imdb_score']
-conv = [s.., int, float]
+conv = [s.., i.., float]
 NAME = 'director_name'
 
 
-___ get_movies_by_director():
+___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
@@ -33,7 +33,7 @@ ___ get_movies_by_director():
 
     ___ row __ reader:
         __ row['title_year']:
-            __ int(row['title_year'].strip()) < 1960:
+            __ i..(row['title_year'].strip()) < 1960:
                 continue
         ____:
             continue

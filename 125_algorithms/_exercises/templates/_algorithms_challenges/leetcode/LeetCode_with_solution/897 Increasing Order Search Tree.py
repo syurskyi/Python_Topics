@@ -54,7 +54,7 @@ c_ Solution:
         prev = N..
         root = N..
 
-    ___ increasingBST(self, root: TreeNode) -> TreeNode:
+    ___ increasingBST(self, root: TreeNode) __ TreeNode:
         """
         keep a previous index
         in-order is easy

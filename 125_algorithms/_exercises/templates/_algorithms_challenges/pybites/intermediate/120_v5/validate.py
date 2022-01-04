@@ -5,7 +5,7 @@ ___ int_args(func):
     @wraps(func)
     ___ wrapper(*args, **kwargs):
         ___ a __ args:
-            __ n.. isi..(a, int):
+            __ n.. isi..(a, i..):
                 raise TypeError()
             __ a < 0:
                 raise ValueError()

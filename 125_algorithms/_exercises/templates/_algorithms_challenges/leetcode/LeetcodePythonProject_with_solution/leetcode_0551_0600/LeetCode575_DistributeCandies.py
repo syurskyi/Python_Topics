@@ -9,7 +9,7 @@ c_ Solution(object):
         :type candies: List[int]
         :rtype: int
         """
-        n = int(l..(candies)/2)
+        n = i..(l..(candies)/2)
         candies = set(candies)
         r.. m..(n, l..(candies))
     

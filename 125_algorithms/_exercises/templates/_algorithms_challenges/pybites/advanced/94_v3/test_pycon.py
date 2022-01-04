@@ -10,7 +10,7 @@ ____ pycon _______ (load_pycon_data,
 
 
 @pytest.fixture(scope='module')
-___ videos():
+___ videos
     r.. load_pycon_data()
 
 

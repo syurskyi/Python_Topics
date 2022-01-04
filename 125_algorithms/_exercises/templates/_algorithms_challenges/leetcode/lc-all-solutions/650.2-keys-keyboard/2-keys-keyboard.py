@@ -15,7 +15,7 @@ c_ Solution(object):
     """
     __ n __ 1:
       r.. 0
-    ___ i __ r..(2, int((n + 1) ** 0.5) + 1):
+    ___ i __ r..(2, i..((n + 1) ** 0.5) + 1):
       __ n % i __ 0:
         r.. i + minSteps(n / i)
     r.. n

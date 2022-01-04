@@ -37,7 +37,7 @@ The characters of name and typed are lowercase letters.
 
 
 c_ Solution:
-    ___ isLongPressedName(self, name: s.., typed: s..) -> bool:
+    ___ isLongPressedName(self, name: s.., typed: s..) __ bool:
         """
         two pointers
         """

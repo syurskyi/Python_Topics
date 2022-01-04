@@ -6,7 +6,7 @@ c_ CustomSet(object):
         r.. n.. elements
 
     ___ __iter__
-        r.. iter(elements)
+        r.. i..(elements)
 
     ___ __contains__(self, element):
         r.. element __ elements

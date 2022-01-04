@@ -6,7 +6,7 @@ ____ spelling _______ suggest_word, load_words
 
 
 @pytest.fixture(scope='module')
-___ a_words():
+___ a_words
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words = load_words()
     r.. {word ___ word __ words

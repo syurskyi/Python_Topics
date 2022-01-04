@@ -56,7 +56,7 @@ c_ Solution(object):
         """
         __ n.. s o. k __ 0: r.. s
 
-        d = defaultdict(int)
+        d = defaultdict(i..)
         ___ c __ s:
             d[c] += 1
 

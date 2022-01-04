@@ -2,10 +2,10 @@
 #  Score: 40
 
 
-t = int(input())
+t = i..(input())
 ___ test __ r..(t):
-    n = int(input())
-    arr = l..(map(int, input().s..()))
+    n = i..(input())
+    arr = l..(map(i.., input().s..()))
     count = 0
 
     ___ i __ r..(2):

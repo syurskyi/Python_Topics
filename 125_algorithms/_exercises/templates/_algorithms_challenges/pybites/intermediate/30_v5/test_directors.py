@@ -5,26 +5,26 @@ ____ directors _______ (get_movies_by_director, get_average_scores,
 director_movies = get_movies_by_director()
 
 
-___ test_get_movies_by_director():
+___ test_get_movies_by_director
     ... 'Sergio Leone' __ director_movies
     ... l..(director_movies['Sergio Leone']) __ 4
     ... l..(director_movies['Peter Jackson']) __ 12
 
 
-___ test_director_movies_data_structure():
+___ test_director_movies_data_structure
     ... t..(director_movies) __ (d.., defaultdict)
     ... t..(director_movies['Peter Jackson']) __ l..
     ... t..(director_movies['Peter Jackson'][0]) __ Movie
 
 
-___ test_calc_mean_score():
+___ test_calc_mean_score
     movies_sergio = director_movies['Sergio Leone']
     movies_nolan = director_movies['Christopher Nolan']
     ... calc_mean_score(movies_sergio) __ 8.5
     ... calc_mean_score(movies_nolan) __ 8.4
 
 
-___ test_get_average_scores():
+___ test_get_average_scores
     # top 2
     scores = get_average_scores(director_movies)
 

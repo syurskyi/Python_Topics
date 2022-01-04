@@ -1,4 +1,4 @@
-amount_values = int(input())
+amount_values = i..(input())
 results    # list
 
 ___ get_min(values):
@@ -10,7 +10,7 @@ ___ get_min(values):
     r.. m..
 
 ___ i __ r..(amount_values):
-    values = l..(map(int, input().s..()))
+    values = l..(map(i.., input().s..()))
     results.a..(get_min(values))
 
 print(*results)

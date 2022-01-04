@@ -3,4 +3,4 @@
 
 
 a = set(input().s..())
-print(a..(a > set(input().s..()) ___ _ __ r..(int(input()))))
+print(a..(a > set(input().s..()) ___ _ __ r..(i..(input()))))

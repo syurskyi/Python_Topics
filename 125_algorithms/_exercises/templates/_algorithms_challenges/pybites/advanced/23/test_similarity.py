@@ -1,7 +1,7 @@
 ____ similarity _______ get_similarities
 
 
-___ test_get_similarities():
+___ test_get_similarities
     # cast to list in case of generator
     similar_tags = l..(get_similarities())
 

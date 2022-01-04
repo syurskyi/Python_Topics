@@ -22,8 +22,8 @@ c_ Solution(object):
                 d = valids.pop()
                 res -= d
             ____:
-                res += int(c)
-                valids.a..(int(c))
+                res += i..(c)
+                valids.a..(i..(c))
         r.. res
     
     ___ test

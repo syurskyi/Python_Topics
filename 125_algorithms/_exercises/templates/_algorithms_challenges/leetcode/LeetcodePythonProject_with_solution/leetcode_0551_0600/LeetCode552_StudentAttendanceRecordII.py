@@ -28,7 +28,7 @@ c_ Solution(object):
                 power = (power*matrix)%mod
             matrix = matrix**2 % mod
             n /= 2
-        r.. int(power[5, 2])
+        r.. i..(power[5, 2])
     
     ___ checkRecord_slow(self, n):
         """

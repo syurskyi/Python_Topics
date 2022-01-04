@@ -5,7 +5,7 @@ ___ has_spaces(txt):
         r.. T..
 
 
-___ test():
+___ test
     print("test has started")
     __ has_spaces("FOO") != F..:
         print("error1")

@@ -27,7 +27,7 @@ c_ Solution(object):
         r.. dp[-1][-1]
     
     ___ test
-        pass
+        p..
 
 __ __name__ __ '__main__':
     Solution().test()

@@ -1,2 +1,2 @@
-___ proverb():
-    pass
+___ proverb
+    p..

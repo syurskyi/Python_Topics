@@ -22,7 +22,7 @@ c_ Solution(object):
 
     ___ dfs(root, graph, visited):
       visited[root] = 1
-      ___ nbr __ graph[root].getNbrs():
+      ___ nbr __ graph[root].getNbrs
         __ visited[nbr.val] __ 0:
           __ n.. dfs(nbr.val, graph, visited):
             r.. F..
@@ -35,7 +35,7 @@ c_ Solution(object):
 
     ans = ""
     graph    # dict
-    visited = collections.defaultdict(int)
+    visited = collections.defaultdict(i..)
     topNum = 0
     ___ i __ r..(0, l..(words) - 1):
       a = words[i]

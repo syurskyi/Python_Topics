@@ -53,10 +53,10 @@ c_ MerkleHash:
 
 c_ Solution:
     ___ - ):
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         merkle_hash = MerkleHash()
 
-    ___ findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
+    ___ findDuplicateSubtrees(self, root: TreeNode) __ List[TreeNode]:
         """
         Merkle hash based on current val, and left substree merkle and right merkle
         Assign each subtree a identity/hash
@@ -66,7 +66,7 @@ c_ Solution:
         walk(root, ret)
         r.. ret
 
-    ___ walk(self, cur, ret) -> int:
+    ___ walk(self, cur, ret) __ i..:
         """
         return merkle hash id
         """
@@ -83,15 +83,15 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ findDuplicateSubtrees(self, root: TreeNode) -> List[TreeNode]:
+    ___ findDuplicateSubtrees(self, root: TreeNode) __ List[TreeNode]:
         """
         Only need to return the root
         """
         ret    # list
-        walk(root, defaultdict(int), ret)
+        walk(root, defaultdict(i..), ret)
         r.. ret
 
-    ___ walk(self, cur, counter, ret) -> s..:
+    ___ walk(self, cur, counter, ret) __ s..:
         """
         serialize the subtrees and check existence
 

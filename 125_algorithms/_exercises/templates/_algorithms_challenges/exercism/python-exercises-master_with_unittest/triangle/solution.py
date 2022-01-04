@@ -1,12 +1,12 @@
 c_ TriangleError(Exception):
-    pass
+    p..
 
 
 c_ Triangle(object):
     ___ - , x, y, z):
         sides = (x, y, z)
 
-        __ _invalid_lengths() o. _violates_inequality():
+        __ _invalid_lengths() o. _violates_inequality
             raise TriangleError
 
     ___ _invalid_lengths

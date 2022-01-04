@@ -17,6 +17,6 @@ c_ Solution:
             ____ op __ '+':
                 stack.a..(stack[-1] + stack[-2])
             ____:
-                stack.a..(int(op))
+                stack.a..(i..(op))
 
         r.. s..(stack)

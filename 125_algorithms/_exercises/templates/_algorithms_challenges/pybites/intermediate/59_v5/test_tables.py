@@ -4,12 +4,12 @@ ____ tables _______ MultiplicationTable
 
 
 @pytest.fixture
-___ t10():
+___ t10
     r.. MultiplicationTable(10)
 
 
 @pytest.fixture
-___ t3():
+___ t3
     r.. MultiplicationTable(3)
 
 

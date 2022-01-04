@@ -2,7 +2,7 @@ ____ collections _______ n..
 _______ csv
 _______ os
 ____ pathlib _______ Path
-_______ pandas as pd
+_______ pandas __ pd
 _______ sqlite3
 _______ random
 _______ string
@@ -24,8 +24,8 @@ conn = sqlite3.connect(DB)
 cur = conn.cursor()
 
 
-___ import_data():
-    with requests.Session() as session:
+___ import_data
+    with requests.Session() __ session:
         content = session.get(DATA_URL).content.decode('utf-8')
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')
@@ -66,7 +66,7 @@ nba = nba.apply(pd.to_numeric,errors='ignore')
 
 
 
-___ player_with_max_points_per_game():
+___ player_with_max_points_per_game
     """The player with highest average points per game (don't forget to CAST to
        numeric in your SQL query)"""
 
@@ -80,20 +80,20 @@ ___ player_with_max_points_per_game():
 
 
 
-___ number_of_players_from_duke():
+___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
     r.. (nba.college __ 'Duke University').s..()
 
 
-___ avg_years_active_players_stanford():
+___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
 
     r.. nba.loc[nba.college __ 'Stanford University','active'].astype('int').mean()
 
 
-___ year_with_most_drafts():
+___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
 
-    r.. int(nba.groupby('year').size().idxmax())
+    r.. i..(nba.groupby('year').size().idxmax())
 

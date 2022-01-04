@@ -15,16 +15,16 @@ c_ Solution(object):
         m, n = l..(arr1), l..(arr2)
         i, j = 0, 0
         w.... i < m a.. j < n:
-            __ int(arr1[i]) > int(arr2[j]):
+            __ i..(arr1[i]) > i..(arr2[j]):
                 r.. 1
-            ____ int(arr1[i]) < int(arr2[j]):
+            ____ i..(arr1[i]) < i..(arr2[j]):
                 r.. -1
             ____:
                 i += 1
                 j += 1
-        w.... i < m a.. int(arr1[i]) __ 0:
+        w.... i < m a.. i..(arr1[i]) __ 0:
             i += 1
-        w.... j < n a.. int(arr2[j]) __ 0:
+        w.... j < n a.. i..(arr2[j]) __ 0:
             j += 1
         __ i __ m a.. j __ n:
             r.. 0

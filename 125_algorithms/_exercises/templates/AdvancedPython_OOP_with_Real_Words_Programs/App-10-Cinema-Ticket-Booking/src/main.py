@@ -12,7 +12,7 @@ c_ User:
 
     ___ buy   seat, card):
         """Buys the ticket if the card is valid"""
-        __ seat.is_free():
+        __ seat.is_free
             __ card.validate(priceseat.get_price()):
                 seat.occupy()
                 ticket  Ticket(user  self, priceseat.get_price(), seat_numberseat_id)
@@ -58,7 +58,7 @@ c_ Seat:
 
     ___ occupy _
         """Change value of taken in the database from 0 to 1 if Seat is free"""
-        __ is_free():
+        __ is_free
             connection  sqlite3.connect(database)
             connection.execute("""
             UPDATE "Seat" SET "taken"=? WHERE "seat_id"=?

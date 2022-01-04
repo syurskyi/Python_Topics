@@ -31,7 +31,7 @@ ___ tail(filepath, n):
     except:
         print("problem opening file")
     contents    # list
-    ___ line __ fo.readlines():
+    ___ line __ fo.readlines
         contents.a..(line.strip())
     fo.close()
     r.. contents[-n:]

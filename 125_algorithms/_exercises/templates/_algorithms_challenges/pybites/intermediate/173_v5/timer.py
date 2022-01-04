@@ -5,7 +5,7 @@ NOW = d__ y.._2019,  m.._2,  d.._6,
 
 
 ___ add_todo(delay_time: s.., task: s..,
-             start_time: d__ = NOW) -> s..:
+             start_time: d__ = NOW) __ s..:
     """
     Add a todo list item in the future with a delay time.
 
@@ -24,13 +24,13 @@ ___ add_todo(delay_time: s.., task: s..,
     td = start_time
     ___ dl __ delay:
         __ dl[-1] __ 'd':
-            td += t..(days=int(dl[:-1]))
+            td += t..(days=i..(dl[:-1]))
         ____ dl[-1] __ 'h':
-            td += t..(hours=int(dl[:-1]))
+            td += t..(hours=i..(dl[:-1]))
         ____ dl[-1] __ 'm':
-            td += t..(minutes=int(dl[:-1]))
+            td += t..(minutes=i..(dl[:-1]))
         ____ dl[-1] __ 's':
-            td += t..(seconds=int(dl[:-1]))
+            td += t..(seconds=i..(dl[:-1]))
         ____:
-            td += t..(seconds=int(dl))
+            td += t..(seconds=i..(dl))
     r.. f'{task} @ {td.strftime("%Y-%m-%d %H:%M:%S")}'

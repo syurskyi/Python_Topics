@@ -49,7 +49,7 @@ ___ check_bt(donor, recipient):
     r.. n.. l..([n ___ n __ temp __ n < 0 ])
 
 ___ get_int(inpval):
-    __ isi..(inpval, int):
+    __ isi..(inpval, i..):
         __ inpval >= 0 a.. inpval <= 7:
             r.. inpval
         ____:
@@ -63,7 +63,7 @@ ___ get_int(inpval):
         r.. inpval.value
 
 # hint
-___ _particular_antigen_comp(donor: int, recipient: int) -> tuple:
+___ _particular_antigen_comp(donor: i.., recipient: i..) __ tuple:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.

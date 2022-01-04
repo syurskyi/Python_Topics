@@ -1,2 +1,2 @@
 c_ InvalidOperationException(Exception):
-    pass
+    p..

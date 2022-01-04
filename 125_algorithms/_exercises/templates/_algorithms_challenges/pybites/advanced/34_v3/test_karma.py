@@ -13,7 +13,7 @@ transactions = [
 ]
 
 
-___ test_init():
+___ test_init
     ... alice.name __ 'alice'
     ... bob.name __ 'bob'
     ... tim.name __ 'tim'
@@ -22,7 +22,7 @@ ___ test_init():
     ... tim._transactions __ []
 
 
-___ test_adding_karma():
+___ test_adding_karma
     bob + transactions[0]
     ... bob.karma __ 1
     alice + transactions[1]
@@ -35,19 +35,19 @@ ___ test_adding_karma():
     ... tim.karma __ 2
 
 
-___ test_upvotes_property():
+___ test_upvotes_property
     ... bob.points __ [1, 3]
     ... alice.points __ [2, 4]
     ... tim.points __ [2]
 
 
-___ test_fans_property():
+___ test_fans_property
     ... tim.fans __ 1
     ... bob.fans __ 2
     ... alice.fans __ 2
 
 
-___ test_str_dunder():
+___ test_str_dunder
     ... s..(tim) __ 'tim has a karma of 2 and 1 fan'
     ... s..(alice) __ 'alice has a karma of 6 and 2 fans'
     ... s..(bob) __ 'bob has a karma of 4 and 2 fans'

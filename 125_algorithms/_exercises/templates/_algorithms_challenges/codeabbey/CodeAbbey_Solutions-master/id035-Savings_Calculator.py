@@ -3,8 +3,8 @@ ___ savingsCalc(calculations):
     ___ calculation __ r..(calculations):
         # start = Starting money, end = Goal amount, rate = Interest rate
         start, end, rate = raw_input().s..
-        rate = (int(rate) / 100.00) + 1
-        start,end = int(start),int(end)
+        rate = (i..(rate) / 100.00) + 1
+        start,end = i..(start),i..(end)
         year = 0
         
         w.... start < end:

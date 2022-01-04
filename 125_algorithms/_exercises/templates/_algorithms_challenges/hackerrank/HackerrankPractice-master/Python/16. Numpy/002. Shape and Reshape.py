@@ -2,8 +2,8 @@
 # Score: 20
 
 
-_______ numpy as np
+_______ numpy __ np
 
 
-array = np.array(l..(map(int, input().s..())))
+array = np.array(l..(map(i.., input().s..())))
 print(array.reshape(3, 3))

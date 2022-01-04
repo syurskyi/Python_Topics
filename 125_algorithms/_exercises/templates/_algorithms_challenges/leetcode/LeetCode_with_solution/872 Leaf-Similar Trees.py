@@ -26,7 +26,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ leafSimilar(self, root1: TreeNode, root2: TreeNode) -> bool:
+    ___ leafSimilar(self, root1: TreeNode, root2: TreeNode) __ bool:
         """
         brute force, get all the leaf and then compare
         to save space, use generator

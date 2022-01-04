@@ -1,2 +1,2 @@
-___ score():
-    pass
+___ score
+    p..

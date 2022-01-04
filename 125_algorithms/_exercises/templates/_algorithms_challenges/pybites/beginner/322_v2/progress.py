@@ -1,9 +1,9 @@
 ____ d__ _______ d__
-_______ d__ as dt
+_______ d__ __ dt
 
 
-___ ontrack_reading(books_goal: int, books_read: int,
-                    day_of_year: int = N..) -> bool:
+___ ontrack_reading(books_goal: i.., books_read: i..,
+                    day_of_year: i.. = N..) __ bool:
     
 
     __ books_read __ 0:
@@ -11,7 +11,7 @@ ___ ontrack_reading(books_goal: int, books_read: int,
 
 
     __ day_of_year __ N..
-        day_of_year = int(dt.date.today().strftime("%j"))
+        day_of_year = i..(dt.date.today().strftime("%j"))
 
 
 

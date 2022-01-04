@@ -1,6 +1,6 @@
 c_ l..(object):
     ___ - , arg):
-        arg = [c ___ c __ arg __ isi..(c,int)]
+        arg = [c ___ c __ arg __ isi..(c,i..)]
     ___ even
         r.. [n ___ n __ arg __ n % 2 __ 0]
     ___ odd

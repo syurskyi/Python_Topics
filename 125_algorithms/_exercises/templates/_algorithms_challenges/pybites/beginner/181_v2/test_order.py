@@ -6,7 +6,7 @@ ____ order _______ OrderedList
 
 
 @pytest.fixture(scope='module')
-___ order():
+___ order
     r.. OrderedList()
 
 
@@ -24,6 +24,6 @@ ___ test_order(order, num, expected):
     ... s..(order) __ expected
 
 
-___ test_does_not_use_manual_sort():
+___ test_does_not_use_manual_sort
     ... '.sorted' n.. __ i___.getsource(OrderedList)
     ... '.sort(' n.. __ i___.getsource(OrderedList)

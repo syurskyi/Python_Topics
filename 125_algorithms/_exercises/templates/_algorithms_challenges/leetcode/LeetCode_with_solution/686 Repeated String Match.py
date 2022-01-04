@@ -23,7 +23,7 @@ c_ Solution:
 
         r.. -1
 
-    ___ repeatedStringMatch_TLE(self, A: s.., B: s..) -> int:
+    ___ repeatedStringMatch_TLE(self, A: s.., B: s..) __ i..:
         ___ i __ r..(l..(A)):
             j = 0
             count = 0

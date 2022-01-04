@@ -123,7 +123,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ pourWater(self, heights: List[int], V: int, K: int) -> List[int]:
+    ___ pourWater(self, heights: List[i..], V: i.., K: i..) __ List[i..]:
         """
         Simulation?
         O(V * L)

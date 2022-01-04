@@ -15,7 +15,7 @@ ___ i __ x:
                 plus_check = T..
             ____:
                 j += 1
-                pass
+                p..
         ____:
             i.pop(j)
     string = ''.j..(i)

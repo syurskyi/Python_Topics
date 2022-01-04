@@ -10,17 +10,17 @@ c_ HashHeapq:
         heappush(heap, val)
 
     ___ pop
-        __ is_empty():
+        __ is_empty
             r..
         heappop(heap)
 
     ___ remove(self, val):
-        __ is_empty():
+        __ is_empty
             r..
         deleted[val] = deleted.get(val, 0) + 1
 
     ___ top
-        __ is_empty():
+        __ is_empty
             r..
         r.. heap[0]
 

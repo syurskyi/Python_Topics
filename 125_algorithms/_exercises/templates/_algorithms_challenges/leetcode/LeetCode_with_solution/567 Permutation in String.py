@@ -19,11 +19,11 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ checkInclusion(self, s1: s.., s2: s..) -> bool:
+    ___ checkInclusion(self, s1: s.., s2: s..) __ bool:
         """
         counter + two pointers
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         s1_set = set(s1)
         ___ c __ s1:
             counter[c] += 1

@@ -14,7 +14,7 @@ urllib.request.urlretrieve(
 )
 
 
-___ get_all_timestamps():
+___ get_all_timestamps
     """Read in the COURSE_TIMES and extract all MM:SS timestamps.
        Here is a snippet of the input file:
 
@@ -27,7 +27,7 @@ ___ get_all_timestamps():
     """
 
     course_times    # list
-    with open(COURSE_TIMES,'r') as f:
+    with open(COURSE_TIMES,'r') __ f:
         ___ line __ f:
             result = __.s..(r'\((\d+:\d+)\)',line)
             __ result:
@@ -42,8 +42,8 @@ ___ calc_total_course_duration(timestamps):
     time_elapsed = t..()
     ___ timestamp __ timestamps:
         minutes,seconds = timestamp.s..(':')
-        minutes = int(minutes)
-        seconds = int(seconds)
+        minutes = i..(minutes)
+        seconds = i..(seconds)
         time_elapsed += t..(minutes=minutes,seconds=seconds)
 
     r.. s..(time_elapsed)

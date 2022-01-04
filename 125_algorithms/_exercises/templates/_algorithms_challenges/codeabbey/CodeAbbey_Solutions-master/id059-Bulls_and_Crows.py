@@ -1,6 +1,6 @@
 # Python 2.7
 
-___ bulls_and_crows():
+___ bulls_and_crows
     answer    # list
     # Note: numbers_to_compared is wasted to meet the CodeAbbey requirement.
     secret_number, numbers_to_compare = [x ___ x __ raw_input().s.. ]

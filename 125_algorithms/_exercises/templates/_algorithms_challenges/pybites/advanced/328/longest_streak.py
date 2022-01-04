@@ -18,7 +18,7 @@ UTC = gettz("UTC")
 
 ___ longest_streak(
     data_file: Path = DATA_PATH, my_tz: Optional[tzinfo] = MY_TZ
-) -> Optional[Tuple[date, date]]:
+) __ Optional[Tuple[date, date]]:
     """Retrieve datetime strings of passed commits and calculate the longest
     streak from the user's data
 
@@ -36,7 +36,7 @@ ___ longest_streak(
     Return a tuple containing start and end date for the longest streak
     or None
     """
-    with open(data_file) as f:
+    with open(data_file) __ f:
         data = json.load(f)
     # You code from here
     commits = data['commits']

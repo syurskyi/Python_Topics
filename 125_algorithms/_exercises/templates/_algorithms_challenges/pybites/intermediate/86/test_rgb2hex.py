@@ -26,7 +26,7 @@ ___ test_rgb_to_hex(rgb, hex_):
     ... rgb_to_hex(rgb) __ hex_
 
 
-___ test_wrong_values():
+___ test_wrong_values
     with pytest.raises(ValueError):
         rgb_to_hex((-1, 100, 100))
         rgb_to_hex((100, 300, 200))

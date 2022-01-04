@@ -4,7 +4,7 @@ ____ operator _______ add, mul, sub
 __ sys.version_info[0] __ 2:
     ____ operator _______ div
 ____:
-    ____ operator _______ floordiv as div
+    ____ operator _______ floordiv __ div
 
 
 VALID_OPERATIONS = {"plus": add, "minus": sub,
@@ -19,7 +19,7 @@ ___ calculate(stmt):
         raise ValueError("Ill-formed question")
     l.reverse()
     try:
-        op1 = int(l.pop())
+        op1 = i..(l.pop())
     except ValueError:
         raise ValueError("Ill-formed question")
     w.... l:
@@ -27,7 +27,7 @@ ___ calculate(stmt):
         w.... l:
             try:
                 next_tk = l.pop()
-                op2 = int(next_tk)
+                op2 = i..(next_tk)
                 break
             except ValueError:
                 oprt.a..(next_tk)

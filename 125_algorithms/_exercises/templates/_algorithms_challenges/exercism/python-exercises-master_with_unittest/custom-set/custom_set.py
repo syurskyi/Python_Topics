@@ -1,30 +1,30 @@
 c_ CustomSet(object):
     ___ - , elements=[]):
-        pass
+        p..
 
     ___ isempty
-        pass
+        p..
 
     ___ __contains__(self, element):
-        pass
+        p..
 
     ___ issubset(self, other):
-        pass
+        p..
 
     ___ isdisjoint(self, other):
-        pass
+        p..
 
     ___ __eq__(self, other):
-        pass
+        p..
 
     ___ add(self, element):
-        pass
+        p..
 
     ___ intersection(self, other):
-        pass
+        p..
 
     ___ difference(self, other):
-        pass
+        p..
 
     ___ union(self, other):
-        pass
+        p..

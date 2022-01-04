@@ -1,6 +1,6 @@
 ___ c.. ):
-    pass
+    p..
 
 
-___ nucleotide_counts():
-    pass
+___ nucleotide_counts
+    p..

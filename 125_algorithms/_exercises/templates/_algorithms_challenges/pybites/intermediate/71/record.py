@@ -1,4 +1,4 @@
-c_ RecordScore():
+c_ RecordScore
     """Class to track a game's maximum score"""
     ___ - ):
         max = N..

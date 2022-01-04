@@ -10,7 +10,7 @@ ____ count_down _______ count_down
 DEFAULT_EXPECTED_OUTPUT = '1234\n123\n12\n1\n'
 
 
-___ test_code_uses_singledispatch_decorator():
+___ test_code_uses_singledispatch_decorator
     ... '@singledispatch' __ i___.getsource(count_down)
 
 

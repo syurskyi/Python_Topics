@@ -13,7 +13,7 @@ ___ test_equation(puzzle, substitutions):
     __ check_leading_zeros(right, *left_numbers):
         r.. F..
 
-    r.. s..(map(int, left_numbers)) __ int(right)
+    r.. s..(map(i.., left_numbers)) __ i..(right)
 
 
 ___ solve(puzzle):
@@ -24,6 +24,6 @@ ___ solve(puzzle):
         ___ p __ permutations(c):
             substitutions = d..(z..(letters, p))
             __ test_equation(puzzle, substitutions):
-                r.. {k: int(v) ___ k, v __ substitutions.i..}
+                r.. {k: i..(v) ___ k, v __ substitutions.i..}
 
     r.. {}  # no solution found

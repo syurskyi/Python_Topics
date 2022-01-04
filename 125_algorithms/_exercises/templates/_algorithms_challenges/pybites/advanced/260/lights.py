@@ -1,14 +1,14 @@
 ____ typing _______ List
 
-_______ numpy as np
-_______ pandas as pd
+_______ numpy __ np
+_______ pandas __ pd
 
 
 c_ LightsGrid:
 
-    ___ - , grid_size: int, instructions: List[s..]):
+    ___ - , grid_size: i.., instructions: List[s..]):
         grid_size = grid_size
-        grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=int))
+        grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=i..))
         instructions = instructions
 
     ___ process_grid_coordinates(self, s1: s.., s2: s..):
@@ -21,8 +21,8 @@ c_ LightsGrid:
 
         Suggested return are 4 integers representing x1, x2, y1, y2 [hint]"""
 
-        row_1,col_1 = map(int,s1.s..(','))
-        row_2,col_2 = map(int,s2.s..(','))
+        row_1,col_1 = map(i..,s1.s..(','))
+        row_2,col_2 = map(i..,s2.s..(','))
 
 
 
@@ -88,7 +88,7 @@ c_ LightsGrid:
         row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
         grid.iloc[row_start:row_end +1,col_start:col_end +1] = 0
 
-    ___ turn_up(self, amount: int, s1: s.., s2: s..):
+    ___ turn_up(self, amount: i.., s1: s.., s2: s..):
         """The turn_up function takes 3 parameters:
 
         :param amount: The intensity to turn the lights up by
@@ -105,7 +105,7 @@ c_ LightsGrid:
         grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount))
 
 
-    ___ turn_down(self, amount: int, s1: s.., s2: s..):
+    ___ turn_down(self, amount: i.., s1: s.., s2: s..):
         """The turn down function takes 3 parameters:
 
         :param amount: The intensity to turn the lights down by
@@ -169,7 +169,7 @@ c_ LightsGrid:
                     turn_off(s1,s2)
                 ____:
                     s1 = values[3]
-                    amount = int(values[2])
+                    amount = i..(values[2])
                     __ values[1] __ 'up':
                         turn_up(amount,s1,s2)
                     ____:
@@ -245,7 +245,7 @@ __ __name__ __ "__main__":
 
     # The grid size instruction is first
     # Extract it and convert to int
-    grid_size = int(instructions[0].s..(" ")[4])
+    grid_size = i..(instructions[0].s..(" ")[4])
 
     # Create a LightsGrid Class instance
     lights = LightsGrid(grid_size, instructions[1:])

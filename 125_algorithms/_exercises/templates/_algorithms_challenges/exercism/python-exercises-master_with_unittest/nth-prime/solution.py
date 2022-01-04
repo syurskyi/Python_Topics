@@ -26,7 +26,7 @@ ___ nth_prime(n):
     r.. known[n - 1]
 
 
-___ prime_candidates():
+___ prime_candidates
     y.. 2
     y.. 3
     ___ n __ c.. 6, 6):

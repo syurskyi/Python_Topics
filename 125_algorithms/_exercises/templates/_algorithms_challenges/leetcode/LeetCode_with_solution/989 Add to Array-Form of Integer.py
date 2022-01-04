@@ -33,7 +33,7 @@ ____ collections _______ deque
 
 
 c_ Solution:
-    ___ addToArrayForm(self, A: List[int], K: int) -> List[int]:
+    ___ addToArrayForm(self, A: List[i..], K: i..) __ List[i..]:
         """
         carry
         """

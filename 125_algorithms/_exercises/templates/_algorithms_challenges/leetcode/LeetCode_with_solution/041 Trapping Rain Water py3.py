@@ -13,7 +13,7 @@ Output: 6
 """
 
 c_ Solution:
-    ___ trap(self, height: List[int]) -> int:
+    ___ trap(self, height: List[i..]) __ i..:
         """
         At each position, the water is determined by the left and right max
 

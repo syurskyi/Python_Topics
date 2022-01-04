@@ -29,7 +29,7 @@ c_ DateFormat(Enum):
 c_ InfDateFmtError(Exception):
     """custom exception when it is not possible to infer a date format
     e.g. too many NONPARSABLE or a tie """
-    pass
+    p..
 
 
 ___ _maybe_DateFormats(date_str):
@@ -46,7 +46,7 @@ ___ _maybe_DateFormats(date_str):
             _parsed_date = d__.strptime(date_str, d_parse_fmt)  # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx))
         except ValueError:
-            pass
+            p..
     __ l..(maybe_formats) __ 0:
         maybe_formats.a..(DateFormat.NONPARSABLE)
     r.. maybe_formats

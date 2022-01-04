@@ -1,7 +1,7 @@
 ____ typing _______ List
 
 
-___ jagged_list(lst_of_lst: List[List[int]], fillvalue: int = 0) -> List[List[int]]:
+___ jagged_list(lst_of_lst: List[List[i..]], fillvalue: i.. = 0) __ List[List[i..]]:
 
     
     __ n.. lst_of_lst:

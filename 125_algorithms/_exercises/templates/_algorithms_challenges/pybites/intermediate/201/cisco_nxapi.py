@@ -1,7 +1,7 @@
 _______ requests
 
 
-___ nxapi_show_version():
+___ nxapi_show_version
     url = 'https://sbx-nxos-mgmt.cisco.com/ins'
     switchuser = 'admin'
     switchpassword = 'Admin_1234!'

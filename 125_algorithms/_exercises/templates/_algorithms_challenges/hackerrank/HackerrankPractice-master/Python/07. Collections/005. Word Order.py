@@ -6,9 +6,9 @@ ____ collections _______ Counter, OrderedDict
 
 
 c_ OrderedCounter(Counter, OrderedDict):
-    pass
+    p..
 
 
-ordered_counter = OrderedCounter(input() ___ _ __ r..(int(input())))
+ordered_counter = OrderedCounter(input() ___ _ __ r..(i..(input())))
 print(l..(ordered_counter))
 print(*ordered_counter.values())

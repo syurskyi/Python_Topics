@@ -33,7 +33,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxTurbulenceSize(self, A: List[int]) -> int:
+    ___ maxTurbulenceSize(self, A: List[i..]) __ i..:
         """
         scan
         """

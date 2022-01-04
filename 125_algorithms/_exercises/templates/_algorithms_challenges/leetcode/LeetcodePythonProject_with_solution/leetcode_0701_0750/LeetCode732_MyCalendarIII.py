@@ -5,7 +5,7 @@ Created on Mar 6, 2018
 '''
 c_ MyCalendarThree(object):
     # Checkout Java Solution!
-    pass
+    p..
 
 __ __name__ __ '__main__':
-    pass
+    p..

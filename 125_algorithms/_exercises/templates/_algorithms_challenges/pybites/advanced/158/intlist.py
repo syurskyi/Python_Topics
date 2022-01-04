@@ -23,11 +23,11 @@ c_ IntList(l..):
 
     ___ a..(self,values):
 
-        __ isi..(values,int) o. isi..(values,float) o. isi..(values,Decimal):
+        __ isi..(values,i..) o. isi..(values,float) o. isi..(values,Decimal):
             values = float(values)
             super().a..(values)
         ____ isi..(values,l..):
-            __ a..(t..(v) __ (int,float,Decimal) ___ v __ values):
+            __ a..(t..(v) __ (i..,float,Decimal) ___ v __ values):
                 self += values
             ____:
                 raise TypeError
@@ -37,7 +37,7 @@ c_ IntList(l..):
 
     ___ __iadd__(self,value):
         __ isi..(value,l..):
-            __ a..(t..(v) __ (int,float,Decimal) ___ v __ value):
+            __ a..(t..(v) __ (i..,float,Decimal) ___ v __ value):
                 ___ v __ value:
                     a..(v)
                 r.. self
@@ -54,7 +54,7 @@ c_ IntList(l..):
 
     ___ __add__(self,value):
         __ isi..(value,l..):
-            __ a..(t..(v) __ int ___ v __ value):
+            __ a..(t..(v) __ i.. ___ v __ value):
                 r.. super().__add__(value)
             ____:
                 raise TypeError

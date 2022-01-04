@@ -29,11 +29,11 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ numPairsDivisibleBy60(self, time: List[int]) -> int:
+    ___ numPairsDivisibleBy60(self, time: List[i..]) __ i..:
         """
         Running attribution
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ret = 0
         ___ t __ time:
             ret += counter[(60 - t) % 60]  # handle 0
@@ -42,7 +42,7 @@ c_ Solution:
         r.. ret
 
 
-    ___ numPairsDivisibleBy60_error(self, time: List[int]) -> int:
+    ___ numPairsDivisibleBy60_error(self, time: List[i..]) __ i..:
         """
         O(N^2) check i, j
         Reduce it
@@ -50,7 +50,7 @@ c_ Solution:
 
         attribution error
         """
-        hm = defaultdict(int)
+        hm = defaultdict(i..)
         ___ t __ time:
             hm[t % 60] += 1
 

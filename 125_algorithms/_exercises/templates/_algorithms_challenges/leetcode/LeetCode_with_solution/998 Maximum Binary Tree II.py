@@ -46,7 +46,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ insertIntoMaxTree(self, root: TreeNode, val: int) -> TreeNode:
+    ___ insertIntoMaxTree(self, root: TreeNode, val: i..) __ TreeNode:
         """
         Suppose B is a copy of A with the value val appended to it.
         val is ALWAYS on the right

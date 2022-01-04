@@ -4,12 +4,12 @@ ____ account _______ Account
 
 # write your pytest functions below, they need to start with test_
 @pytest.fixture
-___ einstein():
+___ einstein
     r.. Account('Einstein', 100)
 
 
 @pytest.fixture
-___ socrates():
+___ socrates
     r.. Account('Socrates', 0)
 
 
@@ -38,7 +38,7 @@ ___ test_account_transaction(einstein):
 
 ___ test_account_bad_transaction(socrates):
     ... socrates.balance __ 0
-    with pytest.raises(ValueError) as exp:
+    with pytest.raises(ValueError) __ exp:
         socrates.add_transaction(3.14)
     ... 'please use int for amount' __ s..(exp.value)
     ... socrates.balance __ 0

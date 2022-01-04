@@ -5,7 +5,7 @@ _______ urllib.request
 ____ collections _______ n..
 ____ d__ _______ d__
 
-_______ pandas as pd
+_______ pandas __ pd
 
 DATA_FILE = "http://projects.bobbelderbos.com/pcc/weather-ann-arbor.csv"
 STATION = n..("Station", "ID Date Value")
@@ -16,7 +16,7 @@ __ n.. os.path.isfile(LOCAL_FILE):
     urllib.request.urlretrieve(DATA_FILE, LOCAL_FILE)
 
 
-___ high_low_record_breakers_for_2015():
+___ high_low_record_breakers_for_2015
     """Extract the high and low record breaking temperatures for 2015
 
     The expected value will be a tuple with the highest and lowest record
@@ -49,12 +49,12 @@ ___ high_low_record_breakers_for_2015():
        temperatures
        * Return those as STATION namedtuples, (high_2015, low_2015)
     """
-    with open(LOCAL_FILE) as f:
+    with open(LOCAL_FILE) __ f:
         the_data = s..([{
             'id': x['ID'],
             'date': d__.strptime(x['Date'], '%Y-%m-%d').date(),
             'element': x['Element'],
-            'value': int(x['Data_Value'])
+            'value': i..(x['Data_Value'])
         } ___ x __ csv.DictReader(f) __ n.. __.m..(r'\d{4}-02-29', x['Date'])],
             key=l.... x: (x['id'] + x['date'].strftime('%m%d%Y')))
     dataset = [{'id': x['id'],
@@ -87,7 +87,7 @@ ___ high_low_record_breakers_for_2015():
     compare_set = early_dataset.j..(late_dataset)
 
     result = {'min': [], 'max': []}
-    ___ row __ compare_set.itertuples():
+    ___ row __ compare_set.itertuples
         __ row.mina > row.minb:
             result['min'].a..(
                 STATION(row.Index[0], d__.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))

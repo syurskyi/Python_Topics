@@ -2,7 +2,7 @@ ____ typing _______ List
 _______ string
 
 
-___ split_once(text: s.., separators: s.. = N..) -> List[s..]:
+___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
     print(f'{text=}')
     __ separators __ N..
         separators = string.whitespace

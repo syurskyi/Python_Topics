@@ -1,2 +1,2 @@
-___ is_pangram():
-    pass
+___ is_pangram
+    p..

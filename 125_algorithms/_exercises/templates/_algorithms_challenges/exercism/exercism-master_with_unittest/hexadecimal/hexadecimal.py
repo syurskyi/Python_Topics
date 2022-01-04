@@ -22,7 +22,7 @@ c_ Hexa:
 
     @classmethod
     ___ convert_char(cls, char):
-        r.. int(char) __ char.isdigit() ____ cls.CHAR_VALUES[char]
+        r.. i..(char) __ char.isdigit() ____ cls.CHAR_VALUES[char]
 
 
 ___ hexa(inp):

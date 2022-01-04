@@ -80,7 +80,7 @@ c_ Solution(object):
         ___ grid __ testCases:
             print('grid:')
 #             print('\n'.join(grid))
-            grid = [[int(c) ___ c __ row ] ___ row __ grid]
+            grid = [[i..(c) ___ c __ row ] ___ row __ grid]
             result = numDistinctIslands(grid)
             print('result: %s' % result)
             print('-='*30+'-')

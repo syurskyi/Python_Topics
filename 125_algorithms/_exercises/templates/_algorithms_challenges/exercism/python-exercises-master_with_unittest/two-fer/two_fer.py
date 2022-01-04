@@ -1,2 +1,2 @@
-___ two_fer():
-    pass
+___ two_fer
+    p..

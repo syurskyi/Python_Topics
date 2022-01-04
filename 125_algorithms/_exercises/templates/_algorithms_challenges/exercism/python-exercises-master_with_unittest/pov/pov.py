@@ -19,7 +19,7 @@ c_ Tree(object):
         r.. __dict__() __ other.__dict__()
 
     ___ from_pov(self, from_node):
-        pass
+        p..
 
     ___ path_to(self, from_node, to_node):
-        pass
+        p..

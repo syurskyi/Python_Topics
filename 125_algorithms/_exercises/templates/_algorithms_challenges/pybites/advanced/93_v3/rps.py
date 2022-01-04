@@ -9,7 +9,7 @@ tie = 'tie!'
 
 choices = defeated_by.v..
 
-___ _get_computer_move():
+___ _get_computer_move
     """Randomly select a move"""
     r.. choice(choices)
 
@@ -27,7 +27,7 @@ ___ _get_winner(computer_choice, player_choice):
         r.. lose.f..(computer_choice,player_choice)
 
 
-___ game():
+___ game
     """Game loop, receive player's choice via the generator's
        send method and get a random move from computer (_get_computer_move).
        Raise a StopIteration exception if user value received = 'q'.

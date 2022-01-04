@@ -16,7 +16,7 @@ c_ Master(object):
         :type word: str
         :rtype int
         """
-        pass
+        p..
 
 c_ Solution(object):
     ___ findSecretWord(self, wordlist, master):

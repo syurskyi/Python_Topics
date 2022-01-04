@@ -46,14 +46,14 @@ c_ Solution:
     ___ - ):
         ret = 0
 
-    ___ distributeCoins(self, root: TreeNode) -> int:
+    ___ distributeCoins(self, root: TreeNode) __ i..:
         """
         dfs
         """
         demand(root)
         r.. ret
 
-    ___ demand(self, node) -> int:
+    ___ demand(self, node) __ i..:
         __ n.. node:
             r.. 0
 

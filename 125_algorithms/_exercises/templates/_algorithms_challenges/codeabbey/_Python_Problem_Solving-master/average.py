@@ -1,4 +1,4 @@
-data = int(input())
+data = i..(input())
 result    # list
 
 ___ i __ r..(data):
@@ -8,16 +8,16 @@ ___ i __ r..(data):
     
     ___ j __ r..(l..(avg_numbs)-1):
         #print('value of avg ',j,' is ',avg_numbs[j])
-        sum_numbs = sum_numbs + int(avg_numbs[j])
+        sum_numbs = sum_numbs + i..(avg_numbs[j])
         #a = [int(x) for x in input().split()]
         #avg = sum(a) / (len(a) - 1)
         
     avg = sum_numbs / (l..(avg_numbs)-1)
-    __ avg.is_integer():
-        result.a..(int(avg))
+    __ avg.is_integer
+        result.a..(i..(avg))
     ____:
         avg = avg + 0.5
-        result.a..(int(avg))
+        result.a..(i..(avg))
         
 ___ k __ result:
     print(k,end=(' '))

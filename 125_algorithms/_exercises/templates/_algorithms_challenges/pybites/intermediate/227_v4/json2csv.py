@@ -25,14 +25,14 @@ ___ convert_to_csv(json_file):
     """  # noqa E501
     csv_file = TMP / json_file.name.r..('.json', '.csv')
 
-    with open(json_file, 'r') as f:
+    with open(json_file, 'r') __ f:
         try:
             data = json.load(f)
             fields = data['mounts']['collected'][0].k..
-            with open(csv_file, 'w') as csv_fp:
+            with open(csv_file, 'w') __ csv_fp:
                 writer = csv.DictWriter(csv_fp, fieldnames=fields)
                 writer.writeheader()
                 writer.writerows(data['mounts']['collected'])
-        except JSONDecodeError as e:
+        except JSONDecodeError __ e:
             print(EXCEPTION)
             raise e

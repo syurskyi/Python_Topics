@@ -163,12 +163,12 @@ EXPECTED_OUTPUT_WITH_GAP = """
 
 
 @pytest.fixture(scope='module')
-___ actual():
+___ actual
     r.. [line.rstrip() ___ line __ filter_killed_mutants()]
 
 
 @pytest.fixture(scope='module')
-___ actual2():
+___ actual2
     """Same output but filter out test 10 (killed) and 11 (survived),
        to avoid the hardcoded output gets returned from function
     """

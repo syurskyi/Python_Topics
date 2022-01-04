@@ -32,7 +32,7 @@ expected_quotes = [
 
 
 @pytest.fixture(scope="module")
-___ output_your_code():
+___ output_your_code
     r.. extract_quotes()
 
 

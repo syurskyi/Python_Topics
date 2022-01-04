@@ -35,12 +35,12 @@ ___ get_all_matching_models cars=cars, grep='trail'
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
-    pass
+    p..
 
 
 ___ sort_car_models cars=cars
     """sort the car models (values) and return the resulting cars dict"""
-    pass
+    p..
 
 print(get_all_jeeps())
 print(get_first_model_each_manufacturer())

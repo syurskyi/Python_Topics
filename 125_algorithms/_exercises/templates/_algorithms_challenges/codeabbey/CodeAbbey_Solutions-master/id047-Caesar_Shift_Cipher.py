@@ -26,8 +26,8 @@ ___ decrypt(msg_count, key):
         answer.a..(encrypted_msg)
     print(' '.j..(answer))
 
-___ caesar_cipher():
-    encrypted_msg_count, shift_key = [int(x) ___ x __ raw_input().s.. ]
+___ caesar_cipher
+    encrypted_msg_count, shift_key = [i..(x) ___ x __ raw_input().s.. ]
     decrypt(encrypted_msg_count, shift_key)
     #encrypt(encrypted_msg_count, shift_key)
 caesar_cipher()

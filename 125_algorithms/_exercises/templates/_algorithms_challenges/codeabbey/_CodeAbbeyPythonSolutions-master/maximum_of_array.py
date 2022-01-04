@@ -1,6 +1,6 @@
-values = l..(map(int, input().s..()))
+values = l..(map(i.., input().s..()))
 
-___ get_max_and_min():
+___ get_max_and_min
     max = values[0]
     m.. = values[0]
     ___ i __ values:

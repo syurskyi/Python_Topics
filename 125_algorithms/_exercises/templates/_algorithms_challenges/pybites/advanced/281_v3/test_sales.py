@@ -1,11 +1,11 @@
-_______ pandas as pd
+_______ pandas __ pd
 _______ pytest
 
 ____ sales _______ get_data, process_data, summary_report, yearly_report, URL
 
 
 @pytest.fixture(scope="function")
-___ df():
+___ df
     r.. process_data(URL)
 
 
@@ -57,6 +57,6 @@ ___ test_yearly_report(df, capfd, year, expected):
 @pytest.mark.parametrize("year", [1972, 2000, 2020])
 ___ test_yearly_report_with_invalid_year(df, year):
     msg = f"<ExceptionInfo ValueError('The year {year} is not included in the report!') tblen=2>"
-    with pytest.raises(ValueError) as e:
+    with pytest.raises(ValueError) __ e:
         yearly_report(df, year)
     ... s..(e) __ msg

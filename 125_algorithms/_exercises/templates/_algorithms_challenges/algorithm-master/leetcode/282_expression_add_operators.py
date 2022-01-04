@@ -33,7 +33,7 @@ c_ Solution:
                 break
 
             sa = s[start:i + 1]
-            a = int(sa)
+            a = i..(sa)
 
             __ start __ 0:
                 dfs(s, i + 1, target, a, a, ans, [sa])

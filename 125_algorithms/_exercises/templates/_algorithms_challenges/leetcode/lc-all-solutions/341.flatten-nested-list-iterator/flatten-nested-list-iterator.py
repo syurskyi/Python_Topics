@@ -54,7 +54,7 @@ c_ NestedIterator(object):
     stack = stack
     w.... stack:
       top = stack.pop()
-      __ top.isInteger():
+      __ top.isInteger
         value = top.getInteger()
         r.. T..
       ____:

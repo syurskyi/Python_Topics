@@ -33,7 +33,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+    ___ combinationSum(self, candidates: List[i..], target: i..) __ List[List[i..]]:
         ret    # list
         dfs(candidates, 0, [], 0, target, ret)
         r.. ret

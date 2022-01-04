@@ -47,7 +47,7 @@ ____ collections _______ Counter, defaultdict
 
 
 c_ Solution:
-    ___ wordSubsets(self, A: List[s..], B: List[s..]) -> List[s..]:
+    ___ wordSubsets(self, A: List[s..], B: List[s..]) __ List[s..]:
         """
         brute foce check b subset of a: two pointers O(|a| + |b|)
         O(n * m * (|a|+|b|))
@@ -57,7 +57,7 @@ c_ Solution:
         For every letter
         C_letter (a) >= max(C_letter(b) for b in B)
         """
-        mx = defaultdict(int)
+        mx = defaultdict(i..)
         ___ b __ B:
             c = Counter(b)
             ___ k, v __ c.i..:

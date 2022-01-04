@@ -1,5 +1,5 @@
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     a,b = input().s..
     #
-    b = b[int(a):] + b[:int(a)]
+    b = b[i..(a):] + b[:i..(a)]
     print(b,end = ' ')

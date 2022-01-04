@@ -39,7 +39,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ lenLongestFibSubseq(self, A: List[int]) -> int:
+    ___ lenLongestFibSubseq(self, A: List[i..]) __ i..:
             """
             F[i][j] longest fib subsequence ending at A[i] with 2nd last element
             A[j]
@@ -74,7 +74,7 @@ c_ Solution:
                 ___ j __ r..(i)
             )
 
-    ___ lenLongestFibSubseq_TLE(self, A: List[int]) -> int:
+    ___ lenLongestFibSubseq_TLE(self, A: List[i..]) __ i..:
         """
         F[i][j] longest fib subsequence ending at A[i] with 2nd last element
         A[j]

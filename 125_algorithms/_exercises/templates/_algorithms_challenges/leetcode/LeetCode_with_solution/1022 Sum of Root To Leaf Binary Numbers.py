@@ -35,7 +35,7 @@ c_ Solution:
         ret = 0
         lst    # list
 
-    ___ sumRootToLeaf(self, root: TreeNode) -> int:
+    ___ sumRootToLeaf(self, root: TreeNode) __ i..:
         """
         Brute force, keep a lst, space O(log n)
         Error-prone

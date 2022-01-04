@@ -28,7 +28,7 @@ Su Mo Tu We Th Fr Sa
 """
 
 
-___ test_april_1981():
+___ test_april_1981
     weekdays = get_weekdays(april_1981)
     ... l..(weekdays) __ 30
     ... weekdays[25] __ 'Sa'
@@ -36,7 +36,7 @@ ___ test_april_1981():
     ... weekdays[1] __ 'We'
 
 
-___ test_jan_1986():
+___ test_jan_1986
     weekdays = get_weekdays(jan_1986)
     ... l..(weekdays) __ 31
     ... weekdays[20] __ 'Mo'
@@ -44,7 +44,7 @@ ___ test_jan_1986():
     ... weekdays[2] __ 'Th'
 
 
-___ test_jan_1956():
+___ test_jan_1956
     weekdays = get_weekdays(jan_1956)
     ... l..(weekdays) __ 31
     ... weekdays[13] __ 'Fr'

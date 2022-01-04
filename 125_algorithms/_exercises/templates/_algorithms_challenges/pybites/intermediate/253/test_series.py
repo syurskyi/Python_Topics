@@ -1,40 +1,40 @@
 _______ string
 
 _______ pytest
-_______ pandas as pd
+_______ pandas __ pd
 
-_______ series as se
+_______ series __ se
 
 file_name = "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
 df = pd.read_csv(file_name)
 
 
 @pytest.fixture()
-___ sepal_length_series():
+___ sepal_length_series
     """Returns the Sepal Length Series from the Iris DataFrame"""
     r.. df.sepal_length.sort_values().reset_index(drop=T..)
 
 
 @pytest.fixture()
-___ int_series_vsmall():
+___ int_series_vsmall
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(1, 6))
 
 
 @pytest.fixture()
-___ int_series_small():
+___ int_series_small
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(10))
 
 
 @pytest.fixture()
-___ int_series_vsmall_offset_index():
+___ int_series_vsmall_offset_index
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(0, 10, 2), index=r..(0, 10, 2))
 
 
 @pytest.fixture()
-___ letters_series():
+___ letters_series
     """Returns a pandas Series containing all lower case letters"""
     r.. pd.Series(l..(string.ascii_lowercase))
 

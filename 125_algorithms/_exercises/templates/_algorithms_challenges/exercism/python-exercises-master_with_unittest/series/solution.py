@@ -1,5 +1,5 @@
 ___ slices(series, length):
-    numbers = [int(digit) ___ digit __ series]
+    numbers = [i..(digit) ___ digit __ series]
     __ n.. 1 <= length <= l..(numbers):
         raise ValueError("Invalid slice length for this series: " + s..(
             length))

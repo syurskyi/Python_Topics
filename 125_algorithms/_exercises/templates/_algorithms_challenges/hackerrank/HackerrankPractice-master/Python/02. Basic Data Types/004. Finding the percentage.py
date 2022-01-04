@@ -9,7 +9,7 @@ ___ readScores(listOfStudents):
     listOfStudents[name] = avScore
 
 
-n = int(input())
+n = i..(input())
 listOfStudents = d..()
 ___ i __ r..(n):
     readScores(listOfStudents)

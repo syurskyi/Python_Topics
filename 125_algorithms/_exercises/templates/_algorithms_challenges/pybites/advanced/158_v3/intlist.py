@@ -7,15 +7,15 @@ c_ IntList(l..):
         super().__init__(numbers)
 
     ___ _validate(self, numbers):
-        __ isi..(numbers, (int, float, Decimal)):
+        __ isi..(numbers, (i.., float, Decimal)):
             numbers = [numbers]
-        numbers = [int(n) ___ n __ numbers __ round(n, 0) __ int(n)]
-        __ n.. isi..(numbers, int) a.. any(n.. isi..(x, int) ___ x __ numbers):
+        numbers = [i..(n) ___ n __ numbers __ round(n, 0) __ i..(n)]
+        __ n.. isi..(numbers, i..) a.. any(n.. isi..(x, i..) ___ x __ numbers):
             raise TypeError(f'{__class__.__name__} can only operate with integer values')
         r.. numbers
 
     ___ _elements
-        r.. [int(i) ___ i __ super().c..]
+        r.. [i..(i) ___ i __ super().c..]
 
     $
     ___ mean

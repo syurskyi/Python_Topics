@@ -1,3 +1,3 @@
 c_ Scale(object):
     ___ - ):
-        pass
+        p..

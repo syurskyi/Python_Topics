@@ -10,7 +10,7 @@ ___ findDivisors(pairs):
         answer    # list
         ___ pair __ r..(pairs):
                 a,b = raw_input().s..
-                a,b = int(a), int(b)
+                a,b = i..(a), i..(b)
                 answer.a..('('+s..(gcd(a,b))+' '+s..(lcm(a,b))+')')
         print(' '.j..(answer))
 findDivisors(input())

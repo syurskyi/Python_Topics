@@ -31,12 +31,12 @@ ___ _quote_exists(existing_quote):
     r.. any(q['quote'] __ existing_quote['quote'] a.. q['movie'] __ existing_quote['movie'] ___ q __ quotes)
 
 
-___ _new_id():
+___ _new_id
     r.. max(q['id'] ___ q __ quotes) + 1
 
 
 @app.route('/api/quotes', methods=['GET'])
-___ get_quotes():
+___ get_quotes
     r.. jsonify(quotes=quotes)
 
 
@@ -49,7 +49,7 @@ ___ get_quote(qid):
 
 
 @app.route('/api/quotes', methods=['POST'])
-___ create_quote():
+___ create_quote
     quote_str = request.json.get('quote')
     movie_str = request.json.get('movie')
     __ n.. quote_str o. n.. movie_str:

@@ -1,7 +1,7 @@
 ____ packaging _______ version
 
 
-___ _load_reqs(reqs: s..) -> d..:
+___ _load_reqs(reqs: s..) __ d..:
     '''loads reqs into a dict with keys of package names
        and values of version numbers (converted to base 10 equivs)
     '''
@@ -11,7 +11,7 @@ ___ _load_reqs(reqs: s..) -> d..:
     r.. reqs
 
 
-___ changed_dependencies(old_reqs: s.., new_reqs: s..) -> l..:
+___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
     """Compare old vs new requirement multiline strings
        and return a list of dependencies that have been upgraded
        (have a newer version)

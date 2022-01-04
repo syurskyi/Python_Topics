@@ -1,7 +1,7 @@
 ____ palindrome _______ load_dictionary, is_palindrome, get_longest_palindrome
 
 
-___ test_is_palidrome():
+___ test_is_palidrome
     ... is_palindrome('Aibohphobia')
     ... is_palindrome('Avid diva')
     ... is_palindrome('Avid diva. ')
@@ -16,7 +16,7 @@ ___ test_is_palidrome():
     ... n.. is_palindrome('palindrome')
 
 
-___ test_get_longest_palindrome():
+___ test_get_longest_palindrome
     words = load_dictionary()
     ... get_longest_palindrome() __ 'malayalam'
 

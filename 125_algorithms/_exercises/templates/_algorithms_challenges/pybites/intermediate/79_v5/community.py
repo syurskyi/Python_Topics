@@ -6,10 +6,10 @@ _______ requests
 CSV_URL = 'https://bit.ly/2HiD2i8'
 
 
-___ get_csv():
+___ get_csv
     """Use requests to download the csv and return the
        decoded content"""
-    with requests.Session() as session:
+    with requests.Session() __ session:
         r.. session.get(CSV_URL).content.decode('utf-8')
 
 

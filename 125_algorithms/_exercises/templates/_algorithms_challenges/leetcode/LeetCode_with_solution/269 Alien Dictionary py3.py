@@ -43,9 +43,9 @@ ____ collections _______ defaultdict, deque
 
 
 c_ Solution(object):
-    ___ alienOrder(self, words: List[s..]) -> s..:
+    ___ alienOrder(self, words: List[s..]) __ s..:
         G = construct_graph(words)
-        visited = defaultdict(int)  # 0 not visited, 1 visiting, 2 visted
+        visited = defaultdict(i..)  # 0 not visited, 1 visiting, 2 visted
         ret = deque()
         ___ u __ G.k..:
             __ visited[u] __ 0:

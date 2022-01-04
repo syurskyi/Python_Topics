@@ -17,8 +17,8 @@ c_ Solution(object):
         w.... w < l..(word) a.. a < l..(abbr):
             __ abbr[a].isdigit() a.. abbr[a] != '0':
                 e = a
-                w.... e < l..(abbr) a.. abbr[e].isdigit(): e += 1
-                num = int(abbr[a:e])
+                w.... e < l..(abbr) a.. abbr[e].isdigit e += 1
+                num = i..(abbr[a:e])
                 a = e
                 w += num
             ____:

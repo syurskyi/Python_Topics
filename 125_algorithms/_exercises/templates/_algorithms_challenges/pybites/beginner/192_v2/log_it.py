@@ -11,7 +11,7 @@ ERROR = logger.error
 CRITICAL = logger.critical
 
 
-___ log_it(level: Callable, msg: s..) -> N..
+___ log_it(level: Callable, msg: s..) __ N..
 
        
     level(msg)

@@ -40,13 +40,13 @@ c_ Word:
 
 
 c_ Solution:
-    ___ topKFrequent(self, words: List[s..], k: int) -> List[s..]:
+    ___ topKFrequent(self, words: List[s..], k: i..) __ List[s..]:
         """
         quick select log n
         heap log k
         """
         h    # list
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ w __ words:
             counter[w] += 1
 

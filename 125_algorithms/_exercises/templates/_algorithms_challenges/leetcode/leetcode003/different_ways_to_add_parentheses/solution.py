@@ -38,8 +38,8 @@ c_ Solution(object):
     ___ diff_ways(self, inp):
         __ n.. inp:
             r.. []
-        ____ inp.isdigit():
-            r.. [int(inp)]
+        ____ inp.isdigit
+            r.. [i..(inp)]
         ____:
             res    # list
             ___ i, c __ e..(inp):

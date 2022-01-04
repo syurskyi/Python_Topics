@@ -1,6 +1,6 @@
 _______ string
 _______ i..
-___ sequence_generator():
+___ sequence_generator
     
 
     numbers = l..(r..(1,27))

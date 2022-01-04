@@ -1,11 +1,11 @@
 
 ____ collections _______ Counter
 
-___ freq_digit(num: int) -> int:
+___ freq_digit(num: i..) __ i..:
 
 
 
-    r.. int(Counter(s..(num)).most_common(1)[0][0])
+    r.. i..(Counter(s..(num)).most_common(1)[0][0])
 
 
 

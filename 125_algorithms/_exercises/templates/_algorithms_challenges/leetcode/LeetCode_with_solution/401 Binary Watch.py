@@ -35,7 +35,7 @@ c_ Solution(object):
         :type num: int
         :rtype: List[str]
         """
-        ___ gen():
+        ___ gen
             ___ hour_n __ xrange(m..(num, 4)+1):
                 ___ hour __ hour(hour_n):
                     ___ minute __ minute(num-hour_n):

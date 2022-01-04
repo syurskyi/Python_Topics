@@ -22,7 +22,7 @@ c_ Solution:
             __ element __ put_set:
                 stack.a..(pair[element])
             ____ element __ pop_set:
-                __ n.. stack o. element != stack.pop():  # check NullPointer, otherwise, IndexError: pop from empty list
+                __ n.. stack o. element != stack.pop  # check NullPointer, otherwise, IndexError: pop from empty list
                     r.. F..
 
         r.. T.. __ n.. stack ____ F..

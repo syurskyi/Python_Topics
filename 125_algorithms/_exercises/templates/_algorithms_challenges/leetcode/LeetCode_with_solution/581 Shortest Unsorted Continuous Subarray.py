@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findUnsortedSubarray(self, nums: List[int]) -> int:
+    ___ findUnsortedSubarray(self, nums: List[i..]) __ i..:
         """
         Sorted at both ends
         Then search for the two ends by nums[i+1] > nums[i] on the left side
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. hi - lo + 1
 
-    ___ findUnsortedSubarray_sort(self, nums: List[int]) -> int:
+    ___ findUnsortedSubarray_sort(self, nums: List[i..]) __ i..:
         """
         Brute force sort and compare O(n lgn)
         """

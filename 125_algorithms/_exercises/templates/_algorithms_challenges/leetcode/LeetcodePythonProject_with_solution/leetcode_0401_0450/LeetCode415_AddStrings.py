@@ -12,8 +12,8 @@ c_ Solution(object):
         result = ''
         carry = 0
         w.... j >= 0:
-            n1 = int(num1[i])
-            n2 = int(num2[j])
+            n1 = i..(num1[i])
+            n2 = i..(num2[j])
             val = n1+n2+carry
             __ val >= 10:
                 val -= 10
@@ -24,7 +24,7 @@ c_ Solution(object):
             i -= 1
             j -= 1
         w.... i >= 0:
-            n1 = int(num1[i])
+            n1 = i..(num1[i])
             val = n1+carry
             __ val >= 10:
                 val -= 10

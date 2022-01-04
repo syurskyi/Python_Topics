@@ -21,7 +21,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ partitionLabels(self, S: s..) -> List[int]:
+    ___ partitionLabels(self, S: s..) __ List[i..]:
         lasts    # dict
         n = l..(S)
         ___ i __ r..(n-1, -1, -1):

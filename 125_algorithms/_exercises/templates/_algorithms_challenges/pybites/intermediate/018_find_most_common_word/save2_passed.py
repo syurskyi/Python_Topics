@@ -17,7 +17,7 @@ urllib.request.urlretrieve(
 )
 
 
-___ get_harry_most_common_word():
+___ get_harry_most_common_word
     stopwords = open(stopwords_file).read().s..
     text = open(harry_text).read().l..
     filtered = __.sub(r'[^A-Za-z\s*]', '', text).s..

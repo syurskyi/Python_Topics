@@ -28,7 +28,7 @@ ___ test_romanize(number, numeral):
     ... romanize(number) __ numeral
 
 
-___ test_boundaries():
+___ test_boundaries
     with pytest.raises(ValueError):
         romanize('string')
         romanize(-1)

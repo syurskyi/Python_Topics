@@ -124,7 +124,7 @@ ___ best_match_per_wine(wine_type="all"):
     r.. (max_wine, max_cheese, max_cheese_score)
 
 
-___ match_wine_5cheeses():
+___ match_wine_5cheeses
     """  pairs all types of wines with cheeses ; returns a sorted list of tuples,
     where each tuple contains: wine, list of 5 best matching cheeses.
     List of cheeses is sorted by score descending then alphabetically ascending.

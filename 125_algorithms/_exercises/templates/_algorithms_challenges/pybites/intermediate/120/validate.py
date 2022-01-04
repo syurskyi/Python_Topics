@@ -6,7 +6,7 @@ ___ int_args(func):
     ___ wrapper(*args):
         # Validate arg type and value
         ___ arg __ args:
-            __ n.. isi..(arg, int):
+            __ n.. isi..(arg, i..):
                 raise TypeError
             ____:
                 __ arg < 0:

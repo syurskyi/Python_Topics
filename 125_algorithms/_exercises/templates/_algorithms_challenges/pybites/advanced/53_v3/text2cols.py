@@ -3,7 +3,7 @@ ____ i.. _______ zip_longest
 COL_WIDTH = 20
 
 
-___ _divide_line(line: s.., col_width: int = COL_WIDTH):
+___ _divide_line(line: s.., col_width: i.. = COL_WIDTH):
     words = line.s..
     result    # list
     line = words[0]

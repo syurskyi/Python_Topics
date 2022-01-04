@@ -16,9 +16,9 @@ TMP = 'tmp'
     ([1024, 2047, 2048, 2500], 2, ['2048', '2500']),
 ])
 ___ test_get_files(byte_sizes, size_in_kb, expected):
-    with TemporaryDirectory(TMP) as dirname:
+    with TemporaryDirectory(TMP) __ dirname:
         ___ size __ byte_sizes:
-            with open(os.path.j..(dirname, s..(size)), 'wb') as f:
+            with open(os.path.j..(dirname, s..(size)), 'wb') __ f:
                 f.write(os.urandom(size))
 
         actual = [os.path.basename(fi) ___ fi __

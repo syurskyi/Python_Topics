@@ -5,7 +5,7 @@ Location  collections.n..('Location', 'city state country')
 Weather  collections.n..('Weather', 'location units temp condition')
 
 
-___ main():
+___ main
     show_header()
     location_text  input("Where do you want the weather report (e.g. Portland, US)? ")
     loc  convert_plaintext_location(location_text)
@@ -104,7 +104,7 @@ ___ convert_plaintext_location(location_text):
     # return city, state, country
 
 
-___ show_header():
+___ show_header
     print('---------------------------------')
     print('         WEATHER CLIENT')
     print('---------------------------------')

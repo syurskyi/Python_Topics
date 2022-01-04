@@ -19,7 +19,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ reverseBetween(self, head: ListNode, m: int, n: int) -> ListNode:
+    ___ reverseBetween(self, head: ListNode, m: i.., n: i..) __ ListNode:
         prev = N..
         cur = head
 

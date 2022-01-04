@@ -1,2 +1,2 @@
-___ parse_octal():
-    pass
+___ parse_octal
+    p..

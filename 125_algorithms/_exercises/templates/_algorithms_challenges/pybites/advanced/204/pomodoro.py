@@ -18,19 +18,19 @@ HOUR = ONE_MIN * .06
 CURRENT_SESSION = 1
 
 
-async ___ break_time(delay: Union[int, float], loop: int) -> N..
+async ___ break_time(delay: Union[i.., float], loop: i..) __ N..
     """Break time
 
     :param delay: float of delay in seconds
     :param loop: int of the current loop
     :return: None
     """
-    _delay = int(delay / ONE_MIN)
+    _delay = i..(delay / ONE_MIN)
     print(f"[{loop}] {time.strftime('%X')} Time for a {_delay} min break!")
     await sleep(delay)
 
 
-async ___ lunch_time(delay: Union[int, float]) -> N..
+async ___ lunch_time(delay: Union[i.., float]) __ N..
     """Lunch time
 
     :param delay: float of delay in seconds
@@ -40,7 +40,7 @@ async ___ lunch_time(delay: Union[int, float]) -> N..
     await sleep(delay)
 
 
-async ___ work_time(delay: Union[int, float], loop: int) -> N..
+async ___ work_time(delay: Union[i.., float], loop: i..) __ N..
     """Work time
 
     :param delay: float of delay in seconds
@@ -52,10 +52,10 @@ async ___ work_time(delay: Union[int, float], loop: int) -> N..
 
 
 async ___ session(
-    work_length: Union[int, float] = TWENTY_FIVE_MIN,
-    short_break_length: Union[int, float] = FIVE_MIN,
-    long_break_length: Union[int, float] = THIRTY_MIN,
-) -> N..
+    work_length: Union[i.., float] = TWENTY_FIVE_MIN,
+    short_break_length: Union[i.., float] = FIVE_MIN,
+    long_break_length: Union[i.., float] = THIRTY_MIN,
+) __ N..
     """Session
 
     :param work_length: float of work length in seconds
@@ -77,11 +77,11 @@ async ___ session(
 
 
 async ___ main(
-    work_length: Union[int, float] = TWENTY_FIVE_MIN,
-    short_break_length: Union[int, float] = FIVE_MIN,
-    long_break_length: Union[int, float] = THIRTY_MIN,
-    lunch_length: Union[int, float] = HOUR,
-) -> N..
+    work_length: Union[i.., float] = TWENTY_FIVE_MIN,
+    short_break_length: Union[i.., float] = FIVE_MIN,
+    long_break_length: Union[i.., float] = THIRTY_MIN,
+    lunch_length: Union[i.., float] = HOUR,
+) __ N..
     """Main entry point
 
     :param work_length: float of work length in seconds

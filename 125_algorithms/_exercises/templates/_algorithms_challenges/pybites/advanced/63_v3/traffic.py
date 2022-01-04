@@ -5,7 +5,7 @@ ____ time _______ sleep
 State = n..('State', 'color command timeout')
 
 
-___ traffic_light():
+___ traffic_light
     """Returns an itertools.cycle iterator that
        when iterated over returns State namedtuples
        as shown in the Bite's description"""

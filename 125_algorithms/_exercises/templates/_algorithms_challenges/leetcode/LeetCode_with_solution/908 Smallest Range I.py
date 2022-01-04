@@ -34,7 +34,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ smallestRangeI(self, A: List[int], K: int) -> int:
+    ___ smallestRangeI(self, A: List[i..], K: i..) __ i..:
         """
         only need the max and min
         """

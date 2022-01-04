@@ -5,7 +5,7 @@ ____ Previous.cached_property _______ Planet
 
 
 @pytest.fixture(scope="module")
-___ blue():
+___ blue
     r.. Planet('blue')
 
 

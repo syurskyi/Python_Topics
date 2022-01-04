@@ -50,7 +50,7 @@ c_ SolutionTLE(object):
                     rights = dfs(word[i+l:])
                     ___ left __ lefts:
                         ___ right __ rights:
-                            __ left a.. left[-1].isdigit() o. right a.. right[0].isdigit():
+                            __ left a.. left[-1].isdigit() o. right a.. right[0].isdigit
                                 continue
 
                             ret.a..(left+pivot+right)

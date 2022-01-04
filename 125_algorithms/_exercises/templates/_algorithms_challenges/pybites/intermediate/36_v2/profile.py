@@ -1,7 +1,7 @@
 ___ get_profile(name,age,*args,**kwargs):
     print(args,kwargs)
 
-    __ t..(age) != int:
+    __ t..(age) != i..:
         raise ValueError("age must be interger")
 
 

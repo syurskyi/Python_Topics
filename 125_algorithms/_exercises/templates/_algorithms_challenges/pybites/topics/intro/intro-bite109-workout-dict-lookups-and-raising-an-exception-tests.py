@@ -20,6 +20,6 @@ ___ test_get_workout_valid_case_insensitive_dict_lookups(arg, expected):
         ... get_workout_motd(day) __ expected
 
 
-___ test_get_workout_invalid_dict_lookups_raise_exception():
+___ test_get_workout_invalid_dict_lookups_raise_exception
     with pytest.raises(KeyError):
         get_workout_motd('not-a-day')

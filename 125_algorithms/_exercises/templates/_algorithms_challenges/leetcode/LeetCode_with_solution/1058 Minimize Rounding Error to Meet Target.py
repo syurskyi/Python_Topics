@@ -39,7 +39,7 @@ _______ math
 
 
 c_ Solution:
-    ___ minimizeError(self, prices: List[s..], target: int) -> s..:
+    ___ minimizeError(self, prices: List[s..], target: i..) __ s..:
         """
         to determine possible, floor all or ceil all
 

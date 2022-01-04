@@ -12,6 +12,6 @@ c_ Score(Enum):
     ___ __str__
         r.. f'{name} => {THUMBS_UP * value}'
 
-    ___ average():
+    ___ average
         vals = [s.value ___ s __ Score.__members__.v..
         r.. s..(vals) / l..(vals)

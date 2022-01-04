@@ -14,7 +14,7 @@ def get_text(text='I code with PyBites'):
 
 ____ functools _______ wraps
 ___ make_html(func):
-    ___ wrapped_func():
+    ___ wrapped_func
         print("<p>" + func() + "</p>")
     r.. wrapped_func
 

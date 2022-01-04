@@ -10,7 +10,7 @@ ___ calculator(operation, numbers):
            'mul': l.... x: x[0] * x[1],
            'div': l.... x: x[0] / x[1]
            }
-    __ isi..(numbers, int):
+    __ isi..(numbers, i..):
         numbers = [numbers]
     res = float(numbers[0])
     ___ num __ numbers[1:]:
@@ -18,7 +18,7 @@ ___ calculator(operation, numbers):
     r.. round(res,2)
 
 
-___ create_parser():
+___ create_parser
     """TODO 2:
        Create an ArgumentParser object:
        - have one operation argument,

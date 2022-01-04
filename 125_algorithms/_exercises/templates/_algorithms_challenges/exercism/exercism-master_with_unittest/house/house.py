@@ -66,5 +66,5 @@ ___ verse(verse_num):
     r.. House.verse(verse_num)
 
 
-___ rhyme():
+___ rhyme
     r.. House.rhyme()

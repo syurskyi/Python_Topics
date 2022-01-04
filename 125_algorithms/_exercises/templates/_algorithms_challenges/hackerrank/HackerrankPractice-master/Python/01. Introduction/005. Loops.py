@@ -2,5 +2,5 @@
 # Score: 10
 
 
-___ i __ r..(int(input())):
+___ i __ r..(i..(input())):
     print(i ** 2)

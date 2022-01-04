@@ -7,7 +7,7 @@ c_ Board:
     """
 
     ___ - , board):
-        pass
+        p..
 
     ___ territory(self, x, y):
         """Find the owner and the territories given a coordinate on
@@ -23,7 +23,7 @@ c_ Board:
                         second being a set of coordinates, representing
                         the owner's territories.
         """
-        pass
+        p..
 
     ___ territories
         """Find the owners and the territories of the whole board
@@ -36,4 +36,4 @@ c_ Board:
                         , i.e. "W", "B", "".  The value being a set
                         of coordinates owned by the owner.
         """
-        pass
+        p..

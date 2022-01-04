@@ -21,7 +21,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ wiggleSort(self, nums: List[int]) -> N..
+    ___ wiggleSort(self, nums: List[i..]) __ N..
         """
         Do not return anything, modify nums in-place instead.
 

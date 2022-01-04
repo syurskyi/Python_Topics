@@ -39,8 +39,8 @@ c_ Solution:
             a, b = b, a
 
         ___ i __ xrange(l..(a)):
-            __ int(a[i]) != int(b[i]):
-                r.. order*(int(a[i])-int(b[i]))
+            __ i..(a[i]) != i..(b[i]):
+                r.. order*(i..(a[i])-i..(b[i]))
 
         __ l..(a) __ l..(b):
             r.. 0

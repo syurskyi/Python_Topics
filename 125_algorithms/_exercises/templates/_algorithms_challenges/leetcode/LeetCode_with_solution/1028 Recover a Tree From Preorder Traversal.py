@@ -42,7 +42,7 @@ ____ collections _______ OrderedDict
 
 
 c_ Solution:
-    ___ recoverFromPreorder(self, S: s..) -> TreeNode:
+    ___ recoverFromPreorder(self, S: s..) __ TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)
@@ -62,7 +62,7 @@ c_ Solution:
                 w.... j < n a.. S[j] != "-":
                     j += 1
 
-                val = int(S[i:j])
+                val = i..(S[i:j])
 
                 # construct
                 cur = TreeNode(val)
@@ -89,7 +89,7 @@ c_ Solution:
 
         r.. root
 
-    ___ recoverFromPreorder_error(self, S: s..) -> TreeNode:
+    ___ recoverFromPreorder_error(self, S: s..) __ TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)
@@ -108,7 +108,7 @@ c_ Solution:
                 w.... j < n a.. S[j] != "-":
                     j += 1
 
-                val = int(S[i:j])
+                val = i..(S[i:j])
                 depths[val] = depth
                 depth = 0
                 i = j

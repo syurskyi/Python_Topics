@@ -2,11 +2,11 @@ ____ typing _______ List
 ____ collections _______ defaultdict
 
 
-___ sum_indices(items: List[s..]) -> int:
+___ sum_indices(items: List[s..]) __ i..:
 
 
 
-    indexes = defaultdict(int)
+    indexes = defaultdict(i..)
 
     total = 0
     ___ i,value __ e..(items):

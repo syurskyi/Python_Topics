@@ -57,7 +57,7 @@ c_ Solution(object):
                 r.. j + 1 < l..(nums2)
 
             ___ next
-                __ hasnext():
+                __ hasnext
                     r.. Node(i, j + 1)
 
                 raise StopIteration
@@ -73,7 +73,7 @@ c_ Solution(object):
         w.... h a.. l..(ret) < k:
             node = heapq.heappop(h)
             ret.a..([nums1[node.i], nums2[node.j]])
-            __ node.hasnext():
+            __ node.hasnext
                 heapq.heappush(h, node.next())
 
         r.. ret

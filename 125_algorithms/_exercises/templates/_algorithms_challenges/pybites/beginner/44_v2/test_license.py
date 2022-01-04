@@ -7,13 +7,13 @@ shorter_key = __.c..(r'^([A-Z0-9]{4}-){2}[A-Z0-9]{4}$')
 longer_key = __.c..(r'^([A-Z0-9]{10}-){9}[A-Z0-9]{10}$')
 
 
-___ test_gen_default_key():
+___ test_gen_default_key
     ... default_key.m..(gen_key())
 
 
-___ test_gen_shorter_key():
+___ test_gen_shorter_key
     ... shorter_key.m..(gen_key(parts=3, chars_per_part=4))
 
 
-___ test_gen_longer_key():
+___ test_gen_longer_key
     ... longer_key.m..(gen_key(parts=10, chars_per_part=10))

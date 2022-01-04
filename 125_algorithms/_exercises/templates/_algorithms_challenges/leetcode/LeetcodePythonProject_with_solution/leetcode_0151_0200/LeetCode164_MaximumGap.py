@@ -21,7 +21,7 @@ c_ Solution(object):
         ___ num __ nums:
             __ num __ minVal o. num __ maxVal:
                 continue
-            idx = int((num-minVal)//gap)
+            idx = i..((num-minVal)//gap)
             bucketsMin[idx] = m..(bucketsMin[idx], num)
             bucketsMax[idx] = max(bucketsMax[idx], num)
         maxGap = float('-inf')

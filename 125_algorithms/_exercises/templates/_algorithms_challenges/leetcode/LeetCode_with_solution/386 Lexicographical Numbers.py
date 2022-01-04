@@ -14,7 +14,7 @@ c_ Solution(object):
         :type n: int
         :rtype: List[int]
         """
-        ___ gen():
+        ___ gen
             i = 1
             ___ _ __ xrange(n):  # erroneous for while i <= n:
                 y.. i

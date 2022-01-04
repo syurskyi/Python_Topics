@@ -48,7 +48,7 @@ c_ Solution(object):
         r.. s..
 
     ___ dfs(self, ni, depth):
-        __ ni.isInteger():
+        __ ni.isInteger
             s.. += ni.getInteger() * depth
         ____:
             lst = ni.getList()

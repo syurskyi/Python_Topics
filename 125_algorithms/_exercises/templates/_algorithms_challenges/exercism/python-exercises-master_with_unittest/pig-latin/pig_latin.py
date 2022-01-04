@@ -1,2 +1,2 @@
-___ translate():
-    pass
+___ translate
+    p..

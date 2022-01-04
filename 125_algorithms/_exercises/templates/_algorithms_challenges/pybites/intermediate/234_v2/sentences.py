@@ -1,4 +1,4 @@
-___ capitalize_sentences(text: s..) -> s..:
+___ capitalize_sentences(text: s..) __ s..:
     """Return text capitalizing the sentences. Note that sentences can end
        in dot (.), question mark (?) and exclamation mark (!)"""
 

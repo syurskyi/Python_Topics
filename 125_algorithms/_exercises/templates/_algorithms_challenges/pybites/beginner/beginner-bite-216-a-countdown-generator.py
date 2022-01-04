@@ -27,10 +27,10 @@ Good luck, have fun and keep it Python!
 
 """
 
-___ countdown():
+___ countdown
     ___ i __ r..(100, 0, -1):
         y.. i
 
 
-___ x __ countdown():
+___ x __ countdown
     print(x)

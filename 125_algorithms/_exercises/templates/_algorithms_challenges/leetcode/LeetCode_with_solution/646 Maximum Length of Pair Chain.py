@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findLongestChain(self, pairs: List[List[int]]) -> int:
+    ___ findLongestChain(self, pairs: List[List[i..]]) __ i..:
         """
         Greedy
         sort by the interval end
@@ -41,7 +41,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ findLongestChain2(self, pairs: List[List[int]]) -> int:
+    ___ findLongestChain2(self, pairs: List[List[i..]]) __ i..:
         """
         Greedy
         sort by the interval end
@@ -64,7 +64,7 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ findLongestChain(self, pairs: List[List[int]]) -> int:
+    ___ findLongestChain(self, pairs: List[List[i..]]) __ i..:
         """
         Let F[i] be the longest chain   ended at A[i]
         F[i] = max(F[j] + 1 if predicate A[i] A[j])

@@ -32,7 +32,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ removeStones(self, stones: List[List[int]]) -> int:
+    ___ removeStones(self, stones: List[List[i..]]) __ i..:
         """
         convert to graph problem
         each component in the graph can be removed to only one node

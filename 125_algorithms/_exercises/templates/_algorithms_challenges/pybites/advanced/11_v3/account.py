@@ -41,12 +41,12 @@ c_ Account:
         r.. _transactions[item]
 
     ___ __add__(self, other):
-        __ n.. isi..(other, int):
+        __ n.. isi..(other, i..):
             raise ValueError
         _transactions.a..(other)
 
     ___ __sub__(self, other):
-        __ n.. isi..(other, int):
+        __ n.. isi..(other, i..):
             raise ValueError
         _transactions.a..(-other)
 

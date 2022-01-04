@@ -32,13 +32,13 @@ c_ Solution(object):
         valX1, val1 = 0, 0
         i = 0
         w.... i < l..(s):
-            __ s[i].isdigit():
+            __ s[i].isdigit
                 sig = 1
                 __ i>=1 a.. s[i-1] __ '-':
                     sig = -1
                 num = 0
-                w.... i < l..(s) a.. s[i].isdigit():
-                    num = 10*num+int(s[i])
+                w.... i < l..(s) a.. s[i].isdigit
+                    num = 10*num+i..(s[i])
                     i += 1
                 __ i < l..(s) a.. s[i] __ 'x':
                     valX1 += num*sig

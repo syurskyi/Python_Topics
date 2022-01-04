@@ -69,7 +69,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ widthOfBinaryTree(self, root: TreeNode) -> int:
+    ___ widthOfBinaryTree(self, root: TreeNode) __ i..:
         """
            0
           0 1

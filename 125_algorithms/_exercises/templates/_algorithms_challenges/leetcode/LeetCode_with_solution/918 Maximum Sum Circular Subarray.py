@@ -49,7 +49,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxSubarraySumCircular(self, A: List[int]) -> int:
+    ___ maxSubarraySumCircular(self, A: List[i..]) __ i..:
         """
         Kadane's Algorithm
         Two cases:
@@ -62,7 +62,7 @@ c_ Solution:
         ret2 = s..(A) + max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
         r.. max(ret1, ret2)
 
-    ___ max_subarray(self, A) -> int:
+    ___ max_subarray(self, A) __ i..:
         """
         dp[i] = A[i] + max(dp[i-1],0)
         """
@@ -73,7 +73,7 @@ c_ Solution:
             mx = max(mx, cur)
         r.. mx
 
-    ___ maxSubarraySumCircular_error(self, A: List[int]) -> int:
+    ___ maxSubarraySumCircular_error(self, A: List[i..]) __ i..:
         """
         keep a cur_sum with index, when negative, go back to 0
         """

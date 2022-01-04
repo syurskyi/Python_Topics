@@ -14,8 +14,8 @@ c_ Solution(object):
         :type b: str
         :rtype: str
         """
-        list_a = [int(i) ___ i __ a[::-1]]
-        list_b = [int(i) ___ i __ b[::-1]]
+        list_a = [i..(i) ___ i __ a[::-1]]
+        list_b = [i..(i) ___ i __ b[::-1]]
         la = l..(list_a)
         lb = l..(list_b)
         # Pad zeroes

@@ -1,4 +1,4 @@
-___ c__():
+___ c__
 
     animals = ["fly", "spider", "bird", "cat", "dog", "goat", "cow", "horse"]
 

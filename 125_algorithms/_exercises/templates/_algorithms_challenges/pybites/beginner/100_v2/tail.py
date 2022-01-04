@@ -3,7 +3,7 @@ ___ tail(filepath, n):
        strip newlines and return a list of the last n lines"""
 
 
-    with open(filepath,'r') as f:
+    with open(filepath,'r') __ f:
        lines = f.readlines()
     
 

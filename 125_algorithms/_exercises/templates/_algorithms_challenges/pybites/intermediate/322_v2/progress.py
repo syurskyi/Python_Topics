@@ -2,8 +2,8 @@ ____ d__ _______ d__
 ____ d__ _______ t..
 
 
-___ ontrack_reading(books_goal: int, books_read: int,
-                    day_of_year: int = N..) -> bool:
+___ ontrack_reading(books_goal: i.., books_read: i..,
+                    day_of_year: i.. = N..) __ bool:
 
     year = d__.today().year
     boy = d__(year, 1, 1)

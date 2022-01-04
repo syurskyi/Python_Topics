@@ -1,7 +1,7 @@
 _______ math
 
-___ i __ r..(int(input())):
-    x1,y1,x2,y2,x3,y3 = l..(map(int,input().s..()))
+___ i __ r..(i..(input())):
+    x1,y1,x2,y2,x3,y3 = l..(map(i..,input().s..()))
     
     #distance formula
 
@@ -15,10 +15,10 @@ ___ i __ r..(int(input())):
     s2 = abs(s-b) 
     s3 =abs(s-c)
     area = s * s1 * s2 * s3
-    __ (area - int(area)) > 0.5:
+    __ (area - i..(area)) > 0.5:
         area += 0.5
-        area = int(area)
+        area = i..(area)
     ____:
-        area = int(area)
+        area = i..(area)
     area = math.sqrt(area)
     print(area,end=' ')

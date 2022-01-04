@@ -42,7 +42,7 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ accountsMerge(self, accounts: List[List[s..]]) -> List[List[s..]]:
+    ___ accountsMerge(self, accounts: List[List[s..]]) __ List[List[s..]]:
         """
         merge has to be dfs
         account id
@@ -72,7 +72,7 @@ c_ Solution:
                     dfs(nbr, accounts, email_to_ids, emails, visited)
 
 
-    ___ accountsMerge_error(self, accounts: List[List[s..]]) -> List[List[s..]]:
+    ___ accountsMerge_error(self, accounts: List[List[s..]]) __ List[List[s..]]:
         """
         data structure
         map: email -> id, if exist mapping, then merge

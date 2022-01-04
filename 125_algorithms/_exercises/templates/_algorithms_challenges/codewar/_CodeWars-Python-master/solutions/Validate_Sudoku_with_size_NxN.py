@@ -14,7 +14,7 @@ c_ Sudoku(object):
     ___ is_valid
         n = l..(sudoku)
         try:
-            block_len = int(sqrt(n))
+            block_len = i..(sqrt(n))
         except ValueError:
             r.. F..
         __ any([l..(row) != n ___ row __ sudoku]):
@@ -43,4 +43,4 @@ c_ Sudoku(object):
         r.. l..(num_set) __ n \
                a.. max(num_set) __ n \
                a.. m..(num_set) __ 1 \
-               a.. a..(t..(i) __ int ___ i __ num_set)
+               a.. a..(t..(i) __ i.. ___ i __ num_set)

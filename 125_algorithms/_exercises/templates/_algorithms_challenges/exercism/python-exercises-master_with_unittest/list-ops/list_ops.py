@@ -1,34 +1,34 @@
-___ map_clone():
-    pass
+___ map_clone
+    p..
 
 
-___ length():
-    pass
+___ length
+    p..
 
 
-___ filter_clone():
-    pass
+___ filter_clone
+    p..
 
 
-___ reverse():
-    pass
+___ reverse
+    p..
 
 
 ___ a..:
-    pass
+    p..
 
 
-___ foldl():
-    pass
+___ foldl
+    p..
 
 
-___ foldr():
-    pass
+___ foldr
+    p..
 
 
-___ flat():
-    pass
+___ flat
+    p..
 
 
-___ concat():
-    pass
+___ concat
+    p..

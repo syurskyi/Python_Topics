@@ -30,7 +30,7 @@ c_ Solution:
             r.. F..
 
         target = s // 2
-        d = defaultdict(l....: defaultdict(int))
+        d = defaultdict(l....: defaultdict(i..))
         d[0][0] = 1
         d[0][nums[0]] = 1
 

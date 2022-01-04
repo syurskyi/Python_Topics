@@ -21,13 +21,13 @@ ____ collections _______ defaultdict
 
 
 c_ Solution:
-    ___ subarraysDivByK_2(self, A: List[int], K: int) -> int:
+    ___ subarraysDivByK_2(self, A: List[i..], K: i..) __ i..:
         """
         count the prefix sum mod K
         nC2
         """
         prefix_sum = 0
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         counter[0] = 1  # important trival case
         ___ a __ A:
             prefix_sum += a
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ subarraysDivByK(self, A: List[int], K: int) -> int:
+    ___ subarraysDivByK(self, A: List[i..], K: i..) __ i..:
         """
         Prefix sum
         O(N^2)
@@ -50,7 +50,7 @@ c_ Solution:
         prefix sum has to be MOD by K.
         """
         prefix_sum = 0
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         counter[0] = 1  # trival case. !important
         ret = 0
         ___ a __ A:

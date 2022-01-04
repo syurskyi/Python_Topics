@@ -28,7 +28,7 @@ ____ collections _______ Counter
 
 
 c_ Solution:
-    ___ minIncrementForUnique(self, A: List[int]) -> int:
+    ___ minIncrementForUnique(self, A: List[i..]) __ i..:
         """
         sort + at least previous + 1
         """
@@ -50,7 +50,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ minIncrementForUnique(self, A: List[int]) -> int:
+    ___ minIncrementForUnique(self, A: List[i..]) __ i..:
         """
         fill the slot and count
         A[i] < 40000
@@ -67,7 +67,7 @@ c_ Solution:
         r.. ret
 
 c_ Solution:
-    ___ minIncrementForUnique(self, A: List[int]) -> int:
+    ___ minIncrementForUnique(self, A: List[i..]) __ i..:
         """
         sort, a "brute force" solution of incrementing it repeatedly until it is
         not unique.

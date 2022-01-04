@@ -1,7 +1,7 @@
 ____ collections _______ n..,defaultdict
 ____ enum _______ Enum
 ____ typing _______ Sequence
-____ collections.abc _______ Sequence as seq
+____ collections.abc _______ Sequence __ seq
 
 Suit = Enum("Suit", l..("SHDC"))
 Rank = Enum("Rank", l..("AKQJT98765432"))
@@ -42,7 +42,7 @@ c_ BridgeHand:
 
 
 
-    ___ __str__(self) -> s..:
+    ___ __str__(self) __ s..:
         """
         Return a string representing this hand, in the following format:
         "S:AK3 H:T987 D:KJ98 C:QJ"
@@ -80,25 +80,25 @@ c_ BridgeHand:
 
 
     $
-    ___ hcp(self) -> int:
+    ___ hcp(self) __ i..:
         """ Return the number of high card points contained in this hand """
 
         r.. s..(HCP[card.Rank] ___ card __ cards __ card.Rank __ HCP)
 
     $
-    ___ doubletons(self) -> int:
+    ___ doubletons(self) __ i..:
         """ Return the number of doubletons contained in this hand """
 
 
         r.. s..(l..(cards) __ 2 ___ cards __ suit_to_cards.values())
 
     $
-    ___ singletons(self) -> int:
+    ___ singletons(self) __ i..:
         """ Return the number of singletons contained in this hand """
         r.. s..(l..(cards) __ 1 ___ cards __ suit_to_cards.values())
 
     $
-    ___ voids(self) -> int:
+    ___ voids(self) __ i..:
         """ Return the number of voids (missing suits) contained in
             this hand
         """
@@ -107,7 +107,7 @@ c_ BridgeHand:
         r.. l..(Suit) - l..(suit_to_cards)
 
     $
-    ___ ssp(self) -> int:
+    ___ ssp(self) __ i..:
         """ Return the number of short suit points in this hand.
             Doubletons are worth one point, singletons two points,
             voids 3 points
@@ -116,12 +116,12 @@ c_ BridgeHand:
         r.. doubletons + 2 * singletons + 3 * voids
 
     $
-    ___ total_points(self) -> int:
+    ___ total_points(self) __ i..:
         """ Return the total points (hcp and ssp) contained in this hand """
         r.. hcp + ssp
 
     $
-    ___ ltc(self) -> int:
+    ___ ltc(self) __ i..:
         """ Return the losing trick count for this hand - see bite description
             for the procedure
         """

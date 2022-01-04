@@ -51,7 +51,7 @@ ____ typing _______ List
 
 
 c_ RLEIterator:
-    ___ - , A: List[int]):
+    ___ - , A: List[i..]):
         """
         counter
         """
@@ -59,7 +59,7 @@ c_ RLEIterator:
         cur_used = 0
         A = A
 
-    ___ next(self, n: int) -> int:
+    ___ next(self, n: i..) __ i..:
         run = cur_used + n
         w.... cur_i < l..(A) a.. run > A[cur_i]:
             run -= A[cur_i]

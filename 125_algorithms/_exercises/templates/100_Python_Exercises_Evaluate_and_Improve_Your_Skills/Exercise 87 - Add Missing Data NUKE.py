@@ -3,12 +3,12 @@
 checklist  ["Portugal", "Germany", "Spain"]
 checklist  [i + "\n" ___ i __ checklist]
 
-with open("countries_missing.txt", "r") as file:
+with open("countries_missing.txt", "r") __ file:
     content  file.readlines()
 print(checklist + content)
 
 updated_list  s..(checklist + content)
 
-with open("countries_missing_fixed.txt", "w") as file:
+with open("countries_missing_fixed.txt", "w") __ file:
     ___ i __ updated_list:
         file.write(i)

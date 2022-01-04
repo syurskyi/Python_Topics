@@ -1,6 +1,6 @@
 ____ collections _______ Counter
 
-___ freq_digit(num: int) -> int:
+___ freq_digit(num: i..) __ i..:
     d.. = Counter(s..(num))
     max_value = max(d...values())
-    r.. int([key ___ key, value __ d...i.. __ value __ max_value][0])
+    r.. i..([key ___ key, value __ d...i.. __ value __ max_value][0])

@@ -22,7 +22,7 @@ ___ filter_names_1(names):
     filtered    # list
     cnt = 0
     ___ name __ names:
-        __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha():
+        __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha
             continue
         __ name.l..[0] __ QUIT_CHAR:
             break
@@ -39,7 +39,7 @@ print(filter_names_1(names))
 ___ filter_names_2(names):
     cnt = 0
     ___ name __ names:
-        __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha():
+        __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha
             continue
         __ name.l..[0] __ QUIT_CHAR:
             break

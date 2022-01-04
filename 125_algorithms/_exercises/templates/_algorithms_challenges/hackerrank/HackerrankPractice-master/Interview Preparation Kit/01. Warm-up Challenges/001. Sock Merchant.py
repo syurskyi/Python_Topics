@@ -12,7 +12,7 @@ ___ sock_merchant(ar):
     r.. ans
 
 
-n = int(input().strip())
-ar = l..(map(int, input().s...s..(' ')))
+n = i..(input().strip())
+ar = l..(map(i.., input().s...s..(' ')))
 result = sock_merchant(ar)
 print(result)

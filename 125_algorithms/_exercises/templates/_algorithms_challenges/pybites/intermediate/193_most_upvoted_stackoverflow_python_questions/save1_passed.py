@@ -53,6 +53,6 @@ ___ top_python_questions(url=cached_so_url):
     ___ question, vote, view __ final:
         __ view >= 1_000_000:
             output1.a..(question)
-            output2.a..(int(vote))
+            output2.a..(i..(vote))
 
     r.. s..(l..(z..(output1, output2)), key=l.... x :x[1], r.._T..

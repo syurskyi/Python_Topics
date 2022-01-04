@@ -40,7 +40,7 @@ ___ n __ fibonacci(100):
 print()
 
 
-___ fibonacci_co():
+___ fibonacci_co
     current  0
     next  1
 
@@ -50,7 +50,7 @@ ___ fibonacci_co():
 
 
 print('with yield')
-___ n __ fibonacci_co():
+___ n __ fibonacci_co
     __ n > 1000:
         _____
 

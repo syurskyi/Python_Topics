@@ -15,8 +15,8 @@ urlretrieve(
 
 year_argument = 'None'
 
-with open(commits) as f:
-    commit_log = defaultdict(int)
+with open(commits) __ f:
+    commit_log = defaultdict(i..)
     ___ line __ f:
         #print(line)
         date, commit  = line.s..(' | ')
@@ -26,9 +26,9 @@ with open(commits) as f:
         __ year_argument __ 'None' o. dt_yr __ year_argument:
             commit_list = commit.s..
             __ l..(commit_list) __ 7:
-                total_commit = int(commit_list[3])+int(commit_list[5])
+                total_commit = i..(commit_list[3])+i..(commit_list[5])
             ____:
-                total_commit = int(commit_list[3])
+                total_commit = i..(commit_list[3])
             #print(f'{year_month} {total_commit}')
             commit_log[year_month] += total_commit
     newlist = s..(commit_log.i.., key=l.... item: item[1], r.._T..

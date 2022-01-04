@@ -6,12 +6,12 @@ EOL_PUNCTUATION = ".!?"
 
 
 c_ Document:
-    ___ - ) -> N..
+    ___ - ) __ N..
         # it is up to you how to implement this method
         # feel free to alter this method and its parameters to your liking
         lines    # list
 
-    ___ add_line(self, line: s.., index: int = N..) -> Document:
+    ___ add_line(self, line: s.., index: i.. = N..) __ Document:
         """Add a new line to the document.
 
         Args:
@@ -32,7 +32,7 @@ c_ Document:
 
 
 
-    ___ swap_lines(self, index_one: int, index_two: int) -> Document:
+    ___ swap_lines(self, index_one: i.., index_two: i..) __ Document:
         """Swap two lines.
 
         Args:
@@ -53,7 +53,7 @@ c_ Document:
 
         r.. self
 
-    ___ merge_lines(self, indices: l..) -> Document:
+    ___ merge_lines(self, indices: l..) __ Document:
 
         """Merge several lines into a single line.
 
@@ -88,7 +88,7 @@ c_ Document:
 
 
 
-    ___ add_punctuation(self, punctuation: s.., index: int) -> Document:
+    ___ add_punctuation(self, punctuation: s.., index: i..) __ Document:
         """Add punctuation to the end of a sentence.
 
         Overwrites existing punctuation.
@@ -109,12 +109,12 @@ c_ Document:
         lines[index] = line
         r.. self
 
-    ___ word_count(self) -> int:
+    ___ word_count(self) __ i..:
         """Return the total number of words in the document."""
         r.. s..(l..(_remove_punctuation(line).s..()) ___ line __ lines)
 
     $
-    ___ words(self) -> l..:
+    ___ words(self) __ l..:
         """Return a list of unique words, sorted and case insensitive."""
         all_words = set()
         ___ line __ lines:
@@ -128,7 +128,7 @@ c_ Document:
 
 
 
-    ___ _remove_punctuation(self,line: s..) -> s..:
+    ___ _remove_punctuation(self,line: s..) __ s..:
         """Remove punctuation from a line."""
         # you can use this function as helper method for
         # Document.word_count() and Document.words

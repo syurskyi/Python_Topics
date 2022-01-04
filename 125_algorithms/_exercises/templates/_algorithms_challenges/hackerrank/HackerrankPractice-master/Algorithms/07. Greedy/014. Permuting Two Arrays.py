@@ -2,11 +2,11 @@
 # Score: 40
 
 
-n = int(input())
+n = i..(input())
 ___ _ __ r..(n):
-    __, k = map(int, input().s..())
-    a = s..(l..(map(int, input().s..())))
-    b = s..(l..(map(int, input().s..())), r.._T..
+    __, k = map(i.., input().s..())
+    a = s..(l..(map(i.., input().s..())))
+    b = s..(l..(map(i.., input().s..())), r.._T..
     __ a..([a[i] + b[i] >= k ___ i __ r..(l..(a))]):
         print('YES')
     ____:

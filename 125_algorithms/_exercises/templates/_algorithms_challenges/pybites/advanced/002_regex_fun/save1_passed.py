@@ -17,7 +17,7 @@ ___ extract_course_times(course=COURSE):
        course string. Timings are in mm:ss (minutes:seconds)
     """
     m = __.c..(r'\d+:\d+')
-    r.. m.findall(course)
+    r.. m.f..(course)
 
 
 ___ get_all_hashtags_and_links(tweet=TWEET):
@@ -25,10 +25,10 @@ ___ get_all_hashtags_and_links(tweet=TWEET):
        that is passed into this function.
     """
     m = __.c..(r'http\S+|#\w+')
-    r.. m.findall(tweet)
+    r.. m.f..(tweet)
 
 
 ___ match_first_paragraph(html=HTML):
     """Extract the first paragraph of the passed in html."""
     m = __.c..(r'<p>(.+?)</p>')
-    r.. m.findall(html)[0]
+    r.. m.f..(html)[0]

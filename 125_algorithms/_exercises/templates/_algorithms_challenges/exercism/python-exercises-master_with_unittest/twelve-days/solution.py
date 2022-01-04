@@ -29,5 +29,5 @@ ___ verses(start, end):
                     ___ n __ r..(start, end + 1)])
 
 
-___ sing():
+___ sing
     r.. verses(1, 12)

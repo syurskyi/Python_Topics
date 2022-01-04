@@ -4,6 +4,6 @@ ___ get_safe_position(N,K):
         safe_position = (safe_position+K) % i
     r.. safe_position+1
 
-N,K = map(int, input().s..())
+N,K = map(i.., input().s..())
 
 print(get_safe_position(N,K))

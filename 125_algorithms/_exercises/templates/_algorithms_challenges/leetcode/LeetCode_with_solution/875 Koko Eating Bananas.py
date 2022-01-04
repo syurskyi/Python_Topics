@@ -39,7 +39,7 @@ _______ math
 
 
 c_ Solution:
-    ___ minEatingSpeed(self, piles: List[int], H: int) -> int:
+    ___ minEatingSpeed(self, piles: List[i..], H: i..) __ i..:
         """
         validation:
             each piles  ceil(n/K)

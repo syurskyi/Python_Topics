@@ -1,5 +1,5 @@
 #accept the number of the element to generate random numbers
-data = int(input())
+data = i..(input())
 #accept the numbers from which random numbers will be generated
 a = l..(map(s..,input().s..()))
 #traverse through the list of the numbers
@@ -13,7 +13,7 @@ ___ i __ a:
         #store the value of i in the list
         store.a..(i)
         #convert the string to integer to perform the operations
-        i = int(i)
+        i = i..(i)
         #square the number
         i = i**2
         #covert to string to take the middle 4 number of the 8 digit number

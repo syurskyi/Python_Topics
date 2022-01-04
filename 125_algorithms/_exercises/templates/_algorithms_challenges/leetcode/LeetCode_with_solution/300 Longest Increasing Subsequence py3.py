@@ -21,7 +21,7 @@ ____ bisect _______ bisect_left
 
 
 c_ Solution:
-    ___ lengthOfLIS(self, nums: List[int]) -> int:
+    ___ lengthOfLIS(self, nums: List[i..]) __ i..:
         """
         LIS dp + binary search
         Patience sort

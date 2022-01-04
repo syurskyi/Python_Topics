@@ -25,7 +25,7 @@ c_ Solution:
     ___ - ):
         ret    # list
 
-    ___ letterCasePermutation(self, S: s..) -> List[s..]:
+    ___ letterCasePermutation(self, S: s..) __ List[s..]:
         """
         dfs
         """
@@ -42,7 +42,7 @@ c_ Solution:
             ret.a..(l..(lst))
             r..
 
-        __ S_lst[i].isdigit():
+        __ S_lst[i].isdigit
             lst.a..(S_lst[i])
             dfs(lst, S_lst, i + 1)
             lst.pop()

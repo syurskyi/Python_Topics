@@ -31,7 +31,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ isPossible(self, nums: List[int]) -> bool:
+    ___ isPossible(self, nums: List[i..]) __ bool:
         """
         Attribute a number to a existing consecutive subsequences
         future numbers depend on this number to form the subsequence can also
@@ -42,11 +42,11 @@ c_ Solution:
 
         Let F[i] be the number of consecutive subsequence at A[i]
         """
-        counter = defaultdict(int)
+        counter = defaultdict(i..)
         ___ e __ nums:
             counter[e] += 1
 
-        F = defaultdict(int)
+        F = defaultdict(i..)
         ___ e __ nums:
             __ counter[e] __ 0:
                 continue
@@ -81,7 +81,7 @@ c_ Interval:
 
 
 c_ Solution2:
-    ___ isPossible(self, nums: List[int]) -> bool:
+    ___ isPossible(self, nums: List[i..]) __ bool:
         """
         (length, last)
         heap sortest first

@@ -20,7 +20,7 @@ c_ Solution(object):
     dfsHelper(n / n, res, path, n)
     path.pop()
 
-    ___ i __ r..(start, int(n ** 0.5) + 1):
+    ___ i __ r..(start, i..(n ** 0.5) + 1):
       __ n % i __ 0:
         path.a..(i)
         dfsHelper(n / i, res, path, i)

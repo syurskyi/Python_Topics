@@ -3,7 +3,7 @@ ____ __ _______ sub
 
 
 ___ decode(string):
-    r.. sub(r'(\d+)(\D)', l.... m: m.group(2) * int(m.group(1)), string)
+    r.. sub(r'(\d+)(\D)', l.... m: m.group(2) * i..(m.group(1)), string)
 
 
 ___ encode(string):

@@ -9,15 +9,15 @@ c_ Solution(object):
     v2 = version2.s..(".")
     i = 0
     w.... i < l..(v1) a.. i < l..(v2):
-      v1Seg, v2Seg = int(v1[i]), int(v2[i])
+      v1Seg, v2Seg = i..(v1[i]), i..(v2[i])
       __ v1Seg > v2Seg:
         r.. 1
       ____ v1Seg < v2Seg:
         r.. -1
       ____:
         i += 1
-    __ i < l..(v1) a.. int("".j..(v1[i:])) != 0:
+    __ i < l..(v1) a.. i..("".j..(v1[i:])) != 0:
       r.. 1
-    __ i < l..(v2) a.. int("".j..(v2[i:])) != 0:
+    __ i < l..(v2) a.. i..("".j..(v2[i:])) != 0:
       r.. -1
     r.. 0
