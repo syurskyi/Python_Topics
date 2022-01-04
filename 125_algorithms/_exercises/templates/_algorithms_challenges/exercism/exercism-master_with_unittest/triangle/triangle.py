@@ -9,7 +9,7 @@ c_ Triangle:
         b = b
         c = c
         __ error
-            raise TriangleError
+            r.. TriangleError
 
     ___ kind
         __ equilateral

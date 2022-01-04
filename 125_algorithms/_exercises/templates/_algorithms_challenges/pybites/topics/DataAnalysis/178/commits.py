@@ -30,7 +30,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     """
     print(f'year argument is {year}')
     commit_log = defaultdict(i..)
-    with open(commits) __ f:
+    w__ open(commits) __ f:
         ___ line __ f:
             date, commit  = line.s..(' | ')
             date_time_obj = d__.strptime(date[12:], '%b %d %H:%M:%S %Y %z')

@@ -3,11 +3,11 @@ ____ functools _______ wraps
 
 ___ int_args(func):
     @wraps(func)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         __ n.. a..(map(l.... x: isi..(x, i..), args)):
-            raise TypeError
+            r.. T..
         ____ any(map(l.... x: x < 0, args)):
-            raise ValueError
-        r.. func(*args, **kwargs)
+            r.. ValueError
+        r.. func $ $$
     r.. wrapper
 #

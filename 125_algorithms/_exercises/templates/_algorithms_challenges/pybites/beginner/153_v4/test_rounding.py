@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ rounding _______ round_up_or_down
 
@@ -6,7 +6,7 @@ transactions1 = [2.05, 3.55, 4.50, 10.76, 100.25]
 transactions2 = [1.55, 9.17, 5.67, 6.77, 2.33]
 
 
-@pytest.mark.parametrize("transactions, up_arg, expected", [
+@p__.mark.parametrize("transactions, up_arg, expected", [
     (transactions1, T.., [3, 4, 5, 11, 101]),
     (transactions1, F.., [2, 3, 4, 10, 100]),
     (transactions2, T.., [2, 10, 6, 7, 3]),

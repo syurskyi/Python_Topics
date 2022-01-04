@@ -48,7 +48,7 @@ c_ Solution(object):
                 __ hasnext
                     r.. Node(i, j + 1)
 
-                raise StopIteration
+                r.. StopIteration
 
         h    # list
         ___ i __ xrange(m):

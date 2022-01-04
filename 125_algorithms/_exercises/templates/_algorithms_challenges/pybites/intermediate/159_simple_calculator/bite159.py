@@ -26,4 +26,4 @@ ___ simple_calculator(calculation):
         r.. operation[operator](i..(x), i..(y))
     
     except (ValueError, KeyError, ZeroDivisionError):
-        raise ValueError
+        r.. ValueError

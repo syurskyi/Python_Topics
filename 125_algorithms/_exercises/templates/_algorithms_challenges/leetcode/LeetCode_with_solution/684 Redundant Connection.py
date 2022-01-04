@@ -88,7 +88,7 @@ c_ Solution:
 
             ds.unionize(p, q)
 
-        raise
+        r..
 
 c_ Solution_dfs:
     ___ findRedundantConnection(self, edges: List[List[i..]]) __ List[i..]:
@@ -111,7 +111,7 @@ c_ Solution_dfs:
                         __ p __ circle a.. q __ circle:
                             r.. [p, q]
 
-        raise
+        r..
 
     ___ dfs(self, G, cur, pi, path, path_list, visited):
         visited.add(cur)

@@ -9,8 +9,8 @@ ___ convert(value: float, fmt: s..) __ float:
         __ fmt.l.. __ 'cm' o. fmt.l.. __ 'in':
             r.. round(value*2.54, 4) __ fmt.l.. __ 'cm' ____ round(value/2.54, 4)
         ____:
-            raise ValueError
+            r.. ValueError
     ____:
-        raise TypeError
+        r.. T..
 
 print(convert( 3.8, 'IN'))

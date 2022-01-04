@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ to_columns _______ print_names_to_columns
 
 
-@pytest.fixture
+@p__.fixture
 ___ names
     r.. "Bob Julian Tim Sara Eva Ana Jake Maria".s.. 
 

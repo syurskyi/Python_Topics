@@ -29,9 +29,9 @@ ___ convert(value: float, fmt: s..) __ float:
                 result = value*0.393700787
                 r.. round(result, 4)
         ____:
-            raise ValueError
+            r.. ValueError
     ____:
-        raise TypeError
+        r.. T..
 
 
 print(convert(60.5, "CM"))

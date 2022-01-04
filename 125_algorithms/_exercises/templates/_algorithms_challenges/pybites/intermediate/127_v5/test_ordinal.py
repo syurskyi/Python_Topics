@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ ordinal _______ get_ordinal_suffix
 
 
-@pytest.mark.parametrize("input_argument, expected_return", [
+@p__.mark.parametrize("input_argument, expected_return", [
     (0, '0th'),
     (1, '1st'),
     (2, '2nd'),

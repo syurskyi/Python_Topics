@@ -4,7 +4,7 @@ line  input("Enter values: ")
 
 line_list  line.s..(",")
 
-with open("user_data_commas.txt", "a+") __ file:
+w__ open("user_data_commas.txt", "a+") __ file:
     ___ i __ line_list:
         file.write(i + "\n")
 

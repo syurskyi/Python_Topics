@@ -20,15 +20,15 @@ c_ BridgeHand:
         of Card, or if the number of elements is not 13
         """
         __ n.. isi..(cards,seq):
-            raise TypeError("Not a sequence")
+            r.. T..("Not a sequence")
         
 
         __ n.. a..(isi..(card,Card) ___ card __ cards):
-            raise ValueError("all values in Seuqence must be instance of Card")
+            r.. ValueError("all values in Seuqence must be instance of Card")
 
 
         __ l..(cards) != 13:
-            raise ValueError("Must have 13 cards")
+            r.. ValueError("Must have 13 cards")
         
 
         cards = cards

@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ chaining_docs _______ Document
 
@@ -57,13 +57,13 @@ DOCS = {
 }
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ doc(request):
     """Factory method for test documents"""
     r.. DOCS.get(request.param, Document())
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "doc, expected",
     [
         ("complex", Document),
@@ -74,7 +74,7 @@ ___ test_correct_return_type(doc, expected):
     ... isi..(doc, expected)
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "doc, expected",
     [
         ("tale", 4),
@@ -90,7 +90,7 @@ ___ test_len_implementation(doc, expected):
     ... l..(doc) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "doc, expected",
     [
         ("tale", 21),
@@ -106,7 +106,7 @@ ___ test_word_count_implementation(doc, expected):
     ... doc.word_count() __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "doc, expected",
     [
         ("four-liner", "first\nsecond\nthird\nfourth"),
@@ -128,7 +128,7 @@ ___ test_correct_chaining(doc, expected):
     ... s..(doc) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "doc, expected",
     [
         (

@@ -5,9 +5,9 @@ ___ make_html(element):
     '''Wraps text with HTML tag.'''
     ___ decorate(func):
         @wraps(func)
-        ___ wrapper(*args, **kwargs):
+        ___ wrapper $ $$:
             '''Returns text wrapped in provided HTML tag'''
-            r.. f'<{element}>{func(*args, **kwargs)}</{element}>'
+            r.. f'<{element}>{func $ $$}</{element}>'
         r.. wrapper
     r.. decorate
 

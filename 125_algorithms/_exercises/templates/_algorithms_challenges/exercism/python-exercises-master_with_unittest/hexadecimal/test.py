@@ -35,11 +35,11 @@ c_ HexadecimalTest(unittest.TestCase):
         assertEqual(hexa('00fff0'), 65520)
 
     ___ test_invalid_hexa
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             hexa('carrot')
 
     ___ test_invalid_empty_string
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             hexa('')
 
 

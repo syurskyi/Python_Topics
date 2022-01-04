@@ -6,7 +6,7 @@ c_ Board:
         white_coords = white_coords
         black_coords = black_coords
         __ n.. valid_coords
-            raise ValueError
+            r.. ValueError
         board = generate_board()
 
     ___ generate_board

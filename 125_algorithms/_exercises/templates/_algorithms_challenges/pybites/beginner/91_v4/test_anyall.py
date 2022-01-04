@@ -1,11 +1,11 @@
-_______ pytest
+_______ p__
 
 ____ Previous.anyall _______ (contains_only_vowels,
                              contains_any_py_chars,
                              contains_digits)
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ('aioue', T..),
     ('EoUia', T..),
     ('aaAiIee', T..),
@@ -19,7 +19,7 @@ ___ test_contains_only_vowels(arg, expected):
     ... bool(contains_only_vowels(arg)) __ expected
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ('Python', T..),
     ('pycharm', T..),
     ('PYTHON', T..),
@@ -39,7 +39,7 @@ ___ test_contains_any_py_chars(arg, expected):
     ... bool(contains_any_py_chars(arg)) __ expected
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ('yes1', T..),
     ('123', T..),
     ('hello2', T..),

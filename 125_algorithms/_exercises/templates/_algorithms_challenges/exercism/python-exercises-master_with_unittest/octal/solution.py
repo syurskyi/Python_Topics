@@ -7,5 +7,5 @@ ___ parse_octal(d..):
 ___ _validate_octal(d..):
     ___ d __ d..:
         __ n.. '0' <= d < '8':
-            raise ValueError("Invalid octal digit: " + d)
+            r.. ValueError("Invalid octal digit: " + d)
     r.. d..

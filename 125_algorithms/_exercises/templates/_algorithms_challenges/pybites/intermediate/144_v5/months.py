@@ -32,7 +32,7 @@ ___ calc_months_passed(year, month, day):
     end_date = date y.._year,  m.._month,  d.._day)
 
     __ end_date < START_DATE:
-        raise ValueError('Invalid date')
+        r.. ValueError('Invalid date')
 
     result = relativedelta(end_date, START_DATE)
 

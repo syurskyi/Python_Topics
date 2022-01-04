@@ -7,7 +7,7 @@ ___ get_movie_data(files: l..) __ l..:
     """Parse movie json files into a list of dicts"""
     out_lst    # list
     ___ file __ files:
-        with open(file) __ f:
+        w__ open(file) __ f:
             out_lst.a..(json.load(f))
     out_lst.s..(key=l.... m: m['Title'])
     r.. out_lst

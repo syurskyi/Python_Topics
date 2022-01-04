@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ check_split _______ check_split
 
 
-@pytest.mark.parametrize("args, expected", [
+@p__.mark.parametrize("args, expected", [
     (('$8.68', '4.75%', '10%', 3), '$10.00'),
     (('$8.44', '6.75%', '11%', 3), '$10.00'),
     (('$9.99', '3.25%', '10%', 2), '$11.34'),

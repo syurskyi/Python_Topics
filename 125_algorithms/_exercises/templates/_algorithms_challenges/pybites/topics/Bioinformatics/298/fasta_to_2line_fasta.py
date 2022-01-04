@@ -16,7 +16,7 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
     :param fasta_2line_file: Filename of 2-line FASTA file
     :return: Number of records
     """
-    with open(fasta_2line_file, 'w') __ f:
+    w__ open(fasta_2line_file, 'w') __ f:
         sequence = l..(SeqIO.parse(fasta_file, "fasta"))
         ___ record __ sequence:
             #print(f'>{record.description}\n{record.seq}')

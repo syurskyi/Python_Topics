@@ -27,7 +27,7 @@ ___ _parse_book_line(line):
 ___ create_chart
 
     chart = defaultdict(s..)
-    with open(SAFARI_LOGS, 'r') __ f:
+    w__ open(SAFARI_LOGS, 'r') __ f:
         prev = f.readline()
         ___ line __ f:
             __ 'sending to slack channel' __ line:

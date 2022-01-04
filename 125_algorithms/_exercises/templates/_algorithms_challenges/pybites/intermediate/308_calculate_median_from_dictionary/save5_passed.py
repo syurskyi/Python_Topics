@@ -12,7 +12,7 @@ ___ calc_median_from_dict(d: d..) __ float:
 
     ___ value __ values_sorted.v..
         __ t..(value) __ n.. i..:
-            raise TypeError
+            r.. T..
 
     __ l..(values_sorted) __ 1:
         r.. l..(values_sorted.keys())[0]

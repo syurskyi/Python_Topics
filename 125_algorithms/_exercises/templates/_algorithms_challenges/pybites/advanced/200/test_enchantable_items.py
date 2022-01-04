@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ enchantable_items _______ (
     Enchantment,
@@ -54,7 +54,7 @@ mock_html = """
 """
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ enchantment_mock
     enchant = Enchantment(
         "python_developer",
@@ -65,28 +65,28 @@ ___ enchantment_mock
     r.. enchant
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ item_mock(enchantment_mock):
     item = Item("clamytoe")
     r.. item
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ mock_soup
     r.. get_soup(mock_html)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ mock_data(mock_soup):
     r.. generate_enchantments(mock_soup)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ mocked_generate_items(mock_data):
     r.. generate_items(mock_data)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ coders_dataset
     soup = get_soup()
     mc_data = generate_enchantments(soup)
@@ -138,7 +138,7 @@ ___ test_enchantment_print(mock_data, capfd):
     )
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "enchant, expected",
     [
         ("aqua_affinity", 1),
@@ -167,7 +167,7 @@ ___ test_generate_enchantments_from_source
     ... data["efficiency"].max_level __ 5
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "item, expected",
     [
         ("armor", "Blast Protection"),
@@ -181,7 +181,7 @@ ___ test_gen_items_mocked(mocked_generate_items, item, expected):
     ... mocked_generate_items[item].enchantments[0].name __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "item, expected",
     [
         (
@@ -249,7 +249,7 @@ ___ test_gen_items(coders_dataset, item, expected):
     ... [enc.id_name ___ enc __ coders_dataset[item].enchantments] __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "item, expected",
     [
         (

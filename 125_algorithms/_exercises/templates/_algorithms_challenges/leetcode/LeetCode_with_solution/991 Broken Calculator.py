@@ -87,7 +87,7 @@ c_ Solution:
             q = cur_q
             t += 1
 
-        raise
+        r..
 
 
 __ __name__ __ "__main__":

@@ -18,7 +18,7 @@ ___ class_rosters(input_file):
         Return a list holding one item per student
         per class, correctly formatted.'''
     sis_list = l..()
-    with open(input_file, 'r') __ f:
+    w__ open(input_file, 'r') __ f:
         ___ row __ csv.reader(f):
             sis_rows = process_row(row)
             __ sis_rows:

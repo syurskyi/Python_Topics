@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ scores _______ Player, calculate_score, get_winner
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ([1, 3, 2, 5], 5),
     ([1, 4, 2, 5], 9),
     ([1, 1, 1, 1], 0),
@@ -14,13 +14,13 @@ ___ test_calculate_score(arg, expected):
     ... calculate_score(arg) __ expected
 
 
-@pytest.mark.parametrize("arg", [
+@p__.mark.parametrize("arg", [
     [4, 5, 6, 'a'],
     [4, -5, -1, 2],
     [4, 7, 6, 2],
 ])
 ___ test_wrong_inputs(arg):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         calculate_score(arg)
 
 
@@ -39,7 +39,7 @@ ___ test_winner_shorter_score_len_raises_exception
       Player(name='player 2', scores=[4, 4, 6]),  # lacks one score
       Player(name='player 3', scores=[4, 5, 6, 6]),
     ]
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         get_winner(players)
 
 
@@ -49,5 +49,5 @@ ___ test_winner_longer_score_len_raises_exception
       Player(name='player 2', scores=[4, 4, 6, 6, 3, 2]),  # 1 more
       Player(name='player 3', scores=[4, 5, 6, 6, 5]),
     ]
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         get_winner(players)

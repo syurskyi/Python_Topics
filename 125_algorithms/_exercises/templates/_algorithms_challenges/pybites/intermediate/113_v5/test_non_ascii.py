@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ non_ascii _______ extract_non_ascii_words
 
 
-@pytest.mark.parametrize("phrase, expected", [
+@p__.mark.parametrize("phrase, expected", [
     ('An preost wes on leoden, Laȝamon was ihoten', ['Laȝamon']),
     ('He wes Leovenaðes sone -- liðe him be Drihten', ['Leovenaðes', 'liðe']),
     ('He wonede at Ernleȝe at æðelen are chirechen', ['Ernleȝe', 'æðelen']),

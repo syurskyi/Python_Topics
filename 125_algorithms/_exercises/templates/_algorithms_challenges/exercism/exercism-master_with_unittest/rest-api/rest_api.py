@@ -24,7 +24,7 @@ c_ RestAPI(object):
 
     ___ post(self, url, payload_ N..
         __ payload __ N..
-            raise ValueError("Payload must not be None.")
+            r.. ValueError("Payload must not be None.")
 
         payload = json.loads(payload)
         __ url __ '/add':

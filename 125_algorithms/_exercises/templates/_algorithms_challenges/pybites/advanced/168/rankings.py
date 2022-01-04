@@ -38,7 +38,7 @@ c_ Ninja:
 
             r.. bites < other.bites
 
-        raise ValueError
+        r.. ValueError
     
 
     ___ __gt__(self,other):
@@ -46,14 +46,14 @@ c_ Ninja:
 
             r.. bites > other.bites
 
-        raise ValueError
+        r.. ValueError
 
     ___ __eq__(self,other):
         __ isi..(other,Ninja):
 
             r.. bites __ other.bites
 
-        raise ValueError
+        r.. ValueError
     
     ___ __repr__
         r.. f"[{bites}] {name}"

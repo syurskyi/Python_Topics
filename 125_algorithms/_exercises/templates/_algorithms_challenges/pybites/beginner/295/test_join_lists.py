@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ join_lists _______ join_lists
 
 
-@pytest.mark.parametrize('input_list, sep, expected', [
+@p__.mark.parametrize('input_list, sep, expected', [
                         ([], '&', N..),
                         ([['a']], '|', ['a']),
                         ([['a', 'b']], '&', ['a', 'b']),

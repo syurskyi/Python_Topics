@@ -24,8 +24,8 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
         base_num = base_num[::-1]  #To reverse the string
         r.. base_num
     ____ n.. (isi..(number, i..)):
-        raise TypeError
+        r.. T..
     ____:
-        raise ValueError
+        r.. ValueError
 
 #print(convert(128, 5))

@@ -40,7 +40,7 @@ c_ Groceries:
                 _items.pop(i)
                 break
         ____:
-            raise IndexError(f'{product} not in cart')
+            r.. IndexError(f'{product} not in cart')
         show()
 
     ___ s..(self, s..):

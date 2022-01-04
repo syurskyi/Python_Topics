@@ -20,7 +20,7 @@ ___ pretty_date(date):
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
     __ n.. isi..(date, d__) o. date > NOW:
-        raise ValueError
+        r.. ValueError
 
     secs = (NOW - date).total_seconds()
     print(f'{secs=}')

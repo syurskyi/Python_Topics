@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ constructors _______ Domain, DomainException
 
@@ -11,11 +11,11 @@ ___ test_create_domain_from_name
 
 
 ___ test_invalid_domain
-    with pytest.raises(DomainException):
+    w__ p__.r..(DomainException):
         Domain("nu.nlll")
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ("https://pybit.es", "pybit.es"),
     ("http://pybit.es", "pybit.es"),
     ("https://pybit.es/get-python-source.html", "pybit.es"),
@@ -29,7 +29,7 @@ ___ test_create_domain_from_url(arg, expected):
     ... s..(domain) __ expected
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ("bob@pybit.es", "pybit.es"),
     ("bob@gmail.com", "gmail.com"),
     ("tim@example.net", "example.net"),

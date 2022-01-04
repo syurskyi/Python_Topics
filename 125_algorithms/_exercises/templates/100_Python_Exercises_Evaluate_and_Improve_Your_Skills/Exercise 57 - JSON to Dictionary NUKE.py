@@ -2,7 +2,7 @@
 _______ json
 ____ pprint _______ pprint
 
-with open("company1.json","r") __ file:
+w__ open("company1.json","r") __ file:
     d  json.load(file)
 
 #d = json.load("company1.json")

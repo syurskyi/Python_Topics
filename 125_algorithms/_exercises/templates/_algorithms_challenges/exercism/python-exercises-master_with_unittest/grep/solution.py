@@ -46,7 +46,7 @@ ___ grep(pattern, files, flags=''):
     matched_lines    # list
 
     ___ file_name __ files:
-        with open(file_name) __ f:
+        w__ open(file_name) __ f:
             ___ line_number, line __ e..(f.readlines(), start=1):
                 __ matches(line, pattern, flags):
                     matched_lines.a..((file_name, line_number, line))

@@ -15,7 +15,7 @@ ___ load(name):
     filename  get_full_pathname(name)
 
     __ os.path.exists(filename):
-        with open(filename) __ fin:
+        w__ open(filename) __ fin:
             ___ entry __ fin.readlines
                 data.a..(entry.rstrip())
 
@@ -26,7 +26,7 @@ ___ save(name, journal_data):
     filename  get_full_pathname(name)
     print("..... saving to: {}".f..(filename))
 
-    with open(filename, 'w') __ fout:
+    w__ open(filename, 'w') __ fout:
         ___ entry __ journal_data:
             fout.write(entry + '\n')
 

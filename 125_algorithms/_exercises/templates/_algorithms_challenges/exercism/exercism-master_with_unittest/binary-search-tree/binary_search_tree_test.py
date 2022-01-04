@@ -73,7 +73,7 @@ c_ BinarySearchTreeTest(unittest.TestCase):
         try:
             compare_tree(tree_one, tree_two)
         except AssertionError:
-            raise AssertionError("{} != {}".f..(tree_one, tree_two))
+            r.. AssertionError("{} != {}".f..(tree_one, tree_two))
 
     ___ compare_tree(self, tree_one, tree_two):
         assertEqual(tree_one.data, tree_two.data)
@@ -84,7 +84,7 @@ c_ BinarySearchTreeTest(unittest.TestCase):
         ____ tree_one.left __ N.. a.. tree_two.left __ N..
             p..
         ____:
-            raise AssertionError
+            r.. AssertionError
 
         # Compare right tree nodes
         __ tree_one.right a.. tree_two.right:
@@ -92,7 +92,7 @@ c_ BinarySearchTreeTest(unittest.TestCase):
         ____ tree_one.right __ N.. a.. tree_two.right __ N..
             p..
         ____:
-            raise AssertionError
+            r.. AssertionError
 
 
 __ __name__ __ '__main__':

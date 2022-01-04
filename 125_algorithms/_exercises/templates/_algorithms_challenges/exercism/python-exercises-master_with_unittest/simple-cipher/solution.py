@@ -10,7 +10,7 @@ c_ Cipher(object):
             random.seed(time())
             key = ''.j..(random.choice(ascii_lowercase) ___ i __ r..(100))
         ____ n.. key.isalpha() o. n.. key.isl..
-            raise ValueError('Wrong key parameter!')
+            r.. ValueError('Wrong key parameter!')
         key = key
 
     ___ encode(self, text):

@@ -57,7 +57,7 @@ c_ Solution:
             __ a + diff __ set_B:
                 r.. [a, a + diff]
                 
-        raise
+        r..
 
     ___ fairCandySwap_complex(self, A: List[i..], B: List[i..]) __ List[i..]:
         """
@@ -79,4 +79,4 @@ c_ Solution:
             __ i < l..(B) a.. B[i] __ a + diff:
                 r.. [a, a + diff]
 
-        raise
+        r..

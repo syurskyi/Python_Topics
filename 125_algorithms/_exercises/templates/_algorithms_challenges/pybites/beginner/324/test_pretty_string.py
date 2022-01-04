@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ pretty_string _______ pretty_string
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "input_obj, expected_result",
     [
         (l..(r..(10)), "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"),

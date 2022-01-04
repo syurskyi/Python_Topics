@@ -3,10 +3,10 @@ ___ positive_divide(numerator, denominator):
         result = numerator / denominator
     except ZeroDivisionError:
         r.. 0
-    except TypeError:
-        raise
+    except T..:
+        r..
 
     __ result < 0:
-        raise ValueError
+        r.. ValueError
     ____:
         r.. result

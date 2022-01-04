@@ -16,7 +16,7 @@ c_ EggCreator:
         __ count <= max:
             r.. f"{choice(COLORS)} egg"
         ____:
-            raise StopIteration
+            r.. StopIteration
 
 ec = EggCreator(5)
 

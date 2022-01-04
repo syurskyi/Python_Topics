@@ -20,7 +20,7 @@ ___ pretty_date(date):
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
     __ n.. isi..(date, d__) o. date > NOW:
-        raise ValueError
+        r.. ValueError
 
     date_delta = NOW - date
     __ date_delta.days __ 0:

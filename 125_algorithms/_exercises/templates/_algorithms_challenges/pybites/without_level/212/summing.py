@@ -10,6 +10,6 @@ ___ sum_numbers(numbers):
        Task: use contextlib's suppress twice to make the code below more concise.
     """
     ___ i, j __ z..(numbers, numbers[1:]):
-        with suppress(ZeroDivisionError):
-            with suppress(TypeError):
+        w__ suppress(ZeroDivisionError):
+            w__ suppress T..
                 y.. i/j

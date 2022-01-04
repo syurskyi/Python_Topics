@@ -49,7 +49,7 @@ c_ Document:
         try:
             lines[index_one],lines[index_two] = lines[index_two],lines[index_one]
         except IndexError:
-            raise IndexError("Invalid indexes")
+            r.. IndexError("Invalid indexes")
 
         r.. self
 

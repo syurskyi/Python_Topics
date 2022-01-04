@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ income _______ get_income_distribution
 
@@ -46,12 +46,12 @@ EXPECTED = {'High income': ['Aruba',
                                     'Venezuela, RB']}
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ actual
     r.. get_income_distribution()
 
 
-@pytest.mark.parametrize("income, countries", EXPECTED.i..
+@p__.mark.parametrize("income, countries", EXPECTED.i..
 ___ test_return_function(actual, income, countries):
     ... income __ actual
     ... s..(actual[income]) __ s..(countries)

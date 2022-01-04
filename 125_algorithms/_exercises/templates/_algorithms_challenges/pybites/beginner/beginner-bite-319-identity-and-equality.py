@@ -74,7 +74,7 @@ c_ Car:
     @staticmethod
     ___ has_same_configuration(config1, config2):
         __ t..(config1) != l.. o. t..(config2) != l..:  # *
-            raise TypeError()
+            r.. T..()
         r.. config1 __ config2  # *
 
 
@@ -104,7 +104,7 @@ config1    # dict
 config2 = [['gas', 'electro', 'hybrid'], '200 PS', 'radio']
 
 __ t..(config1) != l.. o. t..(config2) != l..:
-    raise TypeError()
+    r.. T..()
 ____:
     print("OK")
 

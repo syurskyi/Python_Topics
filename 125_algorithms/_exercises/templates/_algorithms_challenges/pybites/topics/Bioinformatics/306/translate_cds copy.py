@@ -18,6 +18,6 @@ ___ translate_cds(cds: s.., translation_table: s..) __ s..:
                 .translate(table=translation_table, to_stop=T.., cds=T..)
                 )
     except TranslationError:
-        raise TranslationError
+        r.. TranslationError
 
 #print(translate_cds("ATGTAATAA", "Standard"))

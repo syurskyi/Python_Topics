@@ -19,7 +19,7 @@ ___ _create_defeat_mapping
     """
     
     mapping = defaultdict(set)
-    with open(BATTLE_DATA,'r') __ f:
+    w__ open(BATTLE_DATA,'r') __ f:
         reader = csv.DictReader(f)
         ___ row __ reader:
             attacker = row['Attacker']
@@ -58,7 +58,7 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
 
 
     __ player1 n.. __ defeat_mapping o. player2 n.. __ defeat_mapping:
-        raise ValueError("Invalid attackers")
+        r.. ValueError("Invalid attackers")
 
     __ player1 __ player2:
         r.. "Tie"

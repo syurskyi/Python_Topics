@@ -1,6 +1,6 @@
 _______ json
 
-with open("file2.txt") __ json_file1:
+w__ open("file2.txt") __ json_file1:
     data  json.load(json_file1)
 print("DATA", data)
 
@@ -14,5 +14,5 @@ data["metals"]["gold"]  {
     "tensile strength": 441,
     "minimum impact energy": 22
     }
-with open("file2.txt", "w") __ json_file2:
+w__ open("file2.txt", "w") __ json_file2:
     json.dump(data, json_file2)

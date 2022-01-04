@@ -32,7 +32,7 @@ ___ get_all_line_counts(data: s.. = STATS) __ l..:
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
     lines    # list
-    with open(data,'r') __ f:
+    w__ open(data,'r') __ f:
         ___ line __ f:
             line = line.s..
             space_index = line.index(' ')

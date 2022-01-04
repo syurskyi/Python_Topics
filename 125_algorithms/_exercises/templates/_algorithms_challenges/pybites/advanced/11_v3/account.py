@@ -14,27 +14,27 @@ c_ Account:
 
     ___ __lt__(self, other):
         __ n.. isi..(other, Account):
-            raise ValueError()
+            r.. ValueError()
         r.. balance < other.balance
 
     ___ __gt__(self, other):
         __ n.. isi..(other, Account):
-            raise ValueError()
+            r.. ValueError()
         r.. balance > other.balance
 
     ___ __eq__(self, other):
         __ n.. isi..(other, Account):
-            raise ValueError()
+            r.. ValueError()
         r.. balance __ other.balance
 
     ___ __le__(self, other):
         __ n.. isi..(other, Account):
-            raise ValueError()
+            r.. ValueError()
         r.. balance <= other.balance
 
     ___ __ge__(self, other):
         __ n.. isi..(other, Account):
-            raise ValueError()
+            r.. ValueError()
         r.. balance >= other.balance
 
     ___ __getitem__(self, item):
@@ -42,12 +42,12 @@ c_ Account:
 
     ___ __add__(self, other):
         __ n.. isi..(other, i..):
-            raise ValueError
+            r.. ValueError
         _transactions.a..(other)
 
     ___ __sub__(self, other):
         __ n.. isi..(other, i..):
-            raise ValueError
+            r.. ValueError
         _transactions.a..(-other)
 
     ___ __str__

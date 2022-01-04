@@ -23,7 +23,7 @@ c_ DateFormat(Enum):
             r.. d_parse_formats
         __ 0 <= val <= l..(d_parse_formats):
             r.. d_parse_formats[val]
-        raise ValueError
+        r.. ValueError
 
 
 c_ InfDateFmtError(Exception):
@@ -93,7 +93,7 @@ ___ get_dates(dates):
                 #print(f'good {date} {enum_list[0]} {date_str} {output_date_str}')
                 #return_list.append(output_date_str)
     ____:
-        raise InfDateFmtError 
+        r.. InfDateFmtError 
     r.. return_list
 
 

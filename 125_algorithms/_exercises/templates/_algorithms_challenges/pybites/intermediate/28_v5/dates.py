@@ -18,7 +18,7 @@ ___ _get_dates
     local = os.path.j..(TMP, RSS_FEED)
     urlretrieve(remote, local)
 
-    with open(local) __ f:
+    w__ open(local) __ f:
         r.. PUB_DATE.f..(f.read())
 
 

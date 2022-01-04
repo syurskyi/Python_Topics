@@ -7,10 +7,10 @@ ___ cached_property(func):
     """decorator used to cache expensive object attribute lookup"""
     cache = N..
     @wraps(func)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         nonlocal cache
         __ cache __ N..
-            cache = func(*args, **kwargs)
+            cache = func $ $$
         r.. cache
     r.. wrapper
 
@@ -39,7 +39,7 @@ c_ Planet:
 
     ___ __setattr__(self, var, val):
         __ var __ 'mass':
-            raise AttributeError
+            r.. AttributeError
         ____:
             super(Planet, self).__setattr__(var, val)
     # @mass.setter

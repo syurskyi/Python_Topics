@@ -10,11 +10,11 @@ ___ convert(value: float, fmt: s..) __ float:
     w.... is_float __ N..
         try:
             is_float = float(value)
-        except TypeError:
+        except T..:
             print('TypeError. Please input float.')
     __ fmt __ 'cm':
         r.. round(value * 2.54, 4)
     ____ fmt __ 'in':
         r.. round(value / 2.54, 4)
     ____:
-        raise ValueError
+        r.. ValueError

@@ -1,6 +1,6 @@
 _______ logging
 
-_______ pytest
+_______ p__
 
 ____ log_it _______ CRITICAL, DEBUG, ERROR, INFO, WARNING, log_it
 
@@ -18,7 +18,7 @@ ___ test_callable_log_levels
         ... callable(LOG_LEVEL[level])
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "msg, level",
     [
         ("This is a debug message", "debug"),

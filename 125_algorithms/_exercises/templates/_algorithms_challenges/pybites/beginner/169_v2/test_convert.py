@@ -1,15 +1,15 @@
-_______ pytest
+_______ p__
 
 ____ convert _______ convert
 
 
 ___ test_non_numeric_value
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         convert("153.67", "in")
 
 
 ___ test_unsupported_formats
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         convert(300, "km")
 
 
@@ -18,7 +18,7 @@ ___ test_with_mixed_case_formats
     ... convert(60.5, "CM") __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "input_argument, expected_output",
     [
         (1, 2.54),
@@ -49,7 +49,7 @@ ___ test_convert_from_inches_to_centimeters(input_argument, expected_output):
     ... convert(input_argument, "cm") __ expected_output
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "input_argument, expected_output",
     [
         (1, 0.3937),

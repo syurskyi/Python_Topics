@@ -64,7 +64,7 @@ ___ _get_pycons
     """Helper function that retrieves required PyCon data
        and returns a list of PyCon objects
     """
-    with open(pycons_file, "r", encoding="utf-8") __ f:
+    w__ open(pycons_file, "r", encoding="utf-8") __ f:
         r.. [
             PyCon(
                 pycon["name"],
@@ -91,7 +91,7 @@ ___ _km_distance(origin, destination):
 ___ _extract_city_country_to_lat_lon
         
     
-    with open(nominatim_responses,'r') __ f:
+    w__ open(nominatim_responses,'r') __ f:
         places = json.load(f)
     
     mapping    # dict

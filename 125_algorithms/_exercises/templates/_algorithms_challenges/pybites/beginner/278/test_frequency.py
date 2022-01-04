@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ frequency _______ major_n_minor
 
 
-@pytest.mark.parametrize("data, expected", [
+@p__.mark.parametrize("data, expected", [
     ([1, 2, 3, 2, 2, 2, 3], (2, 1)),
     ([0, 0, 0, 1, 2, 2], (0, 1)),
     ([9, 8, 7, 8, 8, 9], (8, 7)),

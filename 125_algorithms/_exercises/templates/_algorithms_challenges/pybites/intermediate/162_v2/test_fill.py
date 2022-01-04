@@ -1,11 +1,11 @@
-_______ pytest
+_______ p__
 
 ____ fill _______ prefill_with_character, HTML_SPACE
 
 DIFF_FILL = 'x'
 
 
-@pytest.mark.parametrize("value, len_, fill, result", [
+@p__.mark.parametrize("value, len_, fill, result", [
     (1, 4, HTML_SPACE, f'{HTML_SPACE*3}1'),
     (20, 4, HTML_SPACE, f'{HTML_SPACE*2}20'),
     (315, 4, HTML_SPACE, f'{HTML_SPACE}315'),

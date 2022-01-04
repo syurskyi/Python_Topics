@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ bt _______ check_bt, Bloodtype
 
 
@@ -58,21 +58,21 @@ ___ test_red_blood_cell_incompatibility_text_input
 
 
 ___ test_invalid_value_text_input
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         check_bt("X-", "Y+")
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         check_bt("0", "A+")
 
 
 ___ test_invalid_value_numeric_input
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         check_bt(8, 1)
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         check_bt(3, -1)
 
 
 ___ test_invalid_type
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         check_bt(1.0, 1)
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         check_bt(3, ["AB", "Rh+"])

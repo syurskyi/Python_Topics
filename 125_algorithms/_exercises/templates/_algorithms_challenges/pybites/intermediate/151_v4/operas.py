@@ -75,7 +75,7 @@ ___ operas_both_at_premiere(guest, composer):
        Returns a list (or generator) of titles of operas.
     """
     __ composer n.. __ composers o. guest n.. __ composers:
-        raise ValueError
+        r.. ValueError
 
     comp = composers[composer]
     gst= composers[guest]

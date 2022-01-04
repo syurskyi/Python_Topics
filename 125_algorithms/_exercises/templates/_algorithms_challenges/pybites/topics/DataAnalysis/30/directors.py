@@ -23,7 +23,7 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     director = defaultdict(l..)
-    with open(local, encoding="utf-8") __ f:
+    w__ open(local, encoding="utf-8") __ f:
         movies = csv.DictReader(f)
         ___ movie __ movies:
             __ movie['title_year'] != '' a.. i..(movie['title_year']) > 1960:

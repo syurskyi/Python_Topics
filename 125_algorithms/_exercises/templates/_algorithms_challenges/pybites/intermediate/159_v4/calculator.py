@@ -20,13 +20,13 @@ ___ simple_calculator(calculation):
        If bad data is passed in, raise a ValueError.
     """
     __ n.. any([op __ calculation ___ op __ OPS]):
-        raise ValueError
+        r.. ValueError
 
     # assume op is good and split the string
     args = calculation.s..
 
     __ l..(args) != 3:
-        raise ValueError
+        r.. ValueError
 
     a, op, b = args
 
@@ -34,6 +34,6 @@ ___ simple_calculator(calculation):
     a, b = (i..(x) ___ x __ (a, b))
 
     __ b __ 0 a.. op __ '/':
-        raise ValueError
+        r.. ValueError
 
     r.. OPS[op](a, b)

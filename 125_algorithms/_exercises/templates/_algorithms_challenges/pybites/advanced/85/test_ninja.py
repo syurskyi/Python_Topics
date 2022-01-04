@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ ninja _______ NinjaBelt
 
@@ -7,19 +7,19 @@ CONGRATS_MSG = ('Congrats, you earned {score} points '
 NEW_SCORE_MSG = 'Set new score to {score}'
 
 
-@pytest.fixture
+@p__.fixture
 ___ ninja
     r.. NinjaBelt()
 
 
-@pytest.fixture
+@p__.fixture
 ___ white_belt
     ninja = NinjaBelt(score=10)
     ninja._last_earned_belt = 'white'
     r.. ninja
 
 
-@pytest.fixture
+@p__.fixture
 ___ yellow_belt
     ninja = NinjaBelt(score=50)
     ninja._last_earned_belt = 'yellow'
@@ -68,11 +68,11 @@ ___ test_gt_max_score_highest_belt(ninja, capfd):
 
 
 ___ test_new_score_should_be_int(ninja):
-    with pytest.raises(ValueError, m..="Score takes an int"):
+    w__ p__.r..(ValueError, m..="Score takes an int"):
         ninja.score = 'a'
 
 
 ___ test_new_score_should_be_higher(yellow_belt):
     ... yellow_belt.score __ 50
-    with pytest.raises(ValueError, m..="Cannot lower score"):
+    w__ p__.r..(ValueError, m..="Cannot lower score"):
         yellow_belt.score = 40

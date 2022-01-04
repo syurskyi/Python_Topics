@@ -81,7 +81,7 @@ c_ Solution:
                         pi.right = cur
                         stk.pop()
                     ____:
-                        raise
+                        r..
                     stk.a..((depth, cur))
 
                 depth = 0
@@ -132,7 +132,7 @@ c_ Solution:
                     stk[-1].right = cur
                     stk.pop()
                 ____:
-                    raise
+                    r..
                 stk.a..(cur)
 
         r.. root

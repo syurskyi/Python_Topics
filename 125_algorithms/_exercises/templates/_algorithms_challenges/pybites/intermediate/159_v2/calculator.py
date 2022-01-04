@@ -35,10 +35,10 @@ ___ simple_calculator(calculation):
         try:
             r.. operation(float(values[0]),float(values[2]))
         except ZeroDivisionError:
-            raise ValueError("Division by zero")
+            r.. ValueError("Division by zero")
 
 
-    raise ValueError("Invalid Operation")
+    r.. ValueError("Invalid Operation")
 
 
 

@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ search_apartment _______ search_apartment
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "buildings, direction, expected",
     [
         ([1, 1, 1, 1, 1], "W", [0]),

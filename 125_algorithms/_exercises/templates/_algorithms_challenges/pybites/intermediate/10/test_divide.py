@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ divide _______ positive_divide
 
@@ -14,10 +14,10 @@ ___ test_positive_divide_exceptions
     try:
         positive_divide(2, 0)
     except ZeroDivisionError:
-        pytest.fail("Unexpected ZeroDivisionError!")
-    with pytest.raises(TypeError):
+        p__.fail("Unexpected ZeroDivisionError!")
+    w__ p__.r.. T..
         positive_divide(1, 's')
         positive_divide([], 2)
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         positive_divide(1, -2)
         positive_divide(-1, 2)

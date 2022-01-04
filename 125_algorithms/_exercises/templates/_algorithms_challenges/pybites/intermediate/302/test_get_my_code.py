@@ -1,12 +1,12 @@
 _______ filecmp
 ____ urllib.request _______ urlretrieve
 
-_______ pytest
+_______ p__
 
 ____ get_my_code _______ get_passing_code, url, tmp
 
 
-@pytest.mark.parametrize('actual_filename, expected_filename', [
+@p__.mark.parametrize('actual_filename, expected_filename', [
     ('Bite01.py', 'Bite01_Expected.py'),
     ('Bite02.py', 'Bite02_Expected.py')
 ])

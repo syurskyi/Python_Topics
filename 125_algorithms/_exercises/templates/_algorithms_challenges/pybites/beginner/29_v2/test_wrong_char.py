@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ wrong_char _______ get_index_different_char
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (['A', 'f', '.', 'Q', 2], 2),
     (['.', '{', ' ^', '%', 'a'], 4),
     ([1, '=', 3, 4, 5, 'A', 'b', 'a', 'b', 'c'], 1),

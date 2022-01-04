@@ -44,39 +44,39 @@ c_ AllYourBaseTests(unittest.TestCase):
         assertEqual(rebase(7, [0, 6, 0], 10), [4, 2])
 
     ___ test_negative_digit
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(2, [1, -1, 1, 0, 1, 0], 10)
 
     ___ test_invalid_positive_digit
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(2, [1, 2, 1, 0, 1, 0], 10)
 
     ___ test_first_base_is_one
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(1, [], 10)
 
     ___ test_second_base_is_one
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(2, [1, 0, 1, 0, 1, 0], 1)
 
     ___ test_first_base_is_zero
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(0, [], 10)
 
     ___ test_second_base_is_zero
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(10, [7], 0)
 
     ___ test_first_base_is_negative
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(-2, [1], 10)
 
     ___ test_second_base_is_negative
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(2, [1], -7)
 
     ___ test_both_bases_are_negative
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             rebase(-2, [1], -7)
 
 

@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ belt _______ get_belt
 
 
-@pytest.mark.parametrize("input_argument, expected_return", [
+@p__.mark.parametrize("input_argument, expected_return", [
     (0, N..),
     (9, N..),
     (10, 'white'),

@@ -39,7 +39,7 @@ c_ MultiplicationTable:
         _y = y
 
         __ _x > _length o. _y > _length:
-            raise IndexError
+            r.. IndexError
         ____:
             _result = _x * _y
             r.. _result

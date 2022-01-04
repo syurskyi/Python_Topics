@@ -4,7 +4,7 @@ _______ __
 text_files  glob.glob("*.txt")
 lists []
 ___ text_file __ text_files:
-    with open(text_file) __ file:
+    w__ open(text_file) __ file:
         lists.a..(file.readlines())
 
 all_lines  s..(lists, [])

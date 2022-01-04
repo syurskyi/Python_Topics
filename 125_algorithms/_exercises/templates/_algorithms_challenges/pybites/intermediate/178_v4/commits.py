@@ -39,7 +39,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     Returns a tuple of (least_active_month, most_active_month)
     """
     commits = Counter()
-    with open(commit_log) __ f:
+    w__ open(commit_log) __ f:
         ___ line __ f:
             dat = _parse_line(line)
             __ dat['date'].year __ year o. year __ N..

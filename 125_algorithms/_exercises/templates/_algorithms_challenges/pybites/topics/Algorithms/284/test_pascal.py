@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ pascal _______ pascal
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (0, []),
     (1, [1]),
     (2, [1, 1]),

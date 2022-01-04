@@ -1,27 +1,27 @@
 _______ i___
 _______ string
 
-_______ pytest
+_______ p__
 _______ numpy __ np
 _______ pandas __ pd
 
 _______ series __ se
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ float_series
     """Returns a pandas Series containing floats"""
     r.. pd.Series([float(n) / 1000 ___ n __ r..(0, 1001)])
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ alpha_series
     """Returns a pandas Series containing floats"""
     dictionary = d..(z..(string.ascii_lowercase, r..(1, 27)))
     r.. pd.Series(dictionary)
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (0, 0.000), (500, 0.500), (1000, 1.000)
 ])
 ___ test_return_at_index(float_series, arg, expected):
@@ -29,7 +29,7 @@ ___ test_return_at_index(float_series, arg, expected):
 
 
 ___ test_return_at_index_raise_exception(float_series):
-    with pytest.raises(KeyError):
+    w__ p__.r..(KeyError):
         float_series[1111]
 
 
@@ -47,7 +47,7 @@ ___ test_get_slice_inclusive(float_series):
     ... slce[25] __ 0.025
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (0, 0.000), (5, 0.005), (9, 0.009)
 ])
 ___ test_return_head(float_series, arg, expected):
@@ -55,7 +55,7 @@ ___ test_return_head(float_series, arg, expected):
     ... ".head" __ i___.getsource(se.return_head)
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (991, 0.991), (995, 0.995), (1000, 1.000)
 ])
 ___ test_return_tail(float_series, arg, expected):

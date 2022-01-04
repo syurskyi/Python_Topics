@@ -1,7 +1,7 @@
 ____ d__ _______ d__, date
 ____ unittest.mock _______ patch
 
-_______ pytest
+_______ p__
 
 ____ s.. _______ (_convert_struct_time_to_dt, get_feed_entries,
                     filter_entries_by_tag, main, Entry)
@@ -11,7 +11,7 @@ c_ AttrDict(d..):
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
     ___ - , *args, **kwargs):
-        super(AttrDict, self).__init__(*args, **kwargs)
+        super(AttrDict, self).__init__ $ $$
         __dict__ = self
 
 
@@ -43,7 +43,7 @@ MOCK_ENTRIES = AttrDict({'entries':
                            'title': 'Copy and Paste with Pyperclip'})]})
 
 
-@pytest.mark.parametrize("arg, ret", [
+@p__.mark.parametrize("arg, ret", [
     (d__(2017, 9, 12, 8, 50, 0).timetuple(),
      date y.._2017,  m.._9,  d.._12)),
     (d__(2017, 9, 8, 14, 30, 0).timetuple(),
@@ -73,7 +73,7 @@ ___ test_get_feed_entries(inp):
     ... s..(l..(last.tags)) __ expected
 
 
-@pytest.mark.parametrize("arg, ret", [
+@p__.mark.parametrize("arg, ret", [
     ('blabla', F..),
     ('tricks', T..),
     ('TRICKS', T..),  # case should not matter

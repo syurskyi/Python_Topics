@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ url_shortener _______ decode, encode, redirect, shorten_url
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "arg, expected",
     [
         (1, "1"),
@@ -22,7 +22,7 @@ ___ test_encode(arg, expected):
     ... encode(arg) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "arg, expected",
     [
         ("3W", 244),
@@ -39,7 +39,7 @@ ___ test_decode(arg, expected):
     ... decode(arg) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "url, next_record, expected",
     [
         ("https://google.com", 5000, "https://pybit.es/1iE"),
@@ -54,7 +54,7 @@ ___ test_shorten_url(url, next_record, expected):
     ... shorten_url(url, next_record) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "url, expected",
     [
         ("https://pybit.es/1", "https://pybit.es"),
@@ -68,7 +68,7 @@ ___ test_redirect(url, expected):
     ... redirect(url) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "url, expected",
     [
         ("https://pybit.es/1iE", "https://google.com"),

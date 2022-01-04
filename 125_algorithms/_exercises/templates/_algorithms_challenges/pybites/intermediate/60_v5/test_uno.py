@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ uno _______ create_uno_deck, SUITS, UnoCard
 
@@ -12,7 +12,7 @@ ___ _count_suitcard(deck, suit, name):
                a.. s..(card.name) __ name)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ deck
     r.. create_uno_deck()
 
@@ -26,7 +26,7 @@ ___ test_create_uno_deck_type(deck):
     ... a..(t..(card) __ UnoCard ___ card __ deck)
 
 
-@pytest.mark.parametrize("suit, count", [
+@p__.mark.parametrize("suit, count", [
     ('Red', 25),
     ('Green', 25),
     ('Yellow', 25),
@@ -37,7 +37,7 @@ ___ test_create_uno_deck_suit_distribution(deck, suit, count):
     ... _count_suits(deck, suit) __ count
 
 
-@pytest.mark.parametrize("name, count", [
+@p__.mark.parametrize("name, count", [
     ('0', 1), ('1', 2), ('2', 2), ('3', 2), ('4', 2),
     ('5', 2), ('6', 2), ('7', 2), ('8', 2), ('9', 2),
     ('Draw Two', 2), ('Skip', 2), ('Reverse', 2),

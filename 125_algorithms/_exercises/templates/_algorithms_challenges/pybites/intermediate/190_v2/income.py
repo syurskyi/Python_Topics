@@ -23,7 +23,7 @@ ___ get_income_distribution(___=countries):
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    with open(___,'r') __ f:
+    w__ open(___,'r') __ f:
         soup = BeautifulSoup(f.read())
 
     

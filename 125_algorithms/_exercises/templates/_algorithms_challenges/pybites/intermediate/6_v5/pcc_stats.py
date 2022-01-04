@@ -33,7 +33,7 @@ ___ gen_files
 
        -> use last column to filter out directories (= True)
     """
-    with open(tempfile,'rt') __ f:
+    w__ open(tempfile,'rt') __ f:
         ___ row __ f.read().splitlines
             fields = row.s..(',')
             __ fields[1] __ 'False':

@@ -20,7 +20,7 @@ ___ evaluate(input_data):
         values.pop(0)
         key = values.pop(0).l..
         __ is_integer(key):
-            raise ValueError("Integers cannot be redefined")
+            r.. ValueError("Integers cannot be redefined")
         defines[key] = values
     stack    # list
     input_data = input_data[-1].s.. 
@@ -40,7 +40,7 @@ ___ evaluate(input_data):
             ____ word __ '/':
                 divisor = stack.pop()
                 __ divisor __ 0:
-                    raise ZeroDivisionError("Attempted to divide by zero")
+                    r.. ZeroDivisionError("Attempted to divide by zero")
                 stack.a..(i..(stack.pop() / divisor))
             ____ word __ 'dup':
                 stack.a..(stack[-1])
@@ -52,7 +52,7 @@ ___ evaluate(input_data):
             ____ word __ 'over':
                 stack.a..(stack[-2])
             ____:
-                raise ValueError("{} has not been defined".f..(word))
+                r.. ValueError("{} has not been defined".f..(word))
         except IndexError:
-            raise StackUnderflowError("Insufficient number of items in stack")
+            r.. StackUnderflowError("Insufficient number of items in stack")
     r.. stack

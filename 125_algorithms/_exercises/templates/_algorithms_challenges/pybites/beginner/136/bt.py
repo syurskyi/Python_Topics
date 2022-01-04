@@ -53,12 +53,12 @@ ___ get_int(inpval):
         __ inpval >= 0 a.. inpval <= 7:
             r.. inpval
         ____:
-            raise ValueError
+            r.. ValueError
     __ isi..(inpval, s..):
         __ inpval __ blood_type_text.k..:
             r.. blood_type_text[inpval].value
         ____:
-            raise ValueError
+            r.. ValueError
     __ isi..(inpval, Bloodtype):
         r.. inpval.value
 

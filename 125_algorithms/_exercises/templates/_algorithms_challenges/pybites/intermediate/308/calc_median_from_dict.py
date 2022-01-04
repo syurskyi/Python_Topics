@@ -7,7 +7,7 @@ ___ calc_median_from_dict(d: d..) __ float:
     """
     ___ value __ d.v..
         __ n.. isi..(value, i..):
-            raise TypeError
+            r.. T..
 
     frequency    # list
     ___ key, value __ d.i..:

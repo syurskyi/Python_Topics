@@ -5,7 +5,7 @@ c_ Thumbs:
     
     ___ __mul__(self, other):
         __ other __ 0:
-            raise ValueError("Specify a number")
+            r.. ValueError("Specify a number")
 
         __ (other > 0 a.. other <= 3) o. (other >= -3 a.. other < 0):
             r.. f"{(THUMBS_UP __ other > 0 ____ THUMBS_DOWN) * abs(other)}"

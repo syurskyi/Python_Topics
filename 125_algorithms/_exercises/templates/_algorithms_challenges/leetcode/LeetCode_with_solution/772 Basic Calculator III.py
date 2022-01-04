@@ -64,7 +64,7 @@ c_ Solution:
             ____ c __ "(":  # "(" is not delimiter
                 operand, i = eval(s, i + 1, [])
             ____:
-                raise
+                r..
 
             i += 1
 

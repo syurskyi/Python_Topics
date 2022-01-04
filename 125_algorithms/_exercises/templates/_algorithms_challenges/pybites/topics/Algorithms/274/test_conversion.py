@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ conversion _______ dec_to_base
 
 
-@pytest.mark.parametrize("number, base, expected", [
+@p__.mark.parametrize("number, base, expected", [
     (6, 2, 110), (7, 2, 111), (10, 2, 1010),
     (16, 2, 10000), (20, 2, 10100), (10, 6, 14),
     (24, 6, 40), (177, 6, 453), (256, 6, 1104),

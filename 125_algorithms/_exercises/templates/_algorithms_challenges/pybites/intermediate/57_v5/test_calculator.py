@@ -1,27 +1,27 @@
-_______ pytest
+_______ p__
 
 ____ calculator _______ create_parser, call_calculator
 
 
-@pytest.fixture
+@p__.fixture
 ___ parser
     r.. create_parser()
 
 
 ___ test_one_arg_no_numbers_exits(parser):
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         args = parser.parse_args(['--add'])
         call_calculator(args=args)
 
 
 ___ test_call_with_wrong_operation(parser):
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         args = parser.parse_args(['--sum', '10'])
         call_calculator(args=args)
 
 
 ___ test_help_text_hints(parser, capfd):
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         parser.parse_args(['-h'])
 
     output = capfd.readouterr()[0].l..
@@ -31,7 +31,7 @@ ___ test_help_text_hints(parser, capfd):
         ... op __ output
 
 
-@pytest.mark.parametrize("args, expected", [
+@p__.mark.parametrize("args, expected", [
     (['1'], 1),
     (['1', '2'], 3),
     (['1', '2', '3'], 6),
@@ -42,7 +42,7 @@ ___ test_add_operations(parser, args, expected):
     ... call_calculator(args) __ expected
 
 
-@pytest.mark.parametrize("args, expected", [
+@p__.mark.parametrize("args, expected", [
     (['1'], 1),
     (['1', '2'], -1),
     (['10', '7', '0.5'], 2.5),
@@ -53,7 +53,7 @@ ___ test_sub_operations(parser, args, expected):
     ... call_calculator(args) __ expected
 
 
-@pytest.mark.parametrize("args, expected", [
+@p__.mark.parametrize("args, expected", [
     (['1'], 1),
     (['1', '2'], 2),
     (['3.5', '2', '4.2'], 29.4),
@@ -64,7 +64,7 @@ ___ test_mul_operations(parser, args, expected):
     ... call_calculator(args) __ expected
 
 
-@pytest.mark.parametrize("args, expected", [
+@p__.mark.parametrize("args, expected", [
     (['2'], 2),
     (['1', '0'], 0),
     (['2.2', '7', '1.1'], 0.29),

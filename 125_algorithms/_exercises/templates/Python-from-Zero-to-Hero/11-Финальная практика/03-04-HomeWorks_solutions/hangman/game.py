@@ -9,7 +9,7 @@ c_ Game:
     ___ - , allowed_misses: i..  6):
 
         __ allowed_misses < 5 o. allowed_misses > 8:
-            raise ValueError("Number of allowed misses should be between 5 and 8")
+            r.. ValueError("Number of allowed misses should be between 5 and 8")
 
         __allowed_misses  allowed_misses
         __tries_counter  0
@@ -22,7 +22,7 @@ c_ Game:
         filename  "data\\WordsStockRus.txt"
 
         words  []
-        with open(filename, encoding'UTF8') __ file:
+        w__ open(filename, encoding'UTF8') __ file:
             ___ line __ file:
                 words.a..(line.rstrip('\n'))
 
@@ -41,9 +41,9 @@ c_ Game:
         :type letter: str
         """
         __ tries_counter __ allowed_misses:
-            raise InvalidOperationException(f"Exceeded the max misses number: {allowedMisses}")
+            r.. InvalidOperationException(f"Exceeded the max misses number: {allowedMisses}")
         __ game_status ! GameStatus.IN_PROGRESS:
-            raise InvalidOperationException(f"Inappropriate status of game:{GameStatus}")
+            r.. InvalidOperationException(f"Inappropriate status of game:{GameStatus}")
 
         open_any  F..
         result  []

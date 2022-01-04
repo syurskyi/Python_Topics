@@ -1,10 +1,10 @@
 ____ pandas.core.frame _______ DataFrame
-_______ pytest
+_______ p__
 
 ____ movies _______ group_by_genre
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ df
     r.. group_by_genre()
 

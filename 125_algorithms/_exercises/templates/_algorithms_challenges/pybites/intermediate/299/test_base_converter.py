@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ base_converter _______ convert
 
 
-@pytest.mark.parametrize("number, base, expected", [
+@p__.mark.parametrize("number, base, expected", [
     (935, 29, "137"),
     (74, 27, "2K"),
     (685, 26, "109"),
@@ -29,17 +29,17 @@ ___ test_convert(number, base, expected):
     ... convert(number, base) __ expected
 
 
-@pytest.mark.parametrize("number, base", [
+@p__.mark.parametrize("number, base", [
     (100, 37),
     (100, 0),
     (100, 1),
     (100, -20),
 ])
 ___ test_convert_base_high(number, base):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         convert(number, base)
 
 
 ___ test_convert_non_base10_number
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         convert("FF", 10)

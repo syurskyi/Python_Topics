@@ -3,7 +3,7 @@ ____ pathlib _______ Path
 _______ platform
 _______ subprocess
 
-_______ pytest
+_______ p__
 
 # no need to import make_html_links as we call links.py from CLI!
 
@@ -15,7 +15,7 @@ MY_CODE = SCRIPT __ IS_LOCAL ____ TMP / SCRIPT
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
 
-@pytest.fixture
+@p__.fixture
 ___ my_file(tmp_path):
     f = tmp_path / "some_file.txt"
     r.. f

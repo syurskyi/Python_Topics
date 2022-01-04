@@ -15,7 +15,7 @@ urlretrieve(
     holidays_page
 )
 
-with open(holidays_page) __ f:
+w__ open(holidays_page) __ f:
     content = f.read()
 
 holidays = defaultdict(l..)

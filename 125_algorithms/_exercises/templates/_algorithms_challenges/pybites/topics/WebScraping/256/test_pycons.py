@@ -1,18 +1,18 @@
 _______ d__
 
-_______ pytest
+_______ p__
 
 ____ pycons _______ (get_pycon_events, filter_pycons,
                     get_continent)
 
 
-@pytest.fixture(scope="session")
+@p__.fixture(scope="session")
 ___ pycon_events
     events = get_pycon_events()
     r.. events
 
 
-@pytest.fixture(scope="session")
+@p__.fixture(scope="session")
 ___ filtered_pycons(pycon_events):
     filtered = filter_pycons(pycon_events)
     r.. filtered

@@ -1,17 +1,17 @@
 ____ i.. _______ islice
 
-_______ pytest
+_______ p__
 
 ____ Previous.traffic _______ traffic_light, State
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ slice1
     it = traffic_light()
     r.. l..(islice(it, 96))
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ slice2
     it = traffic_light()
     r.. l..(islice(it, 100, 217))
@@ -37,7 +37,7 @@ ___ test_return_types(slice2):
     ... a..(t..(state) __ State ___ state __ slice2)
 
 
-@pytest.mark.parametrize("color, expected", [
+@p__.mark.parametrize("color, expected", [
     ('red', 64),
     ('green', 64),
     ('amber', 16),

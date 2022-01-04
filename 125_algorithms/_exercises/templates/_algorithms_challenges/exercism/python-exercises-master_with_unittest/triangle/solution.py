@@ -7,7 +7,7 @@ c_ Triangle(object):
         sides = (x, y, z)
 
         __ _invalid_lengths() o. _violates_inequality
-            raise TriangleError
+            r.. TriangleError
 
     ___ _invalid_lengths
         r.. any([side <= 0 ___ side __ sides])

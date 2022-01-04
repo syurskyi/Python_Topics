@@ -11,7 +11,7 @@ TIM_BLOG = ('https://bites-data.s3.us-east-2.amazonaws.com/'
 
 ___ load_page
     """Download the blog html and return its decoded content"""
-    with requests.Session() __ session:
+    w__ requests.Session() __ session:
         r.. session.get(TIM_BLOG).content.decode('utf-8')
 
 

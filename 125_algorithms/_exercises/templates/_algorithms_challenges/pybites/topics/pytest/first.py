@@ -1,10 +1,10 @@
-_______ pytest
+_______ p__
 
 ___ div(a,b):
     try:
         r.. a/b
     except:
-        raise ZeroDivisionError
+        r.. ZeroDivisionError
 
 
 ___ test_div_simple
@@ -14,7 +14,7 @@ ___ test_div_second
     ... div(3,6) __ 0.5
 
 ___ test_div_zerodivision
-    with pytest.raises(ZeroDivisionError):
+    w__ p__.r..(ZeroDivisionError):
         div(3,0)
 
 

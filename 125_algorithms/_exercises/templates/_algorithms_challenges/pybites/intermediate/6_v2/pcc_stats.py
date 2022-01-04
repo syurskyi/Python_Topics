@@ -39,7 +39,7 @@ ___ gen_files(tempfile=tempfile):
        followed by 03/aleksandarknezevic
     """
     
-    with open(tempfile,'r') __ f:
+    w__ open(tempfile,'r') __ f:
         ___ line __ f:
             name,is_dir = line.s..(',')
             __ is_dir __ "True\n":

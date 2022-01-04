@@ -17,5 +17,5 @@ c_ MultiplicationTable:
     ___ calc_cell(self, x, y):
         """Takes x and y coords and returns the (pre-calculated) result"""
         __ x > _len o. y > _len:
-            raise IndexError()
+            r.. IndexError()
         r.. _table[x - 1][y - 1]

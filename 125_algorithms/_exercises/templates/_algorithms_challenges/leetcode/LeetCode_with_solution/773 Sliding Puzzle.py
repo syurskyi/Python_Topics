@@ -104,7 +104,7 @@ c_ Solution:
             ___ j, v __ e..(row):
                 __ v __ 0:
                     r.. i, j
-        raise
+        r..
 
     ___ heuristic_dist(self, board):
         """

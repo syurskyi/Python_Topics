@@ -31,7 +31,7 @@ c_ Car:
     ___ has_same_configuration(config1, config2):
         __ n.. isi..(config1,l..) o. n.. isi..(config2,l..):  # *
             print(t..(config1),t..(config2))
-            raise TypeError()
+            r.. T..()
         r.. config1 __ config2  # *
 
 

@@ -27,7 +27,7 @@ ___ get_all_timestamps
     """
 
     course_times    # list
-    with open(COURSE_TIMES,'r') __ f:
+    w__ open(COURSE_TIMES,'r') __ f:
         ___ line __ f:
             result = __.s..(r'\((\d+:\d+)\)',line)
             __ result:

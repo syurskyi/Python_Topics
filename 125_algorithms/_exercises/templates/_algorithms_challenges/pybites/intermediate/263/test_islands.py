@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ islands _______ count_islands
 
@@ -25,7 +25,7 @@ circles = [[1, 1, 0, 0, 0, 1],
            [1, 1, 1, 1, 0, 0]]
 
 
-@pytest.mark.parametrize("data, expected", [
+@p__.mark.parametrize("data, expected", [
     (squares, 2),
     (sparse, 5),
     (empty, 0),

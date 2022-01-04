@@ -41,14 +41,14 @@ blood_type_text = {
 ___ _blood_int(b_type):
     __ isi..(b_type, i..):
         __ b_type n.. __ r..(Bloodtype.ZERO_NEG.value, Bloodtype.AB_POS.value + 1):
-            raise ValueError(f'Bad blood integer {b_type}')
+            r.. ValueError(f'Bad blood integer {b_type}')
         r.. b_type
     ____ isi..(b_type, s..):
         __ b_type n.. __ blood_type_text:
-            raise ValueError(f'Bad blood type {b_type}')
+            r.. ValueError(f'Bad blood type {b_type}')
         b_type = blood_type_text[b_type]
     ____ n.. isi..(b_type, Bloodtype):
-        raise TypeError(f'Invalid blood type type {t..(b_type)}')
+        r.. T..(f'Invalid blood type type {t..(b_type)}')
     r.. b_type.value
 
 

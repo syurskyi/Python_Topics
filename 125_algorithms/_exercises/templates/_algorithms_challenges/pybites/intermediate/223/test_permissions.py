@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ permissions _______ get_octal_from_file_permission
 
 
-@pytest.mark.parametrize("input_arg, expected", [
+@p__.mark.parametrize("input_arg, expected", [
     ('-----x-w-', '012'), ('-----x-wx', '013'), ('-----xr--', '014'),
     ('-----xr-x', '015'), ('-----xrw-', '016'), ('-----xrwx', '017'),
     ('----w--wx', '023'), ('----w-r--', '024'), ('----w-r-x', '025'),

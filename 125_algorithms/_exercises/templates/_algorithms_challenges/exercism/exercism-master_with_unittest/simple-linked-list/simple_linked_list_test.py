@@ -20,7 +20,7 @@ c_ SimpleLinkedListTest(unittest.TestCase):
 
     ___ test_error_on_empty_list_head
         sut = LinkedList()
-        with assertRaisesWithMessage(EmptyListException):
+        w__ assertRaisesWithMessage(EmptyListException):
             sut.head()
 
     ___ test_singleton_list_has_head
@@ -51,12 +51,12 @@ c_ SimpleLinkedListTest(unittest.TestCase):
     ___ test_pop_from_singleton_list_removes_head
         sut = LinkedList([1])
         assertEqual(sut.pop(), 1)
-        with assertRaisesWithMessage(EmptyListException):
+        w__ assertRaisesWithMessage(EmptyListException):
             sut.head()
 
     ___ test_error_on_empty_list_pop
         sut = LinkedList()
-        with assertRaisesWithMessage(EmptyListException):
+        w__ assertRaisesWithMessage(EmptyListException):
             sut.pop()
 
     ___ test_push_and_pop

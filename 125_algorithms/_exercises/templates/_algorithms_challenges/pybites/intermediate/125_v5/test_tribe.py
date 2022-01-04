@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ tribe _______ get_top_books, load_page
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ content
     """Load content once for all test"""
     r.. load_page()

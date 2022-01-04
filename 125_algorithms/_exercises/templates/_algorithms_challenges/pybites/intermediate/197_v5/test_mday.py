@@ -1,6 +1,6 @@
 ____ d__ _______ date
 
-_______ pytest
+_______ p__
 
 ____ mday _______ get_mothers_day_date
 
@@ -9,7 +9,7 @@ ___ test_check_type
     ... t..(get_mothers_day_date(2019)) __ date
 
 
-@pytest.mark.parametrize('arg,expected', [
+@p__.mark.parametrize('arg,expected', [
     (2014, date(2014, 5, 11)),
     (2015, date(2015, 5, 10)),
     (2016, date(2016, 5, 8)),

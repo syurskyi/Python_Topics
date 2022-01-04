@@ -12,7 +12,7 @@ c_ Solution:
     ___ maxSubArray(self, A):
         __ n.. A:
             msg = 'The input array must contain at least one number.'
-            raise Exception(msg)
+            r.. Exception(msg)
         max_sum = A[0]
         max_current = max_sum
         ___ i __ r..(1, l..(A)):

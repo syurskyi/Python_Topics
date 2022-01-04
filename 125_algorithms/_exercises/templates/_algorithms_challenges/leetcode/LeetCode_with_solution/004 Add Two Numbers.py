@@ -61,7 +61,7 @@ c_ Solution:
         :return: integer, summation
         """
         __ n.. node1 a.. n.. node2:
-            raise Exception("two nodes are None")
+            r.. Exception("two nodes are None")
         __ n.. node1:
             r.. node2.val
         __ n.. node2:

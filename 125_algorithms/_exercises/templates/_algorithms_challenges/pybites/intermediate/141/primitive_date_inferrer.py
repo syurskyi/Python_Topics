@@ -23,7 +23,7 @@ c_ DateFormat(Enum):
             r.. d_parse_formats
         __ 0 <= val <= l..(d_parse_formats):
             r.. d_parse_formats[val]
-        raise ValueError
+        r.. ValueError
 
 
 c_ InfDateFmtError(Exception):
@@ -82,7 +82,7 @@ ___ get_dates(dates):
     max_frequency,max_count = format_counts.most_common(1)[0]
 
     __ max_frequency __ DateFormat.NONPARSABLE o. s..(value __ max_count ___ key,value __ format_counts.i.. __ key != DateFormat.NONPARSABLE) >= 2:
-        raise InfDateFmtError
+        r.. InfDateFmtError
 
     result    # list
     ___ date __ dates:

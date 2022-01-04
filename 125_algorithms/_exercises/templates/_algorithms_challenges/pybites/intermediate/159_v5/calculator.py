@@ -10,4 +10,4 @@ ___ simple_calculator(calculation):
         a, b = i..(a), i..(b)
         r.. funcs[op](a, b)
     except Exception:
-        raise ValueError
+        r.. ValueError

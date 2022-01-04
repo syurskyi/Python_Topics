@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ scoping _______ sum_numbers
 
 
-@pytest.mark.parametrize("arg, ret, hundreds_value", [
+@p__.mark.parametrize("arg, ret, hundreds_value", [
     ([], 0, -1),
     ([1, 2, 3], 6, -1),
     ([40, 50, 60], 150, 0),

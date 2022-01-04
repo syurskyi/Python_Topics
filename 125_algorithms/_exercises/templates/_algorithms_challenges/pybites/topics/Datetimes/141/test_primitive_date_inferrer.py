@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ primitive_date_inferrer _______ get_dates, InfDateFmtError
 
 
@@ -20,7 +20,7 @@ ___ test_tie
         "10/10/12",
         "03/10/02",
     ]
-    with pytest.raises(InfDateFmtError):
+    w__ p__.r..(InfDateFmtError):
         get_dates(dates)
 
 ___ test_too_many_nonparsable
@@ -41,7 +41,7 @@ ___ test_too_many_nonparsable
         "71/14/19",
         "85/08/09",
     ]
-    with pytest.raises(InfDateFmtError):
+    w__ p__.r..(InfDateFmtError):
         get_dates(dates)
 
 ___ test_mmddyy
@@ -168,7 +168,7 @@ ___ test_different_enum
                 r.. d_parse_formats
             __ 0 <= idx <= l..(d_parse_formats):
                 r.. d_parse_formats[idx]
-            raise ValueError
+            r.. ValueError
 
     # override the enum in the tested code module
     pdi.DateFormat = DateFormat_ext

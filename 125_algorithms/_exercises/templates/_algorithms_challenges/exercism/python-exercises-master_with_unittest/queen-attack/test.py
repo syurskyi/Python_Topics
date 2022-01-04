@@ -53,19 +53,19 @@ c_ QueenAttackTest(unittest.TestCase):
     # If either board or can_attack are called with an invalid board position
     # they should raise a ValueError with a meaningful error message.
     ___ test_invalid_position_board
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             board((0, 0), (7, 8))
 
     ___ test_invalid_position_can_attack
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             can_attack((0, 0), (7, 8))
 
     ___ test_queens_same_position_board
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             board((2, 2), (2, 2))
 
     ___ test_queens_same_position_can_attack
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             can_attack((2, 2), (2, 2))
 
 

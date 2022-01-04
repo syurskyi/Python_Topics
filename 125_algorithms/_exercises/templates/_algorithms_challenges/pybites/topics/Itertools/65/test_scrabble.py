@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ scrabble _______ get_possible_dict_words
 
@@ -18,7 +18,7 @@ ___ max_word_value(words):
     r.. max(words, key=calc_word_value)
 
 
-@pytest.mark.parametrize("draw, expected", [
+@p__.mark.parametrize("draw, expected", [
     ('T, I, I, G, T, T, L', 'gilt'),
     ('O, N, V, R, A, Z, H', 'zonar'),
     ('E, P, A, E, I, O, A', ('apio', 'peai')),

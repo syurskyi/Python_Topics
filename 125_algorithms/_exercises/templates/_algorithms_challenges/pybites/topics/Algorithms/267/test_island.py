@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ island _______ island_size
 
@@ -20,7 +20,7 @@ whole = [[1, 1, 1],
          [1, 1, 1]]
 
 
-@pytest.mark.parametrize("map_, expected", [
+@p__.mark.parametrize("map_, expected", [
     (rectangle, 12),
     (small, 4),
     (empty, 0),

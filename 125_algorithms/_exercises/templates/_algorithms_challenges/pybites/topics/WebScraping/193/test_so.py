@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ so _______ top_python_questions
 
 actual_return = top_python_questions()
@@ -25,7 +25,7 @@ expected_return = [
 ]
 
 
-@pytest.mark.parametrize('actual, expected',
+@p__.mark.parametrize('actual, expected',
                          z..(actual_return, expected_return)
                          )
 ___ test_top_python_questions(actual, expected):

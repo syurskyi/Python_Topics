@@ -48,7 +48,7 @@ ___ remove_file(file_name):
 
 
 ___ create_file(name, contents):
-    with open(name, 'w') __ f:
+    w__ open(name, 'w') __ f:
         f.write(contents)
 
 

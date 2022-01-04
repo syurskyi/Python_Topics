@@ -1,6 +1,6 @@
 ____ d__ _______ d__
 
-_______ pytest
+_______ p__
 
 ____ timezones _______ within_schedule
 
@@ -36,5 +36,5 @@ ___ test_too_late_for_chicago
 ___ test_wrong_timezone
     dt = d__(2018, 4, 18, 12, 28)
     timezones = ['Europe/Madrid', 'bogus']
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         within_schedule(dt, *timezones)

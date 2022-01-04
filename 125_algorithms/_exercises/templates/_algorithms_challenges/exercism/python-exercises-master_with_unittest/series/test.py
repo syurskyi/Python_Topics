@@ -37,11 +37,11 @@ c_ SeriesTest(unittest.TestCase):
             [[0, 1, 2, 3, 4]], )
 
     ___ test_overly_long_slice
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             slices("012", 4)
 
     ___ test_overly_short_slice
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             slices("01234", 0)
 
 

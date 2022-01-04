@@ -3,7 +3,7 @@ ___ wc(file_):
        lines/words/chars, and returns a string of these numbers + file, e.g.:
        3 12 60 /tmp/somefile
        (both tabs and spaces are allowed as separator)"""
-    with open(file_,'r') __ f:
+    w__ open(file_,'r') __ f:
         lines = f.readlines()
 
 

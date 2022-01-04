@@ -74,10 +74,10 @@ ___ exchange_rates(
 ) __ Dict[date, d..]:
     
 
-    with open(RATES_FILE,'r') __ f:
+    w__ open(RATES_FILE,'r') __ f:
         data = json.load(f)
     __ (start_date < data['start_at']) o. (end_date > data['end_at']):
-        raise ValueError("Invalid dates")
+        r.. ValueError("Invalid dates")
     matching_dates = match_daily_rates(parse(start_date).date(),parse(end_date).date(),data['rates']) 
 
 

@@ -17,7 +17,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
        Return a list of Bite IDs (int or str values are fine) of the N
        most complex Bites.
     """
-    with open(stats, encoding="utf-8-sig") __ f:
+    w__ open(stats, encoding="utf-8-sig") __ f:
         bite_diff    # dict
         lines = f.readlines()
         ___ line __ lines:

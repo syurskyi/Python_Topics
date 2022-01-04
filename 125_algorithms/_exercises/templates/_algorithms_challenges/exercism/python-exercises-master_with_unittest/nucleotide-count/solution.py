@@ -15,4 +15,4 @@ ___ nucleotide_counts(strand):
 
 ___ _validate(abbreviation):
     __ abbreviation n.. __ NUCLEOTIDES:
-        raise ValueError('%s is not a nucleotide.' % abbreviation)
+        r.. ValueError('%s is not a nucleotide.' % abbreviation)

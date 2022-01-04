@@ -36,7 +36,7 @@ c_ Promo:
         __ remaining_bites:
             r.. random.choice(remaining_bites)
         ____:
-            raise NoBitesAvailable
+            r.. NoBitesAvailable
 
         
     ___ new_bite

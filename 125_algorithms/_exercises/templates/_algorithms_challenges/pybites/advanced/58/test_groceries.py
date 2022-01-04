@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ groceries _______ Item, Groceries, create_parser, handle_args
 
 
-@pytest.fixture
+@p__.fixture
 ___ cart
     # faking some data (normally would load from DB)
     products = 'celery apples water coffee chicken pizza'.s..
@@ -17,7 +17,7 @@ ___ cart
     r.. Groceries(items)
 
 
-@pytest.fixture
+@p__.fixture
 ___ parser
     r.. create_parser()
 
@@ -73,13 +73,13 @@ ___ test_delete(parser, cart):
 
 ___ test_args_mulually_exclusive(parser):
     # argument -l/--list: not allowed with argument -d/--delete
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         parser.parse_args(['-d', 'pizza', '-l'])
 
     # argument -a/--add: expected 3 arguments
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         parser.parse_args(['-a', 'pizza'])
 
     # unrecognized arguments: coffee
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         parser.parse_args(['-d', 'pizza', 'coffee'])

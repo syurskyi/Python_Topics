@@ -33,7 +33,7 @@ ___ _preload_sequences(url=URL):
     filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
     __ n.. os.path.isfile(filename):
         urlretrieve(url, filename)
-    with open(filename, "r") __ f:
+    w__ open(filename, "r") __ f:
         r.. f.readlines()
 
 

@@ -1,7 +1,7 @@
 ____ unittest.mock _______ patch
 _______ random
 
-_______ pytest
+_______ p__
 
 ____ guess _______ get_random_number, Game
 
@@ -19,22 +19,22 @@ ___ test_guess(inp):
     ... game.guess() __ 11
     ... game.guess() __ 12
     # not a number
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         game.guess()
     # already guessed 12
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         game.guess()
     # good
     ... game.guess() __ 5
     # out of range (x2)
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         game.guess()
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         game.guess()
     # good
     ... game.guess() __ 7
     # hitting enter / no input
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         game.guess()
 
 

@@ -136,7 +136,7 @@ ___ get_soup(file=HTML_FILE):
         __ n.. file.is_file
             urlretrieve(URL, file)
 
-        with file.open() __ html_source:
+        w__ file.open() __ html_source:
             soup = Soup(html_source, "html.parser")
     ____:
         soup = Soup(file, "html.parser")

@@ -1,6 +1,6 @@
 _______ logging
 
-_______ pytest
+_______ p__
 
 ____ logger _______ sum_even_numbers
 
@@ -23,7 +23,7 @@ ___ test_sum_numbers_logging(caplog):
 
 ___ test_sum_numbers_throws_exception(caplog):
     caplog.set_level(logging.INFO, logger="app")
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         sum_even_numbers([1, 'a', 2, 3])
     ... l..(caplog.records) __ 1
     record = caplog.records[0]

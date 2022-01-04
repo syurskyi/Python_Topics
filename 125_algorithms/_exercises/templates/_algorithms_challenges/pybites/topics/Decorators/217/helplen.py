@@ -9,9 +9,9 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..:
        If the the object passed in is not a builtin, raise a ValueError.
     """
     __ t..(builtin) __ n.. BuiltinFunctionType:
-        raise ValueError
+        r.. ValueError
     std_out = StringIO()
-    with redirect_stdout(std_out):
+    w__ redirect_stdout(std_out):
         help(builtin)
     r.. l..(std_out.getvalue())
 

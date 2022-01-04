@@ -29,24 +29,24 @@ c_ Graph(object):
         attrs    # dict
 
         __ n.. isi..(data, l..):
-            raise TypeError("Graph data malformed")
+            r.. T..("Graph data malformed")
 
         ___ item __ data:
             __ l..(item) < 3:
-                raise TypeError("Graph item incomplete")
+                r.. T..("Graph item incomplete")
 
             type_ = item[0]
             __ type_ __ ATTR:
                 __ l..(item) != 3:
-                    raise ValueError("ATTR malformed")
+                    r.. ValueError("ATTR malformed")
                 attrs[item[1]] = item[2]
             ____ type_ __ NODE:
                 __ l..(item) != 3:
-                    raise ValueError("NODE malformed")
+                    r.. ValueError("NODE malformed")
                 nodes.a..(Node(item[1], item[2]))
             ____ type_ __ EDGE:
                 __ l..(item) != 4:
-                    raise ValueError("EDGE malformed")
+                    r.. ValueError("EDGE malformed")
                 edges.a..(Edge(item[1], item[2], item[3]))
             ____:
-                raise ValueError("Unknown item {}".f..(item[0]))
+                r.. ValueError("Unknown item {}".f..(item[0]))

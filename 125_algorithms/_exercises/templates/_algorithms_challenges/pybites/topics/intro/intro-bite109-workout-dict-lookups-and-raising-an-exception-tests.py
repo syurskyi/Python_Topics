@@ -1,11 +1,11 @@
 """These tests have some more advanced pytest features, if new to
    pytest read: https://pybit.es/pytest-coding-100-tests.html"""
-_______ pytest
+_______ p__
 
 ____ workouts _______ get_workout_motd
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ('Monday', 'Go train Chest+biceps'),
     ('Tuesday', 'Go train Back+triceps'),
     ('Wednesday', 'Go train Core'),
@@ -21,5 +21,5 @@ ___ test_get_workout_valid_case_insensitive_dict_lookups(arg, expected):
 
 
 ___ test_get_workout_invalid_dict_lookups_raise_exception
-    with pytest.raises(KeyError):
+    w__ p__.r..(KeyError):
         get_workout_motd('not-a-day')

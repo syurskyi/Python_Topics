@@ -17,4 +17,4 @@ c_ EggCreator:
             count += 1
             r.. f'{choice(COLORS)} egg'
         ____:
-            raise StopIteration
+            r.. StopIteration

@@ -13,15 +13,15 @@ VALID_OPERATIONS = {"plus": add, "minus": sub,
 
 ___ calculate(stmt):
     __ n.. (stmt.startswith("What is ") a.. stmt.endswith("?")):
-        raise ValueError("Ill-formed question")
+        r.. ValueError("Ill-formed question")
     l = stmt[8:-1].s...l...s..
     __ n.. l:
-        raise ValueError("Ill-formed question")
+        r.. ValueError("Ill-formed question")
     l.reverse()
     try:
         op1 = i..(l.pop())
     except ValueError:
-        raise ValueError("Ill-formed question")
+        r.. ValueError("Ill-formed question")
     w.... l:
         oprt = [l.pop()]
         w.... l:
@@ -32,10 +32,10 @@ ___ calculate(stmt):
             except ValueError:
                 oprt.a..(next_tk)
         ____:
-            raise ValueError("Ill-formed question")
+            r.. ValueError("Ill-formed question")
         oprt = " ".j..(oprt)
         try:
             op1 = VALID_OPERATIONS[oprt](op1, op2)
         except KeyError:
-            raise ValueError("Ill-formed question")
+            r.. ValueError("Ill-formed question")
     r.. op1

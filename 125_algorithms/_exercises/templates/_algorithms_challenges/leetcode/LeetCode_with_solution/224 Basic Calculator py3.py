@@ -58,7 +58,7 @@ c_ Solution:
                 # avoid setting operand to 0
                 operand, i = eval(s, i + 1, [])
             ____:
-                raise
+                r..
 
             i += 1
 

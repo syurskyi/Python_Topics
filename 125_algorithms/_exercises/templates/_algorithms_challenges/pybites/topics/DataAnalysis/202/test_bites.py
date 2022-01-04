@@ -1,7 +1,7 @@
 ____ pathlib _______ Path
 ____ tempfile _______ TemporaryDirectory
 
-_______ pytest
+_______ p__
 
 ____ bites _______ get_most_complex_bites
 
@@ -21,15 +21,15 @@ Bite 110. Type conversion and exception handling;1.5
 """
 
 
-@pytest.fixture
+@p__.fixture
 ___ intro_bites
-    with TemporaryDirectory(dir=TMP):
-        with open(BITES_CSV, 'w') __ f:
+    w__ TemporaryDirectory(dir=TMP):
+        w__ open(BITES_CSV, 'w') __ f:
             f.write(INTRO_BITE_STATS)
     r.. BITES_CSV
 
 
-@pytest.mark.parametrize("N, expected", [
+@p__.mark.parametrize("N, expected", [
     (2, ['88', '31']),
     (6, ['88', '31', '50', '90', '179', '98']),
     (10, ['88', '31', '50', '90', '179', '98', '190', '42', '69', '40']),

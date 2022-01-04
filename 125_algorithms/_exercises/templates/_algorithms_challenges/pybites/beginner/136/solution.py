@@ -67,11 +67,11 @@ ___ _check_convert_input(inpval):
         __ 0 <= inpval <= 7:
             r.. Bloodtype(inpval)
         ____:
-            raise ValueError
+            r.. ValueError
     __ isi..(inpval, s..):
         __ inpval __ blood_type_text.k..:
             r.. blood_type_text[inpval]
         ____:
-            raise ValueError
+            r.. ValueError
     ____:
-        raise TypeError
+        r.. T..

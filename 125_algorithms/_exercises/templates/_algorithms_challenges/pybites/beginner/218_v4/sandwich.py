@@ -12,9 +12,9 @@ ___ sandwich(func):
     """
 
     @wraps(func)
-    ___ wrapped(*args, **kwargs):
+    ___ wrapped $ $$:
         print(UPPER_SLICE)
-        func(*args, **kwargs)
+        func $ $$
         print(LOWER_SLICE)
 
     r.. wrapped

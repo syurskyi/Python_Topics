@@ -74,7 +74,7 @@ c_ Solution:
                         # nC3
                         ret += counter[a] * (counter[a] - 1) * (counter[a] - 2) // (3 * 2)
                     ____:
-                        raise
+                        r..
 
                     ret %= MOD
                     j += 1

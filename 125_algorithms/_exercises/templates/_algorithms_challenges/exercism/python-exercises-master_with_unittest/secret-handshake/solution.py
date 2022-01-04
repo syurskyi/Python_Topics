@@ -25,7 +25,7 @@ ___ code(seq):
 
 ___ sanitize(s):
     __ n..(isi..(s, i..) o. isi..(s, s..)):
-        raise TypeError('Unknown type')
+        r.. T..('Unknown type')
     __ isi..(s, i..):
         __ s < 0:
             r.. ""
@@ -33,7 +33,7 @@ ___ sanitize(s):
     ____ set(s) - set(['0', '1']):
         r.. ""
     __ l..(s) > 5:
-        raise ValueError('Binary string too long')
+        r.. ValueError('Binary string too long')
     r.. "0" * (l..(gestures) - l..(s)) + s
 
 

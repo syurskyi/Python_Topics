@@ -49,7 +49,7 @@ ___ high_low_record_breakers_for_2015
        temperatures
        * Return those as STATION namedtuples, (high_2015, low_2015)
     """
-    with open(LOCAL_FILE) __ f:
+    w__ open(LOCAL_FILE) __ f:
         the_data = s..([{
             'id': x['ID'],
             'date': d__.strptime(x['Date'], '%Y-%m-%d').date(),

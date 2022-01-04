@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ Previous.game _______ get_winner
 
@@ -6,14 +6,14 @@ PLAYERS = ("Rock Gun Lightning Devil Dragon Water Air Paper Sponge "
            "Wolf Tree Human Snake Scissors Fire").s.. 
 
 
-@pytest.mark.parametrize("args", [('Rock', 'blabla'),
+@p__.mark.parametrize("args", [('Rock', 'blabla'),
                                   ('blabla', 'Rock')])
 ___ test_bad_inputs(args):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         get_winner(*args)
 
 
-@pytest.mark.parametrize("player", PLAYERS)
+@p__.mark.parametrize("player", PLAYERS)
 ___ test_ties(player):
     ... get_winner(player, player) __ 'Tie'
 
@@ -25,7 +25,7 @@ ___ test_rock_pounds_out_fire
     ... get_winner('Rock', 'Fire') __ 'Rock'
 
 
-@pytest.mark.parametrize("player", ['Scissors', 'Snake', 'Human',
+@p__.mark.parametrize("player", ['Scissors', 'Snake', 'Human',
                                     'Wolf', 'Sponge'])
 ___ test_rock_crushes_scissors_snake_human_wolf_and_sponge(player):
     ... get_winner('Rock', player) __ 'Rock'
@@ -39,7 +39,7 @@ ___ test_fire_melts_scissors
     ... get_winner('Fire', 'Scissors') __ 'Fire'
 
 
-@pytest.mark.parametrize("player", ['Paper', 'Snake', 'Human',
+@p__.mark.parametrize("player", ['Paper', 'Snake', 'Human',
                                     'Tree', 'Wolf', 'Sponge'])
 ___ test_fire_burns_paper_snake_human_tree_wolf_and_sponge(player):
     ... get_winner('Fire', player) __ 'Fire'
@@ -53,13 +53,13 @@ ___ test_scissors_carve_tree
     ... get_winner('Scissors', 'Tree') __ 'Scissors'
 
 
-@pytest.mark.parametrize("player", ['Paper', 'Snake', 'Human',
+@p__.mark.parametrize("player", ['Paper', 'Snake', 'Human',
                                     'Wolf', 'Sponge'])
 ___ test_scissors_cut_paper_snake_human_wolf_and_spnge(player):
     ... get_winner('Scissors', player) __ 'Scissors'
 
 
-@pytest.mark.parametrize("player", ['Human', 'Wolf'])
+@p__.mark.parametrize("player", ['Human', 'Wolf'])
 ___ test_snake_bites_human_and_wolf(player):
     ... get_winner('Snake', player) __ 'Snake'
 
@@ -68,7 +68,7 @@ ___ test_snake_swallows_sponge
     ... get_winner('Snake', 'Sponge') __ 'Snake'
 
 
-@pytest.mark.parametrize("player", ['Tree', 'Paper'])
+@p__.mark.parametrize("player", ['Tree', 'Paper'])
 ___ test_snake_nests_in_tree_and_paper(player):
     ... get_winner('Snake', player) __ 'Snake'
 
@@ -109,7 +109,7 @@ ___ test_human_slays_dragon
     ... get_winner('Human', 'Dragon') __ 'Human'
 
 
-@pytest.mark.parametrize("player", ['Wolf', 'Dragon'])
+@p__.mark.parametrize("player", ['Wolf', 'Dragon'])
 ___ test_tree_shelters_wolf_and_dragon(player):
     ... get_winner('Tree', player) __ 'Tree'
 
@@ -134,7 +134,7 @@ ___ test_tree_imprisons_devil
     ... get_winner('Tree', 'Devil') __ 'Tree'
 
 
-@pytest.mark.parametrize("player", ['Sponge', 'Paper'])
+@p__.mark.parametrize("player", ['Sponge', 'Paper'])
 ___ test_wolf_chews_up_sponge_and_paper(player):
     ... get_winner('Wolf', player) __ 'Wolf'
 
@@ -147,7 +147,7 @@ ___ test_wolf_drinks_water
     ... get_winner('Wolf', 'Water') __ 'Wolf'
 
 
-@pytest.mark.parametrize("player", ['Dragon', 'Lightning'])
+@p__.mark.parametrize("player", ['Dragon', 'Lightning'])
 ___ test_wolf_outruns_dragon_and_lightning(player):
     ... get_winner('Wolf', player) __ 'Wolf'
 
@@ -168,7 +168,7 @@ ___ test_sponge_absorbs_water
     ... get_winner('Sponge', 'Water') __ 'Sponge'
 
 
-@pytest.mark.parametrize("player", ['Devil', 'Dragon'])
+@p__.mark.parametrize("player", ['Devil', 'Dragon'])
 ___ test_sponge_cleanses_devil_and_dragon(player):
     ... get_winner('Sponge', player) __ 'Sponge'
 
@@ -193,7 +193,7 @@ ___ test_paper_floats_on_water
     ... get_winner('Paper', 'Water') __ 'Paper'
 
 
-@pytest.mark.parametrize("player", ['Devil', 'Dragon'])
+@p__.mark.parametrize("player", ['Devil', 'Dragon'])
 ___ test_paper_rebukes_devil(player):
     ... get_winner('Paper', player) __ 'Paper'
 
@@ -234,7 +234,7 @@ ___ test_air_creates_lightningj
     ... get_winner('Air', 'Lightning') __ 'Air'
 
 
-@pytest.mark.parametrize("player", ['Devil', 'Dragon'])
+@p__.mark.parametrize("player", ['Devil', 'Dragon'])
 ___ test_water_drowns_devil_and_dragon(player):
     ... get_winner('Water', player) __ 'Water'
 
@@ -247,7 +247,7 @@ ___ test_water_puts_out_fire
     ... get_winner('Water', 'Fire') __ 'Water'
 
 
-@pytest.mark.parametrize("player", ['Scissors', 'Gun'])
+@p__.mark.parametrize("player", ['Scissors', 'Gun'])
 ___ test_water_rusts_scissors_and_gun(player):
     ... get_winner('Water', player) __ 'Water'
 
@@ -260,7 +260,7 @@ ___ test_dragon_commands_devil
     ... get_winner('Dragon', 'Devil') __ 'Dragon'
 
 
-@pytest.mark.parametrize("player", ['Lightning', 'Fire'])
+@p__.mark.parametrize("player", ['Lightning', 'Fire'])
 ___ test_dragon_breathes_lightning_and_fire(player):
     ... get_winner('Dragon', player) __ 'Dragon'
 
@@ -269,7 +269,7 @@ ___ test_dragon_rests_on_rock
     ... get_winner('Dragon', 'Rock') __ 'Dragon'
 
 
-@pytest.mark.parametrize("player", ['Scissors', 'Gun'])
+@p__.mark.parametrize("player", ['Scissors', 'Gun'])
 ___ test_dragon_is_immune_to_scissors_and_gun(player):
     ... get_winner('Dragon', player) __ 'Dragon'
 
@@ -286,7 +286,7 @@ ___ test_devil_breaths_fire
     ... get_winner('Devil', 'Fire') __ 'Devil'
 
 
-@pytest.mark.parametrize("player", ['Scissors', 'Gun'])
+@p__.mark.parametrize("player", ['Scissors', 'Gun'])
 ___ test_devil_is_immune_to_scissors_and_gun(player):
     ... get_winner('Devil', player) __ 'Devil'
 
@@ -303,12 +303,12 @@ ___ test_devil_possesses_human
     ... get_winner('Devil', 'Human') __ 'Devil'
 
 
-@pytest.mark.parametrize("player", ['Gun', 'Scissors'])
+@p__.mark.parametrize("player", ['Gun', 'Scissors'])
 ___ test_lightning_melts_gun_and_scissors(player):
     ... get_winner('Lightning', player) __ 'Lightning'
 
 
-@pytest.mark.parametrize("player", ['Rock', 'Tree'])
+@p__.mark.parametrize("player", ['Rock', 'Tree'])
 ___ test_lightning_splits_rocks_and_trees(player):
     ... get_winner('Lightning', player) __ 'Lightning'
 
@@ -317,12 +317,12 @@ ___ test_lightning_starts_fire
     ... get_winner('Lightning', 'Fire') __ 'Lightning'
 
 
-@pytest.mark.parametrize("player", ['Snake', 'Human'])
+@p__.mark.parametrize("player", ['Snake', 'Human'])
 ___ test_lightning_strikes_snake_and_human(player):
     ... get_winner('Lightning', player) __ 'Lightning'
 
 
-@pytest.mark.parametrize("player", ['Rock', 'Tree', 'Fire'])
+@p__.mark.parametrize("player", ['Rock', 'Tree', 'Fire'])
 ___ test_gun_targets_rock_tree_and_fire(player):
     ... get_winner('Gun', player) __ 'Gun'
 
@@ -331,6 +331,6 @@ ___ test_gun_outclasses_scissors
     ... get_winner('Gun', 'Scissors') __ 'Gun'
 
 
-@pytest.mark.parametrize("player", ['Snake', 'Human', 'Wolf'])
+@p__.mark.parametrize("player", ['Snake', 'Human', 'Wolf'])
 ___ test_gun_shoots_snake_human_and_wolf(player):
     ... get_winner('Gun', player) __ 'Gun'

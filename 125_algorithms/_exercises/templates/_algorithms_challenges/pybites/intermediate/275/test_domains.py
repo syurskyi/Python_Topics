@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ domains _______ get_common_domains, get_most_common_domains
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ common_domains
     r.. l..(get_common_domains())
 
@@ -16,7 +16,7 @@ ___ test_get_common_domains(common_domains):
     ... common_domains[-3:] __ last_3
 
 
-@pytest.mark.parametrize("emails, expected", [
+@p__.mark.parametrize("emails, expected", [
     (["a@gmail.com", "b@pybit.es", "c@pybit.es", "d@domain.de"],
      [('pybit.es', 2), ('domain.de', 1)]),
     (["a@hotmail.com", "b@gmail.com"], []),

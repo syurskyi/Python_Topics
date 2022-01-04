@@ -22,7 +22,7 @@ ___ file_ __ (fathers_days_countries, fathers_days_recurring):
 ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days_countries):
     """Helper to parse fathers_days_countries"""
     year = s..(year)
-    with open(filename,'r') __ f:
+    w__ open(filename,'r') __ f:
 
         ___ line __ f:
             line = line.s..
@@ -45,7 +45,7 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
     """Helper to parse fathers_days_recurring"""
 
 
-    with open(filename,'r') __ f:
+    w__ open(filename,'r') __ f:
         ___ line __ f:
             line = line.s..
             __ n.. line o. line.startswith('#'):

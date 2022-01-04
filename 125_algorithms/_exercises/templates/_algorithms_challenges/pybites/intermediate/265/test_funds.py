@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ funds _______ max_fund
 
@@ -17,7 +17,7 @@ some = [2, -3, 2, 1, -7, -5, 3, -6, 18, 7, 13, 12]
 extreme = [-1, -2, -3, -4, -5, -1, -2, -3]
 
 
-@pytest.mark.parametrize("data, expected", [
+@p__.mark.parametrize("data, expected", [
     (community, (100, 31, 74)),
     (poverty, (13, 6, 9)),
     (some, (50,  9, 12)),

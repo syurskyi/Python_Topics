@@ -1,11 +1,11 @@
 ____ d__ _______ date
 
-_______ pytest
+_______ p__
 
 ____ movie_budget _______ rent_or_stream, MovieRented
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
    ([MovieRented('Mad Max Fury Road', 4, date(2020, 12, 1))],
     {"2020-12": "rent"}),
    ([MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17)),

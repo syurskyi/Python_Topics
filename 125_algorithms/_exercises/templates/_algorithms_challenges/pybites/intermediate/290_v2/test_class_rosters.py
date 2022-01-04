@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ class_rosters _______ class_rosters
 
@@ -19,7 +19,7 @@ empty = """
 """  # noqa E501
 
 
-@pytest.mark.parametrize("content, expected", [
+@p__.mark.parametrize("content, expected", [
     (full, ['SCI09-4,2020,36283',
             'MATH09-2,2020,36283',
             'TA09-1,2020,36283',

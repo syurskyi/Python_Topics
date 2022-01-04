@@ -37,7 +37,7 @@ c_ Board:
 
     ___ territory(self, x, y):
         __ n.. valid(x, y):
-            raise ValueError('invalid coordinate')
+            r.. ValueError('invalid coordinate')
         __ board[y][x] __ STONES:
             r.. (NONE, set())
 

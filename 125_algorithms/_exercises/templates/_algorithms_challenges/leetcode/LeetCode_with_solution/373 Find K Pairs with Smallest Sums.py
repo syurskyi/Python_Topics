@@ -60,7 +60,7 @@ c_ Solution(object):
                 __ hasnext
                     r.. Node(i, j + 1)
 
-                raise StopIteration
+                r.. StopIteration
 
         __ n.. nums1 o. n.. nums2:
             r.. []

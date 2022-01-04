@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ rgb2hex _______ rgb_to_hex
 
 
-@pytest.mark.parametrize("rgb, hex_", [
+@p__.mark.parametrize("rgb, hex_", [
     # https://www.rapidtables.com/web/color/RGB_Color.html
     ((0, 0, 0), '#000000'),  # black
     ((255, 255, 255), '#FFFFFF'),  # white
@@ -27,7 +27,7 @@ ___ test_rgb_to_hex(rgb, hex_):
 
 
 ___ test_wrong_values
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         rgb_to_hex((-1, 100, 100))
         rgb_to_hex((100, 300, 200))
         rgb_to_hex((100, 200, 256))

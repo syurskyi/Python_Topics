@@ -35,7 +35,7 @@ c_ JsObject:
             _local[key] = value
             __dict__[key] = value
         ____:
-            raise AttributeError("Reserved words not allowed")
+            r.. AttributeError("Reserved words not allowed")
 
     ___ __delitem__(self, key):
         _local.pop(key)

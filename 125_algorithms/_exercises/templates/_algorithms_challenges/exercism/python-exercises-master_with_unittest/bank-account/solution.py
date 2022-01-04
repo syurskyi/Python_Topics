@@ -8,28 +8,28 @@ c_ BankAccount(object):
         lock = threading.Lock()
 
     ___ get_balance
-        with lock:
+        w__ lock:
             __ is_open:
                 r.. balance
             ____:
-                raise ValueError
+                r.. ValueError
 
     ___ open
         is_open = T..
 
     ___ deposit(self, amount):
-        with lock:
+        w__ lock:
             __ is_open a.. amount > 0:
                 balance += amount
             ____:
-                raise ValueError
+                r.. ValueError
 
     ___ withdraw(self, amount):
-        with lock:
+        w__ lock:
             __ is_open a.. 0 < amount <= balance:
                 balance -= amount
             ____:
-                raise ValueError
+                r.. ValueError
 
     ___ close
         is_open = F..

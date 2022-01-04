@@ -11,8 +11,8 @@ ___ sandwich(func):
        func's docstring)
     """
     @wraps(func)
-    ___ wrapped(*args, **kwargs):
+    ___ wrapped $ $$:
         print(UPPER_SLICE)
-        func(*args, **kwargs)
+        func $ $$
         print(LOWER_SLICE)
     r.. wrapped

@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ record _______ RecordScore
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ record
     """Make a RecordScore object with a few scores"""
     record = RecordScore()

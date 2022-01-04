@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
     logfile
 )
 
-with open(logfile) __ f:
+w__ open(logfile) __ f:
     loglines = f.readlines()
 
 

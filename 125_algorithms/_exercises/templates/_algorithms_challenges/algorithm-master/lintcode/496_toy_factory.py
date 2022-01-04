@@ -6,7 +6,7 @@ toy.talk()
 """
 c_ Toy:
     ___ talk
-        raise NotImplementedError('This method should have implemented.')
+        r.. NotImplementedError('This method should have implemented.')
 
 
 c_ Dog(Toy):

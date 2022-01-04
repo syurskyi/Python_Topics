@@ -10,9 +10,9 @@ ___ say(number, recursive=F..):
     k, m, b, t = 1e3, 1e6, 1e9, 1e12
 
     __ number < 0:
-        raise AttributeError('number is negative')
+        r.. AttributeError('number is negative')
     __ number >= t:
-        raise AttributeError('number is too large: %s' % s..(number))
+        r.. AttributeError('number is too large: %s' % s..(number))
 
     __ number < 20:
         r.. small[number] __ n.. recursive ____ 'and ' + small[number]

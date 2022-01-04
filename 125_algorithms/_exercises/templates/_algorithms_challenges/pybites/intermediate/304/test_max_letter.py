@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ max_letter _______ max_letter_word
 
 sample_text = '''It is a truth universally acknowledged, that a single man in
@@ -22,7 +22,7 @@ no_words_in_text = '1, 2, 3'
 empty_text = ''
 
 
-@pytest.mark.parametrize("given, expected",
+@p__.mark.parametrize("given, expected",
                          [(sample_text, ('possession', 's', 4)),
                           (with_numbers_text, ('Leagues', 'e', 2)),
                           (emoji_text, ('letters', 'e', 2)),
@@ -46,7 +46,7 @@ ___ test_max_letter_word(given, expected):
     ... result __ expected
 
 
-@pytest.mark.parametrize("bad_input", [N.., T.., 1, 1.0, [], {}])
+@p__.mark.parametrize("bad_input", [N.., T.., 1, 1.0, [], {}])
 ___ test_max_letter_word_exceptions(bad_input):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         max_letter_word(bad_input)

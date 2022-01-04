@@ -5,7 +5,7 @@ c_ SaddlePoints:
 
     ___ get_saddle_points
         __ invalid_matrix
-            raise ValueError('Matrix has rows of unequal length')
+            r.. ValueError('Matrix has rows of unequal length')
         r.. saddle_points()
 
     ___ saddle_points

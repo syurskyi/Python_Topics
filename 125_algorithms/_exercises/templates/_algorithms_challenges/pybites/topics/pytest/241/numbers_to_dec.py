@@ -14,9 +14,9 @@ ___ list_to_decimal(nums: List[i..]) __ i..:
     """
     ___ num __ nums:
         __ isi..(num, bool) o. n.. isi..(num, i..):
-            raise TypeError
+            r.. T..
         ____ n.. num __ r..(0, 10):
-            raise ValueError
+            r.. ValueError
 
     r.. i..(''.j..(map(s.., nums)))
 

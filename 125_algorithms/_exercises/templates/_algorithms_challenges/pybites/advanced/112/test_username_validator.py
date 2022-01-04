@@ -1,6 +1,6 @@
 ____ typing.__ _______ Pattern
 
-_______ pytest
+_______ p__
 
 ____ username_validator _______ (Validator,
                                 parse_social_platforms_string,
@@ -17,7 +17,7 @@ ___ test_parse_social_platforms_string
 
 
 ___ test_validate_username_wrong_validator
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         validate_username('Github', 'bob')
 
 

@@ -116,7 +116,7 @@ c_ ScaleGeneratorTest(unittest.TestCase):
         assertEqual(expected, actual)
 
     ___ test_brokeninterval
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             Scale('G', 'enigmatic', 'mAMMMmM')
 
 

@@ -1,11 +1,11 @@
 ____ random _______ sample
 
-_______ pytest
+_______ p__
 
 ____ minimum_number _______ minimum_number
 
 
-@pytest.mark.parametrize('test_input, expected', [
+@p__.mark.parametrize('test_input, expected', [
                         ([], 0),
                         ([0], 0),
                         ([1], 1),

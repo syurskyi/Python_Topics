@@ -28,19 +28,19 @@ c_ SeriesTest(unittest.TestCase):
         assertEqual(slices("777777", 3), ["777", "777", "777", "777"])
 
     ___ test_slice_length_is_too_large
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             slices("12345", 6)
 
     ___ test_slice_length_cannot_be_zero
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             slices("12345", 0)
 
     ___ test_slice_length_cannot_be_negative
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             slices("123", -1)
 
     ___ test_empty_series_is_invalid
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             slices("", 1)
 
     # Utility functions

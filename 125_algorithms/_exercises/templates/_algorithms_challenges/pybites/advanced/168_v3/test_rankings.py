@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ rankings _______ Ninja, Rankings, bites, names
 
@@ -31,17 +31,17 @@ ___ _create_ranks(ninjas_ N..
     r.. ranking
 
 
-@pytest.fixture
+@p__.fixture
 ___ first_ninjas
     r.. FIRST_NINJAS
 
 
-@pytest.fixture
+@p__.fixture
 ___ second_ninjas
     r.. SECOND_NINJAS
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ ninja_ranks
     ranking = Rankings()
     ___ ninja __ FIRST_NINJAS:
@@ -50,7 +50,7 @@ ___ ninja_ranks
 
 
 ___ test_ninja_class_empty_init_raises_exception
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         Ninja()
 
 

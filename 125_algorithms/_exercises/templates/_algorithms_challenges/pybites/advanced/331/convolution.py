@@ -21,29 +21,29 @@ ___ convolution2D(
     arrays = (image,kernel)
     # assert that both are 2D numpy arrays
     __ n.. a..(isi..(array,np.ndarray) ___ array __ arrays):
-        raise TypeError("image and kernel must be numpy arrays of dimension 2")
+        r.. T..("image and kernel must be numpy arrays of dimension 2")
 
     __ n.. a..(array.ndim __ 2 ___ array __ arrays):
-        raise ValueError("kernel and filter must be size 2")
+        r.. ValueError("kernel and filter must be size 2")
         
     is_not_integer = l.... x: n.. isi..(x,i..) o. (isi..(x,float) a.. n.. x.is_integer())
     
     
     __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays):
-        raise ValueError("Height must equal width for both kernel and image")
+        r.. ValueError("Height must equal width for both kernel and image")
     
 
     __ n.. a..(np.issubdtype(array.dtype,np.number) ___ array __ arrays):
-        raise TypeError("Kernel and image must contain only numeric values")
+        r.. T..("Kernel and image must contain only numeric values")
 
 
 
     __ kernel.shape[0] % 2 __ 0:
-        raise ValueError("Kernel size must be odd")
+        r.. ValueError("Kernel size must be odd")
 
 
     __ kernel.shape[0] > image.shape[0]:
-        raise ValueError("Kernel must be less than image size")
+        r.. ValueError("Kernel must be less than image size")
     
 
 
@@ -56,9 +56,9 @@ ___ convolution2D(
     ___ value,type_,min_ __ z..(values,types,mins):
         __ value __ n.. N..
             __ is_not_integer(value):
-                raise TypeError(f"{type_} must be integer")
+                r.. T..(f"{type_} must be integer")
             __ n.. value >= min_:
-                raise ValueError(f"{type_}, must be greater than zero")
+                r.. ValueError(f"{type_}, must be greater than zero")
     
 
     stride = i..(stride) # inc ase they passed a value like 2.0

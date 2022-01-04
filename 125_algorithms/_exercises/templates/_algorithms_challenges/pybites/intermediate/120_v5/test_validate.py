@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ Previous.validate _______ int_args
 
@@ -13,15 +13,15 @@ ___ test_valid_args
 
 
 ___ test_invalid_type_str
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         sum_numbers(1, 'string', 3)
 
 
 ___ test_invalid_type_float
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         sum_numbers(1, 2.1, 3)
 
 
 ___ test_negative_number
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         sum_numbers(1, 2, -3)

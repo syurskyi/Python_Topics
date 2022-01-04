@@ -10,9 +10,9 @@ ___ romanize(decimal_number):
 
     __ isi..(decimal_number, i..):
         __ decimal_number <= 0 o. decimal_number >= 4000:
-            raise ValueError
+            r.. ValueError
     ____:
-        raise ValueError
+        r.. ValueError
 
     try:
         numeral = numeral_lookup[decimal_number]

@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ wordvalue _______ load_words, calc_word_value, max_word_value
 
@@ -24,7 +24,7 @@ ___ test_max_word_value
     ... max_word_value(test_words) __ 'barbeque'
     ... max_word_value(words[20000:21000]) __ 'benzalphenylhydrazone'
     # cannot call with empty sequence
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         ... max_word_value(())
 
 

@@ -2,7 +2,7 @@ ____ d__ _______ d__
 ____ random _______ choice
 ____ tempfile _______ NamedTemporaryFile
 
-_______ pytest
+_______ p__
 
 ____ clamy_fernet _______ PBKDF2HMAC, ByteString, ClamyFernet, Fernet
 
@@ -16,14 +16,14 @@ TMP_FILE = NamedTemporaryFile(delete=F..)
 FILE = TMP_FILE.name
 
 
-@pytest.fixture(scope="function")
+@p__.fixture(scope="function")
 ___ rcf
     password = b"#clamybite"
     key = choice(KEYS)
     r.. ClamyFernet(password, key)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ cf
     r.. ClamyFernet(key=KEYS[0])
 

@@ -1,24 +1,24 @@
-_______ pytest
+_______ p__
 
 ____ karma _______ User, Transaction
 
 
-@pytest.fixture
+@p__.fixture
 ___ bob
     r.. User('bob')
 
 
-@pytest.fixture
+@p__.fixture
 ___ tim
     r.. User('tim')
 
 
-@pytest.fixture
+@p__.fixture
 ___ alice
     r.. User('alice')
 
 
-@pytest.fixture
+@p__.fixture
 ___ transactions(bob, tim, alice):
     r.. [
         Transaction(giver=alice, points=1),

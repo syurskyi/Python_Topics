@@ -1,17 +1,17 @@
 _______ json
 ____ d__ _______ date
 
-_______ pytest
+_______ p__
 
 ____ exchangerates _______ RATES_FILE, exchange_rates, get_all_days, match_daily_rates
 
 
-@pytest.fixture(scope="session")
+@p__.fixture(scope="session")
 ___ exchange_rates_result
     r.. exchange_rates()
 
 
-@pytest.fixture(scope="session")
+@p__.fixture(scope="session")
 ___ matching_result
     start = date(2020, 1, 1)
     end = date(2020, 9, 1)
@@ -19,7 +19,7 @@ ___ matching_result
     r.. match_daily_rates(start, end, daily_rates)
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "start, end, expected",
     [
         (date(2020, 1, 1), date(2020, 1, 31), 31),
@@ -38,7 +38,7 @@ ___ test_get_all_days(start, end, expected):
     ... actual[-1] __ end
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "date, expected",
     [
         (date(2020, 1, 18), date(2020, 1, 17)),
@@ -52,7 +52,7 @@ ___ test_match_daily_rates(date, expected, matching_result):
     ... actual[date] __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "testdate, expected",
     [
         (
@@ -89,10 +89,10 @@ ___ test_exchange_rates_order(exchange_rates_result):
 
 
 ___ test_exchange_rates_validate_start
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         exchange_rates(start_date="1950-01-01")
 
 
 ___ test_exchange_rates_validate_end
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         exchange_rates(end_date="2050-01-01")

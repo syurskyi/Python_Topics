@@ -7,7 +7,7 @@ c_ BirthdayDict(d..):
 
     ___ - , *args, **kwargs):
         super().__init__()
-        update(*args, **kwargs)
+        update $ $$
 
     ___ __setitem__(self, name, birthday):
         __ any((birthday.day __ x.day a.. birthday.month __ x.month) ___ (_, x) __ i..:

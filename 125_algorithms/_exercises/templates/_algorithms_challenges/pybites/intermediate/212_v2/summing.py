@@ -11,6 +11,6 @@ ___ sum_numbers(numbers):
     """
     ___ i, j __ z..(numbers, numbers[1:]):
         # replace the block below
-        with suppress(TypeError):
-            with suppress(ZeroDivisionError):
+        w__ suppress T..
+            w__ suppress(ZeroDivisionError):
                 y.. i/j

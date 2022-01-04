@@ -18,7 +18,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
        most complex Bites.
     """
     bites    # dict
-    with open(stats) __ csv_file:
+    w__ open(stats) __ csv_file:
         csv_reader = csv.reader(csv_file)
         line_count = 0
         ___ row __ csv_reader:

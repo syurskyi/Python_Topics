@@ -19,7 +19,7 @@ ___ calculate_score(scores):
     s = 0
     ___ score __ scores:
         __ score n.. __ DICE_VALUES:
-            raise ValueError("Invalid dice value")
+            r.. ValueError("Invalid dice value")
         __ score >= MIN_SCORE:
             s += score
 
@@ -51,7 +51,7 @@ ___ get_winner(players):
             score_list  = l..(player.scores)
         ____:
             __ l..(player.scores) != score_list:
-                raise ValueError("All lengths don't match!")
+                r.. ValueError("All lengths don't match!")
         score = calculate_score(player.scores)
         __ score > max_score:
             max_score = score

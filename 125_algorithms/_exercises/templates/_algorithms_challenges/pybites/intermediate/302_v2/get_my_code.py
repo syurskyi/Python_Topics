@@ -13,7 +13,7 @@ __ n.. json_input_file.exists
 
 
 ___ get_json_data
-    with open(json_input_file) __ file_in:
+    w__ open(json_input_file) __ file_in:
         r.. json.load(file_in)
 
 
@@ -37,7 +37,7 @@ ___ get_passing_code(json_data=json_data):
         
         print(passing_code)
         path = tmp / f"{bite_name}.py"
-        with open(path,'w') __ f:
+        w__ open(path,'w') __ f:
             f.write(passing_code)
 
 

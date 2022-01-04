@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ Previous.bmi _______ create_parser, handle_args
 
 
-@pytest.fixture
+@p__.fixture
 ___ parser
     r.. create_parser()
 
@@ -12,24 +12,24 @@ ___ test_no_args_exits(parser):
     # parser.parse_args should raise the exception but in case
     # you raised it explicitly further down the stack let's check
     # if handle_args raises it (same applies to next test)
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         handle_args()
 
 
 ___ test_help_flag_exits(parser):
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         args = parser.parse_args(['-h'])
         handle_args(args)
 
 
 ___ test_only_width_exits(parser):
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         args = parser.parse_args(['-w', '80'])
         handle_args(args)
 
 
 ___ test_only_length_exits(parser):
-    with pytest.raises(SystemExit):
+    w__ p__.r..(SystemExit):
         args = parser.parse_args(['-l', '187'])
         handle_args(args)
 

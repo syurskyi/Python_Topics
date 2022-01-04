@@ -92,6 +92,6 @@ c_ Solution_heap:
         ____ idx[m] > idx[node.val]:
             node.right = insert(node.right, m, idx)
         ____:
-            raise
+            r..
 
         r.. node

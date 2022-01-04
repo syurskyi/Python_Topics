@@ -11,14 +11,14 @@ ___ test_well_formed_fasta
     CONVERTED_FASTA = f"{FASTA_FILE}-test.fasta"
 
     ... fasta_to_2line_fasta(FASTA_FILE, CONVERTED_FASTA) __ EXPECTED_RECORDS
-    with open(FASTA_FILE, "r") __ f:
+    w__ open(FASTA_FILE, "r") __ f:
         f.readline()
         ... (
             f.readline().s..
             __ "MNLLSIQPLNRIAIQFGPLTVYWYGIIIGIGILLGLILATREGKKLQVPSNTFTDLVLYA"
         )
 
-    with open(CONVERTED_FASTA, "r") __ f_conv:
+    w__ open(CONVERTED_FASTA, "r") __ f_conv:
         f_conv.readline()
         ... (
             f_conv.readline().s..

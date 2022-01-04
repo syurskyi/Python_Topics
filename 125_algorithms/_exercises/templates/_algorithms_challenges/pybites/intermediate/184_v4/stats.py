@@ -14,7 +14,7 @@ __ n.. os.path.isfile(DATA):
 c_ BiteStats:
 
     ___ _load_data(self, data) __ l..:
-        with open(DATA) __ f:
+        w__ open(DATA) __ f:
             r.. l..(DictReader(f))
 
     ___ - , data=DATA):

@@ -31,7 +31,7 @@ ___ convert_to_csv(json_file):
         data = json.load(json_file)
     except JSONDecodeError:
         print(EXCEPTION)
-        raise
+        r..
 
 
     creatures = data['mounts']['collected']
@@ -39,7 +39,7 @@ ___ convert_to_csv(json_file):
     field_names = l..(creatures[0].keys())
 
     
-    with open(csv_file,'w') __ csv_file:
+    w__ open(csv_file,'w') __ csv_file:
         writer = csv.DictWriter(csv_file,fieldnames=fieldnames)
         writer.writeheader()
 

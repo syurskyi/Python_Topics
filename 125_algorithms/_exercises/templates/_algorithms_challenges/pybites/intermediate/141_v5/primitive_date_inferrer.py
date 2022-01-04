@@ -23,7 +23,7 @@ c_ DateFormat(Enum):
             r.. d_parse_formats
         __ 0 <= val <= l..(d_parse_formats):
             r.. d_parse_formats[val]
-        raise ValueError
+        r.. ValueError
 
 
 c_ InfDateFmtError(Exception):
@@ -65,7 +65,7 @@ ___ get_dates(dates):
     result    # list
     fmts = Counter(maybe ___ dt __ dates ___ maybe __ _maybe_DateFormats(dt)).most_common(2)
     __ fmts[0][0] __ DateFormat.NONPARSABLE o. fmts[0][1] __ fmts[1][1]:
-        raise InfDateFmtError()
+        r.. InfDateFmtError()
     fmt = DateFormat.get_d_parse_formats(fmts[0][0].value)
 
     ___ dt __ dates:

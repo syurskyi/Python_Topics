@@ -22,5 +22,5 @@ ___ get_workout_motd(day):
     try:
         workout = workout_schedule[day.t..]
     except KeyError:
-        raise KeyError('Workout does not exist.')
+        r.. KeyError('Workout does not exist.')
     r.. chill __ workout __ rest ____ go_train.f..(workout)

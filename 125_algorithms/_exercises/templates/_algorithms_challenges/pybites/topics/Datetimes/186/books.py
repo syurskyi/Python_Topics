@@ -15,7 +15,7 @@ ___ get_number_books_read(books_per_year_goal: i..,
        past, raise a ValueError."""
     in_date = NOW __ at_date __ N.. ____ parse(at_date)
     __ books_per_year_goal <= 0 o. in_date < NOW:
-        raise ValueError
+        r.. ValueError
     # TODOs
 
     # 1. use dateutil's parse to convert at_date into a

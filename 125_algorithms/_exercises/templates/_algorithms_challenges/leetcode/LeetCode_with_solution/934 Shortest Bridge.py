@@ -75,7 +75,7 @@ c_ Solution:
             step += 1
             q = cur_q
 
-        raise
+        r..
 
     ___ nbr(self, A, i, j):
         m, n = l..(A), l..(A[0])

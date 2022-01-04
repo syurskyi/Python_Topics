@@ -16,9 +16,9 @@ ___ BuildTree(records):
     ordered_id = [i.record_id ___ i __ records]
     __ records:
         __ ordered_id[-1] != l..(ordered_id) - 1:
-            raise ValueError
+            r.. ValueError
         __ ordered_id[0] != 0:
-            raise ValueError
+            r.. ValueError
     trees    # list
     parent    # dict
     ___ i __ r..(l..(ordered_id)):
@@ -26,12 +26,12 @@ ___ BuildTree(records):
             __ ordered_id[i] __ j.record_id:
                 __ j.record_id __ 0:
                     __ j.parent_id != 0:
-                        raise ValueError
+                        r.. ValueError
                 __ j.record_id < j.parent_id:
-                    raise ValueError
+                    r.. ValueError
                 __ j.record_id __ j.parent_id:
                     __ j.record_id != 0:
-                        raise ValueError
+                        r.. ValueError
                 trees.a..(Node(ordered_id[i]))
     ___ i __ r..(l..(ordered_id)):
         ___ j __ trees:

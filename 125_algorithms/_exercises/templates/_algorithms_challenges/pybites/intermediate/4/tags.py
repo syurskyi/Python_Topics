@@ -11,7 +11,7 @@ urllib.request.urlretrieve(
     tempfile
 )
 
-with open(tempfile) __ f:
+w__ open(tempfile) __ f:
     content = f.read().l..
     root = ET.f..(content)
     categories = [category.text ___ category __ root.i..("category")]

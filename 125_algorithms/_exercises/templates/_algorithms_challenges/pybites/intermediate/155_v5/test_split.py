@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ s.. _______ split_words_and_quoted_text
 
@@ -18,7 +18,7 @@ expected_returns = (
 )
 
 
-@pytest.mark.parametrize("arg, ret",
+@p__.mark.parametrize("arg, ret",
                          z..(some_strings, expected_returns))
 
 ___ test_split_words_and_quoted_text(arg, ret):

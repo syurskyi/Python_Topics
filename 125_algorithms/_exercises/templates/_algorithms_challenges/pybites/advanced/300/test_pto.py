@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 _______ pto
 ____ pto _______ four_day_weekends
@@ -24,7 +24,7 @@ ___ test_four_day_weekends_workdays(capfd):
 
 
 ___ test_four_day_weekends_invalid_call
-    with pytest.raises(ValueError) __ e:
+    w__ p__.r..(ValueError) __ e:
         four_day_weekends(T..)
     ... s..(e.value) __ pto.ERROR_MSG
 
@@ -32,7 +32,7 @@ ___ test_four_day_weekends_invalid_call
 ___ test_four_day_weekends_invalid_call_custom_error_message
     new_msg = "You're calling it wrong dude!"
     pto.ERROR_MSG = new_msg
-    with pytest.raises(ValueError) __ e:
+    w__ p__.r..(ValueError) __ e:
         four_day_weekends(T..)
     ... s..(e.value) __ new_msg
 

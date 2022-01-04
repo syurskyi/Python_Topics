@@ -4,8 +4,8 @@ ____ functools _______ wraps
 ___ make_html(tag):
     ___ html_tag(orig_func):
         @wraps(orig_func)
-        ___ wrapper(*args, **kwargs):
-            r.. '<'+tag+'>' + orig_func(*args, **kwargs) + '</'+tag+'>'
+        ___ wrapper $ $$:
+            r.. '<'+tag+'>' + orig_func $ $$ + '</'+tag+'>'
         r.. wrapper
     r.. html_tag
 

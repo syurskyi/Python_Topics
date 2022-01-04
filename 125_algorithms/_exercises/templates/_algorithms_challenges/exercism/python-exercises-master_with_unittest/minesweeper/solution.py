@@ -19,21 +19,21 @@ ___ board(inp):
 ___ verify_board(inp):
     # Null board or a null row
     __ n.. inp o. n.. a..(r ___ r __ inp):
-        raise ValueError("Invalid board")
+        r.. ValueError("Invalid board")
     # Rows with different lengths
     rowlen = l..(inp[0])
     collen = l..(inp)
     __ n.. a..(l..(r) __ rowlen ___ r __ inp):
-        raise ValueError("Invalid board")
+        r.. ValueError("Invalid board")
     # Unknown character in board
     cset = set()
     ___ r __ inp:
         cset.update(r)
     __ cset - set('+- *|'):
-        raise ValueError("Invalid board")
+        r.. ValueError("Invalid board")
     # Borders not as expected
     __ any(inp[i1] != '+' + '-' * (rowlen - 2) + '+'
            ___ i1 __ [0, -1]) o. any(inp[i1][i2] != '|'
                                      ___ i1 __ r..(1, collen - 1)
                                      ___ i2 __ [0, -1]):
-        raise ValueError("Invalid board")
+        r.. ValueError("Invalid board")

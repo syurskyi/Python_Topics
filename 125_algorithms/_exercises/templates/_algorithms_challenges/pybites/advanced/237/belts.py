@@ -24,7 +24,7 @@ ___ get_belts(data: s..) __ d..:
        readable dates, example entry:
        'yellow': 'January 25, 2018'
     """
-    with open(data,'r') __ f:
+    w__ open(data,'r') __ f:
         dates = json.load(f)
 
     dates.s..(key=l.... x: parse(x['date']))

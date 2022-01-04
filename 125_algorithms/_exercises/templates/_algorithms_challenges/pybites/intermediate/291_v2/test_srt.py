@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ srt _______ get_srt_section_ids
 
@@ -50,7 +50,7 @@ she is talking super fast here!
 """
 
 
-@pytest.mark.parametrize("text, expected", [
+@p__.mark.parametrize("text, expected", [
     (text1, [1, 3, 2]),
     (text2, [19, 18, 21, 20]),
     (text3, [1, 2]),

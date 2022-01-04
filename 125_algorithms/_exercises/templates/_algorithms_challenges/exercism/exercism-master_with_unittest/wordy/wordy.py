@@ -16,7 +16,7 @@ c_ Calculator:
 
     ___ calculate
         __ n.. valid
-            raise ValueError
+            r.. ValueError
         operator_stack = operator_stack()
         num_stack = num_stack()
         w.... l..(operator_stack) > 0:

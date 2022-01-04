@@ -107,7 +107,7 @@ c_ DB:
                 wanted to remove the row(s) with the year 1999, you would pass it
                 ("year", 1999). Only supports "=" operator in this bite.
         """
-        raise NotImplementedError("You have to implement this method first.")
+        r.. NotImplementedError("You have to implement this method first.")
 
     ___ insert(self, table: s.., values: List[Tuple]):
         """Inserts one or multiple new records into the database.

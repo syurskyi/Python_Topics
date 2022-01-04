@@ -1,25 +1,25 @@
-_______ pytest
+_______ p__
 
 ____ profile _______ get_profile
 
 
 ___ test_get_profile_no_name
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         ... get_profile()
 
 
 ___ test_get_profile_no_age
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         ... get_profile('tim')
 
 
 ___ test_get_profile_valueerror
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         ... get_profile('tim', 'nonint')
 
 
 ___ test_get_profile_too_many_sports
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         sports = ['tennis', 'basketball', 'badminton',
                   'baseball', 'volleyball', 'boxing']
         ... get_profile('tim', 36, *sports)

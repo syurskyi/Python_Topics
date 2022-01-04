@@ -16,7 +16,7 @@ urllib.request.urlretrieve(
 ___ create_chart
 
     current_date = N..
-    with open(SAFARI_LOGS,'r') __ f:
+    w__ open(SAFARI_LOGS,'r') __ f:
         ___ line __ f:
             
             __ 'sending to slack channel' __ line:

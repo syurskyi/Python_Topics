@@ -3,7 +3,7 @@ _______ sys
 ____ urllib.request _______ urlretrieve
 ____ zipfile _______ ZipFile
 
-_______ pytest
+_______ p__
 
 ____ longest_streak _______ TMP, longest_streak, MY_TZ, UTC
 
@@ -26,20 +26,20 @@ PATHS = [TMP / f"test{x}.json" ___ x __ r..(1, 5)]
 sys.path.a..(TMP)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ download_test_files
     data_zipfile = 'bite328_test_data.zip'
     urlretrieve(f'{S3}/{data_zipfile}', TMP / data_zipfile)
     ZipFile(TMP / data_zipfile).extractall(TMP)
 
 
-@pytest.mark.parametrize("argument, expected",
+@p__.mark.parametrize("argument, expected",
                          z..(PATHS, RESULTS))
 ___ test_longest_streak_easterntz(argument, expected, download_test_files):
     ... longest_streak(argument, MY_TZ) __ expected
 
 
-@pytest.mark.parametrize("argument, expected",
+@p__.mark.parametrize("argument, expected",
                          z..(PATHS, RESULTS_UTC))
 ___ test_longest_streak_utc(argument, expected, download_test_files):
     ... longest_streak(argument, UTC) __ expected

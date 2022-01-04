@@ -50,14 +50,14 @@ c_ Foo:
 
 
     ___ second(self, printSecond: Callable[[], N..]) __ N..
-        with locks[0]:
+        w__ locks[0]:
             # printSecond() outputs "second". Do not change or remove this line.
             printSecond()
             locks[1].release()
 
 
     ___ third(self, printThird: Callable[[], N..]) __ N..
-        with locks[1]:
+        w__ locks[1]:
             # printThird() outputs "third". Do not change or remove this line.
             printThird()
 
@@ -75,7 +75,7 @@ c_ FooError:
 
 
     ___ first(self, printFirst: 'Callable[[], None]') __ N..
-        with _lock:
+        w__ _lock:
             __ _value __ 1:
                 # printFirst() outputs "first". Do not change or remove this line.
                 _value += 1
@@ -83,7 +83,7 @@ c_ FooError:
 
 
     ___ second(self, printSecond: 'Callable[[], None]') __ N..
-        with _lock:
+        w__ _lock:
             __ _value __ 2:
                 # printSecond() outputs "second". Do not change or remove this line.
                 _value += 1
@@ -91,7 +91,7 @@ c_ FooError:
 
 
     ___ third(self, printThird: 'Callable[[], None]') __ N..
-        with _lock:
+        w__ _lock:
             __ _value __ 3:
                 # printThird() outputs "third". Do not change or remove this line.
                 _value += 1

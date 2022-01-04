@@ -25,7 +25,7 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    with open(COURSE_TIMES) __ file:
+    w__ open(COURSE_TIMES) __ file:
         course_timestamps    # list
         file_lines = file.readlines()
         ___ line __ file_lines:

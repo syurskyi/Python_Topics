@@ -9,10 +9,10 @@ ___ calc_median_from_dict(d: d..) __ float:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
     __ n.. isi..(d, d..) o. d __ N..
-        raise TypeError
+        r.. T..
 
     __ n.. a..([isi..(k, (i.., float)) a.. k ___ k __ d.v..):
-        raise TypeError
+        r.. T..
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts
     values = [item[1] ___ item __ items]

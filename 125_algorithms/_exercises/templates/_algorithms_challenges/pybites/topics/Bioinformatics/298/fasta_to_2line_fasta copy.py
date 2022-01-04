@@ -17,7 +17,7 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
     """
     new_seq = F..
     seq, info = N.., N..
-    with open(fasta_file) __ f:
+    w__ open(fasta_file) __ f:
         fasta_list = f.readlines()
     #for line in fasta_list:
     ___ line __ fasta_list:

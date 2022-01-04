@@ -1,7 +1,7 @@
 _______ i___
 ____ unittest.mock _______ patch
 
-_______ pytest
+_______ p__
 
 ____ promo _______ Promo, NoBitesAvailable
 
@@ -12,7 +12,7 @@ ___ grab_bites(promo, amount=10):
         promo.new_bite()
 
 
-@pytest.fixture
+@p__.fixture
 ___ promo
     """Make a fresh new promo object for each test"""
     r.. Promo()
@@ -56,7 +56,7 @@ ___ test_raise_exception_if_no_more_bites(promo):
     ... l..(promo.bites_done) __ 5
     grab_bites(promo)
     # exhausted bites
-    with pytest.raises(NoBitesAvailable):
+    w__ p__.r..(NoBitesAvailable):
         promo._pick_random_bite()
 
 
@@ -65,7 +65,7 @@ ___ test_work_with_2_users_and_promo_instances(promo):
     grab_bites(alices_promo)
     ... l..(alices_promo.bites_done) __ 15
     # exhausted Bites:
-    with pytest.raises(NoBitesAvailable):
+    w__ p__.r..(NoBitesAvailable):
         alices_promo.new_bite()
     # another user = new independent Promo instance
     bobs_promo = Promo()

@@ -13,9 +13,9 @@ ___ list_to_decimal(nums: List[i..]) __ i..:
         1000's, 100's, 10's, 1's
     """
     __ n.. a..(isi..(num, i..) ___ num __ nums):
-        raise TypeError
+        r.. T..
 
     __ n.. a..(num __ r..(0, 10) ___ num __ nums):
-        raise ValueError
+        r.. ValueError
 
     r.. i..(''.j..(map(s.., nums)))

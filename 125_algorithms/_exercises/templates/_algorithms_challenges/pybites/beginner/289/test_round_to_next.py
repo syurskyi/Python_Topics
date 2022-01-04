@@ -1,11 +1,11 @@
 ____ random _______ choice
 
-_______ pytest
+_______ p__
 
 ____ round_to_next _______ round_to_next
 
 
-@pytest.mark.parametrize('test_input, expected', [
+@p__.mark.parametrize('test_input, expected', [
                         ((0, 5), 0),
                         ((2, 5), 5),
                         ((5, 5), 5),

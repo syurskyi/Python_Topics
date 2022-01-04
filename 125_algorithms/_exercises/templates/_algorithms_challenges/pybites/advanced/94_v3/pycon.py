@@ -19,7 +19,7 @@ Video = n..('Video', 'id title duration metrics')
 ___ load_pycon_data(pycon_videos=pycon_videos):
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
-    with open(pycon_videos, 'rb') __ pkl:
+    w__ open(pycon_videos, 'rb') __ pkl:
         r.. pickle.load(pkl)
 
 

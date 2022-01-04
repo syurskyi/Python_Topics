@@ -84,7 +84,7 @@ c_ Solution:
                 __ a __ pre[1]:
                     break
             ____:
-                raise
+                r..
 
             left = constructFromPrePost(pre[1:1+l], post[:l])
             right = constructFromPrePost(pre[1+l:], post[l:-1])

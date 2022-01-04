@@ -1,7 +1,7 @@
 _______ random
 _______ __
 
-_______ pytest
+_______ p__
 
 ____ decorators _______ (retry,
                         MaxRetriesException,
@@ -15,11 +15,11 @@ ___ get_two_numbers(numbers):
     """
     chosen = random.sample(numbers, 2)
     __ n.. a..(t..(i) __ i.. ___ i __ chosen):
-        raise ValueError('not all ints')
+        r.. ValueError('not all ints')
 
 
 ___ test_bad_data_max_retries_and_exception(capfd):
-    with pytest.raises(MaxRetriesException):
+    w__ p__.r..(MaxRetriesException):
         get_two_numbers(['a', 'b'])
     output = capfd.readouterr()[0]
     ... output.c.. 'not all ints') __ MAX_RETRIES

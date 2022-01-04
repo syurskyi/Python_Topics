@@ -28,7 +28,7 @@ c_ DNATest(unittest.TestCase):
         assertEqual(c.. 'GGGGGTAACCCGG', 'T'), 1)
 
     ___ test_validates_nucleotides
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             c.. "GACT", 'X')
 
     ___ test_counts_all_nucleotides

@@ -9,7 +9,7 @@ __ n.. path.isfile(DICTIONARY):
 
 ___ load_words
     """Return a set of words from DICTIONARY"""
-    with open(DICTIONARY) __ f:
+    w__ open(DICTIONARY) __ f:
         r.. {word.s...l.. ___ word __ f.readlines()}
 
 

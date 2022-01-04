@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ ini _______ ToxIniParser
 
@@ -310,7 +310,7 @@ deps =
 ini_files = (cookiecutter, django, oeuvre, pyramid)
 
 
-@pytest.mark.parametrize("ini_file, num_sections, envs, base_pys", [
+@p__.mark.parametrize("ini_file, num_sections, envs, base_pys", [
     (cookiecutter, 4,
      ['flake8', 'py34', 'py35', 'py36', 'pypy', 'py27'],
      []),

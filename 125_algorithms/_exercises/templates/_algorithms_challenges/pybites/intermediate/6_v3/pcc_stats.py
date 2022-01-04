@@ -37,7 +37,7 @@ ___ gen_files(tempfile=tempfile):
     => Here you would return 03/mridubhatnagar (lowercased!)
        followed by 03/aleksandarknezevic
     """
-    with open(tempfile) __ f: lines = f.read().splitlines()
+    w__ open(tempfile) __ f: lines = f.read().splitlines()
 
     filtered = filter(l.... x: x.s..(',')[-1]__'True', lines)
     ___ line __ filtered:

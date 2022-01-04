@@ -1,6 +1,6 @@
 _______ i___
 
-_______ pytest
+_______ p__
 
 ____ helplen _______ get_len_help_text
 
@@ -15,12 +15,12 @@ ___ test_max
 
 ___ test_bad_input
     max1 = object()
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         get_len_help_text(max1)
 
 
 ___ test_another_bad_input
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         get_len_help_text('string')
 
 

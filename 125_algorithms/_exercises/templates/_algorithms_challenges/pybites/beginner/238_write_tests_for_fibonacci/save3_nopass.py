@@ -1,5 +1,5 @@
 ____ fibonacci _______ fib
-_______ pytest
+_______ p__
 
 
 ___ test_fib(n):
@@ -8,6 +8,6 @@ ___ test_fib(n):
         ... fib(1) __ 1
         ... fib(6) __ 8
     except ValueError:
-        pytest.fail("Value Error")
+        p__.fail("Value Error")
 
 

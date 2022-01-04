@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-_______ pytest
+_______ p__
 
 ____ rename_keys _______ rename_keys
 
@@ -8,7 +8,7 @@ ___ fb(value):
     r.. s..(value)
 
 
-@pytest.mark.parametrize('test_input, expected', [
+@p__.mark.parametrize('test_input, expected', [
                         ({}, {}),
                         ({'user_name': 'jdoe'}, {'user_name': 'jdoe'}),
                         ({'@user_name': 'jdoe'}, {'user_name': 'jdoe'}),

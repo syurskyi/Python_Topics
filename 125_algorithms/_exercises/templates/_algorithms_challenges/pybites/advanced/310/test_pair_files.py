@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ pair_files _______ pair_files
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "test_description,test_input,expected",
     [
         (

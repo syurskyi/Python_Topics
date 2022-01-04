@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ pandas.core.frame _______ DataFrame
 
 ____ Previous.orders _______ (load_excel_into_dataframe,
@@ -7,7 +7,7 @@ ____ Previous.orders _______ (load_excel_into_dataframe,
                              get_most_sold_item)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ df
     r.. load_excel_into_dataframe()
 

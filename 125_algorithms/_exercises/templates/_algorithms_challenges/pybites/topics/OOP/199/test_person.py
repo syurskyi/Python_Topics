@@ -1,26 +1,26 @@
 _______ i___
 
-_______ pytest
+_______ p__
 
 ____ person _______ Person, Father, Mother, Child
 
 
-@pytest.fixture
+@p__.fixture
 ___ person
     r.. Person()
 
 
-@pytest.fixture
+@p__.fixture
 ___ dad
     r.. Father()
 
 
-@pytest.fixture
+@p__.fixture
 ___ mom
     r.. Mother()
 
 
-@pytest.fixture
+@p__.fixture
 ___ child
     r.. Child()
 

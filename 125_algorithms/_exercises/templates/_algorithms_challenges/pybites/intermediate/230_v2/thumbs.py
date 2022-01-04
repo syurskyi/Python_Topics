@@ -17,7 +17,7 @@ c_ Thumbs:
                 number = abs(number)
                 string = THUMBS_DOWN
             ____:
-                raise ValueError("Specify a number")
+                r.. ValueError("Specify a number")
             
             
             __ number <= 3:
@@ -26,5 +26,5 @@ c_ Thumbs:
                 r.. f"{string} ({number}x)"
             
         ____:
-            raise TypeError("Can only multiple by intger")
+            r.. T..("Can only multiple by intger")
 

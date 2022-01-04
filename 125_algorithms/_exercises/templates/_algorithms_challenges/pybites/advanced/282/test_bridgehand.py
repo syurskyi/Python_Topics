@@ -2,7 +2,7 @@ ____ dataclasses _______ dataclass, field
 ____ random _______ shuffle
 ____ typing _______ List
 
-_______ pytest
+_______ p__
 
 ____ bridgehand _______ Suit, Rank, Card, BridgeHand
 
@@ -62,61 +62,61 @@ malformed_hands = [
 
 
 ___ test_null_cards
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         BridgeHand(N..)
 
 
 ___ test_wrong_type
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         BridgeHand(42)
 
 
 ___ test_wrong_cards
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         BridgeHand([Card(Suit.S, Rank.A)] + [N..] * 12)
 
 
-@pytest.mark.parametrize("hand", malformed_hands)
+@p__.mark.parametrize("hand", malformed_hands)
 ___ test_wrong_number_of_cards(hand):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         BridgeHand(hand.card_list)
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_str(bridge_hand, test_hand):
     ... s..(bridge_hand) __ test_hand.card_string
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_doubletons(bridge_hand, test_hand):
     ... bridge_hand.doubletons __ test_hand.doubletons
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_hcp(bridge_hand, test_hand):
     ... bridge_hand.hcp __ test_hand.hcp
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_singletons(bridge_hand, test_hand):
     ... bridge_hand.singletons __ test_hand.singletons
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_voids(bridge_hand, test_hand):
     ... bridge_hand.voids __ test_hand.voids
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_ssp(bridge_hand, test_hand):
     ... bridge_hand.ssp __ test_hand.ssp
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_total_points(bridge_hand, test_hand):
     ... bridge_hand.total_points __ test_hand.total_points
 
 
-@pytest.mark.parametrize("bridge_hand, test_hand", hand_pairs)
+@p__.mark.parametrize("bridge_hand, test_hand", hand_pairs)
 ___ test_ltc(bridge_hand, test_hand):
     ... bridge_hand.ltc __ test_hand.ltc

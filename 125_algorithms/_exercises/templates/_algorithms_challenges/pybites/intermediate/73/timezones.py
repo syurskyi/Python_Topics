@@ -12,7 +12,7 @@ ___ within_schedule(utc, *timezones):
    ___ time_z __ timezones:
       
       __ time_z n.. __ TIMEZONES:
-         raise ValueError("Please use valid timezone")
+         r.. ValueError("Please use valid timezone")
                   
       new_tz = pytz.timezone(time_z)
          

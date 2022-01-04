@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ Previous.tail _______ tail
 
@@ -11,7 +11,7 @@ Become a PyBites ninja!"""
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
 
-@pytest.fixture
+@p__.fixture
 ___ my_file(tmp_path):
     f = tmp_path / "some_file.txt"
     f.write_bytes(content)

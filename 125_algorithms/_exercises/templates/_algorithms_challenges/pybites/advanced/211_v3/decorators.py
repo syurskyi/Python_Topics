@@ -12,16 +12,16 @@ ___ retry(func):
        you print the exception thrown"""
 
     @wraps(func)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         count = 0
         ___ i __ r..(MAX_RETRIES):
             try:
-                func(*args, **kwargs)
+                func $ $$
             except Exception __ exc:
                 print(exc)
                 continue
             ____:
                 r..
-        raise MaxRetriesException()
+        r.. MaxRetriesException()
 
     r.. wrapper

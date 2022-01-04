@@ -3,7 +3,7 @@ ____ i.. _______ compress
 _______ i___
 _______ __
 
-_______ pytest
+_______ p__
 
 ____ count_down _______ count_down
 
@@ -14,7 +14,7 @@ ___ test_code_uses_singledispatch_decorator
     ... '@singledispatch' __ i___.getsource(count_down)
 
 
-@pytest.mark.parametrize("input_argument", [
+@p__.mark.parametrize("input_argument", [
     '1234',
     1234,
     [1, 2, 3, 4],
@@ -32,13 +32,13 @@ ___ test_count_down_good_inputs(input_argument, capfd):
     ... output __ DEFAULT_EXPECTED_OUTPUT
 
 
-@pytest.mark.parametrize("input_argument", [
+@p__.mark.parametrize("input_argument", [
     compress([1, 2, 3, 4], [1, 1, 1, 1]),
     d__(2018, 4, 21),
     __.c..(r'\d{4}'),
 ])
 ___ test_count_down_bad_inputs(input_argument, capfd):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         count_down(input_argument)
 
 

@@ -4,7 +4,7 @@ ____ math _______ sqrt
 
 ___ nth_prime(n):
     __ n < 1:
-        raise ValueError('The parameter `n` has to be a positive number.')
+        r.. ValueError('The parameter `n` has to be a positive number.')
 
     known    # list
     candidates = prime_candidates()

@@ -12,7 +12,7 @@ ___ within_schedule(utc, *timezones):
     utc = pytz.utc.localize(utc)
     ___ timezone __ timezones:
         __ timezone n.. __ TIMEZONES:
-            raise ValueError
+            r.. ValueError
         city_local_time = utc.astimezone(pytz.timezone(timezone))
         __ city_local_time.hour n.. __ MEETING_HOURS:
             r.. F..

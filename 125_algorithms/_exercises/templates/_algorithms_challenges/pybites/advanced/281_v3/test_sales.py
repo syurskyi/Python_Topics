@@ -1,10 +1,10 @@
 _______ pandas __ pd
-_______ pytest
+_______ p__
 
 ____ sales _______ get_data, process_data, summary_report, yearly_report, URL
 
 
-@pytest.fixture(scope="function")
+@p__.fixture(scope="function")
 ___ df
     r.. process_data(URL)
 
@@ -13,7 +13,7 @@ ___ test_data(df):
     ... isi..(df, pd.DataFrame)
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "line, expected",
     [
         (0, "sum          mean        max"),
@@ -30,7 +30,7 @@ ___ test_summary_report(df, capfd, line, expected):
     ... output[line].s.. __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "lst, expected", [(["median"], "median"), (["min", "max"], "min        max"),]
 )
 ___ test_summary_report_custom(df, capfd, lst, expected):
@@ -39,7 +39,7 @@ ___ test_summary_report_custom(df, capfd, lst, expected):
     ... output[0].s.. __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "year, expected",
     [
         (2013, "6      34595.13"),
@@ -54,9 +54,9 @@ ___ test_yearly_report(df, capfd, year, expected):
     ... output[9] __ expected
 
 
-@pytest.mark.parametrize("year", [1972, 2000, 2020])
+@p__.mark.parametrize("year", [1972, 2000, 2020])
 ___ test_yearly_report_with_invalid_year(df, year):
     msg = f"<ExceptionInfo ValueError('The year {year} is not included in the report!') tblen=2>"
-    with pytest.raises(ValueError) __ e:
+    w__ p__.r..(ValueError) __ e:
         yearly_report(df, year)
     ... s..(e) __ msg

@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ eggs _______ EggCreator, COLORS
 
@@ -25,7 +25,7 @@ ___ test_iterator_raises_stop_iteration_exception
     ec = EggCreator(2)
     next(ec)
     next(ec)
-    with pytest.raises(StopIteration):
+    w__ p__.r..(StopIteration):
         next(ec)
 
 

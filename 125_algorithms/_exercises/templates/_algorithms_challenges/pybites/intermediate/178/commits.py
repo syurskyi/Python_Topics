@@ -31,7 +31,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     month_changes = Counter()
 
 
-    with open(commit_log,'r') __ f:
+    w__ open(commit_log,'r') __ f:
         ___ line __ f:
             date_section, change_section = line.s..('|')
             date = parse(date_section,fuzzy=T..)

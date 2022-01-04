@@ -32,7 +32,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
 
     log = Counter()
     c = 0
-    with open(commit_log) __ cl:
+    w__ open(commit_log) __ cl:
         ___ x __ log_regex.f..(cl.read()):
             c += 1
             dt = parse(x[0])

@@ -30,13 +30,13 @@ ___ get_secret_token(username):
         __ user.name __ username:
             break
     ____:
-        raise UserDoesNotExist
+        r.. UserDoesNotExist
 
     __ user.expired:
-        raise UserAccessExpired
+        r.. UserAccessExpired
 
     __ user.role != ADMIN:
-        raise UserNoPermission
+        r.. UserNoPermission
 
     r.. SECRET
 

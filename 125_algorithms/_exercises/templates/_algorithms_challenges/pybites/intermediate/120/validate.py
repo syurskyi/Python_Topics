@@ -7,9 +7,9 @@ ___ int_args(func):
         # Validate arg type and value
         ___ arg __ args:
             __ n.. isi..(arg, i..):
-                raise TypeError
+                r.. T..
             ____:
                 __ arg < 0:
-                    raise ValueError
+                    r.. ValueError
         r.. func(*args)
     r.. wrapper

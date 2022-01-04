@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ best_programming_books _______ Book, display_books, load_data
 
 
-@pytest.fixture(scope="session")
+@p__.fixture(scope="session")
 ___ dummy_book
     title = "Python Testing with pytest"
     author = "Okken, Brian"
@@ -13,7 +13,7 @@ ___ dummy_book
     r.. Book(title, author, year, rank, rating)
 
 
-@pytest.fixture(scope="session")
+@p__.fixture(scope="session")
 ___ python_books
     data = load_data()
     __ isi..(data, l..):
@@ -22,7 +22,7 @@ ___ python_books
 
 
 ___ test_book_class_incorrectly
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         Book()
 
 
@@ -48,7 +48,7 @@ ___ test_load_data(python_books):
     ... python_books[10].rating __ 4.66
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "index, expected",
     [
         (0, "[001] Python Tricks (2017)"),
@@ -79,7 +79,7 @@ ___ test_display_books(python_books, index, expected, capfd):
     ... output[index] __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "limit, expected", [(40, 72), (53, 72), (69, 72), (100, 72), (1000, 72)]
 )
 ___ test_display_books_plus(python_books, limit, expected, capfd):

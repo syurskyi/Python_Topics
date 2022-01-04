@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ ninja _______ NinjaBelt
 
@@ -7,7 +7,7 @@ CONGRATS_MSG = ('Congrats, you earned {score} points '
 NEW_SCORE_MSG = 'Set new score to {score}'
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ ninja
     """Make a module scope ninja object (save state
        between tests)"""
@@ -32,7 +32,7 @@ ___ test_add_score_no_new_belt(ninja, capfd):
 
 
 ___ test_new_score_validation(ninja):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         ninja.score = 'a'
         ninja.score = 40
 

@@ -21,7 +21,7 @@ c_ Account:
 
     ___ add_transaction(self, amount):
         __ n.. isi..(amount, i..):
-            raise ValueError('please use int for amount')
+            r.. ValueError('please use int for amount')
         _transactions.a..(amount)
 
     $

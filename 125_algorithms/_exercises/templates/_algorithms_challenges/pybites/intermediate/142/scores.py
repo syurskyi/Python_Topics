@@ -18,7 +18,7 @@ ___ calculate_score(scores):
     """
     ___ score __ scores:
       __ score n.. __ DICE_VALUES:
-        raise ValueError
+        r.. ValueError
     
     total_score = s..([score ___ score __ scores __ score >= MIN_SCORE])
     r.. total_score
@@ -48,7 +48,7 @@ ___ get_winner(players):
         previous_player = l..(player.scores)
       ____:
         __ l..(player.scores) != previous_player:
-          raise ValueError
+          r.. ValueError
 
     max_score = 0
     max_player = Player

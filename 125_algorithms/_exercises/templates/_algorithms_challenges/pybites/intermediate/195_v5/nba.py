@@ -17,7 +17,7 @@ cur = conn.cursor()
 
 
 ___ import_data
-    with requests.Session() __ session:
+    w__ requests.Session() __ session:
         content = session.get(DATA_URL).content.decode('utf-8')
 
     reader = csv.DictReader(content.splitlines(), delimiter=',')

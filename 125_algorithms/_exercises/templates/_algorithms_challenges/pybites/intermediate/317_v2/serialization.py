@@ -26,7 +26,7 @@ ___ download_pickle_file
 
 ___ deserialize(pkl_file: Path = PICKLE_INFILE) __ Sequence[NamedTuple]:
     """Load the list of namedtuples from the pickle file passed in"""
-    with open(pkl_file, 'rb') __ f:
+    w__ open(pkl_file, 'rb') __ f:
         data = f.read()
         r.. pickle.loads(data)
 
@@ -36,5 +36,5 @@ ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
     """Save the data passed in to the pickle file passed in"""
     __ data __ N..
         data = deserialize()
-    with open(pkl_file, 'wb') __ f:
+    w__ open(pkl_file, 'wb') __ f:
         pickle.dump(data, f)

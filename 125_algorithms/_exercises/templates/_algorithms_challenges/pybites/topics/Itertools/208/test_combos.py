@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ combos _______ find_number_pairs
 
@@ -9,7 +9,7 @@ ___ _sort_all(ret):
     )
 
 
-@pytest.mark.parametrize("numbers, N, expected", [
+@p__.mark.parametrize("numbers, N, expected", [
     ([2, 3, 5, 4, 6], 10, [(4, 6)]),
     ([9, 1, 3, 8, 7], 10, [(9, 1), (3, 7)]),
     ([0.2, 3, 0.4], 10, []),

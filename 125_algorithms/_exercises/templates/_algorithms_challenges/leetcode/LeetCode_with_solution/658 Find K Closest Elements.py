@@ -63,7 +63,7 @@ c_ Solution:
                 ret.a..(A[j])
                 j += 1
             ____:
-                raise
+                r..
 
             k -= 1
 

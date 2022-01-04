@@ -1,14 +1,14 @@
-_______ pytest
+_______ p__
 
 ____ thumbs _______ Thumbs
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ thumbs
     r.. Thumbs()
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (-10, "👎 (10x)"),
     (-9, "👎 (9x)"),
     (-8, "👎 (8x)"),
@@ -35,7 +35,7 @@ ___ test_operator_overloading_works_both_ways(arg, expected, thumbs):
 
 
 ___ test_exception(thumbs):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         thumbs * 0
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         0 * thumbs

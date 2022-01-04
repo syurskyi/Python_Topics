@@ -62,4 +62,4 @@ ___ score(dice, category):
     try:
         r.. functions[category](dice)
     except IndexError:
-        raise ValueError("no such category")
+        r.. ValueError("no such category")

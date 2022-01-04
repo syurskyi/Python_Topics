@@ -48,7 +48,7 @@ c_ Solution:
         ___ l __ r..(1, n+1):
             __ MX[l] <= MI[l]:
                 r.. l
-        raise
+        r..
 
     ___ partitionDisjoint_2(self, A: List[i..]) __ i..:
         """
@@ -68,4 +68,4 @@ c_ Solution:
             __ MX[i] <= MI[i+1]:
                 r.. i
 
-        raise
+        r..

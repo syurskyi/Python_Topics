@@ -58,7 +58,7 @@ c_ Solution:
                 __ A[i] __ A[m..(n - 1, i + 1 + j)]:
                     r.. A[i]
 
-        raise
+        r..
 
 
 __ __name__ __ "__main__":

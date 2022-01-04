@@ -22,7 +22,7 @@ files = glob.glob(os.path.j..(TMP, '*json'))
 ___ get_movie_data(files=files):
     result    # list
     ___ file __ files:
-        with open(file) __ f:
+        w__ open(file) __ f:
             result.a..(json.load(f))
     r.. result
 

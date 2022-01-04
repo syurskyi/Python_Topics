@@ -1,11 +1,11 @@
 ____ typing _______ Union
 
-_______ pytest
+_______ p__
 
 ____ pomodoro _______ break_time, lunch_time, main, session, work_time
 
 
-@pytest.mark.asyncio
+@p__.mark.asyncio
 async ___ test_break_time(capfd):
     anno = break_time.__annotations__
     ... anno["delay"] __ Union[i.., float]
@@ -18,7 +18,7 @@ async ___ test_break_time(capfd):
     ... f"Time for a {i..(delay/60)} min break!" __ output
 
 
-@pytest.mark.asyncio
+@p__.mark.asyncio
 async ___ test_lunch_time(capfd):
     anno = lunch_time.__annotations__
     ... anno["delay"] __ Union[i.., float]
@@ -29,7 +29,7 @@ async ___ test_lunch_time(capfd):
     ... "Time for lunch!" __ output
 
 
-@pytest.mark.asyncio
+@p__.mark.asyncio
 async ___ test_work_time(capfd):
     anno = work_time.__annotations__
     ... anno["delay"] __ Union[i.., float]
@@ -41,7 +41,7 @@ async ___ test_work_time(capfd):
     ... "Time to work!" __ output
 
 
-@pytest.mark.asyncio
+@p__.mark.asyncio
 async ___ test_session(capfd):
     anno = session.__annotations__
     ... anno["work_length"] __ Union[i.., float]
@@ -56,7 +56,7 @@ async ___ test_session(capfd):
     ... l..(output.splitlines()) __ 8
 
 
-@pytest.mark.asyncio
+@p__.mark.asyncio
 async ___ test_main(capfd):
     anno = main.__annotations__
     ... anno["work_length"] __ Union[i.., float]

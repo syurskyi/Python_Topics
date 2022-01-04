@@ -1,11 +1,11 @@
 ____ d__ _______ date
 
-_______ pytest
+_______ p__
 
 ____ bdaydict _______ BirthdayDict, MSG
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ bd
     """This creates a bday dict that can be shared among the tests
        (scope = module)"""

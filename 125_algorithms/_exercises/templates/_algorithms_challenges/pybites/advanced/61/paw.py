@@ -11,7 +11,7 @@ PawCard = n..('PawCard', 'card action')
 ___ create_paw_deck(n=8):
 
     __ n > 26:
-        raise ValueError("Number of cards can be at most 26")
+        r.. ValueError("Number of cards can be at most 26")
 
     
     pawcards    # list

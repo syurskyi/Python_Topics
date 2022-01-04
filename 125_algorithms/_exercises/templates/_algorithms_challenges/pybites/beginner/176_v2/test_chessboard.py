@@ -1,6 +1,6 @@
 ____ textwrap _______ dedent  # thanks Brian :)
 
-_______ pytest
+_______ p__
 
 ____ chessboard _______ create_chessboard
 
@@ -90,7 +90,7 @@ ___ _non_empty_lines(output):
             output.splitlines() __ line.s..]
 
 
-@pytest.mark.parametrize("size", sizes)
+@p__.mark.parametrize("size", sizes)
 ___ test_create_chessboard(size, capfd):
     create_chessboard(size)
     actual = capfd.readouterr()[0]

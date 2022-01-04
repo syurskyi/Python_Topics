@@ -15,7 +15,7 @@ c_ EggCreator:
     ___ __next__
 
         __ i__ limit:
-            raise StopIteration
+            r.. StopIteration
         
         i += 1
         r.. choice(COLORS)

@@ -20,7 +20,7 @@ ___ pretty_date(date: d__):
     """Receives a datetime object and converts/returns a readable string
        using TIME_OFFSETS"""
     __ n.. isi..(date, d__) o. date > NOW:
-        raise ValueError('pretty_date() only accepts datetime objects in the past')
+        r.. ValueError('pretty_date() only accepts datetime objects in the past')
     diff = NOW - date
     seconds = i..(diff.total_seconds())
     minutes = seconds // 60

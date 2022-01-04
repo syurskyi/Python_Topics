@@ -1,11 +1,11 @@
 ____ textwrap _______ dedent
 
-_______ pytest
+_______ p__
 
 ____ split_once _______ split_once
 
 
-@pytest.mark.parametrize('test_input, expected', [
+@p__.mark.parametrize('test_input, expected', [
                         ('', ['']),
                         ('abc', ['abc']),
                         ('abc def', ['abc', 'def']),
@@ -20,7 +20,7 @@ ___ test_split_once_whitespace(test_input, expected):
     ... split_once(test_input) __ expected
 
 
-@pytest.mark.parametrize('test_input, expected', [
+@p__.mark.parametrize('test_input, expected', [
                         ('', ['']),
                         ('abc', ['abc']),
                         ('abc def', ['abc def']),
@@ -32,7 +32,7 @@ ___ test_split_once(test_input, expected):
     ... split_once(test_input, separators=',-:') __ expected
 
 
-@pytest.mark.parametrize('separators, expected', [
+@p__.mark.parametrize('separators, expected', [
     (N.., ['Darmok', 'and Jalad… at Tanagra.', 'Shaka, when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
     (',-:', ['Darmok and Jalad… at Tanagra.\nShaka', ' when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
     ('…!.', ['Darmok and Jalad', ' at Tanagra', '\nShaka, when the walls fell.\nTemba, his arms wide', '\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),

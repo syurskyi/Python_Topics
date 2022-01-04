@@ -8,12 +8,12 @@ c_ Challenge(ABC):
 
     @abstractmethod
     ___ verify(self, _):
-        raise TypeError()
+        r.. T..()
 
     $
     @abstractmethod
     ___ pretty_title
-        raise TypeError()
+        r.. T..()
 
 
 c_ BlogChallenge(Challenge):

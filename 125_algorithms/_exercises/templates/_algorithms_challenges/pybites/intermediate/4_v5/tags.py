@@ -6,7 +6,7 @@ _______ urllib.request
 tempfile = os.path.j..('/tmp', 'feed')
 urllib.request.urlretrieve('http://bit.ly/2zD8d8b', tempfile)
 
-with open(tempfile) __ f:
+w__ open(tempfile) __ f:
     content = f.read().l..
 
 # start coding

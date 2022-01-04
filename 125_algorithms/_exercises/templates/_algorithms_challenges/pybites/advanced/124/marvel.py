@@ -13,7 +13,7 @@ Character = n..('Character', 'pid name sid align sex appearances year')
 
 ___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
-    with requests.Session() __ session:
+    w__ requests.Session() __ session:
         r.. session.get(MARVEL_CSV).content.decode('utf-8')
 
 

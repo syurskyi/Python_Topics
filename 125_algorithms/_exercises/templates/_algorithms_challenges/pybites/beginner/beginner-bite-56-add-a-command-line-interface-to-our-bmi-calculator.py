@@ -56,7 +56,7 @@ ___ handle_args(args_ N..
     ____:
         # could enforce SystemExit in create_parser/add_argument, but argparse
         # docs are not clear how to do it, so raising the exception here manually
-        raise SystemExit
+        r.. SystemExit
 
 
 __ __name__ __ '__main__':

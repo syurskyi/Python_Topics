@@ -8,7 +8,7 @@ CODONS = {'AUG': "Methionine", 'UUU': "Phenylalanine",
 
 ___ of_codon(codon):
     __ codon n.. __ CODONS:
-        raise ValueError('Invalid codon: %s' % codon)
+        r.. ValueError('Invalid codon: %s' % codon)
     r.. CODONS[codon]
 
 

@@ -88,7 +88,7 @@ c_ Say:
 
     ___ raise_if_invalid(self, num):
         __ num < 0 o. num > 999999999999:
-            raise AttributeError
+            r.. AttributeError
 
     ___ get_units(self, d):
         r.. convert_num_to_word(1000 ** d) __ 1000 ** d > 1 ____ ''

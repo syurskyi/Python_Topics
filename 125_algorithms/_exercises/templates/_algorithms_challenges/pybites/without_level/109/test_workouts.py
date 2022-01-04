@@ -1,11 +1,11 @@
-_______ pytest
+_______ p__
 
 ____ workouts _______ (get_workout_motd,
                       CHILL_OUT, INVALID_DAY)
 
 
 # About parametrize: https://pybit.es/pytest-coding-100-tests.html
-@pytest.mark.parametrize("day, expected", [
+@p__.mark.parametrize("day, expected", [
     ('Monday', 'Go train Chest+biceps'),
     ('monday', 'Go train Chest+biceps'),
     ('Tuesday', 'Go train Back+triceps'),

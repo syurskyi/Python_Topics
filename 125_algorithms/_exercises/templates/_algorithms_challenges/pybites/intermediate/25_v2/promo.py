@@ -37,7 +37,7 @@ c_ Promo:
         """Pick a random Bite that is not done yet, if all
            Bites are done, raise a NoBitesAvailable exception"""
         __ all_bites_done:
-            raise NoBitesAvailable
+            r.. NoBitesAvailable
         r.. random.choice([key ___ key __ BITES.k.. __ key n.. __ bites_done])
 
     ___ new_bite

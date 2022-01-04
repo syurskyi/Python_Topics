@@ -1,11 +1,11 @@
-_______ pytest
+_______ p__
 
 ____ i.. _______ islice
 
 ____ countdown _______ countdown
 
 
-@pytest.fixture
+@p__.fixture
 ___ cd
     r.. countdown()
 
@@ -26,6 +26,6 @@ ___ test_generator_values(cd):
 
 
 ___ test_going_beyond_one_hundred(cd):
-    with pytest.raises(StopIteration):
+    w__ p__.r..(StopIteration):
         ___ _ __ r..(101):
             next(cd)

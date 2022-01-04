@@ -1,7 +1,7 @@
 ___ is_iterable(thing):
     try:
         i..(thing)
-    except TypeError:
+    except T..:
         r.. F..
     ____:
         r.. T..

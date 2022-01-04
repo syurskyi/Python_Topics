@@ -1,2 +1,2 @@
-___ get_profile(*, name='julian', profession='programmer'):
-    r.. name + ' is a ' + profession
+# ___ get_profile *, name='julian', profession='programmer'
+#     r.. ? + ' is a ' + ?

@@ -1,11 +1,11 @@
 _______ string
 
-_______ pytest
+_______ p__
 
 ____ spelling _______ suggest_word, load_words
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ a_words
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words = load_words()
@@ -14,7 +14,7 @@ ___ a_words
             a.. word[1] __ string.ascii_letters[:13]}
 
 
-@pytest.mark.parametrize("word, expected", [
+@p__.mark.parametrize("word, expected", [
     ('acheive', 'achieve'),
     ('accross', 'across'),
     ('acceptible', 'acceptable'),

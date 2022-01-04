@@ -11,7 +11,7 @@ __ n.. path.isfile(EXCEL):
 ___ load_excel_into_dataframe(excel=EXCEL):
     """Load the SalesOrders sheet of the excel book (EXCEL variable)
        into a Pandas DataFrame and return it to the caller"""
-    with open(excel,'rb') __ xl:
+    w__ open(excel,'rb') __ xl:
         r.. pd.read_excel(xl,sheetname='SalesOrders')
 
 

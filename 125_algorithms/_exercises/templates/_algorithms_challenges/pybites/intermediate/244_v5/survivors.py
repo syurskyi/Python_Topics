@@ -12,7 +12,7 @@ __ n.. PATH.exists
 
 
 ___ _get_data(path=PATH):
-    with open(path) __ f:
+    w__ open(path) __ f:
         r.. [line.rstrip() ___ line __ f.readlines()]
 
 

@@ -10,9 +10,9 @@ ___ timing(f):
        Returns (timing, result) tuple"""
 
     @wraps(f)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         start = time()
-        result = f(*args, **kwargs)
+        result = f $ $$
         end = time()
         duration = end - start
         print(f'Elapsed time {f.__name__}: {duration}')

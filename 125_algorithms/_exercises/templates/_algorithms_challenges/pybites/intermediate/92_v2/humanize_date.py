@@ -22,10 +22,10 @@ ___ pretty_date(date):
     
 
     __ t..(date) != d__:
-        raise ValueError("Not a datetime")
+        r.. ValueError("Not a datetime")
 
     __ date > NOW:
-        raise ValueError("Invalid date! Date in future!")
+        r.. ValueError("Invalid date! Date in future!")
 
 
     delta = i..((NOW - date).total_seconds())

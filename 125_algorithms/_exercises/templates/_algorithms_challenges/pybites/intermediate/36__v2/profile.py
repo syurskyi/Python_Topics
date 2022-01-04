@@ -5,10 +5,10 @@ ___ get_profile(name, age, *args, **kwargs):
 
     # Validations
     __ n.. isi..(age, i..):
-        raise ValueError
+        r.. ValueError
 
     __ l..(args) > 5:
-        raise ValueError
+        r.. ValueError
 
     user_profile    # dict
 

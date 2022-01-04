@@ -1,7 +1,7 @@
 ____ d__ _______ date, t..
 ____ random _______ shuffle
 
-_______ pytest
+_______ p__
 
 ____ missing_dates _______ get_missing_dates
 
@@ -28,7 +28,7 @@ ___ _create_dates(missing, year=2019,  m.._2):
     y.. last
 
 
-@pytest.mark.parametrize("missing, month", [
+@p__.mark.parametrize("missing, month", [
     ([2, 7, 11], 2),
     (l..(r..(2, 12, 2)), 3),
     ([14, 12], 3),

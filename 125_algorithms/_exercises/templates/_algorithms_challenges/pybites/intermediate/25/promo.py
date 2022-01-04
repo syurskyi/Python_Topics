@@ -40,7 +40,7 @@ c_ Promo:
             ____:
                 _pick_random_bite()
         ____:
-            raise NoBitesAvailable
+            r.. NoBitesAvailable
         r.. bite_key
 
     ___ new_bite

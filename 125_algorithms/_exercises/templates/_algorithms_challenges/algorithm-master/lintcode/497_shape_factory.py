@@ -6,7 +6,7 @@ shape.draw()
 """
 c_ Shape:
     ___ draw
-        raise NotImplementedError('This method should have implemented.')
+        r.. NotImplementedError('This method should have implemented.')
 
 
 c_ Triangle(Shape):

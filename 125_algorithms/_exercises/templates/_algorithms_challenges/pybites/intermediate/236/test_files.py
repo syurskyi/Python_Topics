@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ files _______ get_matching_files
 
@@ -7,7 +7,7 @@ FILES = ('bite.html commands.sh out_grepped pytest_testrun.out '
          'timings.py').s..
 
 
-@pytest.mark.parametrize("filter_str, expected", [
+@p__.mark.parametrize("filter_str, expected", [
    ('bite1', ['bite1']),
    ('Bite', ['bite1']),
    ('pybites', ['bite1']),
@@ -25,7 +25,7 @@ ___ test_example_docstring(tmp_path, filter_str, expected):
     ... s..(actual) __ s..(expected)
 
 
-@pytest.mark.parametrize("filter_str, expected", [
+@p__.mark.parametrize("filter_str, expected", [
    ('bite.html', ['bite.html']),
    ('bite.htm1', ['bite.html']),
    ('bit$.htm1', ['bite.html']),

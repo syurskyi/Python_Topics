@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ random _______ sample, seed
 
 ____ twosums _______ two_sums
@@ -19,7 +19,7 @@ ___ test_two_sums
     ... result __ expected
 
 
-@pytest.mark.parametrize("target, expected", [
+@p__.mark.parametrize("target, expected", [
     (10093, (2, 36)),
     (7067, (27, 30)),
     (11261, (0, 36)),

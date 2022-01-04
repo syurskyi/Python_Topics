@@ -1,19 +1,19 @@
-_______ pytest
+_______ p__
 
 ____ tables _______ MultiplicationTable
 
 
-@pytest.fixture
+@p__.fixture
 ___ t10
     r.. MultiplicationTable(10)
 
 
-@pytest.fixture
+@p__.fixture
 ___ t3
     r.. MultiplicationTable(3)
 
 
-@pytest.mark.parametrize("arg, ret", [
+@p__.mark.parametrize("arg, ret", [
     (1, 1),
     (5, 25),
     (10, 100),
@@ -24,7 +24,7 @@ ___ test_table_len(arg, ret):
     ... l..(MultiplicationTable(arg)) __ ret
 
 
-@pytest.mark.parametrize("arg, ret", [
+@p__.mark.parametrize("arg, ret", [
     ((6, 6), 36),
     ((4, 2), 8),
     ((7, 6), 42),
@@ -36,9 +36,9 @@ ___ test_calc(t10, arg, ret):
 
 
 ___ test_calc_exception(t3, capfd):
-    with pytest.raises(IndexError):
+    w__ p__.r..(IndexError):
         t3.calc_cell(3, 4)
-    with pytest.raises(IndexError):
+    w__ p__.r..(IndexError):
         t3.calc_cell(4, 3)
 
 

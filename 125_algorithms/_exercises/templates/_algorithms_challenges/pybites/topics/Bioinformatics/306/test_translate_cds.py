@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ Bio.Data.CodonTable _______ TranslationError
 
@@ -8,7 +8,7 @@ ____ translate_cds _______ translate_cds
 # Seq.CodonTable.ambiguous_generic_by_name variable
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "cds,table,expected",
     [
         (
@@ -92,7 +92,7 @@ ___ test_translate_cds(cds, table, expected):
     ... result.u.. __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "cds,table",
     [
         ("ATGAA", "Standard"),  # len % 3 != 0
@@ -105,5 +105,5 @@ ___ test_translate_cds_fail(cds, table):
     """
     Test if function throws error when bad data is fed in
     """
-    with pytest.raises(TranslationError):
+    w__ p__.r..(TranslationError):
         translate_cds(cds, table)

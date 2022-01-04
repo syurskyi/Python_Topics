@@ -6,7 +6,7 @@ CAR_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/cars.json'
 
 # pre-work: load JSON data into program
 
-with requests.Session() __ s:
+w__ requests.Session() __ s:
     data = s.get(CAR_DATA).json()
 
 

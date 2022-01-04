@@ -23,7 +23,7 @@ c_ LinkedList:
 
     ___ head
         __ _head __ N..
-            raise EmptyListException("Head is empty")
+            r.. EmptyListException("Head is empty")
         r.. _head
 
     ___ push(self, value):
@@ -53,7 +53,7 @@ c_ LinkedListIterator:
 
     ___ __next__
         __ _current __ N..
-            raise StopIteration
+            r.. StopIteration
         current_value = _current.value()
         _current = _current.next()
         r.. current_value

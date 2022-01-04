@@ -21,12 +21,12 @@ c_ ForthAdditionTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["+"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 +"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -48,12 +48,12 @@ c_ ForthSubtractionTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["-"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 -"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -75,12 +75,12 @@ c_ ForthMultiplicationTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["*"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 *"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -107,17 +107,17 @@ c_ ForthDivisionTest(unittest.TestCase):
 
     ___ test_errors_if_dividing_by_zero
         input_data = ["4 0 /"]
-        with assertRaisesWithMessage(ZeroDivisionError):
+        w__ assertRaisesWithMessage(ZeroDivisionError):
             evaluate(input_data)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["/"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 /"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -156,7 +156,7 @@ c_ ForthDupTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["dup"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -183,7 +183,7 @@ c_ ForthDropTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["drop"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -210,12 +210,12 @@ c_ ForthSwapTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["swap"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 swap"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -242,12 +242,12 @@ c_ ForthOverTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["over"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 over"]
-        with assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError):
             evaluate(input_data)
 
     # Utility functions
@@ -305,12 +305,12 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase):
 
     ___ test_cannot_redefine_numbers
         input_data = [": 1 2 ;"]
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             evaluate(input_data)
 
     ___ test_errors_if_executing_a_non_existent_word
         input_data = ["foo"]
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             evaluate(input_data)
 
     # Utility functions

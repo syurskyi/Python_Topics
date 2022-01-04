@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ strings _______ common_words
 
@@ -13,7 +13,7 @@ sentence4 = ['The', 'more', 'read', 'the',
 sentence5 = ['be', 'a', 'good', 'man']
 
 
-@pytest.mark.parametrize("sentence1, sentence2, expected", [
+@p__.mark.parametrize("sentence1, sentence2, expected", [
     (sentence1, sentence2, ['to', 'not']),
     (sentence3, sentence4, ['the', 'read']),
     (sentence2, sentence3, ['to']),

@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ sum_indices _______ sum_indices
 
 
-@pytest.mark.parametrize('test_input, expected', [
+@p__.mark.parametrize('test_input, expected', [
                         ([], 0),
                         (['a'], 0),
                         (['a', 'b', 'c'], 3),

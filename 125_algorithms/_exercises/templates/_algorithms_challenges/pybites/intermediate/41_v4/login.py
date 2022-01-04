@@ -6,11 +6,11 @@ loggedin_users = ['mike', 'sue']
 
 ___ login_required(func):
     @functools.wraps(func)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         user, *_ = args
         __ user.l.. __ known_users:
             __ user.l.. __ loggedin_users:
-                r.. func(*args, **kwargs)
+                r.. func $ $$
             ____:
                 r.. "please login"
         ____:

@@ -1,15 +1,15 @@
-_______ pytest
+_______ p__
 
 ____ timings _______ timings_log, get_bite_with_fastest_avg_test
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ timings
-    with open(timings_log) __ f:
+    w__ open(timings_log) __ f:
         r.. f.readlines()
 
 
-@pytest.mark.parametrize("rows, expected_bites", [
+@p__.mark.parametrize("rows, expected_bites", [
     (50, '121'),
     (100, '169'),
     (150, '169'),

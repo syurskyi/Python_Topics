@@ -1,10 +1,10 @@
 ____ calc_median_from_dict _______ calc_median_from_dict
 
-_______ pytest
+_______ p__
 
 
 # Small Numbers
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "test_input,expected",
     [
         ({1: 1}, 1),
@@ -21,7 +21,7 @@ ___ test_median_from_dict__valid_numbers(test_input, expected):
 
 
 # Huge numbers
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "test_input,expected",
     [
         ({1: 1_000_000_000_000_000, 2: 1, 3: 1_000_000_000_000_000}, 2),
@@ -48,7 +48,7 @@ ___ test_median_from_dict_valid_huge_numbers(test_input, expected):
 
 
 # Errors should be raised when the dict value is not a number
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "test_input",
     [
         ({1: "a"}),
@@ -56,5 +56,5 @@ ___ test_median_from_dict_valid_huge_numbers(test_input, expected):
     ],
 )
 ___ test_median_from_dict_raises_error(test_input):
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         calc_median_from_dict(test_input)

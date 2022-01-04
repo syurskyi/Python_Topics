@@ -41,10 +41,10 @@ ___ get_secret_token(username):
                 __ user.role __ ADMIN:
                     r.. SECRET
                 ____:
-                    raise UserNoPermission
+                    r.. UserNoPermission
             ____:
-                raise UserAccessExpired
-    raise UserDoesNotExist
+                r.. UserAccessExpired
+    r.. UserDoesNotExist
 
 ### PyBites original solution
 
@@ -71,13 +71,13 @@ ___ pyb_get_secret_token(username):
     # https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python
     # https://stackoverflow.com/questions/1319615/proper-way-to-declare-custom-exceptions-in-modern-python
     __ n.. user:
-        raise UserDoesNotExist
+        r.. UserDoesNotExist
 
     __ user.expired:
-        raise UserAccessExpired
+        r.. UserAccessExpired
 
     __ user.role != ADMIN:
-        raise UserNoPermission
+        r.. UserNoPermission
 
     r.. SECRET
 

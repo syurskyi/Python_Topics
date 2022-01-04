@@ -64,11 +64,11 @@ c_ SayTest(unittest.TestCase):
                                 "one hundred and twenty-three"))
 
     ___ test_number_to_large
-        with assertRaises(AttributeError):
+        w__ assertRaises(AttributeError):
             say(1e12)
 
     ___ test_number_negative
-        with assertRaises(AttributeError):
+        w__ assertRaises(AttributeError):
             say(-1)
 
 

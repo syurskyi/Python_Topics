@@ -11,7 +11,7 @@ ___ within_schedule(utc, *timezones):
     output    # list
     ___ tz __ timezones[0]:
         __ tz n.. __ TIMEZONES:
-            raise ValueError('Unknown timezone')
+            r.. ValueError('Unknown timezone')
 
         tz = pytz.timezone(tz)
         converted = utc.r..(tzinfo=pytz.utc).astimezone(tz)

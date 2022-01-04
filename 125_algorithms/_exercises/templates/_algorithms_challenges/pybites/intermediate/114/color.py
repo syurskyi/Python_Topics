@@ -29,7 +29,7 @@ c_ Color:
     ___ hex2rgb(hex_value):
         """Class method that converts a hex value into an rgb one"""
         __ t..(hex_value) != s.. o. l..(hex_value) != 7:
-            raise ValueError("Hex value must be length 6 string starting with #")
+            r.. ValueError("Hex value must be length 6 string starting with #")
         
 
 
@@ -40,7 +40,7 @@ c_ Color:
             try:
                 value = i..(h,16)
             except:
-                raise 
+                r..
             ____:
                 values.a..(value)
 
@@ -65,13 +65,13 @@ c_ Color:
     ___ rgb2hex(rgb_value):
         """Class method that converts an rgb value into a hex one"""
         __ t..(rgb_value) n.. __ [l..,tuple] o. l..(rgb_value) != 3:
-            raise ValueError("rgb value must be list or tuple of length 3")
+            r.. ValueError("rgb value must be list or tuple of length 3")
         
 
         values    # list
         ___ value __ rgb_value:
             __ n.. 0 <= value <= 255:
-                raise ValueError("Invalid value")
+                r.. ValueError("Invalid value")
 
             hex_value = f"{hex(value):0<2}"
             hex_value = hex_value[2:]

@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ users _______ get_users
 
@@ -46,7 +46,7 @@ artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash
 """
 
 
-@pytest.mark.parametrize("input_, expected", [
+@p__.mark.parametrize("input_, expected", [
     (pw1, {'root': 'root', 'daemon': 'daemon', 'bin': 'bin',
            'sys': 'sys', 'sync': 'sync', 'games': 'games',
            'man': 'man', 'lp': 'lp'}),

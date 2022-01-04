@@ -1,16 +1,16 @@
 _______ i___
 
-_______ pytest
+_______ p__
 
 ____ order _______ OrderedList
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ order
     r.. OrderedList()
 
 
-@pytest.mark.parametrize("num, expected", [
+@p__.mark.parametrize("num, expected", [
     (10, '10'),
     (9, '9, 10'),
     (16, '9, 10, 16'),

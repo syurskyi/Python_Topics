@@ -1,21 +1,21 @@
 ____ collections _______ Counter
 
-_______ pytest
+_______ p__
 
 ____ paw _______ create_paw_deck
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ deck
     r.. l..(create_paw_deck())
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ small_deck
     r.. l..(create_paw_deck(4))
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ big_deck
     r.. l..(create_paw_deck(16))
 
@@ -76,5 +76,5 @@ ___ test_deck_numbers_used
 
 
 ___ test_out_of_bound_arg
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         create_paw_deck(n=27)

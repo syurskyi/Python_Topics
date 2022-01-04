@@ -9,7 +9,7 @@ CSV_URL = 'https://bit.ly/2HiD2i8'
 ___ get_csv
     """Use requests to download the csv and return the
        decoded content"""
-    with requests.Session() __ session:
+    w__ requests.Session() __ session:
         r.. session.get(CSV_URL).content.decode('utf-8')
 
 

@@ -83,7 +83,7 @@ c_ ZeroEvenOddError:
 
 	# printNumber(x) outputs "x", where x is an integer.
     ___ zero(self, printNumber: 'Callable[[int], None]') __ N..
-        with locks[0]:
+        w__ locks[0]:
             printNumber(0)
 
     ___ even(self, printNumber: 'Callable[[int], None]') __ N..

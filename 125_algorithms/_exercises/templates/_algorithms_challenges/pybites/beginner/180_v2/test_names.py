@@ -1,6 +1,6 @@
 ____ collections _______ defaultdict
 
-_______ pytest
+_______ p__
 
 ____ names _______ group_names_by_country, data
 
@@ -18,12 +18,12 @@ Insko,Ave,NL
 Pigney,Gavrielle,ID"""
 
 
-@pytest.fixture
+@p__.fixture
 ___ grouping1
     r.. group_names_by_country(data)
 
 
-@pytest.fixture
+@p__.fixture
 ___ grouping2
     r.. group_names_by_country(data2)
 
@@ -38,7 +38,7 @@ ___ test_return_dict_len(grouping1, grouping2):
     ... l..(grouping2) __ 6
 
 
-@pytest.mark.parametrize('key, expected', [
+@p__.mark.parametrize('key, expected', [
     ('BR', ['Alphonso Harrold']),
     ('CN', ['Davie Halbard', 'Ines Parrett', 'Margo Apdell']),
     ('ID', ['Husain Watsham', 'Sula Wasielewski']),
@@ -51,7 +51,7 @@ ___ test_grouping1_return(grouping1, key, expected):
     ... s..(grouping1[key]) __ expected
 
 
-@pytest.mark.parametrize('key, expected', [
+@p__.mark.parametrize('key, expected', [
     ('AF', ['Leese Mockler']),
     ('CO', ['Carlo Renyard']),
     ('CZ', ['Evonne Beadham', 'Sydney Poxton']),

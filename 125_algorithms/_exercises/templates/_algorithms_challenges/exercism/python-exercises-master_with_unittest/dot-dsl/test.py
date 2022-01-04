@@ -71,43 +71,43 @@ c_ DotDslTest(unittest.TestCase):
         })
 
     ___ test_malformed_graph
-        with assertRaisesWithMessage(TypeError):
+        w__ assertRaisesWithMessage T..
             Graph(1)
 
-        with assertRaisesWithMessage(TypeError):
+        w__ assertRaisesWithMessage T..
             Graph("problematic")
 
     ___ test_malformed_graph_item
-        with assertRaisesWithMessage(TypeError):
+        w__ assertRaisesWithMessage T..
             Graph([
                 ()
             ])
 
-        with assertRaisesWithMessage(TypeError):
+        w__ assertRaisesWithMessage T..
             Graph([
                 (ATTR, )
             ])
 
     ___ test_malformed_attr
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             Graph([
                 (ATTR, 1, 2, 3)
             ])
 
     ___ test_malformed_node
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             Graph([
                 (NODE, 1, 2, 3)
             ])
 
     ___ test_malformed_EDGE
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             Graph([
                 (EDGE, 1, 2)
             ])
 
     ___ test_unknown_item
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             Graph([
                 (99, 1, 2)
             ])

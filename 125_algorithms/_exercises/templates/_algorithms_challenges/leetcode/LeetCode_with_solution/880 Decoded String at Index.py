@@ -64,7 +64,7 @@ c_ Solution:
             ____:
                 l -= 1
 
-        raise
+        r..
 
     ___ decodeAtIndex_error(self, S: s.., K: i..) __ s..:
         """

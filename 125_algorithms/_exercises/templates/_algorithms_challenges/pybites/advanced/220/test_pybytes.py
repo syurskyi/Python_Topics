@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ pybytes _______ Duration, PythonBytes
 
@@ -6,7 +6,7 @@ REAL_PYTHON = "realpython.com"
 PYBITES = 'pybit.es'
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ pb
     r.. PythonBytes()
 

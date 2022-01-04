@@ -74,7 +74,7 @@ ___ operas_both_at_premiere(guest, composer):
 
 
     __ composer n.. __ composers o. guest n.. __ composers:
-        raise ValueError("Both composer and guest must be valid composers")
+        r.. ValueError("Both composer and guest must be valid composers")
     
 
     guest = composers[guest]

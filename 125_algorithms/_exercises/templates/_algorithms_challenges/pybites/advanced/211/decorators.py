@@ -20,17 +20,17 @@ ___ retry(func):
     # and use wraps to preserve docstring
     #
     @wraps(func)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         retries = 0
         w.... retries < MAX_RETRIES:
             try:
-                vals = func(*args, **kwargs)
+                vals = func $ $$
                 break
             except Exception __ e:
                 retries += 1
                 print(e)
         ____:
-            raise MaxRetriesException
+            r.. MaxRetriesException
 
         r.. vals
 

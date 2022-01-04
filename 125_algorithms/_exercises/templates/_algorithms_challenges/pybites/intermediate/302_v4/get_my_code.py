@@ -13,7 +13,7 @@ __ n.. json_input_file.exists
 
 
 ___ get_json_data
-    with open(json_input_file) __ file_in:
+    w__ open(json_input_file) __ file_in:
         r.. json.load(file_in)
 
 

@@ -3,7 +3,7 @@ ____ pathlib _______ Path
 ____ ipaddress _______ IPv4Network
 ____ urllib.request _______ urlretrieve
 
-_______ pytest
+_______ p__
 
 ____ ips _______ (ServiceIPRange, parse_ipv4_service_ranges,
                  get_aws_service_range)
@@ -14,7 +14,7 @@ PATH = Path(TMP, "ip-ranges.json")
 IP = IPv4Network('192.0.2.8/29')
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ json_file
     """Import data into tmp folder"""
     urlretrieve(URL, PATH)
@@ -44,6 +44,6 @@ ___ test_get_aws_service_range(json_file):
     ... set(s.region ___ s __ service_range) __ {'eu-west-1'}
     ... set(s.service ___ s __ service_range) __ {'AMAZON', 'GLOBALACCELERATOR'}
     ... get_aws_service_range('158.152.1.65', services) __ []
-    with pytest.raises(ValueError) __ exc:
+    w__ p__.r..(ValueError) __ exc:
         get_aws_service_range('0.0.0.256', services)
     ... 'Address must be a valid IPv4 address' __ s..(exc.value)

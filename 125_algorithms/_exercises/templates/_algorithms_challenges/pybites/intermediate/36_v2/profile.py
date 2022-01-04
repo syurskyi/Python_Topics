@@ -2,12 +2,12 @@ ___ get_profile(name,age,*args,**kwargs):
     print(args,kwargs)
 
     __ t..(age) != i..:
-        raise ValueError("age must be interger")
+        r.. ValueError("age must be interger")
 
 
 
     __ l..(args) > 5:
-        raise ValueError("at most 5 sports")
+        r.. ValueError("at most 5 sports")
 
     
     

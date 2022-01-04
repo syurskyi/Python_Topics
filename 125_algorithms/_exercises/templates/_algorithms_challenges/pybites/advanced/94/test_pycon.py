@@ -1,6 +1,6 @@
 ____ copy _______ d..
 
-_______ pytest
+_______ p__
 
 ____ pycon _______ (load_pycon_data,
                    get_most_popular_talks_by_views,
@@ -9,7 +9,7 @@ ____ pycon _______ (load_pycon_data,
                    get_talks_lt_twentyfour_min)
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ videos
     r.. load_pycon_data()
 

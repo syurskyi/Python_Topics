@@ -9,7 +9,7 @@ ___ intersection(*args: Iterable) __ Set[Any]:
     lists = [x ___ x __ args __ x]
     try:
         temp_set = set(functools.reduce(l.... x, y: set(x).intersection(y), lists))
-    except TypeError:
+    except T..:
         temp_set = set()
     r.. temp_set
 

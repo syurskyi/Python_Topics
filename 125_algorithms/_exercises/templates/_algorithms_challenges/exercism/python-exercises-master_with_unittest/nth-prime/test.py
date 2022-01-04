@@ -19,7 +19,7 @@ c_ NthPrimeTests(unittest.TestCase):
         assertEqual(nth_prime(10001), 104743)
 
     ___ test_there_is_no_zeroth_prime
-        with assertRaises(ValueError):
+        w__ assertRaises(ValueError):
             nth_prime(0)
 
     # additional track specific test

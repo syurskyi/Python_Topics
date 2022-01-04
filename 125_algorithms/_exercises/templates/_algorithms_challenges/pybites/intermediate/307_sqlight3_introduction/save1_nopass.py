@@ -109,7 +109,7 @@ c_ DB:
                 wanted to remove the row(s) with the year 1999, you would pass it
                 ("year", 1999). Only supports "=" operator in this bite.
         """
-        raise NotImplementedError("You have to implement this method first.")
+        r.. NotImplementedError("You have to implement this method first.")
 
     ___ insert(self, table: s.., values: List[Tuple]):
         """Inserts one or multiple new records into the database.
@@ -167,7 +167,7 @@ c_ DB:
         Returns:
             list: The output returned from the sql command
         """
-        raise NotImplementedError("You have to implement this method first.")
+        r.. NotImplementedError("You have to implement this method first.")
 
     ___ update(self, table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]):
         """Update a record in the database.
@@ -178,7 +178,7 @@ c_ DB:
                 if you wanted to change "year" to 2001 you would pass it ("year", 2001).
             target (tuple): The row/record to modify. Example ("year", 1991)
         """
-        raise NotImplementedError("You have to implement this method first.")
+        r.. NotImplementedError("You have to implement this method first.")
 
     $
     ___ num_transactions(self) __ i..:
@@ -187,4 +187,4 @@ c_ DB:
         Returns:
             int: Returns the total number of database rows that have been modified.
         """
-        raise NotImplementedError("You have to implement this method first.")
+        r.. NotImplementedError("You have to implement this method first.")

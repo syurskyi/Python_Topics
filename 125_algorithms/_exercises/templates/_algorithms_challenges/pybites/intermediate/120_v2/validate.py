@@ -10,11 +10,11 @@ ___ int_args(func):
 
         ___ arg __ args:
             __ t..(arg) != i..:
-                raise TypeError("All arguments passed in must be integers")
+                r.. T..("All arguments passed in must be integers")
             
 
             __ arg <0:
-                raise ValueError("All arguments must be non-negative integers")
+                r.. ValueError("All arguments must be non-negative integers")
 
 
         r.. func(*args)

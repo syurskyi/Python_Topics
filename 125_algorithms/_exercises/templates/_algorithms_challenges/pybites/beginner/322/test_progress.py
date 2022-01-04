@@ -1,10 +1,10 @@
-_______ pytest
+_______ p__
 ____ freezegun _______ freeze_time
 
 ____ progress _______ ontrack_reading
 
 
-@pytest.mark.parametrize("args, expected", [
+@p__.mark.parametrize("args, expected", [
     ((60, 2, 3), T..),
     ((60, 0, 3), F..),
     ((60, 0.5, 3), T..),

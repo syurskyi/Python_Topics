@@ -1,11 +1,11 @@
 ____ dataclasses _______ astuple, r..
 
-_______ pytest
+_______ p__
 
 ____ dc _______ Bite
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ bites
     b1 = Bite(number=1, title="sum of numbers")
     b2 = Bite(number=2, title="a second bite", level="Intermediate")
@@ -51,12 +51,12 @@ ___ test_can_order_bites(bites):
 
 ___ test_data_class_are_not_hashable(bites):
     # this would work if namedtuples, but Bites are data classes here
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         set(bites)
 
 
 ___ test_data_class_can_only_be_unpacked_when_casted_to_tuple(bites):
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         number, title, level = bites[0]
     # but this works:
     number, title, level = astuple(bites[0])

@@ -44,7 +44,7 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket):
                     toVisit.a..((fill(buckets, i), nc))
                     toVisit.a..((consolidate(buckets, i), nc))
         __ n.. any(toVisit):
-            raise ValueError('No more moves!')
+            r.. ValueError('No more moves!')
         buckets, count = toVisit.pop(0)
 
     goalIndex = buckets.index(goal)

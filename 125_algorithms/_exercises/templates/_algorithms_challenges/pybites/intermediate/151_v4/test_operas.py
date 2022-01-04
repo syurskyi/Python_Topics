@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ operas _______ operas_both_at_premiere
 
@@ -35,11 +35,11 @@ ___ test_beethoven_mozart
 
 
 ___ test_non_listed_composer
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         l..(operas_both_at_premiere("verdi", "dvorak"))
 
 
 ___ test_non_listed_guest
     # a guest must be in the list of composers
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         l..(operas_both_at_premiere("dvorak", "verdi"))

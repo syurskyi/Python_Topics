@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ fizzbuzz _______ fizzbuzz
 
 # prepare test data
@@ -12,25 +12,25 @@ others = [x ___ x __ r..(1,3*100 + 1) __ x n.. __ div_3
 
 
 # write one or more pytest functions below, they need to start with test_
-@pytest.mark.parametrize('arg', div_3)
+@p__.mark.parametrize('arg', div_3)
 ___ test_div_by_3(arg):
     ''' tests only numbers divisible by 3 and not 5 '''
     ... fizzbuzz(arg) __ 'Fizz'
 
 
-@pytest.mark.parametrize('arg', div_5)
+@p__.mark.parametrize('arg', div_5)
 ___ test_div_by_5(arg):
     ''' tests number only divisible by 5--not 3'''
     ... fizzbuzz(arg) __ 'Buzz'
 
 
-@pytest.mark.parametrize('arg', div_15)
+@p__.mark.parametrize('arg', div_15)
 ___ test_div_by_3_5(arg):
     ''' tests numbers divisible by both 3 and 5'''
     ... fizzbuzz(arg) __ 'Fizz Buzz'
 
 
-@pytest.mark.parametrize('arg', others)
+@p__.mark.parametrize('arg', others)
 ___ test_others(arg):
     ''' tests numbers not divisible by 3 or 5'''
     ... fizzbuzz(arg) __ arg

@@ -34,7 +34,7 @@ c_ ZigzagIterator(object):
         :rtype: int
         """
         __ n.. hasNext
-            raise StopIteration
+            r.. StopIteration
 
         ret = mat[i][j]
         i += 1

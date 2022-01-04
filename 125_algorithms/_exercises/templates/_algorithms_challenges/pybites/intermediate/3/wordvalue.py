@@ -18,7 +18,7 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 ___ load_words
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
 
-    with open(DICTIONARY,'r') __ f:
+    w__ open(DICTIONARY,'r') __ f:
         content = f.read()
     
 

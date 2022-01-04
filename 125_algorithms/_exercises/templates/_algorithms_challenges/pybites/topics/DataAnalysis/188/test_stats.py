@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ stats _______ get_all_line_counts, create_stats_report
 
@@ -20,7 +20,7 @@ Estimated variance for sample:
 """
 
 
-@pytest.fixture
+@p__.fixture
 ___ report
     r.. create_stats_report()
 
@@ -35,6 +35,6 @@ ___ test_get_all_line_counts
     ... s..(counts) __ 8135
 
 
-@pytest.mark.parametrize("line", EXPECTED_OUTPUT.s...splitlines())
+@p__.mark.parametrize("line", EXPECTED_OUTPUT.s...splitlines())
 ___ test_create_stats_report(report, line):
     ... line __ report

@@ -36,7 +36,7 @@ ___ longest_streak(
     Return a tuple containing start and end date for the longest streak
     or None
     """
-    with open(data_file) __ f:
+    w__ open(data_file) __ f:
         data = json.load(f)
     # You code from here
     commits = data['commits']

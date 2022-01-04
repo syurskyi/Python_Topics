@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ account _______ Account
 
@@ -12,7 +12,7 @@ ___ test_account_balance
     ... checking.balance __ 10
 
     ... saving.start_balance __ 10
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         saving - 'a'
     saving - 5
     ... saving.balance __ 5

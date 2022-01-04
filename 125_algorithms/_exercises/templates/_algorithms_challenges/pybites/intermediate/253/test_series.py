@@ -1,6 +1,6 @@
 _______ string
 
-_______ pytest
+_______ p__
 _______ pandas __ pd
 
 _______ series __ se
@@ -9,37 +9,37 @@ file_name = "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
 df = pd.read_csv(file_name)
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ sepal_length_series
     """Returns the Sepal Length Series from the Iris DataFrame"""
     r.. df.sepal_length.sort_values().reset_index(drop=T..)
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ int_series_vsmall
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(1, 6))
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ int_series_small
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(10))
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ int_series_vsmall_offset_index
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(0, 10, 2), index=r..(0, 10, 2))
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ letters_series
     """Returns a pandas Series containing all lower case letters"""
     r.. pd.Series(l..(string.ascii_lowercase))
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "arg, expected",
     [
         (("add", 5), [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]),
@@ -65,7 +65,7 @@ ___ test_series_simple_math(int_series_small, arg, expected):
     )
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "arg, expected",
     [
         ("add", [1.0, "nan", 5.0, "nan", 9.0, "nan", "nan"]),
@@ -85,7 +85,7 @@ ___ test_complex_series_maths(
     ... result __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "arg, expected",
     [
         (

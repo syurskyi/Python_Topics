@@ -53,7 +53,7 @@ ___ parse(input_string):
 
     ___ assert_that(condition):
         __ n.. condition:
-            raise ValueError(
+            r.. ValueError(
                 'invalid format at {}:{}: {}'.f..(
                     repr(input_string),
                     l..(input_string) - l..(stack),

@@ -16,7 +16,7 @@ c_ EggCreator:
             _limit -= 1
             r.. choice(COLORS)
         ____:
-            raise StopIteration
+            r.. StopIteration
 
 
 #if __name__ == "__main__":

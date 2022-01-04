@@ -31,7 +31,7 @@ ___ get_data_file
 
 
 ___ load_file(filename):
-    with open(filename, 'r', encoding'utf-8') __ fin:
+    w__ open(filename, 'r', encoding'utf-8') __ fin:
         # with open(filename, 'r') as fin:
         reader  csv.DictReader(fin)
         purchases  []

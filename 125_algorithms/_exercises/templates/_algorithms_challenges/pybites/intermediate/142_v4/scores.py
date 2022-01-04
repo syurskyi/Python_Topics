@@ -18,7 +18,7 @@ ___ calculate_score(scores):
        Returns int of the sum of the scores.
     """
     __ n.. a..(s __ r..(1, 7) ___ s __ scores):
-        raise ValueError
+        r.. ValueError
 
     r.. s..(s ___ s __ scores __ s >= MIN_SCORE)
 
@@ -42,6 +42,6 @@ ___ get_winner(players):
          Player(name='player 3', scores=[4, 5, 1, 2])
     """
     __ n.. a..(l..(x.scores) __ l..(players[0].scores) ___ x __ players[1:]):
-        raise ValueError
+        r.. ValueError
 
     r.. max(players, key=l.... x: calculate_score(x.scores))

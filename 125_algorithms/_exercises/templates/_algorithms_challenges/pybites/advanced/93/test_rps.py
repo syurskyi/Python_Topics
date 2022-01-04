@@ -1,6 +1,6 @@
 ____ unittest.mock _______ patch
 
-_______ pytest
+_______ p__
 
 ____ rps _______ (_get_winner, game,
                  lose, win, tie,
@@ -8,7 +8,7 @@ ____ rps _______ (_get_winner, game,
                  _get_computer_move)
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ my_game
     """Initialize game and move it to point where to
        receive first player (send) input"""
@@ -48,7 +48,7 @@ ___ test_invalid_choice(computerMoveMock, my_game, capfd):
     ... 'Invalid' __ output
 
 
-@pytest.mark.parametrize("player1, player2, result", [
+@p__.mark.parametrize("player1, player2, result", [
     ('scissors', 'paper', 'lose'),
     ('paper', 'scissors', 'win'),
     ('rock', 'paper', 'win'),
@@ -66,7 +66,7 @@ ___ test_get_winner(player1, player2, result):
 ___ test_stop_iteration(my_game):
     # 3.6 = StopIteration
     # 3.7 = RuntimeError - see: https://bugs.python.org/issue32670
-    with pytest.raises((StopIteration, RuntimeError)):
+    w__ p__.r..((StopIteration, RuntimeError)):
         my_game.send('q')
 
 

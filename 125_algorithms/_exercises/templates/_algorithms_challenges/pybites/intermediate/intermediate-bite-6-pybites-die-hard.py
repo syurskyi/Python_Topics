@@ -44,7 +44,7 @@ ___ gen_files
 
        -> use last column to filter out directories (= True)
     """
-    with open(tempfile) __ infile:
+    w__ open(tempfile) __ infile:
         ___ line __ infile:
             chunks = line.s..(',')
             __ chunks[1].s.. __ "True":
@@ -61,7 +61,7 @@ ___ diehard_pybites
     ___ i __ gen_files
         __ i n.. __ IGNORE:
             users[i] += 1
-    with open(tempfile) __ infile:
+    w__ open(tempfile) __ infile:
         ___ line __ infile:
             chunks = line.s..(',')
             __ chunks[1].s.. __ "True":

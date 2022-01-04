@@ -26,7 +26,7 @@ ___ get_movies_by_director
     d = defaultdict(l..)
     full_list    # list
 
-    with open(MOVIE_DATA, newline='') __ file:
+    w__ open(MOVIE_DATA, newline='') __ file:
         reader = csv.DictReader(file)
         ___ row __ reader:
             year = row['title_year']

@@ -2,14 +2,14 @@ _______ os
 ____ pathlib _______ Path
 ____ tempfile _______ TemporaryDirectory
 
-_______ pytest
+_______ p__
 
 ____ files _______ get_files
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 
-@pytest.mark.parametrize("byte_sizes, size_in_kb, expected", [
+@p__.mark.parametrize("byte_sizes, size_in_kb, expected", [
     ([800, 1000, 1200], 1, ['1200']),
     ([1024, 1025], 1, ['1024', '1025']),
     ([1024, 1025], 1.026, []),
@@ -17,9 +17,9 @@ TMP = Path(os.getenv("TMP", "/tmp"))
     ([1024, 2047, 2048, 2500], 2, ['2048', '2500']),
 ])
 ___ test_get_files(byte_sizes, size_in_kb, expected):
-    with TemporaryDirectory(dir=TMP) __ dirname:
+    w__ TemporaryDirectory(dir=TMP) __ dirname:
         ___ size __ byte_sizes:
-            with open(os.path.j..(dirname, s..(size)), 'wb') __ f:
+            w__ open(os.path.j..(dirname, s..(size)), 'wb') __ f:
                 f.write(os.urandom(size))
 
         actual = [os.path.basename(fi) ___ fi __

@@ -15,7 +15,7 @@ c_ User:
 
     ___ __add__(self, other: Transaction):
         __ n.. isi..(other, Transaction):
-            raise TypeError('Can only add a transaction')
+            r.. T..('Can only add a transaction')
         _transactions.a..(other)
 
     $

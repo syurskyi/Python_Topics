@@ -47,27 +47,27 @@ ___ check_bt(donor, recipient):
     """
 
     __ t..(donor) __ i.. a.. (donor < 0 o. donor > 7):
-        raise ValueError
+        r.. ValueError
     ____ t..(donor) __ float:
-        raise TypeError
+        r.. T..
     ____ t..(donor) __ s..:
         __ donor __ blood_type_text:
             donor = blood_type_text[donor].value
         ____:
-            raise ValueError
+            r.. ValueError
     ____ t..(donor) __ Bloodtype:
         donor = donor.value
 
     
     __ t..(recipient) __ i.. a.. (recipient < 0 o. recipient > 7):
-        raise ValueError
+        r.. ValueError
     ____ t..(recipient) __ float:
-        raise TypeError
+        r.. T..
     ____ t..(recipient) __ s..:
         __ recipient __ blood_type_text:
             recipient = blood_type_text[recipient].value
         ____:
-            raise ValueError
+            r.. ValueError
     ____ t..(recipient) __ Bloodtype:
         recipient = recipient.value
 

@@ -21,7 +21,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
        Return a list of Bite IDs (int or str values are fine) of the N
        most complex Bites.
     """
-    with open(stats, encoding="utf-8-sig") __ f:
+    w__ open(stats, encoding="utf-8-sig") __ f:
         bites = l..(csv.reader(f, delimiter=';'))
     bites.pop(0)  # remove header
     bites = [[b[0], float(b[1])] ___ b __ bites __ b[1] != 'None']

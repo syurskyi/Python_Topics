@@ -22,7 +22,7 @@ ___ get_movies_by_director
     """Extracts all movies from csv and stores them in a dict,
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
-    with open(MOVIE_DATA) __ f:
+    w__ open(MOVIE_DATA) __ f:
         reader = csv.DictReader(f)
         films = [{'director': r['director_name'], 'title': r['movie_title'], 'year': r['title_year'],
                   'score': r['imdb_score']}

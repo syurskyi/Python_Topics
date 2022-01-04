@@ -1,8 +1,8 @@
-_______ pytest
+_______ p__
 
 ____ workouts _______ print_workout_days
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     ('#', 'Mon, Tue, Thu, Fri\n'), 
     ('30', 'Wed\n'), 
     ('30 min', 'Wed\n'), 

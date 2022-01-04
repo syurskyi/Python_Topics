@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ howold _______ Actor, Movie, get_age
 
@@ -32,7 +32,7 @@ return_strings = [
 ]
 
 
-@pytest.mark.parametrize('actor, movie, expected',
+@p__.mark.parametrize('actor, movie, expected',
                          z..(actors, movies, return_strings))
 ___ test_get_age(actor, movie, expected):
     ... get_age(actor, movie) __ expected

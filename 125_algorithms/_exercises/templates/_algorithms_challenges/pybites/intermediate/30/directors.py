@@ -25,7 +25,7 @@ ___ get_movies_by_director
 
     movie_metadata = defaultdict(l..)
 
-    with open(local) __ file:
+    w__ open(local) __ file:
         csv_content = csv.DictReader(file)
 
         ___ row __ csv_content:

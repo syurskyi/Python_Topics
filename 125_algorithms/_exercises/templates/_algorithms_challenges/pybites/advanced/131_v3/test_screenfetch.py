@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ screenfetch _______ output, sysinfo_scrape
 
@@ -41,7 +41,7 @@ mac = """
 """
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ sysinfo
     """Make a module scope sysinfo object"""
     r.. sysinfo_scrape(output)

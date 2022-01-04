@@ -26,7 +26,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
         response = requests.get(url)
         response.raise_for_status()
         data = json.loads(response.text)
-        with TMP.open("w") __ tmp:
+        w__ TMP.open("w") __ tmp:
             json.dump(data, tmp)
     r.. data
 
@@ -107,7 +107,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     df = df[df.month.dt.year __ year]
 
     __ l..(df) __ 0:
-        raise ValueError(f'The year {year} is not included in the report!')
+        r.. ValueError(f'The year {year} is not included in the report!')
     ____:
         print(year)
         print()

@@ -11,7 +11,7 @@ FASTA_FILE = os.path.j..(os.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 
 response = requests.get(URL)
 
-with open('test.txt','w') __ f:
+w__ open('test.txt','w') __ f:
     f.write(response.text)
 
 
@@ -28,7 +28,7 @@ ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_
     sequence    # list
     lines    # list
     records = 0
-    with open(fasta_2line_file,'w') __ f1, open(fasta_file,'r') __ f2:
+    w__ open(fasta_2line_file,'w') __ f1, open(fasta_file,'r') __ f2:
 
             ___ i,line __ e..(f2,1):
                 line = line.s..

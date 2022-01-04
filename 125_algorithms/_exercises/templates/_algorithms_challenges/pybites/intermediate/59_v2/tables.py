@@ -32,7 +32,7 @@ c_ MultiplicationTable:
 
 
         __ n.. ((1 <= x <= _length) a.. (1 <= y <= _length)):
-            raise IndexError("Invalid x and y")
+            r.. IndexError("Invalid x and y")
 
 
         r.. i..(_table[x -1][y -1])

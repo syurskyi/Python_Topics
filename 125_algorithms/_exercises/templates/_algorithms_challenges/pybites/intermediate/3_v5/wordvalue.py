@@ -37,7 +37,7 @@ ___ calc_word_value(word):
 ___ max_word_value(words_ N..
     """given a list of words return the word with the maximum word value"""
     __ words __ N.. o. l..(words) __ 0:
-        raise ValueError()
+        r.. ValueError()
     lst = {word:calc_word_value(word) ___ word __ words}
     result = s..(lst.i..,key=l.... x:-x[1])[0]
     r.. result[0]

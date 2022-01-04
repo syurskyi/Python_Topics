@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ corpora _______ GETTYSBURG, Corpora
 
 # https://www.oaktreecapital.com/insights/howard-marks-memos
@@ -45,12 +45,12 @@ And that is how our tax system works.  The people who already pay the highest ta
 EXTRA_CHAR = ["—", "\n", "  "]
 
 
-@pytest.fixture
+@p__.fixture
 ___ getty
     r.. Corpora(GETTYSBURG)
 
 
-@pytest.fixture
+@p__.fixture
 ___ beer_tax
     r.. Corpora(TAX_SYSTEM_IN_US)
 

@@ -39,7 +39,7 @@ c_ Promo:
                 __ random_entry[0] n.. __ bites_done:
                     r.. random_entry[0]
         ____:
-            raise NoBitesAvailable
+            r.. NoBitesAvailable
         
     ___ new_bite
         """Get  a random Bite using _pick_random_bite,

@@ -24,14 +24,14 @@ ___ get_secret_token(username):
     users = [user.name ___ user __ USERS]
 
     __ username n.. __ users:
-        raise UserDoesNotExist
+        r.. UserDoesNotExist
 
     ___ user __ USERS:
         __ username __ user.name:
             __ user.expired __ T..:
-                raise UserAccessExpired
+                r.. UserAccessExpired
             __ user.role != ADMIN:
-                raise UserNoPermission
+                r.. UserNoPermission
 
             r.. SECRET
 

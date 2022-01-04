@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ improved_xmas_tree _______ generate_improved_xmas_tree
 
@@ -27,23 +27,23 @@ smaller_tree = """
 """
 
 
-@pytest.mark.parametrize("size, expected", [(10, 13), (5, 8), (20, 23)])
+@p__.mark.parametrize("size, expected", [(10, 13), (5, 8), (20, 23)])
 ___ test_height_xmas_tree(size, expected):
     actual = l..(generate_improved_xmas_tree(size).rstrip().splitlines())
     ... actual __ expected
 
 
-@pytest.mark.parametrize("size, expected", [(3, 9), (5, 25), (20, 400)])
+@p__.mark.parametrize("size, expected", [(3, 9), (5, 25), (20, 400)])
 ___ test_num_leafs_used(size, expected):
     ... generate_improved_xmas_tree(size).c.. "*") __ expected
 
 
-@pytest.mark.parametrize("size, expected", [(3, 1), (5, 1), (20, 1)])
+@p__.mark.parametrize("size, expected", [(3, 1), (5, 1), (20, 1)])
 ___ test_star_used(size, expected):
     ... generate_improved_xmas_tree(size).c.. "+") __ expected
 
 
-@pytest.mark.parametrize("size, expected", [(3, 6), (5, 10), (20, 42)])
+@p__.mark.parametrize("size, expected", [(3, 6), (5, 10), (20, 42)])
 ___ test_trunk_used(size, expected):
     ... generate_improved_xmas_tree(size).c.. "|") __ expected
 

@@ -6,9 +6,9 @@ ___ convert(value: float, fmt: s..) __ float:
     :return: Float rounded to 4 decimal places after conversion
     """
     __ n.. isi..(value, (i.., float)):
-        raise TypeError()
+        r.. T..()
     fn = {'in': l.... x: round(x / 2.54, 4),
           'cm': l.... x: round(x * 2.54, 4)}
     __ fmt.l.. __ fn:
         r.. fn[fmt.l..](value)
-    raise ValueError()
+    r.. ValueError()

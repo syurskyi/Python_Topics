@@ -8,17 +8,17 @@ ___ divide_numbers(numerator, denominator):
     try:
         num = i..(numerator)
     except:
-        raise
+        r..
     try:
         den = i..(denominator)
     except:
-        raise
+        r..
 
     try:
         result = num / den
     except ZeroDivisionError:
         result = 0
     except:
-        raise
+        r..
 
     r.. result

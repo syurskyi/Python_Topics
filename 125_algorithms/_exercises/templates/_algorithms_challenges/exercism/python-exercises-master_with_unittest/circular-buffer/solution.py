@@ -17,7 +17,7 @@ c_ CircularBuffer(object):
     ___ _update_buffer(self, data):
         try:
             buffer[write_point] = data
-        except TypeError:
+        except T..:
             buffer[write_point] = ord(data)
 
     ___ clear
@@ -25,7 +25,7 @@ c_ CircularBuffer(object):
 
     ___ write(self, data):
         __ a..(buffer):
-            raise BufferFullException
+            r.. BufferFullException
         _update_buffer(data)
         write_point = (write_point + 1) % l..(buffer)
 
@@ -37,7 +37,7 @@ c_ CircularBuffer(object):
 
     ___ read
         __ n.. any(buffer):
-            raise BufferEmptyException
+            r.. BufferEmptyException
         data = chr(buffer[read_point])
         buffer[read_point] = 0
         read_point = (read_point + 1) % l..(buffer)

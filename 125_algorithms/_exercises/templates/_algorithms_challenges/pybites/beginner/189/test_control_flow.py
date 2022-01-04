@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ control_flow _______ filter_names
 
 
-@pytest.mark.parametrize("names, expected_return", [
+@p__.mark.parametrize("names, expected_return", [
     (['bob'], []),
     (['bob', 'berta'], []),
     (['quit', 'ana'], []),

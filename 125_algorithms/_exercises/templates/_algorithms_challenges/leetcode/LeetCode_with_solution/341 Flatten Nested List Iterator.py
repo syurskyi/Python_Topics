@@ -119,7 +119,7 @@ c_ NestedIteratorVerbose(object):
             idx_stk[-1] = idx + 1
             r.. nxt
 
-        raise StopIteration()
+        r.. StopIteration()
 
     ___ hasNext
         """

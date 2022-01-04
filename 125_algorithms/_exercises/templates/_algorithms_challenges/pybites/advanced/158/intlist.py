@@ -30,9 +30,9 @@ c_ IntList(l..):
             __ a..(t..(v) __ (i..,float,Decimal) ___ v __ values):
                 self += values
             ____:
-                raise TypeError
+                r.. T..
         ____:
-            raise TypeError
+            r.. T..
 
 
     ___ __iadd__(self,value):
@@ -42,9 +42,9 @@ c_ IntList(l..):
                     a..(v)
                 r.. self
             ____:
-                raise TypeError
+                r.. T..
         ____:
-            raise TypeError
+            r.. T..
 
 
 
@@ -57,9 +57,9 @@ c_ IntList(l..):
             __ a..(t..(v) __ i.. ___ v __ value):
                 r.. super().__add__(value)
             ____:
-                raise TypeError
+                r.. T..
         ____:
-            raise TypeError
+            r.. T..
 
 
 

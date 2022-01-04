@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ identity_and_equality _______ (
     Car,
@@ -31,7 +31,7 @@ other_car4 = Car("Porsche Cayenne", "black")
 
 
 # Test staticmethod Car.age
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "days, expected",
     [
         (7, "A week old"),  # week
@@ -44,7 +44,7 @@ ___ test_car_age(days, expected):
 
 
 # Test staticmethod Car.age
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "list1, list2, expected",
     [
         ([], [], T..),  # Empty
@@ -61,7 +61,7 @@ ___ test_the_same_configuration(list1, list2, expected):
     ... Car.has_same_configuration(list1, list2) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "car1, car2, expected",
     [
         (my_car, my_car, T..),  # Identical cars (same instance)
@@ -74,7 +74,7 @@ ___ test_is_same_car_color_and_model(car1, car2, expected):
     ... is_same_car_color_and_model(car1, car2) __ expected
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "car1, car2, expected",
     [
         (my_car, my_car, T..),  # Same instance

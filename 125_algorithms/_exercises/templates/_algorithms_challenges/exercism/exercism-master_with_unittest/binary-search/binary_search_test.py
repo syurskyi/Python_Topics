@@ -29,23 +29,23 @@ c_ BinarySearchTest(unittest.TestCase):
             5)
 
     ___ test_identifies_value_missing
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             binary_search([1, 3, 4, 6, 8, 9, 11], 7)
 
     ___ test_value_smaller_than_arrays_minimum
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             binary_search([1, 3, 4, 6, 8, 9, 11], 0)
 
     ___ test_value_larger_than_arrays_maximum
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             binary_search([1, 3, 4, 6, 8, 9, 11], 13)
 
     ___ test_empty_array
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             binary_search([], 1)
 
     ___ test_nothing_is_found_when_left_and_right_bounds_cross
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             binary_search([1, 2], 0)
 
     # Utility functions

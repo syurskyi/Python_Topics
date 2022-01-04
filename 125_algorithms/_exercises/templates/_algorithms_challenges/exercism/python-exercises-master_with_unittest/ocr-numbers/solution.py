@@ -19,7 +19,7 @@ OCR_LIST = [OCR_LIST[-1]] + OCR_LIST[:9]
 ___ number(ocr):
     __ (l..(ocr) != ROW o. l..(ocr[0]) % COL o.
             any(l..(r) != l..(ocr[0]) ___ r __ ocr)):
-        raise ValueError('Wrong grid size.')
+        r.. ValueError('Wrong grid size.')
     numbers = split_ocr(ocr)
     d.. = ''
     ___ n __ numbers:
@@ -33,9 +33,9 @@ ___ number(ocr):
 ___ grid(d..):
     try:
         __ n.. d...isdigit
-            raise ValueError('String should be numeric.')
+            r.. ValueError('String should be numeric.')
     except AttributeError:
-        raise ValueError('Argument should be a string.')
+        r.. ValueError('Argument should be a string.')
     ocr = ['' ___ i __ r..(ROW)]
     ___ d __ d..:
         ___ r __ r..(ROW):

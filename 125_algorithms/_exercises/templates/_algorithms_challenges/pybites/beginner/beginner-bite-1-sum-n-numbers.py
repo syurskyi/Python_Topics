@@ -66,7 +66,7 @@ ___ pyb_sum_numbers(numbers_ N..
 ___ sum_numbers_1(numbers_ N..
     try:
         r.. s..(numbers)
-    except TypeError:
+    except T..:
         r.. s..(r..(1,101))
 
 

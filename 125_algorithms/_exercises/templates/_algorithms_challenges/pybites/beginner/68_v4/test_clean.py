@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ Previous.clean _______ remove_punctuation
 
 
-@pytest.mark.parametrize("input_argument, expected_return", [
+@p__.mark.parametrize("input_argument, expected_return", [
     ('Hello, I am Tim.', 'Hello I am Tim'),
     (';String. with. punctuation characters!',
      'String with punctuation characters'),

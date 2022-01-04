@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ tribe _______ get_top_books, load_page
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ content
     """Load content once for all test"""
     r.. load_page()
@@ -16,7 +16,7 @@ ___ test_return(content):
     ... a..(t..(book) __ tuple ___ book __ books)
 
 
-@pytest.mark.parametrize("title, count", [
+@p__.mark.parametrize("title, count", [
   ('Man’s Search For Meaning', 6),
   ('Tao Te Ching', 5),
   (('The 4-Hour Workweek: Escape the 9-5, '

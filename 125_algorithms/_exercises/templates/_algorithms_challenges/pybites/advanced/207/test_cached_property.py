@@ -1,10 +1,10 @@
 ____ time _______ perf_counter
-_______ pytest
+_______ p__
 
 ____ cached_property _______ Planet
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ blue
     r.. Planet('blue')
 
@@ -27,5 +27,5 @@ ___ test_property_is_cached_value(blue):
 
 
 ___ test_property_is_immutable(blue):
-    with pytest.raises(AttributeError):
+    w__ p__.r..(AttributeError):
         blue.mass = 11

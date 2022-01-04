@@ -5,7 +5,7 @@ Compares user function with calculated GC content
 Inputs are modified to check how the function deals with unknown characters
 """
 
-_______ pytest
+_______ p__
 ____ gc_content _______ calculate_gc_content
 
 DNA_SEQUENCES = [
@@ -84,7 +84,7 @@ DNA_SEQUENCES = [
 ]
 
 
-@pytest.mark.parametrize("dna,gc_content", DNA_SEQUENCES)
+@p__.mark.parametrize("dna,gc_content", DNA_SEQUENCES)
 ___ test_calculate_gc_content(dna, gc_content):
 
     ... calculate_gc_content(dna) __ gc_content

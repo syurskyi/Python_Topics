@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ n_digit_numbers _______ n_digit_numbers
 
 
-@pytest.mark.parametrize('input_list, n, expected', [
+@p__.mark.parametrize('input_list, n, expected', [
     ([], 1, []),
     ([1, 2, 3], 1, [1, 2, 3]),
     ([1, 2, 3], 2, [10, 20, 30]),
@@ -20,5 +20,5 @@ ___ test_n_digit_numbers(input_list, n, expected):
 
 
 ___ test_invalid_n
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         n_digit_numbers([1, 2, 3], 0)

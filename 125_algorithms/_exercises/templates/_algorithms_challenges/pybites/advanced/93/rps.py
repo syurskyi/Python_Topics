@@ -57,7 +57,7 @@ ___ game
     w... T...
         player_choice = y..
         __ player_choice __ 'q':
-            raise StopIteration
+            r.. StopIteration
         
         __ player_choice n.. __ ('scissors','rock','paper'):
             print('Invalid input')

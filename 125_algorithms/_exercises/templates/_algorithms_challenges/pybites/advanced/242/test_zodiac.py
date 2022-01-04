@@ -4,7 +4,7 @@ _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
-_______ pytest
+_______ p__
 
 ____ zodiac _______ (get_signs, get_sign_with_most_famous_people,
                     signs_are_mutually_compatible, get_sign_by_date, Sign)
@@ -15,11 +15,11 @@ TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, "zodiac.json")
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ signs
     __ n.. PATH.exists
         urlretrieve(URL, PATH)
-    with open(PATH) __ f:
+    w__ open(PATH) __ f:
         data = json.loads(f.read())
     r.. get_signs(data)
 
@@ -38,7 +38,7 @@ ___ test_get_sign_with_most_famouse_people(signs):
     ... get_sign_with_most_famous_people(signs) __ ('Scorpio', 35)
 
 
-@pytest.mark.parametrize("sgn1, sgn2, result", [
+@p__.mark.parametrize("sgn1, sgn2, result", [
     ('Aries', 'Aries', F..),
     ('Aries', 'Leo', T..),
     ('Aries', 'Capricorn', F..),
@@ -48,7 +48,7 @@ ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
     ... signs_are_mutually_compatible(signs, sgn1, sgn2) __ result
 
 
-@pytest.mark.parametrize("dt, result", [
+@p__.mark.parametrize("dt, result", [
     ([3, 21], 'Aries'),
     ([4, 19], 'Aries'),
     ([4, 20], 'Taurus'),

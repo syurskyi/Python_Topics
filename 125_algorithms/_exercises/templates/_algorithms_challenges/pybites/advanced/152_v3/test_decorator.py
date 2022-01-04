@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ decorator _______ strip_range
 
@@ -6,7 +6,7 @@ TEXTS = ['Hello world', 'Welcome to PyBites',
          'Decorators for fun and profit']
 
 
-@pytest.mark.parametrize("start, end, arg, expected", [
+@p__.mark.parametrize("start, end, arg, expected", [
     (3, 5, TEXTS[0], 'Hel.. world'),
     (4, 8, TEXTS[0], 'Hell....rld'),
     (0, 3, TEXTS[1], '...come to PyBites'),

@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ translate _______ fix_translation
 
@@ -85,7 +85,7 @@ fixed = [bite_15_it_fixed, bite_202_de_fixed, bite_209_es_fixed]
 translations = z..(org_bites, translated, fixed)
 
 
-@pytest.mark.parametrize("org, trans, fix", translations)
+@p__.mark.parametrize("org, trans, fix", translations)
 ___ test_fix_translation(org, trans, fix):
     """
     print('org', len(org.splitlines()))

@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ division _______ divide_numbers
 
 
-@pytest.mark.parametrize("numerator, denominator, expected", [
+@p__.mark.parametrize("numerator, denominator, expected", [
     (1, 2, 0.5),
     (8, 2, 4),
     # strings that look like ints are converted (casted) fine
@@ -16,7 +16,7 @@ ___ test_divide_numbers_good_inputs(numerator, denominator, expected):
     ... divide_numbers(numerator, denominator) __ expected
 
 
-@pytest.mark.parametrize("numerator, denominator", [
+@p__.mark.parametrize("numerator, denominator", [
     # ignoring dict/set/list to keep it simple, those would actually
     # throw a TypeError when passed into int()
     (2, 's'),
@@ -24,7 +24,7 @@ ___ test_divide_numbers_good_inputs(numerator, denominator, expected):
     ('v', 'w'),
 ])
 ___ test_divide_numbers_raises_value_error(numerator, denominator):
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         divide_numbers(numerator, denominator)
 
 

@@ -1,16 +1,16 @@
-___ get_profile(*args, **kwargs) __ s..:
-    name = profession = N..
-    ___ kw __ kwargs:
-        __ kw __ 'name':
-            name = kwargs['name']
-        ____ kw __ 'profession':
-            profession = kwargs['profession']
-        ____:
-            raise TypeError
-    __ name __ N..
-        name = 'julian'
-    __ profession __ N..
-        profession = 'programmer'
-    __ t..(profession) != s.. o. t..(name) != s.. o. l..(args) > 0:
-        raise TypeError
-    r.. f'{name} is a {profession}'
+# ___ get_profile $ $$ __ s..
+#     name = profession = N..
+#     ___ kw __ k..
+#         __ ? __ 'name'
+#             name  ? 'name'
+#         ____ ? __ 'profession'
+#             profession  ? 'profession'
+#         ____
+#             r.. T..
+#     __ name __ N..
+#         name  'julian'
+#     __ profession __ N..
+#         profession  'programmer'
+#     __ t.. ? !_ s.. o. t.. ? != s.. o. l.. a.. > 0
+#         r.. T..
+#     r.. _* ? is a ?

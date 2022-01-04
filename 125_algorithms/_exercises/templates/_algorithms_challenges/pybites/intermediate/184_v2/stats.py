@@ -16,7 +16,7 @@ c_ BiteStats:
     ___ _load_data(self, data) __ l..:
 
 
-        with open(data,'r') __ f:
+        w__ open(data,'r') __ f:
             csv_reader = DictReader(f,delimiter=',')
 
             ___ row __ csv_reader:

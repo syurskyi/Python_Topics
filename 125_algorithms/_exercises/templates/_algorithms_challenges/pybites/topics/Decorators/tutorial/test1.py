@@ -3,9 +3,9 @@ ____ time _______ time
 
 ___ timer(func):
     @wraps(func)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         start = time()
-        answer = func(*args, **kwargs)
+        answer = func $ $$
         end = time()
         print(f'Elapsed: {end-start}')
         r.. answer
@@ -13,16 +13,16 @@ ___ timer(func):
 
 ___ tracer(func):
     @wraps(func)
-    ___ wrapper(*args, **kwargs):
+    ___ wrapper $ $$:
         print('Entering...')
-        func(*args, **kwargs)
+        func $ $$
         print('Existing....')
     r.. wrapper
 
 
 @tracer
 @timer
-___ hello_world(*args, **kwargs):
+___ hello_world $ $$:
     print(f'Hello World! {args}')
 
 

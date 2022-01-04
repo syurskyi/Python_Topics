@@ -6,11 +6,11 @@ ___ int_args(func):
     # complete this decorator
     ___ wrapper(*args):
         __ s..(isi..(n, s..) ___ n __ args):
-            raise TypeError
+            r.. T..
         ____ s..(isi..(n, float) ___ n __ args):
-            raise TypeError
+            r.. T..
         ____ s..(n < 0 ___ n __ args):
-            raise ValueError
+            r.. ValueError
         ____ a..(isi..(n, i..) ___ n __ args):
             r.. func(*args)
     r.. wrapper

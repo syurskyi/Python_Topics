@@ -6,7 +6,7 @@ STOCK_DATA = 'https://bit.ly/2MzKAQg'
 
 # pre-work: load JSON data into program
 
-with requests.Session() __ s:
+w__ requests.Session() __ s:
     data = s.get(STOCK_DATA).json()
 
 
@@ -26,7 +26,7 @@ ___ _cap_str_to_mln_float(cap):
             r.. float(cap[:-1])
         __ cap[-1] __ 'B':
             r.. float(cap[:-1]) * 1000.0
-        raise BaseException('Oh no! error in cap value.')
+        r.. BaseException('Oh no! error in cap value.')
 
 
 ___ get_industry_cap(industry):

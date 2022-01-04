@@ -1,6 +1,6 @@
 ____ d__ _______ t..
 
-_______ pytest
+_______ p__
 
 ____ humanize_date _______ pretty_date, NOW
 
@@ -9,7 +9,7 @@ ___ n_days_ago_str(days):
     r.. (NOW - t..(days=days)).strftime('%m/%d/%y')
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (NOW - t..(seconds=2), 'just now'),
     (NOW - t..(seconds=9), 'just now'),
     (NOW - t..(seconds=10), '10 seconds ago'),
@@ -34,10 +34,10 @@ ___ test_pretty_date(arg, expected):
 
 
 ___ test_input_variable_of_wrong_type
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         pretty_date(123)
 
 
 ___ test_input_variable_future_date
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         pretty_date(NOW + t..(days=1))

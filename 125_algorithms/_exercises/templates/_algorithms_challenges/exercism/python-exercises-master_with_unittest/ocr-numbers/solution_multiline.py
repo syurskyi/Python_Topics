@@ -33,17 +33,17 @@ ___ validate_ocr_numbers(ocr_numbers: List[s..]):
     n_first_line = l..(ocr_numbers[0])
     __ n_first_line % OCR_WIDTH:
         message = s..(n_first_line) + ' is not a multiple of ' + s..(OCR_WIDTH)
-        raise ValueError(message)
+        r.. ValueError(message)
     __ l..(ocr_numbers) % OCR_HEIGHT:
         message = 'numbers of rows is not a multiple of ' + s..(OCR_HEIGHT)
-        raise ValueError(message)
+        r.. ValueError(message)
     __ any(l..(line) != n_first_line ___ line __ ocr_numbers[1:]):
-        raise ValueError('All lines must have the same length.')
+        r.. ValueError('All lines must have the same length.')
 
 
 ___ validate_numbers(numbers: s..):
     __ n.. numbers.isdigit
-        raise ValueError(numbers + ' is not a digit')
+        r.. ValueError(numbers + ' is not a digit')
 
 
 ___ _convert_ocr_line(ocr_numbers: List[s..]) __ s..:

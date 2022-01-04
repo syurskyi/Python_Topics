@@ -20,9 +20,9 @@ ___ sum_even_numbers(numbers: List[float]) __ float:
       try:
          __ number % 2 __ 0:
             even_numbers.a..(number)
-      except TypeError:
+      except T..:
          logger.exception(f"Bad inputs: {numbers}")
-         raise
+         r..
 
    total = s..(even_numbers)
    logger.info(f"Input: {numbers} -> output: {total}")

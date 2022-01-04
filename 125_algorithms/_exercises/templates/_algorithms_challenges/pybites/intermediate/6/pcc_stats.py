@@ -36,7 +36,7 @@ ___ gen_files(tempfile=tempfile):
     => Here you would return 03/mridubhatnagar (lowercased!)
        followed by 03/aleksandarknezevic
     """
-    with open(tempfile) __ file:
+    w__ open(tempfile) __ file:
         data = file.readlines()
 
         ___ row __ data:

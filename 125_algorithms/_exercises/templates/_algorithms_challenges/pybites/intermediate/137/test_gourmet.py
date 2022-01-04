@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 ____ gourmet _______ best_match_per_wine, match_wine_5cheeses
 
 
@@ -13,14 +13,14 @@ cases_best_by_wine = [
 ]
 
 
-@pytest.mark.parametrize("case", cases_best_by_wine)
+@p__.mark.parametrize("case", cases_best_by_wine)
 ___ test_best_match_per_wine_type(case):
     wine_type, *result = case
     ... best_match_per_wine(wine_type) __ tuple(result)
 
 
 ___ test_invalid_wine_type
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         best_match_per_wine("cocacola")
 
 
@@ -58,7 +58,7 @@ cases = [
 ]
 
 
-@pytest.mark.parametrize("case", cases)
+@p__.mark.parametrize("case", cases)
 ___ test_match_wine_5cheeses(case):
     """ test of presence of first 2 cheeses only
     because if score is same for more pairs, order of pairs cannot be assumed

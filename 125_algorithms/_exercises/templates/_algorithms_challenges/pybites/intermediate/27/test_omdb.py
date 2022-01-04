@@ -2,7 +2,7 @@ _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
-_______ pytest
+_______ p__
 
 ____ omdb _______ (get_movie_data,
                   get_single_comedy,
@@ -18,13 +18,13 @@ __ n.. Path(DATA_LOCAL).exists
     urlretrieve(S3 + DATA, DATA_LOCAL)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ movies
     files    # list
-    with open(DATA_LOCAL) __ f:
+    w__ open(DATA_LOCAL) __ f:
         ___ i, line __ e..(f.readlines(), 1):
             movie_json = TMP / f'{i}.json'
-            with open(movie_json, 'w') __ f:
+            w__ open(movie_json, 'w') __ f:
                 f.write(f'{line}\n')
             files.a..(movie_json)
 
@@ -43,7 +43,7 @@ ___ test_type_of_movie_elements(movies):
     ... a..(t..(m) __ d.. ___ m __ movies)
 
 
-@pytest.mark.parametrize("func, expected", [
+@p__.mark.parametrize("func, expected", [
     (get_single_comedy, 'Horrible Bosses'),
     (get_movie_most_nominations, 'Fight Club'),
     (get_movie_longest_runtime, 'Blade Runner 2049'),

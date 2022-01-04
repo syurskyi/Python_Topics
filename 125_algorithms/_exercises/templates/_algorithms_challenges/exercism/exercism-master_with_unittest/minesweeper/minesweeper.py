@@ -9,7 +9,7 @@ c_ Minesweeper:
     @classmethod
     ___ board(cls, inp):
         __ n.. cls.valid(inp):
-            raise ValueError
+            r.. ValueError
         r.. cls.solve(inp)
 
     # Split rows (String -> List) and operate on board in place

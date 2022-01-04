@@ -32,9 +32,9 @@ ___ calc_months_passed(year, month, day):
    try:
       new_date = date(year, month, day)
       __ new_date < START_DATE:
-         raise ValueError
+         r.. ValueError
    except:
-      raise
+      r..
 
    date_diff = relativedelta(new_date, START_DATE)
 

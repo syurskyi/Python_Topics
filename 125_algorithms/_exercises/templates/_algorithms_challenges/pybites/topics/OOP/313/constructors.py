@@ -12,7 +12,7 @@ c_ Domain:
         # if not valid, raise a DomainException
         name = name
         __ n.. __.m..(r'.*\.[a-z]{2,3}$', name):
-            raise DomainException
+            r.. DomainException
         
     # next add a __str__ method and write 2 class methods
     # called parse_from_url and parse_from_email to construct domains

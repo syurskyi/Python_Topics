@@ -14,7 +14,7 @@ __ n.. os.path.isfile(DATA):
 c_ BiteStats:
 
     ___ _load_data(self, data) __ l..:
-        with open(data) __ csv_file:
+        w__ open(data) __ csv_file:
             csv_dict = [row ___ row __ DictReader(csv_file)]
         r.. csv_dict
 

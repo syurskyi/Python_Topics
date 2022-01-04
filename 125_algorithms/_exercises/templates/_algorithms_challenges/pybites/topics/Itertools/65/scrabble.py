@@ -11,7 +11,7 @@ urllib.request.urlretrieve(
     DICTIONARY
 )
 
-with open(DICTIONARY) __ f:
+w__ open(DICTIONARY) __ f:
     dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),

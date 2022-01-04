@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ validate _______ (get_secret_token, SECRET,
                       UserDoesNotExist, UserAccessExpired, UserNoPermission)
@@ -9,11 +9,11 @@ ___ test_get_secret_token
     ... issubclass(UserAccessExpired, Exception)
     ... issubclass(UserNoPermission, Exception)
 
-    with pytest.raises(UserDoesNotExist):
+    w__ p__.r..(UserDoesNotExist):
         get_secret_token('Tim')
-    with pytest.raises(UserAccessExpired):
+    w__ p__.r..(UserAccessExpired):
         get_secret_token('Bob')
-    with pytest.raises(UserNoPermission):
+    w__ p__.r..(UserNoPermission):
         get_secret_token('Julian')
 
     ... get_secret_token('PyBites') __ SECRET

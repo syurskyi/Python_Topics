@@ -25,7 +25,7 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    with open(COURSE_TIMES, 'r') __ f:
+    w__ open(COURSE_TIMES, 'r') __ f:
         text = f.read()
 
     r.. __.f..(r'\d*:*\d*:\d{2}', text, flags=__.MULTILINE)

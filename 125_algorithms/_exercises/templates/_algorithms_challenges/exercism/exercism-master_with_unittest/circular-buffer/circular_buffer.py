@@ -9,12 +9,12 @@ c_ CircularBuffer:
 
     ___ read
         __ empty
-            raise BufferEmptyException
+            r.. BufferEmptyException
         r.. buffer.popleft()
 
     ___ write(self, data):
         __ full
-            raise BufferFullException
+            r.. BufferFullException
         buffer.a..(data)
 
     ___ overwrite(self, data):

@@ -3,7 +3,7 @@ _______ random
 _______ __
 _______ string
 
-_______ pytest
+_______ p__
 
 ____ cls _______ get_classes
 
@@ -17,7 +17,7 @@ re_classes = ['Match', 'Pattern', 'RegexFlag', 'Scanner']
 string_classes = ['Formatter', 'Template']
 
 
-@pytest.mark.parametrize("mod, expected", [
+@p__.mark.parametrize("mod, expected", [
     (csv, csv_classes),
     (random, random_classes),
     (__, re_classes),

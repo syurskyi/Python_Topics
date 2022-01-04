@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ Previous.account _______ Account
 
 
-@pytest.fixture()
+@p__.fixture()
 ___ account
     r.. Account()
 
@@ -24,11 +24,11 @@ ___ test_without_contextman_balance_negative(account):
 
 ___ test_with_contextman_performs_rollback(account):
     ... account.balance __ 0
-    with account __ acc:
+    w__ account __ acc:
         acc - 5
         acc - 5
     ... account.balance __ 0
     # adding this ensures all required dunders are used:
-    with account __ acc:
+    w__ account __ acc:
         acc + 10
     ... account.balance __ 10

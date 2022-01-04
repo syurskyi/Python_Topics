@@ -1,11 +1,11 @@
 ____ i.. _______ islice
 
-_______ pytest
+_______ p__
 
 ____ seq_gen _______ sequence_generator
 
 
-@pytest.fixture
+@p__.fixture
 ___ gen
     """Return a fresh new generator object for each test"""
     r.. sequence_generator()

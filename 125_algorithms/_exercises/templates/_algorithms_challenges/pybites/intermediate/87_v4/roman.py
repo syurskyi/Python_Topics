@@ -41,7 +41,7 @@ ___ romanize(decimal_number: i..):
     """Takes a decimal number int and converts its Roman Numeral str"""
 
     __ n.. isi..(decimal_number, i..) o. 4000 <= decimal_number <= 0:
-        raise ValueError
+        r.. ValueError
 
     roman    # list
     romanutil(decimal_number, roman)

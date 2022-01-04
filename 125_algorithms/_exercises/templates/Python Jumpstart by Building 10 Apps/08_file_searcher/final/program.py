@@ -85,7 +85,7 @@ ___ search_file(filename, search_text):
     try:
 
         # matches = []
-        with open(filename, 'r', encoding'utf-8') __ fin:
+        w__ open(filename, 'r', encoding'utf-8') __ fin:
 
             line_num  0
             ___ line __ fin:

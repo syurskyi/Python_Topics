@@ -10,7 +10,7 @@ ___ return_at_index(ser: pd.Series, idx: i..) __ object:
     try:
         r.. ser.iloc[idx]
     except KeyError:
-        raise IndexError(f'Index error for {idx=} ')
+        r.. IndexError(f'Index error for {idx=} ')
 
 
 ___ get_slice(ser: pd.Series, start: i.., end: i..) __ pd.core.series.Series:

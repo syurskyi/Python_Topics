@@ -15,7 +15,7 @@ urllib.request.urlretrieve(
 ___ create_chart
     slack_frequency    # dict
 
-    with open(SAFARI_LOGS) __ file:
+    w__ open(SAFARI_LOGS) __ file:
         safari_logs = file.readlines()
         ___ i __ r..(l..(safari_logs)):
             previous = safari_logs[i -1]

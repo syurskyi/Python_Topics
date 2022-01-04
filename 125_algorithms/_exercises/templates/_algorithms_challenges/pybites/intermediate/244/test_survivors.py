@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ survivors _______ filter_killed_mutants, _get_data
 
@@ -162,12 +162,12 @@ EXPECTED_OUTPUT_WITH_GAP = """
 """
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ actual
     r.. [line.rstrip() ___ line __ filter_killed_mutants()]
 
 
-@pytest.fixture(scope='module')
+@p__.fixture(scope='module')
 ___ actual2
     """Same output but filter out test 10 (killed) and 11 (survived),
        to avoid the hardcoded output gets returned from function

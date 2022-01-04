@@ -1,17 +1,17 @@
 ____ collections _______ defaultdict
 
-_______ pytest
+_______ p__
 
 ____ directors _______ (get_movies_by_director, get_average_scores,
                        calc_mean_score, Movie)
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ movies
     r.. get_movies_by_director()
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ scores(movies):
     r.. get_average_scores(movies)
 
@@ -47,7 +47,7 @@ ___ test_get_average_scores_top_directors(scores):
     ... scores[0:8] __ expected
 
 
-@pytest.mark.parametrize("director", [
+@p__.mark.parametrize("director", [
     'Quentin Tarantino', 'Hayao Miyazaki',
     'Frank Darabont', 'Stanley Kubrick',
     'James Cameron', 'Joss Whedon',

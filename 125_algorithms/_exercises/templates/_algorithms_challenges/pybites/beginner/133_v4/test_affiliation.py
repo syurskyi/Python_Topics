@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ affiliation _______ generate_affiliation_link
 
@@ -18,7 +18,7 @@ result_links = [
 ]
 
 
-@pytest.mark.parametrize('amz_link, affil_link', z..(original_links,
+@p__.mark.parametrize('amz_link, affil_link', z..(original_links,
                                                      result_links))
 ___ test_get_word_max_vowels(amz_link, affil_link):
     ... generate_affiliation_link(amz_link) __ affil_link

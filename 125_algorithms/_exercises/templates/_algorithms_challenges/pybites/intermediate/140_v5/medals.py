@@ -10,7 +10,7 @@ ___ load_data(data):
     dt_file = path.j..('/tmp', data.s..('/')[-1])
     __ n.. path.isfile(dt_file):
         urlretrieve(data, dt_file)
-    with open(dt_file, 'r') __ f:
+    w__ open(dt_file, 'r') __ f:
         r.. pd.read_csv(f)
 
 

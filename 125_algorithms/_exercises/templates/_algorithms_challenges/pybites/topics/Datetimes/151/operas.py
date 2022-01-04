@@ -71,7 +71,7 @@ ___ operas_both_at_premiere(guest, composer):
        Returns a list (or generator) of titles of operas.
     """
     __ guest n.. __ composers o. composer n.. __ composers:
-        raise ValueError
+        r.. ValueError
     guest_birth_dt = _get_date(composers[guest].born)
     guest_death_dt = _get_date(composers[guest].died)
     r.. [opera.play ___ opera __ operas

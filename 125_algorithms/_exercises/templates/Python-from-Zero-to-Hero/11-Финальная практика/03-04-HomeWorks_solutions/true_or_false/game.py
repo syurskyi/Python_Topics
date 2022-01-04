@@ -14,7 +14,7 @@ c_ Game:
         r.. Question(text, is_correct, explanation)
 
     ___ __fill_in_questions(self, file_path, questions: []):
-        with open(file_path, encoding'UTF8') __ file:
+        w__ open(file_path, encoding'UTF8') __ file:
             ___ line __ file:
                 q  __parse_line(line)
                 questions.a..(q)

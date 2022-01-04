@@ -29,6 +29,6 @@ ___ decode(bytes):
             values.a..(n)
             n = 0
         ____ i __ l..(bytes) - 1:
-            raise ValueError('incomplete byte sequence')
+            r.. ValueError('incomplete byte sequence')
 
     r.. values

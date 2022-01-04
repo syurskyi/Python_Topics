@@ -37,15 +37,15 @@ c_ ChangeTest(unittest.TestCase):
         assertEqual(find_minimum_coins(0, [1, 5, 10, 21, 25]), [])
 
     ___ test_error_testing_for_change_smaller_than_smallest_coin
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             find_minimum_coins(3, [5, 10])
 
     ___ test_error_if_no_combination_can_add_up_to_target
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             find_minimum_coins(94, [5, 10])
 
     ___ test_cannot_find_negative_change_values
-        with assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError):
             find_minimum_coins(-5, [1, 2, 5])
 
     # Utility functions

@@ -9,7 +9,7 @@ MovieResult  collections.n..(
 ___ find_movies(search_text):
 
     __ n.. search_text o. n.. search_text.s..:
-        raise ValueError("Search text is required")
+        r.. ValueError("Search text is required")
 
     # This URL changed since the recording to support SSL.
     url  'http://movieservice.talkpython.fm/api/search/{}'.f..(search_text)

@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ gravatar _______ create_gravatar_url
 
@@ -17,7 +17,7 @@ EXPECTED = i..([  # make an iterator
 ])
 
 
-@pytest.mark.parametrize("email, size", [
+@p__.mark.parametrize("email, size", [
     ("info@pybit.es", 200),
     ("info@pybit.es ", 200),
     ('info@pybit.ES', 40),

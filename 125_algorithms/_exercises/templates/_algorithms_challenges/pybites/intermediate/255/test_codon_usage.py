@@ -1,6 +1,6 @@
 _______ __
 
-_______ pytest
+_______ p__
 
 _______ codon_usage
 
@@ -114,7 +114,7 @@ ___ get_table_dividers(table):
 # ############################################################################
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ result
     """
     Provide codon usage table for tests
@@ -122,7 +122,7 @@ ___ result
     r.. codon_usage.return_codon_usage_table().s..
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "function",
     [
         get_table_bars,

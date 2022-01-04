@@ -12,7 +12,7 @@ c_ Hexa:
     @classmethod
     ___ convert(cls, inp):
         __ n.. cls.valid(inp):
-            raise ValueError
+            r.. ValueError
         r.. s..([cls.convert_char(char) * cls.BASE**index ___ index, char __
                     e..(r..(inp))])
 

@@ -1,9 +1,9 @@
-_______ pytest
+_______ p__
 
 ____ stats _______ BiteStats
 
 
-@pytest.fixture(scope="module")
+@p__.fixture(scope="module")
 ___ bite_stats
     r.. BiteStats()
 

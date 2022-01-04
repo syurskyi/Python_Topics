@@ -1,5 +1,5 @@
 _______ numpy __ np
-_______ pytest
+_______ p__
 
 ____ convolution _______ convolution2D
 
@@ -45,7 +45,7 @@ KERNEL_5x5 = np.random.rand(5, 5)
 KERNEL_5x5_ONES = np.diag(np.ones(5))
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "image, kernel, padding, stride, feature_map_size",
     [
         (IMAGE_1x1, KERNEL_1x1, N.., 1, (1, 1)),
@@ -77,7 +77,7 @@ ___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size)
     np.testing.assert_array_equal(feature_map.shape, feature_map_size)
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "image, kernel, padding, stride, feature_map",
     [
         (IMAGE_1x1, KERNEL_1x1, N.., 1, np.array([[1]])),
@@ -141,11 +141,11 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map):
     np.testing.assert_array_equal(feature_map_, feature_map)
 
 
-@pytest.mark.parametrize(
+@p__.mark.parametrize(
     "image, kernel, padding, stride, expected_exception",
     [
-        ([[1, 1, 1], [2, 2, 2], [3, 3, 3]], KERNEL_3x3_BLUR, N.., 1, TypeError),
-        (IMAGE_256x256, [[1, 1, 1], [2, 2, 2], [3, 3, 3]], N.., 1, TypeError),
+        ([[1, 1, 1], [2, 2, 2], [3, 3, 3]], KERNEL_3x3_BLUR, N.., 1, T..),
+        (IMAGE_256x256, [[1, 1, 1], [2, 2, 2], [3, 3, 3]], N.., 1, T..),
         (np.ones(9), KERNEL_3x3_BLUR, N.., 1, ValueError),
         (IMAGE_5x5_INNER_SQUARE, np.ones(3), N.., 1, ValueError),
         (np.ones((3, 3, 3)), KERNEL_3x3_BLUR, N.., 1, ValueError),
@@ -156,21 +156,21 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map):
         (np.random.rand(3, 5), KERNEL_3x3_BLUR, N.., 1, ValueError),
         (IMAGE_256x256, np.random.rand(33, 17), N.., 1, ValueError),
         (IMAGE_256x256, np.random.rand(17, 33), N.., 1, ValueError),
-        (np.repeat("1", 9).reshape(3, 3), KERNEL_3x3_BLUR, N.., 1, TypeError),
-        (IMAGE_5x5_INNER_SQUARE, np.repeat("1", 9).reshape(3, 3), N.., 1, TypeError),
+        (np.repeat("1", 9).reshape(3, 3), KERNEL_3x3_BLUR, N.., 1, T..),
+        (IMAGE_5x5_INNER_SQUARE, np.repeat("1", 9).reshape(3, 3), N.., 1, T..),
         (
             np.repeat(T.., 9).reshape(3, 3),
             KERNEL_3x3_HORIZONTAL_EDGE,
             N..,
             1,
-            TypeError,
+            T..,
         ),
         (IMAGE_5x5_INNER_SQUARE, np.ones((2, 2)), N.., 1, ValueError),
         (IMAGE_1x1, KERNEL_5x5_ONES, N.., 1, ValueError),
-        (IMAGE_3x3, KERNEL_3x3_BLUR, 1.2, 1, TypeError),
+        (IMAGE_3x3, KERNEL_3x3_BLUR, 1.2, 1, T..),
         (IMAGE_3x3, KERNEL_3x3_BLUR, -1, 1, ValueError),
         (IMAGE_5x5_INNER_SQUARE, KERNEL_3x3_HORIZONTAL_EDGE, N.., 0, ValueError),
-        (IMAGE_5x5_INNER_SQUARE, KERNEL_3x3_SHARPEN, N.., 2.2, TypeError),
+        (IMAGE_5x5_INNER_SQUARE, KERNEL_3x3_SHARPEN, N.., 2.2, T..),
     ],
     ids=[
         "image as list",
@@ -197,5 +197,5 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map):
     ],
 )
 ___ test_invalid_inputs(image, kernel, padding, stride, expected_exception):
-    with pytest.raises(expected_exception):
+    w__ p__.r..(expected_exception):
         convolution2D(image, kernel, padding, stride)

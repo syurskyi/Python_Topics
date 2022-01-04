@@ -13,7 +13,7 @@ PawCard = n..('PawCard', 'card action')
 
 ___ create_paw_deck(n=8):
     __ n > 26:
-        raise ValueError('maximum of 26 suits')
+        r.. ValueError('maximum of 26 suits')
     deck    # list
     ___ suit __ r..(n):
         deck.extend(f'{chr(LETTER_A_CODE + suit)}{x}' ___ x __ NUMBERS)

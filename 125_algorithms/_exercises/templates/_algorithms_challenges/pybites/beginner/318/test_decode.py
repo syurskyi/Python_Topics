@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ decode _______ get_credit_cards
 
@@ -33,7 +33,7 @@ expected2 = [
 ]
 
 
-@pytest.mark.parametrize("arg, expected", [
+@p__.mark.parametrize("arg, expected", [
     (csv1, expected1), (csv2, expected2)
 ])
 ___ test_get_credit_cards(arg, expected):

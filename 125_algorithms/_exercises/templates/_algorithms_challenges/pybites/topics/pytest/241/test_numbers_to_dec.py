@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ numbers_to_dec _______ list_to_decimal
 
@@ -10,19 +10,19 @@ ___ test_correct_result
     ... list_to_decimal([0,1,2,3,4]) __ 1234
 
 ___ test_boolean
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         list_to_decimal([T..])
 
 ___ test_float
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         list_to_decimal([3.6])
 
 ___ test_string
-    with pytest.raises(TypeError):
+    w__ p__.r.. T..
         list_to_decimal(['4'])
 
 
 ___ test_negative_int
-    with pytest.raises(ValueError):
+    w__ p__.r..(ValueError):
         list_to_decimal([-1])
 

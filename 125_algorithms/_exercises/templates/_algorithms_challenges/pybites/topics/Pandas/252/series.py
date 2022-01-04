@@ -10,7 +10,7 @@ ___ return_at_index(ser: pd.Series, idx: i..) __ object:
     try:
         r.. ser[idx]
     except KeyError:
-        raise KeyError
+        r.. KeyError
 
 ___ get_slice(ser: pd.Series, start: i.., end: i..) __ pd.core.series.Series:
     """Return the slice of the given Series in the range between
@@ -19,7 +19,7 @@ ___ get_slice(ser: pd.Series, start: i.., end: i..) __ pd.core.series.Series:
     try:
         r.. ser[start:end]
     except KeyError:
-        raise KeyError
+        r.. KeyError
 
 ___ get_slice_inclusive(ser: pd.Series,
                         start: i.., end: i..) __ pd.core.series.Series:
@@ -29,7 +29,7 @@ ___ get_slice_inclusive(ser: pd.Series,
     try:
         r.. ser.loc[start:end]
     except KeyError:
-        raise KeyError
+        r.. KeyError
 
 ___ return_head(ser: pd.Series, num: i..) __ pd.core.series.Series:
     """Return the first num elements of the given Series.
@@ -37,7 +37,7 @@ ___ return_head(ser: pd.Series, num: i..) __ pd.core.series.Series:
     try:
         r.. ser.head(num)
     except KeyError:
-        raise KeyError
+        r.. KeyError
 
 ___ return_tail(ser: pd.Series, num: i..) __ pd.core.series.Series:
     """Return the last num elements of the given Series.
@@ -45,7 +45,7 @@ ___ return_tail(ser: pd.Series, num: i..) __ pd.core.series.Series:
     try:
         r.. ser.tail(num)
     except KeyError:
-        raise KeyError
+        r.. KeyError
 
 ___ get_index(ser: pd.Series) __ pd.core.indexes.base.Index:
     """Return all indexes of the given Series.
@@ -53,7 +53,7 @@ ___ get_index(ser: pd.Series) __ pd.core.indexes.base.Index:
     try:
         r.. ser.index
     except KeyError:
-        raise KeyError
+        r.. KeyError
 
 ___ get_values(ser: pd.Series) __ np.ndarray:
     """Return all the values of the given Series.

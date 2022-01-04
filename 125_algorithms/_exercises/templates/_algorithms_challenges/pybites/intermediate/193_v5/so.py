@@ -6,7 +6,7 @@ cached_so_url = 'https://bit.ly/2IMrXdp'
 
 ___ load_page(url):
     """Download the blog html and return its decoded content"""
-    with requests.Session() __ session:
+    w__ requests.Session() __ session:
         r.. session.get(url).content.decode('utf-8')
 
 

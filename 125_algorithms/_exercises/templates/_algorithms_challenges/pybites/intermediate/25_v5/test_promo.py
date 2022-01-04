@@ -1,4 +1,4 @@
-_______ pytest
+_______ p__
 
 ____ promo _______ (Promo, NoBitesAvailable,
                    BITES, bites_done)
@@ -12,7 +12,7 @@ ___ grab_bites(promo, amount=BITES_AVAILABLE):
         promo.new_bite()
 
 
-@pytest.fixture
+@p__.fixture
 ___ promo
     """Make a fresh new promo object for each test"""
     r.. Promo(bites_done=bites_done.copy())
@@ -43,5 +43,5 @@ ___ test_raise_exception_if_no_more_bites(promo):
     ... l..(promo.bites_done) __ 5
     grab_bites(promo)
     # exhausted bites
-    with pytest.raises(NoBitesAvailable):
+    w__ p__.r..(NoBitesAvailable):
         promo._pick_random_bite()
