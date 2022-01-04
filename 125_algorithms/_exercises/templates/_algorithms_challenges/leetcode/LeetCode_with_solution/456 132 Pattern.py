@@ -65,7 +65,7 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().find132pattern([1, 2, 3, 4]) __ F..
     ... Solution().find132pattern([3, 1, 4, 2]) __ T..
     ... Solution().find132pattern([-1, 3, 2, 0]) __ T..

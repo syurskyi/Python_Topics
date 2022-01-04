@@ -121,5 +121,5 @@ c_ SolutionOutputLimitExceeded(object):
                 cur.pop()
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findStrobogrammatic(3) __ ['101', '609', '808', '906', '111', '619', '818', '916', '181', '689', '888', '986']

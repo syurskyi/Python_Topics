@@ -17,7 +17,7 @@ c_ Solution(object):
     ___ i __ r..(0, 10):
       cur = pre * 10 + i
       __ cur __ 0:
-        continue
+        _____
       __ cnt __ n o. cur > n:
         r..
       ans[cnt] = cur

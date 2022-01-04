@@ -90,5 +90,5 @@ c_ Solution:
                 ret += 1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().videoStitching([[0,4],[2,8]], 5) __ 2

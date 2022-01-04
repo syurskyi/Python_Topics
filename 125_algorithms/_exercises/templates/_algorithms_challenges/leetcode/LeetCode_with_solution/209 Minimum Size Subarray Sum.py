@@ -39,6 +39,6 @@ c_ Solution:
         r.. mini __ mini != sys.maxint ____ 0
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minSubArrayLen(7, [2, 3, 1, 2, 4, 3]) __ 2
 

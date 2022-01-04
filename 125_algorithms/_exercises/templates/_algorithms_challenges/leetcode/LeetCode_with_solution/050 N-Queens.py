@@ -57,7 +57,7 @@ c_ Solution:
 
         ___ i __ xrange(n):
             __ current[queen_index][i]__INVALID:
-                continue
+                _____
 
             # place the queen
             new_config = [l..(element) ___ element __ current]  # new copy

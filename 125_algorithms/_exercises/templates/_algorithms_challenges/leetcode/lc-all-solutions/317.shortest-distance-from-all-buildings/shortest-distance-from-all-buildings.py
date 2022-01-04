@@ -18,7 +18,7 @@ c_ Solution(object):
         ___ di, dj __ dirs:
           newi, newj = i + di, j + dj
           __ (newi, newj) __ visited:
-            continue
+            _____
           __ 0 <= newi < l..(grid) a.. 0 <= newj < l..(grid[0]) a.. grid[newi][newj] != 2:
             __ grid[newi][newj] != 1:
               grid[newi][newj] -= dist + 1

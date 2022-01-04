@@ -38,7 +38,7 @@ ___ fix_translation(org_text, trans_text):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
 

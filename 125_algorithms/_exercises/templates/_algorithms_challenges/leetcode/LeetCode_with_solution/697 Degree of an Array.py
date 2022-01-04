@@ -52,5 +52,5 @@ c_ Solution:
         r.. mx[1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findShortestSubArray([1, 2, 2, 3, 1]) __ 2

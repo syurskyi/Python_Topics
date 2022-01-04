@@ -43,7 +43,7 @@ c_ Tournament:
     ___ - , results):
         _teams    # dict
         __ results:
-            parse(results)
+            p..(results)
 
     ___ results_table
         table = [table_header()]
@@ -57,7 +57,7 @@ c_ Tournament:
             alphabetic, key=l.... team: team.points, r.._T..
         r.. alphabetic_descending_points
 
-    ___ parse(self, results):
+    ___ p..(self, results):
         ___ result __ results.s..("\n"):
             team_a, team_b, outcome = result.s..(RESULT_SEPERATOR)
             maybe_initialize_teams(team_a, team_b)

@@ -78,5 +78,5 @@ c_ Solution:
 
         r.. dic[a]
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findRepeatedDnaSequences("AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT") __ ['CCCCCAAAAA', 'AAAAACCCCC']

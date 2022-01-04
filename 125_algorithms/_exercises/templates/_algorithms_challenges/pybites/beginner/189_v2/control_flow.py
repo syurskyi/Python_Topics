@@ -11,7 +11,7 @@ ___ filter_names(names):
 
     ___ name __ names:
         __ name.startswith(IGNORE_CHAR) o. l..(__.f..(r'\d',name)) >= 1:
-            continue
+            _____
 
         __ name.startswith(QUIT_CHAR) o. l..(result) >= MAX_NAMES:
             break

@@ -61,6 +61,6 @@ c_ Solution(object):
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numberOfPatterns(1, 2) __ 65
     ... Solution().numberOfPatterns(1, 3) __ 385

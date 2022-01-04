@@ -48,7 +48,7 @@ c_ ZigzagIterator(object):
         r.. j <= maxa[0]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     v1 = [1, 2]
     v2 = [3, 4, 5, 6]
     itr = ZigzagIterator(v1, v2)

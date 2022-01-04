@@ -66,7 +66,7 @@ ___ diehard_pybites(files_ N..
     ___ row __ files:
         challenge, user = row.s..("/")
         __ user __ IGNORE:
-            continue
+            _____
         ____:
             users.update([user])
             popular_challenges.update([challenge])

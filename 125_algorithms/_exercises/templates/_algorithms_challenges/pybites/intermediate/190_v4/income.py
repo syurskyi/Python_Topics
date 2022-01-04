@@ -24,7 +24,7 @@ ___ get_income_distribution(___=countries):
       - values = list of country names (wb:name)
     """
     dist = defaultdict(l..)
-    tree = ET.parse(countries)
+    tree = ET.p..(countries)
     root = tree.getroot()
 
     ___ child __ root:

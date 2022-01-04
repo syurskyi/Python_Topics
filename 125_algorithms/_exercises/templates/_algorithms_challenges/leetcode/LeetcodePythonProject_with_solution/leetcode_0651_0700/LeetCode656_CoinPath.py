@@ -19,10 +19,10 @@ c_ Solution(object):
         pos = [-1]*n
         ___ i __ r..(n-2, -1, -1):
             __ nums[i] __ -1:
-                continue
+                _____
             ___ j __ r..(i+1, m..(i+B, n-1)+1):
                 __ dp[j] __ float('inf'):
-                    continue
+                    _____
                 __ nums[i]+dp[j] < dp[i]:
                     dp[i] = nums[i]+dp[j]
                     pos[i] = j

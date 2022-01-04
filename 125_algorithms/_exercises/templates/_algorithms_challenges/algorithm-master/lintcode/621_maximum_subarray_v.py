@@ -39,7 +39,7 @@ c_ Solution:
                 queue.popleft()
 
             __ i < k1:
-                continue
+                _____
 
             """
             if the recent children are great than `S[i - k1]`,

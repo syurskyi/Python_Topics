@@ -5,7 +5,7 @@ ____ Previous.combos _______ find_number_pairs
 
 ___ _sort_all(ret):
     r.. s..(
-        [tuple(s..(n)) ___ n __ ret]
+        [t..(s..(n)) ___ n __ ret]
     )
 
 

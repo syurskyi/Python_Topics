@@ -8,7 +8,7 @@ c_ Solution(object):
     stack    # list
     ___ p __ path:
       __ p __ ["", "."]:
-        continue
+        _____
       __ p __ "..":
         __ stack:
           stack.pop()

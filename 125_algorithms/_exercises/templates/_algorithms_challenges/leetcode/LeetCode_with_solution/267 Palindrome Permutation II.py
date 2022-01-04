@@ -48,5 +48,5 @@ c_ Solution(object):
                     count_map[k] += i*2
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().generatePalindromes("aabb") __ ['baab', 'abba']

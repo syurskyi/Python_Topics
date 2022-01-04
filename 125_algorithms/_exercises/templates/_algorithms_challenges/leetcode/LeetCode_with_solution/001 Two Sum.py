@@ -26,7 +26,7 @@ c_ Solution:
                 ind2 = nums.index(target - val)
                 r.. ind1+1, ind2+1
             except ValueError:
-                continue
+                _____
 
     ___ twoSum_TLE_2(self, num, target):
         nums = num

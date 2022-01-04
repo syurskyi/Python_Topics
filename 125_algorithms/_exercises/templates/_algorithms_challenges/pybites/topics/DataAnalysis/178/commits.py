@@ -5,7 +5,7 @@ ____ c.. _______ defaultdict
 ____ d__ _______ d__
 
 
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 commits = os.path.j..(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
@@ -28,7 +28,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
 
     Returns a tuple of (least_active_month, most_active_month)
     """
-    print(f'year argument is {year}')
+    print _*year argument is {year}')
     commit_log = defaultdict(i..)
     w__ open(commits) __ f:
         ___ line __ f:

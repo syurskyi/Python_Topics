@@ -15,7 +15,7 @@ ___ create_chart
         ___ line __ log:
             (d,i,t) = line_check.m..(line).groups()
             __ d != last_date:
-                print(f'\n{d} ',end='')
+                print _*\n{d} ',end='')
                 last_date = d
             __ i != '':
                 book = t

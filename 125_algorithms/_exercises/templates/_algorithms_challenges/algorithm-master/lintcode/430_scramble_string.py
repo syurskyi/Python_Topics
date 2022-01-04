@@ -28,18 +28,18 @@ c_ Solution:
                 disallow: i > n - k
                 """
                 __ i + k > n:
-                    continue
+                    _____
 
                 ___ j __ r..(n):
                     __ j + k > n:
-                        continue
+                        _____
 
                     ___ l __ r..(1, k):
                         """
                         If its already calculated and possible to transform
                         """
                         __ dp[i][j][k]:
-                            continue
+                            _____
 
                         """
                         * u1, u2: substring in s1
@@ -69,7 +69,7 @@ c_ Solution:
                         """
                         __ dp[i][j][l] a.. dp[i + l][j + l][k - l]:
                             dp[i][j][k] = T..
-                            continue
+                            _____
 
                         __ dp[i][j + k - l][l] a.. dp[i + l][j][k - l]:
                             dp[i][j][k] = T..

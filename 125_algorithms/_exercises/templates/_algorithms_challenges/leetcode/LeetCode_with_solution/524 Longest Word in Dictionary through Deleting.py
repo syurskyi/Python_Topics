@@ -60,5 +60,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findLongestWord("abpcplea", ["ale","apple","monkey","plea"]) __ "apple"

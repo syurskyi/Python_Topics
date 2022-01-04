@@ -72,7 +72,7 @@ c_ Solution:
         ___ a __ A:
             __ n.. h:
                 h = [(a, [a])]
-                continue
+                _____
 
             __ a __ h[0][1][-1]:
                 heapq.heappush(h, (a, [a]))
@@ -90,6 +90,6 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isNStraightHand([1,2,3,6,2,3,4,7,8], 3) __ T..
     ... Solution().isNStraightHand([1,1,2,2,3,3], 3) __ T..

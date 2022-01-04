@@ -93,6 +93,6 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().palindromePairs(["a", ""]) __ [[0,1],[1,0]]
     ... Solution().palindromePairs(["abcd","dcba","lls","s","sssll"]) __ [[0,1],[1,0],[2,4],[3,2]]

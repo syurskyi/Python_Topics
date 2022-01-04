@@ -25,7 +25,7 @@ c_ Solution:
                     _F    # dict
                     cnt = 0
                     left = right + k
-                    continue
+                    _____
 
                 _F[sr] = _F.get(sr, 0) + 1
                 __ _F[sr] <= F[sr]:

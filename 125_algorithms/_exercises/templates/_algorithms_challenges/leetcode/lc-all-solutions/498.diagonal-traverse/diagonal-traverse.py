@@ -28,6 +28,6 @@ c_ Solution(object):
         i = 1
         j -= dj
       ____:
-        continue
+        _____
       d = ~d
     r.. ans

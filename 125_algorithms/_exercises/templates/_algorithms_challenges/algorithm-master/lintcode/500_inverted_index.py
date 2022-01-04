@@ -14,7 +14,7 @@ c_ Solution:
         result    # dict
         ___ doc __ docs:
             __ n.. doc.content:
-                continue
+                _____
             ___ word __ doc.content.s.. :
                 __ word n.. __ result:
                     result[word]    # list

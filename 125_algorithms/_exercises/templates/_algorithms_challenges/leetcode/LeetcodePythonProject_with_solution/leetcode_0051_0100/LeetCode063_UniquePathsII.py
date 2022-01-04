@@ -21,7 +21,7 @@ c_ Solution(object):
             ___ j __ r..(n):
                 __ obstacleGrid[i][j] __ 1:
                     dp[i][j] = 0
-                    continue
+                    _____
                 __ i __ 0 a.. j __ 0:
                     dp[i][j] = 1
                 ____ i __ 0 a.. j != 0:

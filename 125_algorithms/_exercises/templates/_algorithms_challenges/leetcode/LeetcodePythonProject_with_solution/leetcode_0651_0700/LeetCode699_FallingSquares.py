@@ -27,8 +27,8 @@ c_ Solution(object):
     ___ getHeight(self, intervals, cur):
         preMaxHeight = 0
         ___ i __ intervals:
-            __ i.end <= cur.start: continue
-            __ i.start >= cur.end: continue
+            __ i.end <= cur.start: _____
+            __ i.start >= cur.end: _____
             preMaxHeight = max(preMaxHeight, i.height)
         cur.height += preMaxHeight
         intervals.a..(cur)

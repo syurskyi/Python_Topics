@@ -12,7 +12,7 @@ ___ get_users(passwd: s..) __ d..:
     #pdb.set_trace()
     ___ line __ passwd.splitlines
         __ n.. line:
-            continue
+            _____
         values = line.s..(':')
         username,name = values[0],values[4]
         name = name.strip(',')
@@ -28,7 +28,7 @@ ___ get_users(passwd: s..) __ d..:
     r.. passwords
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     
     pw = """
 postfix:x:108:112::/var/sppol/postfix

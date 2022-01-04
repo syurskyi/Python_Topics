@@ -66,5 +66,5 @@ c_ Solution:
             r.. -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz") __ T..

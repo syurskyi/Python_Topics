@@ -46,7 +46,7 @@ c_ Solution:
 
         ___ i __ r..(l..(s)):
             __ n.. dp[i]:
-                continue
+                _____
 
             ___ word __ d..:
                 __ s[i:i + l..(word)] __ word:

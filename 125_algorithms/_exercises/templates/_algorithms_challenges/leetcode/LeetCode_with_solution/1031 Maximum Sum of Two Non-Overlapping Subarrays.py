@@ -60,5 +60,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxSumTwoNoOverlap([0,6,5,2,2,5,1,9,4], 1, 2) __ 20

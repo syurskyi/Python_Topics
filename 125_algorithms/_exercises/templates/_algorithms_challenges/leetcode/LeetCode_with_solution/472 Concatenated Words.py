@@ -101,12 +101,12 @@ c_ SolutionTLE:
         ___ i __ r..(1, k + 1):
             ___ j __ r..(i):
                 __ j __ 0 a.. i __ k:
-                    continue  # word itself
+                    _____  # word itself
                 __ F[j] a.. w[j:i] __ visited:
                     F[i] = T..
 
         r.. F[k]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findAllConcatenatedWordsInADict(["cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"]) __ ["catsdogcats","dogcatsdog","ratcatdogcat"]

@@ -66,5 +66,5 @@ c_ Solution:
         r.. cache[start, N, K]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     Solution().numsSameConsecDiff(3, 7) __ [181,292,707,818,929]

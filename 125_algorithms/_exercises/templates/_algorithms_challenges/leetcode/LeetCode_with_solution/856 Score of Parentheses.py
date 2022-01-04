@@ -79,6 +79,6 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().scoreOfParentheses("(())") __ 2
     ... Solution().scoreOfParentheses("(()(()))") __ 6

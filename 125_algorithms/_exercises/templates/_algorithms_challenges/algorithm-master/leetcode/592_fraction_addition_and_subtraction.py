@@ -20,7 +20,7 @@ c_ Solution:
         i = 0
         ___ frac __ __.s..('\+|-', E):
             __ n.. frac:
-                continue
+                _____
 
             _a, _b = frac.s..('/')
             _a = i..(_a)

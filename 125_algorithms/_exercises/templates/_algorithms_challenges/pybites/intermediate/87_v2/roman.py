@@ -14,7 +14,7 @@ ___ romanize(decimal_number):
     ___ base_value,numeral __ number_to_numeral.i..:
         
         __ base_value > decimal_number:
-            continue
+            _____
         value = decimal_number // base_value
         result.a..(value * numeral)
 

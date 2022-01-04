@@ -55,6 +55,6 @@ ___ get_talks_lt_twentyfour_min(videos):
     r.. [video ___ video __ videos __ ('H' n.. __ video.duration a.. i..(__.s..(r"(\d+)M",video.duration).group(1)) < 24)]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     print(load_pycon_data()[0].duration)

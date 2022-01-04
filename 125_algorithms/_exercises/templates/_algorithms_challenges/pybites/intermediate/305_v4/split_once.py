@@ -3,7 +3,7 @@ _______ s__
 
 
 ___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
-    print(f'{text=}')
+    print _*{text=}')
     __ separators __ N..
         separators = s__.whitespace
 

@@ -44,7 +44,7 @@ c_ Solution:
                 a += 1
                 i3 += 1
                 i5 += 1
-                continue
+                _____
 
             w.... a <= n a.. a __ i3 * 3:
                 ans.a..('fizz')

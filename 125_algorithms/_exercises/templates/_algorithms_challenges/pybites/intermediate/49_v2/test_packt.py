@@ -4,7 +4,7 @@ book = get_book()
 
 
 ___ test_type
-    ... isi..(book, tuple)
+    ... isi..(book, t..)
 
 
 ___ test_book_title

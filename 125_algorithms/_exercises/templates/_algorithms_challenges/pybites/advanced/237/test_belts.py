@@ -8,7 +8,7 @@ ___ get_data(file_no=1, tmp=TMP):
     file_path = TMP / file_name
     remote = 'https://bites-data.s3.us-east-2.amazonaws.com/'
     __ n.. file_path.exists
-        urlretrieve(f'{remote}{file_name}',
+        urlretrieve _*{remote}{file_name}',
                     file_path)
     r.. file_path
 

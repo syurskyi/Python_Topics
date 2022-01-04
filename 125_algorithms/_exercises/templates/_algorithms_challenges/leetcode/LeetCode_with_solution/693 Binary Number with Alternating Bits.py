@@ -30,6 +30,6 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().hasAlternatingBits(5) __ T..
     ... Solution().hasAlternatingBits(7) __ F..

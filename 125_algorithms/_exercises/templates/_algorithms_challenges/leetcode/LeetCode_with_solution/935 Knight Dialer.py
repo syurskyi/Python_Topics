@@ -50,7 +50,7 @@ nbrs = {
     2: (7, 9),
     3: (4, 8),
     4: (3, 9, 0),
-    5: tuple(),
+    5: t..(),
     6: (1, 7, 0),
     7: (2, 6),
     8: (1, 3),
@@ -146,7 +146,7 @@ c_ SolutionTLE:
         r.. cache[i, j, r]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().knightDialer(1) __ 10
     ... Solution().knightDialer(2) __ 20
     ... Solution().knightDialer(3) __ 46

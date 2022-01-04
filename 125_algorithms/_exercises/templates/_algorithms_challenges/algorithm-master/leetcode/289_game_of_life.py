@@ -42,13 +42,13 @@ c_ Solution:
         ___ dx __ (-1, 0, 1):
             ___ dy __ (-1, 0, 1):
                 __ dx __ 0 a.. dy __ 0:
-                    continue
+                    _____
 
                 _x = x + dx
                 _y = y + dy
 
                 __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                    continue
+                    _____
 
                 cnt += board[_x][_y] & 1
 
@@ -97,7 +97,7 @@ c_ Solution:
         ___ dx __ (-1, 0, 1):
             ___ dy __ (-1, 0, 1):
                 __ dx __ 0 a.. dy __ 0:
-                    continue
+                    _____
 
                 _x = x + dx
                 _y = y + dy
@@ -107,7 +107,7 @@ c_ Solution:
                     0 <= _y < n a..
                     board[_x][_y] __ 1
                 ):
-                    continue
+                    _____
 
                 cnt += 1
 

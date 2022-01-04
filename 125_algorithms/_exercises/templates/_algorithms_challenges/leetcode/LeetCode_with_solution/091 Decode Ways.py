@@ -53,7 +53,7 @@ c_ Solution(object):
         r.. F[-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numDecodings("10") __ 1
     ... Solution().numDecodings("27") __ 1
     ... Solution().numDecodings("12") __ 2

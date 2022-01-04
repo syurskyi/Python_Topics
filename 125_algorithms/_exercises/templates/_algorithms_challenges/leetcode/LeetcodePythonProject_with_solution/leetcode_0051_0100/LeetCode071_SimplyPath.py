@@ -18,10 +18,10 @@ c_ Solution(object):
         cont = 0
         ___ i __ r..(l..(l)-1, -1, -1):
             __ l[i] __ '.' o. l[i] __ '':
-                continue
+                _____
             __ l[i] __ '..':
                 cont += 1
-                continue
+                _____
             __ cont > 0:
                 cont -= 1
             ____:

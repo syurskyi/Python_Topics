@@ -27,4 +27,4 @@ ___ image __ images:
 ___ root, dirs, files __ os.walk(base_dir):
     print(root)
     ___ file __ s..(files):
-        print(f'\t{file}')
+        print _*\t{file}')

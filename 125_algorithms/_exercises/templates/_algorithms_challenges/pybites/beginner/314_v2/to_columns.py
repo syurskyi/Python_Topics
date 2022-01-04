@@ -14,10 +14,10 @@ ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
                 name  = names[index]
             except IndexError:
                 break
-            print(f'| {name:<10}',end='')
+            print _*| {name:<10}',end='')
         ____:
             print()
-            continue
+            _____
         break
 
 
@@ -25,7 +25,7 @@ ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     
 
     names =  "Bob Julian Tim Sara Eva Ana Jake Maria".s..

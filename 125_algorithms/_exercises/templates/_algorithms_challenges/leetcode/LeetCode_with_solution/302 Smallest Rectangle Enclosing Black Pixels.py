@@ -31,7 +31,7 @@ c_ Solution(object):
         r.. (y_hi-y_lo)*(x_hi-x_lo)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     image = [
         "00",
         "10",

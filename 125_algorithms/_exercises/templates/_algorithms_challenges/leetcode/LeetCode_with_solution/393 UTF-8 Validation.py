@@ -69,6 +69,6 @@ c_ Solution(object):
         r.. required __ 0
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().validUtf8([197, 130, 1]) __ T..
     ... Solution().validUtf8([235, 140, 4]) __ F..

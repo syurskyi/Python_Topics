@@ -33,7 +33,7 @@ c_ Solution:
 
         ___ child __ node.children:
             __ n.. child:
-                continue
+                _____
 
             _size, _up, _down = divide_conquer(child)
 

@@ -55,7 +55,7 @@ c_ Solution:
         r.. p2 __ l..(s) a.. p1 __ 0 a.. e != l..(s)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().repeatedSubstringPattern("abab") __ T..
     ... Solution().repeatedSubstringPattern("abcd") __ F..
     ... Solution().repeatedSubstringPattern("abacababacab") __ T..

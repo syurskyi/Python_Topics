@@ -4,7 +4,7 @@ ____ typing _______ List
 
 _______ requests
 ____ bs4 _______ BeautifulSoup __ Soup
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
@@ -131,8 +131,8 @@ ___ filter_pycons(pycons: List[PyCon],
     """
     filtered_list    # list
     ___ event __ pycons:
-        event_start_year = parse(event.start_date).year
-        event_end_year = parse(event.end_date).year
+        event_start_year = p..(event.start_date).year
+        event_end_year = p..(event.end_date).year
         event_continent = get_continent(event.country)
         __ event_start_year __ year a.. event_end_year __ year a.. event_continent __ continent:
             filtered_list.a..(event)

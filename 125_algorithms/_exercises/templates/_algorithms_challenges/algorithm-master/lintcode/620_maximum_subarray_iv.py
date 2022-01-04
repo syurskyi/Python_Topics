@@ -23,7 +23,7 @@ c_ Solution:
             and ignoring that iteration if `i` < `k`
             """
             __ i < k:
-                continue
+                _____
 
             __ S[i] - Smin > ans:
                 ans = S[i] - Smin

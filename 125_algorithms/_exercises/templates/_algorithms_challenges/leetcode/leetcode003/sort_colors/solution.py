@@ -16,7 +16,7 @@ c_ Solution:
                 A[i], A[b] = A[b], A[i]
                 b -= 1
                 # Do not increment i, since swapped item may be 0, 1, or 2
-                continue
+                _____
             # A[i] == 1
             ____:
                 i += 1

@@ -55,7 +55,7 @@ c_ Solution:
         r.. n.. stk_left
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().checkValidString("(*))") __ T..
     ... Solution().checkValidString("*(") __ F..
     ... Solution().checkValidString("(*)") __ T..

@@ -24,7 +24,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
         ___ row __ csv_reader:
             __ line_count __ 0:
                 line_count += 1
-                continue
+                _____
             score_identifier = row[-1].rfind(";") +1
             bite_score = row[-1][score_identifier:]
             __ bite_score != "None":

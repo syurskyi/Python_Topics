@@ -49,5 +49,5 @@ c_ Solution(object):
             r.. predicate(s, i, j, J)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isAdditiveNumber("12012122436")

@@ -107,7 +107,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     df = df[df.month.dt.year __ year]
 
     __ l..(df) __ 0:
-        r.. ValueError(f'The year {year} is not included in the report!')
+        r.. ValueError _*The year {year} is not included in the report!')
     ____:
         print(year)
         print()
@@ -116,7 +116,7 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
 
 
 #uncomment the following for viewing/testing the reports/code
-__ __name__ __ "__main__":
+__ _______ __ _______
     data = process_data(URL)
     summary_report(data)
     ___ year __ (data["month"].dt.year).unique

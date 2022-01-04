@@ -7,7 +7,7 @@ ___ get_cipher(words, shifter):
         cipher_char = ord(i)
         __(cipher_char < 65):
             cipher_word += chr(cipher_char)
-            continue
+            _____
         ____(cipher_char-shifter < 65):
             cipher_char += 26
         cipher_char -= shifter

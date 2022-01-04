@@ -51,7 +51,7 @@ ___ call_calculator(args=N.., stdout=F..):
     # if combo, e.g. -a and -s, take the first one
     ___ operation, numbers __ vars(args).i..:
         __ numbers __ N..
-            continue
+            _____
 
         try:
             res = calculator(operation, numbers)

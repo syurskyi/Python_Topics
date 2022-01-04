@@ -42,6 +42,6 @@ c_ Solution:
         r.. s __ s[::-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().validPalindrome("aba") __ T..
     ... Solution().validPalindrome("abca") __ T..

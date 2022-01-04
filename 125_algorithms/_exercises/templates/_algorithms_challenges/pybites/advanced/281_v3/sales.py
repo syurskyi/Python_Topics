@@ -106,17 +106,17 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
         12     69545.62
     """
     __ year n.. __ df.month.dt.year.unique
-        r.. ValueError(f'The year {year} is not included in the report!')
+        r.. ValueError _*The year {year} is not included in the report!')
     df = df.c..
     df['year'] = df.month.dt.year
     df['month'] = df.month.dt.month
     df = df.groupby('year').get_group(year).set_index('month')
-    print(f'\n{year}')
+    print _*\n{year}')
     print(df.to_string(columns=['sales']))
 
 
 #uncomment the following for viewing/testing the reports/code
-__ __name__ __ "__main__":
+__ _______ __ _______
     data = process_data(URL)
     summary_report(data)
     ___ year __ (data["month"].dt.year).unique

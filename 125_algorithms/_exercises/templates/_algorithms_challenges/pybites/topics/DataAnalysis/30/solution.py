@@ -31,9 +31,9 @@ ___ get_movies_by_director
                 year = i..(line['title_year'])
                 score = float(line['imdb_score'])
             except ValueError:
-                continue
+                _____
             __ year a.. year < MIN_YEAR:
-                continue
+                _____
 
             m = Movie(title=movie, year=year, score=score)
             directors[director].a..(m)

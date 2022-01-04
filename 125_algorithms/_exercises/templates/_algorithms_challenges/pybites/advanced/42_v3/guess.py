@@ -50,12 +50,12 @@ c_ Game:
            {guess} is too high
            Return a boolean"""
         __ guess __ _answer:
-            print(f'{guess} is correct!')
+            print _*{guess} is correct!')
             r.. T..
         ____ guess < _answer:
-            print(f'{guess} is too low')
+            print _*{guess} is too low')
         ____:
-            print(f'{guess} is too high')
+            print _*{guess} is too high')
         r.. F..
 
     ___ __call__
@@ -65,11 +65,11 @@ c_ Game:
             try:
                 this_guess = guess()
             except ValueError:
-                continue
+                _____
             __ _validate_guess(this_guess):
                 _win = T..
                 r..
-        print(f'Guessed {MAX_GUESSES} times, answer was {_answer}')
+        print _*Guessed {MAX_GUESSES} times, answer was {_answer}')
         r..
 
 

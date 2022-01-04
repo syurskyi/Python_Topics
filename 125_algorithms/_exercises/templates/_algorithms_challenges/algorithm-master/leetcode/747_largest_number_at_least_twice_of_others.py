@@ -13,7 +13,7 @@ c_ Solution:
                 __max = _max
                 _max = A[i]
                 _max_i = i
-                continue
+                _____
 
             __ A[i] > __max:
                 __max = A[i]

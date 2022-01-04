@@ -61,7 +61,7 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canIWin(10, 11) __ F..
     ... Solution().canIWin(10, 0) __ T..
     ... Solution().canIWin(13, 11) __ T..

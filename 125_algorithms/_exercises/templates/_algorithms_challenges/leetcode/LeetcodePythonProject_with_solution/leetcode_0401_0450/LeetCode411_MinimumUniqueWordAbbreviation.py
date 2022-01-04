@@ -9,7 +9,7 @@ c_ Solution(object):
         diffs    # list
         m = l..(target)
         ___ word __ dictionary:
-            __ l..(word) != m: continue
+            __ l..(word) != m: _____
             bits = 0
             ___ i, c __ e..(word):
                 __ c != target[i]:

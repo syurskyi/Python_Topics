@@ -45,5 +45,5 @@ c_ Solution:
         r.. F[-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minCostClimbingStairs([10, 15, 20]) __ 15

@@ -9,7 +9,7 @@ ___ jagged_list(lst_of_lst: List[List[i..]], fillvalue: i.. = 0) __ List[List[i.
     
     ___ lst __ lst_of_lst:
         __ l..(lst) __ max_length:
-            continue
+            _____
         ____:
             ___ i __ r..(max_length -l..(lst)):
                 lst.a..(fillvalue)

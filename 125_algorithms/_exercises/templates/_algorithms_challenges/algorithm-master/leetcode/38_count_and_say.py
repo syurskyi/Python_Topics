@@ -18,7 +18,7 @@ c_ Solution:
             ___ c __ queue:
                 __ c __ char:
                     cnt += 1
-                    continue
+                    _____
                 _queue.extend((s..(cnt), char))
                 cnt = 1
                 char = c

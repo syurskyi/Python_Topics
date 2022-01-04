@@ -78,7 +78,7 @@ c_ WordDictionary:
 
         r.. F..
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     dic = WordDictionary()
     dic.addWord("a")
     ... dic.s..(".") __ T..

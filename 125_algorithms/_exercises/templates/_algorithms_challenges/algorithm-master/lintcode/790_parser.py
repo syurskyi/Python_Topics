@@ -28,7 +28,7 @@ c_ Solution:
         ___ i __ r..(l..(s)):
             __ (n.. ord('A') <= ord(s[i]) <= ord('Z') o.
                 s[i] n.. __ N):
-                continue
+                _____
 
             ___ _s __ N[s[i]]:
                 res = dfs(N, end, s[:i] + _s + s[i + 1:])

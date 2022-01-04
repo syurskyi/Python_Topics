@@ -27,5 +27,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findMaxConsecutiveOnes([1,1,0,1,1,1]) __ 3

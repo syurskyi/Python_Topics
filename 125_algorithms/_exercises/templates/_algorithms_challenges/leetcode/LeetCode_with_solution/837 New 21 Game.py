@@ -87,5 +87,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().new21Game(6, 1, 10) __ 0.6

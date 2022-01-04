@@ -11,6 +11,6 @@ ___ sequence_generator
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     sequence_generator()

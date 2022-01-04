@@ -35,7 +35,7 @@ c_ Solution:
         ___ i __ r..(l..(G)):
             ___ j __ r..(y):
                 __ G[i][j] != 'Q':
-                    continue
+                    _____
                 __ (x + j __ y + i o.
                     x + y __ i + j o.
                     x __ i):

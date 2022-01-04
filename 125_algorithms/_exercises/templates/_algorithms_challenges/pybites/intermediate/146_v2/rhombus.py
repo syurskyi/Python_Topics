@@ -40,7 +40,7 @@ ___ gen_rhombus(width):
             j = -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     _______ argparse
 

@@ -25,9 +25,9 @@ c_ Solution(object):
             curr[l] = p[0]
             curr[r] = p[1]
             __ l __ r a.. p[0] != p[1]:
-                continue
+                _____
             ____ l __ 0 a.. l != r a.. p[0] __ '0':
-                continue
+                _____
             helper(low, high, l+1, r-1, curr, res)
     
     ___ test

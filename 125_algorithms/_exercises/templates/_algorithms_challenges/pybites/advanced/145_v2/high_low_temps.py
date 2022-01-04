@@ -90,9 +90,9 @@ ___ high_low_record_breakers_for_2015
     ___ row __ compare_set.itertuples
         __ row.mina > row.minb:
             result['min'].a..(
-                STATION(row.Index[0], d__.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))
+                STATION(row.Index[0], d__.strptime _*2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))
         __ row.maxa < row.maxb:
             result['max'].a..(
-                STATION(row.Index[0], d__.strptime(f'2015{row.Index[1]}', '%Y%m%d').date(), row.maxb / 10.0))
+                STATION(row.Index[0], d__.strptime _*2015{row.Index[1]}', '%Y%m%d').date(), row.maxb / 10.0))
 
     r.. max(result['max'], key=l.... x: x.Value), m..(result['min'], key=l.... x: x.Value)

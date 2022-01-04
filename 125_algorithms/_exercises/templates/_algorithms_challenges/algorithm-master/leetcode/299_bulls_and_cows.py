@@ -19,7 +19,7 @@ c_ Solution:
 
             __ s __ g:
                 bulls += 1
-                continue
+                _____
 
             cnts[s] += 1
             cnts[g] -= 1

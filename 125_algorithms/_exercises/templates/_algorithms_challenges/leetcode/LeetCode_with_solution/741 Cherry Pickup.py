@@ -83,7 +83,7 @@ c_ Solution:
         r.. cache[r1, c1, r2]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().cherryPickup(
         [[0, 1, -1],
          [1, 0, -1],

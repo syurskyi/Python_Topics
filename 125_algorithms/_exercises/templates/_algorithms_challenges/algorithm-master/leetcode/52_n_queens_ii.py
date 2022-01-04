@@ -12,19 +12,19 @@ c_ Solution:
     ___ divide_conquer(self, n, y, cnt, Xs, DLs, DRs):
         ___ x __ r..(n):
             __ x __ Xs:
-                continue
+                _____
 
             dl = x - y
             __ dl __ DLs:
-                continue
+                _____
 
             dr = x + y
             __ dr __ DRs:
-                continue
+                _____
 
             __ y __ n - 1:
                 cnt += 1
-                continue
+                _____
 
             Xs.add(x)
             DLs.add(dl)

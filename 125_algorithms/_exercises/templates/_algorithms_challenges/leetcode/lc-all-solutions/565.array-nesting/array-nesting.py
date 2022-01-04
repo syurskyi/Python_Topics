@@ -8,7 +8,7 @@ c_ Solution(object):
     ans = 0
     ___ i, start __ e..(nums):
       __ cache[i]:
-        continue
+        _____
       p = start
       length = 1
       w.... nums[p] != start:

@@ -39,7 +39,7 @@ c_ Solution:
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ i__0 a.. j__0:
-                    continue
+                    _____
                 __ i__0:
                     path[i][j] = path[i][j-1] __ obstacleGrid[i][j-1]__0 ____ 0
                 ____ j__0:

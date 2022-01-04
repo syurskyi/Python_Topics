@@ -20,7 +20,7 @@ c_ Solution(object):
                     q = n-p
                     __ j<0 o. j>=N o. q<0 o. q>=N o. grid[i][j]<0 o. grid[p][q]<0:
                         dp[i][p] = -1
-                        continue
+                        _____
                     __ i > 0:
                         dp[i][p] = max(dp[i][p], dp[i-1][p])
                     __ p > 0:

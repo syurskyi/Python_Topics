@@ -85,7 +85,7 @@ c_ Solution(object):
         r.. trapped
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().trapRainWater([
         [12, 13, 0, 12],
         [13, 4, 13, 12],

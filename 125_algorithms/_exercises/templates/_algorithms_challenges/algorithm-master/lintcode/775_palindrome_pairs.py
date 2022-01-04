@@ -124,7 +124,7 @@ c_ Solution:
         ___ i __ r..(n):
             ___ j __ r..(n):
                 __ i __ j:
-                    continue
+                    _____
 
                 __ is_palindrome(words[i] + words[j]):
                     ans.a..([i, j])

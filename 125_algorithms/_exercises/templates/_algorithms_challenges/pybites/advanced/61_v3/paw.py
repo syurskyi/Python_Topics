@@ -16,7 +16,7 @@ ___ create_paw_deck(n=8):
         r.. ValueError('maximum of 26 suits')
     deck    # list
     ___ suit __ r..(n):
-        deck.extend(f'{chr(LETTER_A_CODE + suit)}{x}' ___ x __ NUMBERS)
+        deck.extend _*{chr(LETTER_A_CODE + suit)}{x}' ___ x __ NUMBERS)
     actions = l..((ACTIONS * ceil(n / 4))[:n]) + ([N..] * 3 * n)
     r__.shuffle(actions)
     r.. [PawCard(card, action) ___ card, action __ z..(deck, actions)]

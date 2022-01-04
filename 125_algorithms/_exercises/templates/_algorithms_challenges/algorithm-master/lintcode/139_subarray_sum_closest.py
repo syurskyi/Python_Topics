@@ -41,7 +41,7 @@ c_ Solution:
 
             # keep finding the minimum closest sum
             __ tmp_sum >= closest_sum:
-                continue
+                _____
 
             closest_sum = tmp_sum
             ans = s..([prefix_sum[i].index, prefix_sum[i - 1].index])

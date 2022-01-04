@@ -88,6 +88,6 @@ c_ Solution:
         r.. F[m][n]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minimumDeleteSum("sea", "eat") __ 231
     ... Solution().minimumDeleteSum("delete", "leet") __ 403

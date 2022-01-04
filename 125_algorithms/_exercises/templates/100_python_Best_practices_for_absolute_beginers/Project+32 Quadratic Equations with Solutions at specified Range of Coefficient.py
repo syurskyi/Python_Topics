@@ -12,7 +12,7 @@ z  r..(z1, z2+1)
 
 ___ i __ x:
     __ i __ 0:
-        continue
+        _____
     ___ j __ y:
         ___ k __ z:
             print(i, j, k, end' ')

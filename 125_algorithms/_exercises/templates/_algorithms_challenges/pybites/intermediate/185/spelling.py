@@ -34,5 +34,5 @@ ___ suggest_word(misspelled_word: s.., words: set = N..) __ s..:
     r.. highest_word
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     suggest_word("acheive")

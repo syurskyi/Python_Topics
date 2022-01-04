@@ -42,7 +42,7 @@ c_ Solution:
                     0 <= _y < n a..
                     (_x, _y) __ nodes
                 ):
-                    continue
+                    _____
 
                 __ union(nodes, node, (_x, _y)):
                     cnt -= 1

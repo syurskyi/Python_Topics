@@ -27,7 +27,7 @@ c_ Solution:
 
         ___ ind, val __ e..(A):
             __ ind!=0 a.. l..(dp[ind])<2:
-                continue
+                _____
 
             # jump forward
             ___ i __ xrange(ind+1, ind+val+1):

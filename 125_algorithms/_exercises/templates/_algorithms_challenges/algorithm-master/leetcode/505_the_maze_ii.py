@@ -47,7 +47,7 @@ c_ Solution:
 
                 __ ((_x, _y) __ distance a..
                     distance[x, y] + _step >= distance[_x, _y]):
-                    continue
+                    _____
 
                 distance[_x, _y] = distance[x, y] + _step
 
@@ -114,7 +114,7 @@ c_ Solution2:
                 _step = distance[x, y] + abs(_x - x) + abs(_y - y)
 
                 __ (_x, _y) __ distance a.. _step >= distance[_x, _y]:
-                    continue
+                    _____
 
                 __ _x __ tx a.. _y __ ty:
                     r.. _step

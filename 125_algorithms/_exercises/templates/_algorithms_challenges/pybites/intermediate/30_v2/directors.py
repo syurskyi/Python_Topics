@@ -84,7 +84,7 @@ ___ get_average_scores(directors):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     get_movies_by_director()
 
 

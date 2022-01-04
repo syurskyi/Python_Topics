@@ -8,7 +8,7 @@ _______ os
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/pycons-europe-2019.json"
 RESPONSES = "https://bites-data.s3.us-east-2.amazonaws.com/nominatim_responses.json"
@@ -70,8 +70,8 @@ ___ _get_pycons
                 pycon["name"],
                 pycon["city"],
                 pycon["country"],
-                parse(pycon["start_date"]),
-                parse(pycon["end_date"]),
+                p..(pycon["start_date"]),
+                p..(pycon["end_date"]),
                 pycon["url"],
             )
             ___ pycon __ json.load(f)

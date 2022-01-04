@@ -63,7 +63,7 @@ c_ Solution(object):
         r.. T.. __ F[stones[-1]] ____ F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canCross([0, 2]) __ F..
     ... Solution().canCross([0, 1, 3, 5, 6, 8, 12, 17]) __ T..
     ... Solution().canCross([0, 1, 2, 3, 4, 8, 9, 11]) __ F..

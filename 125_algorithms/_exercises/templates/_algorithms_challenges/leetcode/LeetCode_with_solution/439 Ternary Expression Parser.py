@@ -61,6 +61,6 @@ c_ Solution:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().parseTernary("F?1:T?4:5") __ "4"
     ... Solution().parseTernary("T?T?F:5:3") __ "F"

@@ -47,11 +47,11 @@ c_ Solution:
                 _y = y + dy
 
                 __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                    continue
+                    _____
                 __ (_x, _y) __ visited:
-                    continue
+                    _____
                 __ matrix[_x][_y] < matrix[x][y]:
-                    continue
+                    _____
 
                 queue.a..((_x, _y))
                 visited.add((_x, _y))
@@ -97,10 +97,10 @@ c_ Solution:
                 0 <= _x < l..(matrix) a..
                 0 <= _y < l..(matrix[0])
             ):
-                continue
+                _____
             __ (_x, _y) __ visited:
-                continue
+                _____
             __ matrix[_x][_y] < matrix[x][y]:
-                continue
+                _____
 
             dfs(matrix, _x, _y, visited)

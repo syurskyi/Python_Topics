@@ -1,6 +1,6 @@
 ____ d__ _______ d__
 
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 # work with a static date for tests, real use = datetime.now()
 NOW = d__(2019, 3, 17, 16, 28, 42, 966663)
@@ -13,7 +13,7 @@ ___ get_number_books_read(books_per_year_goal: i..,
        number of books that should have been read.
        If books_per_year_goal negative or 0, or at_date is in the
        past, raise a ValueError."""
-    in_date = NOW __ at_date __ N.. ____ parse(at_date)
+    in_date = NOW __ at_date __ N.. ____ p..(at_date)
     __ books_per_year_goal <= 0 o. in_date < NOW:
         r.. ValueError
     # TODOs

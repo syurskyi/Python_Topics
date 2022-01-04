@@ -11,7 +11,7 @@ ___ test_dict2nt
     ... nt.tags[2] __ 'Learn by Doing'
     ... nt.started.year __ 2016
 
-    ... nt.__class__.__base__ __ tuple
+    ... nt.__class__.__base__ __ t..
     ... hasattr(nt, '_asdict')
 
 ___ test_nt2json

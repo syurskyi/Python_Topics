@@ -25,7 +25,7 @@ ___ get_income_distribution(___=countries):
       - values = list of country names (wb:name)
     """
     new_list = DefaultDict(l..)
-    tree = ET.parse(countries)
+    tree = ET.p..(countries)
     root = tree.getroot()
     ___ country __ root:
         country_name = country.findtext('{http://www.worldbank.org}name')

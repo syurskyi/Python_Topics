@@ -57,5 +57,5 @@ c_ Solution(object):
 
         r.. gmax
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxKilledEnemies(["0E00", "E0WE", "0E00"]) __ 3

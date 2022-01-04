@@ -61,7 +61,7 @@ c_ SnakeGame(object):
 # obj = SnakeGame(width, height, food)
 # param_1 = obj.move(direction)
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     game = SnakeGame(3, 2, [[1, 2], [0, 1]])
     ___ char, expect __ z..('RDRULU', [0, 0, 1, 1, 2, -1]):
         ... game.move(char) __ expect

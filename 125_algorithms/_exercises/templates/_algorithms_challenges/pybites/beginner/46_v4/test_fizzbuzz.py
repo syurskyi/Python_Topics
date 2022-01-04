@@ -1,8 +1,8 @@
 _______ p__
 
-____ Previous.fizzbuzz _______ fizzbuzz
+____ P__.f.. _______ f..
 
-@p__.mark.parametrize("arg, ret",[
+@p__.m__.p..("arg, ret",[
     (1, 1),
     (2, 2),
     (3, 'Fizz'),

@@ -106,5 +106,5 @@ c_ Solution(object):
         r.. s[begin+1: end-1+1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().longestPalindrome("dfaaabbbaaac") __ "aaabbbaaa"

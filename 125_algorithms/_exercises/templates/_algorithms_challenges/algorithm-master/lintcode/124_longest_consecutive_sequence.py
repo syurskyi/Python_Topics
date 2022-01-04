@@ -16,7 +16,7 @@ c_ Solution:
 
         ___ a __ nums:
             __ a n.. __ cands:
-                continue
+                _____
 
             cands.discard(a)
             size = 1
@@ -60,7 +60,7 @@ c_ Solution:
 
         ___ i __ r..(1, l..(nums)):
             __ nums[i] __ nums[i - 1]:
-                continue
+                _____
 
             __ nums[i] __ nums[i - 1] + 1:
                 size += 1

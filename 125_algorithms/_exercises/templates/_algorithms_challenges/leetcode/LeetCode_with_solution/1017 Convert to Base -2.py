@@ -62,6 +62,6 @@ c_ Solution:
         r.. "".j..(map(s.., ret)) o. "0"
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().baseNeg2(3) __ "111"
     ... Solution().baseNeg2(4) __ "100"

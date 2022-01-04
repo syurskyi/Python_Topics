@@ -16,6 +16,6 @@ c_ Thumbs:
         r.. __mul__(other)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(Thumbs() * 2)
     

@@ -23,7 +23,7 @@ ___ pretty_date(date):
         r.. ValueError
 
     secs = (NOW - date).total_seconds()
-    print(f'{secs=}')
+    print _*{secs=}')
     ___ to __ TIME_OFFSETS:
         __ secs < to.offset:
             result = to.date_str.f..(i..(secs / (to.divider __ to.divider ____ 1)))

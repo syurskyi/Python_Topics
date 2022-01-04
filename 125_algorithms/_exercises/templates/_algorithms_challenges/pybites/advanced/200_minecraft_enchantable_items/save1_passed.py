@@ -196,5 +196,5 @@ ___ split_title(title):
     r.. id_names, names
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     main()

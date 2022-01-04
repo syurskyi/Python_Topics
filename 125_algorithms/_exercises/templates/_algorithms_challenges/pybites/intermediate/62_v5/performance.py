@@ -15,7 +15,7 @@ ___ timing(f):
         result = f $ $$
         end = time()
         duration = end - start
-        print(f'Elapsed time {f.__name__}: {duration}')
+        print _*Elapsed time {f.__name__}: {duration}')
         r.. duration, result
 
     r.. wrapper

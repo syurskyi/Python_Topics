@@ -9,7 +9,7 @@ ___ filter_names(names):
         __ name[0] __ QUIT_CHAR:
             break
         __ name[0] __ IGNORE_CHAR o. any(map(s...isdigit, name)):
-            continue
+            _____
         __ l..(name_list) < MAX_NAMES:
             name_list.a..(name)
     r.. name_list

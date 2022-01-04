@@ -18,7 +18,7 @@ c_ Solution:
         ___ char __ E:
             __ char n.. __ operation:
                 stack.a..(i..(char))
-                continue
+                _____
 
             b = stack.pop()
             a = stack.pop()

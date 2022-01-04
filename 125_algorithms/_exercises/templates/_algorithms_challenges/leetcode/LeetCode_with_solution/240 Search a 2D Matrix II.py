@@ -95,6 +95,6 @@ c_ SolutionBinSearch(object):
         ____:
             r.. lo
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().searchMatrix([[1, 4], [2, 5]], 4) __ T..
     ... SolutionBinSearch().searchMatrix([[1, 4], [2, 5]], 4) __ T..

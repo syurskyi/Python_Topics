@@ -14,5 +14,5 @@ ___ capitalize_sentences(text: s..) __ s..:
    r.. " ".j..(text_clean)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
    print(capitalize_sentences(" ".j..(text2).lower()))

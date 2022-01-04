@@ -59,7 +59,7 @@ c_ Solution:
         r.. mx.c
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findNumberOfLIS([1,1,1,2,2,2,3,3,3]) __ 27
     ... Solution().findNumberOfLIS([1, 3, 5, 4, 7]) __ 2
     ... Solution().findNumberOfLIS([2, 2, 2, 2, 2]) __ 5

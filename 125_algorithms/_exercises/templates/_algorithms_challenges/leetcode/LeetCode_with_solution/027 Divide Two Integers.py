@@ -42,5 +42,5 @@ c_ Solution:
         r.. sign*result
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().divide(5, -1) __ -5

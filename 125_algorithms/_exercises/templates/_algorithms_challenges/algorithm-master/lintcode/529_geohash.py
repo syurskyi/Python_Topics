@@ -53,7 +53,7 @@ c_ GeoHash:
         ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))
         ___ i __ r..(ord('a'), ord('z') + 1):
             __ i __ ignored_char:
-                continue
+                _____
             base32_list.a..(chr(i))
 
         r.. base32_list

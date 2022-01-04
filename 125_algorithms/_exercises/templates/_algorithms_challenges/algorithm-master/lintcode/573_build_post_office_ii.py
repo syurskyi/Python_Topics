@@ -67,11 +67,11 @@ c_ Solution:
                     _y = y + dy
 
                     __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                        continue
+                        _____
                     __ grid[_x][_y] != EMPTY:
-                        continue
+                        _____
                     __ (_x, _y) __ visited:
-                        continue
+                        _____
 
                     visited.add((_x, _y))
                     _queue.a..((_x, _y))
@@ -113,7 +113,7 @@ c_ Solution:
         ___ x __ r..(m):
             ___ y __ r..(n):
                 __ grid[x][y] != HOUSE:
-                    continue
+                    _____
 
                 cnt += 1
                 step = c...defaultdict(i..)  # steps for current house
@@ -138,11 +138,11 @@ c_ Solution:
             _y = y + dy
 
             __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                continue
+                _____
             __ grid[_x][_y] != EMPTY:
-                continue
+                _____
             __ step[x, y] + 1 >= step[_x, _y] > 0:  # > 0 means visited, since its defaultdict
-                continue
+                _____
 
             ids[_x, _y].add(id)
 

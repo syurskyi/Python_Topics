@@ -17,7 +17,7 @@ ___ i __ r..(l..(a)):
                 res.a..(count)
                 
                 #print('even res:',res)
-                continue
+                _____
             ____:
                 count += 1
         ____:
@@ -29,7 +29,7 @@ ___ i __ r..(l..(a)):
                 count += 1
                 res.a..(count)
                 #print(res)
-                continue
+                _____
             ____:
                 count += 1
 ___ i __ res:

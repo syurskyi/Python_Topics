@@ -31,6 +31,6 @@ c_ Solution:
         r.. m..(F[n][i] ___ i __ xrange(m))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     costs = [[7, 6, 2]]
     ... Solution().minCost(costs) __ 2

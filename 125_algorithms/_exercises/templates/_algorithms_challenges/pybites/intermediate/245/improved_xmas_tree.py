@@ -17,7 +17,7 @@ ___ generate_improved_xmas_tree(rows=10):
    ___ i __ r..(rows + 1):
       __ i __ 0:
          xmas_tree.a..(STAR.center(max_length).rstrip())
-         continue
+         _____
 
       leaf_count = i * 2 -1
       xmas_tree.a..((leaf_count * LEAF).center(max_length).rstrip())
@@ -32,5 +32,5 @@ ___ generate_improved_xmas_tree(rows=10):
    
    r.. "\n".j..(xmas_tree)
 
-__ __name__ __ "__main__":
+__ _______ __ _______
   print(generate_improved_xmas_tree())

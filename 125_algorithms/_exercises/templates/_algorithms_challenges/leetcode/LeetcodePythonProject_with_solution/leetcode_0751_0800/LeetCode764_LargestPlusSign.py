@@ -19,7 +19,7 @@ c_ Solution(object):
         ___ i __ r..(n):
             ___ j __ r..(n):
                 __ matrix[i][j] __ 0:
-                    continue
+                    _____
                 __ i __ 0 a.. j __ 0:
                     dp[i][j][0] = 1
                     dp[i][j][1] = 1
@@ -35,7 +35,7 @@ c_ Solution(object):
         ___ i __ r..(n-1, -1, -1):
             ___ j __ r..(n-1, -1, -1):
                 __ matrix[i][j] __ 0:
-                    continue
+                    _____
                 __ i __ n-1 a.. j __ n-1:
                     dp[i][j][2] = 1
                     dp[i][j][3] = 1

@@ -20,7 +20,7 @@ c_ Solution(object):
         ___ point __ points:
             x, y = point[0], point[1]
             __ x __ mid:
-                continue
+                _____
             ____:
                 __ 2*mid-x n.. __ hashmap[point[1]]:
                     r.. F..

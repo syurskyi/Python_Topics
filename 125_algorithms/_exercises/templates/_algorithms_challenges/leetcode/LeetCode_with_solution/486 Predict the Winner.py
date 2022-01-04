@@ -62,6 +62,6 @@ c_ Solution:
         r.. F[0][l] >= (gross[-1] - F[0][l])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().PredictTheWinner([1, 5, 2]) __ F..
     ... Solution().PredictTheWinner([1, 5, 233, 7]) __ T..

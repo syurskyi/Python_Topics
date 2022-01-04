@@ -28,7 +28,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
     ___ email __ emails:
         domain = email.s..("@")[1]
         __ domain __ common_domains:
-            continue
+            _____
         ____:
             most_common_prep.a..(domain)
 
@@ -36,6 +36,6 @@ ___ get_most_common_domains(emails, common_domains_ N..
     r.. most_common.most_common(2)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     #get_common_domains()
     get_most_common_domains(["a@gmail.es", "b@googlemail.com", "c@somedomain.com", "d@somedomain.com", "e@somedomain.com", "f@hotmail.fr"])

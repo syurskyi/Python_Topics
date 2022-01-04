@@ -40,7 +40,7 @@ c_ Solution:
         ___ x __ r..(m):
             ___ y __ r..(n):
                 __ grid[x][y] != HOUSE:
-                    continue
+                    _____
                 xs.a..(x)
                 ys.a..(y)
 
@@ -61,7 +61,7 @@ c_ Solution:
         ___ x __ r..(m):
             ___ y __ r..(n):
                 __ grid[x][y] != EMPTY:
-                    continue
+                    _____
 
                 step = get_step(psx, xs, x) + get_step(psy, ys, y)
 
@@ -144,9 +144,9 @@ c_ Solution:
                 _y = y + dy
 
                 __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                    continue
+                    _____
                 __ (_x, _y) __ visited:
-                    continue
+                    _____
 
                 visited.add((_x, _y))
                 queue.a..((_x, _y))
@@ -194,7 +194,7 @@ c_ Solution:
         ___ x __ r..(m):
             ___ y __ r..(n):
                 __ grid[x][y] != EMPTY:
-                    continue
+                    _____
                 __ steps[x][y] < ans:
                     ans = steps[x][y]
 
@@ -218,9 +218,9 @@ c_ Solution:
                     _y = y + dy
 
                     __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                        continue
+                        _____
                     __ (_x, _y) __ visited:
-                        continue
+                        _____
 
                     visited.add((_x, _y))
                     steps[_x][_y] += step

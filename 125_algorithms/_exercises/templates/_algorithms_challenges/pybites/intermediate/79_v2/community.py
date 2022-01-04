@@ -57,7 +57,7 @@ ___ create_user_bar_chart(content):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     content = get_csv()

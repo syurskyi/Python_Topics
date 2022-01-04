@@ -17,7 +17,7 @@ c_ Solution(object):
                     r.. F..
                 modified = T..
                 __ i-2 >= 0 a.. nums[i-2] > nums[i]:
-                    continue
+                    _____
             prev = nums[i]
         r.. T..
     

@@ -14,7 +14,7 @@ c_ Solution(object):
     w.... queue:
       i, j = queue.popleft()
       __ board[i][j] __ "B":
-        continue
+        _____
       __ board[i][j] __ "M":
         board[i][j] = "X"
         break

@@ -17,7 +17,7 @@ c_ Solution:
 
         ___ x __ b:
             __ n.. freq.get(x):
-                continue
+                _____
 
             freq[x] -= 1
             ans.a..(x)

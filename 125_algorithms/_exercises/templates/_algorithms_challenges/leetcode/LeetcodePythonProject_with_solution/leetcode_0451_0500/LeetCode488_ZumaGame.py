@@ -25,7 +25,7 @@ c_ Solution(object):
         w.... j < l..(s):
             __ s[j] __ s[i]:
                 j += 1
-                continue
+                _____
             need = 3-(j-i)
             __ h[ord(s[i])-ord('A')] >= need:
                 h[ord(s[i])-ord('A')] -= need
@@ -40,7 +40,7 @@ c_ Solution(object):
         w.... j < l..(board):
             __ board[j] __ board[i]:
                 j += 1
-                continue
+                _____
             __ j-i >= 3:
                 r.. removeConsecutive(board[:i]+board[j:])
             ____:

@@ -14,7 +14,7 @@ c_ Solution(object):
         res    # list
         ___ i __ r..(n-2):
             __ i > 0 a.. nums[i] __ nums[i-1]:
-                continue
+                _____
             j, k = i+1, n-1
             w.... j < k:
                 tmp = nums[i]+nums[j]+nums[k]

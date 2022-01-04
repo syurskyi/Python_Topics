@@ -28,9 +28,9 @@ c_ Solution:
 
         ___ mid __ (left, right):
             __ mid > 0 a.. nums[mid] __ nums[mid - 1]:
-                continue
+                _____
             __ mid + 1 < n a.. nums[mid] __ nums[mid + 1]:
-                continue
+                _____
             r.. nums[mid]
 
         r.. -1

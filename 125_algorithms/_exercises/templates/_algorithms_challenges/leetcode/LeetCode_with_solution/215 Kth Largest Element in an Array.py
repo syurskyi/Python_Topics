@@ -29,13 +29,13 @@ c_ Solution:
                 heapq.heappush(h, v)
             ____:
                 __ v <= h[0]:
-                    continue
+                    _____
                 heapq.heappop(h)
                 heapq.heappush(h, v)
 
         r.. heapq.heappop(h)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print Solution().findKthLargest([3, 2, 1, 5, 6, 4], 2)
 

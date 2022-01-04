@@ -38,10 +38,10 @@ ___ add_todo(delay_time: s.., task: s..,
         ____ last_char.isdigit
             seconds = i..(unit)
         ____:
-            continue
+            _____
         
     r.. f"{task} @ {start_time + t..(days=days, hours=hours, minutes=minutes, seconds=seconds)}"
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(add_todo("30", "test"))

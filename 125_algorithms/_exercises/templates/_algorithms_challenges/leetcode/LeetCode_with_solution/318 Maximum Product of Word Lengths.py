@@ -46,5 +46,5 @@ c_ Solution(object):
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]) __ 16

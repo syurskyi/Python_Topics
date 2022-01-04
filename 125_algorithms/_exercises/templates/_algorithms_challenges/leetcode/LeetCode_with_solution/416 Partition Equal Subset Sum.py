@@ -73,6 +73,6 @@ c_ Solution:
         )
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
      ... Solution().canPartition([1, 5, 11, 5]) __ T..
      ... Solution().canPartition([1, 2, 3, 5]) __ F..

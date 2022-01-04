@@ -30,14 +30,14 @@ c_ NinjaBelt:
         __ n.. isi..(new_score, i..):
             r.. ValueError('Score can only be an integer')
         __ _score > new_score:
-            r.. ValueError(f'New score ({new_score}) must be higher than previous score ({_score})')
+            r.. ValueError _*New score ({new_score}) must be higher than previous score ({_score})')
         _score = new_score
         belt = _get_belt(new_score)
         __ _last_earned_belt __ N.. o. _last_earned_belt_number < belt:
             _last_earned_belt_number = belt
-            print(f'Congrats, you earned {new_score} points obtaining the PyBites Ninja '
+            print _*Congrats, you earned {new_score} points obtaining the PyBites Ninja '
                   f'{_last_earned_belt.t..} Belt')
         ____:
-            print(f'Set new score to {new_score}')
+            print _*Set new score to {new_score}')
 
     score = property(_get_score, _set_score)

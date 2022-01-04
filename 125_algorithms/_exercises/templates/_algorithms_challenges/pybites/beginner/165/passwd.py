@@ -53,7 +53,7 @@ ___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     get_users_for_shell()
 

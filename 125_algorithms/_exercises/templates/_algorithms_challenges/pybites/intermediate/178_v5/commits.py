@@ -2,7 +2,7 @@ _______ os
 _______ __
 ____ c.. _______ Counter
 ____ urllib.request _______ urlretrieve
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 commits = os.path.j..('/tmp', 'commits')
 urlretrieve('https://bit.ly/2H1EuZQ', commits)
@@ -35,7 +35,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     w__ open(commit_log) __ cl:
         ___ x __ log_regex.f..(cl.read()):
             c += 1
-            dt = parse(x[0])
+            dt = p..(x[0])
             __ year __ N.. o. year __ dt.year:
                 log += Counter({(YEAR_MONTH.f..(y=dt.year, m=dt.month)): i..('0' + x[1]) - i..('0' + x[2])})
     lst = s..([(k, v) ___ k, v __ log.i..], key=l.... x: x[1])

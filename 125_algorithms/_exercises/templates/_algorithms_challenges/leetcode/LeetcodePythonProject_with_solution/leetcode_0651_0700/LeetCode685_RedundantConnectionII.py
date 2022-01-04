@@ -24,7 +24,7 @@ c_ Solution(object):
             parent[i] = i
         ___ i __ r..(n):
             __ edges[i][1] __ 0:
-                continue
+                _____
             child = edges[i][1]
             par = edges[i][0]
             __ getRoot(parent, par) __ child:

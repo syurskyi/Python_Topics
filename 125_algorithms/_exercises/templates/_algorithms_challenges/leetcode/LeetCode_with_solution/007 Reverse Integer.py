@@ -33,6 +33,6 @@ c_ Solution(object):
         r.. sign*x
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print Solution().reverse(123)
 

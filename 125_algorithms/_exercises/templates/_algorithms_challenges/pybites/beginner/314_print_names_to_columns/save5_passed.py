@@ -6,7 +6,7 @@ ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
 
     breaks    # list
     ___ i __ r..(0, l..(names), cols):
-        breaks.a..(f'| {names[i]:{10}}')
+        breaks.a.. _*| {names[i]:{10}}')
 
     output = ''
     __ cols __ 1:

@@ -30,10 +30,10 @@ c_ Solution(object):
         res    # list
         ___ a __ r..(n - 3):
             __ a > 0 a.. nums[a - 1] __ nums[a]:
-                continue
+                _____
             ___ b __ r..(a + 1, n - 2):
                 __ b > a + 1 a.. nums[b - 1] __ nums[b]:
-                    continue
+                    _____
                 c = b + 1
                 d = n - 1
                 w.... c < d:

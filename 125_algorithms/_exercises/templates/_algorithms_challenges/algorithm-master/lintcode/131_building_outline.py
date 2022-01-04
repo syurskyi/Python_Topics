@@ -73,7 +73,7 @@ c_ Solution:
             __ tmp a.. tmp[-1][0] __ x:
                 tmp.pop()
             __ tmp a.. tmp[-1][1] __ max_h:
-                continue
+                _____
             tmp.a..([x, max_h])
 
         _x = pre_h = 0

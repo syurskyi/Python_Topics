@@ -16,10 +16,10 @@ c_ Solution(object):
     
     ___ helper(self, nums, ind, curr, res):
         __ l..(curr) >= 2:
-            res.add(tuple(curr))
+            res.add(t..(curr))
         ___ i __ r..(ind, l..(nums)):
             __ i > ind a.. nums[i] __ nums[i-1]:
-                continue
+                _____
             __ n.. curr o. curr[-1] <= nums[i]:
                 curr.a..(nums[i])
                 helper(nums, i+1, curr, res)

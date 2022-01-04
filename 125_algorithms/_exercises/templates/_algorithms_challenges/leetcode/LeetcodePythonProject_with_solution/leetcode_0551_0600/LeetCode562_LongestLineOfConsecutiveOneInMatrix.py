@@ -17,7 +17,7 @@ c_ Solution(object):
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ matrix[i][j] __ 0:
-                    continue
+                    _____
                 ___ k __ r..(4):
                     dp[i][j][k] = 1
                 __ j > 0:

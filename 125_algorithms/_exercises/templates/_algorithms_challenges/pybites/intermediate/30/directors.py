@@ -33,7 +33,7 @@ ___ get_movies_by_director
             __ row["title_year"] != "":
                 title_year = i..(row["title_year"])
             ____:
-                continue
+                _____
 
             __ title_year > MIN_YEAR:
                 director_name = row["director_name"]

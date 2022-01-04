@@ -13,7 +13,7 @@ c_ Solution(object):
     w.... start < l..(nums) a.. end < l..(nums):
       __ start > 0 a.. nums[start - 1] __ nums[start]:
         start += 1
-        continue
+        _____
       __ nums[end] - nums[start] > k:
         start += 1
       ____ start __ end o. nums[end] - nums[start] < k:

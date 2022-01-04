@@ -22,7 +22,7 @@ ___ sum_even_numbers(numbers: List[float]) __ float:
         ___ num __ filter(l.... x: x % 2 __ 0,numbers):
             s += num
     except Exception __ e:
-        logger.exception(f'Bad inputs: {numbers}')
+        logger.exception _*Bad inputs: {numbers}')
         r..
 
     ____:

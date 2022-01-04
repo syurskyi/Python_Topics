@@ -57,7 +57,7 @@ ___ slice_and_dice(text=text):
         line = line.s..
 
         __ line[0] n.. __ ascii_lowercase:
-            continue
+            _____
         words = line.s.. 
 
         last_word_stripped = words[-1].rstrip('!.')

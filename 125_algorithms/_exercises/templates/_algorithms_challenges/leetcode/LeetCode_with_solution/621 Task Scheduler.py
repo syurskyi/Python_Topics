@@ -96,6 +96,6 @@ c_ Solution:
         r.. clock
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().leastInterval(["A","A","A","B","B","B"], 0) __ 6
     ... Solution().leastInterval(["A","A","A","B","B","B"], 2) __ 8

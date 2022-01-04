@@ -1,12 +1,12 @@
-___ fizzbuzz(num):
-    __ num % 3 __ 0 a.. num % 5 __ 0:
-        r.. "Fizz Buzz"
-    ____ num % 3 __ 0:
-        r.. "Fizz"
-    ____ num % 5 __ 0:
-        r.. "Buzz"
-    ____:
-        r.. num
-
-___ i __ r..(34):
-    print(i, fizzbuzz(i))
+# ___ fizzbuzz num
+#     __ ? % 3 __ 0 a.. ? % 5 __ 0
+#         r.. "Fizz Buzz"
+#     ____ ? % 3 __ 0
+#         r.. "Fizz"
+#     ____ ? % 5 __ 0
+#         r.. "Buzz"
+#     ____
+#         r.. ?
+#
+# ___ i __ r.. 34
+#     print ? ? ?

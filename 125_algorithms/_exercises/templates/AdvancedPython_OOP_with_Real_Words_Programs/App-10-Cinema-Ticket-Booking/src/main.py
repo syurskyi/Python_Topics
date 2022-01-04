@@ -143,7 +143,7 @@ c_ Ticket:
         pdf.output("sample.pdf", 'F')
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     name  i__("Your full name: ")
     seat_id  i__("Preferred seat number: ")

@@ -8,7 +8,7 @@ LOGS = 'bite_output_log.txt'
 DATA = os.path.j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
 __ n.. os.path.isfile(DATA):
-    urlretrieve(f'{S3}/{LOGS}', DATA)
+    urlretrieve _*{S3}/{LOGS}', DATA)
 
 
 c_ BiteStats:
@@ -93,7 +93,7 @@ c_ BiteStats:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     l = BiteStats(DATA)
 

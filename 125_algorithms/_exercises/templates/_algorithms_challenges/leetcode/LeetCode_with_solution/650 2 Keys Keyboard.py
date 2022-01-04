@@ -77,7 +77,7 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minSteps(7) __ 7
     ... Solution().minSteps(3) __ 3
     ... Solution().minSteps(4) __ 4

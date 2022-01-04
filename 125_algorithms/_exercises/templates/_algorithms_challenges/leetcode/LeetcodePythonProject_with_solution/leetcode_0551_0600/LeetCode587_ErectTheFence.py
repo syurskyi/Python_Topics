@@ -32,7 +32,7 @@ c_ Solution(object):
             nextInd = 0
             ___ i __ r..(1, l..(points)):
                 __ i __ curInd:
-                    continue
+                    _____
                 cross = crossProductLength(cur, points[i], nextPoint)
                 __ nextInd __ curInd o. cross > 0 o.\
                     (cross __ 0 a.. distance(points[i], cur) > distance(nextPoint, cur)):
@@ -40,7 +40,7 @@ c_ Solution(object):
                     nextInd = i
             ___ i, point __ e..(points):
                 __ i __ curInd:
-                    continue
+                    _____
                 cross = crossProductLength(cur, point, nextPoint)
                 __ cross __ 0:
                     res.add(points[i])

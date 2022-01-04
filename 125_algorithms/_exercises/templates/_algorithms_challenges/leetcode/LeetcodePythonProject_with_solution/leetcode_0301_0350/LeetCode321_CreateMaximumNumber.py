@@ -11,7 +11,7 @@ c_ Solution(object):
         ___ i __ r..(0, k+1):
             j = k-i
             __ i > len1 o. j > len2:
-                continue
+                _____
             left = getMax(nums1, i)
             right = getMax(nums2, j)
             tmpResult = merge(left, right)

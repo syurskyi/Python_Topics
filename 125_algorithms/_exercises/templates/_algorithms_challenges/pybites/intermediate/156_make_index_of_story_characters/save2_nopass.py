@@ -61,7 +61,7 @@ ___ make_character_index(text=text, characters=CHARACTERS):
 
     # Clean up character list with multiple character names
     ___ character __ characters:
-        __ t..(character) __ tuple:
+        __ t..(character) __ t..:
             character = '|'.j..(l..(character))
         character_list.a..(character)
 

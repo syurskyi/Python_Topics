@@ -23,13 +23,13 @@ c_ Solution(object):
           dist += 1
         y.. (i, j)
 
-    queue = d..([tuple(start)])
+    queue = d..([t..(start)])
     visited = set()
-    destination = tuple(destination)
+    destination = t..(destination)
     w.... queue:
       curr = queue.popleft()
       __ curr __ visited:
-        continue
+        _____
       __ curr __ destination:
         r.. T..
       visited |= {curr}

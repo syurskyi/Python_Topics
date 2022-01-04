@@ -26,7 +26,7 @@ c_ Solution(object):
             r.. F..
         ___ i __ r..(4):
             __ sums[i]+nums[ind] > target:
-                continue
+                _____
             sums[i] += nums[ind]
             __ helper(nums, sums, ind+1, target):
                 r.. T..

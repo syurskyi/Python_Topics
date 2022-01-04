@@ -156,7 +156,7 @@ c_ Solution_TLE:
             __ result: r.. result
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().getPermutation(4, 6) __ "1432"
     ... Solution().getPermutation(2, 2) __ "21"
     ... Solution().getPermutation(3, 1) __ "123"

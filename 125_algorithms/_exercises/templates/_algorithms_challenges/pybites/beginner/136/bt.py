@@ -63,7 +63,7 @@ ___ get_int(inpval):
         r.. inpval.value
 
 # hint
-___ _particular_antigen_comp(donor: i.., recipient: i..) __ tuple:
+___ _particular_antigen_comp(donor: i.., recipient: i..) __ t..:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.

@@ -32,7 +32,7 @@ ___ create_uno_deck
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     uno_deck = create_uno_deck()

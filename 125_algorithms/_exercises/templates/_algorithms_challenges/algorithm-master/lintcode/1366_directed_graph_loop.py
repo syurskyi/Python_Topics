@@ -21,7 +21,7 @@ c_ Solution:
 
         ___ i __ r..(n):
             __ start[i] __ visited:
-                continue
+                _____
             __ dfs(start[i], nxt, visited, rec_stack):
                 r.. T..
 

@@ -30,7 +30,7 @@ c_ Solution:
             cur = pre.next
             __ cur.val __ val:
                 pre.next = cur.next
-                continue
+                _____
 
             pre = pre.next
 

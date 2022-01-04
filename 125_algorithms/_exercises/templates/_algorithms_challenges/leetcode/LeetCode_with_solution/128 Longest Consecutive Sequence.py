@@ -58,7 +58,7 @@ c_ Solution:
 
         max_length = -1<<31
         ___ ind, val __ e..(num):
-            __ visited[val]: continue
+            __ visited[val]: _____
 
             current_length = 1
 

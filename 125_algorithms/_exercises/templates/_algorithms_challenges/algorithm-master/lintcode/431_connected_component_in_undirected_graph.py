@@ -74,7 +74,7 @@ c_ Solution:
 
         ___ node __ nodes:
             __ node __ visited:
-                continue
+                _____
 
             path    # list
             dfs(node, visited, path)
@@ -88,6 +88,6 @@ c_ Solution:
 
         ___ b __ a.neighbors:
             __ b __ visited:
-                continue
+                _____
 
             dfs(b, visited, path)

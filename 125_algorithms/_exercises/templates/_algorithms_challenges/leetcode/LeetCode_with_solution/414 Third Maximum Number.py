@@ -36,7 +36,7 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().thirdMax([1, 2, 3, 4]) __ 2
     ... Solution().thirdMax([4, 3, 2, 1]) __ 2
     ... Solution().thirdMax([2, 2, 3, 1]) __ 1

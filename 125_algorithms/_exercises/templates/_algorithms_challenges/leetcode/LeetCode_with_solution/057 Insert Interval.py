@@ -73,7 +73,7 @@ c_ SolutionSlow(object):
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     lst = [[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]
     insert = [4, 9]
     lst_interval    # list

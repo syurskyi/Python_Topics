@@ -26,7 +26,7 @@ c_ Solution(object):
                     i += 1
                 ___ j __ r..(i+1, l..(s)):
                     __ s[j] __ b[j] o. s[i] != b[j]:
-                        continue
+                        _____
                     tmp = swap(s, i, j)
                     __ tmp __ b:
                         r.. res

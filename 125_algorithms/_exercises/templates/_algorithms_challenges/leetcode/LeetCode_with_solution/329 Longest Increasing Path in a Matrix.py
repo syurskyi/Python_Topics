@@ -66,7 +66,7 @@ c_ Solution(object):
         r.. cache[i][j]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().longestIncreasingPath([
         [9, 9, 4],
         [6, 6, 8],

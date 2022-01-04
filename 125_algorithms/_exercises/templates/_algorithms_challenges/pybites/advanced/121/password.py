@@ -28,7 +28,7 @@ ___ password_complexity(password):
 
     r.. score
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     password = '123$Abc1'
 
     password_complexity(password)

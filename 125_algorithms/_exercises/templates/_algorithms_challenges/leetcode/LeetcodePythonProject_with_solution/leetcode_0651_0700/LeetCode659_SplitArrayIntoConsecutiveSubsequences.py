@@ -14,7 +14,7 @@ c_ Solution(object):
             freqMap[num] = freqMap.get(num, 0)+1
         ___ num __ nums:
             __ freqMap[num] __ 0:
-                continue
+                _____
             ____ appendFreqMap.get(num, 0) > 0:
                 appendFreqMap[num] -= 1
                 appendFreqMap[num+1] = appendFreqMap.get(num+1, 0)+1

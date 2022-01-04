@@ -51,5 +51,5 @@ c_ Solution:
         r.. count __ 3 a.. cur_sum __ 0
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]) __ T..

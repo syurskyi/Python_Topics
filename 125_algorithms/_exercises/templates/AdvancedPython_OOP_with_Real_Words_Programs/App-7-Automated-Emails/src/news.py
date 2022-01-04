@@ -40,6 +40,6 @@ c_ NewsFeed:
         r_ url
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     news_feed  NewsFeed(interest'nasa', from_date'2020-11-12', to_date'2020-11-13', language'en')
     print(news_feed.get())

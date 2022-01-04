@@ -63,5 +63,5 @@ c_ Solution:
         }[op](a, b)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().diffWaysToCompute("1+1") __ [2]

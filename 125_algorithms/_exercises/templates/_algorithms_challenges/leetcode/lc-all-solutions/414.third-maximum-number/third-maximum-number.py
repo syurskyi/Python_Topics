@@ -7,7 +7,7 @@ c_ Solution(object):
     first = second = third = float("-inf")
     ___ num __ nums:
       __ num __ [first, second, third]:
-        continue
+        _____
       __ num > first:
         third = second
         second = first

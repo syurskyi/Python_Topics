@@ -25,7 +25,7 @@ c_ Solution:
         ___ node __ queue:
             ___ _node __ node.neighbors:
                 __ _node __ degree:
-                    continue
+                    _____
                 degree[_node] = degree[node] + 1
                 __ _node __ t:
                     r.. degree[_node]

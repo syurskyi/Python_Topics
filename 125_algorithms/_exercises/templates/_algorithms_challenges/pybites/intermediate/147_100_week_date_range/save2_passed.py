@@ -14,4 +14,4 @@ ___ get_hundred_weekdays(start_date=TODAY):
               count=100,
               dtstart=start_date,
               byweekday=(MO, TU, WE, TH, FR)))
-    r.. [parser.parse(s..(d)).date() ___ d __ dates]
+    r.. [parser.p..(s..(d)).date() ___ d __ dates]

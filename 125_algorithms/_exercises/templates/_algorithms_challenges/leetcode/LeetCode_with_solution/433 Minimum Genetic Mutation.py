@@ -65,6 +65,6 @@ c_ Solution:
         r.. -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minMutation("AACCTTGG", "AATTCCGG", ["AATTCCGG","AACCTGGG","AACCCCGG","AACCTACC"]) __ -1
     ... Solution().minMutation("AACCGGTT", "AAACGGTA", ["AACCGGTA", "AACCGCTA", "AAACGGTA"]) __ 2

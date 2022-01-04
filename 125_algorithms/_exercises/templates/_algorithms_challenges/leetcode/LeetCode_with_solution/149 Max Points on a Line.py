@@ -77,13 +77,13 @@ c_ Solution:
             duplicate = 1 # point_i itself
             ___ j __ xrange(length):
                 __ i__j:
-                    continue
+                    _____
 
                 point1 = points[i]
                 point2 = points[j]
                 __ point1.x__point2.x a.. point1.y__point2.y:
                     duplicate += 1
-                    continue
+                    _____
                 __ point1.x__point2.x:
                     key = 1<<32
                 ____:

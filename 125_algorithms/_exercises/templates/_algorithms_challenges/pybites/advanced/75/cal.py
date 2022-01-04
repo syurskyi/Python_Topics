@@ -6,7 +6,7 @@ ___ get_weekdays(calendar_output):
     mapping    # dict
     ___ i,line __ e..(calendar_output.s...splitlines()):
         __ i __ 0:
-            continue
+            _____
         ____ i __ 1:
             days_length = l..(line)
             days = line.s..
@@ -24,7 +24,7 @@ ___ get_weekdays(calendar_output):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     april_1981 = """     April 1981
 Su Mo Tu We Th Fr Sa
           1  2  3  4

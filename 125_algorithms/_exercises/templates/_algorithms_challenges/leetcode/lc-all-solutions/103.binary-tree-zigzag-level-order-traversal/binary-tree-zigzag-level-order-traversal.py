@@ -21,7 +21,7 @@ c_ Solution(object):
       ___ k __ r..(0, l..(stack)):
         top = stack.popleft()
         __ top __ N..
-          continue
+          _____
         level.a..(top.val)
         stack.a..(top.left)
         stack.a..(top.right)

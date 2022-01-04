@@ -34,7 +34,7 @@ c_ Solution:
         cur_end = -float("inf")
         ___ i __ r..(n):
             __ pairs[i][0] <= cur_end:
-                continue
+                _____
 
             cur_end = pairs[i][1]
             ret += 1
@@ -70,7 +70,7 @@ c_ Solution2:
         F[i] = max(F[j] + 1 if predicate A[i] A[j])
         O(N^2)
         """
-        pairs.s..(key=l.... x: tuple(x))
+        pairs.s..(key=l.... x: t..(x))
         n = l..(pairs)
         F = [1 ___ _ __ r..(n)]
         ___ i __ r..(n):
@@ -81,5 +81,5 @@ c_ Solution2:
         r.. max(F)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findLongestChain([[1,2], [2,3], [3,4]]) __ 2

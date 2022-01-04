@@ -63,5 +63,5 @@ c_ Solution:
         cur_sum -= candidates[i]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().combinationSum2([2,5,2,1,2], 5) __ [[5], [1,2,2]]

@@ -19,7 +19,7 @@ c_ Solution(object):
         ___ i __ r..(m-1, -1, -1):
             ___ j __ r..(n-1, -1, -1):
                 __ i __ m-1 a.. j __ n-1:
-                    continue
+                    _____
                 __ i __ m-1:
                     right = tbl[i][j+1] - dungeon[i][j]
                     tbl[i][j] = max(1, right)

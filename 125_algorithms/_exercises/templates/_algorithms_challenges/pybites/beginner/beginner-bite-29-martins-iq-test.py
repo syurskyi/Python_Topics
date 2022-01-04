@@ -34,7 +34,7 @@ ___ get_index_different_char(chars):
         state = State.NON_ALPHANUMERIC
     ___ c __ chars[1:]:
         __ c __ (s__.ascii_letters o. s__.d..) a.. state __ State.ALPHANUMERIC:
-            continue
+            _____
         __ c __ (s__.ascii_letters o. s__.d..) a.. state __ State.NON_ALPHANUMERIC:
 
 

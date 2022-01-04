@@ -14,7 +14,7 @@ c_ Solution:
 
         ___ a __ r..(n - 2):
             __ a > 0 a.. nums[a] __ nums[a - 1]:
-                continue
+                _____
 
             b, c = a + 1, n - 1
 

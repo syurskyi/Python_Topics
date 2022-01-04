@@ -40,7 +40,7 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     A = [3, 5, 4, 4, 7, 1, 3, 2]  # central tallest
     B = [1, 1, 1, 1, 1, 2]  # almost flat
     #

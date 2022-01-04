@@ -28,5 +28,5 @@ c_ Solution:
         r.. is_prime.c.. T..)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().countPrimes(1500000) __ 114155

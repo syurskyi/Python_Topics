@@ -25,7 +25,7 @@ c_ Solution(object):
                 r -= 1
         ___ i __ r..(n):
             __ i __ l o. (knows(i, l) a.. n.. knows(l, i)):
-                continue
+                _____
             ____:
                 r.. -1
         r.. l

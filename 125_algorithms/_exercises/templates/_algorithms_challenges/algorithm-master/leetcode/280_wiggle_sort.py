@@ -9,8 +9,8 @@ c_ Solution:
 
         ___ i __ r..(1, l..(nums)):
             __ i & 1 __ 1 a.. nums[i] >= nums[i - 1]:
-                continue
+                _____
             __ i & 1 __ 0 a.. nums[i] <= nums[i - 1]:
-                continue
+                _____
 
             nums[i], nums[i - 1] = nums[i - 1], nums[i]

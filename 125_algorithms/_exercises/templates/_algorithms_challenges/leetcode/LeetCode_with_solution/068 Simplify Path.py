@@ -46,7 +46,7 @@ c_ Solution(object):
         r.. "".j..(path)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().simplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///") __ "/e/f/g"
     ... Solution().simplifyPath("/a/./b/../../c/") __ "/c"
     ... Solution().simplifyPath("/../") __ "/"

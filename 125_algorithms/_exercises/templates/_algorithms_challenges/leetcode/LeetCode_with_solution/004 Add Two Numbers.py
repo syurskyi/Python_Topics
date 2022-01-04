@@ -69,7 +69,7 @@ c_ Solution:
         r.. node1.val+node2.val
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     l1s = [ListNode(1)]
     l2s = [ListNode(9), ListNode(9)]
     ___ i __ r..(l..(l1s)-1):

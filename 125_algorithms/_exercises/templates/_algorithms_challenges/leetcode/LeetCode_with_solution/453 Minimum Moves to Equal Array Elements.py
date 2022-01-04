@@ -20,5 +20,5 @@ c_ Solution:
         r.. s..(map(l.... e: e - mini, nums))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minMoves([1, 2, 3]) __ 3

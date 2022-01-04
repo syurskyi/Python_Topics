@@ -24,7 +24,7 @@ c_ Solution(object):
     ___ i __ r..(r..(0, l..(grid))):
       ___ j __ r..(r..(0, l..(grid[0]))):
         __ grid[i][j] __ "W":
-          continue
+          _____
         dpRow[i + 1][j + 1] = max(dpRow[i + 1][j + 1], dpRow[i + 1][j + 2])
         dpCol[i + 1][j + 1] = max(dpCol[i + 1][j + 1], dpCol[i + 2][j + 1])
         __ grid[i][j] __ "0":

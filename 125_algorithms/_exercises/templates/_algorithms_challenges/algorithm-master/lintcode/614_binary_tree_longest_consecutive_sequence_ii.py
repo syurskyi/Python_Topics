@@ -39,7 +39,7 @@ c_ Solution:
             child = getattr(node, branch)
 
             __ n.. child:
-                continue
+                _____
 
             _size, _up, _down = divide_conquer(child)
 

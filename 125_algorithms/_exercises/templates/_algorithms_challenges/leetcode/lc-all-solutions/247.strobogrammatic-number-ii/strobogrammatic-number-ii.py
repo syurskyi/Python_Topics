@@ -18,7 +18,7 @@ c_ Solution(object):
 
       ___ c __ "01689":
         __ c __ "0" a.. l..(path) __ 0:
-          continue
+          _____
         path.a..(c)
         dfs(half, path, res, n)
         path.pop()

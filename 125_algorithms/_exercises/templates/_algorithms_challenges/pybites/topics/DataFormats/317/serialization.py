@@ -23,7 +23,7 @@ ___ download_pickle_file
     """download a pickle file we created with a
        list of namedtuples
     """
-    urlretrieve(f'{S3}/bite317.pkl', PICKLE_INFILE)
+    urlretrieve _*{S3}/bite317.pkl', PICKLE_INFILE)
 
 
 ___ deserialize(pkl_file: Path = PICKLE_INFILE) __ Sequence[NamedTuple]:

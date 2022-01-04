@@ -39,24 +39,24 @@ ___ format_entries(currency, locale, entries):
                 entry = entries[i]
                 __ min_entry_index < 0:
                     min_entry_index = i
-                    continue
+                    _____
                 min_entry = entries[min_entry_index]
                 __ entry.date < min_entry.date:
                     min_entry_index = i
-                    continue
+                    _____
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change < min_entry.change
                 ):
                     min_entry_index = i
-                    continue
+                    _____
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change __ min_entry.change a..
                     entry.description < min_entry.description
                 ):
                     min_entry_index = i
-                    continue
+                    _____
             entry = entries[min_entry_index]
             entries.pop(min_entry_index)
 
@@ -182,24 +182,24 @@ ___ format_entries(currency, locale, entries):
                 entry = entries[i]
                 __ min_entry_index < 0:
                     min_entry_index = i
-                    continue
+                    _____
                 min_entry = entries[min_entry_index]
                 __ entry.date < min_entry.date:
                     min_entry_index = i
-                    continue
+                    _____
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change < min_entry.change
                 ):
                     min_entry_index = i
-                    continue
+                    _____
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change __ min_entry.change a..
                     entry.description < min_entry.description
                 ):
                     min_entry_index = i
-                    continue
+                    _____
             entry = entries[min_entry_index]
             entries.pop(min_entry_index)
 

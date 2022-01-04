@@ -64,5 +64,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numberOfArithmeticSlices([2, 4, 6, 8, 10]) __ 7

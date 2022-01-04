@@ -21,7 +21,7 @@ c_ Solution(object):
             r..
         ___ i, num __ e..(nums):
             __ i > 0 a.. nums[i] __ nums[i-1]:
-                continue
+                _____
             curr.a..(num)
             dfs(nums[:i]+nums[i+1:], curr, res)
             curr.pop()

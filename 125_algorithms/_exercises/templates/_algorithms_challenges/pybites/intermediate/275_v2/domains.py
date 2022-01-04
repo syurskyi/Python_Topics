@@ -45,7 +45,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     print(get_common_domains())

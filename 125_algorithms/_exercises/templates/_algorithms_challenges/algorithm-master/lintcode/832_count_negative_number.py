@@ -21,7 +21,7 @@ c_ Solution:
                     right = mid
 
             __ g[i][left] >= 0:
-                continue
+                _____
 
             ans += left + 1 __ g[i][right] >= 0 ____ right + 1
 

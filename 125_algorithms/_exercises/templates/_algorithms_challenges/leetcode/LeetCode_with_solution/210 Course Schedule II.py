@@ -79,5 +79,5 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findOrder(2, [[0, 1], [1, 0]]) __ []

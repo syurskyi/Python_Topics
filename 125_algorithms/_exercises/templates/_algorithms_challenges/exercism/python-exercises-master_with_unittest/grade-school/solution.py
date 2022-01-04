@@ -13,5 +13,5 @@ c_ School(object):
         r.. db[level]
 
     ___ s..
-        r.. s..((grade, tuple(s..(students)))
+        r.. s..((grade, t..(s..(students)))
                       ___ grade, students __ db.i..

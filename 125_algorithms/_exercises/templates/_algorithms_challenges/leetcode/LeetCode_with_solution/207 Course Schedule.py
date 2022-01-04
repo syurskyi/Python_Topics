@@ -61,5 +61,5 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canFinish(2, [[1, 0], [0, 1]]) __ F..

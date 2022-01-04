@@ -6,7 +6,7 @@ c_ Solution(object):
       val = cur.next.val
       __ cur.val < val:
         cur = cur.next
-        continue
+        _____
       __ p.next.val > val:
         p = dummy
       w.... p.next.val < val:

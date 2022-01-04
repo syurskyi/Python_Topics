@@ -46,5 +46,5 @@ c_ Solution:
 
         r.. max_gap
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maximumGap([1, 1000]) __ 999

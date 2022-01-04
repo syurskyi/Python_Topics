@@ -42,7 +42,7 @@ c_ Solution:
                 break
             ___ _word __ get_next_word(word, next_words):
                 __ _word __ distance:
-                    continue
+                    _____
                 distance[_word] = distance[word] + 1
                 queue.a..(_word)
 
@@ -57,7 +57,7 @@ c_ Solution:
         ___ _word __ get_next_word(word, next_words):
             __ (_word n.. __ distance o.
                 distance[_word] != distance[word] - 1):
-                continue
+                _____
             path.a..(_word)
             dfs(_word, B, next_words, distance, ans, path)
             path.pop()
@@ -66,8 +66,8 @@ c_ Solution:
         ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:
-                continue
+                _____
             ___ _word __ next_words[i][key]:
                 __ _word __ word:
-                    continue
+                    _____
                 y.. _word

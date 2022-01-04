@@ -55,5 +55,5 @@ c_ Solution:
             cur.pop()
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().combinationSum3(3, 9) __ [[1, 2, 6], [1, 3, 5], [2, 3, 4]]

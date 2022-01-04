@@ -33,7 +33,7 @@ ___ convert_to_datetime(line):
             line_ts = d__.strptime(word, "%Y-%m-%dT%H:%M:%S")
             r.. line_ts
         except:
-            continue
+            _____
 
     r.. N..
 

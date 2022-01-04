@@ -126,7 +126,7 @@ c_ SolutionTLE:
         """
         ___ n __ nums:
             sums.a..(sums[-1] + n)
-        ret = dfs(tuple(nums), 0, l..(nums), m)
+        ret = dfs(t..(nums), 0, l..(nums), m)
         r.. ret
 
     @lru_cache(maxsize=N..)
@@ -147,6 +147,6 @@ c_ SolutionTLE:
         r.. mini
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().splitArray([1, 4, 4], 3) __ 4
     ... Solution().splitArray([7,2,5,10,8], 2) __ 18

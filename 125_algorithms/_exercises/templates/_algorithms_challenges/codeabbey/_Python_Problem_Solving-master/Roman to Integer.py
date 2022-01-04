@@ -10,11 +10,11 @@ c_ Solution:
                     __ s[i+1]__'V':
                         count += 4
                         i += 2
-                        continue
+                        _____
                     ____ s[i+1]__'X':
                         count += 9
                         i += 2
-                        continue
+                        _____
                 except:
                     p..
             __ s[i] __ 'X':
@@ -22,11 +22,11 @@ c_ Solution:
                     __ s[i+1]__'L':
                         count += 40
                         i += 2
-                        continue
+                        _____
                     ____ s[i+1]__'C':
                         count += 90
                         i += 2
-                        continue
+                        _____
                 except:
                     p..
             __ s[i] __ 'C':
@@ -34,11 +34,11 @@ c_ Solution:
                     __ s[i+1]__'D':
                         count += 400
                         i += 2
-                        continue
+                        _____
                     ____ s[i+1]__'M':
                         count += 900
                         i += 2
-                        continue
+                        _____
                 except:
                     p..
             __ s[i] __ rom_dic:

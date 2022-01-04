@@ -15,7 +15,7 @@ c_ Solution(object):
         res = ''
         ___ i __ r..(l..(arr)):
             __ n.. arr[i]:
-                continue
+                _____
             word = arr[i]
             __ word[0] n.. __ vowels:
                 word = word[1:]+word[0]

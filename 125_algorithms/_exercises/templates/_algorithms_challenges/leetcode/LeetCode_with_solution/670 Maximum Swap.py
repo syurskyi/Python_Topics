@@ -26,7 +26,7 @@ c_ Solution:
         n = l..(nums)
         ___ i __ r..(n-1, -1, -1):
             __ stk a.. stk[-1][1] >= nums[i]:  # only keep the rightmost duplicate
-                continue
+                _____
             stk.a..((i, nums[i]))
 
         ___ i __ r..(n):
@@ -40,6 +40,6 @@ c_ Solution:
         r.. i..("".j..(nums))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maximumSwap(2736) __ 7236
     ... Solution().maximumSwap(9973) __ 9973

@@ -55,7 +55,7 @@ c_ Solution:
         ___ nbr __ graph[cur]:
             __ visit[nbr] __ 2:
                 __ nbr __ acyclic:
-                    continue
+                    _____
                 ____:
                     break
             __ visit[nbr] __ 1:
@@ -71,5 +71,5 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().eventualSafeNodes([[1,2],[2,3],[5],[0],[5],[],[]]) __ [2,4,5,6]

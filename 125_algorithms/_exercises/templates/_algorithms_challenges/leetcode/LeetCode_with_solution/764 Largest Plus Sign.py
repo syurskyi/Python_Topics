@@ -101,5 +101,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().orderOfLargestPlusSign(5, [[4, 2]]) __ 2

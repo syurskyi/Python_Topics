@@ -46,5 +46,5 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().checkSubarraySum([23,2,4,6,7], 6) __ T..

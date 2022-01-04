@@ -35,6 +35,6 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().convertToBase7(100) __ "202"
     ... Solution().convertToBase7(-7) __ "-10"

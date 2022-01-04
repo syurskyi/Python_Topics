@@ -16,7 +16,7 @@ ___ get_sentences(text):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     TEXT_WITH_DOTS = """
 We are looking forward attending the next Pycon in the U.S.A.

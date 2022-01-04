@@ -34,7 +34,7 @@ ___ rename_keys(data: Dict[Any, Any]) __ Dict[Any, Any]:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
 

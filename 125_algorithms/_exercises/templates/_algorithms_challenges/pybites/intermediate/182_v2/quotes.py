@@ -39,7 +39,7 @@ ___ extract_quotes(html: s.. = HTML) __ d..:
         __ m..:
             a = m...group(1)
         ____:
-            continue
+            _____
         author = __.s..(r'-\s?(.+)$',quote_text).group(1)
 
 
@@ -52,6 +52,6 @@ ___ extract_quotes(html: s.. = HTML) __ d..:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     extract_quotes()
 

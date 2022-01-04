@@ -16,7 +16,7 @@ ___ videos
 
 ___ test_load_pycon_data(videos):
     ... l..(videos) __ 147
-    ... isi..(videos[0], tuple)
+    ... isi..(videos[0], t..)
 
 
 ___ test_get_most_popular_talks_by_views(videos):

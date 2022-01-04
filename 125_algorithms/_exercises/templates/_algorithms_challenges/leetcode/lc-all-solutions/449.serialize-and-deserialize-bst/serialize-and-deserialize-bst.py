@@ -17,7 +17,7 @@ c_ Codec:
     w.... stack:
       pc, node = stack.pop()
       __ n.. node:
-        continue
+        _____
       __ pc __ 0:
         ans.a..(s..(node.val))
       ____:

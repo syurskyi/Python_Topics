@@ -32,6 +32,6 @@ ___ group_names_by_country(data: s.. = data) __ defaultdict:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     group_names_by_country()

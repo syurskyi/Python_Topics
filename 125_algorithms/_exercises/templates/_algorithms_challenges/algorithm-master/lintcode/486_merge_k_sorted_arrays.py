@@ -14,7 +14,7 @@ c_ Solution:
         heap    # list
         ___ i __ r..(l..(G)):
             __ n.. G[i]:
-                continue
+                _____
 
             heappush(heap, (G[i][0], i, 0))
 

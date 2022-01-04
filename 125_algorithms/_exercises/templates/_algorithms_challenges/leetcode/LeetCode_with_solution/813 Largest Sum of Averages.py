@@ -95,5 +95,5 @@ c_ Solution:
         r.. F[i, k]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().largestSumOfAverages([9,1,2,3,9], 3) __ 20

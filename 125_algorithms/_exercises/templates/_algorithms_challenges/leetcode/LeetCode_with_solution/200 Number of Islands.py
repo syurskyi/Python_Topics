@@ -63,5 +63,5 @@ c_ Solution:
                 dfs(grid, I, J, visited)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numIslands(["1", "1"]) __ 1

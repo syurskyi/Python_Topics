@@ -188,7 +188,7 @@ c_ LightsGrid:
 
 
 # Main function that can be used to test the Class methods
-__ __name__ __ "__main__":
+__ _______ __ _______
     instructions = """create grid of length 100
     turn on 46,55 through 56,90
     turn off 37,3 through 42,83

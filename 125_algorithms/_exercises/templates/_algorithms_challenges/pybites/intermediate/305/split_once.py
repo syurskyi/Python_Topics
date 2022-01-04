@@ -21,7 +21,7 @@ ___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     print(split_once('abc: def: ijk, lmno: pqr - stu, wxy', separators=',-:'))
 

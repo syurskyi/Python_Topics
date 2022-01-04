@@ -43,6 +43,6 @@ c_ Solution(object):
         r.. mini
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     num = [7, 1, 2, 2, 3, 4, 5, 6]
     ... Solution().findMin(num) __ 1

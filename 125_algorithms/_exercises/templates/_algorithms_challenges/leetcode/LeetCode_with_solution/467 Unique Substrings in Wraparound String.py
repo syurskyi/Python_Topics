@@ -86,7 +86,7 @@ c_ Solution:
         r.. s..(map(l.... x: (l..(x) + 1) * l..(x) // 2, ret))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findSubstringInWraproundString("a") __ 1
     ... Solution().findSubstringInWraproundString("cac") __ 2
     ... Solution().findSubstringInWraproundString("zab") __ 6

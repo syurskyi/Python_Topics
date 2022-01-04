@@ -15,10 +15,10 @@ c_ Solution(object):
         res    # list
         ___ i __ r..(n-3):
             __ i > 0 a.. nums[i] __ nums[i-1]:
-                continue
+                _____
             ___ j __ r..(i+1, n-2):
                 __ j > i+1 a.. nums[j] __ nums[j-1]:
-                    continue
+                    _____
                 k, l = j+1, n-1
                 w.... k < l:
                     tmp = nums[i]+nums[j]+nums[k]+nums[l]

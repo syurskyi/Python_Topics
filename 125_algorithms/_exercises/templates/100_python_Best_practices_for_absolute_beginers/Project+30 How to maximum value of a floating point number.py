@@ -10,7 +10,7 @@ maxi  -1
 
 ___ i __ r..(l..(y)):
     __ y[i] __ '.':
-        continue
+        _____
     ____ maxi < i..(y[i]):
         maxi  i..(y[i])
 

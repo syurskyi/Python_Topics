@@ -17,14 +17,14 @@ ___ calc_median_from_dict(d: d..) __ float:
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts
     values = [item[1] ___ item __ items]
     length = s..(d.values())
-    cumsums = tuple(accumulate(values))
+    cumsums = t..(accumulate(values))
 
     # determine intervals: gotta be a way to do this with itertools
     intervals    # list
     lower = 0
     # determine intervals
     ___ k __ cumsums:
-        print(f'{k=}')
+        print _*{k=}')
         intervals.a..([lower + 1, k])
         lower = k
     cums = [(interval, item) ___ interval, item __ z..(intervals, items)]

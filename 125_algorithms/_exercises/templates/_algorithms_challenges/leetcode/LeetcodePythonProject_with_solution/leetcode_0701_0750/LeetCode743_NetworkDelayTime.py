@@ -26,12 +26,12 @@ c_ Solution(object):
         w.... heap:
             d, node = heapq.heappop(heap)
             __ node __ distanceMap a.. distanceMap[node] < d:
-                continue
+                _____
             __ node __ path:
                 ___ node0 __ path[node]:
                     absDist = d+path[node][node0]
                     __ node0 __ distanceMap a.. distanceMap[node0] <= absDist:
-                        continue
+                        _____
                     distanceMap[node0] = absDist
                     heapq.heappush(heap, [absDist, node0])
         ___ val __ distanceMap.v..

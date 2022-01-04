@@ -74,7 +74,7 @@ ___ diehard_pybites(files_ N..
     ___ file __ files:
         challenge,name = file.s..('/')
         __ name __ IGNORE:
-            continue
+            _____
         users[name] += 1
         popular_challenges[challenge] += 1
     

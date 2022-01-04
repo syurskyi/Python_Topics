@@ -27,6 +27,6 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     preorder = [3, 5, 2, 1, 4, 7, 6, 9, 8, 10]
     ... Solution().verifyPreorder(preorder) __ F..

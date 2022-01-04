@@ -86,6 +86,6 @@ c_ Solution(object):
         r.. ret[::-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().countSmaller([5, 2, 6, 1]) __ [2, 1, 1, 0]
     ... Solution().countSmaller([-1, -1]) __ [0, 0]

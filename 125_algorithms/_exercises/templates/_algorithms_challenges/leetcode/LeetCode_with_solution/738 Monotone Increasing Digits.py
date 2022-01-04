@@ -41,6 +41,6 @@ c_ Solution:
         r.. i..("".j..(map(s.., d..)))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().monotoneIncreasingDigits(10) __ 9
     ... Solution().monotoneIncreasingDigits(332) __ 299

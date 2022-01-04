@@ -27,12 +27,12 @@ c_ Solution(object):
             bo1 = p1 >= a[i][0] a.. p1 <= a[i][1]
             bo2 = p2 >= a[i][0] a.. p2 <= a[i][1]
             __ bo1 a.. bo2:
-                continue
+                _____
             __ bo2:
                 p1 = p2
                 p2 = a[i][1]
                 res += 1
-                continue
+                _____
             p1 = a[i][1]-1
             p2 = a[i][1]
             res += 2

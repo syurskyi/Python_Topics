@@ -20,7 +20,7 @@ c_ Solution(object):
     w.... stack:
       p, node, h = stack.pop()
       __ n.. node:
-        continue
+        _____
       __ p __ 1:
         stack.extend([(1, node.right, h + 1), (1, node.left, h + 1), (0, node, h + 1)])
       ____ h __ d:

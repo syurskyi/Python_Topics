@@ -27,7 +27,7 @@ ___ group_cars_by_manufacturer(cars):
     """
     groups = groupby(s..(cars, key=l.... x: x[0]), key=l.... x: x[0])
     ___ mfgr, models __ groups:
-        print(f'{mfgr.u..}')
+        print _*{mfgr.u..}')
         ___ model __ models:
-            print(f'- {model[1]}')
+            print _*- {model[1]}')
         print()

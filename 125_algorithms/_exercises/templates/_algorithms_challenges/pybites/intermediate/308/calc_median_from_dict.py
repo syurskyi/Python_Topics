@@ -27,6 +27,6 @@ ___ calc_median_from_dict(d: d..) __ float:
         r.. (frequency[mid_1] + frequency[mid_2]) / 2
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(calc_median_from_dict({1.5: 2, 2.5: 2}))
     print(calc_median_from_dict({1: 1_000_000_000_000_000, 2: 1, 3: 1_000_000_000_000_000}))

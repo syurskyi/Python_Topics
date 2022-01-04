@@ -19,7 +19,7 @@ ___ retry(func):
                 func $ $$
             except Exception __ exc:
                 print(exc)
-                continue
+                _____
             ____:
                 r..
         r.. MaxRetriesException()

@@ -13,7 +13,7 @@ ___ my_print_colors
 
         __ inp n.. __ VALID_COLORS:
             print("Not a valid color")
-            continue
+            _____
     # this else is useless
         ____:
             print(inp)
@@ -33,7 +33,7 @@ ___ print_colors
 
         __ color n.. __ VALID_COLORS:
             print('Not a valid color')
-            continue
+            _____
 
         print(color)
 

@@ -10,7 +10,7 @@ c_ Solution(object):
     ___ s __ strings:
       __ l..(s) __ 1:
         single.a..(s)
-        continue
+        _____
       hashcodeArray    # list
       pre = ord(s[0]) - ord("a")
       ___ i __ r..(1, l..(s)):

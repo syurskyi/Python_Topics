@@ -16,7 +16,7 @@ c_ Solution(object):
         ___ i __ r..(0, l..(src)):
           newWord = src[:i] + c + src[i + 1:]
           __ newWord __ src:
-            continue
+            _____
           __ newWord __ wordList o. newWord __ dest:
             y.. newWord
 

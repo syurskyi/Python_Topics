@@ -16,7 +16,7 @@ cases_best_by_wine = [
 @p__.mark.parametrize("case", cases_best_by_wine)
 ___ test_best_match_per_wine_type(case):
     wine_type, *result = case
-    ... best_match_per_wine(wine_type) __ tuple(result)
+    ... best_match_per_wine(wine_type) __ t..(result)
 
 
 ___ test_invalid_wine_type

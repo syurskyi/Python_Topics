@@ -109,7 +109,7 @@ c_ Solution2:
 
         ___ nxt __ simils[start]:
             __ nxt __ path:
-                continue
+                _____
 
             res = dfs(nxt, end, simils, path)
             __ res:

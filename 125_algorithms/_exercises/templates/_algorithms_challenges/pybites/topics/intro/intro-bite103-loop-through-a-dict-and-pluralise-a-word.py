@@ -33,6 +33,6 @@ ___ print_game_stats(games_won=games_won):
        'game' based on number"""
     ___ name, num_games __ games_won.i..:
         games = "game" __ num_games __ 1 ____ "games"
-        print(f'{name} has won {num_games} {games}')
+        print _*{name} has won {num_games} {games}')
 
 print_game_stats()

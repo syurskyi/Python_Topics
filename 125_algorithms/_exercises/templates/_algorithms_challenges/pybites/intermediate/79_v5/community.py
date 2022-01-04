@@ -22,4 +22,4 @@ ___ create_user_bar_chart(content: s..):
         counter[row['tz']] += 1
     l = s..(counter)
     ___ timezone __ l:
-        print(f'{timezone:25} | {"+" * counter[timezone]}')
+        print _*{timezone:25} | {"+" * counter[timezone]}')

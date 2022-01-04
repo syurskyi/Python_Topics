@@ -21,7 +21,7 @@ ___ contains(l1, l2):
         r.. F..
     ___ i __ r..(l..(l1) - l..(l2) + 1):
         __ l1[i] != l2[0]:
-            continue
+            _____
         ___ j __ r..(l..(l2)):
             __ l1[i + j] != l2[j]:
                 break

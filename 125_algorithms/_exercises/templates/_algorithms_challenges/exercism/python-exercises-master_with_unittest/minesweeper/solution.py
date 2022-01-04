@@ -6,12 +6,12 @@ ___ board(inp):
     ___ i1 __ r..(collen):
         ___ i2 __ r..(rowlen):
             __ b[i1][i2] != ' ':
-                continue
+                _____
             cnt = inp[i1 - 1][i2 - 1:i2 + 2].c.. '*') + \
                 inp[i1][i2 - 1:i2 + 2].c.. '*') + \
                 inp[i1 + 1][i2 - 1:i2 + 2].c.. '*')
             __ cnt __ 0:
-                continue
+                _____
             b[i1][i2] = s..(cnt)
     r.. ["".j..(r) ___ r __ b]
 

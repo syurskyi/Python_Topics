@@ -34,7 +34,7 @@ ___ group_cars_by_manufacturer(cars):
             print(f"- {car}")
         print()
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     group_cars_by_manufacturer(cars)

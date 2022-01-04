@@ -31,7 +31,7 @@ c_ Solution:
                 """
                 __ s[i - 1] __ t[j - 1]:
                     dp[i][j] = dp[i - 1][j - 1]
-                    continue
+                    _____
 
                 """
                 case 2: remove last char in A

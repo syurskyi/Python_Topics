@@ -16,7 +16,7 @@ c_ Solution(object):
     w.... stack:
       cmd, p = stack.pop()
       __ n.. p:
-        continue
+        _____
       __ cmd __ 0:
         k -= 1
         __ k __ 0:

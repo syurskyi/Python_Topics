@@ -54,5 +54,5 @@ c_ Solution:
         r.. l..(path)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().arrayNesting([5,4,0,3,1,6,2]) __ 4

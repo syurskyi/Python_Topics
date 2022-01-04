@@ -19,7 +19,7 @@ ___ get_income_distribution(___=countries):
       - keys = incomes (wb:incomeLevel)
       - values = list of country names (wb:name)
     """
-    tree = ET.parse(___)
+    tree = ET.p..(___)
     root = tree.getroot()
     namespaces = {'wb': 'http://www.worldbank.org'}
 

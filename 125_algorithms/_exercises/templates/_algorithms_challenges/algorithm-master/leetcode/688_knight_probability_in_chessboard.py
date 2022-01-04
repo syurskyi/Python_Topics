@@ -38,7 +38,7 @@ c_ Solution:
                         _y = y + dy
 
                         __ n.. (0 <= _x < n a.. 0 <= _y < n):
-                            continue
+                            _____
 
                         nxt[_x, _y] += dp[x, y] / 8.0
 
@@ -84,7 +84,7 @@ c_ Solution:
                     _y = y + dy
 
                     __ n.. (0 <= _x < n a.. 0 <= _y < n):
-                        continue
+                        _____
 
                     __ k __ 0:
                         valid += 1

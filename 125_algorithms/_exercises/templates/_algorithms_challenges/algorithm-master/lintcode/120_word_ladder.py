@@ -42,7 +42,7 @@ c_ Solution:
         ___ word __ queue:
             ___ _word __ get_next_word(word, next_words):
                 __ _word __ distance:
-                    continue
+                    _____
                 distance[_word] = distance[word] + 1
                 __ _word __ s:
                     r.. distance[_word]
@@ -54,8 +54,8 @@ c_ Solution:
         ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:
-                continue
+                _____
             ___ _word __ next_words[i][key]:
                 __ _word __ word:
-                    continue
+                    _____
                 y.. _word

@@ -25,7 +25,7 @@ ___ movies
         ___ i, line __ e..(f.readlines(), 1):
             movie_json = TMP / f'{i}.json'
             w__ open(movie_json, 'w') __ f:
-                f.write(f'{line}\n')
+                f.write _*{line}\n')
             files.a..(movie_json)
 
     y.. get_movie_data(files)

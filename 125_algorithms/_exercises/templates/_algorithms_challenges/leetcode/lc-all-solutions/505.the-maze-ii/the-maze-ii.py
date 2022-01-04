@@ -20,13 +20,13 @@ c_ Solution(object):
           dist += 1
         y.. (i, j), dist
 
-    heap = [(0, tuple(ball))]
+    heap = [(0, t..(ball))]
     visited = set()
-    hole = tuple(hole)
+    hole = t..(hole)
     w.... heap:
       dist, curr = heapq.heappop(heap)
       __ curr __ visited:
-        continue
+        _____
       visited |= {curr}
       __ curr __ hole:
         r.. dist

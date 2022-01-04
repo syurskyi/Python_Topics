@@ -63,5 +63,5 @@ c_ Solution:
         r.. ret[::-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().topKFrequent(["i", "love", "leetcode", "i", "love", "coding"], 2)

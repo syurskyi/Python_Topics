@@ -75,5 +75,5 @@ c_ Solution(object):
         r.. h
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().hIndex([3, 0, 6, 1, 5]) __ 3

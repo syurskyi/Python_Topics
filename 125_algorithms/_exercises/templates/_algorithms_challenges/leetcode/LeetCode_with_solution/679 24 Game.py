@@ -26,7 +26,7 @@ c_ Solution:
         r.. dfs(nums, {})
 
     ___ dfs(self, A, cache):
-        __ tuple(A) n.. __ cache:
+        __ t..(A) n.. __ cache:
             n = l..(A)
             __ n __ 1:
                 r.. abs(A[0] - 24) < 0.001
@@ -40,14 +40,14 @@ c_ Solution:
                         A_new = A[:j] + A[j+1:i] + A[i+1:] + [c]
                         A_new.s..()
                         __ dfs(A_new, cache):
-                            cache[tuple(A)] = T..
-                            r.. cache[tuple(A)]
+                            cache[t..(A)] = T..
+                            r.. cache[t..(A)]
 
-            cache[tuple(A)] = F..
+            cache[t..(A)] = F..
 
-        r.. cache[tuple(A)]
+        r.. cache[t..(A)]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().judgePoint24([4, 1, 8, 7]) __ T..
     ... Solution().judgePoint24([1, 2, 1, 2]) __ F..

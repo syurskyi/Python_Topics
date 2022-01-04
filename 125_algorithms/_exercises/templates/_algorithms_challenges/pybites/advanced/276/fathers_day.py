@@ -5,7 +5,7 @@ _______ __
 _______ d__
 
 ____ c.. _______ defaultdict
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 # get the data
 TMP = Path(os.getenv("TMP", "/tmp"))
@@ -27,7 +27,7 @@ ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days
         ___ line __ f:
             line = line.s..
             __ n.. line o. line.startswith('#'):
-                continue
+                _____
             ____ line.startswith('*'):
 
                 line = __.sub(r'\band\b','',line)
@@ -49,7 +49,7 @@ ___ _parse_recurring_father_days(days_to_countries,filename=fathers_days_recurri
         ___ line __ f:
             line = line.s..
             __ n.. line o. line.startswith('#'):
-                continue
+                _____
             __ line.startswith('*'):
                 date = line[2:]
             ____:
@@ -103,7 +103,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
 
     ___ i,date __ e..(dates):
-        dates[i] = parse(date,default=d__.d__(2020,1,1))
+        dates[i] = p..(date,default=d__.d__(2020,1,1))
         #days_to_countries[date].sort()
 
 
@@ -120,7 +120,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
         print(date)
 
         ___ country __ countries:
-            print(f'- {country}')
+            print _*- {country}')
 
         print()
 
@@ -129,6 +129,6 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     generate_father_day_planning()

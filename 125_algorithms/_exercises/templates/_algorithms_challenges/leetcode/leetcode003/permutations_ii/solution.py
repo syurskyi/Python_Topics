@@ -23,7 +23,7 @@ c_ Solution(object):
             res    # list
             ___ i, c __ e..(nums):
                 __ c __ d:
-                    continue
+                    _____
                 ____:
                     d[c] = T..
                 rest_perms = permuteUnique(nums[:i] + nums[i + 1:])

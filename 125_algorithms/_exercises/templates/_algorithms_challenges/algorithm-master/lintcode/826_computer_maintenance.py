@@ -20,7 +20,7 @@ c_ Solution:
 
             ___ j __ r..(n):
                 __ G[i][j] __ 0:
-                    continue
+                    _____
                 left = max(left, n - 1 - j)
                 right = max(right, j)
 

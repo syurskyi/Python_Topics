@@ -46,7 +46,7 @@ ___ _str_table_lookup(str_table):
     lookup    # dict
     ___ i __ r..(l..(str_table_split)):
         __ i __ [0, 1]:
-            continue
+            _____
         row = str_table_split[i].s..("\t")
         lookup[row[0].s..] = row[-1]
     r.. lookup

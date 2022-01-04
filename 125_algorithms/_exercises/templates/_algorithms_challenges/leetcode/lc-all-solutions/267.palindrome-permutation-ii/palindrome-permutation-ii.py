@@ -15,7 +15,7 @@ c_ Solution(object):
 
       ___ i __ r..(l..(s)):
         __ i > 0 a.. s[i] __ s[i - 1] a.. i - 1 n.. __ visited o. i __ visited:
-          continue
+          _____
         visited |= {i}
         path.a..(s[i])
         helper(s, path, ans, visited)

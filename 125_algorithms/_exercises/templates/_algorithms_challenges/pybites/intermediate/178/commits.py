@@ -3,7 +3,7 @@ _______ os
 _______ __
 ____ urllib.request _______ urlretrieve
 
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 commits = os.path.j..(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
@@ -34,13 +34,13 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     w__ open(commit_log,'r') __ f:
         ___ line __ f:
             date_section, change_section = line.s..('|')
-            date = parse(date_section,fuzzy=T..)
+            date = p..(date_section,fuzzy=T..)
             
             __ year:
                 __ date.year < year:
                     break
                 __ date.year > year:
-                    continue
+                    _____
 
             numbers = __.f..(r'(\d+) (?:insertions|deletions)',change_section)
 
@@ -57,7 +57,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
 
     r.. values[-1][0],values[0][0]
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     get_min_max_amount_of_commits()
 
 

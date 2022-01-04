@@ -58,7 +58,7 @@ c_ Solution:
             r.. find_kth(B, A, k)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findMedianSortedArrays([1, 2], [1, 2, 3]) __ 2
     ... Solution().findMedianSortedArrays([1, 2], [3]) __ 2
     ... Solution().findMedianSortedArrays([1], [2, 3]) __ 2

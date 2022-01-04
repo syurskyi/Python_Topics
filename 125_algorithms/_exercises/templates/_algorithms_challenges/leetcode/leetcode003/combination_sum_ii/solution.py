@@ -19,7 +19,7 @@ c_ Solution:
                 __ i __ 0:
                     prev = c
                 ____ prev __ c:
-                    continue
+                    _____
                 ____:
                     prev = c
                 cand.a..(c)

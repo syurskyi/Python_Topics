@@ -5,7 +5,7 @@ w.... n.. solved:
     __ count __ 0:
         res = i..(cal[0])
         count = count + 1
-        continue
+        _____
     __ cal[0] __ '+':
         res += i..(cal[1])
     ____ cal[0] __ '*':

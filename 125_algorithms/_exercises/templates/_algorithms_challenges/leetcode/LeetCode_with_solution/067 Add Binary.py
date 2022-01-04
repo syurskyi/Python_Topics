@@ -29,10 +29,10 @@ c_ Solution:
         # b as the base number
         ___ i __ xrange(l..(a)):
             __ a[i]__"0":  # 0
-                continue
+                _____
             ____ b[i]__"0":  # 0+1
                 b[i] = "1"
-                continue
+                _____
             ____:  # 1+1
                 b[i] = "0"
 

@@ -23,7 +23,7 @@ c_ Solution:
                     right -= 1
                 w.... left < right a.. nums[left] __ nums[left - 1]:
                     left -= 1
-                continue
+                _____
 
             __ _sum > target:
                 right -= 1

@@ -84,6 +84,6 @@ c_ Solution:
         r.. 1-F[-1][-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().calculateMinimumHP([[-3, 5]]) __ 4
     ... Solution().calculateMinimumHP([[2, 1], [1, -1]]) __ 1

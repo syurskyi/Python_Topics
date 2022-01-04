@@ -35,7 +35,7 @@ ___ _get_permutations_draw(draw):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     DRAW = l..('GARYTEV')
 

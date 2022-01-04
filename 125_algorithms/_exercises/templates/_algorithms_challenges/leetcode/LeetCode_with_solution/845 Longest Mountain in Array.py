@@ -109,6 +109,6 @@ c_ Solution:
         r.. ret __ ret >= 3 ____ 0
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().longestMountain([2,1,4,7,3,2,5]) __ 5
     ... Solution().longestMountain([9,8,7,6,5,4,3,2,1,0]) __ 0

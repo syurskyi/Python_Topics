@@ -92,6 +92,6 @@ c_ Solution:
         r.. i..(stk[-1])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().calculate(" 2-1 + 2 ") __ 3
     ... Solution().calculate("(1+(4+5+2)-3)+(6+8)") __ 23

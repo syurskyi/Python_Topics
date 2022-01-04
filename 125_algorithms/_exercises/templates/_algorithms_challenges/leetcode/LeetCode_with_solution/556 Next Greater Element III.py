@@ -86,5 +86,5 @@ c_ Solution:
         r.. -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().nextGreaterElement(12) __ 21

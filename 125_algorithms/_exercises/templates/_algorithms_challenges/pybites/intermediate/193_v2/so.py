@@ -42,7 +42,7 @@ ___ top_python_questions(url=cached_so_url):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     print(top_python_questions())
 

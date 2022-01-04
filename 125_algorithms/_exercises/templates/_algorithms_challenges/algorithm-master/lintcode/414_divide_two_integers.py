@@ -26,7 +26,7 @@ c_ Solution:
             where _a' = _a - _b * ci, i' = i - 1
             """
             __ (_a >> i) < _b:
-                continue
+                _____
             ans += 1 << i
             _a -= _b << i
 

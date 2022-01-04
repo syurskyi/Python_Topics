@@ -83,5 +83,5 @@ c_ Solution:
         r.. "".j..(ret)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().pushDominoes(".L.R...LR..L..") __ "LL.RR.LLRRLL.."

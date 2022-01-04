@@ -17,7 +17,7 @@ c_ Solution(object):
             r.. F..
         ___ p, s0 __ z..(pattern, arr):
             __ p __ hashmap a.. hashmap[p] __ s0:
-                continue
+                _____
             ____ p n.. __ hashmap a.. s0 n.. __ hashset:
                 hashset.add(s0)
                 hashmap[p] = s0

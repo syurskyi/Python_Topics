@@ -36,13 +36,13 @@ ___ wc(file_):
         ___ c __ line:
             __ c != ' ' a.. c != '\n' a.. c != '\t':
                 within_word = T..
-                continue
+                _____
             __ within_word __ T.. a.. (c __ ' ' o. c __ '\t' o. c __ '\n'):
                 cnt_words += 1
                 within_word = F..
     fo.close()
 
-    print(f'{cnt_line} {cnt_words} {cnt_chars} {filename}')
+    print _*{cnt_line} {cnt_words} {cnt_chars} {filename}')
 
 
 wc('beginner-bite-96-test-file.txt')

@@ -49,7 +49,7 @@ c_ Solution:
 
         ___ c __ nexts[a]:
             __ c __ visited o. (a, c) n.. __ evals:
-                continue
+                _____
 
             res = dfs(c, b, val * evals[a, c], nexts, evals, visited)
 

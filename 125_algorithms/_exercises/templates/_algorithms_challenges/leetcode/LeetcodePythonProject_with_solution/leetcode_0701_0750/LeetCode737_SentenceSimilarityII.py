@@ -23,7 +23,7 @@ c_ Solution(object):
             pairInfo[p[1]].add(p[0])
         ___ w1, w2 __ z..(words1, words2):
             __ w1 __ w2:
-                continue
+                _____
             __ w1 n.. __ pairInfo:
                 r.. F..
             __ n.. dfs(w1, w2, pairInfo, set()):
@@ -68,7 +68,7 @@ c_ Solution(object):
             roots[root0] = root1
         ___ w1, w2 __ z..(words1, words2):
             __ w1 __ w2:
-                continue
+                _____
             ____ w1 n.. __ hashmap o. w2 n.. __ hashmap:
                 r.. F..
             ____:

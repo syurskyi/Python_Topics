@@ -21,7 +21,7 @@ ___ split_words_and_quoted_text(text):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     text = 'Should give "3 words only"'

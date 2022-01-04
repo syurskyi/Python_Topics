@@ -55,5 +55,5 @@ c_ Solution(object):
         r.. max_sub_array
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxProfit([3, 2, 1, 4, 5, 6, 2]) __ 5

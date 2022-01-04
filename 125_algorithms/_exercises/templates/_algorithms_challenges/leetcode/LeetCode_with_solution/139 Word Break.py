@@ -33,7 +33,7 @@ c_ Solution:
                     __ wordBreak_TLE(s[i+1:], d..):
                         r.. T..
                     ____:
-                        continue
+                        _____
                 except IndexError:
                     r.. T..
 
@@ -77,13 +77,13 @@ c_ Solution:
                     try:
                         # trivial
                         __ dp[i+l..(word)]__True:
-                            continue
+                            _____
 
                         # main
                         __ s[i:i+l..(word)]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
                             dp[i+l..(word)] = T..  # record the checking
                     except IndexError:
-                        continue
+                        _____
 
         r.. dp[-1]
 

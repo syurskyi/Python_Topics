@@ -11,7 +11,7 @@ ___ filter_names(names):
         __ n[0] __ QUIT_CHAR:
             break
         __ l..(set(n).intersection(set(s__.d..))) > 0:
-            continue
+            _____
         __ n[0] != IGNORE_CHAR:
             result.a..(n)
         __ l..(result) __ MAX_NAMES:

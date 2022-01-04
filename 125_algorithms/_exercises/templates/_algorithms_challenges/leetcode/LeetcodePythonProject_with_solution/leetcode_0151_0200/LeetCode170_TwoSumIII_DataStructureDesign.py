@@ -31,6 +31,6 @@ c_ TwoSum(object):
             target = value-num
             __ target __ elements:
                 __ target __ num a.. elements[target]<2:
-                    continue
+                    _____
                 r.. T..
         r.. F..

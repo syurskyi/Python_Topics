@@ -58,5 +58,5 @@ c_ Solution:
         r.. A
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().sortArrayByParityII([4,1,1,0,1,0]) __ [4,1,0,1,0,1]

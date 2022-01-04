@@ -90,5 +90,5 @@ c_ Solution:
         r..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().brokenCalc(2, 3) __ 2

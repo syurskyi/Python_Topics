@@ -80,6 +80,6 @@ c_ Solution:
         r.. s..(map(l.... x: abs(x - avg), nums))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minMoves2([1,2,3]) __ 2
     ... Solution().minMoves2([1,0,0,8,6]) __ 14

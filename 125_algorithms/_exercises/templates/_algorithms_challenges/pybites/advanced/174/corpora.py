@@ -106,5 +106,5 @@ c_ Corpora:
         :return: None
         """
         ___ m __ metrics:
-            print(f'{m[0]:>10} {tag * m[1]}')
+            print _*{m[0]:>10} {tag * m[1]}')
         r.. N..

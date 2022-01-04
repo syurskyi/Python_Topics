@@ -25,13 +25,13 @@ c_ Solution(object):
             break
         y.. (i, j), mark, dist
 
-    heap = [(0, "", tuple(ball))]
+    heap = [(0, "", t..(ball))]
     visited = set()
-    hole = tuple(hole)
+    hole = t..(hole)
     w.... heap:
       dist, word, curr = heapq.heappop(heap)
       __ curr __ visited:
-        continue
+        _____
       visited |= {curr}
       __ curr __ hole:
         r.. word

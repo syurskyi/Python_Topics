@@ -25,7 +25,7 @@ c_ Solution:
         ___ node __ queue:
             __ n.. node:
                 vals.a..(EMPTY)
-                continue
+                _____
 
             vals.a..(s..(node.val))
             queue.a..(node.left)
@@ -63,7 +63,7 @@ c_ Solution:
                 __ i >= n:
                     break
                 __ vals[i] __ EMPTY:
-                    continue
+                    _____
 
                 setattr(node, branch, TreeNode(i..(vals[i])))
                 queue.a..(getattr(node, branch))

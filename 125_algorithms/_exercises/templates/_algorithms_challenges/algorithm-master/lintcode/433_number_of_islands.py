@@ -35,6 +35,6 @@ c_ Solution:
                 0 <= _y < n a..
                 grid[_x][_y] __ 1
             ):
-                continue
+                _____
 
             dfs(grid, _x, _y)

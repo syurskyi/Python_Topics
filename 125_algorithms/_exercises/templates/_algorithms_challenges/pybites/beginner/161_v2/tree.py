@@ -18,7 +18,7 @@ ___ count_dirs_and_files(directory='.'):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     count_dirs_and_files()

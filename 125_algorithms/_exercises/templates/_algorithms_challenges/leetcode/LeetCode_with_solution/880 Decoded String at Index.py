@@ -99,5 +99,5 @@ c_ Solution:
         r.. S[i+K]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().decodeAtIndex("ha22", 5) __ "h"

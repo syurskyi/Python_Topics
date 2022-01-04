@@ -33,5 +33,5 @@ c_ Solution:
         r.. missing
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]) __ [5, 6]

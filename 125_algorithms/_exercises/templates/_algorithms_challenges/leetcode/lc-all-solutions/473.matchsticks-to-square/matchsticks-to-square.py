@@ -40,7 +40,7 @@ c_ Solution(object):
 
       ___ i __ r..(start, l..(nums)):
         __ i > start a.. nums[i] __ nums[i - 1]:
-          continue
+          _____
         __ i __ sticksIdx:
           sticksIdx -= {i}
           subsetIdx |= {i}

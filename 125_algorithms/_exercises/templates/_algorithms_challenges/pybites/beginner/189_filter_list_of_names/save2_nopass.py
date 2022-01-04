@@ -9,7 +9,7 @@ ___ filter_names(names):
         __ name n.. __ names_list:
             __ name.isalpha
                 __ IGNORE_CHAR __ name:
-                    continue
+                    _____
                 ____ QUIT_CHAR __ name:
                     break
                 ____:

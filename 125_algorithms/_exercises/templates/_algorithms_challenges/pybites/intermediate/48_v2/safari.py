@@ -37,6 +37,6 @@ ___ create_chart
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     create_chart()

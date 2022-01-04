@@ -14,5 +14,5 @@ ___ get_hundred_weekdays(start_date=TODAY):
    r.. weekdays_100_date
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
    print(get_hundred_weekdays())

@@ -40,5 +40,5 @@ ___ get_top_books(content_ N..
     r.. [(key, value) ___ key, value __ amazon_books_counter.i.. __ value >= MIN_COUNT]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(get_top_books())

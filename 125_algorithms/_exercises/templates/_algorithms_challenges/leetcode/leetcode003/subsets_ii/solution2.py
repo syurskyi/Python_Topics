@@ -12,7 +12,7 @@ c_ Solution:
             res = [[]]
             ___ i, e __ e..(nums):
                 __ i > 0 a.. nums[i] __ nums[i - 1]:
-                    continue
+                    _____
                 rest_subsets = subsets_aux(nums[i + 1:])
                 ___ subset __ rest_subsets:
                     subset.insert(0, e)

@@ -27,7 +27,7 @@ c_ Solution:
                         r.. ans
 
                     __ _a > amount o. _a __ visited:
-                        continue
+                        _____
 
                     visited.add(_a)
                     _queue.a..(_a)

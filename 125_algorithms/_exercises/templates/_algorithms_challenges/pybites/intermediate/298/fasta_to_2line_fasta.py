@@ -66,6 +66,6 @@ ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     fasta_to_2line_fasta()
     #fasta_to_2line_fasta(FASTA_FILE, f"{FASTA_FILE}_converted.fasta")

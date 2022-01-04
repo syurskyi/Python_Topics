@@ -59,7 +59,7 @@ c_ Solution:
 
         ___ a __ nums:
             __ remain < a:
-                continue
+                _____
 
             res += memo_search(nums, remain - a, dp)
 
@@ -93,7 +93,7 @@ c_ Solution:
 
         ___ a __ nums:
             __ remain < a:
-                continue
+                _____
 
             path.a..(a)
             dfs(nums, remain - a, ans, path)

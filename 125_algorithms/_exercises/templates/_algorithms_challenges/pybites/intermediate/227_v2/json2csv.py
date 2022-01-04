@@ -56,7 +56,7 @@ ___ convert_to_csv(json_file):
     
 
     
-__ __name__ __ "__main__":
+__ _______ __ _______
     json_file = 'https://bites-data.s3.us-east-2.amazonaws.com/mount-data1.json'
     convert_to_csv(json_file)
 

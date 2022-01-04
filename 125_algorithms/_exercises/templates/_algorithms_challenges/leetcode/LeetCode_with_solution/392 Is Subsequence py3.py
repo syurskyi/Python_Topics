@@ -54,6 +54,6 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isSubsequence("abc", "ahbgdc") __ T..
     ... Solution().isSubsequence("acb", "ahbgdc") __ F..

@@ -99,6 +99,6 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().sumSubarrayMins([71,55,82,55]) __ 593
     ... Solution().sumSubarrayMins([3,1,2,4]) __ 17

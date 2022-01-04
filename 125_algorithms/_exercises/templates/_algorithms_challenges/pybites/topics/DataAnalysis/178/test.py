@@ -5,7 +5,7 @@ ____ c.. _______ defaultdict
 ____ d__ _______ d__
 
 
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 commits = os.path.j..(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(

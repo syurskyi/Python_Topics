@@ -65,5 +65,5 @@ c_ Solution:
         r.. A[m2] + A[m1] - abs(m2 - m1)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxScoreSightseeingPair([8,1,5,2,6]) __ 11

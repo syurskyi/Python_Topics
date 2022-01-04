@@ -27,6 +27,6 @@ ___ generate_xmas_tree(rows=10):
     r.. ''.j..(result)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     print(generate_xmas_tree())

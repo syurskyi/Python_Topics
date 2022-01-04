@@ -35,5 +35,5 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     fasta_to_2line_fasta(FASTA_FILE, f"{FASTA_FILE}_converted.fasta")

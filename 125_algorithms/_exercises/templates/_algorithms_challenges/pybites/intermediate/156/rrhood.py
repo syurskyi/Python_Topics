@@ -61,7 +61,7 @@ ___ make_character_index(text=text, characters=CHARACTERS):
 
     ___ i,line __ e..(text.splitlines()):
         ___ character __ characters:
-            __ t..(character) __ tuple:
+            __ t..(character) __ t..:
                 ___ value __ character:
                     __ in_line(value,line):
                         locations[character[0].l..].a..(i)

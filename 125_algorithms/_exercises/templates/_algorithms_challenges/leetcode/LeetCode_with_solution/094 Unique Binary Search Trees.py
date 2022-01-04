@@ -56,5 +56,5 @@ c_ Solution(object):
         r.. dp[-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numTrees(100) __ Solution().numTrees_math(100)

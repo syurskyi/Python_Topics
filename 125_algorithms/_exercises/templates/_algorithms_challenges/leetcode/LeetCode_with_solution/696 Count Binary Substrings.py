@@ -64,6 +64,6 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().countBinarySubstrings("00110011") __ 6
     ... Solution().countBinarySubstrings("00110") __ 3

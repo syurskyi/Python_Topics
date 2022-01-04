@@ -74,7 +74,7 @@ c_ Solution:
                 _y = y + dy
 
                 __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                    continue
+                    _____
 
                 find_next_words(board, _x, _y, visited, cnt, node, next_words, path)
 

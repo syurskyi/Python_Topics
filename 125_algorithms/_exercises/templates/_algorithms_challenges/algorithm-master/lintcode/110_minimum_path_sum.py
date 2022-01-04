@@ -14,7 +14,7 @@ c_ Solution:
         ___ j __ r..(n):
             __ j __ 0:
                 dp[0][j] = grid[0][j]
-                continue
+                _____
 
             dp[0][j] = grid[0][j] + dp[0][j - 1]
 

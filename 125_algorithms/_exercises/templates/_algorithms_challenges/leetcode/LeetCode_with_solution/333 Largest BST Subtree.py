@@ -81,7 +81,7 @@ c_ SolutionError(object):
         gmax = max(gmax, ret)
         r.. ret
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     root = TreeNode(1)
     root.left = TreeNode(2)
     print Solution().largestBSTSubtree(root)

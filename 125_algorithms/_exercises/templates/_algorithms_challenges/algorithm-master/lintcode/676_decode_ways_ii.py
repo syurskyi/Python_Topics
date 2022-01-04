@@ -30,7 +30,7 @@ c_ Solution:
                     dp[i] += 6 * dp[i - 2]
 
                 dp[i] %= MOD
-                continue
+                _____
 
             __ s[i - 1] != '0':
                 dp[i] += dp[i - 1]

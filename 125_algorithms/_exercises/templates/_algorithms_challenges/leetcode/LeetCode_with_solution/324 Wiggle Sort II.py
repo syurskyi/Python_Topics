@@ -102,7 +102,7 @@ c_ SolutionSort(object):
                 k -= 1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     # A = [1, 5, 1, 1, 6, 4]
     A = [3, 2, 1, 1, 3, 2]
     Solution().wiggleSort(A)

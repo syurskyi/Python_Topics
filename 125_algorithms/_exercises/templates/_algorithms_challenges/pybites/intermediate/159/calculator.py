@@ -32,5 +32,5 @@ ___ simple_calculator(calculation):
       r.. ValueError
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
    print(simple_calculator("2 * 3"))

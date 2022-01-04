@@ -38,7 +38,7 @@ ___ get_harry_most_common_word
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     get_harry_most_common_word()
 

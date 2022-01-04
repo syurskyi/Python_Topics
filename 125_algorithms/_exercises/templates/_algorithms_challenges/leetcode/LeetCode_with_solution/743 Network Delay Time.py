@@ -47,5 +47,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2) __ 2

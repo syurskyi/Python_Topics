@@ -70,6 +70,6 @@ c_ Solution:
         r.. l..(ret)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findClosestElements([1,2,3,4,5], 4, 3) __ [1,2,3,4]
     ... Solution().findClosestElements([1,2,3,4,5], 4, -1) __ [1,2,3,4]

@@ -28,7 +28,7 @@ ___ gen
 #for i in gen():
 #    print(i.strip())
 
-print(f'Memory (Before): {mem_profile.memory_usage()}')
+print _*Memory (Before): {mem_profile.memory_usage()}')
 
 g = function_3()
 ___ word __ g:

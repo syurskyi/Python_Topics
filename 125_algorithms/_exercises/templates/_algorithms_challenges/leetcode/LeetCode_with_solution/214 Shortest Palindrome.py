@@ -60,7 +60,7 @@ c_ Solution:
         r.. s_r+s[i:]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().shortestPalindrome("abcd") __ "dcbabcd"
 
 

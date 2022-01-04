@@ -67,7 +67,7 @@ ___ player_with_max_points_per_game
 
 ___ number_of_players_from_duke
     """Return the number of players with college == Duke University"""
-    r.. l..(tuple(cur.execute('''SELECT name
+    r.. l..(t..(cur.execute('''SELECT name
                                   from players
                                   where college="Duke University"''')))
 
@@ -75,7 +75,7 @@ ___ number_of_players_from_duke
 ___ avg_years_active_players_stanford
     """Return the average years that players from "Stanford University
        are active ("active" column)"""
-    average = tuple(cur.execute('''SELECT AVG(CAST(active as numeric))
+    average = t..(cur.execute('''SELECT AVG(CAST(active as numeric))
                                  from players
                                  where college="Stanford University"'''))[0][0]
     r.. round(average, 2)
@@ -83,7 +83,7 @@ ___ avg_years_active_players_stanford
 
 ___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
-    drafts = tuple(cur.execute('''SELECT CAST(year as numeric), COUNT(year)
+    drafts = t..(cur.execute('''SELECT CAST(year as numeric), COUNT(year)
                                 from players
                                 GROUP BY year
                                 ORDER BY COUNT(year)'''))

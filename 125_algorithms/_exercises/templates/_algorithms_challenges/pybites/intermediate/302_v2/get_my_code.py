@@ -42,7 +42,7 @@ ___ get_passing_code(json_data=json_data):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     get_passing_code()
 

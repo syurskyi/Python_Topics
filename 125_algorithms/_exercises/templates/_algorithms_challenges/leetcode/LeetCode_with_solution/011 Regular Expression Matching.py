@@ -175,7 +175,7 @@ c_ Solution:
         r.. dp[0][0]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isMatch("aa", "a") __ F..
     ... Solution().isMatch("aa", "aa") __ T..
     ... Solution().isMatch("aaa", "aa") __ F..

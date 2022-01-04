@@ -34,5 +34,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findMaximumXOR([3, 10, 5, 25, 2, 8]) __ 28

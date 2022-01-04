@@ -67,7 +67,7 @@ c_ Solution:
                 close_ptr += 1
                 A[close_ptr] = A[open_ptr]
             ____:  # found duplicate, and duplicated before, continue searching
-                continue  # find next non-duplicate
+                _____  # find next non-duplicate
 
         r.. close_ptr+1
 

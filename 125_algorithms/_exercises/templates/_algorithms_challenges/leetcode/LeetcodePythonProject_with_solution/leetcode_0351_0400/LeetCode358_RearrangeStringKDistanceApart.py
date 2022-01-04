@@ -21,7 +21,7 @@ c_ Solution(object):
             res.a..(c)
             queue.a..([freq, c])
             __ l..(queue) < k:
-                continue
+                _____
             freq, c = queue.pop(0)
             freq = -freq-1
             __ freq > 0:

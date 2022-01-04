@@ -61,7 +61,7 @@ c_ Solution:
             tcode = (tcode * MG + ord(T[i]) - A) % MOD
 
             __ i __ 0:
-                continue
+                _____
             """
             continue here since p only need `n - 1` times
             """

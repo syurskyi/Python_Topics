@@ -53,7 +53,7 @@ c_ Solution(object):
             i += 1
           __ code.startswith("]]>", i):
             i += 3
-            continue
+            _____
           ____:
             r.. F..
         ____:

@@ -46,7 +46,7 @@ c_ Solution:
             __ n.. is_bold[left]:
                 ans.a..(s[left])
                 left += 1
-                continue
+                _____
 
             right = left
 

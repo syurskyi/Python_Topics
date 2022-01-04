@@ -22,7 +22,7 @@ c_ Solution(object):
           __ q - factor < 0:
             break
           __ visited[q - factor]:
-            continue
+            _____
           temp.a..(q - factor)
           visited[q - factor] = T..
       queue = temp

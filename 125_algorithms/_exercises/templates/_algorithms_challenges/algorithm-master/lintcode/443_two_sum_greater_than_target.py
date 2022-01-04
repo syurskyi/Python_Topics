@@ -17,7 +17,7 @@ c_ Solution:
             # ignore the 2nd, 3rd maximum
             __ A[left] + A[right] <= target:
                 left += 1
-                continue
+                _____
 
             # if minimum + maximum > target
             # we can ensure the 2nd, 3rd minimum also fit demand

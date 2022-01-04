@@ -37,5 +37,5 @@ c_ Solution(object):
         r.. "%dA%dB" % (A, B)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().getHint("0", "1") __ "0A0B"

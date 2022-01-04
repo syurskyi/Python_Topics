@@ -37,7 +37,7 @@ ___ gen_files
         ___ row __ f.read().splitlines
             fields = row.s..(',')
             __ fields[1] __ 'False':
-                continue
+                _____
             fields = fields[0].s..('/')
             y.. fields
 

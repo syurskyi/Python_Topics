@@ -118,7 +118,7 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     filter_killed_mutants()

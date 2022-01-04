@@ -16,7 +16,7 @@ c_ Solution(object):
                 __ grid[i][j] __ 1:
                     island = set()
                     dfs(i, j, i, j, m, n, grid, island)
-                    islands.add(tuple(island))
+                    islands.add(t..(island))
         r.. l..(islands)
     
     ___ dfs(self, i0, j0, i, j, m, n, grid, island):

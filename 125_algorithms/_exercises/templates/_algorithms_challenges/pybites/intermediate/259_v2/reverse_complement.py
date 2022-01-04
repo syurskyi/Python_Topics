@@ -111,6 +111,6 @@ ___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     get_mapping()

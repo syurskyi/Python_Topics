@@ -171,7 +171,7 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findMaxForm(["10", "0001", "111001", "1", "0"], 5, 3) __ 4
     ... Solution().findMaxForm(["10", "0", "1"], 1, 1) __ 2
     ... Solution().findMaxForm(["111", "1000", "1000", "1000"], 9, 3) __ 3

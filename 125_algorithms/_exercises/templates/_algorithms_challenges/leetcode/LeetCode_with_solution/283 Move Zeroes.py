@@ -42,7 +42,7 @@ c_ SolutionCount(object):
             nums[j] = 0
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     lst = [0, 1, 0, 3, 12]
     Solution().moveZeroes(lst)
     ... lst __ [1, 3, 12, 0, 0]

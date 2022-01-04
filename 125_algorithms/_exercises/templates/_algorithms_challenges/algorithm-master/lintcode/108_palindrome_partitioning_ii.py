@@ -20,7 +20,7 @@ c_ Solution:
             ___ start __ r..(end):
                 __ (n.. is_palindrome[start][end - 1] o.
                     dp[start] __ INFINITY):
-                    continue
+                    _____
                 __ dp[start] + 1 < dp[end]:
                     dp[end] = dp[start] + 1
 
@@ -40,7 +40,7 @@ c_ Solution:
         ___ start __ r..(n - 1 - 2, -1, -1):
             ___ end __ r..(start + 2, n):
                 __ n.. is_palindrome[start + 1][end - 1]:
-                    continue
+                    _____
                 is_palindrome[start][end] = (S[start] __ S[end])
 
         r.. is_palindrome

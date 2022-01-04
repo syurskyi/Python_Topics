@@ -31,7 +31,7 @@ ___ get_us_bank_holidays(content=content):
 
     ___ i,row __ e..(table.find_all('tr')):
         __ i __ 0:
-            continue
+            _____
         date = row.select_one('td:nth-child(2)').getText(strip=T..)
         hyphen = date.index('-')
         date = date[hyphen+1:hyphen+ 3]
@@ -43,7 +43,7 @@ ___ get_us_bank_holidays(content=content):
     r.. holidays
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     get_us_bank_holidays()

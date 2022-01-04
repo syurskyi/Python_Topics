@@ -87,6 +87,6 @@ c_ Solution(object):
             ret.a..(table[sig])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numberToWords(1234567891) __ "One Billion Two Hundred Thirty Four Million Five Hundred Sixty " \
                                                    "Seven Thousand Eight Hundred Ninety One"

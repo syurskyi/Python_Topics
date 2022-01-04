@@ -27,7 +27,7 @@ c_ Solution(object):
             r.. F..
         ___ i __ r..(startIdx, l..(arr)-leftNum+1):
             __ i > startIdx a.. arr[i] __ arr[i-1]:
-                continue
+                _____
             __ check(arr, leftSum-arr[i], leftNum-1, i+1):
                 r.. T..
         r.. F..

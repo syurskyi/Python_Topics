@@ -53,5 +53,5 @@ c_ Solution(object):
         r.. M[-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxProfit([1, 2, 3, 0, 2]) __ 3

@@ -21,6 +21,6 @@ c_ Solution:
                 lst    # list
                 ___ i __ xrange(1, l..(s)):
                     lst.a..((ord(s[i])-ord(s[i-1]))%26)
-                hm[tuple(lst)].a..(s)
+                hm[t..(lst)].a..(s)
 
         r.. map(s.., hm.values())

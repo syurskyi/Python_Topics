@@ -12,7 +12,7 @@ ___ remove_punctuation_solution_1(input_string):
     new_str    # list
     ___ c __ input_string:
         __ c __ s__.punctuation:
-            continue
+            _____
         new_str.a..(c)
     out = ''.j..(new_str)
     print(out)

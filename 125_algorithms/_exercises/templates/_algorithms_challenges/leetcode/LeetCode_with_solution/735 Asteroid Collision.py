@@ -90,11 +90,11 @@ c_ Solution:
 
             __ stk a.. cur > 0 a.. asteroids[stk[-1]] __ -cur:
                 stk.pop()
-                continue
+                _____
 
             __ n.. stk:
                 stk.a..(i)
-                continue
+                _____
 
             __ n.. (asteroids[stk[-1]] < 0 a.. cur > 0) o. abs(cur) > abs(asteroids[stk[-1]]):
                 stk.a..(i)
@@ -105,7 +105,7 @@ c_ Solution:
         ]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().asteroidCollision([10, 2, -5]) __ [10]
     ... Solution().asteroidCollision([5, 10, -5]) __ [5, 10]
     ... Solution().asteroidCollision([8, -8]) __ []

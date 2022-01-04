@@ -36,4 +36,4 @@ c_ Solution(object):
         __ x[0] __ x[1]:
             r.. "%d" % x[0]
         ____:
-            r.. "%d->%d" % tuple(x)
+            r.. "%d->%d" % t..(x)

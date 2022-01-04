@@ -73,7 +73,7 @@ c_ Solution(object):
         j = k - (i * m)
         r.. matrix[i][j]
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     matrix = [
         [1, 5, 9],
         [10, 11, 13],

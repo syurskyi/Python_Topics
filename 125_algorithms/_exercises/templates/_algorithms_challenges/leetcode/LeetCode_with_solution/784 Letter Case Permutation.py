@@ -55,5 +55,5 @@ c_ Solution:
             lst.pop()
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().letterCasePermutation("a1b2") __ ['a1b2', 'a1B2', 'A1b2', 'A1B2']

@@ -12,8 +12,8 @@ NUMS = l..(r..(l..(NUMERALS.keys())))
 
 ___ romanutil(n: i.., queue: l..):
     '''utility function for romanize recursive implementation'''
-    print(f'entering romanutil with {n=}')
-    print(f'{NUMS=}')
+    print _*entering romanutil with {n=}')
+    print _*{NUMS=}')
     chars = ''
     remainder = 0
     __ n __ NUMERALS:
@@ -27,7 +27,7 @@ ___ romanutil(n: i.., queue: l..):
             quotient = n // k
             remainder = n % k
             chars = chars + NUMERALS[k] * quotient
-            print(f'{chars=}')
+            print _*{chars=}')
             queue.a..(chars)
             break
 

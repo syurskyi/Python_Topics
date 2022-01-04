@@ -39,7 +39,7 @@ c_ MagicDictionary:
             key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
             __ key n.. __ words:
-                continue
+                _____
 
             words = words[key]
 

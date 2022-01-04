@@ -90,7 +90,7 @@ c_ Solution(object):
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     lst = ["ze", "yf", "xd", "wd", "vd", "ua", "tt", "sz", "rd", "qd", "pz", "op", "nw", "mt", "ln", "ko", "jm", "il",
            "ho", "gk", "fa", "ed", "dg", "ct", "bb", "ba"]
     ... Solution().alienOrder(lst) __ "zyxwvutsrqponmlkjihgfedcba"

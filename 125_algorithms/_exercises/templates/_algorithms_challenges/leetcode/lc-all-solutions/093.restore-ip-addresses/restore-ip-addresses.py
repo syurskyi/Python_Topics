@@ -28,6 +28,6 @@ c_ Solution(object):
           __ n.. isValid(c):
             break
           __ n.. isValid(d):
-            continue
+            _____
           ans.a..("{}.{}.{}.{}".f..(a, b, c, d))
     r.. ans

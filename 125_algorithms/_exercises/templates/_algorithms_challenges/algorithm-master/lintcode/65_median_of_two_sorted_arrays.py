@@ -16,7 +16,7 @@ c_ Solution:
 
         ___ nums __ (a, b):
             __ n.. nums:
-                continue
+                _____
 
             n += l..(nums)
             heapq.heappush(heap, (nums[0], nums, 0))

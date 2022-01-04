@@ -89,5 +89,5 @@ c_ Solution(object):
         r.. cnt
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minPatches([1, 2, 2, 6, 34], 20) __ 1

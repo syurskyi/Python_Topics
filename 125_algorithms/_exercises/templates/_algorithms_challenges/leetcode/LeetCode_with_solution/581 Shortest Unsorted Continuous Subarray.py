@@ -71,6 +71,6 @@ c_ Solution:
         r.. j - i + 1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findUnsortedSubarray([2, 1]) __ 2
     ... Solution().findUnsortedSubarray([2, 6, 4, 8, 10, 9, 15]) __ 5

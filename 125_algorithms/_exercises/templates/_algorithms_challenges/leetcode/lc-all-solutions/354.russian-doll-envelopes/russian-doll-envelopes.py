@@ -9,7 +9,7 @@ c_ Solution(object):
     ___ i __ r..(0, l..(envelopes)):
       idx = bisect.bisect_right(tails, envelopes[i][1])
       __ idx - 1 >= 0 a.. tails[idx - 1] __ envelopes[i][1]:
-        continue
+        _____
       __ idx __ l..(tails):
         tails.a..(envelopes[i][1])
       ____:

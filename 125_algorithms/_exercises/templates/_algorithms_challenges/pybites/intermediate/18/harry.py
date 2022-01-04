@@ -33,7 +33,7 @@ ___ get_harry_most_common_word
             current_line = line.s..(" ")
             ___ word __ current_line:
                 __ word __ "":
-                    continue
+                    _____
                 __ word n.. __ stopwords:
                     final_words.a..(word)
 

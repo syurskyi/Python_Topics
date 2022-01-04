@@ -51,21 +51,21 @@ c_ Solution(object):
         ___ interval __ itvls[1:]:
             __ ret[-1].end < interval.start:
                 ret.a..(interval)
-                continue
+                _____
             __ ret[-1].start <= interval.start <= ret[-1].end <= interval.end:
                 ret[-1].end = interval.end
-                continue
+                _____
             __ interval.start <= ret[-1].start a.. ret[-1].end <= interval.end:
                 ret[-1] = interval
-                continue
+                _____
             __ ret[-1].start <= interval.start < ret[-1].end a.. ret[-1].start <= interval.end < ret[-1].end:
                 ret.a..(interval)
-                continue
+                _____
             __ interval.start < ret[-1].start <= interval.end < ret[-1].end:
                 ret[-1].start = interval.start
-                continue
+                _____
             __ interval.end < ret[-1].start:
                 ret.a..(ret)
-                continue
+                _____
 
         r.. ret

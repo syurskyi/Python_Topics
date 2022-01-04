@@ -41,7 +41,7 @@ ___ BuildTree(records):
             __ j.parent_id __ i:
                 ___ k __ trees:
                     __ k.node_id __ 0:
-                        continue
+                        _____
                     __ j.record_id __ k.node_id:
                         child = k
                         parent.children.a..(child)

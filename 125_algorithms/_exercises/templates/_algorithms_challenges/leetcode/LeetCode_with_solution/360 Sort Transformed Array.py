@@ -52,5 +52,5 @@ c_ Solution(object):
         r.. a * (x ** 2) + b * x + c
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().sortTransformedArray([-4, -2, 2, 4], -1, 3, 5) __ [-23, -5, 1, 7]

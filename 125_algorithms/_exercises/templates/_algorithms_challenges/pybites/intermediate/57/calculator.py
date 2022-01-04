@@ -73,7 +73,7 @@ ___ call_calculator(args=N.., stdout=F..):
     ___ operation, numbers __ vars(args).i..:
         #print(operation, numbers)
         __ numbers __ N..
-            continue
+            _____
 
         try:
             res = calculator(operation, numbers)

@@ -4,7 +4,7 @@ DOWN, UP, LEFT, RIGHT = '⇓', '⇑', '⇐', '⇒'
 START_VALUE = 1
 STOP = ' '
 
-___ _seek_next(grid: l.., position: tuple):
+___ _seek_next(grid: l.., position: t..):
     row, col = position
     next_val = grid[row][col] + 1
     __ row < l..(grid)-1 a.. grid[row + 1][col] __ next_val:
@@ -42,7 +42,7 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
         __ current_direction __ next_direction:
             current_vals.a..(s..(this_val))
         ____:
-            print(f'{" ".j..(current_vals)} {next_direction}')
+            print _*{" ".j..(current_vals)} {next_direction}')
             current_vals = [s..(this_val)]
             current_direction = next_direction
         this_val += 1

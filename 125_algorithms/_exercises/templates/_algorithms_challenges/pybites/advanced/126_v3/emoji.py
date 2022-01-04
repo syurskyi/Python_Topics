@@ -43,4 +43,4 @@ ___ find_emoji(term):
     emoji_mapping = _make_emoji_mapping()
     ___ em, desc __ emoji_mapping.i..:
         __ term __ desc:
-            print(f'{desc:40} | {em}')
+            print _*{desc:40} | {em}')

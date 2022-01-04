@@ -13,7 +13,7 @@ c_ Solution(object):
       ___ i __ r..(1, l..(word) + 1):
         ___ j __ r..(r..(0, i)):
           __ n.. dp[j]:
-            continue
+            _____
           __ word[j:i] __ cands:
             dp[i] = T..
             break

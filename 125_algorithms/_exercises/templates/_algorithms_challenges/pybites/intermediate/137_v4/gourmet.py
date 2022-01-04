@@ -121,7 +121,7 @@ ___ best_match_per_wine(wine_type="all"):
 
     __ wine_type n.. __ WT:
         r.. ValueError
-    print(f'{WT[wine_type]=}')
+    print _*{WT[wine_type]=}')
     sims = ((w, c, similarity(w, c))
             ___ w, c __ product(WT[wine_type], CHEESES))
 

@@ -20,7 +20,7 @@ c_ Solution(object):
         node, p = stack.pop()
         __ n.. node:
           ans.a..("#")
-          continue
+          _____
         __ p __ 0:
           ans.a..("|" + s..(node.val))
         ____:

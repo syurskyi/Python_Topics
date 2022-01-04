@@ -42,6 +42,6 @@ c_ Solution(object):
         r.. t
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findDuplicate([1, 2, 3 ,4, 5, 5]) __ 5
 

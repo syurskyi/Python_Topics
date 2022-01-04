@@ -18,7 +18,7 @@ c_ Solution:
                 l..(w) < l..(ans),
                 l..(w) __ l..(ans) a.. w >= ans,  # means w has larger lexicographical order
             )):
-                continue
+                _____
 
             ans = w
 
@@ -61,7 +61,7 @@ c_ Solution:
                 l..(w) < l..(ans),
                 l..(w) __ l..(ans) a.. w >= ans,
             )):
-                continue
+                _____
 
             ans = w
 

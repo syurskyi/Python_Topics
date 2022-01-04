@@ -10,8 +10,8 @@ ___ generate_improved_xmas_tree(rows=10):
     width = rows * 2 - 1
     out = [f'{STAR:^{width}}']
     ___ n __ r..(rows):
-        out.a..(f'{LEAF * (n * 2 + 1):^{width}}')
+        out.a.. _*{LEAF * (n * 2 + 1):^{width}}')
     trunk = TRUNK * (rows + (1 __ rows % 2 __ 0 ____ 0))
-    out.a..(f'{trunk:^{width}}')
-    out.a..(f'{trunk:^{width}}')
+    out.a.. _*{trunk:^{width}}')
+    out.a.. _*{trunk:^{width}}')
     r.. '\n'.j..(out)

@@ -55,7 +55,7 @@ c_ Solution(object):
         # F[i][j] = F[i-1][j] + F[i][j-1]
         ___ i __ xrange(m):
             ___ j __ xrange(n):
-                __ i __ 0 a.. j __ 0: continue
+                __ i __ 0 a.. j __ 0: _____
                 __ i __ 0: F[i][j] = F[i][j-1]
                 ____ j __ 0: F[i][j] = F[i-1][j]
                 ____: F[i][j] = F[i-1][j]+F[i][j-1]
@@ -63,5 +63,5 @@ c_ Solution(object):
         r.. F[m-1][n-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().uniquePaths(3, 7) __ 28

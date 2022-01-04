@@ -45,7 +45,7 @@ c_ Color:
                 values.a..(value)
 
 
-        r.. tuple(values)
+        r.. t..(values)
 
 
 
@@ -64,7 +64,7 @@ c_ Color:
     @staticmethod
     ___ rgb2hex(rgb_value):
         """Class method that converts an rgb value into a hex one"""
-        __ t..(rgb_value) n.. __ [l..,tuple] o. l..(rgb_value) != 3:
+        __ t..(rgb_value) n.. __ [l..,t..] o. l..(rgb_value) != 3:
             r.. ValueError("rgb value must be list or tuple of length 3")
         
 

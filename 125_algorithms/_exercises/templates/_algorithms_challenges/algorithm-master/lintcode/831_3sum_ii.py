@@ -18,7 +18,7 @@ c_ Solution:
 
         ___ a __ r..(m - 2):
             __ a > 0 a.. nums[a] __ nums[a - 1]:
-                continue
+                _____
 
             b = a + 1
             c = m - 1

@@ -68,5 +68,5 @@ c_ Solution:
         r.. lo
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minEatingSpeed([3,6,7,11], 8) __ 4

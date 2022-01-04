@@ -23,11 +23,11 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        lst = parse(s)
+        lst = p..(s)
         post = infix2postfix(lst)
         r.. eval_postfix(post)
 
-    ___ parse(self, s):
+    ___ p..(self, s):
         """
         return tokens
         """
@@ -103,5 +103,5 @@ c_ Solution:
         r.. i..(stk[-1])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().calculate("3+2*2") __ 7

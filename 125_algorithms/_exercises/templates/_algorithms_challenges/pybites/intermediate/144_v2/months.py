@@ -47,7 +47,7 @@ ___ calc_months_passed(year, month, day):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     calc_months_passed(2019,1,16)
 

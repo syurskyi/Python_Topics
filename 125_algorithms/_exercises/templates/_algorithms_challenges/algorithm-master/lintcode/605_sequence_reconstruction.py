@@ -24,7 +24,7 @@ c_ Solution:
         cnt = 0
         ___ seq __ seqs:
             __ n.. seq:
-                continue
+                _____
 
             cnt += l..(seq)
 

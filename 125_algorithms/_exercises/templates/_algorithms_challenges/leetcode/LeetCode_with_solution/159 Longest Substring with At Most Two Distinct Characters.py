@@ -31,5 +31,5 @@ c_ Solution(object):
         r.. maxa
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().lengthOfLongestSubstringTwoDistinct("ecebaaaaaacdbb") __ 7

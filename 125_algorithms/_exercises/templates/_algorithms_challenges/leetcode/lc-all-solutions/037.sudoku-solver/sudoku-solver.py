@@ -12,10 +12,10 @@ c_ Solution(object):
       __ board[i][j] __ ".":
         ___ k __ r..(1, 10):
           __ i < 0 o. i >= l..(board) o. j < 0 o. j >= l..(board):
-            continue
+            _____
           ib = (i / 3) * 3 + j / 3
           __ cacheRow[i][k - 1] __ 1 o. cacheCol[j][k - 1] __ 1 o. cacheBox[ib][k - 1] __ 1:
-            continue
+            _____
 
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 1
           board[i][j] = s..(k)

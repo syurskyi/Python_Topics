@@ -49,7 +49,7 @@ c_ Solution:
         F = defaultdict(i..)
         ___ e __ nums:
             __ counter[e] __ 0:
-                continue
+                _____
             counter[e] -= 1
 
             __ F[e - 1] > 0:
@@ -111,7 +111,7 @@ c_ Solution2:
 
         r.. T..
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isPossible([1,2,3,3,4,5]) __ T..
     ... Solution().isPossible([1,2,3,3,4,4,5,5]) __ T..
     ... Solution().isPossible([1,2,3,4,4,5]) __ F..

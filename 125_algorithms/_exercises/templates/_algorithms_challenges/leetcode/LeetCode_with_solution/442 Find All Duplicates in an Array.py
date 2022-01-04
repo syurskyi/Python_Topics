@@ -46,5 +46,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... set(Solution().findDuplicates([4,3,2,7,8,2,3,1])) __ set([2,3])

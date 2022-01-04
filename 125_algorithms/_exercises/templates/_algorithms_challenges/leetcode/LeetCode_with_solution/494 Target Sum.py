@@ -49,5 +49,5 @@ c_ Solution:
         r.. F[l..(A)][S]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findTargetSumWays([1, 1, 1, 1, 1], 3) __ 5

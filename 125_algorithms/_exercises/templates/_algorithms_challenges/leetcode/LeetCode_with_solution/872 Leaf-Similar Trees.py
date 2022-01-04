@@ -49,7 +49,7 @@ c_ Solution:
         w.... stk:
             cur = stk.pop()
             __ n.. cur:
-                continue
+                _____
             __ n.. cur.left a.. n.. cur.right:
                 y.. cur.val
             ____:

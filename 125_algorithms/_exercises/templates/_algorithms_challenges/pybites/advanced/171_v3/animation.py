@@ -13,7 +13,7 @@ ___ spinner(seconds):
     end = time() + seconds
     spin = cycle(SPINNER_STATES)
     ___ s __ spin:
-        print(f'{s}\r', end='', flush=T..)
+        print _*{s}\r', end='', flush=T..)
         # sys.stdout.flush()
         sleep(STATE_TRANSITION_TIME)
         __ time() > end:

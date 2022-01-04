@@ -77,5 +77,5 @@ c_ SolutionError(object):
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().wordPattern("abba", "dog cat cat dog") __ T..

@@ -65,7 +65,7 @@ c_ Solution:
                 # cur.nex is assign first, left to right
                 cur.next, pre, cur = pre, cur, cur.next  # different from pre, cur, cur.next = cur, cur,next, pre
                 cnt += 1
-                continue
+                _____
 
             # reconnect
             ____ cnt__n+1:

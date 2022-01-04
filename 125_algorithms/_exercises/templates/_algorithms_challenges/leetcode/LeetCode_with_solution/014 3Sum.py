@@ -34,7 +34,7 @@ c_ Solution:
             ___ j __ xrange(i, l..(num)):
                 target = 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
-                    continue
+                    _____
                 ___ index __ reverse_map[target]:
                     __ i != index a.. j != index:
                         result.a..([num[i], num[j], target])
@@ -62,11 +62,11 @@ c_ Solution:
             ___ j __ xrange(i, l..(num)):
                 target = 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
-                    continue
+                    _____
                 ___ index __ reverse_map[target]:
                     __ index != i a.. index != j:
                         lst = s..([num[i], num[j], target])
-                        lst = tuple(lst)
+                        lst = t..(lst)
                         result[lst] = 1  # hash
                         break
 
@@ -125,5 +125,5 @@ c_ Solution:
         r.. result
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print Solution().threeSum([-1, 0, 1, 2, -1, -4])

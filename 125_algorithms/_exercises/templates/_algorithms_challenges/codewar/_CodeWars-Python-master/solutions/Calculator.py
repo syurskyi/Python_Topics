@@ -24,5 +24,5 @@ c_ Calculator(object):
                 result[i - 1] = s..(__class__.operands[result[i]](float(result[i - 1]), float(result[i + 1])))
                 result.pop(i + 1)
                 result.pop(i)
-                continue
+                _____
             i += 1

@@ -26,7 +26,7 @@ c_ Solution:
             ___ j __ r..(1, n):
                 __ G[i][j] __ OBSTACLE:
                     dp[curr][j] = 0
-                    continue
+                    _____
                 dp[curr][j] = dp[prev][j] + dp[curr][j - 1]
 
         r.. dp[curr][n - 1]

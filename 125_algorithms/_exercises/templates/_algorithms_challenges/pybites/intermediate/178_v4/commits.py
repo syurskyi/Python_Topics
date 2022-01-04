@@ -2,7 +2,7 @@ ____ c.. _______ Counter
 _______ __
 _______ os
 ____ urllib.request _______ urlretrieve
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 commits = os.path.j..(os.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
@@ -17,7 +17,7 @@ YEAR_MONTH = '{y}-{m:02d}'
 ___ _parse_line(line: s..) __ d..:
     """returns a line with the key of date type and value of add/del"""
     d_str, all_changes = line.s..(' | ')
-    date = parse(__.sub(r'Date:[ ]+', '', d_str)).date()
+    date = p..(__.sub(r'Date:[ ]+', '', d_str)).date()
 
     # add insertions and deletions
     insertions = __.f..(r'([0-9]+) insertions', all_changes)

@@ -115,7 +115,7 @@ c_ Solution:
         r.. max(F o. [0])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().deleteAndEarn([1,1,1,2,4,5,5,5,6]) __ 18
     ... Solution().deleteAndEarn([3, 4, 2]) __ 6
     ... Solution().deleteAndEarn([2, 2, 3, 3, 3, 4]) __ 9

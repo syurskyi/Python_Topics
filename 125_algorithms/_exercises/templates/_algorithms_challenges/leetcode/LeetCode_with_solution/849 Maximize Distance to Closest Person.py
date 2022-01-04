@@ -86,5 +86,5 @@ c_ Solution:
         r.. ret[0]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxDistToClosest([1,0,0,0,1,0,1]) __ 2

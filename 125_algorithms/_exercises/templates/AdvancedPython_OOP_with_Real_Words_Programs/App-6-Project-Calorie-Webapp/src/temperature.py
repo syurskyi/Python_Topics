@@ -43,7 +43,7 @@ c_ Temperature:
         scraped_content  _scrape()
         r_ f__(scraped_content['temp'].r..("°C", "").strip())
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     temperature  Temperature(country"usa", city"san francisco")
     print(temperature.get())
 

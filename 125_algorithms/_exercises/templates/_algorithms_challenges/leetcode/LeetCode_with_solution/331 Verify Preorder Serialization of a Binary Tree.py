@@ -79,7 +79,7 @@ c_ Solution(object):
         r.. n.. stk a.. l..(child_stk) __ 1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#")
 
 

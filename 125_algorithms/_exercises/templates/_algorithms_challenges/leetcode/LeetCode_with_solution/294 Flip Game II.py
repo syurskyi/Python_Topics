@@ -42,5 +42,5 @@ c_ Solution(object):
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canWin("+++++") __ F..

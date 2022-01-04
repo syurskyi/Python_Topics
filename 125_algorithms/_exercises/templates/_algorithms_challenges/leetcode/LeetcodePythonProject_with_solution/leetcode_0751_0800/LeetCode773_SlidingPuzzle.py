@@ -25,7 +25,7 @@ c_ Solution(object):
                     __ j < 0 o. j > 5 o.\
                         (i __ 2 a.. j __ 3) o.\
                         (i __ 3 a.. j __ 2):
-                        continue
+                        _____
                     arr = l..(s)
                     arr[i], arr[j] = arr[j], arr[i]
                     newS = ''.j..(arr)

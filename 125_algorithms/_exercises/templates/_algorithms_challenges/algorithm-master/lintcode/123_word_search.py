@@ -33,9 +33,9 @@ c_ Solution:
             _x = x + dx
             _y = y + dy
             __ n.. (0 <= _x < l..(G) a.. 0 <= _y < l..(G[0])):
-                continue
+                _____
             __ visited[_x][_y] o. G[_x][_y] != s[i]:
-                continue
+                _____
 
             visited[_x][_y] = T..
             __ dfs(G, _x, _y, s, i + 1, visited):

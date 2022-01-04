@@ -10,5 +10,5 @@ ___ get_ip_country(ip_address):
    ip_request = requests.get(url)
    r.. ip_request.json()["country"]
 
-__ __name__ __ "__main__":
+__ _______ __ _______
    print(get_ip_country('187.190.38.36'))

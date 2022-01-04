@@ -12,7 +12,7 @@ c_ Solution:
 
         ___ i __ r..(2, i..(n ** 0.5) + 1):
             __ n.. is_prime[i]:
-                continue
+                _____
             ___ j __ r..(i * i, n, i):
                 is_prime[j] = F..
 

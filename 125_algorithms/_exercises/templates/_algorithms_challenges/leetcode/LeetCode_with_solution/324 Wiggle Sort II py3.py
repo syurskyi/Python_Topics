@@ -40,14 +40,14 @@ c_ Solution:
             __ nums[i] < median:
                 __ i >= even a.. i % 2 __ 0:
                     i += 1
-                    continue
+                    _____
                 nums[i], nums[even] = nums[even], nums[i]
                 even -= 2
 
             ____ nums[i] > median:
                 __ i <= odd  a.. i % 2 __ 1:
                     i += 1
-                    continue
+                    _____
                 nums[i], nums[odd] = nums[odd], nums[i]
                 odd += 2
             ____:
@@ -75,5 +75,5 @@ c_ Solution:
         r.. closed
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     Solution().wiggleSort([1, 5, 1, 1, 6, 4])

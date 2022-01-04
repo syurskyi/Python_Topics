@@ -18,7 +18,7 @@ c_ Solution:
 
         ___ i __ r..(l..(A)):
             __ A[i] != target:
-                continue
+                _____
             cnt += 1
             __ randint(1, cnt) __ cnt:
                 res = i

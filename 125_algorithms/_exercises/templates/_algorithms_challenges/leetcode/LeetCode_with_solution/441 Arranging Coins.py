@@ -21,6 +21,6 @@ c_ Solution:
         )
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().arrangeCoins(5) __ 2
     ... Solution().arrangeCoins(8) __ 3

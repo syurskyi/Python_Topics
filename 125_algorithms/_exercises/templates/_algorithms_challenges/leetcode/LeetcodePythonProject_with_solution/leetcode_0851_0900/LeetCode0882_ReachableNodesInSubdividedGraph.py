@@ -25,7 +25,7 @@ c_ Solution(object):
             start = cur[1]
             move = -cur[0]
             __ visited[start]:
-                continue
+                _____
             visited[start] = T..
             res += 1
             ___ i __ r..(N):

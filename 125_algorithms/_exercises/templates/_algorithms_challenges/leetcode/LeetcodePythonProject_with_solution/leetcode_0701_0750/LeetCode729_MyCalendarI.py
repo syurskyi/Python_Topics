@@ -25,7 +25,7 @@ c_ MyCalendar(object):
                 intervals.insert(i, newInterval)
                 r.. T..
             ____ newInterval.start >= interval.end:
-                continue
+                _____
             ____:
                 r.. F..
         intervals.a..(newInterval)

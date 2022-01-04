@@ -28,5 +28,5 @@ ___ group_cars_by_manufacturer(cars):
     ___ k, g __ groupby(s..(cars), l.... car: car[0]):
         print(k.upper())
         ___ c __ g:
-            print(f'- {c[1]}')
+            print _*- {c[1]}')
         print()

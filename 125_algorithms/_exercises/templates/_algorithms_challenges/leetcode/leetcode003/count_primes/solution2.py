@@ -17,7 +17,7 @@ c_ Solution(object):
         w.... i * i < n:
             __ t[i] __ F..:
                 i += 1
-                continue
+                _____
             j = i * i
             w.... j < n:
                 t[j] = F..

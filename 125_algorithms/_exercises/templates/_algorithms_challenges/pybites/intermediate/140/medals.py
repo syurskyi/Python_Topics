@@ -16,5 +16,5 @@ ___ athletes_most_medals(data: s.. = data) __ pd.Series:
     r.. medal_dict
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(athletes_most_medals())

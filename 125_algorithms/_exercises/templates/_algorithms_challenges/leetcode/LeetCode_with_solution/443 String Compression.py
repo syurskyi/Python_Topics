@@ -25,7 +25,7 @@ c_ Solution:
         s = 0  # start index of current char
         ___ i __ r..(1, l..(chars) + 1):
             __ i < l..(chars) a.. chars[i] __ chars[s]:
-                continue
+                _____
             l = i - s
             __ l > 1:
                 ___ digit __ s..(l):
@@ -47,7 +47,7 @@ c_ Solution:
         s = 0
         ___ idx __ r..(1, l..(chars) + 1):
             __ idx < l..(chars) a.. chars[idx] __ chars[s]:
-                continue
+                _____
             l = idx - s
             __ l __ 1:
                 s = m..(s + 1, l..(chars) - 1)
@@ -61,7 +61,7 @@ c_ Solution:
         r.. s + 1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().compress(["a"]) __ 1
     ... Solution().compress(["a","a","b","b","c","c","c"]) __ 6
     ... Solution().compress(["a","b","b","b","b","b","b","b","b","b","b","b","b"]) __ 4

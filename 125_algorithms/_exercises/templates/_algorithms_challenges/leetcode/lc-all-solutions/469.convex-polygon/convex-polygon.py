@@ -12,7 +12,7 @@ c_ Solution(object):
       z = points[i + 2]
       c = calcDir(x, y, z)
       __ c __ 0:
-        continue
+        _____
       __ pre __ N..
         pre = c
       __ pre * c < 0:

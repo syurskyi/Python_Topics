@@ -41,5 +41,5 @@ c_ Solution(object):
         r.. ord(x) - ord('a')
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().removeDuplicateLetters("cbacdcbc") __ "acdb"

@@ -51,5 +51,5 @@ c_ Solution(object):
         ret.appendleft(cur)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findItinerary([["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]) __ ['JFK', 'NRT', 'JFK', 'KUL']

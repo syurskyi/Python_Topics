@@ -56,6 +56,6 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findPaths(2, 2, 2, 0, 0) __ 6
     ... Solution().findPaths(1, 3, 3, 0, 1) __ 12

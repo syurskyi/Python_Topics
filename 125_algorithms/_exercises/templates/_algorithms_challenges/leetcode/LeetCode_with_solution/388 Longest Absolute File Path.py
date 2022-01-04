@@ -63,5 +63,5 @@ c_ Solution(object):
 
         r.. gmax
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().lengthLongestPath("dir\n    file.txt") __ 12

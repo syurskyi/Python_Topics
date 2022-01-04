@@ -161,7 +161,7 @@ ___ head(n):
     print(n)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print("Tail recursion:\n")
     tail(5)
     print("\nHead recursion:\n")

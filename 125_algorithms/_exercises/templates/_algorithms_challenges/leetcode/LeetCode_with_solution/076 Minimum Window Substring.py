@@ -60,5 +60,5 @@ c_ Solution(object):
             r.. S[min_win[0]:min_win[1]]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minWindow("ADOBECODEBANC", "ABC") __ "BANC"

@@ -31,7 +31,7 @@ ___ get_num_words_spoken_by_character_per_episode(content):
     r.. counts
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     season = 1
     get_num_words_spoken_by_character_per_episode(get_season_csv_file(season))

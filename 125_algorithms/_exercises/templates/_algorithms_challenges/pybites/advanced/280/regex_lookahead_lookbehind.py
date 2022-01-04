@@ -66,6 +66,6 @@ ___ check_surrounding_chars(text, surrounding_chars):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     surrounding_chars = ["Z", "A"] 
     text = "ZZZZZ"

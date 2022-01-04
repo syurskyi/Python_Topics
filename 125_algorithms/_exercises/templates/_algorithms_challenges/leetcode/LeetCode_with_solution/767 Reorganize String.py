@@ -54,7 +54,7 @@ c_ Solution:
         )
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().reorganizeString("vvvlo") __ "vlvov"
     ... Solution().reorganizeString("aab") __ "aba"
     ... Solution().reorganizeString("aaab") __ ""

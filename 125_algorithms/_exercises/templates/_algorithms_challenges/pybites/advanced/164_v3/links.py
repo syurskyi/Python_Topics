@@ -1,5 +1,5 @@
 _______ sys
-____ urllib.parse _______ urlparse
+____ urllib.p.. _______ urlparse
 
 INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 

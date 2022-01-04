@@ -24,7 +24,7 @@ c_ Solution(object):
             __ target < nums[i]:
                 r..
             __ i > ind a.. nums[i] __ nums[i-1]:
-                continue
+                _____
             curr.a..(nums[i])
             helper2(nums, i+1, curr, res, target-nums[i])
             curr.pop()

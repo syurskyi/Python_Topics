@@ -42,5 +42,5 @@ c_ Solution:
             profit += max(0, prices[i] - prices[i-1])
         r.. profit
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print Solution().maxProfit(2, [1, 2, 4])

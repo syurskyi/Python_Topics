@@ -16,7 +16,7 @@ c_ Solution:
         """
         result    # list
         get_permute(num, [], result)
-        r.. map(l.., set(map(tuple, result)))
+        r.. map(l.., set(map(t.., result)))
 
 
     ___ get_permute_TLE(self, nums, current, result):
@@ -45,7 +45,7 @@ c_ Solution:
             result.a..(current)
 
         ___ ind, val __ e..(nums):
-            __ ind-1>=0 a.. val__nums[ind-1]: continue  # JUMP; only need to compare to previous value
+            __ ind-1>=0 a.. val__nums[ind-1]: _____  # JUMP; only need to compare to previous value
             get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 __ __name____"__main__":

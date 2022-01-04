@@ -23,7 +23,7 @@ c_ Solution(object):
         addedRoute = set()
         addedStop = set()
         ___ r __ hashmap[s]:
-            __ r __ addedRoute: continue
+            __ r __ addedRoute: _____
             ___ i __ r..(l..(routes[r])):
                 __ routes[r][i] n.. __ addedStop:
                     queue.a..(routes[r][i])
@@ -37,7 +37,7 @@ c_ Solution(object):
                 stop = queue.pop(0)
                 __ stop __ t: r.. count
                 ___ r __ hashmap[stop]:
-                    __ r __ addedRoute: continue
+                    __ r __ addedRoute: _____
                     ___ i __ r..(l..(routes[r])):
                         __ routes[r][i] n.. __ addedStop:
                             queue.a..(routes[r][i])

@@ -106,7 +106,7 @@ c_ Solution:
         global_max = -1<<32
         ___ ind, val __ e..(height):
             __ ind+1<l..(height) a.. val<=height[ind+1]:  # PRUNE, find until peak
-                continue
+                _____
 
             min_h = val
             global_max = max(global_max, min_h*1)

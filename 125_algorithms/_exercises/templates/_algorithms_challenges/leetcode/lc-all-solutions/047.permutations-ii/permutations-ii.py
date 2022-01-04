@@ -14,9 +14,9 @@ c_ Solution(object):
 
       ___ i __ r..(l..(nums)):
         __ i __ visited:
-          continue
+          _____
         __ i > 0 a.. nums[i] __ nums[i - 1] a.. i - 1 n.. __ visited:
-          continue
+          _____
         visited |= {i}
         path.a..(nums[i])
         dfs(nums, res, path, visited)

@@ -36,7 +36,7 @@ ___ get_income_distribution(___=countries):
 
     r.. income_to_countries
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     get_income_distribution()
 

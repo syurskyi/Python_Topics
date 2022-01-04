@@ -19,7 +19,7 @@ c_ Solution(object):
     ___ i __ r..(0, l..(lists)):
       node = lists[i]
       __ n.. node:
-        continue
+        _____
       heapq.heappush(heap, node)
 
     w.... heap:

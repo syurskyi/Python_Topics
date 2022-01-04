@@ -21,10 +21,10 @@ ___ slice_and_dice(text: s.. = text) __ l..:
        See the Bite description for step by step instructions"""
     results    # list
     ___ line __ text.s...splitlines
-        line = line.lstrip()
+        line = line.l..
 
         __ line[0] n.. __ ascii_lowercase:
-            continue
+            _____
 
         words = line.s..
         last_word_stripped = words[-1].rstrip('!.')

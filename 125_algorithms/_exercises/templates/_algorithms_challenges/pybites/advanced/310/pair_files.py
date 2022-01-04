@@ -32,7 +32,7 @@ ___ pair_files(filenames):
 
             __ '_R1_' __ value[1]:
                 value.reverse()
-            result.a..(tuple(value))
+            result.a..(t..(value))
 
 
     r.. result
@@ -58,7 +58,7 @@ ___ pair_files(filenames):
 
 
 # Set up for your convenience during testing
-__ __name__ __ "__main__":
+__ _______ __ _______
     filenames = [
         "Sample1_S1_L001_R1_001.FASTQ.GZ",
         "Sample1_S1_L001_R2_001.fastq.gz",

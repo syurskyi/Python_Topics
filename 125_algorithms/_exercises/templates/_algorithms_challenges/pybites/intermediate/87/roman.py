@@ -38,7 +38,7 @@ ___ romanize(decimal_number):
                     remainder = decimal_number % key
             
                     __ remainder __ decimal_number:
-                        continue
+                        _____
                     ____:
                         __ frequency > 1:
                             roman_numeral += i..(frequency) * numeral_lookup[key]
@@ -54,6 +54,6 @@ ___ romanize(decimal_number):
     r.. roman_numeral
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(romanize(87))
     

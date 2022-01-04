@@ -27,7 +27,7 @@ c_ Solution:
                 dy = P[i].y - P[j].y
                 __ dx __ 0 a.. dy __ 0:
                     dups += 1
-                    continue
+                    _____
 
                 gcd = get_gcd(dx, dy)
                 __ gcd:

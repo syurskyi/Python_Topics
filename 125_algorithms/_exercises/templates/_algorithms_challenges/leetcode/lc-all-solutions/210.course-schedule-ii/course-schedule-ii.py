@@ -12,7 +12,7 @@ c_ Solution(object):
         __ visited[nbr] __ 1:
           r.. F..
         __ visited[nbr] != 0:
-          continue
+          _____
         __ dfs(nbr, visited, graph, ans) __ F..:
           r.. F..
       ans.a..(start)
@@ -31,7 +31,7 @@ c_ Solution(object):
     ___ pre __ prerequisites:
       start, end = pre
       __ visited[start] != 0:
-        continue
+        _____
       __ dfs(start, visited, graph, ans) __ F..:
         r.. []
     ___ i __ r..(0, numCourses):

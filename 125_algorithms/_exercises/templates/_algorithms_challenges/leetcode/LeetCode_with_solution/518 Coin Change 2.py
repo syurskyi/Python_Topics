@@ -105,5 +105,5 @@ c_ Solution:
         r.. F[amount]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().change(5, [1, 2, 5]) __ 4

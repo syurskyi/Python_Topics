@@ -31,7 +31,7 @@ c_ Solution(object):
         ___ obj __ L:
             __ obj.isInteger
                 _sum += depth * obj.getInteger()
-                continue
+                _____
 
             _sum += dfs(obj.getList(), depth + 1)
 
@@ -55,7 +55,7 @@ c_ Solution(object):
             ___ obj __ queue:
                 __ obj.isInteger
                     ans += depth * obj.getInteger()
-                    continue
+                    _____
 
                 _queue.extend(obj.getList())
 

@@ -48,5 +48,5 @@ c_ Solution(object):
             find(root.left, target, ret, lower)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().closestValue(TreeNode(2147483647), 0.0) __ 2147483647

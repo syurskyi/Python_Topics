@@ -32,11 +32,11 @@ ___ get_best_sales_rep(df):
        the total of his/her sales"""
     reps = df.groupby(['Rep']).agg({'Total': 'sum'}).reset_index()
 
-    r.. tuple(reps.sort_values(by='Total', ascending=F..).iloc[0])
+    r.. t..(reps.sort_values(by='Total', ascending=F..).iloc[0])
 
 
 ___ get_most_sold_item(df):
     """Return a tuple of the name of the most sold item
        and the number of units sold"""
     items = df.groupby(['Item']).agg({'Units': 'sum'}).reset_index()
-    r.. tuple(items.sort_values(by='Units', ascending=F..).iloc[0])
+    r.. t..(items.sort_values(by='Units', ascending=F..).iloc[0])

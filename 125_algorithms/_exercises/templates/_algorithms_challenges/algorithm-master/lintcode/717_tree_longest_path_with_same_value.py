@@ -31,7 +31,7 @@ c_ Solution:
         ___ neib __ neibs[curr]:
             # ignore if the neib is curr's parent
             __ neib __ root:
-                continue
+                _____
 
             res = dfs(curr, neib, a, neibs)
 

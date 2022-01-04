@@ -21,7 +21,7 @@ ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
         test_split = test.s..(" ")
 
         __ l..(test_split) != 8:
-            continue
+            _____
         
         bite_number = test_split[0]
         bite_tests = i..(test_split[2])

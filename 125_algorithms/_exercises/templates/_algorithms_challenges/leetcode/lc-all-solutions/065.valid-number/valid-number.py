@@ -53,7 +53,7 @@ c_ Solution(object):
         state = states.decpoint
       ____ state __ states.decimal:
         __ c __ decimals:
-          continue
+          _____
         ____ c __ "e":
           state = states.e
         ____ c __ ".":
@@ -69,7 +69,7 @@ c_ Solution(object):
           r.. F..
       ____ state __ states.afterdp:
         __ c __ decimals:
-          continue
+          _____
         ____ c __ "e":
           state = states.e
         ____:

@@ -28,7 +28,7 @@ c_ Solution(object):
                 y = points[j].y-points[i].y
                 __ x __ 0 a.. y __ 0:
                     dup += 1
-                    continue
+                    _____
                 gcd = gcd(x, y)
                 __ gcd:
                     x //= gcd

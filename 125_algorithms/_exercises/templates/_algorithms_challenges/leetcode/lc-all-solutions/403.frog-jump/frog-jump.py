@@ -14,7 +14,7 @@ c_ Solution(object):
         ___ i __ r..(pos + 1, l..(stones)):
           step = stones[i] - stones[pos]
           __ step < k - 1:
-            continue;
+            _____;
           __ step > k + 1:
             dp[key] = F..
             r.. F..

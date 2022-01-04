@@ -54,5 +54,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().longestArithSeqLength([20,1,15,3,10,5,8]) __ 4

@@ -18,7 +18,7 @@ c_ Solution:
             ___ j __ r..(m + 1):
                 ___ k __ r..(max(0, i - limit), i):
                     __ j + cost[i] > m:
-                        continue
+                        _____
                     dp[i][j] += dp[k][j + cost[i]]
 
         r.. s..(dp[n])

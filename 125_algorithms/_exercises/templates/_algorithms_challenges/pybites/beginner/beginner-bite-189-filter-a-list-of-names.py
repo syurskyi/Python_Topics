@@ -23,7 +23,7 @@ ___ filter_names_1(names):
     cnt = 0
     ___ name __ names:
         __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha
-            continue
+            _____
         __ name.l..[0] __ QUIT_CHAR:
             break
         __ cnt < 5:
@@ -40,7 +40,7 @@ ___ filter_names_2(names):
     cnt = 0
     ___ name __ names:
         __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha
-            continue
+            _____
         __ name.l..[0] __ QUIT_CHAR:
             break
         __ cnt < 5:

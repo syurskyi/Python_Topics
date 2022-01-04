@@ -26,6 +26,6 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().hammingDistance(3, 1) __ 1
     ... Solution().hammingDistance(1, 4) __ 2

@@ -18,14 +18,14 @@ c_ Groceries:
             product = f'{item.product}'
             __ item.craving:
                 product += ' (craving)'
-            print(f'{product:<30} | {item.price:>3}')
+            print _*{product:<30} | {item.price:>3}')
         _print_total(items)
 
     ___ _print_total(self, items):
         """Calculate and print total price of cart"""
         total = s..(item.price ___ item __ items)
         print('-' * 36)
-        print(f'{"Total":<30} | {total:>3}')
+        print _*{"Total":<30} | {total:>3}')
 
     ___ add(self, new_item):
         """Add a new item to cart, exceptions left out for simplicity"""
@@ -40,7 +40,7 @@ c_ Groceries:
                 _items.pop(i)
                 break
         ____:
-            r.. IndexError(f'{product} not in cart')
+            r.. IndexError _*{product} not in cart')
         show()
 
     ___ s..(self, s..):

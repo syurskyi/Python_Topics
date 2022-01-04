@@ -65,7 +65,7 @@ c_ Solution:
         ___ j __ r..(n):
             ___ i __ r..(m-1):
                 __ lt[i]:
-                    continue
+                    _____
                 __ A[i][j] > A[i+1][j]:
                     deleted += 1
                     break

@@ -17,8 +17,8 @@ ___ flatten(list_of_lists):
     ____:
         output = [list_of_lists[0]] + flatten(list_of_lists[1:])
     ___ item __ output:
-        __ t..(item) __ tuple:
+        __ t..(item) __ t..:
             (a, b) = item
             output.a..(a)
             output.a..(b)
-    r.. s..([i ___ i __ output __ t..(i) != tuple])
+    r.. s..([i ___ i __ output __ t..(i) != t..])

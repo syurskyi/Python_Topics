@@ -9,10 +9,10 @@ c_ Solution(object):
     res    # list
     ___ i __ r..(0, l..(nums)):
       __ i > 0 a.. nums[i] __ nums[i - 1]:
-        continue
+        _____
       ___ j __ r..(i + 1, l..(nums)):
         __ j > i + 1 a.. nums[j] __ nums[j - 1]:
-          continue
+          _____
         start = j + 1
         end = l..(nums) - 1
         w.... start < end:

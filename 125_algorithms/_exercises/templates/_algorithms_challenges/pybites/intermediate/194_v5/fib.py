@@ -12,4 +12,4 @@ ___ cached_fib(n):
 
 __ _____ __ _____
     ___ x __ r..(11):
-        print(f'fib({x}) = {cached_fib(x)}')
+        print _*fib({x}) = {cached_fib(x)}')

@@ -37,7 +37,7 @@ ___ handle_args(args_ N..
 
     __ args.weight a.. args.length:
         bmi = calc_bmi(args.weight, args.length)
-        print(f'Your BMI is: {bmi}')
+        print _*Your BMI is: {bmi}')
     ____:
         # could enforce SystemExit in create_parser/add_argument, but argparse
         # docs are not clear how to do it, so raising the exception here manually

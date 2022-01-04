@@ -56,7 +56,7 @@ ___ group_names_by_country(data: s.. = data) __ defaultdict:
         print(line)
         __ line_cnt __ 0:
             line_cnt += 1
-            continue
+            _____
         arr = line.s..(',')
         print(arr)
         name = arr[1] + " " + arr[0]

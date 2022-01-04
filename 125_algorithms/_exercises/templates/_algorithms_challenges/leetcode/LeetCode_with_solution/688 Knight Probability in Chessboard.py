@@ -103,6 +103,6 @@ c_ Solution:
         ])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().knightProbability(3, 2, 0, 0)  __ 0.0625
     ... Solution().knightProbability(3, 3, 0, 0)  __ 0.015625

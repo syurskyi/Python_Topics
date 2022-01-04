@@ -48,5 +48,5 @@ c_ Solution(object):
         r.. gmax
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxRotateFunction([4, 3, 2, 6]) __ 26

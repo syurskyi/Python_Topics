@@ -46,6 +46,6 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().characterReplacement("AABABBA", 1) __ 4
     ... Solution().characterReplacement("ABAB", 2) __ 4

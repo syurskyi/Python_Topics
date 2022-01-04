@@ -18,14 +18,14 @@ c_ Groceries:
             product = f'{item.product}'
             __ item.craving:
                 product += ' (craving)'
-            print(f'{product:<30} | {item.price:>3}')
+            print _*{product:<30} | {item.price:>3}')
         _print_total(items)
 
     ___ _print_total(self, items):
         """Calculate and print total price of cart"""
         total = s..(item.price ___ item __ items)
         print('-' * 36)
-        print(f'{"Total":<30} | {total:>3}')
+        print _*{"Total":<30} | {total:>3}')
 
     ___ add(self, new_item):
         """Add a new item to cart, exceptions left out for simplicity"""
@@ -40,7 +40,7 @@ c_ Groceries:
                 _items.pop(i)
                 break
         ____:
-            r.. IndexError(f'{product} not in cart')
+            r.. IndexError _*{product} not in cart')
         show()
 
     ___ s..(self, s..):
@@ -66,13 +66,13 @@ c_ Groceries:
 
 
 ___ create_parser
-    parse = argparse.ArgumentParser(description='')
-    group = parse.add_mutually_exclusive_group()
+    p.. = argparse.ArgumentParser(description='')
+    group = p...add_mutually_exclusive_group()
     group.add_argument('-a', '--add', nargs=3, help='add item providing name (str), price (int), and craving (bool)')
     group.add_argument('-d', '--delete', nargs=1, help='delete a product by name (str)')
     group.add_argument('-l', '--list', action='store_true', help='show items in cart')
     group.add_argument('-s', '--search', nargs=1, help='search items by name')
-    r.. parse
+    r.. p..
 
 
 ___ handle_args(args=N.., cart_ N..

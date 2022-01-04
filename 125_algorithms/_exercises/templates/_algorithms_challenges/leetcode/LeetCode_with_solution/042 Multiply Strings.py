@@ -109,7 +109,7 @@ c_ Solution(object):
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     solution = Solution()
     ... [1, 2] __ solution.add([2, 1], [9])
     ... s..(123*999) __ solution.multiply("123", "999")

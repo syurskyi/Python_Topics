@@ -51,6 +51,6 @@ c_ Solution(object):
         r.. max(map(max, F))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxCoins([3, 1, 5, 8]) __ 167
 

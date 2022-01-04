@@ -39,5 +39,5 @@ c_ Solution:
         r.. minutes
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findMinDifference(["23:59","00:00"]) __ 1

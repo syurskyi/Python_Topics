@@ -8,7 +8,7 @@ c_ Definition:
 
     ___ get _
         df  pandas.read_csv("data.csv")
-        r_ tuple(df.loc[df['word']__term]['definition'])
+        r_ t..(df.loc[df['word']__term]['definition'])
 
 
 # d = Definition(term="sun")

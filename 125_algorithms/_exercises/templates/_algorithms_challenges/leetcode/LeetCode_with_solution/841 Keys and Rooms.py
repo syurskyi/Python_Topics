@@ -56,6 +56,6 @@ c_ Solution:
                 dfs(G, nbr, visited)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canVisitAllRooms([[1],[2],[3],[]]) __ T..
     ... Solution().canVisitAllRooms([[1,3],[3,0,1],[2],[0]]) __ F..

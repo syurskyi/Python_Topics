@@ -13,7 +13,7 @@ ___ print_hanging_indents(poem):
         line = line.s..
         __ line __ "":
             current_line = 0
-            continue
+            _____
         ____:
             current_line = current_line + 1
         # check the line we're dealing with

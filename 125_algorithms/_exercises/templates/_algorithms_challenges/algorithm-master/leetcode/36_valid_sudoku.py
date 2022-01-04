@@ -16,7 +16,7 @@ c_ Solution:
 
             ___ y __ r..(n):
                 __ board[x][y] __ EMPTY:
-                    continue
+                    _____
                 __ board[x][y] n.. __ CANDS:
                     r.. F..
                 __ board[x][y] __ used:
@@ -28,7 +28,7 @@ c_ Solution:
 
             ___ x __ r..(n):
                 __ board[x][y] __ EMPTY:
-                    continue
+                    _____
                 __ board[x][y] __ used:
                     r.. F..
                 used.add(board[x][y])
@@ -40,7 +40,7 @@ c_ Solution:
                 ___ x __ r..(i * 3, i * 3 + 3):
                     ___ y __ r..(j * 3, j * 3 + 3):
                         __ board[x][y] __ EMPTY:
-                            continue
+                            _____
                         __ board[x][y] __ used:
                             r.. F..
                         used.add(board[x][y])

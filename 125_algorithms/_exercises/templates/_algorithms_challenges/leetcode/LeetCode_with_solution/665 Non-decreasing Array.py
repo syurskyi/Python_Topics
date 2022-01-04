@@ -28,7 +28,7 @@ c_ Solution:
         changed = F..
         ___ i __ r..(l..(A) - 1):
             __ A[i] <= A[i + 1]:
-                continue
+                _____
             __ n.. changed:
                 __ i - 1 < 0 o. A[i-1] <= A[i+1]:
                     A[i] = A[i+1]
@@ -47,7 +47,7 @@ c_ Solution:
         changed = F..
         ___ i __ r..(l..(A) - 1):
             __ A[i] <= A[i + 1]:
-                continue
+                _____
             __ n.. changed:
                 A[i] = A[i + 1]  # Error
                 __ i - 1 < 0 o. A[i - 1] <= A[i]:
@@ -60,7 +60,7 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().checkPossibility([4,2,3]) __ T..
     ... Solution().checkPossibility([3,4,2,3]) __ F..
     ... Solution().checkPossibility([2,3,3,2,4]) __ T..

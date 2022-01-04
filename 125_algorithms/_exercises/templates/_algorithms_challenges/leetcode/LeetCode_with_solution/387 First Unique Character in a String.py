@@ -35,5 +35,5 @@ c_ Solution(object):
         r.. m..(lst) __ lst ____ -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().firstUniqChar("leetcode") __ 0

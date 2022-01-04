@@ -24,7 +24,7 @@ ___ create_chessboard(size=8):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     create_chessboard()

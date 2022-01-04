@@ -15,7 +15,7 @@ c_ Calorie:
         r_ result
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     temperature  Temperature(country"italy", city"rome").get()
     calorie  Calorie(weight70, height175, age32, temperaturetemperature)
     print(calorie.calculate())

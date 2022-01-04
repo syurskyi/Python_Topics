@@ -14,10 +14,10 @@ c_ Solution:
         ___ j __ r..(max_size):
             ___ word __ words:
                 __ j >= l..(word):
-                    continue
+                    _____
 
                 __ word[j] __ gotcha:
-                    continue
+                    _____
 
                 ans.a..(word[j])
                 gotcha.add(word[j])
@@ -46,7 +46,7 @@ c_ Solution:
             nxt = words[i + 1]
             ___ j __ r..(m..(l..(cur), l..(nxt))):
                 __ cur[j] __ nxt[j]:
-                    continue
+                    _____
                 __ cur[j] n.. __ edges:
                     edges[cur[j]] = set()
                 __ nxt[j] n.. __ edges[cur[j]]:
@@ -58,7 +58,7 @@ c_ Solution:
         ___ c __ queue:
             ans.a..(c)
             __ c n.. __ edges:
-                continue
+                _____
             ___ _c __ edges[c]:
                 indeg[_c] -= 1
                 __ indeg[_c] __ 0:

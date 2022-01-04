@@ -54,9 +54,9 @@ c_ Solution:
         """
         bfs
         """
-        destination = tuple(i..(c) ___ c __ target)
+        destination = t..(i..(c) ___ c __ target)
         deadends_set = set(
-            tuple(i..(c) ___ c __ s)
+            t..(i..(c) ___ c __ s)
             ___ s __ deadends
         )
         q = [(0, 0, 0, 0)]
@@ -74,7 +74,7 @@ c_ Solution:
                     ___ delta __ (-1, 1):
                         nxt_lst = l..(e)  # copy
                         nxt_lst[i] = (nxt_lst[i] + delta) % 10  # forward or backward
-                        nxt = tuple(nxt_lst)
+                        nxt = t..(nxt_lst)
                         __ nxt n.. __ visited a.. nxt n.. __ deadends_set:
                             visited.add(nxt)
                             cur_q.a..(nxt)
@@ -85,6 +85,6 @@ c_ Solution:
         r.. -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().openLock(["8888"], "0009") __ 1
     ... Solution().openLock(["8887","8889","8878","8898","8788","8988","7888","9888"], "8888") __ -1

@@ -20,7 +20,7 @@ c_ Solution:
 
         ___ i __ r..(l..(S)):
             __ i > 0 a.. S[i] __ S[i - 1]:
-                continue
+                _____
             path.a..(S[i])
             dfs(S[:i] + S[i + 1:], ans, path)
             path.pop()

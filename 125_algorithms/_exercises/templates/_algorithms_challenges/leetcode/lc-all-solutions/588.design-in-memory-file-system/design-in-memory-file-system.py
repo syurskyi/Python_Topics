@@ -37,7 +37,7 @@ c_ FileSystem(object):
     p = root
     ___ name __ path:
       __ n.. name:
-        continue
+        _____
       __ name n.. __ p.childs:
         __ isAutoCreate:
           p.childs[name] = FileNode(name)

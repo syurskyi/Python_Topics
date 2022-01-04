@@ -1,5 +1,5 @@
 ____ dataclasses _______ dataclass
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 ____ dateutil.relativedelta _______ relativedelta
 
 RETURN_FORMAT = '{name} was {age} years old when {movie} came out.'
@@ -25,5 +25,5 @@ ___ get_age(actor: Actor, movie: Movie) __ s..:
        e.g.
        Wesley Snipes was 28 years old when New Jack City came out.
     """
-    age = relativedelta(parse(movie.release_date), parse(actor.born)).years
+    age = relativedelta(p..(movie.release_date), p..(actor.born)).years
     r.. RETURN_FORMAT.f..(name=actor.name, movie=movie.title, age=age)

@@ -9,7 +9,7 @@ ___ filter_accents(text):
       char = unicodedata.normalize("NFD", text[i]).encode("ascii", "ignore").decode("utf-8")
 
       __ char.l.. __ text[i].l..:
-         continue
+         _____
       ____:
          accent_chars.a..(text[i].lower())
 

@@ -8,10 +8,10 @@ c_ Solution(object):
     w.... start < end:
       __ n.. s[start].i..
         start += 1
-        continue
+        _____
       __ n.. s[end].i..
         end -= 1
-        continue
+        _____
       __ s[start].l.. != s[end].l..:
         r.. F..
       start += 1

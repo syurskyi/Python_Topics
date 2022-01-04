@@ -34,9 +34,9 @@ ___ get_movies_by_director
     ___ row __ reader:
         __ row['title_year']:
             __ i..(row['title_year'].strip()) < 1960:
-                continue
+                _____
         ____:
-            continue
+            _____
         remap = [fun(row[x]) ___ fun, x __ z..(conv, fields)]
         movie_dict[row[NAME]].a..(Movie(*remap))
     r.. movie_dict

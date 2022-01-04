@@ -102,6 +102,6 @@ c_ Solution_TLE:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canPartitionKSubsets([5, 3, 2, 3, 1, 2, 4], 4) __ T..
     ... Solution().canPartitionKSubsets([4, 3, 2, 3, 5, 2, 1], 4) __ T..

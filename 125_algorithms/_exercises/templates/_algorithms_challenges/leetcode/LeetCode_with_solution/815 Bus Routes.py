@@ -106,5 +106,5 @@ c_ Solution:
         r.. -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numBusesToDestination([[1, 2, 7], [3, 6, 7]], 1, 6) __ 2

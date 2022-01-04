@@ -119,12 +119,12 @@ c_ Solution:
         r.. ret
 
     ___ ser(self, board):
-        r.. tuple(
-            tuple(row)
+        r.. t..(
+            t..(row)
             ___ row __ board
         )
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().slidingPuzzle([[1,2,3],[4,0,5]]) __ 1
     ... Solution().slidingPuzzle([[1,2,3],[5,4,0]]) __ -1

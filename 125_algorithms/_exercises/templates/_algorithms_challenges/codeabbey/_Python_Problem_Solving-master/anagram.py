@@ -6,7 +6,7 @@ ___ anagram(s,t):
         r.. F..
     ___ i __ t:
         __ i __ s:
-            continue
+            _____
         r.. F..
 
     r.. T..

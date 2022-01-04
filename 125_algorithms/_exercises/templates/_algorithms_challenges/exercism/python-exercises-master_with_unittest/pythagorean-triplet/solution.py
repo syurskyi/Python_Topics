@@ -14,7 +14,7 @@ ___ primitive_triplets(nbr):
     factors = [(m, n) ___ m, n __ z..(r..(a), a) __ m > n]
     ts = set()
     ___ m, n __ factors:
-        ts.update([tuple(s..([nbr, m * m - n * n, m * m + n * n]))])
+        ts.update([t..(s..([nbr, m * m - n * n, m * m + n * n]))])
     r.. ts
 
 
@@ -60,7 +60,7 @@ ___ factor(n):
         prime = primes[idx]
         idx += 1
         __ n % prime != 0:
-            continue
+            _____
         factors.a..(prime)
         p = 0
         w.... n % prime __ 0:

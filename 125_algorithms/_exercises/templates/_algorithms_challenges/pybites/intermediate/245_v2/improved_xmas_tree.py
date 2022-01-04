@@ -43,7 +43,7 @@ ___ generate_improved_xmas_tree(rows=10):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     rows = 50
     print(generate_improved_xmas_tree(rows))

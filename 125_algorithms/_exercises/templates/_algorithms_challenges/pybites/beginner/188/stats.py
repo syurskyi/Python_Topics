@@ -71,7 +71,7 @@ ___ create_stats_report(data_ N..
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     print(get_all_line_counts())

@@ -16,7 +16,7 @@ c_ Solution(object):
     w.... stack:
       p = stack.pop()
       __ n.. p[1]:
-        continue
+        _____
       __ p[0] __ 0:
         __ p[1].val <= prev:
           r.. F..

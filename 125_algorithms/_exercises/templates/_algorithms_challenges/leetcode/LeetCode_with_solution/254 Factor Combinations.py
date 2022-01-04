@@ -70,5 +70,5 @@ c_ Solution:
                 cur.pop()
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print Solution().getFactors(16)

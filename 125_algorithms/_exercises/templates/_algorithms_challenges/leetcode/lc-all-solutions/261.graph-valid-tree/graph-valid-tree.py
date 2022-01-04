@@ -9,7 +9,7 @@ c_ Solution:
       visited[root] = 1
       ___ nbr __ graph.get(root, []):
         __ nbr __ parent:
-          continue
+          _____
         ____ visited[nbr] != 0:
           r.. F..
         __ n.. dfs(nbr, graph, visited, root):

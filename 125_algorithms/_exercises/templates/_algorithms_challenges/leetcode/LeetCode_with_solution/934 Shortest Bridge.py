@@ -92,5 +92,5 @@ c_ Solution:
                 dfs(A, I, J, colors, color)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().shortestBridge([[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]) __ 1

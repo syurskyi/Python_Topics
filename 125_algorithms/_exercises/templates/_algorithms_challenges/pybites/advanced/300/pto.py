@@ -105,7 +105,7 @@ ___ four_day_weekends(*args,
             new_balance = paid_time_off -  HOURS *  four_day_weekends * 2
             new_days = abs(new_balance // 8)
             title = f'{four_day_weekends} Four-Day Weekend{"s" __ four_day_weekends != 1 ____ ""}'
-            print(f'{title:^{number}}')
+            print _*{title:^{number}}')
             print('='* 24)
 
             labels = ['PTO:','BALANCE:']
@@ -114,7 +114,7 @@ ___ four_day_weekends(*args,
 
             
             ___ label,value_1,value_2 __ z..(labels,original,new):
-                print(f'{label:>8} {value_1:>{length}} ({value_2} days)')
+                print _*{label:>8} {value_1:>{length}} ({value_2} days)')
 
             print()
             
@@ -133,7 +133,7 @@ ___ four_day_weekends(*args,
 
 
         ____:
-            print(f'Remaining Work Days: {workdays * 8} ({workdays} days)')
+            print _*Remaining Work Days: {workdays * 8} ({workdays} days)')
 
 
             print('\n'.j..(map(s..,workday_dates)))
@@ -141,5 +141,5 @@ ___ four_day_weekends(*args,
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     four_day_weekends(start_month=10,show_workdays=T..)

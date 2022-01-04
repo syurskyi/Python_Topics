@@ -22,7 +22,7 @@ ___ slice_and_dice(text: s.. = text) __ l..:
     results    # list
     lines = text.s..
     ___ line __ lines.s..("\n"):
-        l = line.lstrip()
+        l = line.l..
         __ l[:1].isl..
             word = line.s..(' ')[-1].rstrip('.!')
             results.a..(word)

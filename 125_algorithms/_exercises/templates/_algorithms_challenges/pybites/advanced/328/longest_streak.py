@@ -1,7 +1,7 @@
 _______ json
 ____ dateutil.tz _______ gettz
 ____ d__ _______ date, t.., tzinfo
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 ____ pathlib _______ Path
 _______ requests
 ____ typing _______ Tuple, Optional, List
@@ -49,7 +49,7 @@ ___ longest_streak(
     ___ i __ r..(l..(commits)):
         commit = commits[i]
         __ commit['passed']:
-            date = parse(commit['date'])
+            date = p..(commit['date'])
             date = date.astimezone(my_tz)
 
 
@@ -89,7 +89,7 @@ ___ longest_streak(
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     streak = longest_streak()
     print(f"My longest streak went from {streak[0]} through {streak[1]}")
     print(f"The streak lasted {(streak[1]-streak[0]).days + 1} days")

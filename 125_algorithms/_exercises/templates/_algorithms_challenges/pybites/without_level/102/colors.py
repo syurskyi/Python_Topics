@@ -15,6 +15,6 @@ ___ print_colors
 
         __ inp n.. __ VALID_COLORS:
             print("Not a valid color")
-            continue
+            _____
 
         print(inp)

@@ -57,7 +57,7 @@ ___ strip_comments(code):
     r.. code
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     print(class_with_method)
 

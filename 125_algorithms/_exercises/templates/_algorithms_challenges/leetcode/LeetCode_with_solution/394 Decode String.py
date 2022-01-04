@@ -111,7 +111,7 @@ c_ SolutionError(object):
         r.. ''.j..(ret)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().decodeString('2[abc]3[cd]ef') __ 'abcabccdcdcdef'
 
 

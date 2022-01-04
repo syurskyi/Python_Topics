@@ -48,7 +48,7 @@ c_ Solution(object):
     :rtype: NestedInteger
     """
 
-    ___ parse(s, i):
+    ___ p..(s, i):
       __ s[i] __ "[":
         i += 1
         ret = NestedInteger()
@@ -56,7 +56,7 @@ c_ Solution(object):
           __ s[i] __ "]":
             r.. ret, i + 1
           ____ s[i] __ "[-0123456789":
-            res, i = parse(s, i)
+            res, i = p..(s, i)
             ret.add(res)
           ____:
             i += 1
@@ -66,5 +66,5 @@ c_ Solution(object):
           j += 1
         r.. NestedInteger(i..(s[i:j])), j
 
-    res, _ = parse(s, 0)
+    res, _ = p..(s, 0)
     r.. res

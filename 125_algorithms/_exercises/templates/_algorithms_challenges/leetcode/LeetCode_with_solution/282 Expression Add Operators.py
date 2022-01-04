@@ -36,7 +36,7 @@ c_ Solution(object):
         ____:
             ___ i __ xrange(pos, l..(num)):
                 __ i != pos a.. num[pos] __ "0":
-                    continue
+                    _____
                 nxt_val = i..(num[pos:i+1])
 
                 __ n.. cur_str:
@@ -47,5 +47,5 @@ c_ Solution(object):
                     dfs(num, target, i+1, cur_str+"*%d"%nxt_val, cur_val-mul+mul*nxt_val, mul*nxt_val, ret)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().addOperators("232", 8) __ ["2+3*2", "2*3+2"]

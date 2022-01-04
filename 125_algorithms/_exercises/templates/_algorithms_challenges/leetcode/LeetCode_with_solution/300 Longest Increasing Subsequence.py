@@ -119,5 +119,5 @@ c_ Solution(object):
         r.. maxa
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().lengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]) __ 4

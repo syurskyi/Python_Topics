@@ -12,7 +12,7 @@ c_ Solution(object):
       ___ j __ r..(0, 9):
         ib = (i / 3) * 3 + j / 3
         __ board[i][j] __ ".":
-          continue
+          _____
         num = i..(board[i][j]) - 1
         __ cacheRow[i][num] != 0 o. cacheCol[j][num] != 0 o. cacheBox[ib][num] != 0:
           r.. F..

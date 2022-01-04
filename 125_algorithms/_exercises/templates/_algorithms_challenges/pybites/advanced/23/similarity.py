@@ -37,7 +37,7 @@ ___ get_similarities(tags_ N..
     ___ word_1 __ tags:
         ___ word_2 __ tags:
             __ word_1 __ word_2:
-                continue
+                _____
             sm = SequenceMatcher(N..,word_1,word_2)
             print(sm.ratio())
             __ sm.ratio() > .95:

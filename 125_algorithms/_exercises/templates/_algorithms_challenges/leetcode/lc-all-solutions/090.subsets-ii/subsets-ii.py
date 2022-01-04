@@ -10,7 +10,7 @@ c_ Solution(object):
 
       ___ i __ r..(start, l..(nums)):
         __ start != i a.. nums[i] __ nums[i - 1]:
-          continue
+          _____
         __ i n.. __ visited:
           visited[i] = 1
           path.a..(nums[i])

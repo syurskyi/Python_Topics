@@ -61,5 +61,5 @@ c_ Solution(object):
         r.. chr(ord('a') + d - 10)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().toHex(-1) __ 'ffffffff'

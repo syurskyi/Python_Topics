@@ -27,7 +27,7 @@ ___ get_feed_entries(feed=FEED):
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    d = feedparser.parse(feed)
+    d = feedparser.p..(feed)
     entries = d.entries
     
     all_entries =[]
@@ -93,7 +93,7 @@ ___ main
         term = input("Search Term? ")
         __ term __ '':
             print('Please provide a search term')
-            continue
+            _____
         __ term __ 'q':
             print('Bye')
             break

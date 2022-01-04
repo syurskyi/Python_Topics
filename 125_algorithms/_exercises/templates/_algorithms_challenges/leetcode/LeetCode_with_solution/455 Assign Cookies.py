@@ -38,5 +38,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findContentChildren([10,9,8,7], [5,6,7,8]) __ 2

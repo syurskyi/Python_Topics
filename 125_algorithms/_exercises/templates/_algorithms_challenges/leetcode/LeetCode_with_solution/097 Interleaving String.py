@@ -97,7 +97,7 @@ c_ Solution(object):
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isInterleave("aa", "ab", "abaa") __ T..
     ... Solution().isInterleave("aabcc", "dbbca", "aadbbcbcac") __ T..
     ... Solution().isInterleave("aabcc", "dbbca", "aadbbbaccc") __ F..

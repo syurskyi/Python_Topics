@@ -4,7 +4,7 @@
 #  How to create a Tuple?
 
 newTuple  ('a', 'b', 'c', 'd', 'e')
-newTuple1  tuple('abcde')
+newTuple1  t..('abcde')
 
 print(newTuple1)
 

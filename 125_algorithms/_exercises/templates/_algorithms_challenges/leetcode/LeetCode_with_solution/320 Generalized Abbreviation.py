@@ -51,7 +51,7 @@ c_ SolutionTLE(object):
                     ___ left __ lefts:
                         ___ right __ rights:
                             __ left a.. left[-1].isdigit() o. right a.. right[0].isdigit
-                                continue
+                                _____
 
                             ret.a..(left+pivot+right)
 
@@ -61,6 +61,6 @@ c_ SolutionTLE(object):
         r.. cache[word]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().generateAbbreviations("word") __ ['word', 'wor1', 'wo1d', 'wo2', 'w1rd', 'w1r1', 'w2d', 'w3',
                                                         '1ord', '1or1', '1o1d', '1o2', '2rd', '2r1', '3d', '4']

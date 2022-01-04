@@ -18,11 +18,11 @@ c_ Solution(object):
       ___ i __ r..(l..(balls)):
         ___ j __ r..(l..(line) + 1):
           __ j __ 0 a.. line[0] != balls[i]:
-            continue
+            _____
           ____ j __ l..(line) a.. line[-1] != balls[i]:
-            continue
+            _____
           ____ 0 < j < l..(line) a.. balls[i] != line[j - 1] a.. balls[i] != line[j]:
-            continue
+            _____
           res = m..(res, dfs(line[:j] + balls[i] + line[j:], balls[:i] + balls[i + 1:], visited))
       visited[line, balls] = res
       r.. res

@@ -131,7 +131,7 @@ c_ Twitter(object):
 # obj.unfollow(followerId,followeeId)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     twitter = Twitter()
     twitter.postTweet(1, 5)
     twitter.unfollow(1, 1)

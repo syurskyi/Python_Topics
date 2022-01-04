@@ -64,5 +64,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().advantageCount([2,7,11,15], [1,10,4,11]) __ [2,11,7,15]

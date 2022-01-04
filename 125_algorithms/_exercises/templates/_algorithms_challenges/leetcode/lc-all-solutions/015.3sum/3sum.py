@@ -8,7 +8,7 @@ c_ Solution(object):
     nums.s..()
     ___ i __ r..(0, l..(nums)):
       __ i > 0 a.. nums[i] __ nums[i - 1]:
-        continue
+        _____
       target = 0 - nums[i]
       start, end = i + 1, l..(nums) - 1
       w.... start < end:

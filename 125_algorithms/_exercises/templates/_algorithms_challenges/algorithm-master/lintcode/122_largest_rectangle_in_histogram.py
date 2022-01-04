@@ -50,7 +50,7 @@ c_ Solution:
 
         ___ right __ r..(l..(H)):
             __ right < n - 1 a.. H[right] <= H[right + 1]:
-                continue
+                _____
             Hmin = H[right]
             ___ left __ r..(right, -1, -1):
                 __ H[left] < Hmin:

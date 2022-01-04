@@ -23,7 +23,7 @@ ___ create_user_bar_chart(content):
     """
     counter = Counter(user[2] ___ user __ content)
     ___ tz __ s..(counter):
-        print(f'{tz: <20} | {"+"*counter[tz]}')
+        print _*{tz: <20} | {"+"*counter[tz]}')
 
 
 

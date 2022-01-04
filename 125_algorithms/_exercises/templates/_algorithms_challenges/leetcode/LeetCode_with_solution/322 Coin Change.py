@@ -70,5 +70,5 @@ c_ SolutionTLE(object):
         r.. F[amount] __ F[amount] != sys.maxint ____ -1
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().coinChange([243, 291, 335, 209, 177, 345, 114, 91, 313, 331], 7367) __ 23

@@ -27,9 +27,9 @@ c_ Solution:
                 _x = x + dx
                 _y = y + dy
                 __ n.. (0 <= _x < n a.. 0 <= _y < n):
-                    continue
+                    _____
                 __ (_x, _y) __ visited:
-                    continue
+                    _____
                 visited[_x, _y] = T..
                 heappush(heap, (G[_x][_y], _x, _y))
 

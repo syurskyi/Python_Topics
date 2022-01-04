@@ -30,7 +30,7 @@ ___ group_cars_by_manufacturer(cars):
     ___ key, group __ groupby(s..(cars), key_func):
         print(key.upper())
         ___ model __ l..(group):
-            print(f'- {model[1]}')
+            print _*- {model[1]}')
         print()
 
 group_cars_by_manufacturer(cars)

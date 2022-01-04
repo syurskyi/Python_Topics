@@ -37,7 +37,7 @@ c_ Solution:
 
             __ start __ 0:
                 dfs(s, i + 1, target, a, a, ans, [sa])
-                continue
+                _____
 
             dfs(s, i + 1, target, val + a, a, ans, path + ['+', sa])
             dfs(s, i + 1, target, val - a, -a, ans, path + ['-', sa])

@@ -65,5 +65,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findMinArrowShots([[10,16], [2,8], [1,6], [7,12]]) __ 2

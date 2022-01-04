@@ -37,7 +37,7 @@ c_ Solution(object):
             ___ i __ xrange(l..(s)):
                 word = s[:i+1]
                 __ word __ words:
-                    continue
+                    _____
 
                 char2word[pattern[0]] = word
                 words.add(word)

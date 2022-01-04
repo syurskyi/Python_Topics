@@ -2,7 +2,7 @@ _______ json
 _______ os
 ____ pathlib _______ Path
 _______ d__ __ dt
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 SCORES = [10, 50, 100, 175, 250, 400, 600, 800, 1000]
 BELTS = ('white yellow orange green blue brown black '
@@ -27,7 +27,7 @@ ___ get_belts(data: s..) __ d..:
     w__ open(data,'r') __ f:
         dates = json.load(f)
 
-    dates.s..(key=l.... x: parse(x['date']))
+    dates.s..(key=l.... x: p..(x['date']))
     
     
     belts    # dict

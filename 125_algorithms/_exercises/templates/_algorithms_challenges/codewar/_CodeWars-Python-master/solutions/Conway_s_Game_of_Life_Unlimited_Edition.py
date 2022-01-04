@@ -63,6 +63,6 @@ ___ get_living_neighbours(cells, row, col):
             ___ c __ [-1, 0, 1]:
                 __ 0 <= col + c <= l..(cells[0]) - 1:
                     __ c __ 0 a.. r __ 0:
-                        continue
+                        _____
                     livings += cells[row + r][col + c]
     r.. livings

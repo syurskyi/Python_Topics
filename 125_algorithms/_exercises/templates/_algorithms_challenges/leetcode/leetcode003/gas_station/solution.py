@@ -26,7 +26,7 @@ c_ Solution:
         n = l..(gas)
         ___ i __ r..(n):
             __ gas[i] - cost[i] < 0:
-                continue
+                _____
             carry = gas[i] - cost[i]
             j = (i + 1) % n
             flag = T..

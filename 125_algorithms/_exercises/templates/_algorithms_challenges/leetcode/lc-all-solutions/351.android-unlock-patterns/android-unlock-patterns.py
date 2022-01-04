@@ -18,7 +18,7 @@ c_ Solution(object):
           x, y, xp, yp = (i - 1) / 3, (i - 1) % 3, (prev - 1) / 3, (prev - 1) % 3
           __ (5 n.. __ visited a.. (x + xp, y + yp) __ (2, 2)) o. (
             (x __ xp a.. abs(y - yp) __ 2) o. (y __ yp a.. abs(x - xp) __ 2)) a.. (prev + i) / 2 n.. __ visited:
-            continue
+            _____
           visited |= {i}
           dfs(m, n, i, visited, length + 1)
           visited.discard(i)

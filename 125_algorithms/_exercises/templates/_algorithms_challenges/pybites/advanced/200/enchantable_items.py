@@ -81,7 +81,7 @@ ___ generate_enchantments(soup):
                 __ item __ 'fishing':
                     valid_items.a..('fishing_rod')
                 ____ item __ 'rod':
-                    continue
+                    _____
                 ____:
                     valid_items.a..(item)
                                                
@@ -155,7 +155,7 @@ ___ main
         print(minecraft_items[item], "\n")
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     main()
 
 """

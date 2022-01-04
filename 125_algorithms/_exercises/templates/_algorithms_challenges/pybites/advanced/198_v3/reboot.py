@@ -19,7 +19,7 @@ ___ extract_date(reboots):
     lines = reboots.splitlines(keepends=F..)
     ___ line __ lines:
         __ l..(line.strip()) __ 0:
-            continue
+            _____
         line_parts = line.s...s..
         time_part = line_parts[-1].s..(':')
         y.. d__ y.._2019,
@@ -47,7 +47,7 @@ ___ calc_max_uptime(reboots):
     ___ this_date __ extract_date(reboots):
         __ previous __ N..
             previous = this_date
-            continue
+            _____
         records.a..(((previous - this_date).days, s..(previous.date())))
         previous = this_date
     r.. s..(records)[-1]

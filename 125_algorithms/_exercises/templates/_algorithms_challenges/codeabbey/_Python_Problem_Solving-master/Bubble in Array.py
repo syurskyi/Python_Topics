@@ -12,7 +12,7 @@ ___ i __ r..(l..(a)):
         a[i] = a[i+1]
         a[i+1] = temp
     ____:
-        continue
+        _____
 
 #seed = seed - 4513010
 ___ j __ r..(l..(a)):

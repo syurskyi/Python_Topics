@@ -55,5 +55,5 @@ c_ Solution(object):
         r.. nums.index(N..)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().missingNumber([2, 0]) __ 1

@@ -85,5 +85,5 @@ ___ return_codon_usage_table(
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(return_codon_usage_table())

@@ -68,7 +68,7 @@ c_ Solution:
             s[i] = s[i - 1] + nums[i - 1] - mid
 
             __ i < k:
-                continue
+                _____
 
             """
             if there is a non-negative sum subarray of length at least k

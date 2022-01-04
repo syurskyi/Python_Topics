@@ -107,7 +107,7 @@ c_ RangeModule_own(object):
         res    # list
         ___ interval __ intervals:
             __ newInterval.right >= interval.right a.. newInterval.left <= interval.left:
-                continue
+                _____
             ____ newInterval.right <= interval.right a.. newInterval.left >= interval.left:
                 __ interval.left != newInterval.left:
                     res.a..(Interval(interval.left, newInterval.left))

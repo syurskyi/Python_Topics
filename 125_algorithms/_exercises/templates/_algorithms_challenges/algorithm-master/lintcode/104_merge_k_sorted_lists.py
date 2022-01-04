@@ -22,7 +22,7 @@ c_ Solution:
 
         ___ i __ r..(l..(lists)):
             __ n.. lists[i]:
-                continue
+                _____
 
             heapq.heappush(heap, (lists[i].val, i))
 

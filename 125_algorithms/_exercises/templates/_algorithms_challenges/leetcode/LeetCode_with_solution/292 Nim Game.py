@@ -56,5 +56,5 @@ c_ Solution(object):
         r.. F[n]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canWinNim(5)

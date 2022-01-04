@@ -43,7 +43,7 @@ ___ get_srt_section_ids(text: s..) __ List[i..]:
    r.. s..(sections_ranking, key=sections_ranking.get, r.._T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
    text1 = """
    1
    00:00:00,498 --> 00:00:02,827

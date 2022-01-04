@@ -47,5 +47,5 @@ c_ Solution(object):
 
         r.. T..
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isReflected([[1,1],[-1,-1]]) __ F..

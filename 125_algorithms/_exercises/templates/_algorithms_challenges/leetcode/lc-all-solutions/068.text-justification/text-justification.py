@@ -24,7 +24,7 @@ c_ Solution(object):
         __ l..(line) __ 1:
           ans.a..(line[0] + " " * (maxWidth - l..(line[0])))
           line    # list
-          continue
+          _____
         spaces = maxWidth - s..(map(l.., line))
         avgSpace = spaces / (l..(line) - 1)
         extraSpace = spaces % (l..(line) - 1)

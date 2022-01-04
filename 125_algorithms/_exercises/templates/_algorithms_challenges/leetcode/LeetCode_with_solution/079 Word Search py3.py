@@ -55,7 +55,7 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().exist([
         ["A","B","C","E"],
         ["S","F","E","S"],

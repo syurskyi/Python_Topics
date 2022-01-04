@@ -89,5 +89,5 @@ c_ Solution:
         r.. " ".j..(ret)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().replaceWords(["cat", "bat", "rat"], "the cattle was rattled by the battery") __ "the cat was rat by the bat"

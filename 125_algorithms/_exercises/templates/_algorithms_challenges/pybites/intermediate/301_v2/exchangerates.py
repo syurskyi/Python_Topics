@@ -5,7 +5,7 @@ _______ d__ __ dt
 ____ pathlib _______ Path
 ____ typing _______ Dict, List
 ____ urllib.request _______ urlretrieve
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
@@ -43,7 +43,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
     
 
     i = 0
-    w.... i < l..(dates) a.. parse(dates[i]).date() < start:
+    w.... i < l..(dates) a.. p..(dates[i]).date() < start:
         i += 1
 
 
@@ -53,13 +53,13 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
     current_date = start
         
     w.... i < l..(dates):
-        date = parse(dates[i]).date()
+        date = p..(dates[i]).date()
         __ date __ current_date:
             mapping[current_date] = date
             current_date += dt.t..(days=1)
             i += 1
         ____ date > current_date:
-            mapping[current_date] = parse(dates[i -1]).date()
+            mapping[current_date] = p..(dates[i -1]).date()
             current_date += dt.t..(days=1)
         ____:
             i += 1
@@ -78,7 +78,7 @@ ___ exchange_rates(
         data = json.load(f)
     __ (start_date < data['start_at']) o. (end_date > data['end_at']):
         r.. ValueError("Invalid dates")
-    matching_dates = match_daily_rates(parse(start_date).date(),parse(end_date).date(),data['rates']) 
+    matching_dates = match_daily_rates(p..(start_date).date(),p..(end_date).date(),data['rates']) 
 
 
     result    # dict
@@ -89,7 +89,7 @@ ___ exchange_rates(
 
     r.. result
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     exchange_rates()
 

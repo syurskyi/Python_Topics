@@ -90,7 +90,7 @@ c_ Solution:
             r.. power
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().leastOpsExpressTarget(3, 19) __ 5
     ... Solution().leastOpsExpressTarget(5, 501) __ 8
     ... Solution().leastOpsExpressTarget(2, 125046) __ 50

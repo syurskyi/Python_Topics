@@ -30,5 +30,5 @@ ___ top_python_questions(url=cached_so_url):
    r.. s..(ge_1m, key=l.... x: x[1], r.._T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
    print(top_python_questions())

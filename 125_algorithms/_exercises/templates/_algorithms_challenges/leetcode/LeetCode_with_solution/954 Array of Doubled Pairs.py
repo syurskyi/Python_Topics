@@ -42,7 +42,7 @@ c_ Solution:
         counter = Counter(A)
         ___ a __ A:
             __ counter[a] __ 0:
-                continue
+                _____
             __ counter[2*a] __ 0:
                 r.. F..
 
@@ -59,7 +59,7 @@ c_ Solution:
         counter = Counter(A)
         ___ a __ A:
             __ counter[a] __ 0:
-                continue
+                _____
             counter[a] -= 1
             __ a > 0:
                 target = 2 * a
@@ -76,5 +76,5 @@ c_ Solution:
         r.. T..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().canReorderDoubled([4,-2,2,-4]) __ T..

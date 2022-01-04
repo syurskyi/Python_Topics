@@ -8,7 +8,7 @@ c_ Solution(object):
         ___ i, num __ e..(A):
             __ i > 0:
                 __ num __ A[i-1]:
-                    continue
+                    _____
                 __ num > A[i-1]:
                     __ increase __ F..:
                         r.. F..

@@ -17,7 +17,7 @@ ___ is_anagram(word1, word2):
 
     ___ character __ word1:
         __ character __ ' ':
-            continue
+            _____
         word_2_counts[character]  -= 1
         __ word_2_counts[character] __ 0:
             del word_2_counts[character]

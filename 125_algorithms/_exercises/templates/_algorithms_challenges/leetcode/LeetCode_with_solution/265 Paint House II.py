@@ -34,5 +34,5 @@ c_ Solution(object):
         r.. m..(F[n][i] ___ i __ xrange(m))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minCostII([[8]]) __ 8

@@ -41,14 +41,14 @@ blood_type_text = {
 ___ _blood_int(b_type):
     __ isi..(b_type, i..):
         __ b_type n.. __ r..(Bloodtype.ZERO_NEG.value, Bloodtype.AB_POS.value + 1):
-            r.. ValueError(f'Bad blood integer {b_type}')
+            r.. ValueError _*Bad blood integer {b_type}')
         r.. b_type
     ____ isi..(b_type, s..):
         __ b_type n.. __ blood_type_text:
-            r.. ValueError(f'Bad blood type {b_type}')
+            r.. ValueError _*Bad blood type {b_type}')
         b_type = blood_type_text[b_type]
     ____ n.. isi..(b_type, Bloodtype):
-        r.. T..(f'Invalid blood type type {t..(b_type)}')
+        r.. T.. _*Invalid blood type type {t..(b_type)}')
     r.. b_type.value
 
 
@@ -64,7 +64,7 @@ ___ check_bt(donor, recipient):
 
 
 # hint
-___ _particular_antigen_comp(donor: i.., recipient: i..) __ tuple:
+___ _particular_antigen_comp(donor: i.., recipient: i..) __ t..:
     """Returns a particalar antigen compatibility, where each tuple member
     marks a compatibility for a particular antigen  (A, B, Rh-D).
     If tuple member is non-negative there is a compatibility.

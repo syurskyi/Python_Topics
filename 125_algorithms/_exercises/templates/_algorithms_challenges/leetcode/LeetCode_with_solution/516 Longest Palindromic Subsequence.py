@@ -49,5 +49,5 @@ c_ Solution:
         r.. F[0][n-1]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().longestPalindromeSubseq("bbbab") __ 4

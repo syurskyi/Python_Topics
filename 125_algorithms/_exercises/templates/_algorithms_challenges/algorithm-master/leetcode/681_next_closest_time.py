@@ -39,7 +39,7 @@ c_ Solution:
 
         ___ a __ s..(times):
             __ d.. a.. a __ d..[-1]:
-                continue
+                _____
 
             d...a..(a)
 

@@ -26,7 +26,7 @@ c_ Solution(object):
       __ v __ 0:
         d[numerator] = l..(res) - 1
         numerator *= 10
-        continue
+        _____
       d[numerator] = l..(res) - 1
       numerator = r * 10
       __ r __ 0:

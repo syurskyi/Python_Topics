@@ -10,7 +10,7 @@ ___ test_assert_number_of_entries
 
 
 ___ test_all_list_items_are_namedtuples
-    ... a..(isi..(game, tuple) ___ game __ games)
+    ... a..(isi..(game, t..) ___ game __ games)
 
 
 ___ test_assert_all_links_contain_store

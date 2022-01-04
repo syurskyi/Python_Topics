@@ -148,7 +148,7 @@ c_ Document:
         r.. '\n'.j..(lines)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     # this part is only executed when you run the file and is ignored by the tests
     # you can use this section for debugging and testing
     d = (

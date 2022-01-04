@@ -16,7 +16,7 @@ c_ Solution(object):
       ___ di, dj __ directions:
         p, q = i + di, j + dj
         __ p < 0 o. q < 0 o. p >= l..(matrix) o. q >= l..(matrix[0]):
-          continue
+          _____
         __ (p, q) n.. __ cache a.. matrix[p][q] > matrix[i][j]:
           cache.add((p, q))
           r = dfs(matrix, p, q, visited, cache)

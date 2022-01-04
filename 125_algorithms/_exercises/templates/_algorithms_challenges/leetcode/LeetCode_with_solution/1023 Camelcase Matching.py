@@ -67,5 +67,5 @@ c_ Solution:
         r.. i __ l..(q) a.. j __ l..(p)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().camelMatch(["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa") __ [T.., F.., T.., F.., F..]

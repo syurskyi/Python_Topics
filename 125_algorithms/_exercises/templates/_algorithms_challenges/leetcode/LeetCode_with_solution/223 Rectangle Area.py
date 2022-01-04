@@ -24,5 +24,5 @@ c_ Solution:
         r.. S_A + S_B - l*h
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().computeArea(-2, -2, 2, 2, -2, -2, 2, 2) __ 16

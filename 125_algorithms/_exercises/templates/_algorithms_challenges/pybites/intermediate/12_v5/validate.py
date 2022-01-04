@@ -27,8 +27,8 @@ ___ get_secret_token(username):
     ___ user __ USERS:
         __ user.name __ username:
             __ user.expired:
-                r.. UserAccessExpired(f'No access available for {username}')
+                r.. UserAccessExpired _*No access available for {username}')
             __ user.role __ ADMIN:
                 r.. SECRET
-            r.. UserNoPermission(f'User {username} has insufficient permission')
-    r.. UserDoesNotExist(f'User {username} does not exist')
+            r.. UserNoPermission _*User {username} has insufficient permission')
+    r.. UserDoesNotExist _*User {username} does not exist')

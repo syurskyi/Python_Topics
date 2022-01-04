@@ -63,7 +63,7 @@ c_ Solution:
         ___ i __ r..(1, l + 1):
             num_str = S[:i]
             __ l..(num_str) > 1 a.. num_str.startswith("0"):
-                continue
+                _____
 
             num = i..(num_str)
             __ num > MAX:
@@ -72,7 +72,7 @@ c_ Solution:
             ___ j __ r..(i + 1, l + 1):
                 num2_str = S[i:j]
                 __ l..(num2_str) > 1 a.. num2_str.startswith("0"):
-                    continue
+                    _____
 
                 num2 = i..(num2_str)
                 __ num2 > MAX:
@@ -98,6 +98,6 @@ c_ Solution:
         r.. []
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().splitIntoFibonacci("123456579") __ [123,456,579]
     ... Solution().splitIntoFibonacci("01123581321345589") __ [0,1,1,2,3,5,8,13,21,34,55,89]

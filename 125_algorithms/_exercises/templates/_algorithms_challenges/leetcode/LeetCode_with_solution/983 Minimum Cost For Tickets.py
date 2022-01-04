@@ -121,5 +121,5 @@ c_ Solution:
                 F[i] = m..(F[i], F[i-1] + costs[0])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]) __ 11

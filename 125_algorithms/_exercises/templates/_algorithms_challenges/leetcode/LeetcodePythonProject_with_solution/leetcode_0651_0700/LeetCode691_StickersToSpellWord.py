@@ -29,7 +29,7 @@ c_ Solution(object):
         res = float('inf')
         ___ i __ r..(n):
             __ mp[i][ord(target[0])-ord('a')] __ 0:
-                continue
+                _____
             s = ''
             ___ j __ r..(26):
                 __ tar[j] > mp[i][j]:

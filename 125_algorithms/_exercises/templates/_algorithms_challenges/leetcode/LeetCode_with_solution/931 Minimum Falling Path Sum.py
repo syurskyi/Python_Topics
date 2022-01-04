@@ -73,5 +73,5 @@ c_ Solution:
         r.. m..(F[0])
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().minFallingPathSum([[1,2,3],[4,5,6],[7,8,9]]) __ 12

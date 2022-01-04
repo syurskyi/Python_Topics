@@ -45,7 +45,7 @@ ___ rent_or_stream(
     r.. movie_history
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     rent_or_stream([MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17)),
      MovieRented('Die Hard', 4, date(2020, 12, 3)),
      MovieRented('Wonder Woman', 4, date(2020, 12, 28))])

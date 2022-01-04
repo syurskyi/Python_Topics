@@ -205,7 +205,7 @@ c_ Taxes:
         r.. round(taxes_owed / salary * 100,2)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     salary = 40_000
     t = Taxes(salary)
     print(t)

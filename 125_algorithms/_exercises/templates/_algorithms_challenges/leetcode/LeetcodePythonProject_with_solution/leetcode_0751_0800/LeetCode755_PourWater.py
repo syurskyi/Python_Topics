@@ -23,7 +23,7 @@ c_ Solution(object):
             __ idx != K:
                 heights[idx] += 1
                 V -= 1
-                continue
+                _____
             ___ i __ r..(K+1, l..(heights)):
                 __ heights[i] > heights[idx]:
                     break

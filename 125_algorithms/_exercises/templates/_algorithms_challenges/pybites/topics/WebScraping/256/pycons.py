@@ -4,7 +4,7 @@ ____ typing _______ List
 
 _______ requests
 ____ bs4 _______ BeautifulSoup __ Soup
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 PYCON_DATA = "https://bites-data.s3.us-east-2.amazonaws.com/pycons.html"
 
@@ -120,8 +120,8 @@ ___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
             event_name = event_json['name']
             event_city = event_json["location"]["address"]["addressLocality"]
             event_country = event_json["location"]["address"]["addressCountry"]
-            event_startDate = parse(event_json['startDate'])
-            event_endDate = parse(event_json['endDate'])
+            event_startDate = p..(event_json['startDate'])
+            event_endDate = p..(event_json['endDate'])
             event_url = event_json['url']
             pycon_tuple = PyCon(name=event_name,
                                 city=event_city,

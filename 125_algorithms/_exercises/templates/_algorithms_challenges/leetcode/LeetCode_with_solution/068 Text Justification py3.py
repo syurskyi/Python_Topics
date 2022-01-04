@@ -123,6 +123,6 @@ c_ Solution2:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16) __ ["This    is    an","example  of text","justification.  "]
     ... Solution().fullJustify(["What","must","be","acknowledgment","shall","be"], 16) __ ["What   must   be","acknowledgment  ","shall be        "]

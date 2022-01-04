@@ -16,7 +16,7 @@ c_ Solution(object):
         dp[0] = T..
         ___ i __ r..(l..(s)):
             __ n.. dp[i]:
-                continue
+                _____
             ___ word __ wordDict:
                 end = i+l..(word)
                 sub = s[i:end]

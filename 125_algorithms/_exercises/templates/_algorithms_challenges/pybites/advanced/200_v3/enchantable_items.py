@@ -69,7 +69,7 @@ ___ generate_enchantments(soup):
     ___ row __ soup.select('table#minecraft_items > tr'):
         data_items = row.find_all('td')
         __ data_items __ N.. o. l..(data_items) __ 0:
-            continue
+            _____
         enchant, maxlevel, descr, id, item, version = data_items
         id_name = enchant.em.text
         name = enchant.a.text
@@ -130,7 +130,7 @@ ___ main
         print(minecraft_items[item], "\n")
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     main()
 
 """

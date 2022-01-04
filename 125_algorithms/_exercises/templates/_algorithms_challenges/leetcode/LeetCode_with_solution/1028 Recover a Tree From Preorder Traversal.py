@@ -138,6 +138,6 @@ c_ Solution:
         r.. root
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().recoverFromPreorder("5-4--4")
     ... Solution().recoverFromPreorder("1-2--3--4-5--6--7")

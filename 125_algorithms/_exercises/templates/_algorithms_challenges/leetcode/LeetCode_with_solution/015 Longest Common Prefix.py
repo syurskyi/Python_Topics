@@ -52,6 +52,6 @@ c_ Solution(object):
         r.. str_builder
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     strs = ["abc", "abcd"]
     print Solution().longestCommonPrefix(strs)

@@ -21,9 +21,9 @@ c_ Solution:
         ___ pos, k __ queue:
             ___ x __ (k - 1, k, k + 1):
                 __ x <= 0 o. pos + x n.. __ xs:
-                    continue
+                    _____
                 __ (pos + x, x) __ visited:
-                    continue
+                    _____
                 __ pos + x __ stones[-1]:
                     r.. T..
 

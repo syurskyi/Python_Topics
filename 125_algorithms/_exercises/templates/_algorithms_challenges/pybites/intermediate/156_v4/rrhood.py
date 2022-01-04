@@ -58,7 +58,7 @@ ___ make_character_index(text=text, characters=CHARACTERS):
 
     ___ n, line __ e..(text.l...splitlines()):
         ___ char __ characters:
-            __ isi..(char, tuple):
+            __ isi..(char, t..):
                 __ any(map(l.... c: c.l.. __ line, char)):
                     index[char[0].l..].a..(n)
             ____:

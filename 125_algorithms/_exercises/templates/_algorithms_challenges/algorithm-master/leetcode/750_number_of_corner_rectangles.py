@@ -30,15 +30,15 @@ c_ Solution:
         ___ R __ G:
             ___ end __ r..(1, l..(R)):
                 __ R[end] __ 0:
-                    continue
+                    _____
 
                 ___ start __ r..(end):
                     __ R[start] __ 0:
-                        continue
+                        _____
 
                     __ (start, end) n.. __ count:
                         count[start, end] = 0
-                        continue
+                        _____
 
                     count[start, end] += 1
 

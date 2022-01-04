@@ -49,7 +49,7 @@ c_ Solution(object):
                 ___ j __ xrange(1, i..(math.sqrt(n))+1):
                     nxt = q[i]+j*j
                     __ nxt <= n a.. visited[nxt]:
-                        continue
+                        _____
                     ____ nxt < n:
                         visited[nxt] = T..
                         q.a..(nxt)
@@ -76,5 +76,5 @@ c_ Solution(object):
         r.. F[n]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().numSquares(6) __ 3

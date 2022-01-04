@@ -58,6 +58,6 @@ c_ Solution(object):
         r.. msort(F, 0, n+1)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().countRangeSum([0, 0], 0, 0) __ 3
     ... Solution().countRangeSum([-2, 5, -1], -2, 2) __ 3

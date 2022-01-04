@@ -41,7 +41,7 @@ c_ Solution:
         ___ i __ xrange(1, m+1):
             ___ j __ xrange(1, n+1):
                 __ matrix[i-1][j-1] __ 0:
-                    continue
+                    _____
 
                 to_top[i][j] += to_top[i-1][j] + matrix[i-1][j-1]
                 to_left[i][j] += to_left[i][j-1] + matrix[i-1][j-1]

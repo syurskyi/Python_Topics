@@ -28,7 +28,7 @@ c_ Solution:
             ignore same num
             """
             __ i > 0 a.. nums[i] __ nums[i - 1]:
-                continue
+                _____
 
             """
             ignore self
@@ -66,7 +66,7 @@ c_ Solution:
 
         ___ i __ r..(l..(nums)):
             __ visited[i]:
-                continue
+                _____
 
             """
             example: [0, 3, 3', 3"]
@@ -75,7 +75,7 @@ c_ Solution:
             otherwise repeated result will be included
             """
             __ i > 0 a.. n.. visited[i - 1] a.. nums[i] __ nums[i - 1]:
-                continue
+                _____
 
             visited[i] = T..
             path.a..(nums[i])

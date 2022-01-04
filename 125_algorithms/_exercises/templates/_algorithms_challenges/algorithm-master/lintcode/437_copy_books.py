@@ -37,7 +37,7 @@ c_ Solution:
                     the people after `j`th people dont have to work
                     """
                     dp[i][j] = dp[i][j - 1]
-                    continue
+                    _____
 
                 ___ h __ r..(j - 1, i + 1):
                     """
@@ -105,7 +105,7 @@ c_ Solution:
                 dp[i][j] = dp[h][j - 1]
 
                 __ h __ 0:
-                    continue
+                    _____
 
                 """
                 check again the `h - 1` books

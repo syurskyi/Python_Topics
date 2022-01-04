@@ -36,7 +36,7 @@ c_ Solution:
             # find the next non-duplicate:
             __ A[closed_ptr]__A[open_ptr]:
                 open_ptr += 1
-                continue  # go to the next iteration
+                _____  # go to the next iteration
 
             non_duplicate = A[open_ptr]
             A[closed_ptr+1] = non_duplicate

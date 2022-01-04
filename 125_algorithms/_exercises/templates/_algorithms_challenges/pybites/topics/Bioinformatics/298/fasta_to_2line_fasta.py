@@ -17,14 +17,14 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
     :return: Number of records
     """
     w__ open(fasta_2line_file, 'w') __ f:
-        sequence = l..(SeqIO.parse(fasta_file, "fasta"))
+        sequence = l..(SeqIO.p..(fasta_file, "fasta"))
         ___ record __ sequence:
             #print(f'>{record.description}\n{record.seq}')
-            f.write(f'>{record.description}\n{record.seq}\n')
+            f.write _*>{record.description}\n{record.seq}\n')
         f.close()
     print(FASTA_FILE)
     r.. l..(sequence)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     fasta_to_2line_fasta(FASTA_FILE, f"{FASTA_FILE}_converted.fasta")

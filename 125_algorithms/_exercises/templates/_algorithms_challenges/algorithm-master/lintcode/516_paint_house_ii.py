@@ -45,7 +45,7 @@ c_ Solution:
                 __ dp[prev][j] < min1:
                     min2 = min1
                     min1 = dp[prev][j]
-                    continue
+                    _____
                 __ dp[prev][j] < min2:
                     min2 = dp[prev][j]
 

@@ -86,7 +86,7 @@ c_ Solution2:
 
         ___ i __ r..(n):
             __ i __ visited:
-                continue
+                _____
 
             ans += 1
             dfs(i, adj, visited)
@@ -101,6 +101,6 @@ c_ Solution2:
 
         ___ b __ adj[a]:
             __ b __ visited:
-                continue
+                _____
 
             dfs(b, adj, visited)

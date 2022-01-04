@@ -21,7 +21,7 @@ c_ Solution:
             dp[end][end] = 1
 
             __ n < 1:
-                continue
+                _____
 
             start = end - 1
             __ s[start] __ s[end]:

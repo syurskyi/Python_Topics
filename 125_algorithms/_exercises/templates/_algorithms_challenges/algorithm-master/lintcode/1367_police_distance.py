@@ -30,11 +30,11 @@ c_ Solution:
                 _y = y + dy
 
                 __ n.. (0 <= _x < m a.. 0 <= _y < n):
-                    continue
+                    _____
                 __ matrix[_x][_y] __ WALL:
-                    continue
+                    _____
                 __ ans[_x][_y] <= ans[x][y] + 1:
-                    continue
+                    _____
 
                 ans[_x][_y] = ans[x][y] + 1
                 queue.a..((_x, _y))

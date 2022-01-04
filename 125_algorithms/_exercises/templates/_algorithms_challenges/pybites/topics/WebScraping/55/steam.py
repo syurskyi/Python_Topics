@@ -10,7 +10,7 @@ Game = n..('Game', 'title link')
 
 ___ get_games
     """Parses Steam's RSS feed and returns a list of Game namedtuples"""
-    feed = feedparser.parse(FEED_URL)
+    feed = feedparser.p..(FEED_URL)
     r.. [ Game(entry.get('title'), entry.get('link')) ___ entry __ feed['entries'] ]
 
 #get_games()

@@ -27,7 +27,7 @@ c_ Solution:
                 _y = y + dy
                 __ 0 <= _x < m a.. 0 <= _y < n a.. G[_x][_y] __ 0:
                     __ (_x, _y) __ turns:
-                        continue
+                        _____
 
                     turns[_x, _y] = turns[x, y] + 1
 
@@ -68,7 +68,7 @@ c_ Solution:
                 dp[x][curr] = INFINITY
 
                 __ G[x][y] __ 1:
-                    continue
+                    _____
 
                 __ (x >= 2 a.. y >= 1 a.. dp[x - 2][pre1] < INFINITY a..
                     dp[x - 2][pre1] + 1 < dp[x][curr]):

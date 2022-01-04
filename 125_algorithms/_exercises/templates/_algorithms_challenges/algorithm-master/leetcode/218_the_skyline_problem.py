@@ -71,7 +71,7 @@ c_ Solution:
             __ ans a.. ans[-1][0] __ x:
                 ans.pop()
             __ ans a.. ans[-1][1] __ max_h:
-                continue
+                _____
             ans.a..([x, max_h])
 
         r.. ans

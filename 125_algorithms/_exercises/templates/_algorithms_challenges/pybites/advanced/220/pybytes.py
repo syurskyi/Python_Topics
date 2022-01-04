@@ -20,7 +20,7 @@ c_ PythonBytes:
 
     ___ - , url=URL):
         """Load the feed url into self.entries using the feedparser module."""
-        entries = feedparser.parse(URL)['entries']
+        entries = feedparser.p..(URL)['entries']
 
 
     ___ get_episode_numbers_for_mentioned_domain(self, domain: s..) __ l..:
@@ -107,7 +107,7 @@ c_ PythonBytes:
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     python_bites = PythonBytes()

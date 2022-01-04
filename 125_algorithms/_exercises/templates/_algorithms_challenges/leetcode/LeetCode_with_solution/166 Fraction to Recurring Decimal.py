@@ -111,7 +111,7 @@ c_ Solution_error:
 
         r.. "".j..(ret)
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().fractionToDecimal(1, 333) __ "0.(003)"
     ... Solution().fractionToDecimal(1, 90) __ "0.0(1)"
     ... Solution().fractionToDecimal(-50, 8) __ "-6.25"

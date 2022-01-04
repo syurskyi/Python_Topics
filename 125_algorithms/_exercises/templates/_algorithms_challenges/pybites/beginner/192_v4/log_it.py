@@ -13,7 +13,7 @@ ___ log_it(level: Callable, msg: s..) __ N..
     level(msg)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     log_it(DEBUG, "This is a debug message.")
     log_it(INFO, "This is an info message.")
     log_it(WARNING, "This is a warning message.")

@@ -27,7 +27,7 @@ ___ binary_search(array,item,left,right):
 		print("Checking items on the right...")
 		r.. binary_search(array,item,middle+1,right)
         
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 	array  [1,4,7,8,9,10,11,20,22,25]
 	

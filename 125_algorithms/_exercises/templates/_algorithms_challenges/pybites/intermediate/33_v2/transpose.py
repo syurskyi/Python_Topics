@@ -14,8 +14,8 @@ ___ transpose(data):
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
     __ isi..(data, d..):
-       dict_keys = tuple([key ___ key __ data.k..])
-       dict_values = tuple([value ___ value __ data.v..)
+       dict_keys = t..([key ___ key __ data.k..])
+       dict_values = t..([value ___ value __ data.v..)
        r.. [dict_keys, dict_values]
 
 

@@ -58,6 +58,6 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().makesquare([1,1,2,2,2]) __ T..
     ... Solution().makesquare([3,3,3,3,4]) __ F..

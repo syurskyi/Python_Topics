@@ -13,7 +13,7 @@ ___ test_return(content):
     books = get_top_books(content=content)
     ... l..(books) __ 16
     ... t..(books) __ l..
-    ... a..(t..(book) __ tuple ___ book __ books)
+    ... a..(t..(book) __ t.. ___ book __ books)
 
 
 @p__.mark.parametrize("title, count", [

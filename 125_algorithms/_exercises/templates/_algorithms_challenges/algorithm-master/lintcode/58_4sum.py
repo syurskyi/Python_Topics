@@ -15,11 +15,11 @@ c_ Solution:
 
         ___ a __ r..(n - 3):
             __ a > 0 a.. nums[a] __ nums[a - 1]:
-                continue
+                _____
 
             ___ b __ r..(a + 1, n - 2):
                 __ b > a + 1 a.. nums[b] __ nums[b - 1]:
-                    continue
+                    _____
 
                 c, d = b + 1, n - 1
 

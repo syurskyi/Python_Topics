@@ -103,6 +103,6 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().pyramidTransition("BCD", ["BCG", "CDE", "GEA", "FFF"]) __ T..
     ... Solution().pyramidTransition("AABA", ["AAA", "AAB", "ABA", "ABB", "BAC"]) __ F..

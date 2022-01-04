@@ -61,5 +61,5 @@ c_ Solution(object):
         r.. l..(ret)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().largestDivisibleSubset([1, 2, 4, 8]) __ [1, 2, 4, 8]

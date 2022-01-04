@@ -64,7 +64,7 @@ c_ Solution:
 
         cur_deque.appendleft(node.val)
         __ n.. node.left a.. n.. node.right:
-            t = tuple(cur_deque)
+            t = t..(cur_deque)
             __ n.. mn o. t < mn:
                 mn = t
         ____:

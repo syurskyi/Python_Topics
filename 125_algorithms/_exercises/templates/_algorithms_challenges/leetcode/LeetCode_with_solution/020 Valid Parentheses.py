@@ -28,5 +28,5 @@ c_ Solution:
         r.. T.. __ n.. stack ____ F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().isValid("()")

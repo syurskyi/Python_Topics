@@ -140,7 +140,7 @@ c_ Solution:
         r.. C[i][j]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().pacificAtlantic([
         [1,2,2,3,5],
         [3,2,3,4,4],

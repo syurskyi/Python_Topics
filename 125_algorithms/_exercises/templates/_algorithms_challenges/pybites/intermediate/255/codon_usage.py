@@ -41,7 +41,7 @@ ___ get_translation_table(TRANSL_TABLE_11):
     
 
     table = TRANSL_TABLE_11.r..('T','U')
-    lines = table.lstrip().splitlines()
+    lines = table.l...splitlines()
 
     lines = lines[0:1] + lines[2:]
 
@@ -154,7 +154,7 @@ ___ return_codon_usage_table(
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print(return_codon_usage_table())
 
     #print(get_translation_table())

@@ -28,5 +28,5 @@ c_ Solution:
         ]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findWords(["Hello", "Alaska", "Dad", "Peace"]) __ ["Alaska", "Dad"]

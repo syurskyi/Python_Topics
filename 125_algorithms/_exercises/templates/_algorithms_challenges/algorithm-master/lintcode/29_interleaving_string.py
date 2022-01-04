@@ -51,7 +51,7 @@ c_ Solution:
 
                 __ dp[prev][j] a.. A[i - 1] __ C[i + j - 1]:
                     dp[curr][j] = T..
-                    continue
+                    _____
 
                 __ dp[curr][j - 1] a.. B[j - 1] __ C[i + j - 1]:
                     dp[curr][j] = T..

@@ -27,7 +27,7 @@ c_ Solution:
         ___ a __ nums:
             ___ s __ r..(target, a - 1, -1):
                 __ dp[s]:
-                    continue
+                    _____
 
                 dp[s] = dp[s - a]
 

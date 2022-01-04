@@ -18,6 +18,6 @@ ___ athletes_most_medals(data=data):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     athletes_most_medals()

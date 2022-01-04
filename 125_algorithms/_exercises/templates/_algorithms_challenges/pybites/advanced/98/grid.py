@@ -60,7 +60,7 @@ ___ print_sequence_route(grid, start_coordinates_ N..
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
 
     small_grid = """

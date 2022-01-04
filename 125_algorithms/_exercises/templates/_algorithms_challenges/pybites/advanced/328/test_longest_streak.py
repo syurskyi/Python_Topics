@@ -29,7 +29,7 @@ sys.path.a..(TMP)
 @p__.fixture(scope="module")
 ___ download_test_files
     data_zipfile = 'bite328_test_data.zip'
-    urlretrieve(f'{S3}/{data_zipfile}', TMP / data_zipfile)
+    urlretrieve _*{S3}/{data_zipfile}', TMP / data_zipfile)
     ZipFile(TMP / data_zipfile).extractall(TMP)
 
 

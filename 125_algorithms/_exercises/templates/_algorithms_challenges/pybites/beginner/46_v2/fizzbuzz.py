@@ -1,15 +1,15 @@
-___ fizzbuzz(num):
-
-
-    divisible_by_3 = num % 3 __ 0
-    divisible_by_5 = num % 5 __ 0
-
-
-    __ divisible_by_3 a.. divisible_by_5:
-        r.. "Fizz Buzz"
-    ____ divisible_by_3:
-        r.. "Fizz"
-    ____ divisible_by_5:
-        r.. "Buzz"
-    ____:
-        r.. num
+# ___ fizzbuzz num
+#
+#
+#     divisible_by_3 = ? % 3 __ 0
+#     divisible_by_5 = ? % 5 __ 0
+#
+#
+#     __ ? a.. ?
+#         r.. "Fizz Buzz"
+#     ____ ?
+#         r.. "Fizz"
+#     ____ ?
+#         r.. "Buzz"
+#     ____:
+#         r.. ?

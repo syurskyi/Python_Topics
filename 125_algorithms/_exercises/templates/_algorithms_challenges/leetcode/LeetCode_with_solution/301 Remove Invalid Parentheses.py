@@ -78,5 +78,5 @@ c_ Solution(object):
                 dfs(s, cur+s[i], L, N.., i+1, rmcnt, ret)  # put
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().removeInvalidParentheses("(a)())()") __ ['(a())()', '(a)()()']

@@ -191,6 +191,6 @@ c_ SolutionError(object):
             r.. h2v[level/2]
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     # print Solution().findMinHeightTrees(6, [[3,0],[3,1],[3,2],[3,4],[5,4]])
     ... Solution().findMinHeightTrees(7, [[0, 1], [1, 2], [1, 3], [2, 4], [3, 5], [4, 6]]) __ [1, 2]

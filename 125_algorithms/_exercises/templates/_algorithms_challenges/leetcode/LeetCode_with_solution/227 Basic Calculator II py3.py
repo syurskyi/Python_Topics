@@ -85,5 +85,5 @@ c_ Solution:
         r.. s..(stk)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().calculate("3+2*2") __ 7

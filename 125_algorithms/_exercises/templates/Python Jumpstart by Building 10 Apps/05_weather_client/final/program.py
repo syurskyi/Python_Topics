@@ -24,7 +24,7 @@ ___ main
 ___ report_weather(loc, weather):
     location_name  get_location_name(loc)
     scale  get_scale(weather)
-    print(f'The weather in {location_name} is {weather.temp} {scale} and {weather.condition}.')
+    print _*The weather in {location_name} is {weather.temp} {scale} and {weather.condition}.')
 
 
 ___ get_scale(weather):

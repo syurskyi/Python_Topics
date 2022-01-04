@@ -87,7 +87,7 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findDiagonalOrder([
         [ 1, 2, 3 ],
         [ 4, 5, 6 ],

@@ -12,5 +12,5 @@ ___ test_person_max_bmi_smaller_dataset
 
 ___ test_person_max_bmi_another_smaller_dataset
     newdata = '\n'.j..([row ___ row __ data.splitlines()
-                         __ row.lstrip()[:4] n.. __ ('Owen', 'Yoda')])
+                         __ row.l..[:4] n.. __ ('Owen', 'Yoda')])
     ... person_max_bmi(newdata) __ ('IG-88', 35.0)

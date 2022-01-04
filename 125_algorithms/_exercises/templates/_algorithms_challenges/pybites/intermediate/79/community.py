@@ -23,7 +23,7 @@ ___ create_user_bar_chart(content):
 
    ___ i, row __ e..(content):
       __ i __ 0:
-         continue
+         _____
       tz = row[2]
       __ tz n.. __ tz_frequency:
          tz_frequency[tz] = 1

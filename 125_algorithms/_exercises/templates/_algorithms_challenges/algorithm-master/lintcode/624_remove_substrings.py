@@ -27,7 +27,7 @@ c_ Solution:
                     found = s.find(d, found + 1)
 
                     __ _s __ visited:
-                        continue
+                        _____
 
                     __ l..(_s) < _min:
                         _min = l..(_s)

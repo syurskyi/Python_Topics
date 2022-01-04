@@ -7,7 +7,7 @@ ___ timer(func):
         start = time()
         answer = func $ $$
         end = time()
-        print(f'Elapsed: {end-start}')
+        print _*Elapsed: {end-start}')
         r.. answer
     r.. wrapper
 
@@ -23,7 +23,7 @@ ___ tracer(func):
 @tracer
 @timer
 ___ hello_world $ $$:
-    print(f'Hello World! {args}')
+    print _*Hello World! {args}')
 
 
 hello_world()

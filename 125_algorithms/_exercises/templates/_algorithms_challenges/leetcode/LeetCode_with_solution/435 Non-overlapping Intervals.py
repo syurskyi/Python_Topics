@@ -46,7 +46,7 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3], [3,4], [1,3] ])) __ 1
     ... Solution().eraseOverlapIntervals(Interval.new([ [1,2], [1,2], [1,2] ])) __ 2
     ... Solution().eraseOverlapIntervals(Interval.new([ [1,2], [2,3] ])) __ 0

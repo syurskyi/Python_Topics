@@ -1,8 +1,8 @@
 _______ p__
 
-____ fizzbuzz _______ fizzbuzz
+____ f.. _______ f..
 
-@p__.mark.parametrize("arg, ret",[
+@p__.m__.p..("arg, ret",[
     (1, 1),
     (2, 2),
     (3, 'Fizz'),
@@ -20,5 +20,5 @@ ____ fizzbuzz _______ fizzbuzz
     (15, 'Fizz Buzz'),
     (16, 16),
 ])
-___ test_fizzbuzz(arg, ret):
-    ... fizzbuzz(arg) __ ret
+___ test_fizzbuzz arg ret
+    ... ? ? __ ?

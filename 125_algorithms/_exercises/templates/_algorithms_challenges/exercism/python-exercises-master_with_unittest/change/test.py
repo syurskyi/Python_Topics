@@ -59,5 +59,5 @@ c_ ChangeTest(unittest.TestCase):
         r.. assertRaisesRegex(exception, r".+")
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     unittest.main()

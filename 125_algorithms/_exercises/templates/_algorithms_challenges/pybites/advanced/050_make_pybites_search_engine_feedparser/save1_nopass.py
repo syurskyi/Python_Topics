@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 ____ time _______ mktime
-____ feedparser _______ parse
+____ feedparser _______ p..
 ____ d__ _______ d__
 _______ __
 
@@ -28,7 +28,7 @@ ___ get_feed_entries(feed=FEED):
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
-    file = parse(feed)
+    file = p..(feed)
     output    # list
     ___ entry __ file.entries:
         date = _convert_struct_time_to_dt(entry.published)
@@ -94,13 +94,13 @@ ___ main
 
             output_number = l..(output_list)
             __ output_number < 1:
-                print(f'{output_number} entries matched')
+                print _*{output_number} entries matched')
             __ output_number __ 1:
                 print(titles)
-                print(f'{output_number} entry matched')
+                print _*{output_number} entry matched')
             __ output_number > 1:
                 print(titles)
-                print(f'{output_number} entries matched')
+                print _*{output_number} entries matched')
 
         __ search_term __ 'q':
             print('Bye')

@@ -29,7 +29,7 @@ c_ BSTIterator(object):
     w.... stack:
       p = stack.pop()
       __ n.. p[1]:
-        continue
+        _____
       __ p[0] __ 0:
         r.. p[1].val
       ____:

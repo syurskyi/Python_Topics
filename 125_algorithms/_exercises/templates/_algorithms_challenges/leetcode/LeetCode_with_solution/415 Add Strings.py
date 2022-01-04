@@ -50,7 +50,7 @@ c_ Solution:
         r.. "".j..(map(s.., ret[::-1]))
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().addStrings("9999", "1") __ "10000"
     ... Solution().addStrings("9999", "9999") __ "19998"
     ... Solution().addStrings("23", "8") __ "31"

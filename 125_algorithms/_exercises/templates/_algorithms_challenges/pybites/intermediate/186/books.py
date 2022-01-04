@@ -1,6 +1,6 @@
 ____ d__ _______ d__
 ____ math _______ floor
-____ dateutil.parser _______ parse
+____ dateutil.parser _______ p..
 
 # work with a static date for tests, real use = datetime.now()
 NOW = d__(2019, 3, 17, 16, 28, 42, 966663)
@@ -18,7 +18,7 @@ ___ get_number_books_read(books_per_year_goal: i..,
 
    # 1. use dateutil's parse to convert at_date into a
    # datetime object
-   dt = parse(at_date)
+   dt = p..(at_date)
 
    # 2. check books_per_year_goal and at_date and raise
    # a ValueError if goal <= 0 or at_date in the past (< NOW)
@@ -32,5 +32,5 @@ ___ get_number_books_read(books_per_year_goal: i..,
    r.. floor((week_of_year / WEEKS_PER_YEAR) * books_per_year_goal)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
    print(get_number_books_read(100, '2019-04-02'))

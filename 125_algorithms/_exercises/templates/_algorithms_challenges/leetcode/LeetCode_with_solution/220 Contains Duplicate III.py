@@ -55,5 +55,5 @@ c_ Solution:
         r.. F..
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     print Solution().containsNearbyAlmostDuplicate([-3, 3], 2, 4)

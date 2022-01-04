@@ -72,5 +72,5 @@ c_ HighScoreTest(unittest.TestCase):
         assertEqual(HighScores(scores).report(), expected)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     unittest.main()

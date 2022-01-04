@@ -46,7 +46,7 @@ ___ is_upper(s):
     )
 
 
-___ parse(input_string):
+___ p..(input_string):
     root = N..
     current = N..
     stack = l..(input_string)
@@ -96,5 +96,5 @@ ___ parse(input_string):
                 root.children.a..(current)
             w.... peek() __ '(':
                 child_input = pop() + pop_until(')') + pop()
-                current.children.a..(parse(child_input))
+                current.children.a..(p..(child_input))
     r.. root

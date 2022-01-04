@@ -15,7 +15,7 @@ c_ Solution:
             _sum += A[i]
 
             __ i < k - 1:
-                continue
+                _____
 
             ans.a..(_sum)
 

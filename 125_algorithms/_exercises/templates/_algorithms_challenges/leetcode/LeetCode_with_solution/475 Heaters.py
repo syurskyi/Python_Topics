@@ -64,5 +64,5 @@ c_ Solution:
         r.. r
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().findRadius([1,2,3,4], [1,4]) __ 1

@@ -44,7 +44,7 @@ c_ Solution:
                 then directly output
                 """
                 res.a..(char)
-                continue
+                _____
 
             __ char __ P:
                 """
@@ -86,7 +86,7 @@ c_ Solution:
                 then temply save in `stack`
                 """
                 stack.a..(i..(char))
-                continue
+                _____
 
             """
             the first poped one is base,

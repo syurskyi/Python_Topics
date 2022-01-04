@@ -57,7 +57,7 @@ ___ max_and_min_years_new_characters(characters=characters):
     result = Counter()
     ___ char __ characters:
         __ char.year __ '':
-            continue
+            _____
         result[char.year] += 1
     r.. (result.most_common(1)[0][0], result.most_common()[-1][0])
 
@@ -73,6 +73,6 @@ ___ get_percentage_female_characters(characters=characters):
     sexes = Counter()
     ___ char __ characters:
         __ char.sex __ '':
-            continue
+            _____
         sexes[char.sex] += 1
     r.. round(float(sexes['Female Characters']) / float(s..(sexes.v.. * 100.0, 2)

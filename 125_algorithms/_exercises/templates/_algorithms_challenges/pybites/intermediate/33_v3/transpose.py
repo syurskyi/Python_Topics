@@ -20,10 +20,10 @@ ___ transpose(data):
 
 
     __ t..(data) __ d..:
-        r.. [tuple(data.keys()),tuple(data.values())]
+        r.. [t..(data.keys()),t..(data.values())]
     ____ t..(data) __ l..:
         
-        r.. [z ___ z __ z..(*(tuple(d) ___ d __ data))]
+        r.. [z ___ z __ z..(*(t..(d) ___ d __ data))]
 
 
 
@@ -31,7 +31,7 @@ ___ transpose(data):
 
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
 
     data = [Member(name='Bob', since_days=60, karma_points=60,
                    bitecoin_earned=56),

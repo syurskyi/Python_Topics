@@ -12,7 +12,7 @@ c_ Solution:
         ___ c __ num:
             current = 1
             __ c n.. __ d:
-                continue
+                _____
             w.... c - 1 __ d:
                 c -= 1
             del d[c]

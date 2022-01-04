@@ -1,7 +1,7 @@
 a = l..(map(i..,input().s..()))
 ___ i __ a:
     __ 1 <=i <= 8 o. 9<= i <= 31 o. 33<= i <=45  :
-        continue
+        _____
     ____:
         bits = '{:08b}'.f..(i)
         temp_bin    # list

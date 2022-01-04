@@ -25,7 +25,7 @@ c_ Solution:
             # to prevent [1', 2, 5] and [1", 2, 5]
             # appear in result at same time
             __ i > start a.. A[i] __ A[i - 1]:
-                continue
+                _____
 
             path.a..(A[i])
             dfs(A, i + 1, remaining - A[i], ans, path)

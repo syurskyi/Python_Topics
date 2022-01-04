@@ -11,7 +11,7 @@ c_ Solution(object):
         """
         cost = [0]
         w.... check(grid, cost):
-            continue
+            _____
         r.. cost[0]
     
     ___ check(self, grid, cost):

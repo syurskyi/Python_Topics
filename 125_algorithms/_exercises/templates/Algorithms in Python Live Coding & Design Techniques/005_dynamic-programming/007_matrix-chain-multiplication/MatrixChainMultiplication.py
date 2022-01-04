@@ -34,7 +34,7 @@ ___ mcm_bottomup(seq, n
         ___ i __ ra__(1, n-le_+1
             j  i + le_ - 1
             __ j __ n:
-                continue
+                _____
             min_ops  sys.maxsize
             ___ k __ ra__(i, j
                 min_ops  m..(min_ops, (arr[i][k] + arr[k+1][j] + seq[i - 1] * seq[k] * seq[j]))

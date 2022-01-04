@@ -28,7 +28,7 @@ ___ extract_ipv4(data):
                 result_2 = is_valid_number(data[3][0])
                 print(result_1,result_2)
             except:
-                continue
+                _____
             ____:
                 
                 __ result_1 a.. result_2:

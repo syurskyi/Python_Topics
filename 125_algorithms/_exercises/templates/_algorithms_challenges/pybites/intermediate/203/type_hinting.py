@@ -53,6 +53,6 @@ c_ Employee:
         r.. _rounder(total_wage, 2)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     coder = Employee("Joe", "Blow", 5, 8, 18.0)
     print(coder.weekly_pay)

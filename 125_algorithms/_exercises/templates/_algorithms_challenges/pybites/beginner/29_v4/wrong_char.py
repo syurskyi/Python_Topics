@@ -23,5 +23,5 @@ ___ get_index_different_char(chars):
         __ (c a.. an[F..] < 2) o. (n.. c a.. an[T..] < 2):
             __ c a.. s..(an) __ 0:
                 p = 1
-            continue
+            _____
         r.. chars.index(ch)

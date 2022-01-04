@@ -23,7 +23,7 @@ ___ mark_islands(i, j, grid):
     Output: None. Just mark the visited islands as in-place operation.
     """
     __ (i>=0) a.. (j>=0) a.. (i<=l..(grid)-1) a.. (j<=l..(grid[i])-1):
-        print(f'inside mark_islands row:{i} column:{j} value:{grid[i][j]}')
+        print _*inside mark_islands row:{i} column:{j} value:{grid[i][j]}')
         __ grid[i][j] __ 1:
             grid[i][j] = '#'      # one way to mark visited ones - suggestion.
             mark_islands(i-1, j, grid)

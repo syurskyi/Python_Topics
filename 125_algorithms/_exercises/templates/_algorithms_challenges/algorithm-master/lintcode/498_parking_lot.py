@@ -72,7 +72,7 @@ c_ Level:
             ___ y __ RANGE:
                 __ spots.get((x, y)):
                     gotcha = 0
-                    continue
+                    _____
 
                 gotcha += 1
 

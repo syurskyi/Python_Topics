@@ -21,7 +21,7 @@ c_ Codec:
       top = queue.popleft()
       __ n.. top:
         ret.a..("None")
-        continue
+        _____
       ____:
         ret.a..(s..(top.val))
       queue.a..(top.left)

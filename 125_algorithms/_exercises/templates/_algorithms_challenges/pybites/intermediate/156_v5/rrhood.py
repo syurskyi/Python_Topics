@@ -57,9 +57,9 @@ ___ make_character_index(text=text, characters=CHARACTERS):
     result = defaultdict(l..)
     ___ x, s __ e..(text.splitlines()):
         __ s __ '':
-            continue
+            _____
         ___ c __ characters:
-            __ isi..(c, tuple):
+            __ isi..(c, t..):
                 flag = F..
                 ___ p __ c:
                     __ p.l.. __ s.l..:

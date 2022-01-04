@@ -30,7 +30,7 @@ c_ Color:
         rgb = COLOR_NAMES.get(color.u.., N..)
 
     @classmethod
-    ___ hex2rgb(cls, hex_str: s..) __ tuple:
+    ___ hex2rgb(cls, hex_str: s..) __ t..:
         """Class method that converts a hex value into an rgb one"""
         # Using regex will perform more comprehensive checking…
         # > if not re.match(r'#[0-9A-Fa-f]{6}', hex_str):
@@ -38,19 +38,19 @@ c_ Color:
         __ l..(hex_str) != 7 o. hex_str[0] != '#':
             r.. ValueError('Invalid hex colour string')
         try:
-            r.. tuple(bytes.fromhex(hex_str[1:]))
+            r.. t..(bytes.fromhex(hex_str[1:]))
         except ValueError __ exp:
-            r.. ValueError(f'Invalid hex value ({exp.args})')
+            r.. ValueError _*Invalid hex value ({exp.args})')
 
     @classmethod
-    ___ rgb2hex(cls, rbg_tuple: tuple) __ s..:
+    ___ rgb2hex(cls, rbg_tuple: t..) __ s..:
         """Class method that converts an rgb value into a hex one"""
         __ l..(rbg_tuple) != 3 o. any((x < 0) o. (x > 255) ___ x __ rbg_tuple):
             r.. ValueError('Invalid rgb colour triplet')
         try:
             r.. f'#{bytes(rbg_tuple).hex()}'
         except ValueError __ exp:
-            r.. ValueError(f'Invalid rgb value ({exp.args})')
+            r.. ValueError _*Invalid rgb value ({exp.args})')
 
     ___ __repr__
         """Returns the repl of the object"""

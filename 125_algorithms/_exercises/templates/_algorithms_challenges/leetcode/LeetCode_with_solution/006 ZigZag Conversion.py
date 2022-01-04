@@ -45,5 +45,5 @@ c_ Solution:
         r.. "".j..(lst)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().convert("ABCD", 2) __ "ACBD"

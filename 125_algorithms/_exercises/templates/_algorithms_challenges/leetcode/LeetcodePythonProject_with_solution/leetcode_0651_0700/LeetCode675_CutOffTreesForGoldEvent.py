@@ -42,7 +42,7 @@ c_ Solution(object):
                 ___ i1, j1 __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
                     __ i1 < 0 o. i1 >= m o. j1 < 0 o. j1 >= n o.\
                         forest[i1][j1] __ 0 o. visited[i1][j1]:
-                        continue
+                        _____
                     queue.a..((i1, j1))
                     visited[i1][j1] = T..
             step += 1

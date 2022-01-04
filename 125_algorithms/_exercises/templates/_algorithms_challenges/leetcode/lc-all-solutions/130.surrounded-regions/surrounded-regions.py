@@ -40,7 +40,7 @@ c_ Solution:
     ___ i __ r..(0, l..(board)):
       ___ j __ r..(0, l..(board[0])):
         __ board[i][j] __ 'X':
-          continue
+          _____
         ___ d __ ["d", "r"]:
           di, dj = directions[d]
           newi, newj = i + di, j + dj

@@ -24,7 +24,7 @@ w.... l..(sucide_squad) != 1:
             #reset the count to 0
             squad_count = 0
         #continue helps not jumping on the next element and start counting from the current element itself
-        continue
+        _____
     squad_count +=1
     #check if reached end of the list
     __ squad_count __ l..(sucide_squad):

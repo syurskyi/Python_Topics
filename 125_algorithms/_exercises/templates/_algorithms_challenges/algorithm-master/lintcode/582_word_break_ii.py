@@ -24,11 +24,11 @@ c_ Solution:
             prefix = s[:size]
 
             __ prefix n.. __ words:
-                continue
+                _____
 
             __ size __ n:
                 res.a..(prefix)
-                continue
+                _____
 
             ___ word __ dfs(s[size:], words, memo):
                 res.a..('{0} {1}'.f..(prefix, word))
@@ -69,7 +69,7 @@ c_ Solution:
             __ n.. word o. s.find(word) != 0:
                 # 1. no word
                 # 2. current word must be the first in s passed in prev
-                continue
+                _____
 
             path.a..(word)
             dfs(s[l..(word):], words, ans, path)

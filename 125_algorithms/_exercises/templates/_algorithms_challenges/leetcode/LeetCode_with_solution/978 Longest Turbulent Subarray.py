@@ -62,5 +62,5 @@ c_ Solution:
         r.. ret
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().maxTurbulenceSize([9,4,2,10,7,8,8,1,9]) __ 5

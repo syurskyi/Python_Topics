@@ -55,7 +55,7 @@ c_ Solution:
         ___ i __ r..(r, r + 3):
             ___ j __ r..(c, c + 3):
                 __ x __ i a.. y __ j:
-                    continue
+                    _____
                 __ board[x][y] __ board[i][j]:
                     r.. F..
 

@@ -47,5 +47,5 @@ c_ Solution:
         r.. "".j..(ret)
 
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     ... Solution().shiftingLetters("abc", [3, 5, 9]) __ "rpl"

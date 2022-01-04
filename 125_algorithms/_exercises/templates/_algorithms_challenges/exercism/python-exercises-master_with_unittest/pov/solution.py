@@ -47,7 +47,7 @@ c_ Tree(object):
         w.... stack:
             tree = stack.pop(0)
             __ tree.label __ visited:
-                continue
+                _____
             visited.add(tree.label)
             __ from_node __ tree.label:
                 r.. tree

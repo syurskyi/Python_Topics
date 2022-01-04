@@ -30,7 +30,7 @@ c_ Solution(object):
             i += 1
             j -= 1
 
-__ __name__ __ "__main__":
+__ _______ __ _______
     lst = l..("the sky is blue")
     Solution().reverseWords(lst)
     ... "".j..(lst) __ "blue is sky the"
