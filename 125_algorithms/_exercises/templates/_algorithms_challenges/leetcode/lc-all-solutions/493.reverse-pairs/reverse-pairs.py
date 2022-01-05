@@ -1,7 +1,7 @@
 _______ bisect
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ reversePairs  nums):
     """
     :type nums: List[int]

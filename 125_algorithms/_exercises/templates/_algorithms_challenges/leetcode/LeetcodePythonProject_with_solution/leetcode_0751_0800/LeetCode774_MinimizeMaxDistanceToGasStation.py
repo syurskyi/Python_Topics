@@ -3,7 +3,7 @@ Created on Apr 6, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ minmaxGasDist  stations, K):
         """
         :type stations: List[int]

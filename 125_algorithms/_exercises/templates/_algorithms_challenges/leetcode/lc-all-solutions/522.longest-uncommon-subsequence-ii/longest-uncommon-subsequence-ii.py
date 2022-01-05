@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findLUSlength  strs):
     """
     :type strs: List[str]
@@ -27,7 +27,7 @@ c_ Solution(object):
       ___ j __ r..(l..(strs)):
         __ i != j a.. (findLUSlength(strs[i], strs[j]) __ -1 o. isSubsequence(strs[i], strs[j])):
           flag = F..
-          break
+          _____
       __ flag:
         r.. l..(strs[i])
     r.. -1

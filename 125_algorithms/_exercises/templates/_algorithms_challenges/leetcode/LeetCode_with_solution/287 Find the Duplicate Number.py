@@ -11,7 +11,7 @@ There is only one duplicate number in the array, but it could be repeated more t
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findDuplicate  nums):
         """
         Condition for convert the array problem to linked list problem:
@@ -32,7 +32,7 @@ c_ Solution(object):
             f = nums[nums[f]]
             s = nums[s]
             __ f __ s:
-                break
+                _____
 
         t = 0
         w.... t != s:

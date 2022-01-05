@@ -17,7 +17,7 @@ _______ sys
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minWindow  S, T):
         """
         Algorithm:
@@ -36,7 +36,7 @@ c_ Solution(object):
 
         appeared_cnt = 0
         lo = 0
-        ___ hi __ xrange(1, l..(S)+1):
+        ___ hi __ x..(1, l..(S)+1):
             # expand
             val = S[hi-1]
             __ t_cnt[o..(val)] > 0:

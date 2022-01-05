@@ -3,7 +3,7 @@ Created on Apr 19, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ similarRGB  color):
         """
         :type color: str
@@ -27,8 +27,8 @@ c_ Solution(object):
         r.. res
     
     ___ convert  s):
-        num = 16*(o..(s[0])-o..('0') __ s[0].isdigit() ____ o..(s[0])-o..('a')+10)
-        num += (o..(s[1])-o..('0') __ s[1].isdigit() ____ o..(s[1])-o..('a')+10)
+        num = 16*(o..(s[0])-o..('0') __ s[0].i.. ____ o..(s[0])-o..('a')+10)
+        num += (o..(s[1])-o..('0') __ s[1].i.. ____ o..(s[1])-o..('a')+10)
         r.. num
     
     ___ test

@@ -29,7 +29,7 @@ ___ i __ r..(i..(input())):
                     # if queen position reaches 0 or less than qp then return No and break
                     __ qp __ 0:
                         print('N',end=' ')
-                        break
+                        _____
                 # if the queen position is equal to kings position and queen character is same as kings
                 # return Yes
                 __ qp __ kp a.. chr(ascii_val) __ k:
@@ -46,7 +46,7 @@ ___ i __ r..(i..(input())):
                     qp += 1
                     __ qp > kp:
                         print('N',end=' ')
-                        break
+                        _____
                 __ qp __ kp a.. chr(ascii_val) __ k:
                     print('Y',end = ' ')
         #else if exact opposite of the above steps
@@ -62,7 +62,7 @@ ___ i __ r..(i..(input())):
                     qp -= 1
                     __ qp __ 0:
                         print('N',end=' ')
-                        break
+                        _____
                 __ qp __ kp a.. chr(ascii_val) __ k:
                     print('Y',end = ' ')
             ____ qp < kp:
@@ -72,7 +72,7 @@ ___ i __ r..(i..(input())):
                     qp += 1
                     __ qp > kp :
                         print('N',end=' ')
-                        break
+                        _____
                 __ qp __ kp a.. chr(ascii_val) __ k:
                     print('Y',end = ' ')
             

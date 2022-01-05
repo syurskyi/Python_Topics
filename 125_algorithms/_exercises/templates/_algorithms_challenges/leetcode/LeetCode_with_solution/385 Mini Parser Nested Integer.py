@@ -33,7 +33,7 @@ __author__ = 'Daniel'
 # """
 
 
-c_ NestedInteger(object):
+c_ NestedInteger(o..):
     ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
@@ -72,7 +72,7 @@ c_ NestedInteger(object):
         """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ deserialize  s):
         """
         NestedInteger is a UnionType in functional programming jargon.
@@ -101,7 +101,7 @@ c_ Solution(object):
                 i += 1
             ____:
                 j = i
-                w.... j < l..(s) a.. (s[j].isdigit() o. s[j] __ '-'): j += 1
+                w.... j < l..(s) a.. (s[j].i.. o. s[j] __ '-'): j += 1
 
                 ni = NestedInteger(i..(s[i: j]) __ s[i: j] ____ N..)
                 __ n.. stk: r.. ni

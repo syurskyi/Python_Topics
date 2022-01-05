@@ -25,7 +25,7 @@
 ____ c.. _______ d..
 
 
-c_ NestedIterator(object):
+c_ NestedIterator(o..):
 
   ___ - , nestedList):
     """

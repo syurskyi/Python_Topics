@@ -4,7 +4,7 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findContentChildren  g, s):
         """
         :type g: List[int]

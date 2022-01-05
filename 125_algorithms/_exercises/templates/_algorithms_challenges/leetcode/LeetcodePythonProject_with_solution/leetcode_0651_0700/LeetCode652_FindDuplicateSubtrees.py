@@ -4,13 +4,13 @@ Created on Oct 4, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findDuplicateSubtrees  root):
         """
         :type root: TreeNode

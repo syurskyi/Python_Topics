@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ shortestDistance  maze, ball, hole):
     """
     :type maze: List[List[int]]

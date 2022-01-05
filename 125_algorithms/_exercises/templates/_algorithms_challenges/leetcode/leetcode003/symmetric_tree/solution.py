@@ -24,7 +24,7 @@ But the following is not:
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isSymmetric  root):
         """
         :type root: TreeNode

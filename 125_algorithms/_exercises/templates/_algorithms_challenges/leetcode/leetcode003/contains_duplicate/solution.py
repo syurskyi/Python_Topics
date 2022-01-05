@@ -4,7 +4,7 @@ function should return true if any value appears at least twice in the array,
 and it should return false if every element is distinct.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ containsDuplicate  nums):
         """
         :type nums: List[int]

@@ -3,7 +3,7 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ checkValidString  s):
         """
         :type s: str

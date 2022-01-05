@@ -15,7 +15,7 @@ _______ math
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ uniquePaths  m, n):
         """
         Math solution:
@@ -32,10 +32,10 @@ c_ Solution(object):
         r.. math.factorial(m+n) / (math.factorial(n) * math.factorial(m))
 
     ___ uniquePathsDP  m, n):
-        F = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        F = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         F[1][0] = 1  # dummy entry point
-        ___ i __ xrange(1, m+1):
-            ___ j __ xrange(1, n+1):
+        ___ i __ x..(1, m+1):
+            ___ j __ x..(1, n+1):
                 F[i][j] = F[i-1][j] + F[i][j-1]
 
         r.. F[m][n]
@@ -49,12 +49,12 @@ c_ Solution(object):
         :param n:
         :return: an integer
         """
-        F = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        F = [[0 ___ _ __ x..(n)] ___ _ __ x..(m)]
         F[0][0] = 1  # start
 
         # F[i][j] = F[i-1][j] + F[i][j-1]
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ i __ 0 a.. j __ 0: _____
                 __ i __ 0: F[i][j] = F[i][j-1]
                 ____ j __ 0: F[i][j] = F[i-1][j]

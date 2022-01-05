@@ -18,7 +18,7 @@ BITES = {6: 'PyBites Die Hard',
 bites_done = {6, 10, 16, 18, 21}
 
 
-c_ NoBitesAvailable(Exception):
+c_ NoBitesAvailable(E..):
     p..
 
 

@@ -3,7 +3,7 @@ Created on Jun 7, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ convert  s, numRows):
         """
         :type s: str

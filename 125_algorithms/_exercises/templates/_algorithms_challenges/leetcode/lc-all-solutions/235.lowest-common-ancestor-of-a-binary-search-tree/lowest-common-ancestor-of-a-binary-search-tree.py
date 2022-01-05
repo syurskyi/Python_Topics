@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ lowestCommonAncestor  root, p, q):
     """
     :type root: TreeNode

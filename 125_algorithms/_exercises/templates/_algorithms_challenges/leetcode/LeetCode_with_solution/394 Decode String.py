@@ -18,7 +18,7 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ decodeString  s):
         """
         :type s: str
@@ -29,7 +29,7 @@ c_ Solution(object):
         ]  # with default
         i = 0
         w.... i < l..(s):
-            __ s[i].isdigit  # construct number from digit
+            __ s[i].i..  # construct number from digit
                 j = i+1
                 w.... s[j] != '[': j += 1
                 stk.a..([
@@ -48,7 +48,7 @@ c_ Solution(object):
         r.. ''.j..(stk.pop()[1])
 
 
-c_ SolutionVerbose(object):
+c_ SolutionVerbose(o..):
     ___ decodeString  s):
         """
         :type s: str
@@ -58,7 +58,7 @@ c_ SolutionVerbose(object):
         i = 0
         ret    # list
         w.... i < l..(s):
-            __ s[i].isdigit  # construct number from digit
+            __ s[i].i..  # construct number from digit
                 j = i+1
                 w.... s[j] != '[': j += 1
                 stk.a..([
@@ -84,7 +84,7 @@ c_ SolutionVerbose(object):
         r.. ''.j..(ret)
 
 
-c_ SolutionError(object):
+c_ SolutionError(o..):
     ___ decodeString  s):
         """
         :type s: str
@@ -94,7 +94,7 @@ c_ SolutionError(object):
         i = 0
         ret    # list
         w.... i < l..(s):
-            __ s[i].isdigit
+            __ s[i].i..
                 j = i + 1
                 w.... s[j] != '[': j += 1
                 prev = stk[-1] __ stk ____ 1
@@ -102,7 +102,7 @@ c_ SolutionError(object):
                 i = j + 1
             ____ s[i].isl..
                 repeat = stk[-1] __ stk ____ 1
-                ___ _ __ xrange(repeat): ret.a..(s[i])
+                ___ _ __ x..(repeat): ret.a..(s[i])
                 i += 1
             ____ s[i] __ ']':
                 stk.pop()

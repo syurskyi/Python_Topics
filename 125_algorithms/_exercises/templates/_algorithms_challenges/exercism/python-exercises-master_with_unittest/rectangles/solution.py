@@ -1,7 +1,7 @@
 _______ i..
 
 
-c_ corners(object):
+c_ corners(o..):
     ___ - , i, j):
         # i, j are position of corner
         i = i

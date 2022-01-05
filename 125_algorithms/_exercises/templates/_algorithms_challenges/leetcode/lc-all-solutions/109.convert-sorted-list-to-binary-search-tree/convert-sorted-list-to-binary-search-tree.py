@@ -11,7 +11,7 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ sortedListToBST  head):
     """
     :type head: ListNode

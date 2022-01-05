@@ -96,7 +96,7 @@ ___ main
             _____
         __ term __ 'q':
             print('Bye')
-            break
+            _____
         
         
         matches = 0

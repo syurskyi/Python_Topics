@@ -4,7 +4,7 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minSubArrayLen  s, nums):
         """
         :type s: int
@@ -36,7 +36,7 @@ c_ Solution(object):
         ___ i __ r..(l..(sums)):
             end = binarySearch(i+1, l..(sums)-1, sums[i]+s, sums)
             __ end __ l..(sums):
-                break
+                _____
             minLen = m..(minLen, end-i)
         r.. minLen __ minLen <= l..(nums) ____ 0
     

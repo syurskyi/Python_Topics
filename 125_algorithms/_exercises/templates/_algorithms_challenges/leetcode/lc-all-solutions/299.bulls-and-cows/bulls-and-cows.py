@@ -1,7 +1,7 @@
 ____ c.. _______ Counter
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ getHint  secret, guess):
     """
     :type secret: str

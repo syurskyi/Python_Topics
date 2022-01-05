@@ -1,4 +1,4 @@
-c_ Vector2D(object):
+c_ Vector2D(o..):
 
   ___ - , vec2d):
     """

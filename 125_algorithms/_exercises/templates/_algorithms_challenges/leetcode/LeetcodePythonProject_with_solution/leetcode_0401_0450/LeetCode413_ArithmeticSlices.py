@@ -4,7 +4,7 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numberOfArithmeticSlices  A):
         """
         :type A: List[int]

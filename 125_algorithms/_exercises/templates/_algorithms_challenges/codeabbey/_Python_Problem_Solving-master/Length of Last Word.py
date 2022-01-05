@@ -10,5 +10,5 @@ c_ Solution:
                 count += 1
                 l -= 1
                 __ s[l] __ ' ':
-                    break
+                    _____
         r.. count

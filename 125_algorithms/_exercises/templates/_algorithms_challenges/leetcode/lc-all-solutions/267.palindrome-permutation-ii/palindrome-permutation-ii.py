@@ -1,7 +1,7 @@
 _______ c..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ generatePalindromes  s):
     """
     :type s: str

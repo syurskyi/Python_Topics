@@ -19,7 +19,7 @@ ___ count_indents_v1(text):
        __ c __ ' ':
            n += 1
        ____:
-           break
+           _____
 
     r.. n
 

@@ -1,4 +1,4 @@
-c_ TopVotedCandidate(object):
+c_ TopVotedCandidate(o..):
 
     ___ - , persons, times):
         """

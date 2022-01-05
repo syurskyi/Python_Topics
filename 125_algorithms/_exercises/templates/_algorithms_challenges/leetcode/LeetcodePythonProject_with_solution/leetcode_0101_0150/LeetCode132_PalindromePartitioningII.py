@@ -4,7 +4,7 @@ Created on Feb 8, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minCut  s):
         """
         :type s: str

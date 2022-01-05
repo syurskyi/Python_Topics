@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ maxNumber  _nums1, _nums2, k):
     """
     :type nums1: List[int]

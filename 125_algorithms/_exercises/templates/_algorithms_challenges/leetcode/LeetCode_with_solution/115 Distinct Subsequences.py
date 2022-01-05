@@ -45,14 +45,14 @@ c_ Solution:
         len_s = l..(S)
         len_t = l..(T)
 
-        dp = [[-1 ___ _ __ xrange(len_s+1)] ___ _ __ xrange(len_t+1)]
-        ___ col __ xrange(len_s+1):
+        dp = [[-1 ___ _ __ x..(len_s+1)] ___ _ __ x..(len_t+1)]
+        ___ col __ x..(len_s+1):
             dp[0][col] = 1
-        ___ row __ xrange(1, len_t+1):
+        ___ row __ x..(1, len_t+1):
             dp[row][0] = 0
 
-        ___ row __ xrange(1, len_t+1):
-            ___ col __ xrange(1, len_s+1):
+        ___ row __ x..(1, len_t+1):
+            ___ col __ x..(1, len_s+1):
                 __ S[col-1]__T[row-1]:
                     dp[row][col] = dp[row][col-1]+dp[row-1][col-1]
                 ____:

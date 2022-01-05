@@ -3,7 +3,7 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ arrayNesting  nums):
         """
         :type nums: List[int]

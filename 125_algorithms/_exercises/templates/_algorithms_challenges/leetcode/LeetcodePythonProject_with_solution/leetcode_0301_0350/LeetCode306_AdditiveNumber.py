@@ -4,7 +4,7 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-c_ STreeNode(object):
+c_ STreeNode(o..):
     ___ - , left, right, sumVal=0):
         start = left
         end = right
@@ -12,7 +12,7 @@ c_ STreeNode(object):
         leftChild = N..
         rightChild = N..
 
-c_ NumArray(object):
+c_ NumArray(o..):
     ___ - , nums):
         __ n.. nums:
             root = N..

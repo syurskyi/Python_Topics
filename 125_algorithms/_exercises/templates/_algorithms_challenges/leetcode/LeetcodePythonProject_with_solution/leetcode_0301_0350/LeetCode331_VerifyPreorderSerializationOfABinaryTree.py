@@ -4,7 +4,7 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isValidSerialization  preorder):
         __ n.. preorder: r.. F..
         nodes = preorder.s..(',')

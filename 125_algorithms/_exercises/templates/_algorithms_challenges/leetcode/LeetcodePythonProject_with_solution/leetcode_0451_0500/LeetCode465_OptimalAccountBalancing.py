@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minTransfers  transactions):
         bal    # dict
         ___ tran __ transactions:

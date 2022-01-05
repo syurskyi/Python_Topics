@@ -3,7 +3,7 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findLength  A, B):
         """
         :type A: List[int]

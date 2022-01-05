@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ SnakeGame(object):
+c_ SnakeGame(o..):
 
   ___ - , width, height, food):
     """

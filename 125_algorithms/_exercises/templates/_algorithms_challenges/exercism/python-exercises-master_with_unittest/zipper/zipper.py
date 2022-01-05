@@ -1,4 +1,4 @@
-c_ Zipper(object):
+c_ Zipper(o..):
     @staticmethod
     ___ from_tree(tree):
         p..

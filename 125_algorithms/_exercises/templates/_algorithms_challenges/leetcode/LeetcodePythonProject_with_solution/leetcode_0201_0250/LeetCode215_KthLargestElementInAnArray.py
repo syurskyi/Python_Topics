@@ -3,7 +3,7 @@ Created on Feb 20, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findKthLargest  nums, k):
         """
         :type nums: List[int]
@@ -28,7 +28,7 @@ c_ Solution(object):
             __ i < j:
                 nums[i], nums[j] = nums[j], nums[i]
             ____:
-                break
+                _____
         nums[i], nums[j0] = nums[j0], nums[i]
         __ i __ k:
             r.. nums[i]

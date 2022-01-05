@@ -2,7 +2,7 @@ _______ s__
 ____ c.. _______ d..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ ladderLength  beginWord, endWord, wordList):
     """
     :type beginWord: str

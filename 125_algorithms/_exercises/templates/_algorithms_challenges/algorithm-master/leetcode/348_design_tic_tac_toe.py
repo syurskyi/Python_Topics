@@ -1,4 +1,4 @@
-c_ TicTacToe(object):
+c_ TicTacToe(o..):
     PLER_A = 1
     PLER_B = 2
 

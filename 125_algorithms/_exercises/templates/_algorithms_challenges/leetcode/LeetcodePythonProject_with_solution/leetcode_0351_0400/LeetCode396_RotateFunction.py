@@ -4,7 +4,7 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxRotateFunction  A):
         nums = A
         sumVal = 0

@@ -4,7 +4,7 @@ Created on Jan 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ letterCombinations  d..):
         """
         :type digits: str

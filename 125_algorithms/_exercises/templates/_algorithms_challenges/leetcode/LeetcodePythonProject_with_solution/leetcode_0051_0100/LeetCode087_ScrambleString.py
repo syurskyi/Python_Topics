@@ -3,7 +3,7 @@ Created on May 31, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isScramble  s1, s2):
         """
         :type s1: str

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   # while loop
   ___ smallestFactorization  a):
     """

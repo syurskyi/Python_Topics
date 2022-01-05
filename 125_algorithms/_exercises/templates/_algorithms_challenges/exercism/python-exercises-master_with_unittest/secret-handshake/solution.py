@@ -3,14 +3,14 @@ gestures = ['wink', 'double blink', 'close your eyes', 'jump']
 
 ___ handshake(s):
     s = l..(sanitize(s))
-    s.reverse()
+    s.r..
     seq    # list
     lim = l..(s) __ l..(s) <= l..(gestures) ____ l..(gestures)
     ___ i1 __ r..(lim):
         __ s[i1] __ '1':
             seq.a..(gestures[i1])
     __ l..(s) __ 5:
-        seq.reverse()
+        seq.r..
     r.. seq
 
 
@@ -46,5 +46,5 @@ ___ find_subseq(seq):
         newidx = gestures.index(g, idx) + 1
         s.extend(['0'] * (newidx - idx - 1) + ['1'])
         idx = newidx
-    s.reverse()
+    s.r..
     r.. s

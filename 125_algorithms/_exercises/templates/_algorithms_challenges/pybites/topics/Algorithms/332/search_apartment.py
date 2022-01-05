@@ -14,7 +14,7 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
     highest = 0
     building_list    # list
     __ direction __ "E":
-        buildings.reverse()
+        buildings.r..
     ___ index, building __ e..(buildings):
         __ building > highest:
             highest = building
@@ -22,7 +22,7 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
     __ direction __ "E":
         ___ index, building __ e..(building_list):
             building_list[index] = l..(buildings)-building-1
-        building_list.reverse()
+        building_list.r..
     r.. building_list
 
 

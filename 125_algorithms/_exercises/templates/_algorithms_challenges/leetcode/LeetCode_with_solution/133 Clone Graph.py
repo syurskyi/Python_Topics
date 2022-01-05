@@ -28,7 +28,7 @@ c_ UndirectedGraphNode:
     ___ - , x):
         label = x
         neighbors    # list
-    ___ __repr__
+    ___  -r
         r.. repr(label)
 
 c_ Solution:

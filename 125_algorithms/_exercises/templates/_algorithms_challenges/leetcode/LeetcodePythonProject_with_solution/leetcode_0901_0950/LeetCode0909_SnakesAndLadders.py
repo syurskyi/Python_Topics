@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
     ___ snakesAndLadders  board):
         """
         :type board: List[List[int]]

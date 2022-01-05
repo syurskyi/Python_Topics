@@ -5,7 +5,7 @@ ranges.
 For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ summaryRanges  nums):
         """
         :type nums: List[int]

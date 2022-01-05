@@ -1,7 +1,7 @@
 _______ math
 
 
-c_ ComplexNumber(object):
+c_ ComplexNumber(o..):
     ___ - , real, imaginary):
         real = real
         imaginary = imaginary

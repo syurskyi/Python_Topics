@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ shortestWordDistance  words, word1, word2):
     """
     :type words: List[str]

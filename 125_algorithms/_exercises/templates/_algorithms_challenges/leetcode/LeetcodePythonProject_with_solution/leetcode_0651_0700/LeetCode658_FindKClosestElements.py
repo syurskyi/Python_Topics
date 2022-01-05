@@ -3,7 +3,7 @@ Created on Oct 7, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findClosestElements  arr, k, x):
         """
         :type arr: List[int]

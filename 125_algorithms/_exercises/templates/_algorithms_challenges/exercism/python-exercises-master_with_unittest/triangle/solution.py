@@ -1,8 +1,8 @@
-c_ TriangleError(Exception):
+c_ TriangleError(E..):
     p..
 
 
-c_ Triangle(object):
+c_ Triangle(o..):
     ___ - , x, y, z):
         sides = (x, y, z)
 

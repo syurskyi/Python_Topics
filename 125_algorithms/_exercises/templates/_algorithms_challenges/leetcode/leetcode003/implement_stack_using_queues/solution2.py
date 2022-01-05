@@ -19,7 +19,7 @@ You may assume that all operations are valid (for example, no pop or top
 operations will be called on an empty stack).
 """
 
-c_ Stack(object):
+c_ Stack(o..):
     ___ - ):
         """
         initialize your data structure here.

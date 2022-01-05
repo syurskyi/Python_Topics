@@ -5,13 +5,13 @@ Created on Mar 5, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ closestKValues  root, target, k):
         """
         :type root: TreeNode

@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ Graph(object):
+c_ Graph(o..):
   ___ - ):
     graph    # dict
 
@@ -39,13 +39,13 @@ c_ Graph(object):
       node2.nbrs[node1.label] = float("inf")
 
 
-c_ GraphNode(object):
+c_ GraphNode(o..):
   ___ - , label):
     label = label
     nbrs    # dict
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ calcEquation  equations, values, queries):
     """
     :type equations: List[List[str]]

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ isOneEditDistance  s, t):
     """
     :type s: str

@@ -1,7 +1,7 @@
 _______ math
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ superpalindromesInRange  L, R):
         """
         :type L: str

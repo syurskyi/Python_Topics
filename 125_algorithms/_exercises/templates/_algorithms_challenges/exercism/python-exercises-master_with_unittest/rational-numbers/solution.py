@@ -3,7 +3,7 @@ ____ __future__ _______ division
 ____ fractions _______ gcd
 
 
-c_ Rational(object):
+c_ Rational(o..):
     """
     Toyish implementation of rational numbers. For production purpose,
     please use `fractions.Fraction` in standard library instead.
@@ -24,7 +24,7 @@ c_ Rational(object):
     ___ __eq__  other):
         r.. numer __ other.numer a.. denom __ other.denom
 
-    ___ __repr__
+    ___  -r
         r.. '{}/{}'.f..(numer, denom)
 
     ___ __add__  other):

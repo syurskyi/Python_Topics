@@ -11,7 +11,7 @@ ____:
 total_workers = 3  # Maximum number of threads chosen arbitrarily
 
 
-c_ LetterCounter(object):
+c_ LetterCounter(o..):
 
     ___ - ):
         lock = Lock()
@@ -35,7 +35,7 @@ ___ count_letters(queue_of_texts, letter_to_frequency, worker_id):
             letter_to_frequency.add_counter(letters_in_line)
         queue_of_texts.task_done()
         __ line_input __ N..
-            break
+            _____
 
 
 ___ calculate(list_of_texts):

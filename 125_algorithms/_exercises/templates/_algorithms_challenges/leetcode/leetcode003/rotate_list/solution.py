@@ -24,7 +24,7 @@ c_ Solution:
         i = 0
         w.... res __ n.. N..
             __ i __ n - k:
-                break
+                _____
             prev = res
             res = res.next
             i += 1

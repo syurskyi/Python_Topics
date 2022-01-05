@@ -17,7 +17,7 @@ Given a string represents an integer, write a function to determine if it's an a
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isAdditiveNumber  num):
         """
         Backtracking
@@ -25,8 +25,8 @@ c_ Solution(object):
         :rtype: bool
         """
         n = l..(num)
-        ___ i __ xrange(1, n):
-            ___ j __ xrange(i, n):
+        ___ i __ x..(1, n):
+            ___ j __ x..(i, n):
                 __ predicate(num, 0, i, j):
                     r.. T..
 

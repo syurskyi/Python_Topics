@@ -8,7 +8,7 @@ For example,
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ permute  nums):
         """
         :type nums: List[int]

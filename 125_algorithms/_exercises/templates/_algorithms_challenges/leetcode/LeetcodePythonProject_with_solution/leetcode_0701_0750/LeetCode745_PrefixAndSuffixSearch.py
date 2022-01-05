@@ -3,14 +3,14 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , val):
         val = val
         children    # dict
         isLeaf = F..
         candidates = set()
 
-c_ WordFilter(object):
+c_ WordFilter(o..):
 
     ___ - , words):
         """

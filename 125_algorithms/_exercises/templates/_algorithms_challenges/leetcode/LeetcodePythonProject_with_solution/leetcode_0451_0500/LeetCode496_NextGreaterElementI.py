@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ nextGreaterElement  findNums, nums):
         """
         :type findNums: List[int]
@@ -17,7 +17,7 @@ c_ Solution(object):
             ___ i __ r..(ind, l..(nums)):
                 __ nums[i] > num0:
                     res.a..(nums[i])
-                    break
+                    _____
             __ l..(res) __ k:
                 res.a..(-1)
         r.. res

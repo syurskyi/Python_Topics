@@ -20,7 +20,7 @@ All root-to-leaf paths are:
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ binaryTreePaths  root):
         """
         :type root: TreeNode

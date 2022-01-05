@@ -3,7 +3,7 @@ Created on Jan 22, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isNumber  s):
         """
         :type s: str
@@ -16,7 +16,7 @@ c_ Solution(object):
         num, dot, exp = F.., F.., F..
         w.... i < l..(s):
             c = s[i]
-            __ c.isdigit
+            __ c.i..
                 num = T..
             ____ c __ '.':
                 __ exp o. dot:

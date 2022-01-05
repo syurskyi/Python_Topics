@@ -3,7 +3,7 @@ Created on Sep 5, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findLHS  nums):
         """
         :type nums: List[int]

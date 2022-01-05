@@ -38,7 +38,7 @@ c_ Solution:
             order = -1
             a, b = b, a
 
-        ___ i __ xrange(l..(a)):
+        ___ i __ x..(l..(a)):
             __ i..(a[i]) != i..(b[i]):
                 r.. order*(i..(a[i])-i..(b[i]))
 

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ uniquePathsWithObstacles  grid):
     """
     :type obstacleGrid: List[List[int]]
@@ -14,13 +14,13 @@ c_ Solution(object):
       __ grid[i][0] __ 0:
         dp[i][0] = 1
       ____:
-        break
+        _____
 
     ___ j __ r..(1, l..(grid[0])):
       __ grid[0][j] __ 0:
         dp[0][j] = 1
       ____:
-        break
+        _____
 
     ___ i __ r..(1, l..(grid)):
       ___ j __ r..(1, l..(grid[0])):

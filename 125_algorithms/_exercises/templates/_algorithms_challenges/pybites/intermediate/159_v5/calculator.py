@@ -9,5 +9,5 @@ ___ simple_calculator(calculation):
         a, op, b = calculation.s..
         a, b = i..(a), i..(b)
         r.. funcs[op](a, b)
-    ______ Exception:
+    ______ E..:
         r.. ValueError

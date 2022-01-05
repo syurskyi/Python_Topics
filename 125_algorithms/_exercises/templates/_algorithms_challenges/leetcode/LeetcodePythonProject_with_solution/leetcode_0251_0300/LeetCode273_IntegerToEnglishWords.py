@@ -3,7 +3,7 @@ Created on Mar 5, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numberToWords_own  num):
         """
         :type num: int

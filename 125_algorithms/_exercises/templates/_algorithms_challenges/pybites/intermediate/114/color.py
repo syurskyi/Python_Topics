@@ -93,7 +93,7 @@ c_ Color:
 
 
 
-    ___ __repr__
+    ___  -r
         """Returns the repl of the object"""
         r.. f"{t..(self).__name__}('{color}')"
 

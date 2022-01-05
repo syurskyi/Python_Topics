@@ -48,9 +48,9 @@ c_ Solution:
         m = l..(dungeon)
         n = l..(dungeon[0])
 
-        F = [[sys.maxint ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
-        ___ i __ xrange(m-1, -1, -1):
-            ___ j __ xrange(n-1, -1, -1):
+        F = [[sys.maxint ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        ___ i __ x..(m-1, -1, -1):
+            ___ j __ x..(n-1, -1, -1):
                 __ i __ m-1 a.. j __ n-1:
                     F[i][j] = m..(1, 1-dungeon[i][j])
                 ____:
@@ -72,9 +72,9 @@ c_ Solution:
         __ m __ 1 a.. n __ 1:
             r.. 1-m..(0, dungeon[0][0])
 
-        F = [[-sys.maxint-1 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
-        ___ i __ xrange(1, m+1):
-            ___ j __ xrange(1, n+1):
+        F = [[-sys.maxint-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        ___ i __ x..(1, m+1):
+            ___ j __ x..(1, n+1):
                 __ i __ 1 a.. j __ 1:
                     F[i][j] = dungeon[i-1][j-1]
                 ____:

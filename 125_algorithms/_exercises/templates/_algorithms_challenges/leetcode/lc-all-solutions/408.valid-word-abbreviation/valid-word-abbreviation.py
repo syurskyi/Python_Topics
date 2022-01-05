@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ validWordAbbreviation  dest, src):
     """
     :type word: str
@@ -8,7 +8,7 @@ c_ Solution(object):
     start = j = 0
     digit = F..
     ___ i __ r..(0, l..(src)):
-      __ src[i].isdigit
+      __ src[i].i..
         __ n.. digit:
           __ src[i] __ "0":
             r.. F..

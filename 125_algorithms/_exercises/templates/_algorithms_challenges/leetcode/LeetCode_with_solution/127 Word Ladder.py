@@ -74,15 +74,15 @@ c_ Solution:
             count = 0
             str1 = lst[s1]
             str2 = lst[s2]
-            ___ i __ xrange(l..(str1)):
+            ___ i __ x..(l..(str1)):
                 __ count>1:
                     r.. -1
                 __ str1[i]!=str2[i]:
                     count += 1
             r.. count
 
-        ___ i __ xrange(l..(lst)):
-            ___ j __ xrange(i, l..(lst)):
+        ___ i __ x..(l..(lst)):
+            ___ j __ x..(i, l..(lst)):
                 dp[i][j] = diff_count(i, j)
                 dp[j][i] = dp[i][j]
 
@@ -94,10 +94,10 @@ c_ Solution:
         w.... queue:
             path_len += 1
             length = l..(queue)
-            ___ i __ xrange(length):  #O(V)
+            ___ i __ x..(length):  #O(V)
                 __ lst[queue[i]]__end:  # reached
                     r.. path_len
-                ___ ind __ xrange(1, l..(lst)):  # O(k), add next level
+                ___ ind __ x..(1, l..(lst)):  # O(k), add next level
                     __ n.. visited[ind] a.. dp[ind][queue[i]]__1:
                         queue.a..(ind)
                         visited[ind] = T..
@@ -120,7 +120,7 @@ c_ Solution:
             :return: 0 1 or -1
             """
             count = 0
-            ___ i __ xrange(l..(str1)):
+            ___ i __ x..(l..(str1)):
                 __ count>1:
                     r.. -1
                 __ str1[i]!=str2[i]:
@@ -133,7 +133,7 @@ c_ Solution:
         w.... queue:
             path_len += 1
             length = l..(queue)
-            ___ i __ xrange(length):  #O(V)
+            ___ i __ x..(length):  #O(V)
                 __ queue[i]__end:  # reached
                     r.. path_len
 
@@ -163,20 +163,20 @@ c_ Solution:
         :return: integer, if impossible, return 0
         """
         path_len = 0
-        lower_cases = [chr(i+o..('a')) ___ i __ xrange(26)]
+        lower_cases = [chr(i+o..('a')) ___ i __ x..(26)]
 
         queue = [start]
         d...remove(start)
         w... T...
             path_len += 1
             length_0 = l..(queue)
-            ___ i __ xrange(length_0):  #O(V)
+            ___ i __ x..(length_0):  #O(V)
                 current = queue[i]
                 __ current__end:  # reached
                     r.. path_len
 
                 current = queue[i]
-                ___ pos __ xrange(l..(current)):
+                ___ pos __ x..(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char

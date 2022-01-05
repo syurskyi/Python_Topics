@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ maxEnvelopes  envelopes):
     """
     :type envelopes: List[List[int]]

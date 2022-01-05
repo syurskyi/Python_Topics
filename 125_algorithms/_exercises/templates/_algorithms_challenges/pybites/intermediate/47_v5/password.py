@@ -12,7 +12,7 @@ ___ validate_password(password: s..) __ bool:
         r.. F..
     d.. = lcase = ucase = punc = 0
     ___ c __ password:
-        __ c.isdigit
+        __ c.i..
             d.. += 1
         ____ c.isl..
             lcase += 1

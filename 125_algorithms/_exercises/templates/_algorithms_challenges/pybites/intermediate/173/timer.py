@@ -35,7 +35,7 @@ ___ add_todo(delay_time: s.., task: s..,
             minutes = i..(unit[:-1])
         ____ last_char __ "s":
             seconds = i..(unit[:-1])
-        ____ last_char.isdigit
+        ____ last_char.i..
             seconds = i..(unit)
         ____:
             _____

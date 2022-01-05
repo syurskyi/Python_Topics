@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numDistinctIslands2  grid):
         """
         :type grid: List[List[int]]
@@ -24,7 +24,7 @@ c_ Solution(object):
                     ___ key __ keys:
                         __ key __ hashset:
                             found = T..
-                            break
+                            _____
                     __ n.. found:
                         hashset.add(keys.pop())
                         count += 1

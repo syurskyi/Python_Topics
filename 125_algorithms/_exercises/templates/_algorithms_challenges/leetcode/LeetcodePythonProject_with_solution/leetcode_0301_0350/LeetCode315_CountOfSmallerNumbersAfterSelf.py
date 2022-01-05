@@ -4,7 +4,7 @@ Created on Mar 15, 2017
 @author: MT
 '''
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , val, num=1):
         val = val
         num = num
@@ -14,10 +14,10 @@ c_ TreeNode(object):
     ___ __str__
         r.. '<val: %s, num: %s>' % (val, num)
     
-    ___ __repr__
+    ___  -r
         r.. __str__()
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ countSmaller  nums):
         __ n.. nums: r.. []
         root = TreeNode(nums[-1])

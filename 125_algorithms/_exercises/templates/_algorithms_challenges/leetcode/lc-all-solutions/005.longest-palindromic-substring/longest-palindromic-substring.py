@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ longestPalindrome  s):
     """
     :type s: str
@@ -8,7 +8,7 @@ c_ Solution(object):
     n = l..(s)
     ___ i __ r..(n - 1):
       __ 2 * (n - i) + 1 < right - left + 1:
-        break
+        _____
       l = r = i
       w.... l >= 0 a.. r < n a.. s[l] __ s[r]:
         l -= 1

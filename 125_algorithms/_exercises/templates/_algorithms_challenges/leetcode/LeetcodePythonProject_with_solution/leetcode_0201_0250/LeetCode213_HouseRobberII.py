@@ -4,7 +4,7 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rob  nums):
         __ n.. nums: r.. 0
         __ l..(nums) __ 1: r.. nums[0]

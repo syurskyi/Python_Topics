@@ -129,7 +129,7 @@ ___ delete_quote(qid):
     ___ i,quote __ e..(quotes):
         __ quote['id'] __ qid:
             quotes.pop(i)
-            break
+            _____
 
 
     

@@ -12,7 +12,7 @@ used item before inserting a new item.
 """
 
 
-c_ LRUCache(object):
+c_ LRUCache(o..):
     ___ - , capacity):
         """
         :type capacity: int
@@ -52,7 +52,7 @@ c_ LRUCache(object):
             times.insert(node)
 
 
-c_ ListNode(object):
+c_ ListNode(o..):
     """Doubly Linked List node"""
     ___ - , key, value):
         prev = N..
@@ -61,7 +61,7 @@ c_ ListNode(object):
         value = value
 
 
-c_ List(object):
+c_ List(o..):
     ___ - ):
         head = N..
         tail = N..

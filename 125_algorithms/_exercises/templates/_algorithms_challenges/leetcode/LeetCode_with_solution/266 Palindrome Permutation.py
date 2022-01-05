@@ -7,7 +7,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canPermutePalindrome  s):
         """
         :type s: str

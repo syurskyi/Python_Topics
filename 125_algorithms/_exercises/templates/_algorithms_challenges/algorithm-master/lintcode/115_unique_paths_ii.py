@@ -15,7 +15,7 @@ c_ Solution:
 
         ___ j __ r..(n):
             __ G[0][j] __ OBSTACLE:
-                break
+                _____
             dp[curr][j] = 1
 
         ___ i __ r..(1, m):

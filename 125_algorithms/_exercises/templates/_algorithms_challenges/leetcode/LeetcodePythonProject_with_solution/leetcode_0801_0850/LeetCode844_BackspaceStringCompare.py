@@ -3,7 +3,7 @@ Created on Mar 18, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ backspaceCompare  S, T):
         """
         :type S: str

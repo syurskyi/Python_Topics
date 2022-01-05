@@ -12,7 +12,7 @@ For example, if there are 4 stones in the heap, then you will never win the game
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canWinNim  n):
         """
         Enumerate example and find the pattern
@@ -30,10 +30,10 @@ c_ Solution(object):
         __ n < 3:
             r.. T..
 
-        F = [F.. ___ _ __ xrange(3)]
+        F = [F.. ___ _ __ x..(3)]
         F[1] = F[2] = F[0] = T..
-        ___ i __ xrange(4, n+1):
-            F[i%3] = any(n.. F[(i-k)%3] ___ k __ xrange(1, 4))
+        ___ i __ x..(4, n+1):
+            F[i%3] = any(n.. F[(i-k)%3] ___ k __ x..(1, 4))
 
         r.. F[n%3]
 
@@ -48,10 +48,10 @@ c_ Solution(object):
         __ n < 3:
             r.. T..
 
-        F = [F.. ___ _ __ xrange(n+1)]
+        F = [F.. ___ _ __ x..(n+1)]
         F[1] = F[2] = F[3] = T..
-        ___ i __ xrange(4, n+1):
-            F[i] = any(n.. F[i-k] ___ k __ xrange(1, 4))
+        ___ i __ x..(4, n+1):
+            F[i] = any(n.. F[i-k] ___ k __ x..(1, 4))
 
         r.. F[n]
 

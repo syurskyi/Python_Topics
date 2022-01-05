@@ -1,7 +1,7 @@
 _______ threading
 
 
-c_ BankAccount(object):
+c_ BankAccount(o..):
     ___ - ):
         is_open = F..
         balance = 0

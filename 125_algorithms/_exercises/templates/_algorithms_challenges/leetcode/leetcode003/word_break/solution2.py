@@ -9,7 +9,7 @@ dict = ["leet", "code"].
 Return true because "leetcode" can be segmented as "leet code".
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wordBreak  s, wordDict):
         """
         :type s: str

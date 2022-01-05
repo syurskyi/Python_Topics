@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ canMeasureWater  x, y, z):
     """
     :type x: int
@@ -17,7 +17,7 @@ c_ Solution(object):
     n = m..(x, y)
     w.... n > 1:
       __ x % n __ 0 a.. y % n __ 0:
-        break
+        _____
       n -= 1
     __ z % n __ 0:
       r.. T..

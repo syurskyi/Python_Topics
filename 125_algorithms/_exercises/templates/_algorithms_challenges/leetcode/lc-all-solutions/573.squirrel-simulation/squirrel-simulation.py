@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ minDistance  height, width, tree, squirrel, nuts):
     """
     :type height: int

@@ -15,7 +15,7 @@ Returns: False
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isPerfectSquare  num):
         """
         Debugging binary search

@@ -21,7 +21,7 @@ _______ r__
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - , nums):
         """
         :type nums: List[int]
@@ -45,7 +45,7 @@ c_ Solution(object):
         """
         lst = reset()
         n = l..(lst)
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             j = r__.randrange(i, n)
             lst[i], lst[j] = lst[j], lst[i]
 

@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ PhoneDirectory(object):
+c_ PhoneDirectory(o..):
     ___ - , maxNumbers):
         availableNums = set(r..(maxNumbers))
         usedNums = set()

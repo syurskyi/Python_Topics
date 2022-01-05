@@ -3,13 +3,13 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , val):
         val = val
         s.. = 0
         children    # dict
 
-c_ MapSum(object):
+c_ MapSum(o..):
 
     ___ - ):
         """

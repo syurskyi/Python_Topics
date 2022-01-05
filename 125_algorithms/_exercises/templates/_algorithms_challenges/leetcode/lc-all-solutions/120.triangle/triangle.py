@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ minimumTotal  triangle):
     """
     :type triangle: List[List[int]]

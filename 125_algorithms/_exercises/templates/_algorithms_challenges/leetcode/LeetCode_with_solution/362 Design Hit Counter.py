@@ -6,7 +6,7 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ HitCounter(object):
+c_ HitCounter(o..):
     ___ - ):
         """
         Initialize your data structure here.

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ missingNumber  nums):
     """
     :type nums: List[int]

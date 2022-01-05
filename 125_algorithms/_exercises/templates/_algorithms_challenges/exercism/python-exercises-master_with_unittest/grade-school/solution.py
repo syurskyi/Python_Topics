@@ -1,7 +1,7 @@
 ____ c.. _______ defaultdict
 
 
-c_ School(object):
+c_ School(o..):
     ___ - , name):
         name = name
         db = defaultdict(set)

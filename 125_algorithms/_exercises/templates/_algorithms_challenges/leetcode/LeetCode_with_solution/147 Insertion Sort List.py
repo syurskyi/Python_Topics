@@ -34,11 +34,11 @@ c_ Solution:
                     open_head.next = ptr
 
                     # closed_tail.next = open_head_next
-                    break
+                    _____
 
                 __ ptr__open_head:
                     closed_tail = closed_tail.next
-                    break
+                    _____
 
                 ptr_before = ptr_before.next
                 ptr = ptr.next
@@ -89,13 +89,13 @@ c_ Solution:
 
 __ _____ __ ____
     _______ r__
-    lst = [ListNode(i) ___ i __ r__.sample(xrange(-1000, 1000), 1000)]
+    lst = [ListNode(i) ___ i __ r__.sample(x..(-1000, 1000), 1000)]
     # lst = [ListNode(1), ListNode(3), ListNode(2)]
     # lst = [ListNode(i) for i in range(10, -1, -1)]
     ___ i __ r..(l..(lst)):
         ___
             lst[i].next = lst[i+1]
-        ______ IndexError: # last
+        ______ I.. # last
             lst[i].next = N..
 
 

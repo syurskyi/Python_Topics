@@ -1,4 +1,4 @@
-c_ StockSpanner(object):
+c_ StockSpanner(o..):
 
     ___ - ):
         prices    # list

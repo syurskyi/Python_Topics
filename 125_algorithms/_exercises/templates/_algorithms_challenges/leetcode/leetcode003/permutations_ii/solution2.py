@@ -7,7 +7,7 @@ For example,
 [1,1,2], [1,2,1], and [2,1,1].
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ permuteUnique  nums):
         """
         :type nums: List[int]

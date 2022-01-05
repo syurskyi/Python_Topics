@@ -4,7 +4,7 @@ Created on Apr 27, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findRadius  houses, heaters):
         houses.s..()
         heaters.s..()

@@ -4,7 +4,7 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wordPatternMatch  pattern, s):
         __ n.. pattern a.. n.. s: r.. T..
         __ n.. pattern o. n.. s: r.. F..

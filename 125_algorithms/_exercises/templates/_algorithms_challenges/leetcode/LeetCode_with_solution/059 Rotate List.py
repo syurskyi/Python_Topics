@@ -12,7 +12,7 @@ c_ ListNode:
         val = x
         next = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr(val)
 
 c_ Solution:
@@ -59,7 +59,7 @@ c_ Solution:
 
 __ _____ __ ____
     length = 1
-    lst = [ListNode(i+1) ___ i __ xrange(length)]
+    lst = [ListNode(i+1) ___ i __ x..(length)]
     ___ i __ r..(length-1):
         lst[i].next = lst[i+1]
     Solution().rotateRight(lst[0], 1)

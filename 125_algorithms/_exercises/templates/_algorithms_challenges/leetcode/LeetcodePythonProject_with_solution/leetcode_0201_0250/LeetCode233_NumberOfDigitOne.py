@@ -3,7 +3,7 @@ Created on Feb 23, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ countDigitOne  n):
         """
         :type n: int

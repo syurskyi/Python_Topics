@@ -6,7 +6,7 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ MovingAverage(object):
+c_ MovingAverage(o..):
     ___ - , size):
         """
         Initialize your data structure here.

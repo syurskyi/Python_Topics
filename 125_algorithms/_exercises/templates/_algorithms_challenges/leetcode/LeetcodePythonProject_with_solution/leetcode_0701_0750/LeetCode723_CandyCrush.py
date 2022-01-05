@@ -3,7 +3,7 @@ Created on Feb 20, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ candyCrush  board):
         """
         :type board: List[List[int]]
@@ -18,7 +18,7 @@ c_ Solution(object):
                     changed = bfs(board, i, j) o. changed
             __ n.. changed:
                 res = board
-                break
+                _____
             convert(res, board)
             board = res
         r.. res
@@ -33,14 +33,14 @@ c_ Solution(object):
                 __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
                 ____:
-                    break
+                    _____
             changed = T..
         __ j+2 < n a.. val __ abs(board[i][j+1]) __ abs(board[i][j+2]):
             ___ j0 __ r..(j+1, n):
                 __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
                 ____:
-                    break
+                    _____
             changed = T..
         __ changed:
             board[i][j] = -val

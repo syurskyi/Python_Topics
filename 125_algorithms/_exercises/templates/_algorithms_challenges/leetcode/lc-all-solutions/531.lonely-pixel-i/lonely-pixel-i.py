@@ -1,6 +1,6 @@
 ____ c.. _______ defaultdict
 
-c_ Solution(object):
+c_ Solution(o..):
   
   ___ findLonelyPixel  picture):
 

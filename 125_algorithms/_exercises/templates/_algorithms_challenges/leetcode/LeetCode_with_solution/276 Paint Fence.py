@@ -4,9 +4,9 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numWays_oneliner  n, k):
-        r.. 0 __ n < 1 ____ s..(reduce(l.... F, i: [(k-1)*(F[0]+F[1]), F[0]], xrange(1, n), [k, 0]))
+        r.. 0 __ n < 1 ____ s..(reduce(l.... F, i: [(k-1)*(F[0]+F[1]), F[0]], x..(1, n), [k, 0]))
 
     ___ numWays  n, k):
         """
@@ -29,7 +29,7 @@ c_ Solution(object):
 
         num_diff = k
         num_same = 0
-        ___ _ __ xrange(1, n):
+        ___ _ __ x..(1, n):
             num_diff, num_same = (k-1)*(num_diff+num_same), num_diff
 
         r.. num_diff+num_same
@@ -45,20 +45,20 @@ c_ Solution(object):
         __ n < 1:
             r.. 0
 
-        F = [[[0 ___ _ __ xrange(k)] ___ _ __ xrange(k)] ___ _ __ xrange(2)]
+        F = [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(2)]
         EMPTY = 0
 
-        ___ j0 __ xrange(k):
+        ___ j0 __ x..(k):
             F[1][j0][EMPTY] = 1
 
-        ___ i __ xrange(2, n+1):
-            ___ j0 __ xrange(k):
-                ___ j1 __ xrange(k):
+        ___ i __ x..(2, n+1):
+            ___ j0 __ x..(k):
+                ___ j1 __ x..(k):
                     F[i%2][j0][j1] = 0
 
-            ___ j0 __ xrange(k):
-                ___ j1 __ xrange(k):
-                    ___ j2 __ xrange(k):
+            ___ j0 __ x..(k):
+                ___ j1 __ x..(k):
+                    ___ j2 __ x..(k):
                         __ i __ 2:
                             F[i%2][j0][j1] = F[(i-1)%2][j1][EMPTY]
 
@@ -68,8 +68,8 @@ c_ Solution(object):
                             F[i%2][j0][j1] += F[(i-1)%2][j1][j2]
 
         ret = 0
-        ___ j0 __ xrange(k):
-            ___ j1 __ xrange(k):
+        ___ j0 __ x..(k):
+            ___ j1 __ x..(k):
                 ret += F[n%2][j0][j1]
 
         r.. ret
@@ -85,16 +85,16 @@ c_ Solution(object):
         __ n < 1:
             r.. 0
 
-        F = [[[0 ___ _ __ xrange(k)] ___ _ __ xrange(k)] ___ _ __ xrange(n+1)]
+        F = [[[0 ___ _ __ x..(k)] ___ _ __ x..(k)] ___ _ __ x..(n+1)]
         EMPTY = 0
 
-        ___ j0 __ xrange(k):
+        ___ j0 __ x..(k):
             F[1][j0][EMPTY] = 1
 
-        ___ i __ xrange(2, n+1):
-            ___ j0 __ xrange(k):
-                ___ j1 __ xrange(k):
-                    ___ j2 __ xrange(k):
+        ___ i __ x..(2, n+1):
+            ___ j0 __ x..(k):
+                ___ j1 __ x..(k):
+                    ___ j2 __ x..(k):
                         __ i __ 2:
                             F[i][j0][j1] = F[i-1][j1][EMPTY]
 
@@ -104,8 +104,8 @@ c_ Solution(object):
                             F[i][j0][j1] += F[i-1][j1][j2]
 
         ret = 0
-        ___ j0 __ xrange(k):
-            ___ j1 __ xrange(k):
+        ___ j0 __ x..(k):
+            ___ j1 __ x..(k):
                 ret += F[n][j0][j1]
 
         r.. ret

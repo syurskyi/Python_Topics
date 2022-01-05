@@ -4,7 +4,7 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-c_ MinStack(object):
+c_ MinStack(o..):
 
     ___ - ):
         """

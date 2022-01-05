@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ PhoneDirectory(object):
+c_ PhoneDirectory(o..):
 
   ___ - , maxNumbers):
     """

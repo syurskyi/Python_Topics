@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
 
   # O(n) sapce complexity, **stack**
   ___ verifyPreorder  preorder):

@@ -3,7 +3,7 @@ Created on Sep 7, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ addBoldTag  s, d..):
         """
         :type s: str
@@ -19,7 +19,7 @@ c_ Solution(object):
             ___ word __ d..:
                 __ i+l..(word) <= n a.. s[i:i+l..(word)] __ word:
                     maxLen = m..(maxLen, i+l..(word))
-                    break
+                    _____
             __ maxLen > i a.. n.. started:
                 res += '<b>'+s[i]
                 started = T..

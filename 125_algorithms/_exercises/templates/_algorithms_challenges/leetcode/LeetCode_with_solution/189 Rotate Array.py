@@ -17,7 +17,7 @@ c_ Solution:
         n = l..(nums)
         k %= n
         temp = nums[:n-k]
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             __ i < k:
                 nums[i] = nums[n-k+i]
             ____:

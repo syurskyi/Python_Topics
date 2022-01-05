@@ -3,7 +3,7 @@
 #     def __init__(self, s=0, e=0):
 #         self.start = s
 #         self.end = e
-c_ IntvArray(object):
+c_ IntvArray(o..):
   ___ - ):
     _array    # list
     a.. = l.... x: _array.a..(x)
@@ -21,7 +21,7 @@ c_ IntvArray(object):
     r.. _array[x][1]
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findRightInterval  intervals):
     """
     :type intervals: List[Interval]

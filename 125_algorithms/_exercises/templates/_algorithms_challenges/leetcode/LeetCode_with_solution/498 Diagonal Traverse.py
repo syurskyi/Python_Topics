@@ -62,7 +62,7 @@ c_ Solution:
         w... T...
             ret.a..(matrix[i][j])
             __ i __ R - 1 a.. j __ C - 1:
-                break
+                _____
             __ inc:
                 i -= 1
                 j += 1

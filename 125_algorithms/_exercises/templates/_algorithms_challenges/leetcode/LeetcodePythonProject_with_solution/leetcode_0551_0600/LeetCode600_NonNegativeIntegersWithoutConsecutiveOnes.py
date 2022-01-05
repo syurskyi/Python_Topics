@@ -4,7 +4,7 @@ Created on Sep 5, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findIntegers  num):
         """
         :type num: int
@@ -21,7 +21,7 @@ c_ Solution(object):
         res = dp1[-1]+dp2[-1]
         ___ i __ r..(n-2, -1, -1):
             __ s[i] __ '1' a.. s[i+1] __ '1':
-                break
+                _____
             __ s[i] __ '0' a.. s[i+1] __ '0':
                 res -= dp2[i]
         r.. res

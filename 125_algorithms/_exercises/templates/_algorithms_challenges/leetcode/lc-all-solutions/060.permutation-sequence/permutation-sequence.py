@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ getPermutation  n, k):
     """
     :type n: int
@@ -14,7 +14,7 @@ c_ Solution(object):
       ___ j __ r..(n):
         __ n.. visited[j]:
           __ t __ 0:
-            break
+            _____
           t -= 1
       ans += s..(j + 1)
       k %= fact[i]

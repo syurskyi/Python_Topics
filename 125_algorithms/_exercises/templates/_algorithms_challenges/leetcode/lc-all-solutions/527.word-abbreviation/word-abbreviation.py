@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ wordsAbbreviation  d..):
     """
     :type dict: List[str]
@@ -21,7 +21,7 @@ c_ Solution(object):
             __ checkUnique(prefix, words):
               nabbr = getAbbr(word, prefix)
               word2abbr[word] = nabbr
-              break
+              _____
       ____:
         word2abbr[words.pop()] = abbr
     r.. [word2abbr[word] ___ word __ d..]

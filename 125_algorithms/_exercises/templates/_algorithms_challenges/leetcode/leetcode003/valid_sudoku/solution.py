@@ -10,7 +10,7 @@ filled cells need to be validated.
 
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isValidSudoku  board):
         """
         :type board: List[List[str]]

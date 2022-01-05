@@ -24,7 +24,7 @@ c_ SQLiteType(Enum):
     BLOB = bytes
 
 
-c_ SchemaError(Exception):
+c_ SchemaError(E..):
     """Base Schema error class if a table schema is not respected."""
 
     p..

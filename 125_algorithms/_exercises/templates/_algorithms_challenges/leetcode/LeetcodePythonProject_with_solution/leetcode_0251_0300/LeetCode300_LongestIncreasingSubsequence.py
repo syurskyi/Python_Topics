@@ -4,7 +4,7 @@ Created on Mar 9, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ lengthOfLIS  nums):
         _______ bisect
         dp = [0]*l..(nums)

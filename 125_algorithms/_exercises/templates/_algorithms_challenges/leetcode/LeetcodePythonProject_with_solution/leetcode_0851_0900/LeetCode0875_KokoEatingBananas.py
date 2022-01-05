@@ -3,7 +3,7 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ minEatingSpeed  piles, H):
         """
         :type piles: List[int]

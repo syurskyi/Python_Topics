@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reverseWords  s):
         """
         in-place without allocating extra space

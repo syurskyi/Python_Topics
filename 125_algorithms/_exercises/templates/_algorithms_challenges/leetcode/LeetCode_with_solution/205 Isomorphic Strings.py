@@ -29,7 +29,7 @@ c_ Solution:
         """
         m    # dict
         mapped = set()  # case "ab", "aa"
-        ___ i __ xrange(l..(s)):
+        ___ i __ x..(l..(s)):
             __ s[i] n.. __ m a.. t[i] n.. __ mapped:
                 m[s[i]] = t[i]
                 mapped.add(t[i])

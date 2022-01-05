@@ -3,7 +3,7 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ canPartitionKSubsets  nums, k):
         """
         :type nums: List[int]
@@ -29,7 +29,7 @@ c_ Solution(object):
                     r.. T..
                 elems[ind] -= nums[i]
             ____:
-                break
+                _____
         r.. F..
     
     ___ test

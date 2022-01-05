@@ -8,7 +8,7 @@ Created on Mar 20, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-c_ NestedInteger(object):
+c_ NestedInteger(o..):
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
@@ -32,7 +32,7 @@ c_ NestedInteger(object):
         """
         p..
 
-c_ NestedIterator(object):
+c_ NestedIterator(o..):
     ___ - , nestedList):
         d.. = nestedList
         result    # list
@@ -42,7 +42,7 @@ c_ NestedIterator(object):
                 result.a..(ni.getInteger())
             ____:
                 l = ni.getList()
-                l.reverse()
+                l.r..
                 ___ ni0 __ l:
                     d...insert(0, ni0)
         result = result

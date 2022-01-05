@@ -3,7 +3,7 @@ Created on Mar 27, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ openLock  deadends, target):
         """
         :type deadends: List[str]

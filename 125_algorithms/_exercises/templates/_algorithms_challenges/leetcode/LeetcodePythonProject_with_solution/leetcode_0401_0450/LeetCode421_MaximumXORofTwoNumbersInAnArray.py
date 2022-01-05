@@ -4,7 +4,7 @@ Created on Apr 13, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMaximumXOR  nums):
         """
         :type nums: List[int]
@@ -21,5 +21,5 @@ c_ Solution(object):
             ___ prefix __ hashset:
                 __ tmp ^ prefix __ hashset:
                     maxVal = tmp
-                    break
+                    _____
         r.. maxVal

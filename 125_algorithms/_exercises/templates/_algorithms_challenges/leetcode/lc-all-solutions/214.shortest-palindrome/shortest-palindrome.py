@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   # brutal force TLE
   ___ _shortestPalindrome  s):
     """

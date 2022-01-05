@@ -22,7 +22,7 @@ _______ sys
 
 sys.setrecursionlimit(5000)
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canFinish  numCourses, prerequisites):
         """
         :type numCourses: int

@@ -14,7 +14,7 @@ Here are few examples.
 
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ searchInsert  nums, target):
         n = l..(nums)
         left = 0

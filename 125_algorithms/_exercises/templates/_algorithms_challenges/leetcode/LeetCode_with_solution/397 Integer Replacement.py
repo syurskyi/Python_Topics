@@ -31,7 +31,7 @@ or
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ integerReplacement  n):
         """
         Simulation using dp fails since bi-directional

@@ -1,4 +1,4 @@
-c_ CustomSet(object):
+c_ CustomSet(o..):
     ___ - , elements=[]):
         p..
 

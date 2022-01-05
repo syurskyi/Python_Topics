@@ -8,5 +8,5 @@ ___ i __ r..(i..(input())):
     fib_num = i..(input())
     ___ j __ r..(l..(fib_store)):
         __ fib_num __ fib_store[j]:
-            break
+            _____
     print(j,end=' ')

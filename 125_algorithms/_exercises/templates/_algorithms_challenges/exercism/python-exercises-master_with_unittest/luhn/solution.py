@@ -1,4 +1,4 @@
-c_ Luhn(object):
+c_ Luhn(o..):
     ___ - , s__):
         s__ = s__.r..(" ", "")
 
@@ -13,6 +13,6 @@ c_ Luhn(object):
         r.. s..(addends())
 
     ___ is_valid
-        __ l..(s__) <= 1 o. n.. s__.isdigit
+        __ l..(s__) <= 1 o. n.. s__.i..
             r.. F..
         r.. checksum() % 10 __ 0

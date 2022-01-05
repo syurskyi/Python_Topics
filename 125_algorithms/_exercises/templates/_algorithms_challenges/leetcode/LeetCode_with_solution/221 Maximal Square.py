@@ -30,16 +30,16 @@ c_ Solution:
         __ m < 1: r.. 0
         n = l..(matrix[0])
         __ n < 1: r.. 0
-        ___ i __ xrange(m):
+        ___ i __ x..(m):
             matrix[i] = map(i.., matrix[i])
 
         maxa = 0
-        to_top = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
-        to_left = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
-        square_width = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        to_top = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        to_left = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        square_width = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
 
-        ___ i __ xrange(1, m+1):
-            ___ j __ xrange(1, n+1):
+        ___ i __ x..(1, m+1):
+            ___ j __ x..(1, n+1):
                 __ matrix[i-1][j-1] __ 0:
                     _____
 

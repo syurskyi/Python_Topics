@@ -3,7 +3,7 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ flipgame  fronts, backs):
         """
         :type fronts: List[int]

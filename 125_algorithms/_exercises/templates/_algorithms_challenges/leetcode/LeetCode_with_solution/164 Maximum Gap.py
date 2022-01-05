@@ -39,7 +39,7 @@ c_ Solution:
 
         max_gap = 0
         pre_max = g_min
-        ___ i __ xrange(0, (g_max-g_min)/bin_width+1):
+        ___ i __ x..(0, (g_max-g_min)/bin_width+1):
             __ i __ bins_min:
                 max_gap = m..(max_gap, bins_min[i]-pre_max)
                 pre_max = bins_max[i]

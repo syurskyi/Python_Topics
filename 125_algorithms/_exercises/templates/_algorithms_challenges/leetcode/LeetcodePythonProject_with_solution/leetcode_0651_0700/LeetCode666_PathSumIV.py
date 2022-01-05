@@ -3,7 +3,7 @@ Created on Oct 10, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ pathSum  nums):
         """
         :type nums: List[int]

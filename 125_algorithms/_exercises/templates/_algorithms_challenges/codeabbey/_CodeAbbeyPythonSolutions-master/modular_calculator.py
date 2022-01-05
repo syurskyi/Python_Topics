@@ -8,7 +8,7 @@ w... T...
     __(line):
         values.a..(line.r..(" ", ""))
     ____:
-        break
+        _____
 mod = i..(values[l..(values)-1][1:])
 
 ___ i __ values:

@@ -14,7 +14,7 @@ c_ ListNode:
         val = x
         next = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr(val)
 
 c_ Solution:
@@ -66,20 +66,20 @@ c_ Solution:
 
         lst1 = lst[:l..(lst)/2]
         lst2 = lst[l..(lst)/2:]
-        lst2.reverse()
+        lst2.r..
 
         lst    # list
         ___ i __ r..(l..(lst2)):
             ___
                 lst.a..(lst1[i])
-            ______ IndexError:
+            ______ I..
                 p..
             lst.a..(lst2[i])
 
         ___ i __ r..(l..(lst)):
             ___
                 lst[i].next = lst[i+1]
-            ______ IndexError:
+            ______ I..
                 lst[i].next = N..
 
     ___ reorderList  head):

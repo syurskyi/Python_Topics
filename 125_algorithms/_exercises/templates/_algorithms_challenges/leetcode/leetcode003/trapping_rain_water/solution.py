@@ -24,7 +24,7 @@ c_ Solution:
                 __ A[stack[-1]] >= A[r]:
                     r = stack.pop()
                 ____:
-                    break
+                    _____
             w.... stack:
                 i = stack.pop()
                 __ A[i] < A[r]:

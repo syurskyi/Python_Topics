@@ -11,7 +11,7 @@ c_ Solution:
             i = 0
             ___ c __ word:
                 __ c != target[i]:
-                    break
+                    _____
                 i += 1
             __ i > ans:
                 ans = i

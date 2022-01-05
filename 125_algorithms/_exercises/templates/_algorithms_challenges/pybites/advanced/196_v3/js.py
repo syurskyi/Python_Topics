@@ -1,4 +1,4 @@
-RESERVED_WORDS = vars(object).k..
+RESERVED_WORDS = vars(o..).k..
 
 
 c_ JsObject:

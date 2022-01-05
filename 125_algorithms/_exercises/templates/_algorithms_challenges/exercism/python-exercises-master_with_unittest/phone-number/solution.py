@@ -1,7 +1,7 @@
 _______ __
 
 
-c_ Phone(object):
+c_ Phone(o..):
     ___ - , number):
         number = _clean(number)
 

@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findDiagonalOrder  matrix):
         __ n.. matrix o. n.. matrix[0]: r.. []
         __ l..(matrix) __ 1: r.. matrix[0]

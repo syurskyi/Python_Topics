@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ medianSlidingWindow  nums, k):
     window = s..(nums[:k])
     medians    # list

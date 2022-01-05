@@ -52,15 +52,15 @@ Could you do better than O(n2) per move() operation?
 __author__ = 'Daniel'
 
 
-c_ TicTacToe(object):
+c_ TicTacToe(o..):
     ___ - , n):
         """
         Initialize your data structure here.
         :type n: int
         """
         n = n
-        rows_count = [0 ___ _ __ xrange(n)]
-        cols_count = [0 ___ _ __ xrange(n)]
+        rows_count = [0 ___ _ __ x..(n)]
+        cols_count = [0 ___ _ __ x..(n)]
         diag_count = 0
         diag_inv_count = 0
 

@@ -4,7 +4,7 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ verifyPreorder  preorder):
         """
         :type preorder: List[int]

@@ -47,7 +47,7 @@ ___ tic_tac_toe(games):
 
             __ is_winner(board):
                 answer.a..(s..(turn+1))
-                break; # Stops loop each time an answer is found.
+                _____; # Stops loop each time an answer is found.
             __ turn __ l..(moves) - 1:
                 answer.a..('0') # Tie game
 

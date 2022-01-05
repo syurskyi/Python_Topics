@@ -25,7 +25,7 @@ c_ Solution:
             r.. s
 
         # construct T
-        T = [0 ___ _ __ xrange(l+1)]
+        T = [0 ___ _ __ x..(l+1)]
         T[0] = -1
         pos = 2
         cnd = 0

@@ -2,7 +2,7 @@ _______ heapq
 _______ r__
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findKthLargest  nums, k):
     """
     :type A: List[int]

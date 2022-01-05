@@ -3,7 +3,7 @@ Created on Oct 5, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ judgeCircle  moves):
         """
         :type moves: str

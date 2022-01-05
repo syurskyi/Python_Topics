@@ -1,7 +1,7 @@
 _______ bisect
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findClosestElements  arr, k, x):
     """
     :type arr: List[int]

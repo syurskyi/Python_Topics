@@ -3,7 +3,7 @@ Created on Oct 14, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ profitableSchemes  G, P, group, profit):
         """
         :type G: int

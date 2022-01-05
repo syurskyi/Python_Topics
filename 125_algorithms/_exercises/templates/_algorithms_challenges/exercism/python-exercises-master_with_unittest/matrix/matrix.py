@@ -1,3 +1,3 @@
-c_ Matrix(object):
+c_ Matrix(o..):
     ___ - ):
         p..

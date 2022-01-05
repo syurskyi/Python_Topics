@@ -1,9 +1,9 @@
-c_ Point(object):
+c_ Point(o..):
     ___ - , x, y):
         x = x
         y = y
 
-    ___ __repr__
+    ___  -r
         r.. 'Point({}:{})'.f..(x, y)
 
     ___ __add__  other):
@@ -19,7 +19,7 @@ c_ Point(object):
         r.. n..(self __ other)
 
 
-c_ WordSearch(object):
+c_ WordSearch(o..):
     ___ - , puzzle):
         p..
 

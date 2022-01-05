@@ -26,9 +26,9 @@ c_ Solution:
             r.. 0
 
         # O(n) using dp
-        forward = [0 ___ _ __ xrange(l..(prices))]  # forward[i] for 0..i
+        forward = [0 ___ _ __ x..(l..(prices))]  # forward[i] for 0..i
         lowest_buy_price = prices[0]
-        ___ i __ xrange(1, l..(prices)):
+        ___ i __ x..(1, l..(prices)):
             # if i==0:
             # forward[i] = 0
             # else:
@@ -36,9 +36,9 @@ c_ Solution:
 
             lowest_buy_price = m..(prices[i], lowest_buy_price)
 
-        backward = [0 ___ _ __ xrange(l..(prices))]  # backward[i] for i..len-1
+        backward = [0 ___ _ __ x..(l..(prices))]  # backward[i] for i..len-1
         highest_sell_price = prices[-1]
-        ___ i __ xrange(l..(prices)-2, -1, -1):
+        ___ i __ x..(l..(prices)-2, -1, -1):
             # if i==len(prices)-1:
             # backward[i] = 0
             # else:
@@ -47,7 +47,7 @@ c_ Solution:
             highest_sell_price = m..(prices[i], highest_sell_price)
 
         max_profit = 0
-        ___ i __ xrange(l..(prices)):
+        ___ i __ x..(l..(prices)):
             max_profit = m..(max_profit, forward[i]+backward[i])
         r.. max_profit
 
@@ -64,7 +64,7 @@ c_ Solution:
             r.. 0
 
         delta_prices    # list
-        ___ i __ xrange(1, l..(prices)):
+        ___ i __ x..(1, l..(prices)):
             delta_prices.a..(prices[i]-prices[i-1])
 
         # O(n)
@@ -72,7 +72,7 @@ c_ Solution:
 
         max_sub_array = 0
         current_sub_array = 0
-        ___ j __ xrange(l..(delta_prices)):
+        ___ j __ x..(l..(delta_prices)):
             __ current_sub_array+delta_prices[j] >= 0:
                 current_sub_array += delta_prices[j]
                 max_sub_array = m..(max_sub_array, current_sub_array)

@@ -24,7 +24,7 @@ c_ LenCnt:
         l = l
         c = c
 
-    ___ __repr__
+    ___  -r
         r.. repr((l, c))
 
 

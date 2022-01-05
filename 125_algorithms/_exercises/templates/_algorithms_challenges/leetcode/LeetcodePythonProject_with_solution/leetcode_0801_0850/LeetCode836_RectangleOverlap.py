@@ -3,7 +3,7 @@ Created on Oct 8, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isRectangleOverlap  rec1, rec2):
         """
         :type rec1: List[int]

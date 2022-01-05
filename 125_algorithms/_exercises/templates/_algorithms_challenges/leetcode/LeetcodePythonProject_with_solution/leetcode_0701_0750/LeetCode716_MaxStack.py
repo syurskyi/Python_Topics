@@ -5,7 +5,7 @@ Created on Feb 14, 2018
 '''
 _______ heapq
 
-c_ MaxStack(object):
+c_ MaxStack(o..):
 
     ___ - ):
         """
@@ -52,5 +52,5 @@ c_ MaxStack(object):
         ___ i __ r..(l..(stack)-1, -1, -1):
             __ stack[i] __ val:
                 stack = stack[:i]+stack[i+1:]
-                break
+                _____
         r.. val

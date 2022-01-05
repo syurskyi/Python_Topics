@@ -30,7 +30,7 @@ c_ Game:
         __ n.. guess:
             print('Please enter a number')
             r.. ValueError('Nothing entered')
-        __ n.. a..(c.isdigit() ___ c __ s..(guess)):
+        __ n.. a..(c.i.. ___ c __ s..(guess)):
             print('Should be a number')
             r.. ValueError('Non-digit entered')
         guess = i..(guess)

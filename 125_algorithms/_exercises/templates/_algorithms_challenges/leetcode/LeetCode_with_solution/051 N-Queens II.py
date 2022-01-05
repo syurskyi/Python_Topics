@@ -15,7 +15,7 @@ c_ Solution:
         :return: a list of lists of string
         """
         result    # list
-        current = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
+        current = [[0 ___ _ __ x..(n)] ___ _ __ x..(n)]
         backtrack(0, current, result)
         r.. l..(result)
 
@@ -32,7 +32,7 @@ c_ Solution:
             result.a..(current)
             r..
 
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             __ current[queen_index][i]__INVALID:
                 _____
 
@@ -41,7 +41,7 @@ c_ Solution:
             new_config[queen_index][i] = QUEEN
 
             # config
-            ___ m __ xrange(n):
+            ___ m __ x..(n):
                 # col
                 __ new_config[m][i]__DEFAULT:
                     new_config[m][i] = INVALID

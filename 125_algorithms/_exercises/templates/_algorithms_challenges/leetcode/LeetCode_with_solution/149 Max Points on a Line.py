@@ -25,8 +25,8 @@ c_ Solution:
         hash_map    # dict  # key -> inner_dict, where key = (k, b), inner_dict is index -> list
 
         length = l..(points)
-        ___ i __ xrange(length):
-            ___ j __ xrange(i+1, length):
+        ___ i __ x..(length):
+            ___ j __ x..(i+1, length):
                 point1 = points[i]
                 point2 = points[j]
                 __ point1.x __ point2.x:
@@ -72,10 +72,10 @@ c_ Solution:
         __ (length<=1):
             r.. length
 
-        ___ i __ xrange(length):
+        ___ i __ x..(length):
             hash_map    # dict
             duplicate = 1 # point_i itself
-            ___ j __ xrange(length):
+            ___ j __ x..(length):
                 __ i__j:
                     _____
 

@@ -3,14 +3,14 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , val):
         val = val
         children    # dict
         candidates    # dict
         isLeaf = F..
 
-c_ AutocompleteSystem(object):
+c_ AutocompleteSystem(o..):
 
     ___ - , sentences, times):
         """

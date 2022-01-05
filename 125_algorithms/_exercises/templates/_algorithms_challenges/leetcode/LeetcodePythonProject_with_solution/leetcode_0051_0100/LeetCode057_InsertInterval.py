@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 # Definition for an interval.
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , s=0, e=0):
         start = s
         end = e
@@ -13,10 +13,10 @@ c_ Interval(object):
     ___ __str__
         r.. '<s: %s, e: %s>' % (start, end)
     
-    ___ __repr__
+    ___  -r
         r.. __str__()
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ insert  intervals, newInterval):
         """
         :type intervals: List[Interval]

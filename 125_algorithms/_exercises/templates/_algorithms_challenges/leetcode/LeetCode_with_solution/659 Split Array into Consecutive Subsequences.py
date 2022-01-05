@@ -76,7 +76,7 @@ c_ Interval:
 
         r.. end < other.end
 
-    ___ __repr__
+    ___  -r
         r.. repr((end, length))
 
 

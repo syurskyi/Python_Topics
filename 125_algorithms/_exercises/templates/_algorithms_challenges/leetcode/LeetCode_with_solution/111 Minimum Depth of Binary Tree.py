@@ -6,14 +6,14 @@ The minimum depth is the number of nodes along the shortest path from the root n
 __author__ = 'Danyang'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minDepth  root):
         """
         :param root: TreeNode

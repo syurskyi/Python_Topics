@@ -3,7 +3,7 @@ Created on Feb 8, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ solve  board):
         """
         :type board: List[List[str]]

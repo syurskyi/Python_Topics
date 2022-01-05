@@ -3,7 +3,7 @@ Created on Sep 5, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findRestaurant  list1, list2):
         """
         :type list1: List[str]

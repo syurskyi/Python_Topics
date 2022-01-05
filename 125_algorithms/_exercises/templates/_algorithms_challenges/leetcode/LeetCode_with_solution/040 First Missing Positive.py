@@ -32,7 +32,7 @@ c_ Solution:
                 A[current-1], A[i] = current, A[current-1]   # go to the next iteration
 
 
-        ___ i __ xrange(length):
+        ___ i __ x..(length):
             __ A[i]!=i+1:
                 r.. i+1
         r.. A[-1]+1

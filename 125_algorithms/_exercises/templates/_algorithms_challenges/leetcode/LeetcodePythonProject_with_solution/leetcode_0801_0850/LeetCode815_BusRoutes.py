@@ -3,7 +3,7 @@ Created on Apr 30, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numBusesToDestination  routes, S, T):
         """
         :type routes: List[List[int]]

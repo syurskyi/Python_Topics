@@ -87,7 +87,7 @@ c_ Solution:
             ___ email __ accounts[i][1:]:
                 __ email __ email_id:
                     person = email_id[email]
-                    break
+                    _____
 
             ___ email __ accounts[i][1:]:
                 __ person __ N..

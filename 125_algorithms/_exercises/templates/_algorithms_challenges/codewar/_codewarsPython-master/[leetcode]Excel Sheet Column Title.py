@@ -9,7 +9,7 @@ c_ Solution:
             n %= 27
             times += 1
             __ times __ 10000:
-                break
+                _____
         res.a..(n)
         r.. res
 

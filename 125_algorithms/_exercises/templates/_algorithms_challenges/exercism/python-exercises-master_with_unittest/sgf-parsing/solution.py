@@ -1,4 +1,4 @@
-c_ SgfTree(object):
+c_ SgfTree(o..):
     ___ - , properties=N.., children_ N..
         properties = properties o. {}
         children = children o. []
@@ -21,7 +21,7 @@ c_ SgfTree(object):
                 r.. F..
         r.. T..
 
-    ___ __repr__
+    ___  -r
         """Ironically, encoding to SGF is much easier"""
         rep = '(;'
         ___ k, vs __ properties.i..:

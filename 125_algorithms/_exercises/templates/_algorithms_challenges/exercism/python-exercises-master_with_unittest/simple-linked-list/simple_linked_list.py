@@ -1,4 +1,4 @@
-c_ Node(object):
+c_ Node(o..):
     ___ - , value):
         p..
 
@@ -9,7 +9,7 @@ c_ Node(object):
         p..
 
 
-c_ LinkedList(object):
+c_ LinkedList(o..):
     ___ - , values=[]):
         p..
 
@@ -29,5 +29,5 @@ c_ LinkedList(object):
         p..
 
 
-c_ EmptyListException(Exception):
+c_ EmptyListException(E..):
     p..

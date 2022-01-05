@@ -15,7 +15,7 @@ c_ ListNode:
         val = x
         next = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr(val)
 
 c_ Solution:
@@ -52,6 +52,6 @@ c_ Solution:
 
 __ _____ __ ____
     lst = [ListNode(2), ListNode(1)]
-    ___ ind __ xrange(l..(lst)-1):
+    ___ ind __ x..(l..(lst)-1):
         lst[ind].next = lst[ind+1]
     Solution().partition(lst[0], 2)

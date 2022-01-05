@@ -1,3 +1,3 @@
-c_ School(object):
+c_ School(o..):
     ___ - ):
         p..

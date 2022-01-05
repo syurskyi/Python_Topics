@@ -27,6 +27,6 @@ ___ group(iterable, n):
       __ section:
         result.a..(section)
       ____:
-        break
+        _____
 
     r.. result

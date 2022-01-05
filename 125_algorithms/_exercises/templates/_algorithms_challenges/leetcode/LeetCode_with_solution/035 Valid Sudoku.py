@@ -32,11 +32,11 @@ c_ Solution:
         :return: boolean
         """
         # check row & column
-        ___ i __ xrange(9):
+        ___ i __ x..(9):
             row    # list  # change to hashamp
             column    # list
             square    # list
-            ___ j __ xrange(9):
+            ___ j __ x..(9):
                 # check row
                 ___
                     row_element = i..(board[i][j])

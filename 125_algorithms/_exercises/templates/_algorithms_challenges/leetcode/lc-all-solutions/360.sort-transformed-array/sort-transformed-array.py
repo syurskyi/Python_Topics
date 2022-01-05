@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ sortTransformedArray  nums, a, b, c):
     """
     :type nums: List[int]
@@ -26,14 +26,14 @@ c_ Solution(object):
           up.a..(f(num))
         ____:
           down.a..(f(num))
-      down.reverse()
+      down.r..
     ____:
       ___ num __ nums:
         __ num >= mid:
           down.a..(f(num))
         ____:
           up.a..(f(num))
-      down.reverse()
+      down.r..
 
     res    # list
     upIdx = 0

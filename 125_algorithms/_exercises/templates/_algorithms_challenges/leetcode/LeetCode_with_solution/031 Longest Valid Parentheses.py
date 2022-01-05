@@ -9,7 +9,7 @@ Another example is ")()())", where the longest valid parentheses substring is "(
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestValidParentheses  s):
         """
         Stack holds the index of unpaired brackets

@@ -16,7 +16,7 @@ ___ is_merge(s, part1, part2):
                 __ result[i] __ c:
                     pointer = i + 1
                     found = T..
-                    break
+                    _____
             __ n.. found:
                 r.. F..
         r.. T..

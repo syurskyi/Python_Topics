@@ -1,7 +1,7 @@
 _______ r__
 
 
-c_ Robot(object):
+c_ Robot(o..):
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
     ___ - ):
@@ -28,7 +28,7 @@ c_ Robot(object):
                 _name = prefix() + suffix()
                 __ _name n.. __ _past_names:
                     _past_names.add(_name)
-                    break
+                    _____
 
         r.. _name
 

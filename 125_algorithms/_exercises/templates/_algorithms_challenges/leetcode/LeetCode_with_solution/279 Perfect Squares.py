@@ -10,7 +10,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     F = [0]  # static dp for all test cases
 
     ___ numSquares  n):
@@ -39,14 +39,14 @@ c_ Solution(object):
         :rtype: int
         """
         q = [0]
-        visited = [F.. ___ _ __ xrange(n+1)]
+        visited = [F.. ___ _ __ x..(n+1)]
 
         level = 0
         w.... q:
             level += 1
             l = l..(q)
-            ___ i __ xrange(l):
-                ___ j __ xrange(1, i..(math.sqrt(n))+1):
+            ___ i __ x..(l):
+                ___ j __ x..(1, i..(math.sqrt(n))+1):
                     nxt = q[i]+j*j
                     __ nxt <= n a.. visited[nxt]:
                         _____
@@ -56,7 +56,7 @@ c_ Solution(object):
                     ____ nxt __ n:
                         r.. level
                     ____:
-                        break
+                        _____
             q = q[l:]
 
         r.. N..
@@ -67,9 +67,9 @@ c_ Solution(object):
         :type n: int
         :rtype: int
         """
-        F = [i ___ i __ xrange(n+1)]
-        ___ i __ xrange(1, n+1):
-            ___ j __ xrange(1, i..(math.sqrt(i))+1):
+        F = [i ___ i __ x..(n+1)]
+        ___ i __ x..(1, n+1):
+            ___ j __ x..(1, i..(math.sqrt(i))+1):
                 __ i-j*j >= 0:
                     F[i] = m..(F[i], F[i-j*j]+1)
 

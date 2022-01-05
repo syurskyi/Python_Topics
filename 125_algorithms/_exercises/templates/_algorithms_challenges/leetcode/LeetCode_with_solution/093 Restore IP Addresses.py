@@ -37,7 +37,7 @@ c_ Solution:
                 result.a..(".".j..(cur))
                 r..
 
-            ___ i __ xrange(1, m..(3, l..(seq))+1):
+            ___ i __ x..(1, m..(3, l..(seq))+1):
                 dfs(seq[i:], cur+[seq[:i]], result)
 
     ___ dfs  seq, cur, result):
@@ -59,7 +59,7 @@ c_ Solution:
 
         # for i in xrange(1, 3+1):
         # for loop
-        ___ i __ xrange(1, m..(3, l..(seq)) + 1):
+        ___ i __ x..(1, m..(3, l..(seq)) + 1):
             new_seg = seq[:i]
             # condition check
             __ l..(cur) < 4 a.. is_valid(new_seg):

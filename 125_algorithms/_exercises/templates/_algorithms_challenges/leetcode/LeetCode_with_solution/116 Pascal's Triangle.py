@@ -21,9 +21,9 @@ c_ Solution:
         :return: a list of lists of integers
         """
         result    # list
-        ___ row __ xrange(numRows):
+        ___ row __ x..(numRows):
             current    # list
-            ___ col __ xrange(row+1):
+            ___ col __ x..(row+1):
                 __ col__0 o. col__row:
                     current.a..(1)
                 ____:

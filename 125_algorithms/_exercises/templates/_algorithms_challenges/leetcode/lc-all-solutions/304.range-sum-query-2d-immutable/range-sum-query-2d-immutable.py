@@ -1,4 +1,4 @@
-c_ NumMatrix(object):
+c_ NumMatrix(o..):
   ___ - , matrix):
     """
     initialize your data structure here.

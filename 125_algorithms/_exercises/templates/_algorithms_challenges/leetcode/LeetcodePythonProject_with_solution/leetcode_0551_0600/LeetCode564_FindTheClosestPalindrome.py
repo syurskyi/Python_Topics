@@ -3,7 +3,7 @@ Created on Aug 29, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ nearestPalindromic  n):
         """
         :type n: str

@@ -4,7 +4,7 @@ Premium question
 __author__ = 'Daniel'
 
 
-c_ Logger(object):
+c_ Logger(o..):
     ___ - ):
         """
         Initialize your data structure here.

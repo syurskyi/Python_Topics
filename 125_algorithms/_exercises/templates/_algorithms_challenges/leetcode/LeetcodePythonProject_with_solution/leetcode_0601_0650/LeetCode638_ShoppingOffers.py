@@ -3,7 +3,7 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ shoppingOffers  price, special, needs):
         """
         :type price: List[int]

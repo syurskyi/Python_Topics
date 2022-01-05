@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ diameterOfBinaryTree  root):
     """
     :type root: TreeNode

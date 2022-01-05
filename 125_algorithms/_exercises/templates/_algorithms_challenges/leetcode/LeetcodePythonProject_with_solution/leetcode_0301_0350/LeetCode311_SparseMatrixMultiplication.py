@@ -4,7 +4,7 @@ Created on Mar 15, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ multiply  A, B):
         m, n = l..(A), l..(A[0])
         nB = l..(B[0])

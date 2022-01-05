@@ -33,7 +33,7 @@ ___ contains_digits(input_str):
        one or more digits."""
     d..    # list
     ___ char __ input_str:
-        __ char.isdigit
+        __ char.i..
             d...a..(char)
     __ l..(d..) > 0:
         r.. T..

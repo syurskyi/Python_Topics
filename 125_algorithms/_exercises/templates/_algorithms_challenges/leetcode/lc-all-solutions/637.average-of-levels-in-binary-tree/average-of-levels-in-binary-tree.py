@@ -7,7 +7,7 @@
 ____ c.. _______ d..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ averageOfLevels  root):
     """
     :type root: TreeNode

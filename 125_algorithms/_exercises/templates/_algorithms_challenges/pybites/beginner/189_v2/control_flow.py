@@ -14,7 +14,7 @@ ___ filter_names(names):
             _____
 
         __ name.startswith(QUIT_CHAR) o. l..(result) >= MAX_NAMES:
-            break
+            _____
 
 
         result.a..(name)

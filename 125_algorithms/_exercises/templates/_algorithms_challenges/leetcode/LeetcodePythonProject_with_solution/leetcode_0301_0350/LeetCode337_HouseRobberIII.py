@@ -1,11 +1,11 @@
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rob  root):
         __ n.. root: r.. 0
         result = helper(root)

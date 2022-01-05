@@ -26,7 +26,7 @@ c_ Solution:
         n1 = l..(version1)
         n2 = l..(version2)
 
-        ___ i __ xrange(m..(n1, n2)):
+        ___ i __ x..(m..(n1, n2)):
             __ version1[i] __ version2[i]:
                 p..
             ____:

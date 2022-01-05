@@ -41,7 +41,7 @@ c_ Solution:
         w.... i < l..(s):  #  not using for-loop, since the cursor needs to advance in recursion
             __ s[i] __ " ":
                 p..
-            ____ s[i].isdigit
+            ____ s[i].i..
                 operand = operand * 10 + i..(s[i])
             ____ s[i] __ ("+", "-", ")", "\0"):  # delimited
                 __ prev_op __ "+":

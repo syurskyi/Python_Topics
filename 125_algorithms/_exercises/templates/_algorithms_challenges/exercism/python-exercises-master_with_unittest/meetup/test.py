@@ -7,7 +7,7 @@ ____ meetup _______ meetup_day
 ___
     ____ meetup _______ MeetupDayException
 ______ ImportError:
-    MeetupDayException = Exception
+    MeetupDayException = E..
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0

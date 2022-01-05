@@ -6,7 +6,7 @@ ___ extract_non_ascii_words(text):
         ___ letter __ word_split:
             __ o..(letter) >= 128:
                 na_words.a..(word)
-                break
+                _____
     r.. na_words
 
 

@@ -6,7 +6,7 @@ Created on Mar 19, 2017
 
 _______ heapq
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findItinerary_orig  tickets):
         __ n.. tickets:
             r.. []

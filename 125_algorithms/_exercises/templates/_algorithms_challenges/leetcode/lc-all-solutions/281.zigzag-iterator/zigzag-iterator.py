@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ ZigzagIterator(object):
+c_ ZigzagIterator(o..):
 
   ___ - , v1, v2):
     """

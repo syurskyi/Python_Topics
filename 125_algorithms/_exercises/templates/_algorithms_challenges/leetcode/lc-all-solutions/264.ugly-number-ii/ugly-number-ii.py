@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ nthUglyNumber  n):
     """
     :type n: int

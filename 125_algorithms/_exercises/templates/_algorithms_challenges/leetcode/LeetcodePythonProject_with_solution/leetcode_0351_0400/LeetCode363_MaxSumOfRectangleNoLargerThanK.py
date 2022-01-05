@@ -4,7 +4,7 @@ Created on Mar 27, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxSumSubmatrix  matrix, k):
         p..
     

@@ -3,7 +3,7 @@ Created on Oct 10, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ pushDominoes  dominoes):
         """
         :type dominoes: str

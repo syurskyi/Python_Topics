@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findRadius  houses, heaters):
     """
     :type houses: List[int]

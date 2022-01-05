@@ -11,7 +11,7 @@ Given [5, 7, 7, 8, 8, 10] and target value 8,
 return [3, 4].
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ searchRange  nums, target):
         """
         :type nums: List[int]

@@ -1,12 +1,12 @@
 _______ copy
 
 
-c_ Point(object):
+c_ Point(o..):
     ___ - , x, y):
         x = x
         y = y
 
-    ___ __repr__
+    ___  -r
         r.. 'Point({}:{})'.f..(x, y)
 
     ___ __add__  other):
@@ -26,7 +26,7 @@ DIRECTIONS = (Point(1, 0), Point(1, -1), Point(1, 1), Point(-1, -1),
               Point(0, -1), Point(0, 1), Point(-1, 1), Point(-1, 0))
 
 
-c_ WordSearch(object):
+c_ WordSearch(o..):
     ___ - , puzzle):
         rows = puzzle.s..
         width = l..(rows[0])

@@ -3,7 +3,7 @@ Created on Sep 10, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ smallestFactorization  a):
         """
         :type a: int

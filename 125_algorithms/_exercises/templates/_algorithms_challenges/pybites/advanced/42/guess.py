@@ -87,14 +87,14 @@ c_ Game:
                 ______ V..
                     p..
                 ____:
-                    break
+                    _____
 
             
             _win = _validate_guess(user_guess)
 
 
             __ _win:
-                break
+                _____
 
 
         __ _win:

@@ -3,7 +3,7 @@ Created on Oct 9, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ checkPossibility  nums):
         """
         :type nums: List[int]

@@ -19,7 +19,7 @@ c_ Solution:
 
         bgn = nums[0]
         pre = nums[0]
-        ___ i __ xrange(1, n):
+        ___ i __ x..(1, n):
             __ nums[i] != pre+1:
                 __ pre != bgn:
                     ret.a..("%d->%d"%(bgn, pre))

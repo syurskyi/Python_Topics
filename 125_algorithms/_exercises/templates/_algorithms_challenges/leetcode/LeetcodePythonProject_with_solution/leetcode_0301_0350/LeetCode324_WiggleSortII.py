@@ -1,5 +1,5 @@
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wiggleSort  nums):
         median = kthLargestElement(nums, (l..(nums)+1)//2)
         n = l..(nums)
@@ -34,7 +34,7 @@ c_ Solution(object):
             ____ j > k:
                 hi = j-1
             ____:
-                break
+                _____
         r.. nums[k]
     
     ___ partition  nums, lo, hi):
@@ -45,7 +45,7 @@ c_ Solution(object):
             w.... j > lo a.. nums[lo] <= nums[j]:
                 j -= 1
             __ i >= j:
-                break
+                _____
             nums[i], nums[j] = nums[j], nums[i]
         nums[lo], nums[j] = nums[j], nums[lo]
         r.. j

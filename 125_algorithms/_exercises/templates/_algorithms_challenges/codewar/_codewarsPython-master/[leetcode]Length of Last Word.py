@@ -6,7 +6,7 @@ c_ Solution:
         s = s.s..
         ___ c __ s[::-1]:
             __ c __ ' ':
-                break
+                _____
             num += 1
         r.. num
 

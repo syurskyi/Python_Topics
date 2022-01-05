@@ -4,12 +4,12 @@ Created on Mar 30, 2018
 @author: tongq
 '''
 # Definition for an interval.
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , s=0, e=0):
         start = s
         end = e
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ employeeFreeTime  schedule):
         """
         :type schedule: List[List[Interval]]

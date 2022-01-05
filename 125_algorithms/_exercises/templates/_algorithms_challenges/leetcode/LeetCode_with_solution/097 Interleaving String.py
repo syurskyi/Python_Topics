@@ -12,7 +12,7 @@ When s3 = "aadbbbaccc", return false.
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isInterleave  s1, s2, s3):
         """
         dfs
@@ -57,18 +57,18 @@ c_ Solution(object):
         __ m+n != l..(s3):
             r.. F..
 
-        dp = [[F.. ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        dp = [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
 
         # initialize boundary conditions
         dp[0][0] = T..
-        ___ i __ xrange(1, m+1):
+        ___ i __ x..(1, m+1):
             dp[i][0] = dp[i-1][0] a.. s3[i+0-1] __ s1[i-1]
-        ___ j __ xrange(1, n+1):
+        ___ j __ x..(1, n+1):
             dp[0][j] = dp[0][j-1] a.. s3[0+j-1] __ s2[j-1]
 
         # calculating
-        ___ i __ xrange(1, m+1):
-            ___ j __ xrange(1, n+1):
+        ___ i __ x..(1, m+1):
+            ___ j __ x..(1, n+1):
                 __ n.. dp[i][j]:
                     dp[i][j] = dp[i-1][j] a.. s3[i+j-1] __ s1[i-1]
                 __ n.. dp[i][j]:

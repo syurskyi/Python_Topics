@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findUnsortedSubarray  nums):
     """
     :type nums: List[int]
@@ -18,11 +18,11 @@ c_ Solution(object):
     ___ i __ r..(r..(1, l..(nums))):
       __ nums[i] < maxs[i - 1]:
         end = i
-        break
+        _____
     ___ i __ r..(l..(nums) - 1):
       __ nums[i] > mins[i + 1]:
         start = i
-        break
+        _____
     print
     end, start
     r.. m..(end - start + 1, 0)

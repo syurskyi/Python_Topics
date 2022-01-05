@@ -3,7 +3,7 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numFriendRequests  ages):
         """
         :type ages: List[int]

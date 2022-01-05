@@ -1,4 +1,4 @@
-c_ TrieNode(object):
+c_ TrieNode(o..):
   ___ - ):
     """
     Initialize your data structure here.
@@ -8,7 +8,7 @@ c_ TrieNode(object):
     word = ""
 
 
-c_ Trie(object):
+c_ Trie(o..):
 
   ___ - ):
     root = TrieNode()

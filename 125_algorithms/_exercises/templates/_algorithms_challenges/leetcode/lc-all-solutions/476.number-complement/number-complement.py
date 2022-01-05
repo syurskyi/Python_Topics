@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findComplement  num):
     i = 1
     w.... i <= num:

@@ -23,14 +23,14 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isSymmetric  root):
         """
         dfs

@@ -3,7 +3,7 @@ Created on Mar 6, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ addOperators  num, target):
         """
         :type num: str
@@ -22,7 +22,7 @@ c_ Solution(object):
             r..
         ___ i __ r..(pos+1, l..(num)+1):
             __ i > pos+1 a.. num[pos] __ '0':
-                break
+                _____
             numStr = num[pos:i]
             __ pos __ 0:
                 helper(num, i, target, numStr, 0, i..(numStr), res)

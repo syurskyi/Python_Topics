@@ -4,7 +4,7 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ generatePossibleNextMoves  s):
         result    # list
         ___ i __ r..(1, l..(s)):

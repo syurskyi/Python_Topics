@@ -68,7 +68,7 @@ c_ Solution:
             c = Counter(a)
             ___ k, v __ mx.i..:
                 __ c[k] < v:
-                    break
+                    _____
             ____:
                 ret.a..(a)
 

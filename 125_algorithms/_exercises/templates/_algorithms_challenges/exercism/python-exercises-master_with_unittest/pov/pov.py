@@ -1,7 +1,7 @@
 ____ json _______ dumps
 
 
-c_ Tree(object):
+c_ Tree(o..):
     ___ - , label, children=[]):
         label = label
         children = children

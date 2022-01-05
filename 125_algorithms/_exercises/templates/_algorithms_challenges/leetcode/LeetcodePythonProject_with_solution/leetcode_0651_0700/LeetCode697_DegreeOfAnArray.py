@@ -3,7 +3,7 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findShortestSubArray  nums):
         """
         :type nums: List[int]

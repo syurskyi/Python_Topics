@@ -3,7 +3,7 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findLongestChain  pairs):
         """
         :type pairs: List[List[int]]

@@ -3,7 +3,7 @@ Created on Feb 27, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isPerfectSquare  num):
         __ num <= 0: r.. F..
         l, r = 1, num//2+1

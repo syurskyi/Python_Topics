@@ -29,7 +29,7 @@ c_ Solution:
                 # a ^ b ^ a = b
                 __ cur ^ p __ prefixes:
                     ret = cur
-                    break  # found one
+                    _____  # found one
 
         r.. ret
 

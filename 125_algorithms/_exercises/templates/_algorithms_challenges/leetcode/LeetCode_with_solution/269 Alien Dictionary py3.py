@@ -42,7 +42,7 @@ ____ typing _______ List
 ____ c.. _______ defaultdict, d..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ alienOrder  words: List[s..]) __ s..:
         G = construct_graph(words)
         visited = defaultdict(i..)  # 0 not visited, 1 visiting, 2 visted
@@ -65,7 +65,7 @@ c_ Solution(object):
             ___ c1, c2 __ z..(words[i], words[i+1]):
                 __ c1 != c2:  # lexical order
                     G[c1].a..(c2)
-                    break  # need to break for lexical order
+                    _____  # need to break for lexical order
 
         r.. G
 

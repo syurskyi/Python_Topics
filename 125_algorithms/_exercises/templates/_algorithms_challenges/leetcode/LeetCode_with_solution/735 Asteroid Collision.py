@@ -63,10 +63,10 @@ c_ Solution:
                 ____ abs(e) __ abs(stk[-1]):
                     # -> <- both exploded
                     stk.pop()
-                    break
+                    _____
                 ____:
                     # <- exploded, -> continue
-                    break
+                    _____
             ____:
                 stk.a..(e)
 

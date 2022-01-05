@@ -4,12 +4,12 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ deconString  s):
         stack = [['', 1]]
         num = ''
         ___ c __ s:
-            __ c.isdigit
+            __ c.i..
                 num += c
             ____ c __ '[':
                 stack.a..(['', i..(num)])
@@ -41,12 +41,12 @@ c_ Solution(object):
                 subStr = s[i+1:j-1]
                 tmp = decodeString(subStr)
                 j = i
-                w.... j-1 >= 0 a.. s[j-1].isdigit
+                w.... j-1 >= 0 a.. s[j-1].i..
                     j-=1
                 times = i..(s[j:i])
                 result += times*tmp
                 i = nextInd
-            ____ n.. c.isdigit
+            ____ n.. c.i..
                 result += c
                 i += 1
             ____:

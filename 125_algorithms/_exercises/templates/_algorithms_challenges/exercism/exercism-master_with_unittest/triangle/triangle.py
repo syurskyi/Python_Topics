@@ -36,5 +36,5 @@ c_ Triangle:
                 a + c <= b)
 
 
-c_ TriangleError(Exception):
+c_ TriangleError(E..):
     p..

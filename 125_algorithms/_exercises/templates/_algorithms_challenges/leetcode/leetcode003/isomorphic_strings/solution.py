@@ -18,7 +18,7 @@ Note:
 You may assume both s and t have the same length.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isIsomorphic  s, t):
         """
         :type s: str

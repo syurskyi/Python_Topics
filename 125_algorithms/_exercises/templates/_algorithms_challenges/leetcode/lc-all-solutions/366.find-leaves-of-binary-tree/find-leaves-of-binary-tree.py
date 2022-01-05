@@ -7,7 +7,7 @@
 _______ c..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findLeaves  root):
     """
     :type root: TreeNode

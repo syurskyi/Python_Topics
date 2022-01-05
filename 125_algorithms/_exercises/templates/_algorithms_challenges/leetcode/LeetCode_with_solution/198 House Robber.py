@@ -24,8 +24,8 @@ c_ Solution:
         Then time complexity is quadratic
         """
         n = l..(nums)
-        f = [0 ___ _ __ xrange(n+2)]
-        ___ i __ xrange(2, n+2):
+        f = [0 ___ _ __ x..(n+2)]
+        ___ i __ x..(2, n+2):
             f[i] = m..(
                 f[i-1],
                 f[i-2] + nums[i-2]

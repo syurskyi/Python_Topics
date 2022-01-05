@@ -48,7 +48,7 @@ c_ Solution:
                     __ stop __ stops_2:
                         G[i].add(j)
                         G[j].add(i)
-                        break
+                        _____
 
         q = [i ___ i, stops __ e..(routes) __ S __ stops]
         target_set = set([i ___ i, stops __ e..(routes) __ T __ stops])

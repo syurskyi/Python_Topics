@@ -24,7 +24,7 @@ c_ Solution:
         :return: a list of lists of integers
         """
         result    # list
-        nums = [i+1 ___ i __ xrange(n)]  # sorted, avoid duplicate
+        nums = [i+1 ___ i __ x..(n)]  # sorted, avoid duplicate
         get_combination(k, nums, [], result)
         r.. result
 

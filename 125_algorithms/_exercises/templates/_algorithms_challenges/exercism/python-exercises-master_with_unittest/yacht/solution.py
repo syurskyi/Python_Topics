@@ -61,5 +61,5 @@ functions = [
 ___ score(dice, category):
     ___
         r.. functions[category](dice)
-    ______ IndexError:
+    ______ I..
         r.. ValueError("no such category")

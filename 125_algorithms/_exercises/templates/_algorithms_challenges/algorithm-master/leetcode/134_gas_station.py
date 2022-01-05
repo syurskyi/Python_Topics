@@ -55,7 +55,7 @@ c_ Solution:
                 tank += gas[mid]
                 __ tank < cost[mid]:
                     is_failed = T..
-                    break
+                    _____
                 tank -= cost[mid]
 
             __ n.. is_failed:

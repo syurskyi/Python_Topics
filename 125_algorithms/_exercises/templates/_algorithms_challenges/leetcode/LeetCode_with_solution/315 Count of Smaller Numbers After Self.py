@@ -15,7 +15,7 @@ Return the array [2, 1, 1, 0].
 __author__ = 'Daniel'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , start, end, cnt=0):
         start = start
         end = end
@@ -24,7 +24,7 @@ c_ TreeNode(object):
         right = N..
 
 
-c_ SegmentTree(object):
+c_ SegmentTree(o..):
     ___ - , n):
         root = build(0, n)
 
@@ -61,7 +61,7 @@ c_ SegmentTree(object):
             r.. 0
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ countSmaller  nums):
         """
         Brute force: O(n^2)
@@ -79,7 +79,7 @@ c_ Solution(object):
         n = l..(A)
         st = SegmentTree(n)
         ret    # list
-        ___ i __ xrange(n-1, -1, -1):
+        ___ i __ x..(n-1, -1, -1):
             ret.a..(st.query_less(st.root, A[i]))
             st.inc(A[i], 1)
 

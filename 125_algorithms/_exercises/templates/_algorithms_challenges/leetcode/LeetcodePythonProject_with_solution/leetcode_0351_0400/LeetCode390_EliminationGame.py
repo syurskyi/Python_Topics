@@ -4,7 +4,7 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ lastRemaining  n):
         left = T..
         remaining = n

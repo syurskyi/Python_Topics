@@ -16,7 +16,7 @@ c_ Solution:
             slow = slow.next
             fast = fast.next.next
             __ fast __ slow:
-                break
+                _____
         # No cycle
         __ fast __ N.. o. fast.next __ N..
             r.. N..
@@ -24,7 +24,7 @@ c_ Solution:
         slow = head
         w... T...
             __ fast __ slow:
-                break
+                _____
             slow = slow.next
             fast = fast.next
         r.. slow

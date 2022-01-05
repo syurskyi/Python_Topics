@@ -1,4 +1,4 @@
-c_ IsbnVerifier(object):
+c_ IsbnVerifier(o..):
 
     VALID_SEPERATOR = "-"
     VALID_CHECK_CHARACTER = "X"

@@ -31,10 +31,10 @@ c_ Solution:
             mid = (left + right) / 2
             __ mid < n - 1 a.. A[mid + 1] __ target a.. A[mid] < target:
                 lower = mid + 1
-                break
+                _____
             ____ A[mid] __ target a.. mid __ 0:
                 lower = mid
-                break
+                _____
             ____ target <= A[mid]:
                 right = mid - 1
             ____:
@@ -46,10 +46,10 @@ c_ Solution:
             mid = (left + right) / 2
             __ mid < n - 1 a.. A[mid + 1] > target a.. A[mid] __ target:
                 upper = mid
-                break
+                _____
             ____ A[mid] __ target a.. mid __ n - 1:
                 upper = mid
-                break
+                _____
             ____ target < A[mid]:
                 right = mid - 1
             ____:

@@ -1,4 +1,4 @@
-c_ HitCounter(object):
+c_ HitCounter(o..):
 
   ___ - ):
     """

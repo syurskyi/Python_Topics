@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ minDistance  word1, word2):
     """
     :type word1: str

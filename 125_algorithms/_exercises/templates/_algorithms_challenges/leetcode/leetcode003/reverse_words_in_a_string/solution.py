@@ -18,7 +18,7 @@ c_ Solution:
         j = l..(s) - 1
         w.... i <= j:
             __ ls[i] != ' ' a.. ls[j] != ' ':
-                break
+                _____
             __ ls[i] __ ' ':
                 i += 1
             __ ls[j] __ ' ':

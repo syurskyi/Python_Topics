@@ -40,7 +40,7 @@ c_ Solution:
 
             ____:
                 b = i
-                w.... i < l..(s) a.. s[i].isdigit
+                w.... i < l..(s) a.. s[i].i..
                     i += 1
                 ret.a..(s[b:i])
 
@@ -50,7 +50,7 @@ c_ Solution:
         stk    # list  # store operators in strictly increasing precedence
         ret    # list
         ___ elt __ lst:
-            __ elt.isdigit
+            __ elt.i..
                 ret.a..(elt)
             ____ elt __ "(":
                 stk.a..(elt)

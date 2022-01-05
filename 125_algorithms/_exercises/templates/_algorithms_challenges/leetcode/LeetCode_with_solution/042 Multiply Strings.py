@@ -6,7 +6,7 @@ Note: The numbers can be arbitrarily large and are non-negative.
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ multiply  num1, num2):
         """
         Google Phone Interview Question, 20 Sep 2013
@@ -42,7 +42,7 @@ c_ Solution(object):
         lst = add_list(result)
 
         # post processing
-        lst.reverse()  # reverse back
+        lst.r..  # reverse back
         result = "".j..(map(s.., lst)).lstrip("0")
         __ n.. result:
             r.. "0"
@@ -77,7 +77,7 @@ c_ Solution(object):
         sig = 0
         ret = [0]
         ___ ind, val __ e..(lst):
-            ___ i __ xrange(sig): val.insert(0, 0)  # possible deque
+            ___ i __ x..(sig): val.insert(0, 0)  # possible deque
             ret = add(ret, val)
             sig += 1
         r.. ret
@@ -94,10 +94,10 @@ c_ Solution(object):
 
         ret    # list
         carry = 0
-        ___ idx __ xrange(l..(num2)):  # longer one
+        ___ idx __ x..(l..(num2)):  # longer one
             ___
                 sm = num1[idx] + num2[idx] + carry
-            ______ IndexError:
+            ______ I..
                 sm = num2[idx] + carry
 
             carry = sm/10

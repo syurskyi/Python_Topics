@@ -34,7 +34,7 @@ c_ Solution:
                 __ A[idx] __ B[j]:
                     j += 1
                 ____:
-                    break
+                    _____
 
             __ j __ l..(B):
                 r.. count + 1

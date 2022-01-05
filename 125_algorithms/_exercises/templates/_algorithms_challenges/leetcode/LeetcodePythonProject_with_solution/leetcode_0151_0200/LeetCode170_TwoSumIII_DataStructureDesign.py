@@ -3,7 +3,7 @@ Created on Feb 13, 2017
 
 @author: MT
 '''
-c_ TwoSum(object):
+c_ TwoSum(o..):
 
     ___ - ):
         """

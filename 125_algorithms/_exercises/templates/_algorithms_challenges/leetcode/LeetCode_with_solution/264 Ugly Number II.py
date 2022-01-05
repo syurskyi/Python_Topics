@@ -12,7 +12,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Node(object):
+c_ Node(o..):
     """
     Data structure is key
     """
@@ -24,7 +24,7 @@ c_ Node(object):
         r.. q[0] - other.q[0]
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ nthUglyNumber  n):
         """
         Prime factor: 2, 3, 5
@@ -49,7 +49,7 @@ c_ Solution(object):
             cnt += 1
             popped = heapq.heappop(h)
             ret = popped.q.pop(0)
-            ___ i __ xrange(ugly.index(popped.origin), 3):
+            ___ i __ x..(ugly.index(popped.origin), 3):
                 qs[i].q.a..(ret*ugly[i])
 
             heapq.heappush(h, popped)

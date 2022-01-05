@@ -10,7 +10,7 @@ You should not implement it, or speculate about its implementation
 """
 
 
-c_ NestedInteger(object):
+c_ NestedInteger(o..):
     ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
@@ -50,7 +50,7 @@ c_ NestedInteger(object):
         """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         s.. = 0
 
@@ -82,7 +82,7 @@ c_ Solution(object):
             s.. += s..(map(l.... x: x.getInteger() * inv_depth, ni_list))
 
 
-c_ SolutionError(object):
+c_ SolutionError(o..):
     ___ - ):
         s.. = 0
 

@@ -3,7 +3,7 @@ Created on Feb 20, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ containsNearbyDuplicate  nums, k):
         """
         :type nums: List[int]

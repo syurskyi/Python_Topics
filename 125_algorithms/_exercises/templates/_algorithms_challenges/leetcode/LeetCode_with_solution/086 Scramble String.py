@@ -56,7 +56,7 @@ c_ Solution:
         """
         __ l..(s1)!=l..(s2):
             r.. F..
-        chars = [0 ___ _ __ xrange(26)]
+        chars = [0 ___ _ __ x..(26)]
         ___ char __ s1:
             chars[o..(char)-o..('a')] += 1
         ___ char __ s2:
@@ -72,7 +72,7 @@ c_ Solution:
             r.. T..
 
 
-        ___ i __ xrange(1, l..(s1)):
+        ___ i __ x..(1, l..(s1)):
             __ isScramble(s1[:i], s2[:i]) a.. isScramble(s1[i:], s2[i:]) o. \
                 isScramble(s1[:i], s2[-i:]) a.. isScramble(s1[i:], s2[:l..(s2)-i]):
                 r.. T..

@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ getHeight  root):
     height = 0
     w.... root:

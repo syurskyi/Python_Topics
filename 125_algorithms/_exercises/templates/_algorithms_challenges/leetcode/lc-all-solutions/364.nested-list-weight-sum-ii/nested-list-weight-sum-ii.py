@@ -41,7 +41,7 @@
 #        :rtype List[NestedInteger]
 #        """
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ depthSumInverse  nestedList):
     """
     :type nestedList: List[NestedInteger]

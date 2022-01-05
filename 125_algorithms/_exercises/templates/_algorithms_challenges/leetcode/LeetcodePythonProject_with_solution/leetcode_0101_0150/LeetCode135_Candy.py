@@ -4,7 +4,7 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ candy  ratings):
         """
         :type ratings: List[int]

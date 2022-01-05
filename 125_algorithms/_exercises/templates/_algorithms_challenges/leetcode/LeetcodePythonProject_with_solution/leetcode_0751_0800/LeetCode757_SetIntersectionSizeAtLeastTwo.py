@@ -3,7 +3,7 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ intersectionSizeTwo  intervals):
         """
         :type intervals: List[List[int]]

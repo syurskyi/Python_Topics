@@ -25,14 +25,14 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         cache_rob    # dict
         cache_notrob    # dict
@@ -75,7 +75,7 @@ c_ Solution(object):
         r.. cache_notrob[root]
 
 
-c_ SolutionTLE(object):
+c_ SolutionTLE(o..):
     ___ rob  root):
         """
         :type root: TreeNode

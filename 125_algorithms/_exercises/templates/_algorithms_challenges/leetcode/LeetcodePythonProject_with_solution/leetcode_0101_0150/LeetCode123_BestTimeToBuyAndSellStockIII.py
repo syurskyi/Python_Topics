@@ -4,7 +4,7 @@ Created on Feb 6, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProfit  prices):
         """
         :type prices: List[int]

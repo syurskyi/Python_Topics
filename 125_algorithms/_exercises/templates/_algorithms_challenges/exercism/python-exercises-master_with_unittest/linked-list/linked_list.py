@@ -1,8 +1,8 @@
-c_ Node(object):
+c_ Node(o..):
     ___ - ):
         p..
 
 
-c_ LinkedList(object):
+c_ LinkedList(o..):
     ___ - ):
         p..

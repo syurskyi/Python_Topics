@@ -14,7 +14,7 @@ Can you do it in O(n) time and/or in-place with O(1) extra space?
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wiggleSort  A):
         """
         1. Quick selection for finding median (Average O(n))
@@ -77,7 +77,7 @@ c_ Solution(object):
             r.. find_kth(A, gt, hi, k)
 
 
-c_ SolutionSort(object):
+c_ SolutionSort(o..):
     ___ wiggleSort  nums):
         """
         Sort-based: interleave the small half and large half
@@ -93,7 +93,7 @@ c_ SolutionSort(object):
         A = s..(nums)
 
         j, k = (n-1) / 2, n-1
-        ___ i __ xrange(l..(nums)):
+        ___ i __ x..(l..(nums)):
             __ i % 2 __ 0:
                 nums[i] = A[j]
                 j -= 1

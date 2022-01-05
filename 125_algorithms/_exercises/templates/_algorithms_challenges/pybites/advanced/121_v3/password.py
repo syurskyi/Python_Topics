@@ -10,7 +10,7 @@ ___ password_complexity(password: s..):
             up += 1
         ____ l.isl..
             lo += 1
-        ____ l.isdigit
+        ____ l.i..
             num += 1
         ____:
             spec += 1

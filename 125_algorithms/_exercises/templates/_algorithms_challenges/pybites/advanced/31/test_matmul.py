@@ -1,7 +1,7 @@
 ____ matmul _______ Matrix
 
 
-c_ MatrixWithoutMatMul(object):
+c_ MatrixWithoutMatMul(o..):
 
     ___ - , values):
         values = values

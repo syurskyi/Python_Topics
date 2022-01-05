@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ numSquares  n):
     """
     :type n: int
@@ -20,7 +20,7 @@ c_ Solution(object):
           __ q - factor __ 0:
             r.. level
           __ q - factor < 0:
-            break
+            _____
           __ visited[q - factor]:
             _____
           temp.a..(q - factor)

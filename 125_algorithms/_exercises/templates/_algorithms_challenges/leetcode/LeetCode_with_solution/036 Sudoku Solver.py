@@ -17,10 +17,10 @@ c_ Solution:
         :return: NIL
         """
         # break board
-        ___ row __ xrange(l..(board)):
+        ___ row __ x..(l..(board)):
             board[row] = l..(board[row])
         solve(board, 0, 0)
-        ___ row __ xrange(l..(board)):
+        ___ row __ x..(l..(board)):
             board[row] = "".j..(board[row])
 
     ___ solve_TLE  board):
@@ -30,20 +30,20 @@ c_ Solution:
         :return: Boolean
         """
         n = l..(board)
-        __ a..([board[i/n][i%n]!="." ___ i __ xrange(n*n)]):
+        __ a..([board[i/n][i%n]!="." ___ i __ x..(n*n)]):
             r.. T..
 
-        ___ i __ xrange(n):
-            ___ j __ xrange(n):
+        ___ i __ x..(n):
+            ___ j __ x..(n):
                 __ board[i][j]__".":
                     ___ num __ r..(1, 10):
                         num_str = s..(num)
                         # row
-                        condition_row = a..([board[i][col]!=num_str ___ col __ xrange(n)])
+                        condition_row = a..([board[i][col]!=num_str ___ col __ x..(n)])
                         # col
-                        condition_col = a..([board[row][j]!=num_str ___ row __ xrange(n)])
+                        condition_col = a..([board[row][j]!=num_str ___ row __ x..(n)])
                         # square
-                        condition_square = a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ xrange(n)])
+                        condition_square = a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ x..(n)])
 
                         __ condition_col a.. condition_row a.. condition_square:
                             board[i][j] = num_str
@@ -70,9 +70,9 @@ c_ Solution:
                 num_str = s..(num)  # try number
                 # To speed up, use condition short-curcit.
                 # row, col, square
-                __ a..([board[i][col]!=num_str ___ col __ xrange(9)]) a.. \
-                        a..([board[row][j]!=num_str ___ row __ xrange(9)]) a.. \
-                        a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ xrange(9)]):
+                __ a..([board[i][col]!=num_str ___ col __ x..(9)]) a.. \
+                        a..([board[row][j]!=num_str ___ row __ x..(9)]) a.. \
+                        a..([board[i/3*3+count/3][j/3*3+count%3]!=num_str ___ count __ x..(9)]):
                     board[i][j] = num_str
                     __ n.. solve(board, i, j+1):
                         board[i][j] = "."  # restore, backtrack, save space

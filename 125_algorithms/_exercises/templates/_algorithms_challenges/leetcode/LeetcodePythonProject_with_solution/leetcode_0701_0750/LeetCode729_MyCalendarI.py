@@ -3,12 +3,12 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , start, end):
         start = start
         end = end
 
-c_ MyCalendar(object):
+c_ MyCalendar(o..):
 
     ___ - ):
         intervals    # list

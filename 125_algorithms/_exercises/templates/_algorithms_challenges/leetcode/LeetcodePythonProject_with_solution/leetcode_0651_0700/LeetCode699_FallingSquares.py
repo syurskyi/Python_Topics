@@ -3,13 +3,13 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , start, end, height):
         start = start
         end = end
         height = height
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ fallingSquares  positions):
         """
         :type positions: List[List[int]]

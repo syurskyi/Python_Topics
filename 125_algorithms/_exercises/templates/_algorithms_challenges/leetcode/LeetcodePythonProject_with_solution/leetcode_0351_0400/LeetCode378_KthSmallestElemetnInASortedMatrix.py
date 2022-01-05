@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ kthSmallest  matrix, k):
         lower, upper = matrix[0][0], matrix[-1][-1]
         w.... lower < upper:

@@ -5,7 +5,7 @@ seed = 0
 
 ___ i __ r..(l..(a)):
     __ i __ l..(a)-1:
-        break
+        _____
     __ a[i] > a[i+1]:
         swap_count += 1
         temp = a[i]

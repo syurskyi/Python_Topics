@@ -3,7 +3,7 @@ Created on May 30, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ restoreIpAddresses  s):
         """
         :type s: str
@@ -22,9 +22,9 @@ c_ Solution(object):
         ___ i __ r..(ind+1, ind+4):
             sub = s[ind:i]
             __ sub[0] __ '0' a.. l..(sub) > 1:
-                break
+                _____
             __ i..(sub) > 255:
-                break
+                _____
             curr.a..(sub)
             helper(res, curr, s, i)
             curr.pop()

@@ -4,7 +4,7 @@
 #         self.x = a
 #         self.y = b
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ maxPoints  points):
     """
     :type points: List[Point]

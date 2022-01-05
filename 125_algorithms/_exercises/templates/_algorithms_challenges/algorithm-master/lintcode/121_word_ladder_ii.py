@@ -39,7 +39,7 @@ c_ Solution:
         distance = {B: 1}
         ___ word __ queue:
             __ word __ A:
-                break
+                _____
             ___ _word __ get_next_word(word, next_words):
                 __ _word __ distance:
                     _____

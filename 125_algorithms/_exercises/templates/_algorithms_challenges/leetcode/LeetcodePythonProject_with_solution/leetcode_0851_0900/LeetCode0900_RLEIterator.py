@@ -1,7 +1,7 @@
 # Showing Memory Limit Exceeded only
 # I hope it's OK
 
-c_ RLEIterator(object):
+c_ RLEIterator(o..):
 
     ___ - , A):
         """

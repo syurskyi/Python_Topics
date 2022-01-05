@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxSubArrayLen  A, k):
         """
         Search problem
@@ -15,7 +15,7 @@ c_ Solution(object):
         m = {0: -1}  # initial condition, sum -> idx
         maxa = 0
         s = 0
-        ___ i __ xrange(l..(A)):
+        ___ i __ x..(l..(A)):
             s += A[i]
             t = s - k  # s - t = k
             __ t __ m:

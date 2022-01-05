@@ -3,7 +3,7 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ kEmptySlots  flowers, k):
         """
         :type flowers: List[int]
@@ -18,7 +18,7 @@ c_ Solution(object):
         left, right = 0, k+1
         res = float('inf')
         ___ i __ r..(n):
-            __ right >= n: break
+            __ right >= n: _____
             __ days[i] __ days[right] a.. i __ right:
                 res = m..(res, m..(days[left], days[right]))
             __ days[i] < days[left] o. days[i] < days[right]:

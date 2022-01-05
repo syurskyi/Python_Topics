@@ -44,14 +44,14 @@ c_ Solution:
 
                     cur.left = N..
                     tail = tail.left
-                    break
+                    _____
                 ____:
                     cur.left = tail
                     tail = tail.right
             ____:
                 right = tail
                 tail = tail.left
-                break
+                _____
 
     ___ nxt
         w.... head:
@@ -66,11 +66,11 @@ c_ Solution:
 
                     cur.right = N..
                     head = head.right
-                    break
+                    _____
                 ____:
                     cur.right = head
                     head = head.left
             ____:
                 left = head
                 head = head.right
-                break
+                _____

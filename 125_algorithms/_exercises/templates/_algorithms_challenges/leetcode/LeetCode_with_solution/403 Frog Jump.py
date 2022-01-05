@@ -36,7 +36,7 @@ the gap between the 5th and 6th stone is too large.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canCross  stones):
         """
         Instead of having F[i][step] = True/False, use F[i] = set of steps

@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ islandPerimeter  grid):
         result = 0
         m, n = l..(grid), l..(grid[0])

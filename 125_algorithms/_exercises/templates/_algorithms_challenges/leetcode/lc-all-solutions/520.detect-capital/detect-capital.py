@@ -1,7 +1,7 @@
 _______ s__
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ detectCapitalUse  word):
     """
     :type word: str

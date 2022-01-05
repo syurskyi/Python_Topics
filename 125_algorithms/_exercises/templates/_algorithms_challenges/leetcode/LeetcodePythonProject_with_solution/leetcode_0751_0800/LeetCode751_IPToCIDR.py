@@ -3,7 +3,7 @@ Created on Mar 26, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ ipToCIDR  ip, n):
         """
         :type ip: str

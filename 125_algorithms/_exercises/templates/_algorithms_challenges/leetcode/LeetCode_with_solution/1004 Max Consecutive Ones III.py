@@ -51,7 +51,7 @@ c_ Solution:
                 ____ A[j] __ 1:
                     j += 1
                 ____:
-                    break
+                    _____
 
             ret = m..(ret, j - i)
             __ A[i] __ 0:

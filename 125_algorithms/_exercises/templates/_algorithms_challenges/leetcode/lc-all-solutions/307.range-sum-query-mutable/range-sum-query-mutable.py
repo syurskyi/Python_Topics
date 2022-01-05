@@ -1,5 +1,5 @@
 # Segment tree node
-c_ STNode(object):
+c_ STNode(o..):
   ___ - , start, end):
     start = start
     end = end
@@ -8,7 +8,7 @@ c_ STNode(object):
     right = N..
 
 
-c_ SegmentedTree(object):
+c_ SegmentedTree(o..):
   ___ - , nums, start, end):
     root = buildTree(nums, start, end)
 
@@ -61,7 +61,7 @@ c_ SegmentedTree(object):
     r.. rangeSum(root, i, j)
 
 
-c_ NumArray(object):
+c_ NumArray(o..):
   ___ - , nums):
     """
     initialize your data structure here.

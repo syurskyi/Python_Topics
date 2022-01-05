@@ -3,7 +3,7 @@ Created on Sep 3, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ distributeCandies  candies):
         """
         :type candies: List[int]

@@ -3,7 +3,7 @@ Created on Oct 13, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ nthMagicalNumber  N, A, B):
         """
         :type N: int

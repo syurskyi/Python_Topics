@@ -8,7 +8,7 @@ c_ ListNode:
         val = x
         next = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr(val)
 
 c_ Solution:

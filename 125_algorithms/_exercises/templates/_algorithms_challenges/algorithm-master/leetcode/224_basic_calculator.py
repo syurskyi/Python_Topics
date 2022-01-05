@@ -25,9 +25,9 @@ c_ Solution:
         ___ i __ r..(l..(s)):
             char = s[i]
 
-            __ i > 0 a.. s[i - 1].isdigit() a.. char.isdigit
+            __ i > 0 a.. s[i - 1].i.. a.. char.i..
                 res[-1] += char
-            ____ char.isdigit
+            ____ char.i..
                 res.a..(char)
             ____ char __ OP:
                 w.... stack a.. stack[-1] __ OP:
@@ -49,7 +49,7 @@ c_ Solution:
         stack    # list
 
         ___ char __ s:
-            __ char.isdigit
+            __ char.i..
                 stack.a..(i..(char))
             ____ char __ OP:
                 b = stack.pop()
@@ -81,9 +81,9 @@ c_ Solution:
         ___ i __ r..(l..(s)):
             char = s[i]
 
-            __ i > 0 a.. s[i - 1].isdigit() a.. char.isdigit
+            __ i > 0 a.. s[i - 1].i.. a.. char.i..
                 res[-1] += char
-            ____ char.isdigit
+            ____ char.i..
                 res.a..(char)
             ____ char __ '+-':
                 w.... stack a.. stack[-1] __ '+-':
@@ -105,7 +105,7 @@ c_ Solution:
         stack    # list
 
         ___ char __ s:
-            __ char.isdigit
+            __ char.i..
                 stack.a..(i..(char))
             ____ char __ '+-':
                 b = stack.pop()

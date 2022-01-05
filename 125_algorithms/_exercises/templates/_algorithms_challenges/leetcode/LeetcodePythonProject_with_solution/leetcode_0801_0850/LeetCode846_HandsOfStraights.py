@@ -3,7 +3,7 @@ Created on Mar 26, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isNStraightHand  hand, W):
         """
         :type hand: List[int]

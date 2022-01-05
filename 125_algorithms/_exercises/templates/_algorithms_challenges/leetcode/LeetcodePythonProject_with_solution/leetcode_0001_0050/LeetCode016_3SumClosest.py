@@ -3,7 +3,7 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ threeSumClosest  nums, target):
         """
         :type nums: List[int]

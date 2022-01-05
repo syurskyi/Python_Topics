@@ -1,7 +1,7 @@
 directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ longestIncreasingPath  matrix):
     """
     :type matrix: List[List[int]]

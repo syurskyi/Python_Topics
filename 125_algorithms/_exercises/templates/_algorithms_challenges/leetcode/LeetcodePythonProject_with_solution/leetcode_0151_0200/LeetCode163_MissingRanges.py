@@ -3,7 +3,7 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMissingRanges  nums, lower, upper):
         """
         :type nums: List[int]
@@ -20,7 +20,7 @@ c_ Solution(object):
                 res.a..('%s->%s' % (prev, m..(num-1, upper)))
             prev = num+1
             __ prev > upper:
-                break
+                _____
         __ upper __ prev:
             res.a..('%s' % prev)
         ____ upper > prev:

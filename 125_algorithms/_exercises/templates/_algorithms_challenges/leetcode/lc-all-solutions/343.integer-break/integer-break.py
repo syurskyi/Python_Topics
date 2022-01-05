@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ integerBreak  n):
     """
     :type n: int

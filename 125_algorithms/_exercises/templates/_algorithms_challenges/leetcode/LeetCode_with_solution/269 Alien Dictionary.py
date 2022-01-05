@@ -44,7 +44,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ alienOrder  words):
         """
         :type words: List[str]
@@ -67,11 +67,11 @@ c_ Solution(object):
         ___ w __ words:  # pitfall
             ___ c __ w:
                 V[c]
-        ___ i __ xrange(l..(words) - 1):  # compare word_i and word_{i+1}
-            ___ j __ xrange(m..(l..(words[i]), l..(words[i+1]))):
+        ___ i __ x..(l..(words) - 1):  # compare word_i and word_{i+1}
+            ___ j __ x..(m..(l..(words[i]), l..(words[i+1]))):
                 __ words[i][j] != words[i+1][j]:
                     V[words[i][j]].a..(words[i+1][j])
-                    break  # need to break for lexical order
+                    _____  # need to break for lexical order
 
         r.. V
 

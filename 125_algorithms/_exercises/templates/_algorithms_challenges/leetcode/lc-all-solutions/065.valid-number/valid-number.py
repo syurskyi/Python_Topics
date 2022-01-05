@@ -1,4 +1,4 @@
-c_ States(object):
+c_ States(o..):
   ___ - ):
     init = 0
     decimal = 1
@@ -12,7 +12,7 @@ c_ States(object):
     afteresign = 9
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ isNumber  s):
     """
     :type s: str

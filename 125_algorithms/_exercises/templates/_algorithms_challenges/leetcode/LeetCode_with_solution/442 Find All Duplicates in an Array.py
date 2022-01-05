@@ -33,7 +33,7 @@ c_ Solution:
             t = idx(A[i])
             w.... i != t:
                 __ A[i] __ A[t]:
-                    break
+                    _____
                 ____:
                     A[i], A[t] = A[t], A[i]
                     t = idx(A[i])

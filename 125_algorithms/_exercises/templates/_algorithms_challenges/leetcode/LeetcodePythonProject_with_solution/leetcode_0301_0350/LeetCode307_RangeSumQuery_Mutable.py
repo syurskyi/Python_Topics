@@ -3,7 +3,7 @@ Created on May 9, 2018
 
 @author: tongq
 '''
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , start, end, sumVal=0):
         sumVal = sumVal
         start = start
@@ -11,7 +11,7 @@ c_ TreeNode(object):
         left = N..
         right = N..
 
-c_ NumArray(object):
+c_ NumArray(o..):
 
     ___ - , nums):
         """

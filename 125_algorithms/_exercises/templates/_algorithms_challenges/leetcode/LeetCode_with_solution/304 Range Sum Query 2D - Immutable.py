@@ -27,7 +27,7 @@ You may assume that row1 ≤ row2 and col1 ≤ col2.
 __author__ = 'Daniel'
 
 
-c_ NumMatrix(object):
+c_ NumMatrix(o..):
     ___ - , matrix):
         """
         initialize your data structure here.
@@ -40,9 +40,9 @@ c_ NumMatrix(object):
             r..
 
         n = l..(matrix[0])
-        F = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
-        ___ i __ xrange(1, m+1):
-            ___ j __ xrange(1, n+1):
+        F = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
+        ___ i __ x..(1, m+1):
+            ___ j __ x..(1, n+1):
                 F[i][j] = F[i-1][j]+F[i][j-1]-F[i-1][j-1]+matrix[i-1][j-1]
 
     ___ sumRegion  row1, col1, row2, col2):

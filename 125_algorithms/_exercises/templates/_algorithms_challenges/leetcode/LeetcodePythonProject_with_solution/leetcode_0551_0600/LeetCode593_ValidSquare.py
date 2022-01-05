@@ -4,7 +4,7 @@ Created on Sep 5, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ validSquare  p1, p2, p3, p4):
         """
         :type p1: List[int]

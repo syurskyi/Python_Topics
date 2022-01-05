@@ -8,7 +8,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ WordDistance(object):
+c_ WordDistance(o..):
     ___ - , words):
         """
         initialize your data structure here.

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ topKFrequent  nums, k):
     """
     :type nums: List[int]
@@ -20,7 +20,7 @@ c_ Solution(object):
       freq, key = t
       buckets[freq].a..(key)
 
-    buckets.reverse()
+    buckets.r..
 
     ___ item __ buckets:
       __ item a.. k > 0:

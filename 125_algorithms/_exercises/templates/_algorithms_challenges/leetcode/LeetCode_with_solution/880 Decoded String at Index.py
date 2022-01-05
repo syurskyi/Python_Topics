@@ -48,7 +48,7 @@ c_ Solution:
         """
         l = 0
         ___ s __ S:
-            __ s.isdigit
+            __ s.i..
                 l *= i..(s)
             ____:
                 l += 1
@@ -59,7 +59,7 @@ c_ Solution:
             __ K __ 0 a.. s.isalpha
                 # K == l * n, return the last chr
                 r.. s
-            __ s.isdigit
+            __ s.i..
                 l //= i..(s)
             ____:
                 l -= 1
@@ -79,7 +79,7 @@ c_ Solution:
         last = N..
         n = l..(S)
         w.... j < n:
-            __ S[j].isdigit
+            __ S[j].i..
                 __ n.. last:
                     last = j
 

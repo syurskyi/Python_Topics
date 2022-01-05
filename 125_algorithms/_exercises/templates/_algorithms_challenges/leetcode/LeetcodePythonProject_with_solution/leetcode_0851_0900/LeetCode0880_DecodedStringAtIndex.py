@@ -3,7 +3,7 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ decodeAtIndex  S, K):
         """
         :type S: str
@@ -12,13 +12,13 @@ c_ Solution(object):
         """
         n = 0
         ___ i, c __ e..(S):
-            __ c.isdigit
+            __ c.i..
                 n = n*i..(c)
             ____:
                 n += 1
         ___ j __ r..(i, -1, -1):
             c = S[j]
-            __ c.isdigit
+            __ c.i..
                 n //= i..(c)
                 K %= n
             ____:
@@ -34,7 +34,7 @@ c_ Solution(object):
         """
         tmp = ''
         ___ c __ S:
-            __ c.isdigit
+            __ c.i..
                 tmp += tmp*(i..(c)-1)
             ____:
                 tmp += c

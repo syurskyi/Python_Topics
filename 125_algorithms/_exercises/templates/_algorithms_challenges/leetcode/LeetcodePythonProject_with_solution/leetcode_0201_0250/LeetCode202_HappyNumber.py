@@ -4,7 +4,7 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isHappy  n):
         """
         :type n: int

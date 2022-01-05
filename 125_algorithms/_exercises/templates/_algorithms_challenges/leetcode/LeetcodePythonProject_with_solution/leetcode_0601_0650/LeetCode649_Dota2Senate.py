@@ -3,7 +3,7 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ predictPartyVictory  senate):
         """
         :type senate: str

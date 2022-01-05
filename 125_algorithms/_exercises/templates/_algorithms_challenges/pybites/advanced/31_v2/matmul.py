@@ -1,9 +1,9 @@
-c_ Matrix(object):
+c_ Matrix(o..):
 
     ___ - , values):
         _values = values
 
-    ___ __repr__
+    ___  -r
         r.. f'<Matrix values="{values}">'
 
     $

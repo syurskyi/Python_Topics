@@ -4,7 +4,7 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reconstructQueue  people):
         res    # list
         people.s..(key=l.... x: (-x[0], x[1]))

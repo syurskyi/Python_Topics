@@ -100,7 +100,7 @@ c_ Solution_error:
                 ret.insert(d[r]-(l-1), "(")
                 r.. "".j..(ret)
 
-            ___ _ __ xrange(l-1):
+            ___ _ __ x..(l-1):
                 ret.a..("0")
                 i += 1
 

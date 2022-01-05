@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ restoreIpAddresses  s):
     """
     :type s: str
@@ -17,16 +17,16 @@ c_ Solution(object):
     ___ i __ r..(0, m..(3, n - 3)):
       a = s[:i + 1]
       __ n.. isValid(a):
-        break
+        _____
       ___ j __ r..(i + 1, m..(i + 4, n - 2)):
         b = s[i + 1:j + 1]
         __ n.. isValid(b):
-          break
+          _____
         ___ k __ r..(j + 1, m..(j + 4, n - 1)):
           c = s[j + 1:k + 1]
           d = s[k + 1:]
           __ n.. isValid(c):
-            break
+            _____
           __ n.. isValid(d):
             _____
           ans.a..("{}.{}.{}.{}".f..(a, b, c, d))

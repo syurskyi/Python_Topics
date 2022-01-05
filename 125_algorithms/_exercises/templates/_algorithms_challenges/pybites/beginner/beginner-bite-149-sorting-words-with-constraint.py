@@ -26,7 +26,7 @@ ___ sort_words_case_insensitively(words):
     print(f"### Initial list {words}")
     ### IMPORTANT!!!! DO NOT modify a list when iterating over it!!!!
     ___ word __ words:
-        __ word[0].isdigit
+        __ word[0].i..
             nums.a..(word)
     nums = s..(nums)
     ___ num __ nums:

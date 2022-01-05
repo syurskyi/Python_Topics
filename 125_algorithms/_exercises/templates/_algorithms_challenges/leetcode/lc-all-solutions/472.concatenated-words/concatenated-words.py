@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findAllConcatenatedWordsInADict  words):
     """
     :type words: List[str]
@@ -16,7 +16,7 @@ c_ Solution(object):
             _____
           __ word[j:i] __ cands:
             dp[i] = T..
-            break
+            _____
       r.. dp[-1]
 
     words.s..(key=l.... x: -l..(x))

@@ -4,7 +4,7 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ increasingTriplet  nums):
         __ n.. nums: r.. F..
 #         first = float('inf')

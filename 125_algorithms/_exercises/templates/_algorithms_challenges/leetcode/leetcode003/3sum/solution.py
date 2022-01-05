@@ -14,7 +14,7 @@ The solution set must not contain duplicate triplets.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ threeSum  nums):
         """
         :type nums: List[int]

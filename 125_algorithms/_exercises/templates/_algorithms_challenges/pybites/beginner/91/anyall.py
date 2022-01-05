@@ -21,7 +21,7 @@ ___ contains_any_py_chars(input_str):
 ___ contains_digits(input_str):
     """Receives input string and checks if it contains
        one or more digits."""
-    count = [letter ___ letter __ input_str __ letter.isdigit()]
+    count = [letter ___ letter __ input_str __ letter.i..]
     r.. T.. __ l..(count) > 0 ____ F..
 
 #print(contains_only_vowels('aeiou'))

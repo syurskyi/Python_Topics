@@ -4,7 +4,7 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ integerReplacement  n):
         steps = 0
         w.... n > 1:

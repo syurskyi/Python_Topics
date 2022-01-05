@@ -3,7 +3,7 @@ Created on Oct 12, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maximumSwap  num):
         """
         :type num: int
@@ -19,9 +19,9 @@ c_ Solution(object):
                 __ c0 > c a.. hashmap.get(c0, -1) > i:
                     arr[i], arr[hashmap[c0]] = arr[hashmap[c0]], arr[i]
                     flag = T..
-                    break
+                    _____
             __ flag:
-                break
+                _____
         r.. i..(''.j..(arr))
     
     ___ test

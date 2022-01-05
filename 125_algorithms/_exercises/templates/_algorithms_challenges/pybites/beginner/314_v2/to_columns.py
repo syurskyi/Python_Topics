@@ -12,13 +12,13 @@ ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
             index = row * cols + col
             ___
                 name  = names[index]
-            ______ IndexError:
-                break
+            ______ I..
+                _____
             print _*| {name:<10}',end='')
         ____:
             print()
             _____
-        break
+        _____
 
 
 

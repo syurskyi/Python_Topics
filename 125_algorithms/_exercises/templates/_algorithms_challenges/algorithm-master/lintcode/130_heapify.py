@@ -24,7 +24,7 @@ c_ Solution:
                 _i += 1
             __ A[_i] >= A[i]:
                 # if its already steady
-                break
+                _____
 
             A[i], A[_i] = A[_i], A[i]
             i = _i

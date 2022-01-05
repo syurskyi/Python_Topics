@@ -15,7 +15,7 @@ c_ Solution:
 
         ___ a, _ __ s..(F.i.., key=l.... x: -x[1]):
             __ k __ 0:
-                break
+                _____
 
             ans.a..(a)
             k -= 1

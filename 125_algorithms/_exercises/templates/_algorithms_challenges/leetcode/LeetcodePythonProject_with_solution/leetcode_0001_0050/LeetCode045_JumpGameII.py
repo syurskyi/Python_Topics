@@ -3,7 +3,7 @@ Created on Jun 5, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ jump  nums):
         """
         :type nums: List[int]

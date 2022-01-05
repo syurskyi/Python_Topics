@@ -7,7 +7,7 @@ ___ extract_non_ascii_words(text):
     ___ word __ words:
         ___
             word.encode('ascii')
-        ______ Exception __ e:
+        ______ E.. __ e:
             print(e)
             result.a..(word)
 

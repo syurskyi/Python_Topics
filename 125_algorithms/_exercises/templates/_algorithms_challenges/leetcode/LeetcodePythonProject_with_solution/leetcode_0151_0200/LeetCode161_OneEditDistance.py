@@ -4,7 +4,7 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isOneEditDistance  s, t):
         """
         :type s: str

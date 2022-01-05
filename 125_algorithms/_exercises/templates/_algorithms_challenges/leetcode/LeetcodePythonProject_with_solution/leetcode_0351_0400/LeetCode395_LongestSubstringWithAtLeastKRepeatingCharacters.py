@@ -4,7 +4,7 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestSubstring_orig  s, k):
         __ l..(s) < k:
             r.. 0

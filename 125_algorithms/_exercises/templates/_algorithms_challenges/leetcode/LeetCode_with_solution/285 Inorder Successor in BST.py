@@ -4,14 +4,14 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ inorderSuccessor  root, p):
         """
         search

@@ -23,8 +23,8 @@ c_ Solution:
         """
         n = l..(nums)
 
-        S = [0 ___ _ __ xrange(n+1)]
-        ___ i __ xrange(1, n+1):
+        S = [0 ___ _ __ x..(n+1)]
+        ___ i __ x..(1, n+1):
             S[i] = S[i-1]+nums[i-1]
 
         lo, hi = 0, 1

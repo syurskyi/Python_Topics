@@ -3,7 +3,7 @@ Created on Sep 9, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ loudAndRich  richer, quiet):
         """
         :type richer: List[List[int]]

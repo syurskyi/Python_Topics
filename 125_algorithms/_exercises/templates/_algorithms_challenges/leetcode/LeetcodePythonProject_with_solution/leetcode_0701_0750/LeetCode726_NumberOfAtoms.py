@@ -4,7 +4,7 @@ Created on Feb 21, 2018
 @author: tongq
 '''
 _______ __
-c_ Solution(object):
+c_ Solution(o..):
     ___ countOfAtoms  formula):
         """
         :type formula: str
@@ -30,11 +30,11 @@ c_ Solution(object):
                         count0 += 1
                     i += 1
                 hashmap0 = helper(s[prev:i-1])
-                __ i __ l..(s) o. n.. s[i].isdigit
+                __ i __ l..(s) o. n.. s[i].i..
                     count = 1
                 ____:
                     prev = i
-                    w.... i < l..(s) a.. s[i].isdigit
+                    w.... i < l..(s) a.. s[i].i..
                         i += 1
                     count = i..(s[prev:i])
                 ___ elem, freq __ hashmap0.i..:
@@ -46,11 +46,11 @@ c_ Solution(object):
                 ____:
                     elem = s[i]
                 i+=1
-                __ i __ l..(s) o. n.. s[i].isdigit() o. s[i] __ '(':
+                __ i __ l..(s) o. n.. s[i].i.. o. s[i] __ '(':
                     count = 1
                 ____:
                     prev = i
-                    w.... i < l..(s) a.. s[i].isdigit
+                    w.... i < l..(s) a.. s[i].i..
                         i += 1
                     count = i..(s[prev:i])
                 hashmap[elem] = hashmap.get(elem, 0)+count

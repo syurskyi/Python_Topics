@@ -3,7 +3,7 @@ Created on Sep 9, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ leastInterval  tasks, n):
         """
         :type tasks: List[str]

@@ -6,7 +6,7 @@ _______ p__
 ____ guess _______ get_random_number, Game
 
 
-@patch.object(r__, 'randint')
+@patch.o..(r__, 'randint')
 ___ test_get_random_number(m):
     m.return_value = 17
     ... get_random_number() __ 17

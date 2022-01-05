@@ -4,7 +4,7 @@ Created on Feb 20, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ containsDuplicate  nums):
         """
         :type nums: List[int]

@@ -1,4 +1,4 @@
-c_ ValidWordAbbr(object):
+c_ ValidWordAbbr(o..):
   ___ - , dictionary):
     """
     initialize your data structure here.

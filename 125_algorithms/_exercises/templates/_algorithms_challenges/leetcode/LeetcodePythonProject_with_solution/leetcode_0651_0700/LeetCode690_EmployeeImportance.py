@@ -15,7 +15,7 @@ class Employee(object):
         # the id of direct subordinates
         self.subordinates = subordinates
 """
-c_ Solution(object):
+c_ Solution(o..):
     ___ getImportance  employees, id):
         """
         :type employees: Employee

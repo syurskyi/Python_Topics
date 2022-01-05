@@ -2,7 +2,7 @@ ____ dataclasses _______ dataclass
 
 
 @dataclass
-c_ Bite(object):
+c_ Bite(o..):
     number: i..
     title: s..
     level: s.. = 'Beginner'

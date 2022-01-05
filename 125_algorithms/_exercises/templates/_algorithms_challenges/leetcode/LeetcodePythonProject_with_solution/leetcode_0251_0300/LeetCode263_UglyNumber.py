@@ -4,7 +4,7 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isUgly_noRec  num):
         """
         :type num: int
@@ -19,7 +19,7 @@ c_ Solution(object):
             ____ num%5 __ 0:
                 num //= 5
             ____:
-                break
+                _____
         r.. num __ 1
     
     ___ isUgly  num):

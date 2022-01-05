@@ -26,11 +26,11 @@ c_ Solution:
             r.. [1]
 
         current_level = [1, 1]
-        ___ row __ xrange(2, rowIndex+1):
+        ___ row __ x..(2, rowIndex+1):
 
             # generating next level
             temp = current_level[0]
-            ___ col __ xrange(1, row): # middle
+            ___ col __ x..(1, row): # middle
                 summation = current_level[col] + temp
                 temp = current_level[col]
                 current_level[col] = summation

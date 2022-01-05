@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findBlackPixel  picture, N):
     """
     :type picture: List[List[str]]

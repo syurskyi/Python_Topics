@@ -26,7 +26,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestSubstring  s, k):
         """
         D & C, forming boundary by the letter of min count

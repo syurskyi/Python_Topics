@@ -3,7 +3,7 @@ ____ time _______ time
 _______ r__
 
 
-c_ Cipher(object):
+c_ Cipher(o..):
 
     ___ - , key_ N..
         __ n.. key:

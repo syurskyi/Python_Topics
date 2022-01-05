@@ -3,7 +3,7 @@ Created on Nov 1, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findSubstring  s, words):
         """
         :type s: str

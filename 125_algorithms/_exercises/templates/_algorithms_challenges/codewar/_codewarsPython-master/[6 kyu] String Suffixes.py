@@ -10,7 +10,7 @@ ___ stringMatch(str_,toMatch):
 		__ str_[n] __ toMatch[n]:
 			res += 1
 		____:
-			break
+			_____
 	r.. res
 
 print(string_suffix('ababaa'))

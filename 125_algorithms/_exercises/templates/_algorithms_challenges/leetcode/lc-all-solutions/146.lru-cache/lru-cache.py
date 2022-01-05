@@ -1,4 +1,4 @@
-c_ List(object):
+c_ List(o..):
   @staticmethod
   ___ delete(elem):
     elem.prev.next = elem.next
@@ -25,7 +25,7 @@ c_ List(object):
     head.prev = head.next = head
 
 
-c_ Node(object):
+c_ Node(o..):
   ___ - , key, value, head):
     key = key
     value = value
@@ -37,7 +37,7 @@ c_ Node(object):
     List.a..(head, self)
 
 
-c_ LRUCache(object):
+c_ LRUCache(o..):
   ___ - , capacity):
     """
     :type capacity: int

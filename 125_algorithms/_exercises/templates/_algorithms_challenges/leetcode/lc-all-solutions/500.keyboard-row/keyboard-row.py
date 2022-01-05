@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findWords  words):
     """
     :type words: List[str]
@@ -22,7 +22,7 @@ c_ Solution(object):
       ___ c __ word:
         __ pre != d[c.l..]:
           same = F..
-          break
+          _____
         pre = d[c.l..]
       __ same:
         ans.a..(word)

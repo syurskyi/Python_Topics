@@ -1,3 +1,3 @@
-c_ Garden(object):
+c_ Garden(o..):
     ___ - ):
         p..

@@ -3,7 +3,7 @@ Created on Apr 4, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxChunksToSorted  arr):
         """
         :type arr: List[int]

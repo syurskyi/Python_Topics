@@ -8,7 +8,7 @@ profit.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProfit  prices):
         """
         :type prices: List[int]

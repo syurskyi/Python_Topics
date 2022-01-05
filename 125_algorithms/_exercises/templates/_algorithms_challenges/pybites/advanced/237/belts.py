@@ -44,7 +44,7 @@ ___ get_belts(data: s..) __ d..:
             belts[BELTS[score_index]] = date_string
             score_index += 1
             __ score_index __ l..(SCORES):
-                break
+                _____
             score_marker = SCORES[score_index]
 
 

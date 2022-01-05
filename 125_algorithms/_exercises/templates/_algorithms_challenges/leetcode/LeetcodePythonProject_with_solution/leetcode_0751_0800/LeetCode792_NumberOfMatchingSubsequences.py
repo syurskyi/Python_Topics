@@ -3,7 +3,7 @@ Created on Apr 16, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numMatchingSubseq  S, words):
         """
         :type S: str

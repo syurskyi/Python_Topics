@@ -3,7 +3,7 @@ Created on Mar 14, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMinHeightTrees  n, edges):
         """
         :type n: int

@@ -5,13 +5,13 @@ Created on Mar 6, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ inorderSuccessor  root, p):
         __ n.. root: r.. N..
         __ root.val <= p.val:
@@ -43,7 +43,7 @@ c_ Solution(object):
             ____ node.val < p.val:
                 node = node.right
             ____:
-                break
+                _____
         w.... stack a.. stack[-1].val < p.val:
             stack.pop()
         __ n.. stack:

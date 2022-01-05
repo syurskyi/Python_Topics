@@ -25,7 +25,7 @@ c_ Solution:
                 __ i __ m:
                     rev_end = head
             ____:  # i > n
-                break
+                _____
             head = next_node
             i += 1
         # No beginning part

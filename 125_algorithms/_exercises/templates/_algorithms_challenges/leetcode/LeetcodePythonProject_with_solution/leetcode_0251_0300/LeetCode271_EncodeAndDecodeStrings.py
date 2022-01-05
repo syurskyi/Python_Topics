@@ -4,7 +4,7 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-c_ Codec(object):
+c_ Codec(o..):
     ___ encode  strs):
         """Encodes a list of strings to a single string.
         
@@ -29,7 +29,7 @@ c_ Codec(object):
                 j = i
                 w.... j < n a.. s[j] != '#':
                     j += 1
-                __ s[i+1:j].isdigit() a.. i..(s[i+1:j]) __ l..(sub):
+                __ s[i+1:j].i.. a.. i..(s[i+1:j]) __ l..(sub):
                     arr.a..(sub)
                     i = j
                     prev = i+1

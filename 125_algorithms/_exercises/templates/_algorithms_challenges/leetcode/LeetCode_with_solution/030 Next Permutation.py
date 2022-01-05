@@ -29,20 +29,20 @@ c_ Solution:
         partition_num_index = 0
         change_num_index = 0
 
-        ___ i __ r..(xrange(1, length)):
+        ___ i __ r..(x..(1, length)):
             __ num[i]>num[i-1]:
                 partition_num_index = i-1
-                break
-        ___ i __ r..(xrange(1, length)):
+                _____
+        ___ i __ r..(x..(1, length)):
             __ num[i]>num[partition_num_index]:
                 change_num_index = i
-                break
+                _____
 
         num[partition_num_index], num[change_num_index] = num[change_num_index], num[partition_num_index]
 
         __ partition_num_index__change_num_index__0:
             # If such arrangement is not possible, to lowest possible order (ie, sorted in ascending order).
-            num.reverse()
+            num.r..
         ____:
             num[partition_num_index+1:] = r..(num[partition_num_index+1:])
         r.. num

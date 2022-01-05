@@ -30,9 +30,9 @@ c_ Solution:
                 _____
 
             # jump forward
-            ___ i __ xrange(ind+1, ind+val+1):
+            ___ i __ x..(ind+1, ind+val+1):
                 __ i>=length:
-                    break
+                    _____
                 ___ item __ dp[ind]:
                     dp[i].add(item)
 
@@ -50,15 +50,15 @@ c_ Solution:
         :return:
         """
         l = l..(A)
-        dp = [F.. ___ _ __ xrange(l+1)]  # last one is dummy
+        dp = [F.. ___ _ __ x..(l+1)]  # last one is dummy
         dp[0] = T..
         ___ ind, val __ e..(A):
             __ dp[ind]:
-                ___ i __ xrange(1, val+1):  # now jumping
+                ___ i __ x..(1, val+1):  # now jumping
                     __ ind+i<l+1:
                         dp[ind+i] = T..
                     ____:
-                        break
+                        _____
         r.. dp[-1]
 
     ___ canJump  A):
@@ -80,10 +80,10 @@ c_ Solution:
             r.. T..
 
         # dp = [-1]*(l-1)  # normally starting from \phi
-        dp = [-1 ___ _ __ xrange(l)]  # no need dummy here
+        dp = [-1 ___ _ __ x..(l)]  # no need dummy here
 
         dp[0] = A[0]+0  # reachable index (absolute index)
-        ___ i __ xrange(1, l):
+        ___ i __ x..(1, l):
             # check terminal condition first
             # able to reach the end index
             __ dp[i-1]>=l-1:  # directly reach the end

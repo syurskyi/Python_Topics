@@ -3,7 +3,7 @@ Created on Jun 10, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxDistToClosest  seats):
         """
         :type seats: List[int]

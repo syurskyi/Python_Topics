@@ -4,7 +4,7 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxSubArrayLen  nums, k):
         hashmap    # dict
         sumVal = 0

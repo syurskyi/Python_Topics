@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ minCost  costs):
     """
     :type costs: List[List[int]]

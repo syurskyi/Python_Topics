@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wiggleMaxLength  nums):
         __ n.. nums: r.. 0
         maxLen = 1

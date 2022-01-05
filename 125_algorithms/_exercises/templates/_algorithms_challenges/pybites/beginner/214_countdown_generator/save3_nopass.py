@@ -6,4 +6,4 @@ ___ countdown
             y.. t
             t -= 1
         ______ StopIteration:
-            break
+            _____

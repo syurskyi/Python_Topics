@@ -4,7 +4,7 @@ Created on Mar 27, 2017
 @author: MT
 '''
 
-c_ HitCounter(object):
+c_ HitCounter(o..):
     ___ - ):
         hitCount = [0]*300
         timestampes = [0]*300
@@ -24,7 +24,7 @@ c_ HitCounter(object):
                 count += hitCount[i]
         r.. count
 
-c_ HitCounterOwn(object):
+c_ HitCounterOwn(o..):
     ___ - ):
         queue    # list
     

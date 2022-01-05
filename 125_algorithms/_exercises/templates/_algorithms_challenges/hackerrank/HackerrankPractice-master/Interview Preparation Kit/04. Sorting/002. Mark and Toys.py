@@ -10,7 +10,7 @@ total_sum = 0
 ___ i __ prices:
     total_sum += i
     __ total_sum > k:
-        break
+        _____
     ____:
         count += 1
 print(count)

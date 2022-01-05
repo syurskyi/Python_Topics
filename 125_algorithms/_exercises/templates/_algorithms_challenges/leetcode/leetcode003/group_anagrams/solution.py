@@ -15,7 +15,7 @@ All inputs will be in lower-case.
 
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ groupAnagrams  strs):
         """
         :type strs: List[str]

@@ -12,7 +12,7 @@ Examples:
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ addOperators  num, target):
         """
         Adapted from https://leetcode.com/discuss/58614/java-standard-backtrace-ac-solutoin-short-and-clear
@@ -34,7 +34,7 @@ c_ Solution(object):
             __ cur_val __ target:
                 ret.a..(cur_str)
         ____:
-            ___ i __ xrange(pos, l..(num)):
+            ___ i __ x..(pos, l..(num)):
                 __ i != pos a.. num[pos] __ "0":
                     _____
                 nxt_val = i..(num[pos:i+1])

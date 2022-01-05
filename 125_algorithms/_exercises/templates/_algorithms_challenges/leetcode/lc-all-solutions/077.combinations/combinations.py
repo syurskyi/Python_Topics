@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ combine  n, k):
     __ k __ 1:
       r.. [[i] ___ i __ r..(1, n + 1)]

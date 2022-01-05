@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ Stack(object):
+c_ Stack(o..):
   ___ - ):
     """
     initialize your data structure here.

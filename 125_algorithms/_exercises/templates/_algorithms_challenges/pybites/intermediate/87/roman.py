@@ -17,7 +17,7 @@ ___ romanize(decimal_number):
     ___
         numeral = numeral_lookup[decimal_number]
         r.. numeral
-    ______ Exception:
+    ______ E..:
         p..
 
     roman_numeral = ""
@@ -32,7 +32,7 @@ ___ romanize(decimal_number):
                 __ key > 4 a.. decimal_number % key __ 0:
                     roman_numeral += numeral_lookup[decimal_number]
                     decimal_number = 0
-                    break
+                    _____
                 ____:
                     frequency = decimal_number / key
                     remainder = decimal_number % key
@@ -45,7 +45,7 @@ ___ romanize(decimal_number):
                         ____:
                             roman_numeral += numeral_lookup[key]
                         decimal_number = remainder
-                        break
+                        _____
                         
         __ decimal_number > 0 a.. decimal_number <= 3:
             roman_numeral += remainder * numeral_lookup[1]

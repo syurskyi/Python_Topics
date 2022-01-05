@@ -43,7 +43,7 @@ c_ Color:
         hex = '#%02x%02x%02x' % rgb_value
         r.. hex
 
-    ___ __repr__
+    ___  -r
         """Returns the repl of the object"""
         r.. "%s(%r)"%(__class__.__name__, color)
 

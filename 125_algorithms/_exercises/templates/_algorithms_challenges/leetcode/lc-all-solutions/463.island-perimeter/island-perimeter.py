@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ islandPerimeter  grid):
     """
     :type grid: List[List[int]]

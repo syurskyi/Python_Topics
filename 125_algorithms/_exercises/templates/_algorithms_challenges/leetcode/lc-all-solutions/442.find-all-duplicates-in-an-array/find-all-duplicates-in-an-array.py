@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findDuplicates  nums):
     ans    # list
     ___ i __ r..(0, l..(nums)):

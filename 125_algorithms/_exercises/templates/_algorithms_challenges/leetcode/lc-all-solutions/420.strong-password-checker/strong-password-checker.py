@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ strongPasswordChecker  s):
     """
     :type s: str
@@ -9,7 +9,7 @@ c_ Solution(object):
       complexBal -= 1
     __ any(c __ s__.uppercase ___ c __ s):
       complexBal -= 1
-    __ any(c.isdigit() ___ c __ s):
+    __ any(c.i.. ___ c __ s):
       complexBal -= 1
 
     one = 0

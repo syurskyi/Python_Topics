@@ -5,7 +5,7 @@ Returns the index of the first occurrence of needle in haystack, or -1 if
 needle is not part of haystack.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ strStr  haystack, needle):
         """
         :type haystack: str
@@ -19,7 +19,7 @@ c_ Solution(object):
             ___ k __ r..(m):
                 __ haystack[i + k] != needle[k]:
                     matched = F..
-                    break
+                    _____
             __ matched:
                 r.. i
         r.. -1

@@ -4,12 +4,12 @@ Created on Feb 21, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-c_ ListNode(object):
+c_ ListNode(o..):
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ splitListToParts  root, k):
         """
         :type root: ListNode

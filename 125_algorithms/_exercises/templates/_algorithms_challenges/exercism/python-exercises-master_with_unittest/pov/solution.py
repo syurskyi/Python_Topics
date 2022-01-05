@@ -1,7 +1,7 @@
 ____ json _______ dumps
 
 
-c_ Tree(object):
+c_ Tree(o..):
     ___ - , label, children=[]):
         label = label
         children = children
@@ -37,7 +37,7 @@ c_ Tree(object):
         ___ child __ l..(tree.children):
             tree.children.remove(child)
             __ child.label __ node:
-                break
+                _____
             tree.children.a..(child.remove(node))
         r.. tree
 
@@ -62,7 +62,7 @@ c_ Tree(object):
         w.... path[-1] != to_node:
             ___
                 tree = stack.pop()
-            ______ IndexError:
+            ______ I..
                 r.. ValueError("No path found")
             __ to_node __ tree:
                 path.a..(tree.label)

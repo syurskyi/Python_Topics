@@ -6,7 +6,7 @@ Note: The numbers can be arbitrarily large and are non-negative.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ multiply  num1, num2):
         """
         :type num1: str

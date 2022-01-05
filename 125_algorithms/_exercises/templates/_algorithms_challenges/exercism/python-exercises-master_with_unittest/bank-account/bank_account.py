@@ -1,4 +1,4 @@
-c_ BankAccount(object):
+c_ BankAccount(o..):
     ___ - ):
         p..
 

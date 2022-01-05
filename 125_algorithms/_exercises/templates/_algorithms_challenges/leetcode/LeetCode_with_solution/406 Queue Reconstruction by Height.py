@@ -19,7 +19,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Node(object):
+c_ Node(o..):
     ___ - , lo, hi, cnt):
         lo = lo
         hi = hi
@@ -28,11 +28,11 @@ c_ Node(object):
         left = N..
         right = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr("[%d,%d)" % (lo, hi))
 
 
-c_ SegmentTree(object):
+c_ SegmentTree(o..):
     """empty space"""
 
     ___ - ):
@@ -62,7 +62,7 @@ c_ SegmentTree(object):
                                     sz-root.left.cnt)
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reconstructQueue  A):
         """
         :type A: List[List[int]]

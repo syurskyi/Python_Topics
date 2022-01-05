@@ -3,7 +3,7 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ containVirus  grid):
         """
         :type grid: List[List[int]]

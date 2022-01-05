@@ -3,7 +3,7 @@ Created on May 5, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isMatch  s, p):
         """
         :type s: str

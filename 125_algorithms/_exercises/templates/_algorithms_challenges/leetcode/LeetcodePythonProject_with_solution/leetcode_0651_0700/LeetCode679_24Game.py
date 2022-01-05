@@ -3,7 +3,7 @@ Created on Oct 19, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ judgePoint24  nums):
         """
         :type nums: List[int]

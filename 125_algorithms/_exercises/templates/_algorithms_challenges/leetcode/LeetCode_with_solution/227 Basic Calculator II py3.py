@@ -34,7 +34,7 @@ c_ Solution:
         stk    # list
         prev_op = "+"
         ___ i, c __ e..(s):
-            __ c.isdigit
+            __ c.i..
                 operand = operand * 10 + i..(c)
 
             #  i == len(s) - 1
@@ -65,7 +65,7 @@ c_ Solution:
         stk    # list
         prev_op = "+"
         ___ i, c __ e..(s):
-            __ c.isdigit
+            __ c.i..
                 operand = operand * 10 + i..(c)
 
             #  i == len(s) - 1

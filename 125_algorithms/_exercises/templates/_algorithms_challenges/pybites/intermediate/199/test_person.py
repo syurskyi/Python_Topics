@@ -42,40 +42,40 @@ ___ test_string_repr_child(child):
 
 
 ___ test_mro_of_person
-    ... Person.__mro__ __ (Person, object)
+    ... Person.__mro__ __ (Person, o..)
 
 
 ___ test_mro_of_dad
-    ... Father.__mro__ __ (Father, Person, object)
+    ... Father.__mro__ __ (Father, Person, o..)
 
 
 ___ test_mro_of_mom
-    ... Mother.__mro__ __ (Mother, Person, object)
+    ... Mother.__mro__ __ (Mother, Person, o..)
 
 
 ___ test_mro_of_child
-    ... Child.__mro__ __ (Child, Father, Mother, Person, object)
+    ... Child.__mro__ __ (Child, Father, Mother, Person, o..)
 
 
 ___ test_subclass_person
-    ... issubclass(Person, object)
+    ... issubclass(Person, o..)
 
 
 ___ test_subclass_dad
     ... issubclass(Father, Person)
-    ... issubclass(Father, object)
+    ... issubclass(Father, o..)
 
 
 ___ test_subclass_mom
     ... issubclass(Mother, Person)
-    ... issubclass(Mother, object)
+    ... issubclass(Mother, o..)
 
 
 ___ test_subclass_child
     ... issubclass(Child, Father)
     ... issubclass(Child, Mother)
     ... issubclass(Child, Person)
-    ... issubclass(Child, object)
+    ... issubclass(Child, o..)
 
 
 ___ test_use_inheritance

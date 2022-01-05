@@ -18,7 +18,7 @@ the h-index.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ hIndex  citations):
         """
         :type citations: List[int]
@@ -34,7 +34,7 @@ c_ Solution(object):
             __ lowest >= count:
                 h = count
             ____:
-                break
+                _____
         r.. h
 
 

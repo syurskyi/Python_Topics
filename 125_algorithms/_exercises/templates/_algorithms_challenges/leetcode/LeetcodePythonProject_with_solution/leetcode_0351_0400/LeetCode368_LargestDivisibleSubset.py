@@ -4,7 +4,7 @@ Created on Mar 28, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ largestDivisibleSubset  nums):
         __ n.. nums: r.. []
         nums.s..()

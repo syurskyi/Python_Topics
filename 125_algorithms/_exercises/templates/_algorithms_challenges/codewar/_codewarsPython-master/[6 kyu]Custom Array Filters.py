@@ -1,4 +1,4 @@
-c_ l..(object):
+c_ l..(o..):
     ___ - , arg):
         arg = [c ___ c __ arg __ isi..(c,i..)]
     ___ even

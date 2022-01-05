@@ -8,7 +8,7 @@ Created on Apr 2, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-c_ NestedInteger(object):
+c_ NestedInteger(o..):
     ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
@@ -53,7 +53,7 @@ c_ NestedInteger(object):
         """
         p..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ deserialize  s):
         __ s[0] __ '[' a.. s[-1] __ ']':
             nestedInt = NestedInteger()

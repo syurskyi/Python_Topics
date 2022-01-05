@@ -27,8 +27,8 @@ ___ add_todo(delay_time: s.., task: s..,
 
     days = seconds = minutes = hours = 0 
     ___ value __ values:
-        v = i..(value) __ value[-1].isdigit() ____ i..(value[:-1])
-        __ value[-1].isdigit() o. value[-1] __ 's':
+        v = i..(value) __ value[-1].i.. ____ i..(value[:-1])
+        __ value[-1].i.. o. value[-1] __ 's':
             seconds = v
         ____ value[-1] __ 'd':
             days = v

@@ -3,7 +3,7 @@ Created on Apr 24, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxIncreaseKeepingSkyline  grid):
         """
         :type grid: List[List[int]]

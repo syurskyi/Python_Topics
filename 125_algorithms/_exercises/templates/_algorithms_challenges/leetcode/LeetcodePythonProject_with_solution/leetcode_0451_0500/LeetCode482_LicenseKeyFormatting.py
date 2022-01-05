@@ -4,7 +4,7 @@ Created on May 3, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ licenseKeyFormatting  S, K):
         """
         :type S: str

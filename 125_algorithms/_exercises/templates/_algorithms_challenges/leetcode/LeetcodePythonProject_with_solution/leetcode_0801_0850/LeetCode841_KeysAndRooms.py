@@ -3,7 +3,7 @@ Created on Jan 30, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ canVisitAllRooms  rooms):
         """
         :type rooms: List[List[int]]

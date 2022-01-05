@@ -9,7 +9,7 @@ initialized in nums1 and nums2 are m and n respectively.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ merge  nums1, m, nums2, n):
         """
         :type nums1: List[int]
@@ -33,5 +33,5 @@ c_ Solution(object):
                 nums1[k] = nums2[j]
                 j -= 1
             ____:
-                break
+                _____
             k -= 1

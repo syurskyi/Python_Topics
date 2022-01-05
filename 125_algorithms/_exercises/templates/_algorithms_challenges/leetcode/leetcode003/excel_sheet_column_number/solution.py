@@ -17,7 +17,7 @@ For example:
     BA -> 52 + 1 = 53
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ titleToNumber  s):
         """
         :type s: str

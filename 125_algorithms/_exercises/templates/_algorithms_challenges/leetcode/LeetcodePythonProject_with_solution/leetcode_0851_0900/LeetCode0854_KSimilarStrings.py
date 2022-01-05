@@ -3,7 +3,7 @@ Created on Sep 11, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ kSimilarity  A, B):
         """
         :type A: str

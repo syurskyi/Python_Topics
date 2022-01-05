@@ -11,7 +11,7 @@ Note: The sequence of integers will be represented as a string.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ countAndSay  n):
         """
         :type n: int

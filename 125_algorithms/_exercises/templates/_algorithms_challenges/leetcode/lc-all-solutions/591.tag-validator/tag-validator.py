@@ -1,7 +1,7 @@
 _______ s__
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ isValid  code):
     """
     :type code: str
@@ -11,7 +11,7 @@ c_ Solution(object):
     ___ getTokenStartsAt(start):
       ___ i __ r..(start, l..(code)):
         __ code[i] __ ">":
-          break
+          _____
       r.. code[start:i + 1]
 
     ___ isTagsMatched(left, right):

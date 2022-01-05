@@ -4,7 +4,7 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ validTree  n, edges):
         roots = [-1]*n
         ___ e __ edges:

@@ -5,7 +5,7 @@
 ____ c.. _______ d..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ - ):
     rBuf = d..([])
 
@@ -25,5 +25,5 @@ c_ Solution(object):
         buf[cnt] = rBuf.popleft()
         cnt += 1
       __ r __ 0:
-        break
+        _____
     r.. cnt

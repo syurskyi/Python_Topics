@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ matrixReshape  nums, r, c):
     """
     :type nums: List[List[int]]

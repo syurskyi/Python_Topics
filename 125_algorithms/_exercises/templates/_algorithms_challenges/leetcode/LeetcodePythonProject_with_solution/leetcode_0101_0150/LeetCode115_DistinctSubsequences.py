@@ -4,7 +4,7 @@ Created on Feb 3, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numDistinct  s, t):
         """
         :type s: str

@@ -15,7 +15,7 @@ Note:
 Could you optimize your algorithm to use only O(k) extra space?
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getRow  rowIndex):
         """
         :type rowIndex: int

@@ -46,7 +46,7 @@ c_ Solution:
 
         cur_a = headA
         cur_b = headB
-        ___ i __ xrange(l_b-l_a):
+        ___ i __ x..(l_b-l_a):
             cur_b = cur_b.next
 
         w.... cur_a != cur_b:

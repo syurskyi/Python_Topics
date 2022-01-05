@@ -4,7 +4,7 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minDistance  word1, word2):
         """
         :type word1: str

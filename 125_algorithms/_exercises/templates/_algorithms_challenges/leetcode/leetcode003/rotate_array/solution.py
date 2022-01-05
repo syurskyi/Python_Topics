@@ -9,7 +9,7 @@ Try to come up as many solutions as you can, there are at least 3 different
 ways to solve this problem.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rotate  nums, k):
         """
         :type nums: List[int]

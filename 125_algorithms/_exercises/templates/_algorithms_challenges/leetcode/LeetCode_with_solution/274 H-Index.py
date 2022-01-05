@@ -14,7 +14,7 @@ Note: If there are several possible values for h, the maximum one is taken as th
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ hIndex  A):
         """
         Determine the range of output (i.e. h-index):
@@ -28,15 +28,15 @@ c_ Solution(object):
         :rtype: int
         """
         n = l..(A)
-        cnt = [0 ___ _ __ xrange(n+1)]
+        cnt = [0 ___ _ __ x..(n+1)]
         ___ e __ A:
             __ e >= n:  # chunk
                 cnt[n] += 1
             ____:
                 cnt[e] += 1
 
-        F = [0 ___ _ __ xrange(n+2)]
-        ___ i __ xrange(n, -1, -1):
+        F = [0 ___ _ __ x..(n+2)]
+        ___ i __ x..(n, -1, -1):
             F[i] += F[i+1] + cnt[i]
             __ F[i] >= i:
                 r.. i
@@ -51,7 +51,7 @@ c_ Solution(object):
         """
         n = l..(citations)
         citations.s..()
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             __ citations[i] >= n-i:
                 r.. n-i
 
@@ -66,11 +66,11 @@ c_ Solution(object):
         citations.s..(r.._T..
         citations.a..(0)
         h = 0
-        ___ i __ xrange(l..(citations)-1):
+        ___ i __ x..(l..(citations)-1):
             __ citations[i] >= i+1 >= citations[i+1]:
                 h = i+1
             ____ h:
-                break
+                _____
 
         r.. h
 

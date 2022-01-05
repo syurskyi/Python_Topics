@@ -3,7 +3,7 @@ Created on Jan 31, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestWord  words):
         """
         :type words: List[str]

@@ -3,7 +3,7 @@ Created on Oct 3, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxA  N):
         """
         :type N: int

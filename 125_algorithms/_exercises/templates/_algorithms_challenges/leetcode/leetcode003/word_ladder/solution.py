@@ -19,7 +19,7 @@ All words have the same length.
 All words contain only lowercase alphabetic characters.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ ladderLength  beginWord, endWord, wordDict):
         """
         :type beginWord: str

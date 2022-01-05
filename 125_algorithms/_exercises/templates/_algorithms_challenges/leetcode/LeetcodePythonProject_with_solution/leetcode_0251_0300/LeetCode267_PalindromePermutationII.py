@@ -4,7 +4,7 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ generatePalindromes  s):
         """
         :type s: str

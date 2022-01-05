@@ -7,14 +7,14 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ BSTInfo(object):
+c_ BSTInfo(o..):
     ___ - , sz, lo, hi):
         sz = sz
         lo = lo
@@ -25,7 +25,7 @@ MAX = sys.maxint
 MIN = -MAX - 1
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         gmax = 0
 
@@ -52,7 +52,7 @@ c_ Solution(object):
         r.. BSTInfo(sz, m..(root.val, left.lo), m..(root.val, right.hi))
 
 
-c_ SolutionError(object):
+c_ SolutionError(o..):
     ___ - ):
         gmax = 0
 

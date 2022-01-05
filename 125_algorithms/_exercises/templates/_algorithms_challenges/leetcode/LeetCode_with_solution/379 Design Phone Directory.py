@@ -8,7 +8,7 @@ release: Recycle or release a number.
 __author__ = 'Daniel'
 
 
-c_ PhoneDirectory(object):
+c_ PhoneDirectory(o..):
     ___ - , maxNumbers):
         """
         Pool of numbers

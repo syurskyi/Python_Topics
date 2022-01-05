@@ -7,14 +7,14 @@ every node never differ by more than 1.
 __author__ = 'Danyang'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         depth_bottom    # dict
 
@@ -47,7 +47,7 @@ c_ Solution(object):
         r.. ret
 
 
-c_ SolutionSlow(object):
+c_ SolutionSlow(o..):
     ___ isBalanced  root):
         """
         pre-order traversal

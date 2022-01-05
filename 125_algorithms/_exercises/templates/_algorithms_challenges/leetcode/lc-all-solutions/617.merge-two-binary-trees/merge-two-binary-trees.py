@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ mergeTrees  t1, t2):
     """
     :type t1: TreeNode

@@ -37,7 +37,7 @@ c_ Solution:
         :rtype: list[int]
         """
         V    # dict
-        ___ i __ xrange(numCourses):
+        ___ i __ x..(numCourses):
             V[i]    # list
 
         ___ edge __ prerequisites:
@@ -55,7 +55,7 @@ c_ Solution:
                 __ n.. dfs(V, k, visited, marked, ret):
                     r.. []
 
-        ret.reverse()
+        ret.r..
         r.. ret
 
     ___ dfs  V, k, visited, marked, ret):

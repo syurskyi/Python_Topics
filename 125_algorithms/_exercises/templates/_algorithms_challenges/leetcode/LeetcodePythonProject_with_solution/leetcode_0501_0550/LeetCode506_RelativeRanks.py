@@ -4,7 +4,7 @@ Created on May 11, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findRelativeRanks  nums):
         """
         :type nums: List[int]

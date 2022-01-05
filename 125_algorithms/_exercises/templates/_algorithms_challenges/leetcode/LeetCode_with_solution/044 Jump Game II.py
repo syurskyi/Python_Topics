@@ -34,7 +34,7 @@ c_ Solution:
             ___ ind __ current_level:
                 __ ind>=length-1:
                     r.. counter
-                ___ j __ xrange(ind+1, ind+A[ind]+1):
+                ___ j __ x..(ind+1, ind+A[ind]+1):
                     __ j n.. __ current_level:  # avoid duplicate
                         q.a..(j)
             counter += 1
@@ -57,7 +57,7 @@ c_ Solution:
         gmax = 0
         w.... end<length:  # when end==length, it has already reached the last item
             __ n.. start<end: r.. 0  # avoid dead loop
-            ___ i __ xrange(start, end):
+            ___ i __ x..(start, end):
                 gmax = m..(gmax, A[i]+i)
 
             counter += 1

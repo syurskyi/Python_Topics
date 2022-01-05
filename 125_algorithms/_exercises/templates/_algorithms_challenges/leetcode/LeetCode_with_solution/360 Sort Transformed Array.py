@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 _______ bisect
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ sortTransformedArray  nums, a, b, c):
         """
         Key points:

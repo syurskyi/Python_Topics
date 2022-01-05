@@ -4,7 +4,7 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxNumber  nums1, nums2, k):
         len1, len2 = l..(nums1), l..(nums2)
         result    # list

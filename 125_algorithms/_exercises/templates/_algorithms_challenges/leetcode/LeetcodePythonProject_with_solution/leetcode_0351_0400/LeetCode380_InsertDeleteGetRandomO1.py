@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ RandomizedSet(object):
+c_ RandomizedSet(o..):
     ___ - ):
         nums    # list
         pos    # dict

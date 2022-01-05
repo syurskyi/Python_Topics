@@ -3,7 +3,7 @@ Created on Apr 15, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ customSortString  S, T):
         """
         :type S: str

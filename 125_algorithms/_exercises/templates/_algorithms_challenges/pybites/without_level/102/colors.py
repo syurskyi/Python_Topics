@@ -11,7 +11,7 @@ ___ print_colors
         inp = input("Enter a colour:").l..
         __ inp __ "quit":
             print("bye")
-            break
+            _____
 
         __ inp n.. __ VALID_COLORS:
             print("Not a valid color")

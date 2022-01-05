@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ deleteNode  root, key):
     """
     :type root: TreeNode
@@ -39,5 +39,5 @@ c_ Solution(object):
         p = p.left
       ____:
         delete(p, pre)
-        break
+        _____
     r.. dummy.left

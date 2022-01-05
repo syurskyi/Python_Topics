@@ -21,7 +21,7 @@ _______ r__
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - , nums):
         """
         :type nums: List[int]
@@ -47,7 +47,7 @@ c_ Solution(object):
         r.. ret
 
 
-c_ SolutionError(object):
+c_ SolutionError(o..):
     ___ - , nums):
         """
         Reservoir Sampling

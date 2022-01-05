@@ -31,7 +31,7 @@ c_ Solution:
                 ans[-1].a..(node.val)
 
             __ l..(ans) % 2 __ 0:
-                ans[-1].reverse()
+                ans[-1].r..
 
             queue = _queue
 

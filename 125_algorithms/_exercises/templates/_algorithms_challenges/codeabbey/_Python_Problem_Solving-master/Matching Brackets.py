@@ -28,11 +28,11 @@ ___ i __ r..(i..(input())):
         __ l..(store_str) __ 1:
             print('0',end=' ')
             checker = F..
-            break
+            _____
         ____ l..(store_str) __ 0:
             print('1',end= ' ')
             checker = F..
-            break
+            _____
         ____:
             checker = T..
             p..
@@ -47,9 +47,9 @@ ___ i __ r..(i..(input())):
                     store_str.pop(0)
                     store_str.pop(-1)
                 ____:
-                    break
+                    _____
             ______:
-                break
+                _____
         __ l..(store_str) __ 0:
             print('1',end=' ')
         ____ l..(store_str) __ 1 o. l..(store_str) > 1:

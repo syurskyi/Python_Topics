@@ -3,7 +3,7 @@ Created on Oct 8, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ imageSmoother  M):
         """
         :type M: List[List[int]]

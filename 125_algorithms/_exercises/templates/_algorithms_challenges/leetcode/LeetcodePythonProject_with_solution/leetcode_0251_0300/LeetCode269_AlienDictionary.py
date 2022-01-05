@@ -4,7 +4,7 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ alienOrder  words):
         """
         :type words: List[str]
@@ -27,7 +27,7 @@ c_ Solution(object):
                     __ c2 n.. __ graph[c1]:
                         degree[c2] += 1
                     graph[c1].add(c2)
-                    break
+                    _____
         queue    # list
         ___ c, cnt __ degree.i..:
             __ cnt __ 0:

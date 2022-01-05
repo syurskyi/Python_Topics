@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ myAtoi  s):
     """
     :type str: str
@@ -14,10 +14,10 @@ c_ Solution(object):
       s = s[1:]
     ans = 0
     ___ c __ s:
-      __ c.isdigit
+      __ c.i..
         ans = ans * 10 + i..(c)
       ____:
-        break
+        _____
     ans *= sign
     __ ans > 2147483647:
       r.. 2147483647

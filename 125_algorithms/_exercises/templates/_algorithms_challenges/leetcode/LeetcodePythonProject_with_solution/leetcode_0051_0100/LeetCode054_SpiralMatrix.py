@@ -4,7 +4,7 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ spiralOrder  matrix):
         """
         :type matrix: List[List[int]]
@@ -22,12 +22,12 @@ c_ Solution(object):
             __ top __ down:
                 ___ i __ r..(left, right+1):
                     result.a..(matrix[top][i])
-                break
+                _____
               
             __ left __ right:
                 ___ i __ r..(top, down+1):
                     result.a..(matrix[i][left])
-                break
+                _____
                 
             ___ i __ r..(left, right+1):
                 result.a..(matrix[top][i])

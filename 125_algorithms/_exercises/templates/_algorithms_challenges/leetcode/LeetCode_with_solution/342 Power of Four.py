@@ -11,7 +11,7 @@ Follow up: Could you solve it without loops/recursion?
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isPowerOfFour  num):
         """
         Modular calculation

@@ -1,4 +1,4 @@
-c_ RandomizedSet(object):
+c_ RandomizedSet(o..):
   ___ - ):
     """
     Initialize your data structure here.

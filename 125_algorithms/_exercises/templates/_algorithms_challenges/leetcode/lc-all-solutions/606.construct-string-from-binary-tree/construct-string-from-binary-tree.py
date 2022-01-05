@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ tree2str  t):
     """
     :type t: TreeNode

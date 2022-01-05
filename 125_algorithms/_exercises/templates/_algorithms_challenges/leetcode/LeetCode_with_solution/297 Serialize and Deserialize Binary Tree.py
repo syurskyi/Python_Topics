@@ -24,7 +24,7 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
@@ -50,7 +50,7 @@ c_ Codec:
         ret.a..(s..(root.val))  # add result when enqueue
         w.... q:
             l = l..(q)
-            ___ i __ xrange(l):
+            ___ i __ x..(l):
                 cur = q[i]
                 __ cur.left: q.a..(cur.left)
                 ret.a..(encode(cur.left))

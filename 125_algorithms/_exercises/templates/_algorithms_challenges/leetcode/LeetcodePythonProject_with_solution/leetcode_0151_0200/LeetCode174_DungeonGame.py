@@ -4,7 +4,7 @@ Created on Feb 14, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ calculateMinimumHP  dungeon):
         """
         :type dungeon: List[List[int]]

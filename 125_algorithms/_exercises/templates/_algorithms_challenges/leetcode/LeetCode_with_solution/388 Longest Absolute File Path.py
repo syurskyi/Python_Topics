@@ -39,7 +39,7 @@ Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ lengthLongestPath  input):
         """
         :type input: str

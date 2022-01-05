@@ -4,7 +4,7 @@ Created on Mar 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isReflected  points):
         minVal, maxVal = float('inf'), float('-inf')
         hashmap    # dict

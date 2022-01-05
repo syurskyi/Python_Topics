@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ reverseList  root):
     __ n.. root o. n.. root.next:
       r.. root

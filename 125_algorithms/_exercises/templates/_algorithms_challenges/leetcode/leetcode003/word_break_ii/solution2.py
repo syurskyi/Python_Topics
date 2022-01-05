@@ -11,7 +11,7 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 A solution is ["cats and dog", "cat sand dog"].
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wordBreak  s, wordDict):
         """
         :type s: str

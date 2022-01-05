@@ -1,3 +1,3 @@
-c_ Luhn(object):
+c_ Luhn(o..):
     ___ - ):
         p..

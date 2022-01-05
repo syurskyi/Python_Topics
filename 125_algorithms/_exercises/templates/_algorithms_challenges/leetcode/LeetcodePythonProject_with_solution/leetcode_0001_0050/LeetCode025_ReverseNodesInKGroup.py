@@ -4,12 +4,12 @@ Created on Nov 6, 2017
 @author: MT
 '''
 # Definition for singly-linked list.
-c_ ListNode(object):
+c_ ListNode(o..):
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reverseKGroup  head, k):
         """
         :type head: ListNode

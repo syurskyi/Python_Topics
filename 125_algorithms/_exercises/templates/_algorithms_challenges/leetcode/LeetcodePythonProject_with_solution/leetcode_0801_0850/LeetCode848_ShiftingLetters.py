@@ -3,7 +3,7 @@ Created on Jun 6, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ shiftingLetters  S, shifts):
         """
         :type S: str

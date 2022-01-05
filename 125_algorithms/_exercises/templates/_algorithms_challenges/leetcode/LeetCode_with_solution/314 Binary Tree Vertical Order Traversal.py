@@ -4,14 +4,14 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ verticalOrder  root):
         """
         O(N)
@@ -21,7 +21,7 @@ c_ Solution(object):
         l = leftmost(root, 0)
         r = rightmost(root, 0)
 
-        ret = [[] ___ _ __ xrange(r-l-1)]
+        ret = [[] ___ _ __ x..(r-l-1)]
         bfs(root, -l-1, ret)
         r.. ret
 
@@ -32,7 +32,7 @@ c_ Solution(object):
 
         w.... q:
             l = l..(q)
-            ___ i __ xrange(l):  # avoid non-stop access as in `for elt in q`
+            ___ i __ x..(l):  # avoid non-stop access as in `for elt in q`
                 v, c = q[i]
                 ret[c].a..(v.val)
                 __ v.left: q.a..((v.left, c-1))

@@ -31,7 +31,7 @@ ___ pair_files(filenames):
         __ l..(value) __ 2:
 
             __ '_R1_' __ value[1]:
-                value.reverse()
+                value.r..
             result.a..(t..(value))
 
 

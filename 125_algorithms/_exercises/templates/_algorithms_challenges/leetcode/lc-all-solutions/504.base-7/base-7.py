@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ convertToBase7  num):
     """
     :type num: int

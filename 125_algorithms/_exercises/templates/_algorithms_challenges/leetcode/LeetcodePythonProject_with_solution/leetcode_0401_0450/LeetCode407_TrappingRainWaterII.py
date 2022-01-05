@@ -3,7 +3,7 @@ Created on Apr 10, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ trapRainWater  heightMap):
         _______ heapq
         __ n.. heightMap o. n.. heightMap[0]:

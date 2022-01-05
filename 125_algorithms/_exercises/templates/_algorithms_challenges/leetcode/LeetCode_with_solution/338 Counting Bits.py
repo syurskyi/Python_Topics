@@ -17,7 +17,7 @@ language.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ countBits  num):
         """
         Dynamic programming: make use of what you have produced already

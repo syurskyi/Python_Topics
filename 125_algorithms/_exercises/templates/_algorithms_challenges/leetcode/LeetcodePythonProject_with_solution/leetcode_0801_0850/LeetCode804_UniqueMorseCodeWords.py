@@ -3,7 +3,7 @@ Created on Apr 23, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ uniqueMorseRepresentations  words):
         """
         :type words: List[str]

@@ -35,7 +35,7 @@ ___ encode(record: i..) __ s..:
         characters.a..(character)
 
 
-    characters.reverse()
+    characters.r..
     r.. ''.j..(characters)
 
 

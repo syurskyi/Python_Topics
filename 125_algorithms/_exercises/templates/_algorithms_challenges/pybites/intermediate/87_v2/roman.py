@@ -20,7 +20,7 @@ ___ romanize(decimal_number):
 
         decimal_number %= base_value
         __ decimal_number __ 0:
-            break
+            _____
 
 
     r.. ''.j..(result)

@@ -7,7 +7,7 @@ but "(]" and "([)]" are not.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isValid  s):
         """
         :type s: str

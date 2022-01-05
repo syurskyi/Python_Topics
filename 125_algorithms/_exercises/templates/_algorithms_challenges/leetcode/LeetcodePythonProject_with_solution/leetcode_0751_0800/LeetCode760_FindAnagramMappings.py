@@ -3,7 +3,7 @@ Created on Mar 31, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ anagramMappings  A, B):
         """
         :type A: List[int]

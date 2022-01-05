@@ -1,5 +1,5 @@
 ____ copy _______ d..
-c_ Matrix(object):
+c_ Matrix(o..):
 
     ___ - , values):
         values = values
@@ -69,7 +69,7 @@ c_ Matrix(object):
 
 
 
-    ___ __repr__
+    ___  -r
         r.. f'<Matrix values="{values}">'
 
 

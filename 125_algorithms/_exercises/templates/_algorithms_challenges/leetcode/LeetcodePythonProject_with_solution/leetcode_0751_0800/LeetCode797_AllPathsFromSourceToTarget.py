@@ -3,7 +3,7 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ allPathsSourceTarget  graph):
         """
         :type graph: List[List[int]]

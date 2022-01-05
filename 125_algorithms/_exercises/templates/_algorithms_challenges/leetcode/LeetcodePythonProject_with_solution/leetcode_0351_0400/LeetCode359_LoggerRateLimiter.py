@@ -4,7 +4,7 @@ Created on Mar 27, 2017
 @author: MT
 '''
 
-c_ Logger(object):
+c_ Logger(o..):
 
     ___ - ):
         """

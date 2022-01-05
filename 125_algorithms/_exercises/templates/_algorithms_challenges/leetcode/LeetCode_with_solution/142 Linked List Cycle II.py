@@ -63,7 +63,7 @@ c_ Solution:
             tortoise = tortoise.next
             __ hare__tortoise:
                 flag = T..
-                break
+                _____
 
         __ n.. flag:
             r.. N..
@@ -72,7 +72,7 @@ c_ Solution:
         cur = head
         w.... cur:
             __ cur__tortoise:
-                break
+                _____
             cur = cur.next
             tortoise = tortoise.next
 

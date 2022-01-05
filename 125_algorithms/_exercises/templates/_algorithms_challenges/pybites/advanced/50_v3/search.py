@@ -69,7 +69,7 @@ ___ main
             _____
         __ term __ 'q':
             print('Bye')
-            break
+            _____
         matches = s..([entry ___ entry __ entries __ filter_entries_by_tag(term, entry)])
         ___ m.. __ matches:
             print _*{m...date:10} | {m...title:50} | {m...link}')

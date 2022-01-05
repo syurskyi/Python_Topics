@@ -8,7 +8,7 @@ Given a = 1 and b = 2, return 3.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getSum  a, b):
         """
         circuit full-adder

@@ -18,7 +18,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ increasingTriplet  nums):
         """
         Brute force: O(N^3)

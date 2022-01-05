@@ -3,7 +3,7 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ uniqueLetterString  S):
         """
         :type S: str

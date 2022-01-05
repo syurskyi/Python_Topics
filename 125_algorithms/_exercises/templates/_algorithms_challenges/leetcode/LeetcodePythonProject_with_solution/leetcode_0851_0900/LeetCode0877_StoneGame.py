@@ -3,7 +3,7 @@ Created on Oct 8, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ stoneGame  piles):
         """
         :type piles: List[int]

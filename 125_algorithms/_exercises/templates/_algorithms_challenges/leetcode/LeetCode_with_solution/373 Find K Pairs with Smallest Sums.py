@@ -32,7 +32,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ kSmallestPairs  nums1, nums2, k):
         """
         Maintain a heap of the k pairs
@@ -46,7 +46,7 @@ c_ Solution(object):
         :type k: int
         :rtype: List[List[int]]
         """
-        c_ Node(object):
+        c_ Node(o..):
             ___ - , i, j):
                 i, j = i, j
 
@@ -66,7 +66,7 @@ c_ Solution(object):
             r.. []
 
         h    # list
-        ___ i __ xrange(m..(k, l..(nums1))):
+        ___ i __ x..(m..(k, l..(nums1))):
             heapq.heappush(h, Node(i, 0))
 
         ret    # list
@@ -89,7 +89,7 @@ c_ Solution(object):
         i = 0
         j = 0
         ret    # list
-        ___ _ __ xrange(k):
+        ___ _ __ x..(k):
             __ i < l..(nums1) a.. j < l..(nums2):
                 ret.a..([nums1[i], nums2[j]])
                 __ nums1[i] < nums2[j]:
@@ -97,7 +97,7 @@ c_ Solution(object):
                 ____:
                     i += 1
             ____:
-                break
+                _____
 
         r.. ret
 

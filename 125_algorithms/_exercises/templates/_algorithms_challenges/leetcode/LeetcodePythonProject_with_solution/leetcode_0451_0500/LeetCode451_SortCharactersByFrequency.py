@@ -4,7 +4,7 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ frequencySort  s):
         hashmap    # dict
         ___ c __ s:

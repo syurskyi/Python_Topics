@@ -1,2 +1,2 @@
-c_ InvalidOperationException(Exception):
+c_ InvalidOperationException(E..):
     p..

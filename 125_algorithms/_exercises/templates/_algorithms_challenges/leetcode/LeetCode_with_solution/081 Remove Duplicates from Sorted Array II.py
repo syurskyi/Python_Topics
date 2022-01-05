@@ -30,8 +30,8 @@ c_ Solution:
                         w.... A[closed_ptr]__A[open_ptr]:
                             open_ptr+=1
                         duplicate_count = 0
-                    ______ IndexError:
-                        break
+                    ______ I..
+                        _____
 
                 # one duplicate
                 ____:

@@ -88,11 +88,11 @@ ___ convolution2D(
 
     ___ row __ r..(0,rows,stride):
         __ row + (kernel_size - 1) >= rows:
-            break
+            _____
 
         ___ col __ r..(0,cols,stride):
             __ col + (kernel_size - 1) >= cols:
-                break
+                _____
 
             
             sum_ = 0

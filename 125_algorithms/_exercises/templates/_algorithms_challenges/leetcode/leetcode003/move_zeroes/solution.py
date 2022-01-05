@@ -11,7 +11,7 @@ Minimize the total number of operations.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ moveZeroes  nums):
         """
         :type nums: List[int]

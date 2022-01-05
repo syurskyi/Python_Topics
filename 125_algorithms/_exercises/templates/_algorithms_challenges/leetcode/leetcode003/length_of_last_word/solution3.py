@@ -11,7 +11,7 @@ For example, Given s = "Hello World",
 return 5.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ lengthOfLastWord  s):
         """
         :type s: str
@@ -25,6 +25,6 @@ c_ Solution(object):
                 res += 1
             ____:
                 __ res != 0:
-                    break
+                    _____
             i -= 1
         r.. res

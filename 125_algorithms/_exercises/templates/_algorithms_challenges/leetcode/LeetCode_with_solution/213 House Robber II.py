@@ -26,14 +26,14 @@ c_ Solution:
             r.. s..(nums)
 
         # include first but exclude last
-        F = [0 ___ _ __ xrange(n-1+2)]
-        ___ i __ xrange(2, n+1):
+        F = [0 ___ _ __ x..(n-1+2)]
+        ___ i __ x..(2, n+1):
             F[i] = m..(F[i-1], F[i-2]+nums[i-2])
         ret = F[-1]
 
         # exclude first but include last
-        F = [0 ___ _ __ xrange(n-1+2)]
-        ___ i __ xrange(2, n+1):
+        F = [0 ___ _ __ x..(n-1+2)]
+        ___ i __ x..(2, n+1):
             F[i] = m..(F[i-1], F[i-2]+nums[i-1])
 
         ret = m..(ret, F[-1])

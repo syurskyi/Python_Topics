@@ -4,7 +4,7 @@
 #         self.start = s
 #         self.end = e
 
-c_ SummaryRanges(object):
+c_ SummaryRanges(o..):
 
   ___ - ):
     """

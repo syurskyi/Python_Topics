@@ -61,7 +61,7 @@ c_ User:
     ___ __str__
         r.. f"{first_name.capitalize()} {last_name.capitalize()} ({username})"
 
-    ___ __repr__
+    ___  -r
         """Don't hardcode the class name, hint: use a
            special attribute of self.__class__ ...
         """
@@ -71,4 +71,4 @@ u = User("bob", "belderbos")
 
 print(u.get_full_name)
 print(u.username)
-print(u.__repr__())
+print(u. -r())

@@ -7,7 +7,7 @@ b = "1"
 Return "100".
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ addBinary  a, b):
         """
         :type a: str
@@ -35,7 +35,7 @@ c_ Solution(object):
         ___ i, c __ e..(res):
             __ c != '0':
                 res = res[i:]
-                break
+                _____
         ____:
             res = ['0']
         r.. ''.j..(res)

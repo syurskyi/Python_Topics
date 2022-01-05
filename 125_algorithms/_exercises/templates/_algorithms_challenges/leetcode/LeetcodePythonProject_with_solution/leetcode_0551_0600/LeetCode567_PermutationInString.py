@@ -3,7 +3,7 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ checkInclusion  s1, s2):
         """
         :type s1: str

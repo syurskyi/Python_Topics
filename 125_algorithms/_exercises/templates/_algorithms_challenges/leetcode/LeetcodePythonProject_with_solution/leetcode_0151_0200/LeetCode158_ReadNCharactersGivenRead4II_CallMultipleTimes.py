@@ -9,7 +9,7 @@ Created on May 23, 2018
 ___ read4(buf):
     p..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         queue    # list
     
@@ -29,5 +29,5 @@ c_ Solution(object):
                 buf[idx] = queue.pop(0)
                 idx += 1
             __ curr __ 0:
-                break
+                _____
         r.. idx

@@ -3,7 +3,7 @@ Created on Oct 22, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ possibleBipartition  N, dislikes):
         """
         :type N: int
@@ -52,11 +52,11 @@ c_ Solution(object):
         ___ num __ g0:
             __ n __ hashmap[num] o. num __ hashmap[n]:
                 dislike0 = T..
-                break
+                _____
         ___ num __ g1:
             __ n __ hashmap[num] o. num __ hashmap[n]:
                 dislike1 = T..
-                break
+                _____
         res = F..
         __ n.. dislike0:
             res = res o. dfs2(g0 + [n], g1, hashmap, n+1, N)

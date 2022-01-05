@@ -20,7 +20,7 @@ ___ i __ r..(0, l..(a)-1):
             #print(a)
     __ swap __ F..:
         #print('im breaking up')
-        break
+        _____
             
 #print(a)
 print(i+1,swap_count)

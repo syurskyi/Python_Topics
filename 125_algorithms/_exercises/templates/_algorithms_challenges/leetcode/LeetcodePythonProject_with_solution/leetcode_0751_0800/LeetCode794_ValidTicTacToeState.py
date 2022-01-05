@@ -3,7 +3,7 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ validTicTacToe  board):
         """
         :type board: List[str]

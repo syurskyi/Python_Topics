@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ Twitter(object):
+c_ Twitter(o..):
 
   ___ - ):
     """

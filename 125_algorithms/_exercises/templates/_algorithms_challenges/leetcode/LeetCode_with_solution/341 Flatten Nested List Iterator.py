@@ -22,7 +22,7 @@ You should not implement it, or speculate about its implementation
 """
 
 
-c_ NestedInteger(object):
+c_ NestedInteger(o..):
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
@@ -47,7 +47,7 @@ c_ NestedInteger(object):
         r.. []
 
 
-c_ NestedIterator(object):
+c_ NestedIterator(o..):
     ___ - , nestedList):
         """
         Initialize your data structure here.
@@ -93,7 +93,7 @@ c_ NestedIterator(object):
 
 
 
-c_ NestedIteratorVerbose(object):
+c_ NestedIteratorVerbose(o..):
     ___ - , nestedList):
         """
         Initialize your data structure here.

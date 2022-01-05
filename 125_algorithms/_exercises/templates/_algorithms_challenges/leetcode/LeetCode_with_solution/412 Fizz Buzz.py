@@ -30,14 +30,14 @@ Return:
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ fizzBuzz  n):
         """
         :type n: int
         :rtype: List[str]
         """
         ret    # list
-        ___ i __ xrange(1, n+1):
+        ___ i __ x..(1, n+1):
             cur = ""
             __ i % 3 __ 0:
                 cur += "Fizz"

@@ -1,4 +1,4 @@
-c_ TrieNode(object):
+c_ TrieNode(o..):
   ___ - , bit_ N..
     isWord = F..
     word = N..
@@ -9,7 +9,7 @@ c_ TrieNode(object):
 count = 0
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findMaximumXOR  nums):
     """
     :type nums: List[int]

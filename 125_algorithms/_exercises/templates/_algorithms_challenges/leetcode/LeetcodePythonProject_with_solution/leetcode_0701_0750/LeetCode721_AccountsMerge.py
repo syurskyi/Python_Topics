@@ -3,7 +3,7 @@ Created on Feb 12, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ accountsMerge  accounts):
         """
         :type accounts: List[List[str]]

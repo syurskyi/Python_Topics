@@ -3,7 +3,7 @@ Created on Oct 3, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ minSteps  n):
         """
         :type n: int
@@ -15,7 +15,7 @@ c_ Solution(object):
             ___ j __ r..(i-1, -1, -1):
                 __ i%j __ 0:
                     dp[i] = dp[j]+i//j
-                    break
+                    _____
         r.. dp[-1]
     
     ___ test

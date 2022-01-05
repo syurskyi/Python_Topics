@@ -3,7 +3,7 @@ Created on Oct 2, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ advantageCount  A, B):
         """
         :type A: List[int]

@@ -3,7 +3,7 @@ Created on Sep 24, 2017
 
 @author: MT
 '''
-c_ LogSystem(object):
+c_ LogSystem(o..):
     ___ - ):
         units = {
             'Year': 4,

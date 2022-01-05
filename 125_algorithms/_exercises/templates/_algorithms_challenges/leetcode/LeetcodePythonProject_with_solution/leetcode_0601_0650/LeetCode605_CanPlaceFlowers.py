@@ -3,7 +3,7 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ canPlaceFlowers  flowerbed, n):
         """
         :type flowerbed: List[int]

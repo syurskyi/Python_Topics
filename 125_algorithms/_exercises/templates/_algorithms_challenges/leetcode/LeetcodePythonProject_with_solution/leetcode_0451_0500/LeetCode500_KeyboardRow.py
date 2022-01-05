@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findWords  words):
         """
         :type words: List[str]
@@ -25,7 +25,7 @@ c_ Solution(object):
                             ind = i
                         ____ i != ind:
                             valid = F..
-                        break
+                        _____
             __ valid:
                 result.a..(word)
         r.. result

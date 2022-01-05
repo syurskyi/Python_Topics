@@ -3,7 +3,7 @@ Created on Sep 13, 2017
 
 @author: MT
 '''
-c_ Excel(object):
+c_ Excel(o..):
 
     ___ - , H, W):
         """
@@ -51,11 +51,11 @@ c_ Excel(object):
         ___ (i0, j0), vals __ hashmap.i..:
             __ i0 __ i a.. j0 __ j:
                 del hashmap[(i, j)]
-                break
+                _____
             ___ i1, j1 __ vals:
                 __ i1 __ i a.. j1 __ j a.. (i, j) __ hashmap:
                     del hashmap[(i, j)]
-                    break
+                    _____
         vals    # list
         sumVal = 0
         ___ s __ strs:

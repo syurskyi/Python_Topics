@@ -16,7 +16,7 @@ use only standard operations of a stack.
 operations will be called on an empty queue).
 """
 
-c_ Queue(object):
+c_ Queue(o..):
     ___ - ):
         """
         initialize your data structure here.

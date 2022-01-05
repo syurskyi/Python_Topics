@@ -11,7 +11,7 @@ You may assume k is always valid, 1 <= k <= array's length
 
 _______ heapq
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findKthLargest  nums, k):
         """
         :type nums: List[int]

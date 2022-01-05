@@ -4,7 +4,7 @@ Created on Apr 3, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ validUtf8  data):
         count = 0
         ___ v __ data:

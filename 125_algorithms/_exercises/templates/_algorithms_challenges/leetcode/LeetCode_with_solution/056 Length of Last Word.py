@@ -25,5 +25,5 @@ c_ Solution:
         ___
             last_word = lst[-1]
             r.. l..(last_word)
-        ______ IndexError:
+        ______ I..
             r.. 0

@@ -7,7 +7,7 @@ the contiguous subarray [2,3] has the largest product = 6
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProduct_oneline  nums):
         r.. m..(reduce(l.... A, n: [m..(A), m..(n, A[1]*n, A[2]*n), m..(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
 
@@ -43,11 +43,11 @@ c_ Solution(object):
             r.. m..(nums)
 
         n = l..(nums)
-        F_pos = [0 ___ _ __ xrange(n+1)]
-        F_neg = [0 ___ _ __ xrange(n+1)]
+        F_pos = [0 ___ _ __ x..(n+1)]
+        F_neg = [0 ___ _ __ x..(n+1)]
 
         maxa = 1
-        ___ i __ xrange(1, n+1):
+        ___ i __ x..(1, n+1):
             v = nums[i-1]
             __ v > 0:
                 F_pos[i] = F_pos[i-1]*v __ F_pos[i-1] != 0 ____ v
@@ -75,9 +75,9 @@ c_ Solution(object):
         __ length__1:
             r.. A[0]
 
-        dp = [-1 ___ _ __ xrange(length+1)]
+        dp = [-1 ___ _ __ x..(length+1)]
         dp[length] = 0 # dummy
-        ___ i __ xrange(length-1, -1, -1):
+        ___ i __ x..(length-1, -1, -1):
             __ A[i]<0:
                 dp[i] = dp[i+1]+1
             ____ A[i]__0:
@@ -123,9 +123,9 @@ c_ Solution(object):
         __ length__1:
             r.. A[0]
 
-        dp = [-1 ___ _ __ xrange(length+1)]
+        dp = [-1 ___ _ __ x..(length+1)]
         dp[length] = 0 # dummy
-        ___ i __ xrange(length-1, -1, -1):
+        ___ i __ x..(length-1, -1, -1):
             __ A[i]<0:
                 dp[i] = dp[i+1]+1
             ____ A[i]__0:

@@ -4,7 +4,7 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ kSmallestPairs  nums1, nums2, k):
         _______ heapq
         heap    # list
@@ -14,7 +14,7 @@ c_ Solution(object):
         result    # list
         ___ _ __ r..(k):
             __ n.. heap:
-                break
+                _____
             _, num1, num2 = heapq.heappop(heap)
             result.a..((num1, num2))
         r.. result

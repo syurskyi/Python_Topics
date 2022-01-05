@@ -22,7 +22,7 @@ to
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ invertTree  root):
         """
         :type root: TreeNode

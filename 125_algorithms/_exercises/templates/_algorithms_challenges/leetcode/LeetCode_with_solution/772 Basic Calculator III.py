@@ -42,7 +42,7 @@ c_ Solution:
             c = s[i]
             __ c __ " ":
                 p..  # not continue since need trigger i += 1
-            ____ c.isdigit
+            ____ c.i..
                 operand = operand * 10 + i..(c)
             ____ c __ ("+", "-", "*", "/", ")", "\0"):   # delimiter
                 __ prev_op __ "+":

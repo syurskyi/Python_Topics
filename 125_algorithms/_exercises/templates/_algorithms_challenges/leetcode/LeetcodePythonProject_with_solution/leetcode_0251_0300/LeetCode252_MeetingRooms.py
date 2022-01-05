@@ -5,12 +5,12 @@ Created on Mar 1, 2017
 '''
 
 # Definition for an interval.
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , s=0, e=0):
         start = s
         end = e
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canAttendMeetings  intervals):
         """
         :type intervals: List[Interval]

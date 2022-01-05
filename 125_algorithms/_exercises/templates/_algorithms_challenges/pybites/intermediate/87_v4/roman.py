@@ -29,7 +29,7 @@ ___ romanutil(n: i.., queue: l..):
             chars = chars + NUMERALS[k] * quotient
             print _*{chars=}')
             queue.a..(chars)
-            break
+            _____
 
     __ remainder __ 0:
         r..

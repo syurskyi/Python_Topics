@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minAbbreviation  target, dictionary):
         """
         :type target: str
@@ -28,7 +28,7 @@ c_ Solution(object):
             r.. [("", 0)]
 
         ret    # list
-        ___ l __ xrange(l..(word)+1):
+        ___ l __ x..(l..(word)+1):
             left_num = s..(l) __ l ____ ""
             left_l = 1 __ left_num != "" ____ 0
             left_l += 1 __ l < l..(word) ____ 0
@@ -56,9 +56,9 @@ c_ Solution(object):
         w = 0
         a = 0
         w.... w < l..(word) a.. a < l..(abbr):
-            __ abbr[a].isdigit() a.. abbr[a] != '0':
+            __ abbr[a].i.. a.. abbr[a] != '0':
                 e = a
-                w.... e < l..(abbr) a.. abbr[e].isdigit e += 1
+                w.... e < l..(abbr) a.. abbr[e].i.. e += 1
                 num = i..(abbr[a:e])
                 a = e
                 w += num

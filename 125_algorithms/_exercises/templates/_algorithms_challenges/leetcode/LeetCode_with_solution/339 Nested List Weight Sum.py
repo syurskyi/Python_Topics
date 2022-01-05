@@ -10,7 +10,7 @@ You should not implement it, or speculate about its implementation
 """
 
 
-c_ NestedInteger(object):
+c_ NestedInteger(o..):
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
@@ -32,7 +32,7 @@ c_ NestedInteger(object):
         """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         s.. = 0
 

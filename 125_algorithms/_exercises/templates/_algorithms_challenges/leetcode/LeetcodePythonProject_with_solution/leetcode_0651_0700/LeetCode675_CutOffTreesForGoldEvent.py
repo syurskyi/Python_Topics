@@ -5,7 +5,7 @@ Created on Oct 16, 2017
 '''
 _______ heapq
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ cutOffTree  forest):
         """
         :type forest: List[List[int]]

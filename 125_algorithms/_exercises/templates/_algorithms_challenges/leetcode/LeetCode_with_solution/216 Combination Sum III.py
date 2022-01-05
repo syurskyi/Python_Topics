@@ -49,7 +49,7 @@ c_ Solution:
         start = 1
         __ cur:
             start = cur[-1] + 1  # unique
-        ___ i __ xrange(start, 10):
+        ___ i __ x..(start, 10):
             cur.a..(i)
             dfs(remain_k - 1, remain_n - i, cur, ret)
             cur.pop()

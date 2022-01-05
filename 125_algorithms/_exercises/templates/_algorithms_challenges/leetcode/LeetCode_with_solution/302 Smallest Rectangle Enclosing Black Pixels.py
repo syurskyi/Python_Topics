@@ -6,7 +6,7 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minArea  image, x, y):
         """
         :type image: List[List[str]]
@@ -16,12 +16,12 @@ c_ Solution(object):
         """
         m, n = l..(image), l..(image[0])
         yaxis = [
-            1 __ any(image[i][j] __ "1" ___ i __ xrange(m)) ____ 0
-            ___ j __ xrange(n)
+            1 __ any(image[i][j] __ "1" ___ i __ x..(m)) ____ 0
+            ___ j __ x..(n)
         ]
         xaxis = [
-            1 __ any(image[i][j] __ "1" ___ j __ xrange(n)) ____ 0
-            ___ i __ xrange(m)
+            1 __ any(image[i][j] __ "1" ___ j __ x..(n)) ____ 0
+            ___ i __ x..(m)
         ]
 
         y_lo = bisect.bisect_left(yaxis, 1, 0, y)

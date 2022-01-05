@@ -1,7 +1,7 @@
 _______ c..
 
 
-c_ Node(object):
+c_ Node(o..):
   ___ - , val):
     val = val
     neighbors    # list
@@ -13,7 +13,7 @@ c_ Node(object):
     r.. neighbors
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ alienOrder  words):
     """
     :type words: List[str]
@@ -55,7 +55,7 @@ c_ Solution(object):
           ____:
             nodeB = graph[b[i]]
           nodeA.connect(nodeB)
-          break
+          _____
         i += 1
       __ i < l..(a) a.. i >= l..(b):
         r.. ""

@@ -3,7 +3,7 @@ Created on May 31, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ subsetsWithDup  nums):
         """
         :type nums: List[int]

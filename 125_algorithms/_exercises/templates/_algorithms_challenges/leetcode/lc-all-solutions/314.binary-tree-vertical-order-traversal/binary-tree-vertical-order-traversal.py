@@ -1,7 +1,7 @@
 ____ c.. _______ defaultdict
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ verticalOrder  root):
     """
     :type root: TreeNode
@@ -22,7 +22,7 @@ c_ Solution(object):
     i = leftMost
     w... T...
       __ n.. res[i]:
-        break
+        _____
       ans.a..([item[0] ___ item __ s..(res[i], key=l.... a: a[1])])
       i += 1
     r.. ans

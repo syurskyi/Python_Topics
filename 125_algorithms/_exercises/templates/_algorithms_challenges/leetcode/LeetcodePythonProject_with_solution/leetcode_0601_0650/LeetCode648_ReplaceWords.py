@@ -3,7 +3,7 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ replaceWords  d.., sentence):
         """
         :type dict: List[str]
@@ -17,7 +17,7 @@ c_ Solution(object):
             ___ s __ d..:
                 __ word[:l..(s)] __ s:
                     resArr.a..(s)
-                    break
+                    _____
             __ i+1 > l..(resArr):
                 resArr.a..(word)
         r.. ' '.j..(resArr)

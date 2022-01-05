@@ -3,7 +3,7 @@ Created on Feb 23, 2017
 
 @author: MT
 '''
-c_ Queue(object):
+c_ Queue(o..):
     ___ - ):
         stack1    # list
         stack2    # list

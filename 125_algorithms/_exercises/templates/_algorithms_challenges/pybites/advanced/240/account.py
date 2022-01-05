@@ -12,7 +12,7 @@ c_ Account:
         amount = amount
         _transactions    # list
 
-    ___ __repr__
+    ___  -r
         r.. 'Account({!r}, {!r})'.f..(owner, amount)
 
     ___ __str__

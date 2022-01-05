@@ -1,4 +1,4 @@
-c_ List(object):
+c_ List(o..):
   @staticmethod
   ___ delete(elem):
     elem.prev.next = elem.next
@@ -30,7 +30,7 @@ c_ List(object):
     head.prev = head.next = head
 
 
-c_ FreqNode(object):
+c_ FreqNode(o..):
   ___ - , freq):
     prev = next = N..
     freq = freq
@@ -45,7 +45,7 @@ c_ FreqNode(object):
     r.. ret
 
 
-c_ Cache(object):
+c_ Cache(o..):
   ___ - , key, val, freqNode):
     prev = next = N..
     freqNode = freqNode
@@ -67,7 +67,7 @@ c_ Cache(object):
       List.delete(freqNode)
 
 
-c_ LFUCache(object):
+c_ LFUCache(o..):
   ___ - , capacity):
     d    # dict
     cap = capacity

@@ -3,7 +3,7 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ slidingPuzzle  board):
         """
         :type board: List[List[int]]

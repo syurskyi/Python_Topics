@@ -21,7 +21,7 @@ ____ c.. _______ defaultdict, d..
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findItinerary  tickets):
         """
         Euler path:

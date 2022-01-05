@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Node(object):
+c_ Node(o..):
     ___ - , key, val):
         val = val
         next = N..
@@ -12,7 +12,7 @@ c_ Node(object):
         freq = 1
         key = key
 
-c_ LFUCache(object):
+c_ LFUCache(o..):
 
     ___ - , capacity):
         """

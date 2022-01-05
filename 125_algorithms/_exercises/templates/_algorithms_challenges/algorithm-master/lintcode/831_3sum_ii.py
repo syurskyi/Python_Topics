@@ -9,7 +9,7 @@ c_ Solution:
 
         ___ a __ r..(n + 1):
             __ a * a > n:
-                break
+                _____
             nums.a..(a * a)
             nums.a..(a * a)
             nums.a..(a * a)

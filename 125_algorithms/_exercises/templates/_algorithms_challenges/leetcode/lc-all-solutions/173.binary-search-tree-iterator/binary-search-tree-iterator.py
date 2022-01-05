@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-c_ BSTIterator(object):
+c_ BSTIterator(o..):
   ___ - , root):
     """
     :type root: TreeNode

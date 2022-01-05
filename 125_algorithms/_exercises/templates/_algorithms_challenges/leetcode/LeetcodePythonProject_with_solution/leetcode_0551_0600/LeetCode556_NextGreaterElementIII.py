@@ -3,7 +3,7 @@ Created on Aug 27, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ nextGreaterElement  n):
         """
         :type n: int

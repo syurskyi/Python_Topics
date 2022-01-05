@@ -3,7 +3,7 @@ Created on Oct 23, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxSumOfThreeSubarrays  nums, k):
         """
         :type nums: List[int]

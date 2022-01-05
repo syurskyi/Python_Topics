@@ -4,13 +4,13 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-c_ TrieNode(object):
+c_ TrieNode(o..):
     ___ - , s = N..):
         c = s
         children    # dict
         isLeaf = F..
 
-c_ Trie(object):
+c_ Trie(o..):
     ___ - ):
         root = TrieNode()
     

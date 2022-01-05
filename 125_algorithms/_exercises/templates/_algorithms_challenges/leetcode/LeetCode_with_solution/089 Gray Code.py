@@ -69,4 +69,4 @@ c_ Solution:
         :param n:
         :return: list of integers (dec_repr)
         """
-        r.. [(x>>1)^x ___ x __ xrange(1<<n)]
+        r.. [(x>>1)^x ___ x __ x..(1<<n)]

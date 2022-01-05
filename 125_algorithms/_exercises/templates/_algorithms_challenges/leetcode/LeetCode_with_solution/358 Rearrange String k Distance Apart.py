@@ -33,7 +33,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Val(object):
+c_ Val(o..):
     ___ - , cnt, val):
         cnt = cnt
         val = val
@@ -45,7 +45,7 @@ c_ Val(object):
         r.. -cmp(cnt, other.cnt)
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rearrangeString  s, k):
         """
         Greedy, largest first, fill k first
@@ -67,7 +67,7 @@ c_ Solution(object):
         ret    # list
         w.... h:
             cur    # list
-            ___ _ __ xrange(k):
+            ___ _ __ x..(k):
                 __ n.. h:
                     r.. "".j..(ret) __ l..(ret) __ l..(s) ____ ""
 

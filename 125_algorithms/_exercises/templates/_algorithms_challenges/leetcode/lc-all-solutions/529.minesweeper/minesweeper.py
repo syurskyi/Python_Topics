@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ updateBoard  board, click):
     """
     :type board: List[List[str]]
@@ -17,7 +17,7 @@ c_ Solution(object):
         _____
       __ board[i][j] __ "M":
         board[i][j] = "X"
-        break
+        _____
       mineCnt = 0
       nbrs    # list
       ___ di, dj __ directions:

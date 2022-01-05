@@ -5,7 +5,7 @@ Smaller than the target.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ threeSumSmaller  nums, target):
         """
 
@@ -16,7 +16,7 @@ c_ Solution(object):
         nums.s..()
         cnt = 0
         n = l..(nums)
-        ___ i __ xrange(n-2):
+        ___ i __ x..(n-2):
             l = i+1
             h = n-1
             w.... l < h:

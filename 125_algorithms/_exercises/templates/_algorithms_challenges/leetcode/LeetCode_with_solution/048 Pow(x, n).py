@@ -60,7 +60,7 @@ c_ Solution:
                 r.. -pow(-x, n)
 
         product = 1.0
-        ___ i __ xrange(abs(n)):
+        ___ i __ x..(abs(n)):
             pre = product
             __ n>0:
                 product *= x
@@ -68,7 +68,7 @@ c_ Solution:
                 product /= x
 
             __ abs(product - pre)<1e-5:
-                break
+                _____
 
         r.. product
 

@@ -1,7 +1,7 @@
 _______ __
 
 
-c_ DomainException(Exception):
+c_ DomainException(E..):
     """Raised when an invalid is created."""
 
 

@@ -3,7 +3,7 @@ Created on Jan 25, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maximalRectangle  matrix):
         """
         :type matrix: List[List[str]]

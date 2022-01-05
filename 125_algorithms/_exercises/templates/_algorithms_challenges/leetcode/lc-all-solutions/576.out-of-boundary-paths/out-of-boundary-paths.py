@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findPaths  m, n, N, x, y):
     dp = [[[0] * n ___ _ __ r..(m)] ___ _ __ r..(N + 1)]
     dp[0][x][y] = 1

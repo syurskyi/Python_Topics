@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   # normal way
   ___ _isPalindrome  x):
     """

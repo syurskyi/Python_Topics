@@ -42,7 +42,7 @@ c_ Solution:
         length = l..(gas)
 
         # gas difference
-        diff = [gas[i]-cost[i] ___ i __ xrange(length)]
+        diff = [gas[i]-cost[i] ___ i __ x..(length)]
 
         # find whether can cover one cycle
         # starting from arbitrary point

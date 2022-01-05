@@ -3,7 +3,7 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ robotSim  commands, obstacles):
         """
         :type commands: List[int]

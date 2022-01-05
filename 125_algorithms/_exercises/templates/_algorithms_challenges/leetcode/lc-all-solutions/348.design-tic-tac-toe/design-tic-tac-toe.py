@@ -1,4 +1,4 @@
-c_ TicTacToe(object):
+c_ TicTacToe(o..):
   ___ - , n):
     rows = [0] * n
     cols = [0] * n

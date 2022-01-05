@@ -4,7 +4,7 @@ Created on Feb 27, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ diffWaysToCompute  s):
         """
         :type s: str

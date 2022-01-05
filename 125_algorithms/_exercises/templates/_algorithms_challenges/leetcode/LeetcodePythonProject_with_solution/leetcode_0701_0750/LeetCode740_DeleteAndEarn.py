@@ -3,7 +3,7 @@ Created on Mar 14, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ deleteAndEarn  nums):
         """
         :type nums: List[int]

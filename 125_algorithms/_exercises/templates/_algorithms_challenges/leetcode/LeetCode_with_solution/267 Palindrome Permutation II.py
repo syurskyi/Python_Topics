@@ -8,7 +8,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ generatePalindromes  s):
         """
         :type s: str
@@ -42,7 +42,7 @@ c_ Solution(object):
 
         ___ k __ count_map.k..:
             __ k != pi a.. count_map[k] > 0:
-                ___ i __ xrange(1, count_map[k]/2+1):  # jump the parent
+                ___ i __ x..(1, count_map[k]/2+1):  # jump the parent
                     count_map[k] -= i*2
                     grow(s, count_map, k, k*i+cur+k*i, ret)
                     count_map[k] += i*2

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ distributeCandies  candies):
     """
     :type candies: List[int]

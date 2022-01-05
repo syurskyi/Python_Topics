@@ -12,7 +12,7 @@ c_ Solution:
             r.. 0
 
         size = get_lics_size(A)
-        A.reverse()
+        A.r..
         _size = get_lics_size(A)
 
         r.. m..(size, _size)
@@ -60,7 +60,7 @@ c_ Solution:
             r.. 0
 
         size = get_lics_size(A)
-        A.reverse()
+        A.r..
         _size = get_lics_size(A)
 
         r.. m..(size, _size)

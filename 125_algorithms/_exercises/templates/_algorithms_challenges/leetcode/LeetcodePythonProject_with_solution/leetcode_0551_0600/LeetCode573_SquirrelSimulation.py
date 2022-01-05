@@ -3,7 +3,7 @@ Created on Sep 3, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     # Don't need extra space if using maxDiff
     ___ minDistance  height, width, tree, squirrel, nuts):
         """

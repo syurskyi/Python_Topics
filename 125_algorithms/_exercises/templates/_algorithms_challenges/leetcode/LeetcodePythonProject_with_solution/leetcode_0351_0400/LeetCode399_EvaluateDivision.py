@@ -4,7 +4,7 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ calcEquation  equations, values, queries):
         """
         :type equations: List[List[str]]

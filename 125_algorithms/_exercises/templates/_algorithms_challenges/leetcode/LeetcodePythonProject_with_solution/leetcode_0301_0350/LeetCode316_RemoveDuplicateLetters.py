@@ -4,7 +4,7 @@ Created on Mar 16, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ removeDuplicateLetters  s):
         __ n.. s: r.. ''
         cnt = [0]*26
@@ -16,7 +16,7 @@ c_ Solution(object):
                 pos = i
             cnt[o..(c)-o..('a')] -= 1
             __ cnt[o..(c)-o..('a')] __ 0:
-                break
+                _____
         r.. s[pos]+removeDuplicateLetters(s[pos+1:].r..(s[pos], ''))
     
     ___ removeDuplicateLetters_another  s):
@@ -35,7 +35,7 @@ c_ Solution(object):
                     begin = j+1
             res[i] = minChar
             __ i __ length-1:
-                break
+                _____
             del lastPosMap[minChar]
             end = m..(lastPosMap.values())
         r.. ''.j..(res)

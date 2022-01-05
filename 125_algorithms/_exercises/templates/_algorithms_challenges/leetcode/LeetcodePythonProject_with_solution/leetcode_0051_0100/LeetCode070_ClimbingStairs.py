@@ -3,7 +3,7 @@ Created on Jun 3, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ climbStairs  n):
         """
         :type n: int

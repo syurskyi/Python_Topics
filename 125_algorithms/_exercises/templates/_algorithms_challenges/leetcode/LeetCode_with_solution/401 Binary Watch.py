@@ -23,7 +23,7 @@ The minute must be consist of two digits and may contain a leading zero, for exa
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         hours = (1, 2, 4, 8)
         minutes = (1, 2, 4, 8, 16, 32)
@@ -36,7 +36,7 @@ c_ Solution(object):
         :rtype: List[str]
         """
         ___ gen
-            ___ hour_n __ xrange(m..(num, 4)+1):
+            ___ hour_n __ x..(m..(num, 4)+1):
                 ___ hour __ hour(hour_n):
                     ___ minute __ minute(num-hour_n):
                         hour = s..(hour)
@@ -52,14 +52,14 @@ c_ Solution(object):
         __ n __ 0:
             y.. 0
 
-        ___ i __ xrange(head, l..(lst)):
+        ___ i __ x..(head, l..(lst)):
             ___ rest __ gen(n-1, i+1, lst, func):
                 __ rest __ n.. N..
                     ret = lst[i]+rest
                     __ func(ret):
                         y.. ret
                     ____:
-                        break
+                        _____
 
     ___ hour  n):
         r.. gen(n, 0, hours, l.... x: x < 12)

@@ -19,7 +19,7 @@ Return 6.
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxPathSum  root):
         """
         :type root: TreeNode

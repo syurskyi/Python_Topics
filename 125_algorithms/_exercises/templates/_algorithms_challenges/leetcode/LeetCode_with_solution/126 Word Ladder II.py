@@ -28,7 +28,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
             pre = pre  # node
             d.. = d..
 
-        ___ __repr__
+        ___  -r
             r.. repr(s__)
 
     ___ findLadders  start, end, d..):
@@ -41,22 +41,22 @@ c_ Solution_MLE:  # Memory Limit Exceeds
         """
 
         result    # list
-        lower_cases = [chr(i+o..('a')) ___ i __ xrange(26)]
+        lower_cases = [chr(i+o..('a')) ___ i __ x..(26)]
 
         start_node = Node(start, N.., d..-{start}|{end})
         queue = [start_node]
         w.... queue:
             length_0 = l..(queue)
-            ___ i __ xrange(length_0):  #O(V)
+            ___ i __ x..(length_0):  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
-            ___ i __ xrange(length_0):
+            ___ i __ x..(length_0):
                 current = queue[i].s__
-                ___ pos __ xrange(l..(current)):
+                ___ pos __ x..(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char
@@ -82,7 +82,7 @@ c_ Solution_TLE:
             s__ = s__
             pre = pre  # node
 
-        ___ __repr__
+        ___  -r
             r.. repr(s__)
 
     ___ findLadders  start, end, d..):
@@ -95,22 +95,22 @@ c_ Solution_TLE:
         """
         d.. |= {end}
         result    # list
-        lower_cases = [chr(i+o..('a')) ___ i __ xrange(26)]
+        lower_cases = [chr(i+o..('a')) ___ i __ x..(26)]
 
         start_node = Node(start, N..)
         queue = [start_node]
         w.... queue:
             length_0 = l..(queue)
-            ___ i __ xrange(length_0):  #O(V)
+            ___ i __ x..(length_0):  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
-            ___ i __ xrange(length_0):
+            ___ i __ x..(length_0):
                 current = queue[i].s__
-                ___ pos __ xrange(l..(current)):
+                ___ pos __ x..(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char
@@ -144,7 +144,7 @@ c_ Node:
         pre = pre  # node
         # self.pres = self.pre.pres|{string} if self.pre else {string}  # accelerate speed
 
-    ___ __repr__
+    ___  -r
         r.. repr(s__)
 
 c_ Solution_TLE2:
@@ -172,7 +172,7 @@ c_ Solution_TLE2:
         queue = [Node(start, N..)]
         w.... queue:
             length_0 = l..(queue)
-            ___ i __ xrange(length_0):  #O(V)
+            ___ i __ x..(length_0):  #O(V)
                 current = queue[i]
 
                 # greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
@@ -186,9 +186,9 @@ c_ Solution_TLE2:
             __ result:  # shortest, thus pruning
                 r.. result
 
-            ___ i __ xrange(length_0):
+            ___ i __ x..(length_0):
                 current = queue[i].s__
-                ___ pos __ xrange(l..(current)):
+                ___ pos __ x..(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char

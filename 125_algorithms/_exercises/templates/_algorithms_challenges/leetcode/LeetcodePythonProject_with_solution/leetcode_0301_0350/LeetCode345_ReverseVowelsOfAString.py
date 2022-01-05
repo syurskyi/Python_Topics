@@ -4,7 +4,7 @@ Created on Mar 21, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reverseVowels  s):
         vowels = set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
         __ n.. s: r.. s

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   # just guess the answer by binary search
   # note that we can check if there is a subarray that has avg. sum >= a certain value in linear time
   # then overall time complexity is O(nlog(max(nums) - min(nums)))

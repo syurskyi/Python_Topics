@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ isStrobogrammatic  num):
     """
     :type num: str

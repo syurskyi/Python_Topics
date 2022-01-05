@@ -4,13 +4,13 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         """
         Skip matrix
         Encode rule for 2, 4, 6, 8, 5
         """
-        skip = [[N.. ___ _ __ xrange(10)] ___ _ __ xrange(10)]
+        skip = [[N.. ___ _ __ x..(10)] ___ _ __ x..(10)]
         skip[1][3], skip[3][1] = 2, 2
         skip[1][7], skip[7][1] = 4, 4
         skip[3][9], skip[9][3] = 6, 6
@@ -30,12 +30,12 @@ c_ Solution(object):
         :type n: int
         :rtype: int
         """
-        visited = [F.. ___ _ __ xrange(10)]
+        visited = [F.. ___ _ __ x..(10)]
         r.. s..(
             dfs(1, visited, remain) * 4 +
             dfs(2, visited, remain) * 4 +
             dfs(5, visited, remain)
-            ___ remain __ xrange(m, n+1)
+            ___ remain __ x..(m, n+1)
         )
 
     ___ dfs  cur, visited, remain):
@@ -48,7 +48,7 @@ c_ Solution(object):
 
         visited[cur] = T..
         ret = 0
-        ___ nxt __ xrange(1, 10):
+        ___ nxt __ x..(1, 10):
             __ (
                 n.. visited[nxt] a.. (
                     skip[cur][nxt] __ N.. o.

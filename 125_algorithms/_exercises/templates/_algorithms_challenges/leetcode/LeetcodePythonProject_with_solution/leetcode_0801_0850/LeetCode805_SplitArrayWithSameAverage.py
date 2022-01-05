@@ -3,7 +3,7 @@ Created on Apr 24, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ splitArraySameAverage  A):
         """
         :type A: List[int]

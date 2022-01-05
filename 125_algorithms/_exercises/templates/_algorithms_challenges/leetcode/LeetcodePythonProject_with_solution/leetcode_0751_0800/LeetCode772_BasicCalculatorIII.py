@@ -3,7 +3,7 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ calculate  s):
         """
         :type s: str
@@ -15,9 +15,9 @@ c_ Solution(object):
         i = 0
         w.... i < l..(s):
             c = s[i]
-            __ c.isdigit
+            __ c.i..
                 num = o..(c)-o..('0')
-                w.... i+1 < l..(s) a.. s[i+1].isdigit
+                w.... i+1 < l..(s) a.. s[i+1].i..
                     i += 1
                     num = num*10+o..(s[i])-o..('0')
                 l2 = l2*num __ o2__1 ____ l2//num

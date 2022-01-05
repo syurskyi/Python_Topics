@@ -59,6 +59,6 @@ c_ LinkedListIterator:
         r.. current_value
 
 
-c_ EmptyListException(Exception):
+c_ EmptyListException(E..):
     ___ - , message):
         message = message

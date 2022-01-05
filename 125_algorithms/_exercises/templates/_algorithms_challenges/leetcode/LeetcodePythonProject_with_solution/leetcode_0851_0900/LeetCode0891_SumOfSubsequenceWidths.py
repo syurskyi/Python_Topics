@@ -3,7 +3,7 @@ Created on Oct 31, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ sumSubseqWidths  A):
         """
         :type A: List[int]

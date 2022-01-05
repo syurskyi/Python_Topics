@@ -4,7 +4,7 @@ Write a function that takes a string as input and reverse only the vowels of a s
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reverseVowels  s):
         """
         :type s: str

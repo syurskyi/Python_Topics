@@ -4,7 +4,7 @@ _______ sys
 MAX_RETRIES = 3
 
 
-c_ MaxRetriesException(Exception):
+c_ MaxRetriesException(E..):
     p..
 
 
@@ -25,8 +25,8 @@ ___ retry(func):
         w.... retries < MAX_RETRIES:
             ___
                 vals = func $ $$
-                break
-            ______ Exception __ e:
+                _____
+            ______ E.. __ e:
                 retries += 1
                 print(e)
         ____:

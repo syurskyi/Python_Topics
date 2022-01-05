@@ -3,7 +3,7 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-c_ StringIterator(object):
+c_ StringIterator(o..):
 
     ___ - , compressedString):
         """
@@ -15,7 +15,7 @@ c_ StringIterator(object):
         __ cmpStr:
             c = cmpStr[ind]
             ind += 1
-            w.... ind < l..(cmpStr) a.. cmpStr[ind].isdigit
+            w.... ind < l..(cmpStr) a.. cmpStr[ind].i..
                 ind += 1
             count = i..(cmpStr[1:ind])
 
@@ -32,7 +32,7 @@ c_ StringIterator(object):
             c = cmpStr[ind]
             ind += 1
             ind = ind
-            w.... ind < l..(cmpStr) a.. cmpStr[ind].isdigit
+            w.... ind < l..(cmpStr) a.. cmpStr[ind].i..
                 ind += 1
             count = i..(cmpStr[ind:ind])
             ind = ind

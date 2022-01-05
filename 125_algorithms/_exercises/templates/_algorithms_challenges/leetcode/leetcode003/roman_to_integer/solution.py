@@ -5,7 +5,7 @@ Input is guaranteed to be within the range from 1 to 3999.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ romanToInt  s):
         """
         :type s: str

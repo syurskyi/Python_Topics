@@ -17,7 +17,7 @@ Given target = 3, return true.
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ searchMatrix  mat, target):
         """
         binary search. Two exactly the same binary search algorithm

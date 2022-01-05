@@ -23,12 +23,12 @@ c_ Solution:
             r.. 0
 
         delta_prices    # list  # \delta
-        ___ i __ xrange(1, l..(prices)):
+        ___ i __ x..(1, l..(prices)):
             delta_prices.a..(prices[i]-prices[i-1])
 
         # O(n)
         profit = 0
-        ___ i __ xrange(l..(delta_prices)):
+        ___ i __ x..(l..(delta_prices)):
             __ delta_prices[i] > 0:
                 profit += delta_prices[i]
 

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   # O(nlogn) greedy to place most popular and distinct tasks first
   # Actually, I don't think this is greedy
   # We always place different tasks in a cycle which will minimize steps

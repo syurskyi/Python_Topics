@@ -3,7 +3,7 @@ Created on May 24, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findLadders  beginWord, endWord, wordList):
         """
         :type beginWord: str

@@ -1,4 +1,4 @@
-c_ UnionFind(object):
+c_ UnionFind(o..):
   ___ - , n):
     dad = [i ___ i __ r..(n)]
     rank = [0 ___ i __ r..(n)]
@@ -29,7 +29,7 @@ c_ UnionFind(object):
     r.. count
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findCircleNum  M):
     """
     :type M: List[List[int]]

@@ -1,11 +1,11 @@
-c_ Node(object):
+c_ Node(o..):
     ___ - , value, succeeding=N.., previous_ N..
         value = value
         succeeding = succeeding
         previous = previous
 
 
-c_ LinkedList(object):
+c_ LinkedList(o..):
 
     ___ - ):
         head = N..

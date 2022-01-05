@@ -1,4 +1,4 @@
-c_ StackUnderflowError(Exception):
+c_ StackUnderflowError(E..):
     p..
 
 
@@ -53,6 +53,6 @@ ___ evaluate(input_data):
                 stack.a..(stack[-2])
             ____:
                 r.. ValueError("{} has not been defined".f..(word))
-        ______ IndexError:
+        ______ I..
             r.. StackUnderflowError("Insufficient number of items in stack")
     r.. stack

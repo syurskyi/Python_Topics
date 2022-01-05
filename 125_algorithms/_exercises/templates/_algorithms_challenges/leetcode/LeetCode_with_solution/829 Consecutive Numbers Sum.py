@@ -42,7 +42,7 @@ c_ Solution:
             k += 1
             x0k = N - k * (k - 1) // 2
             __ x0k <= 0 :
-                break
+                _____
             __ x0k % k __ 0:
                 cnt += 1
 

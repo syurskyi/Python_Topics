@@ -5,7 +5,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you
 climb to the top?
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ climbStairs  n):
         """
         :type n: int

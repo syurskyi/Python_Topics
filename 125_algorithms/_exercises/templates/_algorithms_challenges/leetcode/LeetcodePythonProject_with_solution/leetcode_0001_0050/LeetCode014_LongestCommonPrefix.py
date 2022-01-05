@@ -3,7 +3,7 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestCommonPrefix  strs):
         """
         :type strs: List[str]
@@ -16,14 +16,14 @@ c_ Solution(object):
             ___ i, s __ e..(strs):
                 __ ind __ l..(s):
                     same = F..
-                    break
+                    _____
                 __ i __ 0:
                     c = s[ind]
                 ____ c != s[ind]:
                     same = F..
-                    break
+                    _____
             __ n.. same:
-                break
+                _____
             ind += 1
         r.. strs[0][:ind]
     

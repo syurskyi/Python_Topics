@@ -3,7 +3,7 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ asteroidCollision  asteroids):
         """
         :type asteroids: List[int]
@@ -26,7 +26,7 @@ c_ Solution(object):
                     res.a..(asteroids[i])
                 i += 1
             __ n.. changed:
-                break
+                _____
             asteroids = res
             res    # list
         r.. res

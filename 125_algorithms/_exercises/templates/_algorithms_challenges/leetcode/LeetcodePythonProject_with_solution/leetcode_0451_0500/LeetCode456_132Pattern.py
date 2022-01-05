@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ find132pattern  nums):
         s3 = float('-inf')
         stack    # list

@@ -16,7 +16,7 @@ c_ Solution:
         """
         l_hay = l..(haystack)
         l_ndl = l..(needle)
-        ___ i __ xrange(l_hay-l_ndl+1):  # i+l_ndl <= l_hay
+        ___ i __ x..(l_hay-l_ndl+1):  # i+l_ndl <= l_hay
             __ haystack[i:i+l_ndl]__needle:
                 r.. haystack[i:]
         r.. N..
@@ -42,7 +42,7 @@ c_ Solution:
                 r.. N..
 
         # construct T
-        T = [0 ___ _ __ xrange(ln)]
+        T = [0 ___ _ __ x..(ln)]
         T[0] = -1
         T[1] = 0
         pos = 2

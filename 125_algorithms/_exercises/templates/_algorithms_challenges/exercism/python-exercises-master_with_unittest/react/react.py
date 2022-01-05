@@ -1,9 +1,9 @@
-c_ InputCell(object):
+c_ InputCell(o..):
     ___ - , initial_value):
         value = N..
 
 
-c_ ComputeCell(object):
+c_ ComputeCell(o..):
     ___ - , inputs, compute_function):
         value = N..
 

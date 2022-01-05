@@ -4,7 +4,7 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getMaxRepetitions  s1, n1, s2, n2):
         """
         :type s1: str

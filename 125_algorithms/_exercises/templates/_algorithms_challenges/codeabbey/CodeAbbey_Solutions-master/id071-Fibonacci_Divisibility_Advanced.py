@@ -8,7 +8,7 @@ ___ fibDiv(tests):
             c = a + b
             __ c % i..(numbers[test]) __ 0:
                 answer.a..(s..(count+2))
-                break
+                _____
             a = b
             b = c
     print(' '.j..(answer))

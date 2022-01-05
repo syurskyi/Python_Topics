@@ -4,7 +4,7 @@ Created on Sep 3, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxVacationDays  flights, days):
         """
         :type flights: List[List[int]]

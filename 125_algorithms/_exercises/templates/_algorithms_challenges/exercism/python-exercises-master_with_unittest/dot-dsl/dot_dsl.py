@@ -1,7 +1,7 @@
 NODE, EDGE, ATTR = r..(3)
 
 
-c_ Node(object):
+c_ Node(o..):
     ___ - , name, attrs={}):
         name = name
         attrs = attrs
@@ -10,7 +10,7 @@ c_ Node(object):
         r.. name __ other.name a.. attrs __ other.attrs
 
 
-c_ Edge(object):
+c_ Edge(o..):
     ___ - , src, dst, attrs={}):
         src = src
         dst = dst
@@ -22,6 +22,6 @@ c_ Edge(object):
                 attrs __ other.attrs)
 
 
-c_ Graph(object):
+c_ Graph(o..):
     ___ - , data=[]):
         p..

@@ -3,7 +3,7 @@ Created on May 29, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ getRow  rowIndex):
         """
         :type rowIndex: int

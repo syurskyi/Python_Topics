@@ -4,7 +4,7 @@ strings.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestCommonPrefix  strs):
         """
         :type strs: List[str]
@@ -18,5 +18,5 @@ c_ Solution(object):
             ___ i, c __ e..(res):
                 __ i >= n o. res[i] != s[i]:
                     res = res[:i]
-                    break
+                    _____
         r.. res

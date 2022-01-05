@@ -1,7 +1,7 @@
 MAX_FRAME = 10
 
 
-c_ Frame(object):
+c_ Frame(o..):
     ___ - , idx):
         idx = idx
         throws    # list
@@ -38,7 +38,7 @@ c_ Frame(object):
         r.. result
 
 
-c_ BowlingGame(object):
+c_ BowlingGame(o..):
     ___ - ):
         current_frame_idx = 0
         bonus_throws    # list

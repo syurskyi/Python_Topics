@@ -39,7 +39,7 @@ c_ Solution:
         w... T...
             _walls = build_walls(G)
             __ _walls __ 0:
-                break
+                _____
             walls += _walls
 
         r.. walls

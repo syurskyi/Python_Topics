@@ -12,7 +12,7 @@ which the depth of the two subtrees of every node never differ by more than 1.
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isBalanced  root):
         """
         :type root: TreeNode

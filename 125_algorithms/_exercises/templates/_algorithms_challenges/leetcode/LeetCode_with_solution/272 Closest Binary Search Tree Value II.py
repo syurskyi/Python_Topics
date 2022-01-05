@@ -5,14 +5,14 @@ https://leetcode.com/problems/closest-binary-search-tree-value-ii/
 __author__ = 'Daniel'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ closestKValues  root, target, k):
         """
         consider the predecessors and successors of the closest node to the target

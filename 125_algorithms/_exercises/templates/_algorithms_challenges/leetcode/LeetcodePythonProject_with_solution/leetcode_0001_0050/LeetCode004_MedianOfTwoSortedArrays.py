@@ -3,7 +3,7 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMedianSortedArrays  nums1, nums2):
         """
         :type nums1: List[int]

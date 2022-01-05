@@ -19,7 +19,7 @@ finished course 0, and to take course 0 you should also have finished course
 1. So it is impossible.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canFinish  numCourses, prerequisites):
         """
         :type numCourses: int

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ countComponents  n, edges):
     ___ find(x):
       __ parent[x] != x:

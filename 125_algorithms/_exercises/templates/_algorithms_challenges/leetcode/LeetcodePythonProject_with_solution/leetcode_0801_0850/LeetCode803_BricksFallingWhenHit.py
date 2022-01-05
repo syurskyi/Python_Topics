@@ -3,7 +3,7 @@ Created on Apr 21, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ hitBricks  grid, hits):
         """
         :type grid: List[List[int]]

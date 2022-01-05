@@ -15,7 +15,7 @@ _______ math
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numTrees_math  n):
         """
         number of unique binary search tree
@@ -48,10 +48,10 @@ c_ Solution(object):
         __ n < 2:
             r.. n
 
-        dp = [0 ___ _ __ xrange(n+1)]
+        dp = [0 ___ _ __ x..(n+1)]
         dp[0] = 1
-        ___ i __ xrange(1, n+1):
-            ___ j __ xrange(i):
+        ___ i __ x..(1, n+1):
+            ___ j __ x..(i):
                 dp[i] += dp[j]*dp[i-j-1]
         r.. dp[-1]
 

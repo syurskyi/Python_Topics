@@ -4,7 +4,7 @@ Created on Apr 10, 2019
 @author: tongq
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ shortestPathLength  graph):
         """
         :type graph: List[List[int]]

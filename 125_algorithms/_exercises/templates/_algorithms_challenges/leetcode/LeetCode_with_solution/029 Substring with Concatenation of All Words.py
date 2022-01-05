@@ -143,7 +143,7 @@ c_ Solution:
 
             # case 3, mach one in L not used up
             ____ word __ Lmap a.. Lmap[word]__0:
-                ___ j __ xrange(0, working_win.index(word)+1):  # kind of prefix suffix concepts
+                ___ j __ x..(0, working_win.index(word)+1):  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.index(word)+1:]
                 working_win.a..(word)

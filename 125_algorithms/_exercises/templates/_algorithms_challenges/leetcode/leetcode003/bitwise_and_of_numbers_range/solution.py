@@ -5,7 +5,7 @@ of all numbers in this range, inclusive.
 For example, given the range [5, 7], you should return 4.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rangeBitwiseAnd  m, n):
         """
         :type m: int

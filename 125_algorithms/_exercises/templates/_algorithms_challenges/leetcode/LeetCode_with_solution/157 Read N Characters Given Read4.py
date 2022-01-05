@@ -14,7 +14,7 @@ ___ read4(buf):
     r.. 0
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ read  buf, n):
         """
         read n chars to buf
@@ -29,12 +29,12 @@ c_ Solution(object):
         """
         idx = 0
         w.... idx < n:
-            buf4 = ["" ___ _ __ xrange(4)]
+            buf4 = ["" ___ _ __ x..(4)]
             r = read4(buf4)
             __ idx+r < n:
                 buf[idx:idx+r] = buf4[:r]
                 idx += r
-                __ r < 4: break
+                __ r < 4: _____
             ____:
                 buf[idx:n] = buf4[:n-idx]
                 idx = n

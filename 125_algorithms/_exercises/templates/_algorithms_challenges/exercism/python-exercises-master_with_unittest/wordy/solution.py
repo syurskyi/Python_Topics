@@ -17,7 +17,7 @@ ___ calculate(stmt):
     l = stmt[8:-1].s...l...s..
     __ n.. l:
         r.. ValueError("Ill-formed question")
-    l.reverse()
+    l.r..
     ___
         op1 = i..(l.pop())
     ______ V..
@@ -28,7 +28,7 @@ ___ calculate(stmt):
             ___
                 next_tk = l.pop()
                 op2 = i..(next_tk)
-                break
+                _____
             ______ V..
                 oprt.a..(next_tk)
         ____:

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ nextGreaterElement  findNums, nums):
     """
     :type findNums: List[int]

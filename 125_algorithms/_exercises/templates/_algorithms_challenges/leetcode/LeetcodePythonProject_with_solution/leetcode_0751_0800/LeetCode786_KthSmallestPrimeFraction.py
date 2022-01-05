@@ -3,7 +3,7 @@ Created on Apr 10, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ kthSmallestPrimeFraction  A, K):
         """
         :type A: List[int]

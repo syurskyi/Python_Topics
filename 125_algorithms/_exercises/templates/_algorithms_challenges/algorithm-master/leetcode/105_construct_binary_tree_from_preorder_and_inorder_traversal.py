@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ buildTree  P, I):
         """
         :type P: List[int]

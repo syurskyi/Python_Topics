@@ -1,7 +1,7 @@
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ evalRPN  tokens):
         """
         stack

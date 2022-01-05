@@ -4,7 +4,7 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ thirdMax  nums):
         first, second, third = float('-inf'), float('-inf'), float('-inf')
         ___ num __ nums:

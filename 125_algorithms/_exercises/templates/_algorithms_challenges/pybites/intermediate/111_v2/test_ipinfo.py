@@ -6,7 +6,7 @@ _______ requests
 ____ ipinfo _______ get_ip_country
 
 
-@patch.object(requests, 'get')
+@patch.o..(requests, 'get')
 ___ test_ipinfo_mexican_ip(mockget):
     # hardcoding a requests response
     content = (b'{\n  "ip": "187.190.38.36",\n  "hostname": "domain.net",\n'
@@ -20,7 +20,7 @@ ___ test_ipinfo_mexican_ip(mockget):
     ... get_ip_country('187.190.38.36') __ 'MX'
 
 
-@patch.object(requests, 'get')
+@patch.o..(requests, 'get')
 ___ test_ipinfo_japan_ip(mockget):
     # and another IP in Japan
     content = (b'{\n  "ip": "185.161.200.10",\n  "city": "Tokyo",\n  '

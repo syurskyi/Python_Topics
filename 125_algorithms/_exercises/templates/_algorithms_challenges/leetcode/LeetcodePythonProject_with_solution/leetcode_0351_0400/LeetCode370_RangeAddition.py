@@ -4,7 +4,7 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getModifiedArray  length, updates):
         result = [0]*length
         ___ update __ updates:

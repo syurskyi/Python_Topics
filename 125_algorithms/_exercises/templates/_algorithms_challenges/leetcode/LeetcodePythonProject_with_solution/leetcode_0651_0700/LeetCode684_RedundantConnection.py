@@ -3,7 +3,7 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findRedundantConnection  edges):
         """
         :type edges: List[List[int]]

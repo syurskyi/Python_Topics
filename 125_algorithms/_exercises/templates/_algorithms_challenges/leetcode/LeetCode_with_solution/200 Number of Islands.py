@@ -39,9 +39,9 @@ c_ Solution:
             r.. 0
 
         cnt = 0
-        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ n.. visited[i][j] a.. grid[i][j] __ "1":
                     dfs(grid, i, j, visited)
                     cnt += 1

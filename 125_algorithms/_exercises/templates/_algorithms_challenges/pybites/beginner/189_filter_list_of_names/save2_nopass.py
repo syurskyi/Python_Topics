@@ -11,10 +11,10 @@ ___ filter_names(names):
                 __ IGNORE_CHAR __ name:
                     _____
                 ____ QUIT_CHAR __ name:
-                    break
+                    _____
                 ____:
                     __ names_list_number >= MAX_NAMES:
-                        break
+                        _____
                     ____:
                         names_list.a..(name)
                         names_list_number += 1

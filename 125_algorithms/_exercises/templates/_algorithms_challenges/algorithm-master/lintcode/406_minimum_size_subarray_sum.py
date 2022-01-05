@@ -18,7 +18,7 @@ c_ Solution:
 
             # Terminate iteration if all the children in nums have been added
             __ r >= n a.. t < s:
-                break
+                _____
 
             # Keep substracting the prev int from total until total < s
             w.... l < r a.. t >= s:

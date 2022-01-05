@@ -13,7 +13,7 @@ c_ TreeNode:
         left = N..
         right = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr(val)
 
 

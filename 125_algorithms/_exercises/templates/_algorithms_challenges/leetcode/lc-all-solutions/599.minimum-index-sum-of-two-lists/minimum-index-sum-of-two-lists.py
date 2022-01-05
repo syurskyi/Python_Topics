@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findRestaurant  list1, list2):
     """
     :type list1: List[str]

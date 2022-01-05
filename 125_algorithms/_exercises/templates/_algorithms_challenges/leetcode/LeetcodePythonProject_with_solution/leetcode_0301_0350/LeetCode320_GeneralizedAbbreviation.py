@@ -4,7 +4,7 @@ Created on Mar 17, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ generateAbbreviations  word):
         """
         :type word: str

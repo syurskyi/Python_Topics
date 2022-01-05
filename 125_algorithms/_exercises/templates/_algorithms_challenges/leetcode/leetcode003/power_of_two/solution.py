@@ -2,7 +2,7 @@
 Given an integer, write a function to determine if it is a power of two.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isPowerOfTwo  n):
         """
         :type n: int

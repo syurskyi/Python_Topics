@@ -4,7 +4,7 @@
 # @return a boolean, whether a knows b
 # def knows(a, b):
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findCelebrity  n):
     """
     :type n: int

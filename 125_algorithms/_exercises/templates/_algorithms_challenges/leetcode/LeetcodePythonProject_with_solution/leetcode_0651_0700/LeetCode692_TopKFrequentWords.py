@@ -3,7 +3,7 @@ Created on Oct 24, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ topKFrequent  words, k):
         """
         :type words: List[str]
@@ -23,7 +23,7 @@ c_ Solution(object):
                 dp[i].s..()
                 res += dp[i]
                 __ l..(res) >= k:
-                    break
+                    _____
         r.. res[:k]
     
     ___ test

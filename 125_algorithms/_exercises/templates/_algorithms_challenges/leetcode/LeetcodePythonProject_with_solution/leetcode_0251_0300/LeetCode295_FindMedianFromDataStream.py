@@ -5,7 +5,7 @@ Created on Mar 8, 2017
 '''
 
 _______ heapq
-c_ MedianFinder(object):
+c_ MedianFinder(o..):
     ___ - ):
         # minHeap save positive values: 7, 9
         minHeap    # list

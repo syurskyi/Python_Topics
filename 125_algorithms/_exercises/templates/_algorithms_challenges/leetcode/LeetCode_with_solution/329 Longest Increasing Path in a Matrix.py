@@ -27,7 +27,7 @@ The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         cache = N..
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1),)
@@ -41,10 +41,10 @@ c_ Solution(object):
         __ n.. matrix: r.. 0
 
         m, n = l..(matrix), l..(matrix[0])
-        cache = [[N.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        cache = [[N.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         gmax = 1
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 gmax = m..(gmax, longest(matrix, i, j))
 
         r.. gmax

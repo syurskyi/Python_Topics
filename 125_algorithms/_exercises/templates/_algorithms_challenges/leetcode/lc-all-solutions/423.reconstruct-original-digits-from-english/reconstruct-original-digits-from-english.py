@@ -3,7 +3,7 @@ nums = {0: "zero", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six
 feature = {0: "z", 1: "o", 2: "w", 3: "r", 4: "u", 5: "v", 6: "x", 7: "s", 8: "g", 9: "i", 10: "t"}
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ originalDigits  s):
     """
     :type s: str

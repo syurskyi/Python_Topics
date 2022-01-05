@@ -11,7 +11,7 @@ Can you solve it without using extra space?
 #         self.val = x
 #         self.next = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ hasCycle  head):
         """
         :type head: ListNode

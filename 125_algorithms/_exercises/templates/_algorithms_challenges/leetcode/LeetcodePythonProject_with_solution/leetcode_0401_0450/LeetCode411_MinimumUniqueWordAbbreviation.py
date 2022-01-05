@@ -4,7 +4,7 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minAbbreviation  target, dictionary):
         diffs    # list
         m = l..(target)

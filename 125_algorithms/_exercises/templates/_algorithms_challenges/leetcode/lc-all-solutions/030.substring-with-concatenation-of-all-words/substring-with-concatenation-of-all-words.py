@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findSubstring  s, words):
     """
     :type s: str
@@ -31,7 +31,7 @@ c_ Solution(object):
         __ t[cword] <= d[cword]:
           score += 1
         ____:
-          break
+          _____
         start += wl
 
       __ score __ fullscore:

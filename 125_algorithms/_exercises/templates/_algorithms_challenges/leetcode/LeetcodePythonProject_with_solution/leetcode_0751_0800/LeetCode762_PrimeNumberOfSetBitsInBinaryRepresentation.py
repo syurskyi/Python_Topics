@@ -3,7 +3,7 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ countPrimeSetBits  L, R):
         """
         :type L: int

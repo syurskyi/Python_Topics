@@ -5,12 +5,12 @@ Created on Feb 9, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(object):
+c_ ListNode(o..):
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reorderList  head):
         """
         :type head: ListNode
@@ -22,7 +22,7 @@ c_ Solution(object):
         w.... node a.. node2:
             node2 = node2.next
             __ n.. node2:
-                break
+                _____
             node2 = node2.next
             node = node.next
         head2 = node.next

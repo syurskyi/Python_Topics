@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ repeatedSubstringPattern  s):
         n = l..(s)
         ___ i __ r..(1, n//2+2):

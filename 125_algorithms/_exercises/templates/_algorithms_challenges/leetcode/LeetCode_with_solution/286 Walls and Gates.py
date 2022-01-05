@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
@@ -26,7 +26,7 @@ c_ Solution(object):
                     q.a..((i1, j1))
 
 
-c_ Solution_slow(object):
+c_ Solution_slow(o..):
     ___ - ):
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
@@ -42,8 +42,8 @@ c_ Solution_slow(object):
         __ n.. m: r..
         n = l..(rooms[0])
 
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ rooms[i][j] __ 0:
                     bfs_deque(rooms, i, j)
 
@@ -54,7 +54,7 @@ c_ Solution_slow(object):
         q = [(x, y)]
         w.... q:
             l = l..(q)
-            ___ idx __ xrange(l):
+            ___ idx __ x..(l):
                 i, j = q[idx]
                 rooms[i][j] = m..(rooms[i][j], level)
                 ___ d __ dirs:
@@ -82,7 +82,7 @@ c_ Solution_slow(object):
                     q.a..((i_t, j_t, level+1))
 
 
-c_ Solution_error(object):
+c_ Solution_error(o..):
     ___ - ):
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
@@ -98,9 +98,9 @@ c_ Solution_error(object):
         __ n.. m: r..
         n = l..(rooms[0])
 
-        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ n.. visited[i][j]:
                     dfs(rooms, i, j, visited)
 

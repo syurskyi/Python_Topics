@@ -13,7 +13,7 @@ ___ i __ r..(l..(mea)):
     #if last element then store it in the result array
     ____ i__ l..(mea)-1:
         mea_store.a..(mea[i])
-        break
+        _____
     #else calculate the average of the middle numbers and store in the result
     ____:
         res = (mea[i]+mea[i-1]+mea[i+1])/3

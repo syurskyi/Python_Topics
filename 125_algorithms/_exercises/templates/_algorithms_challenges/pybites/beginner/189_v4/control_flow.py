@@ -9,11 +9,11 @@ ___ filter_names(names):
     result    # list
     ___ n __ names:
         __ n[0] __ QUIT_CHAR:
-            break
+            _____
         __ l..(set(n).intersection(set(s__.d..))) > 0:
             _____
         __ n[0] != IGNORE_CHAR:
             result.a..(n)
         __ l..(result) __ MAX_NAMES:
-            break
+            _____
     r.. result

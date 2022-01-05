@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findDuplicate  paths):
     """
     :type paths: List[str]

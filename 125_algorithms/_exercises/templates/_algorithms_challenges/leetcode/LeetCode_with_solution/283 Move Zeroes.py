@@ -12,20 +12,20 @@ Minimize the total number of operations.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ moveZeroes  nums):
         """
         Two pointers at the left side
         Pivot
         """
         left = -1
-        ___ i __ xrange(l..(nums)):
+        ___ i __ x..(l..(nums)):
             __ nums[i] != 0:
                 left += 1
                 nums[left], nums[i] = nums[i], nums[left]
 
 
-c_ SolutionCount(object):
+c_ SolutionCount(o..):
     ___ moveZeroes  nums):
         """
         In-place
@@ -38,7 +38,7 @@ c_ SolutionCount(object):
                 nums[cnt] = elt
                 cnt += 1
 
-        ___ j __ xrange(cnt, l..(nums)):
+        ___ j __ x..(cnt, l..(nums)):
             nums[j] = 0
 
 

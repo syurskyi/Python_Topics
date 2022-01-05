@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findPairs  nums, k):
     """
     :type nums: List[int]

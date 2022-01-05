@@ -4,7 +4,7 @@ Created on Mar 14, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestValidParentheses  s):
         left = -1
         stack    # list

@@ -1,4 +1,4 @@
-c_ Excel(object):
+c_ Excel(o..):
   ___ - , H, W):
     """
     :type H: int

@@ -4,7 +4,7 @@ Created on Mar 20, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ lengthOfLongestSubstringKDistinct  s, k):
         __ k <= 0: r.. 0
         hashmap    # dict

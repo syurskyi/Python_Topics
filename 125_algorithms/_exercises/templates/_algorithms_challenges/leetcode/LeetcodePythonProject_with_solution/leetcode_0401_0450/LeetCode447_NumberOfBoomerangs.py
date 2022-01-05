@@ -4,7 +4,7 @@ Created on Apr 18, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numberOfBoomerangs  points):
         n = l..(points)
         res = 0

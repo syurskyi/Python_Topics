@@ -1,4 +1,4 @@
-c_ FileNode(object):
+c_ FileNode(o..):
   ___ - , name):
     isFolder = T..
     childs    # dict
@@ -12,7 +12,7 @@ c_ FileNode(object):
     r.. data
 
 
-c_ FileSystem(object):
+c_ FileSystem(o..):
   ___ - ):
     root = FileNode("/")
 

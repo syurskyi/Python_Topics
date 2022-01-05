@@ -88,7 +88,7 @@ c_ Solution:
                         __ nums[k] < nums[i] + nums[j]:
                             cur += 1
                         ____:
-                            break
+                            _____
                     cache[(i, j)] = cur
                 ret += cache[(i, j)]
 

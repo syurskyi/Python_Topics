@@ -12,7 +12,7 @@ house, determine the maximum amount of money you can rob tonight without
 alerting the police.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rob  nums):
         """
         :type nums: List[int]

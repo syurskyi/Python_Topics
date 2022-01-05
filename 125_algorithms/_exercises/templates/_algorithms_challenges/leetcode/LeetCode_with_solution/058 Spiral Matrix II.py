@@ -26,20 +26,20 @@ c_ Solution:
         top = 0
         bottom = n - 1  # [0, n)
 
-        result = [[-1 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
+        result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
         num = 1
         w.... left <= right a.. top <= bottom:
-            ___ i __ xrange(left, right + 1):  # tuning ending condition, be greedy
+            ___ i __ x..(left, right + 1):  # tuning ending condition, be greedy
                 result[top][i] = num
                 num += 1
-            ___ i __ xrange(top + 1, bottom):
+            ___ i __ x..(top + 1, bottom):
                 result[i][right] = num
                 num += 1
 
-            ___ i __ xrange(right, left, -1):
+            ___ i __ x..(right, left, -1):
                 result[bottom][i] = num
                 num += 1
-            ___ i __ xrange(bottom, top, -1):
+            ___ i __ x..(bottom, top, -1):
                 result[i][left] = num
                 num += 1
 
@@ -63,21 +63,21 @@ c_ SolutionError:
         top = 0
         bottom = n - 1  # [0, n)
 
-        result = [[-1 ___ _ __ xrange(n)] ___ _ __ xrange(n)]
+        result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
         num = 1
         w.... left <= right a.. top <= bottom:
-            ___ i __ xrange(left, right):  # tuning ending condition, this will fail in the middle
+            ___ i __ x..(left, right):  # tuning ending condition, this will fail in the middle
                 result[top][i] = num
                 num += 1
-            ___ i __ xrange(top, bottom):
+            ___ i __ x..(top, bottom):
                 result[i][right] = num
                 num += 1
 
-            ___ i __ xrange(right, left, -1):
+            ___ i __ x..(right, left, -1):
                 result[bottom][i] = num
                 num += 1
 
-            ___ i __ xrange(bottom, top, -1):
+            ___ i __ x..(bottom, top, -1):
                 result[i][left] = num
                 num += 1
 

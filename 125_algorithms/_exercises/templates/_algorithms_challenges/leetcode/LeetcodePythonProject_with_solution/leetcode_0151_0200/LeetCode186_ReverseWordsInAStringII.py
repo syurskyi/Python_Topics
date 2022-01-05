@@ -3,7 +3,7 @@ Created on May 17, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ reverseWords  s):
         """
         :type str: List[str]

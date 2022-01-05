@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ validUtf8  data):
     """
     :type data: List[int]
@@ -15,7 +15,7 @@ c_ Solution(object):
         ___ mask __ masks:
           __ (data[i] & mask) __ features:
             followed = features[data[i] & mask]
-            break
+            _____
         __ followed __ -1:
           r.. F..
         ____ followed != 0:

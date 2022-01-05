@@ -15,7 +15,7 @@ In this case, you should ignore redundant slashes and return "/home/foo".
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ simplifyPath  path):
         """
         use "." as intermediate
@@ -27,7 +27,7 @@ c_ Solution(object):
         path = filter(l.... x: x n.. __ ("", " ", "."), path)
 
         # modify the content of the list, not the structure.
-        ___ idx __ xrange(l..(path)):
+        ___ idx __ x..(l..(path)):
             val = path[idx]
             __ val __ "..":
                 path[idx] = "."

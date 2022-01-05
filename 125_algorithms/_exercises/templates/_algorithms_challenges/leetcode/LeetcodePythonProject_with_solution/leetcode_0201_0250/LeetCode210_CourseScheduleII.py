@@ -4,7 +4,7 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findOrder  numCourses, prerequisites):
         """
         :type numCourses: int

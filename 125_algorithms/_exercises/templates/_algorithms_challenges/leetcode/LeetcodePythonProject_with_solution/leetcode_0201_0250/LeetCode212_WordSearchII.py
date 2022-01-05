@@ -3,7 +3,7 @@ Created on Feb 19, 2017
 
 @author: MT
 '''
-c_ TrieNode(object):
+c_ TrieNode(o..):
     ___ - , c_ N..
         c = c
         children    # dict
@@ -24,7 +24,7 @@ ___ buildTrie(words):
                 t.isLeaf = T..
     r.. root
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findWords  board, words):
         """
         :type board: List[List[str]]

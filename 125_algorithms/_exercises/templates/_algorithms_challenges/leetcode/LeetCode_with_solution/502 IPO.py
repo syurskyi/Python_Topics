@@ -57,7 +57,7 @@ c_ Solution:
                 _, pro = heapq.heappop(profit_q)
                 capital += pro
             ____:
-                break
+                _____
 
         r.. capital
 
@@ -89,6 +89,6 @@ c_ Solution:
                 capital += maxa
                 visited[maxa_i] = T..
             ____:
-                break
+                _____
 
         r.. capital

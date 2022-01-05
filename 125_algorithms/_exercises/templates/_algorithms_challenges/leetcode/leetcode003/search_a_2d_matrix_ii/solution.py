@@ -21,7 +21,7 @@ Given target = 5, return true.
 Given target = 20, return false.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ searchMatrix  matrix, target):
         """
         :type matrix: List[List[int]]

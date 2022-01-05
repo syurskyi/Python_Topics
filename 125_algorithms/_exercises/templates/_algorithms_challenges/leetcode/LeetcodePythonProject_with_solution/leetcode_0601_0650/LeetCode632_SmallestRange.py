@@ -3,7 +3,7 @@ Created on Sep 19, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ smallestRange  nums):
         """
         :type nums: List[List[int]]

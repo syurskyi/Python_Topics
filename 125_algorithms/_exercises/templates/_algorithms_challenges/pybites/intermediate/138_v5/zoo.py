@@ -8,7 +8,7 @@ c_ Animal:
         index = _next_index()
         _add_to_zoo(self)
 
-    ___ __repr__
+    ___  -r
         r.. f'{index}. {name}'
 
     @classmethod

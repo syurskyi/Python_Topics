@@ -4,7 +4,7 @@ Created on May 9, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findTargetSumWays  nums, S):
         """
         :type nums: List[int]

@@ -11,7 +11,7 @@ c_ Solution:
         stack    # list
 
         ___ c __ s:
-            __ c.isdigit
+            __ c.i..
                 times = times * 10 + i..(c)
             ____ c __ '[':
                 stack.a..(times)

@@ -1,7 +1,7 @@
 NORTH, EAST, SOUTH, WEST = r..(4)
 
 
-c_ Compass(object):
+c_ Compass(o..):
     compass = [NORTH, EAST, SOUTH, WEST]
 
     ___ - , bearing=NORTH):
@@ -14,7 +14,7 @@ c_ Compass(object):
         bearing = compass[(bearing + 1) % 4]
 
 
-c_ Robot(object):
+c_ Robot(o..):
     ___ - , bearing=NORTH, x=0, y=0):
         compass = Compass(bearing)
         x = x

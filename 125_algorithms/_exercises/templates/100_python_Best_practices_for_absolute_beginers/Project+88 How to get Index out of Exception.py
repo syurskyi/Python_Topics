@@ -11,5 +11,5 @@ w___ T...
         print(x[num])
     ______ V..
         print("Only integers are allowed!")
-    ______ IndexError:
+    ______ I..
         print("Error! Number out of index", num)

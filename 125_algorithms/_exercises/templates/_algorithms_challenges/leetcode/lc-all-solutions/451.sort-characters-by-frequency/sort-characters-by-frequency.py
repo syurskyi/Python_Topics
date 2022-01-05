@@ -1,7 +1,7 @@
 ____ c.. _______ Counter
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ frequencySort  s):
     """
     :type s: str

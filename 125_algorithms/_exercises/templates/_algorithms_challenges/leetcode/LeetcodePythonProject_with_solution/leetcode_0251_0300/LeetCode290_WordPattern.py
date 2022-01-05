@@ -3,7 +3,7 @@ Created on Mar 7, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ wordPattern  pattern, s):
         """
         :type pattern: str

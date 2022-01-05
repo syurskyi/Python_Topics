@@ -4,7 +4,7 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ parseTernary  expression):
         __ n.. expression: r.. ''
         stack    # list
@@ -37,7 +37,7 @@ c_ Solution(object):
                     count -= 1
                     __ count __ -1:
                         subExp = expression[2:i]
-                        break
+                        _____
                 i+=1
         ____:
             subExp = ''
@@ -50,7 +50,7 @@ c_ Solution(object):
                     count -= 1
                     __ count __ -1:
                         subExp = expression[i+1:]
-                        break
+                        _____
                 i+=1
         __ l..(subExp) __ 1:
             r.. subExp

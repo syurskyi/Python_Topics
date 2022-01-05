@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ triangleNumber  nums):
     ans = 0
     nums.s..()

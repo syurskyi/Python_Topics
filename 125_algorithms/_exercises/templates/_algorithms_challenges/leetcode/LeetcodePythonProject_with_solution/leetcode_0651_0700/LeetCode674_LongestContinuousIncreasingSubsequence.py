@@ -3,7 +3,7 @@ Created on Oct 15, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findLengthOfLCIS  nums):
         """
         :type nums: List[int]

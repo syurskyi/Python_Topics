@@ -35,7 +35,7 @@ ____ c.. _______ defaultdict, n..
 _______ heapq
 
 
-c_ Building(object):
+c_ Building(o..):
     ___ - , h):
         h = h
         deleted = F..  # lazy deletion

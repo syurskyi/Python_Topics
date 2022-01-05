@@ -11,7 +11,7 @@ ___ knows(a, b):
     _______ r__
     r.. r__(0, 1) __ 0
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findCelebrity  n):
         """
         :type n: int

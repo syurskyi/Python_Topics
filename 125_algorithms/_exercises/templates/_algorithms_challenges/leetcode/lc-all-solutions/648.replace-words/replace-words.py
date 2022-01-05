@@ -1,11 +1,11 @@
-c_ TrieNode(object):
+c_ TrieNode(o..):
   ___ - ):
     children    # dict
     isWord = F..
     word = ""
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ replaceWords  d.., sentence):
     """
     :type dict: List[str]
@@ -30,7 +30,7 @@ c_ Solution(object):
           p = p.children[c]
           __ p.isWord:
             words[i] = p.word
-            break
+            _____
         ____:
-          break
+          _____
     r.. " ".j..(words)

@@ -3,7 +3,7 @@ Created on Dec 20, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numMagicSquaresInside  grid):
         """
         :type grid: List[List[int]]

@@ -16,12 +16,12 @@ You may assume the number of calls to update and sumRange function is distribute
 __author__ = 'Daniel'
 
 
-c_ BinaryIndexTree(object):
+c_ BinaryIndexTree(o..):
     ___ - , nums):
         """BIT 0 is dummy root"""
         n = l..(nums)
-        nums = [0 ___ _ __ xrange(n+1)]
-        N = [0 ___ _ __ xrange(n+1)]
+        nums = [0 ___ _ __ x..(n+1)]
+        N = [0 ___ _ __ x..(n+1)]
         ___ i, v __ e..(nums):
             set(i+1, v)
 
@@ -44,7 +44,7 @@ c_ BinaryIndexTree(object):
         r.. ret
 
 
-c_ NumArray(object):
+c_ NumArray(o..):
     ___ - , nums):
         """
         initialize your data structure here.

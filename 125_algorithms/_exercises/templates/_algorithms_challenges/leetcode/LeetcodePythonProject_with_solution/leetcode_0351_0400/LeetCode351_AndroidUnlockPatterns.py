@@ -4,7 +4,7 @@ Created on Mar 22, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numberOfPatterns  m, n):
         skip = [[0]*10 ___ _ __ r..(10)]
         skip[1][3] = skip[3][1] = 2

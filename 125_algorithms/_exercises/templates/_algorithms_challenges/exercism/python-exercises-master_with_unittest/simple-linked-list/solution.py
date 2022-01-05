@@ -1,4 +1,4 @@
-c_ Node(object):
+c_ Node(o..):
     ___ - , value):
         _value = value
         _next = N..
@@ -10,7 +10,7 @@ c_ Node(object):
         r.. _next
 
 
-c_ LinkedIterator(object):
+c_ LinkedIterator(o..):
     ___ - , linked_list):
         current = linked_list._head
 
@@ -28,7 +28,7 @@ c_ LinkedIterator(object):
         r.. __next__()
 
 
-c_ LinkedList(object):
+c_ LinkedList(o..):
     ___ - , values=[]):
         _head = N..
         _len = 0
@@ -63,5 +63,5 @@ c_ LinkedList(object):
         r.. LinkedList(self)
 
 
-c_ EmptyListException(Exception):
+c_ EmptyListException(E..):
     p..

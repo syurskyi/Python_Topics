@@ -3,7 +3,7 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ strStr  haystack, needle):
         """
         :type haystack: str
@@ -17,5 +17,5 @@ c_ Solution(object):
                     __ j __ l..(needle)-1:
                         r.. i
                 ____:
-                    break
+                    _____
         r.. -1

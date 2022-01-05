@@ -35,7 +35,7 @@ _______ r__
 __author__ = 'Daniel'
 
 
-c_ RandomizedCollection(object):
+c_ RandomizedCollection(o..):
     ___ - ):
         """
         pop set is O(1), deterministic depends on hash value

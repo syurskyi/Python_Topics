@@ -4,7 +4,7 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-c_ NumArray(object):
+c_ NumArray(o..):
     ___ - , nums):
         dp = [0]
         ___ num __ nums:

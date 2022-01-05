@@ -2,7 +2,7 @@
 ____ d__ _______ d__
 
 
-c_ LedgerEntry(object):
+c_ LedgerEntry(o..):
     ___ - ):
         date = N..
         description = N..
@@ -113,7 +113,7 @@ ___ format_entries(currency, locale, entries):
                         change_str += dollar_parts[0]
                         dollar_parts.pop(0)
                         __ l..(dollar_parts) __ 0:
-                            break
+                            _____
                         change_str += ','
                 change_str += '.'
                 change_cents = abs(entry.change) % 100
@@ -145,7 +145,7 @@ ___ format_entries(currency, locale, entries):
                         change_str += euro_parts[0]
                         euro_parts.pop(0)
                         __ l..(euro_parts) __ 0:
-                            break
+                            _____
                         change_str += ','
                 change_str += '.'
                 change_cents = abs(entry.change) % 100
@@ -255,7 +255,7 @@ ___ format_entries(currency, locale, entries):
                         change_str += dollar_parts[0]
                         dollar_parts.pop(0)
                         __ l..(dollar_parts) __ 0:
-                            break
+                            _____
                         change_str += '.'
                 change_str += ','
                 change_cents = abs(entry.change) % 100
@@ -283,7 +283,7 @@ ___ format_entries(currency, locale, entries):
                         change_str += euro_parts[0]
                         euro_parts.pop(0)
                         __ l..(euro_parts) __ 0:
-                            break
+                            _____
                         change_str += '.'
                 change_str += ','
                 change_cents = abs(entry.change) % 100

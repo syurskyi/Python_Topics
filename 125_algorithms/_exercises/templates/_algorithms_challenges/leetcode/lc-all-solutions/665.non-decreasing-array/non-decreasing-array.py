@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ checkPossibility  nums):
     """
     :type nums: List[int]
@@ -13,7 +13,7 @@ c_ Solution(object):
         ____:
           nums[i - 1] = nums[i]
         flag = T..
-        break
+        _____
       pre = nums[i]
     __ n.. flag a.. l..(nums) > 1 a.. nums[-1] < nums[-2]:
       nums[-1] = nums[-2]

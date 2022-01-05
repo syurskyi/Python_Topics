@@ -3,7 +3,7 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ expressiveWords  S, words):
         """
         :type S: str
@@ -32,10 +32,10 @@ c_ Solution(object):
                     j0 += 1
                 __ j0-j < 3 a.. s0[i:i0] != s[j:j0]:
                     flag = F..
-                    break
+                    _____
                 i, j = i0, j0
             ____:
-                break
+                _____
         __ i __ m a.. j __ n a.. flag:
             r.. T..
         r.. F..

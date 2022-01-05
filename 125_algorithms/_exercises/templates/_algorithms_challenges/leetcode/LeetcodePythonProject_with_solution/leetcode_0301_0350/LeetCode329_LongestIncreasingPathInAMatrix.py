@@ -4,7 +4,7 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestIncreasingPath  matrix):
         __ n.. matrix: r.. 0
         m, n = l..(matrix), l..(matrix[0])

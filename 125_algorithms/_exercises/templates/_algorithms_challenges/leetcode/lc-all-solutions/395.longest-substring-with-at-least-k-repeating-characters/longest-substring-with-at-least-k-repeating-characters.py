@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ longestSubstring  s, k):
     """
     :type s: str

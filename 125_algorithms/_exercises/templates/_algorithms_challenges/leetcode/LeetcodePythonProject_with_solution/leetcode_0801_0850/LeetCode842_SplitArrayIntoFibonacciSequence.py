@@ -3,7 +3,7 @@ Created on Jan 31, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ splitIntoFibonacci  S):
         """
         :type S: str
@@ -21,7 +21,7 @@ c_ Solution(object):
             s0 = s[i:j]
             num = i..(s0)
             __ num > 2**31-1 o. (s0[0] __ '0' a.. l..(s0) > 1):
-                break
+                _____
             __ l..(res) < 2 o. res[-2] + res[-1] __ num:
                 res.a..(num)
                 __ helper(s, j, res):

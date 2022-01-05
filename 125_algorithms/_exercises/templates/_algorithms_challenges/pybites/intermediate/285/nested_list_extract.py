@@ -37,7 +37,7 @@ ___ extract_ipv4(data):
                     mask = data[3][0].strip('"')
 
                     result.a..((ip_address,mask))
-                    break
+                    _____
 
 
 

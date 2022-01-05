@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numSubarrayProductLessThanK  nums, k):
         """
         :type nums: List[int]

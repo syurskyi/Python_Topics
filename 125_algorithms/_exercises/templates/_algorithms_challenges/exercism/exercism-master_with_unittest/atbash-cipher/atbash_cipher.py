@@ -17,7 +17,7 @@ c_ Atbash:
 
     @staticmethod
     ___ encoded  msg):
-        r.. ''.j..(([char __ char.isdigit() ____ CIPHER[char]
+        r.. ''.j..(([char __ char.i.. ____ CIPHER[char]
                          ___ char __ clean  msg)]))
 
     @staticmethod

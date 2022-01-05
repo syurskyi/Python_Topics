@@ -46,7 +46,7 @@ c_ Solution:
         q    # list  # store the index
         ret    # list
         n = l..(nums)
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             w.... q a.. q[0] <= i-k:
                 q.pop(0)
             w.... q a.. nums[q[-1]] < nums[i]:

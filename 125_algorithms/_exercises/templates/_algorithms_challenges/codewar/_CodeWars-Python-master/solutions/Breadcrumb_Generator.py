@@ -42,7 +42,7 @@ ___ generate_bc(url, separator):
         ___ i, c __ e..(url):
             __ c __ ['?', '#']:
                 url = url[0:i]
-                break
+                _____
 
         menus = url.s..('/')[1:]
         __ menus a.. 'index.' __ menus[-1][0:6]:
@@ -69,7 +69,7 @@ ___ get_element_name(element):
     ___ i, c __ e..(acronyms[-1]):
         __ c __ '.':
             acronyms[-1] = acronyms[-1][:i]
-            break
+            _____
 
     __ l..(element) > 30:
         ___ i, c __ r..(l..(e..(acronyms))):

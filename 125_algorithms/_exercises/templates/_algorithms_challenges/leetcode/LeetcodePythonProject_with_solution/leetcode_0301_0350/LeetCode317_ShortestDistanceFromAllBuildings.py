@@ -4,7 +4,7 @@ Created on Mar 16, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ shortestDistance  grid):
         """
         :type grid: List[List[int]]

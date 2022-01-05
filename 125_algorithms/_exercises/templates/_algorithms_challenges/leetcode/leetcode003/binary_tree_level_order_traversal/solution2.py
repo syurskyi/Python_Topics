@@ -24,7 +24,7 @@ return its level order traversal as:
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ levelOrder  root):
         """
         :type root: TreeNode

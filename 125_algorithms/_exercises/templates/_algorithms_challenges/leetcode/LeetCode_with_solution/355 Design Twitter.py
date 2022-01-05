@@ -43,7 +43,7 @@ __author__ = 'Daniel'
 SZ = 10
 
 
-c_ Tweet(object):
+c_ Tweet(o..):
     central_clk = 0
 
     ___ - , id, nxt_ N..
@@ -56,7 +56,7 @@ c_ Tweet(object):
         r.. - (timestamp - other.timestamp)
 
 
-c_ Twitter(object):
+c_ Twitter(o..):
     """
     need assumption about the frequency of calls of each method
 

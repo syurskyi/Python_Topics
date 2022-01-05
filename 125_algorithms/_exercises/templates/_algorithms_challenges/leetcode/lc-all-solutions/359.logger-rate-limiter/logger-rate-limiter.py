@@ -1,4 +1,4 @@
-c_ Logger(object):
+c_ Logger(o..):
 
   ___ - ):
     """

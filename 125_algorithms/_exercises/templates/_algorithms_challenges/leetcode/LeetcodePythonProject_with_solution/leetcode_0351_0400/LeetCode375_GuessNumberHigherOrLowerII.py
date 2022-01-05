@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getMoneyAmount  n):
         dp = [[0]*(n+1) ___ _ __ r..(n+1)]
         ___ j __ r..(2, n+1):

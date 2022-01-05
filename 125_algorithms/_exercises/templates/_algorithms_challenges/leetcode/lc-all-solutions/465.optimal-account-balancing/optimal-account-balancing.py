@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ minTransfers  transactions):
     balances = c...defaultdict(i..)
     people = set()

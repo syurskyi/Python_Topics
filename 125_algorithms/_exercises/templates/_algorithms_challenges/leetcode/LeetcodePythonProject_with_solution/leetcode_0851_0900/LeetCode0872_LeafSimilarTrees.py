@@ -4,13 +4,13 @@ Created on Oct 3, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ leafSimilar  root1, root2):
         """
         :type root1: TreeNode

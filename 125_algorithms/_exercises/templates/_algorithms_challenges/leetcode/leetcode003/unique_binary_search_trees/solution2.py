@@ -12,7 +12,7 @@ Given n = 3, there are a total of 5 unique BST's.
    2     1         2                 3
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numTrees  n):
         t = [-1 ___ _ __ r..(n + 1)]
         t[0] = 1

@@ -18,7 +18,7 @@ The solution set must not contain duplicate quadruplets.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ fourSum  nums, target):
         """
         :type nums: List[int]

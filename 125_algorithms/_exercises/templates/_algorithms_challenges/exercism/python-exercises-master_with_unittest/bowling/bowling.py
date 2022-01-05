@@ -1,4 +1,4 @@
-c_ BowlingGame(object):
+c_ BowlingGame(o..):
     ___ - ):
         p..
 

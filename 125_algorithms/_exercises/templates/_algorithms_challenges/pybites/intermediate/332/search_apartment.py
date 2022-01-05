@@ -33,7 +33,7 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
     
 
     __ direction __ EAST:
-        result.reverse()
+        result.r..
 
     r.. result
 

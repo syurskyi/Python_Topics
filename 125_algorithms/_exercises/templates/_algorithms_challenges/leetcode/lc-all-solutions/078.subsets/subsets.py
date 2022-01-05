@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ subsets  nums):
     """
     :type nums: List[int]

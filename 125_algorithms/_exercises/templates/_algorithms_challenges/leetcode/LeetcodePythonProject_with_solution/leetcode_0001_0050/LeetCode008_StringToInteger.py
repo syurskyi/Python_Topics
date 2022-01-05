@@ -3,7 +3,7 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ myAtoi  s..):
         """
         :type str: str
@@ -21,8 +21,8 @@ c_ Solution(object):
         s = s.lstrip('0')
         res = 0
         ___ c __ s:
-            __ n.. c.isdigit
-                break
+            __ n.. c.i..
+                _____
             res = 10*res + o..(c) - o..('0')
         __ sig > 0:
             r.. m..(2**32-1, res)

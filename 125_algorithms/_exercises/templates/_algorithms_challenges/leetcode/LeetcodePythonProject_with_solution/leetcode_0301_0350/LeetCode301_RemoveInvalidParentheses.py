@@ -4,7 +4,7 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ removeInvalidParentheses  s):
         rmL, rmR = 0, 0
         ___ c __ s:

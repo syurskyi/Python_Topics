@@ -3,7 +3,7 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ mirrorReflection  p, q):
         """
         :type p: int

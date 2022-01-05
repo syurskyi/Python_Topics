@@ -1,3 +1,3 @@
-c_ Clock(object):
+c_ Clock(o..):
     ___ - ):
         p..

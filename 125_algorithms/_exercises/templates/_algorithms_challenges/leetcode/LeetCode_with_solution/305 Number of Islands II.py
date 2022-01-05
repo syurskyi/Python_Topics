@@ -6,14 +6,14 @@ ____ c.. _______ n..
 __author__ = 'Daniel'
 
 
-c_ UnionFind(object):
+c_ UnionFind(o..):
     """
     Weighted Union Find with path compression
     """
     ___ - , rows, cols):
         # hashing will cause TLE; use direct array access instead
-        pi = [-1 ___ _ __ xrange(rows*cols)]  # item -> pi
-        sz = [-1 ___ _ __ xrange(rows*cols)]  # root -> size
+        pi = [-1 ___ _ __ x..(rows*cols)]  # item -> pi
+        sz = [-1 ___ _ __ x..(rows*cols)]  # root -> size
         count = 0
 
     ___ add  item):
@@ -56,7 +56,7 @@ c_ Solution:
         rows = n
         cols = m
         unroll = l.... x, y: x*cols + y  # hash will be slower
-        mat = [[0 ___ _ __ xrange(cols)] ___ _ __ xrange(rows)]
+        mat = [[0 ___ _ __ x..(cols)] ___ _ __ x..(rows)]
         uf = UnionFind(rows, cols)
         ret    # list
         ___ op __ operators:

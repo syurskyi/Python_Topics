@@ -4,7 +4,7 @@ Created on Feb 15, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findRepeatedDnaSequences  s):
         """
         :type s: str

@@ -6,7 +6,7 @@ c_ Creature:
         name  name
         level  the_level
 
-    ___ __repr__
+    ___  -r
         r.. "Creature: {} of level {}".f..(
             name, level
         )

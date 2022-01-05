@@ -14,7 +14,7 @@ ___ read4(buf):
     r.. 0
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         prev    # list
 
@@ -32,7 +32,7 @@ c_ Solution(object):
 
         idx = l  # the next reading
         w.... idx < n:
-            buf4 = ["" ___ _ __ xrange(4)]
+            buf4 = ["" ___ _ __ x..(4)]
             r = read4(buf4)
             __ idx+r < n:
                 buf[idx:idx+r] = buf4[:r]

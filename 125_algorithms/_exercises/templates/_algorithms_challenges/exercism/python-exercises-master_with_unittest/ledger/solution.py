@@ -10,7 +10,7 @@ ___ truncate(s, length=25):
     r.. s[:length - 3] + '...'
 
 
-c_ LCInfo(object):
+c_ LCInfo(o..):
     ___ - , locale, currency, columns):
         columns = columns
         __ locale __ 'en_US':

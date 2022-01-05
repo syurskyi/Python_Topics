@@ -33,7 +33,7 @@ c_ Solution:
             w.... j != i % n:
                 __ carry + gas[j] - cost[j] < 0:
                     flag = F..
-                    break
+                    _____
                 j = (j + 1) % n
             __ flag:
                 r.. i

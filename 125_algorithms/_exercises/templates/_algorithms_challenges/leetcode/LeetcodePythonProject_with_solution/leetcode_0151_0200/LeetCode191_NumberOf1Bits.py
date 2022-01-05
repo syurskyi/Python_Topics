@@ -3,7 +3,7 @@ Created on Feb 16, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ hammingWeight  n):
         """
         :type n: int

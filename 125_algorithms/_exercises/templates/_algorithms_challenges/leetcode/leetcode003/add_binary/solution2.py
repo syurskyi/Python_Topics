@@ -7,7 +7,7 @@ b = "1"
 Return "100".
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ addBinary  a, b):
         """
         :type a: str

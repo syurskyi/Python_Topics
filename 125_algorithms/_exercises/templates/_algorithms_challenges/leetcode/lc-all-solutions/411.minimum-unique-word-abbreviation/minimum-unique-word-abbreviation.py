@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ minAbbreviation  target, dictionary):
     """
     :type target: str
@@ -15,7 +15,7 @@ c_ Solution(object):
     ___ m..(src, dest):
       i = 0
       ___ c __ src:
-        __ c.isdigit
+        __ c.i..
           jump = i..(c)
           i += jump
         ____:
@@ -37,7 +37,7 @@ c_ Solution(object):
       ___ d __ dictionary:
         __ m..(w, d):
           allMiss = F..
-          break
+          _____
       __ allMiss:
         r.. "".j..(w)
     r.. N..

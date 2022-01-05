@@ -25,7 +25,7 @@ c_ Solution:
         """
         sig = 1
         ret = 0
-        ___ i __ xrange(l..(s)-1, -1, -1):
+        ___ i __ x..(l..(s)-1, -1, -1):
             ret += sig*(o..(s[i])-o..('A')+1)
             sig *= 26
 

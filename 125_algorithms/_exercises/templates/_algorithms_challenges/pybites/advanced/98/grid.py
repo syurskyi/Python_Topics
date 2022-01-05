@@ -45,7 +45,7 @@ ___ print_sequence_route(grid, start_coordinates_ N..
                         previous_direction = direction
                     print(current_value + 1,end=' ')
 
-                    break
+                    _____
 
         current_row,current_col = neighbor_x,neighbor_y
         current_value += 1

@@ -8,7 +8,7 @@ ___ period_converter(period):
     r.. inner
 
 
-c_ SpaceAge(object):
+c_ SpaceAge(o..):
 
     on_mercury = period_converter(7600530.24)
     on_venus = period_converter(19413907.2)

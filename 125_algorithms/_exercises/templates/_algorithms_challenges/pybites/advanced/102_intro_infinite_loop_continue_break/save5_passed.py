@@ -11,7 +11,7 @@ ___ print_colors
         color = input("Enter a color or enter 'quit'")
         __ color __ "quit":
             print("bye")
-            break
+            _____
         ____ color __ VALID_COLORS:
             print(color.lower())
         ____:

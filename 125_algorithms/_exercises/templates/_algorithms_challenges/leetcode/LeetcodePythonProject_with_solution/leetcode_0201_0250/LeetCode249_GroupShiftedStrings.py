@@ -4,7 +4,7 @@ Created on Feb 28, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ groupStrings  strings):
         """
         :type strings: List[str]

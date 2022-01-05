@@ -9,13 +9,13 @@ implement both?
 """
 
 # Definition for singly-linked list.
-c_ ListNode(object):
+c_ ListNode(o..):
     ___ - , x):
         val = x
         next = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reverseList  head):
         """
         :type head: ListNode

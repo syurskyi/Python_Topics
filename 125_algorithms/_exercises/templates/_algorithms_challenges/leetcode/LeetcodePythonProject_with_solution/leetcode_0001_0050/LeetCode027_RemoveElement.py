@@ -3,7 +3,7 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ removeElement  nums, val):
         """
         :type nums: List[int]

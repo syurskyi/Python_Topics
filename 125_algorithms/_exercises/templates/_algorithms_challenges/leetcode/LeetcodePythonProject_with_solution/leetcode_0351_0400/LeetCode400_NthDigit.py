@@ -4,7 +4,7 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findNthDigit  n):
         length, count, start = 1, 9, 1
         w.... n > length*count:

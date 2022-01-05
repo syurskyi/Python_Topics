@@ -19,14 +19,14 @@ _______ math
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getPermutation  n, k):
         k -= 1
 
         array = r..(1, n+1)
         k %= math.factorial(n)
         ret    # list
-        ___ i __ xrange(n-1, -1, -1):
+        ___ i __ x..(n-1, -1, -1):
             idx, k = divmod(k, math.factorial(i))
             ret.a..(array.pop(idx))
 
@@ -42,20 +42,20 @@ c_ Solution(object):
         :return: String
         """
         # factorial
-        fac = [1 ___ _ __ xrange(n)]
-        ___ i __ xrange(1, n):
+        fac = [1 ___ _ __ x..(n)]
+        ___ i __ x..(1, n):
             fac[i] = fac[i-1]*i
 
         # solve equation
         k -= 1  # index starting from 0
-        a = [0 ___ _ __ xrange(n)]
-        ___ i __ xrange(n-1, -1, -1):
+        a = [0 ___ _ __ x..(n)]
+        ___ i __ x..(n-1, -1, -1):
             a[n-1-i] = k/fac[i]  # a[i] = k/fac[i]
             k %= fac[i]
 
         # post-process
         candidate = r..(1, n+1)  # sorted
-        visited = [F.. ___ _ __ xrange(n)]
+        visited = [F.. ___ _ __ x..(n)]
         ___ ind, val __ e..(a):
             i = 0  # pointer
             cnt = 0  # counter
@@ -63,7 +63,7 @@ c_ Solution(object):
                 __ visited[i]:
                     i += 1
                 ____:
-                    __ cnt __ val: break
+                    __ cnt __ val: _____
                     cnt += 1
                     i += 1
 
@@ -97,12 +97,12 @@ c_ Solution(object):
         k -= 1  # index starting from 0
 
         factorial = 1  # (n-1)!
-        ___ i __ xrange(1, n):
+        ___ i __ x..(1, n):
             factorial *= i
 
         result    # list
         array = r..(1, n+1)
-        ___ i __ r..(xrange(1, n)):
+        ___ i __ r..(x..(1, n)):
             index = k/factorial
             result.a..(array[index])
             array = array[:index]+array[index+1:]

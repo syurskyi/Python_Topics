@@ -3,7 +3,7 @@ c_ Solution:
     # @return a list of integer digits
     ___ plusOne  d..):
         # In-place version
-        d...reverse()
+        d...r..
         d = d..[0]
         d..[0] = (d + 1) % 10
         carry = (d + 1) / 10
@@ -12,5 +12,5 @@ c_ Solution:
             carry = (d + carry) / 10
         __ carry __ 1:
             d...a..(1)
-        d...reverse()
+        d...r..
         r.. d..

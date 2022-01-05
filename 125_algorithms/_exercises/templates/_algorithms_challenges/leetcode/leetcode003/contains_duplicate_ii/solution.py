@@ -4,7 +4,7 @@ distinct indices i and j in the array such that nums[i] = nums[j] and the
 difference between i and j is at most k.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ containsNearbyDuplicate  nums, k):
         """
         :type nums: List[int]

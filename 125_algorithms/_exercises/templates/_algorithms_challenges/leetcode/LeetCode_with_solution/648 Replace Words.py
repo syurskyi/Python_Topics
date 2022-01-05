@@ -82,7 +82,7 @@ c_ Solution:
                 searched = Trie.s..(child, word, 0)
                 __ searched:
                     ret.a..(searched)
-                    break
+                    _____
             ____:
                 ret.a..(word)
 

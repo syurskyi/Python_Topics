@@ -27,7 +27,7 @@ What limitation we need to add to the question to allow negative numbers?
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ combinationSum4  nums, target):
         """
         Let F[i] be the number of combinations ways for number i
@@ -39,12 +39,12 @@ c_ Solution(object):
         :type target: int
         :rtype: int
         """
-        F = [0 ___ _ __ xrange(target + 1)]
+        F = [0 ___ _ __ x..(target + 1)]
         nums = filter(l.... x: x <= target, nums)
         ___ k __ nums:
             F[k] = 1
 
-        ___ i __ xrange(target + 1):
+        ___ i __ x..(target + 1):
             ___ k __ nums:
                 __ i - k >= 0:
                     F[i] += F[i-k]

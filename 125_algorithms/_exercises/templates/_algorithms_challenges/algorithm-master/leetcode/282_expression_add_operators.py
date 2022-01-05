@@ -30,7 +30,7 @@ c_ Solution:
         ___ i __ r..(start, l..(s)):
             __ i > start a.. s[start] __ '0':
                 # only allow i == start and its `0`
-                break
+                _____
 
             sa = s[start:i + 1]
             a = i..(sa)

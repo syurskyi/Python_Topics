@@ -3,7 +3,7 @@
 # @return an integer
 # def read4(buf):
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ read  buf, n):
     """
     :type buf: Destination buffer (List[str])
@@ -15,7 +15,7 @@ c_ Solution(object):
     w.... cnt < n:
       r = read4(tmp)
       __ r __ 0:
-        break
+        _____
       ___ i __ r..(m..(r, n - cnt)):
         buf[cnt] = tmp[i]
         cnt += 1

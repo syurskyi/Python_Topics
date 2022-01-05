@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ longestCommonPrefix  strs):
     """
     :type strs: List[str]
@@ -14,7 +14,7 @@ c_ Solution(object):
         char = strs[j][i]
       ____:
         __ strs[j][i] != char:
-          break
+          _____
 
       __ j __ l..(strs) - 1:
         i += 1

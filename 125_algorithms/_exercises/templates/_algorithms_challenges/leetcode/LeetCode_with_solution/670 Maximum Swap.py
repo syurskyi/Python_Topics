@@ -35,7 +35,7 @@ c_ Solution:
             __ stk a.. stk[-1][1] > nums[i]:
                 j = stk[-1][0]
                 nums[i], nums[j] = nums[j], nums[i]
-                break
+                _____
 
         r.. i..("".j..(nums))
 

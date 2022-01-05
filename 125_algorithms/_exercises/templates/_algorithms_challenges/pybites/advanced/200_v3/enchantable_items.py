@@ -29,7 +29,7 @@ c_ Enchantment:
     ___ __post_init__
         name = name.r..('_', ' ')
 
-    ___ __repr__
+    ___  -r
         r.. f'{name} ({max_level}): {description}'
 
 
@@ -46,7 +46,7 @@ c_ Item:
     # def __post_init__(self):
     #     self.name = self.name.replace('_',' ').title()
 
-    ___ __repr__
+    ___  -r
         en = [f'  [{chant.max_level}] {chant.id_name}'
               ___ chant __ s..(enchantments, key=l.... x : x.id_name)]
         r.. f'{name.r..("_"," ").t..}: \n' + '\n'.j..(en)

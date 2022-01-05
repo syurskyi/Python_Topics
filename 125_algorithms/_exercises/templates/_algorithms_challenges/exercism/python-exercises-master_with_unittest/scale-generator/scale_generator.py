@@ -1,3 +1,3 @@
-c_ Scale(object):
+c_ Scale(o..):
     ___ - ):
         p..

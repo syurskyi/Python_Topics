@@ -24,7 +24,7 @@ ___ justify(text, width):
         w.... space_need:
             ___ index __ r..(l..(line_words) - 1):
                 __ space_need __ 0:
-                    break
+                    _____
                 line_words[index] += ' '
                 space_need -= 1
         lines[i] = ''.j..(line_words) + '\n'

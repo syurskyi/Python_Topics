@@ -18,7 +18,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ intersect  nums1, nums2):
         """
         Hash table

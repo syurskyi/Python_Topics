@@ -25,11 +25,11 @@ ___ filter_names_1(names):
         __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha
             _____
         __ name.l..[0] __ QUIT_CHAR:
-            break
+            _____
         __ cnt < 5:
             filtered.a..(name)
         ____:
-            break
+            _____
         cnt += 1
     r.. filtered
 
@@ -42,9 +42,9 @@ ___ filter_names_2(names):
         __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha
             _____
         __ name.l..[0] __ QUIT_CHAR:
-            break
+            _____
         __ cnt < 5:
             cnt += 1
             y.. name
         ____:
-            break
+            _____

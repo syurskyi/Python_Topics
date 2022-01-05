@@ -3,7 +3,7 @@ ____ functools _______ wraps
 MAX_RETRIES = 3
 
 
-c_ MaxRetriesException(Exception):
+c_ MaxRetriesException(E..):
     p..
 
 
@@ -17,7 +17,7 @@ ___ retry(func):
         ___ i __ r..(MAX_RETRIES):
             ___
                 func $ $$
-            ______ Exception __ exc:
+            ______ E.. __ exc:
                 print(exc)
                 _____
             ____:

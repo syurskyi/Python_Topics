@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ isReflected  points):
     """
     :type points: List[List[int]]

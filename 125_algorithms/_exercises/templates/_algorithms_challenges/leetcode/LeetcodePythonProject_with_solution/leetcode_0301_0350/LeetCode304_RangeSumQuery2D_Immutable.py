@@ -4,7 +4,7 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-c_ NumMatrix(object):
+c_ NumMatrix(o..):
     ___ - , matrix):
         __ n.. matrix:
             tbl = N..

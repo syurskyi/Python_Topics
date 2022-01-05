@@ -3,7 +3,7 @@ Created on Mar 18, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestMountain_twoPassesONSpace  A):
         """
         :type A: List[int]

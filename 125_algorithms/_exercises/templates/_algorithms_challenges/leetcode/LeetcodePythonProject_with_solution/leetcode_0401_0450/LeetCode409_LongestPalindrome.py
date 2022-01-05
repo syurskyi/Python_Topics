@@ -4,7 +4,7 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestPalindrome  s):
         hashmap    # dict
         ___ c __ s:

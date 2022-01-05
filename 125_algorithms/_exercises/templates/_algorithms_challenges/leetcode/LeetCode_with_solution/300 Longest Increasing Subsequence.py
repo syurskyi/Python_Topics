@@ -15,7 +15,7 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ lengthOfLIS  A):
         """
         MIN: min of index last value of LIS of a particular length
@@ -26,7 +26,7 @@ c_ Solution(object):
             r.. 0
 
         n = l..(A)
-        MIN = [-1 ___ _ __ xrange(n+1)]
+        MIN = [-1 ___ _ __ x..(n+1)]
         k = 1
         MIN[k] = A[0]  # store value rather than index
         ___ v __ A[1:]:
@@ -61,11 +61,11 @@ c_ Solution(object):
             r.. 0
 
         n = l..(A)
-        MIN = [-1 ___ _ __ xrange(n+1)]
-        RET = [-1 ___ _ __ xrange(n)]
+        MIN = [-1 ___ _ __ x..(n+1)]
+        RET = [-1 ___ _ __ x..(n)]
         l = 1
         MIN[l] = 0
-        ___ i __ xrange(1, n):
+        ___ i __ x..(1, n):
             __ A[i] > A[MIN[l]]:
                 l += 1
                 MIN[l] = i
@@ -82,7 +82,7 @@ c_ Solution(object):
         ret    # list
         w... T...
             ret.a..(A[cur])
-            __ RET[cur] __ -1: break
+            __ RET[cur] __ -1: _____
             cur = RET[cur]
 
         ret = ret[::-1]
@@ -107,12 +107,12 @@ c_ Solution(object):
             r.. 0
 
         n = l..(A)
-        F = [1 ___ _ __ xrange(n)]
+        F = [1 ___ _ __ x..(n)]
         maxa = 1
-        ___ i __ xrange(1, n):
+        ___ i __ x..(1, n):
             F[i] = m..(
                 F[j] + 1 __ A[i] > A[j] ____ 1
-                ___ j __ xrange(i)
+                ___ j __ x..(i)
             )
             maxa = m..(maxa, F[i])
 

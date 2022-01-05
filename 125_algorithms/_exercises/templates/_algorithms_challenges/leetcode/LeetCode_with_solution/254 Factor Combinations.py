@@ -36,7 +36,7 @@ c_ Solution:
 
         n = cur.pop()
         start = cur[-1] __ cur ____ 2
-        ___ i __ xrange(start, i..(sqrt(n))+1):
+        ___ i __ x..(start, i..(sqrt(n))+1):
             __ n % i __ 0:
                 cur.a..(i)
                 cur.a..(n/i)
@@ -48,7 +48,7 @@ c_ Solution:
             ret.a..(l..(cur)+[n])
 
         start = cur[-1] __ cur ____ 2
-        ___ i __ xrange(start, i..(sqrt(n))+1):
+        ___ i __ x..(start, i..(sqrt(n))+1):
             __ n%i __ 0:
                 cur.a..(i)
                 dfs(n/i, cur, ret)
@@ -63,7 +63,7 @@ c_ Solution:
         ____:
             start = 2
 
-        ___ i __ xrange(start, i..(sqrt(n+1))):
+        ___ i __ x..(start, i..(sqrt(n+1))):
             __ n%i __ 0:
                 cur.a..(i)
                 dfs_TLE(n/i, cur, ret)

@@ -2,7 +2,7 @@ _______ numpy __ np
 _______ pandas __ pd
 
 
-___ return_at_index(ser: pd.Series, idx: i..) __ object:
+___ return_at_index(ser: pd.Series, idx: i..) __ o..:
     """Return the Object at the given index of the Series
     If you want to be extra careful catch and raise an error if
        the index does not exist.

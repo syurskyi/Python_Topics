@@ -1,4 +1,4 @@
-c_ Allergies(object):
+c_ Allergies(o..):
 
     ___ - , number):
         p..

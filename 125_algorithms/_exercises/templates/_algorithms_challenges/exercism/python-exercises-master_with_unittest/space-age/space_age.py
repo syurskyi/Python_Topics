@@ -1,3 +1,3 @@
-c_ SpaceAge(object):
+c_ SpaceAge(o..):
     ___ - ):
         p..

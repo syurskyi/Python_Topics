@@ -3,12 +3,12 @@ Created on Mar 22, 2017
 
 @author: MT
 '''
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , s=0, e=0):
         start = s
         end = e
 
-c_ SummaryRanges(object):
+c_ SummaryRanges(o..):
     ___ - ):
         intervals    # list
     

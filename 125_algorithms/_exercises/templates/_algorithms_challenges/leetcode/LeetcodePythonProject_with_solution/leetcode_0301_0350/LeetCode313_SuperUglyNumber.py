@@ -4,7 +4,7 @@ Created on Mar 15, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ nthSuperUglyNumber  n, primes):
         times = [0]*l..(primes)
         res = [1]

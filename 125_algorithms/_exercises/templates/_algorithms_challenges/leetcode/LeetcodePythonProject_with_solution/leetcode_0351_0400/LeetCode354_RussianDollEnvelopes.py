@@ -4,7 +4,7 @@ Created on Mar 22, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxEnvelopes  envelopes):
         _______ bisect
         length = 0

@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ HighScores(object):
+c_ HighScores(o..):
     ___ - , scores):
         scores = scores
 

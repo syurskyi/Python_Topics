@@ -4,7 +4,7 @@ Created on Apr 3, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isSubsequence  s, t):
         _______ bisect
         hashmap    # dict

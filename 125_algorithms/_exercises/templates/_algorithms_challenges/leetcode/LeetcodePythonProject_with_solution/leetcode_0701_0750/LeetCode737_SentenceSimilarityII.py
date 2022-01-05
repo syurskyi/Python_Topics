@@ -3,7 +3,7 @@ Created on Mar 13, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ areSentencesSimilarTwo  words1, words2, pairs):
         """
         :type words1: List[str]

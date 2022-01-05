@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ addOperators  num, target):
     res, target    # list, target
     ___ i __ r..(1, l..(num) + 1):

@@ -12,7 +12,7 @@ ___ knows(a, b):
     """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findCelebrity  n):
         """
         :type n: int
@@ -29,7 +29,7 @@ c_ Solution(object):
             i, j = nxt_i, nxt_j
 
         celebrity = i
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
                 r.. -1
 
@@ -57,7 +57,7 @@ c_ Solution(object):
             r.. -1
 
         celebrity = V.pop()
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
                 r.. -1
 

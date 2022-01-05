@@ -3,13 +3,13 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , val):
         val = val
         children    # dict
         isLeaf = F..
 
-c_ MagicDictionary(object):
+c_ MagicDictionary(o..):
 
     ___ - ):
         """

@@ -52,6 +52,6 @@ c_ Solution:
                     if jump from `j` can reach `i`
                     """
                     dp[i] = T..
-                    break
+                    _____
 
         r.. dp[n - 1]

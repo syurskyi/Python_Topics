@@ -57,15 +57,15 @@ c_ Solution:
         :param A:
         :return:
         """
-        cnt = [0 ___ _ __ xrange(32)]
+        cnt = [0 ___ _ __ x..(32)]
 
         ___ elmt __ A:
-            ___ i __ xrange(32):
+            ___ i __ x..(32):
                 __ elmt>>i&1__1:
                     cnt[i] = (cnt[i]+1)%3
 
         result = 0
-        ___ i __ xrange(32):
+        ___ i __ x..(32):
             result |= cnt[i]<<i
 
         r.. result

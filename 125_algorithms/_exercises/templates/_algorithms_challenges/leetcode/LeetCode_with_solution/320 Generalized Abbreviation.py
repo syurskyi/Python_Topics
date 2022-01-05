@@ -7,7 +7,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ generateAbbreviations  word):
         """
         backtracking, pivoting letter
@@ -18,7 +18,7 @@ c_ Solution(object):
             r.. [""]
 
         ret    # list
-        ___ i __ xrange(l..(word)+1):
+        ___ i __ x..(l..(word)+1):
             left_num = s..(i) __ i ____ ""
             ___ right __ generateAbbreviations(word[i+1:]):
                 cur = left_num + word[i:i+1] + right
@@ -27,7 +27,7 @@ c_ Solution(object):
         r.. ret
 
 
-c_ SolutionTLE(object):
+c_ SolutionTLE(o..):
     ___ - ):
         cache = defaultdict(l..)
 
@@ -43,14 +43,14 @@ c_ SolutionTLE(object):
     ___ dfs  word):
         __ word n.. __ cache:
             ret    # list
-            ___ l __ xrange(1, l..(word)+1):
+            ___ l __ x..(1, l..(word)+1):
                 pivot = s..(l)
-                ___ i __ xrange(l..(word)-l+1):
+                ___ i __ x..(l..(word)-l+1):
                     lefts = dfs(word[:i])
                     rights = dfs(word[i+l:])
                     ___ left __ lefts:
                         ___ right __ rights:
-                            __ left a.. left[-1].isdigit() o. right a.. right[0].isdigit
+                            __ left a.. left[-1].i.. o. right a.. right[0].i..
                                 _____
 
                             ret.a..(left+pivot+right)

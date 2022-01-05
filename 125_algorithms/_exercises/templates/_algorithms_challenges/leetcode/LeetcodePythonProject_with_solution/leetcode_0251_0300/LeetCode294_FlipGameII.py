@@ -4,7 +4,7 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canWin  s):
         """
         :type s: str
@@ -22,7 +22,7 @@ c_ Solution(object):
                 s0 = s[:i]+'--'+s[i+2:]
                 __ n.. helper(s0, memo):
                     otherWin = F..
-                    break
+                    _____
         memo[s] = n.. otherWin
         r.. memo[s]
     

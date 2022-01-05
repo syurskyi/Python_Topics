@@ -5,13 +5,13 @@ Created on Apr 15, 2017
 '''
 ____ lib2to3.pytree _______ Node
 
-c_ TrieNode(object):
+c_ TrieNode(o..):
     ___ - , val):
         val = val
         children    # dict
         candidates = set()
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wordSquares  words):
         __ n.. words: r.. []
         root = TrieNode(-1)

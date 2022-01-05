@@ -4,7 +4,7 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-c_ Vector2D(object):
+c_ Vector2D(o..):
     ___ - , vec2d):
         values = [row ___ row __ vec2d __ row]
         row = 0

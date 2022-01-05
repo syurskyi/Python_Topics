@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ FreqStack(object):
+c_ FreqStack(o..):
 
     ___ - ):
         hashmap    # dict
@@ -26,7 +26,7 @@ c_ FreqStack(object):
         r.. val
 
 
-c_ ListNode(object):
+c_ ListNode(o..):
     ___ - , val):
         val = val
         freq = 0
@@ -35,7 +35,7 @@ c_ ListNode(object):
         indexes    # list
 
 
-c_ FreqStack_self(object):
+c_ FreqStack_self(o..):
 
     ___ - ):
         idx = 0

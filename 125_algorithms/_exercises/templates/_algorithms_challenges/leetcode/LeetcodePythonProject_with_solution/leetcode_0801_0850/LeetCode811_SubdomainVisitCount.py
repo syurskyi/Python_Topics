@@ -3,7 +3,7 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ subdomainVisits  cpdomains):
         """
         :type cpdomains: List[str]

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
     ___ orderlyQueue  S, K):
         """
         :type S: str
@@ -13,9 +13,9 @@ c_ Solution(object):
             ___ i1 __ r..(n):
                 __ S[(i+i1)%n] < S[(minIdx+i1)%n]:
                     minIdx = i
-                    break
+                    _____
                 ____ S[(i+i1)%n] > S[(minIdx+i1)%n]:
-                    break
+                    _____
         r.. S[minIdx:] + S[:minIdx]
 
     ___ test

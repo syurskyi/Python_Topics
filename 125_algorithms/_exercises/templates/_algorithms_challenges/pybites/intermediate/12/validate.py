@@ -10,13 +10,13 @@ pybites = User(name='PyBites', role=ADMIN, expired=F..)
 USERS = (julian, bob, pybites)
 
 # define exception classes here
-c_ UserDoesNotExist(Exception):
+c_ UserDoesNotExist(E..):
     p..
 
-c_ UserAccessExpired(Exception):
+c_ UserAccessExpired(E..):
     p..
 
-c_ UserNoPermission(Exception):
+c_ UserNoPermission(E..):
     p..
 
 ___ get_secret_token(username):

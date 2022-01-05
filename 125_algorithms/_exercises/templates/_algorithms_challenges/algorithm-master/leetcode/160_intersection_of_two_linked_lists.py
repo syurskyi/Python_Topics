@@ -5,7 +5,7 @@
 #         self.next = None
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getIntersectionNode  A, B):
         """
         :type A, B: ListNode

@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minMoves2  nums):
         __ n.. nums: r.. 0
         nums.s..()

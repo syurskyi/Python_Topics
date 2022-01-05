@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ hammingDistance  x, y):
         count = 0
         ___ i __ r..(32):

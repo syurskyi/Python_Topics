@@ -4,7 +4,7 @@ Created on Sep 11, 2019
 @author: tongq
 '''
 _______ bisect
-c_ ExamRoom(object):
+c_ ExamRoom(o..):
 
     ___ - , N):
         """

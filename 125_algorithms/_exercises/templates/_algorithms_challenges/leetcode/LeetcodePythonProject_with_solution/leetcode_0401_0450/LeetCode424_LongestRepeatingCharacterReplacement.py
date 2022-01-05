@@ -4,7 +4,7 @@ Created on Apr 13, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ characterReplacement  s, k):
         arr = [0]*26
         maxCount = 0

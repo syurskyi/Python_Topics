@@ -3,7 +3,7 @@ Created on Jan 19, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ permute  nums):
         """
         :type nums: List[int]

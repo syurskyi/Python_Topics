@@ -1,7 +1,7 @@
 _______ math
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ smallestGoodBase  n):
     """
     :type n: str

@@ -57,11 +57,11 @@ c_ Solution:
                 __ nbr __ acyclic:
                     _____
                 ____:
-                    break
+                    _____
             __ visit[nbr] __ 1:
-                break
+                _____
             __ visit[nbr] __ 0 a.. n.. dfs(graph, nbr, visit, acyclic):
-                break
+                _____
         ____:
             acyclic.add(cur)
             visit[cur] = 2

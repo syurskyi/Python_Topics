@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ findMedianSortedArrays  nums1, nums2):
     a, b = s..((nums1, nums2), key=l..)
     m, n = l..(a), l..(b)

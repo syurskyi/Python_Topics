@@ -3,7 +3,7 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ killProcess  pid, ppid, kill):
         """
         :type pid: List[int]

@@ -14,9 +14,9 @@ c_ Solution:
         """
         ret = 0
         BITS = 32
-        ___ i __ xrange(BITS):
+        ___ i __ x..(BITS):
             ret += n&1
-            __ i __ BITS-1: break
+            __ i __ BITS-1: _____
             ret <<= 1
             n >>= 1
 

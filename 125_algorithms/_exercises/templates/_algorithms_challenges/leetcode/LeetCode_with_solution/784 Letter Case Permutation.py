@@ -42,7 +42,7 @@ c_ Solution:
             ret.a..(l..(lst))
             r..
 
-        __ S_lst[i].isdigit
+        __ S_lst[i].i..
             lst.a..(S_lst[i])
             dfs(lst, S_lst, i + 1)
             lst.pop()

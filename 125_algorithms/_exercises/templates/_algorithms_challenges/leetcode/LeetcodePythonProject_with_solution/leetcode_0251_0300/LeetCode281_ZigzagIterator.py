@@ -4,7 +4,7 @@ Created on Mar 6, 2017
 @author: MT
 '''
 
-c_ ZigzagIterator(object):
+c_ ZigzagIterator(o..):
     ___ - , v1, v2):
         vec = [v1, v2]
         pointer = 0

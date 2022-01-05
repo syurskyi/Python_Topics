@@ -4,7 +4,7 @@ Created on Mar 9, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getHint  secret, guess):
         bulls = set()
         hashmap    # dict

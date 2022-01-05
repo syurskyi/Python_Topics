@@ -4,14 +4,14 @@ Created on Apr 15, 2017
 @author: MT
 '''
 
-c_ Bucket(object):
+c_ Bucket(o..):
     ___ - , value):
         keySet = set()
         value = value
         next = N..
         prev = N..
 
-c_ AllOne(object):
+c_ AllOne(o..):
     ___ - ):
         keyBucketMap    # dict
         head = N..

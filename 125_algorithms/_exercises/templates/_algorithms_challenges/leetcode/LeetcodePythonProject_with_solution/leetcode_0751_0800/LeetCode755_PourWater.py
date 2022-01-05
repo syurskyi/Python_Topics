@@ -3,7 +3,7 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ pourWater  heights, V, K):
         """
         :type heights: List[int]
@@ -17,7 +17,7 @@ c_ Solution(object):
             idx = K
             ___ i __ r..(K-1, -1, -1):
                 __ heights[i] > heights[idx]:
-                    break
+                    _____
                 ____ heights[i] < heights[idx]:
                     idx = i
             __ idx != K:
@@ -26,7 +26,7 @@ c_ Solution(object):
                 _____
             ___ i __ r..(K+1, l..(heights)):
                 __ heights[i] > heights[idx]:
-                    break
+                    _____
                 ____ heights[i] < heights[idx]:
                     idx = i
             heights[idx] += 1

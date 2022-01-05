@@ -4,7 +4,7 @@ Created on Apr 26, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findAllConcatenatedWordsInADict  words):
         """
         :type words: List[str]
@@ -28,7 +28,7 @@ c_ Solution(object):
                 __ dp[j]:
                     __ word1[j:i] __ hashset:
                         dp[i] = T..
-                        break
+                        _____
         r.. dp[-1]
     
     ___ test

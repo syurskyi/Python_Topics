@@ -14,7 +14,7 @@ ___ get_pass_and_swap_number(array):
         passed += 1
 
         __(previous_swap __ swapped):
-            break  
+            _____
     
 
     print (passed, swapped)

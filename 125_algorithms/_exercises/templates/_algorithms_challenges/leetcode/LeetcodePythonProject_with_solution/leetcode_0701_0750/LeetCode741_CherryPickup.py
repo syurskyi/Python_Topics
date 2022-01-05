@@ -3,7 +3,7 @@ Created on Mar 20, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ cherryPickup  grid):
         """
         :type grid: List[List[int]]

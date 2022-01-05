@@ -41,7 +41,7 @@ c_ Solution:
                 i += 1
                 j -= 1
             ____:
-                break
+                _____
 
         r.. "".j..(lst)
 

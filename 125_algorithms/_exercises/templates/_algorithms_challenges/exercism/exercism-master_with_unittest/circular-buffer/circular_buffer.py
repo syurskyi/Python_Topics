@@ -32,9 +32,9 @@ c_ CircularBuffer:
         r.. l..(buffer) __ capacity
 
 
-c_ BufferFullException(Exception):
+c_ BufferFullException(E..):
     p..
 
 
-c_ BufferEmptyException(Exception):
+c_ BufferEmptyException(E..):
     p..

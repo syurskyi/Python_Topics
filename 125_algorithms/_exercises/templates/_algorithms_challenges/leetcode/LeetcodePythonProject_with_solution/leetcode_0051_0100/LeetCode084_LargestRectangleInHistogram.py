@@ -4,7 +4,7 @@ Created on Jan 25, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ largestRectangleArea  heights):
         """
         :type heights: List[int]

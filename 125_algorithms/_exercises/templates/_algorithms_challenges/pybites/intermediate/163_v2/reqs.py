@@ -26,7 +26,7 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
             __ n2 > n1:
                 upgrades.a..(package)
             ____ n2 < n1:
-                break
+                _____
 
 
     r.. upgrades

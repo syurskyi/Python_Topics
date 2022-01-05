@@ -4,7 +4,7 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rob  nums):
         """
         :type nums: List[int]

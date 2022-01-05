@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ kSmallestPairs  nums1, nums2, k):
     """
     :type nums1: List[int]

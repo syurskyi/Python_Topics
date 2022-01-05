@@ -24,7 +24,7 @@ class NestedInteger(object):
 """
 
 
-c_ NestedIterator(object):
+c_ NestedIterator(o..):
     ___ - , nestedList):
         stack = [[nestedList, 0]]
 

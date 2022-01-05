@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ fourSumCount  A, B, C, D):
     """
     :type A: List[int]

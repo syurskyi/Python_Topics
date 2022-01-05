@@ -1,6 +1,6 @@
 _______ c..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ catMouseGame  graph):
         """
         :type graph: List[List[int]]

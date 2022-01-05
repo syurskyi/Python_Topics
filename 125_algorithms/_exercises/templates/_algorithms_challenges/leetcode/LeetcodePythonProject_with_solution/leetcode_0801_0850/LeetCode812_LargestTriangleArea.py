@@ -3,7 +3,7 @@ Created on Apr 29, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ largestTriangleArea  points):
         """
         :type points: List[List[int]]

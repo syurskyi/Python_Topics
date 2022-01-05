@@ -37,8 +37,8 @@ c_ Solution:
             w... T...
                 ___
                     lists[i] = mergeTwoLists(lists[i], lists[i+factor/2])
-                ______ IndexError:
-                    break
+                ______ I..
+                    _____
                 i += factor
 
             length /= 2
@@ -57,7 +57,7 @@ c_ Solution:
             r..
 
         result = lists[0]
-        ___ i __ xrange(1, l..(lists)):
+        ___ i __ x..(1, l..(lists)):
             result = mergeTwoLists(result, lists[i])
         r.. result
 

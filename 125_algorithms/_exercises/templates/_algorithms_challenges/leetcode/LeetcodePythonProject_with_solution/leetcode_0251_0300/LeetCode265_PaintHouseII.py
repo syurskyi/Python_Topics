@@ -4,7 +4,7 @@ Created on Mar 3, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minCostII  costs):
         """
         :type costs: List[List[int]]

@@ -4,7 +4,7 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ RandomizedCollection(object):
+c_ RandomizedCollection(o..):
     ___ - ):
         vals    # list
         pos    # dict

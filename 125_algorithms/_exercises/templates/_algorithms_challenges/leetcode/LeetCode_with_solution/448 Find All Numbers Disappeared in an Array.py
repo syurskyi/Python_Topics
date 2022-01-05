@@ -23,7 +23,7 @@ c_ Solution:
             w... T...
                 target = A[idx] - 1
                 __ idx __ target o. A[idx] __ A[target]:
-                    break 
+                    _____ 
                 A[idx], A[target] = A[target], A[idx]
 
         missing    # list

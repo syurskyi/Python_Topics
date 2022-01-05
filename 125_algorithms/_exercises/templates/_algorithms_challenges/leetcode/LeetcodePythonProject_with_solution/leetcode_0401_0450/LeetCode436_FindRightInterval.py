@@ -5,12 +5,12 @@ Created on Apr 16, 2017
 '''
 
 # Definition for an interval.
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , s=0, e=0):
         start = s
         end = e
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findRightInterval  intervals):
         sortedList = [(interval.start, i) ___ i, interval __ e..(intervals)]
         sortedList.s..()

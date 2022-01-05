@@ -1,7 +1,7 @@
 _______ json
 
 
-c_ RestAPI(object):
+c_ RestAPI(o..):
 
     ___ - , database_ N..
         database = database

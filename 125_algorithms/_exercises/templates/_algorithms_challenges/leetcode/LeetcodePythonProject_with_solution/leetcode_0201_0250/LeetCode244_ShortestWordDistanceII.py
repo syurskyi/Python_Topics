@@ -3,7 +3,7 @@ Created on May 14, 2018
 
 @author: tongq
 '''
-c_ WordDistance(object):
+c_ WordDistance(o..):
 
     ___ - , words):
         """

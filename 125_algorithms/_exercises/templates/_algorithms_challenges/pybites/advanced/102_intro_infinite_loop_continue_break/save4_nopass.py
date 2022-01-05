@@ -13,7 +13,7 @@ ___ print_colors
             print(color.lower())
         ____ color __ input("quit"):
             print("bye")
-            break
+            _____
         ____:
             print("Not a valid color")
         p..

@@ -7,7 +7,7 @@ algorithm to find the maximum profit.
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProfit  A):
         """
         Maximum subarray sum
@@ -18,9 +18,9 @@ c_ Solution(object):
             r.. 0
 
         n = l..(A)
-        F = [0 ___ _ __ xrange(n+1)]
+        F = [0 ___ _ __ x..(n+1)]
         maxa = 0
-        ___ i __ xrange(2, n+1):
+        ___ i __ x..(2, n+1):
             F[i] = m..(F[i-1] + A[i-1] - A[i-2], 0)  # revert the previous transaction
             maxa = m..(maxa, F[i])
 
@@ -41,14 +41,14 @@ c_ Solution(object):
         __ l..(prices) <= 1:
             r.. 0
         delta_prices    # list
-        ___ i __ xrange(1, l..(prices)):
+        ___ i __ x..(1, l..(prices)):
             delta_prices.a..(prices[i]-prices[i-1])
 
         # O(n)
         # notice: possible to do nothing thus profit at least is 0 
         max_sub_array = 0
         current_sub_array = 0
-        ___ j __ xrange(l..(delta_prices)):
+        ___ j __ x..(l..(delta_prices)):
             current_sub_array = m..(0, current_sub_array+delta_prices[j])
             max_sub_array = m..(max_sub_array, current_sub_array)
 

@@ -78,7 +78,7 @@ ___ main
         ___
             search_term = input('Search for (q for exit): ')
         ______ EOFError:
-            break
+            _____
         
         __ search_term __ '':
             print('Please provide a search term')
@@ -104,7 +104,7 @@ ___ main
 
         __ search_term __ 'q':
             print('Bye')
-            break
+            _____
 
 
 __ _____ __ _____

@@ -36,7 +36,7 @@ _______ r__
 __author__ = 'Daniel'
 
 
-c_ RandomizedSet(object):
+c_ RandomizedSet(o..):
     ___ - ):
         """
         1. Use List of numbers to support O(1) getRandom
@@ -89,7 +89,7 @@ c_ RandomizedSet(object):
         r.. r__.choice(lst)
 
 
-c_ RandomizedSetTLE(object):
+c_ RandomizedSetTLE(o..):
     ___ - ):
         """
         Initialize your data structure here.

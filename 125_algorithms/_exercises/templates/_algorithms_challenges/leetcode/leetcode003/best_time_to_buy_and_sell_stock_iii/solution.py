@@ -11,7 +11,7 @@ sell the stock before you buy again).
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProfit  prices):
         """
         :type prices: List[int]

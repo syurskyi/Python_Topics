@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findShortestWay  maze, ball, hole):
         """
         :type maze: List[List[int]]

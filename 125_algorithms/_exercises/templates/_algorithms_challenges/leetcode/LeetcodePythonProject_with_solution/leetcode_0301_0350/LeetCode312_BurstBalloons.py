@@ -4,7 +4,7 @@ Created on Mar 15, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxCoins  nums):
         nums = [1] + nums + [1]
         n = l..(nums)

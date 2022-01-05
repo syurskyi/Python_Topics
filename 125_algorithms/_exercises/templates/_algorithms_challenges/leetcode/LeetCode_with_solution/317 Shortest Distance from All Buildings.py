@@ -6,7 +6,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
@@ -28,22 +28,22 @@ c_ Solution(object):
         """
         m = l..(grid)
         n = l..(grid[0])
-        acc = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(m)]
-        reachable = [[T.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        acc = [[0 ___ _ __ x..(n)] ___ _ __ x..(m)]
+        reachable = [[T.. ___ _ __ x..(n)] ___ _ __ x..(m)]
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ grid[i][j] > 0:
                     reachable[i][j] = F..
                     acc[i][j] = sys.maxint
 
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ grid[i][j] __ 1:
                     bfs(grid, acc, reachable, i, j)
 
         mini = sys.maxint
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ acc[i][j] < mini a.. reachable[i][j]:
                     mini = acc[i][j]
 
@@ -52,13 +52,13 @@ c_ Solution(object):
     ___ bfs  grid, acc, reachable, x, y):
         d = 0
         m, n = l..(grid), l..(grid[0])
-        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
 
         q = [(x, y)]
         visited[x][y] = T..  # enqueue, then visited
         w.... q:
             l = l..(q)
-            ___ idx __ xrange(l):
+            ___ idx __ x..(l):
                 i, j = q[idx]
                 acc[i][j] += d
 
@@ -72,8 +72,8 @@ c_ Solution(object):
             d += 1
             q = q[l:]
 
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ n.. visited[i][j]:
                     reachable[i][j] = F..
 

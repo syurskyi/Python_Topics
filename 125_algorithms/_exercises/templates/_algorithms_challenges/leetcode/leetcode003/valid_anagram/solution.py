@@ -11,7 +11,7 @@ You may assume the string contains only lowercase alphabets.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isAnagram  s, t):
         """
         :type s: str

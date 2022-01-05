@@ -4,7 +4,7 @@ Created on Apr 8, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ removeKdigits  num, k):
         n = l..(num)
         longest = n-k

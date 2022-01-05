@@ -3,7 +3,7 @@
 # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
 # def guess(num):
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ guessNumber  n):
     """
     :type n: int

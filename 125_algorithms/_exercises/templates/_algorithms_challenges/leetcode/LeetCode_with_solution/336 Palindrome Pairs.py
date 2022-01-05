@@ -74,7 +74,7 @@ c_ Solution:
 
                 cur = cur.children.get(w[i], N..)
                 __ cur __ N..
-                    break
+                    _____
             ____:
                 ___ idx_j __ cur.pali_prefix_idxes:
                     __ idx != idx_j:

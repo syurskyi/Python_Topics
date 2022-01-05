@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ leastBricks  wall):
     """
     :type wall: List[List[int]]

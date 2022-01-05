@@ -14,7 +14,7 @@ elements in their original order.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wiggleMaxLength  A):
         """
         Let H[i] be max wiggle length for [0, i] with A[i] as high point
@@ -41,9 +41,9 @@ c_ Solution(object):
         """
         __ n.. A: r.. 0
         N = l..(A)
-        H = [1 ___ _ __ xrange(N)]
-        L = [1 ___ _ __ xrange(N)]
-        ___ i __ xrange(1, N):
+        H = [1 ___ _ __ x..(N)]
+        L = [1 ___ _ __ x..(N)]
+        ___ i __ x..(1, N):
             L[i] = H[i-1] + 1 __ A[i] < A[i-1] ____ L[i-1]
             H[i] = L[i-1] + 1 __ A[i] > A[i-1] ____ H[i-1]
 
@@ -60,11 +60,11 @@ c_ Solution(object):
         __ n.. A: r.. 0
 
         N = l..(A)
-        H = [1 ___ _ __ xrange(N)]
-        L = [1 ___ _ __ xrange(N)]
+        H = [1 ___ _ __ x..(N)]
+        L = [1 ___ _ __ x..(N)]
         gmax = 1
-        ___ i __ xrange(1, N):
-            ___ j __ xrange(i):
+        ___ i __ x..(1, N):
+            ___ j __ x..(i):
                 __ A[i] > A[j]:
                     H[i] = m..(H[i], L[j] + 1)
                 ____ A[i] < A[j]:

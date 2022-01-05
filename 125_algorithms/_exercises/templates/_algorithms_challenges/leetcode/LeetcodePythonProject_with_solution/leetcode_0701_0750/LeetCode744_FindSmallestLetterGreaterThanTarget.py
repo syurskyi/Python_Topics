@@ -3,7 +3,7 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ nextGreatestLetter  letters, target):
         """
         :type letters: List[str]

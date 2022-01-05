@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wordPatternMatch  pattern, s):
         """
         Backtracking with prune
@@ -34,7 +34,7 @@ c_ Solution(object):
                 ... word __ words
                 r.. dfs(pattern[1:], s[l..(word):], char2word, words)
         ____:
-            ___ i __ xrange(l..(s)):
+            ___ i __ x..(l..(s)):
                 word = s[:i+1]
                 __ word __ words:
                     _____

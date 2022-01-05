@@ -3,7 +3,7 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ minWindow  S, T):
         """
         :type S: str

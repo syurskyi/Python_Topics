@@ -19,7 +19,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ coinChange  coins, amount):
         """
         DP with early prune
@@ -33,12 +33,12 @@ c_ Solution(object):
         __ amount __ 0:
             r.. 0
 
-        F = [sys.maxint ___ _ __ xrange(amount+1)]
+        F = [sys.maxint ___ _ __ x..(amount+1)]
         ___ k __ coins:
             __ k < amount+1:
                 F[k] = 1
 
-        ___ i __ xrange(1, amount+1):
+        ___ i __ x..(1, amount+1):
             __ F[i] != sys.maxint:
                 ___ k __ coins:
                     __ i+k <= amount:
@@ -47,7 +47,7 @@ c_ Solution(object):
         r.. F[amount] __ F[amount] != sys.maxint ____ -1
 
 
-c_ SolutionTLE(object):
+c_ SolutionTLE(o..):
     ___ coinChange  coins, amount):
         """
         Let F[i] be the fewest number of coins make to i
@@ -57,12 +57,12 @@ c_ SolutionTLE(object):
         :type amount: int
         :rtype: int
         """
-        F = [sys.maxint ___ _ __ xrange(amount+1)]
+        F = [sys.maxint ___ _ __ x..(amount+1)]
         ___ k __ coins:
             __ k < amount + 1:
                 F[k] = 1
 
-        ___ i __ xrange(1, amount+1):
+        ___ i __ x..(1, amount+1):
             ___ k __ coins:
                 __ i-k > 0 a.. F[i-k] != sys.maxint:
                     F[i] = m..(F[i], F[i-k]+1)

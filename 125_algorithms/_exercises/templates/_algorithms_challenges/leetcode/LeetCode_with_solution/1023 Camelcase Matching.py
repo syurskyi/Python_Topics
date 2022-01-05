@@ -59,7 +59,7 @@ c_ Solution:
             ____ q[i].isl..
                 i += 1
             ____:
-                break
+                _____
 
         w.... i < l..(q) a.. q[i].isl..
             i += 1

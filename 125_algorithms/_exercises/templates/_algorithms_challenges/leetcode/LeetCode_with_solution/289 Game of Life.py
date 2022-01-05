@@ -22,7 +22,7 @@ problems when the active area encroaches the border of the array. How would you 
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         dirs = [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)]
 
@@ -45,9 +45,9 @@ c_ Solution(object):
         """
         m = l..(board)
         n = l..(board[0])
-        lines = [[0 ___ _ __ xrange(n)] ___ _ __ xrange(2)]
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        lines = [[0 ___ _ __ x..(n)] ___ _ __ x..(2)]
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 lines[(i+1)%2][j] = board[i][j]
 
                 cnt = 0

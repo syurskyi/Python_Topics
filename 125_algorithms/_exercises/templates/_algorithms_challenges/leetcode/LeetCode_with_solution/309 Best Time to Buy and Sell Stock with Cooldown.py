@@ -15,7 +15,7 @@ transactions = [buy, sell, cooldown, buy, sell]
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProfit  A):
         """
         O(n^2)
@@ -38,15 +38,15 @@ c_ Solution(object):
             r.. m..(0, A[1]-A[0])
 
         CD = 1  # cool down
-        F = [0 ___ _ __ xrange(n)]
-        M = [0 ___ _ __ xrange(n)]
+        F = [0 ___ _ __ x..(n)]
+        M = [0 ___ _ __ x..(n)]
         F[1] = A[1]-A[0]
         M[1] = m..(M[0], F[1])
-        F[2] = m..(A[2]-A[2-1-i] ___ i __ xrange(2))
+        F[2] = m..(A[2]-A[2-1-i] ___ i __ x..(2))
         M[2] = m..(M[1], F[2])
 
         # core
-        ___ i __ xrange(3, n):
+        ___ i __ x..(3, n):
             F[i] = m..(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
             M[i] = m..(M[i-1], F[i])
 

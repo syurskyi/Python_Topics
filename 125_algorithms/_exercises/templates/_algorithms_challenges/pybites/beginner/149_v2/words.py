@@ -5,7 +5,7 @@ ___ sort_words_case_insensitively(words):
     """
 
     w = [word ___ word __ words __ s..(word)[0].isalpha()]
-    d = [word ___ word __ words __ s..(word)[0].isdigit()]
+    d = [word ___ word __ words __ s..(word)[0].i..]
 
 
 

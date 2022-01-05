@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ compareVersion  version1, version2):
     """
     :type version1: str

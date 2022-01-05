@@ -8,7 +8,7 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         lst = ["11", "69", "88", "96", "00"]
         middle = ["0", "1", "8"]
@@ -20,7 +20,7 @@ c_ Solution(object):
         :rtype: int
         """
         cnt = 0
-        ___ l __ xrange(l..(low), l..(high)+1):
+        ___ l __ x..(l..(low), l..(high)+1):
             cnt += l..(filter(l.... x: i..(low) <= i..(x) <= i..(high), strobogrammatic(l)))
 
         r.. cnt

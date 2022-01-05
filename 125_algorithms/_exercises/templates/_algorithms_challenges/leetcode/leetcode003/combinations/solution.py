@@ -16,7 +16,7 @@ If n = 4 and k = 2, a solution is:
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ combine  n, k):
         """
         :type n: int

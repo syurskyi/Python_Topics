@@ -1,4 +1,4 @@
-c_ Garden(object):
+c_ Garden(o..):
 
     __plant_names = {"C": "Clover", "G": "Grass",
                      "R": "Radishes", "V": "Violets"}

@@ -19,7 +19,7 @@ c_ Solution:
         __ carry:
             ans.a..(carry)
 
-        ans.reverse()
+        ans.r..
 
         r.. ans
 

@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ minArea  image, x, y):
     top = searchRows(image, 0, x, T..)
     bottom = searchRows(image, x + 1, l..(image), F..)

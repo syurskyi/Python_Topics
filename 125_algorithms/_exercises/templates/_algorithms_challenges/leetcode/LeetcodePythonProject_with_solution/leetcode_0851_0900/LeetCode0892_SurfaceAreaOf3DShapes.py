@@ -3,7 +3,7 @@ Created on Oct 31, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ surfaceArea  grid):
         """
         :type grid: List[List[int]]

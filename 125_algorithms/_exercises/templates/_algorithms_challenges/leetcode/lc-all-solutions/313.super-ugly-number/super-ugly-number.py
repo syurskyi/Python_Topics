@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ nthSuperUglyNumber  n, primes):
     """
     :type n: int

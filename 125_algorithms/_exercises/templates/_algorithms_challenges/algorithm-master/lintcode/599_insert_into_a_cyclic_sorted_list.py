@@ -27,15 +27,15 @@ c_ Solution:
 
             # in the list
             __ pre.val <= x <= cur.val:
-                break
+                _____
 
             # at the boundary between minimum and maximum
             __ (pre.val > cur.val) a.. (x < cur.val o. x > pre.val):
-                break
+                _____
 
             # if `cur` have already traversed the list once
             __ cur __ node:
-                break
+                _____
 
         new_node = ListNode(x)
         new_node.next = cur

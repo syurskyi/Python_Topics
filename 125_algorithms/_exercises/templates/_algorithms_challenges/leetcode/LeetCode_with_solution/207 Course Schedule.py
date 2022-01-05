@@ -32,13 +32,13 @@ c_ Solution:
         :type prerequisites: List[List[int]]
         :rtype: bool
         """
-        V = [[] ___ _ __ xrange(numCourses)]
+        V = [[] ___ _ __ x..(numCourses)]
         ___ edge __ prerequisites:
             V[edge[0]].a..(edge[1])
 
-        visited = [F.. ___ _ __ xrange(numCourses)]  # visited and fine (cleared)
-        marked = [F.. ___ _ __ xrange(numCourses)]  # marked during one dfs
-        ___ i __ xrange(numCourses):
+        visited = [F.. ___ _ __ x..(numCourses)]  # visited and fine (cleared)
+        marked = [F.. ___ _ __ x..(numCourses)]  # marked during one dfs
+        ___ i __ x..(numCourses):
             __ n.. visited[i]:
                 __ dfs_have_cycle(V, i, visited, marked):
                     r.. F..

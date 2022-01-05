@@ -20,7 +20,7 @@ c_ Solution:
         :rtype: bool
         """
         intervals.s..(key=operator.attrgetter("start"))
-        ___ i __ xrange(l..(intervals)-1):
+        ___ i __ x..(l..(intervals)-1):
             __ intervals[i].end > intervals[i+1].start:
                 r.. F..
 

@@ -3,7 +3,7 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ solveEquation  equation):
         """
         :type equation: str
@@ -32,12 +32,12 @@ c_ Solution(object):
         valX1, val1 = 0, 0
         i = 0
         w.... i < l..(s):
-            __ s[i].isdigit
+            __ s[i].i..
                 sig = 1
                 __ i>=1 a.. s[i-1] __ '-':
                     sig = -1
                 num = 0
-                w.... i < l..(s) a.. s[i].isdigit
+                w.... i < l..(s) a.. s[i].i..
                     num = 10*num+i..(s[i])
                     i += 1
                 __ i < l..(s) a.. s[i] __ 'x':

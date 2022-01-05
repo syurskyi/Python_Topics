@@ -3,7 +3,7 @@ Created on Aug 21, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ splitArray  nums):
         """
         :type nums: List[int]

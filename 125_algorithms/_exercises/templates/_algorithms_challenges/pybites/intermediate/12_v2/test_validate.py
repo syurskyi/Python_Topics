@@ -5,9 +5,9 @@ ____ validate _______ (get_secret_token, SECRET,
 
 
 ___ test_get_secret_token
-    ... issubclass(UserDoesNotExist, Exception)
-    ... issubclass(UserAccessExpired, Exception)
-    ... issubclass(UserNoPermission, Exception)
+    ... issubclass(UserDoesNotExist, E..)
+    ... issubclass(UserAccessExpired, E..)
+    ... issubclass(UserNoPermission, E..)
 
     w__ p__.r..(UserDoesNotExist):
         get_secret_token('Tim')

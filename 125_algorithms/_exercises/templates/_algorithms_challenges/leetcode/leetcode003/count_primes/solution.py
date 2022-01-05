@@ -12,7 +12,7 @@ prime numbers up to n would be O(n2). Could we do better?
 
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ countPrimes  n):
         """
         :type n: int

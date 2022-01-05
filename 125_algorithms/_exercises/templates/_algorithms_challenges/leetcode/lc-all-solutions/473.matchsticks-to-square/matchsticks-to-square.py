@@ -1,7 +1,7 @@
 _______ c..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ makesquare  nums):
     """
     :type nums: List[int]

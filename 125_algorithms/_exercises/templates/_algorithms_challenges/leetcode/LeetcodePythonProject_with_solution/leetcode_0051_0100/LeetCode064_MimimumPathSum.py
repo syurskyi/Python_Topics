@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minPathSum  grid):
         """
         :type grid: List[List[int]]

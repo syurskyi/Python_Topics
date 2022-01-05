@@ -4,7 +4,7 @@ Created on Apr 26, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMaxForm  strs, m, n):
         """
         :type strs: List[str]

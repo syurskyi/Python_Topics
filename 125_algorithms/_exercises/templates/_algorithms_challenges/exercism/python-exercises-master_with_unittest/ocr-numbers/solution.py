@@ -32,7 +32,7 @@ ___ number(ocr):
 
 ___ grid(d..):
     ___
-        __ n.. d...isdigit
+        __ n.. d...i..
             r.. ValueError('String should be numeric.')
     ______ AttributeError:
         r.. ValueError('Argument should be a string.')

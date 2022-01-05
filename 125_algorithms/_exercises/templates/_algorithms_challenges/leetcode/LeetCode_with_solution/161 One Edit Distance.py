@@ -5,7 +5,7 @@ Non-dp version of edit distance
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isOneEditDistance  s, t):
         """
         String
@@ -36,7 +36,7 @@ c_ Solution(object):
         r.. diff __ 1 o. diff __ 0 a.. m != n
 
 
-c_ Solution1(object):
+c_ Solution1(o..):
     ___ isOneEditDistance  s, t):
         """
         Iterator version

@@ -1,4 +1,4 @@
-c_ UnionFind(object):
+c_ UnionFind(o..):
   ___ - , m, n):
     dad = [i ___ i __ r..(m * n)]
     rank = [0 ___ _ __ r..(m * n)]
@@ -22,7 +22,7 @@ c_ UnionFind(object):
     r.. T..
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ numIslands2  m, n, positions):
     """
     :type m: int

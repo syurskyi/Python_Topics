@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ nextPermutation  nums):
     """
     :type nums: List[int]
@@ -13,7 +13,7 @@ c_ Solution(object):
     w.... p >= 0:
       __ nums[p + 1] > nums[p]:
         pos = p
-        break
+        _____
       p -= 1
 
     __ pos __ N..

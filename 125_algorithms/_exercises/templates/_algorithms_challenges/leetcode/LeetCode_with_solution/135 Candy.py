@@ -24,9 +24,9 @@ c_ Solution:
         :return: int
         """
         length = l..(ratings)
-        dp = [-1 ___ _ __ xrange(length)]
+        dp = [-1 ___ _ __ x..(length)]
         dp[0] = 1
-        ___ ind __ xrange(1, length):
+        ___ ind __ x..(1, length):
             val = ratings[ind]
             __ ratings[ind-1]<val:
                 dp[ind] = dp[ind-1]+1

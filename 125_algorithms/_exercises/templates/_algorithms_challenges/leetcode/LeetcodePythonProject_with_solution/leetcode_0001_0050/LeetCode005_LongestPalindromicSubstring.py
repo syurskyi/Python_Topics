@@ -4,7 +4,7 @@ Created on Jan 7, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestPalindromeDP  s):
         res = ''
         __ n.. s: r.. res

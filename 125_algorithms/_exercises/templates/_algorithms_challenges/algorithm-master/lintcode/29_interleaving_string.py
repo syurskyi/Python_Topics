@@ -31,7 +31,7 @@ c_ Solution:
             dp[0][j] = (dp[0][j - 1] and B[j - 1] == C[j - 1])
             """
             __ n.. dp[curr][j - 1]:
-                break
+                _____
 
             __ B[j - 1] __ C[j - 1]:
                 dp[curr][j] = T..

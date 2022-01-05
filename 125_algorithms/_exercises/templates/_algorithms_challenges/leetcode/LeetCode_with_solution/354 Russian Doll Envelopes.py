@@ -14,7 +14,7 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxEnvelopes  A):
         """
         LIS
@@ -27,7 +27,7 @@ c_ Solution(object):
         __ n.. A: r.. 0
 
         A.s..(key=l.... (w, h): (w, -h))
-        F = [-1 ___ _ __ xrange(l..(A)+1)]
+        F = [-1 ___ _ __ x..(l..(A)+1)]
 
         F[1] = A[0][1]  # store value rather than index
         k = 1
@@ -50,9 +50,9 @@ c_ Solution(object):
         predicate = l.... a, b: b[0] > a[0] a.. b[1] > a[1]
         A.s..()
         n = l..(A)
-        F = [1 ___ _ __ xrange(n)]
-        ___ i __ xrange(1, n):
-            ___ j __ xrange(i):
+        F = [1 ___ _ __ x..(n)]
+        ___ i __ x..(1, n):
+            ___ j __ x..(i):
                 __ predicate(A[j], A[i]):
                     F[i] = m..(F[i], 1 + F[j])
 

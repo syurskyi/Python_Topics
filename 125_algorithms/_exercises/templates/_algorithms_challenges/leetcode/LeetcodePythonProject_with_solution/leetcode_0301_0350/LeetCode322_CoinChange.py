@@ -4,7 +4,7 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ coinChange  coins, amount):
         dp = [float('inf')]*(amount+1)
         dp[0] = 0

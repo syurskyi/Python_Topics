@@ -6,7 +6,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ lengthOfLongestSubstringTwoDistinct  s):
         """
         Sliding Window
@@ -17,7 +17,7 @@ c_ Solution(object):
         i = 0
         j = 0
         maxa = 0
-        ___ j __ xrange(l..(s)):
+        ___ j __ x..(l..(s)):
             m[s[j]] += 1
             w.... l..(m) > 2:
                 m[s[i]] -= 1

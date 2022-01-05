@@ -3,7 +3,7 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ floodFill  image, sr, sc, newColor):
         """
         :type image: List[List[int]]

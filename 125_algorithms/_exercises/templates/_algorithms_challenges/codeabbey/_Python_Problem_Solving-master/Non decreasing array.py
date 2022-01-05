@@ -32,7 +32,7 @@ c_ Solution:
                     ______:
                         p..
                     __ non_count >= 2:
-                        break
+                        _____
                 __ non_count <= 1:
                     r.. T..
                 ____:

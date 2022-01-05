@@ -12,7 +12,7 @@ ___ bubble_in_array(data):
     numbers = [i..(x) ___ x __ data[:-1]]
     swap_count = 0
 
-    ___ x __ xrange(l..(numbers)-1):
+    ___ x __ x..(l..(numbers)-1):
         __ numbers[x] > numbers[x+1]:
             numbers[x+1], numbers[x] = numbers[x], numbers[x+1]
             swap_count += 1

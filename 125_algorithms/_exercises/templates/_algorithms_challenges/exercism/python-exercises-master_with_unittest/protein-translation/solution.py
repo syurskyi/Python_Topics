@@ -16,7 +16,7 @@ ___ of_rna(strand):
     proteins    # list
     ___ codon __ map(of_codon, _chunkstring(strand, 3)):
         __ codon __ 'STOP':
-            break
+            _____
         proteins.a..(codon)
     r.. proteins
 

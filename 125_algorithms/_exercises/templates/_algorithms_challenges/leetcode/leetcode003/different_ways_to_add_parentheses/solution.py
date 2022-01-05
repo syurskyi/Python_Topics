@@ -23,7 +23,7 @@ Input: "2*3-4*5"
 Output: [-34, -14, -10, -10, 10]
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ diffWaysToCompute  input):
         """
         :type input: str
@@ -38,7 +38,7 @@ c_ Solution(object):
     ___ diff_ways  inp):
         __ n.. inp:
             r.. []
-        ____ inp.isdigit
+        ____ inp.i..
             r.. [i..(inp)]
         ____:
             res    # list

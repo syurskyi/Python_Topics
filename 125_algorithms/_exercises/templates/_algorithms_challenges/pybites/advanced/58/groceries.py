@@ -38,7 +38,7 @@ c_ Groceries:
         ___ i, item __ e..
             __ item.product __ product:
                 _items.pop(i)
-                break
+                _____
         ____:
             r.. IndexError _*{product} not in cart')
         show()

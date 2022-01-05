@@ -16,7 +16,7 @@ c_ Score(Enum):
     ADVANCED = 4
     CHEATED = 1
 
-    ___ __repr__
+    ___  -r
         r.. f"{__class__.__name__}.{name}"
 
     ___ __str__

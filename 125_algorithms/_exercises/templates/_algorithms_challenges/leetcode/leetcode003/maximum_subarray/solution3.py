@@ -8,7 +8,7 @@ the contiguous subarray [4,−1,2,1] has the largest sum = 6.
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxSubArray  nums):
         """
         :type nums: List[int]

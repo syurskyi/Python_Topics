@@ -4,7 +4,7 @@ Created on Aug 24, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ leastBricks  wall):
         """
         :type wall: List[List[int]]

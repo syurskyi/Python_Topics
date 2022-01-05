@@ -3,7 +3,7 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ bestRotation  A):
         """
         :type A: List[int]

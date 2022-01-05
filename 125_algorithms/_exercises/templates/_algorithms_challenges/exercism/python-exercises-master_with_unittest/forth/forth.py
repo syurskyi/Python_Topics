@@ -1,4 +1,4 @@
-c_ StackUnderflowError(Exception):
+c_ StackUnderflowError(E..):
     p..
 
 

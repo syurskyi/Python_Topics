@@ -1,5 +1,5 @@
 
-c_ Clock(object):
+c_ Clock(o..):
     'Clock that displays 24 hour clock that rollsover properly'
 
     ___ - , hour, minute):
@@ -7,7 +7,7 @@ c_ Clock(object):
         minute = minute
         cleanup()
 
-    ___ __repr__
+    ___  -r
         r.. "%02d:%02d" % (hour, minute)
 
     ___ __eq__  other):

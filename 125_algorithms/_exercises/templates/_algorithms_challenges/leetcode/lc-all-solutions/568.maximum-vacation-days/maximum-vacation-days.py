@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ maxVacationDays  flights, days):
     """
     :type flights: List[List[int]]

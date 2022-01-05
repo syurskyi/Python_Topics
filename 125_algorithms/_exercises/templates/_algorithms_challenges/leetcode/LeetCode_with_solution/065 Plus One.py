@@ -6,7 +6,7 @@ The digits are stored such that the most significant digit is at the head of the
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ plusOne  d..):
         """
         Math
@@ -15,7 +15,7 @@ c_ Solution(object):
         :param digits: a list of integer digits
         :return: a list of integer digits
         """
-        ___ i __ xrange(l..(d..)-1, -1, -1):
+        ___ i __ x..(l..(d..)-1, -1, -1):
             d..[i] += 1
             __ d..[i] < 10:
                 r.. d..
@@ -32,23 +32,23 @@ c_ Solution(object):
         :param digits:
         :return:
         """
-        d...reverse()
+        d...r..
 
         d..[0] += 1
         carry = 0
-        ___ i __ xrange(l..(d..)):  # for ind, val in enumerate(digits):
+        ___ i __ x..(l..(d..)):  # for ind, val in enumerate(digits):
             d..[i] += carry
             __ d..[i] > 9:
                 d..[i] -= 10
                 carry = 1
             ____:
                 carry = 0
-                break
+                _____
 
         __ carry:
             d...a..(1)
 
-        d...reverse()
+        d...r..
         r.. d..
 
 

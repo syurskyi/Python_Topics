@@ -4,7 +4,7 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isConvex  points):
         """
         :type points: List[List[int]]

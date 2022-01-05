@@ -4,7 +4,7 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ sortColors  nums):
         """
         :type nums: List[int]

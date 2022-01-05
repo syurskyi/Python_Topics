@@ -12,7 +12,7 @@ ___ countdown
             y.. num
             num -= 1
         ____:
-            break
+            _____
 
 
 cd = countdown()

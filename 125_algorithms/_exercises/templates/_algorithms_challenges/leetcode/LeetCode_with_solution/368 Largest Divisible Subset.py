@@ -20,7 +20,7 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ largestDivisibleSubset  A):
         """
         Given a divisible subset, when adding a new number, we only needs to validate whether the new number is
@@ -37,10 +37,10 @@ c_ Solution(object):
         F    # dict
         pi    # dict
         A.s..()
-        ___ i __ xrange(l..(A)):
+        ___ i __ x..(l..(A)):
             F[i] = 1
             pi[i] = i
-            ___ j __ xrange(i):
+            ___ j __ x..(i):
                 __ A[i] % A[j] __ 0:
                     __ F[i] < 1 + F[j]:
                         F[i] = 1 + F[j]

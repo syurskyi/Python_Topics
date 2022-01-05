@@ -36,7 +36,7 @@ c_ Cell:
         r.. h - other.h
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
@@ -52,16 +52,16 @@ c_ Solution(object):
         __ n.. mat: r.. 0
 
         m, n = l..(mat), l..(mat[0])
-        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]
+        visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         h    # list
         # add cells at the four edges
-        ___ i __ xrange(m):
+        ___ i __ x..(m):
             visited[i][0] = T..
             heapq.heappush(h, Cell(i, 0, mat[i][0]))
             visited[i][n-1] = T..
             heapq.heappush(h, Cell(i, n-1, mat[i][n-1]))
 
-        ___ j __ xrange(1, n-1):
+        ___ j __ x..(1, n-1):
             visited[0][j] = T..
             heapq.heappush(h, Cell(0, j, mat[0][j]))
             visited[m-1][j] = T..

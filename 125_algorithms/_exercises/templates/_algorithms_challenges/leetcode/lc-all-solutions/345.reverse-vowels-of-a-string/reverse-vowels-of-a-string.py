@@ -1,7 +1,7 @@
 _______ s__
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ reverseVowels  s):
     """
     :type s: str

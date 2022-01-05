@@ -21,7 +21,7 @@ Given target = 20, return false.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ searchMatrix  mat, target):
         """
         Manhattan work
@@ -48,7 +48,7 @@ c_ Solution(object):
         r.. F..
 
 
-c_ SolutionBinSearch(object):
+c_ SolutionBinSearch(o..):
     ___ searchMatrix  mat, target):
         """
         Binary search
@@ -65,10 +65,10 @@ c_ SolutionBinSearch(object):
         m = l..(mat)
         n = l..(mat[0])
 
-        col = [mat[i][0] ___ i __ xrange(m)]
+        col = [mat[i][0] ___ i __ x..(m)]
         row_by_first = bin_search(col, target)
 
-        col = [mat[i][-1] ___ i __ xrange(m)]
+        col = [mat[i][-1] ___ i __ x..(m)]
         row_by_last = bin_search(col, target, F..)
 
         ___ i __ r..(row_by_first, row_by_last-1, -1):

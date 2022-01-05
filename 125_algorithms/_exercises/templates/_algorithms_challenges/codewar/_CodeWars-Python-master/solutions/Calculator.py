@@ -5,7 +5,7 @@ http://www.codewars.com/kata/5235c913397cbf2508000048/train/python
 _______ operator
 
 
-c_ Calculator(object):
+c_ Calculator(o..):
     operands = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.div}
 
     ___ - ):

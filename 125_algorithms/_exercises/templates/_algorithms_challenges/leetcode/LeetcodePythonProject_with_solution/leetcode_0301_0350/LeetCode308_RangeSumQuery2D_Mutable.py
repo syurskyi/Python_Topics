@@ -3,7 +3,7 @@ Created on Mar 13, 2017
 
 @author: MT
 '''
-c_ NumMatrix_BinaryIndexTree_TLE(object):
+c_ NumMatrix_BinaryIndexTree_TLE(o..):
     ___ - , matrix):
         m, n = l..(matrix), l..(matrix[0])
         m, n = m, n
@@ -47,7 +47,7 @@ c_ NumMatrix_BinaryIndexTree_TLE(object):
             i -= i&(-i)
         r.. sumVal
 
-c_ NumMatrix(object):
+c_ NumMatrix(o..):
     ___ - , matrix):
         __ n.. matrix:
             r..

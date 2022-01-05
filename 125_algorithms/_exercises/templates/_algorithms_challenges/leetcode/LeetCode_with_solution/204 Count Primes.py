@@ -18,11 +18,11 @@ c_ Solution:
         __ n < 3:
             r.. 0
 
-        is_prime = [T.. ___ _ __ xrange(n)]
+        is_prime = [T.. ___ _ __ x..(n)]
         is_prime[0], is_prime[1] = F.., F..
-        ___ i __ xrange(2, i..(math.sqrt(n))+1):
+        ___ i __ x..(2, i..(math.sqrt(n))+1):
             __ is_prime[i]:
-                ___ j __ xrange(i*i, n, i):
+                ___ j __ x..(i*i, n, i):
                     is_prime[j] = F..
 
         r.. is_prime.c.. T..)

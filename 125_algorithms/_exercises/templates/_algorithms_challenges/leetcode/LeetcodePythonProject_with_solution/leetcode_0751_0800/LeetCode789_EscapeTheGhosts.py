@@ -3,7 +3,7 @@ Created on Apr 14, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ escapeGhosts  ghosts, target):
         """
         :type ghosts: List[List[int]]

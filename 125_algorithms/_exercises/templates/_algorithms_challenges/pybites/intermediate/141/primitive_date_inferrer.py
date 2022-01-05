@@ -26,7 +26,7 @@ c_ DateFormat(Enum):
         r.. ValueError
 
 
-c_ InfDateFmtError(Exception):
+c_ InfDateFmtError(E..):
     """custom exception when it is not possible to infer a date format
     e.g. too many NONPARSABLE or a tie """
     p..

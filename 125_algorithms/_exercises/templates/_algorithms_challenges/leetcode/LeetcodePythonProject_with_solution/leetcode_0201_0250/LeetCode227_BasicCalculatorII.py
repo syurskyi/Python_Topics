@@ -3,7 +3,7 @@ Created on Feb 22, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ calculate  s):
         """
         :type s: str
@@ -16,9 +16,9 @@ c_ Solution(object):
         preVal = 0
         sign = '+'
         w.... i < l..(s):
-            __ s[i].isdigit
+            __ s[i].i..
                 curVal = 0
-                w.... i < l..(s) a.. s[i].isdigit
+                w.... i < l..(s) a.. s[i].i..
                     curVal = curVal*10+i..(s[i])
                     i += 1
             __ sign __ '+':

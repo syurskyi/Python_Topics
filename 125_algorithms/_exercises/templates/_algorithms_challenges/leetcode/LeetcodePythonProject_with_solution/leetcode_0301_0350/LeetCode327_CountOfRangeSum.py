@@ -3,7 +3,7 @@ Created on Mar 18, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ countRangeSum  nums, lower, upper):
         first = [0]
         ___ num __ nums:

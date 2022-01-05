@@ -1,4 +1,4 @@
-c_ TwoSum(object):
+c_ TwoSum(o..):
 
   ___ - ):
     """

@@ -5,7 +5,7 @@ Created on Apr 27, 2017
 '''
 _______ heapq
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ medianSlidingWindow  nums, k):
         """
         :type nums: List[int]

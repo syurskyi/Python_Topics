@@ -4,12 +4,12 @@ be made by splicing together the nodes of the first two lists.
 """
 
 # Definition for singly-linked list.
-c_ ListNode(object):
+c_ ListNode(o..):
     ___ - , x):
         val = x
         next = N..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ mergeTwoLists  l1, l2):
         """
         :type l1: ListNode

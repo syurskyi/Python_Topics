@@ -3,7 +3,7 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ kthGrammar  N, K):
         """
         :type N: int

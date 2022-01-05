@@ -1,4 +1,4 @@
-c_ Scale(object):
+c_ Scale(o..):
 
     ASCENDING_INTERVALS = ['m', 'M', 'A']
     CHROMATIC_SCALE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A',

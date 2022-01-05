@@ -42,7 +42,7 @@ getfirstnonrepeated("abccdef")
 ____ nose.tools _______ assert_equal
 
 
-c_ AnagramTest(object):
+c_ AnagramTest(o..):
 
     ___ test  sol):
         assert_equal(sol('go go go', 'gggooo'), T..)
@@ -120,7 +120,7 @@ RUN THIS CELL TO TEST YOUR SOLUTION
 ____ nose.tools _______ assert_equal
 
 
-c_ TestBalanceCheck(object):
+c_ TestBalanceCheck(o..):
 
     ___ test  sol):
         assert_equal(sol('[](){([[[]]])}('), F..)

@@ -61,7 +61,7 @@ c_ Solution:
                     index += 1
                     state += 1
                 ____:
-                    break
+                    _____
 
         __ index __ l..(tape) a.. state __ l..(regex):
             r.. T..
@@ -139,11 +139,11 @@ c_ Solution:
         m = l..(tape)
         n = l..(regex)
 
-        dp = [[F.. ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
+        dp = [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
 
         # edge cases
         dp[m][n] = T..
-        ___ j __ xrange(n-1, -1, -1):
+        ___ j __ x..(n-1, -1, -1):
             __ regex[j] __ "*":
                 dp[m][j] = dp[m][j+1]
             ____ j+1 < n a.. regex[j+1] __ "*":
@@ -152,8 +152,8 @@ c_ Solution:
                 dp[m][j] = F..
 
         # normal cases
-        ___ i __ xrange(m-1, -1, -1):
-            ___ j __ xrange(n-1, -1, -1):
+        ___ i __ x..(m-1, -1, -1):
+            ___ j __ x..(n-1, -1, -1):
                 __ regex[j] __ "*":
                     __ j-1 >= 0 a.. regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip

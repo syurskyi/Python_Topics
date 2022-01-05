@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
     ___ sortArrayByParity  A):
         """
         :type A: List[int]

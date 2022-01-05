@@ -5,7 +5,7 @@ Given a string, sort it in decreasing order based on the frequency of characters
 ____ c.. _______ defaultdict
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ frequencySort  s):
         """
         Brute force: counter, sort O(n log n)

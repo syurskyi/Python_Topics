@@ -59,7 +59,7 @@ c_ Solution:
         i = 0
         w.... i < l..(clips):
             __ clips[i][0] > prev_e:  # gap
-                break
+                _____
 
             max_e = -float("inf")
             w.... i < l..(clips) a.. clips[i][0] <= prev_e:
@@ -69,7 +69,7 @@ c_ Solution:
             prev_e = max_e  # take
             ret += 1
             __ prev_e >= T:
-                break
+                _____
 
         r.. ret __ prev_e >= T ____ -1
 

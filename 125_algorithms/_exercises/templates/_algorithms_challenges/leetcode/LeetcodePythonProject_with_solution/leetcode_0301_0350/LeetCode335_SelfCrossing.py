@@ -4,7 +4,7 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ isSelfCrossing  x):
         x = [0, 0, 0, 0]+x
         n = l..(x)

@@ -5,7 +5,7 @@ support the peek() operation -- it essentially peek() at the element that will b
 __author__ = 'Daniel'
 
 
-c_ Iterator(object):
+c_ Iterator(o..):
     ___ - , nums):
         """
         Initializes an iterator object to the beginning of a list.
@@ -25,7 +25,7 @@ c_ Iterator(object):
         """
 
 
-c_ PeekingIterator(object):
+c_ PeekingIterator(o..):
     ___ - , iterator):
         """
         Initialize your data structure here.

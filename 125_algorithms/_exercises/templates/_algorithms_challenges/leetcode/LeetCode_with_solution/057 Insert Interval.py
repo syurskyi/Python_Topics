@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 # Definition for an interval.
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , s=0, e=0):
         start = s
         end = e
@@ -23,11 +23,11 @@ c_ Interval(object):
     ___ __str__
         r.. "[%d, %d]" % (start, end)
 
-    ___ __repr__
+    ___  -r
         r.. repr(__str__())
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ insert  itvls, newItvl):
         s, e = newItvl.start, newItvl.end
         left = filter(l.... x: x.end < s, itvls)
@@ -44,7 +44,7 @@ c_ Solution(object):
         """
 
 
-c_ SolutionSlow(object):
+c_ SolutionSlow(o..):
     ___ insert  itvls, newItvl):
         """
         :param itvls: a list of Intervals

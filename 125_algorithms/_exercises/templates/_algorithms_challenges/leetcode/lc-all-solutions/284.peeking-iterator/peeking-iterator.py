@@ -19,7 +19,7 @@
 #         :rtype: int
 #         """
 
-c_ PeekingIterator(object):
+c_ PeekingIterator(o..):
   ___ - , iterator):
     """
     Initialize your data structure here.

@@ -3,7 +3,7 @@ Created on Feb 11, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProduct  nums):
         """
         :type nums: List[int]

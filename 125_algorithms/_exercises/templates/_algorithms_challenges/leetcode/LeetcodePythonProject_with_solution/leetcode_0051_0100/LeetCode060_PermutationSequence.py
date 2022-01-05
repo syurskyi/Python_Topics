@@ -3,7 +3,7 @@ Created on Jan 22, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ getPermutation  n, k):
         """
         :type n: int

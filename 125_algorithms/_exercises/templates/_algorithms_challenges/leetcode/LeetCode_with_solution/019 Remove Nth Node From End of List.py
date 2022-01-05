@@ -43,7 +43,7 @@ c_ Solution:
             cur = pre.next
             __ count__length-n:
                 pre.next = cur.next  # remove
-                break
+                _____
             ____:
                 count += 1
                 pre = pre.next

@@ -3,7 +3,7 @@ Created on Oct 23, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ knightProbability  N, K, r, c):
         """
         :type N: int

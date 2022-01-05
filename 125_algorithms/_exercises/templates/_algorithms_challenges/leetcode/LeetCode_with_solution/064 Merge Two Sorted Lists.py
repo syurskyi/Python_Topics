@@ -9,7 +9,7 @@ c_ ListNode:
         val = x
         next = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr(val)
 
     ___ __str__
@@ -48,9 +48,9 @@ c_ Solution:
 
 __ _____ __ ____
     length = 10
-    list1 = [ListNode(2*i) ___ i __ xrange(length)]
-    list2 = [ListNode(2*i+1) ___ i __ xrange(length)]
-    ___ i __ xrange(length-1):
+    list1 = [ListNode(2*i) ___ i __ x..(length)]
+    list2 = [ListNode(2*i+1) ___ i __ x..(length)]
+    ___ i __ x..(length-1):
         list1[i].next = list1[i+1]
         list2[i].next = list2[i+1]
 

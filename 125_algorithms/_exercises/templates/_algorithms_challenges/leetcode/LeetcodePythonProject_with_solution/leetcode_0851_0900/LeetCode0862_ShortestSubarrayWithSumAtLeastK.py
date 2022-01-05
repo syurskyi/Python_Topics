@@ -3,7 +3,7 @@ Created on Sep 17, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ shortestSubarray  A, K):
         """
         :type A: List[int]

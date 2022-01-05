@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   # naive pre-order traversal on denary tree
   ___ _findKthNumber  n, k):
     """
@@ -14,14 +14,14 @@ c_ Solution(object):
       __ cur __ 0:
         ___ i __ r..(1, 10):
           __ i > n:
-            break
+            _____
           ret = dfs(i, n)
           __ ret:
             r.. ret
       ____:
         ___ i __ r..(0, 10):
           __ cur * 10 + i > n:
-            break
+            _____
           ret = dfs(cur * 10 + i, n)
           __ ret:
             r.. ret

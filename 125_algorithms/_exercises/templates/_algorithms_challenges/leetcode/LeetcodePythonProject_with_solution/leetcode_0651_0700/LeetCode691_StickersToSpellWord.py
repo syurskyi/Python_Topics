@@ -3,7 +3,7 @@ Created on Oct 24, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ minStickers  stickers, target):
         """
         :type stickers: List[str]

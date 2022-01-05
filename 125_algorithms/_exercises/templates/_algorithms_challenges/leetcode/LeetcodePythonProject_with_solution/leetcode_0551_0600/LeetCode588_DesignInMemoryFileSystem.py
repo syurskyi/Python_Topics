@@ -3,7 +3,7 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , folder_ N..
         folder = folder
         content = ''
@@ -11,7 +11,7 @@ c_ TreeNode(object):
         childFolders    # list
         isFile = F..
 
-c_ FileSystem(object):
+c_ FileSystem(o..):
     ___ - ):
         root = TreeNode()
     

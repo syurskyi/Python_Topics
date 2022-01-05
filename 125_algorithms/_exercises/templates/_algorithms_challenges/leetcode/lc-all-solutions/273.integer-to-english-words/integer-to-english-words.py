@@ -5,7 +5,7 @@ tens = {2: "Twenty", 3: "Thirty", 4: "Forty", 5: "Fifty", 6: "Sixty", 7: "Sevent
 digit = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten"}
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ numberToWords  num):
     """
     :type num: int

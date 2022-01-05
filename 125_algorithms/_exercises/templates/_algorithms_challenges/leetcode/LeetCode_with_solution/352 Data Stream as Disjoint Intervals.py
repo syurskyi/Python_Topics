@@ -16,13 +16,13 @@ __author__ = 'Daniel'
 
 
 # Definition for an interval.
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , s=0, e=0):
         start = s
         end = e
 
 
-c_ SummaryRanges(object):
+c_ SummaryRanges(o..):
     ___ - ):
         """
         BST is the most efficient, while heap is simple to write

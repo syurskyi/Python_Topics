@@ -34,7 +34,7 @@ c_ Solution:
                         r.. T..
                     ____:
                         _____
-                ______ IndexError:
+                ______ I..
                     r.. T..
 
         r.. F..
@@ -82,7 +82,7 @@ c_ Solution:
                         # main
                         __ s[i:i+l..(word)]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
                             dp[i+l..(word)] = T..  # record the checking
-                    ______ IndexError:
+                    ______ I..
                         _____
 
         r.. dp[-1]

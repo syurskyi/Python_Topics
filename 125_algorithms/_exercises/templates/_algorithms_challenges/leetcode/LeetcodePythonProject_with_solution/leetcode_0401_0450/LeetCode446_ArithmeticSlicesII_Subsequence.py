@@ -1,5 +1,5 @@
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ numberOfArithmeticSlices  A):
         nums = A
         n = l..(nums)

@@ -66,7 +66,7 @@ c_ Calculator:
 
     @staticmethod
     ___ digit(element):
-        r.. element.lstrip("-").isdigit()
+        r.. element.lstrip("-").i..
 
     @classmethod
     ___ operator(cls, element):

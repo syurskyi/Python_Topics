@@ -4,7 +4,7 @@ Created on Jun 13, 2019
 @author: tongq
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ rectangleArea  rectangles):
         """
         :type rectangles: List[List[int]]

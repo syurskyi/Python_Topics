@@ -82,7 +82,7 @@ c_ Solution:
             ___ a __ post:
                 l += 1
                 __ a __ pre[1]:
-                    break
+                    _____
             ____:
                 r..
 

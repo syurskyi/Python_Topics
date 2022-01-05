@@ -19,7 +19,7 @@ ___ top_python_questions(url=cached_so_url):
     ______ requests.HTTPError __ err:
         print('HTTP Error')
         print(err)
-    ______ Exception __ err:
+    ______ E.. __ err:
         print('Other Error')
         print(err)
     ____:

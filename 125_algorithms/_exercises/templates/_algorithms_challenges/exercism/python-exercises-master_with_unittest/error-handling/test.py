@@ -3,7 +3,7 @@ _______ unittest
 _______ error_handling __ er
 
 
-c_ FileLike(object):
+c_ FileLike(o..):
     ___ - , fail_something=T..):
         is_open = F..
         was_open = F..
@@ -28,12 +28,12 @@ c_ FileLike(object):
     ___ do_something
         did_something = T..
         __ fail_something:
-            r.. Exception("Failed while doing something")
+            r.. E..("Failed while doing something")
 
 
 c_ ErrorHandlingTest(unittest.TestCase):
     ___ test_throw_exception
-        w__ assertRaisesWithMessage(Exception):
+        w__ assertRaisesWithMessage(E..):
             er.handle_error_by_throwing_exception()
 
     ___ test_return_none
@@ -54,7 +54,7 @@ c_ ErrorHandlingTest(unittest.TestCase):
 
     ___ test_filelike_objects_are_closed_on_exception
         filelike_object = FileLike(fail_something=T..)
-        w__ assertRaisesWithMessage(Exception):
+        w__ assertRaisesWithMessage(E..):
             er.filelike_objects_are_closed_on_exception(filelike_object)
         assertIs(filelike_object.is_open, F..,
                       'filelike_object should be closed')

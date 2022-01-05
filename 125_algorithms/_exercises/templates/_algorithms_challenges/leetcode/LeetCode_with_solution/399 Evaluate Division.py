@@ -24,7 +24,7 @@ ____ i.. _______ izip
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ calcEquation  equations, values, queries):
         """
         transitive closure
@@ -57,7 +57,7 @@ c_ Solution(object):
         r.. -1.0
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ calcEquation  equations, values, queries):
         """
         Floyd-Warshall algorithm

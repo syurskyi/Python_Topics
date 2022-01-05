@@ -38,7 +38,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
             
             __ year:
                 __ date.year < year:
-                    break
+                    _____
                 __ date.year > year:
                     _____
 

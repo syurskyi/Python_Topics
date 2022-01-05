@@ -3,7 +3,7 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ minSwapsCouples  row):
         """
         :type row: List[int]

@@ -3,7 +3,7 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isToeplitzMatrix  matrix):
         """
         :type matrix: List[List[int]]
@@ -14,14 +14,14 @@ c_ Solution(object):
             val = matrix[i][0]
             ___ k __ r..(1, n):
                 __ i+k >= m o. k >= n:
-                    break
+                    _____
                 __ matrix[i+k][k] != val:
                     r.. F..
         ___ j __ r..(n):
             val = matrix[0][j]
             ___ k __ r..(1, m):
                 __ j+k >= n o. k >= m:
-                    break
+                    _____
                 __ matrix[k][j+k] != val:
                     r.. F..
         r.. T..

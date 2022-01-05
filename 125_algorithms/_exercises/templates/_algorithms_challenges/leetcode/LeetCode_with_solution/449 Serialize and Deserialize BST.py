@@ -14,7 +14,7 @@ The encoded string should be as compact as possible.
 
 
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
   ___ - , x):
       val = x
       left = N..

@@ -97,7 +97,7 @@ c_ Solution:
                 __ delta <= 30:
                     F[i] = m..(F[i], costs[2] + F[j])
                 ____:
-                    break
+                    _____
         r.. F[0]
 
     ___ mincostTickets_error  days: List[i..], costs: List[i..]) __ i..:

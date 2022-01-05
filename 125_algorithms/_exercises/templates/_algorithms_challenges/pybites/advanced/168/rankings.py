@@ -55,7 +55,7 @@ c_ Ninja:
 
         r.. ValueError
     
-    ___ __repr__
+    ___  -r
         r.. f"[{bites}] {name}"
 
 

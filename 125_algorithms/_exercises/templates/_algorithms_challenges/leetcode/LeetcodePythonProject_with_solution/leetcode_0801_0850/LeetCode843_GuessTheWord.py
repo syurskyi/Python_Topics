@@ -10,7 +10,7 @@ Created on Mar 6, 2019
 
 _______ c.., i..
 
-c_ Master(object):
+c_ Master(o..):
     ___ guess  word):
         """
         :type word: str
@@ -18,7 +18,7 @@ c_ Master(object):
         """
         p..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findSecretWord  wordlist, master):
         """
         :type wordlist: List[Str]

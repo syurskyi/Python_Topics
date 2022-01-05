@@ -39,7 +39,7 @@ c_ User:
     ___ __str__
         r.. f'{get_full_name} ({username})'
 
-    ___ __repr__
+    ___  -r
         """Don't hardcode the class name, hint: use a
            special attribute of self.__class__ ...
         """

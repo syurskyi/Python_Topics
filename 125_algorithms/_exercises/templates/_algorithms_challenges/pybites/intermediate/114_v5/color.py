@@ -52,7 +52,7 @@ c_ Color:
         ______ ValueError __ exp:
             r.. ValueError _*Invalid rgb value ({exp.args})')
 
-    ___ __repr__
+    ___  -r
         """Returns the repl of the object"""
         r.. f"{__class__.__name__}('{colorname}')"
 

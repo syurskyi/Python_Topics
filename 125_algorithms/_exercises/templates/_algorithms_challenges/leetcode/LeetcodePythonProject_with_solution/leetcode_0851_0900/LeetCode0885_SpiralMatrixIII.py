@@ -3,7 +3,7 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ spiralMatrixIII  R, C, r0, c0):
         """
         :type R: int

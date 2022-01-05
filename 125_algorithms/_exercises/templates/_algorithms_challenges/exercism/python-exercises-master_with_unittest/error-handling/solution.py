@@ -1,5 +1,5 @@
 ___ handle_error_by_throwing_exception
-    r.. Exception("Meaningful message describing the source of the error")
+    r.. E..("Meaningful message describing the source of the error")
 
 
 ___ handle_error_by_returning_none(input_data):

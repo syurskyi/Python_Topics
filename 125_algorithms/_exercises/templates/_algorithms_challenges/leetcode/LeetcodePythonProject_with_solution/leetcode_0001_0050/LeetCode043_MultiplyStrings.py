@@ -3,7 +3,7 @@ Created on Jun 5, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ multiply  num1, num2):
         """
         :type num1: str

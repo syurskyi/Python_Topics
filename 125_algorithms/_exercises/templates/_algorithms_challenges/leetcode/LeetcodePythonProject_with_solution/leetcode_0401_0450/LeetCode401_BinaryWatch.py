@@ -4,7 +4,7 @@ Created on Apr 8, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ readBinaryWatch  num):
         result    # list
         ___ i __ r..(12):

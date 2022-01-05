@@ -4,7 +4,7 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minTotalDistance  grid):
         m, n = l..(grid), l..(grid[0])
         rows, cols    # list, []

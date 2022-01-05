@@ -17,4 +17,4 @@ ___ contains_any_py_chars(input_str):
 ___ contains_digits(input_str):
     """Receives input string and checks if it contains
        one or more digits."""
-    r.. any(x.isdigit() ___ x __ input_str)
+    r.. any(x.i.. ___ x __ input_str)

@@ -54,7 +54,7 @@ c_ Solution:
             res = dfs(c, b, val * evals[a, c], nexts, evals, visited)
 
             __ res != -1:
-                break
+                _____
 
         visited.discard(a)
         r.. res

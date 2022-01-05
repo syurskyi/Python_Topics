@@ -46,7 +46,7 @@ c_ Solution:
         gmax = -sys.maxint-1
         inc_stack    # list  # store the idx, increasing stack
 
-        ___ i __ xrange(n):
+        ___ i __ x..(n):
             w.... inc_stack a.. height[inc_stack[-1]] > height[i]:
                 last = inc_stack.pop()
                 __ inc_stack:  # calculate area when popping
@@ -82,7 +82,7 @@ c_ Solution:
         ___ ind, val __ e..(height):
             min_h = val
             max_area = m..(max_area, val*1)
-            ___ j __ xrange(ind, -1, -1):
+            ___ j __ x..(ind, -1, -1):
                 min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 max_area = m..(max_area, current_area)
@@ -110,7 +110,7 @@ c_ Solution:
 
             min_h = val
             global_max = m..(global_max, min_h*1)
-            ___ j __ xrange(ind, -1, -1):  # scanning backward
+            ___ j __ x..(ind, -1, -1):  # scanning backward
                 min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 global_max = m..(global_max, current_area)

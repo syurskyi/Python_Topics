@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   # space O(n^2)
   ___ _numDistinct  s, t):
     """

@@ -6,7 +6,7 @@ The digits are stored such that the most significant digit is at the head of
 the list.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ plusOne  d..):
         """
         :type digits: List[int]

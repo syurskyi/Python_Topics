@@ -5,13 +5,13 @@ Created on Aug 20, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ boundaryOfBinaryTree  root):
         """
         :type root: TreeNode
@@ -55,7 +55,7 @@ c_ Solution(object):
                 root = root.right
             ____:
                 root = root.left
-        result.reverse()
+        result.r..
         r.. result
     
     ___ test

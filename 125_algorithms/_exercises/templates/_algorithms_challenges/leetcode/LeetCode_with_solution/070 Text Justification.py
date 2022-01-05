@@ -54,7 +54,7 @@ c_ Solution:
             word = words[i]
             cur_length += 1 # space in left justified
             cur_length += l..(word)
-            __ cur_length>L: break
+            __ cur_length>L: _____
             lst.a..(word)
             i += 1
 

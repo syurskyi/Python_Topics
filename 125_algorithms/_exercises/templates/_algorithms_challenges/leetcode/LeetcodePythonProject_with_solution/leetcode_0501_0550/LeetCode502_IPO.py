@@ -4,7 +4,7 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMaximizedCapital  k, W, Profits, Capital):
         """
         :type k: int
@@ -23,7 +23,7 @@ c_ Solution(object):
                 c, p = heapq.heappop(heapCap)
                 heapq.heappush(heapPro, (-p, c))
             __ n.. heapPro:
-                break
+                _____
             p, c = heapq.heappop(heapPro)
             W += -p
         r.. W

@@ -28,7 +28,7 @@ c_ Solution:
 
         ___ symb, amount __ symbs:
             __ n.. num:
-                break
+                _____
 
             w.... num >= amount:  # num - amount >= 0
                 num -= amount

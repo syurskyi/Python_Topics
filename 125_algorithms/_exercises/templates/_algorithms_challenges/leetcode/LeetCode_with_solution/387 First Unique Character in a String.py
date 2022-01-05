@@ -15,7 +15,7 @@ Note: You may assume the string contain only lowercase letters.
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ firstUniqChar  s):
         """
         :type s: str

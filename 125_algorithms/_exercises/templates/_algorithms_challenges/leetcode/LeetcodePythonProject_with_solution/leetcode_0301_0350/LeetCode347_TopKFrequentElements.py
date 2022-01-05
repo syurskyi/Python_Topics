@@ -4,7 +4,7 @@ Created on Mar 21, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ topKFrequent  nums, k):
         maxCount = 0
         hashmap    # dict
@@ -18,7 +18,7 @@ c_ Solution(object):
         i = maxCount-1
         w.... k > 0:
             __ i < 0:
-                break
+                _____
             __ n.. dp[i]:
                 i-=1
             ____:

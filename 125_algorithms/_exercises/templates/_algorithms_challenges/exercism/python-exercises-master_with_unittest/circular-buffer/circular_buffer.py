@@ -1,11 +1,11 @@
-c_ BufferFullException(Exception):
+c_ BufferFullException(E..):
     p..
 
 
-c_ BufferEmptyException(Exception):
+c_ BufferEmptyException(E..):
     p..
 
 
-c_ CircularBuffer(object):
+c_ CircularBuffer(o..):
     ___ - ):
         p..

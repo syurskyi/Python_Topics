@@ -5,7 +5,7 @@ ___
     bad = aaa
 ______ FileNotFoundError:
     print("file not exist")
-______ Exception __ e:
+______ E.. __ e:
     print(e)
 ____:
     print(f.read())

@@ -1,3 +1,3 @@
-c_ Robot(object):
+c_ Robot(o..):
     ___ - ):
         p..

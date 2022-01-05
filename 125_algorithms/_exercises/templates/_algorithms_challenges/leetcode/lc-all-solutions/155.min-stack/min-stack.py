@@ -1,4 +1,4 @@
-c_ MinStack(object):
+c_ MinStack(o..):
 
   ___ - ):
     """

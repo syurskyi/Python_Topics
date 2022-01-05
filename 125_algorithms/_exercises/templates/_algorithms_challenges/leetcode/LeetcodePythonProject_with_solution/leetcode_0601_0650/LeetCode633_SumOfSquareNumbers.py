@@ -4,7 +4,7 @@ Created on Sep 24, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ judgeSquareSum  c):
         """
         :type c: int

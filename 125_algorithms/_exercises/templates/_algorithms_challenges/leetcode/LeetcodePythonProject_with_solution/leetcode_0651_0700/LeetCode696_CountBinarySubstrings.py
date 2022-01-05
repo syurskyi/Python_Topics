@@ -3,7 +3,7 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ countBinarySubstrings  s):
         """
         :type s: str

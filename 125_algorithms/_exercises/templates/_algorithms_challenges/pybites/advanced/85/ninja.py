@@ -32,7 +32,7 @@ c_ NinjaBelt:
         ___ i,(score,rank) __ e..(z..(scores,ranks)):
             __ score > score:
                 rank = ranks[i -1]
-                break
+                _____
 
 
         __ rank != _last_earned_belt:

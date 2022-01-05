@@ -50,7 +50,7 @@ c_ Solution:
                 __ val.right: q.a..(val.right)
                 ___
                     val.next = current_level[ind+1]
-                ______ IndexError:
+                ______ I..
                     val.next = N..
 
 

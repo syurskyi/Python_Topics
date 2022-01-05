@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ validWordAbbreviation  word, abbr):
         """
         pointers
@@ -15,9 +15,9 @@ c_ Solution(object):
         w = 0
         a = 0
         w.... w < l..(word) a.. a < l..(abbr):
-            __ abbr[a].isdigit() a.. abbr[a] != '0':
+            __ abbr[a].i.. a.. abbr[a] != '0':
                 e = a
-                w.... e < l..(abbr) a.. abbr[e].isdigit e += 1
+                w.... e < l..(abbr) a.. abbr[e].i.. e += 1
                 num = i..(abbr[a:e])
                 a = e
                 w += num

@@ -1,7 +1,7 @@
 ____ c.. _______ d..
 
 
-c_ Queue(object):
+c_ Queue(o..):
   ___ - ):
     """
     initialize your data structure here.

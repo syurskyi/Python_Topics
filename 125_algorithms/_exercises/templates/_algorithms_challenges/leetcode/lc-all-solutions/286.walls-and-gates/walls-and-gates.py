@@ -3,7 +3,7 @@ ____ c.. _______ d..
 INF = 2147483647
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ wallsAndGates  rooms):
     """
     :type rooms: List[List[int]]

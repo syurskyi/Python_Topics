@@ -3,7 +3,7 @@ Created on Mar 11, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numIslands2  m, n, positions):
         res    # list
         roots = [-1]*(m*n)

@@ -4,7 +4,7 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ validIPAddress  IP):
         """
         :type IP: str
@@ -22,7 +22,7 @@ c_ Solution(object):
         ___ elem __ arr:
             __ n.. elem: r.. F..
             __ elem.startswith('0') a.. l..(elem) > 1: r.. F..
-            __ n.. elem.isdigit() o. i..(elem) > 255:
+            __ n.. elem.i.. o. i..(elem) > 255:
                 r.. F..
         r.. T..
     

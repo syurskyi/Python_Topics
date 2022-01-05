@@ -3,7 +3,7 @@ Created on Apr 12, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findCheapestPrice  n, flights, src, dst, K):
         """
         :type n: int

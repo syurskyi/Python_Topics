@@ -5,13 +5,13 @@ Created on Apr 16, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ pathSum  root, sumVal):
         __ n.. root: r.. 0
         r.. helper(root, sumVal) +\

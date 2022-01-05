@@ -14,7 +14,7 @@ c_ Solution:
         ___ i __ r..(1, l..(A)):
             __ A[i] < _min:
                 _min = A[i]
-                break
+                _____
 
         r.. _min
 

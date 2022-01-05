@@ -4,7 +4,7 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ removeBoxes  boxes):
         """
         :type boxes: List[int]

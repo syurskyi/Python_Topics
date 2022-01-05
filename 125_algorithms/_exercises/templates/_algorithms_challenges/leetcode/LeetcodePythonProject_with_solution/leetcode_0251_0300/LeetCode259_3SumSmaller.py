@@ -4,7 +4,7 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ threeSumSmaller  nums, target):
         """
         :type nums: List[int]

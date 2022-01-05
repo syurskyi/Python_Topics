@@ -4,7 +4,7 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findSubstringInWraproundString  p):
         """
         :type p: str

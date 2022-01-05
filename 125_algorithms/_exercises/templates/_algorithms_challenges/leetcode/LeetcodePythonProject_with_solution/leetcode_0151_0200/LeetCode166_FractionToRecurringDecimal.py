@@ -4,7 +4,7 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ fractionToDecimal  numerator, denominator):
         """
         :type numerator: int

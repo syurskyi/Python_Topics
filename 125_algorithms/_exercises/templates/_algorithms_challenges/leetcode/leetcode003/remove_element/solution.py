@@ -6,7 +6,7 @@ The order of elements can be changed. It doesn't matter what you leave beyond
 the new length.
 """
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ removeElement  nums, val):
         """
         :type nums: List[int]

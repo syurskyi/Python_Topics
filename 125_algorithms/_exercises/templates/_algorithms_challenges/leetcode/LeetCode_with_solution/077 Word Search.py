@@ -33,9 +33,9 @@ c_ Solution:
 
         m = l..(board)
         n = l..(board[0])
-        visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]  # avoid loop
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]  # avoid loop
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ board[i][j]__word[0]:
                     visited[i][j] = T..
                     __ s..(board, i, j, word[1:], visited):

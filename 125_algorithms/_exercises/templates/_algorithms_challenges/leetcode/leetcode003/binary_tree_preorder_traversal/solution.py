@@ -20,7 +20,7 @@ return [1,2,3].
 #         self.left = None
 #         self.right = None
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ preorderTraversal  root):
         """
         :type root: TreeNode

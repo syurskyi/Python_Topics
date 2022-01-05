@@ -4,7 +4,7 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canConstruct  ransomNote, magazine):
         hashmap    # dict
         ___ c __ magazine:

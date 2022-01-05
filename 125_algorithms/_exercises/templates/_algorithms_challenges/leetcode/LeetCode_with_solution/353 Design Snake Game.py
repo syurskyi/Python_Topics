@@ -6,7 +6,7 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ SnakeGame(object):
+c_ SnakeGame(o..):
     ___ - , width, height, food):
         """
         Initialize your data structure here.

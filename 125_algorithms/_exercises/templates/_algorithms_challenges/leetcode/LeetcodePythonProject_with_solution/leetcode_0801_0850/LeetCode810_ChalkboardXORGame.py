@@ -3,7 +3,7 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ xorGame  nums):
         """
         :type nums: List[int]
@@ -32,7 +32,7 @@ c_ Solution(object):
         ___ i __ r..(l..(nums)):
             __ n.. helper(nums[:i]+nums[i+1:], mem):
                 flag = T..
-                break
+                _____
         mem[s] = flag
         r.. flag
     

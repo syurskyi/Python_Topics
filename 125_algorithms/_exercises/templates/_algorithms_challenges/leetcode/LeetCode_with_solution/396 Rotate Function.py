@@ -27,7 +27,7 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxRotateFunction  A):
         """
         See the rotation pattern

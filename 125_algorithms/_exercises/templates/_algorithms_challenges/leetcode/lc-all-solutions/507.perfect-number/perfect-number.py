@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ checkPerfectNumber  num):
     """
     :type num: int

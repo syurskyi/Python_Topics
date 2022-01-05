@@ -1,4 +1,4 @@
-c_ NumArray(object):
+c_ NumArray(o..):
   ___ - , nums):
     """
     initialize your data structure here.

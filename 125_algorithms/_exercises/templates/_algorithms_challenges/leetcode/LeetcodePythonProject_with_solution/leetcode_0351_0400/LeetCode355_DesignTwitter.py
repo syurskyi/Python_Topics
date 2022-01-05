@@ -3,14 +3,14 @@ Created on Feb 28, 2018
 
 @author: tongq
 '''
-c_ TweetObj(object):
+c_ TweetObj(o..):
     ___ - , tweet_id, user_id, tweetId, prevTweet_ N..
         user_id = user_id
         tweetContext = tweetId
         prevTweet = prevTweet
         tweet_id = tweet_id
 
-c_ Twitter(object):
+c_ Twitter(o..):
 
     ___ - ):
         """
@@ -60,7 +60,7 @@ c_ Twitter(object):
         result    # list
         ___ _ __ r..(10):
             __ n.. heap:
-                break
+                _____
             tweetTuple = heapq.heappop(heap)
             result.a..(tweetTuple[1])
             __ tweetTuple[2]:

@@ -3,7 +3,7 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMaxAverage  nums, k):
         """
         :type nums: List[int]

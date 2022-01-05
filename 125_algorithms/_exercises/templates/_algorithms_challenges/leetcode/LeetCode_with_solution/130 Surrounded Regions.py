@@ -33,10 +33,10 @@ c_ Solution:
         # scan the boarder
         m = l..(board)
         n = l..(board[0])
-        ___ i __ xrange(m):
+        ___ i __ x..(m):
             __ board[i][0]__'O': q.a..((i, 0))
             __ board[i][n-1]__'O': q.a..((i, n-1))
-        ___ j __ xrange(1, n-1):
+        ___ j __ x..(1, n-1):
             __ board[0][j]__'O': q.a..((0, j))
             __ board[m-1][j]__'O': q.a..((m-1, j))
 
@@ -51,8 +51,8 @@ c_ Solution:
                     q.a..((row, col))
 
 
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ board[i][j]__'O':
                     board[i][j] = 'X'
                 ____ board[i][j]__CONNECTED:

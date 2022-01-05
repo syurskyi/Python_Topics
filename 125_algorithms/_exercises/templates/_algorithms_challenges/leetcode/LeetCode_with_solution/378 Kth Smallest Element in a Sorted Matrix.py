@@ -23,7 +23,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ kthSmallest  matrix, k):
         """
         Heap of list
@@ -33,7 +33,7 @@ c_ Solution(object):
         """
         m, n = l..(matrix), l..(matrix[0])
 
-        c_ Node(object):
+        c_ Node(o..):
             ___ - , i, j):
                 i = i
                 j = j
@@ -51,11 +51,11 @@ c_ Solution(object):
                 r.. StopIteration
 
         h    # list
-        ___ i __ xrange(m):
+        ___ i __ x..(m):
             heapq.heappush(h, Node(i, 0))
 
         ret = N..
-        ___ _ __ xrange(k):
+        ___ _ __ x..(k):
             ret = heapq.heappop(h)
             __ ret.hasnext
                 heapq.heappush(h, ret.next())

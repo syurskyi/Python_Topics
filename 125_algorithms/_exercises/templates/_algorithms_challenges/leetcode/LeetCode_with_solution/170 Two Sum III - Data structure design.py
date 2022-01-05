@@ -6,7 +6,7 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ TwoSum(object):
+c_ TwoSum(o..):
     ___ - ):
         """
         initialize your data structure here

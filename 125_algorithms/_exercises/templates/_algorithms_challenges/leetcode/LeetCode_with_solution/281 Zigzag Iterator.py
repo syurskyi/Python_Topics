@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ ZigzagIterator(object):
+c_ ZigzagIterator(o..):
     ___ - , v1, v2):
         """
         Initialize your data structure here.

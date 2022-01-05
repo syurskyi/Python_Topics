@@ -7,7 +7,7 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         lst = ["11", "69", "88", "96", "00"]  # use list rather than map since no need to look up
         middle = ["0", "1", "8"]
@@ -39,7 +39,7 @@ c_ Solution(object):
                     cur.popleft()
 
 
-c_ SolutionArray(object):
+c_ SolutionArray(o..):
     ___ - ):
         map1 = ["11", "69", "88", "96", "00"]
 
@@ -76,7 +76,7 @@ c_ SolutionArray(object):
                 cur.pop(0)
 
 
-c_ SolutionOutputLimitExceeded(object):
+c_ SolutionOutputLimitExceeded(o..):
     ___ - ):
         map = {
             "1": "1",
@@ -103,12 +103,12 @@ c_ SolutionOutputLimitExceeded(object):
                     __ m != "0" o. idx != 0:
                         temp = l..(cur)
                         temp.a..(m)
-                        ___ i __ xrange(idx-1, -1, -1):
+                        ___ i __ x..(idx-1, -1, -1):
                             temp.a..(map[temp[i]])
                         ret.a..("".j..(temp))
             ____:
                 temp = l..(cur)
-                ___ i __ xrange(idx-1, -1, -1):
+                ___ i __ x..(idx-1, -1, -1):
                     temp.a..(map[temp[i]])
                     ret.a..("".j..(temp))
 

@@ -41,7 +41,7 @@ c_ Solution:
                     prefix_l += 1
                     cur = cur[c]
                     __ cur["count"] __ 1:
-                        break
+                        _____
 
                 ret[i] = abbrev(w, prefix_l)
 

@@ -4,12 +4,12 @@ Created on Feb 11, 2017
 @author: MT
 '''
 # Definition for a point.
-c_ Point(object):
+c_ Point(o..):
     ___ - , a=0, b=0):
         x = a
         y = b
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxPoints  points):
         """
         :type points: List[Point]

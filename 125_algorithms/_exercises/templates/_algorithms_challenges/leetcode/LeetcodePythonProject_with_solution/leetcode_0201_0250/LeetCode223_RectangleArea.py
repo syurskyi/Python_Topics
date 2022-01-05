@@ -3,7 +3,7 @@ Created on Feb 21, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ computeArea  A, B, C, D, E, F, G, H):
         """
         :type A: int

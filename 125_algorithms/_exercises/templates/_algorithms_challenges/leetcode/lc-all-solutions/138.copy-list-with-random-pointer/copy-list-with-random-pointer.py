@@ -5,7 +5,7 @@
 #         self.next = None
 #         self.random = None
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ copyRandomList  head):
     """
     :type head: RandomListNode

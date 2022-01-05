@@ -40,7 +40,7 @@ c_ Solution:
             __ a != b:
                 r.. F..
             __ a __ N.. a.. b __ N..
-                break
+                _____
         r.. T..
 
     ___ dfs  node):

@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ getSkyline  buildings):
     """
     :type buildings: List[List[int]]

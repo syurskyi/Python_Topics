@@ -4,7 +4,7 @@ Created on Mar 17, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ maxProduct  words):
         __ n.. words: r.. 0
         arr = [0]*l..(words)

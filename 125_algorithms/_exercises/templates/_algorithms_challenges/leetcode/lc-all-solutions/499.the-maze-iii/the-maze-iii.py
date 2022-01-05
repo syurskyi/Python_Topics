@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ findShortestWay  maze, ball, hole):
     """
     :type maze: List[List[int]]
@@ -22,7 +22,7 @@ c_ Solution(object):
           j += dj
           dist += 1
           __ (i, j) __ hole:
-            break
+            _____
         y.. (i, j), mark, dist
 
     heap = [(0, "", t..(ball))]

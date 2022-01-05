@@ -38,4 +38,4 @@ c_ Phone:
 
     @staticmethod
     ___ strip(inp):
-        r.. ''.j..(char ___ char __ inp __ char.isdigit())
+        r.. ''.j..(char ___ char __ inp __ char.i..())

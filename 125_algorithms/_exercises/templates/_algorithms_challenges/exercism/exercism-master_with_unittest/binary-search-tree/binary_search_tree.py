@@ -1,4 +1,4 @@
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , data, left=N.., right_ N..
         data = data
         left = left
@@ -9,7 +9,7 @@ c_ TreeNode(object):
         r.. fmt.f..(data, left, right)
 
 
-c_ BinarySearchTree(object):
+c_ BinarySearchTree(o..):
     ___ - , tree_data):
         head = N..
         ___ node_data __ tree_data:

@@ -3,7 +3,7 @@ Created on Jun 9, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findReplaceString  S, indexes, sources, targets):
         """
         :type S: str

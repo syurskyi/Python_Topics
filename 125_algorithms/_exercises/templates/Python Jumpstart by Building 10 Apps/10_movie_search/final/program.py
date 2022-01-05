@@ -32,7 +32,7 @@ ___ search_event_loop
             print("Error: Search text is required")
         ______ requests.exceptions.ConnectionError:
             print("Error: Your network is down.")
-        ______ Exception __ x:
+        ______ E.. __ x:
             print("Unexpected error. Details: {}".f..(x))
 
     print('exiting...')

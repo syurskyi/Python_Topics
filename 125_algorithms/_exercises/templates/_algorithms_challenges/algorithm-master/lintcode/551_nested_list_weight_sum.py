@@ -19,7 +19,7 @@ class NestedInteger(object):
 """
 
 
-c_ Solution(object):
+c_ Solution(o..):
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
     ___ depthSum  L):
@@ -38,7 +38,7 @@ c_ Solution(object):
         r.. _sum
 
 
-c_ Solution(object):
+c_ Solution(o..):
     # @param {NestedInteger[]} L a list of NestedInteger Object
     # @return {int} an integer
     ___ depthSum  L):

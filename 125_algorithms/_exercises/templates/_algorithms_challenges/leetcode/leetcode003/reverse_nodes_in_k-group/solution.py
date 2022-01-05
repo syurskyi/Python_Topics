@@ -47,7 +47,7 @@ c_ Solution:
                     temp = N..
             ____:
                 res_end.next = head
-                break
+                _____
             i += 1
             head = next_node
         r.. res

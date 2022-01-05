@@ -17,14 +17,14 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ inorderTraversal  root):
         """
         Morris Traversal

@@ -1,7 +1,7 @@
 _______ heapq
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ isRectangleCover  rectangles):
     """
     :type rectangles: List[List[int]]

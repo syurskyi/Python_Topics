@@ -1,4 +1,4 @@
-c_ StringIterator(object):
+c_ StringIterator(o..):
 
   ___ - , compressedString):
     """
@@ -13,7 +13,7 @@ c_ StringIterator(object):
     __ idx + 1 < l..(data):
       cur = data[idx]
       end = idx + 1
-      w.... end < l..(data) a.. data[end].isdigit
+      w.... end < l..(data) a.. data[end].i..
         end += 1
       print
       end

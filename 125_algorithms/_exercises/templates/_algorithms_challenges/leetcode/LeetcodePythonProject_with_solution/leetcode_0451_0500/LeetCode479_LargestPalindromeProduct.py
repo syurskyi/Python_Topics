@@ -3,7 +3,7 @@ Created on Nov 19, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ largestPalindrome  n):
         """
         :type n: int
@@ -20,10 +20,10 @@ c_ Solution(object):
             palindrome = createPalindrome(firstHalf)
             ___ i __ r..(upperBound, lowerBound, -1):
                 __ palindrome//i > maxNum o. i*i < palindrome:
-                    break
+                    _____
                 __ palindrome % i __ 0:
                     palindromeFound = T..
-                    break
+                    _____
             firstHalf -= 1
         r.. i..(palindrome%1337)
     

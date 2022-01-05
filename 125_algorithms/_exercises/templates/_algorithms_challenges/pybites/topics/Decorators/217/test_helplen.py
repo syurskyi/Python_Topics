@@ -14,7 +14,7 @@ ___ test_max
 
 
 ___ test_bad_input
-    max1 = object()
+    max1 = o..()
     w__ p__.r..(ValueError):
         get_len_help_text(max1)
 

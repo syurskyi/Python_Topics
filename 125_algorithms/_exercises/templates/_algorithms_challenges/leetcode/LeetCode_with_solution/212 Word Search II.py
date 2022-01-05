@@ -20,17 +20,17 @@ You may assume that all inputs are consist of lowercase letters a-z.
 __author__ = 'Daniel'
 
 
-c_ TrieNode(object):
+c_ TrieNode(o..):
     ___ - , char):
         char = char
         word = N..
         children    # dict  # map from char to TrieNode
 
-    ___ __repr__
+    ___  -r
         r.. repr(char)
 
 
-c_ Trie(object):
+c_ Trie(o..):
     ___ - ):
         root = TrieNode(N..)
 
@@ -63,8 +63,8 @@ c_ Solution:
 
         ret = set()
         marked = set()
-        ___ i __ xrange(l..(board)):
-            ___ j __ xrange(l..(board[0])):
+        ___ i __ x..(l..(board)):
+            ___ j __ x..(l..(board[0])):
                 dfs(board, i, j, trie.root, marked, ret)
 
         r.. l..(ret)

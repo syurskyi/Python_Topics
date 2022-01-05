@@ -4,14 +4,14 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ TreeNode(object):
+c_ TreeNode(o..):
     ___ - , x):
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ upsideDownBinaryTree  root):
         """
         single recursive
@@ -30,7 +30,7 @@ c_ Solution(object):
         r.. root_new
 
 
-c_ SolutionComplex(object):
+c_ SolutionComplex(o..):
     ___ - ):
         root = TreeNode(0)
         cur_new = root

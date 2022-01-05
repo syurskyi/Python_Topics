@@ -9,7 +9,7 @@ ___ my_print_colors
         inp = input("Enter color:").l..
         __ inp __ 'quit':
             print("bye")
-            break
+            _____
 
         __ inp n.. __ VALID_COLORS:
             print("Not a valid color")
@@ -19,7 +19,7 @@ ___ my_print_colors
             print(inp)
 
     # thou shall not stop after a match!!!
-            break
+            _____
 
 ___ print_colors
     """Ask for color, lowercase it, check if 'quit' is entered, if so print
@@ -29,7 +29,7 @@ ___ print_colors
         color = input('Enter a color: ').l..
         __ color __ 'quit':
             print('bye')
-            break
+            _____
 
         __ color n.. __ VALID_COLORS:
             print('Not a valid color')

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ minTotalDistance  grid):
     """
     :type grid: List[List[int]]

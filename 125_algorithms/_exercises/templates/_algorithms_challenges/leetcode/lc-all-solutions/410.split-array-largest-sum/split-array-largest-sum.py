@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ splitArray  nums, m):
     """
     :type nums: List[int]

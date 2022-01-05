@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ addStrings  num1, num2):
     """
     :type num1: str

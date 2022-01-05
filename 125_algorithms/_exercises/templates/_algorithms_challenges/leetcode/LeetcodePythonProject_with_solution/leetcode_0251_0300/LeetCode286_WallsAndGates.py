@@ -4,7 +4,7 @@ Created on Mar 7, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ wallsAndGates  rooms):
         """
         :type rooms: List[List[int]]

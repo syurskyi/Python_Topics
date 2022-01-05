@@ -16,7 +16,7 @@ _______ sys
 __author__ = 'Danyang'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ findMin  A):
         """
         similar to find target in rotated sorted array

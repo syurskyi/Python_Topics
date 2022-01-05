@@ -42,7 +42,7 @@ ___ validate_ocr_numbers(ocr_numbers: List[s..]):
 
 
 ___ validate_numbers(numbers: s..):
-    __ n.. numbers.isdigit
+    __ n.. numbers.i..
         r.. ValueError(numbers + ' is not a digit')
 
 

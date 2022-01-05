@@ -4,7 +4,7 @@ Created on Feb 7, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ longestConsecutive  nums):
         """
         :type nums: List[int]

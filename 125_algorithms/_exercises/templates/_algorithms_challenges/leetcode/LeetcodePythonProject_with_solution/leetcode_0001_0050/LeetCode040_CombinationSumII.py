@@ -3,7 +3,7 @@ Created on Jun 6, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ combinationSum2  candidates, target):
         """
         :type candidates: List[int]

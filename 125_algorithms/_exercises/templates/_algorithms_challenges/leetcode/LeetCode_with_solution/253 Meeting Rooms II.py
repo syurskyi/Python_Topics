@@ -15,7 +15,7 @@ c_ Interval:
         end = e
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minMeetingRooms  intervals):
         """
 

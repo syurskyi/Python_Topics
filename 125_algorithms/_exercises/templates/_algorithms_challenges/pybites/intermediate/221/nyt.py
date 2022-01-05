@@ -38,7 +38,7 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
     ______ requests.HTTPError __ e:
         print('HTTP Error')
         print(e)
-    ______ Exception __ e:
+    ______ E.. __ e:
         print('Other exception')
         print(e)
     ____:

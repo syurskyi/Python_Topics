@@ -4,7 +4,7 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canIWin  maxChoosableInteger, desiredTotal):
         __ (1+maxChoosableInteger)*maxChoosableInteger/2 < desiredTotal:
             r.. F..

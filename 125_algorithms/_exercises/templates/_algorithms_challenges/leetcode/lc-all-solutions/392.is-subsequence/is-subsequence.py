@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ isSubsequence  s, t):
     """
     :type s: str

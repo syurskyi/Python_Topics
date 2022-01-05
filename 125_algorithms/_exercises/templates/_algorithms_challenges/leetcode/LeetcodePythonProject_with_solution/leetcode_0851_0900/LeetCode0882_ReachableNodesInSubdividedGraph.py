@@ -3,7 +3,7 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ reachableNodes  edges, M, N):
         """
         :type edges: List[List[int]]

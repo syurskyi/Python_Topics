@@ -24,6 +24,6 @@ c_ Solution:
             ___ j __ r..(1, m..(i, max_size) + 1):
                 __ dp[i - j] a.. s[i - j:i] __ word_set:
                     dp[i] = T..
-                    break
+                    _____
 
         r.. dp[n]

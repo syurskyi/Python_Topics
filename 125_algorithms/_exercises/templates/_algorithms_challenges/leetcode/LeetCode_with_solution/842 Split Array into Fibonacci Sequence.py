@@ -67,7 +67,7 @@ c_ Solution:
 
             num = i..(num_str)
             __ num > MAX:
-                break
+                _____
 
             ___ j __ r..(i + 1, l + 1):
                 num2_str = S[i:j]
@@ -76,21 +76,21 @@ c_ Solution:
 
                 num2 = i..(num2_str)
                 __ num2 > MAX:
-                    break
+                    _____
 
                 ret = [num, num2]
                 k = j
                 w.... k < l:
                     nxt = ret[-1] + ret[-2]
                     __ nxt > MAX:
-                        break
+                        _____
 
                     nxt_str = s..(nxt)
                     __ S[k:k+l..(nxt_str)] __ nxt_str:
                         k = k + l..(nxt_str)
                         ret.a..(nxt)
                     ____:
-                        break
+                        _____
                 ____:
                     __ k __ l a.. l..(ret) >= 3:
                         r.. ret

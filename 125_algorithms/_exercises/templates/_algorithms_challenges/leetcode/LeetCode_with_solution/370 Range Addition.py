@@ -4,7 +4,7 @@ Premium question
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getModifiedArray  length, updates):
         """
         Brute force: O(kn)
@@ -23,7 +23,7 @@ c_ Solution(object):
         :type updates: List[List[int]]
         :rtype: List[int]
         """
-        deltas = [0 ___ _ __ xrange(length)]
+        deltas = [0 ___ _ __ x..(length)]
         ___ i, j, k __ updates:
             deltas[i] += k
             __ j + 1 < length: deltas[j + 1] -= k

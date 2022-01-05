@@ -4,7 +4,7 @@ Created on Apr 9, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ canCross  stones):
         __ n.. stones: r.. F..
         hashmap    # dict

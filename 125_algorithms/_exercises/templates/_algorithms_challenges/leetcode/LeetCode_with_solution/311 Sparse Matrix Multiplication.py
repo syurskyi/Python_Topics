@@ -5,7 +5,7 @@ https://leetcode.com/problems/sparse-matrix-multiplication/
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ multiply  A, B):
         """
         Brute force O(n^3)
@@ -16,20 +16,20 @@ c_ Solution(object):
         :rtype: List[List[int]]
         """
         m, n = l..(A), l..(A[0])
-        A1 = [{} ___ _ __ xrange(m)]
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        A1 = [{} ___ _ __ x..(m)]
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ A[i][j] != 0:
                     A1[i][j] = A[i][j]
 
         m, n = l..(B), l..(B[0])
-        B1 = [{} ___ _ __ xrange(n)]
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        B1 = [{} ___ _ __ x..(n)]
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ B[i][j] != 0:
                     B1[j][i] = B[i][j]
 
-        ret = [[0 ___ _ __ xrange(l..(B[0]))] ___ _ __ xrange(l..(A))]
+        ret = [[0 ___ _ __ x..(l..(B[0]))] ___ _ __ x..(l..(A))]
         ___ i, row __ e..(A1):
             ___ j, col __ e..(B1):
                 s = 0

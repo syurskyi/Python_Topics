@@ -5,7 +5,7 @@ Created on Oct 29, 2017
 '''
 _______ bisect
 
-c_ RangeModule(object):
+c_ RangeModule(o..):
 
     ___ - ):
         X = [0, 10**9]
@@ -49,12 +49,12 @@ c_ RangeModule(object):
         """
         addRangeHelper(left, right, F..)
 
-c_ Interval(object):
+c_ Interval(o..):
     ___ - , left, right):
         left = left
         right = right
 
-c_ RangeModule_own(object):
+c_ RangeModule_own(o..):
     ___ - ):
         intervals    # list
 

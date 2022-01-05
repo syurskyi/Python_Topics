@@ -4,7 +4,7 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ getFactors  n):
         """
         :type n: int

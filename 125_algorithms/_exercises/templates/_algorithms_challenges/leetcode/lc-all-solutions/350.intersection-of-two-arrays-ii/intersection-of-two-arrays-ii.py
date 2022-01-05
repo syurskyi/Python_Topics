@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ intersect  nums1, nums2):
     """
     :type nums1: List[int]

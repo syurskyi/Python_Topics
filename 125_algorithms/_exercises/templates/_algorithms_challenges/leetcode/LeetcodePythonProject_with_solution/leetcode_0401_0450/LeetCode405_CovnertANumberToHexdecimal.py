@@ -4,7 +4,7 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ toHex  num):
         __ num __ 0: r.. '0'
         mp = '0123456789abcdef'

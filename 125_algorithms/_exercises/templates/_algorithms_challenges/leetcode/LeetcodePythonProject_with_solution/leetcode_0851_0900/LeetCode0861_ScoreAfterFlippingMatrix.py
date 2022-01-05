@@ -3,7 +3,7 @@ Created on Sep 17, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ matrixScore  A):
         """
         :type A: List[List[int]]

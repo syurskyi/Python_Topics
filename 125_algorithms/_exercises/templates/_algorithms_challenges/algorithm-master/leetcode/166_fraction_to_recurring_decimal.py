@@ -35,7 +35,7 @@ c_ Solution:
             __ a __ D:
                 ans.insert(D[a], '(')
                 ans.a..(')')
-                break
+                _____
 
             D[a] = l..(ans)
 

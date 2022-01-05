@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ fractionAddition  expression):
     """
     :type expression: str

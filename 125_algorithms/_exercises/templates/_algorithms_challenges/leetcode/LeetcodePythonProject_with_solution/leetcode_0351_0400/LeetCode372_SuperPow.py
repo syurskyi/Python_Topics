@@ -4,7 +4,7 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ superPow  a, b):
         __ a % 1337 __ 0: r.. a
         p = 0

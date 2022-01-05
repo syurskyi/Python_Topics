@@ -4,7 +4,7 @@ Created on May 9, 2017
 @author: MT
 '''
 
-c_ Node(object):
+c_ Node(o..):
     ___ - , val):
         val = val
         less = 0
@@ -12,7 +12,7 @@ c_ Node(object):
         left = N..
         right = N..
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ reversePairs_mergeSort  nums):
         """
         :type nums: List[int]

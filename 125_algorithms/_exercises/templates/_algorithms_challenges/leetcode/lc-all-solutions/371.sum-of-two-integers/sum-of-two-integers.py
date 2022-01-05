@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ getSum  num1, num2):
     """
     :type a: int

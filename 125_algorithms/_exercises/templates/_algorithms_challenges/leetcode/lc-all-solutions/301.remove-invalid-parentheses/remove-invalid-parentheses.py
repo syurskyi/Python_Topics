@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ removeInvalidParentheses  s):
     """
     :type s: str
@@ -35,7 +35,7 @@ c_ Solution(object):
     ___ i __ r..(0, l..(s)):
       __ s[i] __ "(":
         prepLeft += s[i:]
-        break
+        _____
       ____ s[i] != ")":
         prepLeft += s[i]
 
@@ -43,7 +43,7 @@ c_ Solution(object):
     ___ i __ r..(r..(0, l..(prepLeft))):
       __ prepLeft[i] __ ")":
         prepRight += prepLeft[:i + 1][::-1]
-        break
+        _____
       ____ prepLeft[i] != "(":
         prepRight += prepLeft[i]
 

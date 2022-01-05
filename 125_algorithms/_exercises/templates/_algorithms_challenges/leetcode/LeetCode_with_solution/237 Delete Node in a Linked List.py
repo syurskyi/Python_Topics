@@ -25,6 +25,6 @@ c_ Solution:
             cur.val = cur.next.val
             __ n.. cur.next.next:
                 cur.next = N..
-                break
+                _____
 
             cur = cur.next

@@ -16,6 +16,6 @@ ___ i __ r..(i..(input())):
             n.pop()
         ____:
             ans = F..
-            break
+            _____
 
     print('Yes' __ ans ____ 'No')

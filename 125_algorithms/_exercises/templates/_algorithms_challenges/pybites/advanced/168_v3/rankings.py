@@ -70,7 +70,7 @@ c_ Rankings:
 
     ___ highest  count: i.. = 1):
         result = ninja_list[-count:]
-        result.reverse()
+        result.r..
         r.. result
 
     ___ lowest  count: i.. = 1):

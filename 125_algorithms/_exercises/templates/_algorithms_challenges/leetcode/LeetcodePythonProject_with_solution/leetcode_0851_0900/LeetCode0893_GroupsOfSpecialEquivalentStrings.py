@@ -3,7 +3,7 @@ Created on Nov 4, 2019
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ numSpecialEquivGroups  A):
         """
         :type A: List[str]

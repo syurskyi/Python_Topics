@@ -3,7 +3,7 @@ Created on Mar 10, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ evaluate  expression):
         """
         :type expression: str
@@ -49,7 +49,7 @@ c_ Solution(object):
         r.. helper(expression, hashmap)
     
     ___ helper  exp, hashmap):
-        __ exp[0] __ '-' o. exp.isdigit
+        __ exp[0] __ '-' o. exp.i..
             r.. i..(exp)
         ____ exp[0] != '(':
             r.. hashmap[exp]

@@ -3,7 +3,7 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ letterCasePermutation  S):
         """
         :type S: str
@@ -18,7 +18,7 @@ c_ Solution(object):
         __ i __ l..(s):
             res.add(curr)
             r..
-        __ s[i].isdigit
+        __ s[i].i..
             helper(s, i+1, curr+s[i], res)
         ____:
             helper(s, i+1, curr+s[i].u.., res)

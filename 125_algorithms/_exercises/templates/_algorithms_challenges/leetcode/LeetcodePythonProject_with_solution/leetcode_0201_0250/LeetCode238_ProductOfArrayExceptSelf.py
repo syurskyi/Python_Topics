@@ -4,7 +4,7 @@ Created on Feb 26, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ productExceptSelf  nums):
         """
         :type nums: List[int]

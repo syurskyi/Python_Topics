@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ minimumDeleteSum  s1, s2):
         """
         :type s1: str

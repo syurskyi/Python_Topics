@@ -3,7 +3,7 @@ Created on Jan 30, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ isInterleave  s1, s2, s3):
         """
         :type s1: str

@@ -4,7 +4,7 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ setZeroes  matrix):
         """
         :type matrix: List[List[int]]
@@ -14,11 +14,11 @@ c_ Solution(object):
         ___ i __ r..(l..(matrix)):
             __ matrix[i][0] __ 0:
                 isColEmpty = T..
-                break
+                _____
         ___ i __ r..(l..(matrix[0])):
             __ matrix[0][i] __ 0:
                 isRowEmpty = T..
-                break
+                _____
         ___ i __ r..(1, l..(matrix)):
             ___ j __ r..(1, l..(matrix[0])):
                 __ matrix[i][j] __ 0:

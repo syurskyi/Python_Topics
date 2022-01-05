@@ -1,4 +1,4 @@
-c_ Cell(object):
+c_ Cell(o..):
     ___ - ):
         _watchers    # list
         _value = N..

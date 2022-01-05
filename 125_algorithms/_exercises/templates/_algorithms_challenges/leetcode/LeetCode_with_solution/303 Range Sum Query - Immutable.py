@@ -15,7 +15,7 @@ There are many calls to sumRange function.
 __author__ = 'Daniel'
 
 
-c_ NumArray(object):
+c_ NumArray(o..):
     ___ - , nums):
         """
         initialize your data structure here.
@@ -23,8 +23,8 @@ c_ NumArray(object):
         :type nums: List[int]
         """
         n = l..(nums)
-        F = [0 ___ _ __ xrange(n+1)]
-        ___ i __ xrange(1, n+1):
+        F = [0 ___ _ __ x..(n+1)]
+        ___ i __ x..(1, n+1):
             F[i] = F[i-1] + nums[i-1]
 
     ___ sumRange  i, j):

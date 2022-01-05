@@ -68,7 +68,7 @@ c_ Solution:
                     _____
                 __ A[i][j] > A[i+1][j]:
                     deleted += 1
-                    break
+                    _____
             ____:  # not deleted
                 # handle equal case
                 ___ i __ r..(m-1):

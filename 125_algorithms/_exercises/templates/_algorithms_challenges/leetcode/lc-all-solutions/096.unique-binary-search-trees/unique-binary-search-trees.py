@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ _numTrees  n):
     """
     :type n: int

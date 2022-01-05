@@ -1,4 +1,4 @@
-c_ List(object):
+c_ List(o..):
   @staticmethod
   ___ delete(elem):
     elem.prev.next = elem.next
@@ -30,7 +30,7 @@ c_ List(object):
     head.prev = head.next = head
 
 
-c_ Node(object):
+c_ Node(o..):
   ___ - , val):
     val = val
     prev = N..
@@ -52,7 +52,7 @@ c_ Node(object):
     r.. ""
 
 
-c_ AllOne(object):
+c_ AllOne(o..):
 
   ___ - ):
     """

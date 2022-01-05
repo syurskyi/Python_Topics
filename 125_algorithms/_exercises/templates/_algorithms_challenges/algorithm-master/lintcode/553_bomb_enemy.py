@@ -50,7 +50,7 @@ c_ Solution:
 
                     ___ i __ r..(x, m):
                         __ grid[i][y] __ WALL:
-                            break
+                            _____
                         __ grid[i][y] __ ENEMY:
                             cols[y] += 1
 
@@ -60,7 +60,7 @@ c_ Solution:
 
                     ___ i __ r..(y, n):
                         __ grid[x][i] __ WALL:
-                            break
+                            _____
                         __ grid[x][i] __ ENEMY:
                             row += 1
 
@@ -105,28 +105,28 @@ c_ Solution:
         # up
         ___ x __ r..(i, -1, -1):
             __ grid[x][j] __ WALL:
-                break
+                _____
             __ grid[x][j] __ ENEMY:
                 cnt += 1
 
         # down
         ___ x __ r..(i, m):
             __ grid[x][j] __ WALL:
-                break
+                _____
             __ grid[x][j] __ ENEMY:
                 cnt += 1
 
         # left
         ___ y __ r..(j, -1, -1):
             __ grid[i][y] __ WALL:
-                break
+                _____
             __ grid[i][y] __ ENEMY:
                 cnt += 1
 
         # right
         ___ y __ r..(j, n):
             __ grid[i][y] __ WALL:
-                break
+                _____
             __ grid[i][y] __ ENEMY:
                 cnt += 1
 

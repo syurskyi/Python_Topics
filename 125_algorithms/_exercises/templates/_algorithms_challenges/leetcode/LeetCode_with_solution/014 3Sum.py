@@ -30,15 +30,15 @@ c_ Solution:
                 reverse_map[val].a..(ind)
 
         result    # list
-        ___ i __ xrange(l..(num)):
-            ___ j __ xrange(i, l..(num)):
+        ___ i __ x..(l..(num)):
+            ___ j __ x..(i, l..(num)):
                 target = 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
                     _____
                 ___ index __ reverse_map[target]:
                     __ i != index a.. j != index:
                         result.a..([num[i], num[j], target])
-                        break
+                        _____
         r.. result
 
     ___ threeSum_TLE  num):
@@ -58,8 +58,8 @@ c_ Solution:
                 reverse_map[val].a..(ind)
 
         result    # dict
-        ___ i __ xrange(l..(num)):
-            ___ j __ xrange(i, l..(num)):
+        ___ i __ x..(l..(num)):
+            ___ j __ x..(i, l..(num)):
                 target = 0-num[i]-num[j]
                 __ target n.. __ reverse_map:
                     _____
@@ -68,7 +68,7 @@ c_ Solution:
                         lst = s..([num[i], num[j], target])
                         lst = t..(lst)
                         result[lst] = 1  # hash
-                        break
+                        _____
 
         r.. result.k..
 

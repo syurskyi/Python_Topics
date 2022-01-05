@@ -5,7 +5,7 @@ Game, Winner, Backtracking
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ - ):
         d    # dict
 
@@ -16,17 +16,17 @@ c_ Solution(object):
         """
         __ s n.. __ d:
             flag = F..
-            ___ i __ xrange(l..(s)-1):
+            ___ i __ x..(l..(s)-1):
                 __ s[i:i+2] __ "++":
                     __ n.. canWin(s[:i]+"--"+s[i+2:]):
                         flag = T..
-                        break
+                        _____
             d[s] = flag
 
         r.. d[s]
 
     ___ canWin_oneline  s):
-        r.. any(n.. canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ xrange(l..(s)-1) __ s[i:i+2] __ "++")
+        r.. any(n.. canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ x..(l..(s)-1) __ s[i:i+2] __ "++")
 
     ___ canWin_trivial  s):
         """
@@ -34,7 +34,7 @@ c_ Solution(object):
         :type s: str
         :rtype: bool
         """
-        ___ i __ xrange(l..(s)-1):
+        ___ i __ x..(l..(s)-1):
             __ s[i:i+2] __ "++":
                 __ n.. canWin_trivial(s[:i]+"--"+s[i+2:]):
                     r.. T..

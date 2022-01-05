@@ -17,7 +17,7 @@ c_ ListNode:
         val = x
         next = N..
 
-    ___ __repr__
+    ___  -r
         r.. repr(val)
 
     ___ __str__
@@ -72,7 +72,7 @@ c_ Solution:
                 end = pre
                 start_pre.next = end
                 start.next = cur
-                break
+                _____
 
 
 
@@ -85,6 +85,6 @@ c_ Solution:
 __ _____ __ ____
     length = 3
     lst = [ListNode(i+1) ___ i __ r..(length)]
-    ___ i __ xrange(length-1):
+    ___ i __ x..(length-1):
         lst[i].next = lst[i+1]
     print Solution().reverseBetween(lst[0], 1, 3)

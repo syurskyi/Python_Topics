@@ -17,7 +17,7 @@ ___ spinner(seconds):
         # sys.stdout.flush()
         sleep(STATE_TRANSITION_TIME)
         __ time() > end:
-            break
+            _____
 
 
 __ _____ __ _____

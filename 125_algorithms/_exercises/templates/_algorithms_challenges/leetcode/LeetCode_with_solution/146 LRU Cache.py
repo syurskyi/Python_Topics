@@ -9,14 +9,14 @@ should invalidate the least recently used item before inserting a new item.
 __author__ = 'Danyang'
 
 
-c_ Node(object):
+c_ Node(o..):
     ___ - , key, val):
         key = key
         val = val
         pre, next = N.., N..
 
 
-c_ LRUCache(object):
+c_ LRUCache(o..):
     ___ - , capacity):
         cap = capacity
         map    # dict  # key to node
@@ -83,7 +83,7 @@ c_ LRUCache(object):
         _appendleft(cur)
 
 
-c_ LRUCache_TLE(object):
+c_ LRUCache_TLE(o..):
     ___ - , capacity):
         capacity = capacity
         q    # list  # order by key

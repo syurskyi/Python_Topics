@@ -3,7 +3,7 @@ Created on Oct 11, 2017
 
 @author: MT
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ findKthNumber  m, n, k):
         """
         :type m: int

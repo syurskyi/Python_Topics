@@ -5,7 +5,7 @@ Manhattan Distance
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ minTotalDistance_3lines  grid):
         x = s..([i ___ i, row __ e..(grid) ___ v __ row __ v __ 1])
         y = s..([j ___ row __ grid ___ j, v __ e..(row) __ v __ 1])
@@ -21,8 +21,8 @@ c_ Solution(object):
 
         m = l..(grid)
         n = l..(grid[0])
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ grid[i][j] __ 1:
                     x.a..(i)
                     y.a..(j)
@@ -32,8 +32,8 @@ c_ Solution(object):
         cnt = l..(x)
         point = (x[cnt/2], y[cnt/2])
         ret = 0
-        ___ i __ xrange(m):
-            ___ j __ xrange(n):
+        ___ i __ x..(m):
+            ___ j __ x..(n):
                 __ grid[i][j] __ 1:
                     ret += abs(point[0]-i)
                     ret += abs(point[1]-j)

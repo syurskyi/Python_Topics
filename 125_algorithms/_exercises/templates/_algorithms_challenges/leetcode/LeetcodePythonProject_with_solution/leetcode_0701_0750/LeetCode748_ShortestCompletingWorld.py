@@ -3,7 +3,7 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-c_ Solution(object):
+c_ Solution(o..):
     ___ shortestCompletingWord  licensePlate, words):
         """
         :type licensePlate: str
@@ -12,7 +12,7 @@ c_ Solution(object):
         """
         hashmap    # dict
         ___ c __ licensePlate:
-            __ n.. c.isdigit() a.. c != ' ':
+            __ n.. c.i.. a.. c != ' ':
                 hashmap[c.l..] = hashmap.get(c.l.., 0)+1
         res = ''
         l = float('inf')

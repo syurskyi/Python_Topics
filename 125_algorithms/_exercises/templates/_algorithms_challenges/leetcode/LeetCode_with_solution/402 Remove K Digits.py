@@ -24,7 +24,7 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 __author__ = 'Daniel'
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ removeKdigits  num, k):
         """
         Stack and greedy.
@@ -41,6 +41,6 @@ c_ Solution(object):
 
             stk.a..(char)
 
-        ___ _ __ xrange(k): stk.pop()
+        ___ _ __ x..(k): stk.pop()
 
         r.. ''.j..(stk).lstrip('0') o. '0'

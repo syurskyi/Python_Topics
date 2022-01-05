@@ -14,7 +14,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Counter(object):
+c_ Counter(o..):
     ___ - , val, cnt):
         val = val
         cnt = cnt
@@ -23,7 +23,7 @@ c_ Counter(object):
         r.. cnt - other.cnt
 
 
-c_ Solution(object):
+c_ Solution(o..):
     ___ topKFrequent  nums, K):
         """
         Count and Maintain a heap with size k -> O(n lg k)

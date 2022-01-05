@@ -4,14 +4,14 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-c_ Node(object):
+c_ Node(o..):
     ___ - , key, val, prevNode=N.., nextNode_ N..
         key = key
         val = val
         prev = prevNode
         next = nextNode
 
-c_ LRUCache(object):
+c_ LRUCache(o..):
     ___ - , capacity):
         """
         :type capacity: int

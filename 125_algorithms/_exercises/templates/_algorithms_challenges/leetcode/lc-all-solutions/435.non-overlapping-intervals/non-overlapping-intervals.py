@@ -4,7 +4,7 @@
 #         self.start = s
 #         self.end = e
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ eraseOverlapIntervals  intervals):
     """
     :type intervals: List[Interval]

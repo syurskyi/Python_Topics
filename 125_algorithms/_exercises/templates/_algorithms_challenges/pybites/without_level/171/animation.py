@@ -14,7 +14,7 @@ ___ spinner(seconds):
     c = cycle(SPINNER_STATES)
     w... T...
         __ time() > t + seconds:
-            break
+            _____
         print _*\r{next(c)}', end='', file=sys.stdout, flush=T..)
         sleep(STATE_TRANSITION_TIME)
 

@@ -1,4 +1,4 @@
-c_ Solution(object):
+c_ Solution(o..):
   ___ combinationSum4  nums, target):
     """
     :type nums: List[int]

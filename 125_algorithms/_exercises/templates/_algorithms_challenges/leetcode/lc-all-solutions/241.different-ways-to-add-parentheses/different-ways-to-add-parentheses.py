@@ -1,7 +1,7 @@
 ____ operator _______ *
 
 
-c_ Solution(object):
+c_ Solution(o..):
   ___ diffWaysToCompute  input):
     """
     :type input: str
