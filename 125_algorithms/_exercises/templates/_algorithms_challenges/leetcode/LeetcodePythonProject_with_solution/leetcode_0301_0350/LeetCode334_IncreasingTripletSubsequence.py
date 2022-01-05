@@ -5,7 +5,7 @@ Created on Mar 19, 2017
 '''
 
 c_ Solution(object):
-    ___ increasingTriplet(self, nums):
+    ___ increasingTriplet  nums):
         __ n.. nums: r.. F..
 #         first = float('inf')
         first = nums[0]

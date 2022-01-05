@@ -14,7 +14,7 @@ ___ maxSum(arr, windowSize):
     # current window.
     ___ i __ r..(arraySize-windowSize):
         window_sum  window_sum - arr[i] + arr[i + windowSize]
-        max_sum  max(window_sum, max_sum)
+        max_sum  m..(window_sum, max_sum)
 
     r.. max_sum
 

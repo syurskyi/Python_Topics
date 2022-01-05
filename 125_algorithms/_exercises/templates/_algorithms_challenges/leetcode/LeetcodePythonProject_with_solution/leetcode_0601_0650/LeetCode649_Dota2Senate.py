@@ -4,7 +4,7 @@ Created on Oct 2, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ predictPartyVictory(self, senate):
+    ___ predictPartyVictory  senate):
         """
         :type senate: str
         :rtype: str

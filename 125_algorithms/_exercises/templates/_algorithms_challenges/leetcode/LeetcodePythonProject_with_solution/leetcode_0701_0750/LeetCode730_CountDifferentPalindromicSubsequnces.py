@@ -4,7 +4,7 @@ Created on Mar 4, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ countPalindromicSubsequences(self, S):
+    ___ countPalindromicSubsequences  S):
         """
         :type S: str
         :rtype: int

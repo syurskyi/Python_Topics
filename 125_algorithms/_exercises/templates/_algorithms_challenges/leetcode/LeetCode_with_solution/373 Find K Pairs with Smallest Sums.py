@@ -33,7 +33,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ kSmallestPairs(self, nums1, nums2, k):
+    ___ kSmallestPairs  nums1, nums2, k):
         """
         Maintain a heap of the k pairs
         The art is how to select the next pair.
@@ -50,7 +50,7 @@ c_ Solution(object):
             ___ - , i, j):
                 i, j = i, j
 
-            ___ __cmp__(self, other):
+            ___ __cmp__  other):
                 r.. nums1[i] + nums2[j] - (nums1[other.i] + nums2[other.j])
 
             ___ hasnext
@@ -78,7 +78,7 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ kSmallestPairsError(self, nums1, nums2, k):
+    ___ kSmallestPairsError  nums1, nums2, k):
         """
         The merge process for merge sort
         :type nums1: List[int]

@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ smallestRange(self, nums):
+  ___ smallestRange  nums):
     """
     :type nums: List[List[int]]
     :rtype: List[int]

@@ -37,9 +37,9 @@ c_ Color:
         # but testing length and first character is quicker
         __ l..(hex_str) != 7 o. hex_str[0] != '#':
             r.. ValueError('Invalid hex colour string')
-        try:
+        ___
             r.. t..(bytes.fromhex(hex_str[1:]))
-        except ValueError __ exp:
+        ______ ValueError __ exp:
             r.. ValueError _*Invalid hex value ({exp.args})')
 
     @classmethod
@@ -47,9 +47,9 @@ c_ Color:
         """Class method that converts an rgb value into a hex one"""
         __ l..(rbg_tuple) != 3 o. any((x < 0) o. (x > 255) ___ x __ rbg_tuple):
             r.. ValueError('Invalid rgb colour triplet')
-        try:
+        ___
             r.. f'#{bytes(rbg_tuple).hex()}'
-        except ValueError __ exp:
+        ______ ValueError __ exp:
             r.. ValueError _*Invalid rgb value ({exp.args})')
 
     ___ __repr__

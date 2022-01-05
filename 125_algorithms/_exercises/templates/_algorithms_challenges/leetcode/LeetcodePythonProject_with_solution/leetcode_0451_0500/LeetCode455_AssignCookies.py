@@ -5,7 +5,7 @@ Created on Apr 20, 2017
 '''
 
 c_ Solution(object):
-    ___ findContentChildren(self, g, s):
+    ___ findContentChildren  g, s):
         """
         :type g: List[int]
         :type s: List[int]

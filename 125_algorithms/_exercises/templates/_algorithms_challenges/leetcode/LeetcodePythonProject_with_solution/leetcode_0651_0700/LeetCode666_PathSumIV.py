@@ -4,7 +4,7 @@ Created on Oct 10, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ pathSum(self, nums):
+    ___ pathSum  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(object):
         traverse(nums[0]//10, 0, hashmap)
         r.. sumVal
     
-    ___ traverse(self, root, preSum, hashmap):
+    ___ traverse  root, preSum, hashmap):
         level = root//10
         pos = root%10
         left = (level+1)*10+pos*2-1

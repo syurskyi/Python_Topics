@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ wiggleSort(self, nums):
+    ___ wiggleSort  nums):
         """
         :type nums: list[int]
         :rtype: void, Do not return anything, modify A in-place instead.

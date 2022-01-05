@@ -31,7 +31,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ isSymmetric(self, root):
+    ___ isSymmetric  root):
         """
         dfs
         :param root: TreeNode
@@ -42,7 +42,7 @@ c_ Solution(object):
 
         r.. isSymmetrical(root.left, root.right)
 
-    ___ isSymmetrical(self, l, r):
+    ___ isSymmetrical  l, r):
         __ n.. l a.. n.. r:
             r.. T..
 

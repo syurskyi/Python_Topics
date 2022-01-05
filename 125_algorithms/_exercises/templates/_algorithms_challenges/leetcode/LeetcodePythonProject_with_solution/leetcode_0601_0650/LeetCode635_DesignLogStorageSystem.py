@@ -15,7 +15,7 @@ c_ LogSystem(object):
             }
         timestamps    # list
 
-    ___ put(self, id, timestamp):
+    ___ put  id, timestamp):
         """
         :type id: int
         :type timestamp: str
@@ -23,7 +23,7 @@ c_ LogSystem(object):
         """
         timestamps.a..((id, timestamp))
 
-    ___ retrieve(self, s, e, gra):
+    ___ retrieve  s, e, gra):
         """
         :type s: str
         :type e: str

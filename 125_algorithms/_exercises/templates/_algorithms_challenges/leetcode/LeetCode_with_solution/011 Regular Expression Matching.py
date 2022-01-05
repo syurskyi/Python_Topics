@@ -20,7 +20,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ isMatch_error(self, s, p):
+    ___ isMatch_error  s, p):
         """
         Using FSA? It is complicated to build compared to 066 Valid Number, since you have to construct the transition
         table from the pattern
@@ -68,7 +68,7 @@ c_ Solution:
         r.. F..
 
 
-    ___ isMatch_TLE(self, s, p):
+    ___ isMatch_TLE  s, p):
         """
         Algorithm: dfs, advancing the tape
         "." is not a problem
@@ -111,7 +111,7 @@ c_ Solution:
             ____:
                 r.. F..
 
-    ___ isMatch(self, s, p):
+    ___ isMatch  s, p):
         """
         Algorithm: dfs, advancing the tape  --> dp
 

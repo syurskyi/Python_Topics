@@ -5,7 +5,7 @@ Created on Feb 16, 2017
 '''
 
 c_ Solution(object):
-    ___ numIslands(self, grid):
+    ___ numIslands  grid):
         """
         :type grid: List[List[str]]
         :rtype: int
@@ -21,7 +21,7 @@ c_ Solution(object):
                     bfs(grid, i, j)
         r.. res
     
-    ___ bfs(self, grid, i, j):
+    ___ bfs  grid, i, j):
         queue = [(i, j)]
         m, n = l..(grid), l..(grid[0])
         w.... queue:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestCommonPrefix(self, strs):
+    ___ longestCommonPrefix  strs):
         """
         :type strs: List[str]
         :rtype: str

@@ -25,9 +25,9 @@ ___ wc(file_):
     cnt_words = 0
     cnt_chars = 0
     within_word = F..
-    try:
+    ___
         fo = open(file_, 'r')
-    except:
+    ______:
         print("Cannot open file")
     filename = fo.name
     ___ line __ fo:

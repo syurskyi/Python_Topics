@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ getHint(self, secret, guess):
+    ___ getHint  secret, guess):
         """
         :type secret: str
         :type guess: str
@@ -14,8 +14,8 @@ c_ Solution:
         cnts = [0] * 10
 
         ___ i __ r..(l..(secret)):
-            s = ord(secret[i]) - ord('0')
-            g = ord(guess[i]) - ord('0')
+            s = o..(secret[i]) - o..('0')
+            g = o..(guess[i]) - o..('0')
 
             __ s __ g:
                 bulls += 1
@@ -33,7 +33,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ getHint(self, secret, guess):
+    ___ getHint  secret, guess):
         """
         :type secret: str
         :type guess: str

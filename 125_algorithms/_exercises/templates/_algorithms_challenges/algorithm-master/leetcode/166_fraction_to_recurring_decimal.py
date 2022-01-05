@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fractionToDecimal(self, a, b):
+    ___ fractionToDecimal  a, b):
         """
         :type a: int
         :type b: int

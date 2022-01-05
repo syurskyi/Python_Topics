@@ -2,7 +2,7 @@ c_ Solution:
     """
     maintain a set to record if there is unused cands
     """
-    ___ longestConsecutive(self, nums):
+    ___ longestConsecutive  nums):
         """
         :type nums: list[int]
         :rtype: int
@@ -44,7 +44,7 @@ c_ Solution:
     2. if its consecutive, add 1 for size
     3. save the maximum size
     """
-    ___ longestConsecutive(self, nums):
+    ___ longestConsecutive  nums):
         """
         :type nums: list[int]
         :rtype: int

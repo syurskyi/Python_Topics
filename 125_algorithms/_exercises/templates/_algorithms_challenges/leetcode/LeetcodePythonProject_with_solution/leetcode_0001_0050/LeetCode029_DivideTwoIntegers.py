@@ -4,7 +4,7 @@ Created on Nov 2, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ divide(self, dividend, divisor):
+    ___ divide  dividend, divisor):
         """
         :type dividend: int
         :type divisor: int
@@ -27,7 +27,7 @@ c_ Solution(object):
             res = res __ sign > 0 ____ -res
         r.. res
         
-    ___ ldivide(self, dividend, divisor):
+    ___ ldivide  dividend, divisor):
         __ dividend < divisor: r.. 0
         sumVal = divisor
         multiple = 1

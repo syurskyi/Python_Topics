@@ -33,7 +33,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxTurbulenceSize(self, A: List[i..]) __ i..:
+    ___ maxTurbulenceSize  A: List[i..]) __ i..:
         """
         scan
         """
@@ -47,14 +47,14 @@ c_ Solution:
             ____ A[i] > A[i+1]:
                 __ flag __ N.. o. flag __ 1:
                     cur += 1
-                    ret = max(ret, cur)
+                    ret = m..(ret, cur)
                 ____:
                     cur = 2
                 flag = 0
             ____:  # <
                 __ flag __ N.. o. flag __ 0:
                     cur += 1
-                    ret = max(ret, cur)
+                    ret = m..(ret, cur)
                 ____:
                     cur = 2
                 flag = 1

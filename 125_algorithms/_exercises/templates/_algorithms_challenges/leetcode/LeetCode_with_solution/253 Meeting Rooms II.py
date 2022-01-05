@@ -16,7 +16,7 @@ c_ Interval:
 
 
 c_ Solution(object):
-    ___ minMeetingRooms(self, intervals):
+    ___ minMeetingRooms  intervals):
         """
 
         :type intervals: list[Interval]
@@ -31,6 +31,6 @@ c_ Solution(object):
             w.... h_end a.. h_end[0] <= itvl.start:
                 heapq.heappop(h_end)
 
-            maxa = max(maxa, l..(h_end))
+            maxa = m..(maxa, l..(h_end))
 
         r.. maxa

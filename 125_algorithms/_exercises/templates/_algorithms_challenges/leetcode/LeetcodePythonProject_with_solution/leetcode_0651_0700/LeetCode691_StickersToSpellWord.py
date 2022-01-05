@@ -4,7 +4,7 @@ Created on Oct 24, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ minStickers(self, stickers, target):
+    ___ minStickers  stickers, target):
         """
         :type stickers: List[str]
         :type target: str
@@ -14,26 +14,26 @@ c_ Solution(object):
         mp = [[0]*26 ___ _ __ r..(n)]
         ___ i __ r..(n):
             ___ c __ stickers[i]:
-                mp[i][ord(c)-ord('a')] += 1
+                mp[i][o..(c)-o..('a')] += 1
         mem    # dict
         mem[''] = 0
         r.. helper(mem, mp, target)
     
-    ___ helper(self, mem, mp, target):
+    ___ helper  mem, mp, target):
         __ target __ mem:
             r.. mem[target]
         n = l..(mp)
         tar = [0]*26
         ___ c __ target:
-            tar[ord(c)-ord('a')] += 1
+            tar[o..(c)-o..('a')] += 1
         res = float('inf')
         ___ i __ r..(n):
-            __ mp[i][ord(target[0])-ord('a')] __ 0:
+            __ mp[i][o..(target[0])-o..('a')] __ 0:
                 _____
             s = ''
             ___ j __ r..(26):
                 __ tar[j] > mp[i][j]:
-                    s += chr(ord('a')+j)*(tar[j]-mp[i][j])
+                    s += chr(o..('a')+j)*(tar[j]-mp[i][j])
             tmp = helper(mem, mp, s)
             __ tmp != -1:
                 res = m..(res, 1+tmp)

@@ -10,7 +10,7 @@ same time (ie, you must sell the stock before you buy again).
 
 
 c_ Solution(object):
-    ___ maxProfit(self, prices):
+    ___ maxProfit  prices):
         """
         :type prices: List[int]
         :rtype: int

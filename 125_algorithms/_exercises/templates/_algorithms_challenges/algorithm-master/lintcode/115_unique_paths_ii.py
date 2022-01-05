@@ -3,7 +3,7 @@ c_ Solution:
     @param: G: A list of lists of integers
     @return: An integer
     """
-    ___ uniquePathsWithObstacles(self, G):
+    ___ uniquePathsWithObstacles  G):
         __ n.. G o. n.. G[0]:
             r.. 0
 

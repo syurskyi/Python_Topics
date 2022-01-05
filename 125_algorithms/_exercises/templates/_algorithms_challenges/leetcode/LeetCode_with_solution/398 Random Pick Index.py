@@ -28,7 +28,7 @@ c_ Solution(object):
         """
         A = nums
 
-    ___ pick(self, target):
+    ___ pick  target):
         """
         O(n)
         Reservoir Sampling
@@ -66,7 +66,7 @@ c_ SolutionError(object):
                 ____:
                     d[val] = (prev, sz + 1)
 
-    ___ pick(self, target):
+    ___ pick  target):
         """
         :type target: int
         :rtype: int

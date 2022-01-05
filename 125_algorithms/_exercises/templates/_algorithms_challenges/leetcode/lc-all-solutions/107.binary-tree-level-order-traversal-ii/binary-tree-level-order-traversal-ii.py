@@ -8,7 +8,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ levelOrderBottom(self, root):
+  ___ levelOrderBottom  root):
     """
     :type root: TreeNode
     :rtype: List[List[int]]

@@ -5,7 +5,7 @@ Created on Feb 16, 2017
 '''
 
 c_ Solution(object):
-    ___ rob(self, nums):
+    ___ rob  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -15,5 +15,5 @@ c_ Solution(object):
         ___ num __ nums:
             i, e = include, exclude
             include = e+num
-            exclude = max(i, e)
-        r.. max(include, exclude)
+            exclude = m..(i, e)
+        r.. m..(include, exclude)

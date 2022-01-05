@@ -75,9 +75,9 @@ ___ main
     """
     entries = get_feed_entries()
     w... T...
-        try: 
+        ___
             search_term = input('Search for (q for exit): ')
-        except EOFError:
+        ______ EOFError:
             break
         
         __ search_term __ '':

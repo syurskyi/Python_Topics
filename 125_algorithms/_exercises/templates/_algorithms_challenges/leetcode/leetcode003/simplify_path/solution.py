@@ -1,7 +1,7 @@
 c_ Solution:
     # @param path, a string
     # @return a string
-    ___ simplifyPath(self, path):
+    ___ simplifyPath  path):
         ps = path.s..('/')[1:]
         res    # list
         ___ d __ ps:

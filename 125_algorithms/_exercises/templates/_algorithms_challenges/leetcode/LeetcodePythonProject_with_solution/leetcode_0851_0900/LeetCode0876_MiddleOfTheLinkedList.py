@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ middleNode(self, head):
+    ___ middleNode  head):
         """
         :type head: ListNode
         :rtype: ListNode

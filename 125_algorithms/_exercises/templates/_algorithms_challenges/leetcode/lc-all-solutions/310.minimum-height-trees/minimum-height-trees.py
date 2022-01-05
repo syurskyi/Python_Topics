@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ findMinHeightTrees(self, n, edges):
+  ___ findMinHeightTrees  n, edges):
     """
     :type n: int
     :type edges: List[List[int]]

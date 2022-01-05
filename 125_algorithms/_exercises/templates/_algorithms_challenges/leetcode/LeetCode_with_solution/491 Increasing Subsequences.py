@@ -17,7 +17,7 @@ considered as a special case of increasing sequence.
 
 
 c_ Solution:
-    ___ findSubsequences(self, nums):
+    ___ findSubsequences  nums):
         """
         2nd approach
         Maintain the current increasing subsequence and iterate them to grow it
@@ -43,7 +43,7 @@ c_ Solution:
         ]
 
 
-    ___ findSubsequences(self, nums):
+    ___ findSubsequences  nums):
         """
         1st approach.
         F[i] records the increasing subsequence ends at A[i]

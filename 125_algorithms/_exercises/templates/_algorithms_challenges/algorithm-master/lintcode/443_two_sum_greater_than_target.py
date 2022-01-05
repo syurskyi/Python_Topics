@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: An integer
     @return: an integer
     """
-    ___ twoSum2(self, A, target):
+    ___ twoSum2  A, target):
         ans = 0
         __ n.. A o. l..(A) < 2:
             r.. ans

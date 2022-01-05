@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findPairs(self, nums, k):
+  ___ findPairs  nums, k):
     """
     :type nums: List[int]
     :type k: int

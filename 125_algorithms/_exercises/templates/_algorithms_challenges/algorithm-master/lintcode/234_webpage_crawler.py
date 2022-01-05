@@ -26,7 +26,7 @@ c_ CrawlerThread(Thread):
 c_ Solution:
     # @param {string} url a url of root page
     # @return {string[]} all urls
-    ___ crawler(self, url):
+    ___ crawler  url):
         # Write your code here
         global queue, results
         thread_pools    # list

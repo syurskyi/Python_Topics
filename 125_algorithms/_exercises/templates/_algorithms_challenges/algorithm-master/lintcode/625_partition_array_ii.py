@@ -8,7 +8,7 @@ c_ Solution:
     @param: high: An integer
     @return:
     """
-    ___ partition2(self, A, low, high):
+    ___ partition2  A, low, high):
         __ n.. A:
             r..
 

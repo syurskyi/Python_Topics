@@ -3,7 +3,7 @@ c_ Solution:
     @param: costs: n x 3 cost matrix
     @return: An integer, the minimum cost to paint all houses
     """
-    ___ minCost(self, costs):
+    ___ minCost  costs):
         __ n.. costs:
             r.. 0
 

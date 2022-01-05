@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ twoSum(self, nums, target):
+  ___ twoSum  nums, target):
     """
     :type numbers: List[int]
     :type target: int

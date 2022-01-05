@@ -8,7 +8,7 @@ Could you do this in-place?
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ rotate(self, matrix):
+    ___ rotate  matrix):
         """
         rotate matrix n*n
         1. flip along the diagonal

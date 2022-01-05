@@ -7,9 +7,9 @@ NOT_VALID = 'Not a valid color'
 
 ___ call_print_colors
     # some people prefer sys.exit instead of break
-    try:
+    ___
         print_colors()
-    except S..:
+    ______ S..:
         p..
 
 

@@ -23,7 +23,7 @@ c_ PhoneDirectory(object):
       r.. q.popleft()
     r.. -1
 
-  ___ check(self, number):
+  ___ check  number):
     """
     Check if a number is available or not.
     :type number: int
@@ -31,7 +31,7 @@ c_ PhoneDirectory(object):
     """
     r.. taken[number]
 
-  ___ release(self, number):
+  ___ release  number):
     """
     Recycle or release a number.
     :type number: int

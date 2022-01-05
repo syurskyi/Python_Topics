@@ -24,7 +24,7 @@ c_ TreeNode(object):
 c_ Codec:
     DELIMITER = ","
 
-    ___ serialize(self, root):
+    ___ serialize  root):
         """Encodes a tree to a single string.
         Basic binary tree serialize (BFS), see Serialize and Deserialize
         Binary Tree
@@ -52,7 +52,7 @@ c_ Codec:
         traverse(root, ret)
         r.. DELIMITER.j..(map(s.., ret))
 
-    ___ deserialize(self, data):
+    ___ deserialize  data):
         """Decodes your encoded data to tree.
 
         Normal BST insert

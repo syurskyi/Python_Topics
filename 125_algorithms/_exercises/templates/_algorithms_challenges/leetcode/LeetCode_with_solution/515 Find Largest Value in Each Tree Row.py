@@ -24,7 +24,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ largestValues(self, root):
+    ___ largestValues  root):
         """
         BFS
         :type root: TreeNode
@@ -36,7 +36,7 @@ c_ Solution:
 
         q = [root]
         w.... q:
-            ret.a..(max(map(l.... e: e.val, q)))
+            ret.a..(m..(map(l.... e: e.val, q)))
             cur_q    # list
             ___ e __ q:
                 __ e.left:

@@ -5,7 +5,7 @@ Created on Aug 23, 2017
 '''
 
 c_ Solution(object):
-    ___ checkRecord(self, n):
+    ___ checkRecord  n):
         """
         :type n: int
         :rtype: int
@@ -30,7 +30,7 @@ c_ Solution(object):
             n /= 2
         r.. i..(power[5, 2])
     
-    ___ checkRecord_slow(self, n):
+    ___ checkRecord_slow  n):
         """
         :type n: int
         :rtype: int

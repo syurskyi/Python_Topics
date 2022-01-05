@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ titleToNumber(self, s):
+  ___ titleToNumber  s):
     """
     :type s: str
     :rtype: int

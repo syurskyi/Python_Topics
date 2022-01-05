@@ -44,7 +44,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ hasGroupsSizeX(self, deck: List[i..]) __ bool:
+    ___ hasGroupsSizeX  deck: List[i..]) __ bool:
         """
         gcd of all > 2
         """
@@ -59,7 +59,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ gcd(self, a, b):
+    ___ gcd  a, b):
         """
         a = k * b + r
         gcd(a, b) = gcd(b, r)

@@ -14,7 +14,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ nextPermutation(self, num):
+    ___ nextPermutation  num):
         """
         Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
         Unable to use Cantor Expansion due to duplicates
@@ -48,5 +48,5 @@ c_ Solution:
         r.. num
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().nextPermutation([3, 2, 1])

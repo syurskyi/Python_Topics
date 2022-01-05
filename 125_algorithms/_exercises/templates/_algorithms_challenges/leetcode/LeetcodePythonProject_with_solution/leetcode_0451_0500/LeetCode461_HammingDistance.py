@@ -5,7 +5,7 @@ Created on Apr 23, 2017
 '''
 
 c_ Solution(object):
-    ___ hammingDistance(self, x, y):
+    ___ hammingDistance  x, y):
         count = 0
         ___ i __ r..(32):
             count += (x>>i&1)^(y>>i&1)

@@ -8,7 +8,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ rightSideView(self, root):
+  ___ rightSideView  root):
     """
     :type root: TreeNode
     :rtype: List[int]

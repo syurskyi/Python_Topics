@@ -5,7 +5,7 @@ Created on Apr 1, 2017
 '''
 
 c_ Solution(object):
-    ___ combinationSum4(self, nums, target):
+    ___ combinationSum4  nums, target):
         __ n.. nums: r.. 0
         dp = [0]*(target+1)
         dp[0] = 1

@@ -29,7 +29,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ leastInterval(self, tasks: List[s..], n: i..) __ i..:
+    ___ leastInterval  tasks: List[s..], n: i..) __ i..:
         """
         Gap is n
 
@@ -58,11 +58,11 @@ c_ Solution:
         page_cnt = maxa - 1
         free_page_size = n + 1 - max_cnt
         small_tasks = l..(tasks) - max_cnt * maxa
-        idle = max(0, page_cnt * free_page_size - small_tasks)
+        idle = m..(0, page_cnt * free_page_size - small_tasks)
         r.. l..(tasks) + idle
 
 
-    ___ leastInterval_complicated(self, tasks: List[s..], n: i..) __ i..:
+    ___ leastInterval_complicated  tasks: List[s..], n: i..) __ i..:
         """
         greedy
         max heap, most tasks first

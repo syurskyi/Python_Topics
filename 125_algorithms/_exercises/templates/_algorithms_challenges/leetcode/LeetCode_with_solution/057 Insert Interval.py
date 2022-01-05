@@ -28,24 +28,24 @@ c_ Interval(object):
 
 
 c_ Solution(object):
-    ___ insert(self, itvls, newItvl):
+    ___ insert  itvls, newItvl):
         s, e = newItvl.start, newItvl.end
         left = filter(l.... x: x.end < s, itvls)
         right = filter(l.... x: x.start > e, itvls)
         __ l..(left)+l..(right) != l..(itvls):
             s = m..(s, itvls[l..(left)].start)
-            e = max(e, itvls[-l..(right)-1].end)
+            e = m..(e, itvls[-l..(right)-1].end)
 
         r.. left + [Interval(s, e)] + right
 
-    ___ insert_itr(self, itvls, newItvl):
+    ___ insert_itr  itvls, newItvl):
         """
         iterator TODO
         """
 
 
 c_ SolutionSlow(object):
-    ___ insert(self, itvls, newItvl):
+    ___ insert  itvls, newItvl):
         """
         :param itvls: a list of Intervals
         :param newItvl: a Interval
@@ -53,7 +53,7 @@ c_ SolutionSlow(object):
         """
         r.. merge(itvls+[newItvl])
 
-    ___ merge(self, itvls):
+    ___ merge  itvls):
         """
         sort first by .start
         then decide whether to extend the .end
@@ -66,7 +66,7 @@ c_ SolutionSlow(object):
         ___ cur __ itvls[1:]:
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
-                pre.end = max(pre.end, cur.end)
+                pre.end = m..(pre.end, cur.end)
             ____:
                 ret.a..(cur)
 

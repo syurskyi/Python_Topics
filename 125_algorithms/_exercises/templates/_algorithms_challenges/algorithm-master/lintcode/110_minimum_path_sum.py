@@ -3,7 +3,7 @@ c_ Solution:
     @param: grid: a list of lists of integers
     @return: An integer, minimizes the sum of all numbers along its path
     """
-    ___ minPathSum(self, grid):
+    ___ minPathSum  grid):
         __ n.. grid:
             r.. 0
 

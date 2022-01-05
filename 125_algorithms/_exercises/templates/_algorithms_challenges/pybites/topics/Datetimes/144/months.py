@@ -29,7 +29,7 @@ ___ calc_months_passed(year, month, day):
 
        Return the number of months passed int.
     """
-    try:
+    ___
         in_date = d__ y.._year, m.._month, d.._day)
         __ date(year, month, day) < START_DATE:
             r.. ValueError
@@ -43,7 +43,7 @@ ___ calc_months_passed(year, month, day):
         __ difference_dt.years > 0:
             months_passed += difference_dt.years * MONTHS_PER_YEAR
         r.. months_passed
-    except ValueError:
+    ______ V..
         r.. ValueError
         
 

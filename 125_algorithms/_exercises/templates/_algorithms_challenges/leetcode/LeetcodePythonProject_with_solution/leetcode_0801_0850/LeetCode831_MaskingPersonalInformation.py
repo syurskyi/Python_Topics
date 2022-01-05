@@ -4,7 +4,7 @@ Created on May 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ maskPII(self, S):
+    ___ maskPII  S):
         """
         :type S: str
         :rtype: str

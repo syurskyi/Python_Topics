@@ -24,7 +24,7 @@ c_ Interval:
         
 
 c_ Solution:
-    ___ eraseOverlapIntervals(self, intervals):
+    ___ eraseOverlapIntervals  intervals):
         """
         Greedy remove the large e when overlapping
         :type intervals: List[Interval]

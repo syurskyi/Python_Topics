@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ leafSimilar(self, root1, root2):
+    ___ leafSimilar  root1, root2):
         """
         :type root1: TreeNode
         :type root2: TreeNode
@@ -22,7 +22,7 @@ c_ Solution(object):
         r.. getLeaves(root1) __ getLeaves(root2)
         
     
-    ___ getLeaves(self, root):
+    ___ getLeaves  root):
         res    # list
         node = root
         stack    # list

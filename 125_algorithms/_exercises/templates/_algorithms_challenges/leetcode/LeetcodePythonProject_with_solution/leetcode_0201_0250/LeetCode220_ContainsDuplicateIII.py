@@ -4,7 +4,7 @@ Created on Feb 20, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ containsNearbyAlmostDuplicate(self, nums, k, t):
+    ___ containsNearbyAlmostDuplicate  nums, k, t):
         """
         :type nums: List[int]
         :type k: int

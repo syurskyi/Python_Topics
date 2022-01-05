@@ -33,7 +33,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ smallestRangeII(self, A: List[i..], K: i..) __ i..:
+    ___ smallestRangeII  A: List[i..], K: i..) __ i..:
         """
         Say A[i] is the largest i that goes up. A[i+1] would be the smallest
         goes down
@@ -41,26 +41,26 @@ c_ Solution:
         """
         A.s..()
         mn = m..(A)
-        mx = max(A)
+        mx = m..(A)
         ret = mx - mn
         ___ i __ r..(l..(A) - 1):
-            cur_mx = max(mx - K, A[i] + K)
+            cur_mx = m..(mx - K, A[i] + K)
             cur_mn = m..(mn + K, A[i+1] - K)
             ret = m..(ret, cur_mx - cur_mn)
 
         r.. ret
 
-    ___ smallestRangeII_error(self, A: List[i..], K: i..) __ i..:
+    ___ smallestRangeII_error  A: List[i..], K: i..) __ i..:
         """
         find the min max is not enough, since the min max after +/- K may change
         """
         mini = m..(A)
-        maxa = max(A)
+        maxa = m..(A)
         # mini + K, maxa - K
         B    # list
         max_upper_diff = 0
         max_lower_diff = 0
-        upper = max(mini + K, maxa - K)  # may cross
+        upper = m..(mini + K, maxa - K)  # may cross
         lower = m..(mini + K, maxa - K)
         ___ a __ A:
             diffs = [(a + K) - upper, lower - (a - K)]

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ partition(self, s):
+  ___ partition  s):
     """
     :type s: str
     :rtype: List[List[str]]

@@ -6,7 +6,7 @@ _______ __
 
 
 ___ _ __ r..(i..(input())):
-    try:
+    ___
         print(bool(__.c..(input())))
-    except __.error:
+    ______ __.error:
         print('False')

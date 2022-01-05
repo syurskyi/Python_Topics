@@ -25,12 +25,12 @@ ___ get_movies_by_director
     directors = defaultdict(l..)
     w__ open(MOVIE_DATA) __ f:
         ___ line __ csv.DictReader(f):
-            try:
+            ___
                 director = line['director_name']
                 movie = line['movie_title'].r..('\xa0', '')
                 year = i..(line['title_year'])
                 score = float(line['imdb_score'])
-            except ValueError:
+            ______ V..
                 _____
             __ year a.. year < MIN_YEAR:
                 _____
@@ -45,7 +45,7 @@ ___ calc_mean_score(movies):
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     ratings = [m.score ___ m __ movies]
-    mean = s..(ratings) / max(1, l..(ratings))
+    mean = s..(ratings) / m..(1, l..(ratings))
     r.. r..(mean, 1)
 
 

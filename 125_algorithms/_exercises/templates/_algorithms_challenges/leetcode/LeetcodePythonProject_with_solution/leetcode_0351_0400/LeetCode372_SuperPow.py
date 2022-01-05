@@ -5,7 +5,7 @@ Created on Mar 29, 2017
 '''
 
 c_ Solution(object):
-    ___ superPow(self, a, b):
+    ___ superPow  a, b):
         __ a % 1337 __ 0: r.. a
         p = 0
         ___ i __ b:
@@ -14,7 +14,7 @@ c_ Solution(object):
             p += 1440
         r.. power(a, p, 1337)
     
-    ___ power(self, a, n, mod):
+    ___ power  a, n, mod):
         a %= mod
         res = 1
         w.... n != 0:

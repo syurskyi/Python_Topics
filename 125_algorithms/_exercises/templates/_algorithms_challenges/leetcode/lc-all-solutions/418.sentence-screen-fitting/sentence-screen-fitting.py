@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ wordsTyping(self, sentence, rows, cols):
+  ___ wordsTyping  sentence, rows, cols):
     """
     :type sentence: List[str]
     :type rows: int

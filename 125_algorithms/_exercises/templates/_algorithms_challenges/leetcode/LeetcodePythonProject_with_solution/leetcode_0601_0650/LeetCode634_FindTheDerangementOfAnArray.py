@@ -4,7 +4,7 @@ Created on Sep 24, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findDerangement(self, n):
+    ___ findDerangement  n):
         """
         :type n: int
         :rtype: int

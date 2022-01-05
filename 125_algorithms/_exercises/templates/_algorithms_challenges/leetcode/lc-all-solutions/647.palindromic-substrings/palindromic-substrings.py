@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ countSubstrings(self, s):
+  ___ countSubstrings  s):
     """
     :type s: str
     :rtype: int

@@ -4,7 +4,7 @@ Created on Nov 7, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ romanToInt(self, s):
+    ___ romanToInt  s):
         hashmap = {
             'I': 1,
             'V': 5,

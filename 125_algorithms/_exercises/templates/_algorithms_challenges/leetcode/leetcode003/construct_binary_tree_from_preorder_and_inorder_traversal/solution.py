@@ -9,7 +9,7 @@ c_ Solution:
     # @param preorder, a list of integers
     # @param inorder, a list of integers
     # @return a tree node
-    ___ buildTree(self, preorder, inorder):
+    ___ buildTree  preorder, inorder):
         __ l..(inorder) __ 0:
             r.. N..
         ____:

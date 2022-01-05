@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ intersect(self, a, b):
+    ___ intersect  a, b):
         """
         :type a: List[int]
         :type b: List[int]
@@ -26,7 +26,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ intersect(self, a, b):
+    ___ intersect  a, b):
         """
         :type a: List[int]
         :type b: List[int]

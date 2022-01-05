@@ -4,7 +4,7 @@ Created on Apr 18, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ allPathsSourceTarget(self, graph):
+    ___ allPathsSourceTarget  graph):
         """
         :type graph: List[List[int]]
         :rtype: List[List[int]]

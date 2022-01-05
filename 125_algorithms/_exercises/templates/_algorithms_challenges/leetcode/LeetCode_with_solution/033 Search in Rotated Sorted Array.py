@@ -9,7 +9,7 @@ You may assume no duplicate exists in the array.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ s..(self, A, target):
+    ___ s..  A, target):
         """
         assume no duplicate exists in the array
         Algorithm: modification of binary search
@@ -65,5 +65,5 @@ c_ Solution:
 
         r.. -1
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().s..([5,1,3], 5)

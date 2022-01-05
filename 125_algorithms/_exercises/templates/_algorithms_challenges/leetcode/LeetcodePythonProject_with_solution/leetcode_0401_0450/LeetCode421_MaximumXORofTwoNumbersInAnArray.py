@@ -5,7 +5,7 @@ Created on Apr 13, 2017
 '''
 
 c_ Solution(object):
-    ___ findMaximumXOR(self, nums):
+    ___ findMaximumXOR  nums):
         """
         :type nums: List[int]
         :rtype: int

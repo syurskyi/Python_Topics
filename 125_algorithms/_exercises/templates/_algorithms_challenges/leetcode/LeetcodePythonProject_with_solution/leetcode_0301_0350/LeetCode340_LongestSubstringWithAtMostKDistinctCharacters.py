@@ -5,7 +5,7 @@ Created on Mar 20, 2017
 '''
 
 c_ Solution(object):
-    ___ lengthOfLongestSubstringKDistinct(self, s, k):
+    ___ lengthOfLongestSubstringKDistinct  s, k):
         __ k <= 0: r.. 0
         hashmap    # dict
         maxLen = 0
@@ -16,7 +16,7 @@ c_ Solution(object):
                 __ s[left] __ hashmap a.. left __ hashmap[s[left]]:
                     del hashmap[s[left]]
                 left+=1
-            maxLen = max(maxLen, i-left+1)
+            maxLen = m..(maxLen, i-left+1)
         r.. maxLen
     
     ___ test

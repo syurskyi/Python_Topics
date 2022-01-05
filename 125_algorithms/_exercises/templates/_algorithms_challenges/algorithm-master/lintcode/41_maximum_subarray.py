@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: A integer indicate the sum of max subarray
     """
-    ___ maxSubArray(self, A):
+    ___ maxSubArray  A):
         """
         the answer is the maximum segment sum,
         that is, `S[i] - Smin`
@@ -40,7 +40,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: A integer indicate the sum of max subarray
     """
-    ___ maxSubArray(self, A):
+    ___ maxSubArray  A):
         """
         the answer is the maximum segment sum,
         that is, `S[i] - Smin`

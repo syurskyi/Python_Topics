@@ -39,7 +39,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ validUtf8(self, data):
+    ___ validUtf8  data):
         """
         starts with 0, then skip
         start with 1, check number of numbers

@@ -10,7 +10,7 @@ c_ Solution(object):
     ___ - ):
         x = N..
 
-    ___ isReflected(self, points):
+    ___ isReflected  points):
         """
         :type points: List[List[int]]
         :rtype: bool
@@ -25,7 +25,7 @@ c_ Solution(object):
 
         r.. T..
 
-    ___ check(self, lst):
+    ___ check  lst):
         lst.s..()
         i = 0
         j = l..(lst) - 1

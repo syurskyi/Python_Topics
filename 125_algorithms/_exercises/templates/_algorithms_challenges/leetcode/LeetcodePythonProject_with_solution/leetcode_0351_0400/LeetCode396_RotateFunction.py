@@ -5,7 +5,7 @@ Created on Apr 4, 2017
 '''
 
 c_ Solution(object):
-    ___ maxRotateFunction(self, A):
+    ___ maxRotateFunction  A):
         nums = A
         sumVal = 0
         sample = 0
@@ -15,7 +15,7 @@ c_ Solution(object):
         maxVal = sample
         ___ i __ r..(l..(nums)-1, 0, -1):
             sample = sample+sumVal-l..(nums)*nums[i]
-            maxVal = max(maxVal, sample)
+            maxVal = m..(maxVal, sample)
         r.. maxVal
 
     ___ test

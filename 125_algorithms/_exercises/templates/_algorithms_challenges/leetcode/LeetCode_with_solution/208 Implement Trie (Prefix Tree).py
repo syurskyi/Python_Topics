@@ -25,7 +25,7 @@ c_ Trie:
         """
         root = TrieNode()
 
-    ___ insert(self, word):
+    ___ insert  word):
         """
         Inserts a word into the trie.
         :type word: str
@@ -39,7 +39,7 @@ c_ Trie:
 
         cur.ended = T..
 
-    ___ s..(self, word):
+    ___ s..  word):
         """
         Returns if the word is in the trie.
         :type word: str
@@ -57,7 +57,7 @@ c_ Trie:
 
         r.. T..
 
-    ___ startsWith(self, prefix):
+    ___ startsWith  prefix):
         """
         Returns if there is any word in the trie that starts with the given prefix.
         :type prefix: str

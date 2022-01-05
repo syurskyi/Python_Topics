@@ -7,7 +7,7 @@ c_ Solution(object):
     ___ - ):
         hashmap = {0:0}
     
-    ___ racecar(self, target):
+    ___ racecar  target):
         """
         :type target: int
         :rtype: int

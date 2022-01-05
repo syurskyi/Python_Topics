@@ -14,7 +14,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ singleNumber(self, nums):
+    ___ singleNumber  nums):
         """
         Constant space
         :type nums: list[int]

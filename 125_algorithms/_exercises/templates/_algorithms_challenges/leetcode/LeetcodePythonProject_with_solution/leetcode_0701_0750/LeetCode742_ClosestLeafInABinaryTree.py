@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ findClosestLeaf(self, root, k):
+    ___ findClosestLeaf  root, k):
         """
         :type root: TreeNode
         :type k: int
@@ -36,7 +36,7 @@ c_ Solution(object):
                 visited.add(backMap[curr])
         r.. -1
     
-    ___ dfs(self, root, k, backMap):
+    ___ dfs  root, k, backMap):
         __ root.val __ k:
             r.. root
         __ root.left:

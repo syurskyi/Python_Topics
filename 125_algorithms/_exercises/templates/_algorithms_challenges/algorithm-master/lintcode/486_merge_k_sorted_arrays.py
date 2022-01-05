@@ -6,7 +6,7 @@ c_ Solution:
     @param: G: k sorted integer arrays
     @return: a sorted array
     """
-    ___ mergekSortedArrays(self, G):
+    ___ mergekSortedArrays  G):
         ans    # list
         __ n.. G:
             r.. ans

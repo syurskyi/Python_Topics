@@ -37,7 +37,7 @@ c_ Say:
         num = i..(num)
         _words = get_words(num)
 
-    ___ get_words(self, num):
+    ___ get_words  num):
         raise_if_invalid(num)
 
         __ num __ 0:
@@ -47,13 +47,13 @@ c_ Say:
                              ___ index, chunk
                              __ e..(get_chunks(num))]).rstrip()
 
-    ___ get_chunks(self, num):
+    ___ get_chunks  num):
         reversed_string = s..(num)[::-1]
         reversed_chunks = ([reversed_string[i:i + 3]
                             ___ i __ r..(0, l..(reversed_string), 3)])[::-1]
         r.. [i..(x[::-1]) ___ x __ reversed_chunks]
 
-    ___ convert_chunk_to_word(self, chunk, i):
+    ___ convert_chunk_to_word  chunk, i):
         hundreds_digit, left_over = divmod(chunk, 100)
         hundreds = convert_num_to_word(hundreds_digit)
 
@@ -72,7 +72,7 @@ c_ Say:
             r.. ''
         r.. ' '.j..((word_chunk, units))
 
-    ___ format_chunk(self, hundreds, tens, ones):
+    ___ format_chunk  hundreds, tens, ones):
         chunk = ''
         __ hundreds:
             chunk += hundreds + ' hundred '
@@ -86,14 +86,14 @@ c_ Say:
             chunk += ones
         r.. chunk
 
-    ___ raise_if_invalid(self, num):
+    ___ raise_if_invalid  num):
         __ num < 0 o. num > 999999999999:
             r.. AttributeError
 
-    ___ get_units(self, d):
+    ___ get_units  d):
         r.. convert_num_to_word(1000 ** d) __ 1000 ** d > 1 ____ ''
 
-    ___ convert_num_to_word(self, num):
+    ___ convert_num_to_word  num):
         r.. NUM_TO_WORD[num]
 
     ___ in_english

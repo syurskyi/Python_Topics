@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ findBottomLeftValue(self, root):
+  ___ findBottomLeftValue  root):
     """
     :type root: TreeNode
     :rtype: int

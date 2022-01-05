@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ findLadders(self, beginWord, endWord, wordlist):
+  ___ findLadders  beginWord, endWord, wordlist):
     """
     :type beginWord: str
     :type endWord: str

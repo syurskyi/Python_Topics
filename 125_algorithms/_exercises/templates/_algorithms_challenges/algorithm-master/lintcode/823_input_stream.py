@@ -4,7 +4,7 @@ time: O(n)
 space: O(1)
 """
 c_ Solution:
-    ___ inputStream(self, a, b):
+    ___ inputStream  a, b):
         """
         :type a: str
         :type b: str
@@ -50,7 +50,7 @@ time: O(n)
 space: O(n)
 """
 c_ Solution:
-    ___ inputStream(self, a, b):
+    ___ inputStream  a, b):
         """
         :type a: str
         :type b: str

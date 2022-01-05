@@ -13,7 +13,7 @@ c_ Solution:
     @param: B: the root of binary tree B.
     @return: true if they are identical, or false.
     """
-    ___ isIdentical(self, A, B):
+    ___ isIdentical  A, B):
         __ n.. A a.. n.. B:
             r.. T..
 

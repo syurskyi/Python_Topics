@@ -8,7 +8,7 @@ Return "100".
 """
 
 c_ Solution(object):
-    ___ addBinary(self, a, b):
+    ___ addBinary  a, b):
         """
         :type a: str
         :type b: str
@@ -20,7 +20,7 @@ c_ Solution(object):
         n = l..(b)
         i = 0
         c = 0
-        res = ['0' ___ _ __ r..(max(m, n) + 1)]
+        res = ['0' ___ _ __ r..(m..(m, n) + 1)]
         w.... i < m o. i < n o. c > 0:
             tmp = c
             __ i < m:

@@ -68,7 +68,7 @@ c_ SnakeGame:
             'R': ( 0,  1),
         }
 
-    ___ move(self, direction):
+    ___ move  direction):
         """Moves the snake.
         :type direction: str, 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
         :rtype: int, The game's score after the move. Return -1 if game over.

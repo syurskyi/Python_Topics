@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isOneEditDistance(self, s, t):
+  ___ isOneEditDistance  s, t):
     """
     :type s: str
     :type t: str

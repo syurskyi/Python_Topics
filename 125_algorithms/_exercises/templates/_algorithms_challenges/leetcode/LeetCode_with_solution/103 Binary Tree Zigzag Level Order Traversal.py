@@ -26,7 +26,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ zigzagLevelOrder(self, root):
+    ___ zigzagLevelOrder  root):
         """
         BFS, stack & queue
         :param root: a tree node

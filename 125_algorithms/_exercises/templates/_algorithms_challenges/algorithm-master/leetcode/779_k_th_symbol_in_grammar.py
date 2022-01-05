@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ kthGrammar(self, N, K):
+    ___ kthGrammar  N, K):
         """
         :type N: int
         :type K: int

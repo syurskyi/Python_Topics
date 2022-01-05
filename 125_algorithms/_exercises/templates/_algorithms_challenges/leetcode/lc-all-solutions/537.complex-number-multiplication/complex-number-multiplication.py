@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ complexNumberMultiply(self, a, b):
+  ___ complexNumberMultiply  a, b):
     """
     :type a: str
     :type b: str

@@ -4,7 +4,7 @@ Created on Apr 10, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ trapRainWater(self, heightMap):
+    ___ trapRainWater  heightMap):
         _______ heapq
         __ n.. heightMap o. n.. heightMap[0]:
             r.. 0
@@ -21,8 +21,8 @@ c_ Solution(object):
             height, i, j = heapq.heappop(heap)
             ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
                 __ 0<=x<m a.. 0<=y<n a.. n.. visited[x][y]:
-                    res += max(0, height-heightMap[x][y])
-                    heapq.heappush(heap, (max(height, heightMap[x][y]), x, y))
+                    res += m..(0, height-heightMap[x][y])
+                    heapq.heappush(heap, (m..(height, heightMap[x][y]), x, y))
                     visited[x][y] = T..
         r.. res
     

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ islandPerimeter(self, grid):
+  ___ islandPerimeter  grid):
     """
     :type grid: List[List[int]]
     :rtype: int

@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ numComponents(self, head, G):
+    ___ numComponents  head, G):
         """
         :type head: ListNode
         :type G: List[int]

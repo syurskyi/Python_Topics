@@ -4,7 +4,7 @@ Created on Oct 8, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ stoneGame(self, piles):
+    ___ stoneGame  piles):
         """
         :type piles: List[int]
         :rtype: bool
@@ -15,7 +15,7 @@ c_ Solution(object):
             dp[i][i] = piles[i]
         ___ d __ r..(1, n):
             ___ i __ r..(n-d):
-                dp[i][i+d] = max(piles[i]-dp[i+1][i+d], piles[i+d]-dp[i][i+d-1])
+                dp[i][i+d] = m..(piles[i]-dp[i+1][i+d], piles[i+d]-dp[i][i+d-1])
         r.. dp[0][-1] > 0
     
     ___ test

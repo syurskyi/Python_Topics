@@ -6,7 +6,7 @@
 
 c_ Solution:
     # @return a ListNode
-    ___ removeNthFromEnd(self, head, n):
+    ___ removeNthFromEnd  head, n):
         __ head __ N..
             r.. N..
         ____ n __ 0:

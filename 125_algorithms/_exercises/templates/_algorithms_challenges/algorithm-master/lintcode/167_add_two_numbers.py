@@ -8,7 +8,7 @@ class ListNode:
 
 
 c_ Solution:
-    ___ addLists(self, A, B):
+    ___ addLists  A, B):
         """
         :type A: ListNode
         :type B: ListNode

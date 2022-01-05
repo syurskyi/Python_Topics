@@ -4,7 +4,7 @@
 
 ___ _ __ r..(i..(input())):
     a, b = input().s.. 
-    try:
+    ___
         print(i..(a) // i..(b))
-    except BaseException __ err:
+    ______ BaseException __ err:
         print("Error Code:", err)

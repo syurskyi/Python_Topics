@@ -18,7 +18,7 @@ c_ Solution:
     """
     Union Find
     """
-    ___ countComponents(self, n, edges):
+    ___ countComponents  n, edges):
         """
         :type n: int
         :type edges: list[int]
@@ -37,7 +37,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ union(self, nodes, a, b):
+    ___ union  nodes, a, b):
         _a = find(nodes, a)
         _b = find(nodes, b)
 
@@ -47,7 +47,7 @@ c_ Solution:
         nodes[_b] = _a
         r.. T..
 
-    ___ find(self, nodes, a):
+    ___ find  nodes, a):
         __ a n.. __ nodes:
             nodes[a] = a
             r.. a
@@ -62,7 +62,7 @@ c_ Solution2:
     """
     DFS
     """
-    ___ countComponents(self, n, edges):
+    ___ countComponents  n, edges):
         """
         :type n: int
         :type edges: list[int]
@@ -93,7 +93,7 @@ c_ Solution2:
 
         r.. ans
 
-    ___ dfs(self, a, adj, visited):
+    ___ dfs  a, adj, visited):
         __ a n.. __ adj:
             r..
 

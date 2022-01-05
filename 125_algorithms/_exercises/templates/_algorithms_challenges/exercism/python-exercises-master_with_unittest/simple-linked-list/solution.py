@@ -45,7 +45,7 @@ c_ LinkedList(object):
             r.. EmptyListException("The list is empty")
         r.. _head
 
-    ___ push(self, value):
+    ___ push  value):
         newNode = Node(value)
         newNode._next = _head
         _head = newNode

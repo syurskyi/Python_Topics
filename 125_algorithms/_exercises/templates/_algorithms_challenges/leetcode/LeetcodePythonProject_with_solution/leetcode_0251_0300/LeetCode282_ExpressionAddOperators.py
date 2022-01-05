@@ -4,7 +4,7 @@ Created on Mar 6, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ addOperators(self, num, target):
+    ___ addOperators  num, target):
         """
         :type num: str
         :type target: int
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(num, 0, target, '', 0, 0, res)
         r.. res
     
-    ___ helper(self, num, pos, target, curr, evalVal, mult, res):
+    ___ helper  num, pos, target, curr, evalVal, mult, res):
         __ pos __ l..(num):
             evalVal += mult
             __ target __ evalVal:

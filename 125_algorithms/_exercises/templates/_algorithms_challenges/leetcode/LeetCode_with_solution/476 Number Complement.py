@@ -10,7 +10,7 @@ You could assume no leading zero bit in the integer’s binary representation.
 
 
 c_ Solution:
-    ___ findComplement(self, num):
+    ___ findComplement  num):
         """
         :type num: int
         :rtype: int

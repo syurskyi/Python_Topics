@@ -6,18 +6,18 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ rob(self, root):
+    ___ rob  root):
         __ n.. root: r.. 0
         result = helper(root)
-        r.. max(result[0], result[1])
+        r.. m..(result[0], result[1])
     
     # return include, exclude
-    ___ helper(self, root):
+    ___ helper  root):
         __ n.. root: r.. [0, 0]
         left = helper(root.left)
         right = helper(root.right)
-        include = max(left[0]+right[0], root.val+left[1]+right[1])
-        exclude = max(left[0]+right[0], left[1]+right[1])
+        include = m..(left[0]+right[0], root.val+left[1]+right[1])
+        exclude = m..(left[0]+right[0], left[1]+right[1])
         r.. [include, exclude]
     
     ___ test

@@ -10,7 +10,7 @@ return "blue is sky the".
 c_ Solution:
     # @param s, a string
     # @return a string
-    ___ reverseWords(self, s):
+    ___ reverseWords  s):
         ls = l..(s)
         # C-like processing
         # Process spaces
@@ -49,13 +49,13 @@ c_ Solution:
                 ws = i + 1
         r.. ''.j..(ls[start:end + 1])
 
-    ___ reverse(self, a, i, j):
+    ___ reverse  a, i, j):
         w.... i < j:
             a[i], a[j] = a[j], a[i]
             i += 1
             j -= 1
 
-    ___ reverseWords2(self, s):
+    ___ reverseWords2  s):
         cs = l..(s)  # Make a C-string like list
         n = l..(cs)
         # Remove leading and trailing spaces

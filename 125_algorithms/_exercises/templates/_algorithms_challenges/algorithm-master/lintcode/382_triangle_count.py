@@ -3,7 +3,7 @@ c_ Solution:
     @param: S: A list of integers
     @return: An integer
     """
-    ___ triangleCount(self, S):
+    ___ triangleCount  S):
         ans = 0
         __ n.. S o. l..(S) < 3:
             r.. ans

@@ -17,6 +17,6 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ arrayPairSum(self, nums: List[i..]) __ i..:
+    ___ arrayPairSum  nums: List[i..]) __ i..:
         nums.s..()
         r.. s..(nums[::2])

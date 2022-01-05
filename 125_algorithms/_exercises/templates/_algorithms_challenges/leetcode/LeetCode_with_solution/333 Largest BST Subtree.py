@@ -29,7 +29,7 @@ c_ Solution(object):
     ___ - ):
         gmax = 0
 
-    ___ largestBSTSubtree(self, root):
+    ___ largestBSTSubtree  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -37,7 +37,7 @@ c_ Solution(object):
         measure(root)
         r.. gmax
 
-    ___ measure(self, root):
+    ___ measure  root):
         __ n.. root:
             r.. BSTInfo(0, MAX, MIN)
 
@@ -47,16 +47,16 @@ c_ Solution(object):
             r.. BSTInfo(-1, MIN, MAX)
 
         sz = 1 + left.sz + right.sz
-        gmax = max(gmax, sz)
+        gmax = m..(gmax, sz)
         # when root.left is None
-        r.. BSTInfo(sz, m..(root.val, left.lo), max(root.val, right.hi))
+        r.. BSTInfo(sz, m..(root.val, left.lo), m..(root.val, right.hi))
 
 
 c_ SolutionError(object):
     ___ - ):
         gmax = 0
 
-    ___ largestBSTSubtree(self, root):
+    ___ largestBSTSubtree  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -64,7 +64,7 @@ c_ SolutionError(object):
         measure(root)
         r.. gmax
 
-    ___ measure(self, root):
+    ___ measure  root):
         __ n.. root:
             r.. 0
 
@@ -78,7 +78,7 @@ c_ SolutionError(object):
             r.. 0
 
         ret = 1 + left + right
-        gmax = max(gmax, ret)
+        gmax = m..(gmax, ret)
         r.. ret
 
 __ _______ __ _______

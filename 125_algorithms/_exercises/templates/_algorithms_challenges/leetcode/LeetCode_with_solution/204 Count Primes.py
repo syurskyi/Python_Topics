@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ countPrimes(self, n):
+    ___ countPrimes  n):
         """
         Find prime using Sieve's algorithm
         :type n: int

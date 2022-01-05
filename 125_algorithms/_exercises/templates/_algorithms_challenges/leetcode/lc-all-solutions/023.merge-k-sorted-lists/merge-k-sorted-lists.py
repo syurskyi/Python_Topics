@@ -9,7 +9,7 @@ _______ heapq
 ListNode.__lt__ = l.... x, y: (x.val < y.val)
 
 c_ Solution(object):
-  ___ mergeKLists(self, lists):
+  ___ mergeKLists  lists):
     """
     :type lists: List[ListNode]
     :rtype: ListNode

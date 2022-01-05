@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ detectCycle(self, head):
+  ___ detectCycle  head):
     """
     :type head: ListNode
     :rtype: ListNode

@@ -5,7 +5,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ climbStairs_save_memory(self, n):
+    ___ climbStairs_save_memory  n):
         """
         DP. The transition function should be:
         f(n) = f(n-1) + f(n-2)  n>2;
@@ -26,7 +26,7 @@ c_ Solution:
             f_n_minus_1 = fn
         r.. fn
 
-    ___ climbStairs(self, n):
+    ___ climbStairs  n):
         """
         DP. The transition function should be:
         f(n) = f(n-1) + f(n-2)  n>2;
@@ -46,5 +46,5 @@ c_ Solution:
         r.. f[n]
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().climbStairs(3)

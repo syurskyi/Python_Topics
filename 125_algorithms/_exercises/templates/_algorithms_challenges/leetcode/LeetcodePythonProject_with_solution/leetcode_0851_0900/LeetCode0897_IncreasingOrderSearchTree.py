@@ -6,7 +6,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ increasingBST(self, root):
+    ___ increasingBST  root):
         """
         :type root: TreeNode
         :rtype: TreeNode

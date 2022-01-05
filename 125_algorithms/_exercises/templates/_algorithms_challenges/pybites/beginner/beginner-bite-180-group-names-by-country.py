@@ -60,9 +60,9 @@ ___ group_names_by_country(data: s.. = data) __ defaultdict:
         arr = line.s..(',')
         print(arr)
         name = arr[1] + " " + arr[0]
-        try:
+        ___
             countries[arr[2]].a..(name)
-        except:
+        ______:
             l    # list
             l.a..(name)
             countries[arr[2]] = l

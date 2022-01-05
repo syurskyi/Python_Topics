@@ -3,7 +3,7 @@ c_ Solution:
     @param s: a message being encoded
     @return: an integer
     """
-    ___ numDecodings(self, s):
+    ___ numDecodings  s):
         __ n.. s o. s __ '0':
             r.. 0
 

@@ -41,7 +41,7 @@ ___ create_stats_report(data_ N..
 
     stats = d..(count=l..(data),
                  min_=m..(data),
-                 max_=max(data),
+                 max_=m..(data),
                  mean=r..(st.mean(data), 2),
                  pstdev=r..(st.pstdev(data), 2),
                  pvariance=r..(st.pvariance(data), 2),

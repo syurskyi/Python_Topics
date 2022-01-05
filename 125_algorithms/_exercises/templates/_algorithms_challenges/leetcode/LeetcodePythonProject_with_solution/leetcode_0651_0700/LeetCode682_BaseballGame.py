@@ -4,7 +4,7 @@ Created on Oct 21, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ calPoints(self, ops):
+    ___ calPoints  ops):
         """
         :type ops: List[str]
         :rtype: int

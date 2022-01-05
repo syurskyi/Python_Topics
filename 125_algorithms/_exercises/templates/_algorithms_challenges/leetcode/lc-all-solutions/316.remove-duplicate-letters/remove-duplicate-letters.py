@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ removeDuplicateLetters(self, s):
+  ___ removeDuplicateLetters  s):
     """
     :type s: str
     :rtype: str

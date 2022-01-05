@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ generateAbbreviations(self, word):
+  ___ generateAbbreviations  word):
     """
     :type word: str
     :rtype: List[str]

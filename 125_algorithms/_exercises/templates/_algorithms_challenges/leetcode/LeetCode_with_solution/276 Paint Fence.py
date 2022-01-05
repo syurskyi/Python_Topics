@@ -5,10 +5,10 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ numWays_oneliner(self, n, k):
+    ___ numWays_oneliner  n, k):
         r.. 0 __ n < 1 ____ s..(reduce(l.... F, i: [(k-1)*(F[0]+F[1]), F[0]], xrange(1, n), [k, 0]))
 
-    ___ numWays(self, n, k):
+    ___ numWays  n, k):
         """
         You need to abstract number of colors to binary value (is different color)
 
@@ -34,7 +34,7 @@ c_ Solution(object):
 
         r.. num_diff+num_same
 
-    ___ numWays_MLE2(self, n, k):
+    ___ numWays_MLE2  n, k):
         """
         DP
         Let F[i][j][l] be the number of ways of painting for A[:i] with A[i-1] as color j and A[i-2] as color l
@@ -74,7 +74,7 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ numWays_MLE(self, n, k):
+    ___ numWays_MLE  n, k):
         """
         DP
         let F[i][j][l] be the number of ways of painting for A[:i] with A[i-1] as color j and A[i-2] as color l

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findUnsortedSubarray(self, nums):
+  ___ findUnsortedSubarray  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -12,7 +12,7 @@ c_ Solution(object):
     maxs[0] = nums[0]
     start, end = 0, -2
     ___ i __ r..(1, l..(nums)):
-      maxs[i] = max(maxs[i - 1], nums[i])
+      maxs[i] = m..(maxs[i - 1], nums[i])
     ___ i __ r..(r..(l..(nums) - 1)):
       mins[i] = m..(mins[i + 1], nums[i])
     ___ i __ r..(r..(1, l..(nums))):
@@ -25,4 +25,4 @@ c_ Solution(object):
         break
     print
     end, start
-    r.. max(end - start + 1, 0)
+    r.. m..(end - start + 1, 0)

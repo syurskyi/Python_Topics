@@ -27,7 +27,7 @@ dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 
 c_ Solution:
-    ___ exist(self, board: List[List[s..]], word: s..) __ bool:
+    ___ exist  board: List[List[s..]], word: s..) __ bool:
         m, n = l..(board), l..(board[0])
         visited = defaultdict(l....: defaultdict(bool))
         ___ i __ r..(m):
@@ -38,7 +38,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ dfs(self, board, visited, i, j, word, idx):
+    ___ dfs  board, visited, i, j, word, idx):
         visited[i][j] = T..
         __ idx >= l..(word):
             r.. T..

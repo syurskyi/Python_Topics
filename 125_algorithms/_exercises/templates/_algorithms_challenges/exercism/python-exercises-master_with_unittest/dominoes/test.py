@@ -69,17 +69,17 @@ c_ DominoesTest(unittest.TestCase):
 
     # Utility methods
 
-    ___ normalize_dominoes(self, dominoes):
+    ___ normalize_dominoes  dominoes):
         r.. l..(s..(t..(s..(domino)) ___ domino __ dominoes))
 
-    ___ assert_same_dominoes(self, input_dominoes, output_chain):
+    ___ assert_same_dominoes  input_dominoes, output_chain):
         msg = ('Dominoes used in the output must be the same '
                'as the ones given in the input')
         input_normal = normalize_dominoes(input_dominoes)
         output_normal = normalize_dominoes(output_chain)
         assertEqual(input_normal, output_normal, msg)
 
-    ___ assert_consecutive_dominoes_match(self, output_chain):
+    ___ assert_consecutive_dominoes_match  output_chain):
         ___ i __ r..(l..(output_chain) - 1):
             msg = ("In chain {}, right end of domino {} ({}) "
                    "and left end of domino {} ({}) must match")
@@ -90,13 +90,13 @@ c_ DominoesTest(unittest.TestCase):
                              output_chain[i + 1])
             assertEqual(output_chain[i][1], output_chain[i + 1][0], msg)
 
-    ___ assert_dominoes_at_ends_match(self, output_chain):
+    ___ assert_dominoes_at_ends_match  output_chain):
         msg = ("In chain {}, left end of first domino ({}) and "
                "right end of last domino ({}) must match")
         msg = msg.f..(output_chain, output_chain[0], output_chain[-1])
         assertEqual(output_chain[0][0], output_chain[-1][1], msg)
 
-    ___ assert_correct_chain(self, input_dominoes, output_chain):
+    ___ assert_correct_chain  input_dominoes, output_chain):
         msg = 'There should be a chain for {}'.f..(input_dominoes)
         assertIsNotNone(output_chain, msg)
         assert_same_dominoes(input_dominoes, output_chain)
@@ -105,7 +105,7 @@ c_ DominoesTest(unittest.TestCase):
         assert_consecutive_dominoes_match(output_chain)
         assert_dominoes_at_ends_match(output_chain)
 
-    ___ refute_correct_chain(self, input_dominoes, output_chain):
+    ___ refute_correct_chain  input_dominoes, output_chain):
         msg = 'There should be no valid chain for {}'.f..(input_dominoes)
         assertIsNone(output_chain, msg)
 

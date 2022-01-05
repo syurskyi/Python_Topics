@@ -10,7 +10,7 @@ ___ test_pow
 
 
 ___ test_max
-    ... get_len_help_text(max) __ 402
+    ... get_len_help_text(m..) __ 402
 
 
 ___ test_bad_input

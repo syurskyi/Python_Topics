@@ -5,7 +5,7 @@ Created on Jan 23, 2017
 '''
 
 c_ Solution(object):
-    ___ minWindow(self, s, t):
+    ___ minWindow  s, t):
         """
         :type s: str
         :type t: str
@@ -36,7 +36,7 @@ c_ Solution(object):
                 left += 1
         r.. res
     
-    ___ minWindow_old(self, s, t):
+    ___ minWindow_old  s, t):
         """
         :type s: str
         :type t: str

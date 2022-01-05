@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ str2tree(self, s):
+  ___ str2tree  s):
     """
     :type s: str
     :rtype: TreeNode

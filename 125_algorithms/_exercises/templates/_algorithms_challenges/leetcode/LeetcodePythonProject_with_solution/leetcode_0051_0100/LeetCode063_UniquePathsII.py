@@ -5,7 +5,7 @@ Created on Jan 22, 2017
 '''
 
 c_ Solution(object):
-    ___ uniquePathsWithObstacles(self, obstacleGrid):
+    ___ uniquePathsWithObstacles  obstacleGrid):
         """
         :type obstacleGrid: List[List[int]]
         :rtype: int

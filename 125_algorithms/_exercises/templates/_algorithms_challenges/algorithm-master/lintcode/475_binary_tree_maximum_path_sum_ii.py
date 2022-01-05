@@ -8,7 +8,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ maxPathSum2(self, root):
+    ___ maxPathSum2  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -19,4 +19,4 @@ c_ Solution:
         left = maxPathSum2(root.left)
         right = maxPathSum2(root.right)
 
-        r.. root.val + max(0, left, right)
+        r.. root.val + m..(0, left, right)

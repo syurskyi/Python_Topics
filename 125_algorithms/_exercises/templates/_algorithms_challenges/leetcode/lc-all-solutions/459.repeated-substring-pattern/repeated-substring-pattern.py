@@ -1,6 +1,6 @@
 c_ Solution(object):
 
-  ___ repeatedSubstringPattern(self, s..):
+  ___ repeatedSubstringPattern  s..):
     """
     :type str: str
     :rtype: bool

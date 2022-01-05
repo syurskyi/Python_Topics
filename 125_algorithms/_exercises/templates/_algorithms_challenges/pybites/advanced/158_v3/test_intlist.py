@@ -56,8 +56,8 @@ ___ test_cannot_append_non_int_values_via_inplace_overloading(list2):
 
 
 ___ test_can_append_list_of_ints(list1):
-    try:
+    ___
         list1 += [1, 2, 3]
-    except Exception __ exc:
+    ______ Exception __ exc:
         p__.fail(exc)
     ... list1 __ [1, 3, 5, 1, 2, 3]

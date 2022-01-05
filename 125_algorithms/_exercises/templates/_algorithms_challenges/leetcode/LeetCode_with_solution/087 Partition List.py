@@ -19,7 +19,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ partition(self, head, x):
+    ___ partition  head, x):
         """
         Linked List
         Two pointers
@@ -50,7 +50,7 @@ c_ Solution:
         pre_smaller.next = dummy_larger.next
         r.. dummy_smaller.next
 
-__ __name____"__main__":
+__ _____ __ ____
     lst = [ListNode(2), ListNode(1)]
     ___ ind __ xrange(l..(lst)-1):
         lst[ind].next = lst[ind+1]

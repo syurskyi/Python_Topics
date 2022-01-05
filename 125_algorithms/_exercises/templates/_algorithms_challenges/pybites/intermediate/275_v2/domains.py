@@ -11,10 +11,10 @@ TARGET_DIV = {"class": "middle_info_noborder"}
 ___ get_common_domains(url=COMMON_DOMAINS):
     """Scrape the url return the 100 most common domain names"""
 
-    try:
+    ___
         response = requests.get(url)
         response.raise_for_status()
-    except:
+    ______:
         print('error in getting data')
         r.. []
 

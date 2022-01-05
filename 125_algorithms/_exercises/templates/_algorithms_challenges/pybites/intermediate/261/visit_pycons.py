@@ -48,7 +48,7 @@ c_ PyCon:
     lon: float = N..
 
 
-    ___ __lt__(self,other):
+    ___ __lt__ other):
         __ isi..(other,PyCon):
             r.. start_date < other.start_date
 

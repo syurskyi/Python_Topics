@@ -8,7 +8,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ averageOfLevels(self, root):
+  ___ averageOfLevels  root):
     """
     :type root: TreeNode
     :rtype: List[float]

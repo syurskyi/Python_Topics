@@ -17,7 +17,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ largestRectangleArea(self, height):
+    ___ largestRectangleArea  height):
         """
         O(2*n)
         every bar at most enter the stack once and is popped out once.
@@ -53,7 +53,7 @@ c_ Solution:
                     area = height[last]*(i-(inc_stack[-1]+1))
                 ____:
                     area = height[last]*i
-                gmax = max(gmax, area)
+                gmax = m..(gmax, area)
 
             inc_stack.a..(i)
 
@@ -65,11 +65,11 @@ c_ Solution:
                 area = height[last]*(i-(inc_stack[-1]+1))
             ____:
                 area = height[last]*i
-            gmax = max(gmax, area)
+            gmax = m..(gmax, area)
 
         r.. gmax
 
-    ___ largestRectangleArea_TLE(self, height):
+    ___ largestRectangleArea_TLE  height):
         """
         O(n*n)
         :param height: a list of int
@@ -81,16 +81,16 @@ c_ Solution:
         max_area = -1<<32
         ___ ind, val __ e..(height):
             min_h = val
-            max_area = max(max_area, val*1)
+            max_area = m..(max_area, val*1)
             ___ j __ xrange(ind, -1, -1):
                 min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
-                max_area = max(max_area, current_area)
+                max_area = m..(max_area, current_area)
 
         r.. max_area
 
 
-    ___ largestRectangleArea_complex(self, height):
+    ___ largestRectangleArea_complex  height):
         """
         O(n*n) + prune
 
@@ -109,16 +109,16 @@ c_ Solution:
                 _____
 
             min_h = val
-            global_max = max(global_max, min_h*1)
+            global_max = m..(global_max, min_h*1)
             ___ j __ xrange(ind, -1, -1):  # scanning backward
                 min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
-                global_max = max(global_max, current_area)
+                global_max = m..(global_max, current_area)
 
         r.. global_max
 
 
-    ___ largestRectangleArea_error(self, height):
+    ___ largestRectangleArea_error  height):
         """
         O(n)
 
@@ -146,7 +146,7 @@ c_ Solution:
                     area = height[last] * (i-last)
                 ____:
                     area = height[last] * i
-                global_max = max(global_max, area)
+                global_max = m..(global_max, area)
 
         # remaining stack
         w.... inc_stack:
@@ -155,11 +155,11 @@ c_ Solution:
                 area = height[last]*(i-last)
             ____:
                 area = height[last]*i
-            global_max = max(global_max, area)
+            global_max = m..(global_max, area)
         r.. global_max
 
 
-__ __name____"__main__":
+__ _____ __ ____
     # height = [2, 1, 2]
     height = [4, 2, 0, 3, 2, 5]
     ... Solution().largestRectangleArea(height) __ Solution().largestRectangleArea_complex(height)

@@ -69,7 +69,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ widthOfBinaryTree(self, root: TreeNode) __ i..:
+    ___ widthOfBinaryTree  root: TreeNode) __ i..:
         """
            0
           0 1
@@ -85,7 +85,7 @@ c_ Solution:
         w.... q:
             cur_q    # list
             left, right = q[0][0], q[-1][0]
-            ret = max(ret, right - left + 1)
+            ret = m..(ret, right - left + 1)
             ___ idx, node __ q:
                 __ node.left:
                     cur_q.a..((idx * 2, node.left))

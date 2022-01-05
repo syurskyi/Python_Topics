@@ -16,7 +16,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ isPerfectSquare(self, num):
+    ___ isPerfectSquare  num):
         """
         Debugging binary search
         :type num: int

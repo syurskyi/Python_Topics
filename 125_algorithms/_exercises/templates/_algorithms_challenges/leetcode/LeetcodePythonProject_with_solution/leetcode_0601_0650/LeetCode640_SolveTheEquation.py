@@ -4,7 +4,7 @@ Created on Sep 27, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ solveEquation(self, equation):
+    ___ solveEquation  equation):
         """
         :type equation: str
         :rtype: str
@@ -28,7 +28,7 @@ c_ Solution(object):
                 val = (val2-val1)//(valX1-valX2)
                 r.. 'x=%s' % val
     
-    ___ solveHelper(self, s):
+    ___ solveHelper  s):
         valX1, val1 = 0, 0
         i = 0
         w.... i < l..(s):

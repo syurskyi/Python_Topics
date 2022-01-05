@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ findTilt(self, root):
+    ___ findTilt  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
         helper(root, res)
         r.. res[0]
     
-    ___ helper(self, root, res):
+    ___ helper  root, res):
         __ n.. root: r..
         helper(root.left, res)
         helper(root.right, res)
@@ -28,7 +28,7 @@ c_ Solution(object):
         rightSum = getSum(root.right)
         res[0] += abs(leftSum-rightSum)
     
-    ___ getSum(self, root):
+    ___ getSum  root):
         __ n.. root: r.. 0
         res = root.val
         res += getSum(root.left)

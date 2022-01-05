@@ -1,6 +1,6 @@
 c_ NORTH:
     @staticmethod
-    ___ advance(self, x, y):
+    ___ advance  x, y):
         r.. (x, y + 1)
 
     @staticmethod
@@ -14,7 +14,7 @@ c_ NORTH:
 
 c_ EAST:
     @staticmethod
-    ___ advance(self, x, y):
+    ___ advance  x, y):
         r.. (x + 1, y)
 
     @staticmethod
@@ -28,7 +28,7 @@ c_ EAST:
 
 c_ SOUTH:
     @staticmethod
-    ___ advance(self, x, y):
+    ___ advance  x, y):
         r.. (x, y - 1)
 
     @staticmethod
@@ -42,7 +42,7 @@ c_ SOUTH:
 
 c_ WEST:
     @staticmethod
-    ___ advance(self, x, y):
+    ___ advance  x, y):
         r.. (x - 1, y)
 
     @staticmethod
@@ -70,11 +70,11 @@ c_ Robot:
     ___ turn_left
         bearing = bearing.turn_left(bearing)
 
-    ___ simulate(self, instructions):
+    ___ simulate  instructions):
         ___ i __ instructions:
             execute_instruction(i)
 
-    ___ execute_instruction(self, i):
+    ___ execute_instruction  i):
         __ i __ 'A':
             advance()
         ____ i __ 'L':

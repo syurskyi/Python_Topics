@@ -7,7 +7,7 @@ c_ Phone:
     ___ - , inp):
         number = number(inp)
 
-    ___ number(self, inp):
+    ___ number  inp):
         cleaned = strip(inp)
         __ valid_11_digits(cleaned):
             r.. cleaned[1:]

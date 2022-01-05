@@ -5,7 +5,7 @@ Created on Mar 18, 2017
 '''
 
 c_ Solution(object):
-    ___ countComponents(self, n, edges):
+    ___ countComponents  n, edges):
         count = n
         roots = [-1]*count
         ___ edge __ edges:
@@ -17,12 +17,12 @@ c_ Solution(object):
 #         print('roots: %s' % roots)
         r.. count
     
-    ___ findRoot(self, roots, ind):
+    ___ findRoot  roots, ind):
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     
-    ___ countComponentsAnother(self, n, edges):
+    ___ countComponentsAnother  n, edges):
         count = n
         roots = l..(r..(n))
         ___ edge __ edges:
@@ -33,7 +33,7 @@ c_ Solution(object):
                 count -= 1
         r.. count
         
-    ___ find(self, roots, ind):
+    ___ find  roots, ind):
         w.... roots[ind] != ind:
             roots[ind] = roots[roots[ind]]
             ind = roots[ind]

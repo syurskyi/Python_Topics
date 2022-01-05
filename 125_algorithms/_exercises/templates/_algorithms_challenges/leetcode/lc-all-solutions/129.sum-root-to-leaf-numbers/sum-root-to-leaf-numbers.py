@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ sumNumbers(self, root):
+  ___ sumNumbers  root):
     """
     :type root: TreeNode
     :rtype: int

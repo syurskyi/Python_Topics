@@ -1,9 +1,9 @@
 ___ positive_divide(numerator, denominator):
-    try:
+    ___
         result = numerator / denominator
-    except ZeroDivisionError:
+    ______ ZeroDivisionError:
         r.. 0
-    except T..:
+    ______ T..:
         r..
 
     __ result < 0:

@@ -162,7 +162,7 @@ ___ test_custom_series_function(sepal_length_series):
     result = se.custom_series_function(sepal_length_series, 0.1)
     ... l..(result) __ 51
     ... r..(result.mean(), 4) __ 5.6725
-    ... max(result.index) __ 149 a.. max(result.values) __ 7.9
+    ... m..(result.index) __ 149 a.. m..(result.values) __ 7.9
     ... m..(result.index) __ 0 a.. m..(result.values) __ 4.3
     ... result[82] __ 5.9
     ... result.iloc[10] __ 5.0

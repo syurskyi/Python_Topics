@@ -4,7 +4,7 @@ Created on Oct 30, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findLength(self, A, B):
+    ___ findLength  A, B):
         """
         :type A: List[int]
         :type B: List[int]
@@ -21,7 +21,7 @@ c_ Solution(object):
                 ____:
                     __ nums1[i-1] __ nums2[j-1]:
                         dp[i][j] = dp[i-1][j-1]+1
-                        maxLen = max(maxLen, dp[i][j])
+                        maxLen = m..(maxLen, dp[i][j])
         r.. maxLen
     
     ___ test

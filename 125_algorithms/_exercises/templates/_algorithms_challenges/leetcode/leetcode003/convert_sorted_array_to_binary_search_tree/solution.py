@@ -8,7 +8,7 @@
 c_ Solution:
     # @param num, a list of integers
     # @return a tree node
-    ___ sortedArrayToBST(self, num):
+    ___ sortedArrayToBST  num):
         __ n.. num:
             r.. N..
         ____:

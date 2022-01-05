@@ -24,7 +24,7 @@ c_ Node:
 
 
 c_ Solution:
-    ___ construct(self, grid):
+    ___ construct  grid):
         """
         DPS, check 4 children then merge
 
@@ -34,7 +34,7 @@ c_ Solution:
         l = l..(grid)
         r.. _construct(grid, 0, 0, l)
 
-    ___ _construct(self, grid, row, col, l):
+    ___ _construct  grid, row, col, l):
         """
         Use row col for matrix rather than x y coordiate since the direction is
         error-prone

@@ -1,6 +1,6 @@
 c_ Codec:
 
-  ___ encode(self, longUrl):
+  ___ encode  longUrl):
     """Encodes a URL to a shortened URL.
     
     :type longUrl: str
@@ -8,7 +8,7 @@ c_ Codec:
     """
     r.. longUrl
 
-  ___ decode(self, shortUrl):
+  ___ decode  shortUrl):
     """Decodes a shortened URL to its original URL.
     
     :type shortUrl: str

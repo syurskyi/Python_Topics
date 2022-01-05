@@ -4,7 +4,7 @@ Created on Sep 19, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ smallestRange(self, nums):
+    ___ smallestRange  nums):
         """
         :type nums: List[List[int]]
         :rtype: List[int]
@@ -13,7 +13,7 @@ c_ Solution(object):
         pq = [(arr[0], i, 0) ___ i, arr __ e..(nums)]
         heapq.heapify(pq)
         res = [float('-inf'), float('inf')]
-        right = max([arr[0] ___ arr __ nums])
+        right = m..([arr[0] ___ arr __ nums])
         w.... pq:
             left, i, j = heapq.heappop(pq)
             __ right-left < res[1]-res[0]:
@@ -21,7 +21,7 @@ c_ Solution(object):
             __ j+1 __ l..(nums[i]):
                 r.. res
             v = nums[i][j+1]
-            right = max(right, v)
+            right = m..(right, v)
             heapq.heappush(pq, (v, i, j+1))
         r.. res
     

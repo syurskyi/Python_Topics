@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ reorderList(self, head):
+  ___ reorderList  head):
     """
     :type head: ListNode
     :rtype: void Do not return anything, modify head in-place instead.

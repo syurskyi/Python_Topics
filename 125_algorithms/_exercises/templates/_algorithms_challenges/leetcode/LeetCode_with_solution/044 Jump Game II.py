@@ -13,7 +13,7 @@ index.)
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ jump_TLE(self, A):
+    ___ jump_TLE  A):
         """
         bfs
         :param A: a list of integers
@@ -40,7 +40,7 @@ c_ Solution:
             counter += 1
         r.. counter
 
-    ___ jump(self, A):
+    ___ jump  A):
         """
         Simplified bfs, use pointers to scan the array.
         Algorithm: Two Pointers
@@ -58,7 +58,7 @@ c_ Solution:
         w.... end<length:  # when end==length, it has already reached the last item
             __ n.. start<end: r.. 0  # avoid dead loop
             ___ i __ xrange(start, end):
-                gmax = max(gmax, A[i]+i)
+                gmax = m..(gmax, A[i]+i)
 
             counter += 1
             start = end
@@ -67,6 +67,6 @@ c_ Solution:
         r.. counter
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().jump([3, 2, 1, 0, 4])
     ... Solution().jump([2,3,1,1,4])__2

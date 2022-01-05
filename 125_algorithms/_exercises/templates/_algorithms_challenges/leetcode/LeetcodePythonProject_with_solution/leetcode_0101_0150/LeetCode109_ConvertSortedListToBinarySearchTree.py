@@ -17,7 +17,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ sortedListToBST(self, head):
+    ___ sortedListToBST  head):
         """
         :type head: ListNode
         :rtype: TreeNode
@@ -31,7 +31,7 @@ c_ Solution(object):
             length += 1
         r.. helper(0, length-1)
     
-    ___ helper(self, l, r):
+    ___ helper  l, r):
         __ l > r:
             r.. N..
         mid = (l+r)//2

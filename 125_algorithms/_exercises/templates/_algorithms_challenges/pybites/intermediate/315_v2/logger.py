@@ -18,10 +18,10 @@ ___ sum_even_numbers(numbers: List[float]) __ float:
 
     s = 0
     
-    try:
+    ___
         ___ num __ filter(l.... x: x % 2 __ 0,numbers):
             s += num
-    except Exception __ e:
+    ______ Exception __ e:
         logger.exception _*Bad inputs: {numbers}')
         r..
 

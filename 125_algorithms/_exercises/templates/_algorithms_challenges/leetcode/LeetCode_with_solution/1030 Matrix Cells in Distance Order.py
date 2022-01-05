@@ -38,12 +38,12 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ allCellsDistOrder(self, R: i.., C: i.., r0: i.., c0: i..) __ List[List[i..]]:
+    ___ allCellsDistOrder  R: i.., C: i.., r0: i.., c0: i..) __ List[List[i..]]:
         """
         bucket sort
         """
-        r_max = max(r0, R-1 - r0)
-        c_max = max(c0, C-1 - c0)
+        r_max = m..(r0, R-1 - r0)
+        c_max = m..(c0, C-1 - c0)
         lst = [[] ___ _ __ r..(r_max + c_max + 1)]
         ___ i __ r..(R):
             ___ j __ r..(C):

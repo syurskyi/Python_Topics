@@ -26,7 +26,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ findNthDigit(self, n):
+    ___ findNthDigit  n):
         """
         Math, quotient and remainder
         :type n: int

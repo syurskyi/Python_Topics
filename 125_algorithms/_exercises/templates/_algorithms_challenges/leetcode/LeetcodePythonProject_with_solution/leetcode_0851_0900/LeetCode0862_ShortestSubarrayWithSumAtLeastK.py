@@ -4,7 +4,7 @@ Created on Sep 17, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ shortestSubarray(self, A, K):
+    ___ shortestSubarray  A, K):
         """
         :type A: List[int]
         :type K: int

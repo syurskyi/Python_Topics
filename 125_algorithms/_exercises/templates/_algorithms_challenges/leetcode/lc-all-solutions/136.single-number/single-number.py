@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ singleNumber(self, nums):
+  ___ singleNumber  nums):
     """
     :type nums: List[int]
     :rtype: int

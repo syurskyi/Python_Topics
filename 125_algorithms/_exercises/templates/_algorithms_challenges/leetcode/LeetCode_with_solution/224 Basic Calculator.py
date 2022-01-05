@@ -16,7 +16,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ calculate(self, s):
+    ___ calculate  s):
         """
         * infix to postfix
         * eval postfix
@@ -27,7 +27,7 @@ c_ Solution:
         postfix = infix2postfix(lst)
         r.. eval_postfix(postfix)
 
-    ___ to_list(self, s):
+    ___ to_list  s):
         i = 0
         ret    # list
         w.... i < l..(s):
@@ -46,7 +46,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ infix2postfix(self, lst):
+    ___ infix2postfix  lst):
         stk    # list  # store operators in strictly increasing precedence
         ret    # list
         ___ elt __ lst:
@@ -69,13 +69,13 @@ c_ Solution:
 
         r.. ret
 
-    ___ precendece(self, op):
+    ___ precendece  op):
         __ op __ ("(", ")"):
             r.. 0
         __ op __ ("+", "-"):
             r.. 1
 
-    ___ eval_postfix(self, post):
+    ___ eval_postfix  post):
         stk    # list
         ___ elt __ post:
             __ elt __ ("+", "-"):

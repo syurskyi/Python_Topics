@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ addStrings(self, a, b):
+    ___ addStrings  a, b):
         """
         :type a: str
         :type b: str
@@ -13,16 +13,16 @@ c_ Solution:
             r.. a
 
         m, n = l..(a), l..(b)
-        idx = max(m, n)
+        idx = m..(m, n)
         ans = [''] * (idx + 1)
 
         i = m - 1
         j = n - 1
         carry = 0
-        zero = ord('0')
+        zero = o..('0')
 
         w.... i >= 0 a.. j >= 0:
-            carry += ord(a[i]) + ord(b[j]) - 2 * zero
+            carry += o..(a[i]) + o..(b[j]) - 2 * zero
             ans[idx] = s..(carry % 10)
             carry //= 10
             idx -= 1
@@ -30,14 +30,14 @@ c_ Solution:
             j -= 1
 
         w.... i >= 0:
-            carry += ord(a[i]) - zero
+            carry += o..(a[i]) - zero
             ans[idx] = s..(carry % 10)
             carry //= 10
             idx -= 1
             i -= 1
 
         w.... j >= 0:
-            carry += ord(b[j]) - zero
+            carry += o..(b[j]) - zero
             ans[idx] = s..(carry % 10)
             carry //= 10
             idx -= 1

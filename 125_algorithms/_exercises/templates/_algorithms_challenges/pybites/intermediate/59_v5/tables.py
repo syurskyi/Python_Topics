@@ -14,7 +14,7 @@ c_ MultiplicationTable:
         """Returns a string representation of the table"""
         r.. '\n'.j..(' | '.j..([s..(x) ___ x __ y]) ___ y __ _table)
 
-    ___ calc_cell(self, x, y):
+    ___ calc_cell  x, y):
         """Takes x and y coords and returns the (pre-calculated) result"""
         __ x > _len o. y > _len:
             r.. IndexError()

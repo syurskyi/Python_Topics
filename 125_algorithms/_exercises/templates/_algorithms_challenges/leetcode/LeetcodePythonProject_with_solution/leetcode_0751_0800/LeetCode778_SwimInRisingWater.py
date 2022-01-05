@@ -4,7 +4,7 @@ Created on Apr 8, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ swimInWater(self, grid):
+    ___ swimInWater  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution(object):
         res = 0
         w.... pq:
             t, x, y = heapq.heappop(pq)
-            res = max(res, t)
+            res = m..(res, t)
             __ x __ y __ n-1:
                 r.. res
             ___ i, j __ (x+1, y), (x, y+1), (x-1, y), (x, y-1):

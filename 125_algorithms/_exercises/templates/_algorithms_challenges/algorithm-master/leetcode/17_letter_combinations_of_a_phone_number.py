@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ letterCombinations(self, s):
+    ___ letterCombinations  s):
         """
         :type s: str
         :rtype: List[str]

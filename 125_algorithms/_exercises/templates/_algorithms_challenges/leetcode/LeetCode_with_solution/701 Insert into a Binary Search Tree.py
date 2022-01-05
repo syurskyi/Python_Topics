@@ -43,7 +43,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ insertIntoBST(self, root: TreeNode, val: i..) __ TreeNode:
+    ___ insertIntoBST  root: TreeNode, val: i..) __ TreeNode:
         __ n.. root:
             r.. TreeNode(val)
 

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ groupAnagrams(self, strs):
+  ___ groupAnagrams  strs):
     """
     :type strs: List[str]
     :rtype: List[List[str]]
@@ -18,7 +18,7 @@ c_ Solution(object):
     ___ s.. __ strs:
       count = [0] * 26
       ___ c __ s..:
-        count[ord(c) - ord('a')] += 1
+        count[o..(c) - o..('a')] += 1
       key = hash(count)
       __ key n.. __ d:
         d[key] = [s..]

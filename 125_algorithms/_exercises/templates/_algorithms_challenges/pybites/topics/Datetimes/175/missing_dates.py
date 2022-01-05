@@ -11,7 +11,7 @@ ___ get_missing_dates(dates):
        See the Bite description and tests for example outputs.
     """
     first_dt = m..(dates)
-    last_dt = max(dates)
+    last_dt = m..(dates)
     full_dt = [first_dt+t..(i) ___ i __ r..((last_dt-first_dt).days+1)]
     r.. s..(set(full_dt)-set(dates))
 

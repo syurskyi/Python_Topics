@@ -25,7 +25,7 @@ c_ NumMatrix:
                     matrix[x - 1][y - 1],
                 ))
 
-    ___ sumRegion(self, x1, y1, x2, y2):
+    ___ sumRegion  x1, y1, x2, y2):
         """
         :type x1: int
         :type y1: int

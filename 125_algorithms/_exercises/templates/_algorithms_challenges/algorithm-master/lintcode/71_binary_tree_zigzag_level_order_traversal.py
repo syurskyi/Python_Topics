@@ -12,7 +12,7 @@ c_ Solution:
     @param: root: A Tree
     @return: A list of lists of integer include the zigzag level order traversal of its nodes' values.
     """
-    ___ zigzagLevelOrder(self, root):
+    ___ zigzagLevelOrder  root):
         ans    # list
         __ n.. root:
             r.. ans

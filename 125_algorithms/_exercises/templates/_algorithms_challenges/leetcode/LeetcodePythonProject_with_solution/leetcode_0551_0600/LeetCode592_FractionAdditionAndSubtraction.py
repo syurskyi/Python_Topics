@@ -4,7 +4,7 @@ Created on Sep 5, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ fractionAddition(self, expression):
+    ___ fractionAddition  expression):
         """
         :type expression: str
         :rtype: str
@@ -21,7 +21,7 @@ c_ Solution(object):
             B //= g
         r.. '%s/%s' % (A, B)
     
-    ___ gcd(self, a, b):
+    ___ gcd  a, b):
         __ a __ 0:
             r.. abs(b)
         ____:

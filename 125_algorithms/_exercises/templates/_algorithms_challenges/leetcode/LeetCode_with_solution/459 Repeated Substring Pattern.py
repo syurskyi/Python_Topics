@@ -8,7 +8,7 @@ not exceed 10000.
 
 
 c_ Solution:
-    ___ repeatedSubstringPattern(self, s):
+    ___ repeatedSubstringPattern  s):
         """
         The start of the substring is always 0, then incr the ending index e
         until n/2 where n = len(s)
@@ -30,7 +30,7 @@ c_ Solution:
         """
         r.. s __ (s + s)[1:-1]
 
-    ___ repeatedSubstringPattern_error(self, s):
+    ___ repeatedSubstringPattern_error  s):
         """
         Two pointers algorithm. The start of the substring is always 0
         :type s: str

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ wordPatternMatch(self, pattern, s..):
+  ___ wordPatternMatch  pattern, s..):
     """
     :type pattern: str
     :type str: str

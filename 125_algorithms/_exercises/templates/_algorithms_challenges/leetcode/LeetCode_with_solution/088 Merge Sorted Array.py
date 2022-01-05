@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ merge(self, A, m, B, n):
+    ___ merge  A, m, B, n):
         """
         array, ascending order.
         basic of merge sort.

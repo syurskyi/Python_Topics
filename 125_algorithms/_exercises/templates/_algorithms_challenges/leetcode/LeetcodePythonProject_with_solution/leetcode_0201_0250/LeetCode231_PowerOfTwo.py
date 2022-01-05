@@ -5,7 +5,7 @@ Created on Feb 23, 2017
 '''
 
 c_ Solution(object):
-    ___ isPowerOfTwo(self, n):
+    ___ isPowerOfTwo  n):
         """
         :type n: int
         :rtype: bool
@@ -13,7 +13,7 @@ c_ Solution(object):
         __ n <= 0: r.. F..
         r.. bool(n&(n-1)__0)
     
-    ___ isPowerOfTwoSlow(self, n):
+    ___ isPowerOfTwoSlow  n):
         """
         :type n: int
         :rtype: bool

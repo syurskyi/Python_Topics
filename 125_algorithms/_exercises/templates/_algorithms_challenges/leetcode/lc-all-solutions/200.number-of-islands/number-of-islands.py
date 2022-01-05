@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ numIslands(self, grid):
+  ___ numIslands  grid):
     """
     :type grid: List[List[str]]
     :rtype: int

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ divide(self, a, b):
+    ___ divide  a, b):
         """
         :type a: int
         :type b: int

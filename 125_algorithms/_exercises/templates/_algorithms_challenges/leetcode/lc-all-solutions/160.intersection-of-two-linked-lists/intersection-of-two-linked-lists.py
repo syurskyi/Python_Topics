@@ -1,5 +1,5 @@
 c_ Solution:
-  ___ getIntersectionNode(self, headA, headB):
+  ___ getIntersectionNode  headA, headB):
     __ headA __ N.. o. headB __ N..
       r.. N..
     pa = headA

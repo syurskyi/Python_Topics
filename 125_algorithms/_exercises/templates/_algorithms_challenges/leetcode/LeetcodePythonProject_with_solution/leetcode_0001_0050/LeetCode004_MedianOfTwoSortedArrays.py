@@ -4,7 +4,7 @@ Created on Nov 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findMedianSortedArrays(self, nums1, nums2):
+    ___ findMedianSortedArrays  nums1, nums2):
         """
         :type nums1: List[int]
         :type nums2: List[int]
@@ -27,7 +27,7 @@ c_ Solution(object):
                 ____ j __ 0:
                     max_of_left = nums1[i-1]
                 ____:
-                    max_of_left = max(nums1[i-1], nums2[j-1])
+                    max_of_left = m..(nums1[i-1], nums2[j-1])
                 __ (m+n)%2 __ 1:
                     r.. max_of_left
                 __ i __ m:

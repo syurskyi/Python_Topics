@@ -4,7 +4,7 @@ Created on Mar 24, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ dominantIndex(self, nums):
+    ___ dominantIndex  nums):
         """
         :type nums: List[int]
         :rtype: int

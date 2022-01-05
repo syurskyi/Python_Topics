@@ -4,7 +4,7 @@ results    # list
 ___ get_cipher(words, shifter):
     cipher_word = ""
     ___ i __ words:
-        cipher_char = ord(i)
+        cipher_char = o..(i)
         __(cipher_char < 65):
             cipher_word += chr(cipher_char)
             _____

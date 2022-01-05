@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isSelfCrossing(self, x):
+  ___ isSelfCrossing  x):
     """
     :type x: List[int]
     :rtype: bool

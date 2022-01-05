@@ -9,7 +9,7 @@ n is a non-negative integer and fits within the range of a 32-bit signed integer
 
 
 c_ Solution:
-    ___ arrangeCoins(self, n):
+    ___ arrangeCoins  n):
         """
         Solve a math equation
         (1+r)r/2 <= n

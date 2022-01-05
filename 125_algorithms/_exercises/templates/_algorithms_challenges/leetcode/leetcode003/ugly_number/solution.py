@@ -9,7 +9,7 @@ Note that 1 is typically treated as an ugly number.
 """
 
 c_ Solution(object):
-    ___ isUgly(self, num):
+    ___ isUgly  num):
         """
         :type num: int
         :rtype: bool

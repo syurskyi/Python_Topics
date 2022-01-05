@@ -5,7 +5,7 @@ Created on Feb 18, 2017
 '''
 
 c_ Solution(object):
-    ___ canFinishBFS(self, numCourses, prerequisites):
+    ___ canFinishBFS  numCourses, prerequisites):
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -37,7 +37,7 @@ c_ Solution(object):
         ____:
             r.. F..
     
-    ___ canFinishDFS(self, numCourses, prerequisites):
+    ___ canFinishDFS  numCourses, prerequisites):
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -52,7 +52,7 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ dfs(self, graph, visited, course):
+    ___ dfs  graph, visited, course):
         __ visited[course]:
             r.. F..
         ____:

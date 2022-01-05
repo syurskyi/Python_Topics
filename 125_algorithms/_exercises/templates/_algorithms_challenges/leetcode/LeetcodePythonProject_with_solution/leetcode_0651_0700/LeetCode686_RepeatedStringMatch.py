@@ -4,7 +4,7 @@ Created on Oct 22, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ repeatedStringMatch(self, A, B):
+    ___ repeatedStringMatch  A, B):
         """
         :type A: str
         :type B: str

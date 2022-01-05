@@ -10,7 +10,7 @@ c_ Solution:
             'children': {}
         }
 
-    ___ put(self, parent, s__):
+    ___ put  parent, s__):
         __ n.. s__:
             r..
         ___ char __ s__:
@@ -26,7 +26,7 @@ c_ Solution:
     @param: words: A list of string
     @return: A list of string
     """
-    ___ wordSearchII(self, board, words):
+    ___ wordSearchII  board, words):
         __ n.. words o. l..(words) < 1 \
                 o. n.. board o. l..(board) < 1 \
                 o. l..(board[0]) < 1:
@@ -42,7 +42,7 @@ c_ Solution:
                     find(row, col, root, result)
         r.. result.k..
 
-    ___ find(self, x, y, parent, result):
+    ___ find  x, y, parent, result):
         char = board[x][y]
         __ char n.. __ parent['children']:
             r..

@@ -12,10 +12,10 @@ c_ Board:
         width = l..(board[0])
         height = l..(board)
 
-    ___ valid(self, x, y):
+    ___ valid  x, y):
         r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
 
-    ___ walk(self, x, y,
+    ___ walk  x, y,
              visited_territory=[],
              visited_coords=[],
              visited_stones=[]):
@@ -35,7 +35,7 @@ c_ Board:
 
         r.. (visited_territory, visited_stones)
 
-    ___ territory(self, x, y):
+    ___ territory  x, y):
         __ n.. valid(x, y):
             r.. ValueError('invalid coordinate')
         __ board[y][x] __ STONES:

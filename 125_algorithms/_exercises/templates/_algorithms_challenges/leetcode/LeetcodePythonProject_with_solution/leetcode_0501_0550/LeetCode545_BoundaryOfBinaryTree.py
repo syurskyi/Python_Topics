@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ boundaryOfBinaryTree(self, root):
+    ___ boundaryOfBinaryTree  root):
         """
         :type root: TreeNode
         :rtype: List[int]
@@ -25,7 +25,7 @@ c_ Solution(object):
         rightBoundary = getRight(root)
         r.. leftBoundary + leaves + rightBoundary
     
-    ___ getLeft(self, root):
+    ___ getLeft  root):
         result = [root.val]
         root = root.left
         w.... root:
@@ -37,7 +37,7 @@ c_ Solution(object):
                 root = root.right
         r.. result
     
-    ___ getLeaves(self, root, leaves):
+    ___ getLeaves  root, leaves):
         __ n.. root: r..
         __ n.. root.left a.. n.. root.right:
             leaves.a..(root.val)
@@ -45,7 +45,7 @@ c_ Solution(object):
         getLeaves(root.left, leaves)
         getLeaves(root.right, leaves)
     
-    ___ getRight(self, root):
+    ___ getRight  root):
         result    # list
         root = root.right
         w.... root:

@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 c_ Solution(object):
-    ___ canJump(self, nums):
+    ___ canJump  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -13,7 +13,7 @@ c_ Solution(object):
         furthest = 0
         ___ i, num __ e..(nums):
             __ furthest >= i:
-                furthest = max(furthest, i+num)
+                furthest = m..(furthest, i+num)
             __ furthest >= l..(nums)-1:
                 r.. T..
         r.. F..

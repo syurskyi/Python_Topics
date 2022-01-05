@@ -9,7 +9,7 @@ c_ Solution(object):
   ___ - ):
     lSum = 0
 
-  ___ convertBST(self, root):
+  ___ convertBST  root):
     """
     :type root: TreeNode
     :rtype: TreeNode

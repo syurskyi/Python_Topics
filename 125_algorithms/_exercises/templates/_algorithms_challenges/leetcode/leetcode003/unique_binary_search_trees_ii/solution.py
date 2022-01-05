@@ -7,11 +7,11 @@
 
 c_ Solution:
     # @return a list of tree node
-    ___ generateTrees(self, n):
+    ___ generateTrees  n):
         a = r..(1, n + 1)
         r.. generate_bst(a)
 
-    ___ generate_bst(self, a):
+    ___ generate_bst  a):
         __ n.. a:
             r.. [N..]
         ____:

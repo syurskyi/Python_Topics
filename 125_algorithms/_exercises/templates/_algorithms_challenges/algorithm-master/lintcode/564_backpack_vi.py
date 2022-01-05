@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: An integer
     @return: An integer
     """
-    ___ backPackVI(self, A, target):
+    ___ backPackVI  A, target):
         __ n.. A:
             r.. 0
 

@@ -29,7 +29,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ invertTree_recur(self, root):
+    ___ invertTree_recur  root):
         """
         :type root: TreeNode
         :rtype: TreeNode
@@ -42,7 +42,7 @@ c_ Solution:
         root.left, root.right = root.right, root.left
         r.. root
 
-    ___ invertTree(self, root):
+    ___ invertTree  root):
         """
         iterative solution
         Dual stack algorithm

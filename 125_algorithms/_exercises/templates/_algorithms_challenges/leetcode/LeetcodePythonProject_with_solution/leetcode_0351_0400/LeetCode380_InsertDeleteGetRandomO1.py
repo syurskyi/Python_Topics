@@ -9,7 +9,7 @@ c_ RandomizedSet(object):
         nums    # list
         pos    # dict
     
-    ___ insert(self, val):
+    ___ insert  val):
         __ val n.. __ pos:
             nums.a..(val)
             pos[val] = l..(nums)-1
@@ -17,7 +17,7 @@ c_ RandomizedSet(object):
         ____:
             r.. F..
     
-    ___ remove(self, val):
+    ___ remove  val):
         __ val __ pos:
             ind = pos[val]
             lastVal = nums[-1]

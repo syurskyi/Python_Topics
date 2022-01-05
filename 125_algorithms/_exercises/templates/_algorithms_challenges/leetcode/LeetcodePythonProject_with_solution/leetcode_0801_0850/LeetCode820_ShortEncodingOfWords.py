@@ -4,7 +4,7 @@ Created on May 2, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minimumLengthEncoding(self, words):
+    ___ minimumLengthEncoding  words):
         """
         :type words: List[str]
         :rtype: int

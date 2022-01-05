@@ -43,7 +43,7 @@ ____ c.. _______ defaultdict, d..
 
 
 c_ Solution(object):
-    ___ alienOrder(self, words: List[s..]) __ s..:
+    ___ alienOrder  words: List[s..]) __ s..:
         G = construct_graph(words)
         visited = defaultdict(i..)  # 0 not visited, 1 visiting, 2 visted
         ret = d..()
@@ -54,7 +54,7 @@ c_ Solution(object):
 
         r.. "".j..(ret)
 
-    ___ construct_graph(self, words):
+    ___ construct_graph  words):
         G = defaultdict(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # error
@@ -69,7 +69,7 @@ c_ Solution(object):
 
         r.. G
 
-    ___ topo_dfs(self, G, u, visited, ret):
+    ___ topo_dfs  G, u, visited, ret):
         """
         Topological sort
         G = defaultdict(list)

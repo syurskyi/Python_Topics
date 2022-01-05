@@ -5,7 +5,7 @@ Created on Feb 18, 2017
 '''
 
 c_ Solution(object):
-    ___ countPrimes(self, n):
+    ___ countPrimes  n):
         """
         :type n: int
         :rtype: int
@@ -21,7 +21,7 @@ c_ Solution(object):
                     j += 1
         r.. count
     
-    ___ countPrimesSqrt(self, n):
+    ___ countPrimesSqrt  n):
         """
         :type n: int
         :rtype: int

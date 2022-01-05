@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         """
         :type s: str
         :rtype: str
@@ -24,7 +24,7 @@ c_ Solution:
 
         r.. s[start:start + size]
 
-    ___ check_palindrome(self, s, left, right):
+    ___ check_palindrome  s, left, right):
         n = l..(s)
 
         w.... left >= 0 a.. right < n a.. s[left] __ s[right]:

@@ -15,7 +15,7 @@ c_ Solution:
     ___ - ):
         sums    # list
 
-    ___ checkEqualTree(self, root: TreeNode) __ bool:
+    ___ checkEqualTree  root: TreeNode) __ bool:
         """
         To save 2nd pass, store sums
         space: O(N)
@@ -24,7 +24,7 @@ c_ Solution:
         total = sums.pop()
         r.. total % 2 __ 0 a.. total // 2 __ sums
 
-    ___ dfs(self, node):
+    ___ dfs  node):
         __ n.. node:
             r.. 0
 
@@ -44,7 +44,7 @@ c_ Solution:
         root = N..  # need to handle 0
         total_sum = N..
 
-    ___ checkEqualTree(self, root: TreeNode) __ bool:
+    ___ checkEqualTree  root: TreeNode) __ bool:
         """
         two passes
         1st pass, get total sum
@@ -59,7 +59,7 @@ c_ Solution:
         dfs(root)
         r.. exists
 
-    ___ dfs(self, node):
+    ___ dfs  node):
         __ n.. node:
             r.. 0
 

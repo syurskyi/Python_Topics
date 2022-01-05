@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ checkEqualTree(self, root):
+  ___ checkEqualTree  root):
     ___ s..(node):
       __ n.. node:
         r.. 0

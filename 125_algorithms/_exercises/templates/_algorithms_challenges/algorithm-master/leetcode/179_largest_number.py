@@ -9,7 +9,7 @@ c_ LgSort(s..):
 
 
 c_ Solution:
-    ___ largestNumber(self, A):
+    ___ largestNumber  A):
         """
         :type A: List[int]
         :rtype: str

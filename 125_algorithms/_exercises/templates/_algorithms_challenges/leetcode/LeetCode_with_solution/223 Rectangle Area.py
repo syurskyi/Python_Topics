@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ computeArea(self, A, B, C, D, E, F, G, H):
+    ___ computeArea  A, B, C, D, E, F, G, H):
         """
         Follow the graph
         The input need to be strictly following the order of the bottom left corner and top right corner
@@ -19,8 +19,8 @@ c_ Solution:
         S_A = (C-A)*(D-B)
         S_B = (G-E)*(H-F)
 
-        l = max(0, m..(C, G)-max(A, E))
-        h = max(0, m..(D, H)-max(B, F))
+        l = m..(0, m..(C, G)-m..(A, E))
+        h = m..(0, m..(D, H)-m..(B, F))
         r.. S_A + S_B - l*h
 
 

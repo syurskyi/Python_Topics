@@ -16,7 +16,7 @@ class Interval(object):
 
 
 c_ Solution:
-    ___ insert(self, intvs, intv):
+    ___ insert  intvs, intv):
         """
         :type intvs: list[Interval]
         :type intv: Interval
@@ -43,7 +43,7 @@ c_ Solution:
 
         ___ i __ r..(l..(intvs)):  # since there is one more child in intvs
             __ ans a.. intvs[i].start <= ans[-1].end:
-                ans[-1].end = max(ans[-1].end, intvs[i].end)
+                ans[-1].end = m..(ans[-1].end, intvs[i].end)
             ____:
                 ans.a..(intvs[i])
 

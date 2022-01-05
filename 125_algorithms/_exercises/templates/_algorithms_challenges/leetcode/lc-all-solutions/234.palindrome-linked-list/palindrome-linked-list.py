@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ isPalindrome(self, head):
+  ___ isPalindrome  head):
     """
     :type head: ListNode
     :rtype: bool

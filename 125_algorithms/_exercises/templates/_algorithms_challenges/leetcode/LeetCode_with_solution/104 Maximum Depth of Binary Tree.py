@@ -16,16 +16,16 @@ c_ TreeNode(object):
 c_ Solution(object):
     # @param root, a tree node
     # @return an integer
-    ___ maxDepth(self, root):
+    ___ maxDepth  root):
         """
         :param root: TreeNode
         :return: integer
         """
         r.. fathom(root, 0)
 
-    ___ fathom(self, root, depth):
+    ___ fathom  root, depth):
         """
         DFS
         """
         __ n.. root: r.. depth
-        ____: r.. max(fathom(root.left, depth+1), fathom(root.right, depth+1))
+        ____: r.. m..(fathom(root.left, depth+1), fathom(root.right, depth+1))

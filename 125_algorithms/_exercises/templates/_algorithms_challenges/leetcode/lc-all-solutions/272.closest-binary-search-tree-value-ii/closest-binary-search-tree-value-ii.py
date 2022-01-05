@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ closestKValues(self, root, target, k):
+  ___ closestKValues  root, target, k):
     """
     :type root: TreeNode
     :type target: float

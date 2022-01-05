@@ -45,10 +45,10 @@ ___ intersection(*args: Iterable) __ Set[Any]:
     # Then I use intersection method which takes an arbitrary number of sets
     # as input.
     # {0,1,2,3} intersection {0,1,2,3}, {3,4,5,6}, {2,3,5,6}
-    try:
+    ___
         first = l[0]
         r..(first.intersection(*l))
-    except IndexError __ e:
+    ______ IndexError __ e:
         print(e)
         r..(set())
 

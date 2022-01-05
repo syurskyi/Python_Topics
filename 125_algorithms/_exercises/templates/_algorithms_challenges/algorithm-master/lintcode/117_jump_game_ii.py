@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: An integer
     """
-    ___ jump(self, A):
+    ___ jump  A):
         __ n.. A:
             r.. -1
 
@@ -33,7 +33,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: An integer
     """
-    ___ jump(self, A):
+    ___ jump  A):
         __ n.. A:
             r.. -1
 

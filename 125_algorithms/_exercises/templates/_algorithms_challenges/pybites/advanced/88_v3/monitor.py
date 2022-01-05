@@ -19,7 +19,7 @@ ___ get_today
 @contextmanager
 ___ timeit() __ N..
     start = time()
-    try:
+    ___
         y..
     finally:
         elapsed = time() - start

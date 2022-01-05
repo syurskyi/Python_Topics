@@ -47,7 +47,7 @@ ___ get_stock_symbol_with_highest_cap
     ___ stock __ data:
         cap = _cap_str_to_mln_float(stock["cap"])
         highest_cap[stock["symbol"]] = cap
-    r.. max(highest_cap, key=highest_cap.get)
+    r.. m..(highest_cap, key=highest_cap.get)
 
 
 ___ get_sectors_with_max_and_min_stocks

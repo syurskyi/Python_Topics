@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ addBoldTag(self, s, d..):
+  ___ addBoldTag  s, d..):
     """
     :type s: str
     :type dict: List[str]
@@ -29,11 +29,11 @@ c_ Solution(object):
         i += 1
     r.. "".j..(ans)
 
-  ___ merge(self, intervals):
+  ___ merge  intervals):
     ans    # list
     ___ intv __ s..(intervals, key=l.... x: x[0]):
       __ ans a.. ans[-1][1] + 1 >= intv[0]:
-        ans[-1][1] = max(ans[-1][1], intv[1])
+        ans[-1][1] = m..(ans[-1][1], intv[1])
       ____:
         ans += intv,
     r.. ans

@@ -34,7 +34,7 @@ c_ Enchantment:
     ___ __str__
         r.. f"{name} ({max_level}): {description}"
 
-    ___ __lt__(self, other):
+    ___ __lt__  other):
         r.. id_name < other.id_name
 
 

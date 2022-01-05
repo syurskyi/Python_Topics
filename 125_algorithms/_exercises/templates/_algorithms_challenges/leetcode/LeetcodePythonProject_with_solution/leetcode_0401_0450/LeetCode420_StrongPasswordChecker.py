@@ -4,7 +4,7 @@ Created on Apr 12, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ strongPasswordChecker(self, s):
+    ___ strongPasswordChecker  s):
         """
         :type s: str
         :rtype: int

@@ -20,7 +20,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ getPermutation(self, n, k):
+    ___ getPermutation  n, k):
         k -= 1
 
         array = r..(1, n+1)
@@ -32,7 +32,7 @@ c_ Solution(object):
 
         r.. "".j..(map(s.., ret))
 
-    ___ getPermutation(self, n, k):
+    ___ getPermutation  n, k):
         """
         Reverse Cantor Expansion
 
@@ -72,7 +72,7 @@ c_ Solution(object):
 
         r.. "".j..(map(s.., a))
 
-    ___ getPermutation_complicated(self, n, k):
+    ___ getPermutation_complicated  n, k):
         """
         Mathematics
         Reversed Cantor Expansion
@@ -123,7 +123,7 @@ c_ Solution_TLE:
     ___ - ):
         counter = 0
 
-    ___ getPermutation(self, n, k):
+    ___ getPermutation  n, k):
         """
         dfs, iterate all possibilities
         :param n: integer
@@ -138,7 +138,7 @@ c_ Solution_TLE:
         r.. "".j..(s..(element) ___ element __ result)
 
 
-    ___ get_kth_permutation_dfs(self, remaining_seq, k, cur):
+    ___ get_kth_permutation_dfs  remaining_seq, k, cur):
         """
         dfs until find kth permutation, return that permutation, otherwise return None
         :param remaining_seq:

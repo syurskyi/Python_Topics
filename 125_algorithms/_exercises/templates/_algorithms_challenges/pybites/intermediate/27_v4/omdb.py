@@ -26,7 +26,7 @@ ___ _get_wins_noms(awards: s..) __ i..:
 
 ___ get_movie_most_nominations(movies: l..) __ s..:
     """Return the movie that had the most nominations"""
-    r.. max(movies, key=l.... x: _get_wins_noms(x['Awards']))['Title']
+    r.. m..(movies, key=l.... x: _get_wins_noms(x['Awards']))['Title']
 
 
 ___ _get_runtime(runtime: s..) __ i..:
@@ -36,4 +36,4 @@ ___ _get_runtime(runtime: s..) __ i..:
 
 ___ get_movie_longest_runtime(movies: l..) __ s..:
     """Return the movie that has the longest runtime"""
-    r.. max(movies, key=l.... x: _get_runtime(x['Runtime']))['Title']
+    r.. m..(movies, key=l.... x: _get_runtime(x['Runtime']))['Title']

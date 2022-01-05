@@ -41,11 +41,11 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ findTarget(self, root: TreeNode, k: i..) __ bool:
+    ___ findTarget  root: TreeNode, k: i..) __ bool:
         root = root
         r.. walk(root, k)
 
-    ___ walk(self, node, k):
+    ___ walk  node, k):
         __ n.. node:
             r.. F..
 
@@ -58,7 +58,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ find(self, node, target, existing):
+    ___ find  node, target, existing):
         __ n.. node:
             r.. F..
 

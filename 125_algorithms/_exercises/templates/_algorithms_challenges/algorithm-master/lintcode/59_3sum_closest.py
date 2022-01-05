@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ threeSumClosest(self, nums, target):
+    ___ threeSumClosest  nums, target):
         """
         :type nums: List[int]
         :type target: int

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ generate(self, numRows):
+  ___ generate  numRows):
     """
     :type numRows: int
     :rtype: List[List[int]]

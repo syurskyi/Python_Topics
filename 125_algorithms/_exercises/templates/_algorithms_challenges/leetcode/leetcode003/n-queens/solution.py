@@ -1,13 +1,13 @@
 c_ Solution:
     # @return a list of lists of string
-    ___ solveNQueens(self, n):
+    ___ solveNQueens  n):
         n = n
         res    # list
         columns = [-1 ___ i __ r..(n)]
         solve(columns, 0, res)
         r.. res
 
-    ___ make_string_list(self, columns):
+    ___ make_string_list  columns):
         sol    # list  # One solution (list of strings)
         row = ['.' ___ i __ columns]
         ___ c __ columns:
@@ -16,7 +16,7 @@ c_ Solution:
             sol.a..(''.j..(new_row))
         r.. sol
 
-    ___ is_valid(self, columns, row, col):
+    ___ is_valid  columns, row, col):
         ___ r __ r..(row):
             c = columns[r]
             __ c __ col:
@@ -25,7 +25,7 @@ c_ Solution:
                 r.. F..
         r.. T..
 
-    ___ solve(self, columns, row, res):
+    ___ solve  columns, row, res):
         __ row __ n:
             res.a..(make_string_list(columns))
         ____:

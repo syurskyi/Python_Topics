@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ sumNumbers(self, root):
+    ___ sumNumbers  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -23,7 +23,7 @@ c_ Solution(object):
         resNum = s..([i..(val) ___ val __ res])
         r.. resNum
         
-    ___ helper(self, root, curr, res):
+    ___ helper  root, curr, res):
         __ n.. root.left a.. n.. root.right:
             res.a..(curr)
         __ root.left:

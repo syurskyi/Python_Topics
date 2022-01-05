@@ -1,13 +1,13 @@
 c_ Solution:
     # @param an integer
     # @return a list of string
-    ___ generateParenthesis(self, n):
+    ___ generateParenthesis  n):
         res    # list
         cand = ''
         gp(n, n, cand, res)
         r.. res
 
-    ___ gp(self, left, right, cand, res):
+    ___ gp  left, right, cand, res):
         __ left > right o. left < 0:
             r..
         ____ left __ 0 a.. right __ 0:

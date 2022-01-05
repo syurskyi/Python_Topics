@@ -5,7 +5,7 @@ Created on Jan 22, 2017
 '''
 
 c_ Solution(object):
-    ___ simplifyPath(self, path):
+    ___ simplifyPath  path):
         """
         :type path: str
         :rtype: str

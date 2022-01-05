@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ longestSubstring(self, s, k):
+  ___ longestSubstring  s, k):
     """
     :type s: str
     :type k: int
@@ -7,5 +7,5 @@ c_ Solution(object):
     """
     ___ c __ set(s):
       __ s.c.. c) < k:
-        r.. max([longestSubstring(t, k) ___ t __ s.s..(c)])
+        r.. m..([longestSubstring(t, k) ___ t __ s.s..(c)])
     r.. l..(s)

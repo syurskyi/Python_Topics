@@ -4,7 +4,7 @@ Created on Apr 9, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ letterCasePermutation(self, S):
+    ___ letterCasePermutation  S):
         """
         :type S: str
         :rtype: List[str]
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(s, 0, '', res)
         r.. l..(res)
     
-    ___ helper(self, s, i, curr, res):
+    ___ helper  s, i, curr, res):
         __ i __ l..(s):
             res.add(curr)
             r..

@@ -46,11 +46,11 @@ c_ Solution:
     ___ - ):
         ret = 0
 
-    ___ longestUnivaluePath(self, root: TreeNode) __ i..:
+    ___ longestUnivaluePath  root: TreeNode) __ i..:
         find(root)
         r.. ret
 
-    ___ find(self, node):
+    ___ find  node):
         """
         the longest path ended at node
         """
@@ -61,19 +61,19 @@ c_ Solution:
         right = find(node.right)
         left_path = left + 1 __ node.left a.. node.left.val __ node.val ____ 0
         right_path = right + 1 __ node.right a.. node.right.val __ node.val ____ 0
-        ret = max(ret, left_path + right_path)
-        r.. max(left_path, right_path)
+        ret = m..(ret, left_path + right_path)
+        r.. m..(left_path, right_path)
 
 
 c_ Solution_error:
     ___ - ):
         ret = 0
 
-    ___ longestUnivaluePath(self, root: TreeNode) __ i..:
+    ___ longestUnivaluePath  root: TreeNode) __ i..:
         find(root)
         r.. ret
 
-    ___ find(self, node):
+    ___ find  node):
         """
         the longest path ended at node
         """
@@ -93,5 +93,5 @@ c_ Solution_error:
             __ right > left:
                 cur = right + 1
 
-        ret = max(ret, path - 1)
+        ret = m..(ret, path - 1)
         r.. cur

@@ -2,7 +2,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution(object):
-  ___ findAnagrams(self, s, p):
+  ___ findAnagrams  s, p):
     """
     :type s: str
     :type p: str

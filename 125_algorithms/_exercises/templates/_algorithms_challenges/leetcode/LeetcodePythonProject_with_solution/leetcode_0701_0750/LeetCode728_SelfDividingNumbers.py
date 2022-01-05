@@ -4,7 +4,7 @@ Created on Mar 4, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ selfDividingNumbers(self, left, right):
+    ___ selfDividingNumbers  left, right):
         """
         :type left: int
         :type right: int
@@ -16,7 +16,7 @@ c_ Solution(object):
                 res.a..(num)
         r.. res
         
-    ___ isSelfDividing(self, num):
+    ___ isSelfDividing  num):
         ___ digit __ s..(num):
             d = i..(digit)
             __ d __ 0 o. num%d != 0:

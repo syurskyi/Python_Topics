@@ -5,7 +5,7 @@ Created on Feb 27, 2017
 '''
 
 c_ Solution(object):
-    ___ isAnagram(self, s, t):
+    ___ isAnagram  s, t):
         """
         :type s: str
         :type t: str

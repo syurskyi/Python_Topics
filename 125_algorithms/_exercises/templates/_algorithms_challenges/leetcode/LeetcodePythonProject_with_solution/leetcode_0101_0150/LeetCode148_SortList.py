@@ -11,14 +11,14 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ sortList(self, head):
+    ___ sortList  head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
         r.. helper(head)
     
-    ___ helper(self, node):
+    ___ helper  node):
         __ n.. node o. n.. node.next:
             r.. node
         prev = ListNode(-1)
@@ -38,7 +38,7 @@ c_ Solution(object):
         result = merge(result1, result2)
         r.. result
     
-    ___ merge(self, node1, node2):
+    ___ merge  node1, node2):
         __ n.. node1:
             r.. node2
         __ n.. node2:

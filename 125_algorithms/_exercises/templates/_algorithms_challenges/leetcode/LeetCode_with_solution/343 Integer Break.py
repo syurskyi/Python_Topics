@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ integerBreak(self, n):
+    ___ integerBreak  n):
         """
         First visualize the breakdown process into a search tree. The search tree dynamic programming
         Dynamic programming
@@ -29,8 +29,8 @@ c_ Solution(object):
         F = [N.. ___ _ __ xrange(n+1)]
         F[1] = 1
         ___ i __ xrange(2, n+1):
-            F[i] = max(
-                max(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j))
+            F[i] = m..(
+                m..(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j))
                 ___ j __ xrange(1, i/2)
             )
 

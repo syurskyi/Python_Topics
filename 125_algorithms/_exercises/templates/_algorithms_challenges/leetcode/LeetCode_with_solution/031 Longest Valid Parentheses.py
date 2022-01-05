@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ longestValidParentheses(self, s):
+    ___ longestValidParentheses  s):
         """
         Stack holds the index of unpaired brackets
 
@@ -31,9 +31,9 @@ c_ Solution(object):
             __ val __ ")" a.. stk a.. s[stk[-1]] __ "(":
                 stk.pop()
                 __ n.. stk:
-                    maxa = max(maxa, idx+1)
+                    maxa = m..(maxa, idx+1)
                 ____:
-                    maxa = max(maxa, idx-stk[-1])
+                    maxa = m..(maxa, idx-stk[-1])
             ____:
                 stk.a..(idx)
 

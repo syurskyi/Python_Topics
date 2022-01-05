@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ Solution(object):
-  ___ kthSmallest(self, matrix, k):
+  ___ kthSmallest  matrix, k):
     """
     :type matrix: List[List[int]]
     :type k: int

@@ -28,7 +28,7 @@ c_ SegmentTree(object):
     ___ - , n):
         root = build(0, n)
 
-    ___ build(self, start, end):
+    ___ build  start, end):
         __ start >= end: r..
         __ start __ end-1: r.. TreeNode(start, end)
         node = TreeNode(start, end)
@@ -36,7 +36,7 @@ c_ SegmentTree(object):
         node.right = build((start+end)/2, end)
         r.. node
 
-    ___ inc(self, idx, val):
+    ___ inc  idx, val):
         cur = root
         w.... cur:
             cur.cnt += val
@@ -48,7 +48,7 @@ c_ SegmentTree(object):
             ____:
                 r..
 
-    ___ query_less(self, cur, idx):
+    ___ query_less  cur, idx):
         __ n.. cur:
             r.. 0
 
@@ -62,7 +62,7 @@ c_ SegmentTree(object):
 
 
 c_ Solution(object):
-    ___ countSmaller(self, nums):
+    ___ countSmaller  nums):
         """
         Brute force: O(n^2)
         Segment Tree

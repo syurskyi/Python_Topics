@@ -9,7 +9,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ hasPathSum(self, root, target):
+    ___ hasPathSum  root, target):
         """
         :type root: TreeNode
         :type target: int

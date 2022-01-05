@@ -42,7 +42,7 @@ ____ c.. _______ OrderedDict
 
 
 c_ Solution:
-    ___ recoverFromPreorder(self, S: s..) __ TreeNode:
+    ___ recoverFromPreorder  S: s..) __ TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)
@@ -89,7 +89,7 @@ c_ Solution:
 
         r.. root
 
-    ___ recoverFromPreorder_error(self, S: s..) __ TreeNode:
+    ___ recoverFromPreorder_error  S: s..) __ TreeNode:
         """
         map: node -> depth
         stack of pi (incompleted)

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ numberOfPatterns(self, m, n):
+  ___ numberOfPatterns  m, n):
     """
     :type m: int
     :type n: int

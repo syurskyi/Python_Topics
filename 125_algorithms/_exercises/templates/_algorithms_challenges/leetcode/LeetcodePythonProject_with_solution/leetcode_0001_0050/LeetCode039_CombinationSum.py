@@ -4,7 +4,7 @@ Created on Jun 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ combinationSum(self, candidates, target):
+    ___ combinationSum  candidates, target):
         """
         :type candidates: List[int]
         :type target: int
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(candidates, 0, [], target, res)
         r.. res
     
-    ___ helper(self, nums, ind, curr, target, res):
+    ___ helper  nums, ind, curr, target, res):
         __ target __ 0:
             res.a..(l..(curr))
             r..

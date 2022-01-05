@@ -64,7 +64,7 @@ c_ TicTacToe(object):
         diag_count = 0
         diag_inv_count = 0
 
-    ___ move(self, row, col, player):
+    ___ move  row, col, player):
         """
         Since guarantee the move is valid, only store row, col, diagonal.
         1: -1

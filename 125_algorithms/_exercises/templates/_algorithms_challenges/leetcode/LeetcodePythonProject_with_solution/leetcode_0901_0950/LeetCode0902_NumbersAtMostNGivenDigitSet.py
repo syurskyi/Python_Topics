@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ atMostNGivenDigitSet(self, D, N):
+    ___ atMostNGivenDigitSet  D, N):
         """
         :type D: List[str]
         :type N: int

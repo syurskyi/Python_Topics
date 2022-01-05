@@ -4,7 +4,7 @@ Created on May 14, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ strobogrammaticInRange(self, low, high):
+    ___ strobogrammaticInRange  low, high):
         """
         :type low: str
         :type high: str
@@ -16,7 +16,7 @@ c_ Solution(object):
             helper(low, high, 0, length-1, ['']*length, res)
         r.. res[0]
     
-    ___ helper(self, low, high, l, r, curr, res):
+    ___ helper  low, high, l, r, curr, res):
         __ l > r:
             __ i..(low) <= i..(''.j..(curr)) <= i..(high):
                 res[0] += 1

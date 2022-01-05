@@ -1,7 +1,7 @@
 c_ Solution:
   # @param n, an integer
   # @return an integer
-  ___ reverseBits(self, n):
+  ___ reverseBits  n):
     ans = 0
     mask = 1
     ___ _ __ r..(32):

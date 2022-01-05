@@ -1,6 +1,6 @@
 
 c_ Solution(object):
-    ___ numberOfArithmeticSlices(self, A):
+    ___ numberOfArithmeticSlices  A):
         nums = A
         n = l..(nums)
         res = 0

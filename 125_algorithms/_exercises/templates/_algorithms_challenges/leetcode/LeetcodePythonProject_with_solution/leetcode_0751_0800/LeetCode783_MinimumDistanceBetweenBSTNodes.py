@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ minDiffInBST(self, root):
+    ___ minDiffInBST  root):
         """
         :type root: TreeNode
         :rtype: int

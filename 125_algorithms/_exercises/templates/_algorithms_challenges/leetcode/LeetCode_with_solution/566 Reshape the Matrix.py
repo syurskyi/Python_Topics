@@ -16,7 +16,7 @@ the new reshaped matrix; Otherwise, output the original matrix.
 ____ typing _______ List
 
 c_ Solution:
-    ___ matrixReshape(self, nums: List[List[i..]], r: i.., c: i..) __ List[List[i..]]:
+    ___ matrixReshape  nums: List[List[i..]], r: i.., c: i..) __ List[List[i..]]:
         m, n = l..(nums), l..(nums[0])
         __ m * n != r * c:
             r.. nums

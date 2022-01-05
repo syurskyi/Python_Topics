@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ findMaxAverage(self, nums, k):
+  ___ findMaxAverage  nums, k):
     """
     :type nums: List[int]
     :type k: int
@@ -17,5 +17,5 @@ c_ Solution(object):
       __ l..(queue) > k:
         s -= queue.popleft()
       __ l..(queue) __ k:
-        ans = max(ans, float(s) / k)
+        ans = m..(ans, float(s) / k)
     r.. ans

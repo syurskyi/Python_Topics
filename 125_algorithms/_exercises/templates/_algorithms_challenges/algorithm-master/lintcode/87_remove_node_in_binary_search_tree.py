@@ -17,7 +17,7 @@ c_ Solution:
     @param: target: Remove the node with given value.
     @return: The root of the binary search tree after removal.
     """
-    ___ removeNode(self, root, target):
+    ___ removeNode  root, target):
         __ n.. root:
             r.. root
 
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. root
 
-    ___ find_min(self, node):
+    ___ find_min  node):
         __ n.. node:
             r.. node
         w.... node.left:

@@ -16,7 +16,7 @@ c_ ListNode(object):
 
 
 c_ Solution(object):
-    ___ reverseList(self, head):
+    ___ reverseList  head):
         """
         :type head: ListNode
         :rtype: ListNode

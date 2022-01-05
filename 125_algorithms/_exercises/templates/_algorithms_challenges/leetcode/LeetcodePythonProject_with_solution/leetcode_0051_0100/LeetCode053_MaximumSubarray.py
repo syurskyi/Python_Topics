@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 c_ Solution(object):
-    ___ maxSubArray(self, nums):
+    ___ maxSubArray  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -15,11 +15,11 @@ c_ Solution(object):
         dp[0] = nums[0]
         maxVal = dp[0]
         ___ i __ r..(1, n):
-            dp[i] = max(nums[i], dp[i-1]+nums[i])
-            maxVal = max(maxVal, dp[i])
+            dp[i] = m..(nums[i], dp[i-1]+nums[i])
+            maxVal = m..(maxVal, dp[i])
         r.. maxVal
     
-    ___ maxSubArrayDAC(self, nums):
+    ___ maxSubArrayDAC  nums):
         """
         :type nums: List[int]
         :rtype: int

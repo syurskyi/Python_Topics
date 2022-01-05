@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ insertionSortList(self, head):
+  ___ insertionSortList  head):
     p = dummy = ListNode(0)
     cur = dummy.next = head
     w.... cur a.. cur.next:

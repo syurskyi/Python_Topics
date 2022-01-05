@@ -5,7 +5,7 @@ Created on Apr 26, 2017
 '''
 
 c_ Solution(object):
-    ___ makesquare(self, nums):
+    ___ makesquare  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -18,7 +18,7 @@ c_ Solution(object):
         nums.s..(r.._T..
         r.. helper(nums, [0]*4, 0, target)
     
-    ___ helper(self, nums, sums, ind, target):
+    ___ helper  nums, sums, ind, target):
         __ ind __ l..(nums):
             __ sums[0] __ target a.. sums[1] __ target a..\
                 sums[2] __ target a.. sums[3] __ target:

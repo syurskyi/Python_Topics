@@ -4,7 +4,7 @@ Created on Mar 5, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ numberToWords_own(self, num):
+    ___ numberToWords_own  num):
         """
         :type num: int
         :rtype: str
@@ -12,7 +12,7 @@ c_ Solution(object):
         res = helper(num)
         r.. res __ res ____ 'Zero'
     
-    ___ helper(self, num):
+    ___ helper  num):
         res = ''
         __ num __ 0:
             r.. res
@@ -49,7 +49,7 @@ c_ Solution(object):
             res += ' ' + helper(remaining)
         r.. res.s..
     
-    ___ numberToWords(self, num):
+    ___ numberToWords  num):
         token20 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
             'Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.s.. 
         tens = 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.s.. 

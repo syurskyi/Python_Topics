@@ -24,7 +24,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ sortedSquares(self, A: List[i..]) __ List[i..]:
+    ___ sortedSquares  A: List[i..]) __ List[i..]:
         """
         started from two ends
         """

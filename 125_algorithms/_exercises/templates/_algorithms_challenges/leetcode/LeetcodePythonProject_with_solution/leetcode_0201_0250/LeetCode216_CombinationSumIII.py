@@ -5,7 +5,7 @@ Created on Feb 20, 2017
 '''
 
 c_ Solution(object):
-    ___ combinationSum3(self, k, n):
+    ___ combinationSum3  k, n):
         """
         :type k: int
         :type n: int
@@ -16,7 +16,7 @@ c_ Solution(object):
         helper(elem, 1, k, n, result)
         r.. result
     
-    ___ helper(self, elem, start, k, n, result):
+    ___ helper  elem, start, k, n, result):
         __ l..(elem) __ k a.. n __ 0:
             result.a..(l..(elem))
             r..

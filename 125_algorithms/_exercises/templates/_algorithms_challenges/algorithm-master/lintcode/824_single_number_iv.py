@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ getSingleNumber(self, nums):
+    ___ getSingleNumber  nums):
         """
         :type nums: list[int]
         :rtype: int

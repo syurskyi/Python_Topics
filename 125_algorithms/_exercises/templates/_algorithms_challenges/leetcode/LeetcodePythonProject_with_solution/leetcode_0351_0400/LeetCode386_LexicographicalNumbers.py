@@ -5,7 +5,7 @@ Created on Apr 2, 2017
 '''
 
 c_ Solution(object):
-    ___ lexicalOrder(self, n):
+    ___ lexicalOrder  n):
         res    # list
         curr = 1
         ___ _ __ r..(n):

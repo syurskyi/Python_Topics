@@ -7,7 +7,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ multiply(self, num1, num2):
+    ___ multiply  num1, num2):
         """
         Google Phone Interview Question, 20 Sep 2013
         Steps:
@@ -48,7 +48,7 @@ c_ Solution(object):
             r.. "0"
         r.. result
 
-    ___ multiply_1_digit(self, digit, num):
+    ___ multiply_1_digit  digit, num):
         """
         :param digit: String
         :param num: String
@@ -68,7 +68,7 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ add_list(self, lst):
+    ___ add_list  lst):
         """
         add lst of string
         :param lst:
@@ -82,7 +82,7 @@ c_ Solution(object):
             sig += 1
         r.. ret
 
-    ___ add(self, num1, num2):
+    ___ add  num1, num2):
         """
         :param num1: list of digits in reverse order
         :param num2: list of digits in reverse order
@@ -95,9 +95,9 @@ c_ Solution(object):
         ret    # list
         carry = 0
         ___ idx __ xrange(l..(num2)):  # longer one
-            try:
+            ___
                 sm = num1[idx] + num2[idx] + carry
-            except IndexError:
+            ______ IndexError:
                 sm = num2[idx] + carry
 
             carry = sm/10

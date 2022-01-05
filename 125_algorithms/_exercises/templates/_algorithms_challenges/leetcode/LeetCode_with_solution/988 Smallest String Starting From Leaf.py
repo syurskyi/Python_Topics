@@ -46,7 +46,7 @@ c_ Solution:
     ___ - ):
         mn: Tuple[i..] = N..
 
-    ___ smallestFromLeaf(self, root: TreeNode) __ s..:
+    ___ smallestFromLeaf  root: TreeNode) __ s..:
         """
         dfs
         """
@@ -54,11 +54,11 @@ c_ Solution:
         __ n.. mn:
             r.. ""
         r.. "".j..(
-            chr(e + ord("a"))
+            chr(e + o..("a"))
             ___ e __ mn
         )
 
-    ___ dfs(self, node, cur_deque):
+    ___ dfs  node, cur_deque):
         __ n.. node:
             r..
 

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ groupStrings(self, strings):
+  ___ groupStrings  strings):
     """
     :type strings: List[str]
     :rtype: List[List[str]]
@@ -12,10 +12,10 @@ c_ Solution(object):
         single.a..(s)
         _____
       hashcodeArray    # list
-      pre = ord(s[0]) - ord("a")
+      pre = o..(s[0]) - o..("a")
       ___ i __ r..(1, l..(s)):
-        hashcodeArray.a..(s..(((ord(s[i]) - ord("a")) - pre) % 26))
-        pre = ord(s[i]) - ord("a")
+        hashcodeArray.a..(s..(((o..(s[i]) - o..("a")) - pre) % 26))
+        pre = o..(s[i]) - o..("a")
       hashcode = ",".j..(hashcodeArray)
       __ hashcode n.. __ d:
         d[hashcode] = [s]

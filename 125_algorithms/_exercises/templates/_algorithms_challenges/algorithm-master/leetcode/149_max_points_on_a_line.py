@@ -6,7 +6,7 @@
 
 
 c_ Solution:
-    ___ maxPoints(self, P):
+    ___ maxPoints  P):
         """
         :type P: List[Point]
         :rtype: int
@@ -45,7 +45,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ get_gcd(self, a, b):
+    ___ get_gcd  a, b):
         __ b __ 0:
             r.. a
         r.. get_gcd(b, a % b)

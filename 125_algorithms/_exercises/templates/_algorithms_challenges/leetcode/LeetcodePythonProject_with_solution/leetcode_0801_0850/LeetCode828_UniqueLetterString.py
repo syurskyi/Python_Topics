@@ -4,7 +4,7 @@ Created on May 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ uniqueLetterString(self, S):
+    ___ uniqueLetterString  S):
         """
         :type S: str
         :rtype: int

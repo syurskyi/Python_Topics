@@ -8,7 +8,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ canPartition(self, nums):
+    ___ canPartition  nums):
         """
         0/1 Knapsack problem
 
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. any(d[i][target] > 0 ___ i __ r..(l..(nums)))
 
-    ___ canPartition_TLE(self, nums):
+    ___ canPartition_TLE  nums):
         """
         subset rather than sub array
         positive number only
@@ -58,7 +58,7 @@ c_ Solution:
         target = s // 2
         r.. dfs(nums, 0, target)
 
-    ___ dfs(self, nums, idx, target):
+    ___ dfs  nums, idx, target):
         """Find a subset that sum to target"""
         __ n.. idx < l..(nums):
             r.. F..

@@ -28,7 +28,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ averageOfLevels(self, root: TreeNode) __ List[float]:
+    ___ averageOfLevels  root: TreeNode) __ List[float]:
         """
         BFS
         """

@@ -2,7 +2,7 @@ _______ bisect
 
 
 c_ Solution(object):
-  ___ findClosestElements(self, arr, k, x):
+  ___ findClosestElements  arr, k, x):
     """
     :type arr: List[int]
     :type k: int

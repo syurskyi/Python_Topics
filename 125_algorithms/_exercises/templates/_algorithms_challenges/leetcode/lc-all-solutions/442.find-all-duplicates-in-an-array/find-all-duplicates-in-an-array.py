@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findDuplicates(self, nums):
+  ___ findDuplicates  nums):
     ans    # list
     ___ i __ r..(0, l..(nums)):
       w.... nums[nums[i] - 1] != nums[i]:

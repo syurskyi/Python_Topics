@@ -44,7 +44,7 @@ After calling your function, the tree should look like:
 #         self.next = None
 
 c_ Solution(object):
-    ___ connect(self, root):
+    ___ connect  root):
         """
         :type root: TreeLinkNode
         :rtype: nothing

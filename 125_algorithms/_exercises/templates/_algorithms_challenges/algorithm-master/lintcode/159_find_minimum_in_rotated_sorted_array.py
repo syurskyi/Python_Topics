@@ -3,7 +3,7 @@ c_ Solution:
     @param: nums: a rotated sorted array
     @return: the minimum number in the array
     """
-    ___ findMin(self, nums):
+    ___ findMin  nums):
         __ n.. nums:
             r.. -1
 

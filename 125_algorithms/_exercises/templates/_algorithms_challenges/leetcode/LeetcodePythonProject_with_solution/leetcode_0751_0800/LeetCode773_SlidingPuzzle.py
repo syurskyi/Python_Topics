@@ -4,7 +4,7 @@ Created on Apr 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ slidingPuzzle(self, board):
+    ___ slidingPuzzle  board):
         """
         :type board: List[List[int]]
         :rtype: int
@@ -35,7 +35,7 @@ c_ Solution(object):
             res += 1
         r.. -1
     
-    ___ getZero(self, board):
+    ___ getZero  board):
         ___ i __ r..(2):
             ___ j __ r..(3):
                 __ board[i][j] __ 0:

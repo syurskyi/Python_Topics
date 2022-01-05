@@ -2,7 +2,7 @@ c_ Solution:
     """
     dfs/dp: optimized by memory searching
     """
-    ___ wordBreak(self, s, words):
+    ___ wordBreak  s, words):
         """
         :type s: str
         :type words: list[str]
@@ -10,7 +10,7 @@ c_ Solution:
         """
         r.. dfs(s, set(words), {})
 
-    ___ dfs(self, s, words, memo):
+    ___ dfs  s, words, memo):
         __ s __ memo:
             r.. memo[s]
 
@@ -45,7 +45,7 @@ c_ Solution:
     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
     ["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
     """
-    ___ wordBreak(self, s, words):
+    ___ wordBreak  s, words):
         """
         :type s: str
         :type words: list[str]
@@ -60,7 +60,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, s, words, ans, path):
+    ___ dfs  s, words, ans, path):
         __ n.. s:
             ans.a..(' '.j..(path))
             r..

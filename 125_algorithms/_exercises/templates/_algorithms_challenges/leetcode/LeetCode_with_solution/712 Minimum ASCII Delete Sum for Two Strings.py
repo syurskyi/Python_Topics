@@ -27,7 +27,7 @@ All elements of each string will have an ASCII value in [97, 122].
 
 
 c_ Solution:
-    ___ minimumDeleteSum(self, s1: s.., s2: s..) __ i..:
+    ___ minimumDeleteSum  s1: s.., s2: s..) __ i..:
         """
         let F[i][j] be the cost to delete & make s1[:i] == s2[:j]
         F[i][j] = min
@@ -39,15 +39,15 @@ c_ Solution:
         F = [[float('inf') ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         F[0][0] = 0
         ___ i __ r..(1, m + 1):
-            F[i][0] = F[i-1][0] + ord(s1[i-1])
+            F[i][0] = F[i-1][0] + o..(s1[i-1])
         ___ j __ r..(1, n + 1):
-            F[0][j] = F[0][j-1] + ord(s2[j-1])
+            F[0][j] = F[0][j-1] + o..(s2[j-1])
         ___ i __ r..(1, m + 1):
             ___ j __ r..(1, n + 1):
                 F[i][j] = m..(
                     F[i][j],
-                    F[i][j-1] + ord(s2[j-1]),
-                    F[i-1][j] + ord(s1[i-1]),
+                    F[i][j-1] + o..(s2[j-1]),
+                    F[i-1][j] + o..(s1[i-1]),
                 )
                 __ s1[i-1] __ s2[j-1]:
                     F[i][j] = m..(
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. F[m][n]
 
-    ___ minimumDeleteSum_error(self, s1: s.., s2: s..) __ i..:
+    ___ minimumDeleteSum_error  s1: s.., s2: s..) __ i..:
         """
         let F[i][j] be the cost to make s1[:i] == s2[:j]
         F[i][j] = min
@@ -70,14 +70,14 @@ c_ Solution:
         m, n = l..(s1), l..(s2)
         F = [[float('inf') ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         F[0][0] = 0
-        F[1][0] = ord(s1[0])
-        F[0][1] = ord(s2[0])
+        F[1][0] = o..(s1[0])
+        F[0][1] = o..(s2[0])
         ___ i __ r..(1, m + 1):
             ___ j __ r..(1, n + 1):
                 F[i][j] = m..(
                     F[i][j],
-                    F[i][j-1] + ord(s2[j-1]),
-                    F[i-1][j] + ord(s1[i-1]),
+                    F[i][j-1] + o..(s2[j-1]),
+                    F[i-1][j] + o..(s1[i-1]),
                 )
                 __ s1[i-1] __ s2[j-1]:
                     F[i][j] = m..(

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findDiagonalOrder(self, matrix):
+  ___ findDiagonalOrder  matrix):
     """
     :type matrix: List[List[int]]
     :rtype: List[int]

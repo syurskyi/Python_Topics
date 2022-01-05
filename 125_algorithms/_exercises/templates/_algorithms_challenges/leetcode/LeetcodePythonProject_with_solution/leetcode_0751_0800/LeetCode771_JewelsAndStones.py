@@ -4,7 +4,7 @@ Created on Apr 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numJewelsInStones(self, J, S):
+    ___ numJewelsInStones  J, S):
         """
         :type J: str
         :type S: str

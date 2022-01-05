@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxSlidingWindow(self, nums, k):
+  ___ maxSlidingWindow  nums, k):
     """
     :type nums: List[int]
     :type k: int

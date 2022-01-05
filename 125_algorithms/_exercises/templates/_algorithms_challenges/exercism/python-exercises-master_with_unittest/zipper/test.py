@@ -6,14 +6,14 @@ ____ zipper _______ Zipper
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
 c_ ZipperTest(unittest.TestCase):
-    ___ bt(self, value, left, right):
+    ___ bt  value, left, right):
         r.. {
             'value': value,
             'left': left,
             'right': right
         }
 
-    ___ leaf(self, value):
+    ___ leaf  value):
         r.. bt(value, N.., N..)
 
     ___ create_trees

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ containsDuplicate(self, A):
+    ___ containsDuplicate  A):
         """
         :type A: List[int]
         :rtype: bool

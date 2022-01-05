@@ -4,7 +4,7 @@ Created on Apr 29, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ largestTriangleArea(self, points):
+    ___ largestTriangleArea  points):
         """
         :type points: List[List[int]]
         :rtype: float
@@ -14,10 +14,10 @@ c_ Solution(object):
         ___ i __ r..(n):
             ___ j __ r..(n):
                 ___ k __ r..(n):
-                    res = max(res, getArea(points[i], points[j], points[k]))
+                    res = m..(res, getArea(points[i], points[j], points[k]))
         r.. res
     
-    ___ getArea(self, p1, p2, p3):
+    ___ getArea  p1, p2, p3):
         r.. 0.5*abs(p1[0]*p2[1] \
                        +p2[0]*p3[1] \
                        +p3[0]*p1[1] \

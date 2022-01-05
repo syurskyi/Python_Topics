@@ -7,7 +7,7 @@ you can call Guess.guess(num)
 
 
 c_ Solution:
-    ___ guessNumber(self, n):
+    ___ guessNumber  n):
         """
         :type n: int
         :rtype: int

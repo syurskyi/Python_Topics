@@ -40,7 +40,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxSumTwoNoOverlap(self, A: List[i..], L: i.., M: i..) __ i..:
+    ___ maxSumTwoNoOverlap  A: List[i..], L: i.., M: i..) __ i..:
         """
         Prefix sum + Brute force O(N^2)
         two pointer i, j
@@ -55,7 +55,7 @@ c_ Solution:
             ___ i __ r..(n + 1 - l):
                 ___ j __ r..(i + l, n + 1 - m):  # upper needs +1 here
                     cur = F[i + l] - F[i] + F[j + m] - F[j]
-                    ret = max(ret, cur)
+                    ret = m..(ret, cur)
 
         r.. ret
 

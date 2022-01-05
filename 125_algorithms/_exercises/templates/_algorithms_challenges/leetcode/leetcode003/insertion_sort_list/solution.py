@@ -7,7 +7,7 @@
 c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
-    ___ insertionSortList(self, head):
+    ___ insertionSortList  head):
         h = head  # h is the temporary head node
         # First node of h
         __ head __ n.. N..

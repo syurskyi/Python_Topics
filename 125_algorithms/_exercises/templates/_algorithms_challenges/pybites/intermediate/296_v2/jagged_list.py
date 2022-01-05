@@ -5,7 +5,7 @@ ___ jagged_list(lst_of_lst: List[List[i..]], fillvalue: i.. = 0) __ List[List[i.
     __ lst_of_lst __ []:
         r.. lst_of_lst
     ____:
-        max_length = max([l..(lst) ___ lst __ lst_of_lst])
+        max_length = m..([l..(lst) ___ lst __ lst_of_lst])
     
     ___ lst __ lst_of_lst:
         __ l..(lst) __ max_length:

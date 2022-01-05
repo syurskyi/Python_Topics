@@ -41,9 +41,9 @@ That Shepherd, who first taught the chosen Seed
 
 
 ___ remove_file(file_name):
-    try:
+    ___
         os.remove(file_name)
-    except OSError:
+    ______ OSError:
         p..
 
 

@@ -21,7 +21,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findLengthOfLCIS(self, nums: List[i..]) __ i..:
+    ___ findLengthOfLCIS  nums: List[i..]) __ i..:
         """
         pointer is sufficient
         """
@@ -37,6 +37,6 @@ c_ Solution:
                 i += 1
 
             i += 1
-            ret = max(ret, cur)
+            ret = m..(ret, cur)
 
         r.. ret

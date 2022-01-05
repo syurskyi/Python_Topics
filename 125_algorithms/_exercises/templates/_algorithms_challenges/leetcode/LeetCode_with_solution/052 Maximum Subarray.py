@@ -12,7 +12,7 @@ more subtle.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ maxSubArray(self, A):
+    ___ maxSubArray  A):
         """
         maximum sub-array problem.
         O(n) scanning
@@ -24,7 +24,7 @@ c_ Solution:
             r.. 0
 
         # in case of A = [-1]
-        largest = max(A)
+        largest = m..(A)
         __ largest<0:
             r.. largest
 
@@ -35,6 +35,6 @@ c_ Solution:
                 current_max+=A[i]
             ____:
                 current_max = 0
-            max_result = max(max_result, current_max)
+            max_result = m..(max_result, current_max)
 
         r.. max_result

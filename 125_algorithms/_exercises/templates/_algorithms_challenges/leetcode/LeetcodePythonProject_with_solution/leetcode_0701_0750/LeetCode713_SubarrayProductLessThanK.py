@@ -4,7 +4,7 @@ Created on Oct 29, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ numSubarrayProductLessThanK(self, nums, k):
+    ___ numSubarrayProductLessThanK  nums, k):
         """
         :type nums: List[int]
         :type k: int

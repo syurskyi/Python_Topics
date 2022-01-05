@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canPartition(self, nums):
+  ___ canPartition  nums):
     """
     :type nums: List[int]
     :rtype: bool

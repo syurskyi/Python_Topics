@@ -46,7 +46,7 @@ ___ create_stats_report(data_ N..
     # for the last 3 sample_ variables, use sample list
     stats = d..(count=l..(data),
                  min_=m..(data),
-                 max_=max(data),
+                 max_=m..(data),
                  mean=st.mean(data),
                  pstdev=st.pstdev(data),
                  pvariance=st.pvariance(data),

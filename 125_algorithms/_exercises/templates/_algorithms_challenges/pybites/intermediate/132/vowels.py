@@ -15,7 +15,7 @@ ___ get_word_max_vowels(text):
       __ vowel_count > 0:
          vowel_frequency[word] = vowel_count
 
-   vowel_frequency_max = max(vowel_frequency, key=vowel_frequency.get)
+   vowel_frequency_max = m..(vowel_frequency, key=vowel_frequency.get)
    r.. (vowel_frequency_max, vowel_frequency[vowel_frequency_max])
 
 

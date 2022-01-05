@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ maximalSquare(self, matrix):
+    ___ maximalSquare  matrix):
         """
         Brute force: O(n^3)
         DP: O(n^2)
@@ -50,7 +50,7 @@ c_ Solution:
                     to_left[i][j],
                     to_top[i][j],
                 )
-                maxa = max(maxa, square_width[i][j])
+                maxa = m..(maxa, square_width[i][j])
 
         r.. maxa*maxa
 

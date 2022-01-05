@@ -3,7 +3,7 @@ c_ Solution:
     @param: nums: a mountain sequence which increase firstly and then decrease
     @return: then mountain top
     """
-    ___ mountainSequence(self, nums):
+    ___ mountainSequence  nums):
         __ n.. nums:
             r.. -1
 
@@ -20,4 +20,4 @@ c_ Solution:
             ____:
                 l = m
 
-        r.. max(nums[l], nums[r])
+        r.. m..(nums[l], nums[r])

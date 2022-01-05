@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ minAbbreviation(self, target, dictionary):
+    ___ minAbbreviation  target, dictionary):
         """
         :type target: str
         :type dictionary: List[str]
@@ -18,7 +18,7 @@ c_ Solution(object):
 
         r.. ret[0]
 
-    ___ dfs(self, word):
+    ___ dfs  word):
         """
         backtracking, pivoting letter
         :type word: str
@@ -39,14 +39,14 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ validate(self, dictionary, abbr):
+    ___ validate  dictionary, abbr):
         ___ w __ dictionary:
             __ validWordAbbreviation(w, abbr):
                 r.. F..
 
         r.. T..
 
-    ___ validWordAbbreviation(self, word, abbr):
+    ___ validWordAbbreviation  word, abbr):
         """
         pointers
         :type word: str

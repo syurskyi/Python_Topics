@@ -16,7 +16,7 @@ class Employee(object):
         self.subordinates = subordinates
 """
 c_ Solution(object):
-    ___ getImportance(self, employees, id):
+    ___ getImportance  employees, id):
         """
         :type employees: Employee
         :type id: int

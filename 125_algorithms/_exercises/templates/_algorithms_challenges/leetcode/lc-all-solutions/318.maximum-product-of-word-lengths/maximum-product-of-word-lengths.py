@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxProduct(self, words):
+  ___ maxProduct  words):
     """
     :type words: List[str]
     :rtype: int
@@ -10,10 +10,10 @@ c_ Solution(object):
     ___ i __ r..(0, l..(words)):
       word = words[i]
       ___ c __ word:
-        bitmap[i] |= (mask << (ord(c) - ord('a')))
+        bitmap[i] |= (mask << (o..(c) - o..('a')))
     ___ i __ r..(0, l..(words)):
       ___ j __ r..(0, i):
         __ bitmap[i] & bitmap[j] __ 0:
-          ans = max(ans, l..(words[i]) * l..(words[j]))
+          ans = m..(ans, l..(words[i]) * l..(words[j]))
 
     r.. ans

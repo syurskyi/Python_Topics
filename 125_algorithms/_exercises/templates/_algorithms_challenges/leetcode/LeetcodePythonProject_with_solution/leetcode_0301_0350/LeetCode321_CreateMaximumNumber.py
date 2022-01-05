@@ -5,7 +5,7 @@ Created on Mar 18, 2017
 '''
 
 c_ Solution(object):
-    ___ maxNumber(self, nums1, nums2, k):
+    ___ maxNumber  nums1, nums2, k):
         len1, len2 = l..(nums1), l..(nums2)
         result    # list
         ___ i __ r..(0, k+1):
@@ -15,10 +15,10 @@ c_ Solution(object):
             left = getMax(nums1, i)
             right = getMax(nums2, j)
             tmpResult = merge(left, right)
-            result = max(result, tmpResult)
+            result = m..(result, tmpResult)
         r.. result
     
-    ___ getMax(self, nums, maxLen):
+    ___ getMax  nums, maxLen):
         result    # list
         size = l..(nums)
         ___ x __ r..(size):
@@ -28,7 +28,7 @@ c_ Solution(object):
                 result.a..(nums[x])
         r.. result
     
-    ___ merge(self, nums1, nums2):
+    ___ merge  nums1, nums2):
         result    # list
         w.... nums1 a.. nums2:
             __ nums1 >= nums2:

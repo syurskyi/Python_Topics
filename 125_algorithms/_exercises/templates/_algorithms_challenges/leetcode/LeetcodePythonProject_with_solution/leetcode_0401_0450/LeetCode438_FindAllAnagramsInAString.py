@@ -5,7 +5,7 @@ Created on Apr 17, 2017
 '''
 
 c_ Solution(object):
-    ___ findAnagrams(self, s, p):
+    ___ findAnagrams  s, p):
         """
         :type s: str
         :type p: str
@@ -13,20 +13,20 @@ c_ Solution(object):
         """
         arr0 = [0]*26
         ___ c __ p:
-            arr0[ord(c)-ord('a')] += 1
+            arr0[o..(c)-o..('a')] += 1
         left = 0
         res    # list
         arr = [0]*26
         ___ i, c __ e..(s):
-            arr[ord(c)-ord('a')] += 1
-            w.... left <= i a.. arr[ord(c)-ord('a')] > arr0[ord(c)-ord('a')]:
-                arr[ord(s[left])-ord('a')] -= 1
+            arr[o..(c)-o..('a')] += 1
+            w.... left <= i a.. arr[o..(c)-o..('a')] > arr0[o..(c)-o..('a')]:
+                arr[o..(s[left])-o..('a')] -= 1
                 left += 1
             __ i-left+1 __ l..(p):
                 res.a..(left)
         r.. res
     
-    ___ findAnagrams_orig(self, s, p):
+    ___ findAnagrams_orig  s, p):
         """
         :type s: str
         :type p: str
@@ -35,13 +35,13 @@ c_ Solution(object):
         arr0 = [0]*26
         count = l..(p)
         ___ c __ p:
-            arr0[ord(c)-ord('a')] += 1
+            arr0[o..(c)-o..('a')] += 1
         left = 0
         arr1 = [0]*26
         result    # list
         end = 0
         w.... end < l..(s):
-            numInd = ord(s[end]) - ord('a')
+            numInd = o..(s[end]) - o..('a')
             __ arr1[numInd] < arr0[numInd]:
                 arr1[numInd] += 1
                 count -= 1
@@ -49,7 +49,7 @@ c_ Solution(object):
                 __ count __ 0:
                     result.a..(left)
             ____:
-                arr1[ord(s[left]) - ord('a')] -= 1
+                arr1[o..(s[left]) - o..('a')] -= 1
                 count += 1
                 left += 1
         r.. result

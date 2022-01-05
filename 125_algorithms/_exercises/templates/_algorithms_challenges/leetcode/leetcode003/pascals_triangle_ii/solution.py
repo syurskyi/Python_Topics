@@ -16,7 +16,7 @@ Could you optimize your algorithm to use only O(k) extra space?
 """
 
 c_ Solution(object):
-    ___ getRow(self, rowIndex):
+    ___ getRow  rowIndex):
         """
         :type rowIndex: int
         :rtype: List[int]

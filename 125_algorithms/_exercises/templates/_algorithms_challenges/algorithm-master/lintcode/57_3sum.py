@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ threeSum(self, nums):
+    ___ threeSum  nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]

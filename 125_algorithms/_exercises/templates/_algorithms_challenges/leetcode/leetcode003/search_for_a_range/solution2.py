@@ -12,7 +12,7 @@ return [3, 4].
 """
 
 c_ Solution(object):
-    ___ searchRange(self, nums, target):
+    ___ searchRange  nums, target):
         """
         :type nums: List[int]
         :type target: int

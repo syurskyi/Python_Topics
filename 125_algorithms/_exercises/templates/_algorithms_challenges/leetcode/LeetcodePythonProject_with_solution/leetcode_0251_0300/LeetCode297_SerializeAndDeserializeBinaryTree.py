@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Codec:
-    ___ serialize(self, root):
+    ___ serialize  root):
         stack = [root]
         result = ''
         w.... stack:
@@ -25,13 +25,13 @@ c_ Codec:
                 result += '#,'
         r.. result[:-1]
     
-    ___ deserialize(self, data):
+    ___ deserialize  data):
         arr = data.s..(',')
         ind = [0]
         root = helper(arr, ind)
         r.. root
     
-    ___ helper(self, arr, ind):
+    ___ helper  arr, ind):
         __ arr[ind[0]] __ '#':
             r.. N..
         root = TreeNode(arr[ind[0]])

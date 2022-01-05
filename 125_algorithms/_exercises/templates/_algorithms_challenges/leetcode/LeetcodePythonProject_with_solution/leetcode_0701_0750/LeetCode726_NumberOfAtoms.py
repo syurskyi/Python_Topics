@@ -5,7 +5,7 @@ Created on Feb 21, 2018
 '''
 _______ __
 c_ Solution(object):
-    ___ countOfAtoms(self, formula):
+    ___ countOfAtoms  formula):
         """
         :type formula: str
         :rtype: str
@@ -15,7 +15,7 @@ c_ Solution(object):
         res = ''.j..(arr)
         r.. res
     
-    ___ helper(self, s):
+    ___ helper  s):
         hashmap    # dict
         i = 0
         w.... i < l..(s):

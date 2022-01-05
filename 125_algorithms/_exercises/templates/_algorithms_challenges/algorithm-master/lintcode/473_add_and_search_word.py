@@ -2,7 +2,7 @@ c_ Trie:
     ___ - ):
         root    # dict
 
-    ___ insert(self, s__):
+    ___ insert  s__):
         __ n.. s__:
             r..
         parent = root
@@ -14,7 +14,7 @@ c_ Trie:
                 parent = parent[char]
         parent['_end'] = T..
 
-    ___ s..(self, s__):
+    ___ s..  s__):
         __ n.. s__:
             r.. F..
         parent = root
@@ -25,12 +25,12 @@ c_ Trie:
                 r.. F..
         r.. T..
 
-    ___ search_in_regex(self, s__):
+    ___ search_in_regex  s__):
         __ n.. s__:
             r.. F..
         r.. _search_in_regex(s__, root, 0)
 
-    ___ _search_in_regex(self, s__, parent, i):
+    ___ _search_in_regex  s__, parent, i):
         __ i __ l..(s__):
             r.. parent.get('_end', F..)
         result = F..
@@ -51,7 +51,7 @@ c_ WordDictionary:
     @param: word: Adds a word into the data structure.
     @return: nothing
     """
-    ___ addWord(self, word):
+    ___ addWord  word):
         __ n.. word:
             r..
         trie.insert(word)
@@ -60,7 +60,7 @@ c_ WordDictionary:
     @param: word: A word could contain the dot character '.' to represent any one letter.
     @return: if the word is in the data structure.
     """
-    ___ s..(self, word):
+    ___ s..  word):
         __ n.. word:
             r.. F..
         r.. trie.search_in_regex(word)

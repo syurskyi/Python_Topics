@@ -8,7 +8,7 @@
 
 
 c_ Solution(object):
-  ___ _minSteps(self, n):
+  ___ _minSteps  n):
     """
     :type n: int
     :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
         r.. i + minSteps(n / i)
     r.. n
 
-  ___ minSteps(self, n):
+  ___ minSteps  n):
     ___ factor(n):
       d = 2
       w.... d * d <= n:

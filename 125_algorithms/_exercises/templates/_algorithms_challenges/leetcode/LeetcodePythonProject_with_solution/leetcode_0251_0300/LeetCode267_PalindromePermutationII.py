@@ -5,7 +5,7 @@ Created on Mar 4, 2017
 '''
 
 c_ Solution(object):
-    ___ generatePalindromes(self, s):
+    ___ generatePalindromes  s):
         """
         :type s: str
         :rtype: List[str]
@@ -30,7 +30,7 @@ c_ Solution(object):
         helper(oddVal, l..(s), hashmap, result)
         r.. result
     
-    ___ helper(self, s0, length, hashmap, result):
+    ___ helper  s0, length, hashmap, result):
         __ l..(s0) >= length:
             result.a..(s0)
             r..

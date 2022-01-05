@@ -1,11 +1,11 @@
 c_ Solution:
-    ___ maxArea(self, height: List[i..]) __ i..:
+    ___ maxArea  height: List[i..]) __ i..:
 		maxarea  0
 		l  0
 		r  l..(height)-1
 
 		w___(l<r):
-			maxarea  max(maxarea, m..(height[l],height[r])*(r-l))
+			maxarea  m..(maxarea, m..(height[l],height[r])*(r-l))
 			__(height[l]<height[r]):
 				l+1
 			____:

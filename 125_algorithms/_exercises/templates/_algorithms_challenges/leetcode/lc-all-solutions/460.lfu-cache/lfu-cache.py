@@ -74,14 +74,14 @@ c_ LFUCache(object):
     head = FreqNode(-1)
     List.initHead(head)
 
-  ___ get(self, key):
+  ___ get  key):
     __ key n.. __ d:
       r.. -1
     cacheNode = d[key]
     cacheNode.increaseFreq()
     r.. cacheNode.val
 
-  ___ set(self, key, value):
+  ___ set  key, value):
     __ cap __ 0:
       r..
     __ key __ d:

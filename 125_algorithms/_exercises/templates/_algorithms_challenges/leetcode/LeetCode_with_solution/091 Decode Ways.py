@@ -16,7 +16,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ numDecodings(self, s):
+    ___ numDecodings  s):
         """
         F
         Let F[i] be the number of decode ways for s[:i]

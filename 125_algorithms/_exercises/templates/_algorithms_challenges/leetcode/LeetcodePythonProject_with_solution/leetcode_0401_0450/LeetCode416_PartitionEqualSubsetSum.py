@@ -5,7 +5,7 @@ Created on Apr 12, 2017
 '''
 
 c_ Solution(object):
-    ___ canPartition(self, nums):
+    ___ canPartition  nums):
         sumVal = s..(nums)
         __ sumVal%2 != 0:
             r.. F..

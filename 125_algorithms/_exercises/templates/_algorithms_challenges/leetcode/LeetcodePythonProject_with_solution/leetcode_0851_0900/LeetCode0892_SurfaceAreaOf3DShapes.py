@@ -4,7 +4,7 @@ Created on Oct 31, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ surfaceArea(self, grid):
+    ___ surfaceArea  grid):
         """
         :type grid: List[List[int]]
         :rtype: int

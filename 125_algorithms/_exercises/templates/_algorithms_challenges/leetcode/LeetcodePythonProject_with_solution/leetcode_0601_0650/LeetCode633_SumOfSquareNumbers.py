@@ -5,7 +5,7 @@ Created on Sep 24, 2017
 '''
 
 c_ Solution(object):
-    ___ judgeSquareSum(self, c):
+    ___ judgeSquareSum  c):
         """
         :type c: int
         :rtype: bool

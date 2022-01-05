@@ -43,19 +43,19 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxIncreaseKeepingSkyline(self, grid: List[List[i..]]) __ i..:
+    ___ maxIncreaseKeepingSkyline  grid: List[List[i..]]) __ i..:
         """
         grow the to limit constraint by 2D skyline
         """
         m, n = l..(grid), l..(grid[0])
         # left to right projection
         lr = [
-            max(row)
+            m..(row)
             ___ row __ grid
         ]
         # top to bottom projection
         tb = [
-            max(
+            m..(
                 grid[i][j]
                 ___ i __ r..(m)
             )

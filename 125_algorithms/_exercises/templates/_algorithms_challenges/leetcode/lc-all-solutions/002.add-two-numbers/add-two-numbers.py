@@ -6,7 +6,7 @@
 
 c_ Solution(object):
   # maybe standard version
-  ___ _addTwoNumbers(self, l1, l2):
+  ___ _addTwoNumbers  l1, l2):
     """
     :type l1: ListNode
     :type l2: ListNode
@@ -34,7 +34,7 @@ c_ Solution(object):
     r.. dummy.next
 
   # shorter version
-  ___ addTwoNumbers(self, l1, l2):
+  ___ addTwoNumbers  l1, l2):
     p = dummy = ListNode(-1)
     carry = 0
     w.... l1 o. l2 o. carry:

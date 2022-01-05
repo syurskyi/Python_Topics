@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ numberOfArithmeticSlices(self, nums):
+  ___ numberOfArithmeticSlices  nums):
     """
     :type nums: List[int]
     :rtype: int

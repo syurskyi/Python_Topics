@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ invertTree(self, root):
+    ___ invertTree  root):
         """
         :type root: TreeNode
         :rtype: TreeNode
@@ -24,7 +24,7 @@ c_ Solution(object):
         root.right = left
         r.. root
     
-    ___ invertTreeNonRec(self, root):
+    ___ invertTreeNonRec  root):
         __ n.. root: r.. N..
         stack = [root]
         w.... stack:

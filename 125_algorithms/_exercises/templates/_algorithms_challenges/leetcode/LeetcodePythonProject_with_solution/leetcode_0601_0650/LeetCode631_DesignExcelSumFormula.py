@@ -11,11 +11,11 @@ c_ Excel(object):
         :type W: str
         """
         m = H
-        n = ord(W)-ord('A')+1
+        n = o..(W)-o..('A')+1
         matrix = [[0]*n ___ _ __ r..(m)]
         hashmap    # dict
 
-    ___ set(self, r, c, v):
+    ___ set  r, c, v):
         """
         :type r: int
         :type c: str
@@ -23,7 +23,7 @@ c_ Excel(object):
         :rtype: void
         """
         i = r-1
-        j = ord(c)-ord('A')
+        j = o..(c)-o..('A')
         diff = v-matrix[i][j]
         matrix[i][j] = v
         ___ (i0, j0), vals __ hashmap.i..:
@@ -31,23 +31,23 @@ c_ Excel(object):
         __ (i, j) __ hashmap:
             del hashmap[(i, j)]
 
-    ___ get(self, r, c):
+    ___ get  r, c):
         """
         :type r: int
         :type c: str
         :rtype: int
         """
-        i, j = r-1, ord(c)-ord('A')
+        i, j = r-1, o..(c)-o..('A')
         r.. matrix[i][j]
 
-    ___ s..(self, r, c, strs):
+    ___ s..  r, c, strs):
         """
         :type r: int
         :type c: str
         :type strs: List[str]
         :rtype: int
         """
-        i, j = r-1, ord(c)-ord('A')
+        i, j = r-1, o..(c)-o..('A')
         ___ (i0, j0), vals __ hashmap.i..:
             __ i0 __ i a.. j0 __ j:
                 del hashmap[(i, j)]
@@ -62,14 +62,14 @@ c_ Excel(object):
             arr = s.s..(':')
             __ l..(arr) __ 1:
                 x = i..(arr[0][1:])-1
-                y = ord(arr[0][0])-ord('A')
+                y = o..(arr[0][0])-o..('A')
                 vals.a..((x, y))
                 sumVal += matrix[x][y]
             ____:
                 x0 = i..(arr[0][1:])-1
-                y0 = ord(arr[0][0])-ord('A')
+                y0 = o..(arr[0][0])-o..('A')
                 x1 = i..(arr[1][1:])-1
-                y1 = ord(arr[1][0])-ord('A')
+                y1 = o..(arr[1][0])-o..('A')
                 ___ i0 __ r..(x0, x1+1):
                     ___ j0 __ r..(y0, y1+1):
                         vals.a..((i0, j0))

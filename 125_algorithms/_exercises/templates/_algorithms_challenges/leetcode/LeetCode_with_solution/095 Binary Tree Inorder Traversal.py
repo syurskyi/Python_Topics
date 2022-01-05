@@ -25,7 +25,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ inorderTraversal(self, root):
+    ___ inorderTraversal  root):
         """
         Morris Traversal
         """
@@ -50,7 +50,7 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ inorderTraversal_memory(self, root):
+    ___ inorderTraversal_memory  root):
         """
         :type root: TreeNode
         :param root:
@@ -60,7 +60,7 @@ c_ Solution(object):
         inorderTraverse_itr(root, lst)
         r.. lst
 
-    ___ inorderTraverse(self, root, lst):
+    ___ inorderTraverse  root, lst):
         """
         In order traverse
         """
@@ -70,7 +70,7 @@ c_ Solution(object):
         lst.a..(root.val)
         inorderTraverse(root.right, lst)
 
-    ___ inorderTraverse_itr(self, root, lst):
+    ___ inorderTraverse_itr  root, lst):
         """
         iterative version
         leftmost first in the lst

@@ -4,7 +4,7 @@ Created on Jun 10, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ largestOverlap(self, A, B):
+    ___ largestOverlap  A, B):
         """
         :type A: List[List[int]]
         :type B: List[List[int]]
@@ -21,10 +21,10 @@ c_ Solution(object):
         ___ i __ LA:
             ___ j __ LB:
                 counts[(i[0]-j[0], i[1]-j[1])] += 1
-                res = max(res, counts[(i[0]-j[0], i[1]-j[1])])
+                res = m..(res, counts[(i[0]-j[0], i[1]-j[1])])
         r.. res
     
-    ___ largestOverlap_another(self, A, B):
+    ___ largestOverlap_another  A, B):
         """
         :type A: List[List[int]]
         :type B: List[List[int]]
@@ -37,4 +37,4 @@ c_ Solution(object):
         ___ i __ la:
             ___ j __ lb:
                 count[i-j] = count.get(i-j, 0)+1
-        r.. max(count.v.. o. [0])
+        r.. m..(count.v.. o. [0])

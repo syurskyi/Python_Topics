@@ -5,7 +5,7 @@ Created on May 6, 2017
 '''
 
 c_ Solution(object):
-    ___ PredictTheWinner(self, nums):
+    ___ PredictTheWinner  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -17,10 +17,10 @@ c_ Solution(object):
         ___ l __ r..(1, n):
             ___ i __ r..(n-l):
                 j = i+l
-                dp[i][j] = max(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1])
+                dp[i][j] = m..(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1])
         r.. dp[0][n-1] >= 0
     
-    ___ PredictTheWinner_DnC(self, nums):
+    ___ PredictTheWinner_DnC  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -28,7 +28,7 @@ c_ Solution(object):
         mem    # dict
         r.. helper(nums, 0, l..(nums)-1) >= 0
     
-    ___ helper(self, nums, start, end):
+    ___ helper  nums, start, end):
         n = l..(nums)
         num = start*n+end
         __ num __ mem:
@@ -38,7 +38,7 @@ c_ Solution(object):
             r.. mem[num]
         res1 = nums[start]-helper(nums, start+1, end)
         res2 = nums[end]-helper(nums, start, end-1)
-        result = max(res1, res2)
+        result = m..(res1, res2)
         mem[num] = result
         r.. result
     

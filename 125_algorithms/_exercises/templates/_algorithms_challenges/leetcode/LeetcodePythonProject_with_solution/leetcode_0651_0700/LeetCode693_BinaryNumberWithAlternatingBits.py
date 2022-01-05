@@ -4,7 +4,7 @@ Created on Oct 25, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ hasAlternatingBits(self, n):
+    ___ hasAlternatingBits  n):
         """
         :type n: int
         :rtype: bool

@@ -12,7 +12,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ findDuplicate(self, nums):
+    ___ findDuplicate  nums):
         """
         Condition for convert the array problem to linked list problem:
         CANNOT contains integer with 0; otherwise cycle: A = [1, 0]

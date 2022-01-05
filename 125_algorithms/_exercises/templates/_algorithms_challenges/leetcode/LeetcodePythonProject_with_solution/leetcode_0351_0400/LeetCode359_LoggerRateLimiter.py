@@ -12,7 +12,7 @@ c_ Logger(object):
         """
         hashmap    # dict
 
-    ___ shouldPrintMessage(self, timestamp, message):
+    ___ shouldPrintMessage  timestamp, message):
         """
         Returns true if the message should be printed in the given timestamp, otherwise returns false.
         If this method returns false, the message will not be printed.

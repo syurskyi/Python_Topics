@@ -4,7 +4,7 @@ Created on Oct 7, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ isPossible(self, nums):
+    ___ isPossible  nums):
         """
         :type nums: List[int]
         :rtype: bool

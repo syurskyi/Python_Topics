@@ -7,10 +7,10 @@ ____ bowling _______ BowlingGame
 
 c_ BowlingTest(unittest.TestCase):
 
-    ___ roll(self, rolls):
+    ___ roll  rolls):
         [game.roll(roll) ___ roll __ rolls]
 
-    ___ roll_and_score(self, rolls):
+    ___ roll_and_score  rolls):
         roll(rolls)
         r.. game.score()
 
@@ -216,12 +216,12 @@ c_ BowlingTest(unittest.TestCase):
     # Utility functions
     ___ setUp
         game = BowlingGame()
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 

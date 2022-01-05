@@ -5,7 +5,7 @@ Created on Mar 2, 2017
 '''
 
 c_ Solution(object):
-    ___ singleNumber(self, nums):
+    ___ singleNumber  nums):
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -22,7 +22,7 @@ c_ Solution(object):
                 res[1] ^= num
         r.. res
     
-    ___ singleNumber_orig(self, nums):
+    ___ singleNumber_orig  nums):
         """
         :type nums: List[int]
         :rtype: List[int]

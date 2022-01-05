@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ reverseString(self, s):
+    ___ reverseString  s):
         """
         :type s: str
         :rtype: str

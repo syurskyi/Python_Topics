@@ -12,7 +12,7 @@ c_ SummaryRanges(object):
     ___ - ):
         intervals    # list
     
-    ___ addNum(self, val):
+    ___ addNum  val):
         __ n.. intervals:
             intervals.a..(Interval(val, val))
         ____:
@@ -24,7 +24,7 @@ c_ SummaryRanges(object):
                     newInterval = interval
                 ____ newInterval.start <= interval.end+1:
                     newInterval = Interval(m..(interval.start, newInterval.start),\
-                        max(interval.end, newInterval.end))
+                        m..(interval.end, newInterval.end))
                 ____:
                     result.a..(interval)
             result.a..(newInterval)

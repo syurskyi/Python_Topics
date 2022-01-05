@@ -4,7 +4,7 @@ Created on Apr 25, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ subdomainVisits(self, cpdomains):
+    ___ subdomainVisits  cpdomains):
         """
         :type cpdomains: List[str]
         :rtype: List[str]

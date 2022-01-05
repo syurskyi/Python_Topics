@@ -47,7 +47,7 @@ ____ c.. _______ Counter, defaultdict
 
 
 c_ Solution:
-    ___ wordSubsets(self, A: List[s..], B: List[s..]) __ List[s..]:
+    ___ wordSubsets  A: List[s..], B: List[s..]) __ List[s..]:
         """
         brute foce check b subset of a: two pointers O(|a| + |b|)
         O(n * m * (|a|+|b|))
@@ -61,7 +61,7 @@ c_ Solution:
         ___ b __ B:
             c = Counter(b)
             ___ k, v __ c.i..:
-                mx[k] = max(mx[k], v)
+                mx[k] = m..(mx[k], v)
 
         ret    # list
         ___ a __ A:

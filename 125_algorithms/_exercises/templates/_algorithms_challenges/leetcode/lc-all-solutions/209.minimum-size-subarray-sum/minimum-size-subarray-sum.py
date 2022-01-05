@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minSubArrayLen(self, target, nums):
+  ___ minSubArrayLen  target, nums):
     """
     :type target: int
     :type nums: List[int]

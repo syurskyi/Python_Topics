@@ -15,9 +15,9 @@ node down to the farthest leaf node.
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ maxDepth(self, root):
+    ___ maxDepth  root):
         __ root __ N..
             r.. 0
         left_max = maxDepth(root.left)
         right_max = maxDepth(root.right)
-        r.. max(left_max, right_max) + 1
+        r.. m..(left_max, right_max) + 1

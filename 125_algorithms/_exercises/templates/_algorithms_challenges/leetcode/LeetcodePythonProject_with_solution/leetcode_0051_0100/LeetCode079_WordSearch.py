@@ -5,7 +5,7 @@ Created on Jan 24, 2017
 '''
 
 c_ Solution(object):
-    ___ exist(self, board, word):
+    ___ exist  board, word):
         """
         :type board: List[List[str]]
         :type word: str
@@ -21,7 +21,7 @@ c_ Solution(object):
                     r.. T..
         r.. F..
     
-    ___ helper(self, board, word, start, i, j):
+    ___ helper  board, word, start, i, j):
         __ i < 0 o. j < 0 o. i >= l..(board) o. j >= l..(board[0]):
             r.. F..
         __ word[start] __ board[i][j]:

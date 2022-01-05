@@ -4,7 +4,7 @@ Created on Feb 18, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ isIsomorphic(self, s, t):
+    ___ isIsomorphic  s, t):
         """
         :type s: str
         :type t: str
@@ -25,7 +25,7 @@ c_ Solution(object):
                     r.. F..
         r.. T..
     
-    ___ isIsomorphic_old(self, s, t):
+    ___ isIsomorphic_old  s, t):
         """
         :type s: str
         :type t: str

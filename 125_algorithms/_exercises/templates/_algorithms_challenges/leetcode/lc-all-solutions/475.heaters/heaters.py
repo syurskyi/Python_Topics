@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findRadius(self, houses, heaters):
+  ___ findRadius  houses, heaters):
     """
     :type houses: List[int]
     :type heaters: List[int]
@@ -16,5 +16,5 @@ c_ Solution(object):
         dist = m..(dist, abs(house - heaters[idx + 1]))
       __ idx < l..(heaters):
         dist = m..(dist, abs(house - heaters[idx]))
-      minDist = max(minDist, dist)
+      minDist = m..(minDist, dist)
     r.. minDist

@@ -3,7 +3,7 @@ c_ Solution:
     @param: heights: a list of integers
     @return: a integer
     """
-    ___ trapRainWater(self, heights):
+    ___ trapRainWater  heights):
         __ n.. heights:
             r.. 0
         # mx_l: max height for index `l`
@@ -13,11 +13,11 @@ c_ Solution:
         w.... l < r:
             # To find the max height in heights
             __ heights[l] < heights[r]:
-                mx_l = max(mx_l, heights[l])
+                mx_l = m..(mx_l, heights[l])
                 ans += mx_l - heights[l]
                 l += 1
             ____:
-                mx_r = max(mx_r, heights[r])
+                mx_r = m..(mx_r, heights[r])
                 ans += mx_r - heights[r]
                 r -= 1
         r.. ans

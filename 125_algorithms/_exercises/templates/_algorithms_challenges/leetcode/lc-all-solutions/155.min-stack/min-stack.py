@@ -6,7 +6,7 @@ c_ MinStack(object):
     """
     stack    # list
 
-  ___ push(self, x):
+  ___ push  x):
     """
     :type x: int
     :rtype: void

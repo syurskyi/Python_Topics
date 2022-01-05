@@ -41,7 +41,7 @@ dirs = (
 
 
 c_ Solution:
-    ___ knightProbability(self, N: i.., K: i.., r: i.., c: i..) __ float:
+    ___ knightProbability  N: i.., K: i.., r: i.., c: i..) __ float:
         """
         brute force K step
 
@@ -73,7 +73,7 @@ c_ Solution:
         ])
 
 
-    ___ knightProbability_error(self, N: i.., K: i.., r: i.., c: i..) __ float:
+    ___ knightProbability_error  N: i.., K: i.., r: i.., c: i..) __ float:
         """
         brute force K step
         """

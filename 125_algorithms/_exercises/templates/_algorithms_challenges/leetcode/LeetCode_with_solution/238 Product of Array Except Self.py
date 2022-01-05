@@ -14,7 +14,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ productExceptSelf(self, nums):
+    ___ productExceptSelf  nums):
         """
         dp
 

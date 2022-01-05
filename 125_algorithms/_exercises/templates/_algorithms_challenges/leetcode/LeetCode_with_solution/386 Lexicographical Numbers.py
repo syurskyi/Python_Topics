@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ lexicalOrder(self, n):
+    ___ lexicalOrder  n):
         """
         :type n: int
         :rtype: List[int]
@@ -29,7 +29,7 @@ c_ Solution(object):
 
         r.. l..(gen())
 
-    ___ lexicalOrderError(self, n):
+    ___ lexicalOrderError  n):
         """
         :type n: int
         :rtype: List[int]

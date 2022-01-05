@@ -17,7 +17,7 @@ c_ Interval(object):
         r.. __str__()
 
 c_ Solution(object):
-    ___ merge(self, intervals):
+    ___ merge  intervals):
         """
         :type intervals: List[Interval]
         :rtype: List[Interval]
@@ -34,7 +34,7 @@ c_ Solution(object):
                 __ intervals[j].start > nextEnd:
                     break
                 ____:
-                    nextEnd = max(intervals[j].end, nextEnd)
+                    nextEnd = m..(intervals[j].end, nextEnd)
                 j += 1
             i = j
             result.a..(Interval(curr.start, nextEnd))

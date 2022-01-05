@@ -21,7 +21,7 @@ ___ sweetest_icecream(lst):
 	'Chocolate'	: 10
 	}
 	
-	r.. max([icecream.sprinkles + flavor_values[icecream.flavor] ___ icecream __ lst])
+	r.. m..([icecream.sprinkles + flavor_values[icecream.flavor] ___ icecream __ lst])
     
 # 4
 ___ check_sequence(lst):
@@ -69,7 +69,7 @@ c_ Pagination:
         current_page  total_pages
         r.. self
     
-    ___ go_to_page(self, page):
+    ___ go_to_page  page):
         __ page < 1:
             page  1 
         ____ page > total_pages:

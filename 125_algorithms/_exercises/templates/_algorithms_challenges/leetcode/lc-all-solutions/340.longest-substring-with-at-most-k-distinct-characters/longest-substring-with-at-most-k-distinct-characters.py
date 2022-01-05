@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ lengthOfLongestSubstringKDistinct(self, s, k):
+  ___ lengthOfLongestSubstringKDistinct  s, k):
     """
     :type s: str
     :type k: int
@@ -15,5 +15,5 @@ c_ Solution(object):
         __ d..[s[j]] __ 0:
           del d..[s[j]]
         j += 1
-      ans = max(ans, i - j + 1)
+      ans = m..(ans, i - j + 1)
     r.. ans

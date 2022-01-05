@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ countComponents(self, n, edges):
+    ___ countComponents  n, edges):
         """
         :type n: int
         :type edges: List[List[int]]
@@ -26,7 +26,7 @@ c_ Solution(object):
 
         r.. cnt
 
-    ___ dfs(self, V, v, visited):
+    ___ dfs  V, v, visited):
         visited[v] = T..
         ___ nbr __ V[v]:
             __ n.. visited[nbr]:

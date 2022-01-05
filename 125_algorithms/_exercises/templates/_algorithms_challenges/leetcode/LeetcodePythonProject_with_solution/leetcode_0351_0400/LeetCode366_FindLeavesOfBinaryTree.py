@@ -12,23 +12,23 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ findLeaves(self, root):
+    ___ findLeaves  root):
         res    # list
         helper(root, res)
         r.. res
     
-    ___ helper(self, root, res):
+    ___ helper  root, res):
         __ n.. root: r.. -1
         left = helper(root.left, res)
         right = helper(root.right, res)
-        level = max(left, right)+1
+        level = m..(left, right)+1
         __ level < l..(res):
             res[level].a..(root.val)
         ____:
             res.a..([root.val])
         r.. level
     
-    ___ findLeavesOwn(self, root):
+    ___ findLeavesOwn  root):
         __ n.. root: r.. []
         result    # list
         dummy = TreeNode(-1)
@@ -39,7 +39,7 @@ c_ Solution(object):
             result.a..(tmpResult)
         r.. result
     
-    ___ getLeaves(self, parent, root, result):
+    ___ getLeaves  parent, root, result):
         __ n.. root: r..
         __ n.. root.left a.. n.. root.right:
             __ parent.left __ root:

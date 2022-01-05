@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ medianII(self, nums):
+    ___ medianII  nums):
         """
         :type nums: list[int]
         :rtype: list[int]

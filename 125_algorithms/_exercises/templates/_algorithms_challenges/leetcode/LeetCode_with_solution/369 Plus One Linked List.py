@@ -12,7 +12,7 @@ c_ ListNode(object):
 
 
 c_ Solution(object):
-    ___ plusOne(self, head):
+    ___ plusOne  head):
         """
         reverse, plus one, then reverse
         :type head: ListNode
@@ -23,7 +23,7 @@ c_ Solution(object):
         head = revserse(head)
         r.. head
 
-    ___ plus(self, head):
+    ___ plus  head):
         cur = head
         w.... cur:
             cur.val += 1
@@ -37,7 +37,7 @@ c_ Solution(object):
 
         r.. head
 
-    ___ revserse(self, head):
+    ___ revserse  head):
         __ n.. head:
             r.. N..
 

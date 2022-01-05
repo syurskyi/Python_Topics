@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 c_ Solution(object):
     F = [0]  # static dp for all test cases
 
-    ___ numSquares(self, n):
+    ___ numSquares  n):
         """
         static dp
         F_i = min(F_{i - j^2}+1, \forall j)
@@ -31,7 +31,7 @@ c_ Solution(object):
 
         r.. Solution.F[n]
 
-    ___ numSquares_bfs(self, n):
+    ___ numSquares_bfs  n):
         """
         bfs
         the q stores the intermediate result of sum of squares 
@@ -61,7 +61,7 @@ c_ Solution(object):
 
         r.. N..
 
-    ___ numSquares_TLE(self, n):
+    ___ numSquares_TLE  n):
         """
         DP
         :type n: int

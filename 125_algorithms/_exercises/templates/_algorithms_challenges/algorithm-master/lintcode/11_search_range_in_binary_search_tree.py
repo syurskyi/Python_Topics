@@ -8,7 +8,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ searchRange(self, root, a, b):
+    ___ searchRange  root, a, b):
         """
         :type root: TreeNode
         :type a: int
@@ -24,7 +24,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, node, a, b, ans):
+    ___ dfs  node, a, b, ans):
         __ n.. node:
             r..
 

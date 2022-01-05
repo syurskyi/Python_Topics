@@ -36,7 +36,7 @@ c_ Robot(object):
     ___ turn_right
         compass.right()
 
-    ___ simulate(self, commands):
+    ___ simulate  commands):
         instructions = {'A': advance,
                         'R': turn_right,
                         'L': turn_left}

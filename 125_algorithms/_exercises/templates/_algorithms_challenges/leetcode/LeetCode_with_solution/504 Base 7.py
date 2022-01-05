@@ -14,7 +14,7 @@ Note: The input will be in range of [-1e7, 1e7].
 
 
 c_ Solution:
-    ___ convertToBase7(self, num):
+    ___ convertToBase7  num):
         """
         simplfied for negative number
         :type num: int

@@ -11,7 +11,7 @@ _______ sys
 
 
 c_ Solution:
-    ___ minSubArrayLen(self, s, nums):
+    ___ minSubArrayLen  s, nums):
         """
         Brute force: O(n^2)
         two pointers sliding window

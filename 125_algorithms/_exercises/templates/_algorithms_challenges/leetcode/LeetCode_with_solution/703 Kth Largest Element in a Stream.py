@@ -37,7 +37,7 @@ c_ KthLargest:
         ___ n __ nums:
             add(n)
 
-    ___ add(self, val: i..) __ i..:
+    ___ add  val: i..) __ i..:
         heapq.heappush(h, val)
         __ l..(h) > k:
             heapq.heappop(h)

@@ -37,7 +37,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ leastBricks(self, wall: List[List[i..]]) __ i..:
+    ___ leastBricks  wall: List[List[i..]]) __ i..:
         """
         Iterate and count edge at a position
         """
@@ -50,4 +50,4 @@ c_ Solution:
                 s += wall[i][j]
                 h[s] += 1
 
-        r.. m - max(h.v.. o. [0])
+        r.. m - m..(h.v.. o. [0])

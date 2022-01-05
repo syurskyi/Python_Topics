@@ -6,10 +6,10 @@ c_ School(object):
         name = name
         db = defaultdict(set)
 
-    ___ add(self, student, grade):
+    ___ add  student, grade):
         db[grade].add(student)
 
-    ___ grade(self, level):
+    ___ grade  level):
         r.. db[level]
 
     ___ s..

@@ -5,9 +5,9 @@ c_ l..(object):
         r.. [n ___ n __ arg __ n % 2 __ 0]
     ___ odd
         r.. [n ___ n __ arg __ n % 2 != 0]
-    ___ under(self,num):
+    ___ under num):
         r.. [n ___ n __ arg __ n < num]
-    ___ over(self,num):
+    ___ over num):
         r.. [n ___ n __ arg __ n > num]
-    ___ in_range(self,m..,max):
-        r.. [n ___ n __ arg __ n >= m.. a.. n <= max]
+    ___ in_range m..,m..):
+        r.. [n ___ n __ arg __ n >= m.. a.. n <= m..]

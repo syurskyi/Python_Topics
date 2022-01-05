@@ -5,7 +5,7 @@ Created on Feb 19, 2017
 '''
 
 c_ Solution(object):
-    ___ minSubArrayLen(self, s, nums):
+    ___ minSubArrayLen  s, nums):
         """
         :type s: int
         :type nums: List[int]
@@ -28,7 +28,7 @@ c_ Solution(object):
         ____:
             r.. minLen
     
-    ___ minSubArrayLenBS(self, s, nums):
+    ___ minSubArrayLenBS  s, nums):
         sums = [0]*(l..(nums)+1)
         ___ i __ r..(1, l..(sums)):
             sums[i] = sums[i-1] + nums[i-1]
@@ -40,7 +40,7 @@ c_ Solution(object):
             minLen = m..(minLen, end-i)
         r.. minLen __ minLen <= l..(nums) ____ 0
     
-    ___ binarySearch(self, low, high, key, sums):
+    ___ binarySearch  low, high, key, sums):
         w.... low <= high:
             mid = i..((low+high)/2)
             __ sums[mid] >= key:

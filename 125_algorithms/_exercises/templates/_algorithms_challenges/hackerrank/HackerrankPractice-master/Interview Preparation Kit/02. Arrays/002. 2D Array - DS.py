@@ -13,5 +13,5 @@ ___ i __ r..(6):
 ans = hourglasses(arr, 0, 0)
 ___ i __ r..(4):
     ___ j __ r..(4):
-        ans = max(ans, hourglasses(arr, i, j))
+        ans = m..(ans, hourglasses(arr, i, j))
 print(ans)

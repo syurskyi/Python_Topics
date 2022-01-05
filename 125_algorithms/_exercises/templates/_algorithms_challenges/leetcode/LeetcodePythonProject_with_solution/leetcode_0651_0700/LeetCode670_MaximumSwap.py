@@ -4,7 +4,7 @@ Created on Oct 12, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maximumSwap(self, num):
+    ___ maximumSwap  num):
         """
         :type num: int
         :rtype: int

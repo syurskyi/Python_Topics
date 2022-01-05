@@ -3,7 +3,7 @@ _______ r__
 
 
 c_ Solution(object):
-  ___ findKthLargest(self, nums, k):
+  ___ findKthLargest  nums, k):
     """
     :type A: List[int]
     :type k: int
@@ -37,7 +37,7 @@ c_ Solution(object):
 
     r.. quickselect(0, l..(nums) - 1, nums, k - 1)
 
-  ___ maxProfit(self, k, prices):
+  ___ maxProfit  k, prices):
     """
     :type k: int
     :type prices: List[int]

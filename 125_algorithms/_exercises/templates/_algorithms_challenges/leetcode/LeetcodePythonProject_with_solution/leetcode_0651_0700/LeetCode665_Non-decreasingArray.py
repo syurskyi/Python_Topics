@@ -4,7 +4,7 @@ Created on Oct 9, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ checkPossibility(self, nums):
+    ___ checkPossibility  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -21,7 +21,7 @@ c_ Solution(object):
             prev = nums[i]
         r.. T..
     
-    ___ checkPossibility_modifying(self, nums):
+    ___ checkPossibility_modifying  nums):
         """
         :type nums: List[int]
         :rtype: bool

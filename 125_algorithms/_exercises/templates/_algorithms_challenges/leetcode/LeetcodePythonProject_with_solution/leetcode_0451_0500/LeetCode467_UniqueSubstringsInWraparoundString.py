@@ -5,7 +5,7 @@ Created on Apr 25, 2017
 '''
 
 c_ Solution(object):
-    ___ findSubstringInWraproundString(self, p):
+    ___ findSubstringInWraproundString  p):
         """
         :type p: str
         :rtype: int
@@ -13,11 +13,11 @@ c_ Solution(object):
         count = [0]*26
         maxCurrLen = 0
         ___ i, c __ e..(p):
-            __ i > 0 a.. (ord(c)-ord(p[i-1])__1 o. (c__'a' a.. p[i-1]__'z')):
+            __ i > 0 a.. (o..(c)-o..(p[i-1])__1 o. (c__'a' a.. p[i-1]__'z')):
                 maxCurrLen += 1
             ____:
                 maxCurrLen = 1
-            count[ord(c)-ord('a')] = max(count[ord(c)-ord('a')], maxCurrLen)
+            count[o..(c)-o..('a')] = m..(count[o..(c)-o..('a')], maxCurrLen)
         r.. s..(count)
     
     ___ test

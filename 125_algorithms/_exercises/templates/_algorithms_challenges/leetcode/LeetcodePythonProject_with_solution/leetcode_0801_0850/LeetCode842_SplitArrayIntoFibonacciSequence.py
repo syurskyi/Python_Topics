@@ -4,7 +4,7 @@ Created on Jan 31, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ splitIntoFibonacci(self, S):
+    ___ splitIntoFibonacci  S):
         """
         :type S: str
         :rtype: List[int]
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(s, 0, res)
         r.. res __ l..(res) > 2 ____ []
     
-    ___ helper(self, s, i, res):
+    ___ helper  s, i, res):
         __ i >= l..(s) a.. l..(res) > 2:
             r.. T..
         ___ j __ r..(i+1, l..(s)+1):

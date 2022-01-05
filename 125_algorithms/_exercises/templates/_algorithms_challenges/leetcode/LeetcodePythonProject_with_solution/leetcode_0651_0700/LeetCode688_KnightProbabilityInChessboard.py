@@ -4,7 +4,7 @@ Created on Oct 23, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ knightProbability(self, N, K, r, c):
+    ___ knightProbability  N, K, r, c):
         """
         :type N: int
         :type K: int

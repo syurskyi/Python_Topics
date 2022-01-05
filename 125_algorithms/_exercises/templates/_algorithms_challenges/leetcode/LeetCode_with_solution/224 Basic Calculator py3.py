@@ -25,7 +25,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ calculate(self, s: s..) __ i..:
+    ___ calculate  s: s..) __ i..:
         """
         1. treat +/- as unary operator
         2. maintain stk of operands to sum
@@ -34,7 +34,7 @@ c_ Solution:
         ret, _ = eval(s + "\0", 0, [])
         r.. ret
 
-    ___ eval(self, s: s.., start: i.., stk: List[i..]) __ i..:
+    ___ eval  s: s.., start: i.., stk: List[i..]) __ i..:
         prev_op = "+"
         operand = 0
         i = start

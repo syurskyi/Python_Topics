@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findOrder(self, n, prerequisites):
+    ___ findOrder  n, prerequisites):
         """
         :type n: int
         :type prerequisites: list[list[int]]

@@ -29,7 +29,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ findOrder(self, numCourses, prerequisites):
+    ___ findOrder  numCourses, prerequisites):
         """
         Graph -> Start from V with no predecessor (pi) -> Topological Sorting
         :type numCourses: int
@@ -45,7 +45,7 @@ c_ Solution:
 
         r.. topological_sort(V)
 
-    ___ topological_sort(self, V):
+    ___ topological_sort  V):
         visited = set()
         marked = set()
         ret    # list
@@ -58,7 +58,7 @@ c_ Solution:
         ret.reverse()
         r.. ret
 
-    ___ dfs(self, V, k, visited, marked, ret):
+    ___ dfs  V, k, visited, marked, ret):
         """
         dfs construct the ret while at the same time check acyclic
 

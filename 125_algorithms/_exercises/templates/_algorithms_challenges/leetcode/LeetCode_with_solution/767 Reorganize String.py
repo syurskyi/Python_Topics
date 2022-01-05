@@ -22,7 +22,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ reorganizeString(self, S: s..) __ s..:
+    ___ reorganizeString  S: s..) __ s..:
         """
         piles by max char and circular append
         """

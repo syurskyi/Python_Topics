@@ -27,7 +27,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ sortArrayByParityII(self, A: List[i..]) __ List[i..]:
+    ___ sortArrayByParityII  A: List[i..]) __ List[i..]:
         even_idx = 0
         ___ odd_idx __ r..(1, l..(A), 2):
             __ A[odd_idx] % 2 __ 0:
@@ -37,7 +37,7 @@ c_ Solution:
 
         r.. A
 
-    ___ sortArrayByParityII_complex(self, A: List[i..]) __ List[i..]:
+    ___ sortArrayByParityII_complex  A: List[i..]) __ List[i..]:
         """
         in-place two passes
         """

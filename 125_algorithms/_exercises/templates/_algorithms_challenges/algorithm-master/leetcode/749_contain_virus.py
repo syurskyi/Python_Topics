@@ -25,7 +25,7 @@ c_ Solution:
         ( 0,  1),
     )
 
-    ___ containVirus(self, G):
+    ___ containVirus  G):
         """
         :type G: List[List[int]]
         :rtype: int
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. walls
 
-    ___ build_walls(self, G):
+    ___ build_walls  G):
         m, n = l..(G), l..(G[0])
         ex_virus    # list
         spreading    # list
@@ -80,7 +80,7 @@ c_ Solution:
 
         r.. walls[_max_i]
 
-    ___ dfs(self, x, y, G, visited, ex_virus, spreading, walls):
+    ___ dfs  x, y, G, visited, ex_virus, spreading, walls):
         m, n = l..(G), l..(G[0])
         __ n.. (0 <= x < m a.. 0 <= y < n) o. visited[x][y]:
             r..

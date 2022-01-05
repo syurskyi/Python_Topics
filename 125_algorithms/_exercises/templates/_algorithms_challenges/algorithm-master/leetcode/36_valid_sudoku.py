@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isValidSudoku(self, board):
+    ___ isValidSudoku  board):
         """
         :type board: List[List[str]]
         :rtype: bool

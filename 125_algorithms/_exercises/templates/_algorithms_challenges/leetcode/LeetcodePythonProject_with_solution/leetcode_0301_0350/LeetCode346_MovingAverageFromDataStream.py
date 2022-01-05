@@ -9,7 +9,7 @@ c_ MovingAverage(object):
         size = size
         queue    # list
     
-    ___ next(self, val):
+    ___ next  val):
         __ size <= 0: r.. 0
         __ l..(queue) __ size:
             queue.pop(0)

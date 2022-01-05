@@ -27,7 +27,7 @@ c_ TrieNode:
 
 
 c_ Solution:
-    ___ palindromePairs(self, words: List[s..]) __ List[List[i..]]:
+    ___ palindromePairs  words: List[s..]) __ List[List[i..]]:
         """
         Brute force, i, j and then check palindrom
         O(N^2 * L)
@@ -82,7 +82,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ is_palindrome(self, w, lo, hi):
+    ___ is_palindrome  w, lo, hi):
         i = lo
         j = hi - 1
         w.... i < j:

@@ -3,7 +3,7 @@ c_ Solution:
     # @param end, a string
     # @param dict, a set of string
     # @return an integer
-    ___ ladderLength(self, start, end, d..):
+    ___ ladderLength  start, end, d..):
         queue    # list
         distance    # list
         queue.a..(start)
@@ -25,7 +25,7 @@ c_ Solution:
                     distance.a..(d + 1)
         r.. 0
 
-    ___ is_adjacent(self, word1, word2):
+    ___ is_adjacent  word1, word2):
         count = 0
         n = l..(word1)
         ___ i __ r..(n):

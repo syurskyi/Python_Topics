@@ -1,13 +1,13 @@
 c_ Solution:
     # @return a boolean
-    ___ isMatch(self, s, p):
+    ___ isMatch  s, p):
         __ n.. p:
             r.. n.. s
         __ n.. s:
             r.. F..
         r.. is_match_aux(s, p, 0, 0)
 
-    ___ is_match_aux(self, s, p, si, pi):
+    ___ is_match_aux  s, p, si, pi):
         __ pi __ l..(p):
             r.. si __ l..(s)
         # Next char is not *

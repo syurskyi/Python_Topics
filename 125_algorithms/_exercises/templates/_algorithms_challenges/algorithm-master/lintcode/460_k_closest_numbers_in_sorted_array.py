@@ -5,7 +5,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer array
     """
-    ___ kClosestNumbers(self, A, target, k):
+    ___ kClosestNumbers  A, target, k):
         __ n.. A:
             r.. []
 

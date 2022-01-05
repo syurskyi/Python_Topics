@@ -4,4 +4,4 @@
 
 _, a, b = input(), l..(map(i.., input().s..())), l..(map(i.., input().s..()))
 print(s..([a..(i % x __ 0 ___ x __ a) a..
-           a..(x % i __ 0 ___ x __ b) ___ i __ r..(max(a), m..(b)+1)]))
+           a..(x % i __ 0 ___ x __ b) ___ i __ r..(m..(a), m..(b)+1)]))

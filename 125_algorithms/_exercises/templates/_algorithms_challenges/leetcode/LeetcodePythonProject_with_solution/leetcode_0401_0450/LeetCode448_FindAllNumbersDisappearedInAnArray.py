@@ -5,7 +5,7 @@ Created on Apr 18, 2017
 '''
 
 c_ Solution(object):
-    ___ findDisappearedNumbers(self, nums):
+    ___ findDisappearedNumbers  nums):
         ___ num __ nums:
             ind = abs(num)-1
             __ nums[ind] > 0:

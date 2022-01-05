@@ -4,7 +4,7 @@ Created on Oct 5, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ cheapestJump(self, A, B):
+    ___ cheapestJump  A, B):
         """
         :type A: List[int]
         :type B: int

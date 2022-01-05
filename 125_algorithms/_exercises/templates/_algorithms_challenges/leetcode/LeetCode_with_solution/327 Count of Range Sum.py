@@ -14,7 +14,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ countRangeSum(self, nums, lower, upper):
+    ___ countRangeSum  nums, lower, upper):
         """
         MergeSort while counting required range sum
         :type nums: List[int]

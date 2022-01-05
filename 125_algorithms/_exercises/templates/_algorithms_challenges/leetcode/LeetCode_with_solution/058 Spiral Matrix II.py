@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ generateMatrix(self, n):
+    ___ generateMatrix  n):
         """
         algorithm: array, simulation
         :param n: Integer
@@ -52,7 +52,7 @@ c_ Solution:
 
 
 c_ SolutionError:
-    ___ generateMatrix(self, n):
+    ___ generateMatrix  n):
         """
         algorithm: array, simulation
         :param n: Integer
@@ -89,7 +89,7 @@ c_ SolutionError:
         r.. result
 
 
-__ __name____"__main__":
+__ _____ __ ____
     result = Solution().generateMatrix(4)
     ___ row __ result:
         print row

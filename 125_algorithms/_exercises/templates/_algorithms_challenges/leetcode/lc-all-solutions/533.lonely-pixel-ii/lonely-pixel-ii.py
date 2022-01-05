@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findBlackPixel(self, picture, N):
+  ___ findBlackPixel  picture, N):
     """
     :type picture: List[List[str]]
     :type N: int

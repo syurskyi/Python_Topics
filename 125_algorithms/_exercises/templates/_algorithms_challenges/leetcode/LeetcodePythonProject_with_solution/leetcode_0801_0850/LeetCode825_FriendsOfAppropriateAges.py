@@ -4,7 +4,7 @@ Created on May 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numFriendRequests(self, ages):
+    ___ numFriendRequests  ages):
         """
         :type ages: List[int]
         :rtype: int

@@ -5,7 +5,7 @@ Created on Jan 22, 2017
 '''
 
 c_ Solution(object):
-    ___ uniquePaths(self, m, n):
+    ___ uniquePaths  m, n):
         """
         :type m: int
         :type n: int
@@ -21,7 +21,7 @@ c_ Solution(object):
                 dp[i][j] = dp[i-1][j]+dp[i][j-1]
         r.. dp[-1][-1]
     
-    ___ uniquePaths_orig(self, m, n):
+    ___ uniquePaths_orig  m, n):
         """
         :type m: int
         :type n: int

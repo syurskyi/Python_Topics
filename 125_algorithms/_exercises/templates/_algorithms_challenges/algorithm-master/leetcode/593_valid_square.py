@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ validSquare(self, p1, p2, p3, p4):
+    ___ validSquare  p1, p2, p3, p4):
         """
         :type p1: List[int]
         :type p2: List[int]
@@ -31,7 +31,7 @@ c_ Solution:
             l03 __ l12,
         ))
 
-    ___ get_distance(self, a, b):
+    ___ get_distance  a, b):
         """
         find the size of 'ab'
         """

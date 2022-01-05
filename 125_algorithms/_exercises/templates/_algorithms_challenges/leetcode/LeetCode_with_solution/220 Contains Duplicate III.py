@@ -8,7 +8,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ containsNearbyAlmostDuplicate(self, nums, k, t):
+    ___ containsNearbyAlmostDuplicate  nums, k, t):
         """
         Two Intervals k & t:
         * Use OrderedDict to remember the index and n/t to shrink the interval to -1, 0, 1.
@@ -41,7 +41,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ containsNearByDuplicate(self, nums, k):
+    ___ containsNearByDuplicate  nums, k):
         od = OrderedDict()
         ___ n __ nums:
             __ od.get(n):

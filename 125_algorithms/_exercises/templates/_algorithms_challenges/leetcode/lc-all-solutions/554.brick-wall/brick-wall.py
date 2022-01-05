@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ leastBricks(self, wall):
+  ___ leastBricks  wall):
     """
     :type wall: List[List[int]]
     :rtype: int
@@ -12,5 +12,5 @@ c_ Solution(object):
       ___ brick __ w[:-1]:
         coverage += brick
         d[coverage] = d.get(coverage, 0) + 1
-        count = max(count, d.get(coverage, 0))
+        count = m..(count, d.get(coverage, 0))
     r.. ans - count

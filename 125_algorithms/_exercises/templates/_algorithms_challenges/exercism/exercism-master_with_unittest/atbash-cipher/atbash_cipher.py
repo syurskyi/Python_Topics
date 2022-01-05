@@ -8,25 +8,25 @@ c_ Atbash:
     EXCLUDE = set(s__.punctuation + ' ')
 
     @staticmethod
-    ___ encode(self, msg):
-        r.. split_every_five(self, encoded(self, msg))
+    ___ encode  msg):
+        r.. split_every_five  encoded  msg))
 
     @staticmethod
-    ___ split_every_five(self, encoded):
+    ___ split_every_five  encoded):
         r.. ' '.j..([encoded[i:i + 5] ___ i __ r..(0, l..(encoded), 5)])
 
     @staticmethod
-    ___ encoded(self, msg):
+    ___ encoded  msg):
         r.. ''.j..(([char __ char.isdigit() ____ CIPHER[char]
-                         ___ char __ clean(self, msg)]))
+                         ___ char __ clean  msg)]))
 
     @staticmethod
-    ___ clean(self, msg):
+    ___ clean  msg):
         r.. (char ___ char __ msg.l.. __ char n.. __ EXCLUDE)
 
     @staticmethod
-    ___ decode(self, msg):
-        r.. encoded(self, msg)
+    ___ decode  msg):
+        r.. encoded  msg)
 
 
 ___ encode(msg):

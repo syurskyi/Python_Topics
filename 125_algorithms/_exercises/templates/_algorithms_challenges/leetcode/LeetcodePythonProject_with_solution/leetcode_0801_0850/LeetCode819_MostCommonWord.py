@@ -4,7 +4,7 @@ Created on May 1, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ mostCommonWord(self, paragraph, banned):
+    ___ mostCommonWord  paragraph, banned):
         """
         :type paragraph: str
         :type banned: List[str]
@@ -17,8 +17,8 @@ c_ Solution(object):
         i = 0
         ___ j __ r..(l..(paragraph)):
             c = paragraph[j]
-            __ n.. (ord('a') <= ord(c) <= ord('z') o.\
-                ord('A') <= ord(c) <= ord('Z')):
+            __ n.. (o..('a') <= o..(c) <= o..('z') o.\
+                o..('A') <= o..(c) <= o..('Z')):
                 word = paragraph[i:j].l..
                 __ word a.. word n.. __ banned:
                     hashmap[word] = hashmap.get(word, 0)+1

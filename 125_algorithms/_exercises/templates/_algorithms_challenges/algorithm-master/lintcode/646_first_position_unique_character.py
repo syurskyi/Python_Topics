@@ -3,7 +3,7 @@ c_ Solution:
     @param: s: a string
     @return: it's index
     """
-    ___ firstUniqChar(self, s):
+    ___ firstUniqChar  s):
         __ n.. s:
             r.. -1
 

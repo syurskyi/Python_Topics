@@ -2,7 +2,7 @@ c_ Solution:
     """
     BFS
     """
-    ___ findShortestWay(self, maze, ball, hole):
+    ___ findShortestWay  maze, ball, hole):
         """
         :type maze: List[List[int]]
         :type ball: List[int]
@@ -79,7 +79,7 @@ c_ Solution2:
     """
     Dijkstra
     """
-    ___ findShortestWay(self, maze, ball, hole):
+    ___ findShortestWay  maze, ball, hole):
         """
         :type maze: List[List[int]]
         :type ball: List[int]

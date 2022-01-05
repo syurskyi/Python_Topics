@@ -17,7 +17,7 @@ c_ HitCounter(object):
         """
         q = d..()
 
-    ___ hit(self, timestamp):
+    ___ hit  timestamp):
         """
         Record a hit.
         @param timestamp - The current timestamp (in seconds granularity).
@@ -27,7 +27,7 @@ c_ HitCounter(object):
         pop(timestamp)
         q.a..(timestamp)
 
-    ___ getHits(self, timestamp):
+    ___ getHits  timestamp):
         """
         Return the number of hits in the past 5 minutes.
         @param timestamp - The current timestamp (in seconds granularity).
@@ -37,7 +37,7 @@ c_ HitCounter(object):
         pop(timestamp)
         r.. l..(q)
 
-    ___ pop(self, timestamp):
+    ___ pop  timestamp):
         w.... q a.. timestamp - q[0] >= 300:
             q.popleft()
 

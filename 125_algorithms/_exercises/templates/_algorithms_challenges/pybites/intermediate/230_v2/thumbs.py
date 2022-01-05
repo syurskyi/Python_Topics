@@ -5,11 +5,11 @@ c_ Thumbs:
 
     
 
-    ___ __rmul__(self,number):
+    ___ __rmul__ number):
 
         r.. self * number
 
-    ___ __mul__(self,number):
+    ___ __mul__ number):
         __ isi..(number,i..):
             __ number > 0:
                 s__ = THUMBS_UP

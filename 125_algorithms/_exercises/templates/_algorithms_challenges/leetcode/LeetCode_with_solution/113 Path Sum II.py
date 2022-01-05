@@ -25,7 +25,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ pathSum(self, root, s..):
+    ___ pathSum  root, s..):
         """
         :param root: TreeNode
         :param sum: integer
@@ -35,7 +35,7 @@ c_ Solution:
         accumulatePathSum(root, s.., [], result)
         r.. result
 
-    ___ accumulatePathSum(self, root, s.., cur_path, result):
+    ___ accumulatePathSum  root, s.., cur_path, result):
         """
         DFS
         Similar to previous path sum

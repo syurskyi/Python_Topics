@@ -25,7 +25,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ levelOrderBottom(self, root):
+    ___ levelOrderBottom  root):
         """
         bfs
         :param root: TreeNode
@@ -47,7 +47,7 @@ c_ Solution:
                     next_level.a..(element.right)
         r.. result
 
-__ __name____"__main__":
+__ _____ __ ____
     Solution().levelOrderBottom(TreeNode(1))
 
 

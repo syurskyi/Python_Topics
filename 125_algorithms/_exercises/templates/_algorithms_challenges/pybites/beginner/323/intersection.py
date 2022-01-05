@@ -7,9 +7,9 @@ ___ intersection(*args: Iterable) __ Set[Any]:
     #args1 = set(args[1])
     #print( args0.intersection(args1) )
     lists = [x ___ x __ args __ x]
-    try:
+    ___
         temp_set = set(functools.reduce(l.... x, y: set(x).intersection(y), lists))
-    except T..:
+    ______ T..:
         temp_set = set()
     r.. temp_set
 

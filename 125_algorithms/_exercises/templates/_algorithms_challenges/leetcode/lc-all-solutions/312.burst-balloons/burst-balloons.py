@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxCoins(self, nums):
+  ___ maxCoins  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(object):
       ___ i __ r..(start, end + 1):
         left = dc(start, i - 1, dp, nums)
         right = dc(i + 1, end, dp, nums)
-        dp[start][end] = max(dp[start][end], left + right + nums[start - 1] * nums[i] * nums[end + 1])
+        dp[start][end] = m..(dp[start][end], left + right + nums[start - 1] * nums[i] * nums[end + 1])
       r.. dp[start][end]
 
     dc(1, l..(nums) - 2, dp, nums)

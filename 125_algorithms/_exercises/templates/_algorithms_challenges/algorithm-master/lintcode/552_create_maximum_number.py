@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maxNumber(self, a, b, k):
+    ___ maxNumber  a, b, k):
         """
         :type a: list[int]
         :type b: list[int]
@@ -9,18 +9,18 @@ c_ Solution:
         ans    # list
 
         ___ size __ r..(
-            max(0, k - l..(a)),
+            m..(0, k - l..(a)),
             m..(k, l..(b)) + 1
         ):
             res = merge(
                 get_max(a, k - size),
                 get_max(b, size)
             )
-            ans = max(ans, res)
+            ans = m..(ans, res)
 
         r.. ans
 
-    ___ get_max(self, a, size):
+    ___ get_max  a, size):
         res    # list
         n = l..(a)
 
@@ -37,8 +37,8 @@ c_ Solution:
 
         r.. res
 
-    ___ merge(self, a, b):
+    ___ merge  a, b):
         r.. [
-            max(a, b).pop(0)
+            m..(a, b).pop(0)
             ___ _ __ r..(l..(a) + l..(b))
         ]

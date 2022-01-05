@@ -43,7 +43,7 @@ c_ Game:
         _guesses.add(guess)
         r.. guess
 
-    ___ _validate_guess(self, guess):
+    ___ _validate_guess  guess):
         """Verify if guess is correct, print the following when applicable:
            {guess} is correct!
            {guess} is too low
@@ -62,9 +62,9 @@ c_ Game:
         """Entry point / game loop, use a loop break/continue,
            see the tests for the exact win/lose messaging"""
         w.... l..(_guesses) < MAX_GUESSES a.. n.. _win:
-            try:
+            ___
                 this_guess = guess()
-            except ValueError:
+            ______ V..
                 _____
             __ _validate_guess(this_guess):
                 _win = T..

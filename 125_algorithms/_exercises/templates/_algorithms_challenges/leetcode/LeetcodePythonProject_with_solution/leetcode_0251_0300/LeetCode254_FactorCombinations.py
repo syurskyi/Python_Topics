@@ -5,7 +5,7 @@ Created on Mar 1, 2017
 '''
 
 c_ Solution(object):
-    ___ getFactors(self, n):
+    ___ getFactors  n):
         """
         :type n: int
         :rtype: List[List[int]]
@@ -25,7 +25,7 @@ c_ Solution(object):
             ____:
                 x += 1
     
-    ___ getFactorsSlow(self, n):
+    ___ getFactorsSlow  n):
         """
         :type n: int
         :rtype: List[List[int]]
@@ -34,7 +34,7 @@ c_ Solution(object):
         helper(result, [], n, 2)
         r.. result
     
-    ___ helper(self, result, item, n, start):
+    ___ helper  result, item, n, start):
         __ n <= 1:
             __ l..(item)>1:
                 result.a..(l..(item))

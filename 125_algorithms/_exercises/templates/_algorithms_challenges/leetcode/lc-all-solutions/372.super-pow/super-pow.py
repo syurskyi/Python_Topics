@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ superPow(self, a, b):
+  ___ superPow  a, b):
     """
     :type a: int
     :type b: List[int]

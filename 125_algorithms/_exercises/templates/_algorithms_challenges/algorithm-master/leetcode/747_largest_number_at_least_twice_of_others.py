@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ dominantIndex(self, A):
+    ___ dominantIndex  A):
         """
         :type A: List[int]
         :rtype: int

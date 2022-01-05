@@ -5,7 +5,7 @@ Created on May 5, 2017
 '''
 
 c_ Solution(object):
-    ___ lengthOfLongestSubstring(self, s):
+    ___ lengthOfLongestSubstring  s):
         """
         :type s: str
         :rtype: int
@@ -18,7 +18,7 @@ c_ Solution(object):
                 hashset.discard(s[left])
                 left += 1
             hashset.add(c)
-            maxLen = max(maxLen, i-left+1)
+            maxLen = m..(maxLen, i-left+1)
         r.. maxLen
     
     ___ test

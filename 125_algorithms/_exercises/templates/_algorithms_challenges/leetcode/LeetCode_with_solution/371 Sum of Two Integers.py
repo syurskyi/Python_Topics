@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ getSum(self, a, b):
+    ___ getSum  a, b):
         """
         circuit full-adder
         since Python don't restrict to 32bit, we need

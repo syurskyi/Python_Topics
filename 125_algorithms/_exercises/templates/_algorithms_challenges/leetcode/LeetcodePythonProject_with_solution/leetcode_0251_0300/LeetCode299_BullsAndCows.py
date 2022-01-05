@@ -5,7 +5,7 @@ Created on Mar 9, 2017
 '''
 
 c_ Solution(object):
-    ___ getHint(self, secret, guess):
+    ___ getHint  secret, guess):
         bulls = set()
         hashmap    # dict
         ___ i, (c1, c2) __ e..(z..(secret, guess)):

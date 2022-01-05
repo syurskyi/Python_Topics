@@ -34,7 +34,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ PredictTheWinner(self, nums):
+    ___ PredictTheWinner  nums):
         """
         Let F[i][j] be the max score choose from A[i:j]. The player has two
         options
@@ -55,7 +55,7 @@ c_ Solution:
         F = defaultdict(l....: defaultdict(i..))
         ___ i __ r..(l-1, -1, -1):
             ___ j __ r..(i+1, l+1):
-                F[i][j] = max(
+                F[i][j] = m..(
                     gross[j] - gross[i] - F[i+1][j],
                     gross[j] - gross[i] - F[i][j-1]
                 )

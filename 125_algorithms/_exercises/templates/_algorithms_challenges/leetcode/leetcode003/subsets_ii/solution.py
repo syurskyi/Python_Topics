@@ -1,11 +1,11 @@
 c_ Solution:
     # @param num, a list of integer
     # @return a list of lists of integer
-    ___ subsetsWithDup(self, S):
+    ___ subsetsWithDup  S):
         S.s..()
         r.. _subsets(S, l..(S))
 
-    ___ _subsets(self, S, k):
+    ___ _subsets  S, k):
         __ k __ 0:
             r.. [[]]
         ____:

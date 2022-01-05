@@ -5,7 +5,7 @@ Created on Apr 20, 2017
 '''
 
 c_ Solution(object):
-    ___ findMinArrowShots(self, points):
+    ___ findMinArrowShots  points):
         __ n.. points: r.. 0
         points.s..(key=l.... x: (x[1], x[0]))
         count = 0

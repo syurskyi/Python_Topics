@@ -4,7 +4,7 @@ Created on Sep 16, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ mirrorReflection(self, p, q):
+    ___ mirrorReflection  p, q):
         """
         :type p: int
         :type q: int

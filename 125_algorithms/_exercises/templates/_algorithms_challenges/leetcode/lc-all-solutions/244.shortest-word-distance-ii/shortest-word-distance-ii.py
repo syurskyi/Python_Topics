@@ -8,7 +8,7 @@ c_ WordDistance(object):
     ___ i __ r..(0, l..(words)):
       d[words[i]] = d.get(words[i], []) + [i]
 
-  ___ shortest(self, word1, word2):
+  ___ shortest  word1, word2):
     """
     Adds a word into the data structure.
     :type word1: str

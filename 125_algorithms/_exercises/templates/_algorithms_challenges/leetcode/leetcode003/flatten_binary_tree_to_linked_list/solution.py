@@ -8,7 +8,7 @@
 c_ Solution:
     # @param root, a tree node
     # @return nothing, do it in place
-    ___ flatten(self, root):
+    ___ flatten  root):
         __ root __ N..
             r..
         flatten(root.left)

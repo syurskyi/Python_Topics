@@ -1,6 +1,6 @@
 c_ Solution(object):
 
-  ___ countPrimes(self, n):
+  ___ countPrimes  n):
     """
     :type n: int
     :rtype: int

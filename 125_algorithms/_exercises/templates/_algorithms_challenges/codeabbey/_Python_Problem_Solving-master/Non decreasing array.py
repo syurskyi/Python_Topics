@@ -1,10 +1,10 @@
 c_ Solution:
-    ___ checkPossibility(self, nums: List[i..]) __ bool:
+    ___ checkPossibility  nums: List[i..]) __ bool:
                 i = 0
                 non_count = 0
                 equals = F..
                 w.... i!= l..(nums)-1:
-                    try:
+                    ___
                         __ nums[i] > nums[i+1]:
                             __ i+1 __ l..(nums)-1:
                                 nums[i+1] += (nums[i] - nums[i+1]) + 1
@@ -29,7 +29,7 @@ c_ Solution:
                             i += 1
                         ____:
                             i += 1
-                    except:
+                    ______:
                         p..
                     __ non_count >= 2:
                         break

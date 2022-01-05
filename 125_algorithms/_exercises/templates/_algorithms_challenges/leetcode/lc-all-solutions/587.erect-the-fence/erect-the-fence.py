@@ -5,7 +5,7 @@
 #         self.y = b
 
 c_ Solution(object):
-  ___ outerTrees(self, points):
+  ___ outerTrees  points):
     """
     :type points: List[Point]
     :rtype: List[Point]

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ alienOrder(self, words):
+    ___ alienOrder  words):
         """
         :type words: list[str]
         :rtype: str
@@ -9,7 +9,7 @@ c_ Solution:
 
         ans    # list
         gotcha = set()
-        max_size = max(l..(word) ___ word __ words)
+        max_size = m..(l..(word) ___ word __ words)
 
         ___ j __ r..(max_size):
             ___ word __ words:
@@ -29,7 +29,7 @@ c_ Solution:
     """
     REF: https://discuss.leetcode.com/topic/28308/java-ac-solution-using-bfs/2
     """
-    ___ alienOrder(self, words):
+    ___ alienOrder  words):
         __ n.. words:
             r.. ''
 

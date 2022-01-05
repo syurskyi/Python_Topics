@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ minArea(self, image, x, y):
+    ___ minArea  image, x, y):
         """
         :type image: List[List[str]]
         :type x: int

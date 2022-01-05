@@ -10,7 +10,7 @@ c_ LoadBalancer:
     @param: server_id: add a new server to the cluster
     @return: nothing
     """
-    ___ add(self, server_id):
+    ___ add  server_id):
         servers.a..(server_id)
         svr2idx[server_id] = l..(servers) - 1
 
@@ -18,7 +18,7 @@ c_ LoadBalancer:
     @param: server_id: server_id remove a bad server from the cluster
     @return: nothing
     """
-    ___ remove(self, server_id):
+    ___ remove  server_id):
         svrs = servers
 
         i = svr2idx[server_id]

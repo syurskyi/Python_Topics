@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canPermutePalindrome(self, s):
+  ___ canPermutePalindrome  s):
     """
     :type s: str
     :rtype: bool

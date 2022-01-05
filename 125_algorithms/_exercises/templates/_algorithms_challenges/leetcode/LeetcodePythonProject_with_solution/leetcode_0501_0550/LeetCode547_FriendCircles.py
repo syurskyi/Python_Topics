@@ -5,7 +5,7 @@ Created on Aug 20, 2017
 '''
 
 c_ Solution(object):
-    ___ findCircleNum(self, M):
+    ___ findCircleNum  M):
         """
         :type M: List[List[int]]
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution(object):
                         roots[root1] = root2
         r.. count
     
-    ___ getRoot(self, roots, num):
+    ___ getRoot  roots, num):
         w.... roots[num] != -1:
             num = roots[num]
         r.. num

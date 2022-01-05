@@ -10,11 +10,11 @@ As always see the tests written in pytest to see what your code need to pass. Ha
 
 """
 ___ my_solution_positive_divide(numerator, denominator):
-    try:
+    ___
         result = numerator / denominator
-    except ZeroDivisionError:
+    ______ ZeroDivisionError:
         r.. 0
-    except:
+    ______:
         r..
     __ result < 0:
         r.. ValueError
@@ -33,11 +33,11 @@ If there was no exception, we check result variable and return if no exception..
 """
 
 ___ pybites_solution_positive_divide(numerator, denominator):
-    try:
+    ___
         result = numerator/denominator
-    except ZeroDivisionError:
+    ______ ZeroDivisionError:
         r.. 0
-    except (T.., ValueError):
+    ______ (T.., ValueError):
         r..
     ____:
         __ result < 0:

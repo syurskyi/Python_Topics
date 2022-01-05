@@ -17,7 +17,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ findMin(self, A):
+    ___ findMin  A):
         """
         similar to find target in rotated sorted array
 

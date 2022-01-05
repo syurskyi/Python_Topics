@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ solveNQueens(self, n):
+  ___ solveNQueens  n):
     """
     :type n: int
     :rtype: List[List[str]]

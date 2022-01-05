@@ -12,7 +12,7 @@ c_ RestAPI(object):
     # Payload format: `{"users":["Adam","Bob"]}`
     # Response without payload: `{"users":<List of all User objects>}`
     # Response with payload: `{"users":<List of User objects for <users> (sorted by name)}`
-    ___ get(self, url, payload_ N..
+    ___ get  url, payload_ N..
         __ payload __ N..
             # List of all User objects
             r.. json.dumps(database)
@@ -22,7 +22,7 @@ c_ RestAPI(object):
         usernames = payload['users']
         r.. json.dumps({'users': get_users(usernames)})
 
-    ___ post(self, url, payload_ N..
+    ___ post  url, payload_ N..
         __ payload __ N..
             r.. ValueError("Payload must not be None.")
 
@@ -40,7 +40,7 @@ c_ RestAPI(object):
     # Payload format: `{"user":<name of new user (unique)>}`
     # Response without payload: N/A
     # Response with payload: `<User object for new user>`
-    ___ add(self, payload):
+    ___ add  payload):
         username = payload['user']
 
         create_user(username)
@@ -54,7 +54,7 @@ c_ RestAPI(object):
     # Response without payload: N/A
     # Response with payload: `{"users":<updated User objects for <lender> and
     # <borrower> (sorted by name)>}`
-    ___ iou(self, payload):
+    ___ iou  payload):
         lender_username = payload['lender']
         borrower_username = payload['borrower']
         amount = payload['amount']
@@ -67,7 +67,7 @@ c_ RestAPI(object):
         users = get_users([lender_username, borrower_username])
         r.. json.dumps({'users': users})
 
-    ___ execute_iou(self, lender, borrower, amount):
+    ___ execute_iou  lender, borrower, amount):
         update_balance(lender, borrower, amount)
 
         __ n.. lender_owes_borrower(lender, borrower):
@@ -81,17 +81,17 @@ c_ RestAPI(object):
                 execute_borrow(lender, borrower,
                                     remaining_amount_to_borrow)
 
-    ___ execute_borrow(self, lender, borrower, amount):
+    ___ execute_borrow  lender, borrower, amount):
         lender['owed_by'].setdefault(borrower['name'], 0)
         lender['owed_by'][borrower['name']] += amount
 
         borrower['owes'].setdefault(lender['name'], 0)
         borrower['owes'][lender['name']] += amount
 
-    ___ lender_owes_borrower(self, lender, borrower):
+    ___ lender_owes_borrower  lender, borrower):
         r.. lender['owes'].get(borrower['name'], 0) != 0
 
-    ___ pay_debt(self, lender, borrower, amount):
+    ___ pay_debt  lender, borrower, amount):
         debt = lender['owes'][borrower['name']]
 
         __ amount < debt:
@@ -107,11 +107,11 @@ c_ RestAPI(object):
             remaining_amount = amount - debt
             r.. remaining_amount
 
-    ___ update_balance(self, lender, borrower, amount):
+    ___ update_balance  lender, borrower, amount):
         lender['balance'] += amount
         borrower['balance'] -= amount
 
-    ___ create_user(self, username):
+    ___ create_user  username):
         new_user = {
             'name': username,
             'owes': {},
@@ -121,11 +121,11 @@ c_ RestAPI(object):
 
         database['users'].a..(new_user)
 
-    ___ get_users(self, usernames):
+    ___ get_users  usernames):
         users = [get_user(username) ___ username __ usernames]
         r.. s..(users, key=l.... user: user['name'])
 
-    ___ get_user(self, username):
+    ___ get_user  username):
         users = database['users']
         ___ user __ users:
             __ user['name'] __ username:

@@ -5,7 +5,7 @@ Created on Jan 23, 2017
 '''
 
 c_ Solution(object):
-    ___ sortColors(self, nums):
+    ___ sortColors  nums):
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.

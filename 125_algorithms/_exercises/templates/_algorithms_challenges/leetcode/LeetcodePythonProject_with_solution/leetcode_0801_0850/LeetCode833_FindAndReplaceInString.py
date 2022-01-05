@@ -4,7 +4,7 @@ Created on Jun 9, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ findReplaceString(self, S, indexes, sources, targets):
+    ___ findReplaceString  S, indexes, sources, targets):
         """
         :type S: str
         :type indexes: List[int]

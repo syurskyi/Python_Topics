@@ -3,7 +3,7 @@ ____ functools _______ reduce
 
 ___ largest_product(d.., size):
     products = [reduce(l.... x, y: x * y, s, 1) ___ s __ slices(d.., size)]
-    r.. max(products)
+    r.. m..(products)
 
 
 ___ slices(d.., size):

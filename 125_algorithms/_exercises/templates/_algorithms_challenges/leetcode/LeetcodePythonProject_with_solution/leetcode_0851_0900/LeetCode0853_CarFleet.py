@@ -4,7 +4,7 @@ Created on Sep 10, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ carFleet(self, target, position, speed):
+    ___ carFleet  target, position, speed):
         """
         :type target: int
         :type position: List[int]

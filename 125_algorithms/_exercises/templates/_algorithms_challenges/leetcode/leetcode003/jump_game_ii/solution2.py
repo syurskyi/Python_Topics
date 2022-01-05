@@ -17,7 +17,7 @@ index 0 to 1, then 3 steps to the last index.)
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ jump(self, A):
+    ___ jump  A):
         n = l..(A)
         __ l..(A) __ 1:
             r.. 0

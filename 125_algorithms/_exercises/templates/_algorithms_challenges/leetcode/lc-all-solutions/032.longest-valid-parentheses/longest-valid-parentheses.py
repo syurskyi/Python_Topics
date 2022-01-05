@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ longestValidParentheses(self, s):
+  ___ longestValidParentheses  s):
     """
     :type s: str
     :rtype: int
@@ -16,5 +16,5 @@ c_ Solution(object):
         j = i - dp[i]
         __ j >= 0:
           dp[i] += dp[j]
-        ans = max(ans, dp[i])
+        ans = m..(ans, dp[i])
     r.. ans

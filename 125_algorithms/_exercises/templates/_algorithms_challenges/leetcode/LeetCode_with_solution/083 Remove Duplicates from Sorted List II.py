@@ -14,7 +14,7 @@ c_ ListNode:
         next = N..
 
 c_ Solution:
-    ___ deleteDuplicates(self, head):
+    ___ deleteDuplicates  head):
         """
         Two pointers
         :param head: ListNode

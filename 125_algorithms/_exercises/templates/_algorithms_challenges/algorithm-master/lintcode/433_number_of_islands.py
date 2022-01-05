@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ numIslands(self, grid):
+    ___ numIslands  grid):
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, grid, x, y):
+    ___ dfs  grid, x, y):
         m, n = l..(grid), l..(grid[0])
         grid[x][y] = 0
 

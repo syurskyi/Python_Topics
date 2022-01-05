@@ -18,7 +18,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ countBits(self, num):
+    ___ countBits  num):
         """
         Dynamic programming: make use of what you have produced already
           0 => 0

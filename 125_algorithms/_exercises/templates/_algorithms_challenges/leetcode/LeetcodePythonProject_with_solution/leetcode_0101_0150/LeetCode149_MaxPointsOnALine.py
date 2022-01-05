@@ -10,7 +10,7 @@ c_ Point(object):
         y = b
 
 c_ Solution(object):
-    ___ maxPoints(self, points):
+    ___ maxPoints  points):
         """
         :type points: List[Point]
         :rtype: int
@@ -42,15 +42,15 @@ c_ Solution(object):
                     hashmap0    # dict
                     hashmap0[y] = 1
                     hashmap[x] = hashmap0
-                tmpMax = max(tmpMax, hashmap[x][y])
-            res = max(res, tmpMax+dup+1)
+                tmpMax = m..(tmpMax, hashmap[x][y])
+            res = m..(res, tmpMax+dup+1)
         r.. res
     
-    ___ gcd(self, a, b):
+    ___ gcd  a, b):
         __ b __ 0: r.. a
         r.. gcd(b, a%b)
     
-    ___ maxPoints_slope(self, points):
+    ___ maxPoints_slope  points):
         """
         :type points: List[Point]
         :rtype: int
@@ -79,7 +79,7 @@ c_ Solution(object):
             ___ count __ hashmap.v..
                 __ count + duplicate > maxVal:
                     maxVal = count + duplicate
-            maxVal = max(vertical+duplicate, maxVal)
+            maxVal = m..(vertical+duplicate, maxVal)
         r.. maxVal
     
     ___ test

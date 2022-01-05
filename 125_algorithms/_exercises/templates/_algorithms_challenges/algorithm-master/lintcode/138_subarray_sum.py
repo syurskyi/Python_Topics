@@ -3,7 +3,7 @@ c_ Solution:
     @param: nums: A list of integers
     @return: A list of integers includes the index of the first number and the index of the last number
     """
-    ___ subarraySum(self, nums):
+    ___ subarraySum  nums):
         """
         len(nums) == 5
         if `A[1] + A[2] + A[3] == 0`

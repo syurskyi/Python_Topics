@@ -5,7 +5,7 @@ Created on Apr 20, 2017
 '''
 
 c_ Solution(object):
-    ___ minMoves(self, nums):
+    ___ minMoves  nums):
         res = 0
         minVal = m..(nums)
         ___ num __ nums:

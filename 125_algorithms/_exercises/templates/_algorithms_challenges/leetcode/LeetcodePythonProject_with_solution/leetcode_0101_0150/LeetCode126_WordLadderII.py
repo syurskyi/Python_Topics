@@ -4,7 +4,7 @@ Created on May 24, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ findLadders(self, beginWord, endWord, wordList):
+    ___ findLadders  beginWord, endWord, wordList):
         """
         :type beginWord: str
         :type endWord: str
@@ -19,7 +19,7 @@ c_ Solution(object):
         dfs(beginWord, endWord, distance, wordSet, res, [])
         r.. res
     
-    ___ bfs(self, beginWord, endWord, distance, wordSet):
+    ___ bfs  beginWord, endWord, distance, wordSet):
         queue = [beginWord]
         distance[beginWord] = 0
         w.... queue:
@@ -30,7 +30,7 @@ c_ Solution(object):
                     distance[nextWord] = distance[word]+1
                     queue.a..(nextWord)
     
-    ___ dfs(self, beginWord, word, distance, wordSet, res, curr):
+    ___ dfs  beginWord, word, distance, wordSet, res, curr):
         curr.insert(0, word)
         __ word __ beginWord:
             res.a..(l..(curr))
@@ -40,7 +40,7 @@ c_ Solution(object):
                     dfs(beginWord, nextWord, distance, wordSet, res, curr)
         curr.pop(0)
     
-    ___ getNextWords(self, word, wordSet):
+    ___ getNextWords  word, wordSet):
         res    # list
         ___ i, c __ e..(word):
             ___ c0 __ 'abcdefghijklmnopqrstuvwxyz':

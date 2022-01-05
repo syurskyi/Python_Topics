@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ convertToTitle(self, n):
+  ___ convertToTitle  n):
     """
     :type n: int
     :rtype: str
@@ -11,7 +11,7 @@ c_ Solution(object):
         char = "Z"
         n -= 26
       ____:
-        char = chr(ord("A") + y - 1)
+        char = chr(o..("A") + y - 1)
       ans += char
       n = n / 26
     r.. ans[::-1]

@@ -5,7 +5,7 @@ Created on Feb 28, 2017
 '''
 
 c_ Solution(object):
-    ___ findStrobogrammatic(self, n):
+    ___ findStrobogrammatic  n):
         """
         :type n: int
         :rtype: List[str]
@@ -15,7 +15,7 @@ c_ Solution(object):
         helper(0, n-1, ['']*n, res)
         r.. res
     
-    ___ helper(self, l, r, curr, res):
+    ___ helper  l, r, curr, res):
         __ l > r:
             res.a..(''.j..(curr))
             r..
@@ -28,7 +28,7 @@ c_ Solution(object):
                 _____
             helper(l+1, r-1, curr, res)
     
-    ___ findStrobogrammatic_short(self, n):
+    ___ findStrobogrammatic_short  n):
         """
         :type n: int
         :rtype: List[str]

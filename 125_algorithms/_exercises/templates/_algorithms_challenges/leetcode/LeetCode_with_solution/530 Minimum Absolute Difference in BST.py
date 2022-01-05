@@ -32,7 +32,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ getMinimumDifference(self, root: 'TreeNode') __ i..:
+    ___ getMinimumDifference  root: 'TreeNode') __ i..:
         """
         For every node, find min and max in left or right substree.
         O(n lgn)
@@ -44,7 +44,7 @@ c_ Solution:
         dfs(root, ret)
         r.. ret[0]
 
-    ___ dfs(self, node, ret):
+    ___ dfs  node, ret):
         __ n.. node:
             r.. N.., N..
         left_min, left_max = dfs(node.left, ret)

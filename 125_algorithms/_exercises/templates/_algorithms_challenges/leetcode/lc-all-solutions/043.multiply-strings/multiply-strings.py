@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ multiply(self, num1, num2):
+  ___ multiply  num1, num2):
     """
     :type num1: str
     :type num2: str

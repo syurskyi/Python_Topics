@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ mergeTwoLists(self, l1, l2):
+    ___ mergeTwoLists  l1, l2):
         dummy = ListNode(-1)
         prev = dummy
         w.... l1 a.. l2:

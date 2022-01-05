@@ -26,7 +26,7 @@ c_ LinkedList:
             r.. EmptyListException("Head is empty")
         r.. _head
 
-    ___ push(self, value):
+    ___ push  value):
         new_node = Node(value, _head)
         _head = new_node
         _size += 1

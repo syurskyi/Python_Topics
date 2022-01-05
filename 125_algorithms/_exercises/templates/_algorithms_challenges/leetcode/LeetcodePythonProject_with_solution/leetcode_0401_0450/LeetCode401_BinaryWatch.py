@@ -5,7 +5,7 @@ Created on Apr 8, 2017
 '''
 
 c_ Solution(object):
-    ___ readBinaryWatch(self, num):
+    ___ readBinaryWatch  num):
         result    # list
         ___ i __ r..(12):
             ___ j __ r..(60):
@@ -15,7 +15,7 @@ c_ Solution(object):
                     result.a..(s)
         r.. result
     
-    ___ countDigits(self, num):
+    ___ countDigits  num):
         result = 0
         w.... num > 0:
             __ num & 1 __ 1:

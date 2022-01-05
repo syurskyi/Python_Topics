@@ -4,7 +4,7 @@ Created on Sep 12, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ scoreOfParentheses(self, S):
+    ___ scoreOfParentheses  S):
         """
         :type S: str
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution(object):
                 stack.a..(cur)
                 cur = 0
             ____:
-                cur += stack.pop() + max(cur, 1)
+                cur += stack.pop() + m..(cur, 1)
         r.. cur
     
     ___ test

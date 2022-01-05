@@ -13,12 +13,12 @@ c_ Solution:
     @param: target: An integer
     @return: all valid paths
     """
-    ___ binaryTreePathSum2(self, root, target):
+    ___ binaryTreePathSum2  root, target):
         ans    # list
         dfs(root, target, ans, [])
         r.. ans
 
-    ___ dfs(self, node, target, ans, path):
+    ___ dfs  node, target, ans, path):
         __ n.. node:
             r..
 

@@ -4,7 +4,7 @@ c_ Solution:
     @param: D: a set of n substrings
     @return: the minimum length
     """
-    ___ minLength(self, s, D):
+    ___ minLength  s, D):
         __ n.. s:
             r.. 0
 

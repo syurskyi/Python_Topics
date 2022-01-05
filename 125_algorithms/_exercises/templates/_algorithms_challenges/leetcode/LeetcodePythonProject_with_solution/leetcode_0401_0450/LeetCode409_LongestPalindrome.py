@@ -5,7 +5,7 @@ Created on Apr 10, 2017
 '''
 
 c_ Solution(object):
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1

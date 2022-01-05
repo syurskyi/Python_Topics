@@ -45,7 +45,7 @@ ___ _quote_exists(existing_quote):
 ___ _get_max_id
     
 
-    r.. max(quote['id'] ___ quote __ quotes)
+    r.. m..(quote['id'] ___ quote __ quotes)
 
 @app.route('/api/quotes', methods=['GET'])
 ___ get_quotes

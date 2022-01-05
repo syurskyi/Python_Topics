@@ -19,7 +19,7 @@ ___ create_paw_deck(n=8):
 
         r = r__.randint(1,4)
         ___ j __ r..(1,5):
-            letter = chr(ord('A') + i)
+            letter = chr(o..('A') + i)
             action = N..
             card = f"{letter}{j}"
             __ r __ j:

@@ -4,7 +4,7 @@ Created on Oct 26, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ canPartitionKSubsets(self, nums, k):
+    ___ canPartitionKSubsets  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -16,7 +16,7 @@ c_ Solution(object):
         nums.s..(r.._T..
         r.. helper(nums, [0]*k, sumVal//k, 0, k)
     
-    ___ helper(self, nums, elems, target, ind, k):
+    ___ helper  nums, elems, target, ind, k):
         __ ind __ k:
             r.. T..
         ___ i __ r..(l..(nums)):

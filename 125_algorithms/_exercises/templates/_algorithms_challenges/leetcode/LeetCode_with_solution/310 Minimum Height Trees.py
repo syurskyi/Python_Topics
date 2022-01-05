@@ -40,7 +40,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ findMinHeightTrees(self, n, edges):
+    ___ findMinHeightTrees  n, edges):
         """
         Longest path algorithm
         Diameter of a tree
@@ -71,7 +71,7 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ bfs(self, s, V):
+    ___ bfs  s, V):
         # bfs
         visited = [F.. ___ _ __ xrange(l..(V))]
         pi = [-1 ___ _ __ xrange(l..(V))]
@@ -97,7 +97,7 @@ c_ Solution(object):
 
 
 c_ Solution_TLE(object):
-    ___ findMinHeightTrees_TLE(self, n, edges):
+    ___ findMinHeightTrees_TLE  n, edges):
         """
         :type n: int
         :type edges: List[List[int]]
@@ -123,7 +123,7 @@ c_ Solution_TLE(object):
 
         r.. ret
 
-    ___ bfs(self, s, V):
+    ___ bfs  s, V):
         # bfs
         visisted = [F.. ___ _ __ xrange(l..(V))]
         q    # list
@@ -145,7 +145,7 @@ c_ Solution_TLE(object):
 
 
 c_ SolutionError(object):
-    ___ findMinHeightTrees(self, n, edges):
+    ___ findMinHeightTrees  n, edges):
         """
         One pass
         :type n: int

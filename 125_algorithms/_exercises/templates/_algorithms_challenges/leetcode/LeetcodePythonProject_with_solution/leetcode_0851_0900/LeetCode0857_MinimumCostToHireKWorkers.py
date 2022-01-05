@@ -4,7 +4,7 @@ Created on Sep 16, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ mincostToHireWorkers(self, quality, wage, K):
+    ___ mincostToHireWorkers  quality, wage, K):
         """
         :type quality: List[int]
         :type wage: List[int]

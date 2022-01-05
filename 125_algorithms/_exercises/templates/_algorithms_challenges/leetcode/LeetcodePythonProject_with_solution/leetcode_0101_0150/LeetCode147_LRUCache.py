@@ -21,7 +21,7 @@ c_ LRUCache(object):
         head = N..
         tail = N..
     
-    ___ removeAndAppend(self, key):
+    ___ removeAndAppend  key):
         node = map[key]
         prevNode = node.prev
         nextNode = node.next
@@ -46,7 +46,7 @@ c_ LRUCache(object):
         head.prev = N..
         tail.next = N..
     
-    ___ get(self, key):
+    ___ get  key):
         __ key n.. __ map:
             r.. -1
         ____:
@@ -55,7 +55,7 @@ c_ LRUCache(object):
             removeAndAppend(key)
             r.. val
     
-    ___ set(self, key, value):
+    ___ set  key, value):
         __ n.. map:
             node = Node(key, value)
             map[key] = node

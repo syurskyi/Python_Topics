@@ -5,7 +5,7 @@ Created on Mar 23, 2017
 '''
 
 c_ Solution(object):
-    ___ countNumbersWithUniqueDigits(self, n):
+    ___ countNumbersWithUniqueDigits  n):
         __ n __ 0: r.. 1
         res = 10
         uniqueDigits = 9

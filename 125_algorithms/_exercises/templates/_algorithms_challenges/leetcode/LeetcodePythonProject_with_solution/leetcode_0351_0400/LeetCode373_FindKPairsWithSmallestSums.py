@@ -5,7 +5,7 @@ Created on Mar 29, 2017
 '''
 
 c_ Solution(object):
-    ___ kSmallestPairs(self, nums1, nums2, k):
+    ___ kSmallestPairs  nums1, nums2, k):
         _______ heapq
         heap    # list
         ___ num1 __ nums1:

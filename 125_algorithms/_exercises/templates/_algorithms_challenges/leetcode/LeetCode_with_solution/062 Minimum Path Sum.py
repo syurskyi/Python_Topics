@@ -6,7 +6,7 @@ Note: You can only move either down or right at any point in time.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ minPathSum(self, grid):
+    ___ minPathSum  grid):
         """
         dp
 

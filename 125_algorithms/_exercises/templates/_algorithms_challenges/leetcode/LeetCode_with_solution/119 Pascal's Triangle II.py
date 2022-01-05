@@ -9,7 +9,7 @@ Could you optimize your algorithm to use only O(k) extra space?
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ getRow(self, rowIndex):
+    ___ getRow  rowIndex):
         """
         iteration.
 
@@ -40,5 +40,5 @@ c_ Solution:
         r.. current_level
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().getRow(3)

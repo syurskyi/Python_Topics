@@ -5,7 +5,7 @@ Created on Apr 23, 2017
 '''
 
 c_ Solution(object):
-    ___ islandPerimeter(self, grid):
+    ___ islandPerimeter  grid):
         result = 0
         m, n = l..(grid), l..(grid[0])
         ___ i __ r..(m):
@@ -14,7 +14,7 @@ c_ Solution(object):
                     result += getParameter(i, j, grid)
         r.. result
     
-    ___ getParameter(self, i, j, grid):
+    ___ getParameter  i, j, grid):
         m, n = l..(grid), l..(grid[0])
         p = 4
         ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):

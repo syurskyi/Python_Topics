@@ -8,9 +8,9 @@ START_EMOJI_RANGE = 100000  # estimate
 ___ what_means_emoji(emoji):
     """Receives emoji and returns its meaning,
        in case of a TypeError return 'Not found'"""
-    try:
+    ___
         r.. unicodedata.name(emoji)
-    except T..:
+    ______ T..:
         r.. 'Not found'
 
 
@@ -24,10 +24,10 @@ ___ _make_emoji_mapping
 
 
     ___ i __ r..(START_EMOJI_RANGE,sys.maxunicode + 1):
-        try:
+        ___
             meaning = what_means_emoji(chr(i))
             mapping[chr(i)] = meaning
-        except:
+        ______:
             p..
 
     r.. mapping

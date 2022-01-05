@@ -18,7 +18,7 @@ c_ Poker:
             scores().i.. __ score __ best_score()]
 
     ___ best_score
-        r.. max(scores(), key=scores().get).score()
+        r.. m..(scores(), key=scores().get).score()
 
     ___ scores
         r.. {hand: hand.score() ___ hand __ hands}
@@ -55,14 +55,14 @@ c_ Hand:
         r.. straight() a.. flush()
 
     ___ straight
-        r.. (l..(r..(m..(ranks), max(ranks) + 1)) __
+        r.. (l..(r..(m..(ranks), m..(ranks) + 1)) __
                 s..(ranks))
 
     ___ flush
         r.. l..(set(suits)) __ 1
 
     ___ four_of_a_kind
-        r.. max(rank_occurences().values()) __ 4
+        r.. m..(rank_occurences().values()) __ 4
 
     ___ full_house
         r.. three_of_a_kind() a.. one_pair()
@@ -77,13 +77,13 @@ c_ Hand:
         r.. 2 __ l..(rank_occurences().values())
 
     ___ high_card
-        r.. max(ranks)
+        r.. m..(ranks)
 
     ___ rank_occurences
         r.. {rank: ranks.c.. rank) ___ rank __ ranks}
 
     ___ rank_of_card_with_highest_occurence
-        r.. max(rank_occurences(), key=rank_occurences().get)
+        r.. m..(rank_occurences(), key=rank_occurences().get)
 
 
 c_ Card:

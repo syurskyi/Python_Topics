@@ -8,7 +8,7 @@ INVALID = -1
 QUEEN = 1
 DEFAULT = 0
 c_ Solution:
-    ___ totalNQueens(self, n):
+    ___ totalNQueens  n):
         """
         backtracking
         :param n: integer
@@ -19,7 +19,7 @@ c_ Solution:
         backtrack(0, current, result)
         r.. l..(result)
 
-    ___ backtrack(self, queen_index, current, result):
+    ___ backtrack  queen_index, current, result):
         """
 
         :param queen_index:
@@ -69,5 +69,5 @@ c_ Solution:
             backtrack(queen_index+1, new_config, result)
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().totalNQueens(4)

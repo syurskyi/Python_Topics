@@ -33,5 +33,5 @@ ___ get_longest_palindrome(words_ N..
     __ words __ N..
         words = load_dictionary()
     temp_list = (word ___ word __ words __ is_palindrome(word))
-    r.. max(l..(temp_list), key=l..)
+    r.. m..(l..(temp_list), key=l..)
 

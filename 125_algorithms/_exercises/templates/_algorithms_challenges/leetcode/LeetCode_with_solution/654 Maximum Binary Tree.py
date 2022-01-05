@@ -40,7 +40,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ constructMaximumBinaryTree(self, nums: List[i..]) __ TreeNode:
+    ___ constructMaximumBinaryTree  nums: List[i..]) __ TreeNode:
         """
         monotonic stack - a stack to keep a decreasing subsequence from left to
         right
@@ -62,7 +62,7 @@ c_ Solution:
         r.. stk[0]
 
 c_ Solution_heap:
-    ___ constructMaximumBinaryTree(self, nums: List[i..]) __ TreeNode:
+    ___ constructMaximumBinaryTree  nums: List[i..]) __ TreeNode:
         """
         heap O(n lgn)
         insert by index O(n lgn)
@@ -83,7 +83,7 @@ c_ Solution_heap:
 
         r.. root
 
-    ___ insert(self, node, m, idx):
+    ___ insert  node, m, idx):
         __ n.. node:
             r.. TreeNode(m)
 

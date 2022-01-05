@@ -29,7 +29,7 @@ ___ years_gold_value_decreased(gold_prices: s.. = gold_prices):
          price = float(line[line.find(",") +1:])
          price_delta[year] = price
 
-   min_year, max_year = m..(price_delta), max(price_delta)
+   min_year, max_year = m..(price_delta), m..(price_delta)
    decrease_largest, decrease_year, increase_largest, increase_year = 0, 0, 0, 0
    ___ year __ r..(min_year +1, max_year + 1, 1):
       previous_year_price = price_delta[year -1]

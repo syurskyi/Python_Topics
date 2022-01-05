@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ getModifiedArray(self, length, updates):
+    ___ getModifiedArray  length, updates):
         """
         Brute force: O(kn)
 

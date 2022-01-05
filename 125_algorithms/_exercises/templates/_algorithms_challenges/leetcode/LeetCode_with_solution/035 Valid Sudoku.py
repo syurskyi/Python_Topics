@@ -10,7 +10,7 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ isValidSudoku(self, board):
+    ___ isValidSudoku  board):
         """
         Brute force - check rows, cols, and squares and maintain a hashmap to store the previously seen elements
 
@@ -38,38 +38,38 @@ c_ Solution:
             square    # list
             ___ j __ xrange(9):
                 # check row
-                try:
+                ___
                     row_element = i..(board[i][j])
                     __ row_element __ row:
                         r.. F..
                     ____:
                         row.a..(row_element)
-                except ValueError:
+                ______ V..
                     p..
 
                 # check column
-                try:
+                ___
                     column_element = i..(board[j][i])
                     __ column_element __ column:
                         r.. F..
                     ____:
                         column.a..(column_element)
-                except ValueError:
+                ______ V..
                     p..
 
                 # check square
-                try:
+                ___
                     square_element = i..(board[i/3*3 + j/3][i%3*3 + j%3])
                     __ square_element __ square:
                         r.. F..
                     ____:
                         square.a..(square_element)
-                except ValueError:
+                ______ V..
                     p..
 
         r.. T..
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().isValidSudoku(
         ["..4...63.", ".........", "5......9.", "...56....", "4.3.....1", "...7.....", "...5.....", ".........",
          "........."]

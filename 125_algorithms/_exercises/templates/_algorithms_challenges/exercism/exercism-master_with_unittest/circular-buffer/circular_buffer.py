@@ -12,12 +12,12 @@ c_ CircularBuffer:
             r.. BufferEmptyException
         r.. buffer.popleft()
 
-    ___ write(self, data):
+    ___ write  data):
         __ full
             r.. BufferFullException
         buffer.a..(data)
 
-    ___ overwrite(self, data):
+    ___ overwrite  data):
         __ full
             buffer.popleft()
         buffer.a..(data)

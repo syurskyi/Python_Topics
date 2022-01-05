@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ maxProfit(self, prices):
+    ___ maxProfit  prices):
         """
         Algorithm: dp
         1-D dp.
@@ -32,7 +32,7 @@ c_ Solution:
             # if i==0:
             # forward[i] = 0
             # else:
-            forward[i] = max(forward[i-1], prices[i]-lowest_buy_price)
+            forward[i] = m..(forward[i-1], prices[i]-lowest_buy_price)
 
             lowest_buy_price = m..(prices[i], lowest_buy_price)
 
@@ -42,16 +42,16 @@ c_ Solution:
             # if i==len(prices)-1:
             # backward[i] = 0
             # else:
-            backward[i] = max(backward[i+1], highest_sell_price-prices[i])
+            backward[i] = m..(backward[i+1], highest_sell_price-prices[i])
 
-            highest_sell_price = max(prices[i], highest_sell_price)
+            highest_sell_price = m..(prices[i], highest_sell_price)
 
         max_profit = 0
         ___ i __ xrange(l..(prices)):
-            max_profit = max(max_profit, forward[i]+backward[i])
+            max_profit = m..(max_profit, forward[i]+backward[i])
         r.. max_profit
 
-    ___ maxProfit_error(self, prices):
+    ___ maxProfit_error  prices):
         """
         2 transactions
         you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
@@ -75,7 +75,7 @@ c_ Solution:
         ___ j __ xrange(l..(delta_prices)):
             __ current_sub_array+delta_prices[j] >= 0:
                 current_sub_array += delta_prices[j]
-                max_sub_array = max(max_sub_array, current_sub_array)
+                max_sub_array = m..(max_sub_array, current_sub_array)
             ____:
                 # keep two 2
                 __ max_sub_array > max_profits[0]:

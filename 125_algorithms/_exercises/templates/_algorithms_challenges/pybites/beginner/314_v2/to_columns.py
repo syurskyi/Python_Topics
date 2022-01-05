@@ -10,9 +10,9 @@ ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
     ___ row __ r..(rows):
         ___ col __ r..(cols):
             index = row * cols + col
-            try:
+            ___
                 name  = names[index]
-            except IndexError:
+            ______ IndexError:
                 break
             print _*| {name:<10}',end='')
         ____:

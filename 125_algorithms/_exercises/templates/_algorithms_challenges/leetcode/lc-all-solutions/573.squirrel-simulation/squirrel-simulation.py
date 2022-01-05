@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minDistance(self, height, width, tree, squirrel, nuts):
+  ___ minDistance  height, width, tree, squirrel, nuts):
     """
     :type height: int
     :type width: int

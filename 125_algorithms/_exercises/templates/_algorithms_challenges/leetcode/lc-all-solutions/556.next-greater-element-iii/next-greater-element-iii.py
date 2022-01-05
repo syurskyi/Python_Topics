@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ nextGreaterElement(self, n):
+  ___ nextGreaterElement  n):
     """
     :type n: int
     :rtype: int

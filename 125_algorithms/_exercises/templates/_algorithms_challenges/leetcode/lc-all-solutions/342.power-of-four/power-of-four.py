@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isPowerOfFour(self, num):
+  ___ isPowerOfFour  num):
     """
     :type num: int
     :rtype: bool

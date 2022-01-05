@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ change(self, amount, coins):
+    ___ change  amount, coins):
         """
         :type amount: int
         :type coins: List[int]

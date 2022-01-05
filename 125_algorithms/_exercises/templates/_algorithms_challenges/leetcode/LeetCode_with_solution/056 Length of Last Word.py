@@ -12,7 +12,7 @@ return 5.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ lengthOfLastWord(self, s):
+    ___ lengthOfLastWord  s):
         """
         String
 
@@ -22,8 +22,8 @@ c_ Solution:
         """
         s = s.s..
         lst = s.s..(" ")
-        try:
+        ___
             last_word = lst[-1]
             r.. l..(last_word)
-        except IndexError:
+        ______ IndexError:
             r.. 0

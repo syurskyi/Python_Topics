@@ -5,7 +5,7 @@ Created on Feb 7, 2017
 '''
 
 c_ Solution(object):
-    ___ longestConsecutive(self, nums):
+    ___ longestConsecutive  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(object):
                 y = x+1
                 w.... y __ nums:
                     y+=1
-                maxLen = max(y-x, maxLen)
+                maxLen = m..(y-x, maxLen)
         r.. maxLen
     
     ___ test

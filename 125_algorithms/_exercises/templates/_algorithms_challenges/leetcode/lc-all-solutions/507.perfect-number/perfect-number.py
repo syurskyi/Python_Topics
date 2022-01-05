@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ checkPerfectNumber(self, num):
+  ___ checkPerfectNumber  num):
     """
     :type num: int
     :rtype: bool

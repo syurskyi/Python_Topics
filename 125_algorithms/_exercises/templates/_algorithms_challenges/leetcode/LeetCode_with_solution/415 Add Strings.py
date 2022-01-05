@@ -11,10 +11,10 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 
 
 c_ Solution:
-    ___ i..(self, n):
-        r.. ord(n) - ord("0")
+    ___ i..  n):
+        r.. o..(n) - o..("0")
 
-    ___ addStrings(self, num1, num2):
+    ___ addStrings  num1, num2):
         """
         :type num1: str
         :type num2: str

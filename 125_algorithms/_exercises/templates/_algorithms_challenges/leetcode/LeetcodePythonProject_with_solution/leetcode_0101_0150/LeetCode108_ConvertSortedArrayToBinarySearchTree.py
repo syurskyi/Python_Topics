@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ sortedArrayToBST(self, nums):
+    ___ sortedArrayToBST  nums):
         """
         :type nums: List[int]
         :rtype: TreeNode
@@ -19,7 +19,7 @@ c_ Solution(object):
         __ n.. nums: r.. N..
         r.. helper(nums, 0, l..(nums)-1)
     
-    ___ helper(self, nums, l, r):
+    ___ helper  nums, l, r):
         __ l > r: r.. N..
         mid = (l+r)//2
         root = TreeNode(nums[mid])

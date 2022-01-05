@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ countBits(self, num):
+  ___ countBits  num):
     """
     :type num: int
     :rtype: List[int]

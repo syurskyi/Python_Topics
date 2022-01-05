@@ -35,7 +35,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ largeGroupPositions(self, S: s..) __ List[List[i..]]:
+    ___ largeGroupPositions  S: s..) __ List[List[i..]]:
         i = 0
         j = 0
         ret    # list

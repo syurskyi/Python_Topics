@@ -5,7 +5,7 @@ Created on Jan 24, 2017
 '''
 
 c_ Solution(object):
-    ___ combine(self, n, k):
+    ___ combine  n, k):
         """
         :type n: int
         :type k: int
@@ -18,7 +18,7 @@ c_ Solution(object):
         helper(elem, result, 1, n, k)
         r.. result
     
-    ___ helper(self, elem, result, start, n, k):
+    ___ helper  elem, result, start, n, k):
         __ l..(elem) __ k:
             result.a..(l..(elem))
             r..

@@ -8,7 +8,7 @@ c_ Solution(object):
     ___ - ):
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ wallsAndGates(self, mat):
+    ___ wallsAndGates  mat):
         """
         bfs
         O(mn), abstract level
@@ -30,7 +30,7 @@ c_ Solution_slow(object):
     ___ - ):
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ wallsAndGates(self, rooms):
+    ___ wallsAndGates  rooms):
         """
         bfs
         O(kmn) where k is #0s
@@ -47,7 +47,7 @@ c_ Solution_slow(object):
                 __ rooms[i][j] __ 0:
                     bfs_deque(rooms, i, j)
 
-    ___ bfs(self, rooms, x, y):
+    ___ bfs  rooms, x, y):
         m = l..(rooms)
         n = l..(rooms[0])
         level = 0
@@ -66,7 +66,7 @@ c_ Solution_slow(object):
             q = q[l:]
             level += 1
 
-    ___ bfs_deque(self, rooms, x, y):
+    ___ bfs_deque  rooms, x, y):
         ____ c.. _______ d..
 
         m = l..(rooms)
@@ -86,7 +86,7 @@ c_ Solution_error(object):
     ___ - ):
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ wallsAndGates(self, rooms):
+    ___ wallsAndGates  rooms):
         """
         post-order DFS
 
@@ -104,7 +104,7 @@ c_ Solution_error(object):
                 __ n.. visited[i][j]:
                     dfs(rooms, i, j, visited)
 
-    ___ dfs(self, rooms, i, j, visited):
+    ___ dfs  rooms, i, j, visited):
         __ n.. visited[i][j]:
             visited[i][j] = T..
             ___ d __ dirs:

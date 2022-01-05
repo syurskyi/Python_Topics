@@ -5,7 +5,7 @@ Created on Feb 13, 2017
 '''
 
 c_ Solution(object):
-    ___ titleToNumber(self, s):
+    ___ titleToNumber  s):
         """
         :type s: str
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(object):
         result = 0
         ___ c __ s:
             result = result*26
-            num = ord(c)-ord('A')+1
+            num = o..(c)-o..('A')+1
             result += num
         r.. result
     

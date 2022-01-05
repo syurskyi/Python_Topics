@@ -4,7 +4,7 @@ Created on Apr 2, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ partitionLabels(self, S):
+    ___ partitionLabels  S):
         """
         :type S: str
         :rtype: List[int]
@@ -25,7 +25,7 @@ c_ Solution(object):
                 left = i
                 maxLen = hashmap[c][1]
             ____:
-                maxLen = max(maxLen, hashmap[c][1])
+                maxLen = m..(maxLen, hashmap[c][1])
         res.a..(l..(s)-left)
         r.. res
     

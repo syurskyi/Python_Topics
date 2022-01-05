@@ -4,7 +4,7 @@ Created on Mar 10, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ evaluate(self, expression):
+    ___ evaluate  expression):
         """
         :type expression: str
         :rtype: int
@@ -40,7 +40,7 @@ c_ Solution(object):
                 tokens[-1] += c
         r.. i..(tokens[0])
     
-    ___ evaluate_own_error(self, expression):
+    ___ evaluate_own_error  expression):
         """
         :type expression: str
         :rtype: int
@@ -48,7 +48,7 @@ c_ Solution(object):
         hashmap    # dict
         r.. helper(expression, hashmap)
     
-    ___ helper(self, exp, hashmap):
+    ___ helper  exp, hashmap):
         __ exp[0] __ '-' o. exp.isdigit
             r.. i..(exp)
         ____ exp[0] != '(':
@@ -74,7 +74,7 @@ c_ Solution(object):
                     sub2, i = nextElem(exp, i+1)
                     hashmap[sub1] = helper(sub2, hashmap)
     
-    ___ nextElem(self, s, i):
+    ___ nextElem  s, i):
         res = ''
         __ i >= l..(s):
             r.. res, i

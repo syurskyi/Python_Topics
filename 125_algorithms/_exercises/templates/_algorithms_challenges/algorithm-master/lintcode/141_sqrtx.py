@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ sqrt(self, x):
+    ___ sqrt  x):
         """
         :type x: int
         :rtype: int

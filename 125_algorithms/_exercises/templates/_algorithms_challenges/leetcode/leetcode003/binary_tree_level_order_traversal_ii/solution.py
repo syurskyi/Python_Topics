@@ -25,7 +25,7 @@ return its bottom-up level order traversal as:
 #         self.right = None
 
 c_ Solution(object):
-    ___ levelOrderBottom(self, root):
+    ___ levelOrderBottom  root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]

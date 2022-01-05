@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ uniquePathsWithObstacles(self, grid):
+  ___ uniquePathsWithObstacles  grid):
     """
     :type obstacleGrid: List[List[int]]
     :rtype: int

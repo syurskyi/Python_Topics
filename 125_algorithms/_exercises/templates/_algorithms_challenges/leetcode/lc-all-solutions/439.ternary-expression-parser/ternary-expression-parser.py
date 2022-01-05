@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ parseTernary(self, expression):
+  ___ parseTernary  expression):
     """
     :type expression: str
     :rtype: str

@@ -17,9 +17,9 @@ c_ ZigzagIterator(object):
     :rtype: int
     """
     top = iters.popleft()
-    try:
+    ___
       value = top.next()
-    except StopIteration:
+    ______ StopIteration:
       r.. next()
     total -= 1
     __ total != 0:

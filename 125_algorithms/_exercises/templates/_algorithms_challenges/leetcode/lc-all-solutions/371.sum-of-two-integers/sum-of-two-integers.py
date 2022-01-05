@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ getSum(self, num1, num2):
+  ___ getSum  num1, num2):
     """
     :type a: int
     :type b: int

@@ -16,7 +16,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ subarraySum(self, nums: List[i..], k: i..) __ i..:
+    ___ subarraySum  nums: List[i..], k: i..) __ i..:
         """
         prefix sum
         """

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ topKFrequent(self, A, k):
+    ___ topKFrequent  A, k):
         """
         :type A: List[int]
         :type k: int

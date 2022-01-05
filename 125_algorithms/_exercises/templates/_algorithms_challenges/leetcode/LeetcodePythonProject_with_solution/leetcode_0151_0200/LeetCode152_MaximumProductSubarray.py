@@ -4,7 +4,7 @@ Created on Feb 11, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maxProduct(self, nums):
+    ___ maxProduct  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -16,12 +16,12 @@ c_ Solution(object):
         ___ i __ r..(1, n):
             num = nums[i]
             __ num > 0:
-                maxArr[i] = max(maxArr[i-1]*num, num)
+                maxArr[i] = m..(maxArr[i-1]*num, num)
                 minArr[i] = m..(minArr[i-1]*num, num)
             ____:
-                maxArr[i] = max(minArr[i-1]*num, num)
+                maxArr[i] = m..(minArr[i-1]*num, num)
                 minArr[i] = m..(maxArr[i-1]*num, num)
-            result = max(result, maxArr[i])
+            result = m..(result, maxArr[i])
         r.. result
     
     ___ test

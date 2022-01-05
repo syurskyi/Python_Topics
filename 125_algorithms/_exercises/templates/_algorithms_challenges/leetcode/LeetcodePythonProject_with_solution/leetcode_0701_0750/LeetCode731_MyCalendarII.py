@@ -8,7 +8,7 @@ c_ MyCalendarTwo(object):
         overlaps    # list
         calendar    # list
 
-    ___ book(self, start, end):
+    ___ book  start, end):
         """
         :type start: int
         :type end: int
@@ -19,7 +19,7 @@ c_ MyCalendarTwo(object):
                 r.. F..
         ___ i, j __ calendar:
             __ start < j a.. end > i:
-                overlaps.a..((max(start, i), m..(end, j)))
+                overlaps.a..((m..(start, i), m..(end, j)))
         calendar.a..((start, end))
         r.. T..
 

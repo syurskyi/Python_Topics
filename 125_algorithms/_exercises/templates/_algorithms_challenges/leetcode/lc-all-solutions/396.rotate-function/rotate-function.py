@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxRotateFunction(self, A):
+  ___ maxRotateFunction  A):
     """
     :type A: List[int]
     :rtype: int
@@ -16,6 +16,6 @@ c_ Solution(object):
     ans = float("-inf")
     ___ _ __ r..(n):
       fk += sumA - n * A[idx]
-      ans = max(ans, fk)
+      ans = m..(ans, fk)
       idx -= 1
     r.. ans

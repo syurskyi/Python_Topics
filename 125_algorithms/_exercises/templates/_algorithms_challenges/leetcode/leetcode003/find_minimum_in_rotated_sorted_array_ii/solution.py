@@ -13,7 +13,7 @@ The array may contain duplicates.
 """
 
 c_ Solution(object):
-    ___ findMin(self, nums):
+    ___ findMin  nums):
         """
         :type nums: List[int]
         :rtype: int

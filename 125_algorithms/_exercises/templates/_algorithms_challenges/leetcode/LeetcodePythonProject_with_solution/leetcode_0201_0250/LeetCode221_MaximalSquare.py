@@ -5,7 +5,7 @@ Created on Feb 21, 2017
 '''
 
 c_ Solution(object):
-    ___ maximalSquare(self, matrix):
+    ___ maximalSquare  matrix):
         """
         :type matrix: List[List[str]]
         :rtype: int
@@ -18,7 +18,7 @@ c_ Solution(object):
             ___ j __ r..(n):
                 __ matrix[i][j] __ '1':
                     dp[i+1][j+1] = m..([dp[i][j], dp[i+1][j], dp[i][j+1]])+1
-                    maxLen = max(maxLen, dp[i+1][j+1])
+                    maxLen = m..(maxLen, dp[i+1][j+1])
         r.. maxLen*maxLen
     
     ___ test

@@ -4,7 +4,7 @@ Created on Apr 25, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ xorGame(self, nums):
+    ___ xorGame  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -13,7 +13,7 @@ c_ Solution(object):
         ____ operator _______ xor
         r.. l..(nums)%2__0 o. reduce(xor,nums)__0
     
-    ___ xorGame_own_TLE(self, nums):
+    ___ xorGame_own_TLE  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -21,7 +21,7 @@ c_ Solution(object):
         mem    # dict
         r.. helper(nums, mem)
     
-    ___ helper(self, nums, mem):
+    ___ helper  nums, mem):
         s = s..(nums)
         __ s __ mem:
             r.. mem[s]
@@ -36,7 +36,7 @@ c_ Solution(object):
         mem[s] = flag
         r.. flag
     
-    ___ calc(self, nums):
+    ___ calc  nums):
         res = 0
         ___ num __ nums:
             res ^= num

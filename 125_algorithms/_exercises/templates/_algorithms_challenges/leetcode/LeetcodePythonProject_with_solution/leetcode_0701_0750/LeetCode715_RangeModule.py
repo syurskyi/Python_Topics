@@ -11,7 +11,7 @@ c_ RangeModule(object):
         X = [0, 10**9]
         track = [F..]*2
     
-    ___ addRangeHelper(self, left, right, track=T..):
+    ___ addRangeHelper  left, right, track=T..):
         ___ index(x):
             i = bisect.bisect_left(X, x)
             __ X[i] != x:
@@ -23,7 +23,7 @@ c_ RangeModule(object):
         X[i:j] = [left]
         track[i:j] = [track]
 
-    ___ addRange(self, left, right):
+    ___ addRange  left, right):
         """
         :type left: int
         :type right: int
@@ -31,7 +31,7 @@ c_ RangeModule(object):
         """
         addRangeHelper(left, right, T..)
 
-    ___ queryRange(self, left, right):
+    ___ queryRange  left, right):
         """
         :type left: int
         :type right: int
@@ -41,7 +41,7 @@ c_ RangeModule(object):
         j = bisect.bisect_left(X, right)
         r.. a..(track[i:j])
 
-    ___ removeRange(self, left, right):
+    ___ removeRange  left, right):
         """
         :type left: int
         :type right: int
@@ -58,7 +58,7 @@ c_ RangeModule_own(object):
     ___ - ):
         intervals    # list
 
-    ___ addRange(self, left, right):
+    ___ addRange  left, right):
         """
         :type left: int
         :type right: int
@@ -74,11 +74,11 @@ c_ RangeModule_own(object):
                 res.a..(interval)
             ____:
                 newInterval = Interval(m..(interval.left, newInterval.left),\
-                                    max(interval.right, newInterval.right))
+                                    m..(interval.right, newInterval.right))
         res.a..(newInterval)
         intervals = res
 
-    ___ queryRange(self, left, right):
+    ___ queryRange  left, right):
         """
         :type left: int
         :type right: int
@@ -97,7 +97,7 @@ c_ RangeModule_own(object):
                     intervals[mid].right >= newInterval.right
         r.. F..
 
-    ___ removeRange(self, left, right):
+    ___ removeRange  left, right):
         """
         :type left: int
         :type right: int

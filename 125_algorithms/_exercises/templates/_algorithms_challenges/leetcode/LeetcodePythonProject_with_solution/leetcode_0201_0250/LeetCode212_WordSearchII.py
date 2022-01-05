@@ -25,7 +25,7 @@ ___ buildTrie(words):
     r.. root
 
 c_ Solution(object):
-    ___ findWords(self, board, words):
+    ___ findWords  board, words):
         """
         :type board: List[List[str]]
         :type words: List[str]
@@ -39,7 +39,7 @@ c_ Solution(object):
                 dfs(board, i, j, root, [], result)
         r.. l..(result)
     
-    ___ dfs(self, board, i, j, p, elem, result):
+    ___ dfs  board, i, j, p, elem, result):
         c = board[i][j]
         __ c __ '#' o. c n.. __ p.children: r..
         p = p.children[c]

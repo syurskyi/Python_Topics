@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ lastRemaining(self, n):
+    ___ lastRemaining  n):
         """
         Brute force O(n): A = A[::2][::-1]
 

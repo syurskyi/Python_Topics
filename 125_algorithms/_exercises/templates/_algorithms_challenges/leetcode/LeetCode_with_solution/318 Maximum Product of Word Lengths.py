@@ -22,7 +22,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ maxProduct(self, words):
+    ___ maxProduct  words):
         """
         Brute force: O(n*n*k)
         Encode string using bit manipulation
@@ -35,14 +35,14 @@ c_ Solution(object):
         ___ i __ xrange(l..(codes)):
             ___ j __ xrange(i+1, l..(codes)):
                 __ codes[i] & codes[j] __ 0:
-                    maxa = max(maxa, l[i]*l[j])
+                    maxa = m..(maxa, l[i]*l[j])
 
         r.. maxa
 
-    ___ encode(self, x):
+    ___ encode  x):
         ret = 0
         ___ c __ x:
-            ret |= 1 << (ord(c)-ord('a'))
+            ret |= 1 << (o..(c)-o..('a'))
         r.. ret
 
 

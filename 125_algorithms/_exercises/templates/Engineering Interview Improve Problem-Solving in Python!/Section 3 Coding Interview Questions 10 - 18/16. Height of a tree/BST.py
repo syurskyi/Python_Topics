@@ -10,7 +10,7 @@ c_ BST:
     ___ - , val):
         root  Node(val)
 
-    ___ insert(self, val, node):
+    ___ insert  val, node):
         __ node.val < val:
             __ node.right:
                 #go right
@@ -26,7 +26,7 @@ c_ BST:
         ____:
             print(val, " Already in tree")
 
-    ___ number_of_leaves(self, node):
+    ___ number_of_leaves  node):
         __ node.left a.. node.right:
             r.. number_of_leaves(node.left) + number_of_leaves(node.right)
         ____ node.left:
@@ -51,10 +51,10 @@ c_ BST:
             del nodes[0]
         r.. leaves
 
-    ___ height(self, node):
+    ___ height  node):
         __ node.left a.. node.right:
             print(node.val, " Height of left ", height(node.left)," Hegiht of right ", height(node.right))
-            r.. 1 + max(height(node.left), height(node.right))
+            r.. 1 + m..(height(node.left), height(node.right))
         ____ node.left:
             #print(node.val, self.height(node.left))
             r.. 1 + height(node.left)
@@ -65,7 +65,7 @@ c_ BST:
             #print(node.val)
             r.. 1
 
-    ___ is_identical(self, second_root):
+    ___ is_identical  second_root):
         nodes1  [root]
         nodes2  [second_root]
         w___ nodes1 a.. nodes2:

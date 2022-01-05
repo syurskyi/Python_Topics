@@ -23,14 +23,14 @@ c_ NestedInteger(object):
         """
         p..
 
-    ___ add(self, elem):
+    ___ add  elem):
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
         p..
 
-    ___ setInteger(self, value):
+    ___ setInteger  value):
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
@@ -54,7 +54,7 @@ c_ NestedInteger(object):
         p..
 
 c_ Solution(object):
-    ___ deserialize(self, s):
+    ___ deserialize  s):
         __ s[0] __ '[' a.. s[-1] __ ']':
             nestedInt = NestedInteger()
             s = s[1:-1]

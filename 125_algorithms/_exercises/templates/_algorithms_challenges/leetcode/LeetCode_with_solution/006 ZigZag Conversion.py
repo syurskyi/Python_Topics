@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ convert(self, s, nRows):
+    ___ convert  s, nRows):
         """
         Algorithm: matrix
         :param s:
@@ -27,7 +27,7 @@ c_ Solution:
 
         i = 0
         w.... i < length:
-            try:
+            ___
                 # going down
                 ___ j __ xrange(nRows):
                     matrix[j].a..(s[i])
@@ -38,7 +38,7 @@ c_ Solution:
                     matrix[j].a..(s[i])
                     i += 1
 
-            except IndexError:
+            ______ IndexError:
                 break
 
         lst = ["".j..(element) ___ element __ matrix]

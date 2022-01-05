@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ encode(self, s, dp={}):
+  ___ encode  s, dp={}):
     """
     :type s: str
     :rtype: str

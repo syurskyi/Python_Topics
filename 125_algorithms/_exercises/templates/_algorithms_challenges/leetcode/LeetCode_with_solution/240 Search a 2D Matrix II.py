@@ -22,7 +22,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ searchMatrix(self, mat, target):
+    ___ searchMatrix  mat, target):
         """
         Manhattan work
         O(m+n) eliminate a row or a column at a time
@@ -49,7 +49,7 @@ c_ Solution(object):
 
 
 c_ SolutionBinSearch(object):
-    ___ searchMatrix(self, mat, target):
+    ___ searchMatrix  mat, target):
         """
         Binary search
 
@@ -78,7 +78,7 @@ c_ SolutionBinSearch(object):
 
         r.. F..
 
-    ___ bin_search(self, A, t, lower=T..):
+    ___ bin_search  A, t, lower=T..):
         lo = 0
         hi = l..(A)
         w.... lo < hi:

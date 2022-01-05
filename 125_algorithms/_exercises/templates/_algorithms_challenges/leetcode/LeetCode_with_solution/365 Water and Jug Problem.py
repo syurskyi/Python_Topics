@@ -22,7 +22,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ canMeasureWater(self, x, y, z):
+    ___ canMeasureWater  x, y, z):
         """
         Number theory
         Use the property of Bezout's identity and check if z is a multiple of GCD(x, y)
@@ -39,7 +39,7 @@ c_ Solution(object):
 
         r.. z % gcd(x, y) __ 0
 
-    ___ gcd(self, a, b):
+    ___ gcd  a, b):
         w.... b:
             a, b = b, a%b
         r.. a

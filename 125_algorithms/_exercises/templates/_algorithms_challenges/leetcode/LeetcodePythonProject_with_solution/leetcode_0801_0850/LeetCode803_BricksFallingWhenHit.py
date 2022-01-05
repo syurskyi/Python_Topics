@@ -4,7 +4,7 @@ Created on Apr 21, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ hitBricks(self, grid, hits):
+    ___ hitBricks  grid, hits):
         """
         :type grid: List[List[int]]
         :type hits: List[List[int]]

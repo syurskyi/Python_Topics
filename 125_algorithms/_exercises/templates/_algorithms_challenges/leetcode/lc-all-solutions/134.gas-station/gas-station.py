@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canCompleteCircuit(self, gas, cost):
+  ___ canCompleteCircuit  gas, cost):
     """
     :type gas: List[int]
     :type cost: List[int]

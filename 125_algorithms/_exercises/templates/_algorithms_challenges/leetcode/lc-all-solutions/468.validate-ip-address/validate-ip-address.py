@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ validIPAddress(self, IP):
+  ___ validIPAddress  IP):
     """
     :type IP: str
     :rtype: str

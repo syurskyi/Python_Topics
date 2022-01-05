@@ -12,7 +12,7 @@ c_ Node:
 
 
 c_ Solution:
-    ___ levelOrder(self, root):
+    ___ levelOrder  root):
         """
         BFS
         

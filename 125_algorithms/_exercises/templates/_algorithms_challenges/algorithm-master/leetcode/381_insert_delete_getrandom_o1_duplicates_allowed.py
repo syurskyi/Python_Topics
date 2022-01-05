@@ -6,7 +6,7 @@ c_ RandomizedCollection:
         A    # list
         I    # dict
 
-    ___ insert(self, val):
+    ___ insert  val):
         """
         Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
         :type val: int
@@ -20,7 +20,7 @@ c_ RandomizedCollection:
         I[val].add(l..(A) - 1)
         r.. l..(I[val]) __ 1
 
-    ___ remove(self, val):
+    ___ remove  val):
         """
         Removes a value from the collection. Returns true if the collection contained the specified element.
         :type val: int

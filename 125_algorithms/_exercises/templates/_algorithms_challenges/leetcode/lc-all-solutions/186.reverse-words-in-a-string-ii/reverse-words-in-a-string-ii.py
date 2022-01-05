@@ -1,7 +1,7 @@
 c_ Solution:
   # @param s, a list of 1 length strings, e.g., s = ['h','e','l','l','o']
   # @return nothing
-  ___ reverseWords(self, s):
+  ___ reverseWords  s):
     ___ swap(start, end, slist):
       w.... start < end:
         slist[start], slist[end] = slist[end], slist[start]

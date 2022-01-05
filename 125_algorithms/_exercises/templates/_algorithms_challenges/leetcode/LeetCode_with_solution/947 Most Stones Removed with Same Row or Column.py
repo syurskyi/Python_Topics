@@ -32,7 +32,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ removeStones(self, stones: List[List[i..]]) __ i..:
+    ___ removeStones  stones: List[List[i..]]) __ i..:
         """
         convert to graph problem
         each component in the graph can be removed to only one node
@@ -59,7 +59,7 @@ c_ Solution:
 
         r.. n - comp_cnt
 
-    ___ dfs(self, G, i, visited):
+    ___ dfs  G, i, visited):
         visited[i] = T..
         ___ nbr __ G[i]:
             __ n.. visited[nbr]:

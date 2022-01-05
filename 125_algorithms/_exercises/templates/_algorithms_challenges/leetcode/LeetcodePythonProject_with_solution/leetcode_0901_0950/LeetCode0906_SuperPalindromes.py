@@ -2,7 +2,7 @@ _______ math
 
 
 c_ Solution(object):
-    ___ superpalindromesInRange(self, L, R):
+    ___ superpalindromesInRange  L, R):
         """
         :type L: str
         :type R: str
@@ -19,7 +19,7 @@ c_ Solution(object):
 
         r.. res
 
-    ___ dfs(self, low, high, s):
+    ___ dfs  low, high, s):
         __ l..(s) > l..(s..(high)):
             r.. 0
         count = 0
@@ -33,5 +33,5 @@ c_ Solution(object):
             count += dfs(low, high, c+s+c)
         r.. count
 
-    ___ isPalindrome(self, num):
+    ___ isPalindrome  num):
         r.. s..(num) __ s..(num)[::-1]

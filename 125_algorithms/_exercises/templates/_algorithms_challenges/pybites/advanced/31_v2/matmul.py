@@ -15,12 +15,12 @@ c_ Matrix(object):
         result = [([s..(a * b ___ a, b __ z..(x, y)) ___ y __ z..(*mat2)]) ___ x __ mat1]
         r.. result
 
-    ___ __matmul__(self, other):
+    ___ __matmul__  other):
         r.. Matrix(_matrix_mult(values, other.values))
 
-    ___ __rmatmul__(self, other):
+    ___ __rmatmul__  other):
         r.. Matrix(_matrix_mult(other.values, values))
 
-    ___ __imatmul__(self, other):
+    ___ __imatmul__  other):
         _values = _matrix_mult(values, other.values)
         r.. self

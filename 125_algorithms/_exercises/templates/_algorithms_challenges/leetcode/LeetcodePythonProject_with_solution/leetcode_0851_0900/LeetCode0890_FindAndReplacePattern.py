@@ -4,7 +4,7 @@ Created on Oct 31, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ findAndReplacePattern(self, words, pattern):
+    ___ findAndReplacePattern  words, pattern):
         """
         :type words: List[str]
         :type pattern: str
@@ -16,7 +16,7 @@ c_ Solution(object):
                 res.a..(word)
         r.. res
     
-    ___ isSimliar(self, w1, w2):
+    ___ isSimliar  w1, w2):
         __ l..(w1) != l..(w2): r.. F..
         hashmap1, hashmap2    # dict, {}
         ___ c1, c2 __ z..(w1, w2):

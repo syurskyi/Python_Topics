@@ -21,7 +21,7 @@ return [1,2,3].
 #         self.right = None
 
 c_ Solution(object):
-    ___ preorderTraversal(self, root):
+    ___ preorderTraversal  root):
         """
         :type root: TreeNode
         :rtype: List[int]

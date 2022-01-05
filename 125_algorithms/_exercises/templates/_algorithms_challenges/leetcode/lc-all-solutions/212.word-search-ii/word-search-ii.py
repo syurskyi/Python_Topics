@@ -8,7 +8,7 @@ c_ Trie:
   ___ - ):
     root = TrieNode("-")
 
-  ___ addWord(self, word):
+  ___ addWord  word):
     root = root
     ___ i __ r..(0, l..(word)):
       c = word[i]
@@ -25,7 +25,7 @@ c_ Solution:
   # @param board, a list of lists of 1 length string
   # @param words: A list of string
   # @return: A list of string
-  ___ findWords(self, board, words):
+  ___ findWords  board, words):
     # write your code here
     trie = Trie()
     res    # list

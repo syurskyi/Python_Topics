@@ -27,7 +27,7 @@ c_ MultiplicationTable:
 
 
 
-    ___ calc_cell(self, x, y):
+    ___ calc_cell  x, y):
         """Takes x and y coords and returns the re-calculated result"""
 
 

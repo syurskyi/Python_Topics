@@ -7,7 +7,7 @@ c_ Solution:
     @param: A: An array of Integer
     @return: an integer
     """
-    ___ longestIncreasingContinuousSubsequence(self, A):
+    ___ longestIncreasingContinuousSubsequence  A):
         __ n.. A:
             r.. 0
 
@@ -15,9 +15,9 @@ c_ Solution:
         A.reverse()
         _size = get_lics_size(A)
 
-        r.. max(size, _size)
+        r.. m..(size, _size)
 
-    ___ get_lics_size(self, A):
+    ___ get_lics_size  A):
         ans = 0
         n = l..(A)
 
@@ -55,7 +55,7 @@ c_ Solution:
     @param: A: An array of Integer
     @return: an integer
     """
-    ___ longestIncreasingContinuousSubsequence(self, A):
+    ___ longestIncreasingContinuousSubsequence  A):
         __ n.. A:
             r.. 0
 
@@ -63,9 +63,9 @@ c_ Solution:
         A.reverse()
         _size = get_lics_size(A)
 
-        r.. max(size, _size)
+        r.. m..(size, _size)
 
-    ___ get_lics_size(self, A):
+    ___ get_lics_size  A):
         ans = size = 1
 
         ___ i __ r..(1, l..(A)):

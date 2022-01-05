@@ -34,7 +34,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numRescueBoats(self, people: List[i..], limit: i..) __ i..:
+    ___ numRescueBoats  people: List[i..], limit: i..) __ i..:
         """
         sort + gready
         """

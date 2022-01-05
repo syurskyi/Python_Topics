@@ -5,7 +5,7 @@ Created on Mar 2, 2017
 '''
 
 c_ Solution(object):
-    ___ validTree(self, n, edges):
+    ___ validTree  n, edges):
         roots = [-1]*n
         ___ e __ edges:
             root0 = findRoot(roots, e[0])
@@ -16,12 +16,12 @@ c_ Solution(object):
                 r.. F..
         r.. l..(edges) __ n-1
     
-    ___ findRoot(self, roots, ind):
+    ___ findRoot  roots, ind):
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     
-    ___ validTreeBFS(self, n, edges):
+    ___ validTreeBFS  n, edges):
         """
         :type n: int
         :type edges: List[List[int]]
@@ -50,7 +50,7 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ validTreeDFS(self, n, edges):
+    ___ validTreeDFS  n, edges):
         hashmap    # dict
         ___ i __ r..(n):
             hashmap[i]    # list
@@ -64,7 +64,7 @@ c_ Solution(object):
             __ n.. b: r.. F..
         r.. T..
     
-    ___ helper(self, curr, parent, hashmap, visited):
+    ___ helper  curr, parent, hashmap, visited):
         __ visited[curr]: r.. F..
         visited[curr] = T..
         ___ i __ hashmap[curr]:

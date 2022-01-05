@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findStrobogrammatic(self, n):
+    ___ findStrobogrammatic  n):
         """
         :type n: int
         :rtype: list[str]

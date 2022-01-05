@@ -5,7 +5,7 @@ c_ FileNode(object):
     name = name
     data = ""
 
-  ___ appendData(self, data):
+  ___ appendData  data):
     data += data
 
   ___ readAll
@@ -16,7 +16,7 @@ c_ FileSystem(object):
   ___ - ):
     root = FileNode("/")
 
-  ___ ls(self, path):
+  ___ ls  path):
     """
     :type path: str
     :rtype: List[str]
@@ -32,7 +32,7 @@ c_ FileSystem(object):
     files.s..()
     r.. files
 
-  ___ lookup(self, path, isAutoCreate):
+  ___ lookup  path, isAutoCreate):
     path = path.s..("/")
     p = root
     ___ name __ path:
@@ -46,14 +46,14 @@ c_ FileSystem(object):
       p = p.childs[name]
     r.. p
 
-  ___ mkdir(self, path):
+  ___ mkdir  path):
     """
     :type path: str
     :rtype: void
     """
     lookup(path, T..)
 
-  ___ addContentToFile(self, filePath, content):
+  ___ addContentToFile  filePath, content):
     """
     :type filePath: str
     :type content: str
@@ -63,7 +63,7 @@ c_ FileSystem(object):
     fd.isFolder = F..
     fd.appendData(content)
 
-  ___ readContentFromFile(self, filePath):
+  ___ readContentFromFile  filePath):
     """
     :type filePath: str
     :rtype: str

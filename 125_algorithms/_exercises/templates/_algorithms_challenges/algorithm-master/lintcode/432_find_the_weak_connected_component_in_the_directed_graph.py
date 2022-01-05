@@ -15,7 +15,7 @@ c_ Solution:
     @param {DirectedGraphNode[]} nodes a array of directed graph node
     @return {int[][]} a connected set of a directed graph
     """
-    ___ connectedSet2(self, nodes):
+    ___ connectedSet2  nodes):
         # Build UnionFind
         ___ node __ nodes:
             ___ nei __ node.neighbors:
@@ -31,13 +31,13 @@ c_ Solution:
             result[root_label].a..(node.label)
         r.. result.v..
 
-    ___ connect(self, a, b):
+    ___ connect  a, b):
         root_a = find(a)
         root_b = find(b)
         __ root_a __ n.. root_b:
             nodes[root_a] = root_b
 
-    ___ find(self, a):
+    ___ find  a):
         __ a n.. __ nodes:
             nodes[a] = a
             r.. a

@@ -17,7 +17,7 @@ c_ Interval(object):
         r.. __str__()
 
 c_ Solution(object):
-    ___ insert(self, intervals, newInterval):
+    ___ insert  intervals, newInterval):
         """
         :type intervals: List[Interval]
         :type newInterval: Interval
@@ -33,7 +33,7 @@ c_ Solution(object):
             ____ interval.end >= newInterval.start o. interval.start <= newInterval.end:
                 newInterval = Interval(\
                     m..(newInterval.start, interval.start),\
-                    max(newInterval.end, interval.end))
+                    m..(newInterval.end, interval.end))
         result.a..(newInterval)
         r.. result
     

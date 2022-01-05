@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ PredictTheWinner(self, nums):
+  ___ PredictTheWinner  nums):
     """
     :type nums: List[int]
     :rtype: bool

@@ -18,7 +18,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ reorderList_TLE(self, head):
+    ___ reorderList_TLE  head):
         """
         :param head: ListNode
         :return: nothing
@@ -52,7 +52,7 @@ c_ Solution:
 
             pre_cur = pre_cur.next.next
 
-    ___ reorderList_array(self, head):
+    ___ reorderList_array  head):
         """
         Not in place
 
@@ -70,19 +70,19 @@ c_ Solution:
 
         lst    # list
         ___ i __ r..(l..(lst2)):
-            try:
+            ___
                 lst.a..(lst1[i])
-            except IndexError:
+            ______ IndexError:
                 p..
             lst.a..(lst2[i])
 
         ___ i __ r..(l..(lst)):
-            try:
+            ___
                 lst[i].next = lst[i+1]
-            except IndexError:
+            ______ IndexError:
                 lst[i].next = N..
 
-    ___ reorderList(self, head):
+    ___ reorderList  head):
         """
         Algorithm:
         1. find the mid point
@@ -126,7 +126,7 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     length = 2
     lst = [ListNode(i+1) ___ i __ r..(length)]
     ___ i __ r..(length-1):

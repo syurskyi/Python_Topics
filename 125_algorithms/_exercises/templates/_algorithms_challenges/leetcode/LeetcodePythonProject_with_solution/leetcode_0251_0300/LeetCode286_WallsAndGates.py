@@ -5,7 +5,7 @@ Created on Mar 7, 2017
 '''
 
 c_ Solution(object):
-    ___ wallsAndGates(self, rooms):
+    ___ wallsAndGates  rooms):
         """
         :type rooms: List[List[int]]
         :rtype: void Do not return anything, modify rooms in-place instead.
@@ -17,7 +17,7 @@ c_ Solution(object):
                 __ rooms[i][j] __ 0:
                     bfs(rooms, i, j)
     
-    ___ bfs(self, rooms, i, j):
+    ___ bfs  rooms, i, j):
         m, n = l..(rooms), l..(rooms[0])
         queue = [(i, j, 0)]
         w.... queue:

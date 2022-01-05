@@ -44,7 +44,7 @@ ___ get_longest_palindrome(words_ N..
         __ is_palindrome(word):
             palindrome_length = l..(_clean_word(word))
             palindrome[word] = palindrome_length
-    r.. max(palindrome, key=palindrome.get)
+    r.. m..(palindrome, key=palindrome.get)
 
 
 #if __name__ == "__main__":

@@ -37,7 +37,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ deleteAndEarn(self, nums: List[i..]) __ i..:
+    ___ deleteAndEarn  nums: List[i..]) __ i..:
         """
         reduce to house rob problem
         whether to pick the number or not
@@ -53,13 +53,13 @@ c_ Solution:
         # whether to pick the number or not
         cur, prev = 0, 0
         ___ reward __ rewards:
-            nxt = max(cur, prev + reward)
+            nxt = m..(cur, prev + reward)
             prev = cur
             cur = nxt
 
         r.. cur
 
-    ___ deleteAndEarn_dp(self, nums: List[i..]) __ i..:
+    ___ deleteAndEarn_dp  nums: List[i..]) __ i..:
         """
         reduce to house rob problem
         whether to pick the number or not
@@ -75,13 +75,13 @@ c_ Solution:
         F = [0 ___ _ __ r..(10000 + 3)]
         ___ i __ r..(3, 10000 + 3):
             cur = i - 2
-            F[i] = max(
+            F[i] = m..(
                 F[i-1],
                 F[i-2] + counter[cur] * cur
             )
         r.. F[-1]
 
-    ___ deleteAndEarn_slow(self, nums: List[i..]) __ i..:
+    ___ deleteAndEarn_slow  nums: List[i..]) __ i..:
         """
         geedy + dp: chose to delete max or max - 1
         O(n lg n)
@@ -103,7 +103,7 @@ c_ Solution:
         F = [0 ___ _ __ counter]
         ___ i __ r..(l..(counter)):
             F[i] = counter[i][0] * counter[i][1]
-            F[i] += max(
+            F[i] += m..(
                 [
                     F[j]
                     ___ j __ r..(i)
@@ -112,7 +112,7 @@ c_ Solution:
                 o. [0]
             )
 
-        r.. max(F o. [0])
+        r.. m..(F o. [0])
 
 
 __ _______ __ _______

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ newInteger(self, n):
+  ___ newInteger  n):
     """
     :type n: int
     :rtype: int

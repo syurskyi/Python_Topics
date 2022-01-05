@@ -98,7 +98,7 @@ ___ mix(s1,s2):
                
                 #check if the string first element is integer or has a '=' 
                 #here try and except block helps program from terminating
-                try:
+                ___
                     #convert the strings first element to float 
                     check_int1 = float(res_string[j][0])
                     check_int2 = float(res_string[j+1][0])
@@ -114,7 +114,7 @@ ___ mix(s1,s2):
                         ____ check_int1 __ check_int2:
                             __ res_string[j][2] > res_string[j+1][2]:
                                 res_string[j],res_string[j+1]=res_string[j+1],res_string[j]
-                except:
+                ______:
                     
                     #if jth and j+1th element has = sign then proceed
                     __ res_string[j][0] __ '=' a.. res_string[j+1][0] __ '=':

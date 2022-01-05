@@ -4,7 +4,7 @@ c_ Solution:
     2. ignoring if the length less than current ans
     3. ignoring if the length equal current ans but has larger lexicographical order
     """
-    ___ findLongestWord(self, s, words):
+    ___ findLongestWord  s, words):
         """
         :type s: str
         :type words: List[str]
@@ -24,7 +24,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ is_subseq(self, s, t):
+    ___ is_subseq  s, t):
         """
         return True if `t` is subsequence of `s`
         """
@@ -43,7 +43,7 @@ c_ Solution:
     """
     Brute Force: TLE
     """
-    ___ findLongestWord(self, s, words):
+    ___ findLongestWord  s, words):
         """
         :type s: str
         :type words: List[str]
@@ -67,7 +67,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ find_cands(self, s, i, cands, path):
+    ___ find_cands  s, i, cands, path):
         __ i __ l..(s):
             cands.a..(''.j..(path))
             r..

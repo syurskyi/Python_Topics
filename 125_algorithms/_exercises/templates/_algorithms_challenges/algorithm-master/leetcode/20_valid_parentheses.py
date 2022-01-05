@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isValid(self, s):
+    ___ isValid  s):
         """
         :type s: str
         :rtype: bool

@@ -21,7 +21,7 @@ space: O(n) -> O(1)
 
 
 c_ Solution:
-    ___ maxChunksToSorted(self, nums):
+    ___ maxChunksToSorted  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -34,7 +34,7 @@ c_ Solution:
         _max = 0  # since 0 is the min in nums
 
         ___ i __ r..(l..(nums)):
-            _max = max(_max, nums[i])
+            _max = m..(_max, nums[i])
 
             __ _max __ i:
                 ans += 1
@@ -43,7 +43,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ maxChunksToSorted(self, nums):
+    ___ maxChunksToSorted  nums):
         """
         :type nums: List[int]
         :rtype: int

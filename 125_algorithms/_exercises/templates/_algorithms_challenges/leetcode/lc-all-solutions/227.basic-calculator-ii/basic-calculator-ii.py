@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ calculate(self, s):
+  ___ calculate  s):
     """
     :type s: str
     :rtype: int

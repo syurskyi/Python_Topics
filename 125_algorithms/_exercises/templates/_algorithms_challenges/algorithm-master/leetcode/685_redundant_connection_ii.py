@@ -15,7 +15,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ findRedundantDirectedConnection(self, edges):
+    ___ findRedundantDirectedConnection  edges):
         """
         :type edges: List[List[int]]
         :rtype: List[int]
@@ -42,7 +42,7 @@ c_ Solution:
         res = dfs(ans[1], adj, set())
         r.. res __ res ____ ans
 
-    ___ union(self, uf, u, v):
+    ___ union  uf, u, v):
         a = find(uf, u)
         b = find(uf, v)
 
@@ -52,7 +52,7 @@ c_ Solution:
         uf[b] = a
         r.. T..
 
-    ___ find(self, uf, u):
+    ___ find  uf, u):
         __ uf[u] __ 0:
             uf[u] = u
             r.. u
@@ -62,7 +62,7 @@ c_ Solution:
         uf[u] = find(uf, uf[u])
         r.. uf[u]
 
-    ___ dfs(self, u, adj, visited):
+    ___ dfs  u, adj, visited):
         # to detect cycle
         visited.add(u)
 

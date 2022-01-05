@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 c_ Solution(object):
-    ___ totalNQueens(self, n):
+    ___ totalNQueens  n):
         """
         :type n: int
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(object):
         placeQueen(usedColumns, 0, sumArr)
         r.. sumArr[0]
     
-    ___ placeQueen(self, usedColumns, row, sumArr):
+    ___ placeQueen  usedColumns, row, sumArr):
         n = l..(usedColumns)
         __ row __ n:
             sumArr[0] += 1
@@ -27,7 +27,7 @@ c_ Solution(object):
                 usedColumns[row] = i
                 placeQueen(usedColumns, row+1, sumArr)
     
-    ___ isValid(self, usedColumns, row, col):
+    ___ isValid  usedColumns, row, col):
         ___ i __ r..(row):
             __ usedColumns[i] __ col:
                 r.. F..

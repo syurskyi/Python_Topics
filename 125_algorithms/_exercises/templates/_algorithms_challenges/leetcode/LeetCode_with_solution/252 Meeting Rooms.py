@@ -13,7 +13,7 @@ c_ Interval:
 
 
 c_ Solution:
-    ___ canAttendMeetings(self, intervals):
+    ___ canAttendMeetings  intervals):
         """
 
         :type intervals: list[Interval]

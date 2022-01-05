@@ -11,7 +11,7 @@ c_ Interval(object):
         end = e
 
 c_ Solution(object):
-    ___ findRightInterval(self, intervals):
+    ___ findRightInterval  intervals):
         sortedList = [(interval.start, i) ___ i, interval __ e..(intervals)]
         sortedList.s..()
         result    # list
@@ -23,7 +23,7 @@ c_ Solution(object):
                 result.a..(-1)
         r.. result
     
-    ___ binary_search(self, target, sortedList):
+    ___ binary_search  target, sortedList):
         start, end = 0, l..(sortedList)
         w.... start < end:
             mid = (start+end)//2
@@ -34,7 +34,7 @@ c_ Solution(object):
         __ end __ l..(sortedList): r.. -1
         r.. sortedList[end][1]
     
-    ___ findRightInterval_short(self, intervals):
+    ___ findRightInterval_short  intervals):
         _______ bisect
         l = s..((e.start, i) ___ i, e __ e..(intervals))
         res    # list

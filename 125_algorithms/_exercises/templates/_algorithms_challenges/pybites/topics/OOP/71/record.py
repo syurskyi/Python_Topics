@@ -4,7 +4,7 @@ c_ RecordScore
     ___ - ):
         high_score = float('-inf')
 
-    ___ __call__(self, score):
+    ___ __call__  score):
         score = score
         __ score > high_score:
             high_score = score

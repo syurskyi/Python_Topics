@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 c_ Solution(object):
-    ___ myPow(self, x, n):
+    ___ myPow  x, n):
         """
         :type x: float
         :type n: int

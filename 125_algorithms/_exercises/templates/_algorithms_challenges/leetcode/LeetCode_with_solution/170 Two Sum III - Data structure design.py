@@ -13,14 +13,14 @@ c_ TwoSum(object):
         """
         hash_map = defaultdict(i..)
 
-    ___ add(self, number):
+    ___ add  number):
         """
         Add the number to an internal data structure.
         :rtype: nothing
         """
         hash_map[number] += 1
 
-    ___ find(self, value):
+    ___ find  value):
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         :type value: int
@@ -31,7 +31,7 @@ c_ TwoSum(object):
             ___ k __ hash_map
         )
 
-    ___ find_TLE(self, value):
+    ___ find_TLE  value):
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         :type value: int

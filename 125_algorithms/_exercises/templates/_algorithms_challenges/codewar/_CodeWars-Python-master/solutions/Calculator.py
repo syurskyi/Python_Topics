@@ -11,13 +11,13 @@ c_ Calculator(object):
     ___ - ):
         result    # list
 
-    ___ evaluate(self, s__):
+    ___ evaluate  s__):
         result = s__.s..(' ')
         _loop('*/')
         _loop('+-')
         r.. float(result[0])
 
-    ___ _loop(self, operators):
+    ___ _loop  operators):
         i = 1
         w.... i < l..(result) - 1:
             __ result[i] __ operators:

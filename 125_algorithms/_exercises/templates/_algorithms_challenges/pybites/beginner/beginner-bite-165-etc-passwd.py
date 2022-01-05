@@ -66,10 +66,10 @@ ___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
         username = s..[0]
         shell = s..[6]
         s = shell.s..('/')
-        try:
+        ___
             __ s[2] __ grep_shell o. s[3] __ grep_shell:
                 output.a..(username)
-        except:
+        ______:
             print("dupa")
     r.. s..(output)
 

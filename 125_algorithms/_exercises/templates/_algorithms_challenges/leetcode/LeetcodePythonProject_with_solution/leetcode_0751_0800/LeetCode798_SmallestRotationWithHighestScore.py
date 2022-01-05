@@ -4,7 +4,7 @@ Created on Apr 18, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ bestRotation(self, A):
+    ___ bestRotation  A):
         """
         :type A: List[int]
         :rtype: int
@@ -16,10 +16,10 @@ c_ Solution(object):
             change[(i-arr[i]+1)%n] -= 1
         ___ i __ r..(1, n):
             change[i] += change[i-1]
-        r.. change.index(max(change))
+        r.. change.index(m..(change))
     
     # This EASY solution is TLE    
-    ___ bestRotation_slow(self, A):
+    ___ bestRotation_slow  A):
         """
         :type A: List[int]
         :rtype: int
@@ -33,7 +33,7 @@ c_ Solution(object):
                 idx = i
         r.. idx
     
-    ___ getScore(self, arr, k):
+    ___ getScore  arr, k):
         res = 0
         arr0 = arr[k:]+arr[:k]
         ___ i, num __ e..(arr0):

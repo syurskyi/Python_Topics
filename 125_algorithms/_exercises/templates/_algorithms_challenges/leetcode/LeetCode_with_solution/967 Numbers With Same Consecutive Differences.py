@@ -33,7 +33,7 @@ c_ Solution:
     ___ - ):
         cache    # dict
 
-    ___ numsSameConsecDiff(self, N: i.., K: i..) __ List[i..]:
+    ___ numsSameConsecDiff  N: i.., K: i..) __ List[i..]:
         """
         dfs + memoization
         """
@@ -48,7 +48,7 @@ c_ Solution:
             map(l.... x: i..("".j..(map(s.., x))), ret)
         )
 
-    ___ dfs(self, start: i.., N: i.., K: i..) __ List[List[i..]]:
+    ___ dfs  start: i.., N: i.., K: i..) __ List[List[i..]]:
         __ (start, N, K) n.. __ cache:
             ret    # list
             __ N __ 1:

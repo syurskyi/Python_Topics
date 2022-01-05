@@ -15,7 +15,7 @@ Here are few examples.
 """
 
 c_ Solution(object):
-    ___ searchInsert(self, nums, target):
+    ___ searchInsert  nums, target):
         """
         :type nums: List[int]
         :type target: int

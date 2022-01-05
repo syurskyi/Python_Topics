@@ -19,7 +19,7 @@ c_ NumArray(object):
         ____:
             root = buildTree(nums, 0, l..(nums)-1)
     
-    ___ buildTree(self, nums, i, j):
+    ___ buildTree  nums, i, j):
         __ n.. nums o. i > j:
             r.. N..
         __ i __ j:
@@ -31,10 +31,10 @@ c_ NumArray(object):
         curr.sumVal = curr.leftChild.sumVal + curr.rightChild.sumVal
         r.. curr
     
-    ___ update(self, i, val):
+    ___ update  i, val):
         updateHelper(root, i, val)
     
-    ___ updateHelper(self, root, i, val):
+    ___ updateHelper  root, i, val):
         __ n.. root:
             r..
         mid = root.start+(root.end-root.start)//2
@@ -47,16 +47,16 @@ c_ NumArray(object):
             r..
         root.sumVal = root.leftChild.sumVal + root.rightChild.sumVal
     
-    ___ sumRange(self, i, j):
+    ___ sumRange  i, j):
         r.. sumRangeHelper(root, i, j)
     
-    ___ sumRangeHelper(self, root, i, j):
+    ___ sumRangeHelper  root, i, j):
         __ n.. root o. i > j o. j < root.start o. i > root.end:
             r.. 0
         __ i __ root.start a.. j __ root.end:
             r.. root.sumVal
         mid = root.start + (root.end-root.start)//2
         result = sumRangeHelper(root.leftChild, i, m..(j, mid)) +\
-            sumRangeHelper(root.rightChild, max(i, mid+1), j)
+            sumRangeHelper(root.rightChild, m..(i, mid+1), j)
         r.. result
     

@@ -12,7 +12,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ sortList_array(self, head):
+    ___ sortList_array  head):
         """
         Workaround by sorted()
         :param head: ListNode
@@ -34,7 +34,7 @@ c_ Solution:
         lst[-1].next = N..
         r.. lst[0]
 
-    ___ sortList(self, head):
+    ___ sortList  head):
         """
         Quick sort: not guarantee to be O(n lgn)
         Heap sort: not great as index
@@ -84,7 +84,7 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     length = 5
     lst = [ListNode(length-i) ___ i __ r..(length)]
     ___ i __ r..(length-1):

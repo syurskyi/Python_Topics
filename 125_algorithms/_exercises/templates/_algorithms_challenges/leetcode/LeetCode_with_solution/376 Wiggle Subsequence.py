@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ wiggleMaxLength(self, A):
+    ___ wiggleMaxLength  A):
         """
         Let H[i] be max wiggle length for [0, i] with A[i] as high point
         Let L[i] be similarly defined but as low point.
@@ -47,9 +47,9 @@ c_ Solution(object):
             L[i] = H[i-1] + 1 __ A[i] < A[i-1] ____ L[i-1]
             H[i] = L[i-1] + 1 __ A[i] > A[i-1] ____ H[i-1]
 
-        r.. max(H[N-1], L[N-1])
+        r.. m..(H[N-1], L[N-1])
 
-    ___ wiggleMaxLengthSuboptimal(self, A):
+    ___ wiggleMaxLengthSuboptimal  A):
         """
         Let H[i] be wiggle length ends at i, with A[i] as high point
         Let L[i] be similarly defined but as low point.
@@ -66,10 +66,10 @@ c_ Solution(object):
         ___ i __ xrange(1, N):
             ___ j __ xrange(i):
                 __ A[i] > A[j]:
-                    H[i] = max(H[i], L[j] + 1)
+                    H[i] = m..(H[i], L[j] + 1)
                 ____ A[i] < A[j]:
-                    L[i] = max(L[i], H[j] + 1)
+                    L[i] = m..(L[i], H[j] + 1)
 
-                gmax = max(gmax, H[i], L[i])
+                gmax = m..(gmax, H[i], L[i])
 
         r.. gmax

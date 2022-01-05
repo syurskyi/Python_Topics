@@ -44,7 +44,7 @@ ____ nose.tools _______ assert_equal
 
 c_ AnagramTest(object):
 
-    ___ test(self, sol):
+    ___ test  sol):
         assert_equal(sol('go go go', 'gggooo'), T..)
         assert_equal(sol('abc', 'cba'), T..)
         assert_equal(sol('hi man', 'hi     man'), T..)
@@ -122,7 +122,7 @@ ____ nose.tools _______ assert_equal
 
 c_ TestBalanceCheck(object):
 
-    ___ test(self, sol):
+    ___ test  sol):
         assert_equal(sol('[](){([[[]]])}('), F..)
         assert_equal(sol('[{{{(())}}}]((()))'), T..)
         assert_equal(sol('[[[]])]'), F..)

@@ -28,7 +28,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ combinationSum4(self, nums, target):
+    ___ combinationSum4  nums, target):
         """
         Let F[i] be the number of combinations ways for number i
         F[i] = sum(F[i-k] for k in nums)

@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: an integer to be inserted
     @return: a list of length 2, [index1, index2]
     """
-    ___ searchRange(self, A, target):
+    ___ searchRange  A, target):
         NOT_FOUND = [-1, -1]
 
         __ n.. A:

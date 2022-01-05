@@ -12,17 +12,17 @@ c_ IntvArray(object):
   ___ __len__
     r.. l..(_array)
 
-  ___ __getitem__(self, x):
+  ___ __getitem__  x):
     r.. _array[x][0]
 
-  ___ getIdx(self, x):
+  ___ getIdx  x):
     __ x >= l..(_array):
       r.. -1
     r.. _array[x][1]
 
 
 c_ Solution(object):
-  ___ findRightInterval(self, intervals):
+  ___ findRightInterval  intervals):
     """
     :type intervals: List[Interval]
     :rtype: List[int]

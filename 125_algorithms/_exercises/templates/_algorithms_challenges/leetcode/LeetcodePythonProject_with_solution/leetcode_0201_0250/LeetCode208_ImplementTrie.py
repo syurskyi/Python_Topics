@@ -14,7 +14,7 @@ c_ Trie(object):
     ___ - ):
         root = TrieNode()
     
-    ___ insert(self, word):
+    ___ insert  word):
         children = root.children
         ___ i, c __ e..(word):
             __ c __ children:
@@ -26,7 +26,7 @@ c_ Trie(object):
             __ i __ l..(word)-1:
                 t.isLeaf = T..
     
-    ___ searchNode(self, word):
+    ___ searchNode  word):
         children = root.children
         ___ c __ word:
             __ c __ children:
@@ -36,11 +36,11 @@ c_ Trie(object):
                 r.. N..
         r.. t
     
-    ___ s..(self, word):
+    ___ s..  word):
         t = searchNode(word)
         r.. bool(t a.. t.isLeaf)
     
-    ___ startsWith(self, prefix):
+    ___ startsWith  prefix):
         t = searchNode(prefix)
         r.. bool(t __ n.. N..)
     

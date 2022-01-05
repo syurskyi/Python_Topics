@@ -4,7 +4,7 @@ Created on Oct 11, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findKthNumber(self, m, n, k):
+    ___ findKthNumber  m, n, k):
         """
         :type m: int
         :type n: int

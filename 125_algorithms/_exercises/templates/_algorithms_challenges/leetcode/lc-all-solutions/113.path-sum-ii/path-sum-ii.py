@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ pathSum(self, root, s..):
+  ___ pathSum  root, s..):
     """
     :type root: TreeNode
     :type sum: int

@@ -30,7 +30,7 @@ c_ SnakeGame(object):
         }
         eat = 0
 
-    ___ move(self, direction):
+    ___ move  direction):
         """
         Moves the snake.
         @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down

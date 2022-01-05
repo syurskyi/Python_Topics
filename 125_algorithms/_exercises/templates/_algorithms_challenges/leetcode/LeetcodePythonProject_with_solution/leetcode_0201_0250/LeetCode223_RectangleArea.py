@@ -4,7 +4,7 @@ Created on Feb 21, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ computeArea(self, A, B, C, D, E, F, G, H):
+    ___ computeArea  A, B, C, D, E, F, G, H):
         """
         :type A: int
         :type B: int

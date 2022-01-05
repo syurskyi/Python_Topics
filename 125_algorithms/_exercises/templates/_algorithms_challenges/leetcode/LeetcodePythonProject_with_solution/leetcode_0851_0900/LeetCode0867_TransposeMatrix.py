@@ -4,7 +4,7 @@ Created on Sep 30, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ transpose(self, A):
+    ___ transpose  A):
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]

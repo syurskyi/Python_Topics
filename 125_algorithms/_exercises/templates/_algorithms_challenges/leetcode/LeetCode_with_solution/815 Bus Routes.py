@@ -28,7 +28,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ numBusesToDestination(self, routes: List[List[i..]], S: i.., T: i..) __ i..:
+    ___ numBusesToDestination  routes: List[List[i..]], S: i.., T: i..) __ i..:
         """
         BFS
         bus based nodes rather than stop based nodes
@@ -71,7 +71,7 @@ c_ Solution:
 
         r.. -1
 
-    ___ numBusesToDestination_TLE(self, routes: List[List[i..]], S: i.., T: i..) __ i..:
+    ___ numBusesToDestination_TLE  routes: List[List[i..]], S: i.., T: i..) __ i..:
         """
         BFS
         Lest number of buses rather than bus stops

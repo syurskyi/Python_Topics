@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ subsets(self, nums):
+  ___ subsets  nums):
     """
     :type nums: List[int]
     :rtype: List[List[int]]

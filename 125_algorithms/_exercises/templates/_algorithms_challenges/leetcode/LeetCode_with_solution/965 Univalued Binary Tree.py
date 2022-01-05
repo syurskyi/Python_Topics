@@ -33,10 +33,10 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ isUnivalTree(self, root: TreeNode) __ bool:
+    ___ isUnivalTree  root: TreeNode) __ bool:
         r.. dfs(root, root.val __ root ____ N..)
 
-    ___ dfs(self, node, val) __ bool:
+    ___ dfs  node, val) __ bool:
         __ n.. node:
             r.. T..
         __ node.val != val:

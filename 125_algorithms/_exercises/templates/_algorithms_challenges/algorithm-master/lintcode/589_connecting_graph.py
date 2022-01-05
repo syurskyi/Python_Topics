@@ -10,7 +10,7 @@ c_ ConnectingGraph:
         ___ i __ r..(1, n + 1):
             N[i] = i
 
-    ___ find(self, a):
+    ___ find  a):
         __ N[a] __ a:
             r.. a
 
@@ -22,7 +22,7 @@ c_ ConnectingGraph:
     @param: b: An integer
     @return: nothing
     """
-    ___ connect(self, a, b):
+    ___ connect  a, b):
         _a = find(a)
         _b = find(b)
         __ _a != _b:
@@ -33,7 +33,7 @@ c_ ConnectingGraph:
     @param: b: An integer
     @return: A boolean
     """
-    ___ query(self, a, b):
+    ___ query  a, b):
         _a = find(a)
         _b = find(b)
         r.. _a __ _b

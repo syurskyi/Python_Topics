@@ -69,7 +69,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ orderOfLargestPlusSign(self, N: i.., mines: List[List[i..]]) __ i..:
+    ___ orderOfLargestPlusSign  N: i.., mines: List[List[i..]]) __ i..:
         """
         < ^ > V four directions
         Let F[i][j][k] be the number of consecutive 1 including G[i][j] it self
@@ -96,7 +96,7 @@ c_ Solution:
         ret = 0
         ___ i __ r..(N):
             ___ j __ r..(N):
-                ret = max(ret, m..(F[i][j]))
+                ret = m..(ret, m..(F[i][j]))
 
         r.. ret
 

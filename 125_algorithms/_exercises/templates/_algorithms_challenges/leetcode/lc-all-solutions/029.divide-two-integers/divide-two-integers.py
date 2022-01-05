@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ divide(self, dividend, divisor):
+  ___ divide  dividend, divisor):
     """
     :type dividend: int
     :type divisor: int
@@ -23,4 +23,4 @@ c_ Solution(object):
       cnt = 1
       dividend -= subsum
       subsum = divisor
-    r.. max(m..(sign * ans, 0x7fffffff), -2147483648)
+    r.. m..(m..(sign * ans, 0x7fffffff), -2147483648)

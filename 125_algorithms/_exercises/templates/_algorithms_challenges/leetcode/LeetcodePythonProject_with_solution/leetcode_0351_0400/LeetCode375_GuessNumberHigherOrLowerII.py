@@ -5,13 +5,13 @@ Created on Apr 1, 2017
 '''
 
 c_ Solution(object):
-    ___ getMoneyAmount(self, n):
+    ___ getMoneyAmount  n):
         dp = [[0]*(n+1) ___ _ __ r..(n+1)]
         ___ j __ r..(2, n+1):
             ___ i __ r..(j-1, 0, -1):
                 globalMin = float('inf')
                 ___ k __ r..(i+1, j):
-                    localMax = k+max(dp[i][k-1], dp[k+1][j])
+                    localMax = k+m..(dp[i][k-1], dp[k+1][j])
                     globalMin = m..(globalMin, localMax)
                 __ i+1 __ j:
                     dp[i][j] = i

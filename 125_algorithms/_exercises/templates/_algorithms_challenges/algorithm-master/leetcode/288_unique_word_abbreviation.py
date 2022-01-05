@@ -28,7 +28,7 @@ c_ ValidWordAbbr:
             abbr = abbreviation(word)
             abbrs[abbr] = word
 
-    ___ isUnique(self, word):
+    ___ isUnique  word):
         """
         check if a word is unique.
         :type word: str
@@ -37,7 +37,7 @@ c_ ValidWordAbbr:
         abbr = abbreviation(word)
         r.. abbr n.. __ abbrs
 
-    ___ abbreviation(self, word):
+    ___ abbreviation  word):
         __ l..(word) < 3:
             r.. word
 

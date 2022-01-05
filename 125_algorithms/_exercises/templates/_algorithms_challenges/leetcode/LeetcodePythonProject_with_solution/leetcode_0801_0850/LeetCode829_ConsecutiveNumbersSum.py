@@ -4,7 +4,7 @@ Created on May 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ consecutiveNumbersSum(self, N):
+    ___ consecutiveNumbersSum  N):
         """
         :type N: int
         :rtype: int

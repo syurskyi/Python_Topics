@@ -14,10 +14,10 @@ ___ romanize(decimal_number):
     ____:
         r.. ValueError
 
-    try:
+    ___
         numeral = numeral_lookup[decimal_number]
         r.. numeral
-    except Exception:
+    ______ Exception:
         p..
 
     roman_numeral = ""

@@ -32,13 +32,13 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
     
 
     books    # list
-    try:
+    ___
         response = requests.get(url,params=params)
         response.raise_for_status()
-    except requests.HTTPError __ e:
+    ______ requests.HTTPError __ e:
         print('HTTP Error')
         print(e)
-    except Exception __ e:
+    ______ Exception __ e:
         print('Other exception')
         print(e)
     ____:

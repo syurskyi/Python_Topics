@@ -5,15 +5,15 @@ Created on Apr 4, 2017
 '''
 
 c_ Solution(object):
-    ___ longestSubstring_orig(self, s, k):
+    ___ longestSubstring_orig  s, k):
         __ l..(s) < k:
             r.. 0
         c = m..([(s.c.. c), c) ___ c __ s])[1]
         __ s.c.. c) >= k:
             r.. l..(s)
-        r.. max(longestSubstring_orig(t, k) ___ t __ s.s..(c))
+        r.. m..(longestSubstring_orig(t, k) ___ t __ s.s..(c))
     
-    ___ longestSubstring(self, s, k):
+    ___ longestSubstring  s, k):
         __ l..(s) < k: r.. 0
         minChar, minCount = 0, float('inf')
         hashmap    # dict
@@ -27,10 +27,10 @@ c_ Solution(object):
             r.. l..(s)
         maxRes = float('-inf')
         ___ t __ s.s..(minChar):
-            maxRes = max(maxRes, longestSubstring(t, k))
+            maxRes = m..(maxRes, longestSubstring(t, k))
         r.. maxRes
     
-    ___ longestSubstring_another(self, s, k):
+    ___ longestSubstring_another  s, k):
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
@@ -45,10 +45,10 @@ c_ Solution(object):
         ___ i __ r..(l..(s)):
             __ s[i] __ splitSet:
                 __ prev < i:
-                    maxLen = max(maxLen, longestSubstring_another(s[prev:i], k))
+                    maxLen = m..(maxLen, longestSubstring_another(s[prev:i], k))
                 prev = i+1
         __ prev < l..(s):
-            maxLen = max(maxLen, longestSubstring_another(s[prev:], k))
+            maxLen = m..(maxLen, longestSubstring_another(s[prev:], k))
         r.. maxLen
     
     ___ test

@@ -45,7 +45,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
             __ dat['date'].year __ year o. year __ N..
                 commits.update({dat['date'].strftime('%Y-%m'): dat['changes']})
 
-    max = commits.most_common(1)[0][0]
+    m.. = commits.most_common(1)[0][0]
     m.. = commits.most_common()[-1][0]
 
-    r.. m.., max
+    r.. m.., m..

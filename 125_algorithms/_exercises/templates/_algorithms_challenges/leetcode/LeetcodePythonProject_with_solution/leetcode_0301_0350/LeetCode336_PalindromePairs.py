@@ -5,7 +5,7 @@ Created on Mar 19, 2017
 '''
 
 c_ Solution(object):
-    ___ palindromePairs(self, words):
+    ___ palindromePairs  words):
         __ n.. words: r.. []
         hashmap    # dict
         result    # list
@@ -25,7 +25,7 @@ c_ Solution(object):
                         result.a..([i, hashmap[str1rvs]])
         r.. result
     
-    ___ isPalindrome(self, s):
+    ___ isPalindrome  s):
         left, right = 0, l..(s)-1
         w.... left < right:
             __ s[left] != s[right]:

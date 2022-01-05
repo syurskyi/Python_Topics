@@ -5,7 +5,7 @@ Created on Feb 3, 2017
 '''
 
 c_ Solution(object):
-    ___ numDistinct(self, s, t):
+    ___ numDistinct  s, t):
         """
         :type s: str
         :type t: str

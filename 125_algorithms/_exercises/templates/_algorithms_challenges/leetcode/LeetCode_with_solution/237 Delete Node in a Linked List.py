@@ -14,7 +14,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ deleteNode(self, node):
+    ___ deleteNode  node):
         """
         Only access to the node to be deleted.
         :param node: ListNode

@@ -11,7 +11,7 @@ You should return the indices: [0,9].
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ findSubstring_TLE(self, S, L):
+    ___ findSubstring_TLE  S, L):
         """
         Time limit exceeded
 
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. result
 
-    ___ findSubstring(self, S, L):
+    ___ findSubstring  S, L):
         """
         Algorithm
         1. brutal force scanning: O(n*(l*k)), rechecking
@@ -156,7 +156,7 @@ c_ Solution:
 
         r.. ret
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().findSubstring("abababab", ["a","b","a"])__[0,2,4]
     ... Solution().findSubstring("a", ["a"])__[0]
     ... Solution().findSubstring("lingmindraboofooowingdingbarrwingmonkeypoundcake", ["fooo","barr","wing","ding","wing"])__[13]

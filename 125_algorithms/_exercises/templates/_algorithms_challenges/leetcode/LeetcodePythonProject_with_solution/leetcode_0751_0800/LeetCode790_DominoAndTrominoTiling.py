@@ -4,7 +4,7 @@ Created on Apr 15, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numTilings(self, N):
+    ___ numTilings  N):
         """
         :type N: int
         :rtype: int

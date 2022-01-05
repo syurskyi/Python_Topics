@@ -4,7 +4,7 @@ REF: https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/
 
 
 c_ Solution:
-    ___ findAnagrams(self, s, t):
+    ___ findAnagrams  s, t):
         """
         :type s: str
         :type t: str

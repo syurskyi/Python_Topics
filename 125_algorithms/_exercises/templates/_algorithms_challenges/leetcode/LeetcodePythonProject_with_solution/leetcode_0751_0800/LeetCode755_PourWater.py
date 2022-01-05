@@ -4,7 +4,7 @@ Created on Mar 28, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ pourWater(self, heights, V, K):
+    ___ pourWater  heights, V, K):
         """
         :type heights: List[int]
         :type V: int

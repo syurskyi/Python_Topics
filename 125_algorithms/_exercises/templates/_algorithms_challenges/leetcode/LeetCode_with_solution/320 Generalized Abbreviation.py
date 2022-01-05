@@ -8,7 +8,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ generateAbbreviations(self, word):
+    ___ generateAbbreviations  word):
         """
         backtracking, pivoting letter
         :type word: str
@@ -31,7 +31,7 @@ c_ SolutionTLE(object):
     ___ - ):
         cache = defaultdict(l..)
 
-    ___ generateAbbreviations(self, word):
+    ___ generateAbbreviations  word):
         """
         Cached, brute force
         Two-way backtracking, pivoting number
@@ -40,7 +40,7 @@ c_ SolutionTLE(object):
         """
         r.. l..(set(dfs(word)))
 
-    ___ dfs(self, word):
+    ___ dfs  word):
         __ word n.. __ cache:
             ret    # list
             ___ l __ xrange(1, l..(word)+1):

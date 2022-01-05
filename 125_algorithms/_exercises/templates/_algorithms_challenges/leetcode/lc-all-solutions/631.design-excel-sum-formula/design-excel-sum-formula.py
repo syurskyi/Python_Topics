@@ -8,10 +8,10 @@ c_ Excel(object):
     data = [[0] * (W + 1) ___ _ __ r..(H + 1)]
     formulas    # dict
 
-  ___ decodeCoord(self, r, c):
-    r.. i..(r) - 1, ord(c) - ord("A") + 1
+  ___ decodeCoord  r, c):
+    r.. i..(r) - 1, o..(c) - o..("A") + 1
 
-  ___ set(self, r, c, v):
+  ___ set  r, c, v):
     """
     :type r: int
     :type c: str
@@ -23,7 +23,7 @@ c_ Excel(object):
       del formulas[(r, c)]
     data[r][c] = v
 
-  ___ get(self, r, c):
+  ___ get  r, c):
     """
     :type r: int
     :type c: str
@@ -34,7 +34,7 @@ c_ Excel(object):
       r.. computeFormula(formulas[(r, c)])
     r.. data[r][c]
 
-  ___ computeFormula(self, strs):
+  ___ computeFormula  strs):
     ans = 0
     ___ s __ strs:
       startI, startJ, endI, endJ = parseRange(s)
@@ -46,7 +46,7 @@ c_ Excel(object):
             ans += data[i][j]
     r.. ans
 
-  ___ parseRange(self, s):
+  ___ parseRange  s):
     start = end = s
     __ ":" __ s:
       start, end = s.s..(":")
@@ -54,7 +54,7 @@ c_ Excel(object):
     endI, endJ = decodeCoord(end[1:], end[0])
     r.. (startI, startJ, endI, endJ)
 
-  ___ s..(self, r, c, strs):
+  ___ s..  r, c, strs):
     """
     :type r: int
     :type c: str

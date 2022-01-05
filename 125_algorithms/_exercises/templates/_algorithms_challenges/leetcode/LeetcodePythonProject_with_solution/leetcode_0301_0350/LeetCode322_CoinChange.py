@@ -5,7 +5,7 @@ Created on Mar 18, 2017
 '''
 
 c_ Solution(object):
-    ___ coinChange(self, coins, amount):
+    ___ coinChange  coins, amount):
         dp = [float('inf')]*(amount+1)
         dp[0] = 0
         ___ i __ r..(amount+1):

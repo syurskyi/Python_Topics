@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ fullJustify(self, words, maxWidth):
+    ___ fullJustify  words, maxWidth):
         """
         :type words: List[str]
         :type maxWidth: int
@@ -21,7 +21,7 @@ c_ Solution(object):
             num_of_letters += l..(w)
         r.. res + [' '.j..(cur).ljust(maxWidth)]
     
-    ___ fullJustify_orig(self, words, maxWidth):
+    ___ fullJustify_orig  words, maxWidth):
         """
         :type words: List[str]
         :type maxWidth: int

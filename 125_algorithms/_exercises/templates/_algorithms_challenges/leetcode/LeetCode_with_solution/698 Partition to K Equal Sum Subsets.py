@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ canPartitionKSubsets(self, nums: List[i..], k: i..) __ bool:
+    ___ canPartitionKSubsets  nums: List[i..], k: i..) __ bool:
         """
         resurive search
         """
@@ -32,7 +32,7 @@ c_ Solution:
         visited = [F.. ___ _ __ nums]
         r.. dfs(nums, 0, N.., target, visited, k)
 
-    ___ dfs(self, nums, start_idx, cur_sum, target_sum, visited, k):
+    ___ dfs  nums, start_idx, cur_sum, target_sum, visited, k):
         """
         some corner cases:
         1. target_sum default at 0: sum or empty array is 0?
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 c_ Solution_TLE:
-    ___ canPartitionKSubsets(self, nums: List[i..], k: i..) __ bool:
+    ___ canPartitionKSubsets  nums: List[i..], k: i..) __ bool:
         """
         resurive search
         """
@@ -75,7 +75,7 @@ c_ Solution_TLE:
         visited = [F.. ___ _ __ nums]
         r.. dfs(nums, N.., target, visited, k)
 
-    ___ dfs(self, nums, cur_sum, target_sum, visited, k):
+    ___ dfs  nums, cur_sum, target_sum, visited, k):
         """
         some corner cases:
         1. target_sum default at 0: sum or empty array is 0?

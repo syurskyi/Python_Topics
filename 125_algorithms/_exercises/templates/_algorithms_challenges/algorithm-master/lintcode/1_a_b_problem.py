@@ -4,7 +4,7 @@ c_ Solution:
     @param: b: An integer
     @return: The sum of a and b
     """
-    ___ aplusb(self, a, b):
+    ___ aplusb  a, b):
         __ n.. a:
             r.. b
         __ n.. b:

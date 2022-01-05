@@ -34,8 +34,8 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ smallestRangeI(self, A: List[i..], K: i..) __ i..:
+    ___ smallestRangeI  A: List[i..], K: i..) __ i..:
         """
         only need the max and min
         """
-        r.. max(0, max(A) - K - (m..(A) + K))
+        r.. m..(0, m..(A) - K - (m..(A) + K))

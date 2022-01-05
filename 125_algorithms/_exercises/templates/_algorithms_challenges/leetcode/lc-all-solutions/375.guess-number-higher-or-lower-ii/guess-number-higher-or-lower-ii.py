@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ getMoneyAmount(self, n):
+  ___ getMoneyAmount  n):
     """
     :type n: int
     :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(object):
       ___ i __ r..(start, end + 1):
         left = dc(cache, start, i - 1)
         right = dc(cache, i + 1, end)
-        minV = m..(minV, max(left, right) + i)
+        minV = m..(minV, m..(left, right) + i)
       __ minV != float("inf"):
         cache[start][end] = minV
       r.. cache[start][end]

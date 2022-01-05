@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution(object):
-  ___ generatePalindromes(self, s):
+  ___ generatePalindromes  s):
     """
     :type s: str
     :rtype: List[str]

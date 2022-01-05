@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findRepeatedDnaSequences(self, s):
+  ___ findRepeatedDnaSequences  s):
     """
     :type s: str
     :rtype: List[str]

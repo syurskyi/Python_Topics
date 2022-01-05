@@ -5,7 +5,7 @@ Created on Mar 11, 2017
 '''
 
 c_ Solution(object):
-    ___ removeInvalidParentheses(self, s):
+    ___ removeInvalidParentheses  s):
         rmL, rmR = 0, 0
         ___ c __ s:
             __ c __ '(':
@@ -19,7 +19,7 @@ c_ Solution(object):
         helper(s, 0, result, '', rmL, rmR, 0)
         r.. l..(result)
     
-    ___ helper(self, s, i, result, elem, rmL, rmR, openNum):
+    ___ helper  s, i, result, elem, rmL, rmR, openNum):
         __ rmL < 0 o. rmR < 0 o. openNum < 0:
             r..
         __ i __ l..(s):

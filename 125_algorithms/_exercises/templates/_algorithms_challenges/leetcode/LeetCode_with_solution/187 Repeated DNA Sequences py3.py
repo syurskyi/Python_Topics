@@ -17,7 +17,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findRepeatedDnaSequences(self, s: s..) __ List[s..]:
+    ___ findRepeatedDnaSequences  s: s..) __ List[s..]:
         ret = set()
         seen = set()
         ___ i __ r..(l..(s) - 10 + 1):

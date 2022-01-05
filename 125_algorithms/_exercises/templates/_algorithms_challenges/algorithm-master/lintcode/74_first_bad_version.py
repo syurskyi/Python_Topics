@@ -14,7 +14,7 @@ bad version.
 
 
 c_ Solution:
-    ___ findFirstBadVersion(self, n):
+    ___ findFirstBadVersion  n):
         """
         :type n: int
         :rtype: int

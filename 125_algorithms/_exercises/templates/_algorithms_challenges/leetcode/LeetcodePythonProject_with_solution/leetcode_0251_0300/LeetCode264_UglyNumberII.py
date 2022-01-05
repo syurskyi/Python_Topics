@@ -5,7 +5,7 @@ Created on Mar 3, 2017
 '''
 
 c_ Solution(object):
-    ___ nthUglyNumber(self, n):
+    ___ nthUglyNumber  n):
         """
         :type n: int
         :rtype: int

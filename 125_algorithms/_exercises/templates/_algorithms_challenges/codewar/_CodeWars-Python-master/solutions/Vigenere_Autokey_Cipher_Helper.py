@@ -10,7 +10,7 @@ c_ VigenereAutokeyCipher:
         key = key
         abc = abc
 
-    ___ encode(self, text):
+    ___ encode  text):
         result    # list
         key = key + ''.j..([t ___ t __ text __ t __ abc])
         index = 0
@@ -23,7 +23,7 @@ c_ VigenereAutokeyCipher:
                 result.a..(c)
         r.. ''.j..(result)
 
-    ___ decode(self, text):
+    ___ decode  text):
         result    # list
         key = key
         index = 0

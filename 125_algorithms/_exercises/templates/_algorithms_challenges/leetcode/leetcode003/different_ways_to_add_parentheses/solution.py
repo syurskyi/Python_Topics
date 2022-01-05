@@ -24,7 +24,7 @@ Output: [-34, -14, -10, -10, 10]
 """
 
 c_ Solution(object):
-    ___ diffWaysToCompute(self, input):
+    ___ diffWaysToCompute  input):
         """
         :type input: str
         :rtype: List[int]
@@ -32,10 +32,10 @@ c_ Solution(object):
         operators = set(['+', '-', '*'])
         r.. diff_ways(input)
 
-    ___ calculate(self, a, b, operator):
+    ___ calculate  a, b, operator):
         r.. eval('%d %s %d' % (a, operator, b))
 
-    ___ diff_ways(self, inp):
+    ___ diff_ways  inp):
         __ n.. inp:
             r.. []
         ____ inp.isdigit

@@ -4,13 +4,13 @@ c_ Solution:
     @param: A: An integer array
     @return: kth smallest element
     """
-    ___ kthSmallest(self, K, A):
+    ___ kthSmallest  K, A):
         """
         the index of `K`th child is `K - 1`
         """
         r.. quick_select(K - 1, A, 0, l..(A) - 1)
 
-    ___ quick_select(self, k, A, start, end):
+    ___ quick_select  k, A, start, end):
         __ start >= end:
             r.. A[end]
 

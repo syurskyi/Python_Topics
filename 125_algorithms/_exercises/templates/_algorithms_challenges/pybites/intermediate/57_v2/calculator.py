@@ -56,9 +56,9 @@ ___ call_calculator(args=N.., stdout=F..):
         f = l.... x,y: x / y
 
 
-    try:
+    ___
         res = calculator(f,numbers)
-    except ZeroDivisionError:
+    ______ ZeroDivisionError:
         res = 0
 
 

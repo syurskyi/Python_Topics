@@ -18,7 +18,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ calculate(self, s):
+    ___ calculate  s):
         """
         :type s: str
         :rtype: int
@@ -27,7 +27,7 @@ c_ Solution:
         post = infix2postfix(lst)
         r.. eval_postfix(post)
 
-    ___ p..(self, s):
+    ___ p..  s):
         """
         return tokens
         """
@@ -49,7 +49,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ infix2postfix(self, lst):
+    ___ infix2postfix  lst):
         # operator stacks rather than operand
         stk    # list  # stk only stores operators in strictly increasing precedence
         ret    # list
@@ -73,7 +73,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ precendece(self, op):
+    ___ precendece  op):
         __ op __ ("(", ")"):
             r.. 0
         __ op __ ("+", "-"):
@@ -82,7 +82,7 @@ c_ Solution:
             r.. 2
         r.. 3
 
-    ___ eval_postfix(self, post):
+    ___ eval_postfix  post):
         stk    # list
         ___ elt __ post:
             __ elt __ ("+", "-", "*", "/"):

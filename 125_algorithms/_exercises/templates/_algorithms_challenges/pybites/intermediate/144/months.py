@@ -29,11 +29,11 @@ ___ calc_months_passed(year, month, day):
 
       Return the number of months passed int.
    """
-   try:
+   ___
       new_date = date(year, month, day)
       __ new_date < START_DATE:
          r.. ValueError
-   except:
+   ______:
       r..
 
    date_diff = relativedelta(new_date, START_DATE)

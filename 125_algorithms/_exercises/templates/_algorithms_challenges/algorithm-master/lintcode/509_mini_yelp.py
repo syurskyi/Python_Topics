@@ -79,7 +79,7 @@ c_ MiniYelp:
     # @param {str} name
     # @param {Location} location
     # @return {int} restaurant's id
-    ___ add_restaurant(self, name, location):
+    ___ add_restaurant  name, location):
         restaurant = Restaurant.create(name, location)
         hashcode = get_restr_hashcode(restaurant)
 
@@ -91,7 +91,7 @@ c_ MiniYelp:
 
     # @param {int} restaurant_id
     # @return nothing
-    ___ remove_restaurant(self, restaurant_id):
+    ___ remove_restaurant  restaurant_id):
         hashcode = restr_to_geohash[restaurant_id]
         index = bisect.bisect_left(geohashs, hashcode)
 
@@ -103,7 +103,7 @@ c_ MiniYelp:
     # @param {double} k, distance smaller than k miles
     # @return {str[]} a list of restaurant's name and sort by
     # distance from near to far.
-    ___ neighbors(self, location, k):
+    ___ neighbors  location, k):
         length = get_length(k)
         prefix = GeoHash.encode(location)[:length]
 
@@ -126,7 +126,7 @@ c_ MiniYelp:
             ___ _, restr __ neighbors
         ]
 
-    ___ get_length(self, k):
+    ___ get_length  k):
         n = l..(ERROR_IN_KM)
 
         ___ i __ r..(n):
@@ -135,7 +135,7 @@ c_ MiniYelp:
 
         r.. n
 
-    ___ get_restr_hashcode(self, restaurant):
+    ___ get_restr_hashcode  restaurant):
         r.. '{0}:{1}'.f..(
             GeoHash.encode(restaurant.location),
             restaurant.id
@@ -155,7 +155,7 @@ c_ Trie:
     ___ __repr__
         r.. repr(root)
 
-    ___ put(self, key):
+    ___ put  key):
         __ n.. key:
             r..
 
@@ -167,7 +167,7 @@ c_ Trie:
             parent['children'][char]['keys'].add(key)
             parent = parent['children'][char]
 
-    ___ pick(self, key):
+    ___ pick  key):
         __ n.. key:
             r..
 
@@ -179,7 +179,7 @@ c_ Trie:
             parent = parent['children'][char]
             parent['keys'].discard(key)
 
-    ___ get_keys_by_prefix(self, prefix):
+    ___ get_keys_by_prefix  prefix):
         parent = root
         __ n.. prefix:
             r.. l..(parent['keys'])
@@ -213,7 +213,7 @@ c_ MiniYelp:
     # @param {str} name
     # @param {Location} location
     # @return {int} restaurant's id
-    ___ add_restaurant(self, name, location):
+    ___ add_restaurant  name, location):
         restaurant = Restaurant.create(name, location)
         hashcode = get_restr_hashcode(restaurant)
 
@@ -225,7 +225,7 @@ c_ MiniYelp:
 
     # @param {int} restaurant_id
     # @return nothing
-    ___ remove_restaurant(self, restaurant_id):
+    ___ remove_restaurant  restaurant_id):
         hashcode = restr_to_geohash[restaurant_id]
 
         del restaurants[hashcode]
@@ -236,7 +236,7 @@ c_ MiniYelp:
     # @param {double} k, distance smaller than k miles
     # @return {str[]} a list of restaurant's name and sort by
     # distance from near to far.
-    ___ neighbors(self, location, k):
+    ___ neighbors  location, k):
         length = get_length(k)
         prefix = GeoHash.encode(location)[:length]
         hashcodes = trie.get_keys_by_prefix(prefix)
@@ -255,7 +255,7 @@ c_ MiniYelp:
             ___ _, restr __ neighbors
         ]
 
-    ___ get_length(self, k):
+    ___ get_length  k):
         n = l..(ERROR_IN_KM)
 
         ___ i __ r..(n):
@@ -264,7 +264,7 @@ c_ MiniYelp:
 
         r.. n
 
-    ___ get_restr_hashcode(self, restaurant):
+    ___ get_restr_hashcode  restaurant):
         r.. '{0}:{1}'.f..(
             GeoHash.encode(restaurant.location),
             restaurant.id

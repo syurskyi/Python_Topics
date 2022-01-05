@@ -12,7 +12,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ isSameTree(self, p, q):
+    ___ isSameTree  p, q):
         """
         dfs
         :param p: TreeNode
@@ -25,10 +25,10 @@ c_ Solution:
             r.. T..
 
         # dfs
-        try:
+        ___
             __ p.val__q.val a.. isSameTree(p.left, q.left) a.. isSameTree(p.right, q.right):
                 r.. T..
-        except AttributeError:
+        ______ AttributeError:
             r.. F..
 
         r.. F..

@@ -14,7 +14,7 @@ does not count as extra space for the purpose of space complexity analysis.)
 """
 
 c_ Solution(object):
-    ___ productExceptSelf(self, nums):
+    ___ productExceptSelf  nums):
         """
         :type nums: List[int]
         :rtype: List[int]

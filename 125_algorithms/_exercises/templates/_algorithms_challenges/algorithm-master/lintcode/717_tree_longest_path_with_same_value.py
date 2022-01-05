@@ -4,7 +4,7 @@ REF: https://blog.csdn.net/zhaohengchuan/article/details/78833501
 
 
 c_ Solution:
-    ___ LongestPathWithSameValue(self, a, e):
+    ___ LongestPathWithSameValue  a, e):
         """
         :type a: list[int]
         :type e: list[int]
@@ -23,9 +23,9 @@ c_ Solution:
         ans = 0
         res = dfs(0, 1, a, neibs)
 
-        r.. max(ans, res)
+        r.. m..(ans, res)
 
-    ___ dfs(self, root, curr, a, neibs):
+    ___ dfs  root, curr, a, neibs):
         tmp    # list
 
         ___ neib __ neibs[curr]:
@@ -44,6 +44,6 @@ c_ Solution:
         tmp.extend((0, 0))
         tmp.s..(r.._T..
 
-        ans = max(ans, tmp[0] + tmp[1])
+        ans = m..(ans, tmp[0] + tmp[1])
 
         r.. tmp[0]

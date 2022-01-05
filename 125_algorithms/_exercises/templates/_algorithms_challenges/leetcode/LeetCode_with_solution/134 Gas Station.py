@@ -11,7 +11,7 @@ The solution is guaranteed to be unique.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit  gas, cost):
         """
 
               .-''''-.
@@ -60,5 +60,5 @@ c_ Solution:
 
         r.. start_index
 
-__ __name____"__main__":
+__ _____ __ ____
     Solution().canCompleteCircuit([5], [4])

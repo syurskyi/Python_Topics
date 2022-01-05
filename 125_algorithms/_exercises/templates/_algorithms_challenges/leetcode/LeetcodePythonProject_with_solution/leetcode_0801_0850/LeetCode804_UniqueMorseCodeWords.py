@@ -4,7 +4,7 @@ Created on Apr 23, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ uniqueMorseRepresentations(self, words):
+    ___ uniqueMorseRepresentations  words):
         """
         :type words: List[str]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(object):
         ___ word __ words:
             tmp = ''
             ___ c __ word:
-                tmp += code[ord(c)-ord('a')]
+                tmp += code[o..(c)-o..('a')]
             hashset.add(tmp)
         r.. l..(hashset)
     

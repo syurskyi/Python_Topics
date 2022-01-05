@@ -5,7 +5,7 @@ Note: All inputs will be in lower-case.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ anagrams_complicated(self, strs):
+    ___ anagrams_complicated  strs):
         """
         sorting
         :param strs: a list of strings
@@ -33,7 +33,7 @@ c_ Solution:
                 result += [strs[i] ___ i __ val]
         r.. result
 
-    ___ anagrams(self, strs):
+    ___ anagrams  strs):
         """
         Algorithm: sort string and hash map
         :param strs: a list of strings
@@ -57,5 +57,5 @@ c_ Solution:
                 result += [strs[i] ___ i __ val]
         r.. result
 
-__ __name____"__main__":
+__ _____ __ ____
     Solution().anagrams(["", ""])

@@ -5,7 +5,7 @@ Created on Mar 4, 2017
 '''
 
 c_ Solution(object):
-    ___ missingNumber(self, nums):
+    ___ missingNumber  nums):
         """
         :type nums: List[int]
         :rtype: int

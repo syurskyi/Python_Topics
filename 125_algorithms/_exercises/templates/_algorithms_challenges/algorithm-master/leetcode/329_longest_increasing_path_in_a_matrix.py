@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestIncreasingPath(self, G):
+    ___ longestIncreasingPath  G):
         """
         :type G: List[List[int]]
         :rtype: int
@@ -25,7 +25,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, G, x, y, memo):
+    ___ dfs  G, x, y, memo):
         __ memo[x][y] > 0:
             r.. memo[x][y]
 

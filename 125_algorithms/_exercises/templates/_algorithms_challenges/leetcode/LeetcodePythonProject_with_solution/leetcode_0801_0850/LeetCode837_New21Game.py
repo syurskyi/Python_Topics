@@ -4,7 +4,7 @@ Created on Oct 9, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ new21Game(self, N, K, W):
+    ___ new21Game  N, K, W):
         """
         :type N: int
         :type K: int

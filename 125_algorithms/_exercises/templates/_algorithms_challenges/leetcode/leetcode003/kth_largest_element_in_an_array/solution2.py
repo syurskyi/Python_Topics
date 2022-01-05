@@ -10,7 +10,7 @@ Note: You may assume k is always valid, 1 <= k <= array's length.
 
 
 c_ Solution(object):
-    ___ findKthLargest(self, nums, k):
+    ___ findKthLargest  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -31,7 +31,7 @@ c_ Solution(object):
             ____:
                 right = pivot - 1
 
-    ___ partition(self, nums, left, right):
+    ___ partition  nums, left, right):
         """Partition the array so that larger elements are to the left"""
         pivot = right
         # i is from left to right - 1

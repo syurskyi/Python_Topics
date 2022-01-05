@@ -21,7 +21,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ subarraysDivByK_2(self, A: List[i..], K: i..) __ i..:
+    ___ subarraysDivByK_2  A: List[i..], K: i..) __ i..:
         """
         count the prefix sum mod K
         nC2
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ subarraysDivByK(self, A: List[i..], K: i..) __ i..:
+    ___ subarraysDivByK  A: List[i..], K: i..) __ i..:
         """
         Prefix sum
         O(N^2)

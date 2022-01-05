@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ maxArea(self, height):
+    ___ maxArea  height):
         """
         Two pointers scanning
         starting from two ends since x-coordinate is maximized
@@ -24,7 +24,7 @@ c_ Solution:
         max_area = -1 << 32
         w.... start < end:
             area = m..(height[start], height[end])*(end-start)
-            max_area = max(area, max_area)
+            max_area = m..(area, max_area)
 
             # move the shorter boarder
             # move two pointers

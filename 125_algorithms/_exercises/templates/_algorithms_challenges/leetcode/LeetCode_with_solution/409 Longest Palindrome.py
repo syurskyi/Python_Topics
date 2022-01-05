@@ -24,7 +24,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         """
         :type s: str
         :rtype: int

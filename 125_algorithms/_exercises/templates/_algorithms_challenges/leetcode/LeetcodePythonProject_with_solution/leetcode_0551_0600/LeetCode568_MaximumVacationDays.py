@@ -5,7 +5,7 @@ Created on Sep 3, 2017
 '''
 
 c_ Solution(object):
-    ___ maxVacationDays(self, flights, days):
+    ___ maxVacationDays  flights, days):
         """
         :type flights: List[List[int]]
         :type days: List[List[int]]
@@ -20,9 +20,9 @@ c_ Solution(object):
             ___ j __ r..(n):
                 ___ k __ r..(n):
                     __ j __ k o. flights[k][j] __ 1:
-                        tmp[j] = max(tmp[j], dp[k]+days[j][i])
+                        tmp[j] = m..(tmp[j], dp[k]+days[j][i])
             dp = tmp
-        r.. max(dp)
+        r.. m..(dp)
     
     ___ test
         testCases = [

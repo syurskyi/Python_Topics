@@ -11,7 +11,7 @@ c_ Interval(object):
         end = e
 
 c_ Solution(object):
-    ___ canAttendMeetings(self, intervals):
+    ___ canAttendMeetings  intervals):
         """
         :type intervals: List[Interval]
         :rtype: bool

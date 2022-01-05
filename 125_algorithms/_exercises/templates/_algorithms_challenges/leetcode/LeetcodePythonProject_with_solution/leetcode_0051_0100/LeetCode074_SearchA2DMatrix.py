@@ -4,7 +4,7 @@ Created on Jun 3, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ searchMatrix(self, matrix, target):
+    ___ searchMatrix  matrix, target):
         """
         :type matrix: List[List[int]]
         :type target: int
@@ -22,7 +22,7 @@ c_ Solution(object):
                 r = mid
         r.. matrix[r//n][r%n] __ target
     
-    ___ searchMatrix_orig(self, matrix, target):
+    ___ searchMatrix_orig  matrix, target):
         """
         :type matrix: List[List[int]]
         :type target: int

@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ isValidBST(self, root):
+  ___ isValidBST  root):
     """
     :type root: TreeNode
     :rtype: bool

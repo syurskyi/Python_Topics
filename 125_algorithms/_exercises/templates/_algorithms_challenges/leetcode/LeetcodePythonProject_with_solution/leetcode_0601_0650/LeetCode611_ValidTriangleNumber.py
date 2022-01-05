@@ -4,7 +4,7 @@ Created on Sep 6, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ triangleNumber(self, nums):
+    ___ triangleNumber  nums):
         """
         :type nums: List[int]
         :rtype: int

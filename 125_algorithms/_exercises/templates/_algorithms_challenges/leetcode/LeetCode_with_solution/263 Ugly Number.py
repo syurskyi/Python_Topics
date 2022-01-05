@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ isUgly(self, num):
+    ___ isUgly  num):
         """
         Prime factors: 2, 3, 5
 

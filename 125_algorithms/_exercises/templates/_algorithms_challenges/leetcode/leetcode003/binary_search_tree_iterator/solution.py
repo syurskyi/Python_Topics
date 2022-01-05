@@ -23,7 +23,7 @@ c_ BSTIterator(object):
             _cur += 1
             r.. _arr[_cur]
 
-    ___ _inorder(self, root):
+    ___ _inorder  root):
         __ root __ n.. N..
             __ root.left __ n.. N..
                 _inorder(root.left)

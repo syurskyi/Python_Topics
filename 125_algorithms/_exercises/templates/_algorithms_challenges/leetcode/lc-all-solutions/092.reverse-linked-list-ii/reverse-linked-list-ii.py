@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ reverseBetween(self, head, m, n):
+  ___ reverseBetween  head, m, n):
     """
     :type head: ListNode
     :type m: int

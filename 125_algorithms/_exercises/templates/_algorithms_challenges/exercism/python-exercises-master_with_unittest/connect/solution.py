@@ -17,19 +17,19 @@ c_ ConnectGame:
         ___ l __ board:
             ... l..(l) __ width
 
-    ___ valid(self, x, y):
+    ___ valid  x, y):
         r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
 
-    ___ make_board(self, lines):
+    ___ make_board  lines):
         r.. ["".j..(l.s..()) ___ l __ lines.splitlines()]
 
-    ___ player_reach_dest(self, player, x, y):
+    ___ player_reach_dest  player, x, y):
         __ player __ black:
             r.. x __ width - 1
         __ player __ white:
             r.. y __ height - 1
 
-    ___ walk_board(self, player, x, y, visited=[]):
+    ___ walk_board  player, x, y, visited=[]):
         __ (x, y) __ visited:
             r.. F..
 
@@ -43,7 +43,7 @@ c_ ConnectGame:
             __ walk_board(player, x + d[0], y + d[1], visited + [(x, y)]):
                 r.. T..
 
-    ___ check_player_is_winner(self, player):
+    ___ check_player_is_winner  player):
         __ player __ black:
             ___ y __ r..(height):
                 __ walk_board(player, 0, y):

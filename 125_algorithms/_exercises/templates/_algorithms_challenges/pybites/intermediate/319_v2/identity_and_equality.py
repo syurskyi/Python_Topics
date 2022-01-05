@@ -9,7 +9,7 @@ c_ Car:
         model = model
         color = color
 
-    ___ __eq__(self, other_car):
+    ___ __eq__  other_car):
         r.. (
             model.l.. __ other_car.model.l..
             a.. color.l.. __ other_car.color.l..

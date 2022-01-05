@@ -33,7 +33,7 @@ c_ Ninja:
     bites: i..
 
     
-    ___ __lt__(self,other):
+    ___ __lt__ other):
         __ isi..(other,Ninja):
 
             r.. bites < other.bites
@@ -41,14 +41,14 @@ c_ Ninja:
         r.. ValueError
     
 
-    ___ __gt__(self,other):
+    ___ __gt__ other):
         __ isi..(other,Ninja):
 
             r.. bites > other.bites
 
         r.. ValueError
 
-    ___ __eq__(self,other):
+    ___ __eq__ other):
         __ isi..(other,Ninja):
 
             r.. bites __ other.bites
@@ -86,23 +86,23 @@ c_ Rankings:
 
 
 
-    ___ add(self,ninja):
+    ___ add ninja):
         heapq.heappush(rankings,ninja)
     
 
 
-    ___ highest(self,count=1):
+    ___ highest count=1):
         rankings = s..(rankings)
         
         r.. rankings[-count:][::-1]
     
-    ___ lowest(self,count=1):
+    ___ lowest count=1):
         rankings = s..(rankings)
 
         r.. rankings[:count]
 
     
-    ___ pair_up(self,n=3):
+    ___ pair_up n=3):
         rankings = s..(rankings)
 
         start,end = 0,l..(rankings)  - 1

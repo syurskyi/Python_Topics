@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ inorderSuccessor(self, root, q):
+  ___ inorderSuccessor  root, q):
     """
     :type root: TreeNode
     :type p: TreeNode

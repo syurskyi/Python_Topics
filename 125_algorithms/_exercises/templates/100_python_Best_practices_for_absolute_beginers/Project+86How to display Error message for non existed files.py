@@ -1,8 +1,8 @@
 fp  input("Enter file path: ")
 
-try:
+___
     file  open(fp)
-except FileNotFoundError:
+______ FileNotFoundError:
     print("Error! This file path does not exist...")
 ____:
     print(file.read())

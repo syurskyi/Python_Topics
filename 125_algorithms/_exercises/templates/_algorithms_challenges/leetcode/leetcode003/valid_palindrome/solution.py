@@ -15,7 +15,7 @@ For the purpose of this problem, we define empty string as valid palindrome.
 
 
 c_ Solution(object):
-    ___ isPalindrome(self, s):
+    ___ isPalindrome  s):
         """
         :type s: str
         :rtype: bool

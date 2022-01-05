@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ constructFromPrePost(self, pre, post):
+    ___ constructFromPrePost  pre, post):
         """
         :type pre: List[int]
         :type post: List[int]
@@ -19,7 +19,7 @@ c_ Solution(object):
         """
         r.. helper(pre, 0, l..(pre)-1, post, 0, l..(post)-1)
     
-    ___ helper(self, pre, preStart, preEnd, post, postStart, postEnd):
+    ___ helper  pre, preStart, preEnd, post, postStart, postEnd):
         __ preStart > preEnd:
             r.. N..
         val = pre[preStart]

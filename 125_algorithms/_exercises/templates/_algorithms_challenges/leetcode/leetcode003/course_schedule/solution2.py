@@ -23,7 +23,7 @@ _______ sys
 sys.setrecursionlimit(5000)
 
 c_ Solution(object):
-    ___ canFinish(self, numCourses, prerequisites):
+    ___ canFinish  numCourses, prerequisites):
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -45,7 +45,7 @@ c_ Solution(object):
                     r.. F..
         r.. T..
 
-    ___ visit(self, u):
+    ___ visit  u):
         __ u __ visiting:
             r.. F..
         ____ u __ unvisited:

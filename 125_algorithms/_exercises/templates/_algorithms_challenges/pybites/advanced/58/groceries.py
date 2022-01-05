@@ -11,7 +11,7 @@ c_ Groceries:
            items, if not provided use an empty list"""
         _items = items __ items __ n.. N.. ____ []
 
-    ___ show(self, items_ N..
+    ___ show  items_ N..
         """Print a simple table of cart items with total at the end"""
         items = items __ items __ n.. N.. ____ self
         ___ item __ items:
@@ -21,18 +21,18 @@ c_ Groceries:
             print _*{product:<30} | {item.price:>3}')
         _print_total(items)
 
-    ___ _print_total(self, items):
+    ___ _print_total  items):
         """Calculate and print total price of cart"""
         total = s..(item.price ___ item __ items)
         print('-' * 36)
         print _*{"Total":<30} | {total:>3}')
 
-    ___ add(self, new_item):
+    ___ add  new_item):
         """Add a new item to cart, exceptions left out for simplicity"""
         _items.a..(new_item)
         show()
 
-    ___ delete(self, product):
+    ___ delete  product):
         """Delete item matching 'product', raises IndexError
            if no item matches"""
         ___ i, item __ e..
@@ -43,7 +43,7 @@ c_ Groceries:
             r.. IndexError _*{product} not in cart')
         show()
 
-    ___ s..(self, s..):
+    ___ s..  s..):
         """Filters items matching insensitive 'contains' search, and passes
            them to show for printing"""
         items = [item ___ item __ self __ s...l..
@@ -58,7 +58,7 @@ c_ Groceries:
         """The len of cart"""
         r.. l..(_items)
 
-    ___ __getitem__(self, index):
+    ___ __getitem__  index):
         """Making the class iterable (cart = Groceries() -> cart[1] etc)
            without this dunder I would get 'TypeError: 'Cart' object does
            not support indexing' when trying to index it"""

@@ -5,7 +5,7 @@ Created on May 11, 2017
 '''
 
 c_ Solution(object):
-    ___ findRelativeRanks(self, nums):
+    ___ findRelativeRanks  nums):
         """
         :type nums: List[int]
         :rtype: List[str]

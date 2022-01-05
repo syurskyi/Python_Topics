@@ -32,7 +32,7 @@ ___ _quote_exists(existing_quote):
 
 
 ___ _new_id
-    r.. max(q['id'] ___ q __ quotes) + 1
+    r.. m..(q['id'] ___ q __ quotes) + 1
 
 
 @app.route('/api/quotes', methods=['GET'])

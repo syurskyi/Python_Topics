@@ -35,7 +35,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxDistToClosest(self, seats: List[i..]) __ i..:
+    ___ maxDistToClosest  seats: List[i..]) __ i..:
         """
         DP from left and right - next array
         Let L[i] be the distant to the left 1 at A[i]
@@ -55,12 +55,12 @@ c_ Solution:
             ____ i + 1 < n:
                 R[i] = R[i+1] + 1
 
-        r.. max(
+        r.. m..(
             m..(L[i], R[i])
             ___ i __ r..(n)
         )
 
-    ___ maxDistToClosest2(self, seats: List[i..]) __ i..:
+    ___ maxDistToClosest2  seats: List[i..]) __ i..:
         """
         maintain a sorrted index array
         """

@@ -14,7 +14,7 @@ The solution set must not contain duplicate quadruplets.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ fourSum_TLE(self, num, target):
+    ___ fourSum_TLE  num, target):
         """
         Algorithm: pointers
         O(n^3) typically, O(n^(k-1))
@@ -66,7 +66,7 @@ c_ Solution:
 
         r.. result
 
-    ___ fourSum(self, num, target):
+    ___ fourSum  num, target):
         """
         Algorithm: Hash Table
         O(n^2)

@@ -5,7 +5,7 @@ Created on Feb 26, 2017
 '''
 
 c_ Solution(object):
-    ___ searchMatrix(self, matrix, target):
+    ___ searchMatrix  matrix, target):
         """
         :type matrix: List[List[int]]
         :type target: int
@@ -23,7 +23,7 @@ c_ Solution(object):
                 j += 1
         r.. F..
     
-    ___ searchMatrix_orig(self, matrix, target):
+    ___ searchMatrix_orig  matrix, target):
         """
         :type matrix: List[List[int]]
         :type target: int
@@ -41,7 +41,7 @@ c_ Solution(object):
                 i += 1
         r.. F..
     
-    ___ searchMatrixBinary(self, matrix, target):
+    ___ searchMatrixBinary  matrix, target):
         """
         :type matrix: List[List[int]]
         :type target: int

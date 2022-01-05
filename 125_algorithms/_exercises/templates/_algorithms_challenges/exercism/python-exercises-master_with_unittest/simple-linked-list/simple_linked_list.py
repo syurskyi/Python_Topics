@@ -19,7 +19,7 @@ c_ LinkedList(object):
     ___ head
         p..
 
-    ___ push(self, value):
+    ___ push  value):
         p..
 
     ___ pop

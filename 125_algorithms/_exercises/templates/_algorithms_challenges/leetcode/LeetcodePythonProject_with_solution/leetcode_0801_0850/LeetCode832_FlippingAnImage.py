@@ -4,7 +4,7 @@ Created on Jun 9, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ flipAndInvertImage(self, A):
+    ___ flipAndInvertImage  A):
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]

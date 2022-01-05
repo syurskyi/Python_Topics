@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ hasPath(self, maze, start, destination):
+  ___ hasPath  maze, start, destination):
     """
     :type maze: List[List[int]]
     :type start: List[int]

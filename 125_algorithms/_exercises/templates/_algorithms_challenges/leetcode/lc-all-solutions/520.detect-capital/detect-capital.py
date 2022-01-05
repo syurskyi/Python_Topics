@@ -2,7 +2,7 @@ _______ s__
 
 
 c_ Solution(object):
-  ___ detectCapitalUse(self, word):
+  ___ detectCapitalUse  word):
     """
     :type word: str
     :rtype: bool

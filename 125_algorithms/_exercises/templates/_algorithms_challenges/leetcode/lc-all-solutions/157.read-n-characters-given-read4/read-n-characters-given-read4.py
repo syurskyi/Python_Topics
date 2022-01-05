@@ -4,7 +4,7 @@
 # def read4(buf):
 
 c_ Solution(object):
-  ___ read(self, buf, n):
+  ___ read  buf, n):
     """
     :type buf: Destination buffer (List[str])
     :type n: Maximum number of characters to read (int)

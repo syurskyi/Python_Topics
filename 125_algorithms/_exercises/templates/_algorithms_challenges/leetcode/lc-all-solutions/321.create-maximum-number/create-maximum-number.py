@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxNumber(self, _nums1, _nums2, k):
+  ___ maxNumber  _nums1, _nums2, k):
     """
     :type nums1: List[int]
     :type nums2: List[int]
@@ -43,4 +43,4 @@ c_ Solution(object):
           print
           n1, n2
         ans.a..(merge(n1, n2))
-    r.. max(ans)
+    r.. m..(ans)

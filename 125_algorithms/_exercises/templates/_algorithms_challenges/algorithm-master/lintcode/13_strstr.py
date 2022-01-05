@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ strStr(self, haystack, needle):
+    ___ strStr  haystack, needle):
         """
         :type haystack: str
         :type needle: str

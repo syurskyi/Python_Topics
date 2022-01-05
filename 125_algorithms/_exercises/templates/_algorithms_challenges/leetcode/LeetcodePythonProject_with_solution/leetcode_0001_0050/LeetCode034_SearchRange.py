@@ -4,7 +4,7 @@ Created on Oct 31, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ searchRange(self, nums, target):
+    ___ searchRange  nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -15,7 +15,7 @@ c_ Solution(object):
         w.... l < r:
             mid = (l+r)//2
             __ target __ nums[mid]:
-                res[1] = max(res[1], mid)
+                res[1] = m..(res[1], mid)
                 l = mid+1
             ____ target < nums[mid]:
                 r = mid

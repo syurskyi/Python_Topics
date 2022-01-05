@@ -13,7 +13,7 @@ c_ HashHeapqWithLazy:
     ___ __bool__
         r.. __size > 0
 
-    ___ push(self, val):
+    ___ push  val):
         heapq.heappush(__heap, val)
         __size += 1
 
@@ -24,7 +24,7 @@ c_ HashHeapqWithLazy:
         __size -= 1
         r.. heapq.heappop(__heap)
 
-    ___ remove(self, val):
+    ___ remove  val):
         __ _is_empty
             r..
 
@@ -46,7 +46,7 @@ c_ HashHeapqWithLazy:
 
 
 c_ Solution:
-    ___ medianSlidingWindow(self, nums, k):
+    ___ medianSlidingWindow  nums, k):
         """
         :type nums: List[int]
         :type k: int

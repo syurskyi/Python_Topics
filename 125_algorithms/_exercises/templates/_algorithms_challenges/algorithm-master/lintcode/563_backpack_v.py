@@ -7,7 +7,7 @@ c_ Solution:
     @param: target: An integer
     @return: An integer
     """
-    ___ backPackV(self, A, target):
+    ___ backPackV  A, target):
         __ n.. A:
             r.. 0
 
@@ -33,7 +33,7 @@ c_ Solution:
     @param: target: An integer
     @return: An integer
     """
-    ___ backPackV(self, A, target):
+    ___ backPackV  A, target):
         __ n.. A:
             r.. 0
 

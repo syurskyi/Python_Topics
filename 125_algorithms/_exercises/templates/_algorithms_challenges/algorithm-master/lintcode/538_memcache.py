@@ -9,7 +9,7 @@ c_ Memcache:
     @param: key: An integer
     @return: An integer
     """
-    ___ get(self, curtTime, key):
+    ___ get  curtTime, key):
         __ key n.. __ storage:
             r.. INT_MAX
 
@@ -26,7 +26,7 @@ c_ Memcache:
     @param: ttl: An integer
     @return: nothing
     """
-    ___ set(self, curtTime, key, value, ttl):
+    ___ set  curtTime, key, value, ttl):
         __ ttl > 0:
             storage[key] = _new_item(key, value, curtTime + ttl)
         ____:
@@ -37,7 +37,7 @@ c_ Memcache:
     @param: key: An integer
     @return: nothing
     """
-    ___ delete(self, curtTime, key):
+    ___ delete  curtTime, key):
         __ key __ storage:
             del storage[key]
 
@@ -47,7 +47,7 @@ c_ Memcache:
     @param: delta: An integer
     @return: An integer
     """
-    ___ incr(self, curtTime, key, delta):
+    ___ incr  curtTime, key, delta):
         __ key n.. __ storage:
             r.. INT_MAX
 
@@ -64,10 +64,10 @@ c_ Memcache:
     @param: delta: An integer
     @return: An integer
     """
-    ___ decr(self, curtTime, key, delta):
+    ___ decr  curtTime, key, delta):
         r.. incr(curtTime, key, -1 * delta)
 
-    ___ _new_item(self, key, value, expired_at):
+    ___ _new_item  key, value, expired_at):
         r.. {
             'key': key,
             'val': value,

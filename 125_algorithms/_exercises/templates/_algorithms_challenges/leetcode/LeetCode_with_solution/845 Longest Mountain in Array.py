@@ -35,7 +35,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ longestMountain(self, A: List[i..]) __ i..:
+    ___ longestMountain  A: List[i..]) __ i..:
         """
         dp
         """
@@ -51,11 +51,11 @@ c_ Solution:
             ____ A[i] < A[i-1]:
                 down_cnt += 1
             __ up_cnt a.. down_cnt:
-                ret = max(ret, up_cnt + down_cnt + 1)
+                ret = m..(ret, up_cnt + down_cnt + 1)
 
         r.. ret
 
-    ___ longestMountain(self, A: List[i..]) __ i..:
+    ___ longestMountain  A: List[i..]) __ i..:
         """
         dp
         """
@@ -72,11 +72,11 @@ c_ Solution:
         ret = 0
         ___ i __ r..(n):
             __ U[i] > 0 a.. D[i] > 0:
-                ret = max(ret, U[i] + D[i] + 1)
+                ret = m..(ret, U[i] + D[i] + 1)
 
         r.. ret
 
-    ___ longestMountain_complicated(self, A: List[i..]) __ i..:
+    ___ longestMountain_complicated  A: List[i..]) __ i..:
         """
         a flag to indicate expecting increase or decrease
         one-pass can
@@ -91,14 +91,14 @@ c_ Solution:
                 ____ A[i] < A[i-1] a.. l >= 2:
                     expect_incr = F..
                     l += 1
-                    ret = max(ret, l)
+                    ret = m..(ret, l)
                 ____:
                     l = 1
 
             ____:
                 __ A[i] < A[i-1]:
                     l += 1
-                    ret = max(ret, l)
+                    ret = m..(ret, l)
                 ____ A[i] __ A[i-1]:
                     expect_incr = T..
                     l = 1

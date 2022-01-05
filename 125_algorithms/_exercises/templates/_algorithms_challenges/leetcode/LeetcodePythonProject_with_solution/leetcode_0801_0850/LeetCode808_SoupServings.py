@@ -4,7 +4,7 @@ Created on Apr 25, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ soupServings(self, N):
+    ___ soupServings  N):
         """
         :type N: int
         :rtype: float
@@ -16,7 +16,7 @@ c_ Solution(object):
         ____:
             r.. 1
     
-    ___ helper(self, hashmap, a, b):
+    ___ helper  hashmap, a, b):
         __ a <= 0 a.. b <= 0:
             r.. 0.5
         __ a <= 0:

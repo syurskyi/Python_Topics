@@ -7,7 +7,7 @@
 c_ Solution:
   # @param node, a undirected graph node
   # @return a undirected graph node
-  ___ cloneGraph(self, node):
+  ___ cloneGraph  node):
     graph    # dict
     visited = set()
 

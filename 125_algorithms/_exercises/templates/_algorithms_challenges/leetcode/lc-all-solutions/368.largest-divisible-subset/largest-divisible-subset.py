@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ largestDivisibleSubset(self, nums):
+  ___ largestDivisibleSubset  nums):
     """
     :type nums: List[int]
     :rtype: List[int]

@@ -21,7 +21,7 @@ c_ Solution:
     @param: C: n x k cost matrix
     @return: an integer, the minimum cost to paint all houses
     """
-    ___ minCostII(self, C):
+    ___ minCostII  C):
         __ n.. C o. n.. C[0]:
             r.. 0
 

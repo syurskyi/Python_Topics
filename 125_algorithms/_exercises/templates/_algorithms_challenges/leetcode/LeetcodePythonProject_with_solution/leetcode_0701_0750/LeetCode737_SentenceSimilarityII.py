@@ -4,7 +4,7 @@ Created on Mar 13, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ areSentencesSimilarTwo(self, words1, words2, pairs):
+    ___ areSentencesSimilarTwo  words1, words2, pairs):
         """
         :type words1: List[str]
         :type words2: List[str]
@@ -30,7 +30,7 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ dfs(self, source, target, pairInfo, visited):
+    ___ dfs  source, target, pairInfo, visited):
         __ target __ pairInfo.get(source, set()):
             r.. T..
         visited.add(source)
@@ -40,7 +40,7 @@ c_ Solution(object):
         r.. F..
     
     # This is Exceeding Time Limit
-    ___ areSentencesSimilarTwo_own(self, words1, words2, pairs):
+    ___ areSentencesSimilarTwo_own  words1, words2, pairs):
         """
         :type words1: List[str]
         :type words2: List[str]
@@ -78,7 +78,7 @@ c_ Solution(object):
                     r.. F..
         r.. T..
     
-    ___ getRoot(self, roots, ind):
+    ___ getRoot  roots, ind):
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind

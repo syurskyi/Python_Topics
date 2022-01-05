@@ -4,8 +4,8 @@ COLORS = 'red blue green yellow brown purple'.s..
 
 
 c_ EggCreator:
-    ___ - , max) __ N..
-        max = max
+    ___ - , m..) __ N..
+        m.. = m..
         count = 0
 
     ___ __iter__
@@ -13,7 +13,7 @@ c_ EggCreator:
 
     ___ __next__
         count += 1
-        __ count <= max:
+        __ count <= m..:
             r.. f"{choice(COLORS)} egg"
         ____:
             r.. StopIteration

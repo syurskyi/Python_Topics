@@ -4,7 +4,7 @@ Created on Mar 28, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ reachNumber(self, target):
+    ___ reachNumber  target):
         """
         :type target: int
         :rtype: int

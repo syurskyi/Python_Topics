@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isAdditiveNumber(self, num):
+  ___ isAdditiveNumber  num):
     """
     :type num: str
     :rtype: bool

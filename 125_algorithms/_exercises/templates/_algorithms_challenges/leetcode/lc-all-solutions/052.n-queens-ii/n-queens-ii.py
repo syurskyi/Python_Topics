@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ totalNQueens(self, n):
+  ___ totalNQueens  n):
     """
     :type n: int
     :rtype: int

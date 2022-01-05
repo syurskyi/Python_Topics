@@ -15,7 +15,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ removeElements(self, head, val):
+    ___ removeElements  head, val):
         """
 
         :param head:

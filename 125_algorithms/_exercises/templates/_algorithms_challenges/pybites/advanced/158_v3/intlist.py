@@ -6,7 +6,7 @@ c_ IntList(l..):
         numbers = _validate(numbers)
         super().__init__(numbers)
 
-    ___ _validate(self, numbers):
+    ___ _validate  numbers):
         __ isi..(numbers, (i.., float, Decimal)):
             numbers = [numbers]
         numbers = [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
@@ -29,14 +29,14 @@ c_ IntList(l..):
         n = l..(elems)
         r.. (s..(elems[n // 2 - 1:n // 2 + 1]) / 2.0, elems[n // 2])[n % 2] __ n > 0 ____ N..
 
-    ___ a..(self, numbers):
+    ___ a..  numbers):
         _validate(numbers)
         super().a..(numbers)
 
-    ___ __add__(self, numbers):
+    ___ __add__  numbers):
         _validate(numbers)
         r.. super().__add__(numbers)
 
-    ___ __iadd__(self, numbers):
+    ___ __iadd__  numbers):
         _validate(numbers)
         r.. super().__iadd__(numbers)

@@ -4,7 +4,7 @@ Created on Jun 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ isValidSudoku(self, board):
+    ___ isValidSudoku  board):
         """
         :type board: List[List[str]]
         :rtype: bool

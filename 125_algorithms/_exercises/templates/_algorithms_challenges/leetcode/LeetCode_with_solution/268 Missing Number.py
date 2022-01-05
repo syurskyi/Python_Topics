@@ -12,7 +12,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ missingNumber(self, nums):
+    ___ missingNumber  nums):
         """
         Algorithm:
         Hashmap, but to save space, use the array itself as the hashmap

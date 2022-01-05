@@ -8,7 +8,7 @@ Note: You can only move either down or right at any point in time.
 c_ Solution:
     # @param grid, a list of lists of integers
     # @return an integer
-    ___ minPathSum(self, grid):
+    ___ minPathSum  grid):
         n = l..(grid)
         m = l..(grid[0])
         t = [[0 ___ i __ r..(m)] ___ j __ r..(n)]

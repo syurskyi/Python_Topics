@@ -4,7 +4,7 @@ Created on Apr 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minmaxGasDist(self, stations, K):
+    ___ minmaxGasDist  stations, K):
         """
         :type stations: List[int]
         :type K: int

@@ -4,7 +4,7 @@
 # def isBadVersion(version):
 
 c_ Solution(object):
-  ___ firstBadVersion(self, n):
+  ___ firstBadVersion  n):
     """
     :type n: int
     :rtype: int

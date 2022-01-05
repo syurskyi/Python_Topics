@@ -4,7 +4,7 @@ Created on Apr 12, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ rotatedDigits(self, N):
+    ___ rotatedDigits  N):
         """
         :type N: int
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(object):
                 cnt += 1
         r.. cnt
     
-    ___ checkNum(self, num):
+    ___ checkNum  num):
         arr = l..(s..(num))
         i, j = 0, l..(arr)-1
         arr0 = ['']*l..(arr)

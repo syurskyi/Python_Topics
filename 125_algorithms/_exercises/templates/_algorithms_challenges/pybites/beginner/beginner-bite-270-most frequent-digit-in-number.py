@@ -25,11 +25,11 @@ ___ freq_digit(num: i..) __ i..:
     dict_num    # dict
     num_str = s..(num)
     ___ num __ num_str:
-        try:
+        ___
             dict_num[num] += 1
-        except:
+        ______:
             dict_num[num] = 1
-    m = max(dict_num, key=l.... key: dict_num[key])
+    m = m..(dict_num, key=l.... key: dict_num[key])
     r.. i..(m)
 
 

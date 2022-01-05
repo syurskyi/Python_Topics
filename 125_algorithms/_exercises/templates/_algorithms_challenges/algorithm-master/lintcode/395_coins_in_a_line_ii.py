@@ -16,7 +16,7 @@ case 2: if p2 will take the `i + 2`
 
 
 c_ Solution:
-    ___ firstWillWin(self, values):
+    ___ firstWillWin  values):
         """
         :type values: list[int]
         :rtype: bool
@@ -34,7 +34,7 @@ c_ Solution:
         dp[-2] = values[-1] + values[-2]
 
         ___ i __ r..(n - 3, -1, -1):
-            dp[i] = max((
+            dp[i] = m..((
                 values[i] - dp[i + 1],
                 values[i] + values[i + 1] - dp[i + 2],
             ))

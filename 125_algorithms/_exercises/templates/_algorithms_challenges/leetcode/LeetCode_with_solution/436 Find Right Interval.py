@@ -30,7 +30,7 @@ ____ bisect _______ bisect_left
 
 
 c_ Solution:
-    ___ findRightInterval(self, intervals):
+    ___ findRightInterval  intervals):
         """
         given e, find the right s - bisect
 

@@ -7,7 +7,7 @@ c_ Solution:
     3. only add the cell which higher or equal the previous cell
     4. get the intersection in both set
     """
-    ___ pacificAtlantic(self, matrix):
+    ___ pacificAtlantic  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
@@ -35,7 +35,7 @@ c_ Solution:
 
         r.. l..(pvisited & avisited)
 
-    ___ bfs(self, matrix, queue, visited):
+    ___ bfs  matrix, queue, visited):
         m, n = l..(matrix), l..(matrix[0])
 
         ___ x, y __ queue:
@@ -61,7 +61,7 @@ c_ Solution:
     """
     DFS
     """
-    ___ pacificAtlantic(self, matrix):
+    ___ pacificAtlantic  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
@@ -83,7 +83,7 @@ c_ Solution:
 
         r.. l..(pvisited & avisited)
 
-    ___ dfs(self, matrix, x, y, visited):
+    ___ dfs  matrix, x, y, visited):
         visited.add((x, y))
 
         ___ dx, dy __ (

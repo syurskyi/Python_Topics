@@ -11,10 +11,10 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ distance(self, a, b):
+    ___ distance  a, b):
         r.. (a[0] - b[0])**2 + (a[1] - b[1])**2
 
-    ___ numberOfBoomerangs(self, points):
+    ___ numberOfBoomerangs  points):
         """
         Reverse look up
         :type points: List[List[int]]
@@ -34,7 +34,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ numberOfBoomerangs_TLE(self, points):
+    ___ numberOfBoomerangs_TLE  points):
         """
         Reverse look up
         :type points: List[List[int]]

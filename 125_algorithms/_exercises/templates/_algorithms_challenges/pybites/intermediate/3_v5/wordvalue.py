@@ -14,10 +14,10 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 
 ___ load_words
     """load the words dictionary (DICTIONARY constant) into a list and return it"""
-    try:
+    ___
         d = open(DICTIONARY,'r')
         result = d.read().splitlines()
-    except IOError:
+    ______ IOError:
         result    # list
     finally:
         d.close()

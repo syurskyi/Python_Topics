@@ -4,7 +4,7 @@ Created on Apr 15, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ customSortString(self, S, T):
+    ___ customSortString  S, T):
         """
         :type S: str
         :type T: str
@@ -13,15 +13,15 @@ c_ Solution(object):
         s, t = S, T
         count = [0]*26
         ___ c __ t:
-            count[ord(c)-ord('a')] += 1
+            count[o..(c)-o..('a')] += 1
         res = ''
         ___ c __ s:
-            w.... count[ord(c)-ord('a')] > 0:
+            w.... count[o..(c)-o..('a')] > 0:
                 res += c
-                count[ord(c)-ord('a')] -= 1
+                count[o..(c)-o..('a')] -= 1
         ___ i __ r..(26):
             w.... count[i] > 0:
-                res += chr(i+ord('a'))
+                res += chr(i+o..('a'))
                 count[i] -= 1
         r.. res
     

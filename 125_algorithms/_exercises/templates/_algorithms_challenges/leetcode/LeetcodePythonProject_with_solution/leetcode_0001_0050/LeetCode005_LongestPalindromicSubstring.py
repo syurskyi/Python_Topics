@@ -5,7 +5,7 @@ Created on Jan 7, 2017
 '''
 
 c_ Solution(object):
-    ___ longestPalindromeDP(self, s):
+    ___ longestPalindromeDP  s):
         res = ''
         __ n.. s: r.. res
         n = l..(s)
@@ -18,7 +18,7 @@ c_ Solution(object):
                         res = s[j:i+1]
         r.. res
     
-    ___ longestPalindromeDP_another(self, s):
+    ___ longestPalindromeDP_another  s):
         __ n.. s: r.. s
         length = l..(s)
         maxLen = 1

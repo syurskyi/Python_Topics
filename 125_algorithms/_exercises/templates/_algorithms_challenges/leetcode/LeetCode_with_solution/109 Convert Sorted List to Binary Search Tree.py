@@ -21,7 +21,7 @@ c_ Solution:
     ___ - ):
         current_node = N..  # !important, avoid time complexity of look up
 
-    ___ sortedListToBST(self, head):
+    ___ sortedListToBST  head):
         """
         dfs
         No O(1) access.
@@ -36,7 +36,7 @@ c_ Solution:
         length = getLength(head)
         r.. sortedListToBST_dfs(0, length-1)
 
-    ___ sortedListToBST_dfs(self, start, end):
+    ___ sortedListToBST_dfs  start, end):
         __ start>end:
             r..
         mid = (start+end)/2
@@ -49,7 +49,7 @@ c_ Solution:
         root.right = right_subtree
         r.. root
 
-    ___ getLength(self, head):
+    ___ getLength  head):
         count = 0
         w.... head:
             head = head.next

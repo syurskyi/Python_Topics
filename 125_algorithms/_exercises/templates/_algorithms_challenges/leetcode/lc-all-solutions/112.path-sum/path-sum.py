@@ -8,7 +8,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ hasPathSum(self, root, s..):
+  ___ hasPathSum  root, s..):
     """
     :type root: TreeNode
     :type sum: int

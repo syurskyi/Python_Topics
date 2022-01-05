@@ -2,7 +2,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution(object):
-  ___ getHint(self, secret, guess):
+  ___ getHint  secret, guess):
     """
     :type secret: str
     :type guess: str

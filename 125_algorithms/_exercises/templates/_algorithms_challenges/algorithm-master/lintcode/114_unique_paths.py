@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ uniquePaths(self, m, n):
+    ___ uniquePaths  m, n):
         """
         :type m: int
         :type n: int

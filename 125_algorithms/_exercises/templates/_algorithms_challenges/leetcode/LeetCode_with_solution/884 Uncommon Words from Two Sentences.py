@@ -33,7 +33,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ uncommonFromSentences(self, A: s.., B: s..) __ List[s..]:
+    ___ uncommonFromSentences  A: s.., B: s..) __ List[s..]:
         """
         need counter, only need to appear once
         """
@@ -45,7 +45,7 @@ c_ Solution:
         ]
         r.. ret
 
-    ___ uncommonFromSentences_complext(self, A: s.., B: s..) __ List[s..]:
+    ___ uncommonFromSentences_complext  A: s.., B: s..) __ List[s..]:
         """
         need counter
         """
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ uncommonFromSentences_error(self, A: s.., B: s..) __ List[s..]:
+    ___ uncommonFromSentences_error  A: s.., B: s..) __ List[s..]:
         """
         set difference
         """

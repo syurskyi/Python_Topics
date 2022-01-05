@@ -8,7 +8,7 @@ class ListNode:
 
 
 c_ Solution:
-    ___ removeNthFromEnd(self, head, n):
+    ___ removeNthFromEnd  head, n):
         """
         :type head: ListNode
         :type n: int

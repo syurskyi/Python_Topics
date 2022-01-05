@@ -1,7 +1,7 @@
 c_ Solution:
     # @param matrix, a list of lists of integers
     # RETURN NOTHING, MODIFY matrix IN PLACE.
-    ___ setZeroes(self, matrix):
+    ___ setZeroes  matrix):
         n = l..(matrix)
         m = l..(matrix[0])
         column_zero = F..

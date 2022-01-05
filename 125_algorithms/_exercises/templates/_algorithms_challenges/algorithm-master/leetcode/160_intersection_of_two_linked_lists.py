@@ -6,7 +6,7 @@
 
 
 c_ Solution(object):
-    ___ getIntersectionNode(self, A, B):
+    ___ getIntersectionNode  A, B):
         """
         :type A, B: ListNode
         :rtype: ListNode

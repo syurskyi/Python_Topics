@@ -4,7 +4,7 @@ c_ Cell(object):
         _value = N..
         counter = 0
 
-    ___ add_watcher(self, cell):
+    ___ add_watcher  cell):
         _watchers.a..(cell)
 
     $
@@ -12,7 +12,7 @@ c_ Cell(object):
         r.. _value
 
     @value.setter
-    ___ value(self, new_value):
+    ___ value  new_value):
         _value = new_value
         counter += 1
         ___ cell __ _watchers:
@@ -48,9 +48,9 @@ c_ ComputeCell(Cell):
             ___ cb __ callbacks:
                 cb(new_val)
 
-    ___ add_callback(self, callback):
+    ___ add_callback  callback):
         callbacks.add(callback)
 
-    ___ remove_callback(self, callback):
+    ___ remove_callback  callback):
         __ callback __ callbacks:
             callbacks.remove(callback)

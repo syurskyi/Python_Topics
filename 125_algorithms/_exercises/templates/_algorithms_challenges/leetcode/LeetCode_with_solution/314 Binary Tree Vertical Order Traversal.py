@@ -12,7 +12,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ verticalOrder(self, root):
+    ___ verticalOrder  root):
         """
         O(N)
         :type root: TreeNode
@@ -25,7 +25,7 @@ c_ Solution(object):
         bfs(root, -l-1, ret)
         r.. ret
 
-    ___ bfs(self, cur, col, ret):
+    ___ bfs  cur, col, ret):
         q    # list
         __ cur:
             q.a..((cur, col))
@@ -40,14 +40,14 @@ c_ Solution(object):
 
             q = q[l:]
 
-    ___ leftmost(self, cur, l):
+    ___ leftmost  cur, l):
         __ n.. cur: r.. l
         r.. m..(leftmost(cur.left, l-1), leftmost(cur.right, l+1))
 
-    ___ rightmost(self, cur, r):
+    ___ rightmost  cur, r):
         __ n.. cur: r.. r
-        r.. max(rightmost(cur.left, r-1), rightmost(cur.right, r+1))
+        r.. m..(rightmost(cur.left, r-1), rightmost(cur.right, r+1))
 
-    ___ sidemost(self, cur, p, f):
+    ___ sidemost  cur, p, f):
         __ n.. cur: r.. p
         r.. f(sidemost(cur.left, p-1, f), sidemost(cur.right, p+1, f))

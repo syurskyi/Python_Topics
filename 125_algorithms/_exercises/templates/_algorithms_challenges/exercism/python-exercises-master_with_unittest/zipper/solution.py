@@ -10,7 +10,7 @@ c_ Zipper(object):
     ___ value
         r.. tree['value']
 
-    ___ set_value(self, value):
+    ___ set_value  value):
         tree['value'] = value
         r.. self
 
@@ -19,7 +19,7 @@ c_ Zipper(object):
             r.. N..
         r.. Zipper(tree['left'], ancestors + [tree])
 
-    ___ set_left(self, tree):
+    ___ set_left  tree):
         tree['left'] = tree
         r.. self
 
@@ -28,7 +28,7 @@ c_ Zipper(object):
             r.. N..
         r.. Zipper(tree['right'], ancestors + [tree])
 
-    ___ set_right(self, tree):
+    ___ set_right  tree):
         tree['right'] = tree
         r.. self
 

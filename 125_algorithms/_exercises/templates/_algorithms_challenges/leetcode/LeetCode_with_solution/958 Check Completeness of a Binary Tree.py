@@ -34,7 +34,7 @@ c_ Solution:
         max_depth = -float("inf")
         expecting_partial = F..
 
-    ___ isCompleteTree(self, root: TreeNode) __ bool:
+    ___ isCompleteTree  root: TreeNode) __ bool:
         """
         Do it in one pass
         Left first dfs
@@ -43,7 +43,7 @@ c_ Solution:
         """
         r.. dfs(root, 0)
 
-    ___ dfs(self, node, d):
+    ___ dfs  node, d):
         __ n.. node:
             # empty node (below leaf) is the key decision point
             __ max_depth __ -float("inf"):  # leftmost empty node

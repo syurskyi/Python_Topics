@@ -49,7 +49,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ champagneTower(self, poured: i.., query_row: i.., query_glass: i..) __ float:
+    ___ champagneTower  poured: i.., query_row: i.., query_glass: i..) __ float:
         """
         Simulation
         Instead of keeping track of how much champagne should end up in a
@@ -60,7 +60,7 @@ c_ Solution:
         G[0][0] = poured
         ___ i __ r..(query_row):
             ___ j __ r..(i+1):  # i + 1 glasses at row i
-                excess = max(0, G[i][j] - 1)
+                excess = m..(0, G[i][j] - 1)
                 G[i+1][j] += excess / 2
                 G[i+1][j+1] += excess / 2
 

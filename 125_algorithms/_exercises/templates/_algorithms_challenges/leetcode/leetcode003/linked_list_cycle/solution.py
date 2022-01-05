@@ -12,7 +12,7 @@ Can you solve it without using extra space?
 #         self.next = None
 
 c_ Solution(object):
-    ___ hasCycle(self, head):
+    ___ hasCycle  head):
         """
         :type head: ListNode
         :rtype: bool

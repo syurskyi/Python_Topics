@@ -5,7 +5,7 @@ Created on Apr 2, 2017
 '''
 
 c_ Solution(object):
-    ___ lastRemaining(self, n):
+    ___ lastRemaining  n):
         left = T..
         remaining = n
         head = 1

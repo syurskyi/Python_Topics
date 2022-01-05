@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ largestNumber(self, nums):
+    ___ largestNumber  nums):
         """
         Start off by enumerate simple examples
 
@@ -27,7 +27,7 @@ c_ Solution:
             nums = "0"
         r.. nums
 
-    ___ cmp(self, a, b):
+    ___ cmp  a, b):
         """
         :type a: str
         :type b: str

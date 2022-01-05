@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findWords(self, words):
+  ___ findWords  words):
     """
     :type words: List[str]
     :rtype: List[str]

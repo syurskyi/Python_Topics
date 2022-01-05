@@ -29,7 +29,7 @@ A[i], B[i] are integer values in the range [0, 2000].
 
 
 c_ Solution:
-    ___ minSwap(self, A: List[i..], B: List[i..]) __ i..:
+    ___ minSwap  A: List[i..], B: List[i..]) __ i..:
         """
         Let F[0][i] be number of swaps to make satisfy if not swap A[i], B[i]
         Let F[1][i] be ... if swap A[i], B[i]
@@ -41,7 +41,7 @@ c_ Solution:
         F = [[0 ___ _ __ r..(n)] ___ _ __ r..(2)]
         F[1][0] = 1
         ___ i __ r..(1, n):
-            __ A[i] > max(A[i-1], B[i-1]) a.. B[i] > max(A[i-1], B[i-1]):
+            __ A[i] > m..(A[i-1], B[i-1]) a.. B[i] > m..(A[i-1], B[i-1]):
                 # freedom of two options - swap or not swap
                 F[0][i] = m..(F[0][i-1], F[1][i-1])
                 F[1][i] = m..(F[0][i-1], F[1][i-1]) + 1
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. m..(F[0][n-1], F[1][n-1])
 
-    ___ minSwap_error(self, A: List[i..], B: List[i..]) __ i..:
+    ___ minSwap_error  A: List[i..], B: List[i..]) __ i..:
         """
         for length 2
         swap A[0] and B[0] is the same as swapping A[1], B[2]

@@ -11,14 +11,14 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ subtreeWithAllDeepest(self, root):
+    ___ subtreeWithAllDeepest  root):
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
         r.. deep(root)[1]
     
-    ___ deep(self, root):
+    ___ deep  root):
         __ n.. root:
             r.. 0, N..
         l, r = deep(root.left), deep(root.right)
@@ -29,18 +29,18 @@ c_ Solution(object):
         ____:
             r.. l[0]+1, root
     
-    ___ subtreeWithAllDeepest_own_twoPass(self, root):
+    ___ subtreeWithAllDeepest_own_twoPass  root):
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
         hashmap    # dict
         gatherDepths(root, 0, hashmap)
-        maxDepth = max(hashmap.keys())
+        maxDepth = m..(hashmap.keys())
         nodes = hashmap[maxDepth]
         r.. getCommonParent(root, nodes)
     
-    ___ gatherDepths(self, root, depth, hashmap):
+    ___ gatherDepths  root, depth, hashmap):
         __ n.. root:
             r..
         __ depth __ hashmap:
@@ -50,7 +50,7 @@ c_ Solution(object):
         gatherDepths(root.left, depth+1, hashmap)
         gatherDepths(root.right, depth+1, hashmap)
     
-    ___ getCommonParent(self, root, nodes):
+    ___ getCommonParent  root, nodes):
         __ n.. root:
             r.. N..
         isLeft = T..
@@ -70,7 +70,7 @@ c_ Solution(object):
         ____:
             r.. root
     
-    ___ isSubTree(self, root, node):
+    ___ isSubTree  root, node):
         __ n.. root:
             r.. F..
         __ root __ node:

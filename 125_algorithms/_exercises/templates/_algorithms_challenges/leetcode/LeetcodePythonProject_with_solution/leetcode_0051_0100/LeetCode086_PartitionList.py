@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ partition(self, head, x):
+    ___ partition  head, x):
         """
         :type head: ListNode
         :type x: int

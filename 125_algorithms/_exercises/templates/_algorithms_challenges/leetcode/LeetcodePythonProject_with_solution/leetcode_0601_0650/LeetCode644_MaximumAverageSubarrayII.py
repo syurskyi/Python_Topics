@@ -4,7 +4,7 @@ Created on Oct 1, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findMaxAverage(self, nums, k):
+    ___ findMaxAverage  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -25,10 +25,10 @@ c_ Solution(object):
             hull.a..(j-k+1)
             w.... l..(hull) >= 2 a.. d(hull[0], hull[1]-1) <= d(hull[0], j):
                 hull.popleft()
-            ans = max(ans, d(hull[0], j))
+            ans = m..(ans, d(hull[0], j))
         r.. ans
     
-    ___ findMaxAverage_binarySearch(self, nums, k):
+    ___ findMaxAverage_binarySearch  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -43,7 +43,7 @@ c_ Solution(object):
                 r = mid
         r.. r
     
-    ___ check(self, nums, k, val):
+    ___ check  nums, k, val):
         now, last = 0, 0
         dp = [num-val ___ num __ nums]
         ___ i __ r..(k):

@@ -4,7 +4,7 @@ Created on Sep 15, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ lemonadeChange(self, bills):
+    ___ lemonadeChange  bills):
         """
         :type bills: List[int]
         :rtype: bool

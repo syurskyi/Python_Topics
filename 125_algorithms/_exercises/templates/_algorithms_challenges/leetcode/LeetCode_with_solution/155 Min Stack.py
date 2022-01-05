@@ -27,7 +27,7 @@ c_ MinStack:
         stk    # list
         non_asc    # list
 
-    ___ push(self, x):
+    ___ push  x):
         """
 
         :param x: int

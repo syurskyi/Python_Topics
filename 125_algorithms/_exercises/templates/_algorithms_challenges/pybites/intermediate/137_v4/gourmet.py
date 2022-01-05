@@ -125,7 +125,7 @@ ___ best_match_per_wine(wine_type="all"):
     sims = ((w, c, similarity(w, c))
             ___ w, c __ product(WT[wine_type], CHEESES))
 
-    r.. max(sims, key=l.... x: x[2])
+    r.. m..(sims, key=l.... x: x[2])
 
 
 ___ match_wine_5cheeses

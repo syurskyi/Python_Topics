@@ -7,7 +7,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ containsDuplicate(self, nums):
+    ___ containsDuplicate  nums):
         """
         Trival
         :type nums: list[int]

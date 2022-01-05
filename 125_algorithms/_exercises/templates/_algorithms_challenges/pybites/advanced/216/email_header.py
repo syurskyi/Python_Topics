@@ -27,12 +27,12 @@ ___ get_email_details(header: s..) __ d..:
     """
 
 
-    try:
+    ___
         from_ = __.s..(r'^From: (.+)',header,flags=__.MULTILINE).group(1).s..
         to = __.s..(r'^To: (.+)',header,flags=__.MULTILINE).group(1).s..
         subject = __.s..(r'^Subject: (.+)',header,flags=__.MULTILINE).group(1).s..
         date = __.s..(r'^Date: (.+) (?:\+|\-)',header,flags=__.MULTILINE).group(1).s..
-    except:
+    ______:
         r..
     ____:
         d = {'from': from_,'to': to,'subject': subject,'date': date}

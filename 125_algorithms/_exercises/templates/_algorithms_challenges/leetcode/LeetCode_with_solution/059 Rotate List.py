@@ -16,7 +16,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ rotateRight(self, head, k):
+    ___ rotateRight  head, k):
         """
         Linked list
         Assume k is legal
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. dummy.next
 
-__ __name____"__main__":
+__ _____ __ ____
     length = 1
     lst = [ListNode(i+1) ___ i __ xrange(length)]
     ___ i __ r..(length-1):

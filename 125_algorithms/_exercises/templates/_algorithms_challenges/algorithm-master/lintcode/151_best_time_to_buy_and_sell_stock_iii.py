@@ -3,7 +3,7 @@ c_ Solution:
     @param: P: Given an integer array
     @return: Maximum profit
     """
-    ___ maxProfit(self, P):
+    ___ maxProfit  P):
         __ n.. P:
             r.. 0
 
@@ -38,7 +38,7 @@ c_ Solution:
                    just makes a buying today, so no profit
                 choose the maximum
                 """
-                dp[curr][j] = max(dp[prev][j] + profit, dp[prev][j - 1])
+                dp[curr][j] = m..(dp[prev][j] + profit, dp[prev][j - 1])
             ___ j __ r..(2, STAGE, 2):
                 """
                 in stage 2 and 4, holding no any stock
@@ -49,6 +49,6 @@ c_ Solution:
                    and gains profit (may be negative) today
                 choose the maximum
                 """
-                dp[curr][j] = max(dp[prev][j], dp[prev][j - 1] + profit)
+                dp[curr][j] = m..(dp[prev][j], dp[prev][j - 1] + profit)
 
-        r.. max(dp[curr])
+        r.. m..(dp[curr])

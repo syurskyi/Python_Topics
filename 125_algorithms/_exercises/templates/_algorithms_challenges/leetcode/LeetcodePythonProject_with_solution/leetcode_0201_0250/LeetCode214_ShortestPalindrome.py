@@ -5,7 +5,7 @@ Created on Feb 19, 2017
 '''
 
 c_ Solution(object):
-    ___ shortestPalindrome(self, s):
+    ___ shortestPalindrome  s):
         """
         :type s: str
         :rtype: str

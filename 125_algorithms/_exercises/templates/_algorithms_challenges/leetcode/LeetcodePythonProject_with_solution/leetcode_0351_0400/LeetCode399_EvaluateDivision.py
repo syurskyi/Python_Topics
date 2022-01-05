@@ -5,7 +5,7 @@ Created on Apr 5, 2017
 '''
 
 c_ Solution(object):
-    ___ calcEquation(self, equations, values, queries):
+    ___ calcEquation  equations, values, queries):
         """
         :type equations: List[List[str]]
         :type values: List[float]
@@ -37,7 +37,7 @@ c_ Solution(object):
                 result.a..(tmp[0])
         r.. result
     
-    ___ dfs(self, valuesMap, graph, start, target, curr, visited, result):
+    ___ dfs  valuesMap, graph, start, target, curr, visited, result):
         visited.add(start)
         __ start __ target:
             result[0] = curr

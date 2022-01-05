@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minArea(self, image, x, y):
+    ___ minArea  image, x, y):
         """
         :type image: list[str]
         :type x: int
@@ -18,7 +18,7 @@ c_ Solution:
 
         r.. (bottom - top + 1) * (right - left + 1)
 
-    ___ binary_search(self, image, start, end, is_empty):
+    ___ binary_search  image, start, end, is_empty):
         check = N..
 
         __ start < end:
@@ -36,13 +36,13 @@ c_ Solution:
 
         r.. end __ is_empty(image, start) ____ start
 
-    ___ is_empty_row(self, image, x):
+    ___ is_empty_row  image, x):
         ___ col __ image[x]:
             __ col __ '1':
                 r.. F..
         r.. T..
 
-    ___ is_empty_col(self, image, y):
+    ___ is_empty_col  image, y):
         ___ row __ image:
             __ row[y] __ '1':
                 r.. F..

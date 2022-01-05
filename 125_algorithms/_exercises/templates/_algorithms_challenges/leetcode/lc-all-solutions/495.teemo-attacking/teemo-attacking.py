@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findPoisonedDuration(self, timeSeries, duration):
+  ___ findPoisonedDuration  timeSeries, duration):
     """
     :type timeSeries: List[int]
     :type duration: int

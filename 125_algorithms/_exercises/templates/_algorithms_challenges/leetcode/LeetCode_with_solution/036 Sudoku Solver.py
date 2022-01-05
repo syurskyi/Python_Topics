@@ -7,7 +7,7 @@ You may assume that there will be only one unique solution.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ solveSudoku(self, board):
+    ___ solveSudoku  board):
         """
         Solve the Sudoku by modifying the input board in-place.
 
@@ -23,7 +23,7 @@ c_ Solution:
         ___ row __ xrange(l..(board)):
             board[row] = "".j..(board[row])
 
-    ___ solve_TLE(self, board):
+    ___ solve_TLE  board):
         """
 
         :param board: a 9x9 2D array
@@ -54,7 +54,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ solve(self, board, i, j):
+    ___ solve  board, i, j):
         """
         dfs
         :param board: a 9x9 2D array
@@ -83,7 +83,7 @@ c_ Solution:
 
         r.. F..
 
-__ __name____"__main__":
+__ _____ __ ____
     Solution().solveSudoku(
         ["..9748...", "7........", ".2.1.9...", "..7...24.", ".64.1.59.", ".98...3..", "...8.3.2.", "........6",
          "...2759.."]

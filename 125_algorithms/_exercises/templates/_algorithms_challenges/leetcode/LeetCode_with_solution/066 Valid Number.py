@@ -12,19 +12,19 @@ implementing one.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ isNumber_builtin(self, s):
+    ___ isNumber_builtin  s):
         """
         using built-in function
         :param s: a string
         :return: boolean
         """
-        try:
+        ___
             float(s)
             r.. T..
-        except ValueError:
+        ______ V..
             r.. F..
 
-    ___ isNumber(self, s):
+    ___ isNumber  s):
         """
         D-FSA: Deterministic Finite State Automata
         Transition table T, which is constructed from FSA
@@ -75,7 +75,7 @@ c_ Solution:
         ____:
             r.. F..
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().isNumber(".2e81")__True
     ... Solution().isNumber("6+1")__False
     ... Solution().isNumber("1 a")__False

@@ -5,7 +5,7 @@ Created on Apr 5, 2017
 '''
 
 c_ Solution(object):
-    ___ findNthDigit(self, n):
+    ___ findNthDigit  n):
         length, count, start = 1, 9, 1
         w.... n > length*count:
             n -= length*count

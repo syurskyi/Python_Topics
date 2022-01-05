@@ -4,4 +4,4 @@
 
 n = i..(input())
 ar = l..(map(i.., input().s..()))
-print(ar.c.. max(ar)))
+print(ar.c.. m..(ar)))

@@ -9,7 +9,7 @@ c_ NinjaBelt:
         _score = score
         _last_earned_belt = N..
 
-    ___ _get_belt(self, new_score):
+    ___ _get_belt  new_score):
         """Might be a useful helper"""
         p..
     
@@ -18,7 +18,7 @@ c_ NinjaBelt:
     ___ _get_score
         r.. _score
 
-    ___ _set_score(self, new_score):
+    ___ _set_score  new_score):
 
         __ n.. isi..(new_score,i..):
             r.. ValueError("Score takes an int")

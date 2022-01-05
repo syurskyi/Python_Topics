@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ fullJustify(self, words, maxWidth):
+  ___ fullJustify  words, maxWidth):
     """
     :type words: List[str]
     :type maxWidth: int

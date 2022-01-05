@@ -38,7 +38,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ findFrequentTreeSum(self, root):
+    ___ findFrequentTreeSum  root):
         """
         traverse with counter
         :type root: TreeNode
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. ret[0]
 
-    ___ traverse(self, root, counter):
+    ___ traverse  root, counter):
         __ n.. root:
             r.. 0
 

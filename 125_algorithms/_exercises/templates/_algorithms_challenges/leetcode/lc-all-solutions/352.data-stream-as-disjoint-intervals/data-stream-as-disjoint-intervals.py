@@ -12,7 +12,7 @@ c_ SummaryRanges(object):
     """
     intervals    # list
 
-  ___ insert(self, newInterval):
+  ___ insert  newInterval):
     """
     :type intervals: List[Interval]
     :type newInterval: Interval
@@ -29,7 +29,7 @@ c_ SummaryRanges(object):
     # print left, right, (s, e)
     __ left + right != intervals:
       s = m..(intervals[l..(left)].start, s)
-      e = max(intervals[~l..(right)].end, e)
+      e = m..(intervals[~l..(right)].end, e)
     newIntv = Interval(s, e)
     __ left a.. left[-1].end + 1 __ s:
       newIntv.start = left[-1].start
@@ -39,7 +39,7 @@ c_ SummaryRanges(object):
       right = right[1:]
     intervals = left + [newIntv] + right
 
-  ___ addNum(self, val):
+  ___ addNum  val):
     """
     :type val: int
     :rtype: void

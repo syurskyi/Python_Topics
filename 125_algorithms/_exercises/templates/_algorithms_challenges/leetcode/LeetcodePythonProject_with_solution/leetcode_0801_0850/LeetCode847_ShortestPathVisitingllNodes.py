@@ -5,7 +5,7 @@ Created on Apr 10, 2019
 '''
 
 c_ Solution(object):
-    ___ shortestPathLength(self, graph):
+    ___ shortestPathLength  graph):
         """
         :type graph: List[List[int]]
         :rtype: int

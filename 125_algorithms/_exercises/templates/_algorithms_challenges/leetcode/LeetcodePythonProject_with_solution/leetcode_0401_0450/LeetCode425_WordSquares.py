@@ -12,7 +12,7 @@ c_ TrieNode(object):
         candidates = set()
 
 c_ Solution(object):
-    ___ wordSquares(self, words):
+    ___ wordSquares  words):
         __ n.. words: r.. []
         root = TrieNode(-1)
         buildTrie(words)
@@ -20,7 +20,7 @@ c_ Solution(object):
         dfs(words, [], res, words)
         r.. res
     
-    ___ dfs(self, words, elems, result, nextWords):
+    ___ dfs  words, elems, result, nextWords):
         __ l..(elems) __ l..(words[0]):
             result.a..(l..(elems))
             r..
@@ -36,7 +36,7 @@ c_ Solution(object):
             dfs(words, elems, result, candidates)
             elems.pop()
     
-    ___ buildTrie(self, words):
+    ___ buildTrie  words):
         root.candidates = words
         ___ word __ words:
             children = root.children
@@ -49,7 +49,7 @@ c_ Solution(object):
                 node.candidates.add(word)
                 children = node.children
     
-    ___ wordsWithPrefix(self, prefix):
+    ___ wordsWithPrefix  prefix):
         __ n.. prefix: r.. []
         children = root.children
         ___ i, c __ e..(prefix):

@@ -3,11 +3,11 @@ _______ p__
 
 
 ___ test_fib(n):
-    try:
+    ___
         ... fib(0) __ 0
         ... fib(1) __ 1
         ... fib(6) __ 8
-    except ValueError:
+    ______ V..
         p__.fail("Value Error")
 
 

@@ -2,7 +2,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution(object):
-  ___ findContentChildren(self, children, cookies):
+  ___ findContentChildren  children, cookies):
     """
     :type g: List[int]
     :type s: List[int]

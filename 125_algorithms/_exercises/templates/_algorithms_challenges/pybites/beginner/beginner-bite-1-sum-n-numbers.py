@@ -64,9 +64,9 @@ ___ pyb_sum_numbers(numbers_ N..
 ### probowac obsluzyc wyjatek 'NoneType' object is not iterable
 
 ___ sum_numbers_1(numbers_ N..
-    try:
+    ___
         r.. s..(numbers)
-    except T..:
+    ______ T..:
         r.. s..(r..(1,101))
 
 

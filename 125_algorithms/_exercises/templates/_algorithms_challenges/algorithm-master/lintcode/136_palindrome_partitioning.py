@@ -7,7 +7,7 @@ c_ Solution:
     @param: s: A string
     @return: A list of lists of string
     """
-    ___ partition(self, s):
+    ___ partition  s):
         __ n.. s:
             r.. ans
 
@@ -17,7 +17,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ check_palindrome(self, s):
+    ___ check_palindrome  s):
         """
         assuming string = 'aabb'
         s: start_index, e: end_index
@@ -72,7 +72,7 @@ c_ Solution:
     # if is a palindrome, continue to traverse
     # otherwise will be ignored
     # and catch all result at the end
-    ___ dfs(self, s, start, palindromes):
+    ___ dfs  s, start, palindromes):
         __ start >= n:
             ans.a..(palindromes)
         next_start = 0

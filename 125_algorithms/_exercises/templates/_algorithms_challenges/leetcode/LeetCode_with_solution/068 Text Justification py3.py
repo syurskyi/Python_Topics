@@ -58,7 +58,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ fullJustify(self, words: List[s..], maxWidth: i..) __ List[s..]:
+    ___ fullJustify  words: List[s..], maxWidth: i..) __ List[s..]:
         """
         Round robin distribution of spaces
 
@@ -76,7 +76,7 @@ c_ Solution:
                 cur_words.pop()
                 char_cnt -= l..(w)
                 ___ i __ r..(maxWidth - char_cnt):
-                    cur_words[i % max(1, l..(cur_words) - 1)] += " "
+                    cur_words[i % m..(1, l..(cur_words) - 1)] += " "
 
                 ret.a..("".j..(cur_words))
 
@@ -90,7 +90,7 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ fullJustify(self, words: List[s..], maxWidth: i..) __ List[s..]:
+    ___ fullJustify  words: List[s..], maxWidth: i..) __ List[s..]:
         """
         Round robin distribution of spaces
 
@@ -107,7 +107,7 @@ c_ Solution2:
                 # break, move w into the next line
                 # Round robin distribut the spaces except for the last word
                 ___ i __ r..(maxWidth - char_cnt):
-                    cur_words[i % max(1, l..(cur_words) - 1)] += " "  # insert in between
+                    cur_words[i % m..(1, l..(cur_words) - 1)] += " "  # insert in between
                     # len(cur_words) - 1 can be 0
                 ret.a..("".j..(cur_words))
 

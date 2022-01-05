@@ -6,7 +6,7 @@ climb to the top?
 """
 
 c_ Solution(object):
-    ___ climbStairs(self, n):
+    ___ climbStairs  n):
         """
         :type n: int
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(object):
         t = [0 ___ i __ r..(n + 1)]
         r.. climb(n, t)
 
-    ___ climb(self, n, t):
+    ___ climb  n, t):
         __ n __ 0:
             r.. 1
         ____ n < 0:

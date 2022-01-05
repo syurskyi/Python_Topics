@@ -13,7 +13,7 @@ ___ knows(a, b):
 
 
 c_ Solution(object):
-    ___ findCelebrity(self, n):
+    ___ findCelebrity  n):
         """
         :type n: int
         :rtype: int
@@ -35,7 +35,7 @@ c_ Solution(object):
 
         r.. celebrity
 
-    ___ findCelebrity_set(self, n):
+    ___ findCelebrity_set  n):
         """
         O(n)
         set

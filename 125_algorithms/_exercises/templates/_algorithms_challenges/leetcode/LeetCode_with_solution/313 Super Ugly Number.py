@@ -19,7 +19,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ nthSuperUglyNumber(self, n, primes):
+    ___ nthSuperUglyNumber  n, primes):
         """
         DP O(kn)
         :type n: int
@@ -47,12 +47,12 @@ c_ QueueWrapper(object):
         idx = idx
         q = q
 
-    ___ __cmp__(self, other):
+    ___ __cmp__  other):
         r.. q[0] - other.q[0]
 
 
 c_ SolutionHeap(object):
-    ___ nthSuperUglyNumber(self, n, primes):
+    ___ nthSuperUglyNumber  n, primes):
         """
         O(k lg k) + O(nk)
         :type n: int

@@ -4,7 +4,7 @@ Created on Sep 11, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ kSimilarity(self, A, B):
+    ___ kSimilarity  A, B):
         """
         :type A: str
         :type B: str
@@ -35,7 +35,7 @@ c_ Solution(object):
                         q.a..(tmp)
         r.. res
     
-    ___ swap(self, s, i, j):
+    ___ swap  s, i, j):
         l = l..(s)
         l[i], l[j] = l[j], l[i]
         r.. ''.j..(l)

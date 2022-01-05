@@ -7,7 +7,7 @@ Count the number of prime numbers less than a non-negative number, n.
 """
 
 c_ Solution(object):
-    ___ countPrimes(self, n):
+    ___ countPrimes  n):
         """
         :type n: int
         :rtype: int

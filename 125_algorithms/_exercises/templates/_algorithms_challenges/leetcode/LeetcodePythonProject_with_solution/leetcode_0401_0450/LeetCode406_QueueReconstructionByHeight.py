@@ -5,7 +5,7 @@ Created on Apr 10, 2017
 '''
 
 c_ Solution(object):
-    ___ reconstructQueue(self, people):
+    ___ reconstructQueue  people):
         res    # list
         people.s..(key=l.... x: (-x[0], x[1]))
         ___ p __ people:

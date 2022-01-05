@@ -14,7 +14,7 @@ c_ Solution:
     @param: x: An integer
     @return: the inserted new list node
     """
-    ___ insert(self, node, x):
+    ___ insert  node, x):
         __ n.. node:
             node = ListNode(x)
             node.next = node

@@ -7,7 +7,7 @@ c_ ListNode:
 
 c_ Solution:
     # ascending
-    ___ insertionSortList_TLE(self, head):
+    ___ insertionSortList_TLE  head):
         """
         Time Limit Exceded
         """
@@ -47,7 +47,7 @@ c_ Solution:
         r.. dummy_head.next
 
 
-    ___ insertionSortList(self, head):
+    ___ insertionSortList  head):
         """
         O(n^2), but with better performance since while loop inside a if
 
@@ -87,15 +87,15 @@ c_ Solution:
 
         r.. dummy.next
 
-__ __name____"__main__":
+__ _____ __ ____
     _______ r__
     lst = [ListNode(i) ___ i __ r__.sample(xrange(-1000, 1000), 1000)]
     # lst = [ListNode(1), ListNode(3), ListNode(2)]
     # lst = [ListNode(i) for i in range(10, -1, -1)]
     ___ i __ r..(l..(lst)):
-        try:
+        ___
             lst[i].next = lst[i+1]
-        except IndexError: # last
+        ______ IndexError: # last
             lst[i].next = N..
 
 

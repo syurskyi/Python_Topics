@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ hIndex(self, A):
+    ___ hIndex  A):
         """
         Determine the range of output (i.e. h-index):
           Range of output: [0, N]
@@ -43,7 +43,7 @@ c_ Solution(object):
 
         r.. 0
 
-    ___ hIndex_sort(self, citations):
+    ___ hIndex_sort  citations):
         """
         Algorithm forward sort
         :type citations: List[int]
@@ -57,7 +57,7 @@ c_ Solution(object):
 
         r.. 0
 
-    ___ hIndex_reverse_sort(self, citations):
+    ___ hIndex_reverse_sort  citations):
         """
         Algorithm sort
         :type citations: List[int]

@@ -5,7 +5,7 @@ Created on Jan 22, 2017
 '''
 
 c_ Solution(object):
-    ___ mySqrt(self, x):
+    ___ mySqrt  x):
         """
         :type x: int
         :rtype: int

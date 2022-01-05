@@ -123,8 +123,8 @@ c_ Taxes:
 
         largest_amount = largest_tax =  float("-inf")
         ___ amount,rate,tax __ tax_amounts:
-            largest_amount = max(largest_amount,i..(amount))
-            largest_tax = max(largest_tax,i..(tax))
+            largest_amount = m..(largest_amount,i..(amount))
+            largest_tax = m..(largest_tax,i..(tax))
     
         
         largest_amount = l..(s..(largest_amount))

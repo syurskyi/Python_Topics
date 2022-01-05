@@ -12,7 +12,7 @@ c_ Solution:
     """
     max heap
     """
-    ___ kClosest(self, points, origin, k):
+    ___ kClosest  points, origin, k):
         """
         :type points: list[Point]
         :type origin: Point
@@ -35,7 +35,7 @@ c_ Solution:
 
         r.. [points[i] ___ _, i __ ans]
 
-    ___ get_distance(self, p, q):
+    ___ get_distance  p, q):
         dx = p.x - q.x
         dy = p.y - q.y
         r.. dx * dx + dy * dy
@@ -48,7 +48,7 @@ c_ Solution:
     """
     min heap
     """
-    ___ kClosest(self, points, origin, k):
+    ___ kClosest  points, origin, k):
         """
         :type points: list[Point]
         :type origin: Point
@@ -74,7 +74,7 @@ c_ Solution:
 
         r.. [p ___ _, p __ ans]
 
-    ___ get_distance(self, p, q):
+    ___ get_distance  p, q):
         dx = p.x - q.x
         dy = p.y - q.y
         r.. dx * dx + dy * dy

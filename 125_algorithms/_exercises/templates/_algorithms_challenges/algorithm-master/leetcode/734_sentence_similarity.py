@@ -20,7 +20,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ areSentencesSimilar(self, words1, words2, pairs):
+    ___ areSentencesSimilar  words1, words2, pairs):
         """
         :type words1: List[str]
         :type words2: List[str]

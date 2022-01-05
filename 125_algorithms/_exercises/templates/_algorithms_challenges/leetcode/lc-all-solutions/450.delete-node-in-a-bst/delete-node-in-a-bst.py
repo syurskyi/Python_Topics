@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ deleteNode(self, root, key):
+  ___ deleteNode  root, key):
     """
     :type root: TreeNode
     :type key: int

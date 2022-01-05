@@ -5,7 +5,7 @@ Created on Mar 19, 2017
 '''
 
 c_ Solution(object):
-    ___ minPatches(self, nums, n):
+    ___ minPatches  nums, n):
         miss = 1
         added, i = 0, 0
         w.... miss <= n:

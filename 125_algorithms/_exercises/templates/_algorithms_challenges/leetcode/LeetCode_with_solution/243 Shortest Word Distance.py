@@ -8,7 +8,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ shortestDistance(self, words, word1, word2):
+    ___ shortestDistance  words, word1, word2):
         """
         :type words: list[str]
         :type word1: str

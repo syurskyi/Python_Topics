@@ -7,7 +7,7 @@ c_ Solution:
     @param end: The end points set
     @return: Return if the graph is cyclic
     """
-    ___ isCyclicGraph(self, start, end):
+    ___ isCyclicGraph  start, end):
         __ n.. start o. n.. end o. l..(start) != l..(end):
             r.. F..
 
@@ -27,7 +27,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ dfs(self, u, nxt, visited, rec_stack):
+    ___ dfs  u, nxt, visited, rec_stack):
         __ u n.. __ nxt:
             r.. F..
 

@@ -9,7 +9,7 @@ Could you do this in O(n) runtime?
 
 
 c_ Solution:
-    ___ findMaximumXOR(self, nums):
+    ___ findMaximumXOR  nums):
         """
         Brute force: O(n^2)
         constrinat: 32 bit

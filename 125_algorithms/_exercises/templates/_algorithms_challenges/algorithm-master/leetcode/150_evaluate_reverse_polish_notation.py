@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ evalRPN(self, E):
+    ___ evalRPN  E):
         """
         :type E: List[str]
         :rtype: int

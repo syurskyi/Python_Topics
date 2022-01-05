@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ updateBoard(self, board, click):
+  ___ updateBoard  board, click):
     """
     :type board: List[List[str]]
     :type click: List[int]

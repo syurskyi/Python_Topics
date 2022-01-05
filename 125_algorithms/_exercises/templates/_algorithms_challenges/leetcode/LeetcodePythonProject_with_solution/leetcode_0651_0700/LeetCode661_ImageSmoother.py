@@ -4,7 +4,7 @@ Created on Oct 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ imageSmoother(self, M):
+    ___ imageSmoother  M):
         """
         :type M: List[List[int]]
         :rtype: List[List[int]]

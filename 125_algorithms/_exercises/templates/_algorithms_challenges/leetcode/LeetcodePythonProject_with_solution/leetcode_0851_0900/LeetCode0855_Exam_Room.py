@@ -29,7 +29,7 @@ c_ ExamRoom(object):
         bisect.insort(l, res)
         r.. res
 
-    ___ leave(self, p):
+    ___ leave  p):
         """
         :type p: int
         :rtype: None

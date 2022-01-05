@@ -4,7 +4,7 @@ Created on Apr 25, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ expressiveWords(self, S, words):
+    ___ expressiveWords  S, words):
         """
         :type S: str
         :type words: List[str]
@@ -17,7 +17,7 @@ c_ Solution(object):
                 res += 1
         r.. res
     
-    ___ isstretchy(self, s0, s):
+    ___ isstretchy  s0, s):
         m, n = l..(s0), l..(s)
         __ m > n: r.. F..
         __ m __ n a.. s0 != s: r.. F..

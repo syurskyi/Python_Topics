@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ minDepth(self, root):
+  ___ minDepth  root):
     """
     :type root: TreeNode
     :rtype: int

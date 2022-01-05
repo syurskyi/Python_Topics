@@ -5,7 +5,7 @@ Created on Feb 11, 2017
 '''
 
 c_ Solution(object):
-    ___ findMin(self, nums):
+    ___ findMin  nums):
         """
         :type nums: List[int]
         :rtype: int

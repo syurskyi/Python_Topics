@@ -24,7 +24,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ findTheDifference(self, s, t):
+    ___ findTheDifference  s, t):
         """
         :type s: str
         :type t: str

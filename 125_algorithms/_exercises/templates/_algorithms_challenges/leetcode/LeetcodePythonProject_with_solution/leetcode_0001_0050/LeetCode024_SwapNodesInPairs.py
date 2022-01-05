@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ swapPairs(self, head):
+    ___ swapPairs  head):
         """
         :type head: ListNode
         :rtype: ListNode

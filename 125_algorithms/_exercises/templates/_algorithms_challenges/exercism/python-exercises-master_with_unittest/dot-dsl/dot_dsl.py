@@ -6,7 +6,7 @@ c_ Node(object):
         name = name
         attrs = attrs
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. name __ other.name a.. attrs __ other.attrs
 
 
@@ -16,7 +16,7 @@ c_ Edge(object):
         dst = dst
         attrs = attrs
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. (src __ other.src a..
                 dst __ other.dst a..
                 attrs __ other.attrs)

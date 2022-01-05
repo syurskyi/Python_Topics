@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ rotate(self, nums, k):
+  ___ rotate  nums, k):
     """
     :type nums: List[int]
     :type k: int

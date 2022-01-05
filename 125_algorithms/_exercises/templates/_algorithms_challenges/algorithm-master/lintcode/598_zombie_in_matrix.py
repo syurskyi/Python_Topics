@@ -7,7 +7,7 @@ c_ Solution:
     @param: grid: a 2D integer grid
     @return: an integer
     """
-    ___ zombie(self, grid):
+    ___ zombie  grid):
         __ n.. grid:
             r.. -1
 

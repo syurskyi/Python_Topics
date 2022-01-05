@@ -4,7 +4,7 @@ Created on Mar 26, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ ipToCIDR(self, ip, n):
+    ___ ipToCIDR  ip, n):
         """
         :type ip: str
         :type n: int
@@ -24,7 +24,7 @@ c_ Solution(object):
             n -= step
         r.. res
     
-    ___ long2ip(self, x, step):
+    ___ long2ip  x, step):
         res = [0]*4
         ___ i __ r..(3, -1, -1):
             res[i] = x&255

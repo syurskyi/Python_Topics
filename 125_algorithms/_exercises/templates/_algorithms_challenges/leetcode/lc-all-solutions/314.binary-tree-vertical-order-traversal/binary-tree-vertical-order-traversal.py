@@ -2,7 +2,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution(object):
-  ___ verticalOrder(self, root):
+  ___ verticalOrder  root):
     """
     :type root: TreeNode
     :rtype: List[List[int]]

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxSubArrayLen(self, nums, k):
+  ___ maxSubArrayLen  nums, k):
     """
     :type nums: List[int]
     :type k: int
@@ -13,5 +13,5 @@ c_ Solution(object):
       __ _sum n.. __ d:
         d[_sum] = i
       __ _sum - k __ d:
-        maxLen = max(maxLen, i - d[_sum - k])
+        maxLen = m..(maxLen, i - d[_sum - k])
     r.. maxLen

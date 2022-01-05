@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ addOneRow(self, root, v, d):
+  ___ addOneRow  root, v, d):
     """
     :type root: TreeNode
     :type v: int

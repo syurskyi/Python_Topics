@@ -20,7 +20,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ addTwoNumbers(self, l1, l2):
+    ___ addTwoNumbers  l1, l2):
         """
         Algorithm: Two pointers & math
         Two pointers for l1 and l2 respectively
@@ -52,7 +52,7 @@ c_ Solution:
 
         r.. result_head
 
-    ___ addNode(self, node1, node2):
+    ___ addNode  node1, node2):
         """
         Handles None situation
 

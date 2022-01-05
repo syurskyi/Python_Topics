@@ -10,7 +10,7 @@ c_ ListNode:
         next = N..
 
 c_ Solution:
-    ___ mergeKLists_TLE1(self, lists):
+    ___ mergeKLists_TLE1  lists):
         """
         k lists; each list has N items
         Algorithm 1:
@@ -35,9 +35,9 @@ c_ Solution:
         w.... length>0:
             i = 0
             w... T...
-                try:
+                ___
                     lists[i] = mergeTwoLists(lists[i], lists[i+factor/2])
-                except IndexError:
+                ______ IndexError:
                     break
                 i += factor
 
@@ -46,7 +46,7 @@ c_ Solution:
 
         r.. lists[0]
 
-    ___ mergeKLists_TLE2(self, lists):
+    ___ mergeKLists_TLE2  lists):
         """
 
         :param lists: a list of ListNode
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 
-    ___ mergeTwoLists(self, l1, l2):
+    ___ mergeTwoLists  l1, l2):
         """
         Linked List
         assuming ascending order
@@ -93,7 +93,7 @@ c_ Solution:
 
         r.. dummy.next
 
-    ___ mergeKLists(self, lists):
+    ___ mergeKLists  lists):
         """
         use heap
         heap pointer
@@ -124,6 +124,6 @@ c_ Solution:
                 heapq.heappush(heap, (smallest_node.next.val, smallest_node.next))
         r.. dummy.next
 
-__ __name____"__main__":
+__ _____ __ ____
     ...  Solution().mergeKLists([N.., N..])__None
     ... Solution().mergeKLists([ListNode(1), ListNode(0)]).val__0

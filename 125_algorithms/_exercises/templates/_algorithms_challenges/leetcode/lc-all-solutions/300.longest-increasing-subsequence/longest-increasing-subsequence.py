@@ -3,7 +3,7 @@
 # which is implemented by `tail[idx] = num`
 
 c_ Solution(object):
-  ___ lengthOfLIS(self, nums):
+  ___ lengthOfLIS  nums):
     """
     :type nums: List[int]
     :rtype: int

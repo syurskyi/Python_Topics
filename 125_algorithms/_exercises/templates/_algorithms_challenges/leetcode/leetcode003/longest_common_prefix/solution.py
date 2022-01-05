@@ -5,7 +5,7 @@ strings.
 
 
 c_ Solution(object):
-    ___ longestCommonPrefix(self, strs):
+    ___ longestCommonPrefix  strs):
         """
         :type strs: List[str]
         :rtype: str

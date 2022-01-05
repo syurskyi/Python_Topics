@@ -23,13 +23,13 @@ c_ NestedInteger(object):
         :rtype bool
         """
 
-    ___ add(self, elem):
+    ___ add  elem):
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
 
-    ___ setInteger(self, value):
+    ___ setInteger  value):
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
@@ -54,7 +54,7 @@ c_ Solution(object):
     ___ - ):
         s.. = 0
 
-    ___ depthSumInverse(self, nestedList):
+    ___ depthSumInverse  nestedList):
         """
         NestedInteger is a union type
         :type nestedList: List[NestedInteger]
@@ -64,16 +64,16 @@ c_ Solution(object):
         inverseDepthSum(nestedList, inv_depth)
         r.. s..
 
-    ___ height(self, nl):
+    ___ height  nl):
         nl_lst = filter(l.... x: n.. x.isInteger(), nl)
         __ n.. nl_lst:
             r.. 1
         __ nl_lst:
-            r.. 1 + max(
+            r.. 1 + m..(
                 map(l.... x: height(x.getList()), nl_lst)
             )
 
-    ___ inverseDepthSum(self, nl, inv_depth):
+    ___ inverseDepthSum  nl, inv_depth):
         nl_lst = filter(l.... x: n.. x.isInteger(), nl)
         ni_list = filter(l.... x: x.isInteger(), nl)
         __ nl_lst:
@@ -86,7 +86,7 @@ c_ SolutionError(object):
     ___ - ):
         s.. = 0
 
-    ___ depthSumInverse(self, nestedList):
+    ___ depthSumInverse  nestedList):
         """
         NestedInteger is a union type
         :type nestedList: List[NestedInteger]
@@ -95,7 +95,7 @@ c_ SolutionError(object):
         dfs(nestedList)
         r.. s..
 
-    ___ dfs(self, nl):
+    ___ dfs  nl):
         """
         This dfs use height: the number of edges from to the leaves.
         But the question is supposedly use height but the calculate sum top down; here is bottom up wrongly.
@@ -105,7 +105,7 @@ c_ SolutionError(object):
         nl_lst = filter(l.... x: n.. x.isInteger(), nl)
         ni_list = filter(l.... x: x.isInteger(), nl)
         __ nl_lst:
-            height = 1 + max(
+            height = 1 + m..(
                 map(l.... x: dfs(x.getList()), nl_lst)
             )
         __ ni_list:

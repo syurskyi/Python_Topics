@@ -4,7 +4,7 @@ Created on Feb 12, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maximumGap(self, nums):
+    ___ maximumGap  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(object):
         __ n.. nums o. l..(nums) < 2:
             r.. 0
         minVal = m..(nums)
-        maxVal = max(nums)
+        maxVal = m..(nums)
         n = l..(nums)
         gap = math.ceil(float(maxVal-minVal)/(n-1))
         bucketsMin = [float('inf')]*(n-1)
@@ -23,15 +23,15 @@ c_ Solution(object):
                 _____
             idx = i..((num-minVal)//gap)
             bucketsMin[idx] = m..(bucketsMin[idx], num)
-            bucketsMax[idx] = max(bucketsMax[idx], num)
+            bucketsMax[idx] = m..(bucketsMax[idx], num)
         maxGap = float('-inf')
         prev = minVal
         ___ i __ r..(n-1):
             __ bucketsMin[i] __ float('inf') a.. bucketsMax[i] __ float('-inf'):
                 _____
-            maxGap = max(maxGap, bucketsMin[i]-prev)
+            maxGap = m..(maxGap, bucketsMin[i]-prev)
             prev = bucketsMax[i]
-        maxGap = max(maxGap, maxVal-prev)
+        maxGap = m..(maxGap, maxVal-prev)
         r.. maxGap
     
     ___ test

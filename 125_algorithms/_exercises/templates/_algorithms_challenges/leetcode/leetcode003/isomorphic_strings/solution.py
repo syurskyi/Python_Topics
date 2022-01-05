@@ -19,7 +19,7 @@ You may assume both s and t have the same length.
 """
 
 c_ Solution(object):
-    ___ isIsomorphic(self, s, t):
+    ___ isIsomorphic  s, t):
         """
         :type s: str
         :type t: str

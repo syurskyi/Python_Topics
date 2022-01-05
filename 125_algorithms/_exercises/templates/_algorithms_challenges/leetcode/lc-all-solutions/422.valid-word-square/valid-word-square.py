@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ validWordSquare(self, words):
+  ___ validWordSquare  words):
     """
     :type words: List[str]
     :rtype: bool

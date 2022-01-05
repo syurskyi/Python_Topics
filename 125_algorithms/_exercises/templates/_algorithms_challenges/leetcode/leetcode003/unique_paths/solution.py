@@ -11,7 +11,7 @@ How many possible unique paths are there?
 
 c_ Solution:
     # @return an integer
-    ___ uniquePaths(self, m, n):
+    ___ uniquePaths  m, n):
         t = [[1] * m] * n
         i = j = 0
         ___ i __ r..(n):

@@ -4,7 +4,7 @@ Created on Jun 10, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ sumOfDistancesInTree(self, N, edges):
+    ___ sumOfDistancesInTree  N, edges):
         """
         :type N: int
         :type edges: List[List[int]]
@@ -22,7 +22,7 @@ c_ Solution(object):
         dfs2(0, set(), graph, res, count, N)
         r.. res
     
-    ___ dfs(self, root, visited, graph, res, count):
+    ___ dfs  root, visited, graph, res, count):
         visited.add(root)
         ___ i __ graph[root]:
             __ i n.. __ visited:
@@ -31,7 +31,7 @@ c_ Solution(object):
                 res[root] += res[i]+count[i]
         count[root] += 1
     
-    ___ dfs2(self, root, visited, graph, res, count, N):
+    ___ dfs2  root, visited, graph, res, count, N):
         visited.add(root)
         ___ i __ graph[root]:
             __ i n.. __ visited:
@@ -41,7 +41,7 @@ c_ Solution(object):
     ##########################################################
     ######################## OWN TLE #########################
     ##########################################################
-    ___ sumOfDistancesInTree_own_TLE(self, N, edges):
+    ___ sumOfDistancesInTree_own_TLE  N, edges):
         """
         :type N: int
         :type edges: List[List[int]]
@@ -59,7 +59,7 @@ c_ Solution(object):
             res.a..(bfs(graph, i))
         r.. res
     
-    ___ bfs(self, graph, i):
+    ___ bfs  graph, i):
         res = 0
         queue = [i]
         visited = set([i])

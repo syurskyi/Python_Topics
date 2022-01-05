@@ -9,7 +9,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ mergeKLists(self, lists):
+    ___ mergeKLists  lists):
         """
         :type lists: list[ListNode]
         :rtype: ListNode

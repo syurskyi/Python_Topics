@@ -37,4 +37,4 @@ ___ max_word_value(words):
     key_list = [word ___ word __ words]
     value_list = [calc_word_value(word) ___ word __ words]
     d = d..(z..(key_list, value_list))
-    r.. max(d, key=d.get)
+    r.. m..(d, key=d.get)

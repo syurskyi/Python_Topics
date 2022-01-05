@@ -12,7 +12,7 @@ Could you do it in O(n) time and O(1) space?
 #         self.next = None
 
 c_ Solution(object):
-    ___ isPalindrome(self, head):
+    ___ isPalindrome  head):
         """
         :type head: ListNode
         :rtype: bool

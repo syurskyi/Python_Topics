@@ -27,7 +27,7 @@ return its zigzag level order traversal as:
 c_ Solution:
     # @param root, a tree node
     # @return a list of lists of integers
-    ___ zigzagLevelOrder(self, root):
+    ___ zigzagLevelOrder  root):
         __ root __ N..
             r.. []
         res    # list

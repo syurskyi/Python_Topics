@@ -8,7 +8,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ closestValue(self, root, target):
+    ___ closestValue  root, target):
         """
         :type root: TreeNode
         :type target: float

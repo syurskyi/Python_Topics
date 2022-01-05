@@ -12,7 +12,7 @@ c_ MovingAverage(object):
     windowSum = 0.0
     data = d..([])
 
-  ___ next(self, val):
+  ___ next  val):
     """
     :type val: int
     :rtype: float

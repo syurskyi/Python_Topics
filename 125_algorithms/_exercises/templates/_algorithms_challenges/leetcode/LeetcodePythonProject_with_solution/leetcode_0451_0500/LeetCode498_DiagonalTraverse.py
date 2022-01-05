@@ -5,7 +5,7 @@ Created on May 10, 2017
 '''
 
 c_ Solution(object):
-    ___ findDiagonalOrder(self, matrix):
+    ___ findDiagonalOrder  matrix):
         __ n.. matrix o. n.. matrix[0]: r.. []
         __ l..(matrix) __ 1: r.. matrix[0]
         __ l..(matrix[0]) __ 1: r.. [row[0] ___ row __ matrix]

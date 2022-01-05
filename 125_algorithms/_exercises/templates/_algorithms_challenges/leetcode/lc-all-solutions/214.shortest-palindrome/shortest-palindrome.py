@@ -1,6 +1,6 @@
 c_ Solution(object):
   # brutal force TLE
-  ___ _shortestPalindrome(self, s):
+  ___ _shortestPalindrome  s):
     """
     :type s: str
     :rtype: str
@@ -25,7 +25,7 @@ c_ Solution(object):
         ans = newPal
     r.. ans
 
-  ___ shortestPalindrome(self, s):
+  ___ shortestPalindrome  s):
     r = s[::-1]
     ___ i __ r..(l..(s) + 1):
       __ s.startswith(r[i:]):

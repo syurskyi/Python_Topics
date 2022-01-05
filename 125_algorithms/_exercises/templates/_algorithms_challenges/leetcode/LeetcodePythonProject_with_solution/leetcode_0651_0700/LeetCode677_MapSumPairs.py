@@ -18,7 +18,7 @@ c_ MapSum(object):
         hashmap    # dict
         root = TreeNode(N..)
 
-    ___ insert(self, key, val):
+    ___ insert  key, val):
         """
         :type key: str
         :type val: int
@@ -36,7 +36,7 @@ c_ MapSum(object):
             node = node.children[c]
             node.s.. += val+diff
 
-    ___ s..(self, prefix):
+    ___ s..  prefix):
         """
         :type prefix: str
         :rtype: int

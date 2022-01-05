@@ -7,20 +7,20 @@
 
 c_ Solution(object):
   # recursion
-  ___ _constructMaximumBinaryTree(self, nums):
+  ___ _constructMaximumBinaryTree  nums):
     """
     :type nums: List[int]
     :rtype: TreeNode
     """
     __ nums:
-      pos = nums.index(max(nums))
+      pos = nums.index(m..(nums))
       root = TreeNode(nums[pos])
       root.left = constructMaximumBinaryTree(nums[:pos])
       root.right = constructMaximumBinaryTree(nums[pos + 1:])
       r.. root
 
   # decreasing stack
-  ___ constructMaximumBinaryTree(self, nums):
+  ___ constructMaximumBinaryTree  nums):
     stack    # list
     ___ num __ nums:
       root = TreeNode(num)

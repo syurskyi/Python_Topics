@@ -2,7 +2,7 @@ c_ Solution:
     # @param {string} s
     # @param {string} t
     # @return {boolean}
-    ___ isIsomorphic(self, s, t):
+    ___ isIsomorphic  s, t):
         ___ isomorphic(s,t):
             d    # dict
             ___ k,v __ z..(s,t):

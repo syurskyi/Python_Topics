@@ -7,7 +7,7 @@ ___ cached_property(func):
     """decorator used to cache expensive object attribute lookup"""
 
     @wraps(func)
-    ___ getter(self, *args, **kwargs):
+    ___ getter  *args, **kwargs):
         __ n.. hasattr(cached_property, "cache"):
             cached_property.cache = d..()
         __ func n.. __ cached_property.cache:

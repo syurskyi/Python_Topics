@@ -7,7 +7,7 @@
 c_ Solution:
     # @param intervals, a list of Interval
     # @return a list of Interval
-    ___ merge(self, intervals):
+    ___ merge  intervals):
         __ n.. intervals:
             r.. []
         n = l..(intervals)

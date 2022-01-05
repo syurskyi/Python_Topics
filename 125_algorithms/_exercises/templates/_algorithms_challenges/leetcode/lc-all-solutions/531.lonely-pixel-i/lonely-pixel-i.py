@@ -2,7 +2,7 @@ ____ c.. _______ defaultdict
 
 c_ Solution(object):
   
-  ___ findLonelyPixel(self, picture):
+  ___ findLonelyPixel  picture):
 
       col = defaultdict(i..)
       row = defaultdict(i..)

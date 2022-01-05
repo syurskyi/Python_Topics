@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxCount(self, m, n, ops):
+  ___ maxCount  m, n, ops):
     """
     :type m: int
     :type n: int

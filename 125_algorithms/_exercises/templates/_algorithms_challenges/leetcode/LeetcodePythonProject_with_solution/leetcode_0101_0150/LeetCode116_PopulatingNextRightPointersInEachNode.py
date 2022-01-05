@@ -15,7 +15,7 @@ c_ TreeLinkNode:
 c_ Solution:
     # @param root, a tree link node
     # @return nothing
-    ___ connect(self, root):
+    ___ connect  root):
         lastHead = root
         lastCurrent = N..
         currentHead = N..

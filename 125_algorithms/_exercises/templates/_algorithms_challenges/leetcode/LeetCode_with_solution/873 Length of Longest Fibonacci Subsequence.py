@@ -39,7 +39,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ lenLongestFibSubseq(self, A: List[i..]) __ i..:
+    ___ lenLongestFibSubseq  A: List[i..]) __ i..:
             """
             F[i][j] longest fib subsequence ending at A[i] with 2nd last element
             A[j]
@@ -66,15 +66,15 @@ c_ Solution:
                     Ak = A[i] + A[j]
                     __ Ak __ idxes:
                         k = idxes[Ak]
-                        F[k][i] = max(F[k][i], F[i][j] + 1)
+                        F[k][i] = m..(F[k][i], F[i][j] + 1)
 
-            r.. max(
+            r.. m..(
                 F[i][j] __ F[i][j] > 2 ____ 0
                 ___ i __ r..(n)
                 ___ j __ r..(i)
             )
 
-    ___ lenLongestFibSubseq_TLE(self, A: List[i..]) __ i..:
+    ___ lenLongestFibSubseq_TLE  A: List[i..]) __ i..:
         """
         F[i][j] longest fib subsequence ending at A[i] with 2nd last element
         A[j]
@@ -96,9 +96,9 @@ c_ Solution:
             ___ i __ r..(k):
                 ___ j __ r..(i):
                     __ A[i] + A[j] __ A[k]:
-                        F[k][i] = max(F[k][i], F[i][j] + 1)
+                        F[k][i] = m..(F[k][i], F[i][j] + 1)
 
-        r.. max(
+        r.. m..(
             F[i][j] __ F[i][j] > 2 ____ 0
             ___ i __ r..(n)
             ___ j __ r..(i)

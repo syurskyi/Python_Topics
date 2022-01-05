@@ -2,7 +2,7 @@ _______ bisect
 
 
 c_ Solution(object):
-  ___ countSmaller(self, nums):
+  ___ countSmaller  nums):
     """
     :type nums: List[int]
     :rtype: List[int]

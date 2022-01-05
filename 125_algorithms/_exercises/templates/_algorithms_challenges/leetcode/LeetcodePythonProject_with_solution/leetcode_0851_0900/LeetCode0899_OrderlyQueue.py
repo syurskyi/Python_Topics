@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ orderlyQueue(self, S, K):
+    ___ orderlyQueue  S, K):
         """
         :type S: str
         :type K: int

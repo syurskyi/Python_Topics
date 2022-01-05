@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ constructRectangle(self, area):
+  ___ constructRectangle  area):
     """
     :type area: int
     :rtype: List[int]

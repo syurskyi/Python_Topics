@@ -23,7 +23,7 @@ Length of the array will not exceed 10^4.
 
 
 c_ Solution:
-    ___ totalHammingDistance(self, nums):
+    ___ totalHammingDistance  nums):
         """
         Brute force, check every combination O(n^2 * b)
 

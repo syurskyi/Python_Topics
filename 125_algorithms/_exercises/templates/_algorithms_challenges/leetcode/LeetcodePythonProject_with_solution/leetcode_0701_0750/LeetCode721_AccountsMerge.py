@@ -4,7 +4,7 @@ Created on Feb 12, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ accountsMerge(self, accounts):
+    ___ accountsMerge  accounts):
         """
         :type accounts: List[List[str]]
         :rtype: List[List[str]]
@@ -33,7 +33,7 @@ c_ Solution(object):
             res.a..(emails)
         r.. res
     
-    ___ find(self, s, hashmap):
+    ___ find  s, hashmap):
         r.. s __ hashmap[s] __ s ____ find(hashmap[s], hashmap)
     
     ___ test

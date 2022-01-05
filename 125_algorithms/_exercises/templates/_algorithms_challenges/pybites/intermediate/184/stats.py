@@ -13,7 +13,7 @@ __ n.. os.path.isfile(DATA):
 
 c_ BiteStats:
 
-    ___ _load_data(self, data) __ l..:
+    ___ _load_data  data) __ l..:
         w__ open(data) __ csv_file:
             csv_dict = [row ___ row __ DictReader(csv_file)]
         r.. csv_dict
@@ -57,7 +57,7 @@ c_ BiteStats:
         popular_bite = defaultdict(i..)
         ___ row __ rows:
             popular_bite[row["bite"]] += 1
-        r.. max(popular_bite, key=popular_bite.get)
+        r.. m..(popular_bite, key=popular_bite.get)
 
     $
     ___ top_user_by_bites_completed(self) __ s..:

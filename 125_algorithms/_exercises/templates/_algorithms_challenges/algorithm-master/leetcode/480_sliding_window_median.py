@@ -14,7 +14,7 @@ c_ HashHeapq:
     ___ __bool__
         r.. bool(__heap)
 
-    ___ push(self, val):
+    ___ push  val):
         heapq.heappush(__heap, val)
 
     ___ pop
@@ -23,7 +23,7 @@ c_ HashHeapq:
 
         r.. heapq.heappop(__heap)
 
-    ___ remove(self, val):
+    ___ remove  val):
         __ n.. __heap:
             r..
 
@@ -52,7 +52,7 @@ c_ HashHeapq:
 
 
 c_ Solution:
-    ___ medianSlidingWindow(self, nums, k):
+    ___ medianSlidingWindow  nums, k):
         """
         :type nums: List[int]
         :type k: int

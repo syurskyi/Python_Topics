@@ -13,7 +13,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ closestKValues(self, root, target, k):
+    ___ closestKValues  root, target, k):
         """
         consider the predecessors and successors of the closest node to the target
         Like merge in the merge sort, compare and pick the closest one to the target and put it to the result list
@@ -31,7 +31,7 @@ c_ Solution(object):
         successors(root, target, suc)
         r.. merge(target, k, pre, suc)
 
-    ___ predecessors(self, root, target, stk):
+    ___ predecessors  root, target, stk):
         __ n.. root:
             r..
 
@@ -40,7 +40,7 @@ c_ Solution(object):
             stk.a..(root.val)
             predecessors(root.right, target, stk)
 
-    ___ successors(self, root, target, stk):
+    ___ successors  root, target, stk):
         __ n.. root:
             r..
 
@@ -49,7 +49,7 @@ c_ Solution(object):
             stk.a..(root.val)
             successors(root.left, target, stk)
 
-    ___ merge(self, target, k, pre, suc):
+    ___ merge  target, k, pre, suc):
         ret    # list
         w.... l..(ret) < k:
             __ n.. pre:

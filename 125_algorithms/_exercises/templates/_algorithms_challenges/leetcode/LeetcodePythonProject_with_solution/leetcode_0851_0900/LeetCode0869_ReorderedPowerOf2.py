@@ -4,7 +4,7 @@ Created on Sep 30, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ reorderedPowerOf2(self, N):
+    ___ reorderedPowerOf2  N):
         """
         :type N: int
         :rtype: bool
@@ -19,7 +19,7 @@ c_ Solution(object):
                 r.. T..
         r.. F..
     
-    ___ matches(self, n, num):
+    ___ matches  n, num):
         hashmap    # dict
         ___ c __ s..(n):
             __ c __ hashmap:
@@ -35,7 +35,7 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ getNums(self, length):
+    ___ getNums  length):
         res    # list
         num = 2
         w.... l..(s..(num)) < length:

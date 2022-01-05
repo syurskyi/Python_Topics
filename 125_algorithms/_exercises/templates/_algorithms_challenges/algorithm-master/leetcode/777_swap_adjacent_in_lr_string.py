@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ canTransform(self, start, end):
+    ___ canTransform  start, end):
         """
         :type start: str
         :type end: str

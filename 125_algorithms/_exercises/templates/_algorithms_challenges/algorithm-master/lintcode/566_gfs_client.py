@@ -21,7 +21,7 @@ c_ GFSClient(BaseGFSClient):
     @param: filename: a file name
     @return: conetent of the file given from GFS
     """
-    ___ read(self, filename):
+    ___ read  filename):
         __ filename n.. __ chunk_num:
             r..
         i, content = 0, ''
@@ -35,7 +35,7 @@ c_ GFSClient(BaseGFSClient):
     @param: content: a string
     @return: nothing
     """
-    ___ write(self, filename, content):
+    ___ write  filename, content):
         i, j, n = 0, 0, l..(content)
         w.... j < n:
             writeChunk(filename, i, content[j : j + chunk_size])

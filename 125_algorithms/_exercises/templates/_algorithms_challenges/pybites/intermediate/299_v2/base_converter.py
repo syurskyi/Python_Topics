@@ -19,7 +19,7 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
         remainder = number % base
         number //= base
         __ remainder >= 10:
-            remainder = chr(remainder - 10  + ord('A'))
+            remainder = chr(remainder - 10  + o..('A'))
 
         values.a..(s..(remainder))
 

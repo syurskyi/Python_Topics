@@ -21,12 +21,12 @@ c_ Phone(object):
             subscriber_number()
         )
 
-    ___ _clean(self, number):
+    ___ _clean  number):
         r.. _normalize(
             __.sub(r'[^\d]', '', number)
         )
 
-    ___ _normalize(self, number):
+    ___ _normalize  number):
         valid = l..(number) __ 10 o. \
             l..(number) __ 11 a.. number.startswith('1')
 

@@ -49,7 +49,7 @@ c_ StockSpanner:
         """
         stk    # list   # [(price, span)]
 
-    ___ next(self, price: i..) __ i..:
+    ___ next  price: i..) __ i..:
         cur_span = 1
         w.... stk a.. stk[-1][0] <= price:
             _, span = stk.pop()

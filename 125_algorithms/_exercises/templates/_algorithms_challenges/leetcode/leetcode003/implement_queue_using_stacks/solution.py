@@ -24,7 +24,7 @@ c_ Queue(object):
         stack1    # list  # Push
         stack2    # list  # Pop
 
-    ___ push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: nothing

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findSubsequences(self, nums):
+  ___ findSubsequences  nums):
     """
     :type nums: List[int]
     :rtype: List[List[int]]

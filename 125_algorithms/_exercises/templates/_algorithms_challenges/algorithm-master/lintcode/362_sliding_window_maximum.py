@@ -6,7 +6,7 @@ c_ HashHeapq:
         heap    # list
         deleted    # dict
 
-    ___ push(self, val):
+    ___ push  val):
         heappush(heap, val)
 
     ___ pop
@@ -14,7 +14,7 @@ c_ HashHeapq:
             r..
         heappop(heap)
 
-    ___ remove(self, val):
+    ___ remove  val):
         __ is_empty
             r..
         deleted[val] = deleted.get(val, 0) + 1
@@ -32,7 +32,7 @@ c_ HashHeapq:
 
 
 c_ Solution:
-    ___ maxSlidingWindow(self, A, k):
+    ___ maxSlidingWindow  A, k):
         """
         :type A: List[int]
         :type k: int
@@ -63,11 +63,11 @@ c_ Solution:
     @param: k: An integer
     @return: The maximum number inside the window at each moving
     """
-    ___ maxSlidingWindow(self, A, k):
+    ___ maxSlidingWindow  A, k):
         ans    # list
         __ n.. A o. l..(A) < 1:
             r.. ans
         ___ r __ r..(l..(A)):
             __ r >= k - 1:
-                ans.a..(max(A[r - k + 1 : r + 1]))
+                ans.a..(m..(A[r - k + 1 : r + 1]))
         r.. ans

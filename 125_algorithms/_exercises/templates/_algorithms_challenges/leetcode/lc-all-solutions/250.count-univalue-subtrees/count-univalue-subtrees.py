@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ countUnivalSubtrees(self, root):
+  ___ countUnivalSubtrees  root):
     """
     :type root: TreeNode
     :rtype: int

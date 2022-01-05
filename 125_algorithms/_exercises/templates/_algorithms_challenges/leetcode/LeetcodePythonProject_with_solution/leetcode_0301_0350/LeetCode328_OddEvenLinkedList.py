@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ oddEvenList(self, head):
+    ___ oddEvenList  head):
         __ n.. head: r.. head
         node1 = head
         prev1 = head

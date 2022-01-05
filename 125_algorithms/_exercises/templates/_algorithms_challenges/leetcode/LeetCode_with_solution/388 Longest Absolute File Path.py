@@ -40,7 +40,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ lengthLongestPath(self, input):
+    ___ lengthLongestPath  input):
         """
         :type input: str
         :rtype: int
@@ -59,7 +59,7 @@ c_ Solution(object):
                 F[idx] = prev + 1 + l..(e)  # reset
 
             __ '.' __ elt:
-                gmax = max(gmax, F[idx])
+                gmax = m..(gmax, F[idx])
 
         r.. gmax
 

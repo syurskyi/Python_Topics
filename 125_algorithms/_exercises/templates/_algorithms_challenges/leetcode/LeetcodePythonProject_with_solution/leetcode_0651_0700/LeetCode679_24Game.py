@@ -4,7 +4,7 @@ Created on Oct 19, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ judgePoint24(self, nums):
+    ___ judgePoint24  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -12,7 +12,7 @@ c_ Solution(object):
         hashmap    # dict
         r.. helper(nums, hashmap)
     
-    ___ helper(self, nums, hashmap):
+    ___ helper  nums, hashmap):
         __ l..(nums) __ 1:
             r.. abs(nums[0]-24) <= 0.0001
         nums = s..(nums)

@@ -13,7 +13,7 @@ Return
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ partition(self, s):
+    ___ partition  s):
         """
         dfs
         :param s: string
@@ -23,7 +23,7 @@ c_ Solution:
         get_partition(s, [], result)
         r.. result
 
-    ___ get_partition(self, seq, cur, result):
+    ___ get_partition  seq, cur, result):
         __ n.. seq:
             result.a..(cur)
 
@@ -33,10 +33,10 @@ c_ Solution:
                 get_partition(seq[i+1:], cur+[seq[:i+1]], result)
 
 
-    ___ is_palindrome(self, s):
+    ___ is_palindrome  s):
         # O(n)
         # return s == reversed(s)  # error, need to use ''.join(reversed(s))
         r.. s __ s[::-1]
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().partition("aab")__[['a', 'a', 'b'], ['aa', 'b']]

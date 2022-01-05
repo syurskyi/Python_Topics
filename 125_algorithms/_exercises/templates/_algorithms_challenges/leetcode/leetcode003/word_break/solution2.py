@@ -10,7 +10,7 @@ Return true because "leetcode" can be segmented as "leet code".
 """
 
 c_ Solution(object):
-    ___ wordBreak(self, s, wordDict):
+    ___ wordBreak  s, wordDict):
         """
         :type s: str
         :type wordDict: Set[str]
@@ -20,7 +20,7 @@ c_ Solution(object):
         t = [N.. ___ i __ r..(n)]
         r.. word_break_aux(s, wordDict, n - 1, t)
 
-    ___ word_break_aux(self, s, wordDict, i, t):
+    ___ word_break_aux  s, wordDict, i, t):
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """

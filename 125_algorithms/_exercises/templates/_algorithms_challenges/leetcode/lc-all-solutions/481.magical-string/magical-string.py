@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ magicalString(self, n):
+  ___ magicalString  n):
     """
     :type n: int
     :rtype: int

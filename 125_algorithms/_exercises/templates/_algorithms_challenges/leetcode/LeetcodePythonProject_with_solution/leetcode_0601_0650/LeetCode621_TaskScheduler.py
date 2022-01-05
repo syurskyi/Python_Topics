@@ -4,7 +4,7 @@ Created on Sep 9, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ leastInterval(self, tasks, n):
+    ___ leastInterval  tasks, n):
         """
         :type tasks: List[str]
         :type n: int
@@ -12,14 +12,14 @@ c_ Solution(object):
         """
         arr = [0]*26
         ___ t __ tasks:
-            arr[ord(t)-ord('A')] += 1
+            arr[o..(t)-o..('A')] += 1
         arr.s..()
         i = 25
         w.... i >= 0 a.. arr[i]__arr[-1]:
             i -= 1
-        r.. max(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
+        r.. m..(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
     
-    ___ leastInterval_own(self, tasks, n):
+    ___ leastInterval_own  tasks, n):
         """
         :type tasks: List[str]
         :type n: int

@@ -4,7 +4,7 @@ Created on Oct 15, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ reachableNodes(self, edges, M, N):
+    ___ reachableNodes  edges, M, N):
         """
         :type edges: List[List[int]]
         :type M: int

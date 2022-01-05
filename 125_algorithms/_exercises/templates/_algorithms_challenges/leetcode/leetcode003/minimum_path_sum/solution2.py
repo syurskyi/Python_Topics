@@ -8,13 +8,13 @@ Note: You can only move either down or right at any point in time.
 c_ Solution:
     # @param grid, a list of lists of integers
     # @return an integer
-    ___ minPathSum(self, grid):
+    ___ minPathSum  grid):
         n = l..(grid)
         m = l..(grid[0])
         t = [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
         r.. min_path_sum_aux(grid, m - 1, n - 1, t)
 
-    ___ min_path_sum_aux(self, grid, x, y, t):
+    ___ min_path_sum_aux  grid, x, y, t):
         __ x __ 0 a.. y __ 0:
             r.. grid[y][x]
         ____ t[y][x] != -1:

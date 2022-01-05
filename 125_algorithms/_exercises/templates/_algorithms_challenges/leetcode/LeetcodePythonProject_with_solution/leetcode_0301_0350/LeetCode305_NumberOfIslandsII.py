@@ -4,7 +4,7 @@ Created on Mar 11, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ numIslands2(self, m, n, positions):
+    ___ numIslands2  m, n, positions):
         res    # list
         roots = [-1]*(m*n)
         grid = [[F..]*n ___ _ __ r..(m)]
@@ -23,7 +23,7 @@ c_ Solution(object):
             res.a..(count)
         r.. res
     
-    ___ getRoot(self, roots, ind):
+    ___ getRoot  roots, ind):
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind

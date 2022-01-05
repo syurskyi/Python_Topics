@@ -36,7 +36,7 @@ ___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
     #highest_cap = 0
-    highest_cap_stock = max(data, key=l.... counter: _cap_str_to_mln_float(counter['cap']))
+    highest_cap_stock = m..(data, key=l.... counter: _cap_str_to_mln_float(counter['cap']))
     #for counter in data:
     #    if _cap_str_to_mln_float(counter['cap']) > highest_cap:
     #        highest_cap_stock = counter['symbol']

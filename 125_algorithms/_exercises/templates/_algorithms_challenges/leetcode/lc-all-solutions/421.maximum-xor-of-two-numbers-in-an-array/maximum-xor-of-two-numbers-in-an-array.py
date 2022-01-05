@@ -10,7 +10,7 @@ count = 0
 
 
 c_ Solution(object):
-  ___ findMaximumXOR(self, nums):
+  ___ findMaximumXOR  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
       __ n.. root:
         r..
       __ mask __ 0x00:
-        ans = max(ans, root.word ^ num)
+        ans = m..(ans, root.word ^ num)
         r..
       __ mask & num:
         __ root.zero:

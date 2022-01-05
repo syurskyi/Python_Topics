@@ -5,7 +5,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ searchMatrix(self, matrix, target):
+    ___ searchMatrix  matrix, target):
         """
         :type matrix: list[list[int]]
         :type target: int
@@ -47,7 +47,7 @@ else:
     need to check `y + 1`
 """
 c_ Solution:
-    ___ searchMatrix(self, matrix, target):
+    ___ searchMatrix  matrix, target):
         """
         :type matrix: list[list[int]]
         :type target: int

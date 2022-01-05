@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ checkRecord(self, s):
+  ___ checkRecord  s):
     """
     :type s: str
     :rtype: bool

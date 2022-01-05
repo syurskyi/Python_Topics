@@ -21,7 +21,7 @@ c_ TreeNode:
 
 c_ Solution:
     global_max = -1<<31
-    ___ maxPathSum(self, root):
+    ___ maxPathSum  root):
         """
         :param root: TreeNode
         :return: integer
@@ -30,7 +30,7 @@ c_ Solution:
         # global_max can in ANY path in the tree
         r.. global_max
 
-    ___ get_max_component(self, root):
+    ___ get_max_component  root):
         """
         Algorithm:
         dfs
@@ -57,11 +57,11 @@ c_ Solution:
         right_max_component = get_max_component(root.right)
 
         # update global max
-        current_max_sum = max(root.val, root.val+left_max_component, root.val+right_max_component, root.val+left_max_component+right_max_component)  # four situations
-        global_max = max(global_max, current_max_sum)
+        current_max_sum = m..(root.val, root.val+left_max_component, root.val+right_max_component, root.val+left_max_component+right_max_component)  # four situations
+        global_max = m..(global_max, current_max_sum)
 
         # return value for upper layer to calculate the current_max_sum
-        r.. max(root.val, root.val+left_max_component, root.val+right_max_component)  # excluding arch (i.e. root.val+left_max_component+right_max_component)
+        r.. m..(root.val, root.val+left_max_component, root.val+right_max_component)  # excluding arch (i.e. root.val+left_max_component+right_max_component)
 
 
 

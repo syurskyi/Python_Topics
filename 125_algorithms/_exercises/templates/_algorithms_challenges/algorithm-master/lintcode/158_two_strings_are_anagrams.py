@@ -4,7 +4,7 @@ c_ Solution:
     @param b: The second string
     @return true or false
     """
-    ___ anagram(self, s, t):
+    ___ anagram  s, t):
         __ s __ '' a.. t __ '':
             r.. T..
         __ n.. s o. n.. t:

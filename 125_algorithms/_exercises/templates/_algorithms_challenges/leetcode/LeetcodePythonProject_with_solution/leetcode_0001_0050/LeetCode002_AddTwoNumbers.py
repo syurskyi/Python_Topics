@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ addTwoNumbers(self, l1, l2):
+    ___ addTwoNumbers  l1, l2):
         """
         :type l1: ListNode
         :type l2: ListNode

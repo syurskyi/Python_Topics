@@ -45,7 +45,7 @@ c_ NumMatrix(object):
             ___ j __ xrange(1, n+1):
                 F[i][j] = F[i-1][j]+F[i][j-1]-F[i-1][j-1]+matrix[i-1][j-1]
 
-    ___ sumRegion(self, row1, col1, row2, col2):
+    ___ sumRegion  row1, col1, row2, col2):
         """
         sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
         """

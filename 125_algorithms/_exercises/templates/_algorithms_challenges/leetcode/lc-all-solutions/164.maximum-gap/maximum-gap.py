@@ -1,12 +1,12 @@
 c_ Solution(object):
-  ___ maximumGap(self, nums):
+  ___ maximumGap  nums):
     """
     :type nums: List[int]
     :rtype: int
     """
     __ l..(nums) < 2:
       r.. 0
-    a, b = m..(nums), max(nums)
+    a, b = m..(nums), m..(nums)
     __ a __ b:
       r.. 0
     ans = 0
@@ -23,9 +23,9 @@ c_ Solution(object):
       __ bucketMax[index] __ N..
         bucketMax[index] = num
       ____:
-        bucketMax[index] = max(bucketMax[index], num)
+        bucketMax[index] = m..(bucketMax[index], num)
     bucketMin = [b ___ b __ bucketMin __ b __ n.. N..]
     bucketMax = [b ___ b __ bucketMax __ b __ n.. N..]
     ___ i __ r..(0, l..(bucketMin) - 1):
-      ans = max(ans, bucketMin[i + 1] - bucketMax[i])
+      ans = m..(ans, bucketMin[i + 1] - bucketMax[i])
     r.. ans

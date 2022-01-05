@@ -60,12 +60,12 @@ ___ possible_rect(quartet):
 # validate path between two corners
 ___ path(c1, c2, input):
     __ c1.i __ c2.i:
-        ___ j __ r..(m..(c1.j + 1, c2.j + 1), max(c1.j, c2.j)):
+        ___ j __ r..(m..(c1.j + 1, c2.j + 1), m..(c1.j, c2.j)):
             __ input[c1.i][j] != "-" a.. input[c1.i][j] != "+":
                 r.. F..
         r.. T..
     ____ c1.j __ c2.j:
-        ___ i __ r..(m..(c1.i + 1, c2.i + 1), max(c1.i, c2.i)):
+        ___ i __ r..(m..(c1.i + 1, c2.i + 1), m..(c1.i, c2.i)):
             __ input[i][c1.j] != "|" a.. input[i][c1.j] != "+":
                 r.. F..
         r.. T..

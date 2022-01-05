@@ -31,18 +31,18 @@ ___ calculate_gc_content_1st_solution(sequence):
 
     ___ seq __ sequence:
         bases_dict[seq] = T..
-        try:
+        ___
             counts[seq] += 1
-        except KeyError:
+        ______ KeyError:
             counts[seq] = 1
     ___ k,v __ bases_dict.i..:
         __ v __ F..:
             counts[k] = 0
 
     result = float("{0:.2f}".f..(((counts['g'] + counts['c']) / (counts['a'] + counts['c'] + counts['g'] + counts['t'])) * 100))
-    try:
+    ___
         r.. result
-    except:
+    ______:
         r.. 0
 
 ___ calculate_gc_content_2nd_solution(sequence):

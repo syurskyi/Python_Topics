@@ -4,7 +4,7 @@ Created on Sep 6, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ canPlaceFlowers(self, flowerbed, n):
+    ___ canPlaceFlowers  flowerbed, n):
         """
         :type flowerbed: List[int]
         :type n: int

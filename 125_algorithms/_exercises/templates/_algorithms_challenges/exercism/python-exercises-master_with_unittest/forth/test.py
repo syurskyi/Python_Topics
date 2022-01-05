@@ -31,12 +31,12 @@ c_ ForthAdditionTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -58,12 +58,12 @@ c_ ForthSubtractionTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -85,12 +85,12 @@ c_ ForthMultiplicationTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -122,12 +122,12 @@ c_ ForthDivisionTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -161,12 +161,12 @@ c_ ForthDupTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -188,12 +188,12 @@ c_ ForthDropTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -220,12 +220,12 @@ c_ ForthSwapTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -252,12 +252,12 @@ c_ ForthOverTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 
@@ -315,12 +315,12 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 

@@ -5,7 +5,7 @@ Created on Feb 12, 2017
 '''
 
 c_ Solution(object):
-    ___ isOneEditDistance(self, s, t):
+    ___ isOneEditDistance  s, t):
         """
         :type s: str
         :type t: str

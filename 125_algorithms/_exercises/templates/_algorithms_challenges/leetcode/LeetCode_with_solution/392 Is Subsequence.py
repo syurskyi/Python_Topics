@@ -21,7 +21,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ isSubsequence(self, s, t):
+    ___ isSubsequence  s, t):
         """
         Greedy matching
         :type s: str

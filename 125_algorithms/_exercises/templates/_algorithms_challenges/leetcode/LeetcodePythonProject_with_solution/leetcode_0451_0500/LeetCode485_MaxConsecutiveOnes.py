@@ -5,7 +5,7 @@ Created on May 3, 2017
 '''
 
 c_ Solution(object):
-    ___ findMaxConsecutiveOnes(self, nums):
+    ___ findMaxConsecutiveOnes  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -14,9 +14,9 @@ c_ Solution(object):
         maxLen = 0
         ___ i, num __ e..(nums):
             __ num __ 0:
-                maxLen = max(maxLen, i-prev-1)
+                maxLen = m..(maxLen, i-prev-1)
                 prev = i
-        maxLen = max(maxLen, l..(nums)-prev-1)
+        maxLen = m..(maxLen, l..(nums)-prev-1)
         r.. maxLen
     
     ___ test

@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ longestConsecutive(self, root):
+  ___ longestConsecutive  root):
     """
     :type root: TreeNode
     :rtype: int
@@ -19,13 +19,13 @@ c_ Solution(object):
       left, leftInc, leftDec, leftMax = dfs(root.left)
       right, rightInc, rightDec, rightMax = dfs(root.right)
       __ root.val + 1 __ left:
-        inc = max(leftInc + 1, inc)
+        inc = m..(leftInc + 1, inc)
       __ root.val - 1 __ left:
-        dec = max(leftDec + 1, dec)
+        dec = m..(leftDec + 1, dec)
       __ root.val + 1 __ right:
-        inc = max(rightInc + 1, inc)
+        inc = m..(rightInc + 1, inc)
       __ root.val - 1 __ right:
-        dec = max(rightDec + 1, dec)
-      r.. root.val, inc, dec, max(inc + dec - 1, leftMax, rightMax, inc, dec)
+        dec = m..(rightDec + 1, dec)
+      r.. root.val, inc, dec, m..(inc + dec - 1, leftMax, rightMax, inc, dec)
 
     r.. dfs(root)[3]

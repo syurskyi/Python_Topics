@@ -5,7 +5,7 @@ Created on Mar 21, 2017
 '''
 
 c_ Solution(object):
-    ___ intersection(self, nums1, nums2):
+    ___ intersection  nums1, nums2):
         s1 = set(nums1)
         s2 = set(nums2)
         result    # list

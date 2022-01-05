@@ -17,7 +17,7 @@ c_ Creature:
 
 c_ Wizard(Creature):
 
-    ___ attack(self, creature):
+    ___ attack  creature):
         print("The wizard {} attacks {}!".f..(
             name, creature.name
         ))

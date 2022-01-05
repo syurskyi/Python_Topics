@@ -36,24 +36,24 @@ c_ Solution:
     ___ - ):
         ret = 0
 
-    ___ maxAncestorDiff(self, root: TreeNode) __ i..:
+    ___ maxAncestorDiff  root: TreeNode) __ i..:
         """
         dfs return min and max
         """
         dfs(root)
         r.. ret
 
-    ___ dfs(self, node):
+    ___ dfs  node):
         __ n.. node:
             r.. float("inf"), -float("inf")
 
         lmin, lmax = dfs(node.left)
         rmin, rmax = dfs(node.right)
         mini = m..(lmin, rmin)
-        maxa = max(lmax, rmax)
+        maxa = m..(lmax, rmax)
         __ mini != float("inf"):
-            ret = max(ret, abs(mini - node.val))
+            ret = m..(ret, abs(mini - node.val))
         __ maxa != -float("inf"):
-            ret = max(ret, abs(maxa - node.val))
+            ret = m..(ret, abs(maxa - node.val))
 
-        r.. m..(mini, node.val), max(maxa, node.val)
+        r.. m..(mini, node.val), m..(maxa, node.val)

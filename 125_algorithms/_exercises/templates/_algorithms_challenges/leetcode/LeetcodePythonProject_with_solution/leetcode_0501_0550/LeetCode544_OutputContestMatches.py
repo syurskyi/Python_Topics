@@ -5,7 +5,7 @@ Created on Aug 20, 2017
 '''
 
 c_ Solution(object):
-    ___ findContestMatch(self, n):
+    ___ findContestMatch  n):
         """
         :type n: int
         :rtype: str
@@ -13,7 +13,7 @@ c_ Solution(object):
         l = l..(r..(1, n+1))
         r.. helper(l)
     
-    ___ helper(self, l):
+    ___ helper  l):
         __ l..(l) <= 2:
             r.. '(%s,%s)' % (l[0], l[1])
         l0    # list

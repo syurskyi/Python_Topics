@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ combine(self, n, k):
+  ___ combine  n, k):
     __ k __ 1:
       r.. [[i] ___ i __ r..(1, n + 1)]
     ____ k __ n:

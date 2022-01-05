@@ -5,7 +5,7 @@ Created on Aug 24, 2017
 '''
 
 c_ Solution(object):
-    ___ leastBricks(self, wall):
+    ___ leastBricks  wall):
         """
         :type wall: List[List[int]]
         :rtype: int

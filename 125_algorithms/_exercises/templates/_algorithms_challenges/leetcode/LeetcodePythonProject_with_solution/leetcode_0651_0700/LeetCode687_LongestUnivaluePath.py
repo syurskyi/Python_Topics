@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ longestUnivaluePath(self, root):
+    ___ longestUnivaluePath  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
         helper(root)
         r.. maxLen
     
-    ___ helper(self, root):
+    ___ helper  root):
         __ n.. root: r.. 0
         left = helper(root.left)
         right = helper(root.right)
@@ -32,8 +32,8 @@ c_ Solution(object):
             right += 1
         ____:
             right = 0
-        maxLen = max(maxLen, left+right)
-        r.. max(left, right)
+        maxLen = m..(maxLen, left+right)
+        r.. m..(left, right)
     
     ___ test
         testCases = [

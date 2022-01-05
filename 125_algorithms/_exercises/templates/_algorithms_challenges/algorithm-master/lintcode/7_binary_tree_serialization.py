@@ -10,7 +10,7 @@ class TreeNode:
 c_ Solution:
     EMPTY = '#'
 
-    ___ serialize(self, root):
+    ___ serialize  root):
         """Encodes a tree to a single string.
         :type root: TreeNode
         :rtype: str
@@ -36,7 +36,7 @@ c_ Solution:
 
         r.. TEMPLATE.f..(','.j..(vals))
 
-    ___ deserialize(self, data):
+    ___ deserialize  data):
         """Decodes your encoded data to tree.
         :type data: str
         :rtype: TreeNode

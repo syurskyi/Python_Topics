@@ -26,7 +26,7 @@ c_ Calculator:
             num_stack.insert(0, evaluate(operator, num1, num2))
         r.. num_stack.pop(0)
 
-    ___ evaluate(self, operator, num1, num2):
+    ___ evaluate  operator, num1, num2):
         r.. eval(s..(num1) + operator + s..(num2))
 
     ___ num_stack

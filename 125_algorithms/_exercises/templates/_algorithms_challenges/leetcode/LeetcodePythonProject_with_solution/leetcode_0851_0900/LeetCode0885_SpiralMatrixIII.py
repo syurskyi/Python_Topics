@@ -4,7 +4,7 @@ Created on Oct 16, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ spiralMatrixIII(self, R, C, r0, c0):
+    ___ spiralMatrixIII  R, C, r0, c0):
         """
         :type R: int
         :type C: int
@@ -22,7 +22,7 @@ c_ Solution(object):
             dx, dy, n = dy, -dx, n+1
         r.. res
     
-    ___ spiralMatrixIII_own(self, R, C, r0, c0):
+    ___ spiralMatrixIII_own  R, C, r0, c0):
         """
         :type R: int
         :type C: int
@@ -46,7 +46,7 @@ c_ Solution(object):
             length += 1
         r.. res
     
-    ___ isInRange(self, pos, R, C):
+    ___ isInRange  pos, R, C):
         r.. 0 <= pos[0] < R a.. 0 <= pos[1] < C
     
     ___ test

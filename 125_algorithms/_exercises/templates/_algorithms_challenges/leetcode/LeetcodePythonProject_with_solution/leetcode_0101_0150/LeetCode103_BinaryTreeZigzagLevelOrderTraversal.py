@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ zigzagLevelOrder(self, root):
+    ___ zigzagLevelOrder  root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]

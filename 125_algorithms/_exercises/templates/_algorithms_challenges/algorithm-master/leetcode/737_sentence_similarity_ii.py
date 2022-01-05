@@ -20,7 +20,7 @@ c_ Solution:
     """
     UnionFind
     """
-    ___ areSentencesSimilarTwo(self, words1, words2, pairs):
+    ___ areSentencesSimilarTwo  words1, words2, pairs):
         """
         :type words1: List[str]
         :type words2: List[str]
@@ -46,7 +46,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ union(self, nodes, a, b):
+    ___ union  nodes, a, b):
         _a = find(nodes, a)
         _b = find(nodes, b)
 
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. _b
 
-    ___ find(self, nodes, a):
+    ___ find  nodes, a):
         __ a n.. __ nodes:
             nodes[a] = a
             r.. a
@@ -73,7 +73,7 @@ c_ Solution2:
     """
     DFS
     """
-    ___ areSentencesSimilarTwo(self, words1, words2, pairs):
+    ___ areSentencesSimilarTwo  words1, words2, pairs):
         """
         :type words1: List[str]
         :type words2: List[str]
@@ -98,7 +98,7 @@ c_ Solution2:
 
         r.. T..
 
-    ___ dfs(self, start, end, simils, path):
+    ___ dfs  start, end, simils, path):
         # check start and end are connected
         __ start __ end:
             r.. T..

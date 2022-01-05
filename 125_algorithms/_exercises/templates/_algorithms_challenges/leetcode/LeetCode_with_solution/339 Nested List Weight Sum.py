@@ -36,7 +36,7 @@ c_ Solution(object):
     ___ - ):
         s.. = 0
 
-    ___ depthSum(self, nestedList):
+    ___ depthSum  nestedList):
         """
         NestedInteger is  a union type
         :type nestedList: List[NestedInteger]
@@ -47,7 +47,7 @@ c_ Solution(object):
 
         r.. s..
 
-    ___ dfs(self, ni, depth):
+    ___ dfs  ni, depth):
         __ ni.isInteger
             s.. += ni.getInteger() * depth
         ____:

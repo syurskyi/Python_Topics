@@ -21,7 +21,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ countSubstrings(self, s):
+    ___ countSubstrings  s):
         """
         for every s[i:j], check whether it is a palindrome
         O(n^2 * n)

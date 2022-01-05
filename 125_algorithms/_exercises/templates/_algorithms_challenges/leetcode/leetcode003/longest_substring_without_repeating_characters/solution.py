@@ -1,6 +1,6 @@
 c_ Solution:
     # @return an integer
-    ___ lengthOfLongestSubstring(self, s):
+    ___ lengthOfLongestSubstring  s):
         res = 0
         cur = 0
         d    # dict
@@ -10,5 +10,5 @@ c_ Solution:
             ____:
                 cur = m..(i - d[c], cur + 1)
             d[c] = i
-            res = max(res, cur)
+            res = m..(res, cur)
         r.. res

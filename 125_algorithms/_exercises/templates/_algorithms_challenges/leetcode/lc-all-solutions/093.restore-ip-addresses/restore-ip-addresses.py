@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ restoreIpAddresses(self, s):
+  ___ restoreIpAddresses  s):
     """
     :type s: str
     :rtype: List[str]

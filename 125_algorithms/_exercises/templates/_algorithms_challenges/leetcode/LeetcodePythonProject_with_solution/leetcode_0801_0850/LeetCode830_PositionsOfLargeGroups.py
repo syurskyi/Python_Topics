@@ -4,7 +4,7 @@ Created on May 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ largeGroupPositions(self, S):
+    ___ largeGroupPositions  S):
         """
         :type S: str
         :rtype: List[List[int]]

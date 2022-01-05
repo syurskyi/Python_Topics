@@ -24,7 +24,7 @@ c_ LRUCache:
         timestamp = 0
 
     # @return an integer
-    ___ get(self, key):
+    ___ get  key):
         timestamp += 1
         __ key __ cache:
             times[key] = timestamp
@@ -34,7 +34,7 @@ c_ LRUCache:
     # @param key, an integer
     # @param value, an integer
     # @return nothing
-    ___ set(self, key, value):
+    ___ set  key, value):
         timestamp += 1
         __ key __ cache:
             times[key] = timestamp

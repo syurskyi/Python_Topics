@@ -6,7 +6,7 @@ in product case, needs to remove product in last recursion, and adds the product
 
 
 c_ Solution:
-    ___ addOperators(self, s, target):
+    ___ addOperators  s, target):
         """
         :type s: str
         :type target: int
@@ -20,7 +20,7 @@ c_ Solution:
         dfs(s, 0, target, 0, 0, ans, [])
         r.. ans
 
-    ___ dfs(self, s, start, target, val, multi, ans, path):
+    ___ dfs  s, start, target, val, multi, ans, path):
         __ start __ l..(s) a.. target __ val:
             ans.a..(''.j..(path))
             r..

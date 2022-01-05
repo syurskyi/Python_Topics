@@ -8,7 +8,7 @@ _______ c..
 
 
 c_ Solution(object):
-  ___ findLeaves(self, root):
+  ___ findLeaves  root):
     """
     :type root: TreeNode
     :rtype: List[List[int]]
@@ -19,7 +19,7 @@ c_ Solution(object):
         r.. 0
       left = helper(p.left, res)
       right = helper(p.right, res)
-      depth = max(left, right) + 1
+      depth = m..(left, right) + 1
       res[depth].a..(p.val)
       r.. depth
 

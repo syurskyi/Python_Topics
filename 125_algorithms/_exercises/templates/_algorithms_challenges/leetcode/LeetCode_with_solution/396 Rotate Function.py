@@ -28,7 +28,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ maxRotateFunction(self, A):
+    ___ maxRotateFunction  A):
         """
         See the rotation pattern
         :type A: List[int]
@@ -43,7 +43,7 @@ c_ Solution(object):
         cur = s..(idx * val ___ idx, val __ e..(A))
         ___ r __ r..(A):
             cur = cur + s - n * r
-            gmax = max(gmax, cur)
+            gmax = m..(gmax, cur)
 
         r.. gmax
 

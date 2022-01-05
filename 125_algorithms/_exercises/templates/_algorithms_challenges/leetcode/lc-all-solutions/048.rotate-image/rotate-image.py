@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ rotate(self, matrix):
+  ___ rotate  matrix):
     """
     :type matrix: List[List[int]]
     :rtype: void Do not return anything, modify matrix in-place instead.

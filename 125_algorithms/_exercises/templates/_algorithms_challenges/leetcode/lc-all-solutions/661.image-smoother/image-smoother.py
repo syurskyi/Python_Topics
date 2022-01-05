@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ imageSmoother(self, M):
+  ___ imageSmoother  M):
     """
     :type M: List[List[int]]
     :rtype: List[List[int]]

@@ -6,7 +6,7 @@ c_ HighScores(object):
         scores = scores
 
     ___ highest
-        r.. max(scores)
+        r.. m..(scores)
 
     ___ latest
         r.. scores[-1]

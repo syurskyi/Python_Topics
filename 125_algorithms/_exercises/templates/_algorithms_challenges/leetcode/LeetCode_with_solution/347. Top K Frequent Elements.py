@@ -19,12 +19,12 @@ c_ Counter(object):
         val = val
         cnt = cnt
 
-    ___ __cmp__(self, other):
+    ___ __cmp__  other):
         r.. cnt - other.cnt
 
 
 c_ Solution(object):
-    ___ topKFrequent(self, nums, K):
+    ___ topKFrequent  nums, K):
         """
         Count and Maintain a heap with size k -> O(n lg k)
         Since python heapq does not support cmp, need to wrap data in a struct

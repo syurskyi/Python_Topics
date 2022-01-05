@@ -14,7 +14,7 @@ c_ SpaceAge:
     ___ - , seconds):
         seconds = seconds
 
-    ___ on_planet(self, planet):
+    ___ on_planet  planet):
         r.. r..(seconds / ORBITAL_PERIODS[planet], 2)
 
 

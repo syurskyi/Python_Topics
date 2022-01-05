@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ triangleNumber(self, nums: List[i..]) __ i..:
+    ___ triangleNumber  nums: List[i..]) __ i..:
         """
         b - a < c < a + b
         Brute force O(n^3)
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ triangleNumber_error(self, nums: List[i..]) __ i..:
+    ___ triangleNumber_error  nums: List[i..]) __ i..:
         """
         b - a < c < a + b
         Brute force O(n^3)
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ triangleNumber_slow(self, nums: List[i..]) __ i..:
+    ___ triangleNumber_slow  nums: List[i..]) __ i..:
         """
         b - a < c < a + b
         Brute force O(n^3)

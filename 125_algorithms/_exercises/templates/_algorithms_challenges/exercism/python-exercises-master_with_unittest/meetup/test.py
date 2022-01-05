@@ -4,9 +4,9 @@ ____ d__ _______ date
 
 ____ meetup _______ meetup_day
 
-try:
+___
     ____ meetup _______ MeetupDayException
-except ImportError:
+______ ImportError:
     MeetupDayException = Exception
 
 

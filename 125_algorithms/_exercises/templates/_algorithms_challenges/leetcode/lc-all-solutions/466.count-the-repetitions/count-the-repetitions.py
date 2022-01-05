@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ getMaxRepetitions(self, s1, n1, s2, n2):
+  ___ getMaxRepetitions  s1, n1, s2, n2):
     """
     :type s1: str
     :type n1: int

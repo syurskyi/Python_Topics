@@ -92,7 +92,7 @@ ___ high_low_record_breakers_for_2015
 
     # Get the min and max record breakers (these are series)
     rec_low = rb_low[rb_low.Data_Value_15 __ rb_low.Data_Value_15.m..()].iloc[0]
-    rec_high = rb_high[rb_high.Data_Value_15 __ rb_high.Data_Value_15.max()].iloc[0]
+    rec_high = rb_high[rb_high.Data_Value_15 __ rb_high.Data_Value_15.m..()].iloc[0]
 
     high = series_to_station(rec_high)
     low = series_to_station(rec_low)

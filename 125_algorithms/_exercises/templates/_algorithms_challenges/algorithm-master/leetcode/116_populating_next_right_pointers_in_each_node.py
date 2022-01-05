@@ -13,7 +13,7 @@ c_ Solution:
     """
     Recursion
     """
-    ___ connect(self, root):
+    ___ connect  root):
         """
         :type root: TreeLinkNode
         :rtype: void
@@ -37,7 +37,7 @@ c_ Solution:
     """
     Iteration
     """
-    ___ connect(self, root):
+    ___ connect  root):
         """
         :type root: TreeLinkNode
         :rtype: void

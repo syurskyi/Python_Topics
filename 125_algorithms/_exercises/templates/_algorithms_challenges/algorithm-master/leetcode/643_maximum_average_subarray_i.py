@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findMaxAverage(self, nums, k):
+    ___ findMaxAverage  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -20,11 +20,11 @@ c_ Solution:
         """
         P = [0]
         ___ x __ nums: P.a..(P[-1] + x)
-        max_sum = max(P[i+k] - P[i] ___ i __ r..(l..(nums) - k + 1))
+        max_sum = m..(P[i+k] - P[i] ___ i __ r..(l..(nums) - k + 1))
         r.. max_sum / float(k)
 
 c_ Solution:
-    ___ findMaxAverage(self, nums, k):
+    ___ findMaxAverage  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -42,5 +42,5 @@ c_ Solution:
             __ i >= k:
                 tmp_sum -= nums[i-k]
             __ i + 1 >= k:
-                max_sum = max(max_sum, tmp_sum)
+                max_sum = m..(max_sum, tmp_sum)
         r.. max_sum / float(k)

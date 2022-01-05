@@ -29,7 +29,7 @@ c_ LenCnt:
 
 
 c_ Solution:
-    ___ findNumberOfLIS(self, A: List[i..]) __ i..:
+    ___ findNumberOfLIS  A: List[i..]) __ i..:
         """
         Two pass - 1st pass find the LIS, 2nd pass find the number
         Let F[i] be the length of LIS ended at A[i]

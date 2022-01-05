@@ -4,7 +4,7 @@ Created on Apr 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ basicCalculatorIV(self, expression, evalvars, evalints):
+    ___ basicCalculatorIV  expression, evalvars, evalints):
         """
         :type expression: str
         :type evalvars: List[str]

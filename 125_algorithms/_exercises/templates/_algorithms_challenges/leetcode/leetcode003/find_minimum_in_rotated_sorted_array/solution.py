@@ -9,7 +9,7 @@ You may assume no duplicate exists in the array.
 """
 
 c_ Solution(object):
-    ___ findMin(self, nums):
+    ___ findMin  nums):
         """
         :type nums: List[int]
         :rtype: int

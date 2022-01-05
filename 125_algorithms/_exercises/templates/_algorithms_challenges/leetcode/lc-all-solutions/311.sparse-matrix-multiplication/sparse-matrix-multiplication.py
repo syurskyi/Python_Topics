@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ multiply(self, A, B):
+  ___ multiply  A, B):
     """
     :type A: List[List[int]]
     :type B: List[List[int]]

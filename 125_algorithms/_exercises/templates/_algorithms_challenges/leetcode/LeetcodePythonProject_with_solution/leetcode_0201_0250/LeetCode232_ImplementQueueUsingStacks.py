@@ -8,7 +8,7 @@ c_ Queue(object):
         stack1    # list
         stack2    # list
     
-    ___ push(self, x):
+    ___ push  x):
         __ empty
             stack1.a..(x)
         ____ stack1:

@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ hasGroupsSizeX(self, deck):
+    ___ hasGroupsSizeX  deck):
         """
         :type deck: List[int]
         :rtype: bool

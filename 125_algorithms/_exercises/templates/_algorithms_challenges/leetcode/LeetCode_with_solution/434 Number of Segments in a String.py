@@ -8,7 +8,7 @@ Please note that the string does not contain any non-printable characters.
 
 
 c_ Solution:
-    ___ countSegments(self, s):
+    ___ countSegments  s):
         """
         I could use split but it may not be the intention of this problem
 

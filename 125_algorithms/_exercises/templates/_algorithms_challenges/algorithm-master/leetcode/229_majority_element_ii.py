@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ majorityElement(self, nums):
+    ___ majorityElement  nums):
         """
         :type nums: List[int]
         :rtype: List[int]

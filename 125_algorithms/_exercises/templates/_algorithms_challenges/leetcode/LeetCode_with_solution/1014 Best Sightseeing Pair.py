@@ -24,7 +24,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxScoreSightseeingPair(self, A: List[i..]) __ i..:
+    ___ maxScoreSightseeingPair  A: List[i..]) __ i..:
         """
         Attribute the result to the ending element
 
@@ -34,12 +34,12 @@ c_ Solution:
         ret = -float("inf")
         prev_max = A[0]
         ___ a __ A[1:]:
-            ret = max(ret, prev_max - 1 + a)
-            prev_max = max(prev_max - 1, a)
+            ret = m..(ret, prev_max - 1 + a)
+            prev_max = m..(prev_max - 1, a)
 
         r.. ret
 
-    ___ maxScoreSightseeingPair_error(self, A: List[i..]) __ i..:
+    ___ maxScoreSightseeingPair_error  A: List[i..]) __ i..:
         """
         brute force O(N^2)
 

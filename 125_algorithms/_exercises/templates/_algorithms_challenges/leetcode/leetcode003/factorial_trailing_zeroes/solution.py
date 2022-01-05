@@ -5,7 +5,7 @@ Note: Your solution should be in logarithmic time complexity.
 """
 
 c_ Solution(object):
-    ___ trailingZeroes(self, n):
+    ___ trailingZeroes  n):
         """
         :type n: int
         :rtype: int

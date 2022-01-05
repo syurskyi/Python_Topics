@@ -1,9 +1,9 @@
 _______ p__
 
 ___ div(a,b):
-    try:
+    ___
         r.. a/b
-    except:
+    ______:
         r.. ZeroDivisionError
 
 

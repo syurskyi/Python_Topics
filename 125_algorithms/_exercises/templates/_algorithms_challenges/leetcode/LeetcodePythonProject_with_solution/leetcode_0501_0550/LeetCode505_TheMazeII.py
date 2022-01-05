@@ -5,7 +5,7 @@ Created on May 11, 2017
 '''
 
 c_ Solution(object):
-    ___ shortestDistance(self, maze, start, destination):
+    ___ shortestDistance  maze, start, destination):
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -28,7 +28,7 @@ c_ Solution(object):
                     heapq.heappush(heap, (currDist+dist, x, y))
         r.. -1
     
-    ___ getNextSteps(self, maze, i, j):
+    ___ getNextSteps  maze, i, j):
         m, n = l..(maze), l..(maze[0])
         steps = set()
         dirs = (1, 0), (0, 1), (-1, 0), (0, -1)

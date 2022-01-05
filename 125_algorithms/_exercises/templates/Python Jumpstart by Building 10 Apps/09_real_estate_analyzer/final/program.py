@@ -1,9 +1,9 @@
 _______ csv
 _______ os
 
-try:
+___
     _______ statistics
-except:
+______:
     # error code instead
     _______ statistics_standin_for_py2 __ statistics
 

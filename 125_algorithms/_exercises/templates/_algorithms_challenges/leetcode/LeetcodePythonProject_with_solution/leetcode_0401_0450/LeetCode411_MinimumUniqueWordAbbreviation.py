@@ -5,7 +5,7 @@ Created on Apr 11, 2017
 '''
 
 c_ Solution(object):
-    ___ minAbbreviation(self, target, dictionary):
+    ___ minAbbreviation  target, dictionary):
         diffs    # list
         m = l..(target)
         ___ word __ dictionary:
@@ -23,7 +23,7 @@ c_ Solution(object):
                 abbrs.a..(abbr(target, i))
         r.. m..(abbrs, key=l.... x: l..(x))
     
-    ___ abbr(self, target, num):
+    ___ abbr  target, num):
         word, count = '', 0
         ___ w __ target:
             __ num & 1 __ 1:

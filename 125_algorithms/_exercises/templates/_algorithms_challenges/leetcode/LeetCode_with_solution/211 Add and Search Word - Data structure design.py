@@ -38,7 +38,7 @@ c_ WordDictionary:
         """
         root = TrieNode()
 
-    ___ addWord(self, word):
+    ___ addWord  word):
         """
         Adds a word into the data structure.
         :type word: str
@@ -52,7 +52,7 @@ c_ WordDictionary:
 
         cur.ended = T..
 
-    ___ s..(self, word):
+    ___ s..  word):
         """
         Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one
         letter.
@@ -61,7 +61,7 @@ c_ WordDictionary:
         """
         r.. __search(word, root)
 
-    ___ __search(self, word, cur):
+    ___ __search  word, cur):
         __ n.. word:
             r.. cur.ended
 

@@ -12,7 +12,7 @@ c_ ListNode:
         next = N..
 
 c_ Solution:
-    ___ hasCycle(self, head):
+    ___ hasCycle  head):
         """
         if extra space available, use hash table
         if not, use the model of Hare and Tortoise

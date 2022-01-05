@@ -8,7 +8,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ reverse(self, x):
+    ___ reverse  x):
         """
         Sign for preserving negative number of positive number
         :param x: int

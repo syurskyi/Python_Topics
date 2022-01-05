@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxSubArray(self, nums):
+  ___ maxSubArray  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -8,6 +8,6 @@ c_ Solution(object):
       r.. 0
     preSum = maxSum = nums[0]
     ___ i __ r..(1, l..(nums)):
-      preSum = max(preSum + nums[i], nums[i])
-      maxSum = max(maxSum, preSum)
+      preSum = m..(preSum + nums[i], nums[i])
+      maxSum = m..(maxSum, preSum)
     r.. maxSum

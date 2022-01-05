@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ addTwoNumbers(self, l1, l2):
+    ___ addTwoNumbers  l1, l2):
         stack1    # list
         stack2    # list
         w.... l1:

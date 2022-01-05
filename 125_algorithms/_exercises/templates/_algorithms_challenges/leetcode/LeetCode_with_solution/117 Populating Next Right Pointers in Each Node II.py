@@ -31,7 +31,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ connect(self, root):
+    ___ connect  root):
         """
         bfs
         same as Populating Next Right Pointers in Each Node I
@@ -48,9 +48,9 @@ c_ Solution:
             ___ ind, val __ e..(current_level):
                 __ val.left: q.a..(val.left)
                 __ val.right: q.a..(val.right)
-                try:
+                ___
                     val.next = current_level[ind+1]
-                except IndexError:
+                ______ IndexError:
                     val.next = N..
 
 

@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ maxEnvelopes(self, A):
+    ___ maxEnvelopes  A):
         """
         LIS
         binary search
@@ -38,7 +38,7 @@ c_ Solution(object):
 
         r.. k
 
-    ___ maxEnvelopesTLE(self, A):
+    ___ maxEnvelopesTLE  A):
         """
         LIS
         O(n^2)
@@ -54,9 +54,9 @@ c_ Solution(object):
         ___ i __ xrange(1, n):
             ___ j __ xrange(i):
                 __ predicate(A[j], A[i]):
-                    F[i] = max(F[i], 1 + F[j])
+                    F[i] = m..(F[i], 1 + F[j])
 
-        r.. max(F)
+        r.. m..(F)
 
 
 __ _______ __ _______

@@ -48,7 +48,7 @@ c_ Level:
         n = n
         spots    # dict
 
-    ___ get_range(self, vehicle_type):
+    ___ get_range  vehicle_type):
         quarter = n // 4
 
         __ vehicle_type __ VEHICLE_ID['BUS']:
@@ -59,7 +59,7 @@ c_ Level:
 
         r.. r..(n)
 
-    ___ park_vehicle(self, vehicle):
+    ___ park_vehicle  vehicle):
         """
         :type vehicle: Vehicle
         :rtype: bool
@@ -99,7 +99,7 @@ c_ ParkingLot:
         """
         levels = [Level(i, m, n) ___ i __ r..(k)]
 
-    ___ park_vehicle(self, vehicle):
+    ___ park_vehicle  vehicle):
         """
         :type vehicle: Vehicle
         :rtype: bool
@@ -112,7 +112,7 @@ c_ ParkingLot:
 
         r.. F..
 
-    ___ unpark_vehicle(self, vehicle):
+    ___ unpark_vehicle  vehicle):
         """
         :type vehicle: Vehicle
         """

@@ -12,7 +12,7 @@ c_ Solution:
     @param: graph: A list of Directed graph node
     @return: Any topological order for the given graph.
     """
-    ___ topSort(self, graph):
+    ___ topSort  graph):
         ans    # list
         __ n.. graph:
             r.. ans

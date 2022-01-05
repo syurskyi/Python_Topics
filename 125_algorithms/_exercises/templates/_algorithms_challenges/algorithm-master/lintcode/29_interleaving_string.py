@@ -5,7 +5,7 @@ c_ Solution:
     @param: C: A string
     @return: Determine whether C is formed by interleaving of A and B
     """
-    ___ isInterleave(self, A, B, C):
+    ___ isInterleave  A, B, C):
         __ A __ N.. o. B __ N.. o. C __ N..
             r.. F..
 

@@ -15,7 +15,7 @@ Could you solve it using only O(1) extra space?
 
 
 c_ Solution:
-    ___ compress(self, chars):
+    ___ compress  chars):
         """
         tedious pointer manipulation
         :type chars: List[str]
@@ -38,7 +38,7 @@ c_ Solution:
                 
         r.. ret
 
-    ___ compress_error(self, chars):
+    ___ compress_error  chars):
         """
         tedious pointer manipulation
         :type chars: List[str]

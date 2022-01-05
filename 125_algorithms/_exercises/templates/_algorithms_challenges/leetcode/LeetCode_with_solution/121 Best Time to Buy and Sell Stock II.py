@@ -9,7 +9,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ maxProfit(self, prices):
+    ___ maxProfit  prices):
         """
         multiple transactions
         you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).

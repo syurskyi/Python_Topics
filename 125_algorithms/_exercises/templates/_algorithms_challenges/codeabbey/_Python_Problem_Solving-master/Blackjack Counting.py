@@ -8,11 +8,11 @@ ___ i __ r..(i..(input())):
     tot = 0
     #for all elements in a
     ___ j __ a:
-        try:
+        ___
             #check if number or not
             temp = float(j)
             tot +=  temp
-        except:
+        ______:
             #check if it is other than 'A' then add 10 to total TKJQ
             __ j != 'A':
                 tot += 10

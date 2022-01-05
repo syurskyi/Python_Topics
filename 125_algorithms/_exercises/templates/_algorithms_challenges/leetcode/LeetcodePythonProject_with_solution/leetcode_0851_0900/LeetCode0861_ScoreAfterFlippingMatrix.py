@@ -4,7 +4,7 @@ Created on Sep 17, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ matrixScore(self, A):
+    ___ matrixScore  A):
         """
         :type A: List[List[int]]
         :rtype: int

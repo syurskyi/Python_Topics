@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ inorderSuccessor(self, root, p):
+    ___ inorderSuccessor  root, p):
         __ n.. root: r.. N..
         __ root.val <= p.val:
             r.. inorderSuccessor(root.right, p)
@@ -23,7 +23,7 @@ c_ Solution(object):
             ____:
                 r.. root
     
-    ___ inorderSuccessorNonRec(self, root, p):
+    ___ inorderSuccessorNonRec  root, p):
         """
         :type root: TreeNode
         :type p: TreeNode

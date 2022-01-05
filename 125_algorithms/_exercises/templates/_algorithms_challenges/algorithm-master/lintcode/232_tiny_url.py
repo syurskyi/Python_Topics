@@ -4,15 +4,15 @@ _______ r__
 c_ TinyUrl:
     ___ - ):
         chars = [s..(i) ___ i __ r..(10)]
-        chars.extend(chr(i) ___ i __ r..(ord('a'), ord('z') + 1))
-        chars.extend(chr(i) ___ i __ r..(ord('A'), ord('Z') + 1))
+        chars.extend(chr(i) ___ i __ r..(o..('a'), o..('z') + 1))
+        chars.extend(chr(i) ___ i __ r..(o..('A'), o..('Z') + 1))
 
         host = 'http://tiny.url/'
         size = 6
         lg2st    # dict
         st2lg    # dict
 
-    ___ longToShort(self, url):
+    ___ longToShort  url):
         """
         :type url: str
         :rtype: str
@@ -30,7 +30,7 @@ c_ TinyUrl:
         st2lg[key] = url
         r.. get_tiny_url(key)
 
-    ___ shortToLong(self, url):
+    ___ shortToLong  url):
         """
         :type url: str
         :rtype: str
@@ -45,10 +45,10 @@ c_ TinyUrl:
 
         r.. 'error'
 
-    ___ get_tiny_url(self, hash_key):
+    ___ get_tiny_url  hash_key):
         r.. '{}{}'.f..(host, hash_key)
 
-    ___ get_hash_key(self, size):
+    ___ get_hash_key  size):
         r.. ''.j..(
             r__.choice(chars)
             ___ _ __ r..(size)

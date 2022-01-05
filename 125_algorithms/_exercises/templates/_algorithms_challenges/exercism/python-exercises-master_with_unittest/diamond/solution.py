@@ -1,5 +1,5 @@
 ___ make_diamond(letter):
-    rows = ord(letter) - 64
+    rows = o..(letter) - 64
     cols = rows * 2 - 1
     half = make_half(rows, cols)
     r.. ''.j..(half + half[-2::-1])

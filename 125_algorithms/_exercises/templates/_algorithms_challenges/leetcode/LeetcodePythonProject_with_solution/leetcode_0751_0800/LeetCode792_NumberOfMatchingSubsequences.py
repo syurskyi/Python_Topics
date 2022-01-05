@@ -4,7 +4,7 @@ Created on Apr 16, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numMatchingSubseq(self, S, words):
+    ___ numMatchingSubseq  S, words):
         """
         :type S: str
         :type words: List[str]
@@ -12,7 +12,7 @@ c_ Solution(object):
         """
         hashmap    # dict
         ___ i __ r..(26):
-            c = chr(ord('a')+i)
+            c = chr(o..('a')+i)
             hashmap[c]    # list
         ___ word __ words:
             hashmap[word[0]].a..(word)

@@ -3,7 +3,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: An integer indicate the value of maximum difference between two substrings
     """
-    ___ maxDiffSubArrays(self, A):
+    ___ maxDiffSubArrays  A):
         __ n.. A:
             r.. 0
 
@@ -16,7 +16,7 @@ c_ Solution:
 
         ans = float('-inf')
         ___ i __ r..(n - 1):
-            ans = max(
+            ans = m..(
                 ans,
                 Lmax[i] - Rmin[i + 1],
                 Rmax[i + 1] - Lmin[i]
@@ -24,7 +24,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ get_sum(self, A, scope, factor):
+    ___ get_sum  A, scope, factor):
         """
         factor ==  1: max sum
         factor == -1: min sum

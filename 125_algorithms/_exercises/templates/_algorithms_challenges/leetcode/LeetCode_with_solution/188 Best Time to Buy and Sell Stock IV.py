@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ maxProfit(self, k, prices):
+    ___ maxProfit  k, prices):
         """
         DP
         local_{i,j} = \max(global_{i-1.j-1}+\Delta, local_{i-1,j}+\Delta)
@@ -30,16 +30,16 @@ c_ Solution:
         ___ i __ xrange(1, n):
             diff = prices[i] - prices[i-1]
             ___ j __ xrange(k, 0, -1):
-                l[j] = max(g[j-1]+diff, l[j]+diff)
-                g[j] = max(l[j], g[j])
-                gmax = max(gmax, g[j])
+                l[j] = m..(g[j-1]+diff, l[j]+diff)
+                g[j] = m..(l[j], g[j])
+                gmax = m..(gmax, g[j])
 
         r.. gmax
 
-    ___ maxProfit_unlimited_transactions(self, prices):
+    ___ maxProfit_unlimited_transactions  prices):
         profit = 0
         ___ i __ xrange(1, l..(prices)):
-            profit += max(0, prices[i] - prices[i-1])
+            profit += m..(0, prices[i] - prices[i-1])
         r.. profit
 
 __ _______ __ _______

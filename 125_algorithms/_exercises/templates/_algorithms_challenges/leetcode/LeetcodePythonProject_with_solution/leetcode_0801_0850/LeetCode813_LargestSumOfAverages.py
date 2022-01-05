@@ -4,7 +4,7 @@ Created on Apr 29, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ largestSumOfAverages(self, A, K):
+    ___ largestSumOfAverages  A, K):
         """
         :type A: List[int]
         :type K: int
@@ -19,7 +19,7 @@ c_ Solution(object):
             memo[i+1][1] = cur/(i+1)
         r.. s..(n, k, arr, memo)
     
-    ___ s..(self, n, k, arr, memo):
+    ___ s..  n, k, arr, memo):
         __ memo[n][k] > 0:
             r.. memo[n][k]
         __ n < k:
@@ -27,7 +27,7 @@ c_ Solution(object):
         cur = 0.0
         ___ i __ r..(n-1, -1, -1):
             cur += arr[i]
-            memo[n][k] = max(memo[n][k], s..(i, k-1, arr, memo)+cur/(n-i))
+            memo[n][k] = m..(memo[n][k], s..(i, k-1, arr, memo)+cur/(n-i))
         r.. memo[n][k]
     
     ___ test

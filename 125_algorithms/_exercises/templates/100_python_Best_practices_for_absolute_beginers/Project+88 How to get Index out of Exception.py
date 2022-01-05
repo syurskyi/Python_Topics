@@ -6,10 +6,10 @@ w___ T...
     num  input("Choose index to search: ")
     __ num __ 't':
         _____
-    try:
+    ___
         num  i..(num)
         print(x[num])
-    except ValueError:
+    ______ V..
         print("Only integers are allowed!")
-    except IndexError:
+    ______ IndexError:
         print("Error! Number out of index", num)

@@ -32,7 +32,7 @@ c_ TreeNode(object):
 
 
 c_ Codec:
-    ___ serialize(self, root):
+    ___ serialize  root):
         """
         bfs
         Encodes a tree to a single string.
@@ -61,7 +61,7 @@ c_ Codec:
 
         r.. ",".j..(ret)
 
-    ___ deserialize(self, data):
+    ___ deserialize  data):
         """
         Decodes your encoded data to tree.
         decode: 1, 2, 3, null, null, 4, 5, null, null, null, null
@@ -86,13 +86,13 @@ c_ Codec:
 
         r.. root
 
-    ___ decode(self, s):
+    ___ decode  s):
         __ s __ "null":
             r.. N..
         ____:
             r.. TreeNode(i..(s))
 
-    ___ encode(self, node):
+    ___ encode  node):
         __ n.. node:
             r.. "null"
         ____:

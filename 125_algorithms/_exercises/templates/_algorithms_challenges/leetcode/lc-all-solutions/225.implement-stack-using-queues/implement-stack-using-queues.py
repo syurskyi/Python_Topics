@@ -8,7 +8,7 @@ c_ Stack(object):
     """
     queue = d..([])
 
-  ___ push(self, x):
+  ___ push  x):
     """
     :type x: int
     :rtype: nothing

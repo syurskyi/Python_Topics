@@ -1,7 +1,7 @@
 c_ Solution:
     # @param height, a list of integer
     # @return an integer
-    ___ largestRectangleArea(self, height):
+    ___ largestRectangleArea  height):
         __ n.. height:
             r.. 0
         __ l..(height) __ 1:
@@ -16,6 +16,6 @@ c_ Solution:
                     w = i - stack[-1] - 1
                 ____:
                     w = i
-                max_area = max(max_area, h * w)
+                max_area = m..(max_area, h * w)
             stack.a..(i)
         r.. max_area

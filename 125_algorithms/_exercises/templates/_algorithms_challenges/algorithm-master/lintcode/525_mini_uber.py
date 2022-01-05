@@ -24,7 +24,7 @@ c_ MiniUber:
     # @param {double} lat, lng driver's location
     # return {trip} matched trip information
     #               if there have matched rider or null
-    ___ report(self, driver_id, lat, lng):
+    ___ report  driver_id, lat, lng):
         __ n.. driver_id:
             r..
 
@@ -40,7 +40,7 @@ c_ MiniUber:
     # @param rider_id an integer
     # @param lat, lng rider's location
     # return a trip
-    ___ request(self, rider_id, lat, lng):
+    ___ request  rider_id, lat, lng):
         __ n.. rider_id:
             r..
         trip = Trip(rider_id, lat, lng)
@@ -62,7 +62,7 @@ c_ MiniUber:
 
         r.. trip
 
-    ___ _new_location(self, lat, lng):
+    ___ _new_location  lat, lng):
         r.. {
             'lat': lat,
             'lng': lng

@@ -20,7 +20,7 @@ c_ Queue:
         in_stk    # list
         out_stk    # list
 
-    ___ push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: None

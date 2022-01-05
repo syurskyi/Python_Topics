@@ -2,7 +2,7 @@ _______ math
 
 
 c_ Solution(object):
-  ___ smallestGoodBase(self, n):
+  ___ smallestGoodBase  n):
     """
     :type n: str
     :rtype: str

@@ -6,7 +6,7 @@ c_ Solution:
     @param: G: a chessboard included 0 and 1
     @return: the shortest path
     """
-    ___ shortestPath2(self, G):
+    ___ shortestPath2  G):
         NOT_FOUND = -1
         __ n.. G o. n.. G[0] o. G[0][0] __ 1:
             r.. NOT_FOUND
@@ -47,7 +47,7 @@ c_ Solution:
     @param: G: a chessboard included 0 and 1
     @return: the shortest path
     """
-    ___ shortestPath2(self, G):
+    ___ shortestPath2  G):
         __ n.. G o. n.. G[0] o. G[0][0] __ 1:
             r.. -1
 

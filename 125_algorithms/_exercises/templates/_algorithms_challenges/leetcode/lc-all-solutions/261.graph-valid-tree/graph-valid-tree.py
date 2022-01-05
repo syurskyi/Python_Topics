@@ -2,7 +2,7 @@ c_ Solution:
   # @param {int} n an integer
   # @param {int[][]} edges a list of undirected edges
   # @return {boolean} true if it's a valid tree, or false
-  ___ validTree(self, n, edges):
+  ___ validTree  n, edges):
     # Write your code here
 
     ___ dfs(root, graph, visited, parent):

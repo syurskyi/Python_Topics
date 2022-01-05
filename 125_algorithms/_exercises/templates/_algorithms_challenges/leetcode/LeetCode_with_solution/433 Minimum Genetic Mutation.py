@@ -26,7 +26,7 @@ You may assume start and end string is not the same.
 
 
 c_ Solution:
-    ___ is_neighbor(self, p, q):
+    ___ is_neighbor  p, q):
         diff = 0
         ___ a, b __ z..(p, q):
             __ a != b:
@@ -35,7 +35,7 @@ c_ Solution:
                 r.. F..
         r.. T..
 
-    ___ minMutation(self, start, end, bank):
+    ___ minMutation  start, end, bank):
         """
         BFS, record level and avoid loop
 

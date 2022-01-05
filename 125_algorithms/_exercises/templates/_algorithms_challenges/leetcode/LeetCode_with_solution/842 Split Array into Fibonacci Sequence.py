@@ -51,7 +51,7 @@ MAX = 2 ** 31 - 1
 
 
 c_ Solution:
-    ___ splitIntoFibonacci(self, S: s..) __ List[i..]:
+    ___ splitIntoFibonacci  S: s..) __ List[i..]:
         """
         The first two elements of the array uniquely determine the rest of the
         sequence.

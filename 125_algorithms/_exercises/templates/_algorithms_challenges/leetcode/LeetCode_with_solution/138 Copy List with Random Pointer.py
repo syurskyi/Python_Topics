@@ -13,7 +13,7 @@ c_ RandomListNode:
         r__ = N..
 
 c_ Solution:
-    ___ copyRandomList(self, head):
+    ___ copyRandomList  head):
         """
         Algorithm:
 

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isPalindrome(self, s):
+    ___ isPalindrome  s):
         """
         :type s: str
         :rtype: bool

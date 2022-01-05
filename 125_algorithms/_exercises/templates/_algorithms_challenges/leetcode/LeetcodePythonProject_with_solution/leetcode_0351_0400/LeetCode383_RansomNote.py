@@ -5,7 +5,7 @@ Created on Apr 2, 2017
 '''
 
 c_ Solution(object):
-    ___ canConstruct(self, ransomNote, magazine):
+    ___ canConstruct  ransomNote, magazine):
         hashmap    # dict
         ___ c __ magazine:
             hashmap[c] = hashmap.get(c, 0)+1

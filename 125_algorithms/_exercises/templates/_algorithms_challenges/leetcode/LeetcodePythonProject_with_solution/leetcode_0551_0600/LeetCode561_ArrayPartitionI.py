@@ -5,6 +5,6 @@ Created on Aug 28, 2017
 '''
 
 c_ Solution(object):
-    ___ arrayPairSum(self, nums):
+    ___ arrayPairSum  nums):
         nums.s..()
         r.. s..(nums[::2])

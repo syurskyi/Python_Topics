@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ wordPatternMatch(self, pattern, s):
+    ___ wordPatternMatch  pattern, s):
         """
         Backtracking with prune
         :type pattern: str
@@ -14,7 +14,7 @@ c_ Solution(object):
         """
         r.. dfs(pattern, s, {}, set())
 
-    ___ dfs(self, pattern, s, char2word, words):
+    ___ dfs  pattern, s, char2word, words):
         """
         Loop & DFS
         :return: pattern can match s

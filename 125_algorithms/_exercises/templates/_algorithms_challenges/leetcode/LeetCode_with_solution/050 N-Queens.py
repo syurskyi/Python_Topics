@@ -27,7 +27,7 @@ QUEEN = 1
 DEFAULT = 0
 directions = [(+1, +1), (-1, -1), (-1, +1), (+1, -1)]
 c_ Solution:
-    ___ solveNQueens(self, n):
+    ___ solveNQueens  n):
         """
         backtracking
         :param n: integer
@@ -38,7 +38,7 @@ c_ Solution:
         backtrack(0, current, result)
         r.. transform2string(result)
 
-    ___ backtrack(self, queen_index, current, result):
+    ___ backtrack  queen_index, current, result):
         """
         Search problem: dfs, backtracking
 
@@ -101,7 +101,7 @@ c_ Solution:
             backtrack(queen_index+1, new_config, result)
 
 
-    ___ transform2string(self, result):
+    ___ transform2string  result):
         string_result    # list
         ___ configuration __ result:
             current    # list
@@ -113,5 +113,5 @@ c_ Solution:
         r.. string_result
 
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().solveNQueens(4)__[['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]

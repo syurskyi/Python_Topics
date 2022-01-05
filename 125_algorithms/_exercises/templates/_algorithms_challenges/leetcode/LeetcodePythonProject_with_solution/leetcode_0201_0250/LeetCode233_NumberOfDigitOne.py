@@ -4,7 +4,7 @@ Created on Feb 23, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ countDigitOne(self, n):
+    ___ countDigitOne  n):
         """
         :type n: int
         :rtype: int

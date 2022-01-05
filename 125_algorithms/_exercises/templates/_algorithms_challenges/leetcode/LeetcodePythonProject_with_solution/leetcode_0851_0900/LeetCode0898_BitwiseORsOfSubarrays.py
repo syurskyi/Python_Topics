@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ subarrayBitwiseORs(self, A):
+    ___ subarrayBitwiseORs  A):
         """
         :type A: List[int]
         :rtype: int

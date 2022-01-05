@@ -5,7 +5,7 @@ Created on Apr 11, 2017
 '''
 
 c_ Solution(object):
-    ___ fizzBuzz(self, n):
+    ___ fizzBuzz  n):
         result    # list
         ___ num __ r..(1, n+1):
             __ num % 15 __ 0:

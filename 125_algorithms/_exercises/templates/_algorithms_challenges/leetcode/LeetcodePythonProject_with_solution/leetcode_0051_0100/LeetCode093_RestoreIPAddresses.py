@@ -4,7 +4,7 @@ Created on May 30, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ restoreIpAddresses(self, s):
+    ___ restoreIpAddresses  s):
         """
         :type s: str
         :rtype: List[str]
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(res, [], s, 0)
         r.. res
     
-    ___ helper(self, res, curr, s, ind):
+    ___ helper  res, curr, s, ind):
         __ ind __ l..(s) a.. l..(curr) __ 4:
             res.a..('.'.j..(curr))
         __ ind >= l..(s):

@@ -24,7 +24,7 @@ c_ Solution:
         current = N..
         pre = N..
 
-    ___ recoverTree(self, root):
+    ___ recoverTree  root):
         """
         In-order traversal
         binary tree: {1, 2, 3, 4, 5, 6}
@@ -54,7 +54,7 @@ c_ Solution:
             swapped_pair[0][0].val, swapped_pair[0][1].val = swapped_pair[0][1].val, swapped_pair[0][0].val
         r.. root
 
-    ___ in_order(self, current):
+    ___ in_order  current):
         __ n.. current:
             r..
 
@@ -100,7 +100,7 @@ c_ Solution:
     #     if root.left: self.__find(root.left, result)
     #     if root.right: self.__find(root.right, result)
 
-__ __name____"__main__":
+__ _____ __ ____
     node1 = TreeNode(2)
     node2 = TreeNode(1)
     node1.right = node2

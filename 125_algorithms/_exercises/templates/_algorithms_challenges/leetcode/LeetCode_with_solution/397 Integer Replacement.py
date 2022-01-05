@@ -32,7 +32,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ integerReplacement(self, n):
+    ___ integerReplacement  n):
         """
         Simulation using dp fails since bi-directional
         Simple recursion
@@ -55,7 +55,7 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ integerReplacementRecur(self, n):
+    ___ integerReplacementRecur  n):
         """
         Simple recursion
         :type n: int

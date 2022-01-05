@@ -28,7 +28,7 @@ books = [
 
 ___ sort_books_by_len_of_title(books=books):
     name_list = [entry.title ___ entry __ books]
-    r.. max(name_list, key=l..)
+    r.. m..(name_list, key=l..)
 
 
 ___ sort_books_by_first_authors_last_name(books=books):
@@ -45,7 +45,7 @@ ___ sort_books_by_number_of_page(books=books):
     page_list = [entry.pages ___ entry __ books]
     r.. ''.j..([t.title
                     ___ t __ books
-                    __ t.pages __ max(page_list)])
+                    __ t.pages __ m..(page_list)])
 
 
 ___ sort_books_by_published_date(books=books):

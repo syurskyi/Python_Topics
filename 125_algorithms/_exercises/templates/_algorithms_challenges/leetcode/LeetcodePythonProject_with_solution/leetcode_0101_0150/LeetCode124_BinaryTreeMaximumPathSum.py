@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ maxPathSum(self, root):
+    ___ maxPathSum  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -19,13 +19,13 @@ c_ Solution(object):
         __ n.. root: r.. 0
         r.. helper(root)[1]
     
-    ___ helper(self, root):
+    ___ helper  root):
         __ n.. root:
             r.. 0, float('-inf')
         left  = helper(root.left)
         right = helper(root.right)
-        single = max([left[0]+root.val, right[0]+root.val, 0])
-        gbl = max([left[1], right[1], left[0]+right[0]+root.val])
+        single = m..([left[0]+root.val, right[0]+root.val, 0])
+        gbl = m..([left[1], right[1], left[0]+right[0]+root.val])
         r.. single, gbl
     
     ___ test

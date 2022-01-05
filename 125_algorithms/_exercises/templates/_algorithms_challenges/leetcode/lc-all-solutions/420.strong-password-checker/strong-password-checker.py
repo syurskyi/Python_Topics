@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ strongPasswordChecker(self, s):
+  ___ strongPasswordChecker  s):
     """
     :type s: str
     :rtype: int
@@ -31,12 +31,12 @@ c_ Solution(object):
         p += 1
 
     __ l..(s) < 6:
-      r.. max(complexBal, 6 - l..(s))
+      r.. m..(complexBal, 6 - l..(s))
     ____ l..(s) <= 20:
-      r.. max(complexBal, r..)
+      r.. m..(complexBal, r..)
     ____:
       redundant = l..(s) - 20
       r.. -= m..(redundant, one)
-      r.. -= m..(max(redundant - one, 0), two * 2) / 2
-      r.. -= max(redundant - one - two * 2, 0) / 3
-      r.. redundant + max(complexBal, r..)
+      r.. -= m..(m..(redundant - one, 0), two * 2) / 2
+      r.. -= m..(redundant - one - two * 2, 0) / 3
+      r.. redundant + m..(complexBal, r..)

@@ -4,7 +4,7 @@ Created on Oct 7, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findClosestElements(self, arr, k, x):
+    ___ findClosestElements  arr, k, x):
         """
         :type arr: List[int]
         :type k: int
@@ -18,7 +18,7 @@ c_ Solution(object):
         __ ind __ l..(arr):
             r.. arr[-k:]
         heap    # list
-        ___ i __ r..(max(0, ind-k), m..(l..(arr), ind+k)):
+        ___ i __ r..(m..(0, ind-k), m..(l..(arr), ind+k)):
             diff = abs(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]))
         res    # list

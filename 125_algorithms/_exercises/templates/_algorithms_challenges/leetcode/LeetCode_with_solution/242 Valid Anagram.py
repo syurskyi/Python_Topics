@@ -14,7 +14,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ isAnagram(self, s, t):
+    ___ isAnagram  s, t):
         """
         bucket
 

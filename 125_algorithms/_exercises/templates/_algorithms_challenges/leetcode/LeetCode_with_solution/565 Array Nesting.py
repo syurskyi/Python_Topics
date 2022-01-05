@@ -31,7 +31,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ arrayNesting(self, nums: List[i..]) __ i..:
+    ___ arrayNesting  nums: List[i..]) __ i..:
         """
         You can think of it as graph. If circle, then you can start with any
         node
@@ -40,11 +40,11 @@ c_ Solution:
         ret = 0
         ___ n __ nums:
             count = dfs(nums, n, set(), visited)
-            ret = max(ret, count)
+            ret = m..(ret, count)
 
         r.. ret
 
-    ___ dfs(self, nums, num, path, visited):
+    ___ dfs  nums, num, path, visited):
         __ num __ visited:
             r.. 0
 

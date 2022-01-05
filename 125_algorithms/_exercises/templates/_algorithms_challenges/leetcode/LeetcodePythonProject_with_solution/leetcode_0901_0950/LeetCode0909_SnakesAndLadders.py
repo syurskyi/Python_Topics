@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ snakesAndLadders(self, board):
+    ___ snakesAndLadders  board):
         """
         :type board: List[List[int]]
         :rtype: int

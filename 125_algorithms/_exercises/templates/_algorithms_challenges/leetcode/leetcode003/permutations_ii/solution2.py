@@ -8,14 +8,14 @@ For example,
 """
 
 c_ Solution(object):
-    ___ permuteUnique(self, nums):
+    ___ permuteUnique  nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
         r.. permute(s..(nums))
 
-    ___ permute(self, nums):
+    ___ permute  nums):
         __ n.. nums:
             r.. [[]]
         ____:

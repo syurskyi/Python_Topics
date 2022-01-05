@@ -18,24 +18,24 @@ ___ calculate(stmt):
     __ n.. l:
         r.. ValueError("Ill-formed question")
     l.reverse()
-    try:
+    ___
         op1 = i..(l.pop())
-    except ValueError:
+    ______ V..
         r.. ValueError("Ill-formed question")
     w.... l:
         oprt = [l.pop()]
         w.... l:
-            try:
+            ___
                 next_tk = l.pop()
                 op2 = i..(next_tk)
                 break
-            except ValueError:
+            ______ V..
                 oprt.a..(next_tk)
         ____:
             r.. ValueError("Ill-formed question")
         oprt = " ".j..(oprt)
-        try:
+        ___
             op1 = VALID_OPERATIONS[oprt](op1, op2)
-        except KeyError:
+        ______ KeyError:
             r.. ValueError("Ill-formed question")
     r.. op1

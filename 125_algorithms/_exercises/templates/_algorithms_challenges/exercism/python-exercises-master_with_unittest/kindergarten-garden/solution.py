@@ -10,7 +10,7 @@ c_ Garden(object):
         plant_rows = diagram.s..
         students = s..(students)
 
-    ___ plants(self, student):
+    ___ plants  student):
         slot_start = students.index(student) * 2
         slot = slice(slot_start, slot_start + 2)
         r.. [__plant_names[abbrev]

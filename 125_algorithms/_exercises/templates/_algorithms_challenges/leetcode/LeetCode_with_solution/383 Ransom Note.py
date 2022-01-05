@@ -17,7 +17,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ canConstruct(self, ransomNote, magazine):
+    ___ canConstruct  ransomNote, magazine):
         """
         :type ransomNote: str
         :type magazine: str

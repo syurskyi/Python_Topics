@@ -20,7 +20,7 @@ isMatch("aab", "c*a*b") -> false
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ isMatch_MLE(self, s, p):
+    ___ isMatch_MLE  s, p):
         """
         dp, similar to 011 Regular Expression Matching.
         Backward dp
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. dp[0][0]
 
-    ___ isMatch_forward(self, s, p):
+    ___ isMatch_forward  s, p):
         """
         "?" is not the problem
         "*" is the problem
@@ -100,7 +100,7 @@ c_ Solution:
 
         r.. dp[m]
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().isMatch("aab", "c*a*b")__False
     ... Solution().isMatch("aa","a")__False
     ... Solution().isMatch("aa", "aa")__True

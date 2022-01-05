@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ validSquare(self, p1, p2, p3, p4):
+  ___ validSquare  p1, p2, p3, p4):
     """
     :type p1: List[int]
     :type p2: List[int]

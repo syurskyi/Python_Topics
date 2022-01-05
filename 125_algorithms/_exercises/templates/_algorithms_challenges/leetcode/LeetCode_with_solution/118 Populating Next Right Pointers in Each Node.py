@@ -40,7 +40,7 @@ c_ TreeNode:
         next = N..
 
 c_ Solution:
-    ___ connect(self, root):
+    ___ connect  root):
         """
         bfs
         :param root: TreeNode
@@ -56,9 +56,9 @@ c_ Solution:
             ___ ind, val __ e..(current_level):
                 __ val.left: q.a..(val.left)
                 __ val.right: q.a..(val.right)
-                try:
+                ___
                     val.next = current_level[ind+1]
-                except IndexError:
+                ______ IndexError:
                     val.next = N..
 
 

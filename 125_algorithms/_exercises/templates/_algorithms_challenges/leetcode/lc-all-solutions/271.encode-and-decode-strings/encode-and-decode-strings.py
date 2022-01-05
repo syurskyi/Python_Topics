@@ -1,5 +1,5 @@
 c_ Codec:
-  ___ encode(self, strs):
+  ___ encode  strs):
     """Encodes a list of strings to a single string.
     
     :type strs: List[str]
@@ -11,7 +11,7 @@ c_ Codec:
 
     r.. ret
 
-  ___ decode(self, s):
+  ___ decode  s):
     """Decodes a single string to a list of strings.
     
     :type s: str

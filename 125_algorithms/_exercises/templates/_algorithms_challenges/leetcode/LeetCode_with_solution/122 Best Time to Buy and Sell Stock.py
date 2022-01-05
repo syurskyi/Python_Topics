@@ -8,7 +8,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ maxProfit(self, A):
+    ___ maxProfit  A):
         """
         Maximum subarray sum
         DP version
@@ -21,12 +21,12 @@ c_ Solution(object):
         F = [0 ___ _ __ xrange(n+1)]
         maxa = 0
         ___ i __ xrange(2, n+1):
-            F[i] = max(F[i-1] + A[i-1] - A[i-2], 0)  # revert the previous transaction
-            maxa = max(maxa, F[i])
+            F[i] = m..(F[i-1] + A[i-1] - A[i-2], 0)  # revert the previous transaction
+            maxa = m..(maxa, F[i])
 
         r.. maxa
 
-    ___ maxProfitDelta(self, prices):
+    ___ maxProfitDelta  prices):
         """
         Only long position allowed, cannot short
 
@@ -49,8 +49,8 @@ c_ Solution(object):
         max_sub_array = 0
         current_sub_array = 0
         ___ j __ xrange(l..(delta_prices)):
-            current_sub_array = max(0, current_sub_array+delta_prices[j])
-            max_sub_array = max(max_sub_array, current_sub_array)
+            current_sub_array = m..(0, current_sub_array+delta_prices[j])
+            max_sub_array = m..(max_sub_array, current_sub_array)
 
         r.. max_sub_array
 

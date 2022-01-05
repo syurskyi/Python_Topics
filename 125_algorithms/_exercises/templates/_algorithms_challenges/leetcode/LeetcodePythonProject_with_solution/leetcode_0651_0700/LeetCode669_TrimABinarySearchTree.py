@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ trimBST(self, root, L, R):
+    ___ trimBST  root, L, R):
         """
         :type root: TreeNode
         :type L: int

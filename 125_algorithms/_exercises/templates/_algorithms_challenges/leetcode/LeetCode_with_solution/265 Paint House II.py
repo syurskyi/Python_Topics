@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ minCostII(self, costs):
+    ___ minCostII  costs):
         """
         Lef F[i][j] be the total min costs when the houses BEFORE i are painted, with (i-1)-th house pained as color j
         F[i][j] = \min(F[i-1][k] + cost[i-1][j] \forall k, k != j

@@ -33,7 +33,7 @@ _______ sys
 
 
 c_ Solution:
-    ___ calculateMinimumHP(self, dungeon):
+    ___ calculateMinimumHP  dungeon):
         """
         dp
         Let F represent the HP
@@ -52,14 +52,14 @@ c_ Solution:
         ___ i __ xrange(m-1, -1, -1):
             ___ j __ xrange(n-1, -1, -1):
                 __ i __ m-1 a.. j __ n-1:
-                    F[i][j] = max(1, 1-dungeon[i][j])
+                    F[i][j] = m..(1, 1-dungeon[i][j])
                 ____:
                     path = m..(F[i+1][j], F[i][j+1])  # choose the path with minimum HP required
-                    F[i][j] = max(1, path-dungeon[i][j])  # adjust for current cell
+                    F[i][j] = m..(1, path-dungeon[i][j])  # adjust for current cell
 
         r.. F[0][0]
 
-    ___ calculateMinimumHP_error(self, dungeon):
+    ___ calculateMinimumHP_error  dungeon):
         """
         dp
         Not just the end results. We have to ensure at every cell the life > 0.
@@ -78,7 +78,7 @@ c_ Solution:
                 __ i __ 1 a.. j __ 1:
                     F[i][j] = dungeon[i-1][j-1]
                 ____:
-                    F[i][j] = max(F[i-1][j], F[i][j-1])+dungeon[i-1][j-1]
+                    F[i][j] = m..(F[i-1][j], F[i][j-1])+dungeon[i-1][j-1]
                     F[i][j] = m..(F[i][j], dungeon[i-1][j-1])
 
         r.. 1-F[-1][-1]

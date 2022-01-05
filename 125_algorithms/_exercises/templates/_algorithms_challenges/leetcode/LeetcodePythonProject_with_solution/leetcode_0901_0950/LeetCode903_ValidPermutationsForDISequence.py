@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ numPermsDISequence(self, S):
+    ___ numPermsDISequence  S):
         """
         :type S: str
         :rtype: int

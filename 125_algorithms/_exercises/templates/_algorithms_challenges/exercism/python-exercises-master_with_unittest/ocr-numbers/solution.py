@@ -23,18 +23,18 @@ ___ number(ocr):
     numbers = split_ocr(ocr)
     d.. = ''
     ___ n __ numbers:
-        try:
+        ___
             d.. += s..(OCR_LIST.index(n))
-        except ValueError:
+        ______ V..
             d.. += '?'
     r.. d..
 
 
 ___ grid(d..):
-    try:
+    ___
         __ n.. d...isdigit
             r.. ValueError('String should be numeric.')
-    except AttributeError:
+    ______ AttributeError:
         r.. ValueError('Argument should be a string.')
     ocr = ['' ___ i __ r..(ROW)]
     ___ d __ d..:

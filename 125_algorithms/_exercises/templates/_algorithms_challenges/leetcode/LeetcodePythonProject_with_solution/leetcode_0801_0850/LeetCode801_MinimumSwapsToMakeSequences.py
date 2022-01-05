@@ -4,7 +4,7 @@ Created on Apr 19, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minSwap(self, A, B):
+    ___ minSwap  A, B):
         """
         :type A: List[int]
         :type B: List[int]
@@ -29,7 +29,7 @@ c_ Solution(object):
         r.. m..(dp[0][0], dp[0][1])
     
     # My solution DFS is TLE
-    ___ minSwap_own_slow(self, A, B):
+    ___ minSwap_own_slow  A, B):
         """
         :type A: List[int]
         :type B: List[int]
@@ -40,7 +40,7 @@ c_ Solution(object):
         helper(arr1, arr2, 0, 0)
         r.. res
         
-    ___ helper(self, arr1, arr2, i, cur):
+    ___ helper  arr1, arr2, i, cur):
         __ i __ l..(arr1):
             res = m..(res, cur)
             r..

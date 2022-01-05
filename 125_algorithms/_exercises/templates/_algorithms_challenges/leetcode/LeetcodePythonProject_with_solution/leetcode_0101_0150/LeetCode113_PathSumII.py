@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ pathSum(self, root, sumVal):
+    ___ pathSum  root, sumVal):
         """
         :type root: TreeNode
         :type sumVal: int
@@ -25,7 +25,7 @@ c_ Solution(object):
         dfs(result, elem, root, sumVal-root.val)
         r.. result
     
-    ___ dfs(self, result, elem, root, sumVal):
+    ___ dfs  result, elem, root, sumVal):
         __ n.. root:
             r..
         __ sumVal __ 0 a.. n.. root.left a.. n.. root.right:

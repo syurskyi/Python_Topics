@@ -12,7 +12,7 @@ c_ Solution:
     @param: root: A Tree
     @return: Postorder in ArrayList which contains node values.
     """
-    ___ postorderTraversal(self, root):
+    ___ postorderTraversal  root):
         ans    # list
         __ n.. root:
             r.. ans

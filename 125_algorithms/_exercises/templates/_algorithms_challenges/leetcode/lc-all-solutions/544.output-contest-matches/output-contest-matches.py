@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findContestMatch(self, n):
+  ___ findContestMatch  n):
     """
     :type n: int
     :rtype: str

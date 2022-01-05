@@ -10,7 +10,7 @@ c_ MedianFinder:
     right    # list
     median = N..
 
-  ___ addNum(self, num):
+  ___ addNum  num):
     """
     Adds a num into the data structure.
     :type num: int

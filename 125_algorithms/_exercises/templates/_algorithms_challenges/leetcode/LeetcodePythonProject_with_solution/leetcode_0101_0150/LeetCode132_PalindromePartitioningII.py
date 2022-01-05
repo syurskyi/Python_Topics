@@ -5,7 +5,7 @@ Created on Feb 8, 2017
 '''
 
 c_ Solution(object):
-    ___ minCut(self, s):
+    ___ minCut  s):
         """
         :type s: str
         :rtype: int

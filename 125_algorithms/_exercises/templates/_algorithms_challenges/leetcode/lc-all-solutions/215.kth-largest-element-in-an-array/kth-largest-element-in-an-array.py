@@ -2,7 +2,7 @@ _______ r__
 
 
 c_ Solution(object):
-  ___ findKthLargest(self, nums, k):
+  ___ findKthLargest  nums, k):
     """
     :type A: List[int]
     :type k: int

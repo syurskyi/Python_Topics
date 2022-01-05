@@ -4,7 +4,7 @@ Created on Oct 26, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findShortestSubArray(self, nums):
+    ___ findShortestSubArray  nums):
         """
         :type nums: List[int]
         :rtype: int

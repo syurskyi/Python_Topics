@@ -5,7 +5,7 @@ Created on Apr 2, 2017
 '''
 
 c_ Solution(object):
-    ___ isRectangleCover(self, rectangles):
+    ___ isRectangleCover  rectangles):
         __ n.. rectangles:
             r.. F..
         x1, x2, y1, y2 = float('inf'), float('-inf'), float('inf'), float('-inf')
@@ -14,8 +14,8 @@ c_ Solution(object):
         ___ rect __ rectangles:
             x1 = m..(x1, rect[0])
             y1 = m..(y1, rect[1])
-            x2 = max(x2, rect[2])
-            y2 = max(y2, rect[3])
+            x2 = m..(x2, rect[2])
+            y2 = m..(y2, rect[3])
             
             area += (rect[2]-rect[0])*(rect[3]-rect[1])
             

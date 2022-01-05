@@ -4,7 +4,7 @@ Created on Apr 20, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ eventualSafeNodes(self, graph):
+    ___ eventualSafeNodes  graph):
         """
         :type graph: List[List[int]]
         :rtype: List[int]
@@ -32,7 +32,7 @@ c_ Solution(object):
         res.s..()
         r.. res
     
-    ___ eventualSafeNodes_own_TLE(self, graph):
+    ___ eventualSafeNodes_own_TLE  graph):
         """
         :type graph: List[List[int]]
         :rtype: List[int]
@@ -44,7 +44,7 @@ c_ Solution(object):
             getIsCycle(i, i, graph, visited, isCycle)
         r.. [i ___ i __ r..(n) __ n.. isCycle[i]]
     
-    ___ getIsCycle(self, i, start, graph, visited, isCycle):
+    ___ getIsCycle  i, start, graph, visited, isCycle):
         __ start __ visited o. isCycle[start]:
             isCycle[i] = T..
             r..

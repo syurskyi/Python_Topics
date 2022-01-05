@@ -4,7 +4,7 @@ Created on Mar 14, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findMinHeightTrees(self, n, edges):
+    ___ findMinHeightTrees  n, edges):
         """
         :type n: int
         :type edges: List[List[int]]

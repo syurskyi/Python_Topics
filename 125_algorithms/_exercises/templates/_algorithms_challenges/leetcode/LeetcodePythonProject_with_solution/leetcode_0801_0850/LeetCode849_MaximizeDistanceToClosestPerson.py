@@ -4,7 +4,7 @@ Created on Jun 10, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ maxDistToClosest(self, seats):
+    ___ maxDistToClosest  seats):
         """
         :type seats: List[int]
         :rtype: int
@@ -15,11 +15,11 @@ c_ Solution(object):
                 __ i __ 0:
                     res = j
                 ____:
-                    res = max(res, (j-i+1) >> 1)
+                    res = m..(res, (j-i+1) >> 1)
                 i = j+1
-        r.. max(res, l..(seats)-i)
+        r.. m..(res, l..(seats)-i)
     
-    ___ maxDistToClosest_twoPass(self, seats):
+    ___ maxDistToClosest_twoPass  seats):
         """
         :type seats: List[int]
         :rtype: int
@@ -39,7 +39,7 @@ c_ Solution(object):
         res = float('-inf')
         ___ i __ r..(n):
             __ left[i+1] != 0 a.. right[i] != 0:
-                res = max(res, m..(left[i+1], right[i]))
+                res = m..(res, m..(left[i+1], right[i]))
         r.. res
     
     ___ test

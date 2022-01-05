@@ -10,10 +10,10 @@ c_ Clock(object):
     ___ __repr__
         r.. "%02d:%02d" % (hour, minute)
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. repr(self) __ repr(other)
 
-    ___ add(self, minutes):
+    ___ add  minutes):
         minute += minutes
         r.. cleanup()
 

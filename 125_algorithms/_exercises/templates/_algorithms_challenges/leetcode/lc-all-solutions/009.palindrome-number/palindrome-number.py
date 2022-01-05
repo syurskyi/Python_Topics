@@ -1,6 +1,6 @@
 c_ Solution(object):
   # normal way
-  ___ _isPalindrome(self, x):
+  ___ _isPalindrome  x):
     """
     :type x: int
     :rtype: bool
@@ -13,7 +13,7 @@ c_ Solution(object):
     r.. z __ y
 
   # faster way
-  ___ isPalindrome(self, x):
+  ___ isPalindrome  x):
     """
     :type x: int
     :rtype: bool

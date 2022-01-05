@@ -4,7 +4,7 @@ Created on Sep 30, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ primePalindrome(self, N):
+    ___ primePalindrome  N):
         """
         :type N: int
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(object):
             __ y >= n a.. isPrime(y):
                 r.. y
     
-    ___ isPrime(self, n):
+    ___ isPrime  n):
         __ n < 2 o. n % 2 __ 0:
             r.. n __ 2
         ___ i __ r..(3, i..(n**0.5)+1, 2):

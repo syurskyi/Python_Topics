@@ -5,7 +5,7 @@ Created on Feb 23, 2017
 '''
 
 c_ Solution(object):
-    ___ majorityElement(self, nums):
+    ___ majorityElement  nums):
         """
         :type nums: List[int]
         :rtype: List[int]

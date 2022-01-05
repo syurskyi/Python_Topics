@@ -33,7 +33,7 @@ ____ typing _______ List, Set
 
 
 c_ Solution:
-    ___ eventualSafeNodes(self, graph: List[List[i..]]) __ List[i..]:
+    ___ eventualSafeNodes  graph: List[List[i..]]) __ List[i..]:
         """
         detect cycle in the node
         prune by nodes with no cycle
@@ -50,7 +50,7 @@ c_ Solution:
             __ u __ acyclic
         ]
 
-    ___ dfs(self, graph, cur, visit, acyclic):
+    ___ dfs  graph, cur, visit, acyclic):
         visit[cur] = 1
         ___ nbr __ graph[cur]:
             __ visit[nbr] __ 2:

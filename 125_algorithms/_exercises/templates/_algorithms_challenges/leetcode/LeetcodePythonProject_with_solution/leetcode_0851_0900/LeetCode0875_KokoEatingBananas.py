@@ -4,7 +4,7 @@ Created on Oct 7, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minEatingSpeed(self, piles, H):
+    ___ minEatingSpeed  piles, H):
         """
         :type piles: List[int]
         :type H: int
@@ -12,7 +12,7 @@ c_ Solution(object):
         """
         _______ math
         piles.s..()
-        l, r = 1, max(piles)
+        l, r = 1, m..(piles)
         w.... l <= r:
             mid = l+(r-l)//2
             sumVal = s..(math.ceil(float(num)/mid) ___ num __ piles)

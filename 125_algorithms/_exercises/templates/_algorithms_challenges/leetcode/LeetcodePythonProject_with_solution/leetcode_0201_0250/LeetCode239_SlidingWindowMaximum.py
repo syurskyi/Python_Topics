@@ -5,7 +5,7 @@ Created on Feb 26, 2017
 '''
 
 c_ Solution(object):
-    ___ maxSlidingWindow(self, nums, k):
+    ___ maxSlidingWindow  nums, k):
         """
         :type nums: List[int]
         :type k: int

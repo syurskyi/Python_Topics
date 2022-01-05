@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ smallestRangeII(self, A, K):
+    ___ smallestRangeII  A, K):
         """
         :type A: List[int]
         :type K: int
@@ -10,7 +10,7 @@ c_ Solution(object):
         res = A[-1] - A[0]
         ___ i __ r..(l..(A)-1):
             minVal = m..(A[0]+2*K, A[i+1])
-            maxVal = max(A[-1], A[i]+2*K)
+            maxVal = m..(A[-1], A[i]+2*K)
             res = m..(res, maxVal - minVal)
         r.. res
 

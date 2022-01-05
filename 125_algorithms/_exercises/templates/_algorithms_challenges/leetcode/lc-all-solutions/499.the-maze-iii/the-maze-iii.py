@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ Solution(object):
-  ___ findShortestWay(self, maze, ball, hole):
+  ___ findShortestWay  maze, ball, hole):
     """
     :type maze: List[List[int]]
     :type ball: List[int]

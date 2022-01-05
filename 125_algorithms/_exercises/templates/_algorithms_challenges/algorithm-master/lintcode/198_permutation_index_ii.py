@@ -12,7 +12,7 @@ c_ Solution:
     @param: A: An array of integers
     @return: A long integer
     """
-    ___ permutationIndexII(self, A):
+    ___ permutationIndexII  A):
         ans = 1
         __ n.. A:
             r.. ans

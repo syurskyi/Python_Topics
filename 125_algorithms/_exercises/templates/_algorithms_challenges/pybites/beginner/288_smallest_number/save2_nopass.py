@@ -4,7 +4,7 @@ _______ pandas __ pd
 
 
 ___ minimum_number(d..: List[i..]) __ i..:
-    try:
+    ___
         d.. = pd.Series(d..).drop_duplicates().tolist()
         l..    # list
         ___ i __ d..:
@@ -14,5 +14,5 @@ ___ minimum_number(d..: List[i..]) __ i..:
             __ l..[0] > l..[i]:
                 l..[0] = l..[i]
         r.. l..[0]
-    except:
+    ______:
         r.. 0

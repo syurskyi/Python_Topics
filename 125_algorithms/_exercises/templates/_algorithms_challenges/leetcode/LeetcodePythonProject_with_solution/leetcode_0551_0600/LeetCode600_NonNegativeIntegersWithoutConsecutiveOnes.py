@@ -5,7 +5,7 @@ Created on Sep 5, 2017
 '''
 
 c_ Solution(object):
-    ___ findIntegers(self, num):
+    ___ findIntegers  num):
         """
         :type num: int
         :rtype: int

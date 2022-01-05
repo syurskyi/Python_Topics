@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ swapPairs(self, head):
+  ___ swapPairs  head):
     """
     :type head: ListNode
     :rtype: ListNode

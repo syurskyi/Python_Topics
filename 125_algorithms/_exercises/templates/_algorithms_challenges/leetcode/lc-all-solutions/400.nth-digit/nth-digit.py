@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findNthDigit(self, n):
+  ___ findNthDigit  n):
     """
     :type n: int
     :rtype: int

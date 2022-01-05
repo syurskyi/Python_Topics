@@ -14,7 +14,7 @@ c_ WordDictionary(object):
     ___ - ):
         root = TrieNode()
     
-    ___ addWord(self, word):
+    ___ addWord  word):
         children = root.children
         ___ i, c __ e..(word):
             __ c __ children:
@@ -26,7 +26,7 @@ c_ WordDictionary(object):
             __ i __ l..(word)-1:
                 t.isLeaf = T..
     
-    ___ searchDFS(self, children, word, startInd):
+    ___ searchDFS  children, word, startInd):
         __ startInd __ l..(word):
             r.. bool(n.. children)
         c = word[startInd]
@@ -44,6 +44,6 @@ c_ WordDictionary(object):
         ____:
             r.. F..
     
-    ___ s..(self, word):
+    ___ s..  word):
         r.. searchDFS(root.children, word, 0)
     

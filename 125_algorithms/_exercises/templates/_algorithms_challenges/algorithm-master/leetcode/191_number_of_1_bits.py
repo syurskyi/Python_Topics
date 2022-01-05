@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ hammingWeight(self, n):
+    ___ hammingWeight  n):
         """
         :type n: int
         :rtype: int

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ permuteUnique(self, nums):
+  ___ permuteUnique  nums):
     """
     :type nums: List[int]
     :rtype: List[List[int]]

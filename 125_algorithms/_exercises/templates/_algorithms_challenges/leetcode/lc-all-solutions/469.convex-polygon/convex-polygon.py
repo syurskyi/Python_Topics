@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isConvex(self, points):
+  ___ isConvex  points):
     """
     :type points: List[List[int]]
     :rtype: bool

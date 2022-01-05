@@ -22,7 +22,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ findItinerary(self, tickets):
+    ___ findItinerary  tickets):
         """
         Euler path:
         An Euler path is a path that uses every edge of a graph exactly once.
@@ -44,7 +44,7 @@ c_ Solution(object):
         dfs(G, 'JFK', ret)
         r.. l..(ret)
 
-    ___ dfs(self, G, cur, ret):
+    ___ dfs  G, cur, ret):
         w.... G[cur]:
             dfs(G, heapq.heappop(G[cur]), ret)
 

@@ -14,7 +14,7 @@ A solution set is:
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ combinationSum(self, candidates, target):
+    ___ combinationSum  candidates, target):
         """
         dfs
 
@@ -28,7 +28,7 @@ c_ Solution:
         get_combination(target, candidates, [], result)
         r.. result
 
-    ___ get_combination(self, target, candidates, current, result):
+    ___ get_combination  target, candidates, current, result):
         __ n.. candidates o. s..(current)>target:
             r..
         __ s..(current)__target:
@@ -41,5 +41,5 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().combinationSum([2,3,6,7], 7)

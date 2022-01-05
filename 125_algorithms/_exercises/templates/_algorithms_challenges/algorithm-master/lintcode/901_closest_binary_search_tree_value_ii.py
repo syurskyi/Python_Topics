@@ -8,7 +8,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ closestKValues(self, root, target, k):
+    ___ closestKValues  root, target, k):
         """
         :type root: TreeNode
         :type target: float
@@ -51,7 +51,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ inorder_traverse(self, root, vals):
+    ___ inorder_traverse  root, vals):
         __ n.. root:
             r..
 

@@ -4,7 +4,7 @@ Created on Sep 24, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ shortestPathAllKeys(self, grid):
+    ___ shortestPathAllKeys  grid):
         """
         :type grid: List[str]
         :rtype: int

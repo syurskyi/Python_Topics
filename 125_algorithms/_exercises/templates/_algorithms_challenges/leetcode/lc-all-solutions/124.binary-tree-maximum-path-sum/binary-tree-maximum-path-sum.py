@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ maxPathSum(self, root):
+  ___ maxPathSum  root):
     """
     :type root: TreeNode
     :rtype: int
@@ -15,6 +15,6 @@ c_ Solution(object):
     ___ dfs(root):
       __ n.. root: r.. (0, float("-inf"))
       (l, lm), (r, rm) = map(dfs, [root.left, root.right])
-      r.. (max(root.val, root.val + max(l, r)), max(lm, rm, root.val + max(l, r), root.val, root.val + l + r))
+      r.. (m..(root.val, root.val + m..(l, r)), m..(lm, rm, root.val + m..(l, r), root.val, root.val + l + r))
 
     r.. dfs(root)[1]

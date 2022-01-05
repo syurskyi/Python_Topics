@@ -17,7 +17,7 @@ the total number of rows in the triangle.
 """
 
 c_ Solution(object):
-    ___ minimumTotal(self, triangle):
+    ___ minimumTotal  triangle):
         """
         :type triangle: List[List[int]]
         :rtype: int

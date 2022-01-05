@@ -21,7 +21,7 @@ c_ LRUCache(object):
         times = List()
         cache    # dict
 
-    ___ get(self, key):
+    ___ get  key):
         """
         :rtype: int
         """
@@ -31,7 +31,7 @@ c_ LRUCache(object):
             r.. node.value
         r.. -1
 
-    ___ set(self, key, value):
+    ___ set  key, value):
         """
         :type key: int
         :type value: int
@@ -67,7 +67,7 @@ c_ List(object):
         tail = N..
         size = 0
 
-    ___ insert(self, node):
+    ___ insert  node):
         """Insert node to the head"""
         node.next = head
         __ head __ n.. N..
@@ -77,7 +77,7 @@ c_ List(object):
         head = node
         size += 1
 
-    ___ touch(self, node):
+    ___ touch  node):
         """Move node to the head"""
         prev_node = node.prev
         next_node = node.next
@@ -92,7 +92,7 @@ c_ List(object):
             head.prev = node
             head = node
 
-    ___ remove(self, node):
+    ___ remove  node):
         """Remove a node"""
         prev_node = node.prev
         next_node = node.next

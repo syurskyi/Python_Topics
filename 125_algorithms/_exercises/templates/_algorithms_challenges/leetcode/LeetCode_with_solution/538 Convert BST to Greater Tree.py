@@ -26,14 +26,14 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ convertBST(self, root: 'TreeNode') __ 'TreeNode':
+    ___ convertBST  root: 'TreeNode') __ 'TreeNode':
         """
         in-order traversal, right first
         """
         walk(root, 0)
         r.. root
 
-    ___ walk(self, node, cur_sum):
+    ___ walk  node, cur_sum):
         """stateless walk"""
         __ n.. node:
             r.. cur_sum

@@ -15,7 +15,7 @@ c_ Solution:
     1. recursion from right to left
     2. first scan the nxt by level
     """
-    ___ connect(self, root):
+    ___ connect  root):
         """
         :type root: TreeLinkNode
         :rtype: void
@@ -50,7 +50,7 @@ c_ Solution:
     """
     Iteration
     """
-    ___ connect(self, root):
+    ___ connect  root):
         """
         :type root: TreeLinkNode
         :rtype: void
@@ -83,7 +83,7 @@ c_ Solution:
     """
     Level Traversal
     """
-    ___ connect(self, root):
+    ___ connect  root):
         """
         :type root: TreeLinkNode
         :rtype: void

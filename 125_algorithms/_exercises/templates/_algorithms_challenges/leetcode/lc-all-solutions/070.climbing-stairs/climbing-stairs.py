@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ climbStairs(self, n):
+  ___ climbStairs  n):
     """
     :type n: int
     :rtype: int

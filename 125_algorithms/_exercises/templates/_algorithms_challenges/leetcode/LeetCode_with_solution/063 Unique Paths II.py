@@ -19,7 +19,7 @@ Note: m and n will be at most 100.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ uniquePathsWithObstacles(self, obstacleGrid):
+    ___ uniquePathsWithObstacles  obstacleGrid):
         """
         dp
         :param obstacleGrid:  a list of lists of integers
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. path[m-1][n-1]
 
-__ __name____"__main__":
+__ _____ __ ____
     grid = [[0, 0], [1, 1], [0, 0]]
     ... Solution().uniquePathsWithObstacles(grid)__0
 

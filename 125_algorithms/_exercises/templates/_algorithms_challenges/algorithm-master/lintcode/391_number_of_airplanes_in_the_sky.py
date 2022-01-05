@@ -12,7 +12,7 @@ c_ Solution:
     @param: airplanes: An interval array
     @return: Count of airplanes are in the sky.
     """
-    ___ countOfAirplanes(self, airplanes):
+    ___ countOfAirplanes  airplanes):
         ans = 0
         __ n.. airplanes:
             r.. ans
@@ -27,5 +27,5 @@ c_ Solution:
                 cnt += 1
             ____:
                 cnt -= 1
-            ans = max(ans, cnt)
+            ans = m..(ans, cnt)
         r.. ans

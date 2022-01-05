@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ splitArray(self, nums):
+  ___ splitArray  nums):
     """
     :type nums: List[int]
     :rtype: bool

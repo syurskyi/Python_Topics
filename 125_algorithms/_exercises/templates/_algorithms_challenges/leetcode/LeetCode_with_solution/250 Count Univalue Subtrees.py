@@ -16,7 +16,7 @@ c_ Solution:
     ___ - ):
         cnt = 0
 
-    ___ countUnivalSubtrees(self, root):
+    ___ countUnivalSubtrees  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution:
         is_unival(root)
         r.. cnt
 
-    ___ is_unival(self, cur):
+    ___ is_unival  cur):
         __ n.. cur:
             r.. T..
 

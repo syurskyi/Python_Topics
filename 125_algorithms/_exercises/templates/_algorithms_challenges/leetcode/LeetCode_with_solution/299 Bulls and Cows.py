@@ -4,7 +4,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ getHint(self, secret, guess):
+    ___ getHint  secret, guess):
         """
         Need to revert B
 

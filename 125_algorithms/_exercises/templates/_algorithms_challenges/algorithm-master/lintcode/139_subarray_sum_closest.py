@@ -7,7 +7,7 @@ c_ Solution:
     @param: nums: A list of integers
     @return: A list of integers includes the index of the first number and the index of the last number
     """
-    ___ subarraySumClosest(self, nums):
+    ___ subarraySumClosest  nums):
         """
         Prefix Sum
         prefix_sum[i] means the culmulative sum before `i + 1` in `nums`

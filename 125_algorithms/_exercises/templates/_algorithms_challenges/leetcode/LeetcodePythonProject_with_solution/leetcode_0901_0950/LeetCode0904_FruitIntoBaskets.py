@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ totalFruit(self, tree):
+    ___ totalFruit  tree):
         """
         :type tree: List[int]
         :rtype: int
@@ -14,8 +14,8 @@ c_ Solution(object):
                 __ hashmap[tree[left]] __ 0:
                     del hashmap[tree[left]]
                 left += 1
-            res = max(res, i-left+1)
-        res = max(res, l..(tree)-left)
+            res = m..(res, i-left+1)
+        res = m..(res, l..(tree)-left)
         r.. res
 
     ___ test

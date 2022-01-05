@@ -4,7 +4,7 @@ Created on Nov 1, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findSubstring(self, s, words):
+    ___ findSubstring  s, words):
         """
         :type s: str
         :type words: List[str]

@@ -12,7 +12,7 @@ return 5.
 """
 
 c_ Solution(object):
-    ___ lengthOfLastWord(self, s):
+    ___ lengthOfLastWord  s):
         """
         :type s: str
         :rtype: int

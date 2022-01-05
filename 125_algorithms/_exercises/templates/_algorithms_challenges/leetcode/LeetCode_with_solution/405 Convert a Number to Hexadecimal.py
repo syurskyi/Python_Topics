@@ -28,7 +28,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ toHex(self, num):
+    ___ toHex  num):
         """
         All use bit manipulation
         :type num: int
@@ -41,7 +41,7 @@ c_ Solution(object):
 
         r.. ''.j..(ret[::-1]) o. '0'
 
-    ___ toHexNormal(self, num):
+    ___ toHexNormal  num):
         """
         Python arithmetic handles the negative number very well
         :type num: int
@@ -54,11 +54,11 @@ c_ Solution(object):
 
         r.. ''.j..(ret[::-1]) o. '0'
 
-    ___ encode(self, d):
+    ___ encode  d):
         __ 0 <= d < 10:
             r.. s..(d)
 
-        r.. chr(ord('a') + d - 10)
+        r.. chr(o..('a') + d - 10)
 
 
 __ _______ __ _______

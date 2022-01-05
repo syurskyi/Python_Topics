@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isSubsequence(self, s, t):
+  ___ isSubsequence  s, t):
     """
     :type s: str
     :type t: str

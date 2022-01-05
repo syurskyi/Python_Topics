@@ -4,7 +4,7 @@ Created on Apr 4, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ maxChunksToSorted(self, arr):
+    ___ maxChunksToSorted  arr):
         """
         :type arr: List[int]
         :rtype: int

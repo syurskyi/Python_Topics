@@ -11,7 +11,7 @@ c_ Rational(object):
     ___ - , numer, denom):
         numer, denom = _reduce(numer, denom)
 
-    ___ _reduce(self, numer, denom):
+    ___ _reduce  numer, denom):
         __ numer __ 0:
             n, d = 0, 1
         ____:
@@ -21,28 +21,28 @@ c_ Rational(object):
                 n, d = -n, -d
         r.. n, d
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. numer __ other.numer a.. denom __ other.denom
 
     ___ __repr__
         r.. '{}/{}'.f..(numer, denom)
 
-    ___ __add__(self, other):
+    ___ __add__  other):
         r.. Rational(
             numer*other.denom + denom*other.numer,
             denom*other.denom
         )
 
-    ___ __sub__(self, other):
+    ___ __sub__  other):
         r.. Rational(
             numer*other.denom - denom*other.numer,
             denom*other.denom
         )
 
-    ___ __mul__(self, other):
+    ___ __mul__  other):
         r.. Rational(numer * other.numer, denom * other.denom)
 
-    ___ __truediv__(self, other):
+    ___ __truediv__  other):
         r.. Rational(numer * other.denom, denom * other.numer)
 
     ___ __abs__
@@ -51,8 +51,8 @@ c_ Rational(object):
         ____:
             r.. Rational(-numer, denom)
 
-    ___ __pow__(self, power):
+    ___ __pow__  power):
         r.. Rational(numer ** power, denom ** power)
 
-    ___ __rpow__(self, base):
+    ___ __rpow__  base):
         r.. base ** (numer / denom)

@@ -2,8 +2,8 @@ amount_values = i..(input())
 results    # list
 
 ___ get_round_winner(player1, player2):
-    player1_move = ord(player1)
-    player2_move = ord(player2)
+    player1_move = o..(player1)
+    player2_move = o..(player2)
     __(player1_move < player2_move):
         __(player1_move - player2_move < -2):
             r.. 2

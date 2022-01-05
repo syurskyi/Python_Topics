@@ -37,7 +37,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ canCross(self, stones):
+    ___ canCross  stones):
         """
         Instead of having F[i][step] = True/False, use F[i] = set of steps
 

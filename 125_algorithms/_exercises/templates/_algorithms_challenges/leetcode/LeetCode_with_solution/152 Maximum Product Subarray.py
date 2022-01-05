@@ -8,10 +8,10 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ maxProduct_oneline(self, nums):
-        r.. max(reduce(l.... A, n: [max(A), m..(n, A[1]*n, A[2]*n), max(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
+    ___ maxProduct_oneline  nums):
+        r.. m..(reduce(l.... A, n: [m..(A), m..(n, A[1]*n, A[2]*n), m..(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
 
-    ___ maxProduct(self, nums):
+    ___ maxProduct  nums):
         """
         DP
         State definitions:
@@ -29,18 +29,18 @@ c_ Solution(object):
         large = nums[0]
         maxa = nums[0]
         ___ a __ nums[1:]:
-            small, large = m..(a, small*a, large*a), max(a, small*a, large*a)
-            maxa = max(maxa, small, large)
+            small, large = m..(a, small*a, large*a), m..(a, small*a, large*a)
+            maxa = m..(maxa, small, large)
 
         r.. maxa
 
-    ___ maxProduct_error2(self, nums):
+    ___ maxProduct_error2  nums):
         """
         :type nums: List[int]
         :rtype: int
         """
         __ l..(nums) < 2:
-            r.. max(nums)
+            r.. m..(nums)
 
         n = l..(nums)
         F_pos = [0 ___ _ __ xrange(n+1)]
@@ -56,13 +56,13 @@ c_ Solution(object):
                 F_pos[i], F_neg[i] = 0, 0
             ____:
                 F_neg[i] = m..(0, F_pos[i-1]*v)
-                F_pos[i] = max(0, F_neg[i-1]*v)
+                F_pos[i] = m..(0, F_neg[i-1]*v)
 
-            maxa = max(maxa, F_pos[i])
+            maxa = m..(maxa, F_pos[i])
 
         r.. maxa
 
-    ___ maxProduct_error(self, A):
+    ___ maxProduct_error  A):
         """
         dp, collect number of negative number
         notice 0
@@ -103,11 +103,11 @@ c_ Solution(object):
             __ cur<0 a.. dp[ind+1]<1:
                 cur = 0
 
-            global_max = max(global_max, cur)
+            global_max = m..(global_max, cur)
 
         r.. global_max
 
-    ___ maxProduct_dp(self, A):
+    ___ maxProduct_dp  A):
         """
         dp, collect number of negative number (notice 0).
         negative number and 0 will be special in this question
@@ -157,12 +157,12 @@ c_ Solution(object):
                 __ start_ptr__end_ptr:  # consider A=[-2, 0, -1] when processing [-1]
                     cur = 0 # otherwise 1
                     
-            global_max = max(global_max, cur)
+            global_max = m..(global_max, cur)
 
         r.. global_max
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().maxProduct([2,3,-2,4])
     ... Solution().maxProduct([2,-5,-2,-4,3])__24
     ... Solution().maxProduct([-2, 0, -1])__0

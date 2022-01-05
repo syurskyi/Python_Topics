@@ -5,7 +5,7 @@ Created on Mar 5, 2017
 '''
 
 c_ Solution(object):
-    ___ numWays(self, n, k):
+    ___ numWays  n, k):
         """
         :type n: int
         :type k: int

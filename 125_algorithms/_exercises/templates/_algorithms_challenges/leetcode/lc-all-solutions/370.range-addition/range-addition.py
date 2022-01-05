@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ getModifiedArray(self, length, updates):
+  ___ getModifiedArray  length, updates):
     """
     :type length: int
     :type updates: List[List[int]]

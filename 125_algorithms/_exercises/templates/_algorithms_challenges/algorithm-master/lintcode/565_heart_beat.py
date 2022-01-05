@@ -8,7 +8,7 @@ c_ HeartBeat:
     @param: k: An integer
     @return: nothing
     """
-    ___ initialize(self, slaves_ip_list, k):
+    ___ initialize  slaves_ip_list, k):
         slaves_ip_list.update(d...f..(slaves_ip_list, 0))
         ttl = 2 * k
 
@@ -17,7 +17,7 @@ c_ HeartBeat:
     @param: slave_ip: the ip address of the slave server
     @return: nothing
     """
-    ___ ping(self, timestamp, slave_ip):
+    ___ ping  timestamp, slave_ip):
         __ slave_ip __ slaves_ip_list:
             slaves_ip_list[slave_ip] = timestamp
 
@@ -25,7 +25,7 @@ c_ HeartBeat:
     @param: timestamp: current timestamp in seconds
     @return: a list of slaves'ip addresses that died
     """
-    ___ getDiedSlaves(self, timestamp):
+    ___ getDiedSlaves  timestamp):
         __ n.. timestamp:
             r.. []
         r.. [ ip

@@ -5,7 +5,7 @@ Created on Mar 1, 2017
 '''
 
 c_ Solution(object):
-    ___ minCost(self, costs):
+    ___ minCost  costs):
         """
         :type costs: List[List[int]]
         :rtype: int

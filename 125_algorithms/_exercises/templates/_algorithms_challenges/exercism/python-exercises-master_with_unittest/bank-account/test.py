@@ -98,9 +98,9 @@ c_ BankAccountTest(unittest.TestCase):
 
         # Greatly improve the chance of an operation being interrupted
         # by thread switch, thus testing synchronization effectively
-        try:
+        ___
             sys.setswitchinterval(1e-12)
-        except AttributeError:
+        ______ AttributeError:
             # For Python 2 compatibility
             sys.setcheckinterval(1)
 

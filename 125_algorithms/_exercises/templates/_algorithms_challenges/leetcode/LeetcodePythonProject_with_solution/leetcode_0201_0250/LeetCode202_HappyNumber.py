@@ -5,7 +5,7 @@ Created on Feb 18, 2017
 '''
 
 c_ Solution(object):
-    ___ isHappy(self, n):
+    ___ isHappy  n):
         """
         :type n: int
         :rtype: bool

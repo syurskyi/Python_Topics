@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ validTree(self, n, edges):
+    ___ validTree  n, edges):
         """
         A graph is a tree:
           1. no cycle
@@ -31,7 +31,7 @@ c_ Solution(object):
 
         r.. l..(visited) __ n
 
-    ___ dfs(self, V, v, pi, pathset, visited):
+    ___ dfs  V, v, pi, pathset, visited):
         __ v __ pathset:
             r.. F..
 

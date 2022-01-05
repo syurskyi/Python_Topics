@@ -5,7 +5,7 @@ Created on Aug 20, 2017
 '''
 
 c_ Solution(object):
-    ___ updateMatrix(self, matrix):
+    ___ updateMatrix  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[List[int]]

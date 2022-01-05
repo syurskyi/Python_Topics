@@ -38,7 +38,7 @@ ___ generate_bc(url, separator):
 
     url = url.rstrip('/')
 
-    try:
+    ___
         ___ i, c __ e..(url):
             __ c __ ['?', '#']:
                 url = url[0:i]
@@ -57,7 +57,7 @@ ___ generate_bc(url, separator):
 
         breadcrumb += separator + '<span class="active">{}</span>'.f..(get_element_name(menus[-1]))
         r.. breadcrumb
-    except:
+    ______:
         r.. url
 
 

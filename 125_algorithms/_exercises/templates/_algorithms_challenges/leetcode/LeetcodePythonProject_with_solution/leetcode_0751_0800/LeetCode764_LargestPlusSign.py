@@ -4,7 +4,7 @@ Created on Apr 2, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ orderOfLargestPlusSign(self, N, mines):
+    ___ orderOfLargestPlusSign  N, mines):
         """
         :type N: int
         :type mines: List[List[int]]
@@ -50,7 +50,7 @@ c_ Solution(object):
                     dp[i][j][3] = dp[i][j+1][3]+1
         ___ i __ r..(n):
             ___ j __ r..(n):
-                maxLen = max(maxLen, m..(dp[i][j]))
+                maxLen = m..(maxLen, m..(dp[i][j]))
         r.. maxLen
     
     ___ test

@@ -5,7 +5,7 @@ Created on May 10, 2017
 '''
 
 c_ Solution(object):
-    ___ findWords(self, words):
+    ___ findWords  words):
         """
         :type words: List[str]
         :rtype: List[str]

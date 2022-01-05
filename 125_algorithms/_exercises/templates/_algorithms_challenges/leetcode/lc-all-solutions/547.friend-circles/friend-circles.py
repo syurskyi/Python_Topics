@@ -4,13 +4,13 @@ c_ UnionFind(object):
     rank = [0 ___ i __ r..(n)]
     count = n
 
-  ___ find(self, x):
+  ___ find  x):
     dad = dad
     __ dad[x] != x:
       dad[x] = find(dad[x])
     r.. dad[x]
 
-  ___ union(self, x, y):
+  ___ union  x, y):
     dad = dad
     rank = rank
     x, y = map(find, [x, y])
@@ -30,7 +30,7 @@ c_ UnionFind(object):
 
 
 c_ Solution(object):
-  ___ findCircleNum(self, M):
+  ___ findCircleNum  M):
     """
     :type M: List[List[int]]
     :rtype: int

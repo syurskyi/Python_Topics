@@ -13,7 +13,7 @@ c_ MyCalendar(object):
     ___ - ):
         intervals    # list
 
-    ___ book(self, start, end):
+    ___ book  start, end):
         """
         :type start: int
         :type end: int

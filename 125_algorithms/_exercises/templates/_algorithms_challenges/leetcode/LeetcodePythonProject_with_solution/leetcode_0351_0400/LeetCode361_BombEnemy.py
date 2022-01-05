@@ -5,7 +5,7 @@ Created on Mar 27, 2017
 '''
 
 c_ Solution(object):
-    ___ maxKilledEnemies(self, grid):
+    ___ maxKilledEnemies  grid):
         __ n.. grid o. n.. grid[0]: r.. 0
         m, n = l..(grid), l..(grid[0])
         res = 0
@@ -24,5 +24,5 @@ c_ Solution(object):
                         __ grid[k][j] __ 'W': break
                         __ grid[k][j] __ 'E': cols[j] += 1
                 __ grid[i][j] __ '0':
-                    res = max(res, cols[j]+rows)
+                    res = m..(res, cols[j]+rows)
         r.. res

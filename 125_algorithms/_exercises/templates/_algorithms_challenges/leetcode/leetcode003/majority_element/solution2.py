@@ -7,7 +7,7 @@ exist in the array.
 """
 
 c_ Solution(object):
-    ___ majorityElement(self, nums):
+    ___ majorityElement  nums):
         """
         :type nums: List[int]
         :rtype: int

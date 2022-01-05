@@ -5,7 +5,7 @@ Created on Apr 26, 2017
 '''
 
 c_ Solution(object):
-    ___ findAllConcatenatedWordsInADict(self, words):
+    ___ findAllConcatenatedWordsInADict  words):
         """
         :type words: List[str]
         :rtype: List[str]
@@ -19,7 +19,7 @@ c_ Solution(object):
             hashset.add(word)
         r.. res
     
-    ___ helper(self, hashset, word1):
+    ___ helper  hashset, word1):
         __ n.. hashset: r.. F..
         dp = [F..]*(l..(word1)+1)
         dp[0] = T..

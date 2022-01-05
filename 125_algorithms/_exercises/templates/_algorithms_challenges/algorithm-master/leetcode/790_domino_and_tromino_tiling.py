@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ numTilings(self, N):
+    ___ numTilings  N):
         """
         :type N: int
         :rtype: int

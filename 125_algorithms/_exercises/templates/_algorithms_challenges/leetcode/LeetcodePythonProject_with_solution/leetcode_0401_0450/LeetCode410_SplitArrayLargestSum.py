@@ -5,10 +5,10 @@ Created on Apr 10, 2017
 '''
 
 c_ Solution(object):
-    ___ splitArray(self, nums, m):
+    ___ splitArray  nums, m):
         left, right = 0, 0
         ___ num __ nums:
-            left = max(left, num)
+            left = m..(left, num)
             right += num
         w.... left < right:
             mid = (left+right)//2
@@ -18,7 +18,7 @@ c_ Solution(object):
                 left = mid+1
         r.. left
     
-    ___ doable(self, nums, cuts, maxVal):
+    ___ doable  nums, cuts, maxVal):
         acc = 0
         ___ num __ nums:
             __ num > maxVal:

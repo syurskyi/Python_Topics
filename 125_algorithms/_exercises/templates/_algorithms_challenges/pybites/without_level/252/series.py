@@ -7,9 +7,9 @@ ___ return_at_index(ser: pd.Series, idx: i..) __ object:
     If you want to be extra careful catch and raise an error if
        the index does not exist.
     """
-    try:
+    ___
         r.. ser.iloc[idx]
-    except KeyError:
+    ______ KeyError:
         r.. IndexError _*Index error for {idx=} ')
 
 

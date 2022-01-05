@@ -5,7 +5,7 @@ Created on Feb 12, 2017
 '''
 
 c_ Solution(object):
-    ___ findPeakElement(self, nums):
+    ___ findPeakElement  nums):
         """
         :type nums: List[int]
         :rtype: int

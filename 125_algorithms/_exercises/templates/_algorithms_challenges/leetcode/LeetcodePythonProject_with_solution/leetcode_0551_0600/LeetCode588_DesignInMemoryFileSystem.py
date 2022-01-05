@@ -15,7 +15,7 @@ c_ FileSystem(object):
     ___ - ):
         root = TreeNode()
     
-    ___ ls(self, path):
+    ___ ls  path):
         path = path[1:]
         arr = path.s..('/')
         __ arr[0] __ '':
@@ -29,7 +29,7 @@ c_ FileSystem(object):
         ____:
             r.. node.childFolders
     
-    ___ mkdir(self, path):
+    ___ mkdir  path):
         path = path[1:]
         arr = path.s..('/')
         node = root
@@ -42,7 +42,7 @@ c_ FileSystem(object):
                 node.childFolders.a..(folder)
                 node = newNode
     
-    ___ addContentToFile(self, filePath, content):
+    ___ addContentToFile  filePath, content):
         filePath = filePath[1:]
         arr = filePath.s..('/')
         file = arr[-1]
@@ -65,7 +65,7 @@ c_ FileSystem(object):
             newNode.isFile = T..
             newNode.content += content
     
-    ___ readContentFromFile(self, filePath):
+    ___ readContentFromFile  filePath):
         filePath = filePath[1:]
         arr = filePath.s..('/')
         node = root

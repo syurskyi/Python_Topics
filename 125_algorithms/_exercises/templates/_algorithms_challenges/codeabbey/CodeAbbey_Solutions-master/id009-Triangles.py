@@ -4,7 +4,7 @@ ___ triangle(calculations):
         [a,b,c] = raw_input().s.. 
         [a,b,c] = i..(a),i..(b),i..(c)
         minNum = m..(i..(a),i..(b),i..(c))
-        maxNum = max(i..(a),i..(b),i..(c))
+        maxNum = m..(i..(a),i..(b),i..(c))
 
         ___ x __ [a,b,c]:
             __ i..(x) != minNum a.. i..(x) != maxNum:

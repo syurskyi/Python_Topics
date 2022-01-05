@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ lastRemaining(self, n):
+    ___ lastRemaining  n):
         """
         :type n: int
         :rtype: int

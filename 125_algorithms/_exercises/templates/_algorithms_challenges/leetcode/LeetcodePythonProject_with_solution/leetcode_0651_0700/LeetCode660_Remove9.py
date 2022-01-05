@@ -4,7 +4,7 @@ Created on Oct 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ newInteger(self, n):
+    ___ newInteger  n):
         """
         :type n: int
         :rtype: int

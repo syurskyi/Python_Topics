@@ -4,7 +4,7 @@ Created on Jan 7, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ isPalindrome(self, x):
+    ___ isPalindrome  x):
         """
         :type x: int
         :rtype: bool

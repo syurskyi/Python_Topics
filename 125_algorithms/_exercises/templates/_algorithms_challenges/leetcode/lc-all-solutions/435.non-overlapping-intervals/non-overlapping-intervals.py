@@ -5,7 +5,7 @@
 #         self.end = e
 
 c_ Solution(object):
-  ___ eraseOverlapIntervals(self, intervals):
+  ___ eraseOverlapIntervals  intervals):
     """
     :type intervals: List[Interval]
     :rtype: int

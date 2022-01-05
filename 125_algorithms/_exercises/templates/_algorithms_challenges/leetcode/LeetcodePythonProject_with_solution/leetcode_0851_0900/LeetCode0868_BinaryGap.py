@@ -4,7 +4,7 @@ Created on Sep 30, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ binaryGap(self, N):
+    ___ binaryGap  N):
         """
         :type N: int
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(object):
             d = n % 2
             __ d __ 1:
                 __ prev >= 0:
-                    res = max(res, i-prev)
+                    res = m..(res, i-prev)
                 prev = i
             n //= 2
             i += 1

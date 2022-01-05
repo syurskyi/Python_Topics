@@ -4,7 +4,7 @@ Created on Sep 10, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maximumProduct(self, nums):
+    ___ maximumProduct  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -30,7 +30,7 @@ c_ Solution(object):
                 l3 = num
         res = float('-inf')
         ___ a1, a2, a3 __ (l1, l2, l3), (s1, s2, l1):
-            res = max(res, a1*a2*a3)
+            res = m..(res, a1*a2*a3)
         r.. res
     
     ___ test

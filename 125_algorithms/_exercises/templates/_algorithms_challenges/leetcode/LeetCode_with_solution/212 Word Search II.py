@@ -34,7 +34,7 @@ c_ Trie(object):
     ___ - ):
         root = TrieNode(N..)
 
-    ___ add(self, word):
+    ___ add  word):
         word = word.l..
         cur = root
         ___ c __ word:
@@ -48,7 +48,7 @@ c_ Solution:
     ___ - ):
         dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 
-    ___ findWords(self, board, words):
+    ___ findWords  board, words):
         """
         Trie+dfs
         pure Trie solution
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. l..(ret)
 
-    ___ dfs(self, board, i, j, parent, marked, ret):
+    ___ dfs  board, i, j, parent, marked, ret):
         """
         :type parent: TrieNode
         """

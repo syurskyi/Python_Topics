@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ moveZeroes(self, nums):
+    ___ moveZeroes  nums):
         """
         Two pointers at the left side
         Pivot
@@ -26,7 +26,7 @@ c_ Solution(object):
 
 
 c_ SolutionCount(object):
-    ___ moveZeroes(self, nums):
+    ___ moveZeroes  nums):
         """
         In-place
         :type nums: List[int]

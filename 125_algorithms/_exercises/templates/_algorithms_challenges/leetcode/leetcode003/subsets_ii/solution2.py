@@ -1,11 +1,11 @@
 c_ Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
-    ___ subsetsWithDup(self, nums):
+    ___ subsetsWithDup  nums):
         nums.s..()
         r.. subsets_aux(nums)
 
-    ___ subsets_aux(self, nums):
+    ___ subsets_aux  nums):
         __ n.. nums:
             r.. [[]]
         ____:

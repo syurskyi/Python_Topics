@@ -15,7 +15,7 @@ index 0 to 1, then 3 steps to the last index.)
 """
 
 c_ Solution(object):
-    ___ jump(self, nums):
+    ___ jump  nums):
         """
         :type nums: List[int]
         :rtype: int

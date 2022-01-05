@@ -4,7 +4,7 @@ Created on Apr 9, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ isBipartite(self, graph):
+    ___ isBipartite  graph):
         """
         :type graph: List[List[int]]
         :rtype: bool
@@ -16,7 +16,7 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ validColor(self, graph, colors, color, node):
+    ___ validColor  graph, colors, color, node):
         __ colors[node] != -1:
             r.. colors[node] __ color
         colors[node] = color

@@ -13,10 +13,10 @@ ___ simple_calculator(calculation):
       Make sure you convert both numbers to ints.
       If bad data is passed in, raise a ValueError.
    """
-   try:
+   ___
       num1, op, num2 = calculation.s..(" ")
       num1, num2 = i..(num1), i..(num2)
-   except ValueError:
+   ______ V..
       r.. ValueError
 
    ops = {
@@ -26,9 +26,9 @@ ___ simple_calculator(calculation):
       "/": operator.truediv
    }
 
-   try:
+   ___
       r.. ops[op](num1, num2)
-   except (KeyError, ZeroDivisionError):
+   ______ (KeyError, ZeroDivisionError):
       r.. ValueError
 
 

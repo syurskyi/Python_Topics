@@ -9,10 +9,10 @@ ___ validateBattlefield(field):
     ___ row __ r..(l..(field[0])):
         ___ col __ r..(l..(field)):
             __ field[row][col] __ 1:
-                try:
+                ___
                     result = getShipSize(row, col, field)
                     ships[result] = ships.get(result, 0) + 1
-                except ValueError:
+                ______ V..
                     r.. F..
     r.. ships.get(4, 0) __ 1 a.. ships.get(3, 0) __ 2 a.. ships.get(2, 0) __ 3 a.. ships.get(1, 0) __ 4
 

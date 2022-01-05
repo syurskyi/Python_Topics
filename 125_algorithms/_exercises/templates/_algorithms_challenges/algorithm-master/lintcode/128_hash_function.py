@@ -4,7 +4,7 @@ c_ Solution:
     @param: HASH_SIZE: An integer
     @return: An integer
     """
-    ___ hashCode(self, key, HASH_SIZE):
+    ___ hashCode  key, HASH_SIZE):
         __ n.. key:
             r.. 0
 
@@ -12,6 +12,6 @@ c_ Solution:
 
         _code = 0
         ___ char __ key:
-            _code = (_code * MAGIC_NUMBER + ord(char)) % HASH_SIZE
+            _code = (_code * MAGIC_NUMBER + o..(char)) % HASH_SIZE
 
         r.. _code

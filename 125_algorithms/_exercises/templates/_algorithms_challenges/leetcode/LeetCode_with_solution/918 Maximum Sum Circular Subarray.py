@@ -49,7 +49,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxSubarraySumCircular(self, A: List[i..]) __ i..:
+    ___ maxSubarraySumCircular  A: List[i..]) __ i..:
         """
         Kadane's Algorithm
         Two cases:
@@ -60,20 +60,20 @@ c_ Solution:
         """
         ret1 = max_subarray(A)
         ret2 = s..(A) + max_subarray([-a ___ a __ A[1:-1]])  # max negative (-1)
-        r.. max(ret1, ret2)
+        r.. m..(ret1, ret2)
 
-    ___ max_subarray(self, A) __ i..:
+    ___ max_subarray  A) __ i..:
         """
         dp[i] = A[i] + max(dp[i-1],0)
         """
         mx = -float('inf')
         cur = 0
         ___ a __ A:
-            cur = a + max(cur, 0)  # RHS cur is the prev
-            mx = max(mx, cur)
+            cur = a + m..(cur, 0)  # RHS cur is the prev
+            mx = m..(mx, cur)
         r.. mx
 
-    ___ maxSubarraySumCircular_error(self, A: List[i..]) __ i..:
+    ___ maxSubarraySumCircular_error  A: List[i..]) __ i..:
         """
         keep a cur_sum with index, when negative, go back to 0
         """
@@ -85,11 +85,11 @@ c_ Solution:
         w.... i < n:
             cur[0] += A[i]
             cur[1] = i
-            mx = max(mx, cur[0])
+            mx = m..(mx, cur[0])
             j = i + 1
             w.... cur[0] >= 0 a.. j < i + n:
                 cur[0] += A[j % n]
-                mx = max(mx, cur[0])
+                mx = m..(mx, cur[0])
                 j += 1
 
             i = j

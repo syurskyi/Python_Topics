@@ -30,7 +30,7 @@ c_ Solution:
         TrieNode = l....: defaultdict(TrieNode)  # not defaultdict(lambda: TrieNode)
         root = TrieNode()  # root of tire
 
-    ___ findAllConcatenatedWordsInADict(self, words: List[s..]) __ List[s..]:
+    ___ findAllConcatenatedWordsInADict  words: List[s..]) __ List[s..]:
         """
         Trie + DFS
         """
@@ -47,7 +47,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ can_concat(self, word, lo):
+    ___ can_concat  word, lo):
         __ n.. word:
             r.. F..
 
@@ -65,7 +65,7 @@ c_ Solution:
 
 
 c_ SolutionTLE:
-    ___ findAllConcatenatedWordsInADict(self, words: List[s..]) __ List[s..]:
+    ___ findAllConcatenatedWordsInADict  words: List[s..]) __ List[s..]:
         """
         Trie check cannot be greedy: cat sdog vs cats dog
 
@@ -91,7 +91,7 @@ c_ SolutionTLE:
 
         r.. ret
 
-    ___ can_concat(self, w, visited):
+    ___ can_concat  w, visited):
         __ n.. w:
             r.. F..
 

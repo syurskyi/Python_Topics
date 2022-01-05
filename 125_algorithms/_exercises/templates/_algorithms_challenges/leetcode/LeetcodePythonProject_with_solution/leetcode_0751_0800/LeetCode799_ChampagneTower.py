@@ -4,7 +4,7 @@ Created on Apr 18, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ champagneTower(self, poured, query_row, query_glass):
+    ___ champagneTower  poured, query_row, query_glass):
         """
         :type poured: int
         :type query_row: int

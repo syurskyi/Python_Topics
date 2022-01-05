@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ lengthOfLastWord(self, s: s..) __ i..:
+    ___ lengthOfLastWord  s: s..) __ i..:
         l = l..(s)-1
         count = 0
         w.... l > -1:

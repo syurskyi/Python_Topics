@@ -12,7 +12,7 @@ ___ knows(a, b):
     r.. r__(0, 1) __ 0
 
 c_ Solution(object):
-    ___ findCelebrity(self, n):
+    ___ findCelebrity  n):
         """
         :type n: int
         :rtype: int

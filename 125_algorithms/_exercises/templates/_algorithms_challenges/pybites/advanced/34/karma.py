@@ -22,7 +22,7 @@ c_ User:
     ___ fans
         r.. l..(fan_names)
 
-    ___ __add__(self,transaction):
+    ___ __add__ transaction):
         __ isi..(transaction,Transaction):
             
             _transactions.a..(transaction)

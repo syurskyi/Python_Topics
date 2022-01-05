@@ -5,7 +5,7 @@ Created on Mar 28, 2017
 '''
 
 c_ Solution(object):
-    ___ largestDivisibleSubset(self, nums):
+    ___ largestDivisibleSubset  nums):
         __ n.. nums: r.. []
         nums.s..()
         n = l..(nums)

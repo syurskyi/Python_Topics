@@ -14,22 +14,22 @@ c_ CircularBuffer(object):
         write_point = 0
 
     # (protected) helper method to support python 2/3
-    ___ _update_buffer(self, data):
-        try:
+    ___ _update_buffer  data):
+        ___
             buffer[write_point] = data
-        except T..:
-            buffer[write_point] = ord(data)
+        ______ T..:
+            buffer[write_point] = o..(data)
 
     ___ clear
         buffer = bytearray(l..(buffer))
 
-    ___ write(self, data):
+    ___ write  data):
         __ a..(buffer):
             r.. BufferFullException
         _update_buffer(data)
         write_point = (write_point + 1) % l..(buffer)
 
-    ___ overwrite(self, data):
+    ___ overwrite  data):
         _update_buffer(data)
         __ a..(buffer) a.. write_point __ read_point:
             read_point = (read_point + 1) % l..(buffer)

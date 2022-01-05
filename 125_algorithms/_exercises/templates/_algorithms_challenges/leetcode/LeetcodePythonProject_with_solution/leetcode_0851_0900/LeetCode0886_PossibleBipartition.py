@@ -4,7 +4,7 @@ Created on Oct 22, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ possibleBipartition(self, N, dislikes):
+    ___ possibleBipartition  N, dislikes):
         """
         :type N: int
         :type dislikes: List[List[int]]
@@ -20,7 +20,7 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ dfs(self, graph, group, idx, g, N):
+    ___ dfs  graph, group, idx, g, N):
         group[idx] = g
         ___ i __ r..(N):
             __ graph[idx][i] __ 1:
@@ -30,7 +30,7 @@ c_ Solution(object):
                     r.. F..
         r.. T..
     
-    ___ possibleBipartition_own_TLE(self, N, dislikes):
+    ___ possibleBipartition_own_TLE  N, dislikes):
         """
         :type N: int
         :type dislikes: List[List[int]]
@@ -45,7 +45,7 @@ c_ Solution(object):
         g0, g1 = [1], []
         r.. dfs2(g0, g1, hashmap, 2, N)
     
-    ___ dfs2(self, g0, g1, hashmap, n, N):
+    ___ dfs2  g0, g1, hashmap, n, N):
         __ n > N:
             r.. T..
         dislike0, dislike1 = F.., F..

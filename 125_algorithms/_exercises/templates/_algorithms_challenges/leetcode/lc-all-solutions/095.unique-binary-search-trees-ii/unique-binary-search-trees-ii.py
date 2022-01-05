@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ generateTrees(self, n):
+  ___ generateTrees  n):
     """
     :type n: int
     :rtype: List[TreeNode]

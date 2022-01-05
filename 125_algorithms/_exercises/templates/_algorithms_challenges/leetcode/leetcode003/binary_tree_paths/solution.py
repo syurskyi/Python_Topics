@@ -21,7 +21,7 @@ All root-to-leaf paths are:
 #         self.right = None
 
 c_ Solution(object):
-    ___ binaryTreePaths(self, root):
+    ___ binaryTreePaths  root):
         """
         :type root: TreeNode
         :rtype: List[str]
@@ -31,7 +31,7 @@ c_ Solution(object):
         binary_tree_paths(root, cand, res)
         r.. res
 
-    ___ binary_tree_paths(self, root, cand, res):
+    ___ binary_tree_paths  root, cand, res):
         __ root __ N..
             r..
         ____:

@@ -5,7 +5,7 @@ Created on Aug 23, 2017
 '''
 
 c_ Solution(object):
-    ___ optimalDivision(self, nums):
+    ___ optimalDivision  nums):
         """
         :type nums: List[int]
         :rtype: str

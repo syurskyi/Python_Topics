@@ -14,14 +14,14 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ minDepth(self, root):
+    ___ minDepth  root):
         """
         :param root: TreeNode
         :return: integer
         """
         r.. fathom(root, 0)
 
-    ___ fathom(self, root, depth):
+    ___ fathom  root, depth):
         """
         DFS
         """

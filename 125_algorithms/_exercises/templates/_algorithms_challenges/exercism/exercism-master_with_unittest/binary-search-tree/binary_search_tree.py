@@ -21,14 +21,14 @@ c_ BinarySearchTree(object):
     ___ sorted_data
         r.. [node.data ___ node __ inorder_traversal(head)]
 
-    ___ insert(self, node_data):
+    ___ insert  node_data):
         new_node = TreeNode(node_data)
         __ head __ N..
             head = new_node
         ____:
             insert_node_at(new_node, head)
 
-    ___ insert_node_at(self, new_node, position):
+    ___ insert_node_at  new_node, position):
         __ new_node.data <= position.data:
             __ position.left __ N..
                 position.left = new_node
@@ -40,7 +40,7 @@ c_ BinarySearchTree(object):
             ____:
                 insert_node_at(new_node, position.right)
 
-    ___ inorder_traversal(self, node):
+    ___ inorder_traversal  node):
         __ node.left:
             y.. ____ inorder_traversal(node.left)
         y.. node

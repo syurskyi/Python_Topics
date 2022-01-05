@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ calPoints(self, ops):
+    ___ calPoints  ops):
         """
         :type ops: List[str]
         :rtype: int

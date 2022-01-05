@@ -24,12 +24,12 @@ c_ Frame(object):
         """Return whether a frame is over."""
         r.. total_pins __ 10 o. l..(throws) __ 2
 
-    ___ throw(self, pins):
+    ___ throw  pins):
         __ total_pins + pins > 10:
             r.. ValueError("a frame's rolls cannot exceed 10")
         throws.a..(pins)
 
-    ___ score(self, next_throws):
+    ___ score  next_throws):
         result = total_pins
         __ is_strike
             result += s..(next_throws[:2])
@@ -48,7 +48,7 @@ c_ BowlingGame(object):
     ___ current_frame
         r.. frames[current_frame_idx]
 
-    ___ next_throws(self, frame_idx):
+    ___ next_throws  frame_idx):
         """Return a frame's next throws in the form of a list."""
         throws    # list
         ___ idx __ r..(frame_idx + 1, MAX_FRAME):
@@ -56,7 +56,7 @@ c_ BowlingGame(object):
         throws.extend(bonus_throws)
         r.. throws
 
-    ___ roll_bonus(self, pins):
+    ___ roll_bonus  pins):
         tenth_frame = frames[-1]
         __ tenth_frame.is_open
             r.. IndexError("cannot throw bonus with an open tenth frame")
@@ -76,7 +76,7 @@ c_ BowlingGame(object):
             r.. IndexError(
                 "wrong number of fill balls when the tenth frame is a spare")
 
-    ___ roll(self, pins):
+    ___ roll  pins):
         __ n.. 0 <= pins <= 10:
             r.. ValueError("invalid pins")
         ____ current_frame_idx __ MAX_FRAME:

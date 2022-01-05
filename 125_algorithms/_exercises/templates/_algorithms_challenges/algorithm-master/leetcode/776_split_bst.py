@@ -7,7 +7,7 @@
 
 
 c_ Solution:
-    ___ splitBST(self, root, target):
+    ___ splitBST  root, target):
         """
         :type root: TreeNode
         :type target: int

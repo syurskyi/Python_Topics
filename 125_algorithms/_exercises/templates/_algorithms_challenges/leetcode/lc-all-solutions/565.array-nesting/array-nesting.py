@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ arrayNesting(self, nums):
+  ___ arrayNesting  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -15,5 +15,5 @@ c_ Solution(object):
         cache[nums[p]] = 1
         p = nums[p]
         length += 1
-      ans = max(ans, length)
+      ans = m..(ans, length)
     r.. ans

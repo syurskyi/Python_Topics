@@ -44,7 +44,7 @@ c_ Solution:
         pi    # list
         depths    # list
 
-    ___ isCousins(self, root: TreeNode, x: i.., y: i..) __ bool:
+    ___ isCousins  root: TreeNode, x: i.., y: i..) __ bool:
         """
         need to know parent and depth
         """
@@ -55,7 +55,7 @@ c_ Solution:
         r.. pi[0] != pi[1] a.. depths[0] __ depths[1]
 
 
-    ___ dfs(self, pi, node, x, depth):
+    ___ dfs  pi, node, x, depth):
         __ n.. node:
             r..
 

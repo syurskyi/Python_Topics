@@ -4,5 +4,5 @@
 
 n, k = map(i.., input().s..())
 hurdles = l..(map(i.., input().s..()))
-numberOfPotions = max(0, max(hurdles) - k)
+numberOfPotions = m..(0, m..(hurdles) - k)
 print(numberOfPotions)

@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ largestBSTSubtree(self, root):
+  ___ largestBSTSubtree  root):
     """
     :type root: TreeNode
     :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
       numBST = -1
       __ lmax < root.val < rmin a.. lnumBST != -1 a.. rnumBST != -1:
         numBST = 1 + lnumBST + rnumBST
-      maxNumBST = max(1, lmaxNumBST, rmaxNumBST, numBST)
-      r.. numBST, maxNumBST, m..(lmin, rmin, root.val), max(lmax, rmax, root.val)
+      maxNumBST = m..(1, lmaxNumBST, rmaxNumBST, numBST)
+      r.. numBST, maxNumBST, m..(lmin, rmin, root.val), m..(lmax, rmax, root.val)
 
     r.. helper(root)[1]

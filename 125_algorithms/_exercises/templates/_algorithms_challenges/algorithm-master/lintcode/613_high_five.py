@@ -12,7 +12,7 @@ c_ Solution:
     # @param {Record[]} results a list of <student_id, score>
     # @return {dict(id, average)} find the average of 5 highest scores for each person
     # <key, value> (student_id, average_score)
-    ___ highFive(self, results):
+    ___ highFive  results):
         ans    # dict
         __ n.. results:
             r.. ans

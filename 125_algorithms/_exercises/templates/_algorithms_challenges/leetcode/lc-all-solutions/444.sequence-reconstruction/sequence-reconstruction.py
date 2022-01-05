@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution(object):
-  ___ sequenceReconstruction(self, org, seqs):
+  ___ sequenceReconstruction  org, seqs):
     """
     :type org: List[int]
     :type seqs: List[List[int]]

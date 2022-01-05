@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ isSameTree(self, p, q):
+    ___ isSameTree  p, q):
         """
         :type p: TreeNode
         :type q: TreeNode

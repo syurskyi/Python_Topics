@@ -50,10 +50,10 @@ c_ DisjointSet:
     ___ - ):
         pi    # dict
 
-    ___ union(self, x, y):
+    ___ union  x, y):
         pi[find(x)] = find(y)
 
-    ___ find(self, x):
+    ___ find  x):
         __ x n.. __ pi:
             pi[x] = x
         ____ pi[x] != x:
@@ -61,7 +61,7 @@ c_ DisjointSet:
         r.. pi[x]
 
 c_ Solution:
-    ___ equationsPossible(self, equations: List[s..]) __ bool:
+    ___ equationsPossible  equations: List[s..]) __ bool:
         """
         union find
         """

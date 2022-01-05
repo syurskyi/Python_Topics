@@ -27,7 +27,7 @@ MOD = 10 ** 9 + 7
 
 
 c_ Solution:
-    ___ sumSubarrayMins(self, A: List[i..]) __ i..:
+    ___ sumSubarrayMins  A: List[i..]) __ i..:
         """
         Let F[i][j] be the min of A[i:j]
         O(N^2)
@@ -80,7 +80,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ sumSubarrayMins(self, A: List[i..]) __ i..:
+    ___ sumSubarrayMins  A: List[i..]) __ i..:
         """
         Improve the above solution using one stack
         use an increasing stk

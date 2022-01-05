@@ -13,13 +13,13 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ canWinNim(self, n):
+    ___ canWinNim  n):
         """
         Enumerate example and find the pattern
         """
         r.. n % 4 != 0
 
-    ___ canWinNim_TLE(self, n):
+    ___ canWinNim_TLE  n):
         """
         dp
 
@@ -37,7 +37,7 @@ c_ Solution(object):
 
         r.. F[n%3]
 
-    ___ canWinNim_MLE(self, n):
+    ___ canWinNim_MLE  n):
         """
         dp
 

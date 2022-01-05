@@ -4,7 +4,7 @@ Created on Oct 24, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ superEggDrop(self, K, N):
+    ___ superEggDrop  K, N):
         """
         :type K: int
         :type N: int

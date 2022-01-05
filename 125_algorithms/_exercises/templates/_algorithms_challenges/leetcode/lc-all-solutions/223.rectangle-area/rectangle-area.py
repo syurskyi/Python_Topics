@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ computeArea(self, A, B, C, D, E, F, G, H):
+  ___ computeArea  A, B, C, D, E, F, G, H):
     """
     :type A: int
     :type B: int
@@ -12,5 +12,5 @@ c_ Solution(object):
     :rtype: int
     """
     area = (C - A) * (D - B) + (G - E) * (H - F)
-    overlap = max(m..(C, G) - max(A, E), 0) * max(m..(D, H) - max(B, F), 0)
+    overlap = m..(m..(C, G) - m..(A, E), 0) * m..(m..(D, H) - m..(B, F), 0)
     r.. area - overlap

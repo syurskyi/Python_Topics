@@ -37,7 +37,7 @@ c_ DualHeap(object):
         min_h    # list
         max_h    # list
 
-    ___ insert(self, num):
+    ___ insert  num):
         __ n.. min_h o. num > min_h[0]:
             heapq.heappush(min_h, num)
         ____:
@@ -76,7 +76,7 @@ c_ MedianFinder(object):
         """
         dh = DualHeap()
 
-    ___ addNum(self, num):
+    ___ addNum  num):
         """
         Adds a num into the data structure.
         :type num: int

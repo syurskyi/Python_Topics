@@ -5,7 +5,7 @@ Created on Feb 6, 2017
 '''
 
 c_ Solution(object):
-    ___ maxProfit(self, prices):
+    ___ maxProfit  prices):
         """
         :type prices: List[int]
         :rtype: int
@@ -15,15 +15,15 @@ c_ Solution(object):
         right = [0]*l..(prices)
         minVal = prices[0]
         ___ i __ r..(1, l..(prices)):
-            left[i] = max(prices[i]-minVal, left[i])
+            left[i] = m..(prices[i]-minVal, left[i])
             minVal = m..(minVal, prices[i])
         maxVal = prices[-1]
         ___ i __ r..(l..(prices)-2, -1, -1):
-            right[i] = max(maxVal-prices[i], right[i+1])
-            maxVal = max(maxVal, prices[i])
+            right[i] = m..(maxVal-prices[i], right[i+1])
+            maxVal = m..(maxVal, prices[i])
         profit = 0
         ___ i __ r..(l..(prices)):
-            profit = max(left[i]+right[i], profit)
+            profit = m..(left[i]+right[i], profit)
         r.. profit
     
     ___ test

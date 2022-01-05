@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minTransfers(self, transactions):
+  ___ minTransfers  transactions):
     balances = c...defaultdict(i..)
     people = set()
     ___ giver, receiver, amount __ transactions:

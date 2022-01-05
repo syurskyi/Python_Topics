@@ -24,7 +24,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ sumNumbers(self, root):
+    ___ sumNumbers  root):
         """
         :param root: TreeNode
         :return: Integer
@@ -34,7 +34,7 @@ c_ Solution:
         result = [i..(element) ___ element __ result]
         r.. s..(result)
 
-    ___ dfs(self, root, cur, result):
+    ___ dfs  root, cur, result):
         """
         dfs, using string as cur (kind of collector).
         :param root: TreeNode
@@ -55,7 +55,7 @@ c_ Solution:
             dfs(root.right, cur, result)
 
 
-    ___ dfs_error(self, root, cur, result):
+    ___ dfs_error  root, cur, result):
         """
         Using list as cur has some reference issues
         :param root: TreeNode
@@ -78,7 +78,7 @@ c_ Solution:
             dfs_error(root.right, cur, result)
 
 
-__ __name____"__main__":
+__ _____ __ ____
     nodes = [TreeNode(0), TreeNode(1), TreeNode(3)]
     nodes[0].left = nodes[1]
     nodes[0].right = nodes[2]

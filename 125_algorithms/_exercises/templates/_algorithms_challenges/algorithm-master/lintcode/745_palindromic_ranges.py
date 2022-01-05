@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ PalindromicRanges(self, left, right):
+    ___ PalindromicRanges  left, right):
         """
         :type left: int
         :type right: int
@@ -28,7 +28,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ is_palindrome(self, num):
+    ___ is_palindrome  num):
         __ num // 10 __ 0:
             r.. T..
 

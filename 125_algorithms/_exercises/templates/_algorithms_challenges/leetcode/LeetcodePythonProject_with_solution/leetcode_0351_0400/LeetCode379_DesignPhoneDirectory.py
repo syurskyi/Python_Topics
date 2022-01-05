@@ -17,10 +17,10 @@ c_ PhoneDirectory(object):
         ____:
             r.. -1
     
-    ___ check(self, number):
+    ___ check  number):
         r.. bool(number __ availableNums)
     
-    ___ release(self, number):
+    ___ release  number):
         __ number __ usedNums:
             usedNums.remove(number)
         availableNums.add(number)

@@ -8,7 +8,7 @@ Write a function to determine if a given target is in the array.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ search_set(self, A, target):
+    ___ search_set  A, target):
         """
         Follow up 033 Search in Rotated Sorted Array
         Duplicate allowed
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ s..(self, A, target):
+    ___ s..  A, target):
         """
         Follow up 033 Search in Rotated Sorted Array
         Duplicate allowed
@@ -107,5 +107,5 @@ c_ Solution:
 
         r.. F..
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().s..([1,1,3,1], 3)__True

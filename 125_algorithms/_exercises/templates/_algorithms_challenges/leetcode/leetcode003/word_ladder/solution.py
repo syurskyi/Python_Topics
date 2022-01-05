@@ -20,7 +20,7 @@ All words contain only lowercase alphabetic characters.
 """
 
 c_ Solution(object):
-    ___ ladderLength(self, beginWord, endWord, wordDict):
+    ___ ladderLength  beginWord, endWord, wordDict):
         """
         :type beginWord: str
         :type endWord: str
@@ -29,7 +29,7 @@ c_ Solution(object):
         """
         queue    # list
         queue.a..((beginWord, 0))
-        letters = map(chr, r..(ord('a'), ord('z') + 1))
+        letters = map(chr, r..(o..('a'), o..('z') + 1))
         word_dict = wordDict
         # Remove words that are same as beginWord
         ___ word __ set(wordDict):
@@ -45,7 +45,7 @@ c_ Solution(object):
                 queue.a..((word, cur[1] + 1))
         r.. 0
 
-    ___ get_adjacent(self, word1):
+    ___ get_adjacent  word1):
         res    # list
         ___ i, e __ e..(word1):
             ___ letter __ letters:

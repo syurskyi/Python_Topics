@@ -32,7 +32,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ isSubsequence(self, s: s.., t: s..) __ bool:
+    ___ isSubsequence  s: s.., t: s..) __ bool:
         """
         Subsequence - Binary search
         """

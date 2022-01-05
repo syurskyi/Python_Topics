@@ -5,7 +5,7 @@ Created on Feb 20, 2017
 '''
 
 c_ Solution(object):
-    ___ containsDuplicate(self, nums):
+    ___ containsDuplicate  nums):
         """
         :type nums: List[int]
         :rtype: bool

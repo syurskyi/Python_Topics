@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ getIntersectionNode(self, headA, headB):
+    ___ getIntersectionNode  headA, headB):
         """
         :type head1, head1: ListNode
         :rtype: ListNode
@@ -31,7 +31,7 @@ c_ Solution(object):
             headB = headB.next
         r.. N..
     
-    ___ getLength(self, head):
+    ___ getLength  head):
         length = 0
         w.... head:
             head = head.next

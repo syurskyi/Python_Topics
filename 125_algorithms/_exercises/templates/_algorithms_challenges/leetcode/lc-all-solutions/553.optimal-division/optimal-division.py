@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ optimalDivision(self, nums):
+  ___ optimalDivision  nums):
     """
     :type nums: List[int]
     :rtype: str

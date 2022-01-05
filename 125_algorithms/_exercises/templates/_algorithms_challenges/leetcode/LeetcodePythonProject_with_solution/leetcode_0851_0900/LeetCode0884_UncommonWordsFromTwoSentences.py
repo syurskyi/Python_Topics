@@ -4,7 +4,7 @@ Created on Oct 16, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ uncommonFromSentences(self, A, B):
+    ___ uncommonFromSentences  A, B):
         """
         :type A: str
         :type B: str

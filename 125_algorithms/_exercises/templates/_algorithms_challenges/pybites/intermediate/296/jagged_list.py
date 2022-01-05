@@ -2,7 +2,7 @@ ____ typing _______ List
 
 ___ find_max_list(lol):
     len_lol = [l..(i) ___ i __ lol]
-    r.. max(len_lol) __ len_lol ____ 0
+    r.. m..(len_lol) __ len_lol ____ 0
 
 ___ jagged_list(lst_of_lst: List[List[i..]], fillvalue: i.. = 0) __ List[List[i..]]:
     #print(len(lst_of_lst))

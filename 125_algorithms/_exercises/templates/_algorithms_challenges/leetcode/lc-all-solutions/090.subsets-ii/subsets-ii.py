@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ subsetsWithDup(self, nums):
+  ___ subsetsWithDup  nums):
     """
     :type nums: List[int]
     :rtype: List[List[int]]

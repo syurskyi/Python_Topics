@@ -13,7 +13,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ buildTree(self, inorder, postorder):
+    ___ buildTree  inorder, postorder):
         """
         Recursive algorithm. Pre-order, in-order, post-order traversal relationship
 

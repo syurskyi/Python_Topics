@@ -21,7 +21,7 @@ ____ bisect _______ bisect_left
 
 
 c_ Solution:
-    ___ lengthOfLIS(self, nums: List[i..]) __ i..:
+    ___ lengthOfLIS  nums: List[i..]) __ i..:
         """
         LIS dp + binary search
         Patience sort
@@ -36,6 +36,6 @@ c_ Solution:
         ___ n __ nums:
             i = bisect_left(F, n)  # consider equal elements [2, 2]
             F[i] = n
-            l = max(l, i + 1)
+            l = m..(l, i + 1)
 
         r.. l

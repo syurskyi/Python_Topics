@@ -25,17 +25,17 @@ c_ BinaryIndexTree(object):
         ___ i, v __ e..(nums):
             set(i+1, v)
 
-    ___ _lowbit(self, a):
+    ___ _lowbit  a):
         r.. a & -a
 
-    ___ set(self, i, val):
+    ___ set  i, val):
         diff = val - nums[i]
         nums[i] = val
         w.... i < l..(N):
             N[i] += diff
             i += _lowbit(i)
 
-    ___ get(self, i):
+    ___ get  i):
         ret = 0
         w.... i > 0:
             ret += N[i]
@@ -52,7 +52,7 @@ c_ NumArray(object):
         """
         bit = BinaryIndexTree(nums)
 
-    ___ update(self, i, val):
+    ___ update  i, val):
         """
         :type i: int
         :type val: int
@@ -60,7 +60,7 @@ c_ NumArray(object):
         """
         bit.set(i+1, val)
 
-    ___ sumRange(self, i, j):
+    ___ sumRange  i, j):
         """
         sum of elements nums[i..j], inclusive.
         :type i: int

@@ -6,7 +6,7 @@ Created on Oct 10, 2018
 _______ i..
 
 c_ Solution(object):
-    ___ numSimilarGroups(self, A):
+    ___ numSimilarGroups  A):
         """
         :type A: List[str]
         :rtype: int

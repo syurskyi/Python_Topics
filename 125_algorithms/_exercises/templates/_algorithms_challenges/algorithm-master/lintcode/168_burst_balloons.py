@@ -3,7 +3,7 @@ c_ Solution:
     @param: V: A list of integer
     @return: An integer, maximum coins
     """
-    ___ maxCoins(self, V):
+    ___ maxCoins  V):
         __ n.. V:
             r.. 0
 
@@ -29,7 +29,7 @@ c_ Solution:
                 `i + 1 <= k <= j - 1`
                 """
                 ___ k __ r..(i + 1, j):
-                    dp[i][j] = max(
+                    dp[i][j] = m..(
                         dp[i][j],
                         dp[i][k] + dp[k][j] + V[i] * V[k] * V[j]
                     )

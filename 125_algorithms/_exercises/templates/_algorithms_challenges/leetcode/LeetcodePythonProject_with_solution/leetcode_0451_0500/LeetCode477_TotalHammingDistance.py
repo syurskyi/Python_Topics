@@ -5,7 +5,7 @@ Created on Apr 27, 2017
 '''
 
 c_ Solution(object):
-    ___ totalHammingDistance(self, nums):
+    ___ totalHammingDistance  nums):
         res = 0
         ___ i __ r..(32):
             cnt = 0

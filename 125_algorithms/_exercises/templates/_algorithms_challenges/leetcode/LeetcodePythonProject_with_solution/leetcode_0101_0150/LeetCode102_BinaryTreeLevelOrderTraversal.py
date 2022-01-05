@@ -5,7 +5,7 @@ Created on Feb 1, 2017
 '''
 
 c_ Solution(object):
-    ___ levelOrder(self, root):
+    ___ levelOrder  root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]

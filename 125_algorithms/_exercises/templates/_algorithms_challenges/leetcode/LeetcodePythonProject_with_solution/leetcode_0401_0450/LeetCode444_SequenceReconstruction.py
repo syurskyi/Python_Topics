@@ -5,7 +5,7 @@ Created on Apr 18, 2017
 '''
 
 c_ Solution(object):
-    ___ sequenceReconstruction(self, org, seqs):
+    ___ sequenceReconstruction  org, seqs):
         graph    # dict
         degree    # dict
         ___ seq __ seqs:

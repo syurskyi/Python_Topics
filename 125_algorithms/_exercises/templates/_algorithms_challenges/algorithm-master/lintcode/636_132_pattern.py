@@ -3,7 +3,7 @@ c_ Solution:
     @param: A: a list of n integers
     @return: true if there is a 132 pattern or false
     """
-    ___ find132pattern(self, A):
+    ___ find132pattern  A):
         __ n.. A:
             r.. F..
 

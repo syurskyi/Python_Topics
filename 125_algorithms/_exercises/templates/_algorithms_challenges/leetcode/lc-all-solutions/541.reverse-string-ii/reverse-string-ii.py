@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ reverseStr(self, s, k):
+  ___ reverseStr  s, k):
     """
     :type s: str
     :type k: int

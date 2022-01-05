@@ -19,7 +19,7 @@ desiredTotal will not be larger than 300.
 
 
 c_ Solution:
-    ___ canIWin(self, maxChoosableInteger, desiredTotal):
+    ___ canIWin  maxChoosableInteger, desiredTotal):
         """
         can p win?
         F^p_{total, choice_set - i} = not any(
@@ -36,12 +36,12 @@ c_ Solution:
         c.. = frozenset([choice ___ choice __ r..(1, maxChoosableInteger + 1)])
         r.. _can_win(desiredTotal, c.., s..(c..), cache)
 
-    ___ _can_win(self, total, c.., gross,cache):
+    ___ _can_win  total, c.., gross,cache):
         __ (total, c..) __ cache:
             r.. cache[(total, c..)]
 
         ret = F..
-        __ max(c..) >= total:
+        __ m..(c..) >= total:
             ret = T..
 
         ____ gross < total:

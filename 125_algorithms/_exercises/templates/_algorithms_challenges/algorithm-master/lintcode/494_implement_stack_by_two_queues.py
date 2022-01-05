@@ -9,7 +9,7 @@ c_ Stack:
     @param: x: An integer
     @return: nothing
     """
-    ___ push(self, x):
+    ___ push  x):
         node = ListNode(x)
         node.pre = tail
         tail.nxt = node

@@ -5,7 +5,7 @@ Created on Apr 23, 2017
 '''
 
 c_ Solution(object):
-    ___ find132pattern(self, nums):
+    ___ find132pattern  nums):
         s3 = float('-inf')
         stack    # list
         ___ i __ r..(l..(nums)-1, -1, -1):

@@ -13,7 +13,7 @@ which the depth of the two subtrees of every node never differ by more than 1.
 #         self.right = None
 
 c_ Solution(object):
-    ___ isBalanced(self, root):
+    ___ isBalanced  root):
         """
         :type root: TreeNode
         :rtype: bool
@@ -26,8 +26,8 @@ c_ Solution(object):
             ____:
                 r.. F..
 
-    ___ depth(self, root):
+    ___ depth  root):
         __ root __ N..
             r.. -1
         ____:
-            r.. max(depth(root.left), depth(root.right)) + 1
+            r.. m..(depth(root.left), depth(root.right)) + 1

@@ -4,7 +4,7 @@ Created on Oct 25, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maxAreaOfIsland(self, grid):
+    ___ maxAreaOfIsland  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -15,10 +15,10 @@ c_ Solution(object):
         maxArea = 0
         ___ i __ r..(m):
             ___ j __ r..(n):
-                maxArea = max(maxArea, bfs(grid, m, n, i, j))
+                maxArea = m..(maxArea, bfs(grid, m, n, i, j))
         r.. maxArea
     
-    ___ bfs(self, grid, m, n, i, j):
+    ___ bfs  grid, m, n, i, j):
         __ grid[i][j] __ 0:
             r.. 0
         area = 0

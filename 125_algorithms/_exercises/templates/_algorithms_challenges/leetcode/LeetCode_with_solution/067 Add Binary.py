@@ -1,6 +1,6 @@
 __author__ = 'Danyang'
 c_ Solution:
-    ___ addBinary_builtin(self, a, b):
+    ___ addBinary_builtin  a, b):
         """
         Built-in function
         :param a: string
@@ -11,7 +11,7 @@ c_ Solution:
         b = i..(b, 2)
         r.. bin(a+b)[2:]
 
-    ___ addBinary(self, a, b):
+    ___ addBinary  a, b):
         """
         Built-in function
         :param a: string
@@ -54,5 +54,5 @@ c_ Solution:
         b.reverse()
         r.. "".j..(b)  # reversed back
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().addBinary("11", "1")

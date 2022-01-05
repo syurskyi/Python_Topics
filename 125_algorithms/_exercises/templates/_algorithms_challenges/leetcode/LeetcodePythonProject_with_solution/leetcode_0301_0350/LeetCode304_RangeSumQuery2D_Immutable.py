@@ -16,7 +16,7 @@ c_ NumMatrix(object):
                 tbl[i+1][j+1] = tbl[i][j+1]+tbl[i+1][j]+matrix[i][j]-tbl[i][j]
         tbl = tbl
     
-    ___ sumRegion(self, row1, col1, row2, col2):
+    ___ sumRegion  row1, col1, row2, col2):
         r.. tbl[row2+1][col2+1] -\
             tbl[row2+1][col1] -\
             tbl[row1][col2+1]+\

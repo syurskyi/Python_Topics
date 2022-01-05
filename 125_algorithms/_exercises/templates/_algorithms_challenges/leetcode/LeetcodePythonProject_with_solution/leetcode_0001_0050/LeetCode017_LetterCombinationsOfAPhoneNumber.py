@@ -5,7 +5,7 @@ Created on Jan 10, 2017
 '''
 
 c_ Solution(object):
-    ___ letterCombinations(self, d..):
+    ___ letterCombinations  d..):
         """
         :type digits: str
         :rtype: List[str]
@@ -33,7 +33,7 @@ c_ Solution(object):
         dfs(l, 0, elem, result)
         r.. result
     
-    ___ dfs(self, l, ind, elem, result):
+    ___ dfs  l, ind, elem, result):
         __ l..(elem) __ l..(l):
             result.a..(s..(elem))
             r.. result

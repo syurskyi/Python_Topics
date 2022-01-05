@@ -25,7 +25,7 @@ Do not use the eval built-in library function.
 
 
 c_ Solution:
-    ___ calculate(self, s: s..) __ i..:
+    ___ calculate  s: s..) __ i..:
         """
         No brackets. Look at previous operand and operator, when finishing
         scanning current operand.
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. s..(stk)
 
-    ___ calculate_error(self, s: s..) __ i..:
+    ___ calculate_error  s: s..) __ i..:
         """
         cannot use dictionary, since it is eager evaluation
         """

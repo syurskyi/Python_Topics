@@ -13,7 +13,7 @@ Write a function to determine if a given target is in the array.
 """
 
 c_ Solution(object):
-    ___ s..(self, nums, target):
+    ___ s..  nums, target):
         """
         :type nums: List[int]
         :type target: int

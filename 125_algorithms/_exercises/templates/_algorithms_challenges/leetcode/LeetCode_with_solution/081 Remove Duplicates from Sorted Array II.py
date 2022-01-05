@@ -9,7 +9,7 @@ Your function should return length = 5, and A is now [1,1,2,2,3].
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ removeDuplicates_complicated(self, A):
+    ___ removeDuplicates_complicated  A):
         """
         Two pointers algorithm, open_ptr & closed_ptr
         :param A: a list of integers
@@ -26,11 +26,11 @@ c_ Solution:
             __ A[closed_ptr]__A[open_ptr]:
                 __ duplicate_count>=1:
                     # find next non-duplicate
-                    try:
+                    ___
                         w.... A[closed_ptr]__A[open_ptr]:
                             open_ptr+=1
                         duplicate_count = 0
-                    except IndexError:
+                    ______ IndexError:
                         break
 
                 # one duplicate
@@ -45,7 +45,7 @@ c_ Solution:
 
         r.. closed_ptr+1  # length
 
-    ___ removeDuplicates(self, A):
+    ___ removeDuplicates  A):
         """
         Two pointers algorithm, open_ptr & closed_ptr
         :param A: a list of integers
@@ -75,5 +75,5 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     Solution().removeDuplicates([1, 1, 2, 2])

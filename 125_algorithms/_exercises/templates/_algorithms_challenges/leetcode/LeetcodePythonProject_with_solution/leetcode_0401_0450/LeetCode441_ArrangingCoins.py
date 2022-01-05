@@ -5,7 +5,7 @@ Created on Apr 17, 2017
 '''
 
 c_ Solution(object):
-    ___ arrangeCoins(self, n):
+    ___ arrangeCoins  n):
         start, end = 1, n
         w.... start <= end:
             mid = (start+end)/2

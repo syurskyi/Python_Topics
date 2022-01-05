@@ -30,7 +30,7 @@ c_ Solution:
     @param: A: An array of non-negative integers.
     @return: The maximum amount of money you can rob tonight
     """
-    ___ houseRobber2(self, A):
+    ___ houseRobber2  A):
         __ n.. A:
             r.. 0
         __ l..(A) __ 1:
@@ -38,12 +38,12 @@ c_ Solution:
 
         dp = [[0] * 2 ___ _ __ r..(2)]
 
-        r.. max(
+        r.. m..(
             houseRobber(A, 0, dp),
             houseRobber(A, 1, dp)
         )
 
-    ___ houseRobber(self, A, start, dp):
+    ___ houseRobber  A, start, dp):
         n = l..(A)
         prev, curr = 0, start % 2
         dp[curr][0] = 0
@@ -53,10 +53,10 @@ c_ Solution:
             prev = curr
             curr = i % 2
 
-            dp[curr][0] = max(dp[prev])
+            dp[curr][0] = m..(dp[prev])
             dp[curr][1] = dp[prev][0] + A[i]
 
-        r.. max(dp[curr])
+        r.. m..(dp[curr])
 
 
 c_ Solution:
@@ -64,7 +64,7 @@ c_ Solution:
     @param: A: An array of non-negative integers.
     @return: The maximum amount of money you can rob tonight
     """
-    ___ houseRobber2(self, A):
+    ___ houseRobber2  A):
         __ n.. A:
             r.. 0
 
@@ -72,34 +72,34 @@ c_ Solution:
         __ n __ 1:
             r.. A[0]
         __ n __ 2:
-            r.. max(A[0], A[1])
+            r.. m..(A[0], A[1])
 
         dp = [0] * 3
 
-        r.. max(
+        r.. m..(
             # range(0, n - 1)
             houseRobber(A, 0, dp),
             # range(1, n)
             houseRobber(A, 1, dp)
         )
 
-    ___ houseRobber(self, A, start, dp):
+    ___ houseRobber  A, start, dp):
         n = l..(A)
         prev2, prev1, curr = 0, start % 3, (start + 1) % 3
         dp[prev1] = A[start]
-        dp[curr] = max(A[start], A[start + 1])
+        dp[curr] = m..(A[start], A[start + 1])
 
         ___ i __ r..(2 + start, n - 1 + start):
             prev2, prev1 = prev1, curr
             curr = i % 3
 
-            dp[curr] = max(dp[prev1], dp[prev2] + A[i])
+            dp[curr] = m..(dp[prev1], dp[prev2] + A[i])
 
         r.. dp[curr]
 
 
 c_ Solution:
-    ___ houseRobber2(self, A):
+    ___ houseRobber2  A):
         """
         :type A: List[int]
         :rtype: int
@@ -110,19 +110,19 @@ c_ Solution:
         __ n < 2:
             r.. A[0]
 
-        r.. max(
+        r.. m..(
             rob_in_line(A, 0, n - 2),
             rob_in_line(A, 1, n - 1)
         )
 
-    ___ rob_in_line(self, A, start, end):
+    ___ rob_in_line  A, start, end):
         n = end - start + 1
         dp = [0] * (n + 1)
         dp[0] = 0
         dp[1] = A[start]
 
         ___ i __ r..(2, n + 1):
-            dp[i] = max(
+            dp[i] = m..(
                 dp[i - 2] + A[start + i - 1],
                 dp[i - 1]
             )

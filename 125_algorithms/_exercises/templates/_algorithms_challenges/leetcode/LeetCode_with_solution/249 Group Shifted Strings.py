@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ groupStrings(self, strings):
+    ___ groupStrings  strings):
         """
 
         :type strings: list[str]
@@ -20,7 +20,7 @@ c_ Solution:
             ____:
                 lst    # list
                 ___ i __ xrange(1, l..(s)):
-                    lst.a..((ord(s[i])-ord(s[i-1]))%26)
+                    lst.a..((o..(s[i])-o..(s[i-1]))%26)
                 hm[t..(lst)].a..(s)
 
         r.. map(s.., hm.values())

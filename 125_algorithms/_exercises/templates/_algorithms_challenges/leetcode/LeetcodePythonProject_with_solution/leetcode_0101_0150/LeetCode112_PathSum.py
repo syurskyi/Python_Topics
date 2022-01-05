@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ hasPathSum(self, root, sumVal):
+    ___ hasPathSum  root, sumVal):
         """
         :type root: TreeNode
         :type sumVal: int

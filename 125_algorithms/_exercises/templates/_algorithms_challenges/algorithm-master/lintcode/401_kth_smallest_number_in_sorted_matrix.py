@@ -6,7 +6,7 @@ c_ Solution:
     @param: k: An integer
     @return: the kth smallest number in the matrix
     """
-    ___ kthSmallest(self, matrix, k):
+    ___ kthSmallest  matrix, k):
         ans = j = 0
         heap, m, n    # list, l..(matrix), l..(matrix[0])
         ___ i __ r..(m..(k, m)): heapq.heappush(heap, (matrix[i][0], i, 0))

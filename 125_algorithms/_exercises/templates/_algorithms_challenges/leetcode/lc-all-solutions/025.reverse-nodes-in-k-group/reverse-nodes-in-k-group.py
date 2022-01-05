@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ reverseKGroup(self, head, k):
+  ___ reverseKGroup  head, k):
     """
     :type head: ListNode
     :type k: int

@@ -12,7 +12,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ inorderSuccessor(self, root, p):
+    ___ inorderSuccessor  root, p):
         """
         search
 
@@ -25,7 +25,7 @@ c_ Solution(object):
         s..(root, p, find)
         r.. find[0]
 
-    ___ s..(self, cur, p, find):
+    ___ s..  cur, p, find):
         __ n.. cur:
             r..
 

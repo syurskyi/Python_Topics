@@ -28,7 +28,7 @@ ____ functools _______ lru_cache
 
 
 c_ SolutionDP:
-    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: List[i..], m: i..) __ i..:
         """
         non-aftereffect, dp
         Let F[l][k] be the minimized max sum in nums[:l] with k parts
@@ -48,18 +48,18 @@ c_ SolutionDP:
             ___ k __ r..(1, m + 1):
                 ___ j __ r..(l):
                     F[l][k] = m..(
-                        F[l][k], max(F[j][k-1], sums[l] - sums[j])
+                        F[l][k], m..(F[j][k-1], sums[l] - sums[j])
                     )
 
         r.. F[n][m]
 
 
 c_ Solution:
-    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: List[i..], m: i..) __ i..:
         """
         Binary search over the subarray sum values
         """
-        lo = max(nums)
+        lo = m..(nums)
         hi = s..(nums) + 1
         ret = hi
         w.... lo < hi:
@@ -86,7 +86,7 @@ c_ SolutionTLE2:
     ___ - ):
         sums = [0]
 
-    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: List[i..], m: i..) __ i..:
         """
         memoization with 1 less param
         """
@@ -97,7 +97,7 @@ c_ SolutionTLE2:
         r.. ret
 
     @lru_cache(maxsize=N..)
-    ___ dfs(self, hi, m):
+    ___ dfs  hi, m):
         """
         j break the nums[:hi] into left and right part
         """
@@ -109,7 +109,7 @@ c_ SolutionTLE2:
             right = sums[hi] - sums[j]
             left = dfs(j, m - 1)
             # minimize the max
-            mini = m..(mini, max(left, right))
+            mini = m..(mini, m..(left, right))
 
         r.. mini
 
@@ -118,7 +118,7 @@ c_ SolutionTLE:
     ___ - ):
         sums = [0]
 
-    ___ splitArray(self, nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: List[i..], m: i..) __ i..:
         """
         Minimize the largest subarray sum
 
@@ -130,7 +130,7 @@ c_ SolutionTLE:
         r.. ret
 
     @lru_cache(maxsize=N..)
-    ___ dfs(self, nums, lo, hi, m):
+    ___ dfs  nums, lo, hi, m):
         """
         j break the nums[lo:hi] into left and right part
         """
@@ -142,7 +142,7 @@ c_ SolutionTLE:
             left = sums[j] - sums[lo]
             right = dfs(nums, j, hi, m - 1)
             # minimize the max
-            mini = m..(mini, max(left, right))
+            mini = m..(mini, m..(left, right))
 
         r.. mini
 

@@ -4,7 +4,7 @@ Created on Oct 9, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ strangePrinter(self, s):
+    ___ strangePrinter  s):
         """
         :type s: str
         :rtype: int

@@ -9,7 +9,7 @@ c_ HashHeapq:
         heap    # list
         deleted    # dict
 
-    ___ push(self, val):
+    ___ push  val):
         heapq.heappush(heap, val)
 
     ___ pop
@@ -18,7 +18,7 @@ c_ HashHeapq:
 
         r.. heapq.heappop(heap)
 
-    ___ remove(self, val):
+    ___ remove  val):
         __ is_empty
             r..
 
@@ -42,7 +42,7 @@ c_ HashHeapq:
 
 
 c_ Solution:
-    ___ getSkyline(self, buildings):
+    ___ getSkyline  buildings):
         """
         :type buildings: List[List[int]]
         :rtype: List[List[int]]

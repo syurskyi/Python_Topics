@@ -4,7 +4,7 @@ Created on Oct 25, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ countBinarySubstrings(self, s):
+    ___ countBinarySubstrings  s):
         """
         :type s: str
         :rtype: int

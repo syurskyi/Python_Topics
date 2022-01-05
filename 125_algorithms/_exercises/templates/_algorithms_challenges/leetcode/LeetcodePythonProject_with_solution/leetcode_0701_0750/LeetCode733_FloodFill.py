@@ -4,7 +4,7 @@ Created on Mar 7, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ floodFill(self, image, sr, sc, newColor):
+    ___ floodFill  image, sr, sc, newColor):
         """
         :type image: List[List[int]]
         :type sr: int
@@ -18,7 +18,7 @@ c_ Solution(object):
         helper(image, sr, sc, oldColor, newColor)
         r.. image
     
-    ___ helper(self, image, i, j, oldColor, newColor):
+    ___ helper  image, i, j, oldColor, newColor):
         m, n = l..(image), l..(image[0])
         image[i][j] = newColor
         ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):

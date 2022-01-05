@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ computeLastDigit(self, a, b):
+    ___ computeLastDigit  a, b):
         """
         :type a: int
         :type b: int

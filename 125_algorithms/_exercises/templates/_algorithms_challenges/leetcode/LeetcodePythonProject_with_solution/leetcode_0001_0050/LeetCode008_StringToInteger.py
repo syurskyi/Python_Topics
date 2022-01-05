@@ -4,7 +4,7 @@ Created on Nov 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ myAtoi(self, s..):
+    ___ myAtoi  s..):
         """
         :type str: str
         :rtype: int
@@ -23,11 +23,11 @@ c_ Solution(object):
         ___ c __ s:
             __ n.. c.isdigit
                 break
-            res = 10*res + ord(c) - ord('0') 
+            res = 10*res + o..(c) - o..('0')
         __ sig > 0:
             r.. m..(2**32-1, res)
         ____:
-            r.. max(-2**31, sig*res)
+            r.. m..(-2**31, sig*res)
     
     ___ test
         testCases = [

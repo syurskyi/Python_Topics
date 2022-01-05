@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minTotalDistance(self, grid):
+  ___ minTotalDistance  grid):
     """
     :type grid: List[List[int]]
     :rtype: int

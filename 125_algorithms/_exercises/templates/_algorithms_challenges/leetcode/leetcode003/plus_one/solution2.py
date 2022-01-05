@@ -1,7 +1,7 @@
 c_ Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
-    ___ plusOne(self, d..):
+    ___ plusOne  d..):
         # In-place version
         d...reverse()
         d = d..[0]

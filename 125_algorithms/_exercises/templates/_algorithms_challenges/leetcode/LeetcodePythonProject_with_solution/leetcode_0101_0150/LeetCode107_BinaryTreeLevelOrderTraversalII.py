@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ levelOrderBottom(self, root):
+    ___ levelOrderBottom  root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]

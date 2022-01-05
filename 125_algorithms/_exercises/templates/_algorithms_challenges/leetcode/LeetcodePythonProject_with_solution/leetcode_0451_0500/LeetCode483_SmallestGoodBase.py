@@ -5,7 +5,7 @@ Created on May 3, 2017
 '''
 
 c_ Solution(object):
-    ___ smallestGoodBase(self, n):
+    ___ smallestGoodBase  n):
         """
         :type n: str
         :rtype: str

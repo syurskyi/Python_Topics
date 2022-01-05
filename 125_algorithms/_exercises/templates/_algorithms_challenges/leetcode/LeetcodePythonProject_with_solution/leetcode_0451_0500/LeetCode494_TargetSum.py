@@ -5,7 +5,7 @@ Created on May 9, 2017
 '''
 
 c_ Solution(object):
-    ___ findTargetSumWays(self, nums, S):
+    ___ findTargetSumWays  nums, S):
         """
         :type nums: List[int]
         :type S: int
@@ -17,7 +17,7 @@ c_ Solution(object):
         target = (sumVal+S)//2
         r.. helper(nums, target)
     
-    ___ helper(self, nums, target):
+    ___ helper  nums, target):
         dp = [0]*(target+1)
         dp[0] = 1
         ___ num __ nums:

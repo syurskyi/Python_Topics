@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ summaryRanges(self, nums):
+  ___ summaryRanges  nums):
     """
     :type nums: List[int]
     :rtype: List[str]

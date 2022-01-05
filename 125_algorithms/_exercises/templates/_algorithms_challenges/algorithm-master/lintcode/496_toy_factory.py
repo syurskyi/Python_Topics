@@ -22,7 +22,7 @@ c_ Cat(Toy):
 c_ ToyFactory:
     # @param {string} shapeType a string
     # @return {Toy} Get object of the type
-    ___ getToy(self, t..):
+    ___ getToy  t..):
         __ t.. __ 'Dog':
             r.. Dog()
         __ t.. __ 'Cat':

@@ -2,7 +2,7 @@ _______ s__
 
 
 c_ Solution(object):
-  ___ isValid(self, code):
+  ___ isValid  code):
     """
     :type code: str
     :rtype: bool

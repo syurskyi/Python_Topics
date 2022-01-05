@@ -4,7 +4,7 @@ Created on Jan 31, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ longestWord(self, words):
+    ___ longestWord  words):
         """
         :type words: List[str]
         :rtype: str

@@ -4,14 +4,14 @@ Created on Oct 31, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ solveSudoku(self, board):
+    ___ solveSudoku  board):
         """
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
         solve(board)
     
-    ___ solve(self, board):
+    ___ solve  board):
         ___ i __ r..(9):
             ___ j __ r..(9):
                 __ board[i][j] __ '.':
@@ -25,7 +25,7 @@ c_ Solution(object):
                     r.. F..
         r.. T..
     
-    ___ isValid(self, board, row, col, c):
+    ___ isValid  board, row, col, c):
         ___ i __ r..(9):
             __ board[i][col] __ c: r.. F..
             __ board[row][i] __ c: r.. F..

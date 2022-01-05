@@ -24,11 +24,11 @@ c_ Node:
 
 
 c_ Solution:
-    ___ maxDepth(self, root: "Node") __ i..:
+    ___ maxDepth  root: "Node") __ i..:
         __ n.. root:
             r.. 0
 
-        max_child_depth = max([
+        max_child_depth = m..([
             maxDepth(child)
             ___ child __ root.children
         ] o. [0])

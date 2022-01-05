@@ -19,7 +19,7 @@ word = "ABCB", -> returns false.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ exist(self, board, word):
+    ___ exist  board, word):
         """
         dfs
         :param board: a list of lists of 1 length string
@@ -43,7 +43,7 @@ c_ Solution:
                     visited[i][j] = F..
         r.. F..
 
-    ___ s..(self, board, pre_row, pre_col, word, visited):
+    ___ s..  board, pre_row, pre_col, word, visited):
         __ n.. word:
             r.. T..
         # searching for word[0]
@@ -61,7 +61,7 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     board = [
         "ABCE",
         "SFCS",

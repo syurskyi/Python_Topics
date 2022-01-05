@@ -16,7 +16,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ simplifyPath(self, path):
+    ___ simplifyPath  path):
         """
         use "." as intermediate
 

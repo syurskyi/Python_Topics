@@ -24,7 +24,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ reverseKGroup(self, head, k):
+    ___ reverseKGroup  head, k):
         """
         List
         O(k*n)
@@ -53,7 +53,7 @@ c_ Solution:
 
         r.. dummy.next
 
-    ___ generate_lst(self, node, k):
+    ___ generate_lst  node, k):
         """
         Helpder
         :param node: ListNode

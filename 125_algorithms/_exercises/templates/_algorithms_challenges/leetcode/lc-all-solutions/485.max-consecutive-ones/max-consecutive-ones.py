@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findMaxConsecutiveOnes(self, nums):
+  ___ findMaxConsecutiveOnes  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -11,5 +11,5 @@ c_ Solution(object):
         count += 1
       ____:
         count = 0
-      ans = max(ans, count)
+      ans = m..(ans, count)
     r.. ans

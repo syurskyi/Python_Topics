@@ -4,7 +4,7 @@ Created on Oct 5, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ judgeCircle(self, moves):
+    ___ judgeCircle  moves):
         """
         :type moves: str
         :rtype: bool

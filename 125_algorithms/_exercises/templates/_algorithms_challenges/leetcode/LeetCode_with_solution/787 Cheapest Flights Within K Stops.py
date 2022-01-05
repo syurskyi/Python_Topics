@@ -45,7 +45,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ findCheapestPrice(self, n: i.., flights: List[List[i..]], src: i.., dst: i.., K: i..) __ i..:
+    ___ findCheapestPrice  n: i.., flights: List[List[i..]], src: i.., dst: i.., K: i..) __ i..:
         """
         dijkstra
         """

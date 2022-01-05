@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxProfit(self, prices):
+  ___ maxProfit  prices):
     """
     :type prices: List[int]
     :rtype: int
@@ -8,8 +8,8 @@ c_ Solution(object):
     sell1 = sell2 = 0
 
     ___ i __ r..(l..(prices)):
-      sell1 = max(prices[i] + buy1, sell1)
-      buy1 = max(buy1, -prices[i])
-      sell2 = max(sell2, prices[i] + buy2)
-      buy2 = max(sell1 - prices[i], buy2)
-    r.. max(sell1, sell2)
+      sell1 = m..(prices[i] + buy1, sell1)
+      buy1 = m..(buy1, -prices[i])
+      sell2 = m..(sell2, prices[i] + buy2)
+      buy2 = m..(sell1 - prices[i], buy2)
+    r.. m..(sell1, sell2)

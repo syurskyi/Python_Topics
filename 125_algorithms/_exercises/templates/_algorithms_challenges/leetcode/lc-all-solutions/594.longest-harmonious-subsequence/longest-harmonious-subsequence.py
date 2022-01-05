@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findLHS(self, nums):
+  ___ findLHS  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -8,5 +8,5 @@ c_ Solution(object):
     d = c...Counter(nums)
     ___ num __ nums:
       __ num + 1 __ d:
-        ans = max(ans, d[num] + d[num + 1])
+        ans = m..(ans, d[num] + d[num + 1])
     r.. ans

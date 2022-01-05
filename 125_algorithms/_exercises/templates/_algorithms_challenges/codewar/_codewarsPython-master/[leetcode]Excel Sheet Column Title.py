@@ -1,7 +1,7 @@
 c_ Solution:
     # @param {integer} n
     # @return {string}
-    ___ convertToTitle(self, n):
+    ___ convertToTitle  n):
         times = 0
         res    # list
         w.... n >= 27:

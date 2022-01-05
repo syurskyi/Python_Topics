@@ -22,7 +22,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ preorder(self, root: "Node") __ List[i..]:
+    ___ preorder  root: "Node") __ List[i..]:
         """
         reversely add the children to stk
         """

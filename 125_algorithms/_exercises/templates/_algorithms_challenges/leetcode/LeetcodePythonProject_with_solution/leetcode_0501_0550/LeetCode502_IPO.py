@@ -5,7 +5,7 @@ Created on May 10, 2017
 '''
 
 c_ Solution(object):
-    ___ findMaximizedCapital(self, k, W, Profits, Capital):
+    ___ findMaximizedCapital  k, W, Profits, Capital):
         """
         :type k: int
         :type W: int

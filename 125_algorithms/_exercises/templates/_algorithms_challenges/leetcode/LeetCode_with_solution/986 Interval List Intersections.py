@@ -32,7 +32,7 @@ c_ Interval:
 
 
 c_ Solution:
-    ___ intervalIntersection(self, A: List[Interval], B: List[Interval]) __ List[Interval]:
+    ___ intervalIntersection  A: List[Interval], B: List[Interval]) __ List[Interval]:
         """
         Among the given intervals, consider the interval A[0] with the smallest
         endpoint. (Without loss of generality, this interval occurs in array A.)
@@ -51,7 +51,7 @@ c_ Solution:
         m, n = l..(A), l..(B)
         ret    # list
         w.... i < m a.. j < n:
-            lo = max(A[i].start, B[j].start)
+            lo = m..(A[i].start, B[j].start)
             hi = m..(A[i].end, B[j].end)
             __ lo <= hi:
                 ret.a..(Interval(lo, hi))
@@ -62,7 +62,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ intervalIntersection_complex(self, A: List[Interval], B: List[Interval]) __ List[Interval]:
+    ___ intervalIntersection_complex  A: List[Interval], B: List[Interval]) __ List[Interval]:
         """
         like merge
         """
@@ -74,10 +74,10 @@ c_ Solution:
             a = A[i]
             b = B[j]
             __ b.start <= a.end <= b.end:
-                ret.a..(Interval(max(a.start, b.start), a.end))
+                ret.a..(Interval(m..(a.start, b.start), a.end))
                 i += 1
             ____ a.start <= b.end <= a.end:
-                ret.a..(Interval(max(a.start, b.start), b.end))
+                ret.a..(Interval(m..(a.start, b.start), b.end))
                 j += 1
             ____:
                 __ a.end < b.start:

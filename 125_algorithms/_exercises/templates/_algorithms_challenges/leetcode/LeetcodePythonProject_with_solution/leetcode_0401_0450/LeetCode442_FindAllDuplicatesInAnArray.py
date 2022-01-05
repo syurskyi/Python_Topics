@@ -5,7 +5,7 @@ Created on Apr 17, 2017
 '''
 
 c_ Solution(object):
-    ___ findDuplicates(self, nums):
+    ___ findDuplicates  nums):
         result    # list
         ___ num __ nums:
             ind = abs(num)-1

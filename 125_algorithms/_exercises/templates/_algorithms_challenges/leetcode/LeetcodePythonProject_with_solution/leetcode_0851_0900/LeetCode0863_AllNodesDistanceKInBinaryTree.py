@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ distanceK(self, root, target, K):
+    ___ distanceK  root, target, K):
         """
         :type root: TreeNode
         :type target: TreeNode
@@ -24,7 +24,7 @@ c_ Solution(object):
         dfs(root, target, K, hashmap[root], res, hashmap)
         r.. res
     
-    ___ find(self, root, target, hashmap):
+    ___ find  root, target, hashmap):
         __ n.. root: r.. -1
         __ root __ target:
             hashmap[root] = 0
@@ -39,7 +39,7 @@ c_ Solution(object):
             r.. right+1
         r.. -1
     
-    ___ dfs(self, root, target, k, length, res, hashmap):
+    ___ dfs  root, target, k, length, res, hashmap):
         __ n.. root: r..
         __ root __ hashmap:
             length = hashmap[root]

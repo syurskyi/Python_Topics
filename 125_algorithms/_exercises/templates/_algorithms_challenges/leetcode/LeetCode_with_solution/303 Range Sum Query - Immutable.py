@@ -27,7 +27,7 @@ c_ NumArray(object):
         ___ i __ xrange(1, n+1):
             F[i] = F[i-1] + nums[i-1]
 
-    ___ sumRange(self, i, j):
+    ___ sumRange  i, j):
         """
         sum of elements nums[i..j], inclusive.
         :type i: int

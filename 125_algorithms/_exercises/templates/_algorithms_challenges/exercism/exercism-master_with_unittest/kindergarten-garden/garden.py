@@ -14,11 +14,11 @@ c_ Garden:
         plant_rows = [[PLANTS[c] ___ c __ row] ___ row __ rows]
         students = s..(students)
 
-    ___ plants(self, name):
+    ___ plants  name):
         r.. plants_for_index(students.index(name))
 
     # Dislike how these are hardcoded indices
-    ___ plants_for_index(self, i):
+    ___ plants_for_index  i):
         r.. [plant_rows[0][i * 2],
                 plant_rows[0][i * 2 + 1],
                 plant_rows[1][i * 2],

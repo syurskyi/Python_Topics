@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ findDuplicateSubtrees(self, root):
+    ___ findDuplicateSubtrees  root):
         """
         :type root: TreeNode
         :rtype: List[TreeNode]
@@ -20,7 +20,7 @@ c_ Solution(object):
         postorder(root, {}, res)
         r.. res
     
-    ___ postorder(self, cur, hashmap, res):
+    ___ postorder  cur, hashmap, res):
         __ n.. cur: r.. '#'
         serial = '%s,%s,%s' % (cur.val,\
                 postorder(cur.left, hashmap, res),\

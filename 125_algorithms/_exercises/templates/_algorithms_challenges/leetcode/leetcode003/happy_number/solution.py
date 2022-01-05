@@ -16,7 +16,7 @@ Example: 19 is a happy number
 """
 
 c_ Solution(object):
-    ___ isHappy(self, n):
+    ___ isHappy  n):
         """
         :type n: int
         :rtype: bool

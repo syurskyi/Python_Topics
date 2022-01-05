@@ -4,7 +4,7 @@ Created on Apr 4, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ maxChunksToSorted(self, arr):
+    ___ maxChunksToSorted  arr):
         """
         :type arr: List[int]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(object):
         minOfRight = [0]*n
         maxOfLeft[0] = arr[0]
         ___ i __ r..(1, n):
-            maxOfLeft[i] = max(maxOfLeft[i-1], arr[i])
+            maxOfLeft[i] = m..(maxOfLeft[i-1], arr[i])
         minOfRight[-1] = arr[-1]
         ___ i __ r..(n-2, -1, -1):
             minOfRight[i] = m..(minOfRight[i+1], arr[i])

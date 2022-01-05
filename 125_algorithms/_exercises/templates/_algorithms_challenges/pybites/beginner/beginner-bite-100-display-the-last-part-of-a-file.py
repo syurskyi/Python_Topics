@@ -26,9 +26,9 @@ _______ s__
 ___ tail(filepath, n):
     """Similate Unix' tail -n, read in filepath, parse it into a list,
        strip newlines and return a list of the last n lines"""
-    try:
+    ___
         fo = open(filepath, 'r')
-    except:
+    ______:
         print("problem opening file")
     contents    # list
     ___ line __ fo.readlines

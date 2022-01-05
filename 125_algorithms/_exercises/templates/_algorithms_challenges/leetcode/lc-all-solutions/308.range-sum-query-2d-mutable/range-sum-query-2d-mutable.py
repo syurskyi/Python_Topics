@@ -14,7 +14,7 @@ c_ NumMatrix(object):
       ___ j __ r..(0, l..(matrix[0])):
         update(i, j, matrix[i][j])
 
-  ___ update(self, row, col, val):
+  ___ update  row, col, val):
     """
     update the element at matrix[row,col] to val.
     :type row: int
@@ -35,7 +35,7 @@ c_ NumMatrix(object):
         j += lowbit(j)
       i += lowbit(i)
 
-  ___ sumRange(self, row, col):
+  ___ sumRange  row, col):
     row += 1
     col += 1
     ret = 0
@@ -49,10 +49,10 @@ c_ NumMatrix(object):
       i -= lowbit(i)
     r.. ret
 
-  ___ lowbit(self, i):
+  ___ lowbit  i):
     r.. (i & -i)
 
-  ___ sumRegion(self, row1, col1, row2, col2):
+  ___ sumRegion  row1, col1, row2, col2):
     """
     sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
     :type row1: int

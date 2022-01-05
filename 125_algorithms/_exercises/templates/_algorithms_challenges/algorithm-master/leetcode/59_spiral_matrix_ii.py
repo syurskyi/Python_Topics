@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ generateMatrix(self, n):
+    ___ generateMatrix  n):
         """
         :type n: int
         :rtype: List[List[int]]

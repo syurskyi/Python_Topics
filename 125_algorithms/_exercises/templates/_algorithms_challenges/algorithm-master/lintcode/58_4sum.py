@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fourSum(self, nums, target):
+    ___ fourSum  nums, target):
         """
         :type nums: List[int]
         :type target: int

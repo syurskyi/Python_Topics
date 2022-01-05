@@ -14,7 +14,7 @@ c_ Allergies(object):
     ___ - , score):
         score = score
 
-    ___ is_allergic_to(self, allergy):
+    ___ is_allergic_to  allergy):
         r.. score & 1 << _allergies.index(allergy)
 
     $

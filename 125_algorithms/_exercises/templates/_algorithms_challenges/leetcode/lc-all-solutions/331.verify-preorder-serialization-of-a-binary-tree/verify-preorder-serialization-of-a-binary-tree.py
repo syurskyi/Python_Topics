@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isValidSerialization(self, preorder):
+  ___ isValidSerialization  preorder):
     """
     :type preorder: str
     :rtype: bool

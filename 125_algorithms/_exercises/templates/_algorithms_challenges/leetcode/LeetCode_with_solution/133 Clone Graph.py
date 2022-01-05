@@ -32,7 +32,7 @@ c_ UndirectedGraphNode:
         r.. repr(label)
 
 c_ Solution:
-    ___ cloneGraph_TLE(self, node):
+    ___ cloneGraph_TLE  node):
         """
         dfs
         :param node: UndirectedGraphNode
@@ -40,7 +40,7 @@ c_ Solution:
         """
         r.. clone_graph_visited(node, set())
 
-    ___ clone_graph_visited(self, node, visited_set):
+    ___ clone_graph_visited  node, visited_set):
         """
         post-order traversal
         Time Limit Exceeded
@@ -59,7 +59,7 @@ c_ Solution:
         node_cloned.neighbors = neighbors_cloned
         r.. node_cloned
 
-    ___ cloneGraph(self, node):
+    ___ cloneGraph  node):
         """
         bfs with visited
         similar to 138 Copy List with Random Pointer
@@ -92,7 +92,7 @@ c_ Solution:
         r.. original2copy[node]
 
 
-__ __name____"__main__":
+__ _____ __ ____
     lst = [UndirectedGraphNode(i+1) ___ i __ r..(3)]
     ___ item __ lst:
         item.neighbors = l..(lst)

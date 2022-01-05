@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fizzBuzz(self, n):
+    ___ fizzBuzz  n):
         """
         :type n: int
         :rtype: List[str]
@@ -23,7 +23,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ fizzBuzz(self, n):
+    ___ fizzBuzz  n):
         """
         :type n: int
         :rtype: List[str]

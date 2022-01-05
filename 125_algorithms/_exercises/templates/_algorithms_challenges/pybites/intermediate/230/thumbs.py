@@ -3,7 +3,7 @@ THUMBS_UP, THUMBS_DOWN = '👍', '👎'
 
 c_ Thumbs:
     
-    ___ __mul__(self, other):
+    ___ __mul__  other):
         __ other __ 0:
             r.. ValueError("Specify a number")
 
@@ -12,7 +12,7 @@ c_ Thumbs:
 
         r.. f"{THUMBS_UP __ other > 0 ____ THUMBS_DOWN} ({abs(other)}x)"
 
-    ___ __rmul__(self, other):
+    ___ __rmul__  other):
         r.. __mul__(other)
 
 

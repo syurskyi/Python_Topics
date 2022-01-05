@@ -5,7 +5,7 @@ Created on Sep 5, 2017
 '''
 
 c_ Solution(object):
-    ___ isValid(self, code):
+    ___ isValid  code):
         """
         :type code: str
         :rtype: bool

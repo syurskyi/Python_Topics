@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findErrorNums(self, nums):
+  ___ findErrorNums  nums):
     """
     :type nums: List[int]
     :rtype: List[int]

@@ -45,7 +45,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ asteroidCollision(self, asteroids: List[i..]) __ List[i..]:
+    ___ asteroidCollision  asteroids: List[i..]) __ List[i..]:
         """
         simplified
 
@@ -72,7 +72,7 @@ c_ Solution:
 
         r.. stk
 
-    ___ asteroidCollision_complex(self, asteroids: List[i..]) __ List[i..]:
+    ___ asteroidCollision_complex  asteroids: List[i..]) __ List[i..]:
         """
         asteroids same speed
         list of size

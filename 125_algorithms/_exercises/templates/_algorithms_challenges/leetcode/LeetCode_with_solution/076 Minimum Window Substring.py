@@ -18,7 +18,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ minWindow(self, S, T):
+    ___ minWindow  S, T):
         """
         Algorithm:
         two pointers
@@ -32,23 +32,23 @@ c_ Solution(object):
         w_cnt = [0 ___ _ __ r..(256)]  # window
         t_cnt = [0 ___ _ __ r..(256)]  # 256 ascii, static
         ___ char __ T:
-            t_cnt[ord(char)] += 1
+            t_cnt[o..(char)] += 1
 
         appeared_cnt = 0
         lo = 0
         ___ hi __ xrange(1, l..(S)+1):
             # expand
             val = S[hi-1]
-            __ t_cnt[ord(val)] > 0:
-                w_cnt[ord(val)] += 1
+            __ t_cnt[o..(val)] > 0:
+                w_cnt[o..(val)] += 1
 
-            __ t_cnt[ord(val)] > 0 a.. w_cnt[ord(val)] <= t_cnt[ord(val)]:
+            __ t_cnt[o..(val)] > 0 a.. w_cnt[o..(val)] <= t_cnt[o..(val)]:
                 appeared_cnt += 1  # cache, determine when to decrease appeared_cnt
 
             # shrink
             __ appeared_cnt __ l..(T):  # until find all
-                w.... w_cnt[ord(S[lo])] > t_cnt[ord(S[lo])] o. t_cnt[ord(S[lo])] __ 0:
-                    __ w_cnt[ord(S[lo])] > 0: w_cnt[ord(S[lo])] -= 1
+                w.... w_cnt[o..(S[lo])] > t_cnt[o..(S[lo])] o. t_cnt[o..(S[lo])] __ 0:
+                    __ w_cnt[o..(S[lo])] > 0: w_cnt[o..(S[lo])] -= 1
                     lo += 1
 
                 __ min_win[1]-min_win[0] > hi-lo:

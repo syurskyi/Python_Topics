@@ -4,7 +4,7 @@ REF: https://blog.csdn.net/zhaohengchuan/article/details/78937943
 
 
 c_ Solution:
-    ___ countParenth(self, symb, oper):
+    ___ countParenth  symb, oper):
         """
         :type symb: list[str]
         :type oper: list[str]

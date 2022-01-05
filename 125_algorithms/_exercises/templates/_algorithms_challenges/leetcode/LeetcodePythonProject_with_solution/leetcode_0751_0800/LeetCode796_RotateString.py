@@ -4,7 +4,7 @@ Created on Apr 18, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ rotateString(self, A, B):
+    ___ rotateString  A, B):
         """
         :type A: str
         :type B: str

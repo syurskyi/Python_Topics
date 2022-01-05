@@ -26,7 +26,7 @@ c_ Solution(object):
     ___ - ):
         cache    # dict
 
-    ___ generateTrees(self, n):
+    ___ generateTrees  n):
         """
         dfs
         Catalan
@@ -38,7 +38,7 @@ c_ Solution(object):
 
         r.. generate_cache(1, n)
 
-    ___ generate_cache(self, start, end):
+    ___ generate_cache  start, end):
         """80ms"""
         __ (start, end) n.. __ cache:
             roots    # list
@@ -61,7 +61,7 @@ c_ Solution(object):
 
         r.. cache[(start, end)]
 
-    ___ generate(self, start, end):
+    ___ generate  start, end):
         """
         dfs (cache possible)
         100 ms

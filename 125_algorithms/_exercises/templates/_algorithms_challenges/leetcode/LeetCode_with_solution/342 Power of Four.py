@@ -12,7 +12,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ isPowerOfFour(self, num):
+    ___ isPowerOfFour  num):
         """
         Modular calculation
         4^a mod 3
@@ -28,7 +28,7 @@ c_ Solution(object):
 
         r.. num % 3 __ 1
 
-    ___ isPowerOfFourNaive(self, num):
+    ___ isPowerOfFourNaive  num):
         """
         Naive Determine number of 0 bits to be even
         :type num: int

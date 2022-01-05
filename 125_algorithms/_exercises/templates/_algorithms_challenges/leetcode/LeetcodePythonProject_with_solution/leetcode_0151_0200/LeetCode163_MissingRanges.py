@@ -4,7 +4,7 @@ Created on May 22, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ findMissingRanges(self, nums, lower, upper):
+    ___ findMissingRanges  nums, lower, upper):
         """
         :type nums: List[int]
         :type lower: int

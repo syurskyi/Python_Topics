@@ -4,7 +4,7 @@ Created on May 22, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ lengthOfLongestSubstringTwoDistinct(self, s):
+    ___ lengthOfLongestSubstringTwoDistinct  s):
         """
         :type s: str
         :rtype: int
@@ -18,8 +18,8 @@ c_ Solution(object):
                 hashmap[s[l]] -= 1
                 __ hashmap[s[l]] __ 0: del hashmap[s[l]]
                 l += 1
-            res = max(res, i-l+1)
-        res = max(res, l..(s)-l)
+            res = m..(res, i-l+1)
+        res = m..(res, l..(s)-l)
         r.. res
     
     ___ test

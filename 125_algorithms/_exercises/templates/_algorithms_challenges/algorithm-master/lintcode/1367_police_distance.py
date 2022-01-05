@@ -3,7 +3,7 @@ c_ Solution:
     @param matrix : the martix
     @return: the distance of grid to the police
     """
-    ___ policeDistance(self, matrix):
+    ___ policeDistance  matrix):
         m, n = l..(matrix), l..(matrix)
 
         POLICE = 1

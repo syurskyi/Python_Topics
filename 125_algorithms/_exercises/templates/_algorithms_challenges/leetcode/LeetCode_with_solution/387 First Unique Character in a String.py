@@ -16,7 +16,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ firstUniqChar(self, s):
+    ___ firstUniqChar  s):
         """
         :type s: str
         :rtype: int

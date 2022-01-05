@@ -16,7 +16,7 @@ c_ TopVotedCandidate(object):
                 maxNum = hashmap[p]
             arr.a..([t, maxP])
 
-    ___ q(self, t):
+    ___ q  t):
         """
         :type t: int
         :rtype: int

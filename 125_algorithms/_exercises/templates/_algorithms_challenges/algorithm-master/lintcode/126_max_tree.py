@@ -21,7 +21,7 @@ c_ Solution:
     step5/ val: 3, stack: [6{5{2,},3{0,}}, 3{0,}]
     step6/ val: 1, stack: [6{5{2,},3{0,1}}, 3{0,1}, 1]
     """
-    ___ maxTree(self, A):
+    ___ maxTree  A):
         stack    # list
         ___ val __ A:
             node = TreeNode(val)

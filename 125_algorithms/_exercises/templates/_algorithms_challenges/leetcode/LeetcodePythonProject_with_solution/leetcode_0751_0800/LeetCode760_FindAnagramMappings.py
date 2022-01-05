@@ -4,7 +4,7 @@ Created on Mar 31, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ anagramMappings(self, A, B):
+    ___ anagramMappings  A, B):
         """
         :type A: List[int]
         :type B: List[int]

@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ rob(self, nums):
+    ___ rob  nums):
         """
         DP
         O(n)
@@ -26,7 +26,7 @@ c_ Solution:
         n = l..(nums)
         f = [0 ___ _ __ xrange(n+2)]
         ___ i __ xrange(2, n+2):
-            f[i] = max(
+            f[i] = m..(
                 f[i-1],
                 f[i-2] + nums[i-2]
             )

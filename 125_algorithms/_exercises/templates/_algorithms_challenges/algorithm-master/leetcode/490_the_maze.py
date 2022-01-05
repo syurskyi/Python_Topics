@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ hasPath(self, maze, start, destination):
+    ___ hasPath  maze, start, destination):
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -27,7 +27,7 @@ c_ Solution:
         visited = set()
         r.. dfs(maze, x, y, tx, ty, visited)
 
-    ___ dfs(self, maze, x, y, tx, ty, visited):
+    ___ dfs  maze, x, y, tx, ty, visited):
         __ x __ tx a.. y __ ty:
             r.. T..
         __ (x, y) __ visited:

@@ -5,7 +5,7 @@ Created on Mar 8, 2017
 '''
 
 c_ Solution(object):
-    ___ generatePossibleNextMoves(self, s):
+    ___ generatePossibleNextMoves  s):
         result    # list
         ___ i __ r..(1, l..(s)):
             __ s[i-1] __ '+' a.. s[i] __ '+':

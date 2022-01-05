@@ -18,7 +18,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ searchMatrix(self, mat, target):
+    ___ searchMatrix  mat, target):
         """
         binary search. Two exactly the same binary search algorithm
         :param mat: a list of lists of integers

@@ -4,7 +4,7 @@ Created on Mar 30, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ boldWords(self, words, S):
+    ___ boldWords  words, S):
         """
         :type words: List[str]
         :type S: str
@@ -21,7 +21,7 @@ c_ Solution(object):
                     __ n.. start:
                         res += '<b>'
                         start = T..
-                    j = max(j, i+l..(word))
+                    j = m..(j, i+l..(word))
             __ i __ j a.. start:
                 res += '</b>'
                 start = F..

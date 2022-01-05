@@ -30,7 +30,7 @@ c_ Solution:
     ENEMY = 'E'
     EMPTY = '0'
 
-    ___ maxKilledEnemies(self, grid):
+    ___ maxKilledEnemies  grid):
         """
         :type grid: list[list[str]]
         :rtype: int
@@ -79,7 +79,7 @@ c_ Solution:
     ENEMY = 'E'
     EMPTY = '0'
 
-    ___ maxKilledEnemies(self, grid):
+    ___ maxKilledEnemies  grid):
         """
         :type grid: list[list[str]]
         :rtype: int
@@ -91,14 +91,14 @@ c_ Solution:
         ___ x __ r..(l..(grid)):
             ___ y __ r..(l..(grid[0])):
                 __ grid[x][y] __ EMPTY:
-                    ans = max(
+                    ans = m..(
                         ans,
                         get_killed_cnt(grid, x, y)
                     )
 
         r.. ans
 
-    ___ get_killed_cnt(self, grid, i, j):
+    ___ get_killed_cnt  grid, i, j):
         m, n = l..(grid), l..(grid[0])
         cnt = 0
 

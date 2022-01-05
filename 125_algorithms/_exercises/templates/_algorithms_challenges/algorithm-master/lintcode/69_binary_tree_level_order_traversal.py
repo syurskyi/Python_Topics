@@ -15,7 +15,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ levelOrder(self, root):
+    ___ levelOrder  root):
         """
         :type root: TreeNode
         :rtype: List[List[int]]

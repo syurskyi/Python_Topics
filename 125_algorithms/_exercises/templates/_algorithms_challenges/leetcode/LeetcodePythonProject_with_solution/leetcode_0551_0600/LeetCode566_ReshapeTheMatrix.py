@@ -4,7 +4,7 @@ Created on Aug 30, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ matrixReshape(self, nums, r, c):
+    ___ matrixReshape  nums, r, c):
         """
         :type nums: List[List[int]]
         :type r: int

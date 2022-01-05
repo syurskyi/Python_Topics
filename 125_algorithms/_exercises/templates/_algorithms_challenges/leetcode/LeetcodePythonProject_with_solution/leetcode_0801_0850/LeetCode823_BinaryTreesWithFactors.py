@@ -4,7 +4,7 @@ Created on May 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numFactoredBinaryTrees(self, A):
+    ___ numFactoredBinaryTrees  A):
         """
         :type A: List[int]
         :rtype: int

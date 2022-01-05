@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ closestKValues(self, root, target, k):
+    ___ closestKValues  root, target, k):
         """
         :type root: TreeNode
         :type target: float
@@ -36,14 +36,14 @@ c_ Solution(object):
                 res.a..(stack2.pop())
         r.. res
     
-    ___ inOrderReg(self, root, target, stack):
+    ___ inOrderReg  root, target, stack):
         __ n.. root: r..
         inOrderReg(root.left, target, stack)
         __ root.val > target: r..
         stack.a..(root.val)
         inOrderReg(root.right, target, stack)
     
-    ___ inOrderRev(self, root, target, stack):
+    ___ inOrderRev  root, target, stack):
         __ n.. root: r..
         inOrderRev(root.right, target, stack)
         __ root.val <= target: r..

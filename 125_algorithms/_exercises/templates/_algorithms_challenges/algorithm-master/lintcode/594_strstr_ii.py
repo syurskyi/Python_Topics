@@ -32,7 +32,7 @@ Test Case:
 
 
 c_ Solution:
-    ___ strStr2(self, S, T):
+    ___ strStr2  S, T):
         """
         :type S: List[str]
         :type T: List[str]
@@ -53,12 +53,12 @@ c_ Solution:
 
         MOD = 1000000  # hashsize to mod
         MG = 31  # magic number
-        A = ord('a')
+        A = o..('a')
 
         p = 1  # `p == MG ** (n - 1)`
         tcode = 0  # the code of T
         ___ i __ r..(n):
-            tcode = (tcode * MG + ord(T[i]) - A) % MOD
+            tcode = (tcode * MG + o..(T[i]) - A) % MOD
 
             __ i __ 0:
                 _____
@@ -73,7 +73,7 @@ c_ Solution:
             kick out `S[i - n]`
             """
             __ i >= n:
-                _code = (_code - (ord(S[i - n]) - A) * p) % MOD
+                _code = (_code - (o..(S[i - n]) - A) * p) % MOD
 
             __ _code < 0:
                 _code += MOD
@@ -81,7 +81,7 @@ c_ Solution:
             """
             Add `S[i]`
             """
-            _code = (_code * MG + ord(S[i]) - A) % MOD
+            _code = (_code * MG + o..(S[i]) - A) % MOD
 
             __ _code __ tcode a.. S[i - n + 1:i + 1] __ T:
                 r.. i - n + 1

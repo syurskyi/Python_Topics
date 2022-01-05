@@ -84,11 +84,11 @@ ___ pyb_get_secret_token(username):
 
 
 
-try:
+___
     print(pyb_get_secret_token('Tim'))
-except UserAccessExpired __ e:
+______ UserAccessExpired __ e:
     print("Caught exception UserAccessExpired")
-except UserNoPermission __ e:
+______ UserNoPermission __ e:
     print("Caught exception UserNoPermission")
-except UserDoesNotExist __ e:
+______ UserDoesNotExist __ e:
     print("Caught exception UserDoesNotExist")

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ integerBreak(self, n):
+  ___ integerBreak  n):
     """
     :type n: int
     :rtype: int

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ nthSuperUglyNumber(self, n, primes):
+    ___ nthSuperUglyNumber  n, primes):
         """
         :type n: int
         :type primes: list[int]

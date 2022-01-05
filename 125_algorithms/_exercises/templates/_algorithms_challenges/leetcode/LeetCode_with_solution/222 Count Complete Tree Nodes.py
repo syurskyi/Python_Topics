@@ -18,7 +18,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ countNodes(self, root):
+    ___ countNodes  root):
         """
         O((lg n)^2)
         """
@@ -31,7 +31,7 @@ c_ Solution:
         ____:
             r.. 2**(h-2)-1+1+countNodes(root.left)  # right_tree nodes + root + left_tree nodes
 
-    ___ get_height(self, cur):
+    ___ get_height  cur):
         h = 0  # depth starting from 0
         w.... cur:
             h += 1
@@ -46,7 +46,7 @@ c_ Solution_TLE:
         cnt = 0
         stopped = F..
 
-    ___ countNodes(self, root):
+    ___ countNodes  root):
         """
 
         :type root: TreeNode
@@ -58,12 +58,12 @@ c_ Solution_TLE:
         fanthom(root, 1)
         r.. 2**(depth-1)-1+cnt
 
-    ___ get_depth(self, root):
+    ___ get_depth  root):
         depth += 1
         __ root.left:
             get_depth(root.left)
 
-    ___ fanthom(self, root, depth):
+    ___ fanthom  root, depth):
         __ stopped:
             r..
 
@@ -79,7 +79,7 @@ c_ Solution_TLE:
         __ root.right:
             fanthom(root.right, depth+1)
 
-    ___ countNodes_TLE(self, root):
+    ___ countNodes_TLE  root):
         """
         Brute Force
 

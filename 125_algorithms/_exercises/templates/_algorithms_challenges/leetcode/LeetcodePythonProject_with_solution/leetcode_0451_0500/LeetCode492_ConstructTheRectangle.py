@@ -5,7 +5,7 @@ Created on May 8, 2017
 '''
 
 c_ Solution(object):
-    ___ constructRectangle(self, area):
+    ___ constructRectangle  area):
         """
         :type area: int
         :rtype: List[int]
@@ -14,7 +14,7 @@ c_ Solution(object):
         l = i..(math.sqrt(area))
         w.... l < area:
             __ area%l __ 0:
-                r.. [max(l, area/l), m..(l, area/l)]
+                r.. [m..(l, area/l), m..(l, area/l)]
             ____:
                 l += 1
         r.. [area, 1]

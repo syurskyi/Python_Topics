@@ -4,7 +4,7 @@ Created on Oct 29, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ numDistinctIslands2(self, grid):
+    ___ numDistinctIslands2  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -30,18 +30,18 @@ c_ Solution(object):
                         count += 1
         r.. count
     
-    ___ helper(self, grid, i, j, res):
+    ___ helper  grid, i, j, res):
         res[0] = m..(res[0], i)
-        res[1] = max(res[1], i)
+        res[1] = m..(res[1], i)
         res[2] = m..(res[2], j)
-        res[3] = max(res[3], j)
+        res[3] = m..(res[3], j)
         m, n = l..(grid), l..(grid[0])
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
             __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:
                 grid[x][y] = 2
                 helper(grid, x, y, res)
     
-    ___ generateKeys(self, grid, res):
+    ___ generateKeys  grid, res):
         hashset = set()
         up, down, left, right = res[0], res[1], res[2], res[3]
         subGrid    # list
@@ -53,7 +53,7 @@ c_ Solution(object):
         addRotationKeys(subGrid, hashset)
         r.. hashset
     
-    ___ addRotationKeys(self, grid, hashset):
+    ___ addRotationKeys  grid, hashset):
         grid1 = grid
         grid2 = grid[::-1]
         grid3 = [row[::-1] ___ row __ grid]
@@ -76,7 +76,7 @@ c_ Solution(object):
                 hashset.add(getKey(newGrid))
                 grid0 = newGrid
     
-    ___ getKey(self, grid):
+    ___ getKey  grid):
         r.. ','.j..([''.j..([s..(num) ___ num __ row]) ___ row __ grid])
     
     ___ test

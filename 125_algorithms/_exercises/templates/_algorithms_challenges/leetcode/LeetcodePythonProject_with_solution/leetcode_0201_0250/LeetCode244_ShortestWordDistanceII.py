@@ -14,7 +14,7 @@ c_ WordDistance(object):
             hashmap[word] = hashmap.get(word, [])+[i]
         hashmap = hashmap
     
-    ___ shortest(self, word1, word2):
+    ___ shortest  word1, word2):
         """
         :type word1: str
         :type word2: str

@@ -4,7 +4,7 @@ Created on Nov 7, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ intToRoman(self, num):
+    ___ intToRoman  num):
         """
         :type num: int
         :rtype: str

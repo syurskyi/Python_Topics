@@ -4,7 +4,7 @@ Created on Oct 15, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ decodeAtIndex(self, S, K):
+    ___ decodeAtIndex  S, K):
         """
         :type S: str
         :type K: int
@@ -26,7 +26,7 @@ c_ Solution(object):
                     r.. c
                 n -= 1
     
-    ___ decodeAtIndex_own_MLE(self, S, K):
+    ___ decodeAtIndex_own_MLE  S, K):
         """
         :type S: str
         :type K: int

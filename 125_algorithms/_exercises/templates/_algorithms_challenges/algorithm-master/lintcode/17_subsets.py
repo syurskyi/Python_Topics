@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: A set of numbers
     @return: A list of lists
     """
-    ___ subsets(self, A):
+    ___ subsets  A):
         __ n.. A:
             r.. [[]]
 
@@ -14,7 +14,7 @@ c_ Solution:
         dfs(s..(A), 0, ans, [])
         r.. ans
 
-    ___ dfs(self, A, start, ans, subset):
+    ___ dfs  A, start, ans, subset):
         ans.a..(subset | )
 
         __ start >= l..(A):
@@ -32,7 +32,7 @@ c_ Solution:
     @param: A: A set of numbers
     @return: A list of lists
     """
-    ___ subsets(self, A):
+    ___ subsets  A):
         __ n.. A:
             r.. [[]]
 

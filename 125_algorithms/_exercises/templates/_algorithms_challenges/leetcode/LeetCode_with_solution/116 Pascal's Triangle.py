@@ -14,7 +14,7 @@ Return
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ generate(self, numRows):
+    ___ generate  numRows):
         """
         math
         :param numRows: integer
@@ -32,5 +32,5 @@ c_ Solution:
 
         r.. result
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().generate(5)

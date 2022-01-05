@@ -12,7 +12,7 @@ c_ MedianFinder:
         minheap    # list
         maxheap    # list
 
-    ___ addNum(self, num):
+    ___ addNum  num):
         """
         :type num: int
         :rtype: void

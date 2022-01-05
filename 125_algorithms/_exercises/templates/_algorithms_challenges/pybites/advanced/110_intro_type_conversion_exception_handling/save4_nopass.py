@@ -5,10 +5,10 @@ ___ divide_numbers(numerator, denominator):
        ValueError reraise it. Following do the division and return the result.
        However if denominator is 0 catch the corresponding exception Python
        throws (cannot divide by 0), and return 0"""
-    try:
+    ___
         __ denominator __ 0:
             r.. 0
         ____:
             r.. i..(numerator) / i..(denominator)
-    except ValueError:
+    ______ V..
         r.. print("Input integer")

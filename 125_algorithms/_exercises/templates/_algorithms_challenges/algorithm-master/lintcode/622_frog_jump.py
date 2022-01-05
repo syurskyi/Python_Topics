@@ -2,7 +2,7 @@
 BFS
 """
 c_ Solution:
-    ___ canCross(self, stones):
+    ___ canCross  stones):
         """
         :type stones: List[int]
         :rtype: bool
@@ -37,7 +37,7 @@ c_ Solution:
 DP
 """
 c_ Solution:
-    ___ canCross(self, stones):
+    ___ canCross  stones):
         """
         :type stones: List[int]
         :rtype: bool

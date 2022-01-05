@@ -4,7 +4,7 @@ Created on Feb 5, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maxProfit(self, prices):
+    ___ maxProfit  prices):
         """
         :type prices: List[int]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(object):
         __ n.. prices: r.. res
         minVal = prices[0]
         ___ i __ r..(1, l..(prices)):
-            res = max(res, prices[i]-minVal)
+            res = m..(res, prices[i]-minVal)
             minVal = m..(minVal, prices[i])
         r.. res
     

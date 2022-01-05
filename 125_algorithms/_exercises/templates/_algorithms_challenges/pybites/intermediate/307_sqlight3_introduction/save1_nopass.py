@@ -61,7 +61,7 @@ c_ DB:
 
         r.. self
 
-    ___ __exit__(self, exc_type, exc_value, traceback):
+    ___ __exit__  exc_type, exc_value, traceback):
         connection.close()
 
     ___ create(
@@ -99,7 +99,7 @@ c_ DB:
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
 
-    ___ delete(self, table: s.., target: Tuple[s.., Any]):
+    ___ delete  table: s.., target: Tuple[s.., Any]):
         """Deletes rows from the table.
 
         Args:
@@ -111,7 +111,7 @@ c_ DB:
         """
         r.. NotImplementedError("You have to implement this method first.")
 
-    ___ insert(self, table: s.., values: List[Tuple]):
+    ___ insert  table: s.., values: List[Tuple]):
         """Inserts one or multiple new records into the database.
 
         Before inserting a value, you should make sure
@@ -169,7 +169,7 @@ c_ DB:
         """
         r.. NotImplementedError("You have to implement this method first.")
 
-    ___ update(self, table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]):
+    ___ update  table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]):
         """Update a record in the database.
 
         Args:

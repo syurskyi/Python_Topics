@@ -24,7 +24,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ binaryTreePaths(self, root):
+    ___ binaryTreePaths  root):
         """
 
         :type root: TreeNode
@@ -37,7 +37,7 @@ c_ Solution:
         dfs(root, [], ret)
         r.. ret
 
-    ___ dfs(self, cur, path, ret):
+    ___ dfs  cur, path, ret):
         """
         pre-check
         """
@@ -54,7 +54,7 @@ c_ Solution:
             dfs(cur.right, path, ret)
             path.pop()  # pop the shared path
 
-    ___ dfs_path(self, cur, path, ret):
+    ___ dfs_path  cur, path, ret):
         __ n.. cur:
             r..
 

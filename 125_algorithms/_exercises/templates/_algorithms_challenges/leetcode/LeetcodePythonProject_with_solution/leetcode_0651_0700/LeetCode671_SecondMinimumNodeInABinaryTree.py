@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ findSecondMinimumValue(self, root):
+    ___ findSecondMinimumValue  root):
         """
         :type root: TreeNode
         :rtype: int

@@ -24,7 +24,7 @@ c_ LRUCache:
         D.nxt = d
         d.pre = D
 
-    ___ get(self, key):
+    ___ get  key):
         """
         :type key: int
         :rtype: int
@@ -35,7 +35,7 @@ c_ LRUCache:
         _update(key)
         r.. nodes[key].val
 
-    ___ set(self, key, val):
+    ___ set  key, val):
         """
         :type key: int
         :type val: int
@@ -57,7 +57,7 @@ c_ LRUCache:
         node = _pop_head()
         del nodes[node.key]
 
-    ___ _update(self, key, val_ N..
+    ___ _update  key, val_ N..
         node = nodes[key]
 
         __ val:
@@ -66,7 +66,7 @@ c_ LRUCache:
         node.unlink()
         _add_tail(node)
 
-    ___ _add(self, key, val):
+    ___ _add  key, val):
         nodes[key] = CacheNode(key, val)
         _add_tail(nodes[key])
 
@@ -75,7 +75,7 @@ c_ LRUCache:
         node.unlink()
         r.. node
 
-    ___ _add_tail(self, node):
+    ___ _add_tail  node):
         node.link(d.pre, d)
 
 
@@ -86,7 +86,7 @@ c_ CacheNode:
         pre = pre
         nxt = nxt
 
-    ___ link(self, pre, nxt):
+    ___ link  pre, nxt):
         pre = pre
         nxt = nxt
         pre.nxt = self

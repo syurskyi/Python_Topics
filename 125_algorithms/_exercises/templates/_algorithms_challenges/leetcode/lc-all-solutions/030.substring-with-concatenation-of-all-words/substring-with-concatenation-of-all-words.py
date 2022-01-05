@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ findSubstring(self, s, words):
+  ___ findSubstring  s, words):
     """
     :type s: str
     :type words: List[str]

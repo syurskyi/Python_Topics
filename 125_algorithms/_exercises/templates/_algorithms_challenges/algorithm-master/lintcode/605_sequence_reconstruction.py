@@ -8,7 +8,7 @@ Topological Sort
 
 
 c_ Solution:
-    ___ sequenceReconstruction(self, org, seqs):
+    ___ sequenceReconstruction  org, seqs):
         """
         :type org: list[int]
         :type seqs: list[list[int]]

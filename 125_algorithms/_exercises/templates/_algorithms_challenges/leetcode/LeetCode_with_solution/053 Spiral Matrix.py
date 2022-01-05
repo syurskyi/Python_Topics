@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ spiralOrder(self, matrix):
+    ___ spiralOrder  matrix):
         """
               top
                |
@@ -71,5 +71,5 @@ c_ Solution:
 
         r.. result
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().spiralOrder([[2, 3]])

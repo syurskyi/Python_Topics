@@ -3,7 +3,7 @@ c_ Solution:
     @param n: the number
     @return: the rank of the number
     """
-    ___ kthPrime(self, n):
+    ___ kthPrime  n):
         __ n.. n o. n < 3:
             r.. 1
 

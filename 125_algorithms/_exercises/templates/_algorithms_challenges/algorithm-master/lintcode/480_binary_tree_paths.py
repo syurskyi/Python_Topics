@@ -8,7 +8,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ binaryTreePaths(self, root):
+    ___ binaryTreePaths  root):
         """
         :type root: TreeNode
         :rtype: list[str]
@@ -21,7 +21,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, node, ans, path):
+    ___ dfs  node, ans, path):
         path.a..(s..(node.val))
 
         __ n.. node.left a.. n.. node.right:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ solveNQueens(self, n):
+    ___ solveNQueens  n):
         """
         :type n: int
         :rtype: List[List[str]]
@@ -12,7 +12,7 @@ c_ Solution:
         dfs(G, 0, ans)
         r.. ans
 
-    ___ dfs(self, G, y, ans):
+    ___ dfs  G, y, ans):
         __ y __ l..(G):
             ans.a..(clone_board(G))
             r..
@@ -23,7 +23,7 @@ c_ Solution:
                 dfs(G, y + 1, ans)
                 G[x][y] = '.'
 
-    ___ is_valid(self, G, x, y):
+    ___ is_valid  G, x, y):
         """
         traverse left half => i in [0, n], j in [0, y - 1] to
         1. avoid `j == y` and speed up
@@ -42,7 +42,7 @@ c_ Solution:
                     r.. F..
         r.. T..
 
-    ___ clone_board(self, G):
+    ___ clone_board  G):
         res    # list
         ___ R __ G:
             res.a..(''.j..(R))

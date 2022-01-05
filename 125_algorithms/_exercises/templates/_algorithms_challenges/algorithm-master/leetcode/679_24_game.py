@@ -7,7 +7,7 @@ c_ Solution:
         l.... a, b: a / b,
     )
 
-    ___ judgePoint24(self, nums):
+    ___ judgePoint24  nums):
         """
         :type nums: List[int]
         :rtype: bool

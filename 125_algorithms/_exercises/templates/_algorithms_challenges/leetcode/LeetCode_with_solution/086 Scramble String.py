@@ -38,7 +38,7 @@ Given two strings s1 and s2 of the same length, determine if s2 is a scrambled s
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ isScramble(self, s1, s2):
+    ___ isScramble  s1, s2):
         """
         dfs
         partition and compare
@@ -58,9 +58,9 @@ c_ Solution:
             r.. F..
         chars = [0 ___ _ __ xrange(26)]
         ___ char __ s1:
-            chars[ord(char)-ord('a')] += 1
+            chars[o..(char)-o..('a')] += 1
         ___ char __ s2:
-            chars[ord(char)-ord('a')] -= 1
+            chars[o..(char)-o..('a')] -= 1
 
         # if filter(lambda x: x!=0, chars):
         #     return False
@@ -81,5 +81,5 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().isScramble("abc", "bca")__True

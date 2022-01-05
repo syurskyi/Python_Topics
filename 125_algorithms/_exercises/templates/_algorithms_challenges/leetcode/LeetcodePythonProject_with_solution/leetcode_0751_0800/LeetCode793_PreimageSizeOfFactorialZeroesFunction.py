@@ -4,7 +4,7 @@ Created on Apr 17, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ preimageSizeFZF(self, K):
+    ___ preimageSizeFZF  K):
         """
         :type K: int
         :rtype: int

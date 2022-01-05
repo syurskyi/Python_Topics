@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ removeBoxes(self, A):
+  ___ removeBoxes  A):
     N = l..(A)
     memo = [[[0] * N ___ _ __ r..(N)] ___ _ __ r..(N)]
 
@@ -13,7 +13,7 @@ c_ Solution(object):
         ans = dp(i + 1, j, 0) + (k + 1) ** 2
         ___ m __ r..(i + 1, j + 1):
           __ A[i] __ A[m]:
-            ans = max(ans, dp(i + 1, m - 1, 0) + dp(m, j, k + 1))
+            ans = m..(ans, dp(i + 1, m - 1, 0) + dp(m, j, k + 1))
         memo[i][j][k] = ans
       r.. memo[i][j][k]
 

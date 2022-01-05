@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ _lengthOfLongestSubstring(self, s):
+  ___ _lengthOfLongestSubstring  s):
     """
     :type s: str
     :rtype: int
@@ -12,16 +12,16 @@ c_ Solution(object):
         l -= 1
       d[c] += 1
       l += 1
-      ans = max(ans, l)
+      ans = m..(ans, l)
     r.. ans
 
-  ___ lengthOfLongestSubstring(self, s):
+  ___ lengthOfLongestSubstring  s):
     d    # dict
     start = 0
     ans = 0
     ___ i, c __ e..(s):
       __ c __ d:
-        start = max(start, d[c] + 1)
+        start = m..(start, d[c] + 1)
       d[c] = i
-      ans = max(ans, i - start + 1)
+      ans = m..(ans, i - start + 1)
     r.. ans

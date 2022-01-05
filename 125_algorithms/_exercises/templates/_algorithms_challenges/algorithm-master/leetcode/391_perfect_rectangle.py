@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ isRectangleCover(self, recs):
+    ___ isRectangleCover  recs):
         """
         :type recs: List[List[int]]
         :rtype: bool
@@ -17,8 +17,8 @@ c_ Solution:
         ___ l, b, r, t __ recs:
             left = m..(left, l)
             bottom = m..(bottom, b)
-            right = max(right, r)
-            top = max(top, t)
+            right = m..(right, r)
+            top = m..(top, t)
 
             ___ x, y, val __ (
                 (l, b, 1),

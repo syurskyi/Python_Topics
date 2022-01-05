@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ inorderTraversal(self, root):
+    ___ inorderTraversal  root):
         """
         :type root: TreeNode
         :rtype: List[int]

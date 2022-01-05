@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ rotateRight(self, head, k):
+    ___ rotateRight  head, k):
         """
         :type head: ListNode
         :type k: int

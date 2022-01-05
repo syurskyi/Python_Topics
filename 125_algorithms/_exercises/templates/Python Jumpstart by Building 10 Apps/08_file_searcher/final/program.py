@@ -82,7 +82,7 @@ ___ search_file(filename, search_text):
     # cover it shortly. However, some folks have been running
     # into errors where this is passed a binary file and crashes.
     # This try/except block catches the error and returns no matches.
-    try:
+    ___
 
         # matches = []
         w__ open(filename, 'r', encoding'utf-8') __ fin:
@@ -96,7 +96,7 @@ ___ search_file(filename, search_text):
                     y.. m
 
             # return matches
-    except UnicodeDecodeError:
+    ______ UnicodeDecodeError:
         print("NOTICE: Binary file {} skipped.".f..(filename))
 
 

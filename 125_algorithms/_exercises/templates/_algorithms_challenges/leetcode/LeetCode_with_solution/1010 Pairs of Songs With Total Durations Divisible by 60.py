@@ -29,7 +29,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ numPairsDivisibleBy60(self, time: List[i..]) __ i..:
+    ___ numPairsDivisibleBy60  time: List[i..]) __ i..:
         """
         Running attribution
         """
@@ -42,7 +42,7 @@ c_ Solution:
         r.. ret
 
 
-    ___ numPairsDivisibleBy60_error(self, time: List[i..]) __ i..:
+    ___ numPairsDivisibleBy60_error  time: List[i..]) __ i..:
         """
         O(N^2) check i, j
         Reduce it

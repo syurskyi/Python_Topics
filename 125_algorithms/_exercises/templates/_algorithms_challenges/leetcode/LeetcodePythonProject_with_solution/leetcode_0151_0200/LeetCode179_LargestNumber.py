@@ -7,7 +7,7 @@ Created on Feb 14, 2017
 c_ Solution:
     # @param {integer[]} nums
     # @return {string}
-    ___ largestNumber(self, nums):
+    ___ largestNumber  nums):
         comp = l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
         nums = l..(map(s.., nums))
         nums.s..(cmp=comp, r.._T..
@@ -15,7 +15,7 @@ c_ Solution:
     
     # @param {integer[]} nums
     # @return {string}
-    ___ largestNumber_python2(self, nums):
+    ___ largestNumber_python2  nums):
         #python 2 only
         num = [s..(x) ___ x __ nums]
 #         num.sort(cmp=lambda x, y: cmp(y+x, x+y))

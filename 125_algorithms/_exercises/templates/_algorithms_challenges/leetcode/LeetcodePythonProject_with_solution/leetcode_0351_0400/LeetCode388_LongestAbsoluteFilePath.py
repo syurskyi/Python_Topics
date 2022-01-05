@@ -5,14 +5,14 @@ Created on Apr 2, 2017
 '''
 
 c_ Solution(object):
-    ___ lengthLongestPath(self, input):
+    ___ lengthLongestPath  input):
         maxLen = 0
         pathLen = {0:0}
         ___ line __ input.splitlines
             name = line.lstrip('\t')
             depth = l..(line)-l..(name)
             __ '.' __ name:
-                maxLen = max(maxLen, pathLen[depth]+l..(name))
+                maxLen = m..(maxLen, pathLen[depth]+l..(name))
             ____:
                 pathLen[depth+1] = pathLen[depth]+l..(name)+1
         r.. maxLen

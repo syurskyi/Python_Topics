@@ -11,7 +11,7 @@ c_ Solution:
     @param: A: An array of integers
     @return: An integer
     """
-    ___ maxProduct(self, A):
+    ___ maxProduct  A):
         __ n.. A:
             r.. 0
 
@@ -22,7 +22,7 @@ c_ Solution:
             if its so lowest or highest
             """
             C = (A[i], Pmin * A[i], Pmax * A[i])
-            Pmin, Pmax = m..(C), max(C)
+            Pmin, Pmax = m..(C), m..(C)
 
             __ Pmax > ans:
                 ans = Pmax

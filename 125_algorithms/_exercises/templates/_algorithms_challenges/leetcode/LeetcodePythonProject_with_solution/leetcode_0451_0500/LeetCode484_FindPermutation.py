@@ -5,7 +5,7 @@ Created on May 3, 2017
 '''
 
 c_ Solution(object):
-    ___ findPermutation(self, s):
+    ___ findPermutation  s):
         """
         :type s: str
         :rtype: List[int]
@@ -22,7 +22,7 @@ c_ Solution(object):
             i += 1
         r.. res
     
-    ___ reverse(self, res, l, r):
+    ___ reverse  res, l, r):
         w.... l < r:
             res[l], res[r] = res[r], res[l]
             l += 1

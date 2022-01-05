@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canPlaceFlowers(self, flowerbed, n):
+  ___ canPlaceFlowers  flowerbed, n):
     """
     :type flowerbed: List[int]
     :type n: int

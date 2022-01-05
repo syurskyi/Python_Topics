@@ -3,7 +3,7 @@ c_ Solution:
     @param array: an integer array
     @return: the length of the minimum cycle section
     """
-    ___ minimumCycleSection(self, array):
+    ___ minimumCycleSection  array):
         __ n.. array:
             r.. 0
 

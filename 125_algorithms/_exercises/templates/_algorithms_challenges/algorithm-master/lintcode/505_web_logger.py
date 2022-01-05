@@ -9,7 +9,7 @@ c_ WebLogger:
     @param: timestamp: An integer
     @return: nothing
     """
-    ___ hit(self, timestamp):
+    ___ hit  timestamp):
         tail = dummy[0]
 
         tail[1] = dummy[0] = _n = [N.., N.., timestamp]
@@ -22,7 +22,7 @@ c_ WebLogger:
     @param: timestamp: An integer
     @return: An integer
     """
-    ___ get_hit_count_in_last_5_minutes(self, timestamp):
+    ___ get_hit_count_in_last_5_minutes  timestamp):
         head = dummy[1]
 
         w.... (head __ n.. dummy a..

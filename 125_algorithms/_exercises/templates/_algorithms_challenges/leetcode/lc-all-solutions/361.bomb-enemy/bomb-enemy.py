@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxKilledEnemies(self, grid):
+  ___ maxKilledEnemies  grid):
     """
     :type grid: List[List[str]]
     :rtype: int
@@ -25,8 +25,8 @@ c_ Solution(object):
       ___ j __ r..(r..(0, l..(grid[0]))):
         __ grid[i][j] __ "W":
           _____
-        dpRow[i + 1][j + 1] = max(dpRow[i + 1][j + 1], dpRow[i + 1][j + 2])
-        dpCol[i + 1][j + 1] = max(dpCol[i + 1][j + 1], dpCol[i + 2][j + 1])
+        dpRow[i + 1][j + 1] = m..(dpRow[i + 1][j + 1], dpRow[i + 1][j + 2])
+        dpCol[i + 1][j + 1] = m..(dpCol[i + 1][j + 1], dpCol[i + 2][j + 1])
         __ grid[i][j] __ "0":
-          maxKilled = max(maxKilled, dpRow[i + 1][j + 1] + dpCol[i + 1][j + 1])
+          maxKilled = m..(maxKilled, dpRow[i + 1][j + 1] + dpCol[i + 1][j + 1])
     r.. maxKilled

@@ -16,7 +16,7 @@ c_ MovingAverage(object):
         q = d..()
         s.. = 0
 
-    ___ next(self, val):
+    ___ next  val):
         """
         :type val: int
         :rtype: float

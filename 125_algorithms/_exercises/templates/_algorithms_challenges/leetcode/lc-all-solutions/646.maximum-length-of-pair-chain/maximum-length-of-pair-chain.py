@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findLongestChain(self, pairs):
+  ___ findLongestChain  pairs):
     """
     :type pairs: List[List[int]]
     :rtype: int

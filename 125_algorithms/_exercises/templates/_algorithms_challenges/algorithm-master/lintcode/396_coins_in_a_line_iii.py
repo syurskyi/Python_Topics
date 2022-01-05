@@ -26,7 +26,7 @@ chosen the maximum
 
 
 c_ Solution:
-    ___ firstWillWin(self, values):
+    ___ firstWillWin  values):
         """
         :type values: list[int]
         :rtype: bool
@@ -46,7 +46,7 @@ c_ Solution:
 
         ___ i __ r..(n - 1 - 1, -1, -1):
             ___ j __ r..(i + 1, n):
-                dp[i][j] = max((
+                dp[i][j] = m..((
                     values[i] - dp[i + 1][j],
                     values[j] - dp[i][j - 1],
                 ))

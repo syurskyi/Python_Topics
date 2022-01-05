@@ -12,7 +12,7 @@ c_ MedianFinder(object):
         # maxHeap save negative values: -5, -3, -2
         maxHeap    # list
 
-    ___ addNum(self, num):
+    ___ addNum  num):
         __ (n.. minHeap a.. n.. maxHeap) o. num < -maxHeap[0]:
             heapq.heappush(maxHeap, -num)
             __ l..(maxHeap) > l..(minHeap) + 1:

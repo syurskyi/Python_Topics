@@ -13,7 +13,7 @@ REF: [Next Permutation](https://leetcode.com/articles/next-permutation/)
 
 
 c_ Solution:
-    ___ nextPermutation(self, nums):
+    ___ nextPermutation  nums):
         """
         :type nums: list[int]
         :rtype: list[int]

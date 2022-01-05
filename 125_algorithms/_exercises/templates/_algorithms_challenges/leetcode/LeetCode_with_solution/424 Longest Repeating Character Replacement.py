@@ -10,7 +10,7 @@ _______ operator
 
 
 c_ Solution:
-    ___ characterReplacement(self, s, k):
+    ___ characterReplacement  s, k):
         """
         Replace any letter with another letter - replace any letter with any
         letter.
@@ -34,13 +34,13 @@ c_ Solution:
         ___ hi __ r..(l..(s)):
             counter[s[hi]] += 1
             w... T...
-                most = max(counter.values())  # O(26)
+                most = m..(counter.values())  # O(26)
                 l = hi - lo + 1
                 __ l - most > k:
                     counter[s[lo]] -= 1
                     lo += 1
                 ____:
-                    ret = max(ret, l)
+                    ret = m..(ret, l)
                     break
 
         r.. ret

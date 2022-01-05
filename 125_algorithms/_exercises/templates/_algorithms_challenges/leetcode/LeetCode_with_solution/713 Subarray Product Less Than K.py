@@ -22,7 +22,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ numSubarrayProductLessThanK(self, nums: List[i..], k: i..) __ i..:
+    ___ numSubarrayProductLessThanK  nums: List[i..], k: i..) __ i..:
         """
         Two pointer
         Count attribute to the end

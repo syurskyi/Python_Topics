@@ -6,7 +6,7 @@ c_ Matrix(object):
     ___ __repr__
         r.. f'<Matrix values="{values}">'
 
-    ___ __matmul__(self, other):
+    ___ __matmul__  other):
         A = values
         B = l..(z..(*other.values))
         print(A)
@@ -17,10 +17,10 @@ c_ Matrix(object):
                 Y[i][j] = s..(a * b ___ a, b __ z..(A[i], B[j]))
         r.. Matrix(Y)
 
-    ___ __imatmul__(self, other):
+    ___ __imatmul__  other):
         Y = self @ other
         values = Y.values
         r.. self
 
-    ___ __rmatmul__(self, other):
+    ___ __rmatmul__  other):
         r.. self @ other

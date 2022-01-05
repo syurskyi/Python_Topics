@@ -8,7 +8,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ singleNumber_optimal(self, A):
+    ___ singleNumber_optimal  A):
         """
         No extra memory, thus unable to use hash table, requiring constant space solution
 
@@ -46,7 +46,7 @@ c_ Solution:
             bit_0 = (bit_t & elmt) | (bit_0 & ~elmt)  # three times means 0 times (mod 3)
         r.. bit_1
 
-    ___ singleNumber_array(self, A):
+    ___ singleNumber_array  A):
         """
         add the bit vertically; bit sum
 
@@ -71,7 +71,7 @@ c_ Solution:
         r.. result
 
 
-    ___ singleNumber(self, A):
+    ___ singleNumber  A):
         """
         add the bit vertically; bit sum
 
@@ -106,7 +106,7 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     # possible negative numbers
     tests = [
         [1, 1, 1, 2, 2, 2, 3, 4, 4, 4],

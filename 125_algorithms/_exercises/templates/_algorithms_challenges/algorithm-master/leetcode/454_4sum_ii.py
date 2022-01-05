@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fourSumCount(self, A, B, C, D):
+    ___ fourSumCount  A, B, C, D):
         """
         :type A: List[int]
         :type B: List[int]

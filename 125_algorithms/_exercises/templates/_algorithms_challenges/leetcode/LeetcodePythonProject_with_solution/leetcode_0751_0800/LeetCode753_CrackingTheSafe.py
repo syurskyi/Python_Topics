@@ -4,7 +4,7 @@ Created on Mar 28, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ crackSafe(self, n, k):
+    ___ crackSafe  n, k):
         """
         :type n: int
         :type k: int
@@ -16,7 +16,7 @@ c_ Solution(object):
         dfs(arr, total, visited, n, k)
         r.. ''.j..(arr)
     
-    ___ dfs(self, arr, goal, visited, n, k):
+    ___ dfs  arr, goal, visited, n, k):
         __ l..(visited) __ goal: r.. T..
         prevArr = arr[l..(arr)-n+1:]
         ___ i __ r..(k):

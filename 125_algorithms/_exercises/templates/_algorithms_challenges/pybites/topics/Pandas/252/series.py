@@ -7,18 +7,18 @@ ___ return_at_index(ser: pd.Series, idx: i..) __ object:
     If you want to be extra careful catch and raise an error if
        the index does not exist.
     """
-    try:
+    ___
         r.. ser[idx]
-    except KeyError:
+    ______ KeyError:
         r.. KeyError
 
 ___ get_slice(ser: pd.Series, start: i.., end: i..) __ pd.core.series.Series:
     """Return the slice of the given Series in the range between
     start and end.
     """
-    try:
+    ___
         r.. ser[start:end]
-    except KeyError:
+    ______ KeyError:
         r.. KeyError
 
 ___ get_slice_inclusive(ser: pd.Series,
@@ -26,33 +26,33 @@ ___ get_slice_inclusive(ser: pd.Series,
     """Return the slice of the given Series in the range between
     start and end inclusive.
     """
-    try:
+    ___
         r.. ser.loc[start:end]
-    except KeyError:
+    ______ KeyError:
         r.. KeyError
 
 ___ return_head(ser: pd.Series, num: i..) __ pd.core.series.Series:
     """Return the first num elements of the given Series.
     """
-    try:
+    ___
         r.. ser.head(num)
-    except KeyError:
+    ______ KeyError:
         r.. KeyError
 
 ___ return_tail(ser: pd.Series, num: i..) __ pd.core.series.Series:
     """Return the last num elements of the given Series.
     """
-    try:
+    ___
         r.. ser.tail(num)
-    except KeyError:
+    ______ KeyError:
         r.. KeyError
 
 ___ get_index(ser: pd.Series) __ pd.core.indexes.base.Index:
     """Return all indexes of the given Series.
     """
-    try:
+    ___
         r.. ser.index
-    except KeyError:
+    ______ KeyError:
         r.. KeyError
 
 ___ get_values(ser: pd.Series) __ np.ndarray:

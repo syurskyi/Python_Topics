@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ postorderTraversal(self, root):
+  ___ postorderTraversal  root):
     """
     :type root: TreeNode
     :rtype: List[int]

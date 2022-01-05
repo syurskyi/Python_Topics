@@ -8,7 +8,7 @@ ____ grade_school _______ School
 c_ SchoolTest(unittest.TestCase):
     ___ setUp
         # assertCountEqual is py3, py2 only knowns assetItemsEqual
-        __ n.. hasattr(self, 'assertCountEqual'):
+        __ n.. hasattr  'assertCountEqual'):
             assertCountEqual = assertItemsEqual
         school = School("Haleakala Hippy School")
 

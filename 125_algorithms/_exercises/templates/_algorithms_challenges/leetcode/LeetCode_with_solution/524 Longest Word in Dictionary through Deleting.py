@@ -27,7 +27,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ findLongestWord(self, s, d):
+    ___ findLongestWord  s, d):
         """
         Compare subsequence: O(|S|) (two pointers)
         Then iterate d, check subsequence: O(|S||d|)

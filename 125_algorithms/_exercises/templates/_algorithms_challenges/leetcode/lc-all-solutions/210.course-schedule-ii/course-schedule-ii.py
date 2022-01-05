@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findOrder(self, numCourses, prerequisites):
+  ___ findOrder  numCourses, prerequisites):
     """
     :type numCourses: int
     :type prerequisites: List[List[int]]

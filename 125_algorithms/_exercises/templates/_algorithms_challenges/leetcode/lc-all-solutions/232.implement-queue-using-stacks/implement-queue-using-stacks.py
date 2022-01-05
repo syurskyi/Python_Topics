@@ -9,7 +9,7 @@ c_ Queue(object):
     stack1 = d..([])
     stack2 = d..([])
 
-  ___ push(self, x):
+  ___ push  x):
     """
     :type x: int
     :rtype: nothing

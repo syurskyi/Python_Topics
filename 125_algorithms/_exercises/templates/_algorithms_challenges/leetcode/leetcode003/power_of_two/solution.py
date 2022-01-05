@@ -3,7 +3,7 @@ Given an integer, write a function to determine if it is a power of two.
 """
 
 c_ Solution(object):
-    ___ isPowerOfTwo(self, n):
+    ___ isPowerOfTwo  n):
         """
         :type n: int
         :rtype: bool

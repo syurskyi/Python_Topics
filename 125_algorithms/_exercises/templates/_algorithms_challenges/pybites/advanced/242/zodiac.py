@@ -25,7 +25,7 @@ ___ get_sign_with_most_famous_people(signs: l..):
     famous_people = [
         (s.name, l..(s.famous_people)) ___ s __ signs
     ]
-    r.. max(famous_people, key=itemgetter(1))
+    r.. m..(famous_people, key=itemgetter(1))
 
 
 ___ signs_are_mutually_compatible(signs: l.., sign1: s.., sign2: s..) __ bool:

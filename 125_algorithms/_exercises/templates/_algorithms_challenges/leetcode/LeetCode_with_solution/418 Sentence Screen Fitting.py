@@ -57,7 +57,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ wordsTyping(self, sentence: List[s..], rows: i.., cols: i..) __ i..:
+    ___ wordsTyping  sentence: List[s..], rows: i.., cols: i..) __ i..:
         """
         How many times to fit
 

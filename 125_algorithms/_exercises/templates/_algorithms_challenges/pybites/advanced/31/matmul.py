@@ -15,7 +15,7 @@ c_ Matrix(object):
     ___ ncols
         r.. l..(values[0])
 
-    ___ __matmul__(self,other):
+    ___ __matmul__ other):
 
         
         rows_1,cols_1 = l..(values),l..(values[0])
@@ -40,7 +40,7 @@ c_ Matrix(object):
 
         r.. Matrix(result_matrix)
 
-    ___ __imatmul__(self,other):
+    ___ __imatmul__ other):
 
 
         result = self @ other
@@ -51,7 +51,7 @@ c_ Matrix(object):
         r.. self
 
     
-    ___ __rmatmul__(self,other):
+    ___ __rmatmul__ other):
 
         r.. self  @ other
 

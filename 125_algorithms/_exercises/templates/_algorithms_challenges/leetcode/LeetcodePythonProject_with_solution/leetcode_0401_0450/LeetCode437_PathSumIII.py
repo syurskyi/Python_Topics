@@ -12,13 +12,13 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ pathSum(self, root, sumVal):
+    ___ pathSum  root, sumVal):
         __ n.. root: r.. 0
         r.. helper(root, sumVal) +\
             pathSum(root.left, sumVal)+\
             pathSum(root.right, sumVal)
     
-    ___ helper(self, root, sumVal):
+    ___ helper  root, sumVal):
         __ n.. root: r.. 0
         __ root.val __ sumVal:
             res = 1
@@ -28,11 +28,11 @@ c_ Solution(object):
         res += helper(root.right, sumVal-root.val)
         r.. res
     
-    ___ pathSum_second(self, root, sumVal):
+    ___ pathSum_second  root, sumVal):
         hashmap = {0:1}
         r.. dfs(root, 0, sumVal, hashmap)
     
-    ___ dfs(self, root, sumVal, target, hashmap):
+    ___ dfs  root, sumVal, target, hashmap):
         __ n.. root: r.. 0
         sumVal += root.val
         res = hashmap.get(sumVal-target, 0)

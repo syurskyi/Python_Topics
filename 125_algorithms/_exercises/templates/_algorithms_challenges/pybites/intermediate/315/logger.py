@@ -17,10 +17,10 @@ ___ sum_even_numbers(numbers: List[float]) __ float:
    """
    even_numbers    # list
    ___ number __ numbers:
-      try:
+      ___
          __ number % 2 __ 0:
             even_numbers.a..(number)
-      except T..:
+      ______ T..:
          logger.exception(f"Bad inputs: {numbers}")
          r..
 

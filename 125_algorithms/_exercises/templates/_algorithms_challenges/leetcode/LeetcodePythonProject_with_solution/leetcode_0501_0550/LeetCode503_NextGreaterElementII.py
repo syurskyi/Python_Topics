@@ -5,7 +5,7 @@ Created on May 10, 2017
 '''
 
 c_ Solution(object):
-    ___ nextGreaterElements(self, nums):
+    ___ nextGreaterElements  nums):
         """
         :type nums: List[int]
         :rtype: List[int]

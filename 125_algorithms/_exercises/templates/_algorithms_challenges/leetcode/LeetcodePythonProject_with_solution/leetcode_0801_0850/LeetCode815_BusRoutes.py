@@ -4,7 +4,7 @@ Created on Apr 30, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numBusesToDestination(self, routes, S, T):
+    ___ numBusesToDestination  routes, S, T):
         """
         :type routes: List[List[int]]
         :type S: int

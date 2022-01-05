@@ -31,7 +31,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ isPossible(self, nums: List[i..]) __ bool:
+    ___ isPossible  nums: List[i..]) __ bool:
         """
         Attribute a number to a existing consecutive subsequences
         future numbers depend on this number to form the subsequence can also
@@ -70,7 +70,7 @@ c_ Interval:
         end = end
         length = length
 
-    ___ __lt__(self, other):
+    ___ __lt__  other):
         __ end __ other.end:
             r.. length < other.length
 
@@ -81,7 +81,7 @@ c_ Interval:
 
 
 c_ Solution2:
-    ___ isPossible(self, nums: List[i..]) __ bool:
+    ___ isPossible  nums: List[i..]) __ bool:
         """
         (length, last)
         heap sortest first

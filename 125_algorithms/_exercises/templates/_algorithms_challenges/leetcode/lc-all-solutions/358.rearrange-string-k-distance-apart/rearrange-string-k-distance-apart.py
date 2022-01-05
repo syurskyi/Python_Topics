@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ rearrangeString(self, s, k):
+  ___ rearrangeString  s, k):
     """
     :type s: str
     :type k: int

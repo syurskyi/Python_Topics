@@ -6,7 +6,7 @@ c_ Solution:
     @param n: An integer
     @return: An integer
     """
-    ___ climbStairs(self, n):
+    ___ climbStairs  n):
         __ n <= 0:
             r.. 0
 
@@ -33,7 +33,7 @@ c_ Solution:
     @param n: An integer
     @return: An integer
     """
-    ___ climbStairs(self, n):
+    ___ climbStairs  n):
         __ n <= 0:
             r.. 0
 
@@ -56,7 +56,7 @@ c_ Solution:
     @param n: An integer
     @return: An integer
     """
-    ___ climbStairs(self, n):
+    ___ climbStairs  n):
         __ n <= 0:
             r.. 0
 

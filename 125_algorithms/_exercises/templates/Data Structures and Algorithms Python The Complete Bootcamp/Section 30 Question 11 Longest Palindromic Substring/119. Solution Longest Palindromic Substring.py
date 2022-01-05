@@ -1,6 +1,6 @@
 c_ Solution:
 
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         result  ""
         ___ i __ r..(l..(s)):
             word1  checkPalindrome(s, i, i)
@@ -18,7 +18,7 @@ c_ Solution:
 
         r.. result
 
-    ___ checkPalindrome(self, s, left, right):
+    ___ checkPalindrome  s, left, right):
 
         w___ left > 0 a.. right < l..(s) a.. s[left] __ s[right]:
             left - 1

@@ -21,7 +21,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ largestDivisibleSubset(self, A):
+    ___ largestDivisibleSubset  A):
         """
         Given a divisible subset, when adding a new number, we only needs to validate whether the new number is
         divisible by the largest number in the divisible subset.

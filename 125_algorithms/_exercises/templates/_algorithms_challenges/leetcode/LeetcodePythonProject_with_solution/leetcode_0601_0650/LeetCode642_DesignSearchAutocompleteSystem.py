@@ -30,7 +30,7 @@ c_ AutocompleteSystem(object):
                 node.candidates[s] = node.candidates.get(s, 0)+count
             node.isLeaf = T..
 
-    ___ input(self, c):
+    ___ input  c):
         """
         :type c: str
         :rtype: List[str]
@@ -55,7 +55,7 @@ c_ AutocompleteSystem(object):
                 node = N..
                 r.. []
     
-    ___ addCandidate(self, s):
+    ___ addCandidate  s):
         node = root
         ___ c __ s:
             __ c n.. __ node.children:

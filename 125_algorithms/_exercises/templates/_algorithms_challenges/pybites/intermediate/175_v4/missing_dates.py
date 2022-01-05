@@ -10,7 +10,7 @@ ___ get_missing_dates(dates):
 
        See the Bite description and tests for example outputs.
     """
-    first, last = m..(dates), max(dates)
+    first, last = m..(dates), m..(dates)
     diff = (last - first).days
 
     missing = l..()

@@ -5,7 +5,7 @@
 #         self.end = e
 
 c_ Solution(object):
-  ___ merge(self, intervals):
+  ___ merge  intervals):
     """
     :type intervals: List[Interval]
     :rtype: List[Interval]
@@ -13,7 +13,7 @@ c_ Solution(object):
     ans    # list
     ___ intv __ s..(intervals, key=l.... x: x.start):
       __ ans a.. ans[-1].end >= intv.start:
-        ans[-1].end = max(ans[-1].end, intv.end)
+        ans[-1].end = m..(ans[-1].end, intv.end)
       ____:
         ans.a..(intv)
     r.. ans

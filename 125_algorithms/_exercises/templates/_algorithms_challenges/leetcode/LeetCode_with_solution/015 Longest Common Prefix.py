@@ -5,7 +5,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ longestCommonPrefix(self, strs):
+    ___ longestCommonPrefix  strs):
         __ n.. strs: r.. ""
         l = m..(map(l.., strs))
         i = 0
@@ -19,7 +19,7 @@ c_ Solution(object):
 
         r.. strs[0][:i]
 
-    ___ longestCommonPrefixComplex(self, strs):
+    ___ longestCommonPrefixComplex  strs):
         """
         O(k*n)
         :param strs: a list of string
@@ -38,10 +38,10 @@ c_ Solution(object):
 
             j = 0
             w.... j < n:
-                try:
+                ___
                     __ strs[j][i] != char: break
                     j += 1
-                except IndexError:
+                ______ IndexError:
                     break
 
             __ j __ n:

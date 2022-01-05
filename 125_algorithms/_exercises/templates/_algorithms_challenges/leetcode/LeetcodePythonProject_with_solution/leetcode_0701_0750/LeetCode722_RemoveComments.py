@@ -4,7 +4,7 @@ Created on Feb 19, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ removeComments(self, source):
+    ___ removeComments  source):
         """
         :type source: List[str]
         :rtype: List[str]

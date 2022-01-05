@@ -1,9 +1,9 @@
 x  float(input("Insert first number: "))
 y  float(input("Insert second number: "))
 
-try:
+___
     z  x/y
-except ZeroDivisionError:
+______ ZeroDivisionError:
     print("Error! Number not divisible by zero...")
 ____:
     print(z)

@@ -21,7 +21,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findClosestElements(self, A: List[i..], k: i.., x: i..) __ List[i..]:
+    ___ findClosestElements  A: List[i..], k: i.., x: i..) __ List[i..]:
         """
         binary search without two pointers scanning
         """
@@ -38,7 +38,7 @@ c_ Solution:
 
         r.. A[lo:lo+k]
 
-    ___ findClosestElements2(self, A: List[i..], k: i.., x: i..) __ List[i..]:
+    ___ findClosestElements2  A: List[i..], k: i.., x: i..) __ List[i..]:
         """
         input sorted arrya
         two pointers

@@ -5,7 +5,7 @@ Created on Jan 23, 2017
 '''
 
 c_ Solution(object):
-    ___ minDistance(self, word1, word2):
+    ___ minDistance  word1, word2):
         """
         :type word1: str
         :type word2: str

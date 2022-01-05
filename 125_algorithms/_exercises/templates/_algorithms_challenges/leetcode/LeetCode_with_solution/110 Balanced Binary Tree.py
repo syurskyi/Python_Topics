@@ -18,11 +18,11 @@ c_ Solution(object):
     ___ - ):
         depth_bottom    # dict
 
-    ___ isBalanced(self, root):
+    ___ isBalanced  root):
         fathom(root, 0)
         r.. _is_balanced(root, 0)
 
-    ___ _is_balanced(self, cur, depth):
+    ___ _is_balanced  cur, depth):
         """
         :param depth: depth from root to current node.
         """
@@ -38,17 +38,17 @@ c_ Solution(object):
 
         r.. a..([_is_balanced(cur.left, depth+1), _is_balanced(cur.right, depth+1)])
 
-    ___ fathom(self, root, depth):
+    ___ fathom  root, depth):
         __ n.. root:
             r.. depth-1
 
-        ret = max(fathom(root.left, depth+1), fathom(root.right, depth+1))
+        ret = m..(fathom(root.left, depth+1), fathom(root.right, depth+1))
         depth_bottom[root] = ret
         r.. ret
 
 
 c_ SolutionSlow(object):
-    ___ isBalanced(self, root):
+    ___ isBalanced  root):
         """
         pre-order traversal
 
@@ -65,10 +65,10 @@ c_ SolutionSlow(object):
         ____:
             r.. F..
 
-    ___ fathom(self, root, depth):
+    ___ fathom  root, depth):
         """
         DFS
         """
         __ n.. root:
             r.. depth-1  # test cases
-        r.. max(fathom(root.left, depth+1), fathom(root.right, depth+1))
+        r.. m..(fathom(root.left, depth+1), fathom(root.right, depth+1))

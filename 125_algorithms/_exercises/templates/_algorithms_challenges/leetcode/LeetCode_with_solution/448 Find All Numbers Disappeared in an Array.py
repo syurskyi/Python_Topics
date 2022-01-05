@@ -9,7 +9,7 @@ Could you do it without extra space and in O(n) runtime? You may assume the retu
 
 
 c_ Solution:
-    ___ findDisappearedNumbers(self, A):
+    ___ findDisappearedNumbers  A):
         """
         You can use hash map with extra space O(n).
         To use without extra space, notice the additional constraints that:

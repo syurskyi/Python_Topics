@@ -12,7 +12,7 @@ You may assume the string contains only lowercase alphabets.
 
 
 c_ Solution(object):
-    ___ isAnagram(self, s, t):
+    ___ isAnagram  s, t):
         """
         :type s: str
         :type t: str

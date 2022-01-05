@@ -14,7 +14,7 @@ Given 1->1->2->3->3, return 1->2->3.
 #         self.next = None
 
 c_ Solution(object):
-    ___ deleteDuplicates(self, head):
+    ___ deleteDuplicates  head):
         """
         :type head: ListNode
         :rtype: ListNode

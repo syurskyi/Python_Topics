@@ -54,7 +54,7 @@ c_ LRUCache:
         cap = capacity
         map    # dict
 
-    ___ get(self, key: i..) __ i..:
+    ___ get  key: i..) __ i..:
         __ key __ map:
             node = map[key]
             _remove(key)
@@ -63,7 +63,7 @@ c_ LRUCache:
 
         r.. -1
 
-    ___ put(self, key: i.., value: i..) __ N..
+    ___ put  key: i.., value: i..) __ N..
         __ key __ map:
             _remove(key)
         ____ l..(map) >= cap:
@@ -73,7 +73,7 @@ c_ LRUCache:
         node = Node(key, value)
         _appendleft(node)
 
-    ___ _appendleft(self, node: Node):
+    ___ _appendleft  node: Node):
         map[node.key] = node  # update/delete map in these two operators
         nxt = head.next
         head.next = node
@@ -81,7 +81,7 @@ c_ LRUCache:
         node.next = nxt
         nxt.prev = node
 
-    ___ _remove(self, key: i..):
+    ___ _remove  key: i..):
         node = map[key]
         prev = node.prev
         nxt = node.next

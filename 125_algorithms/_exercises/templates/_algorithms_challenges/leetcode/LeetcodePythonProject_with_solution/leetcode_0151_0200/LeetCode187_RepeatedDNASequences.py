@@ -5,7 +5,7 @@ Created on Feb 15, 2017
 '''
 
 c_ Solution(object):
-    ___ findRepeatedDnaSequences(self, s):
+    ___ findRepeatedDnaSequences  s):
         """
         :type s: str
         :rtype: List[str]
@@ -22,7 +22,7 @@ c_ Solution(object):
                 resultCodes.add(code)
         r.. l..(result)
     
-    ___ encode(self, s):
+    ___ encode  s):
         sumVal = 0
         ___ _, c __ e..(s):
             __ c __ 'A':

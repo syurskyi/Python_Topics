@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ myAtoi(self, s):
+    ___ myAtoi  s):
         """
         :type s: str
         :rtype: int
@@ -10,7 +10,7 @@ c_ Solution:
 
         INT_MAX = 0x7FFFFFFF
         N = l..(s)
-        ZERO = ord('0')
+        ZERO = o..('0')
 
         sign = 1
         i = 0
@@ -23,7 +23,7 @@ c_ Solution:
             i += 1
 
         w.... i < N a.. s[i].isdigit
-            val = ord(s[i]) - ZERO
+            val = o..(s[i]) - ZERO
 
             __ (ans > INT_MAX // 10 o.
                 (ans __ INT_MAX // 10 a.. val > 7)):

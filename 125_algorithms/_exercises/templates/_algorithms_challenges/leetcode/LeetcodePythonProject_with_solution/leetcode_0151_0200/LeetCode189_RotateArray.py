@@ -5,7 +5,7 @@ Created on Feb 16, 2017
 '''
 
 c_ Solution(object):
-    ___ rotate(self, nums, k):
+    ___ rotate  nums, k):
         """
         :type nums: List[int]
         :type k: int

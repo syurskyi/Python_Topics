@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ longestPalindrome(self, s):
+  ___ longestPalindrome  s):
     """
     :type s: str
     :rtype: str

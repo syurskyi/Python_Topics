@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ insertionSortList(self, head):
+    ___ insertionSortList  head):
         """
         :type head: ListNode
         :rtype: ListNode

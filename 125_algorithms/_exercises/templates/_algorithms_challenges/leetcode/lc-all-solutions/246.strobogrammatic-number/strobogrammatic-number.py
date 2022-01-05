@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isStrobogrammatic(self, num):
+  ___ isStrobogrammatic  num):
     """
     :type num: str
     :rtype: bool

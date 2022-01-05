@@ -5,7 +5,7 @@ Created on Feb 18, 2017
 '''
 
 c_ Solution(object):
-    ___ rangeBitwiseAnd(self, m, n):
+    ___ rangeBitwiseAnd  m, n):
         """
         :type m: int
         :type n: int

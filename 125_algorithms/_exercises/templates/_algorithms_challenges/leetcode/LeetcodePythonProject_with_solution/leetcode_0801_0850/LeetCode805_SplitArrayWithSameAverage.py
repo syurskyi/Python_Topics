@@ -4,7 +4,7 @@ Created on Apr 24, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ splitArraySameAverage(self, A):
+    ___ splitArraySameAverage  A):
         """
         :type A: List[int]
         :rtype: bool
@@ -21,7 +21,7 @@ c_ Solution(object):
                     r.. T..
         r.. F..
     
-    ___ check(self, arr, leftSum, leftNum, startIdx):
+    ___ check  arr, leftSum, leftNum, startIdx):
         __ leftNum __ 0: r.. leftSum __ 0
         __ arr[startIdx] > leftSum/leftNum:
             r.. F..

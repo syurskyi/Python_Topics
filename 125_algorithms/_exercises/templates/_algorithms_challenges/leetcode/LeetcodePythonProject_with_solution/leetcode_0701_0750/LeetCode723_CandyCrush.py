@@ -4,7 +4,7 @@ Created on Feb 20, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ candyCrush(self, board):
+    ___ candyCrush  board):
         """
         :type board: List[List[int]]
         :rtype: List[List[int]]
@@ -23,7 +23,7 @@ c_ Solution(object):
             board = res
         r.. res
     
-    ___ bfs(self, board, i, j):
+    ___ bfs  board, i, j):
         __ board[i][j] __ 0: r.. F..
         m, n = l..(board), l..(board[0])
         val = abs(board[i][j])
@@ -46,7 +46,7 @@ c_ Solution(object):
             board[i][j] = -val
         r.. changed
     
-    ___ convert(self, res, board):
+    ___ convert  res, board):
         m, n = l..(res), l..(res[0])
         ___ j __ r..(n):
             i0 = m-1

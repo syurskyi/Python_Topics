@@ -15,7 +15,7 @@ c_ ListNode:
 c_ Solution:
     # @param head, a ListNode
     # @return a list node
-    ___ detectCycle(self, head):
+    ___ detectCycle  head):
         """
         if extra space available, hash table
         if not, use the model of Hare and Tortoise

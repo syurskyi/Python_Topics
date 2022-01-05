@@ -25,7 +25,7 @@ c_ Bloodtype(Enum):
     AB_POS = 7
 
 
-    ___ __lte__(self,other):
+    ___ __lte__ other):
 
 
         r.. i..(self) <= i..(other)

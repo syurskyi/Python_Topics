@@ -32,7 +32,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ fullJustify(self, words, L):
+    ___ fullJustify  words, L):
         """
 
         :param words: a list of str
@@ -43,7 +43,7 @@ c_ Solution:
         break_line(words, L, result)
         r.. distribute_space(L, result)
 
-    ___ break_line(self, words, L, result):
+    ___ break_line  words, L, result):
         __ n.. words:
             r..
 
@@ -62,7 +62,7 @@ c_ Solution:
         break_line(words[i:], L, result)
 
 
-    ___ distribute_space(self, L, result):
+    ___ distribute_space  L, result):
         new_result    # list
         ___ ind, line __ e..(result):
             word_cnt = l..(line)
@@ -95,6 +95,6 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().fullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16)
     print Solution().fullJustify(["What","must","be","shall","be."], 12)

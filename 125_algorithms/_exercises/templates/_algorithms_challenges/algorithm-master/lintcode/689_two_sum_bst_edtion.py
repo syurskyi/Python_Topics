@@ -13,7 +13,7 @@ c_ Solution:
     @param: : the target sum
     @return: two numbers from tree which sum is n
     """
-    ___ twoSum(self, root, n):
+    ___ twoSum  root, n):
         left = right = N..
         head = tail = root
 

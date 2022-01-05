@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ buildTree(self, inorder, postorder):
+    ___ buildTree  inorder, postorder):
         """
         :type inorder: List[int]
         :type postorder: List[int]
@@ -19,7 +19,7 @@ c_ Solution(object):
         """
         r.. helper(inorder, 0, l..(inorder)-1, postorder, 0, l..(postorder)-1)
     
-    ___ helper(self, inorder, inStart, inEnd, postorder, postStart, postEnd):
+    ___ helper  inorder, inStart, inEnd, postorder, postStart, postEnd):
         __ inStart > inEnd o. postStart > postEnd:
             r.. N..
         val = postorder[postEnd]

@@ -10,7 +10,7 @@ c_ ConnectingGraph3:
         ___ i __ r..(n):
             nodes[i + 1] = i + 1
 
-    ___ find(self, a):
+    ___ find  a):
         __ nodes[a] __ a:
             r.. a
         nodes[a] = find(nodes[a])
@@ -21,7 +21,7 @@ c_ ConnectingGraph3:
     @param: b: An integer
     @return: nothing
     """
-    ___ connect(self, a, b):
+    ___ connect  a, b):
         root_a = find(a)
         root_b = find(b)
         __ root_a != root_b:

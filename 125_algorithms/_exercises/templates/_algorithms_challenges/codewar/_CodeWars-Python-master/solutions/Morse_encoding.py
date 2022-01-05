@@ -5,7 +5,7 @@ https://www.codewars.com/kata/morse-encoding/train/python
 c_ Morse:
 
     @classmethod
-    ___ encode(self, message):
+    ___ encode  message):
         words = message.s..(' ')
         code = ('0' * 7).j..(['000'.j..([Morse.alpha[c.u..]
                                            ___ c __ word]) ___ word __ words])
@@ -17,7 +17,7 @@ c_ Morse:
         r.. result
 
     @classmethod
-    ___ decode(self, array):
+    ___ decode  array):
         code = ''
         ___ num __ array:
             __ num < 0:

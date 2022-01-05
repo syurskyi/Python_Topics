@@ -4,7 +4,7 @@ Created on Mar 14, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ dailyTemperatures(self, temperatures):
+    ___ dailyTemperatures  temperatures):
         """
         :type temperatures: List[int]
         :rtype: List[int]

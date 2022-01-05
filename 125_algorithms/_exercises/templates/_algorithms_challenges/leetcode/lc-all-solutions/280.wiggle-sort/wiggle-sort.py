@@ -2,7 +2,7 @@ _______ r__
 
 
 c_ Solution(object):
-  ___ wiggleSort(self, nums):
+  ___ wiggleSort  nums):
     """
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
@@ -41,7 +41,7 @@ c_ Solution(object):
     ___ i __ r..(0, l..(nums)):
       nums[i] = ans[i]
 
-  ___ quickselect(self, start, end, A, k):
+  ___ quickselect  start, end, A, k):
     __ start __ end:
       r.. A[start]
 
@@ -54,7 +54,7 @@ c_ Solution(object):
     ____:
       r.. quickselect(mid + 1, end, A, k)
 
-  ___ partition(self, start, end, A):
+  ___ partition  start, end, A):
     left, right = start, end
     pivot = A[left]
     w.... left < right:

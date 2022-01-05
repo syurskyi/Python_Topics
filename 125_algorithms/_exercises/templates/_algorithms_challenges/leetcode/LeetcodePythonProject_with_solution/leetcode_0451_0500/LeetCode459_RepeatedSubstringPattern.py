@@ -5,7 +5,7 @@ Created on Apr 23, 2017
 '''
 
 c_ Solution(object):
-    ___ repeatedSubstringPattern(self, s):
+    ___ repeatedSubstringPattern  s):
         n = l..(s)
         ___ i __ r..(1, n//2+2):
             sub = s[:i]

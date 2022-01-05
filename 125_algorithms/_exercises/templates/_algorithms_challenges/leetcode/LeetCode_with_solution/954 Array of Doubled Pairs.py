@@ -37,7 +37,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ canReorderDoubled(self, A: List[i..]) __ bool:
+    ___ canReorderDoubled  A: List[i..]) __ bool:
         A.s..(key=abs)
         counter = Counter(A)
         ___ a __ A:
@@ -51,7 +51,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ canReorderDoubled_positive_negative(self, A: List[i..]) __ bool:
+    ___ canReorderDoubled_positive_negative  A: List[i..]) __ bool:
         """
         sort + counter to form the doubled pairs
         """

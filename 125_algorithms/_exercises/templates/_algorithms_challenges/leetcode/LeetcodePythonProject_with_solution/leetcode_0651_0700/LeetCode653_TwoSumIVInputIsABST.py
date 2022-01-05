@@ -11,10 +11,10 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ findTarget(self, root, k):
+    ___ findTarget  root, k):
         r.. dfs(root, set(), k)
     
-    ___ dfs(self, root, hashset, k):
+    ___ dfs  root, hashset, k):
         __ n.. root:
             r.. F..
         __ k-root.val __ hashset:
@@ -23,7 +23,7 @@ c_ Solution(object):
         r.. dfs(root.left, hashset, k) o.\
             dfs(root.right, hashset, k)
     
-    ___ findTargetSpace(self, root, k):
+    ___ findTargetSpace  root, k):
         """
         :type root: TreeNode
         :type k: int

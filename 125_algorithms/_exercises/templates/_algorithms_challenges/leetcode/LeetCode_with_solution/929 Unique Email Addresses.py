@@ -43,7 +43,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ numUniqueEmails(self, emails: List[s..]) __ i..:
+    ___ numUniqueEmails  emails: List[s..]) __ i..:
         """
         stemming
         """
@@ -55,5 +55,5 @@ c_ Solution:
 
         r.. l..(s)
 
-    ___ stem(self, local):
+    ___ stem  local):
         r.. local.s..("+")[0].r..(".", "")

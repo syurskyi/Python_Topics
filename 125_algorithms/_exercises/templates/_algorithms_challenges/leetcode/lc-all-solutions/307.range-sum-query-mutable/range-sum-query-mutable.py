@@ -12,7 +12,7 @@ c_ SegmentedTree(object):
   ___ - , nums, start, end):
     root = buildTree(nums, start, end)
 
-  ___ buildTree(self, nums, start, end):
+  ___ buildTree  nums, start, end):
     __ start > end:
       r.. N..
 
@@ -29,7 +29,7 @@ c_ SegmentedTree(object):
     root.total = root.left.total + root.right.total
     r.. root
 
-  ___ updateVal(self, i, val):
+  ___ updateVal  i, val):
     ___ updateVal(root, i, val):
       __ root.start __ root.end:
         root.total = val
@@ -45,7 +45,7 @@ c_ SegmentedTree(object):
 
     r.. updateVal(root, i, val)
 
-  ___ sumRange(self, i, j):
+  ___ sumRange  i, j):
     ___ rangeSum(root, start, end):
       __ root.start __ start a.. root.end __ end:
         r.. root.total
@@ -69,7 +69,7 @@ c_ NumArray(object):
     """
     stTree = SegmentedTree(nums, 0, l..(nums) - 1)
 
-  ___ update(self, i, val):
+  ___ update  i, val):
     """
     :type i: int
     :type val: int
@@ -77,7 +77,7 @@ c_ NumArray(object):
     """
     r.. stTree.updateVal(i, val)
 
-  ___ sumRange(self, i, j):
+  ___ sumRange  i, j):
     """
     sum of elements nums[i..j], inclusive.
     :type i: int

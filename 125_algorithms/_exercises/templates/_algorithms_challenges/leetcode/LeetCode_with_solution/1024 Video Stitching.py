@@ -48,7 +48,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ videoStitching(self, clips: List[List[i..]], T: i..) __ i..:
+    ___ videoStitching  clips: List[List[i..]], T: i..) __ i..:
         """
         Greedy is correct. The larger the coverage, the better
         """
@@ -63,7 +63,7 @@ c_ Solution:
 
             max_e = -float("inf")
             w.... i < l..(clips) a.. clips[i][0] <= prev_e:
-                max_e = max(max_e, clips[i][1])
+                max_e = m..(max_e, clips[i][1])
                 i += 1
 
             prev_e = max_e  # take
@@ -73,7 +73,7 @@ c_ Solution:
 
         r.. ret __ prev_e >= T ____ -1
 
-    ___ videoStitching_error(self, clips: List[List[i..]], T: i..) __ i..:
+    ___ videoStitching_error  clips: List[List[i..]], T: i..) __ i..:
         """
         gready take the max coverage?
         """

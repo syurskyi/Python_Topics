@@ -6,29 +6,29 @@ c_ Rational(object):
         numer = N..
         denom = N..
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. numer __ other.numer a.. denom __ other.denom
 
     ___ __repr__
         r.. '{}/{}'.f..(numer, denom)
 
-    ___ __add__(self, other):
+    ___ __add__  other):
         p..
 
-    ___ __sub__(self, other):
+    ___ __sub__  other):
         p..
 
-    ___ __mul__(self, other):
+    ___ __mul__  other):
         p..
 
-    ___ __truediv__(self, other):
+    ___ __truediv__  other):
         p..
 
     ___ __abs__
         p..
 
-    ___ __pow__(self, power):
+    ___ __pow__  power):
         p..
 
-    ___ __rpow__(self, base):
+    ___ __rpow__  base):
         p..

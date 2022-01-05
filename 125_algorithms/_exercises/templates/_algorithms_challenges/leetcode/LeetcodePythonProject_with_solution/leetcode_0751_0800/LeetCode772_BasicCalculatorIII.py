@@ -4,7 +4,7 @@ Created on Apr 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ calculate(self, s):
+    ___ calculate  s):
         """
         :type s: str
         :rtype: int
@@ -16,10 +16,10 @@ c_ Solution(object):
         w.... i < l..(s):
             c = s[i]
             __ c.isdigit
-                num = ord(c)-ord('0')
+                num = o..(c)-o..('0')
                 w.... i+1 < l..(s) a.. s[i+1].isdigit
                     i += 1
-                    num = num*10+ord(s[i])-ord('0')
+                    num = num*10+o..(s[i])-o..('0')
                 l2 = l2*num __ o2__1 ____ l2//num
             ____ c __ '(':
                 d...insert(0, l1)

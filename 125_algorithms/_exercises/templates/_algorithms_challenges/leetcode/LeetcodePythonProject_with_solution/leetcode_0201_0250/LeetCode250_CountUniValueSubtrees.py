@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ countUnivalSubtrees(self, root):
+    ___ countUnivalSubtrees  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution(object):
             countUnivalSubtrees(root.right)
         r.. res
     
-    ___ isUniVal(self, root):
+    ___ isUniVal  root):
         __ n.. root.left a.. n.. root.right:
             r.. T..
         __ n.. root.right:

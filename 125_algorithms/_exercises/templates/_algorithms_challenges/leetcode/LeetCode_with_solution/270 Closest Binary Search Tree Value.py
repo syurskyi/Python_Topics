@@ -14,7 +14,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ closestValue(self, root, target):
+    ___ closestValue  root, target):
         """
         Divide the problem into 2 parts:
         1. find the value just smaller than target
@@ -23,16 +23,16 @@ c_ Solution(object):
         :type target: float
         :rtype: int
         """
-        lo = [-sys.float_info.max]
+        lo = [-sys.float_info.m..]
         find(root, target, lo, T..)
-        hi = [sys.float_info.max]
+        hi = [sys.float_info.m..]
         find(root, target, hi, F..)
         __ hi[0] - target < target - lo[0]:
             r.. i..(hi[0])
         ____:
             r.. i..(lo[0])
 
-    ___ find(self, root, target, ret, lower=T..):
+    ___ find  root, target, ret, lower=T..):
         __ n.. root:
             r..
 
@@ -41,7 +41,7 @@ c_ Solution(object):
             r..
 
         __ root.val < target:
-            __ lower: ret[0] = max(ret[0], root.val)
+            __ lower: ret[0] = m..(ret[0], root.val)
             find(root.right, target, ret, lower)
         ____:
             __ n.. lower: ret[0] = m..(ret[0], root.val)

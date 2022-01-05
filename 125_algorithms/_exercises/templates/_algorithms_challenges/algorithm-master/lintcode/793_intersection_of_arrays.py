@@ -3,7 +3,7 @@ c_ Solution:
     @param A: the arrays
     @return: the number of the intersection of the arrays
     """
-    ___ intersectionOfArrays(self, A):
+    ___ intersectionOfArrays  A):
         ans = 0
         __ n.. A:
             r.. ans

@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ upsideDownBinaryTree(self, root):
+    ___ upsideDownBinaryTree  root):
         """
         :type root: TreeNode
         :rtype: TreeNode

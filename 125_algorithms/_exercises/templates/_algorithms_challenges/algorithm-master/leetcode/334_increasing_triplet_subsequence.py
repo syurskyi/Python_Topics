@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ increasingTriplet(self, A):
+    ___ increasingTriplet  A):
         """
         :type A: List[int]
         :rtype: bool

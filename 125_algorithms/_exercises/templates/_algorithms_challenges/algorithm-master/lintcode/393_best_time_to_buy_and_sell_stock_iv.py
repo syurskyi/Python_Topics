@@ -4,7 +4,7 @@ c_ Solution:
     @param: P: An integer array
     @return: Maximum profit
     """
-    ___ maxProfit(self, K, P):
+    ___ maxProfit  K, P):
         __ n.. K o. n.. P:
             r.. 0
 
@@ -35,8 +35,8 @@ c_ Solution:
             curr = 1 - prev
             profit = P[i] - P[i - 1]
             ___ j __ r..(1, STAGE, 2):
-                dp[curr][j] = max(dp[prev][j] + profit, dp[prev][j - 1])
+                dp[curr][j] = m..(dp[prev][j] + profit, dp[prev][j - 1])
             ___ j __ r..(2, STAGE, 2):
-                dp[curr][j] = max(dp[prev][j], dp[prev][j - 1] + profit)
+                dp[curr][j] = m..(dp[prev][j], dp[prev][j - 1] + profit)
 
-        r.. max(dp[curr])
+        r.. m..(dp[curr])

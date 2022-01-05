@@ -26,7 +26,7 @@ c_ Solution:
     EMPTY = 0
     HOUSE = 1
 
-    ___ shortestDistance(self, grid):
+    ___ shortestDistance  grid):
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -70,7 +70,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ get_step(self, ps, axis, pos):
+    ___ get_step  ps, axis, pos):
         n = l..(axis)
 
         __ axis[0] > pos:
@@ -106,7 +106,7 @@ c_ Solution:
     EMPTY = 0
     HOUSE = 1
 
-    ___ shortestDistance(self, grid):
+    ___ shortestDistance  grid):
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -153,7 +153,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ get_step(self, houses, x, y):
+    ___ get_step  houses, x, y):
         step = 0
 
         ___ _x, _y __ houses:
@@ -173,7 +173,7 @@ c_ Solution:
     EMPTY = 0
     HOUSE = 1
 
-    ___ shortestDistance(self, grid):
+    ___ shortestDistance  grid):
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -200,7 +200,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ bfs(self, grid, x, y, steps):
+    ___ bfs  grid, x, y, steps):
         m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
         visited = set(queue)

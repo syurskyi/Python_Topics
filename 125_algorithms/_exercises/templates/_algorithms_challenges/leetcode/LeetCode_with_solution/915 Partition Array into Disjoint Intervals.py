@@ -31,7 +31,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ partitionDisjoint(self, A: List[i..]) __ i..:
+    ___ partitionDisjoint  A: List[i..]) __ i..:
         """
         max(left) <= min(right)
 
@@ -41,7 +41,7 @@ c_ Solution:
         MX = [-float('inf') ___ _ __ r..(n+1)]
         MI = [float('inf') ___ _ __ r..(n+1)]
         ___ i __ r..(n):
-            MX[i+1] = max(M[i], A[i])
+            MX[i+1] = m..(M[i], A[i])
         ___ i __ r..(n-1, -1, -1):
             MI[i] = m..(MI[i+1], A[i])
 
@@ -50,7 +50,7 @@ c_ Solution:
                 r.. l
         r..
 
-    ___ partitionDisjoint_2(self, A: List[i..]) __ i..:
+    ___ partitionDisjoint_2  A: List[i..]) __ i..:
         """
         max(left) <= min(right)
         """
@@ -60,7 +60,7 @@ c_ Solution:
         MI[-1] = A[-1]
         n = l..(A)
         ___ i __ r..(1, n):
-            MX[i] = max(MX[i-1], A[i])
+            MX[i] = m..(MX[i-1], A[i])
         ___ i __ r..(n-2, -1, -1):
             MI[i] = m..(MI[i+1], A[i])
 

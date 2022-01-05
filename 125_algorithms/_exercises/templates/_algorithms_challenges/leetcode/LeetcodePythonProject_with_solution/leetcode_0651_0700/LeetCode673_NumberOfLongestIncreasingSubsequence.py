@@ -4,7 +4,7 @@ Created on Oct 15, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findNumberOfLIS(self, nums):
+    ___ findNumberOfLIS  nums):
         """
         :type nums: List[int]
         :rtype: int

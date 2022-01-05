@@ -4,9 +4,9 @@ c_ RecordScore:
     ___ - ):
         record = N..
 
-    ___ __call__(self, score):
+    ___ __call__  score):
         __ record __ N..
             record = score
         ____:
-            record = max(record, score)
+            record = m..(record, score)
         r.. record

@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ trailingZeroes(self, n):
+    ___ trailingZeroes  n):
         """
         10 = 5*2
         Number of 2's > number of 5's, thus count the number of 5 in the factors of n

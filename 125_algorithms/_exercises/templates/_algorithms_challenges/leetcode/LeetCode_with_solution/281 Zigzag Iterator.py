@@ -12,7 +12,7 @@ c_ ZigzagIterator(object):
         :type v2: List[int]
         """
         mat = [v1, v2]
-        maxa = max((c, r) ___ r, c __ e..(map(l.... x: l..(x)-1, mat)))
+        maxa = m..((c, r) ___ r, c __ e..(map(l.... x: l..(x)-1, mat)))
         i = 0
         j = 0
         _reposition()

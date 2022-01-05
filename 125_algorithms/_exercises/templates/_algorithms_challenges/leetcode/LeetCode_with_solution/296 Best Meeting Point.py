@@ -6,12 +6,12 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ minTotalDistance_3lines(self, grid):
+    ___ minTotalDistance_3lines  grid):
         x = s..([i ___ i, row __ e..(grid) ___ v __ row __ v __ 1])
         y = s..([j ___ row __ grid ___ j, v __ e..(row) __ v __ 1])
         r.. s..([abs(x[l..(x)/2]-i)+abs(y[l..(y)/2]-j) ___ i, row __ e..(grid) ___ j, v __ e..(row) __ v __ 1])
 
-    ___ minTotalDistance(self, grid):
+    ___ minTotalDistance  grid):
         """
         :type grid: List[List[int]]
         :rtype: int

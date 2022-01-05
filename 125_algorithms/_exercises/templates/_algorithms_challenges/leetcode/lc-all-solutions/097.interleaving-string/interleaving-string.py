@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isInterleave(self, s1, s2, s3):
+  ___ isInterleave  s1, s2, s3):
     """
     :type s1: str
     :type s2: str

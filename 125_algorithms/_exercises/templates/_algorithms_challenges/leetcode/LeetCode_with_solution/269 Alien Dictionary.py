@@ -45,7 +45,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ alienOrder(self, words):
+    ___ alienOrder  words):
         """
         :type words: List[str]
         :rtype: str
@@ -61,7 +61,7 @@ c_ Solution(object):
 
         r.. "".j..(r..(ret))
 
-    ___ construct_graph(self, words):
+    ___ construct_graph  words):
         V = defaultdict(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # pitfall
@@ -75,7 +75,7 @@ c_ Solution(object):
 
         r.. V
 
-    ___ topo_dfs(self, V, v, visited, pathset, ret):
+    ___ topo_dfs  V, v, visited, pathset, ret):
         """
         Topological sort
         :param V: Vertices HashMap
@@ -99,7 +99,7 @@ c_ Solution(object):
         ret.a..(v)  # append after lower values
         r.. T..
 
-    ___ construct_graph_tedious(self, words, up, down, ptr, V):
+    ___ construct_graph_tedious  words, up, down, ptr, V):
         """
         :param words:
         :param up: upper bound

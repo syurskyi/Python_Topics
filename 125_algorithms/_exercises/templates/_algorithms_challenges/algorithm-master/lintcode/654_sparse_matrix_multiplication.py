@@ -4,7 +4,7 @@ c_ Solution:
     @param B: a sparse matrix
     @return: the result of A * B
     """
-    ___ multiply(self, A, B):
+    ___ multiply  A, B):
         __ n.. A o. n.. B o. l..(A[0]) != l..(B):
             r.. []
 

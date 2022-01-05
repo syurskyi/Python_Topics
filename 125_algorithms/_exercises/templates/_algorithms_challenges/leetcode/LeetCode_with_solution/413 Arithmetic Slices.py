@@ -10,7 +10,7 @@ c_ Solution:
     ___ c.. self, l):
         r.. (l-1) * l // 2
 
-    ___ numberOfArithmeticSlices(self, A):
+    ___ numberOfArithmeticSlices  A):
         """
         Diff the array, find the pattern.
         Find that it is a function of length of the sequence

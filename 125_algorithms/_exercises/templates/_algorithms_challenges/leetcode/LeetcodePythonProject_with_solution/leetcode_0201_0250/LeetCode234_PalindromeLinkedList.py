@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ isPalindrome(self, head):
+    ___ isPalindrome  head):
         """
         :type head: ListNode
         :rtype: bool

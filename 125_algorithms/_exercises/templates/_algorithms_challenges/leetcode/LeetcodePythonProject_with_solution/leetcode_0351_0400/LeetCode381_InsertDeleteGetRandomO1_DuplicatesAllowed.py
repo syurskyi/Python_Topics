@@ -9,7 +9,7 @@ c_ RandomizedCollection(object):
         vals    # list
         pos    # dict
     
-    ___ insert(self, val):
+    ___ insert  val):
         vals.a..(val)
         __ val __ pos:
             pos[val].add(l..(vals)-1)
@@ -18,7 +18,7 @@ c_ RandomizedCollection(object):
             pos[val] = set([l..(vals)-1])
             r.. T..
     
-    ___ remove(self, val):
+    ___ remove  val):
         __ val __ pos:
             lastVal = vals[-1]
             ind = pos[val].pop()

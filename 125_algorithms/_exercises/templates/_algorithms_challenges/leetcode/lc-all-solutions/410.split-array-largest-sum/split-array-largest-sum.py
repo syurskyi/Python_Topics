@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ splitArray(self, nums, m):
+  ___ splitArray  nums, m):
     """
     :type nums: List[int]
     :type m: int
@@ -18,7 +18,7 @@ c_ Solution(object):
             r.. F..
       r.. T..
 
-    start, end = max(nums), s..(nums)
+    start, end = m..(nums), s..(nums)
     mid = 0
     w.... start <= end:
       mid = start + (end - start) / 2

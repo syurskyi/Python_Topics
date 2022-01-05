@@ -5,6 +5,6 @@ c_ RecordScore
         max_score = float("-inf")
 
 
-    ___ __call__(self,score):
-        max_score = max(max_score,score)
+    ___ __call__ score):
+        max_score = m..(max_score,score)
         r.. max_score

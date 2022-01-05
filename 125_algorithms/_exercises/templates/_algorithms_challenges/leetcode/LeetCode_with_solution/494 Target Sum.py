@@ -28,7 +28,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ findTargetSumWays(self, A, S):
+    ___ findTargetSumWays  A, S):
         """
         Let F[i][k] be number of ways for A[:i] sum to k
         F[i][k] = F[i-1][k-A[i-1]] + F[i-1][k+A[i-1]]

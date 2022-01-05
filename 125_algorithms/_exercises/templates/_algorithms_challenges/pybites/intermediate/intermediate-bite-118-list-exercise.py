@@ -89,10 +89,10 @@ ___ get_duplicate_indices(words):
     # MyPair = namedtuple('MyPair', 'index count')
     result    # list
     ___ word __ words:
-        try:
+        ___
             mp = stats[word]
             mp['count'] += 1
-        except KeyError:
+        ______ KeyError:
             mp = d..()
             mp['index'] = index
             mp['count'] = 1

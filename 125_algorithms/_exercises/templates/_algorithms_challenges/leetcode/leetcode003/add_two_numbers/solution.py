@@ -6,7 +6,7 @@
 
 c_ Solution:
     # @return a ListNode
-    ___ addTwoNumbers(self, l1, l2):
+    ___ addTwoNumbers  l1, l2):
         carry = 0
         res = N..
         res_end = N..

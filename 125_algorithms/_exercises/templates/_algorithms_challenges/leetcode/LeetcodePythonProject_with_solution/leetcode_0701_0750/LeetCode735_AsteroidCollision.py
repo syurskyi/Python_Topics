@@ -4,7 +4,7 @@ Created on Mar 7, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ asteroidCollision(self, asteroids):
+    ___ asteroidCollision  asteroids):
         """
         :type asteroids: List[int]
         :rtype: List[int]

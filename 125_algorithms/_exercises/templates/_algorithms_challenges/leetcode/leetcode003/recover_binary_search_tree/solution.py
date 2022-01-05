@@ -18,7 +18,7 @@ constant space solution?
 c_ Solution:
     # @param root, a tree node
     # @return a tree node
-    ___ recoverTree(self, root):
+    ___ recoverTree  root):
         prev = N..
         first = N..
         second = N..
@@ -26,7 +26,7 @@ c_ Solution:
         first.val, second.val = second.val, first.val
         r.. root
 
-    ___ traverse(self, root):
+    ___ traverse  root):
         __ root __ n.. N..
             traverse(root.left)
             __ prev __ n.. N..

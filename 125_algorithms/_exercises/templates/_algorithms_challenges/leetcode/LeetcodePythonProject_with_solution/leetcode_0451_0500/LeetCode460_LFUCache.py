@@ -28,7 +28,7 @@ c_ LFUCache(object):
         head.freq = float('-inf')
         tail.freq = float('inf')
     
-    ___ get(self, key):
+    ___ get  key):
         """
         :type key: int
         :rtype: int
@@ -40,7 +40,7 @@ c_ LFUCache(object):
             updateNode(hashmap[key])
             r.. value
     
-    ___ put(self, key, value):
+    ___ put  key, value):
         """
         :type key: int
         :type value: int
@@ -102,7 +102,7 @@ c_ LFUCache(object):
                     node.prev = head
                     freqMap[1] = [node, node]
     
-    ___ updateNode(self, node):
+    ___ updateNode  node):
         freq = node.freq
         nextNode = freqMap[freq][1].next
         node.prev.next = node.next

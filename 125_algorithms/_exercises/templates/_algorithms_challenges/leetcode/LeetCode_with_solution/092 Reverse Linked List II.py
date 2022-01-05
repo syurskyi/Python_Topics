@@ -24,7 +24,7 @@ c_ ListNode:
         r.. s..(val)+", "+s..(next)
 
 c_ Solution:
-    ___ reverseBetween(self, head, m, n):
+    ___ reverseBetween  head, m, n):
         """
         Linked List
         [m, n)
@@ -82,7 +82,7 @@ c_ Solution:
 
         r.. dummy.next
 
-__ __name____"__main__":
+__ _____ __ ____
     length = 3
     lst = [ListNode(i+1) ___ i __ r..(length)]
     ___ i __ xrange(length-1):

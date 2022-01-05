@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ getPermutation(self, n, k):
+  ___ getPermutation  n, k):
     """
     :type n: int
     :type k: int

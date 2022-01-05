@@ -18,7 +18,7 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
             __ dig<10:
                 base_num += s..(dig)
             ____:
-                base_num += chr(ord('A')+dig-10)  #Using uppercase letters
+                base_num += chr(o..('A')+dig-10)  #Using uppercase letters
             number //= base
 
         base_num = base_num[::-1]  #To reverse the string

@@ -4,7 +4,7 @@ Created on Jun 6, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ firstMissingPositive(self, nums):
+    ___ firstMissingPositive  nums):
         """
         :type nums: List[int]
         :rtype: int

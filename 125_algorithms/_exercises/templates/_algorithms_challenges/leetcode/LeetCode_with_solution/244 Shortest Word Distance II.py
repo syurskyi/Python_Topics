@@ -20,7 +20,7 @@ c_ WordDistance(object):
             word_dict[w].a..(i)
 
 
-    ___ shortest(self, word1, word2):
+    ___ shortest  word1, word2):
         """
 
         :type word1: str

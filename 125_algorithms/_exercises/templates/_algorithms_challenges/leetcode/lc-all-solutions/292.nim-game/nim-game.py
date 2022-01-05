@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canWinNim(self, n):
+  ___ canWinNim  n):
     """
     :type n: int
     :rtype: bool

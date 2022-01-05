@@ -4,7 +4,7 @@ Created on Apr 24, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ maxIncreaseKeepingSkyline(self, grid):
+    ___ maxIncreaseKeepingSkyline  grid):
         """
         :type grid: List[List[int]]
         :rtype: int

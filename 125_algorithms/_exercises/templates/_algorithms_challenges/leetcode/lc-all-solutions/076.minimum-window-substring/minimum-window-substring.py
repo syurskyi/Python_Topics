@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minWindow(self, s, t):
+  ___ minWindow  s, t):
     """
     :type s: str
     :type t: str

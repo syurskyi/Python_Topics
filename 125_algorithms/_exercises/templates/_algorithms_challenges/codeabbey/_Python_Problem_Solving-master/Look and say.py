@@ -14,7 +14,7 @@ ___ look_and_say(data,maxlen):
         res_string    # list
         #Loop for traversing through the length of the given string
         ___ k __ r..(0,l..(data)):
-            try:
+            ___
                 #check if the next element is same as the previous element and update the count
                 __ data[k] __ data[k+1]:
                     count += 1
@@ -23,7 +23,7 @@ ___ look_and_say(data,maxlen):
                     res_string.a..(s..(count) + data[k])
                     #reinitialize the count
                     count = 1
-            except:
+            ______:
                 #if the loop has reached its last element then store the count of the character of last element.
                 __ k __ l..(data)-1:
                     res_string.a..(s..(count) + data[k])

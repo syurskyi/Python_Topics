@@ -16,7 +16,7 @@ All inputs will be in lower-case.
 """
 
 c_ Solution(object):
-    ___ groupAnagrams(self, strs):
+    ___ groupAnagrams  strs):
         """
         :type strs: List[str]
         :rtype: List[List[str]]
@@ -33,7 +33,7 @@ c_ Solution(object):
             res.a..(s..(d[k]))
         r.. res
 
-    ___ make_key(self, s):
+    ___ make_key  s):
         r.. ''.j..(s..(s))
 
 

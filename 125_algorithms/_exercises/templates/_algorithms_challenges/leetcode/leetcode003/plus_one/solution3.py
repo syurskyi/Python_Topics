@@ -7,7 +7,7 @@ the list.
 """
 
 c_ Solution(object):
-    ___ plusOne(self, d..):
+    ___ plusOne  d..):
         """
         :type digits: List[int]
         :rtype: List[int]

@@ -4,7 +4,7 @@ Created on Sep 25, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ shoppingOffers(self, price, special, needs):
+    ___ shoppingOffers  price, special, needs):
         """
         :type price: List[int]
         :type special: List[List[int]]
@@ -15,7 +15,7 @@ c_ Solution(object):
         helper(price, special, needs, 0)
         r.. minPrice
     
-    ___ helper(self, price, special, needs, curPrice):
+    ___ helper  price, special, needs, curPrice):
         n = l..(price)
         added = F..
         ___ arr __ special:

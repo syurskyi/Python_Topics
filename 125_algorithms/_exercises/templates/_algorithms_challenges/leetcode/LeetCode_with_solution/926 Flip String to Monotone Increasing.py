@@ -35,7 +35,7 @@ S only consists of '0' and '1' characters.
 
 
 c_ Solution:
-    ___ minFlipsMonoIncr(self, S: s..) __ i..:
+    ___ minFlipsMonoIncr  S: s..) __ i..:
         """
         let S[i] be the flipping point, leftside 0, rightside 1
         count number of 1 from the left,

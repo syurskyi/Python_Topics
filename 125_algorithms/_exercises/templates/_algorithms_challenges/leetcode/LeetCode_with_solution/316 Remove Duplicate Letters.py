@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ removeDuplicateLetters(self, s):
+    ___ removeDuplicateLetters  s):
         """
         :type s: str
         :rtype: str
@@ -37,8 +37,8 @@ c_ Solution(object):
 
         r.. "".j..(stk)
 
-    ___ _idx(self, x):
-        r.. ord(x) - ord('a')
+    ___ _idx  x):
+        r.. o..(x) - o..('a')
 
 
 __ _______ __ _______

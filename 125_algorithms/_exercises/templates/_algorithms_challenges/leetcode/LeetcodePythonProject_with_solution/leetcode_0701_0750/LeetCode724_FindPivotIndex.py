@@ -4,7 +4,7 @@ Created on Feb 21, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ pivotIndex(self, nums):
+    ___ pivotIndex  nums):
         """
         :type nums: List[int]
         :rtype: int

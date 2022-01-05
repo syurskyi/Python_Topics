@@ -2,7 +2,7 @@ ____ heapq _______ heappop, heappush
 
 
 c_ Solution:
-    ___ kthSmallest(self, G, k):
+    ___ kthSmallest  G, k):
         """
         :type G: List[List[int]]
         :type k: int

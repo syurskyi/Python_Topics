@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ getFactors(self, n):
+    ___ getFactors  n):
         """
 
         :type n: int
@@ -17,7 +17,7 @@ c_ Solution:
         dfs([n], ret)
         r.. ret
 
-    ___ dfs(self, cur, ret):
+    ___ dfs  cur, ret):
         """
         16
 
@@ -43,7 +43,7 @@ c_ Solution:
                 dfs(cur, ret)
                 cur.pop()
 
-    ___ dfs2(self, n, cur, ret):
+    ___ dfs2  n, cur, ret):
         __ n > 1 a.. cur a.. l..(cur) >= 1:
             ret.a..(l..(cur)+[n])
 
@@ -54,7 +54,7 @@ c_ Solution:
                 dfs(n/i, cur, ret)
                 cur.pop()
 
-    ___ dfs_TLE(self, n, cur, ret):
+    ___ dfs_TLE  n, cur, ret):
         __ n __ 1 a.. cur a.. l..(cur) >= 2:
             ret.a..(l..(cur))
 

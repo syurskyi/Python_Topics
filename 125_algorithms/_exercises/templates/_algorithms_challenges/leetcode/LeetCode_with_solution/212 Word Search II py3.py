@@ -32,7 +32,7 @@ c_ TrieNode:
 
 
 c_ Solution:
-    ___ findWords(self, board: List[List[s..]], words: List[s..]) __ List[s..]:
+    ___ findWords  board: List[List[s..]], words: List[s..]) __ List[s..]:
         root = construct(words)
         m, n = l..(board), l..(board[0])
         visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
@@ -43,7 +43,7 @@ c_ Solution:
 
         r.. l..(ret)
 
-    ___ dfs(self, board, visited, i, j, cur, ret):
+    ___ dfs  board, visited, i, j, cur, ret):
         m, n = l..(board), l..(board[0])
         visited[i][j] = T..
         c = board[i][j]
@@ -60,7 +60,7 @@ c_ Solution:
 
         visited[i][j] = F..
 
-    ___ construct(self, words):
+    ___ construct  words):
         root = TrieNode()
         ___ w __ words:
             cur = root

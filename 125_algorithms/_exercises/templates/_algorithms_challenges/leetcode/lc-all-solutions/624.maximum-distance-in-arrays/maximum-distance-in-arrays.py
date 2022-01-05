@@ -1,6 +1,6 @@
 c_ Solution(object):
   # subarray sum
-  ___ _maxDistance(self, arrays):
+  ___ _maxDistance  arrays):
     """
     :type arrays: List[List[int]]
     :rtype: int
@@ -14,20 +14,20 @@ c_ Solution(object):
     rMax = [maxArray[-1]] * n
     ans = float("-inf")
     ___ i __ r..(1, n):
-      lMax[i] = max(lMax[i - 1], maxArray[i])
+      lMax[i] = m..(lMax[i - 1], maxArray[i])
     ___ i __ r..(r..(0, n - 1)):
-      rMax[i] = max(rMax[i + 1], maxArray[i])
+      rMax[i] = m..(rMax[i + 1], maxArray[i])
     ___ i __ r..(n):
       __ 0 < i < n - 1:
-        ans = max(ans, abs(max(lMax[i - 1], rMax[i + 1]) - minArray[i]))
+        ans = m..(ans, abs(m..(lMax[i - 1], rMax[i + 1]) - minArray[i]))
       ____ i __ 0:
-        ans = max(ans, abs(rMax[i + 1] - minArray[i]))
+        ans = m..(ans, abs(rMax[i + 1] - minArray[i]))
       ____:
-        ans = max(ans, abs(lMax[i - 1] - minArray[i]))
+        ans = m..(ans, abs(lMax[i - 1] - minArray[i]))
     r.. ans
 
   # one pass
-  ___ maxDistance(self, arrays):
+  ___ maxDistance  arrays):
     n = l..(arrays)
     minNum = arrays[0][0]
     maxNum = arrays[0][-1]
@@ -35,7 +35,7 @@ c_ Solution(object):
     ___ i __ r..(1, n):
       head = arrays[i][0]
       tail = arrays[i][-1]
-      ans = max(ans, abs(tail - minNum), abs(head - maxNum))
+      ans = m..(ans, abs(tail - minNum), abs(head - maxNum))
       minNum = m..(head, minNum)
-      maxNum = max(tail, maxNum)
+      maxNum = m..(tail, maxNum)
     r.. ans

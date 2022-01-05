@@ -4,7 +4,7 @@ Created on Oct 15, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ flipLights(self, n, m):
+    ___ flipLights  n, m):
         """
         :type n: int
         :type m: int

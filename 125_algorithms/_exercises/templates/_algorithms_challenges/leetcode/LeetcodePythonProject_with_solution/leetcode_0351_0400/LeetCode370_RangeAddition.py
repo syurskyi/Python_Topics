@@ -5,7 +5,7 @@ Created on Mar 29, 2017
 '''
 
 c_ Solution(object):
-    ___ getModifiedArray(self, length, updates):
+    ___ getModifiedArray  length, updates):
         result = [0]*length
         ___ update __ updates:
             start = update[0]

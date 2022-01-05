@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ isOneEditDistance(self, s, t):
+    ___ isOneEditDistance  s, t):
         """
         String
 
@@ -37,7 +37,7 @@ c_ Solution(object):
 
 
 c_ Solution1(object):
-    ___ isOneEditDistance(self, s, t):
+    ___ isOneEditDistance  s, t):
         """
         Iterator version
         """

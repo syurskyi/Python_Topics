@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ isSameTree(self, p, q):
+  ___ isSameTree  p, q):
     """
     :type p: TreeNode
     :type q: TreeNode

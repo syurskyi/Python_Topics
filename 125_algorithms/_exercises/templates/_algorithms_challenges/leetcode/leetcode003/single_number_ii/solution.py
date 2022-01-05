@@ -1,7 +1,7 @@
 c_ Solution:
     # @param A, a list of integer
     # @return an integer
-    ___ singleNumber(self, A):
+    ___ singleNumber  A):
         # Assume 32-bit integer
         num_of_bits = 32  # Change this to 64 on 64-bit platform
         res_bit = 0

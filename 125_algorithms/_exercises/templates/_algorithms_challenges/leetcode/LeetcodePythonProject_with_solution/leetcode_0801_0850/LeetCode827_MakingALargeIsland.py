@@ -4,7 +4,7 @@ Created on May 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ largestIsland(self, grid):
+    ___ largestIsland  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(object):
             ___ j __ r..(n):
                 __ grid[i][j] __ 1:
                     areaMap[index] = dfs(grid, i, j, index)
-                    res = max(res, areaMap[index])
+                    res = m..(res, areaMap[index])
                     index += 1
         ___ i __ r..(n):
             ___ j __ r..(n):
@@ -30,10 +30,10 @@ c_ Solution(object):
                             __ index > 1 a.. index n.. __ visited:
                                 visited.add(index)
                                 curr += areaMap[index]
-                    res = max(res, curr)
+                    res = m..(res, curr)
         r.. res
     
-    ___ dfs(self, grid, i, j, index):
+    ___ dfs  grid, i, j, index):
         area = 0
         n = l..(grid)
         grid[i][j] = index

@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ generateTrees(self, n):
+    ___ generateTrees  n):
         """
         :type n: int
         :rtype: List[TreeNode]
@@ -21,7 +21,7 @@ c_ Solution(object):
         res = helper(1, n)
         r.. res
     
-    ___ helper(self, start, end):
+    ___ helper  start, end):
         __ start > end:
             r.. [N..]
         result    # list

@@ -4,7 +4,7 @@ Created on Sep 6, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findDuplicate(self, paths):
+    ___ findDuplicate  paths):
         """
         :type paths: List[str]
         :rtype: List[List[str]]

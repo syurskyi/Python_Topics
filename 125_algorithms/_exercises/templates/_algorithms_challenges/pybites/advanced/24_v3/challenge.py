@@ -7,7 +7,7 @@ c_ Challenge(ABC):
         title = title
 
     @abstractmethod
-    ___ verify(self, _):
+    ___ verify  _):
         r.. T..()
 
     $
@@ -21,7 +21,7 @@ c_ BlogChallenge(Challenge):
         super().__init__(number, title)
         merged_prs = merged_prs
 
-    ___ verify(self, pr):
+    ___ verify  pr):
         r.. pr __ merged_prs
 
     $
@@ -34,7 +34,7 @@ c_ BiteChallenge(Challenge):
         super().__init__(number, title)
         result = result
 
-    ___ verify(self, result):
+    ___ verify  result):
         r.. result __ result
 
     $

@@ -23,7 +23,7 @@ Note: Do not use the eval built-in library function.
 
 
 c_ Solution:
-    ___ calculate(self, s: s..) __ i..:
+    ___ calculate  s: s..) __ i..:
         """
         make +, - lower precedence operator as a unary operation
         recursively handle bracket
@@ -32,7 +32,7 @@ c_ Solution:
         ret, _ = eval(s, 0, [])
         r.. ret
 
-    ___ eval(self, s, i, stk):
+    ___ eval  s, i, stk):
         """
         return the cursor since the cursor advances in recursion
         """

@@ -7,7 +7,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ plusOne(self, d..):
+    ___ plusOne  d..):
         """
         Math
 
@@ -26,7 +26,7 @@ c_ Solution(object):
         d...insert(0, 1)
         r.. d..
 
-    ___ plusOne(self, d..):
+    ___ plusOne  d..):
         """
         Good habit to reverse it first
         :param digits:

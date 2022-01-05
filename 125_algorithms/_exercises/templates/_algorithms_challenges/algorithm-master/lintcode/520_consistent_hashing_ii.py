@@ -20,7 +20,7 @@ c_ Solution:
     @param: machine_id: An integer
     @return: a list of shard ids
     """
-    ___ addMachine(self, machine_id):
+    ___ addMachine  machine_id):
         item = l2p[machine_id]    # list
         point = -1
         ___ i __ r..(k):
@@ -36,7 +36,7 @@ c_ Solution:
     @param: hashcode: An integer
     @return: A machine id
     """
-    ___ getMachineIdByHashCode(self, hashcode):
+    ___ getMachineIdByHashCode  hashcode):
         points = s..(p2l.keys())
         index = bisect.bisect_left(points, hashcode) % l..(points)
         # # counterclockwise

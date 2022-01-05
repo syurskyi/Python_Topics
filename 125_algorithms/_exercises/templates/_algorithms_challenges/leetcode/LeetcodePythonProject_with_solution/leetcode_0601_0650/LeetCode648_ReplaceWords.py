@@ -4,7 +4,7 @@ Created on Oct 2, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ replaceWords(self, d.., sentence):
+    ___ replaceWords  d.., sentence):
         """
         :type dict: List[str]
         :type sentence: str

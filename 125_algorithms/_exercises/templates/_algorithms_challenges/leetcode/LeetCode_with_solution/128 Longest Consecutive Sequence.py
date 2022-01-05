@@ -9,7 +9,7 @@ Your algorithm should run in O(n) complexity.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ longestConsecutive_TLE(self, num):
+    ___ longestConsecutive_TLE  num):
         """
         O(n) within in one scan
         algorithm: array, inverted index
@@ -38,11 +38,11 @@ c_ Solution:
                 sequence_val_expected += 1
                 current_length += 1
 
-            max_length = max(max_length, current_length)
+            max_length = m..(max_length, current_length)
 
         r.. max_length
 
-    ___ longestConsecutive(self, num):
+    ___ longestConsecutive  num):
         """
         Algorithm: pivot scanning
         array, inverted index (visited)
@@ -76,7 +76,7 @@ c_ Solution:
                 sequence_val_expected += 1
                 current_length += 1
 
-            max_length = max(max_length, current_length)
+            max_length = m..(max_length, current_length)
 
         r.. max_length
 

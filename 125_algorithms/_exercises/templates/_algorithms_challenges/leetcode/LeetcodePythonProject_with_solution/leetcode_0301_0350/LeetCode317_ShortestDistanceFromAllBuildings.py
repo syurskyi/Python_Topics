@@ -5,7 +5,7 @@ Created on Mar 16, 2017
 '''
 
 c_ Solution(object):
-    ___ shortestDistance(self, grid):
+    ___ shortestDistance  grid):
         """
         :type grid: List[List[int]]
         :rtype: int

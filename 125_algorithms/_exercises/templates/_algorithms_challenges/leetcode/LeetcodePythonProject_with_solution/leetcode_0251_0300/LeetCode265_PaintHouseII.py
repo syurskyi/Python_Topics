@@ -5,7 +5,7 @@ Created on Mar 3, 2017
 '''
 
 c_ Solution(object):
-    ___ minCostII(self, costs):
+    ___ minCostII  costs):
         """
         :type costs: List[List[int]]
         :rtype: int
@@ -28,7 +28,7 @@ c_ Solution(object):
                     minInd2 = j
         r.. costs[-1][minInd1]
     
-    ___ minCostII_slow(self, costs):
+    ___ minCostII_slow  costs):
         """
         :type costs: List[List[int]]
         :rtype: int

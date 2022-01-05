@@ -36,7 +36,7 @@ ___ get_possible_dict_words(draw):
         __ temp_word.l.. __ dictionary:
             possible_word[temp_word.l..] = calc_word_value(temp_word.lower())
     listOfKeys = l..()
-    max_value = max(possible_word.values())
+    max_value = m..(possible_word.values())
     ___ key, value __ possible_word.i..:
         __ value __ max_value:
             listOfKeys.a..(key)

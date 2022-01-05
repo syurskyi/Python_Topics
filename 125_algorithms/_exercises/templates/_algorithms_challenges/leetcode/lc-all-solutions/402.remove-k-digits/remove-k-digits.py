@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ removeKdigits(self, num, k):
+  ___ removeKdigits  num, k):
     """
     :type num: str
     :type k: int

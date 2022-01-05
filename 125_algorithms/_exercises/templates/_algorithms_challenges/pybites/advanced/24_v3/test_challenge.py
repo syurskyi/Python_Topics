@@ -13,9 +13,9 @@ ___ test_should_not_instantiate_abc
 
 ___ test_super_and_abst_method_implementation
     merged_prs = [41, 42, 44]
-    try:
+    ___
         blog = BlogChallenge(1, 'Wordvalues', merged_prs)
-    except T..:
+    ______ T..:
         p__.fail("Unexpected TypeError, missing methods/properties?")
 
     ... blog.verify(r__.choice(merged_prs))
@@ -24,9 +24,9 @@ ___ test_super_and_abst_method_implementation
 
 
 ___ test_super_and_abst_property_implementation
-    try:
+    ___
         bite = BiteChallenge(24, 'ABC and class inheritance', 'my result')
-    except T..:
+    ______ T..:
         p__.fail("Unexpected TypeError, missing methods/properties?")
 
     ... bite.verify('my result')

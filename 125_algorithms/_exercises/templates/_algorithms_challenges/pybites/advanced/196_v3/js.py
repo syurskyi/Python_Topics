@@ -18,30 +18,30 @@ c_ JsObject:
         ___ k, v __ kwargs.i..:
             __setitem__(k, v)
 
-    ___ __getattr__(self, item):
+    ___ __getattr__  item):
         __ item __ k..:
             r.. __getitem__(item)
 
-    ___ __setattr__(self, key, value):
+    ___ __setattr__  key, value):
         super().__setattr__(key, value)
         __ key n.. __ RESERVED_WORDS a.. key != '_local':
             _local[key] = value
 
-    ___ __getitem__(self, item):
+    ___ __getitem__  item):
         r.. _local.get(item)
 
-    ___ __setitem__(self, key, value):
+    ___ __setitem__  key, value):
         __ key n.. __ RESERVED_WORDS:
             _local[key] = value
             __dict__[key] = value
         ____:
             r.. AttributeError("Reserved words not allowed")
 
-    ___ __delitem__(self, key):
+    ___ __delitem__  key):
         _local.pop(key)
         __dict__.pop(key)
 
-    ___ __delattr__(self, item):
+    ___ __delattr__  item):
         _local.pop(item)
         __dict__.pop(item)
 
@@ -51,7 +51,7 @@ c_ JsObject:
     ___ __iter__
         y.. ____ _local
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. _local __ other._local
 
     ___ keys
@@ -60,6 +60,6 @@ c_ JsObject:
     ___ values
         r.. _local.v..
 
-    ___ update(self, data):
+    ___ update  data):
         ___ k, v __ data.i..:
             __setitem__(k, v)

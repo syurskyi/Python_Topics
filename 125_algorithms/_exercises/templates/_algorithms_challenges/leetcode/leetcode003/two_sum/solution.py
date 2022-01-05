@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a tuple, (index1, index2)
-    ___ twoSum(self, num, target):
+    ___ twoSum  num, target):
         d    # dict
         ___ i, e __ e..(num):
             __ e __ d:

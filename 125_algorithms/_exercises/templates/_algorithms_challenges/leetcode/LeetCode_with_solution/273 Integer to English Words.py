@@ -46,7 +46,7 @@ c_ Solution(object):
             1000000000: "Billion"
         }
 
-    ___ numberToWords(self, num):
+    ___ numberToWords  num):
         """
         Pay attention to the handling of 0's
         :type num: int
@@ -59,7 +59,7 @@ c_ Solution(object):
         ret = filter(l.... x: x, ret)  # filter None as zeros
         r.. " ".j..(map(s.., ret))
 
-    ___ toWords(self, num, ret):
+    ___ toWords  num, ret):
         """
         will call partial_parse
 
@@ -76,7 +76,7 @@ c_ Solution(object):
 
         ret.a..(table[num%TEN])
 
-    ___ partial_parse(self, num, sig, ret):
+    ___ partial_parse  num, sig, ret):
         """
         will call toWords
         """

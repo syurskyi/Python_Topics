@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ minPatches(self, nums, n):
+    ___ minPatches  nums, n):
         """
         https://discuss.leetcode.com/topic/35494/solution-explanation
 
@@ -54,7 +54,7 @@ c_ Solution(object):
 
         r.. cnt
 
-    ___ minPatches2(self, nums, n):
+    ___ minPatches2  nums, n):
         """
         https://discuss.leetcode.com/topic/35494/solution-explanation
 

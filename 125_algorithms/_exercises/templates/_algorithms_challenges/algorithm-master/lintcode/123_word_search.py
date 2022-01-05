@@ -11,7 +11,7 @@ c_ Solution:
     @param: s: A string
     @return: A boolean
     """
-    ___ exist(self, G, s):
+    ___ exist  G, s):
         __ G __ N.. o. G[0] __ N.. o. s __ N..
             r.. F..
 
@@ -25,7 +25,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ dfs(self, G, x, y, s, i, visited):
+    ___ dfs  G, x, y, s, i, visited):
         __ i >= l..(s):
             r.. T..
 

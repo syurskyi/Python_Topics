@@ -6,7 +6,7 @@ Example2: x = -123, return -321
 """
 
 c_ Solution(object):
-    ___ reverse(self, x):
+    ___ reverse  x):
         """
         :type x: int
         :rtype: int

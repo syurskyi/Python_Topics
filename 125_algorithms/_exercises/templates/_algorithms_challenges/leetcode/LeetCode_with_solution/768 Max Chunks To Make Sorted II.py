@@ -36,7 +36,7 @@ ____ c.. _______ defaultdict, d..
 
 
 c_ Solution:
-    ___ maxChunksToSorted(self, arr: List[i..]) __ i..:
+    ___ maxChunksToSorted  arr: List[i..]) __ i..:
         """
         not necessarily distinct
         sort and assign index
@@ -54,7 +54,7 @@ c_ Solution:
         ret = 0
         cur_max_idx = 0
         ___ i, e __ e..(proxy):
-            cur_max_idx = max(cur_max_idx, e)
+            cur_max_idx = m..(cur_max_idx, e)
             __ cur_max_idx __ i:
                 ret += 1
 

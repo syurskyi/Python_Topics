@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ buildTree(self, preorder, inorder):
+    ___ buildTree  preorder, inorder):
         """
         :type preorder: List[int]
         :type inorder: List[int]
@@ -19,7 +19,7 @@ c_ Solution(object):
         """
         r.. helper(preorder, 0, l..(preorder)-1, inorder, 0, l..(inorder)-1)
     
-    ___ helper(self, preorder, pstart, pend, inorder, istart, iend):
+    ___ helper  preorder, pstart, pend, inorder, istart, iend):
         __ pstart > pend o. istart > iend:
             r.. N..
         val = preorder[pstart]

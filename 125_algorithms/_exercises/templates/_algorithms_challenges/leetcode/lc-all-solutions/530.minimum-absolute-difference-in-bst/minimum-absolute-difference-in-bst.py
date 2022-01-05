@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ getMinimumDifference(self, root):
+  ___ getMinimumDifference  root):
     """
     :type root: TreeNode
     :rtype: int

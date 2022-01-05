@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ threeSum_duplicate(self, num):
+    ___ threeSum_duplicate  num):
         """
         Hash
         O(n^2)
@@ -41,7 +41,7 @@ c_ Solution:
                         break
         r.. result
 
-    ___ threeSum_TLE(self, num):
+    ___ threeSum_TLE  num):
         """
         Hash
         O(n^2)
@@ -72,7 +72,7 @@ c_ Solution:
 
         r.. result.k..
 
-    ___ threeSum(self, num):
+    ___ threeSum  num):
         """
         Brute force first, then determine whether sorting time complexity exceeds the brute force
 

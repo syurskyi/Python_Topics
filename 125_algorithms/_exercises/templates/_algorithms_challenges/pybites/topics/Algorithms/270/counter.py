@@ -5,7 +5,7 @@ ___ freq_digit(num: i..) __ i..:
     print(t..(cnt))
     print(cnt.most_common(1)[0][0])
     templist = [i..(i) ___ i __ s..(num)]
-    r.. max(templist, key = templist.count)
+    r.. m..(templist, key = templist.count)
 
 
 

@@ -5,21 +5,21 @@ Created on Feb 19, 2017
 '''
 
 c_ Solution(object):
-    ___ rob(self, nums):
+    ___ rob  nums):
         __ n.. nums: r.. 0
         __ l..(nums) __ 1: r.. nums[0]
-        r.. max(robHelper(nums, 0, l..(nums)-2),\
+        r.. m..(robHelper(nums, 0, l..(nums)-2),\
                    robHelper(nums, 1, l..(nums)-1))
     
-    ___ robHelper(self, nums, lo, hi):
+    ___ robHelper  nums, lo, hi):
         include, exclude = 0, 0
         ___ i0 __ r..(lo, hi+1):
             i, e = include, exclude
             include = e+nums[i0]
-            exclude = max(i, e)
-        r.. max(include, exclude)
+            exclude = m..(i, e)
+        r.. m..(include, exclude)
     
-    ___ robSpace(self, nums):
+    ___ robSpace  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -32,17 +32,17 @@ c_ Solution(object):
             __ i __ 0:
                 dp0[i] = nums[0]
             ____ i __ 1:
-                dp0[i] = max(nums[i], nums[i-1])
+                dp0[i] = m..(nums[i], nums[i-1])
             ____:
-                dp0[i] = max(dp0[i-1], dp0[i-2] + nums[i])
+                dp0[i] = m..(dp0[i-1], dp0[i-2] + nums[i])
         ___ i __ r..(1, l..(nums)):
             __ i __ 1:
                 dp1[i] = nums[i]
             ____ i __ 2:
-                dp1[i] = max(nums[i], nums[i-1])
+                dp1[i] = m..(nums[i], nums[i-1])
             ____:
-                dp1[i] = max(dp1[i-1], dp1[i-2] + nums[i])
-        r.. max(dp0[-2], dp1[-1])
+                dp1[i] = m..(dp1[i-1], dp1[i-2] + nums[i])
+        r.. m..(dp0[-2], dp1[-1])
     
     ___ test
         testCases = [

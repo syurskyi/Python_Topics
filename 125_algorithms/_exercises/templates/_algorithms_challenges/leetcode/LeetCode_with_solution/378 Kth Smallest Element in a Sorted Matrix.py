@@ -24,7 +24,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ kthSmallest(self, matrix, k):
+    ___ kthSmallest  matrix, k):
         """
         Heap of list
         :type matrix: List[List[int]]
@@ -38,7 +38,7 @@ c_ Solution(object):
                 i = i
                 j = j
 
-            ___ __cmp__(self, other):
+            ___ __cmp__  other):
                 r.. matrix[i][j] - matrix[other.i][other.j]
 
             ___ hasnext
@@ -62,7 +62,7 @@ c_ Solution(object):
 
         r.. matrix[ret.i][ret.j]
 
-    ___ kthSmallestError(self, matrix, k):
+    ___ kthSmallestError  matrix, k):
         """
         :type matrix: List[List[int]]
         :type k: int

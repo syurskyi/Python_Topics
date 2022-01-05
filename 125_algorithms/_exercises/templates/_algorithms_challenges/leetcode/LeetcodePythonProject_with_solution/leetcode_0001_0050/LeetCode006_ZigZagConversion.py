@@ -4,7 +4,7 @@ Created on Jun 7, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ convert(self, s, numRows):
+    ___ convert  s, numRows):
         """
         :type s: str
         :type numRows: int

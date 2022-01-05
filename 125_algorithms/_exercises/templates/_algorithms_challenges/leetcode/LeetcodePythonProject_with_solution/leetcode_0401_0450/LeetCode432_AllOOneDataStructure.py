@@ -17,7 +17,7 @@ c_ AllOne(object):
         head = N..
         tail = N..
     
-    ___ inc(self, key):
+    ___ inc  key):
         __ key __ keyBucketMap:
             bucket = keyBucketMap[key]
             nextBucket = bucket.next
@@ -66,7 +66,7 @@ c_ AllOne(object):
                 tail = bucket
             keyBucketMap[key] = head
     
-    ___ dec(self, key):
+    ___ dec  key):
         __ key __ keyBucketMap:
             bucket = keyBucketMap[key]
             prevBucket = bucket.prev

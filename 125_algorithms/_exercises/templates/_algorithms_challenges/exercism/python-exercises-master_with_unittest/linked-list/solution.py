@@ -11,7 +11,7 @@ c_ LinkedList(object):
         tail = N..
         length = 0
 
-    ___ push(self, value):
+    ___ push  value):
         new_node = Node(value)
         __ n.. head:
             head = tail = new_node
@@ -41,7 +41,7 @@ c_ LinkedList(object):
         length -= 1
         r.. node.value
 
-    ___ unshift(self, value):
+    ___ unshift  value):
         new_node = Node(value)
         __ n.. head:
             head = tail = new_node

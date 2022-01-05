@@ -4,7 +4,7 @@ Created on Oct 11, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ constructArray(self, n, k):
+    ___ constructArray  n, k):
         """
         :type n: int
         :type k: int

@@ -3,7 +3,7 @@ c_ Solution:
     @param: S: A list of strings
     @return: A list of strings
     """
-    ___ anagrams(self, S):
+    ___ anagrams  S):
         ans    # list
         __ n.. S:
             r.. ans

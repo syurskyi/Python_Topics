@@ -11,7 +11,7 @@ c_ RLEIterator(object):
         countIdx = 0
         numIdx = 1
 
-    ___ next(self, n):
+    ___ next  n):
         """
         :type n: int
         :rtype: int

@@ -1,22 +1,22 @@
 c_ Solution:
-    ___ findTheDifference(self, s, t):
+    ___ findTheDifference  s, t):
         """
         :type s: str
         :type t: str
         :rtype: str
         """
-        a = ord('a')
-        ans = ord(t[-1]) - a
+        a = o..('a')
+        ans = o..(t[-1]) - a
 
         ___ i __ r..(l..(s)):
-            ans ^= ord(s[i]) - a
-            ans ^= ord(t[i]) - a
+            ans ^= o..(s[i]) - a
+            ans ^= o..(t[i]) - a
 
         r.. chr(ans + a)
 
 
 c_ Solution:
-    ___ findTheDifference(self, s, t):
+    ___ findTheDifference  s, t):
         """
         :type s: str
         :type t: str

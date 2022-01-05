@@ -12,7 +12,7 @@ c_ GeoHash:
     @param: precision: an integer between 1 to 12
     @return: a base32 string
     """
-    ___ encode(self, latitude, longitude, precision=5):
+    ___ encode  latitude, longitude, precision=5):
         __ n.. base32:
             base32 = get_base32_list()
 
@@ -32,7 +32,7 @@ c_ GeoHash:
 
         r.. ''.j..(hash_codes[:precision])
 
-    ___ _loc_to_bins(self, location, times, left, right):
+    ___ _loc_to_bins  location, times, left, right):
         mid = 0
         bins    # list
 
@@ -50,8 +50,8 @@ c_ GeoHash:
     ___ get_base32_list
         base32_list = [s..(i) ___ i __ r..(10)]
 
-        ignored_char = (ord('a'), ord('i'), ord('l'), ord('o'))
-        ___ i __ r..(ord('a'), ord('z') + 1):
+        ignored_char = (o..('a'), o..('i'), o..('l'), o..('o'))
+        ___ i __ r..(o..('a'), o..('z') + 1):
             __ i __ ignored_char:
                 _____
             base32_list.a..(chr(i))

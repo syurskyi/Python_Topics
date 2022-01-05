@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ missingNumber(self, nums):
+  ___ missingNumber  nums):
     """
     :type nums: List[int]
     :rtype: int

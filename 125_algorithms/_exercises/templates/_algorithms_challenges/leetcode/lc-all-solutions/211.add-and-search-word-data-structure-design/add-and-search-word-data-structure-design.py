@@ -8,7 +8,7 @@ c_ Trie:
   ___ - ):
     root = TrieNode()
 
-  ___ addWord(self, word):
+  ___ addWord  word):
     root = root
     ___ i __ r..(0, l..(word)):
       c = word[i]
@@ -26,11 +26,11 @@ c_ WordDictionary:
     trie = Trie()
     cache = set([])
 
-  ___ addWord(self, word):
+  ___ addWord  word):
     trie.addWord(word)
     cache.add(word)
 
-  ___ s..(self, word):
+  ___ s..  word):
     __ word __ cache:
       r.. T..
 

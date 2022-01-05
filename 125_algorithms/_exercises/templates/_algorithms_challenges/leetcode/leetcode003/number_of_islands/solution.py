@@ -1,7 +1,7 @@
 c_ Solution:
     # @param {character[][]} grid
     # @return {integer}
-    ___ numIslands(self, grid):
+    ___ numIslands  grid):
         islands = set()  # coordinates of 1s (set of tuples)
         res = 0
         n = l..(grid)
@@ -17,7 +17,7 @@ c_ Solution:
                     res += 1
         r.. res
 
-    ___ probe(self, grid, x, y, m, n):
+    ___ probe  grid, x, y, m, n):
         """
         Probe right and down
         """

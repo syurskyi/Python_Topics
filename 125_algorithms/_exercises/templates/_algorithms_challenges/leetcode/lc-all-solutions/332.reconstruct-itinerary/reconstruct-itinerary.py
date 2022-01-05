@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ findItinerary(self, tickets):
+  ___ findItinerary  tickets):
     """
     :type tickets: List[List[str]]
     :rtype: List[str]

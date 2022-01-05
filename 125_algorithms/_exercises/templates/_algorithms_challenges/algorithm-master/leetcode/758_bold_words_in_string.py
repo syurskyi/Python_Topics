@@ -16,7 +16,7 @@ True
 
 
 c_ Solution:
-    ___ boldWords(self, words, s):
+    ___ boldWords  words, s):
         """
         :type words: List[str]
         :type s: str

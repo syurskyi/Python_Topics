@@ -18,7 +18,7 @@ Your solution should be in logarithmic complexity.
 """
 
 c_ Solution(object):
-    ___ findPeakElement(self, nums):
+    ___ findPeakElement  nums):
         """
         :type nums: List[int]
         :rtype: int

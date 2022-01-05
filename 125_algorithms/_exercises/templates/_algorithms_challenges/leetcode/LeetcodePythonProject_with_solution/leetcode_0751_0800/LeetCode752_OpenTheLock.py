@@ -4,7 +4,7 @@ Created on Mar 27, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ openLock(self, deadends, target):
+    ___ openLock  deadends, target):
         """
         :type deadends: List[str]
         :type target: str

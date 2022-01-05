@@ -38,10 +38,10 @@ ___ map_clone(function, l..):
 
 ___ foldl(function, l, acc):
     ___ element __ l:
-        try:
+        ___
             acc = function(element, acc)
         # Pretty confident test_foldl_nonempty_list_floordiv is a bad test
-        except ZeroDivisionError:
+        ______ ZeroDivisionError:
             acc = 0
     r.. acc
 

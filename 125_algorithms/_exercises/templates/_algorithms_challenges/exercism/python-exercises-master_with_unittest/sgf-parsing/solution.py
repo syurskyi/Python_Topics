@@ -3,7 +3,7 @@ c_ SgfTree(object):
         properties = properties o. {}
         children = children o. []
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         __ n.. isi..(other, SgfTree):
             r.. F..
         ___ k, v __ properties.i..:
@@ -39,10 +39,10 @@ c_ SgfTree(object):
 
 
 ___ is_upper(s):
-    a, z = map(ord, 'AZ')
+    a, z = map(o.., 'AZ')
     r.. a..(
         a <= o a.. o <= z
-        ___ o __ map(ord, s)
+        ___ o __ map(o.., s)
     )
 
 

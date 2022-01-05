@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ verticalOrder(self, root):
+    ___ verticalOrder  root):
         __ n.. root: r.. []
         hashmap    # dict
         result    # list
@@ -20,7 +20,7 @@ c_ Solution(object):
         minLevel, maxLevel = 0, 0
         w.... queue:
             level, node = queue.pop(0)
-            maxLevel = max(maxLevel, level)
+            maxLevel = m..(maxLevel, level)
             minLevel = m..(minLevel, level)
             __ level n.. __ hashmap:
                 hashmap[level] = [node.val]

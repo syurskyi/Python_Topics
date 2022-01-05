@@ -33,7 +33,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ isNStraightHand(self, A: List[i..], W: i..) __ bool:
+    ___ isNStraightHand  A: List[i..], W: i..) __ bool:
         """
         sort + queue
 
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. prev_cnt __ 0
 
-    ___ isNStraightHand_heap(self, A: List[i..], W: i..) __ bool:
+    ___ isNStraightHand_heap  A: List[i..], W: i..) __ bool:
         """
         sort + heap
         O(N log N + N log N)

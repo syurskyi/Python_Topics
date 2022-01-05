@@ -19,7 +19,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ intersect(self, nums1, nums2):
+    ___ intersect  nums1, nums2):
         """
         Hash table
         Time O(m+n)

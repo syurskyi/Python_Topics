@@ -9,7 +9,7 @@ c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a list of lists of integers
-    ___ pathSum(self, root, s..):
+    ___ pathSum  root, s..):
         __ root __ N..
             r.. []
         one    # list
@@ -17,7 +17,7 @@ c_ Solution:
         ps(root, s.., one, res)
         r.. res
 
-    ___ ps(self, root, s.., one, res):
+    ___ ps  root, s.., one, res):
         __ root __ N..
             r..
         ____ root.left __ N.. a.. root.right __ N..

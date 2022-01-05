@@ -26,7 +26,7 @@ c_ Solution(object):
     ___ - ):
         s = 0
 
-    ___ sumOfLeftLeaves(self, root):
+    ___ sumOfLeftLeaves  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -34,7 +34,7 @@ c_ Solution(object):
         traverse(root)
         r.. s
 
-    ___ traverse(self, node):
+    ___ traverse  node):
         __ n.. node:
             r..
 

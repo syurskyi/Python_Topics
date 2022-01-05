@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ totalHammingDistance(self, nums):
+  ___ totalHammingDistance  nums):
     """
     :type nums: List[int]
     :rtype: int

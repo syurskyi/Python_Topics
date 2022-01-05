@@ -1,6 +1,6 @@
 c_ Solution:
     # @return an integer
-    ___ numDistinct(self, S, T):
+    ___ numDistinct  S, T):
         m = l..(S)
         n = l..(T)
         dp = [[0 ___ j __ r..(m + 1)] ___ i __ r..(n + 1)]

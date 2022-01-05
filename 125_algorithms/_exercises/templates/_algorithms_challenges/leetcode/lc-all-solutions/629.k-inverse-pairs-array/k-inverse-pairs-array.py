@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ kInversePairs(self, n, k):
+  ___ kInversePairs  n, k):
     """
     :type n: int
     :type k: int

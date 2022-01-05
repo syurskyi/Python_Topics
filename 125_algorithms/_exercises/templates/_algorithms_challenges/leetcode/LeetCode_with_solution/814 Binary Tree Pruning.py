@@ -49,11 +49,11 @@ ____ typing _______ Tuple
 
 
 c_ Solution:
-    ___ pruneTree(self, root: TreeNode) __ TreeNode:
+    ___ pruneTree  root: TreeNode) __ TreeNode:
         root, _ = prune(root)
         r.. root
 
-    ___ prune(self, node) __ Tuple[TreeNode, bool]:
+    ___ prune  node) __ Tuple[TreeNode, bool]:
         __ n.. node:
             r.. N.., F..
 

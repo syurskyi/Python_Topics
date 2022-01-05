@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ fractionAddition(self, expression):
+  ___ fractionAddition  expression):
     """
     :type expression: str
     :rtype: str

@@ -2,7 +2,7 @@ c_ Solution(object):
   # just guess the answer by binary search
   # note that we can check if there is a subarray that has avg. sum >= a certain value in linear time
   # then overall time complexity is O(nlog(max(nums) - min(nums)))
-  ___ _findMaxAverage(self, nums, k):
+  ___ _findMaxAverage  nums, k):
     """
     :type nums: List[int]
     :type k: int
@@ -24,7 +24,7 @@ c_ Solution(object):
       r.. F..
 
     lo = m..(nums)
-    hi = max(nums)
+    hi = m..(nums)
     w.... hi - lo > 1e-5:
       mid = (hi + lo) / 2.
       __ valid(nums, mid, k):
@@ -34,15 +34,15 @@ c_ Solution(object):
     r.. lo
 
   # have to use this hack to pass OJ
-  ___ findMaxAverage(self, nums, k):
+  ___ findMaxAverage  nums, k):
     _______ numpy __ np
-    lo, hi = m..(nums), max(nums)
+    lo, hi = m..(nums), m..(nums)
     nums = np.array([0] + nums)
     w.... hi - lo > 1e-5:
       mid = nums[0] = (lo + hi) / 2.
       sums = (nums - mid).cumsum()
       mins = np.minimum.accumulate(sums)
-      __ (sums[k:] - mins[:-k]).max() > 0:
+      __ (sums[k:] - mins[:-k]).m..() > 0:
         lo = mid
       ____:
         hi = mid

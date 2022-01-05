@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ checkEqualTree(self, root):
+    ___ checkEqualTree  root):
         """
         :type root: TreeNode
         :rtype: bool
@@ -19,7 +19,7 @@ c_ Solution(object):
         __ n.. root: r.. F..
         r.. helper(root, 0, T..)
     
-    ___ helper(self, root, sumVal, firstLevel):
+    ___ helper  root, sumVal, firstLevel):
         __ n.. root:
             r.. F..
         __ sumVal __ s..(root) a.. n.. firstLevel:
@@ -29,14 +29,14 @@ c_ Solution(object):
             r.. T..
         r.. F..
     
-    ___ s..(self, root):
+    ___ s..  root):
         __ n.. root: r.. 0
         res = root.val
         res += s..(root.left)
         res += s..(root.right)
         r.. res
     
-    ___ sumVal(self, root):
+    ___ sumVal  root):
         __ n.. root: r.. 0
         r.. root.val +\
             sumVal(root.left)+\

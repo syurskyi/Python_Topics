@@ -9,7 +9,7 @@ c_ Challenge(ABC):
         title = title
 
     @abstractmethod
-    ___ verify(self,other):
+    ___ verify other):
         p..
 
 
@@ -28,7 +28,7 @@ c_ BlogChallenge(Challenge):
     
     
 
-    ___ verify(self,other):
+    ___ verify other):
         r.. other __ merged_prs
     
     $
@@ -42,7 +42,7 @@ c_ BiteChallenge(Challenge):
         result = result
     
 
-    ___ verify(self,other):
+    ___ verify other):
         r.. other __ result
 
     $

@@ -4,7 +4,7 @@ Created on Sep 16, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ buddyStrings(self, A, B):
+    ___ buddyStrings  A, B):
         """
         :type A: str
         :type B: str
@@ -16,7 +16,7 @@ c_ Solution(object):
         dif = [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
         r.. l..(dif) __ 2 a.. dif[0] __ dif[1][::-1]
     
-    ___ buddyStrings_own(self, A, B):
+    ___ buddyStrings_own  A, B):
         """
         :type A: str
         :type B: str

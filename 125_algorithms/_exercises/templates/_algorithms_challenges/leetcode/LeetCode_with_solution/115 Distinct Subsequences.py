@@ -12,7 +12,7 @@ Return 3.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ numDistinct(self, S, T):
+    ___ numDistinct  S, T):
         """
         Algorithm: dp, sub-sequence and matching
 
@@ -60,5 +60,5 @@ c_ Solution:
 
         r.. dp[-1][-1]
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().numDistinct("rabbbit", "rabbit")__3

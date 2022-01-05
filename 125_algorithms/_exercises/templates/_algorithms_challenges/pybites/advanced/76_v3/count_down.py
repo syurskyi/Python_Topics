@@ -4,12 +4,12 @@ ____ functools _______ singledispatch
 @singledispatch
 ___ count_down(data_type):
     d = ''
-    try:
+    ___
         __ l..(data_type) != 4:
             r.. ValueError
         ___ i __ data_type:
             d += f'{i}'
-    except T..:
+    ______ T..:
         r.. ValueError
     ___ i __ r..(4, 0, -1):
         print(d[:i])

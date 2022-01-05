@@ -13,7 +13,7 @@ c_ ListNode:
         next = N..
 
 c_ Solution:
-    ___ deleteDuplicates(self, head):
+    ___ deleteDuplicates  head):
         """
         Two pointers, closed_ptr and open_ptr, to find the next non-duplicate
         O(n)
@@ -37,7 +37,7 @@ c_ Solution:
 
         r.. head
 
-__ __name____"__main__":
+__ _____ __ ____
     nodes = [ListNode(1) ___ _ __ r..(2)]
     ___ i __ r..(l..(nodes)-1):
         nodes[i].next = nodes[i+1]

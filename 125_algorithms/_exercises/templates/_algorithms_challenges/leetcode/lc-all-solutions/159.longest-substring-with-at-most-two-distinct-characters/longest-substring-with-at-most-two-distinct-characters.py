@@ -1,12 +1,12 @@
 c_ Solution(object):
-  ___ lengthOfLongestSubstringTwoDistinct(self, s):
+  ___ lengthOfLongestSubstringTwoDistinct  s):
     """
     :type s: str
     :rtype: int
     """
     r.. lengthOfLongestSubstringKDistinct(s, 2)
 
-  ___ lengthOfLongestSubstringKDistinct(self, s, k):
+  ___ lengthOfLongestSubstringKDistinct  s, k):
     """
     :type s: str
     :type k: int
@@ -25,7 +25,7 @@ c_ Solution(object):
         chashmap[s[j]] = chashmap.get(s[j], 0) + 1
         j += 1
 
-      ans = max(ans, j - i)
+      ans = m..(ans, j - i)
       chashmap[s[i]] -= 1
       __ chashmap[s[i]] __ 0:
         score -= 1

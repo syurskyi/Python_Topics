@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ summaryRanges(self, nums):
+    ___ summaryRanges  nums):
         """
         :type nums: list[int]
         :rtype: list[str]

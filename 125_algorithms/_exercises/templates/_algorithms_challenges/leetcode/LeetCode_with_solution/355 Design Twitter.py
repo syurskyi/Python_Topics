@@ -52,7 +52,7 @@ c_ Tweet(object):
         next = nxt  # LinkedList
         Tweet.central_clk += 1
 
-    ___ __cmp__(self, other):
+    ___ __cmp__  other):
         r.. - (timestamp - other.timestamp)
 
 
@@ -69,7 +69,7 @@ c_ Twitter(object):
         tweets = defaultdict(l....: N..)
         followees = defaultdict(set)
 
-    ___ postTweet(self, userId, tweetId):
+    ___ postTweet  userId, tweetId):
         """
         Compose a new tweet.
         :type userId: int
@@ -79,7 +79,7 @@ c_ Twitter(object):
         nxt = tweets[userId]  # previous post
         tweets[userId] = Tweet(tweetId, nxt)
 
-    ___ getNewsFeed(self, userId):
+    ___ getNewsFeed  userId):
         """
         Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by
         users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
@@ -104,7 +104,7 @@ c_ Twitter(object):
 
         r.. ret
 
-    ___ follow(self, followerId, followeeId):
+    ___ follow  followerId, followeeId):
         """
         Follower follows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int
@@ -113,7 +113,7 @@ c_ Twitter(object):
         """
         followees[followerId].add(followeeId)
 
-    ___ unfollow(self, followerId, followeeId):
+    ___ unfollow  followerId, followeeId):
         """
         Follower unfollows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int

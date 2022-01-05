@@ -15,7 +15,7 @@ If n = 4 and k = 2, a solution is:
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ combine(self, n, k):
+    ___ combine  n, k):
         """
         Similar to 045 Permutation
 
@@ -28,7 +28,7 @@ c_ Solution:
         get_combination(k, nums, [], result)
         r.. result
 
-    ___ get_combination(self, k, nums, current, result):
+    ___ get_combination  k, nums, current, result):
         __ l..(current)__k:
             result.a..(current)
             r..  # prune
@@ -43,5 +43,5 @@ c_ Solution:
             # array slice out of index will return []
 
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().combine(4, 2)

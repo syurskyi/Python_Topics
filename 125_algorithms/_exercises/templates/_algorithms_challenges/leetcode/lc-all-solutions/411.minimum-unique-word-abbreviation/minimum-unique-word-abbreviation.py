@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minAbbreviation(self, target, dictionary):
+  ___ minAbbreviation  target, dictionary):
     """
     :type target: str
     :type dictionary: List[str]

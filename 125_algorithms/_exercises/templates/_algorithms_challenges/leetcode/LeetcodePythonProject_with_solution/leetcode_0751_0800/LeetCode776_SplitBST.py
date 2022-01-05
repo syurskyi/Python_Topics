@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ splitBST(self, root, V):
+    ___ splitBST  root, V):
         """
         :type root: TreeNode
         :type V: int
@@ -37,7 +37,7 @@ c_ Solution(object):
                     node0 = node0.left
         r.. [root, N..]
     
-    ___ getRes(self, root, node):
+    ___ getRes  root, node):
         root0 = root
         __ n.. node:
             r.. [root0, N..]

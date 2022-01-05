@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ spiralOrder(self, matrix):
+    ___ spiralOrder  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[int]

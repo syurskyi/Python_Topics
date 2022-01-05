@@ -29,9 +29,9 @@ c_ Color:
         """Class method that converts a hex value into an rgb one"""
         __ l..(hex_value) != 7 o. hex_value[0] != '#':
             r.. ValueError
-        try:
+        ___
             rgb = t..(i..(hex_value.lstrip('#')[i:i+2], 16) ___ i __ (0, 2, 4))
-        except ValueError:
+        ______ V..
             r.. ValueError
         r.. rgb
 

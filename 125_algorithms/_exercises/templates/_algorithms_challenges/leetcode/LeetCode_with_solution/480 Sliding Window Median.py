@@ -47,7 +47,7 @@ c_ DualHeap:
         min_sz = 0
         to_remove = set()  # value, error mapping index in nums
 
-    ___ insert(self, num):
+    ___ insert  num):
         __ max_h a.. num > max_h[0][1]:
             heapq.heappush(min_h, (num, num))
             min_sz += 1
@@ -56,7 +56,7 @@ c_ DualHeap:
             max_sz += 1
         balance()
 
-    ___ pop(self, num):
+    ___ pop  num):
         to_remove.add(num)
         __ max_h a.. num > max_h[0][1]:
             min_sz -= 1
@@ -89,7 +89,7 @@ c_ DualHeap:
 
         clean_top()
 
-    ___ get_median(self, k):
+    ___ get_median  k):
         clean_top()
         __ k % 2 __ 1:
             r.. max_h[0][1]
@@ -98,7 +98,7 @@ c_ DualHeap:
 
 
 c_ Solution:
-    ___ medianSlidingWindow(self, nums: List[i..], k: i..) __ List[float]:
+    ___ medianSlidingWindow  nums: List[i..], k: i..) __ List[float]:
         """
         1. BST, proxied by bisect
         dual heap + lazy removal + balance the valid element

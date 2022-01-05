@@ -6,4 +6,4 @@ ___ get_word_max_vowels(text):
        ('object-oriented', 6)"""
     text = text.l...s..
     d.. = {word: s..(letter __ VOWELS ___ letter __ word) ___ word __ text}
-    r.. max(d...i.., key=l.... x: x[1])
+    r.. m..(d...i.., key=l.... x: x[1])

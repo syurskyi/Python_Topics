@@ -7,7 +7,7 @@
 c_ Solution:
     # @param head, a ListNode
     # @return a ListNode
-    ___ sortList(self, head):
+    ___ sortList  head):
         __ head __ N.. o. head.next __ N..
             r.. head
         # Find the middle node
@@ -28,7 +28,7 @@ c_ Solution:
         right = sortList(right)
         r.. merge(left, right)
 
-    ___ merge(self, l1, l2):
+    ___ merge  l1, l2):
         __ l1 __ N..
             r.. l2
         __ l2 __ N..

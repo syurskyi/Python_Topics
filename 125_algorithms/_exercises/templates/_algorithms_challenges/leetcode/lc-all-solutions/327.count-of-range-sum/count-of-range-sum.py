@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ countRangeSum(self, nums, lower, upper):
+  ___ countRangeSum  nums, lower, upper):
     """
     :type nums: List[int]
     :type lower: int

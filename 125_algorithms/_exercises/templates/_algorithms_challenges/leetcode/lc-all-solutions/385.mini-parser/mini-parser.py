@@ -42,7 +42,7 @@
 #        """
 
 c_ Solution(object):
-  ___ deserialize(self, s):
+  ___ deserialize  s):
     """
     :type s: str
     :rtype: NestedInteger

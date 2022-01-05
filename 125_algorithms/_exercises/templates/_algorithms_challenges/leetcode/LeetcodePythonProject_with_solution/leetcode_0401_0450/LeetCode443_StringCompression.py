@@ -4,7 +4,7 @@ Created on Nov 15, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ compress(self, chars):
+    ___ compress  chars):
         """
         :type chars: List[str]
         :rtype: int

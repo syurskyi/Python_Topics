@@ -50,9 +50,9 @@ ___ calc_word_value_v1(word):
     """Given a word calculate its value using the LETTER_SCORES dict"""
     value = 0
     ___ char __ word.u..:
-        try:
+        ___
             value += LETTER_SCORES[char]
-        except:
+        ______:
             value = 0
     r.. value
 
@@ -62,17 +62,17 @@ ___ calc_word_value_v2(word):
 
 ___ max_word_value(words):
     """Given a list of words calculate the word with the maximum value and return it"""
-    max = ()
+    m.. = ()
     ___ word __ words:
         value = calc_word_value(word)
-        __ max __
-            max = (word, value)
+        __ m.. __
+            m.. = (word, value)
         ____:
-            __ value > max[1]:
-                max = (word, value)
-    r.. max[0]
+            __ value > m..[1]:
+                m.. = (word, value)
+    r.. m..[0]
 
 ___ max_word_value_v2(words):
-    r.. max(words, key=calc_word_value)
+    r.. m..(words, key=calc_word_value)
 
 print(max_word_value(['zime', 'fgrtgtrtvv']))

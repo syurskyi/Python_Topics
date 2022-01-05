@@ -28,7 +28,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ matrixScore(self, A: List[List[i..]]) __ i..:
+    ___ matrixScore  A: List[List[i..]]) __ i..:
         """
         MSB > sum of remaining digit
         => Toggle rows to set MSB to 1
@@ -45,7 +45,7 @@ c_ Solution:
                     cnt += 1  #  number of 1's
 
             # toggle 
-            cnt = max(cnt, m-cnt)
+            cnt = m..(cnt, m-cnt)
             ret += (1 << (n-1-j)) * cnt
 
         r.. ret

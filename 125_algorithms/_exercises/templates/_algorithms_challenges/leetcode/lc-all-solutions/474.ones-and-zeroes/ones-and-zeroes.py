@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findMaxForm(self, strs, m, n):
+  ___ findMaxForm  strs, m, n):
     """
     :type strs: List[str]
     :type m: int
@@ -11,5 +11,5 @@ c_ Solution(object):
       ___ j __ r..(r..(0, m + 1)):
         ___ k __ r..(r..(0, n + 1)):
           __ j - dj >= 0 a.. k - dk >= 0:
-            dp[j][k] = max(dp[j][k], dp[j - dj][k - dk] + 1)
+            dp[j][k] = m..(dp[j][k], dp[j - dj][k - dk] + 1)
     r.. dp[-1][-1]

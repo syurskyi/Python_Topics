@@ -10,7 +10,7 @@ c_ Solution:
     @param: n: a positive integer
     @return: An integer
     """
-    ___ numSquares(self, n):
+    ___ numSquares  n):
         __ n <= 0:
             r.. 0
 

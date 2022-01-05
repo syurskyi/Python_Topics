@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ intersection(self, nums1, nums2):
+    ___ intersection  nums1, nums2):
         """
         O(n+m)
         :type nums1: List[int]

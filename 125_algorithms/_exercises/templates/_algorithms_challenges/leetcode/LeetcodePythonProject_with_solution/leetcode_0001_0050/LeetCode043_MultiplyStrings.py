@@ -4,7 +4,7 @@ Created on Jun 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ multiply(self, num1, num2):
+    ___ multiply  num1, num2):
         """
         :type num1: str
         :type num2: str
@@ -14,7 +14,7 @@ c_ Solution(object):
         pos = [0]*(m+n)
         ___ i __ r..(m-1, -1, -1):
             ___ j __ r..(n-1, -1, -1):
-                val = (ord(num1[i])-ord('0'))*(ord(num2[j])-ord('0'))
+                val = (o..(num1[i])-o..('0'))*(o..(num2[j])-o..('0'))
                 p1 = i+j
                 p2 = i+j+1
                 sumVal = val+pos[p2]

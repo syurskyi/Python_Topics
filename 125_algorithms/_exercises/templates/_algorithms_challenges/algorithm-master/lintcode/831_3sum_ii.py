@@ -3,7 +3,7 @@ c_ Solution:
     @param n: an integer
     @return: the number of solutions
     """
-    ___ threeSum2(self, n):
+    ___ threeSum2  n):
         ans = 0
         nums    # list
 
@@ -45,7 +45,7 @@ c_ Solution:
     @param n: an integer
     @return: the number of solutions
     """
-    ___ threeSum2(self, n):
+    ___ threeSum2  n):
         ans = 0
         m = i..(n ** 0.5)
 

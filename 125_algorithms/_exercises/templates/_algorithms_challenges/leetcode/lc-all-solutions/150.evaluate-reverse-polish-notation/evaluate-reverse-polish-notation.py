@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ evalRPN(self, tokens):
+  ___ evalRPN  tokens):
     """
     :type tokens: List[str]
     :rtype: int

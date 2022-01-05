@@ -9,7 +9,7 @@ c_ Solution:
     # @param root, a tree node
     # @param sum, an integer
     # @return a boolean
-    ___ hasPathSum(self, root, s..):
+    ___ hasPathSum  root, s..):
         __ root __ N..
             r.. F..
         ____ root.left __ N.. a.. root.right __ N..

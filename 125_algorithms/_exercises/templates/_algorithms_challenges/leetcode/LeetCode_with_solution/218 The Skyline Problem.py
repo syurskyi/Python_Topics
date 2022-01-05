@@ -40,7 +40,7 @@ c_ Building(object):
         h = h
         deleted = F..  # lazy deletion
 
-    ___ __cmp__(self, other):
+    ___ __cmp__  other):
         # Reverse order by height to get max-heap
         ... isi..(other, Building)
         r.. other.h - h
@@ -51,7 +51,7 @@ Event = n..('Event', 'starts ends')
 
 
 c_ Solution:
-    ___ getSkyline(self, buildings):
+    ___ getSkyline  buildings):
         """
         Sweep line
         The change of skyline only happens at start and end of buildings.

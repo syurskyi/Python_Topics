@@ -5,7 +5,7 @@ Created on Mar 22, 2017
 '''
 
 c_ Solution(object):
-    ___ numberOfPatterns(self, m, n):
+    ___ numberOfPatterns  m, n):
         skip = [[0]*10 ___ _ __ r..(10)]
         skip[1][3] = skip[3][1] = 2
         skip[1][7] = skip[7][1] = 4
@@ -21,7 +21,7 @@ c_ Solution(object):
             result += helper(path, 5, i-1)
         r.. result
     
-    ___ helper(self, path, curr, remain):
+    ___ helper  path, curr, remain):
         __ remain < 0: r.. 0
         __ remain __ 0: r.. 1
         path.add(curr)

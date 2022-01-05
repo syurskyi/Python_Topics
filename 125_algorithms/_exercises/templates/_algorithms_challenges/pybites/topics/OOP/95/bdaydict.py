@@ -11,7 +11,7 @@ c_ BirthdayDict(d..):
     ___ - , *args, **kwargs):
         update $ $$
 
-    ___ __setitem__(self, name, birthday):
+    ___ __setitem__  name, birthday):
         ___ date __ v..
             __ date.month __ birthday.month a.. date.day __ birthday.day:
                 print(MSG.f..(name))

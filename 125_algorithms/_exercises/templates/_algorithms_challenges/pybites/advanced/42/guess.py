@@ -31,10 +31,10 @@ c_ Game:
            If all good, return the int"""
         
         w... T...
-            try:
+            ___
                 number = input("Guess a number between 1 and 20: ")
                 result = i..(number)
-            except:
+            ______:
                 __ number __ N.. o. l..(number) __ 0:
                     print('Please enter a number')
                 ____:
@@ -58,7 +58,7 @@ c_ Game:
 
 
 
-    ___ _validate_guess(self, guess):
+    ___ _validate_guess  guess):
         """Verify if guess is correct, print the following when applicable:
            {guess} is correct!
            {guess} is too low
@@ -82,9 +82,9 @@ c_ Game:
         
         ___ i __ r..(1,MAX_GUESSES + 1):
             w... T...
-                try:
+                ___
                     user_guess = guess()
-                except ValueError:
+                ______ V..
                     p..
                 ____:
                     break

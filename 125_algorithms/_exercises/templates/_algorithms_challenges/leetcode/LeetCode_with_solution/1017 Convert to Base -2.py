@@ -31,7 +31,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ baseNeg2(self, N: i..) __ s..:
+    ___ baseNeg2  N: i..) __ s..:
         """
         % -2, // -2 ? not really
 

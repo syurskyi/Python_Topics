@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ searchMatrix(self, matrix, target):
+  ___ searchMatrix  matrix, target):
     """
     :type matrix: List[List[int]]
     :type target: int

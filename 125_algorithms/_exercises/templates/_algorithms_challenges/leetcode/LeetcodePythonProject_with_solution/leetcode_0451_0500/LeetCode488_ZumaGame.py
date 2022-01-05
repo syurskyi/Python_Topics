@@ -4,7 +4,7 @@ Created on Nov 12, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findMinStep(self, board, hand):
+    ___ findMinStep  board, hand):
         """
         :type board: str
         :type hand: str
@@ -13,11 +13,11 @@ c_ Solution(object):
         MAXCOUNT = 6
         handCount = [0]*26
         ___ c __ hand:
-            handCount[ord(c)-ord('A')] += 1
+            handCount[o..(c)-o..('A')] += 1
         res = helper(board+'#', handCount)
         r.. res __ res != float('inf') ____ -1
     
-    ___ helper(self, s, h):
+    ___ helper  s, h):
         s = removeConsecutive(s)
         __ s __ '#': r.. 0
         res = float('inf')
@@ -27,15 +27,15 @@ c_ Solution(object):
                 j += 1
                 _____
             need = 3-(j-i)
-            __ h[ord(s[i])-ord('A')] >= need:
-                h[ord(s[i])-ord('A')] -= need
+            __ h[o..(s[i])-o..('A')] >= need:
+                h[o..(s[i])-o..('A')] -= need
                 res = m..(res, need+helper(s[:i]+s[j:], h))
-                h[ord(s[i])-ord('A')] += need
+                h[o..(s[i])-o..('A')] += need
             i = j
             j += 1
         r.. res
     
-    ___ removeConsecutive(self, board):
+    ___ removeConsecutive  board):
         i, j = 0, 0
         w.... j < l..(board):
             __ board[j] __ board[i]:

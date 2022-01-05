@@ -12,10 +12,10 @@ c_ Solution:
     @param: root: The root of binary tree.
     @return: True if this Binary tree is Balanced, or false.
     """
-    ___ isBalanced(self, root):
+    ___ isBalanced  root):
         r.. _divide_conquer(root)[0]
 
-    ___ _divide_conquer(self, node):
+    ___ _divide_conquer  node):
         __ n.. node:
             r.. T.., 0
 
@@ -28,4 +28,4 @@ c_ Solution:
             r.. F.., 0
 
         r.. abs(maxdepth_left - maxdepth_right) <= 1, \
-            max(maxdepth_left, maxdepth_right) + 1
+            m..(maxdepth_left, maxdepth_right) + 1

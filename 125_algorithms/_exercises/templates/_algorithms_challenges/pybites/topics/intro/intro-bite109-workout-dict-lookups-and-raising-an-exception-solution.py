@@ -19,8 +19,8 @@ ___ get_workout_motd(day):
 
        Trivia: /etc/motd is a file on Unix-like systems that contains
        a 'message of the day'"""
-    try:
+    ___
         workout = workout_schedule[day.t..]
-    except KeyError:
+    ______ KeyError:
         r.. KeyError('Workout does not exist.')
     r.. chill __ workout __ rest ____ go_train.f..(workout)

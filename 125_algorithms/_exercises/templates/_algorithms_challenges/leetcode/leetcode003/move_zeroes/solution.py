@@ -12,7 +12,7 @@ Minimize the total number of operations.
 
 
 c_ Solution(object):
-    ___ moveZeroes(self, nums):
+    ___ moveZeroes  nums):
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.

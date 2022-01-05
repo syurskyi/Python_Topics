@@ -2,7 +2,7 @@ c_ Solution:
     """
     `dp[i]` means `s[:i]` is segmented by words
     """
-    ___ wordBreak(self, s, words):
+    ___ wordBreak  s, words):
         """
         :type s: str
         :type words: List[str]
@@ -13,7 +13,7 @@ c_ Solution:
         __ n.. s o. n.. words:
             r.. F..
 
-        max_size = max(l..(w) ___ w __ words)
+        max_size = m..(l..(w) ___ w __ words)
         word_set = set(words)
 
         n = l..(s)

@@ -8,7 +8,7 @@ class Point:
 
 
 c_ Solution:
-    ___ numIslands2(self, m, n, operators):
+    ___ numIslands2  m, n, operators):
         """
         :type m: int
         :type n: int
@@ -51,7 +51,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ union(self, nodes, a, b):
+    ___ union  nodes, a, b):
         _a = find(nodes, a)
         _b = find(nodes, b)
 
@@ -61,7 +61,7 @@ c_ Solution:
         nodes[_b] = _a
         r.. T..
 
-    ___ find(self, nodes, a):
+    ___ find  nodes, a):
         __ a n.. __ nodes:
             nodes[a] = a
             r.. a

@@ -4,7 +4,7 @@ Created on Oct 30, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ smallestDistancePair(self, nums, k):
+    ___ smallestDistancePair  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -24,14 +24,14 @@ c_ Solution(object):
                 high = mid
         r.. low
     
-    ___ countPair(self, nums, mid):
+    ___ countPair  nums, mid):
         n = l..(nums)
         res = 0
         ___ i __ r..(n):
             res += upperBound(nums, i, n-1, nums[i]+mid)-i-1
         r.. res
     
-    ___ upperBound(self, nums, low, high, key):
+    ___ upperBound  nums, low, high, key):
         __ nums[high] <= key:
             r.. high+1
         w.... low < high:
@@ -42,7 +42,7 @@ c_ Solution(object):
                 high = mid
         r.. low
     
-    ___ countPairs_slow(self, nums, mid):
+    ___ countPairs_slow  nums, mid):
         n = l..(nums)
         res = 0
         ___ i __ r..(n):

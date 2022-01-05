@@ -23,7 +23,7 @@ element):
 
 
 c_ Solution:
-    ___ pivot(self, A, lo, hi):
+    ___ pivot  A, lo, hi):
         pivot = lo
         closed = pivot  # closed == pivot, means no closed set
         ___ i __ r..(lo + 1, hi):
@@ -34,7 +34,7 @@ c_ Solution:
         A[closed], A[pivot] = A[pivot], A[closed]
         r.. closed  # the pivot index
 
-    ___ quick_select(self, nums, lo, hi, k):
+    ___ quick_select  nums, lo, hi, k):
         """find k-th (0-indexed)"""
         pivot = pivot(nums, lo, hi)
         __ pivot __ k:
@@ -45,7 +45,7 @@ c_ Solution:
             r.. quick_select(nums, pivot + 1, hi, k)
 
 
-    ___ minMoves2(self, nums):
+    ___ minMoves2  nums):
         """
         find the median rather than the average
 
@@ -61,12 +61,12 @@ c_ Solution:
         median = quick_select(nums, 0, n, n//2)
         r.. s..(map(l.... x: abs(x - median), nums))
 
-    ___ find_median(self, nums):
+    ___ find_median  nums):
         n = l..(nums)
         nums.s..()
         r.. nums[n//2]
 
-    ___ minMoves2_error(self, nums):
+    ___ minMoves2_error  nums):
         """
         move to the average, since incr and decr cost is 1
 

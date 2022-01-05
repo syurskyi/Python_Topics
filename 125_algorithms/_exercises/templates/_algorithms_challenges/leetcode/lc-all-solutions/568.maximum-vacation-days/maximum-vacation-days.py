@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxVacationDays(self, flights, days):
+  ___ maxVacationDays  flights, days):
     """
     :type flights: List[List[int]]
     :type days: List[List[int]]
@@ -12,5 +12,5 @@ c_ Solution(object):
       ___ j __ r..(l..(flights)):
         ___ k __ r..(l..(flights)):
           __ flights[k][j] __ 1 o. j __ k:
-            dp[(i + 1) % 2][j] = max(dp[(i + 1) % 2][j], dp[i % 2][k] + days[j][i])
-    r.. max(dp[l..(days[0]) % 2])
+            dp[(i + 1) % 2][j] = m..(dp[(i + 1) % 2][j], dp[i % 2][k] + days[j][i])
+    r.. m..(dp[l..(days[0]) % 2])

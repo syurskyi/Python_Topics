@@ -4,7 +4,7 @@ Created on Oct 15, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findLengthOfLCIS(self, nums):
+    ___ findLengthOfLCIS  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(object):
             j = i
             w.... i+1 < n a.. nums[i] < nums[i+1]:
                 i += 1
-                res = max(res, i-j+1)
+                res = m..(res, i-j+1)
             i += 1
         r.. res
     

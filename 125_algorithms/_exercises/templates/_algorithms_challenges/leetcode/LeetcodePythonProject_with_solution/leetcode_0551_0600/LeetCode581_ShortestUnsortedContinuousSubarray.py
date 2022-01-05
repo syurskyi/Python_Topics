@@ -4,7 +4,7 @@ Created on Sep 4, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findUnsortedSubarray(self, nums):
+    ___ findUnsortedSubarray  nums):
         """
         :type nums: List[int]
         :rtype: int

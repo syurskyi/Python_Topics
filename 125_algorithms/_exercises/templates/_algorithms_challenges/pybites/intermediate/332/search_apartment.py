@@ -29,7 +29,7 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
         __ building_height > running_max:
             result.a..(i)
 
-        running_max = max(running_max,building_height)
+        running_max = m..(running_max,building_height)
     
 
     __ direction __ EAST:

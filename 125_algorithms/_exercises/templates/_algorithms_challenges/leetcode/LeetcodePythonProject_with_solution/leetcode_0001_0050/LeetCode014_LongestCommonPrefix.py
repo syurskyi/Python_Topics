@@ -4,7 +4,7 @@ Created on Nov 7, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ longestCommonPrefix(self, strs):
+    ___ longestCommonPrefix  strs):
         """
         :type strs: List[str]
         :rtype: str

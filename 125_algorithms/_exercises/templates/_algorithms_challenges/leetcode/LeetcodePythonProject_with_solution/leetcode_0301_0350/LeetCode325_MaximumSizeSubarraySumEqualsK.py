@@ -5,16 +5,16 @@ Created on Mar 18, 2017
 '''
 
 c_ Solution(object):
-    ___ maxSubArrayLen(self, nums, k):
+    ___ maxSubArrayLen  nums, k):
         hashmap    # dict
         sumVal = 0
         maxLen = 0
         ___ i, num __ e..(nums):
             sumVal += num
             __ sumVal __ k:
-                maxLen = max(maxLen, i+1)
+                maxLen = m..(maxLen, i+1)
             __ sumVal-k __ hashmap:
-                maxLen = max(maxLen, i-hashmap[sumVal-k])
+                maxLen = m..(maxLen, i-hashmap[sumVal-k])
             __ sumVal n.. __ hashmap:
                 hashmap[sumVal] = i
         r.. maxLen

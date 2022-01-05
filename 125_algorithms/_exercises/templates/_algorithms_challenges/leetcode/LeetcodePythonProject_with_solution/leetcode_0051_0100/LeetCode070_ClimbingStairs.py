@@ -4,7 +4,7 @@ Created on Jun 3, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ climbStairs(self, n):
+    ___ climbStairs  n):
         """
         :type n: int
         :rtype: int

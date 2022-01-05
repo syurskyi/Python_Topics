@@ -4,7 +4,7 @@ Created on Mar 14, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ deleteAndEarn(self, nums):
+    ___ deleteAndEarn  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(object):
             count[num] += num
         dp = [0]*10003
         ___ i __ r..(10000, -1, -1):
-            dp[i] = max(count[i]+dp[i+2], dp[i+1])
+            dp[i] = m..(count[i]+dp[i+2], dp[i+1])
         r.. dp[0]
     
     ___ test

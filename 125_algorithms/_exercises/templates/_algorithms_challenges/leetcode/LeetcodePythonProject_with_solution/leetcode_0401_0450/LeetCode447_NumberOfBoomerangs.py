@@ -5,7 +5,7 @@ Created on Apr 18, 2017
 '''
 
 c_ Solution(object):
-    ___ numberOfBoomerangs(self, points):
+    ___ numberOfBoomerangs  points):
         n = l..(points)
         res = 0
         ___ i __ r..(n):

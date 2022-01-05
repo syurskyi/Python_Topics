@@ -33,7 +33,7 @@ dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
 c_ Solution:
-    ___ shortestBridge(self, A: List[List[i..]]) __ i..:
+    ___ shortestBridge  A: List[List[i..]]) __ i..:
         """
         market component 1 and component 2
         iterate 0 and BFS, min(dist1 + dist2 - 1)?
@@ -77,7 +77,7 @@ c_ Solution:
 
         r..
 
-    ___ nbr(self, A, i, j):
+    ___ nbr  A, i, j):
         m, n = l..(A), l..(A[0])
         ___ di, dj __ dirs:
             I = i + di
@@ -85,7 +85,7 @@ c_ Solution:
             __ 0 <= I < m a.. 0 <= J < n:
                 y.. I, J
 
-    ___ dfs(self, A, i, j, colors, color):
+    ___ dfs  A, i, j, colors, color):
         colors[i][j] = color
         ___ I, J __ nbr(A, i, j):
             __ colors[I][J] __ N.. a.. A[I][J] __ 1:

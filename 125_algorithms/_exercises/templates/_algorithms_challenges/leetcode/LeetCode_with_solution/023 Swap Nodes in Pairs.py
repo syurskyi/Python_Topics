@@ -15,7 +15,7 @@ c_ ListNode:
         next = N..
 
 c_ Solution:
-    ___ swapPairs(self, head):
+    ___ swapPairs  head):
         """
         Linked List
         :param head: ListNode

@@ -23,8 +23,8 @@ ___ strip_range(start, end):
 
         ___ wrapper(text):
 
-            s = max(start,0)
-            e = max(end,0)
+            s = m..(start,0)
+            e = m..(end,0)
             s = m..(l..(text),s)
             e = m..(l..(text),e)
             s = text[:s] + DOT * (e - s) + text[e:]

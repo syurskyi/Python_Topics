@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ removeNthFromEnd(self, head, n):
+  ___ removeNthFromEnd  head, n):
     """
     :type head: ListNode
     :type n: int

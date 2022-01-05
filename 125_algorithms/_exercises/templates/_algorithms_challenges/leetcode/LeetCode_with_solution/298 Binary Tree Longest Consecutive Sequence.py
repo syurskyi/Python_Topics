@@ -17,11 +17,11 @@ c_ Solution(object):
     ___ - ):
         gmax = 0
 
-    ___ longestConsecutive(self, root):
+    ___ longestConsecutive  root):
         longest(root)
         r.. gmax
 
-    ___ longest(self, cur):
+    ___ longest  cur):
         """
         longest ended at root
         Only consider increasing order
@@ -33,14 +33,14 @@ c_ Solution(object):
         l = longest(cur.left)
         r = longest(cur.right)
         __ cur.left a.. cur.val+1 __ cur.left.val:
-            maxa = max(maxa, l+1)
+            maxa = m..(maxa, l+1)
         __ cur.right a.. cur.val+1 __ cur.right.val:
-            maxa = max(maxa, r+1)
+            maxa = m..(maxa, r+1)
 
-        gmax = max(gmax, maxa)
+        gmax = m..(gmax, maxa)
         r.. maxa
 
-    ___ longestConsecutive_error(self, root):
+    ___ longestConsecutive_error  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -51,10 +51,10 @@ c_ Solution(object):
         maxa = 1
         l = longestConsecutive(root.left)
         r = longestConsecutive(root.right)
-        maxa = max(maxa, l, r)
+        maxa = m..(maxa, l, r)
         __ root.left a.. root.val + 1 __ root.left.val:
-            maxa = max(maxa, l+1)
+            maxa = m..(maxa, l+1)
         __ root.right a.. root.val + 1 __ root.right.val:
-            maxa = max(maxa, r+1)
+            maxa = m..(maxa, r+1)
 
         r.. maxa

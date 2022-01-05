@@ -5,20 +5,20 @@ ___ divide_numbers(numerator, denominator):
        ValueError reraise it. Following do the division and return the result.
        However if denominator is 0 catch the corresponding exception Python
        throws (cannot divide by 0), and return 0"""
-    try:
+    ___
         num = i..(numerator)
-    except:
+    ______:
         r..
-    try:
+    ___
         den = i..(denominator)
-    except:
+    ______:
         r..
 
-    try:
+    ___
         result = num / den
-    except ZeroDivisionError:
+    ______ ZeroDivisionError:
         result = 0
-    except:
+    ______:
         r..
 
     r.. result

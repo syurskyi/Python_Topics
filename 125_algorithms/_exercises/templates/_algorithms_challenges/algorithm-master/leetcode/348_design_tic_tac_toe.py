@@ -12,7 +12,7 @@ c_ TicTacToe(object):
         DR = 0  # only one
         DL = 0  # only one
 
-    ___ move(self, x, y, player):
+    ___ move  x, y, player):
         """
         Player {player} makes a move at ({x}, {y}).
         :type x: int The row of the board.

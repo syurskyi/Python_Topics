@@ -4,7 +4,7 @@ Created on May 2, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ shortestToChar(self, S, C):
+    ___ shortestToChar  S, C):
         """
         :type S: str
         :type C: str

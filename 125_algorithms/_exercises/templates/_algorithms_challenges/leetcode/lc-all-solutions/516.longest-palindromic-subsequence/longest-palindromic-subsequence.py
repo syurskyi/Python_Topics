@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ longestPalindromeSubseq(self, s):
+  ___ longestPalindromeSubseq  s):
     """
     :type s: str
     :rtype: int
@@ -13,6 +13,6 @@ c_ Solution(object):
         __ s[i] __ s[j]:
           dp[i] = 2 + pre __ i + 1 <= j - 1 ____ 2
         ____:
-          dp[i] = max(dp[i + 1], dp[i])
+          dp[i] = m..(dp[i + 1], dp[i])
         pre = tmp
     r.. dp[0]

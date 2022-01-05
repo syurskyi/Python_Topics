@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ lexicalOrder(self, n):
+  ___ lexicalOrder  n):
     """
     :type n: int
     :rtype: List[int]
@@ -9,7 +9,7 @@ c_ Solution(object):
     dfs(ans, n, 0)
     r.. ans
 
-  ___ dfs(self, ans, n, pre):
+  ___ dfs  ans, n, pre):
     __ cnt __ n o. pre > n:
       r..
     __ pre * 10 > n:

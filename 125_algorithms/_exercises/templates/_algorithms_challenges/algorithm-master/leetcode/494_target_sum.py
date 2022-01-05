@@ -14,7 +14,7 @@ sum(P) - sum(N) = target
 
 
 c_ Solution:
-    ___ findTargetSumWays(self, A, target):
+    ___ findTargetSumWays  A, target):
         """
         :type A: List[int]
         :type target: int
@@ -29,7 +29,7 @@ c_ Solution:
 
         r.. subset_sum(A, (_sum + target) // 2)
 
-    ___ subset_sum(self, A, target):
+    ___ subset_sum  A, target):
         """
         `dp[i]` means the number of ways
         to make sum `i` using non-repeated children in `A`

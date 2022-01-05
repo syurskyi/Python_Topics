@@ -6,7 +6,7 @@ c_ Node(object):
     val = val
     neighbors    # list
 
-  ___ connect(self, node):
+  ___ connect  node):
     neighbors.a..(node)
 
   ___ getNbrs
@@ -14,7 +14,7 @@ c_ Node(object):
 
 
 c_ Solution(object):
-  ___ alienOrder(self, words):
+  ___ alienOrder  words):
     """
     :type words: List[str]
     :rtype: str

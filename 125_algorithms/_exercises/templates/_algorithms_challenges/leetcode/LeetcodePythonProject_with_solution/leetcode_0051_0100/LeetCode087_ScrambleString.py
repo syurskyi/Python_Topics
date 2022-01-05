@@ -4,7 +4,7 @@ Created on May 31, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ isScramble(self, s1, s2):
+    ___ isScramble  s1, s2):
         """
         :type s1: str
         :type s2: str

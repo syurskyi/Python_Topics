@@ -4,7 +4,7 @@ c_ Solution:
     @param: B: A string
     @return: The length of longest common subsequence of A and B
     """
-    ___ longestCommonSubsequence(self, A, B):
+    ___ longestCommonSubsequence  A, B):
         """
         remove the single line comment to print paths
         """
@@ -33,7 +33,7 @@ c_ Solution:
                 case 2: `B[j]` is not one of pairs
                 case 3: `A[i]` and `B[j]` is just a pair
                 """
-                dp[curr][j] = max(dp[prev][j], dp[curr][j - 1])
+                dp[curr][j] = m..(dp[prev][j], dp[curr][j - 1])
 
                 # if dp[curr][j] == dp[prev][j]:
                 #     pi[i][j] = 1
@@ -41,7 +41,7 @@ c_ Solution:
                 #     pi[i][j] = 2
 
                 __ A[i - 1] __ B[j - 1]:
-                    dp[curr][j] = max(dp[curr][j], dp[prev][j - 1] + 1)
+                    dp[curr][j] = m..(dp[curr][j], dp[prev][j - 1] + 1)
 
                     # if dp[curr][j] == dp[prev][j - 1] + 1:
                     #     pi[i][j] = 3

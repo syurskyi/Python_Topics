@@ -5,7 +5,7 @@
 #         self.y = b
 
 c_ Solution(object):
-  ___ maxPoints(self, points):
+  ___ maxPoints  points):
     """
     :type points: List[Point]
     :rtype: int
@@ -34,6 +34,6 @@ c_ Solution(object):
           d[(ku, kd, x1, y1)] = d.get((ku, kd, x1, y1), 0) + 1
         ____:
           overlap += 1
-          ans = max(ans, overlap)
-        ans = max(ans, d.get((ku, kd, x1, y1), 0) + overlap)
+          ans = m..(ans, overlap)
+        ans = m..(ans, d.get((ku, kd, x1, y1), 0) + overlap)
     r.. m..(ans, l..(points))

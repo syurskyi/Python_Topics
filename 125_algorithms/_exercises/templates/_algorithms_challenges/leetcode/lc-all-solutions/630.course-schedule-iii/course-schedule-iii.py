@@ -11,7 +11,7 @@
 # moreover, we have more available time for taking more courses
 
 c_ Solution(object):
-  ___ scheduleCourse(self, courses):
+  ___ scheduleCourse  courses):
     """
     :type courses: List[List[int]]
     :rtype: int

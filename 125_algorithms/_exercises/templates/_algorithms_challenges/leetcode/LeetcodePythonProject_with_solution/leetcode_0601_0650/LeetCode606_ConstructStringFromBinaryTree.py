@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ tree2str(self, t):
+    ___ tree2str  t):
         """
         :type t: TreeNode
         :rtype: str

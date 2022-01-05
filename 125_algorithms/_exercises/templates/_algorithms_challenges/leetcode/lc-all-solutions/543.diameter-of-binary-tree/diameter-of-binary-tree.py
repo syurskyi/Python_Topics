@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ diameterOfBinaryTree(self, root):
+  ___ diameterOfBinaryTree  root):
     """
     :type root: TreeNode
     :rtype: int
@@ -18,8 +18,8 @@ c_ Solution(object):
         r.. 0
       left = dfs(root.left)
       right = dfs(root.right)
-      ans = max(ans, left + right)
-      r.. max(left, right) + 1
+      ans = m..(ans, left + right)
+      r.. m..(left, right) + 1
 
     dfs(root)
     r.. ans

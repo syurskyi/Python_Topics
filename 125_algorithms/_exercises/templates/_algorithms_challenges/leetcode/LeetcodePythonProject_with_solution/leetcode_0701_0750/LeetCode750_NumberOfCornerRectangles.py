@@ -4,7 +4,7 @@ Created on Mar 25, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ countCornerRectangles(self, grid):
+    ___ countCornerRectangles  grid):
         """
         :type grid: List[List[int]]
         :rtype: int

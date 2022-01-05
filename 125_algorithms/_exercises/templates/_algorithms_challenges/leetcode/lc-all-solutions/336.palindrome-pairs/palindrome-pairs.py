@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ palindromePairs(self, words):
+  ___ palindromePairs  words):
     """
     :type words: List[str]
     :rtype: List[List[int]]

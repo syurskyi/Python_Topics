@@ -6,16 +6,16 @@ c_ Point(object):
     ___ __repr__
         r.. 'Point({}:{})'.f..(x, y)
 
-    ___ __add__(self, other):
+    ___ __add__  other):
         r.. Point(x + other.x, y + other.y)
 
-    ___ __sub__(self, other):
+    ___ __sub__  other):
         r.. Point(x - other.x, y - other.y)
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. x __ other.x a.. y __ other.y
 
-    ___ __ne__(self, other):
+    ___ __ne__  other):
         r.. n..(self __ other)
 
 
@@ -23,5 +23,5 @@ c_ WordSearch(object):
     ___ - , puzzle):
         p..
 
-    ___ s..(self, word):
+    ___ s..  word):
         r.. N..

@@ -5,7 +5,7 @@ Created on Mar 5, 2017
 '''
 
 c_ Codec(object):
-    ___ encode(self, strs):
+    ___ encode  strs):
         """Encodes a list of strings to a single string.
         
         :type strs: List[str]
@@ -13,7 +13,7 @@ c_ Codec(object):
         """
         r.. ''.j..('%d:%s' % (l..(s), s) ___ s __ strs)
     
-    ___ decode(self, s):
+    ___ decode  s):
         """Decodes a single string to a list of strings.
         
         :type s: str
@@ -36,7 +36,7 @@ c_ Codec(object):
             i += 1
         r.. arr
     
-    ___ decode_orig(self, s):
+    ___ decode_orig  s):
         result    # list
         i = 0
         w.... i < l..(s):

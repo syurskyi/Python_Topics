@@ -9,7 +9,7 @@ c_ Solution:
     """
     Dynamic Programming
     """
-    ___ combinationSum4(self, nums, target):
+    ___ combinationSum4  nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -37,7 +37,7 @@ c_ Solution:
     Dynamic Programming /
     DFS
     """
-    ___ combinationSum4(self, nums, target):
+    ___ combinationSum4  nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -51,7 +51,7 @@ c_ Solution:
         memo_search(nums, target, dp)
         r.. dp[target]
 
-    ___ memo_search(self, nums, remain, dp):
+    ___ memo_search  nums, remain, dp):
         __ dp[remain] > -1:
             r.. dp[remain]
 
@@ -71,7 +71,7 @@ c_ Solution:
     """
     DFS: TLE
     """
-    ___ combinationSum4(self, nums, target):
+    ___ combinationSum4  nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -86,7 +86,7 @@ c_ Solution:
 
         r.. l..(ans)
 
-    ___ dfs(self, nums, remain, ans, path):
+    ___ dfs  nums, remain, ans, path):
         __ remain __ 0:
             ans.a..(path[::-1])
             r..
@@ -109,7 +109,7 @@ c_ Solution:
 
     This approach is to find the unique combination
     """
-    ___ combinationSum4(self, nums, target):
+    ___ combinationSum4  nums, target):
         """
         :type nums: List[int]
         :type target: int

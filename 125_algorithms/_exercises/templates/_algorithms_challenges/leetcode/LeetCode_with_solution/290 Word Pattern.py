@@ -16,7 +16,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ wordPattern(self, pattern, s):
+    ___ wordPattern  pattern, s):
         lst = s.s..(" ")
         __ l..(pattern) != l..(lst):
             r.. F..
@@ -42,16 +42,16 @@ c_ OneToOneMap(object):
     ___ - ):
         m    # dict  # keep a single map
 
-    ___ set(self, a, b):
+    ___ set  a, b):
         m[a] = b
         m[b] = a
 
-    ___ get(self, a):
+    ___ get  a):
         r.. m.get(a)
 
 
 c_ SolutionError(object):
-    ___ wordPattern(self, pattern, s..):
+    ___ wordPattern  pattern, s..):
         """
         May not always work due to OneToOneMap implementation in the case that a word is 1-letter.
 

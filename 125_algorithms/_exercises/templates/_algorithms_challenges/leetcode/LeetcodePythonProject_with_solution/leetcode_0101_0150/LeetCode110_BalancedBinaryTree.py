@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ isBalanced(self, root):
+    ___ isBalanced  root):
         """
         :type root: TreeNode
         :rtype: bool
@@ -25,12 +25,12 @@ c_ Solution(object):
             r.. abs(getHeight(root.left)-getHeight(root.right)) <= 1 a..\
                 isBalanced(root.left) a.. isBalanced(root.right)
     
-    ___ getHeight(self, root):
+    ___ getHeight  root):
         __ n.. root:
             r.. 0
         leftHeight = getHeight(root.left)
         rightHeight = getHeight(root.right)
-        r.. max(leftHeight, rightHeight) + 1
+        r.. m..(leftHeight, rightHeight) + 1
     
     ___ test
         p..

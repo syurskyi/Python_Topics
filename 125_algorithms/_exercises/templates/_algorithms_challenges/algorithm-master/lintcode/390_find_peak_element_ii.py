@@ -33,7 +33,7 @@ c_ Solution:
     ...
     step-1/ find a square and check the vertices
     """
-    ___ findPeakII(self, A):
+    ___ findPeakII  A):
         __ n.. A:
             r.. NULL_POS
 
@@ -67,7 +67,7 @@ c_ Solution:
         r.. NULL_POS
 
     # given col index, return the row index of the max value on that col
-    ___ findColMax(self, A, col, up, down):
+    ___ findColMax  A, col, up, down):
         row = 0
         ___ r __ r..(up, down + 1):
             __ A[row][col] < A[r][col]:
@@ -75,14 +75,14 @@ c_ Solution:
         r.. row
 
     # given row index, return the col index of the max value on that row
-    ___ findRowMax(self, A, row, left, right):
+    ___ findRowMax  A, row, left, right):
         col = 0
         ___ c __ r..(left, right + 1):
             __ A[row][col] < A[row][c]:
                 col = c
         r.. col
 
-    ___ isPeak(self, A, row, col):
+    ___ isPeak  A, row, col):
         _r = _c = 0
         ___ i __ r..(4):
             _r = row + dx[i]

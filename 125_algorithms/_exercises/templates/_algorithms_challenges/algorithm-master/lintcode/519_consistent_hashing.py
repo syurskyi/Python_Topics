@@ -3,7 +3,7 @@ c_ Solution:
     @param: n: a positive integer
     @return: n x 3 matrix
     """
-    ___ consistentHashing(self, n):
+    ___ consistentHashing  n):
         res = [[0, 359, 1]]
         __ n.. isi..(n, i..) \
             o. n < 2:

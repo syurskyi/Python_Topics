@@ -5,7 +5,7 @@ Created on Mar 15, 2017
 '''
 
 c_ Solution(object):
-    ___ nthSuperUglyNumber(self, n, primes):
+    ___ nthSuperUglyNumber  n, primes):
         times = [0]*l..(primes)
         res = [1]
         ___ _ __ r..(n-1):

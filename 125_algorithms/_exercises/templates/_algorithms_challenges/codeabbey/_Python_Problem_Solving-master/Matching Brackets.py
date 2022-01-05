@@ -19,11 +19,11 @@ ___ i __ r..(i..(input())):
     ___ j __ r..(l..(store_str)):
         ___ k __ r..(0, l..(store_str)):
             #try and except are used because if a particular key is not present in dictionary p, it can throw error
-            try:
+            ___
                 __ p[store_str[k]] __ s..(store_str[k+1]):
                     store_str.pop(k)
                     store_str.pop(k)
-            except:
+            ______:
                 p..
         __ l..(store_str) __ 1:
             print('0',end=' ')
@@ -42,13 +42,13 @@ ___ i __ r..(i..(input())):
     # and the result is 0
     __ checker __ T..:
         w.... l..(store_str) != 1:
-            try:
+            ___
                 __ p[store_str[0]] __ store_str[-1]:
                     store_str.pop(0)
                     store_str.pop(-1)
                 ____:
                     break
-            except:
+            ______:
                 break
         __ l..(store_str) __ 0:
             print('1',end=' ')

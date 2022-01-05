@@ -44,7 +44,7 @@ E = 1
 
 
 c_ Solution:
-    ___ employeeFreeTime(self, schedule: List[List[List[i..]]]) __ List[List[i..]]:
+    ___ employeeFreeTime  schedule: List[List[List[i..]]]) __ List[List[i..]]:
         """
         Method 1
         Looking at the head of each list through iterator
@@ -79,7 +79,7 @@ c_ Solution:
             __ cur_max_end < itv[S]:
                 ret.a..([cur_max_end, itv[S]])
 
-            cur_max_end = max(cur_max_end, itv[E])
+            cur_max_end = m..(cur_max_end, itv[E])
 
             # next
             j += 1
@@ -89,7 +89,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ employeeFreeTime(self, schedule: List[List[List[i..]]]) __ List[List[i..]]:
+    ___ employeeFreeTime  schedule: List[List[List[i..]]]) __ List[List[i..]]:
         """
         Method 2
         """
@@ -116,7 +116,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ employeeFreeTime_error(self, schedule: List[List[List[i..]]]) __ List[List[i..]]:
+    ___ employeeFreeTime_error  schedule: List[List[List[i..]]]) __ List[List[i..]]:
         """
         Cannot store iterator in the heap to compare
         use index instead
@@ -138,7 +138,7 @@ c_ Solution:
             _, itv, emp_iter = heapq.heappop(q)
             __ cur_max_end < itv[S]:
                 ret.a..([cur_max_end, itv[S]])
-            cur_max_end = max(cur_max_end, itv[E])
+            cur_max_end = m..(cur_max_end, itv[E])
             itv = next(emp_iter, N..)
             __ itv:
                 heapq.heappush(q, (itv[S], itv, emp_iter))

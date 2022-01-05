@@ -8,7 +8,7 @@ c_ FreqStack(object):
         heap    # list
         size = 0
 
-    ___ push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: None
@@ -44,7 +44,7 @@ c_ FreqStack_self(object):
         tail = N..
         idx = 0
 
-    ___ push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: None

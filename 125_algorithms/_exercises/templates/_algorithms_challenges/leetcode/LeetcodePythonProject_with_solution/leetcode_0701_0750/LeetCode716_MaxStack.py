@@ -14,7 +14,7 @@ c_ MaxStack(object):
         stack    # list
         heap    # list
 
-    ___ push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: void

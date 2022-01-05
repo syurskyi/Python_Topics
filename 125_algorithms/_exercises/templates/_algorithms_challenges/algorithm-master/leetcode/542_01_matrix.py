@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ updateMatrix(self, matrix):
+    ___ updateMatrix  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[List[int]]

@@ -14,4 +14,4 @@ ___ slices(series, length):
 ___ largest_product(series, length):
     __ length __ 0:
         r.. 1
-    r.. max(reduce(mul, slc) ___ slc __ slices(series, length))
+    r.. m..(reduce(mul, slc) ___ slc __ slices(series, length))

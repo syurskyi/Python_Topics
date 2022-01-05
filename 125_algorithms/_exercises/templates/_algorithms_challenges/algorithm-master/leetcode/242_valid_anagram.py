@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isAnagram(self, s, t):
+    ___ isAnagram  s, t):
         """
         :type s: str
         :type t: str

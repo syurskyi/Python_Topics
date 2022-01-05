@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ combinationSum2(self, candidates, target):
+  ___ combinationSum2  candidates, target):
     """
     :type candidates: List[int]
     :type target: int

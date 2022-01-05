@@ -5,7 +5,7 @@ c_ Solution:
     @param P: the bad computers
     @return: The answer
     """
-    ___ maintenance(self, m, n, P):
+    ___ maintenance  m, n, P):
         __ n.. m o. n.. n o. n.. P:
             r.. 0
 
@@ -21,8 +21,8 @@ c_ Solution:
             ___ j __ r..(n):
                 __ G[i][j] __ 0:
                     _____
-                left = max(left, n - 1 - j)
-                right = max(right, j)
+                left = m..(left, n - 1 - j)
+                right = m..(right, j)
 
             __ i __ 0:
                 __ right __ -1:

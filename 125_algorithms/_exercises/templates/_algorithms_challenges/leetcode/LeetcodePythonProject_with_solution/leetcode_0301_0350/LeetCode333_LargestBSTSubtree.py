@@ -11,19 +11,19 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ largestBSTSubtree(self, root):
+    ___ largestBSTSubtree  root):
         r.. helper(root)[-1]
     
     #isBST, lower, upper, count
-    ___ helper(self, root):
+    ___ helper  root):
         __ n.. root:
             r.. T.., float('inf'), float('-inf'), 0
         leftBST, leftLower, leftUpper, leftCount = helper(root.left)
         rightBST, rightLower, rightUpper, rightCount = helper(root.right)
         lower = m..(leftLower, root.val)
-        upper = max(rightUpper, root.val)
+        upper = m..(rightUpper, root.val)
         __ leftBST a.. rightBST a.. leftUpper < root.val < rightLower:
             r.. T.., lower, upper, 1+leftCount+rightCount
         ____:
-            r.. F.., lower, upper, max(leftCount, rightCount)
+            r.. F.., lower, upper, m..(leftCount, rightCount)
     

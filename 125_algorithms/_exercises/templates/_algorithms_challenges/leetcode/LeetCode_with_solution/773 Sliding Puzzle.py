@@ -61,7 +61,7 @@ dirs = (
 
 
 c_ Solution:
-    ___ slidingPuzzle(self, board: List[List[i..]]) __ i..:
+    ___ slidingPuzzle  board: List[List[i..]]) __ i..:
         """
         BFS + visited
 
@@ -99,14 +99,14 @@ c_ Solution:
                         heapq.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B))
         r.. -1
 
-    ___ zero_pos(self, board):
+    ___ zero_pos  board):
         ___ i, row __ e..(board):
             ___ j, v __ e..(row):
                 __ v __ 0:
                     r.. i, j
         r..
 
-    ___ heuristic_dist(self, board):
+    ___ heuristic_dist  board):
         """
         manhattan distance
         """
@@ -118,7 +118,7 @@ c_ Solution:
                     ret += abs(i - I) + abs(j - J)
         r.. ret
 
-    ___ ser(self, board):
+    ___ ser  board):
         r.. t..(
             t..(row)
             ___ row __ board

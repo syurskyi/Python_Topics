@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 c_ Solution(object):
-    ___ solveNQueens(self, n):
+    ___ solveNQueens  n):
         """
         :type n: int
         :rtype: List[List[str]]
@@ -16,7 +16,7 @@ c_ Solution(object):
         res = convert(res)
         r.. res
     
-    ___ helper(self, n, res, cur, ind):
+    ___ helper  n, res, cur, ind):
         __ ind __ n:
             res.a..(l..(cur))
             r..
@@ -26,7 +26,7 @@ c_ Solution(object):
                 helper(n, res, cur, ind+1)
                 cur.pop()
     
-    ___ convert(self, nums):
+    ___ convert  nums):
         __ n.. nums: r.. []
         res    # list
         ___ row __ nums:
@@ -37,7 +37,7 @@ c_ Solution(object):
             res.a..(curr)
         r.. res
     
-    ___ isValid(self, cur, ind, val):
+    ___ isValid  cur, ind, val):
         ___ i __ r..(ind):
             __ cur[i] __ val:
                 r.. F..

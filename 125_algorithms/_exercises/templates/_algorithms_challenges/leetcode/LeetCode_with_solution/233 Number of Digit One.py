@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ countDigitOne(self, n):
+    ___ countDigitOne  n):
         """
         Count the 1 occurrences at the digit i, due to:
         1. the digits higher than the currently counting digits

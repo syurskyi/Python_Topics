@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ isSubtree(self, s, t):
+  ___ isSubtree  s, t):
     """
     :type s: TreeNode
     :type t: TreeNode

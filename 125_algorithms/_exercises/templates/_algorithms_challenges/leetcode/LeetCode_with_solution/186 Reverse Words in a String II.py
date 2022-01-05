@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ reverseWords(self, s):
+    ___ reverseWords  s):
         """
         in-place without allocating extra space
 
@@ -22,7 +22,7 @@ c_ Solution(object):
             reverse(s, i, j)
             i = j+1
 
-    ___ reverse(self, s, start, end):
+    ___ reverse  s, start, end):
         i = start
         j = end
         w.... i < j-1:

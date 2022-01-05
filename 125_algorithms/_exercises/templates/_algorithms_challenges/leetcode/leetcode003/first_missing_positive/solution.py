@@ -11,7 +11,7 @@ Your algorithm should run in O(n) time and uses constant space.
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ firstMissingPositive(self, A):
+    ___ firstMissingPositive  A):
         n = l..(A)
         i = 0
         w.... i < n:

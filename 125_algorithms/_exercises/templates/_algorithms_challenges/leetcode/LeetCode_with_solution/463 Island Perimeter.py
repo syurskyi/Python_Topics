@@ -14,7 +14,7 @@ rectangular, width and height don't exceed 100. Determine the perimeter of the i
 c_ Solution:
     dirs = [(0, -1), (-1, 0), (0, 1), (1, 0)]
 
-    ___ islandPerimeter(self, grid):
+    ___ islandPerimeter  grid):
         """
         There is constraint that one concrete island
 

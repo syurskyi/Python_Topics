@@ -34,5 +34,5 @@ ___ get_movie_longest_runtime
     tree = get_tree()
     movies = [(movie.attrib['title'], _get_runtime(movie))
               ___ movie __ tree.i..(tag='movie')]
-    max_movie, max_runtime = max(movies, key=l.... m: m[1])
+    max_movie, max_runtime = m..(movies, key=l.... m: m[1])
     r.. max_movie

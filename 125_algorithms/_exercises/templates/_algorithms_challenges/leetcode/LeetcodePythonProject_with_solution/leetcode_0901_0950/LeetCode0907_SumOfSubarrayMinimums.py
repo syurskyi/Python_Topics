@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ sumSubarrayMins(self, A):
+    ___ sumSubarrayMins  A):
         """
         :type A: List[int]
         :rtype: int

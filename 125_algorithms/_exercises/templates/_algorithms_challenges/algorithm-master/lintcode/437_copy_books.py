@@ -7,7 +7,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer
     """
-    ___ copyBooks(self, P, k):
+    ___ copyBooks  P, k):
         __ n.. P o. n.. k:
             r.. 0
         n = l..(P)
@@ -66,7 +66,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer
     """
-    ___ copyBooks(self, P, k):
+    ___ copyBooks  P, k):
         __ n.. P o. n.. k:
             r.. 0
         n = l..(P)
@@ -143,7 +143,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer
     """
-    ___ copyBooks(self, P, k):
+    ___ copyBooks  P, k):
         __ n.. P o. n.. k:
             r.. 0
         n = l..(P)
@@ -172,7 +172,7 @@ c_ Solution:
         """
         r.. left __ check_if_possible(P, left, k) ____ right
 
-    ___ check_if_possible(self, P, spent_time, max_copiers):
+    ___ check_if_possible  P, spent_time, max_copiers):
         """
         check if possible to copy all `pages` in `spent_time`
         and participation is not more than `max_copiers`

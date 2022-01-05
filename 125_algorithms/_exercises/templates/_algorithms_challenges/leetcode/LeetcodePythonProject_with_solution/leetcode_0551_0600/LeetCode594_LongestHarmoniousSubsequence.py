@@ -4,7 +4,7 @@ Created on Sep 5, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findLHS(self, nums):
+    ___ findLHS  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(object):
         maxLen = 0
         ___ num, count __ hashmap.i..:
             __ num+1 __ hashmap:
-                maxLen = max(maxLen, count+hashmap[num+1])
+                maxLen = m..(maxLen, count+hashmap[num+1])
         r.. maxLen
     
     ___ test

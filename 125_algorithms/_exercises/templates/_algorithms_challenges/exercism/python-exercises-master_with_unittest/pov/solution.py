@@ -9,13 +9,13 @@ c_ Tree(object):
     ___ __dict__
         r.. {label: [c.__dict__() ___ c __ s..(children)]}
 
-    ___ __str__(self, indent_ N..
+    ___ __str__  indent_ N..
         r.. dumps(__dict__(), indent=indent)
 
-    ___ __lt__(self, other):
+    ___ __lt__  other):
         r.. label < other.label
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. __dict__() __ other.__dict__()
 
     ___ __iter__
@@ -27,12 +27,12 @@ c_ Tree(object):
     ___ dup
         r.. Tree(label, [c.dup() ___ c __ children])
 
-    ___ add(self, other):
+    ___ add  other):
         tree = dup()
         tree.children.a..(other)
         r.. tree
 
-    ___ remove(self, node):
+    ___ remove  node):
         tree = dup()
         ___ child __ l..(tree.children):
             tree.children.remove(child)
@@ -41,7 +41,7 @@ c_ Tree(object):
             tree.children.a..(child.remove(node))
         r.. tree
 
-    ___ from_pov(self, from_node):
+    ___ from_pov  from_node):
         stack = [self]
         visited = set()
         w.... stack:
@@ -55,14 +55,14 @@ c_ Tree(object):
                 stack.a..(child.add(tree.remove(child.label)))
         r.. ValueError("Tree could not be reoriented")
 
-    ___ path_to(self, from_node, to_node):
+    ___ path_to  from_node, to_node):
         reordered = from_pov(from_node)
         stack = reordered.children
         path = [from_node]
         w.... path[-1] != to_node:
-            try:
+            ___
                 tree = stack.pop()
-            except IndexError:
+            ______ IndexError:
                 r.. ValueError("No path found")
             __ to_node __ tree:
                 path.a..(tree.label)

@@ -18,7 +18,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ maxKilledEnemies(self, grid):
+    ___ maxKilledEnemies  grid):
         """
         Brute force: O(n * n^2)
         Place the bomb around boundary
@@ -53,7 +53,7 @@ c_ Solution(object):
                             break
 
                 __ grid[i][j] __ '0':
-                    gmax = max(gmax, rows[i] + cols[j])
+                    gmax = m..(gmax, rows[i] + cols[j])
 
         r.. gmax
 

@@ -8,7 +8,7 @@ c_ Trie:
     ___ - ):
         trie = TrieNode()
 
-    ___ insert(self, word):
+    ___ insert  word):
         """
         Inserts a word into the trie.
         :type word: str
@@ -24,7 +24,7 @@ c_ Trie:
             node = node.children[char]
         node.end_at = word
 
-    ___ s..(self, word):
+    ___ s..  word):
         """
         Returns if the word is in the trie.
         :type word: str
@@ -40,7 +40,7 @@ c_ Trie:
             node = node.children[char]
         r.. node.end_at __ word
 
-    ___ startsWith(self, prefix):
+    ___ startsWith  prefix):
         """
         Returns if there is any word in the trie that starts with the given prefix.
         :type prefix: str

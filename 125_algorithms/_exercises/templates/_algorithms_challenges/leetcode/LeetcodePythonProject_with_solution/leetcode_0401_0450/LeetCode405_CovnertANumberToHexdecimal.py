@@ -5,7 +5,7 @@ Created on Apr 10, 2017
 '''
 
 c_ Solution(object):
-    ___ toHex(self, num):
+    ___ toHex  num):
         __ num __ 0: r.. '0'
         mp = '0123456789abcdef'
         result = ''

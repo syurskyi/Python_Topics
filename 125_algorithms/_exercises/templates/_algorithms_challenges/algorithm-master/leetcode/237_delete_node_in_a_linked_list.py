@@ -6,7 +6,7 @@
 
 
 c_ Solution(object):
-    ___ deleteNode(self, node):
+    ___ deleteNode  node):
         """
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.

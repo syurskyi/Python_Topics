@@ -1,6 +1,6 @@
 c_ Solution(object):
   # while loop
-  ___ smallestFactorization(self, a):
+  ___ smallestFactorization  a):
     """
     :type a: int
     :rtype: int
@@ -22,7 +22,7 @@ c_ Solution(object):
     r.. ans __ ans <= 0x7fffffff ____ 0
 
   # normal DFS
-  ___ smallestFactorization(self, a):
+  ___ smallestFactorization  a):
     """
     :type a: int
     :rtype: int

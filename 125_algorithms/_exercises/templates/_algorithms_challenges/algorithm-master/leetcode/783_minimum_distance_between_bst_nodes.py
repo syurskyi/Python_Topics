@@ -17,7 +17,7 @@ c_ Solution:
     ans = float('inf')
     pre = N..
 
-    ___ minDiffInBST(self, root):
+    ___ minDiffInBST  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -42,7 +42,7 @@ c_ Solution:
     time: O(n)
     space: O(n)
     """
-    ___ minDiffInBST(self, root):
+    ___ minDiffInBST  root):
         """
         :type root: TreeNode
         :rtype: int

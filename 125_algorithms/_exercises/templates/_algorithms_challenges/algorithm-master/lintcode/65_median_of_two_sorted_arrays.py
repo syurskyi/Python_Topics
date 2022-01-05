@@ -5,7 +5,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ findMedianSortedArrays(self, a, b):
+    ___ findMedianSortedArrays  a, b):
         """
         :type a: list
         :type b: list
@@ -48,7 +48,7 @@ c_ Solution:
     @param: B: An integer array
     @return: a double whose format is *.5 or *.0
     """
-    ___ findMedianSortedArrays(self, A, B):
+    ___ findMedianSortedArrays  A, B):
         n = l..(A) + l..(B)
 
         median = find_kth(A, 0, B, 0, n // 2 + 1)
@@ -58,7 +58,7 @@ c_ Solution:
         _median = find_kth(A, 0, B, 0, n // 2)
         r.. (median + _median) / 2.0
 
-    ___ find_kth(self, A, i, B, j, k):
+    ___ find_kth  A, i, B, j, k):
         """
         example: A: [1, 2, 3, 4, 5, 6]
                  B: [2, 3, 4, 5]

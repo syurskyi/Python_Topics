@@ -5,7 +5,7 @@ Created on Feb 13, 2017
 '''
 
 c_ Solution(object):
-    ___ convertToTitle(self, n):
+    ___ convertToTitle  n):
         """
         :type n: int
         :rtype: str
@@ -13,7 +13,7 @@ c_ Solution(object):
         res = ''
         w.... n > 0:
             mod = (n-1)%26
-            res = chr(mod+ord('A'))+res
+            res = chr(mod+o..('A'))+res
             n = i..((n-mod)/26)
         r.. res
     

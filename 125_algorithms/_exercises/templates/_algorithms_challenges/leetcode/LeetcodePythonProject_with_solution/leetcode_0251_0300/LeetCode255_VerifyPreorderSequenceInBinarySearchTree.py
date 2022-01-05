@@ -5,7 +5,7 @@ Created on Mar 1, 2017
 '''
 
 c_ Solution(object):
-    ___ verifyPreorder(self, preorder):
+    ___ verifyPreorder  preorder):
         """
         :type preorder: List[int]
         :rtype: bool
@@ -22,7 +22,7 @@ c_ Solution(object):
             preorder[i] = p
         r.. T..
     
-    ___ verifyPreorderStack(self, preorder):
+    ___ verifyPreorderStack  preorder):
         """
         :type preorder: List[int]
         :rtype: bool

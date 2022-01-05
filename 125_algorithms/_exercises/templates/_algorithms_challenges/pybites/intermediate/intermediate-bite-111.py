@@ -32,9 +32,9 @@ ___ get_ip_country(ip_address):
     response = requests.get(IPINFO_URL.f..(ip=ip_address))
     # Returns json-encoded value of the response object, throws ValueError if the response body does not contain a valid json
     # So dzejson is a dict
-    try:
+    ___
         dzejson = response.json()
-    except ValueError:
+    ______ V..
         print("Response did not contain a valid JSON")
 
     r..(dzejson['country'])

@@ -4,7 +4,7 @@ Greedy
 https://leetcode.com/articles/jump-game/
 """
 c_ Solution:
-    ___ canJump(self, A):
+    ___ canJump  A):
         """
         :type A: List[int]
         :rtype: bool
@@ -25,7 +25,7 @@ c_ Solution:
 DP
 """
 c_ Solution:
-    ___ canJump(self, A):
+    ___ canJump  A):
         """
         :type A: List[int]
         :rtype: bool

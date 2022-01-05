@@ -5,7 +5,7 @@ Created on Feb 8, 2017
 '''
 
 c_ Solution(object):
-    ___ canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit  gas, cost):
         """
         :type gas: List[int]
         :type cost: List[int]

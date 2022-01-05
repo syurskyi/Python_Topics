@@ -39,17 +39,17 @@ ___ get_person_age(name):
 
     n = s..(name).l..
     print(n)
-    try:
+    ___
         r.. group3[n]
-    except:
+    ______:
         print("trying group2...")
-    try:
+    ___
         r.. group2[n]
-    except:
+    ______:
         print("trying group1...")
-    try:
+    ___
         r.. group1[n]
-    except:
+    ______:
         r.. NOT_FOUND
 
 print(get_person_age("bob"))

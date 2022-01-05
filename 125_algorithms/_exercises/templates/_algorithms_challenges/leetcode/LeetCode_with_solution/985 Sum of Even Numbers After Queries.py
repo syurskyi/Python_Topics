@@ -35,7 +35,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ sumEvenAfterQueries(self, A: List[i..], queries: List[List[i..]]) __ List[i..]:
+    ___ sumEvenAfterQueries  A: List[i..], queries: List[List[i..]]) __ List[i..]:
         """
         maintain a sum
         """

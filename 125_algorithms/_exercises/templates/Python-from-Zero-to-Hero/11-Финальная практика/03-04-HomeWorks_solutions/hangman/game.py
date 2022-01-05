@@ -35,7 +35,7 @@ c_ Game:
 
         r.. word
 
-    ___ guess_letter(self, letter: s..):
+    ___ guess_letter  letter: s..):
         """
 
         :type letter: str

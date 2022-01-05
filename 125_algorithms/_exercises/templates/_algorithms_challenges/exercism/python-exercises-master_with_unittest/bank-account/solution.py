@@ -17,14 +17,14 @@ c_ BankAccount(object):
     ___ open
         is_open = T..
 
-    ___ deposit(self, amount):
+    ___ deposit  amount):
         w__ lock:
             __ is_open a.. amount > 0:
                 balance += amount
             ____:
                 r.. ValueError
 
-    ___ withdraw(self, amount):
+    ___ withdraw  amount):
         w__ lock:
             __ is_open a.. 0 < amount <= balance:
                 balance -= amount

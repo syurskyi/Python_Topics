@@ -4,7 +4,7 @@ Created on Jan 25, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maximalRectangle(self, matrix):
+    ___ maximalRectangle  matrix):
         """
         :type matrix: List[List[str]]
         :rtype: int
@@ -20,10 +20,10 @@ c_ Solution(object):
                 ____:
                     heights[i+1][j] = heights[i][j]+1
         ___ i __ r..(m):
-            area = max(area, getArea(heights[i+1]))
+            area = m..(area, getArea(heights[i+1]))
         r.. area
     
-    ___ getArea(self, heights):
+    ___ getArea  heights):
         area = 0
         __ n.. heights: r.. area
         stack    # list
@@ -35,7 +35,7 @@ c_ Solution(object):
             ____:
                 h = heights[stack.pop()]
                 w = i __ n.. stack ____ i-stack[-1]-1
-                area = max(area, h*w)
+                area = m..(area, h*w)
         r.. area
     
     ___ test

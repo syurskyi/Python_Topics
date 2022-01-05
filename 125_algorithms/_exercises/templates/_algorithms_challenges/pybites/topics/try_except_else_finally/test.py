@@ -1,11 +1,11 @@
 
-try:
+___
     f = open('conversion.py')
     print("file open")
     bad = aaa
-except FileNotFoundError:
+______ FileNotFoundError:
     print("file not exist")
-except Exception __ e:
+______ Exception __ e:
     print(e)
 ____:
     print(f.read())

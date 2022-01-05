@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution(object):
-  ___ findLongestWord(self, s, d):
+  ___ findLongestWord  s, d):
     """
     :type s: str
     :type d: List[str]

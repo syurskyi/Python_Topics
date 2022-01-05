@@ -5,7 +5,7 @@ Created on Apr 12, 2017
 '''
 
 c_ Solution(object):
-    ___ countBattleships(self, board):
+    ___ countBattleships  board):
         """
         :type board: List[List[str]]
         :rtype: int

@@ -5,26 +5,26 @@ c_ CustomSet(object):
     ___ isempty
         p..
 
-    ___ __contains__(self, element):
+    ___ __contains__  element):
         p..
 
-    ___ issubset(self, other):
+    ___ issubset  other):
         p..
 
-    ___ isdisjoint(self, other):
+    ___ isdisjoint  other):
         p..
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         p..
 
-    ___ add(self, element):
+    ___ add  element):
         p..
 
-    ___ intersection(self, other):
+    ___ intersection  other):
         p..
 
-    ___ difference(self, other):
+    ___ difference  other):
         p..
 
-    ___ union(self, other):
+    ___ union  other):
         p..

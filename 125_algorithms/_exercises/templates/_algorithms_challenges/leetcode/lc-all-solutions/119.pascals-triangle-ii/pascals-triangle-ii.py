@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ getRow(self, rowIndex):
+  ___ getRow  rowIndex):
     """
     :type rowIndex: int
     :rtype: List[int]

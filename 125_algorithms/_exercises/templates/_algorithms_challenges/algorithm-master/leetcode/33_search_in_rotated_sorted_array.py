@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ s..(self, nums, target):
+    ___ s..  nums, target):
         """
         :type nums: List[int]
         :type target: int

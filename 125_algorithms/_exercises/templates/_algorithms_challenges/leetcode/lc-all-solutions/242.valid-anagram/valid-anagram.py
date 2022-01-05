@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isAnagram(self, s, t):
+  ___ isAnagram  s, t):
     """
     :type s: str
     :type t: str
@@ -14,8 +14,8 @@ c_ Solution(object):
     p1 = 2903
     p2 = 29947
     ___ i __ r..(0, l..(s)):
-      sCount[ord(s[i]) - ord('a')] += 1
-      tCount[ord(t[i]) - ord('a')] += 1
+      sCount[o..(s[i]) - o..('a')] += 1
+      tCount[o..(t[i]) - o..('a')] += 1
 
     ___ i __ r..(0, 26):
       sHash = sHash * p1 + sCount[i]

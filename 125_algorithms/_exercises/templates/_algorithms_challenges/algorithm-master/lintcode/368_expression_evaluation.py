@@ -16,7 +16,7 @@ c_ Solution:
     @param: E: a list of strings
     @return: an integer
     """
-    ___ evaluateExpression(self, E):
+    ___ evaluateExpression  E):
         __ n.. E:
             r.. 0
 
@@ -30,7 +30,7 @@ c_ Solution:
 
         r.. eval_rpn(E)
 
-    ___ dal2rpn(self, E):
+    ___ dal2rpn  E):
         """
         `stack` to save operators and brackets temply
         `res` is the RPN of `E`, to save digits and operators
@@ -77,7 +77,7 @@ c_ Solution:
 
         r.. res
 
-    ___ eval_rpn(self, E):
+    ___ eval_rpn  E):
         stack    # list
         ___ char __ E:
             __ char.isdigit

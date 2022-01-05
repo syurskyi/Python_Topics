@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ shortestDistance(self, maze, ball, hole):
+  ___ shortestDistance  maze, ball, hole):
     """
     :type maze: List[List[int]]
     :type start: List[int]

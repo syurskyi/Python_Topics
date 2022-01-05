@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ solveEquation(self, equation):
+  ___ solveEquation  equation):
     """
     :type equation: str
     :rtype: str

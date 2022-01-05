@@ -3,7 +3,7 @@ c_ Solution:
     @param s: the given array of strings
     @return: The anagrams which have been divided into groups
     """
-    ___ groupAnagrams(self, s):
+    ___ groupAnagrams  s):
         __ n.. s:
             r.. []
 

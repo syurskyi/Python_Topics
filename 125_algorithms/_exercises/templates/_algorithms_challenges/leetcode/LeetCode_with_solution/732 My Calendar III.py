@@ -49,14 +49,14 @@ c_ MyCalendarThree:
     ___ - ):
         lst    # list
 
-    ___ book(self, start: i.., end: i..) __ i..:
+    ___ book  start: i.., end: i..) __ i..:
         bisect.insort(lst, (start, "start"))
         bisect.insort(lst, (end, "end"))
         ret = 0
         count = 0
         ___ _, flag __ lst:
             count += 1 __ flag __ "start" ____ -1
-            ret = max(ret, count)
+            ret = m..(ret, count)
 
         r.. ret
 

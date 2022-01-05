@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ sortList(self, head):
+  ___ sortList  head):
     """
     :type head: ListNode
     :rtype: ListNode

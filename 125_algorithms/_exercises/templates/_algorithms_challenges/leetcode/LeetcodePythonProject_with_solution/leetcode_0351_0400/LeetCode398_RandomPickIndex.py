@@ -13,7 +13,7 @@ c_ Solution(object):
         """
         nums = nums
 
-    ___ pick(self, target):
+    ___ pick  target):
         """
         :type target: int
         :rtype: int

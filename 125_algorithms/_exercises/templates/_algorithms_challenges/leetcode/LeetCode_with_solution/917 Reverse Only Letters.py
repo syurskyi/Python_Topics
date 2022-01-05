@@ -25,7 +25,7 @@ S doesn't contain \ or "
 
 
 c_ Solution:
-    ___ reverseOnlyLetters(self, S: s..) __ s..:
+    ___ reverseOnlyLetters  S: s..) __ s..:
         lst = l..(S)
         i = 0
         n = l..(lst)

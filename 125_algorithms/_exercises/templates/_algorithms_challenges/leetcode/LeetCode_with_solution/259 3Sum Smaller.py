@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ threeSumSmaller(self, nums, target):
+    ___ threeSumSmaller  nums, target):
         """
 
         :type nums: list[int]

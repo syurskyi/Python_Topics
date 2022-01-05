@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findMissing(self, nums):
+    ___ findMissing  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ findMissing(self, nums):
+    ___ findMissing  nums):
         """
         :type nums: List[int]
         :rtype: int

@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ rob(self, root):
+  ___ rob  root):
     """
     :type root: TreeNode
     :rtype: int
@@ -17,6 +17,6 @@ c_ Solution(object):
         r.. 0, 0
       lpre, lppre = dfs(root.left)
       rpre, rppre = dfs(root.right)
-      r.. max(root.val + lppre + rppre, lpre + rpre), lpre + rpre
+      r.. m..(root.val + lppre + rppre, lpre + rpre), lpre + rpre
 
     r.. dfs(root)[0]

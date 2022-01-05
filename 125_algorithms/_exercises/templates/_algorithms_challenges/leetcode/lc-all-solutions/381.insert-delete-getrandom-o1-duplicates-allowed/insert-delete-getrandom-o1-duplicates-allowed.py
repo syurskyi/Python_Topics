@@ -7,7 +7,7 @@ c_ RandomizedCollection(object):
     d = c...defaultdict(l..)
     a    # list
 
-  ___ insert(self, val):
+  ___ insert  val):
     """
     Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
     :type val: int
@@ -18,7 +18,7 @@ c_ RandomizedCollection(object):
     a.a..(val)
     r.. l..(d[val]) __ 1
 
-  ___ remove(self, val):
+  ___ remove  val):
     """
     Removes a value from the collection. Returns true if the collection contained the specified element.
     :type val: int

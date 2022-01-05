@@ -26,7 +26,7 @@ c_ Solution(object):
     ___ - ):
         dirs = [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)]
 
-    ___ gameOfLife(self, board):
+    ___ gameOfLife  board):
         """
         B3/S23, born 3 stays 2 or 3
 

@@ -4,7 +4,7 @@ Created on Mar 24, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ containVirus(self, grid):
+    ___ containVirus  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(object):
             _____
         r.. cost[0]
     
-    ___ check(self, grid, cost):
+    ___ check  grid, cost):
         count = 1
         maxVal = -1
         flag = F..
@@ -39,7 +39,7 @@ c_ Solution(object):
         update(grid, maxVal+2)
         r.. flag
     
-    ___ dfs(self, row, col, grid, count, walls, res):
+    ___ dfs  row, col, grid, count, walls, res):
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
         m, n = l..(grid), l..(grid[0])
@@ -57,7 +57,7 @@ c_ Solution(object):
                         res[1] += 1
                         walls[newRow][newCol] |= 1 << i
     
-    ___ update(self, grid, quarantine):
+    ___ update  grid, quarantine):
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
         m, n = l..(grid), l..(grid[0])

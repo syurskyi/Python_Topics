@@ -5,7 +5,7 @@ Created on Sep 5, 2017
 '''
 
 c_ Solution(object):
-    ___ validSquare(self, p1, p2, p3, p4):
+    ___ validSquare  p1, p2, p3, p4):
         """
         :type p1: List[int]
         :type p2: List[int]
@@ -24,7 +24,7 @@ c_ Solution(object):
         maxVal, nonMax = 0, 0
         count = 0
         ___ length __ lengths:
-            maxVal = max(maxVal, length)
+            maxVal = m..(maxVal, length)
         ___ length __ lengths:
             __ maxVal != length:
                 nonMax = length
@@ -36,5 +36,5 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ getLen(self, p1, p2):
+    ___ getLen  p1, p2):
         r.. (p1[0]-p2[0])**2+(p1[1]-p2[1])**2

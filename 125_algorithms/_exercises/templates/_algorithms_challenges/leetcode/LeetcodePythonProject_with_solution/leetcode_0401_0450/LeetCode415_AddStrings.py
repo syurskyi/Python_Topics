@@ -5,7 +5,7 @@ Created on Apr 11, 2017
 '''
 
 c_ Solution(object):
-    ___ addStrings(self, num1, num2):
+    ___ addStrings  num1, num2):
         __ l..(num2) > l..(num1):
             num1, num2 = num2, num1
         i, j = l..(num1)-1, l..(num2)-1

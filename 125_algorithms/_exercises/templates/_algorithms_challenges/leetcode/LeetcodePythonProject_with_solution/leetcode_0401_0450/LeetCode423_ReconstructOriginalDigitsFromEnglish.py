@@ -5,7 +5,7 @@ Created on Apr 13, 2017
 '''
 
 c_ Solution(object):
-    ___ originalDigits(self, s):
+    ___ originalDigits  s):
         """
         :type s: str
         :rtype: str

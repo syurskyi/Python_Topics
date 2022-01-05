@@ -18,7 +18,7 @@ c_ Solution:
     ___ - ):
         A = N..
 
-    ___ findPeakElement(self, nums):
+    ___ findPeakElement  nums):
         """
         :type nums: list[int]
         :rtype: int
@@ -41,13 +41,13 @@ c_ Solution:
 
         r.. -1
 
-    ___ _get(self, i):
+    ___ _get  i):
         __ i < 0 o. i >= l..(A):
             r.. -sys.maxint-1
         ____:
             r.. A[i]
 
-    ___ findPeakElement_complicated(self, nums):
+    ___ findPeakElement_complicated  nums):
         """
         :type nums: list[int]
         :rtype: int

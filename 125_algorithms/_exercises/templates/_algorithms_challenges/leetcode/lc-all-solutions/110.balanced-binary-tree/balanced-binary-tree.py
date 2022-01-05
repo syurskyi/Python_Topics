@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ isBalanced(self, root):
+  ___ isBalanced  root):
     """
     :type root: TreeNode
     :rtype: bool
@@ -22,7 +22,7 @@ c_ Solution(object):
         r.. -1
       __ abs(left - right) > 1:
         r.. -1
-      r.. 1 + max(left, right)
+      r.. 1 + m..(left, right)
 
     __ dfs(root) __ -1:
       r.. F..

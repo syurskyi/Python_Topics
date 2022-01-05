@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ getMoneyAmount(self, n):
+    ___ getMoneyAmount  n):
         """
         Let F[i][j] be the min cost of guessing [i, j)
         F[i][j] = min(
@@ -48,13 +48,13 @@ c_ Solution(object):
         ___ i __ xrange(n, 0, -1):
             ___ j __ xrange(i+2, N+1):
                 F[i][j] = m..(
-                    k + max(F[i][k], F[k+1][j])
+                    k + m..(F[i][k], F[k+1][j])
                     ___ k __ xrange(i, j)
                 )
 
         r.. F[1][N]
 
-    ___ getMoneyAmountError(self, n):
+    ___ getMoneyAmountError  n):
         """
         Cost for number. Guarantee a win.
         Let C[i] be the min requirement of the number of wrong guesses
@@ -72,8 +72,8 @@ c_ Solution(object):
         C = [0 ___ _ __ xrange(n+1)]
         F = [0 ___ _ __ xrange(n+1)]
         ___ i __ xrange(2, n+1):
-            C[i] = m..(1 + max(C[k-1], C[i-k]) ___ k __ xrange(1, i+1))
-            F[i] = m..(k + max(F[k-1], k*C[i-k] + F[i-k]) ___ k __ xrange(1, i+1))
+            C[i] = m..(1 + m..(C[k-1], C[i-k]) ___ k __ xrange(1, i+1))
+            F[i] = m..(k + m..(F[k-1], k*C[i-k] + F[i-k]) ___ k __ xrange(1, i+1))
 
         r.. F[n]
 

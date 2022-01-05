@@ -50,7 +50,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ openLock(self, deadends: List[s..], target: s..) __ i..:
+    ___ openLock  deadends: List[s..], target: s..) __ i..:
         """
         bfs
         """

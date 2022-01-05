@@ -29,7 +29,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ validateStackSequences(self, pushed: List[i..], popped: List[i..]) __ bool:
+    ___ validateStackSequences  pushed: List[i..], popped: List[i..]) __ bool:
         """
         maintain a stack and iterate through pushed
         """
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. j __ n
 
-    ___ validateStackSequences(self, pushed: List[i..], popped: List[i..]) __ bool:
+    ___ validateStackSequences  pushed: List[i..], popped: List[i..]) __ bool:
         """
         maintain a stack
         """

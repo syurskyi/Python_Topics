@@ -9,7 +9,7 @@ def read4(buf):
 
 
 c_ Solution:
-    ___ read(self, buf, n):
+    ___ read  buf, n):
         """
         :type buf: List[str], Destination buffer
         :type n: int, Maximum number of characters to read

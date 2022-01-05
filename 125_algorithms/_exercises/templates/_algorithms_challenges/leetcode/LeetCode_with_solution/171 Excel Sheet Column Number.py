@@ -18,7 +18,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ titleToNumber(self, s):
+    ___ titleToNumber  s):
         """
         :type s: str
         :rtype: int
@@ -26,7 +26,7 @@ c_ Solution:
         sig = 1
         ret = 0
         ___ i __ xrange(l..(s)-1, -1, -1):
-            ret += sig*(ord(s[i])-ord('A')+1)
+            ret += sig*(o..(s[i])-o..('A')+1)
             sig *= 26
 
         r.. ret

@@ -12,7 +12,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ sortedListToBST(self, head):
+  ___ sortedListToBST  head):
     """
     :type head: ListNode
     :rtype: TreeNode

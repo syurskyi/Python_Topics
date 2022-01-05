@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ wiggleMaxLength(self, nums):
+  ___ wiggleMaxLength  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -12,4 +12,4 @@ c_ Solution(object):
         up = down + 1
       ____ nums[i] < nums[i - 1]:
         down = up + 1
-    r.. max(up, down)
+    r.. m..(up, down)

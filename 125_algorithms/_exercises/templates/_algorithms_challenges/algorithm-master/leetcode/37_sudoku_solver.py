@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ solveSudoku(self, board):
+    ___ solveSudoku  board):
         """
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
@@ -9,7 +9,7 @@ c_ Solution:
 
         dfs(board, 0, 0)
 
-    ___ dfs(self, board, x, y):
+    ___ dfs  board, x, y):
         n = l..(board)
 
         __ x __ n:
@@ -37,7 +37,7 @@ c_ Solution:
         board[x][y] = '.'
         r.. F..
 
-    ___ is_valid(self, board, x, y):
+    ___ is_valid  board, x, y):
         __ board[x][y] n.. __ '123456789':
             r.. F..
 

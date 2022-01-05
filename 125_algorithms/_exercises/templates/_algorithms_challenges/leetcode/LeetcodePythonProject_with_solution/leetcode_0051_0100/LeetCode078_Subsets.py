@@ -5,7 +5,7 @@ Created on Jan 24, 2017
 '''
 
 c_ Solution(object):
-    ___ subsets(self, nums):
+    ___ subsets  nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -17,7 +17,7 @@ c_ Solution(object):
         helper(nums, elem, 0, result)
         r.. result
     
-    ___ helper(self, nums, elem, start, result):
+    ___ helper  nums, elem, start, result):
         result.a..(l..(elem))
         ___ i __ r..(start, l..(nums)):
             elem.a..(nums[i])

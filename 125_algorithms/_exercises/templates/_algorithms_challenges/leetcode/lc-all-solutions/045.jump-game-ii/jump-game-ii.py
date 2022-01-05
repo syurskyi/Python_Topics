@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ jump(self, nums):
+  ___ jump  nums):
     """
     :type nums: List[int]
     :rtype: int

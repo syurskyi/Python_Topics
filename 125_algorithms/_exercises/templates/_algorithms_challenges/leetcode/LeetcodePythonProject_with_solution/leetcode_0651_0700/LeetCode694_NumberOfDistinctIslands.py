@@ -4,7 +4,7 @@ Created on Oct 25, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ numDistinctIslands(self, grid):
+    ___ numDistinctIslands  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(object):
                     islands.add(t..(island))
         r.. l..(islands)
     
-    ___ dfs(self, i0, j0, i, j, m, n, grid, island):
+    ___ dfs  i0, j0, i, j, m, n, grid, island):
         __ i >= m o. i < 0 o. j >= n o. j < 0 o. grid[i][j] != 1:
             r..
         grid[i][j] = -1

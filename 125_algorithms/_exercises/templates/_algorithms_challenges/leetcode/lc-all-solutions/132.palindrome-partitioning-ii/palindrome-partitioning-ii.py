@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minCut(self, s):
+  ___ minCut  s):
     """
     :type s: str
     :rtype: int

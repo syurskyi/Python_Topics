@@ -8,7 +8,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ reverseBits(self, n):
+    ___ reverseBits  n):
         """
         %2 /2
         """

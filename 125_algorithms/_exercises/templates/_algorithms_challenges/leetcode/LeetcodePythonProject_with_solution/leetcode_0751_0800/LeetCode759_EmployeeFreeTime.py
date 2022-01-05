@@ -10,7 +10,7 @@ c_ Interval(object):
         end = e
 
 c_ Solution(object):
-    ___ employeeFreeTime(self, schedule):
+    ___ employeeFreeTime  schedule):
         """
         :type schedule: List[List[Interval]]
         :rtype: List[Interval]

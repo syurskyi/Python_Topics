@@ -5,11 +5,11 @@ Created on Mar 27, 2017
 '''
 
 c_ Solution(object):
-    ___ maxSumSubmatrix(self, matrix, k):
+    ___ maxSumSubmatrix  matrix, k):
         p..
     
     # still not working!
-    ___ maxSumSubmatrixBinarySearch(self, matrix, k):
+    ___ maxSumSubmatrixBinarySearch  matrix, k):
         _______ bisect
         __ n.. matrix o. n.. matrix[0]:
             r.. 0
@@ -32,6 +32,6 @@ c_ Solution(object):
                         area -= areas[r2][c]
                     ind = bisect.bisect_left(sortedlist, area-k)
                     __ ind < l..(sortedlist):
-                        maxVal = max(maxVal, area-sortedlist[ind])
+                        maxVal = m..(maxVal, area-sortedlist[ind])
                     bisect.insort_left(sortedlist, area)
         r.. maxVal

@@ -1,7 +1,7 @@
 c_ Solution:
     # @param S, a string
     # @return an integer
-    ___ minCut(self, S):
+    ___ minCut  S):
         __ n.. S:
             r.. -1
 
@@ -26,7 +26,7 @@ c_ Solution:
 
         r.. dp[n] - 1
 
-    ___ get_palin_map(self, S):
+    ___ get_palin_map  S):
         n = l..(S)
         is_palindrome = [[F..] * n ___ _ __ r..(n)]
         is_palindrome[0][0] = T..

@@ -11,7 +11,7 @@ filled cells need to be validated.
 """
 
 c_ Solution(object):
-    ___ isValidSudoku(self, board):
+    ___ isValidSudoku  board):
         """
         :type board: List[List[str]]
         :rtype: bool

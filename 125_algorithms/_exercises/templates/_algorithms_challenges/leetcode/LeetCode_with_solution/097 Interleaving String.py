@@ -13,7 +13,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ isInterleave(self, s1, s2, s3):
+    ___ isInterleave  s1, s2, s3):
         """
         dfs
         dp
@@ -76,7 +76,7 @@ c_ Solution(object):
 
         r.. dp[-1][-1]
 
-    ___ isInterleave_TLE(self, s1, s2, s3):
+    ___ isInterleave_TLE  s1, s2, s3):
         """
         dfs
         Time Limit Exceeded

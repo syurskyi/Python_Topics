@@ -37,7 +37,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ searchBST(self, root: TreeNode, val: i..) __ TreeNode:
+    ___ searchBST  root: TreeNode, val: i..) __ TreeNode:
         __ n.. root:
             r.. N..
 

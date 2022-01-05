@@ -14,7 +14,7 @@ c_ NumMatrix(object):
         ____:
           dp[i][j] = dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1] + matrix[i][j]
 
-  ___ sumRegion(self, row1, col1, row2, col2):
+  ___ sumRegion  row1, col1, row2, col2):
     """
     sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
     :type row1: int

@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ recoverTree(self, root):
+    ___ recoverTree  root):
         """
         :type root: TreeNode
         :rtype: void Do not return anything, modify root in-place instead.
@@ -27,7 +27,7 @@ c_ Solution(object):
             second.val = first.val
             first.val = val
     
-    ___ inOrder(self, root):
+    ___ inOrder  root):
         __ n.. root:
             r..
         inOrder(root.left)

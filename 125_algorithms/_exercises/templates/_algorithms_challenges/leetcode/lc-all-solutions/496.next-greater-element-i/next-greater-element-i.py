@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ nextGreaterElement(self, findNums, nums):
+  ___ nextGreaterElement  findNums, nums):
     """
     :type findNums: List[int]
     :type nums: List[int]

@@ -6,14 +6,14 @@ c_ TwoSum(object):
     """
     nums    # dict
 
-  ___ add(self, number):
+  ___ add  number):
     """
     Add the number to an internal data structure.
     :rtype: nothing
     """
     nums[number] = nums.get(number, 0) + 1
 
-  ___ find(self, value):
+  ___ find  value):
     """
     Find if there exists any pair of numbers which sum is equal to the value.
     :type value: int

@@ -5,7 +5,7 @@ Created on May 10, 2017
 '''
 
 c_ Solution(object):
-    ___ findShortestWay(self, maze, ball, hole):
+    ___ findShortestWay  maze, ball, hole):
         """
         :type maze: List[List[int]]
         :type ball: List[int]
@@ -24,7 +24,7 @@ c_ Solution(object):
         ____:
             r.. 'impossible'
     
-    ___ helper(self, matrix, start, hole, curr, path, result, visited):
+    ___ helper  matrix, start, hole, curr, path, result, visited):
         __ path > maxPath o. path > map[start[0]][start[1]]:
             r..
         nextSteps = getNextSteps(matrix, start[0], start[1])
@@ -42,7 +42,7 @@ c_ Solution(object):
                 helper(matrix, stop, hole, curr+dirStr, path+dist, result, visited)
         visited[start[0]][start[1]] = F..
     
-    ___ isPassing(self, maze, start, stop, hole):
+    ___ isPassing  maze, start, stop, hole):
         __ start[0] __ stop[0] __ hole[0]:
             __ start[1] < hole[1] <= stop[1]:
                 r.. T.., hole[1]-start[1]
@@ -55,7 +55,7 @@ c_ Solution(object):
                 r.. T.., hole[0]-stop[0]
         r.. F.., 0
     
-    ___ getNextSteps(self, matrix, i, j):
+    ___ getNextSteps  matrix, i, j):
         steps = set()
         m, n = l..(matrix), l..(matrix[0])
         dirs = (1, 0, 'd'), (0, 1, 'r'), (-1, 0, 'u'), (0, -1, 'l')

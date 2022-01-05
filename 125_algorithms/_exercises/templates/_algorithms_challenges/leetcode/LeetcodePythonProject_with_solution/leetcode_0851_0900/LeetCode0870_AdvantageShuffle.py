@@ -4,7 +4,7 @@ Created on Oct 2, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ advantageCount(self, A, B):
+    ___ advantageCount  A, B):
         """
         :type A: List[int]
         :type B: List[int]

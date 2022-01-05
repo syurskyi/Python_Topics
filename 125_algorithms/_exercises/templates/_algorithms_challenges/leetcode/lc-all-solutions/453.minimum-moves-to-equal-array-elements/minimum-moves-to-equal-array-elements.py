@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minMoves(self, nums):
+  ___ minMoves  nums):
     """
     :type nums: List[int]
     :rtype: int

@@ -9,7 +9,7 @@ Test Case:
 
 
 c_ Solution:
-    ___ ladderLength(self, s, e, D):
+    ___ ladderLength  s, e, D):
         """
         :type s: str
         :type e: str
@@ -50,7 +50,7 @@ c_ Solution:
 
         r.. 0
 
-    ___ get_next_word(self, word, next_words):
+    ___ get_next_word  word, next_words):
         ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:

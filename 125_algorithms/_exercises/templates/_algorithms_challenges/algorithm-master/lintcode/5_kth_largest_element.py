@@ -1,5 +1,5 @@
 c_ Solution:
 
-    ___ kthLargestElement(self, k, nums):
+    ___ kthLargestElement  k, nums):
         nums.s..()
         r.. nums[-k]

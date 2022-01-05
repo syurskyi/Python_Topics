@@ -8,7 +8,7 @@ c_ Trie:
     ___ - ):
         root = TrieNode()
 
-    ___ put(self, word):
+    ___ put  word):
         __ n.. isi..(word, s..):
             r..
 
@@ -24,7 +24,7 @@ c_ Trie:
 
 
 c_ Solution:
-    ___ kDistance(self, words, target, k):
+    ___ kDistance  words, target, k):
         """
         :type words: list[str]
         :type target: str
@@ -43,7 +43,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, node, k, target, ans, pre):
+    ___ dfs  node, k, target, ans, pre):
         n = l..(target)
 
         __ node.end_of __ n.. N.. a.. pre[n] <= k:

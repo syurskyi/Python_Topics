@@ -2,7 +2,7 @@ c_ BowlingGame(object):
     ___ - ):
         p..
 
-    ___ roll(self, pins):
+    ___ roll  pins):
         p..
 
     ___ score

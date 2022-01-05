@@ -12,7 +12,7 @@ class ParentTreeNode:
 
 
 c_ Solution:
-    ___ lowestCommonAncestorII(self, root, a, b):
+    ___ lowestCommonAncestorII  root, a, b):
         """
         :type root: ParentTreeNode
         :type a: ParentTreeNode

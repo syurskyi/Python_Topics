@@ -16,7 +16,7 @@ c_ Solution:
     ans = float('inf')
     pre = N..
 
-    ___ getMinimumDifference(self, root):
+    ___ getMinimumDifference  root):
         """
         :type root: TreeNode
         :rtype: int

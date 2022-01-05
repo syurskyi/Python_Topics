@@ -5,7 +5,7 @@ Created on Feb 14, 2017
 '''
 
 c_ Solution(object):
-    ___ calculateMinimumHP(self, dungeon):
+    ___ calculateMinimumHP  dungeon):
         """
         :type dungeon: List[List[int]]
         :rtype: int
@@ -22,12 +22,12 @@ c_ Solution(object):
                     _____
                 __ i __ m-1:
                     right = tbl[i][j+1] - dungeon[i][j]
-                    tbl[i][j] = max(1, right)
+                    tbl[i][j] = m..(1, right)
                 __ j __ n-1:
                     down = tbl[i+1][j] - dungeon[i][j]
-                    tbl[i][j] = max(1, down)
+                    tbl[i][j] = m..(1, down)
                 __ i != m-1 a.. j != n-1:
                     right = tbl[i][j+1] - dungeon[i][j]
                     down = tbl[i+1][j] - dungeon[i][j]
-                    tbl[i][j] = max(1, m..(right, down))
+                    tbl[i][j] = m..(1, m..(right, down))
         r.. tbl[0][0]

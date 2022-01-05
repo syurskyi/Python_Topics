@@ -5,13 +5,13 @@ Created on Mar 8, 2017
 '''
 
 c_ Solution(object):
-    ___ wordPatternMatch(self, pattern, s):
+    ___ wordPatternMatch  pattern, s):
         __ n.. pattern a.. n.. s: r.. T..
         __ n.. pattern o. n.. s: r.. F..
         hashmap    # dict
         r.. helper(pattern, s, 0, 0, hashmap, set())
          
-    ___ helper(self, pattern, s, i, j, hashmap, hashset):
+    ___ helper  pattern, s, i, j, hashmap, hashset):
         __ i __ l..(pattern) a.. j __ l..(s):
             r.. T..
         __ i >= l..(pattern) o. j >= l..(s):

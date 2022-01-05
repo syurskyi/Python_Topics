@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ maxWidthRamp(self, A: List[i..]) __ i..:
+    ___ maxWidthRamp  A: List[i..]) __ i..:
         """
         Use stack? No, since require the furthest element rather than the closest
         Sort the values, keep its index
@@ -43,7 +43,7 @@ c_ Solution:
         min_idx = float("inf")
         ___ _, i __ V:
             # V is sorted, guarantee a' > a
-            ret = max(ret, i - min_idx)
+            ret = m..(ret, i - min_idx)
             min_idx = m..(min_idx, i)
 
-        r.. max(ret, 0)
+        r.. m..(ret, 0)

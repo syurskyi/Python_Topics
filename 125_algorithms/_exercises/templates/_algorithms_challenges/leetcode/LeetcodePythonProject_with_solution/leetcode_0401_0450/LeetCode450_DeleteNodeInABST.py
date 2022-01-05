@@ -5,7 +5,7 @@ Created on Apr 20, 2017
 '''
 
 c_ Solution(object):
-    ___ deleteNode(self, root, key):
+    ___ deleteNode  root, key):
         __ n.. root: r.. N..
         parent, node = findNode(key, root, N..)
         __ n.. node: r.. root
@@ -19,7 +19,7 @@ c_ Solution(object):
                 parent.right = newNode
             r.. root
     
-    ___ removeNode(self, node):
+    ___ removeNode  node):
         __ node.right:
             newRoot = node.right
             left = node.left
@@ -39,7 +39,7 @@ c_ Solution(object):
         ____:
             r.. N..
     
-    ___ findNode(self, key, root, parent):
+    ___ findNode  key, root, parent):
         __ n.. root:
             r.. N.., N..
         __ root.val __ key:

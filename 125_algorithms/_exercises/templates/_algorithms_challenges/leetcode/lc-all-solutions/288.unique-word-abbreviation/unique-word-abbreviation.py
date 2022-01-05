@@ -14,7 +14,7 @@ c_ ValidWordAbbr(object):
       ____:
         d[word] = d.get(word, 0) + 1
 
-  ___ isUnique(self, word):
+  ___ isUnique  word):
     """
     check if a word is unique.
     :type word: str

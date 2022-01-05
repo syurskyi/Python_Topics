@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ countArrangement(self, N):
+  ___ countArrangement  N):
     """
     :type N: int
     :rtype: int

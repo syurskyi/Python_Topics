@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ grayCode(self, n):
+  ___ grayCode  n):
     """
     :type n: int
     :rtype: List[int]

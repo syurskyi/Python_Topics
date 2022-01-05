@@ -10,7 +10,7 @@ of its neighbors.
 #         self.neighbors = []
 
 c_ Solution(object):
-    ___ cloneGraph(self, node):
+    ___ cloneGraph  node):
         """
         :type node: UndirectedGraphNode
         :rtype: UndirectedGraphNode
@@ -25,7 +25,7 @@ c_ Solution(object):
         visit(node)
         r.. d[node]
 
-    ___ visit(self, node):
+    ___ visit  node):
         __ node n.. __ visited:
             visited.add(node)
             cloned_node = d[node]

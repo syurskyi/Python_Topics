@@ -25,7 +25,7 @@ int2roman = {
 
 
 c_ Solution:
-    ___ intToRoman(self, num):
+    ___ intToRoman  num):
         """
         dealing with digits
         notice the 1, 4, 5, 9, 10 repetition

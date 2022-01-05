@@ -11,9 +11,9 @@ ___ test_positive_divide_good_values
 
 
 ___ test_positive_divide_exceptions
-    try:
+    ___
         positive_divide(2, 0)
-    except ZeroDivisionError:
+    ______ ZeroDivisionError:
         p__.fail("Unexpected ZeroDivisionError!")
     w__ p__.r.. T..
         positive_divide(1, 's')

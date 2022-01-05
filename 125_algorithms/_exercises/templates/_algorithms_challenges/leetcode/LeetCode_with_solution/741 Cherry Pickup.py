@@ -45,7 +45,7 @@ c_ Solution:
     ___ - ):
         cache    # dict
 
-    ___ cherryPickup(self, grid: List[List[i..]]) __ i..:
+    ___ cherryPickup  grid: List[List[i..]]) __ i..:
         """
         DP go and back
         Go back probably related - yes it is related
@@ -54,9 +54,9 @@ c_ Solution:
         of the path, so we are only considering two paths from the beginning to
         the end.
         """
-        r.. max(0, F(grid, 0, 0, 0))
+        r.. m..(0, F(grid, 0, 0, 0))
 
-    ___ F(self, grid, r1, c1, r2):
+    ___ F  grid, r1, c1, r2):
         n = l..(grid)
         __ (r1, c1, r2) n.. __ cache:
             ret = float("-inf")
@@ -71,7 +71,7 @@ c_ Solution:
                     __ r1 __ n - 1 a.. c1 __ n - 1:
                         p..  # seed, otherwise -inf
                     ____:
-                        ret += max(
+                        ret += m..(
                             F(grid, r1+1, c1, r2+1),   # down, down
                             F(grid, r1+1, c1, r2),  # down, right
                             F(grid, r1, c1+1, r2+1),  # right, down

@@ -5,7 +5,7 @@ Created on Feb 12, 2017
 '''
 
 c_ Solution(object):
-    ___ fractionToDecimal(self, numerator, denominator):
+    ___ fractionToDecimal  numerator, denominator):
         """
         :type numerator: int
         :type denominator: int

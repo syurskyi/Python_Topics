@@ -1,7 +1,7 @@
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ trap(self, A):
+    ___ trap  A):
         n = l..(A)
         res = 0
         last = 0

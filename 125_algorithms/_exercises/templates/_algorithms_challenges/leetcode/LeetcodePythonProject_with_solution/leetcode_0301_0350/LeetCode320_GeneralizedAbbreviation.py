@@ -5,7 +5,7 @@ Created on Mar 17, 2017
 '''
 
 c_ Solution(object):
-    ___ generateAbbreviations(self, word):
+    ___ generateAbbreviations  word):
         """
         :type word: str
         :rtype: List[str]
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(word, 0, 0, '', res)
         r.. res
     
-    ___ helper(self, word, i, count, curr, res):
+    ___ helper  word, i, count, curr, res):
         __ i __ l..(word):
             __ count:
                 curr += s..(count)

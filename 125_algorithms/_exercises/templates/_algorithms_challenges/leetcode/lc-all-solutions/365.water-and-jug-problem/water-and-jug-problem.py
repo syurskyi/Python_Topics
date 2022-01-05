@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canMeasureWater(self, x, y, z):
+  ___ canMeasureWater  x, y, z):
     """
     :type x: int
     :type y: int
@@ -13,7 +13,7 @@ c_ Solution(object):
     __ x __ z o. y __ z o. x + y __ z:
       r.. T..
     __ m..(x, y) __ 0:
-      r.. T.. __ max(x, y) __ z ____ F..
+      r.. T.. __ m..(x, y) __ z ____ F..
     n = m..(x, y)
     w.... n > 1:
       __ x % n __ 0 a.. y % n __ 0:

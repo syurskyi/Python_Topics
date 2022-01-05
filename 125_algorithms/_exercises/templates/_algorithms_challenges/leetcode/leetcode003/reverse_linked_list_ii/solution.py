@@ -9,7 +9,7 @@ c_ Solution:
     # @param m, an integer
     # @param n, an integer
     # @return a ListNode
-    ___ reverseBetween(self, head, m, n):
+    ___ reverseBetween  head, m, n):
         i = 1
         res = head  # Start of the beginning part
         res_end = head  # End of the beginning part

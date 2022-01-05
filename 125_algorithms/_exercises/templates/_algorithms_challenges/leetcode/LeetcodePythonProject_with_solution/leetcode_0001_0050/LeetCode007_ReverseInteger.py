@@ -4,7 +4,7 @@ Created on Nov 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ reverse(self, x):
+    ___ reverse  x):
         """
         :type x: int
         :rtype: int

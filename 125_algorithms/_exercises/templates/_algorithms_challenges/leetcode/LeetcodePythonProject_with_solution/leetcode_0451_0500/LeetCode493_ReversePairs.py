@@ -13,7 +13,7 @@ c_ Node(object):
         right = N..
 
 c_ Solution(object):
-    ___ reversePairs_mergeSort(self, nums):
+    ___ reversePairs_mergeSort  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -37,7 +37,7 @@ c_ Solution(object):
         msort(nums)
         r.. cnt
     
-    ___ reversePairs(self, nums):
+    ___ reversePairs  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -50,7 +50,7 @@ c_ Solution(object):
             root = build(num, root)
         r.. cnt[0]
     
-    ___ s..(self, cnt, node, target):
+    ___ s..  cnt, node, target):
         __ n.. node:
             r..
         ____ target __ node.val:
@@ -61,7 +61,7 @@ c_ Solution(object):
             cnt[0] += node.less + node.same
             s..(cnt, node.right, target)
     
-    ___ build(self, val, node):
+    ___ build  val, node):
         __ n.. node:
             r.. Node(val)
         ____ val __ node.val:

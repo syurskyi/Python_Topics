@@ -22,7 +22,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ longestPalindromeSubseq(self, s):
+    ___ longestPalindromeSubseq  s):
         """
         Brute force 0-1, exponential
 
@@ -42,9 +42,9 @@ c_ Solution:
 
         ___ i __ r..(n-1, -1, -1):
             ___ j __ r..(i+1, n):
-                F[i][j] = max(F[i+1][j], F[i][j-1])
+                F[i][j] = m..(F[i+1][j], F[i][j-1])
                 __ s[i] __ s[j]:
-                    F[i][j] = max(F[i][j], F[i+1][j-1] + 2)
+                    F[i][j] = m..(F[i][j], F[i+1][j-1] + 2)
 
         r.. F[0][n-1]
 

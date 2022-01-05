@@ -5,7 +5,7 @@ Created on May 8, 2017
 '''
 
 c_ Solution(object):
-    ___ findSubsequences(self, nums):
+    ___ findSubsequences  nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(nums, 0, [], res)
         r.. [l..(row) ___ row __ res]
     
-    ___ helper(self, nums, ind, curr, res):
+    ___ helper  nums, ind, curr, res):
         __ l..(curr) >= 2:
             res.add(t..(curr))
         ___ i __ r..(ind, l..(nums)):

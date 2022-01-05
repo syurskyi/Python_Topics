@@ -26,7 +26,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ maxSlidingWindow(self, nums, k):
+    ___ maxSlidingWindow  nums, k):
         """
         Algorithms
         1. brute force

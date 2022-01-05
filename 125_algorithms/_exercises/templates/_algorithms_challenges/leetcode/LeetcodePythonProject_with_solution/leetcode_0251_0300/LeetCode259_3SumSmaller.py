@@ -5,7 +5,7 @@ Created on Mar 2, 2017
 '''
 
 c_ Solution(object):
-    ___ threeSumSmaller(self, nums, target):
+    ___ threeSumSmaller  nums, target):
         """
         :type nums: List[int]
         :type target: int

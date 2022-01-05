@@ -9,7 +9,7 @@ c_ Board:
     ___ - , board):
         p..
 
-    ___ territory(self, x, y):
+    ___ territory  x, y):
         """Find the owner and the territories given a coordinate on
            the board
 

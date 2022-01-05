@@ -63,7 +63,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ knightDialer(self, N: i..) __ i..:
+    ___ knightDialer  N: i..) __ i..:
         """
         DP
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
@@ -90,7 +90,7 @@ c_ SolutionTLE2:
     ___ - ):
         cache    # dict
 
-    ___ knightDialer(self, N: i..) __ i..:
+    ___ knightDialer  N: i..) __ i..:
         ret = 0
         ___ i __ r..(10):
             ret += dfs(i, N-1)
@@ -98,7 +98,7 @@ c_ SolutionTLE2:
 
         r.. ret
 
-    ___ dfs(self, i, r):
+    ___ dfs  i, r):
         __ (i, r) n.. __ cache:
             ret = 0
             __ r __ 0:
@@ -119,7 +119,7 @@ c_ SolutionTLE:
         n = 3
         cache    # dict
 
-    ___ knightDialer(self, N: i..) __ i..:
+    ___ knightDialer  N: i..) __ i..:
         ret = 0
         ___ i __ r..(m):
             ___ j __ r..(n):
@@ -128,7 +128,7 @@ c_ SolutionTLE:
                     ret %= MOD
         r.. ret
 
-    ___ dfs(self, i, j, r):
+    ___ dfs  i, j, r):
         __ (i, j, r) n.. __ cache:
             ret = 0
             __ r __ 0:

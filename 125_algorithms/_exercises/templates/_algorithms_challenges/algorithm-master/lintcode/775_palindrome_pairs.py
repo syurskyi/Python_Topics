@@ -7,7 +7,7 @@ Main Concept:
 2. Since we now use <= in for (int j=0; j<=words[i].length(); j++) instead of <. There may be duplicates in the output (consider test case [“abcd”, “dcba”]). Therefore I put a str2.length()!=0 to avoid duplicates.
 """
 c_ Solution:
-    ___ palindromePairs(self, words):
+    ___ palindromePairs  words):
         """
         :type words: list[str]
         :rtype: list[list[int]]
@@ -45,7 +45,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ is_palindrome(self, word):
+    ___ is_palindrome  word):
         n = l..(word)
         left, right = 0, n - 1
 
@@ -63,7 +63,7 @@ c_ Solution:
 TLE: Brute Force
 """
 c_ Solution:
-    ___ palindromePairs(self, words):
+    ___ palindromePairs  words):
         """
         :type words: list[str]
         :rtype: list[list[int]]
@@ -85,7 +85,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ is_palindrome(self, words, i, j):
+    ___ is_palindrome  words, i, j):
         s, t = words[i], words[j]
         a, b = l..(s), l..(t)
         n = a + b
@@ -109,7 +109,7 @@ c_ Solution:
 TLE: Brute Force
 """
 c_ Solution:
-    ___ palindromePairs(self, words):
+    ___ palindromePairs  words):
         """
         :type words: list[str]
         :rtype: list[list[int]]
@@ -131,7 +131,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ is_palindrome(self, s):
+    ___ is_palindrome  s):
         n = l..(s)
         left, right = 0, n - 1
 

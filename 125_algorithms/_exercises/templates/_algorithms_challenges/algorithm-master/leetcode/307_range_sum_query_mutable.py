@@ -24,7 +24,7 @@ c_ NumArray:
         ___ i __ r..(n):
             update(i, nums[i])
 
-    ___ update(self, i, val):
+    ___ update  i, val):
         """
         :type i: int
         :type val: int
@@ -41,7 +41,7 @@ c_ NumArray:
             bits[j] += delta
             j += (j & -j)
 
-    ___ sumRange(self, i, j):
+    ___ sumRange  i, j):
         """
         :type i: int
         :type j: int
@@ -49,7 +49,7 @@ c_ NumArray:
         """
         r.. s..(j + 1) - s..(i)
 
-    ___ s..(self, i):
+    ___ s..  i):
         res = 0
         j = i
 

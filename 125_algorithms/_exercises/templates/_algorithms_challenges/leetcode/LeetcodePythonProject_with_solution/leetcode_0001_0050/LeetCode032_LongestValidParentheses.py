@@ -5,7 +5,7 @@ Created on Mar 14, 2017
 '''
 
 c_ Solution(object):
-    ___ longestValidParentheses(self, s):
+    ___ longestValidParentheses  s):
         left = -1
         stack    # list
         res = 0
@@ -16,9 +16,9 @@ c_ Solution(object):
                 __ stack:
                     stack.pop()
                     __ stack:
-                        res = max(res, i-stack[-1])
+                        res = m..(res, i-stack[-1])
                     ____:
-                        res = max(res, i-left)
+                        res = m..(res, i-left)
                 ____:
                     left = i
         r.. res

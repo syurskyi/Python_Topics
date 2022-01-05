@@ -4,7 +4,7 @@ Created on Mar 18, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ backspaceCompare(self, S, T):
+    ___ backspaceCompare  S, T):
         """
         :type S: str
         :type T: str

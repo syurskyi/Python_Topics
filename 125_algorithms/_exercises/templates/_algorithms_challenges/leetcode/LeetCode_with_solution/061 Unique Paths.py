@@ -16,7 +16,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ uniquePaths(self, m, n):
+    ___ uniquePaths  m, n):
         """
         Math solution:
         if total m+n steps
@@ -31,7 +31,7 @@ c_ Solution(object):
         n -= 1
         r.. math.factorial(m+n) / (math.factorial(n) * math.factorial(m))
 
-    ___ uniquePathsDP(self, m, n):
+    ___ uniquePathsDP  m, n):
         F = [[0 ___ _ __ xrange(n+1)] ___ _ __ xrange(m+1)]
         F[1][0] = 1  # dummy entry point
         ___ i __ xrange(1, m+1):
@@ -40,7 +40,7 @@ c_ Solution(object):
 
         r.. F[m][n]
 
-    ___ uniquePathsNormal(self, m, n):
+    ___ uniquePathsNormal  m, n):
         """
         dp
         Let F be number of unique paths at position i, j

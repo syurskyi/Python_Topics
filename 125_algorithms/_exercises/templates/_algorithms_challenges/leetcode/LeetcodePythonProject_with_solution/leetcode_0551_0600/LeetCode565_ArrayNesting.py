@@ -4,7 +4,7 @@ Created on Aug 30, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ arrayNesting(self, nums):
+    ___ arrayNesting  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -22,7 +22,7 @@ c_ Solution(object):
                     hashset.add(num0)
                 ___ num0 __ hashset:
                     hashmap[num0] = count
-                maxLen = max(maxLen, count)
+                maxLen = m..(maxLen, count)
         r.. maxLen
     
     ___ test

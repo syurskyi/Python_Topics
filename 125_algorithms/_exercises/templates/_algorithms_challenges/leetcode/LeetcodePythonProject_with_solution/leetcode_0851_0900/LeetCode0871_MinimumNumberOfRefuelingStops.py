@@ -4,7 +4,7 @@ Created on Oct 3, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minRefuelStops(self, target, startFuel, stations):
+    ___ minRefuelStops  target, startFuel, stations):
         """
         :type target: int
         :type startFuel: int

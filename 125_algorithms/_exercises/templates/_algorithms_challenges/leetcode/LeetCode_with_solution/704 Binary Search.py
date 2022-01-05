@@ -28,7 +28,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ s..(self, nums: List[i..], target: i..) __ i..:
+    ___ s..  nums: List[i..], target: i..) __ i..:
         lo = 0
         hi = l..(nums)
         w.... lo < hi:

@@ -11,7 +11,7 @@ Could you devise a constant space solution?
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ setZeroes_error(self, matrix):
+    ___ setZeroes_error  matrix):
         """
         store the zero at the head
 
@@ -42,7 +42,7 @@ c_ Solution:
                     matrix[row][col] = 0
 
 
-    ___ setZeroes(self, matrix):
+    ___ setZeroes  matrix):
         """
         store the zero at the head
         constant space

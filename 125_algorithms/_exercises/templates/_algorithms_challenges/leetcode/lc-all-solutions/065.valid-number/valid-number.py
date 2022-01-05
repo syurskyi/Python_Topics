@@ -13,7 +13,7 @@ c_ States(object):
 
 
 c_ Solution(object):
-  ___ isNumber(self, s):
+  ___ isNumber  s):
     """
     :type s: str
     :rtype: bool

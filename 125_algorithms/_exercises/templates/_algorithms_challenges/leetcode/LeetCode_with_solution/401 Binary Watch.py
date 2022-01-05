@@ -28,7 +28,7 @@ c_ Solution(object):
         hours = (1, 2, 4, 8)
         minutes = (1, 2, 4, 8, 16, 32)
 
-    ___ readBinaryWatch(self, num):
+    ___ readBinaryWatch  num):
         """
         orderly backtracking
 
@@ -45,7 +45,7 @@ c_ Solution(object):
 
         r.. l..(gen())
 
-    ___ gen(self, n, head, lst, func):
+    ___ gen  n, head, lst, func):
         __ head __ l..(lst):
             y.. N..
 
@@ -61,10 +61,10 @@ c_ Solution(object):
                     ____:
                         break
 
-    ___ hour(self, n):
+    ___ hour  n):
         r.. gen(n, 0, hours, l.... x: x < 12)
 
-    ___ minute(self, n):
+    ___ minute  n):
         r.. gen(n, 0, minutes, l.... x: x < 60)
 
 

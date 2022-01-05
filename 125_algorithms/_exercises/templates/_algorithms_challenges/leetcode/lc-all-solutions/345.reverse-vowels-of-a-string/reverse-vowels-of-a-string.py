@@ -2,7 +2,7 @@ _______ s__
 
 
 c_ Solution(object):
-  ___ reverseVowels(self, s):
+  ___ reverseVowels  s):
     """
     :type s: str
     :rtype: str

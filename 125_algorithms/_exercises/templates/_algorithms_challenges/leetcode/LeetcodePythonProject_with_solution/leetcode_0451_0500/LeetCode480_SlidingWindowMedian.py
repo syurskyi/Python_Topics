@@ -6,7 +6,7 @@ Created on Apr 27, 2017
 _______ heapq
 
 c_ Solution(object):
-    ___ medianSlidingWindow(self, nums, k):
+    ___ medianSlidingWindow  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -15,7 +15,7 @@ c_ Solution(object):
         p..
     
     
-    ___ medianSlidingWindow_another(self, nums, k):
+    ___ medianSlidingWindow_another  nums, k):
         _______ bisect
         window = s..(nums[:k])
         medians    # list
@@ -38,7 +38,7 @@ c_ Solution(object):
         ____:
             r.. float(minHeap[0])
     
-    ___ add(self, num):
+    ___ add  num):
         __ n.. maxHeap o. num > -maxHeap[0]:
             heapq.heappush(minHeap, num)
         ____:
@@ -50,7 +50,7 @@ c_ Solution(object):
             val = heapq.heappop(minHeap)
             heapq.heappush(maxHeap, -val)
     
-    ___ remove(self, num):
+    ___ remove  num):
         __ num >= getMedian
             minHeap.remove(num)
             heapq.heapify(minHeap)
@@ -64,7 +64,7 @@ c_ Solution(object):
             val = heapq.heappop(minHeap)
             heapq.heappush(maxHeap, -val)
     
-    ___ medianSlidingWindow_slow(self, nums, k):
+    ___ medianSlidingWindow_slow  nums, k):
         """
         :type nums: List[int]
         :type k: int

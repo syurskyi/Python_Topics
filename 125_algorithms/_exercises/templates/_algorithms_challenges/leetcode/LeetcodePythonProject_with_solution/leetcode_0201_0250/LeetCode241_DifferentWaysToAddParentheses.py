@@ -5,7 +5,7 @@ Created on Feb 27, 2017
 '''
 
 c_ Solution(object):
-    ___ diffWaysToCompute(self, s):
+    ___ diffWaysToCompute  s):
         """
         :type s: str
         :rtype: List[int]

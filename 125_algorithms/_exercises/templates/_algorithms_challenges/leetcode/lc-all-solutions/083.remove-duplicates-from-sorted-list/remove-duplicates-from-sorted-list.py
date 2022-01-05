@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ deleteDuplicates(self, head):
+  ___ deleteDuplicates  head):
     """
     :type head: ListNode
     :rtype: ListNode

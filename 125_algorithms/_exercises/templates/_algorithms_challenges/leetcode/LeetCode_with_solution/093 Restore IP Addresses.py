@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ restoreIpAddresses(self, s):
+    ___ restoreIpAddresses  s):
         """
         dfs, branch factor 3, depth 4
         complexity: 3^4 = 81
@@ -21,7 +21,7 @@ c_ Solution:
         dfs(s, [], result)
         r.. result
 
-    ___ dfs_complicated(self, seq, cur, result):
+    ___ dfs_complicated  seq, cur, result):
         """
         checking done by the children
         :param seq:
@@ -40,7 +40,7 @@ c_ Solution:
             ___ i __ xrange(1, m..(3, l..(seq))+1):
                 dfs(seq[i:], cur+[seq[:i]], result)
 
-    ___ dfs(self, seq, cur, result):
+    ___ dfs  seq, cur, result):
         """
         checking done by the parent (making debug much easier by preventing going one more step)
         structure of dfs
@@ -67,11 +67,11 @@ c_ Solution:
             ____:
                 r..
 
-    ___ is_valid(self, s):
+    ___ is_valid  s):
         __ n.. s:
             r.. F..
         r.. s __ "0" o. s[0]!="0" a.. 0<= i..(s) <256  # ["0.0.0.0"]
 
-__ __name____"__main__":
+__ _____ __ ____
     IP = "25525511135"
     print Solution().restoreIpAddresses(IP)

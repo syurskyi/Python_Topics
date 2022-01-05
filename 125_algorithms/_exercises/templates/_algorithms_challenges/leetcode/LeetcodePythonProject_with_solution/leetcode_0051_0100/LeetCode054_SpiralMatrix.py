@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 c_ Solution(object):
-    ___ spiralOrder(self, matrix):
+    ___ spiralOrder  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[int]

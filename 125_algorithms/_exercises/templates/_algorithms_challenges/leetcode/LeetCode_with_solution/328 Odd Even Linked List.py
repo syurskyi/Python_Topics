@@ -23,7 +23,7 @@ c_ ListNode(object):
 
 
 c_ Solution(object):
-    ___ oddEvenList(self, head):
+    ___ oddEvenList  head):
         """
         :type head: ListNode
         :rtype: ListNode
@@ -51,7 +51,7 @@ c_ Solution(object):
 
         r.. head
 
-    ___ oddEvenListError(self, head):
+    ___ oddEvenListError  head):
         """
         Wrongly move by node value
         :type head: ListNode

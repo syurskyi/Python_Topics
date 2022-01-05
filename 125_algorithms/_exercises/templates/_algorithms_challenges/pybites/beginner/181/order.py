@@ -6,7 +6,7 @@ c_ OrderedList:
     ___ - ):
         _numbers    # list
 
-    ___ add(self, num):
+    ___ add  num):
         # you complete
         bisect.insort(_numbers, num)
 

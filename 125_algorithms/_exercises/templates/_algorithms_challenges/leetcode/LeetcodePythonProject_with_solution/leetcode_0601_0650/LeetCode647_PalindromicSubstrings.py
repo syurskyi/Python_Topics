@@ -4,7 +4,7 @@ Created on Oct 1, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ countSubstrings(self, s):
+    ___ countSubstrings  s):
         """
         :type s: str
         :rtype: int

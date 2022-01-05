@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ countDigitOne(self, n):
+  ___ countDigitOne  n):
     """
     :type n: int
     :rtype: int

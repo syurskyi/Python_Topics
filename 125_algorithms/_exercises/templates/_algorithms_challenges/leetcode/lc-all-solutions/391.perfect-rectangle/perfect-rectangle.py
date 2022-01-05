@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ Solution(object):
-  ___ isRectangleCover(self, rectangles):
+  ___ isRectangleCover  rectangles):
     """
     :type rectangles: List[List[int]]
     :rtype: bool
@@ -15,9 +15,9 @@ c_ Solution(object):
     realArea = 0
     ___ rect __ rectangles:
       leftBound = m..(leftBound, rect[0])
-      rightBound = max(rightBound, rect[2])
+      rightBound = m..(rightBound, rect[2])
       bottomBound = m..(bottomBound, rect[1])
-      topBound = max(topBound, rect[3])
+      topBound = m..(topBound, rect[3])
       realArea += (rect[3] - rect[1]) * (rect[2] - rect[0])
       lines.a..((rect[0], 1, rect[1], rect[3]))
       lines.a..((rect[2], -1, rect[1], rect[3]))

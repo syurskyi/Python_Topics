@@ -5,7 +5,7 @@ Compute and return the square root of x.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ sqrt(self, x):
+    ___ sqrt  x):
         """
         Newton's method
         x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \
@@ -23,5 +23,5 @@ c_ Solution:
 
         r.. i..(m)
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().sqrt(2)

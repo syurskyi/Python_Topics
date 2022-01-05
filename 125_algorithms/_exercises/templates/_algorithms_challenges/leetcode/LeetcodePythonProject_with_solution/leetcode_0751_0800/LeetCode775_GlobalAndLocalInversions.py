@@ -4,7 +4,7 @@ Created on Apr 8, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ isIdealPermutation(self, A):
+    ___ isIdealPermutation  A):
         """
         :type A: List[int]
         :rtype: bool
@@ -12,7 +12,7 @@ c_ Solution(object):
         arr = A
         cmax = 0
         ___ i __ r..(l..(arr)-2):
-            cmax = max(cmax, arr[i])
+            cmax = m..(cmax, arr[i])
             __ cmax > arr[i+2]:
                 r.. F..
         r.. T..

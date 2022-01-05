@@ -5,7 +5,7 @@ Created on Aug 22, 2017
 '''
 
 c_ Solution(object):
-    ___ checkRecord(self, s):
+    ___ checkRecord  s):
         """
         :type s: str
         :rtype: bool

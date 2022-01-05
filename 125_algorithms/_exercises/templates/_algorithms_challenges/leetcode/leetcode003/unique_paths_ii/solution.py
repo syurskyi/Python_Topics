@@ -22,7 +22,7 @@ Note: m and n will be at most 100.
 c_ Solution:
     # @param obstacleGrid, a list of lists of integers
     # @return an integer
-    ___ uniquePathsWithObstacles(self, obstacleGrid):
+    ___ uniquePathsWithObstacles  obstacleGrid):
         grid = obstacleGrid
         n = l..(grid)
         m = l..(grid[0])

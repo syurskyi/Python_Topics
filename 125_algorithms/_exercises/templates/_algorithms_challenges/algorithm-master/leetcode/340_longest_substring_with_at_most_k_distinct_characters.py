@@ -8,7 +8,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ lengthOfLongestSubstringKDistinct(self, s, k):
+    ___ lengthOfLongestSubstringKDistinct  s, k):
         """
         :type s: str
         :type k: int
@@ -34,6 +34,6 @@ c_ Solution:
 
                 i += 1
 
-            ans = max(ans, j - i + 1)
+            ans = m..(ans, j - i + 1)
 
         r.. ans

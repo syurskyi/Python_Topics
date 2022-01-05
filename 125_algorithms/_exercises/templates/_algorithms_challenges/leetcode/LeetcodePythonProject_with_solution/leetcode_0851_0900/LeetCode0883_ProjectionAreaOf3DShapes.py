@@ -4,7 +4,7 @@ Created on Oct 16, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ projectionArea(self, grid):
+    ___ projectionArea  grid):
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -16,12 +16,12 @@ c_ Solution(object):
             ___ j __ r..(n):
                 __ grid[i][j]:
                     res += 1
-                maxNum = max(maxNum, grid[i][j])
+                maxNum = m..(maxNum, grid[i][j])
             res += maxNum
         ___ j __ r..(n):
             maxNum = 0
             ___ i __ r..(n):
-                maxNum = max(maxNum, grid[i][j])
+                maxNum = m..(maxNum, grid[i][j])
             res += maxNum
         r.. res
     

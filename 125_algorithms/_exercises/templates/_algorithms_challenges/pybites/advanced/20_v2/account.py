@@ -7,16 +7,16 @@ c_ Account:
     ___ balance
         r.. s..(_transactions)
 
-    ___ __add__(self, amount):
+    ___ __add__  amount):
         _transactions.a..(amount)
 
-    ___ __sub__(self, amount):
+    ___ __sub__  amount):
         _transactions.a..(-amount)
 
     ___ __enter__
         r.. self
 
-    ___ __exit__(self, *_):
+    ___ __exit__  *_):
         w.... balance < 0:
             _transactions.pop()
         r.. self

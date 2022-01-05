@@ -4,7 +4,7 @@ Created on Mar 22, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ nextGreatestLetter(self, letters, target):
+    ___ nextGreatestLetter  letters, target):
         """
         :type letters: List[str]
         :type target: str

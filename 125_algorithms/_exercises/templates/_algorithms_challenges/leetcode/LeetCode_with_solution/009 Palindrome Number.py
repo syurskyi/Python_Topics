@@ -5,7 +5,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ isPalindrome(self, x):
+    ___ isPalindrome  x):
         """
         Algorithm: int, compare lsb and msb
         No extra space

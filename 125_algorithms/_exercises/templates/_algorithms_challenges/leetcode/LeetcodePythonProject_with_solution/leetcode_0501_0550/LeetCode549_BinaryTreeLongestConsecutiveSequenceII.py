@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ longestConsecutive(self, root):
+    ___ longestConsecutive  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
         helper(root)
         r.. maxLen
     
-    ___ helper(self, root):
+    ___ helper  root):
         __ n.. root: r.. 0, 0
         increase, decrease = 1, 1
         inLeft, deLeft = helper(root.left)
@@ -32,10 +32,10 @@ c_ Solution(object):
                 decrease = deLeft+1
         __ root.right:
             __ root.right.val+1 __ root.val:
-                increase = max(increase, inRight+1)
+                increase = m..(increase, inRight+1)
             ____ root.right.val-1 __ root.val:
-                decrease = max(decrease, deRight+1)
-        maxLen = max(maxLen, increase+decrease-1)
+                decrease = m..(decrease, deRight+1)
+        maxLen = m..(maxLen, increase+decrease-1)
         r.. increase, decrease
     
     ___ test

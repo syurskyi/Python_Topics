@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findDuplicate(self, nums):
+  ___ findDuplicate  nums):
     """
     :type nums: List[int]
     :rtype: int

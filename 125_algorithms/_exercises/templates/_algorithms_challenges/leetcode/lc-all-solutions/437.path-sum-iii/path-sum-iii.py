@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ pathSum(self, root, target):
+  ___ pathSum  root, target):
     """
     :type root: TreeNode
     :type target: int

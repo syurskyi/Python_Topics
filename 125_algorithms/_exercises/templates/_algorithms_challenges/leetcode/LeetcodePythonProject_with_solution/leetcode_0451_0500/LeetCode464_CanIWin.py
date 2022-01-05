@@ -5,13 +5,13 @@ Created on Apr 23, 2017
 '''
 
 c_ Solution(object):
-    ___ canIWin(self, maxChoosableInteger, desiredTotal):
+    ___ canIWin  maxChoosableInteger, desiredTotal):
         __ (1+maxChoosableInteger)*maxChoosableInteger/2 < desiredTotal:
             r.. F..
         memo    # dict
         r.. helper(l..(r..(1, maxChoosableInteger+1)), desiredTotal)
     
-    ___ helper(self, nums, desiredTotal):
+    ___ helper  nums, desiredTotal):
         hash = s..(nums)
         __ hash __ memo:
             r.. memo[hash]

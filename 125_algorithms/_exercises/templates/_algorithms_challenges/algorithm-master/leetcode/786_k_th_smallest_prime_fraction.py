@@ -14,7 +14,7 @@ ____ heapq _______ heappush, heappop
 
 
 c_ Solution:
-    ___ kthSmallestPrimeFraction(self, A, K):
+    ___ kthSmallestPrimeFraction  A, K):
         """
         :type A: List[int]
         :type K: int

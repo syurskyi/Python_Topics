@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minDistance(self, s, t):
+    ___ minDistance  s, t):
         """
         :type s: str
         :type t: str

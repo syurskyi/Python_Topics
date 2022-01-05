@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ countNodes(self, root):
+    ___ countNodes  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -26,7 +26,7 @@ c_ Solution(object):
         ____:
             r.. countNodes(root.left) + countNodes(root.right) + 1
     
-    ___ getLeftHeight(self, root):
+    ___ getLeftHeight  root):
         height = 0
         node = root
         w.... node:
@@ -34,7 +34,7 @@ c_ Solution(object):
             height += 1
         r.. height
     
-    ___ getRightHeight(self, root):
+    ___ getRightHeight  root):
         height = 0
         node = root
         w.... node:

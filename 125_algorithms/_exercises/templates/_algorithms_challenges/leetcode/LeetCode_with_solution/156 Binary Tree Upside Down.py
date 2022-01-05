@@ -12,7 +12,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ upsideDownBinaryTree(self, root):
+    ___ upsideDownBinaryTree  root):
         """
         single recursive
 
@@ -35,7 +35,7 @@ c_ SolutionComplex(object):
         root = TreeNode(0)
         cur_new = root
 
-    ___ upsideDownBinaryTree(self, root):
+    ___ upsideDownBinaryTree  root):
         """
         Tree, iterative + recursive
 
@@ -48,7 +48,7 @@ c_ SolutionComplex(object):
         traverse(root)
         r.. root
 
-    ___ traverse(self, cur):
+    ___ traverse  cur):
         """
         Process left first, and add it to the new tree
         :param cur:

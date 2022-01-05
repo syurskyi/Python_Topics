@@ -8,37 +8,37 @@ c_ CustomSet(object):
     ___ __iter__
         r.. i..(elements)
 
-    ___ __contains__(self, element):
+    ___ __contains__  element):
         r.. element __ elements
 
-    ___ issubset(self, other):
+    ___ issubset  other):
         r.. a..(x __ other ___ x __ self)
 
-    ___ isdisjoint(self, other):
+    ___ isdisjoint  other):
         r.. a..(x n.. __ other ___ x __ self)
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. issubset(other) a.. other.issubset(self)
 
-    ___ add(self, element):
+    ___ add  element):
         __ element n.. __ self:
             elements.a..(element)
 
-    ___ intersection(self, other):
+    ___ intersection  other):
         result = CustomSet()
         ___ x __ self:
             __ x __ other:
                 result.add(x)
         r.. result
 
-    ___ __sub__(self, other):
+    ___ __sub__  other):
         result = CustomSet()
         ___ x __ self:
             __ x n.. __ other:
                 result.add(x)
         r.. result
 
-    ___ __add__(self, other):
+    ___ __add__  other):
         result = CustomSet(elements)
         ___ x __ other:
             result.add(x)

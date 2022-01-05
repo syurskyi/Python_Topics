@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ preorderTraversal(self, root):
+  ___ preorderTraversal  root):
     res, stack    # list, [(1, root)]
     w.... stack:
       p = stack.pop()

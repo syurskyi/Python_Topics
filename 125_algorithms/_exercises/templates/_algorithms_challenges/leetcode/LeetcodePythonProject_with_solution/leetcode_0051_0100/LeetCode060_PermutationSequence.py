@@ -4,7 +4,7 @@ Created on Jan 22, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ getPermutation(self, n, k):
+    ___ getPermutation  n, k):
         """
         :type n: int
         :type k: int

@@ -33,7 +33,7 @@ c_ MultiplicationTable:
             _table_output += f"{table_row}\n"
         r.. _table_output
 
-    ___ calc_cell(self, x, y):
+    ___ calc_cell  x, y):
         """Takes x and y coords and returns the re-calculated result"""
         _x = x
         _y = y

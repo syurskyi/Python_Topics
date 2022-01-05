@@ -34,14 +34,14 @@ c_ NestedInteger(object):
         p..
 
 c_ Solution(object):
-    ___ depthSum(self, nestedList):
+    ___ depthSum  nestedList):
         """
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
         r.. helper(nestedList, 1)
     
-    ___ helper(self, nestedList, level):
+    ___ helper  nestedList, level):
         sumVal = 0
         ___ ni __ nestedList:
             __ ni.isInteger

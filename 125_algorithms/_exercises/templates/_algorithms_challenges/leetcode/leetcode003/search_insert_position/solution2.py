@@ -15,7 +15,7 @@ Here are few examples.
 """
 
 c_ Solution(object):
-    ___ searchInsert(self, nums, target):
+    ___ searchInsert  nums, target):
         n = l..(nums)
         left = 0
         right = n - 1
@@ -36,7 +36,7 @@ c_ Solution(object):
         ____ nums[left] > target:
             r.. m..(0, left)
         ____ nums[right] < target:
-            r.. max(n, right)
+            r.. m..(n, right)
 
 
 a1 = [1, 3]

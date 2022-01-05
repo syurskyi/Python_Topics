@@ -4,7 +4,7 @@ Created on Apr 8, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ canTransform(self, start, end):
+    ___ canTransform  start, end):
         """
         :type start: str
         :type end: str
@@ -35,7 +35,7 @@ c_ Solution(object):
             p2 += 1
         r.. T..
     
-    ___ canTransform_another(self, start, end):
+    ___ canTransform_another  start, end):
         """
         :type start: str
         :type end: str
@@ -55,7 +55,7 @@ c_ Solution(object):
     
     # The following BFS solution is TLE
     
-    ___ canTransform_bfs_TLE(self, start, end):
+    ___ canTransform_bfs_TLE  start, end):
         """
         :type start: str
         :type end: str

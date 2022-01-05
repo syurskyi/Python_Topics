@@ -5,7 +5,7 @@ Created on Apr 23, 2017
 '''
 
 c_ Solution(object):
-    ___ minTransfers(self, transactions):
+    ___ minTransfers  transactions):
         bal    # dict
         ___ tran __ transactions:
             bal[tran[0]] = bal.get(tran[0], 0)+tran[2]
@@ -15,7 +15,7 @@ c_ Solution(object):
             debt.a..(count)
         r.. dfs(0, 0)
         
-    ___ dfs(self, s, cnt):
+    ___ dfs  s, cnt):
         w.... s < l..(debt) a.. debt[s] __ 0:
             s += 1
         res = float('inf')

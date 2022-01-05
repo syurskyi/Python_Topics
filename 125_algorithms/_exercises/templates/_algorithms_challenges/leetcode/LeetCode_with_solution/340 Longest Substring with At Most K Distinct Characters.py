@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ lengthOfLongestSubstringKDistinct(self, s, k):
+    ___ lengthOfLongestSubstringKDistinct  s, k):
         """
         Brute force: O(n^2 * n)
 
@@ -38,7 +38,7 @@ c_ Solution(object):
                     k += 1
                 st += 1
 
-            maxa = max(maxa, idx - st + 1)
+            maxa = m..(maxa, idx - st + 1)
 
         r.. maxa
 

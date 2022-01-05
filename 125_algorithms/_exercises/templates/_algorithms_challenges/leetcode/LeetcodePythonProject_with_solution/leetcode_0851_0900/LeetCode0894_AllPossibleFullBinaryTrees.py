@@ -14,7 +14,7 @@ c_ Solution(object):
     ___ - ):
         cache    # dict
     
-    ___ allPossibleFBT(self, N):
+    ___ allPossibleFBT  N):
         """
         :type N: int
         :rtype: List[TreeNode]
@@ -38,7 +38,7 @@ c_ Solution(object):
                     res.a..(root)
         r.. res
     
-    ___ allPossibleFBT_own_TLE(self, N):
+    ___ allPossibleFBT_own_TLE  N):
         """
         :type N: int
         :rtype: List[TreeNode]

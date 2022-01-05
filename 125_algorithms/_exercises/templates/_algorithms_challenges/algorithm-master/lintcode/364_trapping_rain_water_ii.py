@@ -5,7 +5,7 @@ c_ Solution:
     @param: heights: a matrix of integers
     @return: an integer
     """
-    ___ trapRainWater(self, heights):
+    ___ trapRainWater  heights):
         __ n.. heights:
             r.. 0
         m, n = l..(heights), l..(heights[0])
@@ -39,7 +39,7 @@ c_ Solution:
                     # if its lower than the bound outside
                     # than this cell will store water
                     # otherwise this cell will become the new boundary
-                    _bound = max(bound, heights[_x][_y])
+                    _bound = m..(bound, heights[_x][_y])
                     heappush(bounds, (_bound, _x, _y))
                     __ _bound > heights[_x][_y]:
                         ans += _bound - heights[_x][_y]

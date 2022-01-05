@@ -25,7 +25,7 @@ ___ get_movie_most_nominations(movies: l..) __ s..:
     nomination_count    # dict
     ___ movie __ movies:
         nomination_count[movie['Title']] = i..(movie['Awards'].s.. [-2])
-    r.. max(nomination_count, key=nomination_count.get)
+    r.. m..(nomination_count, key=nomination_count.get)
 
 
 ___ get_movie_longest_runtime(movies: l..) __ s..:
@@ -34,7 +34,7 @@ ___ get_movie_longest_runtime(movies: l..) __ s..:
     runtime    # dict
     ___ movie __ movies:
         runtime[movie['Title']] = i..(movie['Runtime'].s.. [0])
-    r.. max(runtime, key=runtime.get)
+    r.. m..(runtime, key=runtime.get)
 
 
 #files = []

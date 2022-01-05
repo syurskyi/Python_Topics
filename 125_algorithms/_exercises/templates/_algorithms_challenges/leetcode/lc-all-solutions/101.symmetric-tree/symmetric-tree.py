@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ isSymmetric(self, node):
+  ___ isSymmetric  node):
     """
     :type root: TreeNode
     :rtype: bool

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ validUtf8(self, data):
+  ___ validUtf8  data):
     """
     :type data: List[int]
     :rtype: bool

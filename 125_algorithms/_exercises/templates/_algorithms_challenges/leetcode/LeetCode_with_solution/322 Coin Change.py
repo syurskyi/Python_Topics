@@ -20,7 +20,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ coinChange(self, coins, amount):
+    ___ coinChange  coins, amount):
         """
         DP with early prune
         Let F[i] be the fewest number of coins make to i
@@ -48,7 +48,7 @@ c_ Solution(object):
 
 
 c_ SolutionTLE(object):
-    ___ coinChange(self, coins, amount):
+    ___ coinChange  coins, amount):
         """
         Let F[i] be the fewest number of coins make to i
         F[i] = min(F[i-k]+1, \forall k)

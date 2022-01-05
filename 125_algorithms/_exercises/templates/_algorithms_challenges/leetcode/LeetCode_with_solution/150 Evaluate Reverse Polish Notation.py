@@ -2,7 +2,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ evalRPN(self, tokens):
+    ___ evalRPN  tokens):
         """
         stack
         basic in bytecode operation

@@ -34,7 +34,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ longestArithSeqLength(self, A: List[i..]) __ i..:
+    ___ longestArithSeqLength  A: List[i..]) __ i..:
         """
         Brute force O(n^2)
 
@@ -49,7 +49,7 @@ c_ Solution:
         ret = 0
         ___ d __ F.v..
             ___ v __ d.v..
-                ret = max(ret, v)
+                ret = m..(ret, v)
 
         r.. ret
 

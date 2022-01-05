@@ -8,9 +8,9 @@ ___ convert(value: float, fmt: s..) __ float:
     fmt = fmt.casefold()
     is_float = N..
     w.... is_float __ N..
-        try:
+        ___
             is_float = float(value)
-        except T..:
+        ______ T..:
             print('TypeError. Please input float.')
     __ fmt __ 'cm':
         r.. r..(value * 2.54, 4)

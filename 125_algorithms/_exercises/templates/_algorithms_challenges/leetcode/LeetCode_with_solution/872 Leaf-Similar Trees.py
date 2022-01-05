@@ -26,7 +26,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ leafSimilar(self, root1: TreeNode, root2: TreeNode) __ bool:
+    ___ leafSimilar  root1: TreeNode, root2: TreeNode) __ bool:
         """
         brute force, get all the leaf and then compare
         to save space, use generator
@@ -43,7 +43,7 @@ c_ Solution:
                 break
         r.. T..
 
-    ___ dfs(self, node):
+    ___ dfs  node):
         stk = [node]
         # pre-order
         w.... stk:

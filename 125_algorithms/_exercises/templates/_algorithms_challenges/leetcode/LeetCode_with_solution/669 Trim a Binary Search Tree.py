@@ -49,13 +49,13 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ trimBST(self, root: TreeNode, L: i.., R: i..) __ TreeNode:
+    ___ trimBST  root: TreeNode, L: i.., R: i..) __ TreeNode:
         """
         post-order traverse
         """
         r.. walk(root, L, R)
 
-    ___ walk(self, node, L, R):
+    ___ walk  node, L, R):
         __ n.. node:
             r.. N..
 

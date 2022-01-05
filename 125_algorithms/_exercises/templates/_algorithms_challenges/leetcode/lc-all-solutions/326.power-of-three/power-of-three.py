@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isPowerOfThree(self, n):
+  ___ isPowerOfThree  n):
     """
     :type n: int
     :rtype: bool

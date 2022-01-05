@@ -23,7 +23,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ canPlaceFlowers(self, flowerbed: List[i..], n: i..) __ bool:
+    ___ canPlaceFlowers  flowerbed: List[i..], n: i..) __ bool:
         """
         greedy
         """

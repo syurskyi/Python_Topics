@@ -16,14 +16,14 @@ c_ Solution:
             "0": "0"
         }
 
-    ___ isStrobogrammatic(self, num):
+    ___ isStrobogrammatic  num):
         ___ i __ xrange(l..(num)/2+1):
             __ num[i] n.. __ map o. map[num[i]] != num[l..(num)-1-i]:
                 r.. F..
 
         r.. T..
 
-    ___ isStrobogrammatic_tedious(self, num):
+    ___ isStrobogrammatic_tedious  num):
         """
 
         :type num: str
@@ -32,9 +32,9 @@ c_ Solution:
         num = l..(num)
         rev    # list  # reverse
         ___ digit __ r..(num):
-            try:
+            ___
                 rev.a..(map[digit])
-            except KeyError:
+            ______ KeyError:
                 r.. F..
 
         r.. num __ rev

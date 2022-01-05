@@ -4,7 +4,7 @@ time: O(n^2)
 space: O(n)
 """
 c_ Solution:
-    ___ PredictTheWinner(self, nums):
+    ___ PredictTheWinner  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -17,7 +17,7 @@ c_ Solution:
 
         ___ i __ r..(n - 1, -1, -1):
             ___ j __ r..(i + 1, n):
-                dp[j] = max(
+                dp[j] = m..(
                     nums[i] - dp[j],
                     nums[j] - dp[j - 1]
                 )
@@ -31,7 +31,7 @@ time: O(n^2)
 space: O(n^2)
 """
 c_ Solution:
-    ___ PredictTheWinner(self, nums):
+    ___ PredictTheWinner  nums):
         """
         :type nums: List[int]
         :rtype: bool
@@ -44,7 +44,7 @@ c_ Solution:
 
         ___ i __ r..(n - 1, -1, -1):
             ___ j __ r..(i + 1, n):
-                dp[i][j] = max(
+                dp[i][j] = m..(
                     nums[i] - dp[i + 1][j],
                     nums[j] - dp[i][j - 1]
                 )

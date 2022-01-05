@@ -50,9 +50,9 @@ ___ get_aws_service_range(address: s..,
     IP ranges that contain `address`. Raise a ValueError if `address`
     is not a valid IPv4 address.
     """
-    try:
+    ___
         ipv4_address = IPv4Address(address)
-    except AddressValueError:
+    ______ AddressValueError:
         r.. ValueError("Address must be a valid IPv4 address")
 
     r.. [range_ ___ range_ __ service_ranges

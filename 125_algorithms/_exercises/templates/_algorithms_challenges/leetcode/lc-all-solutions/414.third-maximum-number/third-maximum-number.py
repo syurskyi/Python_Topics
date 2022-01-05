@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ thirdMax(self, nums):
+  ___ thirdMax  nums):
     """
     :type nums: List[int]
     :rtype: int

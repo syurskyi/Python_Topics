@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ shortestCompletingWord(self, P, words):
+    ___ shortestCompletingWord  P, words):
         """
         :type P: str
         :type words: List[str]
@@ -21,7 +21,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ is_included(self, a_times, b_times):
+    ___ is_included  a_times, b_times):
         """True if A is a subset of B"""
         ___ char, times __ a_times.i..:
             __ char n.. __ b_times:
@@ -32,13 +32,13 @@ c_ Solution:
 
         r.. T..
 
-    ___ get_times(self, word):
+    ___ get_times  word):
         times    # dict
-        ord_a = ord('a')
-        ord_z = ord('z')
+        ord_a = o..('a')
+        ord_z = o..('z')
 
         ___ char __ word.l..:
-            __ ord_a <= ord(char) <= ord_z:
+            __ ord_a <= o..(char) <= ord_z:
                 times[char] = times.get(char, 0) + 1
 
         r.. times

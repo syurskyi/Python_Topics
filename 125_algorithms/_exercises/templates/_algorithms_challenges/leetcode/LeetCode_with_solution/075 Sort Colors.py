@@ -18,7 +18,7 @@ Could you come up with an one-pass algorithm using only constant space?
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ sortColors(self, A):
+    ___ sortColors  A):
         """
         Algorithm: pivoting. Similar concept as QuickSort
         constant space
@@ -47,5 +47,5 @@ c_ Solution:
 
         # print A
 
-__ __name____"__main__":
+__ _____ __ ____
     Solution().sortColors([1, 2, 0])

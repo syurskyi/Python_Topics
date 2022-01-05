@@ -2,7 +2,7 @@ _______ bisect
 
 
 c_ Solution(object):
-  ___ reversePairs(self, nums):
+  ___ reversePairs  nums):
     """
     :type nums: List[int]
     :rtype: int

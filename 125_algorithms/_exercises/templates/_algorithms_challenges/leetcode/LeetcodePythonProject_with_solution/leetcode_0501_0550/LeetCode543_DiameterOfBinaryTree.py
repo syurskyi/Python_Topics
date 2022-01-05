@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ diameterOfBinaryTree(self, root):
+    ___ diameterOfBinaryTree  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -21,13 +21,13 @@ c_ Solution(object):
         r.. helper(root)[-1]-1
     
     # returns include, exclude
-    ___ helper(self, root):
+    ___ helper  root):
         __ n.. root:
             r.. 0, 0
         left = helper(root.left)
         right = helper(root.right)
-        include = max(1+left[0], 1+right[0])
-        exclude = max([left[1], right[1], left[0]+right[0]+1])
+        include = m..(1+left[0], 1+right[0])
+        exclude = m..([left[1], right[1], left[0]+right[0]+1])
         r.. include, exclude
     
     ___ test

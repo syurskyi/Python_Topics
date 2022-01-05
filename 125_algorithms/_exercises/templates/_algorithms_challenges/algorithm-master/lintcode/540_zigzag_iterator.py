@@ -15,7 +15,7 @@ c_ ZigzagIterator:
         g = (v1, v2)
         x = 0
         y = 0
-        max_y = max(l..(vec) ___ vec __ g)
+        max_y = m..(l..(vec) ___ vec __ g)
 
     """
     @return: An integer

@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution(object):
-  ___ findRotateSteps(self, ring, key):
+  ___ findRotateSteps  ring, key):
     """
     :type ring: str
     :type key: str

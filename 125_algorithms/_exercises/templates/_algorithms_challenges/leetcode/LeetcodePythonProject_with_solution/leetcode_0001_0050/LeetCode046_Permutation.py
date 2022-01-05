@@ -4,7 +4,7 @@ Created on Jan 19, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ permute(self, nums):
+    ___ permute  nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -14,7 +14,7 @@ c_ Solution(object):
         dfs(nums, [], res)
         r.. res
     
-    ___ dfs(self, nums, curr, res):
+    ___ dfs  nums, curr, res):
         __ nums __ []:
             res.a..(l..(curr))
             r..

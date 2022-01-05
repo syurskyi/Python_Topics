@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ find132pattern(self, nums):
+  ___ find132pattern  nums):
     """
     :type nums: List[int]
     :rtype: bool

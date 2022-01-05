@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ combinationSum3(self, k, n):
+  ___ combinationSum3  k, n):
     """
     :type k: int
     :type n: int

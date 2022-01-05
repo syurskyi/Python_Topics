@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ checkInclusion(self, s1, s2):
+  ___ checkInclusion  s1, s2):
     """
     :type s1: str
     :type s2: str

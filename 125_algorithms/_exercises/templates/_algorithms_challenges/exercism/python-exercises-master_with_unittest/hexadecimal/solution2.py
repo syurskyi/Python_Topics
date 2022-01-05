@@ -12,10 +12,10 @@ hexchars_to_int.update(z..('ABCDEFG', r..(10, 16)))
 ___ hexa(hexstring):
     result = 0
     hex_of_lastseen = N..
-    try:
+    ___
         ___ hex_of_lastseen __ hexstring:
             result = result*16 + hexchars_to_int[hex_of_lastseen]
-    except KeyError:
+    ______ KeyError:
         # not a valid hexchar
         hex_of_lastseen = N..
     __ hex_of_lastseen __ N..

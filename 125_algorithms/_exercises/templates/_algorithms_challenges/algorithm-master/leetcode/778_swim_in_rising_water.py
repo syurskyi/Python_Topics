@@ -2,7 +2,7 @@ ____ heapq _______ heappush, heappop
 
 
 c_ Solution:
-    ___ swimInWater(self, G):
+    ___ swimInWater  G):
         """
         :type G: List[List[int]]
         :rtype: int

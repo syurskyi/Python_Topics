@@ -7,10 +7,10 @@ c_ Account:
     ___ balance
         r.. s..(_transactions)
 
-    ___ __add__(self, amount):
+    ___ __add__  amount):
         _transactions.a..(amount)
 
-    ___ __sub__(self, amount):
+    ___ __sub__  amount):
         _transactions.a..(-amount)
 
     # add 2 dunder methods here to turn this class
@@ -19,7 +19,7 @@ c_ Account:
         _rollback = _transactions.c..
         r.. self
 
-    ___ __exit__(self, exc_type, exc_val, exc_tb):
+    ___ __exit__  exc_type, exc_val, exc_tb):
         __ exc_type __ n.. N.. o. balance < 0:
             _transactions = _rollback
         _rollback = N..

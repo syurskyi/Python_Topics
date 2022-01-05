@@ -13,7 +13,7 @@ c_ Solution(object):
         lst = ["11", "69", "88", "96", "00"]
         middle = ["0", "1", "8"]
 
-    ___ strobogrammaticInRange(self, low, high):
+    ___ strobogrammaticInRange  low, high):
         """
         :type low: str
         :type high: str
@@ -26,12 +26,12 @@ c_ Solution(object):
         r.. cnt
 
     # below methods from strobogrammatic number ii
-    ___ strobogrammatic(self, n):
+    ___ strobogrammatic  n):
         ret    # list
         build(n, d..(), ret)
         r.. ret
 
-    ___ build(self, n, cur, ret):
+    ___ build  n, cur, ret):
         """
         build from inside
         """

@@ -3,7 +3,7 @@ c_ Solution:
     @param: A: An integer array
     @return: A list of integers includes the index of the first number and the index of the last number
     """
-    ___ continuousSubarraySum(self, A):
+    ___ continuousSubarraySum  A):
         ans = [-1, -1]
         __ n.. A:
             r.. ans

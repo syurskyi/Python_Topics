@@ -7,7 +7,7 @@ Created on Mar 19, 2017
 _______ heapq
 
 c_ Solution(object):
-    ___ findItinerary_orig(self, tickets):
+    ___ findItinerary_orig  tickets):
         __ n.. tickets:
             r.. []
         hashmap    # dict
@@ -19,7 +19,7 @@ c_ Solution(object):
         dfs(result, hashmap, 'JFK')
         r.. result
         
-    ___ dfs(self, result, hashmap, elem):
+    ___ dfs  result, hashmap, elem):
         w.... hashmap.get(elem):
             dfs(result, hashmap, heapq.heappop(hashmap[elem]))
         result.insert(0, elem)

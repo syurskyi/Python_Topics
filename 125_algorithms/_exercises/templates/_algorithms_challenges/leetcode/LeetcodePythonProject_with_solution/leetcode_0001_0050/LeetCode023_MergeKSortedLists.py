@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ mergeKLists(self, lists):
+    ___ mergeKLists  lists):
         """
         :type lists: List[ListNode]
         :rtype: ListNode

@@ -38,7 +38,7 @@ c_ SegmentTree(object):
     ___ - ):
         root = N..
 
-    ___ build(self, lo, hi):
+    ___ build  lo, hi):
         """a node can have right ONLY IF has left"""
         __ lo >= hi: r..
         __ lo __ hi-1: r.. Node(lo, hi, 1)
@@ -48,7 +48,7 @@ c_ SegmentTree(object):
         root.right = build((lo+hi)/2, hi)
         r.. root
 
-    ___ find_delete(self, root, sz):
+    ___ find_delete  root, sz):
         """
         :return: index
         """
@@ -63,7 +63,7 @@ c_ SegmentTree(object):
 
 
 c_ Solution(object):
-    ___ reconstructQueue(self, A):
+    ___ reconstructQueue  A):
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]

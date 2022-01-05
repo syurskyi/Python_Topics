@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ getNumberOfWays(self, n, m, limit, cost):
+    ___ getNumberOfWays  n, m, limit, cost):
         """
         :type n: int
         :type m: int
@@ -16,7 +16,7 @@ c_ Solution:
 
         ___ i __ r..(1, n + 1):
             ___ j __ r..(m + 1):
-                ___ k __ r..(max(0, i - limit), i):
+                ___ k __ r..(m..(0, i - limit), i):
                     __ j + cost[i] > m:
                         _____
                     dp[i][j] += dp[k][j + cost[i]]

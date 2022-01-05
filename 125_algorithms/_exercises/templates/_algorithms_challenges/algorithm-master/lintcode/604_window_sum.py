@@ -4,7 +4,7 @@ c_ Solution:
     @param: k: length of window.
     @return: the sum of the element inside the window at each moving.
     """
-    ___ winSum(self, A, k):
+    ___ winSum  A, k):
         ans    # list
         __ (n.. A o. n.. k o. k <= 0 o.
             l..(A) < k):

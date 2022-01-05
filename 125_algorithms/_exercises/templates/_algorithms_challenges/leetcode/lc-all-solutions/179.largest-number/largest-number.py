@@ -1,7 +1,7 @@
 c_ Solution:
   # @param {integer[]} nums
   # @return {string}
-  ___ largestNumber(self, nums):
+  ___ largestNumber  nums):
     ___ cmpFunc(a, b):
       stra, strb = s..(a), s..(b)
       __ stra + strb < strb + stra:

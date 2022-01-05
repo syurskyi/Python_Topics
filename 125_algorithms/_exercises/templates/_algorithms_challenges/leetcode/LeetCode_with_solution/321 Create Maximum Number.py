@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 c_ SolutionTLE(object):
-    ___ maxNumber(self, nums1, nums2, k):
+    ___ maxNumber  nums1, nums2, k):
         """
         http://algobox.org/2015/12/24/create-maximum-number/
         O(kN(N+M))
@@ -46,10 +46,10 @@ c_ SolutionTLE(object):
 
         r.. maxa
 
-    ___ eval(self, lst):
+    ___ eval  lst):
         r.. i..("".j..(map(s.., lst)))
 
-    ___ maxNumberSingle(self, A, k):
+    ___ maxNumberSingle  A, k):
         """
         maxNumber of k elements from a single list A
         """
@@ -62,7 +62,7 @@ c_ SolutionTLE(object):
 
         r.. stk
 
-    ___ maxNumberDual(self, A1, A2):
+    ___ maxNumberDual  A1, A2):
         """
         maxNumber of all elements from dual lists A1 and A2.
         """

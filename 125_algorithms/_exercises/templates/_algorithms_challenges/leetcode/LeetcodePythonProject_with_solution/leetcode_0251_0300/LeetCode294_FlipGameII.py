@@ -5,7 +5,7 @@ Created on Mar 8, 2017
 '''
 
 c_ Solution(object):
-    ___ canWin(self, s):
+    ___ canWin  s):
         """
         :type s: str
         :rtype: bool
@@ -13,7 +13,7 @@ c_ Solution(object):
         memo    # dict
         r.. helper(s, memo)
     
-    ___ helper(self, s, memo):
+    ___ helper  s, memo):
         __ s __ memo:
             r.. memo[s]
         otherWin = T..

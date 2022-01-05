@@ -2,16 +2,16 @@ c_ ComplexNumber(object):
     ___ - , real, imaginary):
         p..
 
-    ___ add(self, other):
+    ___ add  other):
         p..
 
-    ___ mul(self, other):
+    ___ mul  other):
         p..
 
-    ___ sub(self, other):
+    ___ sub  other):
         p..
 
-    ___ div(self, other):
+    ___ div  other):
         p..
 
     ___ abs

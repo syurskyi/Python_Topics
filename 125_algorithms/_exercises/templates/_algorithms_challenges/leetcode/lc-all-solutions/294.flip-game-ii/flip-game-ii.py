@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canWin(self, s):
+  ___ canWin  s):
     """
     :type s: str
     :rtype: bool

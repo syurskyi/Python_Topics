@@ -14,7 +14,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ findKthLargest(self, nums, k):
+    ___ findKthLargest  nums, k):
         """
         Algorithm:
         * Partial quick sort average O(n), worst case O(n^2)

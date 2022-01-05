@@ -13,7 +13,7 @@ c_ User:
     ___ __str__
         r.. f"{name} has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"
 
-    ___ __add__(self, other: Transaction):
+    ___ __add__  other: Transaction):
         __ n.. isi..(other, Transaction):
             r.. T..('Can only add a transaction')
         _transactions.a..(other)

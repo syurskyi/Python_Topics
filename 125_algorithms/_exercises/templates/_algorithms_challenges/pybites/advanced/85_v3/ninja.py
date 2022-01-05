@@ -22,7 +22,7 @@ c_ NinjaBelt:
     ___ _get_score
         r.. _score
 
-    ___ _set_score(self, new_score):
+    ___ _set_score  new_score):
         """
         Set the current score and update any belt qualification
         new_score must be an integer and cannot be less than the current score

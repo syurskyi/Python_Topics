@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ addDigits(self, num):
+  ___ addDigits  num):
     """
     :type num: int
     :rtype: int

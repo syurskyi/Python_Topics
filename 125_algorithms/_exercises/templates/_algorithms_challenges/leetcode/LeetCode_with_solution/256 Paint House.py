@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 c_ Solution:
     # @param {integer[][]} costs
     # @return {integer}
-    ___ minCost(self, costs):
+    ___ minCost  costs):
         """
         Lef F[i][j] be the total min costs when the houses BEFORE i are painted, with (i-1)-th house pained as color j
         :type costs: list[list[int]]

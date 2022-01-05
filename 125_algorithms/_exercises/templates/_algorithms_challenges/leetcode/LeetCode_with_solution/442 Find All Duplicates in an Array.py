@@ -17,10 +17,10 @@ Output:
 
 
 c_ Solution:
-    ___ idx(self, a):
+    ___ idx  a):
         r.. a - 1
 
-    ___ findDuplicates(self, A):
+    ___ findDuplicates  A):
         """
         Normally: hashmap
         Without extra space

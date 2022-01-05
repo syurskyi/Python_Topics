@@ -5,7 +5,7 @@ Created on Aug 20, 2017
 '''
 
 c_ Solution(object):
-    ___ removeBoxes(self, boxes):
+    ___ removeBoxes  boxes):
         """
         :type boxes: List[int]
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(object):
         dp = [[[0]*n ___ _ __ r..(n)] ___ _ __ r..(n)]
         r.. helper(dp, boxes, 0, n-1, 1)
     
-    ___ helper(self, dp, boxes, i, j, k):
+    ___ helper  dp, boxes, i, j, k):
         __ i > j:
             r.. 0
         ____ i __ j:
@@ -26,7 +26,7 @@ c_ Solution(object):
             tmp = helper(dp, boxes, i+1, j, 1) + k*k
             ___ m __ r..(i+1, j+1):
                 __ boxes[i] __ boxes[m]:
-                    tmp = max(tmp, helper(dp, boxes, i+1, m-1, 1)+\
+                    tmp = m..(tmp, helper(dp, boxes, i+1, m-1, 1)+\
                               helper(dp, boxes, m, j, k+1))
             dp[i][j][k] = tmp
             r.. tmp

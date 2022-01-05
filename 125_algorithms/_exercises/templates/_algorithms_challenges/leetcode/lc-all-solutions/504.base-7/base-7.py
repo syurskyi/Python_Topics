@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ convertToBase7(self, num):
+  ___ convertToBase7  num):
     """
     :type num: int
     :rtype: str

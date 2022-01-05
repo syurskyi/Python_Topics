@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ toHex(self, num):
+  ___ toHex  num):
     """
     :type num: int
     :rtype: str

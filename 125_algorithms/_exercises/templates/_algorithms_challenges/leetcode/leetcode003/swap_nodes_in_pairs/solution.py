@@ -7,7 +7,7 @@
 c_ Solution:
     # @param a ListNode
     # @return a ListNode
-    ___ swapPairs(self, head):
+    ___ swapPairs  head):
         __ head __ N.. o. head.next __ N..
             r.. head
         ____:

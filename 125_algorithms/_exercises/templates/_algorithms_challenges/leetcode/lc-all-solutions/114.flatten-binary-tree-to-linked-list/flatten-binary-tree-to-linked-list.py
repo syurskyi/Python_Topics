@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ flatten(self, root):
+  ___ flatten  root):
     """
     :type root: TreeNode
     :rtype: void Do not return anything, modify root in-place instead.

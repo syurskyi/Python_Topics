@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution(object):
-  ___ makesquare(self, nums):
+  ___ makesquare  nums):
     """
     :type nums: List[int]
     :rtype: bool

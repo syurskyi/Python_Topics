@@ -4,7 +4,7 @@ Created on Aug 29, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ longestLine(self, M):
+    ___ longestLine  M):
         """
         :type M: List[List[int]]
         :rtype: int
@@ -28,7 +28,7 @@ c_ Solution(object):
                     dp[i][j][2] += dp[i-1][j][2]
                 __ i > 0 a.. j+1 < n:
                     dp[i][j][3] += dp[i-1][j+1][3]
-                maxLen = max(maxLen, dp[i][j][0], dp[i][j][1],\
+                maxLen = m..(maxLen, dp[i][j][0], dp[i][j][1],\
                              dp[i][j][2], dp[i][j][3])
         r.. maxLen
     

@@ -34,7 +34,7 @@ c_ Square(Shape):
 c_ ShapeFactory:
     # @param {string} shapeType a string
     # @return {Shape} Get object of type Shape
-    ___ getShape(self, shapeType):
+    ___ getShape  shapeType):
         __ shapeType __ 'Triangle':
             r.. Triangle()
         __ shapeType __ 'Rectangle':

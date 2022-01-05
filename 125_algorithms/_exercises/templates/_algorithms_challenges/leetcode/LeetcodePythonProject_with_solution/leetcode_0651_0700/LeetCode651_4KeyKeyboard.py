@@ -4,7 +4,7 @@ Created on Oct 3, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maxA(self, N):
+    ___ maxA  N):
         """
         :type N: int
         :rtype: int
@@ -12,10 +12,10 @@ c_ Solution(object):
         n = N
         dp = [0]*(n+1)
         ___ i __ r..(1, n+1):
-            dp[i] = max(dp[i], i)
+            dp[i] = m..(dp[i], i)
             ___ j __ r..(1, n+1):
                 __ i+j+2 < n+1:
-                    dp[i+j+2] = max(dp[i+j+2], dp[i]*(j+1))
+                    dp[i+j+2] = m..(dp[i+j+2], dp[i]*(j+1))
         r.. dp[-1]
     
     ___ test

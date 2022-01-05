@@ -4,7 +4,7 @@ Created on Mar 24, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ shortestCompletingWord(self, licensePlate, words):
+    ___ shortestCompletingWord  licensePlate, words):
         """
         :type licensePlate: str
         :type words: List[str]
@@ -23,7 +23,7 @@ c_ Solution(object):
                     l = l..(res)
         r.. res
     
-    ___ contains(self, hashmap, word):
+    ___ contains  hashmap, word):
         hashmap0    # dict
         ___ c __ word:
             hashmap0[c] = hashmap0.get(c, 0)+1

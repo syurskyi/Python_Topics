@@ -21,7 +21,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ reverseList(self, head: ListNode) __ ListNode:
+    ___ reverseList  head: ListNode) __ ListNode:
         prev = N..
         cur = head
         w.... cur:
@@ -33,7 +33,7 @@ c_ Solution:
 
         r.. prev
 
-    ___ reverseList_complex(self, head: ListNode) __ ListNode:
+    ___ reverseList_complex  head: ListNode) __ ListNode:
         __ n.. head:
             r.. N..
 

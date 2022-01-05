@@ -19,7 +19,7 @@ the total number of rows in the triangle.
 c_ Solution:
     # @param triangle, a list of lists of integers
     # @return an integer
-    ___ minimumTotal(self, triangle):
+    ___ minimumTotal  triangle):
         t = [[0 ___ col __ row] ___ row __ triangle]  # Initialize t
         n = l..(triangle)
         row = n - 1

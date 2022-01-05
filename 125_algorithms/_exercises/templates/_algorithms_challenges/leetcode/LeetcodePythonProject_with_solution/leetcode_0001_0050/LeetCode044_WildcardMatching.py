@@ -4,7 +4,7 @@ Created on Jun 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ isMatch(self, s, p):
+    ___ isMatch  s, p):
         """
         :type s: str
         :type p: str

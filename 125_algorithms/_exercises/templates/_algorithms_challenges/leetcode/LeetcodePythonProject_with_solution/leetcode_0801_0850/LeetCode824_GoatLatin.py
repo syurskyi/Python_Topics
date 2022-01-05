@@ -4,7 +4,7 @@ Created on May 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ toGoatLatin(self, S):
+    ___ toGoatLatin  S):
         """
         :type S: str
         :rtype: str

@@ -2,7 +2,7 @@ c_ Solution:
     """
     BFS
     """
-    ___ coinChange(self, coins, amount):
+    ___ coinChange  coins, amount):
         """
         :type coins: List[int]
         :type amount: int
@@ -41,7 +41,7 @@ c_ Solution:
     """
     DP: TLE
     """
-    ___ coinChange(self, coins, amount):
+    ___ coinChange  coins, amount):
         """
         :type coins: List[int]
         :type amount: int

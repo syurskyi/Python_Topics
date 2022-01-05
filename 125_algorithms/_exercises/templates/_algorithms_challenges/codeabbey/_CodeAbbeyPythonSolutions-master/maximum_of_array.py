@@ -1,16 +1,16 @@
 values = l..(map(i.., input().s..()))
 
 ___ get_max_and_min
-    max = values[0]
+    m.. = values[0]
     m.. = values[0]
     ___ i __ values:
         __(i < m..):
             m.. = i
-        ____(i > max):
-            max = i
+        ____(i > m..):
+            m.. = i
     
-    r.. max, m..
+    r.. m.., m..
 
-max, m.. = get_max_and_min()
+m.., m.. = get_max_and_min()
 
-print(max, m..)
+print(m.., m..)

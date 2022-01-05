@@ -14,29 +14,29 @@ c_ Account:
         r.. l..(_transactions)
     
 
-    ___ __eq__(self,other):
+    ___ __eq__ other):
         __ isi..(other,Account):
             r.. balance __ other.balance
     
-    ___ __lt__(self,other):
+    ___ __lt__ other):
         __ isi..(other,Account):
             r.. balance < other.balance
     
     
 
-    ___ __gt__(self,other):
+    ___ __gt__ other):
         __ isi..(other,Account):
             r.. balance > other.balance
-    ___ __le__(self,other):
+    ___ __le__ other):
         __ isi..(other,Account):
             r.. balance <= other.balance
 
-    ___ __ge__(self,other):
+    ___ __ge__ other):
         __ isi..(other,Account):
             r.. balance >= other.balance
 
 
-    ___ __getitem__(self,index):
+    ___ __getitem__ index):
         r.. _transactions[index]
 
 
@@ -44,14 +44,14 @@ c_ Account:
         r.. l..(_transactions)
     
 
-    ___ __add__(self,other):
+    ___ __add__ other):
         __ isi..(other,i..):
             _transactions.a..(other)
         ____:
             r.. T..("can only subtract integer")
     
 
-    ___ __sub__(self,other):
+    ___ __sub__ other):
         __ isi..(other,i..):
             _transactions.a..(-other)
         ____:

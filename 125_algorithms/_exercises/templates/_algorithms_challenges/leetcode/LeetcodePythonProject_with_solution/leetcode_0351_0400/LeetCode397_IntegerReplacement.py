@@ -5,7 +5,7 @@ Created on Apr 5, 2017
 '''
 
 c_ Solution(object):
-    ___ integerReplacement(self, n):
+    ___ integerReplacement  n):
         steps = 0
         w.... n > 1:
             steps += 1

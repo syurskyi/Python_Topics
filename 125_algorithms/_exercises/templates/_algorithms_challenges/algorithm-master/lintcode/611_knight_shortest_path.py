@@ -25,7 +25,7 @@ c_ Solution:
     @param: T: a point
     @return: the shortest path
     """
-    ___ shortestPath(self, G, S, T):
+    ___ shortestPath  G, S, T):
         __ n.. G o. n.. S o. n.. T:
             r.. -1
 

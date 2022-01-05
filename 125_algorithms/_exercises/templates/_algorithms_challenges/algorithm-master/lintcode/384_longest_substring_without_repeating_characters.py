@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ lengthOfLongestSubstring(self, s):
+    ___ lengthOfLongestSubstring  s):
         """
         :type s: str
         :rtype: int
@@ -27,6 +27,6 @@ c_ Solution:
 
                 i += 1
 
-            ans = max(ans, j - i + 1)
+            ans = m..(ans, j - i + 1)
 
         r.. ans

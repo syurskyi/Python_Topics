@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ trapRainWater(self, heightMap):
+  ___ trapRainWater  heightMap):
     """
     :type heightMap: List[List[int]]
     :rtype: int
@@ -25,7 +25,7 @@ c_ Solution(object):
       ___ di, dj __ dirs:
         ni, nj = i + di, j + dj
         __ 0 <= ni < h a.. 0 <= nj < w a.. (ni, nj) n.. __ visited:
-          ans += max(0, height - heightMap[ni][nj])
-          heapq.heappush(heap, (max(heightMap[ni][nj], height), ni, nj))
+          ans += m..(0, height - heightMap[ni][nj])
+          heapq.heappush(heap, (m..(heightMap[ni][nj], height), ni, nj))
           visited |= {(ni, nj)}
     r.. ans

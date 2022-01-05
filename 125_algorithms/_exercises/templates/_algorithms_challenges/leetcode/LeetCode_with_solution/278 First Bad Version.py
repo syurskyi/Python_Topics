@@ -17,7 +17,7 @@ ___ isBadVersion(version):
 
 
 c_ Solution(object):
-    ___ firstBadVersion(self, n):
+    ___ firstBadVersion  n):
         """
         :param n: An integers.
         :return: An integer which is the first bad version.

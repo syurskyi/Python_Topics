@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ isValidBST(self, root):
+    ___ isValidBST  root):
         """
         :type root: TreeNode
         :rtype: bool

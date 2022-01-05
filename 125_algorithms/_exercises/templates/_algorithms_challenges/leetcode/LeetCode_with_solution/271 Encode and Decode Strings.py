@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Codec(object):
-    ___ encode(self, strs):
+    ___ encode  strs):
         """
         Encodes a list of strings to a single string.
 
@@ -17,7 +17,7 @@ c_ Codec(object):
         strs = map(l.... x: s..(l..(x))+"/"+x, strs)
         r.. reduce(l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
-    ___ decode(self, s):
+    ___ decode  s):
         """
         Decodes a single string to a list of strings.
 
@@ -36,7 +36,7 @@ c_ Codec(object):
 
 
 c_ CodecMethod2(object):
-    ___ encode(self, strs):
+    ___ encode  strs):
         """
         Encodes a list of strings to a single string.
 
@@ -48,7 +48,7 @@ c_ CodecMethod2(object):
         strs = map(l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
         r.. reduce(l.... x, y: x+y, strs, "")
 
-    ___ decode(self, s):
+    ___ decode  s):
         """
         Decodes a single string to a list of strings.
 
@@ -61,7 +61,7 @@ c_ CodecMethod2(object):
 
 
 c_ CodecError(object):
-    ___ encode(self, strs):
+    ___ encode  strs):
         """
         Encodes a list of strings to a single string.
 
@@ -76,7 +76,7 @@ c_ CodecError(object):
             ret += s+"\x00"
         r.. ret
 
-    ___ decode(self, s):
+    ___ decode  s):
         """
         Decodes a single string to a list of strings.
 

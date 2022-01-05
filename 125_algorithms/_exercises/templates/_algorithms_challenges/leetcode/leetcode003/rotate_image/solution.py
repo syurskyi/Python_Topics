@@ -1,7 +1,7 @@
 c_ Solution:
     # @param matrix, a list of lists of integers
     # @return a list of lists of integers
-    ___ rotate(self, matrix):
+    ___ rotate  matrix):
         n = l..(matrix)
         # Layers
         ___ i __ r..(n / 2):

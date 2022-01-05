@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ largestRectangleArea(self, height):
+  ___ largestRectangleArea  height):
     """
     :type height: List[int]
     :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(object):
       w.... stack a.. height[i] < height[stack[-1]]:
         h = height[stack.pop()]
         w = i - stack[-1] - 1 __ stack ____ i
-        ans = max(ans, h * w)
+        ans = m..(ans, h * w)
       stack.a..(i)
     height.pop()
     r.. ans

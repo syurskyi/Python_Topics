@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ reverseList(self, head):
+    ___ reverseList  head):
         """
         :type head: ListNode
         :rtype: ListNode
@@ -27,7 +27,7 @@ c_ Solution(object):
             p2 = tmp
         r.. p1
     
-    ___ reverseListRecursive(self, head):
+    ___ reverseListRecursive  head):
         """
         :type head: ListNode
         :rtype: ListNode

@@ -54,7 +54,7 @@ c_ Solution:
         ret    # list
         i = 0  # currently scanning index of voyage
 
-    ___ flipMatchVoyage(self, root: TreeNode, voyage: List[i..]) __ List[i..]:
+    ___ flipMatchVoyage  root: TreeNode, voyage: List[i..]) __ List[i..]:
         """
         match the voyage
         Flip the least number of nodes? There is only one answer
@@ -62,7 +62,7 @@ c_ Solution:
         dfs(root, voyage)
         r.. ret
 
-    ___ dfs(self, node, voyage):
+    ___ dfs  node, voyage):
         __ n.. node:
             r..
 

@@ -18,7 +18,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ findLHS(self, nums: List[i..]) __ i..:
+    ___ findLHS  nums: List[i..]) __ i..:
         """
         counter and iterate
         """
@@ -29,6 +29,6 @@ c_ Solution:
         ret = 0
         ___ k, v __ counter.i..:
             __ k + 1 __ counter:
-                ret = max(ret, v + counter[k + 1])
+                ret = m..(ret, v + counter[k + 1])
 
         r.. ret

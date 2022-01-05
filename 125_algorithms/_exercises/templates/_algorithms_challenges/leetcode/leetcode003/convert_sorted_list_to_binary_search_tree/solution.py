@@ -18,7 +18,7 @@ convert it to a height balanced BST.
 c_ Solution:
     # @param head, a list node
     # @return a tree node
-    ___ sortedListToBST(self, head):
+    ___ sortedListToBST  head):
         __ head __ N..
             r.. N..
         ____:

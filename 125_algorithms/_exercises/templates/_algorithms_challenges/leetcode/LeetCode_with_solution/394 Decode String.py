@@ -19,7 +19,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ decodeString(self, s):
+    ___ decodeString  s):
         """
         :type s: str
         :rtype: str
@@ -49,7 +49,7 @@ c_ Solution(object):
 
 
 c_ SolutionVerbose(object):
-    ___ decodeString(self, s):
+    ___ decodeString  s):
         """
         :type s: str
         :rtype: str
@@ -85,7 +85,7 @@ c_ SolutionVerbose(object):
 
 
 c_ SolutionError(object):
-    ___ decodeString(self, s):
+    ___ decodeString  s):
         """
         :type s: str
         :rtype: str

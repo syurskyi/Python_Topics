@@ -5,7 +5,7 @@ Created on Apr 3, 2017
 '''
 
 c_ Solution(object):
-    ___ isSubsequence(self, s, t):
+    ___ isSubsequence  s, t):
         _______ bisect
         hashmap    # dict
         ___ i, c __ e..(t):
@@ -21,20 +21,20 @@ c_ Solution(object):
             prev = hashmap[c][j]+1
         r.. T..
     
-    ___ isSubsequence_orig(self, s, t):
+    ___ isSubsequence_orig  s, t):
         _______ bisect
         idx = [[] ___ _ __ r..(256)]
         ___ i, c __ e..(t):
-            idx[ord(c)].a..(i)
+            idx[o..(c)].a..(i)
         prev = 0
         ___ i, c __ e..(s):
-            __ idx[ord(c)] __ []: r.. F..
-            j = bisect.bisect_left(idx[ord(c)], prev)
-            __ j __ l..(idx[ord(c)]): r.. F..
-            prev = idx[ord(c)][j] + 1
+            __ idx[o..(c)] __ []: r.. F..
+            j = bisect.bisect_left(idx[o..(c)], prev)
+            __ j __ l..(idx[o..(c)]): r.. F..
+            prev = idx[o..(c)][j] + 1
         r.. T..
     
-    ___ isSubsequence_slow(self, s, t):
+    ___ isSubsequence_slow  s, t):
         i, j = 0, 0
         w.... i < l..(s) a.. j < l..(t):
             __ s[i] __ t[j]:

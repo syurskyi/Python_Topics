@@ -32,7 +32,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ diStringMatch(self, S: s..) __ List[i..]:
+    ___ diStringMatch  S: s..) __ List[i..]:
         """
         Looking at prev rather than cur
             If "I", then put smallest as prev. Increase from the min
@@ -51,7 +51,7 @@ c_ Solution:
         ret.a..(mini)
         r.. ret
 
-    ___ diStringMatchErrror(self, S: s..) __ List[i..]:
+    ___ diStringMatchErrror  S: s..) __ List[i..]:
         """
         start with 0, then add the min up to 0
 

@@ -56,11 +56,11 @@ c_ Solution:
     ___ - ):
         mp = defaultdict(l..)  # element (-Y, val)  # from left to right, top to bottom
 
-    ___ verticalTraversal(self, root: TreeNode) __ List[List[i..]]:
+    ___ verticalTraversal  root: TreeNode) __ List[List[i..]]:
         dfs(root, 0, 0)
         ret    # list
         mn = m..(mp)
-        mx = max(mp)
+        mx = m..(mp)
         ___ i __ r..(mn, mx+1):
             ret.a..([
                 val
@@ -68,7 +68,7 @@ c_ Solution:
             ])
         r.. ret
 
-    ___ dfs(self, node, x, y):
+    ___ dfs  node, x, y):
         __ n.. node:
             r..
         mp[x].a..((-y, node.val))

@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ isMonotonic(self, A):
+    ___ isMonotonic  A):
         """
         :type A: List[int]
         :rtype: bool

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ sortTransformedArray(self, nums, a, b, c):
+  ___ sortTransformedArray  nums, a, b, c):
     """
     :type nums: List[int]
     :type a: int

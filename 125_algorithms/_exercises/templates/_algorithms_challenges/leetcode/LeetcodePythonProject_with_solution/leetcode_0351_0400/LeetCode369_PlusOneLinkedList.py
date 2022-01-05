@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ plusOne(self, head):
+    ___ plusOne  head):
         __ n.. head: r.. ListNode(1)
         newHead = reverse(head)
         carry = 1
@@ -31,7 +31,7 @@ c_ Solution(object):
             tail.next = ListNode(1)
         r.. reverse(newHead)
     
-    ___ reverse(self, head):
+    ___ reverse  head):
         p1 = head
         p2 = p1.next
         p1.next = N..

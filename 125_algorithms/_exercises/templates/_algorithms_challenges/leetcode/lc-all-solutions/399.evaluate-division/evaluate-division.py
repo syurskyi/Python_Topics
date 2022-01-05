@@ -5,12 +5,12 @@ c_ Graph(object):
   ___ - ):
     graph    # dict
 
-  ___ get(self, label):
+  ___ get  label):
     __ label n.. __ graph:
       graph[label] = GraphNode(label)
     r.. graph[label]
 
-  ___ query(self, node1, node2):
+  ___ query  node1, node2):
     g = graph
     __ l..(node1.nbrs) __ 0 o. l..(node2.nbrs) __ 0:
       r.. -1.0
@@ -31,7 +31,7 @@ c_ Graph(object):
 
     r.. -1.0
 
-  ___ connect(self, node1, node2, div):
+  ___ connect  node1, node2, div):
     node1.nbrs[node2.label] = div
     __ div != 0:
       node2.nbrs[node1.label] = 1.0 / div
@@ -46,7 +46,7 @@ c_ GraphNode(object):
 
 
 c_ Solution(object):
-  ___ calcEquation(self, equations, values, queries):
+  ___ calcEquation  equations, values, queries):
     """
     :type equations: List[List[str]]
     :type values: List[float]

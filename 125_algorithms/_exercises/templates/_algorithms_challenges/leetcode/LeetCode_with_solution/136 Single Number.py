@@ -6,7 +6,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ singleNumber(self, A):
+    ___ singleNumber  A):
         """
         Cannot use hash table since extra memory
         Use XOR instead

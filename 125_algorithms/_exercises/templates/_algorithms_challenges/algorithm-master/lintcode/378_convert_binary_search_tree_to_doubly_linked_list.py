@@ -18,7 +18,7 @@ c_ Solution:
     @param: root: The root of tree
     @return: the head of doubly list node
     """
-    ___ bstToDoublyList(self, root):
+    ___ bstToDoublyList  root):
         __ n.. root:
             r..
 

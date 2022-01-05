@@ -12,11 +12,11 @@ c_ Solution:
     @param root: The root of binary tree.
     @return: An integer
     """
-    ___ maxDepth(self, root):
+    ___ maxDepth  root):
         __ n.. root:
             r.. 0
 
-        r.. 1 + max(
+        r.. 1 + m..(
             maxDepth(root.left),
             maxDepth(root.right)
         )

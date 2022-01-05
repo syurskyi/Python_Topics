@@ -19,7 +19,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ increasingTriplet(self, nums):
+    ___ increasingTriplet  nums):
         """
         Brute force: O(N^3)
 
@@ -39,7 +39,7 @@ c_ Solution(object):
 
         r.. F..
 
-    ___ increasingTripletError(self, nums):
+    ___ increasingTripletError  nums):
         """
         use stack
         :type nums: List[int]

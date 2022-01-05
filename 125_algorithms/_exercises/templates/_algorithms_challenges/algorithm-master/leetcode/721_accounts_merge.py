@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ accountsMerge(self, A):
+    ___ accountsMerge  A):
         """
         :type A: List[List[str]]
         :rtype: List[List[str]]
@@ -26,14 +26,14 @@ c_ Solution:
 
         r.. [[M2N[m]] + s..(M) ___ m, M __ res.i..]
 
-    ___ connect(self, N, a, b):
+    ___ connect  N, a, b):
         _a = find(N, a)
         _b = find(N, b)
 
         __ _a __ n.. _b:
             N[_a] = _b
 
-    ___ find(self, N, a):
+    ___ find  N, a):
         __ a n.. __ N:
             N[a] = a
             r.. a

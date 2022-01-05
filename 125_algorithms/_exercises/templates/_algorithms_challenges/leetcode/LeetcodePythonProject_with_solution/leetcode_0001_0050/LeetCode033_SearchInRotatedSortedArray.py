@@ -4,7 +4,7 @@ Created on Oct 31, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ s..(self, nums, target):
+    ___ s..  nums, target):
         """
         :type nums: List[int]
         :type target: int

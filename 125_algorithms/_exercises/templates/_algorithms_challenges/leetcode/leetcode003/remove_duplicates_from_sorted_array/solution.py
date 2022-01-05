@@ -1,7 +1,7 @@
 c_ Solution:
     # @param a list of integers
     # @return an integer
-    ___ removeDuplicates(self, A):
+    ___ removeDuplicates  A):
         __ n.. A:
             r.. 0
         __ l..(A) __ 1:

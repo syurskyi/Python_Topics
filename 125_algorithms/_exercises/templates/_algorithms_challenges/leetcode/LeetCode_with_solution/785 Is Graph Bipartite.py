@@ -45,7 +45,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ isBipartite(self, graph: List[List[i..]]) __ bool:
+    ___ isBipartite  graph: List[List[i..]]) __ bool:
         """
         coloring the graph
         dfs coloring
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ dfs(self, G, u, color):
+    ___ dfs  G, u, color):
         ___ nbr __ G[u]:
             __ nbr __ color:
                 __ color[nbr] __ color[u]:
@@ -75,7 +75,7 @@ c_ Solution:
 
 
 c_ SolutionError:
-    ___ isBipartite(self, graph: List[List[i..]]) __ bool:
+    ___ isBipartite  graph: List[List[i..]]) __ bool:
         G = graph
         A, B = set(), set()
         visited = defaultdict(bool)
@@ -86,7 +86,7 @@ c_ SolutionError:
 
         r.. T..
 
-    ___ dfs(self, G, visited, u, A, B, is_A):
+    ___ dfs  G, visited, u, A, B, is_A):
         visited[u] = T..
         __ is_A:
             A.add(u)

@@ -22,7 +22,7 @@ c_ NumMatrix:
             ___ y __ r..(n):
                 update(x, y, matrix[x][y])
 
-    ___ update(self, x, y, val):
+    ___ update  x, y, val):
         """
         :type x: int
         :type y: int
@@ -44,7 +44,7 @@ c_ NumMatrix:
                 j += (j & -j)
             i += (i & -i)
 
-    ___ sumRegion(self, x1, y1, x2, y2):
+    ___ sumRegion  x1, y1, x2, y2):
         """
         :type x1: int
         :type y1: int
@@ -59,7 +59,7 @@ c_ NumMatrix:
             s..(x1, y1),
         ))
 
-    ___ s..(self, x, y):
+    ___ s..  x, y):
         res = 0
         i = x
         j = y

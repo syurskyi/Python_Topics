@@ -6,7 +6,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution(object):
-    ___ frequencySort(self, s):
+    ___ frequencySort  s):
         """
         Brute force: counter, sort O(n log n)
 

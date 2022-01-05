@@ -10,7 +10,7 @@ c) Replace a character
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ minDistance(self, word1, word2):
+    ___ minDistance  word1, word2):
         """
         dp: Wagner-Fischer algorithm
         http://en.wikipedia.org/wiki/Wagner-Fischer_algorithm

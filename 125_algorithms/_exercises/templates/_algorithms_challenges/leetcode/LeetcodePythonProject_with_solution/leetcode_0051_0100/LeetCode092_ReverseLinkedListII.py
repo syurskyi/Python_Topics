@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ reverseBetween(self, head, m, n):
+    ___ reverseBetween  head, m, n):
         """
         :type head: ListNode
         :type m: int

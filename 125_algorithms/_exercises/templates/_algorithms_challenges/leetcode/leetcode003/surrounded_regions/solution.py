@@ -2,7 +2,7 @@ c_ Solution:
     # @param board, a 9x9 2D array
     # Capture all regions by modifying the input board in-place.
     # Do not return any value.
-    ___ solve(self, board):
+    ___ solve  board):
         n = l..(board)
         __ n __ 0:
             r..
@@ -24,7 +24,7 @@ c_ Solution:
                 __ board[i][j] __ 'Y':
                     board[i][j] = 'O'
 
-    ___ bfs(self, board, x, y):
+    ___ bfs  board, x, y):
         """Use BFS to set O to Y"""
         queue    # list
         board[y][x] = 'Y'
@@ -37,7 +37,7 @@ c_ Solution:
                     board[y][x] = 'Y'
                     queue.a..((x, y))
 
-    ___ adjacent(self, board, x, y):
+    ___ adjacent  board, x, y):
         res    # list
         __ x + 1 < m a.. board[y][x + 1] __ 'O':
             res.a..((x + 1, y))

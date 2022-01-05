@@ -2,7 +2,7 @@
 c_ Solution:
     # @param n, an integer
     # @return an integer
-    ___ reverseBits(self, n):
+    ___ reverseBits  n):
         __ n.. n:
             r.. 0
 
@@ -24,7 +24,7 @@ c_ Solution:
 c_ Solution:
     # @param n, an integer
     # @return an integer
-    ___ reverseBits(self, n):
+    ___ reverseBits  n):
         ans = 0
 
         __ n.. n:

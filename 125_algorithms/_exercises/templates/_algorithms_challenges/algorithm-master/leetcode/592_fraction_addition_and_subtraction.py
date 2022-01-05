@@ -2,7 +2,7 @@ _______ __
 
 
 c_ Solution:
-    ___ fractionAddition(self, E):
+    ___ fractionAddition  E):
         """
         :type E: str
         :rtype: str
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. '{}/{}'.f..(a, b)
 
-    ___ get_gcd(self, a, b):
+    ___ get_gcd  a, b):
         w.... b:
             a, b = b, a % b
         r.. a

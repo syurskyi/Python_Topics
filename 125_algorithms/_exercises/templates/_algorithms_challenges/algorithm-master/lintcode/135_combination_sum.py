@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: An integer
     @return: A list of lists of integers
     """
-    ___ combinationSum(self, A, target):
+    ___ combinationSum  A, target):
         ans    # list
         __ n.. A:
             r.. ans
@@ -13,7 +13,7 @@ c_ Solution:
         dfs(A, 0, target, ans, [])
         r.. ans
 
-    ___ dfs(self, A, start, remaining, ans, path):
+    ___ dfs  A, start, remaining, ans, path):
         __ remaining __ 0:
             ans.a..(path | )
             r..

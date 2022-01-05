@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ reconstructQueue(self, people):
+  ___ reconstructQueue  people):
     """
     :type people: List[List[int]]
     :rtype: List[List[int]]

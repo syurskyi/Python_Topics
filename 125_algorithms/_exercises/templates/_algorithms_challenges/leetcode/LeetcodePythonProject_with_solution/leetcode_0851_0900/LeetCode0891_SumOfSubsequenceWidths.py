@@ -4,7 +4,7 @@ Created on Oct 31, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ sumSubseqWidths(self, A):
+    ___ sumSubseqWidths  A):
         """
         :type A: List[int]
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution(object):
             c = (c*2)%MOD
         r.. (res+MOD)%MOD
     
-    ___ sumSubseqWidths_own_TLE(self, A):
+    ___ sumSubseqWidths_own_TLE  A):
         """
         :type A: List[int]
         :rtype: int
@@ -26,10 +26,10 @@ c_ Solution(object):
         dfs(arr, 0, [], nums)
         res = 0
         ___ arr __ nums:
-            res = (res + max(arr) - m..(arr)) % (10**9+7)
+            res = (res + m..(arr) - m..(arr)) % (10**9+7)
         r.. res
     
-    ___ dfs(self, arr, idx, curr, nums):
+    ___ dfs  arr, idx, curr, nums):
         __ curr:
             nums.a..(l..(curr))
         ___ i __ r..(idx, l..(arr)):

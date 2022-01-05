@@ -24,7 +24,7 @@ c_ TreeNode(object):
 
 
 c_ Solution(object):
-    ___ preorderTraversal(self, root):
+    ___ preorderTraversal  root):
         """Morris"""
         ret    # list
         cur = root
@@ -47,7 +47,7 @@ c_ Solution(object):
 
         r.. ret
 
-    ___ preorderTraversal_memory(self, root):
+    ___ preorderTraversal_memory  root):
         """
         dfs
         :param root:
@@ -58,7 +58,7 @@ c_ Solution(object):
         r.. lst
 
 
-    ___ preTraverse(self, node, lst):
+    ___ preTraverse  node, lst):
         __ n.. node:
             r..
         lst.a..(node.val)
@@ -66,7 +66,7 @@ c_ Solution(object):
         preTraverse(node.left, lst)
         preTraverse(node.right, lst)
 
-    ___ preTraverse_itr(self, root, lst):
+    ___ preTraverse_itr  root, lst):
         """
         stack = [R, L, cur]
 
@@ -91,7 +91,7 @@ c_ Solution(object):
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     t1 = TreeNode(1)
     t1.left = TreeNode(2)
     print Solution().preorderTraversal(t1)

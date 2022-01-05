@@ -33,7 +33,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ validMountainArray(self, A: List[i..]) __ bool:
+    ___ validMountainArray  A: List[i..]) __ bool:
         """
         related to 845 Longest Mountain in Array
 

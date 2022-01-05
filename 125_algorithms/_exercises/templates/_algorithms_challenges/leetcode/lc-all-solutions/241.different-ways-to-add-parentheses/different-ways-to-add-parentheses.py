@@ -2,7 +2,7 @@ ____ operator _______ *
 
 
 c_ Solution(object):
-  ___ diffWaysToCompute(self, input):
+  ___ diffWaysToCompute  input):
     """
     :type input: str
     :rtype: List[int]

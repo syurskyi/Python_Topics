@@ -10,13 +10,13 @@ c_ Luhn:
         r.. [addend(idx, i..(val)) ___ idx, val __
                 e..(r..(s..(number)))]
 
-    ___ addend(self, idx, val):
+    ___ addend  idx, val):
         r.. subtract_nine(idx, double_every_other(idx, val))
 
-    ___ double_every_other(self, idx, val):
+    ___ double_every_other  idx, val):
         r.. val * 2 __ idx % 2 __ 1 ____ val
 
-    ___ subtract_nine(self, idx, val):
+    ___ subtract_nine  idx, val):
         r.. val - 9 __ val > 10 ____ val
 
     ___ is_valid

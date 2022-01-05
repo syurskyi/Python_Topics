@@ -4,7 +4,7 @@ Created on Nov 2, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ strStr(self, haystack, needle):
+    ___ strStr  haystack, needle):
         """
         :type haystack: str
         :type needle: str

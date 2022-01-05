@@ -13,7 +13,7 @@ c_ Solution:
     @param: target: An integer
     @return: all valid paths
     """
-    ___ binaryTreePathSum3(self, root, target):
+    ___ binaryTreePathSum3  root, target):
         """
         1. using `dfs` to visit every node in that tree
         2. once enter a node, start to find the path based on it
@@ -23,7 +23,7 @@ c_ Solution:
         dfs(root, target, ans)
         r.. ans
 
-    ___ dfs(self, node, target, ans):
+    ___ dfs  node, target, ans):
         __ n.. node:
             r..
 
@@ -32,7 +32,7 @@ c_ Solution:
         dfs(node.left, target, ans)
         dfs(node.right, target, ans)
 
-    ___ find_path(self, node, start, remaining, ans, path):
+    ___ find_path  node, start, remaining, ans, path):
         path.a..(node.val)
 
         remaining -= node.val

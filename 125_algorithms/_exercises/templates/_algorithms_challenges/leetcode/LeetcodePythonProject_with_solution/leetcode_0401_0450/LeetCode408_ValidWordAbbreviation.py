@@ -5,7 +5,7 @@ Created on Apr 10, 2017
 '''
 
 c_ Solution(object):
-    ___ validWordAbbreviation(self, word, abbr):
+    ___ validWordAbbreviation  word, abbr):
         i, j = 0, 0
         w.... i < l..(word) a.. j < l..(abbr):
             __ abbr[j].isdigit

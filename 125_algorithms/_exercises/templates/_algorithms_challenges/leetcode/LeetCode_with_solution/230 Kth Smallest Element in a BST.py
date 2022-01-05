@@ -21,7 +21,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ kthSmallest(self, root, k):
+    ___ kthSmallest  root, k):
         """
         :type root: TreeNode
         :type k: int
@@ -35,7 +35,7 @@ c_ Solution:
         ____:
             r.. kthSmallest(root.left, k)
 
-    ___ cnt(self, root):
+    ___ cnt  root):
         __ n.. root:
             r.. 0
 

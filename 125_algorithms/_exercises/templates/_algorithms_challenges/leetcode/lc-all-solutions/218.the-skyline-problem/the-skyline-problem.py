@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ Solution(object):
-  ___ getSkyline(self, buildings):
+  ___ getSkyline  buildings):
     """
     :type buildings: List[List[int]]
     :rtype: List[List[int]]

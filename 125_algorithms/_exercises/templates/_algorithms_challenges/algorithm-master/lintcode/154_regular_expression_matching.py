@@ -20,7 +20,7 @@ case 3: `P[j-1]` is `a` and `a` == `P[j-1]` == `S[i-1]`
 
 
 c_ Solution:
-    ___ isMatch(self, s, p):
+    ___ isMatch  s, p):
         """
         :type s: str
         :type p: str

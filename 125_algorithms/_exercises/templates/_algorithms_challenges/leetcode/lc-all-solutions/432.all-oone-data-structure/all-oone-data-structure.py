@@ -37,10 +37,10 @@ c_ Node(object):
     next = N..
     keys = set()
 
-  ___ add(self, key):
+  ___ add  key):
     keys |= {key}
 
-  ___ remove(self, key):
+  ___ remove  key):
     keys -= {key}
 
   ___ isEmpty
@@ -62,7 +62,7 @@ c_ AllOne(object):
     head = Node(-1)
     List.initHead(head)
 
-  ___ inc(self, key):
+  ___ inc  key):
     """
     Inserts a new key <Key> with value 1. Or increments an existing key by 1.
     :type key: str
@@ -95,7 +95,7 @@ c_ AllOne(object):
         del d[key]
       d[key] = newNode
 
-  ___ dec(self, key):
+  ___ dec  key):
     """
     Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
     :type key: str

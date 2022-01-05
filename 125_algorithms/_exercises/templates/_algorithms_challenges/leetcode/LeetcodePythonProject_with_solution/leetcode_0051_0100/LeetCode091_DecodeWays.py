@@ -5,7 +5,7 @@ Created on Jan 28, 2017
 '''
 
 c_ Solution(object):
-    ___ numDecodings(self, s):
+    ___ numDecodings  s):
         """
         :type s: str
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution(object):
                 dp[i] += dp[i-2]
         r.. dp[-1]
     
-    ___ numDecodings_orig(self, s):
+    ___ numDecodings_orig  s):
         """
         :type s: str
         :rtype: int

@@ -4,7 +4,7 @@ Created on Aug 29, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ nearestPalindromic(self, n):
+    ___ nearestPalindromic  n):
         """
         :type n: str
         :rtype: str

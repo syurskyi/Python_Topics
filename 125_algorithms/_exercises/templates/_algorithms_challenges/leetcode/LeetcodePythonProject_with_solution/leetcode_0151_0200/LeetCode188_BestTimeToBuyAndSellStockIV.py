@@ -5,7 +5,7 @@ Created on Feb 16, 2017
 '''
 
 c_ Solution(object):
-    ___ maxProfit(self, k, prices):
+    ___ maxProfit  k, prices):
         """
         :type k: int
         :type prices: List[int]
@@ -18,14 +18,14 @@ c_ Solution(object):
         ___ i __ r..(1, k+1):
             tmpMax = -prices[0]
             ___ j __ r..(1, n):
-                dp[i][j] = max(dp[i][j-1], tmpMax+prices[j])
-                tmpMax = max(tmpMax, dp[i-1][j-1]-prices[j])
+                dp[i][j] = m..(dp[i][j-1], tmpMax+prices[j])
+                tmpMax = m..(tmpMax, dp[i-1][j-1]-prices[j])
         r.. dp[-1][-1]
     
-    ___ quickSolve(self, prices):
+    ___ quickSolve  prices):
         res = 0
         ___ i __ r..(1, l..(prices)):
-            res += max(0, prices[i]-prices[i-1])
+            res += m..(0, prices[i]-prices[i-1])
         r.. res
     
     ___ test

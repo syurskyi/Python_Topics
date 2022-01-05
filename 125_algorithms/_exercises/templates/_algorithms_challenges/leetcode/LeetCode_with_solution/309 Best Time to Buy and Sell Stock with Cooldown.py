@@ -16,7 +16,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ maxProfit(self, A):
+    ___ maxProfit  A):
         """
         O(n^2)
         Let F[i] be max profit from day 0 to day i, selling stock at day i
@@ -35,20 +35,20 @@ c_ Solution(object):
         __ n __ 0 o. n __ 1:
             r.. 0
         __ n __ 2:
-            r.. max(0, A[1]-A[0])
+            r.. m..(0, A[1]-A[0])
 
         CD = 1  # cool down
         F = [0 ___ _ __ xrange(n)]
         M = [0 ___ _ __ xrange(n)]
         F[1] = A[1]-A[0]
-        M[1] = max(M[0], F[1])
-        F[2] = max(A[2]-A[2-1-i] ___ i __ xrange(2))
-        M[2] = max(M[1], F[2])
+        M[1] = m..(M[0], F[1])
+        F[2] = m..(A[2]-A[2-1-i] ___ i __ xrange(2))
+        M[2] = m..(M[1], F[2])
 
         # core
         ___ i __ xrange(3, n):
-            F[i] = max(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
-            M[i] = max(M[i-1], F[i])
+            F[i] = m..(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
+            M[i] = m..(M[i-1], F[i])
 
         r.. M[-1]
 

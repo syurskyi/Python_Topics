@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ removeInvalidParentheses(self, s):
+    ___ removeInvalidParentheses  s):
         """
         Brute force: BFS and then validate
 
@@ -28,7 +28,7 @@ c_ Solution(object):
         dfs(s, "", 0, N.., 0, rmcnt, ret)
         r.. ret
 
-    ___ minrm(self, s):
+    ___ minrm  s):
         """
         Find the minimal removal count to limit the search depth
         returns minimal number of removals
@@ -47,7 +47,7 @@ c_ Solution(object):
         rmcnt += left
         r.. rmcnt
 
-    ___ dfs(self, s, cur, left, pi, i, rmcnt, ret):
+    ___ dfs  s, cur, left, pi, i, rmcnt, ret):
         """
         Remove parenthesis
         backtracking, post-check

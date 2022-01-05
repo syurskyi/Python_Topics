@@ -42,7 +42,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ distanceK(self, root: TreeNode, target: TreeNode, K: i..) __ List[i..]:
+    ___ distanceK  root: TreeNode, target: TreeNode, K: i..) __ List[i..]:
         """
         similar to SolutionComplicated
         get its ancestor's distance, but at the same down go down through the tree
@@ -53,7 +53,7 @@ c_ Solution:
         ancestor_dist(root, K, target, ret)
         r.. ret
 
-    ___ dfs_down(self, node, d, ret):
+    ___ dfs_down  node, d, ret):
         """
         same as dfs1
         """
@@ -65,7 +65,7 @@ c_ Solution:
             dfs_down(node.left, d - 1, ret)
             dfs_down(node.right, d - 1, ret)
 
-    ___ ancestor_dist(self, node, K, target, ret):
+    ___ ancestor_dist  node, K, target, ret):
         __ n.. node:
             r.. float('inf')
 
@@ -87,7 +87,7 @@ c_ Solution:
 
 
 c_ SolutionComplicated:
-    ___ distanceK(self, root: TreeNode, target: TreeNode, K: i..) __ List[i..]:
+    ___ distanceK  root: TreeNode, target: TreeNode, K: i..) __ List[i..]:
         """
         break the problem into two part
         1st problem: target's subtree - easy to solve
@@ -100,7 +100,7 @@ c_ SolutionComplicated:
         dfs2(root, target, K, float("inf"), hm, ret)
         r.. ret
 
-    ___ dfs1(self, node, K, ret):
+    ___ dfs1  node, K, ret):
         """1st problem"""
         __ n.. node:
             r..
@@ -111,7 +111,7 @@ c_ SolutionComplicated:
             dfs1(node.left, K-1, ret)
             dfs1(node.right, K-1, ret)
 
-    ___ ancestor_dist(self, node, target, hm):
+    ___ ancestor_dist  node, target, hm):
         __ n.. node:
             r.. float('inf')
 
@@ -124,7 +124,7 @@ c_ SolutionComplicated:
 
         r.. hm[node.val]
 
-    ___ dfs2(self, node, target, K, dist, hm, ret):
+    ___ dfs2  node, target, K, dist, hm, ret):
         """2nd problem"""
         __ n.. node:
             r..

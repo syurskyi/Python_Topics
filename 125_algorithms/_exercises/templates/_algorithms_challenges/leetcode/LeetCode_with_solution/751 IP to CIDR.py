@@ -66,7 +66,7 @@ weights = [
 
 
 c_ Solution:
-    ___ ipToCIDR(self, ip: s.., n: i..) __ List[s..]:
+    ___ ipToCIDR  ip: s.., n: i..) __ List[s..]:
         """
         bit manipulation
 
@@ -104,14 +104,14 @@ c_ Solution:
 
         r.. ret
 
-    ___ to_bin(self, ip):
+    ___ to_bin  ip):
         ret = 0
         ___ n, w __ z..(map(i.., ip.s..(".")), weights):
             ret += n << w
 
         r.. ret
 
-    ___ to_ip(self, bin):
+    ___ to_ip  bin):
         ret    # list
         ___ w __ weights:
             ret.a..(
@@ -119,7 +119,7 @@ c_ Solution:
             )
         r.. ".".j..(map(s.., ret))
 
-    ___ get_lsb(self, n):
+    ___ get_lsb  n):
         lsb = 0
         w.... (n >> lsb) & 1 __ 0:
             lsb += 1

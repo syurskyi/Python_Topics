@@ -4,7 +4,7 @@ Created on Oct 29, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maxProfit(self, prices, fee):
+    ___ maxProfit  prices, fee):
         """
         :type prices: List[int]
         :type fee: int
@@ -16,9 +16,9 @@ c_ Solution(object):
         sell = [0]*n
         buy[0] = -prices[0]
         ___ i __ r..(1, n):
-            buy[i] = max(buy[i-1], sell[i-1]-prices[i])
-            sell[i] = max(sell[i-1], buy[i-1]+prices[i]-fee)
-        r.. max(buy[-1], sell[-1])
+            buy[i] = m..(buy[i-1], sell[i-1]-prices[i])
+            sell[i] = m..(sell[i-1], buy[i-1]+prices[i]-fee)
+        r.. m..(buy[-1], sell[-1])
     
     ___ test
         testCases = [

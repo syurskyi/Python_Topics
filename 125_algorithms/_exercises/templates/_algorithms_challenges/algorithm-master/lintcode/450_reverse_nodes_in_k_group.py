@@ -13,7 +13,7 @@ c_ Solution:
     @param: k: An integer
     @return: a ListNode
     """
-    ___ reverseKGroup(self, head, k):
+    ___ reverseKGroup  head, k):
         __ n.. head:
             r..
 
@@ -26,14 +26,14 @@ c_ Solution:
 
         r.. dummy.next
 
-    ___ find_kth(self, head, k):
+    ___ find_kth  head, k):
         ___ i __ r..(k):
             __ n.. head:
                 r..
             head = head.next
         r.. head
 
-    ___ reverse(self, head):
+    ___ reverse  head):
         pre = nxt = N..
         w.... head:
             nxt = head.next
@@ -42,7 +42,7 @@ c_ Solution:
             head = nxt
         r.. pre
 
-    ___ reverse_next_kth(self, head, k):
+    ___ reverse_next_kth  head, k):
         nk = find_kth(head, k)
         __ n.. nk:
             r..

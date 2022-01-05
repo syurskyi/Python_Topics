@@ -3,12 +3,12 @@
 
 
 ___ breaking_records(score):
-    m.. = max = score[0]
+    m.. = m.. = score[0]
     min_count = max_count = 0
     ___ i __ score[1:]:
-        __ i > max:
+        __ i > m..:
             max_count += 1
-            max = i
+            m.. = i
         __ i < m..:
             min_count += 1
             m.. = i

@@ -6,7 +6,7 @@ For example, given the range [5, 7], you should return 4.
 """
 
 c_ Solution(object):
-    ___ rangeBitwiseAnd(self, m, n):
+    ___ rangeBitwiseAnd  m, n):
         """
         :type m: int
         :type n: int

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minMeetingRooms(self, intervals):
+  ___ minMeetingRooms  intervals):
     """
     :type intervals: List[Interval]
     :rtype: int
@@ -16,5 +16,5 @@ c_ Solution(object):
         count += 1
       ____:
         count -= 1
-      ans = max(ans, count)
+      ans = m..(ans, count)
     r.. ans

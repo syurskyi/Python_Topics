@@ -5,7 +5,7 @@ Created on Apr 12, 2017
 '''
 
 c_ Solution(object):
-    ___ pacificAtlantic(self, matrix):
+    ___ pacificAtlantic  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: List[List[int]]
@@ -27,7 +27,7 @@ c_ Solution(object):
                     result.a..([i, j])
         r.. result
     
-    ___ dfs(self, matrix, i, j, visited):
+    ___ dfs  matrix, i, j, visited):
         visited[i][j] = T..
         m, n = l..(matrix), l..(matrix[0])
         ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):

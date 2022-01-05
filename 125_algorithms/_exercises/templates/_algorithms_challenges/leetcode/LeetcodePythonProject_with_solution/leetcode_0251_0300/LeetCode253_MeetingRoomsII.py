@@ -10,7 +10,7 @@ c_ Interval(object):
         end = e
 
 c_ Solution(object):
-    ___ minMeetingRooms(self, intervals):
+    ___ minMeetingRooms  intervals):
         """
         :type intervals: List[Interval]
         :rtype: int
@@ -23,7 +23,7 @@ c_ Solution(object):
             w.... heap a.. heap[0] <= interval.start:
                 heapq.heappop(heap)
             heapq.heappush(heap, interval.end)
-            maxLen = max(maxLen, l..(heap))
+            maxLen = m..(maxLen, l..(heap))
         r.. maxLen
      
     ___ test

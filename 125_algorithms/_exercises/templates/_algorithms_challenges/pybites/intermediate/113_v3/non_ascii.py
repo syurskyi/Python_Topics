@@ -5,9 +5,9 @@ ___ extract_non_ascii_words(text):
 
     result    # list
     ___ word __ words:
-        try:
+        ___
             word.encode('ascii')
-        except Exception __ e:
+        ______ Exception __ e:
             print(e)
             result.a..(word)
 

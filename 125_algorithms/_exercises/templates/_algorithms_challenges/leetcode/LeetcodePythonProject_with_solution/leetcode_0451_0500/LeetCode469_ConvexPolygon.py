@@ -5,7 +5,7 @@ Created on Apr 25, 2017
 '''
 
 c_ Solution(object):
-    ___ isConvex(self, points):
+    ___ isConvex  points):
         """
         :type points: List[List[int]]
         :rtype: bool
@@ -24,7 +24,7 @@ c_ Solution(object):
             __ gotNegative a.. gotPositive: r.. F..
         r.. T..
     
-    ___ crossProductLength(self, ax, ay, bx, by, cx, cy):
+    ___ crossProductLength  ax, ay, bx, by, cx, cy):
         bax = ax-bx
         bay = ay-by
         bcx = cx-bx

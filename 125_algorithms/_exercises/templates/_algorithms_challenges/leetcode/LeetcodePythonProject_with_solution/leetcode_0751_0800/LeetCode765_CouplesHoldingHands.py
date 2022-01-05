@@ -4,7 +4,7 @@ Created on Apr 3, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minSwapsCouples(self, row):
+    ___ minSwapsCouples  row):
         """
         :type row: List[int]
         :rtype: int

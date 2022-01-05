@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findStrobogrammatic(self, n):
+  ___ findStrobogrammatic  n):
     """
     :type n: int
     :rtype: List[str]
@@ -33,7 +33,7 @@ c_ Solution(object):
     dfs(n / 2, [], n)
     r.. res
 
-  ___ strobogrammaticInRange(self, low, high):
+  ___ strobogrammaticInRange  low, high):
     """
     :type low: str
     :type high: str

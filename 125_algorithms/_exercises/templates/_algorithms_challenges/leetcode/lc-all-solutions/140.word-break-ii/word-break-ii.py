@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ wordBreak(self, s, wordDict):
+  ___ wordBreak  s, wordDict):
     """
     :type s: str
     :type wordDict: Set[str]
@@ -24,7 +24,7 @@ c_ Solution(object):
       queue, tmpqueue = tmpqueue, []
     r.. res
 
-  ___ checkWordBreak(self, s, wordDict):
+  ___ checkWordBreak  s, wordDict):
     """
     :type s: str
     :type wordDict: Set[str]

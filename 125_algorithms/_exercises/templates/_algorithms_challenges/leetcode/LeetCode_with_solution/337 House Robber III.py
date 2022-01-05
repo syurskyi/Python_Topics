@@ -37,7 +37,7 @@ c_ Solution(object):
         cache_rob    # dict
         cache_notrob    # dict
 
-    ___ rob(self, root):
+    ___ rob  root):
         """
         possible rob at root
         :type root: TreeNode
@@ -47,7 +47,7 @@ c_ Solution(object):
             r.. 0
 
         __ root n.. __ cache_rob:
-            val = max(
+            val = m..(
                 notrob(root),
                 root.val + notrob(root.left) + notrob(root.right)
             )
@@ -55,7 +55,7 @@ c_ Solution(object):
 
         r.. cache_rob[root]
 
-    ___ notrob(self, root):
+    ___ notrob  root):
         """
         not rob at the root
         :param root: TreeNode
@@ -76,7 +76,7 @@ c_ Solution(object):
 
 
 c_ SolutionTLE(object):
-    ___ rob(self, root):
+    ___ rob  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -84,12 +84,12 @@ c_ SolutionTLE(object):
         __ root __ N..
             r.. 0
 
-        r.. max(
+        r.. m..(
             dorob(root),
             notrob(root)
         )
 
-    ___ dorob(self, root):
+    ___ dorob  root):
         __ root __ N..
             r.. 0
 
@@ -99,9 +99,9 @@ c_ SolutionTLE(object):
             notrob(root.right)
         )
 
-    ___ notrob(self, root):
+    ___ notrob  root):
         __ root __ N..
             r.. 0
 
-        r.. (max(notrob(root.left), rob(root.left)) +
-                    max(notrob(root.right), rob(root.right)))
+        r.. (m..(notrob(root.left), rob(root.left)) +
+                    m..(notrob(root.right), rob(root.right)))

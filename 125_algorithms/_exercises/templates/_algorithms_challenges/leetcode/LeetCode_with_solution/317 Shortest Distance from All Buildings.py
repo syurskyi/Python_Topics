@@ -10,7 +10,7 @@ c_ Solution(object):
     ___ - ):
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    ___ shortestDistance(self, grid):
+    ___ shortestDistance  grid):
         """
         BFS & collect all distance
 
@@ -49,7 +49,7 @@ c_ Solution(object):
 
         r.. mini __ mini != sys.maxint ____ -1
 
-    ___ bfs(self, grid, acc, reachable, x, y):
+    ___ bfs  grid, acc, reachable, x, y):
         d = 0
         m, n = l..(grid), l..(grid[0])
         visited = [[F.. ___ _ __ xrange(n)] ___ _ __ xrange(m)]

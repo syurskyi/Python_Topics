@@ -21,7 +21,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ postorderTraversal(self, root):
+    ___ postorderTraversal  root):
         """
         dfs
         Recursive post-order traversal is trivial. What is the iteration version for this
@@ -34,7 +34,7 @@ c_ Solution:
 
 
 
-    ___ postTraverse(self, node, lst):
+    ___ postTraverse  node, lst):
         __ n.. node:
             r..
         postTraverse(node.left, lst)
@@ -42,7 +42,7 @@ c_ Solution:
 
         lst.a..(node.val)
 
-    ___ postTraverse_itr(self, root, lst):
+    ___ postTraverse_itr  root, lst):
         """
         stack = [L, R, cur]
 
@@ -69,7 +69,7 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     t1 = TreeNode(1)
     t1.left = TreeNode(2)
     print Solution().postorderTraversal(t1)

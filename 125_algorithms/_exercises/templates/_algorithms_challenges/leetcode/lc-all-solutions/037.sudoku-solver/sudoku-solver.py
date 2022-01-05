@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ solveSudoku(self, board):
+  ___ solveSudoku  board):
     """
     :type board: List[List[str]]
     :rtype: void Do not return anything, modify board in-place instead.

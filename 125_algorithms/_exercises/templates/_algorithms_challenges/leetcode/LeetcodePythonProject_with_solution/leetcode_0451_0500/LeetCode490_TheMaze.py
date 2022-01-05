@@ -5,7 +5,7 @@ Created on May 8, 2017
 '''
 
 c_ Solution(object):
-    ___ hasPath(self, maze, start, destination):
+    ___ hasPath  maze, start, destination):
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -26,7 +26,7 @@ c_ Solution(object):
                     queue.a..((x, y))
         r.. F..
     
-    ___ getNextSteps(self, maze, i, j):
+    ___ getNextSteps  maze, i, j):
         result = set()
         dirs = (1, 0), (0, 1), (-1, 0), (0, -1)
         m, n = l..(maze), l..(maze[0])

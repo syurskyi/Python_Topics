@@ -6,22 +6,22 @@ c_ ComplexNumber(object):
         real = real
         imaginary = imaginary
 
-    ___ add(self, other):
+    ___ add  other):
         r = real + other.real
         i = imaginary + other.imaginary
         r.. ComplexNumber(r, i)
 
-    ___ mul(self, other):
+    ___ mul  other):
         r = real * other.real
         i = imaginary * other.imaginary
         r.. ComplexNumber(r, i)
 
-    ___ sub(self, other):
+    ___ sub  other):
         r = real - other.real
         i = imaginary - other.imaginary
         r.. ComplexNumber(r, i)
 
-    ___ div(self, other):
+    ___ div  other):
         d = other.real * other.real + other.imaginary * other.imaginary
         r = (real * other.real + imaginary *
              other.imaginary) / float(d)

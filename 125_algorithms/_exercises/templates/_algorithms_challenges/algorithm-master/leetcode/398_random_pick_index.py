@@ -8,7 +8,7 @@ c_ Solution:
         """
         A = A
 
-    ___ pick(self, target):
+    ___ pick  target):
         """
         :type target: int
         :rtype: int

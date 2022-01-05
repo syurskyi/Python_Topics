@@ -4,7 +4,7 @@ Created on Nov 4, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numSpecialEquivGroups(self, A):
+    ___ numSpecialEquivGroups  A):
         """
         :type A: List[str]
         :rtype: int
@@ -14,10 +14,10 @@ c_ Solution(object):
             hashset.add(getHash(w))
         r.. l..(hashset)
     
-    ___ getHash(self, word):
+    ___ getHash  word):
         arr = [[0]*26, [0]*26]
         ___ i, c __ e..(word):
-            arr[i%2][ord(c)-ord('a')] += 1
+            arr[i%2][o..(c)-o..('a')] += 1
         r.. '|'.j..([','.j..(s..(num) ___ num __ arr0) ___ arr0 __ arr])
     
     ___ test

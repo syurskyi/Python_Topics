@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canFinish(self, numCourses, prerequisites):
+  ___ canFinish  numCourses, prerequisites):
     """
     :type numCourses: int
     :type prerequisites: List[List[int]]

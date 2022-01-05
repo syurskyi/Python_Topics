@@ -16,13 +16,13 @@ c_ UnionFind(object):
         sz = [-1 ___ _ __ xrange(rows*cols)]  # root -> size
         count = 0
 
-    ___ add(self, item):
+    ___ add  item):
         __ pi[item] __ -1:
             pi[item] = item
             sz[item] = 1
             count += 1
 
-    ___ union(self, a, b):
+    ___ union  a, b):
         pi1 = _pi(a)
         pi2 = _pi(b)
 
@@ -34,7 +34,7 @@ c_ UnionFind(object):
             sz[pi2] += sz[pi1]
             count -= 1
 
-    ___ _pi(self, item):
+    ___ _pi  item):
         """
         Get root with path compression
         """
@@ -52,7 +52,7 @@ c_ Solution:
     ___ - ):
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ numIslands2(self, n, m, operators):
+    ___ numIslands2  n, m, operators):
         rows = n
         cols = m
         unroll = l.... x, y: x*cols + y  # hash will be slower

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ judgeCircle(self, moves):
+  ___ judgeCircle  moves):
     """
     :type moves: str
     :rtype: bool

@@ -46,7 +46,7 @@ c_ Stack(object):
         queue1    # list
         queue2    # list
 
-    ___ push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: nothing

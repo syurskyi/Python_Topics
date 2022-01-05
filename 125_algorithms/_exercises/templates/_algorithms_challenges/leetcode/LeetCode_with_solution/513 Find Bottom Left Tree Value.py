@@ -36,7 +36,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ findBottomLeftValue(self, root):
+    ___ findBottomLeftValue  root):
         """
         BFS
 

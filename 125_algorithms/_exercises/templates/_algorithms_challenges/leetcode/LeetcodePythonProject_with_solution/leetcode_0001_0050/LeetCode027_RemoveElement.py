@@ -4,7 +4,7 @@ Created on Nov 2, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ removeElement(self, nums, val):
+    ___ removeElement  nums, val):
         """
         :type nums: List[int]
         :type val: int

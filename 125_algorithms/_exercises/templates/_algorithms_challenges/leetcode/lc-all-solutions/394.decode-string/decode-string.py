@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ decodeString(self, s):
+  ___ decodeString  s):
     """
     :type s: str
     :rtype: str

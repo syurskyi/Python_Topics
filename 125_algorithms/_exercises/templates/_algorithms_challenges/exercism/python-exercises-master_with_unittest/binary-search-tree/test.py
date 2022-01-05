@@ -69,13 +69,13 @@ c_ BinarySearchTreeTest(unittest.TestCase):
         )
 
     # Utilities
-    ___ assertTreeEqual(self, tree_one, tree_two):
-        try:
+    ___ assertTreeEqual  tree_one, tree_two):
+        ___
             compare_tree(tree_one, tree_two)
-        except AssertionError:
+        ______ AssertionError:
             r.. AssertionError("{} != {}".f..(tree_one, tree_two))
 
-    ___ compare_tree(self, tree_one, tree_two):
+    ___ compare_tree  tree_one, tree_two):
         assertEqual(tree_one.data, tree_two.data)
 
         # Compare left tree nodes

@@ -30,7 +30,7 @@ c_ SummaryRanges(object):
         """
         itvls    # list
 
-    ___ addNum(self, val):
+    ___ addNum  val):
         """
         O(lg n)
         :type val: int
@@ -49,7 +49,7 @@ c_ SummaryRanges(object):
         ___ itvl __ itvls[1:]:
             pre = ret[-1]
             __ itvl.start <= pre.end + 1:
-                pre.end = max(itvl.end, pre.end)
+                pre.end = m..(itvl.end, pre.end)
             ____:
                 ret.a..(itvl)
 

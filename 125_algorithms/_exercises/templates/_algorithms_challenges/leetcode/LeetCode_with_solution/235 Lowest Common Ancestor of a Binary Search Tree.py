@@ -26,7 +26,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ lowestCommonAncestor(self, root, p, q):
+    ___ lowestCommonAncestor  root, p, q):
         """
 
         :type root: TreeNode

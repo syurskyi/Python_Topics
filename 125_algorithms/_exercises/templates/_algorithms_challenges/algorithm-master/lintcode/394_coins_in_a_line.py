@@ -23,7 +23,7 @@ when stones == i - 1 or i - 2
 
 
 c_ Solution:
-    ___ firstWillWin(self, n):
+    ___ firstWillWin  n):
         """
         :type n: int
         :rtype: bool

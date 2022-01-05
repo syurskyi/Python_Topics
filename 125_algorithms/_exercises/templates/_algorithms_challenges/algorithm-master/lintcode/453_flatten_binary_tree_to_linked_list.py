@@ -34,7 +34,7 @@ c_ Solution:
     @param: root: a TreeNode, the root of the binary tree
     @return:
     """
-    ___ flatten(self, root):
+    ___ flatten  root):
         __ n.. root:
             r..
 

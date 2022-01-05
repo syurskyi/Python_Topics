@@ -14,7 +14,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ isPalindrome(self, s):
+    ___ isPalindrome  s):
         """
 
         :param s: a string

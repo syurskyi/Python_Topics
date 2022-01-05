@@ -4,7 +4,7 @@ Created on May 14, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ shortestWordDistance(self, words, word1, word2):
+    ___ shortestWordDistance  words, word1, word2):
         """
         :type words: List[str]
         :type word1: str

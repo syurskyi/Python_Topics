@@ -5,7 +5,7 @@ c_ StockSpanner(object):
         dp    # list
         idx = 0
 
-    ___ next(self, price):
+    ___ next  price):
         """
         :type price: int
         :rtype: int

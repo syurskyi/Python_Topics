@@ -2,7 +2,7 @@
 c_ Solution:
     # @param S, a list of integer
     # @return a list of lists of integer
-    ___ subsets(self, S):
+    ___ subsets  S):
         S.s..()
         k = l..(S)
         n = 2 ** k
@@ -12,7 +12,7 @@ c_ Solution:
             res.a..(s)
         r.. res
 
-    ___ filter(self, S, k, i):
+    ___ filter  S, k, i):
         res    # list
         ___ j __ r..(k):
             mask = 1 << j

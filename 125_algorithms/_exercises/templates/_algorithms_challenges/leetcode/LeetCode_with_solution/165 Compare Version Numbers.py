@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ compareVersion(self, version1, version2):
+    ___ compareVersion  version1, version2):
         """
         :type version1: str
         :type version2: str

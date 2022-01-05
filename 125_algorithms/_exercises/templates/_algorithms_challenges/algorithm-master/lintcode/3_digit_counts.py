@@ -4,7 +4,7 @@ c_ Solution:
     @param: n: An integer
     @return: An integer denote the count of digit k in 1..n
     """
-    ___ digitCounts(self, k, n):
+    ___ digitCounts  k, n):
         ans = 0
         ___ i __ r..(n + 1):
             ans += c.. k, i)

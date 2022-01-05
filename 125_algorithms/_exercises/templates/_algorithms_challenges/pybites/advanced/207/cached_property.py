@@ -37,7 +37,7 @@ c_ Planet:
                       f'{SOLAR_MASS_UNITS}')
         r.. _mass
 
-    ___ __setattr__(self, var, val):
+    ___ __setattr__  var, val):
         __ var __ 'mass':
             r.. AttributeError
         ____:

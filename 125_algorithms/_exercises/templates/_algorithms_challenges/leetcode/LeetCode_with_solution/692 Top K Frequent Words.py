@@ -32,7 +32,7 @@ c_ Word:
         content = content
         count = count
 
-    ___ __lt__(self, other):
+    ___ __lt__  other):
         __ count __ other.count:
             r.. content > other.content
 
@@ -40,7 +40,7 @@ c_ Word:
 
 
 c_ Solution:
-    ___ topKFrequent(self, words: List[s..], k: i..) __ List[s..]:
+    ___ topKFrequent  words: List[s..], k: i..) __ List[s..]:
         """
         quick select log n
         heap log k

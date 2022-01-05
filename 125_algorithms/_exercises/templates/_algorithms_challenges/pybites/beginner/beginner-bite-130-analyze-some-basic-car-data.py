@@ -43,9 +43,9 @@ ___ most_prolific_automaker(year):
     result    # dict
     ___ d __ data:
         __ d['year'] __ year:
-            try:
+            ___
                 result[d['automaker']] += 1
-            except:
+            ______:
                 result[d['automaker']] = 0
     t = ""
     cur = 0

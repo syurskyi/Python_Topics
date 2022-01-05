@@ -4,7 +4,7 @@ c_ Solution:
     @param: k: An integer
     @return: an array of string
     """
-    ___ topKFrequentWords(self, words, k):
+    ___ topKFrequentWords  words, k):
         __ n.. words o. n.. k:
             r.. []
 

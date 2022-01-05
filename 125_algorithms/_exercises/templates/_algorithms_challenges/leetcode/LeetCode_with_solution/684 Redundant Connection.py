@@ -42,12 +42,12 @@ c_ DisjointSet
         sz    # dict  # element -> size
         pi    # dict  # element -> pi
 
-    ___ add(self, x):
+    ___ add  x):
         __ x n.. __ pi:  # need to check, otherwise override wrongly
             sz[x] = 1
             pi[x] = x
 
-    ___ unionize(self, x, y):
+    ___ unionize  x, y):
         p1 = root(x)
         p2 = root(y)
         __ p1 != p2:
@@ -60,14 +60,14 @@ c_ DisjointSet
             sz[p2] += sz[p1]
             del sz[p1]
 
-    ___ root(self, x):
+    ___ root  x):
         p = pi[x]
         __ p != x:
             pi[x] = root(p)
 
         r.. pi[x]
 
-    ___ is_union(self, x, y):
+    ___ is_union  x, y):
         __ x __ pi a.. y __ pi:
             r.. root(x) __ root(y)
 
@@ -75,7 +75,7 @@ c_ DisjointSet
 
 
 c_ Solution:
-    ___ findRedundantConnection(self, edges: List[List[i..]]) __ List[i..]:
+    ___ findRedundantConnection  edges: List[List[i..]]) __ List[i..]:
         """
         Union-find
         """
@@ -91,7 +91,7 @@ c_ Solution:
         r..
 
 c_ Solution_dfs:
-    ___ findRedundantConnection(self, edges: List[List[i..]]) __ List[i..]:
+    ___ findRedundantConnection  edges: List[List[i..]]) __ List[i..]:
         """
         Construct graph: O(|E|)
         Find circle through dfs: O(|V|)
@@ -113,7 +113,7 @@ c_ Solution_dfs:
 
         r..
 
-    ___ dfs(self, G, cur, pi, path, path_list, visited):
+    ___ dfs  G, cur, pi, path, path_list, visited):
         visited.add(cur)
 
         ___ nbr __ G[cur]:

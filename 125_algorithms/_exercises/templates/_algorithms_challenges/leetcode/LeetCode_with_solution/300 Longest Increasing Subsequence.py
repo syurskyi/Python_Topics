@@ -16,7 +16,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ lengthOfLIS(self, A):
+    ___ lengthOfLIS  A):
         """
         MIN: min of index last value of LIS of a particular length
         :type A: List[int]
@@ -36,7 +36,7 @@ c_ Solution(object):
 
         r.. k
 
-    ___ bin_search(self, M, A, t, lo=0, hi_ N..
+    ___ bin_search  M, A, t, lo=0, hi_ N..
         __ n.. hi: hi = l..(M)
         w.... lo < hi:
             m = (lo+hi)/2
@@ -49,7 +49,7 @@ c_ Solution(object):
 
         r.. lo
 
-    ___ lengthOfLIS_output_all(self, A):
+    ___ lengthOfLIS_output_all  A):
         """
         Maintain the result of LIS
         MIN: min of index last value of LIS of a particular length
@@ -90,7 +90,7 @@ c_ Solution(object):
 
         r.. l
 
-    ___ lengthOfLIS_dp(self, A):
+    ___ lengthOfLIS_dp  A):
         """
         dp
 
@@ -110,11 +110,11 @@ c_ Solution(object):
         F = [1 ___ _ __ xrange(n)]
         maxa = 1
         ___ i __ xrange(1, n):
-            F[i] = max(
+            F[i] = m..(
                 F[j] + 1 __ A[i] > A[j] ____ 1
                 ___ j __ xrange(i)
             )
-            maxa = max(maxa, F[i])
+            maxa = m..(maxa, F[i])
 
         r.. maxa
 

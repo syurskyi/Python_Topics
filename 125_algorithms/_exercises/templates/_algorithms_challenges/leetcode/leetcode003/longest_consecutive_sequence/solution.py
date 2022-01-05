@@ -1,7 +1,7 @@
 c_ Solution:
     # @param num, a list of integer
     # @return an integer
-    ___ longestConsecutive(self, num):
+    ___ longestConsecutive  num):
         __ n.. num:
             r.. 0
         d    # dict
@@ -20,5 +20,5 @@ c_ Solution:
                 c += 1
                 current += 1
                 del d[c]
-            res = max(res, current)
+            res = m..(res, current)
         r.. res

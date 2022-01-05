@@ -39,7 +39,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ possibleBipartition(self, N: i.., dislikes: List[List[i..]]) __ bool:
+    ___ possibleBipartition  N: i.., dislikes: List[List[i..]]) __ bool:
         """
         If given likes, then we can use union-find. But this is dislikes.
         Two bipartition, A, B. For each dislike, do a dfs on A, B.
@@ -59,7 +59,7 @@ c_ Solution:
                     r.. F..
         r.. T..
 
-    ___ dfs(self, u, G, visited, color):
+    ___ dfs  u, G, visited, color):
         visited[u] = color
         ___ nbr __ G[u]:
             __ nbr __ visited:

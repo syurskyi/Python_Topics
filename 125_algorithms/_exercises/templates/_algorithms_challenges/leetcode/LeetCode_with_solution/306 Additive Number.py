@@ -18,7 +18,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ isAdditiveNumber(self, num):
+    ___ isAdditiveNumber  num):
         """
         Backtracking
         :type num: str
@@ -32,7 +32,7 @@ c_ Solution(object):
 
         r.. F..
 
-    ___ predicate(self, s, b, i, j):
+    ___ predicate  s, b, i, j):
         n1 = s[b:i]
         n2 = s[i:j]
 

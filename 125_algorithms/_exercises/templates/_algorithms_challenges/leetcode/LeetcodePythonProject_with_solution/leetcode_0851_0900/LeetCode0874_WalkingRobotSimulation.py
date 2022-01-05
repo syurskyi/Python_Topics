@@ -4,7 +4,7 @@ Created on Oct 7, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ robotSim(self, commands, obstacles):
+    ___ robotSim  commands, obstacles):
         """
         :type commands: List[int]
         :type obstacles: List[List[int]]
@@ -24,10 +24,10 @@ c_ Solution(object):
                 ___ _ __ r..(c):
                     __ (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) n.. __ hashset:
                         pos = [pos[0] + dirs[d][0], pos[1] + dirs[d][1]]
-            res = max(res, pos[0]**2 + pos[1]**2)
+            res = m..(res, pos[0]**2 + pos[1]**2)
         r.. res
     
-    ___ calDirection(self, d, c):
+    ___ calDirection  d, c):
         __ c __ -2:
             d -= 1
         ____ c __ -1:

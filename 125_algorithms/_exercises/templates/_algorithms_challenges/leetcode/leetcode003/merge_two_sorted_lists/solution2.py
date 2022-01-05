@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ mergeTwoLists(self, l1, l2):
+    ___ mergeTwoLists  l1, l2):
         """
         :type l1: ListNode
         :type l2: ListNode

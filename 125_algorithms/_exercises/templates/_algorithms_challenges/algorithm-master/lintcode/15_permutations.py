@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ permute(self, nums):
+    ___ permute  nums):
         """
         :type nums: list[int]
         :rtype: list[list[int]]
@@ -14,7 +14,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, nums, ans, path):
+    ___ dfs  nums, ans, path):
         __ n.. nums:
             ans.a..(path | )
             r..

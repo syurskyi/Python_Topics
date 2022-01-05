@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ calcEquation(self, equations, values, queries):
+    ___ calcEquation  equations, values, queries):
         """
         :type equations: List[List[str]]
         :type values: List[float]
@@ -35,7 +35,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, a, b, val, nexts, evals, visited):
+    ___ dfs  a, b, val, nexts, evals, visited):
         res = -1
 
         __ a n.. __ nexts:

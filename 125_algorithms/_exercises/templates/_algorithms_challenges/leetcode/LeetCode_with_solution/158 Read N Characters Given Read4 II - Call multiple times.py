@@ -18,7 +18,7 @@ c_ Solution(object):
     ___ - ):
         prev    # list
 
-    ___ read(self, buf, n):
+    ___ read  buf, n):
         """
         read n chars to buf, called multiple times
 

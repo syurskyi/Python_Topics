@@ -10,7 +10,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ sortedArrayToBST(self, num):
+    ___ sortedArrayToBST  num):
         """
         post-order, dfs
         :param num: list of integers

@@ -4,7 +4,7 @@ c_ Solution:
     @param: k: An integer
     @return: The maximum length of the small pieces
     """
-    ___ woodCut(self, L, k):
+    ___ woodCut  L, k):
         """
         Assuming the `m` is the maximum length
         len   | ... m-2 m-1 m m+1 m+2 ...
@@ -34,7 +34,7 @@ c_ Solution:
 
         r.. right __ check_if_possible(L, right, k) ____ left
 
-    ___ check_if_possible(self, L, size, max_pieces):
+    ___ check_if_possible  L, size, max_pieces):
         pieces = 0
 
         ___ i __ r..(l..(L)):

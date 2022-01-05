@@ -4,7 +4,7 @@ c_ Solution:
     @param: k: an integer
     @return: the largest sum
     """
-    ___ maxSubarray4(self, A, k):
+    ___ maxSubarray4  A, k):
         __ n.. A:
             r.. 0
         n = l..(A)

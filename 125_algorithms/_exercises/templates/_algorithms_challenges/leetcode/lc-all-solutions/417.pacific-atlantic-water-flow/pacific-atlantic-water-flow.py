@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ pacificAtlantic(self, matrix):
+  ___ pacificAtlantic  matrix):
     """
     :type matrix: List[List[int]]
     :rtype: List[List[int]]

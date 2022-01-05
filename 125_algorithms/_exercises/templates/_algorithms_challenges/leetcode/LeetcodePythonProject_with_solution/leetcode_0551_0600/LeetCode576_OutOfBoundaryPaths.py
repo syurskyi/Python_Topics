@@ -4,7 +4,7 @@ Created on Sep 4, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findPaths(self, m, n, N, i, j):
+    ___ findPaths  m, n, N, i, j):
         """
         :type m: int
         :type n: int

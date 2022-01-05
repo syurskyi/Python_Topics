@@ -24,7 +24,7 @@ Explanation: You cannot find a way to form a square with all the matchsticks.
 
 
 c_ Solution:
-    ___ makesquare(self, nums):
+    ___ makesquare  nums):
         """
         need to use up all the stics
         greedily fit the largest first - error, consider [5, 4, 2, 2, 2, 2, 3]
@@ -44,7 +44,7 @@ c_ Solution:
         nums.s..(r.._T..
         r.. dfs(nums, 0, l, square)
 
-    ___ dfs(self, nums, i, l, square):
+    ___ dfs  nums, i, l, square):
         __ i >= l..(nums):
             r.. T..
 

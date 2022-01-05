@@ -4,13 +4,13 @@ Created on Apr 27, 2017
 @author: MT
 '''
 c_ Solution
-    ___ findComplement(self, num):
+    ___ findComplement  num):
         i = 1
         w.... i <= num:
             i = i << 1
         r.. (i-1) ^ num
     
-    ___ findComplement_another(self, num):
+    ___ findComplement_another  num):
         result = 0
         start = F..
         ___ i __ r..(31, -1, -1):

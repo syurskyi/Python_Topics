@@ -9,7 +9,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ pathSum(self, root, target):
+    ___ pathSum  root, target):
         """
         :type root: TreeNode
         :type target: int
@@ -24,7 +24,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, node, remaining, ans, path):
+    ___ dfs  node, remaining, ans, path):
         __ n.. node:
             r..
 

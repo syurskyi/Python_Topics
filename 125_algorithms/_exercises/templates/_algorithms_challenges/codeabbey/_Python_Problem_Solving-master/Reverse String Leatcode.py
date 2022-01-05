@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ reverse(self, x: i..) __ i..:
+    ___ reverse  x: i..) __ i..:
         __ x > 0:
             ans = i..(s..(x)[::-1])
         __ x <= 0:

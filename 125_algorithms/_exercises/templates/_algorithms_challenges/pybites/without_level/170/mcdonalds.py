@@ -9,7 +9,7 @@ pd.options.mode.chained_assignment = N..  # ignore warnings
 
 ___ get_food_most_calories(df=df):
     """Return the food "Item" string with most calories"""
-    r.. df[df.Calories __ df.Calories.max()].iloc[0].Item
+    r.. df[df.Calories __ df.Calories.m..()].iloc[0].Item
 
 
 ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..):

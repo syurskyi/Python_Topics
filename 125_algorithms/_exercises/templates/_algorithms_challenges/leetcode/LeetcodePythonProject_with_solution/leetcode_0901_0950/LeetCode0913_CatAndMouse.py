@@ -1,7 +1,7 @@
 _______ c..
 
 c_ Solution(object):
-    ___ catMouseGame(self, graph):
+    ___ catMouseGame  graph):
         """
         :type graph: List[List[int]]
         :rtype: int
@@ -39,7 +39,7 @@ c_ Solution(object):
                             queue.a..((i2, j2, t2, 3-t2))
         r.. color[1, 2, 1]
 
-    ___ parents(self, graph, m, c, t):
+    ___ parents  graph, m, c, t):
         res    # list
         __ t __ 2:
             ___ m2 __ graph[m]:

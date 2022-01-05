@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ generate(self, num_rows):
+    ___ generate  num_rows):
         """
         :type num_rows: int
         :rtype: List[List[int]]
@@ -23,7 +23,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ generate(self, num_rows):
+    ___ generate  num_rows):
         """
         :type num_rows: int
         :rtype: List[List[int]]

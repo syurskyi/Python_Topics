@@ -1,6 +1,6 @@
 c_ Solution(object):
   # space O(n^2)
-  ___ _numDistinct(self, s, t):
+  ___ _numDistinct  s, t):
     """
     :type s: str
     :type t: str
@@ -19,7 +19,7 @@ c_ Solution(object):
 
     r.. dp[-1][-1]
 
-  ___ numDistinct(self, s, t):
+  ___ numDistinct  s, t):
     """
     :type s: str
     :type t: str

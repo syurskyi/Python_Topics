@@ -1,20 +1,20 @@
 c_ Solution(object):
-    ___ smallestRangeI(self, A, K):
+    ___ smallestRangeI  A, K):
         """
         :type A: List[int]
         :type K: int
         :rtype: int
         """
-        r.. max(max(A)-m..(A)-2*K, 0)
+        r.. m..(m..(A)-m..(A)-2*K, 0)
 
-    ___ smallestRangeI_own(self, A, K):
+    ___ smallestRangeI_own  A, K):
         """
         :type A: List[int]
         :type K: int
         :rtype: int
         """
         minVal = m..(A)
-        maxVal = max(A)
+        maxVal = m..(A)
         med = (minVal+maxVal) // 2
         minVal = float('inf')
         maxVal = float('-inf')
@@ -29,7 +29,7 @@ c_ Solution(object):
                     num += K
                 ____:
                     num = med
-            maxVal = max(maxVal, num)
+            maxVal = m..(maxVal, num)
             minVal = m..(minVal, num)
         r.. maxVal - minVal
 

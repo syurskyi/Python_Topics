@@ -5,7 +5,7 @@ Created on Sep 10, 2017
 '''
 
 c_ Solution(object):
-    ___ maxDistance(self, arrays):
+    ___ maxDistance  arrays):
         """
         :type arrays: List[List[int]]
         :rtype: int
@@ -17,10 +17,10 @@ c_ Solution(object):
         maxDis = 0
         ___ i __ r..(1, l..(arrays)):
             arr = arrays[i]
-            maxDis = max(maxDis, abs(arr[-1]-minVal))
-            maxDis = max(maxDis, abs(maxVal-arr[0]))
+            maxDis = m..(maxDis, abs(arr[-1]-minVal))
+            maxDis = m..(maxDis, abs(maxVal-arr[0]))
             minVal = m..(minVal, arr[0])
-            maxVal = max(maxVal, arr[-1])
+            maxVal = m..(maxVal, arr[-1])
         r.. maxDis
     
     ___ test

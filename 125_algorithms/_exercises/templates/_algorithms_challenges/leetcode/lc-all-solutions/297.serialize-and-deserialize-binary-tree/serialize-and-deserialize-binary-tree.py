@@ -9,7 +9,7 @@ ____ c.. _______ d..
 
 c_ Codec:
 
-  ___ serialize(self, root):
+  ___ serialize  root):
     """Encodes a tree to a single string.
     
     :type root: TreeNode
@@ -28,7 +28,7 @@ c_ Codec:
       queue.a..(top.right)
     r.. ",".j..(ret)
 
-  ___ deserialize(self, data):
+  ___ deserialize  data):
     """Decodes your encoded data to tree.
     
     :type data: str

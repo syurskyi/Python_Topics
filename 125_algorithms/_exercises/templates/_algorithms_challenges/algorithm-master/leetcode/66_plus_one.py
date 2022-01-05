@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ plusOne(self, d..):
+    ___ plusOne  d..):
         """
         :type digits: List[int]
         :rtype: List[int]
@@ -25,7 +25,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ plusOne(self, d..):
+    ___ plusOne  d..):
         """
         :type digits: List[int]
         :rtype: List[int]

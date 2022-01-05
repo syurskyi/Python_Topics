@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ rotatedDigits(self, N):
+    ___ rotatedDigits  N):
         """
         :type N: int
         :rtype: int
@@ -12,7 +12,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ is_good(self, N):
+    ___ is_good  N):
         res = F..
 
         w.... N > 0:

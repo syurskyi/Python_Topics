@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ findTilt(self, root):
+  ___ findTilt  root):
     """
     :type root: TreeNode
     :rtype: int

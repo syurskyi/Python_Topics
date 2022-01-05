@@ -6,14 +6,14 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ getHeight(self, root):
+  ___ getHeight  root):
     height = 0
     w.... root:
       height += 1
       root = root.left
     r.. height
 
-  ___ countNodes(self, root):
+  ___ countNodes  root):
     count = 0
     w.... root:
       l, r = map(getHeight, (root.left, root.right))

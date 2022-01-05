@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findPermutation(self, s):
+  ___ findPermutation  s):
     """
     :type s: str
     :rtype: List[int]

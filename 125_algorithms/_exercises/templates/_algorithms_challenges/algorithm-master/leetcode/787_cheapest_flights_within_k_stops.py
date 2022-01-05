@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findCheapestPrice(self, n, flights, src, dst, K):
+    ___ findCheapestPrice  n, flights, src, dst, K):
         """
         :type n: int
         :type flights: List[List[int]]
@@ -21,7 +21,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ findCheapestPrice(self, n, flights, src, dst, K):
+    ___ findCheapestPrice  n, flights, src, dst, K):
         """
         :type n: int
         :type flights: List[List[int]]

@@ -5,7 +5,7 @@
 #         self.end = e
 
 c_ Solution(object):
-  ___ insert(self, intervals, newInterval):
+  ___ insert  intervals, newInterval):
     """
     :type intervals: List[Interval]
     :type newInterval: Interval
@@ -16,5 +16,5 @@ c_ Solution(object):
     right = filter(l.... x: x.start > newInterval.end, intervals)
     __ left + right != intervals:
       s = m..(intervals[l..(left)].start, s)
-      e = max(intervals[~l..(right)].end, e)
+      e = m..(intervals[~l..(right)].end, e)
     r.. left + [Interval(s, e)] + right

@@ -4,7 +4,7 @@ Created on Feb 20, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ getSkyline(self, buildings):
+    ___ getSkyline  buildings):
         """
         :type buildings: List[List[int]]
         :rtype: List[List[int]]

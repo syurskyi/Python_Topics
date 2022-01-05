@@ -40,7 +40,7 @@ dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
 c_ Solution:
-    ___ orangesRotting(self, grid: List[List[i..]]) __ i..:
+    ___ orangesRotting  grid: List[List[i..]]) __ i..:
         """
         maintain a q for the newly rotten
         """
@@ -70,4 +70,4 @@ c_ Solution:
             ___ j __ r..(n)
         )
 
-        r.. max(0, t) __ n.. has_fresh ____ -1
+        r.. m..(0, t) __ n.. has_fresh ____ -1

@@ -3,7 +3,7 @@ c_ Solution:
     @param: s: A string
     @return: An integer
     """
-    ___ atoi(self, s):
+    ___ atoi  s):
         NOT_FOUND = 0
         __ n.. s:
             r.. NOT_FOUND
@@ -25,12 +25,12 @@ c_ Solution:
             r.. NOT_FOUND
 
         ans = 0
-        zero = ord('0')
-        nine = ord('9')
+        zero = o..('0')
+        nine = o..('9')
         INT_MAX = 0x7FFFFFFF
         INT_MIN = -0x80000000
-        w.... left <= right a.. zero <= ord(s[left]) <= nine:
-            ans = ans * 10 + ord(s[left]) - zero
+        w.... left <= right a.. zero <= o..(s[left]) <= nine:
+            ans = ans * 10 + o..(s[left]) - zero
             left += 1
 
         __ is_negative:

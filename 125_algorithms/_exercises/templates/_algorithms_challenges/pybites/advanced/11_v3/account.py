@@ -12,40 +12,40 @@ c_ Account:
     ___ __len__
         r.. l..(_transactions)
 
-    ___ __lt__(self, other):
+    ___ __lt__  other):
         __ n.. isi..(other, Account):
             r.. ValueError()
         r.. balance < other.balance
 
-    ___ __gt__(self, other):
+    ___ __gt__  other):
         __ n.. isi..(other, Account):
             r.. ValueError()
         r.. balance > other.balance
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         __ n.. isi..(other, Account):
             r.. ValueError()
         r.. balance __ other.balance
 
-    ___ __le__(self, other):
+    ___ __le__  other):
         __ n.. isi..(other, Account):
             r.. ValueError()
         r.. balance <= other.balance
 
-    ___ __ge__(self, other):
+    ___ __ge__  other):
         __ n.. isi..(other, Account):
             r.. ValueError()
         r.. balance >= other.balance
 
-    ___ __getitem__(self, item):
+    ___ __getitem__  item):
         r.. _transactions[item]
 
-    ___ __add__(self, other):
+    ___ __add__  other):
         __ n.. isi..(other, i..):
             r.. ValueError
         _transactions.a..(other)
 
-    ___ __sub__(self, other):
+    ___ __sub__  other):
         __ n.. isi..(other, i..):
             r.. ValueError
         _transactions.a..(-other)

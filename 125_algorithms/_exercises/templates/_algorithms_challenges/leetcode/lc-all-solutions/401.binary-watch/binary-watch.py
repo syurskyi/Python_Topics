@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ readBinaryWatch(self, num):
+  ___ readBinaryWatch  num):
     """
     :type num: int
     :rtype: List[str]

@@ -44,7 +44,7 @@ ____ functools _______ lru_cache
 
 
 c_ Solution:
-    ___ leastOpsExpressTarget(self, x: i.., target: i..) __ i..:
+    ___ leastOpsExpressTarget  x: i.., target: i..) __ i..:
         """
         x/x is 1
         x * x is power 2
@@ -56,7 +56,7 @@ c_ Solution:
         r.. dfs(target, x, 0) - 1
 
     @lru_cache(maxsize=N..)
-    ___ dfs(self, target, x, power):
+    ___ dfs  target, x, power):
         """
         power: power, pow(x, power)
         """
@@ -75,7 +75,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ ops(self, power):
+    ___ ops  power):
         """
         number of ops required
 

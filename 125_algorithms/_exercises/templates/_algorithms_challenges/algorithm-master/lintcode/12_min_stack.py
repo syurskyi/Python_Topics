@@ -3,7 +3,7 @@ c_ MinStack:
         stack    # list
         mins    # list
 
-    ___ push(self, x):
+    ___ push  x):
         """
         :type x: int
         :rtype: void

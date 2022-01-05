@@ -4,7 +4,7 @@ Created on Apr 9, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ movesToChessboard(self, board):
+    ___ movesToChessboard  board):
         """
         :type board: List[List[int]]
         :rtype: int

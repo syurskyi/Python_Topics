@@ -19,7 +19,7 @@ __author__ = 'Danyang'
 CONNECTED = 'C'
 directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 c_ Solution:
-    ___ solve(self, board):
+    ___ solve  board):
         """
         Graph Theory
         Algorithm1: bfs, to tell whether it is on the boarder
@@ -59,7 +59,7 @@ c_ Solution:
                     board[i][j] = 'O'
 
 
-__ __name____"__main__":
+__ _____ __ ____
     board = [
         ['X', 'X', 'X', 'X'],
         ['X', 'O', 'O', 'X'],

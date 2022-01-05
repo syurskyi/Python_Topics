@@ -5,7 +5,7 @@ Created on Feb 26, 2017
 '''
 
 c_ Solution(object):
-    ___ productExceptSelf(self, nums):
+    ___ productExceptSelf  nums):
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -22,7 +22,7 @@ c_ Solution(object):
             result[i] = right*result[i]
         r.. result
     
-    ___ productExceptSelfExtra(self, nums):
+    ___ productExceptSelfExtra  nums):
         """
         :type nums: List[int]
         :rtype: List[int]

@@ -4,7 +4,7 @@ Created on May 25, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ ladderLength(self, beginWord, endWord, wordList):
+    ___ ladderLength  beginWord, endWord, wordList):
         """
         :type beginWord: str
         :type endWord: str
@@ -31,7 +31,7 @@ c_ Solution(object):
                         queue.a..(nextWord)
         r.. 0
     
-    ___ getNext(self, word, wordSet):
+    ___ getNext  word, wordSet):
         chars = 'abcdefghijklmnopqrstuvwxyz'
         res    # list
         ___ i, c __ e..(word):

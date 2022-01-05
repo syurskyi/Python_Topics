@@ -2,7 +2,7 @@ c_ Solution:
     """
     BFS
     """
-    ___ shortestDistance(self, maze, start, destination):
+    ___ shortestDistance  maze, start, destination):
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -68,7 +68,7 @@ c_ Solution2:
     """
     Dijkstra
     """
-    ___ shortestDistance(self, maze, start, destination):
+    ___ shortestDistance  maze, start, destination):
         """
         :type maze: List[List[int]]
         :type start: List[int]

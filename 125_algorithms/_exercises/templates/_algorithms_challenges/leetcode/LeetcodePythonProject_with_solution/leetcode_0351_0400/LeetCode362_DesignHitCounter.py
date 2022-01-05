@@ -9,7 +9,7 @@ c_ HitCounter(object):
         hitCount = [0]*300
         timestampes = [0]*300
     
-    ___ hit(self, timestamp):
+    ___ hit  timestamp):
         ind = timestamp % 300
         __ timestamp != timestampes[ind]:
             hitCount[ind] = 1
@@ -17,7 +17,7 @@ c_ HitCounter(object):
         ____:
             hitCount[ind] += 1
     
-    ___ getHits(self, timestamp):
+    ___ getHits  timestamp):
         count = 0
         ___ i, time __ e..(timestampes):
             __ timestamp - time < 300:
@@ -28,12 +28,12 @@ c_ HitCounterOwn(object):
     ___ - ):
         queue    # list
     
-    ___ hit(self, timestamp):
+    ___ hit  timestamp):
         queue.a..(timestamp)
         __ queue a.. queue[0] < timestamp-300:
             queue.pop(0)
     
-    ___ getHits(self, timestamp):
+    ___ getHits  timestamp):
         start, end = 0, l..(queue)
         target = timestamp - 300
         w.... start < end:

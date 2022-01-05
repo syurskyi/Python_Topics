@@ -4,7 +4,7 @@ INF = 2147483647
 
 
 c_ Solution(object):
-  ___ wallsAndGates(self, rooms):
+  ___ wallsAndGates  rooms):
     """
     :type rooms: List[List[int]]
     :rtype: void Do not return anything, modify rooms in-place instead.

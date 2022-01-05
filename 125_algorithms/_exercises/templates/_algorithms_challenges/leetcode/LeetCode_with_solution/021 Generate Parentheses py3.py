@@ -17,7 +17,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ generateParenthesis(self, n: i..) __ List[s..]:
+    ___ generateParenthesis  n: i..) __ List[s..]:
         """
         Method 1 - backtracking
         Method 2 - dp

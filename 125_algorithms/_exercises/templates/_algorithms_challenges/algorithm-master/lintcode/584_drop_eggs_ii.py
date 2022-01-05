@@ -9,7 +9,7 @@ c_ Solution:
     @param: n: the number of floors
     @return: the number of drops in the worst case
     """
-    ___ dropEggs2(self, m, n):
+    ___ dropEggs2  m, n):
         __ n.. m o. n.. n:
             r.. 0
 
@@ -47,7 +47,7 @@ c_ Solution:
                     2. not broken: reduce to subproblem (m, n - k)
                         dp[i][j - k] + 1 drop
                     """
-                    _worst = max(dp[i - 1][k - 1], dp[i][j - k]) + 1
+                    _worst = m..(dp[i - 1][k - 1], dp[i][j - k]) + 1
 
                     """
                     find the minimum worst case

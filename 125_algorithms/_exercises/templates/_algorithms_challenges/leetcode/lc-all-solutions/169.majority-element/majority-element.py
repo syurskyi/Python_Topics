@@ -1,3 +1,3 @@
 c_ Solution(object):
-  ___ majorityElement(self, num):
+  ___ majorityElement  num):
     r.. s..(num)[l..(num) / 2]

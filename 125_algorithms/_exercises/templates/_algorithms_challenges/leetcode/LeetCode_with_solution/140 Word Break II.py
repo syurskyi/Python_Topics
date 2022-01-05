@@ -15,7 +15,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ wordBreak(self, s, d..):
+    ___ wordBreak  s, d..):
         """
         .______   .______       _______  _______  __  ___   ___  _______     _______.
         |   _  \  |   _  \     |   ____||   ____||  | \  \ /  / |   ____|   /       |
@@ -61,7 +61,7 @@ c_ Solution:
         r.. result
 
 
-    ___ build_result(self, dp, cur_index, cur_sentence, result):
+    ___ build_result  dp, cur_index, cur_sentence, result):
         """
         dfs recursive
 
@@ -79,5 +79,5 @@ c_ Solution:
             cur_sentence.popleft()
 
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().wordBreak("catsanddog", ["cat", "cats", "and", "sand", "dog"])__['cat sand dog', 'cats and dog']

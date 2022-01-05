@@ -11,7 +11,7 @@ Note:
 
 
 c_ Solution:
-    ___ hammingDistance(self, x, y):
+    ___ hammingDistance  x, y):
         """
         :type x: int
         :type y: int

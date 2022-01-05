@@ -35,7 +35,7 @@ Can you solve it in O(N) time and O(1) space?
 
 
 c_ Solution:
-    ___ backspaceCompare(self, S: s.., T: s..) __ bool:
+    ___ backspaceCompare  S: s.., T: s..) __ bool:
         """
         stk
         use a stk to build the string
@@ -46,7 +46,7 @@ c_ Solution:
         """
         r.. make_stk(S) __ make_stk(T)
 
-    ___ make_stk(self, S):
+    ___ make_stk  S):
         stk    # list
         ___ s __ S:
             __ s __ "#":

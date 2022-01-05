@@ -44,10 +44,10 @@ c_ LogSystem:
         """
         lst    # list
 
-    ___ put(self, id: i.., timestamp: s..) __ N..
+    ___ put  id: i.., timestamp: s..) __ N..
         bisect.insort(lst, (timestamp, id))
 
-    ___ retrieve(self, s: s.., e: s.., gra: s..) __ List[i..]:
+    ___ retrieve  s: s.., e: s.., gra: s..) __ List[i..]:
         """
         Use timestamp comparison
         Can convert the timestamp to number.

@@ -6,7 +6,7 @@ c_ HitCounter(object):
     """
     q = [(0, 0)] * 300
 
-  ___ hit(self, timestamp):
+  ___ hit  timestamp):
     """
     Record a hit.
     @param timestamp - The current timestamp (in seconds granularity).
@@ -20,7 +20,7 @@ c_ HitCounter(object):
     ____:
       q[idx] = time, hit + 1
 
-  ___ getHits(self, timestamp):
+  ___ getHits  timestamp):
     """
     Return the number of hits in the past 5 minutes.
     @param timestamp - The current timestamp (in seconds granularity).

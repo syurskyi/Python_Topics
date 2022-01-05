@@ -5,7 +5,7 @@ Created on Apr 3, 2017
 '''
 
 c_ Solution(object):
-    ___ validUtf8(self, data):
+    ___ validUtf8  data):
         count = 0
         ___ v __ data:
             __ count __ 0:

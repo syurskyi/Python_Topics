@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minPatches(self, nums, n):
+  ___ minPatches  nums, n):
     """
     :type nums: List[int]
     :type n: int

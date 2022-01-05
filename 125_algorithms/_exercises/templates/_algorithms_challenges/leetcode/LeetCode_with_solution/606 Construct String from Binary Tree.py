@@ -43,7 +43,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ tree2str(self, t: TreeNode) __ s..:
+    ___ tree2str  t: TreeNode) __ s..:
         __ n.. t:
             r.. ""
 

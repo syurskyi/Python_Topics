@@ -5,7 +5,7 @@ Created on Jan 11, 2017
 '''
 
 c_ Solution(object):
-    ___ generateParenthesis(self, n):
+    ___ generateParenthesis  n):
         """
         :type n: int
         :rtype: List[str]
@@ -15,7 +15,7 @@ c_ Solution(object):
         dfs(n, n, '', res)
         r.. res
     
-    ___ dfs(self, left, right, curr, res):
+    ___ dfs  left, right, curr, res):
         __ left __ 0 a.. right __ 0:
             res.a..(curr)
         __ left > right:

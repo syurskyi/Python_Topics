@@ -10,7 +10,7 @@ c_ Palindromes:
 
     @classmethod
     ___ largest_palindrome(cls, max_factor, min_factor=0):
-        r.. max(cls.palindromes(max_factor, min_factor), key=l....
+        r.. m..(cls.palindromes(max_factor, min_factor), key=l....
                    item: item[0])
 
     @classmethod

@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ generatePossibleNextMoves(self, s):
+    ___ generatePossibleNextMoves  s):
         """
         :type s: str
         :rtype: List[str]

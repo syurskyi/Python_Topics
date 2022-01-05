@@ -31,7 +31,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ fizzBuzz(self, n):
+    ___ fizzBuzz  n):
         """
         :type n: int
         :rtype: List[str]

@@ -22,7 +22,7 @@ c_ FileLike(object):
         open()
         r.. self
 
-    ___ __exit__(self, *args):
+    ___ __exit__  *args):
         close()
 
     ___ do_something
@@ -75,12 +75,12 @@ c_ ErrorHandlingTest(unittest.TestCase):
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 

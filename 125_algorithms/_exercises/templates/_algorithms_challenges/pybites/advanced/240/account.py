@@ -19,7 +19,7 @@ c_ Account:
         r.. 'Account of {} with starting amount: {}'.f..(owner,
                                                                amount)
 
-    ___ add_transaction(self, amount):
+    ___ add_transaction  amount):
         __ n.. isi..(amount, i..):
             r.. ValueError('please use int for amount')
         _transactions.a..(amount)
@@ -31,16 +31,16 @@ c_ Account:
     ___ __len__
         r.. l..(_transactions)
 
-    ___ __getitem__(self, position):
+    ___ __getitem__  position):
         r.. _transactions[position]
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. balance __ other.balance
 
-    ___ __lt__(self, other):
+    ___ __lt__  other):
         r.. balance < other.balance
 
-    ___ __add__(self, other):
+    ___ __add__  other):
         owner = '{}&{}'.f..(owner, other.owner)
         start_amount = amount + other.amount
         acc = Account(owner, start_amount)

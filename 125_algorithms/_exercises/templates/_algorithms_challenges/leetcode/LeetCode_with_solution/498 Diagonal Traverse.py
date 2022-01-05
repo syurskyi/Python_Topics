@@ -17,7 +17,7 @@ Output:  [1,2,4,7,5,3,6,8,9]
 
 
 c_ Solution:
-    ___ findDiagonalOrder(self, matrix):
+    ___ findDiagonalOrder  matrix):
         """
         2nd approach
         diagonal - i + j is constant
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ findDiagonalOrder_2(self, matrix):
+    ___ findDiagonalOrder_2  matrix):
         """
         1st approach
         try 2 * 4 and 4 * 2 and 3 * 3 matrix to find the pattern

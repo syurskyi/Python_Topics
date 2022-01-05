@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ checkPossibility(self, nums):
+  ___ checkPossibility  nums):
     """
     :type nums: List[int]
     :rtype: bool

@@ -8,7 +8,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ majorityElement(self, nums):
+    ___ majorityElement  nums):
         """
         Since majority elements appears more than ⌊ n/3 ⌋ times, there are at most 2 majority number
         :type nums: list[int]

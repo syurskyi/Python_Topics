@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findSubstring(self, s, S):
+    ___ findSubstring  s, S):
         """
         :type s: str
         :type S: List[str]

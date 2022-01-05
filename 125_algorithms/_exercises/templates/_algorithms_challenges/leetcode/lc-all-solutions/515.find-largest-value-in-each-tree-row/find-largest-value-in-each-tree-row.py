@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ largestValues(self, root):
+  ___ largestValues  root):
     """
     :type root: TreeNode
     :rtype: List[int]
@@ -18,7 +18,7 @@ c_ Solution(object):
       __ root:
         dfs(root.left, h + 1, d)
         dfs(root.right, h + 1, d)
-        d[h] = max(d.get(h, float("-inf")), root.val)
+        d[h] = m..(d.get(h, float("-inf")), root.val)
 
     dfs(root, 0, d)
     level = 0

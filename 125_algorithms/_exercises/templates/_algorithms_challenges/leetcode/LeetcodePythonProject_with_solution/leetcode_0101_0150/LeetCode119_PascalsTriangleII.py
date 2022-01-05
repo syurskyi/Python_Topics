@@ -4,7 +4,7 @@ Created on May 29, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ getRow(self, rowIndex):
+    ___ getRow  rowIndex):
         """
         :type rowIndex: int
         :rtype: List[int]

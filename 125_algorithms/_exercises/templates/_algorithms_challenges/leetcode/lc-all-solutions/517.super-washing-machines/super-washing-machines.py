@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findMinMoves(self, machines):
+  ___ findMinMoves  machines):
     """
     :type machines: List[int]
     :rtype: int
@@ -11,5 +11,5 @@ c_ Solution(object):
     ans = 0
     ___ v __ machines:
       total += target - v
-      ans = max(ans, abs(total), v - target)
+      ans = m..(ans, abs(total), v - target)
     r.. ans

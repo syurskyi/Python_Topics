@@ -9,7 +9,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ thirdMax(self, nums):
+    ___ thirdMax  nums):
         """
         It is an easy question but error prone:
           1. Choice of min heap or max heap: use min heap (not max heap) because
@@ -32,7 +32,7 @@ c_ Solution:
         __ l..(h) __ 3:
             ret = m..(h)
         ____:
-            ret = max(h)
+            ret = m..(h)
         r.. ret
 
 

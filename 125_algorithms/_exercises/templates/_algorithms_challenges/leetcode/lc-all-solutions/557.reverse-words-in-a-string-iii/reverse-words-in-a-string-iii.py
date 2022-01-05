@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ reverseWords(self, s):
+  ___ reverseWords  s):
     """
     :type s: str
     :rtype: str

@@ -1,13 +1,13 @@
 c_ Solution:
     # @return an integer
-    ___ totalNQueens(self, n):
+    ___ totalNQueens  n):
         res = 0
         n = n
         columns = [-1 ___ i __ r..(n)]
         solve(columns, 0)
         r.. res
 
-    ___ is_valid(self, columns, row, col):
+    ___ is_valid  columns, row, col):
         ___ r __ r..(row):
             c = columns[r]
             __ c __ col:
@@ -16,7 +16,7 @@ c_ Solution:
                 r.. F..
         r.. T..
 
-    ___ solve(self, columns, row):
+    ___ solve  columns, row):
         __ row __ n:
             res += 1
         ____:

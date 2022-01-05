@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ addBinary(self, a, b):
+  ___ addBinary  a, b):
     """
     :type a: str
     :type b: str

@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ calcEquation(self, equations, values, queries):
+    ___ calcEquation  equations, values, queries):
         """
         transitive closure
         :type equations: List[List[str]]
@@ -41,7 +41,7 @@ c_ Solution(object):
 
         r.. [dfs(G, s, e, set()) ___ s, e __ queries]
 
-    ___ dfs(self, G, s, e, path):
+    ___ dfs  G, s, e, path):
         __ s n.. __ G o. e n.. __ G:
             r.. -1.0
         __ e __ G[s]:
@@ -58,7 +58,7 @@ c_ Solution(object):
 
 
 c_ Solution(object):
-    ___ calcEquation(self, equations, values, queries):
+    ___ calcEquation  equations, values, queries):
         """
         Floyd-Warshall algorithm
         transitive closure

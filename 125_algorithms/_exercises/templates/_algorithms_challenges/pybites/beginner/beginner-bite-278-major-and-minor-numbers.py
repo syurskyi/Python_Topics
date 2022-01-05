@@ -33,16 +33,16 @@ ___ major_n_minor(numbers):
 
     d = OrderedDict()
     ___ num __ numbers:
-        try:
+        ___
             d[num] += 1
-        except:
+        ______:
             d[num] = 1
     #print(d)
     d..    # dict
     ___ num __ numbers:
-        try:
+        ___
             d..[num] += 1
-        except:
+        ______:
             d..[num] = 1
     s.. = s..(d...i.., key=l.... x: x[1] )
     r.. s..[-1][0], s..[0][0]

@@ -8,7 +8,7 @@ c_ MatrixWithoutMatMul(object):
         col = l..(values[0])
         row = l..(values)
 
-    ___ __matmul__(self, other):
+    ___ __matmul__  other):
         r.. NotImplemented
 
 

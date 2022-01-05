@@ -5,7 +5,7 @@ Created on Feb 9, 2017
 '''
 
 c_ Solution(object):
-    ___ wordBreak(self, s, wordDict):
+    ___ wordBreak  s, wordDict):
         """
         :type s: str
         :type wordDict: List[str]
@@ -23,7 +23,7 @@ c_ Solution(object):
         helper(dp, l..(s), res, [])
         r.. res
     
-    ___ helper(self, dp, i, res, curr):
+    ___ helper  dp, i, res, curr):
         __ i <= 0:
             __ i __ 0:
                 res.a..(' '.j..(curr))

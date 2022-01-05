@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ findMissingRanges(self, nums, lower, upper):
+    ___ findMissingRanges  nums, lower, upper):
         """
         :type nums: List[int]
         :type lower: int
@@ -32,7 +32,7 @@ c_ Solution(object):
 
         r.. map(mapper, ret)
 
-    ___ mapper(self, x):
+    ___ mapper  x):
         __ x[0] __ x[1]:
             r.. "%d" % x[0]
         ____:

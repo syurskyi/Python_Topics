@@ -9,7 +9,7 @@ the contiguous subarray [4,−1,2,1] has the largest sum = 6.
 
 
 c_ Solution(object):
-    ___ maxSubArray(self, nums):
+    ___ maxSubArray  nums):
         """
         :type nums: List[int]
         :rtype: int
@@ -24,10 +24,10 @@ c_ Solution(object):
         min_sum = 0
         res = 0
         ___ i, c __ e..(s):
-            res = max(res, c - min_sum)
+            res = m..(res, c - min_sum)
             min_sum = m..(min_sum, c)
         __ res __ 0:
-            r.. max(nums)
+            r.. m..(nums)
         r.. res
 
 

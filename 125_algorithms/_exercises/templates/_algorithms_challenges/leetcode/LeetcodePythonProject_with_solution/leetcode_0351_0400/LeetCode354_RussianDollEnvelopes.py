@@ -5,7 +5,7 @@ Created on Mar 22, 2017
 '''
 
 c_ Solution(object):
-    ___ maxEnvelopes(self, envelopes):
+    ___ maxEnvelopes  envelopes):
         _______ bisect
         length = 0
         envelopes.s..(key=l.... x: (x[0], -x[1]))

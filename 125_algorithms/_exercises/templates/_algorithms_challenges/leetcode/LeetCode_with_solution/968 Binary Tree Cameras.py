@@ -42,7 +42,7 @@ c_ Solution:
         covered = {N..}
         cnt = 0
 
-    ___ minCameraCover(self, root: TreeNode) __ i..:
+    ___ minCameraCover  root: TreeNode) __ i..:
         """
         Greedy?
         Bottom up, cover leaf's parent is strictly better than cover leaf
@@ -55,7 +55,7 @@ c_ Solution:
         r.. cnt
 
 
-    ___ dfs(self, node, pi):
+    ___ dfs  node, pi):
         """
         post order
         rely on the parents to cover it 
@@ -77,7 +77,7 @@ c_ SolutionErrror:
     ___ - ):
         covered = set()
 
-    ___ minCameraCover(self, root: TreeNode) __ i..:
+    ___ minCameraCover  root: TreeNode) __ i..:
         """
         Greedy?
         Top-down, no good.
@@ -89,7 +89,7 @@ c_ SolutionErrror:
         covered.discard(dummy)  # swallow KeyError
         r.. l..(covered)
 
-    ___ dfs(self, node, pi):
+    ___ dfs  node, pi):
         """
         post order
         """

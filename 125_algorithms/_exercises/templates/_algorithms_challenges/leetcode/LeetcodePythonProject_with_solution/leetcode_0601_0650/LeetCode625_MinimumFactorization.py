@@ -4,7 +4,7 @@ Created on Sep 10, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ smallestFactorization(self, a):
+    ___ smallestFactorization  a):
         """
         :type a: int
         :rtype: int

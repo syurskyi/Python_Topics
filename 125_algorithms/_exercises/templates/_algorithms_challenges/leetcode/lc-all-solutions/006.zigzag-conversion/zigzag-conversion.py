@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ convert(self, s, numRows):
+  ___ convert  s, numRows):
     """
     :type s: str
     :type numRows: int

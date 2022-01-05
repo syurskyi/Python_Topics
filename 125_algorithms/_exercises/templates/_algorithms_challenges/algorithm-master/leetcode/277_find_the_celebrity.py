@@ -4,7 +4,7 @@ REF: https://discuss.leetcode.com/topic/25720/java-python-o-n-calls-o-1-space-ea
 
 
 c_ Solution:
-    ___ findCelebrity(self, n):
+    ___ findCelebrity  n):
         __ n.. n:
             r.. -1
 

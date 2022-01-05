@@ -4,7 +4,7 @@ c_ Solution(object):
     count = 0
     lastCount = 0
 
-  ___ findMaxConsecutiveOnes(self, nums):
+  ___ findMaxConsecutiveOnes  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(object):
       readNum(num)  # stream the input
     r.. ans
 
-  ___ readNum(self, num):
+  ___ readNum  num):
     """
     :type nums: int
     """
@@ -22,4 +22,4 @@ c_ Solution(object):
     ____:
       count = count - lastCount + 1
       lastCount = count
-    ans = max(ans, count)
+    ans = m..(ans, count)

@@ -25,7 +25,7 @@ c_ Solution:
     @param: n: An integer
     @return: The sum of a and b
     """
-    ___ dropEggs(self, n):
+    ___ dropEggs  n):
         __ n <= 0:
             r.. 0
 
@@ -55,7 +55,7 @@ c_ Solution:
     @param: n: An integer
     @return: The sum of a and b
     """
-    ___ dropEggs(self, n):
+    ___ dropEggs  n):
         __ n <= 0:
             r.. 0
 

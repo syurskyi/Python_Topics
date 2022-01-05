@@ -24,7 +24,7 @@ ___ suggest_word(misspelled_word: s.., words: set = N..) __ s..:
         words = load_words()
     
 
-    r.. max(words,key=l.... x:SequenceMatcher(N..,misspelled_word,x).ratio())
+    r.. m..(words,key=l.... x:SequenceMatcher(N..,misspelled_word,x).ratio())
     best_word = N..
     highest_ratio = float("-inf")
     ___ word __ words:

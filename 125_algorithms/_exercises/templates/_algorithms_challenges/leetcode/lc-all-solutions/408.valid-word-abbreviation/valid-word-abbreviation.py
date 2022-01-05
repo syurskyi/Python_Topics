@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ validWordAbbreviation(self, dest, src):
+  ___ validWordAbbreviation  dest, src):
     """
     :type word: str
     :type abbr: str

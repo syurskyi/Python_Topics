@@ -10,7 +10,7 @@ c_ Interval(object):
         height = height
 
 c_ Solution(object):
-    ___ fallingSquares(self, positions):
+    ___ fallingSquares  positions):
         """
         :type positions: List[List[int]]
         :rtype: List[int]
@@ -20,16 +20,16 @@ c_ Solution(object):
         h = 0
         ___ pos __ positions:
             cur = Interval(pos[0], pos[0]+pos[1], pos[1])
-            h = max(h, getHeight(intervals, cur))
+            h = m..(h, getHeight(intervals, cur))
             res.a..(h)
         r.. res
     
-    ___ getHeight(self, intervals, cur):
+    ___ getHeight  intervals, cur):
         preMaxHeight = 0
         ___ i __ intervals:
             __ i.end <= cur.start: _____
             __ i.start >= cur.end: _____
-            preMaxHeight = max(preMaxHeight, i.height)
+            preMaxHeight = m..(preMaxHeight, i.height)
         cur.height += preMaxHeight
         intervals.a..(cur)
         r.. cur.height

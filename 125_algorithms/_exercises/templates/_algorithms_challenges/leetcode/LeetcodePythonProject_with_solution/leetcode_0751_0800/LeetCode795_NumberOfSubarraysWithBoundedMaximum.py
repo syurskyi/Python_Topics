@@ -4,7 +4,7 @@ Created on Apr 17, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ numSubarrayBoundedMax(self, A, L, R):
+    ___ numSubarrayBoundedMax  A, L, R):
         """
         :type A: List[int]
         :type L: int

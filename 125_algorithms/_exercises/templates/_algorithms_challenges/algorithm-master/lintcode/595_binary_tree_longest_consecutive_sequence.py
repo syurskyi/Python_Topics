@@ -14,7 +14,7 @@ c_ Solution:
     """
     Bottom Up
     """
-    ___ longestConsecutive(self, root):
+    ___ longestConsecutive  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution:
 
         r.. divide_conquer(root)[0]
 
-    ___ divide_conquer(self, node):
+    ___ divide_conquer  node):
         __ n.. node:
             r.. 0, 0
 
@@ -55,7 +55,7 @@ c_ Solution:
     """
     Top Down
     """
-    ___ longestConsecutive(self, root):
+    ___ longestConsecutive  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -65,7 +65,7 @@ c_ Solution:
 
         r.. divide_conquer(root, 0, 0)
 
-    ___ divide_conquer(self, node, parent_val, _size):
+    ___ divide_conquer  node, parent_val, _size):
         __ n.. node:
             r.. 0
 
@@ -77,4 +77,4 @@ c_ Solution:
         left = divide_conquer(node.left, node.val, size)
         right = divide_conquer(node.right, node.val, size)
 
-        r.. max(size, left, right)
+        r.. m..(size, left, right)

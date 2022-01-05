@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ countCornerRectangles(self, G):
+    ___ countCornerRectangles  G):
         """
         :type G: List[List[int]]
         :rtype: int

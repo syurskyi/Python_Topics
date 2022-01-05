@@ -5,7 +5,7 @@ Created on Apr 8, 2017
 '''
 
 c_ Solution(object):
-    ___ removeKdigits(self, num, k):
+    ___ removeKdigits  num, k):
         n = l..(num)
         longest = n-k
         __ k >= n: r.. '0'

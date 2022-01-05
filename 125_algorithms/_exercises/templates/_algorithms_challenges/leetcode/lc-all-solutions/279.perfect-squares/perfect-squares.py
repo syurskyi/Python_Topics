@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ numSquares(self, n):
+  ___ numSquares  n):
     """
     :type n: int
     :rtype: int

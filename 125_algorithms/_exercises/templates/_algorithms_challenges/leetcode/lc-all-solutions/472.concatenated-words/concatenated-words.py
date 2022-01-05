@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findAllConcatenatedWordsInADict(self, words):
+  ___ findAllConcatenatedWordsInADict  words):
     """
     :type words: List[str]
     :rtype: List[str]

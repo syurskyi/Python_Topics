@@ -3,7 +3,7 @@ c_ Solution:
     @param: s: a string,  encoded message
     @return: an integer, the number of ways decoding
     """
-    ___ numDecodings(self, s):
+    ___ numDecodings  s):
         __ n.. s o. s __ '0':
             r.. 0
 

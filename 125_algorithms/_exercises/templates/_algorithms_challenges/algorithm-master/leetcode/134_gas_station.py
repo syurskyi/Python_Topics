@@ -4,7 +4,7 @@ c_ Solution:
 
     if the tank is enough, go to next, otherwise back to previous to get gas
     """
-    ___ canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit  gas, cost):
         """
         :type gas: List[int]
         :type cost: List[int]
@@ -33,7 +33,7 @@ c_ Solution:
     """
     TLE: Simulate the process
     """
-    ___ canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit  gas, cost):
         """
         :type gas: List[int]
         :type cost: List[int]

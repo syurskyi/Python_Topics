@@ -4,7 +4,7 @@ feature = {0: "z", 1: "o", 2: "w", 3: "r", 4: "u", 5: "v", 6: "x", 7: "s", 8: "g
 
 
 c_ Solution(object):
-  ___ originalDigits(self, s):
+  ___ originalDigits  s):
     """
     :type s: str
     :rtype: str

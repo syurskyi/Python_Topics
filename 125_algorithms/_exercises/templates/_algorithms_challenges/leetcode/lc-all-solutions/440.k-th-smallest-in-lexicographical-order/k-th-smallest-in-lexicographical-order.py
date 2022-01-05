@@ -1,6 +1,6 @@
 c_ Solution(object):
   # naive pre-order traversal on denary tree
-  ___ _findKthNumber(self, n, k):
+  ___ _findKthNumber  n, k):
     """
     :type n: int
     :type k: int
@@ -30,13 +30,13 @@ c_ Solution(object):
     r.. dfs(0, n)
 
   # optimized solution
-  ___ findKthNumber(self, n, k):
+  ___ findKthNumber  n, k):
     ___ getGap(n, ans):
       gap = 0
       start = ans
       end = start + 1
       w.... start <= n:
-        gap += max(0, m..(n + 1, end) - start)
+        gap += m..(0, m..(n + 1, end) - start)
         start *= 10
         end *= 10
       r.. gap

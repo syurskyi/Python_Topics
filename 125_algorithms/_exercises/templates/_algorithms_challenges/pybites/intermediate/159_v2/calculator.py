@@ -19,10 +19,10 @@ ___ simple_calculator(calculation):
     
     ___ is_numeric(x):
 
-        try:
+        ___
             float(x)
             i..(x)
-        except:
+        ______:
             r.. F..
         ____:
             r.. T..
@@ -32,9 +32,9 @@ ___ simple_calculator(calculation):
     print(values)
     __ is_numeric(values[0]) a.. is_numeric(values[2]) a.. values[1] __ operations:
         operation = operations[values[1]]
-        try:
+        ___
             r.. operation(float(values[0]),float(values[2]))
-        except ZeroDivisionError:
+        ______ ZeroDivisionError:
             r.. ValueError("Division by zero")
 
 

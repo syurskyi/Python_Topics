@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ generatePalindromes(self, s):
+    ___ generatePalindromes  s):
         """
         :type s: str
         :rtype: List[str]
@@ -35,7 +35,7 @@ c_ Solution(object):
         grow(s, m, N.., cur, ret)
         r.. ret
 
-    ___ grow(self, s, count_map, pi, cur, ret):
+    ___ grow  s, count_map, pi, cur, ret):
         __ l..(cur) __ l..(s):
             ret.a..(cur)
             r..

@@ -16,7 +16,7 @@ True
 
 
 c_ Solution:
-    ___ addBoldTag(self, s, words):
+    ___ addBoldTag  s, words):
         """
         :type s: str
         :type words: List[str]

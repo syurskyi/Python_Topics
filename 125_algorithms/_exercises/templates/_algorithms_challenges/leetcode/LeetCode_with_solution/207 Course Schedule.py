@@ -23,7 +23,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ canFinish(self, numCourses, prerequisites):
+    ___ canFinish  numCourses, prerequisites):
         """
         Determine whether the graph is cyclic
         Marked twice -> cycle
@@ -45,7 +45,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ dfs_have_cycle(self, V, i, visited, marked):
+    ___ dfs_have_cycle  V, i, visited, marked):
         __ marked[i]:
             r.. T..
 

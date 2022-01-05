@@ -1,7 +1,7 @@
 ___ is_iterable(thing):
-    try:
+    ___
         i..(thing)
-    except T..:
+    ______ T..:
         r.. F..
     ____:
         r.. T..

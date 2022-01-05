@@ -12,7 +12,7 @@ c_ UndirectedGraphNode:
 c_ Solution:
     # @param node, a undirected graph node
     # @return a undirected graph node
-    ___ cloneGraph(self, node):
+    ___ cloneGraph  node):
         __ n.. node: r.. node
         newHead = UndirectedGraphNode(node.label)
         hashmap = {node:newHead}

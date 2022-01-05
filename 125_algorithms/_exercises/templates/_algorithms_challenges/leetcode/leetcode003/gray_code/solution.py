@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a list of integers
-    ___ grayCode(self, n):
+    ___ grayCode  n):
         m = 1 << n
         res    # list
         d = [(1 << (i + 1)) / 2 ___ i __ r..(n)]

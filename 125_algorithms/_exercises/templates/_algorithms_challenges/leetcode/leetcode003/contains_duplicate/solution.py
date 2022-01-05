@@ -5,7 +5,7 @@ and it should return false if every element is distinct.
 """
 
 c_ Solution(object):
-    ___ containsDuplicate(self, nums):
+    ___ containsDuplicate  nums):
         """
         :type nums: List[int]
         :rtype: bool

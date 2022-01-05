@@ -47,7 +47,7 @@ c_ LRUCache(object):
     head = Node(-1, -1, N..)
     List.initHead(head)
 
-  ___ get(self, key):
+  ___ get  key):
     """
     :rtype: int
     """
@@ -56,7 +56,7 @@ c_ LRUCache(object):
     d[key].hit()
     r.. d[key].value
 
-  ___ set(self, key, value):
+  ___ set  key, value):
     """
     :type key: int
     :type value: int

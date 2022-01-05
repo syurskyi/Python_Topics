@@ -37,7 +37,7 @@ c_ MyCircularQueue:
         lst = [N.. ___ _ __ r..(k)]
 
 
-    ___ enQueue(self, value: i..) __ bool:
+    ___ enQueue  value: i..) __ bool:
         """
         Insert an element into the circular queue. Return true if the operation is successful.
         """

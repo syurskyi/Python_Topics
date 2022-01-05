@@ -13,7 +13,7 @@ c_ Trie(object):
   ___ - ):
     root = TrieNode()
 
-  ___ insert(self, word):
+  ___ insert  word):
     """
     Inserts a word into the trie.
     :type word: str
@@ -21,7 +21,7 @@ c_ Trie(object):
     """
     p = root
     ___ c __ word:
-      cVal = ord(c) - ord("a")
+      cVal = o..(c) - o..("a")
       __ p.children[cVal]:
         p = p.children[cVal]
       ____:
@@ -32,17 +32,17 @@ c_ Trie(object):
     p.isWord = T..
     p.word = word
 
-  ___ helper(self, word):
+  ___ helper  word):
     p = root
     ___ c __ word:
-      cVal = ord(c) - ord("a")
+      cVal = o..(c) - o..("a")
       __ p.children[cVal]:
         p = p.children[cVal]
       ____:
         r.. N..
     r.. p
 
-  ___ s..(self, word):
+  ___ s..  word):
     """
     Returns if the word is in the trie.
     :type word: str
@@ -53,7 +53,7 @@ c_ Trie(object):
       r.. T..
     r.. F..
 
-  ___ startsWith(self, prefix):
+  ___ startsWith  prefix):
     """
     Returns if there is any word in the trie
     that starts with the given prefix.

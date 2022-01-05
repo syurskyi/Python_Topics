@@ -26,7 +26,7 @@ c_ Solution:
     ___ - ):
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    ___ numIslands(self, grid):
+    ___ numIslands  grid):
         """
         :type grid: list[list[str]]
         :rtype: int
@@ -48,7 +48,7 @@ c_ Solution:
 
         r.. cnt
 
-    ___ dfs(self, grid, i, j, visited):
+    ___ dfs  grid, i, j, visited):
         """
         dfs to mark visited
         """

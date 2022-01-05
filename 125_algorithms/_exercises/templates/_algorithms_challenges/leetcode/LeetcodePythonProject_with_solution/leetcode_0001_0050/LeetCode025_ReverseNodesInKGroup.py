@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ reverseKGroup(self, head, k):
+    ___ reverseKGroup  head, k):
         """
         :type head: ListNode
         :type k: int
@@ -30,7 +30,7 @@ c_ Solution(object):
             node = node.next
         r.. dummy.next
     
-    ___ reverse(self, prev, tail):
+    ___ reverse  prev, tail):
         nextNode = tail.next
         p = prev.next
         res = p

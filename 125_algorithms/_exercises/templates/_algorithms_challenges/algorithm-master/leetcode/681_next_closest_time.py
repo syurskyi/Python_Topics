@@ -23,7 +23,7 @@ True
 
 
 c_ Solution:
-    ___ nextClosestTime(self, time):
+    ___ nextClosestTime  time):
         """
         :type time: str
         :rtype: str
@@ -57,7 +57,7 @@ c_ Solution:
             '0' + s..(m) __ m < 10 ____ s..(m)
         )
 
-    ___ is_valid(self, ids, d..):
+    ___ is_valid  ids, d..):
         n = l..(d..)
         carry = 0
         i = l..(ids) - 1

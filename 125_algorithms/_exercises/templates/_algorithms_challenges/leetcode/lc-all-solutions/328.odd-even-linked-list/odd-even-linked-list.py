@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ oddEvenList(self, head):
+  ___ oddEvenList  head):
     """
     :type head: ListNode
     :rtype: ListNode

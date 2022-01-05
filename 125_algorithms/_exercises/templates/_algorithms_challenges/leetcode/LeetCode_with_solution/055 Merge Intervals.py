@@ -16,7 +16,7 @@ c_ Interval(object):
 
 
 c_ Solution(object):
-    ___ merge(self, itvls):
+    ___ merge  itvls):
         """
         scanning. No algorithm
         math
@@ -31,13 +31,13 @@ c_ Solution(object):
         ___ cur __ itvls[1:]:
             pre = ret[-1]
             __ cur.start <= pre.end:  # overlap
-                pre.end = max(pre.end, cur.end)
+                pre.end = m..(pre.end, cur.end)
             ____:
                 ret.a..(cur)
 
         r.. ret
 
-    ___ merge_error(self, itvls):
+    ___ merge_error  itvls):
         """
         scanning. No algorithm
         math

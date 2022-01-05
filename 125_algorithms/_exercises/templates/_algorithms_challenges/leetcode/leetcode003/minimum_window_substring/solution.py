@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a string
-    ___ minWindow(self, S, T):
+    ___ minWindow  S, T):
         s = S
         t = T
         d    # dict
@@ -36,7 +36,7 @@ c_ Solution:
                 res_right = rights[i]
         r.. s[res_left:res_right + 1]
 
-    ___ contains(self, d, td):
+    ___ contains  d, td):
         ___ k __ td:
             __ k n.. __ d o. d[k] < td[k]:
                 r.. F..

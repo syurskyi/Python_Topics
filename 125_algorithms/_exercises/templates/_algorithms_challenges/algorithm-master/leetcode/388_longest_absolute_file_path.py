@@ -26,7 +26,7 @@ there is error in that case if save the max size
 
 
 c_ Solution:
-    ___ lengthLongestPath(self, path):
+    ___ lengthLongestPath  path):
         """
         :type path: str
         :rtype: int
@@ -43,7 +43,7 @@ c_ Solution:
             depth = l..(line) - l..(name)
 
             __ '.' __ name:
-                ans = max(ans, dep2size[depth] + size)
+                ans = m..(ans, dep2size[depth] + size)
             ____:
                 dep2size[depth + 1] = dep2size[depth] + size + 1
 

@@ -73,6 +73,6 @@ ___ get_longest_palindrome(words_ N..
     __ n.. words:
         words = load_dictionary()
     palindromes = (word ___ word __ words __ is_palindrome(word))
-    r.. max(palindromes, key=l..)
+    r.. m..(palindromes, key=l..)
 
 print(get_longest_palindrome())

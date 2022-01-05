@@ -4,7 +4,7 @@ Created on Mar 30, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ pyramidTransition(self, bottom, allowed):
+    ___ pyramidTransition  bottom, allowed):
         """
         :type bottom: str
         :type allowed: List[str]

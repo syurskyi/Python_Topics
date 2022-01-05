@@ -5,12 +5,12 @@ Created on Mar 21, 2017
 '''
 
 c_ Solution(object):
-    ___ topKFrequent(self, nums, k):
+    ___ topKFrequent  nums, k):
         maxCount = 0
         hashmap    # dict
         ___ num __ nums:
             hashmap[num] = hashmap.get(num, 0)+1
-            maxCount = max(maxCount, hashmap[num])
+            maxCount = m..(maxCount, hashmap[num])
         dp = [[] ___ _ __ r..(maxCount)]
         ___ num, count __ hashmap.i..:
             dp[count-1].a..(num)
@@ -27,7 +27,7 @@ c_ Solution(object):
         r.. result
         
     
-    ___ topKFrequentHeap(self, nums, k):
+    ___ topKFrequentHeap  nums, k):
         _______ heapq
         hashmap    # dict
         ___ num __ nums:

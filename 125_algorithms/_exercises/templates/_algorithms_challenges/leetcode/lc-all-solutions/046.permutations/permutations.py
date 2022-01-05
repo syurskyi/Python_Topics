@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ permute(self, nums):
+  ___ permute  nums):
     """
     :type nums: List[int]
     :rtype: List[List[int]]

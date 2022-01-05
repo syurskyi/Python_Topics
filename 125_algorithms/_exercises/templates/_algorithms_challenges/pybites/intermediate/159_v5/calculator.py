@@ -5,9 +5,9 @@ ___ simple_calculator(calculation):
     """Receives 'calculation' and returns the calculated result,
     """
     funcs = {'+': add, '-': sub, '*': mul, '/': truediv}
-    try:
+    ___
         a, op, b = calculation.s..
         a, b = i..(a), i..(b)
         r.. funcs[op](a, b)
-    except Exception:
+    ______ Exception:
         r.. ValueError

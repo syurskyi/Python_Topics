@@ -4,7 +4,7 @@ Created on Feb 27, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ canMeasureWater(self, x, y, z):
+    ___ canMeasureWater  x, y, z):
         __ x+y<z: r.. F..
         __ x __ z o. y __ z o. x+y __ z:
             r.. T..

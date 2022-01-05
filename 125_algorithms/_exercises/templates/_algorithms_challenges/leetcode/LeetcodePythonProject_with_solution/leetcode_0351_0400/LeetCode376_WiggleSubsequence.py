@@ -5,7 +5,7 @@ Created on Apr 1, 2017
 '''
 
 c_ Solution(object):
-    ___ wiggleMaxLength(self, nums):
+    ___ wiggleMaxLength  nums):
         __ n.. nums: r.. 0
         maxLen = 1
         i = 1

@@ -4,7 +4,7 @@ Created on Sep 5, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findRestaurant(self, list1, list2):
+    ___ findRestaurant  list1, list2):
         """
         :type list1: List[str]
         :type list2: List[str]

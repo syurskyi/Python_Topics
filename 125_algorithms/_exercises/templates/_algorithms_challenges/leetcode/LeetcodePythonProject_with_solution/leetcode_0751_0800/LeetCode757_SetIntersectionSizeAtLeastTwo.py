@@ -4,7 +4,7 @@ Created on Mar 30, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ intersectionSizeTwo(self, intervals):
+    ___ intersectionSizeTwo  intervals):
         """
         :type intervals: List[List[int]]
         :rtype: int

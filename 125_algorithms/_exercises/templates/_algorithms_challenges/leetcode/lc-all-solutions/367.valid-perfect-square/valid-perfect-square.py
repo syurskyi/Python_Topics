@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ isPerfectSquare(self, num):
+  ___ isPerfectSquare  num):
     """
     :type num: int
     :rtype: bool

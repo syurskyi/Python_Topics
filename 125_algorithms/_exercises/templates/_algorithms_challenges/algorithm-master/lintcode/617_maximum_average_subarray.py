@@ -30,7 +30,7 @@ valid    T      T    T    F     F
 
 
 c_ Solution:
-    ___ maxAverage(self, nums, k):
+    ___ maxAverage  nums, k):
         """
         :type nums: list[int]
         :type k: int
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. left
 
-    ___ is_valid(self, nums, k, mid, s):
+    ___ is_valid  nums, k, mid, s):
         s[0] = smin = 0
 
         ___ i __ r..(1, l..(nums) + 1):

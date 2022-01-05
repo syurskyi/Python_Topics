@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ smallestDistancePair(self, A, k):
+    ___ smallestDistancePair  A, k):
         """
         :type A: List[int]
         :type k: int
@@ -20,7 +20,7 @@ c_ Solution:
 
         r.. left __ check_valid(A, left, k) ____ right
 
-    ___ check_valid(self, A, mid, k):
+    ___ check_valid  A, mid, k):
         """
         valid if there are at least `k` pairs when distance is `mid`
         """

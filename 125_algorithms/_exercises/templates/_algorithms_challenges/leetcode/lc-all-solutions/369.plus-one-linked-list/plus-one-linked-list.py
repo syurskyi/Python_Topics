@@ -5,7 +5,7 @@
 #         self.next = None
 
 c_ Solution(object):
-  ___ plusOne(self, head):
+  ___ plusOne  head):
     """
     :type head: ListNode
     :rtype: ListNode

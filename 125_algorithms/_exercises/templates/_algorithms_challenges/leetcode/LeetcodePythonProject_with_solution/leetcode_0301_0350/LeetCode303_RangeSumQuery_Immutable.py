@@ -10,5 +10,5 @@ c_ NumArray(object):
         ___ num __ nums:
             dp.a..(dp[-1] + num)
     
-    ___ sumRange(self, i, j):
+    ___ sumRange  i, j):
         r.. dp[j+1] - dp[i]

@@ -8,7 +8,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ containsNearbyDuplicate(self, nums, k):
+    ___ containsNearbyDuplicate  nums, k):
         """
         hash with heap
 

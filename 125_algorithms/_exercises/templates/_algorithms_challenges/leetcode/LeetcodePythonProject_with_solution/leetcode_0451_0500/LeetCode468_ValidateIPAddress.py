@@ -5,7 +5,7 @@ Created on Apr 25, 2017
 '''
 
 c_ Solution(object):
-    ___ validIPAddress(self, IP):
+    ___ validIPAddress  IP):
         """
         :type IP: str
         :rtype: str
@@ -16,7 +16,7 @@ c_ Solution(object):
             r.. 'IPv4'
         r.. 'Neither'
     
-    ___ checkIP4(self, ip):
+    ___ checkIP4  ip):
         arr = ip.s..('.')
         __ l..(arr) != 4: r.. F..
         ___ elem __ arr:
@@ -26,7 +26,7 @@ c_ Solution(object):
                 r.. F..
         r.. T..
     
-    ___ checkIP6(self, ip):
+    ___ checkIP6  ip):
         arr = ip.s..(':')
         __ l..(arr) != 8: r.. F..
         d.. = set(l..('0123456789abcdefABCDEF'))

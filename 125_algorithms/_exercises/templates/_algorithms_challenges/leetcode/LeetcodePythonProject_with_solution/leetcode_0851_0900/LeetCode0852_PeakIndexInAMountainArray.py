@@ -4,7 +4,7 @@ Created on Sep 10, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ peakIndexInMountainArray(self, A):
+    ___ peakIndexInMountainArray  A):
         """
         :type A: List[int]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(object):
                 r = m
         r.. l
     
-    ___ peakIndexInMountainArray_On(self, A):
+    ___ peakIndexInMountainArray_On  A):
         """
         :type A: List[int]
         :rtype: int
@@ -30,7 +30,7 @@ c_ Solution(object):
         ___ i, num __ e..(arr):
             __ num > val:
                 res = i
-            val = max(val, num)
+            val = m..(val, num)
         r.. res
     
     ___ test

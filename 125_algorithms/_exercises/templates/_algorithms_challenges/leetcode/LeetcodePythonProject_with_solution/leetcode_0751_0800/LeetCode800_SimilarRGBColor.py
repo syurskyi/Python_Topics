@@ -4,7 +4,7 @@ Created on Apr 19, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ similarRGB(self, color):
+    ___ similarRGB  color):
         """
         :type color: str
         :rtype: str
@@ -13,7 +13,7 @@ c_ Solution(object):
         print(r, g, b)
         r.. '#' + getTwoDigits(r) + getTwoDigits(g) + getTwoDigits(b)
     
-    ___ getTwoDigits(self, s):
+    ___ getTwoDigits  s):
         res = 0
         diff = float('inf')
         ___ s0 __ ['00', '11', '22', '33', '44', '55', '66', '77', '88', '99',\
@@ -26,9 +26,9 @@ c_ Solution(object):
                 diff = diff0
         r.. res
     
-    ___ convert(self, s):
-        num = 16*(ord(s[0])-ord('0') __ s[0].isdigit() ____ ord(s[0])-ord('a')+10)
-        num += (ord(s[1])-ord('0') __ s[1].isdigit() ____ ord(s[1])-ord('a')+10)
+    ___ convert  s):
+        num = 16*(o..(s[0])-o..('0') __ s[0].isdigit() ____ o..(s[0])-o..('a')+10)
+        num += (o..(s[1])-o..('0') __ s[1].isdigit() ____ o..(s[1])-o..('a')+10)
         r.. num
     
     ___ test

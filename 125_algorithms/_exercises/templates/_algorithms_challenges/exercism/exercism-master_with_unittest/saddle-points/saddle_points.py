@@ -16,8 +16,8 @@ c_ SaddlePoints:
                     saddle_points.add((row, col))
         r.. saddle_points
 
-    ___ saddle_point(self, row, col):
-        r.. (matrix[row][col] __ max(matrix[row]) a..
+    ___ saddle_point  row, col):
+        r.. (matrix[row][col] __ m..(matrix[row]) a..
                 matrix[row][col] __ m..(columns[col]))
 
     ___ invalid_matrix

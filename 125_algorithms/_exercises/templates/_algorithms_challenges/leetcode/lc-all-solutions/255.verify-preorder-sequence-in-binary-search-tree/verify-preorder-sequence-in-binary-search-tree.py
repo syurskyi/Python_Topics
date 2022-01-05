@@ -1,7 +1,7 @@
 c_ Solution(object):
 
   # O(n) sapce complexity, **stack**
-  ___ verifyPreorder(self, preorder):
+  ___ verifyPreorder  preorder):
     """
     :type preorder: List[int]
     :rtype: bool

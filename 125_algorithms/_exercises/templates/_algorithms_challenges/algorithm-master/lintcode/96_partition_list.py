@@ -14,7 +14,7 @@ c_ Solution:
     @param: x: An integer
     @return: A ListNode
     """
-    ___ partition(self, head, x):
+    ___ partition  head, x):
         __ n.. head:
             r..
 

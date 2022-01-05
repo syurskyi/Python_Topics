@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ printTree(self, root):
+  ___ printTree  root):
     """
     :type root: TreeNode
     :rtype: List[List[str]]
@@ -15,7 +15,7 @@ c_ Solution(object):
     ___ height(root):
       __ n.. root:
         r.. 0
-      r.. 1 + max(height(root.left), height(root.right))
+      r.. 1 + m..(height(root.left), height(root.right))
 
     ___ fill(root, res, left, right, h):
       __ root:

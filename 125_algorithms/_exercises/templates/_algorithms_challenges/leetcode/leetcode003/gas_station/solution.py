@@ -2,7 +2,7 @@ c_ Solution:
     # @param gas, a list of integers
     # @param cost, a list of integers
     # @return an integer
-    ___ canCompleteCircuit(self, gas, cost):
+    ___ canCompleteCircuit  gas, cost):
         n = l..(gas)
         t = [0 ___ i __ r..(n)]
         ___ i __ r..(n):
@@ -21,7 +21,7 @@ c_ Solution:
         ____:
             r.. res
 
-    ___ canCompleteCircuit2(self, gas, cost):
+    ___ canCompleteCircuit2  gas, cost):
         # Brute-force
         n = l..(gas)
         ___ i __ r..(n):

@@ -4,7 +4,7 @@ Created on Oct 29, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ fairCandySwap(self, A, B):
+    ___ fairCandySwap  A, B):
         """
         :type A: List[int]
         :type B: List[int]

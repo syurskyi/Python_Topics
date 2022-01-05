@@ -7,7 +7,7 @@ _______ bisect
 
 
 c_ Solution(object):
-    ___ sortTransformedArray(self, nums, a, b, c):
+    ___ sortTransformedArray  nums, a, b, c):
         """
         Key points:
         Quadratic function
@@ -48,7 +48,7 @@ c_ Solution(object):
 
         r.. ret __ a > 0 ____ ret[::-1]
 
-    ___ f(self, x, a, b, c):
+    ___ f  x, a, b, c):
         r.. a * (x ** 2) + b * x + c
 
 

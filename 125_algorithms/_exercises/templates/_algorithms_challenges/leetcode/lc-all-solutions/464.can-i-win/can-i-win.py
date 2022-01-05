@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ canIWin(self, maxChoosableInteger, desiredTotal):
+  ___ canIWin  maxChoosableInteger, desiredTotal):
     """
     :type maxChoosableInteger: int
     :type desiredTotal: int

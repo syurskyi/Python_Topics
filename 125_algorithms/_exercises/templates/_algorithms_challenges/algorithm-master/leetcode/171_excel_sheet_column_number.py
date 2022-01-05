@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ titleToNumber(self, s):
+    ___ titleToNumber  s):
         """
         :type s: str
         :rtype: int
@@ -10,9 +10,9 @@ c_ Solution:
         s = s.u..
 
         ans = 0
-        BASE = ord('A') - 1
+        BASE = o..('A') - 1
 
         ___ char __ s:
-            ans = ans * 26 + ord(char) - BASE
+            ans = ans * 26 + o..(char) - BASE
 
         r.. ans

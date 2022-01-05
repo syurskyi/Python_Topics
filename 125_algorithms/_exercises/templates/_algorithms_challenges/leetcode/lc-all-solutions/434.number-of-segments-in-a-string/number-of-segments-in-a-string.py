@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ countSegments(self, s):
+  ___ countSegments  s):
     """
     :type s: str
     :rtype: int

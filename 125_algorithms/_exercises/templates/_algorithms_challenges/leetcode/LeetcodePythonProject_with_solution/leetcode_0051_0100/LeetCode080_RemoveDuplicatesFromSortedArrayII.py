@@ -5,7 +5,7 @@ Created on Jan 24, 2017
 '''
 
 c_ Solution(object):
-    ___ removeDuplicates(self, nums):
+    ___ removeDuplicates  nums):
         """
         :type nums: List[int]
         :rtype: int

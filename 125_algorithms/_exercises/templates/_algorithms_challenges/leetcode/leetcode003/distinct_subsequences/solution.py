@@ -1,6 +1,6 @@
 c_ Solution:
     # @return an integer
-    ___ numDistinct(self, S, T):
+    ___ numDistinct  S, T):
         __ l..(S) < l..(T):
             r.. 0
         n = l..(S)

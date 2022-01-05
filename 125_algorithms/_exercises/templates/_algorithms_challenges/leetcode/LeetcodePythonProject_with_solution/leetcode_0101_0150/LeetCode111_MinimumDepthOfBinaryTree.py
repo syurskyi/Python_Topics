@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ minDepth(self, root):
+    ___ minDepth  root):
         """
         :type root: TreeNode
         :rtype: int

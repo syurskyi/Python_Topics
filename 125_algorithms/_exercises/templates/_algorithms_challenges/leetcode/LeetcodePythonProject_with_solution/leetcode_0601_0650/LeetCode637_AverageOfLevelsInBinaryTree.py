@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ averageOfLevels(self, root):
+    ___ averageOfLevels  root):
         """
         :type root: TreeNode
         :rtype: List[float]

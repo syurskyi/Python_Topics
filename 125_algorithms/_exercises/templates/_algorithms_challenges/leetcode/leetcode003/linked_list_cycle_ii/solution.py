@@ -7,7 +7,7 @@
 c_ Solution:
     # @param head, a ListNode
     # @return a list node
-    ___ detectCycle(self, head):
+    ___ detectCycle  head):
         __ head __ N.. o. head.next __ N..
             r.. N..
         slow = head

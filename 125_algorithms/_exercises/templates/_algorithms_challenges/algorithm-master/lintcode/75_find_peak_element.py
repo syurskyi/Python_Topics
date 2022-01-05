@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findPeak(self, nums):
+    ___ findPeak  nums):
         """
         :type nums: list
         :rtype: int

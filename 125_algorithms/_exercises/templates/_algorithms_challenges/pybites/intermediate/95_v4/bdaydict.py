@@ -5,7 +5,7 @@ c_ BirthdayDict(d..):
     """Override dict to print a message every time a new person is added that has
        the same birthday (day+month) as somebody already in the dict"""
 
-    ___ __setitem__(self, name, birthday):
+    ___ __setitem__  name, birthday):
         bday = birthday.month, birthday.day
 
         __ any([(v.month, v.day) __ bday ___ v __ v..):

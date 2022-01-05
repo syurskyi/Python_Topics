@@ -6,7 +6,7 @@
 
 
 c_ Solution:
-    ___ isPalindrome(self, head):
+    ___ isPalindrome  head):
         """
         :type head: ListNode
         :rtype: bool
@@ -29,7 +29,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ isPalindrome(self, head):
+    ___ isPalindrome  head):
         """
         :type head: ListNode
         :rtype: bool

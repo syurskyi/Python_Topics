@@ -4,7 +4,7 @@ Created on May 1, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ ambiguousCoordinates(self, S):
+    ___ ambiguousCoordinates  S):
         """
         :type S: str
         :rtype: List[str]
@@ -20,7 +20,7 @@ c_ Solution(object):
                     res.a..('(%s, %s)' % (s1, s2))
         r.. res
     
-    ___ helper(self, s):
+    ___ helper  s):
         n = l..(s)
         res    # list
         __ n __ 0 o. (n > 1 a.. s[0] __ '0' a.. s[-1] __ '0'):

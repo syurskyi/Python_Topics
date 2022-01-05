@@ -12,7 +12,7 @@ return [3, 4].
 
 __author__ = 'Danyang'
 c_ Solution:
-    ___ searchRange(self, A, target):
+    ___ searchRange  A, target):
         """
         Binary Search Twice
         Notice the low-bound & high-bound binary search

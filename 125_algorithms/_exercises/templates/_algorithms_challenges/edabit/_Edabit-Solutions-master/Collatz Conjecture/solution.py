@@ -7,4 +7,4 @@ ___ collatz(n):
         ____:
             n = n*3 + 1
             output.a..(n)
-    r.. l..(output),max(output)
+    r.. l..(output),m..(output)

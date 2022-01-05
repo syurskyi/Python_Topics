@@ -4,10 +4,10 @@ ____ pprint _______ pprint
 c_ RecordScore
     """Class to track a game's maximum score"""
     ___ - ):
-        max = 0
+        m.. = 0
 
-    ___ __call__(self, *args, **kwargs):
-        __ max < args[0]:
-            max = args[0]
-        r.. max
+    ___ __call__  *args, **kwargs):
+        __ m.. < args[0]:
+            m.. = args[0]
+        r.. m..
 

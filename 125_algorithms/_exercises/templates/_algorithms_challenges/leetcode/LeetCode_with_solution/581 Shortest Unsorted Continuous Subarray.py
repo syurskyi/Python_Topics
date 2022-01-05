@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findUnsortedSubarray(self, nums: List[i..]) __ i..:
+    ___ findUnsortedSubarray  nums: List[i..]) __ i..:
         """
         Sorted at both ends
         Then search for the two ends by nums[i+1] > nums[i] on the left side
@@ -46,7 +46,7 @@ c_ Solution:
         maxa = -float('inf')
         ___ i __ r..(lo, hi + 1):
             mini = m..(mini, nums[i])
-            maxa = max(maxa, nums[i])
+            maxa = m..(maxa, nums[i])
 
         w.... lo - 1 >= 0 a.. nums[lo - 1] > mini:
             lo -= 1
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. hi - lo + 1
 
-    ___ findUnsortedSubarray_sort(self, nums: List[i..]) __ i..:
+    ___ findUnsortedSubarray_sort  nums: List[i..]) __ i..:
         """
         Brute force sort and compare O(n lgn)
         """

@@ -20,11 +20,11 @@ Both the left and right subtrees must also be binary search trees.
 c_ Solution:
     # @param root, a tree node
     # @return a boolean
-    ___ isValidBST(self, root):
+    ___ isValidBST  root):
         prev = N..
         r.. is_valid_bst_aux(root)
 
-    ___ is_valid_bst_aux(self, root):
+    ___ is_valid_bst_aux  root):
         __ root __ N..
             r.. T..
         ____:

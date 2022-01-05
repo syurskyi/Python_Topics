@@ -5,7 +5,7 @@ Created on Mar 4, 2017
 '''
 
 c_ Solution(object):
-    ___ canPermutePalindrome(self, s):
+    ___ canPermutePalindrome  s):
         __ n.. s: r.. F..
         hashmap    # dict
         ___ c __ s:

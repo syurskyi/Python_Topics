@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maximalRectangle(self, matrix):
+  ___ maximalRectangle  matrix):
     """
     :type matrix: List[List[str]]
     :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(object):
         w.... stack a.. height[i] < height[stack[-1]]:
           h = height[stack.pop()]
           w = i - stack[-1] - 1 __ stack ____ i
-          ans = max(ans, h * w)
+          ans = m..(ans, h * w)
         stack.a..(i)
       r.. ans
 
@@ -28,5 +28,5 @@ c_ Solution(object):
         ___ j __ r..(0, l..(matrix[0])):
           __ matrix[i][j] != "0":
             dp[i][j] = dp[i + 1][j] + 1
-      ans = max(ans, histogram(dp[i]))
+      ans = m..(ans, histogram(dp[i]))
     r.. ans

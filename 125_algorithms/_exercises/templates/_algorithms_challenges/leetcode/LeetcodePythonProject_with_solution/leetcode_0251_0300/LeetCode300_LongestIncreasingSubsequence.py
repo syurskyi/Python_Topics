@@ -5,7 +5,7 @@ Created on Mar 9, 2017
 '''
 
 c_ Solution(object):
-    ___ lengthOfLIS(self, nums):
+    ___ lengthOfLIS  nums):
         _______ bisect
         dp = [0]*l..(nums)
         length = 0

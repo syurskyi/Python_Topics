@@ -22,7 +22,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ hasPathSum(self, root, s..):
+    ___ hasPathSum  root, s..):
         """
         dfs
 

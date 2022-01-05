@@ -40,7 +40,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ findMode(self, root):
+    ___ findMode  root):
         """
         In-order traversal
         O(1) space thus cannot keep a set of current modes
@@ -55,7 +55,7 @@ c_ Solution:
         find_mode(root, [N.., 0], ret, T..)
         r.. ret[0]
 
-    ___ find_mode(self, root, prev, ret, collect):
+    ___ find_mode  root, prev, ret, collect):
         """
         prev: [previous_value, count]. Need to survice the call stack
         """
@@ -71,14 +71,14 @@ c_ Solution:
         prev[0] = root.val
 
         __ n.. collect:
-            ret[1] = max(ret[1], prev[1])
+            ret[1] = m..(ret[1], prev[1])
         ____:
             __ prev[1] __ ret[1]:
                 ret[0].a..(root.val)
 
         find_mode(root.right, prev, ret, collect)
 
-    ___ findMode_error(self, root):
+    ___ findMode_error  root):
         """
         counter (extra space) for any tree
         use recursion
@@ -93,7 +93,7 @@ c_ Solution:
         find_mode_error(root, root.val, ret)
         r.. ret[1]
 
-    ___ find_mode_error(self, root, target, ret):
+    ___ find_mode_error  root, target, ret):
         cur = 0
         __ n.. root:
             r.. cur

@@ -5,7 +5,7 @@
 # def knows(a, b):
 
 c_ Solution(object):
-  ___ findCelebrity(self, n):
+  ___ findCelebrity  n):
     """
     :type n: int
     :rtype: int

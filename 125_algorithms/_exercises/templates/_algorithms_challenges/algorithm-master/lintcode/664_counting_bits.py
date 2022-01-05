@@ -3,7 +3,7 @@ c_ Solution:
     @param: num: a non negative integer number
     @return: an array represent the number of 1's in their binary
     """
-    ___ countBits(self, num):
+    ___ countBits  num):
         __ n.. num:
             r.. [0]
 

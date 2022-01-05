@@ -41,7 +41,7 @@ String dominoes contains only 'L', 'R' and '.'
 
 
 c_ Solution:
-    ___ pushDominoes(self, dominoes: s..) __ s..:
+    ___ pushDominoes  dominoes: s..) __ s..:
         """
         DP L & R from both ends
         Let L[i] be the distance to the "L" from the right

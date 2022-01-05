@@ -22,7 +22,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ is_neighbor(self, p, q):
+    ___ is_neighbor  p, q):
         diff = 0
         ___ a, b __ z..(p, q):
             __ a != b:
@@ -31,7 +31,7 @@ c_ Solution:
                 r.. F..
         r.. T..
 
-    ___ ladderLength(self, start, end, dct):
+    ___ ladderLength  start, end, dct):
         """
         bfs
         """
@@ -53,7 +53,7 @@ c_ Solution:
 
         r.. 0
 
-    ___ ladderLength_TLE(self, start, end, d..):
+    ___ ladderLength_TLE  start, end, d..):
         """
         bfs
         :param start: a string
@@ -104,7 +104,7 @@ c_ Solution:
             queue = queue[length:]
         r.. path_len
 
-    ___ ladderLength_TLE2(self, start, end, d..):
+    ___ ladderLength_TLE2  start, end, d..):
         """
         bfs
         :param start: a string
@@ -148,7 +148,7 @@ c_ Solution:
         r.. path_len
 
 
-    ___ ladderLength_complex(self, start, end, d..):
+    ___ ladderLength_complex  start, end, d..):
         """
         bfs
 
@@ -163,7 +163,7 @@ c_ Solution:
         :return: integer, if impossible, return 0
         """
         path_len = 0
-        lower_cases = [chr(i+ord('a')) ___ i __ xrange(26)]
+        lower_cases = [chr(i+o..('a')) ___ i __ xrange(26)]
 
         queue = [start]
         d...remove(start)
@@ -192,7 +192,7 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().ladderLength("sand", "acne", set(
         ["slit", "bunk", "wars", "ping", "viva", "wynn", "wows", "irks", "gang", "pool", "mock", "fort", "heel", "send",
          "ship", "cols", "alec", "foal", "nabs", "gaze", "giza", "mays", "dogs", "karo", "cums", "jedi", "webb", "lend",

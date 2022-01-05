@@ -36,7 +36,7 @@ c_ LCInfo(object):
             'EUR': u'€',
         }.get(currency)
 
-    ___ number(self, n):
+    ___ number  n):
         n_int, n_float = divmod(abs(n), 100)
         n_int_parts    # list
         w.... n_int > 0:
@@ -48,7 +48,7 @@ c_ LCInfo(object):
             n_float,
         )
 
-    ___ currency(self, change):
+    ___ currency  change):
         r.. cur_fmt.f..(
             lead_neg __ change < 0 ____ '',
             cur_symbol,
@@ -56,7 +56,7 @@ c_ LCInfo(object):
             trail_neg __ change < 0 ____ ' ',
         )
 
-    ___ entry(self, entry):
+    ___ entry  entry):
         date, change, desc = entry
         fmt = ROW_FMT.f..('>', *columns)
         r.. fmt.f..(
@@ -65,7 +65,7 @@ c_ LCInfo(object):
             currency(change),
         )
 
-    ___ table(self, entries):
+    ___ table  entries):
         lines = [headers]
         lines.extend(map(entry, s..(entries)))
         r.. '\n'.j..(lines)

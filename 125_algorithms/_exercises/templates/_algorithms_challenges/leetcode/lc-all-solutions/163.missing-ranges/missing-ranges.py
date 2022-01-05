@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findMissingRanges(self, nums, lower, upper):
+  ___ findMissingRanges  nums, lower, upper):
     """
     :type nums: List[int]
     :type lower: int

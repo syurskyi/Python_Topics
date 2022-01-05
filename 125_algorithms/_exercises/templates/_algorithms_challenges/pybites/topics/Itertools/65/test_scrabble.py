@@ -15,7 +15,7 @@ ___ calc_word_value(word):
 
 ___ max_word_value(words):
     """Calc the max value of a collection of words"""
-    r.. max(words, key=calc_word_value)
+    r.. m..(words, key=calc_word_value)
 
 
 @p__.mark.parametrize("draw, expected", [

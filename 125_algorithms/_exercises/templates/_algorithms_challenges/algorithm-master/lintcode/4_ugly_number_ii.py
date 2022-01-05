@@ -9,7 +9,7 @@ Main Concept:
 
 
 c_ Solution:
-    ___ nthUglyNumber(self, n):
+    ___ nthUglyNumber  n):
         """
         :type n: int
         :rtype: int

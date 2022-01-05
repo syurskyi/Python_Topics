@@ -17,9 +17,9 @@ c_ LetterCounter(object):
         lock = Lock()
         value = Counter()
 
-    ___ add_counter(self, counter_to_add):
+    ___ add_counter  counter_to_add):
         lock.a..
-        try:
+        ___
             value = value + counter_to_add
         finally:
             lock.release()

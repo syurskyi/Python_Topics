@@ -4,7 +4,7 @@ z  40
 
 value  input("Insert variable x,y,z only: ")
 
-try:
+___
     exec("print("+value+")")
-except NameError:
+______ NameError:
     print("Incorrect variable name!")

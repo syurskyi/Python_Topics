@@ -9,7 +9,7 @@ Return true because "leetcode" can be segmented as "leet code".
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ wordBreak_TLE(self, s, d..):
+    ___ wordBreak_TLE  s, d..):
         """
         TLE
         dfs
@@ -29,17 +29,17 @@ c_ Solution:
         ___ i __ r..(l..(s)):
             string_builder += s[i]
             __ string_builder __ d..:
-                try:
+                ___
                     __ wordBreak_TLE(s[i+1:], d..):
                         r.. T..
                     ____:
                         _____
-                except IndexError:
+                ______ IndexError:
                     r.. T..
 
         r.. F..
 
-    ___ wordBreak(self, s, d..):
+    ___ wordBreak  s, d..):
         """
          __       __________   ___  __    ______   ______   .__   __.      _______.
         |  |     |   ____\  \ /  / |  |  /      | /  __  \  |  \ |  |     /       |
@@ -74,7 +74,7 @@ c_ Solution:
             # continue from matched condition
             __ dp[i]:
                 ___ word __ d..:
-                    try:
+                    ___
                         # trivial
                         __ dp[i+l..(word)]__True:
                             _____
@@ -82,12 +82,12 @@ c_ Solution:
                         # main
                         __ s[i:i+l..(word)]__word: # test whether [i, i+len) can construct a word. THE BEAUTY OF HALF OPEN
                             dp[i+l..(word)] = T..  # record the checking
-                    except IndexError:
+                    ______ IndexError:
                         _____
 
         r.. dp[-1]
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().wordBreak("aaaaaaa", ["aaaa", "aaa"])__True

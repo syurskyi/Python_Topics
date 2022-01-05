@@ -56,13 +56,13 @@ ____ tying _______ List
 
 
 c_ Solution:
-    ___ shipWithinDays(self, weights: List[i..], D: i..) __ i..:
+    ___ shipWithinDays  weights: List[i..], D: i..) __ i..:
         """
         Must respect conveyor's order
 
         Binary search on value range (max, sum)
         """
-        lo = max(weights)
+        lo = m..(weights)
         hi = s..(weights)
         w.... lo < hi:
             mid = (lo + hi) // 2

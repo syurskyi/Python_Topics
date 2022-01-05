@@ -29,7 +29,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ change(self, amount, coins):
+    ___ change  amount, coins):
         """
         let F[amount][l] = # ways ending (but not necesserily) using coins[l-1]
         (i.e. coins[:l])
@@ -55,7 +55,7 @@ c_ Solution:
         r.. F[amount][n]
 
 
-    ___ change_TLE(self, amount, coins):
+    ___ change_TLE  amount, coins):
         """
         Like the take the step for the stairs dp
 
@@ -83,7 +83,7 @@ c_ Solution:
 
         r.. s..(F[amount].values())
 
-    ___ change_error(self, amount, coins):
+    ___ change_error  amount, coins):
         """
         Like the take the step for the stairs dp
 

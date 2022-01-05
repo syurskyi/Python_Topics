@@ -5,7 +5,7 @@ Created on Mar 2, 2017
 '''
 
 c_ Solution(object):
-    ___ isUgly_noRec(self, num):
+    ___ isUgly_noRec  num):
         """
         :type num: int
         :rtype: bool
@@ -22,7 +22,7 @@ c_ Solution(object):
                 break
         r.. num __ 1
     
-    ___ isUgly(self, num):
+    ___ isUgly  num):
         """
         :type num: int
         :rtype: bool

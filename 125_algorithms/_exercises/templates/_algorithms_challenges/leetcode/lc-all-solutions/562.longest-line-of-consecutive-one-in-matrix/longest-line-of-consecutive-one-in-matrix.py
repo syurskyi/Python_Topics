@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ longestLine(self, M):
+  ___ longestLine  M):
     """
     :type M: List[List[int]]
     :rtype: int
@@ -18,5 +18,5 @@ c_ Solution(object):
           ver[i + 1][j + 1] = ver[i][j + 1] + 1
           diag[i + 1][j + 1] = diag[i][j] + 1
           anti[i + 1][j + 1] = anti[i][j + 2] + 1
-          ans = max(ans, hor[i + 1][j + 1], ver[i + 1][j + 1], diag[i + 1][j + 1], anti[i + 1][j + 1])
+          ans = m..(ans, hor[i + 1][j + 1], ver[i + 1][j + 1], diag[i + 1][j + 1], anti[i + 1][j + 1])
     r.. ans

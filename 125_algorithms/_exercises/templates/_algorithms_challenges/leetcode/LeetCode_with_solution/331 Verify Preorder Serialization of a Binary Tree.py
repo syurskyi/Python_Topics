@@ -36,7 +36,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ isValidSerialization(self, preorder):
+    ___ isValidSerialization  preorder):
         """
         :type preorder: str
         :rtype: bool
@@ -57,7 +57,7 @@ c_ Solution(object):
 
         r.. n.. stk a.. child_cnt __ 1
 
-    ___ isValidSerializationSpace(self, preorder):
+    ___ isValidSerializationSpace  preorder):
         """
         :type preorder: str
         :rtype: bool
@@ -68,12 +68,12 @@ c_ Solution(object):
             __ stk[-1] __ '#':
                 child_stk.a..(stk.pop())  # a counter is enough
             ____:
-                try:
+                ___
                     child_stk.pop()
                     child_stk.pop()
                     stk.pop()
                     child_stk.a..('#')
-                except IndexError:
+                ______ IndexError:
                     r.. F..
 
         r.. n.. stk a.. l..(child_stk) __ 1

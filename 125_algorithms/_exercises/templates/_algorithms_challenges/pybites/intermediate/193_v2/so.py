@@ -13,13 +13,13 @@ ___ top_python_questions(url=cached_so_url):
        by num_votes descending (see tests for expected output).
     """
 
-    try:
+    ___
         response = requests.get(url)
         response.raise_for_status()
-    except requests.HTTPError __ err:
+    ______ requests.HTTPError __ err:
         print('HTTP Error')
         print(err)
-    except Exception __ err:
+    ______ Exception __ err:
         print('Other Error')
         print(err)
     ____:

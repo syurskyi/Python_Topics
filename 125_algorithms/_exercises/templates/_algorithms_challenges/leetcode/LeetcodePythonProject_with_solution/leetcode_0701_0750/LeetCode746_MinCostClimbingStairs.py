@@ -4,7 +4,7 @@ Created on Mar 22, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minCostClimbingStairs(self, cost):
+    ___ minCostClimbingStairs  cost):
         """
         :type cost: List[int]
         :rtype: int

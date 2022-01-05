@@ -11,14 +11,14 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ widthOfBinaryTree(self, root):
+    ___ widthOfBinaryTree  root):
         """
         :type root: TreeNode
         :rtype: int
         """
         r.. dfs(root, 0, 1, [], [])
         
-    ___ dfs(self, root, level, order, start, end):
+    ___ dfs  root, level, order, start, end):
         __ n.. root: r.. 0
         __ l..(start) __ level:
             start.a..(order)
@@ -28,7 +28,7 @@ c_ Solution(object):
         cur = end[level]-start[level]+1
         left = dfs(root.left, level+1, 2*order, start, end)
         right = dfs(root.right, level+1, 2*order+1, start, end)
-        r.. max(cur, max(left, right))
+        r.. m..(cur, m..(left, right))
     
     ___ test
         testCases = [

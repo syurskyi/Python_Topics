@@ -4,7 +4,7 @@ Created on Oct 3, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ minSteps(self, n):
+    ___ minSteps  n):
         """
         :type n: int
         :rtype: int

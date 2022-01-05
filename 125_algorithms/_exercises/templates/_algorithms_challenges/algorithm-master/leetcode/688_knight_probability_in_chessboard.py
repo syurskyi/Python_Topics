@@ -8,7 +8,7 @@ c_ Solution:
     2. keep simulate the process and divide the probability
     3. sum the values
     """
-    ___ knightProbability(self, n, k, r, c):
+    ___ knightProbability  n, k, r, c):
         """
         :type n: int
         :type k: int
@@ -51,7 +51,7 @@ c_ Solution:
     """
     BFS: TLE
     """
-    ___ knightProbability(self, n, k, r, c):
+    ___ knightProbability  n, k, r, c):
         """
         :type n: int
         :type k: int

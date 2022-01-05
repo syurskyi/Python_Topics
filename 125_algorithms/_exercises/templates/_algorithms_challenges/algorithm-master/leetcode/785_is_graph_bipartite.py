@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isBipartite(self, graph):
+    ___ isBipartite  graph):
         """
         :type graph: List[List[int]]
         :rtype: bool

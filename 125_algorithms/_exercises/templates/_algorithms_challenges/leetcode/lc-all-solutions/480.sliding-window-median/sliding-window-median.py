@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ medianSlidingWindow(self, nums, k):
+  ___ medianSlidingWindow  nums, k):
     window = s..(nums[:k])
     medians    # list
     ___ a, b __ z..(nums, nums[k:] + [0]):

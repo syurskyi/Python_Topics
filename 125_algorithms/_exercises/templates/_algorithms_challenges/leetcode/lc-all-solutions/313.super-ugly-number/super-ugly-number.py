@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ Solution(object):
-  ___ nthSuperUglyNumber(self, n, primes):
+  ___ nthSuperUglyNumber  n, primes):
     """
     :type n: int
     :type primes: List[int]

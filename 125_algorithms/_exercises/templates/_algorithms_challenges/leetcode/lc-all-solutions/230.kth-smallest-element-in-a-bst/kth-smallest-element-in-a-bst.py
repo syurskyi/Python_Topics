@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ kthSmallest(self, root, k):
+  ___ kthSmallest  root, k):
     """
     :type root: TreeNode
     :type k: int

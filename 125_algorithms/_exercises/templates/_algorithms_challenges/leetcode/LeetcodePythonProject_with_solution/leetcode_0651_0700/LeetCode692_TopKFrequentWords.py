@@ -4,7 +4,7 @@ Created on Oct 24, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ topKFrequent(self, words, k):
+    ___ topKFrequent  words, k):
         """
         :type words: List[str]
         :type k: int

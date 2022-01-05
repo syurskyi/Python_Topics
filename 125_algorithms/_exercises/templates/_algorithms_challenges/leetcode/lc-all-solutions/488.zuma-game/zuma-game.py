@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findMinStep(self, board, hand):
+  ___ findMinStep  board, hand):
     """
     :type board: str
     :type hand: str

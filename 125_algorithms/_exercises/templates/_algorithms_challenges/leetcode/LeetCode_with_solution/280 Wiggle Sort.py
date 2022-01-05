@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ wiggleSort(self, nums):
+    ___ wiggleSort  nums):
         """
         Solve by enumerating examples
         Sort-based: interleave the small half and large half

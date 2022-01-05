@@ -34,7 +34,7 @@ dirs = ((0, 1), (0, -1), (1, 0), (-1, 0))
 
 
 c_ Solution:
-    ___ pacificAtlantic(self, matrix):
+    ___ pacificAtlantic  matrix):
         """
         dfs, visisted O(1)
         Similar to Trapping Rainwater II (BFS + heap), but no need to record
@@ -77,7 +77,7 @@ c_ Solution:
         ]
         r.. ret
 
-    ___ dfs(self, matrix, i, j, C):
+    ___ dfs  matrix, i, j, C):
         # check before dfs (to be consistent)
         C[i][j] = T..
         m, n = l..(matrix), l..(matrix[0])
@@ -89,7 +89,7 @@ c_ Solution:
                     dfs(matrix, I, J, C)
 
 
-    ___ pacificAtlantic_error(self, matrix):
+    ___ pacificAtlantic_error  matrix):
         """
         DP
         dfs, visisted O(1)
@@ -122,7 +122,7 @@ c_ Solution:
         r.. ret
 
 
-    ___ dfs_error(self, matrix, i, j, visisted, C, predicate):
+    ___ dfs_error  matrix, i, j, visisted, C, predicate):
         m, n = l..(matrix), l..(matrix[0])
         __ visisted[i][j]:
             r.. C[i][j]

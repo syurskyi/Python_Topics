@@ -40,7 +40,7 @@ c_ MapSum:
             ___ - ):
                 root = TrieNode(N.., 0, 0)  # dummy root
 
-            ___ insert(self, cur, key, i, val):
+            ___ insert  cur, key, i, val):
                 __ n.. cur:
                     cur = TrieNode(key[i], 0, 0)
 
@@ -55,11 +55,11 @@ c_ MapSum:
 
         trie = Trie()
 
-    ___ insert(self, key: s.., val: i..) __ N..
+    ___ insert  key: s.., val: i..) __ N..
         root = trie.root
         root.children[key[0]], _ = trie.insert(root.children[key[0]], key, 0, val)
 
-    ___ s..(self, prefix: s..) __ i..:
+    ___ s..  prefix: s..) __ i..:
         node = trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:
@@ -91,7 +91,7 @@ c_ MapSum2:
             ___ - ):
                 root = TrieNode(N.., 0, 0)  # dummy root
 
-            ___ insert(self, pi, key, i, val):
+            ___ insert  pi, key, i, val):
                 __ key[i] n.. __ pi.children:
                     cur = TrieNode(key[i], 0, 0)
                     pi.children[key[i]] = cur
@@ -108,10 +108,10 @@ c_ MapSum2:
 
         trie = Trie()
 
-    ___ insert(self, key: s.., val: i..) __ N..
+    ___ insert  key: s.., val: i..) __ N..
         trie.insert(trie.root, key, 0, val)
 
-    ___ s..(self, prefix: s..) __ i..:
+    ___ s..  prefix: s..) __ i..:
         node = trie.root
         ___ a __ prefix:
             __ a n.. __ node.children:

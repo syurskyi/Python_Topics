@@ -5,6 +5,6 @@ Created on Mar 17, 2017
 '''
 
 c_ Solution(object):
-    ___ bulbSwitch(self, n):
+    ___ bulbSwitch  n):
         _______ math
         r.. i..(math.sqrt(n))

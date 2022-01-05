@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ gameOfLife(self, board):
+  ___ gameOfLife  board):
     """
     :type board: List[List[int]]
     :rtype: void Do not return anything, modify board in-place instead.

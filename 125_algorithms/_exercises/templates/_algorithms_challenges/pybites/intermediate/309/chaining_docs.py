@@ -11,7 +11,7 @@ c_ Document:
         # feel free to alter this method and its parameters to your liking
         lines    # list
 
-    ___ add_line(self, line: s.., index: i.. = N..) __ Document:
+    ___ add_line  line: s.., index: i.. = N..) __ Document:
         """Add a new line to the document.
 
         Args:
@@ -32,7 +32,7 @@ c_ Document:
 
 
 
-    ___ swap_lines(self, index_one: i.., index_two: i..) __ Document:
+    ___ swap_lines  index_one: i.., index_two: i..) __ Document:
         """Swap two lines.
 
         Args:
@@ -46,14 +46,14 @@ c_ Document:
         __ index_one __ index_two:
             r.. self
 
-        try:
+        ___
             lines[index_one],lines[index_two] = lines[index_two],lines[index_one]
-        except IndexError:
+        ______ IndexError:
             r.. IndexError("Invalid indexes")
 
         r.. self
 
-    ___ merge_lines(self, indices: l..) __ Document:
+    ___ merge_lines  indices: l..) __ Document:
 
         """Merge several lines into a single line.
 
@@ -88,7 +88,7 @@ c_ Document:
 
 
 
-    ___ add_punctuation(self, punctuation: s.., index: i..) __ Document:
+    ___ add_punctuation  punctuation: s.., index: i..) __ Document:
         """Add punctuation to the end of a sentence.
 
         Overwrites existing punctuation.
@@ -128,7 +128,7 @@ c_ Document:
 
 
 
-    ___ _remove_punctuation(self,line: s..) __ s..:
+    ___ _remove_punctuation line: s..) __ s..:
         """Remove punctuation from a line."""
         # you can use this function as helper method for
         # Document.word_count() and Document.words

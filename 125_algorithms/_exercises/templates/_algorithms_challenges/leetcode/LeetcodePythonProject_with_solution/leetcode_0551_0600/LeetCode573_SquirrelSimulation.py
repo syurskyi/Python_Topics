@@ -5,7 +5,7 @@ Created on Sep 3, 2017
 '''
 c_ Solution(object):
     # Don't need extra space if using maxDiff
-    ___ minDistance(self, height, width, tree, squirrel, nuts):
+    ___ minDistance  height, width, tree, squirrel, nuts):
         """
         :type height: int
         :type width: int
@@ -18,10 +18,10 @@ c_ Solution(object):
         ___ nut __ nuts:
             dist = abs(tree[0]-nut[0])+abs(tree[1]-nut[1])
             sumVal += dist*2
-            maxDiff = max(maxDiff, dist-abs(squirrel[0]-nut[0])-abs(squirrel[1]-nut[1]))
+            maxDiff = m..(maxDiff, dist-abs(squirrel[0]-nut[0])-abs(squirrel[1]-nut[1]))
         r.. sumVal-maxDiff
     
-    ___ minDistance_space(self, height, width, tree, squirrel, nuts):
+    ___ minDistance_space  height, width, tree, squirrel, nuts):
         """
         :type height: int
         :type width: int

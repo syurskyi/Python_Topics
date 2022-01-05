@@ -25,7 +25,7 @@ c_ Solution:
     ___ - ):
         ret    # list
 
-    ___ letterCasePermutation(self, S: s..) __ List[s..]:
+    ___ letterCasePermutation  S: s..) __ List[s..]:
         """
         dfs
         """
@@ -37,7 +37,7 @@ c_ Solution:
             ___ e __ ret
         ]
 
-    ___ dfs(self, lst, S_lst, i):
+    ___ dfs  lst, S_lst, i):
         __ l..(lst) __ l..(S_lst):
             ret.a..(l..(lst))
             r..

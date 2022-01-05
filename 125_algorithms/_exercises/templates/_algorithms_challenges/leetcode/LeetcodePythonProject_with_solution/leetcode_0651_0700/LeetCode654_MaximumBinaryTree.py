@@ -11,13 +11,13 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ constructMaximumBinaryTree(self, nums):
+    ___ constructMaximumBinaryTree  nums):
         """
         :type nums: List[int]
         :rtype: TreeNode
         """
         __ n.. nums: r.. N..
-        maxVal = max(nums)
+        maxVal = m..(nums)
         ind = nums.index(maxVal)
         root = TreeNode(maxVal)
         root.left = constructMaximumBinaryTree(nums[:ind])

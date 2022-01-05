@@ -20,7 +20,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ bulbSwitch(self, n):
+    ___ bulbSwitch  n):
         """
         Only bulbs with index being a perfect square number toggled odd number of times
         Brainteaser

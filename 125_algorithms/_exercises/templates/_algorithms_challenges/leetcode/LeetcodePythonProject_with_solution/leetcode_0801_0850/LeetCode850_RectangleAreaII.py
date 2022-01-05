@@ -5,7 +5,7 @@ Created on Jun 13, 2019
 '''
 
 c_ Solution(object):
-    ___ rectangleArea(self, rectangles):
+    ___ rectangleArea  rectangles):
         """
         :type rectangles: List[List[int]]
         :rtype: int

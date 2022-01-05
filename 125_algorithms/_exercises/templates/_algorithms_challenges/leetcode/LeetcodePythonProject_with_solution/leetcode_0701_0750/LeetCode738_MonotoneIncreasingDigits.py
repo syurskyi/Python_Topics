@@ -4,7 +4,7 @@ Created on Mar 14, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ monotoneIncreasingDigits(self, N):
+    ___ monotoneIncreasingDigits  N):
         """
         :type N: int
         :rtype: int

@@ -5,13 +5,13 @@ c_ UnionFind
     m = m
     n = n
 
-  ___ find(self, x):
+  ___ find  x):
     dad = dad
     __ dad[x] != x:
       dad[x] = find(dad[x])
     r.. dad[x]
 
-  ___ union(self, xy):
+  ___ union  xy):
     dad = dad
     rank = rank
     x, y = map(find, xy)
@@ -29,7 +29,7 @@ c_ UnionFind
 c_ Solution:
   # @param {list[list[str]]} board a 2D board containing 'X' and 'O'
   # @return nothing 
-  ___ solve(self, board):
+  ___ solve  board):
     # Write your code here
     __ l..(board) __ 0:
       r..

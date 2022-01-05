@@ -1,5 +1,5 @@
 c_ Solution(object):
-    ___ sortArrayByParity(self, A):
+    ___ sortArrayByParity  A):
         """
         :type A: List[int]
         :rtype: List[int]

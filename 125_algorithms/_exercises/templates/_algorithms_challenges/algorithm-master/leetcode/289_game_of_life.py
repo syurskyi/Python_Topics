@@ -12,7 +12,7 @@ c_ Solution:
     """
     Use bits to save the status in next round
     """
-    ___ gameOfLife(self, board):
+    ___ gameOfLife  board):
         """
         :type board: List[List[int]]
         :rtype: void Do not return anything, modify board in-place instead.
@@ -35,7 +35,7 @@ c_ Solution:
             ___ y __ r..(n):
                 board[x][y] >>= 1
 
-    ___ get_live_neibs(self, board, x, y):
+    ___ get_live_neibs  board, x, y):
         cnt = 0
         m, n = l..(board), l..(board[0])
 
@@ -59,7 +59,7 @@ c_ Solution:
     """
     Not in-place solution
     """
-    ___ gameOfLife(self, board):
+    ___ gameOfLife  board):
         """
         :type board: List[List[int]]
         :rtype: void Do not return anything, modify board in-place instead.
@@ -90,7 +90,7 @@ c_ Solution:
         ___ x __ r..(m):
             board[x] |  = ans[x] |
 
-    ___ get_live_neibs(self, board, x, y):
+    ___ get_live_neibs  board, x, y):
         cnt = 0
         m, n = l..(board), l..(board[0])
 

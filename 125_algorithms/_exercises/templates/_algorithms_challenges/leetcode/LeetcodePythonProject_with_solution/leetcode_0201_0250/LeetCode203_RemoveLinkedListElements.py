@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = N..
 
 c_ Solution(object):
-    ___ removeElements(self, head, val):
+    ___ removeElements  head, val):
         """
         :type head: ListNode
         :type val: int

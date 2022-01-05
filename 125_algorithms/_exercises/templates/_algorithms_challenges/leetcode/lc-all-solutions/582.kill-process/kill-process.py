@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ killProcess(self, pid, ppid, kill):
+  ___ killProcess  pid, ppid, kill):
     """
     :type pid: List[int]
     :type ppid: List[int]

@@ -18,7 +18,7 @@ c_ ListNode:
         next = N..
 
 c_ Solution:
-    ___ removeNthFromEnd(self, head, n):
+    ___ removeNthFromEnd  head, n):
         """
         O(n)+O(n)
         :param head: head node

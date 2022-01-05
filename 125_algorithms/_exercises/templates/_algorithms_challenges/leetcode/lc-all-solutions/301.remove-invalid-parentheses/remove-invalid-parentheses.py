@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ removeInvalidParentheses(self, s):
+  ___ removeInvalidParentheses  s):
     """
     :type s: str
     :rtype: List[str]

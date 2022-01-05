@@ -23,7 +23,7 @@ c_ PythonBytes:
         entries = feedparser.p..(URL)['entries']
 
 
-    ___ get_episode_numbers_for_mentioned_domain(self, domain: s..) __ l..:
+    ___ get_episode_numbers_for_mentioned_domain  domain: s..) __ l..:
         """Return a list of episode IDs (itunes_episode attribute) of the
            episodes the pass in domain was mentioned in.
         """
@@ -49,7 +49,7 @@ c_ PythonBytes:
 
 
 
-    ___ get_most_mentioned_domain_names(self, n: i.. = 15) __ l..:
+    ___ get_most_mentioned_domain_names  n: i.. = 15) __ l..:
         """Get the most mentioned domain domains. We match a domain using
            regex: "https?://[^/]+" - make sure you only count a domain once per
            episode and ignore domains in IGNORE_DOMAINS.

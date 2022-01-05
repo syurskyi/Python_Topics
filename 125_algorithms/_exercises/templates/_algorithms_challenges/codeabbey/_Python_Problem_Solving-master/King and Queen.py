@@ -19,7 +19,7 @@ ___ i __ r..(i..(input())):
             #if row of queen is greater than king row then reduce the value of king to check whether they meet
             ____ qp > kp:
                 #get the ascii value of the the character of q
-                ascii_val = ord(q)
+                ascii_val = o..(q)
                 #iterate through the while loop while till the queen position is equal to king position
                 # or ascii value of queen column is equal to kings column 
                 w.... qp != kp o. chr(ascii_val) != k:
@@ -36,7 +36,7 @@ ___ i __ r..(i..(input())):
                     print('Y',end = ' ')
             #if kings position is greater than qp
             ____ qp < kp:
-                ascii_val = ord(q)
+                ascii_val = o..(q)
                 #iterate through the while loop while till the queen position is equal to king position
                 # or ascii value of queen column is equal to kings column 
                 w.... qp != kp o. chr(ascii_val) != k:
@@ -56,7 +56,7 @@ ___ i __ r..(i..(input())):
                 print('Y',end = ' ')
             #if row of queen is greater than king row then reduce the value of king to check whether they meet
             ____ qp > kp:
-                ascii_val = ord(q)
+                ascii_val = o..(q)
                 w.... qp != kp o. chr(ascii_val) != k:
                     ascii_val += 1
                     qp -= 1
@@ -66,7 +66,7 @@ ___ i __ r..(i..(input())):
                 __ qp __ kp a.. chr(ascii_val) __ k:
                     print('Y',end = ' ')
             ____ qp < kp:
-                ascii_val = ord(q)
+                ascii_val = o..(q)
                 w.... qp != kp o. chr(ascii_val) != k:
                     ascii_val += 1
                     qp += 1

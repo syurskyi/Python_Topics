@@ -24,22 +24,22 @@ c_ CheckBrackets:
 
         r.. is_empty(stack)  # There are more open brackets left to close
 
-    ___ closes_existing_bracket(self, char, stack):
+    ___ closes_existing_bracket  char, stack):
         r.. stack a.. matching_brackets(stack[-1], char)
 
-    ___ matching_brackets(self, opener, closer):
+    ___ matching_brackets  opener, closer):
         r.. BRACKETS[opener] __ closer
 
-    ___ get_brackets(self, s__):
+    ___ get_brackets  s__):
         r.. [char ___ char __ s__ __ is_bracket(char)]
 
-    ___ is_opening_bracket(self, bracket):
+    ___ is_opening_bracket  bracket):
         r.. bracket __ OPENING_BRACKET
 
-    ___ is_closing_bracket(self, bracket):
+    ___ is_closing_bracket  bracket):
         r.. bracket __ CLOSING_BRACKET
 
-    ___ is_bracket(self, char):
+    ___ is_bracket  char):
         r.. is_opening_bracket(char) o. is_closing_bracket(char)
 
 

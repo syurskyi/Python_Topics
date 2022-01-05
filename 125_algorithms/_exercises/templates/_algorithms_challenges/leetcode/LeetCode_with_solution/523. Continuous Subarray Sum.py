@@ -21,7 +21,7 @@ integer.
 
 
 c_ Solution:
-    ___ checkSubarraySum(self, nums, k):
+    ___ checkSubarraySum  nums, k):
         """
         Two pointers algorithm won't work since it is multiple of k
 

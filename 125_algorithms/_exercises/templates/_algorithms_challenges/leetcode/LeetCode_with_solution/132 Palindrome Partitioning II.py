@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ minCut(self, s):
+    ___ minCut  s):
         """
         Let P[i][j] indicates whether s[i:j] is palindrome
         P[i][j] = P[i+1][j-1] && s[i] == s[j-1]
@@ -44,7 +44,7 @@ c_ Solution(object):
 
         r.. C[n]
 
-    ___ minCut_dp(self, s):
+    ___ minCut_dp  s):
         """
         dp
 
@@ -83,17 +83,17 @@ c_ Solution(object):
         # palindrome dp
         P = [[F.. ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
         ___ i __ xrange(length+1):
-            try:
+            ___
                 P[i][i] = T..
                 P[i][i+1] = T..
-            except IndexError:
+            ______ IndexError:
                 p..
 
         ___ i __ xrange(length, -1, -1):
             ___ j __ xrange(i+2, length+1):
-                try:
+                ___
                     P[i][j] = P[i+1][j-1] a.. s[i] __ s[j-1]
-                except IndexError:
+                ______ IndexError:
                     P[i][j] = T..
 
         # min cut dp
@@ -107,7 +107,7 @@ c_ Solution(object):
                         D[i] = m..(D[i], D[j]+1)
         r.. D[0]
 
-    ___ minCut_MLE(self, s):
+    ___ minCut_MLE  s):
         """
         bfs
         :param s: str
@@ -134,7 +134,7 @@ c_ Solution(object):
                         q.a..(new_cur)
             q = q[length:]
 
-    ___ minCut_TLE(self, s):
+    ___ minCut_TLE  s):
         """
         dp
 
@@ -162,10 +162,10 @@ c_ Solution(object):
         length = l..(s)
         dp = [[1<<32-1 ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
         ___ i __ xrange(length+1):
-            try:
+            ___
                 dp[i][i] = 0
                 dp[i][i+1] = 0
-            except IndexError:
+            ______ IndexError:
                 p..
 
         ___ i __ xrange(length, -1, -1):
@@ -177,10 +177,10 @@ c_ Solution(object):
 
         r.. dp[0][length]
 
-    ___ is_palindrome(self, s):
+    ___ is_palindrome  s):
         r.. s __ s[::-1]
 
-    ___ minCut_TLE2(self, s):
+    ___ minCut_TLE2  s):
         """
         dp
 
@@ -213,27 +213,27 @@ c_ Solution(object):
         # palindrome dp
         dp2 = [[F.. ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
         ___ i __ xrange(length+1):
-            try:
+            ___
                 dp2[i][i] = T..
                 dp2[i][i+1] = T..
-            except IndexError:
+            ______ IndexError:
                 p..
 
         ___ i __ xrange(length, -1, -1):
             ___ j __ xrange(i+2, length+1):
-                try:
+                ___
                     dp2[i][j] = dp2[i+1][j-1] a.. s[i] __ s[j-1]
-                except IndexError:
+                ______ IndexError:
                     dp2[i][j] = T..
 
 
         # min cut dp
         dp = [[1<<32-1 ___ _ __ xrange(length+1)] ___ _ __ xrange(length+1)]
         ___ i __ xrange(length+1):
-            try:
+            ___
                 dp[i][i] = 0
                 dp[i][i+1] = 0
-            except IndexError:
+            ______ IndexError:
                 p..
 
         ___ i __ xrange(length, -1, -1):

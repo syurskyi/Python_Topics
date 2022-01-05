@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ majorityElement(self, nums):
+    ___ majorityElement  nums):
         """
         Algorithm:
         O(n lgn) sort and take the middle one

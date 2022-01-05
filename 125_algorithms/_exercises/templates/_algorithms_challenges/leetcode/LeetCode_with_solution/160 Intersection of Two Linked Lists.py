@@ -30,7 +30,7 @@ c_ ListNode:
 
 
 c_ Solution:
-    ___ getIntersectionNode(self, headA, headB):
+    ___ getIntersectionNode  headA, headB):
         """
         We can do something with the length difference.
 
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. cur_a
 
-    ___ _get_len(self, head):
+    ___ _get_len  head):
         n = 0
         cur = head
         w.... cur:

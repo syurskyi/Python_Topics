@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ subarraySum(self, nums, k):
+  ___ subarraySum  nums, k):
     """
     :type nums: List[int]
     :type k: int

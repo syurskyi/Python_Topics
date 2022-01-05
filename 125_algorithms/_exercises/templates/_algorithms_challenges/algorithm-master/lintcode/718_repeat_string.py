@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ repeatedString(self, a, b):
+    ___ repeatedString  a, b):
         """
         :type a: str
         :type b: str

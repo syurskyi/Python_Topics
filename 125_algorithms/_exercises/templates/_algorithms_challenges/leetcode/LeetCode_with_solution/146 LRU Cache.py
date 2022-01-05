@@ -23,7 +23,7 @@ c_ LRUCache(object):
         head = N..
         tail = N..
 
-    ___ get(self, key):
+    ___ get  key):
         __ key __ map:
             cur = map[key]
             _elevate(cur)
@@ -31,7 +31,7 @@ c_ LRUCache(object):
 
         r.. -1
 
-    ___ set(self, key, value):
+    ___ set  key, value):
         __ key __ map:
             cur = map[key]
             cur.val = value
@@ -46,7 +46,7 @@ c_ LRUCache(object):
                 del map[last.key]
 
     # doubly linked-list operations only
-    ___ _appendleft(self, cur):
+    ___ _appendleft  cur):
         """Normal or initially empty"""
         __ n.. head a.. n.. tail:
             head = cur
@@ -69,7 +69,7 @@ c_ LRUCache(object):
         tail = pre
         r.. last
 
-    ___ _elevate(self, cur):
+    ___ _elevate  cur):
         """Head, Tail, Middle"""
         pre, nxt = cur.pre, cur.next
         __ n.. pre:
@@ -89,7 +89,7 @@ c_ LRUCache_TLE(object):
         q    # list  # order by key
         dic    # dict
 
-    ___ get(self, key):
+    ___ get  key):
         __ key __ dic:
             q.remove(key)
             q.insert(0, key)
@@ -97,7 +97,7 @@ c_ LRUCache_TLE(object):
         ____:
             r.. -1
 
-    ___ set(self, key, value):
+    ___ set  key, value):
         """
         Algorithm:
         data structure: Queue and HashMap

@@ -8,10 +8,10 @@ c_ BankAccount(object):
     ___ open
         p..
 
-    ___ deposit(self, amount):
+    ___ deposit  amount):
         p..
 
-    ___ withdraw(self, amount):
+    ___ withdraw  amount):
         p..
 
     ___ close

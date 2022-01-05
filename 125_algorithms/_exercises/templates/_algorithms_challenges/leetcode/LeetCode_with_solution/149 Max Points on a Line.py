@@ -15,7 +15,7 @@ c_ Point:
         y = b
 
 c_ Solution:
-    ___ maxPoints_complicated(self, points):
+    ___ maxPoints_complicated  points):
         """
 
         :param points: a list of Points
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. maxa
 
-    ___ maxPoints(self, points):
+    ___ maxPoints  points):
         """
         reference: http://fisherlei.blogspot.sg/2013/12/leetcode-max-points-on-line-solution.html
         :param points: a list of Points
@@ -98,11 +98,11 @@ c_ Solution:
 
 
             __ hash_map:
-                max_key = max(hash_map, key=hash_map.get)
+                max_key = m..(hash_map, key=hash_map.get)
                 max_value = hash_map[max_key]
             ____:
                 max_value  = 0
-            maxa = max(maxa, max_value+duplicate)
+            maxa = m..(maxa, max_value+duplicate)
 
         r.. maxa
 
@@ -111,7 +111,7 @@ c_ Solution:
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     points = [(560, 248), (0, 16), (30, 250), (950, 187), (630, 277), (950, 187), (-212, -268), (-287, -222), (53, 37),
               (-280, -100), (-1, -14), (-5, 4), (-35, -387), (-95, 11), (-70, -13), (-700, -274), (-95, 11), (-2, -33),
               (3, 62), (-4, -47), (106, 98), (-7, -65), (-8, -71), (-8, -147), (5, 5), (-5, -90), (-420, -158),

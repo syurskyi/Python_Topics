@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ removeKdigits(self, num, k):
+    ___ removeKdigits  num, k):
         """
         Stack and greedy.
         The leading digits should be as small as possible

@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ pruneTree(self, root):
+    ___ pruneTree  root):
         """
         :type root: TreeNode
         :rtype: TreeNode

@@ -4,7 +4,7 @@ c_ Solution:
     @param: : A string
     @return: Count the number of distinct subsequences
     """
-    ___ numDistinct(self, S, T):
+    ___ numDistinct  S, T):
         __ S __ N.. o. T __ N..
             r.. 0
 

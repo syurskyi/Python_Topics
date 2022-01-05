@@ -5,7 +5,7 @@ Created on Apr 27, 2017
 '''
 
 c_ Solution(object):
-    ___ findRadius(self, houses, heaters):
+    ___ findRadius  houses, heaters):
         houses.s..()
         heaters.s..()
         i = 0
@@ -19,7 +19,7 @@ c_ Solution(object):
                 tmp = house-heaters[i]
                 __ i+1 < l..(heaters):
                     tmp = m..(tmp, heaters[i+1]-house)
-            radius = max(radius, tmp)
+            radius = m..(radius, tmp)
         r.. radius
     
     ___ test

@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ printTree(self, root):
+    ___ printTree  root):
         """
         :type root: TreeNode
         :rtype: List[List[str]]
@@ -23,7 +23,7 @@ c_ Solution(object):
         helper(root, 0, res, 0, n)
         r.. res
     
-    ___ helper(self, root, level, res, start, end):
+    ___ helper  root, level, res, start, end):
         __ n.. root:
             r..
         mid = (start+end)//2
@@ -31,9 +31,9 @@ c_ Solution(object):
         helper(root.left, level+1, res, start, mid-1)
         helper(root.right, level+1, res, mid+1, end)
     
-    ___ getHeight(self, root):
+    ___ getHeight  root):
         __ n.. root: r.. 0
-        r.. max(getHeight(root.left),\
+        r.. m..(getHeight(root.left),\
                    getHeight(root.right))+1
     
     ___ test

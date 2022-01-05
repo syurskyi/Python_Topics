@@ -17,7 +17,7 @@ If n = 4 and k = 2, a solution is:
 
 
 c_ Solution(object):
-    ___ combine(self, n, k):
+    ___ combine  n, k):
         """
         :type n: int
         :type k: int
@@ -26,7 +26,7 @@ c_ Solution(object):
         a = r..(1, n + 1)
         r.. combine_aux(a, k)
 
-    ___ combine_aux(self, a, k):
+    ___ combine_aux  a, k):
         __ k __ 0:
             r.. [[]]
         ____:

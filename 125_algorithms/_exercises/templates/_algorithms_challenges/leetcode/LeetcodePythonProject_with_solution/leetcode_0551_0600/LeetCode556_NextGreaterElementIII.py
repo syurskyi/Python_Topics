@@ -4,7 +4,7 @@ Created on Aug 27, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ nextGreaterElement(self, n):
+    ___ nextGreaterElement  n):
         """
         :type n: int
         :rtype: int

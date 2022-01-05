@@ -12,7 +12,7 @@ c_ RandomListNode(object):
         r__ = N..
 
 c_ Solution(object):
-    ___ copyRandomList(self, head):
+    ___ copyRandomList  head):
         """
         :type head: RandomListNode
         :rtype: RandomListNode

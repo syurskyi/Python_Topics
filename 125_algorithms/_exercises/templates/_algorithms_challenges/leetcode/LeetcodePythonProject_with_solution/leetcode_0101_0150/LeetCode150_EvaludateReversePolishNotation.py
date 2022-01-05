@@ -5,7 +5,7 @@ Created on Feb 11, 2017
 '''
 
 c_ Solution(object):
-    ___ evalRPN(self, tokens):
+    ___ evalRPN  tokens):
         """
         :type tokens: List[str]
         :rtype: int

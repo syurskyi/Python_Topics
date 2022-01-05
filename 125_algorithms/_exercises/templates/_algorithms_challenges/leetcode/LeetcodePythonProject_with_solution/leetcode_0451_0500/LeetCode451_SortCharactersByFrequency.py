@@ -5,7 +5,7 @@ Created on Apr 20, 2017
 '''
 
 c_ Solution(object):
-    ___ frequencySort(self, s):
+    ___ frequencySort  s):
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1

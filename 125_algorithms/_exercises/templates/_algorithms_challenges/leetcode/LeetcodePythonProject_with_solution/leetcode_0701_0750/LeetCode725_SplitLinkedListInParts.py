@@ -10,7 +10,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ splitListToParts(self, root, k):
+    ___ splitListToParts  root, k):
         """
         :type root: ListNode
         :type k: int

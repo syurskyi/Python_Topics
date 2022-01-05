@@ -42,7 +42,7 @@ c_ Item:
         name = name
         enchantments    # list
 
-    ___ add_enchantment(self,enchantment):
+    ___ add_enchantment enchantment):
         enchantments.a..(enchantment)
     
 

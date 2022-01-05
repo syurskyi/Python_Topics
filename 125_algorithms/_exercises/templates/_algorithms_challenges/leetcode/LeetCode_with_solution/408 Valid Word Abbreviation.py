@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ validWordAbbreviation(self, word, abbr):
+    ___ validWordAbbreviation  word, abbr):
         """
         pointers
         :type word: str

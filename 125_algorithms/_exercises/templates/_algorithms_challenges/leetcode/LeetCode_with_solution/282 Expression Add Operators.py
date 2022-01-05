@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ addOperators(self, num, target):
+    ___ addOperators  num, target):
         """
         Adapted from https://leetcode.com/discuss/58614/java-standard-backtrace-ac-solutoin-short-and-clear
 
@@ -29,7 +29,7 @@ c_ Solution(object):
         dfs(num, target, 0, "", 0, 0, ret)
         r.. ret
 
-    ___ dfs(self, num, target, pos, cur_str, cur_val, mul, ret):
+    ___ dfs  num, target, pos, cur_str, cur_val, mul, ret):
         __ pos >= l..(num):
             __ cur_val __ target:
                 ret.a..(cur_str)

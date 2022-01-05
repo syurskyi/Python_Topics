@@ -17,7 +17,7 @@ c_ MiniCassandra:
     @param: column_value: a string
     @return: nothing
     """
-    ___ insert(self, raw_key, column_key, column_value):
+    ___ insert  raw_key, column_key, column_value):
         __ raw_key n.. __ storage:
             storage[raw_key]    # dict
 
@@ -29,7 +29,7 @@ c_ MiniCassandra:
     @param: column_end: An integer
     @return: a list of Columns
     """
-    ___ query(self, raw_key, column_start, column_end):
+    ___ query  raw_key, column_start, column_end):
         __ raw_key n.. __ storage:
             r.. []
 

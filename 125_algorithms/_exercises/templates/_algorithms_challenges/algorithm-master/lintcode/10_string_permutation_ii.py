@@ -3,7 +3,7 @@ c_ Solution:
     @param: S: A string
     @return: all permutations
     """
-    ___ stringPermutation2(self, S):
+    ___ stringPermutation2  S):
         __ n.. S:
             r.. ['']
 
@@ -13,7 +13,7 @@ c_ Solution:
         dfs(S, ans, [])
         r.. ans
 
-    ___ dfs(self, S, ans, path):
+    ___ dfs  S, ans, path):
         __ n.. S:
             ans.a..(''.j..(path))
             r..

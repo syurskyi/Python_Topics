@@ -2,7 +2,7 @@ c_ Solution:
     """
     REF: https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76657/
     """
-    ___ countSmaller(self, nums):
+    ___ countSmaller  nums):
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -24,14 +24,14 @@ c_ Solution:
 
         r.. ans
 
-    ___ update(self, i):
+    ___ update  i):
         i += 1
 
         w.... i < l..(bits):
             bits[i] += 1
             i += (i & -i)
 
-    ___ s..(self, i):
+    ___ s..  i):
         res = 0
 
         w.... i > 0:
@@ -45,7 +45,7 @@ c_ Solution:
     """
     Brute Force: TLE
     """
-    ___ countSmaller(self, nums):
+    ___ countSmaller  nums):
         """
         :type nums: List[int]
         :rtype: List[int]

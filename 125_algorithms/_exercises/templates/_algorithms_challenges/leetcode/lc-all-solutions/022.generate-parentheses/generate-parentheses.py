@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ generateParenthesis(self, n):
+  ___ generateParenthesis  n):
     """
     :type n: int
     :rtype: List[str]

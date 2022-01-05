@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ licenseKeyFormatting(self, S, K):
+  ___ licenseKeyFormatting  S, K):
     """
     :type S: str
     :type K: int

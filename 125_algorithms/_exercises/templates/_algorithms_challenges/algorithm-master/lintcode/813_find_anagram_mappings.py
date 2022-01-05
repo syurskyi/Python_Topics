@@ -2,7 +2,7 @@
 Find last pos
 """
 c_ Solution:
-    ___ anagramMappings(self, a, b):
+    ___ anagramMappings  a, b):
         """
         :type a: list[int]
         :type b: list[int]
@@ -31,7 +31,7 @@ c_ Solution:
 Strict
 """
 c_ Solution:
-    ___ anagramMappings(self, a, b):
+    ___ anagramMappings  a, b):
         """
         :type a: list[int]
         :type b: list[int]

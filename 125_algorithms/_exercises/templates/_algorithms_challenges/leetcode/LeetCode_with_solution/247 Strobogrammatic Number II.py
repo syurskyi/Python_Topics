@@ -12,12 +12,12 @@ c_ Solution(object):
         lst = ["11", "69", "88", "96", "00"]  # use list rather than map since no need to look up
         middle = ["0", "1", "8"]
 
-    ___ findStrobogrammatic(self, n):
+    ___ findStrobogrammatic  n):
         ret    # list
         build(n, d..(), ret)
         r.. ret
 
-    ___ build(self, n, cur, ret):
+    ___ build  n, cur, ret):
         """
         build from inside
         """
@@ -43,7 +43,7 @@ c_ SolutionArray(object):
     ___ - ):
         map1 = ["11", "69", "88", "96", "00"]
 
-    ___ findStrobogrammatic(self, n):
+    ___ findStrobogrammatic  n):
         """
         :type n: int
         :rtype: List[str]
@@ -52,7 +52,7 @@ c_ SolutionArray(object):
         build(n, [], ret)
         r.. ret
 
-    ___ build(self, n, cur, ret):
+    ___ build  n, cur, ret):
         """
         Using list as double-entry queue, performance of every operation is O(n) rather than O(1)
         """
@@ -87,7 +87,7 @@ c_ SolutionOutputLimitExceeded(object):
         }
         middle = ["1", "8", "0"]
 
-    ___ findStrobogrammatic(self, n):
+    ___ findStrobogrammatic  n):
         """
         :type n: int
         :rtype: List[str]
@@ -96,7 +96,7 @@ c_ SolutionOutputLimitExceeded(object):
         build(0, n, [], ret)
         r.. ret
 
-    ___ build(self, idx, n, cur, ret):
+    ___ build  idx, n, cur, ret):
         __ idx __ n/2:
             __ n % 2 != 0:
                 ___ m __ middle:

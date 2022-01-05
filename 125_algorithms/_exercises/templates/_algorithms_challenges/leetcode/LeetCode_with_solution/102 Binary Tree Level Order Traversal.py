@@ -25,7 +25,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ levelOrder(self, root):
+    ___ levelOrder  root):
         """
         Queue
         BFS
@@ -50,7 +50,7 @@ c_ Solution:
             q = q[length:]  # no need to create a new list
         r.. result
 
-__ __name____"__main__":
+__ _____ __ ____
     nodes = [TreeNode(i) ___ i __ r..(3)]
     nodes[0].left = nodes[1]
     nodes[1].left = nodes[2]

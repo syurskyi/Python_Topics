@@ -13,7 +13,7 @@ __ n.. os.path.isfile(DATA):
 
 c_ BiteStats:
 
-    ___ _load_data(self, data) __ l..:
+    ___ _load_data  data) __ l..:
 
 
         w__ open(data,'r') __ f:

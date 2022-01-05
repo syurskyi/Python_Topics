@@ -5,7 +5,7 @@ c_ TrieNode:
 
 
 c_ Solution:
-    ___ boggleGame(self, board, words):
+    ___ boggleGame  board, words):
         """
         :type board: list[list[str]]
         :type words: list[str]
@@ -33,7 +33,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, board, i, j, root, visited, cnt):
+    ___ dfs  board, i, j, root, visited, cnt):
         m, n = l..(board), l..(board[0])
 
         ___ x __ r..(i, m):
@@ -52,7 +52,7 @@ c_ Solution:
 
             j = 0
 
-    ___ find_next_words(self, board, x, y, visited, cnt, node, next_words, path):
+    ___ find_next_words  board, x, y, visited, cnt, node, next_words, path):
         __ (x, y) __ visited o. board[x][y] n.. __ node.children:
             r..
 
@@ -64,7 +64,7 @@ c_ Solution:
 
         __ node.end_of __ n.. N..
             next_words.a..(path | )
-            ans = max(ans, cnt + 1)
+            ans = m..(ans, cnt + 1)
         ____:
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
@@ -81,7 +81,7 @@ c_ Solution:
         path.pop()
         visited.discard((x, y))
 
-    ___ put(self, root, word):
+    ___ put  root, word):
         node = root
 
         ___ c __ word:

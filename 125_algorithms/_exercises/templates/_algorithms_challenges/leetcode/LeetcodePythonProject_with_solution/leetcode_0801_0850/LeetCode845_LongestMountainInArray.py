@@ -4,7 +4,7 @@ Created on Mar 18, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ longestMountain_twoPassesONSpace(self, A):
+    ___ longestMountain_twoPassesONSpace  A):
         """
         :type A: List[int]
         :rtype: int
@@ -19,10 +19,10 @@ c_ Solution(object):
             __ arr[i] > arr[i+1]:
                 down[i] = down[i+1]+1
             __ up[i] a.. down[i]:
-                res = max(res, up[i]+down[i]+1)
+                res = m..(res, up[i]+down[i]+1)
         r.. res
     
-    ___ longestMountain(self, A):
+    ___ longestMountain  A):
         """
         :type A: List[int]
         :rtype: int
@@ -37,7 +37,7 @@ c_ Solution(object):
             ____ arr[i-1] > arr[i]:
                 down += 1
             __ up a.. down:
-                res = max(res, up+down+1)
+                res = m..(res, up+down+1)
         r.. res
     
     ___ test

@@ -4,7 +4,7 @@ Created on Nov 6, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ isValid(self, s):
+    ___ isValid  s):
         """
         :type s: str
         :rtype: bool

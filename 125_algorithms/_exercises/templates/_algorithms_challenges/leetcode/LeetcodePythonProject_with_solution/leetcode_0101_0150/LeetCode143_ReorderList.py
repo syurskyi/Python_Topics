@@ -11,7 +11,7 @@ c_ ListNode(object):
         next = nextNode
 
 c_ Solution(object):
-    ___ reorderList(self, head):
+    ___ reorderList  head):
         """
         :type head: ListNode
         :rtype: void Do not return anything, modify head in-place instead.
@@ -30,7 +30,7 @@ c_ Solution(object):
         head2 = reverse(head2)
         merge(head, head2)
     
-    ___ reverse(self, root):
+    ___ reverse  root):
         __ n.. root o. n.. root.next: r.. root
         p1, p2 = root, root.next
         p1.next = N..
@@ -41,7 +41,7 @@ c_ Solution(object):
             p2 = tmp
         r.. p1
     
-    ___ merge(self, head1, head2):
+    ___ merge  head1, head2):
         w.... head1 a.. head2:
             tmp1 = head1.next
             tmp2 = head2.next

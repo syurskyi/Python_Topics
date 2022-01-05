@@ -4,7 +4,7 @@ Created on Feb 20, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findKthLargest(self, nums, k):
+    ___ findKthLargest  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -17,7 +17,7 @@ c_ Solution(object):
         k = l..(nums)-k
         r.. helper(nums, 0, l..(nums)-1, k)
     
-    ___ helper(self, nums, i, j, k):
+    ___ helper  nums, i, j, k):
         i0, j0 = i, j
         pivot = nums[j]
         w... T...
@@ -37,7 +37,7 @@ c_ Solution(object):
         ____:
             r.. helper(nums, i0, i-1, k)
     
-    ___ findKthLargestHeap(self, nums, k):
+    ___ findKthLargestHeap  nums, k):
         """
         :type nums: List[int]
         :type k: int

@@ -21,7 +21,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ wiggleSort(self, nums: List[i..]) __ N..
+    ___ wiggleSort  nums: List[i..]) __ N..
         """
         Do not return anything, modify nums in-place instead.
 
@@ -53,7 +53,7 @@ c_ Solution:
             ____:
                 i += 1
 
-    ___ find_kth(self, A, lo, hi, k):
+    ___ find_kth  A, lo, hi, k):
         p = pivot(A, lo, hi)
         __ k __ p:
             r.. p
@@ -62,7 +62,7 @@ c_ Solution:
         ____:
             r.. find_kth(A, lo, p, k)
 
-    ___ pivot(self, A, lo, hi):
+    ___ pivot  A, lo, hi):
         # need 3-way pivot, otherwise TLE
         p = lo
         closed = lo

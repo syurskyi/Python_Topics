@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isUgly(self, num):
+    ___ isUgly  num):
         """
         :type num: int
         :rtype: bool

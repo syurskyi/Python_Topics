@@ -8,7 +8,7 @@ c_ NumArray(object):
     ___ i __ r..(0, l..(nums)):
       dp[i + 1] = dp[i] + nums[i]
 
-  ___ sumRange(self, i, j):
+  ___ sumRange  i, j):
     """
     sum of elements nums[i..j], inclusive.
     :type i: int

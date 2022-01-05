@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ largestSumOfAverages(self, A: List[i..], K: i..) __ float:
+    ___ largestSumOfAverages  A: List[i..], K: i..) __ float:
         """
         Memoized Backtracking + Prefix sum
         My first hunch is correct
@@ -48,7 +48,7 @@ c_ Solution:
         dfs(A, n, prefix_sum, F, K)
         r.. F[n, K]
 
-    ___ dfs(self, A, l, prefix_sum, F, k):
+    ___ dfs  A, l, prefix_sum, F, k):
         """
         dfs search divide
         make A[:l] k groups
@@ -64,7 +64,7 @@ c_ Solution:
                 ret = -float('inf')
                 ___ j __ r..(l-1, -1, -1):
                     trail = (prefix_sum[l] - prefix_sum[j]) / (l - j)
-                    ret = max(
+                    ret = m..(
                         ret,
                         dfs(A, j, prefix_sum, F, k-1) + trail
                     )
@@ -73,7 +73,7 @@ c_ Solution:
 
         r.. F[l, k]
 
-    ___ dfs_error(self, A, i, prefix_sum, F, k):
+    ___ dfs_error  A, i, prefix_sum, F, k):
         """
         inconvenient
 
@@ -85,7 +85,7 @@ c_ Solution:
             ret = 0
             avg = prefix_sum[i] / i
             ret += avg
-            ret += max(
+            ret += m..(
                 # error
                 dfs(A, j, prefix_sum, F, k - 1)
                 ___ j __ r..(i, l..(A))

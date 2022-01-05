@@ -4,7 +4,7 @@ Created on Oct 21, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ nextClosestTime(self, time):
+    ___ nextClosestTime  time):
         """
         :type time: str
         :rtype: str
@@ -21,7 +21,7 @@ c_ Solution(object):
                 r.. res
         r.. time
     
-    ___ increaseAndCheck(self, hh, mm, i, charSet):
+    ___ increaseAndCheck  hh, mm, i, charSet):
         mm += i
         __ mm >= 60:
             carry = mm//60

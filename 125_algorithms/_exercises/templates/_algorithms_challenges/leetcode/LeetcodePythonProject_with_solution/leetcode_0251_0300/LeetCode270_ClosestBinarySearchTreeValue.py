@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ closestValue(self, root, target):
+    ___ closestValue  root, target):
         """
         :type root: TreeNode
         :type target: float

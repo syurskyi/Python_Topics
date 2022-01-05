@@ -4,7 +4,7 @@ Created on Sep 7, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ addBoldTag(self, s, d..):
+    ___ addBoldTag  s, d..):
         """
         :type s: str
         :type dict: List[str]
@@ -18,7 +18,7 @@ c_ Solution(object):
         ___ i __ r..(n):
             ___ word __ d..:
                 __ i+l..(word) <= n a.. s[i:i+l..(word)] __ word:
-                    maxLen = max(maxLen, i+l..(word))
+                    maxLen = m..(maxLen, i+l..(word))
                     break
             __ maxLen > i a.. n.. started:
                 res += '<b>'+s[i]

@@ -4,7 +4,7 @@ Created on Nov 19, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ largestPalindrome(self, n):
+    ___ largestPalindrome  n):
         """
         :type n: int
         :rtype: int
@@ -27,7 +27,7 @@ c_ Solution(object):
             firstHalf -= 1
         r.. i..(palindrome%1337)
     
-    ___ createPalindrome(self, num):
+    ___ createPalindrome  num):
         s = s..(num)+s..(num)[::-1]
         r.. i..(s)
     

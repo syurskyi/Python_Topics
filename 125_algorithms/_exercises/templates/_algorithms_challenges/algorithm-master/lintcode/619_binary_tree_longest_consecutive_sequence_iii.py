@@ -14,7 +14,7 @@ c_ Solution:
     """
     Bottom Up
     """
-    ___ longestConsecutive3(self, root):
+    ___ longestConsecutive3  root):
         """
         :type root: MultiTreeNode
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution:
 
         r.. divide_conquer(root)[0]
 
-    ___ divide_conquer(self, node):
+    ___ divide_conquer  node):
         __ n.. node:
             r.. 0, 0, 0
 

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ hIndex(self, citations):
+  ___ hIndex  citations):
     """
     :type citations: List[int]
     :rtype: int

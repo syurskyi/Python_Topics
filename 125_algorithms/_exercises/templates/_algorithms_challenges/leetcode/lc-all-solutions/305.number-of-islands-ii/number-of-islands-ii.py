@@ -3,12 +3,12 @@ c_ UnionFind(object):
     dad = [i ___ i __ r..(m * n)]
     rank = [0 ___ _ __ r..(m * n)]
 
-  ___ find(self, x):
+  ___ find  x):
     __ dad[x] != x:
       dad[x] = find(dad[x])
     r.. dad[x]
 
-  ___ union(self, xy):
+  ___ union  xy):
     x, y = map(find, xy)
     __ x __ y:
       r.. F..
@@ -23,7 +23,7 @@ c_ UnionFind(object):
 
 
 c_ Solution(object):
-  ___ numIslands2(self, m, n, positions):
+  ___ numIslands2  m, n, positions):
     """
     :type m: int
     :type n: int

@@ -79,12 +79,12 @@ c_ DisjointSet:
         """
         pi    # dict
 
-    ___ union(self, x, y):
+    ___ union  x, y):
         pi_x = find(x)
         pi_y = find(y)
         pi[pi_y] = pi_x
 
-    ___ find(self, x):
+    ___ find  x):
         # LHS self.pi[x]
         __ x n.. __ pi:
             pi[x] = x
@@ -93,7 +93,7 @@ c_ DisjointSet:
         r.. pi[x]
 
 c_ Solution:
-    ___ regionsBySlashes(self, grid: List[s..]) __ i..:
+    ___ regionsBySlashes  grid: List[s..]) __ i..:
         """
         in 1 x 1 cell
         3 possibilities

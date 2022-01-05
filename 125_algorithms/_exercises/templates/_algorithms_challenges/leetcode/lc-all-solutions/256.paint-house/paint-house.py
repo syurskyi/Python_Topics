@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ minCost(self, costs):
+  ___ minCost  costs):
     """
     :type costs: List[List[int]]
     :rtype: int

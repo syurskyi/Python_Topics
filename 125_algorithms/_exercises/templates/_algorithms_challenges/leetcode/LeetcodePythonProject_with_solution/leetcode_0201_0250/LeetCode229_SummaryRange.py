@@ -5,7 +5,7 @@ Created on Feb 22, 2017
 '''
 
 c_ Solution(object):
-    ___ summaryRanges(self, nums):
+    ___ summaryRanges  nums):
         """
         :type nums: List[int]
         :rtype: List[str]

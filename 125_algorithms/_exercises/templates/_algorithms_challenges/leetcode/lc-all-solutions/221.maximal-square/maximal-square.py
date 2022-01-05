@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maximalSquare(self, matrix):
+  ___ maximalSquare  matrix):
     """
     :type matrix: List[List[str]]
     :rtype: int
@@ -17,5 +17,5 @@ c_ Solution(object):
             dp[i][j] = 1
           ____:
             dp[i][j] = m..(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
-          ans = max(ans, dp[i][j])
+          ans = m..(ans, dp[i][j])
     r.. ans * ans

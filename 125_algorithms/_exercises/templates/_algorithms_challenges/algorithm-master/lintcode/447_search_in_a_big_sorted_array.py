@@ -17,7 +17,7 @@ c_ Solution:
     @param: target: An integer
     @return: An integer which is the first index of target.
     """
-    ___ searchBigSortedArray(self, reader, target):
+    ___ searchBigSortedArray  reader, target):
         end = 0
         w.... reader.get(end) < target:
             # `+1` is to avoid `end == 0`

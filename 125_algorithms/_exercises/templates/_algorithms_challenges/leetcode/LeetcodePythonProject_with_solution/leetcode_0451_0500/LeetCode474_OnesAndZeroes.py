@@ -5,7 +5,7 @@ Created on Apr 26, 2017
 '''
 
 c_ Solution(object):
-    ___ findMaxForm(self, strs, m, n):
+    ___ findMaxForm  strs, m, n):
         """
         :type strs: List[str]
         :type m: int
@@ -26,12 +26,12 @@ c_ Solution(object):
                     __ i __ 0:
                         dp[i][j][k] = 0
                     ____ j >= nums[0] a.. k >= nums[1]:
-                        dp[i][j][k] = max(dp[i-1][j][k], dp[i-1][j-nums[0]][k-nums[1]]+1)
+                        dp[i][j][k] = m..(dp[i-1][j][k], dp[i-1][j-nums[0]][k-nums[1]]+1)
                     ____:
                         dp[i][j][k] = dp[i-1][j][k]
         r.. dp[l][m][n]
     
-    ___ findMaxForm_slow(self, strs, m, n):
+    ___ findMaxForm_slow  strs, m, n):
         """
         :type strs: List[str]
         :type m: int
@@ -46,7 +46,7 @@ c_ Solution(object):
                     count0 = s.c.. '0')
                     count1 = l..(s)-count0
                     __ i>=count0 a.. j>=count1:
-                        dp[i][j] = max(dp[i][j], dp[i-count0][j-count1]+1)
+                        dp[i][j] = m..(dp[i][j], dp[i-count0][j-count1]+1)
         r.. dp[-1][-1]
     
     ___ test

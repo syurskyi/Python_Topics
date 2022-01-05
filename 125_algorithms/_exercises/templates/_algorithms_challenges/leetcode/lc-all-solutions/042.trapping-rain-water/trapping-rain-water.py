@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ trap(self, height):
+  ___ trap  height):
     """
     :type height: List[int]
     :rtype: int
@@ -9,11 +9,11 @@ c_ Solution(object):
     leftWall = rightWall = float("-inf")
     w.... left <= right:
       __ leftWall <= rightWall:
-        ans += max(0, leftWall - height[left])
-        leftWall = max(leftWall, height[left])
+        ans += m..(0, leftWall - height[left])
+        leftWall = m..(leftWall, height[left])
         left += 1
       ____:
-        ans += max(0, rightWall - height[right])
-        rightWall = max(rightWall, height[right])
+        ans += m..(0, rightWall - height[right])
+        rightWall = m..(rightWall, height[right])
         right -= 1
     r.. ans

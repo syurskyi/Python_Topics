@@ -4,7 +4,7 @@ Created on Sep 9, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ loudAndRich(self, richer, quiet):
+    ___ loudAndRich  richer, quiet):
         """
         :type richer: List[List[int]]
         :type quiet: List[int]
@@ -21,7 +21,7 @@ c_ Solution(object):
             dfs(i, quiet, richer2, res)
         r.. res
     
-    ___ dfs(self, i, quiet, richer2, res):
+    ___ dfs  i, quiet, richer2, res):
         __ (res[i] >= 0):
             r.. res[i]
         res[i] = i

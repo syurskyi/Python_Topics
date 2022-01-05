@@ -4,7 +4,7 @@ Created on Mar 26, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ isNStraightHand(self, hand, W):
+    ___ isNStraightHand  hand, W):
         """
         :type hand: List[int]
         :type W: int

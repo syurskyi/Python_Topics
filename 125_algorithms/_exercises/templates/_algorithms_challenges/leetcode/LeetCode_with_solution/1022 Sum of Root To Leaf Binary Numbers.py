@@ -35,7 +35,7 @@ c_ Solution:
         ret = 0
         lst    # list
 
-    ___ sumRootToLeaf(self, root: TreeNode) __ i..:
+    ___ sumRootToLeaf  root: TreeNode) __ i..:
         """
         Brute force, keep a lst, space O(log n)
         Error-prone
@@ -43,7 +43,7 @@ c_ Solution:
         dfs(root)
         r.. ret
 
-    ___ dfs(self, node):
+    ___ dfs  node):
         __ n.. node:
             r..
 

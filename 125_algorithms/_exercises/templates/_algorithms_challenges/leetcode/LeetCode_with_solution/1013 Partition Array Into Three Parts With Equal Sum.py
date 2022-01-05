@@ -31,7 +31,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ canThreePartsEqualSum(self, A: List[i..]) __ bool:
+    ___ canThreePartsEqualSum  A: List[i..]) __ bool:
         s = s..(A)
         __ s % 3 != 0:
             r.. F..

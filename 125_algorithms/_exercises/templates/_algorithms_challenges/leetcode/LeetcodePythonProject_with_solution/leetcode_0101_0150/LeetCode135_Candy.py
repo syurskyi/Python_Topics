@@ -5,7 +5,7 @@ Created on Feb 9, 2017
 '''
 
 c_ Solution(object):
-    ___ candy(self, ratings):
+    ___ candy  ratings):
         """
         :type ratings: List[int]
         :rtype: int
@@ -27,7 +27,7 @@ c_ Solution(object):
                 right[i] = 1
         res = 0
         ___ i __ r..(n):
-            res += max(left[i], right[i])
+            res += m..(left[i], right[i])
         r.. res
     
     ___ test

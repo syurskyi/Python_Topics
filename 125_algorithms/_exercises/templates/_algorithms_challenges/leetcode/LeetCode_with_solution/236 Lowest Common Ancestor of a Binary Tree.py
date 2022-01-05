@@ -26,7 +26,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ lowestCommonAncestor(self, root, p, q):
+    ___ lowestCommonAncestor  root, p, q):
         """
         O(n)
         construct the path from root to p and q respectively, and check the difference of the two paths
@@ -48,7 +48,7 @@ c_ Solution:
 
         r.. path1[i-1]
 
-    ___ dfs(self, root, t, path, found):
+    ___ dfs  root, t, path, found):
         __ n.. root o. found[0]:  # post-call check
             r..
 

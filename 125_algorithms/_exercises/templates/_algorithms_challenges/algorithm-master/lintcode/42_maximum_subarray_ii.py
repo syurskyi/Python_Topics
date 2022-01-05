@@ -14,7 +14,7 @@ the `ans` is to find the maximum of `left[i] + right[i + 1]`
 
 
 c_ Solution:
-    ___ maxTwoSubArrays(self, nums):
+    ___ maxTwoSubArrays  nums):
         """
         :type nums: list[int]
         :rtype: int
@@ -37,7 +37,7 @@ c_ Solution:
 
         r.. ans __ ans > _INF ____ NOT_FOUND
 
-    ___ get_max_sums(self, nums, num_range):
+    ___ get_max_sums  nums, num_range):
         res = [0] * l..(nums)
         smax = float('-inf')
         s = smin = 0

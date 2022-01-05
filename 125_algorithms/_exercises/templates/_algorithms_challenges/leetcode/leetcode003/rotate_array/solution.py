@@ -10,7 +10,7 @@ ways to solve this problem.
 """
 
 c_ Solution(object):
-    ___ rotate(self, nums, k):
+    ___ rotate  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -22,7 +22,7 @@ c_ Solution(object):
         reverse(nums, 0, k - 1)
         reverse(nums, k, n - 1)
 
-    ___ reverse(self, nums, i, j):
+    ___ reverse  nums, i, j):
         w.... i < j:
             nums[i], nums[j] = nums[j], nums[i]
             i += 1

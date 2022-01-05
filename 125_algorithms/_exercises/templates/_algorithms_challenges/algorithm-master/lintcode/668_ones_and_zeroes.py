@@ -8,7 +8,7 @@ c_ Solution:
     @param: n: An integer
     @return: find the maximum number of strings
     """
-    ___ findMaxForm(self, strs, m, n):
+    ___ findMaxForm  strs, m, n):
         __ n.. strs:
             r.. 0
 
@@ -29,7 +29,7 @@ c_ Solution:
                     case 1: included current `strs[i - 1]`
                     case 2: not included current `strs[i - 1]`, same as previous
                     """
-                    dp[j][k] = max(
+                    dp[j][k] = m..(
                         dp[j][k],
                         dp[j - c0][k - c1] + 1
                     )
@@ -47,7 +47,7 @@ c_ Solution:
     @param: n: An integer
     @return: find the maximum number of strings
     """
-    ___ findMaxForm(self, strs, m, n):
+    ___ findMaxForm  strs, m, n):
         __ n.. strs:
             r.. 0
 

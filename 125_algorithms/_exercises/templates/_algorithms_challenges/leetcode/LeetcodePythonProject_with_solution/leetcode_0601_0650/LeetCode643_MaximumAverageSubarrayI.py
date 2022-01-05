@@ -4,7 +4,7 @@ Created on Sep 27, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findMaxAverage(self, nums, k):
+    ___ findMaxAverage  nums, k):
         """
         :type nums: List[int]
         :type k: int
@@ -16,7 +16,7 @@ c_ Solution(object):
         ___ i, num __ e..(nums):
             sumVal += num
             __ i >= k-1:
-                maxVal = max(maxVal, sumVal)
+                maxVal = m..(maxVal, sumVal)
                 sumVal -= nums[i-k+1]
         r.. float(maxVal)/k
     

@@ -4,7 +4,7 @@ Created on Apr 12, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ findCheapestPrice(self, n, flights, src, dst, K):
+    ___ findCheapestPrice  n, flights, src, dst, K):
         """
         :type n: int
         :type flights: List[List[int]]

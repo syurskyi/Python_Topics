@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findMin(self, nums):
+    ___ findMin  nums):
         """
         :type nums: list[int]
         :rtype: int

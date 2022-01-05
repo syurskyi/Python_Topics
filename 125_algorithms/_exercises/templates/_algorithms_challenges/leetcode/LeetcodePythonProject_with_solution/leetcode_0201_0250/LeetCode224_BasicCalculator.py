@@ -4,7 +4,7 @@ Created on Feb 22, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ calculate(self, s):
+    ___ calculate  s):
         """
         :type s: str
         :rtype: int

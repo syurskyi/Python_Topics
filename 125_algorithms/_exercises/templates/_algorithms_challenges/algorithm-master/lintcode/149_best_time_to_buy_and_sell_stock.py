@@ -3,7 +3,7 @@ c_ Solution:
     @param: P: Given an integer array
     @return: Maximum profit
     """
-    ___ maxProfit(self, P):
+    ___ maxProfit  P):
         ans = 0
         __ n.. P:
             r.. ans

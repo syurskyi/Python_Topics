@@ -4,7 +4,7 @@ Created on Nov 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ twoSum(self, nums, target):
+    ___ twoSum  nums, target):
         """
         :type nums: List[int]
         :type target: int

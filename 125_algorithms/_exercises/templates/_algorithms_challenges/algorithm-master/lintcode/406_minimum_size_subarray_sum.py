@@ -4,7 +4,7 @@ c_ Solution:
     @param: s: An integer
     @return: an integer representing the minimum size of subarray
     """
-    ___ minimumSize(self, nums, s):
+    ___ minimumSize  nums, s):
         __ n.. nums o. l..(nums) __ 0:
             r.. -1
         n = l..(nums)

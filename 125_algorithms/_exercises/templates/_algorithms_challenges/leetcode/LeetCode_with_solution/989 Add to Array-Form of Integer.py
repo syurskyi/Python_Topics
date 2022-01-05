@@ -33,7 +33,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ addToArrayForm(self, A: List[i..], K: i..) __ List[i..]:
+    ___ addToArrayForm  A: List[i..], K: i..) __ List[i..]:
         """
         carry
         """

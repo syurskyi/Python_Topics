@@ -3,7 +3,7 @@ ____ c.. _______ Counter
 ___ major_n_minor(numbers):
     counts = Counter(numbers)
     # you code ...
-    major=max(counts, key=counts.get)
+    major=m..(counts, key=counts.get)
     minor=m..(counts, key=counts.get)
     r.. major, minor
 

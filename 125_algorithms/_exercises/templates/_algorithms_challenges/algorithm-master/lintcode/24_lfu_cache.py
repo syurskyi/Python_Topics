@@ -29,7 +29,7 @@ c_ LFUCache:
         D.nxt = d
         d.pre = D
 
-    ___ get(self, key):
+    ___ get  key):
         """
         :type key: int
         :rtype: int
@@ -40,7 +40,7 @@ c_ LFUCache:
         _update(key)
         r.. nodes[key].val
 
-    ___ set(self, key, val):
+    ___ set  key, val):
         """
         :type key: int
         :type val: int
@@ -66,7 +66,7 @@ c_ LFUCache:
         __ freq_head.is_empty
             freq_head.unlink()
 
-    ___ _update(self, key, val_ N..
+    ___ _update  key, val_ N..
         cache_node = nodes[key]
 
         __ val:
@@ -87,7 +87,7 @@ c_ LFUCache:
         __ from_freq.is_empty
             from_freq.unlink()
 
-    ___ _add(self, key, val):
+    ___ _add  key, val):
         cache_node = CacheNode(key, val)
         nodes[key] = cache_node
 
@@ -133,7 +133,7 @@ c_ FreqNode:
         pre = nxt = D = d = N..
 
     # to change self in freq nodes
-    ___ after(self, freq_node):
+    ___ after  freq_node):
         freq_node.pre = self
         freq_node.nxt = nxt
         nxt.pre = freq_node
@@ -153,7 +153,7 @@ c_ FreqNode:
         r.. head
 
     # to manage cache nodes
-    ___ append_tail(self, cache_node):
+    ___ append_tail  cache_node):
         cache_node.freq_node = self
         cache_node.pre = d.pre
         cache_node.nxt = d

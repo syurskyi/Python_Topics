@@ -13,7 +13,7 @@ prime numbers up to n would be O(n2). Could we do better?
 """
 
 c_ Solution(object):
-    ___ countPrimes(self, n):
+    ___ countPrimes  n):
         """
         :type n: int
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution(object):
                 res += 1
         r.. res
 
-    ___ is_prime(self, k):
+    ___ is_prime  k):
         i = 2
         w.... i * i <= k:
             __ k % i __ 0:

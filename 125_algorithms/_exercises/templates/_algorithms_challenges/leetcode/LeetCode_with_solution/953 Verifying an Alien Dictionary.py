@@ -40,7 +40,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ isAlienSorted(self, words: List[s..], order: s..) __ bool:
+    ___ isAlienSorted  words: List[s..], order: s..) __ bool:
         h    # dict
         ___ i, c __ e..(order):
             h[c] = i
@@ -51,7 +51,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ cmp(self, w1, w2, h):
+    ___ cmp  w1, w2, h):
         ___ c1, c2 __ z..(w1, w2):
             __ h[c1] < h[c2]:
                 r.. -1

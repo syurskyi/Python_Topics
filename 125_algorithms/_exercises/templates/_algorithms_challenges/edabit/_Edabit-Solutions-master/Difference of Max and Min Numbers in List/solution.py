@@ -1,2 +1,2 @@
 ___ difference_max_min(lst):
-    r.. max(lst) - m..(lst)
+    r.. m..(lst) - m..(lst)

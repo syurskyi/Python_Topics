@@ -19,11 +19,11 @@ ___ simple_calculator(calculation):
         '/': (l.... x, y: x / y)
         }
 
-    try:
+    ___
         x = i..(calculation.s.. [0])
         y = i..(calculation.s.. [2])
         operator = calculation.s.. [1]
         r.. operation[operator](i..(x), i..(y))
     
-    except (ValueError, KeyError, ZeroDivisionError):
+    ______ (ValueError, KeyError, ZeroDivisionError):
         r.. ValueError

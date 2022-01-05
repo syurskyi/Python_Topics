@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ boundaryOfBinaryTree(self, root):
+  ___ boundaryOfBinaryTree  root):
     """
     :type root: TreeNode
     :rtype: List[int]

@@ -11,13 +11,13 @@ return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 c_ Solution:
     # @param {string} s
     # @return {string[]}
-    ___ restoreIpAddresses(self, s):
+    ___ restoreIpAddresses  s):
         res    # list
         cand    # list
         restore_ip(s, cand, res)
         r.. res
 
-    ___ restore_ip(self, s, cand, res):
+    ___ restore_ip  s, cand, res):
         # If more than 4 parts, or 4 parts already but with remaining
         # unprocessed sub-string
         __ l..(cand) > 4 o. l..(cand) __ 4 a.. s:
@@ -33,7 +33,7 @@ c_ Solution:
                     restore_ip(s[j + 1:], cand, res)
                     cand.pop()
 
-    ___ is_valid_byte(self, b):
+    ___ is_valid_byte  b):
         __ b __ '0':
             r.. T..
         ____ b.startswith('0'):

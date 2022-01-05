@@ -6,13 +6,13 @@ c_ HashFunc:
         cap = cap
         seed = seed
 
-    ___ hash(self, key):
+    ___ hash  key):
         code = 0
         __ n.. key:
             r.. code
 
         ___ char __ key:
-            code = (seed * code + ord(char)) % cap
+            code = (seed * code + o..(char)) % cap
 
         r.. code
 
@@ -33,7 +33,7 @@ c_ StandardBloomFilter:
                 i * 2 + 3
             ))
 
-    ___ add(self, word):
+    ___ add  word):
         """
         :type word: str
         :rtype: None
@@ -42,7 +42,7 @@ c_ StandardBloomFilter:
             index = f.hash(word)
             bits[index] = 1
 
-    ___ contains(self, word):
+    ___ contains  word):
         """
         :type word: str
         :rtype: bool

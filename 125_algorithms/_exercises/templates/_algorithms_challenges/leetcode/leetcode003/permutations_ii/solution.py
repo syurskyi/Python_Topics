@@ -8,7 +8,7 @@ For example,
 """
 
 c_ Solution(object):
-    ___ permuteUnique(self, nums):
+    ___ permuteUnique  nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -16,7 +16,7 @@ c_ Solution(object):
         d    # dict
         r.. permute(nums, d)
 
-    ___ permute(self, nums, d):
+    ___ permute  nums, d):
         __ n.. nums:
             r.. [[]]
         ____:

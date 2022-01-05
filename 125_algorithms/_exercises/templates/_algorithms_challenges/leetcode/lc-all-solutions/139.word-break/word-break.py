@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ wordBreak(self, s, wordDict):
+  ___ wordBreak  s, wordDict):
     """
     :type s: str
     :type wordDict: Set[str]

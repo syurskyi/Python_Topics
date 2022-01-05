@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ bulbSwitch(self, n):
+  ___ bulbSwitch  n):
     """
     :type n: int
     :rtype: int

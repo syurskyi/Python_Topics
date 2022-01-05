@@ -2,7 +2,7 @@ ____ c.. _______ d..
 
 
 c_ Solution(object):
-  ___ containsNearbyDuplicate(self, nums, k):
+  ___ containsNearbyDuplicate  nums, k):
     """
     :type nums: List[int]
     :type k: int

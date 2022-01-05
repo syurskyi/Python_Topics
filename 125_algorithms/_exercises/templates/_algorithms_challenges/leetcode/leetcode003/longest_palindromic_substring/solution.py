@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a string
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         n = l..(s)
         t = [[F.. ___ i __ r..(n)] ___ j __ r..(n)]
         start = 0

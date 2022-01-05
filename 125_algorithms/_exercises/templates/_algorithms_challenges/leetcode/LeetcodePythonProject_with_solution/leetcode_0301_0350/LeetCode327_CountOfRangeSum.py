@@ -4,13 +4,13 @@ Created on Mar 18, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ countRangeSum(self, nums, lower, upper):
+    ___ countRangeSum  nums, lower, upper):
         first = [0]
         ___ num __ nums:
             first.a..(first[-1]+num)
         r.. mergeSort(0, l..(first), first, lower, upper)
     
-    ___ mergeSort(self, l, r, first, lower, upper):
+    ___ mergeSort  l, r, first, lower, upper):
         mid = (l+r)//2
         __ mid __ l:
             r.. 0

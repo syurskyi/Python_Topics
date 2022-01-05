@@ -7,7 +7,7 @@ c_ Solution:
     @param: nums: an array of integers
     @return: the number of unique integers
     """
-    ___ deduplication(self, nums):
+    ___ deduplication  nums):
         ans = 0
         __ n.. nums:
             r.. ans
@@ -30,7 +30,7 @@ c_ Solution:
     @param: nums: an array of integers
     @return: the number of unique integers
     """
-    ___ deduplication(self, nums):
+    ___ deduplication  nums):
         ans = 0
         __ n.. nums:
             r.. ans

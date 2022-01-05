@@ -2,7 +2,7 @@ directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
 c_ Solution(object):
-  ___ longestIncreasingPath(self, matrix):
+  ___ longestIncreasingPath  matrix):
     """
     :type matrix: List[List[int]]
     :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
         __ (p, q) n.. __ cache a.. matrix[p][q] > matrix[i][j]:
           cache.add((p, q))
           r = dfs(matrix, p, q, visited, cache)
-          ret = max(ret, r)
+          ret = m..(ret, r)
           cache.discard((p, q))
 
       visited[(i, j)] = ret + 1
@@ -32,6 +32,6 @@ c_ Solution(object):
     ___ i __ r..(0, l..(matrix)):
       ___ j __ r..(0, l..(matrix[0])):
         cache.add((i, j))
-        ans = max(ans, dfs(matrix, i, j, visited, cache))
+        ans = m..(ans, dfs(matrix, i, j, visited, cache))
         cache.discard((i, j))
     r.. ans

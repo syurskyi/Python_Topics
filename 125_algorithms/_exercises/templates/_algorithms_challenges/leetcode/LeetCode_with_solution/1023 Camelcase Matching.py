@@ -42,14 +42,14 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ camelMatch(self, queries: List[s..], pattern: s..) __ List[bool]:
+    ___ camelMatch  queries: List[s..], pattern: s..) __ List[bool]:
         ret    # list
         ___ q __ queries:
             ret.a..(m..(q, pattern))
             
         r.. ret
 
-    ___ m..(self, q, p):
+    ___ m..  q, p):
         i = 0
         j = 0
         w.... i < l..(q) a.. j < l..(p):

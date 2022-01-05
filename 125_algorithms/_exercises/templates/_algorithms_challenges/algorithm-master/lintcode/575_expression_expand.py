@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ expressionExpand(self, s):
+    ___ expressionExpand  s):
         """
         :type s: str
         :rtype: str

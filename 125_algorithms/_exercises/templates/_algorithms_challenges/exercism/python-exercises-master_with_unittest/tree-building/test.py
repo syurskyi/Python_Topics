@@ -169,23 +169,23 @@ c_ TreeBuildingTest(unittest.TestCase):
         w__ assertRaisesWithMessage(ValueError):
             BuildTree(records)
 
-    ___ assert_node_is_branch(self, node, node_id, children_count):
+    ___ assert_node_is_branch  node, node_id, children_count):
         assertEqual(node.node_id, node_id)
         assertNotEqual(l..(node.children), 0)
         assertEqual(l..(node.children), children_count)
 
-    ___ assert_node_is_leaf(self, node, node_id):
+    ___ assert_node_is_leaf  node, node_id):
         assertEqual(node.node_id, node_id)
         assertEqual(l..(node.children), 0)
 
     # Utility functions
     ___ setUp
-        try:
+        ___
             assertRaisesRegex
-        except AttributeError:
+        ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage(self, exception):
+    ___ assertRaisesWithMessage  exception):
         r.. assertRaisesRegex(exception, r".+")
 
 

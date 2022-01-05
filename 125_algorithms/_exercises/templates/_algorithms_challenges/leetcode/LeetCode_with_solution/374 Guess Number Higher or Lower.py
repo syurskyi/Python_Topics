@@ -27,7 +27,7 @@ ___ guess(num):
 
 
 c_ Solution(object):
-    ___ guessNumber(self, n):
+    ___ guessNumber  n):
         """
         Binary search, transform [1, n] into [1, n+1), to make sure the loop is making progress
         :type n: int

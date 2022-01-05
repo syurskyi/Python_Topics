@@ -30,7 +30,7 @@ Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string
 
 
 c_ Solution:
-    ___ findSubstringInWraproundString(self, p):
+    ___ findSubstringInWraproundString  p):
         """
         wrap around: +1 (delta=1)
         "zab": 3 + 2 + 1
@@ -53,15 +53,15 @@ c_ Solution:
         }
         l = 1
         ___ i __ r..(1, l..(p)):
-            __ (ord(p[i]) - ord(p[i-1])) % 26 __ 1:  # (0 - 25) % 26 == 1
+            __ (o..(p[i]) - o..(p[i-1])) % 26 __ 1:  # (0 - 25) % 26 == 1
                 l += 1
             ____:
                 l = 1
-            counter[p[i]] = max(counter[p[i]], l)
+            counter[p[i]] = m..(counter[p[i]], l)
 
         r.. s..(counter.values())
 
-    ___ findSubstringInWraproundString_error(self, p):
+    ___ findSubstringInWraproundString_error  p):
         """
         wrap around: +1 (delta=1)
         "zab": 3 + 2 + 1
@@ -77,7 +77,7 @@ c_ Solution:
         w.... i < l..(p):
             cur = [p[i]]
             j = i + 1
-            w.... j < l..(p) a.. (ord(p[j]) - ord(cur[-1]) __ 1 o. p[j] __ "a" a.. cur[-1] __ "z"):
+            w.... j < l..(p) a.. (o..(p[j]) - o..(cur[-1]) __ 1 o. p[j] __ "a" a.. cur[-1] __ "z"):
                 cur.a..(p[j])
                 j += 1
             ret.add("".j..(cur))

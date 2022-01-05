@@ -2,7 +2,7 @@ c_ Solution:
   # @param board, a list of lists of 1 length string
   # @param word, a string
   # @return a boolean
-  ___ exist(self, board, word):
+  ___ exist  board, word):
     # write your code here
     __ word __ "":
       r.. T..

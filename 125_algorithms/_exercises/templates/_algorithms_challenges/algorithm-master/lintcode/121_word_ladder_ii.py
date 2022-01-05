@@ -14,7 +14,7 @@ c_ Solution:
     @param: D: a set of string
     @return: a list of lists of string
     """
-    ___ findLadders(self, A, B, D):
+    ___ findLadders  A, B, D):
         ans    # list
         __ (D __ N.. o. A __ N.. o. B __ N.. o.
             l..(A) != l..(B)):
@@ -49,7 +49,7 @@ c_ Solution:
         dfs(A, B, next_words, distance, ans, [A])
         r.. ans
 
-    ___ dfs(self, word, B, next_words, distance, ans, path):
+    ___ dfs  word, B, next_words, distance, ans, path):
         __ word __ B:
             ans.a..(path | )
             r..
@@ -62,7 +62,7 @@ c_ Solution:
             dfs(_word, B, next_words, distance, ans, path)
             path.pop()
 
-    ___ get_next_word(self, word, next_words):
+    ___ get_next_word  word, next_words):
         ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:

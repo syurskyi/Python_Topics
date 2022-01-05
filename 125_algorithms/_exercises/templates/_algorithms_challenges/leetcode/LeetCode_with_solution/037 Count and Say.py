@@ -11,7 +11,7 @@ Note: The sequence of integers will be represented as a string.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ countAndSay(self, n):
+    ___ countAndSay  n):
         """
         :param n: integer
         :return: output representation in string
@@ -22,7 +22,7 @@ c_ Solution:
         r.. s__
 
 
-    ___ singleCountAndSay(self, num_string):
+    ___ singleCountAndSay  num_string):
         """
         Two pointers algorithm: FIND NEXT DIFFERENT
         :param num_string: input number as string
@@ -42,5 +42,5 @@ c_ Solution:
 
         r.. string_builder
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().countAndSay(4)

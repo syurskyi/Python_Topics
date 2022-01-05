@@ -51,7 +51,7 @@ c_ TopVotedCandidate:
             __ n.. maxes o. counter[maxes[-1][1]] <= counter[p]:
                 maxes.a..((t, p))
 
-    ___ q(self, t: i..) __ i..:
+    ___ q  t: i..) __ i..:
         i = bisect.bisect(maxes, (t, 0))
         # equal
         __ i < l..(maxes) a.. maxes[i][0] __ t:

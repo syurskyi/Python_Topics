@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ longestConsecutive(self, nums):
+  ___ longestConsecutive  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -20,5 +20,5 @@ c_ Solution(object):
           s.discard(right)
           cnt += 1
           right += 1
-        ans = max(ans, cnt)
+        ans = m..(ans, cnt)
     r.. ans

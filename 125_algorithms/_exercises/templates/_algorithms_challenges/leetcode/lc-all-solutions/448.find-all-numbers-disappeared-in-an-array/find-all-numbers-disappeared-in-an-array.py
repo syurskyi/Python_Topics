@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findDisappearedNumbers(self, nums):
+  ___ findDisappearedNumbers  nums):
     """
     :type nums: List[int]
     :rtype: List[int]

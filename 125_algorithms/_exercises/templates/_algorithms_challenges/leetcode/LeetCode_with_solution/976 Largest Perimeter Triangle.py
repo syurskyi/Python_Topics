@@ -32,7 +32,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ largestPerimeter(self, A: List[i..]) __ i..:
+    ___ largestPerimeter  A: List[i..]) __ i..:
         """
         sort and scanning from right
         """

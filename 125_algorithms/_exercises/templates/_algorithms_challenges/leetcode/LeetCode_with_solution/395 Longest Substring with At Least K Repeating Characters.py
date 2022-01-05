@@ -27,7 +27,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ longestSubstring(self, s, k):
+    ___ longestSubstring  s, k):
         """
         D & C, forming boundary by the letter of min count
         :type s: str
@@ -48,6 +48,6 @@ c_ Solution(object):
         __ cnt[c] >= k:
             r.. l..(s)
 
-        r.. max(
+        r.. m..(
             map(l.... x: longestSubstring(x, k), s.s..(c))
         )

@@ -34,14 +34,14 @@ c_ Solution:
     ___ - ):
         ret = 0
 
-    ___ rangeSumBST(self, root: TreeNode, L: i.., R: i..) __ i..:
+    ___ rangeSumBST  root: TreeNode, L: i.., R: i..) __ i..:
         """
         traverse
         """
         dfs(root, L, R)
         r.. ret
 
-    ___ dfs(self, node, L, R):
+    ___ dfs  node, L, R):
         __ n.. node:
             r..
 

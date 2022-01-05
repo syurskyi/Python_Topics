@@ -5,4 +5,4 @@ ___ mean(data):
         count + 1
         total + x
 
-    r.. total / max(1, count)
+    r.. total / m..(1, count)

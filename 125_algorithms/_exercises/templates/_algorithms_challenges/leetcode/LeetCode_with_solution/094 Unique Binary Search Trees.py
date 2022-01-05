@@ -16,7 +16,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ numTrees_math(self, n):
+    ___ numTrees_math  n):
         """
         number of unique binary search tree
         Catalan Number
@@ -29,7 +29,7 @@ c_ Solution(object):
         r.. math.factorial(2*n)/(math.factorial(n)*math.factorial(n))-math.factorial(2*n)/(
             math.factorial(n+1)*math.factorial(n-1))
 
-    ___ numTrees(self, n):
+    ___ numTrees  n):
         """
         number of unique binary search tree
         dp

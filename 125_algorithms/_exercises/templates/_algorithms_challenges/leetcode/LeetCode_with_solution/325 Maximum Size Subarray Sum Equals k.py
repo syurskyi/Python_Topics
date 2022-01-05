@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ maxSubArrayLen(self, A, k):
+    ___ maxSubArrayLen  A, k):
         """
         Search problem
         :type A: List[int]
@@ -19,7 +19,7 @@ c_ Solution(object):
             s += A[i]
             t = s - k  # s - t = k
             __ t __ m:
-                maxa = max(maxa, i - m[t])
+                maxa = m..(maxa, i - m[t])
 
             __ s n.. __ m:
                 m[s] = i

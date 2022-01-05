@@ -12,7 +12,7 @@ _______ sys
 
 
 c_ Solution:
-    ___ maximumGap(self, nums):
+    ___ maximumGap  nums):
         """
         Brute force O(n lgn)
 
@@ -27,21 +27,21 @@ c_ Solution:
             r.. 0
 
         g_min = m..(nums)
-        g_max = max(nums)
+        g_max = m..(nums)
 
-        bin_width = max(1, (g_max-g_min)/n)
+        bin_width = m..(1, (g_max-g_min)/n)
         bins_min    # dict
         bins_max    # dict
         ___ v __ nums:
             bin_id = (v-g_min)/bin_width
             bins_min[bin_id] = m..(bins_min.get(bin_id, sys.maxint), v)
-            bins_max[bin_id] = max(bins_max.get(bin_id, -sys.maxint-1), v)
+            bins_max[bin_id] = m..(bins_max.get(bin_id, -sys.maxint-1), v)
 
         max_gap = 0
         pre_max = g_min
         ___ i __ xrange(0, (g_max-g_min)/bin_width+1):
             __ i __ bins_min:
-                max_gap = max(max_gap, bins_min[i]-pre_max)
+                max_gap = m..(max_gap, bins_min[i]-pre_max)
                 pre_max = bins_max[i]
 
         r.. max_gap

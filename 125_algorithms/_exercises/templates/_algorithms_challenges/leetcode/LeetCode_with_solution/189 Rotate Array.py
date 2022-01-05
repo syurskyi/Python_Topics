@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ rotate(self, nums, k):
+    ___ rotate  nums, k):
         """
         in place
         """

@@ -9,7 +9,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ maxPathSum(self, root):
+    ___ maxPathSum  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution:
         ans, _ = divide_conquer(root)
         r.. ans
 
-    ___ divide_conquer(self, node):
+    ___ divide_conquer  node):
         __ n.. node:
             r.. float('-inf'), 0
 
@@ -28,14 +28,14 @@ c_ Solution:
         max_right, right = divide_conquer(node.right)
 
         # 0 means discard the negative path
-        res = max(max_left, max_right, node.val + left + right)
-        path = max(node.val + left, node.val + right, 0)
+        res = m..(max_left, max_right, node.val + left + right)
+        path = m..(node.val + left, node.val + right, 0)
 
         r.. res, path
 
 
 c_ Solution:
-    ___ maxPathSum(self, root):
+    ___ maxPathSum  root):
         """
         :type root: TreeNode
         :rtype: int
@@ -47,14 +47,14 @@ c_ Solution:
         divide_conquer(root)
         r.. ans
 
-    ___ divide_conquer(self, node):
+    ___ divide_conquer  node):
         __ n.. node:
             r.. 0
 
-        left = max(0, divide_conquer(node.left))
-        right = max(0, divide_conquer(node.right))
+        left = m..(0, divide_conquer(node.left))
+        right = m..(0, divide_conquer(node.right))
 
         __ node.val + left + right > ans:
             ans = node.val + left + right
 
-        r.. node.val + max(left, right)
+        r.. node.val + m..(left, right)

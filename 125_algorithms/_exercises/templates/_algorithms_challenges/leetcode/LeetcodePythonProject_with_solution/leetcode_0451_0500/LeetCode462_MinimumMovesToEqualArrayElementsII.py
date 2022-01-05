@@ -5,7 +5,7 @@ Created on Apr 23, 2017
 '''
 
 c_ Solution(object):
-    ___ minMoves2(self, nums):
+    ___ minMoves2  nums):
         __ n.. nums: r.. 0
         nums.s..()
         left, right = 0, l..(nums)-1

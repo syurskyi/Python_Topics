@@ -5,7 +5,7 @@ Created on Apr 17, 2017
 '''
 
 c_ Solution(object):
-    ___ parseTernary(self, expression):
+    ___ parseTernary  expression):
         __ n.. expression: r.. ''
         stack    # list
         ___ i __ r..(l..(expression)-1, -1, -1):
@@ -23,7 +23,7 @@ c_ Solution(object):
                 stack.a..(c)
         r.. stack[-1]
     
-    ___ parseTernary_own(self, expression):
+    ___ parseTernary_own  expression):
         __ l..(expression) __ 1:
             r.. expression
         __ expression[0] __ 'T':

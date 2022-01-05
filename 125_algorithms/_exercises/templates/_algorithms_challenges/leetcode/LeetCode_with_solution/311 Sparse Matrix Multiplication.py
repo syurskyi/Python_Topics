@@ -6,7 +6,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ multiply(self, A, B):
+    ___ multiply  A, B):
         """
         Brute force O(n^3)
         O(n^2 k) HashMap

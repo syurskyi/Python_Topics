@@ -19,7 +19,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ shortestToChar(self, S: s.., C: s..) __ List[i..]:
+    ___ shortestToChar  S: s.., C: s..) __ List[i..]:
         """
         get the sorted indexes of C
         """

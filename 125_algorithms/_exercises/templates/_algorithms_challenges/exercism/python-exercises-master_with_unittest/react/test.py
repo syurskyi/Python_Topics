@@ -192,7 +192,7 @@ c_ ReactTest(unittest.TestCase):
         assertEqual(observer, [])
 
     # Utility functions.
-    ___ callback_factory(self, observer):
+    ___ callback_factory  observer):
         ___ callback(observer, value):
             observer.a..(value)
         r.. partial(callback, observer)

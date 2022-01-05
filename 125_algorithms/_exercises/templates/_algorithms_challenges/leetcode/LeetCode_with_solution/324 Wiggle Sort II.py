@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ wiggleSort(self, A):
+    ___ wiggleSort  A):
         """
         1. Quick selection for finding median (Average O(n))
         2. Three-way partitioning to split the data
@@ -44,7 +44,7 @@ c_ Solution(object):
                 hi -= 1
                 A[idx(hi)], A[idx(i)] = A[idx(i)], A[idx(hi)]
 
-    ___ pivot(self, A, lo, hi, pidx_ N..
+    ___ pivot  A, lo, hi, pidx_ N..
         lt = lo-1
         gt = hi
         __ n.. pidx: pidx = lo
@@ -64,7 +64,7 @@ c_ Solution(object):
 
         r.. lt, gt
 
-    ___ find_kth(self, A, lo, hi, k):
+    ___ find_kth  A, lo, hi, k):
         __ lo >= hi: r..
 
         lt, gt = pivot(A, lo, hi)
@@ -78,7 +78,7 @@ c_ Solution(object):
 
 
 c_ SolutionSort(object):
-    ___ wiggleSort(self, nums):
+    ___ wiggleSort  nums):
         """
         Sort-based: interleave the small half and large half
 

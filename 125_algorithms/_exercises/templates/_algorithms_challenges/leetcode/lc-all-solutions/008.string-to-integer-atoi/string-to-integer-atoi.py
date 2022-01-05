@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ myAtoi(self, s):
+  ___ myAtoi  s):
     """
     :type str: str
     :rtype: int

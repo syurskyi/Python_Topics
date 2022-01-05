@@ -11,7 +11,7 @@ Created on Mar 6, 2019
 _______ c.., i..
 
 c_ Master(object):
-    ___ guess(self, word):
+    ___ guess  word):
         """
         :type word: str
         :rtype int
@@ -19,7 +19,7 @@ c_ Master(object):
         p..
 
 c_ Solution(object):
-    ___ findSecretWord(self, wordlist, master):
+    ___ findSecretWord  wordlist, master):
         """
         :type wordlist: List[Str]
         :type master: Master
@@ -32,7 +32,7 @@ c_ Solution(object):
             n = master.guess(guess)
             wordlist = [w ___ w __ wordlist __ m..(w, guess) __ n]
     
-    ___ m..(self, w1, w2):
+    ___ m..  w1, w2):
         matches = 0
         ___ c1, c2 __ z..(w1, w2):
             __ c1 __ c2: matches += 1

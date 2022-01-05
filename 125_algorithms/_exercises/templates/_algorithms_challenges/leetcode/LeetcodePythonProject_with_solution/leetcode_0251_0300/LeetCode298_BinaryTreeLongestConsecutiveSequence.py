@@ -12,27 +12,27 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ longestConsecutive(self, root):
+    ___ longestConsecutive  root):
         __ n.. root: r.. 0
         result = [1]
         helper(root, 1, result)
         r.. result[0]
     
-    ___ helper(self, root, length, result):
+    ___ helper  root, length, result):
         __ n.. root.left a.. n.. root.right:
-            result[0] = max(result[0], length)
+            result[0] = m..(result[0], length)
             r..
         __ root.left:
             __ root.left.val __ root.val+1:
                 helper(root.left, length+1, result)
             ____:
-                result[0] = max(result[0], length)
+                result[0] = m..(result[0], length)
                 helper(root.left, 1, result)
         __ root.right:
             __ root.right.val __ root.val+1:
                 helper(root.right, length+1, result)
             ____:
-                result[0] = max(result[0], length)
+                result[0] = m..(result[0], length)
                 helper(root.right, 1, result)
     
     ___ test

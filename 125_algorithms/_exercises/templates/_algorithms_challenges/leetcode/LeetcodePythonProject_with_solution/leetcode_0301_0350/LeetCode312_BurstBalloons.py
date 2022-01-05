@@ -5,7 +5,7 @@ Created on Mar 15, 2017
 '''
 
 c_ Solution(object):
-    ___ maxCoins(self, nums):
+    ___ maxCoins  nums):
         nums = [1] + nums + [1]
         n = l..(nums)
         dp = [[0]*n ___ _ __ r..(n)]
@@ -13,25 +13,25 @@ c_ Solution(object):
             ___ left __ r..(n-k):
                 right = left + k
                 ___ i __ r..(left+1, right):
-                    dp[left][right] = max(dp[left][right],\
+                    dp[left][right] = m..(dp[left][right],\
                         nums[left]*nums[i]*nums[right]+\
                         dp[left][i]+\
                         dp[i][right])
         r.. dp[0][-1]
     
-    ___ maxCoinsDnC(self, nums):
+    ___ maxCoinsDnC  nums):
         nums = [1] + nums + [1]
         n = l..(nums)
         memo = [[0]*n ___ _ __ r..(n)]
         r.. burst(memo, nums, 0, n-1)
     
-    ___ burst(self, memo, nums, left, right):
+    ___ burst  memo, nums, left, right):
         __ left+1 __ right: r.. 0
         __ memo[left][right] > 0:
             r.. memo[left][right]
         result = 0
         ___ i __ r..(left+1, right):
-            result = max(result,\
+            result = m..(result,\
                 nums[left]*nums[i]*nums[right] + \
                 burst(memo, nums, left, i) +\
                 burst(memo, nums, i, right))

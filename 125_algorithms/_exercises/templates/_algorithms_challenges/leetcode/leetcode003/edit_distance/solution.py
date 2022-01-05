@@ -1,6 +1,6 @@
 c_ Solution:
     # @return an integer
-    ___ minDistance(self, word1, word2):
+    ___ minDistance  word1, word2):
         n = l..(word1)
         m = l..(word2)
         d = [[0 ___ j __ r..(m + 1)] ___ i __ r..(n + 1)]

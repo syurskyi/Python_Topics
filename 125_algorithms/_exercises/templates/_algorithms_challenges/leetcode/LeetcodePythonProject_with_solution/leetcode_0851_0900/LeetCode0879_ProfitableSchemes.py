@@ -4,7 +4,7 @@ Created on Oct 14, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ profitableSchemes(self, G, P, group, profit):
+    ___ profitableSchemes  G, P, group, profit):
         """
         :type G: int
         :type P: int
@@ -20,7 +20,7 @@ c_ Solution(object):
                     dp[m..(i+p, P)][j+g] += dp[i][j]
         r.. s..(dp[P])%(10**9 + 7)
     
-    ___ profitableSchemes_DFS_TLE(self, G, P, group, profit):
+    ___ profitableSchemes_DFS_TLE  G, P, group, profit):
         """
         :type G: int
         :type P: int
@@ -32,7 +32,7 @@ c_ Solution(object):
         dfs(0, group, profit, G, P, [], 0, res)
         r.. res[0]
     
-    ___ dfs(self, ind, group, profit, G, P, curGroup, curProfit, res):
+    ___ dfs  ind, group, profit, G, P, curGroup, curProfit, res):
         __ curProfit >= P a.. s..(curGroup) <= G:
             res[0] += 1
         ___ i __ r..(ind, l..(group)):

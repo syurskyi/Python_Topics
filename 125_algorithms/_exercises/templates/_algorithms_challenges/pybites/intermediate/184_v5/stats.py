@@ -10,17 +10,17 @@ __ n.. path.isfile(DATA):
 
 c_ BiteStats:
 
-    ___ _load_data(self, data) __ l..:
+    ___ _load_data  data) __ l..:
         w__ open(DATA) __ d:
             r.. l..(DictReader(d))
 
     ___ - , data=DATA):
         rows = _load_data(data)
 
-    ___ _count_attribute(self, attrib, completed=F..):
+    ___ _count_attribute  attrib, completed=F..):
         r.. Counter(x[attrib] ___ x __ rows __ n.. completed o. (completed a.. x['completed'] __ 'True'))
 
-    ___ _count_clicks(self, attrib, completed=F..):
+    ___ _count_clicks  attrib, completed=F..):
         counter = Counter()
         ___ x __ rows:
             __ n.. completed o. (completed a.. x['completed'] __ 'True'):

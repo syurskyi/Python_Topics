@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maximalRectangle(self, G):
+    ___ maximalRectangle  G):
         """
         :type G: List[List[str]]
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution:
             ___ j __ r..(n):
                 __ G[i][j] __ '1':
                     H[j] = H.get(j, 0) + 1
-                    L[j] = max(L.get(j, 0), curr)
+                    L[j] = m..(L.get(j, 0), curr)
                 ____:
                     H[j] = L[j] = 0
                     curr = j + 1
@@ -29,7 +29,7 @@ c_ Solution:
                     R[j] = n
                     curr = j
 
-                ans = max(
+                ans = m..(
                     ans,
                     H[j] * (R[j] - L[j])
                 )
@@ -87,7 +87,7 @@ max = 6 = (5 - 2) * 2
 # Mono Stack
 # This problem could be treated as histogram, see lintcode#122
 c_ Solution:
-    ___ maximalRectangle(self, G):
+    ___ maximalRectangle  G):
         """
         :type G: List[List[str]]
         :rtype: int
@@ -106,14 +106,14 @@ c_ Solution:
                 ____:
                     H[j] = 0
 
-            ans = max(ans, largestRectangleArea(H))
+            ans = m..(ans, largestRectangleArea(H))
 
             # To remove the trick `0`
             H.pop()
 
         r.. ans
 
-    ___ largestRectangleArea(self, H):
+    ___ largestRectangleArea  H):
         area = 0
         __ n.. H:
             r.. area
@@ -128,7 +128,7 @@ c_ Solution:
             w.... I a.. H[I[-1]] >= H[right]:
                 height = H[I.pop()]
                 left = I[-1] __ I ____ -1
-                area = max(
+                area = m..(
                     area,
                     height * (right - left - 1)
                 )

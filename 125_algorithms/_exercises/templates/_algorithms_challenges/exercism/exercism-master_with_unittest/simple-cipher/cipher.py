@@ -11,15 +11,15 @@ c_ Cipher:
         __ n.. valid_key
             r.. ValueError()
 
-    ___ encode(self, phrase):
-        r.. ''.j..([chr(wrap(ord(c) + offset(i))) ___ i, c __
+    ___ encode  phrase):
+        r.. ''.j..([chr(wrap(o..(c) + offset(i))) ___ i, c __
                         e..(clean(phrase))])
 
-    ___ decode(self, phrase):
-        r.. ''.j..([chr(wrap(ord(c) - offset(i))) ___ i, c __
+    ___ decode  phrase):
+        r.. ''.j..([chr(wrap(o..(c) - offset(i))) ___ i, c __
                         e..(clean(phrase))])
 
-    ___ clean(self, phrase):
+    ___ clean  phrase):
         r.. l..(filter(s...isalpha, phrase.lower()))
 
     ___ generate_random_key
@@ -29,10 +29,10 @@ c_ Cipher:
     ___ valid_key
         r.. key.isalpha() a.. key.islower()
 
-    ___ offset(self, index):
-        r.. wrap(ord(key[index % l..(key)]) - 97)
+    ___ offset  index):
+        r.. wrap(o..(key[index % l..(key)]) - 97)
 
-    ___ wrap(self, val):
+    ___ wrap  val):
         w.... val > 122:
             val -= 26
         w.... val < 97:

@@ -4,7 +4,7 @@ Created on Jan 30, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ numTrees(self, n):
+    ___ numTrees  n):
         """
         :type n: int
         :rtype: int

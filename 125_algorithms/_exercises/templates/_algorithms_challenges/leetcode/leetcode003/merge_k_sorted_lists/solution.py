@@ -8,7 +8,7 @@ _______ heapq
 c_ Solution:
     # @param a list of ListNode
     # @return a ListNode
-    ___ mergeKLists(self, lists):
+    ___ mergeKLists  lists):
         __ n.. lists:
             r.. N..
         n = l..(lists)
@@ -19,7 +19,7 @@ c_ Solution:
         l2 = mergeKLists(lists[mid:])
         r.. merge(l1, l2)
 
-    ___ merge(self, l1, l2):
+    ___ merge  l1, l2):
         res = N..
         end = N..
         cur = N..
@@ -46,7 +46,7 @@ c_ Solution:
             end.next = l2
         r.. res
 
-    ___ mergeKLists2(self, lists):
+    ___ mergeKLists2  lists):
         # Create a priority queue
         h    # list
         res = N..

@@ -32,7 +32,7 @@ c_ Cell:
         j = j
         h = h
 
-    ___ __cmp__(self, other):
+    ___ __cmp__  other):
         r.. h - other.h
 
 
@@ -40,7 +40,7 @@ c_ Solution(object):
     ___ - ):
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    ___ trapRainWater(self, mat):
+    ___ trapRainWater  mat):
         """
         Find the min height with no water that higher than the current height and keep it.
         Starting from the min height with no water

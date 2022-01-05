@@ -5,7 +5,7 @@ Created on Apr 4, 2017
 '''
 
 c_ Solution(object):
-    ___ deconString(self, s):
+    ___ deconString  s):
         stack = [['', 1]]
         num = ''
         ___ c __ s:
@@ -21,7 +21,7 @@ c_ Solution(object):
                 stack[-1][0] += c
         r.. stack[0][0]
     
-    ___ decodeString_own(self, s):
+    ___ decodeString_own  s):
         __ '[' n.. __ s:
             r.. s
         result = ''

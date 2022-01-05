@@ -2,7 +2,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution(object):
-  ___ frequencySort(self, s):
+  ___ frequencySort  s):
     """
     :type s: str
     :rtype: str

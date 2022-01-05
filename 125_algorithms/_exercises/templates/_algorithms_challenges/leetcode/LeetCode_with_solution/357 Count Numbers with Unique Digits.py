@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ countNumbersWithUniqueDigits(self, n):
+    ___ countNumbersWithUniqueDigits  n):
         """
         Let F(i) be the number of numbers with unique digits of length i
         F(1) = 1 // special case

@@ -6,7 +6,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution(object):
-    ___ longestPalindrome(self, s):
+    ___ longestPalindrome  s):
         """
         O(n^2)
         :param s: string
@@ -26,7 +26,7 @@ c_ Solution(object):
             __ l..(cur) > l..(ret): ret = cur
         r.. ret
 
-    ___ longestPalindrome_TLE(self, s):
+    ___ longestPalindrome_TLE  s):
         """
         Algorithm: dp, O(n^2)
 
@@ -65,7 +65,7 @@ c_ Solution(object):
 
         r.. s[longest[0]:longest[1]]
 
-    ___ longestPalindrome_TLE2(self, s):
+    ___ longestPalindrome_TLE2  s):
         """
         :param s: string
         :return: string
@@ -95,7 +95,7 @@ c_ Solution(object):
 
         r.. longest
 
-    ___ get_palindrome_from_center(self, s, begin, end):
+    ___ get_palindrome_from_center  s, begin, end):
         """
         # [begin, end]
         """

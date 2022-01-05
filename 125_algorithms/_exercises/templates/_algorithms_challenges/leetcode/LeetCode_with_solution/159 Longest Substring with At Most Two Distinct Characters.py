@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ lengthOfLongestSubstringTwoDistinct(self, s):
+    ___ lengthOfLongestSubstringTwoDistinct  s):
         """
         Sliding Window
         :type s: str
@@ -26,7 +26,7 @@ c_ Solution(object):
 
                 i += 1
 
-            maxa = max(maxa, j-i+1)
+            maxa = m..(maxa, j-i+1)
 
         r.. maxa
 

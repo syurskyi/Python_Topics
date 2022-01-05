@@ -38,8 +38,8 @@ ___ person_max_bmi(data=data):
     ___ x, y __ BMI_info:
         BMI_final.a..(float(y) / (i..(x) / 100) ** 2)
 
-    highest_BMI_position = BMI_final.index(max(BMI_final))
+    highest_BMI_position = BMI_final.index(m..(BMI_final))
     highest_BMI_name = data[highest_BMI_position].s...s..(',')[0]
-    highest_BMI_BMI = max(BMI_final)
+    highest_BMI_BMI = m..(BMI_final)
 
     r.. highest_BMI_name, r..(highest_BMI_BMI, 2)

@@ -12,7 +12,7 @@ c_ Solution:
     """
     find path count
     """
-    ___ pathSum(self, root, target):
+    ___ pathSum  root, target):
         """
         :type root: TreeNode
         :type target: int
@@ -27,7 +27,7 @@ c_ Solution:
             pathSum(root.right, target),
         ))
 
-    ___ count_valid_path(self, node, remaining):
+    ___ count_valid_path  node, remaining):
         __ n.. node:
             r.. 0
 
@@ -42,7 +42,7 @@ c_ Solution:
     """
     print path
     """
-    ___ pathSum(self, root, target):
+    ___ pathSum  root, target):
         """
         :type root: TreeNode
         :type target: int
@@ -57,7 +57,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs(self, node, target, ans, path):
+    ___ dfs  node, target, ans, path):
         __ n.. node:
             r..
 

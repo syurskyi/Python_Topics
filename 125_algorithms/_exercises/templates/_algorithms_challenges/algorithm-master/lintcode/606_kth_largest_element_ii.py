@@ -7,7 +7,7 @@ c_ Solution:
     @param: k: an integer from 1 to n
     @return: the kth largest element
     """
-    ___ kthLargestElement2(self, nums, k):
+    ___ kthLargestElement2  nums, k):
         __ n.. nums o. n.. k:
             r.. -1
 

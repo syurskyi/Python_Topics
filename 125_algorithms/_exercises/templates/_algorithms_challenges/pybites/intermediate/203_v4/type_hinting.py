@@ -18,7 +18,7 @@ c_ Employee:
     hours_per_day: float
     wage: float
 
-    ___ _rounder(self, number: float, places: i..) __ s..:
+    ___ _rounder  number: float, places: i..) __ s..:
         """Rounds a number the specified number of places
 
         :param number: Float of number of round

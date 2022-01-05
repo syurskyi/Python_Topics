@@ -5,7 +5,7 @@ Created on Feb 9, 2017
 '''
 
 c_ Solution(object):
-    ___ wordBreak(self, s, wordDict):
+    ___ wordBreak  s, wordDict):
         """
         :type s: str
         :type wordDict: List[str]

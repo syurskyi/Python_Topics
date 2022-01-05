@@ -11,7 +11,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ atoi(self, s..):
+    ___ atoi  s..):
         """
         Need to satisfy all the nuance requirements
 

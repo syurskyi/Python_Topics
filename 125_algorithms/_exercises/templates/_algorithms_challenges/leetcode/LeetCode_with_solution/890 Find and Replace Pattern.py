@@ -34,7 +34,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findAndReplacePattern(self, words: List[s..], pattern: s..) __ List[s..]:
+    ___ findAndReplacePattern  words: List[s..], pattern: s..) __ List[s..]:
         """
         mapping
         """
@@ -44,7 +44,7 @@ c_ Solution:
                 ret.a..(w)
         r.. ret
 
-    ___ m..(self, word, pattern):
+    ___ m..  word, pattern):
         __ l..(word) != l..(pattern):
             r.. F..
 

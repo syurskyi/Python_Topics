@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ threeSumSmaller(self, nums, target):
+  ___ threeSumSmaller  nums, target):
     """
     :type nums: List[int]
     :type target: int

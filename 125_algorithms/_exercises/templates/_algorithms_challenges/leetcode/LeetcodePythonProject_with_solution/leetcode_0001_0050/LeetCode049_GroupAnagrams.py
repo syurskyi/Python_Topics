@@ -5,7 +5,7 @@ Created on Jan 21, 2017
 '''
 
 c_ Solution(object):
-    ___ groupAnagrams(self, strs):
+    ___ groupAnagrams  strs):
         """
         :type strs: List[str]
         :rtype: List[List[str]]
@@ -14,7 +14,7 @@ c_ Solution(object):
         ___ s __ strs:
             arr = [0]*26
             ___ c __ s:
-                arr[ord(c)-ord('a')]+=1
+                arr[o..(c)-o..('a')]+=1
             arr = [s..(num) ___ num __ arr]
             key = ''.j..(arr)
             __ key __ hashmap:

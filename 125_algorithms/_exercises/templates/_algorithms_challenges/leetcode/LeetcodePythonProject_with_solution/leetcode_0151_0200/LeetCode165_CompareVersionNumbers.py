@@ -4,7 +4,7 @@ Created on May 21, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ compareVersion(self, version1, version2):
+    ___ compareVersion  version1, version2):
         """
         :type version1: str
         :type version2: str

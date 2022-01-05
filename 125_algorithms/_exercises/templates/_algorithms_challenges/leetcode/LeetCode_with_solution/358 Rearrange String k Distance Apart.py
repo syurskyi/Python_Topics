@@ -38,7 +38,7 @@ c_ Val(object):
         cnt = cnt
         val = val
 
-    ___ __cmp__(self, other):
+    ___ __cmp__  other):
         __ cnt __ other.cnt:
             r.. cmp(val, other.val)
 
@@ -46,7 +46,7 @@ c_ Val(object):
 
 
 c_ Solution(object):
-    ___ rearrangeString(self, s, k):
+    ___ rearrangeString  s, k):
         """
         Greedy, largest first, fill k first
         O(lg(26) n)

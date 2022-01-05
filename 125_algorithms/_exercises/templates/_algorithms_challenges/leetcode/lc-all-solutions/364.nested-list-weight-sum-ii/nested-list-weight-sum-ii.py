@@ -42,7 +42,7 @@
 #        """
 
 c_ Solution(object):
-  ___ depthSumInverse(self, nestedList):
+  ___ depthSumInverse  nestedList):
     """
     :type nestedList: List[NestedInteger]
     :rtype: int
@@ -52,7 +52,7 @@ c_ Solution(object):
       res = 0
       ___ nested __ root:
         __ n.. nested.isInteger
-          res = max(res, getDepth(nested.getList()))
+          res = m..(res, getDepth(nested.getList()))
       r.. res + 1
 
     ___ helper(root, depth, maxDepth):

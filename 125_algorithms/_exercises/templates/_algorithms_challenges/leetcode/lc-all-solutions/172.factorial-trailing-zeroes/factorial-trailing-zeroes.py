@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ trailingZeroes(self, n):
+  ___ trailingZeroes  n):
     """
     :type n: int
     :rtype: int

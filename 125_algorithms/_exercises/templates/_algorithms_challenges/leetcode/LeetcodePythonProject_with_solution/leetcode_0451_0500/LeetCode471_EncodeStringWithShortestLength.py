@@ -5,10 +5,10 @@ Created on Apr 25, 2017
 '''
 
 c_ Solution(object):
-    ___ encode_short(self, s):
+    ___ encode_short  s):
         r.. helper(s, {})
     
-    ___ helper(self, s, mem):
+    ___ helper  s, mem):
         __ s n.. __ mem:
             n = l..(s)
             i = (s+s).find(s, 1)
@@ -17,7 +17,7 @@ c_ Solution(object):
             mem[s] = m..([s, one] + multi, key=l..)
         r.. mem[s]
     
-    ___ encode(self, s):
+    ___ encode  s):
         """
         :type s: str
         :rtype: str

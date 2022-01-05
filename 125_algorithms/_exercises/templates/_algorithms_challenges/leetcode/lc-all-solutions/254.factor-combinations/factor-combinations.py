@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ getFactors(self, n):
+  ___ getFactors  n):
     """
     :type n: int
     :rtype: List[List[int]]
@@ -8,7 +8,7 @@ c_ Solution(object):
     dfsHelper(n, res, [], 2)
     r.. res[1:]
 
-  ___ dfsHelper(self, n, res, path, start):
+  ___ dfsHelper  n, res, path, start):
     __ l..(path) > 1 a.. path[-2] > path[-1]:
       r..
 

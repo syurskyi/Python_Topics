@@ -20,7 +20,7 @@ c_ Twitter(object):
         latestTweets    # dict
         tweet_id = 0
 
-    ___ postTweet(self, userId, tweetId):
+    ___ postTweet  userId, tweetId):
         """
         Compose a new tweet.
         :type userId: int
@@ -38,7 +38,7 @@ c_ Twitter(object):
             tweet = TweetObj(tweet_id, userId, tweetId, N..)
             latestTweets[userId] = tweet
 
-    ___ getNewsFeed(self, userId):
+    ___ getNewsFeed  userId):
         """
         Retrieve the 10 most recent tweet ids in the user's news feed.
         Each item in the news feed must be posted by users who the user followed or by the user herself.
@@ -69,7 +69,7 @@ c_ Twitter(object):
                 heapq.heappush(heap, newTweetTuple)
         r.. result
 
-    ___ follow(self, followerId, followeeId):
+    ___ follow  followerId, followeeId):
         """
         Follower follows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int
@@ -81,7 +81,7 @@ c_ Twitter(object):
         ____:
             following[followerId] = set([followeeId])
 
-    ___ unfollow(self, followerId, followeeId):
+    ___ unfollow  followerId, followeeId):
         """
         Follower unfollows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int

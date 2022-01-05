@@ -7,7 +7,7 @@ Created on Feb 16, 2017
 c_ Solution:
     # @param n, an integer
     # @return an integer
-    ___ reverseBits(self, n):
+    ___ reverseBits  n):
         res = 0
         ___ i __ r..(0, 32):
             last = n >> i

@@ -20,7 +20,7 @@ _______ bisect
 
 
 c_ Solution:
-    ___ findRadius(self, houses, heaters):
+    ___ findRadius  houses, heaters):
         """
         check the responsibility
         use bisect
@@ -34,14 +34,14 @@ c_ Solution:
         i = 0
         ___ h __ houses:
             i = bisect.bisect(heaters, h)  # insertion point
-            left = max(0, i - 1)
+            left = m..(0, i - 1)
             right = m..(l..(heaters) - 1, i)
             r_cur = m..(abs(heaters[left] - h), abs(heaters[right] - h))
-            r = max(r, r_cur)
+            r = m..(r, r_cur)
             
         r.. r
 
-    ___ findRadius_naive(self, houses, heaters):
+    ___ findRadius_naive  houses, heaters):
         """
         check the responsibility
         :type houses: List[int]
@@ -59,7 +59,7 @@ c_ Solution:
                 # find which heater is responsible for the house
                 i += 1
 
-            r = max(r, abs(heaters[i] - h))
+            r = m..(r, abs(heaters[i] - h))
 
         r.. r
 

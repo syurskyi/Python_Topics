@@ -8,7 +8,7 @@ class ListNode:
 
 
 c_ Solution:
-    ___ addLists2(self, a, b):
+    ___ addLists2  a, b):
         """
         :type a: ListNode
         :type b: ListNode
@@ -54,7 +54,7 @@ c_ Solution:
 
         r.. rev_list(dummy.next)
 
-    ___ rev_list(self, head):
+    ___ rev_list  head):
         pre = nxt = N..
 
         w.... head:

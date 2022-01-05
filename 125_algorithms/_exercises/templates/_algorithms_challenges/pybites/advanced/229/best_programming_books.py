@@ -80,7 +80,7 @@ ___ load_data
         title = book.select("h2.main")[0].text
         __ "python" n.. __ title.l..:
             _____
-        try:
+        ___
             author_a = book.select("h3.authors > a")[0].text.s..(" ")
             author = f'{author_a[-1]}, {" ".j..(author_a[:-1])}'
             date_span = book.select("span.date")
@@ -89,7 +89,7 @@ ___ load_data
             year = i..(date_span[0].text[-4:])
             rank = i..(book.select("div.rank > span")[0].text)
             rating = float(book.select("span.our-rating")[0].text)
-        except AttributeError:
+        ______ AttributeError:
             _____
         books.a..(
             Book(title=title, author=author, year=year, rank=rank, rating=rating)

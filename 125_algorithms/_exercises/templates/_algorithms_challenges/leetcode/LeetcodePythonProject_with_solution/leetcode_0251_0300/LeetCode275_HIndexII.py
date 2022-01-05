@@ -5,7 +5,7 @@ Created on Mar 5, 2017
 '''
 
 c_ Solution(object):
-    ___ hIndex(self, citations):
+    ___ hIndex  citations):
         """
         :type citations: List[int]
         :rtype: int

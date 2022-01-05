@@ -4,7 +4,7 @@ Created on Oct 21, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findRedundantDirectedConnection(self, edges):
+    ___ findRedundantDirectedConnection  edges):
         """
         :type edges: List[List[int]]
         :rtype: List[int]
@@ -34,7 +34,7 @@ c_ Solution(object):
             parent[child] = par
         r.. can2
     
-    ___ getRoot(self, parent, i):
+    ___ getRoot  parent, i):
         w.... i != parent[i]:
             parent[i] = parent[parent[i]]
             i = parent[i]

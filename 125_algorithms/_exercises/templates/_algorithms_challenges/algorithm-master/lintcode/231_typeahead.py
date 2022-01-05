@@ -19,7 +19,7 @@ c_ Typeahead:
     @param: str: a string
     @return: a list of words
     """
-    ___ s..(self, s..):
+    ___ s..  s..):
         __ s.. __ map:
             r.. map[s..]
         r.. []
@@ -42,13 +42,13 @@ c_ Trie:
             'children': {}
         }
 
-    ___ put(self, key):
+    ___ put  key):
         __ n.. key:
             r..
         ___ word __ key.s.. :
             _put(word, key)
 
-    ___ _put(self, word, key):
+    ___ _put  word, key):
         parent = root
         ___ char __ word.l..:
             __ char n.. __ parent['children']:
@@ -56,7 +56,7 @@ c_ Trie:
             parent = parent['children'][char]
             parent['result'].a..(key)
 
-    ___ s..(self, key):
+    ___ s..  key):
         __ n.. key:
             r.. []
         parent = root
@@ -95,5 +95,5 @@ c_ Typeahead:
     @param: str: a string
     @return: a list of words
     """
-    ___ s..(self, s..):
+    ___ s..  s..):
         r.. trie.s..(s..)

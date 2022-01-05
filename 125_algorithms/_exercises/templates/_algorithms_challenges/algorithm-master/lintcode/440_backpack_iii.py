@@ -8,7 +8,7 @@ c_ Solution:
     @param: m: an integer
     @return: an integer
     """
-    ___ backPackIII(self, A, V, m):
+    ___ backPackIII  A, V, m):
         __ n.. A o. n.. V o. n.. m:
             r.. 0
 
@@ -36,7 +36,7 @@ c_ Solution:
     @param: m: an integer
     @return: an integer
     """
-    ___ backPackIII(self, A, V, m):
+    ___ backPackIII  A, V, m):
         __ n.. A o. n.. V o. n.. m:
             r.. 0
 
@@ -51,7 +51,7 @@ c_ Solution:
                 dp[i][w] = dp[i - 1][w]
 
                 __ w >= A[i - 1]:
-                    dp[i][w] = max(
+                    dp[i][w] = m..(
                         dp[i][w],
                         dp[i][w - A[i - 1]] + V[i - 1]
                     )

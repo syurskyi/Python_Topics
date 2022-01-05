@@ -32,10 +32,10 @@ c_ Ninja:
     name: s..
     bites: i..
 
-    ___ __lt__(self, other):
+    ___ __lt__  other):
         r.. bites < other.bites
 
-    ___ __eq__(self, other):
+    ___ __eq__  other):
         r.. bites __ other.bites
 
     ___ __str__
@@ -60,7 +60,7 @@ c_ Rankings:
     """
     ninja_list    # list
 
-    ___ add(self, ninja):
+    ___ add  ninja):
         __ ninja n.. __ ninja_list:
             ninja_list.a..(ninja)
         ninja_list.s..()
@@ -68,16 +68,16 @@ c_ Rankings:
     ___ dump
         r.. ninja_list.pop(0)
 
-    ___ highest(self, count: i.. = 1):
+    ___ highest  count: i.. = 1):
         result = ninja_list[-count:]
         result.reverse()
         r.. result
 
-    ___ lowest(self, count: i.. = 1):
+    ___ lowest  count: i.. = 1):
         result = ninja_list[:count]
         r.. result
 
-    ___ pair_up(self, count: i.. = 3):
+    ___ pair_up  count: i.. = 3):
         highest = highest(count)
         lowest = lowest(count)
         r.. l..(z..(highest, lowest))

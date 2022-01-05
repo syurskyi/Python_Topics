@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ mergeSortedArray(self, a, m, b, n):
+    ___ mergeSortedArray  a, m, b, n):
         """
         :type a: List[int]
         :type m: int

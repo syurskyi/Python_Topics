@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a list of strings, [s1, s2]
-    ___ letterCombinations(self, d..):
+    ___ letterCombinations  d..):
         d = {
             '2': 'abc',
             '3': 'def',
@@ -16,7 +16,7 @@ c_ Solution:
         letter_combination_aux(d.., d, cand, res)
         r.. res
 
-    ___ letter_combination_aux(self, d.., d, cand, res):
+    ___ letter_combination_aux  d.., d, cand, res):
         __ n.. d..:
             res.a..(''.j..(cand))
         ____:

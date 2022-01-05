@@ -33,13 +33,13 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ combinationSum2(self, candidates: List[i..], target: i..) __ List[List[i..]]:
+    ___ combinationSum2  candidates: List[i..], target: i..) __ List[List[i..]]:
         ret    # list
         candidates.s..()
         dfs(candidates, 0, [], 0, target, ret)
         r.. ret
 
-    ___ dfs(self, candidates, i, cur, cur_sum, target, ret):
+    ___ dfs  candidates, i, cur, cur_sum, target, ret):
         __ cur_sum __ target:
             ret.a..(l..(cur))
             r..

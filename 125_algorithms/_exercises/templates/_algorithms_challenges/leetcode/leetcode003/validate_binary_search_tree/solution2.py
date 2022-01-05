@@ -20,13 +20,13 @@ Both the left and right subtrees must also be binary search trees.
 c_ Solution:
     # @param root, a tree node
     # @return a boolean
-    ___ isValidBST(self, root):
+    ___ isValidBST  root):
         maxsize = 9223372036854775806  # Assumed sys.maxsize on 64-bit platform
         INT_MIN = -maxsize - 1
         INT_MAX = maxsize
         r.. is_valid_bst_aux(root, INT_MIN, INT_MAX)
 
-    ___ is_valid_bst_aux(self, root, min_val, max_val):
+    ___ is_valid_bst_aux  root, min_val, max_val):
         """Assume that keys are distinct integers"""
         __ root __ N..
             r.. T..

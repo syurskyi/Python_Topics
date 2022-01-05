@@ -5,7 +5,7 @@ ____ true_or_false.question _______ Question
 
 c_ Game:
 
-    ___ __parse_line(self, line):
+    ___ __parse_line  line):
         parts  line.s..(';')
         text  parts[0]
         is_correct  parts[1] __ "Yes"
@@ -13,7 +13,7 @@ c_ Game:
 
         r.. Question(text, is_correct, explanation)
 
-    ___ __fill_in_questions(self, file_path, questions: []):
+    ___ __fill_in_questions  file_path, questions: []):
         w__ open(file_path, encoding'UTF8') __ file:
             ___ line __ file:
                 q  __parse_line(line)
@@ -33,7 +33,7 @@ c_ Game:
     ___ get_next_question
         r.. __questions[__counter]
 
-    ___ give_answer(self, answer):
+    ___ give_answer  answer):
         ___ is_last_question
             r.. __counter __ l..(__questions) - 1
 

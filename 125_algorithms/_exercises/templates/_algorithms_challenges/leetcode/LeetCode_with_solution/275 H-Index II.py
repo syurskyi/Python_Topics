@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution(object):
-    ___ hIndex(self, A):
+    ___ hIndex  A):
         """
         Given sorted -> binary search
         From linear search into bin search

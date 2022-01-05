@@ -21,7 +21,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ partitionLabels(self, S: s..) __ List[i..]:
+    ___ partitionLabels  S: s..) __ List[i..]:
         lasts    # dict
         n = l..(S)
         ___ i __ r..(n-1, -1, -1):
@@ -31,7 +31,7 @@ c_ Solution:
         indexes = [-1]  # last partition ending index
         cur_last = 0
         ___ i __ r..(n):
-            cur_last = max(cur_last, lasts[S[i]])
+            cur_last = m..(cur_last, lasts[S[i]])
             __ cur_last __ i:
                 indexes.a..(cur_last)
 

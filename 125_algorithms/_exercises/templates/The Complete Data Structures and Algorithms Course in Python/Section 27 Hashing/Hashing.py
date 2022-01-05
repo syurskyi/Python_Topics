@@ -11,7 +11,7 @@ ___ mod(number, cellNumber
 ___ modASCII(s__, cellNumber
     total  0
     ___ i __ s__:
-        total + ord(i)
+        total + o..(i)
     r_ total % cellNumber
 
 print(modASCII("ABC", 24))

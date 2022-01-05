@@ -22,7 +22,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ networkDelayTime(self, times: List[List[i..]], N: i.., K: i..) __ i..:
+    ___ networkDelayTime  times: List[List[i..]], N: i.., K: i..) __ i..:
         """
         Dijkstra's algorithm
         """
@@ -41,7 +41,7 @@ c_ Solution:
                         reach_time[d] = t + w
                         heapq.heappush(h, (t + w, d))
 
-        ret = max(reach_time[1:])  # notice reach_time[0] is dummy
+        ret = m..(reach_time[1:])  # notice reach_time[0] is dummy
         __ ret __ float('inf'):
             r.. -1
         r.. ret

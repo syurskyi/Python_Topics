@@ -22,7 +22,7 @@ c_ Solution:
     HOUSE = 1
     WALL = 2
 
-    ___ shortestDistance(self, grid):
+    ___ shortestDistance  grid):
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -49,7 +49,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ bfs(self, grid, x, y, times, steps):
+    ___ bfs  grid, x, y, times, steps):
         m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
         visited = set(queue)
@@ -97,7 +97,7 @@ c_ Solution:
     HOUSE = 1
     WALL = 2
 
-    ___ shortestDistance(self, grid):
+    ___ shortestDistance  grid):
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -127,7 +127,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ dfs(self, grid, x, y, id, ids, steps, step):
+    ___ dfs  grid, x, y, id, ids, steps, step):
         m, n = l..(grid), l..(grid[0])
 
         ___ dx, dy __ (

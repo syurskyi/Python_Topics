@@ -21,7 +21,7 @@ c_ WordFilter(object):
         buildTree(root1, words, F..)
         buildTree(root2, words, T..)
     
-    ___ buildTree(self, root, words, reverse):
+    ___ buildTree  root, words, reverse):
         ___ i0, word __ e..(words):
             __ reverse:
                 word = word[::-1]
@@ -35,7 +35,7 @@ c_ WordFilter(object):
                 __ i __ l..(word)-1:
                     node.isLeaf = T..
     
-    ___ f(self, prefix, suffix):
+    ___ f  prefix, suffix):
         """
         :type prefix: str
         :type suffix: str
@@ -46,10 +46,10 @@ c_ WordFilter(object):
         res = -1
         ___ i __ cand1:
             __ i __ cand2:
-                res = max(res, i)
+                res = m..(res, i)
         r.. res
     
-    ___ helper(self, root, word):
+    ___ helper  root, word):
         __ n.. word:
             r.. root.candidates
         ___ i, c __ e..(word):

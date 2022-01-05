@@ -7,7 +7,7 @@ For example,
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ permuteUnique_TLE(self, num):
+    ___ permuteUnique_TLE  num):
         """
         list to set
         Time Limit Exceeded
@@ -19,7 +19,7 @@ c_ Solution:
         r.. map(l.., set(map(t.., result)))
 
 
-    ___ get_permute_TLE(self, nums, current, result):
+    ___ get_permute_TLE  nums, current, result):
         length = l..(nums)
         __ length__0:
             result.a..(current)
@@ -28,7 +28,7 @@ c_ Solution:
             get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
 
-    ___ permuteUnique(self, num):
+    ___ permuteUnique  num):
         """
         Jump
         compared to 045 Permutation, two lines added: sort and continue
@@ -40,7 +40,7 @@ c_ Solution:
         get_permute(num, [], result)
         r.. result
 
-    ___ get_permute(self, nums, current, result):
+    ___ get_permute  nums, current, result):
         __ n.. nums:
             result.a..(current)
 
@@ -48,5 +48,5 @@ c_ Solution:
             __ ind-1>=0 a.. val__nums[ind-1]: _____  # JUMP; only need to compare to previous value
             get_permute(nums[:ind]+nums[ind+1:], current+[val], result)
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().permuteUnique([1, 1, 2])

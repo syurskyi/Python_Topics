@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ candy(self, ratings):
+  ___ candy  ratings):
     """
     :type ratings: List[int]
     :rtype: int
@@ -13,6 +13,6 @@ c_ Solution(object):
     ans = left[-1]
     ___ i __ r..(r..(0, n - 1)):
       __ ratings[i] > ratings[i + 1]:
-        left[i] = max(left[i], left[i + 1] + 1)
+        left[i] = m..(left[i], left[i + 1] + 1)
       ans += left[i]
     r.. ans

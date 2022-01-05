@@ -3,7 +3,7 @@ c_ Solution:
     @param: A: An integer array
     @return: The second max number in the array.
     """
-    ___ secondMax(self, A):
+    ___ secondMax  A):
         __ n.. A:
             r..
 

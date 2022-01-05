@@ -4,7 +4,7 @@ Created on Jan 30, 2019
 @author: tongq
 '''
 c_ Solution(object):
-    ___ canVisitAllRooms(self, rooms):
+    ___ canVisitAllRooms  rooms):
         """
         :type rooms: List[List[int]]
         :rtype: bool

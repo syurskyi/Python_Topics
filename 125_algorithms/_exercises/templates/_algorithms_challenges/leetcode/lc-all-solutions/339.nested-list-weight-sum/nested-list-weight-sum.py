@@ -24,7 +24,7 @@
 #        """
 
 c_ Solution(object):
-  ___ depthSum(self, nestedList):
+  ___ depthSum  nestedList):
     """
     :type nestedList: List[NestedInteger]
     :rtype: int

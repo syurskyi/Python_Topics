@@ -5,7 +5,7 @@ Created on Apr 25, 2017
 '''
 
 c_ Solution(object):
-    ___ getMaxRepetitions(self, s1, n1, s2, n2):
+    ___ getMaxRepetitions  s1, n1, s2, n2):
         """
         :type s1: str
         :type n1: int
@@ -18,7 +18,7 @@ c_ Solution(object):
         res += countHelper(s1*(n1%n2), s2*n2)
         r.. res
     
-    ___ countHelper(self, s1, s2):
+    ___ countHelper  s1, s2):
         __ n.. s1 o. n.. s2: r.. 0
         count = 0
         i, j = 0, 0

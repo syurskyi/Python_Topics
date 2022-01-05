@@ -8,7 +8,7 @@ c_ Solution:
     # @param head, a ListNode
     # @param k, an integer
     # @return a ListNode
-    ___ reverseKGroup(self, head, k):
+    ___ reverseKGroup  head, k):
         __ head __ N..
             r.. head
         h = head

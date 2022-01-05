@@ -4,7 +4,7 @@
 # def guess(num):
 
 c_ Solution(object):
-  ___ guessNumber(self, n):
+  ___ guessNumber  n):
     """
     :type n: int
     :rtype: int

@@ -6,7 +6,7 @@ digit = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Sev
 
 
 c_ Solution(object):
-  ___ numberToWords(self, num):
+  ___ numberToWords  num):
     """
     :type num: int
     :rtype: str

@@ -9,7 +9,7 @@ c_ Solution(object):
     ___ - ):
         d    # dict
 
-    ___ canWin(self, s):
+    ___ canWin  s):
         """
         memoization
         110ms
@@ -25,10 +25,10 @@ c_ Solution(object):
 
         r.. d[s]
 
-    ___ canWin_oneline(self, s):
+    ___ canWin_oneline  s):
         r.. any(n.. canWin_oneline(s[:i]+"--"+s[i+2:]) ___ i __ xrange(l..(s)-1) __ s[i:i+2] __ "++")
 
-    ___ canWin_trivial(self, s):
+    ___ canWin_trivial  s):
         """
         3200 ms
         :type s: str

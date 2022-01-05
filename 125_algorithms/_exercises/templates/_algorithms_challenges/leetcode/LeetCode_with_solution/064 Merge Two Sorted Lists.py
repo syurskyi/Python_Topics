@@ -16,7 +16,7 @@ c_ ListNode:
         r.. "%d, %s"%(val, next)
 
 c_ Solution:
-    ___ mergeTwoLists(self, l1, l2):
+    ___ mergeTwoLists  l1, l2):
         """
         Linked List
         assuming ascending order
@@ -46,7 +46,7 @@ c_ Solution:
 
         r.. dummy.next
 
-__ __name____"__main__":
+__ _____ __ ____
     length = 10
     list1 = [ListNode(2*i) ___ i __ xrange(length)]
     list2 = [ListNode(2*i+1) ___ i __ xrange(length)]

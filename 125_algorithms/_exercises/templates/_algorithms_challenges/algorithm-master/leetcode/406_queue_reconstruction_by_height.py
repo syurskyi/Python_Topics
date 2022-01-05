@@ -29,7 +29,7 @@ process:
 
 
 c_ Solution:
-    ___ reconstructQueue(self, people):
+    ___ reconstructQueue  people):
         """
         :type people: List[List[int]]
         :rtype: List[List[int]]
@@ -48,7 +48,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ reconstructQueue(self, people):
+    ___ reconstructQueue  people):
         """
         :type people: List[List[int]]
         :rtype: List[List[int]]

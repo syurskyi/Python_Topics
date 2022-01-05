@@ -7,7 +7,7 @@ c_ Solution:
     @param: k: An integer
     @return: the top k largest numbers in array
     """
-    ___ topk(self, nums, k):
+    ___ topk  nums, k):
         """
         min heap (normal case in heapq, max heap needs to times -1)
         """

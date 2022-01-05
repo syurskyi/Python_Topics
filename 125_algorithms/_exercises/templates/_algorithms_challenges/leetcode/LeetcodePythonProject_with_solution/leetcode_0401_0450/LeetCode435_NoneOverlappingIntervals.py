@@ -11,7 +11,7 @@ c_ Interval(object):
         end = e
 
 c_ Solution(object):
-    ___ eraseOverlapIntervals(self, intervals):
+    ___ eraseOverlapIntervals  intervals):
         __ n.. intervals: r.. 0
         intervals.s..(key=l.... x: (x.end, x.start))
         maxLen = intervals[0].end

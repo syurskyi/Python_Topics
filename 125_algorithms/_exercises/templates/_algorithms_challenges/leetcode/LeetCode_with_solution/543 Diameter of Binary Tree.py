@@ -33,11 +33,11 @@ c_ Solution:
         """
         ret = 0
 
-    ___ diameterOfBinaryTree(self, root: TreeNode) __ i..:
+    ___ diameterOfBinaryTree  root: TreeNode) __ i..:
         dfs(root)
         r.. ret
 
-    ___ dfs(self, node):
+    ___ dfs  node):
         """
         return #nodes ended at node including itself
         """
@@ -46,5 +46,5 @@ c_ Solution:
 
         l = dfs(node.left)
         r = dfs(node.right)
-        ret = max(ret, l + 1 + r - 1)  # path length is the #nodes - 1
-        r.. max(l, r) + 1
+        ret = m..(ret, l + 1 + r - 1)  # path length is the #nodes - 1
+        r.. m..(l, r) + 1

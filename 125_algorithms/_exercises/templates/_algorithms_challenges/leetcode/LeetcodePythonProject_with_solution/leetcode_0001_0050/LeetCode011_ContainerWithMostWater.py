@@ -5,7 +5,7 @@ Created on Jan 9, 2017
 '''
 
 c_ Solution(object):
-    ___ maxArea(self, height):
+    ___ maxArea  height):
         """
         :type height: List[int]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(object):
         i, j = 0, l..(height)-1
         area = 0
         w.... i < j:
-            area = max(area, m..(height[i], height[j])*(j-i))
+            area = m..(area, m..(height[i], height[j])*(j-i))
             __ height[i] > height[j]:
                 j -= 1
             ____:

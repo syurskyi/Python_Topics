@@ -5,20 +5,20 @@ Created on Aug 24, 2017
 '''
 
 c_ Solution(object):
-    ___ splitLoopedString(self, strs):
+    ___ splitLoopedString  strs):
         """
         :type strs: List[str]
         :rtype: str
         """
         res = N..
-        arr = [max(s, s[::-1]) ___ s __ strs]
+        arr = [m..(s, s[::-1]) ___ s __ strs]
         ___ i, s __ e..(arr):
             ___ start __ (s, s[::-1]):
                 ___ j __ r..(l..(start)+1):
                     __ n.. res:
                         res = start[j:] + ''.j..(arr[i+1:]+arr[:i]) + start[:j]
                     ____:
-                        res = max(res, start[j:] + ''.j..(arr[i+1:]+arr[:i]) + start[:j])
+                        res = m..(res, start[j:] + ''.j..(arr[i+1:]+arr[:i]) + start[:j])
         r.. res
     
     ___ test

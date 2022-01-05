@@ -4,7 +4,7 @@ Created on Oct 21, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ findRedundantConnection(self, edges):
+    ___ findRedundantConnection  edges):
         """
         :type edges: List[List[int]]
         :rtype: List[int]
@@ -19,7 +19,7 @@ c_ Solution(object):
             roots[root1] = root2
         r.. [-1, -1]
     
-    ___ getRoot(self, roots, ind):
+    ___ getRoot  roots, ind):
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ arrayPairSum(self, nums):
+  ___ arrayPairSum  nums):
     """
     :type nums: List[int]
     :rtype: int

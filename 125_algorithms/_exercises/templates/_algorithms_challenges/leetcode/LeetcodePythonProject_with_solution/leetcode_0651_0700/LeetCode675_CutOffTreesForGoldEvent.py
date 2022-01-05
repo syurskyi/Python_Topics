@@ -6,7 +6,7 @@ Created on Oct 16, 2017
 _______ heapq
 
 c_ Solution(object):
-    ___ cutOffTree(self, forest):
+    ___ cutOffTree  forest):
         """
         :type forest: List[List[int]]
         :rtype: int
@@ -28,7 +28,7 @@ c_ Solution(object):
             x, y = i, j
         r.. sumVal
     
-    ___ minStep(self, forest, x, y, i, j, h, m, n):
+    ___ minStep  forest, x, y, i, j, h, m, n):
         step = 0
         visited = [[F..]*n ___ _ __ r..(m)]
         visited[x][y] = T..

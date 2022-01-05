@@ -4,7 +4,7 @@ Created on Sep 12, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ scheduleCourse(self, courses):
+    ___ scheduleCourse  courses):
         """
         :type courses: List[List[int]]
         :rtype: int

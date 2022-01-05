@@ -4,7 +4,7 @@ Created on Mar 4, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ minWindow(self, S, T):
+    ___ minWindow  S, T):
         """
         :type S: str
         :type T: str

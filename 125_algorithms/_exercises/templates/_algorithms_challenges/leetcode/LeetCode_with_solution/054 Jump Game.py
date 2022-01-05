@@ -12,7 +12,7 @@ A = [3,2,1,0,4], return false.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ canJump_TLE(self, A):
+    ___ canJump_TLE  A):
         """
         dp with data structure.
         complicated
@@ -38,7 +38,7 @@ c_ Solution:
 
         r.. 0 __ dp[-1]
 
-    ___ canJump_TLE2(self, A):
+    ___ canJump_TLE2  A):
         """
         Simplified
         forward dp to fill True value if can jump
@@ -61,7 +61,7 @@ c_ Solution:
                         break
         r.. dp[-1]
 
-    ___ canJump(self, A):
+    ___ canJump  A):
         """
         dp
 
@@ -94,12 +94,12 @@ c_ Solution:
                 r.. F..
 
             # transition function
-            dp[i] = max(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
+            dp[i] = m..(dp[i-1], A[i]+i)  # PoP - Principle of Optimality
 
         r.. F..
 
 
 
-__ __name____"__main__":
+__ _____ __ ____
     ... Solution().canJump([2, 3, 1, 1, 4])__True
     ... Solution().canJump([3, 2, 1, 0, 4])__False

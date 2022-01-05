@@ -27,7 +27,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ findShortestSubArray(self, nums: List[i..]) __ i..:
+    ___ findShortestSubArray  nums: List[i..]) __ i..:
         """
         counter + two pointers does not work
         counter + first appearance

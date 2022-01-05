@@ -29,10 +29,10 @@ ___ convert_to_datetime(line):
     """
     line_split = line.s..(" ")
     ___ word __ line_split:
-        try:
+        ___
             line_ts = d__.strptime(word, "%Y-%m-%dT%H:%M:%S")
             r.. line_ts
-        except:
+        ______:
             _____
 
     r.. N..

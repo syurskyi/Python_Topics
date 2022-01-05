@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ romanToInt(self, s):
+    ___ romanToInt  s):
         """
         :type s: str
         :rtype: int

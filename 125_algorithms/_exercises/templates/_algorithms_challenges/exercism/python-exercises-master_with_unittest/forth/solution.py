@@ -3,10 +3,10 @@ c_ StackUnderflowError(Exception):
 
 
 ___ is_integer(s__):
-    try:
+    ___
         i..(s__)
         r.. T..
-    except ValueError:
+    ______ V..
         r.. F..
 
 
@@ -26,7 +26,7 @@ ___ evaluate(input_data):
     input_data = input_data[-1].s.. 
     w.... any(input_data):
         word = input_data.pop(0).l..
-        try:
+        ___
             __ is_integer(word):
                 stack.a..(i..(word))
             ____ word __ defines:
@@ -53,6 +53,6 @@ ___ evaluate(input_data):
                 stack.a..(stack[-2])
             ____:
                 r.. ValueError("{} has not been defined".f..(word))
-        except IndexError:
+        ______ IndexError:
             r.. StackUnderflowError("Insufficient number of items in stack")
     r.. stack

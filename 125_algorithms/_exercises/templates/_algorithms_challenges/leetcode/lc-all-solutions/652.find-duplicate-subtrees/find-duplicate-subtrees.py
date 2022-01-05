@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ findDuplicateSubtrees(self, root):
+  ___ findDuplicateSubtrees  root):
     ____ hashlib _______ sha256
     ___ hash_(x):
       S = sha256()

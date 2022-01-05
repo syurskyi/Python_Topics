@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxProduct(self, nums):
+  ___ maxProduct  nums):
     """
     :type nums: List[int]
     :rtype: int
@@ -10,7 +10,7 @@ c_ Solution(object):
     minDP[0] = nums[0]
     ans = nums[0]
     ___ i __ r..(1, l..(nums)):
-      maxDP[i] = max(minDP[i - 1] * nums[i], nums[i], maxDP[i - 1] * nums[i])
+      maxDP[i] = m..(minDP[i - 1] * nums[i], nums[i], maxDP[i - 1] * nums[i])
       minDP[i] = m..(minDP[i - 1] * nums[i], maxDP[i - 1] * nums[i], nums[i])
-      ans = max(ans, maxDP[i])
+      ans = m..(ans, maxDP[i])
     r.. ans

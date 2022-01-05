@@ -12,7 +12,7 @@ c_ TreeNode(object):
         right = right
 
 c_ Solution(object):
-    ___ sumOfLeftLeaves(self, root):
+    ___ sumOfLeftLeaves  root):
         __ n.. root: r.. 0
         sumVal = 0
         __ root.left:

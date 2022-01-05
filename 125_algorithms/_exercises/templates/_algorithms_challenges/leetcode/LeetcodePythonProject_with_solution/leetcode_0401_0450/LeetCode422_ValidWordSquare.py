@@ -5,7 +5,7 @@ Created on Apr 13, 2017
 '''
 
 c_ Solution(object):
-    ___ validWordSquare(self, words):
+    ___ validWordSquare  words):
         __ n.. words: r.. F..
         ___ i, word1 __ e..(words):
             word2 = ''

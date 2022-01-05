@@ -4,7 +4,7 @@ REF: https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/di
 
 
 c_ Solution:
-    ___ maxSumOfThreeSubarrays(self, A, k):
+    ___ maxSumOfThreeSubarrays  A, k):
         """
         :type A: List[int]
         :type k: int

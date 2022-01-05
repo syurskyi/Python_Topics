@@ -5,13 +5,13 @@ Created on Mar 23, 2017
 '''
 
 c_ Solution(object):
-    ___ isReflected(self, points):
+    ___ isReflected  points):
         minVal, maxVal = float('inf'), float('-inf')
         hashmap    # dict
         ___ point __ points:
             x, y = point[0], point[1]
             minVal = m..(minVal, x)
-            maxVal = max(maxVal, x)
+            maxVal = m..(maxVal, x)
             __ y n.. __ hashmap:
                 hashmap[point[1]] = set([x])
             ____:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ countAndSay(self, N):
+    ___ countAndSay  N):
         """
         :type N: int
         :rtype: str

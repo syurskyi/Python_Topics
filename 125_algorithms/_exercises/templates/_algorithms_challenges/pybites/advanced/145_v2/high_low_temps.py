@@ -70,17 +70,17 @@ ___ high_low_record_breakers_for_2015
 
     data_before_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] < 2015 a.. x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
-        ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxa'})
+        ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'maxa'})
 
     early_dataset = data_before_2015_left.j..(data_before_2015_right, lsuffix='_l', rsuffix='_r')
 
     data_for_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 a.. x['element'] __ 'TMIN').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
-        ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'minb'})
+        ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'minb'})
 
     data_for_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 a.. x['element'] __ 'TMAX').drop(
         ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
-        ['id', 'monthday']).max(level='monthday').rename(columns={'value': 'maxb'})
+        ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'maxb'})
 
     late_dataset = data_for_2015_left.j..(data_for_2015_right)
 
@@ -95,4 +95,4 @@ ___ high_low_record_breakers_for_2015
             result['max'].a..(
                 STATION(row.Index[0], d__.strptime _*2015{row.Index[1]}', '%Y%m%d').date(), row.maxb / 10.0))
 
-    r.. max(result['max'], key=l.... x: x.Value), m..(result['min'], key=l.... x: x.Value)
+    r.. m..(result['max'], key=l.... x: x.Value), m..(result['min'], key=l.... x: x.Value)

@@ -22,7 +22,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ rightSideView(self, root):
+    ___ rightSideView  root):
         """
         Binary tree level traversal
         :type root: TreeNode

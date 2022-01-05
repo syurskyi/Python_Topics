@@ -4,7 +4,7 @@ Created on Mar 31, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ makeLargestSpecial(self, S):
+    ___ makeLargestSpecial  S):
         """
         :type S: str
         :rtype: str

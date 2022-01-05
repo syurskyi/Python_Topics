@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findPaths(self, m, n, N, x, y):
+  ___ findPaths  m, n, N, x, y):
     dp = [[[0] * n ___ _ __ r..(m)] ___ _ __ r..(N + 1)]
     dp[0][x][y] = 1
     ans = 0

@@ -8,7 +8,7 @@ class Interval(object):
 
 
 c_ Solution:
-    ___ merge(self, intvs):
+    ___ merge  intvs):
         """
         :type intvs: List[Interval]
         :rtype: List[Interval]

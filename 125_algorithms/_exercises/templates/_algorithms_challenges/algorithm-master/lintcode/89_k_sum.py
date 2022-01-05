@@ -5,7 +5,7 @@ c_ Solution:
     @param target: An integer
     @return: An integer
     """
-    ___ kSum(self, A, K, target):
+    ___ kSum  A, K, target):
         n = l..(A)
 
         """

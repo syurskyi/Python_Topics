@@ -4,7 +4,7 @@ Created on Apr 2, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ countPrimeSetBits(self, L, R):
+    ___ countPrimeSetBits  L, R):
         """
         :type L: int
         :type R: int

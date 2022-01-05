@@ -6,7 +6,7 @@ Input is guaranteed to be within the range from 1 to 3999.
 
 
 c_ Solution(object):
-    ___ romanToInt(self, s):
+    ___ romanToInt  s):
         """
         :type s: str
         :rtype: int

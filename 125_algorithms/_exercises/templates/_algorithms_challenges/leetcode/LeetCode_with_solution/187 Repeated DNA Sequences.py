@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ findRepeatedDnaSequences(self, s):
+    ___ findRepeatedDnaSequences  s):
         """
         Limited space of possible values --> rewrite hash function
 
@@ -54,7 +54,7 @@ c_ Solution:
 
         r.. map(decode, ret)
 
-    ___ decode(self, s):
+    ___ decode  s):
         dic = {
             0: "A",
             1: "C",
@@ -68,7 +68,7 @@ c_ Solution:
 
         r.. "".j..(r..(ret))
 
-    ___ mapping(self, a):
+    ___ mapping  a):
         dic = {
             "A": 0,
             "C": 1,

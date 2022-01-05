@@ -4,7 +4,7 @@ Created on Oct 21, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ kEmptySlots(self, flowers, k):
+    ___ kEmptySlots  flowers, k):
         """
         :type flowers: List[int]
         :type k: int
@@ -20,7 +20,7 @@ c_ Solution(object):
         ___ i __ r..(n):
             __ right >= n: break
             __ days[i] __ days[right] a.. i __ right:
-                res = m..(res, max(days[left], days[right]))
+                res = m..(res, m..(days[left], days[right]))
             __ days[i] < days[left] o. days[i] < days[right]:
                 left = i
                 right = k+1+i

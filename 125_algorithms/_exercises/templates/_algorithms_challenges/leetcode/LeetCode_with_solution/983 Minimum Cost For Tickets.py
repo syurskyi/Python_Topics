@@ -48,7 +48,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ mincostTickets(self, days: List[i..], costs: List[i..]) __ i..:
+    ___ mincostTickets  days: List[i..], costs: List[i..]) __ i..:
         """
         Iterate backward.
 
@@ -76,7 +76,7 @@ c_ Solution:
 
         r.. F[1]
 
-    ___ mincostTickets_error(self, days: List[i..], costs: List[i..]) __ i..:
+    ___ mincostTickets_error  days: List[i..], costs: List[i..]) __ i..:
         """
         Iterate backward on days
         O(30 * |days|)
@@ -100,7 +100,7 @@ c_ Solution:
                     break
         r.. F[0]
 
-    ___ mincostTickets_error(self, days: List[i..], costs: List[i..]) __ i..:
+    ___ mincostTickets_error  days: List[i..], costs: List[i..]) __ i..:
         """
         dp
         Let F[i] be the min cost at day i, covering all trips from day 1 to i

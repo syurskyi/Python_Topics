@@ -11,7 +11,7 @@ c_ TreeNode(object):
         right = N..
 
 c_ Solution(object):
-    ___ isSubtree(self, s, t):
+    ___ isSubtree  s, t):
         """
         :type s: TreeNode
         :type t: TreeNode
@@ -25,7 +25,7 @@ c_ Solution(object):
             isSubtree(s.left, t) o.\
             isSubtree(s.right, t)
     
-    ___ isSameTree(self, s, t):
+    ___ isSameTree  s, t):
         __ n.. s a.. n.. t:
             r.. T..
         __ n.. s o. n.. t:

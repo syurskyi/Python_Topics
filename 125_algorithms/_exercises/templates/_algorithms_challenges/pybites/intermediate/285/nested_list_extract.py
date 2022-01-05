@@ -23,11 +23,11 @@ ___ extract_ipv4(data):
             result.extend(extract_ipv4(l))
         ____ l __ 'ip':
             print(data)
-            try:
+            ___
                 result_1 = is_valid_ip(data[1][0])
                 result_2 = is_valid_number(data[3][0])
                 print(result_1,result_2)
-            except:
+            ______:
                 _____
             ____:
                 

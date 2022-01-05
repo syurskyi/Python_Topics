@@ -17,7 +17,7 @@ c_ TreeNode:
         right = N..
 
 c_ Solution:
-    ___ isValidBST(self, root):
+    ___ isValidBST  root):
         """
         Google Phone Interview Question, 20 Sep 2013
         recursive dfs
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ get_largest(self, root):
+    ___ get_largest  root):
         """
         possible dp
         :param root: TreeNode
@@ -54,7 +54,7 @@ c_ Solution:
             r.. root.val
         r.. get_largest(root.right)
 
-    ___ get_smallest(self, root):
+    ___ get_smallest  root):
         """
         possible dp
         :param root: TreeNode

@@ -10,7 +10,7 @@ c_ Point(object):
         y = b
 
 c_ Solution(object):
-    ___ outerTrees(self, points):
+    ___ outerTrees  points):
         """
         :type points: List[Point]
         :rtype: List[Point]
@@ -48,14 +48,14 @@ c_ Solution(object):
             curInd = nextInd
         r.. l..(res)
     
-    ___ crossProductLength(self, pointA, pointB, pointC):
+    ___ crossProductLength  pointA, pointB, pointC):
         baX = pointA.x-pointB.x
         baY = pointA.y-pointB.y
         bcX = pointC.x-pointB.x
         bcY = pointC.y-pointB.y
         r.. baX*bcY-baY*bcX
     
-    ___ distance(self, p1, p2):
+    ___ distance  p1, p2):
         r.. (p1.x-p2.x)**2+(p1.y-p2.y)**2
     
     ___ test

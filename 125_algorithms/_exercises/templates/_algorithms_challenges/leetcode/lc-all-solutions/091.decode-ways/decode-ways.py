@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ numDecodings(self, s):
+  ___ numDecodings  s):
     """
     :type s: str
     :rtype: int

@@ -6,7 +6,7 @@ alphabet on only one row's of American keyboard like the image below.
 
 
 c_ Solution:
-    ___ findWords(self, words):
+    ___ findWords  words):
         """
         :type words: List[str]
         :rtype: List[str]

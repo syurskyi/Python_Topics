@@ -4,7 +4,7 @@ Created on Sep 3, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ distributeCandies(self, candies):
+    ___ distributeCandies  candies):
         """
         :type candies: List[int]
         :rtype: int

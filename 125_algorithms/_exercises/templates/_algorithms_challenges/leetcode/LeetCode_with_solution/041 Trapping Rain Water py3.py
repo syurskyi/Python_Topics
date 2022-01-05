@@ -13,7 +13,7 @@ Output: 6
 """
 
 c_ Solution:
-    ___ trap(self, height: List[i..]) __ i..:
+    ___ trap  height: List[i..]) __ i..:
         """
         At each position, the water is determined by the left and right max
 
@@ -24,13 +24,13 @@ c_ Solution:
         lefts = [0 ___ _ __ r..(n+1)]
         rights = [0 ___ _ __ r..(n+1)]
         ___ i __ r..(1, n+1):  # i, index of lefts
-            lefts[i] = max(lefts[i-1], height[i-1])
+            lefts[i] = m..(lefts[i-1], height[i-1])
         ___ i __ r..(n-1, -1, -1):
-            rights[i] = max(rights[i+1], height[i])
+            rights[i] = m..(rights[i+1], height[i])
 
         ret = 0
         ___ i __ r..(n):
-            ret += max(
+            ret += m..(
                 0,
                 m..(lefts[i], rights[i+1]) - height[i]
             )

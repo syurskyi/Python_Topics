@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ coinChange(self, coins, amount):
+  ___ coinChange  coins, amount):
     """
     :type coins: List[int]
     :type amount: int

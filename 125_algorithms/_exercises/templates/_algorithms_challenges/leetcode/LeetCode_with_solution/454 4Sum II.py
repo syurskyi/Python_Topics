@@ -27,7 +27,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ fourSumCount(self, A, B, C, D):
+    ___ fourSumCount  A, B, C, D):
         """
         Brute force with map: O(N^3)
 

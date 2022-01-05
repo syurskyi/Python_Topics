@@ -17,7 +17,7 @@ c_ MagicDictionary(object):
         """
         root = TreeNode(N..)
 
-    ___ buildDict(self, d..):
+    ___ buildDict  d..):
         """
         Build a dictionary through a list of words
         :type dict: List[str]
@@ -33,7 +33,7 @@ c_ MagicDictionary(object):
                 node = node.children[c]
             node.isLeaf = T..
 
-    ___ s..(self, word):
+    ___ s..  word):
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         :type word: str
@@ -41,7 +41,7 @@ c_ MagicDictionary(object):
         """
         r.. helper(root, word, 0, F..)
     
-    ___ helper(self, node, word, ind, diffFlag):
+    ___ helper  node, word, ind, diffFlag):
         __ n.. node: r.. F..
         __ ind __ l..(word):
             __ node.isLeaf a.. diffFlag:

@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ judgeSquareSum(self, c):
+  ___ judgeSquareSum  c):
     """
     :type c: int
     :rtype: bool

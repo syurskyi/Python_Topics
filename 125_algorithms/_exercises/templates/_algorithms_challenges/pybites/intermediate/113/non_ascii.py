@@ -1,5 +1,5 @@
 ___ non_ascii(word):
-    r.. any(ord(i)>127 ___ i __ word)
+    r.. any(o..(i)>127 ___ i __ word)
 
 ___ extract_non_ascii_words(text):
     """Filter a text returning a list of non-ascii words"""

@@ -4,7 +4,7 @@ Created on May 5, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ maxProfitAssignment(self, difficulty, profit, worker):
+    ___ maxProfitAssignment  difficulty, profit, worker):
         """
         :type difficulty: List[int]
         :type profit: List[int]
@@ -15,7 +15,7 @@ c_ Solution(object):
         arr.s..()
         p0 = 0
         ___ i __ r..(l..(arr)):
-            p0 = max(p0, arr[i][1])
+            p0 = m..(p0, arr[i][1])
             arr[i][1] = p0
         res = 0
         worker.s..()
@@ -23,7 +23,7 @@ c_ Solution(object):
         maxProfit = 0
         ___ w __ worker:
             w.... i < l..(arr) a.. arr[i][0] <= w:
-                maxProfit = max(maxProfit, arr[i][1])
+                maxProfit = m..(maxProfit, arr[i][1])
                 i += 1
             res += maxProfit
         r.. res

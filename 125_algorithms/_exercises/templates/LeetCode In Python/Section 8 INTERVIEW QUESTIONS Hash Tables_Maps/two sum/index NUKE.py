@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ twoSum(self, nums: List[i..], target: i..) __ List[i..]:
+    ___ twoSum  nums: List[i..], target: i..) __ List[i..]:
         m  {}
         n  l..(nums)
         ___ i __ r..(0,n):

@@ -20,12 +20,12 @@ c_ Node(object):
         origin = origin
         q = q
 
-    ___ __cmp__(self, other):
+    ___ __cmp__  other):
         r.. q[0] - other.q[0]
 
 
 c_ Solution(object):
-    ___ nthUglyNumber(self, n):
+    ___ nthUglyNumber  n):
         """
         Prime factor: 2, 3, 5
         Heap

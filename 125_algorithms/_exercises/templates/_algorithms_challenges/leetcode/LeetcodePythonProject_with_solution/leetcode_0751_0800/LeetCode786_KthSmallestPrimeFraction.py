@@ -4,7 +4,7 @@ Created on Apr 10, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ kthSmallestPrimeFraction(self, A, K):
+    ___ kthSmallestPrimeFraction  A, K):
         """
         :type A: List[int]
         :type K: int

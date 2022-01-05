@@ -5,7 +5,7 @@ Created on Mar 19, 2017
 '''
 
 c_ Solution(object):
-    ___ isValidSerialization(self, preorder):
+    ___ isValidSerialization  preorder):
         __ n.. preorder: r.. F..
         nodes = preorder.s..(',')
         stack    # list

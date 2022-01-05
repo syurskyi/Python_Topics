@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ lengthLongestPath(self, input):
+  ___ lengthLongestPath  input):
     """
     :type input: str
     :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(object):
           curLen += i - start
           stack.a..((input[start:i], curLen + 1, level))
         ____ state __ dfa["file"]:
-          maxLen = max(maxLen, curLen + (i - start))
+          maxLen = m..(maxLen, curLen + (i - start))
         ____:
           r.. -1
         state = dfa["escapeCMD"]
@@ -45,7 +45,7 @@ c_ Solution(object):
           state = dfa["char"]
         ____ i __ l..(input) - 1:
           curLen = 0 __ l..(stack) __ 0 ____ stack[-1][1]
-          maxLen = max(maxLen, curLen + (i - start) + 1)
+          maxLen = m..(maxLen, curLen + (i - start) + 1)
 
       # print 'state:', state
       # print 'stack:', stack

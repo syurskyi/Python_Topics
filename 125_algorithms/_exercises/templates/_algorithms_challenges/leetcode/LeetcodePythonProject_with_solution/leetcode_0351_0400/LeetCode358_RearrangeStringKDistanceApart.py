@@ -7,7 +7,7 @@ Created on Mar 23, 2017
 _______ heapq
 
 c_ Solution(object):
-    ___ rearrangeString(self, s, k):
+    ___ rearrangeString  s, k):
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1

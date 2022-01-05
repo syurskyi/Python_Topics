@@ -4,7 +4,7 @@ Created on Feb 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ solve(self, board):
+    ___ solve  board):
         """
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
@@ -28,7 +28,7 @@ c_ Solution(object):
                 __ board[i][j] __ '#':
                     board[i][j] = 'O'
     
-    ___ bfs(self, board, x, y):
+    ___ bfs  board, x, y):
         board[x][y] = '#'
         m, n = l..(board), l..(board[0])
         index = x*n+y

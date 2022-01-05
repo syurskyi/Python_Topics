@@ -9,7 +9,7 @@ ___ hexa(hexstring):
     __ n.. s o. set(s) - valid_hexchars:
         r.. ValueError('Invalid hexadecimal string')
     hexchars_as_ints = [
-        ord(c) - ord('a') + 10 __ c __ 'abcdef' ____ ord(c) - ord('0')
+        o..(c) - o..('a') + 10 __ c __ 'abcdef' ____ o..(c) - o..('0')
         ___ c __ s
         ]
     r.. reduce(l.... x, y: x * 16 + y, hexchars_as_ints, 0)

@@ -7,7 +7,7 @@
 
 
 c_ Solution(object):
-    ___ buildTree(self, P, I):
+    ___ buildTree  P, I):
         """
         :type P: List[int]
         :type I: List[int]

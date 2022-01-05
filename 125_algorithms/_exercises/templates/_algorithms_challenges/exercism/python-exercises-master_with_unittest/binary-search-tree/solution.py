@@ -15,7 +15,7 @@ c_ BinarySearchTree(object):
         ___ data __ tree_data:
             add(data)
 
-    ___ add(self, data):
+    ___ add  data):
         __ root __ N..
             root = TreeNode(data, N.., N..)
             r..
@@ -36,7 +36,7 @@ c_ BinarySearchTree(object):
                     cur_node.right = TreeNode(data, N.., N..)
                     inserted = T..
 
-    ___ _inorder_traverse(self, node, elements):
+    ___ _inorder_traverse  node, elements):
         __ node __ n.. N..
             _inorder_traverse(node.left, elements)
             elements.a..(node.data)

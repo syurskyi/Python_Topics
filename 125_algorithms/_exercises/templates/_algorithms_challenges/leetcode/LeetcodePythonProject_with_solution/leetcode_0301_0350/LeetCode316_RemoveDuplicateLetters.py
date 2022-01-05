@@ -5,21 +5,21 @@ Created on Mar 16, 2017
 '''
 
 c_ Solution(object):
-    ___ removeDuplicateLetters(self, s):
+    ___ removeDuplicateLetters  s):
         __ n.. s: r.. ''
         cnt = [0]*26
         pos = 0
         ___ c __ s:
-            cnt[ord(c)-ord('a')] += 1
+            cnt[o..(c)-o..('a')] += 1
         ___ i, c __ e..(s):
             __ s[i] < s[pos]:
                 pos = i
-            cnt[ord(c)-ord('a')] -= 1
-            __ cnt[ord(c)-ord('a')] __ 0:
+            cnt[o..(c)-o..('a')] -= 1
+            __ cnt[o..(c)-o..('a')] __ 0:
                 break
         r.. s[pos]+removeDuplicateLetters(s[pos+1:].r..(s[pos], ''))
     
-    ___ removeDuplicateLetters_another(self, s):
+    ___ removeDuplicateLetters_another  s):
         __ n.. s: r.. ''
         lastPosMap    # dict
         ___ i, c __ e..(s):
@@ -28,7 +28,7 @@ c_ Solution(object):
         res = ['a']*length
         begin, end = 0, m..(lastPosMap.values())
         ___ i __ r..(length):
-            minChar = chr(ord('z')+1)
+            minChar = chr(o..('z')+1)
             ___ j __ r..(begin, end+1):
                 __ s[j] __ lastPosMap a.. s[j] < minChar:
                     minChar = s[j]

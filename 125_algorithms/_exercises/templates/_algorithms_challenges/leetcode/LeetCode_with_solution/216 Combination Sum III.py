@@ -25,7 +25,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ combinationSum3(self, k, n):
+    ___ combinationSum3  k, n):
         """
         Backtracking
 
@@ -37,7 +37,7 @@ c_ Solution:
         dfs(k, n, [], ret)
         r.. ret
 
-    ___ dfs(self, remain_k, remain_n, cur, ret):
+    ___ dfs  remain_k, remain_n, cur, ret):
         __ remain_k __ 0 a.. remain_n __ 0:
             ret.a..(l..(cur))
             r..

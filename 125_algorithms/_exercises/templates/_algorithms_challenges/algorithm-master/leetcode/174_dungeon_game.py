@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ calculateMinimumHP(self, G):
+    ___ calculateMinimumHP  G):
         """
         :type G: List[List[int]]
         :rtype: int

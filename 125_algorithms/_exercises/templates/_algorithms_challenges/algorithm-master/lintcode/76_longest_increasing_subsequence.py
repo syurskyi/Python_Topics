@@ -2,7 +2,7 @@
 Binary Searching
 """
 c_ Solution:
-    ___ longestIncreasingSubsequence(self, A):
+    ___ longestIncreasingSubsequence  A):
         """
         :type A: List[int]
         :rtype: int
@@ -36,7 +36,7 @@ c_ Solution:
 
         r.. 0
 
-    ___ binary_search(self, P, a):
+    ___ binary_search  P, a):
         left, right = 0, l..(P) - 1
 
         w.... left + 1 < right:
@@ -53,7 +53,7 @@ c_ Solution:
 DP + Print Paths
 """
 c_ Solution:
-    ___ longestIncreasingSubsequence(self, A):
+    ___ longestIncreasingSubsequence  A):
         """
         :type A: List[int]
         :rtype: int

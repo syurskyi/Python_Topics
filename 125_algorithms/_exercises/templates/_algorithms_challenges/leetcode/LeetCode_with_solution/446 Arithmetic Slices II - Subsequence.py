@@ -10,7 +10,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ numberOfArithmeticSlices(self, A):
+    ___ numberOfArithmeticSlices  A):
         """
         Subsequence, count the number, looks like dp
         use defaultdict for easy dp array construction
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ numberOfArithmeticSlices_error(self, A):
+    ___ numberOfArithmeticSlices_error  A):
         """
         :type A: List[int]
         :rtype: int

@@ -4,7 +4,7 @@ Created on Sep 10, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ kInversePairs(self, n, k):
+    ___ kInversePairs  n, k):
         """
         :type n: int
         :type k: int
@@ -27,7 +27,7 @@ c_ Solution(object):
                 dp[i][j] = (dp[i][j]+mod)%mod
         r.. dp[-1][-1]
     
-    ___ kInversePairs_another(self, n, k):
+    ___ kInversePairs_another  n, k):
         mod = 10**9+7
         dp = [0]+[1]*(k+1)
         ___ i __ r..(2, n+1):

@@ -5,7 +5,7 @@ Created on Jan 25, 2017
 '''
 
 c_ Solution(object):
-    ___ largestRectangleArea(self, heights):
+    ___ largestRectangleArea  heights):
         """
         :type heights: List[int]
         :rtype: int
@@ -22,11 +22,11 @@ c_ Solution(object):
             ____:
                 h = heights[stack.pop()]
                 w = i __ n.. stack ____ (i-stack[-1]-1)
-                area = max(w*h, area)
+                area = m..(w*h, area)
         w.... stack:
             h = heights[stack.pop()]
             w = i __ n.. stack ____ (i-stack[-1]-1)
-            area = max(area, w*h)
+            area = m..(area, w*h)
         r.. area
     
     ___ test

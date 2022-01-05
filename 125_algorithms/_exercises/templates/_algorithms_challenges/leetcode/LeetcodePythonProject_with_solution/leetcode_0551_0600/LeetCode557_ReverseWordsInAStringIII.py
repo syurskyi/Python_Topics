@@ -5,7 +5,7 @@ Created on Aug 28, 2017
 '''
 
 c_ Solution(object):
-    ___ reverseWords(self, s):
+    ___ reverseWords  s):
         """
         :type s: str
         :rtype: str
@@ -21,7 +21,7 @@ c_ Solution(object):
         res += tmpRes
         r.. res
     
-    ___ reverse(self, s, i, j):
+    ___ reverse  s, i, j):
         res = ''
         w.... i <= j:
             res += s[j]

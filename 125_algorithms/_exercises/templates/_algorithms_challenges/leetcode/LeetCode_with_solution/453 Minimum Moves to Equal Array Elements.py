@@ -7,7 +7,7 @@ elements by 1.
 
 
 c_ Solution:
-    ___ minMoves(self, nums):
+    ___ minMoves  nums):
         """
         List out, find the pattern
         for every operation, the max number does not change, then bring the min

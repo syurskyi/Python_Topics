@@ -4,7 +4,7 @@ Created on Oct 23, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ maxSumOfThreeSubarrays(self, nums, k):
+    ___ maxSumOfThreeSubarrays  nums, k):
         """
         :type nums: List[int]
         :type k: int

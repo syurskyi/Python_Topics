@@ -11,13 +11,13 @@ ___ translate_cds(cds: s.., translation_table: s..) __ s..:
 
     # TODO: Put your code here
     #print(f'{cds}\n{translation_table}')
-    try:
+    ___
         clean_cds = ''.j..([char ___ char __ cds __ char.isalpha()])
         r.. s..(Seq(clean_cds)
                 .u..
                 .translate(table=translation_table, to_stop=T.., cds=T..)
                 )
-    except TranslationError:
+    ______ TranslationError:
         r.. TranslationError
 
 #print(translate_cds("ATGTAATAA", "Standard"))

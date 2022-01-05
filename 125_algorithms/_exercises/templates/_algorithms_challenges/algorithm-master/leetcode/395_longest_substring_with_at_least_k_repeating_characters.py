@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestSubstring(self, s, k):
+    ___ longestSubstring  s, k):
         """
         :type s: str
         :type k: int

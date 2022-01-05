@@ -5,7 +5,7 @@ Created on Mar 4, 2017
 '''
 
 c_ Solution(object):
-    ___ alienOrder(self, words):
+    ___ alienOrder  words):
         """
         :type words: List[str]
         :rtype: str

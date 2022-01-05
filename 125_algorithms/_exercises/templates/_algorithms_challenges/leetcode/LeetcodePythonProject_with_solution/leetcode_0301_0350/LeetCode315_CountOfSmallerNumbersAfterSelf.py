@@ -18,7 +18,7 @@ c_ TreeNode(object):
         r.. __str__()
 
 c_ Solution(object):
-    ___ countSmaller(self, nums):
+    ___ countSmaller  nums):
         __ n.. nums: r.. []
         root = TreeNode(nums[-1])
         result = [0]
@@ -26,7 +26,7 @@ c_ Solution(object):
             result.insert(0, getVal(root, nums[i], 0))
         r.. result, root
     
-    ___ getVal(self, root, val, num):
+    ___ getVal  root, val, num):
         __ root.val >= val:
             root.num += 1
             __ n.. root.left:

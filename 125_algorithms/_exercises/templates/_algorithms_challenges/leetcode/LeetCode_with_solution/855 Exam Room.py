@@ -77,7 +77,7 @@ c_ ExamRoom:
         bisect.insort(idxes, ret_idx)
         r.. ret_idx
 
-    ___ leave(self, p: i..) __ N..
+    ___ leave  p: i..) __ N..
         idxes.remove(p)
 
 

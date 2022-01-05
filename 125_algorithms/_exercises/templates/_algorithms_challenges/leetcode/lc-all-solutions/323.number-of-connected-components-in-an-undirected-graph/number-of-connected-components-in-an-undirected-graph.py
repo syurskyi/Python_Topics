@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ countComponents(self, n, edges):
+  ___ countComponents  n, edges):
     ___ find(x):
       __ parent[x] != x:
         parent[x] = find(parent[x])

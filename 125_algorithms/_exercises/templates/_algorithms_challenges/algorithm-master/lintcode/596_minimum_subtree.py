@@ -15,11 +15,11 @@ c_ Solution:
     @param: root: the root of binary tree
     @return: the root of the minimum subtree
     """
-    ___ findSubtree(self, root):
+    ___ findSubtree  root):
         _traversal(root)
         r.. node
 
-    ___ _traversal(self, node):
+    ___ _traversal  node):
         __ n.. node:
             r.. 0
 

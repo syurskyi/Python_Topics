@@ -4,7 +4,7 @@ Created on Mar 21, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ networkDelayTime(self, times, N, K):
+    ___ networkDelayTime  times, N, K):
         """
         :type times: List[List[int]]
         :type N: int

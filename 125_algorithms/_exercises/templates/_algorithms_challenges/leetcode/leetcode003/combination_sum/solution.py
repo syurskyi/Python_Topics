@@ -2,14 +2,14 @@ c_ Solution:
     # @param candidates, a list of integers
     # @param target, integer
     # @return a list of lists of integers
-    ___ combinationSum(self, candidates, target):
+    ___ combinationSum  candidates, target):
         res    # list
         cand    # list
         candidates.s..()
         combination_sum(candidates, cand, target, res)
         r.. res
 
-    ___ combination_sum(self, candidates, cand, target, res):
+    ___ combination_sum  candidates, cand, target, res):
         __ target < 0:
             r..
         ____ target __ 0:

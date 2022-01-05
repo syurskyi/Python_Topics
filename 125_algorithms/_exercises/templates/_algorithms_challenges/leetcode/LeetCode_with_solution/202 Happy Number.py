@@ -17,7 +17,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ isHappy(self, n):
+    ___ isHappy  n):
         """
         Start with several simple cases and find the pattern.
 

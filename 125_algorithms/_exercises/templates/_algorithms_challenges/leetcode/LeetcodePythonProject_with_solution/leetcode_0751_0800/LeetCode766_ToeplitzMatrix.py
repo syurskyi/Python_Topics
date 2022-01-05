@@ -4,7 +4,7 @@ Created on Apr 3, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ isToeplitzMatrix(self, matrix):
+    ___ isToeplitzMatrix  matrix):
         """
         :type matrix: List[List[int]]
         :rtype: bool

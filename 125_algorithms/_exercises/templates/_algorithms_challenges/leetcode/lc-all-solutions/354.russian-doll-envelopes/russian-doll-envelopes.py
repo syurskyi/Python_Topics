@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ maxEnvelopes(self, envelopes):
+  ___ maxEnvelopes  envelopes):
     """
     :type envelopes: List[List[int]]
     :rtype: int

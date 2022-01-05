@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ findMinDifference(self, timePoints):
+  ___ findMinDifference  timePoints):
     """
     :type timePoints: List[str]
     :rtype: int

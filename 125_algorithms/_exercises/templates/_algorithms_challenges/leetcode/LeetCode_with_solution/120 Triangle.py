@@ -16,7 +16,7 @@ Bonus point if you are able to do this using only O(n) extra space, where n is t
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ minimumTotal(self, triangle):
+    ___ minimumTotal  triangle):
         """
         bottom-up dp
         :param triangle: a list of lists of integers
@@ -38,5 +38,5 @@ c_ Solution:
         r.. dp[0][0]
 
 
-__ __name____"__main__":
+__ _____ __ ____
     Solution().minimumTotal([[-1], [2, 3], [1, -1, -3]])

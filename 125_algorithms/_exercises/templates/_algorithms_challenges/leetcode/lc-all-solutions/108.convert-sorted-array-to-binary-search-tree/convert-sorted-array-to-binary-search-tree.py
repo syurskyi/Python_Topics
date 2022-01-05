@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Solution(object):
-  ___ sortedArrayToBST(self, nums):
+  ___ sortedArrayToBST  nums):
     """
     :type nums: List[int]
     :rtype: TreeNode

@@ -8,7 +8,7 @@ the sum of the three integers. You may assume that each input would have exactly
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ threeSumClosest(self, num, target):
+    ___ threeSumClosest  num, target):
         """
         Three pointers scanning algorithm
         Similar to 014 3Sum
@@ -37,6 +37,6 @@ c_ Solution:
                     j += 1
         r.. min_summation
 
-__ __name____"__main__":
+__ _____ __ ____
     print Solution().threeSumClosest([1, 1, 1, 1], 0)
 

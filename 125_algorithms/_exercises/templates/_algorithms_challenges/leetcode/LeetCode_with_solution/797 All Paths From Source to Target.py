@@ -25,14 +25,14 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ allPathsSourceTarget(self, graph: List[List[i..]]) __ List[List[i..]]:
+    ___ allPathsSourceTarget  graph: List[List[i..]]) __ List[List[i..]]:
         G = graph
         ret    # list
         visited = [F.. ___ _ __ G]
         dfs(G, 0, l..(G) - 1, [0], visited, ret)
         r.. ret
 
-    ___ dfs(self, G, cur, d, cur_path, visited, ret):
+    ___ dfs  G, cur, d, cur_path, visited, ret):
         __ cur __ d:
             ret.a..(l..(cur_path))
             r..

@@ -18,7 +18,7 @@ ___ search_event_loop
     s..  'ONCE_THROUGH_LOOP'
 
     w___ s.. ! 'x':
-        try:
+        ___
             s..  input('Movie search text (x to exit): ')
             __ s.. ! 'x':
                 results  movie_svc.find_movies(s..)
@@ -28,11 +28,11 @@ ___ search_event_loop
                         r.year, r.title
                     ))
                 print()
-        except ValueError:
+        ______ V..
             print("Error: Search text is required")
-        except requests.exceptions.ConnectionError:
+        ______ requests.exceptions.ConnectionError:
             print("Error: Your network is down.")
-        except Exception __ x:
+        ______ Exception __ x:
             print("Unexpected error. Details: {}".f..(x))
 
     print('exiting...')

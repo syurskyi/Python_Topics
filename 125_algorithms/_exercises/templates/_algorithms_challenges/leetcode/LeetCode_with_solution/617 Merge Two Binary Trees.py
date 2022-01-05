@@ -38,7 +38,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ mergeTrees(self, t1: TreeNode, t2: TreeNode) __ TreeNode:
+    ___ mergeTrees  t1: TreeNode, t2: TreeNode) __ TreeNode:
         __ n.. t1 a.. n.. t2:
             r..
 

@@ -5,7 +5,7 @@ Created on May 10, 2017
 '''
 
 c_ Solution(object):
-    ___ findPoisonedDurationAnother(self, timeSeries, duration):
+    ___ findPoisonedDurationAnother  timeSeries, duration):
         """
         :type timeSeries: List[int]
         :type duration: int
@@ -18,7 +18,7 @@ c_ Solution(object):
         res += duration
         r.. res
     
-    ___ findPoisonedDuration(self, timeSeries, duration):
+    ___ findPoisonedDuration  timeSeries, duration):
         """
         :type timeSeries: List[int]
         :type duration: int
@@ -31,7 +31,7 @@ c_ Solution(object):
             __ maxTime < time:
                 result += maxTime - prev
                 prev = time
-            maxTime = max(maxTime, time+duration)
+            maxTime = m..(maxTime, time+duration)
         result += maxTime-prev
         r.. result
     

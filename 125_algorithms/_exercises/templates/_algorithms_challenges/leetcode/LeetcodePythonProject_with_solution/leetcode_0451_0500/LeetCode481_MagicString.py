@@ -5,7 +5,7 @@ Created on May 3, 2017
 '''
 
 c_ Solution(object):
-    ___ magicalString(self, n):
+    ___ magicalString  n):
         """
         :type n: int
         :rtype: int

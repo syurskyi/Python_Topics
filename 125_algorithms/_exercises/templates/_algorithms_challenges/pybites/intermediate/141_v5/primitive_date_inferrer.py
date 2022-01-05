@@ -42,10 +42,10 @@ ___ _maybe_DateFormats(date_str):
     d_parse_formats = DateFormat.get_d_parse_formats()
     maybe_formats    # list
     ___ idx, d_parse_fmt __ e..(d_parse_formats):
-        try:
+        ___
             _parsed_date = d__.strptime(date_str, d_parse_fmt)  # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx))
-        except ValueError:
+        ______ V..
             p..
     __ l..(maybe_formats) __ 0:
         maybe_formats.a..(DateFormat.NONPARSABLE)
@@ -69,9 +69,9 @@ ___ get_dates(dates):
     fmt = DateFormat.get_d_parse_formats(fmts[0][0].value)
 
     ___ dt __ dates:
-        try:
+        ___
             result.a..(d__.strptime(dt, fmt).strftime('%Y-%m-%d'))
-        except ValueError:
+        ______ V..
             result.a..('Invalid')
 
     r.. result

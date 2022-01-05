@@ -36,7 +36,7 @@ ___ contains_fast(sequence: Set[i..], num: i..) __ bool:
 
 @timing
 ___ ordered_list_max(sequence: List[i..]) __ i..:
-    r.. max(sequence)
+    r.. m..(sequence)
 
 
 @timing

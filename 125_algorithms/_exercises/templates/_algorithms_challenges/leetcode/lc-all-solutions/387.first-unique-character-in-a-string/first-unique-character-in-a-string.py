@@ -1,15 +1,15 @@
 c_ Solution(object):
-  ___ firstUniqChar(self, s):
+  ___ firstUniqChar  s):
     """
     :type s: str
     :rtype: int
     """
     letters = [0] * 26
     ___ c __ s:
-      ci = ord(c) - ord('a')
+      ci = o..(c) - o..('a')
       letters[ci] += 1
     ___ i __ r..(0, l..(s)):
-      ci = ord(s[i]) - ord('a')
+      ci = o..(s[i]) - o..('a')
       __ letters[ci] __ 1:
         r.. i
     r.. -1

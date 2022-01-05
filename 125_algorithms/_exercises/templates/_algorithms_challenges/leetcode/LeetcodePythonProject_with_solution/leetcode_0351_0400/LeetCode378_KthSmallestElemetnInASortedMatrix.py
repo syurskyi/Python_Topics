@@ -5,7 +5,7 @@ Created on Apr 1, 2017
 '''
 
 c_ Solution(object):
-    ___ kthSmallest(self, matrix, k):
+    ___ kthSmallest  matrix, k):
         lower, upper = matrix[0][0], matrix[-1][-1]
         w.... lower < upper:
             mid = (lower+upper)//2

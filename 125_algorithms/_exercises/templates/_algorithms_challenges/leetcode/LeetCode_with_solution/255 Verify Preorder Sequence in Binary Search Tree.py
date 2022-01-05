@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ verifyPreorder(self, preorder):
+    ___ verifyPreorder  preorder):
         """
         * Draw a valid BST, and swap a pair of nodes to get an invalid BST.
         * Get the preorder traversal of the 2 BSTs and compare and contrast them.

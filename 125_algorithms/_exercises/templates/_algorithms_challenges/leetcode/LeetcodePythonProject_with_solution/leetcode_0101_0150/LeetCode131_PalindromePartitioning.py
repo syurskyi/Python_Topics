@@ -4,7 +4,7 @@ Created on Feb 8, 2017
 @author: MT
 '''
 c_ Solution(object):
-    ___ partition(self, s):
+    ___ partition  s):
         """
         :type s: str
         :rtype: List[List[str]]
@@ -14,7 +14,7 @@ c_ Solution(object):
         helper(s, 0, [], result)
         r.. result
     
-    ___ helper(self, s, startInd, elem, result):
+    ___ helper  s, startInd, elem, result):
         __ startInd __ l..(s):
             result.a..(l..(elem))
             r..
@@ -24,7 +24,7 @@ c_ Solution(object):
                 helper(s, i+1, elem, result)
                 elem.pop()
     
-    ___ isPalindrome(self, s):
+    ___ isPalindrome  s):
         __ n.. s: r.. F..
         start, end = 0, l..(s)-1
         w.... start<=end:

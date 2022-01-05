@@ -3,7 +3,7 @@ c_ Solution(object):
   # Actually, I don't think this is greedy
   # We always place different tasks in a cycle which will minimize steps
   # If not different tasks can be placed in a cycle, place an `idle`.
-  ___ _leastInterval(self, tasks, n):
+  ___ _leastInterval  tasks, n):
     """
     :type tasks: List[str]
     :type n: int
@@ -35,11 +35,11 @@ c_ Solution(object):
   # less frequent tasks can be always placed in such cycle
   # and it won't cause any conflicts with requirement since even most frequent can be settle
   # finally, return max(# of task, total counted number)
-  ___ leastInterval(self, tasks, n):
+  ___ leastInterval  tasks, n):
     d = c...Counter(tasks)
     counts = d.v..
-    longest = max(counts)
+    longest = m..(counts)
     ans = (longest - 1) * (n + 1)
     ___ count __ counts:
       ans += count __ longest a.. 1 o. 0
-    r.. max(l..(tasks), ans)
+    r.. m..(l..(tasks), ans)

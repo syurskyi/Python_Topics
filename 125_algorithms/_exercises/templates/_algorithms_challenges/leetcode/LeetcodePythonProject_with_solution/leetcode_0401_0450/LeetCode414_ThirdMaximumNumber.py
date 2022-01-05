@@ -5,7 +5,7 @@ Created on Apr 11, 2017
 '''
 
 c_ Solution(object):
-    ___ thirdMax(self, nums):
+    ___ thirdMax  nums):
         first, second, third = float('-inf'), float('-inf'), float('-inf')
         ___ num __ nums:
             __ num > first:

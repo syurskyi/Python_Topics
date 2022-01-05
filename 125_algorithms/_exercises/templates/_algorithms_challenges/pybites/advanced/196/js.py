@@ -16,13 +16,13 @@ c_ JsObject(d..):
         super().__init__(kwargs)
     
 
-    ___ __getattr__(self,key):
+    ___ __getattr__ key):
         r.. self[key]
     
 
-    ___ __setattr__(self,name,value):
+    ___ __setattr__ name,value):
         self[name] = value
 
 
-    ___ __delattr__(self,name):
+    ___ __delattr__ name):
         del self[name]

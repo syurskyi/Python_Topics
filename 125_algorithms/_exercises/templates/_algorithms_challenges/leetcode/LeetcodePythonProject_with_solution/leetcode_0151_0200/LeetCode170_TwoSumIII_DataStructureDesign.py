@@ -11,7 +11,7 @@ c_ TwoSum(object):
         """
         elements    # dict
 
-    ___ add(self, number):
+    ___ add  number):
         """
         Add the number to an internal data structure.
         :rtype: nothing
@@ -21,7 +21,7 @@ c_ TwoSum(object):
         ____:
             elements[number] = 1
 
-    ___ find(self, value):
+    ___ find  value):
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         :type value: int

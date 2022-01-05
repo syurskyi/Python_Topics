@@ -20,7 +20,7 @@ c_ Solution(object):
         skip[1][9], skip[9][1] = 5, 5
         skip[3][7], skip[7][3] = 5, 5
 
-    ___ numberOfPatterns(self, m, n):
+    ___ numberOfPatterns  m, n):
         """
         NP - O(N!)
         dfs
@@ -38,7 +38,7 @@ c_ Solution(object):
             ___ remain __ xrange(m, n+1)
         )
 
-    ___ dfs(self, cur, visited, remain):
+    ___ dfs  cur, visited, remain):
         """
         Return the count of combination
         Optimization - memoization

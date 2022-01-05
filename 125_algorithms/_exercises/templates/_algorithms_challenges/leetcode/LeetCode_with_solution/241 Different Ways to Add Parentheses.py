@@ -27,7 +27,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ diffWaysToCompute(self, input):
+    ___ diffWaysToCompute  input):
         """
         Looping + Divide & Conquer
 
@@ -40,7 +40,7 @@ c_ Solution:
         ret = dfs_eval(nums, ops)
         r.. ret
 
-    ___ dfs_eval(self, nums, ops):
+    ___ dfs_eval  nums, ops):
         ret    # list
         __ n.. ops:
             ... l..(nums) __ 1
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ _eval(self, a, b, op):
+    ___ _eval  a, b, op):
         r.. {
             "+": l.... a, b: a+b,
             "-": l.... a, b: a-b,

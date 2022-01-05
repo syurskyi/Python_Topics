@@ -1,5 +1,5 @@
 c_ Solution(object):
-  ___ arrangeCoins(self, n):
+  ___ arrangeCoins  n):
     """
     :type n: int
     :rtype: int

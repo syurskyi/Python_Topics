@@ -4,7 +4,7 @@ Created on Oct 10, 2018
 @author: tongq
 '''
 c_ Solution(object):
-    ___ pushDominoes(self, dominoes):
+    ___ pushDominoes  dominoes):
         """
         :type dominoes: str
         :rtype: str
@@ -33,7 +33,7 @@ c_ Solution(object):
             setVals(arr, i, n-1)
         r.. ''.j..(arr)
     
-    ___ setVals(self, arr, i, j):
+    ___ setVals  arr, i, j):
         __ arr[i] __ arr[j]:
             ___ i0 __ r..(i+1, j):
                 arr[i0] = arr[i]

@@ -33,7 +33,7 @@ c_ OrderedList:
     ___ - ):
         _numbers    # list
 
-    ___ add(self, num):
+    ___ add  num):
         bisect.insort(_numbers, num)
 
     ___ __str__

@@ -57,13 +57,13 @@ c_ Tournament:
             alphabetic, key=l.... team: team.points, r.._T..
         r.. alphabetic_descending_points
 
-    ___ p..(self, results):
+    ___ p..  results):
         ___ result __ results.s..("\n"):
             team_a, team_b, outcome = result.s..(RESULT_SEPERATOR)
             maybe_initialize_teams(team_a, team_b)
             tally_outcome(team_a, team_b, outcome)
 
-    ___ tally_outcome(self, team_a, team_b, outcome):
+    ___ tally_outcome  team_a, team_b, outcome):
         __ outcome __ WIN:
             tally_win(team_a, team_b)
         __ outcome __ LOSS:
@@ -71,23 +71,23 @@ c_ Tournament:
         __ outcome __ DRAW:
             tally_draw(team_a, team_b)
 
-    ___ tally_win(self, winner, loser):
+    ___ tally_win  winner, loser):
         _teams[winner].tally_win()
         _teams[loser].tally_loss()
 
-    ___ tally_loss(self, loser, winner):
+    ___ tally_loss  loser, winner):
         _teams[loser].tally_loss()
         _teams[winner].tally_win()
 
-    ___ tally_draw(self, team_a, team_b):
+    ___ tally_draw  team_a, team_b):
         _teams[team_a].tally_draw()
         _teams[team_b].tally_draw()
 
-    ___ maybe_initialize_teams(self, team_a, team_b):
+    ___ maybe_initialize_teams  team_a, team_b):
         maybe_initialize_team(team_a)
         maybe_initialize_team(team_b)
 
-    ___ maybe_initialize_team(self, name):
+    ___ maybe_initialize_team  name):
         __ name n.. __ _teams:
             _teams[name] = Team(name)
 

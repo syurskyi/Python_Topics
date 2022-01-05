@@ -45,13 +45,13 @@ c_ NestedInteger(object):
         :rtype bool
         """
 
-    ___ add(self, elem):
+    ___ add  elem):
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
 
-    ___ setInteger(self, value):
+    ___ setInteger  value):
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
@@ -73,7 +73,7 @@ c_ NestedInteger(object):
 
 
 c_ Solution(object):
-    ___ deserialize(self, s):
+    ___ deserialize  s):
         """
         NestedInteger is a UnionType in functional programming jargon.
 

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maxArea(self, H):
+    ___ maxArea  H):
         """
         :type H: List[int]
         :rtype: int

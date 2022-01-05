@@ -5,7 +5,7 @@ Created on Feb 5, 2017
 '''
 
 c_ Solution(object):
-    ___ maxProfit(self, prices):
+    ___ maxProfit  prices):
         """
         :type prices: List[int]
         :rtype: int

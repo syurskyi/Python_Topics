@@ -8,7 +8,7 @@
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ minDepth(self, root):
+    ___ minDepth  root):
         __ root __ N..
             r.. 0
         __ root.left __ N.. a.. root.right __ N..
