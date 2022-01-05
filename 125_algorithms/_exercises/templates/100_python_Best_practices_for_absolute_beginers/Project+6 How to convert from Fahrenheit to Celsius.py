@@ -1,4 +1,4 @@
 x  i..(input("Insert a Fehrenheit value: "))
 
-x  round((x-32)*(5/9))
+x  r..((x-32)*(5/9))
 print(s..(x)+'C')

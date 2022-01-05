@@ -41,7 +41,7 @@ mac = """
 """
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ sysinfo
     """Make a module scope sysinfo object"""
     r.. sysinfo_scrape(output)

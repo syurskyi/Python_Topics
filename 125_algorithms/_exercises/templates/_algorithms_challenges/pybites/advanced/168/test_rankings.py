@@ -31,17 +31,17 @@ ___ _create_ranks(ninjas_ N..
     r.. ranking
 
 
-@p__.fixture
+@p__.f..
 ___ first_ninjas
     r.. FIRST_NINJAS
 
 
-@p__.fixture
+@p__.f..
 ___ second_ninjas
     r.. SECOND_NINJAS
 
 
-@p__.fixture()
+@p__.f..()
 ___ ninja_ranks
     ranking = Rankings()
     ___ ninja __ FIRST_NINJAS:
@@ -68,10 +68,10 @@ ___ test_ninja_class_and_membership(first_ninjas):
 
 ___ test_ninja_str_output(first_ninjas, capfd):
     print(first_ninjas[1])
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... output __ "[282] natalia"
     print(first_ninjas[3])
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... output __ "[263] maquina"
 
 

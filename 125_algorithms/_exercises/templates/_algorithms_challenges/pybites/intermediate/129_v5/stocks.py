@@ -33,7 +33,7 @@ ___ get_industry_cap(industry):
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
-    r.. round(s..([_cap_str_to_mln_float(co['cap']) ___ co __ data __ co['industry'] __ industry]), 3)
+    r.. r..(s..([_cap_str_to_mln_float(co['cap']) ___ co __ data __ co['industry'] __ industry]), 3)
 
 
 ___ get_stock_symbol_with_highest_cap

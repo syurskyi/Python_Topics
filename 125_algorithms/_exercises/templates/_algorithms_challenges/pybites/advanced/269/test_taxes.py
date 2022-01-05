@@ -13,19 +13,19 @@ bracket_2020 = [
 ]
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ taxes_2019
     income = 40_000
     r.. Taxes(income)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ taxes_2020_low
     income = 8_000
     r.. Taxes(income, bracket_2020)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ taxes_2020_over
     income = 1_000_000
     r.. Taxes(income, bracket_2020)
@@ -57,7 +57,7 @@ ___ test_low_income(taxes_2020_low):
 
 ___ test_report(taxes_2020_over, capfd):
     taxes_2020_over.report()
-    output = capfd.readouterr()[0].s...splitlines()
+    output = ?.r .. 0].s...splitlines()
     ... l..(output) __ 17
     ... "Summary Report" __ output[0]
     ... "Taxes Breakdown" __ output[6]

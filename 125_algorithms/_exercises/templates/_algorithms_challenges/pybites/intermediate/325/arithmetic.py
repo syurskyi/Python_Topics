@@ -18,7 +18,7 @@ ___ calc_sums(values: s.. = VALUES) __ Generator[s.., N.., N..]:
         __ previous < 0.1 a.. current < 0.1:
             total = previous + current
         ____:
-            total = round(previous, 2) + round(current, 2)
+            total = r..(previous, 2) + r..(current, 2)
 
         y.. f"The sum of {values_list[i -1]} and {values_list[i]}, rounded to two decimal places, is {total:.2f}."
 

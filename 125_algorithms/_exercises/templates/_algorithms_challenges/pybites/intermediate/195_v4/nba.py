@@ -78,7 +78,7 @@ ___ avg_years_active_players_stanford
     average = t..(cur.execute('''SELECT AVG(CAST(active as numeric))
                                  from players
                                  where college="Stanford University"'''))[0][0]
-    r.. round(average, 2)
+    r.. r..(average, 2)
 
 
 ___ year_with_most_drafts

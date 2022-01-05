@@ -1,4 +1,4 @@
-_______ argparse
+_______ a__
 
 
 ___ calculator(operation, numbers):
@@ -15,7 +15,7 @@ ___ calculator(operation, numbers):
     res = float(numbers[0])
     ___ num __ numbers[1:]:
         res = ops[operation]([res, float(num)])
-    r.. round(res,2)
+    r.. r..(res,2)
 
 
 ___ create_parser
@@ -27,11 +27,11 @@ ___ create_parser
 
        Note that type=float times out here so do the casting in the calculator
        function above!"""
-    parser = argparse.ArgumentParser(description='A simple calculator')
-    parser.add_argument('-a', '--add', t..=s.., nargs='+', help='Sums numbers')
-    parser.add_argument('-s', '--sub', t..=s.., nargs='+', help='Subtracts numbers')
-    parser.add_argument('-m', '--mul', t..=s.., nargs='+', help='Multiplies numbers')
-    parser.add_argument('-d', '--div', t..=s.., nargs='+', help='Divides numbers')
+    parser = a__.A..(d.._'A simple calculator')
+    parser.a..('-a', '--add', t..=s.., nargs='+', h.._'Sums numbers')
+    parser.a..('-s', '--sub', t..=s.., nargs='+', h.._'Subtracts numbers')
+    parser.a..('-m', '--mul', t..=s.., nargs='+', h.._'Multiplies numbers')
+    parser.a..('-d', '--div', t..=s.., nargs='+', h.._'Divides numbers')
     r.. parser
 
 
@@ -43,7 +43,7 @@ ___ call_calculator(args=N.., stdout=F..):
     parser = create_parser()
 
     __ args __ N..
-        args = parser.parse_args()
+        args = parser.p..
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one

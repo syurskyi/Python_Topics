@@ -5,7 +5,7 @@ ____ i.. _______ islice
 ____ countdown _______ countdown
 
 
-@p__.fixture
+@p__.f..
 ___ cd
     r.. countdown()
 

@@ -46,7 +46,7 @@ Pacific/Honolulu     | +
 ___ test_output(capfd):
     create_user_bar_chart(content)
     actual_output = [line.s...r..(' ', '') ___ line __
-                     capfd.readouterr()[0].splitlines()]
+                     ?.r .. 0].splitlines()]
 
     ___ line __ expected_output:
         ... line.s...r..(' ', '') __ actual_output, \

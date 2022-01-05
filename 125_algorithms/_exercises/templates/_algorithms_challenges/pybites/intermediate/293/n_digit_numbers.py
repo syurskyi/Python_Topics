@@ -13,7 +13,7 @@ ___ n_digit_numbers(numbers: List[T], n: i..) __ List[i..]:
     n_multiply_lookup = {1: 1, 2: 10, 3: 100, 4: 1000}
 
     ___ i __ r..(l..(numbers)):
-        numbers[i] = round(numbers[i] * n_multiply_lookup[n])
+        numbers[i] = r..(numbers[i] * n_multiply_lookup[n])
         __ l..(s..(numbers[i])) > n:
             __ numbers[i] > 0:
                 numbers[i] = i..(s..(numbers[i])[:n])

@@ -4,7 +4,7 @@ results    # list
 ___ get_sqrt(num, r, step):
     d = num/r
     __(step __ 0):
-        r.. round(r,7)
+        r.. r..(r,7)
     ____:
         r = (r+d)/2
         r.. get_sqrt(num,r,step-1)

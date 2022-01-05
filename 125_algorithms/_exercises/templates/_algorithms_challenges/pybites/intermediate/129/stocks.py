@@ -37,7 +37,7 @@ ___ get_industry_cap(industry):
             industry_cap_lookup[stock["industry"]] = [cap]
         ____:
             industry_cap_lookup[stock["industry"]].a..(cap)
-    r.. round(s..(industry_cap_lookup[industry]), 2)
+    r.. r..(s..(industry_cap_lookup[industry]), 2)
 
 
 ___ get_stock_symbol_with_highest_cap

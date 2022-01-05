@@ -48,12 +48,12 @@ ___ create_stats_report(data_ N..
     stats = d..(count=l..(data),
                  min_=m..(data),
                  max_=max(data),
-                 mean=round(statistics.mean(data),2),
-                 pstdev=round(statistics.pstdev(data),2),
-                 pvariance=round(statistics.pvariance(data),2),
+                 mean=r..(statistics.mean(data),2),
+                 pstdev=r..(statistics.pstdev(data),2),
+                 pvariance=r..(statistics.pvariance(data),2),
                  sample_count=l..(sample),
-                 sample_stdev=round(statistics.stdev(sample),2),
-                 sample_variance=round(statistics.variance(sample),2),
+                 sample_stdev=r..(statistics.stdev(sample),2),
+                 sample_variance=r..(statistics.variance(sample),2),
                  )
 
     r.. STATS_OUTPUT.f..(**stats)
@@ -65,9 +65,9 @@ sample = l..(data)[::2]
 print(l..(data))
 print(m..(data))
 print(max(data))
-print(round(statistics.mean(data),2))
-print(round(statistics.pstdev(data),2))
-print(round(statistics.pvariance(data),2))
-print(round(l..(sample)))
-print(round(statistics.stdev(sample),2))
-print(round(statistics.variance(sample),2))
+print(r..(statistics.mean(data),2))
+print(r..(statistics.pstdev(data),2))
+print(r..(statistics.pvariance(data),2))
+print(r..(l..(sample)))
+print(r..(statistics.stdev(sample),2))
+print(r..(statistics.variance(sample),2))

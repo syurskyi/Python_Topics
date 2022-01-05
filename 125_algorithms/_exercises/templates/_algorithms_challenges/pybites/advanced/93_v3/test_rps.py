@@ -6,7 +6,7 @@ ____ rps _______ (_get_winner, game,
                  lose, win, tie)
 
 
-@p__.fixture()
+@p__.f..()
 ___ my_game
     """Initialize game and move it to point where to
        receive first player (send) input"""
@@ -19,7 +19,7 @@ ___ my_game
 ___ test_win(computerMoveMock, my_game, capfd):
     computerMoveMock.return_value = 'rock'
     my_game.send('paper')
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... output __ win.f..('paper', 'rock')
 
 
@@ -27,7 +27,7 @@ ___ test_win(computerMoveMock, my_game, capfd):
 ___ test_loose(computerMoveMock, my_game, capfd):
     computerMoveMock.return_value = 'rock'
     my_game.send('scissors')
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... output __ lose.f..('rock', 'scissors')
 
 
@@ -35,14 +35,14 @@ ___ test_loose(computerMoveMock, my_game, capfd):
 ___ test_tie(computerMoveMock, my_game, capfd):
     computerMoveMock.return_value = 'paper'
     my_game.send('paper')
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... output __ tie
 
 
 @patch('rps._get_computer_move')
 ___ test_invalid_choice(computerMoveMock, my_game, capfd):
     my_game.send('spam')
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... 'Invalid' __ output
 
 

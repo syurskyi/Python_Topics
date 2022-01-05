@@ -13,4 +13,4 @@ ___ calculate_gc_content(sequence):
     gc_pct = s..([count ___ key, count
                   __ counts.i.. __ key __ 'gc']) / total
 
-    r.. round(100 * gc_pct, 2)
+    r.. r..(100 * gc_pct, 2)

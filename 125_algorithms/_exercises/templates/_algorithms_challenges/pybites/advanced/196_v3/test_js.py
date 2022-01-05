@@ -3,7 +3,7 @@ _______ p__
 ____ js _______ JsObject __ JS
 
 
-@p__.fixture
+@p__.f..
 ___ D
     """Create a JsObject object"""
     r.. JS(a=1, b=2, c=3)

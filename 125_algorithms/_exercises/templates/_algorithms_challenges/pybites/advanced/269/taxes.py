@@ -202,7 +202,7 @@ c_ Taxes:
         Returns:
             float -- Tax rate
         """
-        r.. round(taxes_owed / salary * 100,2)
+        r.. r..(taxes_owed / salary * 100,2)
 
 
 __ _______ __ _______

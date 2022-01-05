@@ -46,7 +46,7 @@ ___ calc_mean_score(movies):
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     scores = [movie.score ___ movie __ movies]
-    r.. round(s..(scores) / l..(scores), 1)
+    r.. r..(s..(scores) / l..(scores), 1)
 
 ___ get_average_scores(directors):
     """Iterate through the directors dict (returned by get_movies_by_director),

@@ -8,4 +8,4 @@ ___ calculate_gc_content(sequence):
     sequence_amount = Counter(sequence)
     GC_amount = sequence_amount['g'] + sequence_amount['c']
     total_amount = s..(Counter(sequence).values())
-    r.. round((GC_amount / total_amount) * 100, 2)
+    r.. r..((GC_amount / total_amount) * 100, 2)

@@ -109,7 +109,7 @@ ___ query_data(data):  # list[Purchase]):
     ave_baths  statistics.mean((p.baths ___ p __ homes))
     ave_sqft  statistics.mean((p.sq__ft ___ p __ homes))
     print("Average 2-bedroom home is ${:,}, baths={}, sq ft={:,}"
-          .f..(i..(ave_price), round(ave_baths, 1), round(ave_sqft, 1)))
+          .f..(i..(ave_price), r..(ave_baths, 1), r..(ave_sqft, 1)))
 
 
 ___ announce(item, msg):

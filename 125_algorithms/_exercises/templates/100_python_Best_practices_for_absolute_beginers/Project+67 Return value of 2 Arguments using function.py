@@ -6,4 +6,4 @@ y  i..(input("Insert first value: "))
 z  i..(input("Insert second value: "))
 
 average  avg(y,z)
-print(round(average,2))
+print(r..(average,2))

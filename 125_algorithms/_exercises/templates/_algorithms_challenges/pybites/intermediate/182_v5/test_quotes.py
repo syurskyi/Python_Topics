@@ -31,7 +31,7 @@ expected_quotes = [
 ]
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ output_your_code
     r.. extract_quotes()
 

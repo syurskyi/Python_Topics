@@ -14,7 +14,7 @@ PATH = Path(TMP, "ip-ranges.json")
 IP = IPv4Network('192.0.2.8/29')
 
 
-@p__.fixture(scope='module')
+@p__.f..(scope='module')
 ___ json_file
     """Import data into tmp folder"""
     urlretrieve(URL, PATH)

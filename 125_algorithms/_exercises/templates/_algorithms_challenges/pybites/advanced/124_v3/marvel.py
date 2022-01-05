@@ -77,4 +77,4 @@ ___ get_percentage_female_characters(characters=characters):
     """
     genders = Counter([c.sex.s..(' ')[0] ___ c __ characters __ c.sex])
     sum_all_genders = s..([x[1] ___ x __ genders.i..])
-    r.. round(100 * genders['Female'] / sum_all_genders, 2)
+    r.. r..(100 * genders['Female'] / sum_all_genders, 2)

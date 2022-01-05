@@ -15,7 +15,7 @@ TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, "zodiac.json")
 
 
-@p__.fixture(scope='module')
+@p__.f..(scope='module')
 ___ signs
     __ n.. PATH.exists
         urlretrieve(URL, PATH)

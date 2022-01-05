@@ -42,4 +42,4 @@ ___ person_max_bmi(data=data):
     highest_BMI_name = data[highest_BMI_position].s...s..(',')[0]
     highest_BMI_BMI = max(BMI_final)
 
-    r.. highest_BMI_name, round(highest_BMI_BMI, 2)
+    r.. highest_BMI_name, r..(highest_BMI_BMI, 2)

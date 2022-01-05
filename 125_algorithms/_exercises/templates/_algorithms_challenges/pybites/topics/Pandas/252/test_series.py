@@ -8,13 +8,13 @@ _______ pandas __ pd
 _______ series __ se
 
 
-@p__.fixture()
+@p__.f..()
 ___ float_series
     """Returns a pandas Series containing floats"""
     r.. pd.Series([float(n) / 1000 ___ n __ r..(0, 1001)])
 
 
-@p__.fixture()
+@p__.f..()
 ___ alpha_series
     """Returns a pandas Series containing floats"""
     dictionary = d..(z..(s__.ascii_lowercase, r..(1, 27)))
@@ -73,9 +73,9 @@ ___ test_get_values(alpha_series):
 ___ test_all_even_indexes_returned(float_series):
     ser = se.get_every_second_indexes(float_series, T..)
     ... a..(n % 2 __ 0 ___ n __ ser.index)
-    ... round(s..(ser), 1) __ 250.5
+    ... r..(s..(ser), 1) __ 250.5
 
 ___ test_all_odd_indexes_returned(float_series):
     ser = se.get_every_second_indexes(float_series, F..)
     ... a..(n % 2 __ 1 ___ n __ ser.index)
-    ... round(s..(ser), 1) __ 250.0
+    ... r..(s..(ser), 1) __ 250.0

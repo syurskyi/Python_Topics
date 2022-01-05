@@ -5,22 +5,22 @@ _______ p__
 ____ person _______ Person, Father, Mother, Child
 
 
-@p__.fixture
+@p__.f..
 ___ person
     r.. Person()
 
 
-@p__.fixture
+@p__.f..
 ___ dad
     r.. Father()
 
 
-@p__.fixture
+@p__.f..
 ___ mom
     r.. Mother()
 
 
-@p__.fixture
+@p__.f..
 ___ child
     r.. Child()
 

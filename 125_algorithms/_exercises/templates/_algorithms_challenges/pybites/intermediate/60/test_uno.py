@@ -12,7 +12,7 @@ ___ _count_suitcard(deck, suit, name):
                a.. s..(card.name) __ name)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ deck
     r.. create_uno_deck()
 

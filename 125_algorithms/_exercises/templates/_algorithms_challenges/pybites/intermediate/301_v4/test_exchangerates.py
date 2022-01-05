@@ -6,12 +6,12 @@ _______ p__
 ____ exchangerates _______ RATES_FILE, exchange_rates, get_all_days, match_daily_rates
 
 
-@p__.fixture(scope="session")
+@p__.f..(scope="session")
 ___ exchange_rates_result
     r.. exchange_rates()
 
 
-@p__.fixture(scope="session")
+@p__.f..(scope="session")
 ___ matching_result
     start = date(2020, 1, 1)
     end = date(2020, 9, 1)

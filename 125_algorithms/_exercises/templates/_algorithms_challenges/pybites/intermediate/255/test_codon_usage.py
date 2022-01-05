@@ -114,7 +114,7 @@ ___ get_table_dividers(table):
 # ############################################################################
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ result
     """
     Provide codon usage table for tests

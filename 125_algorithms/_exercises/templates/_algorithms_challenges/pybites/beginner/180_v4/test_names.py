@@ -18,12 +18,12 @@ Insko,Ave,NL
 Pigney,Gavrielle,ID"""
 
 
-@p__.fixture
+@p__.f..
 ___ grouping1
     r.. group_names_by_country(data)
 
 
-@p__.fixture
+@p__.f..
 ___ grouping2
     r.. group_names_by_country(data2)
 

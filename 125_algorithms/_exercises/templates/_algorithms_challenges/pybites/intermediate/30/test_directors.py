@@ -6,12 +6,12 @@ ____ directors _______ (get_movies_by_director, get_average_scores,
                        calc_mean_score, Movie)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ movies
     r.. get_movies_by_director()
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ scores(movies):
     r.. get_average_scores(movies)
 

@@ -24,10 +24,10 @@ ___ convert(value: float, fmt: s..) __ float:
         __ fmt.l.. __ "cm" o. fmt.l.. __ "in":
             __ fmt.l.. __ "cm":
                 result = value*2.54
-                r.. round(result,4)
+                r.. r..(result,4)
             ____:
                 result = value*0.393700787
-                r.. round(result, 4)
+                r.. r..(result, 4)
         ____:
             r.. ValueError
     ____:

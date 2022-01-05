@@ -56,7 +56,7 @@ ___ get_percentage_of_female_speakers(first_names):
         __ predicted_gender __ ["female", "mostly_female"]:
             female_counter += 1
 
-    r.. round((female_counter/l..(first_names)*100), 2)
+    r.. r..((female_counter/l..(first_names)*100), 2)
 
 __ _____ __ _____
     names = get_pycon_speaker_first_names()

@@ -16,14 +16,14 @@ TMP_FILE = NamedTemporaryFile(delete=F..)
 FILE = TMP_FILE.name
 
 
-@p__.fixture(scope="function")
+@p__.f..(scope="function")
 ___ rcf
     password = b"#clamybite"
     key = choice(KEYS)
     r.. ClamyFernet(password, key)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ cf
     r.. ClamyFernet(key=KEYS[0])
 

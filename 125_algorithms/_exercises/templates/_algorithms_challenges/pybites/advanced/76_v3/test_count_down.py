@@ -28,7 +28,7 @@ ___ test_code_uses_singledispatch_decorator
 ])
 ___ test_count_down_good_inputs(input_argument, capfd):
     count_down(input_argument)
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... output __ DEFAULT_EXPECTED_OUTPUT
 
 
@@ -46,5 +46,5 @@ ___ test_count_down_float(capfd):
     expected = '12.34\n12.3\n12.\n12\n1\n'
     number = 12.34
     count_down(number)
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... output __ expected

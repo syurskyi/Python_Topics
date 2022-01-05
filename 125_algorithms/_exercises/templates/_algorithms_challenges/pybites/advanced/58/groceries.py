@@ -1,4 +1,4 @@
-_______ argparse
+_______ a__
 ____ c.. _______ n..
 
 Item = n..('Item', 'product price craving')
@@ -71,13 +71,13 @@ ___ create_parser
        note that the options are mutually exclusive. 
        Returns a argparse.ArgumentParser object"""
 
-    ap = argparse.ArgumentParser()
-    group = ap.add_argument_group(title="Grocery Store",description='interface to grocery store')
+    ap = a__.A..()
+    group = ap.add_argument_group(title="Grocery Store",d.._'interface to grocery store')
     g1 = group.add_mutually_exclusive_group(required=T..)
-    g1.add_argument("-a","--add",help="add item providing name (str), price (int), and craving (bool)",nargs=3)
-    g1.add_argument("-d","--delete",help="delete a product by name (str)")
-    g1.add_argument("-l","--list",help="show items in cart",action='store_true')
-    g1.add_argument("-s","--search",help="search items by name")
+    g1.a..("-a","--add",h.._"add item providing name (str), price (int), and craving (bool)",nargs=3)
+    g1.a..("-d","--delete",h.._"delete a product by name (str)")
+    g1.a..("-l","--list",h.._"show items in cart",a.._'store_true')
+    g1.a..("-s","--search",h.._"search items by name")
 
     r.. ap
 

@@ -30,7 +30,7 @@ ___ get_industry_cap(industry):
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
     locallist = [counter['cap'] ___ counter __ data __ counter['industry'] __ industry]
-    r.. round(s..([_cap_str_to_mln_float(cap) ___ cap __ locallist]),2)
+    r.. r..(s..([_cap_str_to_mln_float(cap) ___ cap __ locallist]),2)
 
 ___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use

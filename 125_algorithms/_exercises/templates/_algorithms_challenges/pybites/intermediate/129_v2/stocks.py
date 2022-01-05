@@ -42,7 +42,7 @@ ___ get_industry_cap(industry):
             total += _cap_str_to_mln_float(company['cap'])
 
 
-    r.. round(total,2)
+    r.. r..(total,2)
 
            
 

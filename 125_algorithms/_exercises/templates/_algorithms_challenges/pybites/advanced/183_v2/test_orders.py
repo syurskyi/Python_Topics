@@ -7,7 +7,7 @@ ____ Previous.orders _______ (load_excel_into_dataframe,
                              get_most_sold_item)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ df
     r.. load_excel_into_dataframe()
 
@@ -26,7 +26,7 @@ ___ test_get_year_region_breakdown(df):
     ... ret.index.names[0] __ 'Year'
     ... ret.index.names[1] __ 'Region'
 
-    actual = [round(val, 2) ___ val __ ret.values]
+    actual = [r..(val, 2) ___ val __ ret.values]
     expected = [3833.51, 5193.71, 231.12, 7305.56,
                 808.38, 2255.6]
     ... actual __ expected

@@ -20,7 +20,7 @@ Estimated variance for sample:
 """
 
 
-@p__.fixture
+@p__.f..
 ___ report
     r.. create_stats_report()
 

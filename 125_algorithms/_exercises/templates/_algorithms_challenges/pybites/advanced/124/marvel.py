@@ -110,7 +110,7 @@ ___ get_percentage_female_characters(characters=characters):
     females = sex_counts['Female Characters']
     print(sex_counts)
 
-    r.. round(females/total* 100,2)
+    r.. r..(females/total* 100,2)
 
 
 

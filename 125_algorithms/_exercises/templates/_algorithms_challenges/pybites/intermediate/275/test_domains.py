@@ -3,7 +3,7 @@ _______ p__
 ____ domains _______ get_common_domains, get_most_common_domains
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ common_domains
     r.. l..(get_common_domains())
 

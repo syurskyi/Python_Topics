@@ -3,7 +3,7 @@ _______ p__
 ____ thumbs _______ Thumbs
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ thumbs
     r.. Thumbs()
 

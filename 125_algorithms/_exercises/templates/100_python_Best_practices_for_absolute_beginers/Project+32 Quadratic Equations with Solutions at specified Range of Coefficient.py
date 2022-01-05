@@ -20,6 +20,6 @@ ___ i __ x:
             __ A > 0:
                 x1  (-j - math.sqrt(A))/(2*i)
                 x2  (-j + math.sqrt(A))/(2*i)
-                print("Valid", round(x1,2), round(x2,2))
+                print("Valid", r..(x1,2), r..(x2,2))
             ____:
                 print("Invalid")

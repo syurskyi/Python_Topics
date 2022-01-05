@@ -3,7 +3,7 @@ _______ p__
 ____ account _______ Account
 
 
-@p__.fixture()
+@p__.f..()
 ___ account
     r.. Account()
 

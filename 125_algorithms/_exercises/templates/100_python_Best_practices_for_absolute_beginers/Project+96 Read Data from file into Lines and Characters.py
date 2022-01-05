@@ -9,4 +9,4 @@ yr  2*pi*r/v
 
 yr  yr/(60*60*24)
 
-print(round(yr))
+print(r..(yr))

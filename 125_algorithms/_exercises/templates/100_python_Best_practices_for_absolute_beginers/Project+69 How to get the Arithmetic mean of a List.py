@@ -12,4 +12,4 @@ ___ i __ r..(l..(x)):
 
 average  avg_list(x)
 
-print("The result of the average =",round(average,2))
+print("The result of the average =",r..(average,2))

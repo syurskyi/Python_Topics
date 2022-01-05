@@ -38,7 +38,7 @@ ___ get_industry_cap(industry):
                     )
                 )
 
-    r.. round(total, 2)
+    r.. r..(total, 2)
 
 
 ___ get_stock_symbol_with_highest_cap

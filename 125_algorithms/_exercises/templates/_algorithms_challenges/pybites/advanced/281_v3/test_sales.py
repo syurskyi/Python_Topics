@@ -4,7 +4,7 @@ _______ p__
 ____ sales _______ get_data, process_data, summary_report, yearly_report, URL
 
 
-@p__.fixture(scope="function")
+@p__.f..(scope="function")
 ___ df
     r.. process_data(URL)
 
@@ -26,7 +26,7 @@ ___ test_data(df):
 )
 ___ test_summary_report(df, capfd, line, expected):
     summary_report(df)
-    output = capfd.readouterr()[0].s..("\n")
+    output = ?.r .. 0].s..("\n")
     ... output[line].s.. __ expected
 
 
@@ -35,7 +35,7 @@ ___ test_summary_report(df, capfd, line, expected):
 )
 ___ test_summary_report_custom(df, capfd, lst, expected):
     summary_report(df, lst)
-    output = capfd.readouterr()[0].s..("\n")
+    output = ?.r .. 0].s..("\n")
     ... output[0].s.. __ expected
 
 
@@ -50,7 +50,7 @@ ___ test_summary_report_custom(df, capfd, lst, expected):
 )
 ___ test_yearly_report(df, capfd, year, expected):
     yearly_report(df, year)
-    output = capfd.readouterr()[0].s..("\n")
+    output = ?.r .. 0].s..("\n")
     ... output[9] __ expected
 
 

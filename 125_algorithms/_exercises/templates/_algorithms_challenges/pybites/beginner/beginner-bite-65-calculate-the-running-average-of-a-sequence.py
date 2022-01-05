@@ -25,7 +25,7 @@ ___ running_mean(sequence):
     ___ item __ e..(l.., start=1):
         s.. += item[1]
         mean = s.. / item[0]
-        result.a..(round(mean,2))
+        result.a..(r..(mean,2))
 
     ___ i __ result:
         print(i)

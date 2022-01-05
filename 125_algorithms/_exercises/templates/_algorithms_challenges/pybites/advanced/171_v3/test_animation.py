@@ -11,7 +11,7 @@ ____ Previous.animation _______ spinner, SPINNER_STATES __ states
 ])
 ___ test_spinner(monkeypatch, capfd, seconds, rounds, slice_):
     spinner(seconds)
-    actual = capfd.readouterr()[0].s...s..('\r')
+    actual = ?.r .. 0].s...s..('\r')
     expected = states * rounds
     __ slice_:
         expected += states[:slice_]

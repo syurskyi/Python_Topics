@@ -55,7 +55,7 @@ ___ get_percentage_of_female_speakers(first_names):
 
         female_count += (result __ labels)
 
-    r.. round(female_counts/l..(first_names),2)
+    r.. r..(female_counts/l..(first_names),2)
 
 
 

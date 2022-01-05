@@ -3,7 +3,7 @@ _______ p__
 ____ tribe _______ get_top_books, load_page
 
 
-@p__.fixture(scope='module')
+@p__.f..(scope='module')
 ___ content
     """Load content once for all test"""
     r.. load_page()

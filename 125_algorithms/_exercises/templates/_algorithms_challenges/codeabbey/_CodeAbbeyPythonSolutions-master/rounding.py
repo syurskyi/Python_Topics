@@ -1,7 +1,7 @@
 amount_values = i..(input())
 results    # list
 
-___ round(num1, num2):
+___ r..(num1, num2):
     result = num1/num2
     is_negative = F..
     __(result < 0):
@@ -18,5 +18,5 @@ ___ round(num1, num2):
 
 ___ i __ r..(amount_values):
     num1, num2 = map(i.., input().s..())
-    results.a..(round(num1,num2))
+    results.a..(r..(num1,num2))
 print(*results)

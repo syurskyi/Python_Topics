@@ -8,7 +8,7 @@ _______ monitor
 ____ monitor _______ timeit, ALERT_MSG
 
 
-@p__.fixture()
+@p__.f..()
 ___ clean_cache
     """Make sure each test starts with a clean cache dict"""
     monitor.violations = Counter()
@@ -19,7 +19,7 @@ ___ test_one_operation_within_time(clean_cache, capfd):
     """1 operation took 2 seconds = ok"""
     w__ timeit
         p..
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... n.. output
 
 
@@ -31,7 +31,7 @@ ___ test_two_operations_one_too_long(clean_cache, capfd):
     # this one took too long
     w__ timeit
         p..
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... n.. output
 
 
@@ -46,7 +46,7 @@ ___ test_three_operations_two_too_long(clean_cache, capfd):
         p..
     w__ timeit
         p..
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... n.. output
 
 
@@ -61,7 +61,7 @@ ___ test_four_operations_three_took_too_long(clean_cache, capfd):
         p..
     w__ timeit
         p..
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... output.s.. __ ALERT_MSG
 
 
@@ -79,7 +79,7 @@ ___ test_four_operations_three_took_too_long_using_floats(clean_cache, capfd):
         p..
     w__ timeit
         p..
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... output.s.. __ ALERT_MSG
 
 
@@ -98,5 +98,5 @@ ___ test_four_operations_took_too_long_but_on_two_days(clean_cache, capfd):
             p..
         w__ timeit
             p..
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... n.. output

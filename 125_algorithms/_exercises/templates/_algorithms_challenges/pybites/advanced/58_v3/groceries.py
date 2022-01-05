@@ -1,4 +1,4 @@
-_______ argparse
+_______ a__
 ____ c.. _______ n..
 
 Item = n..('Item', 'product price craving')
@@ -66,19 +66,19 @@ c_ Groceries:
 
 
 ___ create_parser
-    p.. = argparse.ArgumentParser(description='')
+    p.. = a__.A..(d.._'')
     group = p...add_mutually_exclusive_group()
-    group.add_argument('-a', '--add', nargs=3, help='add item providing name (str), price (int), and craving (bool)')
-    group.add_argument('-d', '--delete', nargs=1, help='delete a product by name (str)')
-    group.add_argument('-l', '--list', action='store_true', help='show items in cart')
-    group.add_argument('-s', '--search', nargs=1, help='search items by name')
+    group.a..('-a', '--add', nargs=3, h.._'add item providing name (str), price (int), and craving (bool)')
+    group.a..('-d', '--delete', nargs=1, h.._'delete a product by name (str)')
+    group.a..('-l', '--list', a.._'store_true', h.._'show items in cart')
+    group.a..('-s', '--search', nargs=1, h.._'search items by name')
     r.. p..
 
 
 ___ handle_args(args=N.., cart_ N..
     __ args __ N..
         parser = create_parser()
-        args = parser.parse_args()
+        args = parser.p..
 
     __ cart __ N..
         cart = Groceries()

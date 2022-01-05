@@ -9,7 +9,7 @@ ___ test_print_game_stats(capfd):
                      "jim has won 1 game"]
 
     print_game_stats(games_won)
-    output = capfd.readouterr()[0].splitlines()
+    output = ?.r .. 0].splitlines()
 
     # dict + Python 3.7 = insert order should be retained
     ___ line __ winner_prints:

@@ -93,7 +93,7 @@ ___ _non_empty_lines(output):
 @p__.mark.parametrize("size", sizes)
 ___ test_create_chessboard(size, capfd):
     create_chessboard(size)
-    actual = capfd.readouterr()[0]
+    actual = ?.r .. 0]
     expected = dedent(expected_outputs[size])
     ... (_non_empty_lines(actual) __
             _non_empty_lines(expected))

@@ -3,12 +3,12 @@ _______ p__
 ____ tables _______ MultiplicationTable
 
 
-@p__.fixture
+@p__.f..
 ___ t10
     r.. MultiplicationTable(10)
 
 
-@p__.fixture
+@p__.f..
 ___ t3
     r.. MultiplicationTable(3)
 

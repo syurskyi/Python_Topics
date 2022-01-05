@@ -5,7 +5,7 @@ _______ p__
 ____ dates _______ _get_dates, convert_to_datetime, get_month_most_posts
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ dates
     r.. _get_dates()
 

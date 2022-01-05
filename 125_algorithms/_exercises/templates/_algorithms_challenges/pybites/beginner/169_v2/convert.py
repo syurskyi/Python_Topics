@@ -21,7 +21,7 @@ ___ convert(value: float, fmt: s..) __ float:
         value  *= 2.54
 
 
-    r.. round(value,4)
+    r.. r..(value,4)
 
 
 

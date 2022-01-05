@@ -12,7 +12,7 @@ ___ grab_bites(promo, amount=BITES_AVAILABLE):
         promo.new_bite()
 
 
-@p__.fixture
+@p__.f..
 ___ promo
     """Make a fresh new promo object for each test"""
     r.. Promo(bites_done=bites_done.copy())

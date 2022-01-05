@@ -3,7 +3,7 @@ _______ p__
 ____ groceries _______ Item, Groceries, create_parser, handle_args
 
 
-@p__.fixture
+@p__.f..
 ___ cart
     # faking some data (normally would load from DB)
     products = 'celery apples water coffee chicken pizza'.s..
@@ -17,7 +17,7 @@ ___ cart
     r.. Groceries(items)
 
 
-@p__.fixture
+@p__.f..
 ___ parser
     r.. create_parser()
 
@@ -25,7 +25,7 @@ ___ parser
 ___ test_list(parser, cart, capfd):
     args = parser.parse_args(['-l'])
     handle_args(args, cart)
-    output = capfd.readouterr()[0].s..('\n')
+    output = ?.r .. 0].s..('\n')
     ... 'pizza (craving)                |   4' __ output
     ... 'Total                          |  22' __ output
 
@@ -33,7 +33,7 @@ ___ test_list(parser, cart, capfd):
 ___ test_search(parser, cart, capfd):
     args = parser.parse_args(['-s', 'coffee'])
     handle_args(args, cart)
-    output = capfd.readouterr()[0].s..('\n')
+    output = ?.r .. 0].s..('\n')
     ... 'coffee                         |   5' __ output
     ... 'Total                          |   5' __ output
 
@@ -73,13 +73,13 @@ ___ test_delete(parser, cart):
 
 ___ test_args_mulually_exclusive(parser):
     # argument -l/--list: not allowed with argument -d/--delete
-    w__ p__.r..(SystemExit):
+    w__ p__.r..(S..):
         parser.parse_args(['-d', 'pizza', '-l'])
 
     # argument -a/--add: expected 3 arguments
-    w__ p__.r..(SystemExit):
+    w__ p__.r..(S..):
         parser.parse_args(['-a', 'pizza'])
 
     # unrecognized arguments: coffee
-    w__ p__.r..(SystemExit):
+    w__ p__.r..(S..):
         parser.parse_args(['-d', 'pizza', 'coffee'])

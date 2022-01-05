@@ -1,4 +1,4 @@
-_______ argparse
+_______ a__
 
 ___ calculator(operation, numbers):
     """TODO 1:
@@ -25,7 +25,7 @@ ___ calculator(operation, numbers):
         ___ i __ numbers[1:]:
             total = total / float(i)
     print(t..(total))
-    r.. round(total,2)
+    r.. r..(total,2)
 
 
 ___ create_parser
@@ -37,23 +37,23 @@ ___ create_parser
 
        Note that type=float times out here so do the casting in the calculator
        function above!"""
-    my_parser = argparse.ArgumentParser(description='A simple calculator')
-    my_parser.add_argument('-a',
+    my_parser = a__.A..(d.._'A simple calculator')
+    my_parser.a..('-a',
                        '--add',
-                       action='store', nargs='+',
-                       help='Sums numbers')
-    my_parser.add_argument('-s',
+                       a.._'store', nargs='+',
+                       h.._'Sums numbers')
+    my_parser.a..('-s',
                        '--sub',
-                       action='store', nargs='+',
-                       help='Subtracts numbers')
-    my_parser.add_argument('-m',
+                       a.._'store', nargs='+',
+                       h.._'Subtracts numbers')
+    my_parser.a..('-m',
                        '--mul',
-                       action='store', nargs='+',
-                       help='Multiplies numbers')
-    my_parser.add_argument('-d',
+                       a.._'store', nargs='+',
+                       h.._'Multiplies numbers')
+    my_parser.a..('-d',
                        '--div',
-                       action='store', nargs='+',
-                       help='Divides numbers')
+                       a.._'store', nargs='+',
+                       h.._'Divides numbers')
     #print(my_parser.parse_args())
     r.. my_parser
 
@@ -66,7 +66,7 @@ ___ call_calculator(args=N.., stdout=F..):
     parser = create_parser()
 
     __ args __ N..
-        args = parser.parse_args()
+        args = parser.p..
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one

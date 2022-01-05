@@ -10,7 +10,7 @@ ___ test_calculate
     *orig, dol, perc = calc[0]
     ... orig __ ["Cash", 120000, 115000]
     ... dol __ 5000
-    ... round(perc, 2) __ 0.04
+    ... r..(perc, 2) __ 0.04
 
 
 ___ test_identify

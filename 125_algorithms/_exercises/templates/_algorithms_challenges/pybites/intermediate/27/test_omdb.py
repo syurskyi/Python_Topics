@@ -18,7 +18,7 @@ __ n.. Path(DATA_LOCAL).exists
     urlretrieve(S3 + DATA, DATA_LOCAL)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ movies
     files    # list
     w__ open(DATA_LOCAL) __ f:

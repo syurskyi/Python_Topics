@@ -18,12 +18,12 @@ ___ add_ingredients(ingredients):
 ___ test_bacon_sandwich(capfd):
     ingredients = ['bacon', 'lettuce', 'tomato']
     add_ingredients(ingredients)
-    actual = capfd.readouterr()[0]
+    actual = ?.r .. 0]
     ... actual __ SANDWICH_BACON
 
 
 ___ test_fried_egg_sandwich(capfd):
     ingredients = ['fried egg', 'tomato', 'cucumber']
     add_ingredients(ingredients)
-    actual = capfd.readouterr()[0]
+    actual = ?.r .. 0]
     ... actual __ SANDWICH_EGG

@@ -3,7 +3,7 @@ _______ p__
 ____ stats _______ BiteStats
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ bite_stats
     r.. BiteStats()
 

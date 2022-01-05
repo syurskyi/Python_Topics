@@ -6,4 +6,4 @@ ___ running_mean(sequence):
     ___ x __ sequence:
         c += 1
         sum_x += x
-        y.. round(float(sum_x)/c,2)
+        y.. r..(float(sum_x)/c,2)

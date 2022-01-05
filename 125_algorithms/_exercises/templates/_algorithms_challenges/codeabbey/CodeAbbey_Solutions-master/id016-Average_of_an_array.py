@@ -15,7 +15,7 @@ ___ average(amount):
                         total += i..(array[y])
                         y+=1
                         average = "%.02f" % ((float(total)) / float(l..(array)))
-                        average = i..(round(float(average)))
+                        average = i..(r..(float(average)))
                 answer.a..(s..(average))
         print(' '.j..(answer))
 average(input())

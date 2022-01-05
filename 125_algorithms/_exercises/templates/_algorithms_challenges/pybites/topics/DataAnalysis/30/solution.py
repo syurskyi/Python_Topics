@@ -46,7 +46,7 @@ ___ calc_mean_score(movies):
        round the mean to 1 decimal place"""
     ratings = [m.score ___ m __ movies]
     mean = s..(ratings) / max(1, l..(ratings))
-    r.. round(mean, 1)
+    r.. r..(mean, 1)
 
 
 ___ get_average_scores(directors):

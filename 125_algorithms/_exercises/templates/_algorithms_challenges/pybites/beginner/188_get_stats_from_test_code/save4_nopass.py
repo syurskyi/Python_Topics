@@ -25,11 +25,11 @@ ___ create_stats_report(data_ N..
     stats = d..(count=l..(data),
                  min_=m..(data),
                  max_=max(data),
-                 mean=round(st.mean(data), 2),
-                 pstdev=round(st.pstdev(data), 2),
-                 pvariance=round(st.pvariance(data), 2),
+                 mean=r..(st.mean(data), 2),
+                 pstdev=r..(st.pstdev(data), 2),
+                 pvariance=r..(st.pvariance(data), 2),
                  sample_count=l..(sample),
-                 sample_stdev=round(st.stdev(sample), 2),
-                 sample_variance=round(st.variance(sample), 2),
+                 sample_stdev=r..(st.stdev(sample), 2),
+                 sample_variance=r..(st.variance(sample), 2),
                  )
     r.. stats

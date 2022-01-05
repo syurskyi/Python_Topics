@@ -57,7 +57,7 @@ DOCS = {
 }
 
 
-@p__.fixture()
+@p__.f..()
 ___ doc(request):
     """Factory method for test documents"""
     r.. DOCS.get(request.param, Document())

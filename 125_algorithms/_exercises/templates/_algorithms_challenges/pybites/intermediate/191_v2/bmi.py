@@ -30,7 +30,7 @@ ___ person_max_bmi(data=data):
     star_wars = pd.read_csv(StringIO(data),names=['character','height','weight'])
     star_wars.character = star_wars.character.s...s..
 
-    star_wars['bmi'] = star_wars.weight.div(star_wars.height.div(100)**2).round(2)
+    star_wars['bmi'] = star_wars.weight.div(star_wars.height.div(100)**2).r..(2)
     
     largest =  star_wars.nlargest(1,'bmi').squeeze()
     r.. (largest['character'],largest['bmi'])

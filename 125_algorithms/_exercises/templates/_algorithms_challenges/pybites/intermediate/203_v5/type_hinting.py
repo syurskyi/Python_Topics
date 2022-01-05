@@ -33,7 +33,7 @@ c_ Employee:
         :param places: Integer of places to round to
         :return: String representation of the rounded number in US $
         """
-        amount = round(number, places)
+        amount = r..(number, places)
         r.. f"${amount:0.2f}"
 
     $

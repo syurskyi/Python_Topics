@@ -46,7 +46,7 @@ EXPECTED = {'High income': ['Aruba',
                                     'Venezuela, RB']}
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ actual
     r.. get_income_distribution()
 

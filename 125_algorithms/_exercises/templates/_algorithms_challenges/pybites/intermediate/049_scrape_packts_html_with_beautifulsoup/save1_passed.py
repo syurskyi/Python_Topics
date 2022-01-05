@@ -25,5 +25,5 @@ ___ get_book
 
     link = soup2.select('a')[0]['href']
 
-    r.. Book(title=title, description=description,
+    r.. Book(title=title, d.._description,
                 image=image, link=link)

@@ -2,7 +2,7 @@ amount_values = i..(input())
 results    # list
 
 ___ avg(values):
-    results.a..(round(s..(values)/(l..(values)-1)))
+    results.a..(r..(s..(values)/(l..(values)-1)))
 
 
 ___ i __ r..(amount_values):

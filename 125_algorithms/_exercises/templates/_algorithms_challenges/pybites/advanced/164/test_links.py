@@ -15,7 +15,7 @@ MY_CODE = SCRIPT __ IS_LOCAL ____ TMP / SCRIPT
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
 
-@p__.fixture
+@p__.f..
 ___ my_file(tmp_path):
     f = tmp_path / "some_file.txt"
     r.. f

@@ -5,7 +5,7 @@ _______ p__
 ____ order _______ OrderedList
 
 
-@p__.fixture(scope='module')
+@p__.f..(scope='module')
 ___ order
     r.. OrderedList()
 

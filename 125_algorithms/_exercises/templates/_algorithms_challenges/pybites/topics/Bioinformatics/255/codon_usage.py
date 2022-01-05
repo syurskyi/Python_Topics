@@ -37,7 +37,7 @@ ___ _preload_sequences(url=URL):
 ___ codon_info(codons, count, total, translation):
     return_str = '|'
     ___ codon __ codons:
-        freq = round(count[codon]/(total/1000), 1)
+        freq = r..(count[codon]/(total/1000), 1)
         temp_str = f'  {codon}:  {translation[codon]}   {freq:4}  {count[codon]:5}  |'
         return_str = return_str + temp_str
     r.. return_str

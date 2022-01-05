@@ -21,13 +21,13 @@ ___ get_two_numbers(numbers):
 ___ test_bad_data_max_retries_and_exception(capfd):
     w__ p__.r..(MaxRetriesException):
         get_two_numbers(['a', 'b'])
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... output.c.. 'not all ints') __ MAX_RETRIES
 
 
 ___ test_good_data_no_retry_and_no_exception(capfd):
     get_two_numbers([1, 2, 3])
-    output = capfd.readouterr()[0]
+    output = ?.r .. 0]
     ... output.c.. 'not all ints') __ 0
 
 

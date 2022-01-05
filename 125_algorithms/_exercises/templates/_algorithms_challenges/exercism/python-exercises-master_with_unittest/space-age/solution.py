@@ -1,6 +1,6 @@
 ___ period_converter(period):
     ___ inner
-        r.. round(
+        r.. r..(
             seconds / period,
             2
         )

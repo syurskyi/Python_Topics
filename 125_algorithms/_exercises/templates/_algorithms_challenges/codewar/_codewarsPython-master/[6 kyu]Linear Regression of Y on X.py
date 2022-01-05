@@ -6,8 +6,8 @@ ___ regressionLine(x, y):
     sumXY = s..([X*Y ___ X,Y __ z..(x,y)])
     a = ((sumSquareX*sumY) - (sumX*sumXY)) / float(((l..(x) * sumSquareX) - sumX**2))
     b = ((l..(x)*sumXY) - (sumX*sumY)) / float(((l..(x)*sumSquareX) - sumX**2))
-    a = round(a,4)
-    b = round(b,4)
+    a = r..(a,4)
+    b = r..(b,4)
     r.. a,b
     
 

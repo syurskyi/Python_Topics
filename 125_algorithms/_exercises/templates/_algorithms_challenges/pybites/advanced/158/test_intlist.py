@@ -5,12 +5,12 @@ _______ p__
 ____ intlist _______ IntList
 
 
-@p__.fixture()
+@p__.f..()
 ___ list1
     r.. IntList([1, 3, 5])
 
 
-@p__.fixture()
+@p__.f..()
 ___ list2
     r.. IntList([2, 3, 4, 5, 7])
 
@@ -34,7 +34,7 @@ ___ test_mean_median_start_second_instance(list2):
 ___ test_append_and_new_stats_second_instance(list2):
     list2.a..(9.0)  # float ok too
     list2.a..(Decimal(11))  # decimal ok too
-    ... round(list2.mean, 2) __ 5.86
+    ... r..(list2.mean, 2) __ 5.86
     ... list2.median __ 5
 
 

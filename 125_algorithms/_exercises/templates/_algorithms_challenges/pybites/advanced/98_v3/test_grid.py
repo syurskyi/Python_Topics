@@ -25,7 +25,7 @@ ___ test_print_sequence_route_small_grid(capfd):
     22 23 24 25""".splitlines()
 
     print_sequence_route(small_grid)
-    output = capfd.readouterr()[0].splitlines()
+    output = ?.r .. 0].splitlines()
 
     ___ i, j __ z..(expected, output):
         ... i.s.. __ j.s..
@@ -64,7 +64,7 @@ ___ test_print_sequence_route_intermediate_grid(capfd):
     44 45 46 47 48 49""".splitlines()
 
     print_sequence_route(intermediate_grid)
-    output = capfd.readouterr()[0].splitlines()
+    output = ?.r .. 0].splitlines()
 
     ___ i, j __ z..(expected, output):
         ... i.s.. __ j.s..
@@ -111,7 +111,7 @@ ___ test_print_sequence_route_big_grid(capfd):
     74 75 76 77 78 79 80 81 """.splitlines()
 
     print_sequence_route(big_grid)
-    output = capfd.readouterr()[0].splitlines()
+    output = ?.r .. 0].splitlines()
 
     ___ i, j __ z..(expected, output):
         ... i.s.. __ j.s..

@@ -94,7 +94,7 @@ ___ return_codon_usage_table(
 
     ___ codon,count __ codon_to_count.i..:
         amino_acid = amino_acid_mapping[codon]
-        frequency_per_1000 = round((count/total) * 1000,1)
+        frequency_per_1000 = r..((count/total) * 1000,1)
         codon_to_count[codon] = [amino_acid,frequency_per_1000,count]
 
 

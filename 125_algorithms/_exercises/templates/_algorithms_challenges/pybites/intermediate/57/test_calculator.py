@@ -3,28 +3,28 @@ _______ p__
 ____ calculator _______ create_parser, call_calculator
 
 
-@p__.fixture
+@p__.f..
 ___ parser
     r.. create_parser()
 
 
 ___ test_one_arg_no_numbers_exits(parser):
-    w__ p__.r..(SystemExit):
+    w__ p__.r..(S..):
         args = parser.parse_args(['--add'])
         call_calculator(args=args)
 
  
 ___ test_call_with_wrong_operation(parser):
-    w__ p__.r..(SystemExit):
+    w__ p__.r..(S..):
         args = parser.parse_args(['--sum', '10'])
         call_calculator(args=args)
 
 
 ___ test_help_text_hints(parser, capfd):
-    w__ p__.r..(SystemExit):
+    w__ p__.r..(S..):
         parser.parse_args(['-h'])
 
-    output = capfd.readouterr()[0].l..
+    output = ?.r .. 0].l..
     ... 'usage' __ output
     ... 'a simple calculator' __ output
     ___ op __ 'add sub mul div'.s.. :

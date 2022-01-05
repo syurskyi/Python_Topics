@@ -162,12 +162,12 @@ EXPECTED_OUTPUT_WITH_GAP = """
 """
 
 
-@p__.fixture(scope='module')
+@p__.f..(scope='module')
 ___ actual
     r.. [line.rstrip() ___ line __ filter_killed_mutants()]
 
 
-@p__.fixture(scope='module')
+@p__.f..(scope='module')
 ___ actual2
     """Same output but filter out test 10 (killed) and 11 (survived),
        to avoid the hardcoded output gets returned from function

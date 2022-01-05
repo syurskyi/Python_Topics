@@ -7,7 +7,7 @@ ___ convert(value: float, fmt: s..) __ float:
     """
     __ isi..(value, i..) o. isi..(value, float):
         __ fmt.l.. __ 'cm' o. fmt.l.. __ 'in':
-            r.. round(value*2.54, 4) __ fmt.l.. __ 'cm' ____ round(value/2.54, 4)
+            r.. r..(value*2.54, 4) __ fmt.l.. __ 'cm' ____ r..(value/2.54, 4)
         ____:
             r.. ValueError
     ____:

@@ -8,7 +8,7 @@ ___ running_mean(sequence):
     s = 0
     ___ i,number __ e..(sequence):
         s += number
-        running.a..(round(s/(i + 1),2))
+        running.a..(r..(s/(i + 1),2))
 
     r.. running
 

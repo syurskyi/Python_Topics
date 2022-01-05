@@ -37,6 +37,6 @@ c_ ComplexNumber(object):
         r.. ComplexNumber(real, -1 * imaginary)
 
     ___ exp
-        r = round(math.cos(imaginary), 8) * math.exp(real)
-        i = round(math.sin(imaginary), 8) * math.exp(real)
+        r = r..(math.cos(imaginary), 8) * math.exp(real)
+        i = r..(math.sin(imaginary), 8) * math.exp(real)
         r.. ComplexNumber(r, i)

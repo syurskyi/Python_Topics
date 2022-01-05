@@ -5,7 +5,7 @@ _______ p__
 ____ sequence_generator _______ sequence_generator
 
 
-@p__.fixture
+@p__.f..
 ___ gen
     """Return a fresh new generator object for each test"""
     r.. sequence_generator()

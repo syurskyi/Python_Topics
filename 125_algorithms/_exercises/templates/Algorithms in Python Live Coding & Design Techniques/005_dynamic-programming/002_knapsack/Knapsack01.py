@@ -41,7 +41,7 @@ ___ get_max_profit_bu(weight, price, n, capacity
 weight  [7, 5, 4]
 price  [15, 8, 8]
 capacity  10
-n  le_(weight)
+n  le_ ?
 
 values  [[-1 ___ i __ ra__(capacity+1)] ___ i __ ra__(n+1)]
 print(get_max_profit_bu(weight, price, n, capacity))

@@ -36,7 +36,7 @@ ___ test_multiply(arg, expected):
     ('-2 / 175', -0.01),
 ])
 ___ test_true_division(arg, expected):
-    ... round(simple_calculator(arg), 2) __ expected
+    ... r..(simple_calculator(arg), 2) __ expected
 
 
 @p__.mark.parametrize("arg", [

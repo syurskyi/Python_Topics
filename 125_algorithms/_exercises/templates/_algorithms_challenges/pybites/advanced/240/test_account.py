@@ -3,12 +3,12 @@ ____ account _______ Account
 
 
 # write your pytest functions below, they need to start with test_
-@p__.fixture
+@p__.f..
 ___ einstein
     r.. Account('Einstein', 100)
 
 
-@p__.fixture
+@p__.f..
 ___ socrates
     r.. Account('Socrates', 0)
 

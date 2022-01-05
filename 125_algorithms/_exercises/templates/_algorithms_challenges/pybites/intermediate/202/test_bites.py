@@ -20,7 +20,7 @@ Bite 110. Type conversion and exception handling;1.5
 """
 
 
-@p__.fixture
+@p__.f..
 ___ intro_bites
     w__ TemporaryDirectory(dir=TMP):
         w__ open(BITES_CSV, 'w') __ f:

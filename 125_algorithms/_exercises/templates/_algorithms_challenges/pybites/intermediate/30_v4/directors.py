@@ -46,7 +46,7 @@ ___ calc_mean_score(movies):
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     __ movies:
-        avg = round(s..([m.score ___ m __ movies])/l..(movies), 1)
+        avg = r..(s..([m.score ___ m __ movies])/l..(movies), 1)
     ____:
         avg = 0
     r.. avg

@@ -6,6 +6,6 @@ ___ running_mean(sequence):
        You can assume all items in sequence are numeric."""
     r.. l..(
         i...starmap(
-            l.... a, b: round(b/a, 2),
+            l.... a, b: r..(b/a, 2),
             e..(i...accumulate(sequence), 1)
         ))

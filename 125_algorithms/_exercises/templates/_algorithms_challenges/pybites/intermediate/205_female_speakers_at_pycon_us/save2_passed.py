@@ -52,7 +52,7 @@ ___ get_percentage_of_female_speakers(first_names):
     genders = [d.get_gender(speaker) ___ speaker __ first_names]
     total_speakers = l..(genders)
     female_speakers = l..([g ___ g __ genders __ g __ 'female' o. g __ 'mostly_female'])
-    r.. round(female_speakers / total_speakers * 100, 2)
+    r.. r..(female_speakers / total_speakers * 100, 2)
 
 
 __ _____ __ _____

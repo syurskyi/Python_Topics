@@ -1,4 +1,4 @@
-_______ argparse
+_______ a__
 _______ functools
 
 ___ calculator(f, numbers):
@@ -8,7 +8,7 @@ ___ calculator(f, numbers):
     
 
 
-    r.. round(functools.reduce(l.... x,y: f(x,y),numbers),2)
+    r.. r..(functools.reduce(l.... x,y: f(x,y),numbers),2)
 
 
 
@@ -21,13 +21,13 @@ ___ create_parser
 
        Note that type=float times out here so do the casting in the calculator
        function above!"""
-    ap = argparse.ArgumentParser("A simple calculator")
+    ap = a__.A..("A simple calculator")
     group = ap.add_mutually_exclusive_group(required=T..)
-    group.add_argument("-m",'--mul',action='store_true',help="Multiplies numbers")
-    group.add_argument("-s",'--sub',action='store_true',help="Subtracts numbers")
-    group.add_argument("-a",'--add',action='store_true',help="Sums numbers")
-    group.add_argument("-d",'--div',action='store_true',help="Divides numbers")
-    ap.add_argument('numbers',nargs='+',t..=float)
+    group.a..("-m",'--mul',a.._'store_true',h.._"Multiplies numbers")
+    group.a..("-s",'--sub',a.._'store_true',h.._"Subtracts numbers")
+    group.a..("-a",'--add',a.._'store_true',h.._"Sums numbers")
+    group.a..("-d",'--div',a.._'store_true',h.._"Divides numbers")
+    ap.a..('numbers',nargs='+',t..=float)
 
     r.. ap
 

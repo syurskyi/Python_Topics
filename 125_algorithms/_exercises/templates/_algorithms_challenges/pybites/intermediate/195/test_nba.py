@@ -21,7 +21,7 @@ ___ test_number_of_players_from_duke
 
 
 ___ test_avg_years_active_players_stanford
-    ... round(avg_years_active_players_stanford(), 2) __ 4.58
+    ... r..(avg_years_active_players_stanford(), 2) __ 4.58
 
 
 ___ test_year_with_most_new_players

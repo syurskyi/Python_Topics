@@ -54,7 +54,7 @@ mock_html = """
 """
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ enchantment_mock
     enchant = Enchantment(
         "python_developer",
@@ -65,28 +65,28 @@ ___ enchantment_mock
     r.. enchant
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ item_mock(enchantment_mock):
     item = Item("clamytoe")
     r.. item
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ mock_soup
     r.. get_soup(mock_html)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ mock_data(mock_soup):
     r.. generate_enchantments(mock_soup)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ mocked_generate_items(mock_data):
     r.. generate_items(mock_data)
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ coders_dataset
     soup = get_soup()
     mc_data = generate_enchantments(soup)
@@ -111,7 +111,7 @@ ___ test_enchantment_class_add_items(enchantment_mock, item_mock):
 
 ___ test_enchantment_class_print(enchantment_mock, capfd):
     print(enchantment_mock)
-    output = capfd.readouterr()[0].s..("\n")[0]
+    output = ?.r .. 0].s..("\n")[0]
     ... (
         output
         __ "Python Developer (10): Ability automate really boring and repetitive tasks at work"
@@ -125,13 +125,13 @@ ___ test_item_class(item_mock, enchantment_mock):
 
 ___ test_item_class_print(item_mock, capfd):
     print(item_mock)
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... output __ "Clamytoe: \n  [10] python_developer"
 
 
 ___ test_enchantment_print(mock_data, capfd):
     print(mock_data["channeling"])
-    output = capfd.readouterr()[0].s..("\n")[0]
+    output = ?.r .. 0].s..("\n")[0]
     ... (
         output
         __ "Channeling (1): Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
@@ -292,5 +292,5 @@ ___ test_gen_items(coders_dataset, item, expected):
 )
 ___ test_item_print(coders_dataset, item, expected, capfd):
     print(coders_dataset[item])
-    output = capfd.readouterr()[0].s..
+    output = ?.r .. 0].s..
     ... output __ expected

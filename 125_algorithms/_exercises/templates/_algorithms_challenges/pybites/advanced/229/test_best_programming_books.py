@@ -3,7 +3,7 @@ _______ p__
 ____ best_programming_books _______ Book, display_books, load_data
 
 
-@p__.fixture(scope="session")
+@p__.f..(scope="session")
 ___ dummy_book
     title = "Python Testing with pytest"
     author = "Okken, Brian"
@@ -13,7 +13,7 @@ ___ dummy_book
     r.. Book(title, author, year, rank, rating)
 
 
-@p__.fixture(scope="session")
+@p__.f..(scope="session")
 ___ python_books
     data = load_data()
     __ isi..(data, l..):
@@ -75,7 +75,7 @@ ___ test_load_data(python_books):
 )
 ___ test_display_books(python_books, index, expected, capfd):
     display_books(python_books, year=2017)
-    output = capfd.readouterr()[0].splitlines()
+    output = ?.r .. 0].splitlines()
     ... output[index] __ expected
 
 
@@ -84,5 +84,5 @@ ___ test_display_books(python_books, index, expected, capfd):
 )
 ___ test_display_books_plus(python_books, limit, expected, capfd):
     display_books(python_books, limit=limit)
-    output = capfd.readouterr()[0].splitlines()
+    output = ?.r .. 0].splitlines()
     ... l..(output) __ expected

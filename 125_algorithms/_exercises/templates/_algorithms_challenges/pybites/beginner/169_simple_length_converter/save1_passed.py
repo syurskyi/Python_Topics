@@ -13,8 +13,8 @@ ___ convert(value: float, fmt: s..) __ float:
         except T..:
             print('TypeError. Please input float.')
     __ fmt __ 'cm':
-        r.. round(value * 2.54, 4)
+        r.. r..(value * 2.54, 4)
     ____ fmt __ 'in':
-        r.. round(value / 2.54, 4)
+        r.. r..(value / 2.54, 4)
     ____:
         r.. ValueError

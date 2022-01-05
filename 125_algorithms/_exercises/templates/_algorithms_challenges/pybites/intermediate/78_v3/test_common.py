@@ -3,7 +3,7 @@ _______ p__
 ____ common _______ common_languages
 
 
-@p__.fixture()
+@p__.f..()
 ___ programmers
     r.. d..(bob=['JS', 'PHP', 'Python', 'Perl', 'Java'],
                 tim=['Python', 'Haskell', 'C++', 'JS'],

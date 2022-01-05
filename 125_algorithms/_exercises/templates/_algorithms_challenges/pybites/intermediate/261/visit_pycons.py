@@ -169,4 +169,4 @@ ___ total_travel_distance(journey):
     """
 
 
-    r.. round(s..(leg.distance ___ leg __ journey),2)
+    r.. r..(s..(leg.distance ___ leg __ journey),2)

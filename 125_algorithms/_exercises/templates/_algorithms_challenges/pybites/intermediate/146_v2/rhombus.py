@@ -42,12 +42,12 @@ ___ gen_rhombus(width):
 
 __ _______ __ _______
 
-    _______ argparse
+    _______ a__
 
 
-    ap = argparse.ArgumentParser("rhombus generator")
+    ap = a__.A..("rhombus generator")
 
-    ap.add_argument("-w","--width",t..=i..,required=T..,help="width of rhombus")
+    ap.a..("-w","--width",t..=i..,required=T..,h.._"width of rhombus")
 
     args = vars(ap.parse_args())
     width = args["width"]

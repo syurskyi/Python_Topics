@@ -9,7 +9,7 @@ ___ call_print_colors
     # some people prefer sys.exit instead of break
     try:
         print_colors()
-    except SystemExit:
+    except S..:
         p..
 
 

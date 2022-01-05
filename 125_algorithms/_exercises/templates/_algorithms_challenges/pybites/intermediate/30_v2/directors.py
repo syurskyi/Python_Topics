@@ -57,7 +57,7 @@ ___ calc_mean_score(movies):
        round the mean to 1 decimal place"""
     
 
-    r.. round(s..(movie.score ___ movie __ movies) /l..(movies),1)
+    r.. r..(s..(movie.score ___ movie __ movies) /l..(movies),1)
 
 
 

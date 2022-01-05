@@ -9,7 +9,7 @@ c_ IntList(l..):
     ___ _validate(self, numbers):
         __ isi..(numbers, (i.., float, Decimal)):
             numbers = [numbers]
-        numbers = [i..(n) ___ n __ numbers __ round(n, 0) __ i..(n)]
+        numbers = [i..(n) ___ n __ numbers __ r..(n, 0) __ i..(n)]
         __ n.. isi..(numbers, i..) a.. any(n.. isi..(x, i..) ___ x __ numbers):
             r.. T.. _*{__class__.__name__} can only operate with integer values')
         r.. numbers

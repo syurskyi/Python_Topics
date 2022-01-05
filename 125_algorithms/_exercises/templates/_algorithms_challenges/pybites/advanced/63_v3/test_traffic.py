@@ -5,13 +5,13 @@ _______ p__
 ____ Previous.traffic _______ traffic_light, State
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ slice1
     it = traffic_light()
     r.. l..(islice(it, 96))
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ slice2
     it = traffic_light()
     r.. l..(islice(it, 100, 217))

@@ -1,4 +1,4 @@
-_______ argparse
+_______ a__
 ____ functools _______ reduce
 ____ operator _______ add, sub, mul, truediv
 
@@ -8,7 +8,7 @@ ___ calculator(operation, numbers):
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
     OPS = {'add': add, 'sub': sub, 'mul': mul, 'div': truediv}
-    r.. round(reduce(OPS[operation], map(float, numbers)), 2)
+    r.. r..(reduce(OPS[operation], map(float, numbers)), 2)
 
 
 ___ create_parser
@@ -16,15 +16,15 @@ ___ create_parser
     - an opration argument
     - one or more numbers to operate on
     """
-    parser = argparse.ArgumentParser(description='A simple calculator')
-    parser.add_argument('-a', '--add', nargs='+',
-                        help='Sums numbers')
-    parser.add_argument('-s', '--sub', nargs='+',
-                        help='Subtracts numbers')
-    parser.add_argument('-m', '--mul', nargs='+',
-                        help='Multiplies numbers')
-    parser.add_argument('-d', '--div', nargs='+',
-                        help='Divides numbers')
+    parser = a__.A..(d.._'A simple calculator')
+    parser.a..('-a', '--add', nargs='+',
+                        h.._'Sums numbers')
+    parser.a..('-s', '--sub', nargs='+',
+                        h.._'Subtracts numbers')
+    parser.a..('-m', '--mul', nargs='+',
+                        h.._'Multiplies numbers')
+    parser.a..('-d', '--div', nargs='+',
+                        h.._'Divides numbers')
 
     r.. parser
 
@@ -37,7 +37,7 @@ ___ call_calculator(args=N.., stdout=F..):
     parser = create_parser()
 
     __ args __ N..
-        args = parser.parse_args()
+        args = parser.p..
 
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one

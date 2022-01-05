@@ -7,8 +7,8 @@ ___ convert(value: float, fmt: s..) __ float:
     """
     __ n.. isi..(value, (i.., float)):
         r.. T..()
-    fn = {'in': l.... x: round(x / 2.54, 4),
-          'cm': l.... x: round(x * 2.54, 4)}
+    fn = {'in': l.... x: r..(x / 2.54, 4),
+          'cm': l.... x: r..(x * 2.54, 4)}
     __ fmt.l.. __ fn:
         r.. fn[fmt.l..](value)
     r.. ValueError()

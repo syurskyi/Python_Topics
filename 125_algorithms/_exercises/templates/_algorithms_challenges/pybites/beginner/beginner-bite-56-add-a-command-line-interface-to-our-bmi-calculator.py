@@ -21,24 +21,24 @@ We have two more Bites to practice argparse: 57 and 58.
 '''
 
 
-_______ argparse
+_______ a__
 
 
 ___ calc_bmi(weight, length):
     """Provided/DONE:
        Calc BMI give a weight in kg and length in cm, return the BMI
        rounded on 2 decimals"""
-    bmi = i..(weight) / ((i..(length) / 100) ** 2)
-    r.. round(bmi, 2)
+    bmi = i.. ? / ((i..(length) / 100) ** 2)
+    r.. r..(bmi, 2)
 
 
 ___ create_parser
     """TODO:
        Create an ArgumentParser adding the right arguments to pass the tests,
        returns a argparse.ArgumentParser object"""
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-w", "--weight", help="Your weight in kg")
-    parser.add_argument("-l", "--length", help="Your length in cm")
+    parser = a__.A..()
+    parser.a..("-w", "--weight", h.._"Your weight in kg")
+    parser.a..("-l", "--length", h.._"Your length in cm")
     r.. parser
 
 
@@ -48,15 +48,15 @@ ___ handle_args(args_ N..
        If args are not provided get them from create_parser"""
     __ args __ N..
         parser = create_parser()
-        args = parser.parse_args()
+        args = parser.p..
 
     __ args.weight a.. args.length:
-        bmi = calc_bmi(args.weight, args.length)
+        bmi _ ? ?.w.. ?.l..
         print _*Your BMI is: {bmi}')
     ____:
         # could enforce SystemExit in create_parser/add_argument, but argparse
         # docs are not clear how to do it, so raising the exception here manually
-        r.. SystemExit
+        r.. S..
 
 
 __ _____ __ _____

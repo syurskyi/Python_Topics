@@ -4,7 +4,7 @@ _______ p__
 ____ cached_property _______ Planet
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ blue
     r.. Planet('blue')
 

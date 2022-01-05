@@ -51,7 +51,7 @@ ___ test_json2csv(file_no, expected, exception, capfd):
             ... 'Invalid control character' __ s..(exc)
 
         # testing you actually caught the exception!
-        output = capfd.readouterr()[0].s..
+        output = ?.r .. 0].s..
         ... output __ EXCEPTION
         r..
 

@@ -3,7 +3,7 @@ _______ p__
 ____ timings _______ timings_log, get_bite_with_fastest_avg_test
 
 
-@p__.fixture(scope='module')
+@p__.f..(scope='module')
 ___ timings
     w__ open(timings_log) __ f:
         r.. f.readlines()

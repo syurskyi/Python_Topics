@@ -13,7 +13,7 @@ ___ test_what_means_emoji_not_found
 
 ___ test_find_matches(capfd):
     find_emoji('sun')
-    output = capfd.readouterr()[0].l..
+    output = ?.r .. 0].l..
     # some of the results you should get back
     ... 'sunrise' __ output
     ... '🌅' __ output
@@ -25,5 +25,5 @@ ___ test_find_matches(capfd):
 
 ___ test_find_no_match(capfd):
     find_emoji('awesome')
-    output = capfd.readouterr()[0].l..
+    output = ?.r .. 0].l..
     ... n.. output.s.. o. 'no matches' __ output.l..

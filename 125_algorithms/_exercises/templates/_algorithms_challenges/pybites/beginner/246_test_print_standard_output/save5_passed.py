@@ -24,5 +24,5 @@ ____ workouts _______ print_workout_days
 ])
 ___ test_print_workout_days(arg, expected, capfd):
     print_workout_days(arg)
-    actual = capfd.readouterr()[0].s..
+    actual = ?.r .. 0].s..
     ... actual __ expected

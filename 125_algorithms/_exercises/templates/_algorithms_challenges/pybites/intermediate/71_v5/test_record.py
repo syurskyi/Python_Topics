@@ -3,7 +3,7 @@ _______ p__
 ____ record _______ RecordScore
 
 
-@p__.fixture()
+@p__.f..()
 ___ record
     """Make a RecordScore object with a few scores"""
     record = RecordScore()

@@ -76,7 +76,7 @@ c_ Solution:
         :rtype: int
         """
         n = l..(nums)
-        avg = round(s..(nums) / n)
+        avg = r..(s..(nums) / n)
         r.. s..(map(l.... x: abs(x - avg), nums))
 
 

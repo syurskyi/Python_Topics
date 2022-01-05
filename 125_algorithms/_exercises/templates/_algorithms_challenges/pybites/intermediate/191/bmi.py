@@ -33,7 +33,7 @@ ___ person_max_bmi(data=data):
          bmi[current[0]] = float(current[2]) / ((i..(current[1])) / 100) ** 2
 
     name_max_bmi = max(bmi, key = bmi.get)
-    r.. (name_max_bmi, round(bmi[name_max_bmi], 2))
+    r.. (name_max_bmi, r..(bmi[name_max_bmi], 2))
 
 # if __name__ == "__main__":
 #    print(person_max_bmi())

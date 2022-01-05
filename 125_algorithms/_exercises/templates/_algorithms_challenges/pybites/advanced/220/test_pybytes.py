@@ -6,7 +6,7 @@ REAL_PYTHON = "realpython.com"
 PYBITES = 'pybit.es'
 
 
-@p__.fixture(scope="module")
+@p__.f..(scope="module")
 ___ pb
     r.. PythonBytes()
 

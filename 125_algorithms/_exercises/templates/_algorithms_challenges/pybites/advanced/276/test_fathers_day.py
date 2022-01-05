@@ -93,5 +93,5 @@ ___ test_get_father_days_other_years
 
 ___ test_generate_father_day_planning(capfd):
     generate_father_day_planning()
-    actual = capfd.readouterr()[0]
+    actual = ?.r .. 0]
     ... actual.s.. __ CALENDAR_OUTPUT

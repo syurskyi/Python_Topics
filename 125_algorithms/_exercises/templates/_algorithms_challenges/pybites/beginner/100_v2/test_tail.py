@@ -11,7 +11,7 @@ Become a PyBites ninja!"""
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
 
-@p__.fixture
+@p__.f..
 ___ my_file(tmp_path):
     f = tmp_path / "some_file.txt"
     f.write_bytes(content)

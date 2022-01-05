@@ -3,22 +3,22 @@ _______ p__
 ____ karma _______ User, Transaction
 
 
-@p__.fixture
+@p__.f..
 ___ bob
     r.. User('bob')
 
 
-@p__.fixture
+@p__.f..
 ___ tim
     r.. User('tim')
 
 
-@p__.fixture
+@p__.f..
 ___ alice
     r.. User('alice')
 
 
-@p__.fixture
+@p__.f..
 ___ transactions(bob, tim, alice):
     r.. [
         Transaction(giver=alice, points=1),

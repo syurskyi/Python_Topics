@@ -8,5 +8,5 @@ ___ calculate_gc_content(sequence):
     count = Counter(sequence.lower())
     total_acgt = count['a'] + count['c'] + count['g'] + count['t']
     total_gc = count['c'] + count['g']
-    r.. round( (total_gc/total_acgt) *100,2)
+    r.. r..( (total_gc/total_acgt) *100,2)
 

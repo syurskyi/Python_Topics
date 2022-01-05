@@ -5,7 +5,7 @@ ___ smooth_weather(values):
     result[-1] = values[-1]
 
     ___ i __ r..(l..(values)-2):
-        smoothed_weather = round((values[i]+values[i+1]+values[i+2])/3, 7)
+        smoothed_weather = r..((values[i]+values[i+1]+values[i+2])/3, 7)
         result[i+1] = smoothed_weather
 
     r.. result
