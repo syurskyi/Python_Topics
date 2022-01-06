@@ -1,15 +1,15 @@
 ____ co.. ______ d..
 
 
-c_ LRUCache:
+c_ LRUCache
 
-    ___  -  capacity: __.
-        .c _ capacity
+    ___  -  capacity __.
+        .c _ ?
         .m _ di.. 
         .deq _ d..
 
-    ___ g.. key: __.  __.:
-        __ key __ .m:
+    ___ g.. key: __.  __.
+        __ key __ .m
             value _ .m[key]
             .deq.r.. key
             .deq.ap.. key

@@ -37,3 +37,9 @@ class Solution:
             visited_last_index[ord(val)] = ind  # update last visited index
 
         return longest
+
+
+if __name__ == "__main__":
+    s = Solution()
+    answer = s.lengthOfLongestSubstring("fivestarview")
+    print(answer)

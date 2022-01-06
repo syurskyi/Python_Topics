@@ -4,22 +4,22 @@ Created on Nov 8, 2017
 @author: MT
 '''
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , val, nextNode_ N..
-        val = val
-        next = nextNode
+c_ ListNode o..
+    ___ -  val nextNode_ N..
+        ? ?
+        ? ?
 
-c_ Solution(o..):
-    ___ addTwoNumbers  l1, l2):
+c_ Solution o..
+    ___ addTwoNumbers  l1, l2
         """
         :type l1: ListNode
         :type l2: ListNode
         :rtype: ListNode
         """
-        dummy = ListNode(-1)
-        prev = dummy
-        carry = 0
-        w.... l1 a.. l2:
+        dummy  ? -1
+        prev  ?
+        carry  0
+        w.... l1 a.. l2
             tmpVal = l1.val+l2.val+carry
             __ tmpVal >= 10:
                 tmpVal -= 10
