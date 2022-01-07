@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 
 def on_clicked():
-    QtGui.QMessageBox.information(window, "Текст заголовка",
+    QtWidgets.QMessageBox.information(window, "Текст заголовка",
                                   "Текст сообщения",
-                                  buttons=QtGui.QMessageBox.Close,
-                                  defaultButton=QtGui.QMessageBox.Close)
+                                  buttons=QtWidgets.QMessageBox.Close,
+                                  defaultButton=QtWidgets.QMessageBox.Close)
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Класс QMessageBox")
 window.resize(300, 70)
 
-button = QtGui.QPushButton("Отобразить диалоговое окно...")
+button = QtWidgets.QPushButton("Отобразить диалоговое окно...")
 button.clicked.connect(on_clicked)
 
-box = QtGui.QVBoxLayout()
+box = QtWidgets.QVBoxLayout()
 box.addWidget(button)
 window.setLayout(box)
 window.show()

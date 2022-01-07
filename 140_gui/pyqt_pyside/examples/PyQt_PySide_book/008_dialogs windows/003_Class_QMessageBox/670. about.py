@@ -1,23 +1,23 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 
 def on_clicked():
-    QtGui.QMessageBox.about(window, "Текст заголовка",
+    QtWidgets.QMessageBox.about(window, "Текст заголовка",
                             "Описание программы")
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Класс QMessageBox")
 window.resize(300, 70)
 
-ico = window.style().standardIcon(QtGui.QStyle.SP_MessageBoxCritical)
+ico = window.style().standardIcon(QtWidgets.QStyle.SP_MessageBoxCritical)
 app.setWindowIcon(ico)    # Иконка приложения
 
-button = QtGui.QPushButton("Отобразить диалоговое окно...")
+button = QtWidgets.QPushButton("Отобразить диалоговое окно...")
 button.clicked.connect(on_clicked)
 
-box = QtGui.QVBoxLayout()
+box = QtWidgets.QVBoxLayout()
 box.addWidget(button)
 window.setLayout(box)
 window.show()

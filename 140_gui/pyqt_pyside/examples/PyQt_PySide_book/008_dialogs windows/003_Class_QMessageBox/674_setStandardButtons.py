@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 
 def on_button_clicked(btn):
@@ -7,34 +7,34 @@ def on_button_clicked(btn):
         print(btn.text())
 
 def on_clicked():
-    dialog = QtGui.QMessageBox(parent=window)
-    dialog.setIcon(QtGui.QMessageBox.Critical)
+    dialog = QtWidgets.QMessageBox(parent=window)
+    dialog.setIcon(QtWidgets.QMessageBox.Critical)
     dialog.setWindowTitle("Текст заголовка")
     dialog.setText("Текст <b>сообщения</b><br>на двух строках")
     dialog.setInformativeText("Поясняющий <b>текст</b>")
     dialog.setDetailedText("Описание деталей")
-    dialog.setStandardButtons(QtGui.QMessageBox.Ok |
-                              QtGui.QMessageBox.Cancel)
-    dialog.setDefaultButton(QtGui.QMessageBox.Cancel)
-    dialog.setEscapeButton(QtGui.QMessageBox.Cancel)
+    dialog.setStandardButtons(QtWidgets.QMessageBox.Ok |
+                              QtWidgets.QMessageBox.Cancel)
+    dialog.setDefaultButton(QtWidgets.QMessageBox.Cancel)
+    dialog.setEscapeButton(QtWidgets.QMessageBox.Cancel)
     dialog.buttonClicked["QAbstractButton *"].connect(on_button_clicked)
     result = dialog.exec_()
-    if result == QtGui.QMessageBox.Ok:
+    if result == QtWidgets.QMessageBox.Ok:
         print("Нажата кнопка OK")
-    elif result == QtGui.QMessageBox.Cancel:
+    elif result == QtWidgets.QMessageBox.Cancel:
         print("Нажата кнопка Cancel, кнопка Закрыть или клавиша <Esc>")
     else:
         print("Нажата кнопка", result)
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Класс QMessageBox")
 window.resize(300, 70)
 
-button = QtGui.QPushButton("Отобразить диалоговое окно...")
+button = QtWidgets.QPushButton("Отобразить диалоговое окно...")
 button.clicked.connect(on_clicked)
 
-box = QtGui.QVBoxLayout()
+box = QtWidgets.QVBoxLayout()
 box.addWidget(button)
 window.setLayout(box)
 window.show()

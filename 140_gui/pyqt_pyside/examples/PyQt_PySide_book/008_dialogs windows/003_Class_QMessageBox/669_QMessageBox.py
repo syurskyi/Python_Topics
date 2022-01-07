@@ -1,30 +1,30 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtGui,QtWidgets
 import sys
 
 def on_clicked():
-    dialog = QtGui.QMessageBox(QtGui.QMessageBox.Critical,
+    dialog = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Critical,
                                "Текст заголовка", "Текст сообщения",
-                               buttons = QtGui.QMessageBox.Ok |
-                               QtGui.QMessageBox.Cancel,
+                               buttons = QtWidgets.QMessageBox.Ok |
+                               QtWidgets.QMessageBox.Cancel,
                                parent=window)
     result = dialog.exec_()
-    if result == QtGui.QMessageBox.Ok:
+    if result == QtWidgets.QMessageBox.Ok:
         print("Нажата кнопка OK")
-    elif result == QtGui.QMessageBox.Cancel:
+    elif result == QtWidgets.QMessageBox.Cancel:
         print("Нажата кнопка Cancel, кнопка Закрыть или клавиша <Esc>")
     else:
         print("Нажата кнопка", result)
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Класс QMessageBox")
 window.resize(300, 70)
 
-button = QtGui.QPushButton("Отобразить диалоговое окно...")
+button = QtWidgets.QPushButton("Отобразить диалоговое окно...")
 button.clicked.connect(on_clicked)
 
-box = QtGui.QVBoxLayout()
+box = QtWidgets.QVBoxLayout()
 box.addWidget(button)
 window.setLayout(box)
 window.show()

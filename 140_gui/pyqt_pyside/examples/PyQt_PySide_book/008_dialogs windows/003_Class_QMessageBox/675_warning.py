@@ -1,31 +1,31 @@
 # -*- coding: utf-8 -*-
-from PyQt4 import QtCore, QtGui
+from PyQt5 import QtCore, QtWidgets, QtWidgets
 import sys
 
 def on_clicked():
-    result = QtGui.QMessageBox.warning(window, "Текст заголовка",
+    result = QtWidgets.QMessageBox.warning(window, "Текст заголовка",
                    "Действие может быть опасным. Продолжить?",
-                   buttons=QtGui.QMessageBox.Yes | QtGui.QMessageBox.No |
-                   QtGui.QMessageBox.Cancel,
-                   defaultButton=QtGui.QMessageBox.Cancel)
-    if result == QtGui.QMessageBox.Yes:
+                   buttons=QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No |
+                   QtWidgets.QMessageBox.Cancel,
+                   defaultButton=QtWidgets.QMessageBox.Cancel)
+    if result == QtWidgets.QMessageBox.Yes:
         print("Нажата кнопка Yes")
-    elif result == QtGui.QMessageBox.No:
+    elif result == QtWidgets.QMessageBox.No:
         print("Нажата кнопка No")
-    elif result == QtGui.QMessageBox.Cancel:
+    elif result == QtWidgets.QMessageBox.Cancel:
         print("Нажата кнопка Cancel, кнопка Закрыть или клавиша <Esc>")
     else:
         print("Нажата кнопка", result)
 
-app = QtGui.QApplication(sys.argv)
-window = QtGui.QWidget()
+app = QtWidgets.QApplication(sys.argv)
+window = QtWidgets.QWidget()
 window.setWindowTitle("Класс QMessageBox")
 window.resize(300, 70)
 
-button = QtGui.QPushButton("Отобразить диалоговое окно...")
+button = QtWidgets.QPushButton("Отобразить диалоговое окно...")
 button.clicked.connect(on_clicked)
 
-box = QtGui.QVBoxLayout()
+box = QtWidgets.QVBoxLayout()
 box.addWidget(button)
 window.setLayout(box)
 window.show()
