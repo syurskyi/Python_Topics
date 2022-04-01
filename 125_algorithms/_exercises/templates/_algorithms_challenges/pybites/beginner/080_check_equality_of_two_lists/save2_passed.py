@@ -1,7 +1,7 @@
-____ enum _______ Enum
+____ e.. _______ E..
 
 
-c_ Equality(Enum):
+c_ Equality(E..):
     SAME_REFERENCE = 4
     SAME_ORDERED = 3
     SAME_UNORDERED = 2

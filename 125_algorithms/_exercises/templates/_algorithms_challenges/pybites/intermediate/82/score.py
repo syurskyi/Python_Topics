@@ -1,4 +1,4 @@
-____ enum _______ Enum
+____ e.. _______ E..
 
 THUMBS_UP = '👍'  # in case you go f-string ...
 
@@ -9,7 +9,7 @@ THUMBS_UP = '👍'  # in case you go f-string ...
 # CHEATED = 1
 
 
-c_ Score(Enum):
+c_ Score(E..):
     
     BEGINNER = 2
     INTERMEDIATE = 3

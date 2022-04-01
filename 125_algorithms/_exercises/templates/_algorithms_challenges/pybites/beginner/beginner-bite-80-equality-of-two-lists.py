@@ -11,9 +11,9 @@ return SAME_UNORDERED_DEDUPED if they have the same unordered content and reduce
 and finally return NO_EQUALITY if none of the previous cases match.
 '''
 
-____ enum _______ Enum
+____ e.. _______ E..
 
-c_ Equality(Enum):
+c_ Equality(E..):
     SAME_REFERENCE = 4
     SAME_ORDERED = 3
     SAME_UNORDERED = 2

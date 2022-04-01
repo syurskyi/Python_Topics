@@ -155,11 +155,11 @@ ___ test_ddmmyy
 ___ test_different_enum
     """ Modified enum - now it supports 4 different time formats.
         Order of formats is changed as well"""
-    ____ enum _______ Enum
+    ____ e.. _______ E..
     # import the module with the tested code which contains the original emum
     _______ primitive_date_inferrer __ pdi
 
-    c_ DateFormat_ext(Enum):
+    c_ DateFormat_ext(E..):
         DDMMYYYY = 0
         DDMMYY = 1
         YYMMDD = 2

@@ -1,9 +1,9 @@
-____ enum _______ Enum
+____ e.. _______ E..
 
 THUMBS_UP = '👍'  # in case you go f-string ...
 
 # move these into an Enum:
-c_ Score(Enum):
+c_ Score(E..):
     BEGINNER = 2
     INTERMEDIATE = 3
     ADVANCED = 4

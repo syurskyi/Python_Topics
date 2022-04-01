@@ -11,10 +11,10 @@ The input of blood type can be in the form of:
 Keywords: enum, exception handling, multi type input
 """
 
-____ enum _______ Enum
+____ e.. _______ E..
 
 
-c_ Bloodtype(Enum):
+c_ Bloodtype(E..):
     ZERO_NEG = 0
     ZERO_POS = 1
     B_NEG = 2

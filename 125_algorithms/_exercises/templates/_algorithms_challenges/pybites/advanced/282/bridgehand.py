@@ -1,10 +1,10 @@
 ____ c.. _______ n..,defaultdict
-____ enum _______ Enum
+____ e.. _______ E..
 ____ typing _______ Sequence
 ____ c...abc _______ Sequence __ seq
 
-Suit = Enum("Suit", l..("SHDC"))
-Rank = Enum("Rank", l..("AKQJT98765432"))
+Suit = E..("Suit", l..("SHDC"))
+Rank = E..("Rank", l..("AKQJT98765432"))
 Card = n..("Card", ["suit", "Rank"])
 
 HCP = {Rank.A: 4, Rank.K: 3, Rank.Q: 2, Rank.J: 1}

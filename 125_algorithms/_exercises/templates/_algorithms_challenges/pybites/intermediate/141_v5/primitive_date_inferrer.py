@@ -1,9 +1,9 @@
 ____ c.. _______ Counter
 ____ d__ _______ d__
-____ enum _______ Enum
+____ e.. _______ E..
 
 
-c_ DateFormat(Enum):
+c_ DateFormat(E..):
     DDMMYY = 0  # dd/mm/yy
     MMDDYY = 1  # mm/dd/yy
     YYMMDD = 2  # yy/mm/dd

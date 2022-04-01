@@ -1,9 +1,9 @@
 _______ sqlite3
-____ enum _______ Enum
+____ e.. _______ E..
 ____ typing _______ Any, Dict, List, Optional, Tuple, Union
 
 
-c_ SQLiteType(Enum):
+c_ SQLiteType(E..):
     """Enum matching SQLite data types to corresponding Python types.
 
     Supported SQLite types:

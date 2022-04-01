@@ -19,10 +19,10 @@ See the TESTS tab for more details
 '''
 
 _______ s__
-____ enum _______ Enum
+____ e.. _______ E..
 
 
-c_ State(Enum):
+c_ State(E..):
     ALPHANUMERIC = 1
     NON_ALPHANUMERIC = 2
 
