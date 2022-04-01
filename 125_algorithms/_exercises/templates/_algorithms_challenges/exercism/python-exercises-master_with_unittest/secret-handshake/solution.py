@@ -15,7 +15,7 @@ ___ handshake(s):
 
 
 ___ code(seq):
-    __ n.. seq o. set(seq) - set(gestures):
+    __ n.. seq o. s..(seq) - s..(gestures):
         r.. '0'
     s = find_subseq(seq)
     __ n.. s:
@@ -30,7 +30,7 @@ ___ sanitize(s):
         __ s < 0:
             r.. ""
         s = bin(s)[2:]
-    ____ set(s) - set(['0', '1']):
+    ____ s..(s) - s..(['0', '1']):
         r.. ""
     __ l..(s) > 5:
         r.. ValueError('Binary string too long')

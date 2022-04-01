@@ -35,12 +35,12 @@ c_ Solution(o..):
                                     visited[x][y] = T..
                                     queue.a..((x, y))
                         level += 1
-        res = float('inf')
+        res = f__('inf')
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ grid[i][j] __ 0 a.. reach[i][j] __ buildingNum:
                     res = m..(res, distance[i][j])
-        r.. res __ res != float('inf') ____ -1
+        r.. res __ res != f__('inf') ____ -1
     
     ___ test
         testCases = [

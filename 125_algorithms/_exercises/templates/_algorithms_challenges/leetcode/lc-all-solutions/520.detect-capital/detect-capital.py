@@ -7,8 +7,8 @@ c_ Solution(o..):
     :type word: str
     :rtype: bool
     """
-    ud = set(s__.uppercase)
-    ld = set(s__.lowercase)
+    ud = s..(s__.uppercase)
+    ld = s..(s__.lowercase)
     n = l..(word)
     cap = 0
     ___ c __ word:

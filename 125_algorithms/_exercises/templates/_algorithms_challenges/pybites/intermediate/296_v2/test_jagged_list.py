@@ -3,7 +3,7 @@ _______ p__
 ____ jagged_list _______ jagged_list
 
 
-@p__.mark.parametrize('input_list, fillvalue, expected',
+@p__.m__.p..('input_list, fillvalue, expected',
                          [
                              ([], 0, []),
 

@@ -10,7 +10,7 @@ c_ Solution(o..):
         :rtype: int
         """
         s = ''.j..([s..(n) ___ n __ board[0]])+''.j..([s..(n) ___ n __ board[1]])
-        visited = set([s])
+        visited = s..([s])
         target = '123450'
         queue = [s]
         res = 0

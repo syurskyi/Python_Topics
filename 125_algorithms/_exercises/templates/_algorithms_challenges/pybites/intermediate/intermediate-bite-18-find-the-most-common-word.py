@@ -63,7 +63,7 @@ ___ my_solution_get_harry_most_common_word
 ___ pyb_solution_get_harry_most_common_word
     ___ get_harry_most_common_word
         w__ open(stopwords_file) __ f:
-            stopwords = set(f.read().s...l...s..('\n'))
+            stopwords = s..(f.read().s...l...s..('\n'))
 
         w__ open(harry_text) __ f:
             words = [__.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]

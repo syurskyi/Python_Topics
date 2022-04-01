@@ -84,7 +84,7 @@ c_ SolutionTLE:
         """
         ret    # list
         # words.sort()  # sorting is unnecessary
-        visited = set(words)
+        visited = s..(words)
         ___ w __ words:
             __ can_concat(w, visited):
                 ret.a..(w)

@@ -20,8 +20,8 @@ c_ Solution(o..):
         w.... root:
             stack.a..(root)
             root = root.left
-        prev = float('-inf')
-        res = float('inf')
+        prev = f__('-inf')
+        res = f__('inf')
         w.... stack:
             node = stack.pop()
             res = m..(res, node.val-prev)

@@ -39,7 +39,7 @@ c_ TreeNode:
 c_ Solution:
     ___ - ):
         prev = N..
-        ret = float('inf')
+        ret = f__('inf')
 
     ___ minDiffInBST  root: TreeNode) __ i..:
         """

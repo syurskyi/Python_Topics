@@ -14,7 +14,7 @@ c_ Game:
 
     ___ - ):
         """Init _guesses, _answer, _win to set(), get_random_number(), False"""
-        _guesses = set()
+        _guesses = s..()
         _answer = get_random_number()
         _win = F..
 

@@ -10,5 +10,5 @@ ___ smooth_weather(values):
 
     r.. result
 
-values = l..(map(float, input().s..()))
+values = l..(map(f__, input().s..()))
 print(*smooth_weather(values))

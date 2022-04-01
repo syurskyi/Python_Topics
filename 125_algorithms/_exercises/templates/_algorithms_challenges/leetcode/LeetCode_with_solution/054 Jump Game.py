@@ -23,7 +23,7 @@ c_ Solution:
         :return: a boolean
         """
         length = l..(A)
-        dp = [set([index]) ___ index __ r..(length)]
+        dp = [s..([index]) ___ index __ r..(length)]
 
         ___ ind, val __ e..(A):
             __ ind!=0 a.. l..(dp[ind])<2:

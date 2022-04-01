@@ -61,8 +61,8 @@ c_ Solution:
         ___ word __ words:
             trie.add(word)
 
-        ret = set()
-        marked = set()
+        ret = s..()
+        marked = s..()
         ___ i __ x..(l..(board)):
             ___ j __ x..(l..(board[0])):
                 dfs(board, i, j, trie.root, marked, ret)

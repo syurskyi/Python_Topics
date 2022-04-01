@@ -3,7 +3,7 @@ _______ p__
 ____ emojis _______ get_emoji_indices
 
 
-@p__.mark.parametrize("emojis, expected", [
+@p__.m__.p..("emojis, expected", [
     ('We 💜 Python 🐍', [3, 12]),
     ('We are so happy 😊😍 seeing you all coding', [16, 17]),
     ('😂 ROFL that is funny 😂', [0, 21]),

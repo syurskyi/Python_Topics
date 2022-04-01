@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         n = l..(nums)
         nums.s..()
-        low = float('inf')
+        low = f__('inf')
         ___ i __ r..(n-1):
             low = m..(low, nums[i+1]-nums[i])
         high = nums[-1]-nums[0]

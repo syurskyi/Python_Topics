@@ -5,7 +5,7 @@ ____ friends _______ friends_teams
 friends = 'Bob Dante Julian Martin'.s..
 
 
-@p__.mark.parametrize('test_input,expected', [
+@p__.m__.p..('test_input,expected', [
     (('Bob', 'Dante'), T..),
     (('Bob', 'Julian'), T..),
     (('Bob', 'Martin'), T..),
@@ -32,7 +32,7 @@ ___ test_team_of_two_order_does_not_matter(test_input, expected):
         ... test_input n.. __ combos
 
 
-@p__.mark.parametrize('test_input,expected', [
+@p__.m__.p..('test_input,expected', [
     (('Bob', 'Dante'), T..),
     (('Dante', 'Julian'), T..),
     (('Dante', 'Martin'), T..),
@@ -47,7 +47,7 @@ ___ test_team_of_two_order_does_matter(test_input, expected):
     ... l..(combos) __ 12
     ... test_input __ combos
 
-@p__.mark.parametrize('test_input,expected', [
+@p__.m__.p..('test_input,expected', [
     (('Bob', 'Dante', 'Julian'), T..),
     (('Bob', 'Dante', 'Martin'), T..),
     (('Bob', 'Julian', 'Martin'), T..),
@@ -66,7 +66,7 @@ ___ test_team_of_three_order_does_not_matter(test_input, expected):
     ____:
         ... test_input n.. __ combos
 
-@p__.mark.parametrize('test_input,expected', [
+@p__.m__.p..('test_input,expected', [
     (('Bob', 'Dante', 'Julian'), T..),
     (('Bob', 'Dante', 'Martin'), T..),
     (('Bob', 'Julian', 'Martin'), T..),

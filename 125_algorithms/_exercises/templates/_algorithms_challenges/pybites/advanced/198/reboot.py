@@ -31,7 +31,7 @@ ___ calc_max_uptime(reboots):
     
     previous_date = N..
     max_date = N..
-    max_diff = float("-inf")
+    max_diff = f__("-inf")
     ___ line __ lines:
         __ line:
             _,date = line.s..('~')
@@ -46,7 +46,7 @@ ___ calc_max_uptime(reboots):
 
     
 
-    r.. max_diff,max_date.strftime("%Y-%m-%d")
+    r.. max_diff,max_date.s..("%Y-%m-%d")
 
 
 

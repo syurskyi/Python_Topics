@@ -11,7 +11,7 @@ c_ Solution:
             r.. ans
 
         p_times = get_times(P)
-        _min_size = float('inf')
+        _min_size = f__('inf')
 
         ___ word __ words:
             times = get_times(word)

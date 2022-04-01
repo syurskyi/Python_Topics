@@ -22,7 +22,7 @@ c_ Solution(o..):
             r.. F..
 
         char2word    # dict
-        words = set()
+        words = s..()
         ___ i __ x..(l..(pattern)):
             __ pattern[i] __ char2word:
                 __ char2word[pattern[i]] != lst[i]:
@@ -42,7 +42,7 @@ c_ OneToOneMap(o..):
     ___ - ):
         m    # dict  # keep a single map
 
-    ___ set  a, b):
+    ___ s..  a, b):
         m[a] = b
         m[b] = a
 
@@ -68,7 +68,7 @@ c_ SolutionError(o..):
             a = m.get(pattern[i])
             b = m.get(lst[i])
             __ a __ N.. a.. b __ N..
-                m.set(pattern[i], lst[i])
+                m.s..(pattern[i], lst[i])
             ____ a __ N.. a.. b __ n.. N..
                 r.. F..
             ____ a != lst[i]:

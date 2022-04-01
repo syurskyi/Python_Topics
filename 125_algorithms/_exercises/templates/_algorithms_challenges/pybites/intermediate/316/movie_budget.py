@@ -30,7 +30,7 @@ ___ rent_or_stream(
     """
     movie_history    # dict
     ___ movie __ renting_history:
-        movie_date = movie.date.strftime("%Y-%m")
+        movie_date = movie.date.s..("%Y-%m")
         __ movie_date n.. __ movie_history:
             movie_history[movie_date] = [movie.price]
         ____:

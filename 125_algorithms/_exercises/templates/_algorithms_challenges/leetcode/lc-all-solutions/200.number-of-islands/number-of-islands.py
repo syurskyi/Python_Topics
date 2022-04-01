@@ -4,7 +4,7 @@ c_ Solution(o..):
     :type grid: List[List[str]]
     :rtype: int
     """
-    visited = set()
+    visited = s..()
     ans = 0
 
     ___ dfs(grid, i, j, visited):

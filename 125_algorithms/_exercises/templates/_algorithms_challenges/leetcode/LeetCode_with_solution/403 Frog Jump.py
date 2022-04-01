@@ -50,7 +50,7 @@ c_ Solution(o..):
         """
         F    # dict
         ___ stone __ stones:
-            F[stone] = set()
+            F[stone] = s..()
 
         F[0].add(0)
         ___ stone __ stones:

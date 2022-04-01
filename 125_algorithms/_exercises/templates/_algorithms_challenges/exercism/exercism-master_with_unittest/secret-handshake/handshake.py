@@ -44,7 +44,7 @@ c_ Handshake:
             r.. valid_string(inp)
 
     ___ valid_handshake  handshake):
-        r.. set(handshake) <= set(EVENTS)
+        r.. s..(handshake) <= s..(EVENTS)
 
     @staticmethod
     ___ valid_integer(integer):

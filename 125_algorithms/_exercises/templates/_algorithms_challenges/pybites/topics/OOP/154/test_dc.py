@@ -52,7 +52,7 @@ ___ test_can_order_bites(bites):
 ___ test_data_class_are_not_hashable(bites):
     # this would work if namedtuples, but Bites are data classes here
     w__ p__.r.. T..
-        set(bites)
+        s..(bites)
 
 
 ___ test_data_class_can_only_be_unpacked_when_casted_to_tuple(bites):

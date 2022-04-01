@@ -38,7 +38,7 @@ ___ get_movies_by_director
             __ title_year > MIN_YEAR:
                 director_name = row["director_name"]
                 movie_title = row["movie_title"].s..
-                imdb_score = float(row["imdb_score"])
+                imdb_score = f__(row["imdb_score"])
 
                 __ director_name n.. __ movie_metadata:
                     movie_metadata[director_name] = [Movie(movie_title, title_year, imdb_score)]

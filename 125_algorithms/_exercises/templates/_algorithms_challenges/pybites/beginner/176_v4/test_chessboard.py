@@ -90,7 +90,7 @@ ___ _non_empty_lines(output):
             output.splitlines() __ line.s..]
 
 
-@p__.mark.parametrize("size", sizes)
+@p__.m__.p..("size", sizes)
 ___ test_create_chessboard(size, capfd):
     create_chessboard(size)
     actual = ?.r .. 0]

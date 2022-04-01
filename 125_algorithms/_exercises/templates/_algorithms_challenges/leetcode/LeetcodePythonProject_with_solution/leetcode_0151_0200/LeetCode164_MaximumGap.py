@@ -15,19 +15,19 @@ c_ Solution(o..):
         minVal = m..(nums)
         maxVal = m..(nums)
         n = l..(nums)
-        gap = math.ceil(float(maxVal-minVal)/(n-1))
-        bucketsMin = [float('inf')]*(n-1)
-        bucketsMax = [float('-inf')]*(n-1)
+        gap = math.ceil(f__(maxVal-minVal)/(n-1))
+        bucketsMin = [f__('inf')]*(n-1)
+        bucketsMax = [f__('-inf')]*(n-1)
         ___ num __ nums:
             __ num __ minVal o. num __ maxVal:
                 _____
             idx = i..((num-minVal)//gap)
             bucketsMin[idx] = m..(bucketsMin[idx], num)
             bucketsMax[idx] = m..(bucketsMax[idx], num)
-        maxGap = float('-inf')
+        maxGap = f__('-inf')
         prev = minVal
         ___ i __ r..(n-1):
-            __ bucketsMin[i] __ float('inf') a.. bucketsMax[i] __ float('-inf'):
+            __ bucketsMin[i] __ f__('inf') a.. bucketsMax[i] __ f__('-inf'):
                 _____
             maxGap = m..(maxGap, bucketsMin[i]-prev)
             prev = bucketsMax[i]

@@ -14,7 +14,7 @@ ___ a_words
             a.. word[1] __ s__.ascii_letters[:13]}
 
 
-@p__.mark.parametrize("word, expected", [
+@p__.m__.p..("word, expected", [
     ('acheive', 'achieve'),
     ('accross', 'across'),
     ('acceptible', 'acceptable'),

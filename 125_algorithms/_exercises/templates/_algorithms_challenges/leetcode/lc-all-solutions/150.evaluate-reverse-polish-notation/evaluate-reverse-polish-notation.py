@@ -15,7 +15,7 @@ c_ Solution(o..):
         __ token __ "*":
           res = a * b
         __ token __ "/":
-          res = i..(float(a) / float(b))
+          res = i..(f__(a) / f__(b))
         stack.a..(res)
       ____:
         stack.a..(i..(token))

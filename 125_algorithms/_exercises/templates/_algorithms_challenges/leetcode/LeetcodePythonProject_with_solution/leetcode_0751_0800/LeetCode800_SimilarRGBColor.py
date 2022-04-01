@@ -15,7 +15,7 @@ c_ Solution(o..):
     
     ___ getTwoDigits  s):
         res = 0
-        diff = float('inf')
+        diff = f__('inf')
         ___ s0 __ ['00', '11', '22', '33', '44', '55', '66', '77', '88', '99',\
                    'aa', 'bb', 'cc', 'dd', 'ee', 'ff']:
             num0 = convert(s0)

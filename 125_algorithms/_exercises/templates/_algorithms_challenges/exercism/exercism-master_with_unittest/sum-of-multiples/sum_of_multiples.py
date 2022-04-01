@@ -7,7 +7,7 @@ ___ sum_of_multiples(limit, factors):
 
 ___ all_multiples(limit, factors):
     multiples = [get_multiples(limit, factor) ___ factor __ factors]
-    r.. set(l..(c__(*multiples)))  # remove duplicates
+    r.. s..(l..(c__(*multiples)))  # remove duplicates
 
 
 ___ get_multiples(limit, factor):

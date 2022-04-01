@@ -7,7 +7,7 @@ ___ int_args(func):
     ___ wrapper(*args):
         __ s..(isi..(n, s..) ___ n __ args):
             r.. T..
-        ____ s..(isi..(n, float) ___ n __ args):
+        ____ s..(isi..(n, f__) ___ n __ args):
             r.. T..
         ____ s..(n < 0 ___ n __ args):
             r.. ValueError

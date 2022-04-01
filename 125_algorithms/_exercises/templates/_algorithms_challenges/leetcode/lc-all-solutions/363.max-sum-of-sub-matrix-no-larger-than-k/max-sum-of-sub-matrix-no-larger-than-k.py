@@ -8,7 +8,7 @@ c_ Solution(o..):
     :type k: int
     :rtype: int
     """
-    ans = float("-inf")
+    ans = f__("-inf")
     dp = [[0] * l..(matrix[0]) ___ _ __ r..(l..(matrix))]
     ___ i __ r..(0, l..(matrix)):
       ___ j __ r..(0, l..(matrix[0])):

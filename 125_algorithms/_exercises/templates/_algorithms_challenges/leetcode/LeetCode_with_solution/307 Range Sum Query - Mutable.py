@@ -23,12 +23,12 @@ c_ BinaryIndexTree(o..):
         nums = [0 ___ _ __ x..(n+1)]
         N = [0 ___ _ __ x..(n+1)]
         ___ i, v __ e..(nums):
-            set(i+1, v)
+            s..(i+1, v)
 
     ___ _lowbit  a):
         r.. a & -a
 
-    ___ set  i, val):
+    ___ s..  i, val):
         diff = val - nums[i]
         nums[i] = val
         w.... i < l..(N):
@@ -58,7 +58,7 @@ c_ NumArray(o..):
         :type val: int
         :rtype: int
         """
-        bit.set(i+1, val)
+        bit.s..(i+1, val)
 
     ___ sumRange  i, j):
         """

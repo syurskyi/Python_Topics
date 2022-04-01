@@ -48,7 +48,7 @@ ___ test_invalid_choice(computerMoveMock, my_game, capfd):
     ... 'Invalid' __ output
 
 
-@p__.mark.parametrize("player1, player2, result", [
+@p__.m__.p..("player1, player2, result", [
     ('scissors', 'paper', 'lose'),
     ('paper', 'scissors', 'win'),
     ('rock', 'paper', 'win'),
@@ -71,7 +71,7 @@ ___ test_stop_iteration(my_game):
 
 
 ___ test_computer_move
-    computer_moves = set()
+    computer_moves = s..()
     ___ i __ r..(1000):
         computer_moves.add(_get_computer_move())
     ... computer_moves __ defeated_by.k..

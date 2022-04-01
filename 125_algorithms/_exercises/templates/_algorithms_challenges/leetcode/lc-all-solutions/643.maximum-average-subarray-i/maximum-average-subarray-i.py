@@ -9,7 +9,7 @@ c_ Solution(o..):
     :rtype: float
     """
     s = 0
-    ans = float("-inf")
+    ans = f__("-inf")
     queue = d..([])
     ___ num __ nums:
       queue.a..(num)
@@ -17,5 +17,5 @@ c_ Solution(o..):
       __ l..(queue) > k:
         s -= queue.popleft()
       __ l..(queue) __ k:
-        ans = m..(ans, float(s) / k)
+        ans = m..(ans, f__(s) / k)
     r.. ans

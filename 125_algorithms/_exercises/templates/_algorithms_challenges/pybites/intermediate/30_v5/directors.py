@@ -31,7 +31,7 @@ ___ get_movies_by_director
     ___ r __ films:
         yr = i..(r['year'], 10) __ r['year'] ____ 0
         __ yr >= MIN_YEAR:
-            score = float(r['score']) __ r['score'] ____ 0.0
+            score = f__(r['score']) __ r['score'] ____ 0.0
             movie = Movie(r['title'], yr, score)
             __ r['director'] __ result:
                 result[r['director']].a..(movie)

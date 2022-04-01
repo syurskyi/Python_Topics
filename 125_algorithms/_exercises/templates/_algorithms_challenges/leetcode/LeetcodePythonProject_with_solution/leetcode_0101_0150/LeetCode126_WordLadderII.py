@@ -11,7 +11,7 @@ c_ Solution(o..):
         :type wordList: List[str]
         :rtype: List[List[str]]
         """
-        wordSet = set(wordList)
+        wordSet = s..(wordList)
         wordSet.add(beginWord)
         distance    # dict
         bfs(beginWord, endWord, distance, wordSet)

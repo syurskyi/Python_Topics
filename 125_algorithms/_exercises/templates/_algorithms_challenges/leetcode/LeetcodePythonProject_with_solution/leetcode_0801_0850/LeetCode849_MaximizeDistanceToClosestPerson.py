@@ -28,15 +28,15 @@ c_ Solution(o..):
         n = l..(seats)
         left = [0]*(n+1)
         right = [0]*(n+1)
-        left[0] = float('inf')
+        left[0] = f__('inf')
         ___ i __ r..(n):
             __ seats[i] __ 0:
                 left[i+1] = left[i]+1
-        right[-1] = float('inf')
+        right[-1] = f__('inf')
         ___ i __ r..(n-1, -1, -1):
             __ seats[i] __ 0:
                 right[i] = right[i+1]+1
-        res = float('-inf')
+        res = f__('-inf')
         ___ i __ r..(n):
             __ left[i+1] != 0 a.. right[i] != 0:
                 res = m..(res, m..(left[i+1], right[i]))

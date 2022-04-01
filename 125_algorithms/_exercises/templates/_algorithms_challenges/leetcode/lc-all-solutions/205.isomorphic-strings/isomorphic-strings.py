@@ -5,4 +5,4 @@ c_ Solution(o..):
     :type t: str
     :rtype: bool
     """
-    r.. l..(set(s)) __ l..(set(t)) __ l..(set(z..(s, t)))
+    r.. l..(s..(s)) __ l..(s..(t)) __ l..(s..(z..(s, t)))

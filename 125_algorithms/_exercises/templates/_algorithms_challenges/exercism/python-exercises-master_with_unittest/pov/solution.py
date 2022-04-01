@@ -43,7 +43,7 @@ c_ Tree(o..):
 
     ___ from_pov  from_node):
         stack = [self]
-        visited = set()
+        visited = s..()
         w.... stack:
             tree = stack.pop(0)
             __ tree.label __ visited:

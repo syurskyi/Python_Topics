@@ -13,7 +13,7 @@ c_ Solution:
     time: O(n)
     space: O(1)
     """
-    ans = float('inf')
+    ans = f__('inf')
     pre = N..
 
     ___ getMinimumDifference  root):

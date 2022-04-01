@@ -6,7 +6,7 @@ c_ Solution(o..):
     :rtype: int
     """
     ans = 0
-    dp = [[float("-inf")] * l..(flights) ___ _ __ r..(2)]
+    dp = [[f__("-inf")] * l..(flights) ___ _ __ r..(2)]
     dp[0][0] = 0
     ___ i __ r..(l..(days[0])):
       ___ j __ r..(l..(flights)):

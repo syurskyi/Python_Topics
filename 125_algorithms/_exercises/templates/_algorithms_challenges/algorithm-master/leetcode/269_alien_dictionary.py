@@ -8,7 +8,7 @@ c_ Solution:
             r.. ''
 
         ans    # list
-        gotcha = set()
+        gotcha = s..()
         max_size = m..(l..(word) ___ word __ words)
 
         ___ j __ r..(max_size):
@@ -48,7 +48,7 @@ c_ Solution:
                 __ cur[j] __ nxt[j]:
                     _____
                 __ cur[j] n.. __ edges:
-                    edges[cur[j]] = set()
+                    edges[cur[j]] = s..()
                 __ nxt[j] n.. __ edges[cur[j]]:
                     edges[cur[j]].add(nxt[j])
                     indeg[nxt[j]] = indeg.get(nxt[j], 0) + 1

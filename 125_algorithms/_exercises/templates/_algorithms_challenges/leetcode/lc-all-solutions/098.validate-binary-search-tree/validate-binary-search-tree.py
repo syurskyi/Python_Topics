@@ -11,7 +11,7 @@ c_ Solution(o..):
     :type root: TreeNode
     :rtype: bool
     """
-    prev = -float("inf")
+    prev = -f__("inf")
     stack = [(1, root)]
     w.... stack:
       p = stack.pop()

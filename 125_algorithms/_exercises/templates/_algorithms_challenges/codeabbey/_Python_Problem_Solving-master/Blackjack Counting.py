@@ -10,7 +10,7 @@ ___ i __ r..(i..(input())):
     ___ j __ a:
         ___
             #check if number or not
-            temp = float(j)
+            temp = f__(j)
             tot +=  temp
         ______:
             #check if it is other than 'A' then add 10 to total TKJQ

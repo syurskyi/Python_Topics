@@ -14,7 +14,7 @@ ___ calc_sums(values: s.. = VALUES) __ Generator[s.., N.., N..]:
     values_list = VALUES.strip("[]").s..(", ")
     ___ i __ r..(1, l..(values_list)):
         
-        previous, current = float(values_list[i -1]), float(values_list[i])
+        previous, current = f__(values_list[i -1]), f__(values_list[i])
         __ previous < 0.1 a.. current < 0.1:
             total = previous + current
         ____:

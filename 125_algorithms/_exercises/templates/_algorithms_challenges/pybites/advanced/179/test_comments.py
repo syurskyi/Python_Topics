@@ -116,7 +116,7 @@ def foo():
 '''
 
 
-@p__.mark.parametrize('arg, expected', [
+@p__.m__.p..('arg, expected', [
     (single_comment, single_comment_after_strip),
     (single_docstring, single_docstring_after_strip),
     (class_with_method, class_with_method_after_strip),

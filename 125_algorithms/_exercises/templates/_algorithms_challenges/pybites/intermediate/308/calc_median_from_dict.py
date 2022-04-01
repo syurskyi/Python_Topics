@@ -1,4 +1,4 @@
-___ calc_median_from_dict(d: d..) __ float:
+___ calc_median_from_dict(d: d..) __ f__:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
@@ -20,7 +20,7 @@ ___ calc_median_from_dict(d: d..) __ float:
     frequency.s..()
 
     __ l..(frequency) % 2 != 0:
-        r.. float(frequency[l..(frequency) // 2])
+        r.. f__(frequency[l..(frequency) // 2])
     ____:
         mid_2 = (l..(frequency) // 2)
         mid_1 = mid_2 -1

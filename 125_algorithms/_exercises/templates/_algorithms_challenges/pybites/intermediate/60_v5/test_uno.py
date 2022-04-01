@@ -26,7 +26,7 @@ ___ test_create_uno_deck_type(deck):
     ... a..(t..(card) __ UnoCard ___ card __ deck)
 
 
-@p__.mark.parametrize("suit, count", [
+@p__.m__.p..("suit, count", [
     ('Red', 25),
     ('Green', 25),
     ('Yellow', 25),
@@ -37,7 +37,7 @@ ___ test_create_uno_deck_suit_distribution(deck, suit, count):
     ... _count_suits(deck, suit) __ count
 
 
-@p__.mark.parametrize("name, count", [
+@p__.m__.p..("name, count", [
     ('0', 1), ('1', 2), ('2', 2), ('3', 2), ('4', 2),
     ('5', 2), ('6', 2), ('7', 2), ('8', 2), ('9', 2),
     ('Draw Two', 2), ('Skip', 2), ('Reverse', 2),

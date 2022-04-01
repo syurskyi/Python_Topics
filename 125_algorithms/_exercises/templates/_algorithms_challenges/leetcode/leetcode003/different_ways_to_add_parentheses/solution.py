@@ -29,7 +29,7 @@ c_ Solution(o..):
         :type input: str
         :rtype: List[int]
         """
-        operators = set(['+', '-', '*'])
+        operators = s..(['+', '-', '*'])
         r.. diff_ways(input)
 
     ___ calculate  a, b, operator):

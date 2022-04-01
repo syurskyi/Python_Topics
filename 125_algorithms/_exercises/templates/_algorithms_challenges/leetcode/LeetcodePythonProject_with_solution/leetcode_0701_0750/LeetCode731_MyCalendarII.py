@@ -6,7 +6,7 @@ Created on Mar 4, 2018
 c_ MyCalendarTwo(o..):
     ___ - ):
         overlaps    # list
-        calendar    # list
+        ca__    # list
 
     ___ book  start, end):
         """
@@ -17,10 +17,10 @@ c_ MyCalendarTwo(o..):
         ___ i, j __ overlaps:
             __ start < j a.. end > i:
                 r.. F..
-        ___ i, j __ calendar:
+        ___ i, j __ ca__:
             __ start < j a.. end > i:
                 overlaps.a..((m..(start, i), m..(end, j)))
-        calendar.a..((start, end))
+        ca__.a..((start, end))
         r.. T..
 
 __ _____ __ _____

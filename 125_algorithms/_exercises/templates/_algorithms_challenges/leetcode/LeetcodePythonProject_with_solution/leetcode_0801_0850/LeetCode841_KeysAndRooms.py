@@ -10,7 +10,7 @@ c_ Solution(o..):
         :rtype: bool
         """
         dfs = [0]
-        seen = set(dfs)
+        seen = s..(dfs)
         w.... dfs:
             i = dfs.pop()
             ___ j __ rooms[i]:

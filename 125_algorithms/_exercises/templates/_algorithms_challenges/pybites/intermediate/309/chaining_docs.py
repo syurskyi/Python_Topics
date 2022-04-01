@@ -116,7 +116,7 @@ c_ Document:
     $
     ___ words(self) __ l..:
         """Return a list of unique words, sorted and case insensitive."""
-        all_words = set()
+        all_words = s..()
         ___ line __ lines:
             line = line.l..
             w = _remove_punctuation(line)

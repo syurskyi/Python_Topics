@@ -35,7 +35,7 @@ c_ Solution:
             index[v] = i
 
         ret    # list
-        mini = float('inf')
+        mini = f__('inf')
         ___ i, v __ e..(list1):
             __ v __ index:
                 cur = i + index[v]  # current index sum

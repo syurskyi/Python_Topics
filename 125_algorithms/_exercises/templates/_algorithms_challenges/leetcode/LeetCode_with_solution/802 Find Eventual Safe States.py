@@ -39,7 +39,7 @@ c_ Solution:
         prune by nodes with no cycle
         """
         visit: List[i..] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
-        acyclic: Set[i..] = set()
+        acyclic: Set[i..] = s..()
         ___ u __ r..(l..(graph)):
             __ visit[u] __ 0:
                 dfs(graph, u, visit, acyclic)

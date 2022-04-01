@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         __ n __ 0: r.. []
         __ n __ 1: r.. [0]
-        graph = [set() ___ _ __ r..(n)]
+        graph = [s..() ___ _ __ r..(n)]
         ___ e __ edges:
             graph[e[0]].add(e[1])
             graph[e[1]].add(e[0])

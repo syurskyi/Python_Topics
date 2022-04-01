@@ -1,6 +1,6 @@
 ___ find_number_pairs(numbers, N=10):
 
-    seen = set()
+    seen = s..()
 
     result    # list
     ___ i __ r..(l..(numbers) - 1):

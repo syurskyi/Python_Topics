@@ -17,13 +17,13 @@ c_ Solution(o..):
         res = [[0]*n ___ _ __ r..(m)]
         ___ i __ r..(m):
             ___ j __ r..(n):
-                count = float(matrix[i][j])
+                count = f__(matrix[i][j])
                 num = 1.0
                 ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1),\
                     (i+1, j+1), (i-1, j-1), (i+1, j-1), (i-1, j+1):
                     __ 0 <= x < m a.. 0 <= y < n:
                         __ matrix[x][y] != 0:
-                            count += float(matrix[x][y])
+                            count += f__(matrix[x][y])
                         num += 1
                 tmp = i..(math.floor(count/num))
                 res[i][j] = tmp

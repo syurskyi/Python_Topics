@@ -25,7 +25,7 @@ ___ text_to_columns(text):
     
 
     result    # list
-    ___ p __ i...zip_longest(*l,fillvalue=''):
+    ___ p __ i...z__(*l,fillvalue=''):
         
         line    # list
         ___ value __ p:

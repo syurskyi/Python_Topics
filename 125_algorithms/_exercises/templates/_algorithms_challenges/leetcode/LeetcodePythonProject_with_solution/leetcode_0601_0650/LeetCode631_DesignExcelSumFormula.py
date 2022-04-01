@@ -15,7 +15,7 @@ c_ Excel(o..):
         matrix = [[0]*n ___ _ __ r..(m)]
         hashmap    # dict
 
-    ___ set  r, c, v):
+    ___ s..  r, c, v):
         """
         :type r: int
         :type c: str
@@ -80,32 +80,32 @@ c_ Excel(o..):
 
 __ _____ __ _____
     excel = Excel(3, 'C')
-    excel.set(1, 'A', 2)
+    excel.s..(1, 'A', 2)
     print(excel.s..(3, 'C', ['A1', 'A1:B2']))
-    excel.set(2, 'B', 2)
+    excel.s..(2, 'B', 2)
     print(excel.get(3, 'C'))
     print('-='*10+'-')
  
     excel = Excel(5, 'E')
     print(excel.get(1, 'A'))
-    print(excel.set(1, 'A', 1))
+    print(excel.s..(1, 'A', 1))
     print(excel.get(1, 'A'))
     print(excel.s..(2, 'B', ['A1', 'A1']))
-    print(excel.set(1, 'A', 2))
+    print(excel.s..(1, 'A', 2))
     print(excel.get(2, 'B'))
     print('-='*10+'-')
  
     excel = Excel(5, 'E')
-    print(excel.set(1, 'A', 1))
+    print(excel.s..(1, 'A', 1))
     print(excel.s..(2, 'B', ['A1']))
-    print(excel.set(2, 'B', 0))
+    print(excel.s..(2, 'B', 0))
     print(excel.get(1, 'B'))
-    print(excel.set(1, 'A', 5))
+    print(excel.s..(1, 'A', 5))
     print(excel.get(2, 'B'))
     print('-='*10+'-')
 
     excel = Excel(3, 'C')
     print(excel.s..(1, 'A', ['A2']))
-    print(excel.set(2, 'A', 1))
+    print(excel.s..(2, 'A', 1))
     print(excel.get(1, 'A'))
     print('-='*10+'-')

@@ -5,5 +5,5 @@ ___ tomorrow(today_ N..
     __ today __ N..
         today = dt.date.today()
 
-    r.. today + dt.t..(days=1)
+    r.. today + dt.t..(d.._1)
 

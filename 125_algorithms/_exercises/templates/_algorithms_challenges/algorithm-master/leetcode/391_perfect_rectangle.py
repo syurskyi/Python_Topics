@@ -10,8 +10,8 @@ c_ Solution:
         __ n.. recs:
             r.. F..
 
-        left = bottom = float('inf')
-        right = top = float('-inf')
+        left = bottom = f__('inf')
+        right = top = f__('-inf')
         points = c...defaultdict(i..)
 
         ___ l, b, r, t __ recs:

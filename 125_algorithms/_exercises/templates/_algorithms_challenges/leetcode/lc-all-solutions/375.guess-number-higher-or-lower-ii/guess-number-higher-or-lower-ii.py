@@ -11,12 +11,12 @@ c_ Solution(o..):
         r.. 0
       __ cache[start][end] != 0:
         r.. cache[start][end]
-      minV = float("inf")
+      minV = f__("inf")
       ___ i __ r..(start, end + 1):
         left = dc(cache, start, i - 1)
         right = dc(cache, i + 1, end)
         minV = m..(minV, m..(left, right) + i)
-      __ minV != float("inf"):
+      __ minV != f__("inf"):
         cache[start][end] = minV
       r.. cache[start][end]
 

@@ -16,7 +16,7 @@ c_ Solution(o..):
             hashmap0[c] = hashmap0.get(c, 0)+1
         left = 0
         res = ''
-        minLen = float('inf')
+        minLen = f__('inf')
         hashmap    # dict
         count = 0
         ___ i, c __ e..(s):
@@ -47,9 +47,9 @@ c_ Solution(o..):
             hashmap[c] = hashmap.get(c, 0)+1
         left = 0
         hashmapAll    # dict
-        hashset = set()
+        hashset = s..()
         res = ''
-        minLen = float('inf')
+        minLen = f__('inf')
         ___ i, c __ e..(s):
             __ c __ hashmap a.. hashmapAll.get(c, 0)+1 >= hashmap[c]:
                 hashset.add(c)

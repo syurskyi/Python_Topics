@@ -19,7 +19,7 @@ c_ Solution:
         :return: boolean
         """
         ___
-            float(s)
+            f__(s)
             r.. T..
         ______ V..
             r.. F..

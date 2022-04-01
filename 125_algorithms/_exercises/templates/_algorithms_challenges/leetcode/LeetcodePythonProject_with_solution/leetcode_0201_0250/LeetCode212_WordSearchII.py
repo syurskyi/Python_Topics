@@ -31,7 +31,7 @@ c_ Solution(o..):
         :type words: List[str]
         :rtype: List[str]
         """
-        result = set()
+        result = s..()
         root = buildTrie(words)
         m, n = l..(board), l..(board[0])
         ___ i __ r..(m):

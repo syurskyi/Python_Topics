@@ -4,7 +4,7 @@ c_ Solution(o..):
     :type nums: List[int]
     :rtype: int
     """
-    first = second = third = float("-inf")
+    first = second = third = f__("-inf")
     ___ num __ nums:
       __ num __ [first, second, third]:
         _____
@@ -17,4 +17,4 @@ c_ Solution(o..):
         second = num
       ____ num > third:
         third = num
-    r.. third __ third != float("-inf") ____ first
+    r.. third __ third != f__("-inf") ____ first

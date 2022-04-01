@@ -24,7 +24,7 @@ c_ Solution:
         """
         hash map
         """
-        targets = set(J)
+        targets = s..(J)
         ret = 0
         ___ c __ S:
             __ c __ targets:

@@ -23,7 +23,7 @@ c_ Solution(o..):
                         __ 0 <= row < N a.. 0 <= col < N:
                             dp1[i][j] += dp[row][col]
             dp = dp1
-        r.. float(dp[r][c])/8**K
+        r.. f__(dp[r][c])/8**K
     
     ___ test
         testCases = [

@@ -3,4 +3,4 @@
 
 
 ___ average(array):
-    r.. s..(set(array)) / l..(set(array))
+    r.. s..(s..(array)) / l..(s..(array))

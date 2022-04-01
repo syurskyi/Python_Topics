@@ -6,7 +6,7 @@ TODAY = date.today()
 ___ gen_bite_planning(num_bites=1, num_days=1, start_date=TODAY):
     notification = start_date
     ___ _ __ r..(10):
-        notification = notification + t..(days=num_days)
+        notification = notification + t..(d.._num_days)
         ___ _ __ r..(num_bites):
             y.. notification
     

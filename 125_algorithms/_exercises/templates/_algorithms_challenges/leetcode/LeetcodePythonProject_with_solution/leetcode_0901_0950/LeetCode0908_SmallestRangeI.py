@@ -16,8 +16,8 @@ c_ Solution(o..):
         minVal = m..(A)
         maxVal = m..(A)
         med = (minVal+maxVal) // 2
-        minVal = float('inf')
-        maxVal = float('-inf')
+        minVal = f__('inf')
+        maxVal = f__('-inf')
         ___ num __ A:
             __ num > med:
                 __ num - med > K:

@@ -3,7 +3,7 @@ _______ p__
 ____ control_flow _______ filter_names
 
 
-@p__.mark.parametrize("names, expected_return", [
+@p__.m__.p..("names, expected_return", [
     (['bob'], []),
     (['bob', 'berta'], []),
     (['quit', 'ana'], []),

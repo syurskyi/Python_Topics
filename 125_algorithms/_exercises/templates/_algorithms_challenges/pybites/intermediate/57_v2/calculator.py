@@ -27,7 +27,7 @@ ___ create_parser
     group.a..("-s",'--sub',a.._'store_true',h.._"Subtracts numbers")
     group.a..("-a",'--add',a.._'store_true',h.._"Sums numbers")
     group.a..("-d",'--div',a.._'store_true',h.._"Divides numbers")
-    ap.a..('numbers',nargs='+',t..=float)
+    ap.a..('numbers',nargs='+',t..=f__)
 
     r.. ap
 

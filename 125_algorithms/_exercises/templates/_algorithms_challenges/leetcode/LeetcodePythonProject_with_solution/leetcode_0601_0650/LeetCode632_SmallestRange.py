@@ -12,7 +12,7 @@ c_ Solution(o..):
         _______ heapq
         pq = [(arr[0], i, 0) ___ i, arr __ e..(nums)]
         heapq.heapify(pq)
-        res = [float('-inf'), float('inf')]
+        res = [f__('-inf'), f__('inf')]
         right = m..([arr[0] ___ arr __ nums])
         w.... pq:
             left, i, j = heapq.heappop(pq)

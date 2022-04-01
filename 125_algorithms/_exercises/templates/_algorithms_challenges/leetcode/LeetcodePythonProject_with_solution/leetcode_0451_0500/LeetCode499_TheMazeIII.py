@@ -15,8 +15,8 @@ c_ Solution(o..):
         m, n = l..(maze), l..(maze[0])
         result    # list
         visited = [[F..]*n ___ _ __ r..(m)]
-        maxPath = float('inf')
-        map = [[float('inf')]*n ___ _ __ r..(m)]
+        maxPath = f__('inf')
+        map = [[f__('inf')]*n ___ _ __ r..(m)]
         helper(maze, ball, hole, '', 0, result, visited)
         result.s..(key=l.... x: (x[1], x[0]))
         __ result:
@@ -56,7 +56,7 @@ c_ Solution(o..):
         r.. F.., 0
     
     ___ getNextSteps  matrix, i, j):
-        steps = set()
+        steps = s..()
         m, n = l..(matrix), l..(matrix[0])
         dirs = (1, 0, 'd'), (0, 1, 'r'), (-1, 0, 'u'), (0, -1, 'l')
         ___ dir __ dirs:

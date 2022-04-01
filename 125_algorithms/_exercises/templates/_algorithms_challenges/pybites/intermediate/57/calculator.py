@@ -7,23 +7,23 @@ ___ calculator(operation, numbers):
     print(operation,numbers)
     total = 0
     __ operation __ 'add':
-        total = float(numbers[0])
+        total = f__(numbers[0])
         ___ i __ numbers[1:]:
-            total = total + float(i)
+            total = total + f__(i)
     ____ operation __ 'sub':
-        total = float(numbers[0])
+        total = f__(numbers[0])
         ___ i __ numbers[1:]:
-            total = total - float(i)
+            total = total - f__(i)
     ____ operation __ 'mul':
-        total = float(numbers[0])
+        total = f__(numbers[0])
         print(total)
         ___ i __ numbers[1:]:
-            total = total * float(i)
+            total = total * f__(i)
             print(total)
     ____ operation __ 'div':
-        total = float(numbers[0])
+        total = f__(numbers[0])
         ___ i __ numbers[1:]:
-            total = total / float(i)
+            total = total / f__(i)
     print(t..(total))
     r.. r..(total,2)
 

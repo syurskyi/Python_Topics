@@ -32,7 +32,7 @@ c_ Solution:
             ___ word __ D:
                 key = word[:i] + word[i + 1:]
                 __ key n.. __ W:
-                    W[key] = set()
+                    W[key] = s..()
                 W[key].add(word)
 
         queue = [B]

@@ -94,7 +94,7 @@ c_ RandomizedSetTLE(o..):
         """
         Initialize your data structure here.
         """
-        set = set()
+        s.. = s..()
 
     ___ insert  val):
         """
@@ -102,8 +102,8 @@ c_ RandomizedSetTLE(o..):
         :type val: int
         :rtype: bool
         """
-        ret = val n.. __ set
-        set.add(val)
+        ret = val n.. __ s..
+        s...add(val)
         r.. ret
 
     ___ remove  val):
@@ -112,8 +112,8 @@ c_ RandomizedSetTLE(o..):
         :type val: int
         :rtype: bool
         """
-        ret = val __ set
-        set.discard(val)
+        ret = val __ s..
+        s...discard(val)
         r.. ret
 
     ___ getRandom
@@ -121,7 +121,7 @@ c_ RandomizedSetTLE(o..):
         Get a random element from the set.
         :rtype: int
         """
-        r.. r__.sample(set, 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
+        r.. r__.sample(s.., 1)[0]  # O(N), equivalent to random.choice(tuple(allLetters))
 
 
 

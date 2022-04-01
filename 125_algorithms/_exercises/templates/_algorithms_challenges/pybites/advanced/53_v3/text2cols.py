@@ -1,4 +1,4 @@
-____ i.. _______ zip_longest
+____ i.. _______ z__
 
 COL_WIDTH = 20
 
@@ -25,5 +25,5 @@ ___ text_to_columns(text):
        line1\nline2\nline3\n ... etc ...
        See also the tests for more info."""
     lines = [_divide_line(col) ___ col __ (text.s..('\n\n'))]
-    rv = [' '.j..(combination) ___ combination __ zip_longest(*lines, fillvalue=' ')]
+    rv = [' '.j..(combination) ___ combination __ z__(*lines, fillvalue=' ')]
     r.. '\n'.j..(rv)

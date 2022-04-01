@@ -27,7 +27,7 @@ c_ Solution(o..):
 
     __ n.. root:
       r.. root
-    pre = dummy = TreeNode(float("inf"))
+    pre = dummy = TreeNode(f__("inf"))
     dummy.left = root
     p = dummy
     w.... p:

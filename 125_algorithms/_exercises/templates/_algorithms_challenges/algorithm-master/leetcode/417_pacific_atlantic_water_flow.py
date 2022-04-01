@@ -27,8 +27,8 @@ c_ Solution:
             pqueue.a..((0, y))
             aqueue.a..((m - 1, y))
 
-        pvisited = set(pqueue)
-        avisited = set(aqueue)
+        pvisited = s..(pqueue)
+        avisited = s..(aqueue)
 
         bfs(matrix, pqueue, pvisited)
         bfs(matrix, aqueue, avisited)
@@ -70,8 +70,8 @@ c_ Solution:
             r.. []
 
         m, n = l..(matrix), l..(matrix[0])
-        pvisited = set()
-        avisited = set()
+        pvisited = s..()
+        avisited = s..()
 
         ___ x __ r..(m):
             dfs(matrix, x, 0, pvisited)

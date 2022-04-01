@@ -42,8 +42,8 @@ c_ Solution:
         Let R[i] ...
         """
         n = l..(seats)
-        L = [float("inf") ___ _ __ r..(n)]
-        R = [float("inf") ___ _ __ r..(n)]
+        L = [f__("inf") ___ _ __ r..(n)]
+        R = [f__("inf") ___ _ __ r..(n)]
         ___ i __ r..(n):
             __ seats[i] __ 1:
                 L[i] = 0
@@ -69,7 +69,7 @@ c_ Solution:
             __ e __ 1:
                 idxes.a..(i)
 
-        ret = [-float("inf"), 0]
+        ret = [-f__("inf"), 0]
         n = l..(seats)
         # two ends
         ___ i, j __ z..((0, n-1), (0, -1)):

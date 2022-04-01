@@ -15,7 +15,7 @@ c_ Solution(o..):
         :type points: List[Point]
         :rtype: List[Point]
         """
-        res = set()
+        res = s..()
         first = points[0]
         firstInd = 0
         ___ i __ r..(1, l..(points)):

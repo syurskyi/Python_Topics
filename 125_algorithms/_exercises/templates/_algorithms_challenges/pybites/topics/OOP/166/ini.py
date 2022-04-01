@@ -26,7 +26,7 @@ c_ ToxIniParser:
     $
     ___ base_python_versions
         """Return a list of all basepython across the ini file"""
-        base_pys = set()
+        base_pys = s..()
         ___ key __ config.k..:
             __ 'basepython' __ config[key]:
                 base_pys.add(config[key]['basepython'])

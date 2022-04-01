@@ -10,8 +10,8 @@ c_ Solution(o..):
         :type s: str
         :rtype: List[str]
         """
-        result = set()
-        resultCodes = set()
+        result = s..()
+        resultCodes = s..()
         __ n.. s o. l..(s) < 10: r.. []
         ___ i __ r..(0, l..(s)-9):
             subStr = s[i:i+10]

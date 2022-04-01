@@ -25,7 +25,7 @@ c_ Solution(o..):
         :rtype: int
         """
         arr = A
-        idx, maxVal = 0, float('-inf')
+        idx, maxVal = 0, f__('-inf')
         ___ i __ r..(l..(arr)):
             val = getScore(arr, i)
             __ val > maxVal:

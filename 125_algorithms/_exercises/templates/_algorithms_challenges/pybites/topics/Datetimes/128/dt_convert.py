@@ -21,7 +21,7 @@ ___ convert_eu_to_us_date(date):
        ranges (no need to code this, datetime does this out of the box)"""
     print(date)
     eu_date = d__.strptime(date, "%d/%m/%Y")
-    r.. eu_date.strftime("%m")+"/"+eu_date.strftime("%d")+"/"+eu_date.strftime("%Y")
+    r.. eu_date.s..("%m")+"/"+eu_date.s..("%d")+"/"+eu_date.s..("%Y")
 
 
 

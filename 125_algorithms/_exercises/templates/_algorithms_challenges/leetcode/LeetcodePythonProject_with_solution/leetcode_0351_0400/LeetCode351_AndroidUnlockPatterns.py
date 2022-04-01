@@ -15,7 +15,7 @@ c_ Solution(o..):
             skip[3][7] = skip[7][3] = skip[4][6] = skip[6][4] = 5
         result = 0
         ___ i __ r..(m, n+1):
-            path = set()
+            path = s..()
             result += helper(path, 1, i-1)*4
             result += helper(path, 2, i-1)*4
             result += helper(path, 5, i-1)

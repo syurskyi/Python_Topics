@@ -47,7 +47,7 @@ c_ Solution:
         """
         stemming
         """
-        s = set()
+        s = s..()
         ___ e __ emails:
             local, domain = e.s..("@")
             local = stem(local)

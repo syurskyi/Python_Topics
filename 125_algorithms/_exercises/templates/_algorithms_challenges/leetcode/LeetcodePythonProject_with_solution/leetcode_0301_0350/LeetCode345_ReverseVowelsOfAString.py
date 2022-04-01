@@ -6,7 +6,7 @@ Created on Mar 21, 2017
 
 c_ Solution(o..):
     ___ reverseVowels  s):
-        vowels = set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
+        vowels = s..(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
         __ n.. s: r.. s
         s = l..(s)
         left, right = 0, l..(s)-1

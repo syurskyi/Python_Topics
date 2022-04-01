@@ -15,7 +15,7 @@ c_ Solution(o..):
             __ n.. c.i.. a.. c != ' ':
                 hashmap[c.l..] = hashmap.get(c.l.., 0)+1
         res = ''
-        l = float('inf')
+        l = f__('inf')
         ___ word __ words:
             __ l..(word) < l:
                 __ contains(hashmap, word):

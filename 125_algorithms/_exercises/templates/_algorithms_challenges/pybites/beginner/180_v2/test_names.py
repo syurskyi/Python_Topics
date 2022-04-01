@@ -38,7 +38,7 @@ ___ test_return_dict_len(grouping1, grouping2):
     ... l..(grouping2) __ 6
 
 
-@p__.mark.parametrize('key, expected', [
+@p__.m__.p..('key, expected', [
     ('BR', ['Alphonso Harrold']),
     ('CN', ['Davie Halbard', 'Ines Parrett', 'Margo Apdell']),
     ('ID', ['Husain Watsham', 'Sula Wasielewski']),
@@ -51,7 +51,7 @@ ___ test_grouping1_return(grouping1, key, expected):
     ... s..(grouping1[key]) __ expected
 
 
-@p__.mark.parametrize('key, expected', [
+@p__.m__.p..('key, expected', [
     ('AF', ['Leese Mockler']),
     ('CO', ['Carlo Renyard']),
     ('CZ', ['Evonne Beadham', 'Sydney Poxton']),

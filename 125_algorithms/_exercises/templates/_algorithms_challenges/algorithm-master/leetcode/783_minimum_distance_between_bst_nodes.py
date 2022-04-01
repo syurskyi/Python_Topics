@@ -14,7 +14,7 @@ c_ Solution:
     time: O(n)
     space: O(1)
     """
-    ans = float('inf')
+    ans = f__('inf')
     pre = N..
 
     ___ minDiffInBST  root):
@@ -50,7 +50,7 @@ c_ Solution:
         __ n.. root:
             r..
 
-        ans = float('inf')
+        ans = f__('inf')
         pre = N..
 
         stack    # list

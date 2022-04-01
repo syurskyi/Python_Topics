@@ -19,7 +19,7 @@ c_ Solution(o..):
                 r.. a-b
             __ (op __ "/"):
                 # return a/b # python treat differently for division 6/-132 is -1
-                r.. i..(float(a)/b)  # round towards 0
+                r.. i..(f__(a)/b)  # round towards 0
             __ (op __ "*"):
                 r.. a*b
 

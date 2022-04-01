@@ -13,8 +13,8 @@ c_ Solution(o..):
       __ l..(line) __ 0:
         r.. l..(hand) - l..(balls)
       __ l..(balls) __ 0:
-        r.. float("inf")
-      res = float("inf")
+        r.. f__("inf")
+      res = f__("inf")
       ___ i __ r..(l..(balls)):
         ___ j __ r..(l..(line) + 1):
           __ j __ 0 a.. line[0] != balls[i]:
@@ -61,4 +61,4 @@ c_ Solution(o..):
 
     visited    # dict
     ret = dfs(board, "".j..(s..(hand)), visited)
-    r.. ret __ ret != float("inf") ____ -1
+    r.. ret __ ret != f__("inf") ____ -1

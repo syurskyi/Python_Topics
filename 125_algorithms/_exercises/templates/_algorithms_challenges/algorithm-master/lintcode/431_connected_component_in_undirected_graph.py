@@ -70,7 +70,7 @@ c_ Solution:
         __ n.. nodes:
             r.. ans
 
-        visited = set()
+        visited = s..()
 
         ___ node __ nodes:
             __ node __ visited:

@@ -18,7 +18,7 @@ ___ test_callable_log_levels
         ... callable(LOG_LEVEL[level])
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "msg, level",
     [
         ("This is a debug message", "debug"),

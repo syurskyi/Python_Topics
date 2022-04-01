@@ -28,7 +28,7 @@ c_ Solution:
             ___ i __ r..(l..(S))
             __ S[i] __ C
         ]
-        idx = [-float("inf")] + idx + [float("inf")]
+        idx = [-f__("inf")] + idx + [f__("inf")]
         ret    # list
         i = 0
         ___ j __ r..(l..(S)):

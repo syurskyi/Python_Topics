@@ -12,7 +12,7 @@ urllib.request.urlretrieve(
 )
 
 w__ open(DICTIONARY) __ f:
-    dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
+    dictionary = s..([word.s...l.. ___ word __ f.read().s.. ])
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
                    (4, "F H V W Y"), (5, "K"), (8, "J X"), (10, "Q Z")]

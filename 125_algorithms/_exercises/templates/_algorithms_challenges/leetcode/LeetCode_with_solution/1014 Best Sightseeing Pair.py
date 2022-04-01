@@ -31,7 +31,7 @@ c_ Solution:
         Count the current best score in all previous.
         Distance will increase, then the score will decay
         """
-        ret = -float("inf")
+        ret = -f__("inf")
         prev_max = A[0]
         ___ a __ A[1:]:
             ret = m..(ret, prev_max - 1 + a)

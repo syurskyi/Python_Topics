@@ -6,7 +6,7 @@ ___ major_n_minor(numbers):
     Input: an array with integer numbers
     Output: the majority and minority number
     """
-    temp_list = s..(Counter(numbers).most_common(l..(set(numbers))))
+    temp_list = s..(Counter(numbers).most_common(l..(s..(numbers))))
     temp_list.s..(key=operator.itemgetter(1))
     #print(type(temp_list[0][1]))
     print(temp_list)

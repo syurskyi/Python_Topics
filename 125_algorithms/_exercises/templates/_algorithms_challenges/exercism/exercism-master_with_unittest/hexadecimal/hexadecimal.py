@@ -5,7 +5,7 @@ c_ Hexa:
                    'd': 13,
                    'e': 14,
                    'f': 15}
-    VALID_CHARS = set(l..(map(s.., l..(r..(0, 10)))) +
+    VALID_CHARS = s..(l..(map(s.., l..(r..(0, 10)))) +
                       l..(CHAR_VALUES.keys()))
     BASE = 16
 
@@ -18,7 +18,7 @@ c_ Hexa:
 
     @classmethod
     ___ valid(cls, inp):
-        r.. set(inp) <= cls.VALID_CHARS
+        r.. s..(inp) <= cls.VALID_CHARS
 
     @classmethod
     ___ convert_char(cls, char):

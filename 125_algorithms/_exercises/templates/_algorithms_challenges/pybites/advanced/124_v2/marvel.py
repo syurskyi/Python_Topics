@@ -75,4 +75,4 @@ ___ get_percentage_female_characters(characters=characters):
         __ char.sex __ '':
             _____
         sexes[char.sex] += 1
-    r.. r..(float(sexes['Female Characters']) / float(s..(sexes.v.. * 100.0, 2)
+    r.. r..(f__(sexes['Female Characters']) / f__(s..(sexes.v.. * 100.0, 2)

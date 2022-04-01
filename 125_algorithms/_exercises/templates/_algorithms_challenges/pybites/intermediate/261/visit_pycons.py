@@ -44,8 +44,8 @@ c_ PyCon:
     start_date: d__
     end_date: d__
     URL: s..
-    lat: float = N..
-    lon: float = N..
+    lat: f__ = N..
+    lon: f__ = N..
 
 
     ___ __lt__ other):
@@ -57,7 +57,7 @@ c_ PyCon:
 c_ Trip:
     origin: PyCon
     destination: PyCon
-    distance: float
+    distance: f__
 
 
 ___ _get_pycons

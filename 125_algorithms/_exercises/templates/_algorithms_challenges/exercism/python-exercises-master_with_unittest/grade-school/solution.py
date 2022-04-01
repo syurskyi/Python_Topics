@@ -4,7 +4,7 @@ ____ c.. _______ defaultdict
 c_ School(o..):
     ___ - , name):
         name = name
-        db = defaultdict(set)
+        db = defaultdict(s..)
 
     ___ add  student, grade):
         db[grade].add(student)

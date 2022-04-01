@@ -122,7 +122,7 @@ ___ result
     r.. codon_usage.return_codon_usage_table().s..
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "function",
     [
         get_table_bars,

@@ -12,7 +12,7 @@ c_ Solution:
         __ n.. nums:
             r.. ans
 
-        cands = set(nums)  # dedup
+        cands = s..(nums)  # dedup
 
         ___ a __ nums:
             __ a n.. __ cands:

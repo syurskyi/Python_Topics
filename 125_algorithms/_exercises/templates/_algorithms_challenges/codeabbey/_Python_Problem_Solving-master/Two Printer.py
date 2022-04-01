@@ -1,5 +1,5 @@
 ___ i __ r..(i..(input())):
-    x,y,n = l..(map(float, input().s..()))
+    x,y,n = l..(map(f__, input().s..()))
     x_1 = i..(y*n / (x+y))
     y_1 = i..(x*n/ (x+y))
     n = n - (x_1 + y_1)

@@ -18,7 +18,7 @@ ___ _create_defeat_mapping
        with keys = attackers / values = who they defeat.
     """
     
-    mapping = defaultdict(set)
+    mapping = defaultdict(s..)
     w__ open(BATTLE_DATA,'r') __ f:
         reader = csv.DictReader(f)
         ___ row __ reader:

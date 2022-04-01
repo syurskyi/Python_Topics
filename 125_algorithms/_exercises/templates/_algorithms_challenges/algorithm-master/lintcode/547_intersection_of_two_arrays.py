@@ -10,8 +10,8 @@ c_ Solution:
         __ n.. a o. n.. b:
             r.. ans
 
-        s = set(a)
-        t = set(b)
+        s = s..(a)
+        t = s..(b)
 
         ___ x __ s:
             __ x __ t:

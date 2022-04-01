@@ -18,7 +18,7 @@ c_ Solution(o..):
     ___ dfs  s, cnt):
         w.... s < l..(debt) a.. debt[s] __ 0:
             s += 1
-        res = float('inf')
+        res = f__('inf')
         prev = 0
         ___ i __ r..(s+1, l..(debt)):
             __ debt[i] != prev a.. debt[i]*debt[s] < 0:
@@ -26,7 +26,7 @@ c_ Solution(o..):
                 res = m..(res, dfs(s+1, cnt+1))
                 debt[i] -= debt[s]
                 prev = debt[i]
-        r.. res __ res != float('inf') ____ cnt
+        r.. res __ res != f__('inf') ____ cnt
     
     ___ test
         testCases = [

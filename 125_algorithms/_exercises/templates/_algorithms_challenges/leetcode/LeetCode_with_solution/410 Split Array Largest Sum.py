@@ -39,7 +39,7 @@ c_ SolutionDP:
         ___ e __ nums:
             sums.a..(sums[-1] + e)
 
-        F = [[float("inf") ___ _ __ r..(m + 1)] ___ _ __ r..(n + 1)]
+        F = [[f__("inf") ___ _ __ r..(m + 1)] ___ _ __ r..(n + 1)]
         ___ l __ r..(1, n + 1):
             F[l][1] = sums[l] - sums[0]
         # or F[0][0] = 0
@@ -104,7 +104,7 @@ c_ SolutionTLE2:
         __ m __ 1:
             r.. sums[hi] - sums[0]
 
-        mini = float("inf")
+        mini = f__("inf")
         ___ j __ r..(hi):
             right = sums[hi] - sums[j]
             left = dfs(j, m - 1)
@@ -137,7 +137,7 @@ c_ SolutionTLE:
         __ m __ 1:
             r.. sums[hi] - sums[lo]
 
-        mini = float("inf")
+        mini = f__("inf")
         ___ j __ r..(lo, hi):
             left = sums[j] - sums[lo]
             right = dfs(nums, j, hi, m - 1)

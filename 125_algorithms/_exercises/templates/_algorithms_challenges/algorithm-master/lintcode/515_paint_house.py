@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. costs:
             r.. 0
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         m, n = l..(costs), l..(costs[0])
         dp = [[0] * n ___ _ __ r..(2)]
 

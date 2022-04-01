@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: List[List[int]]
         """
         m, n = l..(matrix), l..(matrix[0])
-        distance = [[float('inf')]*n ___ _ __ r..(m)]
+        distance = [[f__('inf')]*n ___ _ __ r..(m)]
         queue    # list
         ___ i __ r..(m):
             ___ j __ r..(n):

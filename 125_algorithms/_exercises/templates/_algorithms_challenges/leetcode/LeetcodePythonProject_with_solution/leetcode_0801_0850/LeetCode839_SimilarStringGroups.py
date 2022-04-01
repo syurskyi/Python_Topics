@@ -11,7 +11,7 @@ c_ Solution(o..):
         :type A: List[str]
         :rtype: int
         """
-        arr = l..(set(A))
+        arr = l..(s..(A))
         parents = {x: x ___ x __ arr}
         n, m = l..(arr), l..(arr[0])
         count = n

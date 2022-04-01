@@ -56,7 +56,7 @@ c_ LRUCache(o..):
     d[key].hit()
     r.. d[key].value
 
-  ___ set  key, value):
+  ___ s..  key, value):
     """
     :type key: int
     :type value: int

@@ -12,7 +12,7 @@ c_ Solution:
         CANDS = '123456789'
 
         ___ x __ r..(n):
-            used = set()
+            used = s..()
 
             ___ y __ r..(n):
                 __ board[x][y] __ EMPTY:
@@ -24,7 +24,7 @@ c_ Solution:
                 used.add(board[x][y])
 
         ___ y __ r..(n):
-            used = set()
+            used = s..()
 
             ___ x __ r..(n):
                 __ board[x][y] __ EMPTY:
@@ -35,7 +35,7 @@ c_ Solution:
 
         ___ i __ r..(3):
             ___ j __ r..(3):
-                used = set()
+                used = s..()
 
                 ___ x __ r..(i * 3, i * 3 + 3):
                     ___ y __ r..(j * 3, j * 3 + 3):

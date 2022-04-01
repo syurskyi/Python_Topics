@@ -32,7 +32,7 @@ c_ Solution:
                 __ point1.x __ point2.x:
                     key = (1 << 32, point1.x)
                 ____:
-                    slope = float(point1.y-point2.y)/(point1.x-point2.x)
+                    slope = f__(point1.y-point2.y)/(point1.x-point2.x)
                     intersection = slope*point1.x - point1.y
 
                     slope = i..(slope*1000) # avoid numeric errors
@@ -87,7 +87,7 @@ c_ Solution:
                 __ point1.x__point2.x:
                     key = 1<<32
                 ____:
-                    slope = float(point1.y-point2.y)/(point1.x-point2.x)
+                    slope = f__(point1.y-point2.y)/(point1.x-point2.x)
                     slope = i..(slope*10000) # avoid numeric errors
                     # no need to calculate intersection. During this iteration, all lines pass point1
                     key = slope

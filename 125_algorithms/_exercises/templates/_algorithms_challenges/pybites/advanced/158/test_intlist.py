@@ -38,7 +38,7 @@ ___ test_append_and_new_stats_second_instance(list2):
     ... list2.median __ 5
 
 
-@p__.mark.parametrize("arg", ['a', ['a'], {'a': 1}])
+@p__.m__.p..("arg", ['a', ['a'], {'a': 1}])
 ___ test_cannot_append_non_int_values(list1, list2, arg):
     ___ instance __ (list1, list2):
         w__ p__.r.. T..

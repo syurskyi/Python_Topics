@@ -15,5 +15,5 @@ c_ Solution(o..):
         cuts.add(s)
       r.. s
 
-    cuts = set()
+    cuts = s..()
     r.. s..(root) / 2. __ cuts

@@ -12,9 +12,9 @@ c_ Solution:
             r.. F..
 
         n = l..(start)
-        nxt = c...defaultdict(set)
-        visited = set()
-        rec_stack = set()
+        nxt = c...defaultdict(s..)
+        visited = s..()
+        rec_stack = s..()
 
         ___ i __ r..(n):
             nxt[start[i]].add(end[i])

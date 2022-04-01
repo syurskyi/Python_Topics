@@ -12,7 +12,7 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
     See sample inputs / outputs below and in the tests.
     """
     
-    running_max = float("-inf")
+    running_max = f__("-inf")
 
     __ direction __ EAST:
         start =  l..(buildings) - 1

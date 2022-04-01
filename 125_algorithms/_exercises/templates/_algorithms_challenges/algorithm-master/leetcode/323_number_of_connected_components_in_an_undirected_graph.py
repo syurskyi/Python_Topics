@@ -76,13 +76,13 @@ c_ Solution2:
         adj    # dict
 
         ___ i __ r..(n):
-            adj[i] = set()
+            adj[i] = s..()
 
         ___ a, b __ edges:
             adj[a].add(b)
             adj[b].add(a)
 
-        visited = set()
+        visited = s..()
 
         ___ i __ r..(n):
             __ i __ visited:

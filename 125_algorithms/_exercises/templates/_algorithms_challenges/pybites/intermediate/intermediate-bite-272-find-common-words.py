@@ -28,7 +28,7 @@ ___ common_words(sentence1: List[s..], sentence2: List[s..]) __ List[s..]:
     """
     lower_s1 = [e.l.. ___ e __ sentence1 ]
     lower_s2 = [e.l.. ___ e __ sentence2 ]
-    result = l..(set(lower_s1) & set(lower_s2))
+    result = l..(s..(lower_s1) & s..(lower_s2))
 
     r.. s..(result, key=l..)
 

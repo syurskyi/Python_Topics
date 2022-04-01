@@ -1,10 +1,10 @@
-____ Previous.event _______ get_attendees
-
-
-___ test_get_attendees(capfd):
-    get_attendees()
-    output = ?.r .. 0].s...s..("\n")
-
-    ... l..(output) __ 8
-    ... "('Kim', '-', '-')" __ output
-    ... "('Andre', '-', '-')" __ output
+# ____ Previous.? _______ ?
+#
+#
+# ___ test_get_attendees capfd
+#     ?
+#     output  ?.r .. 0 .s...s..("\n")
+#
+#     ... l.. ? __ 8
+#     ... "('Kim', '-', '-')" __ ?
+#     ... "('Andre', '-', '-')" __ ?

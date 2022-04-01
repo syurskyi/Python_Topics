@@ -40,7 +40,7 @@ c_ Solution(o..):
         n = l..(graph)
         isCycle = [F..]*n
         ___ i __ r..(n):
-            visited = set()
+            visited = s..()
             getIsCycle(i, i, graph, visited, isCycle)
         r.. [i ___ i __ r..(n) __ n.. isCycle[i]]
     

@@ -27,7 +27,7 @@ c_ Solution:
         :rtype: bool
         """
         nxt = 0
-        appeared = set()
+        appeared = s..()
         w... T...
             nxt += (n%10)*(n%10)
             n /= 10

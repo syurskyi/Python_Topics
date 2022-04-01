@@ -67,7 +67,7 @@ c_ Twitter(o..):
         Initialize your data structure here.
         """
         tweets = defaultdict(l....: N..)
-        followees = defaultdict(set)
+        followees = defaultdict(s..)
 
     ___ postTweet  userId, tweetId):
         """

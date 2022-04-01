@@ -137,7 +137,7 @@ c_ Solution:
                 #     ds.union((i, j, R), (i, j+1, L))
 
 
-        r.. l..(set(
+        r.. l..(s..(
             ds.find(x)
             ___ x __ ds.pi.k..
         ))

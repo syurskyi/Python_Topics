@@ -23,4 +23,4 @@ ___ get_models(automaker, year):
             ___ item __ data
             __ item['year'] __ year
                        a.. item['automaker'] __ automaker]
-    r.. set(find_model)
+    r.. s..(find_model)

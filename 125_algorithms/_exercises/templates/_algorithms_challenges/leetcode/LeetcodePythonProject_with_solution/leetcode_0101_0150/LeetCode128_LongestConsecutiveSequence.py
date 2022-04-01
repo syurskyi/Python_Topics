@@ -10,7 +10,7 @@ c_ Solution(o..):
         :type nums: List[int]
         :rtype: int
         """
-        nums = set(nums)
+        nums = s..(nums)
         maxLen = 0
         ___ x __ nums:
             __ x-1 n.. __ nums:

@@ -36,7 +36,7 @@ c_ Solution(o..):
     __ l..(nums) < 2:
       r.. 0
     root = TrieNode()
-    ans = float("-inf")
+    ans = f__("-inf")
     ___ num __ nums:
       mask = 0x80000000
       p = root

@@ -9,7 +9,7 @@ c_ TrieNode(o..):
     ___ - , val):
         val = val
         children    # dict
-        candidates = set()
+        candidates = s..()
 
 c_ Solution(o..):
     ___ wordSquares  words):

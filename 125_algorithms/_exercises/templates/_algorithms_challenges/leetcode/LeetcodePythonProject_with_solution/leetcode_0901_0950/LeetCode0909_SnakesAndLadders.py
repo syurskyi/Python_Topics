@@ -11,7 +11,7 @@ c_ Solution(o..):
         board = newboard
         n = l..(board)
         queue = [(0, 0)]
-        visited = set([0])
+        visited = s..([0])
         w.... queue:
             i, d = queue.pop(0)
             ___ j __ r..(i+1, i+7):

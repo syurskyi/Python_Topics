@@ -28,7 +28,7 @@ c_ Solution:
         Patience sort
         LIS dp with binary search
         """
-        F = [float('inf') ___ _ __ r..(3)]
+        F = [f__('inf') ___ _ __ r..(3)]
         ___ n __ nums:
             i = bisect_left(F, n)
             __ i >= 2:

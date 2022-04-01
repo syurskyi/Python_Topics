@@ -5,7 +5,7 @@ c_ Atbash:
     PLAIN = 'abcdefghijklmnopqrstuvwxyz'
     PRIME = 'zyxwvutsrqponmlkjihgfedcba'
     CIPHER = d..(z..(l..(PLAIN), l..(PRIME)))
-    EXCLUDE = set(s__.punctuation + ' ')
+    EXCLUDE = s..(s__.punctuation + ' ')
 
     @staticmethod
     ___ encode  msg):

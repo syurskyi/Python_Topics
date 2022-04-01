@@ -193,7 +193,7 @@ c_ Trie:
 
     ___ _new_node
         r.. {
-            'keys': set(),
+            'keys': s..(),
             'children': {}
         }
 

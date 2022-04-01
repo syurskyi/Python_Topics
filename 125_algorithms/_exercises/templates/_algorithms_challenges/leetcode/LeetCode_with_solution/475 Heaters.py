@@ -50,7 +50,7 @@ c_ Solution:
         """
         houses.s..()
         heaters.s..()
-        heaters.a..(float('inf'))
+        heaters.a..(f__('inf'))
         r = 0
         i = 0
         ___ h __ houses:

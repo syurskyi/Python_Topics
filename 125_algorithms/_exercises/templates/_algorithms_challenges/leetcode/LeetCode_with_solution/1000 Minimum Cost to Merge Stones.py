@@ -90,16 +90,16 @@ c_ Solution:
         @lru_cache(N..)
         ___ F(i, j, m):
             __ i >= j o. m < 1:
-                r.. float("inf")
+                r.. f__("inf")
 
             n = j - i
             __ (n - m) % (K - 1) != 0:
-                r.. float("inf")
+                r.. f__("inf")
 
             __ j __ i + 1:
                 __ m __ 1:
                     r.. 0
-                r.. float("inf")
+                r.. f__("inf")
 
             __ m __ 1:
                 r.. F(i, j, K) + sums[j] - sums[i]
@@ -111,7 +111,7 @@ c_ Solution:
             r.. ret
 
         ret = F(0, N, 1)
-        r.. ret __ ret != float("inf") ____ -1
+        r.. ret __ ret != f__("inf") ____ -1
 
 
 __ _______ __ _______

@@ -9,7 +9,7 @@ c_ Solution(o..):
     heaters.s..()
     ___ house __ s..(houses):
       idx = bisect.bisect_left(heaters, house)
-      dist = float("inf")
+      dist = f__("inf")
       __ idx > 0:
         dist = m..(dist, abs(house - heaters[idx - 1]))
       __ idx < l..(heaters) - 1:

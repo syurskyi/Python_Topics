@@ -61,7 +61,7 @@ c_ Solution:
             __ clips[i][0] > prev_e:  # gap
                 _____
 
-            max_e = -float("inf")
+            max_e = -f__("inf")
             w.... i < l..(clips) a.. clips[i][0] <= prev_e:
                 max_e = m..(max_e, clips[i][1])
                 i += 1

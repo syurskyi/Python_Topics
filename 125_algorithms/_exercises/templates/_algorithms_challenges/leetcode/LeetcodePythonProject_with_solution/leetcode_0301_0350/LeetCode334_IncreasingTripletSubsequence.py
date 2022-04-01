@@ -9,7 +9,7 @@ c_ Solution(o..):
         __ n.. nums: r.. F..
 #         first = float('inf')
         first = nums[0]
-        second = float('inf')
+        second = f__('inf')
         ___ i __ r..(1, l..(nums)):
             __ nums[i] <= first:
                 first = nums[i]

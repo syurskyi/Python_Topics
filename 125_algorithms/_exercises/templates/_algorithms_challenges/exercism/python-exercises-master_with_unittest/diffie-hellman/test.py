@@ -19,7 +19,7 @@ c_ DiffieHellmanTest(unittest.TestCase):
         private_keys    # list
         ___ i __ r..(5):
             private_keys.a..(diffie_hellman.private_key(p))
-        assertEqual(l..(set(private_keys)), l..(private_keys))
+        assertEqual(l..(s..(private_keys)), l..(private_keys))
 
     ___ test_can_calculate_public_key_using_private_key
         p = 23

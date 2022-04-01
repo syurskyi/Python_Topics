@@ -26,7 +26,7 @@ ___ _get_tags(tempfile=TEMPFILE):
     # take a small subset to keep it performant
     tags = TAG_HTML.f..(content)
     tags = [tag ___ tag __ tags __ l..(tag) > MIN_TAG_LEN]
-    r.. set(tags)
+    r.. s..(tags)
 
 
 ___ get_similarities(tags_ N..

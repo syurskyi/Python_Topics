@@ -14,7 +14,7 @@ c_ Solution(o..):
         pos = [0, 0]
         res = 0
         d = 0
-        hashset = set()
+        hashset = s..()
         ___ ob __ obstacles:
             hashset.add(t..(ob))
         ___ c __ commands:

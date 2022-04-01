@@ -12,7 +12,7 @@ c_ Solution(o..):
     """
     intervals.s..(key=l.... i: i.end)
     ans = 0
-    end = float("-inf")
+    end = f__("-inf")
     ___ interval __ intervals:
       # print interval.start, interval.end
       __ interval.start >= end:

@@ -5,10 +5,10 @@ ____ typing _______ Iterable, Set, Any
 ___ intersection(*args: Iterable) __ Set[Any]:
 
     
-    result = [set(arg) ___ arg __ args __ arg]
+    result = [s..(arg) ___ arg __ args __ arg]
 
     __ l..(result) __ 0:
-        r.. set()
+        r.. s..()
     ____ l..(result) __ 1:
         r.. result[0]
 

@@ -22,7 +22,7 @@ c_ Solution(o..):
         ___ i __ r..(n):
             ___ j __ r..(n):
                 __ grid[i][j] __ 0:
-                    visited = set()
+                    visited = s..()
                     curr = 1
                     ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
                         __ 0 <= x < n a.. 0 <= y < n:

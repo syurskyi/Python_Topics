@@ -24,6 +24,6 @@ ___ check_equality(list1, list2):
         r.. Equality.SAME_ORDERED
     __ s..(list1) __ s..(list2):
         r.. Equality.SAME_UNORDERED
-    __ set(list1) __ set(list2):
+    __ s..(list1) __ s..(list2):
         r.. Equality.SAME_UNORDERED_DEDUPED
     r.. Equality.NO_EQUALITY

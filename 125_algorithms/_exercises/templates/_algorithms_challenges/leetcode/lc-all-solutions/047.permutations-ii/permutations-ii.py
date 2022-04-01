@@ -23,5 +23,5 @@ c_ Solution(o..):
         path.pop()
         visited -= {i}
 
-    dfs(nums, res, [], set())
+    dfs(nums, res, [], s..())
     r.. res

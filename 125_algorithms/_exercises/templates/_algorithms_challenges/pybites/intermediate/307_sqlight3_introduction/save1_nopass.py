@@ -19,7 +19,7 @@ c_ SQLiteType(Enum):
 
     NULL = N..
     INTEGER = i..
-    REAL = float
+    REAL = f__
     TEXT = s..
     BLOB = bytes
 

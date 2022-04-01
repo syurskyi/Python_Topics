@@ -15,7 +15,7 @@ You can loop through both sequences but maybe there is a more concise way to do 
 ___ uncommon_cities_solution_1(my_cities, other_cities):
     """Compare my_cities and other_cities and return the number of different
        cities between the two"""
-    result = set(my_cities).symmetric_difference(other_cities)
+    result = s..(my_cities).symmetric_difference(other_cities)
     r.. l..(result)
 
 uncommon_cities(['A','B','C'], ['A','B','C','D'])

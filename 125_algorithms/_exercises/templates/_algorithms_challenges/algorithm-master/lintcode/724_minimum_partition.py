@@ -11,7 +11,7 @@ c_ Solution:
         dp = [F..] * (target + 1)
         dp[0] = T..
 
-        ans = float('inf')
+        ans = f__('inf')
 
         ___ num __ nums:
             ___ i __ r..(target, num - 1, -1):

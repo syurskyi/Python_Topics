@@ -65,7 +65,7 @@ c_ Solution(o..):
         __ n.. dfs(c, graph, visited):
           r.. ""
 
-    unUsedSet = set()
+    unUsedSet = s..()
     ___ word __ words:
       ___ c __ word:
         unUsedSet.add(c)

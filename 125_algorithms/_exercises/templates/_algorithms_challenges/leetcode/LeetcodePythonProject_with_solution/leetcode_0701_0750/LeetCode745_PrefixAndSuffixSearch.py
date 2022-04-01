@@ -8,7 +8,7 @@ c_ TreeNode(o..):
         val = val
         children    # dict
         isLeaf = F..
-        candidates = set()
+        candidates = s..()
 
 c_ WordFilter(o..):
 
@@ -54,7 +54,7 @@ c_ WordFilter(o..):
             r.. root.candidates
         ___ i, c __ e..(word):
             __ c n.. __ root.children:
-                r.. set()
+                r.. s..()
             root = root.children[c]
             __ i __ l..(word)-1:
                 r.. root.candidates

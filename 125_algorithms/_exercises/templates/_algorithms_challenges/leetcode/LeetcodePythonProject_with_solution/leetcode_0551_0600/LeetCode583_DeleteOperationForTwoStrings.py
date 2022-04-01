@@ -12,7 +12,7 @@ c_ Solution(o..):
         :rtype: int
         """
         m, n = l..(word1), l..(word2)
-        dp = [[float('inf')]*(n+1) ___ _ __ r..(m+1)]
+        dp = [[f__('inf')]*(n+1) ___ _ __ r..(m+1)]
         ___ i __ r..(m+1):
             ___ j __ r..(n+1):
                 __ i __ 0 a.. j __ 0:

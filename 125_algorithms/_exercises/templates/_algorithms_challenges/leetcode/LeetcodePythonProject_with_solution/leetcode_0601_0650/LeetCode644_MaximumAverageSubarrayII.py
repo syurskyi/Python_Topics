@@ -16,9 +16,9 @@ c_ Solution(o..):
         ___ num __ nums:
             dp.a..(dp[-1] + num)
         ___ d(x, y):
-            r.. (dp[y+1]-dp[x])/float(y+1-x)
+            r.. (dp[y+1]-dp[x])/f__(y+1-x)
         hull = c...d..()
-        ans = float('-inf')
+        ans = f__('-inf')
         ___ j __ r..(k-1, n):
             w.... l..(hull) >= 2 a.. d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k):
                 hull.pop()
@@ -34,7 +34,7 @@ c_ Solution(o..):
         :type k: int
         :rtype: float
         """
-        l, r = -float(2**31), float(2**31)
+        l, r = -f__(2**31), f__(2**31)
         w.... r-l > 10**-5:
             mid = (l+r)/2.0
             __ check(nums, k, mid):

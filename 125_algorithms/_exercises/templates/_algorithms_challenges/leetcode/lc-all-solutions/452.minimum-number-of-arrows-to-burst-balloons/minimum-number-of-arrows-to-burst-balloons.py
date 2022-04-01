@@ -6,7 +6,7 @@ c_ Solution(o..):
     """
     ans = 0
     points.s..(key=l.... p: p[1])
-    end = float("-inf")
+    end = f__("-inf")
     ___ s, e __ points:
       __ s > end:
         ans += 1

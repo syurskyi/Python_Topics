@@ -10,7 +10,7 @@ c_ Solution(o..):
       d[c] = d.get(c, 0) + 1
       count[c] = count.get(c, 0) + 1
     stack    # list
-    cache = set()
+    cache = s..()
     ___ c __ s:
       __ c n.. __ cache:
         w.... stack a.. stack[-1] > c a.. d[stack[-1]] > 1 a.. d[stack[-1]] != 1 a.. count[stack[-1]] > 0:

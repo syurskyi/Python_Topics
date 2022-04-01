@@ -24,7 +24,7 @@ ___ add_todo(delay_time: s.., task: s..,
     td = start_time
     ___ dl __ delay:
         __ dl[-1] __ 'd':
-            td += t..(days=i..(dl[:-1]))
+            td += t..(d.._i..(dl[:-1]))
         ____ dl[-1] __ 'h':
             td += t..(hours=i..(dl[:-1]))
         ____ dl[-1] __ 'm':
@@ -33,4 +33,4 @@ ___ add_todo(delay_time: s.., task: s..,
             td += t..(seconds=i..(dl[:-1]))
         ____:
             td += t..(seconds=i..(dl))
-    r.. f'{task} @ {td.strftime("%Y-%m-%d %H:%M:%S")}'
+    r.. f'{task} @ {td.s..("%Y-%m-%d %H:%M:%S")}'

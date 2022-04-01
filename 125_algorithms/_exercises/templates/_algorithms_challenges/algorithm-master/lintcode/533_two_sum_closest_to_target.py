@@ -12,7 +12,7 @@ c_ Solution:
 
         left, right = 0, l..(nums) - 1
         _sum = 0
-        diff = float('inf')
+        diff = f__('inf')
         w.... left < right:
             _sum = nums[left] + nums[right]
             __ _sum < target:

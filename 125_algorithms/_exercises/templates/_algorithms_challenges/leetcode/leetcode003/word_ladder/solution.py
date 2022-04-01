@@ -32,7 +32,7 @@ c_ Solution(o..):
         letters = map(chr, r..(o..('a'), o..('z') + 1))
         word_dict = wordDict
         # Remove words that are same as beginWord
-        ___ word __ set(wordDict):
+        ___ word __ s..(wordDict):
             __ beginWord __ word:
                 wordDict.remove(beginWord)
         wordDict.add(endWord)
@@ -56,6 +56,6 @@ c_ Solution(o..):
 
 
 s = Solution()
-print s.ladderLength("hit", "dow", set(["hot", "dot", "dog", "lot", "log"]))
-print s.ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log"]))
-print s.ladderLength("hit", "cog", set(["aos", "dis", "dog", "lot", "log"]))
+print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]))
+print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]))
+print s.ladderLength("hit", "cog", s..(["aos", "dis", "dog", "lot", "log"]))

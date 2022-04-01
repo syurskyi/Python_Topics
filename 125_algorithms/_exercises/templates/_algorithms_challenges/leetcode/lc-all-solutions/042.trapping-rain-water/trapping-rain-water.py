@@ -6,7 +6,7 @@ c_ Solution(o..):
     """
     ans = left = 0
     right = l..(height) - 1
-    leftWall = rightWall = float("-inf")
+    leftWall = rightWall = f__("-inf")
     w.... left <= right:
       __ leftWall <= rightWall:
         ans += m..(0, leftWall - height[left])

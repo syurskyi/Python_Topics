@@ -34,7 +34,7 @@ mount2_expected = [
 ]
 
 
-@p__.mark.parametrize("file_no, expected, exception", [
+@p__.m__.p..("file_no, expected, exception", [
     (1, mount1_expected, F..),
     (2, mount2_expected, F..),
     (3, N.., T..),

@@ -33,7 +33,7 @@ c_ BiteStats:
     $
     ___ number_bites_accessed(self) __ i..:
         """Get the number of unique Bites accessed"""
-        bites = set()
+        bites = s..()
         ___ row __ rows:
             bites.add(row['bite'])
 
@@ -46,7 +46,7 @@ c_ BiteStats:
     $
     ___ number_bites_resolved(self) __ i..:
         """Get the number of unique Bites resolved (completed=True)"""
-        completed = set()
+        completed = s..()
         ___ row __ rows:
             __ row['completed'] __ 'True':
                 completed.add(row['bite'])
@@ -57,7 +57,7 @@ c_ BiteStats:
     $
     ___ number_users_active(self) __ i..:
         """Get the number of unique users in the data set"""
-        users = set()
+        users = s..()
         ___ row __ rows:
             users.add(row['user'])
 
@@ -68,7 +68,7 @@ c_ BiteStats:
     ___ number_users_solving_bites(self) __ i..:
         """Get the number of unique users that resolved
            one or more Bites"""
-        users = set()
+        users = s..()
 
         ___ row __ filter(l.... row: row['completed'] __ 'True',rows):
             users.add(row['user'])

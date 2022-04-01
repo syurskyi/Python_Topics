@@ -4,7 +4,7 @@ c_ Solution(o..):
     :type dict: List[str]
     :rtype: List[str]
     """
-    abbr2word = c...defaultdict(set)
+    abbr2word = c...defaultdict(s..)
     word2abbr    # dict
 
     # group words into abbreivations

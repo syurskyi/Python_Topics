@@ -50,6 +50,6 @@ c_ Solution(o..):
     s = prepRight[::-1]
     length = l..(s) - isValid(s)
     res    # list
-    cache = set()
+    cache = s..()
     dfs(s, res, cache, length)
     r.. res

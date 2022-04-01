@@ -1,6 +1,6 @@
 ____ c.. _______ OrderedDict
 
-___ calc_median_from_dict(d: d..) __ float:
+___ calc_median_from_dict(d: d..) __ f__:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median

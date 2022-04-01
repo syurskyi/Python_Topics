@@ -57,4 +57,4 @@ c_ Solution:
         visited[i][j] = 1
         dfs(i, j, board, visited, res, root.neighbours.get(c, N..), c)
         visited[i][j] = 0
-    r.. l..(set(res))
+    r.. l..(s..(res))

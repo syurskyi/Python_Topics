@@ -14,7 +14,7 @@ c_ Solution(o..):
         :type nuts: List[List[int]]
         :rtype: int
         """
-        sumVal, maxDiff = 0, float('-inf')
+        sumVal, maxDiff = 0, f__('-inf')
         ___ nut __ nuts:
             dist = abs(tree[0]-nut[0])+abs(tree[1]-nut[1])
             sumVal += dist*2
@@ -38,7 +38,7 @@ c_ Solution(o..):
             nutToTree[i] = abs(nuts[i][0]-tree[0])+abs(nuts[i][1]-tree[1])
             sumVal += nutToTree[i]*2
             nutToSquirrel[i] = abs(nuts[i][0]-squirrel[0])+abs(nuts[i][1]-squirrel[1])
-        minVal = float('inf')
+        minVal = f__('inf')
         ___ i __ r..(n):
             dist = sumVal + nutToSquirrel[i]-nutToTree[i]
             minVal = m..(minVal, dist)

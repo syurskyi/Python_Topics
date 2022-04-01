@@ -12,7 +12,7 @@ c_ Solution(o..):
         __ n.. words: r.. ''
         words.s..(key=l..)
         n = l..(words[-1])
-        dp = [set() ___ _ __ r..(n+1)]
+        dp = [s..() ___ _ __ r..(n+1)]
         ___ word __ words:
             __ l..(word) __ 1 o. word[:-1] __ dp[l..(word)-1]:
                 dp[l..(word)].add(word)

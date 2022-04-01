@@ -14,9 +14,9 @@ c_ Solution(o..):
         hashmap    # dict
         ___ w1, w2 __ pairs:
             __ w1 n.. __ hashmap:
-                hashmap[w1] = set()
+                hashmap[w1] = s..()
             __ w2 n.. __ hashmap:
-                hashmap[w2] = set()
+                hashmap[w2] = s..()
             hashmap[w1].add(w2)
             hashmap[w2].add(w1)
         __ l..(words1) != l..(words2):

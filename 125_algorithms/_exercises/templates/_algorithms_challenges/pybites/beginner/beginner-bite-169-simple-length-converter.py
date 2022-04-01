@@ -13,14 +13,14 @@ centimeters if it's being converted to inches.
 That's it!
 '''
 
-___ convert(value: float, fmt: s..) __ float:
+___ convert(value: f__, fmt: s..) __ f__:
     """Converts the value to the designated format.
 
     :param value: The value to be converted must be numeric or raise a TypeError
     :param fmt: String indicating format to convert to
     :return: Float rounded to 4 decimal places after conversion
     """
-    __ t..(value) __ i.. o. t..(value) __ float:
+    __ t..(value) __ i.. o. t..(value) __ f__:
         __ fmt.l.. __ "cm" o. fmt.l.. __ "in":
             __ fmt.l.. __ "cm":
                 result = value*2.54

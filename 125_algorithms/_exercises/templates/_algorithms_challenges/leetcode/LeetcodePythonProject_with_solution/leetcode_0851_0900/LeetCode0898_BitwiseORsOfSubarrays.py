@@ -4,10 +4,10 @@ c_ Solution(o..):
         :type A: List[int]
         :rtype: int
         """
-        prevSet = set()
-        uniqSet = set()
+        prevSet = s..()
+        uniqSet = s..()
         ___ num __ A:
-            currSet = set()
+            currSet = s..()
             prevSet.add(0)
             ___ num1 __ prevSet:
                 currSet.add(num | num1)

@@ -11,10 +11,10 @@ c_ Solution(o..):
         :type wordList: Set[str]
         :rtype: int
         """
-        wordSet = set(wordList)
+        wordSet = s..(wordList)
         wordSet.add(beginWord)
         # DON'T ADD endWord
-        visited = set([beginWord])
+        visited = s..([beginWord])
         queue = [beginWord]
         length = 0
         w.... queue:

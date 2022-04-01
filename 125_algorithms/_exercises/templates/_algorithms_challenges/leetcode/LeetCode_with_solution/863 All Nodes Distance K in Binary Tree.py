@@ -67,7 +67,7 @@ c_ Solution:
 
     ___ ancestor_dist  node, K, target, ret):
         __ n.. node:
-            r.. float('inf')
+            r.. f__('inf')
 
         __ node.val __ target.val:
             # d = 0
@@ -79,7 +79,7 @@ c_ Solution:
             d = m..(l, r) + 1
             __ d __ K:
                 ret.a..(node.val)
-            ____ l __ float('inf'):
+            ____ l __ f__('inf'):
                 dfs_down(node.left, K - d - 1, ret)
             ____:  # r == float('inf')
                 dfs_down(node.right, K - d - 1, ret)
@@ -97,7 +97,7 @@ c_ SolutionComplicated:
         dfs1(target, K, ret)
         hm    # dict
         ancestor_dist(root, target, hm)
-        dfs2(root, target, K, float("inf"), hm, ret)
+        dfs2(root, target, K, f__("inf"), hm, ret)
         r.. ret
 
     ___ dfs1  node, K, ret):
@@ -113,7 +113,7 @@ c_ SolutionComplicated:
 
     ___ ancestor_dist  node, target, hm):
         __ n.. node:
-            r.. float('inf')
+            r.. f__('inf')
 
         __ node.val __ target.val:
             hm[node.val] = 0

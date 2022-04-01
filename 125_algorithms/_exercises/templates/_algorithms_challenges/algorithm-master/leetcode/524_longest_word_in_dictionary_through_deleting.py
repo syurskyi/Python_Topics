@@ -53,7 +53,7 @@ c_ Solution:
         find_cands(s, 0, cands, [])
 
         ans = ''
-        target = set(words)
+        target = s..(words)
 
         ___ w __ cands:
             __ any((

@@ -24,7 +24,7 @@ c_ Solution:
 
 
         m, n = l..(board), l..(board[0])
-        visited = set()
+        visited = s..()
 
         ___ x __ r..(m):
             ___ y __ r..(n):

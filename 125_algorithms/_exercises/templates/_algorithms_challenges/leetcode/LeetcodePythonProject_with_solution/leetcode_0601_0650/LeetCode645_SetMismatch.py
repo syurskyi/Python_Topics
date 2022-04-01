@@ -9,7 +9,7 @@ c_ Solution(o..):
         :type nums: List[int]
         :rtype: List[int]
         """
-        hashset = set()
+        hashset = s..()
         n = l..(nums)
         sumVal = n*(n+1)//2
         res    # list

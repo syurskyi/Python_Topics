@@ -1,5 +1,5 @@
 c_ Binary:
-    VALID_CHARS = set("01")
+    VALID_CHARS = s..("01")
 
     @classmethod
     ___ parse_binary(cls, inp):
@@ -14,7 +14,7 @@ c_ Binary:
 
     @classmethod
     ___ valid(cls, inp):
-        r.. set(inp) <= cls.VALID_CHARS
+        r.. s..(inp) <= cls.VALID_CHARS
 
 
 ___ parse_binary(inp):

@@ -12,9 +12,9 @@ c_ Solution(o..):
     graph = c...defaultdict(l..)
     visited    # dict
     incomings = c...defaultdict(i..)
-    nodes = set()
+    nodes = s..()
     ___ seq __ seqs:
-      nodes |= set(seq)
+      nodes |= s..(seq)
       __ l..(seq) > 0:
         incomings[seq[0]] += 0
       ___ i __ r..(0, l..(seq) - 1):

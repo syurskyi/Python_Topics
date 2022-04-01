@@ -9,4 +9,4 @@ c_ Solution(o..):
     a = z..(pattern, s..)
     print
     a
-    r.. l..(pattern) __ l..(s..) a.. l..(set(a)) __ l..(set(pattern)) __ l..(set(s..))
+    r.. l..(pattern) __ l..(s..) a.. l..(s..(a)) __ l..(s..(pattern)) __ l..(s..(s..))

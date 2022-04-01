@@ -7,7 +7,7 @@ DICTIONARY = os.path.j..('/tmp', 'dictionary.txt')
 urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 w__ open(DICTIONARY) __ f:
-    dictionary = set([word.s...l.. ___ word __ f.read().s.. ])
+    dictionary = s..([word.s...l.. ___ word __ f.read().s.. ])
 
 
 ___ get_possible_dict_words(draw):

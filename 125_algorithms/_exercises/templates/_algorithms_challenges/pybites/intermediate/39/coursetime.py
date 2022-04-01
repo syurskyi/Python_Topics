@@ -44,7 +44,7 @@ ___ calc_total_course_duration(timestamps):
     ___ course_dt __ dt_conversion:
         baseline = baseline + t..(minutes=course_dt.minute, seconds=course_dt.second)
 
-    r.. baseline.strftime('%-H:%M:%S')
+    r.. baseline.s..('%-H:%M:%S')
 
 
 #if __name__ == "__main__":

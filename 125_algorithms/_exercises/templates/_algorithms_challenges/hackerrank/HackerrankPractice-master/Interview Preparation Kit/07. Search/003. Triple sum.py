@@ -16,11 +16,11 @@ ___ binary_search_last(arr, el, low, high):
 
 
 len_a, len_b, len_c = map(i.., input().s..())
-a = s..(set(map(i.., input().s..())))
-b = s..(l..(set(map(i.., input().s..()))))
-c = s..(l..(set(map(i.., input().s..()))))
+a = s..(s..(map(i.., input().s..())))
+b = s..(l..(s..(map(i.., input().s..()))))
+c = s..(l..(s..(map(i.., input().s..()))))
 
 ans = 0
-___ i __ set(b):
+___ i __ s..(b):
     ans += binary_search_last(a, i, 0, l..(a)) * binary_search_last(c, i, 0, l..(c))
 print(ans)

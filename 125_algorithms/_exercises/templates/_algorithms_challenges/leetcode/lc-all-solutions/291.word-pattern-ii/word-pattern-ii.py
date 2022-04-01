@@ -14,7 +14,7 @@ c_ Solution(o..):
       ___ i __ r..(0, l..(s)):
         pathp.a..(p[0])
         paths.a..(s[:i + 1])
-        __ l..(pathp) __ l..(paths) a.. l..(set(paths)) __ l..(set(pathp)) __ l..(set(z..(paths, pathp))):
+        __ l..(pathp) __ l..(paths) a.. l..(s..(paths)) __ l..(s..(pathp)) __ l..(s..(z..(paths, pathp))):
           __ dfs(p[1:], s[i + 1:], pathp, paths, visited):
             r.. T..
         pathp.pop()

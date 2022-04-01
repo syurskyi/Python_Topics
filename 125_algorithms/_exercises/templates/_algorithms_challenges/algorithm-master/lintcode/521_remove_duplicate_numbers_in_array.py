@@ -12,7 +12,7 @@ c_ Solution:
         __ n.. nums:
             r.. ans
 
-        exists = set()
+        exists = s..()
         ___ i __ r..(l..(nums)):
             __ nums[i] n.. __ exists:
                 exists.add(nums[i])

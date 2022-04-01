@@ -3,7 +3,7 @@ _______ p__
 ____ intersection _______ intersection
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "inputs,expected",
     [
         [({1, 2, 3}, {2, 3, 4}, {3, 4}), {3}],
@@ -24,14 +24,14 @@ ___ test_basic(inputs, expected):
     ... results __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "inputs,expected",
     [
         [((N.., "this is a string")), {" ", "a", "g", "h", "i", "n", "r", "s", "t"}],
         [
             # no input
             (N..,),
-            set(),
+            s..(),
         ],
         [
             # multiple None inputs

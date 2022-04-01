@@ -41,8 +41,8 @@ ___ test_get_aws_service_range(json_file):
     services = parse_ipv4_service_ranges(json_file)
     service_range = get_aws_service_range('13.248.118.1', services)
     ... l..(service_range) __ 2
-    ... set(s.region ___ s __ service_range) __ {'eu-west-1'}
-    ... set(s.service ___ s __ service_range) __ {'AMAZON', 'GLOBALACCELERATOR'}
+    ... s..(s.region ___ s __ service_range) __ {'eu-west-1'}
+    ... s..(s.service ___ s __ service_range) __ {'AMAZON', 'GLOBALACCELERATOR'}
     ... get_aws_service_range('158.152.1.65', services) __ []
     w__ p__.r..(ValueError) __ exc:
         get_aws_service_range('0.0.0.256', services)

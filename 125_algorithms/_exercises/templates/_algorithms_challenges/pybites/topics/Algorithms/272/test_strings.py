@@ -13,7 +13,7 @@ sentence4 = ['The', 'more', 'read', 'the',
 sentence5 = ['be', 'a', 'good', 'man']
 
 
-@p__.mark.parametrize("sentence1, sentence2, expected", [
+@p__.m__.p..("sentence1, sentence2, expected", [
     (sentence1, sentence2, ['to', 'not']),
     (sentence3, sentence4, ['the', 'read']),
     (sentence2, sentence3, ['to']),

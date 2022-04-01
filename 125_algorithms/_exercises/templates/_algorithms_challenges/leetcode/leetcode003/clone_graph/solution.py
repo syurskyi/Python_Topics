@@ -21,7 +21,7 @@ c_ Solution(o..):
             r.. N..
         queue    # list
         start_cloned_node = UndirectedGraphNode(node.label)
-        visited = set()
+        visited = s..()
         # A dictionary that maps labels to cloned nodes
         d = {node: start_cloned_node}
         queue.a..(node)

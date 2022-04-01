@@ -8,7 +8,7 @@ ___ fb(value):
     r.. s..(value)
 
 
-@p__.mark.parametrize('test_input, expected', [
+@p__.m__.p..('test_input, expected', [
                         ({}, {}),
                         ({'user_name': 'jdoe'}, {'user_name': 'jdoe'}),
                         ({'@user_name': 'jdoe'}, {'user_name': 'jdoe'}),

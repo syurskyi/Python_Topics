@@ -47,7 +47,7 @@ c_ Solution:
         merge has to be dfs
         account id
         """
-        email_to_ids = defaultdict(set)
+        email_to_ids = defaultdict(s..)
         ___ i, v __ e..(accounts):
             ___ email __ v[1:]:
                 email_to_ids[email].add(i)
@@ -57,7 +57,7 @@ c_ Solution:
         ret    # list
         ___ i, v __ e..(accounts):
             __ n.. visited[i]:
-                emails = set()
+                emails = s..()
                 dfs(i, accounts, email_to_ids, emails, visited)
                 ret.a..([v[0]] + s..(emails))
 

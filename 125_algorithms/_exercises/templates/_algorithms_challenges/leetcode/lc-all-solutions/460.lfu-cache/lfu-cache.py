@@ -81,7 +81,7 @@ c_ LFUCache(o..):
     cacheNode.increaseFreq()
     r.. cacheNode.val
 
-  ___ set  key, value):
+  ___ s..  key, value):
     __ cap __ 0:
       r..
     __ key __ d:

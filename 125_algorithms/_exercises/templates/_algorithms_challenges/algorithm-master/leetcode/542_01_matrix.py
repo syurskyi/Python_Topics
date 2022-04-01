@@ -8,7 +8,7 @@ c_ Solution:
             r.. []
 
         m, n = l..(matrix), l..(matrix[0])
-        ans = [[float('inf')] * n ___ _ __ r..(m)]
+        ans = [[f__('inf')] * n ___ _ __ r..(m)]
         queue    # list
 
         ___ x __ r..(m):

@@ -4,7 +4,7 @@ c_ Solution:
         :type G: List[List[int]]
         :rtype: int
         """
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         m, n = l..(G), l..(G[0])
         dp = [[INFINITY] * (n + 1) ___ _ __ r..(m + 1)]
         dp[m][n - 1] = 1

@@ -75,7 +75,7 @@ c_ Solution:
 
 c_ SolutionErrror:
     ___ - ):
-        covered = set()
+        covered = s..()
 
     ___ minCameraCover  root: TreeNode) __ i..:
         """

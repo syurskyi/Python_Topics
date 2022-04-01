@@ -18,7 +18,7 @@ HOUR = ONE_MIN * .06
 CURRENT_SESSION = 1
 
 
-async ___ break_time(delay: Union[i.., float], loop: i..) __ N..
+async ___ break_time(delay: Union[i.., f__], loop: i..) __ N..
     """Break time
 
     :param delay: float of delay in seconds
@@ -26,35 +26,35 @@ async ___ break_time(delay: Union[i.., float], loop: i..) __ N..
     :return: None
     """
     _delay = i..(delay / ONE_MIN)
-    print(f"[{loop}] {time.strftime('%X')} Time for a {_delay} min break!")
+    print(f"[{loop}] {time.s..('%X')} Time for a {_delay} min break!")
     await sleep(delay)
 
 
-async ___ lunch_time(delay: Union[i.., float]) __ N..
+async ___ lunch_time(delay: Union[i.., f__]) __ N..
     """Lunch time
 
     :param delay: float of delay in seconds
     :return: None
     """
-    print(f"\n** {time.strftime('%X')} Time for lunch! **")
+    print(f"\n** {time.s..('%X')} Time for lunch! **")
     await sleep(delay)
 
 
-async ___ work_time(delay: Union[i.., float], loop: i..) __ N..
+async ___ work_time(delay: Union[i.., f__], loop: i..) __ N..
     """Work time
 
     :param delay: float of delay in seconds
     :param loop: int of the current loop
     :return: None
     """
-    print(f"[{loop}] {time.strftime('%X')} Time to work!")
+    print(f"[{loop}] {time.s..('%X')} Time to work!")
     await sleep(delay)
 
 
 async ___ session(
-    work_length: Union[i.., float] = TWENTY_FIVE_MIN,
-    short_break_length: Union[i.., float] = FIVE_MIN,
-    long_break_length: Union[i.., float] = THIRTY_MIN,
+    work_length: Union[i.., f__] = TWENTY_FIVE_MIN,
+    short_break_length: Union[i.., f__] = FIVE_MIN,
+    long_break_length: Union[i.., f__] = THIRTY_MIN,
 ) __ N..
     """Session
 
@@ -77,10 +77,10 @@ async ___ session(
 
 
 async ___ main(
-    work_length: Union[i.., float] = TWENTY_FIVE_MIN,
-    short_break_length: Union[i.., float] = FIVE_MIN,
-    long_break_length: Union[i.., float] = THIRTY_MIN,
-    lunch_length: Union[i.., float] = HOUR,
+    work_length: Union[i.., f__] = TWENTY_FIVE_MIN,
+    short_break_length: Union[i.., f__] = FIVE_MIN,
+    long_break_length: Union[i.., f__] = THIRTY_MIN,
+    lunch_length: Union[i.., f__] = HOUR,
 ) __ N..
     """Main entry point
 
@@ -91,7 +91,7 @@ async ___ main(
     :return: None
     """
     global CURRENT_SESSION
-    print(f"Pomodor timer started at: {time.strftime('%X')}")
+    print(f"Pomodor timer started at: {time.s..('%X')}")
 
     w.... CURRENT_SESSION <= 4:
         print(f"\nSession: {CURRENT_SESSION}")
@@ -100,9 +100,9 @@ async ___ main(
             await lunch_time(lunch_length)
         CURRENT_SESSION += 1
 
-    print(f"\n{time.strftime('%X')} Time to go home!")
+    print(f"\n{time.s..('%X')} Time to go home!")
 
-    print(f"\nWork day completed at: {time.strftime('%X')}")
+    print(f"\nWork day completed at: {time.s..('%X')}")
 
 
 __ _______ __ _______

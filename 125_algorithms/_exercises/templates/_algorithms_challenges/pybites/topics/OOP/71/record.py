@@ -2,7 +2,7 @@ c_ RecordScore
     """Class to track a game's maximum score"""
 
     ___ - ):
-        high_score = float('-inf')
+        high_score = f__('-inf')
 
     ___ __call__  score):
         score = score

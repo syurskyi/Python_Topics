@@ -15,4 +15,4 @@ c_ InvertedIndex:
     # @param key is from mapper
     # @param values is a set of value with the same key
     ___ reducer  key, values):
-        y.. key, s..(l..(set(values)))
+        y.. key, s..(l..(s..(values)))

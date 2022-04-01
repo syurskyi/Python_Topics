@@ -10,7 +10,7 @@ c_ Solution(o..):
       r.. res
     queue = [(0, "")]
     slen = l..(s)
-    lenList = [l ___ l __ set(map(l.., wordDict))]
+    lenList = [l ___ l __ s..(map(l.., wordDict))]
     w.... queue:
       tmpqueue    # list
       ___ q __ queue:
@@ -32,7 +32,7 @@ c_ Solution(o..):
     """
     queue = [0]
     slen = l..(s)
-    lenList = [l ___ l __ set(map(l.., wordDict))]
+    lenList = [l ___ l __ s..(map(l.., wordDict))]
     visited = [0 ___ _ __ r..(0, slen + 1)]
     w.... queue:
       tmpqueue    # list

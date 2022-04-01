@@ -40,10 +40,10 @@ ___ longest_streak(
         data = json.load(f)
     # You code from here
     commits = data['commits']
-    longest_streak = float("-inf")
+    longest_streak = f__("-inf")
     start_date = end_date = N..
     
-    day_timedelta = t..(days=1)
+    day_timedelta = t..(d.._1)
     previous_date= current_start =N..
     current_streak = 1
     ___ i __ r..(l..(commits)):

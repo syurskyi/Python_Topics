@@ -22,6 +22,6 @@ ___ most_prolific_automaker(year):
 ___ get_models(automaker, year):
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
-    r.. set([row["model"] ___ row __ data
+    r.. s..([row["model"] ___ row __ data
                 __ row["automaker"] __ automaker a..
                 row["year"] __ year])

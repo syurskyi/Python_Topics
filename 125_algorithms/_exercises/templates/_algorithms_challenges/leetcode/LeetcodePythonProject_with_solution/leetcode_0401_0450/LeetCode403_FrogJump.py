@@ -9,8 +9,8 @@ c_ Solution(o..):
         __ n.. stones: r.. F..
         hashmap    # dict
         ___ stone __ stones:
-            hashmap[stone] = set()
-        hashmap[0] = set([1])
+            hashmap[stone] = s..()
+        hashmap[0] = s..([1])
         ___ stone __ stones:
             ___ step __ hashmap[stone]:
                 reach = step+stone

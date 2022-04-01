@@ -10,7 +10,7 @@ ___ extract_dates(data):
     data = data.s..
 
     
-    dates = set()
+    dates = s..()
     lines = data.splitlines()
     ___ i,line __ e..(lines):
         __ i > 2 a.. i != l..(lines) - 1:
@@ -44,7 +44,7 @@ ___ calculate_streak(dates):
     streak = 0
 
     
-    delta = t..(days=1)
+    delta = t..(d.._1)
     day = TODAY - delta
 
     w.... day __ dates:

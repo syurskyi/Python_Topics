@@ -24,7 +24,7 @@ ___ get_models(automaker, year):
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
 
-    r.. set(data.loc[(data.year __ year) & (data.automaker __ automaker),'model'])
+    r.. s..(data.loc[(data.year __ year) & (data.automaker __ automaker),'model'])
 
 
 

@@ -7,7 +7,7 @@ ____ sublist _______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 c_ SublistTest(unittest.TestCase):
     ___ test_unique_return_values
-        assertEqual(l..(set([SUBLIST, SUPERLIST, EQUAL, UNEQUAL])), 4)
+        assertEqual(l..(s..([SUBLIST, SUPERLIST, EQUAL, UNEQUAL])), 4)
 
     ___ test_empty_lists
         assertEqual(

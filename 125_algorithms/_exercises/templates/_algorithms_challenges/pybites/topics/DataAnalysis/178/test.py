@@ -21,8 +21,8 @@ w__ open(commits) __ f:
         #print(line)
         date, commit  = line.s..(' | ')
         date_time_obj = d__. strptime(date[12:], '%b %d %H:%M:%S %Y %z')
-        dt_yr = date_time_obj.strftime("%Y")
-        year_month = date_time_obj.strftime("%Y-%m")
+        dt_yr = date_time_obj.s..("%Y")
+        year_month = date_time_obj.s..("%Y-%m")
         __ year_argument __ 'None' o. dt_yr __ year_argument:
             commit_list = commit.s..
             __ l..(commit_list) __ 7:

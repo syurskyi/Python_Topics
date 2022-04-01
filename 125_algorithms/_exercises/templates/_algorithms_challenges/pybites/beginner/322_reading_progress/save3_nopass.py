@@ -4,7 +4,7 @@ today = d__.today()
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
                     day_of_year: i.. = N..) __ bool:
-    day = [day_of_year __ day_of_year ____ i..(today.strftime('%j'))][0]
+    day = [day_of_year __ day_of_year ____ i..(today.s..('%j'))][0]
     __ books_read >= books_goal:
         r.. T..
     ____:

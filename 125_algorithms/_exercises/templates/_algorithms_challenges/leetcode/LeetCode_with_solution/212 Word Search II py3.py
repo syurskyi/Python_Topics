@@ -36,7 +36,7 @@ c_ Solution:
         root = construct(words)
         m, n = l..(board), l..(board[0])
         visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
-        ret = set()
+        ret = s..()
         ___ i __ r..(m):
             ___ j __ r..(n):
                 dfs(board, visited, i, j, root, ret)

@@ -43,7 +43,7 @@ c_ Solution(o..):
         :type n: int
         :rtype: int
         """
-        V = set(r..(n))
+        V = s..(r..(n))
 
         w.... l..(V) > 1:
             a = V.pop()

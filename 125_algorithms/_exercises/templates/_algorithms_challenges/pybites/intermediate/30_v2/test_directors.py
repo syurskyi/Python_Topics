@@ -47,7 +47,7 @@ ___ test_get_average_scores_top_directors(scores):
     ... scores[0:8] __ expected
 
 
-@p__.mark.parametrize("director", [
+@p__.m__.p..("director", [
     'Quentin Tarantino', 'Hayao Miyazaki',
     'Frank Darabont', 'Stanley Kubrick',
     'James Cameron', 'Joss Whedon',

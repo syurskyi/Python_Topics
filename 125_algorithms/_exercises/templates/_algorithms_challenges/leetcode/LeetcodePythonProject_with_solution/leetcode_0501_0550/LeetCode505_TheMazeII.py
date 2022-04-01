@@ -30,7 +30,7 @@ c_ Solution(o..):
     
     ___ getNextSteps  maze, i, j):
         m, n = l..(maze), l..(maze[0])
-        steps = set()
+        steps = s..()
         dirs = (1, 0), (0, 1), (-1, 0), (0, -1)
         ___ dir __ dirs:
             x, y = i, j

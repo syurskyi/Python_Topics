@@ -39,10 +39,10 @@ c_ Board:
         __ n.. valid(x, y):
             r.. ValueError('invalid coordinate')
         __ board[y][x] __ STONES:
-            r.. (NONE, set())
+            r.. (NONE, s..())
 
         visited_territory, visited_stones = walk(x, y)
-        result = set(visited_territory)
+        result = s..(visited_territory)
 
         __ l..(visited_stones) __ 1:
             r.. (visited_stones[0], result)
@@ -50,8 +50,8 @@ c_ Board:
 
     ___ territories
         owners = STONES + [NONE]
-        result = d..([(owner, set()) ___ owner __ owners])
-        visited = set()
+        result = d..([(owner, s..()) ___ owner __ owners])
+        visited = s..()
         ___ y __ r..(height):
             ___ x __ r..(width):
                 __ n.. (x, y) __ visited:

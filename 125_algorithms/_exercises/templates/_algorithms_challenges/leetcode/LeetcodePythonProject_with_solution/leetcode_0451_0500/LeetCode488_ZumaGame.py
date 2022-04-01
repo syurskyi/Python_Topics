@@ -15,12 +15,12 @@ c_ Solution(o..):
         ___ c __ hand:
             handCount[o..(c)-o..('A')] += 1
         res = helper(board+'#', handCount)
-        r.. res __ res != float('inf') ____ -1
+        r.. res __ res != f__('inf') ____ -1
     
     ___ helper  s, h):
         s = removeConsecutive(s)
         __ s __ '#': r.. 0
-        res = float('inf')
+        res = f__('inf')
         i, j = 0, 0
         w.... j < l..(s):
             __ s[j] __ s[i]:

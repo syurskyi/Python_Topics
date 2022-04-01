@@ -21,7 +21,7 @@ c_ Solution:
         P = [0]
         ___ x __ nums: P.a..(P[-1] + x)
         max_sum = m..(P[i+k] - P[i] ___ i __ r..(l..(nums) - k + 1))
-        r.. max_sum / float(k)
+        r.. max_sum / f__(k)
 
 c_ Solution:
     ___ findMaxAverage  nums, k):
@@ -36,11 +36,11 @@ c_ Solution:
               |--> Start to find max sum
                 |--> Start to remove past child
         """
-        max_sum, tmp_sum = float('-inf'), 0
+        max_sum, tmp_sum = f__('-inf'), 0
         ___ i __ r..(l..(nums)):
             tmp_sum += nums[i]
             __ i >= k:
                 tmp_sum -= nums[i-k]
             __ i + 1 >= k:
                 max_sum = m..(max_sum, tmp_sum)
-        r.. max_sum / float(k)
+        r.. max_sum / f__(k)

@@ -19,7 +19,7 @@ ___ collect_totals(renting_history: RentingHistory) __ Dict[s.., i..]:
     '''
     totals = defaultdict(l....: 0)
     ___ movie __ renting_history:
-        totals[movie.date.strftime('%Y-%m')] += movie.price
+        totals[movie.date.s..('%Y-%m')] += movie.price
     r.. totals
 
 

@@ -14,11 +14,11 @@ __ n.. RATES_FILE.exists
 
 ___ get_all_days(start_date: date, end_date: date) __ List[date]:
     delta = end_date - start_date
-    r.. [start_date+t..(days=x) ___ x __ r..(delta.days+1)]
+    r.. [start_date+t..(d.._x) ___ x __ r..(delta.days+1)]
 
 ___ _parse_date(date_string: s..) __ date:
     y,m,d = date_string.s.. 
-    r.. date(days=d,  m.._m, year=y)
+    r.. date(d.._d,  m.._m, year=y)
 
 """{
     "start_at": "2019-01-01",

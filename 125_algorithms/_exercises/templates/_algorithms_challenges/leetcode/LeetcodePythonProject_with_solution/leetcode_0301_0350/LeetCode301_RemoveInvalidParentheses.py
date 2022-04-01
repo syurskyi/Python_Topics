@@ -15,7 +15,7 @@ c_ Solution(o..):
                     rmL -= 1
                 ____:
                     rmR += 1
-        result = set()
+        result = s..()
         helper(s, 0, result, '', rmL, rmR, 0)
         r.. l..(result)
     

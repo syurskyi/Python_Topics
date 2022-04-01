@@ -33,7 +33,7 @@ c_ Solution:
         # between every two adjacent indexes
         prefix_sum.s..(key=l.... p: p.s..)
 
-        closest_sum = float('inf')
+        closest_sum = f__('inf')
         tmp_sum = 0
         ___ i __ r..(1, n):
             # calculate all the closest sum occurred in two adjacent indexes

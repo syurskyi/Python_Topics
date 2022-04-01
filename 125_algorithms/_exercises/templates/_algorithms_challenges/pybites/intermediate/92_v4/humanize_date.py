@@ -29,6 +29,6 @@ ___ pretty_date(date):
             result = to.date_str.f..(i..(secs / (to.divider __ to.divider ____ 1)))
             _____
     ____:
-        result = date.strftime('%m/%d/%y')
+        result = date.s..('%m/%d/%y')
 
     r.. result

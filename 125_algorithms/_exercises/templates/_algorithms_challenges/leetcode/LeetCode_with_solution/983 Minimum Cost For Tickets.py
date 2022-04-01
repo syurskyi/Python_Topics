@@ -60,11 +60,11 @@ c_ Solution:
 
         O(365)
         """
-        F = [float("inf") ___ _ __ r..(366 + 30)]
+        F = [f__("inf") ___ _ __ r..(366 + 30)]
         ___ i __ r..(366, 366 + 30):
             F[i] = 0
 
-        days_set = set(days)
+        days_set = s..(days)
         ___ i __ r..(365, 0, -1):
             __ i n.. __ days_set:
                 F[i] = F[i+1]
@@ -85,7 +85,7 @@ c_ Solution:
         Need buffer day
         """
         n = l..(days)
-        F = [float("inf") ___ _ __ r..(n)]
+        F = [f__("inf") ___ _ __ r..(n)]
         F[-1] = costs[0]
         ___ i __ r..(n-2, -1, -1):
             ___ j __ r..(i+1, n):
@@ -110,9 +110,9 @@ c_ Solution:
         Why does iterate forward fail? Because future min does not depends on the
         current min. Current higher cost may contribtue to future lower cost.
         """
-        F = [float("inf") ___ _ __ r..(365 + 1)]
+        F = [f__("inf") ___ _ __ r..(365 + 1)]
         F[0] = 0
-        days_set = set(days)
+        days_set = s..(days)
         ___ i __ r..(1, 366):
             __ i n.. __ days_set:
                 F[i] = F[i-1]

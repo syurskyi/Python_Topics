@@ -7,8 +7,8 @@ c_ Solution(o..):
     __ n.. matrix:
       r.. []
     n, m = l..(matrix), l..(matrix[0])
-    pacific = set()
-    atlantic = set()
+    pacific = s..()
+    atlantic = s..()
     ans    # list
 
     ___ dfs(matrix, visited, i, j):

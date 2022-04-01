@@ -31,7 +31,7 @@ c_ LRUCache(o..):
             r.. node.value
         r.. -1
 
-    ___ set  key, value):
+    ___ s..  key, value):
         """
         :type key: int
         :type value: int

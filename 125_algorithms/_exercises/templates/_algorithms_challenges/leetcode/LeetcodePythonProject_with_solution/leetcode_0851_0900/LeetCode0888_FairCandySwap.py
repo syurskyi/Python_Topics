@@ -13,8 +13,8 @@ c_ Solution(o..):
         sumA = s..(A)
         sumB = s..(B)
         evenNum = (sumA+sumB)//2
-        setA = set(A)
-        setB = set(B)
+        setA = s..(A)
+        setB = s..(B)
         ans = [0, 0]
         ___ a __ setA:
             __ evenNum - (sumA - a) __ setB:

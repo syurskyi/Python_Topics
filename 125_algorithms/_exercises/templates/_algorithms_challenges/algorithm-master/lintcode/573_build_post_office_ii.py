@@ -41,7 +41,7 @@ c_ Solution:
                     cnt += 1
                     bfs(grid, x, y, times, steps)
 
-        ans = INF = float('inf')
+        ans = INF = f__('inf')
 
         ___ (x, y), t __ times.i..:
             __ t __ cnt a.. steps[x, y] < ans:
@@ -52,7 +52,7 @@ c_ Solution:
     ___ bfs  grid, x, y, times, steps):
         m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
-        visited = set(queue)
+        visited = s..(queue)
         step = 0
 
         w.... queue:
@@ -107,7 +107,7 @@ c_ Solution:
 
         m, n = l..(grid), l..(grid[0])
         cnt = 0
-        ids = c...defaultdict(set)  # record house ids
+        ids = c...defaultdict(s..)  # record house ids
         steps = c...defaultdict(i..)  # total steps for all houses
 
         ___ x __ r..(m):
@@ -119,7 +119,7 @@ c_ Solution:
                 step = c...defaultdict(i..)  # steps for current house
                 dfs(grid, x, y, cnt, ids, steps, step)
 
-        ans = INF = float('inf')
+        ans = INF = f__('inf')
 
         ___ (x, y), hids __ ids.i..:
             __ l..(hids) __ cnt a.. steps[x, y] < ans:

@@ -54,4 +54,4 @@ ___ sort_books_by_published_date(books=books):
     l_pub = s..(date_list, r.._T..[0]
     r.. ''.j..([t.title
                     ___ t __ books
-                    __ t.published __ d__.strftime(l_pub, '%Y-%m-%d')])
+                    __ t.published __ d__.s..(l_pub, '%Y-%m-%d')])

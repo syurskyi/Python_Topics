@@ -13,7 +13,7 @@ c_ Solution(o..):
     ___ i, num __ e..(A):
       fk += i * num
     idx = n - 1
-    ans = float("-inf")
+    ans = f__("-inf")
     ___ _ __ r..(n):
       fk += sumA - n * A[idx]
       ans = m..(ans, fk)

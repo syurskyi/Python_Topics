@@ -71,7 +71,7 @@ c_ Solution(o..):
                     __ points[j].y __ points[i].y:
                         slope = 0.0
                     ____:
-                        slope = float(points[j].y-points[i].y)/(points[j].x-points[i].x)
+                        slope = f__(points[j].y-points[i].y)/(points[j].x-points[i].x)
                     __ slope n.. __ hashmap:
                         hashmap[slope] = 1
                     ____:

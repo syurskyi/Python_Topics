@@ -49,7 +49,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ champagneTower  poured: i.., query_row: i.., query_glass: i..) __ float:
+    ___ champagneTower  poured: i.., query_row: i.., query_glass: i..) __ f__:
         """
         Simulation
         Instead of keeping track of how much champagne should end up in a

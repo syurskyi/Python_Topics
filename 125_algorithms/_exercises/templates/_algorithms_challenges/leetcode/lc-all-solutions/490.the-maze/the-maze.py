@@ -24,7 +24,7 @@ c_ Solution(o..):
         y.. (i, j)
 
     queue = d..([t..(start)])
-    visited = set()
+    visited = s..()
     destination = t..(destination)
     w.... queue:
       curr = queue.popleft()

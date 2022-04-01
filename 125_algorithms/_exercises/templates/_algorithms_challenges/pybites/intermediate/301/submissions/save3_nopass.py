@@ -14,7 +14,7 @@ __ n.. RATES_FILE.exists
 
 ___ get_all_days(start_date: date, end_date: date) __ List[date]:
     delta = end_date - start_date
-    r.. [start_date+t..(days=x) ___ x __ r..(delta.days+1)]
+    r.. [start_date+t..(d.._x) ___ x __ r..(delta.days+1)]
 
 
 ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:

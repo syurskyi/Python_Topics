@@ -63,7 +63,7 @@ ___ doc(request):
     r.. DOCS.get(request.param, Document())
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "doc, expected",
     [
         ("complex", Document),
@@ -74,7 +74,7 @@ ___ test_correct_return_type(doc, expected):
     ... isi..(doc, expected)
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "doc, expected",
     [
         ("tale", 4),
@@ -90,7 +90,7 @@ ___ test_len_implementation(doc, expected):
     ... l..(doc) __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "doc, expected",
     [
         ("tale", 21),
@@ -106,7 +106,7 @@ ___ test_word_count_implementation(doc, expected):
     ... doc.word_count() __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "doc, expected",
     [
         ("four-liner", "first\nsecond\nthird\nfourth"),
@@ -128,7 +128,7 @@ ___ test_correct_chaining(doc, expected):
     ... s..(doc) __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "doc, expected",
     [
         (

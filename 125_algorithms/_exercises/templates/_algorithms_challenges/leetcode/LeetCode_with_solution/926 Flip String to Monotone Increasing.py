@@ -55,7 +55,7 @@ c_ Solution:
             __ S[i] __ "0":
                 Z[i] += 1
 
-        ret = float('inf')
+        ret = f__('inf')
         ___ i __ r..(n):
             ret = m..(ret, O[i] + Z[i+1])
 

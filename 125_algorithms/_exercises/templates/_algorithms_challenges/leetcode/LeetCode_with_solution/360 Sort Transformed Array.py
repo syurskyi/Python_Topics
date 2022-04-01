@@ -25,7 +25,7 @@ c_ Solution(o..):
             ret = map(l.... x: f(x, a, b, c), nums)
             r.. ret __ b > 0 ____ ret[::-1]
 
-        mid = - float(b) / (2*a)
+        mid = - f__(b) / (2*a)
         ri = bisect.bisect_left(nums, mid)
         le = ri - 1
         ret    # list

@@ -13,7 +13,7 @@ c_ Solution(o..):
         _______ math
         maxVal = i..(math.sqrt(n))+1
         __ n < 0: r.. 0
-        dp = [float('inf')]*(n+1)
+        dp = [f__('inf')]*(n+1)
         dp[0] = 0
         dp[1] = 1
         ___ i __ r..(n+1):

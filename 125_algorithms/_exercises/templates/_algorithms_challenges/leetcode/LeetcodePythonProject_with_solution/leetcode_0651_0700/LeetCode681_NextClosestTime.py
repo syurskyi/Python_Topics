@@ -12,7 +12,7 @@ c_ Solution(o..):
         arr = l..(time[:2]+time[3:])
         hh = i..(''.j..(arr[:2]))
         mm = i..(''.j..(arr[2:]))
-        charSet = set(arr)
+        charSet = s..(arr)
         __ l..(charSet) __ 1:
             r.. time
         ___ i __ r..(1, 24*60):

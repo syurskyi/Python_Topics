@@ -12,7 +12,7 @@ c_ TreeNode(o..):
 
 c_ Solution(o..):
     ___ findTarget  root, k):
-        r.. dfs(root, set(), k)
+        r.. dfs(root, s..(), k)
     
     ___ dfs  root, hashset, k):
         __ n.. root:

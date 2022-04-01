@@ -39,7 +39,7 @@ c_ Solution:
         using default dict
         """
         m, n = l..(A), l..(A[0])
-        F = defaultdict(l....: defaultdict(l....: float("inf")))
+        F = defaultdict(l....: defaultdict(l....: f__("inf")))
         ___ j __ r..(n):
             F[m-1][j] = A[m-1][j]
 
@@ -58,7 +58,7 @@ c_ Solution:
         let F[i][j] be the min falling path sum at A[i][j]
         """
         m, n = l..(A), l..(A[0])
-        F = [[float('inf') ___ _ __ r..(n)] ___ _ __ r..(m)]
+        F = [[f__('inf') ___ _ __ r..(n)] ___ _ __ r..(m)]
         ___ j __ r..(n):
             F[m-1][j] = A[m-1][j]
 

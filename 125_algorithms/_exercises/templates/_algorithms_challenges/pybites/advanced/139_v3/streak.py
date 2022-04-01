@@ -1,7 +1,7 @@
 _______ __
 ____ d__ _______ d__, t.., date
 
-ONE_DAY = t..(days=1)
+ONE_DAY = t..(d.._1)
 
 TODAY = date(2018, 11, 12)
 
@@ -9,7 +9,7 @@ TODAY = date(2018, 11, 12)
 ___ extract_dates(data):
     """Extract unique dates from DB table representation as shown in Bite"""
     dates = __.f..(r' (\d{4}-\d\d-\d\d) ', data)
-    r.. set(d__.strptime(d, '%Y-%m-%d').date() ___ d __ dates)
+    r.. s..(d__.strptime(d, '%Y-%m-%d').date() ___ d __ dates)
 
 
 ___ calculate_streak(dates):

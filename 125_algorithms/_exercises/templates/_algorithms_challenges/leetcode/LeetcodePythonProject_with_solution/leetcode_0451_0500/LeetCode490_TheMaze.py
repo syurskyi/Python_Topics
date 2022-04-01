@@ -27,7 +27,7 @@ c_ Solution(o..):
         r.. F..
     
     ___ getNextSteps  maze, i, j):
-        result = set()
+        result = s..()
         dirs = (1, 0), (0, 1), (-1, 0), (0, -1)
         m, n = l..(maze), l..(maze[0])
         ___ dir __ dirs:

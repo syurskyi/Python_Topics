@@ -16,7 +16,7 @@ ___ get_friend_with_most_friends(friendships, users=users):
     friend_counts = defaultdict(l..)
     
 
-    most_friends = float("-inf")
+    most_friends = f__("-inf")
 
 
     ___ friend_1,friend_2 __ friendships:

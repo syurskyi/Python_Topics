@@ -33,9 +33,9 @@ c_ Solution:
             r.. []
 
         s = map(mapping, l..(s))
-        h = set()
+        h = s..()
         # in_ret = set()
-        ret = set()
+        ret = s..()
         cur = 0
         ___ i __ x..(10):
             cur <<= 2

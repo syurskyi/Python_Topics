@@ -36,4 +36,4 @@ ___ get_month_most_posts(dates):
     l = l..(z..(y, m))
     most_freq_month = s..(Counter(l).most_common()[0][0])
     output = d__.strptime(most_freq_month, '(%Y, %m)')
-    r.. output.strftime('%Y-%m')
+    r.. output.s..('%Y-%m')

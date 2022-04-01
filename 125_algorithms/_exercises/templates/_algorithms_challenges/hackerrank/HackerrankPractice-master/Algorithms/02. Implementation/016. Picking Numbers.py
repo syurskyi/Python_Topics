@@ -4,7 +4,7 @@
 
 ___ pickingNumbers(arr):
     result = 0
-    checked = set()
+    checked = s..()
     ___ i __ r..(l..(arr)):
         __ i n.. __ checked:
             maxCount = m..(arr.c.. arr[i]) + arr.c.. arr[i] + 1), arr.c.. arr[i]) + arr.c.. arr[i] - 1))

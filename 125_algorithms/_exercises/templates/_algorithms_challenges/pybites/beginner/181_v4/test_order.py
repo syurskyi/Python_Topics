@@ -10,7 +10,7 @@ ___ order
     r.. OrderedList()
 
 
-@p__.mark.parametrize("num, expected", [
+@p__.m__.p..("num, expected", [
     (10, '10'),
     (9, '9, 10'),
     (16, '9, 10, 16'),

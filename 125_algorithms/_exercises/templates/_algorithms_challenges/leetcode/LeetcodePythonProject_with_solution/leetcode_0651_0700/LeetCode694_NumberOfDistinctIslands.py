@@ -9,12 +9,12 @@ c_ Solution(o..):
         :type grid: List[List[int]]
         :rtype: int
         """
-        islands = set()
+        islands = s..()
         m, n = l..(grid), l..(grid[0])
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ grid[i][j] __ 1:
-                    island = set()
+                    island = s..()
                     dfs(i, j, i, j, m, n, grid, island)
                     islands.add(t..(island))
         r.. l..(islands)

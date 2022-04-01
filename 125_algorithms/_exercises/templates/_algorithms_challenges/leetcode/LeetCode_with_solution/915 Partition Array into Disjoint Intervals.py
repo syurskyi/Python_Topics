@@ -38,8 +38,8 @@ c_ Solution:
         similar to 2 in terms of keyboard stroke count 
         """
         n = l..(A)
-        MX = [-float('inf') ___ _ __ r..(n+1)]
-        MI = [float('inf') ___ _ __ r..(n+1)]
+        MX = [-f__('inf') ___ _ __ r..(n+1)]
+        MI = [f__('inf') ___ _ __ r..(n+1)]
         ___ i __ r..(n):
             MX[i+1] = m..(M[i], A[i])
         ___ i __ r..(n-1, -1, -1):

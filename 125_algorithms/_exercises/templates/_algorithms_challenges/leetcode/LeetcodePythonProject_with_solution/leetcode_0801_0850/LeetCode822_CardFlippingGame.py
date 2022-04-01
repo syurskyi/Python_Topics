@@ -10,16 +10,16 @@ c_ Solution(o..):
         :type backs: List[int]
         :rtype: int
         """
-        same = set()
+        same = s..()
         ___ f, b __ z..(fronts, backs):
             __ f __ b: same.add(f)
-        res = float('inf')
+        res = f__('inf')
         ___ f, b __ z..(fronts, backs):
             __ f n.. __ same:
                 res = m..(res, f)
             __ b n.. __ same:
                 res = m..(res, b)
-        r.. res __ res != float('inf') ____ 0
+        r.. res __ res != f__('inf') ____ 0
     
     ___ flipgame_own_TLE  fronts, backs):
         """
@@ -32,9 +32,9 @@ c_ Solution(o..):
         ___ f, b __ z..(fronts, backs):
             hashmap1[f] = hashmap1.get(f, 0)+1
             hashmap2[b] = hashmap2.get(b, 0)+1
-        res = float('inf')
+        res = f__('inf')
         helper(fronts, backs, 0, hashmap1, hashmap2)
-        r.. res __ res != float('inf') ____ 0
+        r.. res __ res != f__('inf') ____ 0
         
     ___ helper  fronts, backs, i, hashmap1, hashmap2):
         __ i >= l..(fronts):

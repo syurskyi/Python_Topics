@@ -4,4 +4,4 @@ c_ Solution(o..):
     :type candies: List[int]
     :rtype: int
     """
-    r.. m..(l..(candies) / 2, l..(set(candies)))
+    r.. m..(l..(candies) / 2, l..(s..(candies)))

@@ -6,7 +6,7 @@ c_ Solution(o..):
         """
         __ n.. A: r.. 0
         MOD = 10**9+7
-        stack = [[float('-inf'), -1, 0]] # value, index, accumulated_sum
+        stack = [[f__('-inf'), -1, 0]] # value, index, accumulated_sum
         res = 0
         ___ i, num __ e..(A):
             w.... stack a.. stack[-1][0] > num:

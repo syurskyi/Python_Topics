@@ -18,7 +18,7 @@ c_ Solution(o..):
         :rtype: List[int]
         """
         stack    # list
-        prev = float('-inf')
+        prev = f__('-inf')
         res    # list
         count = 0
         maxCount = 0

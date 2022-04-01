@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. A:
             r.. F..
 
-        S = set()
+        S = s..()
 
         ___ a __ A:
             __ a __ S:

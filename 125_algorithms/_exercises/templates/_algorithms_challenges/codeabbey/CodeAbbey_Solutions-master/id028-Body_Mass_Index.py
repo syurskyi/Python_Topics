@@ -4,9 +4,9 @@ ___ BMI(users):
         w.... pairCount < users:
                 pair = raw_input()
                 numbers = pair.s..(' ')
-                weight = float(numbers[0])
-                height = float(numbers[1])
-                BMI = float(weight / (height * height))
+                weight = f__(numbers[0])
+                height = f__(numbers[1])
+                BMI = f__(weight / (height * height))
 
                 __ BMI < 18.5:
                         answer.a..(s..('under'))

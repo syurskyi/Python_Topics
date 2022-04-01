@@ -61,7 +61,7 @@ c_ Solution(o..):
         :type end: str
         :rtype: bool
         """
-        visited = set([start])
+        visited = s..([start])
         queue = [start]
         w.... queue:
             s = queue.pop()

@@ -17,7 +17,7 @@ EXPECTED = i..([  # make an iterator
 ])
 
 
-@p__.mark.parametrize("email, size", [
+@p__.m__.p..("email, size", [
     ("info@pybit.es", 200),
     ("info@pybit.es ", 200),
     ('info@pybit.ES', 40),

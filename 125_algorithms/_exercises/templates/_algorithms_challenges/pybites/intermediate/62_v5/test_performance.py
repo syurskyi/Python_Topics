@@ -7,7 +7,7 @@ ____ performance _______ (contains, contains_fast,
                          list_creation, list_creation_fast)
 
 alist = l..(r..(1000000))
-aset = set(alist)
+aset = s..(alist)
 listofstrings = l..(ascii_lowercase) * 1000
 
 

@@ -24,7 +24,7 @@ c_ Solution:
 
         x, y = start
         tx, ty = destination
-        visited = set()
+        visited = s..()
         r.. dfs(maze, x, y, tx, ty, visited)
 
     ___ dfs  maze, x, y, tx, ty, visited):

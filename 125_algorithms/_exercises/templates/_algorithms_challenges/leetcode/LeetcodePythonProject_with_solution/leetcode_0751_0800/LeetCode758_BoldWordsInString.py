@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: str
         """
         s = S
-        words = set(words)
+        words = s..(words)
         start = F..
         j = 0
         res = ''

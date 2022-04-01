@@ -15,7 +15,7 @@ c_ Solution(o..):
         l, r = 1, m..(piles)
         w.... l <= r:
             mid = l+(r-l)//2
-            sumVal = s..(math.ceil(float(num)/mid) ___ num __ piles)
+            sumVal = s..(math.ceil(f__(num)/mid) ___ num __ piles)
             __ sumVal <= H:
                 r = mid-1
             ____:
@@ -44,6 +44,6 @@ c_ Solution(o..):
 
 __ _____ __ _____
     _______ math
-    print(math.ceil(float(3)/3))
-    print(math.ceil(float(4)/3))
+    print(math.ceil(f__(3)/3))
+    print(math.ceil(f__(4)/3))
     Solution().test()

@@ -6,8 +6,8 @@ c_ Solution(o..):
     """
     nums = [s..(i) ___ i __ r..(0, 10)]
     letters = ["a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F"]
-    v6d = set(nums + letters)
-    v4d = set(nums)
+    v6d = s..(nums + letters)
+    v4d = s..(nums)
 
     v4 = IP.s..(".")
     v6 = IP.s..(":")

@@ -15,7 +15,7 @@ c_ SnakeGame(o..):
     :type food: List[List[int]]
     """
     snake = d..([(0, 0)])
-    snakeSet = set([(0, 0)])
+    snakeSet = s..([(0, 0)])
     width = width
     height = height
     food = d..(food)

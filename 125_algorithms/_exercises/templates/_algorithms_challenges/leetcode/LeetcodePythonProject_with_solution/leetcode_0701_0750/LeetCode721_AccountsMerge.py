@@ -23,7 +23,7 @@ c_ Solution(o..):
         ___ a __ accounts:
             p = find(a[1], parents)
             __ p n.. __ unions:
-                unions[p] = set()
+                unions[p] = s..()
             ___ i __ r..(1, l..(a)):
                 unions[p].add(a[i])
         res    # list

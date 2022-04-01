@@ -5,13 +5,13 @@ c_ Solution(o..):
     :type list2: List[str]
     :rtype: List[str]
     """
-    minSum = float("inf")
+    minSum = f__("inf")
     ans    # list
     d    # dict
     ___ i, name __ e..(list2):
       d[name] = i
     ___ i, name __ e..(list1):
-      idxSum = i + d.get(name, float("inf"))
+      idxSum = i + d.get(name, f__("inf"))
       __ idxSum __ minSum:
         ans.a..(name)
       __ idxSum < minSum:

@@ -25,19 +25,19 @@ c_ BiteStats:
     $
     ___ number_bites_accessed(self) __ i..:
         """Get the number of unique Bites accessed"""
-        unique_bites_accessed = l..(set([row["bite"] ___ row __ rows]))
+        unique_bites_accessed = l..(s..([row["bite"] ___ row __ rows]))
         r.. unique_bites_accessed
 
     $
     ___ number_bites_resolved(self) __ i..:
         """Get the number of unique Bites resolved (completed=True)"""
-        unique_bites_resolved = l..(set([row["bite"] ___ row __ rows __ row["completed"] __ "True"]))
+        unique_bites_resolved = l..(s..([row["bite"] ___ row __ rows __ row["completed"] __ "True"]))
         r.. unique_bites_resolved
 
     $
     ___ number_users_active(self) __ i..:
         """Get the number of unique users in the data set"""
-        unique_users = l..(set([row["user"] ___ row __ rows]))
+        unique_users = l..(s..([row["user"] ___ row __ rows]))
         r.. unique_users
 
     $

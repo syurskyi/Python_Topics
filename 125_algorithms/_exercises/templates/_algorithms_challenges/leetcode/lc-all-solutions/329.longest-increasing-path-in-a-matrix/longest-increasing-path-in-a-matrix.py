@@ -27,7 +27,7 @@ c_ Solution(o..):
       r.. ret + 1
 
     visited    # dict
-    cache = set()
+    cache = s..()
     ans = 0
     ___ i __ r..(0, l..(matrix)):
       ___ j __ r..(0, l..(matrix[0])):

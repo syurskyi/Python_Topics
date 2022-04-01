@@ -15,7 +15,7 @@ permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
 
 
 ___ permutations(s__):
-    result = set([s__])
+    result = s..([s__])
     __ l..(s__) __ 2:
         result.add(s__[1] + s__[0])
 

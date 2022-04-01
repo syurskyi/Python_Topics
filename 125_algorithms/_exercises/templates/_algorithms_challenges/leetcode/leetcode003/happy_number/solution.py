@@ -23,7 +23,7 @@ c_ Solution(o..):
         """
 
         # Use set d to check endless loop
-        d = set()
+        d = s..()
         w.... n n.. __ d:
             d.add(n)
             t = n

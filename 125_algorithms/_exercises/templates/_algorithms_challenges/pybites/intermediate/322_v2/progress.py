@@ -10,7 +10,7 @@ ___ ontrack_reading(books_goal: i.., books_read: i..,
     eoy = d__(year, 12, 31)
 
     __ day_of_year:
-        today = boy + t..(days=day_of_year-1)
+        today = boy + t..(d.._day_of_year-1)
     ____:
         today = d__.today()
 

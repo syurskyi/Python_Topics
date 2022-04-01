@@ -29,7 +29,7 @@ c_ Solution:
         __ n.. G o. n.. S o. n.. T:
             r.. -1
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         m, n = l..(G), l..(G[0])
         min_steps = [[INFINITY] * n ___ _ __ r..(m)]
 

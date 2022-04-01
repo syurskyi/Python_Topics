@@ -43,9 +43,9 @@ expected = (
 )
 
 
-@p__.mark.parametrize("text, expected", z..(texts, expected))
+@p__.m__.p..("text, expected", z..(texts, expected))
 ___ test_filter_accents(text, expected):
     # get rid of duplicates and sort results
     result = filter_accents(text)
-    actual = s..(l..(set(result)))
+    actual = s..(l..(s..(result)))
     ... actual __ expected

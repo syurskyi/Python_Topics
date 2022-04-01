@@ -19,8 +19,8 @@ c_ Solution:
         ):
             r.. ans
 
-        nexts = c...defaultdict(set)
-        evals = c...defaultdict(float)
+        nexts = c...defaultdict(s..)
+        evals = c...defaultdict(f__)
 
         ___ i __ r..(l..(equations)):
             a, b = equations[i]
@@ -30,8 +30,8 @@ c_ Solution:
             evals[b, a] = 1.0 / values[i]
 
         ___ a, b __ queries:
-            res = dfs(a, b, 1, nexts, evals, set())
-            ans.a..(float(res))
+            res = dfs(a, b, 1, nexts, evals, s..())
+            ans.a..(f__(res))
 
         r.. ans
 

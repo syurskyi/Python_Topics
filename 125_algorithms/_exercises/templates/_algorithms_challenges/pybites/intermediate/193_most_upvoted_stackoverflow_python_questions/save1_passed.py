@@ -41,11 +41,11 @@ ___ top_python_questions(url=cached_so_url):
     ___ number __ vi:
         number = s..(number)
         __ number.endswith('k'):
-            vi_true.a..(float(number[:-1]) * 1000)
+            vi_true.a..(f__(number[:-1]) * 1000)
         __ number.endswith('m'):
-            vi_true.a..(float(number[:-1]) * 1_000_000)
+            vi_true.a..(f__(number[:-1]) * 1_000_000)
         __ number __ '0':
-            vi_true.a..(float(number))
+            vi_true.a..(f__(number))
 
     final = l..(z..(q, vo, vi_true))
     output1    # list

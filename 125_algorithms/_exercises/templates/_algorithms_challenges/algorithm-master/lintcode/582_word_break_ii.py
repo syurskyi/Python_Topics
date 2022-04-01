@@ -8,7 +8,7 @@ c_ Solution:
         :type words: list[str]
         :rtype: list[str]
         """
-        r.. dfs(s, set(words), {})
+        r.. dfs(s, s..(words), {})
 
     ___ dfs  s, words, memo):
         __ s __ memo:

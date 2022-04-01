@@ -45,7 +45,7 @@ ___ get_winner(players):
     """
     
     score_list = max_player =  N..
-    max_score = float('-inf')
+    max_score = f__('-inf')
     ___ player __ players:
         __ score_list __ N..
             score_list  = l..(player.scores)

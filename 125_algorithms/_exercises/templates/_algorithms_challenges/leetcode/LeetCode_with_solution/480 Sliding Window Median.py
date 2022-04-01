@@ -45,7 +45,7 @@ c_ DualHeap:
         min_h    # list
         max_sz = 0
         min_sz = 0
-        to_remove = set()  # value, error mapping index in nums
+        to_remove = s..()  # value, error mapping index in nums
 
     ___ insert  num):
         __ max_h a.. num > max_h[0][1]:
@@ -98,7 +98,7 @@ c_ DualHeap:
 
 
 c_ Solution:
-    ___ medianSlidingWindow  nums: List[i..], k: i..) __ List[float]:
+    ___ medianSlidingWindow  nums: List[i..], k: i..) __ List[f__]:
         """
         1. BST, proxied by bisect
         dual heap + lazy removal + balance the valid element

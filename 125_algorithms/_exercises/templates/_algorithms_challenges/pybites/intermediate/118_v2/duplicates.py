@@ -9,7 +9,7 @@ ___ get_duplicate_indices(words):
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
 
-    result = set()
+    result = s..()
     
 
     occurences = defaultdict(i..)

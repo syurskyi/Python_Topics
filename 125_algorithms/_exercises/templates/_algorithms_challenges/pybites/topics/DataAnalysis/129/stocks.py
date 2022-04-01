@@ -20,9 +20,9 @@ ___ _cap_str_to_mln_float(cap):
     __ cap __ "n/a":
         r.. 0
     ____ cap[0] __ '$' a.. cap[-1] __ 'M':
-        r.. float(cap[1:-1])
+        r.. f__(cap[1:-1])
     ____ cap[0] __ '$' a.. cap[-1] __ 'B':
-         r.. float(cap[1:-1])*1000
+         r.. f__(cap[1:-1])*1000
 
 
 ___ get_industry_cap(industry):

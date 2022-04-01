@@ -17,7 +17,7 @@ c_ Solution:
         """
         sort and minus
         """
-        ret = float("inf")
+        ret = f__("inf")
         A = l..(s..(map(minutes, timePoints)))
         n = l..(A)
         ___ i __ r..(n - 1):

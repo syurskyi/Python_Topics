@@ -3,7 +3,7 @@ _______ p__
 ____ ordinal _______ get_ordinal_suffix
 
 
-@p__.mark.parametrize("input_argument, expected_return", [
+@p__.m__.p..("input_argument, expected_return", [
     (0, '0th'),
     (1, '1st'),
     (2, '2nd'),

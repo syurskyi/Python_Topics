@@ -27,7 +27,7 @@ c_ Book:
     author: s..
     year: i..
     rank: i..
-    rating: float
+    rating: f__
 
     ___ _rating
         res = f"{rating:.2f}"
@@ -88,7 +88,7 @@ ___ load_data
                 _____
             year = i..(date_span[0].text[-4:])
             rank = i..(book.select("div.rank > span")[0].text)
-            rating = float(book.select("span.our-rating")[0].text)
+            rating = f__(book.select("span.our-rating")[0].text)
         ______ AttributeError:
             _____
         books.a..(

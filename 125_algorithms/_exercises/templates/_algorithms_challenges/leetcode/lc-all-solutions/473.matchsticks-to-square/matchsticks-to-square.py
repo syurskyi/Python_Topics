@@ -17,7 +17,7 @@ c_ Solution(o..):
       __ side > sideLen:
         r.. F..
     halfLen = 2 * sideLen
-    sticksIdx = set([i ___ i __ r..(0, l..(nums))])
+    sticksIdx = s..([i ___ i __ r..(0, l..(nums))])
     nums.s..()
 
     ___ backpack(nums, subset):
@@ -50,4 +50,4 @@ c_ Solution(o..):
           sticksIdx |= {i}
       r.. F..
 
-    r.. dfs(nums, 0, sticksIdx, halfLen, 0, set())
+    r.. dfs(nums, 0, sticksIdx, halfLen, 0, s..())

@@ -12,15 +12,15 @@ c_ Solution(o..):
         __ n.. nums: r.. 0
         hashmap    # dict
         degree = 0
-        cands = set()
+        cands = s..()
         ___ i, num __ e..(nums):
             hashmap[num] = hashmap.get(num, [])+[i]
             __ l..(hashmap[num]) > degree:
                 degree = l..(hashmap[num])
-                cands = set([num])
+                cands = s..([num])
             ____ l..(hashmap[num]) __ degree:
                 cands.add(num)
-        minLen = float('inf')
+        minLen = f__('inf')
         ___ num __ cands:
             __ l..(hashmap[num]) __ 1:
                 r.. 1

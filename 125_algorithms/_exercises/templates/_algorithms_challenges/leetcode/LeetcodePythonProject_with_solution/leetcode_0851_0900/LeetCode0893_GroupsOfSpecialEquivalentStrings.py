@@ -9,7 +9,7 @@ c_ Solution(o..):
         :type A: List[str]
         :rtype: int
         """
-        hashset = set()
+        hashset = s..()
         ___ w __ A:
             hashset.add(getHash(w))
         r.. l..(hashset)

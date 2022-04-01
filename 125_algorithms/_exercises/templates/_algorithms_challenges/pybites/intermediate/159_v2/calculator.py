@@ -20,7 +20,7 @@ ___ simple_calculator(calculation):
     ___ is_numeric(x):
 
         ___
-            float(x)
+            f__(x)
             i..(x)
         ______:
             r.. F..
@@ -33,7 +33,7 @@ ___ simple_calculator(calculation):
     __ is_numeric(values[0]) a.. is_numeric(values[2]) a.. values[1] __ operations:
         operation = operations[values[1]]
         ___
-            r.. operation(float(values[0]),float(values[2]))
+            r.. operation(f__(values[0]),f__(values[2]))
         ______ ZeroDivisionError:
             r.. ValueError("Division by zero")
 

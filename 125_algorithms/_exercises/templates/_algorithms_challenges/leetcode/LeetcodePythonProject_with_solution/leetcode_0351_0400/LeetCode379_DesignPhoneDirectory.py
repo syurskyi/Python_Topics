@@ -6,8 +6,8 @@ Created on Apr 1, 2017
 
 c_ PhoneDirectory(o..):
     ___ - , maxNumbers):
-        availableNums = set(r..(maxNumbers))
-        usedNums = set()
+        availableNums = s..(r..(maxNumbers))
+        usedNums = s..()
     
     ___ get
         __ availableNums:

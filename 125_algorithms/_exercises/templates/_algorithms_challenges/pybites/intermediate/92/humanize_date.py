@@ -40,7 +40,7 @@ ___ pretty_date(date):
         __ date_delta.days __ 1 a.. date_delta.seconds >= 0:
             r.. TIME_OFFSETS[6].date_str
         ____:
-            r.. (NOW - date_delta).strftime("%m/%d/%y")
+            r.. (NOW - date_delta).s..("%m/%d/%y")
 
 
 # if __name__ == "__main__":

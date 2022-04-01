@@ -1,9 +1,9 @@
-____ calendar _______ Calendar
+____ ca__ _______ Calendar
 
 
 ___ meetup_day(year, month, weekday, schedule):
     candidates = [date ___ date __ Calendar().itermonthdates(year, month)
-                  __ date.month __ month a.. date.strftime('%A') __ weekday]
+                  __ date.month __ month a.. date.s..('%A') __ weekday]
 
     __ schedule __ 'teenth':
         r.. find_teenth(candidates)

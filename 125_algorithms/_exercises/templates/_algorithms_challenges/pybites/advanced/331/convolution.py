@@ -26,7 +26,7 @@ ___ convolution2D(
     __ n.. a..(array.ndim __ 2 ___ array __ arrays):
         r.. ValueError("kernel and filter must be size 2")
         
-    is_not_integer = l.... x: n.. isi..(x,i..) o. (isi..(x,float) a.. n.. x.is_integer())
+    is_not_integer = l.... x: n.. isi..(x,i..) o. (isi..(x,f__) a.. n.. x.is_integer())
     
     
     __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays):

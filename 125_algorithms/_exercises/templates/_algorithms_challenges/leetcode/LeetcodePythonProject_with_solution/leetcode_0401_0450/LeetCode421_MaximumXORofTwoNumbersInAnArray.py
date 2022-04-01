@@ -14,7 +14,7 @@ c_ Solution(o..):
         mask = 0
         ___ i __ r..(32, -1, -1):
             mask = mask | (1<<i)
-            hashset = set()
+            hashset = s..()
             ___ num __ nums:
                 hashset.add(num&mask)
             tmp = maxVal | (1<<i)

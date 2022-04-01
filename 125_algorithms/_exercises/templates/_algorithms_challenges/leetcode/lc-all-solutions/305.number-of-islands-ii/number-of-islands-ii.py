@@ -34,7 +34,7 @@ c_ Solution(o..):
     ans = 0
     ret    # list
     dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
-    grid = set()
+    grid = s..()
     ___ i, j __ positions:
       ans += 1
       grid |= {(i, j)}

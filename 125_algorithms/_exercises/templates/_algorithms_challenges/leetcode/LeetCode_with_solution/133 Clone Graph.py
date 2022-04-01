@@ -38,7 +38,7 @@ c_ Solution:
         :param node: UndirectedGraphNode
         :return: UndirectedGraphNode
         """
-        r.. clone_graph_visited(node, set())
+        r.. clone_graph_visited(node, s..())
 
     ___ clone_graph_visited  node, visited_set):
         """
@@ -51,7 +51,7 @@ c_ Solution:
         __ n.. node:
             r..
         visited_set.add(node)
-        neighbors_cloned = [clone_graph_visited(neighbor, set(visited_set)) ___ neighbor __ node.neighbors __ neighbor n.. __ visited_set]
+        neighbors_cloned = [clone_graph_visited(neighbor, s..(visited_set)) ___ neighbor __ node.neighbors __ neighbor n.. __ visited_set]
         node_cloned = UndirectedGraphNode(node.label)
         ___ neighbor_cloned __ neighbors_cloned:
             __ neighbor_cloned n.. __ visited_set:

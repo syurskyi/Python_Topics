@@ -10,7 +10,7 @@ c_ Solution:
         WALL = -1
         EMPTY = 0
 
-        ans = [[float('inf')] * n ___ _ __ r..(m)]
+        ans = [[f__('inf')] * n ___ _ __ r..(m)]
         queue    # list
 
         ___ x __ r..(m):

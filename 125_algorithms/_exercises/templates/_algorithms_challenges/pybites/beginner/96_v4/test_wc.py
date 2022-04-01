@@ -9,7 +9,7 @@ lines = [b'Hello world',
          b'Have a nice weekend']
 
 
-@p__.mark.parametrize("some_text, expected", [
+@p__.m__.p..("some_text, expected", [
     (lines[0], '1 2 11'),
     (b'\n'.j..(lines[:2]), '2 8 40'),
     (b'\n'.j..(lines), '3 12 60'),

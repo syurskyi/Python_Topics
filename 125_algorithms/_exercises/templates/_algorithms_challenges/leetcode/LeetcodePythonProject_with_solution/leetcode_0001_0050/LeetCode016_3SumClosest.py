@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: int
         """
         nums.s..()
-        res = float('inf')
+        res = f__('inf')
         n = l..(nums)
         ___ i __ r..(n-2):
             j, k = i+1, n-1

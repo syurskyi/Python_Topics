@@ -39,7 +39,7 @@ c_ Solution(o..):
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
-        r.. [dfs(G, s, e, set()) ___ s, e __ queries]
+        r.. [dfs(G, s, e, s..()) ___ s, e __ queries]
 
     ___ dfs  G, s, e, path):
         __ s n.. __ G o. e n.. __ G:

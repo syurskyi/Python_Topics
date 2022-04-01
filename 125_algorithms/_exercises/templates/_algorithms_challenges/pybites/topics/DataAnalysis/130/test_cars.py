@@ -27,7 +27,7 @@ ___ test_get_models_nissan
 
 ___ test_get_models_open
     # not in data set
-    ... get_models('Opel', 2008) __ set()
+    ... get_models('Opel', 2008) __ s..()
 
 ___ test_get_models_mercedes
     models = get_models('Mercedes-Benz', 2007)

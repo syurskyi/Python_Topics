@@ -26,7 +26,7 @@ c_ MovingAverage(o..):
         __ l..(q) > size:
             s.. -= q.popleft()
 
-        r.. float(s..) / l..(q)
+        r.. f__(s..) / l..(q)
 
 
 # Your MovingAverage object will be instantiated and called as such:

@@ -30,7 +30,7 @@ c_ ComputeCell(Cell):
         super(ComputeCell, self).__init__()
         inputs = inputs
         func = compute_function
-        callbacks = set()
+        callbacks = s..()
         compute()
         _register_inputs()
 
@@ -40,7 +40,7 @@ c_ ComputeCell(Cell):
 
     ___ compute
         # Only compute this cell when all inputs have same counters
-        __ l..(set([inp.counter ___ inp __ inputs])) > 1:
+        __ l..(s..([inp.counter ___ inp __ inputs])) > 1:
             r..
         new_val = func([inp.value ___ inp __ inputs])
         __ new_val != _value:

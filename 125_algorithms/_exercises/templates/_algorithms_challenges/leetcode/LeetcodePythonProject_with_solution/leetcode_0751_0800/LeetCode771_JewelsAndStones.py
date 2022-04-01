@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: int
         """
         j, s = J, S
-        jset = set(l..(j))
+        jset = s..(l..(j))
         res = 0
         ___ c __ s:
             __ c __ jset:

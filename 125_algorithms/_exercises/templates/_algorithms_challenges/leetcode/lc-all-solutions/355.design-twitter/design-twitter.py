@@ -9,7 +9,7 @@ c_ Twitter(o..):
     """
     ts = 0
     tweets = c...defaultdict(l..)
-    friendship = c...defaultdict(set)
+    friendship = c...defaultdict(s..)
 
   ___ postTweet  userId, tweetId):
     """

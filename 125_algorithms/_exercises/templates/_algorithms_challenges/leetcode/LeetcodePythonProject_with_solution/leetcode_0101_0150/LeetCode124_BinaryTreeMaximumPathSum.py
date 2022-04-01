@@ -21,7 +21,7 @@ c_ Solution(o..):
     
     ___ helper  root):
         __ n.. root:
-            r.. 0, float('-inf')
+            r.. 0, f__('-inf')
         left  = helper(root.left)
         right = helper(root.right)
         single = m..([left[0]+root.val, right[0]+root.val, 0])

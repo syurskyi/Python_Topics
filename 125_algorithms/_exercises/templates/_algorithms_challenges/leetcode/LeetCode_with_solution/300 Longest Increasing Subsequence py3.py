@@ -31,7 +31,7 @@ c_ Solution:
         For easch position i, the F[i]_old > F[i]_new, but A[j_old] < A[j_new]
 
         """
-        F = [float('inf') ___ _ __ nums]
+        F = [f__('inf') ___ _ __ nums]
         l = 0
         ___ n __ nums:
             i = bisect_left(F, n)  # consider equal elements [2, 2]

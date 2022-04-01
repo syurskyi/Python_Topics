@@ -16,7 +16,7 @@ ___ float_series() __ pd.Series:
     from 0.000 -> 1.000 e.g. 0.000, 0.001, 0.002... 0.999, 1.000
     Don't worry about the indexes or the series name.
     """
-    r.. pd.Series([float(i/1000) ___ i __ r..(1001)])
+    r.. pd.Series([f__(i/1000) ___ i __ r..(1001)])
 
 
 ___ alpha_index_series() __ pd.Series:

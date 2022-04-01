@@ -112,7 +112,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
 
 
     ___ date __ dates:
-        date = date.strftime('%B %d')
+        date = date.s..('%B %d')
         date = __.sub(r'0(\d)',r'\1',date)
 
         countries = days_to_countries[date]

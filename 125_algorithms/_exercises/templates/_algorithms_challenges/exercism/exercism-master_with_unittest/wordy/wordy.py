@@ -7,7 +7,7 @@ c_ Calculator:
                  "What is ": "",
                  "?": ""}
 
-    VALID_TOKENS = set(OPERATORS.values())
+    VALID_TOKENS = s..(OPERATORS.values())
 
     ___ - , inp):
         inp = inp

@@ -10,7 +10,7 @@ c_ Solution(o..):
         :rtype: int
         """
         n = i..(l..(candies)/2)
-        candies = set(candies)
+        candies = s..(candies)
         r.. m..(n, l..(candies))
     
     ___ test

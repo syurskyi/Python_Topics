@@ -98,8 +98,8 @@ c_ Solution:
 
         _a = i + k // 2 - 1
         _b = j + k // 2 - 1
-        a = A[_a] __ _a < l..(A) ____ float('inf')
-        b = B[_b] __ _b < l..(B) ____ float('inf')
+        a = A[_a] __ _a < l..(A) ____ f__('inf')
+        b = B[_b] __ _b < l..(B) ____ f__('inf')
 
         __ a < b:
             r.. find_kth(A, i + k // 2, B, j, k - k // 2)

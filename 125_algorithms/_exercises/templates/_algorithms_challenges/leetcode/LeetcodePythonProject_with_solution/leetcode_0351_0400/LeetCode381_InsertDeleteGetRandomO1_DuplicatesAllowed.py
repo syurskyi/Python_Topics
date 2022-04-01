@@ -15,7 +15,7 @@ c_ RandomizedCollection(o..):
             pos[val].add(l..(vals)-1)
             r.. F..
         ____:
-            pos[val] = set([l..(vals)-1])
+            pos[val] = s..([l..(vals)-1])
             r.. T..
     
     ___ remove  val):

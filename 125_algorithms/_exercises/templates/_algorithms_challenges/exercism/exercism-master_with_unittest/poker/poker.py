@@ -59,7 +59,7 @@ c_ Hand:
                 s..(ranks))
 
     ___ flush
-        r.. l..(set(suits)) __ 1
+        r.. l..(s..(suits)) __ 1
 
     ___ four_of_a_kind
         r.. m..(rank_occurences().values()) __ 4

@@ -22,7 +22,7 @@ ___ get_all_days(start_date: date, end_date: date) __ List[date]:
     current_date = start_date
     w.... current_date != end_date:
         dates.a..(current_date)
-        current_date += dt.t..(days=1)
+        current_date += dt.t..(d.._1)
     
     
     dates.a..(current_date)
@@ -56,11 +56,11 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
         date = p..(dates[i]).date()
         __ date __ current_date:
             mapping[current_date] = date
-            current_date += dt.t..(days=1)
+            current_date += dt.t..(d.._1)
             i += 1
         ____ date > current_date:
             mapping[current_date] = p..(dates[i -1]).date()
-            current_date += dt.t..(days=1)
+            current_date += dt.t..(d.._1)
         ____:
             i += 1
 
@@ -83,7 +83,7 @@ ___ exchange_rates(
 
     result    # dict
     ___ date_1,date_2 __ matching_dates.i..:
-        date = date_2.strftime("%Y-%m-%d")
+        date = date_2.s..("%Y-%m-%d")
         value = {'Base Date': date_2,'USD': data['rates'][date]['USD'],'GBP': data['rates'][date]['GBP']}
         result[date_1] = value
 

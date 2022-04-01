@@ -26,7 +26,7 @@ CODON_TO_PROTEIN = {
     "UGG": "Tryptophan"
 }
 
-STOP_CODONS = set({"UAA", "UAG", "UGA"})
+STOP_CODONS = s..({"UAA", "UAG", "UGA"})
 CODON_LENGTH = 3
 
 

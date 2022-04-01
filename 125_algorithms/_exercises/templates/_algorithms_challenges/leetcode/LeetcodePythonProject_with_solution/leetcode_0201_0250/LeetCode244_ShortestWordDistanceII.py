@@ -21,7 +21,7 @@ c_ WordDistance(o..):
         :rtype: int
         """
         i, j = 0, 0
-        res = float('inf')
+        res = f__('inf')
         arr1, arr2 = hashmap[word1], hashmap[word2]
         w.... i < l..(arr1) a.. j < l..(arr2):
             res = m..(res, abs(arr1[i]-arr2[j]))

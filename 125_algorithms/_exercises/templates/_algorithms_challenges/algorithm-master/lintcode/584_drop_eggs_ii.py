@@ -13,7 +13,7 @@ c_ Solution:
         __ n.. m o. n.. n:
             r.. 0
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
 
         """
         `dp[i][j]` means the minimum drops to verify

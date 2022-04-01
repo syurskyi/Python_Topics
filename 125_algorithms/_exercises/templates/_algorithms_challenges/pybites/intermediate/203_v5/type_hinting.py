@@ -15,8 +15,8 @@ c_ Employee:
     first_name: s..
     last_name: s..
     days_per_week: i..
-    hours_per_day: float
-    wage: float
+    hours_per_day: f__
+    wage: f__
 
     # def __init__(self, first_name: str, last_name: str, days_per_week: int,
     #              hours_per_day: float, wage: float):
@@ -26,7 +26,7 @@ c_ Employee:
     #     self.hours_per_day = hours_per_day
     #     self.wage = wage
 
-    ___ _rounder  number: float, places: i..) __ s..:
+    ___ _rounder  number: f__, places: i..) __ s..:
         """Rounds a number the specified number of places
 
         :param number: Float of number of round

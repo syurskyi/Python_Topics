@@ -40,7 +40,7 @@ c_ Solution(o..):
     ___ key __ counter:
       ss += key * (counter[key] / 2)
 
-    helper(s..(ss), [], res, set())
+    helper(s..(ss), [], res, s..())
     ___ hword __ res:
       ans.a..(hword + mid + hword[::-1])
     r.. ans

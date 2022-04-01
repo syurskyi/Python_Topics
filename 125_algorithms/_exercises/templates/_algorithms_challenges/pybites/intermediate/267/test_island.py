@@ -20,7 +20,7 @@ whole = [[1, 1, 1],
          [1, 1, 1]]
 
 
-@p__.mark.parametrize("map_, expected", [
+@p__.m__.p..("map_, expected", [
     (rectangle, 12),
     (small, 4),
     (empty, 0),

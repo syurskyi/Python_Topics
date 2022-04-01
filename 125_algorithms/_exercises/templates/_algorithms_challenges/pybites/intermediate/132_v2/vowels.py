@@ -6,7 +6,7 @@ ___ get_word_max_vowels(text):
        Return a tuple of the matching word and the vowel count, e.g.
        ('object-oriented', 6)"""
         
-    top_vowel_count = float("-inf")
+    top_vowel_count = f__("-inf")
     top_word = N..
         
     ___ word __ text.l...s.. :

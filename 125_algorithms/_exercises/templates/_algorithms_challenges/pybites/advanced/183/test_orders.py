@@ -26,7 +26,7 @@ ___ test_get_year_region_breakdown(df):
     ... ret.index.names[0] __ 'Year'
     ... ret.index.names[1] __ 'Region'
 
-    actual = [r..(float(val), 2) ___ val __ ret.values]
+    actual = [r..(f__(val), 2) ___ val __ ret.values]
     expected = [3833.51, 5193.71, 231.12, 7305.56,
                 808.38, 2255.6]
     ... actual __ expected

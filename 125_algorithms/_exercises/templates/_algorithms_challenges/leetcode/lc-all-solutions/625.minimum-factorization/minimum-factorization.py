@@ -42,6 +42,6 @@ c_ Solution(o..):
           path.pop()
       r.. F..
 
-    ans = float("inf")
+    ans = f__("inf")
     dfs(a, [])
-    r.. ans __ ans != float("inf") a.. ans <= 0x7fffffff ____ 0
+    r.. ans __ ans != f__("inf") a.. ans <= 0x7fffffff ____ 0

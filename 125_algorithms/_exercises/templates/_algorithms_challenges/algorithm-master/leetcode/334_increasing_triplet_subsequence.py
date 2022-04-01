@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. A:
             r.. F..
 
-        a = b = float('inf')
+        a = b = f__('inf')
 
         ___ x __ A:
             __ x <= a:

@@ -34,8 +34,8 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
         ___ line __ f:
             date, commit  = line.s..(' | ')
             date_time_obj = d__.strptime(date[12:], '%b %d %H:%M:%S %Y %z')
-            dt_yr = date_time_obj.strftime("%Y")
-            year_month = date_time_obj.strftime("%Y-%m")
+            dt_yr = date_time_obj.s..("%Y")
+            year_month = date_time_obj.s..("%Y-%m")
             commit_list = commit.s..
             __ year __ N.. o. year __ i..(dt_yr):
                 __ l..(commit_list) __ 7:

@@ -29,7 +29,7 @@ ___ get_movies_by_director
                 director = line['director_name']
                 movie = line['movie_title'].r..('\xa0', '')
                 year = i..(line['title_year'])
-                score = float(line['imdb_score'])
+                score = f__(line['imdb_score'])
             ______ V..
                 _____
             __ year a.. year < MIN_YEAR:

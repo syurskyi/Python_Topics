@@ -6,7 +6,7 @@ Created on Apr 23, 2017
 
 c_ Solution(o..):
     ___ find132pattern  nums):
-        s3 = float('-inf')
+        s3 = f__('-inf')
         stack    # list
         ___ i __ r..(l..(nums)-1, -1, -1):
             num = nums[i]

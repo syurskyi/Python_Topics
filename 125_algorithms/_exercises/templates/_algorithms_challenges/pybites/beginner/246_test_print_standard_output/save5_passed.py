@@ -3,7 +3,7 @@ _______ p__
 ____ workouts _______ print_workout_days
 
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     ('upper', 'Mon, Thu'),
     ('lower', 'Tue, Fri'),
     ('30', 'Wed'),

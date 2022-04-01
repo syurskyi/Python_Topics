@@ -48,7 +48,7 @@ ___ check_bt(donor, recipient):
 
     __ t..(donor) __ i.. a.. (donor < 0 o. donor > 7):
         r.. ValueError
-    ____ t..(donor) __ float:
+    ____ t..(donor) __ f__:
         r.. T..
     ____ t..(donor) __ s..:
         __ donor __ blood_type_text:
@@ -61,7 +61,7 @@ ___ check_bt(donor, recipient):
     
     __ t..(recipient) __ i.. a.. (recipient < 0 o. recipient > 7):
         r.. ValueError
-    ____ t..(recipient) __ float:
+    ____ t..(recipient) __ f__:
         r.. T..
     ____ t..(recipient) __ s..:
         __ recipient __ blood_type_text:

@@ -30,7 +30,7 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket):
     buckets = [0, 0]
     buckets[goalIndex] = sizes[goalIndex]
     toVisit    # list
-    visited = set()
+    visited = s..()
     count = 1
     w.... goal n.. __ buckets:
         key = bucket_str(buckets)

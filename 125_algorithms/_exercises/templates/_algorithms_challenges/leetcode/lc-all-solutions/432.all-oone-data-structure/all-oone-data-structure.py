@@ -35,7 +35,7 @@ c_ Node(o..):
     val = val
     prev = N..
     next = N..
-    keys = set()
+    keys = s..()
 
   ___ add  key):
     keys |= {key}

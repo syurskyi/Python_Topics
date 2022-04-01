@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: int
         """
         left = 0
-        hashset = set()
+        hashset = s..()
         maxLen = 0
         ___ i, c __ e..(s):
             w.... left < i a.. c __ hashset:

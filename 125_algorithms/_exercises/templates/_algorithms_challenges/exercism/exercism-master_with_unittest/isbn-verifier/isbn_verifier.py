@@ -3,8 +3,8 @@ c_ IsbnVerifier(o..):
     VALID_SEPERATOR = "-"
     VALID_CHECK_CHARACTER = "X"
     VALID_DIGITS = l..(map(s.., l..(r..(0, 10))))
-    VALID_CHARACTERS = (set(VALID_DIGITS) |
-                        set([VALID_SEPERATOR, VALID_CHECK_CHARACTER]))
+    VALID_CHARACTERS = (s..(VALID_DIGITS) |
+                        s..([VALID_SEPERATOR, VALID_CHECK_CHARACTER]))
     VALID_LENGTH = 10
 
     @classmethod

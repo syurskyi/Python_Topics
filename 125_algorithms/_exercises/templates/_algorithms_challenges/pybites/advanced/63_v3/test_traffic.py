@@ -37,7 +37,7 @@ ___ test_return_types(slice2):
     ... a..(t..(state) __ State ___ state __ slice2)
 
 
-@p__.mark.parametrize("color, expected", [
+@p__.m__.p..("color, expected", [
     ('red', 64),
     ('green', 64),
     ('amber', 16),

@@ -11,7 +11,7 @@ c_ MagicDictionary:
         """
         Initialize your data structure here.
         """
-        words = c...defaultdict(set)
+        words = c...defaultdict(s..)
 
     ___ buildDict  words):
         """
@@ -24,7 +24,7 @@ c_ MagicDictionary:
                 key = '{0},{1}'.f..(word[:i], word[i + 1:])
 
                 __ key n.. __ words:
-                    words[key] = set()
+                    words[key] = s..()
 
                 # add char to distinct word if its same
                 words[key].add(word[i])

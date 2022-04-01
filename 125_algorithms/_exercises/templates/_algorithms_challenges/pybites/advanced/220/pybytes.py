@@ -58,7 +58,7 @@ c_ PythonBytes:
         counts = Counter()
         ___ entry __ entries:
             summary = entry['summary']
-            domains = set(__.f..(r'https?://[^/]+',summary))
+            domains = s..(__.f..(r'https?://[^/]+',summary))
             ___ domain __ domains:
                 __ domain n.. __ IGNORE_DOMAINS:
                     counts[domain] += 1
@@ -82,8 +82,8 @@ c_ PythonBytes:
         """
 
 
-        min_duration_seconds = float('inf')
-        max_duration_seconds = float("-inf")
+        min_duration_seconds = f__('inf')
+        max_duration_seconds = f__("-inf")
         min_duration = max_duration = N..
         duration_sums = 0
 

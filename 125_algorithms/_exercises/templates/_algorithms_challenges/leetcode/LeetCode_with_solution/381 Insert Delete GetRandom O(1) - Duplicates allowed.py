@@ -42,7 +42,7 @@ c_ RandomizedCollection(o..):
         Initialize your data structure here.
         """
         lst    # list
-        pos = defaultdict(set)
+        pos = defaultdict(s..)
 
     ___ insert  val):
         """

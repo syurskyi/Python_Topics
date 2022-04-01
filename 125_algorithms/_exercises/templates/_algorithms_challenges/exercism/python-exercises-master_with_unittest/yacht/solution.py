@@ -21,7 +21,7 @@ ___ ns(number, dice):
 
 ___ full_house(dice):
     counter = Counter(dice)
-    r.. s..(dice) __ set(counter.values()) __ {3, 2} ____ 0
+    r.. s..(dice) __ s..(counter.values()) __ {3, 2} ____ 0
 
 
 ___ four_of_a_kind(dice):
@@ -31,15 +31,15 @@ ___ four_of_a_kind(dice):
 
 
 ___ little_straight(dice):
-    r.. 30 __ set(dice) __ {1, 2, 3, 4, 5} ____ 0
+    r.. 30 __ s..(dice) __ {1, 2, 3, 4, 5} ____ 0
 
 
 ___ big_straight(dice):
-    r.. 30 __ set(dice) __ {2, 3, 4, 5, 6} ____ 0
+    r.. 30 __ s..(dice) __ {2, 3, 4, 5, 6} ____ 0
 
 
 ___ yacht(dice):
-    r.. 50 __ l..(set(dice)) __ 1 ____ 0
+    r.. 50 __ l..(s..(dice)) __ 1 ____ 0
 
 
 functions = [

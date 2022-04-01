@@ -18,4 +18,4 @@ ___ dict2nt(dict_):
 
 
 ___ nt2json(nt):
-    r.. json.dumps(nt._asdict(), default=l.... x: x.isoformat() __ isi..(x, d__) ____ N..)
+    r.. json.dumps(nt._asdict(), default=l.... x: x.i..  __ isi..(x, d__) ____ N..)

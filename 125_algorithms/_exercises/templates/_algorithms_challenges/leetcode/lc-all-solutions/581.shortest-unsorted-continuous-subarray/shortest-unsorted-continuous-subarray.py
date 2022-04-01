@@ -6,8 +6,8 @@ c_ Solution(o..):
     """
     __ l..(nums) < 2:
       r.. 0
-    maxs = [float("inf")] * l..(nums)
-    mins = [float("inf")] * l..(nums)
+    maxs = [f__("inf")] * l..(nums)
+    mins = [f__("inf")] * l..(nums)
     mins[-1] = nums[-1]
     maxs[0] = nums[0]
     start, end = 0, -2

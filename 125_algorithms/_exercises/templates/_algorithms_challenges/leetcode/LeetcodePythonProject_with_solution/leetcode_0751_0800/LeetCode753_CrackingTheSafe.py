@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         total = k**n
         arr = ['0']*n
-        visited = set(['0'*n])
+        visited = s..(['0'*n])
         dfs(arr, total, visited, n, k)
         r.. ''.j..(arr)
     

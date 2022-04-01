@@ -47,7 +47,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
             changes= s..(map(i..,numbers))
 
 
-            month_changes[date.strftime('%Y-%m')] += changes
+            month_changes[date.s..('%Y-%m')] += changes
 
 
 

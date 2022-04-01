@@ -31,7 +31,7 @@ c_ Solution:
         n = l..(pairs)
 
         ret = 0
-        cur_end = -float("inf")
+        cur_end = -f__("inf")
         ___ i __ r..(n):
             __ pairs[i][0] <= cur_end:
                 _____

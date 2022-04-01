@@ -10,7 +10,7 @@
 # thus dist(A) = 1 * 6.667
 ___ i __ r..(i..(input())):
     res = 0
-    data = l..(map(float,input().s..()))
+    data = l..(map(f__,input().s..()))
     s,a,b = data
     res = s/(a+b)
     print(res * a,end=' ')

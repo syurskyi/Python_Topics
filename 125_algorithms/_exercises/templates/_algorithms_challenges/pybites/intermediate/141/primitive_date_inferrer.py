@@ -87,7 +87,7 @@ ___ get_dates(dates):
     result    # list
     ___ date __ dates:
         ___
-            date = d__.strptime(date,max_frequency).strftime("%Y-%m-%d")
+            date = d__.strptime(date,max_frequency).s..("%Y-%m-%d")
             result.a..(date)
         ______:
             result.a..("Invalid")

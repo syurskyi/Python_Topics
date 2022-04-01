@@ -42,8 +42,8 @@ c_ Solution:
         __ hi <= lo:
             r.. 0
 
-        mini = float('inf')
-        maxa = -float('inf')
+        mini = f__('inf')
+        maxa = -f__('inf')
         ___ i __ r..(lo, hi + 1):
             mini = m..(mini, nums[i])
             maxa = m..(maxa, nums[i])

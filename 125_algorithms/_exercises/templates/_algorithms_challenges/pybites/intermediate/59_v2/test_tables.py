@@ -13,7 +13,7 @@ ___ t3
     r.. MultiplicationTable(3)
 
 
-@p__.mark.parametrize("arg, ret", [
+@p__.m__.p..("arg, ret", [
     (1, 1),
     (5, 25),
     (10, 100),
@@ -24,7 +24,7 @@ ___ test_table_len(arg, ret):
     ... l..(MultiplicationTable(arg)) __ ret
 
 
-@p__.mark.parametrize("arg, ret", [
+@p__.m__.p..("arg, ret", [
     ((6, 6), 36),
     ((4, 2), 8),
     ((7, 6), 42),

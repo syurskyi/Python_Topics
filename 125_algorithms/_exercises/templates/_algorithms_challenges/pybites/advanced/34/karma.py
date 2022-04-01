@@ -12,7 +12,7 @@ c_ User:
     ___ - ,name):
         name = name
         karma = 0
-        fan_names = set()
+        fan_names = s..()
         points    # list
         _transactions    # list
 

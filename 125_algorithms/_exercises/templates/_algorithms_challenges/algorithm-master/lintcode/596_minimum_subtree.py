@@ -8,7 +8,7 @@ class TreeNode:
 
 
 c_ Solution:
-    min_sum = float('inf')
+    min_sum = f__('inf')
     node = N..
 
     """

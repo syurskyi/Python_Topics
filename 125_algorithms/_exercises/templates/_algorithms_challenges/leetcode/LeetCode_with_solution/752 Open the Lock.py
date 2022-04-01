@@ -55,7 +55,7 @@ c_ Solution:
         bfs
         """
         destination = t..(i..(c) ___ c __ target)
-        deadends_set = set(
+        deadends_set = s..(
             t..(i..(c) ___ c __ s)
             ___ s __ deadends
         )
@@ -64,7 +64,7 @@ c_ Solution:
             r.. -1
 
         step = 0
-        visited = set(q)
+        visited = s..(q)
         w.... q:
             cur_q    # list
             ___ e __ q:

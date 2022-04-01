@@ -26,7 +26,7 @@ c_ Solution(o..):
         y.. (i, j), mark, dist
 
     heap = [(0, "", t..(ball))]
-    visited = set()
+    visited = s..()
     hole = t..(hole)
     w.... heap:
       dist, word, curr = heapq.heappop(heap)

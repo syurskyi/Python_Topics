@@ -12,8 +12,8 @@ c_ Solution(o..):
         """
         queue = ['0000']
         level = 0
-        visited = set(['0000'])
-        deadends = set(deadends)
+        visited = s..(['0000'])
+        deadends = s..(deadends)
         __ '0000' __ deadends:
             r.. -1
         w.... queue:

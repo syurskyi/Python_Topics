@@ -12,7 +12,7 @@ c_ Solution(o..):
       maxArray.a..(arrays[i][-1])
     lMax = [maxArray[0]] * n
     rMax = [maxArray[-1]] * n
-    ans = float("-inf")
+    ans = f__("-inf")
     ___ i __ r..(1, n):
       lMax[i] = m..(lMax[i - 1], maxArray[i])
     ___ i __ r..(r..(0, n - 1)):
@@ -31,7 +31,7 @@ c_ Solution(o..):
     n = l..(arrays)
     minNum = arrays[0][0]
     maxNum = arrays[0][-1]
-    ans = float("-inf")
+    ans = f__("-inf")
     ___ i __ r..(1, n):
       head = arrays[i][0]
       tail = arrays[i][-1]

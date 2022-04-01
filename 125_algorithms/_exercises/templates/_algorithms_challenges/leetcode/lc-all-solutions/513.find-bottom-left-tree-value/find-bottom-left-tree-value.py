@@ -14,7 +14,7 @@ c_ Solution(o..):
 
     ___ dfs(root, h, w):
       __ n.. root:
-        r.. (float("inf"), float("inf"), N..)
+        r.. (f__("inf"), f__("inf"), N..)
       left = dfs(root.left, h - 1, w - 1)
       right = dfs(root.right, h - 1, w + 1)
       r.. m..((h, w, root.val), left, right)

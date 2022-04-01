@@ -14,7 +14,7 @@ ___ test_code_uses_singledispatch_decorator
     ... '@singledispatch' __ i___.getsource(count_down)
 
 
-@p__.mark.parametrize("input_argument", [
+@p__.m__.p..("input_argument", [
     '1234',
     1234,
     [1, 2, 3, 4],
@@ -32,7 +32,7 @@ ___ test_count_down_good_inputs(input_argument, capfd):
     ... output __ DEFAULT_EXPECTED_OUTPUT
 
 
-@p__.mark.parametrize("input_argument", [
+@p__.m__.p..("input_argument", [
     compress([1, 2, 3, 4], [1, 1, 1, 1]),
     d__(2018, 4, 21),
     __.c..(r'\d{4}'),

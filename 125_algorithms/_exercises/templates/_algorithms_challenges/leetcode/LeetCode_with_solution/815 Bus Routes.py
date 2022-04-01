@@ -39,8 +39,8 @@ c_ Solution:
         __ S __ T:
             r.. 0
 
-        routes = [set(e) ___ e __ routes]
-        G = defaultdict(set)
+        routes = [s..(e) ___ e __ routes]
+        G = defaultdict(s..)
         ___ i __ r..(l..(routes)):
             ___ j __ r..(i + 1, l..(routes)):
                 stops_1, stops_2 = routes[i], routes[j]  # bus represented by stops
@@ -51,7 +51,7 @@ c_ Solution:
                         _____
 
         q = [i ___ i, stops __ e..(routes) __ S __ stops]
-        target_set = set([i ___ i, stops __ e..(routes) __ T __ stops])
+        target_set = s..([i ___ i, stops __ e..(routes) __ T __ stops])
         visited = defaultdict(bool)
         ___ i __ q:
             visited[i] = T..
@@ -78,7 +78,7 @@ c_ Solution:
 
         Connect stops within in bus use one edge in G
         """
-        G = defaultdict(set)
+        G = defaultdict(s..)
         ___ stops __ routes:
             ___ i __ r..(l..(stops)):
                 ___ j __ r..(i + 1, l..(stops)):

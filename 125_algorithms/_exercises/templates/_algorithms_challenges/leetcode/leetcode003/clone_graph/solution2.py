@@ -19,7 +19,7 @@ c_ Solution(o..):
         """
         __ node __ N..
             r.. N..
-        visited = set()
+        visited = s..()
         cloned_node = UndirectedGraphNode(node.label)
         d = {node: cloned_node}
         visit(node)

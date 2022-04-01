@@ -50,6 +50,6 @@ expected = [
 ]
 
 
-@p__.mark.parametrize('text, result', z..(paragraphs, expected))
+@p__.m__.p..('text, result', z..(paragraphs, expected))
 ___ test_get_word_max_vowels(text, result):
     ... get_word_max_vowels(text) __ result

@@ -20,7 +20,7 @@ c_ Solution:
         Dijkstra's algorith, reduce to a graph problem
         """
         m, n = l..(maze), l..(maze[0])
-        D = [[float("inf") ___ _ __ r..(n)] ___ _ __ r..(m)]  # distance matrix
+        D = [[f__("inf") ___ _ __ r..(n)] ___ _ __ r..(m)]  # distance matrix
         i, j = start
         D[i][j] = 0
         q = [(0, i, j)]
@@ -41,7 +41,7 @@ c_ Solution:
                     heapq.heappush(q, (D[I][J], I, J))
 
         i, j = destination
-        r.. D[i][j] __ D[i][j] != float("inf") ____ -1
+        r.. D[i][j] __ D[i][j] != f__("inf") ____ -1
 
 
 __ _______ __ _______

@@ -9,14 +9,14 @@ c_ Solution:
         queue.a..(start)
         distance.a..(1)
         # Remove words that are same as start
-        ___ word __ set(d..):
+        ___ word __ s..(d..):
             __ start __ word:
                 d...remove(start)
         d...add(end)
         w.... queue:
             cur = queue.pop(0)
             d = distance.pop(0)
-            ___ word __ set(d..):  # Iterate over the copy of dict
+            ___ word __ s..(d..):  # Iterate over the copy of dict
                 __ is_adjacent(cur, word):
                     d...remove(word)  # Mark as visited
                     queue.a..(word)
@@ -35,5 +35,5 @@ c_ Solution:
 
 
 s = Solution()
-print s.ladderLength("hit", "dow", set(["hot", "dot", "dog", "lot", "log"]))
-print s.ladderLength("hit", "cog", set(["hot", "dot", "dog", "lot", "log"]))
+print s.ladderLength("hit", "dow", s..(["hot", "dot", "dog", "lot", "log"]))
+print s.ladderLength("hit", "cog", s..(["hot", "dot", "dog", "lot", "log"]))

@@ -20,11 +20,11 @@ c_ Solution(o..):
             __ e[0] __ graph:
                 graph[e[0]].add(e[1])
             ____:
-                graph[e[0]] = set([e[1]])
+                graph[e[0]] = s..([e[1]])
             __ e[1] __ graph:
                 graph[e[1]].add(e[0])
             ____:
-                graph[e[1]] = set([e[0]])
+                graph[e[1]] = s..([e[0]])
         result    # list
         ___ query __ queries:
             __ query[0] n.. __ graph:
@@ -33,7 +33,7 @@ c_ Solution(o..):
                 result.a..(1.0)
             ____:
                 tmp = [-1.0]
-                dfs(valuesMap, graph, query[0], query[1], 1.0, set(), tmp)
+                dfs(valuesMap, graph, query[0], query[1], 1.0, s..(), tmp)
                 result.a..(tmp[0])
         r.. result
     

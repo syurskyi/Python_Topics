@@ -3,7 +3,7 @@ _______ p__
 ____ pair_files _______ pair_files
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "test_description,test_input,expected",
     [
         (

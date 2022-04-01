@@ -7,7 +7,7 @@ _______ p__
 ____ anagram _______ is_anagram
 
 
-@p__.mark.parametrize("word1, word2", [
+@p__.m__.p..("word1, word2", [
     ("rail safety", "fairy tales"),
     ("roast beef", "eat for BSE"),
     # An anagram which means the opposite of its subject is
@@ -26,7 +26,7 @@ ___ test_is_anagram(word1, word2):
     ... is_anagram(word1, word2)
 
 
-@p__.mark.parametrize("word1, word2", [
+@p__.m__.p..("word1, word2", [
     ("rail safety", "fairy fun"),
     ("roast beef", "eat for ME"),
     ("restful", "fluester"),

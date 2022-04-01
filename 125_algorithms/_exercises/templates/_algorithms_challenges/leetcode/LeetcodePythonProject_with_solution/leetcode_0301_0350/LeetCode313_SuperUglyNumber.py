@@ -9,7 +9,7 @@ c_ Solution(o..):
         times = [0]*l..(primes)
         res = [1]
         ___ _ __ r..(n-1):
-            minVal = float('inf')
+            minVal = f__('inf')
             ___ i, p __ z..(times, primes):
                 minVal = m..(minVal, res[i]*p)
             res.a..(minVal)

@@ -7,6 +7,6 @@ ___ gen_special_pybites_dates
     newdate = PYBITES_BORN
     datelist    # list
     ___ i __ r..(10):
-        newdate += t..(days=100)
+        newdate += t..(d.._100)
         datelist.a..(newdate)
     r..(datelist)

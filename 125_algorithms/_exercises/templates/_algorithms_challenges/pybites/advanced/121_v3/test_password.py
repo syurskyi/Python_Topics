@@ -3,7 +3,7 @@ _______ p__
 ____ password _______ password_complexity
 
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     ('abc', 0),
     ('ABC', 0),
     ('123', 0),

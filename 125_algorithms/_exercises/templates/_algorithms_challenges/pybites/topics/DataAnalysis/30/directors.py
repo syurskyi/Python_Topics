@@ -41,7 +41,7 @@ ___ calc_mean_score(movies):
        round the mean to 1 decimal place"""
     total = 0
     ___ movie __ movies:
-        total += float(movie[2])
+        total += f__(movie[2])
     r.. r..(total/l..(movies), 1)
 
 
@@ -58,7 +58,7 @@ ___ get_average_scores(directors):
             ___ i __ r..(l..(directors[director])):
                 #print(director, int(directors[director][i][1]))
                 __ directors[director][i][1] a.. i..(directors[director][i][1]) >1960:
-                    total += float(directors[director][i][2])
+                    total += f__(directors[director][i][2])
             local_list.a..((director, r..(total/l..(directors[director]),1)))
     r.. s..(local_list, key=l.... x: x[1], r.._T..
 

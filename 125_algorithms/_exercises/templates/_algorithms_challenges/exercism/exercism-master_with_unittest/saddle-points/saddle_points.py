@@ -9,7 +9,7 @@ c_ SaddlePoints:
         r.. saddle_points()
 
     ___ saddle_points
-        saddle_points = set()
+        saddle_points = s..()
         ___ row __ r..(l..(matrix)):
             ___ col __ r..(l..(matrix[row])):
                 __ saddle_point(row, col):

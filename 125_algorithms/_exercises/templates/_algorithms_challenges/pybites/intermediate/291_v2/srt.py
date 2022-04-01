@@ -45,7 +45,7 @@ ___ get_srt_section_ids(text: s..) __ List[i..]:
             hours,minutes,seconds = time.s..(':')
             hours = i..(hours)
             minutes = i..(hours)
-            seconds = float('.'.j..(seconds.s..(',')))
+            seconds = f__('.'.j..(seconds.s..(',')))
             td = t..(hours=hours,minutes=minutes,seconds=seconds)
             tds.a..(td)
 

@@ -63,7 +63,7 @@ c_ TimeMap:
         """
         m = defaultdict(l..)
 
-    ___ set  key: s.., value: s.., timestamp: i..) __ N..
+    ___ s..  key: s.., value: s.., timestamp: i..) __ N..
         n = (timestamp, value)
         bisect.insort(m[key], n)
 

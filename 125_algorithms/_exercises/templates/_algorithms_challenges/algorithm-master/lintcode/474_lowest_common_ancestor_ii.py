@@ -22,7 +22,7 @@ c_ Solution:
         __ n.. root:
             r.. root
 
-        nodes = set()
+        nodes = s..()
 
         w.... a:
             nodes.add(a)

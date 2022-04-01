@@ -6,8 +6,8 @@ Created on Mar 21, 2017
 
 c_ Solution(o..):
     ___ intersection  nums1, nums2):
-        s1 = set(nums1)
-        s2 = set(nums2)
+        s1 = s..(nums1)
+        s2 = s..(nums2)
         result    # list
         ___ c1 __ s1:
             __ c1 __ s2:

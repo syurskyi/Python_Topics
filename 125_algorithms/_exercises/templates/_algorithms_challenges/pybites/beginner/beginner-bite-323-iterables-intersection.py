@@ -40,7 +40,7 @@ ___ intersection(*args: Iterable) __ Set[Any]:
     l    # list
     ___ input __ args:
         __ input __ n.. N.. a.. l..(input) > 0:
-            l.a..(set(input))
+            l.a..(s..(input))
     # I need to handle an exception in case dealing with empty inputs
     # Then I use intersection method which takes an arbitrary number of sets
     # as input.
@@ -50,7 +50,7 @@ ___ intersection(*args: Iterable) __ Set[Any]:
         r..(first.intersection(*l))
     ______ IndexError __ e:
         print(e)
-        r..(set())
+        r..(s..())
 
 
 

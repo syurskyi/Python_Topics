@@ -26,7 +26,7 @@ c_ Solution(o..):
         tar = [0]*26
         ___ c __ target:
             tar[o..(c)-o..('a')] += 1
-        res = float('inf')
+        res = f__('inf')
         ___ i __ r..(n):
             __ mp[i][o..(target[0])-o..('a')] __ 0:
                 _____
@@ -37,7 +37,7 @@ c_ Solution(o..):
             tmp = helper(mem, mp, s)
             __ tmp != -1:
                 res = m..(res, 1+tmp)
-        mem[target] = -1 __ res __ float('inf') ____ res
+        mem[target] = -1 __ res __ f__('inf') ____ res
         r.. mem[target]
     
     ___ test

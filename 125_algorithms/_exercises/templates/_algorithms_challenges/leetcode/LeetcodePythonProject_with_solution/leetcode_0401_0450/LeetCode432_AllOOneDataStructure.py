@@ -6,7 +6,7 @@ Created on Apr 15, 2017
 
 c_ Bucket(o..):
     ___ - , value):
-        keySet = set()
+        keySet = s..()
         value = value
         next = N..
         prev = N..

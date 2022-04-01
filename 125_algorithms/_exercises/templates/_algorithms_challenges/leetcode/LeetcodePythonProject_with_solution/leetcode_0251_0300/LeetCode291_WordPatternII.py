@@ -9,7 +9,7 @@ c_ Solution(o..):
         __ n.. pattern a.. n.. s: r.. T..
         __ n.. pattern o. n.. s: r.. F..
         hashmap    # dict
-        r.. helper(pattern, s, 0, 0, hashmap, set())
+        r.. helper(pattern, s, 0, 0, hashmap, s..())
          
     ___ helper  pattern, s, i, j, hashmap, hashset):
         __ i __ l..(pattern) a.. j __ l..(s):

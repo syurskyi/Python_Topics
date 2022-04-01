@@ -15,7 +15,7 @@ c_ Solution(o..):
     
     ___ longestSubstring  s, k):
         __ l..(s) < k: r.. 0
-        minChar, minCount = 0, float('inf')
+        minChar, minCount = 0, f__('inf')
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
@@ -25,7 +25,7 @@ c_ Solution(o..):
                 minChar = c
         __ hashmap[minChar] >= k:
             r.. l..(s)
-        maxRes = float('-inf')
+        maxRes = f__('-inf')
         ___ t __ s.s..(minChar):
             maxRes = m..(maxRes, longestSubstring(t, k))
         r.. maxRes
@@ -34,7 +34,7 @@ c_ Solution(o..):
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
-        splitSet = set()
+        splitSet = s..()
         ___ c, freq __ hashmap.i..:
             __ freq < k:
                 splitSet.add(c)

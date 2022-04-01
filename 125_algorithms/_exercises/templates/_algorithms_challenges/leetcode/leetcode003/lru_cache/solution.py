@@ -34,7 +34,7 @@ c_ LRUCache:
     # @param key, an integer
     # @param value, an integer
     # @return nothing
-    ___ set  key, value):
+    ___ s..  key, value):
         timestamp += 1
         __ key __ cache:
             times[key] = timestamp

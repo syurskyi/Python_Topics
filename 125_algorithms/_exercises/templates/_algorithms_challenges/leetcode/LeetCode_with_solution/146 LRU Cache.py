@@ -31,7 +31,7 @@ c_ LRUCache(o..):
 
         r.. -1
 
-    ___ set  key, value):
+    ___ s..  key, value):
         __ key __ map:
             cur = map[key]
             cur.val = value
@@ -97,7 +97,7 @@ c_ LRUCache_TLE(o..):
         ____:
             r.. -1
 
-    ___ set  key, value):
+    ___ s..  key, value):
         """
         Algorithm:
         data structure: Queue and HashMap

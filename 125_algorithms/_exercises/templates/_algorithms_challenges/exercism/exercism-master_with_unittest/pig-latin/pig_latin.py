@@ -3,8 +3,8 @@ _______ s__
 
 c_ PigLatinTranslator:
 
-    alpha = set(s__.ascii_lowercase)
-    vowels = set(['a', 'e', 'i', 'o', 'u'])
+    alpha = s..(s__.ascii_lowercase)
+    vowels = s..(['a', 'e', 'i', 'o', 'u'])
     consonants = alpha - vowels
 
     @classmethod

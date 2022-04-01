@@ -23,7 +23,7 @@ c_ Solution(o..):
           dfs(m, n, i, visited, length + 1)
           visited.discard(i)
 
-    visited = set()
+    visited = s..()
     ans = 0
     dfs(m, n, -99, visited, 0)
     r.. ans

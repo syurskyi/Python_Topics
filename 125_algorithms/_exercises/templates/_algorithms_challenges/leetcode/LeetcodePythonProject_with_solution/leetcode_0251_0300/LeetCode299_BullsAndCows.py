@@ -6,7 +6,7 @@ Created on Mar 9, 2017
 
 c_ Solution(o..):
     ___ getHint  secret, guess):
-        bulls = set()
+        bulls = s..()
         hashmap    # dict
         ___ i, (c1, c2) __ e..(z..(secret, guess)):
             __ c1 __ c2:

@@ -16,7 +16,7 @@ ___ calculator(operation, numbers):
     __ n.. func:
         r.. ValueError('Invalid operation')
 
-    numbers = [float(num) ___ num __ numbers]
+    numbers = [f__(num) ___ num __ numbers]
     r.. r..(func(numbers), 2)
 
 

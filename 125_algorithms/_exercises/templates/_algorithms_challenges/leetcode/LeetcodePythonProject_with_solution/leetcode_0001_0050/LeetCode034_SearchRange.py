@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: List[int]
         """
         l, r = 0, l..(nums)
-        res = [float('inf'), float('-inf')]
+        res = [f__('inf'), f__('-inf')]
         w.... l < r:
             mid = (l+r)//2
             __ target __ nums[mid]:
@@ -33,7 +33,7 @@ c_ Solution(o..):
                 l = mid+1
         __ r __ l..(nums):
             r.. [-1, -1]
-        r.. res __ res != [float('inf'), float('-inf')] ____ [-1, -1]
+        r.. res __ res != [f__('inf'), f__('-inf')] ____ [-1, -1]
     
     ___ test
         testCases = [

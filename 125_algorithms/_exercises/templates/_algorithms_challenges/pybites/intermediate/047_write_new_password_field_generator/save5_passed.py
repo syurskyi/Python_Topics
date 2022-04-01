@@ -1,7 +1,7 @@
 _______ s__
 _______ __
 
-used_passwords = set('PassWord@1 PyBit$s9'.s..())
+used_passwords = s..('PassWord@1 PyBit$s9'.s..())
 
 ___ validate_password(password):
     s = __.s..(r'^.*(?=.*\d)(?=.*[a-z]{2,})(?=.*[A-Z]){6,12}', password)

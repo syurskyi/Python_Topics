@@ -36,7 +36,7 @@ c_ Solution(o..):
         :rtype: int
         """
         arr1, arr2 = A, B
-        res = float('inf')
+        res = f__('inf')
         helper(arr1, arr2, 0, 0)
         r.. res
         

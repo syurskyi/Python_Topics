@@ -9,7 +9,7 @@ c_ Solution:
   # @return a undirected graph node
   ___ cloneGraph  node):
     graph    # dict
-    visited = set()
+    visited = s..()
 
     ___ dfs(node, visited, graph):
       __ n.. node o. node.label __ visited:

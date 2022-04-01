@@ -14,7 +14,7 @@ c_ Solution(o..):
         __ a __ b:
             r.. 0
         q = [a]
-        hashset = set([a])
+        hashset = s..([a])
         res = 0
         w.... q:
             res += 1

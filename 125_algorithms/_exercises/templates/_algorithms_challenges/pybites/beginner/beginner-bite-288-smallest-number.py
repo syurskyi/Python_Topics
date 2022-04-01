@@ -24,7 +24,7 @@ ____ typing _______ List
 ___ minimum_number(d..: List[i..]) __ i..:
     __ l..(d..) __ 0:
         r.. 0
-    reduced = set(d..)
+    reduced = s..(d..)
     s.. = s..(reduced)
     r = ""
     ___ e __ s..:

@@ -23,7 +23,7 @@ ___ _cap_str_to_mln_float(cap):
     ____:
         unit = cap[-1]
         cap = cap[1:-1]
-        value = float(cap)
+        value = f__(cap)
         value = value * 1000 __ unit __ 'B' ____ value
 
     r.. value

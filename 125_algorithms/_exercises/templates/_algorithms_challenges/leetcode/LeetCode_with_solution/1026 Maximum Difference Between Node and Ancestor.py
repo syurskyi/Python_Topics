@@ -45,15 +45,15 @@ c_ Solution:
 
     ___ dfs  node):
         __ n.. node:
-            r.. float("inf"), -float("inf")
+            r.. f__("inf"), -f__("inf")
 
         lmin, lmax = dfs(node.left)
         rmin, rmax = dfs(node.right)
         mini = m..(lmin, rmin)
         maxa = m..(lmax, rmax)
-        __ mini != float("inf"):
+        __ mini != f__("inf"):
             ret = m..(ret, abs(mini - node.val))
-        __ maxa != -float("inf"):
+        __ maxa != -f__("inf"):
             ret = m..(ret, abs(maxa - node.val))
 
         r.. m..(mini, node.val), m..(maxa, node.val)

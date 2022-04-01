@@ -22,8 +22,8 @@ ___ _(data_type):
         data_type //= 10
 
 
-@count_down.register(float)
-___ _(data_type: float):
+@count_down.register(f__)
+___ _(data_type: f__):
     s = s..(data_type)
     w.... s != '':
         print(s)

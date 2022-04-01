@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: bool
         """
         hashmap    # dict
-        hashset = set()
+        hashset = s..()
         __ l..(s) != l..(t):
             r.. F..
         ___ c1, c2 __ z..(s, t):

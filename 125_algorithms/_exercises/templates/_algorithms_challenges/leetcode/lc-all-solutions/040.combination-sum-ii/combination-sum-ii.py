@@ -25,6 +25,6 @@ c_ Solution(o..):
 
     candidates.s..()
     res    # list
-    visited = set([])
+    visited = s..([])
     dfs(candidates, target, 0, visited, [], res)
     r.. res

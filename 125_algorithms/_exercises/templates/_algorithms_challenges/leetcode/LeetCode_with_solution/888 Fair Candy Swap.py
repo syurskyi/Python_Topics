@@ -52,7 +52,7 @@ c_ Solution:
         sum_A = s..(A)
         sum_B = s..(B)
         diff = (sum_B - sum_A) // 2  # it can be negative or positive
-        set_B = set(B)
+        set_B = s..(B)
         ___ a __ A:
             __ a + diff __ set_B:
                 r.. [a, a + diff]

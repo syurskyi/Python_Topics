@@ -10,8 +10,8 @@ ___ test_update_pycons_lat_lon
     pycons = _get_pycons()
     update_pycons_lat_lon(pycons)
     ___ pycon __ pycons:
-        ... isi..(pycon.lat, float)
-        ... isi..(pycon.lon, float)
+        ... isi..(pycon.lat, f__)
+        ... isi..(pycon.lon, f__)
 
 
 ___ test_create_travel_plan

@@ -14,7 +14,7 @@ c_ Solution:
             r.. ans
 
         queue, _queue = [0], []
-        visited = set(queue)
+        visited = s..(queue)
 
         w.... queue:
             ans += 1
@@ -50,7 +50,7 @@ c_ Solution:
         __ n.. coins o. n.. amount:
             r.. 0
 
-        INF = float('inf')
+        INF = f__('inf')
         dp = [INF] * (amount + 1)
         dp[0] = 0
 

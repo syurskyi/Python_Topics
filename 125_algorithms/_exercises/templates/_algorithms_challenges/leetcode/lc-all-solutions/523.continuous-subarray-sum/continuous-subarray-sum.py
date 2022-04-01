@@ -13,7 +13,7 @@ c_ Solution(o..):
       r.. s..(nums) % k __ 0
     ppSum = 0
     subSum = nums[0] + nums[1]
-    d = set([0])
+    d = s..([0])
     ___ i __ r..(2, l..(nums)):
       ppSum = (ppSum + nums[i - 2]) % k
       d |= {ppSum}

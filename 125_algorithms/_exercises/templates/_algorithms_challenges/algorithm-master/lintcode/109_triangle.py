@@ -43,7 +43,7 @@ c_ Solution:
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         m = l..(triangle)
         dp = [[INFINITY] * (m + 1) ___ _ __ r..(2)]
 
@@ -85,7 +85,7 @@ c_ Solution:
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         m = l..(triangle)
         dp = [[INFINITY] * (m + 1) ___ _ __ r..(m + 1)]
 

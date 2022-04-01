@@ -8,7 +8,7 @@ c_ Solution(o..):
     :rtype: List[str]
     """
     graph    # dict
-    hashset = set([])
+    hashset = s..([])
     ___ ticket __ tickets:
       graph[ticket[0]] = graph.get(ticket[0], []) + [ticket[1]]
 

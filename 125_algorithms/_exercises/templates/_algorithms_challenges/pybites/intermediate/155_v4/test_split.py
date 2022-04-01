@@ -18,7 +18,7 @@ expected_returns = (
 )
 
 
-@p__.mark.parametrize("arg, ret",
+@p__.m__.p..("arg, ret",
                          z..(some_strings, expected_returns))
 
 ___ test_split_words_and_quoted_text(arg, ret):

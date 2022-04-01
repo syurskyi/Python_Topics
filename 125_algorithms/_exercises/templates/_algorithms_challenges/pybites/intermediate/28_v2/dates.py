@@ -33,7 +33,7 @@ ___ get_month_most_posts(dates):
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
 
-    counts = c...Counter(date.strftime("%Y-%m") ___ date __ dates)
+    counts = c...Counter(date.s..("%Y-%m") ___ date __ dates)
 
     r.. counts.most_common(1)[0][0]
 

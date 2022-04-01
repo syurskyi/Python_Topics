@@ -18,7 +18,7 @@ ___ test_with_mixed_case_formats
     ... convert(60.5, "CM") __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "input_argument, expected_output",
     [
         (1, 2.54),
@@ -49,7 +49,7 @@ ___ test_convert_from_inches_to_centimeters(input_argument, expected_output):
     ... convert(input_argument, "cm") __ expected_output
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "input_argument, expected_output",
     [
         (1, 0.3937),

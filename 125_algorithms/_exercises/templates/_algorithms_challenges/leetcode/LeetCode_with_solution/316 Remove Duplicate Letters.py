@@ -25,7 +25,7 @@ c_ Solution(o..):
                 last_pos[_idx(s[i])] = i
 
         stk    # list
-        stk_set = set()
+        stk_set = s..()
         ___ i __ x..(n):
             v = s[i]
             __ v n.. __ stk_set:

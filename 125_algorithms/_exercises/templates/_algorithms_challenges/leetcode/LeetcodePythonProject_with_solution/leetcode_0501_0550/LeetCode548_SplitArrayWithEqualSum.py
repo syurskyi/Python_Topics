@@ -15,7 +15,7 @@ c_ Solution(o..):
         ___ i __ r..(1, n):
             sumVals.a..(sumVals[-1]+nums[i])
         ___ j __ r..(3, n-3):
-            hashset = set()
+            hashset = s..()
             ___ i __ r..(1, j-1):
                 __ sumVals[i-1] __ sumVals[j-1]-sumVals[i]:
                     hashset.add(sumVals[i-1])

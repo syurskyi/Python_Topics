@@ -24,8 +24,8 @@ c_ Solution(o..):
             V[e[0]].a..(e[1])
             V[e[1]].a..(e[0])
 
-        visited = set()
-        pathset = set()
+        visited = s..()
+        pathset = s..()
         __ n.. dfs(V, edges[0][0], N.., pathset, visited):
             r.. F..
 

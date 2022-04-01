@@ -11,7 +11,7 @@ c_ Solution(o..):
         """
         __ n.. grid o. n.. grid[0]: r.. 0
         m, n = l..(grid), l..(grid[0])
-        hashset = set()
+        hashset = s..()
         count = 0
         ___ i __ r..(m):
             ___ j __ r..(n):
@@ -42,7 +42,7 @@ c_ Solution(o..):
                 helper(grid, x, y, res)
     
     ___ generateKeys  grid, res):
-        hashset = set()
+        hashset = s..()
         up, down, left, right = res[0], res[1], res[2], res[3]
         subGrid    # list
         ___ i __ r..(up, down+1):

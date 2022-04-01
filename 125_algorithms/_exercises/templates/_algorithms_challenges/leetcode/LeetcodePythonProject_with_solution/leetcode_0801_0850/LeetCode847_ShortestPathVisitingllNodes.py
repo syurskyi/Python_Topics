@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         n = l..(graph)
         queue    # list
-        hashset = set()
+        hashset = s..()
         
         ___ i __ r..(n):
             tmp = (1 << i)

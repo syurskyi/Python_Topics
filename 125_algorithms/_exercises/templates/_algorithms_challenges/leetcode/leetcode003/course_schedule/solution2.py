@@ -32,10 +32,10 @@ c_ Solution(o..):
         Detect if course prerequisites graph has a cycle.
         """
 
-        unvisited = set(r..(numCourses))
-        visiting = set()
-        visited = set()
-        graph = {x: set() ___ x __ r..(numCourses)}
+        unvisited = s..(r..(numCourses))
+        visiting = s..()
+        visited = s..()
+        graph = {x: s..() ___ x __ r..(numCourses)}
         ___ c, p __ prerequisites:
             graph[p].add(c)
 

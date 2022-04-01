@@ -13,7 +13,7 @@ ___ test_data(df):
     ... isi..(df, pd.DataFrame)
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "line, expected",
     [
         (0, "sum          mean        max"),
@@ -30,7 +30,7 @@ ___ test_summary_report(df, capfd, line, expected):
     ... output[line].s.. __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "lst, expected", [(["median"], "median"), (["min", "max"], "min        max"),]
 )
 ___ test_summary_report_custom(df, capfd, lst, expected):
@@ -39,7 +39,7 @@ ___ test_summary_report_custom(df, capfd, lst, expected):
     ... output[0].s.. __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "year, expected",
     [
         (2013, "6      34595.13"),
@@ -54,7 +54,7 @@ ___ test_yearly_report(df, capfd, year, expected):
     ... output[9] __ expected
 
 
-@p__.mark.parametrize("year", [1972, 2000, 2020])
+@p__.m__.p..("year", [1972, 2000, 2020])
 ___ test_yearly_report_with_invalid_year(df, year):
     msg = f"<ExceptionInfo ValueError('The year {year} is not included in the report!') tblen=2>"
     w__ p__.r..(ValueError) __ e:

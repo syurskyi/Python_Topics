@@ -10,7 +10,7 @@ c_ Solution(o..):
     w = l..(heightMap[0])
     ans = 0
     heap    # list
-    visited = set()
+    visited = s..()
     ___ j __ r..(w):
       heapq.heappush(heap, (heightMap[0][j], 0, j))
       heapq.heappush(heap, (heightMap[h - 1][j], h - 1, j))

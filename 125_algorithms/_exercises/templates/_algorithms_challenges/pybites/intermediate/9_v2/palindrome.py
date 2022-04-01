@@ -50,7 +50,7 @@ ___ get_longest_palindrome(words_ N..
     __ n.. words:
         words = load_dictionary()
     
-    longest_length = float("-inf")
+    longest_length = f__("-inf")
     longest = N..
     ___ word __ words:
         __ is_palindrome(word):

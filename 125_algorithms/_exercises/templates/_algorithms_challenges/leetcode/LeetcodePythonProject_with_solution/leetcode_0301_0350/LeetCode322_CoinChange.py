@@ -6,13 +6,13 @@ Created on Mar 18, 2017
 
 c_ Solution(o..):
     ___ coinChange  coins, amount):
-        dp = [float('inf')]*(amount+1)
+        dp = [f__('inf')]*(amount+1)
         dp[0] = 0
         ___ i __ r..(amount+1):
             ___ coin __ coins:
                 __ i+coin < amount+1:
                     dp[i+coin] = m..(dp[i+coin], dp[i]+1)
-        __ dp[-1] __ float('inf'):
+        __ dp[-1] __ f__('inf'):
             r.. -1
         r.. dp[-1]
     

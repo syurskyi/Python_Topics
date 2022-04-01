@@ -40,7 +40,7 @@ c_ Solution:
         To optimize:
         recursively pass the min and max, O(n)
         """
-        ret = [float('inf')]  # keep reference
+        ret = [f__('inf')]  # keep reference
         dfs(root, ret)
         r.. ret[0]
 

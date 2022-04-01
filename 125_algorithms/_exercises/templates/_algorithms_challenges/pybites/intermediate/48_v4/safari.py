@@ -38,4 +38,4 @@ ___ create_chart
             prev = line
 
     ___ key __ s..(chart.k..
-        print('{} {}'.f..(key.strftime('%m-%d'), chart[key]))
+        print('{} {}'.f..(key.s..('%m-%d'), chart[key]))

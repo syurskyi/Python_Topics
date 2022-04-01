@@ -30,7 +30,7 @@ c_ Solution(o..):
         i = 0
         j = l..(lst) - 1
         w.... i < j:
-            x = (lst[i] + lst[j]) / float(2)
+            x = (lst[i] + lst[j]) / f__(2)
             __ n.. x:
                 x = x
             ____ x != x:

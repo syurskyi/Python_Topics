@@ -12,7 +12,7 @@ c_ Solution(o..):
         m, n = l..(grid), l..(grid[0])
         numOfKeys = 0
         dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-        moves = set()
+        moves = s..()
         ___ i __ r..(m):
             ___ j __ r..(n):
                 __ grid[i][j] __ '@':

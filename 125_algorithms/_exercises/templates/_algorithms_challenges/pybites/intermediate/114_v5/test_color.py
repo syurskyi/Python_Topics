@@ -3,7 +3,7 @@ _______ p__
 ____ color _______ Color
 
 
-@p__.mark.parametrize("color, expected", [
+@p__.m__.p..("color, expected", [
     ("white", (255, 255, 255)),
     ("black", (0, 0, 0)),
     ("blue", (0, 0, 255)),
@@ -17,7 +17,7 @@ ___ test_color_class(color, expected):
     ... c.rgb __ expected
 
 
-@p__.mark.parametrize("rgb, expected", [
+@p__.m__.p..("rgb, expected", [
     ((255, 255, 255), "#ffffff"),
     ((0, 0, 0), "#000000"),
     ((0, 0, 255), "#0000ff"),
@@ -29,7 +29,7 @@ ___ test_color_classmethod_rgb2hex(rgb, expected):
     ... Color.rgb2hex(rgb) __ expected
 
 
-@p__.mark.parametrize("rgb", [
+@p__.m__.p..("rgb", [
     ("puke"),
     ("0, 0, 0"),
     ((0, -5, 255)),
@@ -41,7 +41,7 @@ ___ test_color_rgb2hex_bad_value(rgb):
         Color.rgb2hex(rgb)
 
 
-@p__.mark.parametrize("hex, expected", [
+@p__.m__.p..("hex, expected", [
     ("#ffffff", (255, 255, 255)),
     ("#000000", (0, 0, 0)),
     ("#0000ff", (0, 0, 255)),
@@ -53,7 +53,7 @@ ___ test_color_classmethod_hex2rgb(hex, expected):
     ... Color.hex2rgb(hex) __ expected
 
 
-@p__.mark.parametrize("value", [
+@p__.m__.p..("value", [
     ("puke"),
     ("#ccc"),
     ("#stopit"),

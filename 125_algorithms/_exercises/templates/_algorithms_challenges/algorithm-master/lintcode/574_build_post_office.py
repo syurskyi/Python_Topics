@@ -56,7 +56,7 @@ c_ Solution:
             psx[i] = psx[i - 1] + xs[i - 1]
             psy[i] = psy[i - 1] + ys[i - 1]
 
-        ans = INF = float('inf')
+        ans = INF = f__('inf')
 
         ___ x __ r..(m):
             ___ y __ r..(n):
@@ -128,9 +128,9 @@ c_ Solution:
         xc //= l..(houses)
         yc //= l..(houses)
 
-        ans = INF = float('inf')
+        ans = INF = f__('inf')
         queue = [(xc, yc)]
-        visited = set(queue)
+        visited = s..(queue)
 
         ___ x, y __ queue:
             __ grid[x][y] __ EMPTY:
@@ -189,7 +189,7 @@ c_ Solution:
                 __ grid[x][y] __ HOUSE:
                     bfs(grid, x, y, steps)
 
-        ans = INF = float('inf')
+        ans = INF = f__('inf')
 
         ___ x __ r..(m):
             ___ y __ r..(n):
@@ -203,7 +203,7 @@ c_ Solution:
     ___ bfs  grid, x, y, steps):
         m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
-        visited = set(queue)
+        visited = s..(queue)
         step = 0
 
         w.... queue:

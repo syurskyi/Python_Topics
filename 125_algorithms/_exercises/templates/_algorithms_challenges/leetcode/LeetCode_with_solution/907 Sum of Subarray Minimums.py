@@ -86,7 +86,7 @@ c_ Solution:
         use an increasing stk
         """
         stk    # list
-        A = [-float('inf')] + A + [-float('inf')]
+        A = [-f__('inf')] + A + [-f__('inf')]
         ret = 0
         ___ i, a __ e..(A):
             w.... stk a.. A[stk[-1]] > a:

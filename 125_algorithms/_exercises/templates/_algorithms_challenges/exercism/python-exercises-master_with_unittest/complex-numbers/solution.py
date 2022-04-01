@@ -24,9 +24,9 @@ c_ ComplexNumber(o..):
     ___ div  other):
         d = other.real * other.real + other.imaginary * other.imaginary
         r = (real * other.real + imaginary *
-             other.imaginary) / float(d)
+             other.imaginary) / f__(d)
         i = (imaginary * other.real - real *
-             real * other.imaginary) / float(d)
+             real * other.imaginary) / f__(d)
         r.. ComplexNumber(r, i)
 
     ___ abs

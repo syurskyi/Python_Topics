@@ -42,8 +42,8 @@ Sample output from running the code in the if/main clause:
 ____ dataclasses _______ dataclass, field
 ____ typing _______ List, NamedTuple
 
-Bracket = NamedTuple("Bracket", [("end", i..), ("rate", float)])
-Taxed = NamedTuple("Taxed", [("amount", float), ("rate", float), ("tax", float)])
+Bracket = NamedTuple("Bracket", [("end", i..), ("rate", f__)])
+Taxed = NamedTuple("Taxed", [("amount", f__), ("rate", f__), ("tax", f__)])
 BRACKET = [
     Bracket(9_700, 0.1),
     Bracket(39_475, 0.12),
@@ -121,7 +121,7 @@ c_ Taxes:
         print(f"{'Taxes Breakdown':^{OUTPUT_WIDTH}}")
         print("=" * OUTPUT_WIDTH)
 
-        largest_amount = largest_tax =  float("-inf")
+        largest_amount = largest_tax =  f__("-inf")
         ___ amount,rate,tax __ tax_amounts:
             largest_amount = m..(largest_amount,i..(amount))
             largest_tax = m..(largest_tax,i..(tax))
@@ -147,7 +147,7 @@ c_ Taxes:
 
 
     $
-    ___ taxes(self) __ float:
+    ___ taxes(self) __ f__:
         """Calculates the taxes owed
 
         As it's calculating the taxes, it is also populating the tax_amounts list
@@ -187,7 +187,7 @@ c_ Taxes:
 
 
     $
-    ___ total(self) __ float:
+    ___ total(self) __ f__:
         """Calculates total taxes owed
 
         Returns:
@@ -196,7 +196,7 @@ c_ Taxes:
         r.. taxes_owed
 
     $
-    ___ tax_rate(self) __ float:
+    ___ tax_rate(self) __ f__:
         """Calculates the actual tax rate
 
         Returns:

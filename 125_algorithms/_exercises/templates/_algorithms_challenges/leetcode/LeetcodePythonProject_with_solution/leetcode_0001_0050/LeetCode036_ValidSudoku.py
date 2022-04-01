@@ -10,14 +10,14 @@ c_ Solution(o..):
         :rtype: bool
         """
         ___ i __ r..(9):
-            hashset = set()
+            hashset = s..()
             ___ j __ r..(9):
                 __ board[i][j] __ hashset:
                     r.. F..
                 __ board[i][j] != '.':
                     hashset.add(board[i][j])
         ___ j __ r..(9):
-            hashset = set()
+            hashset = s..()
             ___ i __ r..(9):
                 __ board[i][j] __ hashset:
                     r.. F..
@@ -25,7 +25,7 @@ c_ Solution(o..):
                     hashset.add(board[i][j])
         ___ i0 __ r..(3):
             ___ j0 __ r..(3):
-                hashset = set()
+                hashset = s..()
                 ___ i __ r..(i0*3, i0*3+3):
                     ___ j __ r..(j0*3, j0*3+3):
                         __ board[i][j] __ hashset:

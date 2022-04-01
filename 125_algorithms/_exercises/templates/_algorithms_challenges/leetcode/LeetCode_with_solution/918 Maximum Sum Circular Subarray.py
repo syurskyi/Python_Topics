@@ -66,7 +66,7 @@ c_ Solution:
         """
         dp[i] = A[i] + max(dp[i-1],0)
         """
-        mx = -float('inf')
+        mx = -f__('inf')
         cur = 0
         ___ a __ A:
             cur = a + m..(cur, 0)  # RHS cur is the prev
@@ -78,7 +78,7 @@ c_ Solution:
         keep a cur_sum with index, when negative, go back to 0
         """
         cur = [0, N..]
-        mx = -float('inf')
+        mx = -f__('inf')
         i = 0
         j = 0
         n = l..(A)

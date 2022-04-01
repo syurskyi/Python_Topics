@@ -4,7 +4,7 @@ ____ freezegun _______ freeze_time
 ____ progress _______ ontrack_reading
 
 
-@p__.mark.parametrize("args, expected", [
+@p__.m__.p..("args, expected", [
     ((60, 2, 3), T..),
     ((60, 0, 3), F..),
     ((60, 0.5, 3), T..),

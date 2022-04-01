@@ -22,7 +22,7 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
 
         new_version = l..(map(i..,value.s..('.')))
 
-        ___ n1,n2 __ i...zip_longest(old_version,new_version,fillvalue=0):
+        ___ n1,n2 __ i...z__(old_version,new_version,fillvalue=0):
             __ n2 > n1:
                 upgrades.a..(package)
             ____ n2 < n1:

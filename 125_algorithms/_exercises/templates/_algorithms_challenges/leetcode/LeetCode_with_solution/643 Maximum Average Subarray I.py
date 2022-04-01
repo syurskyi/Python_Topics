@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ findMaxAverage  nums: List[i..], k: i..) __ float:
+    ___ findMaxAverage  nums: List[i..], k: i..) __ f__:
         """
         two pointers
         """

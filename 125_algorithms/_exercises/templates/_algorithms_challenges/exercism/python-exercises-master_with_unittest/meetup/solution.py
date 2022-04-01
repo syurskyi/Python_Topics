@@ -1,11 +1,11 @@
-____ calendar _______ Calendar
+____ ca__ _______ Calendar
 
 
 ___ meetup_day(year, month, day_of_the_week, which):
     candidates = [date
                   ___ date __ Calendar().itermonthdates(year, month)
                   __ date.month __ month
-                  __ date.strftime('%A') __ day_of_the_week]
+                  __ date.s..('%A') __ day_of_the_week]
     r.. _choice(which)(candidates)
 
 

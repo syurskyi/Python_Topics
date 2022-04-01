@@ -3,7 +3,7 @@ _______ p__
 ____ Previous.animation _______ spinner, SPINNER_STATES __ states
 
 
-@p__.mark.parametrize("seconds, rounds, slice_", [
+@p__.m__.p..("seconds, rounds, slice_", [
     (0.2, 0, 2),
     (0.4, 1, 0),
     (1, 2, 2),

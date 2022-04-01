@@ -3,9 +3,9 @@
 
 
 ___ i __ r..(i..(input())):
-    str1 = set(input())
-    str2 = set(input())
-    __ str1 & str2 != set
+    str1 = s..(input())
+    str2 = s..(input())
+    __ str1 & str2 != s..
         print('YES')
     ____:
         print('NO')

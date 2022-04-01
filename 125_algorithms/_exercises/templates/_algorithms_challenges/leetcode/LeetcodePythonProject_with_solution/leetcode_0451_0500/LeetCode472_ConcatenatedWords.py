@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         res    # list
         words.s..(key=l..)
-        hashset = set()
+        hashset = s..()
         ___ word __ words:
             __ helper(hashset, word):
                 res.a..(word)

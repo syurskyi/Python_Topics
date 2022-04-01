@@ -21,18 +21,18 @@ c_ Employee:
     first_name: s..
     last_name: s..
     days_per_week: i..
-    hours_per_day: float
-    wage: float
+    hours_per_day: f__
+    wage: f__
 
     ___ - , first_name: s.., last_name: s.., days_per_week: i..,
-            hours_per_day:i.., wage: float):
+            hours_per_day:i.., wage: f__):
         first_name = first_name
         last_name = last_name
         days_per_week = days_per_week
         hours_per_day = hours_per_day
         wage = wage
 
-    ___ _rounder  number: float, places: i..) __ s..:
+    ___ _rounder  number: f__, places: i..) __ s..:
         """Rounds a number the specified number of places
 
         :param number: Float of number of round
@@ -43,7 +43,7 @@ c_ Employee:
         r.. f"${amount:0.2f}"
 
     $
-    ___ weekly_pay(self) __ float:
+    ___ weekly_pay(self) __ f__:
         """Returns amount of weekly pay in US currency
 
         For instance: $250.75

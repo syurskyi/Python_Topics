@@ -10,7 +10,7 @@ c_ Solution(o..):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        res = set()
+        res = s..()
         helper(nums, 0, [], res)
         r.. [l..(row) ___ row __ res]
     

@@ -12,7 +12,7 @@ c_ Solution(o..):
     :rtype: int
     """
     val = N..
-    ans = float("inf")
+    ans = f__("inf")
 
     ___ inorder(root):
       __ n.. root:

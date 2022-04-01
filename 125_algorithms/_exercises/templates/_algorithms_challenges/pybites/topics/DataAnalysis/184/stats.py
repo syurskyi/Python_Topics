@@ -22,23 +22,23 @@ c_ BiteStats:
     $
     ___ number_bites_accessed(self) __ i..:
         """Get the number of unique Bites accessed"""
-        r.. (l..(set(dic.get('bite') ___ dic __ rows)))
+        r.. (l..(s..(dic.get('bite') ___ dic __ rows)))
 
     $
     ___ number_bites_resolved(self) __ i..:
         """Get the number of unique Bites resolved (completed=True)"""
-        r.. (l..(set(dic.get('bite') ___ dic __ rows __ dic.get('completed') __ 'True')))
+        r.. (l..(s..(dic.get('bite') ___ dic __ rows __ dic.get('completed') __ 'True')))
 
     $
     ___ number_users_active(self) __ i..:
         """Get the number of unique users in the data set"""
-        r.. (l..(set(dic.get('user') ___ dic __ rows)))
+        r.. (l..(s..(dic.get('user') ___ dic __ rows)))
 
     $
     ___ number_users_solving_bites(self) __ i..:
         """Get the number of unique users that resolved
            one or more Bites"""
-        r.. (l..(set(dic.get('user') ___ dic __ rows __ dic.get('completed') __ 'True')))
+        r.. (l..(s..(dic.get('user') ___ dic __ rows __ dic.get('completed') __ 'True')))
 
     $
     ___ top_bite_by_number_of_clicks(self) __ s..:
@@ -59,7 +59,7 @@ print(new_list.reader)
 newlist = [line ___ line __ new_list]
 print(l..(newlist))
 
-print(l..(set(dic.get('bite') ___ dic __ newlist)))
+print(l..(s..(dic.get('bite') ___ dic __ newlist)))
 
 click_count = Counter( dic['bite'] ___ dic __ newlist)
 print(click_count.most_common(1)[0][0])

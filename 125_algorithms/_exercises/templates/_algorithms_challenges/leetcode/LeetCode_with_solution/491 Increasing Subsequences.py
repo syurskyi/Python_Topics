@@ -27,9 +27,9 @@ c_ Solution:
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        subs = set()
+        subs = s..()
         ___ n __ nums:
-            subs |= set([
+            subs |= s..([
                 sub + (n,)
                 ___ sub __ subs
                 __ n >= sub[-1]
@@ -58,7 +58,7 @@ c_ Solution:
             [(nums[i],)]
             ___ i __ r..(l)
         ]
-        ret = set()
+        ret = s..()
         ___ i __ r..(1, l):
             ___ j __ r..(i):
                 __ nums[i] >= nums[j]:

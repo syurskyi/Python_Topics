@@ -17,7 +17,7 @@ c_ Solution(o..):
         :rtype: int
         """
         count = 0
-        hashset = set(G)
+        hashset = s..(G)
         w.... head:
             w.... head a.. head.val n.. __ hashset:
                 head = head.next

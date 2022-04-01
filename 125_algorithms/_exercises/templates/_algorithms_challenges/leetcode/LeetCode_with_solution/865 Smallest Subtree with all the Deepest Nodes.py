@@ -56,7 +56,7 @@ c_ Solution:
 
         __ d > deepest:
             deepest = d
-            deepest_nodes = set([node])
+            deepest_nodes = s..([node])
         ____ d __ deepest:
             deepest_nodes.add(node)
 

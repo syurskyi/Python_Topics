@@ -8,8 +8,8 @@ c_ Solution:
         :type K: int
         :rtype: int
         """
-        min_cost = [float('inf')] * n  # the minimum cost to get to node
-        costs = [float('inf')] * n
+        min_cost = [f__('inf')] * n  # the minimum cost to get to node
+        costs = [f__('inf')] * n
         min_cost[src] = costs[src] = 0
 
         ___ _ __ r..(K + 1):
@@ -17,7 +17,7 @@ c_ Solution:
                 costs[v] = m..(costs[v], min_cost[u] + cost)
             min_cost = costs
 
-        r.. costs[dst] __ costs[dst] < float('inf') ____ -1
+        r.. costs[dst] __ costs[dst] < f__('inf') ____ -1
 
 
 c_ Solution:
@@ -33,7 +33,7 @@ c_ Solution:
         __ src __ dst:
             r.. 0
 
-        INF = float('inf')
+        INF = f__('inf')
 
         """
         `dp[i][k]` means the cost when the end is `i` with `k` stop

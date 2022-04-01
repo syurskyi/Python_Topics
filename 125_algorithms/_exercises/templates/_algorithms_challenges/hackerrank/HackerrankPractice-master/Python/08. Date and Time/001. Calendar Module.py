@@ -2,8 +2,8 @@
 # Score: 10
 
 
-_______ calendar
+_______ ca__
 
 
 m, d, y = map(i.., input().s..())
-print(calendar.day_name[calendar.weekday(y, m, d)].upper())
+print(ca__.d..[ca__.weekday(y, m, d)].upper())

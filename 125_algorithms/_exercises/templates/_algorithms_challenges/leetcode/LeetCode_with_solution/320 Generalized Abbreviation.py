@@ -38,7 +38,7 @@ c_ SolutionTLE(o..):
         :type word: str
         :rtype: List[str]
         """
-        r.. l..(set(dfs(word)))
+        r.. l..(s..(dfs(word)))
 
     ___ dfs  word):
         __ word n.. __ cache:

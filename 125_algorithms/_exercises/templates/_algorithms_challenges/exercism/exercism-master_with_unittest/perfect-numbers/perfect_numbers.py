@@ -7,7 +7,7 @@ ___ is_perfect(number):
 
 
 ___ factors(n):
-    r.. set(reduce(l...__add__, pairs_of_factors(n))) - set([n])
+    r.. s..(reduce(l...__add__, pairs_of_factors(n))) - s..([n])
 
 
 ___ pairs_of_factors(n):

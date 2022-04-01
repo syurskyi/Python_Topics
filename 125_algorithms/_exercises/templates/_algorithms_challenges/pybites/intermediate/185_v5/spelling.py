@@ -13,7 +13,7 @@ ___ load_words
         r.. {word.s...l.. ___ word __ f.readlines()}
 
 
-___ suggest_word(misspelled_word: s.., words: set = N..) __ s..:
+___ suggest_word(misspelled_word: s.., words: s.. = N..) __ s..:
     """Return a valid alternative word that best matches
        the entered misspelled word"""
     __ words __ N..

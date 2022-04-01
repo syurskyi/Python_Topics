@@ -8,8 +8,8 @@ c_ Solution(o..):
     ___ isRectangleCover  rectangles):
         __ n.. rectangles:
             r.. F..
-        x1, x2, y1, y2 = float('inf'), float('-inf'), float('inf'), float('-inf')
-        hashset = set()
+        x1, x2, y1, y2 = f__('inf'), f__('-inf'), f__('inf'), f__('-inf')
+        hashset = s..()
         area = 0
         ___ rect __ rectangles:
             x1 = m..(x1, rect[0])

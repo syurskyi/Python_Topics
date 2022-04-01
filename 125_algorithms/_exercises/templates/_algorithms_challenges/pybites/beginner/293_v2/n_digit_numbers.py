@@ -1,6 +1,6 @@
 ____ typing _______ List, TypeVar
 _______ math
-T = TypeVar('T', i.., float)
+T = TypeVar('T', i.., f__)
 
 
 ___ n_digit_numbers(numbers: List[T], n: i..) __ List[i..]:

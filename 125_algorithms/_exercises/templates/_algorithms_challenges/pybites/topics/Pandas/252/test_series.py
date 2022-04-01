@@ -11,7 +11,7 @@ _______ series __ se
 @p__.f..()
 ___ float_series
     """Returns a pandas Series containing floats"""
-    r.. pd.Series([float(n) / 1000 ___ n __ r..(0, 1001)])
+    r.. pd.Series([f__(n) / 1000 ___ n __ r..(0, 1001)])
 
 
 @p__.f..()
@@ -21,7 +21,7 @@ ___ alpha_series
     r.. pd.Series(dictionary)
 
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     (0, 0.000), (500, 0.500), (1000, 1.000)
 ])
 ___ test_return_at_index(float_series, arg, expected):
@@ -43,14 +43,14 @@ ___ test_get_slice_inclusive(float_series):
     ... l..(slce) __ 6
     ... slce[25] __ 0.025
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     (0, 0.000), (5, 0.005), (9, 0.009)
 ])
 ___ test_return_head(float_series, arg, expected):
     ... se.return_head(float_series, 10)[arg] __ expected
     ... ".head" __ i___.getsource(se.return_head)
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     (991, 0.991), (995, 0.995), (1000, 1.000)
 ])
 ___ test_return_tail(float_series, arg, expected):

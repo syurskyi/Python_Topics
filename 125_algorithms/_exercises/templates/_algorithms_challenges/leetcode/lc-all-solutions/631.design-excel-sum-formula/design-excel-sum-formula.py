@@ -11,7 +11,7 @@ c_ Excel(o..):
   ___ decodeCoord  r, c):
     r.. i..(r) - 1, o..(c) - o..("A") + 1
 
-  ___ set  r, c, v):
+  ___ s..  r, c, v):
     """
     :type r: int
     :type c: str

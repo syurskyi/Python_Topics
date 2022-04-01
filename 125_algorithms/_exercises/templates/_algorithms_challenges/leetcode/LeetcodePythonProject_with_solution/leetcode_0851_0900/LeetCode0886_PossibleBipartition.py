@@ -38,7 +38,7 @@ c_ Solution(o..):
         """
         hashmap    # dict
         ___ num __ r..(1, N+1):
-            hashmap[num] = set()
+            hashmap[num] = s..()
         ___ d __ dislikes:
             hashmap[d[0]].add(d[1])
             hashmap[d[1]].add(d[0])

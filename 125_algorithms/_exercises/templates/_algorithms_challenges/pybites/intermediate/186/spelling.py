@@ -17,7 +17,7 @@ ___ load_words
         r.. {word.s...l.. ___ word __ f.readlines()}
 
 
-___ suggest_word(misspelled_word: s.., words: set = N..) __ s..:
+___ suggest_word(misspelled_word: s.., words: s.. = N..) __ s..:
     """Return a valid alternative word that best matches
        the entered misspelled word"""
     __ words __ N..
@@ -26,7 +26,7 @@ ___ suggest_word(misspelled_word: s.., words: set = N..) __ s..:
 
     r.. m..(words,key=l.... x:SequenceMatcher(N..,misspelled_word,x).ratio())
     best_word = N..
-    highest_ratio = float("-inf")
+    highest_ratio = f__("-inf")
     ___ word __ words:
         ratio = SequenceMatcher(N..,misspelled_word,word).ratio()
         __ ratio >highest_ratio:

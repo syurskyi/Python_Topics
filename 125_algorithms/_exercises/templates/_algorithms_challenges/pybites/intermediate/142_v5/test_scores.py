@@ -3,7 +3,7 @@ _______ p__
 ____ scores _______ Player, calculate_score, get_winner
 
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     ([1, 3, 2, 5], 5),
     ([1, 4, 2, 5], 9),
     ([1, 1, 1, 1], 0),
@@ -14,7 +14,7 @@ ___ test_calculate_score(arg, expected):
     ... calculate_score(arg) __ expected
 
 
-@p__.mark.parametrize("arg", [
+@p__.m__.p..("arg", [
     [4, 5, 6, 'a'],
     [4, -5, -1, 2],
     [4, 7, 6, 2],

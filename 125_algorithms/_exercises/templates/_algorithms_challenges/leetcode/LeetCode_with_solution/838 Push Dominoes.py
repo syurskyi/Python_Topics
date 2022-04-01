@@ -49,13 +49,13 @@ c_ Solution:
         we will consider that a falling domino expends no additional force
         """
         n = l..(dominoes)
-        L = [float("inf") ___ i __ r..(n)]
-        R = [float("inf") ___ i __ r..(n)]
+        L = [f__("inf") ___ i __ r..(n)]
+        R = [f__("inf") ___ i __ r..(n)]
         ___ i __ r..(n-1, -1, -1):
             __ dominoes[i] __ "L":
                 L[i] = 0
             ____ dominoes[i] __ "R":
-                L[i] = float("inf")
+                L[i] = f__("inf")
             ____ i + 1 < n:
                 L[i] = L[i+1] + 1
 
@@ -63,14 +63,14 @@ c_ Solution:
             __ dominoes[i] __ "R":
                 R[i] = 0
             ____ dominoes[i] __ "L":
-                R[i] = float("inf")
+                R[i] = f__("inf")
             ____ i - 1 >= 0:
                 R[i] = R[i-1] + 1
 
         ret    # list
         ___ i __ r..(n):
             d = m..(R[i], L[i])
-            __ d __ float("inf"):
+            __ d __ f__("inf"):
                 cur = "."
             ____ R[i] __ L[i]:
                 cur = "."

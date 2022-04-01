@@ -13,7 +13,7 @@ c_ Solution(o..):
         maxLen = 0
         ___ num __ nums:
             __ num n.. __ hashmap:
-                hashset = set()
+                hashset = s..()
                 count = 0
                 num0 = num
                 w.... num0 != num o. count __ 0:

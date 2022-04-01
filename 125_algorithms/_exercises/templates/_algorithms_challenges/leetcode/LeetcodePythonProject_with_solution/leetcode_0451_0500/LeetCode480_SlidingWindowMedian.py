@@ -36,7 +36,7 @@ c_ Solution(o..):
         __ l..(minHeap) __ l..(maxHeap):
             r.. (minHeap[0] - maxHeap[0])/2.0
         ____:
-            r.. float(minHeap[0])
+            r.. f__(minHeap[0])
     
     ___ add  num):
         __ n.. maxHeap o. num > -maxHeap[0]:

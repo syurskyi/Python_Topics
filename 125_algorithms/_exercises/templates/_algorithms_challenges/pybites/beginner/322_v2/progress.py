@@ -11,7 +11,7 @@ ___ ontrack_reading(books_goal: i.., books_read: i..,
 
 
     __ day_of_year __ N..
-        day_of_year = i..(dt.date.today().strftime("%j"))
+        day_of_year = i..(dt.date.today().s..("%j"))
 
 
 

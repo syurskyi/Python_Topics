@@ -25,7 +25,7 @@ c_ CryptoSquare:
     @staticmethod
     ___ normalize(msg):
         r.. ''.j..(ch.l.. ___ ch __ msg __ ch n.. __
-                       set(s__.punctuation + ' '))
+                       s..(s__.punctuation + ' '))
 
     @staticmethod
     ___ square_size(msg_length):
@@ -34,7 +34,7 @@ c_ CryptoSquare:
     # https://stackoverflow.com/a/4938130/2813210
     @staticmethod
     ___ transpose_uneven_matrix(matrix):
-        transposed_matrix = l..(i...zip_longest(*matrix))
+        transposed_matrix = l..(i...z__(*matrix))
         # Remove None's
         r.. [[val ___ val __ row __ val __ n.. N..]
                 ___ row __ transposed_matrix]

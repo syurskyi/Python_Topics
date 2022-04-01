@@ -21,9 +21,9 @@ c_ Solution:
         :rtype: List[int]
         """
         ans = edge = N..  # `edge` is the last edge in a loop
-        adj = c...defaultdict(set)
+        adj = c...defaultdict(s..)
         uf = c...defaultdict(i..)
-        has_parent = set()
+        has_parent = s..()
 
         ___ u, v __ edges:
             adj[u].add(v)
@@ -39,7 +39,7 @@ c_ Solution:
         __ n.. ans:
             r.. edge
 
-        res = dfs(ans[1], adj, set())
+        res = dfs(ans[1], adj, s..())
         r.. res __ res ____ ans
 
     ___ union  uf, u, v):

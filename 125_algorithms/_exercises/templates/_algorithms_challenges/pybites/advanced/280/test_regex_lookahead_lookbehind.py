@@ -6,7 +6,7 @@ ____ regex_lookahead_lookbehind _______ (
     count_n_reps_or_n_chars_following,
     check_surrounding_chars,
 )
-@p__.mark.parametrize(
+@p__.m__.p..(
     "n, text, expected",
     [
         (1, "", 0),
@@ -22,7 +22,7 @@ ___ test_count_n_repetitions_digits(n, text, expected):
     ... count_n_repetitions(text, n=n) __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "n, text, expected",
     [
         (1, "a", 0),
@@ -43,7 +43,7 @@ ___ test_count_n_repetitions_chars(n, text, expected):
     ... count_n_repetitions(text, n=n) __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "n, text, expected",
     [
         (1, "Ä", 0),
@@ -58,7 +58,7 @@ ___ test_count_n_repetitions_chars(n, text, expected):
 ___ test_count_n_repetitions_unicode(n, text, expected):
     ... count_n_repetitions(text, n=n) __ expected
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "n, char, text, expected",
     [
         (1, "", "", 0),
@@ -71,7 +71,7 @@ ___ test_count_n_reps_or_n_chars_following_no_char(n, char, text, expected):
     ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "n, char, text, expected",
     [
         (1, "z", "", 0),
@@ -84,7 +84,7 @@ ___ test_count_n_reps_or_n_chars_following_no_containing_char(n, char, text, exp
     ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "n, char, text, expected",
     [
         (1, "z", "zz Don't count double!", 1),
@@ -102,7 +102,7 @@ ___ test_count_n_reps_or_n_chars_following_no_containing_char(n, char, text, exp
 )
 ___ test_count_n_reps_or_n_chars_following_mix(n, char, text, expected):
     ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
-@p__.mark.parametrize(
+@p__.m__.p..(
     "surrounding_chars, text, expected",
     [
         (["Z", "A"], "ZZZZZ", 3),

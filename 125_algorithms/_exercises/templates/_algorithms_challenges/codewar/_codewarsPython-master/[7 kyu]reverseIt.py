@@ -5,8 +5,8 @@ ___ reverse_it(data):
         r.. i..(s..(data)[::-1])
     ____ isi..(data,s..):
         r.. data[::-1]
-    ____ isi..(data,float):
-        r.. float(s..(data)[::-1])
+    ____ isi..(data,f__):
+        r.. f__(s..(data)[::-1])
 
     ____:
         r.. data

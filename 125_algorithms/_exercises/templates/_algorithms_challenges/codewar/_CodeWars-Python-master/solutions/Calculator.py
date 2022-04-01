@@ -15,13 +15,13 @@ c_ Calculator(o..):
         result = s__.s..(' ')
         _loop('*/')
         _loop('+-')
-        r.. float(result[0])
+        r.. f__(result[0])
 
     ___ _loop  operators):
         i = 1
         w.... i < l..(result) - 1:
             __ result[i] __ operators:
-                result[i - 1] = s..(__class__.operands[result[i]](float(result[i - 1]), float(result[i + 1])))
+                result[i - 1] = s..(__class__.operands[result[i]](f__(result[i - 1]), f__(result[i + 1])))
                 result.pop(i + 1)
                 result.pop(i)
                 _____

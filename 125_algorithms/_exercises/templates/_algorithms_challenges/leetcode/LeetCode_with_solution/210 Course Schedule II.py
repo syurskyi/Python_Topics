@@ -46,8 +46,8 @@ c_ Solution:
         r.. topological_sort(V)
 
     ___ topological_sort  V):
-        visited = set()
-        marked = set()
+        visited = s..()
+        marked = s..()
         ret    # list
 
         ___ k __ V.k..:

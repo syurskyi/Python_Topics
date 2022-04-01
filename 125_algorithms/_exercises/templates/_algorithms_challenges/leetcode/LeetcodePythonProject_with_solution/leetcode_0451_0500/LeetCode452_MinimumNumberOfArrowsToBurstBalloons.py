@@ -9,7 +9,7 @@ c_ Solution(o..):
         __ n.. points: r.. 0
         points.s..(key=l.... x: (x[1], x[0]))
         count = 0
-        maxLen = float('-inf')
+        maxLen = f__('-inf')
         ___ point __ points:
             __ point[0] > maxLen:
                 maxLen = point[1]

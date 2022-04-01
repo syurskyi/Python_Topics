@@ -54,8 +54,8 @@ c_ Solution:
         ___ x __ r..(m):
             ___ y __ r..(n):
                 __ G[x][y] __ VIRUS a.. n.. visited[x][y]:
-                    ex_virus.a..(set())
-                    spreading.a..(set())
+                    ex_virus.a..(s..())
+                    spreading.a..(s..())
                     walls.a..(0)
                     dfs(x, y, G, visited, ex_virus, spreading, walls)
 

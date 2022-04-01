@@ -17,7 +17,7 @@ c_ Solution(o..):
     #isBST, lower, upper, count
     ___ helper  root):
         __ n.. root:
-            r.. T.., float('inf'), float('-inf'), 0
+            r.. T.., f__('inf'), f__('-inf'), 0
         leftBST, leftLower, leftUpper, leftCount = helper(root.left)
         rightBST, rightLower, rightUpper, rightCount = helper(root.right)
         lower = m..(leftLower, root.val)

@@ -14,7 +14,7 @@ c_ Solution(o..):
         r.. cache[pointTo, key]
       __ n.. key:
         r.. 0
-      minDist = float("inf")
+      minDist = f__("inf")
       toChar = key[0]
       ___ i __ d[toChar]:
         cost = m..(length - abs(pointTo - i), abs(pointTo - i)) + 1

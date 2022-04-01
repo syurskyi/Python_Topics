@@ -57,7 +57,7 @@ c_ Solution:
         Better dp:
         F[i] = F[j] + j / i   # copy j / i times
         """
-        F = [[float('inf') ___ _ __ r..(n+1)] ___ _ __ r..(n+1)]
+        F = [[f__('inf') ___ _ __ r..(n+1)] ___ _ __ r..(n+1)]
         F[1][0] = 0
         F[1][1] = 1
         ___ i __ r..(2, n + 1):

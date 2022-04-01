@@ -44,30 +44,30 @@ ____ pythagorean_triplet _______ (
 
 c_ PythagoreanTripletTest(unittest.TestCase):
     ___ test_triplet1
-        ans = set([(3, 4, 5)])
+        ans = s..([(3, 4, 5)])
         assertEqual(primitive_triplets(4), ans)
 
     ___ test_triplet2
-        ans = set([(13, 84, 85), (84, 187, 205), (84, 437, 445),
+        ans = s..([(13, 84, 85), (84, 187, 205), (84, 437, 445),
                    (84, 1763, 1765)])
         assertEqual(primitive_triplets(84), ans)
 
     ___ test_triplet3
-        ans = set([(29, 420, 421), (341, 420, 541), (420, 851, 949),
+        ans = s..([(29, 420, 421), (341, 420, 541), (420, 851, 949),
                    (420, 1189, 1261), (420, 1739, 1789), (420, 4891, 4909),
                    (420, 11021, 11029), (420, 44099, 44101)])
         assertEqual(primitive_triplets(420), ans)
 
     ___ test_triplet4
-        ans = set([(175, 288, 337), (288, 20735, 20737)])
+        ans = s..([(175, 288, 337), (288, 20735, 20737)])
         assertEqual(primitive_triplets(288), ans)
 
     ___ test_range1
-        ans = set([(3, 4, 5), (6, 8, 10)])
+        ans = s..([(3, 4, 5), (6, 8, 10)])
         assertEqual(triplets_in_range(1, 10), ans)
 
     ___ test_range2
-        ans = set([(57, 76, 95), (60, 63, 87)])
+        ans = s..([(57, 76, 95), (60, 63, 87)])
         assertEqual(triplets_in_range(56, 95), ans)
 
     ___ test_is_triplet1

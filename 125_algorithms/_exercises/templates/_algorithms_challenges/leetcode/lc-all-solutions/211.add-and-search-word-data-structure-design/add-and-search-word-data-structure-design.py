@@ -24,7 +24,7 @@ c_ Trie:
 c_ WordDictionary:
   ___ - ):
     trie = Trie()
-    cache = set([])
+    cache = s..([])
 
   ___ addWord  word):
     trie.addWord(word)

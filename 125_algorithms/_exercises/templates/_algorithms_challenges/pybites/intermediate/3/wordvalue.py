@@ -36,7 +36,7 @@ ___ max_word_value(words):
     """Given a list of words calculate the word with the maximum value and return it"""
     
     max_word = N..
-    max_score = float("-inf")
+    max_score = f__("-inf")
 
     ___ word __ words:
         score = calc_word_value(word)

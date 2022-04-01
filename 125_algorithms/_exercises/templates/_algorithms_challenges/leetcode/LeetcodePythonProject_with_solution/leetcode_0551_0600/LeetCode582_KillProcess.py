@@ -13,13 +13,13 @@ c_ Solution(o..):
         """
         hashmap    # dict
         ___ p, pp __ z..(pid, ppid):
-            hashset = hashmap.get(pp, set())
+            hashset = hashmap.get(pp, s..())
             hashset.add(p)
             hashmap[pp] = hashset
         __ kill n.. __ hashmap:
             r.. [kill]
         queue = l..(hashmap[kill])
-        result = set([kill])
+        result = s..([kill])
         w.... queue:
             node = queue.pop(0)
             result.add(node)

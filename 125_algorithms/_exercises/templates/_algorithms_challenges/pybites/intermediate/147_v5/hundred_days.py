@@ -7,7 +7,7 @@ FRIDAY = 4
 
 
 ___ _get_weekdays(start_date):
-    day = relativedelta(days=+1)
+    day = relativedelta(d.._+1)
     current = start_date
     ___ x __ r..(100):
         y.. current

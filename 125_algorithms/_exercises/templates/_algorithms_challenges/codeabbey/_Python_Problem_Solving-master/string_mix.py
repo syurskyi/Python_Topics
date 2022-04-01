@@ -100,8 +100,8 @@ ___ mix(s1,s2):
                 #here try and except block helps program from terminating
                 ___
                     #convert the strings first element to float 
-                    check_int1 = float(res_string[j][0])
-                    check_int2 = float(res_string[j+1][0])
+                    check_int1 = f__(res_string[j][0])
+                    check_int2 = f__(res_string[j+1][0])
                     #if the variable is in integer form then proceed
                     __ check_int1.is_integer() a.. check_int2.is_integer
                         

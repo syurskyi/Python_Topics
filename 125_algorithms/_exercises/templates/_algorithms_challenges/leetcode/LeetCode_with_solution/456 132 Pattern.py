@@ -34,7 +34,7 @@ c_ Solution:
         :rtype: bool
         """
         stack    # list  # List[Interval]
-        mini = float('Inf')
+        mini = f__('Inf')
         ___ v __ nums:
             w.... stack a.. stack[-1][1] <= v:  # error when < (e.g. [-2, 1, 1])
                 stack.pop()

@@ -11,8 +11,8 @@ c_ Solution(o..):
         """
         __ n.. nums:
             r.. -1
-        first, fInd = float('-inf'), -1
-        second = float('-inf')
+        first, fInd = f__('-inf'), -1
+        second = f__('-inf')
         ___ i, num __ e..(nums):
             __ num > first:
                 second = first

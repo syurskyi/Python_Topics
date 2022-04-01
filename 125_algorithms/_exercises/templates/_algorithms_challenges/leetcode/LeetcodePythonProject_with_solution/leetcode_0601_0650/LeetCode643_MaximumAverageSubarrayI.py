@@ -12,13 +12,13 @@ c_ Solution(o..):
         """
         __ k <= 0: r.. 0
         sumVal = 0
-        maxVal = float('-inf')
+        maxVal = f__('-inf')
         ___ i, num __ e..(nums):
             sumVal += num
             __ i >= k-1:
                 maxVal = m..(maxVal, sumVal)
                 sumVal -= nums[i-k+1]
-        r.. float(maxVal)/k
+        r.. f__(maxVal)/k
     
     ___ test
         testCases = [

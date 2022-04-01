@@ -28,7 +28,7 @@ c_ Solution:
         :rtype: bool
         """
         m    # dict
-        mapped = set()  # case "ab", "aa"
+        mapped = s..()  # case "ab", "aa"
         ___ i __ x..(l..(s)):
             __ s[i] n.. __ m a.. t[i] n.. __ mapped:
                 m[s[i]] = t[i]

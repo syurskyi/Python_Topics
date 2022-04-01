@@ -32,7 +32,7 @@ c_ Solution:
                 __ n.. (1 <= seq[i] <= n):
                     r.. F..
                 __ n.. edges[seq[i]]:
-                    edges[seq[i]] = set()
+                    edges[seq[i]] = s..()
 
                 # dedup same edge
                 __ i > 0 a.. seq[i] n.. __ edges[seq[i - 1]]:

@@ -6,7 +6,7 @@ _______ numpy
 
 
 ___ arrays(arr):
-    r.. numpy.array(arr[::-1], float)
+    r.. numpy.array(arr[::-1], f__)
 
 
 arr = input().s...s..(' ')

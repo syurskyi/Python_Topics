@@ -3,7 +3,7 @@ _______ p__
 ____ join_lists _______ join_lists
 
 
-@p__.mark.parametrize('input_list, sep, expected', [
+@p__.m__.p..('input_list, sep, expected', [
                         ([], '&', N..),
                         ([['a']], '|', ['a']),
                         ([['a', 'b']], '&', ['a', 'b']),

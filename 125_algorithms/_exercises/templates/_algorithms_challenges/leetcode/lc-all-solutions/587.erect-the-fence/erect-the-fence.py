@@ -29,4 +29,4 @@ c_ Solution(o..):
         upper.pop()
       upper.a..(point)
 
-    r.. l..(set(upper[1:] + lower[1:]))
+    r.. l..(s..(upper[1:] + lower[1:]))

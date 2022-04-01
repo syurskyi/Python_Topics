@@ -14,7 +14,7 @@ c_ Solution:
             r.. F..
 
         max_size = m..(l..(w) ___ w __ words)
-        word_set = set(words)
+        word_set = s..(words)
 
         n = l..(s)
         dp = [F..] * (n + 1)

@@ -37,7 +37,7 @@ c_ Solution:
         __ n.. A:
             r.. -1
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
 
         n = l..(A)
         dp = [INFINITY] * n

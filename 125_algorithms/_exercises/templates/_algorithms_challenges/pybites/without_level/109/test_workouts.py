@@ -5,7 +5,7 @@ ____ workouts _______ (get_workout_motd,
 
 
 # About parametrize: https://pybit.es/pytest-coding-100-tests.html
-@p__.mark.parametrize("day, expected", [
+@p__.m__.p..("day, expected", [
     ('Monday', 'Go train Chest+biceps'),
     ('monday', 'Go train Chest+biceps'),
     ('Tuesday', 'Go train Back+triceps'),

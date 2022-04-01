@@ -35,7 +35,7 @@ c_ Solution(o..):
         # adjacency list
         queue    # list
         finished_courses    # list
-        prq_graph = {x: set() ___ x __ r..(numCourses)}
+        prq_graph = {x: s..() ___ x __ r..(numCourses)}
         ___ c, p __ prerequisites:
             prq_graph[c].add(p)
 

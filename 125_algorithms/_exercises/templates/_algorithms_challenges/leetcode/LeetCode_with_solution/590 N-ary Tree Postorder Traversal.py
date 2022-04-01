@@ -32,7 +32,7 @@ c_ Solution:
 
         ret = d..()
         stk = [root]
-        visited = set()
+        visited = s..()
         w.... stk:
             cur = stk.pop()
             ret.appendleft(cur.val)
@@ -50,7 +50,7 @@ c_ Solution:
             r.. ret
 
         stk = [root]
-        visited = set()
+        visited = s..()
         w.... stk:
             cur = stk[-1]
             __ cur __ visited:

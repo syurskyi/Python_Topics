@@ -13,7 +13,7 @@ c_ Solution(o..):
         hashmap    # dict
         res = ''
         freq = 0
-        banned = set(banned)
+        banned = s..(banned)
         i = 0
         ___ j __ r..(l..(paragraph)):
             c = paragraph[j]

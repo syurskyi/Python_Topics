@@ -3,7 +3,7 @@ ____ d__ _______ d__
 
 
 MEETING_HOURS = r..(6, 23)  # meet from 6 - 22 max
-TIMEZONES = set(pytz.all_timezones)
+TIMEZONES = s..(pytz.all_timezones)
 
 
 ___ within_schedule(utc, *timezones):

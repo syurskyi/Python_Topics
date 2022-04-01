@@ -10,7 +10,7 @@ c_ Solution(o..):
         :rtype: str
         """
         s = S
-        vowels = set(l..('aeiouAEIOU'))
+        vowels = s..(l..('aeiouAEIOU'))
         arr = s.s..(' ')
         res = ''
         ___ i __ r..(l..(arr)):

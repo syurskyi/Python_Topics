@@ -25,5 +25,5 @@ c_ Solution(o..):
           queue.a..(top.left)
         __ top.right:
           queue.a..(top.right)
-      ans.a..(float(s) / n)
+      ans.a..(f__(s) / n)
     r.. ans

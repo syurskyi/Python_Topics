@@ -18,7 +18,7 @@ c_ Solution(o..):
     ___ nut __ nuts:
       ans += 2 * dist(tree, nut)
 
-    ret = float("inf")
+    ret = f__("inf")
     ___ nut __ nuts:
       ret = m..(ret, ans - dist(nut, tree) + dist(nut, squirrel))
     r.. ret

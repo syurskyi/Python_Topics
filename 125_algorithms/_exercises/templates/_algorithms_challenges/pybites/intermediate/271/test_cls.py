@@ -17,7 +17,7 @@ re_classes = ['Match', 'Pattern', 'RegexFlag', 'Scanner']
 string_classes = ['Formatter', 'Template']
 
 
-@p__.mark.parametrize("mod, expected", [
+@p__.m__.p..("mod, expected", [
     (csv, csv_classes),
     (r__, random_classes),
     (__, re_classes),

@@ -7,7 +7,7 @@ c_ Solution(o..):
     :type s: str
     :rtype: str
     """
-    vowels = set(["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"])
+    vowels = s..(["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"])
     s = l..(s)
     start, end = 0, l..(s) - 1
     w.... start < end:

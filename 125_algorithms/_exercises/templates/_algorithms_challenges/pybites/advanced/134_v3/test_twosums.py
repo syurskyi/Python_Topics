@@ -19,7 +19,7 @@ ___ test_two_sums
     ... result __ expected
 
 
-@p__.mark.parametrize("target, expected", [
+@p__.m__.p..("target, expected", [
     (10093, (2, 36)),
     (7067, (27, 30)),
     (11261, (0, 36)),

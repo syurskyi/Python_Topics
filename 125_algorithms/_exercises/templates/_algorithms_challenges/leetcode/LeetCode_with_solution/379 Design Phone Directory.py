@@ -18,7 +18,7 @@ c_ PhoneDirectory(o..):
         @param maxNumbers - The maximum numbers that can be stored in the phone directory.
         :type maxNumbers: int
         """
-        released = set()
+        released = s..()
         l = maxNumbers
         i = 0
 

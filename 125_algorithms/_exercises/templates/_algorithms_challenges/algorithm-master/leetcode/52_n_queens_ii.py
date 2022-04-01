@@ -4,9 +4,9 @@ c_ Solution:
         :type n: int
         :rtype: int
         """
-        Xs = set()
-        DLs = set()  # left diagonal lines
-        DRs = set()  # right diagonal lines
+        Xs = s..()
+        DLs = s..()  # left diagonal lines
+        DRs = s..()  # right diagonal lines
         r.. divide_conquer(n, 0, 0, Xs, DLs, DRs)
 
     ___ divide_conquer  n, y, cnt, Xs, DLs, DRs):

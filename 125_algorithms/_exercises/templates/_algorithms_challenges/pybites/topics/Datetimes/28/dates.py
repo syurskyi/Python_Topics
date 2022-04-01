@@ -33,7 +33,7 @@ ___ convert_to_datetime(date_str):
 ___ get_month_most_posts(dates):
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
-    new_list = [logdate.strftime("%Y-%m") ___ logdate __ dates]
+    new_list = [logdate.s..("%Y-%m") ___ logdate __ dates]
     r.. c...Counter(new_list).most_common(1)[0][0]
 
 converted_dates = [convert_to_datetime(d) ___ d __ _get_dates()]

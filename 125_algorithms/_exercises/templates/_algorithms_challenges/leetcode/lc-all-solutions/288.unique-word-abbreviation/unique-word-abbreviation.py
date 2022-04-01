@@ -5,7 +5,7 @@ c_ ValidWordAbbr(o..):
     :type dictionary: List[str]
     """
     d    # dict
-    d.. = dictionary = set(dictionary)
+    d.. = dictionary = s..(dictionary)
     ___ word __ dictionary:
       wordLen = l..(word)
       __ wordLen > 2:

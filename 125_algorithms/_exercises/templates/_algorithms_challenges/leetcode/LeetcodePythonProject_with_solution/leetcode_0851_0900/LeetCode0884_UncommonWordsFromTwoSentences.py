@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         arr1 = A.s..(' ')
         arr2 = B.s..(' ')
-        hashset1, hashset2, hashset3 = set(), set(), set()
+        hashset1, hashset2, hashset3 = s..(), s..(), s..()
         ___ w __ arr1:
             __ w n.. __ hashset1:
                 hashset1.add(w)

@@ -78,7 +78,7 @@ ___ get_every_second_indexes(ser: pd.Series,
 
 
 
-pdseries = pd.Series([float(n) / 1000 ___ n __ r..(0, 1001)])
+pdseries = pd.Series([f__(n) / 1000 ___ n __ r..(0, 1001)])
 
 print(t..(pdseries.head(5)))
 print(pdseries.head(5)[4])

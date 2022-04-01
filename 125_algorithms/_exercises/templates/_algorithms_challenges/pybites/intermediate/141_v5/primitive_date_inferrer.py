@@ -70,7 +70,7 @@ ___ get_dates(dates):
 
     ___ dt __ dates:
         ___
-            result.a..(d__.strptime(dt, fmt).strftime('%Y-%m-%d'))
+            result.a..(d__.strptime(dt, fmt).s..('%Y-%m-%d'))
         ______ V..
             result.a..('Invalid')
 

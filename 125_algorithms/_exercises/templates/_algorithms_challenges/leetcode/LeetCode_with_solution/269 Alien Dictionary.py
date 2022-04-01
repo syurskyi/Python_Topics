@@ -51,8 +51,8 @@ c_ Solution(o..):
         :rtype: str
         """
         V = construct_graph(words)
-        visited = set()
-        pathset = set()
+        visited = s..()
+        pathset = s..()
         ret    # list
         ___ v __ V.k..:
             __ v n.. __ visited:

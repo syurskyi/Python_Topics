@@ -15,7 +15,7 @@ c_ Solution(o..):
         dfs(p.left, i + 1, j - 1, res)
         dfs(p.right, i + 1, j + 1, res)
 
-    leftMost = float("inf")
+    leftMost = f__("inf")
     ans    # list
     res = defaultdict(l..)
     dfs(root, 0, 0, res)

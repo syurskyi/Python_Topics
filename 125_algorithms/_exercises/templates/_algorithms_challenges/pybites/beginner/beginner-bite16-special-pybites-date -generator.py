@@ -48,12 +48,12 @@ ___ gen_special_pybites_dates_1
     w... T...
         days += 1
         __ days % 100 __ 0 o. days % 365 __ 0:
-            y.. PYBITES_BORN + t..(days=days)
+            y.. PYBITES_BORN + t..(d.._days)
 
 ___ gen_special_pybites_dates_2
 
-    plus365 = t..(days=365)
-    plus100 = t..(days=100)
+    plus365 = t..(d.._365)
+    plus100 = t..(d.._100)
     next365 = PYBITES_BORN + plus365
     next100 = PYBITES_BORN + plus100
     w... T...

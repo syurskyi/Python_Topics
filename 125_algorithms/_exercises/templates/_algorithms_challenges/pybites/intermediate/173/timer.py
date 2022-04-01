@@ -40,7 +40,7 @@ ___ add_todo(delay_time: s.., task: s..,
         ____:
             _____
         
-    r.. f"{task} @ {start_time + t..(days=days, hours=hours, minutes=minutes, seconds=seconds)}"
+    r.. f"{task} @ {start_time + t..(d.._days, hours=hours, minutes=minutes, seconds=seconds)}"
 
 
 __ _______ __ _______

@@ -12,7 +12,7 @@ ___ primitive_triplets(nbr):
     a = [reduce(mul, p) ___ p __ product(*args)]
     a.s..()
     factors = [(m, n) ___ m, n __ z..(r..(a), a) __ m > n]
-    ts = set()
+    ts = s..()
     ___ m, n __ factors:
         ts.update([t..(s..([nbr, m * m - n * n, m * m + n * n]))])
     r.. ts
@@ -26,7 +26,7 @@ ___ is_triplet(t):
 
 
 ___ triplets_in_range(m, n):
-    t = set()
+    t = s..()
     ___ a __ r..(m, n + 1):
         ___ b __ r..(a + 1, n + 1):
             c = i..(sqrt(a * a + b * b) + 0.5)

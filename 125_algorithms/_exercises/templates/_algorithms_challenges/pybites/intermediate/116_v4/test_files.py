@@ -9,7 +9,7 @@ ____ files _______ get_files
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 
-@p__.mark.parametrize("byte_sizes, size_in_kb, expected", [
+@p__.m__.p..("byte_sizes, size_in_kb, expected", [
     ([800, 1000, 1200], 1, ['1200']),
     ([1024, 1025], 1, ['1024', '1025']),
     ([1024, 1025], 1.026, []),

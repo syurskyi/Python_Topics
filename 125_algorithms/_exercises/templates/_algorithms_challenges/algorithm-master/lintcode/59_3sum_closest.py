@@ -8,7 +8,7 @@ c_ Solution:
         __ n.. nums o. l..(nums) < 3 o. target __ N..
             r.. -1
 
-        ans = INF = float('inf')
+        ans = INF = f__('inf')
         n = l..(nums)
         nums.s..()
 

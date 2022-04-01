@@ -45,7 +45,7 @@ c_ Solution:
             r.. F..
         __ A __ B:
             # find dup
-            seen = set()
+            seen = s..()
             ___ a __ A:
                 __ a __ seen:
                     r.. T..

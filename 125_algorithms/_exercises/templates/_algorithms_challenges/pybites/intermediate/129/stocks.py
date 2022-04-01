@@ -21,9 +21,9 @@ ___ _cap_str_to_mln_float(cap):
     ____:
         cap = cap.lstrip("$")
         __ cap[-1] __ "B":
-            r.. float(cap.rstrip("B")) * 1000
+            r.. f__(cap.rstrip("B")) * 1000
         ____:
-            r.. float(cap.rstrip("M"))
+            r.. f__(cap.rstrip("M"))
 
 
 ___ get_industry_cap(industry):

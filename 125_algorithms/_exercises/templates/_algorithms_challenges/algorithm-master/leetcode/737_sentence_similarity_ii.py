@@ -83,7 +83,7 @@ c_ Solution2:
         __ l..(words1) != l..(words2):
             r.. F..
 
-        simils = c...defaultdict(set)
+        simils = c...defaultdict(s..)
 
         ___ a, b __ pairs:
             simils[a].add(b)
@@ -93,7 +93,7 @@ c_ Solution2:
             a = words1[i]
             b = words2[i]
 
-            __ a != b a.. n.. dfs(a, b, simils, set()):
+            __ a != b a.. n.. dfs(a, b, simils, s..()):
                 r.. F..
 
         r.. T..

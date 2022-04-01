@@ -33,7 +33,7 @@ ___ rent_or_stream(
     month_rental = defaultdict(i..)
     return_dict = defaultdict(s..)
     ___ movie __ renting_history:
-        month_rental[getattr(movie,'date').strftime("%Y-%m")] += getattr(movie,'price')
+        month_rental[getattr(movie,'date').s..("%Y-%m")] += getattr(movie,'price')
     ___ total_month __ s..(month_rental):
         __ month_rental[total_month] > STREAMING_COST_PER_MONTH:
             return_dict[total_month] = STREAM

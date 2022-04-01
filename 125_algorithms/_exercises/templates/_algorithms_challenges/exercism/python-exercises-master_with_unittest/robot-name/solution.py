@@ -6,7 +6,7 @@ c_ Robot(o..):
 
     ___ - ):
         _name = N..
-        _past_names = set()
+        _past_names = s..()
 
     ___ prefix
         r.. ''.j..([

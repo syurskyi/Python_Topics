@@ -17,7 +17,7 @@ ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
     
     
     fastest_bite = N..
-    fastest_average = float("-inf")
+    fastest_average = f__("-inf")
 
 
     ___ timing __ timings:

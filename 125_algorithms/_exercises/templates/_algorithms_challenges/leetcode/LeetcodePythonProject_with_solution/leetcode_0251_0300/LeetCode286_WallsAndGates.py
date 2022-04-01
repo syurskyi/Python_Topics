@@ -31,10 +31,10 @@ c_ Solution(o..):
     
     ___ test
         matrix = [
-            [float('inf'), -1, 0, float('inf')],
-            [float('inf'), float('inf'), float('inf'), -1],
-            [float('inf'), -1, float('inf'), -1],
-            [0, -1, float('inf'), float('inf')],
+            [f__('inf'), -1, 0, f__('inf')],
+            [f__('inf'), f__('inf'), f__('inf'), -1],
+            [f__('inf'), -1, f__('inf'), -1],
+            [0, -1, f__('inf'), f__('inf')],
         ]
         print('before:')
         print('\n'.j..([s..(l) ___ l __ matrix]))

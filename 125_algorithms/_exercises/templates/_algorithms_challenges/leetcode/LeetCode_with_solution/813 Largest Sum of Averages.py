@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ largestSumOfAverages  A: List[i..], K: i..) __ float:
+    ___ largestSumOfAverages  A: List[i..], K: i..) __ f__:
         """
         Memoized Backtracking + Prefix sum
         My first hunch is correct
@@ -54,14 +54,14 @@ c_ Solution:
         make A[:l] k groups
         """
         __ l < k:
-            r.. -float('inf')
+            r.. -f__('inf')
 
         __ (l, k) n.. __ F:
             __ k __ 1:
                 ret = prefix_sum[l] / l
             ____:
                 n = l..(A)
-                ret = -float('inf')
+                ret = -f__('inf')
                 ___ j __ r..(l-1, -1, -1):
                     trail = (prefix_sum[l] - prefix_sum[j]) / (l - j)
                     ret = m..(

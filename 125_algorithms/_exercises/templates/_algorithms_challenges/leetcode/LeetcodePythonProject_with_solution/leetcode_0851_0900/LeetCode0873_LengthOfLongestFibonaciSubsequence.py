@@ -10,7 +10,7 @@ c_ Solution(o..):
         :rtype: int
         """
         hashmap    # dict
-        hashset = set(A)
+        hashset = s..(A)
         ___ j __ r..(l..(A)):
             ___ i __ r..(j):
                 __ A[j]-A[i] < A[i] a.. A[j]-A[i] __ hashset:

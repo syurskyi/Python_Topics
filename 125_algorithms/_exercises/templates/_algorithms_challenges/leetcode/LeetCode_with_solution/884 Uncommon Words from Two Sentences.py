@@ -65,7 +65,7 @@ c_ Solution:
         """
         set difference
         """
-        s_A, s_B = set(A.s..()), set(B.s..())
+        s_A, s_B = s..(A.s..()), s..(B.s..())
         r.. l..(
             (s_A - s_B) | (s_B - s_A)
         )

@@ -10,9 +10,9 @@ c_ Solution(o..):
         :type words: List[str]
         :rtype: List[str]
         """
-        set1 = set(l..('qwertyuiop'))
-        set2 = set(l..('asdfghjkl'))
-        set3 = set(l..('zxcvbnm'))
+        set1 = s..(l..('qwertyuiop'))
+        set2 = s..(l..('asdfghjkl'))
+        set3 = s..(l..('zxcvbnm'))
         sets = (set1, set2, set3)
         result    # list
         ___ word __ words:

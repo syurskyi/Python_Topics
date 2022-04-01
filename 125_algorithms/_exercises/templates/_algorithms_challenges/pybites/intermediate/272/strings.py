@@ -10,7 +10,7 @@ ___ common_words(sentence1: List[s..], sentence2: List[s..]) __ List[s..]:
             If there are duplicate words in the results, just choose one word. 
             Returned words should be sorted by word's length.
     """
-    common = set()
+    common = s..()
     sentence2 = l..(map(l.... x: x.l.., sentence2))
     ___ word __ sentence1:
         word_lower = word.l..

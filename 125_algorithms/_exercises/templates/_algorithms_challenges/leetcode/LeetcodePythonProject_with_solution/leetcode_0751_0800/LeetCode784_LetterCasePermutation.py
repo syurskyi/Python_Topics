@@ -10,7 +10,7 @@ c_ Solution(o..):
         :rtype: List[str]
         """
         s = S
-        res = set()
+        res = s..()
         helper(s, 0, '', res)
         r.. l..(res)
     

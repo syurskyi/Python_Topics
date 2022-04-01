@@ -3,7 +3,7 @@
 
 
 n = i..(input())
-s = set(map(i.., input().s..()))
+s = s..(map(i.., input().s..()))
 ___ i __ r..(i..(input())):
     s__ = input().s..
     __ s__[0] __ 'pop':

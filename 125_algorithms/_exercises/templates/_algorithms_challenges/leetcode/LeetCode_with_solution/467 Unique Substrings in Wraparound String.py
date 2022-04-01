@@ -72,7 +72,7 @@ c_ Solution:
         __ n.. p:
             r.. 0
 
-        ret = set()
+        ret = s..()
         i = 0
         w.... i < l..(p):
             cur = [p[i]]

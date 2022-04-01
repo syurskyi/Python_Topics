@@ -4,7 +4,7 @@ ____ dataclasses _______ dataclass, field
 ____ s__ _______ punctuation
 ____ typing _______ List, Set, Tuple
 
-STOPWORDS: set = {
+STOPWORDS: s.. = {
     "she's", "wasn", "through", "won", "that'll", "his", "once", "this",
     "you", "ll", "has", "because", "m", "ours", "doing", "any", "aren't",
     "they", "shouldn't", "being", "out", "is", "our", "it", "don", "had",

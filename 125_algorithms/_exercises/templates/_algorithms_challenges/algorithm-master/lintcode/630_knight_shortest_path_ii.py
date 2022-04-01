@@ -51,7 +51,7 @@ c_ Solution:
         __ n.. G o. n.. G[0] o. G[0][0] __ 1:
             r.. -1
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
 
         m, n = l..(G), l..(G[0])
         dp = [[INFINITY] * 3 ___ _ __ r..(m)]

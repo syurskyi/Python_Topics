@@ -47,4 +47,4 @@ c_ Solution:
 
 
 __ _______ __ _______
-    ... set(Solution().findDuplicates([4,3,2,7,8,2,3,1])) __ set([2,3])
+    ... s..(Solution().findDuplicates([4,3,2,7,8,2,3,1])) __ s..([2,3])

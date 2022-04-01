@@ -1,5 +1,5 @@
 ___ test_jackpot(result):
-    __ l..(set(result)) __ 1:
+    __ l..(s..(result)) __ 1:
         r.. T..
     ____:
         r.. F..

@@ -10,7 +10,7 @@ c_ Solution:
 
         _min = l..(s)
         queue = [s]
-        visited = set([s])
+        visited = s..([s])
 
         """
         bfs

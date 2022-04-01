@@ -26,10 +26,10 @@ ___ verify_board(inp):
     __ n.. a..(l..(r) __ rowlen ___ r __ inp):
         r.. ValueError("Invalid board")
     # Unknown character in board
-    cset = set()
+    cset = s..()
     ___ r __ inp:
         cset.update(r)
-    __ cset - set('+- *|'):
+    __ cset - s..('+- *|'):
         r.. ValueError("Invalid board")
     # Borders not as expected
     __ any(inp[i1] != '+' + '-' * (rowlen - 2) + '+'

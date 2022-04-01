@@ -27,7 +27,7 @@ c_ Solution:
         Dijkstra's algorithm
         """
         G = defaultdict(d..)
-        reach_time = [float('inf') ___ _ __ r..(N + 1)]
+        reach_time = [f__('inf') ___ _ __ r..(N + 1)]
         ___ u, v, w __ times:
             G[u][v] = w
 
@@ -42,7 +42,7 @@ c_ Solution:
                         heapq.heappush(h, (t + w, d))
 
         ret = m..(reach_time[1:])  # notice reach_time[0] is dummy
-        __ ret __ float('inf'):
+        __ ret __ f__('inf'):
             r.. -1
         r.. ret
 

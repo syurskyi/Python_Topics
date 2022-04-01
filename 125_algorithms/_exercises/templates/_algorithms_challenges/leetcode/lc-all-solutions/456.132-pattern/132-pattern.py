@@ -4,7 +4,7 @@ c_ Solution(o..):
     :type nums: List[int]
     :rtype: bool
     """
-    ak = float("-inf")
+    ak = f__("-inf")
     stack    # list
     ___ num __ r..(nums):
       __ ak > num:

@@ -30,7 +30,7 @@ ___ get_most_popular_talks_by_views(videos):
 
 ___ _like_ratio(vid):
     metrics = vid.metrics
-    r.. -(float(metrics['likeCount']) - float(metrics['dislikeCount'])) / float(metrics['viewCount'])
+    r.. -(f__(metrics['likeCount']) - f__(metrics['dislikeCount'])) / f__(metrics['viewCount'])
 
 
 ___ get_most_popular_talks_by_like_ratio(videos):

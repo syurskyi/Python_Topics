@@ -30,6 +30,6 @@ ___ convert_to_datetime(date_str):
 ___ get_month_most_posts(dates):
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
-    l = [d__.strftime(d, '%Y-%m') ___ d __ dates]
+    l = [d__.s..(d, '%Y-%m') ___ d __ dates]
     most_freq_month = Counter(l).most_common(1)[0][0]
     r.. most_freq_month

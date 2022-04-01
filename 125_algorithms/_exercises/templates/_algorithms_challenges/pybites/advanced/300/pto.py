@@ -1,4 +1,4 @@
-_______ calendar
+_______ ca__
 ____ d__ _______ date
 ____ dateutil.relativedelta _______ relativedelta,FR,MO
 
@@ -13,8 +13,8 @@ FEDERAL_HOLIDAYS = (
     date(2020, 11, 26),
     date(2020, 12, 25),
 )
-WFH = (calendar.TUESDAY, calendar.WEDNESDAY)
-WEEKENDS = (calendar.SATURDAY, calendar.SUNDAY)
+WFH = (ca__.TUESDAY, ca__.WEDNESDAY)
+WEEKENDS = (ca__.SATURDAY, ca__.SUNDAY)
 AT_HOME = WFH + WEEKENDS
 HOURS = 8
 
@@ -63,7 +63,7 @@ ___ four_day_weekends(*args,
 
         w.... current.year __ year:
             monday = current + relativedelta(weekday=MO)
-            thursday = current - relativedelta(days=1)
+            thursday = current - relativedelta(d.._1)
             __ thursday.year __ year  a.. thursday n.. __ FEDERAL_HOLIDAYS:
                 workday_dates.a..(thursday)
 
@@ -91,7 +91,7 @@ ___ four_day_weekends(*args,
         
 
 
-        last_thursday = current - relativedelta(days=1)
+        last_thursday = current - relativedelta(d.._1)
         __ last_thursday.year __ year a.. last_thursday n.. __ FEDERAL_HOLIDAYS:
             workday_dates.a..(last_thursday)
         workdays = l..(workday_dates)

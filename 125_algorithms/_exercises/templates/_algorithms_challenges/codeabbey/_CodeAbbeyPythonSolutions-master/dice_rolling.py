@@ -6,7 +6,7 @@ ___ get_dice_point(value):
     results.a..(value)
 
 ___ i __ r..(amount_values):
-    value = float(input())
+    value = f__(input())
     get_dice_point(value)
 
 print(*results)

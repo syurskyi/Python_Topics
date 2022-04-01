@@ -10,7 +10,7 @@ c_ Solution(o..):
         :type R: int
         :rtype: int
         """
-        primes = set([2, 3, 5, 7, 11, 13, 17, 19])
+        primes = s..([2, 3, 5, 7, 11, 13, 17, 19])
         cnt = 0
         ___ num __ r..(L, R+1):
             bits = 0

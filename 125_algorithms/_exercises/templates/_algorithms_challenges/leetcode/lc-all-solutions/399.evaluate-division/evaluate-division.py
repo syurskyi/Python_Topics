@@ -17,7 +17,7 @@ c_ Graph(o..):
     __ node1 __ node2:
       r.. 1.0
     queue = d..([(node1, 1)])
-    visited = set([node1.label])
+    visited = s..([node1.label])
     w.... queue:
       node, ans = queue.popleft()
       ___ nbr __ node.nbrs:
@@ -36,7 +36,7 @@ c_ Graph(o..):
     __ div != 0:
       node2.nbrs[node1.label] = 1.0 / div
     ____:
-      node2.nbrs[node1.label] = float("inf")
+      node2.nbrs[node1.label] = f__("inf")
 
 
 c_ GraphNode(o..):

@@ -12,8 +12,8 @@ ___ calculate_total(books, price_so_far=0.):
     __ n.. books:
         r.. price_so_far
 
-    groups = l..(set(books))
-    min_price = float('inf')
+    groups = l..(s..(books))
+    min_price = f__('inf')
 
     ___ i __ r..(l..(groups)):
 

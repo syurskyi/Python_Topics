@@ -33,7 +33,7 @@ c_ Solution:
     # Write your code here
     __ l..(board) __ 0:
       r..
-    regions = set([])
+    regions = s..([])
     n, m = l..(board), l..(board[0])
     uf = UnionFind(l..(board[0]), l..(board))
     directions = {"u": (-1, 0), "d": (1, 0), "l": (0, -1), "r": (0, 1)}

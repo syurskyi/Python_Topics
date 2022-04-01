@@ -15,10 +15,10 @@ c_ Employee:
     first_name: s..
     last_name: s..
     days_per_week: i..
-    hours_per_day: float
-    wage: float
+    hours_per_day: f__
+    wage: f__
 
-    ___ _rounder  number: float, places: i..) __ s..:
+    ___ _rounder  number: f__, places: i..) __ s..:
         """Rounds a number the specified number of places
 
         :param number: Float of number of round

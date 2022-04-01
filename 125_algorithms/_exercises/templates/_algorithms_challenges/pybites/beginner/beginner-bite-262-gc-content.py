@@ -39,7 +39,7 @@ ___ calculate_gc_content_1st_solution(sequence):
         __ v __ F..:
             counts[k] = 0
 
-    result = float("{0:.2f}".f..(((counts['g'] + counts['c']) / (counts['a'] + counts['c'] + counts['g'] + counts['t'])) * 100))
+    result = f__("{0:.2f}".f..(((counts['g'] + counts['c']) / (counts['a'] + counts['c'] + counts['g'] + counts['t'])) * 100))
     ___
         r.. result
     ______:

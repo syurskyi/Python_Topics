@@ -30,6 +30,6 @@ ___ check_equality(list1, list2):
         __ s..(list1) __ s..(list2):
             equality_number += 1
         # SAME_UNORDERED_DEDUPED
-        __ set(list1) __ set(list2):
+        __ s..(list1) __ s..(list2):
             equality_number += 1
     r.. Equality(equality_number)

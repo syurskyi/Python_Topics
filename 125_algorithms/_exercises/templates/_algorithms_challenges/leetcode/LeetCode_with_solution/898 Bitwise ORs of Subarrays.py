@@ -51,8 +51,8 @@ c_ Solution:
         The increasing part is by having one more 1 in the bit of any 32 bit of int
         then F[i][j] is at most O(32)
         """
-        ret = set()
-        cur = set()  # F[0][i]
+        ret = s..()
+        cur = s..()  # F[0][i]
         ___ a __ A:
             cur = {a | e ___ e __ cur} | {a}
             ret |= cur

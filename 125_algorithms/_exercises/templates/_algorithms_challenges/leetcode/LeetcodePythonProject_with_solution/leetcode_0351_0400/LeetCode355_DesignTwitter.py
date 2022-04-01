@@ -28,7 +28,7 @@ c_ Twitter(o..):
         :rtype: void
         """
         __ userId n.. __ following:
-            following[userId] = set([userId])
+            following[userId] = s..([userId])
         tweet_id += 1
         __ userId __ latestTweets:
             prevTweet = latestTweets[userId]
@@ -79,7 +79,7 @@ c_ Twitter(o..):
         __ followerId __ following:
             following[followerId].add(followeeId)
         ____:
-            following[followerId] = set([followeeId])
+            following[followerId] = s..([followeeId])
 
     ___ unfollow  followerId, followeeId):
         """

@@ -48,5 +48,5 @@ if __name__ == "__main__":
     external_storage_manager = LocalStorageManager()
     journal.save(external_storage_manager, "my_journal")
 
-    external_storage_manager = ExternalStorageManager()
-    journal.save(external_storage_manager, "my_journal")
+    # external_storage_manager = ExternalStorageManager()
+    # journal.save(external_storage_manager, "my_journal")

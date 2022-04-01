@@ -17,8 +17,8 @@ c_ Solution(o..):
         :rtype: int
         """
         __ n.. root: r.. -1
-        first = float('inf')
-        second = float('inf')
+        first = f__('inf')
+        second = f__('inf')
         queue = [root]
         w.... queue:
             node = queue.pop(0)
@@ -31,7 +31,7 @@ c_ Solution(o..):
                 queue.a..(node.left)
             __ node.right:
                 queue.a..(node.right)
-        r.. second __ second != float('inf') ____ -1
+        r.. second __ second != f__('inf') ____ -1
     
     ___ test
         testCases = [

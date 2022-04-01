@@ -25,7 +25,7 @@ expected_return = [
 ]
 
 
-@p__.mark.parametrize('actual, expected',
+@p__.m__.p..('actual, expected',
                          z..(actual_return, expected_return)
                          )
 ___ test_top_python_questions(actual, expected):

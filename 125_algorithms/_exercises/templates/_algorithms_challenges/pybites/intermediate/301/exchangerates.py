@@ -21,7 +21,7 @@ ___ get_all_days(start_date: date, end_date: date) __ List[date]:
 
     ___ _ __ r..(date_diff +1):
         dates.a..(current_date)
-        current_date = current_date + t..(days=1)
+        current_date = current_date + t..(d.._1)
 
     r.. dates
 
@@ -37,12 +37,12 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
         previous_date = current_date
         __ current_date n.. __ dates_open_lookup:
             w.... previous_date n.. __ dates_open_lookup:
-                previous_date = previous_date - t..(days=1)
+                previous_date = previous_date - t..(d.._1)
             dates[current_date] = previous_date
-            current_date = current_date + t..(days=1)
+            current_date = current_date + t..(d.._1)
         ____:
             dates[current_date] = current_date
-            current_date = current_date + t..(days=1)
+            current_date = current_date + t..(d.._1)
 
     r.. dates
 
@@ -65,7 +65,7 @@ ___ exchange_rates(
     result    # dict
     ___ key, value __ dates.i..:
         temp_dict    # dict
-        date_string = value.strftime("%Y-%m-%d")
+        date_string = value.s..("%Y-%m-%d")
         temp_dict["Base Date"] = value
         temp_dict.update(data["rates"][date_string])
         result[key] = temp_dict #data["rates"][date_string]

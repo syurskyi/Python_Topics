@@ -23,9 +23,9 @@ ___ _cap_str_to_mln_float(cap):
     ____:
         cap = cap.s...lstrip('$')
         __ cap[-1] __ 'M':
-            r.. float(cap[:-1])
+            r.. f__(cap[:-1])
         __ cap[-1] __ 'B':
-            r.. float(cap[:-1]) * 1000.0
+            r.. f__(cap[:-1]) * 1000.0
         r.. BaseException('Oh no! error in cap value.')
 
 

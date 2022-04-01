@@ -59,7 +59,7 @@ c_ SnakeGame:
 
         pos = [(0, 0)]
         snake = c...d..(pos)
-        body = set(pos)
+        body = s..(pos)
 
         dn = {
             'U': (-1,  0),

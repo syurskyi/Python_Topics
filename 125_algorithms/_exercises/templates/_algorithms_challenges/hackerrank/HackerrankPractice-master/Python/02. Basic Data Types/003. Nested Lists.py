@@ -3,7 +3,7 @@
 
 
 ___ secondLowestGrade(classList):
-    secondLowestScore = s..(set(_[1] ___ _ __ classList))[1]
+    secondLowestScore = s..(s..(_[1] ___ _ __ classList))[1]
     result = s..([_[0] ___ _ __ classList __ _[1] __ secondLowestScore])
     r.. result
 
@@ -11,5 +11,5 @@ ___ secondLowestGrade(classList):
 numberOfStudents = i..(input())
 classList    # list
 ___ i __ r..(numberOfStudents):
-    classList.a..([s..(input()), float(input())])
+    classList.a..([s..(input()), f__(input())])
 print('\n'.j..(secondLowestGrade(classList)))

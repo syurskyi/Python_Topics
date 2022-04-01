@@ -26,7 +26,7 @@ c_ Solution:
         n = l..(A)
         S = [0] * (n + 1)
         queue = d..()
-        ans = float('-inf')
+        ans = f__('-inf')
 
         ___ i __ r..(1, n + 1):
             S[i] = S[i - 1] + A[i - 1]

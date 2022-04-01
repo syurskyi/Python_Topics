@@ -39,7 +39,7 @@ ___ letters_series
     r.. pd.Series(l..(s__.ascii_lowercase))
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "arg, expected",
     [
         (("add", 5), [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]),
@@ -65,7 +65,7 @@ ___ test_series_simple_math(int_series_small, arg, expected):
     )
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "arg, expected",
     [
         ("add", [1.0, "nan", 5.0, "nan", 9.0, "nan", "nan"]),
@@ -85,7 +85,7 @@ ___ test_complex_series_maths(
     ... result __ expected
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "arg, expected",
     [
         (

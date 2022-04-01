@@ -16,7 +16,7 @@ c_ Solution(o..):
         ___ i __ r..(n):
             days[flowers[i]-1] = i+1
         left, right = 0, k+1
-        res = float('inf')
+        res = f__('inf')
         ___ i __ r..(n):
             __ right >= n: _____
             __ days[i] __ days[right] a.. i __ right:
@@ -24,7 +24,7 @@ c_ Solution(o..):
             __ days[i] < days[left] o. days[i] < days[right]:
                 left = i
                 right = k+1+i
-        r.. res __ res != float('inf') ____ -1
+        r.. res __ res != f__('inf') ____ -1
     
     ___ test
         testCases = [

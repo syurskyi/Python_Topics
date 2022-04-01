@@ -14,19 +14,19 @@ c_ Solution(o..):
         __ n.. nums o. nums[-1] __ -1: r.. []
         res    # list
         n = l..(nums)
-        dp = [float('inf')]*n
+        dp = [f__('inf')]*n
         dp[-1] = nums[-1]
         pos = [-1]*n
         ___ i __ r..(n-2, -1, -1):
             __ nums[i] __ -1:
                 _____
             ___ j __ r..(i+1, m..(i+B, n-1)+1):
-                __ dp[j] __ float('inf'):
+                __ dp[j] __ f__('inf'):
                     _____
                 __ nums[i]+dp[j] < dp[i]:
                     dp[i] = nums[i]+dp[j]
                     pos[i] = j
-        __ dp[0] __ float('inf'):
+        __ dp[0] __ f__('inf'):
             r.. res
         ind = 0
         w.... ind != -1:

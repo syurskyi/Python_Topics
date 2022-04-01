@@ -2,5 +2,5 @@
 # Score: 10
 
 
-a = set(input().s..())
-print(a..(a > set(input().s..()) ___ _ __ r..(i..(input()))))
+a = s..(input().s..())
+print(a..(a > s..(input().s..()) ___ _ __ r..(i..(input()))))

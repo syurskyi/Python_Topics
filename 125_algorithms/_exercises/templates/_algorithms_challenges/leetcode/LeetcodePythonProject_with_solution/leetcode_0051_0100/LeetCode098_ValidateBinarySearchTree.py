@@ -19,7 +19,7 @@ c_ Solution(o..):
         """
         __ n.. root: r.. T..
         stack    # list
-        prev = float('-inf')
+        prev = f__('-inf')
         node = root
         w.... node:
             stack.a..(node)

@@ -21,4 +21,4 @@ ___ convert_eu_to_us_date(date):
        the tests check if a ValueError is raised for invalid day/month/year
        ranges (no need to code this, datetime does this out of the box)"""
 
-    r.. d__.strptime(date,"%d/%m/%Y").strftime("%m/%d/%Y")
+    r.. d__.strptime(date,"%d/%m/%Y").s..("%m/%d/%Y")

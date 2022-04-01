@@ -16,11 +16,11 @@ ___ get_missing_dates(dates):
     ___ i __ r..(l..(dates) - 1):
         date = dates[i]
 
-        next_date = date + t..(days=1)
+        next_date = date + t..(d.._1)
 
         w.... next_date != dates[i +1]:
             missing.a..(next_date)
-            next_date += t..(days=1)
+            next_date += t..(d.._1)
     
 
         

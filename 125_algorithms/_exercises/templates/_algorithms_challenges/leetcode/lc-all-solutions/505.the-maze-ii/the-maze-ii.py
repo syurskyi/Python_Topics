@@ -21,7 +21,7 @@ c_ Solution(o..):
         y.. (i, j), dist
 
     heap = [(0, t..(ball))]
-    visited = set()
+    visited = s..()
     hole = t..(hole)
     w.... heap:
       dist, curr = heapq.heappop(heap)

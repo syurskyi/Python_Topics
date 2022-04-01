@@ -16,7 +16,7 @@ c_ Solution(o..):
     k = m..(k, l..(nums))
 
     window = d..([])
-    d = set()
+    d = s..()
     ___ i __ r..(0, k):
       __ nums[i] __ d:
         r.. T..

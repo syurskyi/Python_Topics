@@ -25,7 +25,7 @@ ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
         
         bite_number = test_split[0]
         bite_tests = i..(test_split[2])
-        bite_time = float(test_split[5])
+        bite_time = f__(test_split[5])
         fastest_bite.a..([bite_number, (bite_time/bite_tests)])
 
     r.. s..(fastest_bite, key=l.... x: x[1])[0][0]

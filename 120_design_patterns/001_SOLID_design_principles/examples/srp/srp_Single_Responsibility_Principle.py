@@ -39,9 +39,8 @@ j.add_entry("I ate a bug.")
 print(f"Journal entries:\n{j}\n")
 
 p = PersistenceManager()
-file = r'C:\Users\syurskyi\Dropbox\nuke\.nuke\example\PYTHON_EXAMPLE\060_Design_Patterns\Video' \
-       r'\Design Patterns in Python\Section 1 The SOLID Design Principles\journal.txt'
-# p.save_to_file(j, file)
+file = r'C:\Users\syurskyi\PycharmProjects\Python_Topics\120_design_patterns\001_SOLID_design_principles\examples\srp\journal.txt'
+p.save_to_file(j, file)
 #
 # # verify!
 with open(file) as fh:

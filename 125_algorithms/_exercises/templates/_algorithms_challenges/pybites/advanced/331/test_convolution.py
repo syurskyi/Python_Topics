@@ -45,7 +45,7 @@ KERNEL_5x5 = np.r__.rand(5, 5)
 KERNEL_5x5_ONES = np.diag(np.ones(5))
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "image, kernel, padding, stride, feature_map_size",
     [
         (IMAGE_1x1, KERNEL_1x1, N.., 1, (1, 1)),
@@ -77,7 +77,7 @@ ___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size)
     np.testing.assert_array_equal(feature_map.shape, feature_map_size)
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "image, kernel, padding, stride, feature_map",
     [
         (IMAGE_1x1, KERNEL_1x1, N.., 1, np.array([[1]])),
@@ -141,7 +141,7 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map):
     np.testing.assert_array_equal(feature_map_, feature_map)
 
 
-@p__.mark.parametrize(
+@p__.m__.p..(
     "image, kernel, padding, stride, expected_exception",
     [
         ([[1, 1, 1], [2, 2, 2], [3, 3, 3]], KERNEL_3x3_BLUR, N.., 1, T..),

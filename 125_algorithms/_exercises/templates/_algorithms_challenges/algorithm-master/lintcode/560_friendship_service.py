@@ -36,11 +36,11 @@ c_ FriendshipService:
     """
     ___ follow  to_id, from_id):
         __ from_id n.. __ followings:
-            followings[from_id] = set()
+            followings[from_id] = s..()
         followings[from_id].add(to_id)
 
         __ to_id n.. __ followers:
-            followers[to_id] = set()
+            followers[to_id] = s..()
         followers[to_id].add(from_id)
 
     """

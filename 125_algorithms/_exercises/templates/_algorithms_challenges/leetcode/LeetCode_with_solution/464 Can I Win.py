@@ -50,7 +50,7 @@ c_ Solution:
             ___ choice __ c..:
                 __ n.. _can_win(
                         total - choice,
-                        c.. - set([choice]),
+                        c.. - s..([choice]),
                         gross - choice,
                         cache
                 ):

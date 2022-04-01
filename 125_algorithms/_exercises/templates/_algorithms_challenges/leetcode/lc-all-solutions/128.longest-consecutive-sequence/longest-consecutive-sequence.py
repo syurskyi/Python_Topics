@@ -5,7 +5,7 @@ c_ Solution(o..):
     :rtype: int
     """
     ans = 0
-    s = set(nums)
+    s = s..(nums)
     ___ num __ nums:
       __ num __ s:
         s.discard(num)

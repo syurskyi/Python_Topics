@@ -17,7 +17,7 @@ c_ Solution:
         __ k > n:
             k = n
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
 
         """
         `dp[i][j]` means the minimum time to assign `i` books to `j` people

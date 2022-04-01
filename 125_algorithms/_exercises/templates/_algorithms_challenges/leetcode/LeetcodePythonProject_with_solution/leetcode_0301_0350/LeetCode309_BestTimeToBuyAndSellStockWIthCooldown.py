@@ -24,7 +24,7 @@ c_ Solution(o..):
         s1 = [0]*n
         s2 = [0]*n
         s1[0] = -prices[0]
-        s2[0] = float('-inf')
+        s2[0] = f__('-inf')
         ___ i __ r..(1, n):
             s0[i] = m..(s0[i-1], s2[i-1])
             s1[i] = m..(s1[i-1], s0[i-1]-prices[i])

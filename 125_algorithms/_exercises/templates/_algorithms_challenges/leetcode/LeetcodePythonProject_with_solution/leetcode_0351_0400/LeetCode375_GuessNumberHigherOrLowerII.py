@@ -9,7 +9,7 @@ c_ Solution(o..):
         dp = [[0]*(n+1) ___ _ __ r..(n+1)]
         ___ j __ r..(2, n+1):
             ___ i __ r..(j-1, 0, -1):
-                globalMin = float('inf')
+                globalMin = f__('inf')
                 ___ k __ r..(i+1, j):
                     localMax = k+m..(dp[i][k-1], dp[k+1][j])
                     globalMin = m..(globalMin, localMax)

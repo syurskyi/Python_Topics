@@ -2,7 +2,7 @@ ____ typing _______ List
 
 
 ___ minimum_number(d..: List[i..]) __ i..:
-    d.. = s..(set(d..))
+    d.. = s..(s..(d..))
     r.. 0 __ l..(d..)__0 ____ i..("".j..(s..(i) ___ i __ d..))
 
 

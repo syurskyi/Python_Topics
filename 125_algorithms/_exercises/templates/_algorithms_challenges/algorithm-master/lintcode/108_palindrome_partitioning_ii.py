@@ -6,7 +6,7 @@ c_ Solution:
             r.. -1
 
         n = l..(S)
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         is_palindrome = get_palin_map(S)
 
         """

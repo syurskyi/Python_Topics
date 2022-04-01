@@ -1,7 +1,7 @@
 ___ common_languages(programmers):
    """Receive a dict of keys -> names and values -> a sequence of
       of programming languages, return the common languages"""
-   common = set()
+   common = s..()
 
    ___ i __ r..(l..(programmers)):
       ___ key, value __ programmers.i..:

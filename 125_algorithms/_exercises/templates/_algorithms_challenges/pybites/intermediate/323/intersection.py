@@ -3,12 +3,12 @@ ____ typing _______ Iterable, Set, Any, cast
 
 
 ___ intersection(*args: Iterable) __ Set[Any]:
-    cast_to_set = [set(arg) ___ arg __ args __ arg != N.. a.. l..(arg) != 0]
+    cast_to_set = [s..(arg) ___ arg __ args __ arg != N.. a.. l..(arg) != 0]
 
     __ l..(cast_to_set) __ 0:
-        r.. set()
+        r.. s..()
     
-    r.. functools.reduce(set.intersection, cast_to_set)
+    r.. functools.reduce(s...intersection, cast_to_set)
 
 
 # if __name__ == "__main__":

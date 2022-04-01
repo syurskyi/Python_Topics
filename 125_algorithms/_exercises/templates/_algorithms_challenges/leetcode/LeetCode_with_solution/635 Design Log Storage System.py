@@ -66,7 +66,7 @@ c_ LogSystem:
         s = s[:pre] + lo[pre:]
         e = e[:pre] + hi[pre:]
         i = bisect.bisect_left(lst, (s, 0))
-        j = bisect.bisect_right(lst, (e, float("inf")))
+        j = bisect.bisect_right(lst, (e, f__("inf")))
         r.. [id ___ _, id __ lst[i:j]]
 
 

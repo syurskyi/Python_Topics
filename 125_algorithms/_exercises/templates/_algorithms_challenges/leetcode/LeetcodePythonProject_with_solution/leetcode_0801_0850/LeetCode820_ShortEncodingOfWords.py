@@ -9,7 +9,7 @@ c_ Solution(o..):
         :type words: List[str]
         :rtype: int
         """
-        hashset = set(words)
+        hashset = s..(words)
         ___ word __ words:
             ___ i __ r..(1, l..(word)):
                 hashset.discard(word[i:])

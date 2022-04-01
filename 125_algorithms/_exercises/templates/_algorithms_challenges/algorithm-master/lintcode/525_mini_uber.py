@@ -18,7 +18,7 @@ ____ Trip _______ Trip, Helper
 c_ MiniUber:
     driver_to_locs    # dict
     driver_to_trip    # dict
-    INFINITY = float('inf')
+    INFINITY = f__('inf')
 
     # @param {int} driver_id an integer
     # @param {double} lat, lng driver's location

@@ -12,14 +12,14 @@ c_ Solution(o..):
         """
         graph    # dict
         ___ i __ r..(N):
-            graph[i] = set()
+            graph[i] = s..()
         ___ i, j __ edges:
             graph[i].add(j)
             graph[j].add(i)
         res = [0]*N
         count = [0]*N
-        dfs(0, set(), graph, res, count)
-        dfs2(0, set(), graph, res, count, N)
+        dfs(0, s..(), graph, res, count)
+        dfs2(0, s..(), graph, res, count, N)
         r.. res
     
     ___ dfs  root, visited, graph, res, count):
@@ -62,7 +62,7 @@ c_ Solution(o..):
     ___ bfs  graph, i):
         res = 0
         queue = [i]
-        visited = set([i])
+        visited = s..([i])
         level = 1
         w.... queue:
             size = l..(queue)

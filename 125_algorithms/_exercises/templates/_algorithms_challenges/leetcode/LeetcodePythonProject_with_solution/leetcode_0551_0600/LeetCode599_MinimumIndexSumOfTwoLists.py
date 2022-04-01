@@ -18,7 +18,7 @@ c_ Solution(o..):
         ___ i, s __ e..(list2):
             __ s n.. __ hashmap2:
                 hashmap2[s] = i
-        minInd = float('inf')
+        minInd = f__('inf')
         res    # list
         ___ s, i __ hashmap1.i..:
             __ s __ hashmap2:

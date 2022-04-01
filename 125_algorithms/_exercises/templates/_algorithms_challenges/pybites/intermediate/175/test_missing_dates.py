@@ -15,7 +15,7 @@ ___ _create_dates(missing, year=2019,  m.._2):
        You can optionally specify year and month.
     """
     first = date y.._year,  m.._month,  d.._1)
-    last = first.r..( m.._month+1) - t..(days=1)
+    last = first.r..( m.._month+1) - t..(d.._1)
 
     # always yield first and last, for the in between dates
     # only the ones not in missing
@@ -28,7 +28,7 @@ ___ _create_dates(missing, year=2019,  m.._2):
     y.. last
 
 
-@p__.mark.parametrize("missing, month", [
+@p__.m__.p..("missing, month", [
     ([2, 7, 11], 2),
     (l..(r..(2, 12, 2)), 3),
     ([14, 12], 3),

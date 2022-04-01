@@ -13,7 +13,7 @@ c_ Solution:
             F[c] = F.get(c, 0) + 1
 
         n, cnt = l..(s), l..(F)
-        start = size = INFINITY = float('inf')
+        start = size = INFINITY = f__('inf')
         left = right = 0
 
         w.... right < n:

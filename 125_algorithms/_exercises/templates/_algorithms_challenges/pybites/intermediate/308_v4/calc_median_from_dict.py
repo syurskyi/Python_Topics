@@ -1,7 +1,7 @@
 ____ i.. _______ accumulate
 
 
-___ calc_median_from_dict(d: d..) __ float:
+___ calc_median_from_dict(d: d..) __ f__:
     """
     :param d: dict of numbers and their occurrences
     :return: float: median
@@ -11,7 +11,7 @@ ___ calc_median_from_dict(d: d..) __ float:
     __ n.. isi..(d, d..) o. d __ N..
         r.. T..
 
-    __ n.. a..([isi..(k, (i.., float)) a.. k ___ k __ d.v..):
+    __ n.. a..([isi..(k, (i.., f__)) a.. k ___ k __ d.v..):
         r.. T..
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts

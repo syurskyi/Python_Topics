@@ -22,7 +22,7 @@ c_ Solution:
             r.. N..
 
         h    # list
-        ___ e __ set(nums):
+        ___ e __ s..(nums):
             __ l..(h) < 3:
                 heapq.heappush(h, e)
             ____ l..(h) __ 3 a.. e > h[0]:

@@ -10,7 +10,7 @@ c_ Solution(o..):
         :type n: int
         :rtype: bool
         """
-        hashset = set()
+        hashset = s..()
         hashset.add(n)
         w.... n != 1:
             num = 0

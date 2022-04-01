@@ -97,15 +97,15 @@ c_ Solution_dfs:
         Find circle through dfs: O(|V|)
         Notice: need to extract the circle from the cyclic path
         """
-        G = defaultdict(set)
+        G = defaultdict(s..)
         ___ p, q __ edges:
             G[p].add(q)
             G[q].add(p)
 
-        visited = set()
+        visited = s..()
         ___ k __ G.k..:
             __ k n.. __ visited:
-                circle = dfs(G, k, N.., set([k]), [k], visited)
+                circle = dfs(G, k, N.., s..([k]), [k], visited)
                 __ circle:
                     ___ p, q __ r..(edges):
                         __ p __ circle a.. q __ circle:
@@ -120,7 +120,7 @@ c_ Solution_dfs:
             __ nbr != pi:
                 __ nbr __ path:
                     # extract the circle from path
-                    circle = set()
+                    circle = s..()
                     in_circle = F..
                     ___ e __ path_list:
                         __ e __ nbr:

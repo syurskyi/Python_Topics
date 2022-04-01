@@ -20,7 +20,7 @@ c_ Solution(o..):
         backMap    # dict
         kNode = dfs(root, k, backMap)
         queue = [kNode]
-        visited = set([kNode])
+        visited = s..([kNode])
         w.... queue:
             curr = queue.pop(0)
             __ n.. curr.left a.. n.. curr.right:

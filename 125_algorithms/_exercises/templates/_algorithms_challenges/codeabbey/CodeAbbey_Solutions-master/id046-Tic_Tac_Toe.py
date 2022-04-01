@@ -19,7 +19,7 @@ ___ has_the_moves(player, moves):
     win8 = (6,7,8) #[7,8,9]
     winning_grids = [win1, win2, win3, win4, win5, win6, win7, win8]
 
-    tried = [set(posibility) <= set(moves) ___ posibility __ winning_grids]
+    tried = [s..(posibility) <= s..(moves) ___ posibility __ winning_grids]
     r.. player __ any(tried) ____ N..
 
 ___ is_winner(board):

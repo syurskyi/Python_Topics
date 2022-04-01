@@ -40,4 +40,4 @@ ___ pretty_date(date: d__):
         r.. f'{hours} hours ago'
     __ hours < 48:
         r.. 'yesterday'
-    r.. date.strftime('%m/%d/%y')
+    r.. date.s..('%m/%d/%y')

@@ -3,7 +3,7 @@ _______ p__
 ____ round_even _______ round_even
 
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     (0.4, 0),
     (0.5, 0),  # nearest even int
     (0.6, 1),

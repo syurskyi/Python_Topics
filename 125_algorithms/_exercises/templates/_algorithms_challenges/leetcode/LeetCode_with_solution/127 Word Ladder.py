@@ -137,7 +137,7 @@ c_ Solution:
                 __ queue[i]__end:  # reached
                     r.. path_len
 
-                remain_set = set(d..)
+                remain_set = s..(d..)
                 ___ item __ d..:  # O(k), add next level
                    __ diff_count(item, queue[i])__1:
                         queue.a..(item)
@@ -193,7 +193,7 @@ c_ Solution:
 
 
 __ _____ __ ____
-    ... Solution().ladderLength("sand", "acne", set(
+    ... Solution().ladderLength("sand", "acne", s..(
         ["slit", "bunk", "wars", "ping", "viva", "wynn", "wows", "irks", "gang", "pool", "mock", "fort", "heel", "send",
          "ship", "cols", "alec", "foal", "nabs", "gaze", "giza", "mays", "dogs", "karo", "cums", "jedi", "webb", "lend",
          "mire", "jose", "catt", "grow", "toss", "magi", "leis", "bead", "kara", "hoof", "than", "ires", "baas", "vein",

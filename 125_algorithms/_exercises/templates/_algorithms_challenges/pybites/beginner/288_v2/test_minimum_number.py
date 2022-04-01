@@ -5,7 +5,7 @@ _______ p__
 ____ minimum_number _______ minimum_number
 
 
-@p__.mark.parametrize('test_input, expected', [
+@p__.m__.p..('test_input, expected', [
                         ([], 0),
                         ([0], 0),
                         ([1], 1),

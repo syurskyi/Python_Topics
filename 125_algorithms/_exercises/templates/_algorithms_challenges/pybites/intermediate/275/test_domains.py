@@ -16,7 +16,7 @@ ___ test_get_common_domains(common_domains):
     ... common_domains[-3:] __ last_3
 
 
-@p__.mark.parametrize("emails, expected", [
+@p__.m__.p..("emails, expected", [
     (["a@gmail.com", "b@pybit.es", "c@pybit.es", "d@domain.de"],
      [('pybit.es', 2), ('domain.de', 1)]),
     (["a@hotmail.com", "b@gmail.com"], []),

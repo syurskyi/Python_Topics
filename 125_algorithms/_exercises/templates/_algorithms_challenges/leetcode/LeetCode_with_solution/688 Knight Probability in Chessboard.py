@@ -41,19 +41,19 @@ dirs = (
 
 
 c_ Solution:
-    ___ knightProbability  N: i.., K: i.., r: i.., c: i..) __ float:
+    ___ knightProbability  N: i.., K: i.., r: i.., c: i..) __ f__:
         """
         brute force K step
 
         with memory, it is considered dp
         """
-        q = set([(r, c)])  # working que
+        q = s..([(r, c)])  # working que
         P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
         P[r][c] = 1  # optimize memory
         k = 0
         w.... k < K:
             k += 1
-            cur_q = set()
+            cur_q = s..()
             cur_P = [[0 ___ _ __ r..(N)] ___ _ __ r..(N)]
             ___ i, j __ q:
                 ___ di, dj __ dirs:
@@ -73,7 +73,7 @@ c_ Solution:
         ])
 
 
-    ___ knightProbability_error  N: i.., K: i.., r: i.., c: i..) __ float:
+    ___ knightProbability_error  N: i.., K: i.., r: i.., c: i..) __ f__:
         """
         brute force K step
         """

@@ -18,7 +18,7 @@ c_ Solution:
         m = x
         w... T...
             m_before = m
-            m = m - float(m*m-x)/(2*m)
+            m = m - f__(m*m-x)/(2*m)
             __ abs(m-m_before)<1e-7: _____
 
         r.. i..(m)

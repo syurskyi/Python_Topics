@@ -77,7 +77,7 @@ c_ Solution:
 c_ SolutionError:
     ___ isBipartite  graph: List[List[i..]]) __ bool:
         G = graph
-        A, B = set(), set()
+        A, B = s..(), s..()
         visited = defaultdict(bool)
         ___ k __ r..(l..(G)):
             __ n.. visited[k]:

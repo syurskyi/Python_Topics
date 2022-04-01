@@ -4,7 +4,7 @@ ___ BMI_calculator
     ___ i __ r..(0, num_of_people):
         weight,height = input().s.. 
         
-        BMI = i.. ?/(float(height)**2)
+        BMI = i.. ?/(f__(height)**2)
         
         __ BMI < 18.5:
             result.a..('under')

@@ -20,7 +20,7 @@ Movie = n..('Movie', 'title year score')
 
 # field conversion
 fields = ['movie_title', 'title_year', 'imdb_score']
-conv = [s.., i.., float]
+conv = [s.., i.., f__]
 NAME = 'director_name'
 
 

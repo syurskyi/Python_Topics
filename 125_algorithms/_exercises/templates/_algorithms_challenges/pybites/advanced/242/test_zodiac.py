@@ -38,7 +38,7 @@ ___ test_get_sign_with_most_famouse_people(signs):
     ... get_sign_with_most_famous_people(signs) __ ('Scorpio', 35)
 
 
-@p__.mark.parametrize("sgn1, sgn2, result", [
+@p__.m__.p..("sgn1, sgn2, result", [
     ('Aries', 'Aries', F..),
     ('Aries', 'Leo', T..),
     ('Aries', 'Capricorn', F..),
@@ -48,7 +48,7 @@ ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
     ... signs_are_mutually_compatible(signs, sgn1, sgn2) __ result
 
 
-@p__.mark.parametrize("dt, result", [
+@p__.m__.p..("dt, result", [
     ([3, 21], 'Aries'),
     ([4, 19], 'Aries'),
     ([4, 20], 'Taurus'),

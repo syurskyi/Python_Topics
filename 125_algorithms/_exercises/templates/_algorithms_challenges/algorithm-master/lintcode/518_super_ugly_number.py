@@ -16,7 +16,7 @@ c_ Solution:
         uglys[0] = 1
 
         ___ i __ r..(1, n):
-            ugly = float('inf')
+            ugly = f__('inf')
 
             ___ j __ r..(k):
                 ugly = m..(ugly, uglys[steps[j]] * primes[j])

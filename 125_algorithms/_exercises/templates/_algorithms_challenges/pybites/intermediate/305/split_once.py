@@ -7,7 +7,7 @@ ___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
     __ separators __ N..
         separators = s__.whitespace
 
-    separators= set(separators)
+    separators= s..(separators)
     result    # list
     previous_start = 0
     ___ i,c __ e..(text):

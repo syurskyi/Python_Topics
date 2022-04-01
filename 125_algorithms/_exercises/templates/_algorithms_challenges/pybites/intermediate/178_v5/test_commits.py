@@ -3,7 +3,7 @@ _______ p__
 ____ Previous.commits _______ get_min_max_amount_of_commits
 
 
-@p__.mark.parametrize('year, expected', [
+@p__.m__.p..('year, expected', [
     (N.., ('2018-02', '2017-01')),  # parse the whole file
     (2017, ('2017-11', '2017-01')),
     (2018, ('2018-02', '2018-10')),

@@ -6,7 +6,7 @@ c_ Solution(o..):
     :type word2: str
     :rtype: int
     """
-    ans = float("inf")
+    ans = f__("inf")
     idx1 = idx2 = -1
     ___ i __ r..(0, l..(words)):
       word = words[i]

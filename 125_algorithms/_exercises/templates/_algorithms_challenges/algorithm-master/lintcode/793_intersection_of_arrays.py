@@ -17,7 +17,7 @@ c_ Solution:
 
             ___ a __ A[i]:
                 __ a n.. __ C:
-                    C[a] = set()
+                    C[a] = s..()
                 C[a].add(i)
 
         ___ a, S __ C.i..:

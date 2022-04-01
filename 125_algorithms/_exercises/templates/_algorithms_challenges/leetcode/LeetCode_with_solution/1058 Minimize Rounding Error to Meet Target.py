@@ -45,7 +45,7 @@ c_ Solution:
 
         floor all, sort by floor error inverse, make the adjustment
         """
-        A = l..(map(float, prices))
+        A = l..(map(f__, prices))
         f_sum = s..(map(math.floor, A))
         c_sum = s..(map(math.ceil, A))
         __ n.. f_sum <= target <= c_sum:

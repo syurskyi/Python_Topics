@@ -53,8 +53,8 @@ c_ Solution:
         """
         like the find the celebrity
         """
-        ingress = defaultdict(set)
-        egress =defaultdict(set)
+        ingress = defaultdict(s..)
+        egress =defaultdict(s..)
         ___ p, q __ trust:
             egress[p].add(q)
             ingress[q].add(p)

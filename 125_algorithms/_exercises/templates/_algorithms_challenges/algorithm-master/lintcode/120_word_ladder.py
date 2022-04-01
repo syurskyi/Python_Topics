@@ -34,7 +34,7 @@ c_ Solution:
             ___ word __ D:
                 key = word[:i] + word[i + 1:]
                 __ key n.. __ _words:
-                    _words[key] = set()
+                    _words[key] = s..()
                 _words[key].add(word)
 
         queue = [e]

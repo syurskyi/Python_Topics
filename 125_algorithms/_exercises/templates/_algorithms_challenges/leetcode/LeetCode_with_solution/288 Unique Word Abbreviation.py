@@ -13,7 +13,7 @@ c_ ValidWordAbbr(o..):
         :type dictionary: List[str]
         """
         abbrev = defaultdict(i..)
-        dictionary = set(dictionary)
+        dictionary = s..(dictionary)
 
         ___ word __ dictionary:
             abbrev[process(word)] += 1

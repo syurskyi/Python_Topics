@@ -3,7 +3,7 @@ _______ p__
 ____ roman _______ romanize
 
 
-@p__.mark.parametrize("number, numeral", [
+@p__.m__.p..("number, numeral", [
     (1000, 'M'),
     (500, 'D'),
     (100, 'C'),

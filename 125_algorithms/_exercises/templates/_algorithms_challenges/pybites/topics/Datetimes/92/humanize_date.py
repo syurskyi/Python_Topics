@@ -28,10 +28,10 @@ ___ pretty_date(date):
                 elapsed = elapsed/timeoffset.divider
             elapsed = i..(elapsed)
             r.. timeoffset.date_str.f..(elapsed)
-    r.. date.strftime("%m/%d/%y")
+    r.. date.s..("%m/%d/%y")
 
 
-dt = d__.n.. - t..(days=2, hours=22, minutes=14, seconds=15)
+dt = d__.n.. - t..(d.._2, hours=22, minutes=14, seconds=15)
 #dt = datetime.now() - timedelta(seconds=125)
 #print(dt)
 print(pretty_date(dt))

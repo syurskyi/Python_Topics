@@ -4,7 +4,7 @@ c_ Solution(o..):
     :type prices: List[int]
     :rtype: int
     """
-    buy1 = buy2 = float("-inf")
+    buy1 = buy2 = f__("-inf")
     sell1 = sell2 = 0
 
     ___ i __ r..(l..(prices)):

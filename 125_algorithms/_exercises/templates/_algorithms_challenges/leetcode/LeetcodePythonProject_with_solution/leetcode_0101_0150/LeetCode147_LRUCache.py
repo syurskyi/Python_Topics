@@ -55,7 +55,7 @@ c_ LRUCache(o..):
             removeAndAppend(key)
             r.. val
     
-    ___ set  key, value):
+    ___ s..  key, value):
         __ n.. map:
             node = Node(key, value)
             map[key] = node
@@ -89,12 +89,12 @@ c_ LRUCache(o..):
 
 __ _____ __ _____
     cache = LRUCache(2)
-    cache.set(1, 1)
-    cache.set(2, 2)
+    cache.s..(1, 1)
+    cache.s..(2, 2)
     print(cache.get(1))
-    cache.set(3, 3)
+    cache.s..(3, 3)
     print(cache.get(2))
-    cache.set(4, 4)
+    cache.s..(4, 4)
     print(cache.get(1))
     print(cache.get(3))
     print(cache.get(4))

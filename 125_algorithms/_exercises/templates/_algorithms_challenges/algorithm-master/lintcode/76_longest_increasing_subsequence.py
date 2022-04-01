@@ -22,7 +22,7 @@ c_ Solution:
         __ n.. A:
             r.. 0
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         n = l..(A)
         P = [-INFINITY] + [INFINITY] * n
 

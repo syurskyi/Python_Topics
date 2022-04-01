@@ -13,7 +13,7 @@ ___ get_missing_dates(dates):
     first_dt = m..(dates)
     last_dt = m..(dates)
     full_dt = [first_dt+t..(i) ___ i __ r..((last_dt-first_dt).days+1)]
-    r.. s..(set(full_dt)-set(dates))
+    r.. s..(s..(full_dt)-s..(dates))
 
 
 ___ _create_dates(missing, year=2019,  m.._2):
@@ -25,7 +25,7 @@ ___ _create_dates(missing, year=2019,  m.._2):
        You can optionally specify year and month.
     """
     first = date y.._year,  m.._month,  d.._1)
-    last = first.r..( m.._month+1) - t..(days=1)
+    last = first.r..( m.._month+1) - t..(d.._1)
 
     # always yield first and last, for the in between dates
     # only the ones not in missing

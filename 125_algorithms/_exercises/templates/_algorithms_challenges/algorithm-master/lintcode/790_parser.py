@@ -14,7 +14,7 @@ c_ Solution:
         ___ s __ S:
             cur, nxt = s.s..(' -> ')
             __ cur n.. __ N:
-                N[cur] = set()
+                N[cur] = s..()
             N[cur].add(nxt)
 
         r.. dfs(N, end, start)

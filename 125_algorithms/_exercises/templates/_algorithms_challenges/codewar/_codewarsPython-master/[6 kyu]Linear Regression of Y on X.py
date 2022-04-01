@@ -4,8 +4,8 @@ ___ regressionLine(x, y):
     sumX = s..(x)
     sumY = s..(y)
     sumXY = s..([X*Y ___ X,Y __ z..(x,y)])
-    a = ((sumSquareX*sumY) - (sumX*sumXY)) / float(((l..(x) * sumSquareX) - sumX**2))
-    b = ((l..(x)*sumXY) - (sumX*sumY)) / float(((l..(x)*sumSquareX) - sumX**2))
+    a = ((sumSquareX*sumY) - (sumX*sumXY)) / f__(((l..(x) * sumSquareX) - sumX**2))
+    b = ((l..(x)*sumXY) - (sumX*sumY)) / f__(((l..(x)*sumSquareX) - sumX**2))
     a = r..(a,4)
     b = r..(b,4)
     r.. a,b

@@ -2,7 +2,7 @@ c_ Solution:
     # @param {character[][]} grid
     # @return {integer}
     ___ numIslands  grid):
-        islands = set()  # coordinates of 1s (set of tuples)
+        islands = s..()  # coordinates of 1s (set of tuples)
         res = 0
         n = l..(grid)
         __ n __ 0:

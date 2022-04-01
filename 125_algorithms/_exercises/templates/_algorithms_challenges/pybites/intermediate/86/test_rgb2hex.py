@@ -3,7 +3,7 @@ _______ p__
 ____ rgb2hex _______ rgb_to_hex
 
 
-@p__.mark.parametrize("rgb, hex_", [
+@p__.m__.p..("rgb, hex_", [
     # https://www.rapidtables.com/web/color/RGB_Color.html
     ((0, 0, 0), '#000000'),  # black
     ((255, 255, 255), '#FFFFFF'),  # white

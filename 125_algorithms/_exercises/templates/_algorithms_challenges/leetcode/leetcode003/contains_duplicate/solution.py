@@ -10,7 +10,7 @@ c_ Solution(o..):
         :type nums: List[int]
         :rtype: bool
         """
-        d = set()
+        d = s..()
         ___ i __ nums:
             __ i __ d:
                 r.. T..

@@ -10,7 +10,7 @@ c_ Solution(o..):
         :type rectangles: List[List[int]]
         :rtype: int
         """
-        xs = s..(set([x ___ x1, y1, x2, y2 __ rectangles ___ x __ [x1, x2]] + [0]))
+        xs = s..(s..([x ___ x1, y1, x2, y2 __ rectangles ___ x __ [x1, x2]] + [0]))
         x_i = {v: i ___ i, v __ e..(xs)}
         count = [0] * l..(x_i)
         L    # list

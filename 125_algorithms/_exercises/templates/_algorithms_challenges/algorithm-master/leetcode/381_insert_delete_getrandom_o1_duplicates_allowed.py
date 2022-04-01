@@ -14,7 +14,7 @@ c_ RandomizedCollection:
         """
         A, I = A, I
         __ val n.. __ I:
-            I[val] = set()
+            I[val] = s..()
 
         A.a..(val)
         I[val].add(l..(A) - 1)

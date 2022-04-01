@@ -10,7 +10,7 @@ ___ dates
     r.. _get_dates()
 
 
-@p__.mark.parametrize("date_str, expected", [
+@p__.m__.p..("date_str, expected", [
     ('Thu, 04 May 2017 20:46:00 +0200', d__(2017, 5, 4, 20, 46)),
     ('Wed, 22 Mar 2017 12:42:00 +0100', d__(2017, 3, 22, 12, 42)),
     ('Mon, 20 Feb 2017 00:01:00 +0100', d__(2017, 2, 20, 0, 1)),

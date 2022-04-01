@@ -11,7 +11,7 @@ c_ Solution(o..):
         :type word2: str
         :rtype: int
         """
-        res = float('inf')
+        res = f__('inf')
         ___ i, word __ e..(words):
             __ word __ [word1, word2]:
                 target = word2 __ word __ word1 ____ word1

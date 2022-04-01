@@ -15,7 +15,7 @@ ___ test_invalid_domain
         Domain("nu.nlll")
 
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     ("https://pybit.es", "pybit.es"),
     ("http://pybit.es", "pybit.es"),
     ("https://pybit.es/get-python-source.html", "pybit.es"),
@@ -29,7 +29,7 @@ ___ test_create_domain_from_url(arg, expected):
     ... s..(domain) __ expected
 
 
-@p__.mark.parametrize("arg, expected", [
+@p__.m__.p..("arg, expected", [
     ("bob@pybit.es", "pybit.es"),
     ("bob@gmail.com", "gmail.com"),
     ("tim@example.net", "example.net"),

@@ -12,7 +12,7 @@ c_ Solution(o..):
         :type s: str
         :rtype: bool
         """
-        r.. dfs(pattern, s, {}, set())
+        r.. dfs(pattern, s, {}, s..())
 
     ___ dfs  pattern, s, char2word, words):
         """

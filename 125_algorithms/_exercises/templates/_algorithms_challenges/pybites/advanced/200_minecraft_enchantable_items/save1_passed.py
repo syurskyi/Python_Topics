@@ -135,7 +135,7 @@ ___ gen_item_set(data):
     :param data: Dictionary of Enchantment objects
     :return: Set of sorted item object name strings
     """
-    mc_items = set()
+    mc_items = s..()
     ___ enchantment __ data.k..:
         ___ item __ data[enchantment].items:
             mc_items.add(item)

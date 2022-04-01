@@ -73,10 +73,10 @@ ___ balance_check(s):
         r.. F..
 
     # Set of opening brackets
-    opening = set('([{')
+    opening = s..('([{')
 
     # Matching Pairs
-    matches = set([('(', ')'), ('[', ']'), ('{', '}')])
+    matches = s..([('(', ')'), ('[', ']'), ('{', '}')])
 
     # Use a list as a "Stack"
     stack    # list

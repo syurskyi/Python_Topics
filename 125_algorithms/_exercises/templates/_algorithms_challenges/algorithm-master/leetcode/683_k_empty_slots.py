@@ -58,7 +58,7 @@ c_ Solution2:
             x = flowers[day]
             x2day[x - 1] = day + 1
 
-        ans = INF = float('inf')
+        ans = INF = f__('inf')
         left, right = 0, k + 1
         i = 0
 

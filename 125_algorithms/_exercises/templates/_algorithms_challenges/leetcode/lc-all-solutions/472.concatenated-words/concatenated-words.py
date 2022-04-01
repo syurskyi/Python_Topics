@@ -20,7 +20,7 @@ c_ Solution(o..):
       r.. dp[-1]
 
     words.s..(key=l.... x: -l..(x))
-    cands = set(words)
+    cands = s..(words)
     ans    # list
     ___ i __ r..(0, l..(words)):
       cands -= {words[i]}

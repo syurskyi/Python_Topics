@@ -25,7 +25,7 @@ c_ Solution:
         __ n.. C o. n.. C[0]:
             r.. 0
 
-        INFINITY = float('inf')
+        INFINITY = f__('inf')
         n, k = l..(C), l..(C[0])
         dp = [[0] * k ___ _ __ r..(n)]
         prev = curr = 0

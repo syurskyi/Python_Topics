@@ -20,8 +20,8 @@ c_ Solution(o..):
                     hashmap[routes[i][j]]    # list
                 hashmap[routes[i][j]].a..(i)
         queue    # list
-        addedRoute = set()
-        addedStop = set()
+        addedRoute = s..()
+        addedStop = s..()
         ___ r __ hashmap[s]:
             __ r __ addedRoute: _____
             ___ i __ r..(l..(routes[r])):

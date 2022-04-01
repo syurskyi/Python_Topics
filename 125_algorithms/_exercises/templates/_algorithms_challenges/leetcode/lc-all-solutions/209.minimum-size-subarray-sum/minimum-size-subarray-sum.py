@@ -7,7 +7,7 @@ c_ Solution(o..):
     """
     s.. = 0
     j = 0
-    ans = float("inf")
+    ans = f__("inf")
     ___ i __ r..(0, l..(nums)):
       w.... j < l..(nums) a.. s.. < target:
         s.. += nums[j]
@@ -15,4 +15,4 @@ c_ Solution(o..):
       __ s.. >= target:
         ans = m..(ans, j - i)
       s.. -= nums[i]
-    r.. ans __ ans != float("inf") ____ 0
+    r.. ans __ ans != f__("inf") ____ 0

@@ -20,4 +20,4 @@ c_ Solution(o..):
         path.pop()
 
     dfs(nums, 0, [], ans)
-    r.. l..(set(ans))
+    r.. l..(s..(ans))

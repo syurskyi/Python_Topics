@@ -69,7 +69,7 @@ c_ MiniTwitter:
     """
     ___ follow  from_id, to_id):
         __ from_id n.. __ followings:
-            followings[from_id] = set()
+            followings[from_id] = s..()
 
         __ to_id __ followings[from_id]:
             r..

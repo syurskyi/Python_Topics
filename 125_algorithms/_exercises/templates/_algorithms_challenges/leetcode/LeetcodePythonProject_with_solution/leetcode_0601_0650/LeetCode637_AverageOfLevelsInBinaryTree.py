@@ -31,7 +31,7 @@ c_ Solution(o..):
             __ node.right:
                 nextQueue.a..(node.right)
             __ n.. queue:
-                res.a..(float(sumVal)/count)
+                res.a..(f__(sumVal)/count)
                 sumVal = 0
                 count = 0
                 queue = nextQueue

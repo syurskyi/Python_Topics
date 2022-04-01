@@ -4,7 +4,7 @@ c_ Solution(o..):
     :type nums: List[int]
     :rtype: bool
     """
-    a = b = float("inf")
+    a = b = f__("inf")
     ___ num __ nums:
       __ num <= a:
         a = num

@@ -16,9 +16,9 @@ c_ Solution(o..):
         pairInfo    # dict
         ___ p __ pairs:
             __ p[0] n.. __ pairInfo:
-                pairInfo[p[0]] = set()
+                pairInfo[p[0]] = s..()
             __ p[1] n.. __ pairInfo:
-                pairInfo[p[1]] = set()
+                pairInfo[p[1]] = s..()
             pairInfo[p[0]].add(p[1])
             pairInfo[p[1]].add(p[0])
         ___ w1, w2 __ z..(words1, words2):
@@ -26,15 +26,15 @@ c_ Solution(o..):
                 _____
             __ w1 n.. __ pairInfo:
                 r.. F..
-            __ n.. dfs(w1, w2, pairInfo, set()):
+            __ n.. dfs(w1, w2, pairInfo, s..()):
                 r.. F..
         r.. T..
     
     ___ dfs  source, target, pairInfo, visited):
-        __ target __ pairInfo.get(source, set()):
+        __ target __ pairInfo.get(source, s..()):
             r.. T..
         visited.add(source)
-        ___ nextWord __ pairInfo.get(source, set()):
+        ___ nextWord __ pairInfo.get(source, s..()):
             __ nextWord n.. __ visited a.. dfs(nextWord, target, pairInfo, visited):
                 r.. T..
         r.. F..

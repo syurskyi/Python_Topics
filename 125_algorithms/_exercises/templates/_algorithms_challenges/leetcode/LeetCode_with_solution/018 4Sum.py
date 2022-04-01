@@ -75,7 +75,7 @@ c_ Solution:
         :param target: int
         :return: a list of lists of length 4, [[val1,val2,val3,val4]]
         """
-        length, result_set, sum2index = l..(num), set(), {}
+        length, result_set, sum2index = l..(num), s..(), {}
         __ length<4:
             r.. []
         num.s..()
