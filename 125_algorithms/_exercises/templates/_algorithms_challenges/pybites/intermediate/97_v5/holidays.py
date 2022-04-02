@@ -1,12 +1,12 @@
 ____ c.. _______ defaultdict
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 
 ____ bs4 _______ BeautifulSoup
 
 
 # prep data
-holidays_page = os.path.j..('/tmp', 'us_holidays.php')
+holidays_page = __.p...j..('/tmp', 'us_holidays.php')
 urlretrieve('https://bit.ly/2LG098I', holidays_page)
 
 w__ o.. holidays_page) __ f:
@@ -23,5 +23,5 @@ ___ get_us_bank_holidays(content=content
     hol_list = soup.find(class_='list-table').tbody
     ___ hol __ hol_list('tr'
         _,month,_ = hol.time.s__.s..('-')
-        holidays[month].a..(hol.a.s__.strip())
+        holidays[month].a..(hol.a.s__.strip
     r.. holidays

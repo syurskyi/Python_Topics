@@ -62,7 +62,7 @@ c_ DB:
         r.. self
 
     ___ __exit__  exc_type, exc_value, traceback
-        connection.close()
+        connection.c..
 
     ___ create(
             self, table: s.., schema: List[Tuple[s.., SQLiteType]], primary_key: s..

@@ -2,5 +2,5 @@
 # Score: 10
 
 
-a, b = i..(input()), i..(input())
-print((a + b), (a - b), (a * b), sep='\n')
+a, b  i..(input, i..(input
+print((a + b), (a - b), (a * b), sep'\n')

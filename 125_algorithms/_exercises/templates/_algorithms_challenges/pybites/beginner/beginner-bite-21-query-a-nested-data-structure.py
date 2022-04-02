@@ -42,7 +42,7 @@ def sort_car_models(cars=cars):
 '''
 
 
-cars = {
+cars  {
     'Ford':  'Falcon', 'Focus', 'Festiva', 'Fairlane' ,
     'Holden':  'Commodore', 'Captiva', 'Barina', 'Trailblazer' ,
     'Nissan':  'Maxima', 'Pulsar', '350Z', 'Navara' ,
@@ -51,12 +51,12 @@ cars = {
 }
 
 
-___ get_all_jeeps cars=cars
+___ get_all_jeeps carscars
     """return a comma  + space (', ') separated string of jeep models (original order)"""
-    r = ', '.j..(cars 'Jeep' )
+    r  ', '.j..(cars 'Jeep' )
     r.. r
 
-___ get_first_model_each_manufacturer cars=cars
+___ get_first_model_each_manufacturer carscars
     """return a list of matching models (original ordering)"""
     r    # list
     ___ key, value __ cars.i..:
@@ -64,7 +64,7 @@ ___ get_first_model_each_manufacturer cars=cars
     r.. r
 
 
-___ get_all_matching_models cars=cars, grep='trail'
+___ get_all_matching_models carscars, grep'trail'
     """return a list of all models containing the case insensitive
        'grep' string which defaults to 'trail' for this exercise,
        sort the resulting sequence alphabetically"""
@@ -79,7 +79,7 @@ ___ get_all_matching_models cars=cars, grep='trail'
 
 
 
-___ sort_car_models cars=cars
+___ sort_car_models carscars
     """sort the car models (values)  and return the resulting cars dict"""
     ___ key, value __ cars.i..:
         value.s..()

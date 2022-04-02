@@ -1,4 +1,4 @@
-_______ sys
+_______ ___
 _______ unicodedata
 
 START_EMOJI_RANGE = 100000  # estimate
@@ -21,7 +21,7 @@ ___ _make_emoji_mapping
         res = _make_emoji_mapping.MAPPING
     ____:
         res = d..()
-        ___ em __ r..(START_EMOJI_RANGE, sys.maxunicode + 1
+        ___ em __ r..(START_EMOJI_RANGE, ___.maxunicode + 1
             emoji = chr(em)
             ___
                 desc = what_means_emoji(emoji)

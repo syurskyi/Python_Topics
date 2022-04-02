@@ -14,19 +14,19 @@ ___ remove_punctuation_solution_1(input_string
         __ c __ s__.punctuation:
             _____
         new_str.a..(c)
-    out = ''.j..(new_str)
+    out  ''.j..(new_str)
     print(out)
 
 ___ remove_punctuation_solution_2(input_string
     """Return a str with punctuation chards stripped out"""
-    new_list = [i ___ i __ input_string __ i n.. __ s__.punctuation]
-    out = ''.j..(new_list)
+    new_list  [i ___ i __ input_string __ i n.. __ s__.punctuation]
+    out  ''.j..(new_list)
     r.. out
 
 ___ remove_punctuation_solution_3(input_string
      # dict_variable = {key:value for (key,value) in dictonary.items()}
      # https://www.datacamp.com/community/tutorials/python-dictionary-comprehension
-     d = {key: N.. ___ key __ s__.punctuation}
+     d  {key: N.. ___ key __ s__.punctuation}
      print(d)
 
 

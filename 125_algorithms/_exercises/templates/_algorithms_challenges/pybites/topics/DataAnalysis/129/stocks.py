@@ -55,4 +55,4 @@ ___ get_sectors_with_max_and_min_stocks
 #stock_by_sector = Counter(counter['sector'] for counter in data if counter['sector'] != 'n/a')
 #print(stock_by_sector.most_common()[-1][0])
 
-print(get_stock_symbol_with_highest_cap())
+print(get_stock_symbol_with_highest_cap

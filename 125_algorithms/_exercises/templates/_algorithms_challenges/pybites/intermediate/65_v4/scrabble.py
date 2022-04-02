@@ -1,12 +1,12 @@
-_______ sys
+_______ ___
 _______ i..
-_______ os
+_______ __
 _______ urllib.request
 
 # PREWORK
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.j..(TMP, DICT)
+DICTIONARY = __.p...j..(TMP, DICT)
 urllib.request.urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY

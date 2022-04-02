@@ -39,7 +39,7 @@ c_ NestedIterator(o..
         w.... d..:
             ni = d...pop(0)
             __ ni.isInteger
-                result.a..(ni.getInteger())
+                result.a..(ni.getInteger
             ____:
                 l = ni.getList()
                 l.r..

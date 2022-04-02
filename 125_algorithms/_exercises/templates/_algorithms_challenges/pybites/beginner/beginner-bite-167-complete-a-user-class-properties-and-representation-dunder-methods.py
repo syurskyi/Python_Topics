@@ -71,4 +71,4 @@ u = User("bob", "belderbos")
 
 print(u.get_full_name)
 print(u.username)
-print(u. -r())
+print(u. -r

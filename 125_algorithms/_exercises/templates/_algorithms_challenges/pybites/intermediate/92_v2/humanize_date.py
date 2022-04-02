@@ -28,7 +28,7 @@ ___ pretty_date(date
         r.. ValueError("Invalid date! Date in future!")
 
 
-    delta = i..((NOW - date).total_seconds())
+    delta = i..((NOW - date).total_seconds
 
 
     ___ time_offset,time_string,divider __ TIME_OFFSETS:

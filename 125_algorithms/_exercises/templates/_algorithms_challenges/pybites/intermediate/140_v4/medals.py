@@ -18,4 +18,4 @@ ___ athletes_most_medals(data: s.. = data) __ pd.Series:
 
 
 __ _____ __ _____
-    print(athletes_most_medals())
+    print(athletes_most_medals

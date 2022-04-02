@@ -10,14 +10,14 @@ c_ Solution:
         dfs(s, 0, ans, [])
         r.. ans
 
-    ___ dfs  s, i, ans, path
+    ___ dfs  s, i, ans, p..
         __ i __ l..(s
-            ans.a..(''.j..(path))
+            ans.a..(''.j..(p..))
             r..
 
         options = [s[i]] __ s[i].i.. ____ [s[i].l.., s[i].u..]
 
         ___ c __ options:
-            path.a..(c)
-            dfs(s, i + 1, ans, path)
-            path.pop()
+            p...a..(c)
+            dfs(s, i + 1, ans, p..)
+            p...pop()

@@ -1,4 +1,4 @@
-_______ os
+_______ __
 _______ urllib
 #from Bio import SeqIO
 _______ requests
@@ -7,7 +7,7 @@ _______ requests
 # https://www.uniprot.org/uniprot/?query=database%3A%28type%3Aembl+AE017195%29&format=fasta (Aug 01, 2020)
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
-FASTA_FILE = os.path.j..(os.getenv("TMP", "/tmp"), "fasta_genes.fasta")
+FASTA_FILE = __.p...j..(__.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 
 response = requests.get(URL)
 
@@ -15,7 +15,7 @@ w__ o.. 'test.txt','w') __ f:
     f.write(response.text)
 
 
-__ n.. os.path.isfile(FASTA_FILE
+__ n.. __.p...isfile(FASTA_FILE
     urllib.request.urlretrieve(URL, FASTA_FILE)
 
 ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_converter.txt') __ i..:

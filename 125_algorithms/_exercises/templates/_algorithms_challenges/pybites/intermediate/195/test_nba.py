@@ -25,4 +25,4 @@ ___ test_avg_years_active_players_stanford
 
 
 ___ test_year_with_most_new_players
-    ... i..(year_with_most_new_players()) __ 1984
+    ... i..(year_with_most_new_players __ 1984

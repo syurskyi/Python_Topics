@@ -1,8 +1,8 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
-tmp = Path(os.getenv("TMP", "/tmp"))
+tmp = Path(__.getenv("TMP", "/tmp"))
 timings_log = tmp / 'pytest_timings.out'
 __ n.. timings_log.exists
     urlretrieve(

@@ -12,7 +12,7 @@ If there is no such window in S that covers all characters in T, return the emtp
 
 If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
 """
-_______ sys
+_______ ___
 
 __author__ = 'Danyang'
 
@@ -28,7 +28,7 @@ c_ Solution(o..
         :param T: str
         :return: str
         """
-        min_win = [0, sys.maxint]  # [start, end)
+        min_win = [0, ___.maxint]  # [start, end)
         w_cnt = [0 ___ _ __ r..(256)]  # window
         t_cnt = [0 ___ _ __ r..(256)]  # 256 ascii, static
         ___ char __ T:
@@ -54,7 +54,7 @@ c_ Solution(o..
                 __ min_win[1]-min_win[0] > hi-lo:
                     min_win[0], min_win[1] = lo, hi
 
-        __ min_win[1] __ sys.maxint:
+        __ min_win[1] __ ___.maxint:
             r.. ""
         ____:
             r.. S[min_win[0]:min_win[1]]

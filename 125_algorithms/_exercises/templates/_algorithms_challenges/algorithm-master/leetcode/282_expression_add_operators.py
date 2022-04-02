@@ -20,11 +20,11 @@ c_ Solution:
         dfs(s, 0, target, 0, 0, ans, [])
         r.. ans
 
-    ___ dfs  s, start, target, val, multi, ans, path
+    ___ dfs  s, start, target, val, multi, ans, p..
         __ start __ l..(s) a.. target __ val:
-            ans.a..(''.j..(path))
+            ans.a..(''.j..(p..))
             r..
-        __ start >= l..(s
+        __ start > l..(s
             r..
 
         ___ i __ r..(start, l..(s)):
@@ -32,13 +32,13 @@ c_ Solution:
                 # only allow i == start and its `0`
                 _____
 
-            sa = s[start:i + 1]
-            a = i..(sa)
+            sa  s[start:i + 1]
+            a  i..(sa)
 
             __ start __ 0:
                 dfs(s, i + 1, target, a, a, ans, [sa])
                 _____
 
-            dfs(s, i + 1, target, val + a, a, ans, path +  '+', sa])
-            dfs(s, i + 1, target, val - a, -a, ans, path +  '-', sa])
-            dfs(s, i + 1, target, val - multi + multi * a, multi * a, ans, path +  '*', sa])
+            dfs(s, i + 1, target, val + a, a, ans, p.. +  '+', sa])
+            dfs(s, i + 1, target, val - a, -a, ans, p.. +  '-', sa])
+            dfs(s, i + 1, target, val - multi + multi * a, multi * a, ans, p.. +  '*', sa])

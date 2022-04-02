@@ -47,7 +47,7 @@ ___ calculate_gc_content_1st_solution(sequence
 
 ___ calculate_gc_content_2nd_solution(sequence
 
-    counts = Counter(sequence.upper())
+    counts = Counter(sequence.upper
     gc_content = counts 'G'  + counts 'C'
     at_content = counts 'A'  + counts 'T'
     r.. r..((gc_content / (gc_content + at_content)) * 100, 2)

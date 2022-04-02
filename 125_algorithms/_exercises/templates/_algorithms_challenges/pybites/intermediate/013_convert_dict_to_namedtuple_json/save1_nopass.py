@@ -11,7 +11,7 @@ blog = d..(name='PyBites',
 
 
 ___ dict2nt(dict_
-    r.. n..('nt', dict_.keys())(**dict_)
+    r.. n..('nt', dict_.keys(**dict_)
 
 
 ___ nt2json(nt

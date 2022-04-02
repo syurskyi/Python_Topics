@@ -44,7 +44,7 @@ c_ Ocr:
 
     @classmethod
     ___ valid_grid(cls, inp
-        r.. a..(char __ l..(cls.GRID_NUMS.keys()) ___ char __ inp)
+        r.. a..(char __ l..(cls.GRID_NUMS.keys ___ char __ inp)
 
     @classmethod
     ___ split_every_three(cls, inp

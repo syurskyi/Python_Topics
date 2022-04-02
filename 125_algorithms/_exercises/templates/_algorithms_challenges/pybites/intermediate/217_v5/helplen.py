@@ -13,4 +13,4 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..:
     f = StringIO()
     w__ redirect_stdout(f
         help(builtin)
-    r.. l..(f.getvalue())
+    r.. l..(f.getvalue

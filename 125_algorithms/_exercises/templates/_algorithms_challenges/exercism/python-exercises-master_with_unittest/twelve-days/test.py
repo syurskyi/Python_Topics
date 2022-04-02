@@ -144,7 +144,7 @@ c_ TwelveDaysTests(unittest.TestCase
         assertEqual(verses(1, 3), expected)
 
     ___ test_the_whole_song
-        assertEqual(verses(1, 12), sing())
+        assertEqual(verses(1, 12), sing
 
 
 __ _____ __ _____

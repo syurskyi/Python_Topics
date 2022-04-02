@@ -80,7 +80,7 @@ ___ p..(input_string
         assert_that(pop() __ '(' a.. peek() __ ';')
         w.... pop() __ ';':
             properties    # dict
-            w.... is_upper(peek()):
+            w.... is_upper(peek:
                 key = pop_until(' ')
                 assert_that(is_upper(key))
                 values    # list

@@ -17,7 +17,7 @@ ___ test_equation(puzzle, substitutions
 
 
 ___ solve(puzzle
-    letters = s..(char ___ char __ puzzle __ char.isupper())
+    letters = s..(char ___ char __ puzzle __ char.isupper
     numbers = map(s.., r..(10))
 
     ___ c __ combinations(numbers, l..(letters)):

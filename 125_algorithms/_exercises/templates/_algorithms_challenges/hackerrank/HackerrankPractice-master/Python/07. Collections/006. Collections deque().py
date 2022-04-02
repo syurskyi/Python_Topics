@@ -5,9 +5,9 @@
 ____ c.. _______ d..
 
 
-d = d..()
+d  d..()
 ___ _ __ r..(i..(input())):
-    line = input().s..
+    line  input().s..
     __ line[0] __ 'append':
         d.a..(line[1])
     ____ line[0] __ 'pop':

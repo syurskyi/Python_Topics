@@ -30,17 +30,17 @@ c_ Solution(o..
                 farthest = child
       r.. farthest
 
-    ___ dfs(graph, start, end, visited, path, res
+    ___ dfs(graph, start, end, visited, p.., res
       __ start __ end:
-        res.a..(path + [])
+        res.a..(p.. + [])
         r.. T..
       visited[start] = 1
       ___ child __ graph.get(start, []
         __ visited[child] __ 0:
-          path.a..(child)
-          __ dfs(graph, child, end, visited, path, res
+          p...a..(child)
+          __ dfs(graph, child, end, visited, p.., res
             r.. T..
-          path.pop()
+          p...pop()
 
     graph    # dict
     ___ edge __ edges:
@@ -53,8 +53,8 @@ c_ Solution(o..
     dfs(graph, start, end, visited, [start], res)
     __ n.. res:
       r.. []
-    path = res[0]
-    __ l..(path) % 2 __ 0:
-      r.. [path[l..(path) / 2 - 1], path[l..(path) / 2]]
+    p.. = res[0]
+    __ l..(p..) % 2 __ 0:
+      r.. [p..[l..(p..) / 2 - 1], p..[l..(p..) / 2]]
     ____:
-      r.. [path[l..(path) / 2]]
+      r.. [p..[l..(p..) / 2]]

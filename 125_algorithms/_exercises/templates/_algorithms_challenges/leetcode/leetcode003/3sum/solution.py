@@ -23,21 +23,21 @@ c_ Solution(o..
         nums.s..()
         res    # list
         ___ i __ r..(l..(nums) - 2
-            __ i __ 0 o. i > 0 a.. nums[i - 1] != nums[i]:
-                left = i + 1
-                right = l..(nums) - 1
+            __ i __ 0 o. i > 0 a.. nums[i - 1] ! nums[i]:
+                left  i + 1
+                right  l..(nums) - 1
                 w.... left < right:
-                    s = nums[i] + nums[left] + nums[right]
+                    s  nums[i] + nums[left] + nums[right]
                     __ s __ 0:
                         res.a..([nums[i], nums[left], nums[right]])
-                        left += 1
-                        right -= 1
+                        left + 1
+                        right - 1
                         w.... left < right a.. nums[left] __ nums[left - 1]:
-                            left += 1
+                            left + 1
                         w.... right > left a.. nums[right] __ nums[right + 1]:
-                            right -= 1
+                            right - 1
                     ____ s < 0:
-                        left += 1
+                        left + 1
                     ____:
-                        right -= 1
+                        right - 1
         r.. res

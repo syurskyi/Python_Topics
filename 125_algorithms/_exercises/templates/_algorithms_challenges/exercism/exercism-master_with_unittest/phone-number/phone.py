@@ -26,7 +26,7 @@ c_ Phone:
 
     ___ pretty
         r.. "({}) {}-{}".f..(area_code(), exchange_code(),
-                                   subscriber_code())
+                                   subscriber_code
 
     @staticmethod
     ___ valid_11_digits(inp
@@ -38,4 +38,4 @@ c_ Phone:
 
     @staticmethod
     ___ strip(inp
-        r.. ''.j..(char ___ char __ inp __ char.i..())
+        r.. ''.j..(char ___ char __ inp __ char.i..

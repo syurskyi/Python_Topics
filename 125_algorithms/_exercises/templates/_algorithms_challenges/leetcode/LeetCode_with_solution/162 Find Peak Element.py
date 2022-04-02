@@ -11,7 +11,7 @@ You may imagine that num[-1] = num[n] = -∞.
 For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
 """
 __author__ = 'Daniel'
-_______ sys
+_______ ___
 
 
 c_ Solution:
@@ -43,7 +43,7 @@ c_ Solution:
 
     ___ _get  i
         __ i < 0 o. i >= l..(A
-            r.. -sys.maxint-1
+            r.. -___.maxint-1
         ____:
             r.. A[i]
 

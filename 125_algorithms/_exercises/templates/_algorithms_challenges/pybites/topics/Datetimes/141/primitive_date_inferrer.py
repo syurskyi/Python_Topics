@@ -85,7 +85,7 @@ ___ get_dates(dates
                 return_list.a..('Invalid')
             ____:
                 ___
-                    return_list.a..(s..(d__.strptime(date, date_str).date())                    )
+                    return_list.a..(s..(d__.strptime(date, date_str).date                    )
                 ______ V..
                     return_list.a..("Invalid")
                 

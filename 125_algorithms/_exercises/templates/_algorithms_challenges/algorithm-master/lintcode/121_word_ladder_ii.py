@@ -49,18 +49,18 @@ c_ Solution:
         dfs(A, B, next_words, distance, ans, [A])
         r.. ans
 
-    ___ dfs  word, B, next_words, distance, ans, path
+    ___ dfs  word, B, next_words, distance, ans, p..
         __ word __ B:
-            ans.a..(path | )
+            ans.a..(p.. | )
             r..
 
         ___ _word __ get_next_word(word, next_words
             __ (_word n.. __ distance o.
                 distance[_word] != distance[word] - 1
                 _____
-            path.a..(_word)
-            dfs(_word, B, next_words, distance, ans, path)
-            path.pop()
+            p...a..(_word)
+            dfs(_word, B, next_words, distance, ans, p..)
+            p...pop()
 
     ___ get_next_word  word, next_words
         ___ i __ r..(l..(word)):

@@ -7,7 +7,7 @@ ___ say_hello_bye(name, num
 
 ___ test
     print("test has started")
-    __ say_hello_bye("ram", 2) != "Bye Ram":
+    __ say_hello_bye("ram", 2) ! "Bye Ram":
         print("error1")
-    __ say_hello_bye("jodu", 1) != "Hello Jodu":
+    __ say_hello_bye("jodu", 1) ! "Hello Jodu":
         print("error2")

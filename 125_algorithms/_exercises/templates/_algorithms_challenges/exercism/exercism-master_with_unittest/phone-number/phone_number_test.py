@@ -26,15 +26,15 @@ c_ PhoneTest(unittest.TestCase
 
     ___ test_area_code
         number = Phone("1234567890")
-        assertEqual("123", number.area_code())
+        assertEqual("123", number.area_code
 
     ___ test_pretty_print
         number = Phone("1234567890")
-        assertEqual("(123) 456-7890", number.pretty())
+        assertEqual("(123) 456-7890", number.pretty
 
     ___ test_pretty_print_with_full_us_phone_number
         number = Phone("11234567890")
-        assertEqual("(123) 456-7890", number.pretty())
+        assertEqual("(123) 456-7890", number.pretty
 
 
 __ _____ __ _____

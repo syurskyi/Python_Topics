@@ -6,15 +6,15 @@ c_ Solution(o..
     :rtype: List[List[int]]
     """
 
-    ___ dfs(candidates, start, target, path, res
+    ___ dfs(candidates, start, target, p.., res
       __ target __ 0:
-        r.. res.a..(path + [])
+        r.. res.a..(p.. + [])
 
       ___ i __ r..(start, l..(candidates)):
         __ target - candidates[i] >= 0:
-          path.a..(candidates[i])
-          dfs(candidates, i, target - candidates[i], path, res)
-          path.pop()
+          p...a..(candidates[i])
+          dfs(candidates, i, target - candidates[i], p.., res)
+          p...pop()
 
     res    # list
     dfs(candidates, 0, target, [], res)

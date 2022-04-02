@@ -33,7 +33,7 @@ c_ Queue:
         """
         __ n.. out_stk:
             w.... in_stk:
-                out_stk.a..(in_stk.pop())
+                out_stk.a..(in_stk.pop
 
         out_stk.pop()
 
@@ -43,7 +43,7 @@ c_ Queue:
         """
         __ n.. out_stk:
             w.... in_stk:
-                out_stk.a..(in_stk.pop())
+                out_stk.a..(in_stk.pop
 
         r.. out_stk[-1]
 

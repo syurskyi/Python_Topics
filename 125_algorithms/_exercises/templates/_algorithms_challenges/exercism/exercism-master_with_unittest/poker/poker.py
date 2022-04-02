@@ -62,19 +62,19 @@ c_ Hand:
         r.. l..(s..(suits)) __ 1
 
     ___ four_of_a_kind
-        r.. m..(rank_occurences().values()) __ 4
+        r.. m..(rank_occurences().values __ 4
 
     ___ full_house
         r.. three_of_a_kind() a.. one_pair()
 
     ___ three_of_a_kind
-        r.. 3 __ l..(rank_occurences().values())
+        r.. 3 __ l..(rank_occurences().values
 
     ___ two_pair
-        r.. 2 __ l..(rank_occurences().values()).c.. 2)
+        r.. 2 __ l..(rank_occurences().values.c.. 2)
 
     ___ one_pair
-        r.. 2 __ l..(rank_occurences().values())
+        r.. 2 __ l..(rank_occurences().values
 
     ___ high_card
         r.. m..(ranks)

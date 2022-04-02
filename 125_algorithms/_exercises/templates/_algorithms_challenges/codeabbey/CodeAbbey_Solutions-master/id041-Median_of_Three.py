@@ -1,11 +1,11 @@
 ___ findMedian(amount
         answer    # list
         ___ x __ r..(amount
-                [a, b, c] = raw_input().s..
-                minNum = m..(i..(a), i..(b), i..(c))
-                maxNum = m..(i..(a), i..(b), i..(c))
+                [a, b, c]  raw_input().s..
+                minNum  m..(i..(a), i..(b), i..(c))
+                maxNum  m..(i..(a), i..(b), i..(c))
                 ___ x __ [a, b, c]:
-                    __ i..(x) != minNum a.. i..(x) != maxNum:
+                    __ i..(x) ! minNum a.. i..(x) ! maxNum:
                         answer.a..(s..(x))
         print(' '.j..(answer))
-findMedian(input())
+findMedian(input

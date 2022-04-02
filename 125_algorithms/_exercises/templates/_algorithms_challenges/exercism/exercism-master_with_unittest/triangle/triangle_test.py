@@ -5,33 +5,33 @@ ____ triangle _______ Triangle, TriangleError
 
 c_ TriangleTests(unittest.TestCase
     ___ test_equilateral_triangles_have_equal_sides
-        assertEqual("equilateral", Triangle(2, 2, 2).kind())
+        assertEqual("equilateral", Triangle(2, 2, 2).kind
 
     ___ test_larger_equilateral_triangles_also_have_equal_sides
-        assertEqual("equilateral", Triangle(10, 10, 10).kind())
+        assertEqual("equilateral", Triangle(10, 10, 10).kind
 
     ___ test_isosceles_triangles_have_last_two_sides_equal
-        assertEqual("isosceles", Triangle(3, 4, 4).kind())
+        assertEqual("isosceles", Triangle(3, 4, 4).kind
 
     ___ test_isosceles_triangles_have_first_and_last_sides_equal
-        assertEqual("isosceles", Triangle(4, 3, 4).kind())
+        assertEqual("isosceles", Triangle(4, 3, 4).kind
 
     ___ test_isosceles_triangles_have_two_first_sides_equal
-        assertEqual("isosceles", Triangle(4, 4, 3).kind())
+        assertEqual("isosceles", Triangle(4, 4, 3).kind
 
     ___ test_isosceles_triangles_have_in_fact_exactly_two_sides_equal
-        assertEqual("isosceles", Triangle(10, 10, 2).kind())
+        assertEqual("isosceles", Triangle(10, 10, 2).kind
 
     ___ test_scalene_triangles_have_no_equal_sides
-        assertEqual("scalene", Triangle(3, 4, 5).kind())
+        assertEqual("scalene", Triangle(3, 4, 5).kind
 
     ___ test_scalene_triangles_have_no_equal_sides_at_a_larger_scale_too
-        assertEqual("scalene", Triangle(10, 11, 12).kind())
+        assertEqual("scalene", Triangle(10, 11, 12).kind
 
-        assertEqual("scalene", Triangle(5, 4, 2).kind())
+        assertEqual("scalene", Triangle(5, 4, 2).kind
 
     ___ test_very_small_triangles_are_legal
-        assertEqual("scalene", Triangle(0.4, 0.6, 0.3).kind())
+        assertEqual("scalene", Triangle(0.4, 0.6, 0.3).kind
 
     ___ test_triangles_with_no_size_are_illegal
         assertRaises(

@@ -9,14 +9,14 @@ c_ Solution:
   # @param {TreeNode} root
   # @return {string[]}
   ___ binaryTreePaths  root
-    ___ helper(root, path, res
+    ___ helper(root, p.., res
       __ root:
-        path.a..(s..(root.val))
-        left = helper(root.left, path, res)
-        right = helper(root.right, path, res)
+        p...a..(s..(root.val))
+        left = helper(root.left, p.., res)
+        right = helper(root.right, p.., res)
         __ n.. left a.. n.. right:
-          res.a..("->".j..(path))
-        path.pop()
+          res.a..("->".j..(p..))
+        p...pop()
         r.. T..
 
     res    # list

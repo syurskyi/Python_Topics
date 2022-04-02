@@ -74,4 +74,4 @@ ___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
     r.. s..(output)
 
 
-print(get_users_for_shell())
+print(get_users_for_shell

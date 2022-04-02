@@ -4,7 +4,7 @@
 
 # Replace all ______ with rjust, ljust or center.
 
-thickness = i..(input()) # This must be an odd number
+thickness = i..(input # This must be an odd number
 c = 'H'
 
 # Top Cone

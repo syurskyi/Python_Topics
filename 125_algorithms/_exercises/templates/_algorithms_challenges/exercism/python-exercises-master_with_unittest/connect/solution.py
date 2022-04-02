@@ -21,7 +21,7 @@ c_ ConnectGame:
         r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
 
     ___ make_board  lines
-        r.. ["".j..(l.s..()) ___ l __ lines.s.. ]
+        r.. ["".j..(l.s.. ___ l __ lines.s.. ]
 
     ___ player_reach_dest  player, x, y
         __ player __ black:

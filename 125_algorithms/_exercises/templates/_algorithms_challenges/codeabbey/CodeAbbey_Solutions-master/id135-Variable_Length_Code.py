@@ -49,4 +49,4 @@ ___ compress_string(s__
         answer.a..(encoded_value)
     print(' '.j..(answer))
     
-compress_string(raw_input())
+compress_string(raw_input

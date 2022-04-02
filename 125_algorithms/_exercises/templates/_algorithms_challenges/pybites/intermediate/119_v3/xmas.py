@@ -29,4 +29,4 @@ ___ generate_xmas_tree(rows=10
 
 __ _______ __ _______
 
-    print(generate_xmas_tree())
+    print(generate_xmas_tree

@@ -5,20 +5,20 @@ c_ Solution(o..
     :rtype: List[str]
     """
 
-    ___ dfs(left, path, res, n
-      __ l..(path) __ 2 * n:
+    ___ dfs(left, p.., res, n
+      __ l..(p..) __ 2 * n:
         __ left __ 0:
-          res.a..("".j..(path))
+          res.a..("".j..(p..))
         r..
 
       __ left < n:
-        path.a..("(")
-        dfs(left + 1, path, res, n)
-        path.pop()
+        p...a..("(")
+        dfs(left + 1, p.., res, n)
+        p...pop()
       __ left > 0:
-        path.a..(")")
-        dfs(left - 1, path, res, n)
-        path.pop()
+        p...a..(")")
+        dfs(left - 1, p.., res, n)
+        p...pop()
 
     res    # list
     dfs(0, [], res, n)

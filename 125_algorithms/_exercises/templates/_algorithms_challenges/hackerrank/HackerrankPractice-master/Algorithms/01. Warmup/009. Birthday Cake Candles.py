@@ -2,6 +2,6 @@
 # Score: 10
 
 
-n = i..(input())
-ar = l.. m..(i.., input().s..()))
+n  i..(input
+ar  l.. m..(i.., input().s..()))
 print(ar.c.. m..(ar)))

@@ -3,15 +3,15 @@
 ___ check_brackets(checks
     answer    # list
     ___ check __ r..(checks
-        raw_data = input()
-        data = (''.j..([char ___ char __ raw_data __ char __('(){}[]<>')]))
+        raw_data  input()
+        data  (''.j..([char ___ char __ raw_data __ char __('(){}[]<>')]))
         
         # Set higher than len(data) to make sure while loop initates.
-        old_data_length = l..(data) + 1
+        old_data_length  l..(data) + 1
         
         w.... l..(data) < old_data_length:
-            old_data_length = l..(data)
-            data = data.r..('()','').r..('{}','').r..('[]','').r..('<>','')
+            old_data_length  l..(data)
+            data  data.r..('()','').r..('{}','').r..('[]','').r..('<>','')
 
         __ l..(data) > 0:
             answer.a..('0') # String had incorrect bracket usage.

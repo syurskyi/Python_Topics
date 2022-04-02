@@ -11,17 +11,17 @@ c_ Solution:
         dfs(n, 1, 0, ans,  '(' )
         r.. ans
 
-    ___ dfs  n, lcnt, rcnt, ans, path
-        __ l..(path) __ 2 * n:
-            ans.a..(''.j..(path))
+    ___ dfs  n, lcnt, rcnt, ans, p..
+        __ l..(p..) __ 2 * n:
+            ans.a..(''.j..(p..))
             r..
 
         __ rcnt < lcnt:
-            path.a..(')')
-            dfs(n, lcnt, rcnt + 1, ans, path)
-            path.pop()
+            p...a..(')')
+            dfs(n, lcnt, rcnt + 1, ans, p..)
+            p...pop()
 
         __ lcnt < n:
-            path.a..('(')
-            dfs(n, lcnt + 1, rcnt, ans, path)
-            path.pop()
+            p...a..('(')
+            dfs(n, lcnt + 1, rcnt, ans, p..)
+            p...pop()

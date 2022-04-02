@@ -36,7 +36,7 @@ c_ GoCountingTest(unittest.TestCase
         board = go_counting.Board(board5x5)
         stone, territory = board.territory(x=1, y=1)
         assertEqual(stone, go_counting.NONE)
-        assertSetEqual(territory, s..())
+        assertSetEqual(territory, s..
 
     ___ test_invalid_because_x_is_too_low
         board = go_counting.Board(board5x5)
@@ -61,8 +61,8 @@ c_ GoCountingTest(unittest.TestCase
     ___ test_one_territory_is_the_whole_board
         board = go_counting.Board([" "])
         territories = board.territories()
-        assertSetEqual(territories[go_counting.BLACK], s..())
-        assertSetEqual(territories[go_counting.WHITE], s..())
+        assertSetEqual(territories[go_counting.BLACK], s..
+        assertSetEqual(territories[go_counting.WHITE], s..
         assertSetEqual(territories[go_counting.NONE], {(0, 0)})
 
     ___ test_two_territories_rectangular_board
@@ -74,15 +74,15 @@ c_ GoCountingTest(unittest.TestCase
         territories = board.territories()
         assertSetEqual(territories[go_counting.BLACK], {(0, 0), (0, 1)})
         assertSetEqual(territories[go_counting.WHITE], {(3, 0), (3, 1)})
-        assertSetEqual(territories[go_counting.NONE], s..())
+        assertSetEqual(territories[go_counting.NONE], s..
 
     ___ test_two_region_rectangular_board
         input_board = [" B "]
         board = go_counting.Board(input_board)
         territories = board.territories()
         assertSetEqual(territories[go_counting.BLACK], {(0, 0), (2, 0)})
-        assertSetEqual(territories[go_counting.WHITE], s..())
-        assertSetEqual(territories[go_counting.NONE], s..())
+        assertSetEqual(territories[go_counting.WHITE], s..
+        assertSetEqual(territories[go_counting.NONE], s..
 
     # Utility functions
     ___ setUp

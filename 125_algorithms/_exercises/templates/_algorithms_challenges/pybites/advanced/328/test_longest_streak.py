@@ -1,5 +1,5 @@
 ____ d__ _______ date
-_______ sys
+_______ ___
 ____ urllib.request _______ urlretrieve
 ____ zipfile _______ ZipFile
 
@@ -23,7 +23,7 @@ RESULTS_UTC = [
 ]
 PATHS = [TMP / f"test{x}.json" ___ x __ r..(1, 5)]
 
-sys.path.a..(TMP)
+___.p...a..(TMP)
 
 
 ?p__.f..(scope="module")

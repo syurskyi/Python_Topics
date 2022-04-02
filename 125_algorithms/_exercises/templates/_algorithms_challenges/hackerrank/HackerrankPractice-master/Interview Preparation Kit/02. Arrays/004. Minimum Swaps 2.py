@@ -2,7 +2,7 @@
 #  Score: 40
 
 
-n = i..(input())
+n = i..(input
 arr = l.. m..(i.., input().s..()))
 count = 0
 

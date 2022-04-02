@@ -1,10 +1,10 @@
 ____ difflib _______ SequenceMatcher
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 
-TMP = os.getenv("TMP", "/tmp")
-DICTIONARY = os.path.j..(TMP, 'dictionary.txt')
-__ n.. os.path.isfile(DICTIONARY
+TMP = __.getenv("TMP", "/tmp")
+DICTIONARY = __.p...j..(TMP, 'dictionary.txt')
+__ n.. __.p...isfile(DICTIONARY
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/dictionary.txt',
         DICTIONARY
@@ -24,7 +24,7 @@ ___ suggest_word(misspelled_word: s.., words: s.. = N..) __ s..:
         words = load_words()
     
 
-    r.. m..(words,key=l.... x:SequenceMatcher(N..,misspelled_word,x).ratio())
+    r.. m..(words,key=l.... x:SequenceMatcher(N..,misspelled_word,x).ratio
     best_word = N..
     highest_ratio = f__("-inf")
     ___ word __ words:

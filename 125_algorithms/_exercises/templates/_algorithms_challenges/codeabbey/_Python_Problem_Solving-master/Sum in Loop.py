@@ -1,4 +1,4 @@
-Num = i..(input())
+Num = i..(input
 listo    # list
 w.... l..(listo) < Num:
     number = input()

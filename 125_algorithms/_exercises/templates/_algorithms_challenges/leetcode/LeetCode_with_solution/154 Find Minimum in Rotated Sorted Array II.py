@@ -11,7 +11,7 @@ Find the minimum element.
 
 The array may contain duplicates.
 """
-_______ sys
+_______ ___
 
 __author__ = 'Danyang'
 
@@ -27,7 +27,7 @@ c_ Solution(o..
         """
         lo = 0
         hi = l..(A)
-        mini = sys.maxint
+        mini = ___.maxint
         w.... lo < hi:
             mid = (lo+hi)/2
             mini = m..(mini, A[mid])

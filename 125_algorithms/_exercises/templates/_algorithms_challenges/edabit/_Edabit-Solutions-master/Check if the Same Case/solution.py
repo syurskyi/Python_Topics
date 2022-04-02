@@ -8,7 +8,7 @@ ___ same_case(txt
 
 ___ test
     print("Test has started")
-    __ same_case("mArmALadE") != F..:
+    __ same_case("mArmALadE") ! F..:
         print("error1")
-    __ same_case("MARMALADE") != T..:
+    __ same_case("MARMALADE") ! T..:
         print("error2")

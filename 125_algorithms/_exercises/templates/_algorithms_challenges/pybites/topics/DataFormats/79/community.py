@@ -27,5 +27,5 @@ ___ create_user_bar_chart(content
 
 
 
-create_user_bar_chart(get_csv())
+create_user_bar_chart(get_csv
 #get_csv()

@@ -73,5 +73,5 @@ ___ test_stop_iteration(my_game
 ___ test_computer_move
     computer_moves = s..()
     ___ i __ r..(1000
-        computer_moves.add(_get_computer_move())
+        computer_moves.add(_get_computer_move
     ... computer_moves __ defeated_by.k..

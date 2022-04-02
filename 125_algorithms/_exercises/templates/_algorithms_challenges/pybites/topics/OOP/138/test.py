@@ -12,4 +12,4 @@ c_ Employee:
 
 khoo = Employee('sc', 'khoo', 250)
 
-print(khoo.full_name())
+print(khoo.full_name

@@ -92,7 +92,7 @@ ___ handle_args(args=N.., cart_ N..
        Modifies the cart object, no return"""
     __ args __ N..
         parser = create_parser()
-        args = vars(parser.parse_args())
+        args = vars(parser.parse_args
 
     __ cart __ N..
         cart = Groceries()

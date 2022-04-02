@@ -30,7 +30,7 @@ c_ Solution:
             evals[b, a] = 1.0 / values[i]
 
         ___ a, b __ queries:
-            res = dfs(a, b, 1, nexts, evals, s..())
+            res = dfs(a, b, 1, nexts, evals, s..
             ans.a..(f__(res))
 
         r.. ans

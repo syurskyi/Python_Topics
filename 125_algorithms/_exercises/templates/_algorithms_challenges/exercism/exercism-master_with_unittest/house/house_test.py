@@ -122,7 +122,7 @@ c_ VerseTest(unittest.TestCase
                    'that killed the rat\n'\
                    'that ate the malt\n'\
                    'that lay in the house that Jack built.'
-        assertEqual(expected, rhyme())
+        assertEqual(expected, rhyme
 
 
 __ _____ __ _____

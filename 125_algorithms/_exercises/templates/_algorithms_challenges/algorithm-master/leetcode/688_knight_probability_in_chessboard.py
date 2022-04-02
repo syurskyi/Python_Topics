@@ -44,7 +44,7 @@ c_ Solution:
 
             dp = nxt
 
-        r.. s..(dp.values())
+        r.. s..(dp.values
 
 
 c_ Solution:

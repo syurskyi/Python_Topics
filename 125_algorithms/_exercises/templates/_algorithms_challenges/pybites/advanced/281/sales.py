@@ -1,5 +1,5 @@
 _______ json
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ typing _______ Dict, List, Union
 
@@ -8,7 +8,7 @@ _______ requests
 
 URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
 STATS: List[s..] = ["sum", "mean", "max"]
-TMP: Path = Path(os.getenv("TMP", "/tmp")) / "MonthlySales.csv"
+TMP: Path = Path(__.getenv("TMP", "/tmp")) / "MonthlySales.csv"
 
 
 ___ get_data(url: s..) __ Dict[s.., s..]:
@@ -21,7 +21,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
         Dict[str, str]: The dictionary extracted from the data
     """
     __ TMP.exists
-        data = json.loads(TMP.read_text())
+        data = json.loads(TMP.read_text
     ____:
         response = requests.get(url)
         response.raise_for_status()

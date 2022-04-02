@@ -1,11 +1,11 @@
-_______ os
+_______ __
 _______ urllib.request
 
 # PREWORK
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.j..(TMP, DICT)
+DICTIONARY = __.p...j..(TMP, DICT)
 urllib.request.urlretrieve _*{S3}{DICT}', DICTIONARY)
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
@@ -17,7 +17,7 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 
 ___ load_words
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
-    text = o.. DICTIONARY, 'r').r..
+    text = o.. DICTIONARY, _.r..
     r.. [word ___ word __ text.s.. ]
 
 

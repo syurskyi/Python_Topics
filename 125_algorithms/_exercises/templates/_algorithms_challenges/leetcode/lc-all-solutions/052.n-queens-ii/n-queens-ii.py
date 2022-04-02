@@ -5,20 +5,20 @@ c_ Solution(o..
     :rtype: int
     """
 
-    ___ dfs(path, n
-      __ l..(path) __ n:
+    ___ dfs(p.., n
+      __ l..(p..) __ n:
         r.. 1
       res = 0
       ___ i __ r..(n
-        __ i n.. __ path a.. isValidQueen(path, i
-          path.a..(i)
-          res += dfs(path, n)
-          path.pop()
+        __ i n.. __ p.. a.. isValidQueen(p.., i
+          p...a..(i)
+          res += dfs(p.., n)
+          p...pop()
       r.. res
 
-    ___ isValidQueen(path, k
-      ___ i __ r..(l..(path)):
-        __ abs(k - path[i]) __ abs(l..(path) - i
+    ___ isValidQueen(p.., k
+      ___ i __ r..(l..(p..)):
+        __ abs(k - p..[i]) __ abs(l..(p..) - i
           r.. F..
       r.. T..
 

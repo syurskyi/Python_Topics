@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-_______ sys
+_______ ___
 ____ bisect _______ bisect_left
 
 __author__ = 'Daniel'
@@ -17,7 +17,7 @@ c_ Solution(o..
         """
         pos_lst1 = [pos ___ pos, v __ e..(words) __ v __ word1]
         pos_lst2 = [pos ___ pos, v __ e..(words) __ v __ word2]
-        mini = sys.maxint
+        mini = ___.maxint
         ___ pos __ pos_lst1:
             idx = bisect_left(pos_lst2, pos)
             ___ nei __ (-1, 0

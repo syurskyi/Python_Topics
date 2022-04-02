@@ -18,17 +18,17 @@ c_ Solution:
         dfs(root, target, ans, [])
         r.. ans
 
-    ___ dfs  node, remaining, ans, path
+    ___ dfs  node, remaining, ans, p..
         __ n.. node:
             r..
 
-        path.a..(node.val)
+        p...a..(node.val)
 
         remaining -= node.val
         __ remaining __ 0 a.. n.. node.left a.. n.. node.right:
-            ans.a..(path | )
+            ans.a..(p.. | )
 
-        dfs(node.left, remaining, ans, path)
-        dfs(node.right, remaining, ans, path)
+        dfs(node.left, remaining, ans, p..)
+        dfs(node.right, remaining, ans, p..)
 
-        path.pop()
+        p...pop()

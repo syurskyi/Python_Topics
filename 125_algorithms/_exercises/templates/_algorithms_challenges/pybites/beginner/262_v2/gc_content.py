@@ -16,7 +16,7 @@ ___ calculate_gc_content(sequence
 
     
 
-    all_counts = s..(count ___ count __ counts.values())
+    all_counts = s..(count ___ count __ counts.values
     percent = (counts.get('G',0) + counts.get('C',0))/all_counts
 
     r.. r..(percent * 100,2)

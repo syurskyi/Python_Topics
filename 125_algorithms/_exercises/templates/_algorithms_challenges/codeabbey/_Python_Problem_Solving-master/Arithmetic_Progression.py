@@ -1,4 +1,4 @@
-d = i..(input())
+d = i..(input
 count = 0
 res    # list
 w.... count < d:

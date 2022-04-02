@@ -7,7 +7,7 @@ ____ paw _______ create_paw_deck
 
 ?p__.f..(scope="module")
 ___ deck
-    r.. l..(create_paw_deck())
+    r.. l..(create_paw_deck
 
 
 ?p__.f..(scope="module")
@@ -39,23 +39,23 @@ ___ test_number_action_cards(deck, small_deck, big_deck
 
 ___ test_all_action_cards_used(deck, small_deck, big_deck
     cards = [card.action ___ card __ deck __ card.action __ n.. N..]
-    ... s..(Counter(cards).values()) __ 8
+    ... s..(Counter(cards).values __ 8
 
     cards = [card.action ___ card __ small_deck __ card.action __ n.. N..]
-    ... s..(Counter(cards).values()) __ 4
+    ... s..(Counter(cards).values __ 4
 
     cards = [card.action ___ card __ big_deck __ card.action __ n.. N..]
-    ... s..(Counter(cards).values()) __ 16
+    ... s..(Counter(cards).values __ 16
 
 
 ___ test_action_cards_in_different_positions(deck
     action_cards = [card.card ___ card __ deck __ card.action __ n.. N..]
 
-    deck2 = l..(create_paw_deck())
+    deck2 = l..(create_paw_deck
     action_cards2 = [card.card ___ card __ deck2 __ card.action __ n.. N..]
     ... action_cards != action_cards2
 
-    deck3 = l..(create_paw_deck())
+    deck3 = l..(create_paw_deck
     action_cards3 = [card.card ___ card __ deck3 __ card.action __ n.. N..]
     ... action_cards != action_cards2 != action_cards3
 

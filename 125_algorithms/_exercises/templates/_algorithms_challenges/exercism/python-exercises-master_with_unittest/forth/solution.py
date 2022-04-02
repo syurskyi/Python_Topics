@@ -32,11 +32,11 @@ ___ evaluate(input_data
             ____ word __ defines:
                 input_data = defines[word] + input_data
             ____ word __ '+':
-                stack.a..(stack.pop() + stack.pop())
+                stack.a..(stack.pop() + stack.pop
             ____ word __ '-':
-                stack.a..(-stack.pop() + stack.pop())
+                stack.a..(-stack.pop() + stack.pop
             ____ word __ '*':
-                stack.a..(stack.pop() * stack.pop())
+                stack.a..(stack.pop() * stack.pop
             ____ word __ '/':
                 divisor = stack.pop()
                 __ divisor __ 0:

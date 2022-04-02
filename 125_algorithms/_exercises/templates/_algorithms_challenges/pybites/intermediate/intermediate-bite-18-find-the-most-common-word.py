@@ -11,7 +11,7 @@ Check the tests for more info - have fun!
 KEYWORDS: Counter, data analysis, list comprehensions
 """
 
-_______ os
+_______ __
 _______ urllib.request
 _______ s__
 ____ c.. _______ Counter
@@ -20,9 +20,9 @@ _______ __
 
 
 # data provided
-tmp = os.getenv("TMP", "/tmp")
-stopwords_file = os.path.j..(tmp, 'stopwords')
-harry_text = os.path.j..(tmp, 'harry')
+tmp = __.getenv("TMP", "/tmp")
+stopwords_file = __.p...j..(tmp, 'stopwords')
+harry_text = __.p...j..(tmp, 'harry')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file
@@ -44,11 +44,11 @@ ___ my_solution_get_harry_most_common_word
 
     stopwords    # list
     filtered    # list
-    f1 = o.. stopwords_file, 'r')
+    f1 = o.. stopwords_file, _
     ___ line __ f1:
-        stopwords.a..(line.strip())
+        stopwords.a..(line.strip
 
-    f2 = o.. harry_text, 'r')
+    f2 = o.. harry_text, _
     ___ line __ f2:
         ___ word __ line.s.. :
             print(word)
@@ -76,4 +76,4 @@ ___ pyb_solution_get_harry_most_common_word
             r.. cnt.most_common(1)[0]
 
 
-print(my_solution_get_harry_most_common_word())
+print(my_solution_get_harry_most_common_word

@@ -18,7 +18,7 @@ c_ Solution(o..
             hashmap[num].a..(i)
         res    # list
         ___ num __ arr1:
-            res.a..(hashmap[num].pop())
+            res.a..(hashmap[num].pop
         r.. res
     
     ___ test

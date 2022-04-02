@@ -6,28 +6,28 @@ c_ Solution(o..
     """
     ans    # list
 
-    ___ dfs(path, n, ans
-      __ l..(path) __ n:
-        ans.a..(drawChess(path))
+    ___ dfs(p.., n, ans
+      __ l..(p..) __ n:
+        ans.a..(drawChess(p..))
         r..
 
       ___ i __ r..(n
-        __ i n.. __ path a.. isValidQueen(path, i
-          path.a..(i)
-          dfs(path, n, ans)
-          path.pop()
+        __ i n.. __ p.. a.. isValidQueen(p.., i
+          p...a..(i)
+          dfs(p.., n, ans)
+          p...pop()
 
-    ___ isValidQueen(path, k
-      ___ i __ r..(l..(path)):
-        __ abs(k - path[i]) __ abs(l..(path) - i
+    ___ isValidQueen(p.., k
+      ___ i __ r..(l..(p..)):
+        __ abs(k - p..[i]) __ abs(l..(p..) - i
           r.. F..
       r.. T..
 
-    ___ drawChess(path
+    ___ drawChess(p..
       ret    # list
-      chess = [["."] * l..(path) ___ _ __ r..(l..(path))]
-      ___ i __ r..(0, l..(path)):
-        chess[i][path[i]] = "Q"
+      chess = [["."] * l..(p..) ___ _ __ r..(l..(p..))]
+      ___ i __ r..(0, l..(p..)):
+        chess[i][p..[i]] = "Q"
       ___ chs __ chess:
         ret.a..("".j..(chs))
       r.. ret

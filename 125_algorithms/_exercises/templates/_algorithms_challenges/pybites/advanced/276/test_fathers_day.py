@@ -63,7 +63,7 @@ November 8
 ___ test_get_father_days_default
     father_days = get_father_days()
     ... l..(father_days) __ 12
-    number_countries = s..(l..(val) ___ val __ father_days.values())
+    number_countries = s..(l..(val) ___ val __ father_days.values
     ... number_countries __ 35
     ... father_days 'June 14'  __  'U.S.', 'Canada', 'U.K.'
     ... father_days 'March 19'  __ [

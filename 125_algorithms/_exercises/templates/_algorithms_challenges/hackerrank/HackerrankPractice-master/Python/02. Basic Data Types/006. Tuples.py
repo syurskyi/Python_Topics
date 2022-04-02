@@ -2,5 +2,5 @@
 # Score: 10
 
 
-n = i..(input())
+n  i..(input
 print(hash(t.. m..(i.., input().s..()))))

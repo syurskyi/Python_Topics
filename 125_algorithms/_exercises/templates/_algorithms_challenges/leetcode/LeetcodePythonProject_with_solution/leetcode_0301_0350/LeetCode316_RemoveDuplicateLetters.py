@@ -26,7 +26,7 @@ c_ Solution(o..
             lastPosMap[c] = i
         length = l..(lastPosMap)
         res =  'a' *length
-        begin, end = 0, m..(lastPosMap.values())
+        begin, end = 0, m..(lastPosMap.values
         ___ i __ r..(length
             minChar = chr(o..('z')+1)
             ___ j __ r..(begin, end+1
@@ -37,7 +37,7 @@ c_ Solution(o..
             __ i __ length-1:
                 _____
             del lastPosMap[minChar]
-            end = m..(lastPosMap.values())
+            end = m..(lastPosMap.values
         r.. ''.j..(res)
     
     ___ test

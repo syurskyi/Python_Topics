@@ -1,10 +1,10 @@
 """A palindrome is a word, phrase, number, or other sequence of characters
 which reads the same backward as forward"""
-_______ os
+_______ __
 _______ urllib.request
 
-TMP = os.getenv("TMP", "/tmp")
-DICTIONARY = os.path.j..(TMP, 'dictionary_m_words.txt')
+TMP = __.getenv("TMP", "/tmp")
+DICTIONARY = __.p...j..(TMP, 'dictionary_m_words.txt')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dictionary_m_words.txt',
     DICTIONARY
@@ -14,7 +14,7 @@ urllib.request.urlretrieve(
 ___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
     w__ o.. DICTIONARY) __ f:
-        r.. (word.l...s.. ___ word __ f.readlines())
+        r.. (word.l...s.. ___ word __ f.readlines
 
 
 ___ is_palindrome(word

@@ -9,7 +9,7 @@ ___ calculate_gc_content(sequence
     seq = [c ___ c __ sequence.l.. __ c __ 'agct'
     counts = d..(Counter(seq))
 
-    total = s..(counts.values())
+    total = s..(counts.values
     gc_pct = s..([count ___ key, count
                   __ counts.i.. __ key __ 'gc' ) / total
 

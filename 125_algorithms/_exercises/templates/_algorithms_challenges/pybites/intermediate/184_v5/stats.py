@@ -1,10 +1,10 @@
 ____ c.. _______ Counter
 ____ csv _______ DictReader
-____ os _______ path
+____ __ _______ p..
 ____ urllib.request _______ urlretrieve
 
-DATA = path.j..('/tmp', 'bite_output_log.txt')
-__ n.. path.isfile(DATA
+DATA = p...j..('/tmp', 'bite_output_log.txt')
+__ n.. p...isfile(DATA
     urlretrieve('https://bit.ly/2HoFZBd', DATA)
 
 

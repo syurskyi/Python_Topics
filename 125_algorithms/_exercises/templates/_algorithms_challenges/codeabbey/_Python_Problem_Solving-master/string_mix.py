@@ -1,6 +1,6 @@
 #accepting the two strings
-s1 = ''.j..(i ___ i __ input() __ i.islower())
-s2 = ''.j..(i ___ i __ input() __ i.islower())
+s1 = ''.j..(i ___ i __ input() __ i.islower
+s2 = ''.j..(i ___ i __ input() __ i.islower
 #using sorted to arrange the string in order before processing them
 s1 = s..(s1)
 s2 = s..(s2)
@@ -8,8 +8,8 @@ s2 = s..(s2)
 #defining the method mix
 ___ mix(s1,s2
     
-    s1 = ''.j..(i ___ i __ s1 __ i.islower())
-    s2 = ''.j..(i ___ i __ s2 __ i.islower())
+    s1 = ''.j..(i ___ i __ s1 __ i.islower
+    s2 = ''.j..(i ___ i __ s2 __ i.islower
 
     s1 = s..(s1)
     s2 = s..(s2)

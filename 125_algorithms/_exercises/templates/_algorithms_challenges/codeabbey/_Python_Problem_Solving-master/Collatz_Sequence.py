@@ -1,4 +1,4 @@
-data = i..(input())
+data = i..(input
 
 a = [i..(x) ___ x __ input().s.. ]
 #print(len(a))

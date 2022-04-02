@@ -50,4 +50,4 @@ c_ Solution(o..
           sticksIdx |= {i}
       r.. F..
 
-    r.. dfs(nums, 0, sticksIdx, halfLen, 0, s..())
+    r.. dfs(nums, 0, sticksIdx, halfLen, 0, s..

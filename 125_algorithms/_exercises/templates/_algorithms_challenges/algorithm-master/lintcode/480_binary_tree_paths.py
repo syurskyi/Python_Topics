@@ -21,18 +21,18 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  node, ans, path
-        path.a..(s..(node.val))
+    ___ dfs  node, ans, p..
+        p...a..(s..(node.val))
 
         __ n.. node.left a.. n.. node.right:
-            ans.a..('->'.j..(path))
-            path.pop()
+            ans.a..('->'.j..(p..))
+            p...pop()
             r..
 
         __ node.left:
-            dfs(node.left, ans, path)
+            dfs(node.left, ans, p..)
 
         __ node.right:
-            dfs(node.right, ans, path)
+            dfs(node.right, ans, p..)
 
-        path.pop()
+        p...pop()

@@ -1,10 +1,10 @@
 ____ c.. _______ Counter, n..
-_______ os
+_______ __
 _______ urllib.request
 
 # prep
-tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.j..(tmp, 'dirnames')
+tmp = __.getenv("TMP", "/tmp")
+tempfile = __.p...j..(tmp, 'dirnames')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile

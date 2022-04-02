@@ -12,15 +12,15 @@ Then code your solution to make them pass.
 Keep calm and code in Python! :)
 """
 
-_______ os
+_______ __
 ____ c.. _______ Counter
 _______ urllib.request
 _______ __
 
 # prep
-DIR = os.getenv('TMP', '/tmp')
+DIR = __.getenv('TMP', '/tmp')
 FILENAME = "feed.txt"
-tempfile = os.path.j..(DIR, FILENAME)
+tempfile = __.p...j..(DIR, FILENAME)
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile

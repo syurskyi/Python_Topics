@@ -1,7 +1,7 @@
 ____ math _______ ceil, sqrt
-_______ sys
+_______ ___
 
-__ sys.version_info[0] __ 2:
+__ ___.version_info[0] __ 2:
     ____ i.. _______ izip_longest __ z__
 ____:
     ____ i.. _______ z__

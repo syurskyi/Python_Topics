@@ -15,19 +15,19 @@ c_ Solution(o..
             skip[3][7] = skip[7][3] = skip[4][6] = skip[6][4] = 5
         result = 0
         ___ i __ r..(m, n+1
-            path = s..()
-            result += helper(path, 1, i-1)*4
-            result += helper(path, 2, i-1)*4
-            result += helper(path, 5, i-1)
+            p.. = s..()
+            result += helper(p.., 1, i-1)*4
+            result += helper(p.., 2, i-1)*4
+            result += helper(p.., 5, i-1)
         r.. result
     
-    ___ helper  path, curr, remain
+    ___ helper  p.., curr, remain
         __ remain < 0: r.. 0
         __ remain __ 0: r.. 1
-        path.add(curr)
+        p...add(curr)
         result = 0
         ___ to __ r..(1, 10
-            __ to n.. __ path a.. (skip[curr][to]__0 o. skip[curr][to] __ path
-                result += helper(path, to, remain-1)
-        path.remove(curr)
+            __ to n.. __ p.. a.. (skip[curr][to]__0 o. skip[curr][to] __ p..
+                result += helper(p.., to, remain-1)
+        p...remove(curr)
         r.. result

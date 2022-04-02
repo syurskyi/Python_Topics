@@ -10,7 +10,7 @@ c_ Luhn(o..
                 ___ i, n __ e..(old_digits, start=l..(old_digits) % 2)]
 
     ___ checksum
-        r.. s..(addends())
+        r.. s..(addends
 
     ___ is_valid
         __ l..(s__) <= 1 o. n.. s__.i..

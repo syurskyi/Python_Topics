@@ -11,9 +11,9 @@ ___ wc(file_
 
 __ _____ __ _____
     # make it work from cli like original unix wc
-    _______ sys
-    output = wc(sys.argv[1])
+    _______ ___
+    output = wc(___.argv[1])
     counts = ' '.j..(output.s.. [:3])
     print(counts)
-    __ sys.argv[1] __ output:
+    __ ___.argv[1] __ output:
         print("yes")

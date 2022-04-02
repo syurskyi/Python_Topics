@@ -8,7 +8,7 @@ Return 0 if the array contains less than 2 elements.
 You may assume all elements in the array are non-negative integers and fit in the 32-bit signed integer range.
 """
 __author__ = 'Daniel'
-_______ sys
+_______ ___
 
 
 c_ Solution:
@@ -34,8 +34,8 @@ c_ Solution:
         bins_max    # dict
         ___ v __ nums:
             bin_id = (v-g_min)/bin_width
-            bins_min[bin_id] = m..(bins_min.get(bin_id, sys.maxint), v)
-            bins_max[bin_id] = m..(bins_max.get(bin_id, -sys.maxint-1), v)
+            bins_min[bin_id] = m..(bins_min.get(bin_id, ___.maxint), v)
+            bins_max[bin_id] = m..(bins_max.get(bin_id, -___.maxint-1), v)
 
         max_gap = 0
         pre_max = g_min

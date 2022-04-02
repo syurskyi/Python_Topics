@@ -9,4 +9,4 @@ ___ progressionCalc(calculations
             total += (a + (b*x))
         answer.a..(s..(total))
     print(' '.j..(answer))
-progressionCalc(input())
+progressionCalc(input

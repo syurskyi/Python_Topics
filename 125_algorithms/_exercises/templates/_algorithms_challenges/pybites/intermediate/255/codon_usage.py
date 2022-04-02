@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 _______ requests
 ____ c.. _______ defaultdict
@@ -30,8 +30,8 @@ ___ _preload_sequences(url=URL
     """
     #x = requests.get(url)
     #return x.text.splitlines()
-    filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
-    __ n.. os.path.isfile(filename
+    filename = __.p...j..(__.getenv("TMP", "/tmp"), "NC_009641.txt")
+    __ n.. __.p...isfile(filename
         urlretrieve(url, filename)
     w__ o.. filename, "r") __ f:
         r.. f.r..
@@ -89,7 +89,7 @@ ___ return_codon_usage_table(
     
 
 
-    total = s..(codon_to_count.values())
+    total = s..(codon_to_count.values
 
 
     ___ codon,count __ codon_to_count.i..:
@@ -155,6 +155,6 @@ ___ return_codon_usage_table(
 
 
 __ _______ __ _______
-    print(return_codon_usage_table())
+    print(return_codon_usage_table
 
     #print(get_translation_table())

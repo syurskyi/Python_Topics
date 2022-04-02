@@ -5,4 +5,4 @@ ___ rotateString(amount
         rotateNum,s__ = i..(data[0]),data[1]
         answer.a..(s__[rotateNum:]+s__[:rotateNum])
     print(' '.j..(answer))
-rotateString(input())
+rotateString(input

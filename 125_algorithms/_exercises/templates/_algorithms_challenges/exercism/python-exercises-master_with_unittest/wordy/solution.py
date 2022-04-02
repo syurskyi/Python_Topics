@@ -1,7 +1,7 @@
-_______ sys
+_______ ___
 ____ operator _______ add, mul, sub
 
-__ sys.version_info[0] __ 2:
+__ ___.version_info[0] __ 2:
     ____ operator _______ div
 ____:
     ____ operator _______ floordiv __ div
@@ -19,7 +19,7 @@ ___ calculate(stmt
         r.. ValueError("Ill-formed question")
     l.r..
     ___
-        op1 = i..(l.pop())
+        op1 = i..(l.pop
     ______ V..
         r.. ValueError("Ill-formed question")
     w.... l:

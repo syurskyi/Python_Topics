@@ -6,16 +6,16 @@ ____ c.. _______ d..
 
 
 ___ i __ r..(i..(input())):
-    _, n = input(), d.. m..(i.., input().s..()))
-    ans = T..
+    _, n  input(), d.. m..(i.., input().s..()))
+    ans  T..
 
     ___ j __ r..(l..(n) - 1
-        __ n[0] >= n[1]:
+        __ n[0] > n[1]:
             n.popleft()
-        ____ n[-1] >= n[-2]:
+        ____ n[-1] > n[-2]:
             n.pop()
         ____:
-            ans = F..
+            ans  F..
             _____
 
     print('Yes' __ ans ____ 'No')

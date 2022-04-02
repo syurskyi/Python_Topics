@@ -8,4 +8,4 @@ ___ checkSum(numbers
         result %= 10000007
         
     print(result)
-checkSum(input())
+checkSum(input

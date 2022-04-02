@@ -32,7 +32,7 @@ ___ top_python_questions(url=cached_so_url
             question_text = question.find('a',class_='question-hyperlink').getText()
             views = question.find('div',class_='views').getText()
             __ views.s...s.. [0][-1] __ 'm':
-                votes = i..(question.find('span',class_='vote-count-post').strong.getText())
+                votes = i..(question.find('span',class_='vote-count-post').strong.getText
                 results.a..((question_text,votes))
 
         
@@ -44,7 +44,7 @@ ___ top_python_questions(url=cached_so_url
 
 __ _______ __ _______
 
-    print(top_python_questions())
+    print(top_python_questions
 
 
 

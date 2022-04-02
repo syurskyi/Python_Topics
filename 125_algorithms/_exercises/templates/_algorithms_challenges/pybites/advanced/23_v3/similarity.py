@@ -1,4 +1,4 @@
-_______ os
+_______ __
 _______ __
 ____ difflib _______ SequenceMatcher
 ____ i.. _______ permutations
@@ -6,7 +6,7 @@ ____ urllib.request _______ urlretrieve
 
 # prep
 TAG_HTML = __.c..(r'<category>([^<]+)</category>')
-TEMPFILE = os.path.j..('/tmp', 'feed')
+TEMPFILE = __.p...j..('/tmp', 'feed')
 MIN_TAG_LEN = 10
 IDENTICAL = 1.0
 SIMILAR = 0.95

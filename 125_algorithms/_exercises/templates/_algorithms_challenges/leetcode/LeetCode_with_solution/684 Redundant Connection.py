@@ -113,12 +113,12 @@ c_ Solution_dfs:
 
         r..
 
-    ___ dfs  G, cur, pi, path, path_list, visited
+    ___ dfs  G, cur, pi, p.., path_list, visited
         visited.add(cur)
 
         ___ nbr __ G[cur]:
             __ nbr != pi:
-                __ nbr __ path:
+                __ nbr __ p..:
                     # extract the circle from path
                     circle = s..()
                     in_circle = F..
@@ -129,12 +129,12 @@ c_ Solution_dfs:
                             circle.add(e)
                     r.. circle
 
-                path.add(nbr)
+                p...add(nbr)
                 path_list.a..(nbr)
-                circle = dfs(G, nbr, cur, path, path_list, visited)
+                circle = dfs(G, nbr, cur, p.., path_list, visited)
                 __ circle:
                     r.. circle
-                path.remove(nbr)
+                p...remove(nbr)
                 path_list.pop()
 
         r.. N..

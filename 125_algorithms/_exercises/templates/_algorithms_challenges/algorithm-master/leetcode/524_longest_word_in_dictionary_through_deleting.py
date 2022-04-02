@@ -67,15 +67,15 @@ c_ Solution:
 
         r.. ans
 
-    ___ find_cands  s, i, cands, path
+    ___ find_cands  s, i, cands, p..
         __ i __ l..(s
-            cands.a..(''.j..(path))
+            cands.a..(''.j..(p..))
             r..
 
         # keep s[i]
-        path.a..(s[i])
-        find_cands(s, i + 1, cands, path)
-        path.pop()
+        p...a..(s[i])
+        find_cands(s, i + 1, cands, p..)
+        p...pop()
 
         # ignore s[i]
-        find_cands(s, i + 1, cands, path)
+        find_cands(s, i + 1, cands, p..)

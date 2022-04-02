@@ -4,4 +4,4 @@ c_ Solution(o..
     :type s: str
     :rtype: int
     """
-    r.. l..(s.s..())
+    r.. l..(s.s..

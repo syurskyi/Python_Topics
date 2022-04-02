@@ -33,7 +33,7 @@ ___ load_data
                         year=row 'Year' )
 
 
-characters = l..(load_data())
+characters = l..(load_data
 
 
 # start coding
@@ -106,7 +106,7 @@ ___ get_percentage_female_characters(characters=characters
 
 
 
-    total = s..(sex_counts.values())
+    total = s..(sex_counts.values
     females = sex_counts 'Female Characters'
     print(sex_counts)
 

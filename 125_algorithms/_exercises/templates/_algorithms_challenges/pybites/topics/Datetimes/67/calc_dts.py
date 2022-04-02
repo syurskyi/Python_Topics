@@ -14,6 +14,6 @@ ___ get_days_between_pb_start_first_joint_pycon
     """Return the int number of days"""
     r.. (pycon_date - pybites_founded).days
 
-print(get_hundred_days_end_date())
+print(get_hundred_days_end_date
 
-print(get_days_between_pb_start_first_joint_pycon())
+print(get_days_between_pb_start_first_joint_pycon

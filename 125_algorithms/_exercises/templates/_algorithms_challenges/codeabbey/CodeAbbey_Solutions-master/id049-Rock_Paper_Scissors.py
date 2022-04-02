@@ -15,4 +15,4 @@ ___ playRPS(games
         ____:
             answer.a..("2")
     print(' '.j..(answer))
-playRPS(input())
+playRPS(input

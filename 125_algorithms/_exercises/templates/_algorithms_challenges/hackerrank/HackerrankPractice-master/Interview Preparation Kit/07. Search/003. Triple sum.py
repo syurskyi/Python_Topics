@@ -15,7 +15,7 @@ ___ binary_search_last(arr, el, low, high
         r.. binary_search_last(arr, el, middle, high)
 
 
-len_a, len_b, len_c = map(i.., input().s..())
+len_a, len_b, len_c = map(i.., input().s..
 a = s..(s.. m..(i.., input().s..())))
 b = s..(l..(s.. m..(i.., input().s..()))))
 c = s..(l..(s.. m..(i.., input().s..()))))

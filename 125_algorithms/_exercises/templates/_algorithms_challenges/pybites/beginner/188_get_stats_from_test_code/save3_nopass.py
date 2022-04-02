@@ -1,13 +1,13 @@
-_______ os
+_______ __
 _______ statistics
 ____ urllib.request _______ urlretrieve
 
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
-STATS = os.path.j..(TMP, DATA)
-__ n.. os.path.isfile(STATS
-    urlretrieve(os.path.j..(S3, DATA), STATS)
+STATS = __.p...j..(TMP, DATA)
+__ n.. __.p...isfile(STATS
+    urlretrieve(__.p...j..(S3, DATA), STATS)
 
 STATS_OUTPUT = """
 Basic statistics:
@@ -37,7 +37,7 @@ ___ get_all_line_counts(data: s.. = STATS) __ l..:
 ___ create_stats_report(data_ N..
     __ data __ N..
         # converting to a list in case a generator was returned
-        data = l..(get_all_line_counts())
+        data = l..(get_all_line_counts
 
     # taking a sample for the last section
     sample = l..(data)[::2]

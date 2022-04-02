@@ -13,7 +13,7 @@ ___ catAndMouse(catA, catB, mouseC
         print('Cat A')
 
 
-n = i..(input())
+n = i..(input
 ___ i __ r..(n
-    catA, catB, mouseC = map(i.., input().s..())
+    catA, catB, mouseC = map(i.., input().s..
     catAndMouse(catA, catB, mouseC)

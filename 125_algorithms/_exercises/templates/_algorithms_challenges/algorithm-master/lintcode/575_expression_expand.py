@@ -19,8 +19,8 @@ c_ Solution:
             ____ c __ ' ':
                 part    # list
                 w.... stack a.. isi..(stack[-1], s..
-                    part.a..(stack.pop())
-                cnt = i..(stack.pop()) __ stack ____ 1
+                    part.a..(stack.pop
+                cnt = i..(stack.pop __ stack ____ 1
                 stack.a..(cnt * ''.j..(r..(part)))
             ____:
                 stack.a..(c)

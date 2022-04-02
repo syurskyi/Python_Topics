@@ -41,6 +41,6 @@ __ _____ __ _____
     stack = Solution()
     stack.push(123)
     stack.push('a')
-    print(stack.top())
-    print(stack.pop())
-    print(stack.top())
+    print(stack.top
+    print(stack.pop
+    print(stack.top

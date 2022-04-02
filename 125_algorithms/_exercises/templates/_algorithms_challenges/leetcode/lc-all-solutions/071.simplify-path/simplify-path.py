@@ -1,12 +1,12 @@
 c_ Solution(o..
-  ___ simplifyPath  path
+  ___ simplifyPath  p..
     """
     :type path: str
     :rtype: str
     """
-    path = path.s..("/")
+    p.. = p...s..("/")
     stack    # list
-    ___ p __ path:
+    ___ p __ p..:
       __ p __ ["", "."]:
         _____
       __ p __ "..":

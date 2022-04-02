@@ -7,4 +7,4 @@ c_ Ship:
         r.. draft - 1.5 * crew >= 20
 
 boat = Ship(21,0)
-print(boat.is_worth_it())
+print(boat.is_worth_it

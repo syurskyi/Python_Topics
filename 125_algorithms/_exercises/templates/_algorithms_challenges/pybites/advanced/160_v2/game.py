@@ -1,10 +1,10 @@
 _______ csv
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 ____ c.. _______ defaultdict
 
-BATTLE_DATA = os.path.j..('/tmp', 'battle-table.csv')
-__ n.. os.path.isfile(BATTLE_DATA
+BATTLE_DATA = __.p...j..('/tmp', 'battle-table.csv')
+__ n.. __.p...isfile(BATTLE_DATA
     urlretrieve('https://bit.ly/2U3oHft', BATTLE_DATA)
 
 

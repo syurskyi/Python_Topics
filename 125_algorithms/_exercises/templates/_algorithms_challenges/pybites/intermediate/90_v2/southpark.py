@@ -26,7 +26,7 @@ ___ get_num_words_spoken_by_character_per_episode(content
     
 
     ___ line __ csv.DictReader(StringIO(content)):
-        counts[line 'Character']][line 'Episode']] += l..(line 'Line' .s..())
+        counts[line 'Character']][line 'Episode']] += l..(line 'Line' .s..
 
     r.. counts
 

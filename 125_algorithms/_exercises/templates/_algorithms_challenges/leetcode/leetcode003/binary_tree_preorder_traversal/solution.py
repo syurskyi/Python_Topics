@@ -26,16 +26,16 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[int]
         """
-        path    # list
+        p..    # list
         __ root __ N..
-            r.. path
+            r.. p..
         stack    # list
         stack.a..(root)
         w.... stack:
             root = stack.pop()
-            path.a..(root.val)
+            p...a..(root.val)
             __ root.right __ n.. N..
                 stack.a..(root.right)
             __ root.left __ n.. N..
                 stack.a..(root.left)
-        r.. path
+        r.. p..

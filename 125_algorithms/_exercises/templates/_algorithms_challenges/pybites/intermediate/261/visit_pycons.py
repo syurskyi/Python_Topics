@@ -4,7 +4,7 @@ _______ requests
 ____ dataclasses _______ dataclass
 ____ d__ _______ d__
 ____ math _______ acos, cos, radians, sin
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
@@ -15,7 +15,7 @@ RESPONSES = "https://bites-data.s3.us-east-2.amazonaws.com/nominatim_responses.j
 
 
 
-tmp = Path(os.getenv("TMP", "/tmp"))
+tmp = Path(__.getenv("TMP", "/tmp"))
 pycons_file = tmp / "pycons-europe-2019.json"
 nominatim_responses = tmp / "nominatim_responses.json"
 

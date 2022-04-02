@@ -1,4 +1,4 @@
-amount_values = i..(input())
+amount_values = i..(input
 values = l.. m..(i.., input().s..()))
 
 ___ get_sum
@@ -9,4 +9,4 @@ ___ get_sum
 
     r.. result
 
-print(get_sum())
+print(get_sum

@@ -69,7 +69,7 @@ ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
        ['AK', 'AL', 'AZ', ..., 'South Dakota', 'Tennessee', 'Texas', ...]
        (see also test_combine_state_names_and_abbreviations)"""
 
-    r.. s..(l..(us_state_abbrev.values())[:10])+ s..(states)[-10:]
+    r.. s..(l..(us_state_abbrev.values[:10])+ s..(states)[-10:]
 
 
 

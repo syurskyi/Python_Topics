@@ -16,7 +16,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts
     values = [item[1] ___ item __ items]
-    length = s..(d.values())
+    length = s..(d.values
     cumsums = t..(accumulate(values))
 
     # determine intervals: gotta be a way to do this with itertools

@@ -10,7 +10,7 @@ ___ test_get_tree
 
 
 ___ test_get_movies
-    ... l..(get_movies()) __  'The Prestige', 'The Dark Knight',
+    ... l..(get_movies __  'The Prestige', 'The Dark Knight',
                                   'The Dark Knight Rises', 'Dunkirk',
                                   'Interstellar'
 

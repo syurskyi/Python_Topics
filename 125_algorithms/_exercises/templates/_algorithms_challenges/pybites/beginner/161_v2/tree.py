@@ -1,4 +1,4 @@
-_______ os
+_______ __
 
 
 ___ count_dirs_and_files(directory='.'
@@ -8,7 +8,7 @@ ___ count_dirs_and_files(directory='.'
 
     
     directories = files =  0
-    ___ root,subdir,file __ os.walk(directory
+    ___ root,subdir,file __ __.walk(directory
         directories += l..(subdir)
         files += l..(file)
 

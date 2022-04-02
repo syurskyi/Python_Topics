@@ -1,12 +1,12 @@
-_______ os
+_______ __
 _______ __
 _______ urllib.request
 ____ c.. _______ defaultdict
 ____ d__ _______ d__
 
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 DATA = 'safari.logs'
-SAFARI_LOGS = os.path.j..(TMP, DATA)
+SAFARI_LOGS = __.p...j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'
 
 urllib.request.urlretrieve(
@@ -27,7 +27,7 @@ ___ _parse_book_line(line
 ___ create_chart
 
     chart = defaultdict(s..)
-    w__ o.. SAFARI_LOGS, 'r') __ f:
+    w__ o.. SAFARI_LOGS, _ __ f:
         prev = f.readline()
         ___ line __ f:
             __ 'sending to slack channel' __ line:

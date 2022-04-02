@@ -1,5 +1,5 @@
 ____ d__ _______ date
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ pickle
 ____ typing _______ Sequence, NamedTuple
@@ -7,7 +7,7 @@ ____ urllib.request _______ urlretrieve
 _______ time
 
 
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com"
 PICKLE_INFILE = TMP / 'input.pkl'
 PICKLE_OUTFILE = TMP / 'output.pkl'

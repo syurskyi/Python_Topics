@@ -29,4 +29,4 @@ ___ blackjack_counter(games
             answer.a..(s..(total))
 
     print(' '.j..(answer))
-blackjack_counter(input())
+blackjack_counter(input

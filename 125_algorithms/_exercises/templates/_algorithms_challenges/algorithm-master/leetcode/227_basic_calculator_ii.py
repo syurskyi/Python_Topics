@@ -36,17 +36,17 @@ c_ Solution:
                 res.a..(char)
             ____ char __ P:
                 w.... stack a.. stack[-1] __ P a.. P[char] <= P[stack[-1]]:
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
                 w.... stack a.. stack[-1] != '(':
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.pop()
 
         w.... stack:
-            res.a..(stack.pop())
+            res.a..(stack.pop
 
         r.. res
 
@@ -94,17 +94,17 @@ c_ Solution:
                 w.... stack a.. stack[-1] __ '+-*/':
                     __ char __ '*/' a.. stack[-1] __ '+-':
                         _____
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
                 w.... stack a.. stack[-1] != '(':
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.pop()
 
         w.... stack:
-            res.a..(stack.pop())
+            res.a..(stack.pop
 
         r.. res
 

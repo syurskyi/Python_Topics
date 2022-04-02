@@ -40,7 +40,7 @@ ___ call_calculator(args=N.., stdout=F..
     parser = create_parser()
 
     __ args __ N..
-        args = vars(parser.parse_args())
+        args = vars(parser.parse_args
     # taking the first operation in args namespace
     # if combo, e.g. -a and -s, take the first one
     ____:

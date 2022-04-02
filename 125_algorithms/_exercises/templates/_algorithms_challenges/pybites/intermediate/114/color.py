@@ -1,15 +1,15 @@
-_______ os
-_______ sys
+_______ __
+_______ ___
 _______ urllib.request
 
 # PREWORK (don't modify): import colors, save to temp file and import
-tmp = os.getenv("TMP", "/tmp")
-color_values_module = os.path.j..(tmp, 'color_values.py')
+tmp = __.getenv("TMP", "/tmp")
+color_values_module = __.p...j..(tmp, 'color_values.py')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/color_values.py',
     color_values_module
 )
-sys.path.a..(tmp)
+___.p...a..(tmp)
 
 # should be importable now
 ____ color_values _______ COLOR_NAMES  # noqa E402
@@ -23,7 +23,7 @@ c_ Color:
 
     ___ - , color
         color = color
-        rgb = COLOR_NAMES.get(color.upper())
+        rgb = COLOR_NAMES.get(color.upper
 
     @staticmethod
     ___ hex2rgb(hex_value

@@ -3,13 +3,13 @@
 
 
 ___ secondLowestGrade(classList
-    secondLowestScore = s..(s..(_[1] ___ _ __ classList))[1]
-    result = s..([_[0] ___ _ __ classList __ _[1] __ secondLowestScore])
+    secondLowestScore  s..(s..(_[1] ___ _ __ classList))[1]
+    result  s..([_[0] ___ _ __ classList __ _[1] __ secondLowestScore])
     r.. result
 
 
-numberOfStudents = i..(input())
+numberOfStudents  i..(input
 classList    # list
 ___ i __ r..(numberOfStudents
-    classList.a..([s..(input()), f__(input())])
+    classList.a..([s..(input, f__(input])
 print('\n'.j..(secondLowestGrade(classList)))

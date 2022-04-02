@@ -7,4 +7,4 @@ ___ find_Sums(pairAmount
                         s.. += i..(numbers[x])
                 answer.a..(s..(s..))
         print(' '.j..(answer))
-find_Sums(input())
+find_Sums(input

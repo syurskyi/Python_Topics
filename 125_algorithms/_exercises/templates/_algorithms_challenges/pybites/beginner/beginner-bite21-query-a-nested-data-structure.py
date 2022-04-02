@@ -42,5 +42,5 @@ ___ sort_car_models cars=cars
     """sort the car models (values) and return the resulting cars dict"""
     p..
 
-print(get_all_jeeps())
-print(get_first_model_each_manufacturer())
+print(get_all_jeeps
+print(get_first_model_each_manufacturer

@@ -1,9 +1,9 @@
-_______ os
+_______ __
 _______ urllib.request
 
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 DATA = 'safari.logs'
-SAFARI_LOGS = os.path.j..(TMP, DATA)
+SAFARI_LOGS = __.p...j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'
 
 urllib.request.urlretrieve(

@@ -1,10 +1,10 @@
 ____ difflib _______ SequenceMatcher
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 
-TMP = os.getenv("TMP", "/tmp")
-DICTIONARY = os.path.j..(TMP, 'dictionary.txt')
-__ n.. os.path.isfile(DICTIONARY
+TMP = __.getenv("TMP", "/tmp")
+DICTIONARY = __.p...j..(TMP, 'dictionary.txt')
+__ n.. __.p...isfile(DICTIONARY
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/dictionary.txt',
         DICTIONARY

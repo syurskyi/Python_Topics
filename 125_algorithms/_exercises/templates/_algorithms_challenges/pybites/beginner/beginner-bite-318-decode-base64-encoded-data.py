@@ -59,7 +59,7 @@ Jaclin,Tonge,3549852104724527"""
     print(bytes.d.. decoded, 'ascii'))
     inp = bytes.d.. decoded, 'ascii')
     print(t..(inp))
-    result = csv.reader(inp.s..())
+    result = csv.reader(inp.s..
     result = l..(result)
     r = result[1:]
     end    # list

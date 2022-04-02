@@ -4,16 +4,16 @@ The following sites were consulted:
     http://www.99colors.net/
     https://www.webucator.com/blog/2015/03/python-color-constants-module/
 """
-_______ os
 _______ __
-_______ sys
+_______ __
+_______ ___
 _______ urllib.request
 
 # PREWORK (don't modify): import colors, save to temp file and import
-color_values_module = os.path.j..('/tmp', 'color_values.py')
+color_values_module = __.p...j..('/tmp', 'color_values.py')
 urllib.request.urlretrieve('https://bit.ly/2MSuu4z',
                            color_values_module)
-sys.path.a..('/tmp')
+___.p...a..('/tmp')
 
 # should be importable now
 ____ color_values _______ COLOR_NAMES  # noqa E402

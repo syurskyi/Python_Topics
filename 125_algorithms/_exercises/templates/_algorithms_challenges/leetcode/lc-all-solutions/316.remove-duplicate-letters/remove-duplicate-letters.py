@@ -14,7 +14,7 @@ c_ Solution(o..
     ___ c __ s:
       __ c n.. __ cache:
         w.... stack a.. stack[-1] > c a.. d[stack[-1]] > 1 a.. d[stack[-1]] != 1 a.. count[stack[-1]] > 0:
-          cache.discard(stack.pop())
+          cache.discard(stack.pop
         stack.a..(c)
         cache.add(c)
       count[c] -= 1

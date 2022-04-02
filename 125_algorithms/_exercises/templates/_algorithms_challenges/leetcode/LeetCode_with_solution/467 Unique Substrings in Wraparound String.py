@@ -59,7 +59,7 @@ c_ Solution:
                 l = 1
             counter[p[i]] = m..(counter[p[i]], l)
 
-        r.. s..(counter.values())
+        r.. s..(counter.values
 
     ___ findSubstringInWraproundString_error  p
         """

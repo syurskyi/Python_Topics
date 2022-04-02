@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -23,9 +23,9 @@ c_ Solution(o..
         :type target: float
         :rtype: int
         """
-        lo = [-sys.float_info.m..]
+        lo = [-___.float_info.m..]
         find(root, target, lo, T..)
-        hi = [sys.float_info.m..]
+        hi = [___.float_info.m..]
         find(root, target, hi, F..)
         __ hi[0] - target < target - lo[0]:
             r.. i..(hi[0])

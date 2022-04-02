@@ -1,11 +1,11 @@
-_______ sys
+_______ ___
 
 INTERNAL_LINKS = ('pybit.es', 'codechalleng.es')
 
 
 ___ make_html_links
 
-    ___ line __ sys.stdin:
+    ___ line __ ___.stdin:
         
         line = line.s..
         __ line.startswith('http') a.. comma.c.. ',') __ 1:

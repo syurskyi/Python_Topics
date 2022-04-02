@@ -1,6 +1,6 @@
 ____ pathlib _______ PosixPath
 _______ difflib
-_______ os
+_______ __
 
 
 ___ get_matching_files(directory: PosixPath, filter_str: s..) __ l..:
@@ -31,7 +31,7 @@ ___ get_matching_files(directory: PosixPath, filter_str: s..) __ l..:
     exact_matches    # list
     close_matches    # list
     
-    files = os.listdir(directory)
+    files = __.listdir(directory)
     ___ file __ files:
 
         __ file.l.. __ filter_str:

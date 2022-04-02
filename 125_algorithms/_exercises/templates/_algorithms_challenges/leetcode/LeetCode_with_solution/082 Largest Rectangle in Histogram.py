@@ -12,7 +12,7 @@ For example,
 Given height = [2,1,5,6,2,3],
 return 10.
 """
-_______ sys
+_______ ___
 __author__ = 'Danyang'
 
 
@@ -43,7 +43,7 @@ c_ Solution:
             r.. 0
 
         n = l..(height)
-        gmax = -sys.maxint-1
+        gmax = -___.maxint-1
         inc_stack    # list  # store the idx, increasing stack
 
         ___ i __ x..(n

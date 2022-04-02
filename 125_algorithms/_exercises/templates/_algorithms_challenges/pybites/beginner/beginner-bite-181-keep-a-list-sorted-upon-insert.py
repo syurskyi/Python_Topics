@@ -42,10 +42,10 @@ c_ OrderedList:
 
 ol = OrderedList()
 ol.add(4)
-print(ol.__str__())
+print(ol.__str__
 ol.add(1)
-print(ol.__str__())
+print(ol.__str__
 ol.add(100)
 ol.add(80)
-print(ol.__str__())
+print(ol.__str__
 

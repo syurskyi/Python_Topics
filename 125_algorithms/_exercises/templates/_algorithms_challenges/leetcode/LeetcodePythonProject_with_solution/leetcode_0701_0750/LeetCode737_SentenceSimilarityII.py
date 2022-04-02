@@ -26,15 +26,15 @@ c_ Solution(o..
                 _____
             __ w1 n.. __ pairInfo:
                 r.. F..
-            __ n.. dfs(w1, w2, pairInfo, s..()):
+            __ n.. dfs(w1, w2, pairInfo, s..:
                 r.. F..
         r.. T..
     
     ___ dfs  source, target, pairInfo, visited
-        __ target __ pairInfo.get(source, s..()):
+        __ target __ pairInfo.get(source, s..:
             r.. T..
         visited.add(source)
-        ___ nextWord __ pairInfo.get(source, s..()):
+        ___ nextWord __ pairInfo.get(source, s..:
             __ nextWord n.. __ visited a.. dfs(nextWord, target, pairInfo, visited
                 r.. T..
         r.. F..

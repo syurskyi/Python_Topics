@@ -13,7 +13,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..:
     std_out = StringIO()
     w__ redirect_stdout(std_out
         help(builtin)
-    r.. l..(std_out.getvalue())
+    r.. l..(std_out.getvalue
 
 
 get_len_help_text(pow)

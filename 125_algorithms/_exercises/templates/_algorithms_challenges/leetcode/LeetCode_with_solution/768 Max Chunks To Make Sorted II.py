@@ -49,7 +49,7 @@ c_ Solution:
 
         proxy    # list
         ___ e __ arr:
-            proxy.a..(hm[e].popleft())
+            proxy.a..(hm[e].popleft
 
         ret = 0
         cur_max_idx = 0

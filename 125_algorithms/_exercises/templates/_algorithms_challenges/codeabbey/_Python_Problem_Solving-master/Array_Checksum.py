@@ -1,5 +1,5 @@
 #Ask for how number to be entered
-data = i..(input())
+data = i..(input
 result = 0
 arr    # list
 

@@ -1,11 +1,11 @@
 ____ d__ _______ date
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ pickle
 ____ typing _______ Sequence, NamedTuple
 ____ urllib.request _______ urlretrieve
 
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com"
 PICKLE_INFILE = TMP / 'input.pkl'
 PICKLE_OUTFILE = TMP / 'output.pkl'
@@ -28,7 +28,7 @@ ___ deserialize(pkl_file: Path = PICKLE_INFILE) __ Sequence[NamedTuple]:
     """Load the list of namedtuples from the pickle file passed in"""
     file = o.. pkl_file, "rb")
     nt = pickle.load(file)
-    file.close()
+    file.c..
     r.. nt
 
 
@@ -41,7 +41,7 @@ ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
     ____:
         file = o.. pkl_file, "ab")
         pickle.dump(data, file)
-        file.close()
+        file.c..
 
 __ _______ __ _______
     download_pickle_file()

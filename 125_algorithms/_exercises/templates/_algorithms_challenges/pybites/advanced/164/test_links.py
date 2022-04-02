@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ platform
 _______ subprocess
@@ -7,7 +7,7 @@ _______ p__
 
 # no need to import make_html_links as we call links.py from CLI!
 
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 SCRIPT = 'links.py'
 IS_LOCAL = platform.system() __ 'Darwin'
 MY_CODE = SCRIPT __ IS_LOCAL ____ TMP / SCRIPT

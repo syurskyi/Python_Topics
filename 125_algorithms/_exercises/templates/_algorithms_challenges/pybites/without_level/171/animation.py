@@ -1,5 +1,5 @@
 ____ i.. _______ cycle
-_______ sys
+_______ ___
 ____ time _______ time, sleep
 
 SPINNER_STATES =  '-', '\\', '|', '/'   # had to escape \

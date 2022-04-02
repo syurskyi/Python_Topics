@@ -25,7 +25,7 @@ c_ Solution(o..
     ___ item __ buckets:
       __ item a.. k > 0:
         w.... item a.. k > 0:
-          ans.a..(item.pop())
+          ans.a..(item.pop
           k -= 1
         __ k __ 0:
           r.. ans

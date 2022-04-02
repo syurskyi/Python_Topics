@@ -7,7 +7,7 @@ For example, given the array [2,3,1,2,4,3] and s = 7,
 the subarray [4,3] has the minimal length under the problem constraint.
 """
 __author__ = 'Daniel'
-_______ sys
+_______ ___
 
 
 c_ Solution:
@@ -28,7 +28,7 @@ c_ Solution:
             S[i] = S[i-1]+nums[i-1]
 
         lo, hi = 0, 1
-        mini = sys.maxint
+        mini = ___.maxint
         w.... hi <= n:
             __ S[hi]-S[lo] >= s:
                 mini = m..(mini, hi-lo)
@@ -36,7 +36,7 @@ c_ Solution:
             ____:
                 hi += 1
 
-        r.. mini __ mini != sys.maxint ____ 0
+        r.. mini __ mini != ___.maxint ____ 0
 
 
 __ _______ __ _______

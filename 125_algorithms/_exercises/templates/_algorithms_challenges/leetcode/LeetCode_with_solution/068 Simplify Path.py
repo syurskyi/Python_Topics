@@ -16,34 +16,34 @@ __author__ = 'Danyang'
 
 
 c_ Solution(o..
-    ___ simplifyPath  path
+    ___ simplifyPath  p..
         """
         use "." as intermediate
 
         :param path: a string
         :return: a string
         """
-        path = path.s..("/")
-        path = filter(l.... x: x n.. __ ("", " ", "."), path)
+        p.. = p...s..("/")
+        p.. = filter(l.... x: x n.. __ ("", " ", "."), p..)
 
         # modify the content of the list, not the structure.
-        ___ idx __ x..(l..(path)):
-            val = path[idx]
+        ___ idx __ x..(l..(p..)):
+            val = p..[idx]
             __ val __ "..":
-                path[idx] = "."
+                p..[idx] = "."
 
                 # rm a previous meaningful part
                 i = idx-1
-                w.... i >= 0 a.. path[i] __ ".": i -= 1
-                __ i >= 0: path[i] = "."  # avoid path[-1]
+                w.... i >= 0 a.. p..[i] __ ".": i -= 1
+                __ i >= 0: p..[i] = "."  # avoid path[-1]
 
-        path = filter(l.... x: x n.. __ (".",), path)
+        p.. = filter(l.... x: x n.. __ (".",), p..)
 
-        __ n.. path:
+        __ n.. p..:
             r.. "/"
 
-        path = map(l.... x: "/"+x, path)
-        r.. "".j..(path)
+        p.. = map(l.... x: "/"+x, p..)
+        r.. "".j..(p..)
 
 
 __ _______ __ _______

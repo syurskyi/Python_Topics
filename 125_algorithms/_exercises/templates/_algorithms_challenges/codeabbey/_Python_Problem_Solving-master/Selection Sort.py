@@ -1,4 +1,4 @@
-d = i..(input())
+d = i..(input
 a = l.. m..(i..,input().s..()))
 
 w.... l..(a)!= 1:

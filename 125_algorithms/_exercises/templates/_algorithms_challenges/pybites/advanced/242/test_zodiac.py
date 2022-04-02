@@ -1,6 +1,6 @@
 ____ d__ _______ d__
 _______ json
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
@@ -11,7 +11,7 @@ ____ zodiac _______ (get_signs, get_sign_with_most_famous_people,
 
 # original source: https://zodiacal.herokuapp.com/api
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/zodiac.json"
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 PATH = Path(TMP, "zodiac.json")
 
 
@@ -20,7 +20,7 @@ ___ signs
     __ n.. PATH.exists
         urlretrieve(URL, PATH)
     w__ o.. PATH) __ f:
-        data = json.loads(f.read())
+        data = json.loads(f.read
     r.. get_signs(data)
 
 

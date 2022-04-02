@@ -7,7 +7,7 @@ ___ reverseArray(arr
     r.. result
 
 
-arrСount = i..(input())
+arrСount = i..(input
 arr = l.. m..(i.., input().rstrip().s..()))
 result = reverseArray(arr)
 print(*result)

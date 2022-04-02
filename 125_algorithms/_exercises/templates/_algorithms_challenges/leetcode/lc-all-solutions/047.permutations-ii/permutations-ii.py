@@ -7,9 +7,9 @@ c_ Solution(o..
     res    # list
     nums.s..()
 
-    ___ dfs(nums, res, path, visited
-      __ l..(path) __ l..(nums
-        res.a..(path + [])
+    ___ dfs(nums, res, p.., visited
+      __ l..(p..) __ l..(nums
+        res.a..(p.. + [])
         r..
 
       ___ i __ r..(l..(nums)):
@@ -18,10 +18,10 @@ c_ Solution(o..
         __ i > 0 a.. nums[i] __ nums[i - 1] a.. i - 1 n.. __ visited:
           _____
         visited |= {i}
-        path.a..(nums[i])
-        dfs(nums, res, path, visited)
-        path.pop()
+        p...a..(nums[i])
+        dfs(nums, res, p.., visited)
+        p...pop()
         visited -= {i}
 
-    dfs(nums, res, [], s..())
+    dfs(nums, res, [], s..
     r.. res

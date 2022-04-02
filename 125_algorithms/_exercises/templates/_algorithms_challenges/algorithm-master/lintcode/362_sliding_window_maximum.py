@@ -47,7 +47,7 @@ c_ Solution:
         ___ i __ r..(l..(A)):
             heap.push(-A[i])
             __ i >= k - 1:
-                ans.a..(-heap.top())
+                ans.a..(-heap.top
                 heap.remove(-A[i - k + 1])
 
         r.. ans

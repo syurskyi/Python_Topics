@@ -1,4 +1,4 @@
-THUMBS_UP, THUMBS_DOWN = '👍', '👎'
+THUMBS_UP, THUMBS_DOWN  '👍', '👎'
 
 
 c_ Thumbs:
@@ -12,15 +12,15 @@ c_ Thumbs:
     ___ __mul__ number
         __ isi..(number,i..
             __ number > 0:
-                s__ = THUMBS_UP
+                s__  THUMBS_UP
             ____ number < 0:
-                number = abs(number)
-                s__ = THUMBS_DOWN
+                number  abs(number)
+                s__  THUMBS_DOWN
             ____:
                 r.. ValueError("Specify a number")
             
             
-            __ number <= 3:
+            __ number < 3:
                 r.. s__ * number
             ____:
                 r.. f"{s__} ({number}x)"

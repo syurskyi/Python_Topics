@@ -44,14 +44,14 @@ c_ Solution:
 
         r.. ret
 
-    ___ dfs  nums, num, path, visited
+    ___ dfs  nums, num, p.., visited
         __ num __ visited:
             r.. 0
 
         visited.add(num)
-        path.add(num)  # path is subset of visited
-        dfs(nums, nums[num], path, visited)
-        r.. l..(path)
+        p...add(num)  # path is subset of visited
+        dfs(nums, nums[num], p.., visited)
+        r.. l..(p..)
 
 
 __ _______ __ _______

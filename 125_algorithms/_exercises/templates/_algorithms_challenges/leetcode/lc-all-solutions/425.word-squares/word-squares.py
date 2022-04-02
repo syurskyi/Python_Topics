@@ -5,15 +5,15 @@ c_ Solution(o..
     :rtype: List[List[str]]
     """
 
-    ___ dfs(path, res, m, prefix
-      __ l..(path) __ m:
-        res.a..(path + [])
+    ___ dfs(p.., res, m, prefix
+      __ l..(p..) __ m:
+        res.a..(p.. + [])
         r..
 
-      ___ word __ prefix["".j..(z..(*path)[l..(path)])]:
-        path.a..(word)
-        dfs(path, res, m, prefix)
-        path.pop()
+      ___ word __ prefix["".j..(z..(*p..)[l..(p..)])]:
+        p...a..(word)
+        dfs(p.., res, m, prefix)
+        p...pop()
 
     __ n.. words:
       r.. []
@@ -25,9 +25,9 @@ c_ Solution(o..
 
     m = l..(words[0])
     res    # list
-    path    # list
+    p..    # list
     ___ word __ words:
-      path.a..(word)
-      dfs(path, res, m, prefix)
-      path.pop()
+      p...a..(word)
+      dfs(p.., res, m, prefix)
+      p...pop()
     r.. res

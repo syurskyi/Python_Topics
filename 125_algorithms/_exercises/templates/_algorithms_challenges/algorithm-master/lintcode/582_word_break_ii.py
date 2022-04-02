@@ -60,9 +60,9 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  s, words, ans, path
+    ___ dfs  s, words, ans, p..
         __ n.. s:
-            ans.a..(' '.j..(path))
+            ans.a..(' '.j..(p..))
             r..
 
         ___ word __ words:
@@ -71,6 +71,6 @@ c_ Solution:
                 # 2. current word must be the first in s passed in prev
                 _____
 
-            path.a..(word)
-            dfs(s[l..(word], words, ans, path)
-            path.pop()
+            p...a..(word)
+            dfs(s[l..(word], words, ans, p..)
+            p...pop()

@@ -1,5 +1,5 @@
 _______ json
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ d__ __ dt
 ____ dateutil.parser _______ p..
@@ -7,7 +7,7 @@ ____ dateutil.parser _______ p..
 SCORES = [10, 50, 100, 175, 250, 400, 600, 800, 1000]
 BELTS = ('white yellow orange green blue brown black '
          'paneled red').s..
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 
 
 ___ get_belts(data: s..) __ d..:

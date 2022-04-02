@@ -1,12 +1,12 @@
 _______ csv
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 ____ c.. _______ defaultdict
 
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 DATA = 'battle-table.csv'
-BATTLE_DATA = os.path.j..(TMP, DATA)
-__ n.. os.path.isfile(BATTLE_DATA
+BATTLE_DATA = __.p...j..(TMP, DATA)
+__ n.. __.p...isfile(BATTLE_DATA
     urlretrieve(
         f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
         BATTLE_DATA
@@ -68,4 +68,4 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
         r.. player2
 
 
-print(_create_defeat_mapping())
+print(_create_defeat_mapping

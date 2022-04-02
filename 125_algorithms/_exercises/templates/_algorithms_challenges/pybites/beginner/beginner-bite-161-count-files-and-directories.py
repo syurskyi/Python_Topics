@@ -36,7 +36,7 @@ Good luck and have fun!
 """
 
 
-_______ os
+_______ __
 
 # Solution 1
 ___ count_dirs_and_files(directory='.'
@@ -49,10 +49,10 @@ ___ count_dirs_and_files(directory='.'
     # subdirectories are available from the initial directory that walk was called upon
     count_dirs = 0
     count_files = 0
-    ___ dir, number_of_dirs, number_of_files __ os.walk(directory
+    ___ dir, number_of_dirs, number_of_files __ __.walk(directory
         count_dirs += l..(number_of_dirs)
         count_files += l..(number_of_files)
     result = (count_dirs, count_files)
     r.. result
 
-print(count_dirs_and_files())
+print(count_dirs_and_files

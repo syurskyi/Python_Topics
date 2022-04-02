@@ -6,7 +6,7 @@ ____ states _______ (get_every_nth_state, get_state_abbrev,
 ___ test_get_every_nth_state
     expected =  'Massachusetts', 'Missouri', 'Hawaii',
                 'Vermont', 'Delaware'
-    ... l..(get_every_nth_state()) __ expected
+    ... l..(get_every_nth_state __ expected
     expected =  'Missouri', 'Vermont'
     ... l..(get_every_nth_state(n=20)) __ expected
 

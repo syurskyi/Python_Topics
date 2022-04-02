@@ -26,7 +26,7 @@ ___ wc(file_
     cnt_chars = 0
     within_word = F..
     ___
-        fo = o.. file_, 'r')
+        fo = o.. file_, _
     ______:
         print("Cannot open file")
     filename = fo.name
@@ -40,7 +40,7 @@ ___ wc(file_
             __ within_word __ T.. a.. (c __ ' ' o. c __ '\t' o. c __ '\n'
                 cnt_words += 1
                 within_word = F..
-    fo.close()
+    fo.c..
 
     print _*{cnt_line} {cnt_words} {cnt_chars} {filename}')
 

@@ -20,7 +20,7 @@ FILES = ('bite.html commands.sh out_grepped pytest_testrun.out '
 ___ test_example_docstring(tmp_path, filter_str, expected
     # let's create some files in tmp
     ___ fi __ 'bite1 test output'.s.. :
-        o.. tmp_path / fi, 'a').close()
+        o.. tmp_path / fi, 'a').c..
     actual = get_matching_files(tmp_path, filter_str)
     ... s..(actual) __ s..(expected)
 
@@ -42,6 +42,6 @@ ___ test_example_docstring(tmp_path, filter_str, expected
 ___ test_other_files(tmp_path, filter_str, expected
     # let's create some files in tmp
     ___ fi __ FILES:
-        o.. tmp_path / fi, 'a').close()
+        o.. tmp_path / fi, 'a').c..
     actual = get_matching_files(tmp_path, filter_str)
     ... s..(actual) __ s..(expected)

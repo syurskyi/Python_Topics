@@ -2,7 +2,7 @@
 # Score: 60
 
 
-n, m = map(i.., input().s..())
+n, m = map(i.., input().s..
 coins = l.. m..(i.., input().s..()))
 ans = [1] + [0] * n
 ___ i __ r..(m

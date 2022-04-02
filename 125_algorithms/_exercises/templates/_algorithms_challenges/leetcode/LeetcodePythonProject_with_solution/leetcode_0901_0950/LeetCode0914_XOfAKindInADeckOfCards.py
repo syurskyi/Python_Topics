@@ -8,8 +8,8 @@ c_ Solution(o..
         hashmap    # dict
         ___ num __ deck:
             hashmap[num] = hashmap.get(num, 0)+1
-        counts = l..(hashmap.values())
-        minVal = m..(hashmap.values())
+        counts = l..(hashmap.values
+        minVal = m..(hashmap.values
         w.... counts:
             __ 1 __ counts:
                 r.. F..

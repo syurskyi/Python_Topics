@@ -9,6 +9,6 @@ c_ OrderedCounter(Counter, OrderedDict
     p..
 
 
-ordered_counter = OrderedCounter(input() ___ _ __ r..(i..(input())))
+ordered_counter  OrderedCounter(input() ___ _ __ r..(i..(input())))
 print(l..(ordered_counter))
-print(*ordered_counter.values())
+print(*ordered_counter.values

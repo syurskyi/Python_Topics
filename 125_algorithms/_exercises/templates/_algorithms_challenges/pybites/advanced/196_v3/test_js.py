@@ -22,8 +22,8 @@ ___ test_assert_regular_dict_behavior(D
     del D 'b'
     ... 'b' n.. __ D
     ... l..(D) __ 3
-    ... l..(D.keys()) __  'a', 'c', 'd'
-    ... l..(D.values()) __ [1, 3, 4]
+    ... l..(D.keys __  'a', 'c', 'd'
+    ... l..(D.values __ [1, 3, 4]
 
 
 ___ test_assert_js_behavior(D

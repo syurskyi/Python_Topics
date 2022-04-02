@@ -15,19 +15,19 @@ c_ Queue(o..
             stack1.a..(x)
         ____:
             w.... stack2:
-                stack1.a..(stack2.pop())
+                stack1.a..(stack2.pop
             stack1.a..(x)
     
     ___ pop
         __ stack1:
             w.... stack1:
-                stack2.a..(stack1.pop())
+                stack2.a..(stack1.pop
         r.. stack2.pop()
     
     ___ peep
         __ stack1:
             w.... stack1:
-                stack2.a..(stack1.pop())
+                stack2.a..(stack1.pop
         r.. stack2[-1]
     
     ___ empty

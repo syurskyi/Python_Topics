@@ -62,7 +62,7 @@ c_ Robot:
 
     ___ advance
         coordinates = bearing.advance(bearing,
-                                                x(), y())
+                                                x(), y
 
     ___ turn_right
         bearing = bearing.turn_right(bearing)

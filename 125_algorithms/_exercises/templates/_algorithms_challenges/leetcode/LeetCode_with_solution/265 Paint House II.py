@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 

@@ -3,8 +3,8 @@ ____ tree _______ count_dirs_and_files
 
 ___ test_only_files(tmp_path
     ___ i __ r..(1, 6
-        path = tmp_path / f'{i}.txt'
-        w__ o.. path, 'w') __ f:
+        p.. = tmp_path / f'{i}.txt'
+        w__ o.. p.., 'w') __ f:
             f.write('hello')
     ... count_dirs_and_files(tmp_path) __ (0, 5)
 
@@ -21,7 +21,7 @@ ___ test_files_and_dirs(tmp_path
             target_dir = tmp_path / s..(i)
             target_dir.mkdir()
             ___ j __ r..(5
-                path = target_dir / f'{j}.txt'
-                w__ o.. path, 'w') __ f:
+                p.. = target_dir / f'{j}.txt'
+                w__ o.. p.., 'w') __ f:
                     f.write('hello')
     ... count_dirs_and_files(tmp_path) __ (5, 25)

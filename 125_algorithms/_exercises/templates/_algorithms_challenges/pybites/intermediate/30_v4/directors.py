@@ -1,6 +1,6 @@
 _______ csv
 ____ c.. _______ defaultdict, n..
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 
 
@@ -8,8 +8,8 @@ BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = '/tmp'
 
 fname = 'movie_metadata.csv'
-remote = os.path.j..(BASE_URL, fname)
-local = os.path.j..(TMP, fname)
+remote = __.p...j..(BASE_URL, fname)
+local = __.p...j..(TMP, fname)
 urlretrieve(remote, local)
 
 MOVIE_DATA = local
@@ -33,7 +33,7 @@ ___ get_movies_by_director
 
     ___ row __ reader:
         __ row 'title_year' :
-            __ i..(row 'title_year' .strip()) < 1960:
+            __ i..(row 'title_year' .strip < 1960:
                 _____
         ____:
             _____

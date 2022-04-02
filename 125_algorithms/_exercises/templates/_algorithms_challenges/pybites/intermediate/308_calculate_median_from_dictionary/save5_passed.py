@@ -15,9 +15,9 @@ ___ calc_median_from_dict(d: d..) __ f__:
             r.. T..
 
     __ l..(values_sorted) __ 1:
-        r.. l..(values_sorted.keys())[0]
+        r.. l..(values_sorted.keys[0]
 
-    number = s..(values_sorted.values())
+    number = s..(values_sorted.values
     determinate = number / 2
     i = 0
     i2 = 0

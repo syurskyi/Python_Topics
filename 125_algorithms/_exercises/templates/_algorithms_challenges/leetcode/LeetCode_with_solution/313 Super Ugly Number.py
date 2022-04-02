@@ -13,7 +13,7 @@ Note:
 """
 _______ heapq
 ____ c.. _______ d..
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -27,7 +27,7 @@ c_ Solution(o..
         :rtype: int
         """
         k = l..(primes)
-        ret = [sys.maxint ___ _ __ x..(n)]
+        ret = [___.maxint ___ _ __ x..(n)]
         ret[0] = 1
         # for each prime, a pointer pointing to the value of next unused number in the result
         idxes = [0 ___ _ __ x..(k)]

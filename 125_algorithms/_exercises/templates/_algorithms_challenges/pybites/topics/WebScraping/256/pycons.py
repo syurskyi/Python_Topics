@@ -100,7 +100,7 @@ ___ _get_pycon_data
         r.. session.get(PYCON_DATA).content.d.. "utf-8")
 
 
-___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
+___ get_pycon_events(data=_get_pycon_data __ List[PyCon]:
     """
     Scrape the PyCon events from the given website data and
     return a list of PyCon namedtuples. Pay attention to the
@@ -111,7 +111,7 @@ ___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
     #print(events[0].text.strip())
     pycon_events    # list
     ___ event __ events:
-        event_json = json.loads(event.text.strip())
+        event_json = json.loads(event.text.strip
         __ 'pycon' __ event_json["name"].l..:
             # { "@context": "http://schema.org", "@type": "Event", 
             # "location": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Trento", "addressCountry": "Italy" }, 

@@ -16,7 +16,7 @@ c_ CircularBufferTest(unittest.TestCase
     ___ test_write_and_read_back_one_item
         buf = CircularBuffer(1)
         buf.write('1')
-        assertEqual('1', buf.read())
+        assertEqual('1', buf.read
         w__ assertRaises(BufferEmptyException
             buf.r..
 

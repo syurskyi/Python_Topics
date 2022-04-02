@@ -1,9 +1,9 @@
 ____ difflib _______ get_close_matches
-____ os _______ path
+____ __ _______ p..
 ____ urllib.request _______ urlretrieve
 
-DICTIONARY = path.j..('/tmp', 'dictionary.txt')
-__ n.. path.isfile(DICTIONARY
+DICTIONARY = p...j..('/tmp', 'dictionary.txt')
+__ n.. p...isfile(DICTIONARY
     urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 

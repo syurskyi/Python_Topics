@@ -27,7 +27,7 @@ c_ Solution:
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2
+        __ l..(words1) ! l..(words2
             r.. F..
 
         nodes    # dict
@@ -36,33 +36,33 @@ c_ Solution:
             union(nodes, a, b)
 
         ___ i __ r..(l..(words1)):
-            a = words1[i]
-            b = words2[i]
-            _a = find(nodes, a)
-            _b = find(nodes, b)
+            a  words1[i]
+            b  words2[i]
+            _a  find(nodes, a)
+            _b  find(nodes, b)
 
-            __ a != b a.. _a != _b:
+            __ a ! b a.. _a ! _b:
                 r.. F..
 
         r.. T..
 
     ___ union  nodes, a, b
-        _a = find(nodes, a)
-        _b = find(nodes, b)
+        _a  find(nodes, a)
+        _b  find(nodes, b)
 
         __ _a __ n.. _b:
-            nodes[_a] = _b
+            nodes[_a]  _b
 
         r.. _b
 
     ___ find  nodes, a
         __ a n.. __ nodes:
-            nodes[a] = a
+            nodes[a]  a
             r.. a
         __ nodes[a] __ a:
             r.. a
 
-        nodes[a] = find(nodes, nodes[a])
+        nodes[a]  find(nodes, nodes[a])
         r.. nodes[a]
 
 
@@ -80,40 +80,40 @@ c_ Solution2:
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2
+        __ l..(words1) ! l..(words2
             r.. F..
 
-        simils = c...defaultdict(s..)
+        simils  c...defaultdict(s..)
 
         ___ a, b __ pairs:
             simils[a].add(b)
             simils[b].add(a)
 
         ___ i __ r..(l..(words1)):
-            a = words1[i]
-            b = words2[i]
+            a  words1[i]
+            b  words2[i]
 
-            __ a != b a.. n.. dfs(a, b, simils, s..()):
+            __ a != b a.. n.. dfs(a, b, simils, s..:
                 r.. F..
 
         r.. T..
 
-    ___ dfs  start, end, simils, path
+    ___ dfs  start, end, simils, p..
         # check start and end are connected
         __ start __ end:
             r.. T..
-        __ start n.. __ simils o. start __ path:
+        __ start n.. __ simils o. start __ p..:
             r.. F..
 
-        path.add(start)
+        p...add(start)
 
         ___ nxt __ simils[start]:
-            __ nxt __ path:
+            __ nxt __ p..:
                 _____
 
-            res = dfs(nxt, end, simils, path)
+            res = dfs(nxt, end, simils, p..)
             __ res:
                 r.. T..
 
-        path.discard(start)
+        p...discard(start)
         r.. F..

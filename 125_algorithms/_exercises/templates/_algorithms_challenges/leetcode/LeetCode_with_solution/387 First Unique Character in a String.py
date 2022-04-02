@@ -31,7 +31,7 @@ c_ Solution(o..
             ____:
                 first[v] = -1
 
-        lst = filter(l.... x: x != -1, first.values())
+        lst = filter(l.... x: x != -1, first.values
         r.. m..(lst) __ lst ____ -1
 
 

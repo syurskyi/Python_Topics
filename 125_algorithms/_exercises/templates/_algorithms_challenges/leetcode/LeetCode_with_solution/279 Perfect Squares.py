@@ -5,7 +5,7 @@ to n.
 For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
 """
 _______ math
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -23,7 +23,7 @@ c_ Solution(o..
         """
         w.... l..(Solution.F) <= n:
             i = l..(Solution.F)
-            Solution.F.a..(sys.maxint)
+            Solution.F.a..(___.maxint)
             j = 1
             w.... i - j*j >= 0:
                 Solution.F[i] = m..(Solution.F[i], Solution.F[i-j*j]+1)

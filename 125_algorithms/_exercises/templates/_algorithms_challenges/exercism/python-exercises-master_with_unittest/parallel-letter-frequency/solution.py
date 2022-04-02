@@ -2,8 +2,8 @@
 ____ c.. _______ Counter
 ____ threading _______ Lock, Thread
 ____ time _______ sleep
-_______ sys
-__ sys.version[0] __ '2':
+_______ ___
+__ ___.version[0] __ '2':
     ____ Queue _______ Queue
 ____:
     ____ queue _______ Queue

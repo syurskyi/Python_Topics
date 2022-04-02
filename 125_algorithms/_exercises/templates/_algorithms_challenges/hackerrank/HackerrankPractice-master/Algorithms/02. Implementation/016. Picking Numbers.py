@@ -14,7 +14,7 @@ ___ pickingNumbers(arr
     r.. result
 
 
-n = i..(input().strip())
+n = i..(input().strip
 arr = l.. m..(i.., input().s...s..(' ')))
 result = pickingNumbers(arr)
 print(result)

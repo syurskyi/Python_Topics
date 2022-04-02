@@ -12,7 +12,7 @@ ___ test_get_quotes
     response = client.get(API_ENDPOINT)
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data())
+    data = json.loads(response.get_data
     print(data)
     quotes = data 'quotes'
     ... l..(quotes) __ 3
@@ -26,7 +26,7 @@ ___ test_get_existing_quote
     response = client.get(API_ENDPOINT + '/2')
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data())
+    data = json.loads(response.get_data
     quotes = data 'quotes'
     ... l..(quotes) __ 1
 
@@ -46,7 +46,7 @@ ___ test_create_quote
                            data=json.dumps(new_quote),
                            content_type='application/json')
     ... response.status_code __ 201
-    data = json.loads(response.get_data())
+    data = json.loads(response.get_data
     new_quote = data 'quote'
     ... new_quote 'id'  __ 4
     ... new_quote 'quote'  __ 'You talking to me?'
@@ -86,7 +86,7 @@ ___ test_update_quote
                           content_type='application/json')
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data())
+    data = json.loads(response.get_data
     updated_quote = data 'quote'
     ... updated_quote 'id'  __ 4
     ... updated_quote 'quote'  __ 'You talking to me?!'
@@ -117,7 +117,7 @@ ___ test_update_no_changes
                           content_type='application/json')
     ... response.status_code __ 200
 
-    data = json.loads(response.get_data())
+    data = json.loads(response.get_data
     updated_quote = data 'quote'
     ... updated_quote 'id'  __ 2
     ... updated_quote 'quote'  __ 'Get to the choppa!'
@@ -130,7 +130,7 @@ ___ test_delete_existing_quote
 
     # number quotes from 4 to 3
     response = client.get(API_ENDPOINT)
-    data = json.loads(response.get_data())
+    data = json.loads(response.get_data
     quotes = data 'quotes'
     ... l..(quotes) __ 3
 

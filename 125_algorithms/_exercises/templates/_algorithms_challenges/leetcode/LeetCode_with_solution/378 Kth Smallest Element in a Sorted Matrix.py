@@ -58,7 +58,7 @@ c_ Solution(o..
         ___ _ __ x..(k
             ret = heapq.heappop(h)
             __ ret.hasnext
-                heapq.heappush(h, ret.next())
+                heapq.heappush(h, ret.next
 
         r.. matrix[ret.i][ret.j]
 

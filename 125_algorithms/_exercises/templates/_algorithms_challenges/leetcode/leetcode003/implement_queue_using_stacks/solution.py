@@ -61,4 +61,4 @@ c_ Queue(o..
     ___ _move
         """Move elements from stack1 to stack2"""
         w.... stack1:
-            stack2.a..(stack1.pop())
+            stack2.a..(stack1.pop

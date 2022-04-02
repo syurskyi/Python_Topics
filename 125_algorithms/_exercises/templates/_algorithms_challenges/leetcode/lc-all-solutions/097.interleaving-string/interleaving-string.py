@@ -11,27 +11,27 @@ c_ Solution(o..
     __ l..(s1) + l..(s2) != l..(s3
       r.. F..
 
-    ___ dfs(s1, i, s2, j, d, path, s3
+    ___ dfs(s1, i, s2, j, d, p.., s3
       __ (i, j) __ d:
         r.. d[(i, j)]
 
-      __ path __ s3:
+      __ p.. __ s3:
         r.. T..
 
       __ i < l..(s1
         __ s3[i + j] __ s1[i]:
-          path.a..(s1[i])
-          __ dfs(s1, i + 1, s2, j, d, path, s3
+          p...a..(s1[i])
+          __ dfs(s1, i + 1, s2, j, d, p.., s3
             r.. T..
-          path.pop()
+          p...pop()
           d[(i + 1, j)] = F..
 
       __ j < l..(s2
         __ s3[i + j] __ s2[j]:
-          path.a..(s2[j])
-          __ dfs(s1, i, s2, j + 1, d, path, s3
+          p...a..(s2[j])
+          __ dfs(s1, i, s2, j + 1, d, p.., s3
             r.. T..
-          path.pop()
+          p...pop()
           d[(i, j + 1)] = F..
 
       r.. F..

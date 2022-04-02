@@ -1,14 +1,14 @@
 ____ c.. _______ defaultdict
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 
 ____ bs4 _______ BeautifulSoup
 
 
 # prep data
-tmp = os.getenv("TMP", "/tmp")
+tmp = __.getenv("TMP", "/tmp")
 page = 'us_holidays.html'
-holidays_page = os.path.j..(tmp, page)
+holidays_page = __.p...j..(tmp, page)
 urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{page}',
     holidays_page

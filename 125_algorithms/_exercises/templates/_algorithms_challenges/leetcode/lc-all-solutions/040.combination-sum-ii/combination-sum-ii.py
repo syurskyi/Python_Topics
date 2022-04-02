@@ -6,9 +6,9 @@ c_ Solution(o..
     :rtype: List[List[int]]
     """
 
-    ___ dfs(nums, target, start, visited, path, res
+    ___ dfs(nums, target, start, visited, p.., res
       __ target __ 0:
-        res.a..(path + [])
+        res.a..(p.. + [])
         r..
 
       ___ i __ r..(start, l..(nums)):
@@ -18,9 +18,9 @@ c_ Solution(o..
           r.. 0
         __ i n.. __ visited:
           visited.add(i)
-          path.a..(nums[i])
-          dfs(nums, target - nums[i], i + 1, visited, path, res)
-          path.pop()
+          p...a..(nums[i])
+          dfs(nums, target - nums[i], i + 1, visited, p.., res)
+          p...pop()
           visited.discard(i)
 
     candidates.s..()

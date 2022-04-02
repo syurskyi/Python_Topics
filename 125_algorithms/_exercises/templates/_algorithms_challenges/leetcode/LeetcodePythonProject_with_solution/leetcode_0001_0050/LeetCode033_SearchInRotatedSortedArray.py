@@ -10,19 +10,19 @@ c_ Solution(o..
         :type target: int
         :rtype: int
         """
-        l, r = 0, l..(nums)-1
-        w.... l <= r:
-            mid = (l+r)//2
+        l, r  0, l..(nums)-1
+        w.... l < r:
+            mid  (l+r)//2
             __ nums[mid] __ target:
                 r.. mid
-            __ nums[l] <= nums[mid]:
-                __ nums[l] <= target < nums[mid]:
-                    r = mid-1
+            __ nums[l] < nums[mid]:
+                __ nums[l] < target < nums[mid]:
+                    r  mid-1
                 ____:
-                    l = mid+1
+                    l  mid+1
             ____:
-                __ nums[mid] <= target <= nums[r]:
-                    l = mid+1
+                __ nums[mid] < target < nums[r]:
+                    l  mid+1
                 ____:
-                    r = mid-1
+                    r  mid-1
         r.. -1

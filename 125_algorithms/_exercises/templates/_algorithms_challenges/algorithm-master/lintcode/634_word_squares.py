@@ -21,27 +21,27 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  words, n, ans, path
-        __ (l..(path) __ n a..
-            is_valid(path)):
-            ans.a..(path | )
+    ___ dfs  words, n, ans, p..
+        __ (l..(p..) __ n a..
+            is_valid(p..)):
+            ans.a..(p.. | )
             r..
 
-        __ l..(path) >= n:
+        __ l..(p..) >= n:
             r..
 
         ___ i __ r..(l..(words)):
-            path.a..(words[i])
-            dfs(words, n, ans, path)
-            path.pop()
+            p...a..(words[i])
+            dfs(words, n, ans, p..)
+            p...pop()
 
-    ___ is_valid  path
-        __ n.. path o. l..(path) != l..(path[0]
+    ___ is_valid  p..
+        __ n.. p.. o. l..(p..) != l..(p..[0]
             r.. F..
 
-        ___ i __ r..(1, l..(path)):
+        ___ i __ r..(1, l..(p..)):
             ___ j __ r..(i
-                __ path[i][j] != path[j][i]:
+                __ p..[i][j] != p..[j][i]:
                     r.. F..
 
         r.. T..

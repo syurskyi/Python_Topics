@@ -6,8 +6,8 @@ c_ CheckBrackets:
     BRACKETS = {'{': '}',
                 ' ': ' ',
                 '(': ')'}
-    OPENING_BRACKET = s..(BRACKETS.keys())
-    CLOSING_BRACKET = s..(BRACKETS.values())
+    OPENING_BRACKET = s..(BRACKETS.keys
+    CLOSING_BRACKET = s..(BRACKETS.values
 
     ___ - , inp
         inp = inp

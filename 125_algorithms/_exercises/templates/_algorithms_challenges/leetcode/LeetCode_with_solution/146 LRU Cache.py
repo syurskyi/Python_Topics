@@ -113,7 +113,7 @@ c_ LRUCache_TLE(o..
             __ l..(q)+1 <= capacity:
                 q.insert(0, key)
             ____:
-                dic.pop(q.pop())
+                dic.pop(q.pop
                 q.insert(0, key)
 
         dic[key] = value

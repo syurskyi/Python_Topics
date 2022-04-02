@@ -18,5 +18,5 @@ ___ py2_miller_min_left(start_date=BITE_CREATED_DT
     duration = PY2_DEATH_DT - start_date
     r.. r..((duration.total_seconds()/60)/61320,2)
 
-print(py2_miller_min_left())
+print(py2_miller_min_left
 

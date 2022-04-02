@@ -1,10 +1,10 @@
-_______ os
+_______ __
 _______ __
 ____ c.. _______ Counter
 ____ urllib.request _______ urlretrieve
 ____ dateutil.parser _______ p..
 
-commits = os.path.j..('/tmp', 'commits')
+commits = __.p...j..('/tmp', 'commits')
 urlretrieve('https://bit.ly/2H1EuZQ', commits)
 
 # you can use this constant as key to the yyyymm:count dict
@@ -33,7 +33,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     log = Counter()
     c = 0
     w__ o.. commit_log) __ cl:
-        ___ x __ log_regex.f..(cl.read()):
+        ___ x __ log_regex.f..(cl.read:
             c += 1
             dt = p..(x[0])
             __ year __ N.. o. year __ dt.year:

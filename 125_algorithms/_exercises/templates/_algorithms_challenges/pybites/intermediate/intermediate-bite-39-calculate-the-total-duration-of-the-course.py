@@ -1,13 +1,13 @@
 ____ d__ _______ d__, t.., time
-_______ os
+_______ __
 _______ __
 _______ urllib.request
 
 # https://stackoverflow.com/questions/100210/what-is-the-standard-way-to-add-n-seconds-to-datetime-time-in-python
 
 # getting the data
-COURSE_TIMES = os.path.j..(
-    os.getenv("TMP", "/tmp"),
+COURSE_TIMES = __.p...j..(
+    __.getenv("TMP", "/tmp"),
     'course_timings'
 )
 urllib.request.urlretrieve(
@@ -27,7 +27,7 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    w__ o.. COURSE_TIMES, 'r') __ f:
+    w__ o.. COURSE_TIMES, _ __ f:
         result    # list
         ___ line __ f:
             timestamp = __.f..(r'(\d{1,2}:\d{1,2})', line)

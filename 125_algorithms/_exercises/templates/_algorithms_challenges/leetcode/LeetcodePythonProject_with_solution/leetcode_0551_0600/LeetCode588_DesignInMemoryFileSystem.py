@@ -15,9 +15,9 @@ c_ FileSystem(o..
     ___ -
         root = TreeNode()
     
-    ___ ls  path
-        path = path[1:]
-        arr = path.s..('/')
+    ___ ls  p..
+        p.. = p..[1:]
+        arr = p...s..('/')
         __ arr[0] __ '':
             arr    # list
         node = root
@@ -29,9 +29,9 @@ c_ FileSystem(o..
         ____:
             r.. node.childFolders
     
-    ___ mkdir  path
-        path = path[1:]
-        arr = path.s..('/')
+    ___ mkdir  p..
+        p.. = p..[1:]
+        arr = p...s..('/')
         node = root
         ___ folder __ arr:
             __ folder __ node.children:

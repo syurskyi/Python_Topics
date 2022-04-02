@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ d__ _______ date, t..
 ____ pathlib _______ Path
 ____ typing _______ Dict, List, OrderedDict
@@ -7,7 +7,7 @@ _______ json
 ____ c.. _______ OrderedDict
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
@@ -47,7 +47,7 @@ ___ _date_conv(data: d..
 
 ___ match_daily_rates(start: date,
                       end: date, daily_rates: d..) __ Dict[date, date]:
-    keys = l..(daily_rates.keys())
+    keys = l..(daily_rates.keys
     __ isi..(keys[0], s..
         data_days = s..(l.. m..(_parse_date, keys)))
     ____:
@@ -78,9 +78,9 @@ ___ match_daily_rates(start: date,
 ___ exchange_rates(
     start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
 ) __ OrderedDict:
-    daily_rates = _date_conv(json.loads(RATES_FILE.read_text()) 'rates' )
+    daily_rates = _date_conv(json.loads(RATES_FILE.read_text 'rates' )
     start_date, end_date = map(_parse_date, [start_date, end_date])
-    __ start_date < m..(daily_rates.keys()) o. end_date > m..(daily_rates.k..
+    __ start_date < m..(daily_rates.keys o. end_date > m..(daily_rates.k..
         r.. ValueError('Date out of range for data')
     matches = match_daily_rates(start_date, end_date, daily_rates)
     result    # dict

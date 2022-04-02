@@ -6,4 +6,4 @@ ___ vowelCount(words
                 phraseCount = s..(phraseCount.c.. c) ___ c __ vowels)
                 answer.a..(s..(phraseCount))
         print(' '.j..(answer))
-vowelCount(input())
+vowelCount(input

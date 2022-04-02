@@ -2,10 +2,10 @@
 #  Score: 35
 
 
-t = i..(input())
+t = i..(input
 ___ i __ r..(t
-    money = i..(input())
-    n = i..(input())
+    money = i..(input
+    n = i..(input
     arr = l.. m..(i.., input().s..()))
 
     saved_values    # dict

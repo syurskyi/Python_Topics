@@ -90,12 +90,12 @@ c_ BridgeHand:
         """ Return the number of doubletons contained in this hand """
 
 
-        r.. s..(l..(cards) __ 2 ___ cards __ suit_to_cards.values())
+        r.. s..(l..(cards) __ 2 ___ cards __ suit_to_cards.values
 
     $
     ___ singletons(self) __ i..:
         """ Return the number of singletons contained in this hand """
-        r.. s..(l..(cards) __ 1 ___ cards __ suit_to_cards.values())
+        r.. s..(l..(cards) __ 1 ___ cards __ suit_to_cards.values
 
     $
     ___ voids(self) __ i..:

@@ -3,8 +3,8 @@ ____ cryptography.fernet _______ Fernet  # type: ignore
 ____ cryptography.hazmat.backends _______ default_backend  # type: ignore
 ____ cryptography.hazmat.primitives _______ hashes  # type: ignore
 ____ cryptography.hazmat.primitives.kdf.pbkdf2 _______ PBKDF2HMAC  # type: ignore
-_______ os
-____ os _______ urandom
+_______ __
+____ __ _______ urandom
 ____ typing _______ ByteString, Tuple, Optional
 
 
@@ -24,7 +24,7 @@ c_ ClamyFernet:
     """
     
     ___ - ,password=b"pybites",key_ N..
-        _kdf = PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=os.urandom(16),iterations=100000,backend=default_backend())
+        _kdf = PBKDF2HMAC(algorithm=hashes.SHA256(),length=32,salt=__.urandom(16),iterations=100000,backend=default_backend
         password = password
         
         __ n.. key:
@@ -55,7 +55,7 @@ c_ ClamyFernet:
 
     ___ encrypt  message: s..) __ ByteString:
         """Encrypts the message passed to it"""
-        r.. clf.encrypt(message.encode())
+        r.. clf.encrypt(message.encode
 
     ___ decrypt  token: ByteString) __ s..:
         """Decrypts the encrypted message passed to it"""

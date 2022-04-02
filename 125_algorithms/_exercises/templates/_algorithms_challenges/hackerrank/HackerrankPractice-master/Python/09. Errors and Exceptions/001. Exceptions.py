@@ -3,7 +3,7 @@
 
 
 ___ _ __ r..(i..(input())):
-    a, b = input().s.. 
+    a, b  input().s..
     ___
         print(i..(a) // i..(b))
     ______ BaseException __ err:

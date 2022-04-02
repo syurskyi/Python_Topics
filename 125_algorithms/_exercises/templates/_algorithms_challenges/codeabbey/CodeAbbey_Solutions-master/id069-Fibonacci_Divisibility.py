@@ -12,4 +12,4 @@ ___ fibDiv(tests
             a = b
             b = c
     print(' '.j..(answer))
-fibDiv(input())
+fibDiv(input

@@ -26,7 +26,7 @@ ___ report
 
 
 ___ test_get_all_line_counts
-    counts = l..(get_all_line_counts())
+    counts = l..(get_all_line_counts
     # total number of test files / bites
     ... l..(counts) __ 186
     # all elements should be ints
@@ -35,6 +35,6 @@ ___ test_get_all_line_counts
     ... s..(counts) __ 8135
 
 
-?p__.m__.p.("line", EXPECTED_OUTPUT.s...s..())
+?p__.m__.p.("line", EXPECTED_OUTPUT.s...s..
 ___ test_create_stats_report(report, line
     ... line __ report

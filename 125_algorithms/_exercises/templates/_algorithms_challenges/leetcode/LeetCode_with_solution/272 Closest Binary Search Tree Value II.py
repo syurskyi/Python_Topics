@@ -53,11 +53,11 @@ c_ Solution(o..
         ret    # list
         w.... l..(ret) < k:
             __ n.. pre:
-                ret.a..(suc.pop())
+                ret.a..(suc.pop
             ____ n.. suc:
-                ret.a..(pre.pop())
+                ret.a..(pre.pop
             ____ abs(pre[-1] - target) < abs(suc[-1] - target
-                ret.a..(pre.pop())
+                ret.a..(pre.pop
             ____:
-                ret.a..(suc.pop())
+                ret.a..(suc.pop
         r.. ret

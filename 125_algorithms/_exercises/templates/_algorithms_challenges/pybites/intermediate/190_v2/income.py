@@ -1,11 +1,11 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ c.. _______ defaultdict
 ____ urllib.request _______ urlretrieve
 ____ bs4 _______ BeautifulSoup
 
 # import the countries xml file
-tmp = Path(os.getenv("TMP", "/tmp"))
+tmp = Path(__.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists
@@ -24,7 +24,7 @@ ___ get_income_distribution(___=countries
       - values = list of country names (wb:name)
     """
     w__ o.. ___ _ __ f:
-        soup = BeautifulSoup(f.read())
+        soup = BeautifulSoup(f.read
 
     
     income_to_countries = defaultdict(l..)

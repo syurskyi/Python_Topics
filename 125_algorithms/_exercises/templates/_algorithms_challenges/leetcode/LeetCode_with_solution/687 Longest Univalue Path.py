@@ -83,15 +83,15 @@ c_ Solution_error:
         left = find(node.left)
         right = find(node.right)
         cur = 1  # node.val
-        path = 1
+        p.. = 1
         __ left a.. node.left.val __ node.val:
-            path += left
+            p.. += left
             cur = left + 1
 
         __ right a.. node.right.val __ node.val:
-            path += right
+            p.. += right
             __ right > left:
                 cur = right + 1
 
-        ret = m..(ret, path - 1)
+        ret = m..(ret, p.. - 1)
         r.. cur

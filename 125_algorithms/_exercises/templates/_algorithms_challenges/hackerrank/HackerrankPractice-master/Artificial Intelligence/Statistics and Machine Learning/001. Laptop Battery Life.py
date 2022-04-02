@@ -6,7 +6,7 @@ _______ pandas __ pd
 ____ sklearn.linear_model _______ LinearRegression
 
 
-timeCharged = f__(input())
+timeCharged = f__(input
 data = pd.read_csv('trainingdata.txt', names= 'charged', 'lasted' )
 train = data[data 'lasted'  < 8]
 model = LinearRegression()

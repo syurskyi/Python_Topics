@@ -1,4 +1,4 @@
-amount_values = i..(input())
+amount_values = i..(input
 results    # list
 
 ___ get_sqrt(num, r, step
@@ -11,7 +11,7 @@ ___ get_sqrt(num, r, step
         
 ___ i __ r..(amount_values
     r = 1
-    num, step = map(i.., input().s..())
+    num, step = map(i.., input().s..
     results.a..(get_sqrt(num,r,step))
 
 print(*results)

@@ -1,11 +1,11 @@
-_______ os
+_______ __
 _______ urllib.request
 
 # PREWORK
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.j..(TMP, DICT)
+DICTIONARY = __.p...j..(TMP, DICT)
 urllib.request.urlretrieve _*{S3}{DICT}', DICTIONARY)
 
 scrabble_scores = [(1, "E A O I N R T L S U"), (2, "D G"), (3, "B C M P"),
@@ -29,7 +29,7 @@ ___ calc_word_value(word
     """Given a word calculate its value using the LETTER_SCORES dict"""
 
 
-    r.. s..(LETTER_SCORES.get(letter,0) ___ letter __ word.upper())
+    r.. s..(LETTER_SCORES.get(letter,0) ___ letter __ word.upper
 
 
 ___ max_word_value(words

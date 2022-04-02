@@ -57,19 +57,19 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  node, target, ans, path
+    ___ dfs  node, target, ans, p..
         __ n.. node:
             r..
 
-        path.a..(node.val)
+        p...a..(node.val)
 
         remaining = target
-        ___ i __ r..(l..(path) - 1, -1, -1
-            remaining -= path[i]
+        ___ i __ r..(l..(p..) - 1, -1, -1
+            remaining -= p..[i]
 
             __ remaining __ 0:
-                ans.a..(path[i:])
+                ans.a..(p..[i:])
 
-        dfs(node.left, target, ans, path)
-        dfs(node.right, target, ans, path)
-        path.pop()
+        dfs(node.left, target, ans, p..)
+        dfs(node.right, target, ans, p..)
+        p...pop()

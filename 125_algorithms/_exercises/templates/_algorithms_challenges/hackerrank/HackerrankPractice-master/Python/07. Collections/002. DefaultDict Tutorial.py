@@ -5,8 +5,8 @@
 ____ c.. _______ defaultdict
 
 
-n, m = map(i.., input().s..())
-d = defaultdict(l..)
+n, m  map(i.., input().s..
+d  defaultdict(l..)
 ___ i __ r..(1, n + 1
     d[input()].a..(s..(i))
 ___ i __ r..(m

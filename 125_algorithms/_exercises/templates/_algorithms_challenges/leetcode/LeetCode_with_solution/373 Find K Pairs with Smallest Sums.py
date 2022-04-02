@@ -74,7 +74,7 @@ c_ Solution(o..
             node = heapq.heappop(h)
             ret.a..([nums1[node.i], nums2[node.j]])
             __ node.hasnext
-                heapq.heappush(h, node.next())
+                heapq.heappush(h, node.next
 
         r.. ret
 

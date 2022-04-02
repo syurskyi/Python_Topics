@@ -22,7 +22,7 @@ ___ test_get_food_most_calories_smaller_population
 
 
 ___ test_get_bodybuilder_friendly_foods
-    actual_with_drinks = l..(get_bodybuilder_friendly_foods())
+    actual_with_drinks = l..(get_bodybuilder_friendly_foods
     expected =  'Premium Bacon Ranch Salad with Grilled Chicken',
                 'Nonfat Latte (Small)',
                 'Nonfat Latte (Large)',

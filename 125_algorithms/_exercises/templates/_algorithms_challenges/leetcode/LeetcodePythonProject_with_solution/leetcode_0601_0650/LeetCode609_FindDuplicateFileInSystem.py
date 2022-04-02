@@ -10,8 +10,8 @@ c_ Solution(o..
         :rtype: List[List[str]]
         """
         hashmap    # dict
-        ___ path __ paths:
-            arr = path.s..(' ')
+        ___ p.. __ paths:
+            arr = p...s..(' ')
             folder = arr[0]
             files = arr[1:]
             ___ file __ files:

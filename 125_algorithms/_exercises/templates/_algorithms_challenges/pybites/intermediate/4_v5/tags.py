@@ -1,9 +1,9 @@
-_______ os
+_______ __
 ____ c.. _______ Counter
 _______ urllib.request
 
 # prep
-tempfile = os.path.j..('/tmp', 'feed')
+tempfile = __.p...j..('/tmp', 'feed')
 urllib.request.urlretrieve('http://bit.ly/2zD8d8b', tempfile)
 
 w__ o.. tempfile) __ f:

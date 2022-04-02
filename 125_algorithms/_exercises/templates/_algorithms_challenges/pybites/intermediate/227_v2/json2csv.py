@@ -36,7 +36,7 @@ ___ convert_to_csv(json_file
 
     creatures = data 'mounts'  'collected'
 
-    field_names = l..(creatures[0].keys())
+    field_names = l..(creatures[0].keys
 
     
     w__ o.. csv_file,'w') __ csv_file:

@@ -12,4 +12,4 @@ ___ savingsCalc(calculations
             year += 1
         answer.a..(s..(year))
     print(' '.j..(answer))
-savingsCalc(input())
+savingsCalc(input

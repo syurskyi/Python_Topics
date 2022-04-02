@@ -2,7 +2,7 @@ _______ p__
 
 ____ survivors _______ filter_killed_mutants, _get_data
 
-EXPECTED_OUTPUT = """
+EXPECTED_OUTPUT  """
 [*] Start mutation process:
    - targets: account
    - tests: /tmp/test_account.py
@@ -89,7 +89,7 @@ EXPECTED_OUTPUT = """
    - timeout: 0 (0.0%)
 [*] Coverage: 240 of 240 AST nodes (100.0%)
 """
-EXPECTED_OUTPUT_WITH_GAP = """
+EXPECTED_OUTPUT_WITH_GAP  """
 [*] Start mutation process:
    - targets: account
    - tests: /tmp/test_account.py
@@ -162,7 +162,7 @@ EXPECTED_OUTPUT_WITH_GAP = """
 """
 
 
-?p__.f..(scope='module')
+?p__.f..(scope'module')
 ___ actual
     r.. [line.rstrip() ___ line __ filter_killed_mutants()]
 

@@ -1,10 +1,10 @@
-_______ os
+_______ __
 _______ urllib.request
 
 # data provided
-tmp = os.getenv("TMP", "/tmp")
-stopwords_file = os.path.j..(tmp, 'stopwords')
-harry_text = os.path.j..(tmp, 'harry')
+tmp = __.getenv("TMP", "/tmp")
+stopwords_file = __.p...j..(tmp, 'stopwords')
+harry_text = __.p...j..(tmp, 'harry')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file

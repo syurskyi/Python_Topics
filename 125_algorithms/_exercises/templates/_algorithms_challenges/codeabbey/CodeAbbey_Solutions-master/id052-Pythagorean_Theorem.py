@@ -1,9 +1,9 @@
 ___ pythagorean(triangles
     answer    # list
     ___ triangle __ r..(triangles
-        sides = input().s.. 
-        a,b,c = sides
-        a,b,c = i..(a),i..(b),i..(c)
+        sides  input().s.. 
+        a,b,c  sides
+        a,b,c  i..(a),i..(b),i..(c)
 
         __ a**2 + b**2 __ c**2:
             answer.a..('R')

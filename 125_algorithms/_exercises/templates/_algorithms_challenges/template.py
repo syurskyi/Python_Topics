@@ -9,7 +9,7 @@ ___ checkdupsorting(myarray
 			r..
 			print("There are No duplicates present in the given array.")
 
-myarray = [3,4,5,6,7,8,7]
+myarray  [3,4,5,6,7,8,7]
 checkdupsorting(myarray)
 
 # #####################################################################################################################
@@ -20,11 +20,11 @@ ___ getfirstnonrepeated(myarray
     # #print "tab created:", tab
     ___ ele __ myarray.l..:
         __ ele __ tab:
-            tab[ele] += 1
-        ____ ele != " ":
-            tab[ele] = 1
+            tab[ele] + 1
+        ____ ele ! " ":
+            tab[ele]  1
         ____:
-            tab[ele] = 0
+            tab[ele]  0
     # print "in loop:",tab,"for","'",ele,"'","in",myarray
 
     ___ ele __ myarray.l..:
@@ -54,7 +54,7 @@ c_ AnagramTest(o..
 
 
 # Run Tests
-t = AnagramTest()
+t  AnagramTest()
 t.test(anagram)
 
 # %%
@@ -69,14 +69,14 @@ t.test(anagram2)
 
 ___ balance_check(s
     # Check is even number of brackets
-    __ l..(s) % 2 != 0:
+    __ l..(s) % 2 ! 0:
         r.. F..
 
     # Set of opening brackets
-    opening = s..('([{')
+    opening  s..('([{')
 
     # Matching Pairs
-    matches = s..([('(', ')'), (' ', ' '), ('{', '}')])
+    matches  s..([('(', ')'), (' ', ' '), ('{', '}')])
 
     # Use a list as a "Stack"
     stack    # list
@@ -95,7 +95,7 @@ ___ balance_check(s
                 r.. F..
 
             # Check the last open parenthesis
-            last_open = stack.pop()
+            last_open  stack.pop()
 
             # Check if it has a closing match
             __ (last_open, paren) n.. __ matches:
@@ -131,7 +131,7 @@ c_ TestBalanceCheck(o..
 
 # Run Tests
 
-t = TestBalanceCheck()
+t  TestBalanceCheck()
 t.test(balance_check)
 
 # #####################################################################################################################

@@ -34,7 +34,7 @@ c_ Solution:
         ___ hi __ r..(l..(s)):
             counter[s[hi]] += 1
             w... T...
-                most = m..(counter.values())  # O(26)
+                most = m..(counter.values  # O(26)
                 l = hi - lo + 1
                 __ l - most > k:
                     counter[s[lo]] -= 1

@@ -14,12 +14,12 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  nums, ans, path
+    ___ dfs  nums, ans, p..
         __ n.. nums:
-            ans.a..(path | )
+            ans.a..(p.. | )
             r..
 
         ___ i __ r..(l..(nums)):
-            path.a..(nums[i])
-            dfs(nums[:i] + nums[i + 1:], ans, path)
-            path.pop()
+            p...a..(nums[i])
+            dfs(nums[:i] + nums[i + 1:], ans, p..)
+            p...pop()

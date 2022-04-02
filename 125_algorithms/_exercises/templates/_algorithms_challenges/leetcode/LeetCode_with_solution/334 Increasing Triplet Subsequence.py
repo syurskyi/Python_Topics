@@ -13,7 +13,7 @@ return true.
 Given [5, 4, 3, 2, 1],
 return false.
 """
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -27,8 +27,8 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: bool
         """
-        min1 = sys.maxint
-        min2 = sys.maxint
+        min1 = ___.maxint
+        min2 = ___.maxint
         ___ e __ nums:
             __ e < min1:
                 min1 = e

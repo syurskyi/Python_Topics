@@ -3,7 +3,7 @@ _______ __
 
 PUNCTUATION_CHARS = l..(s__.punctuation)
 
-used_passwords = s..('PassWord@1 PyBit$s9'.s..())
+used_passwords = s..('PassWord@1 PyBit$s9'.s..
 
 """
 is between 6 and 12 chars long (both inclusive)

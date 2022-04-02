@@ -1,18 +1,18 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com/{}"
 FILE_NAME = "mutpy.out"
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 PATH = Path(TMP, FILE_NAME)
 
 __ n.. PATH.exists
     urlretrieve(S3.f..(FILE_NAME), PATH)
 
 
-___ _get_data(path=PATH
-    w__ o.. path) __ f:
+___ _get_data(p..=PATH
+    w__ o.. p..) __ f:
         r.. [line.rstrip() ___ line __ f.r..]
 
 

@@ -29,7 +29,7 @@ c_ Queue(o..
     """
     __ n.. stack2:
       w.... stack1:
-        stack2.a..(stack1.pop())
+        stack2.a..(stack1.pop
       r.. stack2[-1]
     ____:
       r.. stack2[-1]

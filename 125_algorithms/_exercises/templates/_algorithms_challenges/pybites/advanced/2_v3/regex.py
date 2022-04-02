@@ -45,6 +45,6 @@ ___ match_first_paragraph(html=HTML
     r.. result.group(1) __ result ____ ''
 
 __ _______ __ _______
-    pprint(extract_course_times())
-    pprint(get_all_hashtags_and_links())
-    pprint(match_first_paragraph())
+    pprint(extract_course_times
+    pprint(get_all_hashtags_and_links
+    pprint(match_first_paragraph

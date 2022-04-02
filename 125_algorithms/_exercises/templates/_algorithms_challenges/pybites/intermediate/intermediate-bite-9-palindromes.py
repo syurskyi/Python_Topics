@@ -11,12 +11,12 @@ which reads the same backward as forward.
 
 """
 
-_______ os
+_______ __
 _______ urllib.request
 _______ s__
 _______ __
 
-DICTIONARY = os.path.j..(os.getenv('temp'), 'dictionary_m_words.txt')
+DICTIONARY = __.p...j..(__.getenv('temp'), 'dictionary_m_words.txt')
 urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 # How come it's a generator, if it doesn't have yield statement?
@@ -26,7 +26,7 @@ urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 ___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
     w__ o.. DICTIONARY) __ f:
-        r.. (word.l...s.. ___ word __ f.readlines())
+        r.. (word.l...s.. ___ word __ f.readlines
 
 
 ___ is_palindrome(word
@@ -75,4 +75,4 @@ ___ get_longest_palindrome(words_ N..
     palindromes = (word ___ word __ words __ is_palindrome(word))
     r.. m..(palindromes, key=l..)
 
-print(get_longest_palindrome())
+print(get_longest_palindrome

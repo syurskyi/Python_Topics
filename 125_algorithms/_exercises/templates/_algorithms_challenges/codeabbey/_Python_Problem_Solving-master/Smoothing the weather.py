@@ -1,5 +1,5 @@
 #number of measurements to inserted
-data = i..(input())
+data = i..(input
 #enter all the measurements seperated by space
 mea = l.. m..(f__, input().s..()))
 #this array is used to store the results

@@ -37,7 +37,7 @@ ___ parse_social_platforms_string
             values.a..(result.group(i))
         platform_name = values[0]
         range_object = r..(i..(values[1]),i..(values[2]))
-        last = ''.j..(values[-1].s..())
+        last = ''.j..(values[-1].s..
         regex = '^ ' + last + ' +$'
         r = __.c..(regex)
         validator = Validator(range_object,r)

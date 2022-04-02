@@ -52,18 +52,18 @@ c_ Solution:
 
             j = 0
 
-    ___ find_next_words  board, x, y, visited, cnt, node, next_words, path
+    ___ find_next_words  board, x, y, visited, cnt, node, next_words, p..
         __ (x, y) __ visited o. board[x][y] n.. __ node.children:
             r..
 
         m, n = l..(board), l..(board[0])
         node = node.children[board[x][y]]
 
-        path.a..((x, y))
+        p...a..((x, y))
         visited.add((x, y))
 
         __ node.end_of __ n.. N..
-            next_words.a..(path | )
+            next_words.a..(p.. | )
             ans = m..(ans, cnt + 1)
         ____:
             ___ dx, dy __ (
@@ -76,9 +76,9 @@ c_ Solution:
                 __ n.. (0 <= _x < m a.. 0 <= _y < n
                     _____
 
-                find_next_words(board, _x, _y, visited, cnt, node, next_words, path)
+                find_next_words(board, _x, _y, visited, cnt, node, next_words, p..)
 
-        path.pop()
+        p...pop()
         visited.discard((x, y))
 
     ___ put  root, word

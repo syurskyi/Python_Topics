@@ -5,5 +5,5 @@ c_ Solution(o..
     :rtype: int
     """
     nums.s..()
-    mid = nums[l..(nums) / 2]
+    mid  nums[l..(nums) / 2]
     r.. s..(abs(num - mid) ___ num __ nums)

@@ -81,7 +81,7 @@ c_ Solution:
                 ___ j __ r..(i + 1
                     F[a][i] += F[a - coins[i]][j]
 
-        r.. s..(F[amount].values())
+        r.. s..(F[amount].values
 
     ___ change_error  amount, coins
         """

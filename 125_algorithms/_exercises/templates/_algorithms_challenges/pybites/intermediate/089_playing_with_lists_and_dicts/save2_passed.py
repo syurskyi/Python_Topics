@@ -65,6 +65,6 @@ ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
        has both sorted, so:
        ['AK', 'AL', 'AZ', ..., 'South Dakota', 'Tennessee', 'Texas', ...]
        (see also test_combine_state_names_and_abbreviations)"""
-    l1 = s..(l..(us_state_abbrev.values())[:10])
+    l1 = s..(l..(us_state_abbrev.values[:10])
     l1.extend(s..(states)[-10:])
     r.. l1

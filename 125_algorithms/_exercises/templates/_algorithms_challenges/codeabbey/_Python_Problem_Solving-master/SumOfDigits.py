@@ -1,4 +1,4 @@
-d = i..(input())
+d = i..(input
 
 lista    # list
 w.... l..(lista) < d:

@@ -12,7 +12,7 @@ ___ wc(file_
     characters = 0
     words = 0
     ___ line __ lines:
-        words +=  l..(line.s..())
+        words +=  l..(line.s..
         characters += l..(line)
 
 
@@ -22,5 +22,5 @@ ___ wc(file_
 
 __ _____ __ _____
     # make it work from cli like original unix wc
-    _______ sys
-    print(wc(sys.argv[1]))
+    _______ ___
+    print(wc(___.argv[1]))

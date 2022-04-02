@@ -1,4 +1,4 @@
-____ os _______ path
+____ __ _______ p..
 _______ platform
 _______ subprocess
 
@@ -9,7 +9,7 @@ _______ p__
 TMP = '/tmp'
 SCRIPT = 'links.py'
 IS_LOCAL = platform.system() __  'Darwin', 'Linux'
-MY_CODE = SCRIPT __ IS_LOCAL ____ path.j..(TMP, SCRIPT)
+MY_CODE = SCRIPT __ IS_LOCAL ____ p...j..(TMP, SCRIPT)
 
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture

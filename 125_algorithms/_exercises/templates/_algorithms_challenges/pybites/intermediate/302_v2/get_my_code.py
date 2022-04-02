@@ -1,11 +1,11 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 _______ json
 
 filename = "my_code.json"
 url = "https://bites-data.s3.us-east-2.amazonaws.com/{filename}"
-tmp = Path(os.getenv("TMP", "/tmp"))
+tmp = Path(__.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
 __ n.. json_input_file.exists
@@ -36,8 +36,8 @@ ___ get_passing_code(json_data=json_data
         passing_code = bite 'passing_code'
         
         print(passing_code)
-        path = tmp / f"{bite_name}.py"
-        w__ o.. path,'w') __ f:
+        p.. = tmp / f"{bite_name}.py"
+        w__ o.. p..,'w') __ f:
             f.write(passing_code)
 
 

@@ -1,4 +1,4 @@
-_______ os, os.path
+_______ __, __.p..
 
 
 ___ count_dirs_and_files(directory='.'
@@ -6,7 +6,7 @@ ___ count_dirs_and_files(directory='.'
        Return a tuple of (number_of_directories, number_of_files)
     """
     filecount, dircount = 0, 0
-    ___ root, dirs, files __ os.walk(directory
+    ___ root, dirs, files __ __.walk(directory
         filecount += l..(files)
         dircount += l..(dirs)
     r..( dircount, filecount )

@@ -26,7 +26,7 @@ c_ Solution(o..
                             found = T..
                             _____
                     __ n.. found:
-                        hashset.add(keys.pop())
+                        hashset.add(keys.pop
                         count += 1
         r.. count
     

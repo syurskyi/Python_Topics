@@ -13,14 +13,14 @@ c_ Solution:
         dfs(S, ans, [])
         r.. ans
 
-    ___ dfs  S, ans, path
+    ___ dfs  S, ans, p..
         __ n.. S:
-            ans.a..(''.j..(path))
+            ans.a..(''.j..(p..))
             r..
 
         ___ i __ r..(l..(S)):
             __ i > 0 a.. S[i] __ S[i - 1]:
                 _____
-            path.a..(S[i])
-            dfs(S[:i] + S[i + 1:], ans, path)
-            path.pop()
+            p...a..(S[i])
+            dfs(S[:i] + S[i + 1:], ans, p..)
+            p...pop()

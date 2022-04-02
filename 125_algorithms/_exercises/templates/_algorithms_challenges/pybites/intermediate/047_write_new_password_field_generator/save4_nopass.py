@@ -1,7 +1,7 @@
 _______ s__
 _______ __
 
-used_passwords = s..('PassWord@1 PyBit$s9'.s..())
+used_passwords = s..('PassWord@1 PyBit$s9'.s..
 
 ___ validate_password(password
     c = __.c..(

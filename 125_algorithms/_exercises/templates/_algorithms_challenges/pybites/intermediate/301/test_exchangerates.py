@@ -15,7 +15,7 @@ ___ exchange_rates_result
 ___ matching_result
     start = date(2020, 1, 1)
     end = date(2020, 9, 1)
-    daily_rates = json.loads(RATES_FILE.read_text())["rates"]
+    daily_rates = json.loads(RATES_FILE.read_text["rates"]
     r.. match_daily_rates(start, end, daily_rates)
 
 
@@ -82,8 +82,8 @@ ___ test_exchange_rates_all_dates(exchange_rates_result
 
 
 ___ test_exchange_rates_order(exchange_rates_result
-    actual = l..(exchange_rates_result.keys())
-    expected = s..(exchange_rates_result.keys())
+    actual = l..(exchange_rates_result.keys
+    expected = s..(exchange_rates_result.keys
 
     ... actual __ expected
 

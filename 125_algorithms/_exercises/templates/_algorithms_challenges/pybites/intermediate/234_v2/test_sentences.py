@@ -2,7 +2,7 @@ _______ p__
 
 ____ sentences _______ capitalize_sentences
 
-lorem_ipsum = """
+lorem_ipsum  """
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor!
 Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat?
 Sed viverra tellus in hac habitasse platea dictumst vestibulum.
@@ -24,13 +24,13 @@ At erat pellentesque adipiscing commodo elit at imperdiet!
 Molestie nunc non blandit massa enim nec dui?
 Lorem donec massa sapien faucibus et molestie ac feugiat.
 """.s...s..
-text1, text2, text3 = lorem_ipsum[:5], lorem_ipsum[5:13], lorem_ipsum[13:]
+text1, text2, text3  lorem_ipsum[:5], lorem_ipsum[5:13], lorem_ipsum[13:]
 
 
 ?p__.m__.p.("text", [
     text1, text2, text3
 ])
 ___ test_capitalize_sentences(text
-    expected = " ".j..(text)
-    arg = expected.l..
+    expected  " ".j..(text)
+    arg  expected.l..
     ... capitalize_sentences(arg) __ expected

@@ -8,20 +8,20 @@ c_ Solution(o..
     dfsHelper(n, res, [], 2)
     r.. res[1:]
 
-  ___ dfsHelper  n, res, path, start
-    __ l..(path) > 1 a.. path[-2] > path[-1]:
+  ___ dfsHelper  n, res, p.., start
+    __ l..(p..) > 1 a.. p..[-2] > p..[-1]:
       r..
 
     __ n __ 1:
-      res.a..(path + [])
+      res.a..(p.. + [])
       r..
 
-    path.a..(n)
-    dfsHelper(n / n, res, path, n)
-    path.pop()
+    p...a..(n)
+    dfsHelper(n / n, res, p.., n)
+    p...pop()
 
     ___ i __ r..(start, i..(n ** 0.5) + 1
       __ n % i __ 0:
-        path.a..(i)
-        dfsHelper(n / i, res, path, i)
-        path.pop()
+        p...a..(i)
+        dfsHelper(n / i, res, p.., i)
+        p...pop()

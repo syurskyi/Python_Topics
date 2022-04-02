@@ -3,20 +3,20 @@
 
 
 # use two-pointers approach on a sorted array
-n, value = map(i.., input().s..())
-points = s..(l.. m..(i.., input().s..())))
+n, value  map(i.., input().s..
+points  s..(l.. m..(i.., input().s..())))
 
-ans = 0
-i = 0
-j = 1
+ans  0
+i  0
+j  1
 
 w.... j < n:
     __ points[j] - points[i] __ value:
-        ans += 1
-        j += 1
+        ans + 1
+        j + 1
     ____ points[j] - points[i] > value:
-        i += 1
+        i + 1
     ____ points[j] - points[i] < value:
-        j += 1
+        j + 1
 
 print(ans)

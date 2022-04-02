@@ -17,21 +17,21 @@ c_ Solution:
         __ n.. root:
             r.. 0
 
-        ans, _ = divide_conquer(root)
+        ans, _  divide_conquer(root)
         r.. ans
 
     ___ divide_conquer  node
         __ n.. node:
             r.. f__('-inf'), 0
 
-        max_left, left = divide_conquer(node.left)
-        max_right, right = divide_conquer(node.right)
+        max_left, left  divide_conquer(node.left)
+        max_right, right  divide_conquer(node.right)
 
         # 0 means discard the negative path
         res = m..(max_left, max_right, node.val + left + right)
-        path = m..(node.val + left, node.val + right, 0)
+        p.. = m..(node.val + left, node.val + right, 0)
 
-        r.. res, path
+        r.. res, p..
 
 
 c_ Solution:

@@ -751,7 +751,7 @@ ___ parse_isoduration(s
 
     # Convert all to seconds
     dt = d__.t..(d.._i..(days), hours=i..(hours), minutes=i..(minutes), seconds=i..(seconds))
-    r.. i..(dt.total_seconds())
+    r.. i..(dt.total_seconds
 
 
 ___ get_talks_gt_one_hour(videos

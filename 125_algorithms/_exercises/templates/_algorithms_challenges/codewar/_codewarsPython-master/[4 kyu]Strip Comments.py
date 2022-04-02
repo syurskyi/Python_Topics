@@ -6,7 +6,7 @@ ___ solution(s__,markers
     ___ stripSentence(s
         afterStrip = s
         ___ m __ markers:
-            __ m __ s a.. l..(afterStrip) > l..(s[:s.find(m)].rstrip()):
+            __ m __ s a.. l..(afterStrip) > l..(s[:s.find(m)].rstrip:
                 afterStrip = s[:s.find(m)].rstrip()
         r.. afterStrip
     r.. '\n'.j..([stripSentence(s) ___ s __ stringSplit])

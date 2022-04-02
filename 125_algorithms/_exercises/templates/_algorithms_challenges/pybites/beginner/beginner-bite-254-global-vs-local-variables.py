@@ -22,7 +22,7 @@ Good luck and keep calm and code in Python!
 
 """
 
-num_hundreds = -1
+num_hundreds  -1
 
 
 ___ sum_numbers(numbers: l..) __ i..:
@@ -30,11 +30,11 @@ ___ sum_numbers(numbers: l..) __ i..:
        update the global variable num_hundreds with the amount
        of times 100 fits in total"""
     global num_hundreds
-    list_sum = 0
+    list_sum  0
     ___ n __ numbers:
-        list_sum += n
-    how_many = i..(list_sum/100)
-    num_hundreds += how_many
+        list_sum + n
+    how_many  i..(list_sum/100)
+    num_hundreds + how_many
     r.. list_sum
 
 print(num_hundreds)

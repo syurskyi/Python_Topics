@@ -13,9 +13,9 @@ c_ Solution:
         dfs(A, 0, target, ans, [])
         r.. ans
 
-    ___ dfs  A, start, remaining, ans, path
+    ___ dfs  A, start, remaining, ans, p..
         __ remaining __ 0:
-            ans.a..(path | )
+            ans.a..(p.. | )
             r..
 
         ___ i __ r..(start, l..(A)):
@@ -27,6 +27,6 @@ c_ Solution:
             __ i > start a.. A[i] __ A[i - 1]:
                 _____
 
-            path.a..(A[i])
-            dfs(A, i + 1, remaining - A[i], ans, path)
-            path.pop()
+            p...a..(A[i])
+            dfs(A, i + 1, remaining - A[i], ans, p..)
+            p...pop()

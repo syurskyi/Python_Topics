@@ -1,12 +1,12 @@
-_______ os
+_______ __
 _______ urllib.request
 _______ __
 ____ c.. _______ Counter
 
 # data provided
 
-stopwords_file = os.path.j..('/tmp', 'stopwords')
-harry_text = os.path.j..('/tmp', 'harry')
+stopwords_file = __.p...j..('/tmp', 'stopwords')
+harry_text = __.p...j..('/tmp', 'harry')
 urllib.request.urlretrieve('http://bit.ly/2EuvyHB', stopwords_file)
 urllib.request.urlretrieve('http://bit.ly/2C6RzuR', harry_text)
 

@@ -153,7 +153,7 @@ ___ test_roman_numeral_conversion(mock_data, enchant, expected
 
 ___ test_generate_enchantments_with_mock(mock_data
     ... isi..(mock_data, d..)
-    ... l..(mock_data.keys()) __ 4
+    ... l..(mock_data.keys __ 4
     ... (
         mock_data["channeling"].description
         __ "Summons a lightning bolt at a targeted mob when enchanted item is thrown (targeted mob must be standing in raining)"
@@ -163,7 +163,7 @@ ___ test_generate_enchantments_with_mock(mock_data
 ___ test_generate_enchantments_from_source
     soup = get_soup()
     data = generate_enchantments(soup)
-    ... l..(data.keys()) __ 38
+    ... l..(data.keys __ 38
     ... data["efficiency"].max_level __ 5
 
 

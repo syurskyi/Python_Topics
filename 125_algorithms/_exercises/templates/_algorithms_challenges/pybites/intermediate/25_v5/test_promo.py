@@ -15,7 +15,7 @@ ___ grab_bites(promo, amount=BITES_AVAILABLE
 ?p__.f..
 ___ promo
     """Make a fresh new promo object for each test"""
-    r.. Promo(bites_done=bites_done.copy())
+    r.. Promo(bites_done=bites_done.copy
 
 
 ___ test_bites_not_done_start(promo

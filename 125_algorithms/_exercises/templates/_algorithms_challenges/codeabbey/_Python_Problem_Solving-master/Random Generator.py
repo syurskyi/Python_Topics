@@ -1,5 +1,5 @@
 #accept the number of the element to generate random numbers
-data = i..(input())
+data = i..(input
 #accept the numbers from which random numbers will be generated
 a = l.. m..(s..,input().s..()))
 #traverse through the list of the numbers

@@ -50,7 +50,7 @@ c_ Solution:
         """
         dfs
         """
-        dfs(root, d..())
+        dfs(root, d..
         __ n.. mn:
             r.. ""
         r.. "".j..(

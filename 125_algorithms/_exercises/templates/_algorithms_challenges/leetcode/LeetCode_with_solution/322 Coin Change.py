@@ -14,7 +14,7 @@ return -1.
 Note:
 You may assume that you have an infinite number of each kind of coin.
 """
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -33,18 +33,18 @@ c_ Solution(o..
         __ amount __ 0:
             r.. 0
 
-        F = [sys.maxint ___ _ __ x..(amount+1)]
+        F = [___.maxint ___ _ __ x..(amount+1)]
         ___ k __ coins:
             __ k < amount+1:
                 F[k] = 1
 
         ___ i __ x..(1, amount+1
-            __ F[i] != sys.maxint:
+            __ F[i] != ___.maxint:
                 ___ k __ coins:
                     __ i+k <= amount:
                         F[i+k] = m..(F[i+k], F[i]+1)
 
-        r.. F[amount] __ F[amount] != sys.maxint ____ -1
+        r.. F[amount] __ F[amount] != ___.maxint ____ -1
 
 
 c_ SolutionTLE(o..
@@ -57,17 +57,17 @@ c_ SolutionTLE(o..
         :type amount: int
         :rtype: int
         """
-        F = [sys.maxint ___ _ __ x..(amount+1)]
+        F = [___.maxint ___ _ __ x..(amount+1)]
         ___ k __ coins:
             __ k < amount + 1:
                 F[k] = 1
 
         ___ i __ x..(1, amount+1
             ___ k __ coins:
-                __ i-k > 0 a.. F[i-k] != sys.maxint:
+                __ i-k > 0 a.. F[i-k] != ___.maxint:
                     F[i] = m..(F[i], F[i-k]+1)
 
-        r.. F[amount] __ F[amount] != sys.maxint ____ -1
+        r.. F[amount] __ F[amount] != ___.maxint ____ -1
 
 
 __ _______ __ _______

@@ -1,11 +1,11 @@
 ____ d__ _______ d__, t..
-_______ os
+_______ __
 _______ __
 _______ urllib.request
 
 # getting the data
-COURSE_TIMES = os.path.j..(
-    os.getenv("TMP", "/tmp"),
+COURSE_TIMES = __.p...j..(
+    __.getenv("TMP", "/tmp"),
     'course_timings'
 )
 urllib.request.urlretrieve(
@@ -25,7 +25,7 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    w__ o.. COURSE_TIMES, 'r') __ f:
+    w__ o.. COURSE_TIMES, _ __ f:
         text = f.r..
 
     r.. __.f..(r'\d*:*\d*:\d{2}', text, flags=__.MULTILINE)

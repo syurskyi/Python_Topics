@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -23,7 +23,7 @@ c_ Solution:
         F = [[0 ___ _ __ x..(m)] ___ _ __ x..(n+1)]
         ___ k __ x..(1, n+1
             ___ i __ x..(m
-                F[k][i] = sys.maxint
+                F[k][i] = ___.maxint
                 ___ j __ x..(m
                     __ i != j:
                         F[k][i] = m..(F[k][i], F[k-1][j]+costs[k-1][i])

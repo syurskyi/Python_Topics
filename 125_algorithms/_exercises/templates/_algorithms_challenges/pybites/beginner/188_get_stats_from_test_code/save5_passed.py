@@ -34,7 +34,7 @@ ___ get_all_line_counts(data: s.. = DATA) __ l..:
 ___ create_stats_report(data_ N..
     __ data __ N..
         # converting to a list in case a generator was returned
-        data = l..(get_all_line_counts())
+        data = l..(get_all_line_counts
 
     # taking a sample for the last section
     sample = l..(data)[::2]

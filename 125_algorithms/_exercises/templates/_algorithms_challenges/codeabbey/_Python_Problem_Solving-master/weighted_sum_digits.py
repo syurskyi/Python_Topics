@@ -1,5 +1,5 @@
 #ask user for number of records
-data = i..(input())
+data = i..(input
 result    # list
 #run the following logic while list result is less than data
 w.... l..(result) < data:

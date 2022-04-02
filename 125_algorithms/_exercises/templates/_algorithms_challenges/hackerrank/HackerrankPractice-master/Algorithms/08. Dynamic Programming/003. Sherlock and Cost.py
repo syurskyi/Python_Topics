@@ -2,9 +2,9 @@
 # Score: 50
 
 
-test = i..(input())
+test = i..(input
 ___ i __ r..(test
-    n = i..(input())
+    n = i..(input
     b = l.. m..(i.., input().s..()))
 
     dp = [[0], [0]]

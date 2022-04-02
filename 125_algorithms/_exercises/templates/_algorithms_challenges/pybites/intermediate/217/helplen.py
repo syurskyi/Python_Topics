@@ -12,7 +12,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..:
         r.. ValueError("Not a built in")
     
 
-    w__ redirect_stdout(StringIO()) __ f:
+    w__ redirect_stdout(StringIO __ f:
         help(builtin)
 
 

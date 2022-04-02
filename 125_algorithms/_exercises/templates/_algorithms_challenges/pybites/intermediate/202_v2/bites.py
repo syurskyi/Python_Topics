@@ -1,11 +1,11 @@
 _______ csv
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 _______ pandas __ pd
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
-tmp = Path(os.getenv("TMP", "/tmp"))
+tmp = Path(__.getenv("TMP", "/tmp"))
 stats = tmp / 'bites.csv'
 
 __ n.. stats.exists

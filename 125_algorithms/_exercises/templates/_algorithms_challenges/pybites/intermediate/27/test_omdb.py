@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
@@ -9,7 +9,7 @@ ____ omdb _______ (get_movie_data,
                   get_movie_most_nominations,
                   get_movie_longest_runtime)
 
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'omdb_data'
 

@@ -60,16 +60,16 @@ c_ Solution:
                 stk.a..(elt)
             ____ elt __ ")":
                 w.... stk[-1] != "(":
-                    ret.a..(stk.pop())
+                    ret.a..(stk.pop
                 stk.pop()
             ____:  # generalized to include * and /
                 w.... stk a.. precendece(elt) <= precendece(stk[-1]
-                    ret.a..(stk.pop())
+                    ret.a..(stk.pop
 
                 stk.a..(elt)
 
         w.... stk:
-            ret.a..(stk.pop())
+            ret.a..(stk.pop
 
         r.. ret
 
@@ -86,8 +86,8 @@ c_ Solution:
         stk    # list
         ___ elt __ post:
             __ elt __ ("+", "-", "*", "/"
-                b = i..(stk.pop())
-                a = i..(stk.pop())
+                b = i..(stk.pop
+                a = i..(stk.pop
                 __ elt __ "+":
                     stk.a..(a+b)
                 ____ elt __ "-":

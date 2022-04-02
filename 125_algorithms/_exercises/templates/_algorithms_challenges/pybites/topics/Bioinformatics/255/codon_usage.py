@@ -1,4 +1,4 @@
-_______ os
+_______ __
 #from typing import Counter
 ____ urllib.request _______ urlretrieve
 ____ c.. _______ Counter
@@ -28,8 +28,8 @@ ___ _preload_sequences(url=URL
     Provided helper function
     Returns coding sequences, one sequence each line
     """
-    filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
-    __ n.. os.path.isfile(filename
+    filename = __.p...j..(__.getenv("TMP", "/tmp"), "NC_009641.txt")
+    __ n.. __.p...isfile(filename
         urlretrieve(url, filename)
     w__ o.. filename, "r") __ f:
         r.. f.r..
@@ -61,7 +61,7 @@ ___ return_codon_usage_table(
     whole_table.a..(seperator)
     condon_count = Counter()
     ___ seq __ sequences:
-        codons = [seq[index:index+3] ___ index __ r..(0, l..(seq.strip()), 3)]
+        codons = [seq[index:index+3] ___ index __ r..(0, l..(seq.strip, 3)]
         condon_count.update(codons)
     translation_table_line = [line ___ line __ translation_table_str.s..('\n') __ line]
     _, AAs = translation_table_line[0].s..('  = ')
@@ -71,12 +71,12 @@ ___ return_codon_usage_table(
     _, Base3 = translation_table_line[4].s..('  = ')
     translation = {''.j..(z[0:3] z[3] ___ z __
         z..(Base1.r..('T', 'U'), Base2.r..('T', 'U'), Base3.r..('T', 'U'), AAs)}
-    translation_list = l..(translation.keys())
+    translation_list = l..(translation.keys
     ___ i __ r..(0, l..(translation_list), 16
         ___ j __ r..(i, i+4
             whole_table.a..(codon_info([translation_list[j], translation_list[j+4], translation_list[j+8], translation_list[j+12]],
                             condon_count,
-                            s..(condon_count.values()),
+                            s..(condon_count.values,
                             translation
                             ))
         whole_table.a..(seperator)
@@ -86,4 +86,4 @@ ___ return_codon_usage_table(
 
 
 __ _______ __ _______
-    print(return_codon_usage_table())
+    print(return_codon_usage_table

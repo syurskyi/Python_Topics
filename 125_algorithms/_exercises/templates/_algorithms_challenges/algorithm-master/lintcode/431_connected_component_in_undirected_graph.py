@@ -36,7 +36,7 @@ c_ Solution:
 
             ans[root].a..(node.label)
 
-        r.. l..(ans.values())
+        r.. l..(ans.values
 
     ___ union  nodes, a, b
         _a = find(nodes, a)
@@ -76,18 +76,18 @@ c_ Solution:
             __ node __ visited:
                 _____
 
-            path    # list
-            dfs(node, visited, path)
-            ans.a..(s..(path))
+            p..    # list
+            dfs(node, visited, p..)
+            ans.a..(s..(p..))
 
         r.. ans
 
-    ___ dfs  a, visited, path
+    ___ dfs  a, visited, p..
         visited.add(a)
-        path.a..(a.label)
+        p...a..(a.label)
 
         ___ b __ a.neighbors:
             __ b __ visited:
                 _____
 
-            dfs(b, visited, path)
+            dfs(b, visited, p..)

@@ -47,4 +47,4 @@ c_ Solution:
                     F[A[i]] += F[A[j]] * F[A[i] // A[j]]  # #left * #right
                     F[A[i]] %= MOD
 
-        r.. s..(F.values()) % MOD
+        r.. s..(F.values % MOD

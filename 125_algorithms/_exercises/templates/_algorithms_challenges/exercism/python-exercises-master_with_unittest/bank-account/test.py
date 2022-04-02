@@ -1,4 +1,4 @@
-_______ sys
+_______ ___
 _______ threading
 _______ time
 _______ unittest
@@ -44,21 +44,21 @@ c_ BankAccountTest(unittest.TestCase
 
     ___ test_checking_balance_of_closed_account_throws_error
         account.o.. )
-        account.close()
+        account.c..
 
         w__ assertRaises(ValueError
             account.get_balance()
 
     ___ test_deposit_into_closed_account
         account.o.. )
-        account.close()
+        account.c..
 
         w__ assertRaises(ValueError
             account.deposit(50)
 
     ___ test_withdraw_from_closed_account
         account.o.. )
-        account.close()
+        account.c..
 
         w__ assertRaises(ValueError
             account.withdraw(50)
@@ -99,10 +99,10 @@ c_ BankAccountTest(unittest.TestCase
         # Greatly improve the chance of an operation being interrupted
         # by thread switch, thus testing synchronization effectively
         ___
-            sys.setswitchinterval(1e-12)
+            ___.setswitchinterval(1e-12)
         ______ AttributeError:
             # For Python 2 compatibility
-            sys.setcheckinterval(1)
+            ___.setcheckinterval(1)
 
         threads    # list
         ___ _ __ r..(1000

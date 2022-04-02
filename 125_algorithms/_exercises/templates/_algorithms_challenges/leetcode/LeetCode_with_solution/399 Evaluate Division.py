@@ -39,20 +39,20 @@ c_ Solution(o..
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
-        r.. [dfs(G, s, e, s..()) ___ s, e __ queries]
+        r.. [dfs(G, s, e, s.. ___ s, e __ queries]
 
-    ___ dfs  G, s, e, path
+    ___ dfs  G, s, e, p..
         __ s n.. __ G o. e n.. __ G:
             r.. -1.0
         __ e __ G[s]:
             r.. G[s][e]
         ___ nbr __ G[s]:
-            __ nbr n.. __ path:
-                path.add(nbr)
-                val = dfs(G, nbr, e, path)
+            __ nbr n.. __ p..:
+                p...add(nbr)
+                val = dfs(G, nbr, e, p..)
                 __ val != -1.0:
                     r.. val * G[s][nbr]
-                path.remove(nbr)
+                p...remove(nbr)
 
         r.. -1.0
 

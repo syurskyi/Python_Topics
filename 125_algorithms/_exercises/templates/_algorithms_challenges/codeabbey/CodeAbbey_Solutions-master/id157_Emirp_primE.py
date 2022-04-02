@@ -8,18 +8,18 @@ ___ find_answer(entry
         __ emirp > entry:
             r.. emirp
 
-___ gen_primes(limit=300000000
-    data = [i..(input()) ___ x __ r..(i..(input()))]
+___ gen_primes(limit300000000
+    data  [i..(input ___ x __ r..(i..(input()))]
     primes, semirp, answer    # list, [], []
     global semirp
 
     # Sieve of Eratosthenes
-    sieve = [T..] * (limit + 1)
+    sieve  [T..] * (limit + 1)
     ___ num __ r..(2, limit + 1
         __ sieve[num]:
            primes.a..(num)
            ___ i __ r..(num * num, limit + 1, num
-               sieve[i] = F..
+               sieve[i]  F..
 
     # Find reversable primes
     ___ prime __ primes:

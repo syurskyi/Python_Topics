@@ -26,18 +26,18 @@ there is error in that case if save the max size
 
 
 c_ Solution:
-    ___ lengthLongestPath  path
+    ___ lengthLongestPath  p..
         """
         :type path: str
         :rtype: int
         """
         ans = 0
-        __ n.. path:
+        __ n.. p..:
             r.. ans
 
         dep2size = {0: 0}
 
-        ___ line __ path.s..('\n'
+        ___ line __ p...s..('\n'
             name = line.lstrip('\t')
             size = l..(name)
             depth = l..(line) - l..(name)

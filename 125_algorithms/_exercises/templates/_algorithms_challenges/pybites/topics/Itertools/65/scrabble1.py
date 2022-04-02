@@ -1,11 +1,11 @@
 _______ i..
-_______ os
+_______ __
 _______ urllib.request
 
 # PREWORK
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.j..(TMP, DICT)
+DICTIONARY = __.p...j..(TMP, DICT)
 urllib.request.urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
@@ -36,7 +36,7 @@ ___ get_possible_dict_words(draw
         __ temp_word.l.. __ dictionary:
             possible_word[temp_word.l..] = calc_word_value(temp_word.l..
     listOfKeys = l..()
-    max_value = m..(possible_word.values())
+    max_value = m..(possible_word.values
     ___ key, value __ possible_word.i..:
         __ value __ max_value:
             listOfKeys.a..(key)

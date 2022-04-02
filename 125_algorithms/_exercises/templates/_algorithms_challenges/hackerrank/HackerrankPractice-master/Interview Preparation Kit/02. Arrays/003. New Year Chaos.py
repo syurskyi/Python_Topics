@@ -2,9 +2,9 @@
 #  Score: 40
 
 
-t = i..(input())
+t = i..(input
 ___ test __ r..(t
-    n = i..(input())
+    n = i..(input
     arr = l.. m..(i.., input().s..()))
     count = 0
 

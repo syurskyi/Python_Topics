@@ -24,22 +24,22 @@ c_ Solution(o..
         ____:
             r.. 'impossible'
     
-    ___ helper  matrix, start, hole, curr, path, result, visited
-        __ path > maxPath o. path > map[start[0]][start[1]]:
+    ___ helper  matrix, start, hole, curr, p.., result, visited
+        __ p.. > maxPath o. p.. > map[start[0]][start[1]]:
             r..
         nextSteps = getNextSteps(matrix, start[0], start[1])
         visited[start[0]][start[1]] = T..
-        map[start[0]][start[1]] = m.. m..[start[0]][start[1]], path)
+        map[start[0]][start[1]] = m.. m..[start[0]][start[1]], p..)
         ___ step __ nextSteps:
             stop = [step[0], step[1]]
             dirStr = step[2]
             dist = step[3]
             res, dist0 = isPassing(matrix, start, stop, hole)
             __ res:
-                maxPath = m..(maxPath, path+dist0)
-                result.a..((curr+dirStr, path+dist0))
+                maxPath = m..(maxPath, p..+dist0)
+                result.a..((curr+dirStr, p..+dist0))
             ____ n.. visited[stop[0]][stop[1]]:
-                helper(matrix, stop, hole, curr+dirStr, path+dist, result, visited)
+                helper(matrix, stop, hole, curr+dirStr, p..+dist, result, visited)
         visited[start[0]][start[1]] = F..
     
     ___ isPassing  maze, start, stop, hole
@@ -58,7 +58,7 @@ c_ Solution(o..
     ___ getNextSteps  matrix, i, j
         steps = s..()
         m, n = l..(matrix), l..(matrix[0])
-        dirs = (1, 0, 'd'), (0, 1, 'r'), (-1, 0, 'u'), (0, -1, 'l')
+        dirs = (1, 0, 'd'), (0, 1, _, (-1, 0, 'u'), (0, -1, 'l')
         ___ dir __ dirs:
             x, y = i, j
             dist = 0

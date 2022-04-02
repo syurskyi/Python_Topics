@@ -3,13 +3,13 @@
 
 
 ___ handler(result
-    inp = input().s..
-    command = inp[0]
-    values = inp[1:]
+    inp  input().s..
+    command  inp[0]
+    values  inp[1:]
     __ command __ 'print':
         print(result)
     ____:
-        execute = 'result.' + command + "(" + ",".j..(values) + ")"
+        execute  'result.' + command + "(" + ",".j..(values) + ")"
         eval(execute)
 
 

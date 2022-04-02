@@ -1,4 +1,4 @@
-_______ os
+_______ __
 _______ unittest
 
 ____ grep _______ grep
@@ -42,7 +42,7 @@ That Shepherd, who first taught the chosen Seed
 
 ___ remove_file(file_name
     ___
-        os.remove(file_name)
+        __.remove(file_name)
     ______ OSError:
         p..
 

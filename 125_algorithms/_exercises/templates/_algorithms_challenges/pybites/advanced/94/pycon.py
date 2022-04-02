@@ -1,5 +1,5 @@
 ____ c.. _______ n..
-_______ os
+_______ __
 _______ pickle
 _______ urllib.request
 _______ __
@@ -8,8 +8,8 @@ _______ __
 # download pickle file and store it in a tmp file
 pkl_file = 'pycon_videos.pkl'
 data = f'https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
-tmp = os.getenv("TMP", "/tmp")
-pycon_videos = os.path.j..(tmp, pkl_file)
+tmp = __.getenv("TMP", "/tmp")
+pycon_videos = __.p...j..(tmp, pkl_file)
 urllib.request.urlretrieve(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples

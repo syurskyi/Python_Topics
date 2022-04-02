@@ -37,7 +37,7 @@ c_ Solution:
     @return: A machine id
     """
     ___ getMachineIdByHashCode  hashcode
-        points = s..(p2l.keys())
+        points = s..(p2l.keys
         index = bisect.bisect_left(points, hashcode) % l..(points)
         # # counterclockwise
         # index = bisect.bisect(points, hashcode) - 1

@@ -86,18 +86,18 @@ c_ Solution:
 
         r.. l..(ans)
 
-    ___ dfs  nums, remain, ans, path
+    ___ dfs  nums, remain, ans, p..
         __ remain __ 0:
-            ans.a..(path[::-1])
+            ans.a..(p..[::-1])
             r..
 
         ___ a __ nums:
             __ remain < a:
                 _____
 
-            path.a..(a)
-            dfs(nums, remain - a, ans, path)
-            path.pop()
+            p...a..(a)
+            dfs(nums, remain - a, ans, p..)
+            p...pop()
 
 
 # ======

@@ -27,13 +27,13 @@ c_ Solution(o..
         print('stack2: %s' % stack2)
         ___ _ __ r..(k
             __ n.. stack1:
-                res.a..(stack2.pop())
+                res.a..(stack2.pop
             ____ n.. stack2:
-                res.a..(stack1.pop())
+                res.a..(stack1.pop
             ____ abs(stack1[-1]-target) <= abs(stack2[-1]-target
-                res.a..(stack1.pop())
+                res.a..(stack1.pop
             ____:
-                res.a..(stack2.pop())
+                res.a..(stack2.pop
         r.. res
     
     ___ inOrderReg  root, target, stack

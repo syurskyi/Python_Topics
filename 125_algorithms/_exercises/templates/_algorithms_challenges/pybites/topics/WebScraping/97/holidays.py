@@ -1,5 +1,5 @@
 ____ c.. _______ defaultdict
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 
 #from bs4 import BeautifulSoup
@@ -7,9 +7,9 @@ ____ bs4 _______ BeautifulSoup __ Soup
 
 
 # prep data
-tmp = os.getenv("TMP", "/tmp")
+tmp = __.getenv("TMP", "/tmp")
 page = 'us_holidays.html'
-holidays_page = os.path.j..(tmp, page)
+holidays_page = __.p...j..(tmp, page)
 urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{page}',
     holidays_page
@@ -33,7 +33,7 @@ ___ get_us_bank_holidays(content=content
         row = [i.text ___ i __ td]
         __ l..(row
             #print(row[1][6:8], row[3].strip())
-            holidays[row[1][6:8]].a..(row[3].strip())
+            holidays[row[1][6:8]].a..(row[3].strip
     r.. holidays
     
 #day = get_us_bank_holidays()

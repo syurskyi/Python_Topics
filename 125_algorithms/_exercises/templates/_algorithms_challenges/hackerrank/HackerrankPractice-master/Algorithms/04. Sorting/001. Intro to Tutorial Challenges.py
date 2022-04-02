@@ -2,10 +2,10 @@
 # Score: 30
 
 
-v = i..(input())
-n = i..(input())
-arr = l.. m..(i.., input().s..()))
-i = 0
-w.... arr[i] != v:
-    i += 1
+v  i..(input
+n  i..(input
+arr  l.. m..(i.., input().s..()))
+i  0
+w.... arr[i] ! v:
+    i + 1
 print(i)

@@ -39,7 +39,7 @@ c_ Solution:
         __ n.. ans:
             r.. edge
 
-        res = dfs(ans[1], adj, s..())
+        res = dfs(ans[1], adj, s..
         r.. res __ res ____ ans
 
     ___ union  uf, u, v

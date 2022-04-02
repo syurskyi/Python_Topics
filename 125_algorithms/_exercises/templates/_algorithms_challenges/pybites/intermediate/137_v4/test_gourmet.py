@@ -25,7 +25,7 @@ ___ test_invalid_wine_type
 
 
 ___ test_all_wines_included
-    ... l..(match_wine_5cheeses()) __ 26
+    ... l..(match_wine_5cheeses __ 26
 
 
 mw5c = match_wine_5cheeses()

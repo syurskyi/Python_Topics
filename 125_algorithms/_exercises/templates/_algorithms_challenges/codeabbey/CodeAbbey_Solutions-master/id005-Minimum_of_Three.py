@@ -1,6 +1,6 @@
 # Python 3.4
 ___ min_of_three
-    runs = i..(input())
+    runs  i..(input
     answer    # list
     
     ___ run __ r..(runs

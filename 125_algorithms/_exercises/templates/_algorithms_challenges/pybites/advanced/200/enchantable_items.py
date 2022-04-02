@@ -1,11 +1,11 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ bisect
 _______ __
 ____ urllib.request _______ urlretrieve
 ____ bs4 _______ BeautifulSoup __ Soup
 
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 HTML_FILE = TMP / "enchantment_list_pc.html"
 
 # source:

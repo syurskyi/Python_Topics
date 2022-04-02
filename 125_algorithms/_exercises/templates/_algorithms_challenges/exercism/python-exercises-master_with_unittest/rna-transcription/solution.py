@@ -1,6 +1,6 @@
-_______ sys
+_______ ___
 
-__ sys.version_info[0] __ 2:
+__ ___.version_info[0] __ 2:
     ____ s__ _______ maketrans
 ____:
     maketrans = s...maketrans

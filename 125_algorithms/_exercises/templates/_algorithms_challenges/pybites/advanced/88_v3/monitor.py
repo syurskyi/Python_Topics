@@ -2,7 +2,7 @@ ____ c.. _______ Counter
 ____ contextlib _______ contextmanager
 ____ d__ _______ date
 ____ time _______ time
-_______ sys
+_______ ___
 
 OPERATION_THRESHOLD_IN_SECONDS = 2.2
 ALERT_THRESHOLD = 3

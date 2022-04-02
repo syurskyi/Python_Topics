@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 _______ csv
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ sqlite3
 _______ r__
@@ -9,7 +9,7 @@ _______ s__
 _______ requests
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 
 salt = ''.j..(
     r__.choice(s__.ascii_lowercase) ___ i __ r..(20)

@@ -3,17 +3,17 @@ ___ capitalize_sentences(text: s..) __ s..:
        in dot (.), question mark (?) and exclamation mark (!)"""
 
 
-    end_characters =  '.','!','?'
+    end_characters   '.','!','?'
 
-    words =  text.s..
+    words   text.s..
 
     
-    first_word_after_end_of_sentence_index = 0
+    first_word_after_end_of_sentence_index  0
     ___ i,word __ e..(words
 
         __ any(word.endswith(character) ___ character __ end_characters
-            words[first_word_after_end_of_sentence_index] = words[first_word_after_end_of_sentence_index].capitalize()
-            first_word_after_end_of_sentence_index = i + 1 
+            words[first_word_after_end_of_sentence_index]  words[first_word_after_end_of_sentence_index].capitalize()
+            first_word_after_end_of_sentence_index  i + 1
 
 
     r.. ' '.j..(words)

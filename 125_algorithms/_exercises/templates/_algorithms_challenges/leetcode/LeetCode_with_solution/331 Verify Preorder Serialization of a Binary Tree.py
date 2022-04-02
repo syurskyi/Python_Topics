@@ -66,7 +66,7 @@ c_ Solution(o..
         child_stk    # list
         w.... stk:
             __ stk[-1] __ '#':
-                child_stk.a..(stk.pop())  # a counter is enough
+                child_stk.a..(stk.pop  # a counter is enough
             ____:
                 ___
                     child_stk.pop()

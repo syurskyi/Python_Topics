@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ typing _______ DefaultDict
 ____ urllib.request _______ urlretrieve
@@ -6,7 +6,7 @@ _______ ___.e__.E__ __ ET
 
 
 # import the countries xml file
-tmp = Path(os.getenv("TMP", "/tmp"))
+tmp = Path(__.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists
@@ -33,4 +33,4 @@ ___ get_income_distribution(___=countries
         new_list[incomeLevel].a..(country_name)
     r.. new_list
 
-print(get_income_distribution())
+print(get_income_distribution

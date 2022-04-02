@@ -103,7 +103,7 @@ ___ _calculate_similarity(wine,cheese
     counts_wine = Counter(wine.l..
     counts_cheese = Counter(cheese.l..
 
-    numerator = s..((counts_wine & counts_cheese).values())
+    numerator = s..((counts_wine & counts_cheese).values
 
     denominator = 1 + (wine_length - cheese_length)**2
 

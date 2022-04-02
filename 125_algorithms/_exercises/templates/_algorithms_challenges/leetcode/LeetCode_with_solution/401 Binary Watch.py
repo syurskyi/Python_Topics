@@ -43,7 +43,7 @@ c_ Solution(o..
                         minute = ('0' + s..(minute))[-2:]
                         y.. hour + ':' + minute
 
-        r.. l..(gen())
+        r.. l..(gen
 
     ___ gen  n, head, lst, func
         __ head __ l..(lst

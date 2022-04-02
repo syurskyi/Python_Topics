@@ -58,7 +58,7 @@ ___ possible_rect(quartet
 
 
 # validate path between two corners
-___ path(c1, c2, input
+___ p..(c1, c2, input
     __ c1.i __ c2.i:
         ___ j __ r..(m..(c1.j + 1, c2.j + 1), m..(c1.j, c2.j)):
             __ input[c1.i][j] != "-" a.. input[c1.i][j] != "+":
@@ -78,7 +78,7 @@ ___ validate_rect(rect, input
     ___ i __ r..(0, l..(rect)):
         l = same_line(rect[i].i, rect[0:i] + rect[i + 1:])
         c = same_col(rect[i].j, rect[0:i] + rect[i + 1:])
-        __ n.. path(rect[i], l, input) o. n.. path(rect[i], c, input
+        __ n.. p..(rect[i], l, input) o. n.. p..(rect[i], c, input
             r.. F..
     r.. T..
 

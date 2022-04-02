@@ -34,16 +34,16 @@ c_ Solution(o..
               queue.a..(nbr)
       r.. distance
 
-    ___ dfs(beginWord, endWord, wordList, path, res, distance
+    ___ dfs(beginWord, endWord, wordList, p.., res, distance
       __ beginWord __ endWord:
-        res.a..(path + [])
+        res.a..(p.. + [])
         r..
 
       ___ nbr __ getNbrs(beginWord, endWord, wordList
         __ distance.get(nbr, -2) + 1 __ distance[beginWord]:
-          path.a..(nbr)
-          dfs(nbr, endWord, wordList, path, res, distance)
-          path.pop()
+          p...a..(nbr)
+          dfs(nbr, endWord, wordList, p.., res, distance)
+          p...pop()
 
     res    # list
     distance = bfs(endWord, beginWord, wordlist)

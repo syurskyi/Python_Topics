@@ -20,7 +20,7 @@ ___ top_python_questions(url=cached_so_url
    ___ question __ question_summary:
       views = i..(question.find("div", class_="views").get("title").s..(" ")[0].r..(",", ""))
       _question = question.find("a", class_="question-hyperlink").get_text()
-      votes = i..(question.find("span", class_="vote-count-post").get_text())
+      votes = i..(question.find("span", class_="vote-count-post").get_text
       
       __ views >= 1000000:
          ge_1m.a..((_question, votes))
@@ -31,4 +31,4 @@ ___ top_python_questions(url=cached_so_url
 
 
 __ _______ __ _______
-   print(top_python_questions())
+   print(top_python_questions

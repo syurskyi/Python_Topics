@@ -1,5 +1,5 @@
 ___ divisible(num
-    __ num >= 100 a.. num % 100 __ 0:
+    __ num > 100 a.. num % 100 __ 0:
         r.. T..
     ____ num __ 0:
         r.. T..

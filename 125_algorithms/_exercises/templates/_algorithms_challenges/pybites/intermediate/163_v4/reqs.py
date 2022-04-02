@@ -6,7 +6,7 @@ ___ _load_reqs(reqs: s..) __ d..:
        and values of version numbers (converted to base 10 equivs)
     '''
     print _*{reqs.s.. =}')
-    lines = map(l.... x: x.s..('=='), reqs.s..())
+    lines = map(l.... x: x.s..('=='), reqs.s..
     reqs = {x[0]: version.p..(x[1]) ___ x __ lines __ x[0]}
     r.. reqs
 

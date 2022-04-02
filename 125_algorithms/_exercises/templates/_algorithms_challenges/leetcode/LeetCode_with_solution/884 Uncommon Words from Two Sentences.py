@@ -37,7 +37,7 @@ c_ Solution:
         """
         need counter, only need to appear once
         """
-        c = Counter(A.s..()) + Counter(B.s..())
+        c = Counter(A.s.. + Counter(B.s..
         ret = [
             k
             ___ k, v __ c.i..
@@ -49,7 +49,7 @@ c_ Solution:
         """
         need counter
         """
-        c_A, c_B = Counter(A.s..()), Counter(B.s..())
+        c_A, c_B = Counter(A.s.., Counter(B.s..
         ret    # list
         ___ k, v __ c_A.i..:
             __ v __ 1 a.. k n.. __ c_B:
@@ -65,7 +65,7 @@ c_ Solution:
         """
         set difference
         """
-        s_A, s_B = s..(A.s..()), s..(B.s..())
+        s_A, s_B = s..(A.s.., s..(B.s..
         r.. l..(
             (s_A - s_B) | (s_B - s_A)
         )

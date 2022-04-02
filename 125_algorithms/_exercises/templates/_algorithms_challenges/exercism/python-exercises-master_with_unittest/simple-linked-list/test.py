@@ -73,7 +73,7 @@ c_ SimpleLinkedListTest(unittest.TestCase
 
     ___ test_singleton_list_head_has_no_next
         sut = LinkedList([1])
-        assertIsNone(sut.head().next())
+        assertIsNone(sut.head().next
 
     ___ test_non_empty_list_traverse
         sut = LinkedList(r..(10))
@@ -97,15 +97,15 @@ c_ SimpleLinkedListTest(unittest.TestCase
 
     ___ test_reversed_empty_list_is_empty_list
         sut = LinkedList([])
-        assertEqual(l..(sut.r..()), [])
+        assertEqual(l..(sut.r.., [])
 
     ___ test_reversed_singleton_list_is_same_list
         sut = LinkedList([1])
-        assertEqual(l..(sut.r..()), [1])
+        assertEqual(l..(sut.r.., [1])
 
     ___ test_reverse_non_empty_list
         sut = LinkedList([1, 2, 3])
-        assertEqual(l..(sut.r..()), [1, 2, 3])
+        assertEqual(l..(sut.r.., [1, 2, 3])
 
     # Utility functions
     ___ setUp

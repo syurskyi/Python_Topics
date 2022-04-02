@@ -48,16 +48,16 @@ c_ Solution:
 
         r.. path1[i-1]
 
-    ___ dfs  root, t, path, found
+    ___ dfs  root, t, p.., found
         __ n.. root o. found[0]:  # post-call check
             r..
 
-        path.a..(root)
+        p...a..(root)
         __ root __ t:
             found[0] = T..
 
-        dfs(root.left, t, path, found)
-        dfs(root.right, t, path, found)
+        dfs(root.left, t, p.., found)
+        dfs(root.right, t, p.., found)
         __ n.. found[0]:
-            path.pop()  # 1 pop() corresponds to 1 append()
+            p...pop()  # 1 pop() corresponds to 1 append()
 

@@ -1,10 +1,10 @@
 _______ csv
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 stats = TMP / 'bites.csv'
 
 __ n.. stats.exists

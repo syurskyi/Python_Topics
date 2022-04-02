@@ -5,7 +5,7 @@ ____ domains _______ get_common_domains, get_most_common_domains
 
 ?p__.f..(scope="module")
 ___ common_domains
-    r.. l..(get_common_domains())
+    r.. l..(get_common_domains
 
 
 ___ test_get_common_domains(common_domains

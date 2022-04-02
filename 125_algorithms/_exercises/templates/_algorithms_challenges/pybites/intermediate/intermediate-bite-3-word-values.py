@@ -14,15 +14,15 @@ With these two pieces in place, write a third function that takes a list
 of words and returns the word with the highest value.
 Look at the TESTS tab to see what your code needs to pass. Enjoy!
 """
-_______ os
+_______ __
 _______ urllib.request
 
 # PREWORK
-TMP = os.getenv("TMP", "/tmp")
+TMP = __.getenv("TMP", "/tmp")
 print(TMP)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DICT = 'dictionary.txt'
-DICTIONARY = os.path.j..(TMP, DICT)
+DICTIONARY = __.p...j..(TMP, DICT)
 print(DICTIONARY)
 urllib.request.urlretrieve _*{S3}{DICT}', DICTIONARY)
 
@@ -38,7 +38,7 @@ ___ load_words_v1
     l    # list
     w__ o.. DICTIONARY) __ file:
         ___ line __ file:
-            l.a..(line.strip())
+            l.a..(line.strip
     r.. l
 
 ___ load_words_v2

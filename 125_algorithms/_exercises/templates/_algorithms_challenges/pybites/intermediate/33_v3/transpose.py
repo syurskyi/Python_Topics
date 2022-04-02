@@ -20,7 +20,7 @@ ___ transpose(data
 
 
     __ t..(data) __ d..:
-        r.. [t..(data.keys()),t..(data.values())]
+        r.. [t..(data.keys,t..(data.values]
     ____ t..(data) __ l..:
         
         r.. [z ___ z __ z..(*(t..(d) ___ d __ data))]

@@ -26,7 +26,7 @@ ___ test_transpose_dict
 
 
 ___ test_transpose_list_tuplies
-    community = l..(_gen_community())
+    community = l..(_gen_community
     names, days, karma, bitecoin = transpose(community)
     ... l..(names) __ NAMES
     ... l..(days) __ [m.since_days ___ m __ community]

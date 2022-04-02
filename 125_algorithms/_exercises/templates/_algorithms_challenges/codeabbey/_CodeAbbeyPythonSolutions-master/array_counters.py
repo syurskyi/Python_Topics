@@ -1,4 +1,4 @@
-M, N = map(i.., input().s..())
+M, N = map(i.., input().s..
 
 results = [0]*N
 

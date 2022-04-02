@@ -1,4 +1,4 @@
-data = i..(input())
+data = i..(input
 a = l.. m..(i..,input().s..()))
 ___ i __ a:
     store    # list

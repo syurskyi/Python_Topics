@@ -113,7 +113,7 @@ ___ best_match_per_wine(wine_type="all"
         ___ cheese __ CHEESES:
 
             match_score = s..((Counter(wine.l.. & Counter(cheese.l..
-            )).values())
+            )).values
             similarity_score = match_score / (1 + pow(l..(wine) - l..(cheese), 2))
 
             __ similarity_score > max_cheese_score:
@@ -141,7 +141,7 @@ ___ match_wine_5cheeses
         wine_match_scoring[wine]    # list
         ___ cheese __ CHEESES:
             match_score = s..((Counter(wine.l.. & Counter(cheese.l..
-            )).values())
+            )).values
             similarity_score = match_score / (1 + pow(l..(wine) - l..(cheese), 2))
             wine_match_scoring[wine].a..((cheese, similarity_score))
 

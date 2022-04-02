@@ -1,4 +1,4 @@
-_______ os
+_______ __
 _______ json
 ____ d__ _______ date
 _______ d__ __ dt
@@ -8,7 +8,7 @@ ____ urllib.request _______ urlretrieve
 ____ dateutil.parser _______ p..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
@@ -38,7 +38,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
     
     
 
-    dates = s..(daily_rates.keys())
+    dates = s..(daily_rates.keys
     
     
 

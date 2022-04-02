@@ -24,12 +24,12 @@ c_ Solution(o..
             curr.pop()
     
     ___ test
-        testCases = [
+        testCases  [
             [1, 2, 3]
         ]
         ___ nums __ testCases:
             print('nums: %s' % nums)
-            result = permute(nums)
+            result  permute(nums)
             print('result: %s' % result)
             print('-='*15+'-')
 

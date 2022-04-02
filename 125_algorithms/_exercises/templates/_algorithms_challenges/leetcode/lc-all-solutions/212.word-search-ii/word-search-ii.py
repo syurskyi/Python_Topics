@@ -32,12 +32,12 @@ c_ Solution:
     visited = [[0] * l..(board[0]) ___ i __ r..(0, l..(board))]
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    ___ dfs(i, j, board, visited, res, root, path
+    ___ dfs(i, j, board, visited, res, root, p..
       __ n.. root:
         r..
 
       __ root.isWord:
-        res.a..(path)
+        res.a..(p..)
 
       ___ direction __ directions:
         ni, nj = i + direction[0], j + direction[1]
@@ -45,7 +45,7 @@ c_ Solution:
           c = board[ni][nj]
           __ visited[ni][nj] __ 0:
             visited[ni][nj] = 1
-            dfs(ni, nj, board, visited, res, root.neighbours.get(c, N..), path + c)
+            dfs(ni, nj, board, visited, res, root.neighbours.get(c, N..), p.. + c)
             visited[ni][nj] = 0
 
     ___ word __ words:

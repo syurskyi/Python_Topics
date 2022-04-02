@@ -1,13 +1,13 @@
 """Checks community branch dir structure to see who submitted most
    and what challenge is more popular by number of PRs"""
 ____ c.. _______ Counter, n..
-_______ os
+_______ __
 _______ urllib.request
 
 # prep
 
-tempfile = os.path.j..('/tmp', 'dirnames')
-__ n.. os.path.isfile(tempfile
+tempfile = __.p...j..('/tmp', 'dirnames')
+__ n.. __.p...isfile(tempfile
     urllib.request.urlretrieve('http://bit.ly/2ABUTjv', tempfile)
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..

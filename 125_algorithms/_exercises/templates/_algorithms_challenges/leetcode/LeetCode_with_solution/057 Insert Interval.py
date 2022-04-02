@@ -24,7 +24,7 @@ c_ Interval(o..
         r.. "[%d, %d]" % (start, end)
 
     ___  -r
-        r.. repr(__str__())
+        r.. repr(__str__
 
 
 c_ Solution(o..

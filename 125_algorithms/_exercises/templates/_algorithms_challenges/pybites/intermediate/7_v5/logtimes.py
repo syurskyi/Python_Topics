@@ -1,11 +1,11 @@
 ____ d__ _______ d__
-_______ os
+_______ __
 _______ urllib.request
 
 SHUTDOWN_EVENT = 'Shutdown initiated'
 
 # prep: read in the logfile
-logfile = os.path.j..('/tmp', 'log')
+logfile = __.p...j..('/tmp', 'log')
 urllib.request.urlretrieve('http://bit.ly/2AKSIbf', logfile)
 
 w__ o.. logfile) __ f:

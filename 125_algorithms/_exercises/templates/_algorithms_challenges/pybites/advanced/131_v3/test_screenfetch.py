@@ -69,7 +69,7 @@ ___ test_sysinfo_scrape_keys(sysinfo
         'Resolution', 'DE', 'WM', 'WM Theme', 'GTK Theme', 'Icon Theme', 
         'Font', 'CPU', 'GPU', 'RAM'
     ]
-    ... l..(sysinfo.keys()) __ expected
+    ... l..(sysinfo.keys __ expected
 
 
 ___ test_sysinfo_scrape_values(sysinfo
@@ -82,7 +82,7 @@ ___ test_sysinfo_scrape_values(sysinfo
         'AMD KAVERI (DRM 2.50.0 / 4.15.0-34-generic, LLVM 6.0.0)', 
         '1886MiB / 6915MiB'
     ]
-    ... l..(sysinfo.values()) __ expected
+    ... l..(sysinfo.values __ expected
 
 
 ___ test_sysinfo_scrape_debian

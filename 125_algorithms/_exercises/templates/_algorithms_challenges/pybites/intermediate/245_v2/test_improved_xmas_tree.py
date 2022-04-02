@@ -29,7 +29,7 @@ smaller_tree = """
 
 ?p__.m__.p.("size, expected", [(10, 13), (5, 8), (20, 23)])
 ___ test_height_xmas_tree(size, expected
-    actual = l..(generate_improved_xmas_tree(size).rstrip().s..())
+    actual = l..(generate_improved_xmas_tree(size).rstrip().s..
     ... actual __ expected
 
 

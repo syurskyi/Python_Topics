@@ -1,4 +1,4 @@
-amount_values = i..(input())
+amount_values = i..(input
 
 ___ get_pass_and_swap_number(array
     passed = 0

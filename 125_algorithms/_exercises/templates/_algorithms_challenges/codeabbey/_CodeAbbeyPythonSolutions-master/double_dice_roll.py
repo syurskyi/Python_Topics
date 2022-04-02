@@ -1,4 +1,4 @@
-amount_value = i..(input())
+amount_value = i..(input
 results    # list
 
 ___ get_dice_point(dice1, dice2
@@ -6,7 +6,7 @@ ___ get_dice_point(dice1, dice2
     r.. point
 
 ___ i __ r..(amount_value
-    dice1, dice2 = map(i.., input().s..())
+    dice1, dice2 = map(i.., input().s..
     results.a..(get_dice_point(dice1, dice2))
 
 print(*results)

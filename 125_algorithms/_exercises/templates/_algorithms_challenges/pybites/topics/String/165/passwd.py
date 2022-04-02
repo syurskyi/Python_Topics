@@ -42,4 +42,4 @@ ___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
     """
     r.. [line.s..(':')[0] ___ line __ passwd_output.s..  __ '/bin/'+grep_shell __ line.s..(':')[-1] ]
 
-print(get_users_for_shell())
+print(get_users_for_shell

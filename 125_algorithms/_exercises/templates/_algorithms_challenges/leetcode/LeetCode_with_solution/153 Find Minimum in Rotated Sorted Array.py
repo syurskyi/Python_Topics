@@ -7,7 +7,7 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.
 """
-_______ sys
+_______ ___
 
 __author__ = 'Danyang'
 
@@ -23,7 +23,7 @@ c_ Solution(o..
         """
         lo = 0
         hi = l..(A)
-        mini = sys.maxint
+        mini = ___.maxint
         w.... lo < hi:
             mid = (lo+hi)/2
             mini = m..(mini, A[mid])

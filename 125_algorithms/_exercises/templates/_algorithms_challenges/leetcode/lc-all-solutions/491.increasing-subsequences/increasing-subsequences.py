@@ -6,18 +6,18 @@ c_ Solution(o..
     """
     ans    # list
 
-    ___ dfs(nums, start, path, ans
-      __ l..(path) >= 2:
-        ans.a..(t..(path + []))
+    ___ dfs(nums, start, p.., ans
+      __ l..(p..) >= 2:
+        ans.a..(t..(p.. + []))
 
       ___ i __ r..(start, l..(nums)):
         __ i != start a.. nums[i] __ nums[i - 1]:
           _____
-        __ path a.. nums[i] < path[-1]:
+        __ p.. a.. nums[i] < p..[-1]:
           _____
-        path.a..(nums[i])
-        dfs(nums, i + 1, path, ans)
-        path.pop()
+        p...a..(nums[i])
+        dfs(nums, i + 1, p.., ans)
+        p...pop()
 
     dfs(nums, 0, [], ans)
     r.. l..(s..(ans))

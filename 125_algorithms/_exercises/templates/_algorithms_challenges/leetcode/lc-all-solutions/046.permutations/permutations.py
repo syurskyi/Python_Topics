@@ -7,9 +7,9 @@ c_ Solution(o..
     res    # list
     visited = s..([])
 
-    ___ dfs(nums, path, res, visited
-      __ l..(path) __ l..(nums
-        res.a..(path + [])
+    ___ dfs(nums, p.., res, visited
+      __ l..(p..) __ l..(nums
+        res.a..(p.. + [])
         r..
 
       ___ i __ r..(0, l..(nums)):
@@ -17,9 +17,9 @@ c_ Solution(o..
         #     continue
         __ i n.. __ visited:
           visited.add(i)
-          path.a..(nums[i])
-          dfs(nums, path, res, visited)
-          path.pop()
+          p...a..(nums[i])
+          dfs(nums, p.., res, visited)
+          p...pop()
           visited.discard(i)
 
     dfs(nums, [], res, visited)

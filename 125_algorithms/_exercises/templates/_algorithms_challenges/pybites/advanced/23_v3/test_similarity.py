@@ -3,7 +3,7 @@ ____ similarity _______ get_similarities
 
 ___ test_get_similarities
     # cast to list in case of generator
-    similar_tags = l..(get_similarities())
+    similar_tags = l..(get_similarities
 
     # not interested in the order of the pairs
     similar_tags = {t..(s..(pair)) ___ pair __ similar_tags}

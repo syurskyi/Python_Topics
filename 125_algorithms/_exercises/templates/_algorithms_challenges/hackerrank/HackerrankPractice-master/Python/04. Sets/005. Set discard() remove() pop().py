@@ -2,7 +2,7 @@
 # Score: 10
 
 
-n = i..(input())
+n = i..(input
 s = s.. m..(i.., input().s..()))
 ___ i __ r..(i..(input())):
     s__ = input().s..

@@ -4,7 +4,7 @@ ___ is_merge(s, part1, part2
     ___ i __ r..(l..(s)):
         __ s[i] __ part1[0]:
             print(part1)
-            print(part1.pop())
+            print(part1.pop
 
 
 print(is_merge('codewars', 'cod', 'ewars'))

@@ -29,7 +29,7 @@ ___ group_cars_by_manufacturer(cars
     cars.s..(key=l.... x:(x[0],x[1]))
 
     ___ manufacturer,group __ i...groupby(cars,key=l.... x:x[0]
-        print(manufacturer.upper())
+        print(manufacturer.upper
         ___ _,car __ group:
             print(f"- {car}")
         print()

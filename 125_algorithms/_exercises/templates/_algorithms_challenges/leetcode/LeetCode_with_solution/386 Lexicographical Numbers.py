@@ -27,7 +27,7 @@ c_ Solution(o..
                         i /= 10
                     i += 1
 
-        r.. l..(gen())
+        r.. l..(gen
 
     ___ lexicalOrderError  n
         """

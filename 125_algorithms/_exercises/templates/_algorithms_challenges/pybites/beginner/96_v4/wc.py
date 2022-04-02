@@ -7,6 +7,6 @@ ___ wc(file_
     w__ o.. file_) __ f:
         ___ line __ f.readlines
             lines += 1
-            words += l..(line.s..())
+            words += l..(line.s..
             chars += l..(line)
     r.. f'{lines} {words} {chars} {file_}'

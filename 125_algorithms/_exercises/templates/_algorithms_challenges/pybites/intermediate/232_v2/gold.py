@@ -1,7 +1,7 @@
 # https://pkgstore.datahub.io/core/gold-prices/annual_csv/data/343f626dd4f7bae813cfaac23fccd1bc/annual_csv.csv
 ____ io _______ StringIO
 _______ pandas __ pd
-gold_prices = """
+gold_prices  """
 1950-12,34.720 1951-12,34.660 1952-12,34.790 1953-12,34.850 1954-12,35.040
 1955-12,34.970 1956-12,34.900 1957-12,34.990 1958-12,35.090 1959-12,35.050
 1960-12,35.540 1961-12,35.150 1962-12,35.080 1963-12,35.080 1964-12,35.120
@@ -19,21 +19,21 @@ gold_prices = """
 """  # noqa E501
 
 
-___ years_gold_value_decreased(gold_prices: s.. = gold_prices) __ (i.., i..
+___ years_gold_value_decreased(gold_prices: s..  gold_prices) __ (i.., i..
     """Analyze gold_prices returning a tuple of the year the gold price
        decreased the most and the year the gold price increased the most.
     """
         
-    prices = gold_prices.s..
-    df = pd.Series(prices)
+    prices  gold_prices.s..
+    df  pd.Series(prices)
 
-    df = df.s...extract(r'(?P<year>.+)-.+\,(?P<price>.+)')
-    df = df.set_index('year').price.astype('float')
+    df  df.s...extract(r'(?P<year>.+)-.+\,(?P<price>.+)')
+    df  df.set_index('year').price.astype('float')
 
-    differences = df.diff()
+    differences  df.diff()
 
 
-    r.. i..(differences.idxmin()),i..(differences.idxmax())
+    r.. i..(differences.idxmin,i..(differences.idxmax
 
 
 

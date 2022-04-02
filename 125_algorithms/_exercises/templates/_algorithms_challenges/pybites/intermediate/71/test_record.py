@@ -6,7 +6,7 @@ ____ record _______ RecordScore
 ?p__.f..()
 ___ record
     """Make a RecordScore object with a few scores"""
-    record = RecordScore()
+    record  RecordScore()
     record(10)
     record(9)
     record(11)  # initial max
@@ -32,7 +32,7 @@ ___ test_record_got_beaten(record
 
 
 ___ test_record_got_beaten_negative_values
-    record = RecordScore()
+    record  RecordScore()
     record(-5)
     ... record(-4) __ -4
     ... record(-6) __ -4

@@ -18,15 +18,15 @@ c_ Solution(o..
     :rtype: TreeNode
     """
     __ head:
-      pre = N..
-      slow = fast = head
+      pre  N..
+      slow  fast  head
       w.... fast a.. fast.next:
-        pre = slow
-        slow = slow.next
-        fast = fast.next.next
-      root = TreeNode(slow.val)
+        pre  slow
+        slow  slow.next
+        fast  fast.next.next
+      root  TreeNode(slow.val)
       __ pre:
-        pre.next = N..
+        pre.next  N..
         root.left = sortedListToBST(head)
       root.right = sortedListToBST(slow.next)
       r.. root

@@ -1,4 +1,4 @@
-amount_values = i..(input())
+amount_values = i..(input
 results    # list
 
 ___ r..(num1, num2
@@ -17,6 +17,6 @@ ___ r..(num1, num2
     r.. result
 
 ___ i __ r..(amount_values
-    num1, num2 = map(i.., input().s..())
+    num1, num2 = map(i.., input().s..
     results.a..(r..(num1,num2))
 print(*results)

@@ -16,12 +16,12 @@ c_ FileSystem(o..
   ___ -
     root = FileNode("/")
 
-  ___ ls  path
+  ___ ls  p..
     """
     :type path: str
     :rtype: List[str]
     """
-    fd = lookup(path, F..)
+    fd = lookup(p.., F..)
     __ n.. fd:
       r.. []
     __ n.. fd.isFolder:
@@ -32,10 +32,10 @@ c_ FileSystem(o..
     files.s..()
     r.. files
 
-  ___ lookup  path, isAutoCreate
-    path = path.s..("/")
+  ___ lookup  p.., isAutoCreate
+    p.. = p...s..("/")
     p = root
-    ___ name __ path:
+    ___ name __ p..:
       __ n.. name:
         _____
       __ name n.. __ p.childs:
@@ -46,12 +46,12 @@ c_ FileSystem(o..
       p = p.childs[name]
     r.. p
 
-  ___ mkdir  path
+  ___ mkdir  p..
     """
     :type path: str
     :rtype: void
     """
-    lookup(path, T..)
+    lookup(p.., T..)
 
   ___ addContentToFile  filePath, content
     """

@@ -1,10 +1,10 @@
 ____ d__ _______ d__, t..
-_______ os
+_______ __
 _______ __
 _______ urllib.request
 
 # getting the data
-COURSE_TIMES = os.path.j..('/tmp', 'course_timings')
+COURSE_TIMES = __.p...j..('/tmp', 'course_timings')
 urllib.request.urlretrieve('http://bit.ly/2Eb0iQF', COURSE_TIMES)
 
 

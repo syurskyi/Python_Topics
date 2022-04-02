@@ -1,14 +1,14 @@
 ____ c.. _______ defaultdict
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 
 ____ bs4 _______ BeautifulSoup
 
 
 # prep data
-tmp = os.getenv("TMP", "/tmp")
+tmp = __.getenv("TMP", "/tmp")
 page = 'us_holidays.html'
-holidays_page = os.path.j..(tmp, page)
+holidays_page = __.p...j..(tmp, page)
 urlretrieve(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{page}',
     holidays_page
@@ -31,7 +31,7 @@ ___ get_us_bank_holidays(content=content
     holiday_zip = z..(holiday_dates, holiday_names)
     ___ h_date, h_name __ holiday_zip:
         month = h_date.s..("-")[1]
-        holidays[month].a..(h_name.strip())
+        holidays[month].a..(h_name.strip
     r.. holidays
 
 

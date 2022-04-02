@@ -1,10 +1,10 @@
 ____ c.. _______ Counter
 _______ __
-_______ os
+_______ __
 ____ urllib.request _______ urlretrieve
 ____ dateutil.parser _______ p..
 
-commits = os.path.j..(os.getenv("TMP", "/tmp"), 'commits')
+commits = __.p...j..(__.getenv("TMP", "/tmp"), 'commits')
 urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits

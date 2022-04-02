@@ -7,7 +7,7 @@ c_ KindergartenGardenTests(unittest.TestCase
     ___ test_alices_garden
         assertEqual(
             Garden("RC\nGG").plants("Alice"),
-            "Radishes Clover Grass Grass".s..())
+            "Radishes Clover Grass Grass".s..
 
     ___ test_bob_and_charlies_gardens
         garden = Garden("VVCCGG\nVVCCGG")
@@ -18,23 +18,23 @@ c_ KindergartenGardenTests(unittest.TestCase
         garden = Garden("VRCGVVRVCGGCCGVRGCVCGCGV\nVRCCCGCRRGVCGCRVVCVGCGCV")
         assertEqual(
             garden.plants("Alice"),
-            "Violets Radishes Violets Radishes".s..())
+            "Violets Radishes Violets Radishes".s..
         assertEqual(
-            garden.plants("Bob"), "Clover Grass Clover Clover".s..())
+            garden.plants("Bob"), "Clover Grass Clover Clover".s..
         assertEqual(
-            garden.plants("Kincaid"), "Grass Clover Clover Grass".s..())
+            garden.plants("Kincaid"), "Grass Clover Clover Grass".s..
         assertEqual(
-            garden.plants("Larry"), "Grass Violets Clover Violets".s..())
+            garden.plants("Larry"), "Grass Violets Clover Violets".s..
 
     ___ test_disordered_test
         garden = Garden(
             "VCRRGVRG\nRVGCCGCV",
-            students="Samantha Patricia Xander Roger".s..())
+            students="Samantha Patricia Xander Roger".s..
         assertEqual(
             garden.plants("Patricia"),
-            "Violets Clover Radishes Violets".s..())
+            "Violets Clover Radishes Violets".s..
         assertEqual(
-            garden.plants("Xander"), "Radishes Grass Clover Violets".s..())
+            garden.plants("Xander"), "Radishes Grass Clover Violets".s..
 
 
 __ _____ __ _____

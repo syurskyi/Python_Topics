@@ -52,5 +52,5 @@ c_ Solution(o..
                     queue.a..(root.right)
         res    # list
         w.... stack:
-            res.a..(stack.pop())
+            res.a..(stack.pop
         r.. res

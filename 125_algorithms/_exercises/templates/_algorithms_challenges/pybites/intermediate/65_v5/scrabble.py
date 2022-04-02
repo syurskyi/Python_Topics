@@ -1,9 +1,9 @@
 _______ i..
-_______ os
+_______ __
 _______ urllib.request
 
 # PREWORK
-DICTIONARY = os.path.j..('/tmp', 'dictionary.txt')
+DICTIONARY = __.p...j..('/tmp', 'dictionary.txt')
 urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 w__ o.. DICTIONARY) __ f:

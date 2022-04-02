@@ -37,31 +37,31 @@ c_ Solution:
         dfs(root, [], ret)
         r.. ret
 
-    ___ dfs  cur, path, ret
+    ___ dfs  cur, p.., ret
         """
         pre-check
         """
-        path.a..(cur)
+        p...a..(cur)
         __ n.. cur.left a.. n.. cur.right:
-            ret.a..("->".j.. m..(l.... x: s..(x.val), path)))
+            ret.a..("->".j.. m..(l.... x: s..(x.val), p..)))
             r..
 
         __ cur.left:
-            dfs(cur.left, path, ret)
-            path.pop()  # pop the shared path
+            dfs(cur.left, p.., ret)
+            p...pop()  # pop the shared path
 
         __ cur.right:
-            dfs(cur.right, path, ret)
-            path.pop()  # pop the shared path
+            dfs(cur.right, p.., ret)
+            p...pop()  # pop the shared path
 
-    ___ dfs_path  cur, path, ret
+    ___ dfs_path  cur, p.., ret
         __ n.. cur:
             r..
 
-        path.a..(cur)
+        p...a..(cur)
         __ n.. cur.left a.. n.. cur.right:
-            ret.a..("->".j.. m..(l.... x: s..(x.val), path)))
+            ret.a..("->".j.. m..(l.... x: s..(x.val), p..)))
 
-        dfs_path(cur.left, path, ret)
-        dfs_path(cur.right, path, ret)
-        path.pop()
+        dfs_path(cur.left, p.., ret)
+        dfs_path(cur.right, p.., ret)
+        p...pop()

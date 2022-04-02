@@ -119,7 +119,7 @@ __ _____ __ _____
     freqStack.push(7)
     freqStack.push(4)
     freqStack.push(5)
-    print(freqStack.pop())
-    print(freqStack.pop())
-    print(freqStack.pop())
-    print(freqStack.pop())
+    print(freqStack.pop
+    print(freqStack.pop
+    print(freqStack.pop
+    print(freqStack.pop

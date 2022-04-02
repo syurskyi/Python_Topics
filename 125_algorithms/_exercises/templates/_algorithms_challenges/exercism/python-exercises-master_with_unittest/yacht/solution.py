@@ -21,7 +21,7 @@ ___ ns(number, dice
 
 ___ full_house(dice
     counter = Counter(dice)
-    r.. s..(dice) __ s..(counter.values()) __ {3, 2} ____ 0
+    r.. s..(dice) __ s..(counter.values __ {3, 2} ____ 0
 
 
 ___ four_of_a_kind(dice

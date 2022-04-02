@@ -31,17 +31,17 @@ c_ Solution:
                 res.a..(char)
             ____ char __ OP:
                 w.... stack a.. stack[-1] __ OP:
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
                 w.... stack a.. stack[-1] != '(':
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.pop()
 
         w.... stack:
-            res.a..(stack.pop())
+            res.a..(stack.pop
 
         r.. res
 
@@ -87,17 +87,17 @@ c_ Solution:
                 res.a..(char)
             ____ char __ '+-':
                 w.... stack a.. stack[-1] __ '+-':
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
             ____ char __ ')':
                 w.... stack a.. stack[-1] != '(':
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.pop()
 
         w.... stack:
-            res.a..(stack.pop())
+            res.a..(stack.pop
 
         r.. res
 

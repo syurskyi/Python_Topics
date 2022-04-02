@@ -1,4 +1,4 @@
-a =  i..(input())
+a =  i..(input
 s__ = ''
 ___ i __ r..(a
     temp1,temp2 = num1, num2 = [i..(ele) ___ ele __ input().s.. ]

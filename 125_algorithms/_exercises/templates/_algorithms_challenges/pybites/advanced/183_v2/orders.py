@@ -1,10 +1,10 @@
-____ os _______ path
+____ __ _______ p..
 ____ urllib.request _______ urlretrieve
 
 _______ pandas __ pd
 
-EXCEL = path.j..('/tmp', 'order_data.xlsx')
-__ n.. path.isfile(EXCEL
+EXCEL = p...j..('/tmp', 'order_data.xlsx')
+__ n.. p...isfile(EXCEL
     urlretrieve('https://bit.ly/2JpniQ2', EXCEL)
 
 

@@ -16,16 +16,16 @@ c_ LuhnTests(unittest.TestCase
                          Counter(Luhn(8631).addends()))
 
     ___ test_checksum1
-        assertEqual(2, Luhn(4913).checksum())
+        assertEqual(2, Luhn(4913).checksum
 
     ___ test_ckecksum2
-        assertEqual(1, Luhn(201773).checksum())
+        assertEqual(1, Luhn(201773).checksum
 
     ___ test_invalid_number
-        assertFalse(Luhn(738).is_valid())
+        assertFalse(Luhn(738).is_valid
 
     ___ test_valid_number
-        assertTrue(Luhn(8739567).is_valid())
+        assertTrue(Luhn(8739567).is_valid
 
     ___ test_create_valid_number1
         assertEqual(1230, Luhn.create(123))
@@ -41,8 +41,8 @@ c_ LuhnTests(unittest.TestCase
         # in which the first call to is_valid() worked, but the
         # second call failed().
         number = Luhn(8739567)
-        assertTrue(number.is_valid())
-        assertTrue(number.is_valid())
+        assertTrue(number.is_valid
+        assertTrue(number.is_valid
 
 
 __ _____ __ _____

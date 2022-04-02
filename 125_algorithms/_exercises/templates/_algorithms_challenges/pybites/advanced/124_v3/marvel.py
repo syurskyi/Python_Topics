@@ -34,7 +34,7 @@ ___ load_data
                         year=row 'Year' )
 
 
-characters = l..(load_data())
+characters = l..(load_data
 
 
 # start coding

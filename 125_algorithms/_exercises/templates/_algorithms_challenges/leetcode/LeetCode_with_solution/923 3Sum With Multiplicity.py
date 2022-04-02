@@ -49,7 +49,7 @@ c_ Solution:
         ___ a __ A:
             counter[a] += 1
 
-        keys = l..(counter.keys())
+        keys = l..(counter.keys
         keys.s..()
         n = l..(keys)
         ret = 0

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -21,7 +21,7 @@ c_ BSTInfo(o..
         hi = hi
 
 
-MAX = sys.maxint
+MAX = ___.maxint
 MIN = -MAX - 1
 
 

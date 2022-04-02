@@ -1,6 +1,6 @@
 ____ c.. _______ n..
 _______ csv
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ pandas __ pd
 _______ sqlite3
@@ -10,7 +10,7 @@ _______ s__
 _______ requests
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 
 salt = ''.j..(
     r__.choice(s__.ascii_lowercase) ___ i __ r..(20)
@@ -95,5 +95,5 @@ ___ avg_years_active_players_stanford
 ___ year_with_most_drafts
     """Return the year with the most drafts, in SQL you can use GROUP BY"""
 
-    r.. i..(nba.groupby('year').size().idxmax())
+    r.. i..(nba.groupby('year').size().idxmax
 

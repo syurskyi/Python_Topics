@@ -58,13 +58,13 @@ c_ Tree(o..
     ___ path_to  from_node, to_node
         reordered = from_pov(from_node)
         stack = reordered.children
-        path = [from_node]
-        w.... path[-1] != to_node:
+        p.. = [from_node]
+        w.... p..[-1] != to_node:
             ___
                 tree = stack.pop()
             ______ I..
                 r.. ValueError("No path found")
             __ to_node __ tree:
-                path.a..(tree.label)
+                p...a..(tree.label)
                 stack = tree.children
-        r.. path
+        r.. p..

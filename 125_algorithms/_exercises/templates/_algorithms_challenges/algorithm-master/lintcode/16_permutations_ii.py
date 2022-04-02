@@ -18,9 +18,9 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  nums, ans, path
+    ___ dfs  nums, ans, p..
         __ n.. nums:
-            ans.a..(path | )
+            ans.a..(p.. | )
             r..
 
         ___ i __ r..(l..(nums)):
@@ -33,9 +33,9 @@ c_ Solution:
             """
             ignore self
             """
-            path.a..(nums[i])
-            dfs(nums[:i] + nums[i + 1:], ans, path)
-            path.pop()
+            p...a..(nums[i])
+            dfs(nums[:i] + nums[i + 1:], ans, p..)
+            p...pop()
 
 
 c_ Solution:
@@ -59,9 +59,9 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  nums, visited, ans, path
-        __ l..(path) __ l..(nums
-            ans.a..(path | )
+    ___ dfs  nums, visited, ans, p..
+        __ l..(p..) __ l..(nums
+            ans.a..(p.. | )
             r..
 
         ___ i __ r..(l..(nums)):
@@ -78,7 +78,7 @@ c_ Solution:
                 _____
 
             visited[i] = T..
-            path.a..(nums[i])
-            dfs(nums, visited, ans, path)
+            p...a..(nums[i])
+            dfs(nums, visited, ans, p..)
             visited[i] = F..
-            path.pop()
+            p...pop()

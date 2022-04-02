@@ -13,4 +13,4 @@ c_ Solution(o..
         cnt = 1
       d[o..(p[i])] = m..(d.get(o..(p[i]), 0), cnt)
 
-    r.. s..(d.values())
+    r.. s..(d.values

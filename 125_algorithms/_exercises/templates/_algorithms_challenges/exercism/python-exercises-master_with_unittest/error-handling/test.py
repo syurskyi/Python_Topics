@@ -23,7 +23,7 @@ c_ FileLike(o..
         r.. self
 
     ___ __exit__  *args
-        close()
+        c..
 
     ___ do_something
         did_something = T..

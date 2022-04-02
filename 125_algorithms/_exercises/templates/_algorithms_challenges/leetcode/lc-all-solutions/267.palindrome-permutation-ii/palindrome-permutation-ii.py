@@ -8,18 +8,18 @@ c_ Solution(o..
     :rtype: List[str]
     """
 
-    ___ helper(s, path, ans, visited
-      __ l..(path) __ l..(s
-        ans.a..("".j..(path))
+    ___ helper(s, p.., ans, visited
+      __ l..(p..) __ l..(s
+        ans.a..("".j..(p..))
         r..
 
       ___ i __ r..(l..(s)):
         __ i > 0 a.. s[i] __ s[i - 1] a.. i - 1 n.. __ visited o. i __ visited:
           _____
         visited |= {i}
-        path.a..(s[i])
-        helper(s, path, ans, visited)
-        path.pop()
+        p...a..(s[i])
+        helper(s, p.., ans, visited)
+        p...pop()
         visited -= {i}
 
     ans    # list
@@ -40,7 +40,7 @@ c_ Solution(o..
     ___ key __ counter:
       ss += key * (counter[key] / 2)
 
-    helper(s..(ss), [], res, s..())
+    helper(s..(ss), [], res, s..
     ___ hword __ res:
       ans.a..(hword + mid + hword[::-1])
     r.. ans

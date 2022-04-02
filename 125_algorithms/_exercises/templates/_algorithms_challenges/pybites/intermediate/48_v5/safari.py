@@ -1,8 +1,8 @@
-_______ os
+_______ __
 _______ __
 _______ urllib.request
 
-LOG = os.path.j..('/tmp', 'safari.logs')
+LOG = __.p...j..('/tmp', 'safari.logs')
 PY_BOOK, OTHER_BOOK = '🐍', '.'
 urllib.request.urlretrieve('http://bit.ly/2BLsCYc', LOG)
 

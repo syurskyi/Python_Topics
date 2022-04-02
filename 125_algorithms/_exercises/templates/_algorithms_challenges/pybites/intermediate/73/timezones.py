@@ -1,8 +1,8 @@
 _______ pytz
 ____ d__ _______ d__
 
-MEETING_HOURS = r..(6, 23)  # meet from 6 - 22 max
-TIMEZONES = s..(pytz.all_timezones)
+MEETING_HOURS  r..(6, 23)  # meet from 6 - 22 max
+TIMEZONES  s..(pytz.all_timezones)
 
 
 ___ within_schedule(utc, *timezones
@@ -14,11 +14,11 @@ ___ within_schedule(utc, *timezones
       __ time_z n.. __ TIMEZONES:
          r.. ValueError("Please use valid timezone")
                   
-      new_tz = pytz.timezone(time_z)
+      new_tz  pytz.timezone(time_z)
          
-      utc_localized = new_tz.localize(utc)
-      utc_localized_offset = i..(utc_localized.utcoffset().total_seconds()/60/60)
-      time_difference = utc.hour + utc_localized_offset
+      utc_localized  new_tz.localize(utc)
+      utc_localized_offset  i..(utc_localized.utcoffset().total_seconds()/60/60)
+      time_difference  utc.hour + utc_localized_offset
       
       __ time_difference n.. __ MEETING_HOURS:
          r.. F..

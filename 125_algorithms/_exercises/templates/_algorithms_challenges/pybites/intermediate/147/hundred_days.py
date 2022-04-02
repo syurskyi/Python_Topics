@@ -15,4 +15,4 @@ ___ get_hundred_weekdays(start_date=TODAY
 
 
 __ _______ __ _______
-   print(get_hundred_weekdays())
+   print(get_hundred_weekdays

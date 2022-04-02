@@ -1,16 +1,16 @@
 """A palindrome is a word, phrase, number, or other sequence of characters
 which reads the same backward as forward"""
-_______ os
+_______ __
 _______ urllib.request
 
-DICTIONARY = os.path.j..('/tmp', 'dictionary_m_words.txt')
+DICTIONARY = __.p...j..('/tmp', 'dictionary_m_words.txt')
 urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 
 ___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
     w__ o.. DICTIONARY) __ f:
-        r.. (word.l...s.. ___ word __ f.readlines())
+        r.. (word.l...s.. ___ word __ f.readlines
 
 
 ___ is_palindrome(word
@@ -19,7 +19,7 @@ ___ is_palindrome(word
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
     w = word.r..(' ', '').l..
-    output = ''.j..(ch ___ ch __ w __ ch.isalnum())
+    output = ''.j..(ch ___ ch __ w __ ch.isalnum
     r.. output __ output[::-1]
 
 
@@ -30,6 +30,6 @@ ___ get_longest_palindrome(words_ N..
     __ words __ N..
         words = [word ___ word __ load_dictionary()][0]
     words = words.r..(' ', '').l..
-    output = ''.j..(ch ___ ch __ words __ ch.isalnum())
+    output = ''.j..(ch ___ ch __ words __ ch.isalnum
     palindrome_list = ''.j..(word ___ word __ output __ is_palindrome(word))
     r.. s..(palindrome_list, key=l..)

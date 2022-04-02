@@ -1,6 +1,6 @@
 _______ math __ m
 
-amount_values = i..(input())
+amount_values = i..(input
 results    # list
 
 ___ get_index_of_fib_number(num

@@ -38,7 +38,7 @@ c_ Solution:
         :param node: UndirectedGraphNode
         :return: UndirectedGraphNode
         """
-        r.. clone_graph_visited(node, s..())
+        r.. clone_graph_visited(node, s..
 
     ___ clone_graph_visited  node, visited_set
         """

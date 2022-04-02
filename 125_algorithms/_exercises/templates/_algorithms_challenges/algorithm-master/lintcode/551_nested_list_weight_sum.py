@@ -57,7 +57,7 @@ c_ Solution(o..
                     ans += depth * obj.getInteger()
                     _____
 
-                _queue.extend(obj.getList())
+                _queue.extend(obj.getList
 
             queue = _queue
 

@@ -7,4 +7,4 @@ ___ findMeetup(meetups
         solution = ETA * speedA
         answer.a..(s..(solution))
     print(' '.j..(answer))
-findMeetup(input())
+findMeetup(input

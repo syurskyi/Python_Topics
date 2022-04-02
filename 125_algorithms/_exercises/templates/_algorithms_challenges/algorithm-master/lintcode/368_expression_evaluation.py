@@ -55,7 +55,7 @@ c_ Solution:
                 """
                 w.... (stack a.. stack[-1] __ P a..
                        P[stack[-1]] >= P[char]
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.a..(char)
             ____ char __ '(':
                 stack.a..(char)
@@ -66,14 +66,14 @@ c_ Solution:
                 until meet '('
                 """
                 w.... stack a.. stack[-1] != '(':
-                    res.a..(stack.pop())
+                    res.a..(stack.pop
                 stack.pop()  # evict '('
 
         """
         output the remaining in `stack`
         """
         w.... stack:
-            res.a..(stack.pop())
+            res.a..(stack.pop
 
         r.. res
 

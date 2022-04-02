@@ -1,6 +1,6 @@
 _______ glob
 _______ json
-_______ os
+_______ __
 _______ __
 ____ urllib.request _______ urlretrieve
 
@@ -12,11 +12,11 @@ TMP = '/tmp'
 # little bit of prework (yes working on pip installables ...)
 ___ movie __ MOVIES:
     fname = f'{movie}.json'
-    remote = os.path.j..(BASE_URL, fname)
-    local = os.path.j..(TMP, fname)
+    remote = __.p...j..(BASE_URL, fname)
+    local = __.p...j..(TMP, fname)
     urlretrieve(remote, local)
 
-files = glob.glob(os.path.j..(TMP, '*json'))
+files = glob.glob(__.p...j..(TMP, '*json'))
 
 
 ___ get_movie_data(files=files

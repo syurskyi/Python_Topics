@@ -29,7 +29,7 @@ ___ parse_ipv4_service_ranges(source: Path) __ List[ServiceIPRange]:
 
     https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
     """
-    data = json.loads(source.read_text())
+    data = json.loads(source.read_text
     w__ suppress(AddressValueError
         prefixes = data["prefixes"]
         ipv4_service_ranges = [

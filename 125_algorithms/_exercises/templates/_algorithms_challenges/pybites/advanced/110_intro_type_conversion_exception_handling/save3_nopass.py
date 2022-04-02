@@ -9,6 +9,6 @@ ___ divide_numbers(numerator, denominator
         r.. 0
     ___ number __ numerator, denominator:
         r.. i..(number)
-    __ t..(number) != i..
+    __ t..(number) ! i..
         r.. T..("Only integers are allowed")
     r.. (numerator % denominator)

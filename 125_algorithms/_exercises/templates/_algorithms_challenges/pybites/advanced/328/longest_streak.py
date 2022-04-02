@@ -5,10 +5,10 @@ ____ dateutil.parser _______ p..
 ____ pathlib _______ Path
 _______ requests
 ____ typing _______ Tuple, Optional, List
-_______ os
+_______ __
 
 DATA_FILE_NAME = "test1.json"
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 
 
 DATA_PATH = TMP / DATA_FILE_NAME

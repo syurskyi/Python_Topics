@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-_______ sys
+_______ ___
 
 __author__ = 'Daniel'
 
@@ -34,20 +34,20 @@ c_ Solution(o..
             ___ j __ x..(n
                 __ grid[i][j] > 0:
                     reachable[i][j] = F..
-                    acc[i][j] = sys.maxint
+                    acc[i][j] = ___.maxint
 
         ___ i __ x..(m
             ___ j __ x..(n
                 __ grid[i][j] __ 1:
                     bfs(grid, acc, reachable, i, j)
 
-        mini = sys.maxint
+        mini = ___.maxint
         ___ i __ x..(m
             ___ j __ x..(n
                 __ acc[i][j] < mini a.. reachable[i][j]:
                     mini = acc[i][j]
 
-        r.. mini __ mini != sys.maxint ____ -1
+        r.. mini __ mini != ___.maxint ____ -1
 
     ___ bfs  grid, acc, reachable, x, y
         d = 0

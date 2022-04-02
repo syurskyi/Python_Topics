@@ -20,7 +20,7 @@ ___ print_hanging_indents(poem
         #print(lines[0])
         #for line in lines[1:]:
         #    print(' ' * INDENTS + line)
-        print(part.s..())
+        print(part.s..
 
 
 print_hanging_indents(shakespeare_unformatted)

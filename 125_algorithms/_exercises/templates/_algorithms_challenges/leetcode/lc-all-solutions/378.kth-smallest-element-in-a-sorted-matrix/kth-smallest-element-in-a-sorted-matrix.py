@@ -8,12 +8,12 @@ c_ Solution(o..
     :type k: int
     :rtype: int
     """
-    visited = {(0, 0)}
-    heap = [(matrix[0][0], (0, 0))]
+    visited  {(0, 0)}
+    heap  [(matrix[0][0], (0, 0))]
 
     w.... heap:
-      val, (i, j) = heapq.heappop(heap)
-      k -= 1
+      val, (i, j)  heapq.heappop(heap)
+      k - 1
       __ k __ 0:
         r.. val
       __ i + 1 < l..(matrix) a.. (i + 1, j) n.. __ visited:

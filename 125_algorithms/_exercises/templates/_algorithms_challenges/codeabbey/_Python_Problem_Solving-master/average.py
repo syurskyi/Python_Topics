@@ -1,4 +1,4 @@
-data = i..(input())
+data = i..(input
 result    # list
 
 ___ i __ r..(data

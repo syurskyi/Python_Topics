@@ -11,8 +11,8 @@ c_ Solution(o..
     start = n % K
     res    # list
     __ start != 0:
-      res.a..(s[:start].upper())
+      res.a..(s[:start].upper
     ___ k __ r..(0, (l..(s) - start) / K
-      res.a..(s[start:start + K].upper())
+      res.a..(s[start:start + K].upper
       start += K
     r.. "-".j..(res)

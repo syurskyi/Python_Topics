@@ -6,20 +6,20 @@ c_ Solution(o..
     :rtype: List[List[int]]
     """
 
-    ___ dfs(k, start, path, subsum, res, visited
-      __ l..(path) __ k a.. subsum __ 0:
-        res.a..(path + [])
+    ___ dfs(k, start, p.., subsum, res, visited
+      __ l..(p..) __ k a.. subsum __ 0:
+        res.a..(p.. + [])
         r..
-      __ l..(path) >= k o. subsum <= 0:
+      __ l..(p..) >= k o. subsum <= 0:
         r..
 
       ___ i __ r..(start, 10
         __ visited[i] __ 0:
           visited[i] = 1
-          path.a..(i)
-          dfs(k, i + 1, path, subsum - i, res, visited)
+          p...a..(i)
+          dfs(k, i + 1, p.., subsum - i, res, visited)
           visited[i] = 0
-          path.pop()
+          p...pop()
 
     visited = [0] * 10
     res    # list

@@ -26,9 +26,9 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: List[int]
         """
-        path    # list
+        p..    # list
         __ root __ N..
-            r.. path
+            r.. p..
         stack    # list
         w.... stack o. root __ n.. N..
             __ root __ n.. N..
@@ -36,6 +36,6 @@ c_ Solution(o..
                 root = root.left
             ____:
                 root = stack.pop()
-                path.a..(root.val)
+                p...a..(root.val)
                 root = root.right
-        r.. path
+        r.. p..

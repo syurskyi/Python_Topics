@@ -45,5 +45,5 @@ ___ get_movie_longest_runtime
 
     r.. current_longest_title
 
-print(get_movie_longest_runtime())
-print(get_movies())
+print(get_movie_longest_runtime
+print(get_movies

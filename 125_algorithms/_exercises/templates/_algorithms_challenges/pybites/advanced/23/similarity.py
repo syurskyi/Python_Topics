@@ -1,4 +1,4 @@
-_______ os
+_______ __
 _______ __
 ____ difflib _______ SequenceMatcher
 _______ i..
@@ -6,8 +6,8 @@ ____ urllib.request _______ urlretrieve
 
 # prep
 TAG_HTML = __.c..(r'<category>([^<]+)</category>')
-TMP = os.getenv("TMP", "/tmp")
-TEMPFILE = os.path.j..(TMP, 'feed')
+TMP = __.getenv("TMP", "/tmp")
+TEMPFILE = __.p...j..(TMP, 'feed')
 MIN_TAG_LEN = 10
 IDENTICAL = 1.0
 SIMILAR = 0.95
@@ -39,7 +39,7 @@ ___ get_similarities(tags_ N..
             __ word_1 __ word_2:
                 _____
             sm = SequenceMatcher(N..,word_1,word_2)
-            print(sm.ratio())
+            print(sm.ratio
             __ sm.ratio() > .95:
                 result.a..((word_1,word_2))
     print(result)

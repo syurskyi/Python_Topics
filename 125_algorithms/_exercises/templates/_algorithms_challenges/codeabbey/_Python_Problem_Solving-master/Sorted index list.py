@@ -1,5 +1,5 @@
 #take the input of how many elements you want
-data = i..(input())
+data = i..(input
 # take the input of the numbers to be sorted
 a = [i..(num) ___ num __ input().s.. ]
 

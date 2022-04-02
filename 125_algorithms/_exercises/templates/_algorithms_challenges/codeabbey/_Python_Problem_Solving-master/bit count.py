@@ -1,5 +1,5 @@
 #accept the number of test cases
-d = i..(input())
+d = i..(input
 
 #accept the decimal numbers to be converted to binary
 binary  = l.. m..(i..,input().s..()))

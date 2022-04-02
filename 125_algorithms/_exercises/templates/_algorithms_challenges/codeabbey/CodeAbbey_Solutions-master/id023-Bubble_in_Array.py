@@ -18,4 +18,4 @@ ___ bubble_in_array(data
             swap_count += 1
     print('%d %d') % (swap_count, check_sum(numbers))
     
-bubble_in_array(raw_input().s..())
+bubble_in_array(raw_input().s..

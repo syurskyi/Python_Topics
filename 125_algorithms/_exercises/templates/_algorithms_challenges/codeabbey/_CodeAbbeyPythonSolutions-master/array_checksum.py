@@ -1,4 +1,4 @@
-amount_values = i..(input())
+amount_values = i..(input
 
 ___ get_checksum(values
     limit = 10000007

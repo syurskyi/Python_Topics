@@ -1,11 +1,11 @@
-_______ os
+_______ __
 _______ ___.e__.E__ __ ET
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 ____ c.. _______ defaultdict
 
 # import the countries xml file
-tmp = Path(os.getenv("TMP", "/tmp"))
+tmp = Path(__.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists

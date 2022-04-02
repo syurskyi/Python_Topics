@@ -31,7 +31,7 @@ c_ Solution:
         global queue, results
         thread_pools    # list
         ___ i __ x..(10
-            thread_pools.a..(CrawlerThread())
+            thread_pools.a..(CrawlerThread
             thread_pools[i].setDaemon(T..)
             thread_pools[i].start()
 

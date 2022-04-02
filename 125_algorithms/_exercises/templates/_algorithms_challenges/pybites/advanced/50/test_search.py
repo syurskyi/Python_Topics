@@ -57,7 +57,7 @@ ___ test_convert_struct_time_to_dt(arg, ret
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
 ___ test_get_feed_entries(inp
-    first, last = t..(get_feed_entries())
+    first, last = t..(get_feed_entries
 
     ... first.date __ date y.._2018,  m.._2,  d.._18)
     ... first.title __ 'Twitter Digest 2018 Week 08'

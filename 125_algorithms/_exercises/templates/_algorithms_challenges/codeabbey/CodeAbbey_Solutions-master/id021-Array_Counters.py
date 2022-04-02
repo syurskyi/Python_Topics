@@ -1,5 +1,5 @@
 ___ arrayCount(dataRange, numbers
-    maxVariable = i..(dataRange[1])
+    maxVariable  i..(dataRange[1])
     answer    # list
     
     ___ num __ r..(1,maxVariable+1

@@ -1,11 +1,11 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 _______ csv
 _______ json
 ____ json.decoder _______ JSONDecodeError
 
 EXCEPTION = 'exception caught'
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 
 
 ___ convert_to_csv(json_file
@@ -28,7 +28,7 @@ ___ convert_to_csv(json_file
    # you code
    w__ o.. json_file) __ f:
       ___
-         data = json.loads(f.read())
+         data = json.loads(f.read
       ______ JSONDecodeError:
          print(EXCEPTION)
          r..

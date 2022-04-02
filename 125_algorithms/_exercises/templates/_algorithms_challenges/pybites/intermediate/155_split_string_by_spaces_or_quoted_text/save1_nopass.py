@@ -9,5 +9,5 @@ ___ split_words_and_quoted_text(text
             output.a..(word)
         ____:
             __ m.group() n.. __ output:
-                output.a..(m.group())
+                output.a..(m.group
     r.. output

@@ -89,7 +89,7 @@ c_ Solution(o..
         i = 0
         w.... i < l..(s
             __ s[i] __ ' ':
-                stk.a..(NestedInteger())
+                stk.a..(NestedInteger
                 i += 1
             ____ s[i] __ ' ':
                 ni = stk.pop()

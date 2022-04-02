@@ -1,4 +1,4 @@
-data = i..(input())
+data = i..(input
 
 res= ''
 ___ i __ r..(0,data

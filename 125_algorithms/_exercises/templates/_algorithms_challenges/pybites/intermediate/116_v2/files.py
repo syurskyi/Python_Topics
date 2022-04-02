@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ tempfile _______ TemporaryDirectory
 
 
@@ -12,9 +12,9 @@ ___ get_files(dirname, size_in_kb
 
     result    # list
     print(dirname)
-    ___ file __ os.listdir(dirname
-        __ os.path.isfile(os.path.j..(dirname,file)):
-            size = os.path.getsize(os.path.j..(dirname,file))
+    ___ file __ __.listdir(dirname
+        __ __.p...isfile(__.p...j..(dirname,file)):
+            size = __.p...getsize(__.p...j..(dirname,file))
             print(file,size)
             size /= ONE_KB
             __ size >= size_in_kb:

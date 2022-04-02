@@ -17,7 +17,7 @@ lines = [b'Hello world',
 ___ test_wc(some_text, expected, tmp_path
     f = tmp_path / "some_file.txt"
     f.w..(some_text)
-    output = wc(f.resolve())
+    output = wc(f.resolve
     # replace tabs / multiple spaces by single space
     output = __.sub(r'\t|\s+', ' ', output)
 

@@ -1,4 +1,4 @@
-_______ sys
+_______ ___
 _______ unicodedata
 
 
@@ -23,7 +23,7 @@ ___ _make_emoji_mapping
     mapping    # dict
 
 
-    ___ i __ r..(START_EMOJI_RANGE,sys.maxunicode + 1
+    ___ i __ r..(START_EMOJI_RANGE,___.maxunicode + 1
         ___
             meaning = what_means_emoji(chr(i))
             mapping[chr(i)] = meaning

@@ -37,7 +37,7 @@ c_ ZipperTest(unittest.TestCase
     ___ test_dead_end
         t1, _, _, _ = create_trees()
         zipper = Zipper.from_tree(t1)
-        assertIsNone(zipper.left().left())
+        assertIsNone(zipper.left().left
 
     ___ test_tree_from_deep_focus
         t1, _, _, _ = create_trees()
@@ -69,7 +69,7 @@ c_ ZipperTest(unittest.TestCase
         t1, _, _, _ = create_trees()
         zipper = Zipper.from_tree(t1)
         assertEqual(zipper.left().up().right().to_tree(),
-                         zipper.right().to_tree())
+                         zipper.right().to_tree
 
 
 __ _____ __ _____

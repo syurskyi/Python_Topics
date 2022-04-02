@@ -4,9 +4,9 @@ ___ number_syllables(word
 
 ___ test
     print("test has started")
-    __ number_syllables("syl-la-bles") != 3:
+    __ number_syllables("syl-la-bles") ! 3:
         print("error1")
-    __ number_syllables("pas-try") != 2:
+    __ number_syllables("pas-try") ! 2:
         print("error2")
-    __ number_syllables("to-ma-to") != 4
+    __ number_syllables("to-ma-to") ! 4
         print("error3")

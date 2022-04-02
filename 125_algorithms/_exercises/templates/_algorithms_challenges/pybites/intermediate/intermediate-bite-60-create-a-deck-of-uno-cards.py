@@ -38,5 +38,5 @@ ___ create_uno_deck
         deck.a..(card)
     r.. deck
 
-print(create_uno_deck())
+print(create_uno_deck
 

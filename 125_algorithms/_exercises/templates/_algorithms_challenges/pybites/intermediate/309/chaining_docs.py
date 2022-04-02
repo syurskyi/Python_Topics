@@ -71,7 +71,7 @@ c_ Document:
         
         lines    # list
         ___ index __ indices:
-            lines.a..(lines[index].strip())
+            lines.a..(lines[index].strip
         
         
         
@@ -111,7 +111,7 @@ c_ Document:
 
     ___ word_count(self) __ i..:
         """Return the total number of words in the document."""
-        r.. s..(l..(_remove_punctuation(line).s..()) ___ line __ lines)
+        r.. s..(l..(_remove_punctuation(line).s.. ___ line __ lines)
 
     $
     ___ words(self) __ l..:
@@ -161,5 +161,5 @@ __ _______ __ _______
 
     print(d)
     print(l..(d))
-    print(d.word_count())
+    print(d.word_count
     print(d.words)

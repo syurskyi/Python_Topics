@@ -1,10 +1,10 @@
-_______ os
+_______ __
 ____ c.. _______ Counter
 _______ urllib.request
 _______ __
 
 # prep
-tempfile = os.path.j..('/tmp', 'feed')
+tempfile = __.p...j..('/tmp', 'feed')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile

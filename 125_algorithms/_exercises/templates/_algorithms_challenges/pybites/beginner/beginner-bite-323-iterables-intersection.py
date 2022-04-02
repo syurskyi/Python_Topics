@@ -50,7 +50,7 @@ ___ intersection(*args: Iterable) __ Set[Any]:
         r..(first.intersection(*l))
     ______ IndexError __ e:
         print(e)
-        r..(s..())
+        r..(s..
 
 
 

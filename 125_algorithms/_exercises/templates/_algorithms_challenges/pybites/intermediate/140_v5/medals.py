@@ -1,4 +1,4 @@
-____ os _______ path
+____ __ _______ p..
 ____ urllib.request _______ urlretrieve
 _______ pandas __ pd
 ____ i.. _______ c__
@@ -7,10 +7,10 @@ data = "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 
 ___ load_data(data
-    dt_file = path.j..('/tmp', data.s..('/')[-1])
-    __ n.. path.isfile(dt_file
+    dt_file = p...j..('/tmp', data.s..('/')[-1])
+    __ n.. p...isfile(dt_file
         urlretrieve(data, dt_file)
-    w__ o.. dt_file, 'r') __ f:
+    w__ o.. dt_file, _ __ f:
         r.. pd.read_csv(f)
 
 

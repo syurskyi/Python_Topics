@@ -32,18 +32,18 @@ c_ Solution:
         dfs(node.left, target, ans)
         dfs(node.right, target, ans)
 
-    ___ find_path  node, start, remaining, ans, path
-        path.a..(node.val)
+    ___ find_path  node, start, remaining, ans, p..
+        p...a..(node.val)
 
         remaining -= node.val
         __ remaining __ 0:
-            ans.a..(path | )
+            ans.a..(p.. | )
 
         __ node.parent a.. node.parent __ n.. start:
-            find_path(node.parent, node, remaining, ans, path)
+            find_path(node.parent, node, remaining, ans, p..)
         __ node.left a.. node.left __ n.. start:
-            find_path(node.left, node, remaining, ans, path)
+            find_path(node.left, node, remaining, ans, p..)
         __ node.right a.. node.right __ n.. start:
-            find_path(node.right, node, remaining, ans, path)
+            find_path(node.right, node, remaining, ans, p..)
 
-        path.pop()
+        p...pop()

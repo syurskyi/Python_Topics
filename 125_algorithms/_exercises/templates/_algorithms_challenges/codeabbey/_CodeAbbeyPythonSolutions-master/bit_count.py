@@ -1,4 +1,4 @@
-amount_values = i..(input())
+amount_values = i..(input
 results    # list
 
 ___ c.. decimal_number

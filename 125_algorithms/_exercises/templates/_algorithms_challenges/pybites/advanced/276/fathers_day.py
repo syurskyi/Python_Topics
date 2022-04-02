@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ pathlib _______ Path
 ____ urllib.request _______ urlretrieve
 _______ __
@@ -8,7 +8,7 @@ ____ c.. _______ defaultdict
 ____ dateutil.parser _______ p..
 
 # get the data
-TMP = Path(os.getenv("TMP", "/tmp"))
+TMP = Path(__.getenv("TMP", "/tmp"))
 base_url = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 
 fathers_days_countries = TMP / 'fathers-day-countries.txt'
@@ -99,7 +99,7 @@ ___ generate_father_day_planning(days_to_countries_ N..
     __ days_to_countries __ N..
         days_to_countries = get_father_days()
 
-    dates = l..(days_to_countries.keys())
+    dates = l..(days_to_countries.keys
 
 
     ___ i,date __ e..(dates

@@ -100,7 +100,7 @@ ___ _get_pycon_data
         r.. session.get(PYCON_DATA).content.d.. "utf-8")
 
 
-___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
+___ get_pycon_events(data=_get_pycon_data __ List[PyCon]:
     """
     Scrape the PyCon events from the given website data and
     return a list of PyCon namedtuples. Pay attention to the
@@ -113,7 +113,7 @@ ___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
 
     pycon_events    # list
     ___ event __ events:
-        event = json.loads(event.getText())
+        event = json.loads(event.getText
         name = event 'name'
         __ n.. name.startswith('PyCon'
             _____

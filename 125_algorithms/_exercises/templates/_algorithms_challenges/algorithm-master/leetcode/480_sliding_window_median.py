@@ -82,7 +82,7 @@ c_ Solution:
 
             # get median
             __ i >= k - 1:
-                ans.a..(get_median())
+                ans.a..(get_median
 
         r.. ans
 
@@ -91,12 +91,12 @@ c_ Solution:
             r.. 0.0
 
         w.... l..(minheap) > l..(maxheap) + 1:
-            maxheap.push(- minheap.pop())
+            maxheap.push(- minheap.pop
 
         w.... l..(maxheap) > l..(minheap
-            minheap.push(- maxheap.pop())
+            minheap.push(- maxheap.pop
 
         __ l..(minheap) > l..(maxheap
             r.. minheap.top() * 1.0
 
-        r.. (minheap.top() - maxheap.top()) / 2.0
+        r.. (minheap.top() - maxheap.top / 2.0

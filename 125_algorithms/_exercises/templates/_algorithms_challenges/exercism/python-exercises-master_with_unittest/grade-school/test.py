@@ -14,7 +14,7 @@ c_ SchoolTest(unittest.TestCase
 
     ___ test_an_empty_school
         ___ n __ r..(1, 9
-            assertCountEqual(school.grade(n), s..())
+            assertCountEqual(school.grade(n), s..
 
     ___ test_add_student
         school.add("Aimee", 2)
@@ -39,7 +39,7 @@ c_ SchoolTest(unittest.TestCase
         assertCountEqual(school.grade(5), ("Franklin", "Bradley"))
 
     ___ test_get_students_in_a_non_existant_grade
-        assertCountEqual(school.grade(1), s..())
+        assertCountEqual(school.grade(1), s..
 
     ___ test_sort_school
         students = [(3, ("Kyle", )), (4, ("Christopher", "Jennifer", )),

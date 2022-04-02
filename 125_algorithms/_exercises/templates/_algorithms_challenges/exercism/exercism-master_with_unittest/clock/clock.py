@@ -9,7 +9,7 @@ c_ Clock:
 
     ___ __str__
         r.. (format_hours() + ':' +
-                format_mins())
+                format_mins
 
     ___ add  additional_mins
         mins += additional_mins

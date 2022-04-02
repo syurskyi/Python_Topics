@@ -1,4 +1,4 @@
-number_elements = i..(input())
+number_elements = i..(input
 a = [i..(ele) ___ ele __ input().s.. ]
 
 swap_count = 0

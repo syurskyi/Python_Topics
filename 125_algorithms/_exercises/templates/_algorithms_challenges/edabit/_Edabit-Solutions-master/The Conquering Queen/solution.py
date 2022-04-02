@@ -7,6 +7,6 @@ ___ row_or_column_capture(queens
 
 
 ___ diagonal_capture(queens
-    diff1 = o..(queens[0][0]) - o..(queens[1][0])
-    diff2 = o..(queens[0][1]) - o..(queens[1][1])
+    diff1  o..(queens[0][0]) - o..(queens[1][0])
+    diff2  o..(queens[0][1]) - o..(queens[1][1])
     r.. abs(diff1) __ abs(diff2)

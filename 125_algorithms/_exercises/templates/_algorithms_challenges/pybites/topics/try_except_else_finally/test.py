@@ -8,6 +8,6 @@ ______ FileNotFoundError:
 ______ E.. __ e:
     print(e)
 ____:
-    print(f.read())
+    print(f.read
 finally:
     print("closing")

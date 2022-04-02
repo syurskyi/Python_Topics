@@ -15,7 +15,7 @@ c_ Stack(o..
     """
     queue.a..(x)
     ___ _ __ r..(0, l..(queue) - 1
-      queue.a..(queue.popleft())
+      queue.a..(queue.popleft
 
   ___ pop
     """

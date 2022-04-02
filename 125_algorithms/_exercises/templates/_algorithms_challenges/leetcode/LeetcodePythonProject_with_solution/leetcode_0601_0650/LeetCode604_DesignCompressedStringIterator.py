@@ -47,4 +47,4 @@ c_ StringIterator(o..
 __ _____ __ _____
     it = StringIterator('L1e2t1C1o1d1e1')
     w.... it.hasNext
-        print(it.next())
+        print(it.next

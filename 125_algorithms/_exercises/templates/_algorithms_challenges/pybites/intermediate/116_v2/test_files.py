@@ -1,4 +1,4 @@
-_______ os
+_______ __
 ____ tempfile _______ TemporaryDirectory
 
 _______ p__
@@ -18,9 +18,9 @@ TMP = 'tmp'
 ___ test_get_files(byte_sizes, size_in_kb, expected
     w__ TemporaryDirectory(TMP) __ dirname:
         ___ size __ byte_sizes:
-            w__ o.. os.path.j..(dirname, s..(size)), 'wb') __ f:
-                f.write(os.urandom(size))
+            w__ o.. __.p...j..(dirname, s..(size)), 'wb') __ f:
+                f.write(__.urandom(size))
 
-        actual = [os.path.basename(fi) ___ fi __
+        actual = [__.p...basename(fi) ___ fi __
                   get_files(dirname, size_in_kb)]
         ... s..(actual) __ s..(expected)

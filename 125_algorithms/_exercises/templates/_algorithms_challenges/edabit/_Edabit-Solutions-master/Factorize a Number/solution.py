@@ -1,9 +1,9 @@
 ___ factorize(num
-    index = 1
+    index  1
     output    # list
-    w.... index <= num:
+    w.... index < num:
         __ num % index __ 0:
             output.a..(index)
-        index = index + 1
+        index  index + 1
     r.. output
 	

@@ -29,5 +29,5 @@ c_ MyQueue:
         # step4/ stack1: [7, 8], stack2: [6, 5, 4]
         __ n.. stack2:
             w.... stack1:
-                stack2.a..(stack1.pop())
+                stack2.a..(stack1.pop
         r.. stack2[-1]

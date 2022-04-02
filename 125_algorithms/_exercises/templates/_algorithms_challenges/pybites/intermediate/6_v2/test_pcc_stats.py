@@ -3,7 +3,7 @@ ____ pcc_stats _______ (diehard_pybites,
 
 
 ___ test_gen_files
-    ret = l..(gen_files())
+    ret = l..(gen_files
     ... ret[:3] __ ["03/mridubhatnagar",
                        "03/aleksandarknezevic",
                        "04/blair_young"]

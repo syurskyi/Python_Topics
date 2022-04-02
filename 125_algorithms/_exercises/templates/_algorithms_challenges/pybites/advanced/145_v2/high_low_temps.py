@@ -1,5 +1,5 @@
 _______ csv
-_______ os
+_______ __
 _______ __
 _______ urllib.request
 ____ c.. _______ n..
@@ -11,8 +11,8 @@ DATA_FILE = "http://projects.bobbelderbos.com/pcc/weather-ann-arbor.csv"
 STATION = n..("Station", "ID Date Value")
 
 TMP = '/tmp'
-LOCAL_FILE = os.path.j..('/tmp', 'weather-ann-arbor.csv')
-__ n.. os.path.isfile(LOCAL_FILE
+LOCAL_FILE = __.p...j..('/tmp', 'weather-ann-arbor.csv')
+__ n.. __.p...isfile(LOCAL_FILE
     urllib.request.urlretrieve(DATA_FILE, LOCAL_FILE)
 
 

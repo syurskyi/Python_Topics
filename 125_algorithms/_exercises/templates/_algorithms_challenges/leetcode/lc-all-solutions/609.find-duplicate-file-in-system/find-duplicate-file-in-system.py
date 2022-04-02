@@ -5,10 +5,10 @@ c_ Solution(o..
     :rtype: List[List[str]]
     """
     d = c...defaultdict(l..)
-    ___ path __ paths:
-      raw = path.s..(" ")
+    ___ p.. __ paths:
+      raw = p...s..(" ")
       dirPath = raw[0]
       ___ data __ raw[1:]:
         name, sign = data.s..("(")
         d[sign].a..(dirPath + "/" + name)
-    r.. filter(l.... x: l..(x) > 1, d.values())
+    r.. filter(l.... x: l..(x) > 1, d.values

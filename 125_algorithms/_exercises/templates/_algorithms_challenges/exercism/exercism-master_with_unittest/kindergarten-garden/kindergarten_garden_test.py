@@ -27,7 +27,7 @@ c_ KindergartenGardenTests(unittest.TestCase
 
     ___ test_disordered_test
         garden = Garden("VCRRGVRG\nRVGCCGCV",
-                        students="Samantha Patricia Xander Roger".s..())
+                        students="Samantha Patricia Xander Roger".s..
         assertEqual("Violets Clover Radishes Violets".s.. ,
                          garden.plants("Patricia"))
         assertEqual("Radishes Grass Clover Violets".s.. ,

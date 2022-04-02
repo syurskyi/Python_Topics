@@ -5,16 +5,16 @@ Created on Jan 22, 2017
 '''
 
 c_ Solution(o..
-    ___ simplifyPath  path
+    ___ simplifyPath  p..
         """
         :type path: str
         :rtype: str
         """
-        __ n.. path: r.. path
+        __ n.. p..: r.. p..
         result = ''
-        __ path.endswith('/' path = path[:-1]
-        __ path.startswith('/' path = path[1:]
-        l = path.s..('/')
+        __ p...endswith('/' p.. = p..[:-1]
+        __ p...startswith('/' p.. = p..[1:]
+        l = p...s..('/')
         cont = 0
         ___ i __ r..(l..(l)-1, -1, -1
             __ l[i] __ '.' o. l[i] __ '':
@@ -35,9 +35,9 @@ c_ Solution(o..
             '/home/',
             '/a/./b/../../c/',
         ]
-        ___ path __ testCases:
-            print('path: %s' % path)
-            result = simplifyPath(path)
+        ___ p.. __ testCases:
+            print('path: %s' % p..)
+            result = simplifyPath(p..)
             print('result: %s' % result)
             print('-='*15+'-')
 

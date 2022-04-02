@@ -13,13 +13,13 @@ c_ Solution(o..
     :type root: TreeNode
     :rtype: List[List[int]]
     """
-    stack = d..([root])
+    stack  d..([root])
     ans    # list
-    odd = T..
+    odd  T..
     w.... stack:
       level    # list
       ___ k __ r..(0, l..(stack)):
-        top = stack.popleft()
+        top  stack.popleft()
         __ top __ N..
           _____
         level.a..(top.val)
@@ -30,5 +30,5 @@ c_ Solution(o..
           ans.a..(level)
         ____:
           ans.a..(level[::-1])
-      odd = n.. odd
+      odd  n.. odd
     r.. ans

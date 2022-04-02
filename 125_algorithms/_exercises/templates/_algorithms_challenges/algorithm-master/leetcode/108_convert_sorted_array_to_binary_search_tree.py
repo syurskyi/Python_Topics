@@ -15,9 +15,9 @@ c_ Solution:
         __ n.. nums:
             r..
 
-        i = l..(nums) // 2
-        node = TreeNode(nums[i])
-        node.left = sortedArrayToBST(nums[:i])
-        node.right = sortedArrayToBST(nums[i + 1:])
+        i  l..(nums) // 2
+        node  TreeNode(nums[i])
+        node.left  sortedArrayToBST(nums[:i])
+        node.right  sortedArrayToBST(nums[i + 1:])
 
         r.. node

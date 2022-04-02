@@ -4,7 +4,7 @@ c_ Luhn:
         number = number
 
     ___ checksum
-        r.. s..(addends()) % 10
+        r.. s..(addends % 10
 
     ___ addends
         r.. [addend(idx, i..(val)) ___ idx, val __

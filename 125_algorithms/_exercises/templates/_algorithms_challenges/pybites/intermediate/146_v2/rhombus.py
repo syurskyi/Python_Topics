@@ -49,7 +49,7 @@ __ _______ __ _______
 
     ap.a..("-w","--width",t..=i..,required=T..,h.._"width of rhombus")
 
-    args = vars(ap.parse_args())
+    args = vars(ap.parse_args
     width = args["width"]
     gen_rhombus(width)
 

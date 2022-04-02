@@ -14,7 +14,7 @@ c_ ToxIniParser:
         """Return the number of sections in the ini file.
            New to properties? -> https://pybit.es/property-decorator.html
         """
-        r.. l..(config.sections())
+        r.. l..(config.sections
 
     $
     ___ environments

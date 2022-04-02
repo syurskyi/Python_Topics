@@ -1,10 +1,10 @@
 _______ __
-____ os _______ path
+____ __ _______ p..
 _______ statistics __ st
 ____ urllib.request _______ urlretrieve
 
-STATS = path.j..('/tmp', 'testfiles_number_loc.txt')
-__ n.. path.isfile(STATS
+STATS = p...j..('/tmp', 'testfiles_number_loc.txt')
+__ n.. p...isfile(STATS
     urlretrieve('https://bit.ly/2Jp5CUt', STATS)
 
 STATS_OUTPUT = """
@@ -37,7 +37,7 @@ ___ get_all_line_counts(data: s.. = STATS) __ l..:
 ___ create_stats_report(data_ N..
     __ data __ N..
         # converting to a list in case a generator was returned
-        data = l..(get_all_line_counts())
+        data = l..(get_all_line_counts
 
     # taking a sample for the last section
     sample = l..(data)[::2]

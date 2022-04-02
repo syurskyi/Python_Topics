@@ -28,7 +28,7 @@ ___ group_cars_by_manufacturer(cars
     key_func = l.... x: x[0]
 
     ___ key, group __ groupby(s..(cars), key_func
-        print(key.upper())
+        print(key.upper
         ___ model __ l..(group
             print _*- {model[1]}')
         print()

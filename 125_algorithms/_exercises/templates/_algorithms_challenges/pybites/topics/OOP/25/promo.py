@@ -48,4 +48,4 @@ c_ Promo:
 
 promo = Promo()
 #print(len(promo.all_bites))
-print(promo.new_bite())
+print(promo.new_bite

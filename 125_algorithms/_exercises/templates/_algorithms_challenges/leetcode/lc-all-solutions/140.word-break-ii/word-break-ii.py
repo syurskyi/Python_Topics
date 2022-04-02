@@ -14,10 +14,10 @@ c_ Solution(o..
     w.... queue:
       tmpqueue    # list
       ___ q __ queue:
-        start, path = q
+        start, p.. = q
         ___ l __ lenList:
           __ start + l <= slen a.. s[start:start + l] __ wordDict:
-            newnode = (start + l, path + " " + s[start:start + l] __ path ____ s[start:start + l])
+            newnode = (start + l, p.. + " " + s[start:start + l] __ p.. ____ s[start:start + l])
             tmpqueue.a..(newnode)
             __ start + l __ slen:
               res.a..(newnode[1])

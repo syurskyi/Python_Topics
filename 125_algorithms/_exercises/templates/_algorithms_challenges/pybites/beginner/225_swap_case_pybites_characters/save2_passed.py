@@ -5,7 +5,7 @@ ___ convert_pybites_chars(text
     new_str    # list
     ___ t __ text:
         __ t.l.. __ l..(PYBITES
-            new_str.a..(t.swapcase())
+            new_str.a..(t.swapcase
         ____:
             new_str.a..(t)
     r.. "".j..(new_str)

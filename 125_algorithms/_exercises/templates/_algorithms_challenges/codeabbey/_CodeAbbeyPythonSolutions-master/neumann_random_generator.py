@@ -1,4 +1,4 @@
-amount_value = i..(input())
+amount_value = i..(input
 
 generator_list    # list
 results    # list

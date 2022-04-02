@@ -7,18 +7,18 @@ c_ Solution(o..
     """
     __ a < 10:
       r.. a
-    path    # list
+    p..    # list
     k = 9
     w.... k > 1 a.. a > 1:
       __ a % k __ 0:
-        path.a..(s..(k))
+        p...a..(s..(k))
         a /= k
       ____:
         k -= 1
-    path.s..()
-    __ a > 9 o. n.. path:
+    p...s..()
+    __ a > 9 o. n.. p..:
       r.. 0
-    ans = i..("".j..(path))
+    ans = i..("".j..(p..))
     r.. ans __ ans <= 0x7fffffff ____ 0
 
   # normal DFS
@@ -30,16 +30,16 @@ c_ Solution(o..
     __ a <= 1:
       r.. a
 
-    ___ dfs(num, path
+    ___ dfs(num, p..
       __ num __ 1:
-        ans = m..(ans, i..("".j..(s..(path))))
+        ans = m..(ans, i..("".j..(s..(p..))))
         r.. T..
       ___ i __ r..(r..(2, 10)):
         __ num % i __ 0:
-          path.a..(s..(i))
-          __ dfs(num / i, path
+          p...a..(s..(i))
+          __ dfs(num / i, p..
             r.. T..
-          path.pop()
+          p...pop()
       r.. F..
 
     ans = f__("inf")

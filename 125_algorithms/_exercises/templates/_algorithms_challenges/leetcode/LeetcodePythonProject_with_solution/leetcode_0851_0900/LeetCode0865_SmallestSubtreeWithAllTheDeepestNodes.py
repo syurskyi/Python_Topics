@@ -36,7 +36,7 @@ c_ Solution(o..
         """
         hashmap    # dict
         gatherDepths(root, 0, hashmap)
-        maxDepth = m..(hashmap.keys())
+        maxDepth = m..(hashmap.keys
         nodes = hashmap[maxDepth]
         r.. getCommonParent(root, nodes)
     

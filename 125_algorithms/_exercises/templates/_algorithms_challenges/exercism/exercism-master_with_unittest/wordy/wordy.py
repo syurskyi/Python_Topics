@@ -7,7 +7,7 @@ c_ Calculator:
                  "What is ": "",
                  "?": ""}
 
-    VALID_TOKENS = s..(OPERATORS.values())
+    VALID_TOKENS = s..(OPERATORS.values
 
     ___ - , inp
         inp = inp
@@ -38,15 +38,15 @@ c_ Calculator:
     ___ valid
         r.. (valid_elements() a..
                 n.. consecutive_tokens() a..
-                n.. consecutive_digits())
+                n.. consecutive_digits
 
     ___ consecutive_tokens
         r.. any(operator(i) a.. operator(j) ___ i, j __
-                   slices_of_two())
+                   slices_of_two
 
     ___ consecutive_digits
         r.. any(digit(i) a.. digit(j) ___ i, j __
-                   slices_of_two())
+                   slices_of_two
 
     ___ slices_of_two
         r.. l..(z..(tokens, tokens[1:]))
@@ -70,7 +70,7 @@ c_ Calculator:
 
     @classmethod
     ___ operator(cls, element
-        r.. element __ l..(cls.OPERATORS.values())
+        r.. element __ l..(cls.OPERATORS.values
 
 
 ___ calculate(inp

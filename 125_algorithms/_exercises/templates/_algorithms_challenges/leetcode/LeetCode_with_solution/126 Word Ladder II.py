@@ -249,18 +249,18 @@ c_ Solution:  # use set to mimic queue, fastest
         buildpath(prevMap, end, [], result)
         r.. result
 
-    ___ buildpath  prevMap, word, path, result
+    ___ buildpath  prevMap, word, p.., result
         # reach the end
         __ l..(prevMap[word])__0:
-            path.a..(word)
-            result.a..(path[::-1])
-            path.pop()
+            p...a..(word)
+            result.a..(p..[::-1])
+            p...pop()
             r..
 
-        path.a..(word)
+        p...a..(word)
         ___ predecessor __ prevMap[word]:
-            buildpath(prevMap, predecessor, path, result)  # save memory
-        path.pop()
+            buildpath(prevMap, predecessor, p.., result)  # save memory
+        p...pop()
 
         # for predecessor in prevMap[word]:
         #     self.buildpath(prevMap, predecessor, path+[word], result)

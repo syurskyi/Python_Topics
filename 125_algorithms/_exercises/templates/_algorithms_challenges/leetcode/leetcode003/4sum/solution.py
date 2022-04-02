@@ -25,7 +25,7 @@ c_ Solution(o..
         :type target: int
         :rtype: List[List[int]]
         """
-        n = l..(nums)
+        n  l..(nums)
         nums.s..()
         res    # list
         ___ a __ r..(n - 3
@@ -34,20 +34,20 @@ c_ Solution(o..
             ___ b __ r..(a + 1, n - 2
                 __ b > a + 1 a.. nums[b - 1] __ nums[b]:
                     _____
-                c = b + 1
-                d = n - 1
+                c  b + 1
+                d  n - 1
                 w.... c < d:
-                    s = nums[a] + nums[b] + nums[c] + nums[d]
+                    s  nums[a] + nums[b] + nums[c] + nums[d]
                     __ s __ target:
                         res.a..([nums[a], nums[b], nums[c], nums[d]])
-                        c += 1
-                        d -= 1
+                        c + 1
+                        d - 1
                         w.... c < d a.. nums[c] __ nums[c - 1]:
-                            c += 1
+                            c + 1
                         w.... c < d a.. nums[d] __ nums[d + 1]:
-                            d -= 1
+                            d - 1
                     ____ s < target:
-                        c += 1
+                        c + 1
                     ____:
-                        d -= 1
+                        d - 1
         r.. res

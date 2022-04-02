@@ -8,4 +8,4 @@ ___ i __ r..(1,1000000
     word = word + '\n'
     fh.write(word)
 
-fh.close()
+fh.c..

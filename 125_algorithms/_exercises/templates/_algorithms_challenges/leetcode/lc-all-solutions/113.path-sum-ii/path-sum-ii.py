@@ -13,15 +13,15 @@ c_ Solution(o..
     :rtype: List[List[int]]
     """
 
-    ___ dfs(root, s, path, res
+    ___ dfs(root, s, p.., res
       __ root:
-        path.a..(root.val)
+        p...a..(root.val)
         s -= root.val
-        left = dfs(root.left, s, path, res)
-        right = dfs(root.right, s, path, res)
+        left = dfs(root.left, s, p.., res)
+        right = dfs(root.right, s, p.., res)
         __ n.. left a.. n.. right a.. s __ 0:
-          res.a..(path + [])
-        path.pop()
+          res.a..(p.. + [])
+        p...pop()
         r.. T..
 
     res    # list

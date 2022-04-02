@@ -1,12 +1,12 @@
-_______ os
+_______ __
 _______ pprint __ pp
 ____ c.. _______ Counter
 _______ urllib.request
 _______ ___.e__.E__ __ ET
 
 # prep
-tmp = os.getenv("TMP", "/tmp")
-tempfile = os.path.j..(tmp, 'feed')
+tmp = __.getenv("TMP", "/tmp")
+tempfile = __.p...j..(tmp, 'feed')
 urllib.request.urlretrieve(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile

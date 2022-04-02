@@ -25,12 +25,12 @@ c_ Solution(o..
         :rtype: int
         """
         citations.s..(r.._T..
-        count = 0
-        lowest = 0
-        h = 0
+        count  0
+        lowest  0
+        h  0
         ___ i, c __ e..(citations
-            lowest = c
-            count = i + 1
+            lowest  c
+            count  i + 1
             __ lowest >= count:
                 h = count
             ____:

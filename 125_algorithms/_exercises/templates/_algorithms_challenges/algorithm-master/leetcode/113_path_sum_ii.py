@@ -24,16 +24,16 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  node, remaining, ans, path
+    ___ dfs  node, remaining, ans, p..
         __ n.. node:
             r..
 
-        path.a..(node.val)
+        p...a..(node.val)
 
         __ n.. node.left a.. n.. node.right a.. remaining __ node.val:
-            ans.a..(path | )
+            ans.a..(p.. | )
         ____:
-            dfs(node.left, remaining - node.val, ans, path)
-            dfs(node.right, remaining - node.val, ans, path)
+            dfs(node.left, remaining - node.val, ans, p..)
+            dfs(node.right, remaining - node.val, ans, p..)
 
-        path.pop()
+        p...pop()

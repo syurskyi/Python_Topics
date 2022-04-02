@@ -45,7 +45,7 @@ c_ SnakeGame(o..
       score += 1
       food.popleft()
     ____:
-      snakeSet.discard(snake.pop())
+      snakeSet.discard(snake.pop
 
     __ (ni, nj) __ snakeSet:
       r.. -1

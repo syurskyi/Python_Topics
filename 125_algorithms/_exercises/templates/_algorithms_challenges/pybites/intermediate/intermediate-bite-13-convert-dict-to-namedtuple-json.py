@@ -51,13 +51,13 @@ b = dict2nt(blog)
 # Q: How to serialize datetime object?
 # https://code-maven.com/serialize-datetime-object-as-json-in-python
 # https://stackoverflow.com/questions/11875770/how-to-overcome-datetime-datetime-not-json-serializable/36142844#36142844
-print(json.dumps(OrderedDict(b._asdict()), default=s.., indent=4))
+print(json.dumps(OrderedDict(b._asdict, default=s.., indent=4))
 
 
 ### ---------- PyBites original solution ---------------
 
 # define namedtuple here
-pybBlog = n..('pybBlog', blog.keys())
+pybBlog = n..('pybBlog', blog.keys
 
 # https://stackoverflow.com/questions/36901/what-does-double-star-asterisk-and-star-asterisk-do-for-parameters
 ___ pyb_dict2nt(dict_
@@ -66,4 +66,4 @@ ___ pyb_dict2nt(dict_
 
 ___ pyb_nt2json(nt
     nt = nt._replace(started=s..(nt.started))
-    r.. json.dumps(nt._asdict())
+    r.. json.dumps(nt._asdict

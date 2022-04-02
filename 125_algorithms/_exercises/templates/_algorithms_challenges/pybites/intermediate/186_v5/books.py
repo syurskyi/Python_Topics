@@ -20,6 +20,6 @@ ___ get_number_books_read(books_per_year_goal: i..,
     __ target < START_DATE o. books_per_year_goal < 1:
         r.. ValueError()
 
-    week_diff = (target.date() - START_DATE.date()).days // 7
+    week_diff = (target.date() - START_DATE.date.days // 7
 
     r.. i..(week_diff / WEEKS_PER_YEAR * books_per_year_goal)

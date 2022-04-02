@@ -12,12 +12,12 @@ c_ Solution(o..
         :rtype: int
         """
         _______ heapq
-        path    # dict
+        p..    # dict
         ___ time __ times:
-            sourceMap = path.get(time[0], {})
+            sourceMap = p...get(time[0], {})
             __ time[1] n.. __ sourceMap o. sourceMap[time[1]] > time[2]:
                 sourceMap[time[1]] = time[2]
-            path[time[0]] = sourceMap
+            p..[time[0]] = sourceMap
         
         distanceMap = {K:0}
         heap    # list
@@ -27,9 +27,9 @@ c_ Solution(o..
             d, node = heapq.heappop(heap)
             __ node __ distanceMap a.. distanceMap[node] < d:
                 _____
-            __ node __ path:
-                ___ node0 __ path[node]:
-                    absDist = d+path[node][node0]
+            __ node __ p..:
+                ___ node0 __ p..[node]:
+                    absDist = d+p..[node][node0]
                     __ node0 __ distanceMap a.. distanceMap[node0] <= absDist:
                         _____
                     distanceMap[node0] = absDist

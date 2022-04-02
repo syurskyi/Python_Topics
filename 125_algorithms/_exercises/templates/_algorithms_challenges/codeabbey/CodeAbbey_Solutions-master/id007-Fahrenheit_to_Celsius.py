@@ -5,4 +5,4 @@ ___ convert(variables
         num = i..(r..(f__((num) - 32) * (5.0/9.0)))
         answer.a..(s..(num))
     print(' '.j..(answer))
-convert(raw_input().s..())
+convert(raw_input().s..

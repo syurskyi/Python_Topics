@@ -1,29 +1,29 @@
 #accept the number and the number of guesses
-n,c = l.. m..(s.., input().s..()))
+n,c  l.. m..(s.., input().s..()))
 #accept the guesses
-guess = l.. m..(s.., input().s..()))
+guess  l.. m..(s.., input().s..()))
 
 #look for the bulls and cows
 ___ i __ guess:
-    bull = F..
-    cow = F..
-    cow_count = 0
-    bull_count = 0
-    res = ''
+    bull  F..
+    cow  F..
+    cow_count  0
+    bull_count  0
+    res  ''
     #look for the index , if the numbers of the real number and guess number positions are same
     ___ j __ r..(l..(i)):
         __ i[j] __ n:
-            bull = T..
+            bull  T..
             __ i[j] __ n[j]:
-                cow = T..
+                cow  T..
         __ bull a.. cow:
-            cow_count += 1 
-            bull = cow = F..
+            cow_count + 1 
+            bull  cow  F..
         __ bull:
-            bull_count += 1
-            bull = F..
-    res = s..(cow_count)+'-'+s..(bull_count)
-    print(res,end=' ')
+            bull_count + 1
+            bull  F..
+    res  s..(cow_count)+'-'+s..(bull_count)
+    print(res,end' ')
             
                 
     

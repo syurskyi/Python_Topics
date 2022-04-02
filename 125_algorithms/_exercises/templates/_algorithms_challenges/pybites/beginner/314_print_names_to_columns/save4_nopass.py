@@ -6,4 +6,4 @@ ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
     output = ''
     ___ i __ r..(0, l..(name_list), cols
         output += ' '.j..(name_list[i: i + cols]) + '\n'
-    print(output.strip())
+    print(output.strip
