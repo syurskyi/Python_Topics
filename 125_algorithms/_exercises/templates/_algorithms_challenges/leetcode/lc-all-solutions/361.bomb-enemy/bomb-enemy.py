@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxKilledEnemies  grid):
+c_ Solution(o..
+  ___ maxKilledEnemies  grid
     """
     :type grid: List[List[str]]
     :rtype: int

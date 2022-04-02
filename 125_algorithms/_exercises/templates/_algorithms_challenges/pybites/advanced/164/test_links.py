@@ -15,20 +15,20 @@ MY_CODE = SCRIPT __ IS_LOCAL ____ TMP / SCRIPT
 
 # https://docs.pytest.org/en/latest/tmpdir.html#the-tmpdir-factory-fixture
 
-@p__.f..
-___ my_file(tmp_path):
+?p__.f..
+___ my_file(tmp_path
     f = tmp_path / "some_file.txt"
     r.. f
 
 
-___ _create_and_verify_links(my_file, lines, expected_links):
-    my_file.write_bytes(b'\n'.j..(lines))
+___ _create_and_verify_links(my_file, lines, expected_links
+    my_file.w..(b'\n'.j..(lines))
     cmd = f'cat {my_file.resolve()} | python {MY_CODE}'
-    output = subprocess.check_output(cmd, shell=T..).splitlines()
+    output = subprocess.check_output(cmd, shell=T..).s..
     ... a..(link __ output ___ link __ expected_links)
 
 
-___ test_make_html_links_first_data_set(my_file):
+___ test_make_html_links_first_data_set(my_file
     lines = [b"https://www.python.org, Python Homepage",
              b"bad data,blabla,123",
              (b"https://pybit.es/generators.html , "
@@ -43,7 +43,7 @@ ___ test_make_html_links_first_data_set(my_file):
     _create_and_verify_links(my_file, lines, expected_links)
 
 
-___ test_make_html_links_second_data_set(my_file):
+___ test_make_html_links_second_data_set(my_file
     lines = [b"bogus data, again",
              b"https://codechalleng.es/bites/ , Bites of Py",
              (b"https://stackoverflow.com/a/12927564,How to capture"

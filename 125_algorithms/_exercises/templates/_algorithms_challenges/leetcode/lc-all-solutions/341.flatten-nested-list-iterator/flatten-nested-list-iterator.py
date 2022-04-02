@@ -25,9 +25,9 @@
 ____ c.. _______ d..
 
 
-c_ NestedIterator(o..):
+c_ NestedIterator(o..
 
-  ___ - , nestedList):
+  ___ - , nestedList
     """
     Initialize your data structure here.
     :type nestedList: List[NestedInteger]

@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ findMinHeightTrees  n, edges):
+c_ Solution(o..
+  ___ findMinHeightTrees  n, edges
     """
     :type n: int
     :type edges: List[List[int]]
@@ -13,7 +13,7 @@ c_ Solution(o..):
         r.. [0]
       r.. []
 
-    ___ bfs(graph, start):
+    ___ bfs(graph, start
       queue = d..([(start, N..)])
       level = 0
       maxLevel = -1
@@ -22,7 +22,7 @@ c_ Solution(o..):
         level += 1
         ___ i __ r..(0, l..(queue)):
           label, parent = queue.popleft()
-          ___ child __ graph.get(label, []):
+          ___ child __ graph.get(label, []
             __ child != parent:
               queue.a..((child, label))
               __ level > maxLevel:
@@ -30,15 +30,15 @@ c_ Solution(o..):
                 farthest = child
       r.. farthest
 
-    ___ dfs(graph, start, end, visited, path, res):
+    ___ dfs(graph, start, end, visited, path, res
       __ start __ end:
         res.a..(path + [])
         r.. T..
       visited[start] = 1
-      ___ child __ graph.get(start, []):
+      ___ child __ graph.get(start, []
         __ visited[child] __ 0:
           path.a..(child)
-          __ dfs(graph, child, end, visited, path, res):
+          __ dfs(graph, child, end, visited, path, res
             r.. T..
           path.pop()
 

@@ -13,12 +13,12 @@ Try to do this in one pass.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 c_ Solution:
-    ___ removeNthFromEnd  head, n):
+    ___ removeNthFromEnd  head, n
         """
         O(n)+O(n)
         :param head: head node

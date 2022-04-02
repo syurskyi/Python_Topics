@@ -21,7 +21,7 @@ integer.
 
 
 c_ Solution:
-    ___ checkSubarraySum  nums, k):
+    ___ checkSubarraySum  nums, k
         """
         Two pointers algorithm won't work since it is multiple of k
 
@@ -32,7 +32,7 @@ c_ Solution:
         """
         h = {0: 0}  # [:l], half open, factor in trival case
         s = 0
-        ___ l __ r..(1, l..(nums) + 1):
+        ___ l __ r..(1, l..(nums) + 1
             s += nums[l-1]
             __ k != 0:  # edge case
                 s %= k

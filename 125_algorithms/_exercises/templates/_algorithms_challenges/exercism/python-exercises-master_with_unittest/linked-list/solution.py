@@ -1,17 +1,17 @@
-c_ Node(o..):
+c_ Node(o..
     ___ - , value, next=N.., prev_ N..
         value = value
         next = next
         prev = prev
 
 
-c_ LinkedList(o..):
-    ___ - ):
+c_ LinkedList(o..
+    ___ -
         head = N..
         tail = N..
         length = 0
 
-    ___ push  value):
+    ___ push  value
         new_node = Node(value)
         __ n.. head:
             head = tail = new_node
@@ -41,7 +41,7 @@ c_ LinkedList(o..):
         length -= 1
         r.. node.value
 
-    ___ unshift  value):
+    ___ unshift  value
         new_node = Node(value)
         __ n.. head:
             head = tail = new_node
@@ -56,6 +56,6 @@ c_ LinkedList(o..):
 
     ___ __iter__
         current_node = head
-        w.... (current_node):
+        w.... (current_node
             y.. current_node.value
             current_node = current_node.next

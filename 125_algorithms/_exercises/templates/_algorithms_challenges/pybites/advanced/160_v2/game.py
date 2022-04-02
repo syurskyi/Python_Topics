@@ -4,7 +4,7 @@ ____ urllib.request _______ urlretrieve
 ____ c.. _______ defaultdict
 
 BATTLE_DATA = os.path.j..('/tmp', 'battle-table.csv')
-__ n.. os.path.isfile(BATTLE_DATA):
+__ n.. os.path.isfile(BATTLE_DATA
     urlretrieve('https://bit.ly/2U3oHft', BATTLE_DATA)
 
 
@@ -13,10 +13,10 @@ ___ _create_defeat_mapping
        with keys = attackers / values = who they defeat.
     """
     result = defaultdict(d..)
-    w__ open(BATTLE_DATA) __ b:
+    w__ o.. BATTLE_DATA) __ b:
         reader = csv.DictReader(b)
         ___ row __ reader:
-            result[row['Attacker']] = row
+            result[row 'Attacker']] = row
     r.. result
 
 

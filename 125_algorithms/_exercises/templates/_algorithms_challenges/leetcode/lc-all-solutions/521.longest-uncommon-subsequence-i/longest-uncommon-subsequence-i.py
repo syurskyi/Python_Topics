@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findLUSlength  a, b):
+c_ Solution(o..
+  ___ findLUSlength  a, b
     """
     :type a: str
     :type b: str

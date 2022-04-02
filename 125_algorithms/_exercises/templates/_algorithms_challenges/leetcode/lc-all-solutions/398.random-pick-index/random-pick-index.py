@@ -1,6 +1,6 @@
-c_ Solution(o..):
+c_ Solution(o..
 
-  ___ - , nums):
+  ___ - , nums
     """
     
     :type nums: List[int]
@@ -8,7 +8,7 @@ c_ Solution(o..):
     """
     nums = nums
 
-  ___ pick  target):
+  ___ pick  target
     """
     :type target: int
     :rtype: int

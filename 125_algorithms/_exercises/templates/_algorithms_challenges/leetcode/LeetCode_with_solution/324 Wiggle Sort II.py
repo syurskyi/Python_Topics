@@ -14,8 +14,8 @@ Can you do it in O(n) time and/or in-place with O(1) extra space?
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ wiggleSort  A):
+c_ Solution(o..
+    ___ wiggleSort  A
         """
         1. Quick selection for finding median (Average O(n))
         2. Three-way partitioning to split the data
@@ -64,7 +64,7 @@ c_ Solution(o..):
 
         r.. lt, gt
 
-    ___ find_kth  A, lo, hi, k):
+    ___ find_kth  A, lo, hi, k
         __ lo >= hi: r..
 
         lt, gt = pivot(A, lo, hi)
@@ -77,8 +77,8 @@ c_ Solution(o..):
             r.. find_kth(A, gt, hi, k)
 
 
-c_ SolutionSort(o..):
-    ___ wiggleSort  nums):
+c_ SolutionSort(o..
+    ___ wiggleSort  nums
         """
         Sort-based: interleave the small half and large half
 

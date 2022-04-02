@@ -5,7 +5,7 @@ _______ diffie_hellman
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
 
-c_ DiffieHellmanTest(unittest.TestCase):
+c_ DiffieHellmanTest(unittest.TestCase
 
     ___ test_private_key_is_in_range
         primes = [5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
@@ -17,7 +17,7 @@ c_ DiffieHellmanTest(unittest.TestCase):
     ___ test_private_key_is_random
         p = 2147483647
         private_keys    # list
-        ___ i __ r..(5):
+        ___ i __ r..(5
             private_keys.a..(diffie_hellman.private_key(p))
         assertEqual(l..(s..(private_keys)), l..(private_keys))
 

@@ -4,13 +4,13 @@ Created on Feb 11, 2017
 @author: MT
 '''
 # Definition for a point.
-c_ Point(o..):
-    ___ - , a=0, b=0):
+c_ Point(o..
+    ___ - , a=0, b=0
         x = a
         y = b
 
-c_ Solution(o..):
-    ___ maxPoints  points):
+c_ Solution(o..
+    ___ maxPoints  points
         """
         :type points: List[Point]
         :rtype: int
@@ -19,11 +19,11 @@ c_ Solution(o..):
         __ n.. points: r.. 0
         __ n <= 2: r.. n
         res = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             hashmap    # dict
             dup = 0
             tmpMax = 0
-            ___ j __ r..(i+1, n):
+            ___ j __ r..(i+1, n
                 x = points[j].x-points[i].x
                 y = points[j].y-points[i].y
                 __ x __ 0 a.. y __ 0:
@@ -46,11 +46,11 @@ c_ Solution(o..):
             res = m..(res, tmpMax+dup+1)
         r.. res
     
-    ___ gcd  a, b):
+    ___ gcd  a, b
         __ b __ 0: r.. a
         r.. gcd(b, a%b)
     
-    ___ maxPoints_slope  points):
+    ___ maxPoints_slope  points
         """
         :type points: List[Point]
         :rtype: int
@@ -58,10 +58,10 @@ c_ Solution(o..):
         __ n.. points: r.. 0
         maxVal = 0
         n = l..(points)
-        ___ i __ r..(n):
+        ___ i __ r..(n
             duplicate, vertical = 1, 0
             hashmap    # dict
-            ___ j __ r..(i+1, n):
+            ___ j __ r..(i+1, n
                 __ points[i].x __ points[j].x:
                     __ points[i].y __ points[j].y:
                         duplicate += 1

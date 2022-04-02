@@ -1,4 +1,4 @@
-___ isEvenOrOdd(num):
+___ isEvenOrOdd(num
     __ num % 2 __ 0:
         r.. "even"
     ____:

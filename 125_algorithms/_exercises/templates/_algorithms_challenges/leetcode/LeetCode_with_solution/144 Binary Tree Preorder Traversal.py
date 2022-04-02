@@ -16,15 +16,15 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ preorderTraversal  root):
+c_ Solution(o..
+    ___ preorderTraversal  root
         """Morris"""
         ret    # list
         cur = root
@@ -47,7 +47,7 @@ c_ Solution(o..):
 
         r.. ret
 
-    ___ preorderTraversal_memory  root):
+    ___ preorderTraversal_memory  root
         """
         dfs
         :param root:
@@ -58,7 +58,7 @@ c_ Solution(o..):
         r.. lst
 
 
-    ___ preTraverse  node, lst):
+    ___ preTraverse  node, lst
         __ n.. node:
             r..
         lst.a..(node.val)
@@ -66,7 +66,7 @@ c_ Solution(o..):
         preTraverse(node.left, lst)
         preTraverse(node.right, lst)
 
-    ___ preTraverse_itr  root, lst):
+    ___ preTraverse_itr  root, lst
         """
         stack = [R, L, cur]
 

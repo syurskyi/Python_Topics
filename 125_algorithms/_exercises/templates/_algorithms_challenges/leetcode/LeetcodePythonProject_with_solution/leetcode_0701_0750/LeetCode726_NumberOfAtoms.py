@@ -4,8 +4,8 @@ Created on Feb 21, 2018
 @author: tongq
 '''
 _______ __
-c_ Solution(o..):
-    ___ countOfAtoms  formula):
+c_ Solution(o..
+    ___ countOfAtoms  formula
         """
         :type formula: str
         :rtype: str
@@ -15,10 +15,10 @@ c_ Solution(o..):
         res = ''.j..(arr)
         r.. res
     
-    ___ helper  s):
+    ___ helper  s
         hashmap    # dict
         i = 0
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i] __ '(':
                 count0 = 1
                 i += 1
@@ -40,7 +40,7 @@ c_ Solution(o..):
                 ___ elem, freq __ hashmap0.i..:
                     hashmap[elem] = hashmap.get(elem, 0)+freq*count
             ____:
-                __ i+1 < l..(s) a.. __.m..('[a-z]', s[i+1]):
+                __ i+1 < l..(s) a.. __.m..('[a-z]', s[i+1]
                     elem = s[i:i+2]
                     i+=1
                 ____:

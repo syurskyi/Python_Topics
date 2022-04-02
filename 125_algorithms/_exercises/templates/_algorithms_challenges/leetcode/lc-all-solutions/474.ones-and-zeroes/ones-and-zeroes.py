@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findMaxForm  strs, m, n):
+c_ Solution(o..
+  ___ findMaxForm  strs, m, n
     """
     :type strs: List[str]
     :type m: int

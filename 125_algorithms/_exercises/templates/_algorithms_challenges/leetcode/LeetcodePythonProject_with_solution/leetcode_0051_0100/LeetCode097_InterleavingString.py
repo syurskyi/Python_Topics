@@ -3,8 +3,8 @@ Created on Jan 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ isInterleave  s1, s2, s3):
+c_ Solution(o..
+    ___ isInterleave  s1, s2, s3
         """
         :type s1: str
         :type s2: str
@@ -12,18 +12,18 @@ c_ Solution(o..):
         :rtype: bool
         """
         m, n = l..(s1), l..(s2)
-        __ m+n != l..(s3):
+        __ m+n != l..(s3
             r.. F..
         dp = [[F..]*(n+1) ___ _ __ r..(m+1)]
         dp[0][0] = T..
-        ___ i __ r..(m):
+        ___ i __ r..(m
             __ s1[i] __ s3[i] a.. dp[i][0]:
                 dp[i+1][0] = T..
-        ___ j __ r..(n):
+        ___ j __ r..(n
             __ s2[j] __ s3[j] a.. dp[0][j]:
                 dp[0][j+1] = T..
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ s1[i] __ s3[i+j+1] a.. dp[i][j+1]:
                     dp[i+1][j+1] = T..
                 __ s2[j] __ s3[i+j+1] a.. dp[i+1][j]:

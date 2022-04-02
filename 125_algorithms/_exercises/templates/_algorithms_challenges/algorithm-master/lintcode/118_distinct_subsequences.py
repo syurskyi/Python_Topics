@@ -4,7 +4,7 @@ c_ Solution:
     @param: : A string
     @return: Count the number of distinct subsequences
     """
-    ___ numDistinct  S, T):
+    ___ numDistinct  S, T
         __ S __ N.. o. T __ N..
             r.. 0
 
@@ -21,13 +21,13 @@ c_ Solution:
 
         prev = curr = 0
         dp[curr][0] = 1
-        ___ i __ r..(1, m + 1):
+        ___ i __ r..(1, m + 1
             prev = curr
             curr = 1 - curr
 
             dp[curr][0] = 1
 
-            ___ j __ r..(1, n + 1):
+            ___ j __ r..(1, n + 1
                 """
                 case 1: `S[i - 1]` and `T[j - 1]` is not a pair
                 so keep `T[j - 1]` in candidates

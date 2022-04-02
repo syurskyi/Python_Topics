@@ -4,8 +4,8 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ convertToBase7  num):
+c_ Solution(o..
+    ___ convertToBase7  num
         """
         :type num: int
         :rtype: str

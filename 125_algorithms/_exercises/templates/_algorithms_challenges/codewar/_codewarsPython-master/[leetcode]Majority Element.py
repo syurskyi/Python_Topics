@@ -1,7 +1,7 @@
 c_ Solution:
     # @param {integer[]} nums
     # @return {integer}
-    ___ majorityElement  nums):
+    ___ majorityElement  nums
         s..(nums)
         numDict    # dict
         ___ n __ nums:

@@ -1,6 +1,6 @@
 # Python 2.7
 
-___ compress_string(s__):
+___ compress_string(s__
     answer    # list
     value_dict = {
         ' ': '11',             'e': '101',

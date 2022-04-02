@@ -3,8 +3,8 @@ Created on Jun 9, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ flipAndInvertImage  A):
+c_ Solution(o..
+    ___ flipAndInvertImage  A
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]
@@ -12,7 +12,7 @@ c_ Solution(o..):
         image = A
         __ n.. image o. n.. image[0]: r..
         m, n = l..(image), l..(image[0])
-        ___ i __ r..(m):
+        ___ i __ r..(m
             j, l = 0, n-1
             w.... j <= l:
                 image[i][j], image[i][l] = image[i][l], image[i][j]

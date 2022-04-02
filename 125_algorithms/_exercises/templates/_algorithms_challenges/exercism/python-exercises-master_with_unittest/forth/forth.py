@@ -1,6 +1,6 @@
-c_ StackUnderflowError(E..):
+c_ StackUnderflowError(E..
     p..
 
 
-___ evaluate(input_data):
+___ evaluate(input_data
     p..

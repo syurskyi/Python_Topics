@@ -3,16 +3,16 @@ Created on May 29, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ getRow  rowIndex):
+c_ Solution(o..
+    ___ getRow  rowIndex
         """
         :type rowIndex: int
         :rtype: List[int]
         """
         res = [1]
-        ___ i __ r..(rowIndex):
+        ___ i __ r..(rowIndex
             newRes    # list
-            ___ j __ r..(i+2):
+            ___ j __ r..(i+2
                 __ j __ 0 o. j __ i+1:
                     newRes.a..(1)
                 ____:

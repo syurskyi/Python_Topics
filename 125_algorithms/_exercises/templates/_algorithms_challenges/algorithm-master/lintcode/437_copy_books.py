@@ -7,7 +7,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer
     """
-    ___ copyBooks  P, k):
+    ___ copyBooks  P, k
         __ n.. P o. n.. k:
             r.. 0
         n = l..(P)
@@ -24,13 +24,13 @@ c_ Solution:
         """
         dp = [[INFINITY] * k ___ _ __ r..(n)]
 
-        ___ j __ r..(k):
+        ___ j __ r..(k
             dp[0][j] = P[0]
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             dp[i][0] = dp[i - 1][0] + P[i]
 
-        ___ i __ r..(1, n):
-            ___ j __ r..(1, k):
+        ___ i __ r..(1, n
+            ___ j __ r..(1, k
                 __ j > i:
                     """
                     if `j > i`, means books more than copiers
@@ -39,7 +39,7 @@ c_ Solution:
                     dp[i][j] = dp[i][j - 1]
                     _____
 
-                ___ h __ r..(j - 1, i + 1):
+                ___ h __ r..(j - 1, i + 1
                     """
                     `copied_pages` is the maximum copied pages,
                     and also means the maximum time spent
@@ -66,7 +66,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer
     """
-    ___ copyBooks  P, k):
+    ___ copyBooks  P, k
         __ n.. P o. n.. k:
             r.. 0
         n = l..(P)
@@ -81,13 +81,13 @@ c_ Solution:
         """
         dp = [[0] * k ___ _ __ r..(n)]
 
-        ___ j __ r..(k):
+        ___ j __ r..(k
             dp[0][j] = P[0]
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             dp[i][0] = dp[i - 1][0] + P[i]
 
-        ___ j __ r..(1, k):
-            ___ i __ r..(1, j):
+        ___ j __ r..(1, k
+            ___ i __ r..(1, j
                 """
                 if `j > i`, means books more than copiers
                 the people after `j`th people dont have to work
@@ -95,7 +95,7 @@ c_ Solution:
                 dp[i][j] = dp[i][j - 1]
 
             h = copied_pages = 0
-            ___ i __ r..(j, n):
+            ___ i __ r..(j, n
                 """
                 `h` means the maximum books `j - 1` men copied in shortest time
                 """
@@ -143,7 +143,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer
     """
-    ___ copyBooks  P, k):
+    ___ copyBooks  P, k
         __ n.. P o. n.. k:
             r.. 0
         n = l..(P)
@@ -162,7 +162,7 @@ c_ Solution:
 
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ check_if_possible(P, mid, k):
+            __ check_if_possible(P, mid, k
                 right = mid
             ____:
                 left = mid
@@ -172,7 +172,7 @@ c_ Solution:
         """
         r.. left __ check_if_possible(P, left, k) ____ right
 
-    ___ check_if_possible  P, spent_time, max_copiers):
+    ___ check_if_possible  P, spent_time, max_copiers
         """
         check if possible to copy all `pages` in `spent_time`
         and participation is not more than `max_copiers`

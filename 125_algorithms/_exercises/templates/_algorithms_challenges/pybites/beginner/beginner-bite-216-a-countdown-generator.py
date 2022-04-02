@@ -28,7 +28,7 @@ Good luck, have fun and keep it Python!
 """
 
 ___ countdown
-    ___ i __ r..(100, 0, -1):
+    ___ i __ r..(100, 0, -1
         y.. i
 
 

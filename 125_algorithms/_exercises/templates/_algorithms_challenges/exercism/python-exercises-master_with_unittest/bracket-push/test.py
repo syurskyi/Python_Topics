@@ -5,7 +5,7 @@ ____ bracket_push _______ check_brackets
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.1.0
 
-c_ BracketPushTests(unittest.TestCase):
+c_ BracketPushTests(unittest.TestCase
     ___ test_paired_square_brackets
         assertEqual(check_brackets("[]"), T..)
 

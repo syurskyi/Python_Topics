@@ -11,22 +11,22 @@ c_ Solution:
     @param: s: A string
     @return: A boolean
     """
-    ___ exist  G, s):
+    ___ exist  G, s
         __ G __ N.. o. G[0] __ N.. o. s __ N..
             r.. F..
 
         m, n = l..(G), l..(G[0])
         visited = [[F..] * n ___ _ __ r..(m)]
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ (G[x][y] __ s[0] a..
                     dfs(G, x, y, s, 1, visited)):
                     r.. T..
 
         r.. F..
 
-    ___ dfs  G, x, y, s, i, visited):
-        __ i >= l..(s):
+    ___ dfs  G, x, y, s, i, visited
+        __ i >= l..(s
             r.. T..
 
         ___ dx, dy __ V:
@@ -38,7 +38,7 @@ c_ Solution:
                 _____
 
             visited[_x][_y] = T..
-            __ dfs(G, _x, _y, s, i + 1, visited):
+            __ dfs(G, _x, _y, s, i + 1, visited
                 r.. T..
             visited[_x][_y] = F..
 

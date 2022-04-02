@@ -33,7 +33,7 @@ Each node will have a value between 1 and 10^9.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

@@ -13,7 +13,7 @@ Output: 1->4->3->2->5->NULL
 
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 

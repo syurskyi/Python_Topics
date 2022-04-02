@@ -7,8 +7,8 @@ b = "1"
 Return "100".
 """
 
-c_ Solution(o..):
-    ___ addBinary  a, b):
+c_ Solution(o..
+    ___ addBinary  a, b
         """
         :type a: str
         :type b: str
@@ -20,7 +20,7 @@ c_ Solution(o..):
         n = l..(b)
         i = 0
         c = 0
-        res = ['0' ___ _ __ r..(m..(m, n) + 1)]
+        res =  '0' ___ _ __ r..(m..(m, n) + 1)]
         w.... i < m o. i < n o. c > 0:
             tmp = c
             __ i < m:
@@ -32,12 +32,12 @@ c_ Solution(o..):
             res[i] = s..(bit)
             i += 1
         res = res[::-1]
-        ___ i, c __ e..(res):
+        ___ i, c __ e..(res
             __ c != '0':
                 res = res[i:]
                 _____
         ____:
-            res = ['0']
+            res =  '0'
         r.. ''.j..(res)
 
 

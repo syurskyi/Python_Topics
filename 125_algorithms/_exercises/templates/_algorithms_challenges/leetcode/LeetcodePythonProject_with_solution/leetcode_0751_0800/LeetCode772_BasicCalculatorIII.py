@@ -3,8 +3,8 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ calculate  s):
+c_ Solution(o..
+    ___ calculate  s
         """
         :type s: str
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         l2, o2 = 1, 1
         d..    # list
         i = 0
-        w.... i < l..(s):
+        w.... i < l..(s
             c = s[i]
             __ c.i..
                 num = o..(c)-o..('0')

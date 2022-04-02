@@ -7,10 +7,10 @@ ____ s.. _______ (_convert_struct_time_to_dt, get_feed_entries,
                     filter_entries_by_tag, main, Entry)
 
 
-c_ AttrDict(d..):
+c_ AttrDict(d..
     """feedparser lets you access dict keys as attributes, hence a bit of
        mocking, got this from https://stackoverflow.com/a/14620633"""
-    ___ - , *args, **kwargs):
+    ___ - , *args, **kwargs
         super(AttrDict, self).__init__ $ $$
         __dict__ = self
 
@@ -51,25 +51,25 @@ MOCK_ENTRIES = AttrDict({'entries':
     (d__(2016, 12, 19, 9, 26, 0).timetuple(),
      date y.._2016,  m.._12,  d.._19)),
 ])
-___ test_convert_struct_time_to_dt(arg, ret):
+___ test_convert_struct_time_to_dt(arg, ret
     ... _convert_struct_time_to_dt(arg) __ ret
 
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
-___ test_get_feed_entries(inp):
+___ test_get_feed_entries(inp
     first, last = t..(get_feed_entries())
 
     ... first.date __ date y.._2018,  m.._2,  d.._18)
     ... first.title __ 'Twitter Digest 2018 Week 08'
     ... first.link __ 'https://pybit.es/twitter_digest_201808.html'
-    expected = ['flask', 'python', 'regex', 'twitter']
+    expected =  'flask', 'python', 'regex', 'twitter'
     # allow list or set
     ... s..(l..(first.tags)) __ expected
 
     ... last.date __ date y.._2017,  m.._1,  d.._6)
     ... last.title __ 'Copy and Paste with Pyperclip'
     ... last.link __ 'https://pybit.es/pyperclip.html'
-    expected = ['code', 'pybites', 'python', 'tips', 'tricks']
+    expected =  'code', 'pybites', 'python', 'tips', 'tricks'
     ... s..(l..(last.tags)) __ expected
 
 
@@ -86,7 +86,7 @@ ___ test_get_feed_entries(inp):
     ('matplotlib|django|flask', T..),
     ('pyramid|django|flask', F..),
 ])
-___ test_filter_entries_by_tag(arg, ret):
+___ test_filter_entries_by_tag(arg, ret
     entry = Entry(date=date(2016, 12, 22),
                   title='2016 py articles and useful books',
                   link='https://pybit.es/py-articles-books2016.html',
@@ -97,25 +97,25 @@ ___ test_filter_entries_by_tag(arg, ret):
 
 
 @patch("feedparser.parse", side_effect=[MOCK_ENTRIES])
-@patch("builtins.input", side_effect=['pycon', 'twitter', 'python', 'nonsense',
+@patch("builtins.input", side_effect= 'pycon', 'twitter', 'python', 'nonsense',
                                       'python|regex', 'python&regex', 'REGeX',
-                                      '', 'q'])
-___ test_main(entries, inp, capfd):
+                                      '', 'q' )
+___ test_main(entries, inp, capfd
     main()
     out, _ = capfd.readouterr()
 
     output = [line ___ line __ out.s..('\n') __ line.s..]
 
-    expected = ['0 entries matched', 'Twitter Digest 2018 Week 08',
+    expected =  '0 entries matched', 'Twitter Digest 2018 Week 08',
                 '1 entry matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',
                 '0 entries matched', 'Copy and Paste with Pyperclip',
                 'Twitter Digest 2018 Week 08', '2 entries matched',
                 'Twitter Digest 2018 Week 08', '1 entry matched',
                 'Twitter Digest 2018 Week 08', '1 entry matched',
-                'Please provide a search term', 'Bye']
+                'Please provide a search term', 'Bye'
 
     ... l..(output) __ l..(expected)
 
-    ___ line, exp __ z..(output, expected):
+    ___ line, exp __ z..(output, expected
         ... exp __ line

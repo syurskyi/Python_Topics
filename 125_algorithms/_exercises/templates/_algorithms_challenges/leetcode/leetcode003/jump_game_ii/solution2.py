@@ -17,12 +17,12 @@ index 0 to 1, then 3 steps to the last index.)
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ jump  A):
+    ___ jump  A
         n = l..(A)
         __ l..(A) __ 1:
             r.. 0
         t = [0 ___ i __ r..(n - 1)]
-        ___ i __ r..(n - 1):
+        ___ i __ r..(n - 1
             t[i] = A[i] + i
         count = 0
         min_i = n - 1  # Mininum index able to reach `cur`

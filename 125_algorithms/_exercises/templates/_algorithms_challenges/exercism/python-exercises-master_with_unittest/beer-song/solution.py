@@ -1,4 +1,4 @@
-___ song(first, last=0):
+___ song(first, last=0
     verses = ''
     ___ number __ r..(r..(last, first + 1)):
         verses += verse(number) + '\n'
@@ -6,7 +6,7 @@ ___ song(first, last=0):
     r.. verses
 
 
-___ verse(number):
+___ verse(number
     r.. ''.j..([
         "%s of beer on the wall, " % _bottles(number).capitalize(),
         "%s of beer.\n" % _bottles(number),
@@ -15,7 +15,7 @@ ___ verse(number):
     ])
 
 
-___ _action(current_verse):
+___ _action(current_verse
     __ current_verse __ 0:
         r.. "Go to the store and buy some more, "
     ____:
@@ -24,11 +24,11 @@ ___ _action(current_verse):
         )
 
 
-___ _next_bottle(current_verse):
+___ _next_bottle(current_verse
     r.. "%s of beer on the wall.\n" % _bottles(_next_verse(current_verse))
 
 
-___ _bottles(number):
+___ _bottles(number
     __ number __ 0:
         r.. 'no more bottles'
     __ number __ 1:
@@ -37,5 +37,5 @@ ___ _bottles(number):
         r.. '%d bottles' % number
 
 
-___ _next_verse(current_verse):
+___ _next_verse(current_verse
     r.. current_verse - 1 __ current_verse > 0 ____ 99

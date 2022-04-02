@@ -7,7 +7,7 @@ For example, given n = 3, a solution set is:
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ generateParenthesis  n):
+    ___ generateParenthesis  n
         """
         :param n: integer
         :return: list of string
@@ -16,7 +16,7 @@ c_ Solution:
         generateParenthesisDfs(result, "", n, n)
         r.. result
 
-    ___ generateParenthesisDfs  result, cur, left, right):
+    ___ generateParenthesisDfs  result, cur, left, right
         """
         DFS
         Catalan Number
@@ -38,4 +38,4 @@ c_ Solution:
 
 
 __ _____ __ ____
-    ... Solution().generateParenthesis(3)__['((()))', '(()())', '(())()', '()(())', '()()()']
+    ... Solution().generateParenthesis(3)__ '((()))', '(()())', '(())()', '()(())', '()()()'

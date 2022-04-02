@@ -5,23 +5,23 @@
 '''
 
 
-___ measure(bucket_one, bucket_two, goal, start_bucket):
+___ measure(bucket_one, bucket_two, goal, start_bucket
     sizes = [bucket_one, bucket_two]
     goalIndex = 0 __ start_bucket __ 'one' ____ 1
 
-    ___ empty(buckets, i):
+    ___ empty(buckets, i
         r.. [0, buckets[1]] __ i __ 0 ____ [buckets[0], 0]
 
-    ___ fill(buckets, i):
+    ___ fill(buckets, i
         r.. [sizes[0], buckets[1]] __ i __ 0 ____ [buckets[0], sizes[1]]
 
-    ___ consolidate(buckets, i):
+    ___ consolidate(buckets, i
         amount = m..(buckets[1 - i], sizes[i] - buckets[i])
         target = buckets[i] + amount
         src = buckets[1 - i] - amount
         r.. [target, src] __ i __ 0 ____ [src, target]
 
-    ___ bucket_str(buckets):
+    ___ bucket_str(buckets
         r.. '{},{}'.f..(*buckets)
 
     invalid = [0, 0]
@@ -37,17 +37,17 @@ ___ measure(bucket_one, bucket_two, goal, start_bucket):
         __ key != invalidStr a.. key n.. __ visited:
             visited.add(key)
             nc = count + 1
-            ___ i __ r..(2):
+            ___ i __ r..(2
                 __ buckets[i] != 0:
                     toVisit.a..((empty(buckets, i), nc))
                 __ buckets[i] != sizes[i]:
                     toVisit.a..((fill(buckets, i), nc))
                     toVisit.a..((consolidate(buckets, i), nc))
-        __ n.. any(toVisit):
+        __ n.. any(toVisit
             r.. ValueError('No more moves!')
         buckets, count = toVisit.pop(0)
 
     goalIndex = buckets.index(goal)
-    goalBucket = ['one', 'two'][goalIndex]
+    goalBucket =  'one', 'two' [goalIndex]
     otherBucket = buckets[1 - goalIndex]
     r.. (count, goalBucket, otherBucket)

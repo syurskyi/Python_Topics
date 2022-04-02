@@ -15,8 +15,8 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ lengthOfLIS  A):
+c_ Solution(o..
+    ___ lengthOfLIS  A
         """
         MIN: min of index last value of LIS of a particular length
         :type A: List[int]
@@ -49,7 +49,7 @@ c_ Solution(o..):
 
         r.. lo
 
-    ___ lengthOfLIS_output_all  A):
+    ___ lengthOfLIS_output_all  A
         """
         Maintain the result of LIS
         MIN: min of index last value of LIS of a particular length
@@ -65,7 +65,7 @@ c_ Solution(o..):
         RET = [-1 ___ _ __ x..(n)]
         l = 1
         MIN[l] = 0
-        ___ i __ x..(1, n):
+        ___ i __ x..(1, n
             __ A[i] > A[MIN[l]]:
                 l += 1
                 MIN[l] = i
@@ -90,7 +90,7 @@ c_ Solution(o..):
 
         r.. l
 
-    ___ lengthOfLIS_dp  A):
+    ___ lengthOfLIS_dp  A
         """
         dp
 
@@ -109,7 +109,7 @@ c_ Solution(o..):
         n = l..(A)
         F = [1 ___ _ __ x..(n)]
         maxa = 1
-        ___ i __ x..(1, n):
+        ___ i __ x..(1, n
             F[i] = m..(
                 F[j] + 1 __ A[i] > A[j] ____ 1
                 ___ j __ x..(i)

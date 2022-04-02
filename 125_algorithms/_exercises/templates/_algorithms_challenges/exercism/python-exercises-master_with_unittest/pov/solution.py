@@ -1,8 +1,8 @@
 ____ json _______ dumps
 
 
-c_ Tree(o..):
-    ___ - , label, children=[]):
+c_ Tree(o..
+    ___ - , label, children=[]
         label = label
         children = children
 
@@ -12,10 +12,10 @@ c_ Tree(o..):
     ___ __str__  indent_ N..
         r.. dumps(__dict__(), indent=indent)
 
-    ___ __lt__  other):
+    ___ __lt__  other
         r.. label < other.label
 
-    ___ __eq__  other):
+    ___ __eq__  other
         r.. __dict__() __ other.__dict__()
 
     ___ __iter__
@@ -27,21 +27,21 @@ c_ Tree(o..):
     ___ dup
         r.. Tree(label, [c.dup() ___ c __ children])
 
-    ___ add  other):
+    ___ add  other
         tree = dup()
         tree.children.a..(other)
         r.. tree
 
-    ___ remove  node):
+    ___ remove  node
         tree = dup()
-        ___ child __ l..(tree.children):
+        ___ child __ l..(tree.children
             tree.children.remove(child)
             __ child.label __ node:
                 _____
             tree.children.a..(child.remove(node))
         r.. tree
 
-    ___ from_pov  from_node):
+    ___ from_pov  from_node
         stack = [self]
         visited = s..()
         w.... stack:
@@ -55,7 +55,7 @@ c_ Tree(o..):
                 stack.a..(child.add(tree.remove(child.label)))
         r.. ValueError("Tree could not be reoriented")
 
-    ___ path_to  from_node, to_node):
+    ___ path_to  from_node, to_node
         reordered = from_pov(from_node)
         stack = reordered.children
         path = [from_node]

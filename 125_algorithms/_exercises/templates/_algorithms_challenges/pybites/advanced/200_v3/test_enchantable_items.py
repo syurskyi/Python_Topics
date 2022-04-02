@@ -54,7 +54,7 @@ mock_html = """
 """
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ enchantment_mock
     enchant = Enchantment(
         "python_developer",
@@ -65,28 +65,28 @@ ___ enchantment_mock
     r.. enchant
 
 
-@p__.f..(scope="module")
-___ item_mock(enchantment_mock):
+?p__.f..(scope="module")
+___ item_mock(enchantment_mock
     item = Item("clamytoe")
     r.. item
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ mock_soup
     r.. get_soup(mock_html)
 
 
-@p__.f..(scope="module")
-___ mock_data(mock_soup):
+?p__.f..(scope="module")
+___ mock_data(mock_soup
     r.. generate_enchantments(mock_soup)
 
 
-@p__.f..(scope="module")
-___ mocked_generate_items(mock_data):
+?p__.f..(scope="module")
+___ mocked_generate_items(mock_data
     r.. generate_items(mock_data)
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ coders_dataset
     soup = get_soup()
     mc_data = generate_enchantments(soup)
@@ -94,12 +94,12 @@ ___ coders_dataset
     r.. items
 
 
-___ test_enchantment_class(enchantment_mock):
+___ test_enchantment_class(enchantment_mock
     ... enchantment_mock.name __ "Python Developer"
     ... enchantment_mock.items __ []
 
 
-___ test_enchantment_class_add_items(enchantment_mock, item_mock):
+___ test_enchantment_class_add_items(enchantment_mock, item_mock
     enchantment_mock.items.a..(item_mock.name)
     ... l..(enchantment_mock.items) __ 1
     bob = Item("bob")
@@ -109,7 +109,7 @@ ___ test_enchantment_class_add_items(enchantment_mock, item_mock):
     ... enchantment_mock.max_level __ 10
 
 
-___ test_enchantment_class_print(enchantment_mock, capfd):
+___ test_enchantment_class_print(enchantment_mock, capfd
     print(enchantment_mock)
     output = ?.r .. 0].s..("\n")[0]
     ... (
@@ -118,18 +118,18 @@ ___ test_enchantment_class_print(enchantment_mock, capfd):
     )
 
 
-___ test_item_class(item_mock, enchantment_mock):
+___ test_item_class(item_mock, enchantment_mock
     item_mock.enchantments.a..(enchantment_mock)
     ... item_mock.enchantments[0].name __ "Python Developer"
 
 
-___ test_item_class_print(item_mock, capfd):
+___ test_item_class_print(item_mock, capfd
     print(item_mock)
     output = ?.r .. 0].s..
     ... output __ "Clamytoe: \n  [10] python_developer"
 
 
-___ test_enchantment_print(mock_data, capfd):
+___ test_enchantment_print(mock_data, capfd
     print(mock_data["channeling"])
     output = ?.r .. 0].s..("\n")[0]
     ... (
@@ -147,11 +147,11 @@ ___ test_enchantment_print(mock_data, capfd):
         ("channeling", 1),
     ],
 )
-___ test_roman_numeral_conversion(mock_data, enchant, expected):
+___ test_roman_numeral_conversion(mock_data, enchant, expected
     ... mock_data[enchant].max_level __ expected
 
 
-___ test_generate_enchantments_with_mock(mock_data):
+___ test_generate_enchantments_with_mock(mock_data
     ... isi..(mock_data, d..)
     ... l..(mock_data.keys()) __ 4
     ... (
@@ -177,7 +177,7 @@ ___ test_generate_enchantments_from_source
         ("trident", "Channeling"),
     ],
 )
-___ test_gen_items_mocked(mocked_generate_items, item, expected):
+___ test_gen_items_mocked(mocked_generate_items, item, expected
     ... mocked_generate_items[item].enchantments[0].name __ expected
 
 
@@ -245,7 +245,7 @@ ___ test_gen_items_mocked(mocked_generate_items, item, expected):
         ("trident", ["channeling", "impaling", "loyalty", "riptide"]),
     ],
 )
-___ test_gen_items(coders_dataset, item, expected):
+___ test_gen_items(coders_dataset, item, expected
     ... [enc.id_name ___ enc __ coders_dataset[item].enchantments] __ expected
 
 
@@ -290,7 +290,7 @@ ___ test_gen_items(coders_dataset, item, expected):
         ),
     ],
 )
-___ test_item_print(coders_dataset, item, expected, capfd):
+___ test_item_print(coders_dataset, item, expected, capfd
     print(coders_dataset[item])
     output = ?.r .. 0].s..
     ... output __ expected

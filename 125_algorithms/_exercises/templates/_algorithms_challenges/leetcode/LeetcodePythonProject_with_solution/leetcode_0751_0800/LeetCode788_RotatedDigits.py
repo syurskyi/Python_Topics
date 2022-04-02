@@ -3,19 +3,19 @@ Created on Apr 12, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ rotatedDigits  N):
+c_ Solution(o..
+    ___ rotatedDigits  N
         """
         :type N: int
         :rtype: int
         """
         cnt = 0
-        ___ num __ r..(1, N+1):
-            __ checkNum(num):
+        ___ num __ r..(1, N+1
+            __ checkNum(num
                 cnt += 1
         r.. cnt
     
-    ___ checkNum  num):
+    ___ checkNum  num
         arr = l..(s..(num))
         i, j = 0, l..(arr)-1
         arr0 = ['']*l..(arr)

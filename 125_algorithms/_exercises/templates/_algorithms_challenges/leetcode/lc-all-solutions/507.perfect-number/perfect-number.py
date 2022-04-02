@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ checkPerfectNumber  num):
+c_ Solution(o..
+  ___ checkPerfectNumber  num
     """
     :type num: int
     :rtype: bool

@@ -1,7 +1,7 @@
 ____ math _______ floor
 
 
-___ binary_search(sequence, target):
+___ binary_search(sequence, target
     left = 0
     right = l..(sequence) - 1
 

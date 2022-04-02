@@ -12,7 +12,7 @@ solving the Bite) to discuss your solution with fellow Pythonistas ... Have fun!
 '''
 
 
-___ count_indents_v1(text):
+___ count_indents_v1(text
     """Takes a string and counts leading white spaces, return int count"""
     n = 0
     ___ c __ text:
@@ -23,7 +23,7 @@ ___ count_indents_v1(text):
 
     r.. n
 
-___ count_indents_v2(s__ text):
+___ count_indents_v2(s__ text
 
 v1 = count_indents_v1("   test  ")
 print(f"v1: {v1}")

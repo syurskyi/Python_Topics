@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ validTree  n, edges):
+    ___ validTree  n, edges
         """
         :type n: int
         :type edges: list[int]
@@ -21,7 +21,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ find  nodes, a):
+    ___ find  nodes, a
         __ nodes[a] __ a:
             r.. a
 

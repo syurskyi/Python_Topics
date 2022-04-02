@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ fractionToDecimal  numerator, denominator):
+    ___ fractionToDecimal  numerator, denominator
         """
         The key is the remainder
         :type numerator: int
@@ -38,7 +38,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ frac  num, deno):
+    ___ frac  num, deno
         """
         real fraction part
         """
@@ -64,7 +64,7 @@ c_ Solution:
 
 
 c_ Solution_error:
-    ___ fractionToDecimal  numerator, denominator):
+    ___ fractionToDecimal  numerator, denominator
         """
         :type numerator: int
         :type denominator: int
@@ -80,7 +80,7 @@ c_ Solution_error:
 
         r.. ret
 
-    ___ frac  num, deno):
+    ___ frac  num, deno
         """
         real fraction part
         """
@@ -100,7 +100,7 @@ c_ Solution_error:
                 ret.insert(d[r]-(l-1), "(")
                 r.. "".j..(ret)
 
-            ___ _ __ x..(l-1):
+            ___ _ __ x..(l-1
                 ret.a..("0")
                 i += 1
 

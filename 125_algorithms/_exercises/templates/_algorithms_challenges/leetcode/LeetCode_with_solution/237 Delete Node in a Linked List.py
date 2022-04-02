@@ -8,13 +8,13 @@ __author__ = 'Daniel'
 
 
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 
 c_ Solution:
-    ___ deleteNode  node):
+    ___ deleteNode  node
         """
         Only access to the node to be deleted.
         :param node: ListNode

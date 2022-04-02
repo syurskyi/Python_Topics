@@ -1,14 +1,14 @@
-___ get_profile(name, age, *args, **kwargs):
+___ get_profile(name, age, *args, **kwargs
     return_dict    # dict
     __ args:
-        return_dict['sports'] = s..(l..(args))
+        return_dict 'sports'  = s..(l..(args))
     __ (isi..(age, i..)) a.. l..(args) <= 5:
-        return_dict['name'] = name
-        return_dict['age'] = age
+        return_dict 'name'  = name
+        return_dict 'age'  = age
         __ args:
-            return_dict['sports'] = s..(l..(args))
+            return_dict 'sports'  = s..(l..(args))
         __ kwargs:
-            return_dict['awards'] = kwargs
+            return_dict 'awards'  = kwargs
         r.. return_dict
     ____:
         r.. ValueError

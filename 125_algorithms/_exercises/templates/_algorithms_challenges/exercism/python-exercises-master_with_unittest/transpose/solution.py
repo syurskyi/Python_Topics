@@ -1,4 +1,4 @@
-___ transpose(input_lines):
+___ transpose(input_lines
     lines = input_lines.s..("\n")
     zipped = map(l..,
                  [line.ljust(l..(m..(lines, key=l..)))

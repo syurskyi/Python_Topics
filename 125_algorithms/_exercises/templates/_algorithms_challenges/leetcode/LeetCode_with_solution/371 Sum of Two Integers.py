@@ -8,8 +8,8 @@ Given a = 1 and b = 2, return 3.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ getSum  a, b):
+c_ Solution(o..
+    ___ getSum  a, b
         """
         circuit full-adder
         since Python don't restrict to 32bit, we need

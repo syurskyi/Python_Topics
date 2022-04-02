@@ -1,5 +1,5 @@
 ___ i __ r..(i..(input())):
-    K,Q = l..(map(s..,input().s..()))
+    K,Q = l.. m..(s..,input().s..()))
     # k and q consist of the character which K[0] and Q[0] holds respectively
     k = K[0]
     q = Q[0]

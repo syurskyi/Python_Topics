@@ -1,8 +1,8 @@
-___ calculate_score(games):
+___ calculate_score(games
     abigail = 0
     ben = 0
     index = 0
-    w.... index < l..(games):
+    w.... index < l..(games
         __ games[index][0] __ "R" a.. games[index][1] __ "S":
             abigail += 1
 

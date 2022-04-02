@@ -6,8 +6,8 @@ Note: The numbers can be arbitrarily large and are non-negative.
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ multiply  num1, num2):
+c_ Solution(o..
+    ___ multiply  num1, num2
         """
         Google Phone Interview Question, 20 Sep 2013
         Steps:
@@ -27,7 +27,7 @@ c_ Solution(o..):
         result    # list
 
         # pre processing
-        __ l..(num1) > l..(num2):  # order them first
+        __ l..(num1) > l..(num2  # order them first
             r.. multiply(num2, num1)
 
         # reverse them first
@@ -43,12 +43,12 @@ c_ Solution(o..):
 
         # post processing
         lst.r..  # reverse back
-        result = "".j..(map(s.., lst)).lstrip("0")
+        result = "".j.. m..(s.., lst)).lstrip("0")
         __ n.. result:
             r.. "0"
         r.. result
 
-    ___ multiply_1_digit  digit, num):
+    ___ multiply_1_digit  digit, num
         """
         :param digit: String
         :param num: String
@@ -68,7 +68,7 @@ c_ Solution(o..):
 
         r.. ret
 
-    ___ add_list  lst):
+    ___ add_list  lst
         """
         add lst of string
         :param lst:
@@ -76,20 +76,20 @@ c_ Solution(o..):
         """
         sig = 0
         ret = [0]
-        ___ ind, val __ e..(lst):
-            ___ i __ x..(sig): val.insert(0, 0)  # possible deque
+        ___ ind, val __ e..(lst
+            ___ i __ x..(sig val.insert(0, 0)  # possible deque
             ret = add(ret, val)
             sig += 1
         r.. ret
 
-    ___ add  num1, num2):
+    ___ add  num1, num2
         """
         :param num1: list of digits in reverse order
         :param num2: list of digits in reverse order
         :return: list of digits in reverse order
         """
 
-        __ l..(num1) > l..(num2):
+        __ l..(num1) > l..(num2
             r.. add(num2, num1)
 
         ret    # list

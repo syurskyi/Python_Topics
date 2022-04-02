@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minSubArrayLen  target, nums):
+c_ Solution(o..
+  ___ minSubArrayLen  target, nums
     """
     :type target: int
     :type nums: List[int]

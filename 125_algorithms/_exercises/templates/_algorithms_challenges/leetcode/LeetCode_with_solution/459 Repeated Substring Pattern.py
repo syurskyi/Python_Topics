@@ -8,7 +8,7 @@ not exceed 10000.
 
 
 c_ Solution:
-    ___ repeatedSubstringPattern  s):
+    ___ repeatedSubstringPattern  s
         """
         The start of the substring is always 0, then incr the ending index e
         until n/2 where n = len(s)
@@ -30,7 +30,7 @@ c_ Solution:
         """
         r.. s __ (s + s)[1:-1]
 
-    ___ repeatedSubstringPattern_error  s):
+    ___ repeatedSubstringPattern_error  s
         """
         Two pointers algorithm. The start of the substring is always 0
         :type s: str
@@ -41,7 +41,7 @@ c_ Solution:
         p1 = 0
         e = 1  # ending s[0:e] is the substring
         p2 = 1
-        w.... p2 < l..(s):
+        w.... p2 < l..(s
             __ s[p1] __ s[p2]:
                 p1 += 1
                 __ p1 __ e:

@@ -8,7 +8,7 @@ c_ Solution:
     2. keep simulate the process and divide the probability
     3. sum the values
     """
-    ___ knightProbability  n, k, r, c):
+    ___ knightProbability  n, k, r, c
         """
         :type n: int
         :type k: int
@@ -19,11 +19,11 @@ c_ Solution:
         dp = c...defaultdict(i..)
         dp[r, c] = 1.0
 
-        ___ _ __ r..(k):
+        ___ _ __ r..(k
             nxt = c...defaultdict(i..)
 
-            ___ x __ r..(n):
-                ___ y __ r..(n):
+            ___ x __ r..(n
+                ___ y __ r..(n
                     ___ dx, dy __ (
                         (-1, -2),
                         ( 1, -2),
@@ -33,11 +33,11 @@ c_ Solution:
                         ( 2,  1),
                         (-1,  2),
                         ( 1,  2),
-                    ):
+
                         _x = x + dx
                         _y = y + dy
 
-                        __ n.. (0 <= _x < n a.. 0 <= _y < n):
+                        __ n.. (0 <= _x < n a.. 0 <= _y < n
                             _____
 
                         nxt[_x, _y] += dp[x, y] / 8.0
@@ -51,7 +51,7 @@ c_ Solution:
     """
     BFS: TLE
     """
-    ___ knightProbability  n, k, r, c):
+    ___ knightProbability  n, k, r, c
         """
         :type n: int
         :type k: int
@@ -79,11 +79,11 @@ c_ Solution:
                     ( 2,  1),
                     (-1,  2),
                     ( 1,  2),
-                ):
+
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < n a.. 0 <= _y < n):
+                    __ n.. (0 <= _x < n a.. 0 <= _y < n
                         _____
 
                     __ k __ 0:

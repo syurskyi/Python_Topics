@@ -13,25 +13,25 @@ bracket_2020 = [
 ]
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ taxes_2019
     income = 40_000
     r.. Taxes(income)
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ taxes_2020_low
     income = 8_000
     r.. Taxes(income, bracket_2020)
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ taxes_2020_over
     income = 1_000_000
     r.. Taxes(income, bracket_2020)
 
 
-___ test_values(taxes_2019):
+___ test_values(taxes_2019
     ... taxes_2019.income __ 40_000
     ... taxes_2019.total __ 4_658.50
     ... taxes_2019.tax_rate __ 11.65
@@ -39,25 +39,25 @@ ___ test_values(taxes_2019):
     ... isi..(taxes_2019.bracket[0], Bracket)
 
 
-___ test_taxes(taxes_2019):
+___ test_taxes(taxes_2019
     ... l..(taxes_2019.tax_amounts) __ 3
     ... isi..(taxes_2019.tax_amounts[0], Taxed)
     ... taxes_2019.tax_amounts[2].tax __ 115.50
 
 
-___ test_summary(taxes_2019):
-    output = s..(taxes_2019).splitlines()
+___ test_summary(taxes_2019
+    output = s..(taxes_2019).s..
     ... l..(output) __ 5
     ... "Summary Report" __ output[0]
 
 
-___ test_low_income(taxes_2020_low):
+___ test_low_income(taxes_2020_low
     ... taxes_2020_low.taxes __ 800.00
 
 
-___ test_report(taxes_2020_over, capfd):
+___ test_report(taxes_2020_over, capfd
     taxes_2020_over.report()
-    output = ?.r .. 0].s...splitlines()
+    output = ?.r .. 0].s...s..
     ... l..(output) __ 17
     ... "Summary Report" __ output[0]
     ... "Taxes Breakdown" __ output[6]

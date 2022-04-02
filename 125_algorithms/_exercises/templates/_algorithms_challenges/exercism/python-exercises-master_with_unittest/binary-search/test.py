@@ -3,7 +3,7 @@ _______ unittest
 ____ binary_search _______ binary_search
 
 
-c_ BinarySearchTests(unittest.TestCase):
+c_ BinarySearchTests(unittest.TestCase
     ___ test_finds_value_in_array_with_one_element
         assertEqual(binary_search([6], 6), 0)
 

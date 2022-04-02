@@ -13,8 +13,8 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-c_ Solution(o..):
-    ___ productExceptSelf  nums):
+c_ Solution(o..
+    ___ productExceptSelf  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -22,14 +22,14 @@ c_ Solution(o..):
         n = l..(nums)
         res = [1 ___ i __ r..(n)]
         # Scan from left to right
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             # i is from 1 to n - 1
             # res[i] is the product accumulated to the left
             res[i] = res[i - 1] * nums[i - 1]
 
         # right_product is the product accumulated to the right
         right_product = 1
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             # j ranges from i - 2 to 0
             j = n - 1 - i
             right_product *= nums[j + 1]

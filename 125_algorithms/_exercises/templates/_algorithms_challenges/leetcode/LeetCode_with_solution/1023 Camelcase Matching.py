@@ -49,10 +49,10 @@ c_ Solution:
             
         r.. ret
 
-    ___ m..  q, p):
+    ___ m..  q, p
         i = 0
         j = 0
-        w.... i < l..(q) a.. j < l..(p):
+        w.... i < l..(q) a.. j < l..(p
             __ q[i] __ p[j]:
                 i += 1
                 j += 1

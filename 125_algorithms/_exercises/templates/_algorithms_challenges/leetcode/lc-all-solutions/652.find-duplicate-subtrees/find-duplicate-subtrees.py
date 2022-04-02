@@ -5,15 +5,15 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ findDuplicateSubtrees  root):
+c_ Solution(o..
+  ___ findDuplicateSubtrees  root
     ____ hashlib _______ sha256
-    ___ hash_(x):
+    ___ hash_(x
       S = sha256()
       S.update(x)
       r.. S.hexdigest()
 
-    ___ merkle(node):
+    ___ merkle(node
       __ n.. node:
         r.. '#'
       m_left = merkle(node.left)

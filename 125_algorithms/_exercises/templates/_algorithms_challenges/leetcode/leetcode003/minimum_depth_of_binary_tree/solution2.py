@@ -8,7 +8,7 @@
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ minDepth  root):
+    ___ minDepth  root
         __ root __ N..
             r.. 0
         # BFS

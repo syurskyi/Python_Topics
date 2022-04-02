@@ -4,8 +4,8 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minMoves2  nums):
+c_ Solution(o..
+    ___ minMoves2  nums
         __ n.. nums: r.. 0
         nums.s..()
         left, right = 0, l..(nums)-1

@@ -32,7 +32,7 @@ Test Case:
 
 
 c_ Solution:
-    ___ strStr2  S, T):
+    ___ strStr2  S, T
         """
         :type S: List[str]
         :type T: List[str]
@@ -57,7 +57,7 @@ c_ Solution:
 
         p = 1  # `p == MG ** (n - 1)`
         tcode = 0  # the code of T
-        ___ i __ r..(n):
+        ___ i __ r..(n
             tcode = (tcode * MG + o..(T[i]) - A) % MOD
 
             __ i __ 0:
@@ -68,7 +68,7 @@ c_ Solution:
             p = (p * MG) % MOD
 
         _code = 0
-        ___ i __ r..(m):
+        ___ i __ r..(m
             """
             kick out `S[i - n]`
             """

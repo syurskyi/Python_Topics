@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ getSingleNumber  nums):
+    ___ getSingleNumber  nums
         """
         :type nums: list[int]
         :rtype: int
@@ -26,7 +26,7 @@ c_ Solution:
                 ____:
                     left = mid
 
-        ___ mid __ (left, right):
+        ___ mid __ (left, right
             __ mid > 0 a.. nums[mid] __ nums[mid - 1]:
                 _____
             __ mid + 1 < n a.. nums[mid] __ nums[mid + 1]:

@@ -15,18 +15,18 @@ __author__ = 'Danyang'
 
 
 # Definition for a  binary tree node
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         cache    # dict
 
-    ___ generateTrees  n):
+    ___ generateTrees  n
         """
         dfs
         Catalan
@@ -38,7 +38,7 @@ c_ Solution(o..):
 
         r.. generate_cache(1, n)
 
-    ___ generate_cache  start, end):
+    ___ generate_cache  start, end
         """80ms"""
         __ (start, end) n.. __ cache:
             roots    # list
@@ -46,7 +46,7 @@ c_ Solution(o..):
                 roots.a..(N..)
                 r.. roots
 
-            ___ pivot __ r..(start, end+1):
+            ___ pivot __ r..(start, end+1
                 left_roots = generate_cache(start, pivot-1)
                 right_roots = generate_cache(pivot+1, end)
                 ___ left_root __ left_roots:
@@ -61,7 +61,7 @@ c_ Solution(o..):
 
         r.. cache[(start, end)]
 
-    ___ generate  start, end):
+    ___ generate  start, end
         """
         dfs (cache possible)
         100 ms
@@ -81,7 +81,7 @@ c_ Solution(o..):
 
         # pivot
         # list of unique subtrees = list of unique left subtrees, pivot, list of unique right subtrees
-        ___ pivot __ r..(start, end+1):
+        ___ pivot __ r..(start, end+1
             left_subtree_roots = generate(start, pivot-1)
             right_subtree_roots = generate(pivot+1, end)
 

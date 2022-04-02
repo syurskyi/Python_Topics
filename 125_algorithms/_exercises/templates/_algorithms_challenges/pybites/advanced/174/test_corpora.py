@@ -45,24 +45,24 @@ And that is how our tax system works.  The people who already pay the highest ta
 EXTRA_CHAR = ["—", "\n", "  "]
 
 
-@p__.f..
+?p__.f..
 ___ getty
     r.. Corpora(GETTYSBURG)
 
 
-@p__.f..
+?p__.f..
 ___ beer_tax
     r.. Corpora(TAX_SYSTEM_IN_US)
 
 
-___ test_cleanup_text(getty):
+___ test_cleanup_text(getty
     cleaned = getty.cleaned
     ... l..(cleaned) __ 1419
     ___ char __ EXTRA_CHAR[:2]:
         ... char __ cleaned
 
 
-___ test_cleanup_text_one_extra_char(getty):
+___ test_cleanup_text_one_extra_char(getty
     getty.extra = [EXTRA_CHAR[0]]
     cleaned = getty.cleaned
     ... l..(cleaned) __ 1419
@@ -70,7 +70,7 @@ ___ test_cleanup_text_one_extra_char(getty):
     ... EXTRA_CHAR[1] __ cleaned
 
 
-___ test_cleanup_text_multiple_extra_char(getty):
+___ test_cleanup_text_multiple_extra_char(getty
     getty.extra = EXTRA_CHAR
     cleaned = getty.cleaned
     ... l..(cleaned) __ 1416
@@ -78,13 +78,13 @@ ___ test_cleanup_text_multiple_extra_char(getty):
         ... char n.. __ cleaned
 
 
-___ test_cleanup_text_alt_text(beer_tax):
+___ test_cleanup_text_alt_text(beer_tax
     cleaned = beer_tax.cleaned
     ... l..(cleaned) __ 2762
     ... "$" n.. __ cleaned
 
 
-___ test_word_metrics_gettysburg_default(getty):
+___ test_word_metrics_gettysburg_default(getty
     expected = [
         ("nation", 5),
         ("dedicated", 4),
@@ -95,18 +95,18 @@ ___ test_word_metrics_gettysburg_default(getty):
     ... getty.metrics __ expected
 
 
-___ test_word_metrics_beer_tax(beer_tax):
+___ test_word_metrics_beer_tax(beer_tax
     expected = [("pay", 13), ("would", 12), ("men", 8), ("paid", 7), ("man", 7)]
     ... beer_tax.metrics __ expected
 
 
-___ test_word_metrics_with_word_removed(beer_tax):
+___ test_word_metrics_with_word_removed(beer_tax
     expected = [("pay", 13), ("would", 12), ("paid", 7), ("bill", 6), ("saving", 6)]
     beer_tax.extra = ["men", "man"]
     ... beer_tax.metrics __ expected
 
 
-___ test_graph_gettysburgh(getty, capfd):
+___ test_graph_gettysburgh(getty, capfd
     expected = [
         "    nation #####",
         " dedicated ####",
@@ -116,11 +116,11 @@ ___ test_graph_gettysburgh(getty, capfd):
     ]
     getty.extra = EXTRA_CHAR
     getty.graph
-    output = ?.r .. 0].splitlines()
+    output = ?.r .. 0].s..
     ... output __ expected
 
 
-___ test_graph_beer_tax(beer_tax, capfd):
+___ test_graph_beer_tax(beer_tax, capfd
     expected = [
         "       pay #############",
         "     would ############",
@@ -135,11 +135,11 @@ ___ test_graph_beer_tax(beer_tax, capfd):
     ]
     beer_tax.count = 10
     beer_tax.graph
-    output = ?.r .. 0].splitlines()
+    output = ?.r .. 0].s..
     ... output __ expected
 
 
-___ test_graph_beer_tax_asterisk(beer_tax, capfd):
+___ test_graph_beer_tax_asterisk(beer_tax, capfd
     expected = [
         "       pay *************",
         "     would ************",
@@ -149,5 +149,5 @@ ___ test_graph_beer_tax_asterisk(beer_tax, capfd):
     ]
     beer_tax.tag = "*"
     beer_tax.graph
-    output = ?.r .. 0].splitlines()
+    output = ?.r .. 0].s..
     ... output __ expected

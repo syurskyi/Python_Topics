@@ -2,7 +2,7 @@
 # Score: 20
 
 
-___ pickingNumbers(arr):
+___ pickingNumbers(arr
     result = 0
     checked = s..()
     ___ i __ r..(l..(arr)):
@@ -15,6 +15,6 @@ ___ pickingNumbers(arr):
 
 
 n = i..(input().strip())
-arr = l..(map(i.., input().s...s..(' ')))
+arr = l.. m..(i.., input().s...s..(' ')))
 result = pickingNumbers(arr)
 print(result)

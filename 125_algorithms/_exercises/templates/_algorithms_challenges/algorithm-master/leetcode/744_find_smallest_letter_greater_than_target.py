@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ nextGreatestLetter  L, target):
+    ___ nextGreatestLetter  L, target
         """
         :type L: List[str]
         :type target: str

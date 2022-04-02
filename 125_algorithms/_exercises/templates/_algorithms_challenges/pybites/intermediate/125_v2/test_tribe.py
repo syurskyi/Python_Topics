@@ -3,13 +3,13 @@ _______ p__
 ____ tribe _______ get_top_books, load_page
 
 
-@p__.f..(scope='module')
+?p__.f..(scope='module')
 ___ content
     """Load content once for all test"""
     r.. load_page()
 
 
-___ test_return(content):
+___ test_return(content
     books = get_top_books(content=content)
     ... l..(books) __ 16
     ... t..(books) __ l..
@@ -35,6 +35,6 @@ ___ test_return(content):
   ('Song of Solomon', 3),
   ('The Alchemist', 3),
 ])
-___ test_counts(content, title, count):
+___ test_counts(content, title, count
     books = get_top_books(content=content)
     ... (title, count) __ books

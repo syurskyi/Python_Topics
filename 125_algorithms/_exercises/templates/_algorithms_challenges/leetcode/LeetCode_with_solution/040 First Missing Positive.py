@@ -9,7 +9,7 @@ Your algorithm should run in O(n) time and uses constant space.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ firstMissingPositive  A):
+    ___ firstMissingPositive  A
         """
         Bucket Sort without extra space
         O(n)
@@ -32,7 +32,7 @@ c_ Solution:
                 A[current-1], A[i] = current, A[current-1]   # go to the next iteration
 
 
-        ___ i __ x..(length):
+        ___ i __ x..(length
             __ A[i]!=i+1:
                 r.. i+1
         r.. A[-1]+1

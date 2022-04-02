@@ -5,14 +5,14 @@ Created on Aug 20, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ boundaryOfBinaryTree  root):
+c_ Solution(o..
+    ___ boundaryOfBinaryTree  root
         """
         :type root: TreeNode
         :rtype: List[int]
@@ -25,7 +25,7 @@ c_ Solution(o..):
         rightBoundary = getRight(root)
         r.. leftBoundary + leaves + rightBoundary
     
-    ___ getLeft  root):
+    ___ getLeft  root
         result = [root.val]
         root = root.left
         w.... root:
@@ -37,7 +37,7 @@ c_ Solution(o..):
                 root = root.right
         r.. result
     
-    ___ getLeaves  root, leaves):
+    ___ getLeaves  root, leaves
         __ n.. root: r..
         __ n.. root.left a.. n.. root.right:
             leaves.a..(root.val)
@@ -45,7 +45,7 @@ c_ Solution(o..):
         getLeaves(root.left, leaves)
         getLeaves(root.right, leaves)
     
-    ___ getRight  root):
+    ___ getRight  root
         result    # list
         root = root.right
         w.... root:

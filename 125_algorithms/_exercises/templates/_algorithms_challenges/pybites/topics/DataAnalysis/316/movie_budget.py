@@ -4,7 +4,7 @@ ____ c.. _______ defaultdict
 
 
 
-c_ MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple
     title: s..
     price: i..
     date: date
@@ -34,7 +34,7 @@ ___ rent_or_stream(
     return_dict = defaultdict(s..)
     ___ movie __ renting_history:
         month_rental[getattr(movie,'date').s..("%Y-%m")] += getattr(movie,'price')
-    ___ total_month __ s..(month_rental):
+    ___ total_month __ s..(month_rental
         __ month_rental[total_month] > STREAMING_COST_PER_MONTH:
             return_dict[total_month] = STREAM
         ____:

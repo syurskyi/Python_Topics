@@ -20,7 +20,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ isIsomorphic  s, t):
+    ___ isIsomorphic  s, t
         """
 
         :param s:

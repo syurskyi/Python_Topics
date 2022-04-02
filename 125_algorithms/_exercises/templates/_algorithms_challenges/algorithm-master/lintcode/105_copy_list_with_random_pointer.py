@@ -14,7 +14,7 @@ time: O(2n) => O(n)
 space: O(n)
 """
 c_ Solution:
-    ___ copyRandomList  head):
+    ___ copyRandomList  head
         """
         :type head: RandomListNode
         :rtype: RandomListNode
@@ -61,7 +61,7 @@ split_list/
          |--------->|
 """
 c_ Solution:
-    ___ copyRandomList  head):
+    ___ copyRandomList  head
         """
         :type head: RandomListNode
         :rtype: RandomListNode

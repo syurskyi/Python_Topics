@@ -48,7 +48,7 @@ ___ my_sum_numbers(numbers_ N..
         ___ item __ numbers:
             result += item
         r.. result
-    ___ i __ r..(101):
+    ___ i __ r..(101
         result += i
     r.. result
 

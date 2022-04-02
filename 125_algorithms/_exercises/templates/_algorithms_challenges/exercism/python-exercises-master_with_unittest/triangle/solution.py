@@ -1,9 +1,9 @@
-c_ TriangleError(E..):
+c_ TriangleError(E..
     p..
 
 
-c_ Triangle(o..):
-    ___ - , x, y, z):
+c_ Triangle(o..
+    ___ - , x, y, z
         sides = (x, y, z)
 
         __ _invalid_lengths() o. _violates_inequality

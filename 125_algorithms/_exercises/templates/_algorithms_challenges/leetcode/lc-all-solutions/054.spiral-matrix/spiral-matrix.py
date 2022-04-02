@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ spiralOrder  matrix):
+c_ Solution(o..
+  ___ spiralOrder  matrix
     """
     :type matrix: List[List[int]]
     :rtype: List[int]
@@ -9,10 +9,10 @@ c_ Solution(o..):
     ans    # list
     left, up, down, right = 0, 0, l..(matrix) - 1, l..(matrix[0]) - 1
     w.... left <= right a.. up <= down:
-      ___ i __ r..(left, right + 1):
+      ___ i __ r..(left, right + 1
         ans += matrix[up][i],
       up += 1
-      ___ i __ r..(up, down + 1):
+      ___ i __ r..(up, down + 1
         ans += matrix[i][right],
       right -= 1
       ___ i __ r..(r..(left, right + 1)):

@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ hammingWeight  n):
+    ___ hammingWeight  n
         """
         /2 and %2
         """

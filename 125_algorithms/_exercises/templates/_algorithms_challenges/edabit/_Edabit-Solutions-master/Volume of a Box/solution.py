@@ -1,4 +1,4 @@
-___ volume_of_box(sizes):
+___ volume_of_box(sizes
     index = 0
     output = 1
     ___ i __ sizes:

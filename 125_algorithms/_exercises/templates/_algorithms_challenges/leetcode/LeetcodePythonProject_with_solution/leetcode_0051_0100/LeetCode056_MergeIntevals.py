@@ -5,8 +5,8 @@ Created on Jan 21, 2017
 '''
 
 # Definition for an interval.
-c_ Interval(o..):
-    ___ - , s=0, e=0):
+c_ Interval(o..
+    ___ - , s=0, e=0
         start = s
         end = e
     
@@ -16,8 +16,8 @@ c_ Interval(o..):
     ___  -r
         r.. __str__()
 
-c_ Solution(o..):
-    ___ merge  intervals):
+c_ Solution(o..
+    ___ merge  intervals
         """
         :type intervals: List[Interval]
         :rtype: List[Interval]
@@ -26,11 +26,11 @@ c_ Solution(o..):
         intervals.s..(key=l.... interval: interval.start)
         result    # list
         i = 0
-        w.... i < l..(intervals):
+        w.... i < l..(intervals
             curr = intervals[i]
             nextEnd = curr.end
             j = i+1
-            w.... j < l..(intervals):
+            w.... j < l..(intervals
                 __ intervals[j].start > nextEnd:
                     _____
                 ____:

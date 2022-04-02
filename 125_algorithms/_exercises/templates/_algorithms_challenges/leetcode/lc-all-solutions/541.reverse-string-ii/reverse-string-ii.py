@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ reverseStr  s, k):
+c_ Solution(o..
+  ___ reverseStr  s, k
     """
     :type s: str
     :type k: int

@@ -9,7 +9,7 @@ Return true because "leetcode" can be segmented as "leet code".
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ wordBreak_TLE  s, d..):
+    ___ wordBreak_TLE  s, d..
         """
         TLE
         dfs
@@ -30,7 +30,7 @@ c_ Solution:
             string_builder += s[i]
             __ string_builder __ d..:
                 ___
-                    __ wordBreak_TLE(s[i+1:], d..):
+                    __ wordBreak_TLE(s[i+1:], d..
                         r.. T..
                     ____:
                         _____
@@ -39,7 +39,7 @@ c_ Solution:
 
         r.. F..
 
-    ___ wordBreak  s, d..):
+    ___ wordBreak  s, d..
         """
          __       __________   ___  __    ______   ______   .__   __.      _______.
         |  |     |   ____\  \ /  / |  |  /      | /  __  \  |  \ |  |     /       |

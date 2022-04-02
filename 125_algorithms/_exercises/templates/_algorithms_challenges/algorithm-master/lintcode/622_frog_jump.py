@@ -2,7 +2,7 @@
 BFS
 """
 c_ Solution:
-    ___ canCross  stones):
+    ___ canCross  stones
         """
         :type stones: List[int]
         :rtype: bool
@@ -19,7 +19,7 @@ c_ Solution:
         visited = s..(queue)
 
         ___ pos, k __ queue:
-            ___ x __ (k - 1, k, k + 1):
+            ___ x __ (k - 1, k, k + 1
                 __ x <= 0 o. pos + x n.. __ xs:
                     _____
                 __ (pos + x, x) __ visited:
@@ -37,7 +37,7 @@ c_ Solution:
 DP
 """
 c_ Solution:
-    ___ canCross  stones):
+    ___ canCross  stones
         """
         :type stones: List[int]
         :rtype: bool

@@ -1,13 +1,13 @@
 _______ __
 
 
-___ fix_translation(org_text, trans_text):
+___ fix_translation(org_text, trans_text
     """Receives original English text as well as text returned by translator.
        Parse trans_text restoring the original (English) code (wrapped inside
        code and pre tags) into it. Return the fixed translation str
     """
 
-    tags = ['code','pre']
+    tags =  'code','pre'
     ___ tag __ tags:
         opening = '<' + tag + '>'
         closing = '</' + tag + '>'
@@ -18,7 +18,7 @@ ___ fix_translation(org_text, trans_text):
         print(trans)
 
 
-        ___ original_value,trans_value __ z..(original,trans):
+        ___ original_value,trans_value __ z..(original,trans
             trans_text = trans_text.r..(trans_value,original_value)
 
 

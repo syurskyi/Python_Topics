@@ -14,13 +14,13 @@ urlretrieve(
     holidays_page
 )
 
-w__ open(holidays_page) __ f:
-    content = f.read()
+w__ o.. holidays_page) __ f:
+    content = f.r..
 
 holidays = defaultdict(l..)
 
 
-___ _parse_date(date: s..):
+___ _parse_date(date: s..
     """returns a datetime from parsing dates as formatted in table"""
     r.. d__.strptime(date.s.. [0], '%Y-%m-%d%B')
 
@@ -37,13 +37,13 @@ ___ _get_table(content=content) __ l..:
     r.. table
 
 
-___ get_us_bank_holidays(content=content):
+___ get_us_bank_holidays(content=content
     """Receive scraped html output, make a BS object, parse the bank
        holiday table (css class = list-table), and return a dict of
        keys -> months and values -> list of bank holidays"""
     table = _get_table()
 
     ___ row __ table:
-        holidays[f'{row[1].month:02d}'].a..(row[3].strip())
+        holidays[f'{row[1].month:02d}' .a..(row[3].strip())
 
     r.. holidays

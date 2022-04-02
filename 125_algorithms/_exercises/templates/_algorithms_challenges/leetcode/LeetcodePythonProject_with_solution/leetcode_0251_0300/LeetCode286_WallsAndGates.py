@@ -4,20 +4,20 @@ Created on Mar 7, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ wallsAndGates  rooms):
+c_ Solution(o..
+    ___ wallsAndGates  rooms
         """
         :type rooms: List[List[int]]
         :rtype: void Do not return anything, modify rooms in-place instead.
         """
         __ n.. rooms: r..
         m, n = l..(rooms), l..(rooms[0])
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ rooms[i][j] __ 0:
                     bfs(rooms, i, j)
     
-    ___ bfs  rooms, i, j):
+    ___ bfs  rooms, i, j
         m, n = l..(rooms), l..(rooms[0])
         queue = [(i, j, 0)]
         w.... queue:

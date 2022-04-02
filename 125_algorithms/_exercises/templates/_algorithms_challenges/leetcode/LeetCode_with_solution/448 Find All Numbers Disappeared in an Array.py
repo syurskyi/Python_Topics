@@ -9,7 +9,7 @@ Could you do it without extra space and in O(n) runtime? You may assume the retu
 
 
 c_ Solution:
-    ___ findDisappearedNumbers  A):
+    ___ findDisappearedNumbers  A
         """
         You can use hash map with extra space O(n).
         To use without extra space, notice the additional constraints that:
@@ -27,7 +27,7 @@ c_ Solution:
                 A[idx], A[target] = A[target], A[idx]
 
         missing    # list
-        ___ idx, elm __ e..(A):
+        ___ idx, elm __ e..(A
             __ idx != elm - 1:
                 missing.a..(idx + 1)
         r.. missing

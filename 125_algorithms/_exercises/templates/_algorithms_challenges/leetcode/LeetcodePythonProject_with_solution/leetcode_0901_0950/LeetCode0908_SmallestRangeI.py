@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ smallestRangeI  A, K):
+c_ Solution(o..
+    ___ smallestRangeI  A, K
         """
         :type A: List[int]
         :type K: int
@@ -7,7 +7,7 @@ c_ Solution(o..):
         """
         r.. m..(m..(A)-m..(A)-2*K, 0)
 
-    ___ smallestRangeI_own  A, K):
+    ___ smallestRangeI_own  A, K
         """
         :type A: List[int]
         :type K: int

@@ -3,9 +3,9 @@ Created on Sep 13, 2017
 
 @author: MT
 '''
-c_ Excel(o..):
+c_ Excel(o..
 
-    ___ - , H, W):
+    ___ - , H, W
         """
         :type H: int
         :type W: str
@@ -15,7 +15,7 @@ c_ Excel(o..):
         matrix = [[0]*n ___ _ __ r..(m)]
         hashmap    # dict
 
-    ___ s..  r, c, v):
+    ___ s..  r, c, v
         """
         :type r: int
         :type c: str
@@ -31,7 +31,7 @@ c_ Excel(o..):
         __ (i, j) __ hashmap:
             del hashmap[(i, j)]
 
-    ___ get  r, c):
+    ___ get  r, c
         """
         :type r: int
         :type c: str
@@ -40,7 +40,7 @@ c_ Excel(o..):
         i, j = r-1, o..(c)-o..('A')
         r.. matrix[i][j]
 
-    ___ s..  r, c, strs):
+    ___ s..  r, c, strs
         """
         :type r: int
         :type c: str
@@ -70,8 +70,8 @@ c_ Excel(o..):
                 y0 = o..(arr[0][0])-o..('A')
                 x1 = i..(arr[1][1:])-1
                 y1 = o..(arr[1][0])-o..('A')
-                ___ i0 __ r..(x0, x1+1):
-                    ___ j0 __ r..(y0, y1+1):
+                ___ i0 __ r..(x0, x1+1
+                    ___ j0 __ r..(y0, y1+1
                         vals.a..((i0, j0))
                         sumVal += matrix[i0][j0]
         hashmap[(i, j)] = vals
@@ -81,7 +81,7 @@ c_ Excel(o..):
 __ _____ __ _____
     excel = Excel(3, 'C')
     excel.s..(1, 'A', 2)
-    print(excel.s..(3, 'C', ['A1', 'A1:B2']))
+    print(excel.s..(3, 'C',  'A1', 'A1:B2' ))
     excel.s..(2, 'B', 2)
     print(excel.get(3, 'C'))
     print('-='*10+'-')
@@ -90,14 +90,14 @@ __ _____ __ _____
     print(excel.get(1, 'A'))
     print(excel.s..(1, 'A', 1))
     print(excel.get(1, 'A'))
-    print(excel.s..(2, 'B', ['A1', 'A1']))
+    print(excel.s..(2, 'B',  'A1', 'A1' ))
     print(excel.s..(1, 'A', 2))
     print(excel.get(2, 'B'))
     print('-='*10+'-')
  
     excel = Excel(5, 'E')
     print(excel.s..(1, 'A', 1))
-    print(excel.s..(2, 'B', ['A1']))
+    print(excel.s..(2, 'B',  'A1' ))
     print(excel.s..(2, 'B', 0))
     print(excel.get(1, 'B'))
     print(excel.s..(1, 'A', 5))
@@ -105,7 +105,7 @@ __ _____ __ _____
     print('-='*10+'-')
 
     excel = Excel(3, 'C')
-    print(excel.s..(1, 'A', ['A2']))
+    print(excel.s..(1, 'A',  'A2' ))
     print(excel.s..(2, 'A', 1))
     print(excel.get(1, 'A'))
     print('-='*10+'-')

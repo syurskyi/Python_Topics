@@ -10,7 +10,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ maxProfit  prices):
+    ___ maxProfit  prices
         """
         Algorithm: dp
         1-D dp.
@@ -38,7 +38,7 @@ c_ Solution:
 
         backward = [0 ___ _ __ x..(l..(prices))]  # backward[i] for i..len-1
         highest_sell_price = prices[-1]
-        ___ i __ x..(l..(prices)-2, -1, -1):
+        ___ i __ x..(l..(prices)-2, -1, -1
             # if i==len(prices)-1:
             # backward[i] = 0
             # else:
@@ -51,7 +51,7 @@ c_ Solution:
             max_profit = m..(max_profit, forward[i]+backward[i])
         r.. max_profit
 
-    ___ maxProfit_error  prices):
+    ___ maxProfit_error  prices
         """
         2 transactions
         you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).

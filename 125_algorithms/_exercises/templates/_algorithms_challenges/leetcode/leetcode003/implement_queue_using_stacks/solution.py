@@ -16,15 +16,15 @@ use only standard operations of a stack.
 operations will be called on an empty queue).
 """
 
-c_ Queue(o..):
-    ___ - ):
+c_ Queue(o..
+    ___ -
         """
         initialize your data structure here.
         """
         stack1    # list  # Push
         stack2    # list  # Pop
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: nothing

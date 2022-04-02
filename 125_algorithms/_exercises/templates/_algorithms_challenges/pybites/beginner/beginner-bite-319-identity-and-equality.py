@@ -49,18 +49,18 @@ c_ Car:
     -> Have a closer look at lines marked with '# *'
     """
 
-    ___ - , model, color):
+    ___ - , model, color
         model = model
         color = color
 
-    ___ __eq__  other_car):
+    ___ __eq__  other_car
         r.. (
             model.l.. __ other_car.model.l..
             a.. color.l.. __ other_car.color.l..
         )
 
     @staticmethod
-    ___ age(days):
+    ___ age(days
         """if / elif / else for exercise sake, if there would
            be more conditions we would use a dict / mapping
         """
@@ -72,25 +72,25 @@ c_ Car:
             r.. "Neither a week, nor a year old"
 
     @staticmethod
-    ___ has_same_configuration(config1, config2):
+    ___ has_same_configuration(config1, config2
         __ t..(config1) != l.. o. t..(config2) != l..:  # *
             r.. T..()
         r.. config1 __ config2  # *
 
 
 # TODO: Complete function
-___ is_same_car_color_and_model(car1, car2):
+___ is_same_car_color_and_model(car1, car2
     """
     Returns true if car1 and car2 are the of same model and color
     """
-    __ car1.__eq__(car2):
+    __ car1.__eq__(car2
         r.. T..
     ____:
         r.. F..
 
 
 # TODO: Complete function
-___ is_same_instance_of_car(car1, car2):
+___ is_same_instance_of_car(car1, car2
     """
     Returns true if car1 and car2 are exactly the same object (instance)
     """
@@ -101,12 +101,12 @@ ___ is_same_instance_of_car(car1, car2):
 
 
 config1    # dict
-config2 = [['gas', 'electro', 'hybrid'], '200 PS', 'radio']
+config2 = [['gas', 'electro', 'hybrid' , '200 PS', 'radio'
 
 __ t..(config1) != l.. o. t..(config2) != l..:
     r.. T..()
 ____:
     print("OK")
 
-__ isi..(config1, l..):
+__ isi..(config1, l..
     print("IsInstance OK")

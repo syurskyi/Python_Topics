@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ getMinimumDifference  root):
+c_ Solution(o..
+  ___ getMinimumDifference  root
     """
     :type root: TreeNode
     :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(o..):
     val = N..
     ans = f__("inf")
 
-    ___ inorder(root):
+    ___ inorder(root
       __ n.. root:
         r..
       inorder(root.left)

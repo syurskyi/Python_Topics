@@ -11,7 +11,7 @@ _______ unittest
 ____ minesweeper _______ board
 
 
-c_ MinesweeperTest(unittest.TestCase):
+c_ MinesweeperTest(unittest.TestCase
     ___ test_board1
         inp = ["+------+",
                "| *  * |",

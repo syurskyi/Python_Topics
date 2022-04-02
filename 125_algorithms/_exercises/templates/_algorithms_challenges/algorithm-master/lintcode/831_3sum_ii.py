@@ -3,11 +3,11 @@ c_ Solution:
     @param n: an integer
     @return: the number of solutions
     """
-    ___ threeSum2  n):
+    ___ threeSum2  n
         ans = 0
         nums    # list
 
-        ___ a __ r..(n + 1):
+        ___ a __ r..(n + 1
             __ a * a > n:
                 _____
             nums.a..(a * a)
@@ -16,7 +16,7 @@ c_ Solution:
 
         m = l..(nums)
 
-        ___ a __ r..(m - 2):
+        ___ a __ r..(m - 2
             __ a > 0 a.. nums[a] __ nums[a - 1]:
                 _____
 
@@ -45,11 +45,11 @@ c_ Solution:
     @param n: an integer
     @return: the number of solutions
     """
-    ___ threeSum2  n):
+    ___ threeSum2  n
         ans = 0
         m = i..(n ** 0.5)
 
-        ___ a __ r..(m + 1):
+        ___ a __ r..(m + 1
             target = n - a * a
             b, c = a, m
             w.... b <= c:

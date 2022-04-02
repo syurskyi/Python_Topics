@@ -6,7 +6,7 @@ ____ rest_api _______ RestAPI
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.1
 
-c_ RestAPITest(unittest.TestCase):
+c_ RestAPITest(unittest.TestCase
     ___ test_no_users
         database = {"users": []}
         api = RestAPI(database)
@@ -47,7 +47,7 @@ c_ RestAPITest(unittest.TestCase):
         }
         api = RestAPI(database)
         payload = json.dumps({
-            'users': ['Bob']
+            'users':  'Bob'
         })
         response = api.get('/users', payload)
         expected = {

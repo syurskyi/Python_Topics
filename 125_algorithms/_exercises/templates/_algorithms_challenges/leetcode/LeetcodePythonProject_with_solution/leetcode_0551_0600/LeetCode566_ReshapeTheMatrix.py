@@ -3,8 +3,8 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ matrixReshape  nums, r, c):
+c_ Solution(o..
+    ___ matrixReshape  nums, r, c
         """
         :type nums: List[List[int]]
         :type r: int
@@ -17,9 +17,9 @@ c_ Solution(o..):
             r.. nums
         res    # list
         k, l = 0, 0
-        ___ _ __ r..(r):
+        ___ _ __ r..(r
             cur    # list
-            ___ _ __ r..(c):
+            ___ _ __ r..(c
                 cur.a..(nums[k][l])
                 l += 1
                 __ l __ n:

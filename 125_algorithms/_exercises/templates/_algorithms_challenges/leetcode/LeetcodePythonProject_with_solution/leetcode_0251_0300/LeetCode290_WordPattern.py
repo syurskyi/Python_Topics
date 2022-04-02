@@ -3,8 +3,8 @@ Created on Mar 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ wordPattern  pattern, s):
+c_ Solution(o..
+    ___ wordPattern  pattern, s
         """
         :type pattern: str
         :type str: str
@@ -13,9 +13,9 @@ c_ Solution(o..):
         hashmap    # dict
         hashset = s..()
         arr = s.s..(' ')
-        __ l..(arr) != l..(pattern):
+        __ l..(arr) != l..(pattern
             r.. F..
-        ___ p, s0 __ z..(pattern, arr):
+        ___ p, s0 __ z..(pattern, arr
             __ p __ hashmap a.. hashmap[p] __ s0:
                 _____
             ____ p n.. __ hashmap a.. s0 n.. __ hashset:

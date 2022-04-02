@@ -65,7 +65,7 @@ c_ Solution:
         """
         sentence = " ".j..(sentence) + " "  # unify the condition checking for the last word; tail will wrap with head with space
         i = 0
-        ___ r __ r..(rows):
+        ___ r __ r..(rows
             i += cols
             w.... sentence[i % l..(sentence)] != " ":
                 i -= 1

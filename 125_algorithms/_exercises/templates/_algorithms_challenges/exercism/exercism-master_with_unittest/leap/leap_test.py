@@ -5,7 +5,7 @@ ____ leap _______ is_leap_year
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.4.0
 
-c_ LeapTest(unittest.TestCase):
+c_ LeapTest(unittest.TestCase
     ___ test_year_not_divisible_by_4
         assertIs(is_leap_year(2015), F..)
 

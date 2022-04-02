@@ -3,11 +3,11 @@
 
 
 n = i..(input())
-arr = l..(map(i.., input().s..()))
+arr = l.. m..(i.., input().s..()))
 count = 0
 
 i = 0
-w.... i < l..(arr):
+w.... i < l..(arr
     __ arr[i] != i + 1:
         arr[arr[i] - 1], arr[i] = arr[i], arr[arr[i] - 1]
         count += 1

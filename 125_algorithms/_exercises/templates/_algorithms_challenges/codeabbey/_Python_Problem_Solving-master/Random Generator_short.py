@@ -1,5 +1,5 @@
 data = i..(input())
-a = l..(map(i..,input().s..()))
+a = l.. m..(i..,input().s..()))
 ___ i __ a:
     store    # list
     count = 0

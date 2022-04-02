@@ -3,8 +3,8 @@ _______ unittest
 _______ error_handling __ er
 
 
-c_ FileLike(o..):
-    ___ - , fail_something=T..):
+c_ FileLike(o..
+    ___ - , fail_something=T..
         is_open = F..
         was_open = F..
         did_something = F..
@@ -19,10 +19,10 @@ c_ FileLike(o..):
         was_open = T..
 
     ___ __enter__
-        open()
+        o.. )
         r.. self
 
-    ___ __exit__  *args):
+    ___ __exit__  *args
         close()
 
     ___ do_something
@@ -31,9 +31,9 @@ c_ FileLike(o..):
             r.. E..("Failed while doing something")
 
 
-c_ ErrorHandlingTest(unittest.TestCase):
+c_ ErrorHandlingTest(unittest.TestCase
     ___ test_throw_exception
-        w__ assertRaisesWithMessage(E..):
+        w__ assertRaisesWithMessage(E..
             er.handle_error_by_throwing_exception()
 
     ___ test_return_none
@@ -54,7 +54,7 @@ c_ ErrorHandlingTest(unittest.TestCase):
 
     ___ test_filelike_objects_are_closed_on_exception
         filelike_object = FileLike(fail_something=T..)
-        w__ assertRaisesWithMessage(E..):
+        w__ assertRaisesWithMessage(E..
             er.filelike_objects_are_closed_on_exception(filelike_object)
         assertIs(filelike_object.is_open, F..,
                       'filelike_object should be closed')
@@ -80,7 +80,7 @@ c_ ErrorHandlingTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 

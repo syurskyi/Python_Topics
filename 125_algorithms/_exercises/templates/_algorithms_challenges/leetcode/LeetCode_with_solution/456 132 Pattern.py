@@ -10,7 +10,7 @@ Note: n will be less than 15,000.
 
 
 c_ Solution:
-    ___ find132pattern  nums):
+    ___ find132pattern  nums
         """
         Brute force i, j, k O(n^3)
 
@@ -46,7 +46,7 @@ c_ Solution:
         r.. F..
 
 
-    ___ find132pattern_TLE  nums):
+    ___ find132pattern_TLE  nums
         """
         Brute force i, j, k O(n^3)
 

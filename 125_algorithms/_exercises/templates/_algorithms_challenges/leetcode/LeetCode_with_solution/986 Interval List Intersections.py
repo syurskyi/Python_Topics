@@ -26,7 +26,7 @@ ____ typing _______ List
 
 # Definition for an interval.
 c_ Interval:
-    ___ - , s=0, e=0):
+    ___ - , s=0, e=0
         start = s
         end = e
 

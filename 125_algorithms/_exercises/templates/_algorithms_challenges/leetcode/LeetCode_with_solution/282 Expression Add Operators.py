@@ -12,8 +12,8 @@ Examples:
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ addOperators  num, target):
+c_ Solution(o..
+    ___ addOperators  num, target
         """
         Adapted from https://leetcode.com/discuss/58614/java-standard-backtrace-ac-solutoin-short-and-clear
 
@@ -29,8 +29,8 @@ c_ Solution(o..):
         dfs(num, target, 0, "", 0, 0, ret)
         r.. ret
 
-    ___ dfs  num, target, pos, cur_str, cur_val, mul, ret):
-        __ pos >= l..(num):
+    ___ dfs  num, target, pos, cur_str, cur_val, mul, ret
+        __ pos >= l..(num
             __ cur_val __ target:
                 ret.a..(cur_str)
         ____:

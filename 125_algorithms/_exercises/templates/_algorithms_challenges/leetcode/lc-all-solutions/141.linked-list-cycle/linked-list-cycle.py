@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ hasCycle  head):
+c_ Solution(o..
+  ___ hasCycle  head
     """
     :type head: ListNode
     :rtype: bool

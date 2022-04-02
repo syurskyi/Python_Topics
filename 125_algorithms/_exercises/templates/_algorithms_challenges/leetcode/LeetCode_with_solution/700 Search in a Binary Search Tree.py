@@ -30,7 +30,7 @@ expected output (serialized tree format) as [], not null.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

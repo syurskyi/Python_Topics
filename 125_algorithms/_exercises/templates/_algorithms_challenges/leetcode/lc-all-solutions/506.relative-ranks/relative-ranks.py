@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findRelativeRanks  nums):
+c_ Solution(o..
+  ___ findRelativeRanks  nums
     """
     :type nums: List[int]
     :rtype: List[str]
     """
     ans = [""] * l..(nums)
     scores    # list
-    ___ i, num __ e..(nums):
+    ___ i, num __ e..(nums
       scores.a..((num, i))
     scores.s..(r.._T..
     rankTitles = ["Gold Medal", "Silver Medal", "Bronze Medal"]

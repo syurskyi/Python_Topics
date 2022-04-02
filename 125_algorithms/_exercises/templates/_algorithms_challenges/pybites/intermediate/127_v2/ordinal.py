@@ -1,4 +1,4 @@
-___ get_ordinal_suffix(number):
+___ get_ordinal_suffix(number
     """Receives a number int and returns it appended with its ordinal suffix,
        so 1 -> 1st, 2 -> 2nd, 4 -> 4th, 11 -> 11th, etc.
 
@@ -18,7 +18,7 @@ ___ get_ordinal_suffix(number):
     last_two = number % 100
 
 
-    __ last_two __ r..(11,14):
+    __ last_two __ r..(11,14
         r.. f"{number}th"
     ____ last_digit __ 1:
         r.. f"{number}st"

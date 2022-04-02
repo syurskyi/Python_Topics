@@ -4,7 +4,7 @@ _______ unicodedata
 START_EMOJI_RANGE = 100000  # estimate
 
 
-___ what_means_emoji(emoji):
+___ what_means_emoji(emoji
     """Receives emoji and returns its meaning,
        in case of a TypeError return 'Not found'"""
     ___
@@ -21,7 +21,7 @@ ___ _make_emoji_mapping
         res = _make_emoji_mapping.MAPPING
     ____:
         res = d..()
-        ___ em __ r..(START_EMOJI_RANGE, sys.maxunicode + 1):
+        ___ em __ r..(START_EMOJI_RANGE, sys.maxunicode + 1
             emoji = chr(em)
             ___
                 desc = what_means_emoji(emoji)
@@ -36,7 +36,7 @@ ___ _make_emoji_mapping
 _make_emoji_mapping.MAPPING = N..
 
 
-___ find_emoji(term):
+___ find_emoji(term
     """Return emojis and their texts that match (case insensitive)
        term, print matches to console"""
     term = term.l..

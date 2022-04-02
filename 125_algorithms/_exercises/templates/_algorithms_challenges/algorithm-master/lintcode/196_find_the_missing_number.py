@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findMissing  nums):
+    ___ findMissing  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -9,14 +9,14 @@ c_ Solution:
 
         ans = n = l..(nums)
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             ans ^= i ^ nums[i]
 
         r.. ans
 
 
 c_ Solution:
-    ___ findMissing  nums):
+    ___ findMissing  nums
         """
         :type nums: List[int]
         :rtype: int

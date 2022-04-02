@@ -11,8 +11,8 @@ You may assume k is always valid, 1 <= k <= array's length
 
 _______ heapq
 
-c_ Solution(o..):
-    ___ findKthLargest  nums, k):
+c_ Solution(o..
+    ___ findKthLargest  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -21,7 +21,7 @@ c_ Solution(o..):
         h    # list
         ___ e __ nums:
             heapq.heappush(h, (-e, e))
-        ___ i __ r..(k):
+        ___ i __ r..(k
             w, e = heapq.heappop(h)
             __ i __ k - 1:
                 r.. e

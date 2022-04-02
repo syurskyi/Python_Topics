@@ -8,7 +8,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ shortestDistance  words, word1, word2):
+    ___ shortestDistance  words, word1, word2
         """
         :type words: list[str]
         :type word1: str
@@ -20,8 +20,8 @@ c_ Solution:
         mini = sys.maxint
         ___ i __ lst1:
             idx = bisect_left(lst2, i)
-            ___ nei __ (-1, 0):
-                __ 0 <= idx+nei < l..(lst2):
+            ___ nei __ (-1, 0
+                __ 0 <= idx+nei < l..(lst2
                     mini = m..(mini, abs(i-lst2[idx+nei]))
 
         r.. mini

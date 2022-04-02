@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ isPowerOfTwo  n):
+    ___ isPowerOfTwo  n
         """
         Bit manipulation
         :type n: int

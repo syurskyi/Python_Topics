@@ -3,8 +3,8 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ soupServings  N):
+c_ Solution(o..
+    ___ soupServings  N
         """
         :type N: int
         :rtype: float
@@ -16,7 +16,7 @@ c_ Solution(o..):
         ____:
             r.. 1
     
-    ___ helper  hashmap, a, b):
+    ___ helper  hashmap, a, b
         __ a <= 0 a.. b <= 0:
             r.. 0.5
         __ a <= 0:

@@ -1,6 +1,6 @@
-c_ Matrix(o..):
+c_ Matrix(o..
 
-    ___ - , values):
+    ___ - , values
         _values = values
 
     ___  -r
@@ -11,16 +11,16 @@ c_ Matrix(o..):
         r.. _values
 
     @staticmethod
-    ___ _matrix_mult(mat1, mat2):
+    ___ _matrix_mult(mat1, mat2
         result = [([s..(a * b ___ a, b __ z..(x, y)) ___ y __ z..(*mat2)]) ___ x __ mat1]
         r.. result
 
-    ___ __matmul__  other):
+    ___ __matmul__  other
         r.. Matrix(_matrix_mult(values, other.values))
 
-    ___ __rmatmul__  other):
+    ___ __rmatmul__  other
         r.. Matrix(_matrix_mult(other.values, values))
 
-    ___ __imatmul__  other):
+    ___ __imatmul__  other
         _values = _matrix_mult(values, other.values)
         r.. self

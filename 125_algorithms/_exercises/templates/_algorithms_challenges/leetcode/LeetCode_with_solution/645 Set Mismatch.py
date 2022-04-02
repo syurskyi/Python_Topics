@@ -25,7 +25,7 @@ c_ Solution:
         """
         n = l..(nums)
         acc0 = 0  # a ^ b
-        ___ i __ r..(n):
+        ___ i __ r..(n
             acc0 ^= nums[i]
             acc0 ^= i + 1
 
@@ -34,7 +34,7 @@ c_ Solution:
         # xor them to get a or b
         acc1 = 0
         acc2 = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ nums[i] & first_1:
                 acc1 ^= nums[i]
             ____:
@@ -45,7 +45,7 @@ c_ Solution:
             ____:
                 acc2 ^= i + 1
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ nums[i] __ acc1:
                 r.. [acc1, acc2]
 

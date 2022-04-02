@@ -1,5 +1,5 @@
 # Python 2.7
-___ check_sum(data):
+___ check_sum(data
     result = 0
     
     ___ number __ data:
@@ -8,11 +8,11 @@ ___ check_sum(data):
         result %= 10000007
     r..(result)
 
-___ bubble_in_array(data):
+___ bubble_in_array(data
     numbers = [i..(x) ___ x __ data[:-1]]
     swap_count = 0
 
-    ___ x __ x..(l..(numbers)-1):
+    ___ x __ x..(l..(numbers)-1
         __ numbers[x] > numbers[x+1]:
             numbers[x+1], numbers[x] = numbers[x], numbers[x+1]
             swap_count += 1

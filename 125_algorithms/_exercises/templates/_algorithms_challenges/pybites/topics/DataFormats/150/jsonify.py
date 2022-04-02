@@ -16,10 +16,10 @@ id,first_name,last_name,email
 """
 
 
-___ convert_to_json(members=members):
+___ convert_to_json(members=members
     data    # list
     members_list = members.s.. 
-    ___ index, member __ e..(members_list):
+    ___ index, member __ e..(members_list
         line = member.r..('|',',').r..(';',',').s..(',')
         __ index __ 0:
             col0, col1, col2, col3 = line[0], line[1], line[2], line[3]

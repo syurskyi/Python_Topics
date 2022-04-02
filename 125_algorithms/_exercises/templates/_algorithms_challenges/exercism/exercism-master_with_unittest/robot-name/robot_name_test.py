@@ -4,7 +4,7 @@ ____ robot _______ Robot
 _______ r__
 
 
-c_ RobotTest(unittest.TestCase):
+c_ RobotTest(unittest.TestCase
     name_re = r'^[A-Z]{2}\d{3}$'
 
     ___ test_has_name

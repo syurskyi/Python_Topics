@@ -4,8 +4,8 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ removeInvalidParentheses  s):
+c_ Solution(o..
+    ___ removeInvalidParentheses  s
         rmL, rmR = 0, 0
         ___ c __ s:
             __ c __ '(':
@@ -19,10 +19,10 @@ c_ Solution(o..):
         helper(s, 0, result, '', rmL, rmR, 0)
         r.. l..(result)
     
-    ___ helper  s, i, result, elem, rmL, rmR, openNum):
+    ___ helper  s, i, result, elem, rmL, rmR, openNum
         __ rmL < 0 o. rmR < 0 o. openNum < 0:
             r..
-        __ i __ l..(s):
+        __ i __ l..(s
             __ rmL __ 0 a.. rmR __ 0 a.. openNum __ 0:
                 result.add(elem)
             r..

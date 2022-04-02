@@ -31,12 +31,12 @@ ____ typing _______ List
 c_ Solution:
     ___ findRestaurant  list1: List[s..], list2: List[s..]) __ List[s..]:
         index    # dict
-        ___ i, v __ e..(list2):
+        ___ i, v __ e..(list2
             index[v] = i
 
         ret    # list
         mini = f__('inf')
-        ___ i, v __ e..(list1):
+        ___ i, v __ e..(list1
             __ v __ index:
                 cur = i + index[v]  # current index sum
                 __ cur < mini:

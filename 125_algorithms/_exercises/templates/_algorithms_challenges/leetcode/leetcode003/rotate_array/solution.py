@@ -9,8 +9,8 @@ Try to come up as many solutions as you can, there are at least 3 different
 ways to solve this problem.
 """
 
-c_ Solution(o..):
-    ___ rotate  nums, k):
+c_ Solution(o..
+    ___ rotate  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -22,7 +22,7 @@ c_ Solution(o..):
         reverse(nums, 0, k - 1)
         reverse(nums, k, n - 1)
 
-    ___ reverse  nums, i, j):
+    ___ reverse  nums, i, j
         w.... i < j:
             nums[i], nums[j] = nums[j], nums[i]
             i += 1

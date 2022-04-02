@@ -3,8 +3,8 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ killProcess  pid, ppid, kill):
+c_ Solution(o..
+    ___ killProcess  pid, ppid, kill
         """
         :type pid: List[int]
         :type ppid: List[int]
@@ -12,7 +12,7 @@ c_ Solution(o..):
         :rtype: List[int]
         """
         hashmap    # dict
-        ___ p, pp __ z..(pid, ppid):
+        ___ p, pp __ z..(pid, ppid
             hashset = hashmap.get(pp, s..())
             hashset.add(p)
             hashmap[pp] = hashset
@@ -23,7 +23,7 @@ c_ Solution(o..):
         w.... queue:
             node = queue.pop(0)
             result.add(node)
-            ___ node0 __ hashmap.get(node, []):
+            ___ node0 __ hashmap.get(node, []
                 __ node0 n.. __ result:
                     queue.a..(node0)
         r.. l..(result)

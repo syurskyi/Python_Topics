@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ intToRoman  num):
+    ___ intToRoman  num
         """
         :type num: int
         :rtype: str

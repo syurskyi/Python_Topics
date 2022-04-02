@@ -3,22 +3,22 @@ Created on Oct 18, 2017
 
 @author: MT
 '''
-c_ TreeNode(o..):
-    ___ - , val):
+c_ TreeNode(o..
+    ___ - , val
         val = val
         s.. = 0
         children    # dict
 
-c_ MapSum(o..):
+c_ MapSum(o..
 
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
         """
         hashmap    # dict
         root = TreeNode(N..)
 
-    ___ insert  key, val):
+    ___ insert  key, val
         """
         :type key: str
         :type val: int
@@ -36,7 +36,7 @@ c_ MapSum(o..):
             node = node.children[c]
             node.s.. += val+diff
 
-    ___ s..  prefix):
+    ___ s..  prefix
         """
         :type prefix: str
         :rtype: int

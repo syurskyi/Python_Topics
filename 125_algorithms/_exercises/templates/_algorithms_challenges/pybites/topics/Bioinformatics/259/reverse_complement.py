@@ -28,15 +28,15 @@ COMPLEMENTS_STR = """# Full table with ambigous bases
 """
 
 # Recommended helper function
-___ get_complement_pair(str_table=SIMPLE_COMPLEMENTS_STR):
+___ get_complement_pair(str_table=SIMPLE_COMPLEMENTS_STR
     pair_dict    # dict
-    pair_list = [base.s.. ___ base __ str_table.splitlines() __ base[0] != '#' a.. base[:5] != ' Base']
+    pair_list = [base.s.. ___ base __ str_table.s..  __ base[0] != '#' a.. base[:5] != ' Base'
     ___ each_pair __ pair_list:
         pair_dict[each_pair.s..('\t')[0]] = each_pair.s..('\t')[-1]
     r.. pair_dict
 
 
-___ _clean_sequence(sequence, str_table):
+___ _clean_sequence(sequence, str_table
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -44,12 +44,12 @@ ___ _clean_sequence(sequence, str_table):
     characters
     t!t%ttttAACCG --> TTTTTTAACCG
     """
-    bases = ''.j..([base.s...s..('\t')[0] ___ base __ str_table.splitlines() __ base[0] != '#' a.. base[:5] != ' Base'])
+    bases = ''.j..([base.s...s..('\t')[0] ___ base __ str_table.s..  __ base[0] != '#' a.. base[:5] != ' Base' )
     return_str = ''.j..([char.u.. ___ char __ sequence __ char.u.. __ bases])
     r.. return_str
 
 
-___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -61,7 +61,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     r.. clear_sequence[::-1]
 
 
-___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -74,7 +74,7 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     r.. ''.j..([pair_dict[base] ___ base __ clean_sequence])
 
 
-___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases

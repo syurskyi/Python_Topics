@@ -7,17 +7,17 @@ df = pd.read_csv(data)
 pd.options.mode.chained_assignment = N..  # ignore warnings
 
 
-___ get_food_most_calories(df=df):
+___ get_food_most_calories(df=df
     """Return the food "Item" string with most calories"""
 
 
-    r.. df.nlargest(1,'Calories').squeeze()['Item']
+    r.. df.nlargest(1,'Calories').squeeze() 'Item'
 
 
 
 
 
-___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..):
+___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..
     """Calulate the Protein/Calories ratio of foods and return the
        5 foods with the best ratio.
 
@@ -33,11 +33,11 @@ ___ get_bodybuilder_friendly_foods(df=df, excl_drinks=F..):
     df = df[df.Calories > 0]
     
     __ excl_drinks:
-        df = df[~df.Category.isin(['Coffee & Tea','Beverages'])]
+        df = df[~df.Category.isin( 'Coffee & Tea','Beverages' )]
 
     
 
-    df['Ratio'] = df.Protein.div(df.Calories)
+    df 'Ratio'  = df.Protein.div(df.Calories)
 
 
     r.. df.nlargest(5,'Ratio').Item.tolist()

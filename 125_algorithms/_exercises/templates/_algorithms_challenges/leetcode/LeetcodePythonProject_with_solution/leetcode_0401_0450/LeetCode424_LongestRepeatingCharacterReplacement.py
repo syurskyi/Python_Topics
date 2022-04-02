@@ -4,13 +4,13 @@ Created on Apr 13, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ characterReplacement  s, k):
+c_ Solution(o..
+    ___ characterReplacement  s, k
         arr = [0]*26
         maxCount = 0
         left = 0
         res = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             ind = o..(c)-o..('A')
             arr[ind] += 1
             maxCount = m..(maxCount, arr[ind])

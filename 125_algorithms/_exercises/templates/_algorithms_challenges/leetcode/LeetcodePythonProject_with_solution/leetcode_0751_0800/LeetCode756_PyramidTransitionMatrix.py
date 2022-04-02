@@ -3,8 +3,8 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ pyramidTransition  bottom, allowed):
+c_ Solution(o..
+    ___ pyramidTransition  bottom, allowed
         """
         :type bottom: str
         :type allowed: List[str]
@@ -27,7 +27,7 @@ c_ Solution(o..):
                 ____:
                     r.. F..
             nextQueue = [s..() ___ _ __ r..(level-1)]
-            ___ i __ r..(level-1):
+            ___ i __ r..(level-1
                 arr1 = queue[i]
                 arr2 = queue[i+1]
                 ___ c1 __ arr1:

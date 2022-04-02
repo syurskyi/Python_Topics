@@ -18,7 +18,7 @@ ____ url_shortener _______ decode, encode, redirect, shorten_url
         (5120, "1kA"),
     ],
 )
-___ test_encode(arg, expected):
+___ test_encode(arg, expected
     ... encode(arg) __ expected
 
 
@@ -35,8 +35,8 @@ ___ test_encode(arg, expected):
         ("jnRFH", 286438245),
     ],
 )
-___ test_decode(arg, expected):
-    ... decode(arg) __ expected
+___ test_decode(arg, expected
+    ... d.. arg) __ expected
 
 
 ?p__.m__.p.(
@@ -50,7 +50,7 @@ ___ test_decode(arg, expected):
         ("https://training.talkpython.fm", 9999, "https://pybit.es/2Bh"),
     ],
 )
-___ test_shorten_url(url, next_record, expected):
+___ test_shorten_url(url, next_record, expected
     ... shorten_url(url, next_record) __ expected
 
 
@@ -64,7 +64,7 @@ ___ test_shorten_url(url, next_record, expected):
         ("https://pybit.es/e6", "https://stackoverflow.com"),
     ],
 )
-___ test_redirect(url, expected):
+___ test_redirect(url, expected
     ... redirect(url) __ expected
 
 
@@ -81,5 +81,5 @@ ___ test_redirect(url, expected):
         ("https://youtu.be/gAYL5H46QnQ", "Not a valid PyBites shortened url"),
     ]
 )
-___ test_modified_links(url, expected):
+___ test_modified_links(url, expected
     ... redirect(url) __ expected

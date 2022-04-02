@@ -5,7 +5,7 @@ ____ pythagorean_triplet _______ triplets_with_sum
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
 
-c_ PythagoreanTripletTest(unittest.TestCase):
+c_ PythagoreanTripletTest(unittest.TestCase
     ___ test_triplets_sum_12
         expected = s..([(3, 4, 5)])
         assertEqual(triplets_with_sum(12), expected)

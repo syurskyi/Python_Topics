@@ -6,7 +6,7 @@ ____ yacht _______ score
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
-c_ YachtTest(unittest.TestCase):
+c_ YachtTest(unittest.TestCase
     ___ test_yacht
         assertEqual(score([5, 5, 5, 5, 5], yacht.YACHT), 50)
 

@@ -1,4 +1,4 @@
-___ flatten(list_of_lists):
+___ flatten(list_of_lists
     res    # list
     ___ i __ list_of_lists:
         __ isi..(i, (l.., t..)):

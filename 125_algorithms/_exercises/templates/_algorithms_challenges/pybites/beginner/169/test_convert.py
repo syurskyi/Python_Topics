@@ -9,7 +9,7 @@ ___ test_non_numeric_value
 
 
 ___ test_unsupported_formats
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         convert(300, "km")
 
 
@@ -45,7 +45,7 @@ ___ test_with_mixed_case_formats
         (100, 254.0),
     ],
 )
-___ test_convert_from_inches_to_centimeters(input_argument, expected_output):
+___ test_convert_from_inches_to_centimeters(input_argument, expected_output
     ... convert(input_argument, "cm") __ expected_output
 
 
@@ -76,5 +76,5 @@ ___ test_convert_from_inches_to_centimeters(input_argument, expected_output):
         (100, 39.3701),
     ],
 )
-___ test_convert_from_centimeters_to_inches(input_argument, expected_output):
+___ test_convert_from_centimeters_to_inches(input_argument, expected_output
     ... convert(input_argument, "in") __ expected_output

@@ -3,16 +3,16 @@ _______ math
 amount_values = i..(input())
 results    # list
 
-___ get_triangle_type(side1, side2, side3):
+___ get_triangle_type(side1, side2, side3
     hypotenuse = math.sqrt(side1**2 + side2**2)
-    __(side3 < hypotenuse):
+    __(side3 < hypotenuse
         r.. "A"
-    ____(side3 > hypotenuse):
+    ____(side3 > hypotenuse
         r.. "O"
     ____:
         r.. "R"
 
-___ i __ r..(amount_values):
+___ i __ r..(amount_values
     side1, side2, side3 = map(i.., input().s..())
     results.a..(get_triangle_type(side1,side2, side3))
 

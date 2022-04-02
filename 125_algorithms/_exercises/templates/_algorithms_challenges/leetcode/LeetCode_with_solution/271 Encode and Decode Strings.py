@@ -4,8 +4,8 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Codec(o..):
-    ___ encode  strs):
+c_ Codec(o..
+    ___ encode  strs
         """
         Encodes a list of strings to a single string.
 
@@ -17,7 +17,7 @@ c_ Codec(o..):
         strs = map(l.... x: s..(l..(x))+"/"+x, strs)
         r.. reduce(l.... x, y: x+y, strs, "")  # i.e. "".join(strs)
 
-    ___ decode  s):
+    ___ decode  s
         """
         Decodes a single string to a list of strings.
 
@@ -26,7 +26,7 @@ c_ Codec(o..):
         """
         strs    # list
         i = 0
-        w.... i < l..(s):
+        w.... i < l..(s
             j = s.index("/", i)
             l = i..(s[i:j])
             strs.a..(s[j+1:j+1+l])
@@ -35,8 +35,8 @@ c_ Codec(o..):
         r.. strs
 
 
-c_ CodecMethod2(o..):
-    ___ encode  strs):
+c_ CodecMethod2(o..
+    ___ encode  strs
         """
         Encodes a list of strings to a single string.
 
@@ -48,7 +48,7 @@ c_ CodecMethod2(o..):
         strs = map(l.... x: x.r..("\n", "\n\n")+"_\n_", strs)
         r.. reduce(l.... x, y: x+y, strs, "")
 
-    ___ decode  s):
+    ___ decode  s
         """
         Decodes a single string to a list of strings.
 
@@ -60,8 +60,8 @@ c_ CodecMethod2(o..):
         r.. map(l.... x: x.r..("\n\n", "\n"), strs)
 
 
-c_ CodecError(o..):
-    ___ encode  strs):
+c_ CodecError(o..
+    ___ encode  strs
         """
         Encodes a list of strings to a single string.
 
@@ -76,7 +76,7 @@ c_ CodecError(o..):
             ret += s+"\x00"
         r.. ret
 
-    ___ decode  s):
+    ___ decode  s
         """
         Decodes a single string to a list of strings.
 

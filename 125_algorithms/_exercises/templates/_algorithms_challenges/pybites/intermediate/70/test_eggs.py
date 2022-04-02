@@ -25,7 +25,7 @@ ___ test_iterator_raises_stop_iteration_exception
     ec = EggCreator(2)
     next(ec)
     next(ec)
-    w__ p__.r..(StopIteration):
+    w__ p__.r..(StopIteration
         next(ec)
 
 

@@ -37,10 +37,10 @@ ___ test_remove_all_parenthesis_words
 
 ___ test_split_string_on_punctuation
     input_string = 'hi, how are you doing? blabla'
-    expected = ['hi', 'how are you doing', 'blabla']
+    expected =  'hi', 'how are you doing', 'blabla'
     ... split_string_on_punctuation(input_string) __ expected
     input_string = ';String. with. punctuation characters!'
-    expected = ['String', 'with', 'punctuation characters']
+    expected =  'String', 'with', 'punctuation characters'
     ... split_string_on_punctuation(input_string) __ expected
 
 

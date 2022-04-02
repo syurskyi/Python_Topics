@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ inorderSuccessor  root, q):
+c_ Solution(o..
+  ___ inorderSuccessor  root, q
     """
     :type root: TreeNode
     :type p: TreeNode

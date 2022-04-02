@@ -27,7 +27,7 @@ c_ Solution:
         cur_sum = s..(nums[:k])
         maxa = cur_sum
         i = k
-        w.... i < l..(nums):
+        w.... i < l..(nums
             cur_sum += nums[i]
             cur_sum -= nums[i-k]
             maxa = m..(maxa, cur_sum)

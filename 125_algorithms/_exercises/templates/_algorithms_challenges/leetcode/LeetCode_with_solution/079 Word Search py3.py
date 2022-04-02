@@ -30,17 +30,17 @@ c_ Solution:
     ___ exist  board: List[List[s..]], word: s..) __ b..:
         m, n = l..(board), l..(board[0])
         visited = defaultdict(l....: defaultdict(b..))
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ board[i][j] __ word[0]:
-                    __ dfs(board, visited, i, j, word, 1):
+                    __ dfs(board, visited, i, j, word, 1
                         r.. T..
 
         r.. F..
 
-    ___ dfs  board, visited, i, j, word, idx):
+    ___ dfs  board, visited, i, j, word, idx
         visited[i][j] = T..
-        __ idx >= l..(word):
+        __ idx >= l..(word
             r.. T..
 
         m, n = l..(board), l..(board[0])
@@ -48,7 +48,7 @@ c_ Solution:
             I = i + di
             J = j + dj
             __ 0 <= I < m a.. 0 <= J < n a.. n.. visited[I][J] a.. board[I][J] __ word[idx]:
-                __ dfs(board, visited, I, J, word, idx + 1):
+                __ dfs(board, visited, I, J, word, idx + 1
                     r.. T..
 
         visited[i][j] = F..  # restore

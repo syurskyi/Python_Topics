@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ calculateMinimumHP  dungeon):
+c_ Solution(o..
+  ___ calculateMinimumHP  dungeon
     """
     :type dungeon: List[List[int]]
     :rtype: int

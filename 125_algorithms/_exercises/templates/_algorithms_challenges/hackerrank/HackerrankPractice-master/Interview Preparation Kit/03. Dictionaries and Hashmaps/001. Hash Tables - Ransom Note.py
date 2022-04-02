@@ -5,7 +5,7 @@
 ____ c.. _______ Counter
 
 
-___ checkMagazine(magazine, note):
+___ checkMagazine(magazine, note
     __ Counter(note) - Counter(magazine) __ {}:
         r.. 'Yes'
     ____:

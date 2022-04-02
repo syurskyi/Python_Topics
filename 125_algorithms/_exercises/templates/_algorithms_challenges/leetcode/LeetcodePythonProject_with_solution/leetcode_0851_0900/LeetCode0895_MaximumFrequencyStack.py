@@ -1,14 +1,14 @@
 _______ heapq
 
 
-c_ FreqStack(o..):
+c_ FreqStack(o..
 
-    ___ - ):
+    ___ -
         hashmap    # dict
         heap    # list
         size = 0
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: None
@@ -26,8 +26,8 @@ c_ FreqStack(o..):
         r.. val
 
 
-c_ ListNode(o..):
-    ___ - , val):
+c_ ListNode(o..
+    ___ - , val
         val = val
         freq = 0
         prev = N..
@@ -35,16 +35,16 @@ c_ ListNode(o..):
         indexes    # list
 
 
-c_ FreqStack_self(o..):
+c_ FreqStack_self(o..
 
-    ___ - ):
+    ___ -
         idx = 0
         hashmap    # dict
         head = N..
         tail = N..
         idx = 0
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: None

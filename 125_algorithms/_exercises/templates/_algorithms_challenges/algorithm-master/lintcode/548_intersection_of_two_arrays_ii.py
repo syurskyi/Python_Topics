@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ intersect  a, b):
+    ___ intersect  a, b
         """
         :type a: List[int]
         :type b: List[int]
@@ -16,7 +16,7 @@ c_ Solution:
             freq[x] = freq.get(x, 0) + 1
 
         ___ x __ b:
-            __ n.. freq.get(x):
+            __ n.. freq.get(x
                 _____
 
             freq[x] -= 1
@@ -26,7 +26,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ intersect  a, b):
+    ___ intersect  a, b
         """
         :type a: List[int]
         :type b: List[int]

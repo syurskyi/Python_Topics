@@ -1,12 +1,12 @@
 ____ functools _______ wraps
 
 
-___ int_args(func):
+___ int_args(func
     @wraps(func)
-    ___ wrapper(*args):
+    ___ wrapper(*args
         # Validate arg type and value
         ___ arg __ args:
-            __ n.. isi..(arg, i..):
+            __ n.. isi..(arg, i..
                 r.. T..
             ____:
                 __ arg < 0:

@@ -21,20 +21,20 @@ Bite 110. Type conversion and exception handling;1.5
 """
 
 
-@p__.f..
+?p__.f..
 ___ intro_bites
-    w__ TemporaryDirectory(dir=TMP):
-        w__ open(BITES_CSV, 'w') __ f:
+    w__ TemporaryDirectory(dir=TMP
+        w__ o.. BITES_CSV, 'w') __ f:
             f.write(INTRO_BITE_STATS)
     r.. BITES_CSV
 
 
 ?p__.m__.p.("N, expected", [
-    (2, ['88', '31']),
-    (6, ['88', '31', '50', '90', '179', '98']),
-    (10, ['88', '31', '50', '90', '179', '98', '190', '42', '69', '40']),
+    (2,  '88', '31' ),
+    (6,  '88', '31', '50', '90', '179', '98' ),
+    (10,  '88', '31', '50', '90', '179', '98', '190', '42', '69', '40' ),
 ])
-___ test_different_args_for_N(N, expected):
+___ test_different_args_for_N(N, expected
     actual = get_most_complex_bites(N)
     # str or int for IDs is fine with us
     actual = [s..(i) ___ i __ actual]

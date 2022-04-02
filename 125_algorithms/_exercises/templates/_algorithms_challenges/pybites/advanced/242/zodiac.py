@@ -9,10 +9,10 @@ Sign = n..('Sign', 'name compatibility famous_people sun_dates')
 ___ get_signs(data: l..) __ List[Sign]:
     ret    # list
     ___ sign __ data:
-        name = sign['name']
-        compatibility = sign['compatibility']
-        famous_people = sign['famous_people']
-        sun_dates = sign['sun_dates']
+        name = sign 'name' 
+        compatibility = sign 'compatibility' 
+        famous_people = sign 'famous_people' 
+        sun_dates = sign 'sun_dates' 
         sign = Sign(name, compatibility, famous_people, sun_dates)
         ret.a..(
             sign
@@ -20,7 +20,7 @@ ___ get_signs(data: l..) __ List[Sign]:
     r.. ret
 
 
-___ get_sign_with_most_famous_people(signs: l..):
+___ get_sign_with_most_famous_people(signs: l..
     """Get the sign with the most famous people associated"""
     famous_people = [
         (s.name, l..(s.famous_people)) ___ s __ signs

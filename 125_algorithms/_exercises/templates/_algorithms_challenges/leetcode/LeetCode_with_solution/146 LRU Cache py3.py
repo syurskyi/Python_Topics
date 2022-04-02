@@ -29,7 +29,7 @@ cache.get(4);       // returns 4
 
 
 c_ Node:
-    ___ - , key, val):
+    ___ - , key, val
         key = key
         val = val
         prev, next = N.., N..
@@ -37,7 +37,7 @@ c_ Node:
 
 c_ LRUCache:
 
-    ___ - , capacity: i..):
+    ___ - , capacity: i..
         """
         O(1) look up - Map
         O(1) update most recent vs. least recent - Linked List
@@ -66,14 +66,14 @@ c_ LRUCache:
     ___ put  key: i.., value: i..) __ N..
         __ key __ map:
             _remove(key)
-        ____ l..(map) >= cap:
+        ____ l.. m..) >= cap:
             node = tail.prev
             _remove(node.key)
 
         node = Node(key, value)
         _appendleft(node)
 
-    ___ _appendleft  node: Node):
+    ___ _appendleft  node: Node
         map[node.key] = node  # update/delete map in these two operators
         nxt = head.next
         head.next = node
@@ -81,7 +81,7 @@ c_ LRUCache:
         node.next = nxt
         nxt.prev = node
 
-    ___ _remove  key: i..):
+    ___ _remove  key: i..
         node = map[key]
         prev = node.prev
         nxt = node.next

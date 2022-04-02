@@ -6,11 +6,11 @@ http://www.codewars.com/kata/52d2e2be94d26fc622000735/train/python
 
 
 c_ VigenereAutokeyCipher:
-    ___ - , key, abc):
+    ___ - , key, abc
         key = key
         abc = abc
 
-    ___ encode  text):
+    ___ encode  text
         result    # list
         key = key + ''.j..([t ___ t __ text __ t __ abc])
         index = 0
@@ -23,7 +23,7 @@ c_ VigenereAutokeyCipher:
                 result.a..(c)
         r.. ''.j..(result)
 
-    ___ decode  text):
+    ___ decode  text
         result    # list
         key = key
         index = 0

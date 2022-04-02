@@ -3,7 +3,7 @@ _______ unittest
 ____ grains _______ on_square, total_after
 
 
-c_ GrainsTest(unittest.TestCase):
+c_ GrainsTest(unittest.TestCase
     ___ test_square_1
         assertEqual(1, on_square(1))
         assertEqual(1, total_after(1))

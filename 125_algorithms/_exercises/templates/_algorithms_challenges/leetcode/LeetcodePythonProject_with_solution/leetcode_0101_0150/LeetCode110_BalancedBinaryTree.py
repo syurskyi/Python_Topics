@@ -5,14 +5,14 @@ Created on Feb 1, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ isBalanced  root):
+c_ Solution(o..
+    ___ isBalanced  root
         """
         :type root: TreeNode
         :rtype: bool
@@ -25,7 +25,7 @@ c_ Solution(o..):
             r.. abs(getHeight(root.left)-getHeight(root.right)) <= 1 a..\
                 isBalanced(root.left) a.. isBalanced(root.right)
     
-    ___ getHeight  root):
+    ___ getHeight  root
         __ n.. root:
             r.. 0
         leftHeight = getHeight(root.left)

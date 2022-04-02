@@ -11,14 +11,14 @@ tie = 'tie!'
 ___ _get_computer_move
     """Randomly select a move"""
 
-    c.. = ['scissors','paper','rock']
+    c.. =  'scissors','paper','rock'
 
     r.. choice(c..)
 
 
 
 
-___ _get_winner(computer_choice, player_choice):
+___ _get_winner(computer_choice, player_choice
     """Return above lose/win/tie strings populated with the
        appropriate values (computer vs player)"""
 
@@ -59,7 +59,7 @@ ___ game
         __ player_choice __ 'q':
             r.. StopIteration
         
-        __ player_choice n.. __ ('scissors','rock','paper'):
+        __ player_choice n.. __ ('scissors','rock','paper'
             print('Invalid input')
         ____:
             computer_choice = _get_computer_move() 

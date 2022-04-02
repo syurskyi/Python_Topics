@@ -4,14 +4,14 @@ Created on May 3, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ magicalString  n):
+c_ Solution(o..
+    ___ magicalString  n
         """
         :type n: int
         :rtype: int
         """
         s = '122112122122'
-        __ n <= l..(s):
+        __ n <= l..(s
             r.. s[:n].c.. '1')
         i = 8
         j = 11

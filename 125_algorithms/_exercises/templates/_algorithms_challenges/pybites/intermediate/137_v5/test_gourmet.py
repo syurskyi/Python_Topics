@@ -14,13 +14,13 @@ cases_best_by_wine = [
 
 
 ?p__.m__.p.("case", cases_best_by_wine)
-___ test_best_match_per_wine_type(case):
+___ test_best_match_per_wine_type(case
     wine_type, *result = case
     ... best_match_per_wine(wine_type) __ t..(result)
 
 
 ___ test_invalid_wine_type
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         best_match_per_wine("cocacola")
 
 
@@ -59,7 +59,7 @@ cases = [
 
 
 ?p__.m__.p.("case", cases)
-___ test_match_wine_5cheeses(case):
+___ test_match_wine_5cheeses(case
     """ test of presence of first 2 cheeses only
     because if score is same for more pairs, order of pairs cannot be assumed
     """

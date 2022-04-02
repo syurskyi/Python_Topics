@@ -26,5 +26,5 @@ whole = [[1, 1, 1],
     (empty, 0),
     (whole, 16),
 ])
-___ test_island_size(map_, expected):
+___ test_island_size(map_, expected
     ... island_size(map_) __ expected

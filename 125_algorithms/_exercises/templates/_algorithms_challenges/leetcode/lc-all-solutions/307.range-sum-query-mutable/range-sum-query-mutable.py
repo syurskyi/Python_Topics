@@ -1,6 +1,6 @@
 # Segment tree node
-c_ STNode(o..):
-  ___ - , start, end):
+c_ STNode(o..
+  ___ - , start, end
     start = start
     end = end
     total = 0
@@ -8,11 +8,11 @@ c_ STNode(o..):
     right = N..
 
 
-c_ SegmentedTree(o..):
-  ___ - , nums, start, end):
+c_ SegmentedTree(o..
+  ___ - , nums, start, end
     root = buildTree(nums, start, end)
 
-  ___ buildTree  nums, start, end):
+  ___ buildTree  nums, start, end
     __ start > end:
       r.. N..
 
@@ -29,8 +29,8 @@ c_ SegmentedTree(o..):
     root.total = root.left.total + root.right.total
     r.. root
 
-  ___ updateVal  i, val):
-    ___ updateVal(root, i, val):
+  ___ updateVal  i, val
+    ___ updateVal(root, i, val
       __ root.start __ root.end:
         root.total = val
         r.. val
@@ -45,8 +45,8 @@ c_ SegmentedTree(o..):
 
     r.. updateVal(root, i, val)
 
-  ___ sumRange  i, j):
-    ___ rangeSum(root, start, end):
+  ___ sumRange  i, j
+    ___ rangeSum(root, start, end
       __ root.start __ start a.. root.end __ end:
         r.. root.total
 
@@ -61,15 +61,15 @@ c_ SegmentedTree(o..):
     r.. rangeSum(root, i, j)
 
 
-c_ NumArray(o..):
-  ___ - , nums):
+c_ NumArray(o..
+  ___ - , nums
     """
     initialize your data structure here.
     :type nums: List[int]
     """
     stTree = SegmentedTree(nums, 0, l..(nums) - 1)
 
-  ___ update  i, val):
+  ___ update  i, val
     """
     :type i: int
     :type val: int
@@ -77,7 +77,7 @@ c_ NumArray(o..):
     """
     r.. stTree.updateVal(i, val)
 
-  ___ sumRange  i, j):
+  ___ sumRange  i, j
     """
     sum of elements nums[i..j], inclusive.
     :type i: int

@@ -4,14 +4,14 @@ Created on Oct 22, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ longestUnivaluePath  root):
+c_ Solution(o..
+    ___ longestUnivaluePath  root
         """
         :type root: TreeNode
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(o..):
         helper(root)
         r.. maxLen
     
-    ___ helper  root):
+    ___ helper  root
         __ n.. root: r.. 0
         left = helper(root.left)
         right = helper(root.right)

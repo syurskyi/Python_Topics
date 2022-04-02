@@ -2,14 +2,14 @@ ____ lintcode _______ ListNode
 
 
 c_ Stack:
-    ___ - ):
+    ___ -
         dummy = tail = ListNode(-1)
 
     """
     @param: x: An integer
     @return: nothing
     """
-    ___ push  x):
+    ___ push  x
         node = ListNode(x)
         node.pre = tail
         tail.nxt = node

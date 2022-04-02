@@ -50,7 +50,7 @@ c_ Solution:
             __ u __ acyclic
         ]
 
-    ___ dfs  graph, cur, visit, acyclic):
+    ___ dfs  graph, cur, visit, acyclic
         visit[cur] = 1
         ___ nbr __ graph[cur]:
             __ visit[nbr] __ 2:
@@ -60,7 +60,7 @@ c_ Solution:
                     _____
             __ visit[nbr] __ 1:
                 _____
-            __ visit[nbr] __ 0 a.. n.. dfs(graph, nbr, visit, acyclic):
+            __ visit[nbr] __ 0 a.. n.. dfs(graph, nbr, visit, acyclic
                 _____
         ____:
             acyclic.add(cur)

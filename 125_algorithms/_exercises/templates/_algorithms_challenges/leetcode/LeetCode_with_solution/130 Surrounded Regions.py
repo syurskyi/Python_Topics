@@ -19,7 +19,7 @@ __author__ = 'Danyang'
 CONNECTED = 'C'
 directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 c_ Solution:
-    ___ solve  board):
+    ___ solve  board
         """
         Graph Theory
         Algorithm1: bfs, to tell whether it is on the boarder
@@ -33,10 +33,10 @@ c_ Solution:
         # scan the boarder
         m = l..(board)
         n = l..(board[0])
-        ___ i __ x..(m):
+        ___ i __ x..(m
             __ board[i][0]__'O': q.a..((i, 0))
             __ board[i][n-1]__'O': q.a..((i, n-1))
-        ___ j __ x..(1, n-1):
+        ___ j __ x..(1, n-1
             __ board[0][j]__'O': q.a..((0, j))
             __ board[m-1][j]__'O': q.a..((m-1, j))
 
@@ -51,8 +51,8 @@ c_ Solution:
                     q.a..((row, col))
 
 
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ board[i][j]__'O':
                     board[i][j] = 'X'
                 ____ board[i][j]__CONNECTED:
@@ -61,16 +61,16 @@ c_ Solution:
 
 __ _____ __ ____
     board = [
-        ['X', 'X', 'X', 'X'],
-        ['X', 'O', 'O', 'X'],
-        ['X', 'X', 'O', 'X'],
-        ['X', 'O', 'X', 'X']
+         'X', 'X', 'X', 'X' ,
+         'X', 'O', 'O', 'X' ,
+         'X', 'X', 'O', 'X' ,
+         'X', 'O', 'X', 'X' 
     ]
     expected_board = [
-        ['X', 'X', 'X', 'X'],
-        ['X', 'X', 'X', 'X'],
-        ['X', 'X', 'X', 'X'],
-        ['X', 'O', 'X', 'X']
+         'X', 'X', 'X', 'X' ,
+         'X', 'X', 'X', 'X' ,
+         'X', 'X', 'X', 'X' ,
+         'X', 'O', 'X', 'X' 
     ]
     Solution().solve(board)
     ... board__expected_board

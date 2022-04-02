@@ -48,7 +48,7 @@ c_ Solution:
         profit_q    # list
         heapq.heapify(capital_q)
         capital = W
-        ___ _ __ r..(k):
+        ___ _ __ r..(k
             w.... capital_q a.. capital_q[0][0] <= capital:
                 _, pro = heapq.heappop(capital_q)
                 heapq.heappush(profit_q, (-pro, pro))
@@ -78,10 +78,10 @@ c_ Solution:
         capital = W
         n = l..(Profits)
         visited = [F.. ___ _ __ r..(n)]
-        ___ _ __ r..(k):
+        ___ _ __ r..(k
             maxa = 0
             maxa_i = 0
-            ___ i __ r..(n):
+            ___ i __ r..(n
                 __ n.. visited[i] a.. Profits[i] >= maxa a.. Capital[i] <= capital:
                     maxa = Profits[i]
                     maxa_i = i

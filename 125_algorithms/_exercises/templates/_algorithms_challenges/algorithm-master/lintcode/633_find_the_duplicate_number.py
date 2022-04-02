@@ -8,7 +8,7 @@ for each `num < a`: `cnt(num) == num`
 for each `num >= a`: `cnt(num) > num`
 """
 c_ Solution:
-    ___ findDuplicate  A):
+    ___ findDuplicate  A
         """
         :type A: List[int]
         :rtype: int
@@ -20,18 +20,18 @@ c_ Solution:
 
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ after_dup(A, mid):
+            __ after_dup(A, mid
                 right = mid
             ____:
                 left = mid
 
-        __ after_dup(A, left):
+        __ after_dup(A, left
             r.. left
-        __ after_dup(A, right):
+        __ after_dup(A, right
             r.. right
         r.. -1
 
-    ___ after_dup  A, mid):
+    ___ after_dup  A, mid
         cnt = 0
 
         ___ a __ A:
@@ -67,7 +67,7 @@ c_ Solution:
     @param: A: an array containing n + 1 integers which is between 1 and n
     @return: the duplicate one
     """
-    ___ findDuplicate  A):
+    ___ findDuplicate  A
         __ n.. A:
             r.. -1
 

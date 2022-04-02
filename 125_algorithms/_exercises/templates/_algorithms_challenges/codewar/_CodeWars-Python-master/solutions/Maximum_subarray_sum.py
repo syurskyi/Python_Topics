@@ -12,7 +12,7 @@ Empty list is considered to have zero greatest sum. Note that the empty list or 
 """
 
 
-___ maxSequence(arr):
+___ maxSequence(arr
     maximum = 0
     local_maximum = 0
     ___ i __ arr:

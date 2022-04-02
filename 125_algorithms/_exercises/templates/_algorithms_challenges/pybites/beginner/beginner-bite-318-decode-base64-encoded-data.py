@@ -56,10 +56,10 @@ Jaclin,Tonge,3549852104724527"""
 
     decoded = base64.b64decode(encoded)
     # print(decoded)???
-    print(bytes.decode(decoded, 'ascii'))
-    inp = bytes.decode(decoded, 'ascii')
+    print(bytes.d.. decoded, 'ascii'))
+    inp = bytes.d.. decoded, 'ascii')
     print(t..(inp))
-    result = csv.reader(inp.splitlines())
+    result = csv.reader(inp.s..())
     result = l..(result)
     r = result[1:]
     end    # list

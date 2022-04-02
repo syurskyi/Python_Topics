@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minWindow  s, t):
+c_ Solution(o..
+  ___ minWindow  s, t
     """
     :type s: str
     :type t: str
@@ -10,7 +10,7 @@ c_ Solution(o..):
     start, end = l..(s), 3 * l..(s)
     d    # dict
     deq = c...d..([])
-    ___ i, c __ e..(s):
+    ___ i, c __ e..(s
       __ c __ wanted:
         deq.a..(i)
         d[c] = d.get(c, 0) + 1

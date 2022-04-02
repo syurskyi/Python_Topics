@@ -8,7 +8,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ canPartition  nums):
+    ___ canPartition  nums
         """
         0/1 Knapsack problem
 
@@ -35,12 +35,12 @@ c_ Solution:
         d[0][nums[0]] = 1
 
         ___ i __ r..(1, l..(nums)):
-            ___ v __ r..(target + 1):
+            ___ v __ r..(target + 1
                 d[i][v] = d[i-1][v] + d[i-1][v-nums[i]]
 
         r.. any(d[i][target] > 0 ___ i __ r..(l..(nums)))
 
-    ___ canPartition_TLE  nums):
+    ___ canPartition_TLE  nums
         """
         subset rather than sub array
         positive number only
@@ -58,9 +58,9 @@ c_ Solution:
         target = s // 2
         r.. dfs(nums, 0, target)
 
-    ___ dfs  nums, idx, target):
+    ___ dfs  nums, idx, target
         """Find a subset that sum to target"""
-        __ n.. idx < l..(nums):
+        __ n.. idx < l..(nums
             r.. F..
         __ nums[idx] __ target:
             r.. T..

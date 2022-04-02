@@ -1,4 +1,4 @@
-___ check(lst, el):
+___ check(lst, el
     __ lst.c.. el) > 0:
         r.. T..
     ____:

@@ -1,13 +1,13 @@
 c_ Solution:
     # @return a list of lists of integer
-    ___ generateMatrix  n):
+    ___ generateMatrix  n
         matrix = [[0 ___ i __ r..(n)] ___ j __ r..(n)]
         count = 1
-        ___ i __ r..(n / 2):
+        ___ i __ r..(n / 2
             start = i
             end = n - i - 1
             width = end - start
-            ___ j __ r..(start, end):
+            ___ j __ r..(start, end
                 offset = j - start
                 # Top
                 matrix[start][j] = count + offset

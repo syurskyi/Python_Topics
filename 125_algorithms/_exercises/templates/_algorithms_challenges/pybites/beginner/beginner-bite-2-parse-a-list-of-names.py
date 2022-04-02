@@ -7,13 +7,13 @@ For this exercise you can assume there is always one name and one surname.
 With some handy Python builtins you can write this in a pretty concise way. Get it sorted :)
 """
 
-NAMES = ['arnold schwarzenegger', 'alec baldwin', 'bob belderbos',
+NAMES =  'arnold schwarzenegger', 'alec baldwin', 'bob belderbos',
          'julian sequeira', 'sandra bullock', 'keanu reeves',
          'julbob pybites', 'bob belderbos', 'julian sequeira',
-         'al pacino', 'brad pitt', 'matt damon', 'brad pitt']
+         'al pacino', 'brad pitt', 'matt damon', 'brad pitt' 
 
 
-___ dedup_and_title_case_names(names):
+___ dedup_and_title_case_names(names
     """Should return a list of names, each name appears only once"""
     new_list    # list
     ___ item __ names:
@@ -21,12 +21,12 @@ ___ dedup_and_title_case_names(names):
              new_list.a..(item.t..
     r.. new_list
 
-___ sort_by_surname_desc(names):
+___ sort_by_surname_desc(names
     """Returns names list sorted desc by surname"""
     r.. s..(names, key=l.... x: x.s..(" ")[1], reverse = T..)
 
 
-___ shortest_first_name(names):
+___ shortest_first_name(names
     """Returns the shortest first name (str)"""
     r.. s..(names, key=l.... x: l..(x.s..(" ")[0]))[0].s..(" ")[0]
 

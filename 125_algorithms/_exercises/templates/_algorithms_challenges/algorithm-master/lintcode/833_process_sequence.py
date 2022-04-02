@@ -4,7 +4,7 @@ c_ Solution:
     @param queries: Sequence of queries
     @return: Return the number of processes
     """
-    ___ numberOfProcesses  logs, queries):
+    ___ numberOfProcesses  logs, queries
         time    # list
 
         # 0: end, 1: start, 2: in progress

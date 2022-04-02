@@ -6,7 +6,7 @@ ____ functools _______ total_ordering
 c_ Account:
     'A simple account class'
 
-    ___ - , owner, amount=0):
+    ___ - , owner, amount=0
         'This is the constructor that lets us create objects from this class'
         owner = owner
         amount = amount
@@ -19,8 +19,8 @@ c_ Account:
         r.. 'Account of {} with starting amount: {}'.f..(owner,
                                                                amount)
 
-    ___ add_transaction  amount):
-        __ n.. isi..(amount, i..):
+    ___ add_transaction  amount
+        __ n.. isi..(amount, i..
             r.. ValueError('please use int for amount')
         _transactions.a..(amount)
 
@@ -31,19 +31,19 @@ c_ Account:
     ___ __len__
         r.. l..(_transactions)
 
-    ___ __getitem__  position):
+    ___ __getitem__  position
         r.. _transactions[position]
 
-    ___ __eq__  other):
+    ___ __eq__  other
         r.. balance __ other.balance
 
-    ___ __lt__  other):
+    ___ __lt__  other
         r.. balance < other.balance
 
-    ___ __add__  other):
+    ___ __add__  other
         owner = '{}&{}'.f..(owner, other.owner)
         start_amount = amount + other.amount
         acc = Account(owner, start_amount)
-        ___ t __ l..(self) + l..(other):
+        ___ t __ l..(self) + l..(other
             acc.add_transaction(t)
         r.. acc

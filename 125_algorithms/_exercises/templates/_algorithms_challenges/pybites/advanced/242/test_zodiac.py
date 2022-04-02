@@ -15,26 +15,26 @@ TMP = os.getenv("TMP", "/tmp")
 PATH = Path(TMP, "zodiac.json")
 
 
-@p__.f..(scope='module')
+?p__.f..(scope='module')
 ___ signs
     __ n.. PATH.exists
         urlretrieve(URL, PATH)
-    w__ open(PATH) __ f:
+    w__ o.. PATH) __ f:
         data = json.loads(f.read())
     r.. get_signs(data)
 
 
 # write your pytest code here ...
-___ test_named_tuple(signs):
+___ test_named_tuple(signs
     ... l..(Sign._fields) __ l..('name compatibility famous_people sun_dates'.s..(' '))
     ... repr(signs[0]).startswith('Sign(')
 
 
-___ test_get_signs(signs):
+___ test_get_signs(signs
     ... l..(signs) __ 12
 
 
-___ test_get_sign_with_most_famouse_people(signs):
+___ test_get_sign_with_most_famouse_people(signs
     ... get_sign_with_most_famous_people(signs) __ ('Scorpio', 35)
 
 
@@ -44,7 +44,7 @@ ___ test_get_sign_with_most_famouse_people(signs):
     ('Aries', 'Capricorn', F..),
     ('Aries', 'Aquarius', T..)
 ])
-___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
+___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result
     ... signs_are_mutually_compatible(signs, sgn1, sgn2) __ result
 
 
@@ -74,6 +74,6 @@ ___ test_signs_are_mutually_compatible(signs, sgn1, sgn2, result):
     ([2, 19], 'Pisces'),
     ([3, 20], 'Pisces')
 ])
-___ test_get_sign_by_date(signs, dt, result):
+___ test_get_sign_by_date(signs, dt, result
     m, d = dt
     ... get_sign_by_date(signs, d__ y.._2000,  m.._m,  d.._d)) __ result

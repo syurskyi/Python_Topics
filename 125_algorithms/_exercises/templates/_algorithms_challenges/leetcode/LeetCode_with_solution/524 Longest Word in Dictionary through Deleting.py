@@ -27,7 +27,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ findLongestWord  s, d):
+    ___ findLongestWord  s, d
         """
         Compare subsequence: O(|S|) (two pointers)
         Then iterate d, check subsequence: O(|S||d|)
@@ -41,7 +41,7 @@ c_ Solution:
         :rtype: str
         """
         h = defaultdict(l..)
-        ___ d_idx, w __ e..(d):
+        ___ d_idx, w __ e..(d
             w_idx = 0
             h[w[w_idx]].a..((d_idx, w_idx))
 
@@ -51,7 +51,7 @@ c_ Solution:
             ___ d_idx, w_idx __ lst:
                 w = d[d_idx]
                 w_idx += 1
-                __ w_idx >= l..(w):
+                __ w_idx >= l..(w
                     # if len(w) >= len(ret) and w < ret:  # error
                     ret = m..(ret, w, key=l.... x: (-l..(x), x))  # compare with primary and secondary key
                 ____:

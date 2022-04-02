@@ -1,10 +1,10 @@
-___ checkdupsorting(myarray):
+___ checkdupsorting(myarray
 	myarray.s..()
 	print(myarray)
-	___ i __ r..(0, l..(myarray) - 1):
+	___ i __ r..(0, l..(myarray) - 1
 		#print "in for loop:", myarray
 		# #print "comparing", myarray[i],"and",myarray[i + 1]
-		__(myarray[i] __ myarray[i + 1]):
+		__(myarray[i] __ myarray[i + 1]
 			print("Duplicates present:", myarray[i])
 			r..
 			print("There are No duplicates present in the given array.")
@@ -14,7 +14,7 @@ checkdupsorting(myarray)
 
 # #####################################################################################################################
 
-___ getfirstnonrepeated(myarray):
+___ getfirstnonrepeated(myarray
     print("Given array:", myarray)
     tab    # dict  # hash
     # #print "tab created:", tab
@@ -42,9 +42,9 @@ getfirstnonrepeated("abccdef")
 ____ nose.tools _______ assert_equal
 
 
-c_ AnagramTest(o..):
+c_ AnagramTest(o..
 
-    ___ test  sol):
+    ___ test  sol
         assert_equal(sol('go go go', 'gggooo'), T..)
         assert_equal(sol('abc', 'cba'), T..)
         assert_equal(sol('hi man', 'hi     man'), T..)
@@ -67,7 +67,7 @@ t.test(anagram2)
 
 # #####################################################################################################################
 
-___ balance_check(s):
+___ balance_check(s
     # Check is even number of brackets
     __ l..(s) % 2 != 0:
         r.. F..
@@ -76,7 +76,7 @@ ___ balance_check(s):
     opening = s..('([{')
 
     # Matching Pairs
-    matches = s..([('(', ')'), ('[', ']'), ('{', '}')])
+    matches = s..([('(', ')'), (' ', ' '), ('{', '}')])
 
     # Use a list as a "Stack"
     stack    # list
@@ -120,9 +120,9 @@ RUN THIS CELL TO TEST YOUR SOLUTION
 ____ nose.tools _______ assert_equal
 
 
-c_ TestBalanceCheck(o..):
+c_ TestBalanceCheck(o..
 
-    ___ test  sol):
+    ___ test  sol
         assert_equal(sol('[](){([[[]]])}('), F..)
         assert_equal(sol('[{{{(())}}}]((()))'), T..)
         assert_equal(sol('[[[]])]'), F..)
@@ -137,7 +137,7 @@ t.test(balance_check)
 # #####################################################################################################################
 
 # tail recursion
-___ tail(n):
+___ tail(n
     # base case
     __ n __ 0:
         r..
@@ -149,7 +149,7 @@ ___ tail(n):
     tail(n - 1)
 
 
-___ head(n):
+___ head(n
     # base case
     __ n __ 0:
         r..

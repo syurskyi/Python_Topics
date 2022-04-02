@@ -23,7 +23,7 @@ True
 
 
 c_ Solution:
-    ___ nextClosestTime  time):
+    ___ nextClosestTime  time
         """
         :type time: str
         :rtype: str
@@ -31,13 +31,13 @@ c_ Solution:
         __ n.. (
             time a.. l..(time) __ 5 a.. time[2] __ ':' a..
             0 <= i..(time[:2]) < 24 a.. 0 <= i..(time[3:]) < 60
-        ):
+
             r.. ''
 
-        times = [i..(t) ___ t __ time __ t != ':']
+        times = [i..(t) ___ t __ time __ t != ':' 
         d..    # list
 
-        ___ a __ s..(times):
+        ___ a __ s..(times
             __ d.. a.. a __ d..[-1]:
                 _____
 
@@ -46,7 +46,7 @@ c_ Solution:
         ids = [d...index(t) ___ t __ times]
         ids[-1] += 1
 
-        w.... n.. is_valid(ids, d..):
+        w.... n.. is_valid(ids, d..
             ids[-1] += 1
 
         h = d..[ids[0]] * 10 + d..[ids[1]]
@@ -57,7 +57,7 @@ c_ Solution:
             '0' + s..(m) __ m < 10 ____ s..(m)
         )
 
-    ___ is_valid  ids, d..):
+    ___ is_valid  ids, d..
         n = l..(d..)
         carry = 0
         i = l..(ids) - 1

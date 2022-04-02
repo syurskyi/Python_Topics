@@ -1,4 +1,4 @@
-___ generate_affiliation_link(url):
+___ generate_affiliation_link(url
 
 
 

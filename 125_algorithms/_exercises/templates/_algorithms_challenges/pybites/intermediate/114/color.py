@@ -21,12 +21,12 @@ c_ Color:
     Takes the string of a color name and returns its RGB value.
     """
 
-    ___ - , color):
+    ___ - , color
         color = color
         rgb = COLOR_NAMES.get(color.upper())
 
     @staticmethod
-    ___ hex2rgb(hex_value):
+    ___ hex2rgb(hex_value
         """Class method that converts a hex value into an rgb one"""
         __ t..(hex_value) != s.. o. l..(hex_value) != 7:
             r.. ValueError("Hex value must be length 6 string starting with #")
@@ -35,7 +35,7 @@ c_ Color:
 
         values    # list
 
-        ___ i __ r..(1,l..(hex_value),2):
+        ___ i __ r..(1,l..(hex_value),2
             h = hex_value[i:i + 2]
             ___
                 value = i..(h,16)
@@ -62,7 +62,7 @@ c_ Color:
 
 
     @staticmethod
-    ___ rgb2hex(rgb_value):
+    ___ rgb2hex(rgb_value
         """Class method that converts an rgb value into a hex one"""
         __ t..(rgb_value) n.. __ [l..,t..] o. l..(rgb_value) != 3:
             r.. ValueError("rgb value must be list or tuple of length 3")
@@ -73,7 +73,7 @@ c_ Color:
             __ n.. 0 <= value <= 255:
                 r.. ValueError("Invalid value")
 
-            hex_value = f"{hex(value):0<2}"
+            hex_value = f"{hex(value0<2}"
             hex_value = hex_value[2:]
             __ hex_value __ '0':
                 hex_value = hex_value.zfill(2)

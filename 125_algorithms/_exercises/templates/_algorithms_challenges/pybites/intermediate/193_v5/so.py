@@ -4,13 +4,13 @@ ____ bs4 _______ BeautifulSoup
 cached_so_url = 'https://bit.ly/2IMrXdp'
 
 
-___ load_page(url):
+___ load_page(url
     """Download the blog html and return its decoded content"""
     w__ requests.Session() __ session:
-        r.. session.get(url).content.decode('utf-8')
+        r.. session.get(url).content.d.. 'utf-8')
 
 
-___ top_python_questions(url=cached_so_url):
+___ top_python_questions(url=cached_so_url
     """Use requests to retrieve the url / html,
        parse the questions out of the html with BeautifulSoup,
        filter them by >= 1m views ("..m views").

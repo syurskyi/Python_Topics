@@ -4,8 +4,8 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ reconstructQueue  people):
+c_ Solution(o..
+    ___ reconstructQueue  people
         res    # list
         people.s..(key=l.... x: (-x[0], x[1]))
         ___ p __ people:

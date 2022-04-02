@@ -10,7 +10,7 @@ whole = [[1, 1, 1],
          [1, 0, 1],
          [1, 1, 1]]
 
-___ get_others(map_, r, c):
+___ get_others(map_, r, c
     """Go through the map and check the size of the island
        (= summing up all the 1s that are part of the island)
 
@@ -90,7 +90,7 @@ ___ get_others(map_, r, c):
     r.. nums
 
 
-___ island_size(map_):
+___ island_size(map_
     """Hint: use the get_others helper
 
     Input: the map
@@ -99,8 +99,8 @@ ___ island_size(map_):
     perimeter = 0
     # your code here
     #print(len(map_[0]))
-    ___ r, row __ e..(map_):
-        ___ c, column __ e..(row):
+    ___ r, row __ e..(map_
+        ___ c, column __ e..(row
             __ map_[r][c] __ 1:
                 print(r,c)
                 perimeter += get_others(map_, r, c)

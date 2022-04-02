@@ -4,14 +4,14 @@ Created on Aug 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ checkRecord  s):
+c_ Solution(o..
+    ___ checkRecord  s
         """
         :type s: str
         :rtype: bool
         """
         absent = F..
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c __ 'A':
                 __ n.. absent:
                     absent = T..

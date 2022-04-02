@@ -5,14 +5,14 @@ Created on Feb 22, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ invertTree  root):
+c_ Solution(o..
+    ___ invertTree  root
         """
         :type root: TreeNode
         :rtype: TreeNode
@@ -24,7 +24,7 @@ c_ Solution(o..):
         root.right = left
         r.. root
     
-    ___ invertTreeNonRec  root):
+    ___ invertTreeNonRec  root
         __ n.. root: r.. N..
         stack = [root]
         w.... stack:

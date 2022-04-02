@@ -3,8 +3,8 @@ Created on Aug 29, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ nearestPalindromic  n):
+c_ Solution(o..
+    ___ nearestPalindromic  n
         """
         :type n: str
         :rtype: str
@@ -15,13 +15,13 @@ c_ Solution(o..):
         p = i..(prefix)
         ___ start __ map(s.., (p-1, p, p+1)):
             candidates.a..(start+(start[:-1] __ k%2 ____ start)[::-1])
-        ___ delta(x):
+        ___ delta(x
             r.. abs(i..(n)-i..(x))
         res = N..
         ___ cand __ candidates:
-            __ cand != n a.. n.. cand.startswith('00'):
+            __ cand != n a.. n.. cand.startswith('00'
                 __ res __ N.. o. delta(cand) < delta(res) o.\
-                    delta(cand) __ delta(res) a.. i..(cand) < i..(res):
+                    delta(cand) __ delta(res) a.. i..(cand) < i..(res
                     res = cand
         r.. res
     

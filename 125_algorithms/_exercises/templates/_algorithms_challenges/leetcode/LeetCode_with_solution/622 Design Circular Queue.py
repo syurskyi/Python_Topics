@@ -26,7 +26,7 @@ isFull(): Checks whether the circular queue is full or not.
 
 c_ MyCircularQueue:
 
-    ___ - , k: i..):
+    ___ - , k: i..
         """
         Initialize your data structure here. Set the size of the queue to be k.
         """

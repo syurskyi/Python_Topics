@@ -18,8 +18,8 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ nthSuperUglyNumber  n, primes):
+c_ Solution(o..
+    ___ nthSuperUglyNumber  n, primes
         """
         DP O(kn)
         :type n: int
@@ -31,28 +31,28 @@ c_ Solution(o..):
         ret[0] = 1
         # for each prime, a pointer pointing to the value of next unused number in the result
         idxes = [0 ___ _ __ x..(k)]
-        ___ i __ x..(1, n):
-            ___ j __ x..(k):
+        ___ i __ x..(1, n
+            ___ j __ x..(k
                 ret[i] = m..(ret[i], primes[j]*ret[idxes[j]])
 
-            ___ j __ x..(k):
+            ___ j __ x..(k
                 __ ret[i] __ primes[j]*ret[idxes[j]]:
                     idxes[j] += 1
 
         r.. ret[n-1]
 
 
-c_ QueueWrapper(o..):
-    ___ - , idx, q):
+c_ QueueWrapper(o..
+    ___ - , idx, q
         idx = idx
         q = q
 
-    ___ __cmp__  other):
+    ___ __cmp__  other
         r.. q[0] - other.q[0]
 
 
-c_ SolutionHeap(o..):
-    ___ nthSuperUglyNumber  n, primes):
+c_ SolutionHeap(o..
+    ___ nthSuperUglyNumber  n, primes
         """
         O(k lg k) + O(nk)
         :type n: int
@@ -64,7 +64,7 @@ c_ SolutionHeap(o..):
         dic = {e.idx: e ___ e __ h}
 
         heapq.heapify(h)
-        ___ _ __ x..(n-1):
+        ___ _ __ x..(n-1
             mini = heapq.heappop(h)
             ret = mini.q.popleft()
             ___ i __ x..(mini.idx, l..(primes)):

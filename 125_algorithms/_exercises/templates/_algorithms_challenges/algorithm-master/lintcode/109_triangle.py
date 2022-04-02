@@ -6,13 +6,13 @@ c_ Solution:
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
     """
-    ___ minimumTotal  triangle):
+    ___ minimumTotal  triangle
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
         r.. memo_search(0, 0, triangle, {})
 
-    ___ memo_search  depth, start, triangle, memo):
+    ___ memo_search  depth, start, triangle, memo
         __ depth __ l..(triangle) - 1:
             r.. triangle[depth][start]
 
@@ -39,7 +39,7 @@ c_ Solution:
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
     """
-    ___ minimumTotal  triangle):
+    ___ minimumTotal  triangle
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
@@ -48,11 +48,11 @@ c_ Solution:
         dp = [[INFINITY] * (m + 1) ___ _ __ r..(2)]
 
         prev = curr = 0
-        ___ i __ r..(1, m + 1):
+        ___ i __ r..(1, m + 1
             prev = curr
             curr = 1 - curr
 
-            ___ j __ r..(1, i + 1):
+            ___ j __ r..(1, i + 1
                 """
                 dp[prev][j] == dp[i - 1][j]
                 dp[curr][j] == dp[i][j]
@@ -81,7 +81,7 @@ c_ Solution:
     @param: triangle: a list of lists of integers
     @return: An integer, minimum path sum
     """
-    ___ minimumTotal  triangle):
+    ___ minimumTotal  triangle
         __ n.. triangle o. n.. triangle[0]:
             r.. 0
 
@@ -90,11 +90,11 @@ c_ Solution:
         dp = [[INFINITY] * (m + 1) ___ _ __ r..(m + 1)]
 
         prev = curr = 0
-        ___ i __ r..(m - 1, -1, -1):
+        ___ i __ r..(m - 1, -1, -1
             prev = curr
             curr = 1 - curr
 
-            ___ j __ r..(i + 1):
+            ___ j __ r..(i + 1
                 """
                 dp[prev][j] == dp[i + 1][j]
                 dp[curr][j] == dp[i][j]

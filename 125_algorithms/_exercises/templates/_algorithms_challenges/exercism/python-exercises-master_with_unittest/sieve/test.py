@@ -5,7 +5,7 @@ ____ sieve _______ sieve
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ SieveTest(unittest.TestCase):
+c_ SieveTest(unittest.TestCase
     ___ test_no_primes_under_two
         assertEqual(sieve(1), [])
 

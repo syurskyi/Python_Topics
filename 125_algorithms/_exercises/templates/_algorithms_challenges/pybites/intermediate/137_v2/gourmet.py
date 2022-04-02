@@ -96,7 +96,7 @@ mapping = {'red': RED_WINES,'white': WHITE_WINES,'sparkling': SPARKLING_WINES,'a
 
 
 
-___ _calculate_similarity(wine,cheese):
+___ _calculate_similarity(wine,cheese
     wine_length = l..(wine)
     cheese_length = l..(cheese)
     
@@ -109,7 +109,7 @@ ___ _calculate_similarity(wine,cheese):
 
     r.. numerator/denominator
 
-___ best_match_per_wine(wine_type="all"):
+___ best_match_per_wine(wine_type="all"
     """ wine cheese pair with the highest match score
     returns a tuple which contains wine, cheese, score
     """
@@ -148,7 +148,7 @@ ___ match_wine_5cheeses
     ('Zinfandel', ['Caithness', 'Bel Paese', 'Ilchester', 'Limburger', 'Lancashire'])
     ]
     """
-    all_wines = mapping['all']
+    all_wines = mapping 'all'
     wine_cheeses = defaultdict(l..)
     
     results    # list

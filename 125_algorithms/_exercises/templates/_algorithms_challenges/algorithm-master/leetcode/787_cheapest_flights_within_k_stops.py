@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findCheapestPrice  n, flights, src, dst, K):
+    ___ findCheapestPrice  n, flights, src, dst, K
         """
         :type n: int
         :type flights: List[List[int]]
@@ -12,7 +12,7 @@ c_ Solution:
         costs = [f__('inf')] * n
         min_cost[src] = costs[src] = 0
 
-        ___ _ __ r..(K + 1):
+        ___ _ __ r..(K + 1
             ___ u, v, cost __ flights:
                 costs[v] = m..(costs[v], min_cost[u] + cost)
             min_cost = costs
@@ -21,7 +21,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ findCheapestPrice  n, flights, src, dst, K):
+    ___ findCheapestPrice  n, flights, src, dst, K
         """
         :type n: int
         :type flights: List[List[int]]
@@ -45,8 +45,8 @@ c_ Solution:
             __ start __ src a.. cost < dp[end][0]:
                 dp[end][0] = cost
 
-        ___ k __ r..(1, K + 1):
-            ___ i __ r..(n):
+        ___ k __ r..(1, K + 1
+            ___ i __ r..(n
                 dp[i][k] = dp[i][k - 1]
 
             ___ start, end, cost __ flights:

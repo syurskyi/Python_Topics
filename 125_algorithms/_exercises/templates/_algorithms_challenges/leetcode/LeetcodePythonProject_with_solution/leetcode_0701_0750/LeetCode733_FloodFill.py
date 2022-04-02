@@ -3,8 +3,8 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ floodFill  image, sr, sc, newColor):
+c_ Solution(o..
+    ___ floodFill  image, sr, sc, newColor
         """
         :type image: List[List[int]]
         :type sr: int
@@ -18,10 +18,10 @@ c_ Solution(o..):
         helper(image, sr, sc, oldColor, newColor)
         r.. image
     
-    ___ helper  image, i, j, oldColor, newColor):
+    ___ helper  image, i, j, oldColor, newColor
         m, n = l..(image), l..(image[0])
         image[i][j] = newColor
-        ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
+        ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
             __ 0 <= x < m a.. 0 <= y < n a.. image[x][y] __ oldColor:
                 helper(image, x, y, oldColor, newColor)
     

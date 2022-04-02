@@ -29,7 +29,7 @@ UPPER_SLICE = "=== Upper bread slice ==="
 LOWER_SLICE = "=== Lower bread slice ==="
 
 
-___ sandwich_v1(func):
+___ sandwich_v1(func
     """Write a decorator that prints UPPER_SLICE and
        LOWER_SLICE before and after calling the function (func)
        that is passed in  (@wraps is to preserve the original
@@ -42,7 +42,7 @@ ___ sandwich_v1(func):
         r.. result
     r.. wrapped
 
-___ sandwich_v2(func):
+___ sandwich_v2(func
     """Write a decorator that prints UPPER_SLICE and
        LOWER_SLICE before and after calling the function (func)
        that is passed in  (@wraps is to preserve the original
@@ -55,9 +55,9 @@ ___ sandwich_v2(func):
     r.. wrapped
 
 @sandwich_v2
-___ add_ingredients(ingredients):
+___ add_ingredients(ingredients
     print(' / '.j..(ingredients))
     r.. l..(ingredients)
 
-ingredients = ['bacon', 'lettuce', 'tomato']
+ingredients =  'bacon', 'lettuce', 'tomato'
 print(add_ingredients(ingredients))

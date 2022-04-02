@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ titleToNumber  s):
+c_ Solution(o..
+  ___ titleToNumber  s
     """
     :type s: str
     :rtype: int
@@ -10,7 +10,7 @@ c_ Solution(o..):
     s = s.u..
     ret = 0
     b = 0
-    ___ c __ r..(s):
+    ___ c __ r..(s
       ret += letters[c] * 26 ** (b)
       b += 1
     r.. ret

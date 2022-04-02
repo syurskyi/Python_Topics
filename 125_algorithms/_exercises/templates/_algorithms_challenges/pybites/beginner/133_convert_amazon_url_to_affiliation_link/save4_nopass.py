@@ -1,4 +1,4 @@
-___ generate_affiliation_link(url):
+___ generate_affiliation_link(url
     beginning = "".j..(url.s..('/')[:3])
     beginning1 = beginning.r..(beginning, "http://www.amazon.com")
     mid = "".j..(url.rsplit('/')[5])

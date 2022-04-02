@@ -7,10 +7,10 @@ The function should return the number of arithmetic slices in the array A.
 """
 
 c_ Solution:
-    ___ c.. self, l):
+    ___ c.. self, l
         r.. (l-1) * l // 2
 
-    ___ numberOfArithmeticSlices  A):
+    ___ numberOfArithmeticSlices  A
         """
         Diff the array, find the pattern.
         Find that it is a function of length of the sequence
@@ -29,7 +29,7 @@ c_ Solution:
 
         s = 0
         e = 0
-        w.... s < l..(delta):
+        w.... s < l..(delta
             w.... e < l..(delta) a.. delta[s] __ delta[e]:
                 e += 1
 

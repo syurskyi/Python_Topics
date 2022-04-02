@@ -5,14 +5,14 @@ Created on Mar 15, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ verticalOrder  root):
+c_ Solution(o..
+    ___ verticalOrder  root
         __ n.. root: r.. []
         hashmap    # dict
         result    # list
@@ -30,7 +30,7 @@ c_ Solution(o..):
                 queue.a..((level-1, node.left))
             __ node.right:
                 queue.a..((level+1, node.right))
-        ___ i __ r..(minLevel, maxLevel+1):
+        ___ i __ r..(minLevel, maxLevel+1
             result.a..(hashmap[i])
         r.. result
     

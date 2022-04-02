@@ -4,15 +4,15 @@ _______ __
 TODAY = date(2018, 11, 12)
 
 
-___ extract_dates(data):
+___ extract_dates(data
     """Extract unique dates from DB table representation as shown in Bite"""
 
     data = data.s..
 
     
     dates = s..()
-    lines = data.splitlines()
-    ___ i,line __ e..(lines):
+    lines = data.s..
+    ___ i,line __ e..(lines
         __ i > 2 a.. i != l..(lines) - 1:
             date_ = __.s..(r'^\s*\|\s(\S+)\s\|',line).group(1)
             year,month,day = map(i..,date_.s..("-"))
@@ -28,7 +28,7 @@ ___ extract_dates(data):
 
 
 
-___ calculate_streak(dates):
+___ calculate_streak(dates
     """Receives sequence (set) of dates and returns number of days
        on coding streak.
 

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ validSquare  p1, p2, p3, p4):
+    ___ validSquare  p1, p2, p3, p4
         """
         :type p1: List[int]
         :type p2: List[int]
@@ -9,7 +9,7 @@ c_ Solution:
         """
         ps    # list
 
-        ___ p __ (p1, p2, p3, p4):
+        ___ p __ (p1, p2, p3, p4
             __ n.. p:
                 r.. F..
 
@@ -31,7 +31,7 @@ c_ Solution:
             l03 __ l12,
         ))
 
-    ___ get_distance  a, b):
+    ___ get_distance  a, b
         """
         find the size of 'ab'
         """

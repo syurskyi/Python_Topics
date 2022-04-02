@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ spiralOrder  matrix):
+    ___ spiralOrder  matrix
         """
               top
                |
@@ -53,14 +53,14 @@ c_ Solution:
         bottom = l..(matrix) - 1
 
         w.... left <= right a.. top <= bottom:
-            ___ c __ x..(left, right + 1):
+            ___ c __ x..(left, right + 1
                 result.a..(matrix[top][c])
-            ___ r __ x..(top + 1, bottom + 1):
+            ___ r __ x..(top + 1, bottom + 1
                 result.a..(matrix[r][right])
-            ___ c __ x..(right - 1, left - 1, -1):
+            ___ c __ x..(right - 1, left - 1, -1
                 __ top < bottom:  # avoid double scanning the first row
                     result.a..(matrix[bottom][c])
-            ___ r __ x..(bottom - 1, top, -1):
+            ___ r __ x..(bottom - 1, top, -1
                 __ left < right:  # avoid double scanning the first column
                     result.a..(matrix[r][left])
 

@@ -21,8 +21,8 @@ ____ c.. _______ defaultdict, d..
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ findItinerary  tickets):
+c_ Solution(o..
+    ___ findItinerary  tickets
         """
         Euler path:
         An Euler path is a path that uses every edge of a graph exactly once.
@@ -44,7 +44,7 @@ c_ Solution(o..):
         dfs(G, 'JFK', ret)
         r.. l..(ret)
 
-    ___ dfs  G, cur, ret):
+    ___ dfs  G, cur, ret
         w.... G[cur]:
             dfs(G, heapq.heappop(G[cur]), ret)
 
@@ -52,4 +52,4 @@ c_ Solution(o..):
 
 
 __ _______ __ _______
-    ... Solution().findItinerary([["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]) __ ['JFK', 'NRT', 'JFK', 'KUL']
+    ... Solution().findItinerary([["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]) __  'JFK', 'NRT', 'JFK', 'KUL'

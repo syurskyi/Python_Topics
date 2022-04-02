@@ -8,7 +8,7 @@ ____ calculator _______ simple_calculator
     ('5 + 11', 16),
     ('12 + 18', 30),
 ])
-___ test_sum(arg, expected):
+___ test_sum(arg, expected
     ... simple_calculator(arg) __ expected
 
 
@@ -17,7 +17,7 @@ ___ test_sum(arg, expected):
     ('16 - 11', 5),
     ('12 - 18', -6),
 ])
-___ test_subtract(arg, expected):
+___ test_subtract(arg, expected
     ... simple_calculator(arg) __ expected
 
 
@@ -26,7 +26,7 @@ ___ test_subtract(arg, expected):
     ('-5 * -11', 55),
     ('3 * -6', -18),
 ])
-___ test_multiply(arg, expected):
+___ test_multiply(arg, expected
     ... simple_calculator(arg) __ expected
 
 
@@ -35,7 +35,7 @@ ___ test_multiply(arg, expected):
     ('1 / 5', 0.2),
     ('-2 / 175', -0.01),
 ])
-___ test_true_division(arg, expected):
+___ test_true_division(arg, expected
     ... r..(simple_calculator(arg), 2) __ expected
 
 
@@ -44,6 +44,6 @@ ___ test_true_division(arg, expected):
     '1 x 2', 'some random string', '1 / 0',
     'really_bad_data'
 ])
-___ test_bad_inputs(arg):
-    w__ p__.r..(ValueError):
+___ test_bad_inputs(arg
+    w__ p__.r..(ValueError
         simple_calculator(arg)

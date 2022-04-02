@@ -5,9 +5,9 @@ ___ i __ r..(i..(input())):
     #store_str is used to store only the brackets
     store_str    # list
     #para list is used to check whether the character in string is equal to elements of para
-    para = ['(',')','[',']','<','>','{','}']
+    para =  '(',')',' ',' ','<','>','{','}'
     # p Dictionary is used to store the pair of the parenthesis
-    p = {'(':')','[':']','<':'>','{':'}'}
+    p = {'(':')',' ':' ','<':'>','{':'}'}
     
     #here we remove all alphabets, digits and unwanted special characters
     ___ j __ s__:
@@ -20,7 +20,7 @@ ___ i __ r..(i..(input())):
         ___ k __ r..(0, l..(store_str)):
             #try and except are used because if a particular key is not present in dictionary p, it can throw error
             ___
-                __ p[store_str[k]] __ s..(store_str[k+1]):
+                __ p[store_str[k]] __ s..(store_str[k+1]
                     store_str.pop(k)
                     store_str.pop(k)
             ______:

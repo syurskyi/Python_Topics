@@ -13,7 +13,7 @@ index.)
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ jump_TLE  A):
+    ___ jump_TLE  A
         """
         bfs
         :param A: a list of integers
@@ -34,13 +34,13 @@ c_ Solution:
             ___ ind __ current_level:
                 __ ind>=length-1:
                     r.. counter
-                ___ j __ x..(ind+1, ind+A[ind]+1):
+                ___ j __ x..(ind+1, ind+A[ind]+1
                     __ j n.. __ current_level:  # avoid duplicate
                         q.a..(j)
             counter += 1
         r.. counter
 
-    ___ jump  A):
+    ___ jump  A
         """
         Simplified bfs, use pointers to scan the array.
         Algorithm: Two Pointers
@@ -57,7 +57,7 @@ c_ Solution:
         gmax = 0
         w.... end<length:  # when end==length, it has already reached the last item
             __ n.. start<end: r.. 0  # avoid dead loop
-            ___ i __ x..(start, end):
+            ___ i __ x..(start, end
                 gmax = m..(gmax, A[i]+i)
 
             counter += 1

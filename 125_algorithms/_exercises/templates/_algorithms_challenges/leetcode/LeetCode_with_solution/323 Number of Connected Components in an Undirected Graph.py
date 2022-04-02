@@ -5,8 +5,8 @@ simple DFS
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ countComponents  n, edges):
+c_ Solution(o..
+    ___ countComponents  n, edges
         """
         :type n: int
         :type edges: List[List[int]]
@@ -19,14 +19,14 @@ c_ Solution(o..):
 
         visited = [F.. ___ _ __ x..(n)]
         cnt = 0
-        ___ v __ x..(n):
+        ___ v __ x..(n
             __ n.. visited[v]:
                 cnt += 1
                 dfs(V, v, visited)
 
         r.. cnt
 
-    ___ dfs  V, v, visited):
+    ___ dfs  V, v, visited
         visited[v] = T..
         ___ nbr __ V[v]:
             __ n.. visited[nbr]:

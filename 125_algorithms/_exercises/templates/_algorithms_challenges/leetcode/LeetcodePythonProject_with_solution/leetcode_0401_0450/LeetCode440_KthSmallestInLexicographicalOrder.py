@@ -4,8 +4,8 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findKthNumber  n, k):
+c_ Solution(o..
+    ___ findKthNumber  n, k
         curr = 1
         k -= 1
         w.... k > 0:
@@ -18,7 +18,7 @@ c_ Solution(o..):
                 k -= 1
         r.. curr
     
-    ___ calSteps  n, n1, n2):
+    ___ calSteps  n, n1, n2
         steps = 0
         w.... n1 <= n:
             steps += m..(n+1, n2)-n1

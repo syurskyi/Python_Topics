@@ -1,5 +1,5 @@
 d = i..(input())
-a = l..(map(i..,input().s..()))
+a = l.. m..(i..,input().s..()))
 
 w.... l..(a)!= 1:
     m.. = 0

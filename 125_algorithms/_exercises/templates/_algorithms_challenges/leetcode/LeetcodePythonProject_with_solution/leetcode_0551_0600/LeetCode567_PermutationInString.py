@@ -3,8 +3,8 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ checkInclusion  s1, s2):
+c_ Solution(o..
+    ___ checkInclusion  s1, s2
         """
         :type s1: str
         :type s2: str
@@ -16,7 +16,7 @@ c_ Solution(o..):
             hashmap[c] = hashmap.get(c, 0)+1
         left = 0
         hashmap0    # dict
-        ___ i, c __ e..(s2):
+        ___ i, c __ e..(s2
             __ c __ hashmap:
                 w.... left < i a.. c __ hashmap0 a.. hashmap0[c] >= hashmap[c]:
                     hashmap0[s2[left]] -= 1
@@ -31,8 +31,8 @@ c_ Solution(o..):
     
     ___ test
         testCases = [
-            ['ab', 'eidbaooo'],
-            ['ab', 'eidboaoo'],
+             'ab', 'eidbaooo' ,
+             'ab', 'eidboaoo' ,
         ]
         ___ s1, s2 __ testCases:
             print('s1: %s' % s1)

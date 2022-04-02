@@ -4,14 +4,14 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ isPalindrome  head):
+c_ Solution(o..
+  ___ isPalindrome  head
     """
     :type head: ListNode
     :rtype: bool
     """
 
-    ___ reverseList(root):
+    ___ reverseList(root
       pre = N..
       cur = root
       w.... cur:

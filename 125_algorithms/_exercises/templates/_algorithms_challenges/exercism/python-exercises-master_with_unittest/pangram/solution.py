@@ -1,5 +1,5 @@
 ____ s__ _______ ascii_lowercase
 
 
-___ is_pangram(sentence):
+___ is_pangram(sentence
     r.. a..(char __ sentence.l.. ___ char __ ascii_lowercase)

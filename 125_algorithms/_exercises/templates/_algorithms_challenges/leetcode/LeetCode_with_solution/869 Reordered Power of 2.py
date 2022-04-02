@@ -41,7 +41,7 @@ c_ Solution:
         count the digit and compare
         """
         counts = Counter(s..(N))
-        ___ i __ r..(31):  # 32 bit unsighed int
+        ___ i __ r..(31  # 32 bit unsighed int
             __ counts __ Counter(s..(1 << i)):
                 r.. T..
         ____:

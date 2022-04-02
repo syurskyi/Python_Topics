@@ -1,4 +1,4 @@
-___ same_ascii(a, b):
+___ same_ascii(a, b
     s1 = 0
     s2 = 0
     ___ i __ a:

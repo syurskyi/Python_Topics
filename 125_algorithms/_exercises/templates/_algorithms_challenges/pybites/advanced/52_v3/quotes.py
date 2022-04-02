@@ -21,49 +21,49 @@ quotes = [
 ]
 
 
-___ _get_quote(qid):
+___ _get_quote(qid
     """Recommended helper"""
-    r.. [q ___ q __ quotes __ q['id'] __ qid]
+    r.. [q ___ q __ quotes __ q 'id'  __ qid]
 
 
-___ _quote_exists(existing_quote):
+___ _quote_exists(existing_quote
     """Recommended helper"""
-    r.. any(q['quote'] __ existing_quote['quote'] a.. q['movie'] __ existing_quote['movie'] ___ q __ quotes)
+    r.. any(q 'quote'  __ existing_quote 'quote'  a.. q 'movie'  __ existing_quote 'movie'  ___ q __ quotes)
 
 
 ___ _new_id
-    r.. m..(q['id'] ___ q __ quotes) + 1
+    r.. m..(q 'id'  ___ q __ quotes) + 1
 
 
-@app.route('/api/quotes', methods=['GET'])
+@app.route('/api/quotes', methods= 'GET' )
 ___ get_quotes
     r.. jsonify(quotes=quotes)
 
 
-@app.route('/api/quotes/<int:qid>', methods=['GET'])
-___ get_quote(qid):
+@app.route('/api/quotes/<int:qid>', methods= 'GET' )
+___ get_quote(qid
     q = _get_quote(qid)
     __ l..(q) __ 0:
         abort(404)
     r.. jsonify(quotes=q)
 
 
-@app.route('/api/quotes', methods=['POST'])
+@app.route('/api/quotes', methods= 'POST' )
 ___ create_quote
     quote_str = request.json.get('quote')
     movie_str = request.json.get('movie')
     __ n.. quote_str o. n.. movie_str:
         abort(400)
     quote = {'quote': quote_str, 'movie': movie_str}
-    __ _quote_exists(quote):
+    __ _quote_exists(quote
         abort(400)
-    quote['id'] = _new_id()
+    quote 'id'  = _new_id()
     quotes.a..(quote)
     r.. jsonify(quote=quote), 201, {'Location': f'/api/quotes/{quote["id"]}'}
 
 
-@app.route('/api/quotes/<int:qid>', methods=['PUT'])
-___ update_quote(qid):
+@app.route('/api/quotes/<int:qid>', methods= 'PUT' )
+___ update_quote(qid
     q = _get_quote(qid)
     __ l..(q) __ 0:
         abort(404)
@@ -71,19 +71,19 @@ ___ update_quote(qid):
     dirty = F..
     quote_str = request.json.get('quote')
     __ quote_str:
-        q['quote'] = quote_str
+        q 'quote'  = quote_str
         dirty = T..
     movie_str = request.json.get('movie')
     __ movie_str:
-        q['movie'] = movie_str
+        q 'movie'  = movie_str
         dirty = T..
     __ n.. dirty:
         abort(400)
     r.. jsonify(quote=q), 200
 
 
-@app.route('/api/quotes/<int:qid>', methods=['DELETE'])
-___ delete_quote(qid):
+@app.route('/api/quotes/<int:qid>', methods= 'DELETE' )
+___ delete_quote(qid
     q = _get_quote(qid)
     __ l..(q) __ 0:
         abort(404)

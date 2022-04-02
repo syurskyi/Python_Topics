@@ -13,14 +13,14 @@ Note: Time complexity should be O(height of tree).
 
 # Definition for a binary tree node.
 c_ TreeNode:
-  ___ - , x):
+  ___ - , x
       val = x
       left = N..
       right = N..
 
 
 c_ Solution:
-    ___ deleteNode  root, key):
+    ___ deleteNode  root, key
         """
         :type root: TreeNode
         :type key: int
@@ -28,7 +28,7 @@ c_ Solution:
         """
         r.. _delete(root, key)
 
-    ___ _delete  root, key):
+    ___ _delete  root, key
         """
         Pop the left max or right min
         Return the root to keep the parent child relationship
@@ -57,7 +57,7 @@ c_ Solution:
             ____:
                 r..
 
-    ___ _pop_max  root):
+    ___ _pop_max  root
         __ root.right:
             maxa, right = _pop_max(root.right)
             root.right = right
@@ -66,7 +66,7 @@ c_ Solution:
         ____:
             r.. root.val, root.left
 
-    ___ _pop_min  root):
+    ___ _pop_min  root
         __ root.left:
             mini, left = _pop_min(root.left)
             root.left = left
@@ -75,7 +75,7 @@ c_ Solution:
         ____:
             r.. root.val, root.right
 
-    ___ _delete_error  root, key):
+    ___ _delete_error  root, key
         """
         need to know the parent, keep the reference
         need to handle duplicate

@@ -18,7 +18,7 @@ Note: The length of the given binary array will not exceed 50,000.
 
 
 c_ Solution:
-    ___ findMaxLength  nums):
+    ___ findMaxLength  nums
         """
         Look back with map
 
@@ -31,7 +31,7 @@ c_ Solution:
         z = 0
         d = {0: 0}  # diff for nums[:l]
         ret = 0
-        ___ i, e __ e..(nums):
+        ___ i, e __ e..(nums
             __ e __ 1:
                 o += 1
             ____:
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ findMaxLength_error  nums):
+    ___ findMaxLength_error  nums
         """
         starting from both sides, shrinking until equal
 
@@ -53,7 +53,7 @@ c_ Solution:
         """
         n = l..(nums)
         F = [0 ___ _ __ r..(n+1)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             F[i+1] = F[i]
             __ nums[i] __ 0:
                 F[i+1] += 1
@@ -79,7 +79,7 @@ c_ Solution:
         r.. 0
 
 
-    ___ findMaxLength_TLE  nums):
+    ___ findMaxLength_TLE  nums
         """
         scan nums[i:j], check number of 0 (pre-calculated)
         O(n^2)
@@ -96,8 +96,8 @@ c_ Solution:
                 F.a..(F[-1])
 
         ret = 0
-        ___ i __ r..(n):
-            ___ j __ r..(i+1, n+1):
+        ___ i __ r..(n
+            ___ j __ r..(i+1, n+1
                 __ (F[j] - F[i]) * 2 __ j - i:
                     ret = m..(ret, j - i)
 

@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ findItinerary  tickets):
+c_ Solution(o..
+  ___ findItinerary  tickets
     """
     :type tickets: List[List[str]]
     :rtype: List[str]
@@ -17,7 +17,7 @@ c_ Solution(o..):
     ___ k __ graph:
       graph[k] = d..(s..(graph[k]))
 
-    ___ dfs(path, graph, maxLen, start):
+    ___ dfs(path, graph, maxLen, start
       __ l..(path) __ maxLen:
         r.. path + []
       ___ k __ r..(0, l..(graph.get(start, []))):

@@ -1,4 +1,4 @@
-___ is_in_range(n, r):
+___ is_in_range(n, r
     ___ i __ r:
         __ i __ "min":
             s = i

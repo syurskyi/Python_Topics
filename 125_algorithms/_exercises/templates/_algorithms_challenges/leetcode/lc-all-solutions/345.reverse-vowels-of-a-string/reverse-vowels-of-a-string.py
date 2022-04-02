@@ -1,8 +1,8 @@
 _______ s__
 
 
-c_ Solution(o..):
-  ___ reverseVowels  s):
+c_ Solution(o..
+  ___ reverseVowels  s
     """
     :type s: str
     :rtype: str

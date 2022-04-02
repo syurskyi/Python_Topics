@@ -19,7 +19,7 @@ ___ test_nt2json
     ... t..(output) __ s..
 
     data = json.loads(output)
-    ... data['name'] __ 'PyBites'
-    ... data['founders'][0] __ 'Julian'
-    ... data['tags'][0] __ 'Python'
-    ... data['started'][:4] __ '2016'
+    ... data 'name'  __ 'PyBites'
+    ... data 'founders' [0] __ 'Julian'
+    ... data 'tags' [0] __ 'Python'
+    ... data 'started' [:4] __ '2016'

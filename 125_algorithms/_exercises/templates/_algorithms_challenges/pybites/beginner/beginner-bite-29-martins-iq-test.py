@@ -22,11 +22,11 @@ _______ s__
 ____ e.. _______ E..
 
 
-c_ State(E..):
+c_ State(E..
     ALPHANUMERIC = 1
     NON_ALPHANUMERIC = 2
 
-___ get_index_different_char(chars):
+___ get_index_different_char(chars
     index = 1
     __ chars[0] __ s__.ascii_letters o. s__.d..:
         state = State.ALPHANUMERIC

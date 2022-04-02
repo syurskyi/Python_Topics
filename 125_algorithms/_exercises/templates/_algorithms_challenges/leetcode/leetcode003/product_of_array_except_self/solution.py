@@ -12,8 +12,8 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-c_ Solution(o..):
-    ___ productExceptSelf  nums):
+c_ Solution(o..
+    ___ productExceptSelf  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -32,7 +32,7 @@ c_ Solution(o..):
             ___ c __ rest:
                 m *= c
             res = [m]
-            ___ r __ productExceptSelf(rest):
+            ___ r __ productExceptSelf(rest
                 res.a..(r * nums[0])
             r.. res
 

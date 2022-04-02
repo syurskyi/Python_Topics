@@ -5,14 +5,14 @@ Note: All inputs will be in lower-case.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ anagrams_complicated  strs):
+    ___ anagrams_complicated  strs
         """
         sorting
         :param strs: a list of strings
         :return: a list of strings
         """
         temp = l..(strs)
-        ___ ind, s__ __ e..(temp):
+        ___ ind, s__ __ e..(temp
             __ s__ a.. s__!="":  # avoid case of empty string
                 s__ = [char ___ char __ s__]
                 s__.s..()
@@ -21,7 +21,7 @@ c_ Solution:
 
 
         hash_map    # dict
-        ___ ind, s__ __ e..(temp):
+        ___ ind, s__ __ e..(temp
             indexes = hash_map.get(s__, [])
             indexes.a..(ind)  # side-effect
             hash_map[s__] = indexes
@@ -33,14 +33,14 @@ c_ Solution:
                 result += [strs[i] ___ i __ val]
         r.. result
 
-    ___ anagrams  strs):
+    ___ anagrams  strs
         """
         Algorithm: sort string and hash map
         :param strs: a list of strings
         :return: a list of strings
         """
         hash_map    # dict
-        ___ ind, s__ __ e..(strs):
+        ___ ind, s__ __ e..(strs
             s__ = "".j..(s..(s__))  # string reversing and sorting are a little different
             __ s__ n.. __ hash_map:
                 hash_map[s__] = [ind]

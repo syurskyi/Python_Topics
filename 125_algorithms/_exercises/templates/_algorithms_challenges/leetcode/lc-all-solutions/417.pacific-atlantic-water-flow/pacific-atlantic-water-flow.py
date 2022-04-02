@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ pacificAtlantic  matrix):
+c_ Solution(o..
+  ___ pacificAtlantic  matrix
     """
     :type matrix: List[List[int]]
     :rtype: List[List[int]]
@@ -11,7 +11,7 @@ c_ Solution(o..):
     atlantic = s..()
     ans    # list
 
-    ___ dfs(matrix, visited, i, j):
+    ___ dfs(matrix, visited, i, j
       visited |= {(i, j)}
       ___ di, dj __ [(0, -1), (0, 1), (-1, 0), (1, 0)]:
         ni, nj = i + di, j + dj
@@ -19,10 +19,10 @@ c_ Solution(o..):
           __ matrix[ni][nj] >= matrix[i][j]:
             dfs(matrix, visited, ni, nj)
 
-    ___ i __ r..(n):
+    ___ i __ r..(n
       dfs(matrix, pacific, i, 0)
       dfs(matrix, atlantic, i, m - 1)
-    ___ j __ r..(m):
+    ___ j __ r..(m
       dfs(matrix, pacific, 0, j)
       dfs(matrix, atlantic, n - 1, j)
     r.. l..(pacific & atlantic)

@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ HashHeapqWithLazy:
-    ___ - ):
+    ___ -
         __heap    # list
         __deleted    # dict
         __size = 0
@@ -13,7 +13,7 @@ c_ HashHeapqWithLazy:
     ___ __bool__
         r.. __size > 0
 
-    ___ push  val):
+    ___ push  val
         heapq.heappush(__heap, val)
         __size += 1
 
@@ -24,7 +24,7 @@ c_ HashHeapqWithLazy:
         __size -= 1
         r.. heapq.heappop(__heap)
 
-    ___ remove  val):
+    ___ remove  val
         __ _is_empty
             r..
 
@@ -38,7 +38,7 @@ c_ HashHeapqWithLazy:
         r.. __heap[0]
 
     ___ _is_empty
-        w.... __heap a.. __deleted.get(__heap[0]):
+        w.... __heap a.. __deleted.get(__heap[0]
             val = heapq.heappop(__heap)
             __deleted[val] -= 1
 
@@ -46,7 +46,7 @@ c_ HashHeapqWithLazy:
 
 
 c_ Solution:
-    ___ medianSlidingWindow  nums, k):
+    ___ medianSlidingWindow  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -87,7 +87,7 @@ c_ Solution:
         w.... l..(maxheap) > l..(minheap) + 1:
             minheap.push(-1 * maxheap.pop())
 
-        w.... l..(minheap) > l..(maxheap):
+        w.... l..(minheap) > l..(maxheap
             maxheap.push(-1 * minheap.pop())
 
         r.. -1 * maxheap.top()

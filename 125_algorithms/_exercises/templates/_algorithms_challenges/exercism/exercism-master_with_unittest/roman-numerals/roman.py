@@ -17,12 +17,12 @@ c_ Roman:
     }
 
     @classmethod
-    ___ numeral(cls, arabic):
+    ___ numeral(cls, arabic
         r.. ''.j..([cls.NUMERALS[key]
                         ___ key __ cls.get_components(arabic)])
 
     @classmethod
-    ___ get_components(cls, arabic):
+    ___ get_components(cls, arabic
         components    # list
         ___ key __ r..(s..(cls.NUMERALS.keys())):
             w.... arabic >= key:
@@ -31,5 +31,5 @@ c_ Roman:
         r.. components
 
 
-___ numeral(arabic):
+___ numeral(arabic
     r.. Roman.numeral(arabic)

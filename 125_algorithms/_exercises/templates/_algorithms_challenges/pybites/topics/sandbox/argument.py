@@ -1,4 +1,4 @@
-___ divide_numbers(*, numerator, demoninator ):
+___ divide_numbers(*, numerator, demoninator
     ___
         r.. i..(numerator)/i..(demoninator)
     ______ ZeroDivisionError:

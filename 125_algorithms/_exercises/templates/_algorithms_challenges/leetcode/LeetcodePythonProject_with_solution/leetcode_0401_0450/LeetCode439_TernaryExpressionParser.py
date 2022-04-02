@@ -4,11 +4,11 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ parseTernary  expression):
+c_ Solution(o..
+    ___ parseTernary  expression
         __ n.. expression: r.. ''
         stack    # list
-        ___ i __ r..(l..(expression)-1, -1, -1):
+        ___ i __ r..(l..(expression)-1, -1, -1
             c = expression[i]
             __ stack a.. stack[-1] __ '?':
                 stack.pop()
@@ -23,14 +23,14 @@ c_ Solution(o..):
                 stack.a..(c)
         r.. stack[-1]
     
-    ___ parseTernary_own  expression):
+    ___ parseTernary_own  expression
         __ l..(expression) __ 1:
             r.. expression
         __ expression[0] __ 'T':
             subExp = ''
             i = 2
             count = 0
-            w.... i < l..(expression):
+            w.... i < l..(expression
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':
@@ -43,7 +43,7 @@ c_ Solution(o..):
             subExp = ''
             i = 2
             count = 0
-            w.... i < l..(expression):
+            w.... i < l..(expression
                 __ expression[i] __ '?':
                     count += 1
                 ____ expression[i] __ ':':

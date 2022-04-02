@@ -15,14 +15,14 @@ __author__ = 'Daniel'
 
 
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ rightSideView  root):
+    ___ rightSideView  root
         """
         Binary tree level traversal
         :type root: TreeNode

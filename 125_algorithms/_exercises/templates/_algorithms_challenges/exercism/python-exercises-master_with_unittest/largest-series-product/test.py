@@ -13,7 +13,7 @@ ____ largest_series_product _______ largest_product
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ SeriesTest(unittest.TestCase):
+c_ SeriesTest(unittest.TestCase
     ___ test_finds_the_largest_product_if_span_equals_length
         assertEqual(largest_product("29", 2), 18)
 
@@ -45,7 +45,7 @@ c_ SeriesTest(unittest.TestCase):
         assertEqual(largest_product("99099", 3), 0)
 
     ___ test_rejects_span_longer_than_string_length
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             largest_product("123", 4)
 
     ___ test_reports_1_for_empty_string_and_empty_product_0_span
@@ -55,15 +55,15 @@ c_ SeriesTest(unittest.TestCase):
         assertEqual(largest_product("123", 0), 1)
 
     ___ test_rejects_empty_string_and_nonzero_span
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             largest_product("", 1)
 
     ___ test_rejects_invalid_character_in_digits
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             largest_product("1234a5", 2)
 
     ___ test_rejects_negative_span
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             largest_product("12345", -1)
 
     @unittest.skip("extra-credit")

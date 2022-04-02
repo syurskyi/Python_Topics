@@ -57,10 +57,10 @@ c_ Solution:
         stk    # list
         ___ e __ asteroids:
             w.... stk a.. e < 0 < stk[-1]:
-                __ abs(e) > abs(stk[-1]):
+                __ abs(e) > abs(stk[-1]
                     # -> exploded, <- continues
                     stk.pop()
-                ____ abs(e) __ abs(stk[-1]):
+                ____ abs(e) __ abs(stk[-1]
                     # -> <- both exploded
                     stk.pop()
                     _____
@@ -83,9 +83,9 @@ c_ Solution:
         """
         stk    # list
         n = l..(asteroids)
-        ___ i __ r..(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1
             cur = asteroids[i]
-            w.... stk a.. asteroids[stk[-1]] < 0 a.. cur > 0 a.. abs(asteroids[stk[-1]]) < abs(cur):
+            w.... stk a.. asteroids[stk[-1]] < 0 a.. cur > 0 a.. abs(asteroids[stk[-1]]) < abs(cur
                 stk.pop()
 
             __ stk a.. cur > 0 a.. asteroids[stk[-1]] __ -cur:
@@ -96,7 +96,7 @@ c_ Solution:
                 stk.a..(i)
                 _____
 
-            __ n.. (asteroids[stk[-1]] < 0 a.. cur > 0) o. abs(cur) > abs(asteroids[stk[-1]]):
+            __ n.. (asteroids[stk[-1]] < 0 a.. cur > 0) o. abs(cur) > abs(asteroids[stk[-1]]
                 stk.a..(i)
 
         r.. [

@@ -5,13 +5,13 @@ Created on Mar 29, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
-c_ Solution(o..):
-    ___ plusOne  head):
+c_ Solution(o..
+    ___ plusOne  head
         __ n.. head: r.. ListNode(1)
         newHead = reverse(head)
         carry = 1
@@ -31,7 +31,7 @@ c_ Solution(o..):
             tail.next = ListNode(1)
         r.. reverse(newHead)
     
-    ___ reverse  head):
+    ___ reverse  head
         p1 = head
         p2 = p1.next
         p1.next = N..

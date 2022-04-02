@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isSelfCrossing  x):
+c_ Solution(o..
+  ___ isSelfCrossing  x
     """
     :type x: List[int]
     :rtype: bool

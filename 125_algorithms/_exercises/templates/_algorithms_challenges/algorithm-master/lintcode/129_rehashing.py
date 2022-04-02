@@ -13,7 +13,7 @@ c_ Solution:
     @param hash_table: A list of The first node of linked list
     @return: A list of The first node of linked list which have twice size
     """
-    ___ rehashing  hash_table):
+    ___ rehashing  hash_table
         __ n.. hash_table:
             r..
 

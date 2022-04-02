@@ -22,8 +22,8 @@ c_ Solution:
             r.. nums
 
         ret    # list
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ (i * n + j) % c __ 0:
                     ret.a..([])
                 ret[-1].a..(nums[i][j])

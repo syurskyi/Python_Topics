@@ -4,8 +4,8 @@ Created on Apr 12, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ canPartition  nums):
+c_ Solution(o..
+    ___ canPartition  nums
         sumVal = s..(nums)
         __ sumVal%2 != 0:
             r.. F..
@@ -13,7 +13,7 @@ c_ Solution(o..):
         dp = [F..]*(target+1)
         dp[0] = T..
         ___ num __ nums:
-            ___ i __ r..(target, -1, -1):
+            ___ i __ r..(target, -1, -1
                 __ i-num >= 0 a.. dp[i-num]:
                     dp[i] = T..
         r.. dp[-1]

@@ -74,7 +74,7 @@ result = sorted([words.index(word) for word in duplicate_words])
 
 """
 
-___ get_duplicate_indices(words):
+___ get_duplicate_indices(words
     """Given a list of words, loop through the words and check for each
        word if it occurs more than once.
        If so return the index of its first occurrence.
@@ -91,11 +91,11 @@ ___ get_duplicate_indices(words):
     ___ word __ words:
         ___
             mp = stats[word]
-            mp['count'] += 1
+            mp 'count'  += 1
         ______ KeyError:
             mp = d..()
-            mp['index'] = index
-            mp['count'] = 1
+            mp 'index'  = index
+            mp 'count'  = 1
             stats[word] = mp
         index += 1
     print(stats)
@@ -111,4 +111,4 @@ ___ get_duplicate_indices(words):
     r..(result)
 
 
-print(get_duplicate_indices(['is', 'it', 'true', 'or', 'is', 'it', 'not?']))
+print(get_duplicate_indices( 'is', 'it', 'true', 'or', 'is', 'it', 'not?' ))

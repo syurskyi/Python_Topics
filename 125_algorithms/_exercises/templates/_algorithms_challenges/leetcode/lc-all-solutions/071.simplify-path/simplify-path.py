@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ simplifyPath  path):
+c_ Solution(o..
+  ___ simplifyPath  path
     """
     :type path: str
     :rtype: str

@@ -3,18 +3,18 @@ Created on Oct 8, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ stoneGame  piles):
+c_ Solution(o..
+    ___ stoneGame  piles
         """
         :type piles: List[int]
         :rtype: bool
         """
         n = l..(piles)
         dp = [[0]*n ___ _ __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             dp[i][i] = piles[i]
-        ___ d __ r..(1, n):
-            ___ i __ r..(n-d):
+        ___ d __ r..(1, n
+            ___ i __ r..(n-d
                 dp[i][i+d] = m..(piles[i]-dp[i+1][i+d], piles[i+d]-dp[i][i+d-1])
         r.. dp[0][-1] > 0
     

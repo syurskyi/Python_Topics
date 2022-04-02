@@ -4,7 +4,7 @@ REF: https://blog.csdn.net/zhaohengchuan/article/details/78937943
 
 
 c_ Solution:
-    ___ countParenth  symb, oper):
+    ___ countParenth  symb, oper
         """
         :type symb: list[str]
         :type oper: list[str]
@@ -21,18 +21,18 @@ c_ Solution:
         t = [[0] * n ___ _ __ r..(n)]
         f = [[0] * n ___ _ __ r..(n)]
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ symb[i] __ 'T':
                 t[i][i] = 1
             ____:
                 f[i][i] = 1
 
-        ___ r __ r..(n):
-            ___ l __ r..(r - 1, -1, -1):
+        ___ r __ r..(n
+            ___ l __ r..(r - 1, -1, -1
                 t[l][r] = 0
                 f[l][r] = 0
 
-                ___ i __ r..(l, r):
+                ___ i __ r..(l, r
                     __ oper[i] __ '&':
                         t[l][r] += t[l][i] * t[i + 1][r]
                         f[l][r] += (

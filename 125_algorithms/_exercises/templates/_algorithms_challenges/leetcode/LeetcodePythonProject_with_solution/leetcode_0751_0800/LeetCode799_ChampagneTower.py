@@ -3,8 +3,8 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ champagneTower  poured, query_row, query_glass):
+c_ Solution(o..
+    ___ champagneTower  poured, query_row, query_glass
         """
         :type poured: int
         :type query_row: int
@@ -13,8 +13,8 @@ c_ Solution(o..):
         """
         result = [[0.0]*101 ___ _ __ r..(101)]
         result[0][0] = poured
-        ___ i __ r..(100):
-            ___ j __ r..(i+1):
+        ___ i __ r..(100
+            ___ j __ r..(i+1
                 __ result[i][j] >= 1:
                     result[i+1][j] += (result[i][j]-1)/2.0
                     result[i+1][j+1] += (result[i][j]-1)/2.0

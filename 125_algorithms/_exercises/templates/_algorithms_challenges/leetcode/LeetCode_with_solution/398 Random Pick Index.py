@@ -21,14 +21,14 @@ _______ r__
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - , nums):
+c_ Solution(o..
+    ___ - , nums
         """
         :type nums: List[int]
         """
         A = nums
 
-    ___ pick  target):
+    ___ pick  target
         """
         O(n)
         Reservoir Sampling
@@ -37,7 +37,7 @@ c_ Solution(o..):
         """
         sz = 0
         ret = N..
-        ___ idx, val __ e..(A):
+        ___ idx, val __ e..(A
             __ val __ target:
                 sz += 1
                 p = r__.randrange(0, sz)
@@ -47,15 +47,15 @@ c_ Solution(o..):
         r.. ret
 
 
-c_ SolutionError(o..):
-    ___ - , nums):
+c_ SolutionError(o..
+    ___ - , nums
         """
         Reservoir Sampling
         Assume pick is only called once
         :type nums: List[int]
         """
         d    # dict
-        ___ idx, val __ e..(nums):
+        ___ idx, val __ e..(nums
             __ val n.. __ d:
                 d[val] = (idx, 1)
             ____:
@@ -66,7 +66,7 @@ c_ SolutionError(o..):
                 ____:
                     d[val] = (prev, sz + 1)
 
-    ___ pick  target):
+    ___ pick  target
         """
         :type target: int
         :rtype: int

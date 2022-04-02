@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ countAndSay  N):
+    ___ countAndSay  N
         """
         :type N: int
         :rtype: str
@@ -11,7 +11,7 @@ c_ Solution:
 
         _queue    # list
 
-        ___ _ __ r..(N - 1):
+        ___ _ __ r..(N - 1
             cnt = 0
             char = queue[0]
 

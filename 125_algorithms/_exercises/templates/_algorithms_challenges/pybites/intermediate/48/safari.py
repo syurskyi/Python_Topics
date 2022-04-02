@@ -15,8 +15,8 @@ urllib.request.urlretrieve(
 ___ create_chart
     slack_frequency    # dict
 
-    w__ open(SAFARI_LOGS) __ file:
-        safari_logs = file.readlines()
+    w__ o.. SAFARI_LOGS) __ file:
+        safari_logs = file.r..
         ___ i __ r..(l..(safari_logs)):
             previous = safari_logs[i -1]
             current = safari_logs[i]
@@ -34,12 +34,12 @@ ___ create_chart
 
         bar = ""
         __ l..(value) __ 1:
-            ___ i __ r..(1, value[0] +1):
+            ___ i __ r..(1, value[0] +1
                 bar += "."
             print(key, bar)
         ____:
             j = 1
-            ___ i __ r..(1, value[0] +1):
+            ___ i __ r..(1, value[0] +1
                 snake_num = l..(value) -1
                 __ j <= snake_num:
                     snake_value_at_i = value[j]

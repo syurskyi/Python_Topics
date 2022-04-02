@@ -9,8 +9,8 @@ dict = ["leet", "code"].
 Return true because "leetcode" can be segmented as "leet code".
 """
 
-c_ Solution(o..):
-    ___ wordBreak  s, wordDict):
+c_ Solution(o..
+    ___ wordBreak  s, wordDict
         """
         :type s: str
         :type wordDict: Set[str]
@@ -20,7 +20,7 @@ c_ Solution(o..):
         t = [N.. ___ i __ r..(n)]
         r.. word_break_aux(s, wordDict, n - 1, t)
 
-    ___ word_break_aux  s, wordDict, i, t):
+    ___ word_break_aux  s, wordDict, i, t
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
@@ -29,9 +29,9 @@ c_ Solution(o..):
         ____ t[i] __ n.. N..
             r.. t[i]
         ____:
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 __ (word_break_aux(s, wordDict, j, t) __ T..
-                        a.. s[j + 1:i + 1] __ wordDict):
+                        a.. s[j + 1:i + 1] __ wordDict
                     t[i] = T..
                     r.. T..
             ____:
@@ -40,5 +40,5 @@ c_ Solution(o..):
 
 
 s = Solution()
-print(s.wordBreak('leetcode', ['leet', 'code']))
-print(s.wordBreak('leetcode', ['lee', 'code']))
+print(s.wordBreak('leetcode',  'leet', 'code' ))
+print(s.wordBreak('leetcode',  'lee', 'code' ))

@@ -9,8 +9,8 @@ Note: You may assume that n is not less than 2 and not larger than 58.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ integerBreak  n):
+c_ Solution(o..
+    ___ integerBreak  n
         """
         First visualize the breakdown process into a search tree. The search tree dynamic programming
         Dynamic programming
@@ -28,7 +28,7 @@ c_ Solution(o..):
         """
         F = [N.. ___ _ __ x..(n+1)]
         F[1] = 1
-        ___ i __ x..(2, n+1):
+        ___ i __ x..(2, n+1
             F[i] = m..(
                 m..(F[j] * F[i-j], j * F[i-j], F[j] * (i-j), j * (i-j))
                 ___ j __ x..(1, i/2)

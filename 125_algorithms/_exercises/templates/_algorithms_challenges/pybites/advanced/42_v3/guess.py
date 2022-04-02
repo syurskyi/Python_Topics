@@ -12,7 +12,7 @@ ___ get_random_number
 c_ Game:
     """Number guess class, make it callable to initiate game"""
 
-    ___ - ):
+    ___ -
         """Init _guesses, _answer, _win to set(), get_random_number(), False"""
         _guesses = s..()
         _answer = get_random_number()
@@ -34,7 +34,7 @@ c_ Game:
             print('Should be a number')
             r.. ValueError('Non-digit entered')
         guess = i..(guess)
-        __ n.. (START <= guess <= END):
+        __ n.. (START <= guess <= END
             print('Number not in range')
             r.. ValueError('Out of range')
         __ guess __ _guesses:
@@ -43,7 +43,7 @@ c_ Game:
         _guesses.add(guess)
         r.. guess
 
-    ___ _validate_guess  guess):
+    ___ _validate_guess  guess
         """Verify if guess is correct, print the following when applicable:
            {guess} is correct!
            {guess} is too low
@@ -66,7 +66,7 @@ c_ Game:
                 this_guess = guess()
             ______ V..
                 _____
-            __ _validate_guess(this_guess):
+            __ _validate_guess(this_guess
                 _win = T..
                 r..
         print _*Guessed {MAX_GUESSES} times, answer was {_answer}')

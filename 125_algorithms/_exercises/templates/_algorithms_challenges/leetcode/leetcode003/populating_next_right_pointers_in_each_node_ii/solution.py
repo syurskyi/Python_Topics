@@ -9,7 +9,7 @@
 c_ Solution:
     # @param root, a tree node
     # @return nothing
-    ___ connect  root):
+    ___ connect  root
         head = N..  # Head node of the next level
         prev = N..
         w.... root __ n.. N..

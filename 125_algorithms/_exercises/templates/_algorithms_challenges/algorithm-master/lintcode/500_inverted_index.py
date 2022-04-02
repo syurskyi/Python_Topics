@@ -8,7 +8,7 @@ class Document:
 c_ Solution:
     # @param {Document[]} docs a list of documents
     # @return {dict(string, int[])} an inverted index
-    ___ invertedIndex  docs):
+    ___ invertedIndex  docs
         __ n.. docs o. l..(docs) < 1:
             r.. {}
         result    # dict

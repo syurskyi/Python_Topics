@@ -4,21 +4,21 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ splitArray  nums, m):
+c_ Solution(o..
+    ___ splitArray  nums, m
         left, right = 0, 0
         ___ num __ nums:
             left = m..(left, num)
             right += num
         w.... left < right:
             mid = (left+right)//2
-            __ doable(nums, m-1, mid):
+            __ doable(nums, m-1, mid
                 right = mid
             ____:
                 left = mid+1
         r.. left
     
-    ___ doable  nums, cuts, maxVal):
+    ___ doable  nums, cuts, maxVal
         acc = 0
         ___ num __ nums:
             __ num > maxVal:

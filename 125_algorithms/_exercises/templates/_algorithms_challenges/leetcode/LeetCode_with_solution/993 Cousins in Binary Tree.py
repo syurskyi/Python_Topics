@@ -33,14 +33,14 @@ Each node has a unique integer value from 1 to 100.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         pi    # list
         depths    # list
 
@@ -55,7 +55,7 @@ c_ Solution:
         r.. pi[0] != pi[1] a.. depths[0] __ depths[1]
 
 
-    ___ dfs  pi, node, x, depth):
+    ___ dfs  pi, node, x, depth
         __ n.. node:
             r..
 

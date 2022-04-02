@@ -3,8 +3,8 @@
 # @return a bool
 # def isBadVersion(version):
 
-c_ Solution(o..):
-  ___ firstBadVersion  n):
+c_ Solution(o..
+  ___ firstBadVersion  n
     """
     :type n: int
     :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
     hi = n
     w.... lo < hi:
       mid = lo + (hi - lo) / 2
-      __ isBadVersion(mid):
+      __ isBadVersion(mid
         hi = mid
       ____:
         lo = mid + 1

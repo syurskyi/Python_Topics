@@ -33,7 +33,7 @@ ____ threading _______ Lock
 
 
 c_ Foo:
-    ___ - ):
+    ___ -
         """
         Two locks
         """
@@ -63,7 +63,7 @@ c_ Foo:
 
 
 c_ FooError:
-    ___ - ):
+    ___ -
         """
         Have a counter, and only the corresponding method can change update the
         counter.

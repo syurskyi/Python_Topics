@@ -4,14 +4,14 @@ Created on Feb 6, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ maxPathSum  root):
+c_ Solution(o..
+    ___ maxPathSum  root
         """
         :type root: TreeNode
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
         __ n.. root: r.. 0
         r.. helper(root)[1]
     
-    ___ helper  root):
+    ___ helper  root
         __ n.. root:
             r.. 0, f__('-inf')
         left  = helper(root.left)

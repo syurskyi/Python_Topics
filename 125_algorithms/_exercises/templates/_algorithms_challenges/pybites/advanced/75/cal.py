@@ -1,10 +1,10 @@
-___ get_weekdays(calendar_output):
+___ get_weekdays(calendar_output
     """Receives a multiline Unix cal output and returns a mapping (dict) where
        keys are int days and values are the 2 letter weekdays (Su Mo Tu ...)"""
     
 
     mapping    # dict
-    ___ i,line __ e..(calendar_output.s...splitlines()):
+    ___ i,line __ e..(calendar_output.s...s..()):
         __ i __ 0:
             _____
         ____ i __ 1:
@@ -15,7 +15,7 @@ ___ get_weekdays(calendar_output):
             print(numbers)
 
 
-            ___ day,number __ z..(days,numbers):
+            ___ day,number __ z..(days,numbers
                 __ number != 0:
                     mapping[number] = day
 

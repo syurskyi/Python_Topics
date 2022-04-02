@@ -18,13 +18,13 @@ BITES = {6: 'PyBites Die Hard',
 BITES_DONE = {6, 10, 16, 18, 21}
 
 
-c_ NoBitesAvailable(E..):
+c_ NoBitesAvailable(E..
     """There are no more Bites available to pick from"""
 
 
 c_ Promo:
 
-    ___ - ):
+    ___ -
         # updated Bite to make local copies (avoid globals!)
         all_bites = BITES.c..
         bites_done = BITES_DONE.c..

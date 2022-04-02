@@ -1,5 +1,5 @@
-c_ Node(o..):
-    ___ - , value):
+c_ Node(o..
+    ___ - , value
         p..
 
     ___ value
@@ -9,8 +9,8 @@ c_ Node(o..):
         p..
 
 
-c_ LinkedList(o..):
-    ___ - , values=[]):
+c_ LinkedList(o..
+    ___ - , values=[]
         p..
 
     ___ __len__
@@ -19,7 +19,7 @@ c_ LinkedList(o..):
     ___ head
         p..
 
-    ___ push  value):
+    ___ push  value
         p..
 
     ___ pop
@@ -29,5 +29,5 @@ c_ LinkedList(o..):
         p..
 
 
-c_ EmptyListException(E..):
+c_ EmptyListException(E..
     p..

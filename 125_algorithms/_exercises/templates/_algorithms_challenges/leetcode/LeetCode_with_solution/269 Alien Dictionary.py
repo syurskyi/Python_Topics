@@ -44,8 +44,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ alienOrder  words):
+c_ Solution(o..
+    ___ alienOrder  words
         """
         :type words: List[str]
         :rtype: str
@@ -56,18 +56,18 @@ c_ Solution(o..):
         ret    # list
         ___ v __ V.k..:
             __ v n.. __ visited:
-                __ n.. topo_dfs(V, v, visited, pathset, ret):
+                __ n.. topo_dfs(V, v, visited, pathset, ret
                     r.. ""
 
         r.. "".j..(r..(ret))
 
-    ___ construct_graph  words):
+    ___ construct_graph  words
         V = defaultdict(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # pitfall
             ___ c __ w:
                 V[c]
-        ___ i __ x..(l..(words) - 1):  # compare word_i and word_{i+1}
+        ___ i __ x..(l..(words) - 1  # compare word_i and word_{i+1}
             ___ j __ x..(m..(l..(words[i]), l..(words[i+1]))):
                 __ words[i][j] != words[i+1][j]:
                     V[words[i][j]].a..(words[i+1][j])
@@ -75,7 +75,7 @@ c_ Solution(o..):
 
         r.. V
 
-    ___ topo_dfs  V, v, visited, pathset, ret):
+    ___ topo_dfs  V, v, visited, pathset, ret
         """
         Topological sort
         :param V: Vertices HashMap
@@ -91,7 +91,7 @@ c_ Solution(o..):
         pathset.add(v)
         ___ nbr __ V[v]:
             __ nbr n.. __ visited:
-                __ n.. topo_dfs(V, nbr, visited, pathset, ret):
+                __ n.. topo_dfs(V, nbr, visited, pathset, ret
                     r.. F..
 
         pathset.remove(v)
@@ -99,7 +99,7 @@ c_ Solution(o..):
         ret.a..(v)  # append after lower values
         r.. T..
 
-    ___ construct_graph_tedious  words, up, down, ptr, V):
+    ___ construct_graph_tedious  words, up, down, ptr, V
         """
         :param words:
         :param up: upper bound
@@ -110,7 +110,7 @@ c_ Solution(o..):
         """
         i = up
         w.... i < down:
-            __ ptr >= l..(words[i]):
+            __ ptr >= l..(words[i]
                 i += 1
             ____:
                 __ words[i][ptr] n.. __ V:
@@ -121,7 +121,7 @@ c_ Solution(o..):
                     j += 1
 
                 construct_graph_tedious(words, i, j, ptr+1, V)
-                __ j < down a.. ptr < l..(words[j]):
+                __ j < down a.. ptr < l..(words[j]
                     V[words[i][ptr]].a..(words[j][ptr])
 
                 i = j

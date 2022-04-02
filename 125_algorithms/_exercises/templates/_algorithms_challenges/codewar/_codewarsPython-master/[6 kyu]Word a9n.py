@@ -1,6 +1,6 @@
 _______ __
-___ abbreviate(s):
-    ___ abbr(s):
+___ abbreviate(s
+    ___ abbr(s
         r.. s[0] + s..(l..(s)-2) + s[-1]
     r.. __.sub(r'\w{4,}',l.... m: abbr(m.group(0)),s)
 

@@ -1,10 +1,10 @@
 c_ RecordScore:
     """Class to track a game's maximum score"""
 
-    ___ - ):
+    ___ -
         record = N..
 
-    ___ __call__  score):
+    ___ __call__  score
         __ record __ N..
             record = score
         ____:

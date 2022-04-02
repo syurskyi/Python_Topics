@@ -4,7 +4,7 @@ MAX_NAMES = 5
 _______ __
 
 
-___ filter_names(names):
+___ filter_names(names
 
     
     result    # list

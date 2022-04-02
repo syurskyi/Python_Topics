@@ -33,20 +33,20 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Val(o..):
-    ___ - , cnt, val):
+c_ Val(o..
+    ___ - , cnt, val
         cnt = cnt
         val = val
 
-    ___ __cmp__  other):
+    ___ __cmp__  other
         __ cnt __ other.cnt:
             r.. cmp(val, other.val)
 
         r.. -cmp(cnt, other.cnt)
 
 
-c_ Solution(o..):
-    ___ rearrangeString  s, k):
+c_ Solution(o..
+    ___ rearrangeString  s, k
         """
         Greedy, largest first, fill k first
         O(lg(26) n)
@@ -67,7 +67,7 @@ c_ Solution(o..):
         ret    # list
         w.... h:
             cur    # list
-            ___ _ __ x..(k):
+            ___ _ __ x..(k
                 __ n.. h:
                     r.. "".j..(ret) __ l..(ret) __ l..(s) ____ ""
 

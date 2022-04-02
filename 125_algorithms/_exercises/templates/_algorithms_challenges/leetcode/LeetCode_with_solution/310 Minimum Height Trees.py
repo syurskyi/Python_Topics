@@ -39,8 +39,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ findMinHeightTrees  n, edges):
+c_ Solution(o..
+    ___ findMinHeightTrees  n, edges
         """
         Longest path algorithm
         Diameter of a tree
@@ -62,7 +62,7 @@ c_ Solution(o..):
 
         ret    # list
         cur = last
-        ___ _ __ x..((level-1)/2):
+        ___ _ __ x..((level-1)/2
             cur = pi[cur]
         ret.a..(cur)
 
@@ -71,7 +71,7 @@ c_ Solution(o..):
 
         r.. ret
 
-    ___ bfs  s, V):
+    ___ bfs  s, V
         # bfs
         visited = [F.. ___ _ __ x..(l..(V))]
         pi = [-1 ___ _ __ x..(l..(V))]
@@ -81,7 +81,7 @@ c_ Solution(o..):
         q.a..(s)
         w.... q:
             l = l..(q)
-            ___ i __ x..(l):
+            ___ i __ x..(l
                 cur = q[i]
                 last = cur
                 visited[cur] = T..
@@ -96,8 +96,8 @@ c_ Solution(o..):
         r.. level, pi, last
 
 
-c_ Solution_TLE(o..):
-    ___ findMinHeightTrees_TLE  n, edges):
+c_ Solution_TLE(o..
+    ___ findMinHeightTrees_TLE  n, edges
         """
         :type n: int
         :type edges: List[List[int]]
@@ -123,7 +123,7 @@ c_ Solution_TLE(o..):
 
         r.. ret
 
-    ___ bfs  s, V):
+    ___ bfs  s, V
         # bfs
         visisted = [F.. ___ _ __ x..(l..(V))]
         q    # list
@@ -131,7 +131,7 @@ c_ Solution_TLE(o..):
         q.a..(s)
         w.... q:
             l = l..(q)
-            ___ i __ x..(l):
+            ___ i __ x..(l
                 cur = q[i]
                 visisted[cur] = T..
                 ___ nbr __ V[cur]:
@@ -144,8 +144,8 @@ c_ Solution_TLE(o..):
         r.. level
 
 
-c_ SolutionError(o..):
-    ___ findMinHeightTrees  n, edges):
+c_ SolutionError(o..
+    ___ findMinHeightTrees  n, edges
         """
         One pass
         :type n: int
@@ -174,7 +174,7 @@ c_ SolutionError(o..):
         q.a..(leaf)
         w.... q:
             l = l..(q)
-            ___ i __ x..(l):
+            ___ i __ x..(l
                 cur = q[i]
                 h2v[level].a..(cur)
                 visisted[cur] = T..

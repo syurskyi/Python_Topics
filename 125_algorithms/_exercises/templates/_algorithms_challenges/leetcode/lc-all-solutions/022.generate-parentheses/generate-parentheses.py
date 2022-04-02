@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ generateParenthesis  n):
+c_ Solution(o..
+  ___ generateParenthesis  n
     """
     :type n: int
     :rtype: List[str]
     """
 
-    ___ dfs(left, path, res, n):
+    ___ dfs(left, path, res, n
       __ l..(path) __ 2 * n:
         __ left __ 0:
           res.a..("".j..(path))

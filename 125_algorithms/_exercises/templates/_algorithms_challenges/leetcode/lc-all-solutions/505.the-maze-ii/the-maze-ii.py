@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ shortestDistance  maze, ball, hole):
+c_ Solution(o..
+  ___ shortestDistance  maze, ball, hole
     """
     :type maze: List[List[int]]
     :type start: List[int]
@@ -7,7 +7,7 @@ c_ Solution(o..):
     :rtype: int
     """
 
-    ___ next(curr, maze):
+    ___ next(curr, maze
       height = l..(maze)
       width = l..(maze[0])
       directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
@@ -30,7 +30,7 @@ c_ Solution(o..):
       visited |= {curr}
       __ curr __ hole:
         r.. dist
-      ___ pos, incDist __ next(curr, maze):
+      ___ pos, incDist __ next(curr, maze
         heapq.heappush(heap, (dist + incDist, pos))
 
     r.. -1

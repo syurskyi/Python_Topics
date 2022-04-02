@@ -23,7 +23,7 @@ c_ Solution:
     @param {int} target an integer
     @return {UndirectedGraphNode} a node
     """
-    ___ searchNode  graph, values, node, target):
+    ___ searchNode  graph, values, node, target
         __ n.. graph:
             r..
 

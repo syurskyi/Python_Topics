@@ -6,7 +6,7 @@ DICE_VALUES = r..(1, 7)
 Player = n..('Player', 'name scores')
 
 
-___ calculate_score(scores):
+___ calculate_score(scores
     """Based on a list of score ints (dice roll), calculate the
        total score only taking into account >= MIN_SCORE
        (= eyes of the dice roll).
@@ -25,7 +25,7 @@ ___ calculate_score(scores):
 
     r.. s
 
-___ get_winner(players):
+___ get_winner(players
     """Given a list of Player namedtuples return the player
        with the highest score using calculate_score.
 

@@ -3,7 +3,7 @@ _______ unittest
 ____ acronym _______ abbreviate
 
 
-c_ AcronymTest(unittest.TestCase):
+c_ AcronymTest(unittest.TestCase
 
     ___ test_basic
         assertEqual('PNG', abbreviate('Portable Network Graphics'))

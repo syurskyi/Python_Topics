@@ -12,8 +12,8 @@ Would this affect the run-time complexity? How and why?
 Write a function to determine if a given target is in the array.
 """
 
-c_ Solution(o..):
-    ___ s..  nums, target):
+c_ Solution(o..
+    ___ s..  nums, target
         """
         :type nums: List[int]
         :type target: int

@@ -11,8 +11,8 @@ ___ make_html_links
             print(res)
 
 
-___ process_line(line):
-    __ line.startswith('http'):
+___ process_line(line
+    __ line.startswith('http'
         url, *title = [l.s.. ___ l __ line.s..(',')]
         __ l..(title) > 1:
             r.. ''

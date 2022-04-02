@@ -14,7 +14,7 @@ Bonus: use a function of itertools + make it a generator, but this is not requir
 l.. = [2, 6, 10, 8, 11, 10]
 result    # list
 
-___ running_mean(sequence):
+___ running_mean(sequence
 
     """
     Calculate the running mean of the sequence passed in,
@@ -22,7 +22,7 @@ ___ running_mean(sequence):
     You can assume all items in sequence are numeric.
     """
     s.. = 0
-    ___ item __ e..(l.., start=1):
+    ___ item __ e..(l.., start=1
         s.. += item[1]
         mean = s.. / item[0]
         result.a..(r..(mean,2))

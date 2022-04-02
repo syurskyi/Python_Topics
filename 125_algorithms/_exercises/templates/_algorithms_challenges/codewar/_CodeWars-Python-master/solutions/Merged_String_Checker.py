@@ -5,10 +5,10 @@ http://www.codewars.com/kata/54c9fcad28ec4c6e680011aa/train/python
 """
 
 
-___ is_merge(s, part1, part2):
+___ is_merge(s, part1, part2
     result = l..(s)
 
-    ___ f..(part):
+    ___ f..(part
         pointer = 0
         ___ c __ part:
             found = F..
@@ -21,7 +21,7 @@ ___ is_merge(s, part1, part2):
                 r.. F..
         r.. T..
 
-    ___ removechar(part):
+    ___ removechar(part
         ___ c __ part:
             __ c __ result:
                 result.remove(c)

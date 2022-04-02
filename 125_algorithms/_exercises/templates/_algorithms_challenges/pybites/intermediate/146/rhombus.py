@@ -1,6 +1,6 @@
 STAR = '*'
 
-___ gen_rhombus(width):
+___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row
        by row. So if width = 5 it should generate the following
        rows one by one:
@@ -16,10 +16,10 @@ ___ gen_rhombus(width):
          ***
           *
     """
-    ___ row __ r..(1, width +1, 2):
+    ___ row __ r..(1, width +1, 2
       y.. f"{(STAR * row).center(width)}"
 
-    ___ row __ r..(width -2, 0, -2):
+    ___ row __ r..(width -2, 0, -2
       y.. f"{(STAR * row).center(width)}"
 
     

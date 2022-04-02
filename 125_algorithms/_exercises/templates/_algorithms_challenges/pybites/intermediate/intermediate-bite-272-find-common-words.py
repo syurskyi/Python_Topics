@@ -39,15 +39,15 @@ First, eliminate duplicates within each sentence.
 Second, use a intersection on both lists to find common elements.
 """
 
-sentence1 = ['To', 'be', 'or', 'not', 'to', 'be',
-             'that', 'is', 'a', 'question']
-sentence2 = ['To', 'strive', 'to', 'seek', 'to',
-             'find', 'and', 'not', 'to', 'yield']
-sentence3 = ['No', 'two', 'persons', 'ever', 'to',
-             'read', 'the', 'same', 'book', 'You', 'said']
-sentence4 = ['The', 'more', 'read', 'the',
-             'more', 'things', 'will', 'know']
-sentence5 = ['be', 'a', 'good', 'man']
+sentence1 =  'To', 'be', 'or', 'not', 'to', 'be',
+             'that', 'is', 'a', 'question'
+sentence2 =  'To', 'strive', 'to', 'seek', 'to',
+             'find', 'and', 'not', 'to', 'yield'
+sentence3 =  'No', 'two', 'persons', 'ever', 'to',
+             'read', 'the', 'same', 'book', 'You', 'said'
+sentence4 =  'The', 'more', 'read', 'the',
+             'more', 'things', 'will', 'know'
+sentence5 =  'be', 'a', 'good', 'man'
 
 print(common_words(sentence1, sentence5))
 

@@ -2,7 +2,7 @@ _______ unittest
 ____ robot_simulator _______ Robot, NORTH, EAST, SOUTH, WEST
 
 
-c_ RobotTests(unittest.TestCase):
+c_ RobotTests(unittest.TestCase
 
     ___ test_init
         robot = Robot()

@@ -4,8 +4,8 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ shortestPalindrome  s):
+c_ Solution(o..
+    ___ shortestPalindrome  s
         """
         :type s: str
         :rtype: str
@@ -15,7 +15,7 @@ c_ Solution(o..):
             __ s[i] __ s[j]:
                 i += 1
             j -= 1
-        __ i __ l..(s):
+        __ i __ l..(s
             r.. s
         mid = s[:i]
         suffix = s[i:]

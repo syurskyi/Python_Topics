@@ -4,7 +4,7 @@ ____ markdown _______ parse_markdown
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.2.0
 
-c_ MarkdownTest(unittest.TestCase):
+c_ MarkdownTest(unittest.TestCase
 
     ___ test_paragraph
         assertEqual(parse_markdown('This will be a paragraph'),

@@ -1,6 +1,6 @@
 
 ___
-    f = open('conversion.py')
+    f = o.. 'conversion.py')
     print("file open")
     bad = aaa
 ______ FileNotFoundError:

@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ removeNthFromEnd  head, n):
+c_ Solution(o..
+  ___ removeNthFromEnd  head, n
     """
     :type head: ListNode
     :type n: int

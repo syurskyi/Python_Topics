@@ -2,7 +2,7 @@
 # Score: 10
 
 
-___ sock_merchant(ar):
+___ sock_merchant(ar
     list_of_socks = [0 ___ i __ r..(101)]
     ___ element __ ar:
         list_of_socks[element] = list_of_socks[element] + 1
@@ -13,6 +13,6 @@ ___ sock_merchant(ar):
 
 
 n = i..(input().strip())
-ar = l..(map(i.., input().s...s..(' ')))
+ar = l.. m..(i.., input().s...s..(' ')))
 result = sock_merchant(ar)
 print(result)

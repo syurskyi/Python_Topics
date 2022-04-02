@@ -11,8 +11,8 @@ complexity?
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ missingNumber  nums):
+c_ Solution(o..
+    ___ missingNumber  nums
         """
         Algorithm:
         Hashmap, but to save space, use the array itself as the hashmap

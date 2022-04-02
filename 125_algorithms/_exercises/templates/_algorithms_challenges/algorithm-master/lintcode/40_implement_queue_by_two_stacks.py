@@ -1,5 +1,5 @@
 c_ MyQueue:
-    ___ - , ):
+    ___ - ,
         stack1    # list
         stack2    # list
 
@@ -7,20 +7,20 @@ c_ MyQueue:
     @param: element: An integer
     @return: nothing
     """
-    ___ push  element):
+    ___ push  element
         stack1.a..(element)
 
     """
     @return: An integer
     """
-    ___ pop  ):
+    ___ pop
         top()
         r.. stack2.pop()
 
     """
     @return: An integer
     """
-    ___ top  ):
+    ___ top
         # While `self.stack2` is empty, get element from `self.stack1`
         # step0/ stack1: [1, 2, 3], stack2: []
         # step1/ stack1: [], stack2: [3, 2, 1]

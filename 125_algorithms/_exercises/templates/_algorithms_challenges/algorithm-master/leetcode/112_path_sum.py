@@ -9,7 +9,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ hasPathSum  root, target):
+    ___ hasPathSum  root, target
         """
         :type root: TreeNode
         :type target: int
@@ -21,10 +21,10 @@ c_ Solution:
         __ n.. root.left a.. n.. root.right:
             r.. root.val __ target
 
-        __ root.left a.. hasPathSum(root.left, target - root.val):
+        __ root.left a.. hasPathSum(root.left, target - root.val
             r.. T..
 
-        __ root.right a.. hasPathSum(root.right, target - root.val):
+        __ root.right a.. hasPathSum(root.right, target - root.val
             r.. T..
 
         r.. F..

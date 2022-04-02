@@ -13,7 +13,7 @@ HTML = ('<p>pybites != greedy</p>'
         '<p>not the same can be said REgarding ...</p>')
 
 
-___ extract_course_times(course=COURSE):
+___ extract_course_times(course=COURSE
     """Return the course timings from the passed in
        course string. Timings are in mm:ss (minutes:seconds)
        format, so taking COURSE above you would extract:
@@ -23,7 +23,7 @@ ___ extract_course_times(course=COURSE):
     r.. __.f..(r'(\d\d:\d\d)', course)
 
 
-___ get_all_hashtags_and_links(tweet=TWEET):
+___ get_all_hashtags_and_links(tweet=TWEET
     """Get all hashtags and links from the tweet text
        that is passed into this function. So for TWEET
        above you need to extract the following list:
@@ -35,7 +35,7 @@ ___ get_all_hashtags_and_links(tweet=TWEET):
     r.. __.f..(r'(#\w+|https?://[^\s]*)', tweet)
 
 
-___ match_first_paragraph(html=HTML):
+___ match_first_paragraph(html=HTML
     """Extract the first paragraph of the passed in
        html, so for HTML above this would be:
        'pybites != greedy' (= content of first paragraph).

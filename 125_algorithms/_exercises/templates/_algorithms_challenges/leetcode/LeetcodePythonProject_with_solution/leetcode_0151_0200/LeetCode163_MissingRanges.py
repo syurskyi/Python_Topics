@@ -3,8 +3,8 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ findMissingRanges  nums, lower, upper):
+c_ Solution(o..
+    ___ findMissingRanges  nums, lower, upper
         """
         :type nums: List[int]
         :type lower: int

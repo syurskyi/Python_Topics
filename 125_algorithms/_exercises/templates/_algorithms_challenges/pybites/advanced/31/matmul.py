@@ -1,7 +1,7 @@
 ____ copy _______ d..
-c_ Matrix(o..):
+c_ Matrix(o..
 
-    ___ - , values):
+    ___ - , values
         values = values
     
 
@@ -15,7 +15,7 @@ c_ Matrix(o..):
     ___ ncols
         r.. l..(values[0])
 
-    ___ __matmul__ other):
+    ___ __matmul__ other
 
         
         rows_1,cols_1 = l..(values),l..(values[0])
@@ -29,10 +29,10 @@ c_ Matrix(o..):
 
 
 
-        ___ row __ r..(result_rows):
-            ___ col __ r..(result_cols):
+        ___ row __ r..(result_rows
+            ___ col __ r..(result_cols
                 value = 0
-                ___ c __ r..(cols_1):
+                ___ c __ r..(cols_1
                     value += values[row][c] * other.values[c][col]
 
                 result_matrix[row][col] = value
@@ -40,7 +40,7 @@ c_ Matrix(o..):
 
         r.. Matrix(result_matrix)
 
-    ___ __imatmul__ other):
+    ___ __imatmul__ other
 
 
         result = self @ other
@@ -51,7 +51,7 @@ c_ Matrix(o..):
         r.. self
 
     
-    ___ __rmatmul__ other):
+    ___ __rmatmul__ other
 
         r.. self  @ other
 

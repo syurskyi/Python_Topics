@@ -12,7 +12,7 @@ w.... l..(result) < data:
         currnum = num[i]
         
         #get the length of the current weighted sum
-        ___ j __ r..(1,l..(currnum)+1):
+        ___ j __ r..(1,l..(currnum)+1
             #calculate the sum
             digitsum +=j * i..(currnum[j-1])
         #appending the result to the result list

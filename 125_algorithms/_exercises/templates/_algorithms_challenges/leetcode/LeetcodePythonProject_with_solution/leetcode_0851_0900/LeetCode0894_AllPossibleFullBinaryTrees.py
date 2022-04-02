@@ -4,17 +4,17 @@ Created on Nov 5, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         cache    # dict
     
-    ___ allPossibleFBT  N):
+    ___ allPossibleFBT  N
         """
         :type N: int
         :rtype: List[TreeNode]
@@ -27,7 +27,7 @@ c_ Solution(o..):
         __ N __ 1:
             res.a..(TreeNode(0))
             r.. res
-        ___ i __ r..(N):
+        ___ i __ r..(N
             left = allPossibleFBT(i)
             right = allPossibleFBT(N-i-1)
             ___ leftNode __ left:
@@ -38,7 +38,7 @@ c_ Solution(o..):
                     res.a..(root)
         r.. res
     
-    ___ allPossibleFBT_own_TLE  N):
+    ___ allPossibleFBT_own_TLE  N
         """
         :type N: int
         :rtype: List[TreeNode]
@@ -48,7 +48,7 @@ c_ Solution(o..):
         __ N __ 1:
             r.. [TreeNode(0)]
         res    # list
-        ___ i __ r..(N):
+        ___ i __ r..(N
             left = allPossibleFBT(i)
             right = allPossibleFBT(N-i-1)
             ___ leftNode __ left:

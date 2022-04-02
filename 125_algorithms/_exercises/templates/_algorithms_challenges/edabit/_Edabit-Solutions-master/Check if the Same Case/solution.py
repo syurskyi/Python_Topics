@@ -1,4 +1,4 @@
-___ same_case(txt):
+___ same_case(txt
     __ txt.islower() o. txt.isupper() __ T..:
         r.. T..
     ____:

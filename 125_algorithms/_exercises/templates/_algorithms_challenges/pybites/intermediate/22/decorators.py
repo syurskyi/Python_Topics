@@ -1,8 +1,8 @@
 ____ functools _______ wraps
 
-___ make_html(element):
+___ make_html(element
 
-    ___ decorator(func):
+    ___ decorator(func
         @wraps(func)
         ___ wrapper
             result = func()
@@ -12,7 +12,7 @@ ___ make_html(element):
 
 @make_html("p")
 @make_html("strong")
-___ get_text(text="I code with PyBites"):
+___ get_text(text="I code with PyBites"
     r.. text
 
 # if __name__ == "__main__":

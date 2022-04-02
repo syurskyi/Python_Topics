@@ -22,12 +22,12 @@ ____ rgb2hex _______ rgb_to_hex
     ((0, 128, 128), '#008080'),  # teal
     ((0, 0, 128), '#000080'),  # navy
 ])
-___ test_rgb_to_hex(rgb, hex_):
+___ test_rgb_to_hex(rgb, hex_
     ... rgb_to_hex(rgb) __ hex_
 
 
 ___ test_wrong_values
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         rgb_to_hex((-1, 100, 100))
         rgb_to_hex((100, 300, 200))
         rgb_to_hex((100, 200, 256))

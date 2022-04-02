@@ -18,13 +18,13 @@ __ n.. Path(DATA_LOCAL).exists
     urlretrieve(S3 + DATA, DATA_LOCAL)
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ movies
     files    # list
-    w__ open(DATA_LOCAL) __ f:
-        ___ i, line __ e..(f.readlines(), 1):
+    w__ o.. DATA_LOCAL) __ f:
+        ___ i, line __ e..(f.r.., 1
             movie_json = TMP / f'{i}.json'
-            w__ open(movie_json, 'w') __ f:
+            w__ o.. movie_json, 'w') __ f:
                 f.write _*{line}\n')
             files.a..(movie_json)
 
@@ -35,11 +35,11 @@ ___ movies
         file_.unlink()
 
 
-___ test_len_movie_data(movies):
+___ test_len_movie_data(movies
     ... l..(movies) __ 5
 
 
-___ test_type_of_movie_elements(movies):
+___ test_type_of_movie_elements(movies
     ... a..(t..(m) __ d.. ___ m __ movies)
 
 """

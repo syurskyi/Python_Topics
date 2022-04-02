@@ -39,12 +39,12 @@ c_ Solution:
         dfs(candidates, 0, [], 0, target, ret)
         r.. ret
 
-    ___ dfs  candidates, i, cur, cur_sum, target, ret):
+    ___ dfs  candidates, i, cur, cur_sum, target, ret
         __ cur_sum __ target:
             ret.a..(l..(cur))
             r..
 
-        __ cur_sum > target o. i >= l..(candidates):
+        __ cur_sum > target o. i >= l..(candidates
             r..
 
         # not choose A_i

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ leastBricks  wall):
+c_ Solution(o..
+  ___ leastBricks  wall
     """
     :type wall: List[List[int]]
     :rtype: int

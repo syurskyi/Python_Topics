@@ -3,7 +3,7 @@ ____ i.. _______ z__
 COL_WIDTH = 20
 
 
-___ _divide_line(line: s.., col_width: i.. = COL_WIDTH):
+___ _divide_line(line: s.., col_width: i.. = COL_WIDTH
     words = line.s..
     result    # list
     line = words[0]
@@ -18,12 +18,12 @@ ___ _divide_line(line: s.., col_width: i.. = COL_WIDTH):
     r.. result
 
 
-___ text_to_columns(text):
+___ text_to_columns(text
     """Split text (input arg) to columns, the amount of double
        newlines (\n\n) in text determines the amount of columns.
        Return a string with the column output like:
        line1\nline2\nline3\n ... etc ...
        See also the tests for more info."""
     lines = [_divide_line(col) ___ col __ (text.s..('\n\n'))]
-    rv = [' '.j..(combination) ___ combination __ z__(*lines, fillvalue=' ')]
+    rv =  ' '.j..(combination) ___ combination __ z__(*lines, fillvalue=' ')]
     r.. '\n'.j..(rv)

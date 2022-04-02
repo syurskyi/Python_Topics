@@ -1,4 +1,4 @@
-___ city_facts(city):
+___ city_facts(city
     ___ i __ city:
         __ i __ "name":
             c = city[i]

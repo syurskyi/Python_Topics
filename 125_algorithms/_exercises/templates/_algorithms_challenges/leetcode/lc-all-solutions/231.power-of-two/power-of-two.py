@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isPowerOfTwo  n):
+c_ Solution(o..
+  ___ isPowerOfTwo  n
     """
     :type n: int
     :rtype: bool

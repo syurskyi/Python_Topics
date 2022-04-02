@@ -12,14 +12,14 @@ For example, if there are 4 stones in the heap, then you will never win the game
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ canWinNim  n):
+c_ Solution(o..
+    ___ canWinNim  n
         """
         Enumerate example and find the pattern
         """
         r.. n % 4 != 0
 
-    ___ canWinNim_TLE  n):
+    ___ canWinNim_TLE  n
         """
         dp
 
@@ -32,12 +32,12 @@ c_ Solution(o..):
 
         F = [F.. ___ _ __ x..(3)]
         F[1] = F[2] = F[0] = T..
-        ___ i __ x..(4, n+1):
+        ___ i __ x..(4, n+1
             F[i%3] = any(n.. F[(i-k)%3] ___ k __ x..(1, 4))
 
         r.. F[n%3]
 
-    ___ canWinNim_MLE  n):
+    ___ canWinNim_MLE  n
         """
         dp
 
@@ -50,7 +50,7 @@ c_ Solution(o..):
 
         F = [F.. ___ _ __ x..(n+1)]
         F[1] = F[2] = F[3] = T..
-        ___ i __ x..(4, n+1):
+        ___ i __ x..(4, n+1
             F[i] = any(n.. F[i-k] ___ k __ x..(1, 4))
 
         r.. F[n]

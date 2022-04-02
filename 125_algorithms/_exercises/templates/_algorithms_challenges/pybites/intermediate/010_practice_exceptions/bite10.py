@@ -1,4 +1,4 @@
-___ positive_divide(numerator, denominator):
+___ positive_divide(numerator, denominator
     ___
         output = numerator / denominator        
         __ output < 0:

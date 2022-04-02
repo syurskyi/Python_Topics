@@ -3,8 +3,8 @@ Created on Oct 9, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ strangePrinter  s):
+c_ Solution(o..
+    ___ strangePrinter  s
         """
         :type s: str
         :rtype: int
@@ -12,12 +12,12 @@ c_ Solution(o..):
         __ n.. s: r.. 0
         n = l..(s)
         dp = [[0]*n ___ _ __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             dp[i][i] = 1
-        ___ i __ r..(1, n):
-            ___ j __ r..(n-i):
+        ___ i __ r..(1, n
+            ___ j __ r..(n-i
                 dp[j][j+i] = i+1
-                ___ k __ r..(j+1, j+i+1):
+                ___ k __ r..(j+1, j+i+1
                     tmp = dp[j][k-1]+dp[k][j+i]
                     __ s[k-1] __ s[j+i]:
                         tmp -= 1

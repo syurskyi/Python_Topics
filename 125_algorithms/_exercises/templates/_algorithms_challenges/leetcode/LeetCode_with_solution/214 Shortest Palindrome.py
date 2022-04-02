@@ -12,7 +12,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ shortestPalindrome  s):
+    ___ shortestPalindrome  s
         """
         KMP
 

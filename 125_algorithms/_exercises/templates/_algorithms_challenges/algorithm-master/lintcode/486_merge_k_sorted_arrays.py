@@ -6,7 +6,7 @@ c_ Solution:
     @param: G: k sorted integer arrays
     @return: a sorted array
     """
-    ___ mergekSortedArrays  G):
+    ___ mergekSortedArrays  G
         ans    # list
         __ n.. G:
             r.. ans
@@ -21,7 +21,7 @@ c_ Solution:
         w.... heap:
             num, x, y = heappop(heap)
             ans.a..(num)
-            __ y + 1 < l..(G[x]):
+            __ y + 1 < l..(G[x]
                 heappush(heap, (G[x][y + 1], x, y + 1))
 
         r.. ans

@@ -1,27 +1,27 @@
 _______ math
 
 
-c_ ComplexNumber(o..):
-    ___ - , real, imaginary):
+c_ ComplexNumber(o..
+    ___ - , real, imaginary
         real = real
         imaginary = imaginary
 
-    ___ add  other):
+    ___ add  other
         r = real + other.real
         i = imaginary + other.imaginary
         r.. ComplexNumber(r, i)
 
-    ___ mul  other):
+    ___ mul  other
         r = real * other.real
         i = imaginary * other.imaginary
         r.. ComplexNumber(r, i)
 
-    ___ sub  other):
+    ___ sub  other
         r = real - other.real
         i = imaginary - other.imaginary
         r.. ComplexNumber(r, i)
 
-    ___ div  other):
+    ___ div  other
         d = other.real * other.real + other.imaginary * other.imaginary
         r = (real * other.real + imaginary *
              other.imaginary) / f__(d)

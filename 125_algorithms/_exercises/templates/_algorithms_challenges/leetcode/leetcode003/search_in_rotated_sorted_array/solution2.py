@@ -9,8 +9,8 @@ index, otherwise return -1.
 You may assume no duplicate exists in the array.
 """
 
-c_ Solution(o..):
-    ___ s..  nums, target):
+c_ Solution(o..
+    ___ s..  nums, target
         """
         :type nums: List[int]
         :type target: int

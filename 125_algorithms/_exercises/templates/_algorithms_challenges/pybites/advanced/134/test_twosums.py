@@ -27,7 +27,7 @@ ___ test_two_sums
     (5224, (31, 42)),
     (2934785974, N..),
 ])
-___ test_two_sums_param(target, expected):
+___ test_two_sums_param(target, expected
     result = two_sums(NUMBERS, target)
     ... result __ expected
 

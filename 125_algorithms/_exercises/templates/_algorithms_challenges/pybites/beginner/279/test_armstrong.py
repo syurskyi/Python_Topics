@@ -8,5 +8,5 @@ ____ armstrong _______ is_armstrong
     (371, T..),  (4150, F..), (2020, F..),
     (9474, T..), (1989, F..), (11, F..),
 ])
-___ test_armstrong(number, expected):
+___ test_armstrong(number, expected
     ... is_armstrong(number) __ expected

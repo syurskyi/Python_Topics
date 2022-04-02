@@ -4,14 +4,14 @@ Created on May 30, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ buildTree  preorder, inorder):
+c_ Solution(o..
+    ___ buildTree  preorder, inorder
         """
         :type preorder: List[int]
         :type inorder: List[int]
@@ -19,7 +19,7 @@ c_ Solution(o..):
         """
         r.. helper(preorder, 0, l..(preorder)-1, inorder, 0, l..(inorder)-1)
     
-    ___ helper  preorder, pstart, pend, inorder, istart, iend):
+    ___ helper  preorder, pstart, pend, inorder, istart, iend
         __ pstart > pend o. istart > iend:
             r.. N..
         val = preorder[pstart]

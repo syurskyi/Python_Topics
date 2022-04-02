@@ -42,34 +42,34 @@ ____ typing _______ List
 ____ c.. _______ defaultdict, d..
 
 
-c_ Solution(o..):
+c_ Solution(o..
     ___ alienOrder  words: List[s..]) __ s..:
         G = construct_graph(words)
         visited = defaultdict(i..)  # 0 not visited, 1 visiting, 2 visted
         ret = d..()
         ___ u __ G.k..:
             __ visited[u] __ 0:
-                __ n.. topo_dfs(G, u, visited, ret):
+                __ n.. topo_dfs(G, u, visited, ret
                     r.. ""
 
         r.. "".j..(ret)
 
-    ___ construct_graph  words):
+    ___ construct_graph  words
         G = defaultdict(l..)
         # need to initialize, consider test case ["z", "z"]
         ___ w __ words:  # error
             ___ c __ w:
                 G[c]
 
-        ___ i __ r..(l..(words) - 1):  # compare word_i and word_{i+1}
-            ___ c1, c2 __ z..(words[i], words[i+1]):
+        ___ i __ r..(l..(words) - 1  # compare word_i and word_{i+1}
+            ___ c1, c2 __ z..(words[i], words[i+1]
                 __ c1 != c2:  # lexical order
                     G[c1].a..(c2)
                     _____  # need to break for lexical order
 
         r.. G
 
-    ___ topo_dfs  G, u, visited, ret):
+    ___ topo_dfs  G, u, visited, ret
         """
         Topological sort
         G = defaultdict(list)
@@ -82,7 +82,7 @@ c_ Solution(o..):
             __ visited[nbr] __ 1:
                 r.. F..
             __ visited[nbr] __ 0:
-                __ n.. topo_dfs(G, nbr, visited, ret):
+                __ n.. topo_dfs(G, nbr, visited, ret
                     r.. F..
 
         visited[u] = 2

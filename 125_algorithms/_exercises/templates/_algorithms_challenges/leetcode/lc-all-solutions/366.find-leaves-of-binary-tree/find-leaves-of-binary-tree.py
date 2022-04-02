@@ -7,14 +7,14 @@
 _______ c..
 
 
-c_ Solution(o..):
-  ___ findLeaves  root):
+c_ Solution(o..
+  ___ findLeaves  root
     """
     :type root: TreeNode
     :rtype: List[List[int]]
     """
 
-    ___ helper(p, res):
+    ___ helper(p, res
       __ n.. p:
         r.. 0
       left = helper(p.left, res)
@@ -26,6 +26,6 @@ c_ Solution(o..):
     ans    # list
     res = c...defaultdict(l..)
     helper(root, res)
-    ___ i __ r..(1, l..(res) + 1):
+    ___ i __ r..(1, l..(res) + 1
       ans.a..(res[i])
     r.. ans

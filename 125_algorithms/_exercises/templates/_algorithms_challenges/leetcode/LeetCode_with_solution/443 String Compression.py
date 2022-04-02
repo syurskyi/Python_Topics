@@ -15,7 +15,7 @@ Could you solve it using only O(1) extra space?
 
 
 c_ Solution:
-    ___ compress  chars):
+    ___ compress  chars
         """
         tedious pointer manipulation
         :type chars: List[str]
@@ -23,39 +23,39 @@ c_ Solution:
         """
         ret = 1
         s = 0  # start index of current char
-        ___ i __ r..(1, l..(chars) + 1):
+        ___ i __ r..(1, l..(chars) + 1
             __ i < l..(chars) a.. chars[i] __ chars[s]:
                 _____
             l = i - s
             __ l > 1:
-                ___ digit __ s..(l):
+                ___ digit __ s..(l
                     chars[ret] = digit
                     ret += 1
-            __ i < l..(chars):
+            __ i < l..(chars
                 chars[ret] = chars[i]
                 ret += 1
                 s = i
                 
         r.. ret
 
-    ___ compress_error  chars):
+    ___ compress_error  chars
         """
         tedious pointer manipulation
         :type chars: List[str]
         :rtype: int
         """
         s = 0
-        ___ idx __ r..(1, l..(chars) + 1):
+        ___ idx __ r..(1, l..(chars) + 1
             __ idx < l..(chars) a.. chars[idx] __ chars[s]:
                 _____
             l = idx - s
             __ l __ 1:
                 s = m..(s + 1, l..(chars) - 1)
             ____:
-                ___ digit __ s..(l):
+                ___ digit __ s..(l
                     s += 1
                     chars[s] = digit
-                __ idx < l..(chars):
+                __ idx < l..(chars
                     s += 1
                     chars[s] = chars[idx]
         r.. s + 1

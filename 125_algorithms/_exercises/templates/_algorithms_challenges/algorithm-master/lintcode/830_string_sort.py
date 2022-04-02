@@ -3,7 +3,7 @@ c_ Solution:
     @param s: the string that needs to be sorted
     @return: sorted string
     """
-    ___ stringSort  s):
+    ___ stringSort  s
         __ n.. s:
             r.. ''
 

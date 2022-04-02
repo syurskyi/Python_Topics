@@ -5,7 +5,7 @@ ____ anagram _______ detect_anagrams
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.1
 
-c_ AnagramTests(unittest.TestCase):
+c_ AnagramTests(unittest.TestCase
     ___ test_no_matches
         candidates = ["hello", "world", "zombies", "pants"]
         assertEqual(detect_anagrams("diaper", candidates), [])

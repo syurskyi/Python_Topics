@@ -6,7 +6,7 @@ c_ ConnectGame:
     black = "X"
     none = ""
 
-    ___ - , lines):
+    ___ - , lines
         board = make_board(lines)
         ... l..(board) > 0
 
@@ -17,45 +17,45 @@ c_ ConnectGame:
         ___ l __ board:
             ... l..(l) __ width
 
-    ___ valid  x, y):
+    ___ valid  x, y
         r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
 
-    ___ make_board  lines):
-        r.. ["".j..(l.s..()) ___ l __ lines.splitlines()]
+    ___ make_board  lines
+        r.. ["".j..(l.s..()) ___ l __ lines.s.. ]
 
-    ___ player_reach_dest  player, x, y):
+    ___ player_reach_dest  player, x, y
         __ player __ black:
             r.. x __ width - 1
         __ player __ white:
             r.. y __ height - 1
 
-    ___ walk_board  player, x, y, visited=[]):
+    ___ walk_board  player, x, y, visited=[]
         __ (x, y) __ visited:
             r.. F..
 
         __ (n.. valid(x, y)) o. board[y][x] != player:
             r.. F..
 
-        __ player_reach_dest(player, x, y):
+        __ player_reach_dest(player, x, y
             r.. T..
 
         ___ d __ directions:
-            __ walk_board(player, x + d[0], y + d[1], visited + [(x, y)]):
+            __ walk_board(player, x + d[0], y + d[1], visited + [(x, y)]
                 r.. T..
 
-    ___ check_player_is_winner  player):
+    ___ check_player_is_winner  player
         __ player __ black:
-            ___ y __ r..(height):
-                __ walk_board(player, 0, y):
+            ___ y __ r..(height
+                __ walk_board(player, 0, y
                     r.. T..
         __ player __ white:
-            ___ x __ r..(width):
-                __ walk_board(player, x, 0):
+            ___ x __ r..(width
+                __ walk_board(player, x, 0
                     r.. T..
 
     ___ get_winner
-        __ check_player_is_winner(black):
+        __ check_player_is_winner(black
             r.. black
-        __ check_player_is_winner(white):
+        __ check_player_is_winner(white
             r.. white
         r.. none

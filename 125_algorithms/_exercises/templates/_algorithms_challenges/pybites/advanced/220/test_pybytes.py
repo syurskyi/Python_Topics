@@ -6,32 +6,32 @@ REAL_PYTHON = "realpython.com"
 PYBITES = 'pybit.es'
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ pb
     r.. PythonBytes()
 
 
-___ test_get_episodes_pybites_was_mentioned(pb):
+___ test_get_episodes_pybites_was_mentioned(pb
     actual = pb.get_episode_numbers_for_mentioned_domain(PYBITES)
-    expected = ['106', '98', '34', '26', '14']
+    expected =  '106', '98', '34', '26', '14'
     ... s..(actual) __ s..(expected)
 
 
-___ test_get_episodes_realpython_was_mentioned(pb):
+___ test_get_episodes_realpython_was_mentioned(pb
     actual = pb.get_episode_numbers_for_mentioned_domain(REAL_PYTHON)
-    expected = ['143', '134', '123', '119', '118', '114', '110', '102',
+    expected =  '143', '134', '123', '119', '118', '114', '110', '102',
                 '100', '97', '88', '86', '85', '84', '83', '82', '80', '76',
-                '75', '71', '66', '56', '37', '20', '7']
+                '75', '71', '66', '56', '37', '20', '7'
     ... s..(actual) __ s..(expected)
 
 
-___ test_number_episodes_with_special_guests(pb):
+___ test_number_episodes_with_special_guests(pb
     actual = pb.number_episodes_with_special_guest()
     expected = 17
     ... actual __ expected
 
 
-___ test_number_episodes_with_special_guests_half_feed(pb):
+___ test_number_episodes_with_special_guests_half_feed(pb
     """To prevent hardcoding the answer"""
     org_entries = pb.entries
     pb.entries = pb.entries[:20]
@@ -41,7 +41,7 @@ ___ test_number_episodes_with_special_guests_half_feed(pb):
     ... actual __ expected
 
 
-___ test_get_most_mentioned_domain_names_default_top_15(pb):
+___ test_get_most_mentioned_domain_names_default_top_15(pb
     actual = pb.get_most_mentioned_domain_names()
     expected = [('https://github.com', 120),
                 ('https://www.youtube.com', 50),
@@ -61,7 +61,7 @@ ___ test_get_most_mentioned_domain_names_default_top_15(pb):
     ... actual __ expected
 
 
-___ test_get_most_mentioned_domain_names_top_5(pb):
+___ test_get_most_mentioned_domain_names_top_5(pb
     actual = pb.get_most_mentioned_domain_names(n=5)
     expected = [('https://github.com', 120),
                 ('https://www.youtube.com', 50),
@@ -71,7 +71,7 @@ ___ test_get_most_mentioned_domain_names_top_5(pb):
     ... actual __ expected
 
 
-___ test_average_episode_duration_full_feed(pb):
+___ test_average_episode_duration_full_feed(pb
     actual = pb.get_average_duration_episode_in_seconds()
     max_, min_ = '00:56:54', '00:15:27'
     expected = Duration(avg=1439, max_=max_, min_=min_)
@@ -80,7 +80,7 @@ ___ test_average_episode_duration_full_feed(pb):
     ... actual __ (expected, expected_alt)
 
 
-___ test_average_episode_duration_half_feed(pb):
+___ test_average_episode_duration_half_feed(pb
     """To prevent hardcoding the answer"""
     num_half_episodes = i..(l..(pb.entries)/2)
     org_entries = pb.entries

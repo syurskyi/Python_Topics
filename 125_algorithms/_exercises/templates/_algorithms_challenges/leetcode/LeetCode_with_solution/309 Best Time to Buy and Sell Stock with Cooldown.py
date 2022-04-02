@@ -15,8 +15,8 @@ transactions = [buy, sell, cooldown, buy, sell]
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ maxProfit  A):
+c_ Solution(o..
+    ___ maxProfit  A
         """
         O(n^2)
         Let F[i] be max profit from day 0 to day i, selling stock at day i
@@ -46,7 +46,7 @@ c_ Solution(o..):
         M[2] = m..(M[1], F[2])
 
         # core
-        ___ i __ x..(3, n):
+        ___ i __ x..(3, n
             F[i] = m..(F[i-1]+A[i]-A[i-1], M[i-2-CD]+A[i]-A[i-1])
             M[i] = m..(M[i-1], F[i])
 

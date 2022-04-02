@@ -5,7 +5,7 @@ ____ transpose _______ transpose
 
 POSTS = {'2017-8': 19, '2017-9': 13, '2017-10': 13,
          '2017-11': 12, '2017-12': 11, '2018-1': 3}
-NAMES = ['Bob', 'Julian', 'Tim', 'Carmen', 'Henk', 'Sofia', 'Bernard']
+NAMES =  'Bob', 'Julian', 'Tim', 'Carmen', 'Henk', 'Sofia', 'Bernard'
 
 Member = n..('Member', 'name since_days karma_points bitecoin_earned')
 
@@ -20,8 +20,8 @@ ___ _gen_community
 
 ___ test_transpose_dict
     months, num_posts = transpose(POSTS)
-    ... l..(months) __ ['2017-8', '2017-9', '2017-10',
-                            '2017-11', '2017-12', '2018-1']
+    ... l..(months) __  '2017-8', '2017-9', '2017-10',
+                            '2017-11', '2017-12', '2018-1'
     ... l..(num_posts) __ [19, 13, 13, 12, 11, 3]
 
 

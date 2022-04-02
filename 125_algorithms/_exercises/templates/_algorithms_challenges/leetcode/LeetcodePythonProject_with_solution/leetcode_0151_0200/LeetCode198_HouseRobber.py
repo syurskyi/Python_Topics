@@ -4,8 +4,8 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ rob  nums):
+c_ Solution(o..
+    ___ rob  nums
         """
         :type nums: List[int]
         :rtype: int

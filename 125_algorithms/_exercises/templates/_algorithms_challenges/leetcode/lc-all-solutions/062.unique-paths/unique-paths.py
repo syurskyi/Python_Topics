@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ uniquePaths  m, n):
+c_ Solution(o..
+  ___ uniquePaths  m, n
     """
     :type m: int
     :type n: int
@@ -7,9 +7,9 @@ c_ Solution(o..):
     """
     dp = [1] * n
 
-    ___ i __ r..(1, m):
+    ___ i __ r..(1, m
       pre = 1
-      ___ j __ r..(1, n):
+      ___ j __ r..(1, n
         dp[j] = dp[j] + pre
         pre = dp[j]
     r.. dp[-1]

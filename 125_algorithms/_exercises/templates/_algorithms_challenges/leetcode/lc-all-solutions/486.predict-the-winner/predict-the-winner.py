@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ PredictTheWinner  nums):
+c_ Solution(o..
+  ___ PredictTheWinner  nums
     """
     :type nums: List[int]
     :rtype: bool
     """
 
-    ___ canWin(nums, start, end, visited, partSum, maxSum, order):
+    ___ canWin(nums, start, end, visited, partSum, maxSum, order
       # print "canWin order=", order
       __ (start, end, partSum, order) __ visited:
         r.. visited[start, end, partSum, order]
@@ -21,11 +21,11 @@ c_ Solution(o..):
           r.. F..
 
       visited[start, end, partSum, order] = F..
-      __ n.. canWin(nums, start + 1, end, visited, partSum - order * nums[start], maxSum, ~order):
+      __ n.. canWin(nums, start + 1, end, visited, partSum - order * nums[start], maxSum, ~order
         visited[start, end, partSum, order] = T..
         # print "order=", order, "return True"
         r.. T..
-      __ n.. canWin(nums, start, end - 1, visited, partSum - order * nums[end], maxSum, ~order):
+      __ n.. canWin(nums, start, end - 1, visited, partSum - order * nums[end], maxSum, ~order
         visited[start, end, partSum, order] = T..
         # print "order=", order, "return True"
         r.. T..

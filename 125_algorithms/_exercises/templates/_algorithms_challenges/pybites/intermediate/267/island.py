@@ -3,7 +3,7 @@
 # Then in the main island_size function just call it when traversing the map.
 
 
-___ get_others(map_, r, c):
+___ get_others(map_, r, c
     """Go through the map and check the size of the island
        (= summing up all the 1s that are part of the island)
 
@@ -18,7 +18,7 @@ ___ get_others(map_, r, c):
         in_bounds = 0 <= n_row < l..(map_) a.. 0 <= n_col < l..(map_[0])
         __ in_bounds a.. map_[n_row][n_col] __ 1:
             nums += get_others(map_,n_row,n_col)
-        ____ (in_bounds a.. map_[n_row][n_col] __ 0) o. (n.. in_bounds):
+        ____ (in_bounds a.. map_[n_row][n_col] __ 0) o. (n.. in_bounds
             nums += 1
 
 
@@ -32,7 +32,7 @@ ___ get_others(map_, r, c):
     r.. nums
 
 
-___ island_size(map_):
+___ island_size(map_
     """Hint: use the get_others helper
 
     Input: the map

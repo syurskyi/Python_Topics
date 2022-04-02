@@ -17,16 +17,16 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     >>> max_letter_word('$5000 !!')
     ('', '', 0)
     """
-    __ n.. isi..(text, s..):
+    __ n.. isi..(text, s..
         r.. ValueError('bad input')
 
-    words = l..(map(l.... x: __.sub(PAT, '', x.r..('_', '')),
+    words = l.. m..(l.... x: __.sub(PAT, '', x.r..('_', '')),
                      text.s..(' ')))
     counts    # list
     ___ word __ words:
         folded = word.c..()
         count = Counter([c ___ c __ folded __ c.isalpha()])
-        __ count.most_common(1):
+        __ count.most_common(1
             counts.a..((word, count))
 
     __ counts:

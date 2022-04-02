@@ -18,7 +18,7 @@ Stats = n..('Stats', 'user challenge')
 
 # code
 
-___ gen_files(tempfile=tempfile):
+___ gen_files(tempfile=tempfile
     """
     Parse the tempfile passed in, filtering out directory names
     (first column) using the last "is_dir" column.
@@ -37,7 +37,7 @@ ___ gen_files(tempfile=tempfile):
     => Here you would return 03/mridubhatnagar (lowercased!)
        followed by 03/aleksandarknezevic
     """
-    w__ open(tempfile) __ f: lines = f.read().splitlines()
+    w__ o.. tempfile) __ f: lines = ?.r__.s..
 
     filtered = filter(l.... x: x.s..(',')[-1]__'True', lines)
     ___ line __ filtered:

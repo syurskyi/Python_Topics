@@ -29,7 +29,7 @@ If you notice carefully in the flattened tree, each node's right child points to
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -37,7 +37,7 @@ c_ TreeNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ flatten_data_structure  root):
+    ___ flatten_data_structure  root
         """
 
         :param root: TreeNode
@@ -60,7 +60,7 @@ c_ Solution:
             cur = cur.right
 
 
-    ___ dfs_traverse  root, lst):
+    ___ dfs_traverse  root, lst
         """
         pre_order traverse
         """
@@ -70,7 +70,7 @@ c_ Solution:
         dfs_traverse(root.left, lst)
         dfs_traverse(root.right, lst)
 
-    ___ flatten  root):
+    ___ flatten  root
         """
         pre-order should be easy
         flatten left subtree
@@ -103,7 +103,7 @@ c_ Solution:
             root.right = right
         r.. root
 
-    ___ get_last  root):
+    ___ get_last  root
         """
         pre-order last
         :param root:

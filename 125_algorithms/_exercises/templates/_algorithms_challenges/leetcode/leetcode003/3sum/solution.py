@@ -14,15 +14,15 @@ The solution set must not contain duplicate triplets.
 """
 
 
-c_ Solution(o..):
-    ___ threeSum  nums):
+c_ Solution(o..
+    ___ threeSum  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
         nums.s..()
         res    # list
-        ___ i __ r..(l..(nums) - 2):
+        ___ i __ r..(l..(nums) - 2
             __ i __ 0 o. i > 0 a.. nums[i - 1] != nums[i]:
                 left = i + 1
                 right = l..(nums) - 1

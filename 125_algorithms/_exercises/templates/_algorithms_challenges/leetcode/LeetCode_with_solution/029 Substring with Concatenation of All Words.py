@@ -11,7 +11,7 @@ You should return the indices: [0,9].
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ findSubstring_TLE  S, L):
+    ___ findSubstring_TLE  S, L
         """
         Time limit exceeded
 
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. result
 
-    ___ findSubstring  S, L):
+    ___ findSubstring  S, L
         """
         Algorithm
         1. brutal force scanning: O(n*(l*k)), rechecking
@@ -111,7 +111,7 @@ c_ Solution:
         win_e = -1  # [0, t), no need start_ptr
         working_win    # list
         i = 0
-        w.... i<l..(S):
+        w.... i<l..(S
             # test window
             __ l..(working_win)__l:
                 ret.a..(win_e-l*k)
@@ -143,7 +143,7 @@ c_ Solution:
 
             # case 3, mach one in L not used up
             ____ word __ Lmap a.. Lmap[word]__0:
-                ___ j __ x..(0, working_win.index(word)+1):  # kind of prefix suffix concepts
+                ___ j __ x..(0, working_win.index(word)+1  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
                 working_win = working_win[working_win.index(word)+1:]
                 working_win.a..(word)

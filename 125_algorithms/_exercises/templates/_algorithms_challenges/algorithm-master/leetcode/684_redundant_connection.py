@@ -11,7 +11,7 @@ c_ Solution:
     """
     UnionFind
     """
-    ___ findRedundantConnection  edges):
+    ___ findRedundantConnection  edges
         """
         :type edges: List[List[int]]
         :rtype: List[int]
@@ -22,12 +22,12 @@ c_ Solution:
         nodes    # dict
 
         ___ u, v __ edges:
-            __ n.. union(nodes, u, v):
+            __ n.. union(nodes, u, v
                 r.. [u, v]
 
         r.. []
 
-    ___ union  nodes, u, v):
+    ___ union  nodes, u, v
         a = find(nodes, u)
         b = find(nodes, v)
 
@@ -37,7 +37,7 @@ c_ Solution:
         nodes[a] = b
         r.. T..
 
-    ___ find  nodes, u):
+    ___ find  nodes, u
         __ u n.. __ nodes:
             nodes[u] = u
             r.. u
@@ -55,7 +55,7 @@ c_ Solution:
     """
     DFS
     """
-    ___ findRedundantConnection  edges):
+    ___ findRedundantConnection  edges
         """
         :type edges: List[List[int]]
         :rtype: List[int]
@@ -75,7 +75,7 @@ c_ Solution:
 
         r.. []
 
-    ___ dfs  nodes, u, v, visited):
+    ___ dfs  nodes, u, v, visited
         __ u __ v:
             r.. T..
         __ u __ visited:
@@ -84,7 +84,7 @@ c_ Solution:
         visited.add(u)
 
         ___ x __ nodes[u]:
-            __ dfs(nodes, x, v, visited):
+            __ dfs(nodes, x, v, visited
                 r.. T..
 
         r.. F..

@@ -2,7 +2,7 @@ c_ Solution:
     # @param A: The integer array
     # @param target: Target number to find
     # @return the first position of target in A, position start from 0
-    ___ binarySearch  A, target):
+    ___ binarySearch  A, target
         __ n.. A:
             r.. -1
 

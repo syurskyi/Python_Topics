@@ -1,17 +1,17 @@
 _______ __
 
 
-___ is_valid_ip(s):
+___ is_valid_ip(s
 
 
     r.. __.s..(r'^"\d+\.\d+\.\d+\.\d+"$',s) __ n.. N..
 
 
-___ is_valid_number(s):
+___ is_valid_number(s
 
     r.. __.s..(r'^\d+$',s) __ n.. N..
 
-___ extract_ipv4(data):
+___ extract_ipv4(data
     """
     Given a nested list of data return a list of IPv4 address information that can be extracted
     """

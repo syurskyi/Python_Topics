@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ uniquePathsWithObstacles  grid):
+c_ Solution(o..
+  ___ uniquePathsWithObstacles  grid
     """
     :type obstacleGrid: List[List[int]]
     :rtype: int

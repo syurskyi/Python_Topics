@@ -3,8 +3,8 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ reverseWords  s):
+c_ Solution(o..
+    ___ reverseWords  s
         """
         :type s: str
         :rtype: str

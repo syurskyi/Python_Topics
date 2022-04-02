@@ -4,7 +4,7 @@ c_ Solution:
     @param: P: An integer array
     @return: Maximum profit
     """
-    ___ maxProfit  K, P):
+    ___ maxProfit  K, P
         __ n.. K o. n.. P:
             r.. 0
 
@@ -17,7 +17,7 @@ c_ Solution:
         """
         __ K >= n:
             profit = 0
-            ___ i __ r..(1, n):
+            ___ i __ r..(1, n
                 __ P[i] > P[i - 1]:
                     profit += P[i] - P[i - 1]
             r.. profit
@@ -30,13 +30,13 @@ c_ Solution:
         dp = [[0] * STAGE ___ _ __ r..(2)]
 
         i = j = prev = curr = profit = 0
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             prev = curr
             curr = 1 - prev
             profit = P[i] - P[i - 1]
-            ___ j __ r..(1, STAGE, 2):
+            ___ j __ r..(1, STAGE, 2
                 dp[curr][j] = m..(dp[prev][j] + profit, dp[prev][j - 1])
-            ___ j __ r..(2, STAGE, 2):
+            ___ j __ r..(2, STAGE, 2
                 dp[curr][j] = m..(dp[prev][j], dp[prev][j - 1] + profit)
 
         r.. m..(dp[curr])

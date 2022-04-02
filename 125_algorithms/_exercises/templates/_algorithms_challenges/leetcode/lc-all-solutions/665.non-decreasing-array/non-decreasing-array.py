@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ checkPossibility  nums):
+c_ Solution(o..
+  ___ checkPossibility  nums
     """
     :type nums: List[int]
     :rtype: bool
     """
     flag = F..
     pre = f__("-inf")
-    ___ i __ r..(l..(nums) - 1):
+    ___ i __ r..(l..(nums) - 1
       __ nums[i] < pre:
         __ nums[i + 1] >= nums[i - 1]:
           nums[i] = nums[i + 1]

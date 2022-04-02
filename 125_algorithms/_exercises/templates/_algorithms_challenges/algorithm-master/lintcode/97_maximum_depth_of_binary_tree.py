@@ -12,7 +12,7 @@ c_ Solution:
     @param root: The root of binary tree.
     @return: An integer
     """
-    ___ maxDepth  root):
+    ___ maxDepth  root
         __ n.. root:
             r.. 0
 

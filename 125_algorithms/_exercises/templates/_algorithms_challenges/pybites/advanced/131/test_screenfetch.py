@@ -41,28 +41,28 @@ mac = """
 """
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ sysinfo
     """Make a module scope sysinfo object"""
     r.. sysinfo_scrape(output)
 
 
-___ test_sysinfo_scrape_type(sysinfo):
+___ test_sysinfo_scrape_type(sysinfo
     """Test for proper object"""
     ... isi..(sysinfo, d..)
 
 
-___ test_sysinfo_scrape_name(sysinfo):
+___ test_sysinfo_scrape_name(sysinfo
     """Test for inclusion of the 'Name' key"""
     ... sysinfo["Name"] __ "mohh@SERENiTY"
 
 
-___ test_sysinfo_scrape_length(sysinfo):
+___ test_sysinfo_scrape_length(sysinfo
     """Test for correct amount of entries"""
     ... l..(sysinfo) __ 16
 
 
-___ test_sysinfo_scrape_keys(sysinfo):
+___ test_sysinfo_scrape_keys(sysinfo
     """Test for the proper keys"""
     expected = [
         'Name', 'OS', 'Kernel', 'Uptime', 'Packages', 'Shell', 
@@ -72,7 +72,7 @@ ___ test_sysinfo_scrape_keys(sysinfo):
     ... l..(sysinfo.keys()) __ expected
 
 
-___ test_sysinfo_scrape_values(sysinfo):
+___ test_sysinfo_scrape_values(sysinfo
     """Test for the proper values"""
     expected = [
         'mohh@SERENiTY', 'Mint 19 tara', 'x86_64 Linux 4.15.0-34-generic', 

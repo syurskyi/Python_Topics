@@ -1,4 +1,4 @@
-___ solveJosephus(specifics):
+___ solveJosephus(specifics
     people = [i..(x) ___ x __ r..(1,i..(specifics[0])+1)]
     killPosition = i..(specifics[1])
     positionCounter = 0

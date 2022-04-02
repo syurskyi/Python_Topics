@@ -5,13 +5,13 @@ Created on Jan 24, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
-c_ Solution(o..):
-    ___ deleteDuplicates  head):
+c_ Solution(o..
+    ___ deleteDuplicates  head
         """
         :type head: ListNode
         :rtype: ListNode

@@ -3,8 +3,8 @@ Created on Oct 31, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ findAndReplacePattern  words, pattern):
+c_ Solution(o..
+    ___ findAndReplacePattern  words, pattern
         """
         :type words: List[str]
         :type pattern: str
@@ -12,14 +12,14 @@ c_ Solution(o..):
         """
         res    # list
         ___ word __ words:
-            __ isSimliar(word, pattern):
+            __ isSimliar(word, pattern
                 res.a..(word)
         r.. res
     
-    ___ isSimliar  w1, w2):
-        __ l..(w1) != l..(w2): r.. F..
+    ___ isSimliar  w1, w2
+        __ l..(w1) != l..(w2 r.. F..
         hashmap1, hashmap2    # dict, {}
-        ___ c1, c2 __ z..(w1, w2):
+        ___ c1, c2 __ z..(w1, w2
             __ c1 n.. __ hashmap1:
                 __ c2 __ hashmap2:
                     r.. F..

@@ -36,7 +36,7 @@ workout_schedule = {'Friday': 'Shoulders',
                     'Wednesday': 'Core'}
 rest, chill, go_train = 'Rest', 'Chill out!', 'Go train {}'
 
-___ get_workout_motd(day):
+___ get_workout_motd(day
     """Title case passed in day argument (monday or MONDAY -> Monday)
        and check if it is in the given workout_schedule dict.
 

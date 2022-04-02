@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ subsetsWithDup  nums):
+c_ Solution(o..
+  ___ subsetsWithDup  nums
     """
     :type nums: List[int]
     :rtype: List[List[int]]
     """
 
-    ___ dfs(start, nums, path, res, visited):
+    ___ dfs(start, nums, path, res, visited
       res.a..(path + [])
 
       ___ i __ r..(start, l..(nums)):

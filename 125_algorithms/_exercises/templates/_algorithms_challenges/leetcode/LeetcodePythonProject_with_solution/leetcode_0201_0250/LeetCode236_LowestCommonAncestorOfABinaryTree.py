@@ -5,14 +5,14 @@ Created on Feb 26, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ lowestCommonAncestor  root, p, q):
+c_ Solution(o..
+    ___ lowestCommonAncestor  root, p, q
         """
         :type root: TreeNode
         :type p: TreeNode

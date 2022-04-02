@@ -4,8 +4,8 @@ Created on Feb 14, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ calculateMinimumHP  dungeon):
+c_ Solution(o..
+    ___ calculateMinimumHP  dungeon
         """
         :type dungeon: List[List[int]]
         :rtype: int
@@ -16,8 +16,8 @@ c_ Solution(o..):
             tbl[-1][-1] = 1
         ____:
             tbl[-1][-1] = 1-dungeon[-1][-1]
-        ___ i __ r..(m-1, -1, -1):
-            ___ j __ r..(n-1, -1, -1):
+        ___ i __ r..(m-1, -1, -1
+            ___ j __ r..(n-1, -1, -1
                 __ i __ m-1 a.. j __ n-1:
                     _____
                 __ i __ m-1:

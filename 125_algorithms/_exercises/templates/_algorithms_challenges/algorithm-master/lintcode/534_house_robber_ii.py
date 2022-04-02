@@ -30,7 +30,7 @@ c_ Solution:
     @param: A: An array of non-negative integers.
     @return: The maximum amount of money you can rob tonight
     """
-    ___ houseRobber2  A):
+    ___ houseRobber2  A
         __ n.. A:
             r.. 0
         __ l..(A) __ 1:
@@ -43,13 +43,13 @@ c_ Solution:
             houseRobber(A, 1, dp)
         )
 
-    ___ houseRobber  A, start, dp):
+    ___ houseRobber  A, start, dp
         n = l..(A)
         prev, curr = 0, start % 2
         dp[curr][0] = 0
         dp[curr][1] = A[start]
 
-        ___ i __ r..(1 + start, n - 1 + start):
+        ___ i __ r..(1 + start, n - 1 + start
             prev = curr
             curr = i % 2
 
@@ -64,7 +64,7 @@ c_ Solution:
     @param: A: An array of non-negative integers.
     @return: The maximum amount of money you can rob tonight
     """
-    ___ houseRobber2  A):
+    ___ houseRobber2  A
         __ n.. A:
             r.. 0
 
@@ -83,13 +83,13 @@ c_ Solution:
             houseRobber(A, 1, dp)
         )
 
-    ___ houseRobber  A, start, dp):
+    ___ houseRobber  A, start, dp
         n = l..(A)
         prev2, prev1, curr = 0, start % 3, (start + 1) % 3
         dp[prev1] = A[start]
         dp[curr] = m..(A[start], A[start + 1])
 
-        ___ i __ r..(2 + start, n - 1 + start):
+        ___ i __ r..(2 + start, n - 1 + start
             prev2, prev1 = prev1, curr
             curr = i % 3
 
@@ -99,7 +99,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ houseRobber2  A):
+    ___ houseRobber2  A
         """
         :type A: List[int]
         :rtype: int
@@ -115,13 +115,13 @@ c_ Solution:
             rob_in_line(A, 1, n - 1)
         )
 
-    ___ rob_in_line  A, start, end):
+    ___ rob_in_line  A, start, end
         n = end - start + 1
         dp = [0] * (n + 1)
         dp[0] = 0
         dp[1] = A[start]
 
-        ___ i __ r..(2, n + 1):
+        ___ i __ r..(2, n + 1
             dp[i] = m..(
                 dp[i - 2] + A[start + i - 1],
                 dp[i - 1]

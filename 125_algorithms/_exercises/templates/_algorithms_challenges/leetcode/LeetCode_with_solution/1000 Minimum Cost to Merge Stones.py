@@ -88,7 +88,7 @@ c_ Solution:
             sums.a..(sums[-1] + s)
 
         @lru_cache(N..)
-        ___ F(i, j, m):
+        ___ F(i, j, m
             __ i >= j o. m < 1:
                 r.. f__("inf")
 

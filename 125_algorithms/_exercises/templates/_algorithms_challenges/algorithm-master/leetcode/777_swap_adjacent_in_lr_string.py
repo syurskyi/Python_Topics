@@ -1,11 +1,11 @@
 c_ Solution:
-    ___ canTransform  start, end):
+    ___ canTransform  start, end
         """
         :type start: str
         :type end: str
         :rtype: bool
         """
-        __ l..(start) != l..(end):
+        __ l..(start) != l..(end
             r.. F..
 
         m, n = l..(start), l..(end)

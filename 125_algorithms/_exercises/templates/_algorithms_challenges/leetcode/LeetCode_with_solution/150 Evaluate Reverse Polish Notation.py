@@ -1,8 +1,8 @@
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ evalRPN  tokens):
+c_ Solution(o..
+    ___ evalRPN  tokens
         """
         stack
         basic in bytecode operation
@@ -12,15 +12,15 @@ c_ Solution(o..):
         """
         ops = ["+", "-", "*", "/"]
 
-        ___ arith(a, b, op):
-            __ (op __ "+"):
+        ___ arith(a, b, op
+            __ (op __ "+"
                 r.. a+b
-            __ (op __ "-"):
+            __ (op __ "-"
                 r.. a-b
-            __ (op __ "/"):
+            __ (op __ "/"
                 # return a/b # python treat differently for division 6/-132 is -1
                 r.. i..(f__(a)/b)  # round towards 0
-            __ (op __ "*"):
+            __ (op __ "*"
                 r.. a*b
 
         # function is first-order class

@@ -15,8 +15,8 @@ Return the array [2, 1, 1, 0].
 __author__ = 'Daniel'
 
 
-c_ TreeNode(o..):
-    ___ - , start, end, cnt=0):
+c_ TreeNode(o..
+    ___ - , start, end, cnt=0
         start = start
         end = end
         cnt = cnt
@@ -24,11 +24,11 @@ c_ TreeNode(o..):
         right = N..
 
 
-c_ SegmentTree(o..):
-    ___ - , n):
+c_ SegmentTree(o..
+    ___ - , n
         root = build(0, n)
 
-    ___ build  start, end):
+    ___ build  start, end
         __ start >= end: r..
         __ start __ end-1: r.. TreeNode(start, end)
         node = TreeNode(start, end)
@@ -36,7 +36,7 @@ c_ SegmentTree(o..):
         node.right = build((start+end)/2, end)
         r.. node
 
-    ___ inc  idx, val):
+    ___ inc  idx, val
         cur = root
         w.... cur:
             cur.cnt += val
@@ -48,7 +48,7 @@ c_ SegmentTree(o..):
             ____:
                 r..
 
-    ___ query_less  cur, idx):
+    ___ query_less  cur, idx
         __ n.. cur:
             r.. 0
 
@@ -61,8 +61,8 @@ c_ SegmentTree(o..):
             r.. 0
 
 
-c_ Solution(o..):
-    ___ countSmaller  nums):
+c_ Solution(o..
+    ___ countSmaller  nums
         """
         Brute force: O(n^2)
         Segment Tree
@@ -79,7 +79,7 @@ c_ Solution(o..):
         n = l..(A)
         st = SegmentTree(n)
         ret    # list
-        ___ i __ x..(n-1, -1, -1):
+        ___ i __ x..(n-1, -1, -1
             ret.a..(st.query_less(st.root, A[i]))
             st.inc(A[i], 1)
 

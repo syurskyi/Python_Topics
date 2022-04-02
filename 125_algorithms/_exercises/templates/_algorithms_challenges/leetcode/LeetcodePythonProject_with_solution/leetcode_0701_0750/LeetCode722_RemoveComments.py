@@ -3,8 +3,8 @@ Created on Feb 19, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ removeComments  source):
+c_ Solution(o..
+    ___ removeComments  source
         """
         :type source: List[str]
         :rtype: List[str]
@@ -16,7 +16,7 @@ c_ Solution(o..):
         ___ src __ source:
             j = 0
             isLineComment = F..
-            w.... j < l..(src):
+            w.... j < l..(src
                 c = src[j]
                 __ j < l..(src)-1 a.. src[j:j+2] __ '//' a.. n.. isComment:
                     __ line a.. n.. isComment:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ PalindromicRanges  left, right):
+    ___ PalindromicRanges  left, right
         """
         :type left: int
         :type right: int
@@ -13,22 +13,22 @@ c_ Solution:
         dp = [0] * (right - left + 2)  # n + 1, n = right - left + 1
         # dp[0] = 0
 
-        ___ num __ r..(left, right + 1):
-            __ is_palindrome(num):
+        ___ num __ r..(left, right + 1
+            __ is_palindrome(num
                 dp[num - left + 1] = dp[num - left] + 1
             ____:
                 dp[num - left + 1] = dp[num - left]
 
         ans = 0
 
-        ___ i __ r..(1, right - left + 2):
-            ___ j __ r..(i):
-                __ ((dp[i] - dp[j]) & 1 __ 0):
+        ___ i __ r..(1, right - left + 2
+            ___ j __ r..(i
+                __ ((dp[i] - dp[j]) & 1 __ 0
                     ans += 1
 
         r.. ans
 
-    ___ is_palindrome  num):
+    ___ is_palindrome  num
         __ num // 10 __ 0:
             r.. T..
 

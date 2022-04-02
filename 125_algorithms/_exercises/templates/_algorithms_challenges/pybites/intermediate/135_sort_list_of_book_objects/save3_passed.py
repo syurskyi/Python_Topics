@@ -28,17 +28,17 @@ books = [
 
 # all functions return books sorted in ascending order.
 
-___ sort_books_by_len_of_title(books=books):
+___ sort_books_by_len_of_title(books=books
     r.. s..(books, key=attrgetter('title'), r.._T..
 
 
-___ sort_books_by_first_authors_last_name(books=books):
+___ sort_books_by_first_authors_last_name(books=books
     r.. s..(books, key=attrgetter('authors'), r.._T..
 
 
-___ sort_books_by_number_of_page(books=books):
+___ sort_books_by_number_of_page(books=books
     r.. s..(books, key=attrgetter('pages'))
 
 
-___ sort_books_by_published_date(books=books):
+___ sort_books_by_published_date(books=books
     r.. s..(books, key=attrgetter('published'))

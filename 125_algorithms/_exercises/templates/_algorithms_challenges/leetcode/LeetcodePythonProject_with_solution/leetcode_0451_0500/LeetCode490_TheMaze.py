@@ -4,8 +4,8 @@ Created on May 8, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ hasPath  maze, start, destination):
+c_ Solution(o..
+    ___ hasPath  maze, start, destination
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -21,12 +21,12 @@ c_ Solution(o..):
             __ i __ destination[0] a.. j __ destination[1]:
                 r.. T..
             visited[i][j] = T..
-            ___ x, y __ getNextSteps(maze, i, j):
+            ___ x, y __ getNextSteps(maze, i, j
                 __ n.. visited[x][y]:
                     queue.a..((x, y))
         r.. F..
     
-    ___ getNextSteps  maze, i, j):
+    ___ getNextSteps  maze, i, j
         result = s..()
         dirs = (1, 0), (0, 1), (-1, 0), (0, -1)
         m, n = l..(maze), l..(maze[0])

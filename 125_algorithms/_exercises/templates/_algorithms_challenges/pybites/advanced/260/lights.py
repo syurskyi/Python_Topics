@@ -6,12 +6,12 @@ _______ pandas __ pd
 
 c_ LightsGrid:
 
-    ___ - , grid_size: i.., instructions: List[s..]):
+    ___ - , grid_size: i.., instructions: List[s..]
         grid_size = grid_size
         grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=i..))
         instructions = instructions
 
-    ___ process_grid_coordinates  s1: s.., s2: s..):
+    ___ process_grid_coordinates  s1: s.., s2: s..
         """A helper function you might want to create to process
           the top left hand corner coordinates and the bottom
           right hand coordinates given in the instructions
@@ -46,7 +46,7 @@ c_ LightsGrid:
 
 
 
-    ___ turn_on  s1: s.., s2: s..):
+    ___ turn_on  s1: s.., s2: s..
         """The turn_on function takes 2 parameters:
 
         :param s1: The top left hand corner of the grid to operate on
@@ -78,7 +78,7 @@ c_ LightsGrid:
 
 
 
-    ___ turn_off  s1: s.., s2: s..):
+    ___ turn_off  s1: s.., s2: s..
         """The turn_off function takes 2 parameters:
 
         :param s1: The top left hand corner of the grid to operate on
@@ -88,7 +88,7 @@ c_ LightsGrid:
         row_start,row_end,col_start,col_end = process_grid_coordinates(s1,s2)
         grid.iloc[row_start:row_end +1,col_start:col_end +1] = 0
 
-    ___ turn_up  amount: i.., s1: s.., s2: s..):
+    ___ turn_up  amount: i.., s1: s.., s2: s..
         """The turn_up function takes 3 parameters:
 
         :param amount: The intensity to turn the lights up by
@@ -105,7 +105,7 @@ c_ LightsGrid:
         grid.iloc[row_start:row_end +1,col_start:col_end +1] = df.applymap(l.... value: m..(5,value + amount))
 
 
-    ___ turn_down  amount: i.., s1: s.., s2: s..):
+    ___ turn_down  amount: i.., s1: s.., s2: s..
         """The turn down function takes 3 parameters:
 
         :param amount: The intensity to turn the lights down by
@@ -121,7 +121,7 @@ c_ LightsGrid:
 
         grid.iloc[row_start:row_end +1,col_start:col_end +1]= df.applymap(l.... value: m..(0,value - amount))
 
-    ___ toggle  s1: s.., s2: s..):
+    ___ toggle  s1: s.., s2: s..
         """The toggle function takes 2 parameters:
 
         :param s1: The top left hand corner of the grid to operate on
@@ -241,7 +241,7 @@ __ _______ __ _______
     turn off 3,72 through 68,75"""
 
     # Create a list of all the instructions
-    instructions = [line.s.. ___ line __ instructions.splitlines()]
+    instructions = [line.s.. ___ line __ instructions.s.. ]
 
     # The grid size instruction is first
     # Extract it and convert to int

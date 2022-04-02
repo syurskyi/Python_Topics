@@ -15,10 +15,10 @@ IGNORE_CHAR = 'b'
 QUIT_CHAR = 'q'
 MAX_NAMES = 5
 
-names = ['John', 'Joshua', '1tim', 'Al', 'Benjamin', 'Franklin', 'George', 'Nagendra', '1tim']
+names =  'John', 'Joshua', '1tim', 'Al', 'Benjamin', 'Franklin', 'George', 'Nagendra', '1tim'
 
 # Solution #1
-___ filter_names_1(names):
+___ filter_names_1(names
     filtered    # list
     cnt = 0
     ___ name __ names:
@@ -36,7 +36,7 @@ ___ filter_names_1(names):
 print(filter_names_1(names))
 
 # Solution 2 (using generator)
-___ filter_names_2(names):
+___ filter_names_2(names
     cnt = 0
     ___ name __ names:
         __ name.l..[0] __ IGNORE_CHAR o. n.. name.isalpha

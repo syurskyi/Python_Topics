@@ -4,14 +4,14 @@ Created on Mar 21, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ findClosestLeaf  root, k):
+c_ Solution(o..
+    ___ findClosestLeaf  root, k
         """
         :type root: TreeNode
         :type k: int
@@ -36,7 +36,7 @@ c_ Solution(o..):
                 visited.add(backMap[curr])
         r.. -1
     
-    ___ dfs  root, k, backMap):
+    ___ dfs  root, k, backMap
         __ root.val __ k:
             r.. root
         __ root.left:

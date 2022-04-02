@@ -7,7 +7,7 @@ c_ Solution:
         l.... a, b: a / b,
     )
 
-    ___ judgePoint24  nums):
+    ___ judgePoint24  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -20,8 +20,8 @@ c_ Solution:
         __ n __ 1:
             r.. abs(nums[0] - 24) < EPS
 
-        ___ i __ r..(n):
-            ___ j __ r..(n):
+        ___ i __ r..(n
+            ___ j __ r..(n
                 __ i __ j:
                     _____
 
@@ -38,7 +38,7 @@ c_ Solution:
 
                     nxts.a..(OP[k](nums[i], nums[j]))
 
-                    __ judgePoint24(nxts):
+                    __ judgePoint24(nxts
                         r.. T..
 
                     nxts.pop()

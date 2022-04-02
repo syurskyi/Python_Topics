@@ -1,37 +1,37 @@
-c_ List(o..):
+c_ List(o..
   @staticmethod
-  ___ delete(elem):
+  ___ delete(elem
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
     elem.next = elem.prev = N..
     r.. elem
 
   @staticmethod
-  ___ move(elem, newPrev, newNext):
+  ___ move(elem, newPrev, newNext
     elem.prev = newPrev
     elem.next = newNext
     newPrev.next = elem
     newNext.prev = elem
 
   @staticmethod
-  ___ a..(head, elem):
+  ___ a..(head, elem
     List.move(elem, head.prev, head)
 
   @staticmethod
-  ___ insertAfter(head, elem):
+  ___ insertAfter(head, elem
     List.move(elem, head, head.next)
 
   @staticmethod
-  ___ isEmpty(head):
+  ___ isEmpty(head
     r.. head.next __ head.prev __ head
 
   @staticmethod
-  ___ initHead(head):
+  ___ initHead(head
     head.prev = head.next = head
 
 
-c_ FreqNode(o..):
-  ___ - , freq):
+c_ FreqNode(o..
+  ___ - , freq
     prev = next = N..
     freq = freq
     head = Cache(-1, -1, self)
@@ -40,13 +40,13 @@ c_ FreqNode(o..):
   ___ popCache
     head = head
     ret = List.delete(head.next)
-    __ List.isEmpty(head):
+    __ List.isEmpty(head
       List.delete(self)
     r.. ret
 
 
-c_ Cache(o..):
-  ___ - , key, val, freqNode):
+c_ Cache(o..
+  ___ - , key, val, freqNode
     prev = next = N..
     freqNode = freqNode
     val = val
@@ -63,25 +63,25 @@ c_ Cache(o..):
     freqNode = newFreqNode
     List.delete(self)
     List.a..(newFreqNode.head, self)
-    __ List.isEmpty(freqNode.head):
+    __ List.isEmpty(freqNode.head
       List.delete(freqNode)
 
 
-c_ LFUCache(o..):
-  ___ - , capacity):
+c_ LFUCache(o..
+  ___ - , capacity
     d    # dict
     cap = capacity
     head = FreqNode(-1)
     List.initHead(head)
 
-  ___ get  key):
+  ___ get  key
     __ key n.. __ d:
       r.. -1
     cacheNode = d[key]
     cacheNode.increaseFreq()
     r.. cacheNode.val
 
-  ___ s..  key, value):
+  ___ s..  key, value
     __ cap __ 0:
       r..
     __ key __ d:

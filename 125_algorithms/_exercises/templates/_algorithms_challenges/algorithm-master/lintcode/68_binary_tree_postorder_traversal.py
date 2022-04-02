@@ -12,7 +12,7 @@ c_ Solution:
     @param: root: A Tree
     @return: Postorder in ArrayList which contains node values.
     """
-    ___ postorderTraversal  root):
+    ___ postorderTraversal  root
         ans    # list
         __ n.. root:
             r.. ans
@@ -28,7 +28,7 @@ c_ Solution:
             node = stack[-1]
 
             __ (n.. node.right o.
-                last_visit __ node.right):
+                last_visit __ node.right
 
                 stack.pop()
 

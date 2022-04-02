@@ -6,7 +6,7 @@ _______ numpy __ np
 movie_excel_file = "https://bit.ly/2BVUyrO"
 
 
-___ explode(df, lst_cols, fill_value='', preserve_index=F..):
+___ explode(df, lst_cols, fill_value='', preserve_index=F..
     """Helper found on SO to split pipe (|) separted genres into
        multiple rows so it becomes easier to group the data -
        https://stackoverflow.com/a/40449726
@@ -32,7 +32,7 @@ ___ explode(df, lst_cols, fill_value='', preserve_index=F..):
     r.. res
 
 
-___ group_by_genre(data=movie_excel_file):
+___ group_by_genre(data=movie_excel_file
     """Takes movies data excel file (https://bit.ly/2BXra4w) and loads it
        into a DataFrame (df).
 
@@ -48,8 +48,8 @@ ___ group_by_genre(data=movie_excel_file):
     df = pd.read_excel(data, skiprows=7, usecols='C:D')
     df = df.assign(genres=df.genres.s...s..('|'))
     df = explode(df, 'genres')
-    df = df[df.genres != '(no genres listed)']
+    df = df[df.genres != '(no genres listed)'
     df = df.groupby('genres').agg(movie=('movie','count'))
-    df = df.sort_values(by=['movie'], ascending=F..)
+    df = df.sort_values(by= 'movie' , ascending=F..)
     r.. df
 

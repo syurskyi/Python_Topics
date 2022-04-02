@@ -4,12 +4,12 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ toHex  num):
+c_ Solution(o..
+    ___ toHex  num
         __ num __ 0: r.. '0'
         mp = '0123456789abcdef'
         result = ''
-        ___ _ __ r..(8):
+        ___ _ __ r..(8
             c = mp[num&15]
             result = c + result
             num >>= 4

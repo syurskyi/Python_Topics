@@ -39,7 +39,7 @@ c_ Solution:
             w.... i_lo < j a.. sum_lo > S:
                 sum_lo -= A[i_lo]
                 i_lo += 1
-            w.... i_hi < j a.. (sum_hi > S o. sum_hi __ S a.. A[i_hi] __ 0):
+            w.... i_hi < j a.. (sum_hi > S o. sum_hi __ S a.. A[i_hi] __ 0
                 sum_hi -= A[i_hi]
                 i_hi += 1
             ... i_hi >= i_lo

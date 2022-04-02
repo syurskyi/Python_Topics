@@ -3,7 +3,7 @@ ____ c.. _______ d..
 
 c_ CircularBuffer:
 
-    ___ - , capacity):
+    ___ - , capacity
         capacity = capacity
         buffer = d..([], capacity)
 
@@ -12,12 +12,12 @@ c_ CircularBuffer:
             r.. BufferEmptyException
         r.. buffer.popleft()
 
-    ___ write  data):
+    ___ write  data
         __ full
             r.. BufferFullException
         buffer.a..(data)
 
-    ___ overwrite  data):
+    ___ overwrite  data
         __ full
             buffer.popleft()
         buffer.a..(data)
@@ -32,9 +32,9 @@ c_ CircularBuffer:
         r.. l..(buffer) __ capacity
 
 
-c_ BufferFullException(E..):
+c_ BufferFullException(E..
     p..
 
 
-c_ BufferEmptyException(E..):
+c_ BufferEmptyException(E..
     p..

@@ -25,7 +25,7 @@ Note: There are at least two nodes in this BST.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -44,7 +44,7 @@ c_ Solution:
         dfs(root, ret)
         r.. ret[0]
 
-    ___ dfs  node, ret):
+    ___ dfs  node, ret
         __ n.. node:
             r.. N.., N..
         left_min, left_max = dfs(node.left, ret)

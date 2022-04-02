@@ -1,2 +1,2 @@
-___ is_armstrong(number):
+___ is_armstrong(number
     p..

@@ -11,8 +11,8 @@ For example, Given s = "Hello World",
 return 5.
 """
 
-c_ Solution(o..):
-    ___ lengthOfLastWord  s):
+c_ Solution(o..
+    ___ lengthOfLastWord  s
         """
         :type s: str
         :rtype: int

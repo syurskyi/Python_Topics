@@ -3,8 +3,8 @@ Created on Oct 11, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findKthNumber  m, n, k):
+c_ Solution(o..
+    ___ findKthNumber  m, n, k
         """
         :type m: int
         :type n: int
@@ -21,9 +21,9 @@ c_ Solution(o..):
                 low = mid+1
         r.. high
     
-    ___ c.. self, val, m, n):
+    ___ c.. self, val, m, n
         count = 0
-        ___ i __ r..(1, m+1):
+        ___ i __ r..(1, m+1
             tmp = m..(val//i, n)
             count += tmp
         r.. count

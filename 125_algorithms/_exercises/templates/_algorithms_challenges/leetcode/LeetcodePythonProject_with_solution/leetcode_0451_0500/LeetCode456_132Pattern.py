@@ -4,11 +4,11 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ find132pattern  nums):
+c_ Solution(o..
+    ___ find132pattern  nums
         s3 = f__('-inf')
         stack    # list
-        ___ i __ r..(l..(nums)-1, -1, -1):
+        ___ i __ r..(l..(nums)-1, -1, -1
             num = nums[i]
             __ num < s3:
                 r.. T..

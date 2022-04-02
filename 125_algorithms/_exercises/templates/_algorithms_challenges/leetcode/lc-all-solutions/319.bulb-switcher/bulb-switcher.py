@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ bulbSwitch  n):
+c_ Solution(o..
+  ___ bulbSwitch  n
     """
     :type n: int
     :rtype: int

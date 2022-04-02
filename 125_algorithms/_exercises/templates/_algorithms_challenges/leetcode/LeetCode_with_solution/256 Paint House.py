@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 c_ Solution:
     # @param {integer[][]} costs
     # @return {integer}
-    ___ minCost  costs):
+    ___ minCost  costs
         """
         Lef F[i][j] be the total min costs when the houses BEFORE i are painted, with (i-1)-th house pained as color j
         :type costs: list[list[int]]
@@ -21,10 +21,10 @@ c_ Solution:
         n = l..(costs)
         m = l..(costs[0])
         F = [[0 ___ _ __ x..(m)] ___ _ __ x..(n+1)]
-        ___ k __ x..(1, n+1):
-            ___ i __ x..(m):
+        ___ k __ x..(1, n+1
+            ___ i __ x..(m
                 F[k][i] = sys.maxint
-                ___ j __ x..(m):
+                ___ j __ x..(m
                     __ i != j:
                         F[k][i] = m..(F[k][i], F[k-1][j]+costs[k-1][i])
 

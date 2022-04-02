@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ mergeTwoLists  l1, l2):
+c_ Solution(o..
+  ___ mergeTwoLists  l1, l2
     """
     :type l1: ListNode
     :type l2: ListNode

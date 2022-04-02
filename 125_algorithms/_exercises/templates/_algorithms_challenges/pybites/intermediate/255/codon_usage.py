@@ -23,7 +23,7 @@ URL = "https://bites-data.s3.us-east-2.amazonaws.com/NC_009641.txt"
 BASE_ORDER = ["U", "C", "A", "G"]
 
 
-___ _preload_sequences(url=URL):
+___ _preload_sequences(url=URL
     """
     Provided helper function
     Returns coding sequences, one sequence each line
@@ -31,25 +31,25 @@ ___ _preload_sequences(url=URL):
     #x = requests.get(url)
     #return x.text.splitlines()
     filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
-    __ n.. os.path.isfile(filename):
+    __ n.. os.path.isfile(filename
         urlretrieve(url, filename)
-    w__ open(filename, "r") __ f:
-        r.. f.readlines()
+    w__ o.. filename, "r") __ f:
+        r.. f.r..
 
 
-___ get_translation_table(TRANSL_TABLE_11):
+___ get_translation_table(TRANSL_TABLE_11
     
 
     table = TRANSL_TABLE_11.r..('T','U')
-    lines = table.l...splitlines()
+    lines = table.l...s..
 
     lines = lines[0:1] + lines[2:]
 
-    ___ i,line __ e..(lines):
+    ___ i,line __ e..(lines
         lines[i] = line.s..('=')[1].s..
     
     mapping    # dict
-    ___ aa,b1,b2,b3 __ z..(*lines):
+    ___ aa,b1,b2,b3 __ z..(*lines
         __ aa __ 'U':
             aa = 'T'
         mapping[b1 + b2 + b3] = aa
@@ -64,7 +64,7 @@ ___ get_translation_table(TRANSL_TABLE_11):
 
 ___ return_codon_usage_table(
     sequences=_preload_sequences(), translation_table_str=TRANSL_TABLE_11
-):
+
     """
     Receives a list of gene sequences and a translation table string
     Returns a string with all bases and their frequencies in a table
@@ -81,7 +81,7 @@ ___ return_codon_usage_table(
     
     ___ sequence __ sequences:
         sequence = sequence.s..
-        ___ i __ r..(0,l..(sequence),3):
+        ___ i __ r..(0,l..(sequence),3
             codon = sequence[i:i +3]
             codon_to_count[codon] += 1
 

@@ -1,5 +1,5 @@
 c_ Ship:
-    ___ - , draft, crew):
+    ___ - , draft, crew
         draft = draft
         crew = crew
     

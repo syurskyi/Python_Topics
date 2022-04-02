@@ -3,7 +3,7 @@ _______ unittest
 ____ linked_list _______ LinkedList
 
 
-c_ LinkedListTest(unittest.TestCase):
+c_ LinkedListTest(unittest.TestCase
     ___ test_push_pop
         lst = LinkedList()
         lst.push(10)

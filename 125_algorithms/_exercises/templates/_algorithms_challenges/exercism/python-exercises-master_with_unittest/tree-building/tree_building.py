@@ -1,16 +1,16 @@
 c_ Record
-    ___ - , record_id, parent_id):
+    ___ - , record_id, parent_id
         record_id = record_id
         parent_id = parent_id
 
 
 c_ Node
-    ___ - , node_id):
+    ___ - , node_id
         node_id = node_id
         children    # list
 
 
-___ BuildTree(records):
+___ BuildTree(records
     root = N..
     records.s..(key=l.... x: x.record_id)
     ordered_id = [i.record_id ___ i __ records]

@@ -24,11 +24,11 @@ c_ Solution:
     @param: root: the root of binary tree
     @return: the root of the maximum average of subtree
     """
-    ___ findSubtree2  root):
+    ___ findSubtree2  root
         _traversal(root)
         r.. max_node
 
-    ___ _traversal  node):
+    ___ _traversal  node
         __ n.. node:
             r.. 0, 0
 

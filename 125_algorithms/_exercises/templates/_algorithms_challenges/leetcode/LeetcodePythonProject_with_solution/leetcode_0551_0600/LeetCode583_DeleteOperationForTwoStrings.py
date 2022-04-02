@@ -4,8 +4,8 @@ Created on Sep 4, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minDistance  word1, word2):
+c_ Solution(o..
+    ___ minDistance  word1, word2
         """
         :type word1: str
         :type word2: str
@@ -13,8 +13,8 @@ c_ Solution(o..):
         """
         m, n = l..(word1), l..(word2)
         dp = [[f__('inf')]*(n+1) ___ _ __ r..(m+1)]
-        ___ i __ r..(m+1):
-            ___ j __ r..(n+1):
+        ___ i __ r..(m+1
+            ___ j __ r..(n+1
                 __ i __ 0 a.. j __ 0:
                     dp[i][j] = 0
                 ____ i __ 0:

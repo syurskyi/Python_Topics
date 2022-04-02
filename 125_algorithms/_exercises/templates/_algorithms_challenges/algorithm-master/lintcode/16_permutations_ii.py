@@ -2,7 +2,7 @@ c_ Solution:
     """
     dfs with ignoring self and same num
     """
-    ___ permuteUnique  nums):
+    ___ permuteUnique  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -18,7 +18,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  nums, ans, path):
+    ___ dfs  nums, ans, path
         __ n.. nums:
             ans.a..(path | )
             r..
@@ -42,7 +42,7 @@ c_ Solution:
     """
     dfs with visited indices
     """
-    ___ permuteUnique  nums):
+    ___ permuteUnique  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -59,8 +59,8 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  nums, visited, ans, path):
-        __ l..(path) __ l..(nums):
+    ___ dfs  nums, visited, ans, path
+        __ l..(path) __ l..(nums
             ans.a..(path | )
             r..
 

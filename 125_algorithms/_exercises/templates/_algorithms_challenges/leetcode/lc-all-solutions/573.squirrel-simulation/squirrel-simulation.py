@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minDistance  height, width, tree, squirrel, nuts):
+c_ Solution(o..
+  ___ minDistance  height, width, tree, squirrel, nuts
     """
     :type height: int
     :type width: int
@@ -9,7 +9,7 @@ c_ Solution(o..):
     :rtype: int
     """
 
-    ___ dist(s, t):
+    ___ dist(s, t
       x1, y1 = s
       x2, y2 = t
       r.. abs(x1 - x2) + abs(y1 - y2)

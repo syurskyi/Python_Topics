@@ -1,5 +1,5 @@
-c_ NumMatrix(o..):
-  ___ - , matrix):
+c_ NumMatrix(o..
+  ___ - , matrix
     """
     initialize your data structure here.
     :type matrix: List[List[int]]
@@ -14,7 +14,7 @@ c_ NumMatrix(o..):
         ____:
           dp[i][j] = dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1] + matrix[i][j]
 
-  ___ sumRegion  row1, col1, row2, col2):
+  ___ sumRegion  row1, col1, row2, col2
     """
     sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
     :type row1: int

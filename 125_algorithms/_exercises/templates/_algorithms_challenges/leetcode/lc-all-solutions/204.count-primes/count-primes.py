@@ -1,13 +1,13 @@
-c_ Solution(o..):
+c_ Solution(o..
 
-  ___ countPrimes  n):
+  ___ countPrimes  n
     """
     :type n: int
     :rtype: int
     """
 
-    ___ helper(n, dp):
-      ___ i __ r..(2, n):
+    ___ helper(n, dp
+      ___ i __ r..(2, n
         __ dp[i] __ 1:
           k = i * i
           __ k >= n:

@@ -12,10 +12,10 @@ c_ Solution:
     @param: root: a TreeNode, the root of the binary tree
     @return: nothing
     """
-    ___ invertBinaryTree  root):
+    ___ invertBinaryTree  root
         divide_conquer(root)
 
-    ___ divide_conquer  node):
+    ___ divide_conquer  node
         __ n.. node:
             r..
 

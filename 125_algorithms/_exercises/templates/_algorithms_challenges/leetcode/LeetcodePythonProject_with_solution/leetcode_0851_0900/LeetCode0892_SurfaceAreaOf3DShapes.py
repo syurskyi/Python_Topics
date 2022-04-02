@@ -3,17 +3,17 @@ Created on Oct 31, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ surfaceArea  grid):
+c_ Solution(o..
+    ___ surfaceArea  grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
         m, n = l..(grid), l..(grid[0])
         res = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
-                __ (grid[i][j]):
+        ___ i __ r..(m
+            ___ j __ r..(n
+                __ (grid[i][j]
                     res += 2+grid[i][j]*4
                 __ i > 0:
                     res -= m..(grid[i-1][j], grid[i][j])*2

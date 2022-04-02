@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ totalFruit  tree):
+c_ Solution(o..
+    ___ totalFruit  tree
         """
         :type tree: List[int]
         :rtype: int
@@ -7,7 +7,7 @@ c_ Solution(o..):
         left = 0
         res = 0
         hashmap    # dict
-        ___ i, num __ e..(tree):
+        ___ i, num __ e..(tree
             hashmap[num] = hashmap.get(num, 0) + 1
             w.... l..(hashmap) > 2:
                 hashmap[tree[left]] -= 1

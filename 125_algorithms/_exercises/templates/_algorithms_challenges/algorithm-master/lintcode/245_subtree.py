@@ -13,7 +13,7 @@ c_ Solution:
     @param: B: The roots of binary tree B.
     @return: True if B is a subtree of A, or false.
     """
-    ___ isSubtree  A, B):
+    ___ isSubtree  A, B
         __ n.. B:
             # Empty tree is also treated as subtree in Lintcode
             r.. T..
@@ -26,7 +26,7 @@ c_ Solution:
             isSubtree(A.right, B)
         )
 
-    ___ isEqual  A, B):
+    ___ isEqual  A, B
         __ n.. A a.. n.. B:
             r.. T..
         __ n.. A o. n.. B:

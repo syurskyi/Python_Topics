@@ -1,4 +1,4 @@
-___ equal_slices(total, people, each):
+___ equal_slices(total, people, each
     __ people __ 0:
         r.. T..
     __ people * each <= total:

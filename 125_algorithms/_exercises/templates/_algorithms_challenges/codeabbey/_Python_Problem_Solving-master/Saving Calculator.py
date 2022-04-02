@@ -3,7 +3,7 @@ ___ i __ r..(i..(input())):
     
     #accept the three values S,R and P where S is current money R is the amount of money to be achieved and
     #P is the rate of interest
-    a = l..(map(i.., input().s..()))
+    a = l.. m..(i.., input().s..()))
     
     s,r,p = a
     year_count = 0

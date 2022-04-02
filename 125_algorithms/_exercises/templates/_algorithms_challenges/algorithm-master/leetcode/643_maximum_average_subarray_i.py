@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findMaxAverage  nums, k):
+    ___ findMaxAverage  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -24,7 +24,7 @@ c_ Solution:
         r.. max_sum / f__(k)
 
 c_ Solution:
-    ___ findMaxAverage  nums, k):
+    ___ findMaxAverage  nums, k
         """
         :type nums: List[int]
         :type k: int

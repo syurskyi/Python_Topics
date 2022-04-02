@@ -1,7 +1,7 @@
 _______ __
 
 
-___ count_n_repetitions(text, n=1):
+___ count_n_repetitions(text, n=1
     """
     Counts how often characters are followed by themselves for
     n times.
@@ -21,7 +21,7 @@ ___ count_n_repetitions(text, n=1):
 
 
 
-___ count_n_reps_or_n_chars_following(text, n=1, char=""):
+___ count_n_reps_or_n_chars_following(text, n=1, char=""
     """
     Counts how often characters are repeated for n times, or
     followed by char n times.
@@ -41,7 +41,7 @@ ___ count_n_reps_or_n_chars_following(text, n=1, char=""):
 
     r.. l..(counts)
 
-___ check_surrounding_chars(text, surrounding_chars):
+___ check_surrounding_chars(text, surrounding_chars
     """
     Count the number of times a character is surrounded by
     characters from the surrounding_chars list.

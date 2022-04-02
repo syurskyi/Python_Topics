@@ -4,8 +4,8 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ getModifiedArray  length, updates):
+c_ Solution(o..
+    ___ getModifiedArray  length, updates
         result = [0]*length
         ___ update __ updates:
             start = update[0]
@@ -15,7 +15,7 @@ c_ Solution(o..):
             __ end < length-1:
                 result[end+1] -= increase
         val = 0
-        ___ i __ r..(length):
+        ___ i __ r..(length
             val += result[i]
             result[i] = val
         r.. result

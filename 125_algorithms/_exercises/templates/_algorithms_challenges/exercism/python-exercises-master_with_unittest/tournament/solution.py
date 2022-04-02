@@ -3,7 +3,7 @@ ____ c.. _______ defaultdict
 RESULTS = d..(win=0, draw=1, loss=2)
 
 
-___ invert_result(result):
+___ invert_result(result
     __ result __ 0:
         r.. 2
     ____ result __ 2:
@@ -11,7 +11,7 @@ ___ invert_result(result):
     r.. result
 
 
-___ parse_game(game_line):
+___ parse_game(game_line
     game = game_line.s..(';')
     __ l..(game) __ 3 a.. game[2] __ RESULTS:
         result = RESULTS[game[2]]
@@ -19,12 +19,12 @@ ___ parse_game(game_line):
     r.. []
 
 
-___ calculate_points(stats):
+___ calculate_points(stats
     r.. stats[0] * 3 + stats[1]
 
 
-___ format_table(results):
-    table = ['Team                           | MP |  W |  D |  L |  P']
+___ format_table(results
+    table =  'Team                           | MP |  W |  D |  L |  P'
 
     ___ team, games __ s..(
             results.i.., key=l.... g: (-calculate_points(g[1]), g[0])):
@@ -35,11 +35,11 @@ ___ format_table(results):
     r.. '\n'.j..(table)
 
 
-___ tally(data):
+___ tally(data
     table = defaultdict(l....: [0, 0, 0])
 
-    ___ line __ data.s..('\n'):
-        ___ team, result __ parse_game(line):
+    ___ line __ data.s..('\n'
+        ___ team, result __ parse_game(line
             table[team][result] += 1
 
     r.. format_table(table)

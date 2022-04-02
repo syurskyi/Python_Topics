@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ multiply  num1, num2):
+c_ Solution(o..
+  ___ multiply  num1, num2
     """
     :type num1: str
     :type num2: str
@@ -13,4 +13,4 @@ c_ Solution(o..):
         ans[i + j] %= 10
     w.... l..(ans) > 1 a.. ans[-1] __ 0:
       ans.pop()
-    r.. "".j..(map(s.., ans[::-1]))
+    r.. "".j.. m..(s.., ans[::-1]))

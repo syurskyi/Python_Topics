@@ -97,7 +97,7 @@ ___ get_continent(country: s..) __ s..:
 ___ _get_pycon_data
     """Helper function that retrieves the required PyCon data"""
     w__ requests.Session() __ session:
-        r.. session.get(PYCON_DATA).content.decode("utf-8")
+        r.. session.get(PYCON_DATA).content.d.. "utf-8")
 
 
 ___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
@@ -117,12 +117,12 @@ ___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
             # "location": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Trento", "addressCountry": "Italy" }, 
             # "name": "Trento, Italy" }, "name": "EuroSciPy", "startDate": "2018-08-28", "url": "https://www.euroscipy.org/2018/", "endDate": "2018-09-01" }
             # PyCon = namedtuple("PyCon", "name city country start_date end_date url")
-            event_name = event_json['name']
+            event_name = event_json 'name'
             event_city = event_json["location"]["address"]["addressLocality"]
             event_country = event_json["location"]["address"]["addressCountry"]
-            event_startDate = p..(event_json['startDate'])
-            event_endDate = p..(event_json['endDate'])
-            event_url = event_json['url']
+            event_startDate = p..(event_json 'startDate' )
+            event_endDate = p..(event_json 'endDate' )
+            event_url = event_json 'url'
             pycon_tuple = PyCon(name=event_name,
                                 city=event_city,
                                 country=event_country,

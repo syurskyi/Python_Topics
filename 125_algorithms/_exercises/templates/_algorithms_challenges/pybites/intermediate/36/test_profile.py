@@ -14,14 +14,14 @@ ___ test_get_profile_no_age
 
 
 ___ test_get_profile_valueerror
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         ... get_profile('tim', 'nonint')
 
 
 ___ test_get_profile_too_many_sports
-    w__ p__.r..(ValueError):
-        sports = ['tennis', 'basketball', 'badminton',
-                  'baseball', 'volleyball', 'boxing']
+    w__ p__.r..(ValueError
+        sports =  'tennis', 'basketball', 'badminton',
+                  'baseball', 'volleyball', 'boxing'
         ... get_profile('tim', 36, *sports)
 
 
@@ -31,13 +31,13 @@ ___ test_get_profile_dict
 
 ___ test_get_profile_one_sport
     expected = {'name': 'tim', 'age': 36,
-                'sports': ['tennis']}
+                'sports':  'tennis' }
     ... get_profile('tim', 36, 'tennis') __ expected
 
 
 ___ test_get_profile_two_sports
     expected = {'name': 'tim', 'age': 36,
-                'sports': ['basketball', 'tennis']}
+                'sports':  'basketball', 'tennis' }
     ... get_profile('tim', 36, 'tennis', 'basketball') __ expected
 
 
@@ -50,7 +50,7 @@ ___ test_get_profile_award
 
 ___ test_get_profile_two_sports_and_one_award
     expected = {'name': 'tim', 'age': 36,
-                'sports': ['basketball', 'tennis'],
+                'sports':  'basketball', 'tennis' ,
                 'awards': {'champ': 'helped out team in crisis'}}
     ... get_profile('tim', 36, 'tennis', 'basketball',
                        champ='helped out team in crisis') __ expected
@@ -58,7 +58,7 @@ ___ test_get_profile_two_sports_and_one_award
 
 ___ test_get_profile_two_sports_and_three_awards
     expected = {'name': 'tim', 'age': 36,
-                'sports': ['basketball', 'tennis'],
+                'sports':  'basketball', 'tennis' ,
                 'awards': {'champ': 'helped out the team in crisis',
                            'service': 'going the extra mile for our customers',
                            'attitude': 'unbeatable positive + uplifting'}}

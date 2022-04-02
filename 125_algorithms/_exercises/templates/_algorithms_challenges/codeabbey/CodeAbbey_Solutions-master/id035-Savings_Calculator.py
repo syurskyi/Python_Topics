@@ -1,6 +1,6 @@
-___ savingsCalc(calculations):
+___ savingsCalc(calculations
     answer    # list
-    ___ calculation __ r..(calculations):
+    ___ calculation __ r..(calculations
         # start = Starting money, end = Goal amount, rate = Interest rate
         start, end, rate = raw_input().s..
         rate = (i..(rate) / 100.00) + 1

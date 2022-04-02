@@ -3,31 +3,31 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ buddyStrings  A, B):
+c_ Solution(o..
+    ___ buddyStrings  A, B
         """
         :type A: str
         :type B: str
         :rtype: bool
         """
         a, b = A, B
-        __ l..(a) != l..(b): r.. F..
-        __ a __ b a.. l..(s..(a)) < l..(a): r.. T..
+        __ l..(a) != l..(b r.. F..
+        __ a __ b a.. l..(s..(a)) < l..(a r.. T..
         dif = [(c1, c2) ___ c1, c2 __ z..(a, b) __ c1 != c2]
         r.. l..(dif) __ 2 a.. dif[0] __ dif[1][::-1]
     
-    ___ buddyStrings_own  A, B):
+    ___ buddyStrings_own  A, B
         """
         :type A: str
         :type B: str
         :rtype: bool
         """
         a, b = A, B
-        __ l..(a) != l..(b):
+        __ l..(a) != l..(b
             r.. F..
         c01, c02 = '', ''
         times = 0
-        ___ c1, c2 __ z..(a, b):
+        ___ c1, c2 __ z..(a, b
             __ c1 != c2:
                 __ times > 1:
                     r.. F..
@@ -45,11 +45,11 @@ c_ Solution(o..):
     
     ___ test
         testCase = [
-            ['ab', 'ba'],
-            ['ab', 'ab'],
-            ['aa', 'aa'],
-            ['aaaaaabc', 'aaaaaacb'],
-            ['', 'aa'],
+             'ab', 'ba' ,
+             'ab', 'ab' ,
+             'aa', 'aa' ,
+             'aaaaaabc', 'aaaaaacb' ,
+            ['', 'aa' ,
         ]
         ___ a, b __ testCase:
             res = buddyStrings(a, b)

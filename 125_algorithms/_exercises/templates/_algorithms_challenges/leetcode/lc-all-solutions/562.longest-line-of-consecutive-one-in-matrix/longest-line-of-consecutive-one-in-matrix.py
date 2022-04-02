@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ longestLine  M):
+c_ Solution(o..
+  ___ longestLine  M
     """
     :type M: List[List[int]]
     :rtype: int

@@ -4,8 +4,8 @@ Created on May 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findRelativeRanks  nums):
+c_ Solution(o..
+    ___ findRelativeRanks  nums
         """
         :type nums: List[int]
         :rtype: List[str]
@@ -13,7 +13,7 @@ c_ Solution(o..):
         result    # list
         sortNums = s..(nums, r.._T..
         hashmap    # dict
-        ___ i, num __ e..(sortNums):
+        ___ i, num __ e..(sortNums
             hashmap[num] = i+1
         ___ num __ nums:
             ind = hashmap[num]

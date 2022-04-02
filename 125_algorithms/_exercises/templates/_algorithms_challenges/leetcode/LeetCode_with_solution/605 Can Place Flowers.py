@@ -35,7 +35,7 @@ c_ Solution:
                 flowerbed[i] != 1 a..
                 (i + 1 >= l..(flowerbed) o. flowerbed[i+1] != 1) a..
                 (i - 1 < 0 o. flowerbed[i - 1] != 1)
-            ):
+
                 n -= 1
                 flowerbed[i] = 1
                 __ n __ 0:

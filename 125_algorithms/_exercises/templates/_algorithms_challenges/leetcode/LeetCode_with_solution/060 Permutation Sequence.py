@@ -19,20 +19,20 @@ _______ math
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ getPermutation  n, k):
+c_ Solution(o..
+    ___ getPermutation  n, k
         k -= 1
 
         array = r..(1, n+1)
         k %= math.factorial(n)
         ret    # list
-        ___ i __ x..(n-1, -1, -1):
+        ___ i __ x..(n-1, -1, -1
             idx, k = divmod(k, math.factorial(i))
             ret.a..(array.pop(idx))
 
-        r.. "".j..(map(s.., ret))
+        r.. "".j.. m..(s.., ret))
 
-    ___ getPermutation  n, k):
+    ___ getPermutation  n, k
         """
         Reverse Cantor Expansion
 
@@ -43,20 +43,20 @@ c_ Solution(o..):
         """
         # factorial
         fac = [1 ___ _ __ x..(n)]
-        ___ i __ x..(1, n):
+        ___ i __ x..(1, n
             fac[i] = fac[i-1]*i
 
         # solve equation
         k -= 1  # index starting from 0
         a = [0 ___ _ __ x..(n)]
-        ___ i __ x..(n-1, -1, -1):
+        ___ i __ x..(n-1, -1, -1
             a[n-1-i] = k/fac[i]  # a[i] = k/fac[i]
             k %= fac[i]
 
         # post-process
         candidate = r..(1, n+1)  # sorted
         visited = [F.. ___ _ __ x..(n)]
-        ___ ind, val __ e..(a):
+        ___ ind, val __ e..(a
             i = 0  # pointer
             cnt = 0  # counter
             w... T...
@@ -70,9 +70,9 @@ c_ Solution(o..):
             a[ind] = candidate[i]
             visited[i] = T..
 
-        r.. "".j..(map(s.., a))
+        r.. "".j.. m..(s.., a))
 
-    ___ getPermutation_complicated  n, k):
+    ___ getPermutation_complicated  n, k
         """
         Mathematics
         Reversed Cantor Expansion
@@ -97,7 +97,7 @@ c_ Solution(o..):
         k -= 1  # index starting from 0
 
         factorial = 1  # (n-1)!
-        ___ i __ x..(1, n):
+        ___ i __ x..(1, n
             factorial *= i
 
         result    # list
@@ -120,10 +120,10 @@ c_ Solution_TLE:
     Time Limit Expected
     """
 
-    ___ - ):
+    ___ -
         counter = 0
 
-    ___ getPermutation  n, k):
+    ___ getPermutation  n, k
         """
         dfs, iterate all possibilities
         :param n: integer
@@ -138,7 +138,7 @@ c_ Solution_TLE:
         r.. "".j..(s..(element) ___ element __ result)
 
 
-    ___ get_kth_permutation_dfs  remaining_seq, k, cur):
+    ___ get_kth_permutation_dfs  remaining_seq, k, cur
         """
         dfs until find kth permutation, return that permutation, otherwise return None
         :param remaining_seq:
@@ -151,7 +151,7 @@ c_ Solution_TLE:
             __ counter __ k:
                 r.. cur
 
-        ___ ind, val __ e..(remaining_seq):
+        ___ ind, val __ e..(remaining_seq
             result = get_kth_permutation_dfs(remaining_seq[:ind]+remaining_seq[ind+1:], k, cur+[val])
             __ result: r.. result
 

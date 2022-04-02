@@ -1,12 +1,12 @@
-values = l..(map(i.., input().s..()))
+values = l.. m..(i.., input().s..()))
 
 ___ get_max_and_min
     m.. = values[0]
     m.. = values[0]
     ___ i __ values:
-        __(i < m..):
+        __(i < m..
             m.. = i
-        ____(i > m..):
+        ____(i > m..
             m.. = i
     
     r.. m.., m..

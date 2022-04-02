@@ -12,7 +12,7 @@ implementing one.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ isNumber_builtin  s):
+    ___ isNumber_builtin  s
         """
         using built-in function
         :param s: a string
@@ -24,7 +24,7 @@ c_ Solution:
         ______ V..
             r.. F..
 
-    ___ isNumber  s):
+    ___ isNumber  s
         """
         D-FSA: Deterministic Finite State Automata
         Transition table T, which is constructed from FSA
@@ -58,19 +58,19 @@ c_ Solution:
                 r.. F..
             __ char__" ":
                 token = SPACE
-            ____ char __ ("-", "+"):
+            ____ char __ ("-", "+"
                 token = SIGN
             ____ char __ map(s.., r..(10)):
                 token = DIGIT
             ____ char__".":
                 token = DOT
-            ____ char __ ("e", "E"):
+            ____ char __ ("e", "E"
                 token = E
             ____:
                 token = INVALID
 
             state = T[state][token]
-        __ state __ (1, 4, 7, 8):  # accept state
+        __ state __ (1, 4, 7, 8  # accept state
             r.. T..
         ____:
             r.. F..

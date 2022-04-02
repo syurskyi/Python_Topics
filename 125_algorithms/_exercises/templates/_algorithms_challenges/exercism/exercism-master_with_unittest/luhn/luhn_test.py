@@ -4,7 +4,7 @@ _______ unittest
 ____ luhn _______ Luhn
 
 
-c_ LuhnTests(unittest.TestCase):
+c_ LuhnTests(unittest.TestCase
     ___ test_addends
         # uses a Counter to avoid specifying order of return value
         assertEqual(Counter([1, 4, 1, 4, 1]),

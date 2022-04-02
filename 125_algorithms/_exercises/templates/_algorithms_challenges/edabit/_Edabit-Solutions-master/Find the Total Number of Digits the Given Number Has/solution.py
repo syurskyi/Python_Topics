@@ -1,4 +1,4 @@
-___ find_digit_amount(num):
+___ find_digit_amount(num
     r.. l..(s..(num))
 
 #BUGFIX

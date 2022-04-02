@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ customSortString  S, T):
+    ___ customSortString  S, T
         """
         :type S: str
         :type T: str

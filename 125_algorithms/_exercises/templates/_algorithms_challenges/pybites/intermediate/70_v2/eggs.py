@@ -5,7 +5,7 @@ COLORS = 'red blue green yellow brown purple'.s..
 
 c_ EggCreator:
     
-    ___ - , limit):
+    ___ - , limit
         _limit = limit
 
     ___ __iter__

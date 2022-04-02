@@ -3,7 +3,7 @@ ____ d__ _______ d__
 ____ c.. _______ Counter
 
 
-c_ DateFormat(E..):
+c_ DateFormat(E..
     DDMMYY = 0  # dd/mm/yy
     MMDDYY = 1  # mm/dd/yy
     YYMMDD = 2  # yy/mm/dd
@@ -21,18 +21,18 @@ c_ DateFormat(E..):
         d_parse_formats = ["%d/%m/%y", "%m/%d/%y", "%y/%m/%d"]
         __ val __ N..
             r.. d_parse_formats
-        __ 0 <= val <= l..(d_parse_formats):
+        __ 0 <= val <= l..(d_parse_formats
             r.. d_parse_formats[val]
         r.. ValueError
 
 
-c_ InfDateFmtError(E..):
+c_ InfDateFmtError(E..
     """custom exception when it is not possible to infer a date format
     e.g. too many NONPARSABLE or a tie """
     p..
 
 
-___ _maybe_DateFormats(date_str):
+___ _maybe_DateFormats(date_str
     """ Args:
     date_str (str) string representing a date in unknown format
     Returns:
@@ -41,7 +41,7 @@ ___ _maybe_DateFormats(date_str):
     """
     d_parse_formats = DateFormat.get_d_parse_formats()
     maybe_formats    # list
-    ___ idx, d_parse_fmt __ e..(d_parse_formats):
+    ___ idx, d_parse_fmt __ e..(d_parse_formats
         ___
             _parsed_date = d__.strptime(date_str, d_parse_fmt) # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx))
@@ -52,7 +52,7 @@ ___ _maybe_DateFormats(date_str):
     r.. maybe_formats
 
 
-___ get_dates(dates):
+___ get_dates(dates
     """ Args:
     dates (list) list of date strings
     where each list item represents a date in unknown format
@@ -68,7 +68,7 @@ ___ get_dates(dates):
     # complete this method
     ___ date __ dates:
         found = F..
-        ___ i,date_format __ e..(date_formats_to_try):
+        ___ i,date_format __ e..(date_formats_to_try
             ___
                 d__.strptime(date,date_format)
                 format_counts[date_format] += 1

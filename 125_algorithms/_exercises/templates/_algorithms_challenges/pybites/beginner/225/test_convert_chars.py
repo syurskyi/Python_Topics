@@ -45,5 +45,5 @@ ____ convert_chars _______ convert_pybites_chars
     ("Elementum curabitur vitae nunc sed velit dignissim sodales ut.",
      "elEmEnTum curaBITur vITaE nunc SEd vElIT dIgnISSIm SodalES uT."),
 ])
-___ test_convert_pybites_chars(arg, expected):
+___ test_convert_pybites_chars(arg, expected
     ... convert_pybites_chars(arg) __ expected

@@ -9,7 +9,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ isSymmetric  root):
+    ___ isSymmetric  root
         """
         :type root: TreeNode
         :rtype: bool
@@ -19,15 +19,15 @@ c_ Solution:
 
         r.. divide_conquer(root.left, root.right)
 
-    ___ divide_conquer  left, right):
+    ___ divide_conquer  left, right
         __ n.. left a.. n.. right:
             r.. T..
         __ n.. left o. n.. right:
             r.. F..
         __ left.val != right.val:
             r.. F..
-        __ n.. divide_conquer(left.left, right.right):
+        __ n.. divide_conquer(left.left, right.right
             r.. F..
-        __ n.. divide_conquer(left.right, right.left):
+        __ n.. divide_conquer(left.right, right.left
             r.. F..
         r.. T..

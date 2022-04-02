@@ -9,11 +9,11 @@ ___ test_get_secret_token
     ... issubclass(UserAccessExpired, E..)
     ... issubclass(UserNoPermission, E..)
 
-    w__ p__.r..(UserDoesNotExist):
+    w__ p__.r..(UserDoesNotExist
         get_secret_token('Tim')
-    w__ p__.r..(UserAccessExpired):
+    w__ p__.r..(UserAccessExpired
         get_secret_token('Bob')
-    w__ p__.r..(UserNoPermission):
+    w__ p__.r..(UserNoPermission
         get_secret_token('Julian')
 
     ... get_secret_token('PyBites') __ SECRET

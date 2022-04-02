@@ -3,8 +3,8 @@ Created on May 1, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ ambiguousCoordinates  S):
+c_ Solution(o..
+    ___ ambiguousCoordinates  S
         """
         :type S: str
         :rtype: List[str]
@@ -12,7 +12,7 @@ c_ Solution(o..):
         s = S
         n = l..(s)
         res    # list
-        ___ i __ r..(1, n-2):
+        ___ i __ r..(1, n-2
             arrA = helper(s[1:i+1])
             arrB = helper(s[i+1:n-1])
             ___ s1 __ arrA:
@@ -20,10 +20,10 @@ c_ Solution(o..):
                     res.a..('(%s, %s)' % (s1, s2))
         r.. res
     
-    ___ helper  s):
+    ___ helper  s
         n = l..(s)
         res    # list
-        __ n __ 0 o. (n > 1 a.. s[0] __ '0' a.. s[-1] __ '0'):
+        __ n __ 0 o. (n > 1 a.. s[0] __ '0' a.. s[-1] __ '0'
             r.. res
         __ n > 1 a.. s[0] __ '0':
             res.a..('0.'+s[1:])
@@ -31,7 +31,7 @@ c_ Solution(o..):
         res.a..(s)
         __ n __ 1 o. s[-1] __ '0':
             r.. res
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             res.a..(s[:i]+'.'+s[i:])
         r.. res
     

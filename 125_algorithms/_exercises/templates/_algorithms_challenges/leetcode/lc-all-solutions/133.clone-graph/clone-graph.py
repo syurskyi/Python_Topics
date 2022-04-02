@@ -7,11 +7,11 @@
 c_ Solution:
   # @param node, a undirected graph node
   # @return a undirected graph node
-  ___ cloneGraph  node):
+  ___ cloneGraph  node
     graph    # dict
     visited = s..()
 
-    ___ dfs(node, visited, graph):
+    ___ dfs(node, visited, graph
       __ n.. node o. node.label __ visited:
         r..
       visited |= {node.label}

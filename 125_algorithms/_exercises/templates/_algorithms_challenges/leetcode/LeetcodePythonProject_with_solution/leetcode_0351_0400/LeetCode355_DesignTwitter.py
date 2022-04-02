@@ -3,16 +3,16 @@ Created on Feb 28, 2018
 
 @author: tongq
 '''
-c_ TweetObj(o..):
+c_ TweetObj(o..
     ___ - , tweet_id, user_id, tweetId, prevTweet_ N..
         user_id = user_id
         tweetContext = tweetId
         prevTweet = prevTweet
         tweet_id = tweet_id
 
-c_ Twitter(o..):
+c_ Twitter(o..
 
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
         """
@@ -20,7 +20,7 @@ c_ Twitter(o..):
         latestTweets    # dict
         tweet_id = 0
 
-    ___ postTweet  userId, tweetId):
+    ___ postTweet  userId, tweetId
         """
         Compose a new tweet.
         :type userId: int
@@ -38,7 +38,7 @@ c_ Twitter(o..):
             tweet = TweetObj(tweet_id, userId, tweetId, N..)
             latestTweets[userId] = tweet
 
-    ___ getNewsFeed  userId):
+    ___ getNewsFeed  userId
         """
         Retrieve the 10 most recent tweet ids in the user's news feed.
         Each item in the news feed must be posted by users who the user followed or by the user herself.
@@ -58,7 +58,7 @@ c_ Twitter(o..):
                 tweetTuple = (-latestTweet.tweet_id, latestTweet.tweetContext, latestTweet.prevTweet)
                 heapq.heappush(heap, tweetTuple)
         result    # list
-        ___ _ __ r..(10):
+        ___ _ __ r..(10
             __ n.. heap:
                 _____
             tweetTuple = heapq.heappop(heap)
@@ -69,7 +69,7 @@ c_ Twitter(o..):
                 heapq.heappush(heap, newTweetTuple)
         r.. result
 
-    ___ follow  followerId, followeeId):
+    ___ follow  followerId, followeeId
         """
         Follower follows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int
@@ -81,7 +81,7 @@ c_ Twitter(o..):
         ____:
             following[followerId] = s..([followeeId])
 
-    ___ unfollow  followerId, followeeId):
+    ___ unfollow  followerId, followeeId
         """
         Follower unfollows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int

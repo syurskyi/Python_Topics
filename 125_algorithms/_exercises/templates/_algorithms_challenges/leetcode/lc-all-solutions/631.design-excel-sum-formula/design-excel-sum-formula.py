@@ -1,5 +1,5 @@
-c_ Excel(o..):
-  ___ - , H, W):
+c_ Excel(o..
+  ___ - , H, W
     """
     :type H: int
     :type W: str
@@ -8,10 +8,10 @@ c_ Excel(o..):
     data = [[0] * (W + 1) ___ _ __ r..(H + 1)]
     formulas    # dict
 
-  ___ decodeCoord  r, c):
+  ___ decodeCoord  r, c
     r.. i..(r) - 1, o..(c) - o..("A") + 1
 
-  ___ s..  r, c, v):
+  ___ s..  r, c, v
     """
     :type r: int
     :type c: str
@@ -23,7 +23,7 @@ c_ Excel(o..):
       del formulas[(r, c)]
     data[r][c] = v
 
-  ___ get  r, c):
+  ___ get  r, c
     """
     :type r: int
     :type c: str
@@ -34,19 +34,19 @@ c_ Excel(o..):
       r.. computeFormula(formulas[(r, c)])
     r.. data[r][c]
 
-  ___ computeFormula  strs):
+  ___ computeFormula  strs
     ans = 0
     ___ s __ strs:
       startI, startJ, endI, endJ = parseRange(s)
-      ___ i __ r..(startI, endI + 1):
-        ___ j __ r..(startJ, endJ + 1):
+      ___ i __ r..(startI, endI + 1
+        ___ j __ r..(startJ, endJ + 1
           __ (i, j) __ formulas:
             ans += computeFormula(formulas[(i, j)])
           ____:
             ans += data[i][j]
     r.. ans
 
-  ___ parseRange  s):
+  ___ parseRange  s
     start = end = s
     __ ":" __ s:
       start, end = s.s..(":")
@@ -54,7 +54,7 @@ c_ Excel(o..):
     endI, endJ = decodeCoord(end[1:], end[0])
     r.. (startI, startJ, endI, endJ)
 
-  ___ s..  r, c, strs):
+  ___ s..  r, c, strs
     """
     :type r: int
     :type c: str

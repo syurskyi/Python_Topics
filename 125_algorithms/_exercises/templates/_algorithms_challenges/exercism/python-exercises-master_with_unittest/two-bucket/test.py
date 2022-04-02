@@ -5,7 +5,7 @@ ____ two_bucket _______ measure
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.4.0
 
-c_ TwoBucketTest(unittest.TestCase):
+c_ TwoBucketTest(unittest.TestCase
     ___ test_bucket_one_size_3_bucket_two_size_5_start_with_bucket_one
         assertEqual(measure(3, 5, 1, "one"), (4, "one", 5))
 

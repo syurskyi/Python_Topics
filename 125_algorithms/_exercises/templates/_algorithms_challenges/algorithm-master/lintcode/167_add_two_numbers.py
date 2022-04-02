@@ -8,7 +8,7 @@ class ListNode:
 
 
 c_ Solution:
-    ___ addLists  A, B):
+    ___ addLists  A, B
         """
         :type A: ListNode
         :type B: ListNode

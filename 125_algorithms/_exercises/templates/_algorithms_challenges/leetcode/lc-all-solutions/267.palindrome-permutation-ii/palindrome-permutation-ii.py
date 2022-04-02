@@ -1,15 +1,15 @@
 _______ c..
 
 
-c_ Solution(o..):
-  ___ generatePalindromes  s):
+c_ Solution(o..
+  ___ generatePalindromes  s
     """
     :type s: str
     :rtype: List[str]
     """
 
-    ___ helper(s, path, ans, visited):
-      __ l..(path) __ l..(s):
+    ___ helper(s, path, ans, visited
+      __ l..(path) __ l..(s
         ans.a..("".j..(path))
         r..
 

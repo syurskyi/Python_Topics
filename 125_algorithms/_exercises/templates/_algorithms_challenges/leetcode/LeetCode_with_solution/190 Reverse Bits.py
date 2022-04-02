@@ -8,13 +8,13 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ reverseBits  n):
+    ___ reverseBits  n
         """
         %2 /2
         """
         ret = 0
         BITS = 32
-        ___ i __ x..(BITS):
+        ___ i __ x..(BITS
             ret += n&1
             __ i __ BITS-1: _____
             ret <<= 1

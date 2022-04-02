@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findStrobogrammatic  n):
+c_ Solution(o..
+  ___ findStrobogrammatic  n
     """
     :type n: int
     :rtype: List[str]
     """
     d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
 
-    ___ dfs(half, path, res, n):
+    ___ dfs(half, path, res, n
       __ l..(path) __ half:
         pathStr = "".j..(path)
         __ half * 2 __ n:

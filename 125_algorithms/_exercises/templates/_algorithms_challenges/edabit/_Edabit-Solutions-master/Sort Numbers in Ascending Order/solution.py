@@ -1,4 +1,4 @@
-___ sort_nums_ascending(lst):
+___ sort_nums_ascending(lst
     __ l..(lst) __ 0:
         r.. []
     ____:

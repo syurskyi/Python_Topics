@@ -3,7 +3,7 @@
 
 
 n, k = map(i.., input().s..())
-prices = s..(l..(map(i.., input().s..())))
+prices = s..(l.. m..(i.., input().s..())))
 
 count = 0
 total_sum = 0

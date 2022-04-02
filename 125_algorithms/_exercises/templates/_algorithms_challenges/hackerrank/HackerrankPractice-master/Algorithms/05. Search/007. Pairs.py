@@ -4,7 +4,7 @@
 
 # use two-pointers approach on a sorted array
 n, value = map(i.., input().s..())
-points = s..(l..(map(i.., input().s..())))
+points = s..(l.. m..(i.., input().s..())))
 
 ans = 0
 i = 0

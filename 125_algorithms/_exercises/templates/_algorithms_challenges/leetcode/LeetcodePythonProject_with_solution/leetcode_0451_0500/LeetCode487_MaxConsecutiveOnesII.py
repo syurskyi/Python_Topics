@@ -4,8 +4,8 @@ Created on May 8, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findMaxConsecutiveOnes  nums):
+c_ Solution(o..
+    ___ findMaxConsecutiveOnes  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         left = -1
         nextLeft = -1
         maxLen = 0
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             __ num __ 0:
                 maxLen = m..(maxLen, i-left-1)
                 left = nextLeft

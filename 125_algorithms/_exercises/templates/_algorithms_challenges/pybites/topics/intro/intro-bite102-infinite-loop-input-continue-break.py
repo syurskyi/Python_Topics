@@ -1,4 +1,4 @@
-VALID_COLORS = ['blue', 'yellow', 'red']
+VALID_COLORS =  'blue', 'yellow', 'red' 
 
 
 ___ my_print_colors

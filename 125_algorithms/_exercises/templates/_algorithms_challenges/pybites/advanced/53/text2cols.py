@@ -4,7 +4,7 @@ _______ i..
 COL_WIDTH = 20
 
 
-___ text_to_columns(text):
+___ text_to_columns(text
     """Split text (input arg) to columns, the amount of double
        newlines (\n\n) in text determines the amount of columns.
        Return a string with the column output like:
@@ -25,7 +25,7 @@ ___ text_to_columns(text):
     
 
     result    # list
-    ___ p __ i...z__(*l,fillvalue=''):
+    ___ p __ i...z__(*l,fillvalue=''
         
         line    # list
         ___ value __ p:

@@ -13,14 +13,14 @@ __ n.. json_input_file.exists
 
 
 ___ get_json_data
-    w__ open(json_input_file) __ file_in:
+    w__ o.. json_input_file) __ file_in:
         r.. json.load(file_in)
 
 
 json_data = get_json_data()
 
 
-___ get_passing_code(json_data=json_data):
+___ get_passing_code(json_data=json_data
     """Get all passing code and write the code for each bite to individual files.
        Output file names should be the bite name and number with a .py extension,
        but not including the description.  For example, if the bite name is
@@ -30,7 +30,7 @@ ___ get_passing_code(json_data=json_data):
     """
     ___ row __ json_data["bites"]:
         filename_pre = row["bite"].s..(".")[0].r..(" ", "")
-        w__ open(f"{tmp}/{filename_pre}.py", "w") __ f:
+        w__ o.. f"{tmp}/{filename_pre}.py", "w") __ f:
             f.write(row["passing_code"])
 
 

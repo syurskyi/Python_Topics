@@ -7,11 +7,11 @@ the contiguous subarray [2,3] has the largest product = 6
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ maxProduct_oneline  nums):
+c_ Solution(o..
+    ___ maxProduct_oneline  nums
         r.. m..(reduce(l.... A, n: [m..(A), m..(n, A[1]*n, A[2]*n), m..(n, A[1]*n, A[2]*n)], nums[1:], [nums[0]]*3))
 
-    ___ maxProduct  nums):
+    ___ maxProduct  nums
         """
         DP
         State definitions:
@@ -34,7 +34,7 @@ c_ Solution(o..):
 
         r.. maxa
 
-    ___ maxProduct_error2  nums):
+    ___ maxProduct_error2  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -47,7 +47,7 @@ c_ Solution(o..):
         F_neg = [0 ___ _ __ x..(n+1)]
 
         maxa = 1
-        ___ i __ x..(1, n+1):
+        ___ i __ x..(1, n+1
             v = nums[i-1]
             __ v > 0:
                 F_pos[i] = F_pos[i-1]*v __ F_pos[i-1] != 0 ____ v
@@ -62,7 +62,7 @@ c_ Solution(o..):
 
         r.. maxa
 
-    ___ maxProduct_error  A):
+    ___ maxProduct_error  A
         """
         dp, collect number of negative number
         notice 0
@@ -77,7 +77,7 @@ c_ Solution(o..):
 
         dp = [-1 ___ _ __ x..(length+1)]
         dp[length] = 0 # dummy
-        ___ i __ x..(length-1, -1, -1):
+        ___ i __ x..(length-1, -1, -1
             __ A[i]<0:
                 dp[i] = dp[i+1]+1
             ____ A[i]__0:
@@ -94,7 +94,7 @@ c_ Solution(o..):
         #     global_max = max(global_max, cur)
 
         cur = 0  # starting from 0
-        ___ ind, val __ e..(A):
+        ___ ind, val __ e..(A
             __ cur!=0:
                 cur *= val
             ____:
@@ -107,7 +107,7 @@ c_ Solution(o..):
 
         r.. global_max
 
-    ___ maxProduct_dp  A):
+    ___ maxProduct_dp  A
         """
         dp, collect number of negative number (notice 0).
         negative number and 0 will be special in this question
@@ -125,7 +125,7 @@ c_ Solution(o..):
 
         dp = [-1 ___ _ __ x..(length+1)]
         dp[length] = 0 # dummy
-        ___ i __ x..(length-1, -1, -1):
+        ___ i __ x..(length-1, -1, -1
             __ A[i]<0:
                 dp[i] = dp[i+1]+1
             ____ A[i]__0:

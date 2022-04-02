@@ -1,14 +1,14 @@
 ____ c.. _______ defaultdict
 
-c_ Solution(o..):
+c_ Solution(o..
   
-  ___ findLonelyPixel  picture):
+  ___ findLonelyPixel  picture
 
       col = defaultdict(i..)
       row = defaultdict(i..)
 
-      ___ i, r __ e..(picture):
-        ___ j, pixel __ e..(r):
+      ___ i, r __ e..(picture
+        ___ j, pixel __ e..(r
           __ pixel __ "B":
             row[i] += 1
             col[j] += 1

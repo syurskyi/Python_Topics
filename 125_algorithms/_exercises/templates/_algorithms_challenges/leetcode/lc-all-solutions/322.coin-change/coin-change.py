@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ coinChange  coins, amount):
+c_ Solution(o..
+  ___ coinChange  coins, amount
     """
     :type coins: List[int]
     :type amount: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
 
     dp = [f__("inf")] * (amount + 1)
     dp[0] = 0
-    ___ i __ r..(1, amount + 1):
+    ___ i __ r..(1, amount + 1
       ___ coin __ coins:
         __ i - coin >= 0:
           dp[i] = m..(dp[i], dp[i - coin] + 1)

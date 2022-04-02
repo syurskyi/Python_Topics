@@ -24,8 +24,8 @@ Output:
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ lastRemaining  n):
+c_ Solution(o..
+    ___ lastRemaining  n
         """
         Brute force O(n): A = A[::2][::-1]
 

@@ -39,8 +39,8 @@ ___ _parse_date(date_string: s..) __ date:
 
 ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
     
-    r_start = _parse_date(daily_rates['start_at'])
-    r_end = _parse_date(daily_rates['end_at'])
+    r_start = _parse_date(daily_rates 'start_at' )
+    r_end = _parse_date(daily_rates 'end_at' )
     
     __ start < r_start o. end < r_end:
         r.. ValueError('Date out of range')

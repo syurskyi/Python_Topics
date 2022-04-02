@@ -3,15 +3,15 @@ Created on Apr 16, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numMatchingSubseq  S, words):
+c_ Solution(o..
+    ___ numMatchingSubseq  S, words
         """
         :type S: str
         :type words: List[str]
         :rtype: int
         """
         hashmap    # dict
-        ___ i __ r..(26):
+        ___ i __ r..(26
             c = chr(o..('a')+i)
             hashmap[c]    # list
         ___ word __ words:
@@ -20,7 +20,7 @@ c_ Solution(o..):
         ___ c __ S:
             d.. = hashmap[c]
             size = l..(d..)
-            ___ i __ r..(size):
+            ___ i __ r..(size
                 word = d...pop(0)
                 __ l..(word) __ 1:
                     count += 1

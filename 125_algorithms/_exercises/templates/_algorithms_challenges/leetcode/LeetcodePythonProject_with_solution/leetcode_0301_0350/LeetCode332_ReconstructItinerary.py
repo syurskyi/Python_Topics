@@ -6,8 +6,8 @@ Created on Mar 19, 2017
 
 _______ heapq
 
-c_ Solution(o..):
-    ___ findItinerary_orig  tickets):
+c_ Solution(o..
+    ___ findItinerary_orig  tickets
         __ n.. tickets:
             r.. []
         hashmap    # dict
@@ -19,8 +19,8 @@ c_ Solution(o..):
         dfs(result, hashmap, 'JFK')
         r.. result
         
-    ___ dfs  result, hashmap, elem):
-        w.... hashmap.get(elem):
+    ___ dfs  result, hashmap, elem
+        w.... hashmap.get(elem
             dfs(result, hashmap, heapq.heappop(hashmap[elem]))
         result.insert(0, elem)
     

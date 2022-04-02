@@ -7,7 +7,7 @@ c_ Solution:
     @param: grid: a 2D integer grid
     @return: an integer
     """
-    ___ zombie  grid):
+    ___ zombie  grid
         __ n.. grid:
             r.. -1
 
@@ -21,8 +21,8 @@ c_ Solution:
 
         queue, _queue    # list, N..
         days = -1
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] __ ZOMBIE:
                     queue.a..((x, y))
 
@@ -39,8 +39,8 @@ c_ Solution:
                         _queue.a..((_x, _y))
             queue = _queue
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] __ PEOPLE:
                     r.. -1
 

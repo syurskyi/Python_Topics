@@ -11,5 +11,5 @@ ____ frequency _______ major_n_minor
     ([1, 3, 5, 7, 8, 8, 9, 9, 3, 5, 8, 7], (8, 1)),
     ([9, 0, 5, 7, 8, 8, 9, 0, 5, 9, 9, 5], (9, 7)),
 ])
-___ test_frequency(data, expected):
+___ test_frequency(data, expected
     ... major_n_minor(data) __ expected

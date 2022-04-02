@@ -1,3 +1,3 @@
-c_ School(o..):
-    ___ - ):
+c_ School(o..
+    ___ -
         p..

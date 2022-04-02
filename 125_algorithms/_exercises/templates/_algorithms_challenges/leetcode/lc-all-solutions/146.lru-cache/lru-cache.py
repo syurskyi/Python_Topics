@@ -1,32 +1,32 @@
-c_ List(o..):
+c_ List(o..
   @staticmethod
-  ___ delete(elem):
+  ___ delete(elem
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
     r.. elem
 
   @staticmethod
-  ___ move(elem, newPrev, newNext):
+  ___ move(elem, newPrev, newNext
     elem.prev = newPrev
     elem.next = newNext
     newPrev.next = elem
     newNext.prev = elem
 
   @staticmethod
-  ___ a..(head, elem):
+  ___ a..(head, elem
     List.move(elem, head.prev, head)
 
   @staticmethod
-  ___ isEmpty(head):
+  ___ isEmpty(head
     r.. head.next __ head.prev __ head
 
   @staticmethod
-  ___ initHead(head):
+  ___ initHead(head
     head.prev = head.next = head
 
 
-c_ Node(o..):
-  ___ - , key, value, head):
+c_ Node(o..
+  ___ - , key, value, head
     key = key
     value = value
     head = head
@@ -37,8 +37,8 @@ c_ Node(o..):
     List.a..(head, self)
 
 
-c_ LRUCache(o..):
-  ___ - , capacity):
+c_ LRUCache(o..
+  ___ - , capacity
     """
     :type capacity: int
     """
@@ -47,7 +47,7 @@ c_ LRUCache(o..):
     head = Node(-1, -1, N..)
     List.initHead(head)
 
-  ___ get  key):
+  ___ get  key
     """
     :rtype: int
     """
@@ -56,7 +56,7 @@ c_ LRUCache(o..):
     d[key].hit()
     r.. d[key].value
 
-  ___ s..  key, value):
+  ___ s..  key, value
     """
     :type key: int
     :type value: int

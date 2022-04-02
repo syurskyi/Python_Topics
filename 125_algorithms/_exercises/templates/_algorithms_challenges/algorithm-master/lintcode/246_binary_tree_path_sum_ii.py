@@ -13,19 +13,19 @@ c_ Solution:
     @param: target: An integer
     @return: all valid paths
     """
-    ___ binaryTreePathSum2  root, target):
+    ___ binaryTreePathSum2  root, target
         ans    # list
         dfs(root, target, ans, [])
         r.. ans
 
-    ___ dfs  node, target, ans, path):
+    ___ dfs  node, target, ans, path
         __ n.. node:
             r..
 
         path.a..(node.val)
 
         remaining = target
-        ___ i __ r..(l..(path) - 1, -1, -1):
+        ___ i __ r..(l..(path) - 1, -1, -1
             remaining -= path[i]
             __ remaining __ 0:
                 ans.a..(path[i:])

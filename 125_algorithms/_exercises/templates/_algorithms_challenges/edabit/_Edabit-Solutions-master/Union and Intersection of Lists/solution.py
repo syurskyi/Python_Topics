@@ -1,4 +1,4 @@
-___ intersection_union(lst1, lst2):
+___ intersection_union(lst1, lst2
     inter    # list
     uni    # list
     output = [inter, uni]

@@ -14,7 +14,7 @@ c_ Solution:
     @param: x: An integer
     @return: the inserted new list node
     """
-    ___ insert  node, x):
+    ___ insert  node, x
         __ n.. node:
             node = ListNode(x)
             node.next = node
@@ -30,7 +30,7 @@ c_ Solution:
                 _____
 
             # at the boundary between minimum and maximum
-            __ (pre.val > cur.val) a.. (x < cur.val o. x > pre.val):
+            __ (pre.val > cur.val) a.. (x < cur.val o. x > pre.val
                 _____
 
             # if `cur` have already traversed the list once

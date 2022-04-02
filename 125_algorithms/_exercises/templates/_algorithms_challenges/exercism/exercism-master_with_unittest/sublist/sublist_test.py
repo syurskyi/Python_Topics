@@ -3,7 +3,7 @@ _______ unittest
 ____ sublist _______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 
-c_ SublistTest(unittest.TestCase):
+c_ SublistTest(unittest.TestCase
     ___ test_empty_lists
         assertEqual(EQUAL, check_lists([], []))
 

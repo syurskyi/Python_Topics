@@ -3,22 +3,22 @@
 # It works, but takes a brute-force method that will only
 # work on realistic numbers (ie: not a quintillion)
 
-___ find_answer(entry):
+___ find_answer(entry
     ___ emirp __ semirp:
         __ emirp > entry:
             r.. emirp
 
-___ gen_primes(limit=300000000):
+___ gen_primes(limit=300000000
     data = [i..(input()) ___ x __ r..(i..(input()))]
     primes, semirp, answer    # list, [], []
     global semirp
 
     # Sieve of Eratosthenes
     sieve = [T..] * (limit + 1)
-    ___ num __ r..(2, limit + 1):
+    ___ num __ r..(2, limit + 1
         __ sieve[num]:
            primes.a..(num)
-           ___ i __ r..(num * num, limit + 1, num):
+           ___ i __ r..(num * num, limit + 1, num
                sieve[i] = F..
 
     # Find reversable primes

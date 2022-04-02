@@ -10,7 +10,7 @@ FEED = 'https://bites-data.s3.us-east-2.amazonaws.com/all.rss.xml'
 Entry = n..('Entry', 'date title link tags')
 
 
-___ _convert_struct_time_to_dt(stime):
+___ _convert_struct_time_to_dt(stime
     """Convert a time.struct_time as returned by feedparser into a
     datetime.date object, so:
     time.struct_time(tm_year=2016, tm_mon=12, tm_mday=28, ...)
@@ -23,7 +23,7 @@ ___ _convert_struct_time_to_dt(stime):
 
 
 
-___ get_feed_entries(feed=FEED):
+___ get_feed_entries(feed=FEED
     """Use feedparser to parse PyBites RSS feed.
        Return a list of Entry namedtuples (date = date, drop time part)
     """
@@ -51,7 +51,7 @@ ___ get_feed_entries(feed=FEED):
 
 
 
-___ filter_entries_by_tag(s.., entry):
+___ filter_entries_by_tag(s.., entry
     """Check if search matches any tags as stored in the Entry namedtuple
        (case insensitive, only whole, not partial string matches).
        Returns bool: True if match, False if not.

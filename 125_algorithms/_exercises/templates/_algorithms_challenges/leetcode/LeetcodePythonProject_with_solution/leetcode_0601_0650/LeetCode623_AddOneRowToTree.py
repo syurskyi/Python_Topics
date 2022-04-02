@@ -4,14 +4,14 @@ Created on Sep 10, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ addOneRow  root, v, d):
+c_ Solution(o..
+    ___ addOneRow  root, v, d
         """
         :type root: TreeNode
         :type v: int
@@ -26,7 +26,7 @@ c_ Solution(o..):
         queue = [root]
         w.... queue:
             num = l..(queue)
-            ___ _ __ r..(num):
+            ___ _ __ r..(num
                 node = queue.pop(0)
                 __ node.left:
                     __ level __ d-1:

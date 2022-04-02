@@ -27,13 +27,13 @@ ___ create_uno_deck
     deck    # list
     ___ s __ SUITS:
         ___ k, v __ inventory.i..:
-            ___ i __ r..(0, v):
+            ___ i __ r..(0, v
                 card = UnoCard(s, k)
                 deck.a..(card)
-    ___ i __ r..(0,4):
+    ___ i __ r..(0,4
         card = UnoCard(N.., 'Wild')
         deck.a..(card)
-    ___ i __ r..(0,4):
+    ___ i __ r..(0,4
         card = UnoCard(N.., 'Wild Draw Four')
         deck.a..(card)
     r.. deck

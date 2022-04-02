@@ -3,24 +3,24 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ projectionArea  grid):
+c_ Solution(o..
+    ___ projectionArea  grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
         n = l..(grid)
         res = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             maxNum = 0
-            ___ j __ r..(n):
+            ___ j __ r..(n
                 __ grid[i][j]:
                     res += 1
                 maxNum = m..(maxNum, grid[i][j])
             res += maxNum
-        ___ j __ r..(n):
+        ___ j __ r..(n
             maxNum = 0
-            ___ i __ r..(n):
+            ___ i __ r..(n
                 maxNum = m..(maxNum, grid[i][j])
             res += maxNum
         r.. res

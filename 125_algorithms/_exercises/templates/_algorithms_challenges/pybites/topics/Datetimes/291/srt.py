@@ -43,7 +43,7 @@ ___ get_srt_section_ids(text: s..) __ List[i..]:
     epoch = '1970-01-01'
     dialog_list = text.s..('\n\n')
     ___ dialog __ dialog_list:
-       index, timestamp, line = dialog.s...splitlines()
+       index, timestamp, line = dialog.s...s..
        begintime, endtime = timestamp.s..(' --> ')
        duration = d__.fromisoformat _*{epoch} {endtime[:8]}') - d__.fromisoformat _*{epoch} {begintime[:8]}')
        line_dict[i..(index)] = l..(line)/duration.total_seconds()

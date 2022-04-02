@@ -85,7 +85,7 @@ DNA_SEQUENCES = [
 
 
 ?p__.m__.p.("dna,gc_content", DNA_SEQUENCES)
-___ test_calculate_gc_content(dna, gc_content):
+___ test_calculate_gc_content(dna, gc_content
 
     ... calculate_gc_content(dna) __ gc_content
 

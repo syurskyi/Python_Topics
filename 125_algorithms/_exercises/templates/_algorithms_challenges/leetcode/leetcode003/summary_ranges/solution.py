@@ -5,8 +5,8 @@ ranges.
 For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 """
 
-c_ Solution(o..):
-    ___ summaryRanges  nums):
+c_ Solution(o..
+    ___ summaryRanges  nums
         """
         :type nums: List[int]
         :rtype: List[str]
@@ -15,7 +15,7 @@ c_ Solution(o..):
         n = l..(nums)
         start = -1
         end = -1
-        ___ i, e __ e..(nums):
+        ___ i, e __ e..(nums
             __ i __ 0:
                 start = 0
                 end = 0
@@ -31,7 +31,7 @@ c_ Solution(o..):
                 res.a..(r)
         r.. res
 
-    ___ make_range  start, end, nums):
+    ___ make_range  start, end, nums
         __ end > start:
             r.. "%d->%d" % (nums[start], nums[end])
         ____ end __ start:

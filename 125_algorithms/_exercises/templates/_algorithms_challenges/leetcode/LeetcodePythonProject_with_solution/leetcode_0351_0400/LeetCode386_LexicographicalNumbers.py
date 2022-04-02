@@ -4,11 +4,11 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ lexicalOrder  n):
+c_ Solution(o..
+    ___ lexicalOrder  n
         res    # list
         curr = 1
-        ___ _ __ r..(n):
+        ___ _ __ r..(n
             res.a..(curr)
             __ curr*10 <= n:
                 curr *= 10

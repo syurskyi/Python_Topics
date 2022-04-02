@@ -1,6 +1,6 @@
-___ verse(number):
+___ verse(number
     p..
 
 
-___ song(number1, number2=0):
+___ song(number1, number2=0
     p..

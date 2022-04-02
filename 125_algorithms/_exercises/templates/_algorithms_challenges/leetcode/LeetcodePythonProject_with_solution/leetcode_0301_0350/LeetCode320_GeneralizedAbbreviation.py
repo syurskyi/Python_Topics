@@ -4,8 +4,8 @@ Created on Mar 17, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ generateAbbreviations  word):
+c_ Solution(o..
+    ___ generateAbbreviations  word
         """
         :type word: str
         :rtype: List[str]
@@ -14,8 +14,8 @@ c_ Solution(o..):
         helper(word, 0, 0, '', res)
         r.. res
     
-    ___ helper  word, i, count, curr, res):
-        __ i __ l..(word):
+    ___ helper  word, i, count, curr, res
+        __ i __ l..(word
             __ count:
                 curr += s..(count)
             res.a..(curr)

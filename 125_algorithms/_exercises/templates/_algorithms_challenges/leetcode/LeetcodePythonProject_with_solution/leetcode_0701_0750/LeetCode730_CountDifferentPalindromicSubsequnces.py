@@ -3,8 +3,8 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ countPalindromicSubsequences  S):
+c_ Solution(o..
+    ___ countPalindromicSubsequences  S
         """
         :type S: str
         :rtype: int
@@ -13,10 +13,10 @@ c_ Solution(o..):
         n = l..(s)
         MOD = 10**9+7
         dp = [[0]*n ___ _ __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             dp[i][i] = 1
-        ___ l __ r..(1, n):
-            ___ i __ r..(n-l):
+        ___ l __ r..(1, n
+            ___ i __ r..(n-l
                 j = i+l
                 __ s[i] __ s[j]:
                     low = i+1

@@ -3,8 +3,8 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ basicCalculatorIV  expression, evalvars, evalints):
+c_ Solution(o..
+    ___ basicCalculatorIV  expression, evalvars, evalints
         """
         :type expression: str
         :type evalvars: List[str]

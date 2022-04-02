@@ -6,13 +6,13 @@ http://www.codewars.com/kata/54eb33e5bc1a25440d000891/train/python
 """
 
 
-___ decompose(n):
+___ decompose(n
     goal = 0
     result = [n]
     w.... result:
         current = result.pop()
         goal += current ** 2
-        ___ i __ r..(current - 1, 0, -1):
+        ___ i __ r..(current - 1, 0, -1
             __ goal - (i ** 2) >= 0:
                 goal -= i ** 2
                 result.a..(i)

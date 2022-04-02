@@ -31,11 +31,11 @@ WTForms==2.1
 
 ___ test_changed_dependencies_old_vs_new
     actual = changed_dependencies(old_reqs, new_reqs)
-    expected = ['Faker', 'Flask']
+    expected =  'Faker', 'Flask' 
     ... s..(actual) __ expected
 
 
 ___ test_changed_dependencies_other_data
     actual = changed_dependencies(other_old_reqs, other_new_reqs)
-    expected = ['WTForms', 'Werkzeug']
+    expected =  'WTForms', 'Werkzeug' 
     ... s..(actual) __ expected

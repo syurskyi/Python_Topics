@@ -1,16 +1,16 @@
 ____ c.. _______ d..
 
 
-c_ Graph(o..):
-  ___ - ):
+c_ Graph(o..
+  ___ -
     graph    # dict
 
-  ___ get  label):
+  ___ get  label
     __ label n.. __ graph:
       graph[label] = GraphNode(label)
     r.. graph[label]
 
-  ___ query  node1, node2):
+  ___ query  node1, node2
     g = graph
     __ l..(node1.nbrs) __ 0 o. l..(node2.nbrs) __ 0:
       r.. -1.0
@@ -31,7 +31,7 @@ c_ Graph(o..):
 
     r.. -1.0
 
-  ___ connect  node1, node2, div):
+  ___ connect  node1, node2, div
     node1.nbrs[node2.label] = div
     __ div != 0:
       node2.nbrs[node1.label] = 1.0 / div
@@ -39,14 +39,14 @@ c_ Graph(o..):
       node2.nbrs[node1.label] = f__("inf")
 
 
-c_ GraphNode(o..):
-  ___ - , label):
+c_ GraphNode(o..
+  ___ - , label
     label = label
     nbrs    # dict
 
 
-c_ Solution(o..):
-  ___ calcEquation  equations, values, queries):
+c_ Solution(o..
+  ___ calcEquation  equations, values, queries
     """
     :type equations: List[List[str]]
     :type values: List[float]

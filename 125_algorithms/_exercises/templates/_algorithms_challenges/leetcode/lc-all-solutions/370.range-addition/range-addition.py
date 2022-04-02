@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ getModifiedArray  length, updates):
+c_ Solution(o..
+  ___ getModifiedArray  length, updates
     """
     :type length: int
     :type updates: List[List[int]]
@@ -13,7 +13,7 @@ c_ Solution(o..):
         ans[end + 1] -= delta
 
     delta = 0
-    ___ i __ r..(0, length):
+    ___ i __ r..(0, length
       delta += ans[i]
       ans[i] = delta
     r.. ans

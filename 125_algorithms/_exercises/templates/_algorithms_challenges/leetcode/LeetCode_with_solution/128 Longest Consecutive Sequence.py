@@ -9,7 +9,7 @@ Your algorithm should run in O(n) complexity.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ longestConsecutive_TLE  num):
+    ___ longestConsecutive_TLE  num
         """
         O(n) within in one scan
         algorithm: array, inverted index
@@ -24,7 +24,7 @@ c_ Solution:
         inverted_table = d..(z..(num, r..(length)))
 
         max_length = -1<<31
-        ___ ind, val __ e..(num):
+        ___ ind, val __ e..(num
             current_length = 1
             # check val--
             sequence_val_expected = val-1
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. max_length
 
-    ___ longestConsecutive  num):
+    ___ longestConsecutive  num
         """
         Algorithm: pivot scanning
         array, inverted index (visited)
@@ -57,7 +57,7 @@ c_ Solution:
         visited = {item: F.. ___ item __ num}
 
         max_length = -1<<31
-        ___ ind, val __ e..(num):
+        ___ ind, val __ e..(num
             __ visited[val]: _____
 
             current_length = 1

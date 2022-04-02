@@ -2,7 +2,7 @@
 d = i..(input())
 
 #accept the decimal numbers to be converted to binary
-binary  = l..(map(i..,input().s..()))
+binary  = l.. m..(i..,input().s..()))
 
 #loop through all the elements
 ___ j __ binary:
@@ -45,7 +45,7 @@ ___ j __ binary:
         carry = 0
         result = ''
         #here we are doing 2's compliement
-        ___ i __ r..(l..(res_str)-1,-1,-1):
+        ___ i __ r..(l..(res_str)-1,-1,-1
             res = i..(res_str[i]) + res + carry
             __ res __ 3:
                 carry = 1

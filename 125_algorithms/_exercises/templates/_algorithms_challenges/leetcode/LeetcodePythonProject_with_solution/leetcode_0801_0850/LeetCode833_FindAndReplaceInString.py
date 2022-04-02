@@ -3,8 +3,8 @@ Created on Jun 9, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ findReplaceString  S, indexes, sources, targets):
+c_ Solution(o..
+    ___ findReplaceString  S, indexes, sources, targets
         """
         :type S: str
         :type indexes: List[int]

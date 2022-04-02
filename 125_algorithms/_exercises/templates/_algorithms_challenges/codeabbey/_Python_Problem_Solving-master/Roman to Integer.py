@@ -4,7 +4,7 @@ c_ Solution:
         count = 0
         #i will track the length of the string
         i = 0
-        w.... i != l..(s):
+        w.... i != l..(s
             __ s[i] __ 'I':
                 ___
                     __ s[i+1]__'V':

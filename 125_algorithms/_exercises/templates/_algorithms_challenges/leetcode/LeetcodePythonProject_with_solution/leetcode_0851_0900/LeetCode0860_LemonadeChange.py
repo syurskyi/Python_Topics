@@ -3,8 +3,8 @@ Created on Sep 15, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ lemonadeChange  bills):
+c_ Solution(o..
+    ___ lemonadeChange  bills
         """
         :type bills: List[int]
         :rtype: bool

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findNthDigit  n):
+c_ Solution(o..
+  ___ findNthDigit  n
     """
     :type n: int
     :rtype: int

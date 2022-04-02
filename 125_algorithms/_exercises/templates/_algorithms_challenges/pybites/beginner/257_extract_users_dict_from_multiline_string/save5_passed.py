@@ -7,7 +7,7 @@ ___ get_users(passwd: s..) __ d..:
       replace multiple commas in name with a single space
       return dict of keys = user, values = name.
     """
-    passwd = passwd.s...splitlines()
+    passwd = passwd.s...s..
     keys    # list
     values    # list
     ___ p __ passwd:

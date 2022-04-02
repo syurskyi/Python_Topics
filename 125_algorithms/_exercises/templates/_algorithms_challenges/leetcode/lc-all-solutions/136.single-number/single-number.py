@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ singleNumber  nums):
+c_ Solution(o..
+  ___ singleNumber  nums
     """
     :type nums: List[int]
     :rtype: int

@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ wordSquares  words):
+c_ Solution(o..
+  ___ wordSquares  words
     """
     :type words: List[str]
     :rtype: List[List[str]]
     """
 
-    ___ dfs(path, res, m, prefix):
+    ___ dfs(path, res, m, prefix
       __ l..(path) __ m:
         res.a..(path + [])
         r..

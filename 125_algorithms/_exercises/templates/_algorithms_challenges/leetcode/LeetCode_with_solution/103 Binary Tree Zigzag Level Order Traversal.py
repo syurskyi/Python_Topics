@@ -20,13 +20,13 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ zigzagLevelOrder  root):
+    ___ zigzagLevelOrder  root
         """
         BFS, stack & queue
         :param root: a tree node

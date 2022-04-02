@@ -28,17 +28,17 @@ _______ heapq
 
 
 c_ Balloon:
-    ___ - , s, e):
+    ___ - , s, e
         s = s
         e = e
 
-    ___ __lt__  other):
+    ___ __lt__  other
         # __cmp__ removed in py3
         r.. e < other.e
 
 
 c_ Solution:
-    ___ findMinArrowShots  points):
+    ___ findMinArrowShots  points
         """
         greedy shot since if two balloon no overlap, then must shot separately
 

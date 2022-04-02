@@ -14,7 +14,7 @@ c_ Solution:
     @param: D: a set of string
     @return: a list of lists of string
     """
-    ___ findLadders  A, B, D):
+    ___ findLadders  A, B, D
         ans    # list
         __ (D __ N.. o. A __ N.. o. B __ N.. o.
             l..(A) != l..(B)):
@@ -27,7 +27,7 @@ c_ Solution:
 
         n = l..(A)
         next_words = [N..] * n
-        ___ i __ r..(n):
+        ___ i __ r..(n
             next_words[i] = W    # dict
             ___ word __ D:
                 key = word[:i] + word[i + 1:]
@@ -40,7 +40,7 @@ c_ Solution:
         ___ word __ queue:
             __ word __ A:
                 _____
-            ___ _word __ get_next_word(word, next_words):
+            ___ _word __ get_next_word(word, next_words
                 __ _word __ distance:
                     _____
                 distance[_word] = distance[word] + 1
@@ -49,20 +49,20 @@ c_ Solution:
         dfs(A, B, next_words, distance, ans, [A])
         r.. ans
 
-    ___ dfs  word, B, next_words, distance, ans, path):
+    ___ dfs  word, B, next_words, distance, ans, path
         __ word __ B:
             ans.a..(path | )
             r..
 
-        ___ _word __ get_next_word(word, next_words):
+        ___ _word __ get_next_word(word, next_words
             __ (_word n.. __ distance o.
-                distance[_word] != distance[word] - 1):
+                distance[_word] != distance[word] - 1
                 _____
             path.a..(_word)
             dfs(_word, B, next_words, distance, ans, path)
             path.pop()
 
-    ___ get_next_word  word, next_words):
+    ___ get_next_word  word, next_words
         ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:

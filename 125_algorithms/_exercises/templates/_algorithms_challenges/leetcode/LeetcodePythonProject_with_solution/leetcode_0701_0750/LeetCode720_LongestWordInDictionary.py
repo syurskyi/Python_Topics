@@ -3,8 +3,8 @@ Created on Jan 31, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ longestWord  words):
+c_ Solution(o..
+    ___ longestWord  words
         """
         :type words: List[str]
         :rtype: str
@@ -16,7 +16,7 @@ c_ Solution(o..):
         ___ word __ words:
             __ l..(word) __ 1 o. word[:-1] __ dp[l..(word)-1]:
                 dp[l..(word)].add(word)
-        ___ i __ r..(n, -1, -1):
+        ___ i __ r..(n, -1, -1
             __ dp[i]:
                 r.. s..(l..(dp[i])).pop(0)
         r.. ''

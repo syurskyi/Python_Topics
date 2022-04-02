@@ -7,7 +7,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ isValid  s):
+    ___ isValid  s
         """
         Algorithm: Stack
         :param s: string

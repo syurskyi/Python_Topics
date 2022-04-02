@@ -38,8 +38,8 @@ But the second continuation byte does not start with 10, so it is invalid.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ validUtf8  data):
+c_ Solution(o..
+    ___ validUtf8  data
         """
         starts with 0, then skip
         start with 1, check number of numbers

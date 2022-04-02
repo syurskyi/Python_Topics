@@ -5,7 +5,7 @@ _______ p__
 ____ humanize_date _______ pretty_date, NOW
 
 
-___ n_days_ago_str(days):
+___ n_days_ago_str(days
     r.. (NOW - t..(d.._days)).s..('%m/%d/%y')
 
 
@@ -29,15 +29,15 @@ ___ n_days_ago_str(days):
     (NOW - t..(d.._100), n_days_ago_str(100)),
     (NOW - t..(d.._365), n_days_ago_str(365)),
 ])
-___ test_pretty_date(arg, expected):
+___ test_pretty_date(arg, expected
     ... pretty_date(arg) __ expected
 
 
 ___ test_input_variable_of_wrong_type
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         pretty_date(123)
 
 
 ___ test_input_variable_future_date
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         pretty_date(NOW + t..(d.._1))

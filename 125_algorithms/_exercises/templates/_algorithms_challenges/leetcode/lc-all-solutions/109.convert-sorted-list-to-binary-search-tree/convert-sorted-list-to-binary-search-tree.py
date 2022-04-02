@@ -11,8 +11,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ sortedListToBST  head):
+c_ Solution(o..
+  ___ sortedListToBST  head
     """
     :type head: ListNode
     :rtype: TreeNode

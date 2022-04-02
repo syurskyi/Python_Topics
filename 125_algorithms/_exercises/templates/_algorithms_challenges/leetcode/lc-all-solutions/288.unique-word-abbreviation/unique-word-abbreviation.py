@@ -1,5 +1,5 @@
-c_ ValidWordAbbr(o..):
-  ___ - , dictionary):
+c_ ValidWordAbbr(o..
+  ___ - , dictionary
     """
     initialize your data structure here.
     :type dictionary: List[str]
@@ -14,7 +14,7 @@ c_ ValidWordAbbr(o..):
       ____:
         d[word] = d.get(word, 0) + 1
 
-  ___ isUnique  word):
+  ___ isUnique  word
     """
     check if a word is unique.
     :type word: str

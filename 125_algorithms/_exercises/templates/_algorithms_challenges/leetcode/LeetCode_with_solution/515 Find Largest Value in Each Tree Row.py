@@ -17,14 +17,14 @@ Output: [1, 3, 9]
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ largestValues  root):
+    ___ largestValues  root
         """
         BFS
         :type root: TreeNode
@@ -36,7 +36,7 @@ c_ Solution:
 
         q = [root]
         w.... q:
-            ret.a..(m..(map(l.... e: e.val, q)))
+            ret.a..(m.. m..(l.... e: e.val, q)))
             cur_q    # list
             ___ e __ q:
                 __ e.left:

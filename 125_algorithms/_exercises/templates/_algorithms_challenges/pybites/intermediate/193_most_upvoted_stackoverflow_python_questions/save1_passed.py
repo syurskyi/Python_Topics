@@ -4,7 +4,7 @@ ____ bs4 _______ BeautifulSoup
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
 
-___ top_python_questions(url=cached_so_url):
+___ top_python_questions(url=cached_so_url
     """Use requests to retrieve the url / html,
        parse the questions out of the html with BeautifulSoup,
        filter them by >= 1m views ("..m views").
@@ -40,9 +40,9 @@ ___ top_python_questions(url=cached_so_url):
     vi_true    # list
     ___ number __ vi:
         number = s..(number)
-        __ number.endswith('k'):
+        __ number.endswith('k'
             vi_true.a..(f__(number[:-1]) * 1000)
-        __ number.endswith('m'):
+        __ number.endswith('m'
             vi_true.a..(f__(number[:-1]) * 1_000_000)
         __ number __ '0':
             vi_true.a..(f__(number))

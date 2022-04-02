@@ -15,8 +15,8 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 ___ load_words
     """load the words dictionary (DICTIONARY constant) into a list and return it"""
     ___
-        d = open(DICTIONARY,'r')
-        result = d.read().splitlines()
+        d = o.. DICTIONARY _
+        result = d.r...s.. 
     ______ IOError:
         result    # list
     finally:
@@ -25,7 +25,7 @@ ___ load_words
     r.. result
 
 
-___ calc_word_value(word):
+___ calc_word_value(word
     """given a word calculate its value using LETTER_SCORES"""
     result = 0
     ___ l __ word:

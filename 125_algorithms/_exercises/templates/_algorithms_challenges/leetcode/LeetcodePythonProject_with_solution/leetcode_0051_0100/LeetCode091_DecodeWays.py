@@ -4,8 +4,8 @@ Created on Jan 28, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ numDecodings  s):
+c_ Solution(o..
+    ___ numDecodings  s
         """
         :type s: str
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(o..):
         dp = [0]*(n+1)
         dp[0] = 1
         dp[1] = 0 __ s[0] __ '0' ____ 1
-        ___ i __ r..(2, n+1):
+        ___ i __ r..(2, n+1
             first = i..(s[i-1])
             second = i..(s[i-2:i])
             __ 1 <= first <= 9:
@@ -24,7 +24,7 @@ c_ Solution(o..):
                 dp[i] += dp[i-2]
         r.. dp[-1]
     
-    ___ numDecodings_orig  s):
+    ___ numDecodings_orig  s
         """
         :type s: str
         :rtype: int
@@ -47,7 +47,7 @@ c_ Solution(o..):
                 dp[1] = 1
         n = l..(s)
         
-        ___ i __ r..(2, n):
+        ___ i __ r..(2, n
             __ s[i] != '0':
                 dp[i] += dp[i-1]
             val = i..(s[i-1:i+1])

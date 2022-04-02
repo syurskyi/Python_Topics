@@ -48,7 +48,7 @@ _______ bisect
 
 c_ MyCalendarTwo:
 
-    ___ - ):
+    ___ -
         """
         triple booking
         boundary counting

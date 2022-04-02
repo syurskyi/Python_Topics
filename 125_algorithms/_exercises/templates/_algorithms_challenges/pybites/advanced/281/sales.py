@@ -26,7 +26,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
         response = requests.get(url)
         response.raise_for_status()
         data = json.loads(response.text)
-        w__ TMP.open("w") __ tmp:
+        w__ TMP.o.. "w") __ tmp:
             json.dump(data, tmp)
     r.. data
 
@@ -41,8 +41,8 @@ ___ process_data(url: s..) __ pd.DataFrame:
         pd.DataFrame: Pandas DataFrame generated from the processed data
     """
     data = get_data(url)
-    download_url = data['download_url']
-    monthly_sales = pd.read_csv(download_url,parse_dates=['month'])
+    download_url = data 'download_url'
+    monthly_sales = pd.read_csv(download_url,parse_dates= 'month' )
     r.. monthly_sales
 
 

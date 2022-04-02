@@ -21,9 +21,9 @@ ___ get_book
     description = soup1.select('div')[2].__str__()
     description = description.s..('\t')[8]
 
-    image = soup2.select('img')[0]['src']
+    image = soup2.select('img')[0] 'src'
 
-    link = soup2.select('a')[0]['href']
+    link = soup2.select('a')[0] 'href'
 
     r.. Book(title=title, d.._description,
                 image=image, link=link)

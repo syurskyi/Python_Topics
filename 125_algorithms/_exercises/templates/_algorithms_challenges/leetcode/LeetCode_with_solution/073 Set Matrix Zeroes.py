@@ -11,7 +11,7 @@ Could you devise a constant space solution?
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ setZeroes_error  matrix):
+    ___ setZeroes_error  matrix
         """
         store the zero at the head
 
@@ -25,24 +25,24 @@ c_ Solution:
         m = l..(matrix)
         n = l..(matrix[0])
 
-        ___ row __ x..(m):
-            ___ col __ x..(n):
+        ___ row __ x..(m
+            ___ col __ x..(n
                 __ matrix[row][col]__0:
                     matrix[0][col]=0  # previously scanned, safe to modify
                     matrix[row][0]=0  # previously scanned, safe to modify
 
-        ___ row __ x..(m):
+        ___ row __ x..(m
             __ matrix[row][0]__0:
-                ___ col __ x..(n):
+                ___ col __ x..(n
                     matrix[row][col] = 0
 
-        ___ col __ x..(n):
+        ___ col __ x..(n
             __ matrix[0][col]__0:
-                ___ row __ x..(m):
+                ___ row __ x..(m
                     matrix[row][col] = 0
 
 
-    ___ setZeroes  matrix):
+    ___ setZeroes  matrix
         """
         store the zero at the head
         constant space
@@ -58,34 +58,34 @@ c_ Solution:
         # special treatment for row and col 
         clear_first_row = F..
         clear_first_col = F..
-        ___ row __ x..(m):
+        ___ row __ x..(m
             __ matrix[row][0]__0:
                 clear_first_col = T..
-        ___ col __ x..(n):
+        ___ col __ x..(n
             __ matrix[0][col]__0:
                 clear_first_row = T..
 
-        ___ row __ x..(1, m):
-            ___ col __ x..(1, n):
+        ___ row __ x..(1, m
+            ___ col __ x..(1, n
                 __ matrix[row][col]__0:
                     matrix[0][col] = 0  # previously scanned, safe to modify
                     matrix[row][0] = 0  # previously scanned, safe to modify
 
-        ___ row __ x..(1, m):  # avoid 0 at (0, 0) affect the entire matrix
+        ___ row __ x..(1, m  # avoid 0 at (0, 0) affect the entire matrix
             __ matrix[row][0]__0:
-                ___ col __ x..(n):
+                ___ col __ x..(n
                     matrix[row][col] = 0
 
-        ___ col __ x..(1, n):  # avoid 0 at (0, 0) affect the entire matrix
+        ___ col __ x..(1, n  # avoid 0 at (0, 0) affect the entire matrix
             __ matrix[0][col]__0:
-                ___ row __ x..(m):
+                ___ row __ x..(m
                     matrix[row][col] = 0
 
         __ clear_first_row:
-            ___ col __ x..(n):
+            ___ col __ x..(n
                 matrix[0][col] = 0
         __ clear_first_col:
-            ___ row __ x..(m):
+            ___ row __ x..(m
                 matrix[row][0] = 0
 
 

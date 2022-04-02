@@ -1,13 +1,13 @@
 c_ Solution:
     # @param an integer
     # @return a list of string
-    ___ generateParenthesis  n):
+    ___ generateParenthesis  n
         cand    # list
         res    # list
         generate_paren_aux(n, n, cand, res)
         r.. res
 
-    ___ generate_paren_aux  left, right, cand, res):
+    ___ generate_paren_aux  left, right, cand, res
         __ left __ 0 a.. right __ 0:
             res.a..(''.j..(cand))
         ____:

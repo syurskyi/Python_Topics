@@ -30,7 +30,7 @@ c_ Solution:
     ENEMY = 'E'
     EMPTY = '0'
 
-    ___ maxKilledEnemies  grid):
+    ___ maxKilledEnemies  grid
         """
         :type grid: list[list[str]]
         :rtype: int
@@ -42,13 +42,13 @@ c_ Solution:
         m, n = l..(grid), l..(grid[0])
         row, cols = 0, [0] * n
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 # calculate bomb in cur section [x, 'WALL' | m) in col
                 __ x __ 0 o. grid[x - 1][y] __ WALL:
                     cols[y] = 0
 
-                    ___ i __ r..(x, m):
+                    ___ i __ r..(x, m
                         __ grid[i][y] __ WALL:
                             _____
                         __ grid[i][y] __ ENEMY:
@@ -58,7 +58,7 @@ c_ Solution:
                 __ y __ 0 o. grid[x][y - 1] __ WALL:
                     row = 0
 
-                    ___ i __ r..(y, n):
+                    ___ i __ r..(y, n
                         __ grid[x][i] __ WALL:
                             _____
                         __ grid[x][i] __ ENEMY:
@@ -79,7 +79,7 @@ c_ Solution:
     ENEMY = 'E'
     EMPTY = '0'
 
-    ___ maxKilledEnemies  grid):
+    ___ maxKilledEnemies  grid
         """
         :type grid: list[list[str]]
         :rtype: int
@@ -98,33 +98,33 @@ c_ Solution:
 
         r.. ans
 
-    ___ get_killed_cnt  grid, i, j):
+    ___ get_killed_cnt  grid, i, j
         m, n = l..(grid), l..(grid[0])
         cnt = 0
 
         # up
-        ___ x __ r..(i, -1, -1):
+        ___ x __ r..(i, -1, -1
             __ grid[x][j] __ WALL:
                 _____
             __ grid[x][j] __ ENEMY:
                 cnt += 1
 
         # down
-        ___ x __ r..(i, m):
+        ___ x __ r..(i, m
             __ grid[x][j] __ WALL:
                 _____
             __ grid[x][j] __ ENEMY:
                 cnt += 1
 
         # left
-        ___ y __ r..(j, -1, -1):
+        ___ y __ r..(j, -1, -1
             __ grid[i][y] __ WALL:
                 _____
             __ grid[i][y] __ ENEMY:
                 cnt += 1
 
         # right
-        ___ y __ r..(j, n):
+        ___ y __ r..(j, n
             __ grid[i][y] __ WALL:
                 _____
             __ grid[i][y] __ ENEMY:

@@ -32,7 +32,7 @@ Each node in the tree will have a value between 0 and 25.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -43,7 +43,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         mn: Tuple[i..] = N..
 
     ___ smallestFromLeaf  root: TreeNode) __ s..:
@@ -58,7 +58,7 @@ c_ Solution:
             ___ e __ mn
         )
 
-    ___ dfs  node, cur_deque):
+    ___ dfs  node, cur_deque
         __ n.. node:
             r..
 

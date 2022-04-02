@@ -3,7 +3,7 @@
 ___ two_printers
     tests = i..(input())
     answer    # list
-    ___ test __ r..(tests):
+    ___ test __ r..(tests
         x, y, n = [f__(x) ___ x __ input().s.. ]
         a = i..(y * n / (x + y))
         b = i..(x * n / (x + y))

@@ -70,7 +70,7 @@ ___ four_day_weekends(*args,
 
             dates = [current,monday]
             __ monday.year __ year:
-                __ a..(date n.. __ FEDERAL_HOLIDAYS ___ date __ dates):
+                __ a..(date n.. __ FEDERAL_HOLIDAYS ___ date __ dates
                     weekend_dates.a..((current,monday))
                     four_day_weekends += 1
                 ____:
@@ -108,12 +108,12 @@ ___ four_day_weekends(*args,
             print _*{title:^{number}}')
             print('='* 24)
 
-            labels = ['PTO:','BALANCE:']
+            labels =  'PTO:','BALANCE:'
             original = [paid_time_off,new_balance]
             new = [before_days,new_days]
 
             
-            ___ label,value_1,value_2 __ z..(labels,original,new):
+            ___ label,value_1,value_2 __ z..(labels,original,new
                 print _*{label:>8} {value_1:>{length}} ({value_2} days)')
 
             print()
@@ -124,7 +124,7 @@ ___ four_day_weekends(*args,
             date_start_losing = N..
             __ start_losing > 0:
                 date_start_losing = weekend_dates[start_losing]
-            ___ i,(weekend_start,weekend_end) __ e..(weekend_dates):
+            ___ i,(weekend_start,weekend_end) __ e..(weekend_dates
                 print(f"{weekend_start} - {weekend_end}",end='')
                 __ (weekend_start,weekend_end) __ date_start_losing:
                     print(' *')
@@ -136,7 +136,7 @@ ___ four_day_weekends(*args,
             print _*Remaining Work Days: {workdays * 8} ({workdays} days)')
 
 
-            print('\n'.j..(map(s..,workday_dates)))
+            print('\n'.j.. m..(s..,workday_dates)))
 
 
 

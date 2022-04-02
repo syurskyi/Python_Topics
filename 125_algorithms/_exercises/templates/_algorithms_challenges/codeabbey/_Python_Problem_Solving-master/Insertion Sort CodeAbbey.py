@@ -1,5 +1,5 @@
 a = input()
-x = l..(map(i.., input().s..()))
+x = l.. m..(i.., input().s..()))
 
 temp = 0
 temp_ind    # list
@@ -12,7 +12,7 @@ ___ i __ r..(1,l..(x)):
     temp_i = i
     count = 0
     #traverse through the elements which are sorted backwards
-    ___ j __ r..(i-1,-1,-1):
+    ___ j __ r..(i-1,-1,-1
         #if the temp element is smaller than the sorted number swap them 
         #and see if the n-1 is small or big and continue
         __ temp < x[j]:

@@ -3,8 +3,8 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ boldWords  words, S):
+c_ Solution(o..
+    ___ boldWords  words, S
         """
         :type words: List[str]
         :type S: str
@@ -26,14 +26,14 @@ c_ Solution(o..):
                 res += '</b>'
                 start = F..
             res += s[i]
-        __ j >= l..(s):
+        __ j >= l..(s
             res += '</b>'
         r.. res
     
     ___ test
         testCases = [
             [
-                ['ab', 'bc'],
+                 'ab', 'bc' ,
                 'aabcd',
             ],
             [

@@ -14,14 +14,14 @@ Return 6.
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
     global_max = -1<<31
-    ___ maxPathSum  root):
+    ___ maxPathSum  root
         """
         :param root: TreeNode
         :return: integer
@@ -30,7 +30,7 @@ c_ Solution:
         # global_max can in ANY path in the tree
         r.. global_max
 
-    ___ get_max_component  root):
+    ___ get_max_component  root
         """
         Algorithm:
         dfs

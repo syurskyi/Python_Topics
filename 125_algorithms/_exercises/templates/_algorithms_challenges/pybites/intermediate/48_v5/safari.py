@@ -11,7 +11,7 @@ ___ create_chart
     line_check = __.c..(r'^(\d\d-\d\d) \d\d:\d\d \w+\s+DEBUG\s+(\w*) - (.*)$')
     book = ''
     last_date = ''
-    w__ open(LOG) __ log:
+    w__ o.. LOG) __ log:
         ___ line __ log:
             (d,i,t) = line_check.m..(line).groups()
             __ d != last_date:

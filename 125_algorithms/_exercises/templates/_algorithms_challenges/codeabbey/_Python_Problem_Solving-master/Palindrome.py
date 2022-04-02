@@ -3,7 +3,7 @@ ___ i __ r..(i..(input())):
     rev_str = ''
     s__ = ''.j..(e ___ e __ input().l.. __ e.islower())
     #here iam storing the string in the reverse form
-    ___ j __ r..(l..(s__)-1,-1,-1):
+    ___ j __ r..(l..(s__)-1,-1,-1
         rev_str += s__[j]
     #once the reverse string is stored then i'm comparing it with the original string
     __ rev_str __ s__:

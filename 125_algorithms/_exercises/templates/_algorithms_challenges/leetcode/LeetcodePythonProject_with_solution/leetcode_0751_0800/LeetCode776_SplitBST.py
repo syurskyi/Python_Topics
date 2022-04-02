@@ -4,14 +4,14 @@ Created on Apr 8, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ splitBST  root, V):
+c_ Solution(o..
+    ___ splitBST  root, V
         """
         :type root: TreeNode
         :type V: int
@@ -27,7 +27,7 @@ c_ Solution(o..):
         w.... stack:
             node = stack.pop()
             __ (n.. preNode a.. V < node.val)\
-                o. (preNode a.. preNode.val <= V < node.val):
+                o. (preNode a.. preNode.val <= V < node.val
                 r.. getRes(root, preNode)
             ____:
                 preNode = node
@@ -37,7 +37,7 @@ c_ Solution(o..):
                     node0 = node0.left
         r.. [root, N..]
     
-    ___ getRes  root, node):
+    ___ getRes  root, node
         root0 = root
         __ n.. node:
             r.. [root0, N..]

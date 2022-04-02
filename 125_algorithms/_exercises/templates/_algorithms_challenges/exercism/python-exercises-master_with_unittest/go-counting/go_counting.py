@@ -6,10 +6,10 @@ c_ Board:
         board (list[str]): A two-dimensional Go board
     """
 
-    ___ - , board):
+    ___ - , board
         p..
 
-    ___ territory  x, y):
+    ___ territory  x, y
         """Find the owner and the territories given a coordinate on
            the board
 

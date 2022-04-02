@@ -1,6 +1,6 @@
-___ triangle(calculations):
+___ triangle(calculations
     answer    # list
-    ___ calculation __ r..(calculations):
+    ___ calculation __ r..(calculations
         [a,b,c] = raw_input().s.. 
         [a,b,c] = i..(a),i..(b),i..(c)
         minNum = m..(i..(a),i..(b),i..(c))

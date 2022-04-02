@@ -39,7 +39,7 @@ The value of each node will only be 0 or 1.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

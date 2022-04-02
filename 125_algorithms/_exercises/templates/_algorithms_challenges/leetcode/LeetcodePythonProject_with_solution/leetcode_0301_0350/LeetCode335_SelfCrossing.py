@@ -4,8 +4,8 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isSelfCrossing  x):
+c_ Solution(o..
+    ___ isSelfCrossing  x
         x = [0, 0, 0, 0]+x
         n = l..(x)
         i = 4
@@ -23,7 +23,7 @@ c_ Solution(o..):
             i += 1
         r.. i != n
     
-    ___ isSelfCrossing_another  x):
+    ___ isSelfCrossing_another  x
         __ n.. x o. l..(x) < 3: r.. F..
         ___ i __ r..(3, l..(x)):
             __ x[i] >= x[i-2] a.. x[i-3] >= x[i-1]:

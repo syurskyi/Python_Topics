@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ closestValue  p, target):
+c_ Solution(o..
+  ___ closestValue  p, target
     """
     :type root: TreeNode
     :type target: float
@@ -14,7 +14,7 @@ c_ Solution(o..):
     """
     ans = p.val
     w.... p:
-      __ abs(target - p.val) < abs(ans - target):
+      __ abs(target - p.val) < abs(ans - target
         ans = p.val
       __ target < p.val:
         p = p.left

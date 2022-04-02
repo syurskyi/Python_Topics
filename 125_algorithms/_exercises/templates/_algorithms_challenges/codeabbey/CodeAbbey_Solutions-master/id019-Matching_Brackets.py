@@ -1,8 +1,8 @@
 # Python 3.4
 
-___ check_brackets(checks):
+___ check_brackets(checks
     answer    # list
-    ___ check __ r..(checks):
+    ___ check __ r..(checks
         raw_data = input()
         data = (''.j..([char ___ char __ raw_data __ char __('(){}[]<>')]))
         

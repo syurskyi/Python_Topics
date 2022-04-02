@@ -4,8 +4,8 @@ Created on Aug 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ checkRecord  n):
+c_ Solution(o..
+    ___ checkRecord  n
         """
         :type n: int
         :rtype: int
@@ -30,19 +30,19 @@ c_ Solution(o..):
             n /= 2
         r.. i..(power[5, 2])
     
-    ___ checkRecord_slow  n):
+    ___ checkRecord_slow  n
         """
         :type n: int
         :rtype: int
         """
         mod = 10**9+7
         dp = [[[0]*3 ___ _ __ r..(2)] ___ _ __ r..(n+1)]
-        ___ i __ r..(2):
-            ___ j __ r..(3):
+        ___ i __ r..(2
+            ___ j __ r..(3
                 dp[0][i][j] = 1
-        ___ i __ r..(1, n+1):
-            ___ j __ r..(2):
-                ___ k __ r..(3):
+        ___ i __ r..(1, n+1
+            ___ j __ r..(2
+                ___ k __ r..(3
                     val = dp[i-1][j][2]
                     __ j > 0:
                         val = (val+dp[i-1][j-1][2]) % mod # A

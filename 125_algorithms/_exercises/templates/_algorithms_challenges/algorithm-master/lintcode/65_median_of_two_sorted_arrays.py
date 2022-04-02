@@ -5,7 +5,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ findMedianSortedArrays  a, b):
+    ___ findMedianSortedArrays  a, b
         """
         :type a: list
         :type b: list
@@ -14,7 +14,7 @@ c_ Solution:
         heap    # list
         n = 0
 
-        ___ nums __ (a, b):
+        ___ nums __ (a, b
             __ n.. nums:
                 _____
 
@@ -25,11 +25,11 @@ c_ Solution:
             r.. 0.0
 
         num = 0
-        ___ _ __ r..((n + 1) // 2):
+        ___ _ __ r..((n + 1) // 2
             num, nums, i = heapq.heappop(heap)
 
             i += 1
-            __ i < l..(nums):
+            __ i < l..(nums
                 heapq.heappush(heap, (nums[i], nums, i))
 
         __ n & 1 __ 1:
@@ -48,7 +48,7 @@ c_ Solution:
     @param: B: An integer array
     @return: a double whose format is *.5 or *.0
     """
-    ___ findMedianSortedArrays  A, B):
+    ___ findMedianSortedArrays  A, B
         n = l..(A) + l..(B)
 
         median = find_kth(A, 0, B, 0, n // 2 + 1)
@@ -58,7 +58,7 @@ c_ Solution:
         _median = find_kth(A, 0, B, 0, n // 2)
         r.. (median + _median) / 2.0
 
-    ___ find_kth  A, i, B, j, k):
+    ___ find_kth  A, i, B, j, k
         """
         example: A: [1, 2, 3, 4, 5, 6]
                  B: [2, 3, 4, 5]
@@ -89,9 +89,9 @@ c_ Solution:
             since k == 1
             return min(4, 4) = `4`
         """
-        __ i >= l..(A):
+        __ i >= l..(A
             r.. B[j + k - 1]
-        __ j >= l..(B):
+        __ j >= l..(B
             r.. A[i + k - 1]
         __ k __ 1:
             r.. m..(A[i], B[j])

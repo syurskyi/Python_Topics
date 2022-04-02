@@ -11,7 +11,7 @@ c_ Solution:
     @param: A: An array of integers
     @return: An integer
     """
-    ___ maxProduct  A):
+    ___ maxProduct  A
         __ n.. A:
             r.. 0
 

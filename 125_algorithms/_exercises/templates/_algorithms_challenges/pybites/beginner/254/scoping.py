@@ -6,7 +6,7 @@ ___ sum_numbers(numbers: l..) __ i..:
        update the global variable num_hundreds with the amount
        of times 100 fits in total"""
     sumlist = s..(numbers)
-    globals()['num_hundreds'] += sumlist //100
+    globals() 'num_hundreds'  += sumlist //100
     r.. sumlist
 
 

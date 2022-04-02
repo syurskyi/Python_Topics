@@ -11,7 +11,7 @@ Note - you can assume that there will be only one of each.
 Hint: any built-in library that supports convenient and rapid tallies?
 """
 
-___ major_n_minor(numbers):
+___ major_n_minor(numbers
     """
     Input: an array with integer numbers
     Output: the majority and minority number

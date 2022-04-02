@@ -5,8 +5,8 @@ Returns the index of the first occurrence of needle in haystack, or -1 if
 needle is not part of haystack.
 """
 
-c_ Solution(o..):
-    ___ strStr  haystack, needle):
+c_ Solution(o..
+    ___ strStr  haystack, needle
         """
         :type haystack: str
         :type needle: str
@@ -17,8 +17,8 @@ c_ Solution(o..):
         """
         n = l..(haystack)
         m = l..(needle)
-        ___ i __ r..(n + 1 - m):
-            ___ k __ r..(m):
+        ___ i __ r..(n + 1 - m
+            ___ k __ r..(m
                 __ haystack[i + k] != needle[k]:
                     _____
             ____:

@@ -3,8 +3,8 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ reachingPoints  sx, sy, tx, ty):
+c_ Solution(o..
+    ___ reachingPoints  sx, sy, tx, ty
         """
         :type sx: int
         :type sy: int
@@ -21,7 +21,7 @@ c_ Solution(o..):
             r.. F..
     
     # RuntimeError: maximum recursion depth exceeded
-    ___ reachingPoints_own  sx, sy, tx, ty):
+    ___ reachingPoints_own  sx, sy, tx, ty
         """
         :type sx: int
         :type sy: int
@@ -32,7 +32,7 @@ c_ Solution(o..):
         mem    # dict
         r.. helper(sx, sy, tx, ty, mem)
     
-    ___ helper  sx, sy, tx, ty, mem):
+    ___ helper  sx, sy, tx, ty, mem
         __ sx __ tx a.. sy __ ty:
             mem[(sx, sy)] = T..
             r.. T..

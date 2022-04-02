@@ -1,11 +1,11 @@
-___ pattern(n):
+___ pattern(n
     __ n <= 0:
         r.. ''
     __ n __ 1:
         r.. '1'
     res    # list
-    pattern = [' '] * ( 2 * n -1)
-    ___ i __ r..(1,n):
+    pattern =  ' '  * ( 2 * n -1)
+    ___ i __ r..(1,n
         temp = pattern |
         temp[i-1] = temp[-i] = s..(i%10)
         res.a..(''.j..(temp))

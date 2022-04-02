@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ findFrequentTreeSum  root):
+c_ Solution(o..
+  ___ findFrequentTreeSum  root
     """
     :type root: TreeNode
     :rtype: List[int]
     """
 
-    ___ helper(root, d):
+    ___ helper(root, d
       __ n.. root:
         r.. 0
       left = helper(root.left, d)

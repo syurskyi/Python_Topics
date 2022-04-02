@@ -4,8 +4,8 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ maxSubArrayLen  A, k):
+c_ Solution(o..
+    ___ maxSubArrayLen  A, k
         """
         Search problem
         :type A: List[int]

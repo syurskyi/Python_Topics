@@ -4,8 +4,8 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ convertToTitle  n):
+c_ Solution(o..
+    ___ convertToTitle  n
         """
         :type n: int
         :rtype: str
@@ -18,7 +18,7 @@ c_ Solution(o..):
         r.. res
     
     ___ test
-        ___ n __ r..(30):
+        ___ n __ r..(30
             print('n: %s' % (n))
             result = convertToTitle(n)
             print('result: %s' % (result))

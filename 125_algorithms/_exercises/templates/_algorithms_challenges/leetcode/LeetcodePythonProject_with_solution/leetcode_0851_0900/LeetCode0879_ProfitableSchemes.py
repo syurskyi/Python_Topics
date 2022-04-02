@@ -3,8 +3,8 @@ Created on Oct 14, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ profitableSchemes  G, P, group, profit):
+c_ Solution(o..
+    ___ profitableSchemes  G, P, group, profit
         """
         :type G: int
         :type P: int
@@ -14,13 +14,13 @@ c_ Solution(o..):
         """
         dp = [[0]*(G+1) ___ _ __ r..(P+1)]
         dp[0][0] = 1
-        ___ p, g __ z..(profit, group):
-            ___ i __ r..(P, -1, -1):
-                ___ j __ r..(G-g, -1, -1):
+        ___ p, g __ z..(profit, group
+            ___ i __ r..(P, -1, -1
+                ___ j __ r..(G-g, -1, -1
                     dp[m..(i+p, P)][j+g] += dp[i][j]
         r.. s..(dp[P])%(10**9 + 7)
     
-    ___ profitableSchemes_DFS_TLE  G, P, group, profit):
+    ___ profitableSchemes_DFS_TLE  G, P, group, profit
         """
         :type G: int
         :type P: int
@@ -32,7 +32,7 @@ c_ Solution(o..):
         dfs(0, group, profit, G, P, [], 0, res)
         r.. res[0]
     
-    ___ dfs  ind, group, profit, G, P, curGroup, curProfit, res):
+    ___ dfs  ind, group, profit, G, P, curGroup, curProfit, res
         __ curProfit >= P a.. s..(curGroup) <= G:
             res[0] += 1
         ___ i __ r..(ind, l..(group)):

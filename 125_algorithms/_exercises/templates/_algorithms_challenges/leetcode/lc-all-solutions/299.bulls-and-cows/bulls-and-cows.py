@@ -1,8 +1,8 @@
 ____ c.. _______ Counter
 
 
-c_ Solution(o..):
-  ___ getHint  secret, guess):
+c_ Solution(o..
+  ___ getHint  secret, guess
     """
     :type secret: str
     :type guess: str

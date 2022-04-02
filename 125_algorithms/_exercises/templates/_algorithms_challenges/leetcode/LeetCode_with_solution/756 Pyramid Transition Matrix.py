@@ -68,35 +68,35 @@ c_ Solution:
         # for nxt_level in self.gen_nxt_level(T, level, 0):
         ___ nxt_level __ i...product(
             *[T[a, b] ___ a, b __ z..(level, level[1:])]
-        ):
-            __ dfs(T, nxt_level):
+
+            __ dfs(T, nxt_level
                 r.. T..
 
         r.. F..
 
-    ___ gen_nxt_level  T, level, lo):
+    ___ gen_nxt_level  T, level, lo
         """
         equiv to itertools.product - nested for-loops in a generator expression
         Cartesian product
         """
-        __ lo + 1 >= l..(level):
+        __ lo + 1 >= l..(level
             y.. ""
             r..
 
         ___ head __ T[level[lo], level[lo + 1]]:
-            ___ tail __ gen_nxt_level(T, level, lo + 1):
+            ___ tail __ gen_nxt_level(T, level, lo + 1
                 y.. head + tail
 
 
     ___ dfs_deep  T, level, lo, nxt_level) __ b..:
-        __ lo + 1 __ l..(level):
+        __ lo + 1 __ l..(level
             r.. T..
 
         ___ nxt __ T[level[lo], level[lo + 1]]:
             nxt_level.a..(nxt)
-            __ dfs(T, level, lo + 1, nxt_level):
+            __ dfs(T, level, lo + 1, nxt_level
                 # Too deep - check till top
-                __ dfs(T, nxt_level, 0, []):
+                __ dfs(T, nxt_level, 0, []
                     r.. T..
             nxt_level.pop()
 

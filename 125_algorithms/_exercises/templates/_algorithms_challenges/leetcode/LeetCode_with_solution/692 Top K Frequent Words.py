@@ -28,11 +28,11 @@ ____ typing _______ List
 
 
 c_ Word:
-    ___ - , content, count):
+    ___ - , content, count
         content = content
         count = count
 
-    ___ __lt__  other):
+    ___ __lt__  other
         __ count __ other.count:
             r.. content > other.content
 

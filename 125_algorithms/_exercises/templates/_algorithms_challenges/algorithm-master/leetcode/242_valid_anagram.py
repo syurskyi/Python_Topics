@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isAnagram  s, t):
+    ___ isAnagram  s, t
         """
         :type s: str
         :type t: str
@@ -7,7 +7,7 @@ c_ Solution:
         """
         __ s __ t:
             r.. T..
-        __ n.. s o. n.. t o. l..(s) != l..(t):
+        __ n.. s o. n.. t o. l..(s) != l..(t
             r.. F..
 
         freq    # dict

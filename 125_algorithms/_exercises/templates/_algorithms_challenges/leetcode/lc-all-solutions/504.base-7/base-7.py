@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ convertToBase7  num):
+c_ Solution(o..
+  ___ convertToBase7  num
     """
     :type num: int
     :rtype: str
     """
 
-    ___ convertHelper(num, base):
+    ___ convertHelper(num, base
       sign = ""
       __ num < 0:
         sign = "-"

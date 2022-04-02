@@ -27,8 +27,8 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ maxRotateFunction  A):
+c_ Solution(o..
+    ___ maxRotateFunction  A
         """
         See the rotation pattern
         :type A: List[int]
@@ -41,7 +41,7 @@ c_ Solution(o..):
         s = s..(A)
 
         cur = s..(idx * val ___ idx, val __ e..(A))
-        ___ r __ r..(A):
+        ___ r __ r..(A
             cur = cur + s - n * r
             gmax = m..(gmax, cur)
 

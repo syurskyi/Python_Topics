@@ -5,8 +5,8 @@ Input is guaranteed to be within the range from 1 to 3999.
 """
 
 
-c_ Solution(o..):
-    ___ romanToInt  s):
+c_ Solution(o..
+    ___ romanToInt  s
         """
         :type s: str
         :rtype: int
@@ -21,7 +21,7 @@ c_ Solution(o..):
             'M': 1000,
         }
         res = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ i < l..(s) - 1 a.. roman[c] < roman[s[i + 1]]:
                 res -= roman[c]
             ____:

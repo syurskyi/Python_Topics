@@ -3,8 +3,8 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findRedundantConnection  edges):
+c_ Solution(o..
+    ___ findRedundantConnection  edges
         """
         :type edges: List[List[int]]
         :rtype: List[int]
@@ -19,7 +19,7 @@ c_ Solution(o..):
             roots[root1] = root2
         r.. [-1, -1]
     
-    ___ getRoot  roots, ind):
+    ___ getRoot  roots, ind
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind

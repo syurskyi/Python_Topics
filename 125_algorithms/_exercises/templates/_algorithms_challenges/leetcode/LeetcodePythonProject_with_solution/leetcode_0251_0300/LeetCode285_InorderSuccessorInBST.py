@@ -5,14 +5,14 @@ Created on Mar 6, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ inorderSuccessor  root, p):
+c_ Solution(o..
+    ___ inorderSuccessor  root, p
         __ n.. root: r.. N..
         __ root.val <= p.val:
             r.. inorderSuccessor(root.right, p)
@@ -23,7 +23,7 @@ c_ Solution(o..):
             ____:
                 r.. root
     
-    ___ inorderSuccessorNonRec  root, p):
+    ___ inorderSuccessorNonRec  root, p
         """
         :type root: TreeNode
         :type p: TreeNode

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestIncreasingPath  G):
+    ___ longestIncreasingPath  G
         """
         :type G: List[List[int]]
         :rtype: int
@@ -17,15 +17,15 @@ c_ Solution:
         m, n = l..(G), l..(G[0])
         memo = [[0] * n ___ _ __ r..(m)]
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 size = dfs(G, x, y, memo)
                 __ size > ans:
                     ans = size
 
         r.. ans
 
-    ___ dfs  G, x, y, memo):
+    ___ dfs  G, x, y, memo
         __ memo[x][y] > 0:
             r.. memo[x][y]
 

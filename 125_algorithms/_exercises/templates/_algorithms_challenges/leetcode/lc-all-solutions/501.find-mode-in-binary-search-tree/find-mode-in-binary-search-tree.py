@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ findMode  root):
+c_ Solution(o..
+  ___ findMode  root
     """
     :type root: TreeNode
     :rtype: List[int]
     """
 
-    ___ visit(v):
+    ___ visit(v
       __ v != pre:
         pre = v
         cnt = 0
@@ -25,7 +25,7 @@ c_ Solution(o..):
           ans[modeCnt] = v
         modeCnt += 1
 
-    ___ inorder(root):
+    ___ inorder(root
       __ root:
         inorder(root.left)
         visit(root.val)

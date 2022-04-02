@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ largestNumber  nums):
+    ___ largestNumber  nums
         """
         Start off by enumerate simple examples
 
@@ -27,25 +27,25 @@ c_ Solution:
             nums = "0"
         r.. nums
 
-    ___ cmp  a, b):
+    ___ cmp  a, b
         """
         :type a: str
         :type b: str
         :rtype: int
         """
         order = 1
-        __ l..(a) > l..(b):
+        __ l..(a) > l..(b
             order = -1
             a, b = b, a
 
         ___ i __ x..(l..(a)):
-            __ i..(a[i]) != i..(b[i]):
+            __ i..(a[i]) != i..(b[i]
                 r.. order*(i..(a[i])-i..(b[i]))
 
-        __ l..(a) __ l..(b):
+        __ l..(a) __ l..(b
             r.. 0
 
-        r.. order*cmp(a, b[l..(a):])
+        r.. order*cmp(a, b[l..(a])
 
 
 __ _______ __ _______

@@ -23,12 +23,12 @@ The minute must be consist of two digits and may contain a leading zero, for exa
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         hours = (1, 2, 4, 8)
         minutes = (1, 2, 4, 8, 16, 32)
 
-    ___ readBinaryWatch  num):
+    ___ readBinaryWatch  num
         """
         orderly backtracking
 
@@ -36,38 +36,38 @@ c_ Solution(o..):
         :rtype: List[str]
         """
         ___ gen
-            ___ hour_n __ x..(m..(num, 4)+1):
-                ___ hour __ hour(hour_n):
-                    ___ minute __ minute(num-hour_n):
+            ___ hour_n __ x..(m..(num, 4)+1
+                ___ hour __ hour(hour_n
+                    ___ minute __ minute(num-hour_n
                         hour = s..(hour)
                         minute = ('0' + s..(minute))[-2:]
                         y.. hour + ':' + minute
 
         r.. l..(gen())
 
-    ___ gen  n, head, lst, func):
-        __ head __ l..(lst):
+    ___ gen  n, head, lst, func
+        __ head __ l..(lst
             y.. N..
 
         __ n __ 0:
             y.. 0
 
         ___ i __ x..(head, l..(lst)):
-            ___ rest __ gen(n-1, i+1, lst, func):
+            ___ rest __ gen(n-1, i+1, lst, func
                 __ rest __ n.. N..
                     ret = lst[i]+rest
-                    __ func(ret):
+                    __ func(ret
                         y.. ret
                     ____:
                         _____
 
-    ___ hour  n):
+    ___ hour  n
         r.. gen(n, 0, hours, l.... x: x < 12)
 
-    ___ minute  n):
+    ___ minute  n
         r.. gen(n, 0, minutes, l.... x: x < 60)
 
 
 __ _______ __ _______
-    ... Solution().readBinaryWatch(1) __ ['0:01', '0:02', '0:04', '0:08', '0:16', '0:32', '1:00', '2:00', '4:00',
-                                             '8:00']
+    ... Solution().readBinaryWatch(1) __  '0:01', '0:02', '0:04', '0:08', '0:16', '0:32', '1:00', '2:00', '4:00',
+                                             '8:00'

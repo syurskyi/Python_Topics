@@ -1,16 +1,16 @@
 c_ Solution:
     # @param {integer[]} nums
     # @return {integer[][]}
-    ___ subsetsWithDup  nums):
+    ___ subsetsWithDup  nums
         nums.s..()
         r.. subsets_aux(nums)
 
-    ___ subsets_aux  nums):
+    ___ subsets_aux  nums
         __ n.. nums:
             r.. [[]]
         ____:
             res = [[]]
-            ___ i, e __ e..(nums):
+            ___ i, e __ e..(nums
                 __ i > 0 a.. nums[i] __ nums[i - 1]:
                     _____
                 rest_subsets = subsets_aux(nums[i + 1:])

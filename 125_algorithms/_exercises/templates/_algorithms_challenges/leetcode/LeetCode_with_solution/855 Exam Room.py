@@ -39,7 +39,7 @@ _______ bisect
 
 
 c_ ExamRoom:
-    ___ - , N: i..):
+    ___ - , N: i..
         """
         Maintain a sorted array of index. BST
         BST -> bisect sort
@@ -62,7 +62,7 @@ c_ ExamRoom:
                 max_dist = dist
                 ret_idx = 0
             # middle
-            ___ j __ r..(l..(idxes)-1):
+            ___ j __ r..(l..(idxes)-1
                 i = (idxes[j] + idxes[j+1]) // 2
                 dist = m..(abs(idxes[j] - i), abs(idxes[j+1] - i))
                 __ dist > max_dist:

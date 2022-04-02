@@ -19,13 +19,13 @@ return
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ pathSum  root, s..):
+    ___ pathSum  root, s..
         """
         :param root: TreeNode
         :param sum: integer
@@ -35,7 +35,7 @@ c_ Solution:
         accumulatePathSum(root, s.., [], result)
         r.. result
 
-    ___ accumulatePathSum  root, s.., cur_path, result):
+    ___ accumulatePathSum  root, s.., cur_path, result
         """
         DFS
         Similar to previous path sum

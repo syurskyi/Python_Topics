@@ -4,8 +4,8 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ longestSubstring_orig  s, k):
+c_ Solution(o..
+    ___ longestSubstring_orig  s, k
         __ l..(s) < k:
             r.. 0
         c = m..([(s.c.. c), c) ___ c __ s])[1]
@@ -13,7 +13,7 @@ c_ Solution(o..):
             r.. l..(s)
         r.. m..(longestSubstring_orig(t, k) ___ t __ s.s..(c))
     
-    ___ longestSubstring  s, k):
+    ___ longestSubstring  s, k
         __ l..(s) < k: r.. 0
         minChar, minCount = 0, f__('inf')
         hashmap    # dict
@@ -26,11 +26,11 @@ c_ Solution(o..):
         __ hashmap[minChar] >= k:
             r.. l..(s)
         maxRes = f__('-inf')
-        ___ t __ s.s..(minChar):
+        ___ t __ s.s..(minChar
             maxRes = m..(maxRes, longestSubstring(t, k))
         r.. maxRes
     
-    ___ longestSubstring_another  s, k):
+    ___ longestSubstring_another  s, k
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1
@@ -47,7 +47,7 @@ c_ Solution(o..):
                 __ prev < i:
                     maxLen = m..(maxLen, longestSubstring_another(s[prev:i], k))
                 prev = i+1
-        __ prev < l..(s):
+        __ prev < l..(s
             maxLen = m..(maxLen, longestSubstring_another(s[prev:], k))
         r.. maxLen
     

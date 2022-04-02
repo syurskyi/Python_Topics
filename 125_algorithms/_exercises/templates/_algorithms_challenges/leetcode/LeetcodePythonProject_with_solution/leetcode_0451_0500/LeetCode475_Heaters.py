@@ -4,8 +4,8 @@ Created on Apr 27, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findRadius  houses, heaters):
+c_ Solution(o..
+    ___ findRadius  houses, heaters
         houses.s..()
         heaters.s..()
         i = 0
@@ -17,7 +17,7 @@ c_ Solution(o..):
                 tmp = heaters[i]-house
             ____:
                 tmp = house-heaters[i]
-                __ i+1 < l..(heaters):
+                __ i+1 < l..(heaters
                     tmp = m..(tmp, heaters[i+1]-house)
             radius = m..(radius, tmp)
         r.. radius

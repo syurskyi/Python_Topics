@@ -31,20 +31,20 @@ expected_quotes = [
 ]
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ output_your_code
     r.. extract_quotes()
 
 
-___ test_quotes_type(output_your_code):
+___ test_quotes_type(output_your_code
     ... t..(output_your_code) __ d..
 
 
-___ test_quotes_len(output_your_code):
+___ test_quotes_len(output_your_code
     ... l..(output_your_code) __ 10
 
 
 ?p__.m__.p.("author, quote",
                          z..(expected_authors, expected_quotes))
-___ test_quotes_dict_content(author, quote, output_your_code):
+___ test_quotes_dict_content(author, quote, output_your_code
     ... output_your_code.get(author) __ quote

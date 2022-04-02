@@ -4,7 +4,7 @@ c_ Triangle:
     ISOSCELES = "isosceles"
     SCALENE = "scalene"
 
-    ___ - , a, b, c):
+    ___ - , a, b, c
         a = a
         b = b
         c = c
@@ -36,5 +36,5 @@ c_ Triangle:
                 a + c <= b)
 
 
-c_ TriangleError(E..):
+c_ TriangleError(E..
     p..

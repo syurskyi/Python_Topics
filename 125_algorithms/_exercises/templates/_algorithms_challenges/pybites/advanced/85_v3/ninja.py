@@ -5,7 +5,7 @@ BELTS = d..(z..(scores, ranks))
 
 c_ NinjaBelt:
 
-    ___ - , score=0):
+    ___ - , score=0
         _score = score
         _last_earned_belt_number = N..
 
@@ -15,19 +15,19 @@ c_ NinjaBelt:
         r.. ranks[_last_earned_belt_number] __ _last_earned_belt_number __ n.. N.. ____ N..
 
     @staticmethod
-    ___ _get_belt(new_score):
+    ___ _get_belt(new_score
         """Find the index number of the belt for the provide score"""
         r.. l..([x ___ x __ scores __ x <= new_score]) - 1
 
     ___ _get_score
         r.. _score
 
-    ___ _set_score  new_score):
+    ___ _set_score  new_score
         """
         Set the current score and update any belt qualification
         new_score must be an integer and cannot be less than the current score
         """
-        __ n.. isi..(new_score, i..):
+        __ n.. isi..(new_score, i..
             r.. ValueError('Score can only be an integer')
         __ _score > new_score:
             r.. ValueError _*New score ({new_score}) must be higher than previous score ({_score})')

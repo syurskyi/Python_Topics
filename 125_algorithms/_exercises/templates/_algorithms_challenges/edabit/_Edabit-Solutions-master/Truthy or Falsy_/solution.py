@@ -1,4 +1,4 @@
-___ is_truthy(val):
+___ is_truthy(val
     __ b..(val) __ T..:
         r.. 1
     ____:

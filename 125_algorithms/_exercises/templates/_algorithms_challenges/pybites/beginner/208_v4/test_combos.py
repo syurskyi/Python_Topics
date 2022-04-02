@@ -3,7 +3,7 @@ _______ p__
 ____ Previous.combos _______ find_number_pairs
 
 
-___ _sort_all(ret):
+___ _sort_all(ret
     r.. s..(
         [t..(s..(n)) ___ n __ ret]
     )
@@ -22,7 +22,7 @@ ___ _sort_all(ret):
     ([1.69, 1.82, 2.91, 4.67, 4.81, 3.05, 5.82, 5.06,
       4.28, 6.36, 5.19, 4.57], 10, [(4.81, 5.19)]),
 ])
-___ test_find_number_pairs(numbers, N, expected):
+___ test_find_number_pairs(numbers, N, expected
     actual = find_number_pairs(numbers, N=N)
     ... t..(actual) __ l..
     ... _sort_all(actual) __ _sort_all(expected)

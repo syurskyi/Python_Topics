@@ -42,7 +42,7 @@ c_ Solution:
         """
         F = defaultdict(l....: defaultdict(l....: 1))
         ___ i __ r..(l..(A)):
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 delta = A[i] - A[j]
                 F[i][delta] = F[j][delta] + 1
 

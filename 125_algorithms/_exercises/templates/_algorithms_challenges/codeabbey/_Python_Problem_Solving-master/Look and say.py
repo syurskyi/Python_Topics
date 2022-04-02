@@ -4,10 +4,10 @@ num_iter = i..(input('Enter the number of iterations:'))
 start_num = input('Enter the starting string of the sequence:')
 
 #define the function of lookand say
-___ look_and_say(data,maxlen):
+___ look_and_say(data,maxlen
     result    # list
     #first iteration to iterate through given iterations by the user
-    ___ i __ r..(maxlen-1):
+    ___ i __ r..(maxlen-1
         # defining the number of count of a particular character in the string
         count = 1
         #list to store the count of the character and the character

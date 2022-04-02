@@ -14,7 +14,7 @@ The solution set must not contain duplicate quadruplets.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ fourSum_TLE  num, target):
+    ___ fourSum_TLE  num, target
         """
         Algorithm: pointers
         O(n^3) typically, O(n^(k-1))
@@ -66,7 +66,7 @@ c_ Solution:
 
         r.. result
 
-    ___ fourSum  num, target):
+    ___ fourSum  num, target
         """
         Algorithm: Hash Table
         O(n^2)
@@ -80,16 +80,16 @@ c_ Solution:
             r.. []
         num.s..()
 
-        ___ p __ x..(length):
-            ___ q __ x..(p+1, length):
+        ___ p __ x..(length
+            ___ q __ x..(p+1, length
                 # record the pair sum
                 __ num[p]+num[q] n.. __ sum2index:
                     sum2index[num[p]+num[q]] = [(p, q)]
                 ____:
                     sum2index[num[p]+num[q]].a..((p, q))
 
-        ___ i __ x..(length):
-            ___ j __ x..(i+1, length-2):
+        ___ i __ x..(length
+            ___ j __ x..(i+1, length-2
                 sum_remain = target-num[i]-num[j]
                 __ sum_remain __ sum2index:
                     # construct the result

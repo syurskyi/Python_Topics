@@ -5,7 +5,7 @@ _______ bob
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ BobTests(unittest.TestCase):
+c_ BobTests(unittest.TestCase
     ___ test_stating_something
         assertEqual(bob.hey("Tom-ay-to, tom-aaaah-to."), "Whatever.")
 

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ setZeroes  matrix):
+c_ Solution(o..
+  ___ setZeroes  matrix
     """
     :type matrix: List[List[int]]
     :rtype: void Do not return anything, modify matrix in-place instead.

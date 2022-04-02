@@ -1,4 +1,4 @@
-___ splitInteger(num,parts):
+___ splitInteger(num,parts
     mul,mod = divmod(num,parts)
     r.. [mul] * parts
 

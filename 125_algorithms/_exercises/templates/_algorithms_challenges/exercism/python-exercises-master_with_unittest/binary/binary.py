@@ -1,2 +1,2 @@
-___ parse_binary(s__):
+___ parse_binary(s__
     p..

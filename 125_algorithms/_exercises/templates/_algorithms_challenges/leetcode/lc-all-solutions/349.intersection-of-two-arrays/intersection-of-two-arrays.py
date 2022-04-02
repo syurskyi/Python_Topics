@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ intersection  nums1, nums2):
+c_ Solution(o..
+  ___ intersection  nums1, nums2
     """
     :type nums1: List[int]
     :type nums2: List[int]

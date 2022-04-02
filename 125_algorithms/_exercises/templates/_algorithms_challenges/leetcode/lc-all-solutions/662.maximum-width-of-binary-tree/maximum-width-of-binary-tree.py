@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ widthOfBinaryTree  root):
+c_ Solution(o..
+  ___ widthOfBinaryTree  root
     """
     :type root: TreeNode
     :rtype: int
     """
 
-    ___ dfs(root, x, y, num, dmin, dmax):
+    ___ dfs(root, x, y, num, dmin, dmax
       __ root:
         left = dfs(root.left, x - 1, y + 1, num * 2, dmin, dmax)
         right = dfs(root.right, x + 1, y + 1, 1 + num * 2, dmin, dmax)

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ lengthOfLongestSubstringKDistinct  s, k):
+c_ Solution(o..
+  ___ lengthOfLongestSubstringKDistinct  s, k
     """
     :type s: str
     :type k: int

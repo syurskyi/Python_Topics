@@ -1,6 +1,6 @@
-c_ Vector2D(o..):
+c_ Vector2D(o..
 
-  ___ - , vec2d):
+  ___ - , vec2d
     """
     Initialize your data structure here.
     :type vec2d: List[List[int]]
@@ -20,7 +20,7 @@ c_ Vector2D(o..):
     :rtype: bool
     """
     m = m
-    w.... x < l..(m) a.. y >= l..(m[x]):
+    w.... x < l..(m) a.. y >= l..(m[x]
       x += 1
       y = 0
     r.. x < l..(m)

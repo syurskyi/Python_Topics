@@ -3,8 +3,8 @@ Created on Sep 11, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ kSimilarity  A, B):
+c_ Solution(o..
+    ___ kSimilarity  A, B
         """
         :type A: str
         :type B: str
@@ -19,7 +19,7 @@ c_ Solution(o..):
         w.... q:
             res += 1
             size = l..(q)
-            ___ _ __ r..(size):
+            ___ _ __ r..(size
                 s = q.pop(0)
                 i = 0
                 w.... s[i] __ b[i]:
@@ -35,7 +35,7 @@ c_ Solution(o..):
                         q.a..(tmp)
         r.. res
     
-    ___ swap  s, i, j):
+    ___ swap  s, i, j
         l = l..(s)
         l[i], l[j] = l[j], l[i]
         r.. ''.j..(l)

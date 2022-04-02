@@ -1,7 +1,7 @@
 _______ csv
 
 
-___ class_rosters(input_file):
+___ class_rosters(input_file
     ''' Read the input_file and modify the data
         according to the Bite description.
         Return a list holding one item per student
@@ -9,7 +9,7 @@ ___ class_rosters(input_file):
      
     school_year = 2020 
     result    # list
-    w__ open(input_file,'r') __ f:
+    w__ o.. input_file _ __ f:
         data = csv.reader(f)
 
         ___ row __ data:

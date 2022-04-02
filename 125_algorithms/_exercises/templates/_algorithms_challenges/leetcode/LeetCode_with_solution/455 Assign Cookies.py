@@ -14,7 +14,7 @@ You cannot assign more than one cookie to one child.
 
 
 c_ Solution:
-    ___ findContentChildren  g, s):
+    ___ findContentChildren  g, s
         """
         Greedy
 
@@ -27,7 +27,7 @@ c_ Solution:
         ret = 0
         i = 0
         j = 0
-        w.... i < l..(g) a.. j < l..(s):
+        w.... i < l..(g) a.. j < l..(s
             __ g[i] <= s[j]:
                 ret += 1
                 i += 1

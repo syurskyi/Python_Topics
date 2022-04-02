@@ -1,6 +1,6 @@
 _______ __
 ____ c.. _______ defaultdict
-___ pair_files(filenames):
+___ pair_files(filenames
     """
     Function that pairs filenames
 
@@ -69,5 +69,5 @@ __ _______ __ _______
     # ('Sample1_S1_L001_R1_001.FASTQ.GZ', 'Sample1_S1_L001_R2_001.fastq.gz')
     # ('Sample2_S2_L001_R1_001.fastq.gz', 'sample2_s2_l001_r2_001.fastq.gz')
 
-    ___ pair __ pair_files(filenames):
+    ___ pair __ pair_files(filenames
         print(pair)

@@ -3,8 +3,8 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ smallestDistancePair  nums, k):
+c_ Solution(o..
+    ___ smallestDistancePair  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         n = l..(nums)
         nums.s..()
         low = f__('inf')
-        ___ i __ r..(n-1):
+        ___ i __ r..(n-1
             low = m..(low, nums[i+1]-nums[i])
         high = nums[-1]-nums[0]
         w.... low < high:
@@ -24,14 +24,14 @@ c_ Solution(o..):
                 high = mid
         r.. low
     
-    ___ countPair  nums, mid):
+    ___ countPair  nums, mid
         n = l..(nums)
         res = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             res += upperBound(nums, i, n-1, nums[i]+mid)-i-1
         r.. res
     
-    ___ upperBound  nums, low, high, key):
+    ___ upperBound  nums, low, high, key
         __ nums[high] <= key:
             r.. high+1
         w.... low < high:
@@ -42,10 +42,10 @@ c_ Solution(o..):
                 high = mid
         r.. low
     
-    ___ countPairs_slow  nums, mid):
+    ___ countPairs_slow  nums, mid
         n = l..(nums)
         res = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             j = i
             w.... j < n a.. nums[j]-nums[i] <= mid:
                 j += 1

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ longestConsecutive  nums):
+c_ Solution(o..
+  ___ longestConsecutive  nums
     """
     :type nums: List[int]
     :rtype: int

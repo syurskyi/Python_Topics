@@ -14,7 +14,7 @@ c_ Solution:
     @param: t: Undirected graph nodes
     @return: an integer
     """
-    ___ sixDegrees  graph, s, t):
+    ___ sixDegrees  graph, s, t
         __ n.. graph o. n.. s o. n.. t:
             r.. -1
         __ s __ t:

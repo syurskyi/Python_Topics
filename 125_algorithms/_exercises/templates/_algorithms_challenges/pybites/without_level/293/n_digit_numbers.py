@@ -16,4 +16,4 @@ ___ n_digit_number(number: T, n: i..) __ i..:
 ___ n_digit_numbers(numbers: List[T], n: i..) __ List[i..]:
     __ n < 1:
         r.. ValueError
-    r.. l..(map(l.... x: n_digit_number(x, n), numbers))
+    r.. l.. m..(l.... x: n_digit_number(x, n), numbers))

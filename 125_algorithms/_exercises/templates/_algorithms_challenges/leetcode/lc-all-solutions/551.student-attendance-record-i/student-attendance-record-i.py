@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ checkRecord  s):
+c_ Solution(o..
+  ___ checkRecord  s
     """
     :type s: str
     :rtype: bool

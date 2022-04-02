@@ -4,7 +4,7 @@ EQUAL = 2
 UNEQUAL = 3
 
 
-___ check_lists(l1, l2):
+___ check_lists(l1, l2
     __ l1 __ l2:
         r.. EQUAL
     ____ l1 __ each_cons(l2, l..(l1)):
@@ -16,5 +16,5 @@ ___ check_lists(l1, l2):
 
 
 # Not the most efficent
-___ each_cons(lst, size):
+___ each_cons(lst, size
     r.. [lst[i: i + size] ___ i __ r..(l..(lst) - size + 1)]

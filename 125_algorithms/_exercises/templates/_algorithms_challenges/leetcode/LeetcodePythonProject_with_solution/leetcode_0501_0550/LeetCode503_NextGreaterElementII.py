@@ -4,8 +4,8 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ nextGreaterElements  nums):
+c_ Solution(o..
+    ___ nextGreaterElements  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -13,7 +13,7 @@ c_ Solution(o..):
         res    # list
         n = l..(nums)
         stack = l..(r..(n-1, -1, -1))
-        ___ i __ r..(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1
             w.... stack a.. nums[stack[-1]] <= nums[i]:
                 stack.pop()
             __ stack:

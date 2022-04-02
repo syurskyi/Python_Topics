@@ -4,8 +4,8 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ subarraySum  nums, k):
+c_ Solution(o..
+    ___ subarraySum  nums, k
         """
         :type nums: List[int]
         :type k: int

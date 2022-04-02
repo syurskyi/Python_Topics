@@ -8,7 +8,7 @@ EXCEPTION = 'exception caught'
 TMP = Path('/tmp')
 
 
-___ convert_to_csv(json_file):
+___ convert_to_csv(json_file
     """Read/load the json_file (local file downloaded to /tmp) and
        convert/write it to defined csv_file.
         The data is in mounts > collected
@@ -34,12 +34,12 @@ ___ convert_to_csv(json_file):
         r..
 
 
-    creatures = data['mounts']['collected']
+    creatures = data 'mounts'  'collected'
 
     field_names = l..(creatures[0].keys())
 
     
-    w__ open(csv_file,'w') __ csv_file:
+    w__ o.. csv_file,'w') __ csv_file:
         writer = csv.DictWriter(csv_file,fieldnames=fieldnames)
         writer.writeheader()
 

@@ -19,7 +19,7 @@ Output: The root of a Greater Tree like this:
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -33,7 +33,7 @@ c_ Solution:
         walk(root, 0)
         r.. root
 
-    ___ walk  node, cur_sum):
+    ___ walk  node, cur_sum
         """stateless walk"""
         __ n.. node:
             r.. cur_sum

@@ -49,7 +49,7 @@ c_ Solution:
         dfs(G, 0, visited)
         r.. a..(e __ 1 ___ e __ visited)
 
-    ___ dfs  G, u, visited):
+    ___ dfs  G, u, visited
         visited[u] = 1
         ___ nbr __ G[u]:
             __ n.. visited[nbr]:

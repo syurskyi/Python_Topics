@@ -12,7 +12,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ lowestCommonAncestor  root, a, b):
+    ___ lowestCommonAncestor  root, a, b
         """
         :type root: TreeNode
         :type a: TreeNode

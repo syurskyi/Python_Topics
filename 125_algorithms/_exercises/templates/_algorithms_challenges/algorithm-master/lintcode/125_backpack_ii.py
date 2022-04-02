@@ -8,7 +8,7 @@ c_ Solution:
     @param: V: Given n items with value V[i]
     @return: The maximum value
     """
-    ___ backPackII  m, A, V):
+    ___ backPackII  m, A, V
         __ n.. m o. n.. A o. n.. V:
             r.. 0
 
@@ -17,10 +17,10 @@ c_ Solution:
         dp = [[0] * (m + 1) ___ _ __ r..(2)]
 
         prev = curr = 0
-        ___ i __ r..(1, l..(A) + 1):
+        ___ i __ r..(1, l..(A) + 1
             prev = curr
             curr = 1 - curr
-            ___ w __ r..(1, m + 1):
+            ___ w __ r..(1, m + 1
                 dp[curr][w] = dp[prev][w]
 
                 __ w >= A[i - 1]:
@@ -42,15 +42,15 @@ c_ Solution:
     @param: V: Given n items with value V[i]
     @return: The maximum value
     """
-    ___ backPackII  m, A, V):
+    ___ backPackII  m, A, V
         __ n.. m o. n.. A o. n.. V:
             r.. 0
 
         n = l..(A)
         dp = [[0] * (m + 1) ___ _ __ r..(n + 1)]
 
-        ___ i __ r..(1, n + 1):
-            ___ w __ r..(1, m + 1):
+        ___ i __ r..(1, n + 1
+            ___ w __ r..(1, m + 1
                 dp[i][w] = dp[i - 1][w]
 
                 __ w >= A[i - 1]:

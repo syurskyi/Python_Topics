@@ -1,4 +1,4 @@
-___ split_words_and_quoted_text(text):
+___ split_words_and_quoted_text(text
     """Split string text by space unless it is
        wrapped inside double quotes, returning a list
        of the elements.

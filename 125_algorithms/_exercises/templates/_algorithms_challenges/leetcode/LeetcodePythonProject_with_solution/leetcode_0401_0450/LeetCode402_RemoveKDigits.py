@@ -4,8 +4,8 @@ Created on Apr 8, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ removeKdigits  num, k):
+c_ Solution(o..
+    ___ removeKdigits  num, k
         n = l..(num)
         longest = n-k
         __ k >= n: r.. '0'

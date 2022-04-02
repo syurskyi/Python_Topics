@@ -9,7 +9,7 @@ c_ Bite:
     title: s..
     level: s..
 
-    ___ - , number, title, level='Beginner'):
+    ___ - , number, title, level='Beginner'
         number = number
         title = title.capitalize()
         level = level

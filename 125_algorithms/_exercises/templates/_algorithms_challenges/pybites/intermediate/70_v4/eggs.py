@@ -5,7 +5,7 @@ COLORS = 'red blue green yellow brown purple'.s..
 
 c_ EggCreator:
     ''' Create randomly colored "eggs" '''
-    ___ - , limit):
+    ___ - , limit
         limit = limit
         count = 0
 

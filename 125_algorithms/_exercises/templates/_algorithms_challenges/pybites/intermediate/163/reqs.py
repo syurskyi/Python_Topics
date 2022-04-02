@@ -34,10 +34,10 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
       (have a newer version)
    """
    upgraded_reqs    # list
-   ___ old, new __ z..(old_reqs.s...splitlines(), new_reqs.s...splitlines()):
+   ___ old, new __ z..(old_reqs.s...s.. , new_reqs.s...s..()):
       req, version_old = old.s..("==")
       version_new = new.s..("==")[1]
-      __ version.p..(version_new) > version.p..(version_old):
+      __ version.p..(version_new) > version.p..(version_old
          upgraded_reqs.a..(req)
    r.. upgraded_reqs
 

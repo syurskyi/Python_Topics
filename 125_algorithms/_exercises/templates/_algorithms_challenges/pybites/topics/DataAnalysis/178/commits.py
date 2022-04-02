@@ -18,7 +18,7 @@ YEAR_MONTH = '{y}-{m:02d}'
 
 
 ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
-                                  year: i.. = N..) __ (s.., s..):
+                                  year: i.. = N..) __ (s.., s..
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -30,14 +30,14 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     """
     print _*year argument is {year}')
     commit_log = defaultdict(i..)
-    w__ open(commits) __ f:
+    w__ o.. commits) __ f:
         ___ line __ f:
             date, commit  = line.s..(' | ')
             date_time_obj = d__.strptime(date[12:], '%b %d %H:%M:%S %Y %z')
             dt_yr = date_time_obj.s..("%Y")
             year_month = date_time_obj.s..("%Y-%m")
             commit_list = commit.s..
-            __ year __ N.. o. year __ i..(dt_yr):
+            __ year __ N.. o. year __ i..(dt_yr
                 __ l..(commit_list) __ 7:
                     total_commit = i..(commit_list[3])+i..(commit_list[5])
                 ____:

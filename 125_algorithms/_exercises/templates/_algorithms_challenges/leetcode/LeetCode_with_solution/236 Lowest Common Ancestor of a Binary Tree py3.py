@@ -33,21 +33,21 @@ p and q are different and both values will exist in the binary tree.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         ans = N..
 
     ___ lowestCommonAncestor  root: TreeNode, p: TreeNode, q: TreeNode) __ TreeNode:
         c.. root, p, q)
         r.. ans
 
-    ___ c.. self, node, p, q):
+    ___ c.. self, node, p, q
         __ n.. node:
             r.. 0
 

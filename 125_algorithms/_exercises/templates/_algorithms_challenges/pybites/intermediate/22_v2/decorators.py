@@ -1,15 +1,15 @@
 ____ functools _______ wraps
 
 
-___ make_html(element):
+___ make_html(element
 
 
 
-    ___ decorator(function):
+    ___ decorator(function
 
 
 
-        ___ wrapper(*args,**kwargs):
+        ___ wrapper(*args,**kwargs
 
             r.. f'<{element}>{function(*args,**kwargs)}</{element}>'
 

@@ -37,12 +37,12 @@ c_ Solution:
         lst.s..()
         piles    # list
         _, n, c = lst[0]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             piles.a..([c])
 
         cnt = 0
         ___ _, n, c __ lst[1:]:
-            ___ _ __ r..(n):
+            ___ _ __ r..(n
                 piles[cnt].a..(c)
                 cnt = (cnt + 1) % l..(piles)
 

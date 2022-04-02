@@ -16,25 +16,25 @@ TMP_FILE = NamedTemporaryFile(delete=F..)
 FILE = TMP_FILE.name
 
 
-@p__.f..(scope="function")
+?p__.f..(scope="function")
 ___ rcf
     password = b"#clamybite"
     key = choice(KEYS)
     r.. ClamyFernet(password, key)
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ cf
     r.. ClamyFernet(key=KEYS[0])
 
 
-___ test_clamyfernet_no_args(rcf):
+___ test_clamyfernet_no_args(rcf
     tmp_cf = ClamyFernet()
     ... tmp_cf.key __ n.. N..
     ... tmp_cf.password __ b"pybites"
 
 
-___ test_clamyfernet_random_key(rcf):
+___ test_clamyfernet_random_key(rcf
     token = rcf.encrypt("secret msg")
     ts = rcf.clf.extract_timestamp(token)
     dt = d__.fromtimestamp(ts)
@@ -45,7 +45,7 @@ ___ test_clamyfernet_random_key(rcf):
     ... dt.year __ d__.n...year
 
 
-___ test_clamyfernet(cf):
+___ test_clamyfernet(cf
     token = cf.encrypt(MESSAGE)
     og_message = cf.decrypt(token)
     ... l..(token) __ 120
@@ -54,7 +54,7 @@ ___ test_clamyfernet(cf):
     ... og_message __ MESSAGE
 
 
-___ test_clamyfernet_random(rcf):
+___ test_clamyfernet_random(rcf
     token = rcf.encrypt(MESSAGE)
     og_message = rcf.decrypt(token)
     ... l..(token) __ 120

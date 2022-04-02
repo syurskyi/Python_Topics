@@ -1,10 +1,10 @@
 _______ r__
 
 
-c_ Robot(o..):
+c_ Robot(o..
     alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    ___ - ):
+    ___ -
         _name = N..
         _past_names = s..()
 

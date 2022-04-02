@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minMoves2  nums):
+c_ Solution(o..
+  ___ minMoves2  nums
     """
     :type nums: List[int]
     :rtype: int

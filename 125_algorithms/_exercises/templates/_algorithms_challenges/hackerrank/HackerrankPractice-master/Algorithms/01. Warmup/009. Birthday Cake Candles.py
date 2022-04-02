@@ -3,5 +3,5 @@
 
 
 n = i..(input())
-ar = l..(map(i.., input().s..()))
+ar = l.. m..(i.., input().s..()))
 print(ar.c.. m..(ar)))

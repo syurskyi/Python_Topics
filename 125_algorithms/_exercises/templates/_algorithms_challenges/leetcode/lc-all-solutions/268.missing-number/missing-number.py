@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ missingNumber  nums):
+c_ Solution(o..
+  ___ missingNumber  nums
     """
     :type nums: List[int]
     :rtype: int

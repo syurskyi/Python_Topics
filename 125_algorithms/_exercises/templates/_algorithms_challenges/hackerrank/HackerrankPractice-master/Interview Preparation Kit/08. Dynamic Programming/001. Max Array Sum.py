@@ -2,7 +2,7 @@
 #  Score: 20
 
 
-___ max_subset_sum(arr):
+___ max_subset_sum(arr
     dp = l..()
     dp.a..(arr[0])
     dp.a..(m..(arr[:2]))
@@ -14,5 +14,5 @@ ___ max_subset_sum(arr):
 
 
 n = i..(input())
-arr = l..(map(i.., input().s..()))
+arr = l.. m..(i.., input().s..()))
 print(max_subset_sum(arr))

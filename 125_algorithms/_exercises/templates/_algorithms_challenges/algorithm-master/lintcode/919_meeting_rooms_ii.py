@@ -8,7 +8,7 @@ class Interval(object):
 
 
 c_ Solution:
-    ___ minMeetingRooms  intervals):
+    ___ minMeetingRooms  intervals
         """
         :type intervals: list[Interval]
         :rtype: int

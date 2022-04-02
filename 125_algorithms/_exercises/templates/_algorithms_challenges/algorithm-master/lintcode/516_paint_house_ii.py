@@ -21,7 +21,7 @@ c_ Solution:
     @param: C: n x k cost matrix
     @return: an integer, the minimum cost to paint all houses
     """
-    ___ minCostII  C):
+    ___ minCostII  C
         __ n.. C o. n.. C[0]:
             r.. 0
 
@@ -30,10 +30,10 @@ c_ Solution:
         dp = [[0] * k ___ _ __ r..(n)]
         prev = curr = 0
 
-        ___ j __ r..(k):
+        ___ j __ r..(k
             dp[curr][j] = C[0][j]
 
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             prev = curr
             curr = 1 - curr
             min1 = min2 = INFINITY
@@ -41,7 +41,7 @@ c_ Solution:
             """
             to find the minimum and second minimum in previous iteration
             """
-            ___ j __ r..(k):
+            ___ j __ r..(k
                 __ dp[prev][j] < min1:
                     min2 = min1
                     min1 = dp[prev][j]
@@ -55,7 +55,7 @@ c_ Solution:
             and then we need to take the color
             with the second minimum in `dp[prev]`
             """
-            ___ j __ r..(k):
+            ___ j __ r..(k
                 dp[curr][j] = C[i][j]
                 __ dp[prev][j] __ min1:
                     dp[curr][j] += min2

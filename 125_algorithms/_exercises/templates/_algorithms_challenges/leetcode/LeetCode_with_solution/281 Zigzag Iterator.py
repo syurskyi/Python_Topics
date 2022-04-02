@@ -4,29 +4,29 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ ZigzagIterator(o..):
-    ___ - , v1, v2):
+c_ ZigzagIterator(o..
+    ___ - , v1, v2
         """
         Initialize your data structure here.
         :type v1: List[int]
         :type v2: List[int]
         """
         mat = [v1, v2]
-        maxa = m..((c, r) ___ r, c __ e..(map(l.... x: l..(x)-1, mat)))
+        maxa = m..((c, r) ___ r, c __ e.. m..(l.... x: l..(x)-1, mat)))
         i = 0
         j = 0
         _reposition()
 
     ___ _reposition
-        w.... i >= l..(mat) o. j >= l..(mat[i]):
+        w.... i >= l..(mat) o. j >= l..(mat[i]
             __ n.. hasNext
                 r..
 
-            ____ i >= l..(mat):
+            ____ i >= l..(mat
                 i = 0
                 j += 1
 
-            ____ j >= l..(mat[i]):
+            ____ j >= l..(mat[i]
                 i += 1
 
     ___ next

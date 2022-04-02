@@ -3,8 +3,8 @@ Created on Feb 22, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ calculate  s):
+c_ Solution(o..
+    ___ calculate  s
         """
         :type s: str
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(o..):
         stack    # list
         sign = 1
         preVal = 0
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i].i..
                 preVal = 0
                 w.... i < l..(s) a.. s[i].i..

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxEnvelopes  envelopes):
+c_ Solution(o..
+  ___ maxEnvelopes  envelopes
     """
     :type envelopes: List[List[int]]
     :rtype: int
@@ -10,7 +10,7 @@ c_ Solution(o..):
       idx = bisect.bisect_right(tails, envelopes[i][1])
       __ idx - 1 >= 0 a.. tails[idx - 1] __ envelopes[i][1]:
         _____
-      __ idx __ l..(tails):
+      __ idx __ l..(tails
         tails.a..(envelopes[i][1])
       ____:
         tails[idx] = envelopes[i][1]

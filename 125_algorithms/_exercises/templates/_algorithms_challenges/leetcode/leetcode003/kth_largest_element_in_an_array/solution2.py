@@ -9,8 +9,8 @@ Note: You may assume k is always valid, 1 <= k <= array's length.
 """
 
 
-c_ Solution(o..):
-    ___ findKthLargest  nums, k):
+c_ Solution(o..
+    ___ findKthLargest  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -31,12 +31,12 @@ c_ Solution(o..):
             ____:
                 right = pivot - 1
 
-    ___ partition  nums, left, right):
+    ___ partition  nums, left, right
         """Partition the array so that larger elements are to the left"""
         pivot = right
         # i is from left to right - 1
         j = left
-        ___ i __ r..(left, right):
+        ___ i __ r..(left, right
             __ nums[i] > nums[pivot]:
                 nums[i], nums[j] = nums[j], nums[i]
                 j += 1

@@ -8,7 +8,7 @@ ___ test_fib_zero
 
 
 ___ test_fib_neg
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         fib(-1)
 
 

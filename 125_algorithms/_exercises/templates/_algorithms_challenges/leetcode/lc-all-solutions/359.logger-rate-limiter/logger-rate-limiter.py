@@ -1,12 +1,12 @@
-c_ Logger(o..):
+c_ Logger(o..
 
-  ___ - ):
+  ___ -
     """
     Initialize your data structure here.
     """
     d    # dict
 
-  ___ shouldPrintMessage  timestamp, message):
+  ___ shouldPrintMessage  timestamp, message
     """
     Returns true if the message should be printed in the given timestamp, otherwise returns false.
     If this method returns false, the message will not be printed.

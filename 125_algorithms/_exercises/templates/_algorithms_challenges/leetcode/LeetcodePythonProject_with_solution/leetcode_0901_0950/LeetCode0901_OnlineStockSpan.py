@@ -1,11 +1,11 @@
-c_ StockSpanner(o..):
+c_ StockSpanner(o..
 
-    ___ - ):
+    ___ -
         prices    # list
         dp    # list
         idx = 0
 
-    ___ next  price):
+    ___ next  price
         """
         :type price: int
         :rtype: int

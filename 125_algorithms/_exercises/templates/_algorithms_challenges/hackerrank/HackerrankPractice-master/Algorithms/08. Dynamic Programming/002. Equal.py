@@ -6,7 +6,7 @@
 target = [0, 1, 2]
 
 
-___ solution(arr):
+___ solution(arr
     min_arr = m..(arr)
     results = [0] * l..(target) # array for results with each target
     ___ item __ arr:
@@ -18,5 +18,5 @@ ___ solution(arr):
 
 ___ t __ r..(i..(input())):
     input()
-    items = l..(map(i.., input().s..()))
+    items = l.. m..(i.., input().s..()))
     print(solution(items))

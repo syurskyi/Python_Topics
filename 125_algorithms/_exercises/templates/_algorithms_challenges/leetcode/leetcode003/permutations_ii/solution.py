@@ -7,8 +7,8 @@ For example,
 [1,1,2], [1,2,1], and [2,1,1].
 """
 
-c_ Solution(o..):
-    ___ permuteUnique  nums):
+c_ Solution(o..
+    ___ permuteUnique  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -16,12 +16,12 @@ c_ Solution(o..):
         d    # dict
         r.. permute(nums, d)
 
-    ___ permute  nums, d):
+    ___ permute  nums, d
         __ n.. nums:
             r.. [[]]
         ____:
             res    # list
-            ___ i, c __ e..(nums):
+            ___ i, c __ e..(nums
                 __ c __ d:
                     _____
                 ____:

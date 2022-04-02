@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isStrobogrammatic  num):
+c_ Solution(o..
+  ___ isStrobogrammatic  num
     """
     :type num: str
     :rtype: bool

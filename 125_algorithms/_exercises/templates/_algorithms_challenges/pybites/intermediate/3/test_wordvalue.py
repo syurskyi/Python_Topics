@@ -19,7 +19,7 @@ ___ test_calc_word_value
 
 
 ___ test_max_word_value
-    test_words = ['bob', 'julian', 'pybites', 'quit', 'barbeque']
+    test_words =  'bob', 'julian', 'pybites', 'quit', 'barbeque'
     ... max_word_value(test_words) __ 'barbeque'
     ... max_word_value(words[20000:21000]) __ 'benzalphenylhydrazone'
 

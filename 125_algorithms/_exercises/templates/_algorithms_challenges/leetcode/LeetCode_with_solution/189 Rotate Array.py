@@ -10,14 +10,14 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ rotate  nums, k):
+    ___ rotate  nums, k
         """
         in place
         """
         n = l..(nums)
         k %= n
         temp = nums[:n-k]
-        ___ i __ x..(n):
+        ___ i __ x..(n
             __ i < k:
                 nums[i] = nums[n-k+i]
             ____:

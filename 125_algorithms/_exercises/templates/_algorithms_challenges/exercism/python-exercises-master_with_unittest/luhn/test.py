@@ -7,7 +7,7 @@ ____ luhn _______ Luhn
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ LuhnTests(unittest.TestCase):
+c_ LuhnTests(unittest.TestCase
     ___ test_single_digit_strings_can_not_be_valid
         assertFalse(Luhn("1").is_valid())
 

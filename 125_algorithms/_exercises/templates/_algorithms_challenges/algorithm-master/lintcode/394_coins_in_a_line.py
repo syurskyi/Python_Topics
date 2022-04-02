@@ -23,7 +23,7 @@ when stones == i - 1 or i - 2
 
 
 c_ Solution:
-    ___ firstWillWin  n):
+    ___ firstWillWin  n
         """
         :type n: int
         :rtype: bool
@@ -36,11 +36,11 @@ c_ Solution:
         dp = [F..] * n
         dp[0] = dp[1] = T..
 
-        ___ i __ r..(2, n):
+        ___ i __ r..(2, n
             __ (
                 dp[i - 1] __ F.. o.
                 dp[i - 2] __ F..
-            ):
+
                 dp[i] = T..
 
         r.. dp[n - 1]

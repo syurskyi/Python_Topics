@@ -3,8 +3,8 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ removeElement  nums, val):
+c_ Solution(o..
+    ___ removeElement  nums, val
         """
         :type nums: List[int]
         :type val: int

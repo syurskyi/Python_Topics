@@ -2,7 +2,7 @@ c_ Animal:
     counter = 10000
     animals    # list
 
-    ___ - , name):
+    ___ - , name
         Animal.counter += 1
         name = name.t..
         animals.a..(s..(self))
@@ -12,7 +12,7 @@ c_ Animal:
         r.. f'{Animal.counter}. {name}'
 
     @classmethod
-    ___ zoo(cls):
+    ___ zoo(cls
         #print(cls.animals)
         r.. '\n'.j..(animal ___ animal __ cls.animals)
 

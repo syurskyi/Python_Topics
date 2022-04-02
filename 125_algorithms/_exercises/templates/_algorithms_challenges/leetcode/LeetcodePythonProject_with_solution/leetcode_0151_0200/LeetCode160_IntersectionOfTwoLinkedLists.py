@@ -4,13 +4,13 @@ Created on May 22, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x, nextNode):
+c_ ListNode(o..
+    ___ - , x, nextNode
         val = x
         next = nextNode
 
-c_ Solution(o..):
-    ___ getIntersectionNode  headA, headB):
+c_ Solution(o..
+    ___ getIntersectionNode  headA, headB
         """
         :type head1, head1: ListNode
         :rtype: ListNode
@@ -31,7 +31,7 @@ c_ Solution(o..):
             headB = headB.next
         r.. N..
     
-    ___ getLength  head):
+    ___ getLength  head
         length = 0
         w.... head:
             head = head.next

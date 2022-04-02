@@ -1,4 +1,4 @@
-___ chatroom_status(users):
+___ chatroom_status(users
     __ l..(users) __ 0:
         r.. "no one online"
     ____ l..(users) __ 1:

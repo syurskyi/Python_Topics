@@ -48,8 +48,8 @@ c_ PyCon:
     lon: f__ = N..
 
 
-    ___ __lt__ other):
-        __ isi..(other,PyCon):
+    ___ __lt__ other
+        __ isi..(other,PyCon
             r.. start_date < other.start_date
 
 
@@ -64,7 +64,7 @@ ___ _get_pycons
     """Helper function that retrieves required PyCon data
        and returns a list of PyCon objects
     """
-    w__ open(pycons_file, "r", encoding="utf-8") __ f:
+    w__ o.. pycons_file, "r", encoding="utf-8") __ f:
         r.. [
             PyCon(
                 pycon["name"],
@@ -78,7 +78,7 @@ ___ _get_pycons
         ]
 
 
-___ _km_distance(origin, destination):
+___ _km_distance(origin, destination
     """ Helper function that retrieves the air distance in kilometers for two pycons """
     lon1, lat1, lon2, lat2 = map(
         radians, [origin.lon, origin.lat, destination.lon, destination.lat]
@@ -91,23 +91,23 @@ ___ _km_distance(origin, destination):
 ___ _extract_city_country_to_lat_lon
         
     
-    w__ open(nominatim_responses,'r') __ f:
+    w__ o.. nominatim_responses _ __ f:
         places = json.load(f)
     
     mapping    # dict
     ___ key,places __ places.i..:
         ___ r __ places:
-            __ r['type'] __ 'city':
-                city,*temp,country = r['display_name'].s..(',')
+            __ r 'type'  __ 'city':
+                city,*temp,country = r 'display_name' .s..(',')
                 city = city.s..
                 country = country.s..
-                mapping[(city,country)] = (r['lat'],r['lon'])
+                mapping[(city,country)] = (r 'lat' ,r 'lon' )
     
     r.. mapping
         
 
 # Your code #
-___ update_pycons_lat_lon(pycons):
+___ update_pycons_lat_lon(pycons
     """
     Update the latitudes and longitudes based on the city and country
     the PyCon takes places. Use requests from the Nominatim API stored in the
@@ -138,7 +138,7 @@ ___ update_pycons_lat_lon(pycons):
 
 
 
-___ create_travel_plan(pycons):
+___ create_travel_plan(pycons
     """
     Create your travel plan to visit all the PyCons.
     Assume it's now the start of 2019!
@@ -162,7 +162,7 @@ ___ create_travel_plan(pycons):
 
 
 
-___ total_travel_distance(journey):
+___ total_travel_distance(journey
     """
     Return the total travel distance of your PyCon journey in kilometers
     rounded to one decimal.

@@ -5,12 +5,12 @@ ____ i.. _______ islice
 ____ countdown _______ countdown
 
 
-@p__.f..
+?p__.f..
 ___ cd
     r.. countdown()
 
 
-___ test_generator_values(cd):
+___ test_generator_values(cd
     actual = l..(islice(cd, 0, 100))
     expected = [100, 99, 98, 97, 96, 95, 94, 93, 92, 91,
                 90, 89, 88, 87, 86, 85, 84, 83, 82, 81,
@@ -25,7 +25,7 @@ ___ test_generator_values(cd):
     ... actual __ expected
 
 
-___ test_going_beyond_one_hundred(cd):
-    w__ p__.r..(StopIteration):
-        ___ _ __ r..(101):
+___ test_going_beyond_one_hundred(cd
+    w__ p__.r..(StopIteration
+        ___ _ __ r..(101
             next(cd)

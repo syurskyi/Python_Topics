@@ -1,4 +1,4 @@
-___ anagrams(word, words):
+___ anagrams(word, words
     r.. [w ___ w __ words __ s..(w) __ s..(word)]
 
-print(anagrams('aabb',['aabb','bbaa','ccaa','baba']))
+print(anagrams('aabb', 'aabb','bbaa','ccaa','baba' ))

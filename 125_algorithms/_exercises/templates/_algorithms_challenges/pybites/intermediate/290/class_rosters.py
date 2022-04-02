@@ -1,13 +1,13 @@
 _______ csv
  
 
-___ class_rosters(input_file):
+___ class_rosters(input_file
     ''' Read the input_file and modify the data
         according to the Bite description.
         Return a list holding one item per student
         per class, correctly formatted.'''
     class_assignments    # list
-    w__ open(input_file) __ csv_file:
+    w__ o.. input_file) __ csv_file:
         csv_reader = csv.reader(csv_file)
         ___ row __ csv_reader:
             row_class_check = [class_d ___ class_d __ row __ class_d != ""]

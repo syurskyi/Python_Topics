@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ spiralOrder  matrix):
+    ___ spiralOrder  matrix
         """
         :type matrix: List[List[int]]
         :rtype: List[int]
@@ -17,7 +17,7 @@ c_ Solution:
         m, n = l..(matrix), l..(matrix[0])
         x = y = turn = 0
 
-        ___ _ __ r..(m * n):
+        ___ _ __ r..(m * n
             ans.a..(matrix[x][y])
             matrix[x][y] = N..
             _x = x + delta[turn][0]

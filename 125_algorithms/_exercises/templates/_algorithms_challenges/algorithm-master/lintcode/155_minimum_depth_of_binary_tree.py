@@ -12,7 +12,7 @@ c_ Solution:
     @param: root: The root of binary tree
     @return: An integer
     """
-    ___ minDepth  root):
+    ___ minDepth  root
         ans = 0
         __ n.. root:
             r.. ans
@@ -40,7 +40,7 @@ c_ Solution:
     @param: root: The root of binary tree
     @return: An integer
     """
-    ___ minDepth  root):
+    ___ minDepth  root
         __ n.. root:
             r.. 0
 

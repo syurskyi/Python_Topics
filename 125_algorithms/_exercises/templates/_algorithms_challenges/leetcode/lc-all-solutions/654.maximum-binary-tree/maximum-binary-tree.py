@@ -5,9 +5,9 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
+c_ Solution(o..
   # recursion
-  ___ _constructMaximumBinaryTree  nums):
+  ___ _constructMaximumBinaryTree  nums
     """
     :type nums: List[int]
     :rtype: TreeNode
@@ -20,7 +20,7 @@ c_ Solution(o..):
       r.. root
 
   # decreasing stack
-  ___ constructMaximumBinaryTree  nums):
+  ___ constructMaximumBinaryTree  nums
     stack    # list
     ___ num __ nums:
       root = TreeNode(num)

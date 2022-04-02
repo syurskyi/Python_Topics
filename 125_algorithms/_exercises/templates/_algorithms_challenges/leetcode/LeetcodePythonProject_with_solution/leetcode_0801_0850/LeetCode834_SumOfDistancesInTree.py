@@ -3,15 +3,15 @@ Created on Jun 10, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ sumOfDistancesInTree  N, edges):
+c_ Solution(o..
+    ___ sumOfDistancesInTree  N, edges
         """
         :type N: int
         :type edges: List[List[int]]
         :rtype: List[int]
         """
         graph    # dict
-        ___ i __ r..(N):
+        ___ i __ r..(N
             graph[i] = s..()
         ___ i, j __ edges:
             graph[i].add(j)
@@ -22,7 +22,7 @@ c_ Solution(o..):
         dfs2(0, s..(), graph, res, count, N)
         r.. res
     
-    ___ dfs  root, visited, graph, res, count):
+    ___ dfs  root, visited, graph, res, count
         visited.add(root)
         ___ i __ graph[root]:
             __ i n.. __ visited:
@@ -31,7 +31,7 @@ c_ Solution(o..):
                 res[root] += res[i]+count[i]
         count[root] += 1
     
-    ___ dfs2  root, visited, graph, res, count, N):
+    ___ dfs2  root, visited, graph, res, count, N
         visited.add(root)
         ___ i __ graph[root]:
             __ i n.. __ visited:
@@ -41,7 +41,7 @@ c_ Solution(o..):
     ##########################################################
     ######################## OWN TLE #########################
     ##########################################################
-    ___ sumOfDistancesInTree_own_TLE  N, edges):
+    ___ sumOfDistancesInTree_own_TLE  N, edges
         """
         :type N: int
         :type edges: List[List[int]]
@@ -49,24 +49,24 @@ c_ Solution(o..):
         """
         n = N
         graph    # dict
-        ___ i __ r..(n):
+        ___ i __ r..(n
             graph[i]    # list
         ___ edge __ edges:
             graph[edge[0]].a..(edge[1])
             graph[edge[1]].a..(edge[0])
         res    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             res.a..(bfs(graph, i))
         r.. res
     
-    ___ bfs  graph, i):
+    ___ bfs  graph, i
         res = 0
         queue = [i]
         visited = s..([i])
         level = 1
         w.... queue:
             size = l..(queue)
-            ___ _ __ r..(size):
+            ___ _ __ r..(size
                 node = queue.pop(0)
                 ___ node0 __ graph[node]:
                     __ node0 n.. __ visited:

@@ -11,13 +11,13 @@ ____:
 total_workers = 3  # Maximum number of threads chosen arbitrarily
 
 
-c_ LetterCounter(o..):
+c_ LetterCounter(o..
 
-    ___ - ):
+    ___ -
         lock = Lock()
         value = Counter()
 
-    ___ add_counter  counter_to_add):
+    ___ add_counter  counter_to_add
         lock.a..
         ___
             value = value + counter_to_add
@@ -25,7 +25,7 @@ c_ LetterCounter(o..):
             lock.release()
 
 
-___ count_letters(queue_of_texts, letter_to_frequency, worker_id):
+___ count_letters(queue_of_texts, letter_to_frequency, worker_id
     w.... n.. queue_of_texts.empty
         sleep(worker_id + 1)
         line_input = queue_of_texts.get()
@@ -38,18 +38,18 @@ ___ count_letters(queue_of_texts, letter_to_frequency, worker_id):
             _____
 
 
-___ calculate(list_of_texts):
+___ calculate(list_of_texts
     queue_of_texts = Queue()
     [queue_of_texts.put(line) ___ line __ list_of_texts]
     letter_to_frequency = LetterCounter()
     threads    # list
-    ___ i __ r..(total_workers):
+    ___ i __ r..(total_workers
         worker = Thread(target=count_letters, args=(queue_of_texts,
                                                     letter_to_frequency, i))
         worker.start()
         threads.a..(worker)
     queue_of_texts.j..()
-    ___ i __ r..(total_workers):
+    ___ i __ r..(total_workers
         queue_of_texts.put(N..)
     ___ t __ threads:
         t.j..()

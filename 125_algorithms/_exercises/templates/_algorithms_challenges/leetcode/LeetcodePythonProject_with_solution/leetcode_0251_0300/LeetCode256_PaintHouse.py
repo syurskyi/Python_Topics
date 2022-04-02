@@ -4,8 +4,8 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minCost  costs):
+c_ Solution(o..
+    ___ minCost  costs
         """
         :type costs: List[List[int]]
         :rtype: int

@@ -4,14 +4,14 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ reorderList  head):
+c_ Solution(o..
+  ___ reorderList  head
     """
     :type head: ListNode
     :rtype: void Do not return anything, modify head in-place instead.
     """
 
-    ___ reverse(root):
+    ___ reverse(root
       pre = N..
       cur = root
       w.... cur:

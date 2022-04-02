@@ -57,7 +57,7 @@ c_ Solution:
         ret = 0
 
         i = 0
-        w.... i < l..(clips):
+        w.... i < l..(clips
             __ clips[i][0] > prev_e:  # gap
                 _____
 

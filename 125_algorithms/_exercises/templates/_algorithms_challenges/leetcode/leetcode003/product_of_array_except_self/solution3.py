@@ -12,8 +12,8 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-c_ Solution(o..):
-    ___ productExceptSelf  nums):
+c_ Solution(o..
+    ___ productExceptSelf  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -24,14 +24,14 @@ c_ Solution(o..):
         left = [1 ___ i __ r..(n)]
         # right[i] is the product to the right of i (nums[i + 1..-1])
         right = [1 ___ i __ r..(n)]
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             # i ranges from 1 to n - 1
             # j ranges from n - 2 to 0
             j = n - 1 - i
             left[i] = left[i - 1] * nums[i - 1]
             right[j] = right[j + 1] * nums[j + 1]
         res = [1 ___ i __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             res[i] = left[i] * right[i]
         r.. res
 

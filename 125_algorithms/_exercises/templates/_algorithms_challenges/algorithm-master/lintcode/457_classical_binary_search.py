@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: An integer
     @return: An integer
     """
-    ___ findPosition  A, target):
+    ___ findPosition  A, target
         __ n.. A:
             r.. -1
 

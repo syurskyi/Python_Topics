@@ -3,7 +3,7 @@ c_ Solution:
     @param: heights: a list of integers
     @return: a integer
     """
-    ___ trapRainWater  heights):
+    ___ trapRainWater  heights
         __ n.. heights:
             r.. 0
         # mx_l: max height for index `l`

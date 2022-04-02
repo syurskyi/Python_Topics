@@ -1,6 +1,6 @@
-c_ TopVotedCandidate(o..):
+c_ TopVotedCandidate(o..
 
-    ___ - , persons, times):
+    ___ - , persons, times
         """
         :type persons: List[int]
         :type times: List[int]
@@ -9,14 +9,14 @@ c_ TopVotedCandidate(o..):
         hashmap    # dict
         maxNum = 0
         maxP = N..
-        ___ p, t __ z..(persons, times):
+        ___ p, t __ z..(persons, times
             hashmap[p] = hashmap.get(p, 0)+1
             __ hashmap[p] >= maxNum:
                 maxP = p
                 maxNum = hashmap[p]
             arr.a..([t, maxP])
 
-    ___ q  t):
+    ___ q  t
         """
         :type t: int
         :rtype: int

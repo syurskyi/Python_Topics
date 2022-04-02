@@ -3,8 +3,8 @@ Created on Sep 10, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ maximumProduct  nums):
+c_ Solution(o..
+    ___ maximumProduct  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -29,7 +29,7 @@ c_ Solution(o..):
             ____ num > l3:
                 l3 = num
         res = f__('-inf')
-        ___ a1, a2, a3 __ (l1, l2, l3), (s1, s2, l1):
+        ___ a1, a2, a3 __ (l1, l2, l3), (s1, s2, l1
             res = m..(res, a1*a2*a3)
         r.. res
     

@@ -16,7 +16,7 @@ See you in the next Bite and keep calm and code in Python!
 """
 words = "Let's see how4 this 1sorts, hope it works 4 this B1te 22 55abc abc55".s.. 
 
-___ sort_words_case_insensitively(words):
+___ sort_words_case_insensitively(words
     """Sort the provided word list ignoring case, and numbers last
        (1995, 19ab = numbers / Happy, happy4you = strings, hence for
         numbers you only need to check the first char of the word)

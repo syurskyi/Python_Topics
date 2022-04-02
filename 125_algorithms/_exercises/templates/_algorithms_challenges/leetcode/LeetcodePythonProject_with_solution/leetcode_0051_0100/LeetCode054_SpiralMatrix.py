@@ -4,8 +4,8 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ spiralOrder  matrix):
+c_ Solution(o..
+    ___ spiralOrder  matrix
         """
         :type matrix: List[List[int]]
         :rtype: List[int]
@@ -20,25 +20,25 @@ c_ Solution(o..):
         
         w.... top <= down a.. left <= right:
             __ top __ down:
-                ___ i __ r..(left, right+1):
+                ___ i __ r..(left, right+1
                     result.a..(matrix[top][i])
                 _____
               
             __ left __ right:
-                ___ i __ r..(top, down+1):
+                ___ i __ r..(top, down+1
                     result.a..(matrix[i][left])
                 _____
                 
-            ___ i __ r..(left, right+1):
+            ___ i __ r..(left, right+1
                 result.a..(matrix[top][i])
             top += 1
-            ___ i __ r..(top, down+1):
+            ___ i __ r..(top, down+1
                 result.a..(matrix[i][right])
             right-=1
-            ___ i __ r..(right, left-1, -1):
+            ___ i __ r..(right, left-1, -1
                 result.a..(matrix[down][i])
             down-=1
-            ___ i __ r..(down, top-1, -1):
+            ___ i __ r..(down, top-1, -1
                 result.a..(matrix[i][left])
             left+=1
         

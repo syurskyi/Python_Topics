@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findDuplicates  nums):
+c_ Solution(o..
+  ___ findDuplicates  nums
     ans    # list
     ___ i __ r..(0, l..(nums)):
       w.... nums[nums[i] - 1] != nums[i]:

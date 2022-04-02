@@ -23,18 +23,18 @@ URL = "https://bites-data.s3.us-east-2.amazonaws.com/NC_009641.txt"
 BASE_ORDER = ["U", "C", "A", "G"]
 
 
-___ _preload_sequences(url=URL):
+___ _preload_sequences(url=URL
     """
     Provided helper function
     Returns coding sequences, one sequence each line
     """
     filename = os.path.j..(os.getenv("TMP", "/tmp"), "NC_009641.txt")
-    __ n.. os.path.isfile(filename):
+    __ n.. os.path.isfile(filename
         urlretrieve(url, filename)
-    w__ open(filename, "r") __ f:
-        r.. f.readlines()
+    w__ o.. filename, "r") __ f:
+        r.. f.r..
 
-___ codon_info(codons, count, total, translation):
+___ codon_info(codons, count, total, translation
     return_str = '|'
     ___ codon __ codons:
         freq = r..(count[codon]/(total/1000), 1)
@@ -44,7 +44,7 @@ ___ codon_info(codons, count, total, translation):
 
 ___ return_codon_usage_table(
     sequences=_preload_sequences(), translation_table_str=TRANSL_TABLE_11
-):
+
     """
     Receives a list of gene sequences and a translation table string
     Returns a string with all bases and their frequencies in a table
@@ -69,11 +69,11 @@ ___ return_codon_usage_table(
     _, Base1 = translation_table_line[2].s..('  = ')
     _, Base2 = translation_table_line[3].s..('  = ')
     _, Base3 = translation_table_line[4].s..('  = ')
-    translation = {''.j..(z[0:3]): z[3] ___ z __
+    translation = {''.j..(z[0:3] z[3] ___ z __
         z..(Base1.r..('T', 'U'), Base2.r..('T', 'U'), Base3.r..('T', 'U'), AAs)}
     translation_list = l..(translation.keys())
-    ___ i __ r..(0, l..(translation_list), 16):
-        ___ j __ r..(i, i+4):
+    ___ i __ r..(0, l..(translation_list), 16
+        ___ j __ r..(i, i+4
             whole_table.a..(codon_info([translation_list[j], translation_list[j+4], translation_list[j+8], translation_list[j+12]],
                             condon_count,
                             s..(condon_count.values()),

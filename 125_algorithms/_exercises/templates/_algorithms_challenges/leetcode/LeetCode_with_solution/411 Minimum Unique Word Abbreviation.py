@@ -4,21 +4,21 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ minAbbreviation  target, dictionary):
+c_ Solution(o..
+    ___ minAbbreviation  target, dictionary
         """
         :type target: str
         :type dictionary: List[str]
         :rtype: str
         """
         ret = (target, l..(target))
-        ___ abbr, abbr_l __ dfs(target):
+        ___ abbr, abbr_l __ dfs(target
             __ validate(dictionary, abbr) a.. ret[1] > abbr_l:
                 ret = (abbr, abbr_l)
 
         r.. ret[0]
 
-    ___ dfs  word):
+    ___ dfs  word
         """
         backtracking, pivoting letter
         :type word: str
@@ -28,25 +28,25 @@ c_ Solution(o..):
             r.. [("", 0)]
 
         ret    # list
-        ___ l __ x..(l..(word)+1):
+        ___ l __ x..(l..(word)+1
             left_num = s..(l) __ l ____ ""
             left_l = 1 __ left_num != "" ____ 0
             left_l += 1 __ l < l..(word) ____ 0
 
-            ___ right, right_l __ dfs(word[l+1:]):
+            ___ right, right_l __ dfs(word[l+1:]
                 cur = left_num + word[l:l+1] + right  # word[l:l+1] possible ""
                 ret.a..((cur, left_l + right_l))
 
         r.. ret
 
-    ___ validate  dictionary, abbr):
+    ___ validate  dictionary, abbr
         ___ w __ dictionary:
-            __ validWordAbbreviation(w, abbr):
+            __ validWordAbbreviation(w, abbr
                 r.. F..
 
         r.. T..
 
-    ___ validWordAbbreviation  word, abbr):
+    ___ validWordAbbreviation  word, abbr
         """
         pointers
         :type word: str
@@ -55,7 +55,7 @@ c_ Solution(o..):
         """
         w = 0
         a = 0
-        w.... w < l..(word) a.. a < l..(abbr):
+        w.... w < l..(word) a.. a < l..(abbr
             __ abbr[a].i.. a.. abbr[a] != '0':
                 e = a
                 w.... e < l..(abbr) a.. abbr[e].i.. e += 1

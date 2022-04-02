@@ -7,8 +7,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ averageOfLevels  root):
+c_ Solution(o..
+  ___ averageOfLevels  root
     """
     :type root: TreeNode
     :rtype: List[float]
@@ -18,7 +18,7 @@ c_ Solution(o..):
     w.... queue:
       s = 0
       n = l..(queue)
-      ___ _ __ r..(n):
+      ___ _ __ r..(n
         top = queue.popleft()
         s += top.val
         __ top.left:

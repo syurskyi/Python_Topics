@@ -7,21 +7,21 @@
 """
 
 
-c_ Solution(o..):
-  ___ _minSteps  n):
+c_ Solution(o..
+  ___ _minSteps  n
     """
     :type n: int
     :rtype: int
     """
     __ n __ 1:
       r.. 0
-    ___ i __ r..(2, i..((n + 1) ** 0.5) + 1):
+    ___ i __ r..(2, i..((n + 1) ** 0.5) + 1
       __ n % i __ 0:
         r.. i + minSteps(n / i)
     r.. n
 
-  ___ minSteps  n):
-    ___ factor(n):
+  ___ minSteps  n
+    ___ factor(n
       d = 2
       w.... d * d <= n:
         w.... n % d __ 0:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ singleNumber  nums):
+    ___ singleNumber  nums
         """
         :type nums: List[int]
         :rtype: int

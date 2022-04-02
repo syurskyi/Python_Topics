@@ -3,7 +3,7 @@ _______ p__
 ____ best_programming_books _______ Book, display_books, load_data
 
 
-@p__.f..(scope="session")
+?p__.f..(scope="session")
 ___ dummy_book
     title = "Python Testing with pytest"
     author = "Okken, Brian"
@@ -13,10 +13,10 @@ ___ dummy_book
     r.. Book(title, author, year, rank, rating)
 
 
-@p__.f..(scope="session")
+?p__.f..(scope="session")
 ___ python_books
     data = load_data()
-    __ isi..(data, l..):
+    __ isi..(data, l..
         r.. data
     r.. l..(data)
 
@@ -26,7 +26,7 @@ ___ test_book_class_incorrectly
         Book()
 
 
-___ test_book_class(dummy_book):
+___ test_book_class(dummy_book
     ... dummy_book.title __ "Python Testing with pytest"
     ... dummy_book.author __ "Okken, Brian"
     ... dummy_book.year __ 2017
@@ -34,14 +34,14 @@ ___ test_book_class(dummy_book):
     ... dummy_book.rating __ 5
 
 
-___ test_book_class_str(dummy_book):
+___ test_book_class_str(dummy_book
     actual = s..(dummy_book)
     expected = ("[001] Python Testing with pytest (2017)"
                 "\n      Okken, Brian 5.0")
     ... actual __ expected
 
 
-___ test_load_data(python_books):
+___ test_load_data(python_books
     ... l..(python_books) __ 36
     ... python_books[0].author __ "Bader, Dan"
     ... python_books[-1].title __ "Python for Tweens and Teens"
@@ -73,16 +73,16 @@ ___ test_load_data(python_books):
         (19, "      James, Thomas 4.65"),
     ],
 )
-___ test_display_books(python_books, index, expected, capfd):
+___ test_display_books(python_books, index, expected, capfd
     display_books(python_books, year=2017)
-    output = ?.r .. 0].splitlines()
+    output = ?.r .. 0].s..
     ... output[index] __ expected
 
 
 ?p__.m__.p.(
     "limit, expected", [(40, 72), (53, 72), (69, 72), (100, 72), (1000, 72)]
 )
-___ test_display_books_plus(python_books, limit, expected, capfd):
+___ test_display_books_plus(python_books, limit, expected, capfd
     display_books(python_books, limit=limit)
-    output = ?.r .. 0].splitlines()
+    output = ?.r .. 0].s..
     ... l..(output) __ expected

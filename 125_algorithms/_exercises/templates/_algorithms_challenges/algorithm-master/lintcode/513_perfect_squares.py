@@ -10,7 +10,7 @@ c_ Solution:
     @param: n: a positive integer
     @return: An integer
     """
-    ___ numSquares  n):
+    ___ numSquares  n
         __ n <= 0:
             r.. 0
 
@@ -21,7 +21,7 @@ c_ Solution:
         dp[0] = 0
         dp[1] = 1
 
-        ___ i __ r..(1, n + 1):
+        ___ i __ r..(1, n + 1
             j = 1
             w.... j * j <= i:
                 dp[i] = m..(dp[i], dp[i - j * j] + 1)

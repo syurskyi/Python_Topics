@@ -2,7 +2,7 @@
 #  Score: 20
 
 
-___ jumping_on_clouds(n, c):
+___ jumping_on_clouds(n, c
     c.a..(0)
     ans = 0
     position = 0
@@ -13,5 +13,5 @@ ___ jumping_on_clouds(n, c):
 
 
 n = i..(input())
-c = l..(map(i.., input().rstrip().s..()))
+c = l.. m..(i.., input().rstrip().s..()))
 print(jumping_on_clouds(n, c))

@@ -1,23 +1,23 @@
-___ hey(stimulus):
+___ hey(stimulus
     stimulus = stimulus.s..
 
-    __ _is_silence(stimulus):
+    __ _is_silence(stimulus
         r.. 'Fine. Be that way!'
-    ____ _is_shouting(stimulus):
+    ____ _is_shouting(stimulus
         r.. 'Whoa, chill out!'
-    ____ _is_question(stimulus):
+    ____ _is_question(stimulus
         r.. 'Sure.'
     ____:
         r.. 'Whatever.'
 
 
-___ _is_silence(stimulus):
+___ _is_silence(stimulus
     r.. stimulus __ ''
 
 
-___ _is_shouting(stimulus):
+___ _is_shouting(stimulus
     r.. stimulus.isupper()
 
 
-___ _is_question(stimulus):
+___ _is_question(stimulus
     r.. stimulus.endswith('?')

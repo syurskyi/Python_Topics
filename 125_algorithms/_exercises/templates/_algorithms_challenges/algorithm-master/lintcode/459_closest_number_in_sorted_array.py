@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: An integer
     @return: an integer
     """
-    ___ closestNumber  A, target):
+    ___ closestNumber  A, target
         __ n.. A o. n.. target:
             r.. -1
 

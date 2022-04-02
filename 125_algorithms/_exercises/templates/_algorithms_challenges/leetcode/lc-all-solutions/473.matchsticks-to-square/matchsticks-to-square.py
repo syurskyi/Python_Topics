@@ -1,8 +1,8 @@
 _______ c..
 
 
-c_ Solution(o..):
-  ___ makesquare  nums):
+c_ Solution(o..
+  ___ makesquare  nums
     """
     :type nums: List[int]
     :rtype: bool
@@ -20,21 +20,21 @@ c_ Solution(o..):
     sticksIdx = s..([i ___ i __ r..(0, l..(nums))])
     nums.s..()
 
-    ___ backpack(nums, subset):
+    ___ backpack(nums, subset
       cands = [nums[k] ___ k __ subset]
       dp = [[F..] * (sideLen + 1) ___ _ __ r..(l..(cands))]
       ___ i __ r..(0, l..(cands)):
         dp[i][0] = T..
       ___ i __ r..(0, l..(cands)):
-        ___ j __ r..(1, sideLen + 1):
+        ___ j __ r..(1, sideLen + 1
           dp[i][j] |= dp[i - 1][j]
           __ j - cands[i] >= 0:
             dp[i][j] |= dp[i - 1][j - cands[i]]
       r.. dp[-1][-1]
 
-    ___ dfs(nums, start, sticksIdx, halfLen, subSum, subsetIdx):
+    ___ dfs(nums, start, sticksIdx, halfLen, subSum, subsetIdx
       __ subSum >= halfLen:
-        __ subSum __ halfLen a.. backpack(nums, subsetIdx) a.. backpack(nums, sticksIdx):
+        __ subSum __ halfLen a.. backpack(nums, subsetIdx) a.. backpack(nums, sticksIdx
           r.. T..
         r.. F..
 
@@ -44,7 +44,7 @@ c_ Solution(o..):
         __ i __ sticksIdx:
           sticksIdx -= {i}
           subsetIdx |= {i}
-          __ dfs(nums, i + 1, sticksIdx, halfLen, subSum + nums[i], subsetIdx):
+          __ dfs(nums, i + 1, sticksIdx, halfLen, subSum + nums[i], subsetIdx
             r.. T..
           subsetIdx -= {i}
           sticksIdx |= {i}

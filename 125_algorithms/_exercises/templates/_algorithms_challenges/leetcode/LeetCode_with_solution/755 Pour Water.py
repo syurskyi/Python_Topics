@@ -128,11 +128,11 @@ c_ Solution:
         Simulation?
         O(V * L)
         """
-        ___ _ __ r..(V):
+        ___ _ __ r..(V
             s = K
             # looking to the left
             optimal = s
-            ___ i __ r..(s-1, -1, -1):
+            ___ i __ r..(s-1, -1, -1
                 __ heights[i] <= heights[i+1]:
                     __ heights[i] < heights[optimal]:
                         optimal = i

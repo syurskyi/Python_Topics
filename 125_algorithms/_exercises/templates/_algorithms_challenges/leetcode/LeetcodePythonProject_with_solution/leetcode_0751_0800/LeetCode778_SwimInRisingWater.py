@@ -3,8 +3,8 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ swimInWater  grid):
+c_ Solution(o..
+    ___ swimInWater  grid
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
             res = m..(res, t)
             __ x __ y __ n-1:
                 r.. res
-            ___ i, j __ (x+1, y), (x, y+1), (x-1, y), (x, y-1):
+            ___ i, j __ (x+1, y), (x, y+1), (x-1, y), (x, y-1
                 __ 0 <= i < n a.. 0 <= j < n a.. (i, j) n.. __ visited:
                     visited.add((i, j))
                     heapq.heappush(pq, (grid[i][j], i, j))

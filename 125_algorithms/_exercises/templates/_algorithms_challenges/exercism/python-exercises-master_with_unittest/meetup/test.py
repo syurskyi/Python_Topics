@@ -12,7 +12,7 @@ ______ ImportError:
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ MeetupTest(unittest.TestCase):
+c_ MeetupTest(unittest.TestCase
     ___ test_monteenth_of_may_2013
         assertEqual(
             meetup_day(2013, 5, 'Monday', 'teenth'), date(2013, 5, 13))

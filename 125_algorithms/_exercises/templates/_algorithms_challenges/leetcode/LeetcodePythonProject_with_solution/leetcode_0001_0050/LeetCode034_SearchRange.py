@@ -3,8 +3,8 @@ Created on Oct 31, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ searchRange  nums, target):
+c_ Solution(o..
+    ___ searchRange  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -31,7 +31,7 @@ c_ Solution(o..):
                 r = mid
             ____:
                 l = mid+1
-        __ r __ l..(nums):
+        __ r __ l..(nums
             r.. [-1, -1]
         r.. res __ res != [f__('inf'), f__('-inf')] ____ [-1, -1]
     

@@ -4,8 +4,8 @@ Follow up for H-Index: What if the citations array is sorted in ascending order?
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ hIndex  A):
+c_ Solution(o..
+    ___ hIndex  A
         """
         Given sorted -> binary search
         From linear search into bin search

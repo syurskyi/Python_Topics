@@ -3,14 +3,14 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ removeDuplicates  nums):
+c_ Solution(o..
+    ___ removeDuplicates  nums
         """
         :type nums: List[int]
         :rtype: int
         """
         j = 0
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             __ i __ 0 o. nums[i-1] != num:
                 nums[j] = num
                 j += 1

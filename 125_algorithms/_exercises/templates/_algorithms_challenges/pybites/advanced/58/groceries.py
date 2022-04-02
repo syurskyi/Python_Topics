@@ -21,18 +21,18 @@ c_ Groceries:
             print _*{product:<30} | {item.price:>3}')
         _print_total(items)
 
-    ___ _print_total  items):
+    ___ _print_total  items
         """Calculate and print total price of cart"""
         total = s..(item.price ___ item __ items)
         print('-' * 36)
         print _*{"Total":<30} | {total:>3}')
 
-    ___ add  new_item):
+    ___ add  new_item
         """Add a new item to cart, exceptions left out for simplicity"""
         _items.a..(new_item)
         show()
 
-    ___ delete  product):
+    ___ delete  product
         """Delete item matching 'product', raises IndexError
            if no item matches"""
         ___ i, item __ e..
@@ -43,7 +43,7 @@ c_ Groceries:
             r.. IndexError _*{product} not in cart')
         show()
 
-    ___ s..  s..):
+    ___ s..  s..
         """Filters items matching insensitive 'contains' search, and passes
            them to show for printing"""
         items = [item ___ item __ self __ s...l..
@@ -58,7 +58,7 @@ c_ Groceries:
         """The len of cart"""
         r.. l..(_items)
 
-    ___ __getitem__  index):
+    ___ __getitem__  index
         """Making the class iterable (cart = Groceries() -> cart[1] etc)
            without this dunder I would get 'TypeError: 'Cart' object does
            not support indexing' when trying to index it"""
@@ -98,20 +98,20 @@ ___ handle_args(args=N.., cart_ N..
         cart = Groceries()
 
     # different crud operations - please complete ...
-    __ args['list'] __ T..:
+    __ args 'list'  __ T..:
         cart.show()
-    ____ args['add']:
-        item,price,craving = args['add']
+    ____ args 'add' :
+        item,price,craving = args 'add'
         price = i..(price)
         craving = eval(craving)
 
         item = Item(item,price,craving)
         cart.add(item)
-    ____ args['delete']:
-        item = args['delete']
+    ____ args 'delete' :
+        item = args 'delete'
         cart.delete(item)
     ____:
-        item = args['search']
+        item = args 'search'
         cart.s..(item)
 
 

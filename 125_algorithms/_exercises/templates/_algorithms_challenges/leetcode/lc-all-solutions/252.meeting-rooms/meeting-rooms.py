@@ -4,8 +4,8 @@
 #         self.start = s
 #         self.end = e
 
-c_ Solution(o..):
-  ___ canAttendMeetings  intervals):
+c_ Solution(o..
+  ___ canAttendMeetings  intervals
     """
     :type intervals: List[Interval]
     :rtype: bool

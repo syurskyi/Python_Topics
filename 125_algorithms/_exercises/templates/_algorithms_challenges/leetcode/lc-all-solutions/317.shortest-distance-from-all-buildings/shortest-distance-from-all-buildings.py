@@ -1,14 +1,14 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ shortestDistance  grid):
+c_ Solution(o..
+  ___ shortestDistance  grid
     """
     :type grid: List[List[int]]
     :rtype: int
     """
 
-    ___ bfs(si, sj, grid, buildNum, hit):
+    ___ bfs(si, sj, grid, buildNum, hit
       dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
       queue = d..([(si, sj, 0)])
       visited = s..([(si, sj)])
@@ -45,7 +45,7 @@ c_ Solution(o..):
     ___ i __ r..(0, l..(grid)):
       ___ j __ r..(0, l..(grid[0])):
         __ grid[i][j] __ 1:
-          __ n.. bfs(i, j, grid, count, hit):
+          __ n.. bfs(i, j, grid, count, hit
             r.. -1
 
     ans = f__("-inf")

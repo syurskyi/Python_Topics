@@ -36,21 +36,21 @@ tree is not more than 1000.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         ret = 0
 
     ___ longestUnivaluePath  root: TreeNode) __ i..:
         find(root)
         r.. ret
 
-    ___ find  node):
+    ___ find  node
         """
         the longest path ended at node
         """
@@ -66,14 +66,14 @@ c_ Solution:
 
 
 c_ Solution_error:
-    ___ - ):
+    ___ -
         ret = 0
 
     ___ longestUnivaluePath  root: TreeNode) __ i..:
         find(root)
         r.. ret
 
-    ___ find  node):
+    ___ find  node
         """
         the longest path ended at node
         """

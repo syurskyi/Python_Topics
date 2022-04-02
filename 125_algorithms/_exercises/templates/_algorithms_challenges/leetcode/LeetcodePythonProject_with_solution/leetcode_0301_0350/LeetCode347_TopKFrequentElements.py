@@ -4,8 +4,8 @@ Created on Mar 21, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ topKFrequent  nums, k):
+c_ Solution(o..
+    ___ topKFrequent  nums, k
         maxCount = 0
         hashmap    # dict
         ___ num __ nums:
@@ -27,7 +27,7 @@ c_ Solution(o..):
         r.. result
         
     
-    ___ topKFrequentHeap  nums, k):
+    ___ topKFrequentHeap  nums, k
         _______ heapq
         hashmap    # dict
         ___ num __ nums:

@@ -3,7 +3,7 @@ _______ unittest
 ____ word_search _______ WordSearch, Point
 
 
-c_ WordSearchTests(unittest.TestCase):
+c_ WordSearchTests(unittest.TestCase
 
     @classmethod
     ___ setUpClass

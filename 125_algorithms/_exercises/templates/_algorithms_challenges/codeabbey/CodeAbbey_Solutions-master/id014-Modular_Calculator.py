@@ -1,4 +1,4 @@
-___ modCalc(num):
+___ modCalc(num
         calc = raw_input()
         w.... calc[:1] != "%":
                 __ calc[:1] __ '+':

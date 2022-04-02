@@ -20,14 +20,14 @@ _______ c..
 
 
 c_ Solution:
-    ___ areSentencesSimilar  words1, words2, pairs):
+    ___ areSentencesSimilar  words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2):
+        __ l..(words1) != l..(words2
             r.. F..
 
         simils = c...defaultdict(s..)

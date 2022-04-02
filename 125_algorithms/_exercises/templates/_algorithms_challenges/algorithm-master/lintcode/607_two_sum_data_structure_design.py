@@ -5,7 +5,7 @@ c_ TwoSum:
     @param: number: An integer
     @return: nothing
     """
-    ___ add  number):
+    ___ add  number
         __ number __ count:
             count[number] += 1
         ____:
@@ -15,7 +15,7 @@ c_ TwoSum:
     @param: value: An integer
     @return: Find if there exists any pair of numbers which sum is equal to the value.
     """
-    ___ find  value):
+    ___ find  value
         ___ num __ count:
             remaining = value - num
             __ remaining n.. __ count:

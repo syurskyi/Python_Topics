@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findPermutation  s):
+c_ Solution(o..
+  ___ findPermutation  s
     """
     :type s: str
     :rtype: List[int]

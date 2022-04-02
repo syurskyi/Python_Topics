@@ -32,19 +32,19 @@ c_ Solution:
         ret, _ = eval(s, 0, [])
         r.. ret
 
-    ___ eval  s, i, stk):
+    ___ eval  s, i, stk
         """
         return the cursor since the cursor advances in recursion
         """
         operand = 0
         prev_op = "+"
-        w.... i < l..(s):
+        w.... i < l..(s
             c = s[i]
             __ c __ " ":
                 p..  # not continue since need trigger i += 1
             ____ c.i..
                 operand = operand * 10 + i..(c)
-            ____ c __ ("+", "-", "*", "/", ")", "\0"):   # delimiter
+            ____ c __ ("+", "-", "*", "/", ")", "\0"   # delimiter
                 __ prev_op __ "+":
                     stk.a..(operand)
                 ____ prev_op __ "-":
@@ -56,10 +56,10 @@ c_ Solution:
                     prev_operand = stk.pop()
                     stk.a..(i..(prev_operand / operand))
 
-                __ c __ ("+", "-", "*", "/"):
+                __ c __ ("+", "-", "*", "/"
                     operand = 0
                     prev_op = c
-                ____ c __ (")", "\0"):
+                ____ c __ (")", "\0"
                     r.. s..(stk), i
             ____ c __ "(":  # "(" is not delimiter
                 operand, i = eval(s, i + 1, [])

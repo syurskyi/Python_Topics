@@ -7,13 +7,13 @@ Return a deep copy of the list.
 __author__ = 'Danyang'
 # Definition for singly-linked list with a random pointer.
 c_ RandomListNode:
-    ___ - , x):
+    ___ - , x
         label = x
         next = N..
         r__ = N..
 
 c_ Solution:
-    ___ copyRandomList  head):
+    ___ copyRandomList  head
         """
         Algorithm:
 

@@ -4,11 +4,11 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ lengthLongestPath  input):
+c_ Solution(o..
+    ___ lengthLongestPath  input
         maxLen = 0
         pathLen = {0:0}
-        ___ line __ input.splitlines
+        ___ line __ input.s..
             name = line.lstrip('\t')
             depth = l..(line)-l..(name)
             __ '.' __ name:

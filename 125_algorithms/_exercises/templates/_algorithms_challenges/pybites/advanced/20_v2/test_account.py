@@ -3,12 +3,12 @@ _______ p__
 ____ account _______ Account
 
 
-@p__.f..()
+?p__.f..()
 ___ account
     r.. Account()
 
 
-___ test_balance(account):
+___ test_balance(account
     ... account.balance __ 0
     account + 10
     ... account.balance __ 10
@@ -16,13 +16,13 @@ ___ test_balance(account):
     ... account.balance __ 5
 
 
-___ test_without_contextman_balance_negative(account):
+___ test_without_contextman_balance_negative(account
     ... account.balance __ 0
     account - 5
     ... account.balance __ -5
 
 
-___ test_with_contextman_performs_rollback(account):
+___ test_with_contextman_performs_rollback(account
     account + 3
     ... account.balance __ 3
     # trigger rollback

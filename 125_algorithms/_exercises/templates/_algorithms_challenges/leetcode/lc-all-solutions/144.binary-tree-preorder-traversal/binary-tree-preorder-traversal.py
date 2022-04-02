@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ preorderTraversal  root):
+c_ Solution(o..
+  ___ preorderTraversal  root
     res, stack    # list, [(1, root)]
     w.... stack:
       p = stack.pop()

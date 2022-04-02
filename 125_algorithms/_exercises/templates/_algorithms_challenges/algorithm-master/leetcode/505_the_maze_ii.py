@@ -2,7 +2,7 @@ c_ Solution:
     """
     BFS
     """
-    ___ shortestDistance  maze, start, destination):
+    ___ shortestDistance  maze, start, destination
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -29,7 +29,7 @@ c_ Solution:
         sx, sy = start
         tx, ty = destination
         queue = [(sx, sy)]
-        distance = {(sx, sy): 0}
+        distance = {(sx, sy 0}
 
         ___ x, y __ queue:
             ___ dx, dy __ ((-1, 0), (1, 0), (0, -1), (0, 1)):
@@ -46,7 +46,7 @@ c_ Solution:
                 _y -= dy
 
                 __ ((_x, _y) __ distance a..
-                    distance[x, y] + _step >= distance[_x, _y]):
+                    distance[x, y] + _step >= distance[_x, _y]
                     _____
 
                 distance[_x, _y] = distance[x, y] + _step
@@ -68,7 +68,7 @@ c_ Solution2:
     """
     Dijkstra
     """
-    ___ shortestDistance  maze, start, destination):
+    ___ shortestDistance  maze, start, destination
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -95,7 +95,7 @@ c_ Solution2:
         sx, sy = start
         tx, ty = destination
         heap = [(sx, sy)]
-        distance = {(sx, sy): 0}
+        distance = {(sx, sy 0}
 
         w.... heap:
             x, y = heapq.heappop(heap)

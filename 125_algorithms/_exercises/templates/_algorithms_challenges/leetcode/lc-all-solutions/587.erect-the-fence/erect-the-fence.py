@@ -4,8 +4,8 @@
 #         self.x = a
 #         self.y = b
 
-c_ Solution(o..):
-  ___ outerTrees  points):
+c_ Solution(o..
+  ___ outerTrees  points
     """
     :type points: List[Point]
     :rtype: List[Point]
@@ -13,7 +13,7 @@ c_ Solution(o..):
     __ l..(points) __ 1:
       r.. points
 
-    ___ direction(p, q, r):
+    ___ direction(p, q, r
       r.. ((p.x - r.x) * (q.y - r.y) - (p.y - r.y) * (q.x - r.x))
 
     points.s..(key=l.... x: (x.x, x.y))
@@ -24,7 +24,7 @@ c_ Solution(o..):
         lower.pop()
       lower.a..(point)
 
-    ___ point __ r..(points):
+    ___ point __ r..(points
       w.... l..(upper) >= 2 a.. direction(upper[-2], upper[-1], point) < 0:
         upper.pop()
       upper.a..(point)

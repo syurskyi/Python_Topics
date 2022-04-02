@@ -2,17 +2,17 @@ c_ Solution:
   # @param {int} n an integer
   # @param {int[][]} edges a list of undirected edges
   # @return {boolean} true if it's a valid tree, or false
-  ___ validTree  n, edges):
+  ___ validTree  n, edges
     # Write your code here
 
-    ___ dfs(root, graph, visited, parent):
+    ___ dfs(root, graph, visited, parent
       visited[root] = 1
-      ___ nbr __ graph.get(root, []):
+      ___ nbr __ graph.get(root, []
         __ nbr __ parent:
           _____
         ____ visited[nbr] != 0:
           r.. F..
-        __ n.. dfs(nbr, graph, visited, root):
+        __ n.. dfs(nbr, graph, visited, root
           r.. F..
       visited[root] = 2
       nodeVisited += 1

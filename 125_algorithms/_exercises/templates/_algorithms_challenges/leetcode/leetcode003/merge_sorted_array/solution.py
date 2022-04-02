@@ -9,8 +9,8 @@ initialized in nums1 and nums2 are m and n respectively.
 """
 
 
-c_ Solution(o..):
-    ___ merge  nums1, m, nums2, n):
+c_ Solution(o..
+    ___ merge  nums1, m, nums2, n
         """
         :type nums1: List[int]
         :type m: int

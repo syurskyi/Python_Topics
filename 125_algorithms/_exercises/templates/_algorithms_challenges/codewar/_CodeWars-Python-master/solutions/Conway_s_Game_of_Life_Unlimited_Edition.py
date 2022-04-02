@@ -6,7 +6,7 @@ http://www.codewars.com/kata/52423db9add6f6fc39000354/train/python
 ____ copy _______ d..
 
 
-___ get_generation(cells, generations):
+___ get_generation(cells, generations
     origin = d..(cells)
     __ generations __ 0:
         r.. origin
@@ -33,10 +33,10 @@ ___ get_generation(cells, generations):
     r.. result
 
 
-___ trim_result(result):
-    w.... is_row_all_empty(result[0]):
+___ trim_result(result
+    w.... is_row_all_empty(result[0]
         result.pop(0)
-    w.... is_row_all_empty(result[-1]):
+    w.... is_row_all_empty(result[-1]
         result.pop()
     start_empty, end_empty = T.., T..
     w.... start_empty o. end_empty:
@@ -52,11 +52,11 @@ ___ trim_result(result):
                 r.pop()
 
 
-___ is_row_all_empty(row):
+___ is_row_all_empty(row
     r.. s..(row) __ 0
 
 
-___ get_living_neighbours(cells, row, col):
+___ get_living_neighbours(cells, row, col
     livings = 0
     ___ r __ [-1, 0, 1]:
         __ 0 <= row + r <= l..(cells) - 1:

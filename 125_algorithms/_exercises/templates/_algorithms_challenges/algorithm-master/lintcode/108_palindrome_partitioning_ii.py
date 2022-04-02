@@ -1,7 +1,7 @@
 c_ Solution:
     # @param S, a string
     # @return an integer
-    ___ minCut  S):
+    ___ minCut  S
         __ n.. S:
             r.. -1
 
@@ -16,29 +16,29 @@ c_ Solution:
         dp = [INFINITY] * (n + 1)
         dp[0] = 0
 
-        ___ end __ r..(1, n + 1):
-            ___ start __ r..(end):
+        ___ end __ r..(1, n + 1
+            ___ start __ r..(end
                 __ (n.. is_palindrome[start][end - 1] o.
-                    dp[start] __ INFINITY):
+                    dp[start] __ INFINITY
                     _____
                 __ dp[start] + 1 < dp[end]:
                     dp[end] = dp[start] + 1
 
         r.. dp[n] - 1
 
-    ___ get_palin_map  S):
+    ___ get_palin_map  S
         n = l..(S)
         is_palindrome = [[F..] * n ___ _ __ r..(n)]
         is_palindrome[0][0] = T..
 
-        ___ end __ r..(1, n):
+        ___ end __ r..(1, n
             is_palindrome[end][end] = T..
 
             start = end - 1
             is_palindrome[start][end] = (S[start] __ S[end])
 
-        ___ start __ r..(n - 1 - 2, -1, -1):
-            ___ end __ r..(start + 2, n):
+        ___ start __ r..(n - 1 - 2, -1, -1
+            ___ end __ r..(start + 2, n
                 __ n.. is_palindrome[start + 1][end - 1]:
                     _____
                 is_palindrome[start][end] = (S[start] __ S[end])

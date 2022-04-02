@@ -1,12 +1,12 @@
-c_ Scale(o..):
+c_ Scale(o..
 
-    ASCENDING_INTERVALS = ['m', 'M', 'A']
-    CHROMATIC_SCALE = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A',
-                       'A#', 'B']
-    FLAT_CHROMATIC_SCALE = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab',
-                            'A', 'Bb', 'B']
-    FLAT_KEYS = ['F', 'Bb', 'Eb', 'Ab', 'Db', 'Gb', 'd', 'g', 'c', 'f', 'bb',
-                 'eb']
+    ASCENDING_INTERVALS =  'm', 'M', 'A'
+    CHROMATIC_SCALE =  'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A',
+                       'A#', 'B'
+    FLAT_CHROMATIC_SCALE =  'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab',
+                            'A', 'Bb', 'B'
+    FLAT_KEYS =  'F', 'Bb', 'Eb', 'Ab', 'Db', 'Gb', 'd', 'g', 'c', 'f', 'bb',
+                 'eb'
 
     ___ - , tonic, scale_name, pattern_ N..
         tonic = tonic.capitalize()
@@ -23,7 +23,7 @@ c_ Scale(o..):
         last_index = 0
         pitches    # list
         scale = _reorder_chromatic_scale()
-        ___ i, interval __ e..(pattern):
+        ___ i, interval __ e..(pattern
             pitches.a..(scale[last_index])
             last_index += ASCENDING_INTERVALS.index(interval) + 1
         __ pitches[0] != scale[last_index % l..(scale)]:

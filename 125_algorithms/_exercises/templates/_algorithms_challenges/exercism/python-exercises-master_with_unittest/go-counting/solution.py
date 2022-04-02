@@ -7,19 +7,19 @@ DIRECTIONS = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
 
 c_ Board:
-    ___ - , board):
+    ___ - , board
         board = board
         width = l..(board[0])
         height = l..(board)
 
-    ___ valid  x, y):
+    ___ valid  x, y
         r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
 
     ___ walk  x, y,
              visited_territory=[],
              visited_coords=[],
-             visited_stones=[]):
-        __ n.. (x, y) __ visited_coords a.. valid(x, y):
+             visited_stones=[]
+        __ n.. (x, y) __ visited_coords a.. valid(x, y
             s = board[y][x]
             __ s __ STONES:
                 __ s n.. __ visited_stones:
@@ -35,8 +35,8 @@ c_ Board:
 
         r.. (visited_territory, visited_stones)
 
-    ___ territory  x, y):
-        __ n.. valid(x, y):
+    ___ territory  x, y
+        __ n.. valid(x, y
             r.. ValueError('invalid coordinate')
         __ board[y][x] __ STONES:
             r.. (NONE, s..())
@@ -52,8 +52,8 @@ c_ Board:
         owners = STONES + [NONE]
         result = d..([(owner, s..()) ___ owner __ owners])
         visited = s..()
-        ___ y __ r..(height):
-            ___ x __ r..(width):
+        ___ y __ r..(height
+            ___ x __ r..(width
                 __ n.. (x, y) __ visited:
                     owner, owned_territories = territory(x, y)
                     result[owner].update(owned_territories)

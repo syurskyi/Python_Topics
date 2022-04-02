@@ -4,7 +4,7 @@ _______ r__
 
 c_ Robot:
 
-    ___ - ):
+    ___ -
         name = generate_name()
 
     ___ reset
@@ -14,8 +14,8 @@ c_ Robot:
         r__.seed()
         r.. random_prefix(2) + random_suffix(3)
 
-    ___ random_prefix  n):
+    ___ random_prefix  n
         r.. ''.j..(r__.sample(s__.a.., n))
 
-    ___ random_suffix  n):
+    ___ random_suffix  n
         r.. ''.j..(r__.sample(s__.d.., n))

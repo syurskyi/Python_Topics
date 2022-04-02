@@ -3,26 +3,26 @@ Created on Mar 27, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ openLock  deadends, target):
+c_ Solution(o..
+    ___ openLock  deadends, target
         """
         :type deadends: List[str]
         :type target: str
         :rtype: int
         """
-        queue = ['0000']
+        queue =  '0000' 
         level = 0
-        visited = s..(['0000'])
+        visited = s..( '0000' )
         deadends = s..(deadends)
         __ '0000' __ deadends:
             r.. -1
         w.... queue:
             n = l..(queue)
-            ___ _ __ r..(n):
+            ___ _ __ r..(n
                 s = queue.pop(0)
                 __ s __ target:
                     r.. level
-                ___ i __ r..(4):
+                ___ i __ r..(4
                     s01 = i..(s[i])+1
                     __ s01 >= 10:
                         s01 -= 10

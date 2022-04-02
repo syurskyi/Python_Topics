@@ -5,7 +5,7 @@ c_ Animal:
     instances = l..()
     animal_sequence = c.. 10001, 1)
 
-    ___ - , name):
+    ___ - , name
         _name = name.capitalize()
         instances.a..(self)
 
@@ -13,7 +13,7 @@ c_ Animal:
         r.. f"{next(Animal.animal_sequence)}. {_name}"
 
     @classmethod
-    ___ zoo(cls):
+    ___ zoo(cls
         r.. "\n".j..([cls_inst.__str__() ___ cls_inst __ cls.instances])
 
 

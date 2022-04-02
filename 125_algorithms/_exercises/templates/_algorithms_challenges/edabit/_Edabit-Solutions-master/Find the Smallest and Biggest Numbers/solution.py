@@ -1,4 +1,4 @@
-___ min_max(nums):
+___ min_max(nums
     nums.s..()
     r.. [nums[0],nums[-1]]
 

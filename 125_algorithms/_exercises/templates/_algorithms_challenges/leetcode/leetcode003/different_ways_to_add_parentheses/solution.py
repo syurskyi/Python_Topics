@@ -23,26 +23,26 @@ Input: "2*3-4*5"
 Output: [-34, -14, -10, -10, 10]
 """
 
-c_ Solution(o..):
-    ___ diffWaysToCompute  input):
+c_ Solution(o..
+    ___ diffWaysToCompute  input
         """
         :type input: str
         :rtype: List[int]
         """
-        operators = s..(['+', '-', '*'])
+        operators = s..( '+', '-', '*' )
         r.. diff_ways(input)
 
-    ___ calculate  a, b, operator):
+    ___ calculate  a, b, operator
         r.. eval('%d %s %d' % (a, operator, b))
 
-    ___ diff_ways  inp):
+    ___ diff_ways  inp
         __ n.. inp:
             r.. []
         ____ inp.i..
             r.. [i..(inp)]
         ____:
             res    # list
-            ___ i, c __ e..(inp):
+            ___ i, c __ e..(inp
                 __ c __ operators:
                     left = diff_ways(inp[:i])
                     right = diff_ways(inp[i + 1:])

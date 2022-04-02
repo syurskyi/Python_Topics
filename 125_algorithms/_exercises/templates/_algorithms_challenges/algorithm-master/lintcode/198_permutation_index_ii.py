@@ -12,7 +12,7 @@ c_ Solution:
     @param: A: An array of integers
     @return: A long integer
     """
-    ___ permutationIndexII  A):
+    ___ permutationIndexII  A
         ans = 1
         __ n.. A:
             r.. ans
@@ -21,12 +21,12 @@ c_ Solution:
         factorial = dup_fact = 1
         dups    # dict
 
-        ___ i __ r..(n - 1, -1, -1):
+        ___ i __ r..(n - 1, -1, -1
             dups[A[i]] = dups.get(A[i], 0) + 1
             dup_fact *= dups[A[i]]
 
             cnt = 0
-            ___ j __ r..(i + 1, n):
+            ___ j __ r..(i + 1, n
                 __ A[i] > A[j]:
                     cnt += 1
 

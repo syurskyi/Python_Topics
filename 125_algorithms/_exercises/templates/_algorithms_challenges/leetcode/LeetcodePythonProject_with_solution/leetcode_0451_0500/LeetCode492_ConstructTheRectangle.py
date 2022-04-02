@@ -4,8 +4,8 @@ Created on May 8, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ constructRectangle  area):
+c_ Solution(o..
+    ___ constructRectangle  area
         """
         :type area: int
         :rtype: List[int]

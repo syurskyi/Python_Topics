@@ -4,7 +4,7 @@ _______ unittest
 ____ ledger _______ format_entries, create_entry
 
 
-c_ LedgerTest(unittest.TestCase):
+c_ LedgerTest(unittest.TestCase
     maxDiff = 5000
 
     ___ test_empty_ledger

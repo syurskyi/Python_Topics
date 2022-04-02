@@ -18,13 +18,13 @@ Return the sum = 12 + 13 = 25.
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ sumNumbers  root):
+    ___ sumNumbers  root
         """
         :param root: TreeNode
         :return: Integer
@@ -34,7 +34,7 @@ c_ Solution:
         result = [i..(element) ___ element __ result]
         r.. s..(result)
 
-    ___ dfs  root, cur, result):
+    ___ dfs  root, cur, result
         """
         dfs, using string as cur (kind of collector).
         :param root: TreeNode
@@ -55,7 +55,7 @@ c_ Solution:
             dfs(root.right, cur, result)
 
 
-    ___ dfs_error  root, cur, result):
+    ___ dfs_error  root, cur, result
         """
         Using list as cur has some reference issues
         :param root: TreeNode

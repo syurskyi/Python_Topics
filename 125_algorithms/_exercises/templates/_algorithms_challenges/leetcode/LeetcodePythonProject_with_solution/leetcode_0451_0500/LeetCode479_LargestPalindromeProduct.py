@@ -3,8 +3,8 @@ Created on Nov 19, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ largestPalindrome  n):
+c_ Solution(o..
+    ___ largestPalindrome  n
         """
         :type n: int
         :rtype: int
@@ -18,7 +18,7 @@ c_ Solution(o..):
         palindrome = 0
         w.... n.. palindromeFound:
             palindrome = createPalindrome(firstHalf)
-            ___ i __ r..(upperBound, lowerBound, -1):
+            ___ i __ r..(upperBound, lowerBound, -1
                 __ palindrome//i > maxNum o. i*i < palindrome:
                     _____
                 __ palindrome % i __ 0:
@@ -27,7 +27,7 @@ c_ Solution(o..):
             firstHalf -= 1
         r.. i..(palindrome%1337)
     
-    ___ createPalindrome  num):
+    ___ createPalindrome  num
         s = s..(num)+s..(num)[::-1]
         r.. i..(s)
     

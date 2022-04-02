@@ -3,14 +3,14 @@ Created on May 31, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ isScramble  s1, s2):
+c_ Solution(o..
+    ___ isScramble  s1, s2
         """
         :type s1: str
         :type s2: str
         :rtype: bool
         """
-        __ l..(s1) != l..(s2):
+        __ l..(s1) != l..(s2
             r.. F..
         __ l..(s1) __ 0 o. s1 __ s2:
             r.. T..
@@ -27,8 +27,8 @@ c_ Solution(o..):
             s22 = s2[i:l..(s2)]
             s23 = s2[0:l..(s2)-i]
             s24 = s2[l..(s2)-i:l..(s2)]
-            __ isScramble(s11, s21) a.. isScramble(s12, s22):
+            __ isScramble(s11, s21) a.. isScramble(s12, s22
                 r.. T..
-            __ isScramble(s11, s24) a.. isScramble(s12, s23):
+            __ isScramble(s11, s24) a.. isScramble(s12, s23
                 r.. T..
         r.. F..

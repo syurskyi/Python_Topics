@@ -9,14 +9,14 @@ __author__ = 'Danyang'
 
 
 # Definition for an interval.
-c_ Interval(o..):
-    ___ - , s=0, e=0):
+c_ Interval(o..
+    ___ - , s=0, e=0
         start = s
         end = e
 
 
-c_ Solution(o..):
-    ___ merge  itvls):
+c_ Solution(o..
+    ___ merge  itvls
         """
         scanning. No algorithm
         math
@@ -37,7 +37,7 @@ c_ Solution(o..):
 
         r.. ret
 
-    ___ merge_error  itvls):
+    ___ merge_error  itvls
         """
         scanning. No algorithm
         math

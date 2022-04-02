@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findPairs  nums, k):
+c_ Solution(o..
+  ___ findPairs  nums, k
     """
     :type nums: List[int]
     :type k: int
@@ -10,7 +10,7 @@ c_ Solution(o..):
     ans = 0
     nums.s..()
     start, end = 0, 1
-    w.... start < l..(nums) a.. end < l..(nums):
+    w.... start < l..(nums) a.. end < l..(nums
       __ start > 0 a.. nums[start - 1] __ nums[start]:
         start += 1
         _____

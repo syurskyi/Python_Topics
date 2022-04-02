@@ -41,14 +41,14 @@ c_ Solution:
         """
         n = l..(A)
         prefix_sum = [0 ___ _ __ r..(n+1)]
-        ___ i __ r..(1, n+1):
+        ___ i __ r..(1, n+1
             prefix_sum[i] = prefix_sum[i-1] + A[i-1]
 
         F    # dict
         dfs(A, n, prefix_sum, F, K)
         r.. F[n, K]
 
-    ___ dfs  A, l, prefix_sum, F, k):
+    ___ dfs  A, l, prefix_sum, F, k
         """
         dfs search divide
         make A[:l] k groups
@@ -62,7 +62,7 @@ c_ Solution:
             ____:
                 n = l..(A)
                 ret = -f__('inf')
-                ___ j __ r..(l-1, -1, -1):
+                ___ j __ r..(l-1, -1, -1
                     trail = (prefix_sum[l] - prefix_sum[j]) / (l - j)
                     ret = m..(
                         ret,
@@ -73,7 +73,7 @@ c_ Solution:
 
         r.. F[l, k]
 
-    ___ dfs_error  A, i, prefix_sum, F, k):
+    ___ dfs_error  A, i, prefix_sum, F, k
         """
         inconvenient
 

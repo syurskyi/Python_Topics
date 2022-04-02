@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ decodeString  s):
+c_ Solution(o..
+  ___ decodeString  s
     """
     :type s: str
     :rtype: str

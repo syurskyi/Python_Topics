@@ -6,7 +6,7 @@ ____ wc _______ wc
 
 lines = [b'Hello world',
          b'Keep calm and code in Python',
-         b'Have a nice weekend']
+         b'Have a nice weekend'
 py_file = 'https://bites-data.s3.us-east-2.amazonaws.com/driving.py'
 
 
@@ -15,9 +15,9 @@ py_file = 'https://bites-data.s3.us-east-2.amazonaws.com/driving.py'
     (b'\n'.j..(lines[:2]), '2 8 40'),
     (b'\n'.j..(lines), '3 12 60'),
 ])
-___ test_wc(some_text, expected, tmp_path):
+___ test_wc(some_text, expected, tmp_path
     f = tmp_path / "some_file.txt"
-    f.write_bytes(some_text)
+    f.w..(some_text)
     output = wc(f.resolve())
     print(output)
     # replace tabs / multiple spaces by single space
@@ -27,7 +27,7 @@ ___ test_wc(some_text, expected, tmp_path):
     ... f.name __ output
 
 
-___ test_wc_on_real_py_file(tmp_path):
+___ test_wc_on_real_py_file(tmp_path
     f = tmp_path / "driving.py"
     urlretrieve(py_file, f)
     output = wc(f.resolve())

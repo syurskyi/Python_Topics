@@ -5,15 +5,15 @@ https://leetcode.com/problems/closest-binary-search-tree-value-ii/
 __author__ = 'Daniel'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ closestKValues  root, target, k):
+c_ Solution(o..
+    ___ closestKValues  root, target, k
         """
         consider the predecessors and successors of the closest node to the target
         Like merge in the merge sort, compare and pick the closest one to the target and put it to the result list
@@ -31,7 +31,7 @@ c_ Solution(o..):
         successors(root, target, suc)
         r.. merge(target, k, pre, suc)
 
-    ___ predecessors  root, target, stk):
+    ___ predecessors  root, target, stk
         __ n.. root:
             r..
 
@@ -40,7 +40,7 @@ c_ Solution(o..):
             stk.a..(root.val)
             predecessors(root.right, target, stk)
 
-    ___ successors  root, target, stk):
+    ___ successors  root, target, stk
         __ n.. root:
             r..
 
@@ -49,14 +49,14 @@ c_ Solution(o..):
             stk.a..(root.val)
             successors(root.left, target, stk)
 
-    ___ merge  target, k, pre, suc):
+    ___ merge  target, k, pre, suc
         ret    # list
         w.... l..(ret) < k:
             __ n.. pre:
                 ret.a..(suc.pop())
             ____ n.. suc:
                 ret.a..(pre.pop())
-            ____ abs(pre[-1] - target) < abs(suc[-1] - target):
+            ____ abs(pre[-1] - target) < abs(suc[-1] - target
                 ret.a..(pre.pop())
             ____:
                 ret.a..(suc.pop())

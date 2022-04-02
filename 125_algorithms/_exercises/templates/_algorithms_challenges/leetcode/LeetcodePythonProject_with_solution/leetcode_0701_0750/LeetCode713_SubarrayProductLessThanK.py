@@ -3,8 +3,8 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ numSubarrayProductLessThanK  nums, k):
+c_ Solution(o..
+    ___ numSubarrayProductLessThanK  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -14,7 +14,7 @@ c_ Solution(o..):
         prod = 1
         left = 0
         count = 0
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             prod *= num
             w.... left < i+1 a.. prod >= k:
                 prod //= nums[left]

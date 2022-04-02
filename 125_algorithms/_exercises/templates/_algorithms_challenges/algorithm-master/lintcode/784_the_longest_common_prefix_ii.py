@@ -4,7 +4,7 @@ c_ Solution:
     @param target: the target string
     @return: The ans
     """
-    ___ theLongestCommonPrefix  D, target):
+    ___ theLongestCommonPrefix  D, target
         ans = 0
 
         ___ word __ D:

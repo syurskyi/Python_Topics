@@ -20,7 +20,7 @@ ___ slice_and_dice(text: s.. = text) __ l..:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
     results    # list
-    ___ line __ text.s...splitlines
+    ___ line __ text.s...s..
         line = line.l..
 
         __ line[0] n.. __ ascii_lowercase:

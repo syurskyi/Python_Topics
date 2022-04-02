@@ -3,8 +3,8 @@ Created on Oct 22, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ possibleBipartition  N, dislikes):
+c_ Solution(o..
+    ___ possibleBipartition  N, dislikes
         """
         :type N: int
         :type dislikes: List[List[int]]
@@ -15,29 +15,29 @@ c_ Solution(o..):
             graph[d[0]-1][d[1]-1] = T..
             graph[d[1]-1][d[0]-1] = T..
         group = [0]*N
-        ___ i __ r..(N):
-            __ group[i] __ 0 a.. n.. dfs(graph, group, i, 1, N):
+        ___ i __ r..(N
+            __ group[i] __ 0 a.. n.. dfs(graph, group, i, 1, N
                 r.. F..
         r.. T..
     
-    ___ dfs  graph, group, idx, g, N):
+    ___ dfs  graph, group, idx, g, N
         group[idx] = g
-        ___ i __ r..(N):
+        ___ i __ r..(N
             __ graph[idx][i] __ 1:
                 __ group[i] __ g:
                     r.. F..
-                __ group[i] __ 0 a.. n.. dfs(graph, group, i, -g, N):
+                __ group[i] __ 0 a.. n.. dfs(graph, group, i, -g, N
                     r.. F..
         r.. T..
     
-    ___ possibleBipartition_own_TLE  N, dislikes):
+    ___ possibleBipartition_own_TLE  N, dislikes
         """
         :type N: int
         :type dislikes: List[List[int]]
         :rtype: bool
         """
         hashmap    # dict
-        ___ num __ r..(1, N+1):
+        ___ num __ r..(1, N+1
             hashmap[num] = s..()
         ___ d __ dislikes:
             hashmap[d[0]].add(d[1])
@@ -45,7 +45,7 @@ c_ Solution(o..):
         g0, g1 = [1], []
         r.. dfs2(g0, g1, hashmap, 2, N)
     
-    ___ dfs2  g0, g1, hashmap, n, N):
+    ___ dfs2  g0, g1, hashmap, n, N
         __ n > N:
             r.. T..
         dislike0, dislike1 = F.., F..

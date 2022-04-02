@@ -3,8 +3,8 @@ Created on Mar 30, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ intersectionSizeTwo  intervals):
+c_ Solution(o..
+    ___ intersectionSizeTwo  intervals
         """
         :type intervals: List[List[int]]
         :rtype: int
@@ -17,13 +17,13 @@ c_ Solution(o..):
             stack.a..(interval)
         n = l..(stack)
         a = [[0, 0] ___ _ __ r..(n)]
-        ___ i __ r..(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1
             a[i][0] = stack[-1][0]
             a[i][1] = stack.pop()[1]
         res = 2
         p1 = a[0][1]-1
         p2 = a[0][1]
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             bo1 = p1 >= a[i][0] a.. p1 <= a[i][1]
             bo2 = p2 >= a[i][0] a.. p2 <= a[i][1]
             __ bo1 a.. bo2:

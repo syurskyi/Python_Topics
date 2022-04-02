@@ -17,7 +17,7 @@ A solution set is:
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ combinationSum2  candidates, target):
+    ___ combinationSum2  candidates, target
         """
         dfs
         :param candidates: a list of integers
@@ -29,7 +29,7 @@ c_ Solution:
         get_combination_sum(candidates, [], target, result)
         r.. result
 
-    ___ get_combination_sum  candidates, cur, target, result):
+    ___ get_combination_sum  candidates, cur, target, result
         """
         dfs with post-order jump
         :param candidates: a list of integers
@@ -49,7 +49,7 @@ c_ Solution:
 
         # consider [1, 1, 1, 6], target 8
         ind = 0
-        w.... ind<l..(candidates):
+        w.... ind<l..(candidates
             get_combination_sum(candidates[ind+1:], cur+[candidates[ind]], target, result)
             # post-order jump
             w.... ind+1<l..(candidates) a.. candidates[ind]__candidates[ind+1]: ind+= 1  # jump to avoid duplicate

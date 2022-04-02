@@ -23,8 +23,8 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ kthSmallest  matrix, k):
+c_ Solution(o..
+    ___ kthSmallest  matrix, k
         """
         Heap of list
         :type matrix: List[List[int]]
@@ -33,12 +33,12 @@ c_ Solution(o..):
         """
         m, n = l..(matrix), l..(matrix[0])
 
-        c_ Node(o..):
-            ___ - , i, j):
+        c_ Node(o..
+            ___ - , i, j
                 i = i
                 j = j
 
-            ___ __cmp__  other):
+            ___ __cmp__  other
                 r.. matrix[i][j] - matrix[other.i][other.j]
 
             ___ hasnext
@@ -51,18 +51,18 @@ c_ Solution(o..):
                 r.. StopIteration
 
         h    # list
-        ___ i __ x..(m):
+        ___ i __ x..(m
             heapq.heappush(h, Node(i, 0))
 
         ret = N..
-        ___ _ __ x..(k):
+        ___ _ __ x..(k
             ret = heapq.heappop(h)
             __ ret.hasnext
                 heapq.heappush(h, ret.next())
 
         r.. matrix[ret.i][ret.j]
 
-    ___ kthSmallestError  matrix, k):
+    ___ kthSmallestError  matrix, k
         """
         :type matrix: List[List[int]]
         :type k: int

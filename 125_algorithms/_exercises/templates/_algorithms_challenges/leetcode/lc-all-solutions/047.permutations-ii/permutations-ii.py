@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ permuteUnique  nums):
+c_ Solution(o..
+  ___ permuteUnique  nums
     """
     :type nums: List[int]
     :rtype: List[List[int]]
@@ -7,8 +7,8 @@ c_ Solution(o..):
     res    # list
     nums.s..()
 
-    ___ dfs(nums, res, path, visited):
-      __ l..(path) __ l..(nums):
+    ___ dfs(nums, res, path, visited
+      __ l..(path) __ l..(nums
         res.a..(path + [])
         r..
 

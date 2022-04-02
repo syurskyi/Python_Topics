@@ -3,8 +3,8 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ subdomainVisits  cpdomains):
+c_ Solution(o..
+    ___ subdomainVisits  cpdomains
         """
         :type cpdomains: List[str]
         :rtype: List[str]
@@ -14,7 +14,7 @@ c_ Solution(o..):
             cnt, s = s.s..(' ')
             cnt = i..(cnt)
             arr = s.s..('.')[::-1]
-            ___ i __ r..(1, l..(arr)+1):
+            ___ i __ r..(1, l..(arr)+1
                 s0 = '.'.j..(arr[:i][::-1])
                 hashmap[s0] = hashmap.get(s0, 0)+cnt
         res    # list

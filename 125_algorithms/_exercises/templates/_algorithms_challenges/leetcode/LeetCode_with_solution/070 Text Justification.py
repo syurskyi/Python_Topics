@@ -32,7 +32,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ fullJustify  words, L):
+    ___ fullJustify  words, L
         """
 
         :param words: a list of str
@@ -43,14 +43,14 @@ c_ Solution:
         break_line(words, L, result)
         r.. distribute_space(L, result)
 
-    ___ break_line  words, L, result):
+    ___ break_line  words, L, result
         __ n.. words:
             r..
 
         cur_length = -1
         lst    # list
         i = 0
-        w.... i<l..(words):
+        w.... i<l..(words
             word = words[i]
             cur_length += 1 # space in left justified
             cur_length += l..(word)
@@ -62,9 +62,9 @@ c_ Solution:
         break_line(words[i:], L, result)
 
 
-    ___ distribute_space  L, result):
+    ___ distribute_space  L, result
         new_result    # list
-        ___ ind, line __ e..(result):
+        ___ ind, line __ e..(result
             word_cnt = l..(line)
             str_builder    # list
             space_cnt = L-s..(l..(word) ___ word __ line)

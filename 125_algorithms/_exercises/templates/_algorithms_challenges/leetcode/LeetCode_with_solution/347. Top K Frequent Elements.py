@@ -14,17 +14,17 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Counter(o..):
-    ___ - , val, cnt):
+c_ Counter(o..
+    ___ - , val, cnt
         val = val
         cnt = cnt
 
-    ___ __cmp__  other):
+    ___ __cmp__  other
         r.. cnt - other.cnt
 
 
-c_ Solution(o..):
-    ___ topKFrequent  nums, K):
+c_ Solution(o..
+    ___ topKFrequent  nums, K
         """
         Count and Maintain a heap with size k -> O(n lg k)
         Since python heapq does not support cmp, need to wrap data in a struct

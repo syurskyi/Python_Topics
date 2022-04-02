@@ -5,7 +5,7 @@ ___ get_username
     r.. username
 
 
-___ print_username(username):
+___ print_username(username
     # Check for truthiness and print the username
     # Print the alternative text if there is no username
     __ username __ T..:

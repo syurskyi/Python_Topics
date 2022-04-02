@@ -38,9 +38,9 @@ c_ Solution:
         m, n = l..(A), l..(A[0])
         ret = 0
         ret += (1 << (n-1)) * m  # all rows with MSB being 1
-        ___ j __ r..(1, n):
+        ___ j __ r..(1, n
             cnt = 0
-            ___ i __ r..(m):
+            ___ i __ r..(m
                 __ A[i][j] __ A[i][0]:
                     cnt += 1  #  number of 1's
 

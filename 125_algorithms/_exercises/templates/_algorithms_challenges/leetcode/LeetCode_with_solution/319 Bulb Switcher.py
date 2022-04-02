@@ -19,8 +19,8 @@ _______ math
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ bulbSwitch  n):
+c_ Solution(o..
+    ___ bulbSwitch  n
         """
         Only bulbs with index being a perfect square number toggled odd number of times
         Brainteaser

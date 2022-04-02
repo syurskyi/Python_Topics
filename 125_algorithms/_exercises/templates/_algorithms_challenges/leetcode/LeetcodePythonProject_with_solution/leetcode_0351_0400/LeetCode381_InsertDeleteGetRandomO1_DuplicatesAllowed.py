@@ -4,12 +4,12 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ RandomizedCollection(o..):
-    ___ - ):
+c_ RandomizedCollection(o..
+    ___ -
         vals    # list
         pos    # dict
     
-    ___ insert  val):
+    ___ insert  val
         vals.a..(val)
         __ val __ pos:
             pos[val].add(l..(vals)-1)
@@ -18,7 +18,7 @@ c_ RandomizedCollection(o..):
             pos[val] = s..([l..(vals)-1])
             r.. T..
     
-    ___ remove  val):
+    ___ remove  val
         __ val __ pos:
             lastVal = vals[-1]
             ind = pos[val].pop()

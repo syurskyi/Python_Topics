@@ -4,8 +4,8 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ reverseWords  s):
+c_ Solution(o..
+    ___ reverseWords  s
         """
         in-place without allocating extra space
 
@@ -14,7 +14,7 @@ c_ Solution(o..):
         """
         reverse(s, 0, l..(s))
         i = 0
-        w.... i < l..(s):
+        w.... i < l..(s
             j = i+1
             w.... j < l..(s) a.. s[j] != " ":
                 j += 1
@@ -22,7 +22,7 @@ c_ Solution(o..):
             reverse(s, i, j)
             i = j+1
 
-    ___ reverse  s, start, end):
+    ___ reverse  s, start, end
         i = start
         j = end
         w.... i < j-1:

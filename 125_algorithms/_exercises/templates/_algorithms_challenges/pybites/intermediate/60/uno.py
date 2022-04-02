@@ -11,19 +11,19 @@ ___ create_uno_deck
        (for cards w/o suit use None in the namedtuple)"""
     
 
-    numbers = l..(r..(0,10)) + ['Draw Two','Skip','Reverse']
+    numbers = l..(r..(0,10)) +  'Draw Two','Skip','Reverse' 
 
     cards = [UnoCard(suit,number) ___ suit __ SUITS ___ number __ numbers ___ i __ r..(2 __ number != 0 ____ 1)]
 
     print(l..(cards))
 
 
-    special_cards = ['Wild','Wild Draw Four']
+    special_cards =  'Wild','Wild Draw Four' 
 
 
 
     ___ special_card __ special_cards:
-        ___ _ __ r..(4):
+        ___ _ __ r..(4
             uno_card = UnoCard(N..,special_card)
             cards.a..(uno_card)
 

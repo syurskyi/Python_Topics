@@ -1,9 +1,9 @@
 c_ RecordScore
     """Class to track a game's maximum score"""
-    ___ - ):
+    ___ -
         m.. = N..
 
-    ___ __call__  new):
+    ___ __call__  new
         __ m.. __ N..
             m.. = new
         ____:

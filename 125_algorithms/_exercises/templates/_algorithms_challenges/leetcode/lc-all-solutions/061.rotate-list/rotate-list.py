@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ rotateRight  head, k):
+c_ Solution(o..
+  ___ rotateRight  head, k
     """
     :type head: ListNode
     :type k: int

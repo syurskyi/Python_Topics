@@ -1,7 +1,7 @@
 ____ operator _______ add, sub, mul, truediv
 
 
-___ simple_calculator(calculation):
+___ simple_calculator(calculation
     """Receives 'calculation' and returns the calculated result,
     """
     funcs = {'+': add, '-': sub, '*': mul, '/': truediv}

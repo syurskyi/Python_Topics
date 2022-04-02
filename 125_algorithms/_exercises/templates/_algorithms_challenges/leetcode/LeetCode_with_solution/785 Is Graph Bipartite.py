@@ -55,20 +55,20 @@ c_ Solution:
         ___ k __ r..(l..(G)):
             __ k n.. __ color:
                 color[k] = 0
-                __ n.. dfs(G, k, color):
+                __ n.. dfs(G, k, color
                     r.. F..
             # if colored, don't vist
 
         r.. T..
 
-    ___ dfs  G, u, color):
+    ___ dfs  G, u, color
         ___ nbr __ G[u]:
             __ nbr __ color:
                 __ color[nbr] __ color[u]:
                     r.. F..
             ____:
                 color[nbr] = 1 - color[u]  # can be (0, 1) or (-1, 1)
-                __ n.. dfs(G, nbr, color):
+                __ n.. dfs(G, nbr, color
                     r.. F..
 
         r.. T..
@@ -81,12 +81,12 @@ c_ SolutionError:
         visited = defaultdict(b..)
         ___ k __ r..(l..(G)):
             __ n.. visited[k]:
-                __ n.. dfs(G, visited, k, A, B, T..):
+                __ n.. dfs(G, visited, k, A, B, T..
                     r.. F..
 
         r.. T..
 
-    ___ dfs  G, visited, u, A, B, is_A):
+    ___ dfs  G, visited, u, A, B, is_A
         visited[u] = T..
         __ is_A:
             A.add(u)
@@ -97,7 +97,7 @@ c_ SolutionError:
             __ nbr __ A __ is_A ____ B:
                 r.. F..
             __ n.. visited[nbr]:
-                __ n.. dfs(G, visited, nbr, A, B, F..):
+                __ n.. dfs(G, visited, nbr, A, B, F..
                     r.. F..
 
         r.. T..

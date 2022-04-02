@@ -5,14 +5,14 @@ Created on Oct 29, 2017
 '''
 _______ bisect
 
-c_ RangeModule(o..):
+c_ RangeModule(o..
 
-    ___ - ):
+    ___ -
         X = [0, 10**9]
         track = [F..]*2
     
-    ___ addRangeHelper  left, right, track=T..):
-        ___ index(x):
+    ___ addRangeHelper  left, right, track=T..
+        ___ index(x
             i = bisect.bisect_left(X, x)
             __ X[i] != x:
                 X.insert(i, x)
@@ -23,7 +23,7 @@ c_ RangeModule(o..):
         X[i:j] = [left]
         track[i:j] = [track]
 
-    ___ addRange  left, right):
+    ___ addRange  left, right
         """
         :type left: int
         :type right: int
@@ -31,7 +31,7 @@ c_ RangeModule(o..):
         """
         addRangeHelper(left, right, T..)
 
-    ___ queryRange  left, right):
+    ___ queryRange  left, right
         """
         :type left: int
         :type right: int
@@ -41,7 +41,7 @@ c_ RangeModule(o..):
         j = bisect.bisect_left(X, right)
         r.. a..(track[i:j])
 
-    ___ removeRange  left, right):
+    ___ removeRange  left, right
         """
         :type left: int
         :type right: int
@@ -49,16 +49,16 @@ c_ RangeModule(o..):
         """
         addRangeHelper(left, right, F..)
 
-c_ Interval(o..):
-    ___ - , left, right):
+c_ Interval(o..
+    ___ - , left, right
         left = left
         right = right
 
-c_ RangeModule_own(o..):
-    ___ - ):
+c_ RangeModule_own(o..
+    ___ -
         intervals    # list
 
-    ___ addRange  left, right):
+    ___ addRange  left, right
         """
         :type left: int
         :type right: int
@@ -78,7 +78,7 @@ c_ RangeModule_own(o..):
         res.a..(newInterval)
         intervals = res
 
-    ___ queryRange  left, right):
+    ___ queryRange  left, right
         """
         :type left: int
         :type right: int
@@ -97,7 +97,7 @@ c_ RangeModule_own(o..):
                     intervals[mid].right >= newInterval.right
         r.. F..
 
-    ___ removeRange  left, right):
+    ___ removeRange  left, right
         """
         :type left: int
         :type right: int

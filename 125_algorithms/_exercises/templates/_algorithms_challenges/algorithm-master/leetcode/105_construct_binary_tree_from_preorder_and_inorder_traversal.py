@@ -6,8 +6,8 @@
 #         self.right = None
 
 
-c_ Solution(o..):
-    ___ buildTree  P, I):
+c_ Solution(o..
+    ___ buildTree  P, I
         """
         :type P: List[int]
         :type I: List[int]

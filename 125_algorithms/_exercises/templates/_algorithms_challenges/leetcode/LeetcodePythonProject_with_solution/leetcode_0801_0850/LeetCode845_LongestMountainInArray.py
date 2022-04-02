@@ -3,8 +3,8 @@ Created on Mar 18, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ longestMountain_twoPassesONSpace  A):
+c_ Solution(o..
+    ___ longestMountain_twoPassesONSpace  A
         """
         :type A: List[int]
         :rtype: int
@@ -15,14 +15,14 @@ c_ Solution(o..):
         ___ i __ r..(1, l..(arr)):
             __ arr[i] > arr[i-1]:
                 up[i] = up[i-1]+1
-        ___ i __ r..(l..(arr)-1, -1, -1):
+        ___ i __ r..(l..(arr)-1, -1, -1
             __ arr[i] > arr[i+1]:
                 down[i] = down[i+1]+1
             __ up[i] a.. down[i]:
                 res = m..(res, up[i]+down[i]+1)
         r.. res
     
-    ___ longestMountain  A):
+    ___ longestMountain  A
         """
         :type A: List[int]
         :rtype: int
@@ -30,7 +30,7 @@ c_ Solution(o..):
         arr = A
         res, up, down = 0, 0, 0
         ___ i __ r..(1, l..(arr)):
-            __ (down a.. arr[i-1] < arr[i]) o. (arr[i-1] __ arr[i]):
+            __ (down a.. arr[i-1] < arr[i]) o. (arr[i-1] __ arr[i]
                 up, down = 0, 0
             __ arr[i-1] < arr[i]:
                 up += 1

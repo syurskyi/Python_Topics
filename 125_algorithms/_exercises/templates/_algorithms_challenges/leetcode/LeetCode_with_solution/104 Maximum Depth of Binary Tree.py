@@ -6,24 +6,24 @@ The maximum depth is the number of nodes along the longest path from the root no
 __author__ = 'Danyang'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
+c_ Solution(o..
     # @param root, a tree node
     # @return an integer
-    ___ maxDepth  root):
+    ___ maxDepth  root
         """
         :param root: TreeNode
         :return: integer
         """
         r.. fathom(root, 0)
 
-    ___ fathom  root, depth):
+    ___ fathom  root, depth
         """
         DFS
         """

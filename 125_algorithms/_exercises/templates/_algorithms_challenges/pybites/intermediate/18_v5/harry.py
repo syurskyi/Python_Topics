@@ -15,8 +15,8 @@ word_regex = __.c..(WORD_REGEX)
 
 
 ___ get_harry_most_common_word
-    w__ open(harry_text) __ f:
-        words = word_regex.f..(f.read().l..
-    w__ open(stopwords_file) __ f:
-        stops = word_regex.f..(f.read().l..
+    w__ o.. harry_text) __ f:
+        words = word_regex.f..(f.r...l..
+    w__ o.. stopwords_file) __ f:
+        stops = word_regex.f..(f.r...l..
     r.. Counter([x ___ x __ words __ x n.. __ stops]).most_common(1)[0]

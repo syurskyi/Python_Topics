@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxVacationDays  flights, days):
+c_ Solution(o..
+  ___ maxVacationDays  flights, days
     """
     :type flights: List[List[int]]
     :type days: List[List[int]]

@@ -2,7 +2,7 @@ c_ Animal:
     
     number = 10001
     animals    # list
-    ___ - , name):
+    ___ - , name
         name = name.t..
         number = Animal.number
         Animal.number += 1
@@ -12,6 +12,6 @@ c_ Animal:
         r.. f"{number}. {name}"
 
     @classmethod
-    ___ zoo(cls):
+    ___ zoo(cls
         r.. '\n'.j..(s..(animal) ___ animal __ cls.animals)
 

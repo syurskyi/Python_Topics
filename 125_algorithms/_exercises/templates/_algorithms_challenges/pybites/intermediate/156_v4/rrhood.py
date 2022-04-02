@@ -39,14 +39,14 @@ The woodsman knocked out the wolf and carried him deep into the forest where he 
 Little Red Riding Hood and her Grandmother had a nice lunch and a long chat.
 """
 
-CHARACTERS = ['Red Riding Hood',
+CHARACTERS =  'Red Riding Hood',
               # we're omitting 'mother' here for simplicity
               # (= substring grandmother)
               ('Grandmother', 'Grandma', 'Granny'),
-              'wolf', 'woodsman']
+              'wolf', 'woodsman'
 
 
-___ make_character_index(text=text, characters=CHARACTERS):
+___ make_character_index(text=text, characters=CHARACTERS
     """Return a dict with keys are characters (lowercased) and values
        the lines they appear in sorted order.
        Matches should be case insensitive.
@@ -56,10 +56,10 @@ ___ make_character_index(text=text, characters=CHARACTERS):
     """
     index = defaultdict(l..)
 
-    ___ n, line __ e..(text.l...splitlines()):
+    ___ n, line __ e..(text.l...s..()):
         ___ char __ characters:
-            __ isi..(char, t..):
-                __ any(map(l.... c: c.l.. __ line, char)):
+            __ isi..(char, t..
+                __ any m..(l.... c: c.l.. __ line, char)):
                     index[char[0].l..].a..(n)
             ____:
                 __ char.l.. __ line:

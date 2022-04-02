@@ -1,14 +1,14 @@
 ____ c.. _______ defaultdict
 
 
-c_ Solution(o..):
-  ___ verticalOrder  root):
+c_ Solution(o..
+  ___ verticalOrder  root
     """
     :type root: TreeNode
     :rtype: List[List[int]]
     """
 
-    ___ dfs(p, i, j, res):
+    ___ dfs(p, i, j, res
       __ p:
         res[j].a..((p.val, i))
         leftMost = m..(j, leftMost)

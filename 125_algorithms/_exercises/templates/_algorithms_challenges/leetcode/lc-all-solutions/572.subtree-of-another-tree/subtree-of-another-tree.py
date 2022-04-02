@@ -5,15 +5,15 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ isSubtree  s, t):
+c_ Solution(o..
+  ___ isSubtree  s, t
     """
     :type s: TreeNode
     :type t: TreeNode
     :rtype: bool
     """
 
-    ___ serialize(root):
+    ___ serialize(root
       ans    # list
       stack = [(root, 1)]
       w.... stack:

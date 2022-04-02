@@ -6,7 +6,7 @@ ____ react _______ InputCell, ComputeCell
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.0.0
 
-c_ ReactTest(unittest.TestCase):
+c_ ReactTest(unittest.TestCase
 
     ___ test_input_cells_have_a_value
         input_ = InputCell(10)
@@ -192,8 +192,8 @@ c_ ReactTest(unittest.TestCase):
         assertEqual(observer, [])
 
     # Utility functions.
-    ___ callback_factory  observer):
-        ___ callback(observer, value):
+    ___ callback_factory  observer
+        ___ callback(observer, value
             observer.a..(value)
         r.. partial(callback, observer)
 

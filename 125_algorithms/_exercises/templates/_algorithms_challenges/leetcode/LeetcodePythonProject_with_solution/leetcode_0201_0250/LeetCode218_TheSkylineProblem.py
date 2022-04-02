@@ -3,8 +3,8 @@ Created on Feb 20, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ getSkyline  buildings):
+c_ Solution(o..
+    ___ getSkyline  buildings
         """
         :type buildings: List[List[int]]
         :rtype: List[List[int]]

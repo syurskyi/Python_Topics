@@ -1,6 +1,6 @@
-c_ Solution(o..):
+c_ Solution(o..
   # while loop
-  ___ smallestFactorization  a):
+  ___ smallestFactorization  a
     """
     :type a: int
     :rtype: int
@@ -22,7 +22,7 @@ c_ Solution(o..):
     r.. ans __ ans <= 0x7fffffff ____ 0
 
   # normal DFS
-  ___ smallestFactorization  a):
+  ___ smallestFactorization  a
     """
     :type a: int
     :rtype: int
@@ -30,14 +30,14 @@ c_ Solution(o..):
     __ a <= 1:
       r.. a
 
-    ___ dfs(num, path):
+    ___ dfs(num, path
       __ num __ 1:
         ans = m..(ans, i..("".j..(s..(path))))
         r.. T..
       ___ i __ r..(r..(2, 10)):
         __ num % i __ 0:
           path.a..(s..(i))
-          __ dfs(num / i, path):
+          __ dfs(num / i, path
             r.. T..
           path.pop()
       r.. F..

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ repeatedString  a, b):
+    ___ repeatedString  a, b
         """
         :type a: str
         :type b: str
@@ -13,10 +13,10 @@ c_ Solution:
         ans = b.c.. a)
         c = b.s..(a)
 
-        __ c[0] a.. a.endswith(c[0]):
+        __ c[0] a.. a.endswith(c[0]
             ans += 1
 
-        __ c[-1] a.. a.startswith(c[-1]):
+        __ c[-1] a.. a.startswith(c[-1]
             ans += 1
 
         r.. ans __ a.startswith(c[-1]) a.. a.endswith(c[0]) ____ -1

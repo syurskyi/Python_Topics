@@ -3,7 +3,7 @@ _______ unittest
 ____ scrabble _______ score
 
 
-c_ WordTest(unittest.TestCase):
+c_ WordTest(unittest.TestCase
     ___ test_invalid_word_scores_zero
         assertEqual(0, score(''))
         assertEqual(0, score(' \t\n'))

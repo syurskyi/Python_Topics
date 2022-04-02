@@ -32,7 +32,7 @@ The given list has length in the range [0, 10000].
 
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 

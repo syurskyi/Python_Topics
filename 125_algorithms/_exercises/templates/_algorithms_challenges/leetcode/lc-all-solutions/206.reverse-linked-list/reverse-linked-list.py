@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ reverseList  root):
+c_ Solution(o..
+  ___ reverseList  root
     __ n.. root o. n.. root.next:
       r.. root
 
@@ -14,7 +14,7 @@ c_ Solution(o..):
     root.next = N..
     r.. ret
 
-  ___ _reverseList  head):
+  ___ _reverseList  head
     pre = N..
     cur = head
     w.... cur:
@@ -25,7 +25,7 @@ c_ Solution(o..):
     r.. pre
 
   # iteratively as queue head inserting
-  ___ __reverseList  head):
+  ___ __reverseList  head
     """
     :type head: ListNode
     :rtype: ListNode
@@ -40,10 +40,10 @@ c_ Solution(o..):
     r.. dHead.next
 
   # easily leads to a circle. Remove current node's next after recursive call.
-  ___ ___reverseList  head):
+  ___ ___reverseList  head
     newHead = N..
 
-    ___ rec(head):
+    ___ rec(head
       __ n.. head:
         r.. head
       p = rec(head.next)

@@ -4,8 +4,8 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ validTree  n, edges):
+c_ Solution(o..
+    ___ validTree  n, edges
         roots = [-1]*n
         ___ e __ edges:
             root0 = findRoot(roots, e[0])
@@ -16,19 +16,19 @@ c_ Solution(o..):
                 r.. F..
         r.. l..(edges) __ n-1
     
-    ___ findRoot  roots, ind):
+    ___ findRoot  roots, ind
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     
-    ___ validTreeBFS  n, edges):
+    ___ validTreeBFS  n, edges
         """
         :type n: int
         :type edges: List[List[int]]
         :rtype: bool
         """
         hashmap    # dict
-        ___ i __ r..(n):
+        ___ i __ r..(n
             hashmap[i]    # list
         ___ edge __ edges:
             hashmap[edge[0]].a..(edge[1])
@@ -50,25 +50,25 @@ c_ Solution(o..):
                 r.. F..
         r.. T..
     
-    ___ validTreeDFS  n, edges):
+    ___ validTreeDFS  n, edges
         hashmap    # dict
-        ___ i __ r..(n):
+        ___ i __ r..(n
             hashmap[i]    # list
         ___ edge __ edges:
             hashmap[edge[0]].a..(edge[1])
             hashmap[edge[1]].a..(edge[0])
         visited = [F..]*n
-        __ n.. helper(0, -1, hashmap, visited):
+        __ n.. helper(0, -1, hashmap, visited
             r.. F..
         ___ b __ visited:
             __ n.. b: r.. F..
         r.. T..
     
-    ___ helper  curr, parent, hashmap, visited):
+    ___ helper  curr, parent, hashmap, visited
         __ visited[curr]: r.. F..
         visited[curr] = T..
         ___ i __ hashmap[curr]:
-            __ i != parent a.. n.. helper(i, curr, hashmap, visited):
+            __ i != parent a.. n.. helper(i, curr, hashmap, visited
                 r.. F..
         r.. T..
     

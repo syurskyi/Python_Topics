@@ -3,8 +3,8 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ dominantIndex  nums):
+c_ Solution(o..
+    ___ dominantIndex  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
             r.. -1
         first, fInd = f__('-inf'), -1
         second = f__('-inf')
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             __ num > first:
                 second = first
                 first = num

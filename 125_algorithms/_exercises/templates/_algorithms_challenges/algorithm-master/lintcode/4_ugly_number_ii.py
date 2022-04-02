@@ -9,7 +9,7 @@ Main Concept:
 
 
 c_ Solution:
-    ___ nthUglyNumber  n):
+    ___ nthUglyNumber  n
         """
         :type n: int
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution:
         ans = [1]
         i2 = i3 = i5 = 0
 
-        ___ _ __ r..(1, n):
+        ___ _ __ r..(1, n
             w.... ans[i2] * 2 <= ans[-1]:
                 i2 += 1
             w.... ans[i3] * 3 <= ans[-1]:

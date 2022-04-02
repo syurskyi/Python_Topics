@@ -3,15 +3,15 @@ Created on May 13, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ addDigits  num):
+c_ Solution(o..
+    ___ addDigits  num
         """
         :type num: int
         :rtype: int
         """
         r.. num-9*((num-1)/9) __ num != 0 ____ 0
     
-    ___ addDigits_slow  num):
+    ___ addDigits_slow  num
         w.... num >= 10:
             newNum = 0
             w.... num > 0:

@@ -16,7 +16,7 @@ _______ unittest
 ____ palindrome_products _______ smallest_palindrome, largest_palindrome
 
 
-c_ PalindromesTests(unittest.TestCase):
+c_ PalindromesTests(unittest.TestCase
     ___ test_largest_palindrome_from_single_digit_factors
         value, factors = largest_palindrome(max_factor=9)
         assertEqual(value, 9)

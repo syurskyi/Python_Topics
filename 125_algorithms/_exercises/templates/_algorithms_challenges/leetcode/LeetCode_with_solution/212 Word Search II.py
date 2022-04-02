@@ -20,8 +20,8 @@ You may assume that all inputs are consist of lowercase letters a-z.
 __author__ = 'Daniel'
 
 
-c_ TrieNode(o..):
-    ___ - , char):
+c_ TrieNode(o..
+    ___ - , char
         char = char
         word = N..
         children    # dict  # map from char to TrieNode
@@ -30,11 +30,11 @@ c_ TrieNode(o..):
         r.. repr(char)
 
 
-c_ Trie(o..):
-    ___ - ):
+c_ Trie(o..
+    ___ -
         root = TrieNode(N..)
 
-    ___ add  word):
+    ___ add  word
         word = word.l..
         cur = root
         ___ c __ word:
@@ -45,10 +45,10 @@ c_ Trie(o..):
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 
-    ___ findWords  board, words):
+    ___ findWords  board, words
         """
         Trie+dfs
         pure Trie solution
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. l..(ret)
 
-    ___ dfs  board, i, j, parent, marked, ret):
+    ___ dfs  board, i, j, parent, marked, ret
         """
         :type parent: TrieNode
         """

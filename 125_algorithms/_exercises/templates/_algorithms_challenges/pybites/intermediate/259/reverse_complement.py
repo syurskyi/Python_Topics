@@ -29,7 +29,7 @@ COMPLEMENTS_STR = """# Full table with ambigous bases
 
 
 # Recommended helper function
-___ _clean_sequence(sequence, str_table):
+___ _clean_sequence(sequence, str_table
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -41,8 +41,8 @@ ___ _clean_sequence(sequence, str_table):
     r.. "".j..(sequence_clean)
 
 
-___ _str_table_lookup(str_table):
-    str_table_split = str_table.splitlines()
+___ _str_table_lookup(str_table
+    str_table_split = str_table.s..
     lookup    # dict
     ___ i __ r..(l..(str_table_split)):
         __ i __ [0, 1]:
@@ -52,7 +52,7 @@ ___ _str_table_lookup(str_table):
     r.. lookup
 
 
-___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -64,7 +64,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     r.. sequence_clean[::-1]
 
 
-___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -81,7 +81,7 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
     r.. "".j..(sequence_clean)
 
 
-___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases

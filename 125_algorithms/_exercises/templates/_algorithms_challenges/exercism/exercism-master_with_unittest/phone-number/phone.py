@@ -4,14 +4,14 @@ c_ Phone:
     AREA_CODE_END = 3
     EXCHANGE_CODE_END = 6
 
-    ___ - , inp):
+    ___ - , inp
         number = number(inp)
 
-    ___ number  inp):
+    ___ number  inp
         cleaned = strip(inp)
-        __ valid_11_digits(cleaned):
+        __ valid_11_digits(cleaned
             r.. cleaned[1:]
-        ____ valid_10_digits(cleaned):
+        ____ valid_10_digits(cleaned
             r.. cleaned
         r.. INVALID_NUM
 
@@ -29,13 +29,13 @@ c_ Phone:
                                    subscriber_code())
 
     @staticmethod
-    ___ valid_11_digits(inp):
+    ___ valid_11_digits(inp
         r.. l..(inp) __ 11 a.. inp.startswith("1")
 
     @staticmethod
-    ___ valid_10_digits(inp):
+    ___ valid_10_digits(inp
         r.. l..(inp) __ 10
 
     @staticmethod
-    ___ strip(inp):
+    ___ strip(inp
         r.. ''.j..(char ___ char __ inp __ char.i..())

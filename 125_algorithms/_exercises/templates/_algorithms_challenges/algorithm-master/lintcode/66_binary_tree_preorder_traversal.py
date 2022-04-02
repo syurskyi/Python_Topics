@@ -12,14 +12,14 @@ c_ Solution:
     @param: root: A Tree
     @return: Preorder in ArrayList which contains node values.
     """
-    ___ preorderTraversal  root):
+    ___ preorderTraversal  root
         ans    # list
         __ n.. root:
             r.. ans
         _traversal(root, ans)
         r.. ans
 
-    ___ _traversal  node, res):
+    ___ _traversal  node, res
         __ n.. node:
             r..
 

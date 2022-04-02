@@ -4,13 +4,13 @@ Created on Feb 21, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-c_ ListNode(o..):
+c_ ListNode(o..
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(o..):
-    ___ splitListToParts  root, k):
+c_ Solution(o..
+    ___ splitListToParts  root, k
         """
         :type root: ListNode
         :type k: int
@@ -25,7 +25,7 @@ c_ Solution(o..):
         length0 = length//k
         count0 = length-length0*k
         lengths = [length0]*k
-        ___ i __ r..(count0):
+        ___ i __ r..(count0
             lengths[i] += 1
         head = root
         prev = ListNode(-1)
@@ -45,7 +45,7 @@ c_ Solution(o..):
             prev = head
             head = head.next
         res.a..(prevHead)
-        ___ _ __ r..(i+1, k):
+        ___ _ __ r..(i+1, k
             res.a..(N..)
         r.. res
     

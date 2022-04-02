@@ -17,7 +17,7 @@ cars = [
 ]
 
 
-___ group_cars_by_manufacturer(cars):
+___ group_cars_by_manufacturer(cars
     """Iterate though the list of (manufacturer, model) tuples
        of the cars list defined above and generate the output as described
        in the Bite description (see the tests for the full output).
@@ -25,7 +25,7 @@ ___ group_cars_by_manufacturer(cars):
        No return here, just print to the console. We use pytest > capfd to
        validate your output :)
     """
-    ___ k, g __ groupby(s..(cars), l.... car: car[0]):
+    ___ k, g __ groupby(s..(cars), l.... car: car[0]
         print(k.upper())
         ___ c __ g:
             print _*- {c[1]}')

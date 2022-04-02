@@ -18,7 +18,7 @@ ____ regex_lookahead_lookbehind _______ (
         (2, "1112345", 1),
     ],
 )
-___ test_count_n_repetitions_digits(n, text, expected):
+___ test_count_n_repetitions_digits(n, text, expected
     ... count_n_repetitions(text, n=n) __ expected
 
 
@@ -39,7 +39,7 @@ ___ test_count_n_repetitions_digits(n, text, expected):
         (2, "As \t\t\t are tabs\t\t", 1),
     ],
 )
-___ test_count_n_repetitions_chars(n, text, expected):
+___ test_count_n_repetitions_chars(n, text, expected
     ... count_n_repetitions(text, n=n) __ expected
 
 
@@ -55,7 +55,7 @@ ___ test_count_n_repetitions_chars(n, text, expected):
         (2, "Greek: εζεζεζεηηηη", 2),
     ],
 )
-___ test_count_n_repetitions_unicode(n, text, expected):
+___ test_count_n_repetitions_unicode(n, text, expected
     ... count_n_repetitions(text, n=n) __ expected
 
 ?p__.m__.p.(
@@ -67,7 +67,7 @@ ___ test_count_n_repetitions_unicode(n, text, expected):
         (2, "", "\n\n\nAs are newlines\n\n\n", 2),
     ],
 )
-___ test_count_n_reps_or_n_chars_following_no_char(n, char, text, expected):
+___ test_count_n_reps_or_n_chars_following_no_char(n, char, text, expected
     ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 
 
@@ -80,7 +80,7 @@ ___ test_count_n_reps_or_n_chars_following_no_char(n, char, text, expected):
         (2, "z", "\n\n\nAs are newlines\n\n\n", 2),
     ],
 )
-___ test_count_n_reps_or_n_chars_following_no_containing_char(n, char, text, expected):
+___ test_count_n_reps_or_n_chars_following_no_containing_char(n, char, text, expected
     ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 
 
@@ -100,7 +100,7 @@ ___ test_count_n_reps_or_n_chars_following_no_containing_char(n, char, text, exp
         (2, "\t", "But bob isn't...\t\t", 2),
     ],
 )
-___ test_count_n_reps_or_n_chars_following_mix(n, char, text, expected):
+___ test_count_n_reps_or_n_chars_following_mix(n, char, text, expected
     ... count_n_reps_or_n_chars_following(text, n=n, char=char) __ expected
 ?p__.m__.p.(
     "surrounding_chars, text, expected",
@@ -113,5 +113,5 @@ ___ test_count_n_reps_or_n_chars_following_mix(n, char, text, expected):
         ([":", "|"], "?:A:lmost|t|here", 2),
     ],
 )
-___ test_check_surrounding_chars_valid(surrounding_chars: List[s..], text, expected):
+___ test_check_surrounding_chars_valid(surrounding_chars: List[s..], text, expected
     ... check_surrounding_chars(text, surrounding_chars) __ expected

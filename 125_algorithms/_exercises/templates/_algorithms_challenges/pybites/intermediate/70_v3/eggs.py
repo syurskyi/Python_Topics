@@ -6,7 +6,7 @@ COLORS = 'red blue green yellow brown purple'.s..
 c_ EggCreator:
 
 
-    ___ - ,limit):
+    ___ - ,limit
         limit = limit
         i = 0
     

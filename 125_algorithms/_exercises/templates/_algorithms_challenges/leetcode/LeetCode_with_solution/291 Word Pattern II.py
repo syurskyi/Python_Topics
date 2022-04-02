@@ -4,8 +4,8 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ wordPatternMatch  pattern, s):
+c_ Solution(o..
+    ___ wordPatternMatch  pattern, s
         """
         Backtracking with prune
         :type pattern: str
@@ -14,7 +14,7 @@ c_ Solution(o..):
         """
         r.. dfs(pattern, s, {}, s..())
 
-    ___ dfs  pattern, s, char2word, words):
+    ___ dfs  pattern, s, char2word, words
         """
         Loop & DFS
         :return: pattern can match s
@@ -32,7 +32,7 @@ c_ Solution(o..):
                 r.. F..
             ____:
                 ... word __ words
-                r.. dfs(pattern[1:], s[l..(word):], char2word, words)
+                r.. dfs(pattern[1:], s[l..(word], char2word, words)
         ____:
             ___ i __ x..(l..(s)):
                 word = s[:i+1]
@@ -41,7 +41,7 @@ c_ Solution(o..):
 
                 char2word[pattern[0]] = word
                 words.add(word)
-                __ dfs(pattern[1:], s[l..(word):], char2word, words):
+                __ dfs(pattern[1:], s[l..(word], char2word, words
                     r.. T..
                 words.remove(word)
                 del char2word[pattern[0]]

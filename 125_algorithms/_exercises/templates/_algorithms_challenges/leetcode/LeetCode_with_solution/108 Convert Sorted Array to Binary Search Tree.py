@@ -4,13 +4,13 @@ Given an array where elements are sorted in ascending order, convert it to a hei
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ sortedArrayToBST  num):
+    ___ sortedArrayToBST  num
         """
         post-order, dfs
         :param num: list of integers

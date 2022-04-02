@@ -34,7 +34,7 @@ ___ get_users_1st_solution(passwd: s..) __ d..:
 ___ get_users_2nd_solution(passwd: s..) __ d..:
 
     output    # dict
-    ___ row __ passwd.s...splitlines
+    ___ row __ passwd.s...s..
         fields = row.s..(':')
         username = fields[0]
         name = __.sub(r',+', r' ', fields[4].strip(',')) o. 'unknown'

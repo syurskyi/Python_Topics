@@ -1,8 +1,8 @@
-___ collatzSequence(tests):
+___ collatzSequence(tests
     data = raw_input().s..
     answer    # list
     
-    ___ test __ r..(tests):
+    ___ test __ r..(tests
         count = 0
         value = i..(data[test])
         

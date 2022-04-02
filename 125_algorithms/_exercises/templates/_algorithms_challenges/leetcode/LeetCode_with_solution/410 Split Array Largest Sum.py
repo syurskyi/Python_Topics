@@ -40,13 +40,13 @@ c_ SolutionDP:
             sums.a..(sums[-1] + e)
 
         F = [[f__("inf") ___ _ __ r..(m + 1)] ___ _ __ r..(n + 1)]
-        ___ l __ r..(1, n + 1):
+        ___ l __ r..(1, n + 1
             F[l][1] = sums[l] - sums[0]
         # or F[0][0] = 0
 
-        ___ l __ r..(1, n + 1):
-            ___ k __ r..(1, m + 1):
-                ___ j __ r..(l):
+        ___ l __ r..(1, n + 1
+            ___ k __ r..(1, m + 1
+                ___ j __ r..(l
                     F[l][k] = m..(
                         F[l][k], m..(F[j][k-1], sums[l] - sums[j])
                     )
@@ -83,7 +83,7 @@ c_ Solution:
 
 
 c_ SolutionTLE2:
-    ___ - ):
+    ___ -
         sums = [0]
 
     ___ splitArray  nums: List[i..], m: i..) __ i..:
@@ -97,7 +97,7 @@ c_ SolutionTLE2:
         r.. ret
 
     @lru_cache(maxsize=N..)
-    ___ dfs  hi, m):
+    ___ dfs  hi, m
         """
         j break the nums[:hi] into left and right part
         """
@@ -105,7 +105,7 @@ c_ SolutionTLE2:
             r.. sums[hi] - sums[0]
 
         mini = f__("inf")
-        ___ j __ r..(hi):
+        ___ j __ r..(hi
             right = sums[hi] - sums[j]
             left = dfs(j, m - 1)
             # minimize the max
@@ -115,7 +115,7 @@ c_ SolutionTLE2:
 
 
 c_ SolutionTLE:
-    ___ - ):
+    ___ -
         sums = [0]
 
     ___ splitArray  nums: List[i..], m: i..) __ i..:
@@ -130,7 +130,7 @@ c_ SolutionTLE:
         r.. ret
 
     @lru_cache(maxsize=N..)
-    ___ dfs  nums, lo, hi, m):
+    ___ dfs  nums, lo, hi, m
         """
         j break the nums[lo:hi] into left and right part
         """
@@ -138,7 +138,7 @@ c_ SolutionTLE:
             r.. sums[hi] - sums[lo]
 
         mini = f__("inf")
-        ___ j __ r..(lo, hi):
+        ___ j __ r..(lo, hi
             left = sums[j] - sums[lo]
             right = dfs(nums, j, hi, m - 1)
             # minimize the max

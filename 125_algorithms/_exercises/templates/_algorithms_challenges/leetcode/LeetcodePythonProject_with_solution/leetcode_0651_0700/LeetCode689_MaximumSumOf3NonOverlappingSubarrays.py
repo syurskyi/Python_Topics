@@ -3,8 +3,8 @@ Created on Oct 23, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ maxSumOfThreeSubarrays  nums, k):
+c_ Solution(o..
+    ___ maxSumOfThreeSubarrays  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -14,12 +14,12 @@ c_ Solution(o..):
         dp = [[0]*(n+1) ___ _ __ r..(4)]
         sumVal = 0
         accu = [0]*(n+1)
-        ___ i __ r..(n):
+        ___ i __ r..(n
             sumVal += nums[i]
             accu[i] = sumVal
         ids = [[0]*(n+1) ___ _ __ r..(4)]
-        ___ i __ r..(1, 4):
-            ___ j __ r..(k-1, n):
+        ___ i __ r..(1, 4
+            ___ j __ r..(k-1, n
                 tmpMax = accu[j] __ j-k<0 ____ accu[j]-accu[j-k]+dp[i-1][j-k]
                 __ j >= k:
                     dp[i][j] = dp[i][j-1]

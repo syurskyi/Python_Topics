@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ removeKdigits  num, k):
+c_ Solution(o..
+  ___ removeKdigits  num, k
     """
     :type num: str
     :type k: int

@@ -27,7 +27,7 @@ _______ heapq
 
 c_ KthLargest:
 
-    ___ - , k: i.., nums: List[i..]):
+    ___ - , k: i.., nums: List[i..]
         """
         heap
         min-heap, since we want the head be the k-th largest

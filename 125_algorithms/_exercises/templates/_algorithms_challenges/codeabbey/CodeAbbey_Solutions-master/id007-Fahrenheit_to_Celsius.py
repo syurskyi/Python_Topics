@@ -1,4 +1,4 @@
-___ convert(variables):
+___ convert(variables
     answer    # list
     ___ x __ r..(i..(variables[0])):
         num = f__(variables[x+1])

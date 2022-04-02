@@ -3,10 +3,10 @@ _______ bisect
 
 c_ OrderedList:
 
-    ___ - ):
+    ___ -
         _numbers    # list
 
-    ___ add  num):
+    ___ add  num
         # you complete
         bisect.insort(_numbers, num)
 

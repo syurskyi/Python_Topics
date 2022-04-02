@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ topKFrequent  A, k):
+    ___ topKFrequent  A, k
         """
         :type A: List[int]
         :type k: int
@@ -13,7 +13,7 @@ c_ Solution:
         ___ a __ A:
             F[a] = F.get(a, 0) + 1
 
-        ___ a, _ __ s..(F.i.., key=l.... x: -x[1]):
+        ___ a, _ __ s..(F.i.., key=l.... x: -x[1]
             __ k __ 0:
                 _____
 

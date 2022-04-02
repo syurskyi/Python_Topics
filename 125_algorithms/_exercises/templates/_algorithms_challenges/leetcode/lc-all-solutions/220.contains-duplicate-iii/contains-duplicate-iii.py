@@ -1,8 +1,8 @@
 _______ bisect
 
 
-c_ Solution(o..):
-  ___ containsNearbyAlmostDuplicate  nums, k, t):
+c_ Solution(o..
+  ___ containsNearbyAlmostDuplicate  nums, k, t
     """
     :type nums: List[int]
     :type k: int
@@ -14,7 +14,7 @@ c_ Solution(o..):
     bst    # list
     __ k < 0 o. t < 0:
       r.. F..
-    ___ i, num __ e..(nums):
+    ___ i, num __ e..(nums
       idx = bisect.bisect_left(bst, num)
       __ idx < l..(bst) a.. abs(bst[idx] - num) <= t:
         r.. T..

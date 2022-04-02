@@ -44,7 +44,7 @@ c_ Solution:
         counter = Counter(A)
         prev = 0
         prev_cnt = 0
-        ___ k __ s..(counter):  # sorted by key
+        ___ k __ s..(counter  # sorted by key
             __ prev_cnt > counter[k] o. prev_cnt > 0 a.. k > prev + 1:
                 r.. F..
                 

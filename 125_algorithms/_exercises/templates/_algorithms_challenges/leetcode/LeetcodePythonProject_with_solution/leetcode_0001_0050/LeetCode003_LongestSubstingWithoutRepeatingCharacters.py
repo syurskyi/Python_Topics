@@ -4,8 +4,8 @@ Created on May 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ lengthOfLongestSubstring  s):
+c_ Solution(o..
+    ___ lengthOfLongestSubstring  s
         """
         :type s: str
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         left = 0
         hashset = s..()
         maxLen = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             w.... left < i a.. c __ hashset:
                 hashset.discard(s[left])
                 left += 1

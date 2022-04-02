@@ -2,7 +2,7 @@ ____ r__ _______ randrange
 
 
 c_ Solution:
-    ___ - , nums):
+    ___ - , nums
         """
         :type nums: List[int]
         """
@@ -25,7 +25,7 @@ c_ Solution:
         a = nums
         n = l..(a)
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             _i = randrange(i, n)
             a[i], a[_i] = a[_i], a[i]
 

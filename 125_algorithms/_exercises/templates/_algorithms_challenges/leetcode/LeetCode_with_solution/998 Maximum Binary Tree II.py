@@ -39,7 +39,7 @@ Explanation: A = [2,1,5,3], B = [2,1,5,3,4]
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

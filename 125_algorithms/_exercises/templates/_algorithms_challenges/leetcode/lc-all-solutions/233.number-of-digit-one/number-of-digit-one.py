@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ countDigitOne  n):
+c_ Solution(o..
+  ___ countDigitOne  n
     """
     :type n: int
     :rtype: int

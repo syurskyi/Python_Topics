@@ -4,7 +4,7 @@ c_ Solution:
     @param k: the distance of the same number
     @return: the ans of this question
     """
-    ___ sameNumber  nums, k):
+    ___ sameNumber  nums, k
         RES = ('NO', 'YES')
 
         __ n.. nums o. n.. k:

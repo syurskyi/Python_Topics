@@ -35,7 +35,7 @@ group1 = {'tim': 30, 'bob': 17, 'ana': 24}
 group2 = {'ana': 26, 'thomas': 64, 'helen': 26}
 group3 = {'brenda': 17, 'otto': 44, 'thomas': 46}
 
-___ get_person_age(name):
+___ get_person_age(name
 
     n = s..(name).l..
     print(n)

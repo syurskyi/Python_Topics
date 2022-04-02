@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ LenCnt:
-    ___ - , l, c):
+    ___ - , l, c
         l = l
         c = c
 
@@ -40,8 +40,8 @@ c_ Solution:
         n = l..(A)
         F = [LenCnt(l=1, c=1) ___ _ __ A]
         mx = LenCnt(l=1, c=1)
-        ___ i __ r..(1, n):
-            ___ j __ r..(i):
+        ___ i __ r..(1, n
+            ___ j __ r..(i
                 __ A[i] > A[j]:
                     __ F[i].l < F[j].l + 1:
                         F[i].l = F[j].l + 1

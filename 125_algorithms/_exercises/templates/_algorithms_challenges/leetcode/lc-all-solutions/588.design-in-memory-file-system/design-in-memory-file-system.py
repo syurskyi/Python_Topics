@@ -1,22 +1,22 @@
-c_ FileNode(o..):
-  ___ - , name):
+c_ FileNode(o..
+  ___ - , name
     isFolder = T..
     childs    # dict
     name = name
     data = ""
 
-  ___ appendData  data):
+  ___ appendData  data
     data += data
 
   ___ readAll
     r.. data
 
 
-c_ FileSystem(o..):
-  ___ - ):
+c_ FileSystem(o..
+  ___ -
     root = FileNode("/")
 
-  ___ ls  path):
+  ___ ls  path
     """
     :type path: str
     :rtype: List[str]
@@ -32,7 +32,7 @@ c_ FileSystem(o..):
     files.s..()
     r.. files
 
-  ___ lookup  path, isAutoCreate):
+  ___ lookup  path, isAutoCreate
     path = path.s..("/")
     p = root
     ___ name __ path:
@@ -46,14 +46,14 @@ c_ FileSystem(o..):
       p = p.childs[name]
     r.. p
 
-  ___ mkdir  path):
+  ___ mkdir  path
     """
     :type path: str
     :rtype: void
     """
     lookup(path, T..)
 
-  ___ addContentToFile  filePath, content):
+  ___ addContentToFile  filePath, content
     """
     :type filePath: str
     :type content: str
@@ -63,7 +63,7 @@ c_ FileSystem(o..):
     fd.isFolder = F..
     fd.appendData(content)
 
-  ___ readContentFromFile  filePath):
+  ___ readContentFromFile  filePath
     """
     :type filePath: str
     :rtype: str

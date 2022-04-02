@@ -7,6 +7,6 @@ awake = [T.., F..] * 3
 SEPARATOR = ' | '
 
 
-___ generate_table(*args):
-    ___ a __ z..(*args):
+___ generate_table(*args
+    ___ a __ z..(*args
         y.. SEPARATOR.j..([s..(r) ___ r __ a])

@@ -1,5 +1,5 @@
 ____ d__ _______ t..
-___ get_missing_dates(dates):
+___ get_missing_dates(dates
     """Receives a range of dates and returns a sequence
        of missing datetime.date objects (no worries about order).
 
@@ -13,7 +13,7 @@ ___ get_missing_dates(dates):
     dates = s..(dates)
 
     missing    # list
-    ___ i __ r..(l..(dates) - 1):
+    ___ i __ r..(l..(dates) - 1
         date = dates[i]
 
         next_date = date + t..(d.._1)

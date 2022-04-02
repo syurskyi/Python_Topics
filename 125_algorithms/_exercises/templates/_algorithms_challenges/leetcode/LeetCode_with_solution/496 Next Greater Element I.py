@@ -27,7 +27,7 @@ The length of both nums1 and nums2 would not exceed 1000.
 
 
 c_ Solution:
-    ___ nextGreaterElement  nums1, nums2):
+    ___ nextGreaterElement  nums1, nums2
         """
         Brute force O(mn)
 

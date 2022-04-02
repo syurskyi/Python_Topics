@@ -4,8 +4,8 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minPathSum  grid):
+c_ Solution(o..
+    ___ minPathSum  grid
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -14,8 +14,8 @@ c_ Solution(o..):
         n = l..(grid[0])
         m = l..(grid)
         dp = [[0]*n ___ i __ r..(m)]
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ i __ 0 a.. j __ 0:
                     dp[i][j] = grid[i][j]
                 ____ i __ 0 a.. j != 0:

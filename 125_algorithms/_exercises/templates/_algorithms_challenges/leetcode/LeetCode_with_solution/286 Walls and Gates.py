@@ -4,11 +4,11 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ wallsAndGates  mat):
+    ___ wallsAndGates  mat
         """
         bfs
         O(mn), abstract level
@@ -26,11 +26,11 @@ c_ Solution(o..):
                     q.a..((i1, j1))
 
 
-c_ Solution_slow(o..):
-    ___ - ):
+c_ Solution_slow(o..
+    ___ -
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ wallsAndGates  rooms):
+    ___ wallsAndGates  rooms
         """
         bfs
         O(kmn) where k is #0s
@@ -42,19 +42,19 @@ c_ Solution_slow(o..):
         __ n.. m: r..
         n = l..(rooms[0])
 
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ rooms[i][j] __ 0:
                     bfs_deque(rooms, i, j)
 
-    ___ bfs  rooms, x, y):
+    ___ bfs  rooms, x, y
         m = l..(rooms)
         n = l..(rooms[0])
         level = 0
         q = [(x, y)]
         w.... q:
             l = l..(q)
-            ___ idx __ x..(l):
+            ___ idx __ x..(l
                 i, j = q[idx]
                 rooms[i][j] = m..(rooms[i][j], level)
                 ___ d __ dirs:
@@ -66,7 +66,7 @@ c_ Solution_slow(o..):
             q = q[l:]
             level += 1
 
-    ___ bfs_deque  rooms, x, y):
+    ___ bfs_deque  rooms, x, y
         ____ c.. _______ d..
 
         m = l..(rooms)
@@ -82,11 +82,11 @@ c_ Solution_slow(o..):
                     q.a..((i_t, j_t, level+1))
 
 
-c_ Solution_error(o..):
-    ___ - ):
+c_ Solution_error(o..
+    ___ -
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ wallsAndGates  rooms):
+    ___ wallsAndGates  rooms
         """
         post-order DFS
 
@@ -99,12 +99,12 @@ c_ Solution_error(o..):
         n = l..(rooms[0])
 
         visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ n.. visited[i][j]:
                     dfs(rooms, i, j, visited)
 
-    ___ dfs  rooms, i, j, visited):
+    ___ dfs  rooms, i, j, visited
         __ n.. visited[i][j]:
             visited[i][j] = T..
             ___ d __ dirs:

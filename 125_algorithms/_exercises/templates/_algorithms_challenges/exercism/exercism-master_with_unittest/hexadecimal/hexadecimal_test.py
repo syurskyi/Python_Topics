@@ -6,7 +6,7 @@ _______ unittest
 ____ hexadecimal _______ hexa
 
 
-c_ HexadecimalTest(unittest.TestCase):
+c_ HexadecimalTest(unittest.TestCase
 
     ___ test_valid_hexa1
         assertEqual(1, hexa('1'))
@@ -36,7 +36,7 @@ c_ HexadecimalTest(unittest.TestCase):
         assertEqual(65520, hexa('00fff0'))
 
     ___ test_invalid_hexa
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             hexa('carrot')
 
 

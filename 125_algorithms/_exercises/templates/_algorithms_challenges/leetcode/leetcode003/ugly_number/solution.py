@@ -8,8 +8,8 @@ prime factor 7.
 Note that 1 is typically treated as an ugly number.
 """
 
-c_ Solution(o..):
-    ___ isUgly  num):
+c_ Solution(o..
+    ___ isUgly  num
         """
         :type num: int
         :rtype: bool

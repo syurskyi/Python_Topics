@@ -4,15 +4,15 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ validWordAbbreviation  word, abbr):
+c_ Solution(o..
+    ___ validWordAbbreviation  word, abbr
         i, j = 0, 0
-        w.... i < l..(word) a.. j < l..(abbr):
+        w.... i < l..(word) a.. j < l..(abbr
             __ abbr[j].i..
                 prev = j
                 w.... j+1 < l..(abbr) a.. abbr[j+1].i..
                     j+=1
-                __ abbr[prev:j+1].startswith('0'): r.. F..
+                __ abbr[prev:j+1].startswith('0' r.. F..
                 num = i..(abbr[prev:j+1])
                 i += num
                 j += 1
@@ -21,7 +21,7 @@ c_ Solution(o..):
                     r.. F..
                 i+=1
                 j+=1
-        __ i != l..(word) o. j != l..(abbr):
+        __ i != l..(word) o. j != l..(abbr
             r.. F..
         r.. T..
     

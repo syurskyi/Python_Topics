@@ -5,30 +5,30 @@ Created on Mar 28, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ findLeaves  root):
+c_ Solution(o..
+    ___ findLeaves  root
         res    # list
         helper(root, res)
         r.. res
     
-    ___ helper  root, res):
+    ___ helper  root, res
         __ n.. root: r.. -1
         left = helper(root.left, res)
         right = helper(root.right, res)
         level = m..(left, right)+1
-        __ level < l..(res):
+        __ level < l..(res
             res[level].a..(root.val)
         ____:
             res.a..([root.val])
         r.. level
     
-    ___ findLeavesOwn  root):
+    ___ findLeavesOwn  root
         __ n.. root: r.. []
         result    # list
         dummy = TreeNode(-1)
@@ -39,7 +39,7 @@ c_ Solution(o..):
             result.a..(tmpResult)
         r.. result
     
-    ___ getLeaves  parent, root, result):
+    ___ getLeaves  parent, root, result
         __ n.. root: r..
         __ n.. root.left a.. n.. root.right:
             __ parent.left __ root:

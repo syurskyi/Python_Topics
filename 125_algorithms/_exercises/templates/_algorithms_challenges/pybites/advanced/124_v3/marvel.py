@@ -14,24 +14,24 @@ Character = n..('Character', 'pid name sid align sex first_appearance appearance
 ___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
     w__ requests.Session() __ session:
-        r.. session.get(MARVEL_CSV).content.decode('utf-8')
+        r.. session.get(MARVEL_CSV).content.d.. 'utf-8')
 
 
 ___ load_data
     """Converts marvel.csv into a sequence of Character namedtuples
        as defined above"""
     content = _get_csv_data()
-    reader = csv.DictReader(content.splitlines(), delimiter=',')
+    reader = csv.DictReader(content.s.. , delimiter=',')
     ___ row __ reader:
-        name = __.sub(r'(.*?)\(.*', r'\1', row['name']).s..
-        y.. Character(pid=row['page_id'],
+        name = __.sub(r'(.*?)\(.*', r'\1', row 'name' ).s..
+        y.. Character(pid=row 'page_id' ,
                         name=name,
-                        sid=row['ID'],
-                        align=row['ALIGN'],
-                        sex=row['SEX'],
-                        first_appearance=row['FIRST APPEARANCE'],
-                        appearances=row['APPEARANCES'],
-                        year=row['Year'])
+                        sid=row 'ID' ,
+                        align=row 'ALIGN' ,
+                        sex=row 'SEX' ,
+                        first_appearance=row 'FIRST APPEARANCE' ,
+                        appearances=row 'APPEARANCES' ,
+                        year=row 'Year' )
 
 
 characters = l..(load_data())
@@ -39,7 +39,7 @@ characters = l..(load_data())
 
 # start coding
 
-___ most_popular_characters(characters=characters, top=5):
+___ most_popular_characters(characters=characters, top=5
     """Get the most popular character by number of appearances,
        return top n characters (default 5)
     """
@@ -49,13 +49,13 @@ ___ most_popular_characters(characters=characters, top=5):
     r.. [char.name ___ char __ top_lst]
 
 
-___ _year_app(mon_yr):
+___ _year_app(mon_yr
     """ return the year based on the MON-YY string from FIRST APPEARANCE field"""
     year = i..(mon_yr.s..('-')[-1])
     r.. s..(1900 + year) __ year > 20 ____ s..(2000 + year)
 
 
-___ max_and_min_years_new_characters(characters=characters):
+___ max_and_min_years_new_characters(characters=characters
     """Get the year with most and least new characters introduced respectively,
        use either the 'FIRST APPEARANCE' or 'Year' column in the csv
        characters, or the 'year' attribute of the namedtuple, return a tuple
@@ -67,7 +67,7 @@ ___ max_and_min_years_new_characters(characters=characters):
     r.. mc[0][0], mc[-1][0]
 
 
-___ get_percentage_female_characters(characters=characters):
+___ get_percentage_female_characters(characters=characters
     """Get the percentage of female characters as percentage of all genders
        over all appearances.
        Ignore characters that don't have gender ('sex' attribue) set
@@ -77,4 +77,4 @@ ___ get_percentage_female_characters(characters=characters):
     """
     genders = Counter([c.sex.s..(' ')[0] ___ c __ characters __ c.sex])
     sum_all_genders = s..([x[1] ___ x __ genders.i..])
-    r.. r..(100 * genders['Female'] / sum_all_genders, 2)
+    r.. r..(100 * genders 'Female'  / sum_all_genders, 2)

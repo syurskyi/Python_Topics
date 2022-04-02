@@ -43,7 +43,7 @@ __author__ = 'Daniel'
 SZ = 10
 
 
-c_ Tweet(o..):
+c_ Tweet(o..
     central_clk = 0
 
     ___ - , id, nxt_ N..
@@ -52,24 +52,24 @@ c_ Tweet(o..):
         next = nxt  # LinkedList
         Tweet.central_clk += 1
 
-    ___ __cmp__  other):
+    ___ __cmp__  other
         r.. - (timestamp - other.timestamp)
 
 
-c_ Twitter(o..):
+c_ Twitter(o..
     """
     need assumption about the frequency of calls of each method
 
     most efficient heap of list
     """
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
         """
         tweets = defaultdict(l....: N..)
         followees = defaultdict(s..)
 
-    ___ postTweet  userId, tweetId):
+    ___ postTweet  userId, tweetId
         """
         Compose a new tweet.
         :type userId: int
@@ -79,7 +79,7 @@ c_ Twitter(o..):
         nxt = tweets[userId]  # previous post
         tweets[userId] = Tweet(tweetId, nxt)
 
-    ___ getNewsFeed  userId):
+    ___ getNewsFeed  userId
         """
         Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by
         users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
@@ -104,7 +104,7 @@ c_ Twitter(o..):
 
         r.. ret
 
-    ___ follow  followerId, followeeId):
+    ___ follow  followerId, followeeId
         """
         Follower follows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int
@@ -113,7 +113,7 @@ c_ Twitter(o..):
         """
         followees[followerId].add(followeeId)
 
-    ___ unfollow  followerId, followeeId):
+    ___ unfollow  followerId, followeeId
         """
         Follower unfollows a followee. If the operation is invalid, it should be a no-op.
         :type followerId: int

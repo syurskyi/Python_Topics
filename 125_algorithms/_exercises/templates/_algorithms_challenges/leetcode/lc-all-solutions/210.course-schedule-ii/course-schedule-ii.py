@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findOrder  numCourses, prerequisites):
+c_ Solution(o..
+  ___ findOrder  numCourses, prerequisites
     """
     :type numCourses: int
     :type prerequisites: List[List[int]]
     :rtype: List[int]
     """
 
-    ___ dfs(start, visited, graph, ans):
+    ___ dfs(start, visited, graph, ans
       visited[start] = 1
       ___ nbr __ graph[start]:
         __ visited[nbr] __ 1:
@@ -34,7 +34,7 @@ c_ Solution(o..):
         _____
       __ dfs(start, visited, graph, ans) __ F..:
         r.. []
-    ___ i __ r..(0, numCourses):
+    ___ i __ r..(0, numCourses
       __ visited[i] __ 0:
         ans.a..(i)
     r.. ans

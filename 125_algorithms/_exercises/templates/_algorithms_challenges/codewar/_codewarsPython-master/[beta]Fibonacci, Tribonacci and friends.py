@@ -1,4 +1,4 @@
-___ Xbonacci(signature,n):
+___ Xbonacci(signature,n
     digit = -l..(signature)
     w.... l..(signature) < n:
         signature.a..(s..(signature[digit:]))

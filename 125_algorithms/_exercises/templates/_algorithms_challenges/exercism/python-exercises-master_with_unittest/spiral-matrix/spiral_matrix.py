@@ -1,2 +1,2 @@
-___ spiral(size):
+___ spiral(size
     p..

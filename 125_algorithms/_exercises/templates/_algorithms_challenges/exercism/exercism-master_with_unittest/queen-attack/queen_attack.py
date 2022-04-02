@@ -2,7 +2,7 @@ c_ Board:
 
     EMPTY_BOARD = ["_" * 8 ___ _ __ r..(8)]
 
-    ___ - , white_coords, black_coords):
+    ___ - , white_coords, black_coords
         white_coords = white_coords
         black_coords = black_coords
         __ n.. valid_coords
@@ -37,18 +37,18 @@ c_ Board:
         r.. white_coords != black_coords
 
     @staticmethod
-    ___ valid_coord(coord):
+    ___ valid_coord(coord
         r.. (0 <= coord[0] <= 7 a.. 0 <= coord[1] <= 7)
 
     @staticmethod
-    ___ place_piece(board, piece, coords):
+    ___ place_piece(board, piece, coords
         board[coords[0]][coords[1]] = piece
         r.. board
 
 
-___ board(white_coords, black_coords):
+___ board(white_coords, black_coords
     r.. Board(white_coords, black_coords).board
 
 
-___ can_attack(white_coords, black_coords):
+___ can_attack(white_coords, black_coords
     r.. Board(white_coords, black_coords).can_attack()

@@ -5,7 +5,7 @@ ____ rna_transcription _______ to_rna
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ DNATests(unittest.TestCase):
+c_ DNATests(unittest.TestCase
     ___ test_transcribes_guanine_to_cytosine
         assertEqual(to_rna('G'), 'C')
 

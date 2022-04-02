@@ -4,8 +4,8 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ addBinary  a, b):
+c_ Solution(o..
+    ___ addBinary  a, b
         """
         :type a: str
         :type b: str
@@ -14,7 +14,7 @@ c_ Solution(o..):
         __ n.. a a.. n.. b: r.. ''
         __ n.. a: r.. b
         __ n.. b: r.. a
-        __ l..(a) < l..(b):
+        __ l..(a) < l..(b
             tmp = a
             a = b
             b = tmp

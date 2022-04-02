@@ -14,7 +14,7 @@ ___ _get_computer_move
     r.. choice(c..)
 
 
-___ _get_winner(computer_choice, player_choice):
+___ _get_winner(computer_choice, player_choice
     """Return above lose/win/tie strings populated with the
        appropriate values (computer vs player)"""
     __ player_choice n.. __ c..:

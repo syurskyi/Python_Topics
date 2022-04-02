@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ lexicalOrder  n):
+    ___ lexicalOrder  n
         """
         :type n: int
         :rtype: List[int]

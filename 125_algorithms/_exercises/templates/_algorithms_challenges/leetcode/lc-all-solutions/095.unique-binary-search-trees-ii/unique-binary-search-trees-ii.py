@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ generateTrees  n):
+c_ Solution(o..
+  ___ generateTrees  n
     """
     :type n: int
     :rtype: List[TreeNode]
     """
 
-    ___ clone(root, offset):
+    ___ clone(root, offset
       __ root:
         newRoot = TreeNode(root.val + offset)
         left = clone(root.left, offset)
@@ -18,9 +18,9 @@ c_ Solution(o..):
       r.. []
     dp = [[]] * (n + 1)
     dp[0] = [N..]
-    ___ i __ r..(1, n + 1):
+    ___ i __ r..(1, n + 1
       dp[i]    # list
-      ___ j __ r..(1, i + 1):
+      ___ j __ r..(1, i + 1
         ___ left __ dp[j - 1]:
           ___ right __ dp[i - j]:
             root = TreeNode(j)

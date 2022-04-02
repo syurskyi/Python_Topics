@@ -7,8 +7,8 @@ b = "1"
 Return "100".
 """
 
-c_ Solution(o..):
-    ___ addBinary  a, b):
+c_ Solution(o..
+    ___ addBinary  a, b
         """
         :type a: str
         :type b: str
@@ -27,7 +27,7 @@ c_ Solution(o..):
             lb = l..(list_b)
         carry = 0
         res    # list
-        ___ i __ r..(la):
+        ___ i __ r..(la
             t = (list_a[i] + list_b[i] + carry) % 2
             carry = (list_a[i] + list_b[i] + carry) / 2
             res.a..(t)

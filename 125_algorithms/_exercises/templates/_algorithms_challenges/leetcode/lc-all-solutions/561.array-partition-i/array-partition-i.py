@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ arrayPairSum  nums):
+c_ Solution(o..
+  ___ arrayPairSum  nums
     """
     :type nums: List[int]
     :rtype: int

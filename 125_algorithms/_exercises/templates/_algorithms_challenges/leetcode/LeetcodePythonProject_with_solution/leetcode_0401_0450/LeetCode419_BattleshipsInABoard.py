@@ -4,8 +4,8 @@ Created on Apr 12, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ countBattleships  board):
+c_ Solution(o..
+    ___ countBattleships  board
         """
         :type board: List[List[str]]
         :rtype: int
@@ -13,8 +13,8 @@ c_ Solution(o..):
         __ n.. board o. n.. board[0]: r.. 0
         m, n = l..(board), l..(board[0])
         count = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ board[i][j] __ 'X':
                     __ i __ 0:
                         __ j __ 0:

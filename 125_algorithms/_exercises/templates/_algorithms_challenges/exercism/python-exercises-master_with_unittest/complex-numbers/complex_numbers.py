@@ -1,17 +1,17 @@
-c_ ComplexNumber(o..):
-    ___ - , real, imaginary):
+c_ ComplexNumber(o..
+    ___ - , real, imaginary
         p..
 
-    ___ add  other):
+    ___ add  other
         p..
 
-    ___ mul  other):
+    ___ mul  other
         p..
 
-    ___ sub  other):
+    ___ sub  other
         p..
 
-    ___ div  other):
+    ___ div  other
         p..
 
     ___ abs

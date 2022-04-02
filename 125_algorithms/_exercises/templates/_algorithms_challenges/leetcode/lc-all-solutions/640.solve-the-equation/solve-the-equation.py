@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ solveEquation  equation):
+c_ Solution(o..
+  ___ solveEquation  equation
     """
     :type equation: str
     :rtype: str

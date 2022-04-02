@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findTargetSumWays  nums, S, visited={}, index=0):
+c_ Solution(o..
+  ___ findTargetSumWays  nums, S, visited={}, index=0
     """
     :type nums: List[int]
     :type S: int
     :rtype: int
     """
 
-    ___ helper(nums, S, visited={}, index=0):
+    ___ helper(nums, S, visited={}, index=0
       __ (index, S) __ visited:
         r.. visited[index, S]
       ans = 0

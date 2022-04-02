@@ -4,8 +4,8 @@ Created on May 3, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ smallestGoodBase  n):
+c_ Solution(o..
+    ___ smallestGoodBase  n
         """
         :type n: str
         :rtype: str
@@ -13,7 +13,7 @@ c_ Solution(o..):
         _______ math
         n = i..(n)
         max_n = i..(math.log(n, 2))
-        ___ m __ r..(max_n, 1, -1):
+        ___ m __ r..(max_n, 1, -1
             k = i..(n**m**-1)
             __ (k**(m+1)-1)//(k-1) __ n:
                 r.. s..(k)

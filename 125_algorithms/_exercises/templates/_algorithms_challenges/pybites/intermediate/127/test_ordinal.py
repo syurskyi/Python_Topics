@@ -39,5 +39,5 @@ ____ ordinal _______ get_ordinal_suffix
     (1003, '1003rd'),
     (1111, '1111th'),
 ])
-___ test_ordinal(input_argument, expected_return):
+___ test_ordinal(input_argument, expected_return
     ... get_ordinal_suffix(input_argument) __ expected_return

@@ -4,7 +4,7 @@ _______ p__
 ____ rename_keys _______ rename_keys
 
 
-___ fb(value):
+___ fb(value
     r.. s..(value)
 
 
@@ -14,8 +14,8 @@ ___ fb(value):
                         ({'@user_name': 'jdoe'}, {'user_name': 'jdoe'}),
                         ({'@user_name': 'jdoe', 1: 'one', 2: 'two', '@three': 3},
                          {'user_name': 'jdoe', 1: 'one', 2: 'two', 'three': 3},),
-                        ({(T.., F..): '@Fizz@', (F.., T..): '@Buzz@', (T.., T..): '@FizzBizz@', (F.., F..): fb},
-                         {(T.., F..): '@Fizz@', (F.., T..): '@Buzz@', (T.., T..): '@FizzBizz@', (F.., F..): fb}),
+                        ({(T.., F.. '@Fizz@', (F.., T.. '@Buzz@', (T.., T.. '@FizzBizz@', (F.., F.. fb},
+                         {(T.., F.. '@Fizz@', (F.., T.. '@Buzz@', (T.., T.. '@FizzBizz@', (F.., F.. fb}),
                         ({'@pii': {'name': {'@first_name': 'Jane', '@last_name': 'Doe'},
                                    '@address': [{'@city': 'London'}, {'city': 'Moscow'}],
                                    '@id': 12345,
@@ -81,7 +81,7 @@ ___ fb(value):
                                               'viewUrlName': 'viewUrlName'}]},
                           'webpageUrl': 'webpageUrl'})
 ])
-___ test_rename_keys(test_input, expected):
+___ test_rename_keys(test_input, expected
     snapshot_before = repr(test_input)
     renamed = rename_keys(test_input)
     snapshot_after = repr(test_input)

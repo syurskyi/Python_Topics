@@ -1,5 +1,5 @@
-c_ BankAccount(o..):
-    ___ - ):
+c_ BankAccount(o..
+    ___ -
         p..
 
     ___ get_balance
@@ -8,10 +8,10 @@ c_ BankAccount(o..):
     ___ open
         p..
 
-    ___ deposit  amount):
+    ___ deposit  amount
         p..
 
-    ___ withdraw  amount):
+    ___ withdraw  amount
         p..
 
     ___ close

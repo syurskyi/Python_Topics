@@ -23,18 +23,18 @@ pybites = User(name='PyBites', role=ADMIN, expired=F..)
 USERS = (julian, bob, pybites)
 
 # define exception classes here
-c_ UserDoesNotExist(E..):
+c_ UserDoesNotExist(E..
     p..
 
-c_ UserAccessExpired(E..):
+c_ UserAccessExpired(E..
     p..
 
-c_ UserNoPermission(E..):
+c_ UserNoPermission(E..
     p..
 
 ### My solution
 
-___ get_secret_token(username):
+___ get_secret_token(username
     ___ user __ USERS:
         __ user.name __ username:
             __ user.expired __ F..:
@@ -48,7 +48,7 @@ ___ get_secret_token(username):
 
 ### PyBites original solution
 
-___ pyb_get_user(username):
+___ pyb_get_user(username
     # This constructs a dictionary from USERS namedtuples
     users = {user.name: user ___ user __ USERS}
     # Q: Is there any difference in accessing nonexisting key when using d[crap] vs d.get(crap)?
@@ -61,7 +61,7 @@ ___ pyb_get_user(username):
     # https://stackoverflow.com/questions/19473185/what-is-a-none-value
     r.. users.get(username)
 
-___ pyb_get_secret_token(username):
+___ pyb_get_secret_token(username
     user = pyb_get_user(username)
     print(t..(user))
     print(user)

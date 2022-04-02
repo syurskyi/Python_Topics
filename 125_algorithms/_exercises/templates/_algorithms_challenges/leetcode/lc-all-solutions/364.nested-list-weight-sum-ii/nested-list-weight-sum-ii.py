@@ -41,21 +41,21 @@
 #        :rtype List[NestedInteger]
 #        """
 
-c_ Solution(o..):
-  ___ depthSumInverse  nestedList):
+c_ Solution(o..
+  ___ depthSumInverse  nestedList
     """
     :type nestedList: List[NestedInteger]
     :rtype: int
     """
 
-    ___ getDepth(root):
+    ___ getDepth(root
       res = 0
       ___ nested __ root:
         __ n.. nested.isInteger
           res = m..(res, getDepth(nested.getList()))
       r.. res + 1
 
-    ___ helper(root, depth, maxDepth):
+    ___ helper(root, depth, maxDepth
       res = 0
       ___ nested __ root:
         __ nested.isInteger

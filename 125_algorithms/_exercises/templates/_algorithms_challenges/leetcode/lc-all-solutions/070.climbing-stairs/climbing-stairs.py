@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ climbStairs  n):
+c_ Solution(o..
+  ___ climbStairs  n
     """
     :type n: int
     :rtype: int
@@ -7,7 +7,7 @@ c_ Solution(o..):
     __ n <= 1:
       r.. 1
     pre, ppre = 1, 1
-    ___ i __ r..(2, n + 1):
+    ___ i __ r..(2, n + 1
       tmp = pre
       pre = ppre + pre
       ppre = tmp

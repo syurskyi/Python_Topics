@@ -1,7 +1,7 @@
 ____ ca__ _______ Calendar
 
 
-___ meetup_day(year, month, day_of_the_week, which):
+___ meetup_day(year, month, day_of_the_week, which
     candidates = [date
                   ___ date __ Calendar().itermonthdates(year, month)
                   __ date.month __ month
@@ -9,7 +9,7 @@ ___ meetup_day(year, month, day_of_the_week, which):
     r.. _choice(which)(candidates)
 
 
-___ _choice(which):
+___ _choice(which
     __ which __ 'teenth':
         r.. l.... dates: next(d ___ d __ dates __ 13 <= d.day <= 19)
 

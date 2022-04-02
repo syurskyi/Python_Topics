@@ -32,7 +32,7 @@ c_ Solution:
 
         ret = 0
         cur_end = -f__("inf")
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ pairs[i][0] <= cur_end:
                 _____
 
@@ -73,8 +73,8 @@ c_ Solution2:
         pairs.s..(key=l.... x: t..(x))
         n = l..(pairs)
         F = [1 ___ _ __ r..(n)]
-        ___ i __ r..(n):
-            ___ j __ r..(i):
+        ___ i __ r..(n
+            ___ j __ r..(i
                 __ pairs[j][1] < pairs[i][0]:
                     F[i] = m..(F[i], F[j] + 1)
 

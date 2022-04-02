@@ -3,8 +3,8 @@ Created on Apr 19, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ similarRGB  color):
+c_ Solution(o..
+    ___ similarRGB  color
         """
         :type color: str
         :rtype: str
@@ -13,11 +13,11 @@ c_ Solution(o..):
         print(r, g, b)
         r.. '#' + getTwoDigits(r) + getTwoDigits(g) + getTwoDigits(b)
     
-    ___ getTwoDigits  s):
+    ___ getTwoDigits  s
         res = 0
         diff = f__('inf')
-        ___ s0 __ ['00', '11', '22', '33', '44', '55', '66', '77', '88', '99',\
-                   'aa', 'bb', 'cc', 'dd', 'ee', 'ff']:
+        ___ s0 __  '00', '11', '22', '33', '44', '55', '66', '77', '88', '99',\
+                   'aa', 'bb', 'cc', 'dd', 'ee', 'ff' :
             num0 = convert(s0)
             num = convert(s)
             diff0 = (num0-num)**2
@@ -26,7 +26,7 @@ c_ Solution(o..):
                 diff = diff0
         r.. res
     
-    ___ convert  s):
+    ___ convert  s
         num = 16*(o..(s[0])-o..('0') __ s[0].i.. ____ o..(s[0])-o..('a')+10)
         num += (o..(s[1])-o..('0') __ s[1].i.. ____ o..(s[1])-o..('a')+10)
         r.. num

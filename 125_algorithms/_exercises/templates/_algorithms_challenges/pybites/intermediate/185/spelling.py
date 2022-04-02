@@ -4,7 +4,7 @@ ____ urllib.request _______ urlretrieve
 
 TMP = os.getenv("TMP", "/tmp")
 DICTIONARY = os.path.j..(TMP, 'dictionary.txt')
-__ n.. os.path.isfile(DICTIONARY):
+__ n.. os.path.isfile(DICTIONARY
     urlretrieve(
         'https://bites-data.s3.us-east-2.amazonaws.com/dictionary.txt',
         DICTIONARY
@@ -13,8 +13,8 @@ __ n.. os.path.isfile(DICTIONARY):
 
 ___ load_words
     'return dict of words in DICTIONARY'
-    w__ open(DICTIONARY) __ f:
-        r.. {word.s...l.. ___ word __ f.readlines()}
+    w__ o.. DICTIONARY) __ f:
+        r.. {word.s...l.. ___ word __ f.r..}
 
 
 ___ suggest_word(misspelled_word: s.., words: s.. = N..) __ s..:

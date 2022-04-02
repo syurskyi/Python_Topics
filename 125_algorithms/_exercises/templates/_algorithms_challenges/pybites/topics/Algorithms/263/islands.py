@@ -1,4 +1,4 @@
-___ count_islands(grid):
+___ count_islands(grid
     """
     Input: 2D matrix, each item is [x, y] -> row, col.
     Output: number of islands, or 0 if found none.
@@ -8,8 +8,8 @@ ___ count_islands(grid):
     - eg. using the helper function - mark_islands().
     """
     islands = 0         # var. for the counts
-    ___ r, row __ e..(grid):
-        ___ c, val __ e..(row):
+    ___ r, row __ e..(grid
+        ___ c, val __ e..(row
             __ grid[r][c] __ 1:
                 islands += 1
                 mark_islands(r,c,grid)
@@ -17,12 +17,12 @@ ___ count_islands(grid):
     r.. islands
 
 
-___ mark_islands(i, j, grid):
+___ mark_islands(i, j, grid
     """
     Input: the row, column and grid
     Output: None. Just mark the visited islands as in-place operation.
     """
-    __ (i>=0) a.. (j>=0) a.. (i<=l..(grid)-1) a.. (j<=l..(grid[i])-1):
+    __ (i>=0) a.. (j>=0) a.. (i<=l..(grid)-1) a.. (j<=l..(grid[i])-1
         print _*inside mark_islands row:{i} column:{j} value:{grid[i][j]}')
         __ grid[i][j] __ 1:
             grid[i][j] = '#'      # one way to mark visited ones - suggestion.

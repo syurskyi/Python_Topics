@@ -23,13 +23,13 @@ c_ Solution:
         n = l..(height)
         lefts = [0 ___ _ __ r..(n+1)]
         rights = [0 ___ _ __ r..(n+1)]
-        ___ i __ r..(1, n+1):  # i, index of lefts
+        ___ i __ r..(1, n+1  # i, index of lefts
             lefts[i] = m..(lefts[i-1], height[i-1])
-        ___ i __ r..(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1
             rights[i] = m..(rights[i+1], height[i])
 
         ret = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             ret += m..(
                 0,
                 m..(lefts[i], rights[i+1]) - height[i]

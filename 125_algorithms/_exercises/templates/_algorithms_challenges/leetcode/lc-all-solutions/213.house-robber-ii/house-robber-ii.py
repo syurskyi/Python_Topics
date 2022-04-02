@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ rob  nums):
+c_ Solution(o..
+  ___ rob  nums
     """
     :type nums: List[int]
     :rtype: int
@@ -12,7 +12,7 @@ c_ Solution(o..):
     # If we rob the last house, the problem becomes how to rob houses ecept the first one.
     r.. m..(robHelper(nums[1:]), robHelper(nums[:l..(nums) - 1]))
 
-  ___ robHelper  nums):
+  ___ robHelper  nums
     """
     :type nums: List[int]
     :rtype: int

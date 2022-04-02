@@ -1,10 +1,10 @@
-___ bubbleSort(amount, numbers):
+___ bubbleSort(amount, numbers
     s.. = F..
     swapCount, passCount = 0,0
 
     w.... n.. s..:
         s.. = T..
-        ___ i __ r..(amount-1):
+        ___ i __ r..(amount-1
             __ numbers[i] > numbers[i+1]:
                 s.. = F..
                 swapCount += 1

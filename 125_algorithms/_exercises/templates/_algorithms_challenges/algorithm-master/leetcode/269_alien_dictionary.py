@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ alienOrder  words):
+    ___ alienOrder  words
         """
         :type words: list[str]
         :rtype: str
@@ -11,9 +11,9 @@ c_ Solution:
         gotcha = s..()
         max_size = m..(l..(word) ___ word __ words)
 
-        ___ j __ r..(max_size):
+        ___ j __ r..(max_size
             ___ word __ words:
-                __ j >= l..(word):
+                __ j >= l..(word
                     _____
 
                 __ word[j] __ gotcha:
@@ -29,7 +29,7 @@ c_ Solution:
     """
     REF: https://discuss.leetcode.com/topic/28308/java-ac-solution-using-bfs/2
     """
-    ___ alienOrder  words):
+    ___ alienOrder  words
         __ n.. words:
             r.. ''
 
@@ -41,7 +41,7 @@ c_ Solution:
             ___ c __ w:
                 indeg[c] = 0
 
-        ___ i __ r..(l..(words) - 1):
+        ___ i __ r..(l..(words) - 1
             cur = words[i]
             nxt = words[i + 1]
             ___ j __ r..(m..(l..(cur), l..(nxt))):

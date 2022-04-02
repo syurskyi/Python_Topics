@@ -1,7 +1,7 @@
-___ extract_non_ascii_words(text):
+___ extract_non_ascii_words(text
     """Filter a text returning a list of non-ascii words"""
     na_words    # list
-    ___ word __ text.s..(" "):
+    ___ word __ text.s..(" "
         word_split = l..(word)
         ___ letter __ word_split:
             __ o..(letter) >= 128:

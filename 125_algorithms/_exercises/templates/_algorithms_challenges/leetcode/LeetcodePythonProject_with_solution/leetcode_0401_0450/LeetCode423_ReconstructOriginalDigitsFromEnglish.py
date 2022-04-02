@@ -4,8 +4,8 @@ Created on Apr 13, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ originalDigits  s):
+c_ Solution(o..
+    ___ originalDigits  s
         """
         :type s: str
         :rtype: str
@@ -28,6 +28,6 @@ c_ Solution(o..):
         count[9] = count[9] - count[8] - count[5] - count[6]
         count[1] = count[1] - count[0] - count[2] - count[4]
         result = ''
-        ___ i __ r..(10):
+        ___ i __ r..(10
             result += s..(i)*count[i]
         r.. result

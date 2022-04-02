@@ -26,16 +26,16 @@ You may assume start and end string is not the same.
 
 
 c_ Solution:
-    ___ is_neighbor  p, q):
+    ___ is_neighbor  p, q
         diff = 0
-        ___ a, b __ z..(p, q):
+        ___ a, b __ z..(p, q
             __ a != b:
                 diff += 1
             __ diff > 1:
                 r.. F..
         r.. T..
 
-    ___ minMutation  start, end, bank):
+    ___ minMutation  start, end, bank
         """
         BFS, record level and avoid loop
 
@@ -55,7 +55,7 @@ c_ Solution:
                 __ e __ end:
                     r.. lvl
                 ___ t __ bank:
-                    __ t n.. __ visited a.. is_neighbor(e, t):
+                    __ t n.. __ visited a.. is_neighbor(e, t
                         visited.add(t)
                         cur_q.a..(t)
 

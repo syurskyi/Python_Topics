@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-___ read4(buf):
+___ read4(buf
     """
     read 4 chars to buf
 
@@ -14,8 +14,8 @@ ___ read4(buf):
     r.. 0
 
 
-c_ Solution(o..):
-    ___ read  buf, n):
+c_ Solution(o..
+    ___ read  buf, n
         """
         read n chars to buf
         Algorithm:

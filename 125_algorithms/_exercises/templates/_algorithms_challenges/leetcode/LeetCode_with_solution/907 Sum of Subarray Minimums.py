@@ -51,7 +51,7 @@ c_ Solution:
         R = [n ___ _ __ A]
 
         stk    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             w.... stk a.. A[stk[-1]] >= A[i]:
                 stk.pop()
 
@@ -60,7 +60,7 @@ c_ Solution:
             stk.a..(i)
 
         stk    # list
-        ___ i __ r..(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1
             # avoid double count when equal, attribtue to leftmost duplicate
             w.... stk a.. A[stk[-1]] > A[i]:
                 stk.pop()
@@ -70,7 +70,7 @@ c_ Solution:
             stk.a..(i)
 
         ret = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             ret += (
                 A[i] * (i - L[i]) * (R[i] - i)
             )
@@ -88,7 +88,7 @@ c_ Solution:
         stk    # list
         A = [-f__('inf')] + A + [-f__('inf')]
         ret = 0
-        ___ i, a __ e..(A):
+        ___ i, a __ e..(A
             w.... stk a.. A[stk[-1]] > a:
                 h = stk.pop()
                 # record for h

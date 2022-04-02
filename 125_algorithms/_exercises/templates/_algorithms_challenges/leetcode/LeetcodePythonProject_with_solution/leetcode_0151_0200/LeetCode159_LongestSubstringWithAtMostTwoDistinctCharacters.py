@@ -3,8 +3,8 @@ Created on May 22, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ lengthOfLongestSubstringTwoDistinct  s):
+c_ Solution(o..
+    ___ lengthOfLongestSubstringTwoDistinct  s
         """
         :type s: str
         :rtype: int
@@ -12,7 +12,7 @@ c_ Solution(o..):
         hashmap    # dict
         l = 0
         res = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             hashmap[c] = hashmap.get(c, 0)+1
             w.... l..(hashmap) > 2:
                 hashmap[s[l]] -= 1

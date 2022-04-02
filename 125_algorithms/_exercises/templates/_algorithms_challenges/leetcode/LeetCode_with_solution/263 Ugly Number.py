@@ -9,8 +9,8 @@ Note that 1 is typically treated as an ugly number.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ isUgly  num):
+c_ Solution(o..
+    ___ isUgly  num
         """
         Prime factors: 2, 3, 5
 

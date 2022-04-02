@@ -1,11 +1,11 @@
 c_ TrieNode:
-    ___ - ):
+    ___ -
         children    # dict
         end_of = N..
 
 
 c_ Solution:
-    ___ boggleGame  board, words):
+    ___ boggleGame  board, words
         """
         :type board: list[list[str]]
         :type words: list[str]
@@ -26,18 +26,18 @@ c_ Solution:
         m, n = l..(board), l..(board[0])
         visited = s..()
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 dfs(board, x, y, root, visited, 0)
 
 
         r.. ans
 
-    ___ dfs  board, i, j, root, visited, cnt):
+    ___ dfs  board, i, j, root, visited, cnt
         m, n = l..(board), l..(board[0])
 
-        ___ x __ r..(i, m):
-            ___ y __ r..(j, n):
+        ___ x __ r..(i, m
+            ___ y __ r..(j, n
                 next_words    # list
                 find_next_words(board, x, y, visited, cnt, root, next_words, [])
 
@@ -52,7 +52,7 @@ c_ Solution:
 
             j = 0
 
-    ___ find_next_words  board, x, y, visited, cnt, node, next_words, path):
+    ___ find_next_words  board, x, y, visited, cnt, node, next_words, path
         __ (x, y) __ visited o. board[x][y] n.. __ node.children:
             r..
 
@@ -69,11 +69,11 @@ c_ Solution:
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
-            ):
+
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m a.. 0 <= _y < n):
+                __ n.. (0 <= _x < m a.. 0 <= _y < n
                     _____
 
                 find_next_words(board, _x, _y, visited, cnt, node, next_words, path)
@@ -81,7 +81,7 @@ c_ Solution:
         path.pop()
         visited.discard((x, y))
 
-    ___ put  root, word):
+    ___ put  root, word
         node = root
 
         ___ c __ word:

@@ -4,8 +4,8 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findPeakElement  nums):
+c_ Solution(o..
+    ___ findPeakElement  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(o..):
         start, end = 0, l..(nums)-1
         w.... start < end:
             mid = i..((start+end)/2)
-            __ (mid __ 0 a.. nums[mid] > nums[mid+1]) o. (mid __ l..(nums)-1 a.. nums[mid] > nums[mid-1]):
+            __ (mid __ 0 a.. nums[mid] > nums[mid+1]) o. (mid __ l..(nums)-1 a.. nums[mid] > nums[mid-1]
                 r.. mid
             ____:
                 __ nums[mid] > nums[mid-1] a.. nums[mid] > nums[mid+1]:

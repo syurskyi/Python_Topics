@@ -1,4 +1,4 @@
-___ s..(txt):
+___ s..(txt
     output = ""
     output2 = ""
     vset = {"a","e","i","o","u"}

@@ -6,14 +6,14 @@ ____ forth _______ evaluate, StackUnderflowError
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.5.0
 # Tests for case-insensitivity are track-specific
 
-c_ ForthParsingTest(unittest.TestCase):
+c_ ForthParsingTest(unittest.TestCase
     ___ test_numbers_just_get_pushed_to_stack
         input_data = ["1 2 3 4 5"]
         expected = [1, 2, 3, 4, 5]
         assertEqual(evaluate(input_data), expected)
 
 
-c_ ForthAdditionTest(unittest.TestCase):
+c_ ForthAdditionTest(unittest.TestCase
     ___ test_can_add_two_numbers
         input_data = ["1 2 +"]
         expected = [3]
@@ -21,12 +21,12 @@ c_ ForthAdditionTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["+"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 +"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -36,11 +36,11 @@ c_ ForthAdditionTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthSubtractionTest(unittest.TestCase):
+c_ ForthSubtractionTest(unittest.TestCase
     ___ test_can_subtract_two_numbers
         input_data = ["3 4 -"]
         expected = [-1]
@@ -48,12 +48,12 @@ c_ ForthSubtractionTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["-"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 -"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -63,11 +63,11 @@ c_ ForthSubtractionTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthMultiplicationTest(unittest.TestCase):
+c_ ForthMultiplicationTest(unittest.TestCase
     ___ test_can_multiply_two_numbers
         input_data = ["2 4 *"]
         expected = [8]
@@ -75,12 +75,12 @@ c_ ForthMultiplicationTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["*"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 *"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -90,11 +90,11 @@ c_ ForthMultiplicationTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthDivisionTest(unittest.TestCase):
+c_ ForthDivisionTest(unittest.TestCase
     ___ test_can_divide_two_numbers
         input_data = ["12 3 /"]
         expected = [4]
@@ -107,17 +107,17 @@ c_ ForthDivisionTest(unittest.TestCase):
 
     ___ test_errors_if_dividing_by_zero
         input_data = ["4 0 /"]
-        w__ assertRaisesWithMessage(ZeroDivisionError):
+        w__ assertRaisesWithMessage(ZeroDivisionError
             evaluate(input_data)
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["/"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 /"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -127,11 +127,11 @@ c_ ForthDivisionTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthCombinedArithmeticTest(unittest.TestCase):
+c_ ForthCombinedArithmeticTest(unittest.TestCase
     ___ test_addition_and_subtraction
         input_data = ["1 2 + 4 -"]
         expected = [-1]
@@ -143,7 +143,7 @@ c_ ForthCombinedArithmeticTest(unittest.TestCase):
         assertEqual(evaluate(input_data), expected)
 
 
-c_ ForthDupTest(unittest.TestCase):
+c_ ForthDupTest(unittest.TestCase
     ___ test_copies_a_value_on_the_stack
         input_data = ["1 dup"]
         expected = [1, 1]
@@ -156,7 +156,7 @@ c_ ForthDupTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["dup"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -166,11 +166,11 @@ c_ ForthDupTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthDropTest(unittest.TestCase):
+c_ ForthDropTest(unittest.TestCase
     ___ test_removes_the_top_value_on_the_stack_if_it_is_the_only_one
         input_data = ["1 DROP"]
         expected    # list
@@ -183,7 +183,7 @@ c_ ForthDropTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["drop"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -193,11 +193,11 @@ c_ ForthDropTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthSwapTest(unittest.TestCase):
+c_ ForthSwapTest(unittest.TestCase
     ___ test_swaps_only_two_values_on_stack
         input_data = ["1 2 SWAP"]
         expected = [2, 1]
@@ -210,12 +210,12 @@ c_ ForthSwapTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["swap"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 swap"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -225,11 +225,11 @@ c_ ForthSwapTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthOverTest(unittest.TestCase):
+c_ ForthOverTest(unittest.TestCase
     ___ test_copies_the_second_element_if_there_are_only_two
         input_data = ["1 2 OVER"]
         expected = [1, 2, 1]
@@ -242,12 +242,12 @@ c_ ForthOverTest(unittest.TestCase):
 
     ___ test_errors_if_there_is_nothing_on_the_stack
         input_data = ["over"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     ___ test_errors_if_there_is_only_one_value_on_the_stack
         input_data = ["1 over"]
-        w__ assertRaisesWithMessage(StackUnderflowError):
+        w__ assertRaisesWithMessage(StackUnderflowError
             evaluate(input_data)
 
     # Utility functions
@@ -257,11 +257,11 @@ c_ ForthOverTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthUserDefinedWordsTest(unittest.TestCase):
+c_ ForthUserDefinedWordsTest(unittest.TestCase
     ___ test_can_consist_of_built_in_words
         input_data = [
             ": dup-twice dup dup ;",
@@ -305,12 +305,12 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase):
 
     ___ test_cannot_redefine_numbers
         input_data = [": 1 2 ;"]
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             evaluate(input_data)
 
     ___ test_errors_if_executing_a_non_existent_word
         input_data = ["foo"]
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             evaluate(input_data)
 
     # Utility functions
@@ -320,11 +320,11 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 
-c_ ForthCaseInsensitivityTest(unittest.TestCase):
+c_ ForthCaseInsensitivityTest(unittest.TestCase
     ___ test_dup_is_case_insensitive
         input_data = ["1 DUP Dup dup"]
         expected = [1, 1, 1, 1]

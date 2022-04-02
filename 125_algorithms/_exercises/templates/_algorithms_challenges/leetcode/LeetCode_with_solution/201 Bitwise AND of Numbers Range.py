@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ rangeBitwiseAnd  m, n):
+    ___ rangeBitwiseAnd  m, n
         """
         Brute force O(N), which is suitable for all bit operations not just AND.
 

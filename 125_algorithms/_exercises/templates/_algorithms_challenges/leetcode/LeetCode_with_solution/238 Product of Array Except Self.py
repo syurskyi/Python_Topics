@@ -14,7 +14,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ productExceptSelf  nums):
+    ___ productExceptSelf  nums
         """
         dp
 
@@ -24,9 +24,9 @@ c_ Solution:
         n = l..(nums)
         left = [1 ___ _ __ x..(n+1)]  # the 0th one is dummy
         right = [1 ___ _ __ x..(n+1)]  # the last one is dummy
-        ___ i __ x..(1, n+1):
+        ___ i __ x..(1, n+1
             left[i] = left[i-1]*nums[i-1]
-        ___ i __ x..(n-1, -1, -1):
+        ___ i __ x..(n-1, -1, -1
             right[i] = right[i+1]*nums[i]
 
         r.. [left[i]*right[i+1] ___ i __ x..(n)]

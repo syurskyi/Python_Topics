@@ -1,18 +1,18 @@
-c_ Node(o..):
+c_ Node(o..
     ___ - , value, succeeding=N.., previous_ N..
         value = value
         succeeding = succeeding
         previous = previous
 
 
-c_ LinkedList(o..):
+c_ LinkedList(o..
 
-    ___ - ):
+    ___ -
         head = N..
         tail = N..
         length = 0
 
-    ___ push  value):
+    ___ push  value
         new_node = Node(value)
         length += 1
         __ tail __ n.. N..
@@ -29,7 +29,7 @@ c_ LinkedList(o..):
             tail = popped_node.previous
             r.. popped_node.value
 
-    ___ unshift  value):
+    ___ unshift  value
         new_node = Node(value)
         length += 1
         __ head __ n.. N..

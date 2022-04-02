@@ -1,16 +1,16 @@
-c_ Solution(o..):
-  ___ wordBreak  s, wordDict):
+c_ Solution(o..
+  ___ wordBreak  s, wordDict
     """
     :type s: str
     :type wordDict: Set[str]
     :rtype: List[str]
     """
     res    # list
-    __ n.. checkWordBreak(s, wordDict):
+    __ n.. checkWordBreak(s, wordDict
       r.. res
     queue = [(0, "")]
     slen = l..(s)
-    lenList = [l ___ l __ s..(map(l.., wordDict))]
+    lenList = [l ___ l __ s.. m..(l.., wordDict))]
     w.... queue:
       tmpqueue    # list
       ___ q __ queue:
@@ -24,7 +24,7 @@ c_ Solution(o..):
       queue, tmpqueue = tmpqueue, []
     r.. res
 
-  ___ checkWordBreak  s, wordDict):
+  ___ checkWordBreak  s, wordDict
     """
     :type s: str
     :type wordDict: Set[str]
@@ -32,7 +32,7 @@ c_ Solution(o..):
     """
     queue = [0]
     slen = l..(s)
-    lenList = [l ___ l __ s..(map(l.., wordDict))]
+    lenList = [l ___ l __ s.. m..(l.., wordDict))]
     visited = [0 ___ _ __ r..(0, slen + 1)]
     w.... queue:
       tmpqueue    # list

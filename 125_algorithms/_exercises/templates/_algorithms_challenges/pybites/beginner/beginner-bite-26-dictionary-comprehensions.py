@@ -41,7 +41,7 @@ bites = {6: 'PyBites Die Hard',
 exclude_bites = {6, 10, 16, 18, 21}
 
 
-___ filter_bites(bites=bites, bites_done=exclude_bites):
+___ filter_bites(bites=bites, bites_done=exclude_bites
     """return the bites dict with the exclude_bites filtered out"""
     d = {k:v ___ (k, v) __ bites.i.. __ k n.. __ bites_done}
     print(d)

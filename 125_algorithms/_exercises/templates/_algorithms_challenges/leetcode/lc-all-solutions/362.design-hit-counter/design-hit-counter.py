@@ -1,12 +1,12 @@
-c_ HitCounter(o..):
+c_ HitCounter(o..
 
-  ___ - ):
+  ___ -
     """
     Initialize your data structure here.
     """
     q = [(0, 0)] * 300
 
-  ___ hit  timestamp):
+  ___ hit  timestamp
     """
     Record a hit.
     @param timestamp - The current timestamp (in seconds granularity).
@@ -20,7 +20,7 @@ c_ HitCounter(o..):
     ____:
       q[idx] = time, hit + 1
 
-  ___ getHits  timestamp):
+  ___ getHits  timestamp
     """
     Return the number of hits in the past 5 minutes.
     @param timestamp - The current timestamp (in seconds granularity).

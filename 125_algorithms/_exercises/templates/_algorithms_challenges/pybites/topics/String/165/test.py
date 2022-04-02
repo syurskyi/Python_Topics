@@ -1,9 +1,9 @@
 
-f = open("passwd", "r")
+f = o.. "passwd", "r")
 
 #print(f.read().split('\n'))
 
-lines = f.readlines()
+lines = f.r..
 
 #print(lines.split(':')[-1])
 

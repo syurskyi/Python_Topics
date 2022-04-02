@@ -43,7 +43,7 @@ Each node's value will be between 0 and 1000.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -53,7 +53,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         mp = defaultdict(l..)  # element (-Y, val)  # from left to right, top to bottom
 
     ___ verticalTraversal  root: TreeNode) __ List[List[i..]]:
@@ -61,14 +61,14 @@ c_ Solution:
         ret    # list
         mn = m..(mp)
         mx = m..(mp)
-        ___ i __ r..(mn, mx+1):
+        ___ i __ r..(mn, mx+1
             ret.a..([
                 val
                 ___ _, val __ s..(mp[i])
             ])
         r.. ret
 
-    ___ dfs  node, x, y):
+    ___ dfs  node, x, y
         __ n.. node:
             r..
         mp[x].a..((-y, node.val))

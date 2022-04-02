@@ -5,8 +5,8 @@
 #         self.next = None
 #         self.random = None
 
-c_ Solution(o..):
-  ___ copyRandomList  head):
+c_ Solution(o..
+  ___ copyRandomList  head
     """
     :type head: RandomListNode
     :rtype: RandomListNode

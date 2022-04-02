@@ -4,8 +4,8 @@ Created on Feb 26, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxSlidingWindow  nums, k):
+c_ Solution(o..
+    ___ maxSlidingWindow  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         """
         res    # list
         d..    # list
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             __ d.. a.. d..[0] __ i-k:
                 d...pop(0)
             w.... d.. a.. nums[d..[-1]] < num:

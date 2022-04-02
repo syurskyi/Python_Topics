@@ -6,7 +6,7 @@ def flatten(list_of_lists):
 '''
 
 
-___ flatten(list_of_lists):
+___ flatten(list_of_lists
     __ l..(list_of_lists) __ 1:
         __ t..(list_of_lists[0]) __ l..:
             output = flatten(list_of_lists[0])

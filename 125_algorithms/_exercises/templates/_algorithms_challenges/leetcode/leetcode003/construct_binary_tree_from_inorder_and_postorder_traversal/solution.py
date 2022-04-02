@@ -9,7 +9,7 @@ c_ Solution:
     # @param inorder, a list of integers
     # @param postorder, a list of integers
     # @return a tree node
-    ___ buildTree  inorder, postorder):
+    ___ buildTree  inorder, postorder
         __ n.. inorder o. n.. postorder:
             r.. N..
         ____:

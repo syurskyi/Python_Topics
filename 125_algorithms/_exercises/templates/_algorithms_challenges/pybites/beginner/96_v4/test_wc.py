@@ -6,7 +6,7 @@ ____ Previous.wc _______ wc
 
 lines = [b'Hello world',
          b'Keep calm and code in Python',
-         b'Have a nice weekend']
+         b'Have a nice weekend'
 
 
 ?p__.m__.p.("some_text, expected", [
@@ -14,9 +14,9 @@ lines = [b'Hello world',
     (b'\n'.j..(lines[:2]), '2 8 40'),
     (b'\n'.j..(lines), '3 12 60'),
 ])
-___ test_wc(some_text, expected, tmp_path):
+___ test_wc(some_text, expected, tmp_path
     f = tmp_path / "some_file.txt"
-    f.write_bytes(some_text)
+    f.w..(some_text)
     output = wc(f.resolve())
     # replace tabs / multiple spaces by single space
     output = __.sub(r'\t|\s+', ' ', output)

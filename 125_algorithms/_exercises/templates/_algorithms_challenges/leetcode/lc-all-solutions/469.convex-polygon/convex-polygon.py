@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ isConvex  points):
+c_ Solution(o..
+  ___ isConvex  points
     """
     :type points: List[List[int]]
     :rtype: bool
     """
     calcDir = l.... x, y, z: (y[0] - x[0]) * (z[1] - x[1]) - (y[1] - x[1]) * (z[0] - x[0])
     pre = N..
-    ___ i __ r..(0, l..(points) - 2):
+    ___ i __ r..(0, l..(points) - 2
       x = points[i]
       y = points[i + 1]
       z = points[i + 2]

@@ -20,14 +20,14 @@ between them.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         """
         dfs, return the longest path (#nodes) ended at the subroot/current node
         """
@@ -37,7 +37,7 @@ c_ Solution:
         dfs(root)
         r.. ret
 
-    ___ dfs  node):
+    ___ dfs  node
         """
         return #nodes ended at node including itself
         """

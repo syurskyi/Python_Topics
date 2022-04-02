@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ hIndex  citations):
+c_ Solution(o..
+  ___ hIndex  citations
     """
     :type citations: List[int]
     :rtype: int

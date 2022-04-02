@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ romanToInt  s):
+    ___ romanToInt  s
         """
         :type s: str
         :rtype: int
@@ -21,7 +21,7 @@ c_ Solution:
 
         ans += symbs[s[-1]]
 
-        ___ i __ r..(l..(s) - 2, -1, -1):
+        ___ i __ r..(l..(s) - 2, -1, -1
             __ symbs[s[i]] >= symbs[s[i + 1]]:
                 ans += symbs[s[i]]
             ____:

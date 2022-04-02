@@ -4,8 +4,8 @@ Created on Mar 28, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ largestDivisibleSubset  nums):
+c_ Solution(o..
+    ___ largestDivisibleSubset  nums
         __ n.. nums: r.. []
         nums.s..()
         n = l..(nums)
@@ -13,8 +13,8 @@ c_ Solution(o..):
         dp = [1]*n
         maxLen = 0
         maxInd = 0
-        ___ i __ r..(n):
-            ___ j __ r..(i-1, -1, -1):
+        ___ i __ r..(n
+            ___ j __ r..(i-1, -1, -1
                 __ nums[i]%nums[j] __ 0:
                     __ dp[i]<dp[j]+1:
                         dp[i] = dp[j]+1

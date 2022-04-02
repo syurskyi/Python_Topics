@@ -32,8 +32,8 @@ scroll down to 'Focus Mode'.
 00:01:28,200 --> 00:01:35,180
 You can actually hide the sidebar and have only the description and the code editor.
 """  # noqa E501
-text3 = '\n'.j..(text1.splitlines()[:9])
-text4 = '\n'.j..(text2.splitlines()[5:])
+text3 = '\n'.j..(text1.s.. [:9])
+text4 = '\n'.j..(text2.s.. [5:])
 # testing hours as well
 text5 = """
 32
@@ -57,5 +57,5 @@ she is talking super fast here!
     (text4, [19, 21, 20]),
     (text5, [34, 32, 33]),
 ])
-___ test_srt(text, expected):
+___ test_srt(text, expected
     ... get_srt_section_ids(text) __ expected

@@ -3,7 +3,7 @@ _______ unittest
 ____ linked_list _______ LinkedList
 
 
-c_ LinkedListTests(unittest.TestCase):
+c_ LinkedListTests(unittest.TestCase
     ___ setUp
         l.. = LinkedList()
 

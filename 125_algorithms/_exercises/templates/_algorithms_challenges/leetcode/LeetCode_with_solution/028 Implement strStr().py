@@ -5,7 +5,7 @@ Returns a pointer to the first occurrence of needle in haystack, or null if need
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ strStr_brute_force  haystack, needle):
+    ___ strStr_brute_force  haystack, needle
         """
         Algorithm:
         two pointers
@@ -16,12 +16,12 @@ c_ Solution:
         """
         l_hay = l..(haystack)
         l_ndl = l..(needle)
-        ___ i __ x..(l_hay-l_ndl+1):  # i+l_ndl <= l_hay
+        ___ i __ x..(l_hay-l_ndl+1  # i+l_ndl <= l_hay
             __ haystack[i:i+l_ndl]__needle:
                 r.. haystack[i:]
         r.. N..
 
-    ___ strStr  haystack, needle):
+    ___ strStr  haystack, needle
         """
         KMP algorithm
         :type haystack: str

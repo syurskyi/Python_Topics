@@ -29,7 +29,7 @@ ___ get_movies
     tree = get_tree().getroot()
     result    # list
     ___ m __ tree:
-        result.a..(m.attrib['title'])
+        result.a..(m.attrib 'title' )
     r.. result
 
 ___ get_movie_longest_runtime
@@ -39,9 +39,9 @@ ___ get_movie_longest_runtime
     current_longest_runtime = 0
     current_longest_title = "None"
     ___ m __ tree:
-        __ i..(m.attrib['runtime'].s.. [0]) > i..(current_longest_runtime):
-            current_longest_runtime = i..(m.attrib['runtime'].s.. [0])
-            current_longest_title = m.attrib['title']
+        __ i..(m.attrib 'runtime' .s.. [0]) > i..(current_longest_runtime
+            current_longest_runtime = i..(m.attrib 'runtime' .s.. [0])
+            current_longest_title = m.attrib 'title'
 
     r.. current_longest_title
 

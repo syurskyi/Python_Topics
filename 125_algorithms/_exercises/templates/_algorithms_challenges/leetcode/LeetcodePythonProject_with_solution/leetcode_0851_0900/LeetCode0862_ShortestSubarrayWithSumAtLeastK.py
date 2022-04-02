@@ -3,8 +3,8 @@ Created on Sep 17, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ shortestSubarray  A, K):
+c_ Solution(o..
+    ___ shortestSubarray  A, K
         """
         :type A: List[int]
         :type K: int
@@ -13,11 +13,11 @@ c_ Solution(o..):
         arr, k = A, K
         n = l..(arr)
         arr2 = [0]*(n+1)
-        ___ i __ r..(n):
+        ___ i __ r..(n
             arr2[i+1] = arr2[i] + arr[i]
         d    # list
         res = n+1
-        ___ i __ r..(n+1):
+        ___ i __ r..(n+1
             w.... d a.. arr2[i] - arr2[d[0]] >= k:
                 res = m..(res, i-d.pop(0))
             w.... d a.. arr2[i] <= arr2[d[-1]]:

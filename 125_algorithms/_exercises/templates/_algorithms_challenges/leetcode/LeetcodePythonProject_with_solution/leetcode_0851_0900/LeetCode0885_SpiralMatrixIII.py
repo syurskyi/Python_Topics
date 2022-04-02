@@ -3,8 +3,8 @@ Created on Oct 16, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ spiralMatrixIII  R, C, r0, c0):
+c_ Solution(o..
+    ___ spiralMatrixIII  R, C, r0, c0
         """
         :type R: int
         :type C: int
@@ -15,14 +15,14 @@ c_ Solution(o..):
         res    # list
         dx, dy, n = 0, 1, 0
         w.... l..(res) < R*C:
-            ___ _ __ r..(n//2+1):
+            ___ _ __ r..(n//2+1
                 __ 0 <= r0 < R a.. 0 <= c0 < C:
                     res.a..([r0, c0])
                 r0, c0 = r0+dx, c0+dy
             dx, dy, n = dy, -dx, n+1
         r.. res
     
-    ___ spiralMatrixIII_own  R, C, r0, c0):
+    ___ spiralMatrixIII_own  R, C, r0, c0
         """
         :type R: int
         :type C: int
@@ -36,9 +36,9 @@ c_ Solution(o..):
         dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
         i = 0
         w.... l..(res) < R*C:
-            ___ _ __ r..(2):
-                ___ _ __ r..(length):
-                    __ isInRange(pos, R, C):
+            ___ _ __ r..(2
+                ___ _ __ r..(length
+                    __ isInRange(pos, R, C
                         res.a..(pos)
                     d = dirs[i%4]
                     pos = [pos[0]+d[0], pos[1]+d[1]]
@@ -46,7 +46,7 @@ c_ Solution(o..):
             length += 1
         r.. res
     
-    ___ isInRange  pos, R, C):
+    ___ isInRange  pos, R, C
         r.. 0 <= pos[0] < R a.. 0 <= pos[1] < C
     
     ___ test

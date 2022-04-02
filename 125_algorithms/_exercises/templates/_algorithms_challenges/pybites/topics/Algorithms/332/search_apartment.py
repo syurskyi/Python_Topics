@@ -15,12 +15,12 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
     building_list    # list
     __ direction __ "E":
         buildings.r..
-    ___ index, building __ e..(buildings):
+    ___ index, building __ e..(buildings
         __ building > highest:
             highest = building
             building_list.a..(index)
     __ direction __ "E":
-        ___ index, building __ e..(building_list):
+        ___ index, building __ e..(building_list
             building_list[index] = l..(buildings)-building-1
         building_list.r..
     r.. building_list

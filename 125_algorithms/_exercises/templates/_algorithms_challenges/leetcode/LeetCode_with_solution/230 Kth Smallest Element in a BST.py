@@ -14,14 +14,14 @@ __author__ = 'Daniel'
 
 
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ kthSmallest  root, k):
+    ___ kthSmallest  root, k
         """
         :type root: TreeNode
         :type k: int
@@ -35,7 +35,7 @@ c_ Solution:
         ____:
             r.. kthSmallest(root.left, k)
 
-    ___ cnt  root):
+    ___ cnt  root
         __ n.. root:
             r.. 0
 

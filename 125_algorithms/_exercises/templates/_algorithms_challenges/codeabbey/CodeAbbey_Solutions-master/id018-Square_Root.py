@@ -1,6 +1,6 @@
-___ sqRoot(numbers):
+___ sqRoot(numbers
     answer    # list
-    ___ number __ r..(numbers):
+    ___ number __ r..(numbers
         data = raw_input().s.. 
         value,runs = i..(data[0]),i..(data[1])
         root = 1.00
@@ -8,7 +8,7 @@ ___ sqRoot(numbers):
         __ root __ 0:
             print(1)
         ____:
-            ___ x __ r..(runs):
+            ___ x __ r..(runs
                 division = value / root
                 abs(root - division)
                 root = (root + division) / 2

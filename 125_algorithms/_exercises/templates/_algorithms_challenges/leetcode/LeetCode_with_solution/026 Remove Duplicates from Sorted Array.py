@@ -10,7 +10,7 @@ Your function should return length = 2, and A is now [1,2].
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ removeDuplicates  A):
+    ___ removeDuplicates  A
         """
         Algorithms: Two Pointers, open & closed
         Data structure: array
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. closed_ptr+1 # length is index+1
 
-    ___ removeDuplicates_another_loop_style  A):
+    ___ removeDuplicates_another_loop_style  A
         """
         Yet another looping style - double while loops
         :param A: list

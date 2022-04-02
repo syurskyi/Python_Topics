@@ -1,6 +1,6 @@
-___ pythagorean(triangles):
+___ pythagorean(triangles
     answer    # list
-    ___ triangle __ r..(triangles):
+    ___ triangle __ r..(triangles
         sides = input().s.. 
         a,b,c = sides
         a,b,c = i..(a),i..(b),i..(c)

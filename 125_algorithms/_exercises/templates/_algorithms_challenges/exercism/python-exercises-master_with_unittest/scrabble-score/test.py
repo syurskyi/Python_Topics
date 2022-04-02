@@ -5,7 +5,7 @@ ____ scrabble_score _______ score
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ WordTest(unittest.TestCase):
+c_ WordTest(unittest.TestCase
     ___ test_lowercase_letter
         assertEqual(score("a"), 1)
 

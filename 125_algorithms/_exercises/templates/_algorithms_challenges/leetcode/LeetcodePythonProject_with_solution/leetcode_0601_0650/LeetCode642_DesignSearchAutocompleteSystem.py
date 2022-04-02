@@ -3,16 +3,16 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-c_ TreeNode(o..):
-    ___ - , val):
+c_ TreeNode(o..
+    ___ - , val
         val = val
         children    # dict
         candidates    # dict
         isLeaf = F..
 
-c_ AutocompleteSystem(o..):
+c_ AutocompleteSystem(o..
 
-    ___ - , sentences, times):
+    ___ - , sentences, times
         """
         :type sentences: List[str]
         :type times: List[int]
@@ -20,7 +20,7 @@ c_ AutocompleteSystem(o..):
         root = TreeNode(N..)
         node = root
         s = ''
-        ___ s, count __ z..(sentences, times):
+        ___ s, count __ z..(sentences, times
             node = root
             ___ c __ s:
                 __ c n.. __ node.children:
@@ -30,7 +30,7 @@ c_ AutocompleteSystem(o..):
                 node.candidates[s] = node.candidates.get(s, 0)+count
             node.isLeaf = T..
 
-    ___ input  c):
+    ___ input  c
         """
         :type c: str
         :rtype: List[str]
@@ -55,7 +55,7 @@ c_ AutocompleteSystem(o..):
                 node = N..
                 r.. []
     
-    ___ addCandidate  s):
+    ___ addCandidate  s
         node = root
         ___ c __ s:
             __ c n.. __ node.children:

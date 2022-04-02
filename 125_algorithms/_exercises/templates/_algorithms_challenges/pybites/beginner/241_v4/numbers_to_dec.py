@@ -12,10 +12,10 @@ ___ list_to_decimal(nums: List[i..]) __ i..:
         1,     3  ,  4  , 5
         1000's, 100's, 10's, 1's
     """
-    __ n.. a..(isi..(num, i..) ___ num __ nums):
+    __ n.. a..(isi..(num, i..) ___ num __ nums
         r.. T..
 
-    __ n.. a..(num __ r..(0, 10) ___ num __ nums):
+    __ n.. a..(num __ r..(0, 10) ___ num __ nums
         r.. ValueError
 
-    r.. i..(''.j..(map(s.., nums)))
+    r.. i..(''.j.. m..(s.., nums)))

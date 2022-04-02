@@ -3,25 +3,25 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ flipgame  fronts, backs):
+c_ Solution(o..
+    ___ flipgame  fronts, backs
         """
         :type fronts: List[int]
         :type backs: List[int]
         :rtype: int
         """
         same = s..()
-        ___ f, b __ z..(fronts, backs):
+        ___ f, b __ z..(fronts, backs
             __ f __ b: same.add(f)
         res = f__('inf')
-        ___ f, b __ z..(fronts, backs):
+        ___ f, b __ z..(fronts, backs
             __ f n.. __ same:
                 res = m..(res, f)
             __ b n.. __ same:
                 res = m..(res, b)
         r.. res __ res != f__('inf') ____ 0
     
-    ___ flipgame_own_TLE  fronts, backs):
+    ___ flipgame_own_TLE  fronts, backs
         """
         :type fronts: List[int]
         :type backs: List[int]
@@ -29,15 +29,15 @@ c_ Solution(o..):
         """
         hashmap1    # dict
         hashmap2    # dict
-        ___ f, b __ z..(fronts, backs):
+        ___ f, b __ z..(fronts, backs
             hashmap1[f] = hashmap1.get(f, 0)+1
             hashmap2[b] = hashmap2.get(b, 0)+1
         res = f__('inf')
         helper(fronts, backs, 0, hashmap1, hashmap2)
         r.. res __ res != f__('inf') ____ 0
         
-    ___ helper  fronts, backs, i, hashmap1, hashmap2):
-        __ i >= l..(fronts):
+    ___ helper  fronts, backs, i, hashmap1, hashmap2
+        __ i >= l..(fronts
             r..
         __ backs[i] n.. __ hashmap1:
             res = m..(res, backs[i])
@@ -46,7 +46,7 @@ c_ Solution(o..):
         helper(fronts, backs, i+1, hashmap1, hashmap2)
         flip(fronts, backs, i, hashmap1, hashmap2)
     
-    ___ flip  fronts, backs, i, hashmap1, hashmap2):
+    ___ flip  fronts, backs, i, hashmap1, hashmap2
         f, b = fronts[i], backs[i]
         fronts[i], backs[i] = backs[i], fronts[i]
         hashmap1[b] = hashmap1.get(b, 0)+1

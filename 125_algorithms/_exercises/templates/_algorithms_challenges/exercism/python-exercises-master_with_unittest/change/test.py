@@ -5,7 +5,7 @@ ____ change _______ find_minimum_coins
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.2.0
 
-c_ ChangeTest(unittest.TestCase):
+c_ ChangeTest(unittest.TestCase
     ___ test_single_coin_change
         assertEqual(find_minimum_coins(25, [1, 5, 10, 25, 100]), [25])
 
@@ -37,15 +37,15 @@ c_ ChangeTest(unittest.TestCase):
         assertEqual(find_minimum_coins(0, [1, 5, 10, 21, 25]), [])
 
     ___ test_error_testing_for_change_smaller_than_smallest_coin
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             find_minimum_coins(3, [5, 10])
 
     ___ test_error_if_no_combination_can_add_up_to_target
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             find_minimum_coins(94, [5, 10])
 
     ___ test_cannot_find_negative_change_values
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             find_minimum_coins(-5, [1, 2, 5])
 
     # Utility functions
@@ -55,7 +55,7 @@ c_ ChangeTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 

@@ -65,33 +65,33 @@ ___ test_get_father_days_default
     ... l..(father_days) __ 12
     number_countries = s..(l..(val) ___ val __ father_days.values())
     ... number_countries __ 35
-    ... father_days['June 14'] __ ['U.S.', 'Canada', 'U.K.']
-    ... father_days['March 19'] __ [
+    ... father_days 'June 14'  __  'U.S.', 'Canada', 'U.K.'
+    ... father_days 'March 19'  __ [
         'Andora', 'Bolivia', 'Honduras', 'Italy',
-        'Liechtenstein', 'Portugal', 'Spain']
-    ... father_days['June 23'] __ ['Nicaragua', 'Poland']
-    ... father_days['August 9'] __ ['Samoa', 'Brazil']
-    ... father_days['June 7'] __ ['Austria', 'Belgium']
-    ... father_days['May 21'] __ ['Germany']
+        'Liechtenstein', 'Portugal', 'Spain'
+    ... father_days 'June 23'  __  'Nicaragua', 'Poland'
+    ... father_days 'August 9'  __  'Samoa', 'Brazil'
+    ... father_days 'June 7'  __  'Austria', 'Belgium'
+    ... father_days 'May 21'  __  'Germany'
 
 
 ___ test_get_father_days_other_years
     father_days = get_father_days y.._2021)
     # changing dates
-    ... father_days['June 20'] __ ['U.S.', 'Canada', 'U.K.']
-    ... father_days['August 8'] __ ['Samoa', 'Brazil']
-    ... father_days['May 13'] __ ['Germany']
-    ... father_days['June 13'] __ ['Austria', 'Belgium']
+    ... father_days 'June 20'  __  'U.S.', 'Canada', 'U.K.'
+    ... father_days 'August 8'  __  'Samoa', 'Brazil'
+    ... father_days 'May 13'  __  'Germany'
+    ... father_days 'June 13'  __  'Austria', 'Belgium'
     father_days = get_father_days y.._2022)
-    ... father_days['May 26'] __ ['Germany']
-    ... father_days['June 12'] __ ['Austria', 'Belgium']
+    ... father_days 'May 26'  __  'Germany'
+    ... father_days 'June 12'  __  'Austria', 'Belgium'
     # remains the same
-    ... father_days['March 19'] __ [
+    ... father_days 'March 19'  __ [
         'Andora', 'Bolivia', 'Honduras', 'Italy',
-        'Liechtenstein', 'Portugal', 'Spain']
+        'Liechtenstein', 'Portugal', 'Spain'
 
 
-___ test_generate_father_day_planning(capfd):
+___ test_generate_father_day_planning(capfd
     generate_father_day_planning()
     actual = ?.r .. 0]
     ... actual.s.. __ CALENDAR_OUTPUT

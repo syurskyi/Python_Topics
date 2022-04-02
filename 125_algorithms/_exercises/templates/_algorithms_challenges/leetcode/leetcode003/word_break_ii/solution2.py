@@ -11,8 +11,8 @@ dict = ["cat", "cats", "and", "sand", "dog"].
 A solution is ["cats and dog", "cat sand dog"].
 """
 
-c_ Solution(o..):
-    ___ wordBreak  s, wordDict):
+c_ Solution(o..
+    ___ wordBreak  s, wordDict
         """
         :type s: str
         :type wordDict: Set[str]
@@ -23,7 +23,7 @@ c_ Solution(o..):
         res = word_break_aux(s, wordDict, n - 1, t)
         r.. res
 
-    ___ word_break_aux  s, wordDict, i, t):
+    ___ word_break_aux  s, wordDict, i, t
         """
         Determine if s[:i + 1] can be segmented by dict wordDict
         """
@@ -34,7 +34,7 @@ c_ Solution(o..):
             r.. t[i]
         ____:
             res    # list
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 rest = word_break_aux(s, wordDict, j, t)
                 word = s[j + 1:i + 1]
                 __ rest a.. word __ wordDict:
@@ -48,4 +48,4 @@ s1 = "catsanddog"
 d1 = ["cat", "cats", "and", "sand", "dog"]
 s = Solution()
 print(s.wordBreak(s1, d1))
-print(s.wordBreak('leetcode', ['leet', 'code']))
+print(s.wordBreak('leetcode',  'leet', 'code' ))

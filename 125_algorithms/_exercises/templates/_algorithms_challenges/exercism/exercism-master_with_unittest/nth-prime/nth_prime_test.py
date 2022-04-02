@@ -3,7 +3,7 @@ _______ unittest
 ____ prime _______ nth_prime
 
 
-c_ NthPrimeTests(unittest.TestCase):
+c_ NthPrimeTests(unittest.TestCase
     ___ test_first_prime
         assertEqual(2, nth_prime(1))
 

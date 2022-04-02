@@ -4,8 +4,8 @@ Created on Aug 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ optimalDivision  nums):
+c_ Solution(o..
+    ___ optimalDivision  nums
         """
         :type nums: List[int]
         :rtype: str

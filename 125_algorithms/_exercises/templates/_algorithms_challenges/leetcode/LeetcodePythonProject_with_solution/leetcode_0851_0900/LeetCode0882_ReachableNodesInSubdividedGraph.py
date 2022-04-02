@@ -3,8 +3,8 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ reachableNodes  edges, M, N):
+c_ Solution(o..
+    ___ reachableNodes  edges, M, N
         """
         :type edges: List[List[int]]
         :type M: int
@@ -28,7 +28,7 @@ c_ Solution(o..):
                 _____
             visited[start] = T..
             res += 1
-            ___ i __ r..(N):
+            ___ i __ r..(N
                 __ graph[start][i] != -1:
                     __ move > graph[start][i] a.. n.. visited[i]:
                         heapq.heappush(h, ( -(move-graph[start][i]-1), i) )

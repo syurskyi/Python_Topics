@@ -1,3 +1,3 @@
-c_ SpaceAge(o..):
-    ___ - ):
+c_ SpaceAge(o..
+    ___ -
         p..

@@ -2,34 +2,34 @@
 
 c_ Person:
 
-    ___ - ):
+    ___ -
         p..
 
     ___ __str__
         r.. "I am a person"
 
 
-c_ Father(Person):
+c_ Father(Person
 
-    ___ - ):
+    ___ -
         Person.- )
 
     ___ __str__
         r.. f"{Person.__str__(self)} and cool daddy"
 
 
-c_ Mother(Person):
+c_ Mother(Person
 
-    ___ - ):
+    ___ -
         Person.- )
 
     ___ __str__
         r.. f"{Person.__str__(self)} and awesome mom"
 
 
-c_ Child(Father, Mother):
+c_ Child(Father, Mother
 
-    ___ - ):
+    ___ -
         p..
 
     ___ __str__

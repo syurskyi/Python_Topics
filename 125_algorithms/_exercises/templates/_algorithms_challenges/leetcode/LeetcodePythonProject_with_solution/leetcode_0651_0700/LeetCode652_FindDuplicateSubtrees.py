@@ -4,14 +4,14 @@ Created on Oct 4, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ findDuplicateSubtrees  root):
+c_ Solution(o..
+    ___ findDuplicateSubtrees  root
         """
         :type root: TreeNode
         :rtype: List[TreeNode]
@@ -20,7 +20,7 @@ c_ Solution(o..):
         postorder(root, {}, res)
         r.. res
     
-    ___ postorder  cur, hashmap, res):
+    ___ postorder  cur, hashmap, res
         __ n.. cur: r.. '#'
         serial = '%s,%s,%s' % (cur.val,\
                 postorder(cur.left, hashmap, res),\

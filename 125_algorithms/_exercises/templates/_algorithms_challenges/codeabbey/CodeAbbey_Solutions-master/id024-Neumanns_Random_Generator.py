@@ -1,6 +1,6 @@
 # Python 3.4.3
 
-___ neumanns(inputs):
+___ neumanns(inputs
     answer    # list
     ___ num __ [i..(x) ___ x __ input().s.. ]:
         loop_count = 0

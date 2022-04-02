@@ -3,8 +3,8 @@ Created on Oct 10, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ pushDominoes  dominoes):
+c_ Solution(o..
+    ___ pushDominoes  dominoes
         """
         :type dominoes: str
         :rtype: str
@@ -33,9 +33,9 @@ c_ Solution(o..):
             setVals(arr, i, n-1)
         r.. ''.j..(arr)
     
-    ___ setVals  arr, i, j):
+    ___ setVals  arr, i, j
         __ arr[i] __ arr[j]:
-            ___ i0 __ r..(i+1, j):
+            ___ i0 __ r..(i+1, j
                 arr[i0] = arr[i]
         ____ arr[i] __ 'R' a.. arr[j] __ 'L':
             i0, j0 = i, j

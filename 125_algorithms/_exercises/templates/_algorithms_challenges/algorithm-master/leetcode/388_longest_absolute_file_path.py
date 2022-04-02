@@ -26,7 +26,7 @@ there is error in that case if save the max size
 
 
 c_ Solution:
-    ___ lengthLongestPath  path):
+    ___ lengthLongestPath  path
         """
         :type path: str
         :rtype: int
@@ -37,7 +37,7 @@ c_ Solution:
 
         dep2size = {0: 0}
 
-        ___ line __ path.s..('\n'):
+        ___ line __ path.s..('\n'
             name = line.lstrip('\t')
             size = l..(name)
             depth = l..(line) - l..(name)

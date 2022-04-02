@@ -1,4 +1,4 @@
-___ wsd(numOfSums): #wsd = Weighted sum of digits
+___ wsd(numOfSums #wsd = Weighted sum of digits
         sums = raw_input().s..(' ')
         answer    # list
         ___ number __ sums:

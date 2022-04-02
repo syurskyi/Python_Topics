@@ -3,7 +3,7 @@ c_ Solution:
     @param: costs: n x 3 cost matrix
     @return: An integer, the minimum cost to paint all houses
     """
-    ___ minCost  costs):
+    ___ minCost  costs
         __ n.. costs:
             r.. 0
 
@@ -17,14 +17,14 @@ c_ Solution:
         k: the used `k`th color in previous house
         """
         i = j = k = prev = curr = 0
-        ___ j __ r..(n):
+        ___ j __ r..(n
             dp[0][j] = costs[0][j]
-        ___ i __ r..(1, m):
+        ___ i __ r..(1, m
             prev = curr # (i - 1) % 2
             curr = i % 2
-            ___ j __ r..(n):
+            ___ j __ r..(n
                 dp[curr][j] = INFINITY
-                ___ k __ r..(n):
+                ___ k __ r..(n
                     __ k != j a.. dp[prev][k] + costs[i][j] < dp[curr][j]:
                         dp[curr][j] = dp[prev][k] + costs[i][j]
 

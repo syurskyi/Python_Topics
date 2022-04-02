@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findMinArrowShots  points):
+c_ Solution(o..
+  ___ findMinArrowShots  points
     """
     :type points: List[List[int]]
     :rtype: int

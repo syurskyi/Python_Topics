@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ countCornerRectangles  G):
+    ___ countCornerRectangles  G
         """
         :type G: List[List[int]]
         :rtype: int
@@ -32,7 +32,7 @@ c_ Solution:
                 __ R[end] __ 0:
                     _____
 
-                ___ start __ r..(end):
+                ___ start __ r..(end
                     __ R[start] __ 0:
                         _____
 

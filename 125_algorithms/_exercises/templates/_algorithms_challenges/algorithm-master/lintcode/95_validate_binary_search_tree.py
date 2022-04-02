@@ -15,7 +15,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ isValidBST  root):
+    ___ isValidBST  root
         """
         :type root: TreeNode
         :rtype: bool
@@ -45,7 +45,7 @@ c_ Solution:
     ans = T..
     pre = N..
 
-    ___ isValidBST  root):
+    ___ isValidBST  root
         """
         :type root: TreeNode
         :rtype: bool

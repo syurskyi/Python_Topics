@@ -5,14 +5,14 @@ Created on Jan 31, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ isSameTree  p, q):
+c_ Solution(o..
+    ___ isSameTree  p, q
         """
         :type p: TreeNode
         :type q: TreeNode

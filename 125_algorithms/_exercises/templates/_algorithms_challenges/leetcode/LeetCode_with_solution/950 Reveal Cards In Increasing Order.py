@@ -59,7 +59,7 @@ c_ Solution:
         """
         q = d..()
         deck.s..()
-        ___ i __ r..(l..(deck) - 1, -1, -1):
+        ___ i __ r..(l..(deck) - 1, -1, -1
             __ q:
                 tail = q.pop()
                 q.appendleft(tail)

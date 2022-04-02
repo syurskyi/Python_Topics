@@ -2,8 +2,8 @@ _______ p__
 
 ____ decorator _______ strip_range
 
-TEXTS = ['Hello world', 'Welcome to PyBites',
-         'Decorators for fun and profit']
+TEXTS =  'Hello world', 'Welcome to PyBites',
+         'Decorators for fun and profit'
 
 
 ?p__.m__.p.("start, end, arg, expected", [
@@ -16,9 +16,9 @@ TEXTS = ['Hello world', 'Welcome to PyBites',
     (100, 110, TEXTS[2], 'Decorators for fun and profit'),
     (20, 100, TEXTS[2], 'Decorators for fun a.........'),
 ])
-___ test_strip_range(start, end, arg, expected):
+___ test_strip_range(start, end, arg, expected
     @strip_range(start, end)
-    ___ gen_output(text):
+    ___ gen_output(text
         r.. text
     actual = gen_output(text=arg)
     ... actual __ expected

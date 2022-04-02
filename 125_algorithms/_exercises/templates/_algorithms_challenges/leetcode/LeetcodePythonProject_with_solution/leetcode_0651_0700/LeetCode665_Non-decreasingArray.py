@@ -3,8 +3,8 @@ Created on Oct 9, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ checkPossibility  nums):
+c_ Solution(o..
+    ___ checkPossibility  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -21,7 +21,7 @@ c_ Solution(o..):
             prev = nums[i]
         r.. T..
     
-    ___ checkPossibility_modifying  nums):
+    ___ checkPossibility_modifying  nums
         """
         :type nums: List[int]
         :rtype: bool

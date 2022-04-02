@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ calculate  s):
+    ___ calculate  s
         """
         :type s: str
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution:
             '/': l.... a, b: a // b,
         })
 
-    ___ to_rpn  s, P):
+    ___ to_rpn  s, P
         stack, res    # list, []
 
         ___ i __ r..(l..(s)):
@@ -50,7 +50,7 @@ c_ Solution:
 
         r.. res
 
-    ___ eval_rpn  s, OP):
+    ___ eval_rpn  s, OP
         stack    # list
 
         ___ char __ s:
@@ -65,7 +65,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ calculate  s):
+    ___ calculate  s
         """
         :type s: str
         :rtype: int
@@ -80,7 +80,7 @@ c_ Solution:
 
         r.. eval_rpn(s)
 
-    ___ to_rpn  s):
+    ___ to_rpn  s
         stack, res    # list, []
 
         ___ i __ r..(l..(s)):
@@ -108,7 +108,7 @@ c_ Solution:
 
         r.. res
 
-    ___ eval_rpn  s):
+    ___ eval_rpn  s
         stack    # list
 
         ___ char __ s:

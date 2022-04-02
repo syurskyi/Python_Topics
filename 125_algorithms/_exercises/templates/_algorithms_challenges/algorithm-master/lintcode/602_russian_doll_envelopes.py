@@ -11,7 +11,7 @@ c_ Solution:
     @param: E: a number of envelopes with widths and heights
     @return: the maximum number of envelopes
     """
-    ___ maxEnvelopes  E):
+    ___ maxEnvelopes  E
         __ n.. E o. n.. E[0] o. l..(E[0]) != 2:
             r.. 0
 
@@ -36,7 +36,7 @@ c_ Solution:
     @param: E: a number of envelopes with widths and heights
     @return: the maximum number of envelopes
     """
-    ___ maxEnvelopes  E):
+    ___ maxEnvelopes  E
         ans = 0
         __ n.. E:
             r.. ans
@@ -51,10 +51,10 @@ c_ Solution:
 
         E.s..()
 
-        ___ i __ r..(n):
-            ___ j __ r..(i):
+        ___ i __ r..(n
+            ___ j __ r..(i
                 __ (E[j][0] < E[i][0] a.. E[j][1] < E[i][1] a..
-                    dp[j] + 1 > dp[i]):
+                    dp[j] + 1 > dp[i]
                     dp[i] = dp[j] + 1
                 __ dp[i] > ans:
                     ans = dp[i]

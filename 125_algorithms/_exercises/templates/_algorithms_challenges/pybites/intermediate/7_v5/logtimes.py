@@ -8,13 +8,13 @@ SHUTDOWN_EVENT = 'Shutdown initiated'
 logfile = os.path.j..('/tmp', 'log')
 urllib.request.urlretrieve('http://bit.ly/2AKSIbf', logfile)
 
-w__ open(logfile) __ f:
-    loglines = f.readlines()
+w__ o.. logfile) __ f:
+    loglines = f.r..
 
 
 # for you to code:
 
-___ convert_to_datetime(line):
+___ convert_to_datetime(line
     """TODO 1:
        Extract timestamp from logline and convert it to a datetime object.
        For example calling the function with:
@@ -26,7 +26,7 @@ ___ convert_to_datetime(line):
     r.. d__.strptime(parts[1], "%Y-%m-%dT%H:%M:%S")
 
 
-___ time_between_shutdowns(loglines: l..):
+___ time_between_shutdowns(loglines: l..
     """TODO 2:
        Extract shutdown events ("Shutdown initiated") from loglines and
        calculate the timedelta between the first and last one.

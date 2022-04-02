@@ -5,20 +5,20 @@ Created on Feb 10, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
-c_ Solution(o..):
-    ___ sortList  head):
+c_ Solution(o..
+    ___ sortList  head
         """
         :type head: ListNode
         :rtype: ListNode
         """
         r.. helper(head)
     
-    ___ helper  node):
+    ___ helper  node
         __ n.. node o. n.. node.next:
             r.. node
         prev = ListNode(-1)
@@ -38,7 +38,7 @@ c_ Solution(o..):
         result = merge(result1, result2)
         r.. result
     
-    ___ merge  node1, node2):
+    ___ merge  node1, node2
         __ n.. node1:
             r.. node2
         __ n.. node2:

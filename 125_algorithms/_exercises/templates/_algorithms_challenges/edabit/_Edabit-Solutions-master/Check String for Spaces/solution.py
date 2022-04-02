@@ -1,4 +1,4 @@
-___ has_spaces(txt):
+___ has_spaces(txt
     __ txt.find(" ") __ -1:
         r.. F..
     ____:

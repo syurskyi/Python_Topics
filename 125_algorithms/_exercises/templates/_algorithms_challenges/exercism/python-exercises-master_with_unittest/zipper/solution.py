@@ -1,41 +1,41 @@
-c_ Zipper(o..):
+c_ Zipper(o..
     @staticmethod
-    ___ from_tree(tree):
+    ___ from_tree(tree
         r.. Zipper(d..(tree), [])
 
-    ___ - , tree, ancestors):
+    ___ - , tree, ancestors
         tree = tree
         ancestors = ancestors
 
     ___ value
-        r.. tree['value']
+        r.. tree 'value'
 
-    ___ set_value  value):
-        tree['value'] = value
+    ___ set_value  value
+        tree 'value'  = value
         r.. self
 
     ___ left
-        __ tree['left'] __ N..
+        __ tree 'left'  __ N..
             r.. N..
-        r.. Zipper(tree['left'], ancestors + [tree])
+        r.. Zipper(tree 'left' , ancestors + [tree])
 
-    ___ set_left  tree):
-        tree['left'] = tree
+    ___ set_left  tree
+        tree 'left'  = tree
         r.. self
 
     ___ right
-        __ tree['right'] __ N..
+        __ tree 'right'  __ N..
             r.. N..
-        r.. Zipper(tree['right'], ancestors + [tree])
+        r.. Zipper(tree 'right' , ancestors + [tree])
 
-    ___ set_right  tree):
-        tree['right'] = tree
+    ___ set_right  tree
+        tree 'right'  = tree
         r.. self
 
     ___ up
         r.. Zipper(ancestors[-1], ancestors[:-1])
 
     ___ to_tree
-        __ any(ancestors):
+        __ any(ancestors
             r.. ancestors[0]
         r.. tree

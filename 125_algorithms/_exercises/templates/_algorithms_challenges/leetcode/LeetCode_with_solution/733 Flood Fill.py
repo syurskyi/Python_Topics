@@ -53,7 +53,7 @@ c_ Solution:
         dfs(image, sr, sc, cur_color, newColor)
         r.. image
 
-    ___ dfs  image, i, j, cur_color, new_color):
+    ___ dfs  image, i, j, cur_color, new_color
         image[i][j] = new_color
         m, n = l..(image), l..(image[0])
         ___ di, dj __ dirs:

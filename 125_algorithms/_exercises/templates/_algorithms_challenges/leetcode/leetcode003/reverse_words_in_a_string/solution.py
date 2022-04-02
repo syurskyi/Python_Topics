@@ -10,7 +10,7 @@ return "blue is sky the".
 c_ Solution:
     # @param s, a string
     # @return a string
-    ___ reverseWords  s):
+    ___ reverseWords  s
         ls = l..(s)
         # C-like processing
         # Process spaces
@@ -27,7 +27,7 @@ c_ Solution:
         end = j
         # Remove duplicate spaces between words
         k = start  # Last processed
-        ___ p __ r..(start, end + 1):
+        ___ p __ r..(start, end + 1
             __ p > start a.. ls[p] __ ' ' a.. ls[p] __ ls[p - 1]:
                 p..
             ____:
@@ -42,26 +42,26 @@ c_ Solution:
         # Reverse each word
         ws = start  # Word start index
         we = start  # Word end index
-        ___ i __ r..(start, end + 1):
+        ___ i __ r..(start, end + 1
             __ ls[i] __ ' ' o. i __ end:
                 we = end __ i __ end ____ i - 1
                 reverse(ls, ws, we)
                 ws = i + 1
         r.. ''.j..(ls[start:end + 1])
 
-    ___ reverse  a, i, j):
+    ___ reverse  a, i, j
         w.... i < j:
             a[i], a[j] = a[j], a[i]
             i += 1
             j -= 1
 
-    ___ reverseWords2  s):
+    ___ reverseWords2  s
         cs = l..(s)  # Make a C-string like list
         n = l..(cs)
         # Remove leading and trailing spaces
         left = 0
         right = n - 1
-        w.... left <= right a.. (cs[left] __ ' ' o. cs[right] __ ' '):
+        w.... left <= right a.. (cs[left] __ ' ' o. cs[right] __ ' '
             __ cs[left] __ ' ':
                 left += 1
             __ cs[right] __ ' ':
@@ -73,7 +73,7 @@ c_ Solution:
         reverse(cs, left, right)
         # Remove multiple spaces between two words
         j = left
-        ___ i __ r..(left, right + 1):
+        ___ i __ r..(left, right + 1
             __ cs[i] != ' ' o. cs[i] __ ' ' a.. cs[i - 1] != ' ':
                 cs[j] = cs[i]
                 j += 1

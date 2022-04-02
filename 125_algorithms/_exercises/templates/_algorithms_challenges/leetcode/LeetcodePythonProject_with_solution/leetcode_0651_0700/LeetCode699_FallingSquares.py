@@ -3,14 +3,14 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-c_ Interval(o..):
-    ___ - , start, end, height):
+c_ Interval(o..
+    ___ - , start, end, height
         start = start
         end = end
         height = height
 
-c_ Solution(o..):
-    ___ fallingSquares  positions):
+c_ Solution(o..
+    ___ fallingSquares  positions
         """
         :type positions: List[List[int]]
         :rtype: List[int]
@@ -24,7 +24,7 @@ c_ Solution(o..):
             res.a..(h)
         r.. res
     
-    ___ getHeight  intervals, cur):
+    ___ getHeight  intervals, cur
         preMaxHeight = 0
         ___ i __ intervals:
             __ i.end <= cur.start: _____

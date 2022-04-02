@@ -29,7 +29,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ change  amount, coins):
+    ___ change  amount, coins
         """
         let F[amount][l] = # ways ending (but not necesserily) using coins[l-1]
         (i.e. coins[:l])
@@ -44,18 +44,18 @@ c_ Solution:
         """
         F = defaultdict(l....: defaultdict(i..))
         n = l..(coins)
-        ___ l __ r..(n + 1):
+        ___ l __ r..(n + 1
             F[0][l] = 1   # trivial case
              # why not start from 0, because we need to handle trivial case F[0][0]
 
-        ___ a __ r..(1, amount + 1):
-            ___ l __ r..(1, n + 1):
+        ___ a __ r..(1, amount + 1
+            ___ l __ r..(1, n + 1
                 F[a][l] = F[a][l-1] + F[a - coins[l-1]][l]
 
         r.. F[amount][n]
 
 
-    ___ change_TLE  amount, coins):
+    ___ change_TLE  amount, coins
         """
         Like the take the step for the stairs dp
 
@@ -73,17 +73,17 @@ c_ Solution:
         coins.s..()
         n = l..(coins)
         F = defaultdict(l....: defaultdict(i..))
-        ___ i __ r..(n):
+        ___ i __ r..(n
             F[coins[i]][i] = 1
 
-        ___ a __ r..(1, amount + 1):
-            ___ i __ r..(n):
-                ___ j __ r..(i + 1):
+        ___ a __ r..(1, amount + 1
+            ___ i __ r..(n
+                ___ j __ r..(i + 1
                     F[a][i] += F[a - coins[i]][j]
 
         r.. s..(F[amount].values())
 
-    ___ change_error  amount, coins):
+    ___ change_error  amount, coins
         """
         Like the take the step for the stairs dp
 
@@ -96,7 +96,7 @@ c_ Solution:
         :rtype: int
         """
         F = {0: 1}
-        ___ a __ r..(1, amount + 1):
+        ___ a __ r..(1, amount + 1
             F[a] = 0
             ___ c __ coins:
                 __ a - c __ F:

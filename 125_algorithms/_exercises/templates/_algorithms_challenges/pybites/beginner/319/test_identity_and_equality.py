@@ -8,7 +8,7 @@ ____ identity_and_equality _______ (
 
 
 # `NewList` for tests
-c_ NewList(l..):
+c_ NewList(l..
     p..
 
 
@@ -39,7 +39,7 @@ other_car4 = Car("Porsche Cayenne", "black")
         (2, "Neither a week, nor a year old"),  # Other number
     ],
 )
-___ test_car_age(days, expected):
+___ test_car_age(days, expected
     ... Car.age(days) __ expected
 
 
@@ -57,7 +57,7 @@ ___ test_car_age(days, expected):
         #(l1, l8, False),  # Two completely different lists
     ],
 )
-___ test_the_same_configuration(list1, list2, expected):
+___ test_the_same_configuration(list1, list2, expected
     ... Car.has_same_configuration(list1, list2) __ expected
 
 
@@ -70,7 +70,7 @@ ___ test_the_same_configuration(list1, list2, expected):
         (other_car2, other_car3, F..),  # Completely different cars
     ],
 )
-___ test_is_same_car_color_and_model(car1, car2, expected):
+___ test_is_same_car_color_and_model(car1, car2, expected
     ... is_same_car_color_and_model(car1, car2) __ expected
 
 
@@ -82,5 +82,5 @@ ___ test_is_same_car_color_and_model(car1, car2, expected):
         (other_car1, other_car2, F..),  # Completely different cars
     ],
 )
-___ test_is_the_same_instance_of_car(car1, car2, expected):
+___ test_is_the_same_instance_of_car(car1, car2, expected
     ... is_same_instance_of_car(car1, car2) __ expected

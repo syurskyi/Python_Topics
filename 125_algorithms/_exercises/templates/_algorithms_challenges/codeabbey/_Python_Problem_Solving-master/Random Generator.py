@@ -1,7 +1,7 @@
 #accept the number of the element to generate random numbers
 data = i..(input())
 #accept the numbers from which random numbers will be generated
-a = l..(map(s..,input().s..()))
+a = l.. m..(s..,input().s..()))
 #traverse through the list of the numbers
 ___ i __ a:
     #to store the current value of i and this is used if the numbers are repeating then print the random number
@@ -25,7 +25,7 @@ ___ i __ a:
         ____:
             #else take the missing count to complete 8 digit number and add zero in fornt of the number.
             miss_count = 8 - l..(temp_str)
-            ___ k __ r..(miss_count):
+            ___ k __ r..(miss_count
                 temp_str = '0' + temp_str
             i = temp_str[2:-2]
         #increment the count

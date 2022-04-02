@@ -47,11 +47,11 @@ ___ encode(record: i..) __ s..:
 
 
 
-___ decode(short_url: s..) __ i..:
+___ d.. short_url: s..) __ i..:
     """Decodes the Base62 string into a Base10 integer"""
 
     value = 0
-    ___ i,character __ e..(r..(short_url),0):
+    ___ i,character __ e..(r..(short_url),0
         value += BASE**i * CODEX.index(character)
 
 
@@ -67,12 +67,12 @@ ___ redirect(url: s..) __ s..:
     3. Return URL stored in LINKS or proper message
     """
     
-    __ n.. url.startswith(SITE):
+    __ n.. url.startswith(SITE
         r.. INVALID
 
     number = url.s..('/')[-1]
 
-    decoded = decode(number)
+    decoded = d.. number)
 
     r.. LINKS.get(decoded,NO_RECORD)
 

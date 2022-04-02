@@ -17,7 +17,7 @@ True
 
 
 c_ ValidWordAbbr:
-    ___ - , dictionary):
+    ___ - , dictionary
         """
         initialize your data structure here.
         :type dictionary: List[str]
@@ -28,7 +28,7 @@ c_ ValidWordAbbr:
             abbr = abbreviation(word)
             abbrs[abbr] = word
 
-    ___ isUnique  word):
+    ___ isUnique  word
         """
         check if a word is unique.
         :type word: str
@@ -37,7 +37,7 @@ c_ ValidWordAbbr:
         abbr = abbreviation(word)
         r.. abbr n.. __ abbrs
 
-    ___ abbreviation  word):
+    ___ abbreviation  word
         __ l..(word) < 3:
             r.. word
 

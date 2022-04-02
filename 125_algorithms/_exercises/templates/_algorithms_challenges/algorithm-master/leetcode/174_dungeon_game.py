@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ calculateMinimumHP  G):
+    ___ calculateMinimumHP  G
         """
         :type G: List[List[int]]
         :rtype: int
@@ -10,8 +10,8 @@ c_ Solution:
         dp[m][n - 1] = 1
         dp[m - 1][n] = 1
 
-        ___ i __ r..(m - 1, -1, -1):
-            ___ j __ r..(n - 1, -1, -1):
+        ___ i __ r..(m - 1, -1, -1
+            ___ j __ r..(n - 1, -1, -1
                 dp[i][j] = m..(dp[i + 1][j], dp[i][j + 1]) - G[i][j]
                 __ dp[i][j] <= 0:
                     dp[i][j] = 1

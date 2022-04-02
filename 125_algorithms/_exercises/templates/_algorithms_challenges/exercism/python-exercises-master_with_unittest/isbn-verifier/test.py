@@ -5,7 +5,7 @@ ____ isbn_verifier _______ verify
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.4.0
 
-c_ IsbnVerifierTest(unittest.TestCase):
+c_ IsbnVerifierTest(unittest.TestCase
 
     ___ test_valid_isbn_number
         assertIs(verify('3-598-21508-8'), T..)

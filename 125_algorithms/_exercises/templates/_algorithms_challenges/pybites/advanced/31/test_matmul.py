@@ -1,14 +1,14 @@
 ____ matmul _______ Matrix
 
 
-c_ MatrixWithoutMatMul(o..):
+c_ MatrixWithoutMatMul(o..
 
-    ___ - , values):
+    ___ - , values
         values = values
         col = l..(values[0])
         row = l..(values)
 
-    ___ __matmul__  other):
+    ___ __matmul__  other
         r.. NotImplemented
 
 

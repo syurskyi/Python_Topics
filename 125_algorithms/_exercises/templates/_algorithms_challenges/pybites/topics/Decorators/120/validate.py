@@ -1,17 +1,17 @@
 ____ functools _______ wraps
 
 
-___ int_args(func):
+___ int_args(func
     @wraps(func)
     # complete this decorator
-    ___ wrapper(*args):
-        __ s..(isi..(n, s..) ___ n __ args):
+    ___ wrapper(*args
+        __ s..(isi..(n, s..) ___ n __ args
             r.. T..
-        ____ s..(isi..(n, f__) ___ n __ args):
+        ____ s..(isi..(n, f__) ___ n __ args
             r.. T..
-        ____ s..(n < 0 ___ n __ args):
+        ____ s..(n < 0 ___ n __ args
             r.. ValueError
-        ____ a..(isi..(n, i..) ___ n __ args):
+        ____ a..(isi..(n, i..) ___ n __ args
             r.. func(*args)
     r.. wrapper
 """ 

@@ -4,7 +4,7 @@ DOWN, UP, LEFT, RIGHT = '⇓', '⇑', '⇐', '⇒'
 START_VALUE = 1
 STOP = ' '
 
-___ _seek_next(grid: l.., position: t..):
+___ _seek_next(grid: l.., position: t..
     row, col = position
     next_val = grid[row][col] + 1
     __ row < l..(grid)-1 a.. grid[row + 1][col] __ next_val:
@@ -24,7 +24,7 @@ ___ print_sequence_route(grid: s.., start_coordinates_ N..
        them.  Each time you turn append the grid with its corresponding symbol
        (DOWN / UP / LEFT / RIGHT). See the TESTS for more info."""
     grid_array = [[i..(v) ___ v __ __.f..(r'(\d+)', line)]
-                  ___ line __ grid.splitlines(keepends=F..)
+                  ___ line __ grid.s..k.._F..)
                   __ l..(line.r..('|', '').strip()) > 0]
 
     start_coordinates = [(row, col)

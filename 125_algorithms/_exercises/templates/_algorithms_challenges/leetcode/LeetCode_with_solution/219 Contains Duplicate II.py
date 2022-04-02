@@ -8,14 +8,14 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ containsNearbyDuplicate  nums, k):
+    ___ containsNearbyDuplicate  nums, k
         """
         hash with heap
 
         :rtype: bool
         """
         d = defaultdict(l..)
-        ___ i, v __ e..(nums):
+        ___ i, v __ e..(nums
             heapq.heappush(d[v], i)
 
         ___ v __ d.v..

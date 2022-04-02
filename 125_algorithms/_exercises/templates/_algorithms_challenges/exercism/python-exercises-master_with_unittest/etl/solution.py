@@ -1,4 +1,4 @@
-___ transform(old):
+___ transform(old
     r.. {
         letter.l..: points
         ___ points, letters __ old.i..

@@ -5,11 +5,11 @@ _______ p__
 ____ logger _______ sum_even_numbers
 
 
-___ test_sum_numbers_function_works(caplog):
+___ test_sum_numbers_function_works(caplog
     ... sum_even_numbers([2, 9, 4, 11, 6]) __ 12
 
 
-___ test_sum_numbers_logging(caplog):
+___ test_sum_numbers_logging(caplog
     caplog.set_level(logging.INFO, logger="app")
     sum_even_numbers(l..(r..(1, 11)))
     ... l..(caplog.records) __ 1
@@ -21,7 +21,7 @@ ___ test_sum_numbers_logging(caplog):
     ... record.message __ expected
 
 
-___ test_sum_numbers_throws_exception(caplog):
+___ test_sum_numbers_throws_exception(caplog
     caplog.set_level(logging.INFO, logger="app")
     w__ p__.r.. T..
         sum_even_numbers([1, 'a', 2, 3])

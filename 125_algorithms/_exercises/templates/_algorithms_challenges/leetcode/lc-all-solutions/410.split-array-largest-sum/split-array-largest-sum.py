@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ splitArray  nums, m):
+c_ Solution(o..
+  ___ splitArray  nums, m
     """
     :type nums: List[int]
     :type m: int
     :rtype: int
     """
 
-    ___ valid(nums, target, m):
+    ___ valid(nums, target, m
       count = 1
       total = 0
       ___ num __ nums:
@@ -22,7 +22,7 @@ c_ Solution(o..):
     mid = 0
     w.... start <= end:
       mid = start + (end - start) / 2
-      __ valid(nums, mid, m):
+      __ valid(nums, mid, m
         end = mid - 1
       ____:
         start = mid + 1

@@ -26,12 +26,12 @@ books = [
          published="2015-04-14"),
 ]
 
-___ sort_books_by_len_of_title(books=books):
+___ sort_books_by_len_of_title(books=books
     name_list = [entry.title ___ entry __ books]
     r.. m..(name_list, key=l..)
 
 
-___ sort_books_by_first_authors_last_name(books=books):
+___ sort_books_by_first_authors_last_name(books=books
     author_list = [entry.authors ___ entry __ books]
     f = s..(author_list,
                key=l.... x: x.s..(' ')[-1],
@@ -41,14 +41,14 @@ ___ sort_books_by_first_authors_last_name(books=books):
                     __ t.authors __ f])
 
 
-___ sort_books_by_number_of_page(books=books):
+___ sort_books_by_number_of_page(books=books
     page_list = [entry.pages ___ entry __ books]
     r.. ''.j..([t.title
                     ___ t __ books
                     __ t.pages __ m..(page_list)])
 
 
-___ sort_books_by_published_date(books=books):
+___ sort_books_by_published_date(books=books
     date_list = [d__.strptime(entry.published, '%Y-%m-%d')
                  ___ entry __ books]
     l_pub = s..(date_list, r.._T..[0]

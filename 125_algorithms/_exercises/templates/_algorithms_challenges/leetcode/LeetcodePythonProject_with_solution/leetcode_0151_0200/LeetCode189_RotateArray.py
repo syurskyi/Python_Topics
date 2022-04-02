@@ -4,8 +4,8 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ rotate  nums, k):
+c_ Solution(o..
+    ___ rotate  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -15,10 +15,10 @@ c_ Solution(o..):
         k = k % length
         __ k __ 0: r..
         arr    # list
-        ___ i0 __ r..(length):
+        ___ i0 __ r..(length
             i = length + i0 - k __ i0<k ____ i0-k
             arr.a..(nums[i])
-        ___ i __ r..(length):
+        ___ i __ r..(length
             nums[i] = arr[i]
     
     ___ test

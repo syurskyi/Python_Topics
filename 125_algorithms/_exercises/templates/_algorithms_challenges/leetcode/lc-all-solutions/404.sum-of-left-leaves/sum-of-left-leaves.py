@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ sumOfLeftLeaves  root):
+c_ Solution(o..
+  ___ sumOfLeftLeaves  root
     """
     :type root: TreeNode
     :rtype: int
     """
 
-    ___ helper(root, isLeft):
+    ___ helper(root, isLeft
       __ n.. root:
         r.. N..
       left = helper(root.left, T..)

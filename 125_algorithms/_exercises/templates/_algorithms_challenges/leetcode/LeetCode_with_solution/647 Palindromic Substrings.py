@@ -21,7 +21,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ countSubstrings  s):
+    ___ countSubstrings  s
         """
         for every s[i:j], check whether it is a palindrome
         O(n^2 * n)
@@ -36,12 +36,12 @@ c_ Solution:
         """
         F = defaultdict(l....: defaultdict(b..))
         n = l..(s)
-        ___ i __ r..(n):
+        ___ i __ r..(n
             F[i][i] = T..
             F[i][i+1] = T..
 
-        ___ i __ r..(n-1, -1, -1):
-            ___ j __ r..(i+2, n+1):
+        ___ i __ r..(n-1, -1, -1
+            ___ j __ r..(i+2, n+1
                 __ s[i] __ s[j-1]:
                     F[i][j] = F[i+1][j-1]
                 ____:

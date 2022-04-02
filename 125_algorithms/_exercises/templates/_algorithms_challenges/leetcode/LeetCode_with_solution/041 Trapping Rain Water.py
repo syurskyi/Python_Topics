@@ -7,7 +7,7 @@ Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ trap  A):
+    ___ trap  A
         """
         Simplified version of Palantir Technology Online Test 2013
 
@@ -22,7 +22,7 @@ c_ Solution:
         right_maxs = [0 ___ _ __ A]  # on the right including itself
 
         left_max = 0
-        ___ ind, val __ e..(A):
+        ___ ind, val __ e..(A
             left_max = m..(left_max, val)
             left_maxs[ind] = left_max
 
@@ -34,7 +34,7 @@ c_ Solution:
 
         # calculate the volume
         volume = 0
-        ___ ind, val __ e..(A):
+        ___ ind, val __ e..(A
             volume += m..(0, m..(left_maxs[ind], right_maxs[ind]) - val)
 
         r.. volume

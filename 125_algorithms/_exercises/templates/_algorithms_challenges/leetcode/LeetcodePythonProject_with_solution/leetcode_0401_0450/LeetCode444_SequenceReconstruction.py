@@ -4,13 +4,13 @@ Created on Apr 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ sequenceReconstruction  org, seqs):
+c_ Solution(o..
+    ___ sequenceReconstruction  org, seqs
         graph    # dict
         degree    # dict
         ___ seq __ seqs:
             length = l..(seq)
-            ___ i __ r..(length):
+            ___ i __ r..(length
                 __ seq[i] n.. __ graph:
                     graph[seq[i]]    # list
                 __ seq[i] n.. __ degree:

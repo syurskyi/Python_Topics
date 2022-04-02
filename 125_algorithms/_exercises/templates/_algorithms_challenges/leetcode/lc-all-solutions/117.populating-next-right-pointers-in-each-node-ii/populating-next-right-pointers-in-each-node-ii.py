@@ -9,7 +9,7 @@
 c_ Solution:
   # @param root, a tree link node
   # @return nothing
-  ___ connect  root):
+  ___ connect  root
     p = root
     pre = N..
     head = N..

@@ -7,7 +7,7 @@ MIN_DAYS_TO_COUNT_AS_MONTH = 10
 MONTHS_PER_YEAR = 12
 
 
-___ calc_months_passed(year, month, day):
+___ calc_months_passed(year, month, day
    """Construct a date object from the passed in arguments.
       If this fails due to bad inputs reraise the exception.
       Also if the new date is < START_DATE raise a ValueError.

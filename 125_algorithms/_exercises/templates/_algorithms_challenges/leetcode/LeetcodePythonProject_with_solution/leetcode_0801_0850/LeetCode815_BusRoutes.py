@@ -3,8 +3,8 @@ Created on Apr 30, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numBusesToDestination  routes, S, T):
+c_ Solution(o..
+    ___ numBusesToDestination  routes, S, T
         """
         :type routes: List[List[int]]
         :type S: int
@@ -33,7 +33,7 @@ c_ Solution(o..):
         w.... queue:
             size = l..(queue)
             count += 1
-            ___ _ __ r..(size):
+            ___ _ __ r..(size
                 stop = queue.pop(0)
                 __ stop __ t: r.. count
                 ___ r __ hashmap[stop]:

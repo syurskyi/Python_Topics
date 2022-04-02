@@ -36,10 +36,10 @@ ___ longest_streak(
     Return a tuple containing start and end date for the longest streak
     or None
     """
-    w__ open(data_file) __ f:
+    w__ o.. data_file) __ f:
         data = json.load(f)
     # You code from here
-    commits = data['commits']
+    commits = data 'commits'
     longest_streak = f__("-inf")
     start_date = end_date = N..
     
@@ -48,8 +48,8 @@ ___ longest_streak(
     current_streak = 1
     ___ i __ r..(l..(commits)):
         commit = commits[i]
-        __ commit['passed']:
-            date = p..(commit['date'])
+        __ commit 'passed' :
+            date = p..(commit 'date' )
             date = date.astimezone(my_tz)
 
 

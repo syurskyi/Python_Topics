@@ -21,19 +21,19 @@ expected_other_start_arg = '''13
 expected_other_start_arg += expected
 
 
-___ test_countdown_for(capfd):
+___ test_countdown_for(capfd
     countdown_for()
     out, _ = capfd.readouterr()
     ... out __ expected
 
 
-___ test_countdown_recursive(capfd):
+___ test_countdown_recursive(capfd
     countdown_recursive()
     out, _ = capfd.readouterr()
     ... out __ expected
 
 
-___ test_test_countdown_recursive_different_start(capfd):
+___ test_test_countdown_recursive_different_start(capfd
     countdown_recursive(13)
     out, _ = capfd.readouterr()
     ... out __ expected_other_start_arg

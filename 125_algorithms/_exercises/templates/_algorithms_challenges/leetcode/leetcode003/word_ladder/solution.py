@@ -19,8 +19,8 @@ All words have the same length.
 All words contain only lowercase alphabetic characters.
 """
 
-c_ Solution(o..):
-    ___ ladderLength  beginWord, endWord, wordDict):
+c_ Solution(o..
+    ___ ladderLength  beginWord, endWord, wordDict
         """
         :type beginWord: str
         :type endWord: str
@@ -32,7 +32,7 @@ c_ Solution(o..):
         letters = map(chr, r..(o..('a'), o..('z') + 1))
         word_dict = wordDict
         # Remove words that are same as beginWord
-        ___ word __ s..(wordDict):
+        ___ word __ s..(wordDict
             __ beginWord __ word:
                 wordDict.remove(beginWord)
         wordDict.add(endWord)
@@ -40,14 +40,14 @@ c_ Solution(o..):
             cur = queue.pop(0)
             __ cur[0] __ endWord:
                 r.. cur[1] + 1
-            ___ word __ get_adjacent(cur[0]):
+            ___ word __ get_adjacent(cur[0]
                 wordDict.remove(word)  # Mark as visited
                 queue.a..((word, cur[1] + 1))
         r.. 0
 
-    ___ get_adjacent  word1):
+    ___ get_adjacent  word1
         res    # list
-        ___ i, e __ e..(word1):
+        ___ i, e __ e..(word1
             ___ letter __ letters:
                 word = word1[:i] + letter + word1[i + 1:]
                 __ word __ word_dict:

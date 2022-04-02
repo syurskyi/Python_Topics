@@ -7,7 +7,7 @@ Return the resulting string. You can go full loop, list comprehension or maybe s
 
 _______ s__
 
-___ remove_punctuation_solution_1(input_string):
+___ remove_punctuation_solution_1(input_string
     """Return a str with punctuation chars stripped out"""
     new_str    # list
     ___ c __ input_string:
@@ -17,13 +17,13 @@ ___ remove_punctuation_solution_1(input_string):
     out = ''.j..(new_str)
     print(out)
 
-___ remove_punctuation_solution_2(input_string):
+___ remove_punctuation_solution_2(input_string
     """Return a str with punctuation chards stripped out"""
     new_list = [i ___ i __ input_string __ i n.. __ s__.punctuation]
     out = ''.j..(new_list)
     r.. out
 
-___ remove_punctuation_solution_3(input_string):
+___ remove_punctuation_solution_3(input_string
      # dict_variable = {key:value for (key,value) in dictonary.items()}
      # https://www.datacamp.com/community/tutorials/python-dictionary-comprehension
      d = {key: N.. ___ key __ s__.punctuation}

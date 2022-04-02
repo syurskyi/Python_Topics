@@ -5,7 +5,7 @@ c_ Solution:
     """
     @param: k: An integer
     """
-    ___ - , k):
+    ___ - , k
         k = k
         tops    # list
 
@@ -13,7 +13,7 @@ c_ Solution:
     @param: num: Number to be added
     @return: nothing
     """
-    ___ add  num):
+    ___ add  num
         # push in first, since we cannot ensure
         # the incoming num will stay in tops
         heappush(tops, num)

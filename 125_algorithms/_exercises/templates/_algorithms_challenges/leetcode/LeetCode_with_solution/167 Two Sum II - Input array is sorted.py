@@ -4,8 +4,8 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ twoSum  numbers, target):
+c_ Solution(o..
+    ___ twoSum  numbers, target
         """
         :type numbers: List[int]
         :type target: int

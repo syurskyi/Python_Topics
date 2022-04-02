@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ characterReplacement  s, k):
+c_ Solution(o..
+  ___ characterReplacement  s, k
     """
     :type s: str
     :type k: int

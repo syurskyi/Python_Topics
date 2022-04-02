@@ -4,14 +4,14 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ plusOne  head):
+c_ Solution(o..
+  ___ plusOne  head
     """
     :type head: ListNode
     :rtype: ListNode
     """
 
-    ___ reverse(cur):
+    ___ reverse(cur
       pre = N..
       w.... cur:
         tmp = cur.next

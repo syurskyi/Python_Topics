@@ -3,8 +3,8 @@ Created on Sep 30, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ binaryGap  N):
+c_ Solution(o..
+    ___ binaryGap  N
         """
         :type N: int
         :rtype: int

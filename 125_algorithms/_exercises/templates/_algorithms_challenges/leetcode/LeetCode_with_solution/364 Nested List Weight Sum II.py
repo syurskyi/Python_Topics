@@ -10,7 +10,7 @@ You should not implement it, or speculate about its implementation
 """
 
 
-c_ NestedInteger(o..):
+c_ NestedInteger(o..
     ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
@@ -23,13 +23,13 @@ c_ NestedInteger(o..):
         :rtype bool
         """
 
-    ___ add  elem):
+    ___ add  elem
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
 
-    ___ setInteger  value):
+    ___ setInteger  value
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
@@ -50,11 +50,11 @@ c_ NestedInteger(o..):
         """
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ - 
         s.. = 0
 
-    ___ depthSumInverse  nestedList):
+    ___ depthSumInverse  nestedList
         """
         NestedInteger is a union type
         :type nestedList: List[NestedInteger]
@@ -64,7 +64,7 @@ c_ Solution(o..):
         inverseDepthSum(nestedList, inv_depth)
         r.. s..
 
-    ___ height  nl):
+    ___ height  nl
         nl_lst = filter(l.... x: n.. x.isInteger(), nl)
         __ n.. nl_lst:
             r.. 1
@@ -73,20 +73,20 @@ c_ Solution(o..):
                 map(l.... x: height(x.getList()), nl_lst)
             )
 
-    ___ inverseDepthSum  nl, inv_depth):
+    ___ inverseDepthSum  nl, inv_depth
         nl_lst = filter(l.... x: n.. x.isInteger(), nl)
         ni_list = filter(l.... x: x.isInteger(), nl)
         __ nl_lst:
             map(l.... x: inverseDepthSum(x.getList(), inv_depth - 1), nl_lst)
         __ ni_list:
-            s.. += s..(map(l.... x: x.getInteger() * inv_depth, ni_list))
+            s.. += s.. m..(l.... x: x.getInteger() * inv_depth, ni_list))
 
 
-c_ SolutionError(o..):
-    ___ - ):
+c_ SolutionError(o..
+    ___ - 
         s.. = 0
 
-    ___ depthSumInverse  nestedList):
+    ___ depthSumInverse  nestedList
         """
         NestedInteger is a union type
         :type nestedList: List[NestedInteger]
@@ -95,7 +95,7 @@ c_ SolutionError(o..):
         dfs(nestedList)
         r.. s..
 
-    ___ dfs  nl):
+    ___ dfs  nl
         """
         This dfs use height: the number of edges from to the leaves.
         But the question is supposedly use height but the calculate sum top down; here is bottom up wrongly.
@@ -109,6 +109,6 @@ c_ SolutionError(o..):
                 map(l.... x: dfs(x.getList()), nl_lst)
             )
         __ ni_list:
-            s.. += s..(map(l.... x: x.getInteger() * height, ni_list))
+            s.. += s.. m..(l.... x: x.getInteger() * height, ni_list))
 
         r.. height

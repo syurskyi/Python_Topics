@@ -14,7 +14,7 @@ ___ x __ r..(l..(a)):
     
 #sorting the array using the bubble sort
 ___ i __ r..(l..(a)):
-    ___ j __ r..(0,l..(a)-1):
+    ___ j __ r..(0,l..(a)-1
         __ a[j] > a[j+1]:
             a[j],a[j+1]=a[j+1],a[j]
         ____:

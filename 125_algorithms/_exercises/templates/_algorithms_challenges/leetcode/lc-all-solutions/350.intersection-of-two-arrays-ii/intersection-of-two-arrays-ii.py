@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ intersect  nums1, nums2):
+c_ Solution(o..
+  ___ intersect  nums1, nums2
     """
     :type nums1: List[int]
     :type nums2: List[int]
@@ -9,7 +9,7 @@ c_ Solution(o..):
     nums1.s..()
     nums2.s..()
     i = j = 0
-    w.... i < l..(nums1) a.. j < l..(nums2):
+    w.... i < l..(nums1) a.. j < l..(nums2
       __ nums1[i] < nums2[j]:
         i += 1
       ____ nums1[i] > nums2[j]:

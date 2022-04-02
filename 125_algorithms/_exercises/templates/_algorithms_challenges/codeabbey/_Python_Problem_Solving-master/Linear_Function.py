@@ -1,14 +1,14 @@
 _______ numpy __ np
-f = open('input.txt')
+f = o.. 'input.txt')
 res    # list
 
 T = i..(f.readline().strip())
 
 boards    # list
-___ i __ r..(0,T):
+___ i __ r..(0,T
     boards.a..(f.readline().s...s..(' '))
 
-___ i __ r..(T):
+___ i __ r..(T
     a = [i..(j) ___ j __ boards[i]]
     A = np.array([[a[0],1],[a[2],1]])
   

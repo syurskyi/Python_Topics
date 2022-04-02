@@ -2,7 +2,7 @@ ____ i.. _______ cycle
 WHITE, BLACK = ' ', '#'
 
 
-___ create_chessboard(size=8):
+___ create_chessboard(size=8
     """Create a chessboard with of the size passed in.
        Don't return anything, print the output to stdout"""
 
@@ -11,8 +11,8 @@ ___ create_chessboard(size=8):
     c2 = cycle(f"{BLACK}{WHITE}")
 
     c = c1
-    ___ row __ r..(size):
-        ___ col __ r..(size):
+    ___ row __ r..(size
+        ___ col __ r..(size
             print(next(c),end='')
         print()
         

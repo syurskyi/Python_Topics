@@ -4,14 +4,14 @@ REF: https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/
 
 
 c_ Solution:
-    ___ findAnagrams  s, t):
+    ___ findAnagrams  s, t
         """
         :type s: str
         :type t: str
         :rtype: List[int]
         """
         ans    # list
-        __ n.. s o. n.. t o. l..(t) > l..(s):
+        __ n.. s o. n.. t o. l..(t) > l..(s
             r.. ans
 
         F    # dict

@@ -26,7 +26,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         TrieNode = l....: defaultdict(TrieNode)  # not defaultdict(lambda: TrieNode)
         root = TrieNode()  # root of tire
 
@@ -37,7 +37,7 @@ c_ Solution:
         words.s..(key=l..)
         ret    # list
         ___ w __ words:
-            __ can_concat(w, 0):
+            __ can_concat(w, 0
                 ret.a..(w)
 
             cur = root
@@ -47,7 +47,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ can_concat  word, lo):
+    ___ can_concat  word, lo
         __ n.. word:
             r.. F..
 
@@ -56,9 +56,9 @@ c_ Solution:
             r.. T..
 
         cur = root
-        ___ i __ r..(lo, k):
+        ___ i __ r..(lo, k
             cur = cur[word[i]]
-            __ cur.get("end", F..) a.. can_concat(word, i + 1):
+            __ cur.get("end", F..) a.. can_concat(word, i + 1
                 r.. T..
 
         r.. F..
@@ -86,20 +86,20 @@ c_ SolutionTLE:
         # words.sort()  # sorting is unnecessary
         visited = s..(words)
         ___ w __ words:
-            __ can_concat(w, visited):
+            __ can_concat(w, visited
                 ret.a..(w)
 
         r.. ret
 
-    ___ can_concat  w, visited):
+    ___ can_concat  w, visited
         __ n.. w:
             r.. F..
 
         k = l..(w)
         F = [F.. ___ _ __ r..(k + 1)]
         F[0] = T..
-        ___ i __ r..(1, k + 1):
-            ___ j __ r..(i):
+        ___ i __ r..(1, k + 1
+            ___ j __ r..(i
                 __ j __ 0 a.. i __ k:
                     _____  # word itself
                 __ F[j] a.. w[j:i] __ visited:

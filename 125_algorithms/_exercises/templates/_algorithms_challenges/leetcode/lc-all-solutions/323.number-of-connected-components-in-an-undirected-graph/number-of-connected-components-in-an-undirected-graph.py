@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ countComponents  n, edges):
-    ___ find(x):
+c_ Solution(o..
+  ___ countComponents  n, edges
+    ___ find(x
       __ parent[x] != x:
         parent[x] = find(parent[x])
       r.. parent[x]
 
-    ___ union(xy):
+    ___ union(xy
       x, y = map(find, xy)
       __ rank[x] > rank[y]:
         parent[y] = x

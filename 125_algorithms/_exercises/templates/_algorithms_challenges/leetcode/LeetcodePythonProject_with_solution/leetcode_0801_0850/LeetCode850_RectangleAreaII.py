@@ -4,8 +4,8 @@ Created on Jun 13, 2019
 @author: tongq
 '''
 
-c_ Solution(o..):
-    ___ rectangleArea  rectangles):
+c_ Solution(o..
+    ___ rectangleArea  rectangles
         """
         :type rectangles: List[List[int]]
         :rtype: int
@@ -22,7 +22,7 @@ c_ Solution(o..):
         ___ y, x1, x2, sig __ L:
             area += (y-cur_y) * cur_x_sum
             cur_y = y
-            ___ i __ r..(x_i[x1], x_i[x2]):
+            ___ i __ r..(x_i[x1], x_i[x2]
                 count[i] += sig
             cur_x_sum = s..(x2-x1 __ c ____ 0 ___ x1, x2, c __ z..(xs, xs[1:], count))
         r.. area % (10**9+7)

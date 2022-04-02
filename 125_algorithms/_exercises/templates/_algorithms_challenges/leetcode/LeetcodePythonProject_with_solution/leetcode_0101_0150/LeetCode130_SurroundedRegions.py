@@ -3,32 +3,32 @@ Created on Feb 8, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ solve  board):
+c_ Solution(o..
+    ___ solve  board
         """
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
         __ n.. board o. l..(board) <= 1 o. l..(board[0]) <= 1: r..
         m, n = l..(board), l..(board[0])
-        ___ i __ r..(m):
+        ___ i __ r..(m
             __ board[i][0] __ 'O':
                 bfs(board, i, 0)
             __ board[i][n-1] __ 'O':
                 bfs(board, i, n-1)
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ board[0][i] __ 'O':
                 bfs(board, 0, i)
             __ board[m-1][i] __ 'O':
                 bfs(board, m-1, i)
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ board[i][j] __ 'O':
                     board[i][j] = 'X'
                 __ board[i][j] __ '#':
                     board[i][j] = 'O'
     
-    ___ bfs  board, x, y):
+    ___ bfs  board, x, y
         board[x][y] = '#'
         m, n = l..(board), l..(board[0])
         index = x*n+y

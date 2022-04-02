@@ -9,21 +9,21 @@ c_ Shape:
         r.. NotImplementedError('This method should have implemented.')
 
 
-c_ Triangle(Shape):
+c_ Triangle(Shape
     ___ draw
         print '  /\\'
         print ' /  \\'
         print '/____\\'
 
 
-c_ Rectangle(Shape):
+c_ Rectangle(Shape
     ___ draw
         print ' ----'
         print '|    |'
         print ' ----'
 
 
-c_ Square(Shape):
+c_ Square(Shape
     ___ draw
         print ' ----'
         print '|    |'
@@ -34,7 +34,7 @@ c_ Square(Shape):
 c_ ShapeFactory:
     # @param {string} shapeType a string
     # @return {Shape} Get object of type Shape
-    ___ getShape  shapeType):
+    ___ getShape  shapeType
         __ shapeType __ 'Triangle':
             r.. Triangle()
         __ shapeType __ 'Rectangle':

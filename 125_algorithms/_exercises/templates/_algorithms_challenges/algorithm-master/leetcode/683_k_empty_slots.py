@@ -18,7 +18,7 @@ c_ Solution:
     """
     Maintain pos by bloom order
     """
-    ___ kEmptySlots  flowers, k):
+    ___ kEmptySlots  flowers, k
         """
         :type flowers: List[int]
         :type k: int
@@ -29,7 +29,7 @@ c_ Solution:
         ___ day __ r..(l..(flowers)):
             x = flowers[day]
             i = bisect.bisect_left(bloom, x)
-            ___ _x __ bloom[m..(0, i - 1):i + 1]:
+            ___ _x __ bloom[m..(0, i - 1i + 1]:
                 __ abs(_x - x) - 1 __ k:
                     r.. day + 1  # changed to 1-based
             bloom.insert(i, x)
@@ -42,7 +42,7 @@ c_ Solution2:
     Two Pointer:
     https://blog.csdn.net/magicbean2/article/details/79235465
     """
-    ___ kEmptySlots  flowers, k):
+    ___ kEmptySlots  flowers, k
         """
         :type flowers: List[int]
         :type k: int
@@ -50,7 +50,7 @@ c_ Solution2:
         """
         n = l..(flowers)
         x2day = [0] * n
-        ___ day __ r..(n):
+        ___ day __ r..(n
             """
             day: 0-based => 1-based
             x:   1-based => 0-based

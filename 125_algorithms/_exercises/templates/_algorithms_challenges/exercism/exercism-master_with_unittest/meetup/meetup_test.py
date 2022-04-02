@@ -4,7 +4,7 @@ _______ unittest
 ____ meetup _______ meetup_day
 
 
-c_ MeetupTest(unittest.TestCase):
+c_ MeetupTest(unittest.TestCase
     ___ test_monteenth_of_may_2013
         assertEqual(date(2013, 5, 13),
                          meetup_day(2013, 5, 'Monday', 'teenth'))

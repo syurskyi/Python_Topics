@@ -15,7 +15,7 @@ c_ Solution:
     @param: n: An integer
     @return: The head of the reversed ListNode
     """
-    ___ reverseBetween  head, m, n):
+    ___ reverseBetween  head, m, n
         __ n.. head:
             r..
 

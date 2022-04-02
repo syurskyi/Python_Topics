@@ -1,15 +1,15 @@
-c_ Solution(o..):
-  ___ palindromePairs  words):
+c_ Solution(o..
+  ___ palindromePairs  words
     """
     :type words: List[str]
     :rtype: List[List[int]]
     """
     ans    # list
     d    # dict
-    ___ i, word __ e..(words):
+    ___ i, word __ e..(words
       d[word] = i
 
-    ___ i, word __ e..(words):
+    ___ i, word __ e..(words
       __ word __ "":
         ans.extend([(i, j) ___ j __ r..(l..(words)) __ i != j a.. words[j] __ words[j][::-1]])
         _____

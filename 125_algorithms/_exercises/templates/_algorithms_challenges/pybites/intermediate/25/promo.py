@@ -18,13 +18,13 @@ BITES = {6: 'PyBites Die Hard',
 BITES_DONE = {6, 10, 16, 18, 21}
 
 
-c_ NoBitesAvailable(E..):
+c_ NoBitesAvailable(E..
     p..
 
 
 c_ Promo:
 
-    ___ - ):
+    ___ -
         # updated Bite to make local copies (avoid globals!)
         all_bites = BITES.c..
         bites_done = BITES_DONE.c..
@@ -34,7 +34,7 @@ c_ Promo:
            Bites are done, raise a NoBitesAvailable exception"""
         bite_key = r__.choice(l..(all_bites.keys()))
 
-        __ l..(all_bites) != l..(bites_done):
+        __ l..(all_bites) != l..(bites_done
             __ bite_key n.. __ bites_done:
                 r.. bite_key
             ____:

@@ -53,7 +53,7 @@ c_ Solution:
             ____:
                 i += 1
 
-    ___ find_kth  A, lo, hi, k):
+    ___ find_kth  A, lo, hi, k
         p = pivot(A, lo, hi)
         __ k __ p:
             r.. p
@@ -62,11 +62,11 @@ c_ Solution:
         ____:
             r.. find_kth(A, lo, p, k)
 
-    ___ pivot  A, lo, hi):
+    ___ pivot  A, lo, hi
         # need 3-way pivot, otherwise TLE
         p = lo
         closed = lo
-        ___ i __ r..(lo + 1, hi):
+        ___ i __ r..(lo + 1, hi
             __ A[i] < A[p]:
                 closed += 1
                 A[closed], A[i] = A[i], A[closed]

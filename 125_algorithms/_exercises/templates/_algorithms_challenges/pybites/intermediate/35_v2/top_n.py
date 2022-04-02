@@ -28,18 +28,18 @@ earnings_mln = [
 ]
 
 
-___ get_largest_number(numbers, n=3):
+___ get_largest_number(numbers, n=3
     heapq.heapify(numbers)
     r.. heapq.nlargest(n, numbers)
 
 
-___ get_latest_dates(dates, n=3):
+___ get_latest_dates(dates, n=3
     heapq.heapify(dates)
     r.. heapq.nlargest(n, dates)
 
 
-___ get_highest_earnings(earnings_mln, n=3):
-    r.. heapq.nlargest(n, earnings_mln, key=l.... s: s['earnings'])
+___ get_highest_earnings(earnings_mln, n=3
+    r.. heapq.nlargest(n, earnings_mln, key=l.... s: s 'earnings' )
 
 
 # if __name__ == "__main__":

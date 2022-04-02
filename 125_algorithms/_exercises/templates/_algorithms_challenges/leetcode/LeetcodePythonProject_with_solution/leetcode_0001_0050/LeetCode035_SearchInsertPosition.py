@@ -3,8 +3,8 @@ Created on Oct 31, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ searchInsert  nums, target):
+c_ Solution(o..
+    ___ searchInsert  nums, target
         """
         :type nums: List[int]
         :type target: int

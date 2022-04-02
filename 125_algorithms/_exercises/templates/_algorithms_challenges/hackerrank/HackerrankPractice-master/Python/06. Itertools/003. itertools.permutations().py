@@ -7,4 +7,4 @@ _______ i..
 
 s = input().s.. 
 s__, number = s..(s[0]), i..(s[1])
-print(*l..(map(''.j.., i...permutations(s__, number))), sep='\n')
+print(*l.. m..(''.j.., i...permutations(s__, number))), sep='\n')

@@ -17,7 +17,7 @@ Output:  [1,2,4,7,5,3,6,8,9]
 
 
 c_ Solution:
-    ___ findDiagonalOrder  matrix):
+    ___ findDiagonalOrder  matrix
         """
         2nd approach
         diagonal - i + j is constant
@@ -31,12 +31,12 @@ c_ Solution:
 
         R, C = l..(matrix), l..(matrix[0])
         F = [[] ___ _ __ r..(R+C-1)]
-        ___ r __ r..(R):
-            ___ c __ r..(C):
+        ___ r __ r..(R
+            ___ c __ r..(C
                 F[r+c].a..(matrix[r][c])
 
         ret    # list
-        ___ i __ r..(R+C-1):
+        ___ i __ r..(R+C-1
             __ i % 2 __ 1:
                 ret.extend(F[i])
             ____:
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ findDiagonalOrder_2  matrix):
+    ___ findDiagonalOrder_2  matrix
         """
         1st approach
         try 2 * 4 and 4 * 2 and 3 * 3 matrix to find the pattern

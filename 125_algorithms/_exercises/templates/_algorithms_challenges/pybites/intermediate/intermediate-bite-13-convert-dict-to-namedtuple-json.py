@@ -14,7 +14,7 @@ _______ json
 blog = d..(name='PyBites',
             founders=('Julian', 'Bob'),
             started=d__ y.._2016,  m.._12,  d.._19),
-            tags=['Python', 'Code Challenges', 'Learn by Doing'],
+            tags= 'Python', 'Code Challenges', 'Learn by Doing' ,
             location='Spain/Australia',
             site='https://pybit.es')
 """ INITIAL CONSIDERATIONS:
@@ -39,11 +39,11 @@ j = { "name": "PyBites",
 # define namedtuple here
 Blog = n..('Blog', 'name founders started tags location site')
 
-___ dict2nt(dict_):
+___ dict2nt(dict_
     b = Blog(dict_.get('name'), dict_.get('founders'), dict_.get('started'), dict_.get('tags'), dict_.get('location'), dict_.get('site'))
     r.. b
 
-___ nt2json(nt):
+___ nt2json(nt
     json.dump()
 
 
@@ -60,10 +60,10 @@ print(json.dumps(OrderedDict(b._asdict()), default=s.., indent=4))
 pybBlog = n..('pybBlog', blog.keys())
 
 # https://stackoverflow.com/questions/36901/what-does-double-star-asterisk-and-star-asterisk-do-for-parameters
-___ pyb_dict2nt(dict_):
+___ pyb_dict2nt(dict_
     r.. pybBlog(**dict_)
 
 
-___ pyb_nt2json(nt):
+___ pyb_nt2json(nt
     nt = nt._replace(started=s..(nt.started))
     r.. json.dumps(nt._asdict())

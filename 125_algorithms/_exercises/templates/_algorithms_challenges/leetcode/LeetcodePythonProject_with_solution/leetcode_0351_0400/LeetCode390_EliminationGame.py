@@ -4,8 +4,8 @@ Created on Apr 2, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ lastRemaining  n):
+c_ Solution(o..
+    ___ lastRemaining  n
         left = T..
         remaining = n
         head = 1

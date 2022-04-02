@@ -1,6 +1,6 @@
-___ sumDigits(sumCount):
+___ sumDigits(sumCount
         answer    # list
-        ___ eachLine __ r..(sumCount):
+        ___ eachLine __ r..(sumCount
                 [a,b,c] = raw_input().s..(' ')
                 value = (i..(a) * i..(b)) + i..(c)
                 value = l..(s..(value))

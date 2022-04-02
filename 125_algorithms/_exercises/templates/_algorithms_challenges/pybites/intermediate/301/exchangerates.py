@@ -19,7 +19,7 @@ ___ get_all_days(start_date: date, end_date: date) __ List[date]:
     date_diff = (end_date - start_date).days
     current_date = start_date
 
-    ___ _ __ r..(date_diff +1):
+    ___ _ __ r..(date_diff +1
         dates.a..(current_date)
         current_date = current_date + t..(d.._1)
 
@@ -28,12 +28,12 @@ ___ get_all_days(start_date: date, end_date: date) __ List[date]:
 
 ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
 
-    dates_open_lookup = s..(map(l.... x: d__.strptime(x, "%Y-%m-%d").date(), daily_rates))
+    dates_open_lookup = s.. m..(l.... x: d__.strptime(x, "%Y-%m-%d").date(), daily_rates))
 
     dates    # dict
     date_diff = (end - start).days
     current_date = start
-    ___ i __ r..(date_diff +1):
+    ___ i __ r..(date_diff +1
         previous_date = current_date
         __ current_date n.. __ dates_open_lookup:
             w.... previous_date n.. __ dates_open_lookup:
@@ -51,7 +51,7 @@ ___ exchange_rates(
     start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
 ) __ Dict[date, d..]:
     
-    w__ open(RATES_FILE) __ file:
+    w__ o.. RATES_FILE) __ file:
         data = json.load(file)
 
     start = d__.strptime(start_date, "%Y-%m-%d").date()

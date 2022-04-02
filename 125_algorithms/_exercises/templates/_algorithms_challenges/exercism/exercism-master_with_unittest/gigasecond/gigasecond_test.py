@@ -4,7 +4,7 @@ _______ unittest
 ____ gigasecond _______ add_gigasecond
 
 
-c_ GigasecondTest(unittest.TestCase):
+c_ GigasecondTest(unittest.TestCase
     ___ test_1
         assertEqual(
             date(2043, 1, 1),

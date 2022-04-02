@@ -1,8 +1,8 @@
-c_ Node(o..):
-    ___ - ):
+c_ Node(o..
+    ___ -
         p..
 
 
-c_ LinkedList(o..):
-    ___ - ):
+c_ LinkedList(o..
+    ___ -
         p..

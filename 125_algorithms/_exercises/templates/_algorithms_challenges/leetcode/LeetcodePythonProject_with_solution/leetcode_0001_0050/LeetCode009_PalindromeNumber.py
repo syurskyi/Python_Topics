@@ -3,8 +3,8 @@ Created on Jan 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ isPalindrome  x):
+c_ Solution(o..
+    ___ isPalindrome  x
         """
         :type x: int
         :rtype: bool

@@ -35,7 +35,7 @@ _______ bisect
 
 
 c_ TopVotedCandidate:
-    ___ - , persons: List[i..], times: List[i..]):
+    ___ - , persons: List[i..], times: List[i..]
         """
         Running top vote
         Need to maintain list

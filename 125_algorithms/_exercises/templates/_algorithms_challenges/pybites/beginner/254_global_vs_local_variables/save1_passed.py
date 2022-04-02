@@ -7,7 +7,7 @@ ___ sum_numbers(numbers: l..) __ i..:
     global num_hundreds
     total = s..(numbers)
     hundreds_value = l..(l..(r..(0, total, 100))) - 1
-    __ (total __ N..) o. (total < 100):
+    __ (total __ N..) o. (total < 100
         r.. total
     ____:
         num_hundreds = num_hundreds + hundreds_value

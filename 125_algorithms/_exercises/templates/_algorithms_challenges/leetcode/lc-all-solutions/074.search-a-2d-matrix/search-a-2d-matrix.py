@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ searchMatrix  matrix, target):
+c_ Solution(o..
+  ___ searchMatrix  matrix, target
     """
     :type matrix: List[List[int]]
     :type target: int

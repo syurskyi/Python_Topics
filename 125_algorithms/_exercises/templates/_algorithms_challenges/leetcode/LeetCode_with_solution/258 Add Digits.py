@@ -12,7 +12,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ addDigits  num):
+    ___ addDigits  num
         """
         Enumerate and find the pattern
 

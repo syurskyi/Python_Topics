@@ -3,8 +3,8 @@ Created on Sep 10, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ peakIndexInMountainArray  A):
+c_ Solution(o..
+    ___ peakIndexInMountainArray  A
         """
         :type A: List[int]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
                 r = m
         r.. l
     
-    ___ peakIndexInMountainArray_On  A):
+    ___ peakIndexInMountainArray_On  A
         """
         :type A: List[int]
         :rtype: int
@@ -27,7 +27,7 @@ c_ Solution(o..):
         arr = A
         res = -1
         val = f__('-inf')
-        ___ i, num __ e..(arr):
+        ___ i, num __ e..(arr
             __ num > val:
                 res = i
             val = m..(val, num)

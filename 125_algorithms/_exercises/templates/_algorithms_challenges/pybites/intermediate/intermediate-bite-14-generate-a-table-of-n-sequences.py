@@ -29,7 +29,7 @@ SEPARATOR = ' | '
 
 ### ----------- My solution ---------------------------
 
-___ my_generate_table(*args):
+___ my_generate_table(*args
     l    # list
     result = z..(*args)
     ___ i __ result:
@@ -44,7 +44,7 @@ ___ my_generate_table(*args):
 
 ### ---------- PyBites original solution ---------------
 
-___ pyb_generate_table(*sequences):
-    ___ seq __ z..(*sequences):
+___ pyb_generate_table(*sequences
+    ___ seq __ z..(*sequences
         seq = [s..(val) ___ val __ seq]
         y.. SEPARATOR.j..(seq)

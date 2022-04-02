@@ -17,8 +17,8 @@ minimize the number of calls to the API.
 # @return a bool
 # def isBadVersion(version):
 
-c_ Solution(o..):
-    ___ firstBadVersion  n):
+c_ Solution(o..
+    ___ firstBadVersion  n
         """
         :type n: int
         :rtype: int
@@ -27,11 +27,11 @@ c_ Solution(o..):
         right = n
         w.... left + 1 < right:
             mid = left + (right - left) / 2
-            __ isBadVersion(mid):
+            __ isBadVersion(mid
                 right = mid
             ____:
                 left = mid
-        __ isBadVersion(left):
+        __ isBadVersion(left
             r.. left
-        ____ isBadVersion(right):
+        ____ isBadVersion(right
             r.. right

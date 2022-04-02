@@ -1,4 +1,4 @@
-___ title_case(title, minor_words = ''):
+___ title_case(title, minor_words = ''
     __ l..(title) __ 0:
         r.. ''
     res = [title.t...s.. [0]]

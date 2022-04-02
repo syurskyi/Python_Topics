@@ -4,8 +4,8 @@ Created on Feb 13, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ majorityElement  nums):
+c_ Solution(o..
+    ___ majorityElement  nums
         """
         :type nums: List[int]
         :rtype: int

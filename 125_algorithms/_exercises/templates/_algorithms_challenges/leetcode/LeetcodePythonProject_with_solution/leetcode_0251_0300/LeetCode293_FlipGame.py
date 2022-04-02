@@ -4,8 +4,8 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ generatePossibleNextMoves  s):
+c_ Solution(o..
+    ___ generatePossibleNextMoves  s
         result    # list
         ___ i __ r..(1, l..(s)):
             __ s[i-1] __ '+' a.. s[i] __ '+':

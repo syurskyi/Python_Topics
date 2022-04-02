@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ canFinish  numCourses, prerequisites):
+c_ Solution(o..
+  ___ canFinish  numCourses, prerequisites
     """
     :type numCourses: int
     :type prerequisites: List[List[int]]
     :rtype: bool
     """
 
-    ___ dfs(start, parent, visited, graph):
+    ___ dfs(start, parent, visited, graph
       visited[start] = 1
       ___ nbr __ graph[start]:
         __ visited[nbr] __ 1:

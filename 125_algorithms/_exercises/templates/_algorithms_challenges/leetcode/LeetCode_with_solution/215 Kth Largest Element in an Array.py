@@ -14,7 +14,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ findKthLargest  nums, k):
+    ___ findKthLargest  nums, k
         """
         Algorithm:
         * Partial quick sort average O(n), worst case O(n^2)
@@ -24,7 +24,7 @@ c_ Solution:
         """
         h    # list
         n = l..(nums)
-        ___ i, v __ e..(nums):
+        ___ i, v __ e..(nums
             __ i < k:
                 heapq.heappush(h, v)
             ____:

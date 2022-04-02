@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findMin  nums):
+    ___ findMin  nums
         """
         :type nums: list[int]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution:
         ans = f__('inf')
 
         ___ num __ nums:
-            ___ i __ r..(target, num - 1, -1):
+            ___ i __ r..(target, num - 1, -1
                 dp[i] = dp[i] o. dp[i - num]
 
                 __ dp[i]:

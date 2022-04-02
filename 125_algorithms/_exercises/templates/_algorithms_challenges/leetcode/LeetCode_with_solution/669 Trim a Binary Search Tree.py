@@ -42,7 +42,7 @@ Output:
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -55,7 +55,7 @@ c_ Solution:
         """
         r.. walk(root, L, R)
 
-    ___ walk  node, L, R):
+    ___ walk  node, L, R
         __ n.. node:
             r.. N..
 

@@ -3,8 +3,8 @@ Created on Oct 15, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numRescueBoats  people, limit):
+c_ Solution(o..
+    ___ numRescueBoats  people, limit
         """
         :type people: List[int]
         :type limit: int

@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ compareVersion  version1, version2):
+    ___ compareVersion  version1, version2
         """
         :type version1: str
         :type version2: str
@@ -33,8 +33,8 @@ c_ Solution:
                 r.. -1 __ version1[i] < version2[i] ____ 1
 
         # 1.0.0 and 1 
-        __ n1 __ n2 o. n1 > n2 a.. a..(map(l.... x: x __ 0, version1[n2:])) o. \
-                                n1 < n2 a.. a..(map(l.... x: x __ 0, version2[n1:])):
+        __ n1 __ n2 o. n1 > n2 a.. a.. m..(l.... x: x __ 0, version1[n2:])) o. \
+                                n1 < n2 a.. a.. m..(l.... x: x __ 0, version2[n1:])):
             r.. 0
 
         r.. -1 __ n1 < n2 ____ 1

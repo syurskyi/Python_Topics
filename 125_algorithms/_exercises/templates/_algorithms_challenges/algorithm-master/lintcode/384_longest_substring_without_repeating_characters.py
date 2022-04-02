@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ lengthOfLongestSubstring  s):
+    ___ lengthOfLongestSubstring  s
         """
         :type s: str
         :rtype: int

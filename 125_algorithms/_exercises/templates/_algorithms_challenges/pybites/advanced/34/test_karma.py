@@ -3,23 +3,23 @@ _______ p__
 ____ karma _______ User, Transaction
 
 
-@p__.f..
+?p__.f..
 ___ bob
     r.. User('bob')
 
 
-@p__.f..
+?p__.f..
 ___ tim
     r.. User('tim')
 
 
-@p__.f..
+?p__.f..
 ___ alice
     r.. User('alice')
 
 
-@p__.f..
-___ transactions(bob, tim, alice):
+?p__.f..
+___ transactions(bob, tim, alice
     r.. [
         Transaction(giver=alice, points=1),
         Transaction(giver=bob, points=2),
@@ -29,7 +29,7 @@ ___ transactions(bob, tim, alice):
     ]
 
 
-___ test_init(transactions, bob, tim, alice):
+___ test_init(transactions, bob, tim, alice
     ... alice.name __ 'alice'
     ... bob.name __ 'bob'
     ... tim.name __ 'tim'
@@ -38,7 +38,7 @@ ___ test_init(transactions, bob, tim, alice):
     ... tim._transactions __ []
 
 
-___ test_scores_and_points(transactions, bob, tim, alice):
+___ test_scores_and_points(transactions, bob, tim, alice
     bob + transactions[0]
     ... bob.karma __ 1
     alice + transactions[1]
@@ -55,7 +55,7 @@ ___ test_scores_and_points(transactions, bob, tim, alice):
     ... tim.points __ [2]
 
 
-___ test_fans_property(transactions, bob, tim, alice):
+___ test_fans_property(transactions, bob, tim, alice
     tim + transactions[4]
     ... tim.fans __ 1
     bob + transactions[0]
@@ -66,7 +66,7 @@ ___ test_fans_property(transactions, bob, tim, alice):
     ... alice.fans __ 2
 
 
-___ test_str_dunder(transactions, bob, tim, alice):
+___ test_str_dunder(transactions, bob, tim, alice
     tim + transactions[4]
     ... s..(tim) __ 'tim has a karma of 2 and 1 fan'
     alice + transactions[1]

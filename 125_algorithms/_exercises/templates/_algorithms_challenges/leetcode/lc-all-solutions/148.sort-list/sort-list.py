@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ sortList  head):
+c_ Solution(o..
+  ___ sortList  head
     """
     :type head: ListNode
     :rtype: ListNode

@@ -3,8 +3,8 @@ Created on Sep 5, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ fractionAddition  expression):
+c_ Solution(o..
+    ___ fractionAddition  expression
         """
         :type expression: str
         :rtype: str
@@ -21,7 +21,7 @@ c_ Solution(o..):
             B //= g
         r.. '%s/%s' % (A, B)
     
-    ___ gcd  a, b):
+    ___ gcd  a, b
         __ a __ 0:
             r.. abs(b)
         ____:

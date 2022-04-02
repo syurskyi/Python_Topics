@@ -5,15 +5,15 @@ ____ zipper _______ Zipper
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
-c_ ZipperTest(unittest.TestCase):
-    ___ bt  value, left, right):
+c_ ZipperTest(unittest.TestCase
+    ___ bt  value, left, right
         r.. {
             'value': value,
             'left': left,
             'right': right
         }
 
-    ___ leaf  value):
+    ___ leaf  value
         r.. bt(value, N.., N..)
 
     ___ create_trees

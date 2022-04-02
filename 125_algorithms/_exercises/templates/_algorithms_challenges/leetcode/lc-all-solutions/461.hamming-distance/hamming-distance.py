@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ hammingDistance  x, y):
+c_ Solution(o..
+  ___ hammingDistance  x, y
     """
     :type x: int
     :type y: int

@@ -5,7 +5,7 @@ ____ all_your_base _______ rebase
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ AllYourBaseTests(unittest.TestCase):
+c_ AllYourBaseTests(unittest.TestCase
 
     ___ test_single_bit_to_one_decimal
         assertEqual(rebase(2, [1], 10), [1])
@@ -44,39 +44,39 @@ c_ AllYourBaseTests(unittest.TestCase):
         assertEqual(rebase(7, [0, 6, 0], 10), [4, 2])
 
     ___ test_negative_digit
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(2, [1, -1, 1, 0, 1, 0], 10)
 
     ___ test_invalid_positive_digit
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(2, [1, 2, 1, 0, 1, 0], 10)
 
     ___ test_first_base_is_one
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(1, [], 10)
 
     ___ test_second_base_is_one
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(2, [1, 0, 1, 0, 1, 0], 1)
 
     ___ test_first_base_is_zero
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(0, [], 10)
 
     ___ test_second_base_is_zero
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(10, [7], 0)
 
     ___ test_first_base_is_negative
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(-2, [1], 10)
 
     ___ test_second_base_is_negative
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(2, [1], -7)
 
     ___ test_both_bases_are_negative
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             rebase(-2, [1], -7)
 
 

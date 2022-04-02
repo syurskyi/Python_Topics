@@ -8,7 +8,7 @@ EXCEPTION = 'exception caught'
 TMP = Path(os.getenv("TMP", "/tmp"))
 
 
-___ convert_to_csv(json_file):
+___ convert_to_csv(json_file
    """Read/load the json_file (local file downloaded to /tmp) and
       convert/write it to defined csv_file.
        The data is in mounts > collected
@@ -26,7 +26,7 @@ ___ convert_to_csv(json_file):
    csv_file = TMP / json_file.name.r..('.json', '.csv')
 
    # you code
-   w__ open(json_file) __ f:
+   w__ o.. json_file) __ f:
       ___
          data = json.loads(f.read())
       ______ JSONDecodeError:
@@ -34,7 +34,7 @@ ___ convert_to_csv(json_file):
          r..
 
    mounts = data["mounts"]["collected"]
-   w__ open(csv_file, "w") __ f:
+   w__ o.. csv_file, "w") __ f:
       headers = [key ___ key __ mounts[0].k..]
       writer = csv.DictWriter(f, fieldnames=headers)
 

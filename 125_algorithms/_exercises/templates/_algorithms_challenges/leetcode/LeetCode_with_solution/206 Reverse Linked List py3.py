@@ -15,7 +15,7 @@ implement both?
 
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 

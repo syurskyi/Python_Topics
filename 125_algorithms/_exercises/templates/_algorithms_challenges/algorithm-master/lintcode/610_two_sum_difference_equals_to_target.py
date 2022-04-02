@@ -10,7 +10,7 @@ c_ Solution:
     @param: target: an integer
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    ___ twoSum7  A, target):
+    ___ twoSum7  A, target
         NOT_FOUND = [-1, -1]
         __ n.. A o. l..(A) < 2:
             r.. NOT_FOUND
@@ -54,7 +54,7 @@ c_ Solution:
     @param: target: an integer
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    ___ twoSum7  A, target):
+    ___ twoSum7  A, target
         NOT_FOUND = [-1, -1]
         __ n.. A o. l..(A) < 2:
             r.. NOT_FOUND
@@ -67,7 +67,7 @@ c_ Solution:
         A.s..()
 
         left = 0
-        ___ right __ r..(1, n):
+        ___ right __ r..(1, n
             w.... left + 1 < right a.. A[right][0] - A[left][0] > target:
                 left += 1
             __ A[right][0] - A[left][0] __ target:

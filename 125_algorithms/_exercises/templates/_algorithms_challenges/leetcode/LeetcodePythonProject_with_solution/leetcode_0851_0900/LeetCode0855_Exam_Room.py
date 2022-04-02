@@ -4,9 +4,9 @@ Created on Sep 11, 2019
 @author: tongq
 '''
 _______ bisect
-c_ ExamRoom(o..):
+c_ ExamRoom(o..
 
-    ___ - , N):
+    ___ - , N
         """
         :type N: int
         """
@@ -21,7 +21,7 @@ c_ ExamRoom(o..):
             res = 0
         ____:
             d, res = l[0], 0
-            ___ a, b __ z..(l, l[1:]):
+            ___ a, b __ z..(l, l[1:]
                 __ (b-a)//2 > d:
                     d, res = (b-a)//2, (b+a)//2
             __ rowNum - 1 - l[-1] > d:
@@ -29,7 +29,7 @@ c_ ExamRoom(o..):
         bisect.insort(l, res)
         r.. res
 
-    ___ leave  p):
+    ___ leave  p
         """
         :type p: int
         :rtype: None

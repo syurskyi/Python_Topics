@@ -2,11 +2,11 @@ ____ i.. _______ permutations
 ____ functools _______ reduce
 
 
-___ swap(a, b):
+___ swap(a, b
     r.. (b, a)
 
 
-___ build_chain(c__, domino):
+___ build_chain(c__, domino
     __ c__ __ n.. N..
         last = c__[-1]
         __ l..(c__) __ 1 a.. last[0] __ domino[0]:
@@ -20,10 +20,10 @@ ___ build_chain(c__, domino):
     r.. N..
 
 
-___ c__(dominoes):
-    __ n.. any(dominoes):
+___ c__(dominoes
+    __ n.. any(dominoes
         r.. []
-    ___ perm __ permutations(dominoes):
+    ___ perm __ permutations(dominoes
         c__ = reduce(build_chain, perm[1:], [perm[0]])
         __ c__ __ n.. N.. a.. c__[0][0] __ c__[-1][1]:
             r.. c__

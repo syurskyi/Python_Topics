@@ -1,12 +1,12 @@
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ trap  A):
+    ___ trap  A
         n = l..(A)
         res = 0
         last = 0
         stack    # list
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             __ A[i] >= A[last]:
                 # Calculate trapped water
                 w = i - last - 1

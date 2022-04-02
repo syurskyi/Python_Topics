@@ -24,13 +24,13 @@ __author__ = 'Daniel'
 
 
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 
 c_ Solution:
-    ___ getIntersectionNode  headA, headB):
+    ___ getIntersectionNode  headA, headB
         """
         We can do something with the length difference.
 
@@ -46,7 +46,7 @@ c_ Solution:
 
         cur_a = headA
         cur_b = headB
-        ___ i __ x..(l_b-l_a):
+        ___ i __ x..(l_b-l_a
             cur_b = cur_b.next
 
         w.... cur_a != cur_b:
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. cur_a
 
-    ___ _get_len  head):
+    ___ _get_len  head
         n = 0
         cur = head
         w.... cur:

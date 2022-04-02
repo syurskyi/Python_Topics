@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ hasPath  maze, start, destination):
+c_ Solution(o..
+  ___ hasPath  maze, start, destination
     """
     :type maze: List[List[int]]
     :type start: List[int]
@@ -10,7 +10,7 @@ c_ Solution(o..):
     :rtype: bool
     """
 
-    ___ next(curr, maze):
+    ___ next(curr, maze
       height = l..(maze)
       width = l..(maze[0])
       directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
@@ -33,6 +33,6 @@ c_ Solution(o..):
       __ curr __ destination:
         r.. T..
       visited |= {curr}
-      ___ nbr __ next(curr, maze):
+      ___ nbr __ next(curr, maze
         queue.a..(nbr)
     r.. F..

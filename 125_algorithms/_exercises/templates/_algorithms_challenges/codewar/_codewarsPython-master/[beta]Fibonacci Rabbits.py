@@ -1,4 +1,4 @@
-___ fib_rabbits(n, b):
+___ fib_rabbits(n, b
     n -= 1
     young,adult = 1,0
     w.... n > 0:

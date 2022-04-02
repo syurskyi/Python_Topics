@@ -3,8 +3,8 @@ Created on Sep 10, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ carFleet  target, position, speed):
+c_ Solution(o..
+    ___ carFleet  target, position, speed
         """
         :type target: int
         :type position: List[int]

@@ -3,8 +3,8 @@ Created on Apr 6, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ minmaxGasDist  stations, K):
+c_ Solution(o..
+    ___ minmaxGasDist  stations, K
         """
         :type stations: List[int]
         :type K: int
@@ -17,7 +17,7 @@ c_ Solution(o..):
         w.... left + 1e-6 < right:
             mid = (left+right)/2.0
             count = 0
-            ___ i __ r..(n-1):
+            ___ i __ r..(n-1
                 count += math.ceil((stations[i+1]-stations[i])/mid)-1
             __ count > k:
                 left = mid

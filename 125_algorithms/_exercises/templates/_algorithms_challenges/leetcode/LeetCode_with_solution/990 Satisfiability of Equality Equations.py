@@ -47,13 +47,13 @@ ____ typing _______ List
 
 
 c_ DisjointSet:
-    ___ - ):
+    ___ -
         pi    # dict
 
-    ___ union  x, y):
+    ___ union  x, y
         pi[find(x)] = find(y)
 
-    ___ find  x):
+    ___ find  x
         __ x n.. __ pi:
             pi[x] = x
         ____ pi[x] != x:
@@ -77,7 +77,7 @@ c_ Solution:
                 neqs.a..((a, b))
 
         ___ a, b __ neqs:
-            __ ds.find(a) __ ds.find(b):
+            __ ds.find(a) __ ds.find(b
                 r.. F..
 
         r.. T..

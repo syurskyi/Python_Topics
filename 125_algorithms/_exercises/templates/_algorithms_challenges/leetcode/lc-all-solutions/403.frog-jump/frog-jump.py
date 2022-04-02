@@ -1,14 +1,14 @@
-c_ Solution(o..):
-  ___ canCross  stones):
+c_ Solution(o..
+  ___ canCross  stones
     """
     :type stones: List[int]
     :rtype: bool
     """
     dp    # dict
 
-    ___ dfs(stones, pos, k):
+    ___ dfs(stones, pos, k
       key = pos + k * 10000;
-      __ dp.has_key(key):
+      __ dp.has_key(key
         r.. dp[key]
       ____:
         ___ i __ r..(pos + 1, l..(stones)):
@@ -18,7 +18,7 @@ c_ Solution(o..):
           __ step > k + 1:
             dp[key] = F..
             r.. F..
-          __ dfs(stones, i, step):
+          __ dfs(stones, i, step
             dp[key] = T..
             r.. T..
       dp[key] = (pos __ l..(stones) - 1)

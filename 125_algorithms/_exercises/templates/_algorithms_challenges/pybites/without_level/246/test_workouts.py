@@ -8,6 +8,6 @@ ____ workouts _______ print_workout_days
                           ('lower', 'Tue, Fri\n'),
                           ('cardio', 'Wed\n'),
                           ('glutes', 'No matching workout\n')])
-___ test_print_workout_days(capsys, arg, expected):
+___ test_print_workout_days(capsys, arg, expected
     print_workout_days(arg)
     ... capsys.readouterr().out __ expected

@@ -40,19 +40,19 @@ That Shepherd, who first taught the chosen Seed
 '''
 
 
-___ remove_file(file_name):
+___ remove_file(file_name
     ___
         os.remove(file_name)
     ______ OSError:
         p..
 
 
-___ create_file(name, contents):
-    w__ open(name, 'w') __ f:
+___ create_file(name, contents
+    w__ o.. name, 'w') __ f:
         f.write(contents)
 
 
-c_ GrepTest(unittest.TestCase):
+c_ GrepTest(unittest.TestCase
     @classmethod
     ___ setUpClass
         create_file(ILIADFILENAME, ILIADCONTENTS)

@@ -3,14 +3,14 @@ ____ os _______ path
 ____ urllib.request _______ urlretrieve
 
 DICTIONARY = path.j..('/tmp', 'dictionary.txt')
-__ n.. path.isfile(DICTIONARY):
+__ n.. path.isfile(DICTIONARY
     urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 
 ___ load_words
     """Return a set of words from DICTIONARY"""
-    w__ open(DICTIONARY) __ f:
-        r.. {word.s...l.. ___ word __ f.readlines()}
+    w__ o.. DICTIONARY) __ f:
+        r.. {word.s...l.. ___ word __ f.r..}
 
 
 ___ suggest_word(misspelled_word: s.., words: s.. = N..) __ s..:

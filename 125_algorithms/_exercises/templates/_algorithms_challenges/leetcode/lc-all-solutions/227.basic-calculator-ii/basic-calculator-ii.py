@@ -1,15 +1,15 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ calculate  s):
+c_ Solution(o..
+  ___ calculate  s
     """
     :type s: str
     :rtype: int
     """
     i = 0
     queue = d..([])
-    w.... i < l..(s):
+    w.... i < l..(s
       __ s[i] __ " ":
         i += 1
       ____ s[i] __ "-+*/":

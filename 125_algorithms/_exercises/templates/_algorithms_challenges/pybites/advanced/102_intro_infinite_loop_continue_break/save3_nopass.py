@@ -1,4 +1,4 @@
-VALID_COLORS = ['blue', 'yellow', 'red']
+VALID_COLORS =  'blue', 'yellow', 'red'
 
 
 ___ print_colors
@@ -11,7 +11,7 @@ ___ print_colors
         color = input("Enter a color or enter 'quit'").l..
         __ color __ VALID_COLORS:
             print(color)
-        ____ color __ input("quit"):
+        ____ color __ input("quit"
             print("bye")
             _____
         ____:

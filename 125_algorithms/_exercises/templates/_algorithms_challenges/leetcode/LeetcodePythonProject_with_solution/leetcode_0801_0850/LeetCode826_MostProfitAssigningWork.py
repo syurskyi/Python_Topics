@@ -3,8 +3,8 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ maxProfitAssignment  difficulty, profit, worker):
+c_ Solution(o..
+    ___ maxProfitAssignment  difficulty, profit, worker
         """
         :type difficulty: List[int]
         :type profit: List[int]

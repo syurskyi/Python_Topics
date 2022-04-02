@@ -5,7 +5,7 @@ country_capitals = {'Sweden': 'Stockholm', 'Germany':'Berlin'}
 
 print(country_capitals)
 
-country_capitals['Poland'] = 'Warsaw'
+country_capitals 'Poland'  = 'Warsaw'
 
 print(country_capitals)
 

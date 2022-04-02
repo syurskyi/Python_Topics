@@ -1,7 +1,7 @@
 ____ functools _______ lru_cache
 
 @lru_cache(maxsize=N..)
-___ cached_fib(n):
+___ cached_fib(n
     __ n < 0:
         r.. ValueError('cannot calculate negative fibonacci numbers')
     __ n < 2:
@@ -11,5 +11,5 @@ ___ cached_fib(n):
 
 
 __ _____ __ _____
-    ___ x __ r..(11):
+    ___ x __ r..(11
         print _*fib({x}) = {cached_fib(x)}')

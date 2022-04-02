@@ -3,8 +3,8 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findMaxAverage  nums, k):
+c_ Solution(o..
+    ___ findMaxAverage  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -15,20 +15,20 @@ c_ Solution(o..):
         dp = [0]
         ___ num __ nums:
             dp.a..(dp[-1] + num)
-        ___ d(x, y):
+        ___ d(x, y
             r.. (dp[y+1]-dp[x])/f__(y+1-x)
         hull = c...d..()
         ans = f__('-inf')
-        ___ j __ r..(k-1, n):
-            w.... l..(hull) >= 2 a.. d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k):
+        ___ j __ r..(k-1, n
+            w.... l..(hull) >= 2 a.. d(hull[-2], hull[-1]-1) >= d(hull[-2], j-k
                 hull.pop()
             hull.a..(j-k+1)
-            w.... l..(hull) >= 2 a.. d(hull[0], hull[1]-1) <= d(hull[0], j):
+            w.... l..(hull) >= 2 a.. d(hull[0], hull[1]-1) <= d(hull[0], j
                 hull.popleft()
             ans = m..(ans, d(hull[0], j))
         r.. ans
     
-    ___ findMaxAverage_binarySearch  nums, k):
+    ___ findMaxAverage_binarySearch  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -37,16 +37,16 @@ c_ Solution(o..):
         l, r = -f__(2**31), f__(2**31)
         w.... r-l > 10**-5:
             mid = (l+r)/2.0
-            __ check(nums, k, mid):
+            __ check(nums, k, mid
                 l = mid
             ____:
                 r = mid
         r.. r
     
-    ___ check  nums, k, val):
+    ___ check  nums, k, val
         now, last = 0, 0
         dp = [num-val ___ num __ nums]
-        ___ i __ r..(k):
+        ___ i __ r..(k
             now += dp[i]
         __ now > 0:
             r.. T..

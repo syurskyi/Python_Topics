@@ -4,7 +4,7 @@ http://www.codewars.com/kata/563f037412e5ada593000114/train/python
 """
 
 
-___ calculate_years(principal, interest, tax, desired):
+___ calculate_years(principal, interest, tax, desired
     __ principal >= desired:
         r.. 0
     result = principal * interest * (1 - tax) + principal

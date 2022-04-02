@@ -1,9 +1,9 @@
 ____ c.. _______ d..
 
 
-c_ MovingAverage(o..):
+c_ MovingAverage(o..
 
-  ___ - , size):
+  ___ - , size
     """
     Initialize your data structure here.
     :type size: int
@@ -12,7 +12,7 @@ c_ MovingAverage(o..):
     windowSum = 0.0
     data = d..([])
 
-  ___ next  val):
+  ___ next  val
     """
     :type val: int
     :rtype: float

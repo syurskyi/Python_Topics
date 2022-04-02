@@ -5,7 +5,7 @@
 _______ math
 
 
-___ minimum_time(goal, machines):
+___ minimum_time(goal, machines
     min_days = math.ceil(goal / (l..(machines) / m..(machines)))
     max_days = math.ceil(goal / (l..(machines) / m..(machines)))
     w.... min_days < max_days:
@@ -18,5 +18,5 @@ ___ minimum_time(goal, machines):
 
 
 n, goal = map(i.., input().s..())
-machines = l..(map(i.., input().s..()))
+machines = l.. m..(i.., input().s..()))
 print(minimum_time(goal, machines))

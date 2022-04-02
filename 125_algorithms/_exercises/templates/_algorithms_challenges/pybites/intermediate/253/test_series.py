@@ -9,31 +9,31 @@ file_name = "https://bites-data.s3.us-east-2.amazonaws.com/iris.csv"
 df = pd.read_csv(file_name)
 
 
-@p__.f..()
+?p__.f..()
 ___ sepal_length_series
     """Returns the Sepal Length Series from the Iris DataFrame"""
     r.. df.sepal_length.sort_values().reset_index(drop=T..)
 
 
-@p__.f..()
+?p__.f..()
 ___ int_series_vsmall
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(1, 6))
 
 
-@p__.f..()
+?p__.f..()
 ___ int_series_small
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(10))
 
 
-@p__.f..()
+?p__.f..()
 ___ int_series_vsmall_offset_index
     """Returns a pandas Series containing ints"""
     r.. pd.Series(r..(0, 10, 2), index=r..(0, 10, 2))
 
 
-@p__.f..()
+?p__.f..()
 ___ letters_series
     """Returns a pandas Series containing all lower case letters"""
     r.. pd.Series(l..(s__.ascii_lowercase))
@@ -56,7 +56,7 @@ ___ letters_series
                        -1.2, -1.4, -1.6, -1.8]),
     ],
 )
-___ test_series_simple_math(int_series_small, arg, expected):
+___ test_series_simple_math(int_series_small, arg, expected
     ... a..(
         expected[idx] __ val
         ___ idx, val __ e..(
@@ -76,7 +76,7 @@ ___ test_series_simple_math(int_series_small, arg, expected):
 )
 ___ test_complex_series_maths(
     int_series_vsmall, int_series_vsmall_offset_index, arg, expected
-):
+
     result = se.complex_series_maths(
         int_series_vsmall, int_series_vsmall_offset_index, arg
     )
@@ -152,13 +152,13 @@ ___ test_complex_series_maths(
         ),
     ],
 )
-___ test_create_series_mask(letters_series, arg, expected):
+___ test_create_series_mask(letters_series, arg, expected
     result = se.create_series_mask(letters_series, arg)
     ... a..([result[idx] __ exp ___ idx, exp __ e..(expected)])
     ... a..(l __ arg ___ l __ letters_series[result])
 
 
-___ test_custom_series_function(sepal_length_series):
+___ test_custom_series_function(sepal_length_series
     result = se.custom_series_function(sepal_length_series, 0.1)
     ... l..(result) __ 51
     ... r..(result.mean(), 4) __ 5.6725

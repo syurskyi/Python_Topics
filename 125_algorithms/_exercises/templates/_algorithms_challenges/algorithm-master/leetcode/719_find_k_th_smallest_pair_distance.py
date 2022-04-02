@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ smallestDistancePair  A, k):
+    ___ smallestDistancePair  A, k
         """
         :type A: List[int]
         :type k: int
@@ -13,14 +13,14 @@ c_ Solution:
         left, right = 0, A[-1] - A[0]
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ check_valid(A, mid, k):
+            __ check_valid(A, mid, k
                 right = mid
             ____:
                 left = mid
 
         r.. left __ check_valid(A, left, k) ____ right
 
-    ___ check_valid  A, mid, k):
+    ___ check_valid  A, mid, k
         """
         valid if there are at least `k` pairs when distance is `mid`
         """

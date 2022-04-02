@@ -9,7 +9,7 @@ c_ Solution:
     @param: n: the number of floors
     @return: the number of drops in the worst case
     """
-    ___ dropEggs2  m, n):
+    ___ dropEggs2  m, n
         __ n.. m o. n.. n:
             r.. 0
 
@@ -24,20 +24,20 @@ c_ Solution:
         """
         only one egg
         """
-        ___ i __ r..(1, m + 1):
+        ___ i __ r..(1, m + 1
             dp[i][1] = 1
 
         """
         only one floor
         """
-        ___ j __ r..(1, n + 1):
+        ___ j __ r..(1, n + 1
             dp[1][j] = j
 
-        ___ i __ r..(2, m + 1):
-            ___ j __ r..(2, n + 1):
+        ___ i __ r..(2, m + 1
+            ___ j __ r..(2, n + 1
                 dp[i][j] = INFINITY
 
-                ___ k __ r..(1, j + 1):
+                ___ k __ r..(1, j + 1
                     """
                     backtracking to drop one egg on arbitrary floor `k`
                     there is two cases, if previous egg is:

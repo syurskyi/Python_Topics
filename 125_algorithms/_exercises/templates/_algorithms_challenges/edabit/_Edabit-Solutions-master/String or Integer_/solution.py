@@ -1,4 +1,4 @@
-___ int_or_string(var):
+___ int_or_string(var
     __ t..(var) __ s..:
         r.. "str"
     ____:

@@ -1,4 +1,4 @@
-___ josephus_survivor(n,k):
+___ josephus_survivor(n,k
     circle = [i ___ i __ r..(1,n+1)]
     index = -1
     w.... circle.c.. 0) != n-1:

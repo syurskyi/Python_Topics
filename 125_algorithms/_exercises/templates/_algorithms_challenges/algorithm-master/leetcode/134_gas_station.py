@@ -4,7 +4,7 @@ c_ Solution:
 
     if the tank is enough, go to next, otherwise back to previous to get gas
     """
-    ___ canCompleteCircuit  gas, cost):
+    ___ canCompleteCircuit  gas, cost
         """
         :type gas: List[int]
         :type cost: List[int]
@@ -12,7 +12,7 @@ c_ Solution:
         """
         NOT_FOUND = -1
 
-        __ n.. gas o. n.. cost o. l..(gas) != l..(cost):
+        __ n.. gas o. n.. cost o. l..(gas) != l..(cost
             r.. NOT_FOUND
 
         end, start = -1, l..(gas) - 1  # since its a circle, end start from `-1` means `n - 1`
@@ -33,7 +33,7 @@ c_ Solution:
     """
     TLE: Simulate the process
     """
-    ___ canCompleteCircuit  gas, cost):
+    ___ canCompleteCircuit  gas, cost
         """
         :type gas: List[int]
         :type cost: List[int]
@@ -41,13 +41,13 @@ c_ Solution:
         """
         NOT_FOUND = -1
 
-        __ n.. gas o. n.. cost o. l..(gas) != l..(cost):
+        __ n.. gas o. n.. cost o. l..(gas) != l..(cost
             r.. NOT_FOUND
 
         n = l..(gas)
         RANGE = l..(r..(n))
 
-        ___ start __ r..(n):
+        ___ start __ r..(n
             tank = 0
             is_failed = F..
 

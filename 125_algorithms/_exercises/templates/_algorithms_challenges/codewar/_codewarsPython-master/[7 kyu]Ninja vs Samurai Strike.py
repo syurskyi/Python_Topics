@@ -1,10 +1,10 @@
 c_ Warrior:
-    ___ - ,name):
+    ___ - ,name
         name = name
         health = 100
         visible = T..
         
-    ___ strike enemy,swings):
+    ___ strike enemy,swings
         #health cannot go below zero
         enemy.health = m..([0,enemy.health-(swings*10)]) __ enemy.visible ____ enemy.health
 

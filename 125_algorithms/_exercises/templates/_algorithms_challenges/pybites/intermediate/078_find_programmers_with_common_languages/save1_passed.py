@@ -1,6 +1,6 @@
 ____ c.. _______ Counter
 
-___ common_languages(programmers):
+___ common_languages(programmers
     """Receive a dict of keys -> names and values -> a sequence of
        of programming languages, return the common languages"""
     programmer_count = l..(programmers)

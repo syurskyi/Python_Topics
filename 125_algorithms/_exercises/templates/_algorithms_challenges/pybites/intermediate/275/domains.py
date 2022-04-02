@@ -8,7 +8,7 @@ COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
 TARGET_DIV = {"class": "middle_info_noborder"}
 
 
-___ get_common_domains(url=COMMON_DOMAINS):
+___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
     response = requests.get(url)
     soup = bs4.BeautifulSoup(response.content, "html.parser")

@@ -1,4 +1,4 @@
-___ regressionLine(x, y):
+___ regressionLine(x, y
     sumSquareX = s..([n**2 ___ n __ x])
     sumSquareY = s..([n**2 ___ n __ y])
     sumX = s..(x)

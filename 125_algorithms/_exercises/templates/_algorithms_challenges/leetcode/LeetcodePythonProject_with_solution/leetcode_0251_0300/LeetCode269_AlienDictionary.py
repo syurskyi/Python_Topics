@@ -4,8 +4,8 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ alienOrder  words):
+c_ Solution(o..
+    ___ alienOrder  words
         """
         :type words: List[str]
         :rtype: str
@@ -19,7 +19,7 @@ c_ Solution(o..):
             currWord = words[i]
             prevWord = words[i-1]
             length = m..(l..(currWord), l..(prevWord))
-            ___ j __ r..(length):
+            ___ j __ r..(length
                 c1, c2 = prevWord[j], currWord[j]
                 __ c1 != c2:
                     __ c1 n.. __ graph:
@@ -36,7 +36,7 @@ c_ Solution(o..):
         w.... queue:
             c = queue.pop(0)
             res += c
-            ___ c0 __ graph.get(c, []):
+            ___ c0 __ graph.get(c, []
                 degree[c0] -= 1
                 __ degree[c0] __ 0:
                     queue.a..(c0)

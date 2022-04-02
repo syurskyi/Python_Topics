@@ -13,7 +13,7 @@ ___ test_get_quotes
     ... response.status_code __ 200
 
     data = json.loads(response.get_data())
-    quotes = data['quotes']
+    quotes = data 'quotes'
     ... l..(quotes) __ 3
 
     expected = {'id': 1, 'movie': 'The Godfather',
@@ -26,7 +26,7 @@ ___ test_get_existing_quote
     ... response.status_code __ 200
 
     data = json.loads(response.get_data())
-    quotes = data['quotes']
+    quotes = data 'quotes'
     ... l..(quotes) __ 1
 
     expected = {'id': 2, 'movie': 'Predator', 'quote': "Get to the choppa!"}
@@ -46,10 +46,10 @@ ___ test_create_quote
                            content_type='application/json')
     ... response.status_code __ 201
     data = json.loads(response.get_data())
-    new_quote = data['quote']
-    ... new_quote['id'] __ 4
-    ... new_quote['quote'] __ 'You talking to me?'
-    ... new_quote['movie'] __ 'Taxi driver'
+    new_quote = data 'quote'
+    ... new_quote 'id'  __ 4
+    ... new_quote 'quote'  __ 'You talking to me?'
+    ... new_quote 'movie'  __ 'Taxi driver'
 
 
 ___ test_create_quote_missing_data
@@ -86,10 +86,10 @@ ___ test_update_quote
     ... response.status_code __ 200
 
     data = json.loads(response.get_data())
-    updated_quote = data['quote']
-    ... updated_quote['id'] __ 4
-    ... updated_quote['quote'] __ 'You talking to me?!'
-    ... updated_quote['movie'] __ 'Taxi driver (1976)'
+    updated_quote = data 'quote'
+    ... updated_quote 'id'  __ 4
+    ... updated_quote 'quote'  __ 'You talking to me?!'
+    ... updated_quote 'movie'  __ 'Taxi driver (1976)'
 
 
 ___ test_update_no_data
@@ -117,10 +117,10 @@ ___ test_update_no_changes
     ... response.status_code __ 200
 
     data = json.loads(response.get_data())
-    updated_quote = data['quote']
-    ... updated_quote['id'] __ 2
-    ... updated_quote['quote'] __ 'Get to the choppa!'
-    ... updated_quote['movie'] __ 'Predator'
+    updated_quote = data 'quote'
+    ... updated_quote 'id'  __ 2
+    ... updated_quote 'quote'  __ 'Get to the choppa!'
+    ... updated_quote 'movie'  __ 'Predator'
 
 
 ___ test_delete_existing_quote
@@ -130,7 +130,7 @@ ___ test_delete_existing_quote
     # number quotes from 4 to 3
     response = client.get(API_ENDPOINT)
     data = json.loads(response.get_data())
-    quotes = data['quotes']
+    quotes = data 'quotes'
     ... l..(quotes) __ 3
 
 

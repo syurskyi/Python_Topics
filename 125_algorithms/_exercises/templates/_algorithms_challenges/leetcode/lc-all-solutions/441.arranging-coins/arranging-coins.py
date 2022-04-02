@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ arrangeCoins  n):
+c_ Solution(o..
+  ___ arrangeCoins  n
     """
     :type n: int
     :rtype: int

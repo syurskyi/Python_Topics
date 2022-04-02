@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ s..  nums, target):
+    ___ s..  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -29,7 +29,7 @@ c_ Solution:
                 ____:
                     left = mid
 
-        ___ mid __ (left, right):
+        ___ mid __ (left, right
             __ nums[mid] __ target:
                 r.. mid
 

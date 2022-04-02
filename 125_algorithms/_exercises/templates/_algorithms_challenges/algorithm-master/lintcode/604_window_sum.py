@@ -4,10 +4,10 @@ c_ Solution:
     @param: k: length of window.
     @return: the sum of the element inside the window at each moving.
     """
-    ___ winSum  A, k):
+    ___ winSum  A, k
         ans    # list
         __ (n.. A o. n.. k o. k <= 0 o.
-            l..(A) < k):
+            l..(A) < k
             r.. ans
 
         _sum = 0

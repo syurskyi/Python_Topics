@@ -1,4 +1,4 @@
-___ route_diff(directions):
+___ route_diff(directions
     output    # list
     ___ i __ directions:
         __ i __ "N":

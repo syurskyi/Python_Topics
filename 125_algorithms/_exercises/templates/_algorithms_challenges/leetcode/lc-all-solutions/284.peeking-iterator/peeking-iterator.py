@@ -19,8 +19,8 @@
 #         :rtype: int
 #         """
 
-c_ PeekingIterator(o..):
-  ___ - , iterator):
+c_ PeekingIterator(o..
+  ___ - , iterator
     """
     Initialize your data structure here.
     :type iterator: Iterator

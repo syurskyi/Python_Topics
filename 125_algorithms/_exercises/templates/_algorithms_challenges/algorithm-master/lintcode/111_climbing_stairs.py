@@ -6,7 +6,7 @@ c_ Solution:
     @param n: An integer
     @return: An integer
     """
-    ___ climbStairs  n):
+    ___ climbStairs  n
         __ n <= 0:
             r.. 0
 
@@ -15,7 +15,7 @@ c_ Solution:
         pre2, pre1, curr = 0, 0, 1
         dp[0] = dp[1] = 1
 
-        ___ i __ r..(2, n + 1):
+        ___ i __ r..(2, n + 1
             pre2 = pre1
             pre1 = curr
             curr = i % 3
@@ -33,7 +33,7 @@ c_ Solution:
     @param n: An integer
     @return: An integer
     """
-    ___ climbStairs  n):
+    ___ climbStairs  n
         __ n <= 0:
             r.. 0
 
@@ -42,7 +42,7 @@ c_ Solution:
         dp[0] = 1
         dp[1] = 2
 
-        ___ i __ r..(2, n):
+        ___ i __ r..(2, n
             dp[i] = dp[i - 1] + dp[i - 2]
 
         r.. dp[n - 1]
@@ -56,7 +56,7 @@ c_ Solution:
     @param n: An integer
     @return: An integer
     """
-    ___ climbStairs  n):
+    ___ climbStairs  n
         __ n <= 0:
             r.. 0
 
@@ -64,7 +64,7 @@ c_ Solution:
 
         dp[0] = dp[1] = 1
 
-        ___ i __ r..(2, n + 1):
+        ___ i __ r..(2, n + 1
             dp[i] = dp[i - 1] + dp[i - 2]
 
         r.. dp[n]

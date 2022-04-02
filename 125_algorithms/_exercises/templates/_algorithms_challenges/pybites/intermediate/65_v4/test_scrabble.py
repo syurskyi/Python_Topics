@@ -8,12 +8,12 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
                  ___ letter __ letters.s.. }
 
 
-___ calc_word_value(word):
+___ calc_word_value(word
     """Calc a given word value based on Scrabble LETTER_SCORES mapping"""
     r.. s..(LETTER_SCORES.get(char.u.., 0) ___ char __ word)
 
 
-___ max_word_value(words):
+___ max_word_value(words
     """Calc the max value of a collection of words"""
     r.. m..(words, key=calc_word_value)
 
@@ -25,7 +25,7 @@ ___ max_word_value(words):
     ('B, R, C, O, O, E, O', 'boce'),
     ('G, A, R, Y, T, E, V', 'garvey'),
 ])
-___ test_max_word(draw, expected):
+___ test_max_word(draw, expected
     draw = draw.s..(', ')
     words = get_possible_dict_words(draw)
     __ l..(expected) > 1:

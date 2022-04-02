@@ -4,8 +4,8 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ threeSumSmaller  nums, target):
+c_ Solution(o..
+    ___ threeSumSmaller  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         """
         nums.s..()
         res = 0
-        ___ i __ r..(l..(nums)-2):
+        ___ i __ r..(l..(nums)-2
             j, k = i+1, l..(nums)-1
             w.... j < k:
                 __ nums[i]+nums[j]+nums[k] >= target:

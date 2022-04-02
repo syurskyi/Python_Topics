@@ -11,7 +11,7 @@ The solution is guaranteed to be unique.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ canCompleteCircuit  gas, cost):
+    ___ canCompleteCircuit  gas, cost
         """
 
               .-''''-.
@@ -52,7 +52,7 @@ c_ Solution:
         # find the starting index
         start_index = 0
         sum_before = 0
-        ___ ind, val __ e..(diff):  # O(N), rather than brutal force O(N^2)
+        ___ ind, val __ e..(diff  # O(N), rather than brutal force O(N^2)
             sum_before += val
             __ sum_before<0:  # reset sum_before since gas insufficient for the journey. # sum[i, j]<0
                 start_index = ind+1

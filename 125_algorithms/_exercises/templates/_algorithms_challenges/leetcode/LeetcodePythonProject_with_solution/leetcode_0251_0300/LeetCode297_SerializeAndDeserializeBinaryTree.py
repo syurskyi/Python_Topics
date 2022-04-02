@@ -5,14 +5,14 @@ Created on Mar 9, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
 c_ Codec:
-    ___ serialize  root):
+    ___ serialize  root
         stack = [root]
         result = ''
         w.... stack:
@@ -25,13 +25,13 @@ c_ Codec:
                 result += '#,'
         r.. result[:-1]
     
-    ___ deserialize  data):
+    ___ deserialize  data
         arr = data.s..(',')
         ind = [0]
         root = helper(arr, ind)
         r.. root
     
-    ___ helper  arr, ind):
+    ___ helper  arr, ind
         __ arr[ind[0]] __ '#':
             r.. N..
         root = TreeNode(arr[ind[0]])

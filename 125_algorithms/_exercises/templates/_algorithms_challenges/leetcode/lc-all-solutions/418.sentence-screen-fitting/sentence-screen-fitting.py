@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ wordsTyping  sentence, rows, cols):
+c_ Solution(o..
+  ___ wordsTyping  sentence, rows, cols
     """
     :type sentence: List[str]
     :type rows: int
@@ -9,7 +9,7 @@ c_ Solution(o..):
     s = " ".j..(sentence) + " "
     n = l..(s)
     start = 0
-    ___ _ __ r..(rows):
+    ___ _ __ r..(rows
       start += cols - 1
       __ s[start % n] __ " ":
         start += 1

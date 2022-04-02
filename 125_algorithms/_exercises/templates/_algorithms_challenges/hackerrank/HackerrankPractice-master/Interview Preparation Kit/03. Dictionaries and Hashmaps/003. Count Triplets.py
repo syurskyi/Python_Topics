@@ -5,7 +5,7 @@
 ____ c.. _______ defaultdict
 
 
-___ count_triplets(arr, r):
+___ count_triplets(arr, r
     arr2 = defaultdict(i..)
     arr3 = defaultdict(i..)
     count = 0
@@ -17,5 +17,5 @@ ___ count_triplets(arr, r):
 
 
 n, r = map(i.., input().s..())
-arr = l..(map(i.., input().s..()))
+arr = l.. m..(i.., input().s..()))
 print(count_triplets(arr, r))

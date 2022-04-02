@@ -18,7 +18,7 @@ ____ progress _______ ontrack_reading
     ((10, 8.22, 300), T..),
     ((10, 10, 365), T..),
 ])
-___ test_ontrack_reading(args, expected):
+___ test_ontrack_reading(args, expected
     ... ontrack_reading(*args) __ expected
 
 @freeze_time('2021-07-09')

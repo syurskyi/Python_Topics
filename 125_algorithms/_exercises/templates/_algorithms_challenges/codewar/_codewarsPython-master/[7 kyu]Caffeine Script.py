@@ -1,4 +1,4 @@
-___ caffeineBuzz(n):
+___ caffeineBuzz(n
 	print(n)
 	__ n%3 __ 0 a.. n % 4 __ 0:
 		r.. 'CoffeeScript'

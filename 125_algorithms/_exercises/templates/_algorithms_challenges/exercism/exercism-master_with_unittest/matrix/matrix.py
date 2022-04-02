@@ -1,9 +1,9 @@
 c_ Matrix:
 
-    ___ - , inp):
+    ___ - , inp
         rows = build_rows(inp)
-        columns = l..(map(l.., l..(z..(*rows))))
+        columns = l.. m..(l.., l..(z..(*rows))))
 
     @staticmethod
-    ___ build_rows(inp):
+    ___ build_rows(inp
         r.. [[i..(val) ___ val __ row.s.. ] ___ row __ inp.s..('\n')]

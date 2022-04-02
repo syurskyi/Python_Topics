@@ -1,7 +1,7 @@
 _______ a__
 
 
-___ calculator(operation, numbers):
+___ calculator(operation, numbers
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
@@ -10,7 +10,7 @@ ___ calculator(operation, numbers):
            'mul': l.... x: x[0] * x[1],
            'div': l.... x: x[0] / x[1]
            }
-    __ isi..(numbers, i..):
+    __ isi..(numbers, i..
         numbers = [numbers]
     res = f__(numbers[0])
     ___ num __ numbers[1:]:
@@ -35,7 +35,7 @@ ___ create_parser
     r.. parser
 
 
-___ call_calculator(args=N.., stdout=F..):
+___ call_calculator(args=N.., stdout=F..
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,

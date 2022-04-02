@@ -8,8 +8,8 @@ Given n = 2, return 91. (The answer should be the total numbers in the range of 
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ countNumbersWithUniqueDigits  n):
+c_ Solution(o..
+    ___ countNumbersWithUniqueDigits  n
         """
         Let F(i) be the number of numbers with unique digits of length i
         F(1) = 1 // special case
@@ -22,7 +22,7 @@ c_ Solution(o..):
         """
         ret = 1
         Fi = 1
-        ___ i __ x..(n):
+        ___ i __ x..(n
             Fi *= (10-i) __ i != 0 ____ 9
             ret += Fi
 

@@ -4,19 +4,19 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ simplifyPath  path):
+c_ Solution(o..
+    ___ simplifyPath  path
         """
         :type path: str
         :rtype: str
         """
         __ n.. path: r.. path
         result = ''
-        __ path.endswith('/'): path = path[:-1]
-        __ path.startswith('/'): path = path[1:]
+        __ path.endswith('/' path = path[:-1]
+        __ path.startswith('/' path = path[1:]
         l = path.s..('/')
         cont = 0
-        ___ i __ r..(l..(l)-1, -1, -1):
+        ___ i __ r..(l..(l)-1, -1, -1
             __ l[i] __ '.' o. l[i] __ '':
                 _____
             __ l[i] __ '..':

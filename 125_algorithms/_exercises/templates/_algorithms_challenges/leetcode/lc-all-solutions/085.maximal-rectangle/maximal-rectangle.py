@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ maximalRectangle  matrix):
+c_ Solution(o..
+  ___ maximalRectangle  matrix
     """
     :type matrix: List[List[str]]
     :rtype: int
     """
 
-    ___ histogram(height):
+    ___ histogram(height
       __ n.. height:
         r.. 0
       height.a..(-1)

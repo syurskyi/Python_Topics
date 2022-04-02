@@ -26,7 +26,7 @@ dirs = [(0, 1), (0, -1), (-1, 0), (1, 0)]
 
 
 c_ TrieNode:
-    ___ - ):
+    ___ -
         word = N..
         children = defaultdict(TrieNode)
 
@@ -37,13 +37,13 @@ c_ Solution:
         m, n = l..(board), l..(board[0])
         visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         ret = s..()
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 dfs(board, visited, i, j, root, ret)
 
         r.. l..(ret)
 
-    ___ dfs  board, visited, i, j, cur, ret):
+    ___ dfs  board, visited, i, j, cur, ret
         m, n = l..(board), l..(board[0])
         visited[i][j] = T..
         c = board[i][j]
@@ -60,7 +60,7 @@ c_ Solution:
 
         visited[i][j] = F..
 
-    ___ construct  words):
+    ___ construct  words
         root = TrieNode()
         ___ w __ words:
             cur = root

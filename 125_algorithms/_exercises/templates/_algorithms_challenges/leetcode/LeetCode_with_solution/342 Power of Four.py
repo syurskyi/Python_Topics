@@ -11,8 +11,8 @@ Follow up: Could you solve it without loops/recursion?
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ isPowerOfFour  num):
+c_ Solution(o..
+    ___ isPowerOfFour  num
         """
         Modular calculation
         4^a mod 3
@@ -28,7 +28,7 @@ c_ Solution(o..):
 
         r.. num % 3 __ 1
 
-    ___ isPowerOfFourNaive  num):
+    ___ isPowerOfFourNaive  num
         """
         Naive Determine number of 0 bits to be even
         :type num: int

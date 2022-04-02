@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ reverse  x):
+    ___ reverse  x
         """
         :type x: int
         :rtype: int

@@ -1,4 +1,4 @@
-___ factorize(num):
+___ factorize(num
     index = 1
     output    # list
     w.... index <= num:

@@ -11,7 +11,7 @@ _______ unittest
 ____ ocr _______ grid, number
 
 
-c_ OcrTest(unittest.TestCase):
+c_ OcrTest(unittest.TestCase
 
     ___ test_0
         assertEqual('0', number([" _ ",

@@ -6,8 +6,8 @@ Created on Mar 23, 2017
 
 _______ heapq
 
-c_ Solution(o..):
-    ___ rearrangeString  s, k):
+c_ Solution(o..
+    ___ rearrangeString  s, k
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1

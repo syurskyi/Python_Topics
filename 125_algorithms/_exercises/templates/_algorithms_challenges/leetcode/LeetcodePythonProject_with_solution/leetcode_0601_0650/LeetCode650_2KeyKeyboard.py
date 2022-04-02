@@ -3,16 +3,16 @@ Created on Oct 3, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ minSteps  n):
+c_ Solution(o..
+    ___ minSteps  n
         """
         :type n: int
         :rtype: int
         """
         dp = [0]*(n+1)
-        ___ i __ r..(2, n+1):
+        ___ i __ r..(2, n+1
             dp[i] = i
-            ___ j __ r..(i-1, -1, -1):
+            ___ j __ r..(i-1, -1, -1
                 __ i%j __ 0:
                     dp[i] = dp[j]+i//j
                     _____

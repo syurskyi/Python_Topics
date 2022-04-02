@@ -1,6 +1,6 @@
 STAR = '*'
 
-___ gen_rhombus(width):
+___ gen_rhombus(width
     """Create a generator that yields the rows of a rhombus row
        by row. So if width = 5 it should generate the following
        rows one by one:
@@ -18,7 +18,7 @@ ___ gen_rhombus(width):
     """
     
     stars =[]
-    ___ line __ r..(width + 1):
+    ___ line __ r..(width + 1
         stars.a..(line * '*')
 
     count = 0

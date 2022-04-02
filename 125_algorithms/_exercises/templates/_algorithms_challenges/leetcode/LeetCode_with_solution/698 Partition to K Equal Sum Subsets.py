@@ -32,7 +32,7 @@ c_ Solution:
         visited = [F.. ___ _ __ nums]
         r.. dfs(nums, 0, N.., target, visited, k)
 
-    ___ dfs  nums, start_idx, cur_sum, target_sum, visited, k):
+    ___ dfs  nums, start_idx, cur_sum, target_sum, visited, k
         """
         some corner cases:
         1. target_sum default at 0: sum or empty array is 0?
@@ -55,7 +55,7 @@ c_ Solution:
                 nxt_sum = (cur_sum o. 0) + nums[i]
                 # error when cur_sum or 0 + nums[i]
                 # arithmetic operator has higher precedence than logic operator
-                __ dfs(nums, i + 1, nxt_sum, target_sum, visited, k):
+                __ dfs(nums, i + 1, nxt_sum, target_sum, visited, k
                     r.. T..
                 visited[i] = F..
 
@@ -75,7 +75,7 @@ c_ Solution_TLE:
         visited = [F.. ___ _ __ nums]
         r.. dfs(nums, N.., target, visited, k)
 
-    ___ dfs  nums, cur_sum, target_sum, visited, k):
+    ___ dfs  nums, cur_sum, target_sum, visited, k
         """
         some corner cases:
         1. target_sum default at 0: sum or empty array is 0?
@@ -95,7 +95,7 @@ c_ Solution_TLE:
                 nxt_sum = (cur_sum o. 0) + nums[i]
                 # error when cur_sum or 0 + nums[i]
                 # arithmetic operator has higher precedence than logic operator
-                __ dfs(nums, nxt_sum, target_sum, visited, k):
+                __ dfs(nums, nxt_sum, target_sum, visited, k
                     r.. T..
                 visited[i] = F..
 

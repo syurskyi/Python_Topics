@@ -59,7 +59,7 @@ c_ Solution:
         counter = Counter(A)
         q    # list
         ret = 0
-        ___ i __ r..(40000 * 2):
+        ___ i __ r..(40000 * 2
             __ counter[i] > 1:
                 q.extend([i] * (counter[i] - 1))
             ____ q a.. counter[i] __ 0:

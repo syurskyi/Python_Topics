@@ -26,7 +26,7 @@ PATHS = [TMP / f"test{x}.json" ___ x __ r..(1, 5)]
 sys.path.a..(TMP)
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ download_test_files
     data_zipfile = 'bite328_test_data.zip'
     urlretrieve _*{S3}/{data_zipfile}', TMP / data_zipfile)
@@ -35,11 +35,11 @@ ___ download_test_files
 
 ?p__.m__.p.("argument, expected",
                          z..(PATHS, RESULTS))
-___ test_longest_streak_easterntz(argument, expected, download_test_files):
+___ test_longest_streak_easterntz(argument, expected, download_test_files
     ... longest_streak(argument, MY_TZ) __ expected
 
 
 ?p__.m__.p.("argument, expected",
                          z..(PATHS, RESULTS_UTC))
-___ test_longest_streak_utc(argument, expected, download_test_files):
+___ test_longest_streak_utc(argument, expected, download_test_files
     ... longest_streak(argument, UTC) __ expected

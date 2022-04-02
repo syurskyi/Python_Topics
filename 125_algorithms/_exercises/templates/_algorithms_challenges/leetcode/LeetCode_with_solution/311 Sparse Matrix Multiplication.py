@@ -5,8 +5,8 @@ https://leetcode.com/problems/sparse-matrix-multiplication/
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ multiply  A, B):
+c_ Solution(o..
+    ___ multiply  A, B
         """
         Brute force O(n^3)
         O(n^2 k) HashMap
@@ -17,21 +17,21 @@ c_ Solution(o..):
         """
         m, n = l..(A), l..(A[0])
         A1 = [{} ___ _ __ x..(m)]
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ A[i][j] != 0:
                     A1[i][j] = A[i][j]
 
         m, n = l..(B), l..(B[0])
         B1 = [{} ___ _ __ x..(n)]
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ B[i][j] != 0:
                     B1[j][i] = B[i][j]
 
         ret = [[0 ___ _ __ x..(l..(B[0]))] ___ _ __ x..(l..(A))]
-        ___ i, row __ e..(A1):
-            ___ j, col __ e..(B1):
+        ___ i, row __ e..(A1
+            ___ j, col __ e..(B1
                 s = 0
                 ___ k __ row.k..:
                     __ k __ col:

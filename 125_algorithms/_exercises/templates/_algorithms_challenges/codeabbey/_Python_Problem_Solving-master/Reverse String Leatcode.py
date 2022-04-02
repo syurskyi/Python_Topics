@@ -7,7 +7,7 @@ c_ Solution:
         
         mini = -2**31
         maxi = 2**31 -1
-        __ ans n.. __ r..(mini,maxi):
+        __ ans n.. __ r..(mini,maxi
             r.. 0
         ____:
             r.. ans

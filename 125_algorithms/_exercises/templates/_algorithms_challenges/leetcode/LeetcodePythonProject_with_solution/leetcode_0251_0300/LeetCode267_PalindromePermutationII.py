@@ -4,8 +4,8 @@ Created on Mar 4, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ generatePalindromes  s):
+c_ Solution(o..
+    ___ generatePalindromes  s
         """
         :type s: str
         :rtype: List[str]
@@ -30,7 +30,7 @@ c_ Solution(o..):
         helper(oddVal, l..(s), hashmap, result)
         r.. result
     
-    ___ helper  s0, length, hashmap, result):
+    ___ helper  s0, length, hashmap, result
         __ l..(s0) >= length:
             result.a..(s0)
             r..

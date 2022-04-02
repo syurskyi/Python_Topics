@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a list of strings, [s1, s2]
-    ___ letterCombinations  d..):
+    ___ letterCombinations  d..
         d = {
             '2': 'abc',
             '3': 'def',
@@ -13,8 +13,8 @@ c_ Solution:
         }
         r.. combinations(d.., 0, d)
 
-    ___ combinations  d.., i, d):
-        __ i __ l..(d..):
+    ___ combinations  d.., i, d
+        __ i __ l..(d..
             r.. ['']
         ____:
             res    # list

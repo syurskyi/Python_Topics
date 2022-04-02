@@ -3,10 +3,10 @@ count = 0
 res    # list
 w.... count < d:
     a = input().s..
-    a = l..(map(i..,a))
+    a = l.. m..(i..,a))
     val = a[0]
     step = a[1]
-    ___ i __ r..(0,a[2]):
+    ___ i __ r..(0,a[2]
         __ i__0:
             result = val
         ____:

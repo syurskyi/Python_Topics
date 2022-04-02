@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ kthSmallest  root, k):
+c_ Solution(o..
+  ___ kthSmallest  root, k
     """
     :type root: TreeNode
     :type k: int

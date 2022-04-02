@@ -4,8 +4,8 @@ Created on Feb 6, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxProfit  prices):
+c_ Solution(o..
+    ___ maxProfit  prices
         """
         :type prices: List[int]
         :rtype: int
@@ -18,7 +18,7 @@ c_ Solution(o..):
             left[i] = m..(prices[i]-minVal, left[i])
             minVal = m..(minVal, prices[i])
         maxVal = prices[-1]
-        ___ i __ r..(l..(prices)-2, -1, -1):
+        ___ i __ r..(l..(prices)-2, -1, -1
             right[i] = m..(maxVal-prices[i], right[i+1])
             maxVal = m..(maxVal, prices[i])
         profit = 0

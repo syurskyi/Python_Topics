@@ -3,8 +3,8 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ numDecodings  s):
+c_ Solution(o..
+    ___ numDecodings  s
         """
         :type s: str
         :rtype: int

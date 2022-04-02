@@ -6,8 +6,8 @@ __author__ = 'Daniel'
 _______ bisect
 
 
-c_ Solution(o..):
-    ___ sortTransformedArray  nums, a, b, c):
+c_ Solution(o..
+    ___ sortTransformedArray  nums, a, b, c
         """
         Key points:
         Quadratic function
@@ -42,13 +42,13 @@ c_ Solution(o..):
         w.... le >= 0:
             ret.a..(f(nums[le], a, b, c))
             le -= 1
-        w.... ri < l..(nums):
+        w.... ri < l..(nums
             ret.a..(f(nums[ri], a, b, c))
             ri += 1
 
         r.. ret __ a > 0 ____ ret[::-1]
 
-    ___ f  x, a, b, c):
+    ___ f  x, a, b, c
         r.. a * (x ** 2) + b * x + c
 
 

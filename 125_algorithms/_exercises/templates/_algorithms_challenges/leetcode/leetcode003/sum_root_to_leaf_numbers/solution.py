@@ -8,13 +8,13 @@
 c_ Solution:
     # @param root, a tree node
     # @return an integer
-    ___ sumNumbers  root):
+    ___ sumNumbers  root
         res = 0  # global variable for sum
         num = 0
         sn(root, num)
         r.. res
 
-    ___ sn  root, num):
+    ___ sn  root, num
         __ root __ N..
             r..
         ____ root.left __ N.. a.. root.right __ N..

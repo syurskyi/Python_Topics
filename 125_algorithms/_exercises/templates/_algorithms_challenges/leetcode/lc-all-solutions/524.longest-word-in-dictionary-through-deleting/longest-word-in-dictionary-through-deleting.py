@@ -1,8 +1,8 @@
 _______ c..
 
 
-c_ Solution(o..):
-  ___ findLongestWord  s, d):
+c_ Solution(o..
+  ___ findLongestWord  s, d
     """
     :type s: str
     :type d: List[str]
@@ -10,16 +10,16 @@ c_ Solution(o..):
     """
     d.s..(key=l.... x: (-l..(x), x))
 
-    ___ isSubseq(word, s):
+    ___ isSubseq(word, s
       i = 0
       ___ c __ s:
         __ c __ word[i]:
           i += 1
-        __ i __ l..(word):
+        __ i __ l..(word
           r.. T..
       r.. F..
 
     ___ word __ d:
-      __ isSubseq(word, s):
+      __ isSubseq(word, s
         r.. word
     r.. ""

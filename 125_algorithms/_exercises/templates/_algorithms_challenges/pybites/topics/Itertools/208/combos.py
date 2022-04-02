@@ -8,7 +8,7 @@ ____ i.. _______ combinations
                 temp.append(tuple((numbers[i], j)))
     return temp """
 
-___ find_number_pairs(numbers, N=10):
+___ find_number_pairs(numbers, N=10
     r..[(i,j) ___ i, j __ combinations(numbers,2) __ i+j__N]
 
 print(find_number_pairs([9, 1, 3, 8, 7]))

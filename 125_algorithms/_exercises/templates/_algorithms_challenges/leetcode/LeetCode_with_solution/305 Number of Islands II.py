@@ -6,23 +6,23 @@ ____ c.. _______ n..
 __author__ = 'Daniel'
 
 
-c_ UnionFind(o..):
+c_ UnionFind(o..
     """
     Weighted Union Find with path compression
     """
-    ___ - , rows, cols):
+    ___ - , rows, cols
         # hashing will cause TLE; use direct array access instead
         pi = [-1 ___ _ __ x..(rows*cols)]  # item -> pi
         sz = [-1 ___ _ __ x..(rows*cols)]  # root -> size
         count = 0
 
-    ___ add  item):
+    ___ add  item
         __ pi[item] __ -1:
             pi[item] = item
             sz[item] = 1
             count += 1
 
-    ___ union  a, b):
+    ___ union  a, b
         pi1 = _pi(a)
         pi2 = _pi(b)
 
@@ -34,7 +34,7 @@ c_ UnionFind(o..):
             sz[pi2] += sz[pi1]
             count -= 1
 
-    ___ _pi  item):
+    ___ _pi  item
         """
         Get root with path compression
         """
@@ -49,10 +49,10 @@ Op = n..('Op', 'r c')  # row col
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-    ___ numIslands2  n, m, operators):
+    ___ numIslands2  n, m, operators
         rows = n
         cols = m
         unroll = l.... x, y: x*cols + y  # hash will be slower

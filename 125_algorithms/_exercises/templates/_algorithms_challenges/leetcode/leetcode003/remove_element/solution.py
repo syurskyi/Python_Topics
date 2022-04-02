@@ -6,8 +6,8 @@ The order of elements can be changed. It doesn't matter what you leave beyond
 the new length.
 """
 
-c_ Solution(o..):
-    ___ removeElement  nums, val):
+c_ Solution(o..
+    ___ removeElement  nums, val
         """
         :type nums: List[int]
         :type val: int
@@ -15,7 +15,7 @@ c_ Solution(o..):
         """
         n = l..(nums)
         j = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ nums[i] != val:
                 nums[j] = nums[i]
                 j += 1

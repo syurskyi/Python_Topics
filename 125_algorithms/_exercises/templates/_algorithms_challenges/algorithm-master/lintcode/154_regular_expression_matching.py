@@ -20,7 +20,7 @@ case 3: `P[j-1]` is `a` and `a` == `P[j-1]` == `S[i-1]`
 
 
 c_ Solution:
-    ___ isMatch  s, p):
+    ___ isMatch  s, p
         """
         :type s: str
         :type p: str
@@ -42,8 +42,8 @@ c_ Solution:
         # dp[i][0] = False  # i = 1 -> m + 1
         # dp[0][j] -> ?, need to check
 
-        ___ i __ r..(m + 1):
-            ___ j __ r..(1, n + 1):
+        ___ i __ r..(m + 1
+            ___ j __ r..(1, n + 1
                 __ i > 0 a.. p[j - 1] __ s[i - 1] a.. dp[i - 1][j - 1]:
                     dp[i][j] = T..
                 ____ i > 0 a.. p[j - 1] __ ANY a.. dp[i - 1][j - 1]:

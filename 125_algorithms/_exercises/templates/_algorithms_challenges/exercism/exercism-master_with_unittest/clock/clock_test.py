@@ -3,7 +3,7 @@ _______ unittest
 ____ clock _______ Clock
 
 
-c_ ClockTest(unittest.TestCase):
+c_ ClockTest(unittest.TestCase
     # Test creating a new clock with an initial time.
     ___ test_on_the_hour
         assertEqual('08:00', s..(Clock(8, 0)))

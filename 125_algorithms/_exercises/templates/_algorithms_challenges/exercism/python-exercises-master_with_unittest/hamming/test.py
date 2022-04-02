@@ -5,7 +5,7 @@ _______ hamming
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ HammingTest(unittest.TestCase):
+c_ HammingTest(unittest.TestCase
 
     ___ test_identical_strands
         assertEqual(hamming.distance("A", "A"), 0)
@@ -47,11 +47,11 @@ c_ HammingTest(unittest.TestCase):
         assertEqual(hamming.distance("", ""), 0)
 
     ___ test_disallow_first_strand_longer
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             hamming.distance("AATG", "AAA")
 
     ___ test_disallow_second_strand_longer
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             hamming.distance("ATA", "AGTG")
 
 

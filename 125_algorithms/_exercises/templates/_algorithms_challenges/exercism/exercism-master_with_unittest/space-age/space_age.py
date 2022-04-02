@@ -11,14 +11,14 @@ c_ SpaceAge:
         'neptune': 5200418592.0
     }
 
-    ___ - , seconds):
+    ___ - , seconds
         seconds = seconds
 
-    ___ on_planet  planet):
+    ___ on_planet  planet
         r.. r..(seconds / ORBITAL_PERIODS[planet], 2)
 
 
-___ add_on_planet_fn(planet):
+___ add_on_planet_fn(planet
     setattr(SpaceAge, 'on_' + planet, l.... self: on_planet(planet))
 
 

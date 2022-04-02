@@ -1,6 +1,6 @@
-c_ Solution(o..):
+c_ Solution(o..
 
-  ___ - , nums):
+  ___ - , nums
     """
 
     :type nums: List[int]

@@ -21,7 +21,7 @@ case 3: `P[j-1]` is `a` and `a` == `P[j-1]` == `S[i-1]`
 
 
 c_ Solution:
-    ___ isMatch  s, p):
+    ___ isMatch  s, p
         """
         :type s: str, target string
         :type p: str, regex
@@ -45,8 +45,8 @@ c_ Solution:
         # dp[i][0] = False
         # dp[0][j] -> need to check
 
-        ___ i __ r..(m + 1):
-            ___ j __ r..(1, n + 1):
+        ___ i __ r..(m + 1
+            ___ j __ r..(1, n + 1
                 __ p[j - 1] __ ANY_MULTI:
                     dp[i][j] = dp[i - 1][j] o. dp[i][j - 1]
                 ____ p[j - 1] __ ANY a.. dp[i - 1][j - 1]:

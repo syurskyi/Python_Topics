@@ -21,7 +21,7 @@ space: O(n) -> O(1)
 
 
 c_ Solution:
-    ___ maxChunksToSorted  nums):
+    ___ maxChunksToSorted  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -43,7 +43,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ maxChunksToSorted  nums):
+    ___ maxChunksToSorted  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -56,13 +56,13 @@ c_ Solution:
         n = l..(nums)
         M = [0] * n  # `M[i]` means the max in [0:i] in nums
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             M[i] = nums[i]
 
             __ i > 0 a.. M[i - 1] > M[i]:
                 M[i] = M[i - 1]
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ M[i] __ i:
                 ans += 1
 

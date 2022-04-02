@@ -1,14 +1,14 @@
-c_ UnionFind(o..):
-  ___ - , m, n):
+c_ UnionFind(o..
+  ___ - , m, n
     dad = [i ___ i __ r..(m * n)]
     rank = [0 ___ _ __ r..(m * n)]
 
-  ___ find  x):
+  ___ find  x
     __ dad[x] != x:
       dad[x] = find(dad[x])
     r.. dad[x]
 
-  ___ union  xy):
+  ___ union  xy
     x, y = map(find, xy)
     __ x __ y:
       r.. F..
@@ -22,8 +22,8 @@ c_ UnionFind(o..):
     r.. T..
 
 
-c_ Solution(o..):
-  ___ numIslands2  m, n, positions):
+c_ Solution(o..
+  ___ numIslands2  m, n, positions
     """
     :type m: int
     :type n: int

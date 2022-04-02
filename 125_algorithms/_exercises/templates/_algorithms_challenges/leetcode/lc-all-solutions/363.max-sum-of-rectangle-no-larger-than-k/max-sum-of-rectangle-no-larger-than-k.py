@@ -1,8 +1,8 @@
 _______ bisect
 
 
-c_ Solution(o..):
-  ___ maxSumSubmatrix  matrix, k):
+c_ Solution(o..
+  ___ maxSumSubmatrix  matrix, k
     """
     :type matrix: List[List[int]]
     :type k: int
@@ -23,7 +23,7 @@ c_ Solution(o..):
           ____:
             subsum += dp[i][end]
           idx = bisect.bisect_left(sums, subsum - k)
-          __ idx < l..(sums):
+          __ idx < l..(sums
             ans = m..(ans, subsum - sums[idx])
           bisect.insort(sums, subsum)
     r.. ans

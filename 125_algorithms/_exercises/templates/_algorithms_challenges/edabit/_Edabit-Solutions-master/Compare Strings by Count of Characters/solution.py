@@ -1,5 +1,5 @@
-___ comp(txt1, txt2):
-    __ l..(txt1) __ l..(txt2):
+___ comp(txt1, txt2
+    __ l..(txt1) __ l..(txt2
         r.. T..
     ____:
         r.. F..

@@ -1,8 +1,8 @@
 _______ heapq
 
 
-c_ Solution(o..):
-  ___ findShortestWay  maze, ball, hole):
+c_ Solution(o..
+  ___ findShortestWay  maze, ball, hole
     """
     :type maze: List[List[int]]
     :type ball: List[int]
@@ -10,7 +10,7 @@ c_ Solution(o..):
     :rtype: str
     """
 
-    ___ next(curr, maze):
+    ___ next(curr, maze
       height = l..(maze)
       width = l..(maze[0])
       directions = [(-1, 0, "u"), (1, 0, "d"), (0, -1, "l"), (0, 1, "r")]
@@ -35,7 +35,7 @@ c_ Solution(o..):
       visited |= {curr}
       __ curr __ hole:
         r.. word
-      ___ pos, mark, incDist __ next(curr, maze):
+      ___ pos, mark, incDist __ next(curr, maze
         heapq.heappush(heap, (dist + incDist, word + mark, pos))
 
     r.. "impossible"

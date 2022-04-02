@@ -6,9 +6,9 @@
 _______ r__
 
 
-c_ Solution(o..):
+c_ Solution(o..
 
-  ___ - , head):
+  ___ - , head
     """
     @param head The linked list's head.
     Note that the head is guaranteed to be not null, so it contains at least one node.

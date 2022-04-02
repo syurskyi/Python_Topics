@@ -35,8 +35,8 @@ Return false
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ isValidSerialization  preorder):
+c_ Solution(o..
+    ___ isValidSerialization  preorder
         """
         :type preorder: str
         :rtype: bool
@@ -57,7 +57,7 @@ c_ Solution(o..):
 
         r.. n.. stk a.. child_cnt __ 1
 
-    ___ isValidSerializationSpace  preorder):
+    ___ isValidSerializationSpace  preorder
         """
         :type preorder: str
         :rtype: bool

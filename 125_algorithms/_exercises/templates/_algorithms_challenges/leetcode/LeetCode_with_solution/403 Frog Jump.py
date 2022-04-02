@@ -36,8 +36,8 @@ the gap between the 5th and 6th stone is too large.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ canCross  stones):
+c_ Solution(o..
+    ___ canCross  stones
         """
         Instead of having F[i][step] = True/False, use F[i] = set of steps
 
@@ -55,7 +55,7 @@ c_ Solution(o..):
         F[0].add(0)
         ___ stone __ stones:
             ___ step __ F[stone]:
-                ___ i __ (-1, 0, 1):
+                ___ i __ (-1, 0, 1
                     nxt = stone + step + i
                     __ nxt != stone a.. nxt __ F:
                         F[nxt].add(step + i)

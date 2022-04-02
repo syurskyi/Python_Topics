@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ threeSumClosest  nums, target):
+    ___ threeSumClosest  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -12,7 +12,7 @@ c_ Solution:
         n = l..(nums)
         nums.s..()
 
-        ___ a __ r..(n - 2):
+        ___ a __ r..(n - 2
             __ a > 0 a.. nums[a] __ nums[a - 1]:
                 _____
 
@@ -24,7 +24,7 @@ c_ Solution:
                 __ total __ target:
                     r.. total
 
-                __ abs(total - target) < abs(ans - target):
+                __ abs(total - target) < abs(ans - target
                     ans = total
 
                 __ total < target:

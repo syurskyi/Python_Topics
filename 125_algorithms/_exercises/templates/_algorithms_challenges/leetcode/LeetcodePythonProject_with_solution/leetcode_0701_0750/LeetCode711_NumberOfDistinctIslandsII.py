@@ -3,8 +3,8 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ numDistinctIslands2  grid):
+c_ Solution(o..
+    ___ numDistinctIslands2  grid
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -13,8 +13,8 @@ c_ Solution(o..):
         m, n = l..(grid), l..(grid[0])
         hashset = s..()
         count = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] __ 1:
                     res = [i, i, j, j]
                     grid[i][j] = 2
@@ -30,53 +30,53 @@ c_ Solution(o..):
                         count += 1
         r.. count
     
-    ___ helper  grid, i, j, res):
+    ___ helper  grid, i, j, res
         res[0] = m..(res[0], i)
         res[1] = m..(res[1], i)
         res[2] = m..(res[2], j)
         res[3] = m..(res[3], j)
         m, n = l..(grid), l..(grid[0])
-        ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+        ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
             __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:
                 grid[x][y] = 2
                 helper(grid, x, y, res)
     
-    ___ generateKeys  grid, res):
+    ___ generateKeys  grid, res
         hashset = s..()
         up, down, left, right = res[0], res[1], res[2], res[3]
         subGrid    # list
-        ___ i __ r..(up, down+1):
+        ___ i __ r..(up, down+1
             tmp    # list
-            ___ j __ r..(left, right+1):
+            ___ j __ r..(left, right+1
                 tmp.a..(grid[i][j])
             subGrid.a..(tmp)
         addRotationKeys(subGrid, hashset)
         r.. hashset
     
-    ___ addRotationKeys  grid, hashset):
+    ___ addRotationKeys  grid, hashset
         grid1 = grid
         grid2 = grid[::-1]
         grid3 = [row[::-1] ___ row __ grid]
         ___ grid __ [grid1, grid2, grid3]:
             grid0 = grid
-            ___ _ __ r..(4):
+            ___ _ __ r..(4
                 m, n = l..(grid0), l..(grid0[0])
                 newGrid = [[0]*m ___ _ __ r..(n)]
-                ___ i __ r..(m):
-                    ___ j __ r..(n):
+                ___ i __ r..(m
+                    ___ j __ r..(n
                         newGrid[j][i] = grid0[i][j]
                 hashset.add(getKey(newGrid))
                 grid0 = newGrid
-            ___ _ __ r..(4):
+            ___ _ __ r..(4
                 m, n = l..(grid0), l..(grid0[0])
                 newGrid = [[0]*m ___ _ __ r..(n)]
-                ___ i __ r..(m):
-                    ___ j __ r..(n):
+                ___ i __ r..(m
+                    ___ j __ r..(n
                         newGrid[n-1-j][m-1-i] = grid0[i][j]
                 hashset.add(getKey(newGrid))
                 grid0 = newGrid
     
-    ___ getKey  grid):
+    ___ getKey  grid
         r.. ','.j..([''.j..([s..(num) ___ num __ row]) ___ row __ grid])
     
     ___ test

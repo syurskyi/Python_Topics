@@ -40,7 +40,7 @@ c_ Solution:
         then keep a list
         """
         idxes = defaultdict(l..)
-        ___ i, b __ e..(B):
+        ___ i, b __ e..(B
             idxes[b].a..(i)
 
         n = l..(A)
@@ -57,7 +57,7 @@ c_ Solution:
             ____:
                 not_used.a..(a)
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ ret[i] __ N..
                 ret[i] = not_used.pop()
 

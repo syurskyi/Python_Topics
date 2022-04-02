@@ -4,8 +4,8 @@ Created on Jan 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ letterCombinations  d..):
+c_ Solution(o..
+    ___ letterCombinations  d..
         """
         :type digits: str
         :rtype: List[str]
@@ -25,7 +25,7 @@ c_ Solution(o..):
         l    # list
         ___ d __ d..:
             d = i..(d)
-            __ d n.. __ (0, 1):
+            __ d n.. __ (0, 1
                 l.a..(letMap[d])
         __ n.. l: r.. []
         elem = ''
@@ -33,8 +33,8 @@ c_ Solution(o..):
         dfs(l, 0, elem, result)
         r.. result
     
-    ___ dfs  l, ind, elem, result):
-        __ l..(elem) __ l..(l):
+    ___ dfs  l, ind, elem, result
+        __ l..(elem) __ l..(l
             result.a..(s..(elem))
             r.. result
         ___ c __ l[ind]:

@@ -1,7 +1,7 @@
 c_ Solution:
     # @param num, a list of integer
     # @return an integer
-    ___ longestConsecutive  num):
+    ___ longestConsecutive  num
         __ n.. num:
             r.. 0
         d    # dict

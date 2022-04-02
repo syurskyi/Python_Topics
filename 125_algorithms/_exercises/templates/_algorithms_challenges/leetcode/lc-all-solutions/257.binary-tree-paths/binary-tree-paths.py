@@ -8,8 +8,8 @@
 c_ Solution:
   # @param {TreeNode} root
   # @return {string[]}
-  ___ binaryTreePaths  root):
-    ___ helper(root, path, res):
+  ___ binaryTreePaths  root
+    ___ helper(root, path, res
       __ root:
         path.a..(s..(root.val))
         left = helper(root.left, path, res)

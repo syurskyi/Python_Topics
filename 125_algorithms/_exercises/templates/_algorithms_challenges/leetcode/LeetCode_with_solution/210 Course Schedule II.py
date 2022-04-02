@@ -29,7 +29,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ findOrder  numCourses, prerequisites):
+    ___ findOrder  numCourses, prerequisites
         """
         Graph -> Start from V with no predecessor (pi) -> Topological Sorting
         :type numCourses: int
@@ -37,7 +37,7 @@ c_ Solution:
         :rtype: list[int]
         """
         V    # dict
-        ___ i __ x..(numCourses):
+        ___ i __ x..(numCourses
             V[i]    # list
 
         ___ edge __ prerequisites:
@@ -45,20 +45,20 @@ c_ Solution:
 
         r.. topological_sort(V)
 
-    ___ topological_sort  V):
+    ___ topological_sort  V
         visited = s..()
         marked = s..()
         ret    # list
 
         ___ k __ V.k..:
             __ k n.. __ visited:
-                __ n.. dfs(V, k, visited, marked, ret):
+                __ n.. dfs(V, k, visited, marked, ret
                     r.. []
 
         ret.r..
         r.. ret
 
-    ___ dfs  V, k, visited, marked, ret):
+    ___ dfs  V, k, visited, marked, ret
         """
         dfs construct the ret while at the same time check acyclic
 
@@ -70,7 +70,7 @@ c_ Solution:
         marked.add(k)
         ___ neighbor __ V[k]:
             __ neighbor n.. __ visited:
-                __ n.. dfs(V, neighbor, visited, marked, ret):
+                __ n.. dfs(V, neighbor, visited, marked, ret
                     r.. F..
 
         marked.remove(k)

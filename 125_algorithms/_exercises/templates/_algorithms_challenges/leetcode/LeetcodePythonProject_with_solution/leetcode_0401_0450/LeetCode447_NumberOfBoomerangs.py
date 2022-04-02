@@ -4,14 +4,14 @@ Created on Apr 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ numberOfBoomerangs  points):
+c_ Solution(o..
+    ___ numberOfBoomerangs  points
         n = l..(points)
         res = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             hashmap    # dict
             point1 = points[i]
-            ___ j __ r..(n):
+            ___ j __ r..(n
                 point2 = points[j]
                 diff = (point2[1]-point1[1])**2+(point2[0]-point1[0])**2
                 hashmap[diff] = hashmap.get(diff, 0)+1

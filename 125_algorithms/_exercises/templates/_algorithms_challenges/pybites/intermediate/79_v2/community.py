@@ -28,7 +28,7 @@ ___ get_csv
 
 
 
-___ create_user_bar_chart(content):
+___ create_user_bar_chart(content
     """Receives csv file (decoded) content and print a table of timezones
        and their corresponding member counts in pluses to standard output
     """

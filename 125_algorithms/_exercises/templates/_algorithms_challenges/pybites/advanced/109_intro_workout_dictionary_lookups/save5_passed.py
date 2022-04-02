@@ -9,7 +9,7 @@ REST, CHILL_OUT, TRAIN = 'Rest', 'Chill out!', 'Go train {}'
 INVALID_DAY = 'Not a valid day'
 
 
-___ get_workout_motd(day):
+___ get_workout_motd(day
     """First title case the passed in day argument
        (so monday or MONDAY both result in Monday).
 
@@ -31,7 +31,7 @@ ___ get_workout_motd(day):
     """
     day = day.t..
     __ day __ WORKOUT_SCHEDULE:
-        __ day __ ("Saturday", "Sunday"):
+        __ day __ ("Saturday", "Sunday"
             r.. CHILL_OUT
         ____:
             r.. TRAIN.f..(WORKOUT_SCHEDULE[day])

@@ -1,6 +1,6 @@
-___ foolsDay(problems):
+___ foolsDay(problems
     answer    # list
-    ___ problem __ r..(problems):
+    ___ problem __ r..(problems
         total = 0
         numbers = raw_input().s..
         ___ num __ numbers:

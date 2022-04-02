@@ -4,8 +4,8 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ countComponents  n, edges):
+c_ Solution(o..
+    ___ countComponents  n, edges
         count = n
         roots = [-1]*count
         ___ edge __ edges:
@@ -17,12 +17,12 @@ c_ Solution(o..):
 #         print('roots: %s' % roots)
         r.. count
     
-    ___ findRoot  roots, ind):
+    ___ findRoot  roots, ind
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind
     
-    ___ countComponentsAnother  n, edges):
+    ___ countComponentsAnother  n, edges
         count = n
         roots = l..(r..(n))
         ___ edge __ edges:
@@ -33,7 +33,7 @@ c_ Solution(o..):
                 count -= 1
         r.. count
         
-    ___ find  roots, ind):
+    ___ find  roots, ind
         w.... roots[ind] != ind:
             roots[ind] = roots[roots[ind]]
             ind = roots[ind]

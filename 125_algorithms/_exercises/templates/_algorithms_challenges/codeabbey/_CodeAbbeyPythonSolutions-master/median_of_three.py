@@ -1,7 +1,7 @@
 amount_values = i..(input())
 results    # list
 
-___ get_median(values):
+___ get_median(values
     diff    # list
     avg = i..(s..(values)//l..(values))
     ___ i __ values:
@@ -10,8 +10,8 @@ ___ get_median(values):
     med = values[diff.index(m..(diff))]
     results.a..(med)
 
-___ i __ r..(amount_values):
-    valeus = l..(map(i.., input().s..()))
+___ i __ r..(amount_values
+    valeus = l.. m..(i.., input().s..()))
     get_median(valeus)
 
 print(*results)

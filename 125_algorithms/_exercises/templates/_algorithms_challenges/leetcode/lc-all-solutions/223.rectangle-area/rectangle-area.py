@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ computeArea  A, B, C, D, E, F, G, H):
+c_ Solution(o..
+  ___ computeArea  A, B, C, D, E, F, G, H
     """
     :type A: int
     :type B: int

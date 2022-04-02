@@ -4,19 +4,19 @@ Created on Mar 11, 2017
 @author: MT
 '''
 
-c_ NumMatrix(o..):
-    ___ - , matrix):
+c_ NumMatrix(o..
+    ___ - , matrix
         __ n.. matrix:
             tbl = N..
             r..
         m, n = l..(matrix), l..(matrix[0])
         tbl = [[0]*(n+1) ___ _ __ r..(m+1)]
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 tbl[i+1][j+1] = tbl[i][j+1]+tbl[i+1][j]+matrix[i][j]-tbl[i][j]
         tbl = tbl
     
-    ___ sumRegion  row1, col1, row2, col2):
+    ___ sumRegion  row1, col1, row2, col2
         r.. tbl[row2+1][col2+1] -\
             tbl[row2+1][col1] -\
             tbl[row1][col2+1]+\

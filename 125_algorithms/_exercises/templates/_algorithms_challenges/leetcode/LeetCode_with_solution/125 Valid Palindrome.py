@@ -13,8 +13,8 @@ For the purpose of this problem, we define empty string as valid palindrome.
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ isPalindrome  s):
+c_ Solution(o..
+    ___ isPalindrome  s
         """
 
         :param s: a string

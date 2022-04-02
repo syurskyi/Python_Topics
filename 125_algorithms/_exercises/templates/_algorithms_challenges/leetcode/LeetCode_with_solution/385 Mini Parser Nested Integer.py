@@ -33,7 +33,7 @@ __author__ = 'Daniel'
 # """
 
 
-c_ NestedInteger(o..):
+c_ NestedInteger(o..
     ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
@@ -45,13 +45,13 @@ c_ NestedInteger(o..):
         :rtype bool
         """
 
-    ___ add  elem):
+    ___ add  elem
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
 
-    ___ setInteger  value):
+    ___ setInteger  value
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
@@ -72,8 +72,8 @@ c_ NestedInteger(o..):
         """
 
 
-c_ Solution(o..):
-    ___ deserialize  s):
+c_ Solution(o..
+    ___ deserialize  s
         """
         NestedInteger is a UnionType in functional programming jargon.
 
@@ -87,11 +87,11 @@ c_ Solution(o..):
         stk    # list
 
         i = 0
-        w.... i < l..(s):
-            __ s[i] __ '[':
+        w.... i < l..(s
+            __ s[i] __ ' ':
                 stk.a..(NestedInteger())
                 i += 1
-            ____ s[i] __ ']':
+            ____ s[i] __ ' ':
                 ni = stk.pop()
                 __ n.. stk: r.. ni
 
@@ -101,7 +101,7 @@ c_ Solution(o..):
                 i += 1
             ____:
                 j = i
-                w.... j < l..(s) a.. (s[j].i.. o. s[j] __ '-'): j += 1
+                w.... j < l..(s) a.. (s[j].i.. o. s[j] __ '-' j += 1
 
                 ni = NestedInteger(i..(s[i: j]) __ s[i: j] ____ N..)
                 __ n.. stk: r.. ni

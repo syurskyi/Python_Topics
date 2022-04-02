@@ -7,7 +7,7 @@ ____:
     ____ i.. _______ z__
 
 
-___ encode(msg):
+___ encode(msg
     msg = _cleanse(msg)
     square_size = i..(ceil(sqrt(l..(msg))))
     square = _chunks_of(msg, square_size)
@@ -15,13 +15,13 @@ ___ encode(msg):
                      ___ col __ z__(*square, fillvalue='')])
 
 
-___ _cleanse(s):
+___ _cleanse(s
     """Lowercase a string and remove punctuation and whitespace
     """
     r.. ''.j..([c ___ c __ s __ c.isalnum()]).l..
 
 
-___ _chunks_of(s, n):
+___ _chunks_of(s, n
     __ l..(s) <= n:
         r.. [s]
     r.. [s[:n]] + _chunks_of(s[n:], n)

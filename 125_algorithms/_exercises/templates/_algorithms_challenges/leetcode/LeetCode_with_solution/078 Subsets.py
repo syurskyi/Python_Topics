@@ -20,7 +20,7 @@ If S = [1,2,3], a solution is:
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ subsets  S):
+    ___ subsets  S
         """
         Similar to permutation and combinations
         :param S: a list of integer
@@ -31,9 +31,9 @@ c_ Solution:
         generate_subsets(S, [], result)
         r.. result
 
-    ___ generate_subsets  S, current, result):
+    ___ generate_subsets  S, current, result
         result.a..(current)
-        ___ ind, val __ e..(S):
+        ___ ind, val __ e..(S
             generate_subsets(S[ind+1:], current+[val], result)
 
 __ _____ __ ____

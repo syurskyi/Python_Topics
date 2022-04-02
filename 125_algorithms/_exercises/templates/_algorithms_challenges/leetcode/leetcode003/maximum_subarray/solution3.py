@@ -8,8 +8,8 @@ the contiguous subarray [4,−1,2,1] has the largest sum = 6.
 """
 
 
-c_ Solution(o..):
-    ___ maxSubArray  nums):
+c_ Solution(o..
+    ___ maxSubArray  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -18,12 +18,12 @@ c_ Solution(o..):
         # s[i] - s[j] is the sum of nums[j + 1] .. nums[i]
         s = [0 ___ _ __ nums]
         ts = 0  # temporary sum
-        ___ i, c __ e..(nums):
+        ___ i, c __ e..(nums
             ts += c
             s[i] = ts
         min_sum = 0
         res = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             res = m..(res, c - min_sum)
             min_sum = m..(min_sum, c)
         __ res __ 0:

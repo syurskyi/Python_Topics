@@ -12,8 +12,8 @@ using only constant extra space complexity?
 
 # Alternative solution using a method similar to First Missing Positive
 
-c_ Solution(o..):
-    ___ missingNumber  nums):
+c_ Solution(o..
+    ___ missingNumber  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -26,7 +26,7 @@ c_ Solution(o..):
                 nums[i], nums[j] = nums[j], nums[i]
             ____:
                 i += 1
-        ___ i, e __ e..(nums):
+        ___ i, e __ e..(nums
             __ i != e:
                 r.. i
         ____:

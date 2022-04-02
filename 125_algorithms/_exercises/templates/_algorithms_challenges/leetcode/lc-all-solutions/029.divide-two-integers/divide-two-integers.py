@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ divide  dividend, divisor):
+c_ Solution(o..
+  ___ divide  dividend, divisor
     """
     :type dividend: int
     :type divisor: int

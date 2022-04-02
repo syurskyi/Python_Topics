@@ -24,5 +24,5 @@ ____ permissions _______ get_octal_from_file_permission
     ('-wxrw-rwx', '367'), ('r--r-xrw-', '456'), ('r--r-xrwx', '457'),
     ('r--rw-rwx', '467'), ('r-xrw-rwx', '567'),
 ])
-___ test_octal_results_for_different_rwx_combinations(input_arg, expected):
+___ test_octal_results_for_different_rwx_combinations(input_arg, expected
     ... get_octal_from_file_permission(input_arg) __ expected

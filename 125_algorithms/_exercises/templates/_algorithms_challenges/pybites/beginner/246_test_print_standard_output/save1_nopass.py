@@ -9,7 +9,7 @@ WORKOUTS = {'mon': 'upper body #1',
             'thu': 'upper body #2',
             'fri': 'lower body #2'}
             
-___ test_print_workout_days(capfd):
+___ test_print_workout_days(capfd
     workout = print_workout_days( my_workouts: d.. = WORKOUTS)
     output = ?.r .. 0]
     ... t..(output) __ s..

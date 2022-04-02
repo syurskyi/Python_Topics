@@ -10,10 +10,10 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
+c_ Solution(o..
     F = [0]  # static dp for all test cases
 
-    ___ numSquares  n):
+    ___ numSquares  n
         """
         static dp
         F_i = min(F_{i - j^2}+1, \forall j)
@@ -31,7 +31,7 @@ c_ Solution(o..):
 
         r.. Solution.F[n]
 
-    ___ numSquares_bfs  n):
+    ___ numSquares_bfs  n
         """
         bfs
         the q stores the intermediate result of sum of squares 
@@ -45,8 +45,8 @@ c_ Solution(o..):
         w.... q:
             level += 1
             l = l..(q)
-            ___ i __ x..(l):
-                ___ j __ x..(1, i..(math.sqrt(n))+1):
+            ___ i __ x..(l
+                ___ j __ x..(1, i..(math.sqrt(n))+1
                     nxt = q[i]+j*j
                     __ nxt <= n a.. visited[nxt]:
                         _____
@@ -61,15 +61,15 @@ c_ Solution(o..):
 
         r.. N..
 
-    ___ numSquares_TLE  n):
+    ___ numSquares_TLE  n
         """
         DP
         :type n: int
         :rtype: int
         """
         F = [i ___ i __ x..(n+1)]
-        ___ i __ x..(1, n+1):
-            ___ j __ x..(1, i..(math.sqrt(i))+1):
+        ___ i __ x..(1, n+1
+            ___ j __ x..(1, i..(math.sqrt(i))+1
                 __ i-j*j >= 0:
                     F[i] = m..(F[i], F[i-j*j]+1)
 

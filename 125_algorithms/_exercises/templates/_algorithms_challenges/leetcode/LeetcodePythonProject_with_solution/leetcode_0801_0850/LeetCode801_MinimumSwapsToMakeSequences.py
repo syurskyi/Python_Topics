@@ -3,8 +3,8 @@ Created on Apr 19, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ minSwap  A, B):
+c_ Solution(o..
+    ___ minSwap  A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -15,7 +15,7 @@ c_ Solution(o..):
         dp = [[0]*2 ___ _ __ r..(n)]
         dp[-1][0] = 0
         dp[-1][1] = 1
-        ___ i __ r..(n-2, -1, -1):
+        ___ i __ r..(n-2, -1, -1
             __ arr1[i] < arr1[i+1] a.. arr2[i] < arr2[i+1]:
                 __ arr1[i] < arr2[i+1] a.. arr2[i] < arr1[i+1]:
                     dp[i][0] = m..(dp[i+1][0], dp[i+1][1])
@@ -29,7 +29,7 @@ c_ Solution(o..):
         r.. m..(dp[0][0], dp[0][1])
     
     # My solution DFS is TLE
-    ___ minSwap_own_slow  A, B):
+    ___ minSwap_own_slow  A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -40,15 +40,15 @@ c_ Solution(o..):
         helper(arr1, arr2, 0, 0)
         r.. res
         
-    ___ helper  arr1, arr2, i, cur):
-        __ i __ l..(arr1):
+    ___ helper  arr1, arr2, i, cur
+        __ i __ l..(arr1
             res = m..(res, cur)
             r..
-        __ i __ 0 o. (arr1[i] > arr2[i-1] a.. arr2[i] > arr1[i-1]):
+        __ i __ 0 o. (arr1[i] > arr2[i-1] a.. arr2[i] > arr1[i-1]
             arr1[i], arr2[i] = arr2[i], arr1[i]
             helper(arr1, arr2, i+1, cur+1)
             arr1[i], arr2[i] = arr2[i], arr1[i]
-        __ i __ 0 o. (arr1[i] > arr1[i-1] a.. arr2[i] > arr2[i-1]):
+        __ i __ 0 o. (arr1[i] > arr1[i-1] a.. arr2[i] > arr2[i-1]
             helper(arr1, arr2, i+1, cur)
     
     ___ test

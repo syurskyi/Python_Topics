@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ canMeasureWater  x, y, z):
+c_ Solution(o..
+  ___ canMeasureWater  x, y, z
     """
     :type x: int
     :type y: int

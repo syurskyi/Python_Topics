@@ -1,8 +1,8 @@
 _______ bisect
 
 
-c_ Solution(o..):
-  ___ findClosestElements  arr, k, x):
+c_ Solution(o..
+  ___ findClosestElements  arr, k, x
     """
     :type arr: List[int]
     :type k: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
     w.... right - left < k:
       __ left __ 0:
         r.. arr[:k]
-      __ right __ l..(arr):
+      __ right __ l..(arr
         r.. arr[-k:]
       __ x - arr[left - 1] <= arr[right] - x:
         left -= 1

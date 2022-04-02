@@ -33,7 +33,7 @@ Explanation: The smallest value is 2, but there isn't any second smallest value.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

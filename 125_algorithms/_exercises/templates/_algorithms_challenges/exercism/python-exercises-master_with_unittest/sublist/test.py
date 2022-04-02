@@ -5,7 +5,7 @@ ____ sublist _______ check_lists, SUBLIST, SUPERLIST, EQUAL, UNEQUAL
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ SublistTest(unittest.TestCase):
+c_ SublistTest(unittest.TestCase
     ___ test_unique_return_values
         assertEqual(l..(s..([SUBLIST, SUPERLIST, EQUAL, UNEQUAL])), 4)
 
@@ -114,7 +114,7 @@ c_ SublistTest(unittest.TestCase):
     # additional track specific test
     ___ test_inner_spaces
         assertEqual(
-            check_lists(['a c'], ['a', 'c']),
+            check_lists( 'a c' ,  'a', 'c' ),
             UNEQUAL
         )
 

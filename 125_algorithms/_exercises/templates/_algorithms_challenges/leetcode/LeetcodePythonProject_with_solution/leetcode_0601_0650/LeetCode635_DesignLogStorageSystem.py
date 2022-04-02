@@ -3,8 +3,8 @@ Created on Sep 24, 2017
 
 @author: MT
 '''
-c_ LogSystem(o..):
-    ___ - ):
+c_ LogSystem(o..
+    ___ - 
         units = {
             'Year': 4,
             'Month': 7,
@@ -15,7 +15,7 @@ c_ LogSystem(o..):
             }
         timestamps    # list
 
-    ___ put  id, timestamp):
+    ___ put  id, timestamp
         """
         :type id: int
         :type timestamp: str
@@ -23,7 +23,7 @@ c_ LogSystem(o..):
         """
         timestamps.a..((id, timestamp))
 
-    ___ retrieve  s, e, gra):
+    ___ retrieve  s, e, gra
         """
         :type s: str
         :type e: str

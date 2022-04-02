@@ -5,13 +5,13 @@ Created on Feb 9, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
+c_ ListNode(o..
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(o..):
-    ___ reorderList  head):
+c_ Solution(o..
+    ___ reorderList  head
         """
         :type head: ListNode
         :rtype: void Do not return anything, modify head in-place instead.
@@ -30,7 +30,7 @@ c_ Solution(o..):
         head2 = reverse(head2)
         merge(head, head2)
     
-    ___ reverse  root):
+    ___ reverse  root
         __ n.. root o. n.. root.next: r.. root
         p1, p2 = root, root.next
         p1.next = N..
@@ -41,7 +41,7 @@ c_ Solution(o..):
             p2 = tmp
         r.. p1
     
-    ___ merge  head1, head2):
+    ___ merge  head1, head2
         w.... head1 a.. head2:
             tmp1 = head1.next
             tmp2 = head2.next

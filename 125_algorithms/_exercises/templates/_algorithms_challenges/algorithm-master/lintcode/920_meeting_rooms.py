@@ -13,7 +13,7 @@ time: O(n)
 space: O(n)
 """
 c_ Solution:
-    ___ canAttendMeetings  intervals):
+    ___ canAttendMeetings  intervals
         """
         :type intervals: list[Interval]
         :rtype: bool
@@ -46,7 +46,7 @@ time: O(nlogn)
 space: O(1)
 """
 c_ Solution:
-    ___ canAttendMeetings  intervals):
+    ___ canAttendMeetings  intervals
         """
         :type intervals: list[Interval]
         :rtype: bool

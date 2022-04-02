@@ -3,8 +3,8 @@ ____ c.. _______ d..
 INF = 2147483647
 
 
-c_ Solution(o..):
-  ___ wallsAndGates  rooms):
+c_ Solution(o..
+  ___ wallsAndGates  rooms
     """
     :type rooms: List[List[int]]
     :rtype: void Do not return anything, modify rooms in-place instead.

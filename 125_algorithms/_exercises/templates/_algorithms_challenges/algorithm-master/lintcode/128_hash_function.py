@@ -4,7 +4,7 @@ c_ Solution:
     @param: HASH_SIZE: An integer
     @return: An integer
     """
-    ___ hashCode  key, HASH_SIZE):
+    ___ hashCode  key, HASH_SIZE
         __ n.. key:
             r.. 0
 

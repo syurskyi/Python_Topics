@@ -4,15 +4,15 @@ Created on Apr 25, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isConvex  points):
+c_ Solution(o..
+    ___ isConvex  points
         """
         :type points: List[List[int]]
         :rtype: bool
         """
         gotNegative, gotPositive = F.., F..
         length = l..(points)
-        ___ i __ r..(length):
+        ___ i __ r..(length
             a = points[i-1]
             b = points[i]
             c = points[(i+1)%length]
@@ -24,7 +24,7 @@ c_ Solution(o..):
             __ gotNegative a.. gotPositive: r.. F..
         r.. T..
     
-    ___ crossProductLength  ax, ay, bx, by, cx, cy):
+    ___ crossProductLength  ax, ay, bx, by, cx, cy
         bax = ax-bx
         bay = ay-by
         bcx = cx-bx

@@ -8,8 +8,8 @@ ___ get_credit_cards(data: bytes) __ List[s..]:
     of "first_name,last_name,credit_card", from which you have
     to extract the credit card numbers.
     """
-    text = base64.decodebytes(data).decode()
-    card_nums = [row.s..(',')[2] ___ row __ text.splitlines()]
+    text = base64.decodebytes(data).d.. )
+    card_nums = [row.s..(',')[2] ___ row __ text.s.. ]
     card_nums.pop(0)            # remove header
 
     r.. card_nums

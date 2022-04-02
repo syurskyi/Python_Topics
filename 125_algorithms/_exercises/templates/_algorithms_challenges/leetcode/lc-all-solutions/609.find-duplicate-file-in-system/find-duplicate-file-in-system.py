@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findDuplicate  paths):
+c_ Solution(o..
+  ___ findDuplicate  paths
     """
     :type paths: List[str]
     :rtype: List[List[str]]

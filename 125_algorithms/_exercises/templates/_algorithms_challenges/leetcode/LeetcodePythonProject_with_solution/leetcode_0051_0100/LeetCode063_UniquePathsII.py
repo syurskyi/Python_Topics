@@ -4,8 +4,8 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ uniquePathsWithObstacles  obstacleGrid):
+c_ Solution(o..
+    ___ uniquePathsWithObstacles  obstacleGrid
         """
         :type obstacleGrid: List[List[int]]
         :rtype: int
@@ -17,8 +17,8 @@ c_ Solution(o..):
         dp = [[0]*n ___ i __ r..(m)]
         __ obstacleGrid[0][0] __ 1:
             r.. 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ obstacleGrid[i][j] __ 1:
                     dp[i][j] = 0
                     _____

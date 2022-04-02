@@ -19,8 +19,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Node(o..):
-    ___ - , lo, hi, cnt):
+c_ Node(o..
+    ___ - , lo, hi, cnt
         lo = lo
         hi = hi
         cnt = cnt  # size of empty slots
@@ -32,13 +32,13 @@ c_ Node(o..):
         r.. repr("[%d,%d)" % (lo, hi))
 
 
-c_ SegmentTree(o..):
+c_ SegmentTree(o..
     """empty space"""
 
-    ___ - ):
+    ___ -
         root = N..
 
-    ___ build  lo, hi):
+    ___ build  lo, hi
         """a node can have right ONLY IF has left"""
         __ lo >= hi: r..
         __ lo __ hi-1: r.. Node(lo, hi, 1)
@@ -48,7 +48,7 @@ c_ SegmentTree(o..):
         root.right = build((lo+hi)/2, hi)
         r.. root
 
-    ___ find_delete  root, sz):
+    ___ find_delete  root, sz
         """
         :return: index
         """
@@ -62,14 +62,14 @@ c_ SegmentTree(o..):
                                     sz-root.left.cnt)
 
 
-c_ Solution(o..):
-    ___ reconstructQueue  A):
+c_ Solution(o..
+    ___ reconstructQueue  A
         """
         :type A: List[List[int]]
         :rtype: List[List[int]]
         """
 
-        ___ cmp(a, b):
+        ___ cmp(a, b
             __ a[0] != b[0]:
                 r.. a[0]-b[0]
             ____:

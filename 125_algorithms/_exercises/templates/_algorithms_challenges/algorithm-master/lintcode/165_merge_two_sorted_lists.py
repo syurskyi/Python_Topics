@@ -6,7 +6,7 @@
 
 
 c_ Solution:
-    ___ mergeTwoLists  a, b):
+    ___ mergeTwoLists  a, b
         """
         :type a: ListNode
         :type b: ListNode

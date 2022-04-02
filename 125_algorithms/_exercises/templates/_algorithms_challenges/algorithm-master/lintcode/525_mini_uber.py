@@ -24,7 +24,7 @@ c_ MiniUber:
     # @param {double} lat, lng driver's location
     # return {trip} matched trip information
     #               if there have matched rider or null
-    ___ report  driver_id, lat, lng):
+    ___ report  driver_id, lat, lng
         __ n.. driver_id:
             r..
 
@@ -32,15 +32,15 @@ c_ MiniUber:
             r.. driver_to_trip[driver_id]
 
         __ driver_id __ driver_to_locs:
-            driver_to_locs[driver_id]['lat'] = lat
-            driver_to_locs[driver_id]['lng'] = lng
+            driver_to_locs[driver_id] 'lat'  = lat
+            driver_to_locs[driver_id] 'lng'  = lng
         ____:
             driver_to_locs[driver_id] = _new_location(lat, lng)
 
     # @param rider_id an integer
     # @param lat, lng rider's location
     # return a trip
-    ___ request  rider_id, lat, lng):
+    ___ request  rider_id, lat, lng
         __ n.. rider_id:
             r..
         trip = Trip(rider_id, lat, lng)
@@ -48,7 +48,7 @@ c_ MiniUber:
         driver_id = -1
 
         ___ _driver_id, _loc __ driver_to_locs.i..:
-            _distance = Helper.get_distance(_loc['lat'], _loc['lng'], lat, lng)
+            _distance = Helper.get_distance(_loc 'lat' , _loc 'lng' , lat, lng)
             __ _distance < distance:
                 driver_id = _driver_id
                 distance = _distance
@@ -62,7 +62,7 @@ c_ MiniUber:
 
         r.. trip
 
-    ___ _new_location  lat, lng):
+    ___ _new_location  lat, lng
         r.. {
             'lat': lat,
             'lng': lng

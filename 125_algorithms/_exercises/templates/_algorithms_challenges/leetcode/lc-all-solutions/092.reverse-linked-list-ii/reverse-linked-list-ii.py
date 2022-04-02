@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ reverseBetween  head, m, n):
+c_ Solution(o..
+  ___ reverseBetween  head, m, n
     """
     :type head: ListNode
     :type m: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
     :rtype: ListNode
     """
 
-    ___ reverse(root, prep, k):
+    ___ reverse(root, prep, k
       cur = root
       pre = N..
       next = N..

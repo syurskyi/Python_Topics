@@ -1,17 +1,17 @@
 c_ UnionFind
-  ___ - , m, n):
+  ___ - , m, n
     dad = [i ___ i __ r..(0, m * n)]
     rank = [0 ___ i __ r..(0, m * n)]
     m = m
     n = n
 
-  ___ find  x):
+  ___ find  x
     dad = dad
     __ dad[x] != x:
       dad[x] = find(dad[x])
     r.. dad[x]
 
-  ___ union  xy):
+  ___ union  xy
     dad = dad
     rank = rank
     x, y = map(find, xy)
@@ -29,7 +29,7 @@ c_ UnionFind
 c_ Solution:
   # @param {list[list[str]]} board a 2D board containing 'X' and 'O'
   # @return nothing 
-  ___ solve  board):
+  ___ solve  board
     # Write your code here
     __ l..(board) __ 0:
       r..
@@ -44,7 +44,7 @@ c_ Solution:
         ___ d __ ["d", "r"]:
           di, dj = directions[d]
           newi, newj = i + di, j + dj
-          __ newi >= 0 a.. newi < l..(board) a.. newj >= 0 a.. newj < l..(board[0]):
+          __ newi >= 0 a.. newi < l..(board) a.. newj >= 0 a.. newj < l..(board[0]
             __ board[newi][newj] __ "O":
               uf.union((newi * m + newj, i * m + j))
 

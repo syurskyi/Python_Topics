@@ -3,17 +3,17 @@ Created on Feb 19, 2017
 
 @author: MT
 '''
-c_ TrieNode(o..):
+c_ TrieNode(o..
     ___ - , c_ N..
         c = c
         children    # dict
         isLeaf = F..
 
-___ buildTrie(words):
+___ buildTrie(words
     root = TrieNode()
     ___ word __ words:
         p = root
-        ___ i, c __ e..(word):
+        ___ i, c __ e..(word
             __ c n.. __ p.children:
                 t = TrieNode(c)
                 p.children[c] = t
@@ -24,8 +24,8 @@ ___ buildTrie(words):
                 t.isLeaf = T..
     r.. root
 
-c_ Solution(o..):
-    ___ findWords  board, words):
+c_ Solution(o..
+    ___ findWords  board, words
         """
         :type board: List[List[str]]
         :type words: List[str]
@@ -34,12 +34,12 @@ c_ Solution(o..):
         result = s..()
         root = buildTrie(words)
         m, n = l..(board), l..(board[0])
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 dfs(board, i, j, root, [], result)
         r.. l..(result)
     
-    ___ dfs  board, i, j, p, elem, result):
+    ___ dfs  board, i, j, p, elem, result
         c = board[i][j]
         __ c __ '#' o. c n.. __ p.children: r..
         p = p.children[c]
@@ -78,8 +78,8 @@ c_ Solution(o..):
 #             ),
             (
                 [
-                    ['a', 'b'],
-                    ['c', 'd'],
+                     'a', 'b' ,
+                     'c', 'd' ,
                 ],
                 ["ab","cb","ad","bd","ac","ca","da","bc","db","adcb","dabc","abb","acb"],
 #                 ['ab'],

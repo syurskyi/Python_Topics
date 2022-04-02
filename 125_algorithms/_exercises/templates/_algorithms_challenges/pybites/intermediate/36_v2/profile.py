@@ -1,4 +1,4 @@
-___ get_profile(name,age,*args,**kwargs):
+___ get_profile(name,age,*args,**kwargs
     print(args,kwargs)
 
     __ t..(age) != i..:
@@ -14,11 +14,11 @@ ___ get_profile(name,age,*args,**kwargs):
     result =  {'name': name,'age': age}
 
     __ args:
-        result['sports'] = s..(args)
+        result 'sports'  = s..(args)
 
 
     __ kwargs:
-        result['awards'] = kwargs
+        result 'awards'  = kwargs
 
     r.. result
 

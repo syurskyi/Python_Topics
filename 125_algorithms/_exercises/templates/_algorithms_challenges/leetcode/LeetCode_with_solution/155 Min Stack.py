@@ -11,7 +11,7 @@ __author__ = 'Danyang'
 
 
 c_ MinStack:
-    ___ - ):
+    ___ - 
         """
         algorithm: non_asc stack keeps the items of the normal stack if they are in non-ascending order
         normal stack: 5 4 3 5 4 3 2 1
@@ -27,7 +27,7 @@ c_ MinStack:
         stk    # list
         non_asc    # list
 
-    ___ push  x):
+    ___ push  x
         """
 
         :param x: int

@@ -74,7 +74,7 @@ c_ Solution:
     1. if `target` has right child, then successor lies at the most-left child in right child of `target`
     2. otherwise, just traverse down from root, and record `ans` when every time go left
     """
-    ___ inorderSuccessor  root, target):
+    ___ inorderSuccessor  root, target
         """
         :type root: TreeNode
         :type target: TreeNode
@@ -107,7 +107,7 @@ c_ Solution2:
 
     just do inorder traverse
     """
-    ___ inorderSuccessor  root, target):
+    ___ inorderSuccessor  root, target
         """
         :type root: TreeNode
         :type target: TreeNode
@@ -143,7 +143,7 @@ c_ Solution3:
     1. if `target` has right child, then successor lies at the most-left child in right child of `target`
     2. otherwise, just traverse top to root
     """
-    ___ inorderSuccessor  root, target):
+    ___ inorderSuccessor  root, target
         """
         :type root: TreeNode
         :type target: TreeNode
@@ -176,7 +176,7 @@ c_ Solution4:
     1. if `target` has right child, then successor lies at the most-left child in right child of `target`
     2. otherwise, just traverse top to root
     """
-    ___ inorderSuccessor  root, target):
+    ___ inorderSuccessor  root, target
         """
         :type root: TreeNode
         :type target: TreeNode

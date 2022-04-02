@@ -3,8 +3,8 @@ Created on Mar 31, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ makeLargestSpecial  S):
+c_ Solution(o..
+    ___ makeLargestSpecial  S
         """
         :type S: str
         :rtype: str
@@ -12,7 +12,7 @@ c_ Solution(o..):
         count = 0
         i = 0
         res    # list
-        ___ j, c __ e..(S):
+        ___ j, c __ e..(S
             count = count+1 __ c__'1' ____ count-1
             __ count __ 0:
                 res.a..('1'+makeLargestSpecial(S[i+1:j])+'0')

@@ -6,7 +6,7 @@ s1 = s..(s1)
 s2 = s..(s2)
 
 #defining the method mix
-___ mix(s1,s2):
+___ mix(s1,s2
     
     s1 = ''.j..(i ___ i __ s1 __ i.islower())
     s2 = ''.j..(i ___ i __ s2 __ i.islower())
@@ -52,21 +52,21 @@ ___ mix(s1,s2):
             __ s1_dic[i] > 1 o. s2_dic[i] > 1:
                 #if the same element is present in both s1 and s2 and count is same
                 __ s1_dic[i] __ s2_dic[i]:
-                    ___ j __ r..(s1_dic[i]):
+                    ___ j __ r..(s1_dic[i]
                         sub_str += i
                     res_string.a..('=:' + sub_str)
                 #if the same element is present in both s1 and s2 and count of s1 is greater than s2
                 ____ s1_dic[i] > s2_dic[i]:
-                    ___ j __ r..(s1_dic[i]):
+                    ___ j __ r..(s1_dic[i]
                         sub_str += i
                     res_string.a..('1:' + sub_str)
                 ____:
-                    ___ j __ r..(s2_dic[i]):
+                    ___ j __ r..(s2_dic[i]
                         sub_str += i
                     res_string.a..('2:' + sub_str)
         ____:
             __ s1_dic[i] > 1:
-                ___ j __ r..(s1_dic[i]):
+                ___ j __ r..(s1_dic[i]
                     sub_str += i
                 res_string.a..('1:' + sub_str)
                 
@@ -74,7 +74,7 @@ ___ mix(s1,s2):
         sub_str = ''
         __ i n.. __ s1_dic:
             __ s2_dic[i] > 1:
-                ___ j __ r..(s2_dic[i]):
+                ___ j __ r..(s2_dic[i]
                     sub_str += i
                 res_string.a..('2:' + sub_str)
                 
@@ -87,14 +87,14 @@ ___ mix(s1,s2):
 #here the string is sorted on the basis of the length of the string
     
     ___ i __ r..(l..(res_string)):
-        ___ j __ r..(0,l..(res_string)-1):
+        ___ j __ r..(0,l..(res_string)-1
             
             # check if the string is less than the next item in the list if yes swap the two string
-            __ l..(res_string[j]) < l..(res_string[j+1]):
+            __ l..(res_string[j]) < l..(res_string[j+1]
                 res_string[j],res_string[j+1]= res_string[j+1],res_string[j]
             
             #check if the string is having the same lenth
-            ____ l..(res_string[j]) __ l..(res_string[j+1]):
+            ____ l..(res_string[j]) __ l..(res_string[j+1]
                
                 #check if the string first element is integer or has a '=' 
                 #here try and except block helps program from terminating

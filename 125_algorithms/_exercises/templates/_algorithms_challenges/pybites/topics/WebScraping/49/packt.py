@@ -20,9 +20,9 @@ ___ get_book
     description = soup.select('.dotd-main-book-summary div')[2].text.s..
 
 
-    image = soup.find('img', class_="bookimage imagecache imagecache-dotd_main_image")['src']
+    image = soup.find('img', class_="bookimage imagecache imagecache-dotd_main_image") 'src'
 
-    link = soup.select(".dotd-main-book-image a")[0]['href']
+    link = soup.select(".dotd-main-book-image a")[0] 'href'
 
     r.. Book(title,description,image,link)
 

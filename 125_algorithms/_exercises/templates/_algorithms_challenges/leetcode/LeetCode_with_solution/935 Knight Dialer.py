@@ -69,17 +69,17 @@ c_ Solution:
         F[pos][step] = sum(F[nbr][step+1] for all nbr)
         """
         F = defaultdict(l....: defaultdict(i..))
-        ___ pos __ r..(10):
+        ___ pos __ r..(10
             F[pos][N-1] = 1
 
-        ___ n __ r..(N-2, -1, -1):
-            ___ pos __ r..(10):
+        ___ n __ r..(N-2, -1, -1
+            ___ pos __ r..(10
                 ___ nbr __ nbrs[pos]:
                     F[pos][n] += F[nbr][n+1]
                     F[pos][n] %= MOD
 
         ret = 0
-        ___ i __ r..(10):
+        ___ i __ r..(10
             ret += F[i][0]
             ret %= MOD
 
@@ -87,18 +87,18 @@ c_ Solution:
 
 
 c_ SolutionTLE2:
-    ___ - ):
+    ___ -
         cache    # dict
 
     ___ knightDialer  N: i..) __ i..:
         ret = 0
-        ___ i __ r..(10):
+        ___ i __ r..(10
             ret += dfs(i, N-1)
             ret %= MOD
 
         r.. ret
 
-    ___ dfs  i, r):
+    ___ dfs  i, r
         __ (i, r) n.. __ cache:
             ret = 0
             __ r __ 0:
@@ -113,7 +113,7 @@ c_ SolutionTLE2:
 
 
 c_ SolutionTLE:
-    ___ - ):
+    ___ -
         # row, col size
         m = 4
         n = 3
@@ -121,14 +121,14 @@ c_ SolutionTLE:
 
     ___ knightDialer  N: i..) __ i..:
         ret = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
-                __ (i, j) != (3, 0) a.. (i, j) != (3, 2):
+        ___ i __ r..(m
+            ___ j __ r..(n
+                __ (i, j) != (3, 0) a.. (i, j) != (3, 2
                     ret += dfs(i, j, N-1)
                     ret %= MOD
         r.. ret
 
-    ___ dfs  i, j, r):
+    ___ dfs  i, j, r
         __ (i, j, r) n.. __ cache:
             ret = 0
             __ r __ 0:
@@ -137,7 +137,7 @@ c_ SolutionTLE:
                 ___ di, dj __ dirs:
                     I = i + di
                     J = j + dj
-                    __ 0 <= I < m a.. 0 <= J < n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2):
+                    __ 0 <= I < m a.. 0 <= J < n a.. (I, J) != (3, 0) a.. (I, J) != (3, 2
                         ret += dfs(I, J, r - 1)
                         ret %= MOD
 

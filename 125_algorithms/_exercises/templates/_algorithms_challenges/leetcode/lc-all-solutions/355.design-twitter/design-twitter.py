@@ -1,9 +1,9 @@
 _______ heapq
 
 
-c_ Twitter(o..):
+c_ Twitter(o..
 
-  ___ - ):
+  ___ -
     """
     Initialize your data structure here.
     """
@@ -11,7 +11,7 @@ c_ Twitter(o..):
     tweets = c...defaultdict(l..)
     friendship = c...defaultdict(s..)
 
-  ___ postTweet  userId, tweetId):
+  ___ postTweet  userId, tweetId
     """
     Compose a new tweet.
     :type userId: int
@@ -22,7 +22,7 @@ c_ Twitter(o..):
     tweets[userId].a..(tInfo)
     ts -= 1
 
-  ___ getNewsFeed  userId):
+  ___ getNewsFeed  userId
     """
     Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent.
     :type userId: int
@@ -45,7 +45,7 @@ c_ Twitter(o..):
       cnt -= 1
     r.. ret
 
-  ___ follow  followerId, followeeId):
+  ___ follow  followerId, followeeId
     """
     Follower follows a followee. If the operation is invalid, it should be a no-op.
     :type followerId: int
@@ -56,7 +56,7 @@ c_ Twitter(o..):
       r..
     friendship[followerId] |= {followeeId}
 
-  ___ unfollow  followerId, followeeId):
+  ___ unfollow  followerId, followeeId
     """
     Follower unfollows a followee. If the operation is invalid, it should be a no-op.
     :type followerId: int

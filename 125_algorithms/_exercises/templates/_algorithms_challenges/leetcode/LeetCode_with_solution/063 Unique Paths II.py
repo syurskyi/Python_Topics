@@ -19,7 +19,7 @@ Note: m and n will be at most 100.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ uniquePathsWithObstacles  obstacleGrid):
+    ___ uniquePathsWithObstacles  obstacleGrid
         """
         dp
         :param obstacleGrid:  a list of lists of integers
@@ -36,8 +36,8 @@ c_ Solution:
         path[0][0] = 1 # start
 
         # path[i][j] = path[i-1][j] + path[i][j-1]
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ i__0 a.. j__0:
                     _____
                 __ i__0:

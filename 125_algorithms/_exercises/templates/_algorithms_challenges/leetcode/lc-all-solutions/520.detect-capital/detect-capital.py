@@ -1,8 +1,8 @@
 _______ s__
 
 
-c_ Solution(o..):
-  ___ detectCapitalUse  word):
+c_ Solution(o..
+  ___ detectCapitalUse  word
     """
     :type word: str
     :rtype: bool

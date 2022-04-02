@@ -5,14 +5,14 @@ Created on Feb 21, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ countNodes  root):
+c_ Solution(o..
+    ___ countNodes  root
         """
         :type root: TreeNode
         :rtype: int
@@ -26,7 +26,7 @@ c_ Solution(o..):
         ____:
             r.. countNodes(root.left) + countNodes(root.right) + 1
     
-    ___ getLeftHeight  root):
+    ___ getLeftHeight  root
         height = 0
         node = root
         w.... node:
@@ -34,7 +34,7 @@ c_ Solution(o..):
             height += 1
         r.. height
     
-    ___ getRightHeight  root):
+    ___ getRightHeight  root
         height = 0
         node = root
         w.... node:

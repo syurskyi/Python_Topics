@@ -6,7 +6,7 @@ ____ rps _______ (_get_winner, game,
                  lose, win, tie)
 
 
-@p__.f..()
+?p__.f..()
 ___ my_game
     """Initialize game and move it to point where to
        receive first player (send) input"""
@@ -16,7 +16,7 @@ ___ my_game
 
 
 @patch('rps._get_computer_move')
-___ test_win(computerMoveMock, my_game, capfd):
+___ test_win(computerMoveMock, my_game, capfd
     computerMoveMock.return_value = 'rock'
     my_game.send('paper')
     output = ?.r .. 0].s..
@@ -24,7 +24,7 @@ ___ test_win(computerMoveMock, my_game, capfd):
 
 
 @patch('rps._get_computer_move')
-___ test_loose(computerMoveMock, my_game, capfd):
+___ test_loose(computerMoveMock, my_game, capfd
     computerMoveMock.return_value = 'rock'
     my_game.send('scissors')
     output = ?.r .. 0].s..
@@ -32,7 +32,7 @@ ___ test_loose(computerMoveMock, my_game, capfd):
 
 
 @patch('rps._get_computer_move')
-___ test_tie(computerMoveMock, my_game, capfd):
+___ test_tie(computerMoveMock, my_game, capfd
     computerMoveMock.return_value = 'paper'
     my_game.send('paper')
     output = ?.r .. 0].s..
@@ -40,7 +40,7 @@ ___ test_tie(computerMoveMock, my_game, capfd):
 
 
 @patch('rps._get_computer_move')
-___ test_invalid_choice(computerMoveMock, my_game, capfd):
+___ test_invalid_choice(computerMoveMock, my_game, capfd
     my_game.send('spam')
     output = ?.r .. 0].s..
     ... 'Invalid' __ output
@@ -57,11 +57,11 @@ ___ test_invalid_choice(computerMoveMock, my_game, capfd):
     ('scissors', 'scissors', 'tie'),
     ('paper', 'paper', 'tie'),
 ])
-___ test_get_winner(player1, player2, result):
+___ test_get_winner(player1, player2, result
     ... result __ _get_winner(player1, player2)
 
 
-___ test_stop_iteration(my_game):
+___ test_stop_iteration(my_game
     # 3.6 = StopIteration
     # 3.7 = RuntimeError - see: https://bugs.python.org/issue32670
     w__ p__.r..((StopIteration, RuntimeError)):

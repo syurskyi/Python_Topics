@@ -1,12 +1,12 @@
-c_ RandomizedSet(o..):
-  ___ - ):
+c_ RandomizedSet(o..
+  ___ -
     """
     Initialize your data structure here.
     """
     d    # dict
     a    # list
 
-  ___ insert  val):
+  ___ insert  val
     """
     Inserts a value to the set. Returns true if the set did not already contain the specified element.
     :type val: int
@@ -18,7 +18,7 @@ c_ RandomizedSet(o..):
     d[val] = l..(a) - 1
     r.. T..
 
-  ___ remove  val):
+  ___ remove  val
     """
     Removes a value from the set. Returns true if the set contained the specified element.
     :type val: int

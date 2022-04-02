@@ -13,7 +13,7 @@ Dm <-> a <-> b <-> c <-> dm  |<- cache_list (dll)
 
 
 c_ LRUCache:
-    ___ - , capacity):
+    ___ - , capacity
         """
         :type capacity: int
         """
@@ -24,7 +24,7 @@ c_ LRUCache:
         D.nxt = d
         d.pre = D
 
-    ___ get  key):
+    ___ get  key
         """
         :type key: int
         :rtype: int
@@ -35,7 +35,7 @@ c_ LRUCache:
         _update(key)
         r.. nodes[key].val
 
-    ___ s..  key, val):
+    ___ s..  key, val
         """
         :type key: int
         :type val: int
@@ -66,7 +66,7 @@ c_ LRUCache:
         node.unlink()
         _add_tail(node)
 
-    ___ _add  key, val):
+    ___ _add  key, val
         nodes[key] = CacheNode(key, val)
         _add_tail(nodes[key])
 
@@ -75,7 +75,7 @@ c_ LRUCache:
         node.unlink()
         r.. node
 
-    ___ _add_tail  node):
+    ___ _add_tail  node
         node.link(d.pre, d)
 
 
@@ -86,7 +86,7 @@ c_ CacheNode:
         pre = pre
         nxt = nxt
 
-    ___ link  pre, nxt):
+    ___ link  pre, nxt
         pre = pre
         nxt = nxt
         pre.nxt = self

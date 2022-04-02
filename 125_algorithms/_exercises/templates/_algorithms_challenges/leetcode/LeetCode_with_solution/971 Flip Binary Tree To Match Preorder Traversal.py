@@ -43,14 +43,14 @@ ____ typing _______ List
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         ret    # list
         i = 0  # currently scanning index of voyage
 
@@ -62,7 +62,7 @@ c_ Solution:
         dfs(root, voyage)
         r.. ret
 
-    ___ dfs  node, voyage):
+    ___ dfs  node, voyage
         __ n.. node:
             r..
 

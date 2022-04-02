@@ -4,12 +4,12 @@ Created on Feb 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         queue1    # list
         queue2    # list
     
-    ___ push  x):
+    ___ push  x
         __ empty
             queue1.a..(x)
         ____:

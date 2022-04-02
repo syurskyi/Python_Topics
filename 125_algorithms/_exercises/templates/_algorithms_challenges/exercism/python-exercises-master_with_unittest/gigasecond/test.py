@@ -7,7 +7,7 @@ ____ gigasecond _______ add_gigasecond
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ GigasecondTest(unittest.TestCase):
+c_ GigasecondTest(unittest.TestCase
     ___ test_date_only_specification_of_time
         assertEqual(
             add_gigasecond(d__(2011, 4, 25)),

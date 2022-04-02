@@ -14,7 +14,7 @@ c_ Solution:
     @param: head: n
     @return: The new head of reversed linked list.
     """
-    ___ reverse  head):
+    ___ reverse  head
         """
         example: 1->2->3
 

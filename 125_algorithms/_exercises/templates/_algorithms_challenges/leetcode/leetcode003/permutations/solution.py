@@ -8,8 +8,8 @@ For example,
 """
 
 
-c_ Solution(o..):
-    ___ permute  nums):
+c_ Solution(o..
+    ___ permute  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -18,7 +18,7 @@ c_ Solution(o..):
             r.. [[]]
         ____:
             res    # list
-            ___ i, e __ e..(nums):
+            ___ i, e __ e..(nums
                 rest = nums[:i] + nums[i + 1:]
                 rest_perms = permute(rest)
                 ___ perm __ rest_perms:

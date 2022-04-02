@@ -1,46 +1,46 @@
-c_ List(o..):
+c_ List(o..
   @staticmethod
-  ___ delete(elem):
+  ___ delete(elem
     elem.prev.next = elem.next
     elem.next.prev = elem.prev
     elem.next = elem.prev = N..
     r.. elem
 
   @staticmethod
-  ___ move(elem, newPrev, newNext):
+  ___ move(elem, newPrev, newNext
     elem.prev = newPrev
     elem.next = newNext
     newPrev.next = elem
     newNext.prev = elem
 
   @staticmethod
-  ___ a..(head, elem):
+  ___ a..(head, elem
     List.move(elem, head.prev, head)
 
   @staticmethod
-  ___ insertAfter(head, elem):
+  ___ insertAfter(head, elem
     List.move(elem, head, head.next)
 
   @staticmethod
-  ___ isEmpty(head):
+  ___ isEmpty(head
     r.. head.next __ head.prev __ head
 
   @staticmethod
-  ___ initHead(head):
+  ___ initHead(head
     head.prev = head.next = head
 
 
-c_ Node(o..):
-  ___ - , val):
+c_ Node(o..
+  ___ - , val
     val = val
     prev = N..
     next = N..
     keys = s..()
 
-  ___ add  key):
+  ___ add  key
     keys |= {key}
 
-  ___ remove  key):
+  ___ remove  key
     keys -= {key}
 
   ___ isEmpty
@@ -52,9 +52,9 @@ c_ Node(o..):
     r.. ""
 
 
-c_ AllOne(o..):
+c_ AllOne(o..
 
-  ___ - ):
+  ___ - 
     """
     Initialize your data structure here.
     """
@@ -62,7 +62,7 @@ c_ AllOne(o..):
     head = Node(-1)
     List.initHead(head)
 
-  ___ inc  key):
+  ___ inc  key
     """
     Inserts a new key <Key> with value 1. Or increments an existing key by 1.
     :type key: str
@@ -95,7 +95,7 @@ c_ AllOne(o..):
         del d[key]
       d[key] = newNode
 
-  ___ dec  key):
+  ___ dec  key
     """
     Decrements an existing key by 1. If Key's value is 1, remove it from the data structure.
     :type key: str

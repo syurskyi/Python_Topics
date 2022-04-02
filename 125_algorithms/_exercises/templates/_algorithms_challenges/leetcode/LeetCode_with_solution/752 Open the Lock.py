@@ -70,8 +70,8 @@ c_ Solution:
             ___ e __ q:
                 __ e __ destination:
                     r.. step
-                ___ i __ r..(4):
-                    ___ delta __ (-1, 1):
+                ___ i __ r..(4
+                    ___ delta __ (-1, 1
                         nxt_lst = l..(e)  # copy
                         nxt_lst[i] = (nxt_lst[i] + delta) % 10  # forward or backward
                         nxt = t..(nxt_lst)

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ wordBreak  s, wordDict):
+c_ Solution(o..
+  ___ wordBreak  s, wordDict
     """
     :type s: str
     :type wordDict: Set[str]
@@ -7,7 +7,7 @@ c_ Solution(o..):
     """
     queue = [0]
     ls = l..(s)
-    lenList = [l ___ l __ s..(map(l.., wordDict))]
+    lenList = [l ___ l __ s.. m..(l.., wordDict))]
     visited = [0 ___ _ __ r..(0, ls + 1)]
     w.... queue:
       start = queue.pop(0)

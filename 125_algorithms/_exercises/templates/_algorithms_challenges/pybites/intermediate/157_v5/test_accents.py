@@ -36,15 +36,15 @@ texts = (
      "The accent tréma (dieresis/umlaut) ë, ï, ü"),
 )
 expected = (
-    ['á', 'é', 'ñ', 'ú'],
-    ['á', 'é', 'í', 'ñ'],
-    ['á', 'é', 'í', 'ñ'],
-    ['à', 'â', 'ç', 'è', 'é', 'ê', 'ë', 'î', 'ï', 'ô', 'ù', 'û', 'ü'],
+     'á', 'é', 'ñ', 'ú' ,
+     'á', 'é', 'í', 'ñ' ,
+     'á', 'é', 'í', 'ñ' ,
+     'à', 'â', 'ç', 'è', 'é', 'ê', 'ë', 'î', 'ï', 'ô', 'ù', 'û', 'ü' ,
 )
 
 
 ?p__.m__.p.("text, expected", z..(texts, expected))
-___ test_filter_accents(text, expected):
+___ test_filter_accents(text, expected
     # get rid of duplicates and sort results
     result = filter_accents(text)
     actual = s..(l..(s..(result)))

@@ -14,8 +14,8 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ maxEnvelopes  A):
+c_ Solution(o..
+    ___ maxEnvelopes  A
         """
         LIS
         binary search
@@ -26,7 +26,7 @@ c_ Solution(o..):
         """
         __ n.. A: r.. 0
 
-        A.s..(key=l.... (w, h): (w, -h))
+        A.s..(key=l.... (w, h (w, -h))
         F = [-1 ___ _ __ x..(l..(A)+1)]
 
         F[1] = A[0][1]  # store value rather than index
@@ -38,7 +38,7 @@ c_ Solution(o..):
 
         r.. k
 
-    ___ maxEnvelopesTLE  A):
+    ___ maxEnvelopesTLE  A
         """
         LIS
         O(n^2)
@@ -51,9 +51,9 @@ c_ Solution(o..):
         A.s..()
         n = l..(A)
         F = [1 ___ _ __ x..(n)]
-        ___ i __ x..(1, n):
-            ___ j __ x..(i):
-                __ predicate(A[j], A[i]):
+        ___ i __ x..(1, n
+            ___ j __ x..(i
+                __ predicate(A[j], A[i]
                     F[i] = m..(F[i], 1 + F[j])
 
         r.. m..(F)

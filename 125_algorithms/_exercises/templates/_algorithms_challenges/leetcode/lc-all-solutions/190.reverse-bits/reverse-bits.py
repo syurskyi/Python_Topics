@@ -1,10 +1,10 @@
 c_ Solution:
   # @param n, an integer
   # @return an integer
-  ___ reverseBits  n):
+  ___ reverseBits  n
     ans = 0
     mask = 1
-    ___ _ __ r..(32):
+    ___ _ __ r..(32
       ans <<= 1
       __ mask & n:
         ans |= 1

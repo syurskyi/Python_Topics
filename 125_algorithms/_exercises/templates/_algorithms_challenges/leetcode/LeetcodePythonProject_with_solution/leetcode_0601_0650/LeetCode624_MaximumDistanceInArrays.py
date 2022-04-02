@@ -4,8 +4,8 @@ Created on Sep 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxDistance  arrays):
+c_ Solution(o..
+    ___ maxDistance  arrays
         """
         :type arrays: List[List[int]]
         :rtype: int

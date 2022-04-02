@@ -1,15 +1,15 @@
 ____ c.. _______ d..
 
 
-c_ Queue(o..):
-  ___ - ):
+c_ Queue(o..
+  ___ -
     """
     initialize your data structure here.
     """
     stack1 = d..([])
     stack2 = d..([])
 
-  ___ push  x):
+  ___ push  x
     """
     :type x: int
     :rtype: nothing

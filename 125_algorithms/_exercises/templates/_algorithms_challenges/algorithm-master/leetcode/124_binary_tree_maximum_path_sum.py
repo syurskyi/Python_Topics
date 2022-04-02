@@ -9,7 +9,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ maxPathSum  root):
+    ___ maxPathSum  root
         """
         :type root: TreeNode
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution:
         ans, _ = divide_conquer(root)
         r.. ans
 
-    ___ divide_conquer  node):
+    ___ divide_conquer  node
         __ n.. node:
             r.. f__('-inf'), 0
 
@@ -35,7 +35,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ maxPathSum  root):
+    ___ maxPathSum  root
         """
         :type root: TreeNode
         :rtype: int
@@ -47,7 +47,7 @@ c_ Solution:
         divide_conquer(root)
         r.. ans
 
-    ___ divide_conquer  node):
+    ___ divide_conquer  node
         __ n.. node:
             r.. 0
 

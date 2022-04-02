@@ -4,8 +4,8 @@ Created on Jan 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ generateParenthesis  n):
+c_ Solution(o..
+    ___ generateParenthesis  n
         """
         :type n: int
         :rtype: List[str]
@@ -15,7 +15,7 @@ c_ Solution(o..):
         dfs(n, n, '', res)
         r.. res
     
-    ___ dfs  left, right, curr, res):
+    ___ dfs  left, right, curr, res
         __ left __ 0 a.. right __ 0:
             res.a..(curr)
         __ left > right:
@@ -26,7 +26,7 @@ c_ Solution(o..):
             dfs(left, right-1, curr+')', res)
     
     ___ test
-        ___ n __ r..(4):
+        ___ n __ r..(4
             print('n: %s' % n)
             result = generateParenthesis(n)
             print('result: %s' % result)

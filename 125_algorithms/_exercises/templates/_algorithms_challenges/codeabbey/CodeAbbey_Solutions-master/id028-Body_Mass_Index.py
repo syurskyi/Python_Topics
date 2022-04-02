@@ -1,4 +1,4 @@
-___ BMI(users):
+___ BMI(users
         pairCount = 0
         answer    # list
         w.... pairCount < users:

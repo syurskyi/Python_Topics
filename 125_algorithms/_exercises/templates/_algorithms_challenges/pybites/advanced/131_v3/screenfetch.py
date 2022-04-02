@@ -21,9 +21,9 @@ output = """
 """
 
 
-___ sysinfo_scrape(output):
+___ sysinfo_scrape(output
     """Scrapes the output from screenfetch and returns a dictionary"""
-    lines = output.splitlines(keepends=F..)
+    lines = output.s..k.._F..)
     w.... lines[0] __ '':
         lines.pop(0)
     line = lines[0][::-1]
@@ -33,5 +33,5 @@ ___ sysinfo_scrape(output):
         s.. = __.s..(r'(?P<key>[\w ]+): (?P<value>.*)$', line[info_col:])
         __ s..:
             grp = s...groupdict()
-            results[grp['key']] = grp['value']
+            results[grp 'key']] = grp 'value'
     r.. results

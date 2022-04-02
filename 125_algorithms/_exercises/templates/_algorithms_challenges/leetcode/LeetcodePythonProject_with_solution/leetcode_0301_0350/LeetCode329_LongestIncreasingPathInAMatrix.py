@@ -4,18 +4,18 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ longestIncreasingPath  matrix):
+c_ Solution(o..
+    ___ longestIncreasingPath  matrix
         __ n.. matrix: r.. 0
         m, n = l..(matrix), l..(matrix[0])
         mem = [[0]*n ___ _ __ r..(m)]
         maxPath = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 maxPath = m..(maxPath, helper(matrix, i, j, mem))
         r.. maxPath
     
-    ___ helper  matrix, i, j, mem):
+    ___ helper  matrix, i, j, mem
         m, n = l..(matrix), l..(matrix[0])
         __ mem[i][j]:
             r.. mem[i][j]

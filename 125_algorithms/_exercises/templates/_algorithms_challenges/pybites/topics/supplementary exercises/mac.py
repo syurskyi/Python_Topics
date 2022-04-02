@@ -1,6 +1,6 @@
 _______ json
 
-___ multicast_mac_to_ip(mac_address):
+___ multicast_mac_to_ip(mac_address
 
     mac_bytes = mac_address.s..(":")
     ip_mask = 0xe0000000
@@ -9,7 +9,7 @@ ___ multicast_mac_to_ip(mac_address):
     ip_mask |= i..(mac_bytes[5], 16)
     result = l..()
 
-    ___ i __ r..(0,31):
+    ___ i __ r..(0,31
         temp_ip = ip_mask
         temp_ip |= i << 23
         o4 = (temp_ip & 0xff000000) >> 24

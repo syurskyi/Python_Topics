@@ -21,11 +21,11 @@ c_ Color:
     Takes the string of a color name and returns its RGB value.
     """
 
-    ___ - , color):
+    ___ - , color
         rgb = COLOR_NAMES.get(color.upper())
         color = color
 
-    ___ hex2rgb(hex_value):
+    ___ hex2rgb(hex_value
         """Class method that converts a hex value into an rgb one"""
         __ l..(hex_value) != 7 o. hex_value[0] != '#':
             r.. ValueError
@@ -35,7 +35,7 @@ c_ Color:
             r.. ValueError
         r.. rgb
 
-    ___ rgb2hex(rgb_value):
+    ___ rgb2hex(rgb_value
         """Class method that converts an rgb value into a hex one"""
         ___ value __ rgb_value:
             __ i..(value) < 0 o. i..(value) > 255:

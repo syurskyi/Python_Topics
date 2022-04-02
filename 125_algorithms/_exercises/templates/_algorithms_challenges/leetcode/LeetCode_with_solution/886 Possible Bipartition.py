@@ -53,20 +53,20 @@ c_ Solution:
             G[v].a..(u)
 
         visited    # dict  # 0 color red, 1 color blue
-        ___ u __ r..(1, N+1):
+        ___ u __ r..(1, N+1
             __ u n.. __ visited:
-                __ n.. dfs(u, G, visited, 0):
+                __ n.. dfs(u, G, visited, 0
                     r.. F..
         r.. T..
 
-    ___ dfs  u, G, visited, color):
+    ___ dfs  u, G, visited, color
         visited[u] = color
         ___ nbr __ G[u]:
             __ nbr __ visited:
                 __ visited[nbr] __ color:
                     r.. F..
             ____:
-                __ n.. dfs(nbr, G, visited, color ^ 1):
+                __ n.. dfs(nbr, G, visited, color ^ 1
                     r.. F..
 
         r.. T..

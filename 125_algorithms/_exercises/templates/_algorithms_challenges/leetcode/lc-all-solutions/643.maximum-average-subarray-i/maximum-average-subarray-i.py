@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ findMaxAverage  nums, k):
+c_ Solution(o..
+  ___ findMaxAverage  nums, k
     """
     :type nums: List[int]
     :type k: int

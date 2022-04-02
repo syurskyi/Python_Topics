@@ -30,7 +30,7 @@ c_ Solution:
         hi = n - k
         w.... lo < hi:
             mid = (lo + hi) // 2
-            __ abs(x - A[mid]) > abs(A[mid + k] - x):
+            __ abs(x - A[mid]) > abs(A[mid + k] - x
                 # better to have A[mid+k] rather than A[mid]
                 lo = mid + 1
             ____:
@@ -50,7 +50,7 @@ c_ Solution:
         j = idx
         w.... k:
             __ 0 <= i < n a.. 0 <= j < n:
-                __ abs(A[i] - x) <= abs(A[j] - x):
+                __ abs(A[i] - x) <= abs(A[j] - x
                     ret.appendleft(A[i])
                     i -= 1
                 ____:

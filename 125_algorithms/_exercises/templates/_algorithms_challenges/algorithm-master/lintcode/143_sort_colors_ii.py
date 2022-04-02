@@ -8,12 +8,12 @@ c_ Solution:
     @param: k: An integer
     @return: nothing
     """
-    ___ sortColors2  colors, k):
+    ___ sortColors2  colors, k
         __ n.. colors o. n.. k:
             r..
         rainbow_sort(colors, 0, l..(colors) - 1, 1, k)
 
-    ___ rainbow_sort  colors, start, end, color_from, color_to):
+    ___ rainbow_sort  colors, start, end, color_from, color_to
         """
         like quick sort
         """
@@ -49,7 +49,7 @@ c_ Solution:
     @param: k: An integer
     @return: nothing
     """
-    ___ sortColors2  colors, k):
+    ___ sortColors2  colors, k
         """
         1. ensure the `min_color` in the `left_scope`,
            and the `max_color` in the `right_scope`
@@ -64,7 +64,7 @@ c_ Solution:
 
         w.... count < k:
             _min = _max = colors[left]
-            ___ i __ r..(left + 1, right + 1):
+            ___ i __ r..(left + 1, right + 1
                 __ colors[i] < _min:
                     _min = colors[i]
                 __ colors[i] > _max:

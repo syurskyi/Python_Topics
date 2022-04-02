@@ -3,21 +3,21 @@ _______ unittest
 _______ etl
 
 
-c_ TransformTest(unittest.TestCase):
+c_ TransformTest(unittest.TestCase
     ___ test_transform_one_value
-        old = {1: ['WORLD']}
+        old = {1:  'WORLD' }
         expected = {'world': 1}
 
         assertEqual(expected, etl.transform(old))
 
     ___ test_transform_more_values
-        old = {1: ['WORLD', 'GSCHOOLERS']}
+        old = {1:  'WORLD', 'GSCHOOLERS' }
         expected = {'world': 1, 'gschoolers': 1}
 
         assertEqual(expected, etl.transform(old))
 
     ___ test_more_keys
-        old = {1: ['APPLE', 'ARTICHOKE'], 2: ['BOAT', 'BALLERINA']}
+        old = {1:  'APPLE', 'ARTICHOKE' , 2:  'BOAT', 'BALLERINA' }
         expected = {
             'apple': 1,
             'artichoke': 1,

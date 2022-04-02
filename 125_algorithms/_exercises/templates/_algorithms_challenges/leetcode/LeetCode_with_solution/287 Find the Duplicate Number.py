@@ -11,8 +11,8 @@ There is only one duplicate number in the array, but it could be repeated more t
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ findDuplicate  nums):
+c_ Solution(o..
+    ___ findDuplicate  nums
         """
         Condition for convert the array problem to linked list problem:
         CANNOT contains integer with 0; otherwise cycle: A = [1, 0]

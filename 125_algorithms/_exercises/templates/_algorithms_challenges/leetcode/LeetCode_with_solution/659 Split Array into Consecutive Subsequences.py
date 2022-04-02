@@ -66,11 +66,11 @@ c_ Solution:
 
             
 c_ Interval:
-    ___ - , end, length):
+    ___ - , end, length
         end = end
         length = length
 
-    ___ __lt__  other):
+    ___ __lt__  other
         __ end __ other.end:
             r.. length < other.length
 

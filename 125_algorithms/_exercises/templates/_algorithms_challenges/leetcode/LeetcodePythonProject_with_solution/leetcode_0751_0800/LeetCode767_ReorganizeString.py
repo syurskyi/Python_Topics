@@ -3,8 +3,8 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ reorganizeString  S):
+c_ Solution(o..
+    ___ reorganizeString  S
         """
         :type S: str
         :rtype: str

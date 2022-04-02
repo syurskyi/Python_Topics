@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ strStr  haystack, needle):
+c_ Solution(o..
+  ___ strStr  haystack, needle
     """
     :type haystack: str
     :type needle: str
     :rtype: int
     """
-    __ l..(haystack) __ l..(needle):
+    __ l..(haystack) __ l..(needle
       __ haystack __ needle:
         r.. 0
       ____:
@@ -17,6 +17,6 @@ c_ Solution(o..):
       w.... j < l..(needle) a.. k < l..(haystack) a.. haystack[k] __ needle[j]:
         j += 1
         k += 1
-      __ j __ l..(needle):
+      __ j __ l..(needle
         r.. i
     r.. -1 __ needle ____ 0

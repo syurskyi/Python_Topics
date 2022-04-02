@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findDuplicate  nums):
+c_ Solution(o..
+  ___ findDuplicate  nums
     """
     :type nums: List[int]
     :rtype: int
@@ -16,6 +16,6 @@ c_ Solution(o..):
         end = mid
       ____:
         start = mid
-    __ nums.c.. start) > nums.c.. end):
+    __ nums.c.. start) > nums.c.. end
       r.. start
     r.. end

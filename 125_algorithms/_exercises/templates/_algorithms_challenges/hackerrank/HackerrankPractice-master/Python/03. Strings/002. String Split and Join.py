@@ -2,5 +2,5 @@
 # Score: 10
 
 
-___ split_and_join(line):
+___ split_and_join(line
     r.. "-".j..(line.s..())

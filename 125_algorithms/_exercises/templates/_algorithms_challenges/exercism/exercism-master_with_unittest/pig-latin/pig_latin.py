@@ -4,15 +4,15 @@ _______ s__
 c_ PigLatinTranslator:
 
     alpha = s..(s__.ascii_lowercase)
-    vowels = s..(['a', 'e', 'i', 'o', 'u'])
+    vowels = s..( 'a', 'e', 'i', 'o', 'u' )
     consonants = alpha - vowels
 
     @classmethod
-    ___ translate_phrase(cls, phrase):
+    ___ translate_phrase(cls, phrase
         r.. ' '.j..([cls.translate(word) ___ word __ phrase.s.. ])
 
     @classmethod
-    ___ translate(cls, word):
+    ___ translate(cls, word
         __ (word[0] __ cls.vowels o.
             word.startswith('yt') o.
                 word.startswith('xr')):
@@ -25,11 +25,11 @@ c_ PigLatinTranslator:
                 word[1] __ cls.consonants) o.
                 word.startswith('qu')):
             r.. word[2:] + word[0:2] + 'ay'
-        ____ (word[0] __ cls.consonants):
+        ____ (word[0] __ cls.consonants
             r.. word[1:] + word[0] + 'ay'
 
 
-___ translate(phrase):
+___ translate(phrase
     print((PigLatinTranslator.alpha))
     print((PigLatinTranslator.vowels))
     print((PigLatinTranslator.consonants))

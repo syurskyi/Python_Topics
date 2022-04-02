@@ -18,11 +18,11 @@ ___ _get_dates
     local = os.path.j..(TMP, RSS_FEED)
     urlretrieve(remote, local)
 
-    w__ open(local) __ f:
+    w__ o.. local) __ f:
         r.. PUB_DATE.f..(f.read())
 
 
-___ convert_to_datetime(date_str):
+___ convert_to_datetime(date_str
     """Receives a date str and convert it into a datetime object"""
     # Sun, 07 Jan 2018 12:00:00 +0100
     date_fmt = '%a, %d %b %Y %H:%M:%S'
@@ -30,7 +30,7 @@ ___ convert_to_datetime(date_str):
     r.. dt
 
 
-___ get_month_most_posts(dates):
+___ get_month_most_posts(dates
     """Receives a list of datetimes and returns the month (format YYYY-MM)
        that occurs most"""
     new_list = [logdate.s..("%Y-%m") ___ logdate __ dates]

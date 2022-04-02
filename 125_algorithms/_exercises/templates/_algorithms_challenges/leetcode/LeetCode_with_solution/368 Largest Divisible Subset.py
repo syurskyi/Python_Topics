@@ -20,8 +20,8 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ largestDivisibleSubset  A):
+c_ Solution(o..
+    ___ largestDivisibleSubset  A
         """
         Given a divisible subset, when adding a new number, we only needs to validate whether the new number is
         divisible by the largest number in the divisible subset.
@@ -40,7 +40,7 @@ c_ Solution(o..):
         ___ i __ x..(l..(A)):
             F[i] = 1
             pi[i] = i
-            ___ j __ x..(i):
+            ___ j __ x..(i
                 __ A[i] % A[j] __ 0:
                     __ F[i] < 1 + F[j]:
                         F[i] = 1 + F[j]

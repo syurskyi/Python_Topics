@@ -25,7 +25,7 @@ c_ Color:
     Takes the string of a color name and returns its RGB value.
     """
 
-    ___ - , color: s..):
+    ___ - , color: s..
         colorname = color
         rgb = COLOR_NAMES.get(color.u.., N..)
 
@@ -45,7 +45,7 @@ c_ Color:
     @classmethod
     ___ rgb2hex(cls, rbg_tuple: t..) __ s..:
         """Class method that converts an rgb value into a hex one"""
-        __ l..(rbg_tuple) != 3 o. any((x < 0) o. (x > 255) ___ x __ rbg_tuple):
+        __ l..(rbg_tuple) != 3 o. any((x < 0) o. (x > 255) ___ x __ rbg_tuple
             r.. ValueError('Invalid rgb colour triplet')
         ___
             r.. f'#{bytes(rbg_tuple).hex()}'

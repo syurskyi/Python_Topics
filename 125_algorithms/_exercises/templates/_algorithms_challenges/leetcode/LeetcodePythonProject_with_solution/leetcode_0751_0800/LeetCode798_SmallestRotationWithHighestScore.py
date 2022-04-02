@@ -3,8 +3,8 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ bestRotation  A):
+c_ Solution(o..
+    ___ bestRotation  A
         """
         :type A: List[int]
         :rtype: int
@@ -12,14 +12,14 @@ c_ Solution(o..):
         arr = A
         n = l..(arr)
         change = [1]*n
-        ___ i __ r..(n):
+        ___ i __ r..(n
             change[(i-arr[i]+1)%n] -= 1
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             change[i] += change[i-1]
         r.. change.index(m..(change))
     
     # This EASY solution is TLE    
-    ___ bestRotation_slow  A):
+    ___ bestRotation_slow  A
         """
         :type A: List[int]
         :rtype: int
@@ -33,10 +33,10 @@ c_ Solution(o..):
                 idx = i
         r.. idx
     
-    ___ getScore  arr, k):
+    ___ getScore  arr, k
         res = 0
         arr0 = arr[k:]+arr[:k]
-        ___ i, num __ e..(arr0):
+        ___ i, num __ e..(arr0
             __ num <= i: res += 1
         r.. res
     

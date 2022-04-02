@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findSubsequences  nums):
+c_ Solution(o..
+  ___ findSubsequences  nums
     """
     :type nums: List[int]
     :rtype: List[List[int]]
     """
     ans    # list
 
-    ___ dfs(nums, start, path, ans):
+    ___ dfs(nums, start, path, ans
       __ l..(path) >= 2:
         ans.a..(t..(path + []))
 

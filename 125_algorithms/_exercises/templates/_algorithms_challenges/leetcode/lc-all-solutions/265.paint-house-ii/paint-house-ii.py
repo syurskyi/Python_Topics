@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minCostII  costs):
+c_ Solution(o..
+  ___ minCostII  costs
     """
     :type costs: List[List[int]]
     :rtype: int

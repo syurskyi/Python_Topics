@@ -4,7 +4,7 @@ ____ regex _______ (extract_course_times,
 
 
 ___ test_extract_course_times_default_arg
-    expected = ['01:47', '32:03', '41:51', '27:48', '05:02']
+    expected =  '01:47', '32:03', '41:51', '27:48', '05:02'
     ... extract_course_times() __ expected
 
 
@@ -14,12 +14,12 @@ ___ test_extract_course_times_other_course_input
               '08:12 Learning datetime and date'
               '06:07 Datetime timedelta usage'
               '04:02 Concepts: what did we learn')
-    expected = ['00:40', '01:33', '08:12', '06:07', '04:02']
+    expected =  '00:40', '01:33', '08:12', '06:07', '04:02'
     ... extract_course_times(course) __ expected
 
 
 ___ test_get_all_hashtags_and_links_default_arg
-    expected = ['http://pybit.es/requests-cache.html', '#python', '#APIs']
+    expected =  'http://pybit.es/requests-cache.html', '#python', '#APIs'
     ... get_all_hashtags_and_links() __ expected
 
 
@@ -29,10 +29,10 @@ ___ test_get_all_hashtags_and_links_other_tweet
              'http://pbreadinglist.herokuapp.com/books/'
              'TvEqDAAAQBAJ#.XVOriU5z2tA.twitter'
              ' #psychology #philosophy')
-    expected = ['#books',
+    expected =  '#books',
                 ('http://pbreadinglist.herokuapp.com/books/'
                  'TvEqDAAAQBAJ#.XVOriU5z2tA.twitter'),
-                '#psychology', '#philosophy']
+                '#psychology', '#philosophy'
     ... get_all_hashtags_and_links(tweet) __ expected
 
 

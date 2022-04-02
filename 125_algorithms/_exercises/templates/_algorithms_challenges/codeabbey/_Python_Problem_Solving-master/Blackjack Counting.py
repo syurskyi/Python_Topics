@@ -3,7 +3,7 @@ ___ i __ r..(i..(input())):
     #accept the types of card
     a = input().s..
     # sort the list keeping A at the end
-    predefined_list = ['A']
+    predefined_list =  'A'
     a =s..(a, key=l.... x: x __ predefined_list)
     tot = 0
     #for all elements in a

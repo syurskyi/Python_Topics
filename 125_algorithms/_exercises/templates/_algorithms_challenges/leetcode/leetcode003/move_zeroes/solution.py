@@ -11,14 +11,14 @@ Minimize the total number of operations.
 """
 
 
-c_ Solution(o..):
-    ___ moveZeroes  nums):
+c_ Solution(o..
+    ___ moveZeroes  nums
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         j = 0
-        ___ i, c __ e..(nums):
+        ___ i, c __ e..(nums
             __ c != 0:
                 nums[i], nums[j] = nums[j], nums[i]
                 j += 1

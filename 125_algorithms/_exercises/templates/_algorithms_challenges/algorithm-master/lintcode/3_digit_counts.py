@@ -4,13 +4,13 @@ c_ Solution:
     @param: n: An integer
     @return: An integer denote the count of digit k in 1..n
     """
-    ___ digitCounts  k, n):
+    ___ digitCounts  k, n
         ans = 0
-        ___ i __ r..(n + 1):
+        ___ i __ r..(n + 1
             ans += c.. k, i)
         r.. ans
 
-    ___ c.. self, k, a):
+    ___ c.. self, k, a
         __ k __ a __ 0:
             r.. 1
 

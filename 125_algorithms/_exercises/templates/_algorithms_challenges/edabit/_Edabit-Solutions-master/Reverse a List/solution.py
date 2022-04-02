@@ -1,4 +1,4 @@
-___ reverse(lst):
+___ reverse(lst
     r.. lst[::-1]
 
 

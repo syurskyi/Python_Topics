@@ -10,7 +10,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ numberOfArithmeticSlices  A):
+    ___ numberOfArithmeticSlices  A
         """
         Subsequence, count the number, looks like dp
         use defaultdict for easy dp array construction
@@ -35,7 +35,7 @@ c_ Solution:
         ret = 0
         D = defaultdict(l....: defaultdict(i..))
         ___ i __ r..(l..(A)):
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 d = A[i] - A[j]
                 D[i][d] += 1 + D[j][d]
                 __ D[j][d] > 0:
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ numberOfArithmeticSlices_error  A):
+    ___ numberOfArithmeticSlices_error  A
         """
         :type A: List[int]
         :rtype: int
@@ -52,11 +52,11 @@ c_ Solution:
         ret = 0
         D = defaultdict(l....: defaultdict(i..))
         ___ i __ r..(l..(A)):
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 delta = A[i] - A[j]
                 D[i][delta] += 1 + D[j][delta]
 
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 delta = A[i] - A[j]
                 __ D[j][delta] > 0:
                     ret += D[i][delta]  # counted the length 2

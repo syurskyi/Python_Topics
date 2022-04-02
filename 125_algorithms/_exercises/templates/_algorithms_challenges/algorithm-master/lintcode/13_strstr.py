@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ strStr  haystack, needle):
+    ___ strStr  haystack, needle
         """
         :type haystack: str
         :type needle: str
@@ -13,7 +13,7 @@ c_ Solution:
 
         m, n = l..(haystack), l..(needle)
 
-        ___ i __ r..(m - n + 1):
+        ___ i __ r..(m - n + 1
             __ haystack[i:i + n] __ needle:
                 r.. i
 

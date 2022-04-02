@@ -4,8 +4,8 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ validWordAbbreviation  word, abbr):
+c_ Solution(o..
+    ___ validWordAbbreviation  word, abbr
         """
         pointers
         :type word: str
@@ -14,7 +14,7 @@ c_ Solution(o..):
         """
         w = 0
         a = 0
-        w.... w < l..(word) a.. a < l..(abbr):
+        w.... w < l..(word) a.. a < l..(abbr
             __ abbr[a].i.. a.. abbr[a] != '0':
                 e = a
                 w.... e < l..(abbr) a.. abbr[e].i.. e += 1

@@ -3,8 +3,8 @@ Created on Mar 20, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ cherryPickup  grid):
+c_ Solution(o..
+    ___ cherryPickup  grid
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -13,9 +13,9 @@ c_ Solution(o..):
         M = (N<<1)-1
         dp = [[0]*N ___ _ __ r..(N)]
         dp[0][0] = grid[0][0]
-        ___ n __ r..(1, M):
-            ___ i __ r..(N-1, -1, -1):
-                ___ p __ r..(N-1, -1, -1):
+        ___ n __ r..(1, M
+            ___ i __ r..(N-1, -1, -1
+                ___ p __ r..(N-1, -1, -1
                     j = n-i
                     q = n-p
                     __ j<0 o. j>=N o. q<0 o. q>=N o. grid[i][j]<0 o. grid[p][q]<0:

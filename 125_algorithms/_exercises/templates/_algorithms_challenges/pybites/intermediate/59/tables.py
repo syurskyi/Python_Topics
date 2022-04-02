@@ -1,11 +1,11 @@
 c_ MultiplicationTable:
 
-    ___ - , length):
+    ___ - , length
         """Create a 2D self._table of (x, y) coordinates and
            their calculations (form of caching)"""
         _length = length
         _table    # list
-        ___ i __ r..(1, _length +1):
+        ___ i __ r..(1, _length +1
             row    # list
             row.a..(i)
 
@@ -33,7 +33,7 @@ c_ MultiplicationTable:
             _table_output += f"{table_row}\n"
         r.. _table_output
 
-    ___ calc_cell  x, y):
+    ___ calc_cell  x, y
         """Takes x and y coords and returns the re-calculated result"""
         _x = x
         _y = y

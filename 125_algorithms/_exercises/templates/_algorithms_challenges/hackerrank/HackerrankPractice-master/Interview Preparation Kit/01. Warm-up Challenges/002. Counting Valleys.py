@@ -2,10 +2,10 @@
 #  Score: 15
 
 
-___ counting_valleys(n, s):
+___ counting_valleys(n, s
     current_level = 0
     count = 0
-    ___ i __ r..(n):
+    ___ i __ r..(n
         __ s[i] __ 'U':
             current_level += 1
         ____ s[i] __ 'D':

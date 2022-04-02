@@ -1,5 +1,5 @@
-c_ States(o..):
-  ___ - ):
+c_ States(o..
+  ___ -
     init = 0
     decimal = 1
     decpoint = 2
@@ -12,8 +12,8 @@ c_ States(o..):
     afteresign = 9
 
 
-c_ Solution(o..):
-  ___ isNumber  s):
+c_ Solution(o..
+  ___ isNumber  s
     """
     :type s: str
     :rtype: bool

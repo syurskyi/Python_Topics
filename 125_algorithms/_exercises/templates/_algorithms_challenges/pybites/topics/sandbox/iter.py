@@ -1,9 +1,9 @@
 _______ i..
 
-rank = [s..(i) ___ i __ r..(2,11)] + ['J', 'Q', 'K', 'A']
+rank = [s..(i) ___ i __ r..(2,11)] +  'J', 'Q', 'K', 'A'
 print(l..(rank))
 
-suits = ['H', 'C', 'D', 'S']
+suits =  'H', 'C', 'D', 'S'
 
 deck = [card ___ card __ i...product(rank, suits)]
 print(deck)

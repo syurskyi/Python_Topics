@@ -3,8 +3,8 @@ Created on Sep 12, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ scheduleCourse  courses):
+c_ Solution(o..
+    ___ scheduleCourse  courses
         """
         :type courses: List[List[int]]
         :rtype: int

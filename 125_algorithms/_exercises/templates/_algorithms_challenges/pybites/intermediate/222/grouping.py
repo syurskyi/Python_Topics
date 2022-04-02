@@ -2,7 +2,7 @@ _______ types
 ____ i.. _______ islice
 
 
-___ group(iterable, n):
+___ group(iterable, n
     """Splits an iterable set into groups of size n and a group
        of the remaining elements if needed.
 
@@ -16,7 +16,7 @@ ___ group(iterable, n):
                where each group is a list of n elements.
     """
 
-    __ n.. isi..(iterable, types.GeneratorType):
+    __ n.. isi..(iterable, types.GeneratorType
       input = (ele ___ ele __ iterable)
     ____:
       input = iterable

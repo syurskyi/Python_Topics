@@ -22,7 +22,7 @@ c_ Solution:
     # @param matrix, a list of lists of integers
     # @param target, an integer
     # @return a boolean
-    ___ searchMatrix  matrix, target):
+    ___ searchMatrix  matrix, target
         row_left = 0
         row_right = l..(matrix) - 1
         w.... row_left <= row_right:

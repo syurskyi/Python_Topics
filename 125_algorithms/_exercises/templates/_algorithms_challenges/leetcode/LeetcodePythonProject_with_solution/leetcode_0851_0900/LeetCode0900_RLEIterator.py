@@ -1,9 +1,9 @@
 # Showing Memory Limit Exceeded only
 # I hope it's OK
 
-c_ RLEIterator(o..):
+c_ RLEIterator(o..
 
-    ___ - , A):
+    ___ - , A
         """
         :type A: List[int]
         """
@@ -11,18 +11,18 @@ c_ RLEIterator(o..):
         countIdx = 0
         numIdx = 1
 
-    ___ next  n):
+    ___ next  n
         """
         :type n: int
         :rtype: int
         """
         val = -1
-        ___ _ __ r..(n):
+        ___ _ __ r..(n
             w.... countIdx < l..(arr) a.. \
                     arr[countIdx] __ 0:
                 countIdx += 2
                 numIdx += 2
-            __ countIdx >= l..(arr):
+            __ countIdx >= l..(arr
                 r.. -1
             val = arr[numIdx]
             arr[countIdx] -= 1

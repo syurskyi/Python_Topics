@@ -1,6 +1,6 @@
-___ pascal(p):
+___ pascal(p
     result    # list
-    ___ i __ r..(p):
+    ___ i __ r..(p
         __ i __ 0:
             result.a..([1])
         ____:

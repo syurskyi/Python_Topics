@@ -2,7 +2,7 @@
 # Score: 15
 
 
-___ getMoneySpent(keyboards, drives, b):
+___ getMoneySpent(keyboards, drives, b
     result = -1
     ___ i __ r..(1, l..(keyboards)):
         ___ j __ r..(1, l..(drives)):
@@ -12,7 +12,7 @@ ___ getMoneySpent(keyboards, drives, b):
 
 
 b, n, m = map(i.., input().s..())
-keyboards = l..(map(i.., input().rstrip().s..()))
-drives = l..(map(i.., input().rstrip().s..()))
+keyboards = l.. m..(i.., input().rstrip().s..()))
+drives = l.. m..(i.., input().rstrip().s..()))
 moneySpent = getMoneySpent(keyboards, drives, b)
 print(moneySpent)

@@ -3,8 +3,8 @@ Created on Sep 5, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findRestaurant  list1, list2):
+c_ Solution(o..
+    ___ findRestaurant  list1, list2
         """
         :type list1: List[str]
         :type list2: List[str]
@@ -12,10 +12,10 @@ c_ Solution(o..):
         """
         hashmap1    # dict
         hashmap2    # dict
-        ___ i, s __ e..(list1):
+        ___ i, s __ e..(list1
             __ s n.. __ hashmap1:
                 hashmap1[s] = i
-        ___ i, s __ e..(list2):
+        ___ i, s __ e..(list2
             __ s n.. __ hashmap2:
                 hashmap2[s] = i
         minInd = f__('inf')

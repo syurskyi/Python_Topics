@@ -6,13 +6,13 @@ CODONS = {'AUG': "Methionine", 'UUU': "Phenylalanine",
           'UAA': "STOP", 'UAG': "STOP", 'UGA': "STOP"}
 
 
-___ of_codon(codon):
+___ of_codon(codon
     __ codon n.. __ CODONS:
         r.. ValueError('Invalid codon: %s' % codon)
     r.. CODONS[codon]
 
 
-___ of_rna(strand):
+___ of_rna(strand
     proteins    # list
     ___ codon __ map(of_codon, _chunkstring(strand, 3)):
         __ codon __ 'STOP':
@@ -21,5 +21,5 @@ ___ of_rna(strand):
     r.. proteins
 
 
-___ _chunkstring(s__, n):
+___ _chunkstring(s__, n
     r.. (s__[i:n + i] ___ i __ r..(0, l..(s__), n))

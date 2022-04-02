@@ -18,8 +18,8 @@ The solution set must not contain duplicate quadruplets.
 """
 
 
-c_ Solution(o..):
-    ___ fourSum  nums, target):
+c_ Solution(o..
+    ___ fourSum  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -28,10 +28,10 @@ c_ Solution(o..):
         n = l..(nums)
         nums.s..()
         res    # list
-        ___ a __ r..(n - 3):
+        ___ a __ r..(n - 3
             __ a > 0 a.. nums[a - 1] __ nums[a]:
                 _____
-            ___ b __ r..(a + 1, n - 2):
+            ___ b __ r..(a + 1, n - 2
                 __ b > a + 1 a.. nums[b - 1] __ nums[b]:
                     _____
                 c = b + 1

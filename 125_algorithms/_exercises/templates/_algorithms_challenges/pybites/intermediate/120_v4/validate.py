@@ -1,12 +1,12 @@
 ____ functools _______ wraps
 
 
-___ int_args(func):
+___ int_args(func
     @wraps(func)
     ___ wrapper $ $$:
-        __ n.. a..(map(l.... x: isi..(x, i..), args)):
+        __ n.. a.. m..(l.... x: isi..(x, i..), args)):
             r.. T..
-        ____ any(map(l.... x: x < 0, args)):
+        ____ any m..(l.... x: x < 0, args)):
             r.. ValueError
         r.. func $ $$
     r.. wrapper

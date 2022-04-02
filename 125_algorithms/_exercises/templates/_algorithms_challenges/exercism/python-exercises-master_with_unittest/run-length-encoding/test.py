@@ -5,7 +5,7 @@ ____ run_length_encoding _______ encode, decode
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ WordCountTests(unittest.TestCase):
+c_ WordCountTests(unittest.TestCase
     ___ test_encode_empty_string
         assertMultiLineEqual(encode(''), '')
 
@@ -27,27 +27,27 @@ c_ WordCountTests(unittest.TestCase):
         assertMultiLineEqual(encode('aabbbcccc'), '2a3b4c')
 
     ___ test_decode_empty_string
-        assertMultiLineEqual(decode(''), '')
+        assertMultiLineEqual(d.. ''), '')
 
     ___ test_decode_single_characters_only
-        assertMultiLineEqual(decode('XYZ'), 'XYZ')
+        assertMultiLineEqual(d.. 'XYZ'), 'XYZ')
 
     ___ test_decode_string_with_no_single_characters
-        assertMultiLineEqual(decode('2A3B4C'), 'AABBBCCCC')
+        assertMultiLineEqual(d.. '2A3B4C'), 'AABBBCCCC')
 
     ___ test_decode_single_characters_with_repeated_characters
         assertMultiLineEqual(
-            decode('12WB12W3B24WB'),
+            d.. '12WB12W3B24WB'),
             'WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB')
 
     ___ test_decode_multiple_whitespace_mixed_in_string
-        assertMultiLineEqual(decode('2 hs2q q2w2 '), '  hsqq qww  ')
+        assertMultiLineEqual(d.. '2 hs2q q2w2 '), '  hsqq qww  ')
 
     ___ test_decode_lower_case_string
-        assertMultiLineEqual(decode('2a3b4c'), 'aabbbcccc')
+        assertMultiLineEqual(d.. '2a3b4c'), 'aabbbcccc')
 
     ___ test_combination
-        assertMultiLineEqual(decode(encode('zzz ZZ  zZ')), 'zzz ZZ  zZ')
+        assertMultiLineEqual(d.. encode('zzz ZZ  zZ')), 'zzz ZZ  zZ')
 
 
 __ _____ __ _____

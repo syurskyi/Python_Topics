@@ -16,8 +16,8 @@ If n = 4 and k = 2, a solution is:
 """
 
 
-c_ Solution(o..):
-    ___ combine  n, k):
+c_ Solution(o..
+    ___ combine  n, k
         """
         :type n: int
         :type k: int
@@ -26,12 +26,12 @@ c_ Solution(o..):
         a = r..(1, n + 1)
         r.. combine_aux(a, k)
 
-    ___ combine_aux  a, k):
+    ___ combine_aux  a, k
         __ k __ 0:
             r.. [[]]
         ____:
             res    # list
-            ___ i, e __ e..(a):
+            ___ i, e __ e..(a
                 rest_comb = combine_aux(a[i + 1:], k - 1)
                 ___ comb __ rest_comb:
                     comb.insert(0, e)

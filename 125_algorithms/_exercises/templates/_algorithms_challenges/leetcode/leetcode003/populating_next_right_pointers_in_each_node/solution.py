@@ -43,8 +43,8 @@ After calling your function, the tree should look like:
 #         self.right = None
 #         self.next = None
 
-c_ Solution(o..):
-    ___ connect  root):
+c_ Solution(o..
+    ___ connect  root
         """
         :type root: TreeLinkNode
         :rtype: nothing

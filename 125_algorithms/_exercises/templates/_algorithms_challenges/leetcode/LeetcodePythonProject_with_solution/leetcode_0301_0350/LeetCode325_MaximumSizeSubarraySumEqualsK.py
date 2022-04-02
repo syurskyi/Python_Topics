@@ -4,12 +4,12 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxSubArrayLen  nums, k):
+c_ Solution(o..
+    ___ maxSubArrayLen  nums, k
         hashmap    # dict
         sumVal = 0
         maxLen = 0
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             sumVal += num
             __ sumVal __ k:
                 maxLen = m..(maxLen, i+1)

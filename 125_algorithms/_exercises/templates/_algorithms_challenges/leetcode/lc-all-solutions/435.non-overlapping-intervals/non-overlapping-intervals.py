@@ -4,8 +4,8 @@
 #         self.start = s
 #         self.end = e
 
-c_ Solution(o..):
-  ___ eraseOverlapIntervals  intervals):
+c_ Solution(o..
+  ___ eraseOverlapIntervals  intervals
     """
     :type intervals: List[Interval]
     :rtype: int

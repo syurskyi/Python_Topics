@@ -1,6 +1,6 @@
 _______ p__
 
-___ div(a,b):
+___ div(a,b
     ___
         r.. a/b
     ______:
@@ -14,7 +14,7 @@ ___ test_div_second
     ... div(3,6) __ 0.5
 
 ___ test_div_zerodivision
-    w__ p__.r..(ZeroDivisionError):
+    w__ p__.r..(ZeroDivisionError
         div(3,0)
 
 

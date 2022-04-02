@@ -1,8 +1,8 @@
 _______ __
 
 
-c_ Phone(o..):
-    ___ - , number):
+c_ Phone(o..
+    ___ - , number
         number = _clean(number)
 
     ___ area_code
@@ -21,12 +21,12 @@ c_ Phone(o..):
             subscriber_number()
         )
 
-    ___ _clean  number):
+    ___ _clean  number
         r.. _normalize(
             __.sub(r'[^\d]', '', number)
         )
 
-    ___ _normalize  number):
+    ___ _normalize  number
         valid = l..(number) __ 10 o. \
             l..(number) __ 11 a.. number.startswith('1')
 

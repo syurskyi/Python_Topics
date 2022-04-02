@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ addBinary  a, b):
+c_ Solution(o..
+  ___ addBinary  a, b
     """
     :type a: str
     :type b: str
     :rtype: str
     """
     diff = abs(l..(a) - l..(b))
-    __ l..(a) > l..(b):
+    __ l..(a) > l..(b
       b = "0" * diff + b
     ____:
       a = "0" * diff + a

@@ -4,8 +4,8 @@ Created on Feb 26, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ searchMatrix  matrix, target):
+c_ Solution(o..
+    ___ searchMatrix  matrix, target
         """
         :type matrix: List[List[int]]
         :type target: int
@@ -23,7 +23,7 @@ c_ Solution(o..):
                 j += 1
         r.. F..
     
-    ___ searchMatrix_orig  matrix, target):
+    ___ searchMatrix_orig  matrix, target
         """
         :type matrix: List[List[int]]
         :type target: int
@@ -41,7 +41,7 @@ c_ Solution(o..):
                 i += 1
         r.. F..
     
-    ___ searchMatrixBinary  matrix, target):
+    ___ searchMatrixBinary  matrix, target
         """
         :type matrix: List[List[int]]
         :type target: int
@@ -59,7 +59,7 @@ c_ Solution(o..):
             ____:
                 start = mid+1
         row0 = start __ start < l..(matrix) ____ start-1
-        ___ row __ r..(row0, -1, -1):
+        ___ row __ r..(row0, -1, -1
             start, end = 0, l..(matrix[0])-1
             w.... start <= end:
                 mid = i..((start+end)/2)
@@ -82,7 +82,7 @@ c_ Solution(o..):
             ],
         ]
         ___ matrix __ testCases:
-            ___ target __ (0, 1, 3, 5, 13, 16, 20):
+            ___ target __ (0, 1, 3, 5, 13, 16, 20
                 print('target: %s' % target)
                 result = searchMatrix(matrix, target)
                 print('result: %s' % (result))

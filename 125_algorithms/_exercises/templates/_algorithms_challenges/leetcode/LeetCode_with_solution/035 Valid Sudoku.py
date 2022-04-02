@@ -10,7 +10,7 @@ A valid Sudoku board (partially filled) is not necessarily solvable. Only the fi
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ isValidSudoku  board):
+    ___ isValidSudoku  board
         """
         Brute force - check rows, cols, and squares and maintain a hashmap to store the previously seen elements
 
@@ -32,11 +32,11 @@ c_ Solution:
         :return: boolean
         """
         # check row & column
-        ___ i __ x..(9):
+        ___ i __ x..(9
             row    # list  # change to hashamp
             column    # list
             square    # list
-            ___ j __ x..(9):
+            ___ j __ x..(9
                 # check row
                 ___
                     row_element = i..(board[i][j])

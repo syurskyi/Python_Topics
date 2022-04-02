@@ -48,14 +48,14 @@ c_ Solution:
         account id
         """
         email_to_ids = defaultdict(s..)
-        ___ i, v __ e..(accounts):
+        ___ i, v __ e..(accounts
             ___ email __ v[1:]:
                 email_to_ids[email].add(i)
 
         # graph nodes by ids, edges by email
         visited = [F.. ___ _ __ accounts]
         ret    # list
-        ___ i, v __ e..(accounts):
+        ___ i, v __ e..(accounts
             __ n.. visited[i]:
                 emails = s..()
                 dfs(i, accounts, email_to_ids, emails, visited)
@@ -63,7 +63,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ dfs  i, accounts, email_to_ids, emails, visited):
+    ___ dfs  i, accounts, email_to_ids, emails, visited
         visited[i] = T..
         ___ email __ accounts[i][1:]:
             emails.add(email)

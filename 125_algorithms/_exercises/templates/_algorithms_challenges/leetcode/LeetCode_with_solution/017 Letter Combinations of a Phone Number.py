@@ -19,7 +19,7 @@ c_ Solution:
         '9': "wxyz"
     }
 
-    ___ letterCombinations  d..):
+    ___ letterCombinations  d..
         """
         DFS
         :param digits: str
@@ -29,7 +29,7 @@ c_ Solution:
         dfs_traverse(d.., "", result)
         r.. result
 
-    ___ dfs_traverse  string_seq, current, result):
+    ___ dfs_traverse  string_seq, current, result
         __ n.. string_seq:
             result.a..(current)
             r..

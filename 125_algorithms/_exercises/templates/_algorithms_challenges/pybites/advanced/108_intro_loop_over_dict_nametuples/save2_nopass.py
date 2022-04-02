@@ -8,7 +8,7 @@ ninja_belts = {'yellow': BeltStats(50, 11),
                'blue': BeltStats(250, 5)}
 
 
-___ get_total_points(belts=ninja_belts):
+___ get_total_points(belts=ninja_belts
     """Calculate the amount of points rewarded on PyBites given the
        ninja_belts dictionary, formula: belt score x belt owners (aka ninjas)
        (of course there are more points but let's keep it simple)

@@ -28,7 +28,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
         response = requests.get(url)
         response.raise_for_status()
         data = json.loads(response.text)
-        w__ TMP.open("w") __ tmp:
+        w__ TMP.o.. "w") __ tmp:
             json.dump(data, tmp)
     r.. data
 
@@ -42,8 +42,8 @@ ___ process_data(url: s..) __ pd.DataFrame:
     Returns:
         pd.DataFrame: Pandas DataFrame generated from the processed data
     """
-    data = b64decode(get_data(url)['content']).decode()
-    r.. pd.read_csv(StringIO(data), parse_dates=['month'])
+    data = b64decode(get_data(url) 'content' ).d.. )
+    r.. pd.read_csv(StringIO(data), parse_dates= 'month' )
 
 
 
@@ -68,8 +68,8 @@ ___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) __ N.
         2016  733947.03  61162.252500  118447.83
     """
     df = df.c..
-    df['year'] = df.month.dt.year
-    s = df.groupby(['year']).agg({'sales': stats}).__str__().s..('\n')[1:]
+    df 'year'  = df.month.dt.year
+    s = df.groupby( 'year' ).agg({'sales': stats}).__str__().s..('\n')[1:]
     print('\n'.j..(s))
 
 
@@ -108,11 +108,11 @@ ___ yearly_report(df: pd.DataFrame, year: i..) __ N..
     __ year n.. __ df.month.dt.year.unique
         r.. ValueError _*The year {year} is not included in the report!')
     df = df.c..
-    df['year'] = df.month.dt.year
-    df['month'] = df.month.dt.month
+    df 'year'  = df.month.dt.year
+    df 'month'  = df.month.dt.month
     df = df.groupby('year').get_group(year).set_index('month')
     print _*\n{year}')
-    print(df.to_string(columns=['sales']))
+    print(df.to_string(columns= 'sales' ))
 
 
 #uncomment the following for viewing/testing the reports/code

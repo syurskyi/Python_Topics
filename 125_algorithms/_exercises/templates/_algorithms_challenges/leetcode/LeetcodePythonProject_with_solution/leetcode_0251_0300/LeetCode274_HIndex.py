@@ -4,8 +4,8 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ hIndex  citations):
+c_ Solution(o..
+    ___ hIndex  citations
         """
         :type citations: List[int]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
                 count[c]+=1
         total = 0
         print('count: %s' % (count))
-        ___ i __ r..(length, -1, -1):
+        ___ i __ r..(length, -1, -1
             total += count[i]
             __ total >= i:
                 r.. i

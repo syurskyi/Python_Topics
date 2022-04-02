@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minDistance  word1, word2):
+c_ Solution(o..
+  ___ minDistance  word1, word2
     """
     :type word1: str
     :type word2: str
@@ -11,8 +11,8 @@ c_ Solution(o..):
     dp = [[0] * (l..(word2) + 1) ___ _ __ r..(0, l..(word1) + 1)]
     dp[0][0] = 0
 
-    ___ i __ r..(0, l..(word1) + 1):
-      ___ j __ r..(0, l..(word2) + 1):
+    ___ i __ r..(0, l..(word1) + 1
+      ___ j __ r..(0, l..(word2) + 1
         __ i __ 0:
           dp[i][j] = j
         ____ j __ 0:

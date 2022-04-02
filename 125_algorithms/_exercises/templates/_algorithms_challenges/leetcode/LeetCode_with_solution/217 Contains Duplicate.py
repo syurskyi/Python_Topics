@@ -7,7 +7,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ containsDuplicate  nums):
+    ___ containsDuplicate  nums
         """
         Trival
         :type nums: list[int]

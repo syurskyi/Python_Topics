@@ -75,7 +75,7 @@ c_ Solution:
                 # break
                 cur_words.pop()
                 char_cnt -= l..(w)
-                ___ i __ r..(maxWidth - char_cnt):
+                ___ i __ r..(maxWidth - char_cnt
                     cur_words[i % m..(1, l..(cur_words) - 1)] += " "
 
                 ret.a..("".j..(cur_words))
@@ -106,7 +106,7 @@ c_ Solution2:
             __ char_cnt + l..(w) + l..(cur_words) > maxWidth:
                 # break, move w into the next line
                 # Round robin distribut the spaces except for the last word
-                ___ i __ r..(maxWidth - char_cnt):
+                ___ i __ r..(maxWidth - char_cnt
                     cur_words[i % m..(1, l..(cur_words) - 1)] += " "  # insert in between
                     # len(cur_words) - 1 can be 0
                 ret.a..("".j..(cur_words))

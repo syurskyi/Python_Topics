@@ -4,8 +4,8 @@ Created on Feb 12, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isOneEditDistance  s, t):
+c_ Solution(o..
+    ___ isOneEditDistance  s, t
         """
         :type s: str
         :type t: str

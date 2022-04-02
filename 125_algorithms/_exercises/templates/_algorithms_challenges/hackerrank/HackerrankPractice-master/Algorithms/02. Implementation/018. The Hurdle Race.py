@@ -3,6 +3,6 @@
 
 
 n, k = map(i.., input().s..())
-hurdles = l..(map(i.., input().s..()))
+hurdles = l.. m..(i.., input().s..()))
 numberOfPotions = m..(0, m..(hurdles) - k)
 print(numberOfPotions)

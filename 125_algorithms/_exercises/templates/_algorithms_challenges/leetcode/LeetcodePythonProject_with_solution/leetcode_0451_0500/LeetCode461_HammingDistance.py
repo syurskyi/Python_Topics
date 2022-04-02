@@ -4,10 +4,10 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ hammingDistance  x, y):
+c_ Solution(o..
+    ___ hammingDistance  x, y
         count = 0
-        ___ i __ r..(32):
+        ___ i __ r..(32
             count += (x>>i&1)^(y>>i&1)
         r.. count
     

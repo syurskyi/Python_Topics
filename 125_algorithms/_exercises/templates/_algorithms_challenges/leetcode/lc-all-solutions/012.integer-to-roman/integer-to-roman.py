@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ intToRoman  num):
+c_ Solution(o..
+  ___ intToRoman  num
     """
     :type num: int
     :rtype: str

@@ -8,7 +8,7 @@ Topological Sort
 
 
 c_ Solution:
-    ___ sequenceReconstruction  org, seqs):
+    ___ sequenceReconstruction  org, seqs
         """
         :type org: list[int]
         :type seqs: list[list[int]]
@@ -29,7 +29,7 @@ c_ Solution:
             cnt += l..(seq)
 
             ___ i __ r..(l..(seq)):
-                __ n.. (1 <= seq[i] <= n):
+                __ n.. (1 <= seq[i] <= n
                     r.. F..
                 __ n.. edges[seq[i]]:
                     edges[seq[i]] = s..()
@@ -43,7 +43,7 @@ c_ Solution:
         __ cnt < n:
             r.. F..
 
-        ___ i __ r..(n - 1):
+        ___ i __ r..(n - 1
             __ indeg[org[i]] != 0:
                 r.. F..
             __ org[i + 1] n.. __ edges[org[i]]:

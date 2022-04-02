@@ -17,7 +17,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ largestRectangleArea  height):
+    ___ largestRectangleArea  height
         """
         O(2*n)
         every bar at most enter the stack once and is popped out once.
@@ -46,7 +46,7 @@ c_ Solution:
         gmax = -sys.maxint-1
         inc_stack    # list  # store the idx, increasing stack
 
-        ___ i __ x..(n):
+        ___ i __ x..(n
             w.... inc_stack a.. height[inc_stack[-1]] > height[i]:
                 last = inc_stack.pop()
                 __ inc_stack:  # calculate area when popping
@@ -69,7 +69,7 @@ c_ Solution:
 
         r.. gmax
 
-    ___ largestRectangleArea_TLE  height):
+    ___ largestRectangleArea_TLE  height
         """
         O(n*n)
         :param height: a list of int
@@ -79,10 +79,10 @@ c_ Solution:
             r.. 0
 
         max_area = -1<<32
-        ___ ind, val __ e..(height):
+        ___ ind, val __ e..(height
             min_h = val
             max_area = m..(max_area, val*1)
-            ___ j __ x..(ind, -1, -1):
+            ___ j __ x..(ind, -1, -1
                 min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 max_area = m..(max_area, current_area)
@@ -90,7 +90,7 @@ c_ Solution:
         r.. max_area
 
 
-    ___ largestRectangleArea_complex  height):
+    ___ largestRectangleArea_complex  height
         """
         O(n*n) + prune
 
@@ -104,13 +104,13 @@ c_ Solution:
             r.. 0
 
         global_max = -1<<32
-        ___ ind, val __ e..(height):
+        ___ ind, val __ e..(height
             __ ind+1<l..(height) a.. val<=height[ind+1]:  # PRUNE, find until peak
                 _____
 
             min_h = val
             global_max = m..(global_max, min_h*1)
-            ___ j __ x..(ind, -1, -1):  # scanning backward
+            ___ j __ x..(ind, -1, -1  # scanning backward
                 min_h = m..(min_h, height[j])
                 current_area = min_h*(ind-j+1)
                 global_max = m..(global_max, current_area)
@@ -118,7 +118,7 @@ c_ Solution:
         r.. global_max
 
 
-    ___ largestRectangleArea_error  height):
+    ___ largestRectangleArea_error  height
         """
         O(n)
 

@@ -5,12 +5,12 @@ ___ check_anagram
     amount = i..(input()) # Amount of words to check (CodeAbbey requirement.)
     answer    # list
     
-    ___ check __ r..(amount):
+    ___ check __ r..(amount
         word = input()
         word_data = Counter(word) # Count the letter composition
         count = 0 # Amount of anagrams found for the word.
         
-        w__ open('words.txt', 'r') __ f:
+        w__ o.. 'words.txt', 'r') __ f:
             ___ line __ f.readlines
                 line = line.r..('\n', '') # Remove spaces from the file.
                 anagram_data = Counter(line) # Count letter composition of word.

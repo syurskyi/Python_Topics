@@ -1,10 +1,10 @@
 ____ typing _______ Type
 
 
-___ get_profile(name, age, *args, **kwargs):
+___ get_profile(name, age, *args, **kwargs
 
     # Validations
-    __ n.. isi..(age, i..):
+    __ n.. isi..(age, i..
         r.. ValueError
 
     __ l..(args) > 5:

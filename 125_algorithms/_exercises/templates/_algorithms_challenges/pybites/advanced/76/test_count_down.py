@@ -18,7 +18,7 @@ ___ test_code_uses_singledispatch_decorator
     '1234',
     1234,
     [1, 2, 3, 4],
-    ['1', '2', '3', '4'],
+     '1', '2', '3', '4' ,
     (1, 2, 3, 4),
     ('1', '2', '3', '4'),
     {1: 'one', 2: 'two', 3: 'three', 4: 'four'},
@@ -26,7 +26,7 @@ ___ test_code_uses_singledispatch_decorator
     r..(1, 5),
     {x ___ x __ r..(1, 5)},
 ])
-___ test_count_down_good_inputs(input_argument, capfd):
+___ test_count_down_good_inputs(input_argument, capfd
     count_down(input_argument)
     output = ?.r .. 0]
     ... output __ DEFAULT_EXPECTED_OUTPUT
@@ -37,12 +37,12 @@ ___ test_count_down_good_inputs(input_argument, capfd):
     d__(2018, 4, 21),
     __.c..(r'\d{4}'),
 ])
-___ test_count_down_bad_inputs(input_argument, capfd):
-    w__ p__.r..(ValueError):
+___ test_count_down_bad_inputs(input_argument, capfd
+    w__ p__.r..(ValueError
         count_down(input_argument)
 
 
-___ test_count_down_float(capfd):
+___ test_count_down_float(capfd
     expected = '12.34\n12.3\n12.\n12\n1\n'
     number = 12.34
     count_down(number)

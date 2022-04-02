@@ -23,7 +23,7 @@ Length of the array will not exceed 10^4.
 
 
 c_ Solution:
-    ___ totalHammingDistance  nums):
+    ___ totalHammingDistance  nums
         """
         Brute force, check every combination O(n^2 * b)
 
@@ -35,7 +35,7 @@ c_ Solution:
         :rtype: int
         """
         ret = 0
-        w.... any(nums):  # any not 0
+        w.... any(nums  # any not 0
             z, o = 0, 0
             ___ i __ r..(l..(nums)):
                 __ nums[i] & 1 __ 0:

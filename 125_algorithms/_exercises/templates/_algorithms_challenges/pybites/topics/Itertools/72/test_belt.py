@@ -22,5 +22,5 @@ ____ belt _______ get_belt
     (1000, 'red'),
     (1200, 'red'),
 ])
-___ test_get_belt(input_argument, expected_return):
+___ test_get_belt(input_argument, expected_return
     ... get_belt(input_argument) __ expected_return

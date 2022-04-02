@@ -1,2 +1,2 @@
-___ check_brackets(s__):
+___ check_brackets(s__
     p..

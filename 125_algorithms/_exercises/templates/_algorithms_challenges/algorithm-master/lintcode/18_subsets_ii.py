@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: A set of numbers.
     @return: A list of lists. All valid subsets.
     """
-    ___ subsetsWithDup  A):
+    ___ subsetsWithDup  A
         __ n.. A:
             r.. [[]]
 
@@ -14,10 +14,10 @@ c_ Solution:
         dfs(s..(A), 0, ans, [])
         r.. ans
 
-    ___ dfs  A, start, ans, subset):
+    ___ dfs  A, start, ans, subset
         ans.a..(subset | )
 
-        __ start >= l..(A):
+        __ start >= l..(A
             r..
 
         ___ i __ r..(start, l..(A)):

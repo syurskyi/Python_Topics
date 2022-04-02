@@ -5,13 +5,13 @@ Created on Apr 2, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
-c_ Solution(o..):
-    ___ - , head):
+c_ Solution(o..
+    ___ - , head
         head = head
     
     ___ getRandom

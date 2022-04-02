@@ -4,21 +4,21 @@ Created on Sep 29, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ subtreeWithAllDeepest  root):
+c_ Solution(o..
+    ___ subtreeWithAllDeepest  root
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
         r.. deep(root)[1]
     
-    ___ deep  root):
+    ___ deep  root
         __ n.. root:
             r.. 0, N..
         l, r = deep(root.left), deep(root.right)
@@ -29,7 +29,7 @@ c_ Solution(o..):
         ____:
             r.. l[0]+1, root
     
-    ___ subtreeWithAllDeepest_own_twoPass  root):
+    ___ subtreeWithAllDeepest_own_twoPass  root
         """
         :type root: TreeNode
         :rtype: TreeNode
@@ -40,7 +40,7 @@ c_ Solution(o..):
         nodes = hashmap[maxDepth]
         r.. getCommonParent(root, nodes)
     
-    ___ gatherDepths  root, depth, hashmap):
+    ___ gatherDepths  root, depth, hashmap
         __ n.. root:
             r..
         __ depth __ hashmap:
@@ -50,19 +50,19 @@ c_ Solution(o..):
         gatherDepths(root.left, depth+1, hashmap)
         gatherDepths(root.right, depth+1, hashmap)
     
-    ___ getCommonParent  root, nodes):
+    ___ getCommonParent  root, nodes
         __ n.. root:
             r.. N..
         isLeft = T..
         ___ node __ nodes:
-            __ n.. isSubTree(root.left, node):
+            __ n.. isSubTree(root.left, node
                 isLeft = F..
                 _____
         __ isLeft:
             r.. getCommonParent(root.left, nodes)
         isRight = T..
         ___ node __ nodes:
-            __ n.. isSubTree(root.right, node):
+            __ n.. isSubTree(root.right, node
                 isRight = F..
                 _____
         __ isRight:
@@ -70,12 +70,12 @@ c_ Solution(o..):
         ____:
             r.. root
     
-    ___ isSubTree  root, node):
+    ___ isSubTree  root, node
         __ n.. root:
             r.. F..
         __ root __ node:
             r.. T..
-        __ isSubTree(root.left, node) o. isSubTree(root.right, node):
+        __ isSubTree(root.left, node) o. isSubTree(root.right, node
             r.. T..
 
 __ _____ __ _____

@@ -6,11 +6,11 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    ___ shortestDistance  grid):
+    ___ shortestDistance  grid
         """
         BFS & collect all distance
 
@@ -30,26 +30,26 @@ c_ Solution(o..):
         n = l..(grid[0])
         acc = [[0 ___ _ __ x..(n)] ___ _ __ x..(m)]
         reachable = [[T.. ___ _ __ x..(n)] ___ _ __ x..(m)]
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ grid[i][j] > 0:
                     reachable[i][j] = F..
                     acc[i][j] = sys.maxint
 
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ grid[i][j] __ 1:
                     bfs(grid, acc, reachable, i, j)
 
         mini = sys.maxint
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ acc[i][j] < mini a.. reachable[i][j]:
                     mini = acc[i][j]
 
         r.. mini __ mini != sys.maxint ____ -1
 
-    ___ bfs  grid, acc, reachable, x, y):
+    ___ bfs  grid, acc, reachable, x, y
         d = 0
         m, n = l..(grid), l..(grid[0])
         visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
@@ -58,7 +58,7 @@ c_ Solution(o..):
         visited[x][y] = T..  # enqueue, then visited
         w.... q:
             l = l..(q)
-            ___ idx __ x..(l):
+            ___ idx __ x..(l
                 i, j = q[idx]
                 acc[i][j] += d
 
@@ -72,8 +72,8 @@ c_ Solution(o..):
             d += 1
             q = q[l:]
 
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ n.. visited[i][j]:
                     reachable[i][j] = F..
 

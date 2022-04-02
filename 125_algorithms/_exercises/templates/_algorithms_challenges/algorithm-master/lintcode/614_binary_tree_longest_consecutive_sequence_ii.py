@@ -18,7 +18,7 @@ c_ Solution:
     """
     Bottom Up
     """
-    ___ longestConsecutive2  root):
+    ___ longestConsecutive2  root
         """
         :type root: TreeNode
         :rtype: int
@@ -28,14 +28,14 @@ c_ Solution:
 
         r.. divide_conquer(root)[0]
 
-    ___ divide_conquer  node):
+    ___ divide_conquer  node
         __ n.. node:
             r.. 0, 0, 0
 
         size = 1
         up = down = 0
 
-        ___ branch __ ('left', 'right'):
+        ___ branch __ ('left', 'right'
             child = getattr(node, branch)
 
             __ n.. child:

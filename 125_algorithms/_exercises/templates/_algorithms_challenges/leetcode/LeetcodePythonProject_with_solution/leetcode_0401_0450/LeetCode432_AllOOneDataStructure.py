@@ -4,20 +4,20 @@ Created on Apr 15, 2017
 @author: MT
 '''
 
-c_ Bucket(o..):
-    ___ - , value):
+c_ Bucket(o..
+    ___ - , value
         keySet = s..()
         value = value
         next = N..
         prev = N..
 
-c_ AllOne(o..):
-    ___ - ):
+c_ AllOne(o..
+    ___ -
         keyBucketMap    # dict
         head = N..
         tail = N..
     
-    ___ inc  key):
+    ___ inc  key
         __ key __ keyBucketMap:
             bucket = keyBucketMap[key]
             nextBucket = bucket.next
@@ -66,7 +66,7 @@ c_ AllOne(o..):
                 tail = bucket
             keyBucketMap[key] = head
     
-    ___ dec  key):
+    ___ dec  key
         __ key __ keyBucketMap:
             bucket = keyBucketMap[key]
             prevBucket = bucket.prev

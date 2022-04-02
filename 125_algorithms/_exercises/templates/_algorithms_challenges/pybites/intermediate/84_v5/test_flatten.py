@@ -16,10 +16,10 @@ ___ test_flatten_various_levels_different_contant
 
 
 ___ test_flatten_ints_and_chars
-    inp = ['a', 'b', [1, 2, 3],
-           ['c', 'd', ['e', 'f', ['g', 'h']]],
+    inp =  'a', 'b', [1, 2, 3],
+            'c', 'd',  'e', 'f',  'g', 'h']]],
            [4, [5, 6, [7, [8]]]]]
-    expected = ['a', 'b', 1, 2, 3, 'c', 'd', 'e', 'f', 'g',
+    expected =  'a', 'b', 1, 2, 3, 'c', 'd', 'e', 'f', 'g',
                 'h', 4, 5, 6, 7, 8]
     ... l..(flatten(inp)) __ expected
 

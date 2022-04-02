@@ -14,8 +14,8 @@ The encoded string should be as compact as possible.
 
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-  ___ - , x):
+c_ TreeNode(o..
+  ___ - , x
       val = x
       left = N..
       right = N..
@@ -24,7 +24,7 @@ c_ TreeNode(o..):
 c_ Codec:
     DELIMITER = ","
 
-    ___ serialize  root):
+    ___ serialize  root
         """Encodes a tree to a single string.
         Basic binary tree serialize (BFS), see Serialize and Deserialize
         Binary Tree
@@ -40,7 +40,7 @@ c_ Codec:
         :type root: TreeNode
         :rtype: str
         """
-        ___ traverse(root, ret):
+        ___ traverse(root, ret
             __ n.. root:
                 r..
 
@@ -50,9 +50,9 @@ c_ Codec:
 
         ret    # list
         traverse(root, ret)
-        r.. DELIMITER.j..(map(s.., ret))
+        r.. DELIMITER.j.. m..(s.., ret))
 
-    ___ deserialize  data):
+    ___ deserialize  data
         """Decodes your encoded data to tree.
 
         Normal BST insert
@@ -62,9 +62,9 @@ c_ Codec:
         __ n.. data:
             r..
             
-        lst = l..(map(i.., data.s..(DELIMITER)))
+        lst = l.. m..(i.., data.s..(DELIMITER)))
         root = TreeNode(lst[0])
-        ___ insert(root, val):
+        ___ insert(root, val
             # need to keep the parent
             __ val < root.val:
                 __ n.. root.left:

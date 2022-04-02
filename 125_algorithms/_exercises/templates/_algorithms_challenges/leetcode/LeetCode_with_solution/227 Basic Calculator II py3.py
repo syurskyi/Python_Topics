@@ -33,7 +33,7 @@ c_ Solution:
         operand = 0
         stk    # list
         prev_op = "+"
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c.i..
                 operand = operand * 10 + i..(c)
 
@@ -64,7 +64,7 @@ c_ Solution:
         operand = 0
         stk    # list
         prev_op = "+"
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c.i..
                 operand = operand * 10 + i..(c)
 

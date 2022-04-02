@@ -13,7 +13,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ rob  nums):
+    ___ rob  nums
         """
         Two cases: cannot touch 1st element vs. cannot touch 2nd element.
         There are two cases here 1) 1st element is included and last is not included 2) 1st is not included and last is
@@ -27,13 +27,13 @@ c_ Solution:
 
         # include first but exclude last
         F = [0 ___ _ __ x..(n-1+2)]
-        ___ i __ x..(2, n+1):
+        ___ i __ x..(2, n+1
             F[i] = m..(F[i-1], F[i-2]+nums[i-2])
         ret = F[-1]
 
         # exclude first but include last
         F = [0 ___ _ __ x..(n-1+2)]
-        ___ i __ x..(2, n+1):
+        ___ i __ x..(2, n+1
             F[i] = m..(F[i-1], F[i-2]+nums[i-1])
 
         ret = m..(ret, F[-1])

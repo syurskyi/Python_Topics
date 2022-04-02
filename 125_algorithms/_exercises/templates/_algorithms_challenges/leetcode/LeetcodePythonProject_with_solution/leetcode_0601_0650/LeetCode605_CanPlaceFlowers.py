@@ -3,17 +3,17 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ canPlaceFlowers  flowerbed, n):
+c_ Solution(o..
+    ___ canPlaceFlowers  flowerbed, n
         """
         :type flowerbed: List[int]
         :type n: int
         :rtype: bool
         """
-        ___ i, flower __ e..(flowerbed):
+        ___ i, flower __ e..(flowerbed
             __ flower __ 0 a..\
                 (i __ 0 o. flowerbed[i-1] __ 0) a..\
-                (i __ l..(flowerbed)-1 o. flowerbed[i+1] __ 0):
+                (i __ l..(flowerbed)-1 o. flowerbed[i+1] __ 0
                 n -= 1
                 flowerbed[i] = 1
             __ n <= 0:

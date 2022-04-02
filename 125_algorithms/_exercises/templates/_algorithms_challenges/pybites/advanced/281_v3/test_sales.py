@@ -4,12 +4,12 @@ _______ p__
 ____ sales _______ get_data, process_data, summary_report, yearly_report, URL
 
 
-@p__.f..(scope="function")
+?p__.f..(scope="function")
 ___ df
     r.. process_data(URL)
 
 
-___ test_data(df):
+___ test_data(df
     ... isi..(df, pd.DataFrame)
 
 
@@ -24,7 +24,7 @@ ___ test_data(df):
         (5, "2016  733947.03  61162.252500  118447.83"),
     ],
 )
-___ test_summary_report(df, capfd, line, expected):
+___ test_summary_report(df, capfd, line, expected
     summary_report(df)
     output = ?.r .. 0].s..("\n")
     ... output[line].s.. __ expected
@@ -33,7 +33,7 @@ ___ test_summary_report(df, capfd, line, expected):
 ?p__.m__.p.(
     "lst, expected", [(["median"], "median"), (["min", "max"], "min        max"),]
 )
-___ test_summary_report_custom(df, capfd, lst, expected):
+___ test_summary_report_custom(df, capfd, lst, expected
     summary_report(df, lst)
     output = ?.r .. 0].s..("\n")
     ... output[0].s.. __ expected
@@ -48,14 +48,14 @@ ___ test_summary_report_custom(df, capfd, lst, expected):
         (2016, "6       52981.73"),
     ],
 )
-___ test_yearly_report(df, capfd, year, expected):
+___ test_yearly_report(df, capfd, year, expected
     yearly_report(df, year)
     output = ?.r .. 0].s..("\n")
     ... output[9] __ expected
 
 
 ?p__.m__.p.("year", [1972, 2000, 2020])
-___ test_yearly_report_with_invalid_year(df, year):
+___ test_yearly_report_with_invalid_year(df, year
     msg = f"<ExceptionInfo ValueError('The year {year} is not included in the report!') tblen=2>"
     w__ p__.r..(ValueError) __ e:
         yearly_report(df, year)

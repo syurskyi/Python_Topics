@@ -23,14 +23,14 @@ At auctor urna nunc id.
 At erat pellentesque adipiscing commodo elit at imperdiet!
 Molestie nunc non blandit massa enim nec dui?
 Lorem donec massa sapien faucibus et molestie ac feugiat.
-""".s...splitlines()
+""".s...s..
 text1, text2, text3 = lorem_ipsum[:5], lorem_ipsum[5:13], lorem_ipsum[13:]
 
 
 ?p__.m__.p.("text", [
     text1, text2, text3
 ])
-___ test_capitalize_sentences(text):
+___ test_capitalize_sentences(text
     expected = " ".j..(text)
     arg = expected.l..
     ... capitalize_sentences(arg) __ expected

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ magicalString  n):
+c_ Solution(o..
+  ___ magicalString  n
     """
     :type n: int
     :rtype: int

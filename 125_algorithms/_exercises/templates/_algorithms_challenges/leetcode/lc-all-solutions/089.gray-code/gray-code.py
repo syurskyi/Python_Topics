@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ grayCode  n):
+c_ Solution(o..
+  ___ grayCode  n
     """
     :type n: int
     :rtype: List[int]
@@ -12,7 +12,7 @@ c_ Solution(o..):
     i = 1
     w.... i < n:
       mask <<= 1
-      ___ j __ r..(0, 2 ** i):
+      ___ j __ r..(0, 2 ** i
         root = (2 ** i)
         ans[root + j] = ans[root - j - 1] | mask
       i += 1

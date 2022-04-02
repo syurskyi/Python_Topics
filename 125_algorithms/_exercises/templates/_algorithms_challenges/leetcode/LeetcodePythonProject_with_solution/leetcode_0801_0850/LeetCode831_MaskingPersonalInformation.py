@@ -3,15 +3,15 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ maskPII  S):
+c_ Solution(o..
+    ___ maskPII  S
         """
         :type S: str
         :rtype: str
         """
         _______ __
         s = S
-        __ __.m..('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s):
+        __ __.m..('^[a-z|A-Z]{2,}@[a-z|A-Z]{2,}.[a-z|A-Z]{2,}$', s
             s = s.l..
             ind = s.find('@')
             name = s[:ind]

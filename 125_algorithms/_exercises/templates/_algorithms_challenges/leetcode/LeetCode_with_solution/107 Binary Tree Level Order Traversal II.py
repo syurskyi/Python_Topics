@@ -19,13 +19,13 @@ return its bottom-up level order traversal as:
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ levelOrderBottom  root):
+    ___ levelOrderBottom  root
         """
         bfs
         :param root: TreeNode

@@ -1,6 +1,6 @@
 ____ typing _______ List
 
-___ to_lower(in_list):
+___ to_lower(in_list
         r.. [word.l.. ___ word __ in_list]
 
 ___ common_words(sentence1: List[s..], sentence2: List[s..]) __ List[s..]:
@@ -17,9 +17,9 @@ ___ common_words(sentence1: List[s..], sentence2: List[s..]) __ List[s..]:
     r.. s..(s..(s1).intersection(s2), key=l..)
 
 
-sentence1 = ['To', 'be', 'or', 'not', 'to', 'be',
-             'that', 'is', 'a', 'question']
-sentence2 = ['To', 'strive', 'to', 'seek', 'to',
-             'find', 'and', 'not', 'to', 'yield']
+sentence1 =  'To', 'be', 'or', 'not', 'to', 'be',
+             'that', 'is', 'a', 'question' 
+sentence2 =  'To', 'strive', 'to', 'seek', 'to',
+             'find', 'and', 'not', 'to', 'yield' 
 
 print(common_words(sentence1, sentence2))

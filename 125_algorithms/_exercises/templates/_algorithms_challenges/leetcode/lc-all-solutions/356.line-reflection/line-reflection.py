@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isReflected  points):
+c_ Solution(o..
+  ___ isReflected  points
     """
     :type points: List[List[int]]
     :rtype: bool

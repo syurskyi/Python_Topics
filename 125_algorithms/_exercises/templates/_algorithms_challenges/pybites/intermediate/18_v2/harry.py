@@ -20,12 +20,12 @@ urllib.request.urlretrieve(
 ___ get_harry_most_common_word
 
 
-    w__ open(harry_text,'r',encoding='utf-8') __ f:
-        text = f.read()
+    w__ o.. harry_text,'r',encoding='utf-8') __ f:
+        text = f.r..
 
     
-    w__ open(stopwords_file,'r') __ f:
-        stopwords = f.read().splitlines()
+    w__ o.. stopwords_file _ __ f:
+        stopwords = ?.r__.s..
 
     
     text = __.sub(r'[^a-z0-9\s]','',text.l..

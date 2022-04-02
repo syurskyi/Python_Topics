@@ -5,7 +5,7 @@ ____ atbash_cipher _______ decode, encode
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ AtbashCipherTest(unittest.TestCase):
+c_ AtbashCipherTest(unittest.TestCase
     ___ test_encode_no
         assertMultiLineEqual(encode("no"), "ml")
 
@@ -35,26 +35,26 @@ c_ AtbashCipherTest(unittest.TestCase):
         assertMultiLineEqual(encode(plaintext), ciphertext)
 
     ___ test_decode_word
-        assertMultiLineEqual(decode("vcvix rhn"), "exercism")
+        assertMultiLineEqual(d.. "vcvix rhn"), "exercism")
 
     ___ test_decode_sentence
         assertMultiLineEqual(
-            decode("zmlyh gzxov rhlug vmzhg vkkrm thglm v"),
+            d.. "zmlyh gzxov rhlug vmzhg vkkrm thglm v"),
             "anobstacleisoftenasteppingstone")
 
     ___ test_decode_numbers
         assertMultiLineEqual(
-            decode("gvhgr mt123 gvhgr mt"), "testing123testing")
+            d.. "gvhgr mt123 gvhgr mt"), "testing123testing")
 
     ___ test_decode_all_the_letters
         ciphertext = "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"
         plaintext = "thequickbrownfoxjumpsoverthelazydog"
-        assertMultiLineEqual(decode(ciphertext), plaintext)
+        assertMultiLineEqual(d.. ciphertext), plaintext)
 
     # additional track specific test
     ___ test_encode_decode
         assertMultiLineEqual(
-            decode(encode("Testing, 1 2 3, testing.")), "testing123testing")
+            d.. encode("Testing, 1 2 3, testing.")), "testing123testing")
 
 
 __ _____ __ _____

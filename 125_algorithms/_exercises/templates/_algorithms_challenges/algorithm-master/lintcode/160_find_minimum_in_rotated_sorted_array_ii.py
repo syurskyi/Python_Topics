@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: a rotated sorted array
     @return: the minimum number in the array
     """
-    ___ findMin  A):
+    ___ findMin  A
         __ n.. A:
             r.. -1
 
@@ -27,7 +27,7 @@ c_ Solution:
     @param: A: a rotated sorted array
     @return: the minimum number in the array
     """
-    ___ findMin  A):
+    ___ findMin  A
         """
         all chilren before the pivot are great than or equal the child at end
         all chilren after the pivot are less than or equal the child at end

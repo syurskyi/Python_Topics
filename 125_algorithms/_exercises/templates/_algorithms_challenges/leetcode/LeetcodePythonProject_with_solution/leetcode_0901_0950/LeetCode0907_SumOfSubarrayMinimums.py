@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ sumSubarrayMins  A):
+c_ Solution(o..
+    ___ sumSubarrayMins  A
         """
         :type A: List[int]
         :rtype: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
         MOD = 10**9+7
         stack = [[f__('-inf'), -1, 0]] # value, index, accumulated_sum
         res = 0
-        ___ i, num __ e..(A):
+        ___ i, num __ e..(A
             w.... stack a.. stack[-1][0] > num:
                 stack.pop()
             total = (stack[-1][2] + (i-stack[-1][1]) * num) % MOD

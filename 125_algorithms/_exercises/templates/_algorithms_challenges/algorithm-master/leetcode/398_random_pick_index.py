@@ -2,13 +2,13 @@ ____ r__ _______ randint
 
 
 c_ Solution:
-    ___ - , A):
+    ___ - , A
         """
         :type A: List[int]
         """
         A = A
 
-    ___ pick  target):
+    ___ pick  target
         """
         :type target: int
         :rtype: int

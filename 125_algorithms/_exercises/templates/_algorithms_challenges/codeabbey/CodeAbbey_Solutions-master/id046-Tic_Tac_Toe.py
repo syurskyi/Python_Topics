@@ -4,7 +4,7 @@ player_one = 'X'
 player_two = 'O'
 answer    # list
 
-___ has_the_moves(player, moves):
+___ has_the_moves(player, moves
     __ l..(moves) <= 2:
         r.. N..
 
@@ -22,7 +22,7 @@ ___ has_the_moves(player, moves):
     tried = [s..(posibility) <= s..(moves) ___ posibility __ winning_grids]
     r.. player __ any(tried) ____ N..
 
-___ is_winner(board):
+___ is_winner(board
     # Check for winner
     player_one_moves = [i ___ i, x __ e..(board) __ x __ player_one]
     player_two_moves = [i ___ i, x __ e..(board) __ x __ player_two]
@@ -35,17 +35,17 @@ ___ is_winner(board):
     ____:
         r.. N..
 
-___ tic_tac_toe(games):
-    ___ game __ r..(games):
+___ tic_tac_toe(games
+    ___ game __ r..(games
         board = [s..(x) ___ x __ r..(1, 10)] # Create the 3x3 Tic-Tac-Toe board.
         moves = [i..(x) ___ x __ raw_input().s.. ] # Logs all player moves.
 
-        ___ turn, move __ e..(moves):
+        ___ turn, move __ e..(moves
             # Take turns rewriting the default board to player 1's X
             # and then player 2's O.
             board[move - 1] = player_one __ turn % 2 __ 0 ____ player_two
 
-            __ is_winner(board):
+            __ is_winner(board
                 answer.a..(s..(turn+1))
                 _____; # Stops loop each time an answer is found.
             __ turn __ l..(moves) - 1:

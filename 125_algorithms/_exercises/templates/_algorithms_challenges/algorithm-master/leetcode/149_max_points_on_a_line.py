@@ -6,7 +6,7 @@
 
 
 c_ Solution:
-    ___ maxPoints  P):
+    ___ maxPoints  P
         """
         :type P: List[Point]
         :rtype: int
@@ -19,10 +19,10 @@ c_ Solution:
         __ n <= 2:
             r.. n
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             S    # dict
             points = dups = 0
-            ___ j __ r..(i + 1, n):
+            ___ j __ r..(i + 1, n
                 dx = P[i].x - P[j].x
                 dy = P[i].y - P[j].y
                 __ dx __ 0 a.. dy __ 0:
@@ -45,7 +45,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ get_gcd  a, b):
+    ___ get_gcd  a, b
         __ b __ 0:
             r.. a
         r.. get_gcd(b, a % b)

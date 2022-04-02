@@ -1,4 +1,4 @@
-___ simple_calculator(calculation):
+___ simple_calculator(calculation
     """Receives 'calculation' and returns the calculated result,
 
        Examples - input -> output:
@@ -25,5 +25,5 @@ ___ simple_calculator(calculation):
         operator = calculation.s.. [1]
         r.. operation[operator](i..(x), i..(y))
     
-    ______ (ValueError, KeyError, ZeroDivisionError):
+    ______ (ValueError, KeyError, ZeroDivisionError
         r.. ValueError

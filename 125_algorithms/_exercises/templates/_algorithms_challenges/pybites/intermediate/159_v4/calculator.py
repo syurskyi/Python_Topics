@@ -6,7 +6,7 @@ OPS = {'+': operator.add,
        '/': operator.truediv}
 
 
-___ simple_calculator(calculation):
+___ simple_calculator(calculation
     """Receives 'calculation' and returns the calculated result,
 
        Examples - input -> output:
@@ -19,7 +19,7 @@ ___ simple_calculator(calculation):
        Make sure you convert both numbers to ints.
        If bad data is passed in, raise a ValueError.
     """
-    __ n.. any([op __ calculation ___ op __ OPS]):
+    __ n.. any([op __ calculation ___ op __ OPS]
         r.. ValueError
 
     # assume op is good and split the string

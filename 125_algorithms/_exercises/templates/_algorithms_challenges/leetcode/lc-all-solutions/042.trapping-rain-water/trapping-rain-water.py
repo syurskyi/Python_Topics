@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ trap  height):
+c_ Solution(o..
+  ___ trap  height
     """
     :type height: List[int]
     :rtype: int

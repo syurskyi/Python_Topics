@@ -22,7 +22,7 @@ c_ Solution:
     @param: k: An integer
     @return: An integer
     """
-    ___ kthSmallestSum  A, B, k):
+    ___ kthSmallestSum  A, B, k
         m, n = l..(A), l..(B)
         ans = j = 0
         heap    # list

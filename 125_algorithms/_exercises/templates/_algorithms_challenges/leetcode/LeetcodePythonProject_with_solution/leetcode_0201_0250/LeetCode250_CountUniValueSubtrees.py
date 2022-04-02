@@ -4,27 +4,27 @@ Created on May 13, 2018
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ countUnivalSubtrees  root):
+c_ Solution(o..
+    ___ countUnivalSubtrees  root
         """
         :type root: TreeNode
         :rtype: int
         """
         res = 0
         __ n.. root: r.. res
-        __ isUniVal(root):
+        __ isUniVal(root
             res += 1
         res += countUnivalSubtrees(root.left)+\
             countUnivalSubtrees(root.right)
         r.. res
     
-    ___ isUniVal  root):
+    ___ isUniVal  root
         __ n.. root.left a.. n.. root.right:
             r.. T..
         __ n.. root.right:

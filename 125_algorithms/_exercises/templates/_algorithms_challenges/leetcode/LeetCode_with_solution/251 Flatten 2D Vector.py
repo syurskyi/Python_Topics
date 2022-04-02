@@ -5,7 +5,7 @@ __author__ = 'Daniel'
 
 
 c_ Vector2D:
-    ___ - , vec2d):
+    ___ - , vec2d
         """
         :type vec2d: list[list[int]]
         :type: None
@@ -32,7 +32,7 @@ c_ Vector2D:
         :rtype: bool
         """
         # update
-        w.... i < l..(vec2d) a.. j >= l..(vec2d[i]):
+        w.... i < l..(vec2d) a.. j >= l..(vec2d[i]
             i += 1
             j = 0
 

@@ -99,7 +99,7 @@ WINE_LIST = {
 Scores = n..('Scores', 'wine cheese score')
 
 
-___ calculate_similarity(cheese, wine):
+___ calculate_similarity(cheese, wine
     wine_count = Counter(wine.l..
     cheese_count = Counter(cheese.l..
     common_letters = (wine_count & cheese_count)
@@ -107,19 +107,19 @@ ___ calculate_similarity(cheese, wine):
     r.. similarity
 
 
-___ best_match_per_wine(wine_type="all"):
+___ best_match_per_wine(wine_type="all"
     """ wine cheese pair with the highest match score
     returns a tuple which contains wine, cheese, score
     """
     __ wine_type __ WINE_LIST:
         wines = WINE_LIST[wine_type]
-    ____ wine_type __ WINE_LIST['all']:
+    ____ wine_type __ WINE_LIST 'all' :
         wines = [wine_type]
     ____:
         r.. ValueError('Wine not recognised')
     cheeses = CHEESES
     hi_score = Scores('', '', 0)
-    ___ wine, cheese __ product(wines, cheeses):
+    ___ wine, cheese __ product(wines, cheeses
         similarity = calculate_similarity(cheese, wine)
         __ similarity > hi_score.score:
             hi_score = Scores(wine, cheese, similarity)
@@ -138,11 +138,11 @@ ___ match_wine_5cheeses
     ]
     """
     scores    # list
-    ___ wine, cheese __ product(WINE_LIST['all'], CHEESES):
+    ___ wine, cheese __ product(WINE_LIST 'all' , CHEESES
         similarity = calculate_similarity(cheese, wine)
         scores.a..(Scores(wine, cheese, similarity))
     scores = s..(scores, key=l.... x: (x.wine, -x.score, x.cheese))
     res    # list
-    ___ k, g __ groupby(scores, l.... x: x.wine):
+    ___ k, g __ groupby(scores, l.... x: x.wine
         res.a..((k, [rec.cheese ___ rec __ g][:5]))
     r.. res

@@ -1,7 +1,7 @@
-___ sum_of_n(n):
+___ sum_of_n(n
 	res    # list
 	v = 0
-	___ i __ r..(abs(n)+1):
+	___ i __ r..(abs(n)+1
 		v += i __ n >= 0 ____ -i
 		res.a..(v)
 	r.. res

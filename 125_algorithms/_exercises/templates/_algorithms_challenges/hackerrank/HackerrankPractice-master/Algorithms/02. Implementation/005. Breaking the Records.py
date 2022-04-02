@@ -2,7 +2,7 @@
 # Score: 10
 
 
-___ breaking_records(score):
+___ breaking_records(score
     m.. = m.. = score[0]
     min_count = max_count = 0
     ___ i __ score[1:]:
@@ -16,5 +16,5 @@ ___ breaking_records(score):
 
 
 n = i..(input())
-score = l..(map(i.., input().s..()))
+score = l.. m..(i.., input().s..()))
 print(*breaking_records(score))

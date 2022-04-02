@@ -5,15 +5,15 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ deleteNode  root, key):
+c_ Solution(o..
+  ___ deleteNode  root, key
     """
     :type root: TreeNode
     :type key: int
     :rtype: TreeNode
     """
 
-    ___ delete(root, pre):
+    ___ delete(root, pre
       __ root.right:
         p = root.right
         w.... p.left:

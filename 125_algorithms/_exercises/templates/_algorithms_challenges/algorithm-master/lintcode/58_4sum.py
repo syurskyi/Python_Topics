@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fourSum  nums, target):
+    ___ fourSum  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -13,11 +13,11 @@ c_ Solution:
         n = l..(nums)
         nums.s..()
 
-        ___ a __ r..(n - 3):
+        ___ a __ r..(n - 3
             __ a > 0 a.. nums[a] __ nums[a - 1]:
                 _____
 
-            ___ b __ r..(a + 1, n - 2):
+            ___ b __ r..(a + 1, n - 2
                 __ b > a + 1 a.. nums[b] __ nums[b - 1]:
                     _____
 

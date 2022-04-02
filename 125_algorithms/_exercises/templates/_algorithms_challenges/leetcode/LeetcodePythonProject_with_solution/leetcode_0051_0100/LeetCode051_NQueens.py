@@ -4,8 +4,8 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ solveNQueens  n):
+c_ Solution(o..
+    ___ solveNQueens  n
         """
         :type n: int
         :rtype: List[List[str]]
@@ -16,17 +16,17 @@ c_ Solution(o..):
         res = convert(res)
         r.. res
     
-    ___ helper  n, res, cur, ind):
+    ___ helper  n, res, cur, ind
         __ ind __ n:
             res.a..(l..(cur))
             r..
-        ___ val __ r..(n):
-            __ isValid(cur, ind, val):
+        ___ val __ r..(n
+            __ isValid(cur, ind, val
                 cur.a..(val)
                 helper(n, res, cur, ind+1)
                 cur.pop()
     
-    ___ convert  nums):
+    ___ convert  nums
         __ n.. nums: r.. []
         res    # list
         ___ row __ nums:
@@ -37,11 +37,11 @@ c_ Solution(o..):
             res.a..(curr)
         r.. res
     
-    ___ isValid  cur, ind, val):
-        ___ i __ r..(ind):
+    ___ isValid  cur, ind, val
+        ___ i __ r..(ind
             __ cur[i] __ val:
                 r.. F..
-            __ abs(i-ind) __ abs(cur[i]-val):
+            __ abs(i-ind) __ abs(cur[i]-val
                 r.. F..
         r.. T..
     

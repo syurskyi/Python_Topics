@@ -1,25 +1,25 @@
-c_ Solution(o..):
+c_ Solution(o..
   # naive pre-order traversal on denary tree
-  ___ _findKthNumber  n, k):
+  ___ _findKthNumber  n, k
     """
     :type n: int
     :type k: int
     :rtype: int
     """
 
-    ___ dfs(cur, n):
+    ___ dfs(cur, n
       __ k __ 0:
         r.. cur
       k -= 1
       __ cur __ 0:
-        ___ i __ r..(1, 10):
+        ___ i __ r..(1, 10
           __ i > n:
             _____
           ret = dfs(i, n)
           __ ret:
             r.. ret
       ____:
-        ___ i __ r..(0, 10):
+        ___ i __ r..(0, 10
           __ cur * 10 + i > n:
             _____
           ret = dfs(cur * 10 + i, n)
@@ -30,8 +30,8 @@ c_ Solution(o..):
     r.. dfs(0, n)
 
   # optimized solution
-  ___ findKthNumber  n, k):
-    ___ getGap(n, ans):
+  ___ findKthNumber  n, k
+    ___ getGap(n, ans
       gap = 0
       start = ans
       end = start + 1

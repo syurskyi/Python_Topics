@@ -4,8 +4,8 @@ Created on Jan 25, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ largestRectangleArea  heights):
+c_ Solution(o..
+    ___ largestRectangleArea  heights
         """
         :type heights: List[int]
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(o..):
             r.. 0
         area = heights[0]
         i = 0
-        w.... i < l..(heights):
+        w.... i < l..(heights
             __ n.. stack o. heights[i] >= heights[stack[-1]]:
                 stack.a..(i)
                 i+=1

@@ -1,11 +1,11 @@
 c_ Solution:
-    ___ isValid  s):
+    ___ isValid  s
         """
         :type s: str
         :rtype: bool
         """
         stack    # list
-        pairs = {')': '(', ']': '[', '}': '{'}
+        pairs = {')': '(', ' ': ' ', '}': '{'}
 
         ___ c __ s:
             __ c __ '([{':

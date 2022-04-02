@@ -31,17 +31,17 @@ ___ _create_ranks(ninjas_ N..
     r.. ranking
 
 
-@p__.f..
+?p__.f..
 ___ first_ninjas
     r.. FIRST_NINJAS
 
 
-@p__.f..
+?p__.f..
 ___ second_ninjas
     r.. SECOND_NINJAS
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ ninja_ranks
     ranking = Rankings()
     ___ ninja __ FIRST_NINJAS:
@@ -57,7 +57,7 @@ ___ test_ninja_class_empty_init_raises_exception
 # required class behavior
 
 
-___ test_ninja_class_and_membership(first_ninjas):
+___ test_ninja_class_and_membership(first_ninjas
     ninja1 = Ninja("snow", 283)
     ninja2 = Ninja("natalia", 282)
     ninja3 = Ninja("okken", 70)
@@ -66,7 +66,7 @@ ___ test_ninja_class_and_membership(first_ninjas):
     ... ninja3 n.. __ first_ninjas
 
 
-___ test_ninja_str_output(first_ninjas, capfd):
+___ test_ninja_str_output(first_ninjas, capfd
     print(first_ninjas[1])
     output = ?.r .. 0].s..
     ... output __ "[282] natalia"
@@ -78,11 +78,11 @@ ___ test_ninja_str_output(first_ninjas, capfd):
 # starting len of ninja rankings
 
 
-___ test_first_ninja_ranks_in_object(ninja_ranks):
+___ test_first_ninja_ranks_in_object(ninja_ranks
     ... l..(ninja_ranks) __ 11
 
 
-___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks):
+___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks
     actual = ninja_ranks.dump()
     expected = Ninja(name="sam", bites=195)
     ... actual __ expected
@@ -92,19 +92,19 @@ ___ test_dumping_lowest_ranking_fist_ninjas(ninja_ranks):
 # highest / lowest ninjas in rankings
 
 
-___ test_highest_ranking_no_arg(ninja_ranks):
+___ test_highest_ranking_no_arg(ninja_ranks
     actual = ninja_ranks.highest()
     expected = [Ninja(name="snow", bites=283)]
     ... actual __ expected
 
 
-___ test_lowest_ranking_no_arg(ninja_ranks):
+___ test_lowest_ranking_no_arg(ninja_ranks
     actual = ninja_ranks.lowest()
     expected = [Ninja(name="sara", bites=196)]
     ... actual __ expected
 
 
-___ test_lowest_ranking_with_arg(ninja_ranks):
+___ test_lowest_ranking_with_arg(ninja_ranks
     actual = ninja_ranks.lowest(3)
     expected = [
         Ninja(name="sara", bites=196),
@@ -114,12 +114,12 @@ ___ test_lowest_ranking_with_arg(ninja_ranks):
     ... actual __ expected
 
 
-___ test_adding_a_ninja(ninja_ranks):
+___ test_adding_a_ninja(ninja_ranks
     ninja_ranks.add(Ninja(name="sam", bites=195))
     ... l..(ninja_ranks) __ 11
 
 
-___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks):
+___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks
     actual = ninja_ranks.lowest(3)
     expected = [
         Ninja(name="sam", bites=195),
@@ -145,7 +145,7 @@ ___ test_lowest_ranking_after_adding_more_ninjas(ninja_ranks):
 # pairing of ninjas
 
 
-___ test_pairing_with_no_arg(ninja_ranks):
+___ test_pairing_with_no_arg(ninja_ranks
     actual = ninja_ranks.pair_up()
     ... l..(actual) __ 3
 
@@ -153,7 +153,7 @@ ___ test_pairing_with_no_arg(ninja_ranks):
     ... actual[1] __ expected
 
 
-___ test_pairing_with_count_arg(ninja_ranks):
+___ test_pairing_with_count_arg(ninja_ranks
     actual = ninja_ranks.pair_up(5)
     ... l..(actual) __ 5
 

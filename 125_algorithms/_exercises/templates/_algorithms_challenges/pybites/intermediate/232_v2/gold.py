@@ -19,7 +19,7 @@ gold_prices = """
 """  # noqa E501
 
 
-___ years_gold_value_decreased(gold_prices: s.. = gold_prices) __ (i.., i..):
+___ years_gold_value_decreased(gold_prices: s.. = gold_prices) __ (i.., i..
     """Analyze gold_prices returning a tuple of the year the gold price
        decreased the most and the year the gold price increased the most.
     """

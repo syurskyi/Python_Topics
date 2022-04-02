@@ -11,11 +11,11 @@ How many possible unique paths are there?
 
 c_ Solution:
     # @return an integer
-    ___ uniquePaths  m, n):
+    ___ uniquePaths  m, n
         t = [[1] * m] * n
         i = j = 0
-        ___ i __ r..(n):
-            ___ j __ r..(m):
+        ___ i __ r..(n
+            ___ j __ r..(m
                 __ i __ 0 a.. j __ 0:
                     _____
                 ____ i __ 0:

@@ -6,22 +6,22 @@ Longest Consecutive Subsequence in BT
 __author__ = 'Daniel'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         gmax = 0
 
-    ___ longestConsecutive  root):
+    ___ longestConsecutive  root
         longest(root)
         r.. gmax
 
-    ___ longest  cur):
+    ___ longest  cur
         """
         longest ended at root
         Only consider increasing order
@@ -40,7 +40,7 @@ c_ Solution(o..):
         gmax = m..(gmax, maxa)
         r.. maxa
 
-    ___ longestConsecutive_error  root):
+    ___ longestConsecutive_error  root
         """
         :type root: TreeNode
         :rtype: int

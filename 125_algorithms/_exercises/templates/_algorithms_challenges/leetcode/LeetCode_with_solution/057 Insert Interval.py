@@ -15,8 +15,8 @@ __author__ = 'Danyang'
 
 
 # Definition for an interval.
-c_ Interval(o..):
-    ___ - , s=0, e=0):
+c_ Interval(o..
+    ___ - , s=0, e=0
         start = s
         end = e
 
@@ -27,25 +27,25 @@ c_ Interval(o..):
         r.. repr(__str__())
 
 
-c_ Solution(o..):
-    ___ insert  itvls, newItvl):
+c_ Solution(o..
+    ___ insert  itvls, newItvl
         s, e = newItvl.start, newItvl.end
         left = filter(l.... x: x.end < s, itvls)
         right = filter(l.... x: x.start > e, itvls)
-        __ l..(left)+l..(right) != l..(itvls):
+        __ l..(left)+l..(right) != l..(itvls
             s = m..(s, itvls[l..(left)].start)
             e = m..(e, itvls[-l..(right)-1].end)
 
         r.. left + [Interval(s, e)] + right
 
-    ___ insert_itr  itvls, newItvl):
+    ___ insert_itr  itvls, newItvl
         """
         iterator TODO
         """
 
 
-c_ SolutionSlow(o..):
-    ___ insert  itvls, newItvl):
+c_ SolutionSlow(o..
+    ___ insert  itvls, newItvl
         """
         :param itvls: a list of Intervals
         :param newItvl: a Interval
@@ -53,7 +53,7 @@ c_ SolutionSlow(o..):
         """
         r.. merge(itvls+[newItvl])
 
-    ___ merge  itvls):
+    ___ merge  itvls
         """
         sort first by .start
         then decide whether to extend the .end

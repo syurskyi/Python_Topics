@@ -3,8 +3,8 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ orderOfLargestPlusSign  N, mines):
+c_ Solution(o..
+    ___ orderOfLargestPlusSign  N, mines
         """
         :type N: int
         :type mines: List[List[int]]
@@ -16,8 +16,8 @@ c_ Solution(o..):
             matrix[i][j] = 0
         maxLen = 0
         dp = [[[0]*4 ___ _ __ r..(n)] ___ _ __ r..(n)]
-        ___ i __ r..(n):
-            ___ j __ r..(n):
+        ___ i __ r..(n
+            ___ j __ r..(n
                 __ matrix[i][j] __ 0:
                     _____
                 __ i __ 0 a.. j __ 0:
@@ -32,8 +32,8 @@ c_ Solution(o..):
                 ____:
                     dp[i][j][0] = dp[i][j-1][0]+1
                     dp[i][j][1] = dp[i-1][j][1]+1
-        ___ i __ r..(n-1, -1, -1):
-            ___ j __ r..(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1
+            ___ j __ r..(n-1, -1, -1
                 __ matrix[i][j] __ 0:
                     _____
                 __ i __ n-1 a.. j __ n-1:
@@ -48,8 +48,8 @@ c_ Solution(o..):
                 ____:
                     dp[i][j][2] = dp[i+1][j][2]+1
                     dp[i][j][3] = dp[i][j+1][3]+1
-        ___ i __ r..(n):
-            ___ j __ r..(n):
+        ___ i __ r..(n
+            ___ j __ r..(n
                 maxLen = m..(maxLen, m..(dp[i][j]))
         r.. maxLen
     

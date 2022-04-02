@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isPowerOfThree  n):
+    ___ isPowerOfThree  n
         """
         :type n: int
         :rtype: bool
@@ -7,7 +7,7 @@ c_ Solution:
         __ n.. n:
             r.. F..
 
-        ___ i __ (81, 27, 9, 3):
+        ___ i __ (81, 27, 9, 3
             w.... n % i __ 0:
                 n //= i
 

@@ -26,7 +26,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ maxSlidingWindow  nums, k):
+    ___ maxSlidingWindow  nums, k
         """
         Algorithms
         1. brute force
@@ -46,7 +46,7 @@ c_ Solution:
         q    # list  # store the index
         ret    # list
         n = l..(nums)
-        ___ i __ x..(n):
+        ___ i __ x..(n
             w.... q a.. q[0] <= i-k:
                 q.pop(0)
             w.... q a.. nums[q[-1]] < nums[i]:

@@ -1,4 +1,4 @@
-___ transform(lst):
+___ transform(lst
     output   # list
     ___ i __ lst:
         __ i % 2 __ 0:

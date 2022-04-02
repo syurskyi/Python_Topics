@@ -3,9 +3,9 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-c_ StringIterator(o..):
+c_ StringIterator(o..
 
-    ___ - , compressedString):
+    ___ - , compressedString
         """
         :type compressedString: str
         """
@@ -26,7 +26,7 @@ c_ StringIterator(o..):
         res = c
         count -= 1
         __ count __ 0:
-            __ ind __ l..(cmpStr):
+            __ ind __ l..(cmpStr
                 c = ' '
                 r.. res
             c = cmpStr[ind]

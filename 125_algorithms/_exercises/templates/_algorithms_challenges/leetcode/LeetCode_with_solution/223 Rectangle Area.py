@@ -10,7 +10,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ computeArea  A, B, C, D, E, F, G, H):
+    ___ computeArea  A, B, C, D, E, F, G, H
         """
         Follow the graph
         The input need to be strictly following the order of the bottom left corner and top right corner

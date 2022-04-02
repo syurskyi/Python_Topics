@@ -8,7 +8,7 @@ The challenge here is to use Python's elegant list comprehension feature to retu
 
 '''
 
-___ filter_positive_even_numbers(numbers):
+___ filter_positive_even_numbers(numbers
     """Receives a list of numbers, and filters out numbers that
        are both positive and even (divisible by 2), try to use a
        list comprehension"""

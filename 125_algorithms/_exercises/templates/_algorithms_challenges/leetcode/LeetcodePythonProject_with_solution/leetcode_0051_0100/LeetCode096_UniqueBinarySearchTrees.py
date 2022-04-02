@@ -3,8 +3,8 @@ Created on Jan 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ numTrees  n):
+c_ Solution(o..
+    ___ numTrees  n
         """
         :type n: int
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         dp = [0]*(n+1)
         dp[0] = 1
         dp[1] = 1
-        ___ i __ r..(2, n+1):
-            ___ j __ r..(i):
+        ___ i __ r..(2, n+1
+            ___ j __ r..(i
                 dp[i] += dp[i-j-1]*dp[j]
         r.. dp[-1]

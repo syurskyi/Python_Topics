@@ -2,7 +2,7 @@ ____ heapq _______ heappush, heappop
 
 
 c_ Solution:
-    ___ swimInWater  G):
+    ___ swimInWater  G
         """
         :type G: List[List[int]]
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution:
         V = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
         heap = [(G[0][0], 0, 0)]
-        visited = {(0, 0): T..}
+        visited = {(0, 0 T..}
 
         w.... heap:
             depth, x, y = heappop(heap)
@@ -26,7 +26,7 @@ c_ Solution:
             ___ dx, dy __ V:
                 _x = x + dx
                 _y = y + dy
-                __ n.. (0 <= _x < n a.. 0 <= _y < n):
+                __ n.. (0 <= _x < n a.. 0 <= _y < n
                     _____
                 __ (_x, _y) __ visited:
                     _____

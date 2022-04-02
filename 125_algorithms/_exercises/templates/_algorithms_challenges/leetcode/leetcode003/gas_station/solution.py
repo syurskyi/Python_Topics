@@ -2,15 +2,15 @@ c_ Solution:
     # @param gas, a list of integers
     # @param cost, a list of integers
     # @return an integer
-    ___ canCompleteCircuit  gas, cost):
+    ___ canCompleteCircuit  gas, cost
         n = l..(gas)
         t = [0 ___ i __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             t[i] = gas[i] - cost[i]
         res = 0
         cs = 0  # Current sum
         ts = 0  # Total sum
-        ___ i __ r..(n):
+        ___ i __ r..(n
             cs += t[i]
             ts += t[i]
             __ cs < 0:
@@ -21,10 +21,10 @@ c_ Solution:
         ____:
             r.. res
 
-    ___ canCompleteCircuit2  gas, cost):
+    ___ canCompleteCircuit2  gas, cost
         # Brute-force
         n = l..(gas)
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ gas[i] - cost[i] < 0:
                 _____
             carry = gas[i] - cost[i]

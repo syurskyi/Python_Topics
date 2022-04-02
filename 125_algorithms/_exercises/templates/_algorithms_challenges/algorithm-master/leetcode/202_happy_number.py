@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isHappy  n):
+    ___ isHappy  n
         """
         :type n: int
         :rtype: bool
@@ -15,7 +15,7 @@ c_ Solution:
 
         r.. T.. __ slow __ 1 ____ F..
 
-    ___ square_sum  a):
+    ___ square_sum  a
         res = b = 0
 
         w.... a != 0:

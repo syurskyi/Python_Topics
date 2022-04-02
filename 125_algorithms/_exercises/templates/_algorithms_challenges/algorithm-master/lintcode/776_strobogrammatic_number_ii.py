@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findStrobogrammatic  n):
+    ___ findStrobogrammatic  n
         """
         :type n: int
         :rtype: list[str]
@@ -10,7 +10,7 @@ c_ Solution:
             r.. ans
 
         __ n & 1:
-            ans = ['0', '1', '8']
+            ans =  '0', '1', '8'
             n -= 1
 
         w.... n:

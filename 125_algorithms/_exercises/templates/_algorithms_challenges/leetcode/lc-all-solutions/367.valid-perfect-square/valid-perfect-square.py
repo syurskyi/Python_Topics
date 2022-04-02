@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isPerfectSquare  num):
+c_ Solution(o..
+  ___ isPerfectSquare  num
     """
     :type num: int
     :rtype: bool

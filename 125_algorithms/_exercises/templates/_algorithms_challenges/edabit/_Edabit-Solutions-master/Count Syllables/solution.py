@@ -1,4 +1,4 @@
-___ number_syllables(word):
+___ number_syllables(word
     r.. word.c.. "-") + 1
 
 

@@ -3,25 +3,25 @@ Created on Mar 24, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ containVirus  grid):
+c_ Solution(o..
+    ___ containVirus  grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
         cost = [0]
-        w.... check(grid, cost):
+        w.... check(grid, cost
             _____
         r.. cost[0]
     
-    ___ check  grid, cost):
+    ___ check  grid, cost
         count = 1
         maxVal = -1
         flag = F..
         info    # list
         m, n = l..(grid), l..(grid[0])
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] __ 1:
                     count += 1
                     walls = [[0]*n ___ _ __ r..(m)]
@@ -39,11 +39,11 @@ c_ Solution(o..):
         update(grid, maxVal+2)
         r.. flag
     
-    ___ dfs  row, col, grid, count, walls, res):
+    ___ dfs  row, col, grid, count, walls, res
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
         m, n = l..(grid), l..(grid[0])
-        ___ i __ r..(4):
+        ___ i __ r..(4
             newRow = row+shiftX[i]
             newCol = col+shiftY[i]
             __ 0 <= newRow < m a.. 0 <= newCol < n:
@@ -57,14 +57,14 @@ c_ Solution(o..):
                         res[1] += 1
                         walls[newRow][newCol] |= 1 << i
     
-    ___ update  grid, quarantine):
+    ___ update  grid, quarantine
         shiftX = [1, 0, -1, 0]
         shiftY = [0, 1, 0, -1]
         m, n = l..(grid), l..(grid[0])
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] > 1 a.. grid[i][j] != quarantine:
-                    ___ k __ r..(4):
+                    ___ k __ r..(4
                         newRow = i+shiftX[k]
                         newCol = j+shiftY[k]
                         __ 0 <= newRow < m a.. 0 <= newCol < n a.. grid[newRow][newCol] __ 0:

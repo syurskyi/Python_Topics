@@ -4,8 +4,8 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ thirdMax  nums):
+c_ Solution(o..
+    ___ thirdMax  nums
         first, second, third = f__('-inf'), f__('-inf'), f__('-inf')
         ___ num __ nums:
             __ num > first:

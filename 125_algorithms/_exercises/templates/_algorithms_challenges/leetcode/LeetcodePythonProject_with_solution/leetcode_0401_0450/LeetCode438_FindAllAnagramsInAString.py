@@ -4,8 +4,8 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findAnagrams  s, p):
+c_ Solution(o..
+    ___ findAnagrams  s, p
         """
         :type s: str
         :type p: str
@@ -17,16 +17,16 @@ c_ Solution(o..):
         left = 0
         res    # list
         arr = [0]*26
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             arr[o..(c)-o..('a')] += 1
             w.... left <= i a.. arr[o..(c)-o..('a')] > arr0[o..(c)-o..('a')]:
                 arr[o..(s[left])-o..('a')] -= 1
                 left += 1
-            __ i-left+1 __ l..(p):
+            __ i-left+1 __ l..(p
                 res.a..(left)
         r.. res
     
-    ___ findAnagrams_orig  s, p):
+    ___ findAnagrams_orig  s, p
         """
         :type s: str
         :type p: str
@@ -40,7 +40,7 @@ c_ Solution(o..):
         arr1 = [0]*26
         result    # list
         end = 0
-        w.... end < l..(s):
+        w.... end < l..(s
             numInd = o..(s[end]) - o..('a')
             __ arr1[numInd] < arr0[numInd]:
                 arr1[numInd] += 1

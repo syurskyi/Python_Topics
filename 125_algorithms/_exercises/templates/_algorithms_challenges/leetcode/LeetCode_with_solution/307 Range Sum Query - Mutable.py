@@ -16,26 +16,26 @@ You may assume the number of calls to update and sumRange function is distribute
 __author__ = 'Daniel'
 
 
-c_ BinaryIndexTree(o..):
-    ___ - , nums):
+c_ BinaryIndexTree(o..
+    ___ - , nums
         """BIT 0 is dummy root"""
         n = l..(nums)
         nums = [0 ___ _ __ x..(n+1)]
         N = [0 ___ _ __ x..(n+1)]
-        ___ i, v __ e..(nums):
+        ___ i, v __ e..(nums
             s..(i+1, v)
 
-    ___ _lowbit  a):
+    ___ _lowbit  a
         r.. a & -a
 
-    ___ s..  i, val):
+    ___ s..  i, val
         diff = val - nums[i]
         nums[i] = val
-        w.... i < l..(N):
+        w.... i < l..(N
             N[i] += diff
             i += _lowbit(i)
 
-    ___ get  i):
+    ___ get  i
         ret = 0
         w.... i > 0:
             ret += N[i]
@@ -44,15 +44,15 @@ c_ BinaryIndexTree(o..):
         r.. ret
 
 
-c_ NumArray(o..):
-    ___ - , nums):
+c_ NumArray(o..
+    ___ - , nums
         """
         initialize your data structure here.
         :type nums: List[int]
         """
         bit = BinaryIndexTree(nums)
 
-    ___ update  i, val):
+    ___ update  i, val
         """
         :type i: int
         :type val: int
@@ -60,7 +60,7 @@ c_ NumArray(o..):
         """
         bit.s..(i+1, val)
 
-    ___ sumRange  i, j):
+    ___ sumRange  i, j
         """
         sum of elements nums[i..j], inclusive.
         :type i: int

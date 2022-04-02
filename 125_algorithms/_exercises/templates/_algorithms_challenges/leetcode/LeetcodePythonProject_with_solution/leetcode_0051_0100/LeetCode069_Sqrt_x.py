@@ -4,8 +4,8 @@ Created on Jan 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ mySqrt  x):
+c_ Solution(o..
+    ___ mySqrt  x
         """
         :type x: int
         :rtype: int

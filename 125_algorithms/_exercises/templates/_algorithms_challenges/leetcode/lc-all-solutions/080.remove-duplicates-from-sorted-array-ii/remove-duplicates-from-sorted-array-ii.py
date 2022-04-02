@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ removeDuplicates  nums):
+c_ Solution(o..
+  ___ removeDuplicates  nums
     """
     :type nums: List[int]
     :rtype: int

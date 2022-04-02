@@ -11,7 +11,7 @@ ___ test_create_domain_from_name
 
 
 ___ test_invalid_domain
-    w__ p__.r..(DomainException):
+    w__ p__.r..(DomainException
         Domain("nu.nlll")
 
 
@@ -23,7 +23,7 @@ ___ test_invalid_domain
     ("https://python.org/", "python.org"),
     ("https://stackoverflow.com/a/14836456", "stackoverflow.com"),
 ])
-___ test_create_domain_from_url(arg, expected):
+___ test_create_domain_from_url(arg, expected
     domain = Domain.parse_url(arg)
     ... t..(domain) __ Domain
     ... s..(domain) __ expected
@@ -35,7 +35,7 @@ ___ test_create_domain_from_url(arg, expected):
     ("tim@example.net", "example.net"),
     ("sara@hotmail.co.uk", "hotmail.co.uk"),
 ])
-___ test_create_domain_from_email(arg, expected):
+___ test_create_domain_from_email(arg, expected
     domain = Domain.parse_email(arg)
     ... t..(domain) __ Domain
     ... s..(domain) __ expected

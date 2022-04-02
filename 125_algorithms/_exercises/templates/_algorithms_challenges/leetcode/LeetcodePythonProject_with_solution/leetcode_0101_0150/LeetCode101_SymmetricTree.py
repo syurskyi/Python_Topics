@@ -5,14 +5,14 @@ Created on Jan 31, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ isSymmetricRecursive  root):
+c_ Solution(o..
+    ___ isSymmetricRecursive  root
         """
         :type root: TreeNode
         :rtype: bool
@@ -20,7 +20,7 @@ c_ Solution(o..):
         __ n.. root: r.. T..
         r.. helper(root.left, root.left)
     
-    ___ helper  left, right):
+    ___ helper  left, right
         __ n.. left a.. n.. right:
             r.. T..
         ____ n.. left o. n.. right:
@@ -31,7 +31,7 @@ c_ Solution(o..):
             r.. helper(left.left, right.right) a..\
                 helper(left.right, right.left)
     
-    ___ isSymmetric  root):
+    ___ isSymmetric  root
         """
         :type root: TreeNode
         :rtype: bool

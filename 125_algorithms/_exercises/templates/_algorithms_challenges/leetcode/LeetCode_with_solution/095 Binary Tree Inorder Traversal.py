@@ -17,15 +17,15 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ inorderTraversal  root):
+c_ Solution(o..
+    ___ inorderTraversal  root
         """
         Morris Traversal
         """
@@ -50,7 +50,7 @@ c_ Solution(o..):
 
         r.. ret
 
-    ___ inorderTraversal_memory  root):
+    ___ inorderTraversal_memory  root
         """
         :type root: TreeNode
         :param root:
@@ -60,7 +60,7 @@ c_ Solution(o..):
         inorderTraverse_itr(root, lst)
         r.. lst
 
-    ___ inorderTraverse  root, lst):
+    ___ inorderTraverse  root, lst
         """
         In order traverse
         """
@@ -70,7 +70,7 @@ c_ Solution(o..):
         lst.a..(root.val)
         inorderTraverse(root.right, lst)
 
-    ___ inorderTraverse_itr  root, lst):
+    ___ inorderTraverse_itr  root, lst
         """
         iterative version
         leftmost first in the lst

@@ -3,7 +3,7 @@ c_ Solution:
     @param: A: A list of integer which is 0, 1 or 2
     @return: nothing
     """
-    ___ sortColors  A):
+    ___ sortColors  A
         __ n.. A:
             r..
 

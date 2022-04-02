@@ -13,7 +13,7 @@ OCR_HEIGHT = 4
 ___ split_ocr_numbers(ocr_numbers: List[s..]) __ List[List[s..]]:
     ocrs_split    # list
     len_line = l..(ocr_numbers[0])
-    ___ start __ r..(0, len_line, OCR_WIDTH):
+    ___ start __ r..(0, len_line, OCR_WIDTH
         ocrs_split.a..(
             [line[start:start+OCR_WIDTH] ___ line __ ocr_numbers]
         )
@@ -24,12 +24,12 @@ OCR_NUMBERS = split_ocr_numbers(OCR_INPUT)
 
 ___ split_ocr_lines(ocr_numbers: List[s..]) __ List[List[s..]]:
     ocr_lines    # list
-    ___ start __ r..(0, l..(ocr_numbers), OCR_HEIGHT):
+    ___ start __ r..(0, l..(ocr_numbers), OCR_HEIGHT
         ocr_lines.a..(ocr_numbers[start:start+OCR_HEIGHT])
     r.. ocr_lines
 
 
-___ validate_ocr_numbers(ocr_numbers: List[s..]):
+___ validate_ocr_numbers(ocr_numbers: List[s..]
     n_first_line = l..(ocr_numbers[0])
     __ n_first_line % OCR_WIDTH:
         message = s..(n_first_line) + ' is not a multiple of ' + s..(OCR_WIDTH)
@@ -37,11 +37,11 @@ ___ validate_ocr_numbers(ocr_numbers: List[s..]):
     __ l..(ocr_numbers) % OCR_HEIGHT:
         message = 'numbers of rows is not a multiple of ' + s..(OCR_HEIGHT)
         r.. ValueError(message)
-    __ any(l..(line) != n_first_line ___ line __ ocr_numbers[1:]):
+    __ any(l..(line) != n_first_line ___ line __ ocr_numbers[1:]
         r.. ValueError('All lines must have the same length.')
 
 
-___ validate_numbers(numbers: s..):
+___ validate_numbers(numbers: s..
     __ n.. numbers.i..
         r.. ValueError(numbers + ' is not a digit')
 

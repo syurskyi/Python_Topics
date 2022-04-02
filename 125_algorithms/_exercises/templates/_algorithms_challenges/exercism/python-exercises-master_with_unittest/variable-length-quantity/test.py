@@ -5,7 +5,7 @@ ____ variable_length_quantity _______ encode, decode
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ TestVLQ(unittest.TestCase):
+c_ TestVLQ(unittest.TestCase
     ___ test_zero
         assertEqual(encode([0x0]), [0x0])
 
@@ -66,31 +66,31 @@ c_ TestVLQ(unittest.TestCase):
         )
 
     ___ test_one_byte
-        assertEqual(decode([0x7f]), [0x7f])
+        assertEqual(d.. [0x7f]), [0x7f])
 
     ___ test_two_bytes
-        assertEqual(decode([0xc0, 0x0]), [0x2000])
+        assertEqual(d.. [0xc0, 0x0]), [0x2000])
 
     ___ test_three_bytes
-        assertEqual(decode([0xff, 0xff, 0x7f]), [0x1fffff])
+        assertEqual(d.. [0xff, 0xff, 0x7f]), [0x1fffff])
 
     ___ test_four_bytes
-        assertEqual(decode([0x81, 0x80, 0x80, 0x0]), [0x200000])
+        assertEqual(d.. [0x81, 0x80, 0x80, 0x0]), [0x200000])
 
     ___ test_maximum_32_bit_integer
-        assertEqual(decode([0x8f, 0xff, 0xff, 0xff, 0x7f]), [0xffffffff])
+        assertEqual(d.. [0x8f, 0xff, 0xff, 0xff, 0x7f]), [0xffffffff])
 
     ___ test_incomplete_sequence_causes_error
-        w__ assertRaises(ValueError):
-            decode([0xff])
+        w__ assertRaises(ValueError
+            d.. [0xff])
 
     ___ test_incomplete_sequence_causes_error_even_if_value_is_zero
-        w__ assertRaises(ValueError):
-            decode([0x80])
+        w__ assertRaises(ValueError
+            d.. [0x80])
 
     ___ test_multiple_values
         assertEqual(
-            decode([0xc0, 0x0, 0xc8, 0xe8, 0x56, 0xff, 0xff, 0xff, 0x7f,
+            d.. [0xc0, 0x0, 0xc8, 0xe8, 0x56, 0xff, 0xff, 0xff, 0x7f,
                     0x0, 0xff, 0x7f, 0x81, 0x80, 0x0]),
             [0x2000, 0x123456, 0xfffffff, 0x0, 0x3fff, 0x4000]
         )

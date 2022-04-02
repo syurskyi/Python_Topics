@@ -28,7 +28,7 @@ ___ test_callable_log_levels
         ("This is a critical message", "critical"),
     ],
 )
-___ test_log_it(msg, level, caplog):
+___ test_log_it(msg, level, caplog
     caplog.set_level(logging.DEBUG)
     log_it(LOG_LEVEL[level], msg)
     ... l..(caplog.records) __ 1
@@ -38,7 +38,7 @@ ___ test_log_it(msg, level, caplog):
         ... record.name __ "pybites_logger"
 
 
-___ test_wrong_log_level(caplog):
+___ test_wrong_log_level(caplog
     msg = "This is a warning message"
     caplog.set_level(logging.ERROR)
     log_it(WARNING, msg)

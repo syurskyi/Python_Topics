@@ -1,4 +1,4 @@
-___ cleanWord(data):
+___ cleanWord(data
     word    # list
     ___ char __ data:
         __ s...isalpha(char) __ T..:
@@ -7,9 +7,9 @@ ___ cleanWord(data):
             word.a..('')
     r.. word
 
-___ isPalindrome(wordCount):
+___ isPalindrome(wordCount
     answer    # list
-    ___ x __ r..(wordCount):
+    ___ x __ r..(wordCount
         word = cleanWord(raw_input().l..
         word = ''.j..(word)
         __ word __ word[::-1]:

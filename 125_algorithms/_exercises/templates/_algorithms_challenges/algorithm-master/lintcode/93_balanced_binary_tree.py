@@ -12,10 +12,10 @@ c_ Solution:
     @param: root: The root of binary tree.
     @return: True if this Binary tree is Balanced, or false.
     """
-    ___ isBalanced  root):
+    ___ isBalanced  root
         r.. _divide_conquer(root)[0]
 
-    ___ _divide_conquer  node):
+    ___ _divide_conquer  node
         __ n.. node:
             r.. T.., 0
 

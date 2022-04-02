@@ -4,13 +4,13 @@ ___ dice_poker
     rolls = i..(input())
     answer    # list
     
-    ___ roll __ r..(rolls):
+    ___ roll __ r..(rolls
         roll = input().s..
         values = s..([x ___ x __ c...Counter(roll).v..)
 
-        __ s..(roll) __ ['2', '3', '4', '5', '6']:
+        __ s..(roll) __  '2', '3', '4', '5', '6' :
             answer.a..('big-straight')
-        ____ s..(roll) __ ['1', '2', '3', '4', '5']:
+        ____ s..(roll) __  '1', '2', '3', '4', '5' :
             answer.a..('small-straight')
         ____ values __ [2, 3]:
             answer.a..('full-house')

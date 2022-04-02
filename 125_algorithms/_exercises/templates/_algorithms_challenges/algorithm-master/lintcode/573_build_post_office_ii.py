@@ -22,7 +22,7 @@ c_ Solution:
     HOUSE = 1
     WALL = 2
 
-    ___ shortestDistance  grid):
+    ___ shortestDistance  grid
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -35,8 +35,8 @@ c_ Solution:
         times = c...defaultdict(i..)
         steps = c...defaultdict(i..)
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] __ HOUSE:
                     cnt += 1
                     bfs(grid, x, y, times, steps)
@@ -49,7 +49,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ bfs  grid, x, y, times, steps):
+    ___ bfs  grid, x, y, times, steps
         m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
         visited = s..(queue)
@@ -62,11 +62,11 @@ c_ Solution:
                 ___ dx, dy __ (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
-                ):
+
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < m a.. 0 <= _y < n):
+                    __ n.. (0 <= _x < m a.. 0 <= _y < n
                         _____
                     __ grid[_x][_y] != EMPTY:
                         _____
@@ -97,7 +97,7 @@ c_ Solution:
     HOUSE = 1
     WALL = 2
 
-    ___ shortestDistance  grid):
+    ___ shortestDistance  grid
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -110,8 +110,8 @@ c_ Solution:
         ids = c...defaultdict(s..)  # record house ids
         steps = c...defaultdict(i..)  # total steps for all houses
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] != HOUSE:
                     _____
 
@@ -127,17 +127,17 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ dfs  grid, x, y, id, ids, steps, step):
+    ___ dfs  grid, x, y, id, ids, steps, step
         m, n = l..(grid), l..(grid[0])
 
         ___ dx, dy __ (
             (-1, 0), (1, 0),
             (0, -1), (0, 1),
-        ):
+
             _x = x + dx
             _y = y + dy
 
-            __ n.. (0 <= _x < m a.. 0 <= _y < n):
+            __ n.. (0 <= _x < m a.. 0 <= _y < n
                 _____
             __ grid[_x][_y] != EMPTY:
                 _____

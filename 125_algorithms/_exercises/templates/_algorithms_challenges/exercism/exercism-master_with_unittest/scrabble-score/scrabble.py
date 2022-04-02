@@ -8,15 +8,15 @@ c_ Scrabble:
     }
 
     @classmethod
-    ___ score(cls, word):
-        __ n.. cls.valid(word):
+    ___ score(cls, word
+        __ n.. cls.valid(word
             r.. 0
         r.. s..([cls.LETTER_VALUES[c.l..] ___ c __ word])
 
     @classmethod
-    ___ valid(cls, word):
+    ___ valid(cls, word
         r.. word.isalpha()
 
 
-___ score(word):
+___ score(word
     r.. Scrabble.score(word)

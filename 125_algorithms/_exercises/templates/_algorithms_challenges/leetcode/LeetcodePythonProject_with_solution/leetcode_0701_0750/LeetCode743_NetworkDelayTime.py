@@ -3,8 +3,8 @@ Created on Mar 21, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ networkDelayTime  times, N, K):
+c_ Solution(o..
+    ___ networkDelayTime  times, N, K
         """
         :type times: List[List[int]]
         :type N: int

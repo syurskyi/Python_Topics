@@ -32,8 +32,8 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ kSmallestPairs  nums1, nums2, k):
+c_ Solution(o..
+    ___ kSmallestPairs  nums1, nums2, k
         """
         Maintain a heap of the k pairs
         The art is how to select the next pair.
@@ -46,11 +46,11 @@ c_ Solution(o..):
         :type k: int
         :rtype: List[List[int]]
         """
-        c_ Node(o..):
-            ___ - , i, j):
+        c_ Node(o..
+            ___ - , i, j
                 i, j = i, j
 
-            ___ __cmp__  other):
+            ___ __cmp__  other
                 r.. nums1[i] + nums2[j] - (nums1[other.i] + nums2[other.j])
 
             ___ hasnext
@@ -78,7 +78,7 @@ c_ Solution(o..):
 
         r.. ret
 
-    ___ kSmallestPairsError  nums1, nums2, k):
+    ___ kSmallestPairsError  nums1, nums2, k
         """
         The merge process for merge sort
         :type nums1: List[int]
@@ -89,8 +89,8 @@ c_ Solution(o..):
         i = 0
         j = 0
         ret    # list
-        ___ _ __ x..(k):
-            __ i < l..(nums1) a.. j < l..(nums2):
+        ___ _ __ x..(k
+            __ i < l..(nums1) a.. j < l..(nums2
                 ret.a..([nums1[i], nums2[j]])
                 __ nums1[i] < nums2[j]:
                     j += 1

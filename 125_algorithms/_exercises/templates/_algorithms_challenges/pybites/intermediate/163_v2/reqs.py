@@ -7,22 +7,22 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
     mapping    # dict
 
 
-    ___ req __ old_reqs.s...splitlines
+    ___ req __ old_reqs.s...s..
         print(req)
         package,value = req.s..("==")
-        mapping[package] = l..(map(i..,value.s..('.')))
+        mapping[package] = l.. m..(i..,value.s..('.')))
 
     
 
     upgrades    # list
 
-    ___ req __ new_reqs.s...splitlines
+    ___ req __ new_reqs.s...s..
         package,value = req.s..('==')
         old_version = mapping[package]
 
-        new_version = l..(map(i..,value.s..('.')))
+        new_version = l.. m..(i..,value.s..('.')))
 
-        ___ n1,n2 __ i...z__(old_version,new_version,fillvalue=0):
+        ___ n1,n2 __ i...z__(old_version,new_version,fillvalue=0
             __ n2 > n1:
                 upgrades.a..(package)
             ____ n2 < n1:

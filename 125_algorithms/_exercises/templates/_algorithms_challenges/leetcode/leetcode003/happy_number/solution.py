@@ -15,8 +15,8 @@ Example: 19 is a happy number
 1^2 + 0^2 + 0^2 = 1
 """
 
-c_ Solution(o..):
-    ___ isHappy  n):
+c_ Solution(o..
+    ___ isHappy  n
         """
         :type n: int
         :rtype: bool

@@ -46,7 +46,7 @@ _______ bisect
 
 c_ MyCalendarThree:
 
-    ___ - ):
+    ___ -
         lst    # list
 
     ___ book  start: i.., end: i..) __ i..:

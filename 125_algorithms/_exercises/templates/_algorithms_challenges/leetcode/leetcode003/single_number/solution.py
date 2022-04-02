@@ -1,7 +1,7 @@
 c_ Solution:
     # @param A, a list of integer
     # @return an integer
-    ___ singleNumber  A):
+    ___ singleNumber  A
         __ n.. A:
             r.. N..
         p = A[0]

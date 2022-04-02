@@ -8,7 +8,7 @@ c_ Solution:
     @return {Solution} a Solution object
     """
     @classmethod
-    ___ create(cls, n, k):
+    ___ create(cls, n, k
         solution = cls()
         solution.n = n
         solution.k = k
@@ -20,10 +20,10 @@ c_ Solution:
     @param: machine_id: An integer
     @return: a list of shard ids
     """
-    ___ addMachine  machine_id):
+    ___ addMachine  machine_id
         item = l2p[machine_id]    # list
         point = -1
-        ___ i __ r..(k):
+        ___ i __ r..(k
             point = r__.randint(0, n - 1)
             w.... point __ p2l:
                 point = r__.randint(0, n - 1)
@@ -36,7 +36,7 @@ c_ Solution:
     @param: hashcode: An integer
     @return: A machine id
     """
-    ___ getMachineIdByHashCode  hashcode):
+    ___ getMachineIdByHashCode  hashcode
         points = s..(p2l.keys())
         index = bisect.bisect_left(points, hashcode) % l..(points)
         # # counterclockwise

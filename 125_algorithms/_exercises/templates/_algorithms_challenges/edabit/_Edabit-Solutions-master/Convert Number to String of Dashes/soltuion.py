@@ -1,4 +1,4 @@
-___ num_to_dashes(num):
+___ num_to_dashes(num
     var = ""
     i = 1
     w.... i <= num:

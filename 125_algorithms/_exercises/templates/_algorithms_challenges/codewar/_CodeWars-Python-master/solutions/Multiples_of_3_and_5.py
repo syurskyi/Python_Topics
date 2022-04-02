@@ -7,9 +7,9 @@ Courtesy of ProjectEuler.net
 """
 
 
-___ solution(number):
+___ solution(number
     result    # list
-    ___ i __ r..(1, number):
+    ___ i __ r..(1, number
         __ i % 3 __ 0 o. i % 5 __ 0:
             result.a..(i)
 

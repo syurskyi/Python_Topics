@@ -2,7 +2,7 @@ ____ d__ _______ date
 ____ typing _______ Dict, Sequence, NamedTuple
 
 
-c_ MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple
     title: s..
     price: i..
     date: date

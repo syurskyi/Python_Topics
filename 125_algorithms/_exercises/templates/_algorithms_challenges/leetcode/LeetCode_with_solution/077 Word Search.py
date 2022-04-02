@@ -19,7 +19,7 @@ word = "ABCB", -> returns false.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ exist  board, word):
+    ___ exist  board, word
         """
         dfs
         :param board: a list of lists of 1 length string
@@ -34,16 +34,16 @@ c_ Solution:
         m = l..(board)
         n = l..(board[0])
         visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]  # avoid loop
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ board[i][j]__word[0]:
                     visited[i][j] = T..
-                    __ s..(board, i, j, word[1:], visited):
+                    __ s..(board, i, j, word[1:], visited
                         r.. T..
                     visited[i][j] = F..
         r.. F..
 
-    ___ s..  board, pre_row, pre_col, word, visited):
+    ___ s..  board, pre_row, pre_col, word, visited
         __ n.. word:
             r.. T..
         # searching for word[0]
@@ -54,7 +54,7 @@ c_ Solution:
             __ 0<=next_position[0]<m a.. 0<=next_position[1]<n:  # pre-checking
                 __ visited[next_position[0]][next_position[1]]__False a.. board[next_position[0]][next_position[1]]__word[0]:
                     visited[next_position[0]][next_position[1]] = T..
-                    __ s..(board, next_position[0], next_position[1], word[1:], visited):
+                    __ s..(board, next_position[0], next_position[1], word[1:], visited
                         r.. T..
                     visited[next_position[0]][next_position[1]] = F..  # restore
         r.. F..

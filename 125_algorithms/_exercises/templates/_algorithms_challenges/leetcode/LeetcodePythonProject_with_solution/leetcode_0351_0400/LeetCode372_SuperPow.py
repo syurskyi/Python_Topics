@@ -4,8 +4,8 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ superPow  a, b):
+c_ Solution(o..
+    ___ superPow  a, b
         __ a % 1337 __ 0: r.. a
         p = 0
         ___ i __ b:
@@ -14,11 +14,11 @@ c_ Solution(o..):
             p += 1440
         r.. power(a, p, 1337)
     
-    ___ power  a, n, mod):
+    ___ power  a, n, mod
         a %= mod
         res = 1
         w.... n != 0:
-            __ ((n&1) != 0):
+            __ ((n&1) != 0
                 res = res*a % mod
             a = a*a%mod
             n >>= 1

@@ -12,7 +12,7 @@ c_ Solution:
     @param: root: A tree
     @return: buttom-up level order a list of lists of integer
     """
-    ___ levelOrderBottom  root):
+    ___ levelOrderBottom  root
         ans    # list
         __ n.. root:
             r.. ans
@@ -30,7 +30,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  node, ans, preorder, parent_at):
+    ___ dfs  node, ans, preorder, parent_at
         __ l..(ans) < preorder[parent_at][1]:
             ans.a..([])
 

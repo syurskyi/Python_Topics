@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ validWordAbbreviation  dest, src):
+c_ Solution(o..
+  ___ validWordAbbreviation  dest, src
     """
     :type word: str
     :type abbr: str
@@ -27,6 +27,6 @@ c_ Solution(o..):
           jump = i..(src[start:i + 1])
           digit = F..
           j += jump
-          __ j != l..(dest):
+          __ j != l..(dest
             r.. F..
     r.. T..

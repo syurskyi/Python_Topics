@@ -5,7 +5,7 @@ ____ say _______ say
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ SayTest(unittest.TestCase):
+c_ SayTest(unittest.TestCase
     ___ test_zero
         assertEqual(say(0), "zero")
 
@@ -64,11 +64,11 @@ c_ SayTest(unittest.TestCase):
                                 "one hundred and twenty-three"))
 
     ___ test_number_to_large
-        w__ assertRaises(AttributeError):
+        w__ assertRaises(AttributeError
             say(1e12)
 
     ___ test_number_negative
-        w__ assertRaises(AttributeError):
+        w__ assertRaises(AttributeError
             say(-1)
 
 

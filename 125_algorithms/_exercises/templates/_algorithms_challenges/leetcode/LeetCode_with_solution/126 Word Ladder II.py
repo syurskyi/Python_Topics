@@ -23,7 +23,7 @@ __author__ = 'Danyang'
 
 c_ Solution_MLE:  # Memory Limit Exceeds
     c_ Node:
-        ___ - , s__, pre, d..):
+        ___ - , s__, pre, d..
             s__ = s__
             pre = pre  # node
             d.. = d..
@@ -31,7 +31,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
         ___  -r
             r.. repr(s__)
 
-    ___ findLadders  start, end, d..):
+    ___ findLadders  start, end, d..
         """
         bfs
         :param start: a string
@@ -47,14 +47,14 @@ c_ Solution_MLE:  # Memory Limit Exceeds
         queue = [start_node]
         w.... queue:
             length_0 = l..(queue)
-            ___ i __ x..(length_0):  #O(V)
+            ___ i __ x..(length_0  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
-            ___ i __ x..(length_0):
+            ___ i __ x..(length_0
                 current = queue[i].s__
                 ___ pos __ x..(l..(current)):
                     lst = l..(current)
@@ -67,7 +67,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
             queue = queue[length_0:]
         r.. []  # natural break, no result
 
-    ___ a..  node, result):
+    ___ a..  node, result
         cur = node
         lst    # list
         w.... cur:
@@ -78,14 +78,14 @@ c_ Solution_MLE:  # Memory Limit Exceeds
 
 c_ Solution_TLE:
     c_ Node:
-        ___ - , s__, pre):
+        ___ - , s__, pre
             s__ = s__
             pre = pre  # node
 
         ___  -r
             r.. repr(s__)
 
-    ___ findLadders  start, end, d..):
+    ___ findLadders  start, end, d..
         """
         bfs
         :param start: a string
@@ -101,27 +101,27 @@ c_ Solution_TLE:
         queue = [start_node]
         w.... queue:
             length_0 = l..(queue)
-            ___ i __ x..(length_0):  #O(V)
+            ___ i __ x..(length_0  #O(V)
                 current = queue[i]
                 __ current.string__end:  # reached
                     a..(current, result)
             __ result:  # shortest, thus pruning
                 r.. result
 
-            ___ i __ x..(length_0):
+            ___ i __ x..(length_0
                 current = queue[i].s__
                 ___ pos __ x..(l..(current)):
                     lst = l..(current)
                     ___ char __ lower_cases:
                         lst[pos] = char
                         temp = "".j..(lst)
-                        __ temp __ d.. a.. n.. in_previous(queue[i], temp):
+                        __ temp __ d.. a.. n.. in_previous(queue[i], temp
                             queue.a..(Node(temp, queue[i]))
 
             queue = queue[length_0:]
         r.. []  # natural break, no result
 
-    ___ a..  node, result):
+    ___ a..  node, result
         cur = node
         lst    # list
         w.... cur:
@@ -129,7 +129,7 @@ c_ Solution_TLE:
             cur = cur.pre
         result.a..(lst)
 
-    ___ in_previous  node, s__):
+    ___ in_previous  node, s__
         cur = node
         w.... cur:
             __ cur.string__string:
@@ -139,7 +139,7 @@ c_ Solution_TLE:
 
 
 c_ Node:
-    ___ - , s__, pre):
+    ___ - , s__, pre
         s__ = s__
         pre = pre  # node
         # self.pres = self.pre.pres|{string} if self.pre else {string}  # accelerate speed
@@ -148,7 +148,7 @@ c_ Node:
         r.. repr(s__)
 
 c_ Solution_TLE2:
-    ___ findLadders  start, end, d..):
+    ___ findLadders  start, end, d..
         """
         bfs
 
@@ -172,7 +172,7 @@ c_ Solution_TLE2:
         queue = [Node(start, N..)]
         w.... queue:
             length_0 = l..(queue)
-            ___ i __ x..(length_0):  #O(V)
+            ___ i __ x..(length_0  #O(V)
                 current = queue[i]
 
                 # greedy, cannot repeat while possibly repeat in the same level; otherwise cannot be the shortest
@@ -186,7 +186,7 @@ c_ Solution_TLE2:
             __ result:  # shortest, thus pruning
                 r.. result
 
-            ___ i __ x..(length_0):
+            ___ i __ x..(length_0
                 current = queue[i].s__
                 ___ pos __ x..(l..(current)):
                     lst = l..(current)
@@ -199,7 +199,7 @@ c_ Solution_TLE2:
             queue = queue[length_0:]
         r.. []  # natural break, no result
 
-    ___ a..  node, result):
+    ___ a..  node, result
         cur = node
         lst    # list
         w.... cur:
@@ -208,7 +208,7 @@ c_ Solution_TLE2:
         result.a..(lst)
 
 c_ Solution:  # use set to mimic queue, fastest
-    ___ findLadders  start, end, d..):
+    ___ findLadders  start, end, d..
         """
         ref: http://www.cnblogs.com/zuoyuan/p/3697045.html
         :param start:
@@ -249,7 +249,7 @@ c_ Solution:  # use set to mimic queue, fastest
         buildpath(prevMap, end, [], result)
         r.. result
 
-    ___ buildpath  prevMap, word, path, result):
+    ___ buildpath  prevMap, word, path, result
         # reach the end
         __ l..(prevMap[word])__0:
             path.a..(word)

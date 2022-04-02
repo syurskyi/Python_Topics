@@ -3,8 +3,8 @@ Created on Apr 20, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ eventualSafeNodes  graph):
+c_ Solution(o..
+    ___ eventualSafeNodes  graph
         """
         :type graph: List[List[int]]
         :rtype: List[int]
@@ -12,13 +12,13 @@ c_ Solution(o..):
         n = l..(graph)
         outdegrees = [0]*n
         inlinks = [[] ___ i __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             outdegrees[i] = l..(graph[i])
-        ___ i __ r..(n):
+        ___ i __ r..(n
             ___ j __ graph[i]:
                 inlinks[j].a..(i)
         queue    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ outdegrees[i] __ 0:
                 queue.a..(i)
         res    # list
@@ -32,19 +32,19 @@ c_ Solution(o..):
         res.s..()
         r.. res
     
-    ___ eventualSafeNodes_own_TLE  graph):
+    ___ eventualSafeNodes_own_TLE  graph
         """
         :type graph: List[List[int]]
         :rtype: List[int]
         """
         n = l..(graph)
         isCycle = [F..]*n
-        ___ i __ r..(n):
+        ___ i __ r..(n
             visited = s..()
             getIsCycle(i, i, graph, visited, isCycle)
         r.. [i ___ i __ r..(n) __ n.. isCycle[i]]
     
-    ___ getIsCycle  i, start, graph, visited, isCycle):
+    ___ getIsCycle  i, start, graph, visited, isCycle
         __ start __ visited o. isCycle[start]:
             isCycle[i] = T..
             r..

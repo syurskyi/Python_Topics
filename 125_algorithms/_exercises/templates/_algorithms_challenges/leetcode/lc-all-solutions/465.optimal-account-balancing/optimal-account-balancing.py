@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minTransfers  transactions):
+c_ Solution(o..
+  ___ minTransfers  transactions
     balances = c...defaultdict(i..)
     people = s..()
     ___ giver, receiver, amount __ transactions:
@@ -12,12 +12,12 @@ c_ Solution(o..):
         del balances[person]
     people_list = l..(people)
 
-    ___ dfs(people_list):
+    ___ dfs(people_list
       __ n.. people_list:
         r.. 0
       people = s..(people_list)
-      ___ i __ r..(2, l..(people_list) + 1):
-        ___ persons __ i...combinations(people_list, i):
+      ___ i __ r..(2, l..(people_list) + 1
+        ___ persons __ i...combinations(people_list, i
           __ s..(balances[p] ___ p __ persons) __ 0:
             people -= s..(persons)
             r.. dfs(l..(people)) + l..(persons) - 1

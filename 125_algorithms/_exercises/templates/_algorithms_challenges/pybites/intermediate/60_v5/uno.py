@@ -19,7 +19,7 @@ ___ create_uno_deck
     r.. cards
 
 
-___ add_suit(cards_append, suit: s..):
+___ add_suit(cards_append, suit: s..
     cards_append(UnoCard(suit, '0'))
     ___ value __ SUIT_VALUES:
         cards_append(UnoCard(suit, value))

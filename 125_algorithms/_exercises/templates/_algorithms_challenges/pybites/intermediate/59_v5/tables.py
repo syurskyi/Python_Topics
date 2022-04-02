@@ -1,6 +1,6 @@
 c_ MultiplicationTable:
 
-    ___ - , length):
+    ___ - , length
         """Create a 2D self._table of (x, y) coordinates and
            their calculations (form of caching)"""
         _len = length
@@ -14,7 +14,7 @@ c_ MultiplicationTable:
         """Returns a string representation of the table"""
         r.. '\n'.j..(' | '.j..([s..(x) ___ x __ y]) ___ y __ _table)
 
-    ___ calc_cell  x, y):
+    ___ calc_cell  x, y
         """Takes x and y coords and returns the (pre-calculated) result"""
         __ x > _len o. y > _len:
             r.. IndexError()

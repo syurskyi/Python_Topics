@@ -25,7 +25,7 @@ EXPECTED = i..([  # make an iterator
     ('support@PYBIT.es', 200),
     (' support@pybit.es', 1000),
 ])
-___ test_gravatar(email, size):
+___ test_gravatar(email, size
     actual = create_gravatar_url(email, size=size)
     expected = next(EXPECTED)
     ... actual __ expected

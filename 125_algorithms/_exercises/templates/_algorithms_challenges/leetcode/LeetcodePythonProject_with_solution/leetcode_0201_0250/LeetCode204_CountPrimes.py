@@ -4,15 +4,15 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ countPrimes  n):
+c_ Solution(o..
+    ___ countPrimes  n
         """
         :type n: int
         :rtype: int
         """
         notPrime = [F..]*(n)
         count = 0
-        ___ i __ r..(2, n):
+        ___ i __ r..(2, n
             __ n.. notPrime[i]:
                 count += 1
                 j = 2
@@ -21,7 +21,7 @@ c_ Solution(o..):
                     j += 1
         r.. count
     
-    ___ countPrimesSqrt  n):
+    ___ countPrimesSqrt  n
         """
         :type n: int
         :rtype: int
@@ -30,12 +30,12 @@ c_ Solution(o..):
         __ n <= 2:
             r.. 0
         primes = [F..,]*2 + [T..,]*(n-2)
-        ___ i __ r..(2, i..(math.sqrt(n-1))+1):
+        ___ i __ r..(2, i..(math.sqrt(n-1))+1
             __ primes[i]:
-                ___ j __ r..(i+i, n, i):
+                ___ j __ r..(i+i, n, i
                     primes[j] = F..
         count = 0
-        ___ i __ r..(2, n):
+        ___ i __ r..(2, n
             __ primes[i]: count += 1
         print(primes)
         r.. count

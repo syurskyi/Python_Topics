@@ -3,7 +3,7 @@ _______ unittest
 ____ flatten_array _______ flatten
 
 
-c_ FlattenArrayTests(unittest.TestCase):
+c_ FlattenArrayTests(unittest.TestCase
 
     ___ test_no_nesting
         assertEqual(flatten([0, 1, 2]), [0, 1, 2])
@@ -33,7 +33,7 @@ c_ FlattenArrayTests(unittest.TestCase):
         assertEqual(flatten(inputs), expected)
 
     ___ test_strings
-        assertEqual(flatten(['0', ['1', '2']]), ['0', '1', '2'])
+        assertEqual(flatten( '0',  '1', '2']]),  '0', '1', '2' )
 
 
 __ _____ __ _____

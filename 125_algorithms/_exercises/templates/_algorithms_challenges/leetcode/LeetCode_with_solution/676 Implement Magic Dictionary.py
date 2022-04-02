@@ -21,21 +21,21 @@ ____ c.. _______ defaultdict
 
 c_ MagicDictionary:
 
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
         """
         c_ Node:
-            ___ - , chr):
+            ___ - , chr
                 chr = chr
                 end = F..  # a word ends here
                 children = defaultdict(l....: N..)
 
         c_ Trie:
-            ___ - ):
+            ___ -
                 root = Node(N..)
 
-            ___ insert  cur, s, i):
+            ___ insert  cur, s, i
                 __ n.. cur:
                     cur = Node(s[i])
 
@@ -47,7 +47,7 @@ c_ MagicDictionary:
 
                 r.. cur
 
-            ___ s..  cur, s, i, modified):
+            ___ s..  cur, s, i, modified
                 __ cur.chr != s[i]:
                     __ modified:
                         r.. F..
@@ -58,7 +58,7 @@ c_ MagicDictionary:
                     r.. modified a.. cur.end
 
                 ___ child __ cur.children.v..
-                    __ s..(child, s, i + 1, modified):
+                    __ s..(child, s, i + 1, modified
                         r.. T..
 
                 r.. F..
@@ -78,7 +78,7 @@ c_ MagicDictionary:
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         """
         ___ child __ trie.root.children.v..
-            __ trie.s..(child, word, 0, F..):
+            __ trie.s..(child, word, 0, F..
                 r.. T..
 
         r.. F..

@@ -9,8 +9,8 @@ For example,
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         table = {
             0: N..,
             1: "One",
@@ -46,7 +46,7 @@ c_ Solution(o..):
             1000000000: "Billion"
         }
 
-    ___ numberToWords  num):
+    ___ numberToWords  num
         """
         Pay attention to the handling of 0's
         :type num: int
@@ -57,9 +57,9 @@ c_ Solution(o..):
         ret    # list
         toWords(num, ret)
         ret = filter(l.... x: x, ret)  # filter None as zeros
-        r.. " ".j..(map(s.., ret))
+        r.. " ".j.. m..(s.., ret))
 
-    ___ toWords  num, ret):
+    ___ toWords  num, ret
         """
         will call partial_parse
 
@@ -76,7 +76,7 @@ c_ Solution(o..):
 
         ret.a..(table[num%TEN])
 
-    ___ partial_parse  num, sig, ret):
+    ___ partial_parse  num, sig, ret
         """
         will call toWords
         """

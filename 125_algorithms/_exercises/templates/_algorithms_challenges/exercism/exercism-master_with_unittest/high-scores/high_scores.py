@@ -1,8 +1,8 @@
 _______ heapq
 
 
-c_ HighScores(o..):
-    ___ - , scores):
+c_ HighScores(o..
+    ___ - , scores
         scores = scores
 
     ___ highest

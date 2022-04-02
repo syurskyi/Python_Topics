@@ -53,7 +53,7 @@ ____ c.. _______ defaultdict
 
 c_ TimeMap:
 
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
         Looks like Cassandra

@@ -10,7 +10,7 @@ ___ get_users(passwd: s..) __ d..:
     
     passwords    # dict
     #pdb.set_trace()
-    ___ line __ passwd.splitlines
+    ___ line __ passwd.s..
         __ n.. line:
             _____
         values = line.s..(':')

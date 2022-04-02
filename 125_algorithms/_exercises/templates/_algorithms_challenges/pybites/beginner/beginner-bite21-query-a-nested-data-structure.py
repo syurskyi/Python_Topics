@@ -12,17 +12,17 @@ Update 18th of Sept 2018: as concluded in the forum it is better to pass the car
 """
 
 cars = {
-    'Ford': ['Falcon', 'Focus', 'Festiva', 'Fairlane'],
-    'Holden': ['Commodore', 'Captiva', 'Barina', 'Trailblazer'],
-    'Nissan': ['Maxima', 'Pulsar', '350Z', 'Navara'],
-    'Honda': ['Civic', 'Accord', 'Odyssey', 'Jazz'],
-    'Jeep': ['Grand Cherokee', 'Cherokee', 'Trailhawk', 'Trackhawk']
+    'Ford':  'Falcon', 'Focus', 'Festiva', 'Fairlane' ,
+    'Holden':  'Commodore', 'Captiva', 'Barina', 'Trailblazer' ,
+    'Nissan':  'Maxima', 'Pulsar', '350Z', 'Navara' ,
+    'Honda':  'Civic', 'Accord', 'Odyssey', 'Jazz' ,
+    'Jeep':  'Grand Cherokee', 'Cherokee', 'Trailhawk', 'Trackhawk' 
 }
 
 ___ get_all_jeeps cars=cars
     """return a comma  + space (', ') separated string of jeep models (original order)"""
     separator = ', '
-    r..(separator.j..(cars['Jeep']))
+    r..(separator.j..(cars 'Jeep' ))
 
 ___ get_first_model_each_manufacturer cars=cars
     """return a list of matching models (original ordering)"""

@@ -52,7 +52,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
     
     current_date = start
         
-    w.... i < l..(dates):
+    w.... i < l..(dates
         date = p..(dates[i]).date()
         __ date __ current_date:
             mapping[current_date] = date
@@ -74,17 +74,17 @@ ___ exchange_rates(
 ) __ Dict[date, d..]:
     
 
-    w__ open(RATES_FILE,'r') __ f:
+    w__ o.. RATES_FILE _ __ f:
         data = json.load(f)
-    __ (start_date < data['start_at']) o. (end_date > data['end_at']):
+    __ (start_date < data 'start_at' ) o. (end_date > data 'end_at'
         r.. ValueError("Invalid dates")
-    matching_dates = match_daily_rates(p..(start_date).date(),p..(end_date).date(),data['rates']) 
+    matching_dates = match_daily_rates(p..(start_date).date(),p..(end_date).date(),data 'rates' )
 
 
     result    # dict
     ___ date_1,date_2 __ matching_dates.i..:
         date = date_2.s..("%Y-%m-%d")
-        value = {'Base Date': date_2,'USD': data['rates'][date]['USD'],'GBP': data['rates'][date]['GBP']}
+        value = {'Base Date': date_2,'USD': data 'rates' [date] 'USD' ,'GBP': data 'rates' [date] 'GBP' }
         result[date_1] = value
 
     r.. result

@@ -9,7 +9,7 @@
 c_ Solution:
   # @param root, a tree link node
   # @return nothing
-  ___ connect  root):
+  ___ connect  root
     __ root a.. root.left a.. root.right:
       root.left.next = root.right
       root.right.next = root.next a.. root.next.left

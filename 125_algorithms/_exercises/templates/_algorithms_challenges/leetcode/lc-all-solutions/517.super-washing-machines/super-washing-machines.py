@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findMinMoves  machines):
+c_ Solution(o..
+  ___ findMinMoves  machines
     """
     :type machines: List[int]
     :rtype: int

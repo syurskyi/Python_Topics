@@ -18,8 +18,8 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ increasingTriplet  nums):
+c_ Solution(o..
+    ___ increasingTriplet  nums
         """
         Brute force: O(N^3)
 
@@ -39,7 +39,7 @@ c_ Solution(o..):
 
         r.. F..
 
-    ___ increasingTripletError  nums):
+    ___ increasingTripletError  nums
         """
         use stack
         :type nums: List[int]

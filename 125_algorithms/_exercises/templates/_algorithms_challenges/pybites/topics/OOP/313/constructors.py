@@ -1,17 +1,17 @@
 _______ __
 
 
-c_ DomainException(E..):
+c_ DomainException(E..
     """Raised when an invalid is created."""
 
 
 c_ Domain:
 
-    ___ - , name):
+    ___ - , name
         # validate a current domain (r'.*\.[a-z]{2,3}$' is fine)
         # if not valid, raise a DomainException
         name = name
-        __ n.. __.m..(r'.*\.[a-z]{2,3}$', name):
+        __ n.. __.m..(r'.*\.[a-z]{2,3}$', name
             r.. DomainException
         
     # next add a __str__ method and write 2 class methods
@@ -19,12 +19,12 @@ c_ Domain:
     # from an URL and email respectively
 
     @classmethod
-    ___ parse_url(cls, url):
+    ___ parse_url(cls, url
         url_domain = __.f..(r"(?:^https?:\/\/([^\/]+)(?:[\/,]|$)|^(.*)$)", url)
         r.. Domain(url_domain[0][0])
 
     @classmethod
-    ___ parse_email(cls, email):
+    ___ parse_email(cls, email
         email_domain = __.f..(r'@(.*\.[a-z]+)', email)
         r.. Domain(email_domain[0])
 

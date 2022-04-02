@@ -11,7 +11,7 @@ c_ Solution:
     """
     Union Find
     """
-    ___ connectedSet  nodes):
+    ___ connectedSet  nodes
         """
         :type nodes: list[UndirectedGraphNode]
         :rtype: list[list[UndirectedGraphNode]]
@@ -38,14 +38,14 @@ c_ Solution:
 
         r.. l..(ans.values())
 
-    ___ union  nodes, a, b):
+    ___ union  nodes, a, b
         _a = find(nodes, a)
         _b = find(nodes, b)
 
         __ _a __ n.. _b:
             nodes[_b] = _a
 
-    ___ find  nodes, a):
+    ___ find  nodes, a
         __ a n.. __ nodes:
             nodes[a] = a
             r.. a
@@ -60,7 +60,7 @@ c_ Solution:
     """
     DFS
     """
-    ___ connectedSet  nodes):
+    ___ connectedSet  nodes
         """
         :type nodes: list[UndirectedGraphNode]
         :rtype: list[list[UndirectedGraphNode]]
@@ -82,7 +82,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  a, visited, path):
+    ___ dfs  a, visited, path
         visited.add(a)
         path.a..(a.label)
 

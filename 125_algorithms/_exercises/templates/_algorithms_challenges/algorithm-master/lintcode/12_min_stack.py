@@ -1,9 +1,9 @@
 c_ MinStack:
-    ___ - ):
+    ___ -
         stack    # list
         mins    # list
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: void

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ sortArrayByParity  A):
+c_ Solution(o..
+    ___ sortArrayByParity  A
         """
         :type A: List[int]
         :rtype: List[int]

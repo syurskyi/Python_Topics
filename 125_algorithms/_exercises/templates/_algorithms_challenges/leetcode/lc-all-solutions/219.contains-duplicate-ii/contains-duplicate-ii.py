@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ containsNearbyDuplicate  nums, k):
+c_ Solution(o..
+  ___ containsNearbyDuplicate  nums, k
     """
     :type nums: List[int]
     :type k: int
@@ -17,7 +17,7 @@ c_ Solution(o..):
 
     window = d..([])
     d = s..()
-    ___ i __ r..(0, k):
+    ___ i __ r..(0, k
       __ nums[i] __ d:
         r.. T..
       d |= {nums[i]}

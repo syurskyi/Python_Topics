@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ change  amount, coins):
+    ___ change  amount, coins
         """
         :type amount: int
         :type coins: List[int]
@@ -17,7 +17,7 @@ c_ Solution:
         re-count if `[1, 2]` and `[2, 1]`, but they are same
         """
         ___ c __ coins:
-            ___ a __ r..(c, amount + 1):
+            ___ a __ r..(c, amount + 1
                 # if a < c: continue
                 dp[a] += dp[a - c]
 

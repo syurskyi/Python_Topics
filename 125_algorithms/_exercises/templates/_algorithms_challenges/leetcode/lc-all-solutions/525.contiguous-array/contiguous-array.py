@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findMaxLength  nums):
+c_ Solution(o..
+  ___ findMaxLength  nums
     """
     :type nums: List[int]
     :rtype: int

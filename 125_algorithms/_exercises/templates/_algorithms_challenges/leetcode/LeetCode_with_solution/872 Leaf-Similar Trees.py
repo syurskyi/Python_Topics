@@ -19,7 +19,7 @@ Both of the given trees will have between 1 and 100 nodes.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -43,7 +43,7 @@ c_ Solution:
                 _____
         r.. T..
 
-    ___ dfs  node):
+    ___ dfs  node
         stk = [node]
         # pre-order
         w.... stk:

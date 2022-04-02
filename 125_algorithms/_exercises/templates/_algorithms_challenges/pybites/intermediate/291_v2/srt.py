@@ -41,7 +41,7 @@ ___ get_srt_section_ids(text: s..) __ List[i..]:
         start_time,end_time = times.s..('-->')
         
         tds    # list
-        ___ time __ (start_time,end_time):
+        ___ time __ (start_time,end_time
             hours,minutes,seconds = time.s..(':')
             hours = i..(hours)
             minutes = i..(hours)

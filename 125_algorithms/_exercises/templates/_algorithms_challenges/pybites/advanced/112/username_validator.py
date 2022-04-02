@@ -33,12 +33,12 @@ ___ parse_social_platforms_string
         result = __.s..(r"(.+)\n.*Min: (\d+)\n.*Max: (\d+)\n.+: (.+)",platform,flags=__.M)
         
         values    # list
-        ___ i __ r..(1,5):
+        ___ i __ r..(1,5
             values.a..(result.group(i))
         platform_name = values[0]
         range_object = r..(i..(values[1]),i..(values[2]))
         last = ''.j..(values[-1].s..())
-        regex = '^[' + last + ']+$'
+        regex = '^ ' + last + ' +$'
         r = __.c..(regex)
         validator = Validator(range_object,r)
         platform_to_validator[platform_name] = validator
@@ -47,7 +47,7 @@ ___ parse_social_platforms_string
     r.. platform_to_validator
 
 
-___ validate_username(platform, username):
+___ validate_username(platform, username
     """Receives platforms(Twitter, Facebook or Reddit) and username string,
        raise a ValueError if the wrong platform is passed in,
        return True/False if username is valid for entered platform"""

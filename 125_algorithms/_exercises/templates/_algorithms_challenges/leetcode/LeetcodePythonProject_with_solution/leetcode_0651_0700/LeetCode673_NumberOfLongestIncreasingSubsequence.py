@@ -3,8 +3,8 @@ Created on Oct 15, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findNumberOfLIS  nums):
+c_ Solution(o..
+    ___ findNumberOfLIS  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -15,9 +15,9 @@ c_ Solution(o..):
         maxLen = 0
         lengths = [0]*n
         counts = [0]*n
-        ___ i __ r..(n):
+        ___ i __ r..(n
             lengths[i], counts[i] = 1, 1
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 __ nums[i] > nums[j]:
                     __ lengths[i] __ lengths[j]+1:
                         counts[i] += counts[j]

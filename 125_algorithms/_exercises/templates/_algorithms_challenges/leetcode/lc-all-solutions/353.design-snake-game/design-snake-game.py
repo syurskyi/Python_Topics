@@ -1,9 +1,9 @@
 ____ c.. _______ d..
 
 
-c_ SnakeGame(o..):
+c_ SnakeGame(o..
 
-  ___ - , width, height, food):
+  ___ - , width, height, food
     """
     Initialize your data structure here.
     @param width - screen width
@@ -22,7 +22,7 @@ c_ SnakeGame(o..):
     directions = {"U": (-1, 0), "D": (1, 0), "L": (0, -1), "R": (0, 1)}
     score = 0
 
-  ___ move  direction):
+  ___ move  direction
     """
     Moves the snake.
     @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down 

@@ -9,7 +9,7 @@ the contiguous subarray [4,−1,2,1] has the largest sum = 6.
 c_ Solution:
     # @param A, a list of integers
     # @return an integer
-    ___ maxSubArray  A):
+    ___ maxSubArray  A
         __ n.. A:
             msg = 'The input array must contain at least one number.'
             r.. E..(msg)

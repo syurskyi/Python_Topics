@@ -5,7 +5,7 @@ ____ food_chain _______ recite
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.1.0
 
-c_ FoodChainTest(unittest.TestCase):
+c_ FoodChainTest(unittest.TestCase
 
     ___ test_fly
         expected = [
@@ -101,7 +101,7 @@ c_ FoodChainTest(unittest.TestCase):
 
     ___ test_full_song
         expected    # list
-        ___ n __ r..(1, 9):
+        ___ n __ r..(1, 9
             expected += recite(n, n) + [""]
         expected.pop()
         assertEqual(recite(1, 8), expected)

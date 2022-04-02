@@ -11,18 +11,18 @@ Note: The sequence of integers will be represented as a string.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ countAndSay  n):
+    ___ countAndSay  n
         """
         :param n: integer
         :return: output representation in string
         """
         s__ = "1"
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             s__ = singleCountAndSay(s__)
         r.. s__
 
 
-    ___ singleCountAndSay  num_string):
+    ___ singleCountAndSay  num_string
         """
         Two pointers algorithm: FIND NEXT DIFFERENT
         :param num_string: input number as string
@@ -31,7 +31,7 @@ c_ Solution:
         string_builder = ""
 
         i = 0
-        w.... i<l..(num_string):
+        w.... i<l..(num_string
             # find next different number
             j = i+1
             w.... j<l..(num_string) a.. num_string[j]__num_string[i]:

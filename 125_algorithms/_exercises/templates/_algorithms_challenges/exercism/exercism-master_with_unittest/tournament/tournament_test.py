@@ -5,7 +5,7 @@ ____ tournament _______ tally
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.4.0
 
-c_ TournamentTest(unittest.TestCase):
+c_ TournamentTest(unittest.TestCase
     ___ test_just_the_header_if_no_input
         assertEqual(
             tally(''),

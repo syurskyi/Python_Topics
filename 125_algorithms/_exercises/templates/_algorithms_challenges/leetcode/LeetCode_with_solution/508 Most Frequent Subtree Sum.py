@@ -28,7 +28,7 @@ signed integer.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -38,7 +38,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ findFrequentTreeSum  root):
+    ___ findFrequentTreeSum  root
         """
         traverse with counter
         :type root: TreeNode
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. ret[0]
 
-    ___ traverse  root, counter):
+    ___ traverse  root, counter
         __ n.. root:
             r.. 0
 

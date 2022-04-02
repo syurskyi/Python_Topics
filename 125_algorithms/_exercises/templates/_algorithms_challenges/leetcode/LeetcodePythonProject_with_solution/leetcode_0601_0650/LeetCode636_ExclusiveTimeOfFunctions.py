@@ -3,8 +3,8 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ exclusiveTime  n, logs):
+c_ Solution(o..
+    ___ exclusiveTime  n, logs
         """
         :type n: int
         :type logs: List[str]

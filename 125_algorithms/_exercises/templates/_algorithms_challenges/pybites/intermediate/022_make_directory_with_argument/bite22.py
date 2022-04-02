@@ -1,9 +1,9 @@
 ____ functools _______ wraps
 
 
-___ make_html(element):
+___ make_html(element
     '''Wraps text with HTML tag.'''
-    ___ decorate(func):
+    ___ decorate(func
         @wraps(func)
         ___ wrapper $ $$:
             '''Returns text wrapped in provided HTML tag'''
@@ -14,5 +14,5 @@ ___ make_html(element):
 
 @make_html('p')
 @make_html('strong')
-___ get_text(text='I code with PyBites'):
+___ get_text(text='I code with PyBites'
     r.. text

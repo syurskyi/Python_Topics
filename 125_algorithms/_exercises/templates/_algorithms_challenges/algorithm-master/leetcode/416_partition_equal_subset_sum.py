@@ -7,7 +7,7 @@ REF: https://leetcode.com/problems/partition-equal-subset-sum/discuss/90592
 
 
 c_ Solution:
-    ___ canPartition  nums):
+    ___ canPartition  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -25,7 +25,7 @@ c_ Solution:
         dp[0] = T..
 
         ___ a __ nums:
-            ___ s __ r..(target, a - 1, -1):
+            ___ s __ r..(target, a - 1, -1
                 __ dp[s]:
                     _____
 

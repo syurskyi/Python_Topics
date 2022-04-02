@@ -36,8 +36,8 @@ _______ r__
 __author__ = 'Daniel'
 
 
-c_ RandomizedSet(o..):
-    ___ - ):
+c_ RandomizedSet(o..
+    ___ -
         """
         1. Use List of numbers to support O(1) getRandom
         2. need an efficient way to find and delete an element
@@ -47,7 +47,7 @@ c_ RandomizedSet(o..):
         lst    # list
         pos    # dict
 
-    ___ insert  val):
+    ___ insert  val
         """
         Inserts a value to the set. Returns true if the set did not already contain the specified element.
         :type val: int
@@ -61,7 +61,7 @@ c_ RandomizedSet(o..):
 
         r.. T..
 
-    ___ remove  val):
+    ___ remove  val
         """
         Removes a value from the set. Returns true if the set contained the specified element.
         :type val: int
@@ -89,14 +89,14 @@ c_ RandomizedSet(o..):
         r.. r__.choice(lst)
 
 
-c_ RandomizedSetTLE(o..):
-    ___ - ):
+c_ RandomizedSetTLE(o..
+    ___ -
         """
         Initialize your data structure here.
         """
         s.. = s..()
 
-    ___ insert  val):
+    ___ insert  val
         """
         Inserts a value to the set. Returns true if the set did not already contain the specified element.
         :type val: int
@@ -106,7 +106,7 @@ c_ RandomizedSetTLE(o..):
         s...add(val)
         r.. ret
 
-    ___ remove  val):
+    ___ remove  val
         """
         Removes a value from the set. Returns true if the set contained the specified element.
         :type val: int

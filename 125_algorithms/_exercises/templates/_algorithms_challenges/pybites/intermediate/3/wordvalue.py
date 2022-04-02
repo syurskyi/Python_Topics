@@ -18,21 +18,21 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 ___ load_words
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
 
-    w__ open(DICTIONARY,'r') __ f:
-        content = f.read()
+    w__ o.. DICTIONARY _ __ f:
+        content = f.r..
     
 
-    r.. content.splitlines()
+    r.. content.s.. 
 
 
-___ calc_word_value(word):
+___ calc_word_value(word
     """Given a word calculate its value using the LETTER_SCORES dict"""
 
 
     r.. s..(LETTER_SCORES.get(letter,0) ___ letter __ word.upper())
 
 
-___ max_word_value(words):
+___ max_word_value(words
     """Given a list of words calculate the word with the maximum value and return it"""
     
     max_word = N..

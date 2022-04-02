@@ -3,27 +3,27 @@ _______ unittest
 ____ queen_attack _______ board, can_attack
 
 
-c_ QueenAttackTest(unittest.TestCase):
+c_ QueenAttackTest(unittest.TestCase
     ___ test_board1
-        ans = ['________',
+        ans =  '________',
                '________',
                '___W____',
                '________',
                '________',
                '______B_',
                '________',
-               '________']
+               '________'
         assertEqual(board((2, 3), (5, 6)), ans)
 
     ___ test_board2
-        ans = ['______W_',
+        ans =  '______W_',
                '_______B',
                '________',
                '________',
                '________',
                '________',
                '________',
-               '________']
+               '________'
         assertEqual(board((0, 6), (1, 7)), ans)
 
     ___ test_attack_true1
@@ -53,19 +53,19 @@ c_ QueenAttackTest(unittest.TestCase):
     # If either board or can_attack are called with an invalid board position
     # they should raise a ValueError with a meaningful error message.
     ___ test_invalid_position_board
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             board((0, 0), (7, 8))
 
     ___ test_invalid_position_can_attack
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             can_attack((0, 0), (7, 8))
 
     ___ test_queens_same_position_board
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             board((2, 2), (2, 2))
 
     ___ test_queens_same_position_can_attack
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             can_attack((2, 2), (2, 2))
 
 

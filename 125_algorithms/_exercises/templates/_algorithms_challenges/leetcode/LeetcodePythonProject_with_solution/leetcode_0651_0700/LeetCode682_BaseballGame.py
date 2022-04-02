@@ -3,8 +3,8 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ calPoints  ops):
+c_ Solution(o..
+    ___ calPoints  ops
         """
         :type ops: List[str]
         :rtype: int

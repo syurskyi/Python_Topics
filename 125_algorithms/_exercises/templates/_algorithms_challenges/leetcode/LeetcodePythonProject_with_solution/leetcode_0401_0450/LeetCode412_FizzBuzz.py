@@ -4,10 +4,10 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ fizzBuzz  n):
+c_ Solution(o..
+    ___ fizzBuzz  n
         result    # list
-        ___ num __ r..(1, n+1):
+        ___ num __ r..(1, n+1
             __ num % 15 __ 0:
                 result.a..('FizzBuzz')
             ____ num % 5 __ 0:

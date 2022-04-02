@@ -1,7 +1,7 @@
 ___ squareroot
     data = i..(input())
     result = ''
-    ___ i __ r..(data):
+    ___ i __ r..(data
         r = 1
         v,steps = map(i.., input().s..())
         w.... steps > 0:

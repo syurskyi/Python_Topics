@@ -4,8 +4,8 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isValidSerialization  preorder):
+c_ Solution(o..
+    ___ isValidSerialization  preorder
         __ n.. preorder: r.. F..
         nodes = preorder.s..(',')
         stack    # list
@@ -17,4 +17,4 @@ c_ Solution(o..):
                 stack.pop()
                 stack.pop()
                 stack.a..('#')
-        r.. stack __ ['#']
+        r.. stack __  '#'

@@ -5,20 +5,20 @@ Created on Mar 9, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ longestConsecutive  root):
+c_ Solution(o..
+    ___ longestConsecutive  root
         __ n.. root: r.. 0
         result = [1]
         helper(root, 1, result)
         r.. result[0]
     
-    ___ helper  root, length, result):
+    ___ helper  root, length, result
         __ n.. root.left a.. n.. root.right:
             result[0] = m..(result[0], length)
             r..

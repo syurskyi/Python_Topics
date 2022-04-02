@@ -3,7 +3,7 @@ _______ unittest
 ____ triangle _______ Triangle, TriangleError
 
 
-c_ TriangleTests(unittest.TestCase):
+c_ TriangleTests(unittest.TestCase
     ___ test_equilateral_triangles_have_equal_sides
         assertEqual(Triangle(2, 2, 2).kind(), "equilateral")
 

@@ -4,15 +4,15 @@ Created on Aug 28, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ reverseWords  s):
+c_ Solution(o..
+    ___ reverseWords  s
         """
         :type s: str
         :rtype: str
         """
         res = ''
         prev = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c __ ' ':
                 tmpRes = reverse(s, prev, i-1)
                 res += tmpRes + ' '
@@ -21,7 +21,7 @@ c_ Solution(o..):
         res += tmpRes
         r.. res
     
-    ___ reverse  s, i, j):
+    ___ reverse  s, i, j
         res = ''
         w.... i <= j:
             res += s[j]

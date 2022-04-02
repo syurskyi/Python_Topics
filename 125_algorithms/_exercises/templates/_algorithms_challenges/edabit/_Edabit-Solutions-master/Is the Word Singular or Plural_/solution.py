@@ -1,4 +1,4 @@
-___ is_plural(word):
+___ is_plural(word
     __ word[-1] __ "s":
         r.. T..
     ____:

@@ -1,7 +1,7 @@
 c_ Solution:
     # @param {character[][]} grid
     # @return {integer}
-    ___ numIslands  grid):
+    ___ numIslands  grid
         islands = s..()  # coordinates of 1s (set of tuples)
         res = 0
         n = l..(grid)
@@ -10,14 +10,14 @@ c_ Solution:
         m = l..(grid[0])
         __ m __ 0:
             r.. 0
-        ___ y __ r..(n):
-            ___ x __ r..(m):
+        ___ y __ r..(n
+            ___ x __ r..(m
                 __ grid[y][x] __ '1' a.. (x, y) n.. __ islands:
                     probe(grid, x, y, m, n)
                     res += 1
         r.. res
 
-    ___ probe  grid, x, y, m, n):
+    ___ probe  grid, x, y, m, n
         """
         Probe right and down
         """

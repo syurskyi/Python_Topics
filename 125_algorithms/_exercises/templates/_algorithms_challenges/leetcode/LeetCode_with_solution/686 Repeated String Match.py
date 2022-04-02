@@ -15,9 +15,9 @@ _______ math
 
 
 c_ Solution:
-    ___ repeatedStringMatch  A, B):
+    ___ repeatedStringMatch  A, B
         r = math.ceil(l..(B) / l..(A))
-        ___ count __ (r, r + 1):  # r + 1 when len(B) % len(A) == 0
+        ___ count __ (r, r + 1  # r + 1 when len(B) % len(A) == 0
             __ B __ A * count:
                 r.. count
 
@@ -27,8 +27,8 @@ c_ Solution:
         ___ i __ r..(l..(A)):
             j = 0
             count = 0
-            w.... j < l..(B):
-                __ i + j - count * l..(A) >= l..(A):
+            w.... j < l..(B
+                __ i + j - count * l..(A) >= l..(A
                     count += 1
                 idx = i + j - count * l..(A)
                 __ A[idx] __ B[j]:
@@ -36,7 +36,7 @@ c_ Solution:
                 ____:
                     _____
 
-            __ j __ l..(B):
+            __ j __ l..(B
                 r.. count + 1
 
         r.. -1

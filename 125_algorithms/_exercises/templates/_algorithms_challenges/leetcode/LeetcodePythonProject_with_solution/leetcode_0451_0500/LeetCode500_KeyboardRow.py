@@ -4,8 +4,8 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findWords  words):
+c_ Solution(o..
+    ___ findWords  words
         """
         :type words: List[str]
         :rtype: List[str]
@@ -19,7 +19,7 @@ c_ Solution(o..):
             ind = -1
             valid = T..
             ___ c __ word:
-                ___ i, set0 __ e..(sets):
+                ___ i, set0 __ e..(sets
                     __ c.l.. __ set0:
                         __ ind __ -1:
                             ind = i

@@ -23,18 +23,18 @@ Become a PyBites ninja!
 
 '''
 _______ s__
-___ tail(filepath, n):
+___ tail filepath  n
     """Similate Unix' tail -n, read in filepath, parse it into a list,
        strip newlines and return a list of the last n lines"""
     ___
-        fo = open(filepath, 'r')
+        fo = o.. filepath, 'r')
     ______:
         print("problem opening file")
     contents    # list
     ___ line __ fo.readlines
         contents.a..(line.strip())
     fo.close()
-    r.. contents[-n:]
+    r.. contents -n|
 
 
 

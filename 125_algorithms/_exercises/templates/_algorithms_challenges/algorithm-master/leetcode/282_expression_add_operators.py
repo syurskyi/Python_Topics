@@ -6,7 +6,7 @@ in product case, needs to remove product in last recursion, and adds the product
 
 
 c_ Solution:
-    ___ addOperators  s, target):
+    ___ addOperators  s, target
         """
         :type s: str
         :type target: int
@@ -20,11 +20,11 @@ c_ Solution:
         dfs(s, 0, target, 0, 0, ans, [])
         r.. ans
 
-    ___ dfs  s, start, target, val, multi, ans, path):
+    ___ dfs  s, start, target, val, multi, ans, path
         __ start __ l..(s) a.. target __ val:
             ans.a..(''.j..(path))
             r..
-        __ start >= l..(s):
+        __ start >= l..(s
             r..
 
         ___ i __ r..(start, l..(s)):
@@ -39,6 +39,6 @@ c_ Solution:
                 dfs(s, i + 1, target, a, a, ans, [sa])
                 _____
 
-            dfs(s, i + 1, target, val + a, a, ans, path + ['+', sa])
-            dfs(s, i + 1, target, val - a, -a, ans, path + ['-', sa])
-            dfs(s, i + 1, target, val - multi + multi * a, multi * a, ans, path + ['*', sa])
+            dfs(s, i + 1, target, val + a, a, ans, path +  '+', sa])
+            dfs(s, i + 1, target, val - a, -a, ans, path +  '-', sa])
+            dfs(s, i + 1, target, val - multi + multi * a, multi * a, ans, path +  '*', sa])

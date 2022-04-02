@@ -1,4 +1,4 @@
-___ is_iterable(thing):
+___ is_iterable(thing
     ___
         i..(thing)
     ______ T..:
@@ -7,7 +7,7 @@ ___ is_iterable(thing):
         r.. T..
 
 
-___ flatten(iterable):
+___ flatten(iterable
     """Flatten a list of lists."""
     flattened    # list
     ___ item __ iterable:

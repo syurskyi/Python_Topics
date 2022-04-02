@@ -15,10 +15,10 @@ Each letter in pattern must map to a word with length that is at least 1.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ wordPattern  pattern, s):
+c_ Solution(o..
+    ___ wordPattern  pattern, s
         lst = s.s..(" ")
-        __ l..(pattern) != l..(lst):
+        __ l..(pattern) != l..(lst
             r.. F..
 
         char2word    # dict
@@ -38,20 +38,20 @@ c_ Solution(o..):
         r.. T..
 
 
-c_ OneToOneMap(o..):
-    ___ - ):
+c_ OneToOneMap(o..
+    ___ -
         m    # dict  # keep a single map
 
-    ___ s..  a, b):
+    ___ s..  a, b
         m[a] = b
         m[b] = a
 
-    ___ get  a):
+    ___ get  a
         r.. m.get(a)
 
 
-c_ SolutionError(o..):
-    ___ wordPattern  pattern, s..):
+c_ SolutionError(o..
+    ___ wordPattern  pattern, s..
         """
         May not always work due to OneToOneMap implementation in the case that a word is 1-letter.
 
@@ -61,7 +61,7 @@ c_ SolutionError(o..):
         """
         m = OneToOneMap()
         lst = s...s..(" ")
-        __ l..(pattern) != l..(lst):
+        __ l..(pattern) != l..(lst
             r.. F..
 
         ___ i __ x..(l..(pattern)):

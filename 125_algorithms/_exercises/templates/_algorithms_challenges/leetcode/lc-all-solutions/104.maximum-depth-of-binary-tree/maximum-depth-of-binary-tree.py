@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ maxDepth  root):
+c_ Solution(o..
+  ___ maxDepth  root
     """
     :type root: TreeNode
     :rtype: int

@@ -12,7 +12,7 @@ STATION = n..("Station", "ID Date Value")
 
 TMP = '/tmp'
 LOCAL_FILE = os.path.j..('/tmp', 'weather-ann-arbor.csv')
-__ n.. os.path.isfile(LOCAL_FILE):
+__ n.. os.path.isfile(LOCAL_FILE
     urllib.request.urlretrieve(DATA_FILE, LOCAL_FILE)
 
 
@@ -49,38 +49,38 @@ ___ high_low_record_breakers_for_2015
        temperatures
        * Return those as STATION namedtuples, (high_2015, low_2015)
     """
-    w__ open(LOCAL_FILE) __ f:
+    w__ o.. LOCAL_FILE) __ f:
         the_data = s..([{
-            'id': x['ID'],
-            'date': d__.strptime(x['Date'], '%Y-%m-%d').date(),
-            'element': x['Element'],
-            'value': i..(x['Data_Value'])
-        } ___ x __ csv.DictReader(f) __ n.. __.m..(r'\d{4}-02-29', x['Date'])],
-            key=l.... x: (x['id'] + x['date'].s..('%m%d%Y')))
-    dataset = [{'id': x['id'],
-                'monthday': x['date'].s..('%m%d'),
-                'year': x['date'].year,
-                'element': x['element'],
-                'value': x['value']
+            'id': x 'ID' ,
+            'date': d__.strptime(x 'Date' , '%Y-%m-%d').date(),
+            'element': x 'Element' ,
+            'value': i..(x 'Data_Value' )
+        } ___ x __ csv.DictReader(f) __ n.. __.m..(r'\d{4}-02-29', x 'Date' )],
+            key=l.... x: (x 'id'  + x 'date' .s..('%m%d%Y')))
+    dataset = [{'id': x 'id' ,
+                'monthday': x 'date' .s..('%m%d'),
+                'year': x 'date' .year,
+                'element': x 'element' ,
+                'value': x 'value'
                 } ___ x __ the_data]
 
-    data_before_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] < 2015 a.. x['element'] __ 'TMIN').drop(
-        ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
-        ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'mina'})
+    data_before_2015_left = pd.DataFrame(x ___ x __ dataset __ x 'year'  < 2015 a.. x 'element'  __ 'TMIN').drop(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'mina'})
 
-    data_before_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] < 2015 a.. x['element'] __ 'TMAX').drop(
-        ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
-        ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'maxa'})
+    data_before_2015_right = pd.DataFrame(x ___ x __ dataset __ x 'year'  < 2015 a.. x 'element'  __ 'TMAX').drop(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'maxa'})
 
     early_dataset = data_before_2015_left.j..(data_before_2015_right, lsuffix='_l', rsuffix='_r')
 
-    data_for_2015_left = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 a.. x['element'] __ 'TMIN').drop(
-        ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
-        ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'minb'})
+    data_for_2015_left = pd.DataFrame(x ___ x __ dataset __ x 'year'  __ 2015 a.. x 'element'  __ 'TMIN').drop(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'minb'})
 
-    data_for_2015_right = pd.DataFrame(x ___ x __ dataset __ x['year'] __ 2015 a.. x['element'] __ 'TMAX').drop(
-        ['element', 'year'], axis=1).set_index(['id', 'monthday']).groupby(
-        ['id', 'monthday']).m..(level='monthday').rename(columns={'value': 'maxb'})
+    data_for_2015_right = pd.DataFrame(x ___ x __ dataset __ x 'year'  __ 2015 a.. x 'element'  __ 'TMAX').drop(
+         'element', 'year' , axis=1).set_index( 'id', 'monthday' ).groupby(
+         'id', 'monthday' ).m..(level='monthday').rename(columns={'value': 'maxb'})
 
     late_dataset = data_for_2015_left.j..(data_for_2015_right)
 
@@ -89,10 +89,10 @@ ___ high_low_record_breakers_for_2015
     result = {'min': [], 'max': []}
     ___ row __ compare_set.itertuples
         __ row.mina > row.minb:
-            result['min'].a..(
+            result 'min' .a..(
                 STATION(row.Index[0], d__.strptime _*2015{row.Index[1]}', '%Y%m%d').date(), row.minb / 10.0))
         __ row.maxa < row.maxb:
-            result['max'].a..(
+            result 'max' .a..(
                 STATION(row.Index[0], d__.strptime _*2015{row.Index[1]}', '%Y%m%d').date(), row.maxb / 10.0))
 
-    r.. m..(result['max'], key=l.... x: x.Value), m..(result['min'], key=l.... x: x.Value)
+    r.. m..(result 'max' , key=l.... x: x.Value), m..(result 'min' , key=l.... x: x.Value)

@@ -6,8 +6,8 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ MovingAverage(o..):
-    ___ - , size):
+c_ MovingAverage(o..
+    ___ - , size
         """
         Initialize your data structure here.
         :type size: int
@@ -16,7 +16,7 @@ c_ MovingAverage(o..):
         q = d..()
         s.. = 0
 
-    ___ next  val):
+    ___ next  val
         """
         :type val: int
         :rtype: float

@@ -58,7 +58,7 @@ c_ Solution:
         """
         x, y = 0, 0
         i = 0
-        ___ _ __ r..(4):
+        ___ _ __ r..(4
             ___ cmd __ instructions:
                 __ cmd __ "G":
                     dx, dy = dirs[i]

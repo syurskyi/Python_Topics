@@ -12,8 +12,8 @@ Minimize the total number of operations.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ moveZeroes  nums):
+c_ Solution(o..
+    ___ moveZeroes  nums
         """
         Two pointers at the left side
         Pivot
@@ -25,8 +25,8 @@ c_ Solution(o..):
                 nums[left], nums[i] = nums[i], nums[left]
 
 
-c_ SolutionCount(o..):
-    ___ moveZeroes  nums):
+c_ SolutionCount(o..
+    ___ moveZeroes  nums
         """
         In-place
         :type nums: List[int]

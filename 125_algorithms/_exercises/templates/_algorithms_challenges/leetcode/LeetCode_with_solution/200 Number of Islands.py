@@ -23,10 +23,10 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    ___ numIslands  grid):
+    ___ numIslands  grid
         """
         :type grid: list[list[str]]
         :rtype: int
@@ -40,15 +40,15 @@ c_ Solution:
 
         cnt = 0
         visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ n.. visited[i][j] a.. grid[i][j] __ "1":
                     dfs(grid, i, j, visited)
                     cnt += 1
 
         r.. cnt
 
-    ___ dfs  grid, i, j, visited):
+    ___ dfs  grid, i, j, visited
         """
         dfs to mark visited
         """

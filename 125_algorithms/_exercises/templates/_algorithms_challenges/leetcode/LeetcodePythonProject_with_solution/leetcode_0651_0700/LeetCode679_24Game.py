@@ -3,8 +3,8 @@ Created on Oct 19, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ judgePoint24  nums):
+c_ Solution(o..
+    ___ judgePoint24  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -12,13 +12,13 @@ c_ Solution(o..):
         hashmap    # dict
         r.. helper(nums, hashmap)
     
-    ___ helper  nums, hashmap):
+    ___ helper  nums, hashmap
         __ l..(nums) __ 1:
             r.. abs(nums[0]-24) <= 0.0001
         nums = s..(nums)
         __ ''.j..(s..(nums) + ',') __ hashmap:
             r.. F..
-        ___ i __ r..(l..(nums)-1):
+        ___ i __ r..(l..(nums)-1
             ___ j __ r..(i+1, l..(nums)):
                 a = nums[i]
                 b = nums[j]

@@ -13,8 +13,8 @@
 # Test case 1 - when iterables are of equal length
 ___ test_case1
     list1 = [ 1, 2, 3]
-    list2 = [ 'a', 'b', 'c']
-    list3 = [ 'red', 'blue', 'green']
+    list2 = [ 'a', 'b', 'c'
+    list3 = [ 'red', 'blue', 'green'
 
     result = z..(list1, list2, list3)
     print(t..(result))
@@ -26,8 +26,8 @@ ___ test_case1
 # Test case 2 - when iterables are of unequal length
 ___ test_case2
     list1 = [ 1, 2, 3]
-    list2 = [ 'a', 'b', 'c']
-    list3 = [ 'red', 'blue']
+    list2 = [ 'a', 'b', 'c'
+    list3 = [ 'red', 'blue'
 
     result = z..(list1, list2, list3)
     print(t..(result))

@@ -15,7 +15,7 @@ index 0 to 1, then 3 steps to the last index.)
 """
 
 c_ Solution:
-    ___ jump  nums):
+    ___ jump  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -30,7 +30,7 @@ c_ Solution:
         w.... end < n - 1:
             res += 1
             max_end = end  # `end` for the next loop
-            ___ i __ r..(start, end + 1):
+            ___ i __ r..(start, end + 1
                 __ i + nums[i] > max_end:
                     max_end = i + nums[i]
                     reached = T..

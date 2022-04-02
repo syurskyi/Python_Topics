@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ lengthLongestPath  input):
+c_ Solution(o..
+  ___ lengthLongestPath  input
     """
     :type input: str
     :rtype: int

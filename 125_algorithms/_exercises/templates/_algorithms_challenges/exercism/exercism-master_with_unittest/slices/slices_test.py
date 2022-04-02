@@ -11,7 +11,7 @@ ____ slices _______ slices
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
 
-c_ SeriesTest(unittest.TestCase):
+c_ SeriesTest(unittest.TestCase
     ___ test_slices_of_one_from_one
         assertEqual(slices("1", 1), ["1"])
 
@@ -28,19 +28,19 @@ c_ SeriesTest(unittest.TestCase):
         assertEqual(slices("777777", 3), ["777", "777", "777", "777"])
 
     ___ test_slice_length_is_too_large
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             slices("12345", 6)
 
     ___ test_slice_length_cannot_be_zero
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             slices("12345", 0)
 
     ___ test_slice_length_cannot_be_negative
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             slices("123", -1)
 
     ___ test_empty_series_is_invalid
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             slices("", 1)
 
     # Utility functions
@@ -50,7 +50,7 @@ c_ SeriesTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 

@@ -24,8 +24,8 @@ Given a particular n >= 1, find out how much money you need to have to guarantee
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ getMoneyAmount  n):
+c_ Solution(o..
+    ___ getMoneyAmount  n
         """
         Let F[i][j] be the min cost of guessing [i, j)
         F[i][j] = min(
@@ -45,8 +45,8 @@ c_ Solution(o..):
         """
         N = n + 1  # guessing [1, N), where N = n + 1
         F = [[0 ___ _ __ x..(N+1)] ___ _ __ x..(N+1)]
-        ___ i __ x..(n, 0, -1):
-            ___ j __ x..(i+2, N+1):
+        ___ i __ x..(n, 0, -1
+            ___ j __ x..(i+2, N+1
                 F[i][j] = m..(
                     k + m..(F[i][k], F[k+1][j])
                     ___ k __ x..(i, j)
@@ -54,7 +54,7 @@ c_ Solution(o..):
 
         r.. F[1][N]
 
-    ___ getMoneyAmountError  n):
+    ___ getMoneyAmountError  n
         """
         Cost for number. Guarantee a win.
         Let C[i] be the min requirement of the number of wrong guesses
@@ -71,7 +71,7 @@ c_ Solution(o..):
         """
         C = [0 ___ _ __ x..(n+1)]
         F = [0 ___ _ __ x..(n+1)]
-        ___ i __ x..(2, n+1):
+        ___ i __ x..(2, n+1
             C[i] = m..(1 + m..(C[k-1], C[i-k]) ___ k __ x..(1, i+1))
             F[i] = m..(k + m..(F[k-1], k*C[i-k] + F[i-k]) ___ k __ x..(1, i+1))
 

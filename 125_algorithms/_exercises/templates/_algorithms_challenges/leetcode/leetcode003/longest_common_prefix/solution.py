@@ -4,8 +4,8 @@ strings.
 """
 
 
-c_ Solution(o..):
-    ___ longestCommonPrefix  strs):
+c_ Solution(o..
+    ___ longestCommonPrefix  strs
         """
         :type strs: List[str]
         :rtype: str
@@ -15,7 +15,7 @@ c_ Solution(o..):
         res = strs[0]
         ___ s __ strs[1:]:
             n = l..(s)
-            ___ i, c __ e..(res):
+            ___ i, c __ e..(res
                 __ i >= n o. res[i] != s[i]:
                     res = res[:i]
                     _____

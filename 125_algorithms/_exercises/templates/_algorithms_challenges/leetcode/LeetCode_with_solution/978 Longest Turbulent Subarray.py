@@ -40,7 +40,7 @@ c_ Solution:
         flag = N..  # 0: expecting <, 1: expecting >
         ret = 1
         cur = 1
-        ___ i __ r..(l..(A)-1):
+        ___ i __ r..(l..(A)-1
             __ A[i] __ A[i+1]:
                 flag = N..
                 cur = 1

@@ -16,14 +16,14 @@ __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
 
-c_ Solution(o..):
-    ___ oddEvenList  head):
+c_ Solution(o..
+    ___ oddEvenList  head
         """
         :type head: ListNode
         :rtype: ListNode
@@ -51,7 +51,7 @@ c_ Solution(o..):
 
         r.. head
 
-    ___ oddEvenListError  head):
+    ___ oddEvenListError  head
         """
         Wrongly move by node value
         :type head: ListNode

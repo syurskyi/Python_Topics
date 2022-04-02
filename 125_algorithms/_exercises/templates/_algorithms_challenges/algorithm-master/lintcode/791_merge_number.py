@@ -6,7 +6,7 @@ c_ Solution:
     @param A: the numbers
     @return: the minimum cost
     """
-    ___ mergeNumber  A):
+    ___ mergeNumber  A
         ans = 0
         __ n.. A:
             r.. ans

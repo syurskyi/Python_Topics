@@ -1,9 +1,9 @@
-c_ Allergies(o..):
+c_ Allergies(o..
 
-    ___ - , number):
+    ___ - , number
         p..
 
-    ___ is_allergic_to  s__):
+    ___ is_allergic_to  s__
         p..
 
     $

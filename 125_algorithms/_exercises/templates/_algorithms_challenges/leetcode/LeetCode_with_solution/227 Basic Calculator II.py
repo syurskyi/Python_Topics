@@ -18,7 +18,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ calculate  s):
+    ___ calculate  s
         """
         :type s: str
         :rtype: int
@@ -27,17 +27,17 @@ c_ Solution:
         post = infix2postfix(lst)
         r.. eval_postfix(post)
 
-    ___ p..  s):
+    ___ p..  s
         """
         return tokens
         """
         i = 0
         ret    # list
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i] __ " ":
                 i += 1
 
-            ____ s[i] __ ("(", ")", "+", "-", "*", "/"):
+            ____ s[i] __ ("(", ")", "+", "-", "*", "/"
                 ret.a..(s[i])
                 i += 1
 
@@ -49,7 +49,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ infix2postfix  lst):
+    ___ infix2postfix  lst
         # operator stacks rather than operand
         stk    # list  # stk only stores operators in strictly increasing precedence
         ret    # list
@@ -63,7 +63,7 @@ c_ Solution:
                     ret.a..(stk.pop())
                 stk.pop()
             ____:  # generalized to include * and /
-                w.... stk a.. precendece(elt) <= precendece(stk[-1]):
+                w.... stk a.. precendece(elt) <= precendece(stk[-1]
                     ret.a..(stk.pop())
 
                 stk.a..(elt)
@@ -73,19 +73,19 @@ c_ Solution:
 
         r.. ret
 
-    ___ precendece  op):
-        __ op __ ("(", ")"):
+    ___ precendece  op
+        __ op __ ("(", ")"
             r.. 0
-        __ op __ ("+", "-"):
+        __ op __ ("+", "-"
             r.. 1
-        __ op __ ("*", "/"):
+        __ op __ ("*", "/"
             r.. 2
         r.. 3
 
-    ___ eval_postfix  post):
+    ___ eval_postfix  post
         stk    # list
         ___ elt __ post:
-            __ elt __ ("+", "-", "*", "/"):
+            __ elt __ ("+", "-", "*", "/"
                 b = i..(stk.pop())
                 a = i..(stk.pop())
                 __ elt __ "+":

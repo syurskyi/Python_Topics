@@ -24,7 +24,7 @@ c_ User:
        (Django's User model inspired us)
     """
 
-    ___ - , first_name, last_name):
+    ___ - , first_name, last_name
         """Constructor, base values"""
         first_name = first_name
         last_name = last_name

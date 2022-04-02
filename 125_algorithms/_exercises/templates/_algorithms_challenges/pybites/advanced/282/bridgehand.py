@@ -12,18 +12,18 @@ SSP = {2: 1, 1: 2, 0: 3}  # cards in a suit -> short suit points
 
 
 c_ BridgeHand:
-    ___ - , cards: Sequence[Card]):
+    ___ - , cards: Sequence[Card]
         """
         Process and store the sequence of Card objects passed in input.
         Raise TypeError if not a sequence
         Raise ValueError if any element of the sequence is not an instance
         of Card, or if the number of elements is not 13
         """
-        __ n.. isi..(cards,seq):
+        __ n.. isi..(cards,seq
             r.. T..("Not a sequence")
         
 
-        __ n.. a..(isi..(card,Card) ___ card __ cards):
+        __ n.. a..(isi..(card,Card) ___ card __ cards
             r.. ValueError("all values in Seuqence must be instance of Card")
 
 
@@ -136,7 +136,7 @@ c_ BridgeHand:
 
                 cards = s..(cards,key=l.... x: x.value)
                 __ l..(cards) __ 2:
-                    __ (cards[0] __ Rank.A a.. cards[1] !=Rank.K) o. (cards[0] __ Rank.K):
+                    __ (cards[0] __ Rank.A a.. cards[1] !=Rank.K) o. (cards[0] __ Rank.K
                         losing_tricks += 1
                     ____ cards[0] != Rank.A o.  cards[1] != Rank.K:
                         losing_tricks += 2
@@ -144,9 +144,9 @@ c_ BridgeHand:
                     cards = cards[:3]
 
                     __ cards != [Rank.A,Rank.K,Rank.Q]:
-                        __ ((cards[0] __ Rank.A) a.. (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K a.. cards[1] __ Rank.Q):
+                        __ ((cards[0] __ Rank.A) a.. (cards[1] __ (Rank.K,Rank.Q))) o. (cards[0] __ Rank.K a.. cards[1] __ Rank.Q
                             losing_tricks += 1
-                        ____ cards[0] __ (Rank.A,Rank.K,Rank.Q):
+                        ____ cards[0] __ (Rank.A,Rank.K,Rank.Q
                             losing_tricks += 2
                         ____:
                             losing_tricks += 3

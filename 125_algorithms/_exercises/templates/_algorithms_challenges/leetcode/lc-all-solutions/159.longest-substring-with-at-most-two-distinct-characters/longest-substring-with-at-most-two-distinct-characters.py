@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ lengthOfLongestSubstringTwoDistinct  s):
+c_ Solution(o..
+  ___ lengthOfLongestSubstringTwoDistinct  s
     """
     :type s: str
     :rtype: int
     """
     r.. lengthOfLongestSubstringKDistinct(s, 2)
 
-  ___ lengthOfLongestSubstringKDistinct  s, k):
+  ___ lengthOfLongestSubstringKDistinct  s, k
     """
     :type s: str
     :type k: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
     score = 0
     chashmap    # dict
     ___ i __ r..(0, l..(s)):
-      w.... j < l..(s) a.. (score < k o. chashmap.get(s[j], 0) != 0):
+      w.... j < l..(s) a.. (score < k o. chashmap.get(s[j], 0) != 0
         __ chashmap.get(s[j], 0) __ 0:
           score += 1
         chashmap[s[j]] = chashmap.get(s[j], 0) + 1

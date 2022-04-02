@@ -23,14 +23,14 @@
 #        :rtype List[NestedInteger]
 #        """
 
-c_ Solution(o..):
-  ___ depthSum  nestedList):
+c_ Solution(o..
+  ___ depthSum  nestedList
     """
     :type nestedList: List[NestedInteger]
     :rtype: int
     """
 
-    ___ helper(root, depth):
+    ___ helper(root, depth
       res = 0
       ___ nested __ root:
         __ nested.isInteger

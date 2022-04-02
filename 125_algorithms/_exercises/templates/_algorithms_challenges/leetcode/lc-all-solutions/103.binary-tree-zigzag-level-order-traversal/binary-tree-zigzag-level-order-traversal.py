@@ -7,8 +7,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ zigzagLevelOrder  root):
+c_ Solution(o..
+  ___ zigzagLevelOrder  root
     """
     :type root: TreeNode
     :rtype: List[List[int]]

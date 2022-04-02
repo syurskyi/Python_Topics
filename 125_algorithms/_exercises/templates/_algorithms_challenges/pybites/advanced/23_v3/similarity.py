@@ -17,11 +17,11 @@ urlretrieve(
 )
 
 
-___ _get_tags(tempfile=TEMPFILE):
+___ _get_tags(tempfile=TEMPFILE
     """Helper to parse all tags from a static copy of PyBites' feed,
        providing this here so you can focus on difflib"""
-    w__ open(tempfile) __ f:
-        content = f.read().l..
+    w__ o.. tempfile) __ f:
+        content = f.r...l..
     # take a small subset to keep it performant
     tags = TAG_HTML.f..(content)
     tags = [tag ___ tag __ tags __ l..(tag) > MIN_TAG_LEN]
@@ -32,6 +32,6 @@ ___ get_similarities(tags_ N..
     """Should return a list of similar tag pairs (tuples)"""
     tags = tags o. _get_tags()
     # do your thing ...
-    ___ a, b __ permutations(tags, 2):
+    ___ a, b __ permutations(tags, 2
         __ SequenceMatcher(a=a, b=b).ratio() >= SIMILAR:
             y.. a, b

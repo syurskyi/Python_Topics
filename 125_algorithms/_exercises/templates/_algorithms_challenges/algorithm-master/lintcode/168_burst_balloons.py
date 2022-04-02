@@ -3,7 +3,7 @@ c_ Solution:
     @param: V: A list of integer
     @return: An integer, maximum coins
     """
-    ___ maxCoins  V):
+    ___ maxCoins  V
         __ n.. V:
             r.. 0
 
@@ -21,14 +21,14 @@ c_ Solution:
         dp = [[0] * n ___ _ __ r..(n)]
         # pi = [[0] * n for _ in range(n)]
 
-        ___ i __ r..(n - 1 - 2, -1, -1):
-            ___ j __ r..(i + 2, n):
+        ___ i __ r..(n - 1 - 2, -1, -1
+            ___ j __ r..(i + 2, n
 
                 """
                 leave last balloon `k` to burst
                 `i + 1 <= k <= j - 1`
                 """
-                ___ k __ r..(i + 1, j):
+                ___ k __ r..(i + 1, j
                     dp[i][j] = m..(
                         dp[i][j],
                         dp[i][k] + dp[k][j] + V[i] * V[k] * V[j]

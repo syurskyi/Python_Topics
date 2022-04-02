@@ -1,7 +1,7 @@
 ____ functools _______ wraps
 ____ time _______ time
 
-___ timer(func):
+___ timer(func
     @wraps(func)
     ___ wrapper $ $$:
         start = time()
@@ -11,7 +11,7 @@ ___ timer(func):
         r.. answer
     r.. wrapper
 
-___ tracer(func):
+___ tracer(func
     @wraps(func)
     ___ wrapper $ $$:
         print('Entering...')

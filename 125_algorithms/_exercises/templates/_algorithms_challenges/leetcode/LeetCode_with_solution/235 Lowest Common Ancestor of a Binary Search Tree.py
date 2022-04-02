@@ -19,14 +19,14 @@ __author__ = 'Daniel'
 
 
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ lowestCommonAncestor  root, p, q):
+    ___ lowestCommonAncestor  root, p, q
         """
 
         :type root: TreeNode

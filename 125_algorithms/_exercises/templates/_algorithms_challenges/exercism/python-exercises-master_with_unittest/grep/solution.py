@@ -1,4 +1,4 @@
-___ matches(line, pattern, flags):
+___ matches(line, pattern, flags
     __ '-i' __ flags:  # case-insensitive
         line = line.l..
         pattern = pattern.l..
@@ -13,7 +13,7 @@ ___ matches(line, pattern, flags):
     r.. pattern __ line
 
 
-___ format_files(matched_lines):
+___ format_files(matched_lines
     result = ''
 
     ___ file_name, _, _ __ matched_lines:
@@ -23,7 +23,7 @@ ___ format_files(matched_lines):
     r.. result
 
 
-___ format_lines(matched_lines, files, flags):
+___ format_lines(matched_lines, files, flags
     result    # list
 
     ___ file_name, line_number, line __ matched_lines:
@@ -42,13 +42,13 @@ ___ format_lines(matched_lines, files, flags):
     r.. ''.j..(result)
 
 
-___ grep(pattern, files, flags=''):
+___ grep(pattern, files, flags=''
     matched_lines    # list
 
     ___ file_name __ files:
-        w__ open(file_name) __ f:
-            ___ line_number, line __ e..(f.readlines(), start=1):
-                __ matches(line, pattern, flags):
+        w__ o.. file_name) __ f:
+            ___ line_number, line __ e..(f.r.., start=1
+                __ matches(line, pattern, flags
                     matched_lines.a..((file_name, line_number, line))
 
     __ '-l' __ flags:

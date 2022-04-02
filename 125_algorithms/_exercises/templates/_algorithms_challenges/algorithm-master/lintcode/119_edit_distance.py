@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minDistance  s, t):
+    ___ minDistance  s, t
         """
         :type s: str
         :type t: str
@@ -17,13 +17,13 @@ c_ Solution:
         """
         dp = [[0] * (n + 1) ___ _ __ r..(m + 1)]
 
-        ___ i __ r..(1, m + 1):
+        ___ i __ r..(1, m + 1
             dp[i][0] = i
-        ___ j __ r..(1, n + 1):
+        ___ j __ r..(1, n + 1
             dp[0][j] = j
 
-        ___ i __ r..(1, m + 1):
-            ___ j __ r..(1, n + 1):
+        ___ i __ r..(1, m + 1
+            ___ j __ r..(1, n + 1
                 """
                 no need to init dp[curr][j]
 

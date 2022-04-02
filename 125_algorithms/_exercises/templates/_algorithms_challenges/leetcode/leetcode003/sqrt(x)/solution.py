@@ -1,7 +1,7 @@
 c_ Solution:
     # @param x, an integer
     # @return an integer
-    ___ sqrt  x):
+    ___ sqrt  x
         left = 0
         right = x
         w.... left <= right:

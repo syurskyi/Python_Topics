@@ -3,8 +3,8 @@
 # @return an integer
 # def read4(buf):
 
-c_ Solution(o..):
-  ___ read  buf, n):
+c_ Solution(o..
+  ___ read  buf, n
     """
     :type buf: Destination buffer (List[str])
     :type n: Maximum number of characters to read (int)

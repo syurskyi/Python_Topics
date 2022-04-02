@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minPatches  nums, n):
+c_ Solution(o..
+  ___ minPatches  nums, n
     """
     :type nums: List[int]
     :type n: int

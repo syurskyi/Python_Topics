@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ nextPermutation  nums):
+    ___ nextPermutation  nums
         """
         :type nums: list[int]
         :rtype: list[int]

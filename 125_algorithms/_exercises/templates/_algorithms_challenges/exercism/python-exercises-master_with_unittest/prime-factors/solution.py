@@ -1,4 +1,4 @@
-___ prime_factors(number):
+___ prime_factors(number
     factors    # list
     divisor = 2
     w.... number > 1:

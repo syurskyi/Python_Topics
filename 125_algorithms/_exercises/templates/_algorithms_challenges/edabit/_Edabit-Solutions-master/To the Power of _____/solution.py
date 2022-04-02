@@ -1,2 +1,2 @@
-___ calculate_exponent(num, exp):
+___ calculate_exponent(num, exp
     r.. num ** exp

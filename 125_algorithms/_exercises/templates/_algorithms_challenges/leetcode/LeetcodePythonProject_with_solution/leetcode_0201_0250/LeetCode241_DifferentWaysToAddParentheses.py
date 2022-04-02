@@ -4,15 +4,15 @@ Created on Feb 27, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ diffWaysToCompute  s):
+c_ Solution(o..
+    ___ diffWaysToCompute  s
         """
         :type s: str
         :rtype: List[int]
         """
         res    # list
-        ___ i, c __ e..(s):
-            __ c __ ('+', '-', '*'):
+        ___ i, c __ e..(s
+            __ c __ ('+', '-', '*'
                 res1 = diffWaysToCompute(s[:i])
                 res2 = diffWaysToCompute(s[i+1:])
                 ___ num1 __ res1:

@@ -3,8 +3,8 @@ Created on Feb 11, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ maxProduct  nums):
+c_ Solution(o..
+    ___ maxProduct  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         maxArr, minArr = [0]*n, [0]*n
         maxArr[0], minArr[0] = nums[0], nums[0]
         result = nums[0]
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             num = nums[i]
             __ num > 0:
                 maxArr[i] = m..(maxArr[i-1]*num, num)

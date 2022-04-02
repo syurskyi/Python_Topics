@@ -4,8 +4,8 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ partition  head, x):
+c_ Solution(o..
+  ___ partition  head, x
     """
     :type head: ListNode
     :type x: int

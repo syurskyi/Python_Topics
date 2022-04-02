@@ -1,5 +1,5 @@
-___ to_int(txt):
+___ to_int(txt
     r.. i..(txt)
 	
-___ to_str(num):
+___ to_str(num
     r.. s..(num)

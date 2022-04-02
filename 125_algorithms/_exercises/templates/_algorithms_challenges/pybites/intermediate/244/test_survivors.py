@@ -162,12 +162,12 @@ EXPECTED_OUTPUT_WITH_GAP = """
 """
 
 
-@p__.f..(scope='module')
+?p__.f..(scope='module')
 ___ actual
     r.. [line.rstrip() ___ line __ filter_killed_mutants()]
 
 
-@p__.f..(scope='module')
+?p__.f..(scope='module')
 ___ actual2
     """Same output but filter out test 10 (killed) and 11 (survived),
        to avoid the hardcoded output gets returned from function
@@ -179,13 +179,13 @@ ___ actual2
     r.. [line.rstrip() ___ line __ filter_killed_mutants(output)]
 
 
-___ test_output_matches(actual):
+___ test_output_matches(actual
     expected = [line.rstrip() ___ line __
-                EXPECTED_OUTPUT.s...splitlines()]
+                EXPECTED_OUTPUT.s...s.. ]
     ... actual __ expected
 
 
-___ test_different_output(actual2):
+___ test_different_output(actual2
     expected = [line.rstrip() ___ line __
-                EXPECTED_OUTPUT_WITH_GAP.s...splitlines()]
+                EXPECTED_OUTPUT_WITH_GAP.s...s.. ]
     ... actual2 __ expected

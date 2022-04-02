@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ arrayNesting  nums):
+c_ Solution(o..
+  ___ arrayNesting  nums
     """
     :type nums: List[int]
     :rtype: int
     """
     cache = [0] * l..(nums)
     ans = 0
-    ___ i, start __ e..(nums):
+    ___ i, start __ e..(nums
       __ cache[i]:
         _____
       p = start

@@ -12,7 +12,7 @@ ____ color _______ Color
     ("orange", (255, 128, 0)),
     ("puke", N..),
 ])
-___ test_color_class(color, expected):
+___ test_color_class(color, expected
     c = Color(color)
     ... c.rgb __ expected
 
@@ -25,7 +25,7 @@ ___ test_color_class(color, expected):
     ((0, 128, 0), "#008000"),
     ((255, 128, 0), "#ff8000"),
 ])
-___ test_color_classmethod_rgb2hex(rgb, expected):
+___ test_color_classmethod_rgb2hex(rgb, expected
     ... Color.rgb2hex(rgb) __ expected
 
 
@@ -36,8 +36,8 @@ ___ test_color_classmethod_rgb2hex(rgb, expected):
     ((256, 0, 0)),
 ])
 
-___ test_color_rgb2hex_bad_value(rgb):
-    w__ p__.r..(ValueError):
+___ test_color_rgb2hex_bad_value(rgb
+    w__ p__.r..(ValueError
         Color.rgb2hex(rgb)
 
 
@@ -49,7 +49,7 @@ ___ test_color_rgb2hex_bad_value(rgb):
     ("#008000", (0, 128, 0)),
     ("#ff8000", (255, 128, 0)),
 ])
-___ test_color_classmethod_hex2rgb(hex, expected):
+___ test_color_classmethod_hex2rgb(hex, expected
     ... Color.hex2rgb(hex) __ expected
 
 
@@ -59,8 +59,8 @@ ___ test_color_classmethod_hex2rgb(hex, expected):
     ("#stopit"),
     ("pink"),
 ])
-___ test_color_hex2rgb_bad_value(value):
-    w__ p__.r..(ValueError):
+___ test_color_hex2rgb_bad_value(value
+    w__ p__.r..(ValueError
         Color.hex2rgb(value)
 
 

@@ -3,8 +3,8 @@ Created on Nov 2, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ divide  dividend, divisor):
+c_ Solution(o..
+    ___ divide  dividend, divisor
         """
         :type dividend: int
         :type divisor: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         # num=a_0*2^0+a_1*2^1+a_2*2^2+...+a_n*2^n
         sign = 1
         __ (dividend > 0 a.. divisor < 0) o.\
-            (dividend < 0 a.. divisor > 0):
+            (dividend < 0 a.. divisor > 0
             sign = -1
         __ dividend < 0: dividend = -dividend
         __ divisor < 0: divisor = -divisor
@@ -27,7 +27,7 @@ c_ Solution(o..):
             res = res __ sign > 0 ____ -res
         r.. res
         
-    ___ ldivide  dividend, divisor):
+    ___ ldivide  dividend, divisor
         __ dividend < divisor: r.. 0
         sumVal = divisor
         multiple = 1

@@ -3,15 +3,15 @@ Created on Jun 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ rotate  matrix):
+c_ Solution(o..
+    ___ rotate  matrix
         """
         :type matrix: List[List[int]]
         :rtype: void Do not return anything, modify matrix in-place instead.
         """
         _______ math
         n = l..(matrix)
-        ___ i __ r..(n//2):
+        ___ i __ r..(n//2
             ___ j __ r..(i..(math.ceil(n/2.0))):
                 tmp = matrix[i][j]
                 matrix[i][j] = matrix[n-1-j][i]

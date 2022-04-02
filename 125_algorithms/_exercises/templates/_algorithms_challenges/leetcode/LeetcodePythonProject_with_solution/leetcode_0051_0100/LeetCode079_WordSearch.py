@@ -4,8 +4,8 @@ Created on Jan 24, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ exist  board, word):
+c_ Solution(o..
+    ___ exist  board, word
         """
         :type board: List[List[str]]
         :type word: str
@@ -15,14 +15,14 @@ c_ Solution(o..):
             r.. F..
         m = l..(board)
         n = l..(board[0])
-        ___ i __ r..(m):
-            ___ j __ r..(n):
-                __ helper(board, word, 0, i, j):
+        ___ i __ r..(m
+            ___ j __ r..(n
+                __ helper(board, word, 0, i, j
                     r.. T..
         r.. F..
     
-    ___ helper  board, word, start, i, j):
-        __ i < 0 o. j < 0 o. i >= l..(board) o. j >= l..(board[0]):
+    ___ helper  board, word, start, i, j
+        __ i < 0 o. j < 0 o. i >= l..(board) o. j >= l..(board[0]
             r.. F..
         __ word[start] __ board[i][j]:
             __ start __ l..(word)-1:
@@ -33,7 +33,7 @@ c_ Solution(o..):
             __ helper(board, word, start+1, i+1, j) o.\
                 helper(board, word, start+1, i, j+1) o.\
                 helper(board, word, start+1, i-1, j) o.\
-                helper(board, word, start+1, i, j-1):
+                helper(board, word, start+1, i, j-1
                 result = T..
             board[i][j] = tmp
             __ result:
@@ -42,9 +42,9 @@ c_ Solution(o..):
     
     ___ test
         board = [
-            ['A','B','C','E'],
-            ['S','F','C','S'],
-            ['A','D','E','E'],
+             'A','B','C','E' ,
+             'S','F','C','S' ,
+             'A','D','E','E' ,
         ]
         words = [
             'ABCCED',

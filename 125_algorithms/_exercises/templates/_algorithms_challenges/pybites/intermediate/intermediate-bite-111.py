@@ -15,16 +15,16 @@ _______ json __ j
 
 IPINFO_URL = 'http://ipinfo.io/{ip}/json'
 
-___ get_ip_country_2(ip_address):
+___ get_ip_country_2(ip_address
     response = requests.get(IPINFO_URL.f..(ip=ip_address))
     print(t..(response.text))
     print(response.text)
     jso = j.loads(response.text)
     print(t..(jso))
-    print(jso['country'])
+    print(jso 'country' )
 
 
-___ get_ip_country(ip_address):
+___ get_ip_country(ip_address
     """Receives ip address string, use IPINFO_URL to get geo data,
        parse the json response returning the country code of the IP"""
 
@@ -37,7 +37,7 @@ ___ get_ip_country(ip_address):
     ______ V..
         print("Response did not contain a valid JSON")
 
-    r..(dzejson['country'])
+    r..(dzejson 'country' )
 
 print(get_ip_country_2(ip_address="8.8.8.8"))
 

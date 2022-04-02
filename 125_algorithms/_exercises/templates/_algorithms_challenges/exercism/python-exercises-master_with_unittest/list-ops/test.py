@@ -4,7 +4,7 @@ _______ operator
 _______ list_ops
 
 
-c_ ListOpsTest(unittest.TestCase):
+c_ ListOpsTest(unittest.TestCase
 
     # tests for map
     ___ test_map_square
@@ -115,7 +115,7 @@ c_ ListOpsTest(unittest.TestCase):
 
     ___ test_concat_nothing
         assertEqual(
-            list_ops.concat(['orange', 'apple', 'banana'], N..),
+            list_ops.concat( 'orange', 'apple', 'banana' , N..),
             ["orange", "apple", "banana"])
 
     ___ test_concat_empty

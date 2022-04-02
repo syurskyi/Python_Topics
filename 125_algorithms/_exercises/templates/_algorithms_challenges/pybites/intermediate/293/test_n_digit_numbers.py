@@ -15,10 +15,10 @@ ____ n_digit_numbers _______ n_digit_numbers
     ([-1.1, 2.22, -3.333, 4444, 55555], 4,
      [-1100, 2220, -3333, 4444, 5555]),
 ])
-___ test_n_digit_numbers(input_list, n, expected):
+___ test_n_digit_numbers(input_list, n, expected
     ... n_digit_numbers(input_list, n) __ expected
 
 
 ___ test_invalid_n
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         n_digit_numbers([1, 2, 3], 0)

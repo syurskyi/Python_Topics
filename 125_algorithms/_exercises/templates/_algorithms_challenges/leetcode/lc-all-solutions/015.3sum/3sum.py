@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ threeSum  nums):
+c_ Solution(o..
+  ___ threeSum  nums
     """
     :type nums: List[int]
     :rtype: List[List[int]]

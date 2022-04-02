@@ -4,8 +4,8 @@ Created on Feb 27, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ shortestDistance  words, word1, word2):
+c_ Solution(o..
+    ___ shortestDistance  words, word1, word2
         """
         :type words: List[str]
         :type word1: str
@@ -13,11 +13,11 @@ c_ Solution(o..):
         :rtype: int
         """
         minLen = l..(words)
-        ___ i, word __ e..(words):
-            __ word __ (word1, word2):
+        ___ i, word __ e..(words
+            __ word __ (word1, word2
                 target = word1 __ word __ word2 ____ word2
                 j = i+1
-                w.... j < l..(words):
+                w.... j < l..(words
                     __ words[j] __ target:
                         minLen = m..(minLen, j-i)
                     j+=1

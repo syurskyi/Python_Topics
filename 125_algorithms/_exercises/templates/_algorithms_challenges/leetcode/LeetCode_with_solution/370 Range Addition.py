@@ -4,8 +4,8 @@ Premium question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ getModifiedArray  length, updates):
+c_ Solution(o..
+    ___ getModifiedArray  length, updates
         """
         Brute force: O(kn)
 

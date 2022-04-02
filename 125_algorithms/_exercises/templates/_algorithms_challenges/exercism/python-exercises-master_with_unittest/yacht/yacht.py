@@ -14,5 +14,5 @@ BIG_STRAIGHT = N..
 CHOICE = N..
 
 
-___ score(dice, category):
+___ score(dice, category
     p..

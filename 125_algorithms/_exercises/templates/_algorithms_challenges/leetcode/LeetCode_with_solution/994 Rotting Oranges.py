@@ -46,8 +46,8 @@ c_ Solution:
         """
         m, n = l..(grid), l..(grid[0])
         q    # list
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] __ 2:
                     q.a..((i, j))
 

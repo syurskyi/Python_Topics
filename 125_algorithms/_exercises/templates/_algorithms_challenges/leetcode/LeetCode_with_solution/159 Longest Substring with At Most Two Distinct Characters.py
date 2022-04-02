@@ -6,8 +6,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ lengthOfLongestSubstringTwoDistinct  s):
+c_ Solution(o..
+    ___ lengthOfLongestSubstringTwoDistinct  s
         """
         Sliding Window
         :type s: str

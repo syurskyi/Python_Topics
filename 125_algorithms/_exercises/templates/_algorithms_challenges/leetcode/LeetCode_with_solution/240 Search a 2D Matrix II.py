@@ -21,8 +21,8 @@ Given target = 20, return false.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ searchMatrix  mat, target):
+c_ Solution(o..
+    ___ searchMatrix  mat, target
         """
         Manhattan work
         O(m+n) eliminate a row or a column at a time
@@ -48,8 +48,8 @@ c_ Solution(o..):
         r.. F..
 
 
-c_ SolutionBinSearch(o..):
-    ___ searchMatrix  mat, target):
+c_ SolutionBinSearch(o..
+    ___ searchMatrix  mat, target
         """
         Binary search
 
@@ -71,14 +71,14 @@ c_ SolutionBinSearch(o..):
         col = [mat[i][-1] ___ i __ x..(m)]
         row_by_last = bin_search(col, target, F..)
 
-        ___ i __ r..(row_by_first, row_by_last-1, -1):
+        ___ i __ r..(row_by_first, row_by_last-1, -1
             col = bin_search(mat[i], target)
             __ mat[i][col] __ target:
                 r.. T..
 
         r.. F..
 
-    ___ bin_search  A, t, lower=T..):
+    ___ bin_search  A, t, lower=T..
         lo = 0
         hi = l..(A)
         w.... lo < hi:

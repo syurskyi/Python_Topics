@@ -6,7 +6,7 @@ ____ grains _______ (
 )
 
 
-c_ GrainsTest(unittest.TestCase):
+c_ GrainsTest(unittest.TestCase
     ___ test_square_1
         assertEqual(on_square(1), 1)
         assertEqual(total_after(1), 1)
@@ -36,21 +36,21 @@ c_ GrainsTest(unittest.TestCase):
         assertEqual(total_after(64), 18446744073709551615)
 
     ___ test_square_0_raises_exception
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             on_square(0)
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             total_after(0)
 
     ___ test_square_negative_raises_exception
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             on_square(-1)
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             total_after(-1)
 
     ___ test_square_gt_64_raises_exception
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             on_square(65)
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             total_after(65)
 
 

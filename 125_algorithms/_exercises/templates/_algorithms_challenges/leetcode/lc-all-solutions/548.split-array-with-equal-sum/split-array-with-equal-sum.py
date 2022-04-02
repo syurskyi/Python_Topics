@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ splitArray  nums):
+c_ Solution(o..
+  ___ splitArray  nums
     """
     :type nums: List[int]
     :rtype: bool
@@ -8,7 +8,7 @@ c_ Solution(o..):
     ___ i __ r..(l..(nums)):
       dp[i + 1] = dp[i] + nums[i]
 
-    ___ s..(start, end):
+    ___ s..(start, end
       r.. s..(
         [dp[mid] - dp[start] ___ mid __ r..(start + 1, end) __ dp[mid] - dp[start] __ dp[end + 1] - dp[mid + 1]])
 

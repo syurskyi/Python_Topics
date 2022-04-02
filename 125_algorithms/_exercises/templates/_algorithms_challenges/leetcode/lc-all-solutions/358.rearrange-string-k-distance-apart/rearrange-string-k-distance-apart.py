@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ rearrangeString  s, k):
+c_ Solution(o..
+  ___ rearrangeString  s, k
     """
     :type s: str
     :type k: int
@@ -11,15 +11,15 @@ c_ Solution(o..):
     heap = [(-d[key], key) ___ key __ d]
     heapq.heapify(heap)
     ans    # list
-    w.... l..(ans) < l..(s):
+    w.... l..(ans) < l..(s
       temp    # list
-      ___ _ __ r..(k):
+      ___ _ __ r..(k
         __ n.. heap:
           r.. ""
         freq, c = heapq.heappop(heap)
         freq += 1
         ans.a..(c)
-        __ l..(ans) __ l..(s):
+        __ l..(ans) __ l..(s
           r.. "".j..(ans)
         __ freq < 0:
           temp.a..((freq, c))

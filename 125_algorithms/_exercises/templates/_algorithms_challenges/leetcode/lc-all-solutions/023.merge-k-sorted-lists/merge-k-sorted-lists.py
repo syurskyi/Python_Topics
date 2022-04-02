@@ -8,8 +8,8 @@ _______ heapq
 # overwrite the comparison function, so the node can be comparable
 ListNode.__lt__ = l.... x, y: (x.val < y.val)
 
-c_ Solution(o..):
-  ___ mergeKLists  lists):
+c_ Solution(o..
+  ___ mergeKLists  lists
     """
     :type lists: List[ListNode]
     :rtype: ListNode

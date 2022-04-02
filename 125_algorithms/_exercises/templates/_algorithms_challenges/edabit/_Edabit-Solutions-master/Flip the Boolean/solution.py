@@ -1,4 +1,4 @@
-___ reverse(arg):
+___ reverse(arg
     __ t..(arg) != b..:
         r.. "boolean expected"
     ____:

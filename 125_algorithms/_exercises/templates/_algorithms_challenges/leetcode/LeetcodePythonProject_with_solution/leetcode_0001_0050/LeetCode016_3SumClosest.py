@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ threeSumClosest  nums, target):
+c_ Solution(o..
+    ___ threeSumClosest  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -13,12 +13,12 @@ c_ Solution(o..):
         nums.s..()
         res = f__('inf')
         n = l..(nums)
-        ___ i __ r..(n-2):
+        ___ i __ r..(n-2
             j, k = i+1, n-1
             w.... j < k:
                 tmp = nums[i]+nums[j]+nums[k]
                 diff = abs(tmp-target)
-                __ diff < abs(res-target):
+                __ diff < abs(res-target
                     res = tmp
                 __ tmp __ target:
                     r.. target

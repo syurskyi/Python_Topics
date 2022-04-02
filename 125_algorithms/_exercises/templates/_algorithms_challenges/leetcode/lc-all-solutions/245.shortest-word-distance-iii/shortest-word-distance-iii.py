@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ shortestWordDistance  words, word1, word2):
+c_ Solution(o..
+  ___ shortestWordDistance  words, word1, word2
     """
     :type words: List[str]
     :type word1: str
@@ -10,7 +10,7 @@ c_ Solution(o..):
     idx1 = idx2 = -1
     ___ i __ r..(0, l..(words)):
       word = words[i]
-      __ word __ (word1, word2):
+      __ word __ (word1, word2
         __ word __ word1:
           idx1 = i
           __ idx2 != -1 a.. idx1 != idx2:

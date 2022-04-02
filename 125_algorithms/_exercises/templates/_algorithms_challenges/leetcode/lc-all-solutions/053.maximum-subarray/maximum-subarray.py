@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxSubArray  nums):
+c_ Solution(o..
+  ___ maxSubArray  nums
     """
     :type nums: List[int]
     :rtype: int

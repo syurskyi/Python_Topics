@@ -1,7 +1,7 @@
 c_ Solution:
     # @param matrix, a list of lists of 1 length string
     # @return an integer
-    ___ maximalRectangle  matrix):
+    ___ maximalRectangle  matrix
         # Make a list of heights
         __ n.. matrix:
             r.. 0
@@ -10,8 +10,8 @@ c_ Solution:
             r.. 0
         m = l..(matrix[0])
         hist = [[0 ___ j __ r..(m)] ___ i __ r..(n)]
-        ___ i __ r..(n):
-            ___ j __ r..(m):
+        ___ i __ r..(n
+            ___ j __ r..(m
                 __ i __ 0:
                     hist[i][j] = i..(matrix[i][j])
                 ____:
@@ -22,14 +22,14 @@ c_ Solution:
             res = m..(res, max_hist_rect(row))
         r.. res
 
-    ___ max_hist_rect  heights):
+    ___ max_hist_rect  heights
         __ n.. heights:
             r.. 0
         n = l..(heights)
         max_area = heights[0]
         stack    # list
-        ___ i __ r..(n + 1):
-            w.... stack a.. (i __ n o. heights[stack[-1]] > heights[i]):
+        ___ i __ r..(n + 1
+            w.... stack a.. (i __ n o. heights[stack[-1]] > heights[i]
                 h = heights[stack.pop()]
                 __ stack:
                     w = i - stack[-1] - 1

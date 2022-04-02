@@ -39,7 +39,7 @@ for all other languages.
 
 
 c_ StockSpanner:
-    ___ - ):
+    ___ -
         """
         Consecutive Backward <=
         insort? O(n) or O(log n) using BST. Probably not for consecutive days

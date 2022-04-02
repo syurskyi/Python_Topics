@@ -23,14 +23,14 @@ __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
 
-c_ Solution(o..):
-    ___ - , head):
+c_ Solution(o..
+    ___ - , head
         """
         Reservoir sampling
         :param: head The linked list's head.

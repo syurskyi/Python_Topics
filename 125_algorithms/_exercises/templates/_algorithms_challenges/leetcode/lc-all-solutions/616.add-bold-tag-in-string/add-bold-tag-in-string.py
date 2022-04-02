@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ addBoldTag  s, d..):
+c_ Solution(o..
+  ___ addBoldTag  s, d..
     """
     :type s: str
     :type dict: List[str]
@@ -20,7 +20,7 @@ c_ Solution(o..):
     ___ start, end __ intervals:
       d[start] = end
     i = 0
-    w.... i < l..(s):
+    w.... i < l..(s
       __ i __ d:
         ans.a..("<b>{}</b>".f..(s[i:d[i] + 1]))
         i = d[i] + 1
@@ -29,9 +29,9 @@ c_ Solution(o..):
         i += 1
     r.. "".j..(ans)
 
-  ___ merge  intervals):
+  ___ merge  intervals
     ans    # list
-    ___ intv __ s..(intervals, key=l.... x: x[0]):
+    ___ intv __ s..(intervals, key=l.... x: x[0]
       __ ans a.. ans[-1][1] + 1 >= intv[0]:
         ans[-1][1] = m..(ans[-1][1], intv[1])
       ____:

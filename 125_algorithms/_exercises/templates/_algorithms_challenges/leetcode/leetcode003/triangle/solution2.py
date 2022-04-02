@@ -16,8 +16,8 @@ Bonus point if you are able to do this using only O(n) extra space, where n is
 the total number of rows in the triangle.
 """
 
-c_ Solution(o..):
-    ___ minimumTotal  triangle):
+c_ Solution(o..
+    ___ minimumTotal  triangle
         """
         :type triangle: List[List[int]]
         :rtype: int
@@ -25,10 +25,10 @@ c_ Solution(o..):
         n = l..(triangle)
         m = 0
         res = N..
-        ___ i, row __ e..(triangle):
+        ___ i, row __ e..(triangle
             m = l..(row)
             __ i > 0:
-                ___ j, col __ e..(row):
+                ___ j, col __ e..(row
                     __ 0 < j < m - 1:
                         triangle[i][j] += m..(triangle[i - 1][j - 1],
                                               triangle[i - 1][j])

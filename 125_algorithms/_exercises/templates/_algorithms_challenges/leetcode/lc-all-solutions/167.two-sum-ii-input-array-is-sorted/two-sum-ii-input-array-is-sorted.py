@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ twoSum  nums, target):
+c_ Solution(o..
+  ___ twoSum  nums, target
     """
     :type numbers: List[int]
     :type target: int

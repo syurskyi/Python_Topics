@@ -15,8 +15,8 @@ There are many calls to sumRange function.
 __author__ = 'Daniel'
 
 
-c_ NumArray(o..):
-    ___ - , nums):
+c_ NumArray(o..
+    ___ - , nums
         """
         initialize your data structure here.
         dp
@@ -24,10 +24,10 @@ c_ NumArray(o..):
         """
         n = l..(nums)
         F = [0 ___ _ __ x..(n+1)]
-        ___ i __ x..(1, n+1):
+        ___ i __ x..(1, n+1
             F[i] = F[i-1] + nums[i-1]
 
-    ___ sumRange  i, j):
+    ___ sumRange  i, j
         """
         sum of elements nums[i..j], inclusive.
         :type i: int

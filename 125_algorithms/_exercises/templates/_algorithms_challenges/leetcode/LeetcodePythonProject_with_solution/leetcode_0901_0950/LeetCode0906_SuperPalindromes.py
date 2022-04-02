@@ -1,8 +1,8 @@
 _______ math
 
 
-c_ Solution(o..):
-    ___ superpalindromesInRange  L, R):
+c_ Solution(o..
+    ___ superpalindromesInRange  L, R
         """
         :type L: str
         :type R: str
@@ -19,7 +19,7 @@ c_ Solution(o..):
 
         r.. res
 
-    ___ dfs  low, high, s):
+    ___ dfs  low, high, s
         __ l..(s) > l..(s..(high)):
             r.. 0
         count = 0
@@ -27,11 +27,11 @@ c_ Solution(o..):
             num = i..(s)
             __ num > high:
                 r.. 0
-            __ num >= low a.. isPalindrome(num*num):
+            __ num >= low a.. isPalindrome(num*num
                 count += 1
-        ___ c __ l..('012'):
+        ___ c __ l..('012'
             count += dfs(low, high, c+s+c)
         r.. count
 
-    ___ isPalindrome  num):
+    ___ isPalindrome  num
         r.. s..(num) __ s..(num)[::-1]

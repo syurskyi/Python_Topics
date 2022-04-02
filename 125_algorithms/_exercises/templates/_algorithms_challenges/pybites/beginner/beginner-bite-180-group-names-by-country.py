@@ -50,7 +50,7 @@ Halbard,Davie,CN"""
 ___ group_names_by_country(data: s.. = data) __ defaultdict:
     countries = defaultdict(l..)
     # you code
-    split_lines = data.splitlines()
+    split_lines = data.s..
     line_cnt = 0
     ___ line __ split_lines:
         print(line)

@@ -10,15 +10,15 @@
 # so it must be valid)
 # moreover, we have more available time for taking more courses
 
-c_ Solution(o..):
-  ___ scheduleCourse  courses):
+c_ Solution(o..
+  ___ scheduleCourse  courses
     """
     :type courses: List[List[int]]
     :rtype: int
     """
     now = 0
     heap    # list
-    ___ t, d __ s..(courses, key=l.... x: x[1]):
+    ___ t, d __ s..(courses, key=l.... x: x[1]
       __ now + t <= d:
         now += t
         heapq.heappush(heap, -t)

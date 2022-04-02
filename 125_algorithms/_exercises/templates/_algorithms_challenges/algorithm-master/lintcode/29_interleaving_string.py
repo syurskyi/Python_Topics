@@ -5,7 +5,7 @@ c_ Solution:
     @param: C: A string
     @return: Determine whether C is formed by interleaving of A and B
     """
-    ___ isInterleave  A, B, C):
+    ___ isInterleave  A, B, C
         __ A __ N.. o. B __ N.. o. C __ N..
             r.. F..
 
@@ -26,7 +26,7 @@ c_ Solution:
         prev = curr = 0
         dp[curr][0] = T..
 
-        ___ j __ r..(1, b + 1):
+        ___ j __ r..(1, b + 1
             """
             dp[0][j] = (dp[0][j - 1] and B[j - 1] == C[j - 1])
             """
@@ -36,7 +36,7 @@ c_ Solution:
             __ B[j - 1] __ C[j - 1]:
                 dp[curr][j] = T..
 
-        ___ i __ r..(1, a + 1):
+        ___ i __ r..(1, a + 1
             prev = curr
             curr = 1 - curr
 
@@ -46,7 +46,7 @@ c_ Solution:
             __ dp[prev][0] a.. A[i - 1] __ C[i - 1]:
                 dp[curr][0] = T..
 
-            ___ j __ r..(1, b + 1):
+            ___ j __ r..(1, b + 1
                 dp[curr][j] = F..
 
                 __ dp[prev][j] a.. A[i - 1] __ C[i + j - 1]:

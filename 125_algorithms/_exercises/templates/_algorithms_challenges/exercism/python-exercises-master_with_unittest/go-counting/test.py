@@ -13,7 +13,7 @@ board5x5 = [
 ]
 
 
-c_ GoCountingTest(unittest.TestCase):
+c_ GoCountingTest(unittest.TestCase
     ___ test_black_corner_territory_on_5x5_board
         board = go_counting.Board(board5x5)
         stone, territory = board.territory(x=0, y=1)
@@ -40,22 +40,22 @@ c_ GoCountingTest(unittest.TestCase):
 
     ___ test_invalid_because_x_is_too_low
         board = go_counting.Board(board5x5)
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             board.territory(x=-1, y=1)
 
     ___ test_invalid_because_x_is_too_high
         board = go_counting.Board(board5x5)
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             board.territory(x=5, y=1)
 
     ___ test_invalid_because_y_is_too_low
         board = go_counting.Board(board5x5)
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             board.territory(x=1, y=-1)
 
     ___ test_invalid_because_y_is_too_high
         board = go_counting.Board(board5x5)
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             board.territory(x=1, y=5)
 
     ___ test_one_territory_is_the_whole_board
@@ -91,7 +91,7 @@ c_ GoCountingTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 

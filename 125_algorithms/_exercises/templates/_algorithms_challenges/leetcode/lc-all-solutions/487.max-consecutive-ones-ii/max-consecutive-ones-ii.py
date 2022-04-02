@@ -1,10 +1,10 @@
-c_ Solution(o..):
-  ___ - ):
+c_ Solution(o..
+  ___ -
     ans = 0
     count = 0
     lastCount = 0
 
-  ___ findMaxConsecutiveOnes  nums):
+  ___ findMaxConsecutiveOnes  nums
     """
     :type nums: List[int]
     :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
       readNum(num)  # stream the input
     r.. ans
 
-  ___ readNum  num):
+  ___ readNum  num
     """
     :type nums: int
     """

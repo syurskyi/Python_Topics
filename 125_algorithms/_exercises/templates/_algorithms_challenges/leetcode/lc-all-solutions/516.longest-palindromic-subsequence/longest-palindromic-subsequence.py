@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ longestPalindromeSubseq  s):
+c_ Solution(o..
+  ___ longestPalindromeSubseq  s
     """
     :type s: str
     :rtype: int

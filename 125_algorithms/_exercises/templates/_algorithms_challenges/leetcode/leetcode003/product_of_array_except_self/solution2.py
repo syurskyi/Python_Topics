@@ -12,8 +12,8 @@ Could you solve it with constant space complexity? (Note: The output array
 does not count as extra space for the purpose of space complexity analysis.)
 """
 
-c_ Solution(o..):
-    ___ productExceptSelf  nums):
+c_ Solution(o..
+    ___ productExceptSelf  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -24,8 +24,8 @@ c_ Solution(o..):
         res = [1 ___ i __ r..(n)]
         # product of nums[0..i - 1]
         product = 1
-        ___ i __ r..(1, n):
-            ___ j __ r..(i):
+        ___ i __ r..(1, n
+            ___ j __ r..(i
                 res[j] *= nums[i]
             product *= nums[i - 1]
             res[i] = product

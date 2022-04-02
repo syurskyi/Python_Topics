@@ -42,8 +42,8 @@ c_ Solution:
         ret = 0
         m, n = l..(grid), l..(grid[0])
         visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ n.. visited[i][j] a.. grid[i][j] __ 1:
                     ret = m..(ret, dfs(grid, i, j, visited))
 

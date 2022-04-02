@@ -8,7 +8,7 @@ operations = d..(add=s..,
                   div=l.... items: reduce(operator.truediv, items))
 
 
-___ calculator(operation, numbers):
+___ calculator(operation, numbers
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
@@ -37,7 +37,7 @@ ___ create_parser
     r.. parser
 
 
-___ call_calculator(args=N.., stdout=F..):
+___ call_calculator(args=N.., stdout=F..
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,

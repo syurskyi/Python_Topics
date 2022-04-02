@@ -4,28 +4,28 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ palindromePairs  words):
+c_ Solution(o..
+    ___ palindromePairs  words
         __ n.. words: r.. []
         hashmap    # dict
         result    # list
-        ___ i, word __ e..(words):
+        ___ i, word __ e..(words
             hashmap[word] = i
-        ___ i, word __ e..(words):
-            ___ j __ r..(l..(word)+1):
+        ___ i, word __ e..(words
+            ___ j __ r..(l..(word)+1
                 s1 = word[:j]
                 s2 = word[j:]
-                __ isPalindrome(s1):
+                __ isPalindrome(s1
                     str2rvs = s2[::-1]
                     __ str2rvs __ hashmap a.. hashmap[str2rvs] != i:
                         result.a..([hashmap[str2rvs], i])
-                __ isPalindrome(s2):
+                __ isPalindrome(s2
                     str1rvs = s1[::-1]
                     __ str1rvs __ hashmap a.. hashmap[str1rvs] != i a.. s2:
                         result.a..([i, hashmap[str1rvs]])
         r.. result
     
-    ___ isPalindrome  s):
+    ___ isPalindrome  s
         left, right = 0, l..(s)-1
         w.... left < right:
             __ s[left] != s[right]:

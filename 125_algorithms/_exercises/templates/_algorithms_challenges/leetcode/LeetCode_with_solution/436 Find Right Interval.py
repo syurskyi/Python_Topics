@@ -15,12 +15,12 @@ You may assume the interval's end point is always bigger than its start point.
 You may assume none of these intervals have the same start point.
 """
 c_ Interval:
-    ___ - , s=0, e=0):
+    ___ - , s=0, e=0
         start = s
         end = e
 
     @classmethod
-    ___ new(cls, lst):
+    ___ new(cls, lst
         r.. [
             cls(s, e)
             ___ s, e __ lst
@@ -30,7 +30,7 @@ ____ bisect _______ bisect_left
 
 
 c_ Solution:
-    ___ findRightInterval  intervals):
+    ___ findRightInterval  intervals
         """
         given e, find the right s - bisect
 
@@ -45,7 +45,7 @@ c_ Solution:
         ret    # list
         ___ itv __ intervals:
             idx = bisect_left(starts, itv.end)
-            __ idx >= l..(starts):
+            __ idx >= l..(starts
                 ret.a..(-1)
             ____:
                 ret.a..(

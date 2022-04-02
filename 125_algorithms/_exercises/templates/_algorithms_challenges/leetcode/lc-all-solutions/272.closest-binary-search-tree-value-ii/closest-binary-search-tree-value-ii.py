@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ closestKValues  root, target, k):
+c_ Solution(o..
+  ___ closestKValues  root, target, k
     """
     :type root: TreeNode
     :type target: float
@@ -25,7 +25,7 @@ c_ Solution(o..):
         sucStack.a..(root)
         root = root.left
 
-    ___ getPredecessor(stack):
+    ___ getPredecessor(stack
       __ n.. stack:
         r..
       pre = stack.pop()
@@ -35,7 +35,7 @@ c_ Solution(o..):
         p = p.right
       r.. pre
 
-    ___ getSuccessor(stack):
+    ___ getSuccessor(stack
       __ n.. stack:
         r..
       suc = stack.pop()
@@ -56,10 +56,10 @@ c_ Solution(o..):
       ____ n.. pre a.. suc:
         ans.a..(suc.val)
         suc = getSuccessor(sucStack)
-      ____ pre a.. suc a.. abs(pre.val - target) <= abs(suc.val - target):
+      ____ pre a.. suc a.. abs(pre.val - target) <= abs(suc.val - target
         ans.a..(pre.val)
         pre = getPredecessor(preStack)
-      ____ pre a.. suc a.. abs(pre.val - target) >= abs(suc.val - target):
+      ____ pre a.. suc a.. abs(pre.val - target) >= abs(suc.val - target
         ans.a..(suc.val)
         suc = getSuccessor(sucStack)
     r.. ans

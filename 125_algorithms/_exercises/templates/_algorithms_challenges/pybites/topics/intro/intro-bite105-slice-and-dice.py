@@ -27,7 +27,7 @@ and now you know about slicing from the end as well :)
 keep enjoying our bites!
 """
 
-___ my_slice_and_dice(text=text):
+___ my_slice_and_dice(text=text
     """Strip the whitespace (newlines) off text at both ends,
        split the text string on newline (\n).
        Next check if the first char of each (stripped) line is lowercase,
@@ -45,7 +45,7 @@ ___ my_slice_and_dice(text=text):
             results.a..(words[words.__len__()-1])
     r.. results
 
-___ slice_and_dice(text=text):
+___ slice_and_dice(text=text
     """Strip the whitespace (newlines) off text at both ends,
        split the text string on newline (\n).
        Next check if the first char of each (stripped) line is lowercase,
@@ -53,7 +53,7 @@ ___ slice_and_dice(text=text):
        the results list. Make sure the you strip off any trailing
        exclamation marks (!) and dots (.), Return the results list."""
     results    # list
-    ___ line __ text.s...s..('\n'):
+    ___ line __ text.s...s..('\n'
         line = line.s..
 
         __ line[0] n.. __ ascii_lowercase:

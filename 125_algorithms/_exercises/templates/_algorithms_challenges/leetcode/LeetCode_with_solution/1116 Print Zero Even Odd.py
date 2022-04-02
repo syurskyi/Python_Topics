@@ -35,7 +35,7 @@ ____ threading _______ Lock
 
 
 c_ ZeroEvenOdd:
-    ___ - , n):
+    ___ - , n
         """
         only use 3 locks, and zero() knows and commonds which lock to release,
         determing whether even() or odd() will run.
@@ -47,7 +47,7 @@ c_ ZeroEvenOdd:
 
 	# printNumber(x) outputs "x", where x is an integer.
     ___ zero  printNumber: Callable[[i..], N..]) __ N..
-        ___ i __ r..(n):
+        ___ i __ r..(n
             locks[0].a..
             printNumber(0)
             __ (i + 1) % 2 __ 1:
@@ -56,20 +56,20 @@ c_ ZeroEvenOdd:
                 locks[2].release()
 
     ___ odd  printNumber: Callable[[i..], N..]) __ N..
-        ___ i __ r..((n + 1) // 2):
+        ___ i __ r..((n + 1) // 2
             locks[1].a..
             printNumber(i * 2 + 1)
             locks[0].release()
 
     ___ even  printNumber: Callable[[i..], N..]) __ N..
-        ___ i __ r..(n // 2):
+        ___ i __ r..(n // 2
             locks[2].a..
             printNumber(i * 2 + 2)
             locks[0].release()
 
 
 c_ ZeroEvenOddError:
-    ___ - , n):
+    ___ - , n
         """
         Like 1115, two layer of locks can do: zero and non-zero alternating,
         odd and even alternating. 4 locks required.

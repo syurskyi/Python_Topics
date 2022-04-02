@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ BSTIterator(o..):
-    ___ - , root):
+c_ BSTIterator(o..
+    ___ - , root
         _arr    # list
         _inorder(root)
         _cur = -1
@@ -23,7 +23,7 @@ c_ BSTIterator(o..):
             _cur += 1
             r.. _arr[_cur]
 
-    ___ _inorder  root):
+    ___ _inorder  root
         __ root __ n.. N..
             __ root.left __ n.. N..
                 _inorder(root.left)

@@ -3,15 +3,15 @@ Created on Mar 14, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ dailyTemperatures  temperatures):
+c_ Solution(o..
+    ___ dailyTemperatures  temperatures
         """
         :type temperatures: List[int]
         :rtype: List[int]
         """
         stack    # list
         res    # list
-        ___ i __ r..(l..(temperatures)-1, -1, -1):
+        ___ i __ r..(l..(temperatures)-1, -1, -1
             t = temperatures[i]
             w.... stack a.. temperatures[stack[-1]] <= t:
                 stack.pop()

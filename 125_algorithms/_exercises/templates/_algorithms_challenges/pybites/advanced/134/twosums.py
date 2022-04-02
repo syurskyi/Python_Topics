@@ -1,5 +1,5 @@
 
-___ bs(numbers,value):
+___ bs(numbers,value
 
 
 
@@ -25,7 +25,7 @@ ___ bs(numbers,value):
 
 
 
-___ two_sums(numbers, target):
+___ two_sums(numbers, target
     """Finds the indexes of the two numbers that add up to target.
 
     :param numbers: list - random unique numbers
@@ -39,7 +39,7 @@ ___ two_sums(numbers, target):
 
     
     result = N..
-    ___ i,number __ e..(numbers):
+    ___ i,number __ e..(numbers
         value = target - number
         __ value < number a..  value __ mapping:
             index_1 = mapping[value]

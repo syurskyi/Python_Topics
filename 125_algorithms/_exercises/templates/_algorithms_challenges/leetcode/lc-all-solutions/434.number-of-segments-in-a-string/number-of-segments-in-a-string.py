@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ countSegments  s):
+c_ Solution(o..
+  ___ countSegments  s
     """
     :type s: str
     :rtype: int

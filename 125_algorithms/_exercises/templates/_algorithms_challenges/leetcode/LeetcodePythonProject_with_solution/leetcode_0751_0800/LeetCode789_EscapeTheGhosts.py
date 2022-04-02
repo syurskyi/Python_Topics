@@ -3,8 +3,8 @@ Created on Apr 14, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ escapeGhosts  ghosts, target):
+c_ Solution(o..
+    ___ escapeGhosts  ghosts, target
         """
         :type ghosts: List[List[int]]
         :type target: List[int]

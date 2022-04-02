@@ -4,8 +4,8 @@ Created on Sep 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isValid  code):
+c_ Solution(o..
+    ___ isValid  code
         """
         :type code: str
         :rtype: bool

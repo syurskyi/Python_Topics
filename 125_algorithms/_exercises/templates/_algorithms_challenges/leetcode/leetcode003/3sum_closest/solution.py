@@ -9,8 +9,8 @@ may assume that each input would have exactly one solution.
 """
 
 
-c_ Solution(o..):
-    ___ threeSumClosest  nums, target):
+c_ Solution(o..
+    ___ threeSumClosest  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -19,12 +19,12 @@ c_ Solution(o..):
         nums.s..()
         n = l..(nums)
         res = nums[0] + nums[1] + nums[2]
-        ___ i __ r..(n - 2):
+        ___ i __ r..(n - 2
             l = i + 1
             r = n - 1
             w.... l < r:
                 s = nums[i] + nums[l] + nums[r]
-                __ abs(s - target) < abs(res - target):
+                __ abs(s - target) < abs(res - target
                     res = s
                 __ s __ target:
                     r.. s

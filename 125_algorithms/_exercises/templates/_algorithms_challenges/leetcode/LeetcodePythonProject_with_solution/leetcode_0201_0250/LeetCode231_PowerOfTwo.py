@@ -4,8 +4,8 @@ Created on Feb 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isPowerOfTwo  n):
+c_ Solution(o..
+    ___ isPowerOfTwo  n
         """
         :type n: int
         :rtype: bool
@@ -13,7 +13,7 @@ c_ Solution(o..):
         __ n <= 0: r.. F..
         r.. b..(n&(n-1)__0)
     
-    ___ isPowerOfTwoSlow  n):
+    ___ isPowerOfTwoSlow  n
         """
         :type n: int
         :rtype: bool

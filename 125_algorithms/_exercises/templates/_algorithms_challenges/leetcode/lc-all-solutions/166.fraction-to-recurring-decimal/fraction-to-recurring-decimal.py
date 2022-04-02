@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ fractionToDecimal  numerator, denominator):
+c_ Solution(o..
+  ___ fractionToDecimal  numerator, denominator
     """
     :type numerator: int
     :type denominator: int

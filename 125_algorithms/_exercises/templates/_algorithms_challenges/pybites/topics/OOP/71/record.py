@@ -1,10 +1,10 @@
 c_ RecordScore
     """Class to track a game's maximum score"""
 
-    ___ - ):
+    ___ -
         high_score = f__('-inf')
 
-    ___ __call__  score):
+    ___ __call__  score
         score = score
         __ score > high_score:
             high_score = score

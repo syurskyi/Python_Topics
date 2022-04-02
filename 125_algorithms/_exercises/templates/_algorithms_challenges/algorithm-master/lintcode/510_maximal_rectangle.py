@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ maximalRectangle  G):
+    ___ maximalRectangle  G
         """
         :type G: List[List[str]]
         :rtype: int
@@ -11,9 +11,9 @@ c_ Solution:
         m, n = l..(G), l..(G[0])
         L, R, H    # dict, {}, {}
 
-        ___ i __ r..(m):
+        ___ i __ r..(m
             curr = 0  # left boundary
-            ___ j __ r..(n):
+            ___ j __ r..(n
                 __ G[i][j] __ '1':
                     H[j] = H.get(j, 0) + 1
                     L[j] = m..(L.get(j, 0), curr)
@@ -22,7 +22,7 @@ c_ Solution:
                     curr = j + 1
 
             curr = n  # right boundary
-            ___ j __ r..(n - 1, -1, -1):
+            ___ j __ r..(n - 1, -1, -1
                 __ G[i][j] __ '1':
                     R[j] = m..(R.get(j, n), curr)
                 ____:
@@ -87,7 +87,7 @@ max = 6 = (5 - 2) * 2
 # Mono Stack
 # This problem could be treated as histogram, see lintcode#122
 c_ Solution:
-    ___ maximalRectangle  G):
+    ___ maximalRectangle  G
         """
         :type G: List[List[str]]
         :rtype: int
@@ -99,8 +99,8 @@ c_ Solution:
         m, n = l..(G), l..(G[0])
         H = [0] * n
 
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ G[i][j] __ '1':
                     H[j] += 1
                 ____:
@@ -113,7 +113,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ largestRectangleArea  H):
+    ___ largestRectangleArea  H
         area = 0
         __ n.. H:
             r.. area

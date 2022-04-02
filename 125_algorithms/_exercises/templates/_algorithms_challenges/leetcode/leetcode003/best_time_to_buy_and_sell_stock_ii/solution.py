@@ -9,8 +9,8 @@ same time (ie, you must sell the stock before you buy again).
 """
 
 
-c_ Solution(o..):
-    ___ maxProfit  prices):
+c_ Solution(o..
+    ___ maxProfit  prices
         """
         :type prices: List[int]
         :rtype: int

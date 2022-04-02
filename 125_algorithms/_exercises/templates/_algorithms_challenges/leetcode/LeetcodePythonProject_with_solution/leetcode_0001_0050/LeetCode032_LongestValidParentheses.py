@@ -4,12 +4,12 @@ Created on Mar 14, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ longestValidParentheses  s):
+c_ Solution(o..
+    ___ longestValidParentheses  s
         left = -1
         stack    # list
         res = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c __ '(':
                 stack.a..(i)
             ____:

@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ isValidBST  root):
+c_ Solution(o..
+  ___ isValidBST  root
     """
     :type root: TreeNode
     :rtype: bool

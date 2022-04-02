@@ -19,7 +19,7 @@ c_ Solution:
     @param: k2: An integer
     @return: the largest sum
     """
-    ___ maxSubarray5  A, k1, k2):
+    ___ maxSubarray5  A, k1, k2
         __ n.. A o. n.. k2 o. l..(A) < k1:
             r.. 0
 
@@ -28,7 +28,7 @@ c_ Solution:
         queue = d..()
         ans = f__('-inf')
 
-        ___ i __ r..(1, n + 1):
+        ___ i __ r..(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
             """

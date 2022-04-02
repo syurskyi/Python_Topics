@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ medianII  nums):
+    ___ medianII  nums
         """
         :type nums: list[int]
         :rtype: list[int]
@@ -21,7 +21,7 @@ c_ Solution:
             ____:
                 heapq.heappush(minheap, num)
 
-            w.... l..(minheap) > l..(maxheap):
+            w.... l..(minheap) > l..(maxheap
                 heapq.heappush(maxheap, -heapq.heappop(minheap))
 
             w.... l..(maxheap) > l..(minheap) + 1:

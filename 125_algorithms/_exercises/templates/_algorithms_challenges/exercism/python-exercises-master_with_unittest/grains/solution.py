@@ -1,9 +1,9 @@
-___ on_square(square):
+___ on_square(square
     check_square_input(square)
     r.. 2 ** (square - 1)
 
 
-___ total_after(square):
+___ total_after(square
     check_square_input(square)
     r.. s..(
         on_square(n + 1) ___ n
@@ -11,7 +11,7 @@ ___ total_after(square):
     )
 
 
-___ check_square_input(square):
+___ check_square_input(square
     __ square __ 0:
         r.. ValueError("Square input of zero is invalid.")
     ____ square < 0:

@@ -4,8 +4,8 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ numWays  n, k):
+c_ Solution(o..
+    ___ numWays  n, k
         """
         :type n: int
         :type k: int
@@ -16,7 +16,7 @@ c_ Solution(o..):
         prev1 = k*k
         prev2 = k
         curr = 0
-        ___ _ __ r..(2, n):
+        ___ _ __ r..(2, n
             curr = (prev1+prev2)*(k-1)
             prev2 = prev1
             prev1 = curr

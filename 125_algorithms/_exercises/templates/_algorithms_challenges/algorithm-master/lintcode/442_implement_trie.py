@@ -1,18 +1,18 @@
 c_ TrieNode:
-    ___ - ):
+    ___ -
         end_of = N..
         children    # dict
 
 
 c_ Trie:
-    ___ - ):
+    ___ -
         root = TrieNode()
 
     """
     @param: word: a word
     @return: nothing
     """
-    ___ insert  word):
+    ___ insert  word
         __ word __ N..
             r..
 
@@ -30,7 +30,7 @@ c_ Trie:
     @param: word: A string
     @return: if the word is in the trie.
     """
-    ___ s..  word):
+    ___ s..  word
         __ word __ N..
             r.. F..
 
@@ -48,7 +48,7 @@ c_ Trie:
     @param: prefix: A string
     @return: if there is any word in the trie that starts with the given prefix.
     """
-    ___ startsWith  prefix):
+    ___ startsWith  prefix
         __ prefix __ N..
             r.. F..
 

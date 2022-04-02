@@ -4,8 +4,8 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findOrder  numCourses, prerequisites):
+c_ Solution(o..
+    ___ findOrder  numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -17,7 +17,7 @@ c_ Solution(o..):
             graph[p[1]].a..(p[0])
             degree[p[0]]+=1
         queue    # list
-        ___ num, cnt __ e..(degree):
+        ___ num, cnt __ e..(degree
             __ cnt __ 0:
                 queue.a..(num)
         res    # list

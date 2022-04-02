@@ -3,8 +3,8 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numSubarrayBoundedMax  A, L, R):
+c_ Solution(o..
+    ___ numSubarrayBoundedMax  A, L, R
         """
         :type A: List[int]
         :type L: int

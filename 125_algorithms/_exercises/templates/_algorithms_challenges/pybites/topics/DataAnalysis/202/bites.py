@@ -11,15 +11,15 @@ __ n.. stats.exists
     urlretrieve(data, stats)
 
 
-___ get_most_complex_bites(N=10, stats=stats):
+___ get_most_complex_bites(N=10, stats=stats
     """Parse the bites.csv file (= stats variable passed in), see example
        output in the Bite description.
        Return a list of Bite IDs (int or str values are fine) of the N
        most complex Bites.
     """
-    w__ open(stats, encoding="utf-8-sig") __ f:
+    w__ o.. stats, encoding="utf-8-sig") __ f:
         bite_diff    # dict
-        lines = f.readlines()
+        lines = f.r..
         ___ line __ lines:
             __ line[:5] __ 'Bite ':
                 bite = line.s..('.')[0][5:]

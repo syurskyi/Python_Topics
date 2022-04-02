@@ -5,14 +5,14 @@ Created on Mar 5, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ closestKValues  root, target, k):
+c_ Solution(o..
+    ___ closestKValues  root, target, k
         """
         :type root: TreeNode
         :type target: float
@@ -25,25 +25,25 @@ c_ Solution(o..):
         inOrderRev(root, target, stack2)
         print('stack1: %s' % stack1)
         print('stack2: %s' % stack2)
-        ___ _ __ r..(k):
+        ___ _ __ r..(k
             __ n.. stack1:
                 res.a..(stack2.pop())
             ____ n.. stack2:
                 res.a..(stack1.pop())
-            ____ abs(stack1[-1]-target) <= abs(stack2[-1]-target):
+            ____ abs(stack1[-1]-target) <= abs(stack2[-1]-target
                 res.a..(stack1.pop())
             ____:
                 res.a..(stack2.pop())
         r.. res
     
-    ___ inOrderReg  root, target, stack):
+    ___ inOrderReg  root, target, stack
         __ n.. root: r..
         inOrderReg(root.left, target, stack)
         __ root.val > target: r..
         stack.a..(root.val)
         inOrderReg(root.right, target, stack)
     
-    ___ inOrderRev  root, target, stack):
+    ___ inOrderRev  root, target, stack
         __ n.. root: r..
         inOrderRev(root.right, target, stack)
         __ root.val <= target: r..

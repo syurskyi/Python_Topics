@@ -18,5 +18,5 @@ holidays = get_us_bank_holidays()
     #("11", ["Veterans Day", "Thanksgiving", "Day after Thanksgiving"]),
     #("12", ["Christmas Day"]),
 ])
-___ test_get_us_bank_holidays(month, holiday):
+___ test_get_us_bank_holidays(month, holiday
     ... holidays.get(month) __ holiday

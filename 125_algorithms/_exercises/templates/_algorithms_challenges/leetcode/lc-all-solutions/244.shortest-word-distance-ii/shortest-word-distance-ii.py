@@ -1,5 +1,5 @@
-c_ WordDistance(o..):
-  ___ - , words):
+c_ WordDistance(o..
+  ___ - , words
     """
     initialize your data structure here.
     :type words: List[str]
@@ -8,7 +8,7 @@ c_ WordDistance(o..):
     ___ i __ r..(0, l..(words)):
       d[words[i]] = d.get(words[i], []) + [i]
 
-  ___ shortest  word1, word2):
+  ___ shortest  word1, word2
     """
     Adds a word into the data structure.
     :type word1: str
@@ -19,7 +19,7 @@ c_ WordDistance(o..):
     l2 = d[word2]
     i = j = 0
     ans = f__("inf")
-    w.... i < l..(l1) a.. j < l..(l2):
+    w.... i < l..(l1) a.. j < l..(l2
       ans = m..(ans, abs(l1[i] - l2[j]))
       __ l1[i] > l2[j]:
         j += 1

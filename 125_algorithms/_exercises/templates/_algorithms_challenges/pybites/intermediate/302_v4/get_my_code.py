@@ -13,24 +13,24 @@ __ n.. json_input_file.exists
 
 
 ___ get_json_data
-    w__ open(json_input_file) __ file_in:
+    w__ o.. json_input_file) __ file_in:
         r.. json.load(file_in)
 
 
 json_data = get_json_data()
 
 
-___ _make_filename(bite):
+___ _make_filename(bite
     """creates a filename, per spec, for input bite (dict)"""
-    r.. bite['bite'].s..('.')[0].r..(' ', '') + '.py'
+    r.. bite 'bite' .s..('.')[0].r..(' ', '') + '.py'
 
 
-___ _write_code(bite):
+___ _write_code(bite
     outfile = tmp / _make_filename(bite)
-    outfile.write_text(bite['passing_code'])
+    outfile.write_text(bite 'passing_code' )
 
 
-___ get_passing_code(json_data=json_data):
+___ get_passing_code(json_data=json_data
     """
     Get all passing code and write the code for each bite to
     individual files. Output file names should be the bite name and
@@ -39,5 +39,5 @@ ___ get_passing_code(json_data=json_data):
     the output file names should be Bite124.py. Remove any/all spaces
     from the file name.  Write to /tmp (tmp variable).
     """
-    ___ bite __ json_data['bites']:
+    ___ bite __ json_data 'bites' :
         _write_code(bite)

@@ -28,7 +28,7 @@ Therefore, you need to return above trees' root in the form of a list.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -39,7 +39,7 @@ ____ c.. _______ defaultdict
 
 
 c_ MerkleHash:
-    ___ - ):
+    ___ -
         start_key = 0
         merkle_hash = defaultdict(_auto_incr)  # subtree -> id
 
@@ -47,12 +47,12 @@ c_ MerkleHash:
         start_key += 1
         r.. start_key
 
-    ___ __call__  val):
+    ___ __call__  val
         r.. merkle_hash[val]
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         counter = defaultdict(i..)
         merkle_hash = MerkleHash()
 

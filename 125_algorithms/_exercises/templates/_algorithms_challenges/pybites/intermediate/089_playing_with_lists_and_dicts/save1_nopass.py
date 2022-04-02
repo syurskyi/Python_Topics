@@ -17,7 +17,7 @@ us_state_abbrev = {'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ',
                    'Vermont': 'VT', 'Virginia': 'VA', 'Washington': 'WA',
                    'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY'}
 
-states = ['Oklahoma', 'Kansas', 'North Carolina', 'Georgia', 'Oregon',
+states =  'Oklahoma', 'Kansas', 'North Carolina', 'Georgia', 'Oregon',
           'Mississippi', 'Minnesota', 'Colorado', 'Alabama',
           'Massachusetts', 'Arizona', 'Connecticut', 'Montana',
           'West Virginia', 'Nebraska', 'New York', 'Nevada', 'Idaho',
@@ -27,18 +27,18 @@ states = ['Oklahoma', 'Kansas', 'North Carolina', 'Georgia', 'Oregon',
           'Virginia', 'Ohio', 'Wisconsin', 'Maryland', 'Florida',
           'Utah', 'Maine', 'California', 'Vermont', 'Arkansas', 'Wyoming',
           'Louisiana', 'North Dakota', 'South Dakota', 'Texas',
-          'Illinois', 'Iowa', 'Michigan', 'Delaware']
+          'Illinois', 'Iowa', 'Michigan', 'Delaware'
 
 NOT_FOUND = 'N/A'
 
 
-___ get_every_nth_state(states=states, n=10):
+___ get_every_nth_state(states=states, n=10
     """Return a list with every nth item (default argument n=10, so every
        10th item) of the states list above (remember: lists keep order)"""
     r.. states[n-1::n]
 
 
-___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
+___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev
     """Look up a state abbreviation by querying the us_state_abbrev
        dict by full state name, for instance 'Alabama' returns 'AL',
        'Illinois' returns 'IL'.
@@ -50,7 +50,7 @@ ___ get_state_abbrev(state_name, us_state_abbrev=us_state_abbrev):
         r.. us_state_abbrev[state_name]
 
 
-___ get_longest_state(data):
+___ get_longest_state(data
     """Receives data, which can be the us_state_abbrev dict or the states
        list (see above). It returns the longest state measured by the length
        of the string"""
@@ -58,7 +58,7 @@ ___ get_longest_state(data):
 
 
 ___ combine_state_names_and_abbreviations(us_state_abbrev=us_state_abbrev,
-                                          states=states):
+                                          states=states
     """Get the first 10 state abbreviations ('AL', 'AK', 'AZ', ...) from
        the us_state_abbrev dict, and the last 10 states from the states
        list (see above) and combine them into a new list. The resulting list

@@ -3,8 +3,8 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ solveEquation  equation):
+c_ Solution(o..
+    ___ solveEquation  equation
         """
         :type equation: str
         :rtype: str
@@ -28,10 +28,10 @@ c_ Solution(o..):
                 val = (val2-val1)//(valX1-valX2)
                 r.. 'x=%s' % val
     
-    ___ solveHelper  s):
+    ___ solveHelper  s
         valX1, val1 = 0, 0
         i = 0
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i].i..
                 sig = 1
                 __ i>=1 a.. s[i-1] __ '-':

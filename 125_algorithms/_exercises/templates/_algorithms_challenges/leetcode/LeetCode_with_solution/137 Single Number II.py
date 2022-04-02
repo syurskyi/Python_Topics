@@ -8,7 +8,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ singleNumber_optimal  A):
+    ___ singleNumber_optimal  A
         """
         No extra memory, thus unable to use hash table, requiring constant space solution
 
@@ -46,7 +46,7 @@ c_ Solution:
             bit_0 = (bit_t & elmt) | (bit_0 & ~elmt)  # three times means 0 times (mod 3)
         r.. bit_1
 
-    ___ singleNumber_array  A):
+    ___ singleNumber_array  A
         """
         add the bit vertically; bit sum
 
@@ -60,18 +60,18 @@ c_ Solution:
         cnt = [0 ___ _ __ x..(32)]
 
         ___ elmt __ A:
-            ___ i __ x..(32):
+            ___ i __ x..(32
                 __ elmt>>i&1__1:
                     cnt[i] = (cnt[i]+1)%3
 
         result = 0
-        ___ i __ x..(32):
+        ___ i __ x..(32
             result |= cnt[i]<<i
 
         r.. result
 
 
-    ___ singleNumber  A):
+    ___ singleNumber  A
         """
         add the bit vertically; bit sum
 

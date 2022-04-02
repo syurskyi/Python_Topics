@@ -12,10 +12,10 @@ TIM_BLOG = ('https://bites-data.s3.us-east-2.amazonaws.com/'
 ___ load_page
     """Download the blog html and return its decoded content"""
     w__ requests.Session() __ session:
-        r.. session.get(TIM_BLOG).content.decode('utf-8')
+        r.. session.get(TIM_BLOG).content.d.. 'utf-8')
 
 
-___ get_top_books(content=N.., limit=5):
+___ get_top_books(content=N.., limit=5
     """Make a BeautifulSoup object loading in content,
        find all links and filter on AMAZON, extract the book title
        and count them, return the top "limit" books (default 5)"""

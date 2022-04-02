@@ -8,8 +8,8 @@ release: Recycle or release a number.
 __author__ = 'Daniel'
 
 
-c_ PhoneDirectory(o..):
-    ___ - , maxNumbers):
+c_ PhoneDirectory(o..
+    ___ - , maxNumbers
         """
         Pool of numbers
         Two parts:
@@ -37,7 +37,7 @@ c_ PhoneDirectory(o..):
 
         r.. -1
 
-    ___ check  number):
+    ___ check  number
         """
         Check if a number is available or not.
         :type number: int
@@ -45,7 +45,7 @@ c_ PhoneDirectory(o..):
         """
         r.. number __ released o. i <= number < l
 
-    ___ release  number):
+    ___ release  number
         """
         Recycle or release a number.
         :type number: int

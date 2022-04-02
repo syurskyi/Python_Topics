@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ integerReplacement  n):
+c_ Solution(o..
+  ___ integerReplacement  n
     """
     :type n: int
     :rtype: int

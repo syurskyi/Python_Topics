@@ -9,7 +9,7 @@ _______ unittest
 ____ octal _______ parse_octal
 
 
-c_ OctalTest(unittest.TestCase):
+c_ OctalTest(unittest.TestCase
     ___ test_octal_1_is_decimal_1
         assertEqual(parse_octal("1"), 1)
 

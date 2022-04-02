@@ -7,8 +7,8 @@ For example, the 32-bit integer ’11' has binary representation
 
 """
 
-c_ Solution(o..):
-    ___ hammingWeight  n):
+c_ Solution(o..
+    ___ hammingWeight  n
         """
         :type n: int
         :rtype: int

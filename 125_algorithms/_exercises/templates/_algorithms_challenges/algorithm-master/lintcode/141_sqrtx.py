@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ sqrt  x):
+    ___ sqrt  x
         """
         :type x: int
         :rtype: int

@@ -1,7 +1,7 @@
-c_ Solution(o..):
+c_ Solution(o..
 
   # O(n) sapce complexity, **stack**
-  ___ verifyPreorder  preorder):
+  ___ verifyPreorder  preorder
     """
     :type preorder: List[int]
     :rtype: bool

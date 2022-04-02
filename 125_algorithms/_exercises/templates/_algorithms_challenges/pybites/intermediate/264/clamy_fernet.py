@@ -59,4 +59,4 @@ c_ ClamyFernet:
 
     ___ decrypt  token: ByteString) __ s..:
         """Decrypts the encrypted message passed to it"""
-        r.. clf.decrypt(token).decode()
+        r.. clf.decrypt(token).d.. )

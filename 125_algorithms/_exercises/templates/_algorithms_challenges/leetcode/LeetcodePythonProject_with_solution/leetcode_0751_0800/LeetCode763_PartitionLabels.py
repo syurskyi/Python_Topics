@@ -3,8 +3,8 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ partitionLabels  S):
+c_ Solution(o..
+    ___ partitionLabels  S
         """
         :type S: str
         :rtype: List[int]
@@ -12,14 +12,14 @@ c_ Solution(o..):
         s = S
         hashmap    # dict
         res    # list
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c n.. __ hashmap:
                 hashmap[c] = [i, i]
             ____:
                 hashmap[c][1] = i
         left = 0
         maxLen = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ i > maxLen:
                 res.a..(maxLen-left+1)
                 left = i

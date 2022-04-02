@@ -5,14 +5,14 @@ premium question
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         sums    # list
 
     ___ checkEqualTree  root: TreeNode) __ b..:
@@ -24,7 +24,7 @@ c_ Solution:
         total = sums.pop()
         r.. total % 2 __ 0 a.. total // 2 __ sums
 
-    ___ dfs  node):
+    ___ dfs  node
         __ n.. node:
             r.. 0
 
@@ -36,7 +36,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         """
         Save space, two passes
         """
@@ -59,7 +59,7 @@ c_ Solution:
         dfs(root)
         r.. exists
 
-    ___ dfs  node):
+    ___ dfs  node
         __ n.. node:
             r.. 0
 

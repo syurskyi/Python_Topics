@@ -45,7 +45,7 @@ c_ Solution:
         """
         r.. dfs(N, K, T..)
 
-    ___ dfs  N, K, not_flip):
+    ___ dfs  N, K, not_flip
         __ N __ 1:
             r.. 0 __ not_flip ____ 1
         half_l = 2 ** (N - 1) // 2
@@ -67,7 +67,7 @@ c_ Solution:
         """
         row = 0
         pos = 1
-        ___ n __ r..(1, N):
+        ___ n __ r..(1, N
             row = (row << pos) + (~row & 2 ** pos - 1)
             pos *= 2
 

@@ -6,7 +6,7 @@ ____ high_scores _______ HighScores
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
 
 
-c_ HighScoreTest(unittest.TestCase):
+c_ HighScoreTest(unittest.TestCase
     ___ test_list_of_scores
         scores = [30, 50, 20, 70]
         expected = [30, 50, 20, 70]

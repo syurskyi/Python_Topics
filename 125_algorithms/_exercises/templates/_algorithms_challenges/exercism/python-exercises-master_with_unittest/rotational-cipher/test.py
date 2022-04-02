@@ -5,7 +5,7 @@ _______ rotational_cipher
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ RotationalCipher(unittest.TestCase):
+c_ RotationalCipher(unittest.TestCase
     ___ test_rotate_a_by_1
         assertEqual(rotational_cipher.rotate('a', 1), 'b')
 

@@ -1,6 +1,6 @@
 __author__ = 'Danyang'
 c_ Solution:
-    ___ addBinary_builtin  a, b):
+    ___ addBinary_builtin  a, b
         """
         Built-in function
         :param a: string
@@ -11,14 +11,14 @@ c_ Solution:
         b = i..(b, 2)
         r.. bin(a+b)[2:]
 
-    ___ addBinary  a, b):
+    ___ addBinary  a, b
         """
         Built-in function
         :param a: string
         :param b: string
         :return: string
         """
-        __ l..(a)>l..(b):
+        __ l..(a)>l..(b
             a, b = b, a
 
         a, b = l..(a), l..(b)

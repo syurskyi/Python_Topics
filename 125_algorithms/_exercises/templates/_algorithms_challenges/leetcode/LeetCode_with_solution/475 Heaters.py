@@ -20,7 +20,7 @@ _______ bisect
 
 
 c_ Solution:
-    ___ findRadius  houses, heaters):
+    ___ findRadius  houses, heaters
         """
         check the responsibility
         use bisect
@@ -41,7 +41,7 @@ c_ Solution:
             
         r.. r
 
-    ___ findRadius_naive  houses, heaters):
+    ___ findRadius_naive  houses, heaters
         """
         check the responsibility
         :type houses: List[int]

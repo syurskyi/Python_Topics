@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ triangleNumber  nums):
+c_ Solution(o..
+  ___ triangleNumber  nums
     ans = 0
     nums.s..()
     ___ i __ r..(2, l..(nums)):

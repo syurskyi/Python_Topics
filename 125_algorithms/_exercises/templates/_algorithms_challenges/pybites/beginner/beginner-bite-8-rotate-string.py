@@ -20,7 +20,7 @@ def test_rotate():
 """
 _______ c..
 
-___ rotate(s__, n):
+___ rotate(s__, n
     """Rotate characters in a string. Expects string and n (int) for
        number of characters to move.
     """

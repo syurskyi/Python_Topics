@@ -3,8 +3,8 @@ Created on May 1, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ mostCommonWord  paragraph, banned):
+c_ Solution(o..
+    ___ mostCommonWord  paragraph, banned
         """
         :type paragraph: str
         :type banned: List[str]

@@ -62,7 +62,7 @@ Explanation:The maximum width existing in the fourth level with the length 8 (6,
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

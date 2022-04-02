@@ -4,18 +4,18 @@ Created on Feb 28, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findStrobogrammatic  n):
+c_ Solution(o..
+    ___ findStrobogrammatic  n
         """
         :type n: int
         :rtype: List[str]
         """
-        pairs = ['00', '11', '69', '96', '88']
+        pairs =  '00', '11', '69', '96', '88'
         res    # list
         helper(0, n-1, ['']*n, res)
         r.. res
     
-    ___ helper  l, r, curr, res):
+    ___ helper  l, r, curr, res
         __ l > r:
             res.a..(''.j..(curr))
             r..
@@ -28,13 +28,13 @@ c_ Solution(o..):
                 _____
             helper(l+1, r-1, curr, res)
     
-    ___ findStrobogrammatic_short  n):
+    ___ findStrobogrammatic_short  n
         """
         :type n: int
         :rtype: List[str]
         """
-        evenMidCandidate = ['11', '69', '88', '96', '00']
-        oddMidCandidate = ['0', '1', '8']
+        evenMidCandidate =  '11', '69', '88', '96', '00'
+        oddMidCandidate =  '0', '1', '8'
         __ n __ 1:
             r.. oddMidCandidate
         __ n __ 2:

@@ -1,4 +1,4 @@
-___ filter_names(names):
+___ filter_names(names
     IGNORE_CHAR = 'b'
     QUIT_CHAR = 'q'
     MAX_NAMES = 5

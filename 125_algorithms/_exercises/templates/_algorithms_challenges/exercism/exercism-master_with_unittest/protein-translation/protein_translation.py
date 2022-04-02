@@ -30,12 +30,12 @@ STOP_CODONS = s..({"UAA", "UAG", "UGA"})
 CODON_LENGTH = 3
 
 
-___ proteins(strand):
+___ proteins(strand
     polypeptide    # list
     codons = split_into_codons(strand)
 
     ___ codon __ codons:
-        __ (codon __ STOP_CODONS):
+        __ (codon __ STOP_CODONS
             r.. polypeptide
         ____:
             polypeptide.a..(CODON_TO_PROTEIN[codon])
@@ -43,6 +43,6 @@ ___ proteins(strand):
     r.. polypeptide
 
 
-___ split_into_codons(strand):
+___ split_into_codons(strand
     r.. [strand[i:i + CODON_LENGTH] ___ i __ r..(0, l..(strand),
                                                       CODON_LENGTH)]

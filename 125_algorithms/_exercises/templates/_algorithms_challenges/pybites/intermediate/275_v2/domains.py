@@ -8,7 +8,7 @@ COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
 TARGET_DIV = {"class": "middle_info_noborder"}
 
 
-___ get_common_domains(url=COMMON_DOMAINS):
+___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
 
     ___
@@ -27,7 +27,7 @@ ___ get_common_domains(url=COMMON_DOMAINS):
     r.. [value.getText(strip=T..) ___ row __ rows ___ value __ row.select('td:nth-child(3)')]
 
 
-___ get_domain(s__):
+___ get_domain(s__
 
 
     r.. __.s..(r'@(.+)',s__).group(1)

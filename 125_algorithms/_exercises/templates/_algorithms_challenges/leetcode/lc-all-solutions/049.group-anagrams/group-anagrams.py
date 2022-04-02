@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ groupAnagrams  strs):
+c_ Solution(o..
+  ___ groupAnagrams  strs
     """
     :type strs: List[str]
     :rtype: List[List[str]]
     """
 
-    ___ hash(count):
+    ___ hash(count
       p1, p2 = 2903, 29947
       ret = 0
       ___ c __ count:

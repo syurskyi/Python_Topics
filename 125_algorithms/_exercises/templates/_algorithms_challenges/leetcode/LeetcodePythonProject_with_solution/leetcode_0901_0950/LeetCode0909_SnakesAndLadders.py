@@ -1,12 +1,12 @@
-c_ Solution(o..):
-    ___ snakesAndLadders  board):
+c_ Solution(o..
+    ___ snakesAndLadders  board
         """
         :type board: List[List[int]]
         :rtype: int
         """
         n = l..(board)
         newboard    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             newboard.extend(board[n-i-1] __ i % 2 __ 0 ____ board[n-i-1][::-1])
         board = newboard
         n = l..(board)
@@ -14,7 +14,7 @@ c_ Solution(o..):
         visited = s..([0])
         w.... queue:
             i, d = queue.pop(0)
-            ___ j __ r..(i+1, i+7):
+            ___ j __ r..(i+1, i+7
                 __ j __ n-1:
                     r.. d+1
                 __ j n.. __ visited:

@@ -10,7 +10,7 @@ _______ operator
 
 
 c_ Solution:
-    ___ characterReplacement  s, k):
+    ___ characterReplacement  s, k
         """
         Replace any letter with another letter - replace any letter with any
         letter.

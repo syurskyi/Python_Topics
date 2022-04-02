@@ -15,5 +15,5 @@ ____ emojis _______ get_emoji_indices
     ('pytest is so cool 😎, after grasping it 🤯', [18, 39]),
     ('Books can be boring 😴, better to code 💪❗', [20, 38, 39]),
 ])
-___ test_get_emoji_indices(emojis, expected):
+___ test_get_emoji_indices(emojis, expected
     ... get_emoji_indices(emojis) __ expected

@@ -25,9 +25,9 @@ ___ alpha_index_series() __ pd.Series:
     """
     alphabet    # list
     numbers    # list
-    ___ letter __ r..(97, 123):
+    ___ letter __ r..(97, 123
         alphabet.a..(chr(letter))
-    ___ number __ r..(1, 27):
+    ___ number __ r..(1, 27
         numbers.a..(number)
     r.. pd.Series(numbers, index=alphabet)
 
@@ -40,8 +40,8 @@ ___ object_values_series() __ pd.Series:
     """
     alphabet    # list
     numbers =[]
-    ___ letter __ r..(65, 91):
+    ___ letter __ r..(65, 91
         alphabet.a..(chr(letter))
-    ___ number __ r..(101, 127):
+    ___ number __ r..(101, 127
         numbers.a..(number)
     r.. pd.Series(alphabet, index=numbers)

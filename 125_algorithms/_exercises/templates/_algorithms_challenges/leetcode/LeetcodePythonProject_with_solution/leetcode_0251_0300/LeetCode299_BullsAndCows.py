@@ -4,8 +4,8 @@ Created on Mar 9, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ getHint  secret, guess):
+c_ Solution(o..
+    ___ getHint  secret, guess
         bulls = s..()
         hashmap    # dict
         ___ i, (c1, c2) __ e..(z..(secret, guess)):
@@ -14,7 +14,7 @@ c_ Solution(o..):
             ____:
                 hashmap[c1] = hashmap.get(c1, 0)+1
         cows = 0
-        ___ i, c __ e..(guess):
+        ___ i, c __ e..(guess
             __ i n.. __ bulls:
                 __ c __ hashmap a.. hashmap[c] > 0:
                     hashmap[c] -= 1

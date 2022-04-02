@@ -10,8 +10,8 @@ house, determine the maximum amount of money you can rob tonight without
 alerting the police.
 """
 
-c_ Solution(o..):
-    ___ rob  nums):
+c_ Solution(o..
+    ___ rob  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution(o..):
         __ n <= 1:
             r.. t[n]
         t[2] = m..(nums[:2])
-        ___ i __ r..(3, n + 1):
+        ___ i __ r..(3, n + 1
             t[i] = m..(t[i - 2] + nums[i - 1], t[i - 1])
         r.. t[n]
 

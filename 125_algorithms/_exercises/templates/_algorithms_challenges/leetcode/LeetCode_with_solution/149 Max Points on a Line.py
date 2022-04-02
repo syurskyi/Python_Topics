@@ -4,7 +4,7 @@ Given n points on a 2D plane, find the maximum number of points that lie on the 
 __author__ = 'Danyang'
 #Definition for a point
 c_ Point:
-    ___ - , a=0, b=0):
+    ___ - , a=0, b=0
         """
 
         :param a: int
@@ -15,7 +15,7 @@ c_ Point:
         y = b
 
 c_ Solution:
-    ___ maxPoints_complicated  points):
+    ___ maxPoints_complicated  points
         """
 
         :param points: a list of Points
@@ -25,8 +25,8 @@ c_ Solution:
         hash_map    # dict  # key -> inner_dict, where key = (k, b), inner_dict is index -> list
 
         length = l..(points)
-        ___ i __ x..(length):
-            ___ j __ x..(i+1, length):
+        ___ i __ x..(length
+            ___ j __ x..(i+1, length
                 point1 = points[i]
                 point2 = points[j]
                 __ point1.x __ point2.x:
@@ -46,10 +46,10 @@ c_ Solution:
                 hash_map[key][j] = 1
 
 
-        __ (length<=1):
+        __ (length<=1
             r.. length
 
-        __(l..(hash_map)__0):
+        __(l..(hash_map)__0
             r.. 0
 
         maxa = -1<<32
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. maxa
 
-    ___ maxPoints  points):
+    ___ maxPoints  points
         """
         reference: http://fisherlei.blogspot.sg/2013/12/leetcode-max-points-on-line-solution.html
         :param points: a list of Points
@@ -69,13 +69,13 @@ c_ Solution:
         """
         maxa = -1<<32
         length = l..(points)
-        __ (length<=1):
+        __ (length<=1
             r.. length
 
-        ___ i __ x..(length):
+        ___ i __ x..(length
             hash_map    # dict
             duplicate = 1 # point_i itself
-            ___ j __ x..(length):
+            ___ j __ x..(length
                 __ i__j:
                     _____
 

@@ -19,8 +19,8 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ coinChange  coins, amount):
+c_ Solution(o..
+    ___ coinChange  coins, amount
         """
         DP with early prune
         Let F[i] be the fewest number of coins make to i
@@ -38,7 +38,7 @@ c_ Solution(o..):
             __ k < amount+1:
                 F[k] = 1
 
-        ___ i __ x..(1, amount+1):
+        ___ i __ x..(1, amount+1
             __ F[i] != sys.maxint:
                 ___ k __ coins:
                     __ i+k <= amount:
@@ -47,8 +47,8 @@ c_ Solution(o..):
         r.. F[amount] __ F[amount] != sys.maxint ____ -1
 
 
-c_ SolutionTLE(o..):
-    ___ coinChange  coins, amount):
+c_ SolutionTLE(o..
+    ___ coinChange  coins, amount
         """
         Let F[i] be the fewest number of coins make to i
         F[i] = min(F[i-k]+1, \forall k)
@@ -62,7 +62,7 @@ c_ SolutionTLE(o..):
             __ k < amount + 1:
                 F[k] = 1
 
-        ___ i __ x..(1, amount+1):
+        ___ i __ x..(1, amount+1
             ___ k __ coins:
                 __ i-k > 0 a.. F[i-k] != sys.maxint:
                     F[i] = m..(F[i], F[i-k]+1)

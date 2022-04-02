@@ -3,7 +3,7 @@ c_ Solution:
     @param: x: a double
     @return: the square root of x
     """
-    ___ sqrt  x):
+    ___ sqrt  x
         __ n.. x:
             r.. x
 

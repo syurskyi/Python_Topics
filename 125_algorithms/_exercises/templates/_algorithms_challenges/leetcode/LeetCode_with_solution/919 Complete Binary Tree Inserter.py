@@ -32,7 +32,7 @@ Every value of a given or inserted node is between 0 and 5000.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -42,7 +42,7 @@ ____ c.. _______ d..
 
 
 c_ CBTInserter:
-    ___ - , root: TreeNode):
+    ___ - , root: TreeNode
         """
         Maintain a dequeue of insertion candidates
         Insertion candidates are non-full nodes (superset of leaf nodes)

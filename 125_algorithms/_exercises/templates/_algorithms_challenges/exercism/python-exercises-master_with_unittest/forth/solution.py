@@ -1,8 +1,8 @@
-c_ StackUnderflowError(E..):
+c_ StackUnderflowError(E..
     p..
 
 
-___ is_integer(s__):
+___ is_integer(s__
     ___
         i..(s__)
         r.. T..
@@ -10,7 +10,7 @@ ___ is_integer(s__):
         r.. F..
 
 
-___ evaluate(input_data):
+___ evaluate(input_data
     __ n.. input_data:
         r.. []
     defines    # dict
@@ -19,15 +19,15 @@ ___ evaluate(input_data):
         values.pop()
         values.pop(0)
         key = values.pop(0).l..
-        __ is_integer(key):
+        __ is_integer(key
             r.. ValueError("Integers cannot be redefined")
         defines[key] = values
     stack    # list
     input_data = input_data[-1].s.. 
-    w.... any(input_data):
+    w.... any(input_data
         word = input_data.pop(0).l..
         ___
-            __ is_integer(word):
+            __ is_integer(word
                 stack.a..(i..(word))
             ____ word __ defines:
                 input_data = defines[word] + input_data

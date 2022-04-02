@@ -4,7 +4,7 @@ _______ __
 
 c_ ToxIniParser:
 
-    ___ - , ini_file):
+    ___ - , ini_file
         """Use configparser to load ini_file into self.config"""
         config = configparser.ConfigParser()
         config.read(ini_file)
@@ -20,7 +20,7 @@ c_ ToxIniParser:
     ___ environments
         """Return a list of environments
            (= "envlist" attribute of [tox] section)"""
-        r.. l..({x ___ x __ __.f..(r'[-\w]+', config['tox']['envlist'])})
+        r.. l..({x ___ x __ __.f..(r'[-\w]+', config 'tox'  'envlist' )})
 
     $
     ___ base_python_versions

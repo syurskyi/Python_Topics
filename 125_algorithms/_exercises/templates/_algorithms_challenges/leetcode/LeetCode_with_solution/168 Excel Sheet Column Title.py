@@ -15,7 +15,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ convertToTitle  n):
+    ___ convertToTitle  n
         """
         :type n: int
         :rtype: str

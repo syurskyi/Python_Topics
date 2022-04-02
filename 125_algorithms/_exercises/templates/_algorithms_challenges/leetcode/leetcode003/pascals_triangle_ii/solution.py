@@ -15,15 +15,15 @@ Note:
 Could you optimize your algorithm to use only O(k) extra space?
 """
 
-c_ Solution(o..):
-    ___ getRow  rowIndex):
+c_ Solution(o..
+    ___ getRow  rowIndex
         """
         :type rowIndex: int
         :rtype: List[int]
         """
         res = [1 ___ i __ r..(rowIndex + 1)]
-        ___ row __ r..(rowIndex + 1):
-            ___ col __ r..(1, row):
+        ___ row __ r..(rowIndex + 1
+            ___ col __ r..(1, row
                 col = row - col
                 res[col] += res[col - 1]
         r.. res

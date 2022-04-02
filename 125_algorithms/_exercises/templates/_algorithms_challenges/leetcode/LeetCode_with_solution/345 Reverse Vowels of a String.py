@@ -4,13 +4,13 @@ Write a function that takes a string as input and reverse only the vowels of a s
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ reverseVowels  s):
+c_ Solution(o..
+    ___ reverseVowels  s
         """
         :type s: str
         :rtype: str
         """
-        vowels = s..(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'])
+        vowels = s..( 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' )
         s = l..(s)
         j = l..(s) - 1
         i = 0

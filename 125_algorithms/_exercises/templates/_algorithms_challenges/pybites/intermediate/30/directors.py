@@ -25,7 +25,7 @@ ___ get_movies_by_director
 
     movie_metadata = defaultdict(l..)
 
-    w__ open(local) __ file:
+    w__ o.. local) __ file:
         csv_content = csv.DictReader(file)
 
         ___ row __ csv_content:
@@ -48,14 +48,14 @@ ___ get_movies_by_director
     r.. movie_metadata
 
 
-___ calc_mean_score(movies):
+___ calc_mean_score(movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     movie_mean = [movie.score ___ movie __ movies]
     r.. r..(s..(movie_mean) / l..(movie_mean), 1)
 
 
-___ get_average_scores(directors):
+___ get_average_scores(directors
     """Iterate through the directors dict (returned by get_movies_by_director),
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account

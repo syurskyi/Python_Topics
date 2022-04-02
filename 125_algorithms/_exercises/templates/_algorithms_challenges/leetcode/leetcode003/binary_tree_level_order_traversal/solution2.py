@@ -24,8 +24,8 @@ return its level order traversal as:
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-    ___ levelOrder  root):
+c_ Solution(o..
+    ___ levelOrder  root
         """
         :type root: TreeNode
         :rtype: List[List[int]]
@@ -38,7 +38,7 @@ c_ Solution(o..):
         w.... queue:
             n = l..(queue)
             level    # list
-            ___ i __ r..(n):
+            ___ i __ r..(n
                 root = queue.pop(0)
                 __ root.left __ n.. N..
                     queue.a..(root.left)

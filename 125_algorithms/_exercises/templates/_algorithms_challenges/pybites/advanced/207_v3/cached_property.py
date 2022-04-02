@@ -3,12 +3,12 @@ ____ r__ _______ r__
 ____ time _______ sleep
 
 
-___ cached_property(func):
+___ cached_property(func
     """decorator used to cache expensive object attribute lookup"""
 
     @wraps(func)
-    ___ getter  *args, **kwargs):
-        __ n.. hasattr(cached_property, "cache"):
+    ___ getter  *args, **kwargs
+        __ n.. hasattr(cached_property, "cache"
             cached_property.cache = d..()
         __ func n.. __ cached_property.cache:
             cached_property.cache[func] = func(self)
@@ -24,7 +24,7 @@ c_ Planet:
     TEMPORAL_SHIFT = 0.12345
     SOLAR_MASS_UNITS = 'M\N{SUN}'
 
-    ___ - , color):
+    ___ - , color
         color = color
         _mass = N..
 

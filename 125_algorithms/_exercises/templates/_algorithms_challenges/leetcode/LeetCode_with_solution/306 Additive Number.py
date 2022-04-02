@@ -17,26 +17,26 @@ Given a string represents an integer, write a function to determine if it's an a
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ isAdditiveNumber  num):
+c_ Solution(o..
+    ___ isAdditiveNumber  num
         """
         Backtracking
         :type num: str
         :rtype: bool
         """
         n = l..(num)
-        ___ i __ x..(1, n):
-            ___ j __ x..(i, n):
-                __ predicate(num, 0, i, j):
+        ___ i __ x..(1, n
+            ___ j __ x..(i, n
+                __ predicate(num, 0, i, j
                     r.. T..
 
         r.. F..
 
-    ___ predicate  s, b, i, j):
+    ___ predicate  s, b, i, j
         n1 = s[b:i]
         n2 = s[i:j]
 
-        __ b != 0 a.. j __ l..(s):
+        __ b != 0 a.. j __ l..(s
             r.. T..
         __ n.. n1 o. n.. n2:
             r.. F..

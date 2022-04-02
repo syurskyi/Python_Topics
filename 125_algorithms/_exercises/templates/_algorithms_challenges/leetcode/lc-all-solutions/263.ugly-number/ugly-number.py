@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isUgly  n):
+c_ Solution(o..
+  ___ isUgly  n
     """
     :type num: int
     :rtype: bool

@@ -4,8 +4,8 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ canWin  s):
+c_ Solution(o..
+    ___ canWin  s
         """
         :type s: str
         :rtype: bool
@@ -13,14 +13,14 @@ c_ Solution(o..):
         memo    # dict
         r.. helper(s, memo)
     
-    ___ helper  s, memo):
+    ___ helper  s, memo
         __ s __ memo:
             r.. memo[s]
         otherWin = T..
-        ___ i __ r..(l..(s)-1):
+        ___ i __ r..(l..(s)-1
             __ s[i:i+2] __ '++':
                 s0 = s[:i]+'--'+s[i+2:]
-                __ n.. helper(s0, memo):
+                __ n.. helper(s0, memo
                     otherWin = F..
                     _____
         memo[s] = n.. otherWin

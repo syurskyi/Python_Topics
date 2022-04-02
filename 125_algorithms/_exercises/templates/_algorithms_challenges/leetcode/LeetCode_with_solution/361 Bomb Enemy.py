@@ -17,8 +17,8 @@ return 3. (Placing a bomb at (1,1) kills 3 enemies)
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ maxKilledEnemies  grid):
+c_ Solution(o..
+    ___ maxKilledEnemies  grid
         """
         Brute force: O(n * n^2)
         Place the bomb around boundary
@@ -34,11 +34,11 @@ c_ Solution(o..):
         rows = [0 ___ _ __ x..(m)]
         cols = [0 ___ _ __ x..(n)]
         gmax = 0
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 __ i __ 0 o. grid[i-1][j] __ 'W':
                     cols[j] = 0
-                    ___ k __ x..(i, m):
+                    ___ k __ x..(i, m
                         __ grid[k][j] __ 'E':
                             cols[j] += 1
                         ____ grid[k][j] __ 'W':
@@ -46,7 +46,7 @@ c_ Solution(o..):
 
                 __ j __ 0 o. grid[i][j-1] __ 'W':
                     rows[i] = 0
-                    ___ k __ x..(j, n):
+                    ___ k __ x..(j, n
                         __ grid[i][k] __ 'E':
                             rows[i] += 1
                         ____ grid[i][k] __ 'W':

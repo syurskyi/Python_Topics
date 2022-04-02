@@ -29,7 +29,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ findMaxForm  strs, m, n):
+    ___ findMaxForm  strs, m, n
         """
         0-1 knapsack
         let F[p][q][i] be the max end at A[i], with p 0's and q 1's remaining
@@ -47,15 +47,15 @@ c_ Solution:
 
         F = [[0 ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         z, o = c.. strs[0])
-        ___ i __ r..(m+1):
-            ___ j __ r..(n+1):
+        ___ i __ r..(m+1
+            ___ j __ r..(n+1
                 __ i + z<= m a.. j + o <= n:
                     F[i][j] = 1
 
         ___ e __ r..(1, l..(strs)):
             z, o = c.. strs[e])
-            ___ i __ r..(m+1):
-                ___ j __ r..(n+1):
+            ___ i __ r..(m+1
+                ___ j __ r..(n+1
                     __ i + z <= m a.. j + o <= n:
                         F[i][j] = m..(
                             F[i][j],
@@ -69,7 +69,7 @@ c_ Solution:
         )
         r.. ret
 
-    ___ c.. self, s):
+    ___ c.. self, s
         z, o = 0, 0
         ___ e __ s:
             __ e __ "0":
@@ -79,7 +79,7 @@ c_ Solution:
 
         r.. z, o
 
-    ___ findMaxForm_TLE  strs, m, n):
+    ___ findMaxForm_TLE  strs, m, n
         """
         0-1 knapsack
         let F[p][q][i] be the max end at A[i], with p 0's and q 1's
@@ -95,15 +95,15 @@ c_ Solution:
 
         F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
         count = Counter(strs[0])
-        ___ i __ r..(m+1):
-            ___ j __ r..(n+1):
+        ___ i __ r..(m+1
+            ___ j __ r..(n+1
                 __ i + count["0"] <= m a.. j + count["1"] <= n:
                     F[i][j][0] = 1
 
         ___ e __ r..(1, l..(strs)):
             count = Counter(strs[e])
-            ___ i __ r..(m+1):
-                ___ j __ r..(n+1):
+            ___ i __ r..(m+1
+                ___ j __ r..(n+1
                     __ i + count["0"] <= m a.. j + count["1"] <= n:
                         F[i][j][e] = F[i + count["0"]][j + count["1"]][e-1] + 1
                     F[i][j][e] = m..(F[i][j][e], F[i][j][e-1])
@@ -115,7 +115,7 @@ c_ Solution:
         )
         r.. ret
 
-    ___ findMaxForm_error  strs, m, n):
+    ___ findMaxForm_error  strs, m, n
         """
         0-1 knapsack
         let F[p][q][i] be the max end at A[i], with p 0's and q 1's
@@ -136,8 +136,8 @@ c_ Solution:
 
         ___ e __ r..(1, l..(strs)):
             count = Counter(strs[e])
-            ___ i __ r..(m+1):
-                ___ j __ r..(n+1):
+            ___ i __ r..(m+1
+                ___ j __ r..(n+1
                     __ count["0"] <= i a.. count["1"] <= j:
                         F[i - count["0"]][j - count["1"]][e] = F[i][j][e-1] + 1
                     ____:
@@ -150,7 +150,7 @@ c_ Solution:
         )
         r.. ret
 
-    ___ findMaxForm_error  strs, m, n):
+    ___ findMaxForm_error  strs, m, n
         """
         reward is 1 regarless of length, then greedy - error
 

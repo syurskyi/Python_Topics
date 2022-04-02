@@ -4,8 +4,8 @@ Created on Jan 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minDistance  word1, word2):
+c_ Solution(o..
+    ___ minDistance  word1, word2
         """
         :type word1: str
         :type word2: str
@@ -14,13 +14,13 @@ c_ Solution(o..):
         n = l..(word1)
         m = l..(word2)
         dp = [[0]*(m+1) ___ i __ r..(n+1)]
-        ___ i __ r..(n+1):
+        ___ i __ r..(n+1
             dp[i][0] = i
-        ___ j __ r..(m+1):
+        ___ j __ r..(m+1
             dp[0][j] = j
-        ___ i __ r..(0, n):
+        ___ i __ r..(0, n
             c1 = word1[i]
-            ___ j __ r..(0, m):
+            ___ j __ r..(0, m
                 c2 = word2[j]
                 __ c1 __ c2:
                     dp[i+1][j+1] = dp[i][j]

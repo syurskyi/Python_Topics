@@ -12,7 +12,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ lowestCommonAncestor3  root, a, b):
+    ___ lowestCommonAncestor3  root, a, b
         """
         :type root: TreeNode
         :type a: TreeNode
@@ -26,7 +26,7 @@ c_ Solution:
 
         r.. lca __ has_a a.. has_b ____ N..
 
-    ___ divide_conquer  node, a, b):
+    ___ divide_conquer  node, a, b
         __ n.. node:
             r.. N.., F.., F..
 

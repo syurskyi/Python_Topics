@@ -19,13 +19,13 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ levelOrder  root):
+    ___ levelOrder  root
         """
         Queue
         BFS
@@ -40,13 +40,13 @@ c_ Solution:
         w.... q:
             length = l..(q)
             # cur_level = []
-            ___ i __ r..(length):
+            ___ i __ r..(length
                 cur = q[i]
                 __ cur.left:
                     q.a..(cur.left)
                 __ cur.right:
                     q.a..(cur.right)
-            result.a..(map(l.... x: x.val, q[:length]))  # no need to create a new list
+            result.a.. m..(l.... x: x.val, q[:length]))  # no need to create a new list
             q = q[length:]  # no need to create a new list
         r.. result
 

@@ -44,11 +44,11 @@ ___ my_solution_get_harry_most_common_word
 
     stopwords    # list
     filtered    # list
-    f1 = open(stopwords_file, 'r')
+    f1 = o.. stopwords_file, 'r')
     ___ line __ f1:
         stopwords.a..(line.strip())
 
-    f2 = open(harry_text, 'r')
+    f2 = o.. harry_text, 'r')
     ___ line __ f2:
         ___ word __ line.s.. :
             print(word)
@@ -62,12 +62,12 @@ ___ my_solution_get_harry_most_common_word
 
 ___ pyb_solution_get_harry_most_common_word
     ___ get_harry_most_common_word
-        w__ open(stopwords_file) __ f:
-            stopwords = s..(f.read().s...l...s..('\n'))
+        w__ o.. stopwords_file) __ f:
+            stopwords = s..(f.r...s...l...s..('\n'))
 
-        w__ open(harry_text) __ f:
+        w__ o.. harry_text) __ f:
             words = [__.sub(r'\W+', r'', word)  # [^a-zA-Z0-9_]
-                     ___ word __ f.read().l...s.. ]
+                     ___ word __ f.r...l...s.. ]
 
             words = [word ___ word __ words __ word.s..
                      a.. word n.. __ stopwords]

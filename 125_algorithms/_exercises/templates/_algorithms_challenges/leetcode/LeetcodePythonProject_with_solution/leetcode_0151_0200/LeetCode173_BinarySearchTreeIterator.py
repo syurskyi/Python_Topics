@@ -5,14 +5,14 @@ Created on Feb 14, 2017
 '''
 
 # Definition for a  binary tree node
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ BSTIterator(o..):
-    ___ - , root):
+c_ BSTIterator(o..
+    ___ - , root
         """
         :type root: TreeNode
         """

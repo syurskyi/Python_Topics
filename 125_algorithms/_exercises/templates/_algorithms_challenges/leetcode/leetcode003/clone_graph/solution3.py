@@ -9,8 +9,8 @@ of its neighbors.
 #         self.label = x
 #         self.neighbors = []
 
-c_ Solution(o..):
-    ___ cloneGraph  node):
+c_ Solution(o..
+    ___ cloneGraph  node
         """
         :type node: UndirectedGraphNode
         :rtype: UndirectedGraphNode
@@ -24,7 +24,7 @@ c_ Solution(o..):
         d = {node: start_cloned_node}
         queue.a..(node)
         i = 0
-        w.... i < l..(queue):
+        w.... i < l..(queue
             node = queue[i]
             i += 1
             ___ neighbor __ node.neighbors:

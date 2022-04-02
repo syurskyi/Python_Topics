@@ -13,10 +13,10 @@ c_ Solution:
     @param: head: The head of linked list.
     @return: You should return the head of the sorted linked list, using constant space complexity.
     """
-    ___ sortList  head):
+    ___ sortList  head
         r.. merge_sort(head)
 
-    ___ quick_sort  head):
+    ___ quick_sort  head
         __ n.. head o. n.. head.next:
             r.. head
 
@@ -50,7 +50,7 @@ c_ Solution:
 
         r.. dummy.next
 
-    ___ merge_sort  head):
+    ___ merge_sort  head
         __ n.. head o. n.. head.next:
             r.. head
 
@@ -80,7 +80,7 @@ c_ Solution:
 
         r.. dummy.next
 
-    ___ find_middle  head):
+    ___ find_middle  head
         slow, fast = head, head.next
 
         w.... fast a.. fast.next:
@@ -89,7 +89,7 @@ c_ Solution:
 
         r.. slow
 
-    ___ get_tail  head):
+    ___ get_tail  head
         __ n.. head:
             r..
 

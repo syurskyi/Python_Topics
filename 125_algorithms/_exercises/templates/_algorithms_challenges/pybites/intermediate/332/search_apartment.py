@@ -24,7 +24,7 @@ ___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
         delta = 1
     
     result    # list
-    ___ i __ r..(start,end,delta):
+    ___ i __ r..(start,end,delta
         building_height = buildings[i]
         __ building_height > running_max:
             result.a..(i)

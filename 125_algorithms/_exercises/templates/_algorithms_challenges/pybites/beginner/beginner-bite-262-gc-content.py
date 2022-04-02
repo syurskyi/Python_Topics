@@ -17,7 +17,7 @@ For more background info on DNA check out this link.
 
 s = "tgtggtttctttcgggccttcgcgtgtcgccgttggtgcggccctcctc"
 
-___ calculate_gc_content_1st_solution(sequence):
+___ calculate_gc_content_1st_solution(sequence
     """
     Receives a DNA sequence (A, G, C, or T)
     Returns the percentage of GC content (rounded to the last two digits)
@@ -39,17 +39,17 @@ ___ calculate_gc_content_1st_solution(sequence):
         __ v __ F..:
             counts[k] = 0
 
-    result = f__("{0:.2f}".f..(((counts['g'] + counts['c']) / (counts['a'] + counts['c'] + counts['g'] + counts['t'])) * 100))
+    result = f__("{0:.2f}".f..(((counts 'g'  + counts 'c' ) / (counts 'a'  + counts 'c'  + counts 'g'  + counts 't' )) * 100))
     ___
         r.. result
     ______:
         r.. 0
 
-___ calculate_gc_content_2nd_solution(sequence):
+___ calculate_gc_content_2nd_solution(sequence
 
     counts = Counter(sequence.upper())
-    gc_content = counts['G'] + counts['C']
-    at_content = counts['A'] + counts['T']
+    gc_content = counts 'G'  + counts 'C'
+    at_content = counts 'A'  + counts 'T'
     r.. r..((gc_content / (gc_content + at_content)) * 100, 2)
 
 

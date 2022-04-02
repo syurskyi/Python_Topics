@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ validIPAddress  IP):
+c_ Solution(o..
+  ___ validIPAddress  IP
     """
     :type IP: str
     :rtype: str
@@ -14,7 +14,7 @@ c_ Solution(o..):
 
     __ l..(v4) __ 4:
       ___ seg __ v4:
-        __ seg __ "" o. (seg[0] __ "0" a.. l..(seg) > 1):
+        __ seg __ "" o. (seg[0] __ "0" a.. l..(seg) > 1
           r.. "Neither"
         ___ c __ seg:
           __ c n.. __ v4d:

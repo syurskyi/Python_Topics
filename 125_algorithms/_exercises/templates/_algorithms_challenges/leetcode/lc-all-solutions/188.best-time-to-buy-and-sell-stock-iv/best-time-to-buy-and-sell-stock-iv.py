@@ -2,15 +2,15 @@ _______ heapq
 _______ r__
 
 
-c_ Solution(o..):
-  ___ findKthLargest  nums, k):
+c_ Solution(o..
+  ___ findKthLargest  nums, k
     """
     :type A: List[int]
     :type k: int
     :rtype: int
     """
 
-    ___ quickselect(start, end, nums, k):
+    ___ quickselect(start, end, nums, k
       __ start __ end:
         r.. nums[start]
 
@@ -23,12 +23,12 @@ c_ Solution(o..):
       ____:
         r.. quickselect(start, mid - 1, nums, k)
 
-    ___ partition(start, end, nums):
+    ___ partition(start, end, nums
       p = r__.randrange(start, end + 1)
       pv = nums[p]
       nums[end], nums[p] = nums[p], nums[end]
       mid = start
-      ___ i __ r..(start, end):
+      ___ i __ r..(start, end
         __ nums[i] >= pv:
           nums[i], nums[mid] = nums[mid], nums[i]
           mid += 1
@@ -37,7 +37,7 @@ c_ Solution(o..):
 
     r.. quickselect(0, l..(nums) - 1, nums, k - 1)
 
-  ___ maxProfit  k, prices):
+  ___ maxProfit  k, prices
     """
     :type k: int
     :type prices: List[int]

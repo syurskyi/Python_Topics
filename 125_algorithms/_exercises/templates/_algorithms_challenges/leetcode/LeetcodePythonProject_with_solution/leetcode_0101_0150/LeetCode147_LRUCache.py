@@ -4,15 +4,15 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-c_ Node(o..):
+c_ Node(o..
     ___ - , key, val, prevNode=N.., nextNode_ N..
         key = key
         val = val
         prev = prevNode
         next = nextNode
 
-c_ LRUCache(o..):
-    ___ - , capacity):
+c_ LRUCache(o..
+    ___ - , capacity
         """
         :type capacity: int
         """
@@ -21,7 +21,7 @@ c_ LRUCache(o..):
         head = N..
         tail = N..
     
-    ___ removeAndAppend  key):
+    ___ removeAndAppend  key
         node = map[key]
         prevNode = node.prev
         nextNode = node.next
@@ -46,7 +46,7 @@ c_ LRUCache(o..):
         head.prev = N..
         tail.next = N..
     
-    ___ get  key):
+    ___ get  key
         __ key n.. __ map:
             r.. -1
         ____:
@@ -55,7 +55,7 @@ c_ LRUCache(o..):
             removeAndAppend(key)
             r.. val
     
-    ___ s..  key, value):
+    ___ s..  key, value
         __ n.. map:
             node = Node(key, value)
             map[key] = node
@@ -66,13 +66,13 @@ c_ LRUCache(o..):
                 removeAndAppend(key)
                 tail.val = value
             ____:
-                __ l..(map) < capacity:
+                __ l.. m..) < capacity:
                     node = Node(key, value)
                     tail.next = node
                     node.prev = tail
                     tail = node
                     map[key] = node
-                ____ l..(map) __ capacity:
+                ____ l.. m..) __ capacity:
                     node = Node(key, value)
                     map[key] = node
                     tmpHead = head

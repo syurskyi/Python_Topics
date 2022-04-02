@@ -27,6 +27,6 @@ ___ get_movie_longest_runtime
        runtime in minutes, for latter consider adding a _get_runtime helper"""
     longest = s..([i..(movie.get('runtime')[:3]) ___ movie __ get_tree().i..('movie')], r.._T..[0]
     root = ET.f..(xmlstring)
-    ___ movie __ root.f..('movie'):
+    ___ movie __ root.f..('movie'
         __ i..(movie.get('runtime')[:3]) __ longest:
             r..(movie.get('title'))

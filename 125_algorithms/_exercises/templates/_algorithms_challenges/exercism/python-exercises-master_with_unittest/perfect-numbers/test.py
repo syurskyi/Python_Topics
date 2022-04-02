@@ -3,7 +3,7 @@ _______ unittest
 ____ perfect_numbers _______ is_perfect
 
 
-c_ PerfectNumbersTest(unittest.TestCase):
+c_ PerfectNumbersTest(unittest.TestCase
 
     ___ test_first_perfect_number
         assertTrue(is_perfect(6))

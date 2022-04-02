@@ -3,8 +3,8 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findShortestSubArray  nums):
+c_ Solution(o..
+    ___ findShortestSubArray  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         hashmap    # dict
         degree = 0
         cands = s..()
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             hashmap[num] = hashmap.get(num, [])+[i]
             __ l..(hashmap[num]) > degree:
                 degree = l..(hashmap[num])

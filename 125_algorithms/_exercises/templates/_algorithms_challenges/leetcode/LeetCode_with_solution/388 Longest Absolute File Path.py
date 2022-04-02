@@ -39,8 +39,8 @@ Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ lengthLongestPath  input):
+c_ Solution(o..
+    ___ lengthLongestPath  input
         """
         :type input: str
         :rtype: int
@@ -53,7 +53,7 @@ c_ Solution(o..):
             idx = m..(idx, l..(F))
             e = elt.strip('\t')
             prev = -1 __ idx __ 0 ____ F[idx-1]
-            __ idx __ l..(F):
+            __ idx __ l..(F
                 F.a..(prev + 1 + l..(e))
             ____:
                 F[idx] = prev + 1 + l..(e)  # reset

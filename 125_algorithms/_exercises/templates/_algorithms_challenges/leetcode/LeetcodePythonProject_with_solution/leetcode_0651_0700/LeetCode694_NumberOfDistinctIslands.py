@@ -3,28 +3,28 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ numDistinctIslands  grid):
+c_ Solution(o..
+    ___ numDistinctIslands  grid
         """
         :type grid: List[List[int]]
         :rtype: int
         """
         islands = s..()
         m, n = l..(grid), l..(grid[0])
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] __ 1:
                     island = s..()
                     dfs(i, j, i, j, m, n, grid, island)
                     islands.add(t..(island))
         r.. l..(islands)
     
-    ___ dfs  i0, j0, i, j, m, n, grid, island):
+    ___ dfs  i0, j0, i, j, m, n, grid, island
         __ i >= m o. i < 0 o. j >= n o. j < 0 o. grid[i][j] != 1:
             r..
         grid[i][j] = -1
         island.add((i-i0, j-j0))
-        ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+        ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
             dfs(i0, j0, x, y, m, n, grid, island)
     
     ___ test

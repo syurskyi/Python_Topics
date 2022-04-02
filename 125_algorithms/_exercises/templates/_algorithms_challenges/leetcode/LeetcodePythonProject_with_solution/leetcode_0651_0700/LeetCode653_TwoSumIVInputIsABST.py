@@ -4,17 +4,17 @@ Created on Oct 4, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ findTarget  root, k):
+c_ Solution(o..
+    ___ findTarget  root, k
         r.. dfs(root, s..(), k)
     
-    ___ dfs  root, hashset, k):
+    ___ dfs  root, hashset, k
         __ n.. root:
             r.. F..
         __ k-root.val __ hashset:
@@ -23,7 +23,7 @@ c_ Solution(o..):
         r.. dfs(root.left, hashset, k) o.\
             dfs(root.right, hashset, k)
     
-    ___ findTargetSpace  root, k):
+    ___ findTargetSpace  root, k
         """
         :type root: TreeNode
         :type k: int

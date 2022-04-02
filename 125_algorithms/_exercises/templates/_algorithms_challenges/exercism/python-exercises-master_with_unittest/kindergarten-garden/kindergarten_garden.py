@@ -1,3 +1,3 @@
-c_ Garden(o..):
-    ___ - ):
+c_ Garden(o..
+    ___ -
         p..

@@ -3,7 +3,7 @@ c_ Solution:
     @param: s: the string that represents a number
     @return: whether the string is a valid number
     """
-    ___ isNumber  s):
+    ___ isNumber  s
         __ n.. s:
             r.. F..
 
@@ -13,7 +13,7 @@ c_ Solution:
             left += 1
         w.... right >= 0 a.. s[right] __ ' ':
             right -= 1
-        __ left < n a.. s[left] __ ('+', '-'):
+        __ left < n a.. s[left] __ ('+', '-'
             left += 1
 
         __ left > right:
@@ -29,7 +29,7 @@ c_ Solution:
         ___ char __ s:
             __ char __ '.' a.. is_contained_dot:
                 r.. F..
-            __ n.. (char __ '.' o. zero <= o..(char) <= nine):
+            __ n.. (char __ '.' o. zero <= o..(char) <= nine
                 r.. F..
             __ char __ '.':
                 is_contained_dot = T..

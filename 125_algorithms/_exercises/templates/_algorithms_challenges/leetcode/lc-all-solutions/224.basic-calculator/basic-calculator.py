@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ calculate  s):
+c_ Solution(o..
+  ___ calculate  s
     """
     :type s: str
     :rtype: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
     stack    # list
     _stack    # list
     i = 0
-    w.... i < l..(s):
+    w.... i < l..(s
       __ s[i] __ " ":
         i += 1
       ____ s[i] __ "(":
@@ -18,7 +18,7 @@ c_ Solution(o..):
         start = _stack.pop()
         j = start
         a = stack[j]
-        w.... j + 2 < l..(stack):
+        w.... j + 2 < l..(stack
           ops = stack[j + 1]
           __ ops __ "+":
             a = a + stack[j + 2]

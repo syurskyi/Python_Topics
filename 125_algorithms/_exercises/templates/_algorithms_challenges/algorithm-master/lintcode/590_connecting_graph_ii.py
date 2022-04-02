@@ -2,16 +2,16 @@ c_ ConnectingGraph2:
     """
     @param: n: An integer
     """
-    ___ - , n):
+    ___ - , n
         __ n < 1:
             r..
         nodes    # dict
         count    # dict
-        ___ i __ r..(n):
+        ___ i __ r..(n
             nodes[i + 1] = i + 1
             count[i + 1] = 1
 
-    ___ find  a):
+    ___ find  a
         __ nodes[a] __ a:
             r.. a
         nodes[a] = find(nodes[a])
@@ -22,7 +22,7 @@ c_ ConnectingGraph2:
     @param: b: An integer
     @return: nothing
     """
-    ___ connect  a, b):
+    ___ connect  a, b
         root_a = find(a)
         root_b = find(b)
         __ root_a != root_b:
@@ -34,6 +34,6 @@ c_ ConnectingGraph2:
     @param: a: An integer
     @return: An integer
     """
-    ___ query  a):
+    ___ query  a
         root_a = find(a)
         r.. count[root_a]

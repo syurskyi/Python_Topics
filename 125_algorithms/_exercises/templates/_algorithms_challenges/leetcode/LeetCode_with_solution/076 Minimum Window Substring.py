@@ -17,8 +17,8 @@ _______ sys
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ minWindow  S, T):
+c_ Solution(o..
+    ___ minWindow  S, T
         """
         Algorithm:
         two pointers
@@ -36,7 +36,7 @@ c_ Solution(o..):
 
         appeared_cnt = 0
         lo = 0
-        ___ hi __ x..(1, l..(S)+1):
+        ___ hi __ x..(1, l..(S)+1
             # expand
             val = S[hi-1]
             __ t_cnt[o..(val)] > 0:
@@ -46,7 +46,7 @@ c_ Solution(o..):
                 appeared_cnt += 1  # cache, determine when to decrease appeared_cnt
 
             # shrink
-            __ appeared_cnt __ l..(T):  # until find all
+            __ appeared_cnt __ l..(T  # until find all
                 w.... w_cnt[o..(S[lo])] > t_cnt[o..(S[lo])] o. t_cnt[o..(S[lo])] __ 0:
                     __ w_cnt[o..(S[lo])] > 0: w_cnt[o..(S[lo])] -= 1
                     lo += 1

@@ -3,8 +3,8 @@ Created on Feb 20, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findKthLargest  nums, k):
+c_ Solution(o..
+    ___ findKthLargest  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -17,7 +17,7 @@ c_ Solution(o..):
         k = l..(nums)-k
         r.. helper(nums, 0, l..(nums)-1, k)
     
-    ___ helper  nums, i, j, k):
+    ___ helper  nums, i, j, k
         i0, j0 = i, j
         pivot = nums[j]
         w... T...
@@ -37,7 +37,7 @@ c_ Solution(o..):
         ____:
             r.. helper(nums, i0, i-1, k)
     
-    ___ findKthLargestHeap  nums, k):
+    ___ findKthLargestHeap  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -45,7 +45,7 @@ c_ Solution(o..):
         """
         _______ heapq
         heapq.heapify(nums)
-        ___ _ __ r..(l..(nums)-k+1):
+        ___ _ __ r..(l..(nums)-k+1
             result = heapq.heappop(nums)
         r.. result
     

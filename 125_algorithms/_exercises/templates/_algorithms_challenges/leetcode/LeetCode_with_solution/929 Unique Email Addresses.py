@@ -55,5 +55,5 @@ c_ Solution:
 
         r.. l..(s)
 
-    ___ stem  local):
+    ___ stem  local
         r.. local.s..("+")[0].r..(".", "")

@@ -4,8 +4,8 @@ Created on Apr 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ longestPalindrome  s):
+c_ Solution(o..
+    ___ longestPalindrome  s
         hashmap    # dict
         ___ c __ s:
             hashmap[c] = hashmap.get(c, 0)+1

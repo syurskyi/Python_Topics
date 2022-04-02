@@ -3,4 +3,4 @@
 
 
 n = i..(input())
-print(hash(t..(map(i.., input().s..()))))
+print(hash(t.. m..(i.., input().s..()))))

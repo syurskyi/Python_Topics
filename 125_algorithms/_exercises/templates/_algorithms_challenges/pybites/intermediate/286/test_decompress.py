@@ -2,7 +2,7 @@ ____ decompress _______ decompress
 
 
 ___ test_empty_string
-    ... decompress('', {'[', 'L'}) __ ''
+    ... decompress('', {' ', 'L'}) __ ''
 
 
 ___ test_empty_table

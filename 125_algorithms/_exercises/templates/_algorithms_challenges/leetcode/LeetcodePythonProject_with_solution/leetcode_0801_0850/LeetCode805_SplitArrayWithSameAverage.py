@@ -3,8 +3,8 @@ Created on Apr 24, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ splitArraySameAverage  A):
+c_ Solution(o..
+    ___ splitArraySameAverage  A
         """
         :type A: List[int]
         :rtype: bool
@@ -15,20 +15,20 @@ c_ Solution(o..):
         ___ num __ arr:
             sumA += num
         arr.s..()
-        ___ lenOfB __ r..(1, l..(arr)//2+1):
+        ___ lenOfB __ r..(1, l..(arr)//2+1
             __ (sumA*lenOfB)%l..(arr) __ 0:
-                __ check(arr, (sumA*lenOfB)/l..(arr), lenOfB, 0):
+                __ check(arr, (sumA*lenOfB)/l..(arr), lenOfB, 0
                     r.. T..
         r.. F..
     
-    ___ check  arr, leftSum, leftNum, startIdx):
+    ___ check  arr, leftSum, leftNum, startIdx
         __ leftNum __ 0: r.. leftSum __ 0
         __ arr[startIdx] > leftSum/leftNum:
             r.. F..
-        ___ i __ r..(startIdx, l..(arr)-leftNum+1):
+        ___ i __ r..(startIdx, l..(arr)-leftNum+1
             __ i > startIdx a.. arr[i] __ arr[i-1]:
                 _____
-            __ check(arr, leftSum-arr[i], leftNum-1, i+1):
+            __ check(arr, leftSum-arr[i], leftNum-1, i+1
                 r.. T..
         r.. F..
     

@@ -16,14 +16,14 @@ __author__ = 'Daniel'
 
 
 c_ Stack:
-    ___ - ):
+    ___ -
         """
         initialize your data structure here.
         One queue cannot mimic the stack, then you should use two queues.
         """
         q = [[], []]
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: nothing

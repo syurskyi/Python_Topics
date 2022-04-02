@@ -4,8 +4,8 @@ c_ Solution:
     @param: s2: Another string
     @return: whether s2 is a scrambled string of s1
     """
-    ___ isScramble  s1, s2):
-        __ n.. s1 o. n.. s2 o. l..(s1) != l..(s2):
+    ___ isScramble  s1, s2
+        __ n.. s1 o. n.. s2 o. l..(s1) != l..(s2
             r.. F..
 
         n = l..(s1)
@@ -16,13 +16,13 @@ c_ Solution:
         """
         dp = [[[F..] * (n + 1) ___ _ __ r..(n)] ___ _ __ r..(n)]
 
-        ___ i __ r..(n):
-            ___ j __ r..(n):
+        ___ i __ r..(n
+            ___ j __ r..(n
                 dp[i][j][1] = (s1[i] __ s2[j])
 
-        ___ k __ r..(2, n + 1):
+        ___ k __ r..(2, n + 1
 
-            ___ i __ r..(n):
+            ___ i __ r..(n
                 """
                 allow: i < n - k + 1 => i <= n - k
                 disallow: i > n - k
@@ -30,11 +30,11 @@ c_ Solution:
                 __ i + k > n:
                     _____
 
-                ___ j __ r..(n):
+                ___ j __ r..(n
                     __ j + k > n:
                         _____
 
-                    ___ l __ r..(1, k):
+                    ___ l __ r..(1, k
                         """
                         If its already calculated and possible to transform
                         """

@@ -3,8 +3,8 @@ Created on Sep 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ addBoldTag  s, d..):
+c_ Solution(o..
+    ___ addBoldTag  s, d..
         """
         :type s: str
         :type dict: List[str]
@@ -15,7 +15,7 @@ c_ Solution(o..):
         res = ''
         maxLen = -1
         started = F..
-        ___ i __ r..(n):
+        ___ i __ r..(n
             ___ word __ d..:
                 __ i+l..(word) <= n a.. s[i:i+l..(word)] __ word:
                     maxLen = m..(maxLen, i+l..(word))
@@ -28,7 +28,7 @@ c_ Solution(o..):
                 started = F..
             ____:
                 res += s[i]
-        __ maxLen __ l..(s):
+        __ maxLen __ l..(s
             res += '</b>'
         r.. res
     
@@ -36,11 +36,11 @@ c_ Solution(o..):
         testCases = [
             [
                 'abcxyz123',
-                ['abc', '123'],
+                 'abc', '123' ,
             ],
             [
                 'aaabbcc',
-                ['aaa', 'aab', 'bc'],
+                 'aaa', 'aab', 'bc' ,
             ],
             [
                 'aaabbcc',

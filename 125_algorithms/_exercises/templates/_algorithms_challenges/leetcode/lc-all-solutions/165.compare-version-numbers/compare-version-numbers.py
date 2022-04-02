@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ compareVersion  version1, version2):
+c_ Solution(o..
+  ___ compareVersion  version1, version2
     """
     :type version1: str
     :type version2: str
@@ -8,7 +8,7 @@ c_ Solution(o..):
     v1 = version1.s..(".")
     v2 = version2.s..(".")
     i = 0
-    w.... i < l..(v1) a.. i < l..(v2):
+    w.... i < l..(v1) a.. i < l..(v2
       v1Seg, v2Seg = i..(v1[i]), i..(v2[i])
       __ v1Seg > v2Seg:
         r.. 1

@@ -2,7 +2,7 @@ ____ heapq _______ heappop, heappush
 
 
 c_ Solution:
-    ___ findKthLargest  A, k):
+    ___ findKthLargest  A, k
         """
         :type A: List[int]
         :type k: int

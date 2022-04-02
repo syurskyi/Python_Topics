@@ -1,7 +1,7 @@
 c_ Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
-    ___ plusOne  d..):
+    ___ plusOne  d..
         d...r..
         res    # list
         t = (d..[0] + 1) % 10

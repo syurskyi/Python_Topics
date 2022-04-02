@@ -18,7 +18,7 @@ ____ bisect _______ bisect
 
 
 c_ Solution:
-    ___ nextGreaterElements  nums):
+    ___ nextGreaterElements  nums
         """
         scan the nums from right to left, since next largest number, you can
         drop certain information about the A[i:]. Use stack to keep a increasing
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. ret[::-1]
 
-    ___ nextGreaterElements_error  nums):
+    ___ nextGreaterElements_error  nums
         """
         brute force O(n^2)
 
@@ -57,7 +57,7 @@ c_ Solution:
         ret    # list
         ___ e __ nums:
             t = bisect(A, e)
-            __ t __ l..(A):
+            __ t __ l..(A
                 ret.a..(-1)
             ____:
                 ret.a..(A[t])

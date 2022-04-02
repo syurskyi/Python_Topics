@@ -11,7 +11,7 @@ __ n.. countries.exists
     urlretrieve('https://bit.ly/2IzGKav', countries)
 
 
-___ get_income_distribution(___=countries):
+___ get_income_distribution(___=countries
     """
     - Read in the countries xml as stored in countries variable.
     - Parse the XML
@@ -25,7 +25,7 @@ ___ get_income_distribution(___=countries):
 
     xpath = f".//wb:country"
     country_list = defaultdict(l..)
-    ___ x __ root.f..(xpath, namespaces):
+    ___ x __ root.f..(xpath, namespaces
         country_list[x.find('wb:incomeLevel', namespaces).text].a..(x.find('wb:name', namespaces).text)
 
     r.. country_list

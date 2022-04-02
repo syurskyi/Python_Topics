@@ -13,7 +13,7 @@ Given m, n satisfy the following condition:
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
@@ -24,7 +24,7 @@ c_ ListNode:
         r.. s..(val)+", "+s..(next)
 
 c_ Solution:
-    ___ reverseBetween  head, m, n):
+    ___ reverseBetween  head, m, n
         """
         Linked List
         [m, n)
@@ -85,6 +85,6 @@ c_ Solution:
 __ _____ __ ____
     length = 3
     lst = [ListNode(i+1) ___ i __ r..(length)]
-    ___ i __ x..(length-1):
+    ___ i __ x..(length-1
         lst[i].next = lst[i+1]
     print Solution().reverseBetween(lst[0], 1, 3)

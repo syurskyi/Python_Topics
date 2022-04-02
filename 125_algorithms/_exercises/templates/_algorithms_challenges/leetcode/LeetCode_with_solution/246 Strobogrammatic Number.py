@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         map = {
             "1": "1",
             "6": "9",
@@ -16,14 +16,14 @@ c_ Solution:
             "0": "0"
         }
 
-    ___ isStrobogrammatic  num):
-        ___ i __ x..(l..(num)/2+1):
+    ___ isStrobogrammatic  num
+        ___ i __ x..(l..(num)/2+1
             __ num[i] n.. __ map o. map[num[i]] != num[l..(num)-1-i]:
                 r.. F..
 
         r.. T..
 
-    ___ isStrobogrammatic_tedious  num):
+    ___ isStrobogrammatic_tedious  num
         """
 
         :type num: str
@@ -31,9 +31,9 @@ c_ Solution:
         """
         num = l..(num)
         rev    # list  # reverse
-        ___ digit __ r..(num):
+        ___ digit __ r..(num
             ___
-                rev.a..(map[digit])
+                rev.a.. m..[digit])
             ______ KeyError:
                 r.. F..
 

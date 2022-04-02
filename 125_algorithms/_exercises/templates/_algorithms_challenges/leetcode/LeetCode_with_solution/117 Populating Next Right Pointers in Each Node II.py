@@ -23,7 +23,7 @@ After calling your function, the tree should look like:
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -31,7 +31,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ connect  root):
+    ___ connect  root
         """
         bfs
         same as Populating Next Right Pointers in Each Node I
@@ -45,7 +45,7 @@ c_ Solution:
         w.... q:
             current_level = q
             q    # list
-            ___ ind, val __ e..(current_level):
+            ___ ind, val __ e..(current_level
                 __ val.left: q.a..(val.left)
                 __ val.right: q.a..(val.right)
                 ___

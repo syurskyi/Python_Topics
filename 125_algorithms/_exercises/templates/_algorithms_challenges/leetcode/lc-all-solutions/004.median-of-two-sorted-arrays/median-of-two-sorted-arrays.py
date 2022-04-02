@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findMedianSortedArrays  nums1, nums2):
+c_ Solution(o..
+  ___ findMedianSortedArrays  nums1, nums2
     a, b = s..((nums1, nums2), key=l..)
     m, n = l..(a), l..(b)
     after = (m + n - 1) / 2

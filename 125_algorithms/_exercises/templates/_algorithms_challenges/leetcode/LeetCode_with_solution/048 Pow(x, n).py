@@ -5,7 +5,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ pow  x, n):
+    ___ pow  x, n
         """
         O(log n)
         Algorithm: math, Exponentiation by Squaring
@@ -36,7 +36,7 @@ c_ Solution:
     # @param x, a float
     # @param n, a integer
     # @return a float
-    ___ pow_TLE  x, n):
+    ___ pow_TLE  x, n
         """
         O(n)
         """

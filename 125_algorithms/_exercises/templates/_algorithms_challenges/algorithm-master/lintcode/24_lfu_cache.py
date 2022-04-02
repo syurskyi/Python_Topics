@@ -18,7 +18,7 @@ Dm <-> 2 <-> 3 <-> 8 <-> dm   |<- freq_list (dll)
 
 
 c_ LFUCache:
-    ___ - , capacity):
+    ___ - , capacity
         """
         :type capacity: int
         """
@@ -29,7 +29,7 @@ c_ LFUCache:
         D.nxt = d
         d.pre = D
 
-    ___ get  key):
+    ___ get  key
         """
         :type key: int
         :rtype: int
@@ -40,7 +40,7 @@ c_ LFUCache:
         _update(key)
         r.. nodes[key].val
 
-    ___ s..  key, val):
+    ___ s..  key, val
         """
         :type key: int
         :type val: int
@@ -87,7 +87,7 @@ c_ LFUCache:
         __ from_freq.is_empty
             from_freq.unlink()
 
-    ___ _add  key, val):
+    ___ _add  key, val
         cache_node = CacheNode(key, val)
         nodes[key] = cache_node
 
@@ -133,7 +133,7 @@ c_ FreqNode:
         pre = nxt = D = d = N..
 
     # to change self in freq nodes
-    ___ after  freq_node):
+    ___ after  freq_node
         freq_node.pre = self
         freq_node.nxt = nxt
         nxt.pre = freq_node
@@ -153,7 +153,7 @@ c_ FreqNode:
         r.. head
 
     # to manage cache nodes
-    ___ append_tail  cache_node):
+    ___ append_tail  cache_node
         cache_node.freq_node = self
         cache_node.pre = d.pre
         cache_node.nxt = d

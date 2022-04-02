@@ -5,7 +5,7 @@ ____ pangram _______ is_pangram
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ PangramTests(unittest.TestCase):
+c_ PangramTests(unittest.TestCase
     ___ test_sentence_empty
         assertFalse(is_pangram(''))
 

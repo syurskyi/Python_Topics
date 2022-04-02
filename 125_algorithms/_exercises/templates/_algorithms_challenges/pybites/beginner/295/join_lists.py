@@ -7,4 +7,4 @@ ___ join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:
 
 
 
-print(join_lists([['a', 'b'], ['c'], ['d', 'e']], '+'))
+print(join_lists([['a', 'b' ,  'c' ,  'd', 'e']], '+'))

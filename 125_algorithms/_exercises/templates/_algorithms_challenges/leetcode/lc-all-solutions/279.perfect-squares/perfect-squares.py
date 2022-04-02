@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ numSquares  n):
+c_ Solution(o..
+  ___ numSquares  n
     """
     :type n: int
     :rtype: int

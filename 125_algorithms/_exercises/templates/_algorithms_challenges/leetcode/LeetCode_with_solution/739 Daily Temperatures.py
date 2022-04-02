@@ -27,7 +27,7 @@ c_ Solution:
         """
         ret = d..()
         stk    # list
-        ___ i __ r..(l..(T) - 1, -1 , -1):
+        ___ i __ r..(l..(T) - 1, -1 , -1
             w.... stk a.. T[stk[-1]] <= T[i]:  # disregard smaller ones
                 stk.pop()
 

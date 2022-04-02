@@ -15,8 +15,8 @@ The number of ways decoding "12" is 2.
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ numDecodings  s):
+c_ Solution(o..
+    ___ numDecodings  s
         """
         F
         Let F[i] be the number of decode ways for s[:i]
@@ -29,7 +29,7 @@ c_ Solution(o..):
         :param s: a string
         :return: an integer
         """
-        __ s.startswith("0"):
+        __ s.startswith("0"
             r.. 0
 
         n = l..(s)
@@ -39,13 +39,13 @@ c_ Solution(o..):
         F[0] = 1
         F[1] = 1
 
-        ___ i __ x..(2, n+1):
+        ___ i __ x..(2, n+1
             __ s[i-1] != "0":
                 F[i] = F[i-1]
                 __ 10 <= i..(s[i-2]+s[i-1]) < 27:
                     F[i] += F[i-2]
             ____:  # 0 is special
-                __ s[i-2] __ ("1", "2"):
+                __ s[i-2] __ ("1", "2"
                     F[i] = F[i-2]
                 ____:
                     r.. 0

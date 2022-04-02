@@ -4,8 +4,8 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ numSquares  n):
+c_ Solution(o..
+    ___ numSquares  n
         """
         :type n: int
         :rtype: int
@@ -16,8 +16,8 @@ c_ Solution(o..):
         dp = [f__('inf')]*(n+1)
         dp[0] = 0
         dp[1] = 1
-        ___ i __ r..(n+1):
-            ___ j __ r..(maxVal):
+        ___ i __ r..(n+1
+            ___ j __ r..(maxVal
                 __ j*j<=i:
                     dp[i] = m..(dp[i], dp[i-j*j]+1)
         r.. dp[-1]

@@ -6,8 +6,8 @@
 #         self.right = None
 
 
-c_ Solution(o..):
-    ___ lowestCommonAncestor  root, p, q):
+c_ Solution(o..
+    ___ lowestCommonAncestor  root, p, q
         """
         :type root: TreeNode
         :type p: TreeNode

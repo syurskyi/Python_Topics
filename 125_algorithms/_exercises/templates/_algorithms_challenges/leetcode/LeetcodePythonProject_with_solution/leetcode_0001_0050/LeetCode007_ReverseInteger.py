@@ -3,8 +3,8 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ reverse  x):
+c_ Solution(o..
+    ___ reverse  x
         """
         :type x: int
         :rtype: int

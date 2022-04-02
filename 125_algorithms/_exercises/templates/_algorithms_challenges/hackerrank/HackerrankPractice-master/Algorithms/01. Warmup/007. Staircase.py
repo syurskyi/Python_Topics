@@ -2,8 +2,8 @@
 # Score: 10
 
 
-___ staircase(a):
-    ___ i __ r..(1, a + 1):
+___ staircase(a
+    ___ i __ r..(1, a + 1
         print((a - i) * ' ' + i * "#")
 
 

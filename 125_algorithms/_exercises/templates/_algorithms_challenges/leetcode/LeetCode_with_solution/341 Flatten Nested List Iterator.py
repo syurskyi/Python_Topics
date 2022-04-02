@@ -22,7 +22,7 @@ You should not implement it, or speculate about its implementation
 """
 
 
-c_ NestedInteger(o..):
+c_ NestedInteger(o..
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
@@ -47,8 +47,8 @@ c_ NestedInteger(o..):
         r.. []
 
 
-c_ NestedIterator(o..):
-    ___ - , nestedList):
+c_ NestedIterator(o..
+    ___ - , nestedList
         """
         Initialize your data structure here.
         :type nestedList: List[NestedInteger]
@@ -78,7 +78,7 @@ c_ NestedIterator(o..):
         """
         w.... stk:
             nl, idx = stk[-1]
-            __ idx < l..(nl):
+            __ idx < l..(nl
                 ni = nl[idx]
                 __ ni.isInteger
                     r.. T..
@@ -93,8 +93,8 @@ c_ NestedIterator(o..):
 
 
 
-c_ NestedIteratorVerbose(o..):
-    ___ - , nestedList):
+c_ NestedIteratorVerbose(o..
+    ___ - , nestedList
         """
         Initialize your data structure here.
         :type nestedList: List[NestedInteger]
@@ -129,7 +129,7 @@ c_ NestedIteratorVerbose(o..):
         w.... nl_stk:
             nl = nl_stk[-1]
             idx = idx_stk[-1]
-            __ idx < l..(nl):
+            __ idx < l..(nl
                 ni = nl[idx]
                 __ ni.isInteger
                     r.. T..

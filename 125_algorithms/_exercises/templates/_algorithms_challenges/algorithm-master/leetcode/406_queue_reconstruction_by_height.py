@@ -29,7 +29,7 @@ process:
 
 
 c_ Solution:
-    ___ reconstructQueue  people):
+    ___ reconstructQueue  people
         """
         :type people: List[List[int]]
         :rtype: List[List[int]]
@@ -41,14 +41,14 @@ c_ Solution:
 
         people.s..(key=l.... p: (p[0], -p[1]))
 
-        ___ i __ r..(l..(people) - 1, -1, -1):
+        ___ i __ r..(l..(people) - 1, -1, -1
             ans.insert(people[i][1], people[i])
 
         r.. ans
 
 
 c_ Solution:
-    ___ reconstructQueue  people):
+    ___ reconstructQueue  people
         """
         :type people: List[List[int]]
         :rtype: List[List[int]]
@@ -73,7 +73,7 @@ c_ Solution:
         heights.s..()
 
         ___ height __ heights[::-1]:
-            ___ k, i __ s..(h2mans[height]):
+            ___ k, i __ s..(h2mans[height]
                 ans.insert(k, people[i])
 
         r.. ans

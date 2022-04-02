@@ -6,14 +6,14 @@ Created on May 23, 2018
 # The read4 API is already defined for you.
 # @param buf, a list of characters
 # @return an integer
-___ read4(buf):
+___ read4(buf
     p..
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         queue    # list
     
-    ___ read  buf, n):
+    ___ read  buf, n
         """
         :type buf: Destination buffer (List[str])
         :type n: Maximum number of characters to read (int)
@@ -25,7 +25,7 @@ c_ Solution(o..):
             read4(buf4)
             queue.extend(buf4)
             curr = m..(l..(queue), n-idx)
-            ___ _ __ r..(curr):
+            ___ _ __ r..(curr
                 buf[idx] = queue.pop(0)
                 idx += 1
             __ curr __ 0:

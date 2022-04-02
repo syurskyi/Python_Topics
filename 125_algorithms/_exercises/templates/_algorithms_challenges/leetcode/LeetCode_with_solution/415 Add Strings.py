@@ -11,10 +11,10 @@ You must not use any built-in BigInteger library or convert the inputs to intege
 
 
 c_ Solution:
-    ___ i..  n):
+    ___ i..  n
         r.. o..(n) - o..("0")
 
-    ___ addStrings  num1, num2):
+    ___ addStrings  num1, num2
         """
         :type num1: str
         :type num2: str
@@ -22,15 +22,15 @@ c_ Solution:
         """
         ret    # list
         # let num2 to be one has more digit
-        __ l..(num1) > l..(num2):
+        __ l..(num1) > l..(num2
             num1, num2 = num2, num1
 
         num1 = num1[::-1]
         num2 = num2[::-1]
         carry = 0
         idx = 0
-        w.... idx < l..(num2):
-            __ idx < l..(num1):
+        w.... idx < l..(num2
+            __ idx < l..(num1
                 s = i..(num1[idx]) + i..(num2[idx]) + carry
             ____:
                 s = i..(num2[idx]) + carry
@@ -47,7 +47,7 @@ c_ Solution:
         __ carry:
             ret.a..(carry)
 
-        r.. "".j..(map(s.., ret[::-1]))
+        r.. "".j.. m..(s.., ret[::-1]))
 
 
 __ _______ __ _______

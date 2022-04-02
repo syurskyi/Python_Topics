@@ -51,11 +51,11 @@ operas = [
 ]
 
 
-___ _get_date(date_str):
+___ _get_date(date_str
     r.. d__.date(d__.strptime(date_str, "%d %B %Y"))
 
 
-___ operas_both_at_premiere(guest, composer):
+___ operas_both_at_premiere(guest, composer
     """Retrieves a list of titles of operas, where the guest and the composer
        could have been together at premiere.
 
@@ -88,7 +88,7 @@ ___ operas_both_at_premiere(guest, composer):
 
     
 
-    ___ opera __ filter(l.... x: x.author __ composer_name,operas):
+    ___ opera __ filter(l.... x: x.author __ composer_name,operas
         play_date = _get_date(opera.date)
         __ guest_birthday <= play_date < guest_death_day a.. composer_death_day > play_date:
             y.. opera.play

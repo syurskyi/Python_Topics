@@ -20,5 +20,5 @@ ____ workouts _______ (get_workout_motd,
     ('nonsense', INVALID_DAY),
     ('monday2', INVALID_DAY),
 ])
-___ test_get_workout_valid_case_insensitive_dict_lookups(day, expected):
+___ test_get_workout_valid_case_insensitive_dict_lookups(day, expected
     ... get_workout_motd(day) __ expected

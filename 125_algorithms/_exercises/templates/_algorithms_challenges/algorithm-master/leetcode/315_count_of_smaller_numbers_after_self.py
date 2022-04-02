@@ -2,7 +2,7 @@ c_ Solution:
     """
     REF: https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76657/
     """
-    ___ countSmaller  nums):
+    ___ countSmaller  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -17,21 +17,21 @@ c_ Solution:
         v2i = {cands[i]: i ___ i __ r..(l..(cands))}
         bits = [0] * (l..(v2i) + 1)
 
-        ___ i __ r..(n - 1, -1, -1):
+        ___ i __ r..(n - 1, -1, -1
             j = v2i[nums[i]]
             ans[i] = s..(j)
             update(j)
 
         r.. ans
 
-    ___ update  i):
+    ___ update  i
         i += 1
 
-        w.... i < l..(bits):
+        w.... i < l..(bits
             bits[i] += 1
             i += (i & -i)
 
-    ___ s..  i):
+    ___ s..  i
         res = 0
 
         w.... i > 0:
@@ -45,7 +45,7 @@ c_ Solution:
     """
     Brute Force: TLE
     """
-    ___ countSmaller  nums):
+    ___ countSmaller  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -57,10 +57,10 @@ c_ Solution:
 
         n = l..(nums)
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             ans.a..(0)
 
-            ___ j __ r..(i, n):
+            ___ j __ r..(i, n
                 __ nums[j] < nums[i]:
                     ans[-1] += 1
 

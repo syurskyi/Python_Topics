@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ boundaryOfBinaryTree  root):
+c_ Solution(o..
+  ___ boundaryOfBinaryTree  root
     """
     :type root: TreeNode
     :rtype: List[int]
@@ -14,8 +14,8 @@ c_ Solution(o..):
     __ n.. root:
       r.. []
 
-    ___ dfsLeft(root, res):
-      __ n.. root o. (n.. root.left a.. n.. root.right):
+    ___ dfsLeft(root, res
+      __ n.. root o. (n.. root.left a.. n.. root.right
         r..
       res.a..(root.val)
       __ root.left:
@@ -23,8 +23,8 @@ c_ Solution(o..):
       ____:
         dfsLeft(root.right, res)
 
-    ___ dfsRight(root, res):
-      __ n.. root o. (n.. root.left a.. n.. root.right):
+    ___ dfsRight(root, res
+      __ n.. root o. (n.. root.left a.. n.. root.right
         r..
       __ root.right:
         dfsRight(root.right, res)
@@ -32,7 +32,7 @@ c_ Solution(o..):
         dfsRight(root.left, res)
       res.a..(root.val)
 
-    ___ dfsLeaves(root, res, mid):
+    ___ dfsLeaves(root, res, mid
       __ n.. root:
         r..
       __ n.. root.left a.. n.. root.right a.. root != mid:

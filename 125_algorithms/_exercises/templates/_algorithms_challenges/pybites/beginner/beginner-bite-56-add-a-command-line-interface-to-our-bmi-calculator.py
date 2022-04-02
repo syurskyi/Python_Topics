@@ -24,7 +24,7 @@ We have two more Bites to practice argparse: 57 and 58.
 _______ a__
 
 
-___ calc_bmi(weight, length):
+___ calc_bmi(weight, length
     """Provided/DONE:
        Calc BMI give a weight in kg and length in cm, return the BMI
        rounded on 2 decimals"""

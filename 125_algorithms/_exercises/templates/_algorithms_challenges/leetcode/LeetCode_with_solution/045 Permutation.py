@@ -7,7 +7,7 @@ For example,
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ permute  num):
+    ___ permute  num
         """
         Catalan
         :param num: a list of integer
@@ -17,12 +17,12 @@ c_ Solution:
         get_permute(num, [], result)
         r.. result
 
-    ___ get_permute  seq, current, result):
+    ___ get_permute  seq, current, result
         length = l..(seq)
         __ length__0:
             result.a..(current)
 
-        ___ ind, val __ e..(seq):
+        ___ ind, val __ e..(seq
             # try:
             get_permute(seq[:ind]+seq[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:

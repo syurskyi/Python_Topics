@@ -3,7 +3,7 @@ c_ Solution:
     @param: P: Given an integer array
     @return: Maximum profit
     """
-    ___ maxProfit  P):
+    ___ maxProfit  P
         __ n.. P:
             r.. 0
 
@@ -28,7 +28,7 @@ c_ Solution:
             prev = curr
             curr = 1 - curr
             profit = P[i] - P[i - 1]
-            ___ j __ r..(1, STAGE, 2):
+            ___ j __ r..(1, STAGE, 2
                 """
                 in stage 1 and 3, holding a stock
                 profit comes from:
@@ -39,7 +39,7 @@ c_ Solution:
                 choose the maximum
                 """
                 dp[curr][j] = m..(dp[prev][j] + profit, dp[prev][j - 1])
-            ___ j __ r..(2, STAGE, 2):
+            ___ j __ r..(2, STAGE, 2
                 """
                 in stage 2 and 4, holding no any stock
                 profit comes from:

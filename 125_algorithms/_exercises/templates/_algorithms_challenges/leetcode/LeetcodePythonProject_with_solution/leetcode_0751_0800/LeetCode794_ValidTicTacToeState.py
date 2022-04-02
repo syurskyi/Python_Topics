@@ -3,8 +3,8 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ validTicTacToe  board):
+c_ Solution(o..
+    ___ validTicTacToe  board
         """
         :type board: List[str]
         :rtype: bool
@@ -14,8 +14,8 @@ c_ Solution(o..):
         cols = [0]*3
         diag = 0
         antidiag = 0
-        ___ i __ r..(3):
-            ___ j __ r..(3):
+        ___ i __ r..(3
+            ___ j __ r..(3
                 __ board[i][j] __ 'X':
                     turns += 1
                     rows[i] += 1
@@ -34,7 +34,7 @@ c_ Solution(o..):
         owin = rows[0]__-3 o. rows[1]__-3 o. rows[2]__-3 o.\
             cols[0]__-3 o. cols[1]__-3 o. cols[2]__-3 o.\
             diag __ -3 o. antidiag __ -3
-        __ (xwin a.. turns __ 0) o. (owin a.. turns __ 1):
+        __ (xwin a.. turns __ 0) o. (owin a.. turns __ 1
             r.. F..
         r.. (turns__0 o. turns__1) a.. (n.. xwin o. n.. owin)
     

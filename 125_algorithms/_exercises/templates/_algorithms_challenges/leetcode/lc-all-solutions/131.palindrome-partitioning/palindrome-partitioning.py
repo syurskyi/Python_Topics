@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ partition  s):
+c_ Solution(o..
+  ___ partition  s
     """
     :type s: str
     :rtype: List[List[str]]
@@ -8,7 +8,7 @@ c_ Solution(o..):
     ans = [[[]]] + [[] ___ _ __ r..(l..(s))]
 
     ___ i __ r..(0, l..(s)):
-      ___ j __ r..(0, i + 1):
+      ___ j __ r..(0, i + 1
         __ (s[j] __ s[i]) a.. ((j + 1 > i - 1) o. (pal[j + 1][i - 1])):
           pal[j][i] = T..
           ___ res __ ans[j]:

@@ -23,5 +23,5 @@ ____ movie_budget _______ rent_or_stream, MovieRented
      MovieRented('Die Hard', 3, date(2020, 11, 3))],
     {"2020-11": "stream", "2020-12": 'rent'}),
 ])
-___ test_rent_or_stream(arg, expected):
+___ test_rent_or_stream(arg, expected
     ... rent_or_stream(arg) __ expected

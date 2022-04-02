@@ -4,8 +4,8 @@ Created on Mar 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ increasingTriplet  nums):
+c_ Solution(o..
+    ___ increasingTriplet  nums
         __ n.. nums: r.. F..
 #         first = float('inf')
         first = nums[0]

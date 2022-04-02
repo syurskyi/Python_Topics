@@ -3,7 +3,7 @@ ____ urllib.request _______ urlretrieve
 ____ belts _______ get_belts, TMP
 
 
-___ get_data(file_no=1, tmp=TMP):
+___ get_data(file_no=1, tmp=TMP
     file_name = f'bite_scores{file_no}.json'
     file_path = TMP / file_name
     remote = 'https://bites-data.s3.us-east-2.amazonaws.com/'

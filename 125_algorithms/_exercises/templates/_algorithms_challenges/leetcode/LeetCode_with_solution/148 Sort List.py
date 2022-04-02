@@ -4,7 +4,7 @@ Sort a linked list in O(n log n) time using constant space complexity.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
@@ -12,7 +12,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ sortList_array  head):
+    ___ sortList_array  head
         """
         Workaround by sorted()
         :param head: ListNode
@@ -22,19 +22,19 @@ c_ Solution:
             r.. N..
         lst    # list # must be constant space
         current = head
-        w....(current):
+        w....(current
             lst.a..(current)
             current = current.next
 
 
         comparator = l.... x, y: cmp(x.val, y.val)
         lst = s..(lst, comparator)  # return # sorted is not side-effect # O(n log n)
-        ___ i __ r..(l..(lst)-1):
+        ___ i __ r..(l..(lst)-1
             lst[i].next = lst[i+1]
         lst[-1].next = N..
         r.. lst[0]
 
-    ___ sortList  head):
+    ___ sortList  head
         """
         Quick sort: not guarantee to be O(n lgn)
         Heap sort: not great as index
@@ -87,12 +87,12 @@ c_ Solution:
 __ _____ __ ____
     length = 5
     lst = [ListNode(length-i) ___ i __ r..(length)]
-    ___ i __ r..(length-1):
+    ___ i __ r..(length-1
         lst[i].next = lst[i+1]
 
     head = Solution().sortList(lst[0])
 
     cur = head
-    w....(cur):
+    w....(cur
         print cur.val
         cur = cur.next

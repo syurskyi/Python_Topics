@@ -11,8 +11,8 @@ Follow up:
 Could you do it without any loop/recursion in O(1) runtime?
 """
 
-c_ Solution(o..):
-    ___ addDigits  num):
+c_ Solution(o..
+    ___ addDigits  num
         """
         :type num: int
         :rtype: int

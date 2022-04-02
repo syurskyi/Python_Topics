@@ -20,14 +20,14 @@ Output: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         cache    # dict
 
     ___ allPossibleFBT  N: i..) __ List[TreeNode]:
@@ -41,7 +41,7 @@ c_ Solution:
                 ret = [TreeNode(0)]
             ____:
                 ret    # list
-                ___ i __ r..(N):
+                ___ i __ r..(N
                     lefts = allPossibleFBT(i)
                     rights = allPossibleFBT(N-1-i)
                     # 0 or 2 child, cannot have only 1

@@ -7,7 +7,7 @@ awake = [T.., F..] * 3
 SEPARATOR = ' | '
 
 
-___ generate_table(*args):
+___ generate_table(*args
     sequences = z..(*args)
     ___ row __ sequences:
         num_args = l..(row)

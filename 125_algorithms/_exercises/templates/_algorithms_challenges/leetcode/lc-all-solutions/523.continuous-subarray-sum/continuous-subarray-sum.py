@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ checkSubarraySum  nums, k):
+c_ Solution(o..
+  ___ checkSubarraySum  nums, k
     """
     :type nums: List[int]
     :type k: int

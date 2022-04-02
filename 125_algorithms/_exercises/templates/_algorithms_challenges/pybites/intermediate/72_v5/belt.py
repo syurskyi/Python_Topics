@@ -7,7 +7,7 @@ HONORS = OrderedDict(z..(scores, belts))
 MIN_SCORE, MAX_SCORE = m..(scores), m..(scores)
 
 
-___ get_belt(user_score):
+___ get_belt(user_score
     __ user_score < MIN_SCORE:
         r.. N..
     r.. HONORS[l..(filterfalse(l.... x: x > user_score, HONORS.keys()))[-1]]

@@ -1,9 +1,9 @@
-c_ Luhn(o..):
-    ___ - , s__):
+c_ Luhn(o..
+    ___ - , s__
         s__ = s__.r..(" ", "")
 
     ___ addends
-        ___ luhn_transform(n):
+        ___ luhn_transform(n
             r.. (2 * n - 9) __ (n > 4) ____ (2 * n)
         old_digits = [i..(d) ___ d __ s..(s__)]
         r.. [(luhn_transform(n) __ (i % 2 __ 0) ____ n)

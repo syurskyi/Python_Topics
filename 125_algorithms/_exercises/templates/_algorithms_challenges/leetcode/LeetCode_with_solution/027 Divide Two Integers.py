@@ -7,7 +7,7 @@ MIN_INT = -2147483648
 
 
 c_ Solution:
-    ___ divide  dividend, divisor):
+    ___ divide  dividend, divisor
         """
         O(n lgn)
         use concept of binary

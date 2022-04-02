@@ -4,8 +4,8 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ canFinishBFS  numCourses, prerequisites):
+c_ Solution(o..
+    ___ canFinishBFS  numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -19,7 +19,7 @@ c_ Solution(o..):
             degree[prereq[0]] += 1
             graph[prereq[1]].a..(prereq[0])
         print('degree: %s' % (degree))
-        ___ i __ r..(numCourses):
+        ___ i __ r..(numCourses
             __ degree[i] __ 0:
                 queue.a..(i)
                 count += 1
@@ -37,7 +37,7 @@ c_ Solution(o..):
         ____:
             r.. F..
     
-    ___ canFinishDFS  numCourses, prerequisites):
+    ___ canFinishDFS  numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -45,20 +45,20 @@ c_ Solution(o..):
         """
         graph = [[] ___ _ __ r..(numCourses)]
         visited = [F..]*numCourses
-        ___ i, prereq __ e..(prerequisites):
+        ___ i, prereq __ e..(prerequisites
             graph[prereq[1]].a..(prereq[0])
-        ___ i __ r..(numCourses):
-            __ n.. dfs(graph, visited, i):
+        ___ i __ r..(numCourses
+            __ n.. dfs(graph, visited, i
                 r.. F..
         r.. T..
     
-    ___ dfs  graph, visited, course):
+    ___ dfs  graph, visited, course
         __ visited[course]:
             r.. F..
         ____:
             visited[course] = T..
         ___ precourse __ graph[course]:
-            __ n.. dfs(graph, visited, precourse):
+            __ n.. dfs(graph, visited, precourse
                 r.. F..
         visited[course] = F..
         r.. T..

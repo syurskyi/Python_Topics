@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ thirdMax  nums):
+c_ Solution(o..
+  ___ thirdMax  nums
     """
     :type nums: List[int]
     :rtype: int

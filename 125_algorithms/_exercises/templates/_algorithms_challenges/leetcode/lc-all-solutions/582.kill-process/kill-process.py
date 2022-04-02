@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ killProcess  pid, ppid, kill):
+c_ Solution(o..
+  ___ killProcess  pid, ppid, kill
     """
     :type pid: List[int]
     :type ppid: List[int]
@@ -10,15 +10,15 @@ c_ Solution(o..):
 
     mpppid    # dict
 
-    ___ i __ r..(n):
-      __ mpppid.has_key(ppid[i]):
+    ___ i __ r..(n
+      __ mpppid.has_key(ppid[i]
         mpppid[ppid[i]].a..(i)
       ____:
         mpppid[ppid[i]] = [i]
     res = [kill]
 
-    ___ dfs(x):
-      __ n.. mpppid.has_key(x):
+    ___ dfs(x
+      __ n.. mpppid.has_key(x
         r..
       ___ i __ mpppid[x]:
         y = pid[i]

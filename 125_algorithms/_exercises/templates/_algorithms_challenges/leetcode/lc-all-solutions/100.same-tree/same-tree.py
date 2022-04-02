@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ isSameTree  p, q):
+c_ Solution(o..
+  ___ isSameTree  p, q
     """
     :type p: TreeNode
     :type q: TreeNode

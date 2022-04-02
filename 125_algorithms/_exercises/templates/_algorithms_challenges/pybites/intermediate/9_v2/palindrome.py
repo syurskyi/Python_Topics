@@ -14,11 +14,11 @@ urllib.request.urlretrieve(
 
 ___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
-    w__ open(DICTIONARY) __ f:
+    w__ o.. DICTIONARY) __ f:
         r.. (word.l...s.. ___ word __ f.readlines())
 
 
-___ is_palindrome(word):
+___ is_palindrome(word
     """Return if word is palindrome, 'madam' would be one.
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.
@@ -53,7 +53,7 @@ ___ get_longest_palindrome(words_ N..
     longest_length = f__("-inf")
     longest = N..
     ___ word __ words:
-        __ is_palindrome(word):
+        __ is_palindrome(word
             __ l..(word) > longest_length:
                 longest_length = l..(word)
                 longest_word = word

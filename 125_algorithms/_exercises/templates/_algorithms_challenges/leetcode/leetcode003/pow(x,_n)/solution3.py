@@ -2,7 +2,7 @@ c_ Solution:
     # @param x, a float
     # @param n, a integer
     # @return a float
-    ___ pow  x, n):
+    ___ pow  x, n
         __ n __ 0:
             r.. 1.0
         ____ n __ 1:

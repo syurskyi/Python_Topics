@@ -18,7 +18,7 @@ For example:
 _______ functools
 
 
-___ persistence(n):
+___ persistence(n
     times = 0
 
     w.... n > 9:

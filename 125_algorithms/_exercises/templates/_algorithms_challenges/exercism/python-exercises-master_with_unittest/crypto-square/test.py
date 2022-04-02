@@ -3,7 +3,7 @@ _______ unittest
 ____ crypto_square _______ encode
 
 
-c_ CryptoSquareTest(unittest.TestCase):
+c_ CryptoSquareTest(unittest.TestCase
     ___ test_empty_string
         assertEqual(encode(''), '')
 

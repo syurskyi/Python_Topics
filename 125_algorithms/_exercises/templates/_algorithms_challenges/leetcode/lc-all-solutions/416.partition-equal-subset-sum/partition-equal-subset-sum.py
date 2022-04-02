@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ canPartition  nums):
+c_ Solution(o..
+  ___ canPartition  nums
     """
     :type nums: List[int]
     :rtype: bool

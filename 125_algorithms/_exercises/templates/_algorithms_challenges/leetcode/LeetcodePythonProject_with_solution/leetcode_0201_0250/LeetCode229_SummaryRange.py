@@ -4,8 +4,8 @@ Created on Feb 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ summaryRanges  nums):
+c_ Solution(o..
+    ___ summaryRanges  nums
         """
         :type nums: List[int]
         :rtype: List[str]
@@ -13,7 +13,7 @@ c_ Solution(o..):
         result    # list
         __ n.. nums: r.. result
         i = 0
-        w.... i < l..(nums):
+        w.... i < l..(nums
             start = nums[i]
             w.... i+1 < l..(nums) a.. nums[i+1] __ nums[i]+1:
                 i+=1

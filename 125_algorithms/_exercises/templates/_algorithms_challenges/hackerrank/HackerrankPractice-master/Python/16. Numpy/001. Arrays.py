@@ -5,7 +5,7 @@
 _______ numpy
 
 
-___ arrays(arr):
+___ arrays(arr
     r.. numpy.array(arr[::-1], f__)
 
 

@@ -8,12 +8,12 @@ Given 1->1->2->3->3, return 1->2->3.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 c_ Solution:
-    ___ deleteDuplicates  head):
+    ___ deleteDuplicates  head
         """
         Two pointers, closed_ptr and open_ptr, to find the next non-duplicate
         O(n)
@@ -39,7 +39,7 @@ c_ Solution:
 
 __ _____ __ ____
     nodes = [ListNode(1) ___ _ __ r..(2)]
-    ___ i __ r..(l..(nodes)-1):
+    ___ i __ r..(l..(nodes)-1
         nodes[i].next = nodes[i+1]
 
     Solution().deleteDuplicates(nodes[0])

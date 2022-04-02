@@ -4,8 +4,8 @@ Created on Apr 10, 2019
 @author: tongq
 '''
 
-c_ Solution(o..):
-    ___ shortestPathLength  graph):
+c_ Solution(o..
+    ___ shortestPathLength  graph
         """
         :type graph: List[List[int]]
         :rtype: int
@@ -14,7 +14,7 @@ c_ Solution(o..):
         queue    # list
         hashset = s..()
         
-        ___ i __ r..(n):
+        ___ i __ r..(n
             tmp = (1 << i)
             hashset.add((tmp, i, 0))
             queue.a..((tmp, i, 1))

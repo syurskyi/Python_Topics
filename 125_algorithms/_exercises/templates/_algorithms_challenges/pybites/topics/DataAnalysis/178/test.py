@@ -15,7 +15,7 @@ urlretrieve(
 
 year_argument = 'None'
 
-w__ open(commits) __ f:
+w__ o.. commits) __ f:
     commit_log = defaultdict(i..)
     ___ line __ f:
         #print(line)

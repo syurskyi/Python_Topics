@@ -6,8 +6,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ validTree  n, edges):
+c_ Solution(o..
+    ___ validTree  n, edges
         """
         A graph is a tree:
           1. no cycle
@@ -26,19 +26,19 @@ c_ Solution(o..):
 
         visited = s..()
         pathset = s..()
-        __ n.. dfs(V, edges[0][0], N.., pathset, visited):
+        __ n.. dfs(V, edges[0][0], N.., pathset, visited
             r.. F..
 
         r.. l..(visited) __ n
 
-    ___ dfs  V, v, pi, pathset, visited):
+    ___ dfs  V, v, pi, pathset, visited
         __ v __ pathset:
             r.. F..
 
         pathset.add(v)
         ___ nbr __ V[v]:
             __ nbr != pi:  # since undirected graph
-                __ n.. dfs(V, nbr, v, pathset, visited):
+                __ n.. dfs(V, nbr, v, pathset, visited
                     r.. F..
 
         pathset.remove(v)

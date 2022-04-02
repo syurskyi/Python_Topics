@@ -1,4 +1,4 @@
-___ even_odd_partition(lst):
+___ even_odd_partition(lst
     output    # list
     odd    # list
     even =[]

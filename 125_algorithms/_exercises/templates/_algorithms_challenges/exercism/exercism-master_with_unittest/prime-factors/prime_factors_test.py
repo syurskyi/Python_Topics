@@ -3,7 +3,7 @@ _______ unittest
 ____ prime_factors _______ prime_factors
 
 
-c_ PrimeFactorsTest(unittest.TestCase):
+c_ PrimeFactorsTest(unittest.TestCase
     ___ test_1
         assertEqual([], prime_factors(1))
 

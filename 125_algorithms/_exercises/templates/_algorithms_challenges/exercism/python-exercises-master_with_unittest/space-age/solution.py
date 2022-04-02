@@ -1,4 +1,4 @@
-___ period_converter(period):
+___ period_converter(period
     ___ inner
         r.. r..(
             seconds / period,
@@ -8,7 +8,7 @@ ___ period_converter(period):
     r.. inner
 
 
-c_ SpaceAge(o..):
+c_ SpaceAge(o..
 
     on_mercury = period_converter(7600530.24)
     on_venus = period_converter(19413907.2)
@@ -19,5 +19,5 @@ c_ SpaceAge(o..):
     on_uranus = period_converter(2661041808.0)
     on_neptune = period_converter(5200418592.0)
 
-    ___ - , seconds):
+    ___ - , seconds
         seconds = seconds

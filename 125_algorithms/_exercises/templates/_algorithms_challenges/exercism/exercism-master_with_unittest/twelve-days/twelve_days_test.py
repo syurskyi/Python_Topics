@@ -3,7 +3,7 @@ _______ unittest
 ____ twelve_days _______ sing, verse, verses
 
 
-c_ TwelveDaysTests(unittest.TestCase):
+c_ TwelveDaysTests(unittest.TestCase
 
     ___ test_verse1
         expected = ("On the first day of Christmas my true love gave to me, "

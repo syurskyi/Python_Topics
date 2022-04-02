@@ -2,13 +2,13 @@
 ___ i __ r..(i..(input())):
     
     #accept the value of a,c,m,x,n in a list
-    listo = l..(map(i..,input().s..()))
+    listo = l.. m..(i..,input().s..()))
     
     #assign the list to variables
     a,c,m,x,n = listo
     
     #run the loop to get the value of the nth number
-    ___ j __ r..(n):
+    ___ j __ r..(n
         x = (a*x + c) % m
         
     #print the output

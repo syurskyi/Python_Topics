@@ -5,8 +5,8 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you
 climb to the top?
 """
 
-c_ Solution(o..):
-    ___ climbStairs  n):
+c_ Solution(o..
+    ___ climbStairs  n
         """
         :type n: int
         :rtype: int
@@ -20,7 +20,7 @@ c_ Solution(o..):
         t[2] = 2
         __ n <= 2:
             r.. t[n]
-        ___ i __ r..(3, n + 1):
+        ___ i __ r..(3, n + 1
             t[i] = t[i - 1] + t[i - 2]
         r.. t[n]
 

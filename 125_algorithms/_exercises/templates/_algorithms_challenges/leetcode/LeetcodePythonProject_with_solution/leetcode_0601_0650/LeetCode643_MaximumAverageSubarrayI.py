@@ -3,8 +3,8 @@ Created on Sep 27, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findMaxAverage  nums, k):
+c_ Solution(o..
+    ___ findMaxAverage  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         __ k <= 0: r.. 0
         sumVal = 0
         maxVal = f__('-inf')
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             sumVal += num
             __ i >= k-1:
                 maxVal = m..(maxVal, sumVal)

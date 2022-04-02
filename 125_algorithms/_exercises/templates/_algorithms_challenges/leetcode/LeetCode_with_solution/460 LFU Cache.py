@@ -35,7 +35,7 @@ DUMMY = N..
 
 c_ LFUCache:
 
-    ___ - , capacity: i..):
+    ___ - , capacity: i..
         """
         Need priority queue (pq) to keep contract of frequency
 

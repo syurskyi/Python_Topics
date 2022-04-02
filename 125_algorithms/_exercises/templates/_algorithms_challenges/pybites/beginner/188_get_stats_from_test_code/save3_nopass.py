@@ -6,7 +6,7 @@ TMP = os.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
 STATS = os.path.j..(TMP, DATA)
-__ n.. os.path.isfile(STATS):
+__ n.. os.path.isfile(STATS
     urlretrieve(os.path.j..(S3, DATA), STATS)
 
 STATS_OUTPUT = """

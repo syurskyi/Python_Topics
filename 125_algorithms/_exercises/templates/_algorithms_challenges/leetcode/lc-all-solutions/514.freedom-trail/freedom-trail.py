@@ -1,15 +1,15 @@
 _______ c..
 
 
-c_ Solution(o..):
-  ___ findRotateSteps  ring, key):
+c_ Solution(o..
+  ___ findRotateSteps  ring, key
     """
     :type ring: str
     :type key: str
     :rtype: int
     """
 
-    ___ dfs(ring, key, pointTo, d, length, cache):
+    ___ dfs(ring, key, pointTo, d, length, cache
       __ (pointTo, key) __ cache:
         r.. cache[pointTo, key]
       __ n.. key:
@@ -25,7 +25,7 @@ c_ Solution(o..):
 
     cache    # dict
     d = c...defaultdict(l..)
-    ___ i, c __ e..(ring):
+    ___ i, c __ e..(ring
       d[c].a..(i)
     length = l..(ring)
     r.. dfs(ring, key, 0, d, length, cache)

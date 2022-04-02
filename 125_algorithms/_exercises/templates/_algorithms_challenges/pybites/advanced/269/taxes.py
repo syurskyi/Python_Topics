@@ -65,7 +65,7 @@ c_ Taxes:
 
     OUTPUT_WIDTH = 34
 
-    ___ - ,salary,bracket=BRACKET):
+    ___ - ,salary,bracket=BRACKET
         salary = salary
         income = salary
         bracket = bracket
@@ -99,7 +99,7 @@ c_ Taxes:
         largest_right_length = l..(s..(i..(salary))) + 4
         spaces = 32 - (largest_left_length + largest_right_length)
 
-        ___ i,(s__,value) __ e..(values,1):
+        ___ i,(s__,value) __ e..(values,1
             t = ' ' * spaces
             s += f' {s__:>{largest_left_length}}{t}{value:>{largest_right_length}}\n'
 

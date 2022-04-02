@@ -2,7 +2,7 @@ ____ heapq _______ heappop, heappush
 
 
 c_ Solution:
-    ___ kthSmallest  G, k):
+    ___ kthSmallest  G, k
         """
         :type G: List[List[int]]
         :type k: int
@@ -23,7 +23,7 @@ c_ Solution:
             __ k __ 0:
                 r.. a
 
-            __ y + 1 < l..(G[x]):
+            __ y + 1 < l..(G[x]
                 heappush(heap, (G[x][y + 1], x, y + 1))
 
         r.. 0

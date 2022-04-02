@@ -42,7 +42,7 @@ ____ lights _______ LightsGrid
         ),
     ],
 )
-___ test_turn_on_lights(arg, expected):
+___ test_turn_on_lights(arg, expected
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ expected
@@ -82,7 +82,7 @@ ___ test_turn_on_lights(arg, expected):
         ),
     ],
 )
-___ test_turn_off_lights(arg, expected):
+___ test_turn_off_lights(arg, expected
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ expected
@@ -109,7 +109,7 @@ ___ test_turn_off_lights(arg, expected):
         ),
     ],
 )
-___ test_toggle_lights(arg, expected):
+___ test_toggle_lights(arg, expected
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ expected
@@ -145,7 +145,7 @@ ___ test_toggle_lights(arg, expected):
         ),
     ],
 )
-___ test_turn_up_lights(arg, expected):
+___ test_turn_up_lights(arg, expected
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ expected
@@ -175,7 +175,7 @@ ___ test_turn_up_lights(arg, expected):
         (["turn on 0,0 through 9,9", "turn down 2 0,0 through 9,9"], 0),
     ],
 )
-___ test_turn_down_lights(arg, expected):
+___ test_turn_down_lights(arg, expected
     lights = LightsGrid(10, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ expected
@@ -202,7 +202,7 @@ ___ test_turn_down_lights(arg, expected):
         )
     ],
 )
-___ test_example_with_bite(arg, expected):
+___ test_example_with_bite(arg, expected
     lights = LightsGrid(5, arg)
     lights.follow_instructions()
     ... lights.lights_intensity __ expected

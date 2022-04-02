@@ -32,15 +32,15 @@ Special thanks to the colleague that, seeing my code and commenting that I worke
 """
 
 
-___ generate_bc(url, separator):
+___ generate_bc(url, separator
     __ '//' __ url:
         url = url[url.index('//') + 2:]
 
     url = url.rstrip('/')
 
     ___
-        ___ i, c __ e..(url):
-            __ c __ ['?', '#']:
+        ___ i, c __ e..(url
+            __ c __  '?', '#' :
                 url = url[0:i]
                 _____
 
@@ -52,7 +52,7 @@ ___ generate_bc(url, separator):
 
         breadcrumb = '<a href="/">HOME</a>'
 
-        ___ i, e __ e..(menus[:-1]):
+        ___ i, e __ e..(menus[:-1]
             breadcrumb += separator + '<a href="/{}/">{}</a>'.f..('/'.j..(menus[:i + 1]), get_element_name(e))
 
         breadcrumb += separator + '<span class="active">{}</span>'.f..(get_element_name(menus[-1]))
@@ -64,9 +64,9 @@ ___ generate_bc(url, separator):
 ignore_words = ["the", "of", "in", "from", "by", "with", "and", "or", "for", "to", "at", "a"]
 
 
-___ get_element_name(element):
+___ get_element_name(element
     acronyms = element.s..('-')
-    ___ i, c __ e..(acronyms[-1]):
+    ___ i, c __ e..(acronyms[-1]
         __ c __ '.':
             acronyms[-1] = acronyms[-1][:i]
             _____

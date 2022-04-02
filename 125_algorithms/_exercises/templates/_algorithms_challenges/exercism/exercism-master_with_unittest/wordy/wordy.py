@@ -9,7 +9,7 @@ c_ Calculator:
 
     VALID_TOKENS = s..(OPERATORS.values())
 
-    ___ - , inp):
+    ___ - , inp
         inp = inp
         tokenized = tokenize(inp)
         tokens = tokenized.s..(" ")
@@ -26,11 +26,11 @@ c_ Calculator:
             num_stack.insert(0, evaluate(operator, num1, num2))
         r.. num_stack.pop(0)
 
-    ___ evaluate  operator, num1, num2):
+    ___ evaluate  operator, num1, num2
         r.. eval(s..(num1) + operator + s..(num2))
 
     ___ num_stack
-        r.. l..(map(i.., l..(filter(digit, tokens))))
+        r.. l.. m..(i.., l..(filter(digit, tokens))))
 
     ___ operator_stack
         r.. l..(filter(operator, tokens))
@@ -55,23 +55,23 @@ c_ Calculator:
         r.. a..(valid_element(element) ___ element __ tokens)
 
     @classmethod
-    ___ valid_element(cls, element):
+    ___ valid_element(cls, element
         r.. element __ cls.VALID_TOKENS o. cls.digit(element)
 
     @classmethod
-    ___ tokenize(cls, inp):
+    ___ tokenize(cls, inp
         ___ operator, token __ l..(cls.OPERATORS.i..:
             inp = inp.r..(operator, token)
         r.. inp
 
     @staticmethod
-    ___ digit(element):
+    ___ digit(element
         r.. element.lstrip("-").i..
 
     @classmethod
-    ___ operator(cls, element):
+    ___ operator(cls, element
         r.. element __ l..(cls.OPERATORS.values())
 
 
-___ calculate(inp):
+___ calculate(inp
     r.. Calculator(inp).calculate()

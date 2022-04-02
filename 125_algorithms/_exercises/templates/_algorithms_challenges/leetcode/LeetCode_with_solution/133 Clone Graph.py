@@ -25,14 +25,14 @@ Visually, the graph looks like the following:
 __author__ = 'Danyang'
 # Definition for a undirected graph node
 c_ UndirectedGraphNode:
-    ___ - , x):
+    ___ - , x
         label = x
         neighbors    # list
     ___  -r
         r.. repr(label)
 
 c_ Solution:
-    ___ cloneGraph_TLE  node):
+    ___ cloneGraph_TLE  node
         """
         dfs
         :param node: UndirectedGraphNode
@@ -40,7 +40,7 @@ c_ Solution:
         """
         r.. clone_graph_visited(node, s..())
 
-    ___ clone_graph_visited  node, visited_set):
+    ___ clone_graph_visited  node, visited_set
         """
         post-order traversal
         Time Limit Exceeded
@@ -59,7 +59,7 @@ c_ Solution:
         node_cloned.neighbors = neighbors_cloned
         r.. node_cloned
 
-    ___ cloneGraph  node):
+    ___ cloneGraph  node
         """
         bfs with visited
         similar to 138 Copy List with Random Pointer

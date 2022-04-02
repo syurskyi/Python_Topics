@@ -17,7 +17,7 @@ considered as a special case of increasing sequence.
 
 
 c_ Solution:
-    ___ findSubsequences  nums):
+    ___ findSubsequences  nums
         """
         2nd approach
         Maintain the current increasing subsequence and iterate them to grow it
@@ -43,7 +43,7 @@ c_ Solution:
         ]
 
 
-    ___ findSubsequences  nums):
+    ___ findSubsequences  nums
         """
         1st approach.
         F[i] records the increasing subsequence ends at A[i]
@@ -59,12 +59,12 @@ c_ Solution:
             ___ i __ r..(l)
         ]
         ret = s..()
-        ___ i __ r..(1, l):
-            ___ j __ r..(i):
+        ___ i __ r..(1, l
+            ___ j __ r..(i
                 __ nums[i] >= nums[j]:
                     ___ t __ F[j]:
                         cur = t + (nums[i],)
                         ret.add(cur)
                         F[i].a..(cur)
 
-        r.. l..(map(l.., ret))
+        r.. l.. m..(l.., ret))

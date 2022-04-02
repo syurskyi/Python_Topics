@@ -16,7 +16,7 @@ Have fun and keep coding in Python!
 
 '''
 
-___ wc(file_):
+___ wc(file_
     """Takes an absolute file path/name, calculates the number of
        lines/words/chars, and returns a string of these numbers + file, e.g.:
        3 12 60 /tmp/somefile
@@ -26,7 +26,7 @@ ___ wc(file_):
     cnt_chars = 0
     within_word = F..
     ___
-        fo = open(file_, 'r')
+        fo = o.. file_, 'r')
     ______:
         print("Cannot open file")
     filename = fo.name
@@ -37,7 +37,7 @@ ___ wc(file_):
             __ c != ' ' a.. c != '\n' a.. c != '\t':
                 within_word = T..
                 _____
-            __ within_word __ T.. a.. (c __ ' ' o. c __ '\t' o. c __ '\n'):
+            __ within_word __ T.. a.. (c __ ' ' o. c __ '\t' o. c __ '\n'
                 cnt_words += 1
                 within_word = F..
     fo.close()

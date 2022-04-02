@@ -18,7 +18,7 @@ If S = [1,2,2], a solution is:
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ subsetsWithDup  S):
+    ___ subsetsWithDup  S
         """
         dfs
         notice the skipping
@@ -30,9 +30,9 @@ c_ Solution:
         get_subset(S, [], result)
         r.. result
 
-    ___ get_subset  S, current, result):
+    ___ get_subset  S, current, result
         result.a..(current)
-        ___ ind, val __ e..(S):
+        ___ ind, val __ e..(S
             # JUMP, avoid duplicates
             __ ind-1>=0 a.. val__S[ind-1]:  # ensure uni-direction
                 _____

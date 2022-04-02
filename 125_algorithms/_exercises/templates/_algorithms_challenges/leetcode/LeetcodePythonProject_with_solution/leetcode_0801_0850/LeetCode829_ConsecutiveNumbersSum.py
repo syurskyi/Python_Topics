@@ -3,8 +3,8 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ consecutiveNumbersSum  N):
+c_ Solution(o..
+    ___ consecutiveNumbersSum  N
         """
         :type N: int
         :rtype: int

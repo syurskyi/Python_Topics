@@ -1,6 +1,6 @@
-c_ Solution(o..):
+c_ Solution(o..
   # better way
-  ___ productExceptSelf  nums):
+  ___ productExceptSelf  nums
     """
     :type nums: List[int]
     :rtype: List[int]

@@ -4,17 +4,17 @@ ____ d__ _______ d__
 ROW_FMT = u'{{:<{1}}} | {{:<{2}}} | {{:{0}{3}}}'
 
 
-___ truncate(s, length=25):
+___ truncate(s, length=25
     __ l..(s) <= length:
         r.. s
     r.. s[:length - 3] + '...'
 
 
-c_ LCInfo(o..):
-    ___ - , locale, currency, columns):
+c_ LCInfo(o..
+    ___ - , locale, currency, columns
         columns = columns
         __ locale __ 'en_US':
-            headers = ['Date', 'Description', 'Change']
+            headers =  'Date', 'Description', 'Change'
             datefmt = '{0.month:02}/{0.day:02}/{0.year:04}'
             cur_fmt = u'{}{}{}{}'
             lead_neg = '('
@@ -22,7 +22,7 @@ c_ LCInfo(o..):
             thousands = ','
             decimal = '.'
         ____ locale __ 'nl_NL':
-            headers = ['Datum', 'Omschrijving', 'Verandering']
+            headers =  'Datum', 'Omschrijving', 'Verandering'
             datefmt = '{0.day:02}-{0.month:02}-{0.year:04}'
             cur_fmt = u'{1} {0}{2}{3}'
             lead_neg = '-'
@@ -36,7 +36,7 @@ c_ LCInfo(o..):
             'EUR': u'€',
         }.get(currency)
 
-    ___ number  n):
+    ___ number  n
         n_int, n_float = divmod(abs(n), 100)
         n_int_parts    # list
         w.... n_int > 0:
@@ -48,7 +48,7 @@ c_ LCInfo(o..):
             n_float,
         )
 
-    ___ currency  change):
+    ___ currency  change
         r.. cur_fmt.f..(
             lead_neg __ change < 0 ____ '',
             cur_symbol,
@@ -56,7 +56,7 @@ c_ LCInfo(o..):
             trail_neg __ change < 0 ____ ' ',
         )
 
-    ___ entry  entry):
+    ___ entry  entry
         date, change, desc = entry
         fmt = ROW_FMT.f..('>', *columns)
         r.. fmt.f..(
@@ -65,13 +65,13 @@ c_ LCInfo(o..):
             currency(change),
         )
 
-    ___ table  entries):
+    ___ table  entries
         lines = [headers]
-        lines.extend(map(entry, s..(entries)))
+        lines.extend m..(entry, s..(entries)))
         r.. '\n'.j..(lines)
 
 
-___ create_entry(date, description, change):
+___ create_entry(date, description, change
     r.. (
         d__.strptime(date, '%Y-%m-%d'),
         change,
@@ -79,7 +79,7 @@ ___ create_entry(date, description, change):
     )
 
 
-___ format_entries(currency, locale, entries):
+___ format_entries(currency, locale, entries
     columns = (10, 25, 13)
     lcinfo = LCInfo(locale, currency, columns)
     r.. lcinfo.table(entries)

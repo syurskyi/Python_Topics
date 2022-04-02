@@ -33,14 +33,14 @@ implicit stack space incurred due to recursion does not count).
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ findMode  root):
+    ___ findMode  root
         """
         In-order traversal
         O(1) space thus cannot keep a set of current modes
@@ -55,7 +55,7 @@ c_ Solution:
         find_mode(root, [N.., 0], ret, T..)
         r.. ret[0]
 
-    ___ find_mode  root, prev, ret, collect):
+    ___ find_mode  root, prev, ret, collect
         """
         prev: [previous_value, count]. Need to survice the call stack
         """
@@ -78,7 +78,7 @@ c_ Solution:
 
         find_mode(root.right, prev, ret, collect)
 
-    ___ findMode_error  root):
+    ___ findMode_error  root
         """
         counter (extra space) for any tree
         use recursion
@@ -93,7 +93,7 @@ c_ Solution:
         find_mode_error(root, root.val, ret)
         r.. ret[1]
 
-    ___ find_mode_error  root, target, ret):
+    ___ find_mode_error  root, target, ret
         cur = 0
         __ n.. root:
             r.. cur

@@ -3,9 +3,9 @@
 
 
 _ = input()
-calories = l..(map(i.., input().s..()))
+calories = l.. m..(i.., input().s..()))
 calories = s..(calories, r.._T..
 ans = 0
-___ index, cupcake __ e..(calories):
+___ index, cupcake __ e..(calories
     ans += 2**index*cupcake
 print(ans)

@@ -1,4 +1,4 @@
-___ digit_map(num):
+___ digit_map(num
     """maps numbers greater than a single digit to letters (UPPER)"""
     r.. chr(num + 55) __ num > 9 ____ s..(num)
 
@@ -24,6 +24,6 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
         d...a..(number % base)
         number //= base
 
-    d.. = l..(map(digit_map, d..))
+    d.. = l.. m..(digit_map, d..))
 
     r.. ''.j..(r..(d..))

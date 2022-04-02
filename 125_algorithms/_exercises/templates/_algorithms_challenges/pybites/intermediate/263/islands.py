@@ -1,4 +1,4 @@
-___ count_islands(grid):
+___ count_islands(grid
     """
     Input: 2D matrix, each item is [x, y] -> row, col.
     Output: number of islands, or 0 if found none.
@@ -43,7 +43,7 @@ ___ count_islands(grid):
 
 
 
-___ mark_islands(i, j, grid):
+___ mark_islands(i, j, grid
     """
     Input: the row, column and grid
     Output: None. Just mark the visited islands as in-place operation.

@@ -4,8 +4,8 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findContentChildren  g, s):
+c_ Solution(o..
+    ___ findContentChildren  g, s
         """
         :type g: List[int]
         :type s: List[int]
@@ -15,7 +15,7 @@ c_ Solution(o..):
         s.s..()
         i, j = 0, 0
         count = 0
-        w.... i < l..(g) a.. j < l..(s):
+        w.... i < l..(g) a.. j < l..(s
             __ g[i] <= s[j]:
                 i += 1
                 j += 1

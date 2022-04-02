@@ -1,19 +1,19 @@
-c_ Solution(o..):
-  ___ combinationSum3  k, n):
+c_ Solution(o..
+  ___ combinationSum3  k, n
     """
     :type k: int
     :type n: int
     :rtype: List[List[int]]
     """
 
-    ___ dfs(k, start, path, subsum, res, visited):
+    ___ dfs(k, start, path, subsum, res, visited
       __ l..(path) __ k a.. subsum __ 0:
         res.a..(path + [])
         r..
       __ l..(path) >= k o. subsum <= 0:
         r..
 
-      ___ i __ r..(start, 10):
+      ___ i __ r..(start, 10
         __ visited[i] __ 0:
           visited[i] = 1
           path.a..(i)

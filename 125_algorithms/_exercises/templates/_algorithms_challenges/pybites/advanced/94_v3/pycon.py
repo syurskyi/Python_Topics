@@ -16,24 +16,24 @@ urllib.request.urlretrieve(data, pycon_videos)
 Video = n..('Video', 'id title duration metrics')
 
 
-___ load_pycon_data(pycon_videos=pycon_videos):
+___ load_pycon_data(pycon_videos=pycon_videos
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
-    w__ open(pycon_videos, 'rb') __ pkl:
+    w__ o.. pycon_videos, 'rb') __ pkl:
         r.. pickle.load(pkl)
 
 
-___ get_most_popular_talks_by_views(videos):
+___ get_most_popular_talks_by_views(videos
     """Return the pycon video list sorted by viewCount"""
-    r.. s..(videos, key=l.... vid: -i..(vid.metrics['viewCount']))
+    r.. s..(videos, key=l.... vid: -i..(vid.metrics 'viewCount' ))
 
 
-___ _like_ratio(vid):
+___ _like_ratio(vid
     metrics = vid.metrics
-    r.. -(f__(metrics['likeCount']) - f__(metrics['dislikeCount'])) / f__(metrics['viewCount'])
+    r.. -(f__(metrics 'likeCount' ) - f__(metrics 'dislikeCount' )) / f__(metrics 'viewCount' )
 
 
-___ get_most_popular_talks_by_like_ratio(videos):
+___ get_most_popular_talks_by_like_ratio(videos
     """Return the pycon video list sorted by most likes relative to
        number of views, so 10 likes on 175 views ranks higher than
        12 likes on 300 views. Discount the dislikeCount from the likeCount.
@@ -44,17 +44,17 @@ ___ get_most_popular_talks_by_like_ratio(videos):
 duration_regex = __.c..(r'PT(?:(?P<hrs>\d+)H)?(?:(?P<mins>\d+)M)?(?:(?P<secs>\d+)S)?')
 
 
-___ _vid_time(vid):
+___ _vid_time(vid
     time_parts = duration_regex.m..(vid.duration).groupdict(default=0)
-    r.. t..(hours=i..(time_parts['hrs']), minutes=i..(time_parts['mins']), seconds=i..(time_parts['secs']))
+    r.. t..(hours=i..(time_parts 'hrs' ), minutes=i..(time_parts 'mins' ), seconds=i..(time_parts 'secs' ))
 
 
-___ get_talks_gt_one_hour(videos):
+___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
     r.. [vid ___ vid __ videos __ _vid_time(vid) > t..(hours=1)]
 
 
-___ get_talks_lt_twentyfour_min(videos):
+___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
     r.. [vid ___ vid __ videos __ _vid_time(vid) < t..(minutes=24)]

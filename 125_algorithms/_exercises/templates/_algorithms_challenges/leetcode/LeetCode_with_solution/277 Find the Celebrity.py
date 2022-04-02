@@ -4,7 +4,7 @@ Premium Question
 __author__ = 'Daniel'
 
 
-___ knows(a, b):
+___ knows(a, b
     """
     :param a: person
     :param b: person
@@ -12,8 +12,8 @@ ___ knows(a, b):
     """
 
 
-c_ Solution(o..):
-    ___ findCelebrity  n):
+c_ Solution(o..
+    ___ findCelebrity  n
         """
         :type n: int
         :rtype: int
@@ -22,20 +22,20 @@ c_ Solution(o..):
         j = n-1
         w.... i < j:
             nxt_i, nxt_j = i, j
-            __ knows(i, j) o. n.. knows(j, i):
+            __ knows(i, j) o. n.. knows(j, i
                 nxt_i += 1
-            __ knows(j, i) o. n.. knows(i, j):
+            __ knows(j, i) o. n.. knows(i, j
                 nxt_j -= 1
             i, j = nxt_i, nxt_j
 
         celebrity = i
-        ___ i __ x..(n):
+        ___ i __ x..(n
             __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
                 r.. -1
 
         r.. celebrity
 
-    ___ findCelebrity_set  n):
+    ___ findCelebrity_set  n
         """
         O(n)
         set
@@ -48,16 +48,16 @@ c_ Solution(o..):
         w.... l..(V) > 1:
             a = V.pop()
             b = V.pop()
-            __ knows(a, b) a.. n.. knows(b, a):
+            __ knows(a, b) a.. n.. knows(b, a
                 V.add(b)
-            ____ n.. knows(a, b) a.. knows(b, a):
+            ____ n.. knows(a, b) a.. knows(b, a
                 V.add(a)
 
         __ n.. V:
             r.. -1
 
         celebrity = V.pop()
-        ___ i __ x..(n):
+        ___ i __ x..(n
             __ i != celebrity a.. (n.. knows(i, celebrity) o. knows(celebrity, i)):
                 r.. -1
 

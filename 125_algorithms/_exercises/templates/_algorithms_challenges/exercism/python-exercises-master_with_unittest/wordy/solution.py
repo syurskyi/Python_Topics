@@ -11,7 +11,7 @@ VALID_OPERATIONS = {"plus": add, "minus": sub,
                     "multiplied by": mul, "divided by": div}
 
 
-___ calculate(stmt):
+___ calculate(stmt
     __ n.. (stmt.startswith("What is ") a.. stmt.endswith("?")):
         r.. ValueError("Ill-formed question")
     l = stmt[8:-1].s...l...s..

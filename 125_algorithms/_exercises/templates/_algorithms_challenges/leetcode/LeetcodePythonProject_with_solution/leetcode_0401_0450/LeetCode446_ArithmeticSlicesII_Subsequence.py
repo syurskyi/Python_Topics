@@ -1,13 +1,13 @@
 
-c_ Solution(o..):
-    ___ numberOfArithmeticSlices  A):
+c_ Solution(o..
+    ___ numberOfArithmeticSlices  A
         nums = A
         n = l..(nums)
         res = 0
         dp = [{} ___ _ __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             num1 = nums[i]
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 num2 = nums[j]
                 diff = num2-num1
                 c1 = dp[i].get(diff, 0)

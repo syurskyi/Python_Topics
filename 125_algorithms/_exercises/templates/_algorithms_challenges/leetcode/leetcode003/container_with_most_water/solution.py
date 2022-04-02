@@ -1,6 +1,6 @@
 c_ Solution:
     # @return an integer
-    ___ maxArea  height):
+    ___ maxArea  height
         n = l..(height)
         i = 0
         j = n - 1

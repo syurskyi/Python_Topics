@@ -11,7 +11,7 @@ ___ test_what_means_emoji_not_found
     ... what_means_emoji('aaa').l.. __ 'not found'
 
 
-___ test_find_matches(capfd):
+___ test_find_matches(capfd
     find_emoji('sun')
     output = ?.r .. 0].l..
     # some of the results you should get back
@@ -23,7 +23,7 @@ ___ test_find_matches(capfd):
     ... '🌻' __ output
 
 
-___ test_find_no_match(capfd):
+___ test_find_no_match(capfd
     find_emoji('awesome')
     output = ?.r .. 0].l..
     ... n.. output.s.. o. 'no matches' __ output.l..

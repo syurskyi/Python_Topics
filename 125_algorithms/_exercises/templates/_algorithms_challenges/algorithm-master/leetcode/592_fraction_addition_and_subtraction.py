@@ -2,7 +2,7 @@ _______ __
 
 
 c_ Solution:
-    ___ fractionAddition  E):
+    ___ fractionAddition  E
         """
         :type E: str
         :rtype: str
@@ -18,7 +18,7 @@ c_ Solution:
 
         a, b = 0, 1
         i = 0
-        ___ frac __ __.s..('\+|-', E):
+        ___ frac __ __.s..('\+|-', E
             __ n.. frac:
                 _____
 
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. '{}/{}'.f..(a, b)
 
-    ___ get_gcd  a, b):
+    ___ get_gcd  a, b
         w.... b:
             a, b = b, a % b
         r.. a

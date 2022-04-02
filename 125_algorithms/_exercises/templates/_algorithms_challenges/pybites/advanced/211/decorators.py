@@ -4,11 +4,11 @@ _______ sys
 MAX_RETRIES = 3
 
 
-c_ MaxRetriesException(E..):
+c_ MaxRetriesException(E..
     p..
 
 
-___ retry(func):
+___ retry(func
     """Complete this decorator, make sure
        you print the exception thrown"""
     # ... retry MAX_RETRIES times

@@ -14,7 +14,7 @@ bad version.
 
 
 c_ Solution:
-    ___ findFirstBadVersion  n):
+    ___ findFirstBadVersion  n
         """
         :type n: int
         :rtype: int
@@ -25,7 +25,7 @@ c_ Solution:
         left, right = 1, n
         w.... left + 1 < right:
             mid = (left + right) // 2
-            __ isBadVersion(mid):
+            __ isBadVersion(mid
                 right = mid
             ____:
                 left = mid

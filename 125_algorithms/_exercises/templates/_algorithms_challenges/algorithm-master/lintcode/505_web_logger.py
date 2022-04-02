@@ -1,5 +1,5 @@
 c_ WebLogger:
-    ___ - ):
+    ___ -
         dummy    # list
         dummy |  = [dummy, dummy, -1]
         dummy = dummy
@@ -9,7 +9,7 @@ c_ WebLogger:
     @param: timestamp: An integer
     @return: nothing
     """
-    ___ hit  timestamp):
+    ___ hit  timestamp
         tail = dummy[0]
 
         tail[1] = dummy[0] = _n = [N.., N.., timestamp]
@@ -22,11 +22,11 @@ c_ WebLogger:
     @param: timestamp: An integer
     @return: An integer
     """
-    ___ get_hit_count_in_last_5_minutes  timestamp):
+    ___ get_hit_count_in_last_5_minutes  timestamp
         head = dummy[1]
 
         w.... (head __ n.. dummy a..
-               head[2] + 300 <= timestamp):
+               head[2] + 300 <= timestamp
             _, nxt, _ = head
             dummy[1] = nxt
             nxt[0] = dummy

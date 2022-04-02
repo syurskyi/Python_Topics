@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ computeLastDigit  a, b):
+    ___ computeLastDigit  a, b
         """
         :type a: int
         :type b: int
@@ -12,7 +12,7 @@ c_ Solution:
 
         ans = 1
 
-        ___ num __ r..(a + 1, b + 1):
+        ___ num __ r..(a + 1, b + 1
             __ ans __ 0:
                 r.. 0
 

@@ -20,8 +20,8 @@ Return false.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ isSubsequence  s, t):
+c_ Solution(o..
+    ___ isSubsequence  s, t
         """
         Greedy matching
         :type s: str
@@ -30,7 +30,7 @@ c_ Solution(o..):
         """
         i = 0
         j = 0
-        w.... i < l..(s) a.. j < l..(t):
+        w.... i < l..(s) a.. j < l..(t
             __ t[j] != s[i]:
                 j += 1
             ____:

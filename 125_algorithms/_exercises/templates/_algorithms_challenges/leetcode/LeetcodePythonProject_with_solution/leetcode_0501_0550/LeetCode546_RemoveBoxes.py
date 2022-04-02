@@ -4,8 +4,8 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ removeBoxes  boxes):
+c_ Solution(o..
+    ___ removeBoxes  boxes
         """
         :type boxes: List[int]
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(o..):
         dp = [[[0]*n ___ _ __ r..(n)] ___ _ __ r..(n)]
         r.. helper(dp, boxes, 0, n-1, 1)
     
-    ___ helper  dp, boxes, i, j, k):
+    ___ helper  dp, boxes, i, j, k
         __ i > j:
             r.. 0
         ____ i __ j:
@@ -24,7 +24,7 @@ c_ Solution(o..):
             r.. dp[i][j][k]
         ____:
             tmp = helper(dp, boxes, i+1, j, 1) + k*k
-            ___ m __ r..(i+1, j+1):
+            ___ m __ r..(i+1, j+1
                 __ boxes[i] __ boxes[m]:
                     tmp = m..(tmp, helper(dp, boxes, i+1, m-1, 1)+\
                               helper(dp, boxes, m, j, k+1))

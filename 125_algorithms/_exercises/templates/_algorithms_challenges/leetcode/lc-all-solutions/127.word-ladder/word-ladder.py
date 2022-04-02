@@ -2,8 +2,8 @@ _______ s__
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ ladderLength  beginWord, endWord, wordList):
+c_ Solution(o..
+  ___ ladderLength  beginWord, endWord, wordList
     """
     :type beginWord: str
     :type endWord: str
@@ -11,7 +11,7 @@ c_ Solution(o..):
     :rtype: int
     """
 
-    ___ getNbrs(src, dest, wordList):
+    ___ getNbrs(src, dest, wordList
       res    # list
       ___ c __ s__.ascii_lowercase:
         ___ i __ r..(0, l..(src)):
@@ -27,7 +27,7 @@ c_ Solution(o..):
       length += 1
       ___ k __ r..(0, l..(queue)):
         top = queue.popleft()
-        ___ nbr __ getNbrs(top, endWord, wordList):
+        ___ nbr __ getNbrs(top, endWord, wordList
           wordList.remove(nbr)
           __ nbr __ endWord:
             r.. length + 1

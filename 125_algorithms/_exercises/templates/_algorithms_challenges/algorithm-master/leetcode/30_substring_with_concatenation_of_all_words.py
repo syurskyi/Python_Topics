@@ -1,12 +1,12 @@
 c_ Solution:
-    ___ findSubstring  s, S):
+    ___ findSubstring  s, S
         """
         :type s: str
         :type S: List[str]
         :rtype: List[int]
         """
         ans    # list
-        __ n.. s o. n.. S o. l..(s) < l..(S) * l..(S[0]):
+        __ n.. s o. n.. S o. l..(s) < l..(S) * l..(S[0]
             r.. ans
 
         n, m, k = l..(s), l..(S), l..(S[0])
@@ -14,12 +14,12 @@ c_ Solution:
         ___ c __ S:
             F[c] = F.get(c, 0) + 1
 
-        ___ start __ r..(k):
+        ___ start __ r..(k
             _F    # dict
             cnt = 0
             left = start
 
-            ___ right __ r..(start, n - k + 1, k):
+            ___ right __ r..(start, n - k + 1, k
                 sr = s[right:right + k]
                 __ sr n.. __ F:
                     _F    # dict

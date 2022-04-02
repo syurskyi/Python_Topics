@@ -9,7 +9,7 @@ class Tweet:
 
 
 c_ MiniTwitter:
-    ___ - ):
+    ___ -
         timestamp = 0
         tweets    # dict
         followings    # dict
@@ -19,7 +19,7 @@ c_ MiniTwitter:
     @param: tweet_text: a string
     @return: a tweet
     """
-    ___ postTweet  user_id, tweet_text):
+    ___ postTweet  user_id, tweet_text
         __ user_id n.. __ tweets:
             tweets[user_id]    # list
 
@@ -35,7 +35,7 @@ c_ MiniTwitter:
     @param: user_id: An integer
     @return: a list of 10 new feeds recently and sort by timeline
     """
-    ___ getNewsFeed  user_id):
+    ___ getNewsFeed  user_id
         res    # list
 
         __ user_id __ tweets:
@@ -56,7 +56,7 @@ c_ MiniTwitter:
     @param: user_id: An integer
     @return: a list of 10 new posts recently and sort by timeline
     """
-    ___ getTimeline  user_id):
+    ___ getTimeline  user_id
         __ user_id n.. __ tweets:
             r.. []
 
@@ -67,7 +67,7 @@ c_ MiniTwitter:
     @param: to_id: An integer
     @return: nothing
     """
-    ___ follow  from_id, to_id):
+    ___ follow  from_id, to_id
         __ from_id n.. __ followings:
             followings[from_id] = s..()
 
@@ -81,7 +81,7 @@ c_ MiniTwitter:
     @param: to_id: An integer
     @return: nothing
     """
-    ___ unfollow  from_id, to_id):
+    ___ unfollow  from_id, to_id
         __ from_id n.. __ followings:
             r..
 

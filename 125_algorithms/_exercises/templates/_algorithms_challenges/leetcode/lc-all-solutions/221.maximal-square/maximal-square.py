@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maximalSquare  matrix):
+c_ Solution(o..
+  ___ maximalSquare  matrix
     """
     :type matrix: List[List[str]]
     :rtype: int

@@ -3,24 +3,24 @@ Created on Mar 4, 2018
 
 @author: tongq
 '''
-c_ Interval(o..):
-    ___ - , start, end):
+c_ Interval(o..
+    ___ - , start, end
         start = start
         end = end
 
-c_ MyCalendar(o..):
+c_ MyCalendar(o..
 
-    ___ - ):
+    ___ -
         intervals    # list
 
-    ___ book  start, end):
+    ___ book  start, end
         """
         :type start: int
         :type end: int
         :rtype: bool
         """
         newInterval = Interval(start, end)
-        ___ i, interval __ e..(intervals):
+        ___ i, interval __ e..(intervals
             __ newInterval.end <= interval.start:
                 intervals.insert(i, newInterval)
                 r.. T..

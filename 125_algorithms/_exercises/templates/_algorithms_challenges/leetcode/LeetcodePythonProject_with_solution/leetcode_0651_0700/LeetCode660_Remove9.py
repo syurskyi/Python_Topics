@@ -3,8 +3,8 @@ Created on Oct 8, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ newInteger  n):
+c_ Solution(o..
+    ___ newInteger  n
         """
         :type n: int
         :rtype: int

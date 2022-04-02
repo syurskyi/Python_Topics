@@ -1,12 +1,12 @@
-c_ TrieNode(o..):
-  ___ - ):
+c_ TrieNode(o..
+  ___ -
     children    # dict
     isWord = F..
     word = ""
 
 
-c_ Solution(o..):
-  ___ replaceWords  d.., sentence):
+c_ Solution(o..
+  ___ replaceWords  d.., sentence
     """
     :type dict: List[str]
     :type sentence: str

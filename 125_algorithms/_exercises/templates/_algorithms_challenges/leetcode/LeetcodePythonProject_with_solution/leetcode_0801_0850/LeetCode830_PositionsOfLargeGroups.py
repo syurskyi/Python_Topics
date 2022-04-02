@@ -3,8 +3,8 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ largeGroupPositions  S):
+c_ Solution(o..
+    ___ largeGroupPositions  S
         """
         :type S: str
         :rtype: List[List[int]]
@@ -12,7 +12,7 @@ c_ Solution(o..):
         s = S
         res    # list
         left = 0
-        ___ i __ r..(l..(s)+1):
+        ___ i __ r..(l..(s)+1
             __ i __ l..(s) o. s[i] != s[left]:
                 __ i-left >= 3:
                     res.a..([left, i-1])

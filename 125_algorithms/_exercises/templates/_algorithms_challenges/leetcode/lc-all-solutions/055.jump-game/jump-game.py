@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ canJump  nums):
+c_ Solution(o..
+  ___ canJump  nums
     """
     :type nums: List[int]
     :rtype: int

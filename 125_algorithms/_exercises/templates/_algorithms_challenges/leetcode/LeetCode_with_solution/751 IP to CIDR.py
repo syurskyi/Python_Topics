@@ -104,22 +104,22 @@ c_ Solution:
 
         r.. ret
 
-    ___ to_bin  ip):
+    ___ to_bin  ip
         ret = 0
-        ___ n, w __ z..(map(i.., ip.s..(".")), weights):
+        ___ n, w __ z.. m..(i.., ip.s..(".")), weights
             ret += n << w
 
         r.. ret
 
-    ___ to_ip  bin):
+    ___ to_ip  bin
         ret    # list
         ___ w __ weights:
             ret.a..(
                 (bin >> w) & 255
             )
-        r.. ".".j..(map(s.., ret))
+        r.. ".".j.. m..(s.., ret))
 
-    ___ get_lsb  n):
+    ___ get_lsb  n
         lsb = 0
         w.... (n >> lsb) & 1 __ 0:
             lsb += 1

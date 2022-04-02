@@ -5,9 +5,9 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ checkEqualTree  root):
-    ___ s..(node):
+c_ Solution(o..
+  ___ checkEqualTree  root
+    ___ s..(node
       __ n.. node:
         r.. 0
       s = node.val + s..(node.left) + s..(node.right)

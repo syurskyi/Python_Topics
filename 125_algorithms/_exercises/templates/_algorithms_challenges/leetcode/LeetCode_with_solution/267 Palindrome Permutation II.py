@@ -8,8 +8,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ generatePalindromes  s):
+c_ Solution(o..
+    ___ generatePalindromes  s
         """
         :type s: str
         :rtype: List[str]
@@ -35,18 +35,18 @@ c_ Solution(o..):
         grow(s, m, N.., cur, ret)
         r.. ret
 
-    ___ grow  s, count_map, pi, cur, ret):
-        __ l..(cur) __ l..(s):
+    ___ grow  s, count_map, pi, cur, ret
+        __ l..(cur) __ l..(s
             ret.a..(cur)
             r..
 
         ___ k __ count_map.k..:
             __ k != pi a.. count_map[k] > 0:
-                ___ i __ x..(1, count_map[k]/2+1):  # jump the parent
+                ___ i __ x..(1, count_map[k]/2+1  # jump the parent
                     count_map[k] -= i*2
                     grow(s, count_map, k, k*i+cur+k*i, ret)
                     count_map[k] += i*2
 
 
 __ _______ __ _______
-    ... Solution().generatePalindromes("aabb") __ ['baab', 'abba']
+    ... Solution().generatePalindromes("aabb") __  'baab', 'abba'

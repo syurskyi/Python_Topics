@@ -7,13 +7,13 @@ You may assume that duplicates do not exist in the tree.
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ buildTree  inorder, postorder):
+    ___ buildTree  inorder, postorder
         """
         Recursive algorithm. Pre-order, in-order, post-order traversal relationship
 

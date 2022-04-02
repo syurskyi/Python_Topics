@@ -1,4 +1,4 @@
-___ is_empty(dictionary):
+___ is_empty(dictionary
     __ l..(dictionary) __ 0:
         r.. T..
     ____:

@@ -1,7 +1,7 @@
 _______ __
 
 
-___ password_complexity(password: s..):
+___ password_complexity(password: s..
     """Input: password string, calculate score according to 5 criteria in bite,
        return: score int"""
     up = lo = num = spec = 0
@@ -23,6 +23,6 @@ ___ password_complexity(password: s..):
         score += 1
     __ l..(password) >= 8:
         score += 1
-        __ n.. __.s..(r'(.)\1', password):
+        __ n.. __.s..(r'(.)\1', password
             score += 1
     r.. score

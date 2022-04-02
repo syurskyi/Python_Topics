@@ -5,7 +5,7 @@ _______ p__
 ____ spelling _______ suggest_word, load_words
 
 
-@p__.f..(scope='module')
+?p__.f..(scope='module')
 ___ a_words
     """Get only a[abcdefghijklm]-words to speed up tests"""
     words = load_words()
@@ -24,5 +24,5 @@ ___ a_words
     ('accomodate', 'accommodate'),
     ('accidentaly', 'accidentally'),
 ])
-___ test_suggest_word(word, expected, a_words):
+___ test_suggest_word(word, expected, a_words
     ... suggest_word(word, words=a_words) __ expected

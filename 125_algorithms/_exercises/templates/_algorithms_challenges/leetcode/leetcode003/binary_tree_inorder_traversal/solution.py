@@ -20,8 +20,8 @@ Note: Recursive solution is trivial, could you do it iteratively?
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-    ___ inorderTraversal  root):
+c_ Solution(o..
+    ___ inorderTraversal  root
         """
         :type root: TreeNode
         :rtype: List[int]

@@ -1,7 +1,7 @@
 c_ Solution:
     # @param A a list of integers
     # @return nothing, sort in place
-    ___ sortColors  A):
+    ___ sortColors  A
         n = l..(A)
         r = 0  # Last index of red
         b = n - 1  # First index of white

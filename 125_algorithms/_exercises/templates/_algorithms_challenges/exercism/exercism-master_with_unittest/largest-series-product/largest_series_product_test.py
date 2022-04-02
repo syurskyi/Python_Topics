@@ -11,14 +11,14 @@ _______ unittest
 ____ series _______ largest_product, slices
 
 
-c_ SeriesTest(unittest.TestCase):
+c_ SeriesTest(unittest.TestCase
     ___ test_slices_of_two
         assertEqual([[9, 7], [7, 8], [8, 6], [6, 7],
                           [7, 5], [5, 6], [6, 4]],
                          slices("97867564", 2))
 
     ___ test_overly_long_slice
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             slices("012", 4)
 
     ___ test_largest_product_of_2
@@ -38,7 +38,7 @@ c_ SeriesTest(unittest.TestCase):
         assertEqual(1, largest_product("", 0))
 
     ___ test_slices_bigger_than_number
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             largest_product("012", 4)
 
 

@@ -3,6 +3,6 @@
 
 
 k = i..(input())
-room_number_list = l..(map(i.., input().s..()))
+room_number_list = l.. m..(i.., input().s..()))
 captain_room_number = (s..(s..(room_number_list)) * k - s..(room_number_list)) // (k - 1)
 print(captain_room_number)

@@ -12,16 +12,16 @@ ___ get_csv
       decoded content"""
    response = requests.get(CSV_URL)
    response.encoding = "utf-8"
-   csv_content = csv.reader(response.text.splitlines())
+   csv_content = csv.reader(response.text.s..())
    r.. csv_content
 
 
-___ create_user_bar_chart(content):
+___ create_user_bar_chart(content
    """Receives csv file (decoded) content and print a table of timezones
       and their corresponding member counts in pluses to standard output"""
    tz_frequency    # dict
 
-   ___ i, row __ e..(content):
+   ___ i, row __ e..(content
       __ i __ 0:
          _____
       tz = row[2]
@@ -37,7 +37,7 @@ ___ create_user_bar_chart(content):
       country = tz[0]
       count = tz[1]
       plus = ""
-      ___ i __ r..(count):
+      ___ i __ r..(count
          plus += "+"
    
       table += f"{country: <21}| {plus}\n"

@@ -7,12 +7,12 @@ Can you solve it without using extra space?
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 c_ Solution:
-    ___ hasCycle  head):
+    ___ hasCycle  head
         """
         if extra space available, use hash table
         if not, use the model of Hare and Tortoise

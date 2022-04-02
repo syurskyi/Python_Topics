@@ -12,9 +12,9 @@ csv_classes = [
     'Dialect', 'DictReader', 'DictWriter',
     'Error', 'Sniffer', 'StringIO'
 ]
-random_classes = ['Random', 'SystemRandom']
-re_classes = ['Match', 'Pattern', 'RegexFlag', 'Scanner']
-string_classes = ['Formatter', 'Template']
+random_classes =  'Random', 'SystemRandom'
+re_classes =  'Match', 'Pattern', 'RegexFlag', 'Scanner'
+string_classes =  'Formatter', 'Template'
 
 
 ?p__.m__.p.("mod, expected", [
@@ -23,6 +23,6 @@ string_classes = ['Formatter', 'Template']
     (__, re_classes),
     (s__, string_classes),
 ])
-___ test_cls(mod, expected):
+___ test_cls(mod, expected
     actual = get_classes(mod)
     ... s..(actual) __ s..(expected)

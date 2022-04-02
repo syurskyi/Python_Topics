@@ -1,8 +1,8 @@
 _______ i..
 
 
-c_ corners(o..):
-    ___ - , i, j):
+c_ corners(o..
+    ___ - , i, j
         # i, j are position of corner
         i = i
         j = j
@@ -12,24 +12,24 @@ c_ corners(o..):
 
 
 # return corner on the same line
-___ same_line(index, l..):
+___ same_line(index, l..
     ___ c __ l..:
         __ c.i __ index:
             r.. c
 
 
 # return corner on the same column
-___ same_col(index, l..):
+___ same_col(index, l..
     ___ c __ l..:
         __ c.j __ index:
             r.. c
 
 
-___ search_corners(input):
+___ search_corners(input
     corner_list    # list
     ___ i __ r..(0, l..(input)):
         ___ j __ r..(0, l..(input[i])):
-            __ (input[i][j] __ "+"):
+            __ (input[i][j] __ "+"
                 corner_list.a..(corners(i, j))
     r.. corner_list
 
@@ -37,7 +37,7 @@ ___ search_corners(input):
 # validate that 4 points form a
 # rectangle by comparing distance to
 # centroid of the rectangle for all corners
-___ possible_rect(quartet):
+___ possible_rect(quartet
     mid_x = 0
     mid_y = 0
 
@@ -58,7 +58,7 @@ ___ possible_rect(quartet):
 
 
 # validate path between two corners
-___ path(c1, c2, input):
+___ path(c1, c2, input
     __ c1.i __ c2.i:
         ___ j __ r..(m..(c1.j + 1, c2.j + 1), m..(c1.j, c2.j)):
             __ input[c1.i][j] != "-" a.. input[c1.i][j] != "+":
@@ -72,20 +72,20 @@ ___ path(c1, c2, input):
 
 
 # validate path of rectangle
-___ validate_rect(rect, input):
+___ validate_rect(rect, input
     # validate connection at every corner
     # with neighbours on the same line and col
     ___ i __ r..(0, l..(rect)):
         l = same_line(rect[i].i, rect[0:i] + rect[i + 1:])
         c = same_col(rect[i].j, rect[0:i] + rect[i + 1:])
-        __ n.. path(rect[i], l, input) o. n.. path(rect[i], c, input):
+        __ n.. path(rect[i], l, input) o. n.. path(rect[i], c, input
             r.. F..
     r.. T..
 
 
 # count number of rectangles
 # inside ASCII in input lines
-___ c.. lines=""):
+___ c.. lines=""
     nb_rect = 0
     # test empty str
     __ lines __ "":

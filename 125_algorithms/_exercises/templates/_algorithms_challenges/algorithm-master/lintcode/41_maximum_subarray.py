@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: A integer indicate the sum of max subarray
     """
-    ___ maxSubArray  A):
+    ___ maxSubArray  A
         """
         the answer is the maximum segment sum,
         that is, `S[i] - Smin`
@@ -40,7 +40,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: A integer indicate the sum of max subarray
     """
-    ___ maxSubArray  A):
+    ___ maxSubArray  A
         """
         the answer is the maximum segment sum,
         that is, `S[i] - Smin`
@@ -53,7 +53,7 @@ c_ Solution:
 
         Smin = 0
         S = [0] * (n + 1)
-        ___ i __ r..(1, n + 1):
+        ___ i __ r..(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
             __ S[i] - Smin > ans:

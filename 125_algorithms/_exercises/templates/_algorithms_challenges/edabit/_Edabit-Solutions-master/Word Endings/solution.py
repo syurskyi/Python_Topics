@@ -1,7 +1,7 @@
-___ add_ending(lst, ending):
+___ add_ending(lst, ending
     index = 0
     output    # list
-    w.... index <l..(lst):
+    w.... index <l..(lst
       s = lst[index] + ending
       output.a..(s)
       index += 1

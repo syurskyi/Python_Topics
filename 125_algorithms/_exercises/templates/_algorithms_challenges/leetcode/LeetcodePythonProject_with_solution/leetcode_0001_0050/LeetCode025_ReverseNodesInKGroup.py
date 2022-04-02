@@ -4,13 +4,13 @@ Created on Nov 6, 2017
 @author: MT
 '''
 # Definition for singly-linked list.
-c_ ListNode(o..):
+c_ ListNode(o..
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(o..):
-    ___ reverseKGroup  head, k):
+c_ Solution(o..
+    ___ reverseKGroup  head, k
         """
         :type head: ListNode
         :type k: int
@@ -30,7 +30,7 @@ c_ Solution(o..):
             node = node.next
         r.. dummy.next
     
-    ___ reverse  prev, tail):
+    ___ reverse  prev, tail
         nextNode = tail.next
         p = prev.next
         res = p

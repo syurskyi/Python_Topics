@@ -16,11 +16,11 @@ __author__ = 'Daniel'
 
 
 c_ Queue:
-    ___ - ):
+    ___ -
         in_stk    # list
         out_stk    # list
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: None

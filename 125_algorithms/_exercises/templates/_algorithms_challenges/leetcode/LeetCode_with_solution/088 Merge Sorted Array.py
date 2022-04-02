@@ -8,8 +8,8 @@ number of elements initialized in A and B are m and n respectively.
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ merge  A, m, B, n):
+c_ Solution(o..
+    ___ merge  A, m, B, n
         """
         array, ascending order.
         basic of merge sort.

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ canFinish  n, P):
+    ___ canFinish  n, P
         """
         :type n: int
         :type P: List[List[int]]

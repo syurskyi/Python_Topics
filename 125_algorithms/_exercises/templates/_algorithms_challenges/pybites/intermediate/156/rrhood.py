@@ -1,10 +1,10 @@
 ____ c.. _______ defaultdict
 _______ __
-CHARACTERS = ['Red Riding Hood',
+CHARACTERS =  'Red Riding Hood',
               # we're omitting 'mother' here for simplicity
               # (= substring grandmother)
               ('Grandmother', 'Grandma', 'Granny'),
-              'wolf', 'woodsman']
+              'wolf', 'woodsman'
 
 text = """
 Once upon a time, there was a little girl who lived in a village near the forest.  Whenever she went out, the little girl wore a red riding cloak, so everyone in the village called her Little Red Riding Hood.
@@ -46,7 +46,7 @@ Little Red Riding Hood and her Grandmother had a nice lunch and a long chat.
 """
 
 
-___ make_character_index(text=text, characters=CHARACTERS):
+___ make_character_index(text=text, characters=CHARACTERS
     """Return a dict with keys are characters (lowercased) and values
        the lines they appear in sorted order.
        Matches should be case insensitive.
@@ -59,15 +59,15 @@ ___ make_character_index(text=text, characters=CHARACTERS):
 
     in_line = l.... word,line: __.s..(word,line,flags=__.I) __ n.. N..
 
-    ___ i,line __ e..(text.splitlines()):
+    ___ i,line __ e..(text.s..()):
         ___ character __ characters:
             __ t..(character) __ t..:
                 ___ value __ character:
-                    __ in_line(value,line):
+                    __ in_line(value,line
                         locations[character[0].l..].a..(i)
                         _____
             ____:
-                __ in_line(character,line):
+                __ in_line(character,line
                     locations[character.l..].a..(i)
 
     print(locations)

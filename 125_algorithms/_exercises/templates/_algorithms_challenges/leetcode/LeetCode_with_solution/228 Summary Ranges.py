@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ summaryRanges  nums):
+    ___ summaryRanges  nums
         """
         :type nums: list[int]
         :rtype: list[str]
@@ -19,7 +19,7 @@ c_ Solution:
 
         bgn = nums[0]
         pre = nums[0]
-        ___ i __ x..(1, n):
+        ___ i __ x..(1, n
             __ nums[i] != pre+1:
                 __ pre != bgn:
                     ret.a..("%d->%d"%(bgn, pre))
@@ -39,4 +39,4 @@ c_ Solution:
 
 
 __ _______ __ _______
-    ... Solution().summaryRanges([0, 1, 2, 4, 5, 7]) __ ['0->2', '4->5', '7']
+    ... Solution().summaryRanges([0, 1, 2, 4, 5, 7]) __  '0->2', '4->5', '7'

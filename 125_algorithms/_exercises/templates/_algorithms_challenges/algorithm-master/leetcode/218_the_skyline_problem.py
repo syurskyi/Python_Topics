@@ -5,11 +5,11 @@ _______ heapq
 
 
 c_ HashHeapq:
-    ___ - ):
+    ___ -
         heap    # list
         deleted    # dict
 
-    ___ push  val):
+    ___ push  val
         heapq.heappush(heap, val)
 
     ___ pop
@@ -18,7 +18,7 @@ c_ HashHeapq:
 
         r.. heapq.heappop(heap)
 
-    ___ remove  val):
+    ___ remove  val
         __ is_empty
             r..
 
@@ -34,7 +34,7 @@ c_ HashHeapq:
         r.. heap[0]
 
     ___ is_empty
-        w.... heap a.. deleted.get(heap[0]):
+        w.... heap a.. deleted.get(heap[0]
             val = heapq.heappop(heap)
             deleted[val] -= 1
 
@@ -42,7 +42,7 @@ c_ HashHeapq:
 
 
 c_ Solution:
-    ___ getSkyline  buildings):
+    ___ getSkyline  buildings
         """
         :type buildings: List[List[int]]
         :rtype: List[List[int]]

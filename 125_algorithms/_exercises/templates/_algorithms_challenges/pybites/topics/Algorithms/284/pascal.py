@@ -12,10 +12,10 @@ ___ pascal(N: i..) __ List[i..]:
     ____ N __ 1:
         r.. in_list
     ____:
-        ___ x __ r..(N-1):
+        ___ x __ r..(N-1
             #print(x)
             out_list    # list
-            ___ i, v __ e..(in_list):
+            ___ i, v __ e..(in_list
                 __ i __ 0:
                     out_list.a..(v)
                 ____:

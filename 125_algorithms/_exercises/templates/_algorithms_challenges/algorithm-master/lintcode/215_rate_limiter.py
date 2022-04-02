@@ -13,7 +13,7 @@ c_ Solution:
     4. count the child between res of (3) to the end of list
     5. if cnt >= freq => is limited
     """
-    ___ - ):
+    ___ -
         times = {
             's': 1,
             'm': 60,
@@ -22,7 +22,7 @@ c_ Solution:
         }
         logs = c...defaultdict(l..)
 
-    ___ isRatelimited  timestamp, event, rate, increment):
+    ___ isRatelimited  timestamp, event, rate, increment
         """
         :type timestamp: int
         :type event: str
@@ -43,7 +43,7 @@ c_ Solution:
 
         r.. is_limited
 
-    ___ check_limited  event, freq, begin_time):
+    ___ check_limited  event, freq, begin_time
         logs = logs[event]
 
         __ n.. logs o. logs[-1] < begin_time:

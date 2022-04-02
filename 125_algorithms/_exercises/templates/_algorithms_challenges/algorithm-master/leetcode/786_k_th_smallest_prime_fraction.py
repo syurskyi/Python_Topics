@@ -14,7 +14,7 @@ ____ heapq _______ heappush, heappop
 
 
 c_ Solution:
-    ___ kthSmallestPrimeFraction  A, K):
+    ___ kthSmallestPrimeFraction  A, K
         """
         :type A: List[int]
         :type K: int
@@ -25,10 +25,10 @@ c_ Solution:
 
         A.s..()
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             heappush(heap, (A[i]/A[-1], i, n - 1))
 
-        ___ _ __ r..(K - 1):
+        ___ _ __ r..(K - 1
             _, i, j = heappop(heap)
 
             j -= 1

@@ -1,19 +1,19 @@
-c_ Solution(o..):
-  ___ numberOfPatterns  m, n):
+c_ Solution(o..
+  ___ numberOfPatterns  m, n
     """
     :type m: int
     :type n: int
     :rtype: int
     """
 
-    ___ dfs(m, n, prev, visited, length):
+    ___ dfs(m, n, prev, visited, length
       __ m <= length <= n:
         ans += 1
 
       __ length __ n:
         r..
 
-      ___ i __ r..(1, 10):
+      ___ i __ r..(1, 10
         __ i n.. __ visited:
           x, y, xp, yp = (i - 1) / 3, (i - 1) % 3, (prev - 1) / 3, (prev - 1) % 3
           __ (5 n.. __ visited a.. (x + xp, y + yp) __ (2, 2)) o. (

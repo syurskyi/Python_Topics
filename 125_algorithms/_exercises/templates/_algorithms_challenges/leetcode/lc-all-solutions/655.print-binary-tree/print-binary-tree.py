@@ -5,19 +5,19 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ printTree  root):
+c_ Solution(o..
+  ___ printTree  root
     """
     :type root: TreeNode
     :rtype: List[List[str]]
     """
 
-    ___ height(root):
+    ___ height(root
       __ n.. root:
         r.. 0
       r.. 1 + m..(height(root.left), height(root.right))
 
-    ___ fill(root, res, left, right, h):
+    ___ fill(root, res, left, right, h
       __ root:
         val = s..(root.val)
         mid = left + (right - left) / 2

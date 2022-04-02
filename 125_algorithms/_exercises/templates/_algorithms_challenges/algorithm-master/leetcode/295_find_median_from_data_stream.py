@@ -8,11 +8,11 @@ _______ heapq
 
 
 c_ MedianFinder:
-    ___ - ):
+    ___ -
         minheap    # list
         maxheap    # list
 
-    ___ addNum  num):
+    ___ addNum  num
         """
         :type num: int
         :rtype: void
@@ -34,10 +34,10 @@ c_ MedianFinder:
             heapq.heappush(maxheap, - heapq.heappop(minheap))
 
         # to handle even case, it make sure `minheap` and `maxheap` are same size
-        w.... l..(maxheap) > l..(minheap):
+        w.... l..(maxheap) > l..(minheap
             heapq.heappush(minheap, - heapq.heappop(maxheap))
 
-        __ l..(minheap) > l..(maxheap):
+        __ l..(minheap) > l..(maxheap
             r.. minheap[0] * 1.0
 
         # since the child in maxheap is negative

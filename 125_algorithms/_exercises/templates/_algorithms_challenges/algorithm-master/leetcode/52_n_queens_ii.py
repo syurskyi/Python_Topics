@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ totalNQueens  n):
+    ___ totalNQueens  n
         """
         :type n: int
         :rtype: int
@@ -9,8 +9,8 @@ c_ Solution:
         DRs = s..()  # right diagonal lines
         r.. divide_conquer(n, 0, 0, Xs, DLs, DRs)
 
-    ___ divide_conquer  n, y, cnt, Xs, DLs, DRs):
-        ___ x __ r..(n):
+    ___ divide_conquer  n, y, cnt, Xs, DLs, DRs
+        ___ x __ r..(n
             __ x __ Xs:
                 _____
 

@@ -7,15 +7,15 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ BSTInfo(o..):
-    ___ - , sz, lo, hi):
+c_ BSTInfo(o..
+    ___ - , sz, lo, hi
         sz = sz
         lo = lo
         hi = hi
@@ -25,11 +25,11 @@ MAX = sys.maxint
 MIN = -MAX - 1
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         gmax = 0
 
-    ___ largestBSTSubtree  root):
+    ___ largestBSTSubtree  root
         """
         :type root: TreeNode
         :rtype: int
@@ -37,7 +37,7 @@ c_ Solution(o..):
         measure(root)
         r.. gmax
 
-    ___ measure  root):
+    ___ measure  root
         __ n.. root:
             r.. BSTInfo(0, MAX, MIN)
 
@@ -52,11 +52,11 @@ c_ Solution(o..):
         r.. BSTInfo(sz, m..(root.val, left.lo), m..(root.val, right.hi))
 
 
-c_ SolutionError(o..):
-    ___ - ):
+c_ SolutionError(o..
+    ___ -
         gmax = 0
 
-    ___ largestBSTSubtree  root):
+    ___ largestBSTSubtree  root
         """
         :type root: TreeNode
         :rtype: int
@@ -64,7 +64,7 @@ c_ SolutionError(o..):
         measure(root)
         r.. gmax
 
-    ___ measure  root):
+    ___ measure  root
         __ n.. root:
             r.. 0
 

@@ -5,7 +5,7 @@ ___ convert(value: f__, fmt: s..) __ f__:
     :param fmt: String indicating format to convert to
     :return: Float rounded to 4 decimal places after conversion
     """
-    __ isi..(value, i..) o. isi..(value, f__):
+    __ isi..(value, i..) o. isi..(value, f__
         __ fmt.l.. __ 'cm' o. fmt.l.. __ 'in':
             r.. r..(value*2.54, 4) __ fmt.l.. __ 'cm' ____ r..(value/2.54, 4)
         ____:

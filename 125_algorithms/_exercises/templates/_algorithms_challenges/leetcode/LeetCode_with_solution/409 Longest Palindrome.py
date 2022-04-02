@@ -23,8 +23,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ longestPalindrome  s):
+c_ Solution(o..
+    ___ longestPalindrome  s
         """
         :type s: str
         :rtype: int
@@ -37,7 +37,7 @@ c_ Solution(o..):
         ___ v __ c.v..
             ret += (v/2) * 2
 
-        __ any(map(l.... x: x % 2 __ 1, c.v..:
+        __ any m..(l.... x: x % 2 __ 1, c.v..:
             ret += 1
 
         r.. ret

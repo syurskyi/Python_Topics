@@ -7,16 +7,16 @@ TMP = os.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = os.path.j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
-__ n.. os.path.isfile(DATA):
+__ n.. os.path.isfile(DATA
     urlretrieve _*{S3}/{LOGS}', DATA)
 
 
 c_ BiteStats:
 
     ___ _load_data  data) __ l..:
-        r.. [line ___ line __ DictReader(open(data))]  # start here
+        r.. [line ___ line __ DictReader(o.. data))]  # start here
 
-    ___ - , data=DATA):
+    ___ - , data=DATA
         rows = _load_data(data)
 
     $
@@ -45,14 +45,14 @@ c_ BiteStats:
         """Get the Bite that got accessed the most
            (= in most rows)"""
         #most_click = Counter(dic['bite'] for dic in newlist)
-        r.. Counter(dic['bite'] ___ dic __ rows).most_common(1)[0][0]
+        r.. Counter(dic 'bite'  ___ dic __ rows).most_common(1)[0][0]
 
     $
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
-        r.. Counter( dic['user'] ___ dic __ newlist __ dic.get('completed') __ 'True').most_common(1)[0][0]
+        r.. Counter( dic 'user'  ___ dic __ newlist __ dic.get('completed') __ 'True').most_common(1)[0][0]
 
-new_list = DictReader(open(DATA))
+new_list = DictReader(o.. DATA))
 print(new_list.fieldnames)
 print(new_list.reader)
 
@@ -61,8 +61,8 @@ print(l..(newlist))
 
 print(l..(s..(dic.get('bite') ___ dic __ newlist)))
 
-click_count = Counter( dic['bite'] ___ dic __ newlist)
+click_count = Counter( dic 'bite'  ___ dic __ newlist)
 print(click_count.most_common(1)[0][0])
 
-active_user = Counter( dic['user'] ___ dic __ newlist __ dic.get('completed') __ 'True')
+active_user = Counter( dic 'user'  ___ dic __ newlist __ dic.get('completed') __ 'True')
 print(active_user.most_common(1)[0][0])

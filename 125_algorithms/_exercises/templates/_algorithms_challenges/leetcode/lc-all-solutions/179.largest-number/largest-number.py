@@ -1,8 +1,8 @@
 c_ Solution:
   # @param {integer[]} nums
   # @return {string}
-  ___ largestNumber  nums):
-    ___ cmpFunc(a, b):
+  ___ largestNumber  nums
+    ___ cmpFunc(a, b
       stra, strb = s..(a), s..(b)
       __ stra + strb < strb + stra:
         r.. -1

@@ -25,7 +25,7 @@ c_ Solution:
         """
         brute force O(n^2), shift and compare but short circuit
         """
-        __ l..(A) != l..(B):
+        __ l..(A) != l..(B
             r.. F..
 
         __ n.. A a.. n.. B:

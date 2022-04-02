@@ -20,8 +20,8 @@ return [1,2,3].
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-    ___ preorderTraversal  root):
+c_ Solution(o..
+    ___ preorderTraversal  root
         """
         :type root: TreeNode
         :rtype: List[int]

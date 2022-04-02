@@ -9,8 +9,8 @@ Another example is ")()())", where the longest valid parentheses substring is "(
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ longestValidParentheses  s):
+c_ Solution(o..
+    ___ longestValidParentheses  s
         """
         Stack holds the index of unpaired brackets
 
@@ -27,7 +27,7 @@ c_ Solution(o..):
         """
         stk    # list  # hold the INDEX of UNPAIRED bracket, either ( or )
         maxa = 0
-        ___ idx, val __ e..(s):
+        ___ idx, val __ e..(s
             __ val __ ")" a.. stk a.. s[stk[-1]] __ "(":
                 stk.pop()
                 __ n.. stk:

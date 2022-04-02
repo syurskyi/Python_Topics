@@ -21,8 +21,8 @@ No such pair of words.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ maxProduct  words):
+c_ Solution(o..
+    ___ maxProduct  words
         """
         Brute force: O(n*n*k)
         Encode string using bit manipulation
@@ -39,7 +39,7 @@ c_ Solution(o..):
 
         r.. maxa
 
-    ___ encode  x):
+    ___ encode  x
         ret = 0
         ___ c __ x:
             ret |= 1 << (o..(c)-o..('a'))

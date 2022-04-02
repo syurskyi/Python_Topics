@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ numWays  n, k):
+c_ Solution(o..
+  ___ numWays  n, k
     """
     :type n: int
     :type k: int
@@ -11,7 +11,7 @@ c_ Solution(o..):
       r.. n * k
     pre = k * k
     ppre = k
-    ___ i __ r..(2, n):
+    ___ i __ r..(2, n
       tmp = pre
       pre = (k - 1) * (pre + ppre)
       ppre = tmp

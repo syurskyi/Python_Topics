@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ myAtoi  s):
+c_ Solution(o..
+  ___ myAtoi  s
     """
     :type str: str
     :rtype: int

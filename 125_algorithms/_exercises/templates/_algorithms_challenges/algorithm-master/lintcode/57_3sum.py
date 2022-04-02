@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ threeSum  nums):
+    ___ threeSum  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -12,7 +12,7 @@ c_ Solution:
         n = l..(nums)
         nums.s..()
 
-        ___ a __ r..(n - 2):
+        ___ a __ r..(n - 2
             __ a > 0 a.. nums[a] __ nums[a - 1]:
                 _____
 

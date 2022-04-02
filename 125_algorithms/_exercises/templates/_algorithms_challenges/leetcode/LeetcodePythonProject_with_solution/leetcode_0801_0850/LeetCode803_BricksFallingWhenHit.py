@@ -3,8 +3,8 @@ Created on Apr 21, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ hitBricks  grid, hits):
+c_ Solution(o..
+    ___ hitBricks  grid, hits
         """
         :type grid: List[List[int]]
         :type hits: List[List[int]]
@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         m, n = l..(grid), l..(grid[0])
         
-        ___ dfs(i, j):
+        ___ dfs(i, j
             __ n.. (0<=i<m a.. 0<=j<n) o. grid[i][j]!=1:
                 r.. 0
             res = 1
@@ -21,7 +21,7 @@ c_ Solution(o..):
             r.. res
         
         # Check whether (i, j) is connected to Not Failling Bricks
-        ___ is_connected(i, j):
+        ___ is_connected(i, j
             r.. i__0 o. any([0<=x<m a.. 0<=y<n a.. grid[x][y]__2\
                                 ___ x, y __ [(i+1, j), (i, j+1), (i-1, j), (i, j-1)]])
         
@@ -30,7 +30,7 @@ c_ Solution(o..):
             grid[i][j] -= 1
         
         # Get grid after all hits
-        ___ i __ r..(n):
+        ___ i __ r..(n
             dfs(0, i)
         
         # Reversely and the block of each hits and get count of newly add bricks
@@ -38,7 +38,7 @@ c_ Solution(o..):
         ___ k __ r..(r..(l..(hits))):
             i, j = hits[k]
             grid[i][j] += 1
-            __ grid[i][j] __ 1 a.. is_connected(i, j):
+            __ grid[i][j] __ 1 a.. is_connected(i, j
                 res[k] = dfs(i, j)-1
         r.. res
     

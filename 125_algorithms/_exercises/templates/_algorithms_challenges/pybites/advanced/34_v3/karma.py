@@ -6,15 +6,15 @@ Transaction.__new__.__defaults__ = (d__.n..,)  # http://bit.ly/2rmiUrL
 
 
 c_ User:
-    ___ - , name: s..):
+    ___ - , name: s..
         _name = name
         _transactions    # list
 
     ___ __str__
         r.. f"{name} has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"
 
-    ___ __add__  other: Transaction):
-        __ n.. isi..(other, Transaction):
+    ___ __add__  other: Transaction
+        __ n.. isi..(other, Transaction
             r.. T..('Can only add a transaction')
         _transactions.a..(other)
 

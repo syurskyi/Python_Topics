@@ -3,8 +3,8 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numFactoredBinaryTrees  A):
+c_ Solution(o..
+    ___ numFactoredBinaryTrees  A
         """
         :type A: List[int]
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution(o..):
         hashmap    # dict
         ___ i __ r..(l..(arr)):
             hashmap[arr[i]] = 1
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 __ arr[j] __ hashmap a.. arr[i]%arr[j]__0 a..\
                     arr[i]/arr[j] __ hashmap:
                     hashmap[arr[i]] += hashmap[arr[j]]*hashmap[(arr[i]/arr[j])]

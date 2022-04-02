@@ -3,7 +3,7 @@ _______ p__
 ____ thumbs _______ Thumbs
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ thumbs
     r.. Thumbs()
 
@@ -30,12 +30,12 @@ ___ thumbs
     (9, "👍 (9x)"),
     (10, "👍 (10x)"),
 ])
-___ test_operator_overloading_works_both_ways(arg, expected, thumbs):
+___ test_operator_overloading_works_both_ways(arg, expected, thumbs
     ... thumbs * arg __ arg * thumbs __ expected
 
 
-___ test_exception(thumbs):
-    w__ p__.r..(ValueError):
+___ test_exception(thumbs
+    w__ p__.r..(ValueError
         thumbs * 0
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         0 * thumbs

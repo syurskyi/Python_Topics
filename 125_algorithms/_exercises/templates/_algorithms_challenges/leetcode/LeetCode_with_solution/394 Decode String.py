@@ -18,8 +18,8 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ decodeString  s):
+c_ Solution(o..
+    ___ decodeString  s
         """
         :type s: str
         :rtype: str
@@ -28,10 +28,10 @@ c_ Solution(o..):
             [1, []]
         ]  # with default
         i = 0
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i].i..  # construct number from digit
                 j = i+1
-                w.... s[j] != '[': j += 1
+                w.... s[j] != ' ': j += 1
                 stk.a..([
                     i..(s[i:j]), []
                 ])
@@ -39,7 +39,7 @@ c_ Solution(o..):
             ____ s[i].isl..  # append alphabet
                 stk[-1][1].a..(s[i])
                 i += 1
-            ____ s[i] __ ']':  # pop
+            ____ s[i] __ ' ':  # pop
                 cnt, partial = stk.pop()
                 partial = ''.j..(partial) * cnt
                 stk[-1][1].a..(partial)
@@ -48,8 +48,8 @@ c_ Solution(o..):
         r.. ''.j..(stk.pop()[1])
 
 
-c_ SolutionVerbose(o..):
-    ___ decodeString  s):
+c_ SolutionVerbose(o..
+    ___ decodeString  s
         """
         :type s: str
         :rtype: str
@@ -57,10 +57,10 @@ c_ SolutionVerbose(o..):
         stk    # list
         i = 0
         ret    # list
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i].i..  # construct number from digit
                 j = i+1
-                w.... s[j] != '[': j += 1
+                w.... s[j] != ' ': j += 1
                 stk.a..([
                     i..(s[i:j]), []
                 ])
@@ -71,7 +71,7 @@ c_ SolutionVerbose(o..):
                 ____:
                     stk[-1][1].a..(s[i])
                 i += 1
-            ____ s[i] __ ']':  # pop
+            ____ s[i] __ ' ':  # pop
                 cnt, partial = stk.pop()
                 partial = ''.j..(partial) * cnt
                 __ n.. stk:
@@ -84,8 +84,8 @@ c_ SolutionVerbose(o..):
         r.. ''.j..(ret)
 
 
-c_ SolutionError(o..):
-    ___ decodeString  s):
+c_ SolutionError(o..
+    ___ decodeString  s
         """
         :type s: str
         :rtype: str
@@ -93,18 +93,18 @@ c_ SolutionError(o..):
         stk    # list
         i = 0
         ret    # list
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i].i..
                 j = i + 1
-                w.... s[j] != '[': j += 1
+                w.... s[j] != ' ': j += 1
                 prev = stk[-1] __ stk ____ 1
                 stk.a..(prev * i..(s[i:j]))
                 i = j + 1
             ____ s[i].isl..
                 repeat = stk[-1] __ stk ____ 1
-                ___ _ __ x..(repeat): ret.a..(s[i])
+                ___ _ __ x..(repeat ret.a..(s[i])
                 i += 1
-            ____ s[i] __ ']':
+            ____ s[i] __ ' ':
                 stk.pop()
                 i += 1
 

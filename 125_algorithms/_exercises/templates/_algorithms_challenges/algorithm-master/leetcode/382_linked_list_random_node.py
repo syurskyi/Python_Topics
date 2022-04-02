@@ -8,7 +8,7 @@ ____ r__ _______ randint
 
 
 c_ Solution:
-    ___ - , head):
+    ___ - , head
         """
         @param head The linked list's head.
         Note that the head is guaranteed to be not null, so it contains at least one node.

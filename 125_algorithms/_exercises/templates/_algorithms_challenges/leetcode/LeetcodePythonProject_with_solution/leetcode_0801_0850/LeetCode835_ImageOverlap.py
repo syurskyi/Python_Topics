@@ -3,8 +3,8 @@ Created on Jun 10, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ largestOverlap  A, B):
+c_ Solution(o..
+    ___ largestOverlap  A, B
         """
         :type A: List[List[int]]
         :type B: List[List[int]]
@@ -24,7 +24,7 @@ c_ Solution(o..):
                 res = m..(res, counts[(i[0]-j[0], i[1]-j[1])])
         r.. res
     
-    ___ largestOverlap_another  A, B):
+    ___ largestOverlap_another  A, B
         """
         :type A: List[List[int]]
         :type B: List[List[int]]

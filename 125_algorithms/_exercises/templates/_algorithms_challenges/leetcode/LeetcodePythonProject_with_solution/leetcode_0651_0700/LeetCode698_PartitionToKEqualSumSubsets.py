@@ -3,8 +3,8 @@ Created on Oct 26, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ canPartitionKSubsets  nums, k):
+c_ Solution(o..
+    ___ canPartitionKSubsets  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -16,16 +16,16 @@ c_ Solution(o..):
         nums.s..(r.._T..
         r.. helper(nums, [0]*k, sumVal//k, 0, k)
     
-    ___ helper  nums, elems, target, ind, k):
+    ___ helper  nums, elems, target, ind, k
         __ ind __ k:
             r.. T..
         ___ i __ r..(l..(nums)):
             __ elems[ind]+nums[i] <= target:
                 elems[ind] += nums[i]
                 __ elems[ind] __ target a..\
-                    helper(nums[:i]+nums[i+1:], elems, target, ind+1, k):
+                    helper(nums[:i]+nums[i+1:], elems, target, ind+1, k
                     r.. T..
-                ____ helper(nums[:i]+nums[i+1:], elems, target, ind, k):
+                ____ helper(nums[:i]+nums[i+1:], elems, target, ind, k
                     r.. T..
                 elems[ind] -= nums[i]
             ____:

@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ upsideDownBinaryTree  root):
+c_ Solution(o..
+  ___ upsideDownBinaryTree  root
     """
     :type root: TreeNode
     :rtype: TreeNode

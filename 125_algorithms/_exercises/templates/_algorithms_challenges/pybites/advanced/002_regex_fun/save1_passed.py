@@ -12,7 +12,7 @@ HTML = ('<p>pybites != greedy</p>'
         '<p>not the same can be said REgarding ...</p>')
 
 
-___ extract_course_times(course=COURSE):
+___ extract_course_times(course=COURSE
     """Return the course timings from the passed in
        course string. Timings are in mm:ss (minutes:seconds)
     """
@@ -20,7 +20,7 @@ ___ extract_course_times(course=COURSE):
     r.. m.f..(course)
 
 
-___ get_all_hashtags_and_links(tweet=TWEET):
+___ get_all_hashtags_and_links(tweet=TWEET
     """Get all hashtags and links from the tweet text
        that is passed into this function.
     """
@@ -28,7 +28,7 @@ ___ get_all_hashtags_and_links(tweet=TWEET):
     r.. m.f..(tweet)
 
 
-___ match_first_paragraph(html=HTML):
+___ match_first_paragraph(html=HTML
     """Extract the first paragraph of the passed in html."""
     m = __.c..(r'<p>(.+?)</p>')
     r.. m.f..(html)[0]

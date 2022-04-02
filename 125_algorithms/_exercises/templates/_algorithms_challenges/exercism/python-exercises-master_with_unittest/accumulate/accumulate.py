@@ -1,2 +1,2 @@
-___ accumulate(array, function):
+___ accumulate(array, function
     p..

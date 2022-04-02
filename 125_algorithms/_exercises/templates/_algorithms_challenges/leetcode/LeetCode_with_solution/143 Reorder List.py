@@ -10,7 +10,7 @@ Given {1,2,3,4}, reorder it to {1,4,2,3}.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
@@ -18,7 +18,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ reorderList_TLE  head):
+    ___ reorderList_TLE  head
         """
         :param head: ListNode
         :return: nothing
@@ -27,12 +27,12 @@ c_ Solution:
         dummy_head.next = head
 
         pre_cur = dummy_head
-        w....(pre_cur a.. pre_cur.next):
+        w....(pre_cur a.. pre_cur.next
             # find last
             pre_last = pre_cur.next
             __ pre_last.next __ N..
                 r..
-            w....(pre_last.next.next):
+            w....(pre_last.next.next
                 pre_last = pre_last.next
 
             last = pre_last.next
@@ -52,7 +52,7 @@ c_ Solution:
 
             pre_cur = pre_cur.next.next
 
-    ___ reorderList_array  head):
+    ___ reorderList_array  head
         """
         Not in place
 
@@ -60,7 +60,7 @@ c_ Solution:
         """
         lst    # list
         cur = head
-        w....(cur):
+        w....(cur
             lst.a..(cur)
             cur = cur.next
 
@@ -82,7 +82,7 @@ c_ Solution:
             ______ I..
                 lst[i].next = N..
 
-    ___ reorderList  head):
+    ___ reorderList  head
         """
         Algorithm:
         1. find the mid point
@@ -129,12 +129,12 @@ c_ Solution:
 __ _____ __ ____
     length = 2
     lst = [ListNode(i+1) ___ i __ r..(length)]
-    ___ i __ r..(length-1):
+    ___ i __ r..(length-1
         lst[i].next = lst[i+1]
 
     Solution().reorderList(lst[0])
 
     cur = lst[0]
-    w....(cur):
+    w....(cur
         print cur.val
         cur = cur.next

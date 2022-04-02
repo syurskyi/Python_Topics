@@ -14,8 +14,8 @@ Return
 """
 
 
-c_ Solution(o..):
-    ___ generate  numRows):
+c_ Solution(o..
+    ___ generate  numRows
         """
         :type numRows: int
         :rtype: List[List[int]]
@@ -30,9 +30,9 @@ c_ Solution(o..):
         __ numRows __ 2:
             r.. res
         # n is current row index (starting from 0)
-        ___ n __ r..(2, numRows):
+        ___ n __ r..(2, numRows
             cur    # list
-            ___ i __ r..(n + 1):
+            ___ i __ r..(n + 1
                 __ i __ 0:
                     cur.a..(1)
                 ____ i __ n:

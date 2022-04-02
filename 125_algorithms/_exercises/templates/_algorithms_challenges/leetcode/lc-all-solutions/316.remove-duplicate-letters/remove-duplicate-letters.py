@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ removeDuplicateLetters  s):
+c_ Solution(o..
+  ___ removeDuplicateLetters  s
     """
     :type s: str
     :rtype: str

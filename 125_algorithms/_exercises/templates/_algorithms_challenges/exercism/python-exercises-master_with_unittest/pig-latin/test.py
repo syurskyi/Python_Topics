@@ -5,7 +5,7 @@ ____ pig_latin _______ translate
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ PigLatinTests(unittest.TestCase):
+c_ PigLatinTests(unittest.TestCase
     ___ test_word_beginning_with_a
         assertEqual(translate("apple"), "appleay")
 

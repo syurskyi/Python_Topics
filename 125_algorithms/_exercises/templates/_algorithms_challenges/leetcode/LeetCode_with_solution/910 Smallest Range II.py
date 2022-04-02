@@ -43,7 +43,7 @@ c_ Solution:
         mn = m..(A)
         mx = m..(A)
         ret = mx - mn
-        ___ i __ r..(l..(A) - 1):
+        ___ i __ r..(l..(A) - 1
             cur_mx = m..(mx - K, A[i] + K)
             cur_mn = m..(mn + K, A[i+1] - K)
             ret = m..(ret, cur_mx - cur_mn)

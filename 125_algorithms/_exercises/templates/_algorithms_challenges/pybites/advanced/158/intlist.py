@@ -1,5 +1,5 @@
 ____ decimal _______ Decimal
-c_ IntList(l..):
+c_ IntList(l..
 
 
      
@@ -21,13 +21,13 @@ c_ IntList(l..):
 
 
 
-    ___ a.. values):
+    ___ a.. values
 
-        __ isi..(values,i..) o. isi..(values,f__) o. isi..(values,Decimal):
+        __ isi..(values,i..) o. isi..(values,f__) o. isi..(values,Decimal
             values = f__(values)
             super().a..(values)
-        ____ isi..(values,l..):
-            __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ values):
+        ____ isi..(values,l..
+            __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ values
                 self += values
             ____:
                 r.. T..
@@ -35,9 +35,9 @@ c_ IntList(l..):
             r.. T..
 
 
-    ___ __iadd__ value):
-        __ isi..(value,l..):
-            __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ value):
+    ___ __iadd__ value
+        __ isi..(value,l..
+            __ a..(t..(v) __ (i..,f__,Decimal) ___ v __ value
                 ___ v __ value:
                     a..(v)
                 r.. self
@@ -52,9 +52,9 @@ c_ IntList(l..):
 
 
 
-    ___ __add__ value):
-        __ isi..(value,l..):
-            __ a..(t..(v) __ i.. ___ v __ value):
+    ___ __add__ value
+        __ isi..(value,l..
+            __ a..(t..(v) __ i.. ___ v __ value
                 r.. super().__add__(value)
             ____:
                 r.. T..

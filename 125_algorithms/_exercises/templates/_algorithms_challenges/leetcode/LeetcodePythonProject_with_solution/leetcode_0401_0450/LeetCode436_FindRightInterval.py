@@ -5,17 +5,17 @@ Created on Apr 16, 2017
 '''
 
 # Definition for an interval.
-c_ Interval(o..):
-    ___ - , s=0, e=0):
+c_ Interval(o..
+    ___ - , s=0, e=0
         start = s
         end = e
 
-c_ Solution(o..):
-    ___ findRightInterval  intervals):
+c_ Solution(o..
+    ___ findRightInterval  intervals
         sortedList = [(interval.start, i) ___ i, interval __ e..(intervals)]
         sortedList.s..()
         result    # list
-        ___ i, interval __ e..(intervals):
+        ___ i, interval __ e..(intervals
             ind = binary_search(interval.end, sortedList)
             __ ind != i:
                 result.a..(ind)
@@ -23,7 +23,7 @@ c_ Solution(o..):
                 result.a..(-1)
         r.. result
     
-    ___ binary_search  target, sortedList):
+    ___ binary_search  target, sortedList
         start, end = 0, l..(sortedList)
         w.... start < end:
             mid = (start+end)//2
@@ -31,10 +31,10 @@ c_ Solution(o..):
                 start = mid+1
             ____:
                 end = mid
-        __ end __ l..(sortedList): r.. -1
+        __ end __ l..(sortedList r.. -1
         r.. sortedList[end][1]
     
-    ___ findRightInterval_short  intervals):
+    ___ findRightInterval_short  intervals
         _______ bisect
         l = s..((e.start, i) ___ i, e __ e..(intervals))
         res    # list

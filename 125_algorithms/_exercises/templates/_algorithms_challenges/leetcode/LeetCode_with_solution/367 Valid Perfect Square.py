@@ -15,8 +15,8 @@ Returns: False
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ isPerfectSquare  num):
+c_ Solution(o..
+    ___ isPerfectSquare  num
         """
         Debugging binary search
         :type num: int

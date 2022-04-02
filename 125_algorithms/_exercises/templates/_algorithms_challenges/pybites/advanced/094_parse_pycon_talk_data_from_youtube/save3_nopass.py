@@ -709,30 +709,30 @@ pycon_videos = [Video(id='T-TwcmT6Rcw',
                                'commentCount': '0'})]
 
 
-___ load_pycon_data(pycon_videos=pycon_videos):
+___ load_pycon_data(pycon_videos=pycon_videos
     """Load the pickle file (pycon_videos) and return the data structure
        it holds"""
     r.. pycon_videos
 
 
-___ get_most_popular_talks_by_views(videos):
+___ get_most_popular_talks_by_views(videos
     """Return the pycon video list sorted by viewCount"""
-    r.. s..(videos, key=l.... x: i..(x.metrics['viewCount']), r.._T..
+    r.. s..(videos, key=l.... x: i..(x.metrics 'viewCount' ), r.._T..
 
 
-___ get_most_popular_talks_by_like_ratio(videos):
+___ get_most_popular_talks_by_like_ratio(videos
     """Return the pycon video list sorted by most likes relative to
        number of views, so 10 likes on 175 views ranks higher than
        12 likes on 300 views. Discount the dislikeCount from the likeCount.
        Return the filtered list"""
     r.. s..(videos,
-                  key=l.... x: (i..(x.metrics['likeCount']) - i..(x.metrics['dislikeCount'])) / i..(x.metrics['viewCount']),
+                  key=l.... x: (i..(x.metrics 'likeCount' ) - i..(x.metrics 'dislikeCount' )) / i..(x.metrics 'viewCount' ),
                   r.._T..
 
 
-___ parse_isoduration(s):
+___ parse_isoduration(s
 
-    ___ get_isosplit(s, s..):
+    ___ get_isosplit(s, s..
         __ s.. __ s:
             n, s = s.s..(s..)
         ____:
@@ -754,13 +754,13 @@ ___ parse_isoduration(s):
     r.. i..(dt.total_seconds())
 
 
-___ get_talks_gt_one_hour(videos):
+___ get_talks_gt_one_hour(videos
     """Filter the videos list down to videos of > 1 hour"""
     one_hour_in_seconds = 3600
     r.. [video ___ video __ videos __ parse_isoduration(video.duration) >= one_hour_in_seconds]
 
 
-___ get_talks_lt_twentyfour_min(videos):
+___ get_talks_lt_twentyfour_min(videos
     """Filter videos list down to videos that have a duration of less than
        24 minutes"""
     twenty_four_minutes_in_seconds = 1400

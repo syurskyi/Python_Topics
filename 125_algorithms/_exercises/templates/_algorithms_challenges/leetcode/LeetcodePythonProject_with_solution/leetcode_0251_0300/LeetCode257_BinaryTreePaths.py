@@ -14,13 +14,13 @@ c_ TreeNode:
 c_ Solution:
     # @param {TreeNode} root
     # @return {string[]}
-    ___ binaryTreePaths  root):
+    ___ binaryTreePaths  root
         __ n.. root: r.. []
         res    # list
         helper(root, res, s..(root.val))
         r.. res
     
-    ___ helper  root, res, curr):
+    ___ helper  root, res, curr
         __ n.. root.left a.. n.. root.right:
             res.a..(curr)
             r..

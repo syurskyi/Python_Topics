@@ -5,7 +5,7 @@ _______ p__
 ____ order _______ OrderedList
 
 
-@p__.f..(scope='module')
+?p__.f..(scope='module')
 ___ order
     r.. OrderedList()
 
@@ -19,7 +19,7 @@ ___ order
     (1, '1, 2, 7, 9, 10, 16'),
     (5, '1, 2, 5, 7, 9, 10, 16'),
 ])
-___ test_order(order, num, expected):
+___ test_order(order, num, expected
     order.add(num)
     ... s..(order) __ expected
 

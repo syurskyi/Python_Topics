@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findMinStep  board, hand):
+c_ Solution(o..
+  ___ findMinStep  board, hand
     """
     :type board: str
     :type hand: str
     :rtype: int
     """
 
-    ___ dfs(line, balls, visited):
+    ___ dfs(line, balls, visited
       line = reduceLine(line)
       __ (line, balls) __ visited:
         r.. visited[line, balls]
@@ -16,7 +16,7 @@ c_ Solution(o..):
         r.. f__("inf")
       res = f__("inf")
       ___ i __ r..(l..(balls)):
-        ___ j __ r..(l..(line) + 1):
+        ___ j __ r..(l..(line) + 1
           __ j __ 0 a.. line[0] != balls[i]:
             _____
           ____ j __ l..(line) a.. line[-1] != balls[i]:
@@ -27,8 +27,8 @@ c_ Solution(o..):
       visited[line, balls] = res
       r.. res
 
-    ___ reduceLine(line):
-      ___ reducer(line):
+    ___ reduceLine(line
+      ___ reducer(line
         __ l..(line) < 3:
           r.. line
         ret    # list
@@ -44,7 +44,7 @@ c_ Solution(o..):
           dp[i] = count
         i = 0
 
-        w.... i < l..(line):
+        w.... i < l..(line
           __ dp[i] >= 3:
             i += dp[i]
           ____:
@@ -55,7 +55,7 @@ c_ Solution(o..):
       __ l..(line) < 3:
         r.. line
       ans = line
-      ___ _ __ r..(l..(line) / 3):
+      ___ _ __ r..(l..(line) / 3
         ans = reducer(ans)
       r.. ans
 

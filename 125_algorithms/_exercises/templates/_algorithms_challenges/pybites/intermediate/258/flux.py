@@ -13,8 +13,8 @@ ___ calculate_flux(XYZ: s..) __ l..:
 
     data = pd.read_csv(XYZ,dtype={'12/31/2020': i..,'12/31/2019': i..})
 
-    data['dollar_flux'] = data.iloc[:,1].sub(data.iloc[:,2])
-    data['pct_flux'] = data.iloc[:,[-2,1]].pct_change(axis=1).dropna(axis=1)
+    data 'dollar_flux'  = data.iloc[:,1].sub(data.iloc[:,2])
+    data 'pct_flux'  = data.iloc[:,[-2,1]].pct_change(axis=1).dropna(axis=1)
 
 
     r.. l..(data.to_records(index=F..))

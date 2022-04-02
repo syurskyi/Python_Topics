@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ hasGroupsSizeX  deck):
+c_ Solution(o..
+    ___ hasGroupsSizeX  deck
         """
         :type deck: List[int]
         :rtype: bool

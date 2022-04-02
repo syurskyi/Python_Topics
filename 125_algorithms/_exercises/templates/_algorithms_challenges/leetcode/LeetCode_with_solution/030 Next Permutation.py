@@ -14,7 +14,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ nextPermutation  num):
+    ___ nextPermutation  num
         """
         Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
         Unable to use Cantor Expansion due to duplicates

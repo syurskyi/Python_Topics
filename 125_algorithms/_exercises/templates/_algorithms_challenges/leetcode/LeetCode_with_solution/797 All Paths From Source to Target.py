@@ -32,7 +32,7 @@ c_ Solution:
         dfs(G, 0, l..(G) - 1, [0], visited, ret)
         r.. ret
 
-    ___ dfs  G, cur, d, cur_path, visited, ret):
+    ___ dfs  G, cur, d, cur_path, visited, ret
         __ cur __ d:
             ret.a..(l..(cur_path))
             r..

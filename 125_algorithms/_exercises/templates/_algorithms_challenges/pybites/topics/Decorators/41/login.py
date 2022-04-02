@@ -1,12 +1,12 @@
 ____ functools _______ wraps
 
-known_users = ['bob', 'julian', 'mike', 'carmen', 'sue']
-loggedin_users = ['mike', 'sue']
+known_users =  'bob', 'julian', 'mike', 'carmen', 'sue'
+loggedin_users =  'mike', 'sue'
 
 
-___ login_required(func):
+___ login_required(func
     @wraps(func)
-    ___ wrapper(args):
+    ___ wrapper(args
         #print(args)
         __ args n.. __ known_users:
             r.. 'please create an account'
@@ -18,7 +18,7 @@ ___ login_required(func):
 
 
 @login_required
-___ welcome(user):
+___ welcome(user
     '''Return a welcome message if logged in'''
     r.. f'welcome back {user}'
 

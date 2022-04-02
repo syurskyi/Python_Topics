@@ -4,8 +4,8 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxProfit  k, prices):
+c_ Solution(o..
+    ___ maxProfit  k, prices
         """
         :type k: int
         :type prices: List[int]
@@ -15,14 +15,14 @@ c_ Solution(o..):
         __ k*2 >= n:
             r.. quickSolve(prices)
         dp = [[0]*n ___ _ __ r..(k+1)]
-        ___ i __ r..(1, k+1):
+        ___ i __ r..(1, k+1
             tmpMax = -prices[0]
-            ___ j __ r..(1, n):
+            ___ j __ r..(1, n
                 dp[i][j] = m..(dp[i][j-1], tmpMax+prices[j])
                 tmpMax = m..(tmpMax, dp[i-1][j-1]-prices[j])
         r.. dp[-1][-1]
     
-    ___ quickSolve  prices):
+    ___ quickSolve  prices
         res = 0
         ___ i __ r..(1, l..(prices)):
             res += m..(0, prices[i]-prices[i-1])

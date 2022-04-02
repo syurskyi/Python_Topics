@@ -30,7 +30,7 @@ books = [
 
 # all functions return books sorted in ascending order.
 
-___ sort_books_by_len_of_title(books=books):
+___ sort_books_by_len_of_title(books=books
     """
     Expected last book in list:
     Automate the Boring Stuff with Python
@@ -39,7 +39,7 @@ ___ sort_books_by_len_of_title(books=books):
     r.. len_of_title
 
 
-___ sort_books_by_first_authors_last_name(books=books):
+___ sort_books_by_first_authors_last_name(books=books
     """
     Expected last book in list:
     Automate the Boring Stuff with Python
@@ -48,7 +48,7 @@ ___ sort_books_by_first_authors_last_name(books=books):
     r.. first_authors_last_name
 
 
-___ sort_books_by_number_of_page(books=books):
+___ sort_books_by_number_of_page(books=books
     """
     Expected last book in list:
     Fluent Python
@@ -57,7 +57,7 @@ ___ sort_books_by_number_of_page(books=books):
     r.. number_of_pages
 
 
-___ sort_books_by_published_date(books=books):
+___ sort_books_by_published_date(books=books
     """
     Expected last book in list:
     Python Interviews

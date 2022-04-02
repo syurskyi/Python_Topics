@@ -3,7 +3,7 @@ _______ unittest
 ____ accumulate _______ accumulate
 
 
-c_ AccumulateTest(unittest.TestCase):
+c_ AccumulateTest(unittest.TestCase
     ___ test_empty_sequence
         assertEqual(accumulate([], l.... x: x / 2), [])
 
@@ -25,11 +25,11 @@ c_ AccumulateTest(unittest.TestCase):
 
     ___ test_capitalize
         assertEqual(
-            accumulate(['hello', 'world'], s...upper), ['HELLO', 'WORLD'])
+            accumulate( 'hello', 'world' , s...upper),  'HELLO', 'WORLD' )
 
     ___ test_recursive
-        inp = ['a', 'b', 'c']
-        out = [['a1', 'a2', 'a3'], ['b1', 'b2', 'b3'], ['c1', 'c2', 'c3']]
+        inp =  'a', 'b', 'c'
+        out = [['a1', 'a2', 'a3' ,  'b1', 'b2', 'b3' ,  'c1', 'c2', 'c3']]
         assertEqual(
             accumulate(
                 inp, l.... x: accumulate(l..('123'), l.... y: x + y)), out)

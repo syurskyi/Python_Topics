@@ -3,8 +3,8 @@ Created on Sep 25, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ shoppingOffers  price, special, needs):
+c_ Solution(o..
+    ___ shoppingOffers  price, special, needs
         """
         :type price: List[int]
         :type special: List[List[int]]
@@ -15,22 +15,22 @@ c_ Solution(o..):
         helper(price, special, needs, 0)
         r.. minPrice
     
-    ___ helper  price, special, needs, curPrice):
+    ___ helper  price, special, needs, curPrice
         n = l..(price)
         added = F..
         ___ arr __ special:
             overflow = F..
-            ___ i __ r..(n):
+            ___ i __ r..(n
                 __ needs[i] < arr[i]:
                     overflow = T..
                 needs[i] -= arr[i]
             __ n.. overflow:
                 added = T..
                 helper(price, special, needs, curPrice+arr[-1])
-            ___ i __ r..(n):
+            ___ i __ r..(n
                 needs[i] += arr[i]
         __ n.. added:
-            ___ i __ r..(n):
+            ___ i __ r..(n
                 curPrice += needs[i]*price[i]
             minPrice = m..(minPrice, curPrice)
     

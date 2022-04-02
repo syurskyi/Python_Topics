@@ -9,21 +9,21 @@ should invalidate the least recently used item before inserting a new item.
 __author__ = 'Danyang'
 
 
-c_ Node(o..):
-    ___ - , key, val):
+c_ Node(o..
+    ___ - , key, val
         key = key
         val = val
         pre, next = N.., N..
 
 
-c_ LRUCache(o..):
-    ___ - , capacity):
+c_ LRUCache(o..
+    ___ - , capacity
         cap = capacity
         map    # dict  # key to node
         head = N..
         tail = N..
 
-    ___ get  key):
+    ___ get  key
         __ key __ map:
             cur = map[key]
             _elevate(cur)
@@ -31,7 +31,7 @@ c_ LRUCache(o..):
 
         r.. -1
 
-    ___ s..  key, value):
+    ___ s..  key, value
         __ key __ map:
             cur = map[key]
             cur.val = value
@@ -41,12 +41,12 @@ c_ LRUCache(o..):
             map[key] = cur
             _appendleft(cur)
 
-            __ l..(map) > cap:
+            __ l.. m..) > cap:
                 last = _pop()
                 del map[last.key]
 
     # doubly linked-list operations only
-    ___ _appendleft  cur):
+    ___ _appendleft  cur
         """Normal or initially empty"""
         __ n.. head a.. n.. tail:
             head = cur
@@ -69,7 +69,7 @@ c_ LRUCache(o..):
         tail = pre
         r.. last
 
-    ___ _elevate  cur):
+    ___ _elevate  cur
         """Head, Tail, Middle"""
         pre, nxt = cur.pre, cur.next
         __ n.. pre:
@@ -83,13 +83,13 @@ c_ LRUCache(o..):
         _appendleft(cur)
 
 
-c_ LRUCache_TLE(o..):
-    ___ - , capacity):
+c_ LRUCache_TLE(o..
+    ___ - , capacity
         capacity = capacity
         q    # list  # order by key
         dic    # dict
 
-    ___ get  key):
+    ___ get  key
         __ key __ dic:
             q.remove(key)
             q.insert(0, key)
@@ -97,7 +97,7 @@ c_ LRUCache_TLE(o..):
         ____:
             r.. -1
 
-    ___ s..  key, value):
+    ___ s..  key, value
         """
         Algorithm:
         data structure: Queue and HashMap

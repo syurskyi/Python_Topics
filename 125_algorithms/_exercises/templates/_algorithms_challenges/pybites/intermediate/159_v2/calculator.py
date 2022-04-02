@@ -1,4 +1,4 @@
-___ simple_calculator(calculation):
+___ simple_calculator(calculation
     """Receives 'calculation' and returns the calculated result,
 
     
@@ -17,7 +17,7 @@ ___ simple_calculator(calculation):
 
     operations = {'+': l.... x,y: x + y,'-': l.... x,y: x-y,'*': l.... x,y: x * y,'/': l.... x,y: x/y}
     
-    ___ is_numeric(x):
+    ___ is_numeric(x
 
         ___
             f__(x)

@@ -1,5 +1,5 @@
-c_ Node(o..):
-    ___ - , value):
+c_ Node(o..
+    ___ - , value
         _value = value
         _next = N..
 
@@ -10,8 +10,8 @@ c_ Node(o..):
         r.. _next
 
 
-c_ LinkedIterator(o..):
-    ___ - , linked_list):
+c_ LinkedIterator(o..
+    ___ - , linked_list
         current = linked_list._head
 
     ___ __iter__
@@ -28,8 +28,8 @@ c_ LinkedIterator(o..):
         r.. __next__()
 
 
-c_ LinkedList(o..):
-    ___ - , values=[]):
+c_ LinkedList(o..
+    ___ - , values=[]
         _head = N..
         _len = 0
         [push(v) ___ v __ values]
@@ -45,7 +45,7 @@ c_ LinkedList(o..):
             r.. EmptyListException("The list is empty")
         r.. _head
 
-    ___ push  value):
+    ___ push  value
         newNode = Node(value)
         newNode._next = _head
         _head = newNode
@@ -63,5 +63,5 @@ c_ LinkedList(o..):
         r.. LinkedList(self)
 
 
-c_ EmptyListException(E..):
+c_ EmptyListException(E..
     p..

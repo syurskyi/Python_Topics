@@ -1,5 +1,5 @@
 
-___ dec_to_base(number, base):
+___ dec_to_base(number, base
     """
     Input: number is the number to be converted
            base is the new base  (eg. 2, 6, or 8)

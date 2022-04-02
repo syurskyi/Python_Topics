@@ -3,12 +3,12 @@ c_ Solution:
     @param: A: an array
     @return: total of reverse pairs
     """
-    ___ reversePairs  A):
+    ___ reversePairs  A
         n = l..(A)
         tmp = [0] * n
         r.. merge_sort(A, 0, n - 1, tmp)
 
-    ___ merge_sort  A, start, end, tmp):
+    ___ merge_sort  A, start, end, tmp
         __ start >= end:
             r.. 0
 
@@ -38,7 +38,7 @@ c_ Solution:
             right += 1
             i += 1
 
-        ___ i __ r..(start, end + 1):
+        ___ i __ r..(start, end + 1
             A[i] = tmp[i]
 
         r.. ans

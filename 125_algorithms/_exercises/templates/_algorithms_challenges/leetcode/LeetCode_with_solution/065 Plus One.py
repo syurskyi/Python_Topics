@@ -6,8 +6,8 @@ The digits are stored such that the most significant digit is at the head of the
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ plusOne  d..):
+c_ Solution(o..
+    ___ plusOne  d..
         """
         Math
 
@@ -15,7 +15,7 @@ c_ Solution(o..):
         :param digits: a list of integer digits
         :return: a list of integer digits
         """
-        ___ i __ x..(l..(d..)-1, -1, -1):
+        ___ i __ x..(l..(d..)-1, -1, -1
             d..[i] += 1
             __ d..[i] < 10:
                 r.. d..
@@ -26,7 +26,7 @@ c_ Solution(o..):
         d...insert(0, 1)
         r.. d..
 
-    ___ plusOne  d..):
+    ___ plusOne  d..
         """
         Good habit to reverse it first
         :param digits:

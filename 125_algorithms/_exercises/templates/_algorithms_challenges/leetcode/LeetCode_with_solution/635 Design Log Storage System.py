@@ -37,7 +37,7 @@ _______ bisect
 
 
 c_ LogSystem:
-    ___ - ):
+    ___ -
         """
         BST - TreeMap (java)
         binary search using time stamp

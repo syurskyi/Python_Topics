@@ -1,14 +1,14 @@
-___ board(pos1, pos2):
+___ board(pos1, pos2
     validate_position(pos1, pos2)
     x1, y1 = pos1
     x2, y2 = pos2
-    b = [['_'] * 8 ___ i __ r..(8)]
+    b = [['_'  * 8 ___ i __ r..(8)]
     b[x1][y1] = 'W'
     b[x2][y2] = 'B'
     r.. [''.j..(r) ___ r __ b]
 
 
-___ can_attack(pos1, pos2):
+___ can_attack(pos1, pos2
     validate_position(pos1, pos2)
     x1, y1 = pos1
     x2, y2 = pos2
@@ -19,8 +19,8 @@ ___ can_attack(pos1, pos2):
     r.. F..
 
 
-___ validate_position(pos1, pos2):
-    __ any(x < 0 o. x > 7 ___ x __ pos1 + pos2):
+___ validate_position(pos1, pos2
+    __ any(x < 0 o. x > 7 ___ x __ pos1 + pos2
         r.. ValueError('Invalid queen position: queen out of the board')
     __ pos1 __ pos2:
         r.. ValueError('Invalid queen position: both queens in the same '

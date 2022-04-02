@@ -12,7 +12,7 @@ __ n.. stats.exists
     urlretrieve(data, stats)
 
 
-___ get_most_complex_bites(N=10, stats=stats):
+___ get_most_complex_bites(N=10, stats=stats
     """Parse the bites.csv file (= stats variable passed in), see example
        output in the Bite description.
        Return a list of Bite IDs (int or str values are fine) of the N
@@ -23,7 +23,7 @@ ___ get_most_complex_bites(N=10, stats=stats):
     bites.Difficulty = pd.to_numeric(bites.Difficulty,errors='coerce')
 
 
-    r.. l..(bites.nlargest(N,'Difficulty')['Bite'].s...extract(r'(\d+)',expand=F..))
+    r.. l..(bites.nlargest(N,'Difficulty') 'Bite' .s...extract(r'(\d+)',expand=F..))
 
 
 

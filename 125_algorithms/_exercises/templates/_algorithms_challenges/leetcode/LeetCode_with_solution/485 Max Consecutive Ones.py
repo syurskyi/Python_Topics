@@ -5,7 +5,7 @@ Given a binary array, find the maximum number of consecutive 1s in this array.
 
 
 c_ Solution:
-    ___ findMaxConsecutiveOnes  nums):
+    ___ findMaxConsecutiveOnes  nums
         """
         two pointers
         :type nums: List[int]
@@ -14,7 +14,7 @@ c_ Solution:
         s = 0
         e = 0
         ret = 0
-        w.... s < l..(nums):
+        w.... s < l..(nums
             __ nums[s] __ 1:
                 w.... e < l..(nums) a.. nums[e] __ 1:
                     e += 1

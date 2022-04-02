@@ -3,8 +3,8 @@ Created on Apr 3, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ minSwapsCouples  row):
+c_ Solution(o..
+    ___ minSwapsCouples  row
         """
         :type row: List[int]
         :rtype: int
@@ -12,12 +12,12 @@ c_ Solution(o..):
         hashmap    # dict
         idx = 0
         res = 0
-        w.... idx < l..(row):
+        w.... idx < l..(row
             hashmap[row[idx]] = row[idx+1]
             hashmap[row[idx+1]] = row[idx]
             idx += 2
         idx = 0
-        w.... idx < l..(row):
+        w.... idx < l..(row
             __ hashmap[idx] != idx+1:
                 nextVal = hashmap[idx+1]
                 currVal = hashmap[idx]

@@ -1,6 +1,6 @@
-c_ StringIterator(o..):
+c_ StringIterator(o..
 
-  ___ - , compressedString):
+  ___ - , compressedString
     """
     :type compressedString: str
     """
@@ -10,7 +10,7 @@ c_ StringIterator(o..):
 
   ___ decodeNext
     idx += 1
-    __ idx + 1 < l..(data):
+    __ idx + 1 < l..(data
       cur = data[idx]
       end = idx + 1
       w.... end < l..(data) a.. data[end].i..

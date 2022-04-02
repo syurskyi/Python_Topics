@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isMatch  s, p):
+c_ Solution(o..
+  ___ isMatch  s, p
     """
     :type s: str
     :type p: str
@@ -10,8 +10,8 @@ c_ Solution(o..):
     lenP = l..(p)
     lastMatchPos = 0
     lastStarPos = -1
-    w.... i < l..(s):
-      __ j < lenP a.. p[j] __ (s[i], "?"):
+    w.... i < l..(s
+      __ j < lenP a.. p[j] __ (s[i], "?"
         i += 1
         j += 1
       ____ j < lenP a.. p[j] __ "*":

@@ -13,8 +13,8 @@ Output: 7 -> 0 -> 8
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-    ___ addTwoNumbers  l1, l2):
+c_ Solution(o..
+    ___ addTwoNumbers  l1, l2
         """
         :type l1: ListNode
         :type l2: ListNode

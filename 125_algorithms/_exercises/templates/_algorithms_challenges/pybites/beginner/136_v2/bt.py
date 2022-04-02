@@ -14,7 +14,7 @@ Keywords: enum, exception handling, multi type input
 ____ e.. _______ E..
 
 
-c_ Bloodtype(E..):
+c_ Bloodtype(E..
     ZERO_NEG = 0
     ZERO_POS = 1
     B_NEG = 2
@@ -25,7 +25,7 @@ c_ Bloodtype(E..):
     AB_POS = 7
 
 
-    ___ __lte__ other):
+    ___ __lte__ other
 
 
         r.. i..(self) <= i..(other)
@@ -44,7 +44,7 @@ blood_type_text = {
 }
 
 # complete :
-___ check_bt(donor, recipient):
+___ check_bt(donor, recipient
     """ Checks red blood cell compatibility based on 8 blood types
         Args:
         donor (int | str | Bloodtype): red blood cell type of the donor
@@ -55,14 +55,14 @@ ___ check_bt(donor, recipient):
     """
     
     
-    ___ blood_type __ (donor,recipient):
-        __ t..(blood_type) n.. __ (s..,i..,Bloodtype):
+    ___ blood_type __ (donor,recipient
+        __ t..(blood_type) n.. __ (s..,i..,Bloodtype
             r.. T..("Invalid types")
     
 
 
     blood_types    # list
-    ___ blood_type __ (donor,recipient):
+    ___ blood_type __ (donor,recipient
         __ t..(blood_type) __ s..:
             __ blood_type n.. __ blood_type_text:
                 r.. ValueError

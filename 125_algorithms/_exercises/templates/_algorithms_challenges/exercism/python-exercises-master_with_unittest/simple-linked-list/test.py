@@ -5,7 +5,7 @@ ____ simple_linked_list _______ LinkedList, EmptyListException
 
 # No canonical data available for this exercise
 
-c_ SimpleLinkedListTest(unittest.TestCase):
+c_ SimpleLinkedListTest(unittest.TestCase
     ___ test_empty_list_has_len_zero
         sut = LinkedList()
         assertEqual(l..(sut), 0)
@@ -20,7 +20,7 @@ c_ SimpleLinkedListTest(unittest.TestCase):
 
     ___ test_error_on_empty_list_head
         sut = LinkedList()
-        w__ assertRaisesWithMessage(EmptyListException):
+        w__ assertRaisesWithMessage(EmptyListException
             sut.head()
 
     ___ test_singleton_list_has_head
@@ -51,12 +51,12 @@ c_ SimpleLinkedListTest(unittest.TestCase):
     ___ test_pop_from_singleton_list_removes_head
         sut = LinkedList([1])
         assertEqual(sut.pop(), 1)
-        w__ assertRaisesWithMessage(EmptyListException):
+        w__ assertRaisesWithMessage(EmptyListException
             sut.head()
 
     ___ test_error_on_empty_list_pop
         sut = LinkedList()
-        w__ assertRaisesWithMessage(EmptyListException):
+        w__ assertRaisesWithMessage(EmptyListException
             sut.pop()
 
     ___ test_push_and_pop
@@ -78,7 +78,7 @@ c_ SimpleLinkedListTest(unittest.TestCase):
     ___ test_non_empty_list_traverse
         sut = LinkedList(r..(10))
         current = sut.head()
-        ___ i __ r..(10):
+        ___ i __ r..(10
             assertEqual(current.value(), 9 - i)
             current = current.next()
         assertIsNone(current)
@@ -114,7 +114,7 @@ c_ SimpleLinkedListTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 

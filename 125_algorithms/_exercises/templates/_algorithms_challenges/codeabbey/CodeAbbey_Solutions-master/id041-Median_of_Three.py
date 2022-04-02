@@ -1,6 +1,6 @@
-___ findMedian(amount):
+___ findMedian(amount
         answer    # list
-        ___ x __ r..(amount):
+        ___ x __ r..(amount
                 [a, b, c] = raw_input().s..
                 minNum = m..(i..(a), i..(b), i..(c))
                 maxNum = m..(i..(a), i..(b), i..(c))

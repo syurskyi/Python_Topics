@@ -6,7 +6,7 @@ _______ unittest
 _______ bob
 
 
-c_ BobTests(unittest.TestCase):
+c_ BobTests(unittest.TestCase
 
     ___ test_stating_something
         assertEqual(

@@ -3,8 +3,8 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ replaceWords  d.., sentence):
+c_ Solution(o..
+    ___ replaceWords  d.., sentence
         """
         :type dict: List[str]
         :type sentence: str
@@ -13,12 +13,12 @@ c_ Solution(o..):
         d...s..(key=l.... x: l..(x))
         resArr    # list
         words = sentence.s..(' ')
-        ___ i, word __ e..(words):
+        ___ i, word __ e..(words
             ___ s __ d..:
                 __ word[:l..(s)] __ s:
                     resArr.a..(s)
                     _____
-            __ i+1 > l..(resArr):
+            __ i+1 > l..(resArr
                 resArr.a..(word)
         r.. ' '.j..(resArr)
     

@@ -18,8 +18,8 @@ the h-index.
 """
 
 
-c_ Solution(o..):
-    ___ hIndex  citations):
+c_ Solution(o..
+    ___ hIndex  citations
         """
         :type citations: List[int]
         :rtype: int
@@ -28,7 +28,7 @@ c_ Solution(o..):
         count = 0
         lowest = 0
         h = 0
-        ___ i, c __ e..(citations):
+        ___ i, c __ e..(citations
             lowest = c
             count = i + 1
             __ lowest >= count:

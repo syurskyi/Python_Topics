@@ -63,8 +63,8 @@ c_ Solution:
         ]
 
         ret = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 diff = m..(lr[i], tb[j]) - grid[i][j]
                 ret += diff
 

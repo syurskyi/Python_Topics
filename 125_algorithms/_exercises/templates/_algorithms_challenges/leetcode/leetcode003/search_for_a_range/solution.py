@@ -15,7 +15,7 @@ c_ Solution:
     # @param A, a list of integers
     # @param target, an integer to be searched
     # @return a list of length 2, [index1, index2]
-    ___ searchRange  A, target):
+    ___ searchRange  A, target
         n = l..(A)
         __ n __ 1:
             __ A[0] __ target:

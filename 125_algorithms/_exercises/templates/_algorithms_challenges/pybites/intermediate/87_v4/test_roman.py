@@ -24,12 +24,12 @@ ____ roman _______ romanize
     (2018, 'MMXVIII'),
     (3500, 'MMMD'),
 ])
-___ test_romanize(number, numeral):
+___ test_romanize(number, numeral
     ... romanize(number) __ numeral
 
 
 ___ test_boundaries
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         romanize('string')
         romanize(-1)
         romanize(0)

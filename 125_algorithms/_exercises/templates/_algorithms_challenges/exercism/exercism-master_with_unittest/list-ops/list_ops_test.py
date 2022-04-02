@@ -7,7 +7,7 @@ _______ list_ops
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v2.3.0
 
-c_ ListOpsTest(unittest.TestCase):
+c_ ListOpsTest(unittest.TestCase
 
     # test for append
     ___ test_append_empty_lists

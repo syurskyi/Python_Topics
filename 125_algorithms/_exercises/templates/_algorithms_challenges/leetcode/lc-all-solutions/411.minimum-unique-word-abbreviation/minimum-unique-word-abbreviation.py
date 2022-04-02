@@ -1,18 +1,18 @@
-c_ Solution(o..):
-  ___ minAbbreviation  target, dictionary):
+c_ Solution(o..
+  ___ minAbbreviation  target, dictionary
     """
     :type target: str
     :type dictionary: List[str]
     :rtype: str
     """
 
-    ___ dfs(w, start, res):
+    ___ dfs(w, start, res
       res.a..(w)
       ___ i __ r..(start, l..(w)):
         ___ l __ r..(r..(1, l..(w) - i + 1)):
           dfs(w[:i] + [s..(l)] + w[i + l:], i + 2, res)
 
-    ___ m..(src, dest):
+    ___ m..(src, dest
       i = 0
       ___ c __ src:
         __ c.i..
@@ -35,7 +35,7 @@ c_ Solution(o..):
     ___ w __ res:
       allMiss = T..
       ___ d __ dictionary:
-        __ m..(w, d):
+        __ m..(w, d
           allMiss = F..
           _____
       __ allMiss:

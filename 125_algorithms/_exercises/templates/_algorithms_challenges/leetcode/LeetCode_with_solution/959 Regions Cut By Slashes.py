@@ -73,18 +73,18 @@ ____ typing _______ List
 
 
 c_ DisjointSet:
-    ___ - ):
+    ___ - 
         """
         unbalanced DisjointSet
         """
         pi    # dict
 
-    ___ union  x, y):
+    ___ union  x, y
         pi_x = find(x)
         pi_y = find(y)
         pi[pi_y] = pi_x
 
-    ___ find  x):
+    ___ find  x
         # LHS self.pi[x]
         __ x n.. __ pi:
             pi[x] = x
@@ -115,8 +115,8 @@ c_ Solution:
         m, n = l..(grid), l..(grid[0])
         ds = DisjointSet()
         T, R, B, L = r..(4)  # top, right, bottom, left
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 e = grid[i][j]
                 __ e __ "/" o. e __ " ":
                     ds.union((i, j, B), (i, j, R))

@@ -4,14 +4,14 @@ Created on Oct 29, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ constructFromPrePost  pre, post):
+c_ Solution(o..
+    ___ constructFromPrePost  pre, post
         """
         :type pre: List[int]
         :type post: List[int]
@@ -19,7 +19,7 @@ c_ Solution(o..):
         """
         r.. helper(pre, 0, l..(pre)-1, post, 0, l..(post)-1)
     
-    ___ helper  pre, preStart, preEnd, post, postStart, postEnd):
+    ___ helper  pre, preStart, preEnd, post, postStart, postEnd
         __ preStart > preEnd:
             r.. N..
         val = pre[preStart]

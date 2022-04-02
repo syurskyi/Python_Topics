@@ -30,7 +30,7 @@ valid    T      T    T    F     F
 
 
 c_ Solution:
-    ___ maxAverage  nums, k):
+    ___ maxAverage  nums, k
         """
         :type nums: list[int]
         :type k: int
@@ -54,17 +54,17 @@ c_ Solution:
         w.... right - left > EPS:
             mid = (left + right) / 2.0
 
-            __ is_valid(nums, k, mid, s):
+            __ is_valid(nums, k, mid, s
                 left = mid
             ____:
                 right = mid
 
         r.. left
 
-    ___ is_valid  nums, k, mid, s):
+    ___ is_valid  nums, k, mid, s
         s[0] = smin = 0
 
-        ___ i __ r..(1, l..(nums) + 1):
+        ___ i __ r..(1, l..(nums) + 1
             s[i] = s[i - 1] + nums[i - 1] - mid
 
             __ i < k:

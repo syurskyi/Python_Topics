@@ -4,15 +4,15 @@ Created on Mar 17, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxProduct  words):
+c_ Solution(o..
+    ___ maxProduct  words
         __ n.. words: r.. 0
         arr = [0]*l..(words)
-        ___ i, word __ e..(words):
-            ___ _, c __ e..(word):
+        ___ i, word __ e..(words
+            ___ _, c __ e..(word
                 arr[i] = arr[i] | (1 << (o..(c) - o..('a')))
         result = 0
-        ___ i, word __ e..(words):
+        ___ i, word __ e..(words
             ___ j __ r..(i+1, l..(words)):
                 __ arr[i] & arr[j] __ 0:
                     result = m..(result, l..(words[i])*l..(words[j]))

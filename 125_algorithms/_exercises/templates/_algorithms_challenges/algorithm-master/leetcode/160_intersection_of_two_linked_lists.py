@@ -5,8 +5,8 @@
 #         self.next = None
 
 
-c_ Solution(o..):
-    ___ getIntersectionNode  A, B):
+c_ Solution(o..
+    ___ getIntersectionNode  A, B
         """
         :type A, B: ListNode
         :rtype: ListNode

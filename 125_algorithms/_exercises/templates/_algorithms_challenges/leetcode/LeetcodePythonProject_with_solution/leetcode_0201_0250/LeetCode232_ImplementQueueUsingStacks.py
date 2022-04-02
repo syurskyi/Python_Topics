@@ -3,12 +3,12 @@ Created on Feb 23, 2017
 
 @author: MT
 '''
-c_ Queue(o..):
-    ___ - ):
+c_ Queue(o..
+    ___ -
         stack1    # list
         stack2    # list
     
-    ___ push  x):
+    ___ push  x
         __ empty
             stack1.a..(x)
         ____ stack1:

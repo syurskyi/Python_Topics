@@ -3,8 +3,8 @@ Created on Mar 14, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ monotoneIncreasingDigits  N):
+c_ Solution(o..
+    ___ monotoneIncreasingDigits  N
         """
         :type N: int
         :rtype: int

@@ -4,8 +4,8 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findDuplicates  nums):
+c_ Solution(o..
+    ___ findDuplicates  nums
         result    # list
         ___ num __ nums:
             ind = abs(num)-1

@@ -1,6 +1,6 @@
 c_ Account:
 
-    ___ - , name, start_balance=0):
+    ___ - , name, start_balance=0
         name = name
         start_balance = start_balance
         _transactions    # list
@@ -12,41 +12,41 @@ c_ Account:
     ___ __len__
         r.. l..(_transactions)
 
-    ___ __lt__  other):
-        __ n.. isi..(other, Account):
+    ___ __lt__  other
+        __ n.. isi..(other, Account
             r.. ValueError()
         r.. balance < other.balance
 
-    ___ __gt__  other):
-        __ n.. isi..(other, Account):
+    ___ __gt__  other
+        __ n.. isi..(other, Account
             r.. ValueError()
         r.. balance > other.balance
 
-    ___ __eq__  other):
-        __ n.. isi..(other, Account):
+    ___ __eq__  other
+        __ n.. isi..(other, Account
             r.. ValueError()
         r.. balance __ other.balance
 
-    ___ __le__  other):
-        __ n.. isi..(other, Account):
+    ___ __le__  other
+        __ n.. isi..(other, Account
             r.. ValueError()
         r.. balance <= other.balance
 
-    ___ __ge__  other):
-        __ n.. isi..(other, Account):
+    ___ __ge__  other
+        __ n.. isi..(other, Account
             r.. ValueError()
         r.. balance >= other.balance
 
-    ___ __getitem__  item):
+    ___ __getitem__  item
         r.. _transactions[item]
 
-    ___ __add__  other):
-        __ n.. isi..(other, i..):
+    ___ __add__  other
+        __ n.. isi..(other, i..
             r.. ValueError
         _transactions.a..(other)
 
-    ___ __sub__  other):
-        __ n.. isi..(other, i..):
+    ___ __sub__  other
+        __ n.. isi..(other, i..
             r.. ValueError
         _transactions.a..(-other)
 

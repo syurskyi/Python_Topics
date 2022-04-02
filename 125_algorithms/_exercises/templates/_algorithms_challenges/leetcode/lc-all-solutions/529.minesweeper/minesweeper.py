@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ updateBoard  board, click):
+c_ Solution(o..
+  ___ updateBoard  board, click
     """
     :type board: List[List[str]]
     :type click: List[int]

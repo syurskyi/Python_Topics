@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ firstMissingPositive  nums):
+c_ Solution(o..
+  ___ firstMissingPositive  nums
     """
     :type nums: List[int]
     :rtype: int
     """
     i = 0
-    w.... i < l..(nums):
+    w.... i < l..(nums
       __ 0 < nums[i] <= l..(nums) a.. nums[nums[i] - 1] != nums[i]:
         nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
       ____:

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ convertToTitle  n):
+c_ Solution(o..
+  ___ convertToTitle  n
     """
     :type n: int
     :rtype: str

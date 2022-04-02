@@ -3,8 +3,8 @@ Created on Oct 1, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findErrorNums  nums):
+c_ Solution(o..
+    ___ findErrorNums  nums
         """
         :type nums: List[int]
         :rtype: List[int]

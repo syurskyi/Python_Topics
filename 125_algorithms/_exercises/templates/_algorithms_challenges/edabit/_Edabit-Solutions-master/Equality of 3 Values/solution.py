@@ -1,4 +1,4 @@
-___ equal(a, b, c):
+___ equal(a, b, c
     __ a __ b a.. a __ c:
         r.. 3
     ____ a __ b o. a __ c:

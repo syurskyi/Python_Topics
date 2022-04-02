@@ -3,8 +3,8 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numJewelsInStones  J, S):
+c_ Solution(o..
+    ___ numJewelsInStones  J, S
         """
         :type J: str
         :type S: str

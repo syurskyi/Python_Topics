@@ -36,17 +36,17 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 ___ load_words_v1
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
     l    # list
-    w__ open(DICTIONARY) __ file:
+    w__ o.. DICTIONARY) __ file:
         ___ line __ file:
             l.a..(line.strip())
     r.. l
 
 ___ load_words_v2
 
-    w__ open(DICTIONARY) __ file:
-        r.. [word.s.. ___ word __ file.read().s.. ]
+    w__ o.. DICTIONARY) __ file:
+        r.. [word.s.. ___ word __ file.r...s.. ]
 
-___ calc_word_value_v1(word):
+___ calc_word_value_v1(word
     """Given a word calculate its value using the LETTER_SCORES dict"""
     value = 0
     ___ char __ word.u..:
@@ -56,11 +56,11 @@ ___ calc_word_value_v1(word):
             value = 0
     r.. value
 
-___ calc_word_value_v2(word):
+___ calc_word_value_v2(word
     r.. s..(LETTER_SCORES.get(char.u.., 0) ___ char __ word)
 
 
-___ max_word_value(words):
+___ max_word_value(words
     """Given a list of words calculate the word with the maximum value and return it"""
     m.. = ()
     ___ word __ words:
@@ -72,7 +72,7 @@ ___ max_word_value(words):
                 m.. = (word, value)
     r.. m..[0]
 
-___ max_word_value_v2(words):
+___ max_word_value_v2(words
     r.. m..(words, key=calc_word_value)
 
-print(max_word_value(['zime', 'fgrtgtrtvv']))
+print(max_word_value( 'zime', 'fgrtgtrtvv' ))

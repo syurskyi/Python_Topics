@@ -7,17 +7,17 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         lst = ["11", "69", "88", "96", "00"]  # use list rather than map since no need to look up
         middle = ["0", "1", "8"]
 
-    ___ findStrobogrammatic  n):
+    ___ findStrobogrammatic  n
         ret    # list
         build(n, d..(), ret)
         r.. ret
 
-    ___ build  n, cur, ret):
+    ___ build  n, cur, ret
         """
         build from inside
         """
@@ -31,7 +31,7 @@ c_ Solution(o..):
                 ret.a..("".j..(cur))
                 r..
             ___ elt __ lst:
-                __ n.. (elt __ "00" a.. l..(cur) __ n-2):
+                __ n.. (elt __ "00" a.. l..(cur) __ n-2
                     cur.appendleft(elt[0])
                     cur.a..(elt[1])
                     build(n, cur, ret)
@@ -39,11 +39,11 @@ c_ Solution(o..):
                     cur.popleft()
 
 
-c_ SolutionArray(o..):
-    ___ - ):
+c_ SolutionArray(o..
+    ___ -
         map1 = ["11", "69", "88", "96", "00"]
 
-    ___ findStrobogrammatic  n):
+    ___ findStrobogrammatic  n
         """
         :type n: int
         :rtype: List[str]
@@ -52,7 +52,7 @@ c_ SolutionArray(o..):
         build(n, [], ret)
         r.. ret
 
-    ___ build  n, cur, ret):
+    ___ build  n, cur, ret
         """
         Using list as double-entry queue, performance of every operation is O(n) rather than O(1)
         """
@@ -76,8 +76,8 @@ c_ SolutionArray(o..):
                 cur.pop(0)
 
 
-c_ SolutionOutputLimitExceeded(o..):
-    ___ - ):
+c_ SolutionOutputLimitExceeded(o..
+    ___ -
         map = {
             "1": "1",
             "6": "9",
@@ -87,7 +87,7 @@ c_ SolutionOutputLimitExceeded(o..):
         }
         middle = ["1", "8", "0"]
 
-    ___ findStrobogrammatic  n):
+    ___ findStrobogrammatic  n
         """
         :type n: int
         :rtype: List[str]
@@ -96,20 +96,20 @@ c_ SolutionOutputLimitExceeded(o..):
         build(0, n, [], ret)
         r.. ret
 
-    ___ build  idx, n, cur, ret):
+    ___ build  idx, n, cur, ret
         __ idx __ n/2:
             __ n % 2 != 0:
                 ___ m __ middle:
                     __ m != "0" o. idx != 0:
                         temp = l..(cur)
                         temp.a..(m)
-                        ___ i __ x..(idx-1, -1, -1):
-                            temp.a..(map[temp[i]])
+                        ___ i __ x..(idx-1, -1, -1
+                            temp.a.. m..[temp[i]])
                         ret.a..("".j..(temp))
             ____:
                 temp = l..(cur)
-                ___ i __ x..(idx-1, -1, -1):
-                    temp.a..(map[temp[i]])
+                ___ i __ x..(idx-1, -1, -1
+                    temp.a.. m..[temp[i]])
                     ret.a..("".j..(temp))
 
             r..
@@ -122,4 +122,4 @@ c_ SolutionOutputLimitExceeded(o..):
 
 
 __ _______ __ _______
-    ... Solution().findStrobogrammatic(3) __ ['101', '609', '808', '906', '111', '619', '818', '916', '181', '689', '888', '986']
+    ... Solution().findStrobogrammatic(3) __  '101', '609', '808', '906', '111', '619', '818', '916', '181', '689', '888', '986'

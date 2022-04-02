@@ -8,7 +8,7 @@ Trie + DFS
 TLE: DFS
 """
 c_ Solution:
-    ___ wordSquares  words):
+    ___ wordSquares  words
         """
         :type words: list[str]
         :rtype: list[list[str]]
@@ -21,7 +21,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  words, n, ans, path):
+    ___ dfs  words, n, ans, path
         __ (l..(path) __ n a..
             is_valid(path)):
             ans.a..(path | )
@@ -35,12 +35,12 @@ c_ Solution:
             dfs(words, n, ans, path)
             path.pop()
 
-    ___ is_valid  path):
-        __ n.. path o. l..(path) != l..(path[0]):
+    ___ is_valid  path
+        __ n.. path o. l..(path) != l..(path[0]
             r.. F..
 
         ___ i __ r..(1, l..(path)):
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 __ path[i][j] != path[j][i]:
                     r.. F..
 

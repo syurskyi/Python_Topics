@@ -1,6 +1,6 @@
 c_ Solution:
     # @return a boolean
-    ___ isPalindrome  x):
+    ___ isPalindrome  x
         __ x < 0:
             r.. F..
         num_digit = 0

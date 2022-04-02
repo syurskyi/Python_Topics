@@ -1,11 +1,11 @@
-c_ TicTacToe(o..):
-  ___ - , n):
+c_ TicTacToe(o..
+  ___ - , n
     rows = [0] * n
     cols = [0] * n
     diag = antiDiag = 0
     n = n
 
-    ___ move(row, col, player):
+    ___ move(row, col, player
       delta = 3 - player * 2
       rows[row] += delta
       cols[col] += delta

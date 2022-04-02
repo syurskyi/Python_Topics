@@ -1,5 +1,5 @@
-c_ NumMatrix(o..):
-  ___ - , matrix):
+c_ NumMatrix(o..
+  ___ - , matrix
     """
     initialize your data structure here.
     :type matrix: List[List[int]]
@@ -14,7 +14,7 @@ c_ NumMatrix(o..):
       ___ j __ r..(0, l..(matrix[0])):
         update(i, j, matrix[i][j])
 
-  ___ update  row, col, val):
+  ___ update  row, col, val
     """
     update the element at matrix[row,col] to val.
     :type row: int
@@ -28,14 +28,14 @@ c_ NumMatrix(o..):
     delta = val - m[row][col]
     m[row][col] = val
     i, j = row, col
-    w.... i < l..(c):
+    w.... i < l..(c
       j = col
-      w.... j < l..(c[0]):
+      w.... j < l..(c[0]
         c[i][j] += delta
         j += lowbit(j)
       i += lowbit(i)
 
-  ___ sumRange  row, col):
+  ___ sumRange  row, col
     row += 1
     col += 1
     ret = 0
@@ -49,10 +49,10 @@ c_ NumMatrix(o..):
       i -= lowbit(i)
     r.. ret
 
-  ___ lowbit  i):
+  ___ lowbit  i
     r.. (i & -i)
 
-  ___ sumRegion  row1, col1, row2, col2):
+  ___ sumRegion  row1, col1, row2, col2
     """
     sum of elements matrix[(row1,col1)..(row2,col2)], inclusive.
     :type row1: int

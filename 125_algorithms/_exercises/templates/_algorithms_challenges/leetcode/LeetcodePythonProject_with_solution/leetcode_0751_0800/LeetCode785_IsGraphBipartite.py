@@ -3,25 +3,25 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ isBipartite  graph):
+c_ Solution(o..
+    ___ isBipartite  graph
         """
         :type graph: List[List[int]]
         :rtype: bool
         """
         n = l..(graph)
         colors = [-1]*n
-        ___ i __ r..(n):
-            __ colors[i] __ -1 a.. n.. validColor(graph, colors, 0, i):
+        ___ i __ r..(n
+            __ colors[i] __ -1 a.. n.. validColor(graph, colors, 0, i
                 r.. F..
         r.. T..
     
-    ___ validColor  graph, colors, color, node):
+    ___ validColor  graph, colors, color, node
         __ colors[node] != -1:
             r.. colors[node] __ color
         colors[node] = color
         ___ nextNode __ graph[node]:
-            __ n.. validColor(graph, colors, 1-color, nextNode):
+            __ n.. validColor(graph, colors, 1-color, nextNode
                 r.. F..
         r.. T..
     

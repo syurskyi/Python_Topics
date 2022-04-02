@@ -1,4 +1,4 @@
-___ get_ordinal_suffix(number):
+___ get_ordinal_suffix(number
     """Receives a number int and returns it appended with its ordinal suffix,
        so 1 -> 1st, 2 -> 2nd, 4 -> 4th, 11 -> 11th, etc.
 
@@ -17,7 +17,7 @@ ___ get_ordinal_suffix(number):
       "st": '1',
       "nd": '2',
       "rd": '3',
-      "th": ['11', '12', '13']      
+      "th":  '11', '12', '13'       
     }
 
     number = s..(number)

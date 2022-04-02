@@ -3,13 +3,13 @@ _______ unittest
 ____ allergies _______ Allergies
 
 # Python 2/3 compatibility
-__ n.. hasattr(unittest.TestCase, 'assertCountEqual'):
+__ n.. hasattr(unittest.TestCase, 'assertCountEqual'
     unittest.TestCase.assertCountEqual = unittest.TestCase.assertItemsEqual
 
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ AllergiesTests(unittest.TestCase):
+c_ AllergiesTests(unittest.TestCase
     ___ test_no_allergies_means_not_allergic
         allergies = Allergies(0)
         assertFalse(allergies.is_allergic_to('peanuts'))
@@ -29,24 +29,24 @@ c_ AllergiesTests(unittest.TestCase):
         assertEqual(Allergies(0).lst, [])
 
     ___ test_allergic_to_just_eggs
-        assertEqual(Allergies(1).lst, ['eggs'])
+        assertEqual(Allergies(1).lst,  'eggs' )
 
     ___ test_allergic_to_just_peanuts
-        assertEqual(Allergies(2).lst, ['peanuts'])
+        assertEqual(Allergies(2).lst,  'peanuts' )
 
     ___ test_allergic_to_just_strawberries
-        assertEqual(Allergies(8).lst, ['strawberries'])
+        assertEqual(Allergies(8).lst,  'strawberries' )
 
     ___ test_allergic_to_eggs_and_peanuts
-        assertCountEqual(Allergies(3).lst, ['eggs', 'peanuts'])
+        assertCountEqual(Allergies(3).lst,  'eggs', 'peanuts' )
 
     ___ test_allergic_to_more_than_eggs_but_not_peanuts
-        assertCountEqual(Allergies(5).lst, ['eggs', 'shellfish'])
+        assertCountEqual(Allergies(5).lst,  'eggs', 'shellfish' )
 
     ___ test_allergic_to_lots_of_stuff
         assertCountEqual(
             Allergies(248).lst,
-            ['strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats'])
+             'strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats' )
 
     ___ test_allergic_to_everything
         assertCountEqual(
@@ -56,7 +56,7 @@ c_ AllergiesTests(unittest.TestCase):
             ])
 
     ___ test_ignore_non_allergen_score_parts_only_eggs
-        assertEqual(Allergies(257).lst, ['eggs'])
+        assertEqual(Allergies(257).lst,  'eggs' )
 
     ___ test_ignore_non_allergen_score_parts
         assertCountEqual(

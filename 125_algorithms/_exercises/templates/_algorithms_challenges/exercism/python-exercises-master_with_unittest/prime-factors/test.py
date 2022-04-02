@@ -5,7 +5,7 @@ ____ prime_factors _______ prime_factors
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ PrimeFactorsTest(unittest.TestCase):
+c_ PrimeFactorsTest(unittest.TestCase
     ___ test_no_factors
         assertEqual(prime_factors(1), [])
 

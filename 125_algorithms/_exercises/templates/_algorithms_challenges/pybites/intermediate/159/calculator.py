@@ -1,6 +1,6 @@
 _______ operator
 
-___ simple_calculator(calculation):
+___ simple_calculator(calculation
    """Receives 'calculation' and returns the calculated result,
 
       Examples - input -> output:
@@ -28,7 +28,7 @@ ___ simple_calculator(calculation):
 
    ___
       r.. ops[op](num1, num2)
-   ______ (KeyError, ZeroDivisionError):
+   ______ (KeyError, ZeroDivisionError
       r.. ValueError
 
 

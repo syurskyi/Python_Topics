@@ -12,7 +12,7 @@ return 5.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ lengthOfLastWord  s):
+    ___ lengthOfLastWord  s
         """
         String
 

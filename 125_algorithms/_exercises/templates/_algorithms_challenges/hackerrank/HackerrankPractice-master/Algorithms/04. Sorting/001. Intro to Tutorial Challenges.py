@@ -4,7 +4,7 @@
 
 v = i..(input())
 n = i..(input())
-arr = l..(map(i.., input().s..()))
+arr = l.. m..(i.., input().s..()))
 i = 0
 w.... arr[i] != v:
     i += 1

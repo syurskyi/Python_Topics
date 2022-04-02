@@ -27,7 +27,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ fourSumCount  A, B, C, D):
+    ___ fourSumCount  A, B, C, D
         """
         Brute force with map: O(N^3)
 
@@ -46,8 +46,8 @@ c_ Solution:
         N = l..(A)
         AB = defaultdict(i..)
         CD = defaultdict(i..)
-        ___ i __ r..(N):
-            ___ j __ r..(N):
+        ___ i __ r..(N
+            ___ j __ r..(N
                 AB[A[i] + B[j]] += 1
                 CD[C[i] + D[j]] += 1
 

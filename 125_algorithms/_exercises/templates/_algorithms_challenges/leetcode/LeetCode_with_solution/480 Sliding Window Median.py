@@ -36,7 +36,7 @@ _______ heapq
 
 
 c_ DualHeap:
-    ___ - ):
+    ___ -
         """
         ---- number line --->
         --- max heap --- |  --- min heap ---
@@ -47,7 +47,7 @@ c_ DualHeap:
         min_sz = 0
         to_remove = s..()  # value, error mapping index in nums
 
-    ___ insert  num):
+    ___ insert  num
         __ max_h a.. num > max_h[0][1]:
             heapq.heappush(min_h, (num, num))
             min_sz += 1
@@ -56,7 +56,7 @@ c_ DualHeap:
             max_sz += 1
         balance()
 
-    ___ pop  num):
+    ___ pop  num
         to_remove.add(num)
         __ max_h a.. num > max_h[0][1]:
             min_sz -= 1
@@ -89,7 +89,7 @@ c_ DualHeap:
 
         clean_top()
 
-    ___ get_median  k):
+    ___ get_median  k
         clean_top()
         __ k % 2 __ 1:
             r.. max_h[0][1]
@@ -116,7 +116,7 @@ c_ Solution:
         """
         ret    # list
         dh = DualHeap()
-        ___ i __ r..(k):
+        ___ i __ r..(k
             dh.insert(nums[i])
 
         ret.a..(dh.get_median(k))

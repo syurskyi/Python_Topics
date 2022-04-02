@@ -12,20 +12,20 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Node(o..):
+c_ Node(o..
     """
     Data structure is key
     """
-    ___ - , origin, q):
+    ___ - , origin, q
         origin = origin
         q = q
 
-    ___ __cmp__  other):
+    ___ __cmp__  other
         r.. q[0] - other.q[0]
 
 
-c_ Solution(o..):
-    ___ nthUglyNumber  n):
+c_ Solution(o..
+    ___ nthUglyNumber  n
         """
         Prime factor: 2, 3, 5
         Heap
@@ -49,7 +49,7 @@ c_ Solution(o..):
             cnt += 1
             popped = heapq.heappop(h)
             ret = popped.q.pop(0)
-            ___ i __ x..(ugly.index(popped.origin), 3):
+            ___ i __ x..(ugly.index(popped.origin), 3
                 qs[i].q.a..(ret*ugly[i])
 
             heapq.heappush(h, popped)

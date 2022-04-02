@@ -1,14 +1,14 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ findSubstring  s, words):
+c_ Solution(o..
+  ___ findSubstring  s, words
     """
     :type s: str
     :type words: List[str]
     :rtype: List[int]
     """
-    __ l..(words) > l..(s):
+    __ l..(words) > l..(s
       r.. []
     d    # dict
     t    # dict

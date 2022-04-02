@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ flatten  root):
+c_ Solution(o..
+  ___ flatten  root
     """
     :type root: TreeNode
     :rtype: void Do not return anything, modify root in-place instead.
     """
 
-    ___ dfs(root):
+    ___ dfs(root
       __ n.. root:
         r.. root
 

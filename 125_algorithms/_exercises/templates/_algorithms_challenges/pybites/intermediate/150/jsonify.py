@@ -16,7 +16,7 @@ id,first_name,last_name,email
 """
 
 
-___ convert_to_json(members=members):
+___ convert_to_json(members=members
     members_data    # list
     ___ i, row __ e..(members.strip("\n").s..("\n")):
         __ i __ 0:

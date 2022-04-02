@@ -7,8 +7,8 @@ ___ print_names_to_columns(names: List[s..], cols: i.. = 2) __ N..
     rows = i..(math.ceil(l..(names) / cols))
 
     
-    ___ row __ r..(rows):
-        ___ col __ r..(cols):
+    ___ row __ r..(rows
+        ___ col __ r..(cols
             index = row * cols + col
             ___
                 name  = names[index]

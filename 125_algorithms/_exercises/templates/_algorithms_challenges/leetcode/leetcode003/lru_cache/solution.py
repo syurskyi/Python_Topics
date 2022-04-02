@@ -17,14 +17,14 @@ TLE
 c_ LRUCache:
 
     # @param capacity, an integer
-    ___ - , capacity):
+    ___ - , capacity
         capacity = capacity
         times    # dict
         cache    # dict
         timestamp = 0
 
     # @return an integer
-    ___ get  key):
+    ___ get  key
         timestamp += 1
         __ key __ cache:
             times[key] = timestamp
@@ -34,7 +34,7 @@ c_ LRUCache:
     # @param key, an integer
     # @param value, an integer
     # @return nothing
-    ___ s..  key, value):
+    ___ s..  key, value
         timestamp += 1
         __ key __ cache:
             times[key] = timestamp

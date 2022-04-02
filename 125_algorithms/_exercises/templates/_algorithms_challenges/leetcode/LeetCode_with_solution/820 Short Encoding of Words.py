@@ -37,7 +37,7 @@ c_ Solution:
         """
         root    # dict
         ends    # list
-        ___ word __ s..(words):
+        ___ word __ s..(words
             cur = root
             ___ c __ word[::-1]:
                 nxt = cur.get(c, {})

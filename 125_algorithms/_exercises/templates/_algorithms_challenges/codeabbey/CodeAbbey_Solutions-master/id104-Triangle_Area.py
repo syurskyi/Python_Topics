@@ -1,8 +1,8 @@
 ____ math _______ sqrt
 
-___ triangleArea(amount):
+___ triangleArea(amount
     answer    # list
-    ___ triangle __ r..(amount):
+    ___ triangle __ r..(amount
         x1,y1,x2,y2,x3,y3 = [i..(x) ___ x __ raw_input().s.. ]
         #A = x1,y1      B = x2,y2       C = x3,y3
         a = sqrt((x2 - x1)**2 + (y2-y1)**2) # Distance between A and B

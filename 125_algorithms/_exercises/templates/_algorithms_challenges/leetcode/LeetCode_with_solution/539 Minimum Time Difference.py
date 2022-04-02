@@ -18,22 +18,22 @@ c_ Solution:
         sort and minus
         """
         ret = f__("inf")
-        A = l..(s..(map(minutes, timePoints)))
+        A = l..(s.. m..(minutes, timePoints)))
         n = l..(A)
-        ___ i __ r..(n - 1):
+        ___ i __ r..(n - 1
             ret = m..(ret, diff(A[i+1], A[i]))
 
         ret = m..(ret, diff(A[n-1], A[0]))
         r.. ret
 
-    ___ diff  b, a):
+    ___ diff  b, a
         ret = b - a
         __ ret > 12 * 60:
             ret = 24 * 60 - ret
 
         r.. ret
 
-    ___ minutes  a):
+    ___ minutes  a
         h, m = a.s..(":")
         minutes = 60 * i..(h) + i..(m)
         r.. minutes

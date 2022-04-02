@@ -9,14 +9,14 @@ __author__ = 'Daniel'
 
 
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ BSTIterator:
-    ___ - , root):
+    ___ - , root
         """
         :type root: TreeNode
         """

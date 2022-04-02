@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ majorityElement  nums):
+    ___ majorityElement  nums
         """
         Algorithm:
         O(n lgn) sort and take the middle one
@@ -19,7 +19,7 @@ c_ Solution:
         """
         mjr = nums[0]
         cnt = 0
-        ___ i, v __ e..(nums):
+        ___ i, v __ e..(nums
             __ mjr __ v:
                 cnt += 1
             ____:

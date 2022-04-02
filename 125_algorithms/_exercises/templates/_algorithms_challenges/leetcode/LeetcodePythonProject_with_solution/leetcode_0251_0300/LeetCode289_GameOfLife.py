@@ -4,7 +4,7 @@ Created on Mar 7, 2017
 @author: MT
 '''
 c_ Solution
-    ___ gameOfLife  board):
+    ___ gameOfLife  board
         """
         :type board: List[List[int]]
         :rtype: void Do not return anything, modify board in-place instead.
@@ -12,8 +12,8 @@ c_ Solution
         # 2: live => die
         # -1: die => live
         m, n = l..(board), l..(board[0])
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 liveNum = liveNeighborNum(board, i, j)
                 __ board[i][j] __ 1:
                     __ liveNum < 2 o. liveNum > 3:
@@ -21,19 +21,19 @@ c_ Solution
                 ____:
                     __ liveNum __ 3:
                         board[i][j] = -1
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ board[i][j] __ 2:
                     board[i][j] = 0
                 ____ board[i][j] __ -1:
                     board[i][j] = 1
     
-    ___ liveNeighborNum  board, i, j):
+    ___ liveNeighborNum  board, i, j
         count = 0
         ___ i0 __ r..(m..(i-1, 0), m..(l..(board), i+2)):
             ___ j0 __ r..(m..(j-1, 0), m..(l..(board[0]), j+2)):
                 __ i0 __ i a.. j0 __ j: _____
-                __ board[i0][j0] __ (1, 2):
+                __ board[i0][j0] __ (1, 2
                     count+=1
         r.. count
     

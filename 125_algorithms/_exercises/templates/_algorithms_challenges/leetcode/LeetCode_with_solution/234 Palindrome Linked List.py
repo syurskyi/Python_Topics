@@ -8,13 +8,13 @@ __author__ = 'Daniel'
 
 
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 
 c_ Solution:
-    ___ isPalindrome  head):
+    ___ isPalindrome  head
         """
         Algorithms:
         1. put into array O(N)
@@ -38,7 +38,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ l..  head):
+    ___ l..  head
         cnt = 0
         cur = head
         w.... cur:
@@ -47,7 +47,7 @@ c_ Solution:
 
         r.. cnt
 
-    ___ get  head, n):
+    ___ get  head, n
         cnt = 0
         cur = head
         w.... cnt < n:
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. cur
 
-    ___ reverse  head):
+    ___ reverse  head
         __ n.. head:
             r.. head
 

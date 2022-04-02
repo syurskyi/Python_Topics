@@ -41,18 +41,18 @@
 #        :rtype List[NestedInteger]
 #        """
 
-c_ Solution(o..):
-  ___ deserialize  s):
+c_ Solution(o..
+  ___ deserialize  s
     """
     :type s: str
     :rtype: NestedInteger
     """
 
-    ___ p..(s, i):
+    ___ p..(s, i
       __ s[i] __ "[":
         i += 1
         ret = NestedInteger()
-        w.... i < l..(s):
+        w.... i < l..(s
           __ s[i] __ "]":
             r.. ret, i + 1
           ____ s[i] __ "[-0123456789":

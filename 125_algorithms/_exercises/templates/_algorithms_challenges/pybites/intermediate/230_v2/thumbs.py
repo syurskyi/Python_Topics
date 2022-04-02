@@ -5,12 +5,12 @@ c_ Thumbs:
 
     
 
-    ___ __rmul__ number):
+    ___ __rmul__ number
 
         r.. self * number
 
-    ___ __mul__ number):
-        __ isi..(number,i..):
+    ___ __mul__ number
+        __ isi..(number,i..
             __ number > 0:
                 s__ = THUMBS_UP
             ____ number < 0:

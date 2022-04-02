@@ -13,18 +13,18 @@ data = requests.get(CAR_DATA).json()
 data = pd.DataFrame(data)
 
 # your turn:
-___ most_prolific_automaker(year):
+___ most_prolific_automaker(year
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
 
     r.. data[data.year __ year].automaker.value_counts().idxmax()
 
 
-___ get_models(automaker, year):
+___ get_models(automaker, year
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
 
-    r.. s..(data.loc[(data.year __ year) & (data.automaker __ automaker),'model'])
+    r.. s..(data.loc[(data.year __ year) & (data.automaker __ automaker),'model' )
 
 
 

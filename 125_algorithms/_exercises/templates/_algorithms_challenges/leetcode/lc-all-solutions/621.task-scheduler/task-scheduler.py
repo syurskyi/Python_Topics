@@ -1,9 +1,9 @@
-c_ Solution(o..):
+c_ Solution(o..
   # O(nlogn) greedy to place most popular and distinct tasks first
   # Actually, I don't think this is greedy
   # We always place different tasks in a cycle which will minimize steps
   # If not different tasks can be placed in a cycle, place an `idle`.
-  ___ _leastInterval  tasks, n):
+  ___ _leastInterval  tasks, n
     """
     :type tasks: List[str]
     :type n: int
@@ -17,7 +17,7 @@ c_ Solution(o..):
     w.... heap:
       stack    # list
       cnt = 0
-      ___ _ __ r..(n):
+      ___ _ __ r..(n
         __ heap:
           c = heapq.heappop(heap)
           cnt += 1
@@ -35,7 +35,7 @@ c_ Solution(o..):
   # less frequent tasks can be always placed in such cycle
   # and it won't cause any conflicts with requirement since even most frequent can be settle
   # finally, return max(# of task, total counted number)
-  ___ leastInterval  tasks, n):
+  ___ leastInterval  tasks, n
     d = c...Counter(tasks)
     counts = d.v..
     longest = m..(counts)

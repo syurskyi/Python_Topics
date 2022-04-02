@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxCount  m, n, ops):
+c_ Solution(o..
+  ___ maxCount  m, n, ops
     """
     :type m: int
     :type n: int

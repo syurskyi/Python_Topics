@@ -1,11 +1,11 @@
 c_ Solution:
     # @param S, a list of integer
     # @return a list of lists of integer
-    ___ subsets  S):
+    ___ subsets  S
         S.s..()
         r.. _subsets(S, l..(S))
 
-    ___ _subsets  S, k):
+    ___ _subsets  S, k
         __ k __ 0:
             r.. [[]]
         ____:

@@ -1,13 +1,13 @@
 ____ c.. _______ d..
 
 
-___ my_queue(n=5):
+___ my_queue(n=5
     r.. d..(maxlen=n)
 
  
 __ _____ __ _____
     mq = my_queue()
-    ___ i __ r..(10):
+    ___ i __ r..(10
         mq.a..(i)
         print((i, l..(mq)))
 

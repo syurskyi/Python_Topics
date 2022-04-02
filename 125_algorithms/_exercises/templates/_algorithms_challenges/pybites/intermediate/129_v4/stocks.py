@@ -11,7 +11,7 @@ w__ requests.Session() __ s:
 
 # your turn:
 
-___ _cap_str_to_mln_float(cap):
+___ _cap_str_to_mln_float(cap
     """If cap = 'n/a' return 0, else:
        - strip off leading '$',
        - if 'M' in cap value, strip it off and return value as float,
@@ -29,12 +29,12 @@ ___ _cap_str_to_mln_float(cap):
     r.. value
 
 
-___ get_industry_cap(industry):
+___ get_industry_cap(industry
     """Return the sum of all cap values for given industry, use
        the _cap_str_to_mln_float to parse the cap values,
        return a float with 2 digit precision"""
-    total = s..(map(l.... x: _cap_str_to_mln_float(x['cap']),
-                    filter(l.... x: x['industry'] __ industry, data)
+    total = s.. m..(l.... x: _cap_str_to_mln_float(x 'cap' ),
+                    filter(l.... x: x 'industry'  __ industry, data)
                     )
                 )
 
@@ -44,14 +44,14 @@ ___ get_industry_cap(industry):
 ___ get_stock_symbol_with_highest_cap
     """Return the stock symbol (e.g. PACD) with the highest cap, use
        the _cap_str_to_mln_float to parse the cap values"""
-    r.. m..(data, key=l.... x: _cap_str_to_mln_float(x['cap']))['symbol']
+    r.. m..(data, key=l.... x: _cap_str_to_mln_float(x 'cap' )) 'symbol' 
 
 
 ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    min_max = Counter(map(l.... x: x['sector'],
-                          filter(l.... x: x['sector'] != 'n/a', data)
+    min_max = Counter m..(l.... x: x 'sector' ,
+                          filter(l.... x: x 'sector'  != 'n/a', data)
                           )
                       )
     most = min_max.most_common(1)[0][0]

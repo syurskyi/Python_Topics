@@ -11,7 +11,7 @@ reboot    ~                         Mon Jan 14 09:25
 """
 
 
-___ calc_max_uptime(reboots):
+___ calc_max_uptime(reboots
     """Parse the passed in reboots output,
        extracting the datetimes.
 
@@ -26,7 +26,7 @@ ___ calc_max_uptime(reboots):
     """
 
 
-    lines = reboots.splitlines()
+    lines = reboots.s..
 
     
     previous_date = N..

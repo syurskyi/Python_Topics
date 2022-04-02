@@ -4,22 +4,22 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ rob  nums):
+c_ Solution(o..
+    ___ rob  nums
         __ n.. nums: r.. 0
         __ l..(nums) __ 1: r.. nums[0]
         r.. m..(robHelper(nums, 0, l..(nums)-2),\
                    robHelper(nums, 1, l..(nums)-1))
     
-    ___ robHelper  nums, lo, hi):
+    ___ robHelper  nums, lo, hi
         include, exclude = 0, 0
-        ___ i0 __ r..(lo, hi+1):
+        ___ i0 __ r..(lo, hi+1
             i, e = include, exclude
             include = e+nums[i0]
             exclude = m..(i, e)
         r.. m..(include, exclude)
     
-    ___ robSpace  nums):
+    ___ robSpace  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -28,7 +28,7 @@ c_ Solution(o..):
         __ l..(nums) < 2: r.. nums[0]
         dp0 = [0]*l..(nums)
         dp1 = [0]*l..(nums)
-        ___ i __ r..(l..(nums)-1):
+        ___ i __ r..(l..(nums)-1
             __ i __ 0:
                 dp0[i] = nums[0]
             ____ i __ 1:

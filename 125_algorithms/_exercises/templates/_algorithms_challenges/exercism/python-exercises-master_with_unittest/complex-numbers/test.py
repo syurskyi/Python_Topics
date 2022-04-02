@@ -5,7 +5,7 @@ _______ math
 ____ complex_numbers _______ ComplexNumber
 
 
-c_ ComplexNumbersTest(unittest.TestCase):
+c_ ComplexNumbersTest(unittest.TestCase
 
     ___ test_real_part_of_a_purely_real_number
         input_number = ComplexNumber(1, 0)

@@ -3,8 +3,8 @@ Created on Sep 19, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ smallestRange  nums):
+c_ Solution(o..
+    ___ smallestRange  nums
         """
         :type nums: List[List[int]]
         :rtype: List[int]
@@ -18,7 +18,7 @@ c_ Solution(o..):
             left, i, j = heapq.heappop(pq)
             __ right-left < res[1]-res[0]:
                 res = [left, right]
-            __ j+1 __ l..(nums[i]):
+            __ j+1 __ l..(nums[i]
                 r.. res
             v = nums[i][j+1]
             right = m..(right, v)

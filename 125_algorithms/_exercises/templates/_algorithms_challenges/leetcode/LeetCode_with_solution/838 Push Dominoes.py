@@ -51,7 +51,7 @@ c_ Solution:
         n = l..(dominoes)
         L = [f__("inf") ___ i __ r..(n)]
         R = [f__("inf") ___ i __ r..(n)]
-        ___ i __ r..(n-1, -1, -1):
+        ___ i __ r..(n-1, -1, -1
             __ dominoes[i] __ "L":
                 L[i] = 0
             ____ dominoes[i] __ "R":
@@ -59,7 +59,7 @@ c_ Solution:
             ____ i + 1 < n:
                 L[i] = L[i+1] + 1
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ dominoes[i] __ "R":
                 R[i] = 0
             ____ dominoes[i] __ "L":
@@ -68,9 +68,9 @@ c_ Solution:
                 R[i] = R[i-1] + 1
 
         ret    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             d = m..(R[i], L[i])
-            __ d __ f__("inf"):
+            __ d __ f__("inf"
                 cur = "."
             ____ R[i] __ L[i]:
                 cur = "."

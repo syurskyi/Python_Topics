@@ -20,16 +20,16 @@ output = """
 """
 
 
-___ sysinfo_scrape(output):
+___ sysinfo_scrape(output
     """Scrapes the output from screenfetch and returns a dictionary"""
     
 
     mapping    # dict
     
-    lines = output.splitlines()
+    lines = output.s..
 
     name = __.s..(r'\S+$',lines[1]).group()
-    mapping['Name'] = name
+    mapping 'Name'  = name
     ___ i __ r..(2,l..(lines)):
         line = lines[i]
 

@@ -3,7 +3,7 @@ Created on Sep 4, 2017
 
 @author: MT
 '''
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , folder_ N..
         folder = folder
         content = ''
@@ -11,11 +11,11 @@ c_ TreeNode(o..):
         childFolders    # list
         isFile = F..
 
-c_ FileSystem(o..):
-    ___ - ):
+c_ FileSystem(o..
+    ___ -
         root = TreeNode()
     
-    ___ ls  path):
+    ___ ls  path
         path = path[1:]
         arr = path.s..('/')
         __ arr[0] __ '':
@@ -29,7 +29,7 @@ c_ FileSystem(o..):
         ____:
             r.. node.childFolders
     
-    ___ mkdir  path):
+    ___ mkdir  path
         path = path[1:]
         arr = path.s..('/')
         node = root
@@ -42,7 +42,7 @@ c_ FileSystem(o..):
                 node.childFolders.a..(folder)
                 node = newNode
     
-    ___ addContentToFile  filePath, content):
+    ___ addContentToFile  filePath, content
         filePath = filePath[1:]
         arr = filePath.s..('/')
         file = arr[-1]
@@ -65,7 +65,7 @@ c_ FileSystem(o..):
             newNode.isFile = T..
             newNode.content += content
     
-    ___ readContentFromFile  filePath):
+    ___ readContentFromFile  filePath
         filePath = filePath[1:]
         arr = filePath.s..('/')
         node = root

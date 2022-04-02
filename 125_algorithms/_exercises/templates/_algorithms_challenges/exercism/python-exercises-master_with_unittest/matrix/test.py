@@ -3,7 +3,7 @@ _______ unittest
 ____ matrix _______ Matrix
 
 
-c_ MatrixTest(unittest.TestCase):
+c_ MatrixTest(unittest.TestCase
     ___ test_extract_a_row
         matrix = Matrix("1 2\n10 20")
         assertEqual(matrix.rows[0], [1, 2])

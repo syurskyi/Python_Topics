@@ -3,8 +3,8 @@ Created on Mar 7, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ asteroidCollision  asteroids):
+c_ Solution(o..
+    ___ asteroidCollision  asteroids
         """
         :type asteroids: List[int]
         :rtype: List[int]
@@ -13,7 +13,7 @@ c_ Solution(o..):
         w... T...
             changed = F..
             i = 0
-            w.... i < l..(asteroids):
+            w.... i < l..(asteroids
                 __ i+1 <l..(asteroids) a..\
                     asteroids[i] > 0 a.. asteroids[i+1] < 0:
                     __ asteroids[i] + asteroids[i+1] != 0:

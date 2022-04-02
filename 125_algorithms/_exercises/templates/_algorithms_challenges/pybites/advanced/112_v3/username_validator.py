@@ -32,7 +32,7 @@ ___ parse_social_platforms_string
     r.. result
 
 
-___ validate_username(platform, username):
+___ validate_username(platform, username
     """Receives platforms(Twitter, Facebook or Reddit) and username string,
        raise a ValueError if the wrong platform is passed in,
        return True/False if username is valid for entered platform"""

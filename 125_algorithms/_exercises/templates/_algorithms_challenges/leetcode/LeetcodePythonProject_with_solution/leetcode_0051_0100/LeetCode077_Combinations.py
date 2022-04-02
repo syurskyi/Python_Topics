@@ -4,8 +4,8 @@ Created on Jan 24, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ combine  n, k):
+c_ Solution(o..
+    ___ combine  n, k
         """
         :type n: int
         :type k: int
@@ -18,11 +18,11 @@ c_ Solution(o..):
         helper(elem, result, 1, n, k)
         r.. result
     
-    ___ helper  elem, result, start, n, k):
+    ___ helper  elem, result, start, n, k
         __ l..(elem) __ k:
             result.a..(l..(elem))
             r..
-        ___ i __ r..(start, n+1):
+        ___ i __ r..(start, n+1
             elem.a..(i)
             helper(elem, result, i+1, n, k)
             del elem[-1]

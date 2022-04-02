@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ generateMatrix  n):
+c_ Solution(o..
+  ___ generateMatrix  n
     """
     :type n: int
     :rtype: List[List[int]]
@@ -8,11 +8,11 @@ c_ Solution(o..):
     left, right, up, down = 0, n - 1, 0, n - 1
     k = 1
     w.... left <= right a.. up <= down:
-      ___ i __ r..(left, right + 1):
+      ___ i __ r..(left, right + 1
         ans[up][i] = k
         k += 1
       up += 1
-      ___ i __ r..(up, down + 1):
+      ___ i __ r..(up, down + 1
         ans[i][right] = k
         k += 1
       right -= 1

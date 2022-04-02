@@ -48,12 +48,12 @@ c_ Solution:
         """
         n = l..(A)
         B    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             B.a..(A[i] - i)
 
         # find top 2
         m1, m2 = N.., N..
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ m1 __ N..
                 m1 = i
             ____ m2 __ N..

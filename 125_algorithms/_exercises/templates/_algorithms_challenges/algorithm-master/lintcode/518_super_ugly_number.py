@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ nthSuperUglyNumber  n, primes):
+    ___ nthSuperUglyNumber  n, primes
         """
         :type n: int
         :type primes: list[int]
@@ -15,15 +15,15 @@ c_ Solution:
         uglys = [0] * n
         uglys[0] = 1
 
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             ugly = f__('inf')
 
-            ___ j __ r..(k):
+            ___ j __ r..(k
                 ugly = m..(ugly, uglys[steps[j]] * primes[j])
 
             uglys[i] = ugly
 
-            ___ j __ r..(k):
+            ___ j __ r..(k
                 __ uglys[steps[j]] * primes[j] __ ugly:
                     steps[j] += 1
 

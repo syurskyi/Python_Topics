@@ -1,4 +1,4 @@
-___ dec_to_base(number, base):
+___ dec_to_base(number, base
     """
     Input: number is the number to be converted
            base is the new base  (eg. 2, 6, or 8)
@@ -6,7 +6,7 @@ ___ dec_to_base(number, base):
     """
     # your code
     
-    ___ dec_to_base_helper(number,base,x=0):
+    ___ dec_to_base_helper(number,base,x=0
     # return n
         __ n.. number:
             r.. 0

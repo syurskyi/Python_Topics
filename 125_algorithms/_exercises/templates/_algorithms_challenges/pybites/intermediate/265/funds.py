@@ -1,7 +1,7 @@
 IMPOSSIBLE = 'Mission impossible. No one can contribute.'
 
 
-___ max_fund(village):
+___ max_fund(village
     """Find a contiguous subarray with the largest sum."""
     # Hint: while iterating, you could save the best_sum collected so far
     # return total, starting, ending
@@ -11,7 +11,7 @@ ___ max_fund(village):
 
     best_start = best_end = current_start= current_end = -1
 
-    ___ i,value __ e..(village):
+    ___ i,value __ e..(village
         value = village[i]
         __ value >= current_sum + value:
             current_start= current_end = i

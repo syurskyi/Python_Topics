@@ -27,14 +27,14 @@ Both the input and output have TreeNode type.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         deepest = -1
         deepest_nodes = N..
         ret = N..
@@ -69,7 +69,7 @@ c_ Solution:
 
         l = c.. node.left)
         r = c.. node.right)
-        __ l != 0 a.. r != 0 a.. l + r __ l..(deepest_nodes):
+        __ l != 0 a.. r != 0 a.. l + r __ l..(deepest_nodes
             ret = node
 
         count = l + r

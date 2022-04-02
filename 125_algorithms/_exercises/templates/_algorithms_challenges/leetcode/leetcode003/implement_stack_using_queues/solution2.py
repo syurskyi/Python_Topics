@@ -19,8 +19,8 @@ You may assume that all operations are valid (for example, no pop or top
 operations will be called on an empty stack).
 """
 
-c_ Stack(o..):
-    ___ - ):
+c_ Stack(o..
+    ___ -
         """
         initialize your data structure here.
         pop()
@@ -43,7 +43,7 @@ c_ Stack(o..):
         queue1    # list
         queue2    # list
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: nothing

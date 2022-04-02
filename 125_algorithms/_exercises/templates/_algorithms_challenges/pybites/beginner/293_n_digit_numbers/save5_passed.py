@@ -1,7 +1,7 @@
-car_brands = ['Mazda', 'McLaren', 'Opel', 'Toyota', 'Honda']
+car_brands =  'Mazda', 'McLaren', 'Opel', 'Toyota', 'Honda'
 
 
-___ convert_to_tuple(car_brands):
+___ convert_to_tuple(car_brands
     static_cars = t..(car_brands)
     r.. static_cars
 

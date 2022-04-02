@@ -2,5 +2,5 @@
 # Score: 10
 
 
-___ swap_case(s):
+___ swap_case(s
     r.. s.swapcase()

@@ -6,13 +6,13 @@ ONE_DAY = t..(d.._1)
 TODAY = date(2018, 11, 12)
 
 
-___ extract_dates(data):
+___ extract_dates(data
     """Extract unique dates from DB table representation as shown in Bite"""
     dates = __.f..(r' (\d{4}-\d\d-\d\d) ', data)
     r.. s..(d__.strptime(d, '%Y-%m-%d').date() ___ d __ dates)
 
 
-___ calculate_streak(dates):
+___ calculate_streak(dates
     """Receives sequence (set) of dates and returns number of days
        on coding streak.
 

@@ -4,24 +4,24 @@ Given a singly linked list where elements are sorted in ascending order, convert
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 c_ Solution:
     # class attribute to keep trace the currently processing nodes
     # current_node = None
-    ___ - ):
+    ___ -
         current_node = N..  # !important, avoid time complexity of look up
 
-    ___ sortedListToBST  head):
+    ___ sortedListToBST  head
         """
         dfs
         No O(1) access.
@@ -36,7 +36,7 @@ c_ Solution:
         length = getLength(head)
         r.. sortedListToBST_dfs(0, length-1)
 
-    ___ sortedListToBST_dfs  start, end):
+    ___ sortedListToBST_dfs  start, end
         __ start>end:
             r..
         mid = (start+end)/2
@@ -49,7 +49,7 @@ c_ Solution:
         root.right = right_subtree
         r.. root
 
-    ___ getLength  head):
+    ___ getLength  head
         count = 0
         w.... head:
             head = head.next

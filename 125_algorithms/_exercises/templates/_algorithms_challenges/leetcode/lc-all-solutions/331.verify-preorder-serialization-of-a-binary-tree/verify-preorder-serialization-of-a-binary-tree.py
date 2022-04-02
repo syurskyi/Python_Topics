@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isValidSerialization  preorder):
+c_ Solution(o..
+  ___ isValidSerialization  preorder
     """
     :type preorder: str
     :rtype: bool

@@ -3,8 +3,8 @@ Created on Apr 24, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ maxIncreaseKeepingSkyline  grid):
+c_ Solution(o..
+    ___ maxIncreaseKeepingSkyline  grid
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -13,8 +13,8 @@ c_ Solution(o..):
         rows = [[0, 0] ___ _ __ r..(m)]
         cols = [[0, 0] ___ _ __ r..(n)]
         sumVal = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 sumVal += grid[i][j]
                 __ grid[i][j] > rows[i][0]:
                     rows[i][1] = j
@@ -23,8 +23,8 @@ c_ Solution(o..):
                     cols[j][1] = i
                     cols[j][0] = grid[i][j]
         res = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 res += m..(rows[i][0], cols[j][0])
         r.. res - sumVal
     

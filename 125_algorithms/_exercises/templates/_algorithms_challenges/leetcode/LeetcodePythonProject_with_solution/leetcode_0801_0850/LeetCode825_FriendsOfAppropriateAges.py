@@ -3,8 +3,8 @@ Created on May 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numFriendRequests  ages):
+c_ Solution(o..
+    ___ numFriendRequests  ages
         """
         :type ages: List[int]
         :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
         ___ x __ ages:
             count[x] += 1
         res = 0
-        ___ i __ r..(1, 121):
+        ___ i __ r..(1, 121
             __ i > 14:
                 res += count[i]*(count[i]-1+count[i-1]-count[i//2+7])
             count[i] += count[i-1]

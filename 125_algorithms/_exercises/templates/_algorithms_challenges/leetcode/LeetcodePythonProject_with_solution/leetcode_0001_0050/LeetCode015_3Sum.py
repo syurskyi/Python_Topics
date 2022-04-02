@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ threeSum  nums):
+c_ Solution(o..
+    ___ threeSum  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -12,7 +12,7 @@ c_ Solution(o..):
         nums.s..()
         n = l..(nums)
         res    # list
-        ___ i __ r..(n-2):
+        ___ i __ r..(n-2
             __ i > 0 a.. nums[i] __ nums[i-1]:
                 _____
             j, k = i+1, n-1

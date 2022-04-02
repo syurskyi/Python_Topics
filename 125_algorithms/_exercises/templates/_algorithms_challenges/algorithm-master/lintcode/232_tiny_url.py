@@ -2,7 +2,7 @@ _______ r__
 
 
 c_ TinyUrl:
-    ___ - ):
+    ___ -
         chars = [s..(i) ___ i __ r..(10)]
         chars.extend(chr(i) ___ i __ r..(o..('a'), o..('z') + 1))
         chars.extend(chr(i) ___ i __ r..(o..('A'), o..('Z') + 1))
@@ -12,7 +12,7 @@ c_ TinyUrl:
         lg2st    # dict
         st2lg    # dict
 
-    ___ longToShort  url):
+    ___ longToShort  url
         """
         :type url: str
         :rtype: str
@@ -30,7 +30,7 @@ c_ TinyUrl:
         st2lg[key] = url
         r.. get_tiny_url(key)
 
-    ___ shortToLong  url):
+    ___ shortToLong  url
         """
         :type url: str
         :rtype: str
@@ -45,10 +45,10 @@ c_ TinyUrl:
 
         r.. 'error'
 
-    ___ get_tiny_url  hash_key):
+    ___ get_tiny_url  hash_key
         r.. '{}{}'.f..(host, hash_key)
 
-    ___ get_hash_key  size):
+    ___ get_hash_key  size
         r.. ''.j..(
             r__.choice(chars)
             ___ _ __ r..(size)

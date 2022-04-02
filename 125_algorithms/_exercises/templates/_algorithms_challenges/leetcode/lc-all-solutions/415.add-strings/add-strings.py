@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ addStrings  num1, num2):
+c_ Solution(o..
+  ___ addStrings  num1, num2
     """
     :type num1: str
     :type num2: str

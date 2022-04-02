@@ -19,7 +19,7 @@ c_ Solution:
         """
         hm = defaultdict(l..)
         ret = [N.. ___ _ __ words]
-        ___ i, w __ e..(words):
+        ___ i, w __ e..(words
             hm[w[0], w[-1], l..(w)].a..(i)
 
         TrieNode = l....: defaultdict(TrieNode)
@@ -47,7 +47,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ abbrev  w, prefix_l):
+    ___ abbrev  w, prefix_l
         abbrev_l = l..(w) - 2 - prefix_l + 1
         __ abbrev_l > 1:
             r.. w[:prefix_l] + s..(abbrev_l) + w[-1]

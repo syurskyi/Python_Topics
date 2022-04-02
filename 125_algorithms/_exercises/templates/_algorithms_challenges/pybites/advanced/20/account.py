@@ -1,16 +1,16 @@
 c_ Account:
 
-    ___ - ):
+    ___ -
         _transactions    # list
 
     $
     ___ balance
         r.. s..(_transactions)
 
-    ___ __add__  amount):
+    ___ __add__  amount
         _transactions.a..(amount)
 
-    ___ __sub__  amount):
+    ___ __sub__  amount
         _transactions.a..(-amount)
 
     # add 2 dunder methods here to turn this class 
@@ -21,7 +21,7 @@ c_ Account:
         r.. self
     
     
-    ___ __exit__ exception_type,exception_value,exception_traceback):
+    ___ __exit__ exception_type,exception_value,exception_traceback
 
         
 

@@ -18,7 +18,7 @@ Halbard,Davie,CN"""
 ___ group_names_by_country(data: s.. = data) __ defaultdict:
     
     result = defaultdict(l..)
-    lines = data.splitlines()
+    lines = data.s..
     
     ___ i __ r..(1,l..(lines)):
         last_name,first_name,country = lines[i].s..(',')

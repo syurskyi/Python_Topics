@@ -4,8 +4,8 @@ Created on Mar 22, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxEnvelopes  envelopes):
+c_ Solution(o..
+    ___ maxEnvelopes  envelopes
         _______ bisect
         length = 0
         envelopes.s..(key=l.... x: (x[0], -x[1]))

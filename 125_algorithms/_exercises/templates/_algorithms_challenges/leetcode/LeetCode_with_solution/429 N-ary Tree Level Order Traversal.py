@@ -6,13 +6,13 @@ Given an n-ary tree, return the level order traversal of its nodes' values. (ie,
 
 # Definition for a Node.
 c_ Node:
-    ___ - , val, children):
+    ___ - , val, children
         val = val
         children = children
 
 
 c_ Solution:
-    ___ levelOrder  root):
+    ___ levelOrder  root
         """
         BFS
         

@@ -4,8 +4,8 @@ Created on May 9, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findTargetSumWays  nums, S):
+c_ Solution(o..
+    ___ findTargetSumWays  nums, S
         """
         :type nums: List[int]
         :type S: int
@@ -17,11 +17,11 @@ c_ Solution(o..):
         target = (sumVal+S)//2
         r.. helper(nums, target)
     
-    ___ helper  nums, target):
+    ___ helper  nums, target
         dp = [0]*(target+1)
         dp[0] = 1
         ___ num __ nums:
-            ___ i __ r..(target, -1, -1):
+            ___ i __ r..(target, -1, -1
                 __ i >= num:
                     dp[i] += dp[i-num]
         r.. dp[-1]

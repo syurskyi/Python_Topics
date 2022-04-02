@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ rotate  nums, k):
+c_ Solution(o..
+  ___ rotate  nums, k
     """
     :type nums: List[int]
     :type k: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
     __ l..(nums) __ 0 o. k __ 0:
       r..
 
-    ___ reverse(start, end, s):
+    ___ reverse(start, end, s
       w.... start < end:
         s[start], s[end] = s[end], s[start]
         start += 1

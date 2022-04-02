@@ -7,8 +7,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ hasPathSum  root, s..):
+c_ Solution(o..
+  ___ hasPathSum  root, s..
     """
     :type root: TreeNode
     :type sum: int

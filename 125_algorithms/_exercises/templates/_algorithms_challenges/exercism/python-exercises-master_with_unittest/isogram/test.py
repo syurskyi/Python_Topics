@@ -5,7 +5,7 @@ ____ isogram _______ is_isogram
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.1.0
 
-c_ TestIsogram(unittest.TestCase):
+c_ TestIsogram(unittest.TestCase
 
     ___ test_empty_string
         assertTrue(is_isogram(""))

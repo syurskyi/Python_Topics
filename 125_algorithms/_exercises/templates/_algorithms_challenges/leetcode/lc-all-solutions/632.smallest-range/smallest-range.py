@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ smallestRange  nums):
+c_ Solution(o..
+  ___ smallestRange  nums
     """
     :type nums: List[List[int]]
     :rtype: List[int]
@@ -20,7 +20,7 @@ c_ Solution(o..):
     left = tuples[0][0]
     right = tuples[-1][0]
     deq = d..([])
-    ___ i __ r..(length):
+    ___ i __ r..(length
       num, no = tuples[i]
       deq.a..(tuples[i])
       d[no] += 1

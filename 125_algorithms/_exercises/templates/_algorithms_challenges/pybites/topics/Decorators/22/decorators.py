@@ -1,8 +1,8 @@
 ____ functools _______ wraps
 
 
-___ make_html(tag):
-    ___ html_tag(orig_func):
+___ make_html(tag
+    ___ html_tag(orig_func
         @wraps(orig_func)
         ___ wrapper $ $$:
             r.. '<'+tag+'>' + orig_func $ $$ + '</'+tag+'>'
@@ -11,7 +11,7 @@ ___ make_html(tag):
 
 @make_html('p')
 @make_html("strong")
-___ get_text(text='I code with PyBites'):
+___ get_text(text='I code with PyBites'
     r.. text
 
 print(get_text())

@@ -35,7 +35,7 @@ The target node is a node in the tree.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -53,7 +53,7 @@ c_ Solution:
         ancestor_dist(root, K, target, ret)
         r.. ret
 
-    ___ dfs_down  node, d, ret):
+    ___ dfs_down  node, d, ret
         """
         same as dfs1
         """
@@ -65,7 +65,7 @@ c_ Solution:
             dfs_down(node.left, d - 1, ret)
             dfs_down(node.right, d - 1, ret)
 
-    ___ ancestor_dist  node, K, target, ret):
+    ___ ancestor_dist  node, K, target, ret
         __ n.. node:
             r.. f__('inf')
 
@@ -79,7 +79,7 @@ c_ Solution:
             d = m..(l, r) + 1
             __ d __ K:
                 ret.a..(node.val)
-            ____ l __ f__('inf'):
+            ____ l __ f__('inf'
                 dfs_down(node.left, K - d - 1, ret)
             ____:  # r == float('inf')
                 dfs_down(node.right, K - d - 1, ret)
@@ -100,7 +100,7 @@ c_ SolutionComplicated:
         dfs2(root, target, K, f__("inf"), hm, ret)
         r.. ret
 
-    ___ dfs1  node, K, ret):
+    ___ dfs1  node, K, ret
         """1st problem"""
         __ n.. node:
             r..
@@ -111,7 +111,7 @@ c_ SolutionComplicated:
             dfs1(node.left, K-1, ret)
             dfs1(node.right, K-1, ret)
 
-    ___ ancestor_dist  node, target, hm):
+    ___ ancestor_dist  node, target, hm
         __ n.. node:
             r.. f__('inf')
 
@@ -124,7 +124,7 @@ c_ SolutionComplicated:
 
         r.. hm[node.val]
 
-    ___ dfs2  node, target, K, dist, hm, ret):
+    ___ dfs2  node, target, K, dist, hm, ret
         """2nd problem"""
         __ n.. node:
             r..

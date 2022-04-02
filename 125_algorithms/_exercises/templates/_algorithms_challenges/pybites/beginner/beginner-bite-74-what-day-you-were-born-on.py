@@ -7,7 +7,7 @@ For this Bite you want to look at the datetime and calendar modules. Have fun!
 _______ ca__
 _______ d__
 
-___ weekday_of_birth_date(date):
+___ weekday_of_birth_date(date
     """Takes a date object and returns the corresponding weekday string"""
     r.. (ca__.d..[date.w..)
 

@@ -3,8 +3,8 @@ Created on Oct 23, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ knightProbability  N, K, r, c):
+c_ Solution(o..
+    ___ knightProbability  N, K, r, c
         """
         :type N: int
         :type K: int
@@ -13,13 +13,13 @@ c_ Solution(o..):
         :rtype: float
         """
         dp = [[1]*N ___ _ __ r..(N)]
-        ___ _ __ r..(K):
+        ___ _ __ r..(K
             dp1 = [[0]*N ___ _ __ r..(N)]
-            ___ i __ r..(N):
-                ___ j __ r..(N):
+            ___ i __ r..(N
+                ___ j __ r..(N
                     ___ row, col __ (i+2, j-1), (i+2, j+1),\
                         (i-2, j-1), (i-2, j+1), (i+1, j-2), (i+1, j+2),\
-                        (i-1, j+2), (i-1, j-2):
+                        (i-1, j+2), (i-1, j-2
                         __ 0 <= row < N a.. 0 <= col < N:
                             dp1[i][j] += dp[row][col]
             dp = dp1

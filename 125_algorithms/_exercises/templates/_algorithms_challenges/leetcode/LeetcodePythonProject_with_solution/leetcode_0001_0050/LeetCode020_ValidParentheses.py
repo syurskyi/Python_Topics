@@ -3,20 +3,20 @@ Created on Nov 6, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ isValid  s):
+c_ Solution(o..
+    ___ isValid  s
         """
         :type s: str
         :rtype: bool
         """
         stack    # list
         ___ c __ s:
-            __ c __ ['(', '{', '[']:
+            __ c __  '(', '{', ' ' :
                 stack.a..(c)
             ____:
                 __  (c __ ')' a.. stack a.. stack[-1]__'(') o.\
-                    (c __ ']' a.. stack a.. stack[-1]__'[') o.\
-                    (c __ '}' a.. stack a.. stack[-1]__'{'):
+                    (c __ ' ' a.. stack a.. stack[-1]__' ') o.\
+                    (c __ '}' a.. stack a.. stack[-1]__'{'
                     stack.pop()
                 ____:
                     r.. F..

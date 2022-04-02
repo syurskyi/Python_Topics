@@ -17,7 +17,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     ('', '', 0)
 
     """
-    __ n.. isi..(text,s..):
+    __ n.. isi..(text,s..
         r.. ValueError("Strings only")
 
     

@@ -3,14 +3,14 @@ Created on Feb 16, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ hammingWeight  n):
+c_ Solution(o..
+    ___ hammingWeight  n
         """
         :type n: int
         :rtype: int
         """
         count = 0
-        ___ i __ r..(32):
+        ___ i __ r..(32
             __ (n >> i)&1 __ 1:
                 count+=1
         r.. count

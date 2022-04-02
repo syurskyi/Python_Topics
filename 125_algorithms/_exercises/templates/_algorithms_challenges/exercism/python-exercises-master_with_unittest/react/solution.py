@@ -1,10 +1,10 @@
-c_ Cell(o..):
-    ___ - ):
+c_ Cell(o..
+    ___ -
         _watchers    # list
         _value = N..
         counter = 0
 
-    ___ add_watcher  cell):
+    ___ add_watcher  cell
         _watchers.a..(cell)
 
     $
@@ -12,21 +12,21 @@ c_ Cell(o..):
         r.. _value
 
     @value.setter
-    ___ value  new_value):
+    ___ value  new_value
         _value = new_value
         counter += 1
         ___ cell __ _watchers:
             cell.compute()
 
 
-c_ InputCell(Cell):
-    ___ - , initial_value):
+c_ InputCell(Cell
+    ___ - , initial_value
         super(InputCell, self).__init__()
         _value = initial_value
 
 
-c_ ComputeCell(Cell):
-    ___ - , inputs, compute_function):
+c_ ComputeCell(Cell
+    ___ - , inputs, compute_function
         super(ComputeCell, self).__init__()
         inputs = inputs
         func = compute_function
@@ -48,9 +48,9 @@ c_ ComputeCell(Cell):
             ___ cb __ callbacks:
                 cb(new_val)
 
-    ___ add_callback  callback):
+    ___ add_callback  callback
         callbacks.add(callback)
 
-    ___ remove_callback  callback):
+    ___ remove_callback  callback
         __ callback __ callbacks:
             callbacks.remove(callback)

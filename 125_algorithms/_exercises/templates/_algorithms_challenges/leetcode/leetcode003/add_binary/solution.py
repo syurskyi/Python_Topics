@@ -7,8 +7,8 @@ b = "1"
 Return "100".
 """
 
-c_ Solution(o..):
-    ___ addBinary  a, b):
+c_ Solution(o..
+    ___ addBinary  a, b
         """
         :type a: str
         :type b: str
@@ -16,14 +16,14 @@ c_ Solution(o..):
         """
         res    # list
         # a is longer than b
-        __ l..(a) < l..(b):
+        __ l..(a) < l..(b
             b, a = a, b
         n = l..(a)
         m = l..(b)
         c = 0  # Carry bit
         r = 0  # Result bit
         # i = n - 1 ... 0
-        ___ k __ r..(n):
+        ___ k __ r..(n
             i = n - 1 - k
             __ k < m:
                 j = m - 1 - k

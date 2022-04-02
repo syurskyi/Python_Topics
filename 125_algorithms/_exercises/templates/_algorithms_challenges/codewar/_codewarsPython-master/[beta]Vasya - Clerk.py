@@ -1,4 +1,4 @@
-___ tickets(people):
+___ tickets(people
     cashier = {100:0,50:0,25:0}
     ___ pay __ people:
         __ pay __ 25:

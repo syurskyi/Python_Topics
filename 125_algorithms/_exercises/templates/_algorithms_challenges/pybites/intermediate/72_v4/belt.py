@@ -3,7 +3,7 @@ belts = 'white yellow orange green blue brown black paneled red'.s..
 HONORS = {k: v ___ k, v __ z..(scores, belts)}
 
 
-___ get_belt(user_score):
+___ get_belt(user_score
     __ user_score < m..(HONORS.k..
         r.. N..
     belt_key = m..(filter(l.... x: user_score >= x, HONORS.keys()))

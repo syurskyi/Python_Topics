@@ -4,8 +4,8 @@ Created on Apr 20, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ deleteNode  root, key):
+c_ Solution(o..
+    ___ deleteNode  root, key
         __ n.. root: r.. N..
         parent, node = findNode(key, root, N..)
         __ n.. node: r.. root
@@ -19,7 +19,7 @@ c_ Solution(o..):
                 parent.right = newNode
             r.. root
     
-    ___ removeNode  node):
+    ___ removeNode  node
         __ node.right:
             newRoot = node.right
             left = node.left
@@ -39,7 +39,7 @@ c_ Solution(o..):
         ____:
             r.. N..
     
-    ___ findNode  key, root, parent):
+    ___ findNode  key, root, parent
         __ n.. root:
             r.. N.., N..
         __ root.val __ key:

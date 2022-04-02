@@ -6,7 +6,7 @@ Note: You can only move either down or right at any point in time.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ minPathSum  grid):
+    ___ minPathSum  grid
         """
         dp
 
@@ -24,8 +24,8 @@ c_ Solution:
         dp = [[1<<31 ___ _ __ x..(col_cnt)] ___ _ __ x..(row_cnt)]
 
         # dp[i][j] = min(dp[i-1][j], dp[i][j-1])+grid[i][j]
-        ___ i __ x..(row_cnt):
-            ___ j __ x..(col_cnt):
+        ___ i __ x..(row_cnt
+            ___ j __ x..(col_cnt
                 __ i__0 a.. j__0:
                     dp[i][j] = grid[i][j]
                 ____ i__0:

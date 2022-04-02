@@ -4,7 +4,7 @@ c_ Solution:
     @param: D: a set of n substrings
     @return: the minimum length
     """
-    ___ minLength  s, D):
+    ___ minLength  s, D
         __ n.. s:
             r.. 0
 
@@ -23,7 +23,7 @@ c_ Solution:
             ___ d __ D:
                 found = s.find(d)
                 w.... found != -1:
-                    _s = s[:found] + s[found + l..(d):]
+                    _s = s[:found] + s[found + l..(d]
                     found = s.find(d, found + 1)
 
                     __ _s __ visited:

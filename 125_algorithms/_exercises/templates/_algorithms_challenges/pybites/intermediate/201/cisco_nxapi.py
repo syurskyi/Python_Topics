@@ -15,7 +15,7 @@ ___ nxapi_show_version
     response = requests.post(url, json=payload, headers=http_headers,
                              auth=(switchuser, switchpassword), verify=F..).json()
 
-    version = response['result']['body']['kickstart_ver_str']
+    version = response 'result'  'body'  'kickstart_ver_str'
     r.. version
 
 

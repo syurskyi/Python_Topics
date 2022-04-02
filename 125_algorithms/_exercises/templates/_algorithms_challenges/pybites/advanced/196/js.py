@@ -1,4 +1,4 @@
-c_ JsObject(d..):
+c_ JsObject(d..
     """A Python dictionary that provides attribute-style access
        just like a JS object:
 
@@ -12,17 +12,17 @@ c_ JsObject(d..):
 
 
 
-    ___ - ,**kwargs):
+    ___ - ,**kwargs
         super().__init__(kwargs)
     
 
-    ___ __getattr__ key):
+    ___ __getattr__ key
         r.. self[key]
     
 
-    ___ __setattr__ name,value):
+    ___ __setattr__ name,value
         self[name] = value
 
 
-    ___ __delattr__ name):
+    ___ __delattr__ name
         del self[name]

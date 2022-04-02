@@ -12,7 +12,7 @@ more subtle.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ maxSubArray  A):
+    ___ maxSubArray  A
         """
         maximum sub-array problem.
         O(n) scanning

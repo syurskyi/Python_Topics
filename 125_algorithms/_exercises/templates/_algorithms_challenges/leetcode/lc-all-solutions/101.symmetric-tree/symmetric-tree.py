@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ isSymmetric  node):
+c_ Solution(o..
+  ___ isSymmetric  node
     """
     :type root: TreeNode
     :rtype: bool
     """
 
-    ___ helper(root, mirror):
+    ___ helper(root, mirror
       __ n.. root a.. n.. mirror:
         r.. T..
       __ root a.. mirror a.. root.val __ mirror.val:

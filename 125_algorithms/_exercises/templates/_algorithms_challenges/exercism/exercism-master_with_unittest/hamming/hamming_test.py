@@ -3,7 +3,7 @@ _______ unittest
 _______ hamming
 
 
-c_ HammingTest(unittest.TestCase):
+c_ HammingTest(unittest.TestCase
 
     ___ test_no_difference_between_identical_strands
         assertEqual(0, hamming.distance('A', 'A'))

@@ -2,7 +2,7 @@ c_ Solution:
     """
     BFS
     """
-    ___ findShortestWay  maze, ball, hole):
+    ___ findShortestWay  maze, ball, hole
         """
         :type maze: List[List[int]]
         :type ball: List[int]
@@ -31,14 +31,14 @@ c_ Solution:
         sx, sy = ball
         tx, ty = hole
         queue = [(sx, sy)]
-        paths = {(sx, sy): []}
-        distance = {(sx, sy): 0}
+        paths = {(sx, sy []}
+        distance = {(sx, sy 0}
 
         ___ x, y __ queue:
             ___ dx, dy, dn __ (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, 'r'),
-            ):
+
                 _x = x + dx
                 _y = y + dy
                 _step = 0
@@ -47,22 +47,22 @@ c_ Solution:
                     0 <= _x < m a.. 0 <= _y < n a..
                     maze[_x][_y] __ 0 a..
                     n.. (_x __ tx a.. _y __ ty)
-                ):
+
                     _x += dx
                     _y += dy
                     _step += 1
 
-                __ n.. (_x __ tx a.. _y __ ty):
+                __ n.. (_x __ tx a.. _y __ ty
                     _x -= dx
                     _y -= dy
                     _step -= 1
 
                 __ ((_x, _y) __ distance a..
-                    distance[x, y] + _step > distance[_x, _y]):
+                    distance[x, y] + _step > distance[_x, _y]
                     _____
 
                 __ ((_x, _y) __ paths a..
-                    paths[x, y] + [dn] > paths[_x, _y]):
+                    paths[x, y] + [dn] > paths[_x, _y]
                     _____
 
                 distance[_x, _y] = distance[x, y] + _step
@@ -79,7 +79,7 @@ c_ Solution2:
     """
     Dijkstra
     """
-    ___ findShortestWay  maze, ball, hole):
+    ___ findShortestWay  maze, ball, hole
         """
         :type maze: List[List[int]]
         :type ball: List[int]
@@ -108,8 +108,8 @@ c_ Solution2:
         sx, sy = ball
         tx, ty = hole
         heap = [(sx, sy)]
-        paths = {(sx, sy): []}
-        distance = {(sx, sy): 0}
+        paths = {(sx, sy []}
+        distance = {(sx, sy 0}
 
         w.... heap:
             x, y = heapq.heappop(heap)
@@ -117,7 +117,7 @@ c_ Solution2:
             ___ dx, dy, dn __ (
                 (-1, 0, 'u'), (1, 0, 'd'),
                 (0, -1, 'l'), (0, 1, 'r'),
-            ):
+
                 _x = x + dx
                 _y = y + dy
 
@@ -125,11 +125,11 @@ c_ Solution2:
                     0 <= _x < m a.. 0 <= _y < n a..
                     maze[_x][_y] __ 0 a..
                     n.. (_x __ tx a.. _y __ ty)
-                ):
+
                     _x += dx
                     _y += dy
 
-                __ n.. (_x __ tx a.. _y __ ty):
+                __ n.. (_x __ tx a.. _y __ ty
                     _x -= dx
                     _y -= dy
 

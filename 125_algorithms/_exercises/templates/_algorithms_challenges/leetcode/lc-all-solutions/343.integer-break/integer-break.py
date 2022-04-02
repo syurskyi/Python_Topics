@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ integerBreak  n):
+c_ Solution(o..
+  ___ integerBreak  n
     """
     :type n: int
     :rtype: int

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ myPow  x, n):
+c_ Solution(o..
+  ___ myPow  x, n
     """
     :type x: float
     :type n: int

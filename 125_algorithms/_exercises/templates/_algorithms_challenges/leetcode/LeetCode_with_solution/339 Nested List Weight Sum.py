@@ -10,7 +10,7 @@ You should not implement it, or speculate about its implementation
 """
 
 
-c_ NestedInteger(o..):
+c_ NestedInteger(o..
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
@@ -32,11 +32,11 @@ c_ NestedInteger(o..):
         """
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         s.. = 0
 
-    ___ depthSum  nestedList):
+    ___ depthSum  nestedList
         """
         NestedInteger is  a union type
         :type nestedList: List[NestedInteger]
@@ -47,7 +47,7 @@ c_ Solution(o..):
 
         r.. s..
 
-    ___ dfs  ni, depth):
+    ___ dfs  ni, depth
         __ ni.isInteger
             s.. += ni.getInteger() * depth
         ____:

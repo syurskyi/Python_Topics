@@ -1,12 +1,12 @@
 ____ c.. _______ Counter
-___ calculate_gc_content(sequence):
+___ calculate_gc_content(sequence
     """
     Receives a DNA sequence (A, G, C, or T)
     Returns the percentage of GC content (rounded to the last two digits)
     """
     
 
-    dna = ['A','G','C','T']
+    dna =  'A','G','C','T'
 
     counts = Counter()
 

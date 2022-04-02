@@ -3,8 +3,8 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ kEmptySlots  flowers, k):
+c_ Solution(o..
+    ___ kEmptySlots  flowers, k
         """
         :type flowers: List[int]
         :type k: int
@@ -13,11 +13,11 @@ c_ Solution(o..):
         __ n.. flowers: r.. -1
         n = l..(flowers)
         days = [F..]*n
-        ___ i __ r..(n):
+        ___ i __ r..(n
             days[flowers[i]-1] = i+1
         left, right = 0, k+1
         res = f__('inf')
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ right >= n: _____
             __ days[i] __ days[right] a.. i __ right:
                 res = m..(res, m..(days[left], days[right]))

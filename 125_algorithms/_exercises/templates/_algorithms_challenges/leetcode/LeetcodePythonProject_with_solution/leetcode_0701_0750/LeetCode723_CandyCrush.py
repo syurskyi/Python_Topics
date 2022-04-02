@@ -3,8 +3,8 @@ Created on Feb 20, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ candyCrush  board):
+c_ Solution(o..
+    ___ candyCrush  board
         """
         :type board: List[List[int]]
         :rtype: List[List[int]]
@@ -13,8 +13,8 @@ c_ Solution(o..):
         res = [[0]*n ___ _ __ r..(m)]
         w... T...
             changed = F..
-            ___ i __ r..(m):
-                ___ j __ r..(n):
+            ___ i __ r..(m
+                ___ j __ r..(n
                     changed = bfs(board, i, j) o. changed
             __ n.. changed:
                 res = board
@@ -23,20 +23,20 @@ c_ Solution(o..):
             board = res
         r.. res
     
-    ___ bfs  board, i, j):
+    ___ bfs  board, i, j
         __ board[i][j] __ 0: r.. F..
         m, n = l..(board), l..(board[0])
         val = abs(board[i][j])
         changed = F..
-        __ i+2 < m a.. val __ abs(board[i+1][j]) __ abs(board[i+2][j]):
-            ___ i0 __ r..(i+1, m):
+        __ i+2 < m a.. val __ abs(board[i+1][j]) __ abs(board[i+2][j]
+            ___ i0 __ r..(i+1, m
                 __ abs(board[i0][j]) __ val:
                     board[i0][j] = -val
                 ____:
                     _____
             changed = T..
-        __ j+2 < n a.. val __ abs(board[i][j+1]) __ abs(board[i][j+2]):
-            ___ j0 __ r..(j+1, n):
+        __ j+2 < n a.. val __ abs(board[i][j+1]) __ abs(board[i][j+2]
+            ___ j0 __ r..(j+1, n
                 __ abs(board[i][j0]) __ val:
                     board[i][j0] = -val
                 ____:
@@ -46,15 +46,15 @@ c_ Solution(o..):
             board[i][j] = -val
         r.. changed
     
-    ___ convert  res, board):
+    ___ convert  res, board
         m, n = l..(res), l..(res[0])
-        ___ j __ r..(n):
+        ___ j __ r..(n
             i0 = m-1
-            ___ i __ r..(m-1, -1, -1):
+            ___ i __ r..(m-1, -1, -1
                 __ board[i][j] > 0:
                     res[i0][j] = board[i][j]
                     i0 -= 1
-            ___ i __ r..(i0, -1, -1):
+            ___ i __ r..(i0, -1, -1
                 res[i][j] = 0
     
     ___ test

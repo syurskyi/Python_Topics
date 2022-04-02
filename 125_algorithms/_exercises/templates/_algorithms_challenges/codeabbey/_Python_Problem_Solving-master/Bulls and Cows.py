@@ -1,7 +1,7 @@
 #accept the number and the number of guesses
-n,c = l..(map(s.., input().s..()))
+n,c = l.. m..(s.., input().s..()))
 #accept the guesses
-guess = l..(map(s.., input().s..()))
+guess = l.. m..(s.., input().s..()))
 
 #look for the bulls and cows
 ___ i __ guess:

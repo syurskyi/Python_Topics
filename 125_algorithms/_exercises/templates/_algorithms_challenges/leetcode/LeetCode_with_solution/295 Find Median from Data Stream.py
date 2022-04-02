@@ -25,8 +25,8 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ DualHeap(o..):
-    ___ - ):
+c_ DualHeap(o..
+    ___ -
         """
         Dual Heap is great in the case where there is no removal.
 
@@ -37,7 +37,7 @@ c_ DualHeap(o..):
         min_h    # list
         max_h    # list
 
-    ___ insert  num):
+    ___ insert  num
         __ n.. min_h o. num > min_h[0]:
             heapq.heappush(min_h, num)
         ____:
@@ -69,14 +69,14 @@ c_ DualHeap(o..):
             r.. (-max_h[0] + min_h[0]) / 2.0
 
 
-c_ MedianFinder(o..):
-    ___ - ):
+c_ MedianFinder(o..
+    ___ -
         """
         Initialize your data structure here.
         """
         dh = DualHeap()
 
-    ___ addNum  num):
+    ___ addNum  num
         """
         Adds a num into the data structure.
         :type num: int

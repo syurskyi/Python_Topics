@@ -10,8 +10,8 @@ Your algorithm should run in linear runtime complexity. Could you implement it
 using only constant extra space complexity?
 """
 
-c_ Solution(o..):
-    ___ missingNumber  nums):
+c_ Solution(o..
+    ___ missingNumber  nums
         """
         :type nums: List[int]
         :rtype: int

@@ -1,7 +1,7 @@
 c_ Solution:
     # @param A, a list of integer
     # @return an integer
-    ___ singleNumber  A):
+    ___ singleNumber  A
         # Assume 32-bit integer
         num_of_bits = 32  # Change this to 64 on 64-bit platform
         res_bit = 0
@@ -12,7 +12,7 @@ c_ Solution:
             res_bit = (res_bit + bit) % 3
         positive = T.. __ res_bit __ 0 ____ F..
 
-        ___ i __ r..(num_of_bits - 1):
+        ___ i __ r..(num_of_bits - 1
             res_bit = 0
             # For each bit of each number, calculate each bit
             # of the single number

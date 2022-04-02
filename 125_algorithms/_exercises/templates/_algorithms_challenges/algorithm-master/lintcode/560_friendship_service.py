@@ -1,19 +1,19 @@
 c_ FriendshipService:
-    ___ - ):
+    ___ - 
         followers    # dict
         followings    # dict
 
-    ___ getFollowers  user_id):
+    ___ getFollowers  user_id
         r.. get_followers(user_id)
 
-    ___ getFollowings  user_id):
+    ___ getFollowings  user_id
         r.. get_followings(user_id)
 
     """
     @param: user_id: An integer
     @return: all followers and sort by user_id
     """
-    ___ get_followers  user_id):
+    ___ get_followers  user_id
         __ user_id __ followers:
             r.. s..(followers[user_id])
 
@@ -23,7 +23,7 @@ c_ FriendshipService:
     @param: user_id: An integer
     @return: all followings and sort by user_id
     """
-    ___ get_followings  user_id):
+    ___ get_followings  user_id
         __ user_id __ followings:
             r.. s..(followings[user_id])
 
@@ -34,7 +34,7 @@ c_ FriendshipService:
     @param: from_id: An integer
     @return: nothing
     """
-    ___ follow  to_id, from_id):
+    ___ follow  to_id, from_id
         __ from_id n.. __ followings:
             followings[from_id] = s..()
         followings[from_id].add(to_id)
@@ -48,7 +48,7 @@ c_ FriendshipService:
     @param: from_id: An integer
     @return: nothing
     """
-    ___ unfollow  to_id, from_id):
+    ___ unfollow  to_id, from_id
         __ from_id __ followings:
             followings[from_id].discard(to_id)
 

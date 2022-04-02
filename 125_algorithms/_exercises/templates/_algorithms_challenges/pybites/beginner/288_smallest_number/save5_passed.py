@@ -3,7 +3,7 @@ _______ i..
 _______ pandas __ pd
 
 
-___ minimum_number(d..):
+___ minimum_number(d..
     ___
         d.. = pd.Series(d..).drop_duplicates().tolist()
         l..    # list

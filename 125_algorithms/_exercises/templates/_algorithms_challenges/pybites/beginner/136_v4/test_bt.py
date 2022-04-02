@@ -4,28 +4,28 @@ ____ bt _______ check_bt, Bloodtype
 
 ___ test_universal_donor
     donor = Bloodtype.ZERO_NEG
-    ___ i __ r..(8):
+    ___ i __ r..(8
         recipient = Bloodtype(i)
         ... check_bt(donor, recipient)
 
 
 ___ test_universal_recipient
     recipient = Bloodtype.AB_POS
-    ___ i __ r..(8):
+    ___ i __ r..(8
         donor = Bloodtype(i)
         ... check_bt(donor, recipient)
 
 
 ___ test_AB_POS_can_donate_to_own_group_only_numeric_input
     donor = 7
-    ___ i __ r..(7):
+    ___ i __ r..(7
         recipient = i
         ... check_bt(donor, recipient) __ F..
 
 
 ___ test_ZERO_NEG_can_recieve_from_own_group_only_numeric_input
     recipient = 0
-    ___ i __ r..(1, 8):
+    ___ i __ r..(1, 8
         donor = i
         ... check_bt(donor, recipient) __ F..
 
@@ -58,16 +58,16 @@ ___ test_red_blood_cell_incompatibility_text_input
 
 
 ___ test_invalid_value_text_input
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         check_bt("X-", "Y+")
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         check_bt("0", "A+")
 
 
 ___ test_invalid_value_numeric_input
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         check_bt(8, 1)
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         check_bt(3, -1)
 
 

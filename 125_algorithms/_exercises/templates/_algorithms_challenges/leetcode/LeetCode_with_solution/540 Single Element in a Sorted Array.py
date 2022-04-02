@@ -31,7 +31,7 @@ c_ Solution:
                 mid % 2 __ 0 a.. mid + 1 < hi a.. nums[mid] __ nums[mid + 1]
             ) o. (
                 mid % 2 __ 1 a.. mid - 1 >= lo a.. nums[mid] __ nums[mid - 1]
-            ):
+
                 # to make the target is on the right
                 # when mid even, mid and mid + 1 form a pair; there are odd number of elements on the right
                 # when mid odd, mid and mid - 1 form a pair; there are odd number of elements on the right

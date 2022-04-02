@@ -11,8 +11,8 @@ sell the stock before you buy again).
 """
 
 
-c_ Solution(o..):
-    ___ maxProfit  prices):
+c_ Solution(o..
+    ___ maxProfit  prices
         """
         :type prices: List[int]
         :rtype: int
@@ -26,15 +26,15 @@ c_ Solution(o..):
         min_price1 = prices[0]
         max_profit2 = 0
         max_price2 = prices[-1]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             max_profit1 = m..(max_profit1, prices[i] - min_price1)
             m1[i] = max_profit1
             min_price1 = m..(min_price1, prices[i])
-        ___ i __ r..(n):
+        ___ i __ r..(n
             max_profit2 = m..(max_profit2, max_price2 - prices[n - 1 - i])
             m2[n - 1 - i] = max_profit2
             max_price2 = m..(max_price2, prices[n - 1 - i])
         max_profit = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             max_profit = m..(m1[i] + m2[i], max_profit)
         r.. max_profit

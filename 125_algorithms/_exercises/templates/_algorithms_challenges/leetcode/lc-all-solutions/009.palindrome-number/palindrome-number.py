@@ -1,6 +1,6 @@
-c_ Solution(o..):
+c_ Solution(o..
   # normal way
-  ___ _isPalindrome  x):
+  ___ _isPalindrome  x
     """
     :type x: int
     :rtype: bool
@@ -13,12 +13,12 @@ c_ Solution(o..):
     r.. z __ y
 
   # faster way
-  ___ isPalindrome  x):
+  ___ isPalindrome  x
     """
     :type x: int
     :rtype: bool
     """
-    __ x < 0 o. (x != 0 a.. x % 10 __ 0):
+    __ x < 0 o. (x != 0 a.. x % 10 __ 0
       r.. F..
     half = 0
     w.... x > half:

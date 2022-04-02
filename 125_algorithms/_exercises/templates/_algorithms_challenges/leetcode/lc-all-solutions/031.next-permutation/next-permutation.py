@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ nextPermutation  nums):
+c_ Solution(o..
+  ___ nextPermutation  nums
     """
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
@@ -30,7 +30,7 @@ c_ Solution(o..):
     nums[pos], nums[minPos] = nums[minPos], nums[pos]
     reverse(nums, pos + 1, l..(nums) - 1)
 
-  ___ reverse  nums, start, end):
+  ___ reverse  nums, start, end
     w.... start < end:
       nums[start], nums[end] = nums[end], nums[start]
       start += 1

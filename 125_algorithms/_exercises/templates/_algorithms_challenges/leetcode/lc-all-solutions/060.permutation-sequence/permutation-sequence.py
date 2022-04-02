@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ getPermutation  n, k):
+c_ Solution(o..
+  ___ getPermutation  n, k
     """
     :type n: int
     :type k: int
@@ -9,9 +9,9 @@ c_ Solution(o..):
     fact = [math.factorial(n - i - 1) ___ i __ r..(n)]
     ans = ""
     k -= 1
-    ___ i __ r..(n):
+    ___ i __ r..(n
       t = k / fact[i]
-      ___ j __ r..(n):
+      ___ j __ r..(n
         __ n.. visited[j]:
           __ t __ 0:
             _____

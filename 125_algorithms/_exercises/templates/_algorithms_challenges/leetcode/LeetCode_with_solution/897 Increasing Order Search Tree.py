@@ -43,14 +43,14 @@ Each node will have a unique integer value from 0 to 1000.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         prev = N..
         root = N..
 
@@ -62,7 +62,7 @@ c_ Solution:
         dfs(root)
         r.. root
 
-    ___ dfs  node):
+    ___ dfs  node
         __ n.. node:
             r..
 

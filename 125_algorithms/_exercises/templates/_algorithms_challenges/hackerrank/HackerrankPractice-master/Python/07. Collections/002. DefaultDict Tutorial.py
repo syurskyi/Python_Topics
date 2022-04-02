@@ -7,7 +7,7 @@ ____ c.. _______ defaultdict
 
 n, m = map(i.., input().s..())
 d = defaultdict(l..)
-___ i __ r..(1, n + 1):
+___ i __ r..(1, n + 1
     d[input()].a..(s..(i))
-___ i __ r..(m):
+___ i __ r..(m
     print(' '.j..(d[input()]) o. -1)

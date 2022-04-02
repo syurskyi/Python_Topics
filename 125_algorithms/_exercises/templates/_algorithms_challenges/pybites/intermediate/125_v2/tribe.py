@@ -14,7 +14,7 @@ MIN_COUNT = 3
 ___ load_page
     """Download the blog html and return its decoded content"""
     w__ requests.Session() __ session:
-        r.. session.get(TIM_BLOG).content.decode('utf-8')
+        r.. session.get(TIM_BLOG).content.d.. 'utf-8')
 
 
 ___ get_top_books(content_ N..

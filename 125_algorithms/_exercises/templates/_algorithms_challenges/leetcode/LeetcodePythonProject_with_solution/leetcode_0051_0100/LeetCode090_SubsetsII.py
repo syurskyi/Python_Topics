@@ -3,8 +3,8 @@ Created on May 31, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ subsetsWithDup  nums):
+c_ Solution(o..
+    ___ subsetsWithDup  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -14,7 +14,7 @@ c_ Solution(o..):
         helper(nums, 0, [], res)
         r.. res
     
-    ___ helper  nums, ind, curr, res):
+    ___ helper  nums, ind, curr, res
         res.a..(l..(curr))
         ___ i __ r..(ind, l..(nums)):
             __ i > ind a.. nums[i] __ nums[i-1]:

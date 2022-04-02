@@ -14,12 +14,12 @@ ____ workouts _______ get_workout_motd
     ('Saturday', 'Chill out!'),
     ('Sunday', 'Chill out!'),
 ])
-___ test_get_workout_valid_case_insensitive_dict_lookups(arg, expected):
+___ test_get_workout_valid_case_insensitive_dict_lookups(arg, expected
     mixed_case = arg[:3].l.. + arg[3:].u..
-    ___ day __ (arg, arg.u.., arg.l.., mixed_case):
+    ___ day __ (arg, arg.u.., arg.l.., mixed_case
         ... get_workout_motd(day) __ expected
 
 
 ___ test_get_workout_invalid_dict_lookups_raise_exception
-    w__ p__.r..(KeyError):
+    w__ p__.r..(KeyError
         get_workout_motd('not-a-day')

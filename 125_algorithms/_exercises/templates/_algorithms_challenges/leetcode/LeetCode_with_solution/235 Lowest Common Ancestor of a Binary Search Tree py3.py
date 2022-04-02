@@ -33,7 +33,7 @@ p and q are different and both values will exist in the BST.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -43,7 +43,7 @@ c_ Solution:
     ___ lowestCommonAncestor  root: TreeNode, p: TreeNode, q: TreeNode) __ TreeNode:
         r.. walk(root, p, q)
 
-    ___ walk  node, p, q):
+    ___ walk  node, p, q
         __ p.val > node.val a.. q.val > node.val:
             r.. walk(node.right, p, q)
         __ p.val < node.val a.. q.val < node.val:

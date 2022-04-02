@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findRestaurant  list1, list2):
+c_ Solution(o..
+  ___ findRestaurant  list1, list2
     """
     :type list1: List[str]
     :type list2: List[str]
@@ -8,9 +8,9 @@ c_ Solution(o..):
     minSum = f__("inf")
     ans    # list
     d    # dict
-    ___ i, name __ e..(list2):
+    ___ i, name __ e..(list2
       d[name] = i
-    ___ i, name __ e..(list1):
+    ___ i, name __ e..(list1
       idxSum = i + d.get(name, f__("inf"))
       __ idxSum __ minSum:
         ans.a..(name)

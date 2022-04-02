@@ -9,6 +9,6 @@ ____ commits _______ get_min_max_amount_of_commits
     (2018, ('2018-02', '2018-10')),
     (2019, ('2019-01', '2019-03')),
 ])
-___ test_get_min_max_amount_of_commits(year, expected):
+___ test_get_min_max_amount_of_commits(year, expected
     actual = get_min_max_amount_of_commits y.._year)
     ... actual __ expected

@@ -24,8 +24,8 @@ class NestedInteger(object):
 """
 
 
-c_ NestedIterator(o..):
-    ___ - , nestedList):
+c_ NestedIterator(o..
+    ___ - , nestedList
         stack = [[nestedList, 0]]
 
     # @return {int} the next element in the iteration
@@ -45,7 +45,7 @@ c_ NestedIterator(o..):
         w.... stack:
             lst, i = stack[-1]
 
-            __ i >= l..(lst):
+            __ i >= l..(lst
                 stack.pop()
             ____ lst[i].isInteger
                 r.. T..

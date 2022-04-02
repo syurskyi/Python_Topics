@@ -3,7 +3,7 @@ _______ p__
 ____ record _______ RecordScore
 
 
-@p__.f..()
+?p__.f..()
 ___ record
     """Make a RecordScore object with a few scores"""
     record = RecordScore()
@@ -14,14 +14,14 @@ ___ record
     r.. record
 
 
-___ test_record_unbeaten(record):
+___ test_record_unbeaten(record
     ... record(9) __ 11
     record(10)
     record(2)
     ... record(4) __ 11
 
 
-___ test_record_got_beaten(record):
+___ test_record_got_beaten(record
     ... record(4) __ 11
     record(3)
     record(12)  # new record

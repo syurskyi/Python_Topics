@@ -4,8 +4,8 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ evalRPN  tokens):
+c_ Solution(o..
+    ___ evalRPN  tokens
         """
         :type tokens: List[str]
         :rtype: int

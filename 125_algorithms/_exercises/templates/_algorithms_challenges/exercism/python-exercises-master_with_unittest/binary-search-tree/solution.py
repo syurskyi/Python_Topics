@@ -1,5 +1,5 @@
-c_ TreeNode(o..):
-    ___ - , data, left, right):
+c_ TreeNode(o..
+    ___ - , data, left, right
         data = data
         left = left
         right = right
@@ -9,13 +9,13 @@ c_ TreeNode(o..):
         r.. fmt.f..(data, left, right)
 
 
-c_ BinarySearchTree(o..):
-    ___ - , tree_data):
+c_ BinarySearchTree(o..
+    ___ - , tree_data
         root = N..
         ___ data __ tree_data:
             add(data)
 
-    ___ add  data):
+    ___ add  data
         __ root __ N..
             root = TreeNode(data, N.., N..)
             r..
@@ -36,7 +36,7 @@ c_ BinarySearchTree(o..):
                     cur_node.right = TreeNode(data, N.., N..)
                     inserted = T..
 
-    ___ _inorder_traverse  node, elements):
+    ___ _inorder_traverse  node, elements
         __ node __ n.. N..
             _inorder_traverse(node.left, elements)
             elements.a..(node.data)

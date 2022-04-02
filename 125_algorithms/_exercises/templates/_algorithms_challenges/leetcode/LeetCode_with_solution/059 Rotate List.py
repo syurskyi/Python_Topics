@@ -8,7 +8,7 @@ return 4->5->1->2->3->NULL.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
@@ -16,7 +16,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ rotateRight  head, k):
+    ___ rotateRight  head, k
         """
         Linked list
         Assume k is legal
@@ -60,6 +60,6 @@ c_ Solution:
 __ _____ __ ____
     length = 1
     lst = [ListNode(i+1) ___ i __ x..(length)]
-    ___ i __ r..(length-1):
+    ___ i __ r..(length-1
         lst[i].next = lst[i+1]
     Solution().rotateRight(lst[0], 1)

@@ -3,15 +3,15 @@ Created on May 6, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ uniqueLetterString  S):
+c_ Solution(o..
+    ___ uniqueLetterString  S
         """
         :type S: str
         :rtype: int
         """
         s = S
         hashmap    # dict
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c __ hashmap:
                 l = hashmap[c]
             ____:

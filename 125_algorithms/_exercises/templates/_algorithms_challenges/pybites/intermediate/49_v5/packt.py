@@ -17,7 +17,7 @@ ___ get_book
 
     title = title_base.find('h2').text.s..
     description = title_base.parent.find_all('div')[2].text.s..
-    image = image_base.find('img').attrs['src']
-    link = image_base.find('a').attrs['href']
+    image = image_base.find('img').attrs 'src'
+    link = image_base.find('a').attrs 'href'
 
     r.. Book(title, description, image, link)

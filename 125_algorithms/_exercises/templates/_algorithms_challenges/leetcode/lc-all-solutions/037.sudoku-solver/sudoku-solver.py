@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ solveSudoku  board):
+c_ Solution(o..
+  ___ solveSudoku  board
     """
     :type board: List[List[str]]
     :rtype: void Do not return anything, modify board in-place instead.
@@ -8,10 +8,10 @@ c_ Solution(o..):
     cacheRow = [[0] * l..(board) ___ _ __ r..(l..(board))]
     cacheCol = [[0] * l..(board) ___ _ __ r..(l..(board))]
 
-    ___ helper(board, i, j, cacheRow, cacheCol, cacheBox):
+    ___ helper(board, i, j, cacheRow, cacheCol, cacheBox
       __ board[i][j] __ ".":
-        ___ k __ r..(1, 10):
-          __ i < 0 o. i >= l..(board) o. j < 0 o. j >= l..(board):
+        ___ k __ r..(1, 10
+          __ i < 0 o. i >= l..(board) o. j < 0 o. j >= l..(board
             _____
           ib = (i / 3) * 3 + j / 3
           __ cacheRow[i][k - 1] __ 1 o. cacheCol[j][k - 1] __ 1 o. cacheBox[ib][k - 1] __ 1:
@@ -21,22 +21,22 @@ c_ Solution(o..):
           board[i][j] = s..(k)
           __ i __ j __ l..(board) - 1:
             r.. T..
-          __ i + 1 < l..(board):
-            __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox):
+          __ i + 1 < l..(board
+            __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox
               r.. T..
-          ____ j + 1 < l..(board):
-            __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox):
+          ____ j + 1 < l..(board
+            __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox
               r.. T..
           board[i][j] = "."
           cacheRow[i][k - 1] = cacheCol[j][k - 1] = cacheBox[ib][k - 1] = 0
       ____:
         __ i __ j __ l..(board) - 1:
           r.. T..
-        __ i + 1 < l..(board):
-          __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox):
+        __ i + 1 < l..(board
+          __ helper(board, i + 1, j, cacheRow, cacheCol, cacheBox
             r.. T..
-        ____ j + 1 < l..(board):
-          __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox):
+        ____ j + 1 < l..(board
+          __ helper(board, 0, j + 1, cacheRow, cacheCol, cacheBox
             r.. T..
       r.. F..
 

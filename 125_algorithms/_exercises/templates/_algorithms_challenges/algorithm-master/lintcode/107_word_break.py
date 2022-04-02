@@ -2,7 +2,7 @@ c_ Solution:
     """
     `dp[i]` means `s[:i]` is segmented by words
     """
-    ___ wordBreak  s, words):
+    ___ wordBreak  s, words
         """
         :type s: str
         :type words: List[str]
@@ -20,8 +20,8 @@ c_ Solution:
         dp = [F..] * (n + 1)
         dp[0] = T..
 
-        ___ i __ r..(1, n + 1):
-            ___ j __ r..(1, m..(i, max_size) + 1):
+        ___ i __ r..(1, n + 1
+            ___ j __ r..(1, m..(i, max_size) + 1
                 __ dp[i - j] a.. s[i - j:i] __ word_set:
                     dp[i] = T..
                     _____

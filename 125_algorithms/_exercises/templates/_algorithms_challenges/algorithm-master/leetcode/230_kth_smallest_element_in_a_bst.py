@@ -9,7 +9,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ kthSmallest  root, k):
+    ___ kthSmallest  root, k
         """
         :type root: TreeNode
         :type k: int

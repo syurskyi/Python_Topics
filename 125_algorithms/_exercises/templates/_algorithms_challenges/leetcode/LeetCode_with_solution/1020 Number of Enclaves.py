@@ -40,19 +40,19 @@ c_ Solution:
         """
         m, n = l..(A), l..(A[0])
         visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
-        ___ i __ r..(m):
-            ___ j __ r..(n):
-                __ n.. visited[i][j] a.. A[i][j] __ 1 a.. (i __ 0 o. j __ 0 o. i __ m - 1 o. j __ n - 1):
+        ___ i __ r..(m
+            ___ j __ r..(n
+                __ n.. visited[i][j] a.. A[i][j] __ 1 a.. (i __ 0 o. j __ 0 o. i __ m - 1 o. j __ n - 1
                     dfs(A, i, j, visited)
 
         ret = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ A[i][j] __ 1 a.. n.. visited[i][j]:
                     ret += 1
         r.. ret
 
-    ___ dfs  A, i, j, visited):
+    ___ dfs  A, i, j, visited
         m, n = l..(A), l..(A[0])
         visited[i][j] = T..
         ___ di, dj __ dirs:
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 c_ SolutionError:
-    ___ - ):
+    ___ -
         ret = 0
 
     ___ numEnclaves  A: List[List[i..]]) __ i..:
@@ -72,25 +72,25 @@ c_ SolutionError:
         """
         m, n = l..(A), l..(A[0])
         visited = [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]  # 0 not off, 1 off
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ n.. visited[i][j] a.. A[i][j] __ 1:
                     dfs(A, i, j, visited)
         r.. ret
 
-    ___ dfs  A, i, j, visited):
+    ___ dfs  A, i, j, visited
         m, n = l..(A), l..(A[0])
         visited[i][j] = 0
         ___ di, dj __ dirs:
             I = i + di
             J = j + dj
-            __ n.. (0 <= I < m a.. 0 <= J < n):
+            __ n.. (0 <= I < m a.. 0 <= J < n
                 visited[i][j] = 1
                 r.. T..
             __ visited[I][J] __ 1:
                 visited[i][j] = 1
                 r.. T..
-            __ visited[I][J] __ N.. a.. A[I][J] __ 1 a.. dfs(A, I, J, visited):
+            __ visited[I][J] __ N.. a.. A[I][J] __ 1 a.. dfs(A, I, J, visited
                 visited[i][j] = 1
                 r.. T..
 

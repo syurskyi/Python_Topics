@@ -1,4 +1,4 @@
-___ sum_of_evens(lst):
+___ sum_of_evens(lst
     output = 0
     ___ i __ lst:
         ___ x __ i:

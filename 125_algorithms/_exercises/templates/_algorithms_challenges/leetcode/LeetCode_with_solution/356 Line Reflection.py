@@ -6,11 +6,11 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         x = N..
 
-    ___ isReflected  points):
+    ___ isReflected  points
         """
         :type points: List[List[int]]
         :rtype: bool
@@ -20,12 +20,12 @@ c_ Solution(o..):
             d[y].a..(x)
 
         ___ v __ d.v..
-            __ n.. check(v):
+            __ n.. check(v
                 r.. F..
 
         r.. T..
 
-    ___ check  lst):
+    ___ check  lst
         lst.s..()
         i = 0
         j = l..(lst) - 1

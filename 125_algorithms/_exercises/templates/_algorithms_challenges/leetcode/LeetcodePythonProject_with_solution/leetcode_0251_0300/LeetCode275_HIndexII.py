@@ -4,8 +4,8 @@ Created on Mar 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ hIndex  citations):
+c_ Solution(o..
+    ___ hIndex  citations
         """
         :type citations: List[int]
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
                 count[c] += 1
         res = 0
         sumVal = 0
-        ___ i __ r..(n, -1, -1):
+        ___ i __ r..(n, -1, -1
             sumVal += count[i]
             __ sumVal >= i:
                 r.. i

@@ -35,7 +35,7 @@ c_ Solution:
         """
         stk_left    # list
         stk_star    # list
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c __ "(":
                 stk_left.a..(i)
             ____ c __ "*":

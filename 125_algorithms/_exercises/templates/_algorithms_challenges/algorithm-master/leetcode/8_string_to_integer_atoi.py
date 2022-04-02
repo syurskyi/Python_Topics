@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ myAtoi  s):
+    ___ myAtoi  s
         """
         :type s: str
         :rtype: int
@@ -18,7 +18,7 @@ c_ Solution:
         w.... i < N a.. s[i] __ ' ':
             i += 1
 
-        __ i < N a.. s[i] __ ('+', '-'):
+        __ i < N a.. s[i] __ ('+', '-'
             sign = -1 __ s[i] __ '-' ____ 1
             i += 1
 

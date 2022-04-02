@@ -1,30 +1,30 @@
-c_ CustomSet(o..):
-    ___ - , elements=[]):
+c_ CustomSet(o..
+    ___ - , elements=[]
         p..
 
     ___ isempty
         p..
 
-    ___ __contains__  element):
+    ___ __contains__  element
         p..
 
-    ___ issubset  other):
+    ___ issubset  other
         p..
 
-    ___ isdisjoint  other):
+    ___ isdisjoint  other
         p..
 
-    ___ __eq__  other):
+    ___ __eq__  other
         p..
 
-    ___ add  element):
+    ___ add  element
         p..
 
-    ___ intersection  other):
+    ___ intersection  other
         p..
 
-    ___ difference  other):
+    ___ difference  other
         p..
 
-    ___ union  other):
+    ___ union  other
         p..

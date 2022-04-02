@@ -14,7 +14,7 @@ ___ _create_license
 
 
 ___ test_valid_license
-    ___ _ __ r..(10):
+    ___ _ __ r..(10
         key = _create_license()
         ... validate_license(key)
 

@@ -1,4 +1,4 @@
-___ transpose(data):
+___ transpose(data
     """Transpose a data structure
     1. dict
     data = {'2017-8': 19, '2017-9': 13}
@@ -13,7 +13,7 @@ ___ transpose(data):
     In: transpose(data)
     Out: [('Bob', 'Julian'), (60, 221), (60, 34), (56, 78)]
     """
-    __ isi..(data, d..):
+    __ isi..(data, d..
         r.. z..(*data.i..
     ____:
         r.. z..(*data)

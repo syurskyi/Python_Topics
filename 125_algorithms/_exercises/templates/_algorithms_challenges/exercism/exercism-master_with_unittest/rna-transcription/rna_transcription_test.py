@@ -3,7 +3,7 @@ _______ unittest
 ____ dna _______ to_rna
 
 
-c_ DNATests(unittest.TestCase):
+c_ DNATests(unittest.TestCase
 
     ___ test_transcribes_guanine_to_cytosine
         assertEqual('C', to_rna('G'))

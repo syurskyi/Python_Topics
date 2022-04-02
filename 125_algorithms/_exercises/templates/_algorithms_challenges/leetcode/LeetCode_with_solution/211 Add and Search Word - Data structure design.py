@@ -22,7 +22,7 @@ __author__ = 'Daniel'
 
 
 c_ TrieNode:
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
         """
@@ -32,13 +32,13 @@ c_ TrieNode:
 
 
 c_ WordDictionary:
-    ___ - ):
+    ___ -
         """
         initialize your data structure here.
         """
         root = TrieNode()
 
-    ___ addWord  word):
+    ___ addWord  word
         """
         Adds a word into the data structure.
         :type word: str
@@ -52,7 +52,7 @@ c_ WordDictionary:
 
         cur.ended = T..
 
-    ___ s..  word):
+    ___ s..  word
         """
         Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one
         letter.
@@ -61,7 +61,7 @@ c_ WordDictionary:
         """
         r.. __search(word, root)
 
-    ___ __search  word, cur):
+    ___ __search  word, cur
         __ n.. word:
             r.. cur.ended
 
@@ -73,7 +73,7 @@ c_ WordDictionary:
                 r.. F..
         ____:
             ___ child __ cur.children.v..
-                __ __search(word[1:], child):
+                __ __search(word[1:], child
                     r.. T..
 
         r.. F..

@@ -10,16 +10,16 @@ Created on Mar 6, 2019
 
 _______ c.., i..
 
-c_ Master(o..):
-    ___ guess  word):
+c_ Master(o..
+    ___ guess  word
         """
         :type word: str
         :rtype int
         """
         p..
 
-c_ Solution(o..):
-    ___ findSecretWord  wordlist, master):
+c_ Solution(o..
+    ___ findSecretWord  wordlist, master
         """
         :type wordlist: List[Str]
         :type master: Master
@@ -32,9 +32,9 @@ c_ Solution(o..):
             n = master.guess(guess)
             wordlist = [w ___ w __ wordlist __ m..(w, guess) __ n]
     
-    ___ m..  w1, w2):
+    ___ m..  w1, w2
         matches = 0
-        ___ c1, c2 __ z..(w1, w2):
+        ___ c1, c2 __ z..(w1, w2
             __ c1 __ c2: matches += 1
         r.. matches
     

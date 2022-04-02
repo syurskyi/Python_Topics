@@ -7,19 +7,19 @@ ____ circular_buffer _______ (
 )
 
 
-c_ CircularBufferTest(unittest.TestCase):
+c_ CircularBufferTest(unittest.TestCase
 
     ___ test_read_empty_buffer
         buf = CircularBuffer(1)
-        w__ assertRaises(BufferEmptyException):
-            buf.read()
+        w__ assertRaises(BufferEmptyException
+            buf.r..
 
     ___ test_write_and_read_back_one_item
         buf = CircularBuffer(1)
         buf.write('1')
         assertEqual('1', buf.read())
-        w__ assertRaises(BufferEmptyException):
-            buf.read()
+        w__ assertRaises(BufferEmptyException
+            buf.r..
 
     ___ test_write_and_read_back_multiple_items
         buf = CircularBuffer(2)
@@ -27,16 +27,16 @@ c_ CircularBufferTest(unittest.TestCase):
         buf.write('2')
         assertEqual('1', buf.read())
         assertEqual('2', buf.read())
-        w__ assertRaises(BufferEmptyException):
-            buf.read()
+        w__ assertRaises(BufferEmptyException
+            buf.r..
 
     ___ test_clearing_buffer
         buf = CircularBuffer(3)
         ___ c __ '123':
             buf.write(c)
         buf.clear()
-        w__ assertRaises(BufferEmptyException):
-            buf.read()
+        w__ assertRaises(BufferEmptyException
+            buf.r..
         buf.write('1')
         buf.write('2')
         assertEqual('1', buf.read())
@@ -54,16 +54,16 @@ c_ CircularBufferTest(unittest.TestCase):
         buf = CircularBuffer(3)
         buf.write('1')
         buf.write('2')
-        buf.read()
+        buf.r..
         buf.write('3')
-        buf.read()
+        buf.r..
         assertEqual('3', buf.read())
 
     ___ test_write_full_buffer
         buf = CircularBuffer(2)
         buf.write('1')
         buf.write('2')
-        w__ assertRaises(BufferFullException):
+        w__ assertRaises(BufferFullException
             buf.write('A')
 
     ___ test_overwrite_full_buffer
@@ -73,8 +73,8 @@ c_ CircularBufferTest(unittest.TestCase):
         buf.overwrite('A')
         assertEqual('2', buf.read())
         assertEqual('A', buf.read())
-        w__ assertRaises(BufferEmptyException):
-            buf.read()
+        w__ assertRaises(BufferEmptyException
+            buf.r..
 
     ___ test_overwrite_non_full_buffer
         buf = CircularBuffer(2)
@@ -82,17 +82,17 @@ c_ CircularBufferTest(unittest.TestCase):
         buf.overwrite('2')
         assertEqual('1', buf.read())
         assertEqual('2', buf.read())
-        w__ assertRaises(BufferEmptyException):
-            buf.read()
+        w__ assertRaises(BufferEmptyException
+            buf.r..
 
     ___ test_alternate_read_and_overwrite
         buf = CircularBuffer(5)
         ___ c __ '123':
             buf.write(c)
-        buf.read()
-        buf.read()
+        buf.r..
+        buf.r..
         buf.write('4')
-        buf.read()
+        buf.r..
         ___ c __ '5678':
             buf.write(c)
         buf.overwrite('A')
@@ -102,8 +102,8 @@ c_ CircularBufferTest(unittest.TestCase):
         assertEqual('8', buf.read())
         assertEqual('A', buf.read())
         assertEqual('B', buf.read())
-        w__ assertRaises(BufferEmptyException):
-            buf.read()
+        w__ assertRaises(BufferEmptyException
+            buf.r..
 
 
 __ _____ __ _____

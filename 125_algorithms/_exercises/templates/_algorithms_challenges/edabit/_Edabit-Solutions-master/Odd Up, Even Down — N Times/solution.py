@@ -1,4 +1,4 @@
-___ even_odd_transform(lst, n):
+___ even_odd_transform(lst, n
     output    # list
     s = 0
     ___ i __ lst:

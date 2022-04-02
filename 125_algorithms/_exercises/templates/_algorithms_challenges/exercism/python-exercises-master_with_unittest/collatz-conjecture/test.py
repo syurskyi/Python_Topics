@@ -5,7 +5,7 @@ ____ collatz_conjecture _______ collatz_steps
 # Test cases adapted from `x-common//canonical-data.json` @ version: 1.1.1
 
 
-c_ CollatzConjectureTests(unittest.TestCase):
+c_ CollatzConjectureTests(unittest.TestCase
 
     ___ test_zero_steps_for_one
         assertEqual(collatz_steps(1), 0)

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findWords  words):
+c_ Solution(o..
+  ___ findWords  words
     """
     :type words: List[str]
     :rtype: List[str]

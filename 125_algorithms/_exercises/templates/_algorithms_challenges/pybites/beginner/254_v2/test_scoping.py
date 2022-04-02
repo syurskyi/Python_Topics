@@ -11,7 +11,7 @@ ____ scoping _______ sum_numbers
     ([140, 150, 160], 450, 6),
     ([1140, 150, 160], 1450, 20),
 ])
-___ test_sum_numbers(arg, ret, hundreds_value):
+___ test_sum_numbers(arg, ret, hundreds_value
     ... sum_numbers(arg) __ ret
     ____ scoping _______ num_hundreds
     ... num_hundreds __ hundreds_value

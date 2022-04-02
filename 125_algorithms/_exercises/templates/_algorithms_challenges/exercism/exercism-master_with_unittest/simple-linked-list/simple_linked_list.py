@@ -11,7 +11,7 @@ c_ Node:
 
 
 c_ LinkedList:
-    ___ - , values=[]):
+    ___ - , values=[]
         _size = 0
         _head = N..
 
@@ -26,7 +26,7 @@ c_ LinkedList:
             r.. EmptyListException("Head is empty")
         r.. _head
 
-    ___ push  value):
+    ___ push  value
         new_node = Node(value, _head)
         _head = new_node
         _size += 1
@@ -45,7 +45,7 @@ c_ LinkedList:
 
 
 c_ LinkedListIterator:
-    ___ - , linked_list):
+    ___ - , linked_list
         _current = linked_list._head
 
     ___ __iter__
@@ -59,6 +59,6 @@ c_ LinkedListIterator:
         r.. current_value
 
 
-c_ EmptyListException(E..):
-    ___ - , message):
+c_ EmptyListException(E..
+    ___ - , message
         message = message

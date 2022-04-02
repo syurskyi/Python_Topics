@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isPossible  nums):
+c_ Solution(o..
+  ___ isPossible  nums
     """
     :type nums: List[int]
     :rtype: bool

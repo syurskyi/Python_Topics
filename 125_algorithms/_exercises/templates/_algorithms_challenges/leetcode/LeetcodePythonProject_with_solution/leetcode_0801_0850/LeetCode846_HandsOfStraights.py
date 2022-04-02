@@ -3,8 +3,8 @@ Created on Mar 26, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ isNStraightHand  hand, W):
+c_ Solution(o..
+    ___ isNStraightHand  hand, W
         """
         :type hand: List[int]
         :type W: int
@@ -18,7 +18,7 @@ c_ Solution(o..):
             hashmap[num] = hashmap[num]+1 __ num __ hashmap ____ 1
         w.... hashmap:
             minVal = m..(hashmap)
-            ___ i __ r..(w):
+            ___ i __ r..(w
                 __ minVal + i n.. __ hashmap:
                     r.. F..
                 hashmap[minVal+i] -= 1

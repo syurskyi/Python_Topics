@@ -1,6 +1,6 @@
 
 c_ ConnectGame:
-    ___ - , board):
+    ___ - , board
         p..
 
     ___ get_winner

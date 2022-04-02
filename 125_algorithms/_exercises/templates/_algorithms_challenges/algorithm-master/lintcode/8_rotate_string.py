@@ -4,7 +4,7 @@ c_ Solution:
     @param: x: An integer
     @return: nothing
     """
-    ___ rotateString  S, x):
+    ___ rotateString  S, x
         __ n.. S o. n.. x:
             r.. S
 
@@ -14,7 +14,7 @@ c_ Solution:
         reverse(S, n - x, n - 1)
         reverse(S, 0, n - 1)
 
-    ___ reverse  S, start, end):
+    ___ reverse  S, start, end
         w.... start < end:
             S[start], S[end] = S[end], S[start]
             start += 1

@@ -1,4 +1,4 @@
-f = open('file.txt','r')
+f = o.. 'file.txt' _
 a =[]
 ___ y __ f:
     y = y.rstrip()

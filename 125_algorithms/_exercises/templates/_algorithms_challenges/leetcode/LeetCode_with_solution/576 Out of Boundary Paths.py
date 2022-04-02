@@ -39,10 +39,10 @@ c_ Solution:
         ret = 0
         F = [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
         F[r][c] = 1
-        ___ _ __ r..(N):  # epoch
+        ___ _ __ r..(N  # epoch
             F_new = [[0 ___ _ __ r..(n)] ___ _ __ r..(m)]
-            ___ i __ r..(m):
-                ___ j __ r..(n):
+            ___ i __ r..(m
+                ___ j __ r..(n
                     ___ di, dj __ dirs:
                         I = i + di
                         J = j + dj

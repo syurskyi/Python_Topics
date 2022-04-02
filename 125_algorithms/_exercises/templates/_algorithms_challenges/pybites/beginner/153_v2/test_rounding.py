@@ -14,5 +14,5 @@ transactions_including_negatives = transactions2 + [-2.05]
     (transactions2, F.., [1, 9, 5, 6, 2]),
     (transactions_including_negatives, F.., [1, 9, 5, 6, 2, -3]),
 ])
-___ test_round_up_or_down(transactions, up_arg, expected):
+___ test_round_up_or_down(transactions, up_arg, expected
     ... round_up_or_down(transactions, up=up_arg) __ expected

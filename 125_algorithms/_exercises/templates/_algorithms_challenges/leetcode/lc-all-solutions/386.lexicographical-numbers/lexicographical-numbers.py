@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ lexicalOrder  n):
+c_ Solution(o..
+  ___ lexicalOrder  n
     """
     :type n: int
     :rtype: List[int]
@@ -9,12 +9,12 @@ c_ Solution(o..):
     dfs(ans, n, 0)
     r.. ans
 
-  ___ dfs  ans, n, pre):
+  ___ dfs  ans, n, pre
     __ cnt __ n o. pre > n:
       r..
     __ pre * 10 > n:
       r..
-    ___ i __ r..(0, 10):
+    ___ i __ r..(0, 10
       cur = pre * 10 + i
       __ cur __ 0:
         _____

@@ -22,8 +22,8 @@ _______ sys
 
 sys.setrecursionlimit(5000)
 
-c_ Solution(o..):
-    ___ canFinish  numCourses, prerequisites):
+c_ Solution(o..
+    ___ canFinish  numCourses, prerequisites
         """
         :type numCourses: int
         :type prerequisites: List[List[int]]
@@ -39,13 +39,13 @@ c_ Solution(o..):
         ___ c, p __ prerequisites:
             graph[p].add(c)
 
-        ___ u __ r..(numCourses):
+        ___ u __ r..(numCourses
             __ u __ unvisited:
                 __ visit(u) __ F..:
                     r.. F..
         r.. T..
 
-    ___ visit  u):
+    ___ visit  u
         __ u __ visiting:
             r.. F..
         ____ u __ unvisited:
@@ -60,8 +60,8 @@ c_ Solution(o..):
 s = Solution()
 print(s.canFinish(1, []))
 print(s.canFinish(3, [[1, 0], [0, 1]]))
-w__ open('test.txt') __ f:
-    args = f.read().s..
+w__ o.. 'test.txt') __ f:
+    args = f.r...s..
     arg0 = i..(args[0][:-1])
     arg1 = eval(args[1])
     print(s.canFinish(arg0, arg1))

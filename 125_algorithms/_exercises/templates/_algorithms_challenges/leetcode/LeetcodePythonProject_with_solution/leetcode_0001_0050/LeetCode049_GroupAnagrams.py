@@ -4,8 +4,8 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ groupAnagrams  strs):
+c_ Solution(o..
+    ___ groupAnagrams  strs
         """
         :type strs: List[str]
         :rtype: List[List[str]]

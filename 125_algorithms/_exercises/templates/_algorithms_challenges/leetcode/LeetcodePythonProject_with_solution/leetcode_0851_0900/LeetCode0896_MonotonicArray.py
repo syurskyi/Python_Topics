@@ -1,11 +1,11 @@
-c_ Solution(o..):
-    ___ isMonotonic  A):
+c_ Solution(o..
+    ___ isMonotonic  A
         """
         :type A: List[int]
         :rtype: bool
         """
         increase = N..
-        ___ i, num __ e..(A):
+        ___ i, num __ e..(A
             __ i > 0:
                 __ num __ A[i-1]:
                     _____

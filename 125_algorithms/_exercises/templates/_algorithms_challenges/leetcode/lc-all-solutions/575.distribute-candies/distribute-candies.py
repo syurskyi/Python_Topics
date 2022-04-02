@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ distributeCandies  candies):
+c_ Solution(o..
+  ___ distributeCandies  candies
     """
     :type candies: List[int]
     :rtype: int

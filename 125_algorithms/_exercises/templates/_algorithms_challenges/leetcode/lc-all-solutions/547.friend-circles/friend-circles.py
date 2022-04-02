@@ -1,16 +1,16 @@
-c_ UnionFind(o..):
-  ___ - , n):
+c_ UnionFind(o..
+  ___ - , n
     dad = [i ___ i __ r..(n)]
     rank = [0 ___ i __ r..(n)]
     count = n
 
-  ___ find  x):
+  ___ find  x
     dad = dad
     __ dad[x] != x:
       dad[x] = find(dad[x])
     r.. dad[x]
 
-  ___ union  x, y):
+  ___ union  x, y
     dad = dad
     rank = rank
     x, y = map(find, [x, y])
@@ -29,8 +29,8 @@ c_ UnionFind(o..):
     r.. count
 
 
-c_ Solution(o..):
-  ___ findCircleNum  M):
+c_ Solution(o..
+  ___ findCircleNum  M
     """
     :type M: List[List[int]]
     :rtype: int

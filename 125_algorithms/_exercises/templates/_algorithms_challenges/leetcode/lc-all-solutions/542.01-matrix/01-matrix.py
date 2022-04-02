@@ -1,8 +1,8 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ updateMatrix  matrix):
+c_ Solution(o..
+  ___ updateMatrix  matrix
     """
     :type matrix: List[List[int]]
     :rtype: List[List[int]]

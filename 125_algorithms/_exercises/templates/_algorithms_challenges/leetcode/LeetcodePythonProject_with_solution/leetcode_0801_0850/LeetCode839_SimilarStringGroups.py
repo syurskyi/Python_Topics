@@ -5,8 +5,8 @@ Created on Oct 10, 2018
 '''
 _______ i..
 
-c_ Solution(o..):
-    ___ numSimilarGroups  A):
+c_ Solution(o..
+    ___ numSimilarGroups  A
         """
         :type A: List[str]
         :rtype: int
@@ -16,12 +16,12 @@ c_ Solution(o..):
         n, m = l..(arr), l..(arr[0])
         count = n
         
-        ___ find(x):
+        ___ find(x
             __ x != parents[x]:
                 parents[x] = find(parents[x])
             r.. parents[x]
         
-        ___ union(x, y):
+        ___ union(x, y
             x, y = find(x), find(y)
             __ x != y:
                 parents[x] = y
@@ -29,17 +29,17 @@ c_ Solution(o..):
                 r.. T..
             r.. F..
         
-        ___ similar(x, y):
+        ___ similar(x, y
             r.. s..(i != j ___ i, j __ z..(x, y)) __ 2
         
         ## Solution part ##
         __ n < m:
-            ___ x, y __ i...combinations(arr, 2):
-                __ similar(x, y):
+            ___ x, y __ i...combinations(arr, 2
+                __ similar(x, y
                     union(x, y)
         ____:
             ___ x __ arr:
-                ___ i, j __ i...combinations(r..(m), 2):
+                ___ i, j __ i...combinations(r..(m), 2
                     y = x[:i] + x[j] + x[i+1:j] + x[i] + x[j+1:]
                     __ y __ parents:
                         union(x, y)

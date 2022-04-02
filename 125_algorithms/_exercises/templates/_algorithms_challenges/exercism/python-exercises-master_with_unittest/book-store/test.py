@@ -5,7 +5,7 @@ ____ book_store _______ calculate_total
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.1
 
-c_ BookStoreTests(unittest.TestCase):
+c_ BookStoreTests(unittest.TestCase
     ___ test_only_a_single_book
         assertAlmostEqual(calculate_total([1]), 8.00,
                                places=2)

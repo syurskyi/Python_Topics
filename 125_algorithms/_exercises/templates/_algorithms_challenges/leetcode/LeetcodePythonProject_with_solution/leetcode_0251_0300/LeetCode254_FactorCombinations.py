@@ -4,8 +4,8 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ getFactors  n):
+c_ Solution(o..
+    ___ getFactors  n
         """
         :type n: int
         :rtype: List[List[int]]
@@ -25,7 +25,7 @@ c_ Solution(o..):
             ____:
                 x += 1
     
-    ___ getFactorsSlow  n):
+    ___ getFactorsSlow  n
         """
         :type n: int
         :rtype: List[List[int]]
@@ -34,13 +34,13 @@ c_ Solution(o..):
         helper(result, [], n, 2)
         r.. result
     
-    ___ helper  result, item, n, start):
+    ___ helper  result, item, n, start
         __ n <= 1:
             __ l..(item)>1:
                 result.a..(l..(item))
             r..
         
-        ___ i __ r..(start, n+1):
+        ___ i __ r..(start, n+1
             __ n % i __ 0:
                 item.a..(i)
                 helper(result, item, i..(n/i), i)

@@ -15,10 +15,10 @@ _______ sys
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         A = N..
 
-    ___ findPeakElement  nums):
+    ___ findPeakElement  nums
         """
         :type nums: list[int]
         :rtype: int
@@ -32,22 +32,22 @@ c_ Solution:
         h = n
         w.... l < h:
             m = (l+h)/2
-            __ _get(m-1) < _get(m) > _get(m+1):
+            __ _get(m-1) < _get(m) > _get(m+1
                 r.. m
-            ____ _get(m+1) > _get(m):
+            ____ _get(m+1) > _get(m
                 l = m+1
             ____:
                 h = m
 
         r.. -1
 
-    ___ _get  i):
-        __ i < 0 o. i >= l..(A):
+    ___ _get  i
+        __ i < 0 o. i >= l..(A
             r.. -sys.maxint-1
         ____:
             r.. A[i]
 
-    ___ findPeakElement_complicated  nums):
+    ___ findPeakElement_complicated  nums
         """
         :type nums: list[int]
         :rtype: int

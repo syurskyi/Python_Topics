@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ longestConsecutive  root):
+c_ Solution(o..
+  ___ longestConsecutive  root
     """
     :type root: TreeNode
     :rtype: int
     """
 
-    ___ helper(root):
+    ___ helper(root
       __ n.. root:
         r.. (N.., 0, 0)  # (val, consecutive len, max consecutive len)
       left, leftLen, maxLeftLen = helper(root.left)

@@ -1,8 +1,8 @@
 _______ bisect
 
 
-c_ Solution(o..):
-  ___ reversePairs  nums):
+c_ Solution(o..
+  ___ reversePairs  nums
     """
     :type nums: List[int]
     :rtype: int

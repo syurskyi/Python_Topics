@@ -20,7 +20,7 @@ c_ Solution:
     ___ findRepeatedDnaSequences  s: s..) __ List[s..]:
         ret = s..()
         seen = s..()
-        ___ i __ r..(l..(s) - 10 + 1):
+        ___ i __ r..(l..(s) - 10 + 1
             sub = s[i:i+10]
             __ sub __ seen a.. sub n.. __ ret:
                 ret.add(sub)

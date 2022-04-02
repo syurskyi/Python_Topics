@@ -3,16 +3,16 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-c_ TreeNode(o..):
-    ___ - , val):
+c_ TreeNode(o..
+    ___ - , val
         val = val
         children    # dict
         isLeaf = F..
         candidates = s..()
 
-c_ WordFilter(o..):
+c_ WordFilter(o..
 
-    ___ - , words):
+    ___ - , words
         """
         :type words: List[str]
         """
@@ -21,13 +21,13 @@ c_ WordFilter(o..):
         buildTree(root1, words, F..)
         buildTree(root2, words, T..)
     
-    ___ buildTree  root, words, reverse):
-        ___ i0, word __ e..(words):
+    ___ buildTree  root, words, reverse
+        ___ i0, word __ e..(words
             __ reverse:
                 word = word[::-1]
             node = root
             node.candidates.add(i0)
-            ___ i, c __ e..(word):
+            ___ i, c __ e..(word
                 __ c n.. __ node.children:
                     node.children[c] = TreeNode('')
                 node = node.children[c]
@@ -35,7 +35,7 @@ c_ WordFilter(o..):
                 __ i __ l..(word)-1:
                     node.isLeaf = T..
     
-    ___ f  prefix, suffix):
+    ___ f  prefix, suffix
         """
         :type prefix: str
         :type suffix: str
@@ -49,10 +49,10 @@ c_ WordFilter(o..):
                 res = m..(res, i)
         r.. res
     
-    ___ helper  root, word):
+    ___ helper  root, word
         __ n.. word:
             r.. root.candidates
-        ___ i, c __ e..(word):
+        ___ i, c __ e..(word
             __ c n.. __ root.children:
                 r.. s..()
             root = root.children[c]

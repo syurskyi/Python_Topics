@@ -43,9 +43,9 @@ c_ Solution:
         """
         h = defaultdict(i..)
         m = l..(wall)
-        ___ i __ r..(m):
+        ___ i __ r..(m
             s = 0
-            ___ j __ r..(l..(wall[i]) - 1):
+            ___ j __ r..(l..(wall[i]) - 1
                 # don't count the two endings
                 s += wall[i][j]
                 h[s] += 1

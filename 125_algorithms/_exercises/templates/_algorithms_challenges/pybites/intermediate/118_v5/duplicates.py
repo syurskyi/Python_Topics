@@ -1,7 +1,7 @@
 ____ c.. _______ defaultdict
 
 
-___ get_duplicate_indices(words):
+___ get_duplicate_indices(words
     """Given a list of words, loop through the words and check for each
        word if it occurs more than once.
        If so return the index of its first ocurrence.
@@ -11,6 +11,6 @@ ___ get_duplicate_indices(words):
        ['is', 'it', 'true', 'or', 'is', 'it', 'not?'] => [0, 1]
        Make sure the returning list is unique and sorted in ascending order."""
     wordlist = defaultdict(l..)
-    ___ pos, word __ e..(words):
+    ___ pos, word __ e..(words
         wordlist[word].a..(pos)
     r.. s..(p[0] ___ p __ wordlist.v.. __ l..(p) > 1)

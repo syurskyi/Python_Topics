@@ -17,7 +17,7 @@ cars = [
 ]
 
 
-___ group_cars_by_manufacturer(cars):
+___ group_cars_by_manufacturer(cars
     """Iterate though the list of (manufacturer, model) tuples
        of the cars list defined above and generate the output as described
        in the Bite description (see the tests for the full output).

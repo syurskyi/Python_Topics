@@ -24,9 +24,9 @@ ___ high_low_record_breakers_for_2015
 
 
 
-    stations = pd.read_csv("https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv",parse_dates=['Date'])
+    stations = pd.read_csv("https://bites-data.s3.us-east-2.amazonaws.com/weather-ann-arbor.csv",parse_dates= 'Date' )
     
-    stations['Data_Value'] = stations['Data_Value'].div(10)
+    stations 'Data_Value'  = stations 'Data_Value' .div(10)
     stations = stations[~((stations.Date.dt.day __ 29) & (stations.Date.dt.month __ 2))]
 
     s = stations[stations.Date.dt.year != 2015]
@@ -34,26 +34,26 @@ ___ high_low_record_breakers_for_2015
     x = stations.set_index('Date')
 
 
-    u = s.groupby(['ID',s.Date.dt.dayofyear]).Data_Value.agg(['min','max'])
+    u = s.groupby( 'ID',s.Date.dt.dayofyear]).Data_Value.agg( 'min','max' )
 
     s_2015 = stations[stations.Date.dt.year __ 2015]
 
-    records_2015 = s_2015.groupby(['ID',s_2015.Date.dt.dayofyear]).Data_Value.agg(['min','max'])
+    records_2015 = s_2015.groupby( 'ID',s_2015.Date.dt.dayofyear]).Data_Value.agg( 'min','max' )
 
-    records_2015.columns = ['2015_min','2015_max']
+    records_2015.columns =  '2015_min','2015_max'
 
     l = pd.concat([u,records_2015],axis=1)
 
-    p = l[(l['2015_min'] < l['min']) | (l['2015_max'] >l['max'])]
+    p = l[(l '2015_min'  < l 'min' ) | (l '2015_max'  >l 'max' )]
 
-    ___ get_type_of_record_broken(row):
+    ___ get_type_of_record_broken(row
         
         values    # list
         
-        __ row['2015_min'] < row['min']:
-            values.a..(row['2015_min'])
-        __ row['2015_max'] > row['max']:
-            values.a..(row['2015_max'])
+        __ row '2015_min'  < row 'min' :
+            values.a..(row '2015_min' )
+        __ row '2015_max'  > row 'max' :
+            values.a..(row '2015_max' )
         r.. values
 
     o = p.apply(get_type_of_record_broken,axis=1)

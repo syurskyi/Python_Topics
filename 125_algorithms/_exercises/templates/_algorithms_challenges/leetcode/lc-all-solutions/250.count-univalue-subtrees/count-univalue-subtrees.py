@@ -5,15 +5,15 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ countUnivalSubtrees  root):
+c_ Solution(o..
+  ___ countUnivalSubtrees  root
     """
     :type root: TreeNode
     :rtype: int
     """
     count = 0
 
-    ___ dfs(root, pv):
+    ___ dfs(root, pv
       __ n.. root:
         r.. T..
       left = dfs(root.left, root.val)

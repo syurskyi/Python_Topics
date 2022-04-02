@@ -2,7 +2,7 @@ c_ Solution:
     """
     BFS
     """
-    ___ coinChange  coins, amount):
+    ___ coinChange  coins, amount
         """
         :type coins: List[int]
         :type amount: int
@@ -41,7 +41,7 @@ c_ Solution:
     """
     DP: TLE
     """
-    ___ coinChange  coins, amount):
+    ___ coinChange  coins, amount
         """
         :type coins: List[int]
         :type amount: int
@@ -55,7 +55,7 @@ c_ Solution:
         dp[0] = 0
 
         ___ c __ coins:
-            ___ a __ r..(c, amount + 1):
+            ___ a __ r..(c, amount + 1
                 # if a < c: continue
                 dp[a] = m..(dp[a], dp[a - c] + 1)
 

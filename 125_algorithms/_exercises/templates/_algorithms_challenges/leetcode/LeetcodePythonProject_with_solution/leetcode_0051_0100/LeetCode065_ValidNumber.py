@@ -3,8 +3,8 @@ Created on Jan 22, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ isNumber  s):
+c_ Solution(o..
+    ___ isNumber  s
         """
         :type s: str
         :rtype: bool
@@ -14,7 +14,7 @@ c_ Solution(o..):
         s = s.lstrip('+')
         i = 0
         num, dot, exp = F.., F.., F..
-        w.... i < l..(s):
+        w.... i < l..(s
             c = s[i]
             __ c.i..
                 num = T..

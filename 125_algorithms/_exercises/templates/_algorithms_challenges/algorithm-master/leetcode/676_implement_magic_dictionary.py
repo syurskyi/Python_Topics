@@ -7,13 +7,13 @@ param_2 = obj.search(word)
 
 
 c_ MagicDictionary:
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
         """
         words = c...defaultdict(s..)
 
-    ___ buildDict  words):
+    ___ buildDict  words
         """
         Build a dictionary through a list of words
         :type words: List[str]
@@ -29,7 +29,7 @@ c_ MagicDictionary:
                 # add char to distinct word if its same
                 words[key].add(word[i])
 
-    ___ s..  word):
+    ___ s..  word
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         :type word: str

@@ -3,12 +3,12 @@ ____ bs4 _______ BeautifulSoup __ Soup
 
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
 
-___ load_page(so_url):
+___ load_page(so_url
     """Download the blog html and return its decoded content"""
     w__ requests.Session() __ session:
-        r.. session.get(so_url).content.decode('utf-8')
+        r.. session.get(so_url).content.d.. 'utf-8')
 
-___ top_python_questions(url=cached_so_url):
+___ top_python_questions(url=cached_so_url
     """Use requests to retrieve the url / html,
        parse the questions out of the html with BeautifulSoup,
        filter them by >= 1m views ("..m views").

@@ -3,8 +3,8 @@ Created on Mar 11, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ numIslands2  m, n, positions):
+c_ Solution(o..
+    ___ numIslands2  m, n, positions
         res    # list
         roots = [-1]*(m*n)
         grid = [[F..]*n ___ _ __ r..(m)]
@@ -14,7 +14,7 @@ c_ Solution(o..):
             grid[i][j] = T..
             count += 1
             root0 = i*n+j
-            ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+            ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
                 __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y]:
                     root = getRoot(roots, x*n+y)
                     __ root != root0:
@@ -23,7 +23,7 @@ c_ Solution(o..):
             res.a..(count)
         r.. res
     
-    ___ getRoot  roots, ind):
+    ___ getRoot  roots, ind
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind

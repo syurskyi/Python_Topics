@@ -14,7 +14,7 @@ ___ test_get_food_most_calories
 
 ___ test_get_food_most_calories_smaller_population
     """Extra test to prevent hardcoding the return value"""
-    df_breakfast = df[df['Category'] __ 'Breakfast']
+    df_breakfast = df[df 'Category'  __ 'Breakfast'
 
     actual = get_food_most_calories(df_breakfast)
     expected = 'Big Breakfast with Hotcakes (Large Biscuit)'
@@ -23,19 +23,19 @@ ___ test_get_food_most_calories_smaller_population
 
 ___ test_get_bodybuilder_friendly_foods
     actual_with_drinks = l..(get_bodybuilder_friendly_foods())
-    expected = ['Premium Bacon Ranch Salad with Grilled Chicken',
+    expected =  'Premium Bacon Ranch Salad with Grilled Chicken',
                 'Nonfat Latte (Small)',
                 'Nonfat Latte (Large)',
                 'Premium Southwest Salad with Grilled Chicken',
-                'Nonfat Latte (Medium)']
+                'Nonfat Latte (Medium)'
     ... a..(food __ actual_with_drinks ___ food __ expected), ASSERT_ERROR
 
 
 ___ test_get_bodybuilder_friendly_foods_excluding_liquid_food
     actual_wo_drinks = l..(get_bodybuilder_friendly_foods(excl_drinks=T..))
-    expected = ['Premium Bacon Ranch Salad with Grilled Chicken',
+    expected =  'Premium Bacon Ranch Salad with Grilled Chicken',
                 'Premium Southwest Salad with Grilled Chicken',
                 'Premium Grilled Chicken Classic Sandwich',
                 'Premium Grilled Chicken Ranch BLT Sandwich',
-                'Premium Grilled Chicken Club Sandwich']
+                'Premium Grilled Chicken Club Sandwich'
     ... a..(food __ actual_wo_drinks ___ food __ expected), ASSERT_ERROR

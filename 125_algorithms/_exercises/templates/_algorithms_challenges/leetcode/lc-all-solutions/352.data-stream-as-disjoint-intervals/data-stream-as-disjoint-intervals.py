@@ -4,15 +4,15 @@
 #         self.start = s
 #         self.end = e
 
-c_ SummaryRanges(o..):
+c_ SummaryRanges(o..
 
-  ___ - ):
+  ___ -
     """
     Initialize your data structure here.
     """
     intervals    # list
 
-  ___ insert  newInterval):
+  ___ insert  newInterval
     """
     :type intervals: List[Interval]
     :type newInterval: Interval
@@ -39,7 +39,7 @@ c_ SummaryRanges(o..):
       right = right[1:]
     intervals = left + [newIntv] + right
 
-  ___ addNum  val):
+  ___ addNum  val
     """
     :type val: int
     :rtype: void

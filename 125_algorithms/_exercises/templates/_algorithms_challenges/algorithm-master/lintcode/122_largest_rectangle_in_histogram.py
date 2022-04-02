@@ -7,7 +7,7 @@ REF: https://aaronice.gitbooks.io/lintcode/content/data_structure/largest_rectan
 Brute Force: TLE
 """
 c_ Solution:
-    ___ largestRectangleArea  H):
+    ___ largestRectangleArea  H
         """
         :type H: List[int]
         :rtype: int
@@ -19,8 +19,8 @@ c_ Solution:
         n = l..(H)
         L = [0] * n  # lowest height
 
-        ___ left __ r..(n):
-            ___ right __ r..(left, n):
+        ___ left __ r..(n
+            ___ right __ r..(left, n
                 L[right] = H[right]
 
                 __ right > left a.. L[right - 1] < H[right]:
@@ -37,7 +37,7 @@ c_ Solution:
 Brute Force with Pruning
 """
 c_ Solution:
-    ___ largestRectangleArea  H):
+    ___ largestRectangleArea  H
         """
         :type H: List[int]
         :rtype: int
@@ -52,7 +52,7 @@ c_ Solution:
             __ right < n - 1 a.. H[right] <= H[right + 1]:
                 _____
             Hmin = H[right]
-            ___ left __ r..(right, -1, -1):
+            ___ left __ r..(right, -1, -1
                 __ H[left] < Hmin:
                     Hmin = H[left]
 
@@ -67,7 +67,7 @@ c_ Solution:
 Mono-stack
 """
 c_ Solution:
-    ___ largestRectangleArea  H):
+    ___ largestRectangleArea  H
         """
         :type H: List[int]
         :rtype: int

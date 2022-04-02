@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isValidSudoku  board):
+c_ Solution(o..
+  ___ isValidSudoku  board
     """
     :type board: List[List[str]]
     :rtype: bool
@@ -8,8 +8,8 @@ c_ Solution(o..):
     cacheRow = [[0] * 9 ___ _ __ r..(0, 10)]
     cacheBox = [[0] * 9 ___ _ __ r..(0, 10)]
 
-    ___ i __ r..(0, 9):
-      ___ j __ r..(0, 9):
+    ___ i __ r..(0, 9
+      ___ j __ r..(0, 9
         ib = (i / 3) * 3 + j / 3
         __ board[i][j] __ ".":
           _____

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ countRangeSum  nums, lower, upper):
+c_ Solution(o..
+  ___ countRangeSum  nums, lower, upper
     """
     :type nums: List[int]
     :type lower: int
@@ -7,12 +7,12 @@ c_ Solution(o..):
     :rtype: int
     """
 
-    ___ update(b, i, delta):
-      w.... i < l..(b):
+    ___ update(b, i, delta
+      w.... i < l..(b
         b[i] += delta
         i += (i & -i)
 
-    ___ sumRange(b, i):
+    ___ sumRange(b, i
       ret = 0
       w.... i > 0:
         ret += b[i]

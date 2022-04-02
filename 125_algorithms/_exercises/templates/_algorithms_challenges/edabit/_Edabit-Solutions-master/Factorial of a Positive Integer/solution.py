@@ -1,4 +1,4 @@
-___ factorial(Z):
+___ factorial(Z
     index = 1
     output = 1
     w.... index <= Z:

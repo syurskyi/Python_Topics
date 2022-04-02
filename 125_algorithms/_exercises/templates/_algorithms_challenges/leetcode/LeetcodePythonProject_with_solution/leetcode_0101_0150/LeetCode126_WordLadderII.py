@@ -3,8 +3,8 @@ Created on May 24, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ findLadders  beginWord, endWord, wordList):
+c_ Solution(o..
+    ___ findLadders  beginWord, endWord, wordList
         """
         :type beginWord: str
         :type endWord: str
@@ -19,7 +19,7 @@ c_ Solution(o..):
         dfs(beginWord, endWord, distance, wordSet, res, [])
         r.. res
     
-    ___ bfs  beginWord, endWord, distance, wordSet):
+    ___ bfs  beginWord, endWord, distance, wordSet
         queue = [beginWord]
         distance[beginWord] = 0
         w.... queue:
@@ -30,19 +30,19 @@ c_ Solution(o..):
                     distance[nextWord] = distance[word]+1
                     queue.a..(nextWord)
     
-    ___ dfs  beginWord, word, distance, wordSet, res, curr):
+    ___ dfs  beginWord, word, distance, wordSet, res, curr
         curr.insert(0, word)
         __ word __ beginWord:
             res.a..(l..(curr))
         ____:
-            ___ nextWord __ getNextWords(word, wordSet):
-                __ nextWord __ distance a.. distance[nextWord]+1 __ distance.get(word, 0):
+            ___ nextWord __ getNextWords(word, wordSet
+                __ nextWord __ distance a.. distance[nextWord]+1 __ distance.get(word, 0
                     dfs(beginWord, nextWord, distance, wordSet, res, curr)
         curr.pop(0)
     
-    ___ getNextWords  word, wordSet):
+    ___ getNextWords  word, wordSet
         res    # list
-        ___ i, c __ e..(word):
+        ___ i, c __ e..(word
             ___ c0 __ 'abcdefghijklmnopqrstuvwxyz':
                 __ c0 != c:
                     word0 = word[:i] + c0 + word[i+1:]

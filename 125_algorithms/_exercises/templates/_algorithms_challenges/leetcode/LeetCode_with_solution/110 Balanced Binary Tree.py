@@ -7,22 +7,22 @@ every node never differ by more than 1.
 __author__ = 'Danyang'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         depth_bottom    # dict
 
-    ___ isBalanced  root):
+    ___ isBalanced  root
         fathom(root, 0)
         r.. _is_balanced(root, 0)
 
-    ___ _is_balanced  cur, depth):
+    ___ _is_balanced  cur, depth
         """
         :param depth: depth from root to current node.
         """
@@ -38,7 +38,7 @@ c_ Solution(o..):
 
         r.. a..([_is_balanced(cur.left, depth+1), _is_balanced(cur.right, depth+1)])
 
-    ___ fathom  root, depth):
+    ___ fathom  root, depth
         __ n.. root:
             r.. depth-1
 
@@ -47,8 +47,8 @@ c_ Solution(o..):
         r.. ret
 
 
-c_ SolutionSlow(o..):
-    ___ isBalanced  root):
+c_ SolutionSlow(o..
+    ___ isBalanced  root
         """
         pre-order traversal
 
@@ -60,12 +60,12 @@ c_ SolutionSlow(o..):
         __ abs(fathom(root.left, 0)-fathom(root.right, 0)) > 1:
             r.. F..
 
-        __ isBalanced(root.left) a.. isBalanced(root.right):
+        __ isBalanced(root.left) a.. isBalanced(root.right
             r.. T..
         ____:
             r.. F..
 
-    ___ fathom  root, depth):
+    ___ fathom  root, depth
         """
         DFS
         """

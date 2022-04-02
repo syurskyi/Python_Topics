@@ -1,17 +1,17 @@
 c_ Clock:
-    ___ - , hours, mins):
+    ___ - , hours, mins
         hours = hours
         mins = mins
         fixup()
 
-    ___ __eq__  other):
+    ___ __eq__  other
         r.. hours __ other.hours a.. mins __ other.mins
 
     ___ __str__
         r.. (format_hours() + ':' +
                 format_mins())
 
-    ___ add  additional_mins):
+    ___ add  additional_mins
         mins += additional_mins
         fixup()
         r.. self

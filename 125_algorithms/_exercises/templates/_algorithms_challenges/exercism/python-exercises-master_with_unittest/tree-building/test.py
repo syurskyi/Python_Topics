@@ -3,7 +3,7 @@ _______ unittest
 ____ tree_building _______ Record, BuildTree
 
 
-c_ TreeBuildingTest(unittest.TestCase):
+c_ TreeBuildingTest(unittest.TestCase
     """
         Record(record_id, parent_id): records given to be processed
         Node(node_id): Node in tree
@@ -108,7 +108,7 @@ c_ TreeBuildingTest(unittest.TestCase):
             Record(1, 0)
         ]
         # Root parent_id should be equal to record_id(0)
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             BuildTree(records)
 
     ___ test_no_root_node
@@ -117,7 +117,7 @@ c_ TreeBuildingTest(unittest.TestCase):
             Record(2, 0)
         ]
         # Record with record_id 0 (root) is missing
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             BuildTree(records)
 
     ___ test_non_continuous
@@ -128,7 +128,7 @@ c_ TreeBuildingTest(unittest.TestCase):
             Record(0, 0)
         ]
         # Record with record_id 3 is missing
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             BuildTree(records)
 
     ___ test_cycle_directly
@@ -142,7 +142,7 @@ c_ TreeBuildingTest(unittest.TestCase):
             Record(6, 3)
         ]
         # Cycle caused by Record 2 with parent_id pointing to itself
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             BuildTree(records)
 
     ___ test_cycle_indirectly
@@ -156,7 +156,7 @@ c_ TreeBuildingTest(unittest.TestCase):
             Record(6, 3)
         ]
         # Cycle caused by Record 2 with parent_id(6) greater than record_id(2)
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             BuildTree(records)
 
     ___ test_higher_id_parent_of_lower_id
@@ -166,15 +166,15 @@ c_ TreeBuildingTest(unittest.TestCase):
             Record(1, 2)
         ]
         # Record 1 have parent_id(2) greater than record_id(1)
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             BuildTree(records)
 
-    ___ assert_node_is_branch  node, node_id, children_count):
+    ___ assert_node_is_branch  node, node_id, children_count
         assertEqual(node.node_id, node_id)
         assertNotEqual(l..(node.children), 0)
         assertEqual(l..(node.children), children_count)
 
-    ___ assert_node_is_leaf  node, node_id):
+    ___ assert_node_is_leaf  node, node_id
         assertEqual(node.node_id, node_id)
         assertEqual(l..(node.children), 0)
 
@@ -185,7 +185,7 @@ c_ TreeBuildingTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 

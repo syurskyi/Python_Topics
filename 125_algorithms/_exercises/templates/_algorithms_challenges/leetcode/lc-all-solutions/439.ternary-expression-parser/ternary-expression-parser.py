@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ parseTernary  expression):
+c_ Solution(o..
+  ___ parseTernary  expression
     """
     :type expression: str
     :rtype: str

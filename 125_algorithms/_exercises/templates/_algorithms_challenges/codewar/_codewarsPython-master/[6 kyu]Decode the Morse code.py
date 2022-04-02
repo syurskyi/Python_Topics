@@ -11,8 +11,8 @@ MORSE_CODE = {'.-...': '&', '--..--': ',', '....-': '4',
 '.---': 'J', '-----': '0', '----.': '9', '.-..-.': '"', '-.--.': '(',
 '---..': '8', '...--': '3'}
 
-___ decodeMorse(morseCode):
-    MORSE_CODE['@'] = ' '
+___ decodeMorse(morseCode
+    MORSE_CODE '@'  = ' '
     morseCode = morseCode.s...r..('  ',' @ ')
     r.. ''.j..([MORSE_CODE[code] ___ code __ morseCode.s.. ])
 

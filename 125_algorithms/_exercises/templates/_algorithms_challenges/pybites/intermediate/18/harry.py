@@ -20,11 +20,11 @@ urllib.request.urlretrieve(
 ___ get_harry_most_common_word
 
     # Stopwords
-    w__ open(stopwords_file) __ file:
+    w__ o.. stopwords_file) __ file:
         stopwords = [word.s.. ___ word __ file]
 
     # Harry text
-    w__ open(harry_text) __ file:
+    w__ o.. harry_text) __ file:
         content_remove_apos = [line.r..("'", "").r..("’", "") ___ line __ file]
         harry_content = [__.sub(r"\W+", " ", line).s...l.. ___ line __ content_remove_apos]
 

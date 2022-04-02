@@ -15,7 +15,7 @@ If n = 4 and k = 2, a solution is:
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ combine  n, k):
+    ___ combine  n, k
         """
         Similar to 045 Permutation
 
@@ -28,14 +28,14 @@ c_ Solution:
         get_combination(k, nums, [], result)
         r.. result
 
-    ___ get_combination  k, nums, current, result):
+    ___ get_combination  k, nums, current, result
         __ l..(current)__k:
             result.a..(current)
             r..  # prune
         ____ l..(current)+l..(nums)<k:
             r..  # prune
 
-        ___ ind, val __ e..(nums):
+        ___ ind, val __ e..(nums
             # try:
             get_combination(k, nums[ind+1:], current+[val], result)  # list(current).append(val) is side-effect
             # except IndexError:

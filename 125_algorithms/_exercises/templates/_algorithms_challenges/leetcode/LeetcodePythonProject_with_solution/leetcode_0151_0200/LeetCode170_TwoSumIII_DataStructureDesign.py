@@ -3,15 +3,15 @@ Created on Feb 13, 2017
 
 @author: MT
 '''
-c_ TwoSum(o..):
+c_ TwoSum(o..
 
-    ___ - ):
+    ___ -
         """
         initialize your data structure here
         """
         elements    # dict
 
-    ___ add  number):
+    ___ add  number
         """
         Add the number to an internal data structure.
         :rtype: nothing
@@ -21,7 +21,7 @@ c_ TwoSum(o..):
         ____:
             elements[number] = 1
 
-    ___ find  value):
+    ___ find  value
         """
         Find if there exists any pair of numbers which sum is equal to the value.
         :type value: int

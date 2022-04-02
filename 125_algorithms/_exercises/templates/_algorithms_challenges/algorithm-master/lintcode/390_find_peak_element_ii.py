@@ -33,7 +33,7 @@ c_ Solution:
     ...
     step-1/ find a square and check the vertices
     """
-    ___ findPeakII  A):
+    ___ findPeakII  A
         __ n.. A:
             r.. NULL_POS
 
@@ -45,7 +45,7 @@ c_ Solution:
             __ down - up > right - left:
                 row = up + (down - up) // 2
                 col = findRowMax(A, row, left, right)
-                __ isPeak(A, row, col):
+                __ isPeak(A, row, col
                     r.. [row, col]
                 __ A[row][col] < A[row-1][col]:
                     down = row
@@ -54,7 +54,7 @@ c_ Solution:
             ____:
                 col = left + (right - left) // 2
                 row = findColMax(A, col, up, down)
-                __ isPeak(A, row, col):
+                __ isPeak(A, row, col
                     r.. [row, col]
                 __ A[row][col] < A[row][col-1]:
                     right = col
@@ -62,29 +62,29 @@ c_ Solution:
                     left = col
         ___ r __ [up, down]:
             ___ c __ [left, right]:
-                __ isPeak(A, r, c):
+                __ isPeak(A, r, c
                     r.. [r, c]
         r.. NULL_POS
 
     # given col index, return the row index of the max value on that col
-    ___ findColMax  A, col, up, down):
+    ___ findColMax  A, col, up, down
         row = 0
-        ___ r __ r..(up, down + 1):
+        ___ r __ r..(up, down + 1
             __ A[row][col] < A[r][col]:
                 row = r
         r.. row
 
     # given row index, return the col index of the max value on that row
-    ___ findRowMax  A, row, left, right):
+    ___ findRowMax  A, row, left, right
         col = 0
-        ___ c __ r..(left, right + 1):
+        ___ c __ r..(left, right + 1
             __ A[row][col] < A[row][c]:
                 col = c
         r.. col
 
-    ___ isPeak  A, row, col):
+    ___ isPeak  A, row, col
         _r = _c = 0
-        ___ i __ r..(4):
+        ___ i __ r..(4
             _r = row + dx[i]
             _c = col + dy[i]
             __ 0 <= _r < m \

@@ -3,7 +3,7 @@ ___ min_of_three
     runs = i..(input())
     answer    # list
     
-    ___ run __ r..(runs):
+    ___ run __ r..(runs
         answer.a..(s..(m..([i..(x) ___ x __ input().s.. ])))
         
     print(' '.j..(answer))

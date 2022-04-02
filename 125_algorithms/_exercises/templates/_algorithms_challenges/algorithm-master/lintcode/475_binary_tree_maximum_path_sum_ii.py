@@ -8,7 +8,7 @@ class TreeNode:
 
 
 c_ Solution:
-    ___ maxPathSum2  root):
+    ___ maxPathSum2  root
         """
         :type root: TreeNode
         :rtype: int

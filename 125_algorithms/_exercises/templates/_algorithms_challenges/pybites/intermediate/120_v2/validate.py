@@ -1,12 +1,12 @@
 ____ functools _______ wraps
 
 
-___ int_args(func):
+___ int_args(func
     @wraps(func)
     # complete this decorator
 
 
-    ___ wrapper(*args):
+    ___ wrapper(*args
 
         ___ arg __ args:
             __ t..(arg) != i..:

@@ -14,7 +14,7 @@ ____ sum_of_multiples _______ sum_of_multiples
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.5.0
 
-c_ SumOfMultiplesTest(unittest.TestCase):
+c_ SumOfMultiplesTest(unittest.TestCase
     ___ test_multiples_with_no_factors_in_limit
         assertEqual(sum_of_multiples(1, [3, 5]), 0)
 

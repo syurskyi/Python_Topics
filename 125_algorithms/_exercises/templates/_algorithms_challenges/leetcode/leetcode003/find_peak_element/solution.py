@@ -17,8 +17,8 @@ Note:
 Your solution should be in logarithmic complexity.
 """
 
-c_ Solution(o..):
-    ___ findPeakElement  nums):
+c_ Solution(o..
+    ___ findPeakElement  nums
         """
         :type nums: List[int]
         :rtype: int

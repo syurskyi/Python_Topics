@@ -1,20 +1,20 @@
 # see __mro__ output in Bite description
 
-c_ Person(o..):
+c_ Person(o..
     ___  -r
         r.. 'I am a person'
 
 
-c_ Father(Person):
+c_ Father(Person
     ___  -r
         r.. f'{super(). -r()} and cool daddy'
 
 
-c_ Mother(Person):
+c_ Mother(Person
     ___  -r
         r.. f'{super(). -r()} and awesome mom'
 
 
-c_ Child(Father, Mother, Person):
+c_ Child(Father, Mother, Person
     ___  -r
         r.. 'I am the coolest kid'

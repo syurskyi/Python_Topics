@@ -4,17 +4,17 @@ Created on Apr 23, 2017
 @author: MT
 '''
 
-c_ Node(o..):
-    ___ - , key, val):
+c_ Node(o..
+    ___ - , key, val
         val = val
         next = N..
         prev = N..
         freq = 1
         key = key
 
-c_ LFUCache(o..):
+c_ LFUCache(o..
 
-    ___ - , capacity):
+    ___ - , capacity
         """
         :type capacity: int
         """
@@ -28,7 +28,7 @@ c_ LFUCache(o..):
         head.freq = f__('-inf')
         tail.freq = f__('inf')
     
-    ___ get  key):
+    ___ get  key
         """
         :type key: int
         :rtype: int
@@ -40,7 +40,7 @@ c_ LFUCache(o..):
             updateNode(hashmap[key])
             r.. value
     
-    ___ put  key, value):
+    ___ put  key, value
         """
         :type key: int
         :type value: int
@@ -102,7 +102,7 @@ c_ LFUCache(o..):
                     node.prev = head
                     freqMap[1] = [node, node]
     
-    ___ updateNode  node):
+    ___ updateNode  node
         freq = node.freq
         nextNode = freqMap[freq][1].next
         node.prev.next = node.next

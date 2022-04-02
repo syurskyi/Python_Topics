@@ -14,8 +14,8 @@ For the purpose of this problem, we define empty string as valid palindrome.
 """
 
 
-c_ Solution(o..):
-    ___ isPalindrome  s):
+c_ Solution(o..
+    ___ isPalindrome  s
         """
         :type s: str
         :rtype: bool

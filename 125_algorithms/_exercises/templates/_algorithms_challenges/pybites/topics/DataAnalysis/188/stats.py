@@ -6,7 +6,7 @@ TMP = os.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
 STATS = os.path.j..(TMP, DATA)
-__ n.. os.path.isfile(STATS):
+__ n.. os.path.isfile(STATS
     urlretrieve(os.path.j..(S3, DATA), STATS)
 
 STATS_OUTPUT = """
@@ -31,8 +31,8 @@ ___ get_all_line_counts(data: s.. = STATS) __ l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
-    f = open(STATS)
-    r.. [i..(line.s...s.. [0]) ___ line __ open(STATS).readlines()]
+    f = o.. STATS)
+    r.. [i..(line.s...s.. [0]) ___ line __ o.. STATS).r..]
 
 
 ___ create_stats_report(data_ N..

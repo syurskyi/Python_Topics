@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ findBottomLeftValue  root):
+c_ Solution(o..
+  ___ findBottomLeftValue  root
     """
     :type root: TreeNode
     :rtype: int
     """
 
-    ___ dfs(root, h, w):
+    ___ dfs(root, h, w
       __ n.. root:
         r.. (f__("inf"), f__("inf"), N..)
       left = dfs(root.left, h - 1, w - 1)

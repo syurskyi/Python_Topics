@@ -4,37 +4,37 @@ Created on Apr 4, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ deconString  s):
+c_ Solution(o..
+    ___ deconString  s
         stack = [['', 1]]
         num = ''
         ___ c __ s:
             __ c.i..
                 num += c
-            ____ c __ '[':
+            ____ c __ ' ':
                 stack.a..(['', i..(num)])
                 num = ''
-            ____ c __ ']':
+            ____ c __ ' ':
                 st, k = stack.pop()
                 stack[-1][0] += st*k
             ____:
                 stack[-1][0] += c
         r.. stack[0][0]
     
-    ___ decodeString_own  s):
-        __ '[' n.. __ s:
+    ___ decodeString_own  s
+        __ ' ' n.. __ s:
             r.. s
         result = ''
         i, n = 0, l..(s)
         w.... i < n:
             c = s[i]
-            __ c __ '[':
+            __ c __ ' ':
                 count = 1
                 j = i+1
                 w.... j < l..(s) a.. count > 0:
-                    __ s[j] __ '[':
+                    __ s[j] __ ' ':
                         count+=1
-                    ____ s[j] __ ']':
+                    ____ s[j] __ ' ':
                         count-=1
                     j+=1
                 nextInd = j

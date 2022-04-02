@@ -4,8 +4,8 @@ Created on Feb 9, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ wordBreak  s, wordDict):
+c_ Solution(o..
+    ___ wordBreak  s, wordDict
         """
         :type s: str
         :type wordDict: List[str]

@@ -42,7 +42,7 @@ ____ pythagorean_triplet _______ (
 )
 
 
-c_ PythagoreanTripletTest(unittest.TestCase):
+c_ PythagoreanTripletTest(unittest.TestCase
     ___ test_triplet1
         ans = s..([(3, 4, 5)])
         assertEqual(primitive_triplets(4), ans)

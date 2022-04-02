@@ -18,7 +18,7 @@ The total number of nodes is at most 5000.
 
 # Definition for a Node.
 c_ Node:
-    ___ - , val, children):
+    ___ - , val, children
         val = val
         children = children
 

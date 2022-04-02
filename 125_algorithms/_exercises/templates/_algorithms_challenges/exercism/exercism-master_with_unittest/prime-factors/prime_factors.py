@@ -1,4 +1,4 @@
-___ prime_factors(num):
+___ prime_factors(num
     factors    # list
     i = 2
     w.... i <= num:

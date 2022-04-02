@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findMissingRanges  nums, lower, upper):
+c_ Solution(o..
+  ___ findMissingRanges  nums, lower, upper
     """
     :type nums: List[int]
     :type lower: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
     """
     ans    # list
     nums = [lower - 1] + nums + [upper + 1]
-    ___ i __ r..(0, l..(nums) - 1):
+    ___ i __ r..(0, l..(nums) - 1
       __ nums[i] + 2 __ nums[i + 1]:
         ans.a..(s..(nums[i] + 1))
       __ nums[i + 1] > nums[i] + 2:

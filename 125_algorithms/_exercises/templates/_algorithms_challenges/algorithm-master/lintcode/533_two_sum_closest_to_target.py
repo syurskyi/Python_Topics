@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: An integer
     @return: the difference between the sum and the target
     """
-    ___ twoSumClosest  nums, target):
+    ___ twoSumClosest  nums, target
         __ n.. nums o. l..(nums) < 2:
             r.. -1
 

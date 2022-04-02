@@ -6,7 +6,7 @@ ____ Bio _______ SeqIO
 # https://www.uniprot.org/uniprot/?query=database%3A%28type%3Aembl+AE017195%29&format=fasta (Aug 01, 2020)
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
 FASTA_FILE = os.path.j..(os.getenv("TMP", "/tmp"), "fasta_genes.fasta")
-__ n.. os.path.isfile(FASTA_FILE):
+__ n.. os.path.isfile(FASTA_FILE
     urllib.request.urlretrieve(URL, FASTA_FILE)
 
 ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
@@ -17,8 +17,8 @@ ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
     """
     new_seq = F..
     seq, info = N.., N..
-    w__ open(fasta_file) __ f:
-        fasta_list = f.readlines()
+    w__ o.. fasta_file) __ f:
+        fasta_list = f.r..
     #for line in fasta_list:
     ___ line __ fasta_list:
         __ line[:1] __ '>':

@@ -15,7 +15,7 @@ Has not been used before (use: used_passwords)
 """
 
 
-___ validate_password(password):
+___ validate_password(password
 
     length = 6 <= l..(password) <= 12
     digit = l..(__.f..(r'[0-9]', password)) >= 1

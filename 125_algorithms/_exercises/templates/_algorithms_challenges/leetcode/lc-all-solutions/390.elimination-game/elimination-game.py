@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ lastRemaining  n):
+c_ Solution(o..
+  ___ lastRemaining  n
     """
     :type n: int
     :rtype: int

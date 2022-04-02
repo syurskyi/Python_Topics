@@ -2,7 +2,7 @@ c_ Solution:
     """
     dfs/dp: optimized by memory searching
     """
-    ___ wordBreak  s, words):
+    ___ wordBreak  s, words
         """
         :type s: str
         :type words: list[str]
@@ -10,7 +10,7 @@ c_ Solution:
         """
         r.. dfs(s, s..(words), {})
 
-    ___ dfs  s, words, memo):
+    ___ dfs  s, words, memo
         __ s __ memo:
             r.. memo[s]
 
@@ -20,7 +20,7 @@ c_ Solution:
             r.. res
 
         n = l..(s)
-        ___ size __ r..(1, n + 1):
+        ___ size __ r..(1, n + 1
             prefix = s[:size]
 
             __ prefix n.. __ words:
@@ -30,7 +30,7 @@ c_ Solution:
                 res.a..(prefix)
                 _____
 
-            ___ word __ dfs(s[size:], words, memo):
+            ___ word __ dfs(s[size:], words, memo
                 res.a..('{0} {1}'.f..(prefix, word))
 
         memo[s] = res
@@ -45,7 +45,7 @@ c_ Solution:
     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
     ["a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"]
     """
-    ___ wordBreak  s, words):
+    ___ wordBreak  s, words
         """
         :type s: str
         :type words: list[str]
@@ -60,7 +60,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  s, words, ans, path):
+    ___ dfs  s, words, ans, path
         __ n.. s:
             ans.a..(' '.j..(path))
             r..
@@ -72,5 +72,5 @@ c_ Solution:
                 _____
 
             path.a..(word)
-            dfs(s[l..(word):], words, ans, path)
+            dfs(s[l..(word], words, ans, path)
             path.pop()

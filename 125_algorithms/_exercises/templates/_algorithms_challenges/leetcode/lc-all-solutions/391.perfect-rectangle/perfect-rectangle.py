@@ -1,8 +1,8 @@
 _______ heapq
 
 
-c_ Solution(o..):
-  ___ isRectangleCover  rectangles):
+c_ Solution(o..
+  ___ isRectangleCover  rectangles
     """
     :type rectangles: List[List[int]]
     :rtype: bool

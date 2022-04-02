@@ -3,22 +3,22 @@ Created on May 14, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ strobogrammaticInRange  low, high):
+c_ Solution(o..
+    ___ strobogrammaticInRange  low, high
         """
         :type low: str
         :type high: str
         :rtype: int
         """
         res = [0]
-        pairs = ['00', '11', '69', '96', '88']
-        ___ length __ r..(l..(low), l..(high)+1):
+        pairs =  '00', '11', '69', '96', '88'
+        ___ length __ r..(l..(low), l..(high)+1
             helper(low, high, 0, length-1, ['']*length, res)
         r.. res[0]
     
-    ___ helper  low, high, l, r, curr, res):
+    ___ helper  low, high, l, r, curr, res
         __ l > r:
-            __ i..(low) <= i..(''.j..(curr)) <= i..(high):
+            __ i..(low) <= i..(''.j..(curr)) <= i..(high
                 res[0] += 1
             r..
         ___ p __ pairs:
@@ -32,8 +32,8 @@ c_ Solution(o..):
     
     ___ test
         testCases = [
-            ['50', '100'],
-            ['0', '0'],
+             '50', '100' ,
+             '0', '0' ,
         ]
         ___ low, high __ testCases:
             result = strobogrammaticInRange(low, high)

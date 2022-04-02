@@ -20,20 +20,20 @@ ___ convolution2D(
 
     arrays = (image,kernel)
     # assert that both are 2D numpy arrays
-    __ n.. a..(isi..(array,np.ndarray) ___ array __ arrays):
+    __ n.. a..(isi..(array,np.ndarray) ___ array __ arrays
         r.. T..("image and kernel must be numpy arrays of dimension 2")
 
-    __ n.. a..(array.ndim __ 2 ___ array __ arrays):
+    __ n.. a..(array.ndim __ 2 ___ array __ arrays
         r.. ValueError("kernel and filter must be size 2")
         
     is_not_integer = l.... x: n.. isi..(x,i..) o. (isi..(x,f__) a.. n.. x.is_integer())
     
     
-    __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays):
+    __ n.. a..(array.shape[0] __ array.shape[1] ___ array __ arrays
         r.. ValueError("Height must equal width for both kernel and image")
     
 
-    __ n.. a..(np.issubdtype(array.dtype,np.number) ___ array __ arrays):
+    __ n.. a..(np.issubdtype(array.dtype,np.number) ___ array __ arrays
         r.. T..("Kernel and image must contain only numeric values")
 
 
@@ -53,9 +53,9 @@ ___ convolution2D(
 
     
     true_values =[]
-    ___ value,type_,min_ __ z..(values,types,mins):
+    ___ value,type_,min_ __ z..(values,types,mins
         __ value __ n.. N..
-            __ is_not_integer(value):
+            __ is_not_integer(value
                 r.. T..(f"{type_} must be integer")
             __ n.. value >= min_:
                 r.. ValueError(f"{type_}, must be greater than zero")
@@ -86,19 +86,19 @@ ___ convolution2D(
 
     output_row = output_col = 0
 
-    ___ row __ r..(0,rows,stride):
+    ___ row __ r..(0,rows,stride
         __ row + (kernel_size - 1) >= rows:
             _____
 
-        ___ col __ r..(0,cols,stride):
+        ___ col __ r..(0,cols,stride
             __ col + (kernel_size - 1) >= cols:
                 _____
 
             
             sum_ = 0
-            ___ row_diff __ r..(kernel_size):
+            ___ row_diff __ r..(kernel_size
                 current_row = row + row_diff
-                ___ col_diff __ r..(kernel_size):
+                ___ col_diff __ r..(kernel_size
                     current_col = col + col_diff
 
                     sum_ += image[current_row][current_col] * kernel[row_diff][col_diff]

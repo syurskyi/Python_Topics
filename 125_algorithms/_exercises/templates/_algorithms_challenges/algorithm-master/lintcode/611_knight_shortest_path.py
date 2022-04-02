@@ -25,7 +25,7 @@ c_ Solution:
     @param: T: a point
     @return: the shortest path
     """
-    ___ shortestPath  G, S, T):
+    ___ shortestPath  G, S, T
         __ n.. G o. n.. S o. n.. T:
             r.. -1
 
@@ -48,7 +48,7 @@ c_ Solution:
 
                     __ (0 <= _x < m a.. 0 <= _y < n a..
                         n.. G[_x][_y] a..
-                        steps < min_steps[_x][_y]):
+                        steps < min_steps[_x][_y]
 
                         __ _x __ T.x a.. _y __ T.y:
                             r.. steps

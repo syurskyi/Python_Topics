@@ -41,7 +41,7 @@ ___ get_users_for_shell(passwd_output: s.. = PASSWD_OUTPUT,
        Return a list of users.
     """
     output    # list
-    passwd_output = passwd_output.splitlines()
+    passwd_output = passwd_output.s..
     ___ line __ passwd_output:
         __ grep_shell __ line.s..('/')[-1]:
             output.a..(line.s..(':')[0])

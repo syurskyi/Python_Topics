@@ -1,4 +1,4 @@
-___ profitable_gamble(prob, prize, pay):
+___ profitable_gamble(prob, prize, pay
     __ (prob * prize) > pay:
         r.. T..
     ____:

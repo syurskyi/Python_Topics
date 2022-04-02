@@ -3,17 +3,17 @@ Created on Apr 17, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ preimageSizeFZF  K):
+c_ Solution(o..
+    ___ preimageSizeFZF  K
         """
         :type K: int
         :rtype: int
         """
         dp = [0]*13
         dp[0] = 1
-        ___ i __ r..(1, 13):
+        ___ i __ r..(1, 13
             dp[i] = dp[i-1]*5+1
-        ___ i __ r..(12, -1, -1):
+        ___ i __ r..(12, -1, -1
             __ K//dp[i] __ 5:
                 r.. 0
             K = K%dp[i]

@@ -2,7 +2,7 @@ ____ c.. _______ n..
 Member = n..("Member",'name since_days karma_points bitecoin_earned')
 
 
-___ transpose(data):
+___ transpose(data
     """Transpose a data structure
     1. dict
     data = {'2017-8': 19, '2017-9': 13}

@@ -15,8 +15,8 @@ In this case, you should ignore redundant slashes and return "/home/foo".
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ simplifyPath  path):
+c_ Solution(o..
+    ___ simplifyPath  path
         """
         use "." as intermediate
 

@@ -18,21 +18,21 @@ cur = conn.cursor()
 
 ___ import_data
     w__ requests.Session() __ session:
-        content = session.get(DATA_URL).content.decode('utf-8')
+        content = session.get(DATA_URL).content.d.. 'utf-8')
 
-    reader = csv.DictReader(content.splitlines(), delimiter=',')
+    reader = csv.DictReader(content.s.. , delimiter=',')
 
     players    # list
     ___ row __ reader:
-        players.a..(Player(name=row['Player'],
-                              year=row['Draft_Yr'],
-                              first_year=row['first_year'],
-                              team=row['Team'],
-                              college=row['College'],
-                              active=row['Yrs'],
-                              games=row['Games'],
-                              avg_min=row['Minutes.per.Game'],
-                              avg_points=row['Points.per.Game']))
+        players.a..(Player(name=row 'Player' ,
+                              year=row 'Draft_Yr' ,
+                              first_year=row 'first_year' ,
+                              team=row 'Team' ,
+                              college=row 'College' ,
+                              active=row 'Yrs' ,
+                              games=row 'Games' ,
+                              avg_min=row 'Minutes.per.Game' ,
+                              avg_points=row 'Points.per.Game' ))
 
     cur.execute('''CREATE TABLE IF NOT EXISTS players
                   (name, year, first_year, team, college, active,

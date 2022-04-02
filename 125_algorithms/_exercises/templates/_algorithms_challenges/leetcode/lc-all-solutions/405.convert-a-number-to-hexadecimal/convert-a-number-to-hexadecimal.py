@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ toHex  num):
+c_ Solution(o..
+  ___ toHex  num
     """
     :type num: int
     :rtype: str
@@ -9,7 +9,7 @@ c_ Solution(o..):
     ans = ""
     mask = 0xf0000000
     flag = F..
-    ___ i __ r..(0, 8):
+    ___ i __ r..(0, 8
       halfb = (num & mask) >> 28
       __ halfb != 0:
         flag = T..

@@ -1,8 +1,8 @@
 _______ threading
 
 
-c_ BankAccount(o..):
-    ___ - ):
+c_ BankAccount(o..
+    ___ -
         is_open = F..
         balance = 0
         lock = threading.Lock()
@@ -17,14 +17,14 @@ c_ BankAccount(o..):
     ___ open
         is_open = T..
 
-    ___ deposit  amount):
+    ___ deposit  amount
         w__ lock:
             __ is_open a.. amount > 0:
                 balance += amount
             ____:
                 r.. ValueError
 
-    ___ withdraw  amount):
+    ___ withdraw  amount
         w__ lock:
             __ is_open a.. 0 < amount <= balance:
                 balance -= amount

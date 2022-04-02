@@ -3,8 +3,8 @@ Created on Oct 31, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ sumSubseqWidths  A):
+c_ Solution(o..
+    ___ sumSubseqWidths  A
         """
         :type A: List[int]
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution(o..):
             c = (c*2)%MOD
         r.. (res+MOD)%MOD
     
-    ___ sumSubseqWidths_own_TLE  A):
+    ___ sumSubseqWidths_own_TLE  A
         """
         :type A: List[int]
         :rtype: int
@@ -29,7 +29,7 @@ c_ Solution(o..):
             res = (res + m..(arr) - m..(arr)) % (10**9+7)
         r.. res
     
-    ___ dfs  arr, idx, curr, nums):
+    ___ dfs  arr, idx, curr, nums
         __ curr:
             nums.a..(l..(curr))
         ___ i __ r..(idx, l..(arr)):

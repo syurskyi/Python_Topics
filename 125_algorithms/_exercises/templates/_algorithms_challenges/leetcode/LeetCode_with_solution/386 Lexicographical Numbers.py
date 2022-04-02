@@ -8,15 +8,15 @@ Please optimize your algorithm to use less time and space. The input size may be
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ lexicalOrder  n):
+c_ Solution(o..
+    ___ lexicalOrder  n
         """
         :type n: int
         :rtype: List[int]
         """
         ___ gen
             i = 1
-            ___ _ __ x..(n):  # erroneous for while i <= n:
+            ___ _ __ x..(n  # erroneous for while i <= n:
                 y.. i
                 __ i * 10 <= n:
                     i *= 10  # * 10
@@ -29,13 +29,13 @@ c_ Solution(o..):
 
         r.. l..(gen())
 
-    ___ lexicalOrderError  n):
+    ___ lexicalOrderError  n
         """
         :type n: int
         :rtype: List[int]
         """
         ret    # list
-        ___ i __ x..(1, 10):
+        ___ i __ x..(1, 10
             sig = 1
             w.... i * sig <= n:
                 ret.extend(r..(

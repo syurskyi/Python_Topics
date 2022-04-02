@@ -1,8 +1,8 @@
 ____ c.. _______ Counter
 
 
-c_ Solution(o..):
-  ___ findAnagrams  s, p):
+c_ Solution(o..
+  ___ findAnagrams  s, p
     """
     :type s: str
     :type p: str

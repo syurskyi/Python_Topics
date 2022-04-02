@@ -13,13 +13,13 @@ ___ rename_keys(data: Dict[Any, Any]) __ Dict[Any, Any]:
     ___ key,value __ data.i..:
 
 
-        __ isi..(key,s..):
+        __ isi..(key,s..
             key = __.sub(r'^@','',key)
 
-        __ isi..(value,d..):
+        __ isi..(value,d..
             new_dict[key] = rename_keys(value)
         ____:
-            __ isi..(value,l..):
+            __ isi..(value,l..
                 values    # list
                 ___ v __ value:
                     values.a..(rename_keys(v))

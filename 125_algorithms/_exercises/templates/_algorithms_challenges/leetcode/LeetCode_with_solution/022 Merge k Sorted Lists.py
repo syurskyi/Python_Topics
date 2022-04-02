@@ -5,12 +5,12 @@ __author__ = 'Danyang'
 _______ heapq
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 c_ Solution:
-    ___ mergeKLists_TLE1  lists):
+    ___ mergeKLists_TLE1  lists
         """
         k lists; each list has N items
         Algorithm 1:
@@ -46,7 +46,7 @@ c_ Solution:
 
         r.. lists[0]
 
-    ___ mergeKLists_TLE2  lists):
+    ___ mergeKLists_TLE2  lists
         """
 
         :param lists: a list of ListNode
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 
-    ___ mergeTwoLists  l1, l2):
+    ___ mergeTwoLists  l1, l2
         """
         Linked List
         assuming ascending order
@@ -93,7 +93,7 @@ c_ Solution:
 
         r.. dummy.next
 
-    ___ mergeKLists  lists):
+    ___ mergeKLists  lists
         """
         use heap
         heap pointer

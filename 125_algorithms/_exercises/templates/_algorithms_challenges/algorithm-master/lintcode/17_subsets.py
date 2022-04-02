@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: A set of numbers
     @return: A list of lists
     """
-    ___ subsets  A):
+    ___ subsets  A
         __ n.. A:
             r.. [[]]
 
@@ -14,10 +14,10 @@ c_ Solution:
         dfs(s..(A), 0, ans, [])
         r.. ans
 
-    ___ dfs  A, start, ans, subset):
+    ___ dfs  A, start, ans, subset
         ans.a..(subset | )
 
-        __ start >= l..(A):
+        __ start >= l..(A
             r..
 
         ___ i __ r..(start, l..(A)):
@@ -32,7 +32,7 @@ c_ Solution:
     @param: A: A set of numbers
     @return: A list of lists
     """
-    ___ subsets  A):
+    ___ subsets  A
         __ n.. A:
             r.. [[]]
 
@@ -41,9 +41,9 @@ c_ Solution:
 
         A.s..()
 
-        ___ i __ r..(1 << n):
+        ___ i __ r..(1 << n
             subset    # list
-            ___ j __ r..(n):
+            ___ j __ r..(n
                 """
                 check `j`th digit in `bin(i)`
 
@@ -53,7 +53,7 @@ c_ Solution:
                 j == 1 => 1 << 1 == 010 => 011 & 010 == 1
                 j == 2 => 1 << 2 == 100 => 011 & 100 == 0
                 """
-                __ i & (1 << j):
+                __ i & (1 << j
                     subset.a..(A[j])
 
             ans.a..(subset)

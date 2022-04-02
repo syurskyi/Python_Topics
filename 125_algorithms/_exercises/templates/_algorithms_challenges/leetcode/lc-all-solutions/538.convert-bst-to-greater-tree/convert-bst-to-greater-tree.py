@@ -5,11 +5,11 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ - ):
+c_ Solution(o..
+  ___ -
     lSum = 0
 
-  ___ convertBST  root):
+  ___ convertBST  root
     """
     :type root: TreeNode
     :rtype: TreeNode

@@ -5,7 +5,7 @@ ____ nth_prime _______ nth_prime
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ NthPrimeTests(unittest.TestCase):
+c_ NthPrimeTests(unittest.TestCase
     ___ test_first_prime
         assertEqual(nth_prime(1), 2)
 
@@ -19,7 +19,7 @@ c_ NthPrimeTests(unittest.TestCase):
         assertEqual(nth_prime(10001), 104743)
 
     ___ test_there_is_no_zeroth_prime
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             nth_prime(0)
 
     # additional track specific test

@@ -3,15 +3,15 @@ Created on Oct 11, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ constructArray  n, k):
+c_ Solution(o..
+    ___ constructArray  n, k
         """
         :type n: int
         :type k: int
         :rtype: List[int]
         """
         res = l..(r..(1, n-k))
-        ___ i __ r..(k+1):
+        ___ i __ r..(k+1
             __ i%2 __ 0:
                 res.a..(n-k+i//2)
             ____:

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ complexNumberMultiply  a, b):
+c_ Solution(o..
+  ___ complexNumberMultiply  a, b
     """
     :type a: str
     :type b: str

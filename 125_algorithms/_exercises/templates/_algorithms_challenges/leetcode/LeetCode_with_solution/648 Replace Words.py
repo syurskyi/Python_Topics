@@ -31,18 +31,18 @@ ____ c.. _______ defaultdict
 
 
 c_ Node:
-    ___ - , chr):
+    ___ - , chr
         chr = chr
         ended = F..
         children = defaultdict(l....: N..)
 
 
 c_ Trie:
-    ___ - ):
+    ___ -
         root = Node(N..)  # dummy
 
     @classmethod
-    ___ insert(cls, node, w, i):
+    ___ insert(cls, node, w, i
         __ n.. node:
             node = Node(w[i])
 
@@ -55,7 +55,7 @@ c_ Trie:
         r.. node
 
     @classmethod
-    ___ s..(cls, node, w, i):
+    ___ s..(cls, node, w, i
         __ n.. node:
             r..
 
@@ -64,7 +64,7 @@ c_ Trie:
 
         __ node.ended:
             r.. w[:i+1]
-        ____ i + 1 < l..(w):
+        ____ i + 1 < l..(w
             r.. cls.s..(node.children[w[i + 1]], w, i + 1)
         ____:
             r..
@@ -77,7 +77,7 @@ c_ Solution:
             root.children[word[0]] = Trie.insert(root.children[word[0]], word, 0)
 
         ret    # list
-        ___ word __ sentence.s..(" "):
+        ___ word __ sentence.s..(" "
             ___ child __ trie.root.children.v..
                 searched = Trie.s..(child, word, 0)
                 __ searched:

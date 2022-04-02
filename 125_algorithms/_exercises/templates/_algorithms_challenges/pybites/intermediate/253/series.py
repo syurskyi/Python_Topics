@@ -156,8 +156,8 @@ ___ custom_series_function(ser: pd.Series,
     stats = ser.describe()
 
     
-    relevant = ['min','25%','mean','50%','75%','max']
-    ___ is_between(x):
+    relevant =  'min','25%','mean','50%','75%','max'
+    ___ is_between(x
         ___ index __ relevant:
             lower,upper = stats[index] - within,stats[index] + within
             __ lower <= x <= mean:

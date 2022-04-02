@@ -35,7 +35,7 @@ EXPECTED = """
 # ############################################################################
 
 
-___ get_whole_table(table):
+___ get_whole_table(table
     """
     Receives a results table
     Returns all results in a list of lists with whitespace removed
@@ -48,7 +48,7 @@ ___ get_whole_table(table):
     ]
 
 
-___ get_field(table, field_number):
+___ get_field(table, field_number
     """
     Helper function to get a specific field from table
     Receives a results table
@@ -57,7 +57,7 @@ ___ get_field(table, field_number):
     r.. [entry[field_number] ___ entry __ get_whole_table(table)]
 
 
-___ get_codons(table):
+___ get_codons(table
     """
     Get field "codons" from table
     Receives a results table
@@ -66,7 +66,7 @@ ___ get_codons(table):
     r.. get_field(table, 0)
 
 
-___ get_amino_acids(table):
+___ get_amino_acids(table
     """
     Get field "amino acids" from table
     Receives a results table
@@ -75,7 +75,7 @@ ___ get_amino_acids(table):
     r.. get_field(table, 1)
 
 
-___ get_frequencies(table):
+___ get_frequencies(table
     """
     Get field "frequencies" from table
     Receives a results table
@@ -84,7 +84,7 @@ ___ get_frequencies(table):
     r.. get_field(table, 2)
 
 
-___ get_absolute_numbers(table):
+___ get_absolute_numbers(table
     """
     Get field "absolute numbers" from table
     Receives a results table
@@ -93,7 +93,7 @@ ___ get_absolute_numbers(table):
     r.. get_field(table, 3)
 
 
-___ get_table_bars(table):
+___ get_table_bars(table
     """
     Receives a results table
     Returns a list of bars/pipes (|) per line
@@ -101,7 +101,7 @@ ___ get_table_bars(table):
     r.. [l..(__.f..(r"\|", line)) ___ line __ table.s..("\n")]
 
 
-___ get_table_dividers(table):
+___ get_table_dividers(table
     """
     Receives a results table
     Returns a list of divider rows (------)
@@ -114,7 +114,7 @@ ___ get_table_dividers(table):
 # ############################################################################
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ result
     """
     Provide codon usage table for tests
@@ -134,7 +134,7 @@ ___ result
         get_whole_table,
     ],
 )
-___ test_table(result, function):
+___ test_table(result, function
     """
     Helper function to run all tests
     """

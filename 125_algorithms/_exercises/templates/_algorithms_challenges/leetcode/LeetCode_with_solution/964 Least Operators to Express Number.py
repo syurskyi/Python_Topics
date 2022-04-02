@@ -56,7 +56,7 @@ c_ Solution:
         r.. dfs(target, x, 0) - 1
 
     @lru_cache(maxsize=N..)
-    ___ dfs  target, x, power):
+    ___ dfs  target, x, power
         """
         power: power, pow(x, power)
         """
@@ -75,7 +75,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ ops  power):
+    ___ ops  power
         """
         number of ops required
 

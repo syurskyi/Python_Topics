@@ -3,8 +3,8 @@ Created on Feb 12, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ maximumGap  nums):
+c_ Solution(o..
+    ___ maximumGap  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -26,8 +26,8 @@ c_ Solution(o..):
             bucketsMax[idx] = m..(bucketsMax[idx], num)
         maxGap = f__('-inf')
         prev = minVal
-        ___ i __ r..(n-1):
-            __ bucketsMin[i] __ f__('inf') a.. bucketsMax[i] __ f__('-inf'):
+        ___ i __ r..(n-1
+            __ bucketsMin[i] __ f__('inf') a.. bucketsMax[i] __ f__('-inf'
                 _____
             maxGap = m..(maxGap, bucketsMin[i]-prev)
             prev = bucketsMax[i]

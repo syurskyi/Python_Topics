@@ -3,22 +3,22 @@ ____ account _______ Account
 
 
 # write your pytest functions below, they need to start with test_
-@p__.f..
+?p__.f..
 ___ einstein
     r.. Account('Einstein', 100)
 
 
-@p__.f..
+?p__.f..
 ___ socrates
     r.. Account('Socrates', 0)
 
 
-___ add_transactions(acct, values):
+___ add_transactions(acct, values
     ___ v __ values:
         acct.add_transaction(v)
 
 
-___ test_account_create(einstein):
+___ test_account_create(einstein
     ... isi..(einstein, Account)
     ... einstein.balance __ 100
     ... s..(einstein) __ 'Account of Einstein with starting amount: 100'
@@ -27,7 +27,7 @@ ___ test_account_create(einstein):
     ... repr(hector) __ "Account('Hector', 0)"
 
 
-___ test_account_transaction(einstein):
+___ test_account_transaction(einstein
     ... einstein.balance __ 100
     einstein.add_transaction(50)
     ... einstein.balance __ 150
@@ -36,7 +36,7 @@ ___ test_account_transaction(einstein):
     ... l..(einstein) __ 2
 
 
-___ test_account_bad_transaction(socrates):
+___ test_account_bad_transaction(socrates
     ... socrates.balance __ 0
     w__ p__.r..(ValueError) __ exp:
         socrates.add_transaction(3.14)
@@ -44,7 +44,7 @@ ___ test_account_bad_transaction(socrates):
     ... socrates.balance __ 0
 
 
-___ test_account_comparisons(einstein, socrates):
+___ test_account_comparisons(einstein, socrates
     ... einstein > socrates
     add_transactions(socrates, [10, 20, 30])
     ... socrates.balance __ 60
@@ -54,7 +54,7 @@ ___ test_account_comparisons(einstein, socrates):
     ... n.. (einstein < socrates)
 
 
-___ test_account_merge_accounts(einstein, socrates):
+___ test_account_merge_accounts(einstein, socrates
     ... einstein.balance __ 100 a.. socrates.balance __ 0
     add_transactions(einstein, [50, -75])
     add_transactions(socrates, [10, 20, 30])
@@ -66,7 +66,7 @@ ___ test_account_merge_accounts(einstein, socrates):
     ... pythagoras[1] __ -75
 
 
-___ test_account_bad_merge_accounts(einstein, socrates):
+___ test_account_bad_merge_accounts(einstein, socrates
     add_transactions(einstein, [50, -75])
     add_transactions(socrates, [10, 20, 30])
     kelvin = Account('Kelvin', 20)

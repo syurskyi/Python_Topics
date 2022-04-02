@@ -7,8 +7,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ canPermutePalindrome  s):
+c_ Solution(o..
+    ___ canPermutePalindrome  s
         """
         :type s: str
         :rtype: bool

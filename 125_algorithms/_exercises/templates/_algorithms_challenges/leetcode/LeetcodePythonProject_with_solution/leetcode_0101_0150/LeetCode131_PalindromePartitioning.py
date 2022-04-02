@@ -3,8 +3,8 @@ Created on Feb 8, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ partition  s):
+c_ Solution(o..
+    ___ partition  s
         """
         :type s: str
         :rtype: List[List[str]]
@@ -14,17 +14,17 @@ c_ Solution(o..):
         helper(s, 0, [], result)
         r.. result
     
-    ___ helper  s, startInd, elem, result):
-        __ startInd __ l..(s):
+    ___ helper  s, startInd, elem, result
+        __ startInd __ l..(s
             result.a..(l..(elem))
             r..
         ___ i __ r..(startInd, l..(s)):
-            __ isPalindrome(s[startInd:i+1]):
+            __ isPalindrome(s[startInd:i+1]
                 elem.a..(s[startInd:i+1])
                 helper(s, i+1, elem, result)
                 elem.pop()
     
-    ___ isPalindrome  s):
+    ___ isPalindrome  s
         __ n.. s: r.. F..
         start, end = 0, l..(s)-1
         w.... start<=end:

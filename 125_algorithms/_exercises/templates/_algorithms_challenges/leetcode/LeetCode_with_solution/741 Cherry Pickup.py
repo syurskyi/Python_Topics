@@ -42,7 +42,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         cache    # dict
 
     ___ cherryPickup  grid: List[List[i..]]) __ i..:
@@ -56,7 +56,7 @@ c_ Solution:
         """
         r.. m..(0, F(grid, 0, 0, 0))
 
-    ___ F  grid, r1, c1, r2):
+    ___ F  grid, r1, c1, r2
         n = l..(grid)
         __ (r1, c1, r2) n.. __ cache:
             ret = f__("-inf")

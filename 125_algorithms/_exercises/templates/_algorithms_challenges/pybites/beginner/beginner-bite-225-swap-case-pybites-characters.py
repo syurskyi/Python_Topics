@@ -14,7 +14,7 @@ Not much more as for our instruction, just complete convert_pybites_chars which 
 PYBITES = "pybites"
 t = "Cursus risus at ultrices mi"
 
-___ convert_pybites_chars(text):
+___ convert_pybites_chars(text
     """Swap case all characters in the word pybites for the given text.
        Return the resulting string."""
     output = ''
@@ -28,7 +28,7 @@ ___ convert_pybites_chars(text):
             output += output.j..(char)
     r.. output
 
-___ convert_pybites_chars_pybites_solution(text):
+___ convert_pybites_chars_pybites_solution(text
     """Swap case all characters in the word pybites for the given text.
        Return the resulting string."""
     r.. ''.j..(c.swapcase() __ c.l.. __ PYBITES ____ c

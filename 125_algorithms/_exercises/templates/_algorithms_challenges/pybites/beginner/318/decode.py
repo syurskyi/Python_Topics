@@ -9,8 +9,8 @@ ___ get_credit_cards(data: bytes) __ List[s..]:
     to extract the credit card numbers.
     """
     temp_list    # list
-    ___ each_name __ base64.standard_b64decode(data).splitlines
-        cc = each_name.decode('utf-8').s..(',')[2]
+    ___ each_name __ base64.standard_b64decode(data).s..
+        cc = each_name.d.. 'utf-8').s..(',')[2]
         __ cc.isnumeric
             temp_list.a..(cc)
     r.. temp_list

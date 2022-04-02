@@ -9,12 +9,12 @@ c_ Toy:
         r.. NotImplementedError('This method should have implemented.')
 
 
-c_ Dog(Toy):
+c_ Dog(Toy
     ___ talk
         print 'Wow'
 
 
-c_ Cat(Toy):
+c_ Cat(Toy
     ___ talk
         print 'Meow'
 
@@ -22,7 +22,7 @@ c_ Cat(Toy):
 c_ ToyFactory:
     # @param {string} shapeType a string
     # @return {Toy} Get object of the type
-    ___ getToy  t..):
+    ___ getToy  t..
         __ t.. __ 'Dog':
             r.. Dog()
         __ t.. __ 'Cat':

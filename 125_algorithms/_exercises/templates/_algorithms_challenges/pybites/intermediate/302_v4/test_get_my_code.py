@@ -10,7 +10,7 @@ ____ get_my_code _______ get_passing_code, url, tmp
     ('Bite01.py', 'Bite01_Expected.py'),
     ('Bite02.py', 'Bite02_Expected.py')
 ])
-___ test_compare_files(actual_filename, expected_filename):
+___ test_compare_files(actual_filename, expected_filename
     actual = tmp / actual_filename
     expected = tmp / expected_filename
     get_passing_code()

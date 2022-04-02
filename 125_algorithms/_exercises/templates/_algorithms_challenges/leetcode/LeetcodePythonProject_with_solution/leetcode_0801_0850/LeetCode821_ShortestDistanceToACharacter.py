@@ -3,8 +3,8 @@ Created on May 2, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ shortestToChar  S, C):
+c_ Solution(o..
+    ___ shortestToChar  S, C
         """
         :type S: str
         :type C: str
@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         s, c = S, C
         arr    # list
-        ___ i, c0 __ e..(s):
+        ___ i, c0 __ e..(s
             __ c0 __ c:
                 arr.a..(i)
         res    # list

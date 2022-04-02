@@ -3,8 +3,8 @@ Created on Feb 20, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ containsNearbyAlmostDuplicate  nums, k, t):
+c_ Solution(o..
+    ___ containsNearbyAlmostDuplicate  nums, k, t
         """
         :type nums: List[int]
         :type k: int
@@ -14,7 +14,7 @@ c_ Solution(o..):
         __ t < 0: r.. F..
         w = t+1
         hashmap    # dict
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             m = num//w
             __ m __ hashmap:
                 r.. T..

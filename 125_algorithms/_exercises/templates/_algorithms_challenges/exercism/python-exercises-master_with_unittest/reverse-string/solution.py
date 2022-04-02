@@ -1,2 +1,2 @@
-___ reverse(text=''):
+___ reverse(text=''
     r.. text[::-1]

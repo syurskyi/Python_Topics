@@ -4,7 +4,7 @@ _______ statistics __ st
 ____ urllib.request _______ urlretrieve
 
 STATS = path.j..('/tmp', 'testfiles_number_loc.txt')
-__ n.. path.isfile(STATS):
+__ n.. path.isfile(STATS
     urlretrieve('https://bit.ly/2Jp5CUt', STATS)
 
 STATS_OUTPUT = """
@@ -29,9 +29,9 @@ ___ get_all_line_counts(data: s.. = STATS) __ l..:
     """Get all 186 line counts from the STATS file,
        returning a list of ints"""
     # TODO 1: get the 186 ints from downloaded STATS file
-    w__ open(data) __ f:
-        content = f.read()
-    r.. l..(map(i.., __.f..(r'\s+(\d+)\s+.*?\n', content)))
+    w__ o.. data) __ f:
+        content = f.r..
+    r.. l.. m..(i.., __.f..(r'\s+(\d+)\s+.*?\n', content)))
 
 
 ___ create_stats_report(data_ N..

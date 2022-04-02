@@ -14,7 +14,7 @@ rectangular, width and height don't exceed 100. Determine the perimeter of the i
 c_ Solution:
     dirs = [(0, -1), (-1, 0), (0, 1), (1, 0)]
 
-    ___ islandPerimeter  grid):
+    ___ islandPerimeter  grid
         """
         There is constraint that one concrete island
 
@@ -28,8 +28,8 @@ c_ Solution:
             r.. ret
         R = l..(grid)
         C = l..(grid[0])
-        ___ r0 __ r..(R):
-            ___ c0 __ r..(C):
+        ___ r0 __ r..(R
+            ___ c0 __ r..(C
                 __ grid[r0][c0] __ 1:
                     ___ dr, dc __ dirs:
                         r = r0 + dr

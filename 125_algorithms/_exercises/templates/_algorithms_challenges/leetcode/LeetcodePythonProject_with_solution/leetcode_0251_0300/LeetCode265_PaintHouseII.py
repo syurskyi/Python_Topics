@@ -4,8 +4,8 @@ Created on Mar 3, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minCostII  costs):
+c_ Solution(o..
+    ___ minCostII  costs
         """
         :type costs: List[List[int]]
         :rtype: int
@@ -13,10 +13,10 @@ c_ Solution(o..):
         __ n.. costs: r.. 0
         n, k = l..(costs), l..(costs[0])
         minInd1, minInd2 = -1, -1
-        ___ i __ r..(n):
+        ___ i __ r..(n
             last1, last2 = minInd1, minInd2
             minInd1, minInd2 = -1, -1
-            ___ j __ r..(k):
+            ___ j __ r..(k
                 __ j != last1:
                     costs[i][j] += 0 __ last1 < 0 ____ costs[i-1][last1]
                 ____:
@@ -28,7 +28,7 @@ c_ Solution(o..):
                     minInd2 = j
         r.. costs[-1][minInd1]
     
-    ___ minCostII_slow  costs):
+    ___ minCostII_slow  costs
         """
         :type costs: List[List[int]]
         :rtype: int
@@ -36,10 +36,10 @@ c_ Solution(o..):
         __ n.. costs: r.. 0
         n = l..(costs)
         k = l..(costs[0])
-        ___ i __ r..(1, n):
-            ___ j __ r..(k):
+        ___ i __ r..(1, n
+            ___ j __ r..(k
                 minList    # list
-                ___ l __ r..(k):
+                ___ l __ r..(k
                     __ j != l:
                         minList.a..(costs[i-1][l])
                 costs[i][j] += m..(minList)

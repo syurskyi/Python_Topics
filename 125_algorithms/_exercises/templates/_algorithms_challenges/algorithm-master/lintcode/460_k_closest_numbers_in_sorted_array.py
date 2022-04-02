@@ -5,7 +5,7 @@ c_ Solution:
     @param: k: An integer
     @return: an integer array
     """
-    ___ kClosestNumbers  A, target, k):
+    ___ kClosestNumbers  A, target, k
         __ n.. A:
             r.. []
 
@@ -38,7 +38,7 @@ c_ Solution:
         append first if that `num` is more closer `target`
         """
         ans = [0] * k
-        ___ i __ r..(k):
+        ___ i __ r..(k
             __ left < 0:
                 ans[i] = A[right]
                 right += 1

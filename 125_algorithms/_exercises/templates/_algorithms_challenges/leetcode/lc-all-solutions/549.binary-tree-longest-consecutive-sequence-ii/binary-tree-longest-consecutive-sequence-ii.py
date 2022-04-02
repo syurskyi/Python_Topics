@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ longestConsecutive  root):
+c_ Solution(o..
+  ___ longestConsecutive  root
     """
     :type root: TreeNode
     :rtype: int
     """
 
-    ___ dfs(root):
+    ___ dfs(root
       __ n.. root:
         r.. N.., 0, 0, 0  # increasing length, decreasing length, global max length
       inc = dec = 1

@@ -5,8 +5,8 @@ ___ _load_reqs(reqs: s..) __ d..:
     '''loads reqs into a dict with keys of package names
        and values of version numbers (converted to base 10 equivs)
     '''
-    print _*{reqs.splitlines()=}')
-    lines = map(l.... x: x.s..('=='), reqs.splitlines())
+    print _*{reqs.s.. =}')
+    lines = map(l.... x: x.s..('=='), reqs.s..())
     reqs = {x[0]: version.p..(x[1]) ___ x __ lines __ x[0]}
     r.. reqs
 

@@ -12,5 +12,5 @@ ____ indents _______ count_indents
    ('  str  ing', 2),
    ('  str  ', 2),
 ])
-___ test_count_indents(input_string, count):
+___ test_count_indents(input_string, count
     ... count_indents(input_string) __ count

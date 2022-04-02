@@ -3,8 +3,8 @@ Created on Sep 9, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ leastInterval  tasks, n):
+c_ Solution(o..
+    ___ leastInterval  tasks, n
         """
         :type tasks: List[str]
         :type n: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
             i -= 1
         r.. m..(l..(tasks), (arr[-1]-1)*(n+1)+25-i)
     
-    ___ leastInterval_own  tasks, n):
+    ___ leastInterval_own  tasks, n
         """
         :type tasks: List[str]
         :type n: int
@@ -60,11 +60,11 @@ c_ Solution(o..):
     ___ test
         testCases = [
             [
-                ['A', 'A', 'A', 'B', 'B', 'B'],
+                 'A', 'A', 'A', 'B', 'B', 'B' ,
                 2,
             ],
             [
-                ['A','A','A','A','A','A','B','C','D','E','F','G'],
+                 'A','A','A','A','A','A','B','C','D','E','F','G' ,
                 2,
             ],
         ]

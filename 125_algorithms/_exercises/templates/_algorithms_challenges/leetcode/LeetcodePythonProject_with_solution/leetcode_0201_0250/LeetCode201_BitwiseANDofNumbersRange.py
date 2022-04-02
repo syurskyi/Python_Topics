@@ -4,8 +4,8 @@ Created on Feb 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ rangeBitwiseAnd  m, n):
+c_ Solution(o..
+    ___ rangeBitwiseAnd  m, n
         """
         :type m: int
         :type n: int

@@ -5,8 +5,8 @@ nums[0] <= nums[1] >= nums[2] <= nums[3]...
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ wiggleSort  nums):
+c_ Solution(o..
+    ___ wiggleSort  nums
         """
         Solve by enumerating examples
         Sort-based: interleave the small half and large half
@@ -17,8 +17,8 @@ c_ Solution(o..):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         i = 0
-        ___ elt __ s..(nums):
-            __ i >= l..(nums):
+        ___ elt __ s..(nums
+            __ i >= l..(nums
                 i = 1
             nums[i] = elt
             i += 2

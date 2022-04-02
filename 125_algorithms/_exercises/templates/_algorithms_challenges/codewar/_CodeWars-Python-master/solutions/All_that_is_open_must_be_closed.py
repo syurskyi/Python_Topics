@@ -2,7 +2,7 @@
 All that is open must be closed...
 http://www.codewars.com/kata/55679d644c58e2df2a00009c/train/python
 """
-___ is_balanced(source, caps):
+___ is_balanced(source, caps
     count    # dict
     stack    # list
     ___ c __ source:

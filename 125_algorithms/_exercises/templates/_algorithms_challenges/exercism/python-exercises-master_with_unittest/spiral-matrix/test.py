@@ -6,7 +6,7 @@ ____ spiral_matrix _______ spiral
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
 
-c_ SpiralMatrixTest(unittest.TestCase):
+c_ SpiralMatrixTest(unittest.TestCase
     ___ test_spiral_matrix_with_size_0
         assertEqual(spiral(0), [])
 

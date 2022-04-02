@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ addStrings  a, b):
+    ___ addStrings  a, b
         """
         :type a: str
         :type b: str

@@ -8,7 +8,7 @@ c_ Solution:
     @param: m: an integer
     @return: an integer
     """
-    ___ backPackIII  A, V, m):
+    ___ backPackIII  A, V, m
         __ n.. A o. n.. V o. n.. m:
             r.. 0
 
@@ -18,7 +18,7 @@ c_ Solution:
 
         _val = 0
         ___ i __ r..(l..(A)):
-            ___ w __ r..(A[i], m + 1):
+            ___ w __ r..(A[i], m + 1
                 _val = dp[w - A[i]] + V[i]
                 __ _val > dp[w]:
                     dp[w] = _val
@@ -36,7 +36,7 @@ c_ Solution:
     @param: m: an integer
     @return: an integer
     """
-    ___ backPackIII  A, V, m):
+    ___ backPackIII  A, V, m
         __ n.. A o. n.. V o. n.. m:
             r.. 0
 
@@ -46,8 +46,8 @@ c_ Solution:
         # with weight `w` in the former `i` items
         dp = [[0] * (m + 1) ___ _ __ r..(n + 1)]
 
-        ___ i __ r..(1, n + 1):
-            ___ w __ r..(1, m + 1):
+        ___ i __ r..(1, n + 1
+            ___ w __ r..(1, m + 1
                 dp[i][w] = dp[i - 1][w]
 
                 __ w >= A[i - 1]:

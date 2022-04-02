@@ -38,7 +38,7 @@ In calls to MyCalendar.book(start, end), start and end are integers in the range
 
 
 c_ Node:
-    ___ - , s, e):
+    ___ - , s, e
         s = s
         e = e
         left = N..
@@ -46,7 +46,7 @@ c_ Node:
 
 
 c_ MyCalendar:
-    ___ - ):
+    ___ -
         """
         binary search
         disregard

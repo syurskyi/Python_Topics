@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ combinationSum2  candidates, target):
+c_ Solution(o..
+  ___ combinationSum2  candidates, target
     """
     :type candidates: List[int]
     :type target: int
     :rtype: List[List[int]]
     """
 
-    ___ dfs(nums, target, start, visited, path, res):
+    ___ dfs(nums, target, start, visited, path, res
       __ target __ 0:
         res.a..(path + [])
         r..

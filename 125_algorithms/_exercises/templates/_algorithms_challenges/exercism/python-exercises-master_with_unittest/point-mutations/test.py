@@ -3,7 +3,7 @@ _______ unittest
 ____ point_mutations _______ hamming_distance
 
 
-c_ PointMutationsTest(unittest.TestCase):
+c_ PointMutationsTest(unittest.TestCase
     ___ test_no_difference_between_empty_strands
         assertEqual(hamming_distance('', ''), 0)
 

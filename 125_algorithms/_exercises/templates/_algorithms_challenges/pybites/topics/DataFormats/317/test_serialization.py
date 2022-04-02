@@ -9,7 +9,7 @@ ____ serialization _______ (download_pickle_file,
                            MovieRented)
 
 
-c_ Bite(NamedTuple):
+c_ Bite(NamedTuple
     title: s..
     number: i..
     level: s..

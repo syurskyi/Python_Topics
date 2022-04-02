@@ -1,7 +1,7 @@
 data = i..(input())
 s__ = ''
 
-___ i __ r..(data):
+___ i __ r..(data
     a = [i..(j) ___ j __ input().s.. ]
     dest_a = a[:l..(a)//2]
     dest_b = a[l..(a)//2:]

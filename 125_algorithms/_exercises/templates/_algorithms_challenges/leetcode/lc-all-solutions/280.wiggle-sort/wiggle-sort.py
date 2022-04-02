@@ -1,8 +1,8 @@
 _______ r__
 
 
-c_ Solution(o..):
-  ___ wiggleSort  nums):
+c_ Solution(o..
+  ___ wiggleSort  nums
     """
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
@@ -41,7 +41,7 @@ c_ Solution(o..):
     ___ i __ r..(0, l..(nums)):
       nums[i] = ans[i]
 
-  ___ quickselect  start, end, A, k):
+  ___ quickselect  start, end, A, k
     __ start __ end:
       r.. A[start]
 
@@ -54,7 +54,7 @@ c_ Solution(o..):
     ____:
       r.. quickselect(mid + 1, end, A, k)
 
-  ___ partition  start, end, A):
+  ___ partition  start, end, A
     left, right = start, end
     pivot = A[left]
     w.... left < right:

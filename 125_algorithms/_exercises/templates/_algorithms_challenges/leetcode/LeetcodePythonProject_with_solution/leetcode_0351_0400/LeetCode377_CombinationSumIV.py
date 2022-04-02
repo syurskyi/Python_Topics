@@ -4,12 +4,12 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ combinationSum4  nums, target):
+c_ Solution(o..
+    ___ combinationSum4  nums, target
         __ n.. nums: r.. 0
         dp = [0]*(target+1)
         dp[0] = 1
-        ___ i __ r..(target+1):
+        ___ i __ r..(target+1
             ___ num __ nums:
                 __ i+num <= target:
                     dp[i+num] += dp[i]

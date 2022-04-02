@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ evalRPN  tokens):
+c_ Solution(o..
+  ___ evalRPN  tokens
     """
     :type tokens: List[str]
     :rtype: int

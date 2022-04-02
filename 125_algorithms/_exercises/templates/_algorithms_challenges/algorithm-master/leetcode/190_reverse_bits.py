@@ -2,7 +2,7 @@
 c_ Solution:
     # @param n, an integer
     # @return an integer
-    ___ reverseBits  n):
+    ___ reverseBits  n
         __ n.. n:
             r.. 0
 
@@ -11,7 +11,7 @@ c_ Solution:
         ans = 0
         msk = 15  # 15 (10) == 1111 (2)
 
-        ___ i __ r..(8):
+        ___ i __ r..(8
             ans <<= 4
             curr = n & msk
             ans |= rev[curr]
@@ -24,13 +24,13 @@ c_ Solution:
 c_ Solution:
     # @param n, an integer
     # @return an integer
-    ___ reverseBits  n):
+    ___ reverseBits  n
         ans = 0
 
         __ n.. n:
             r.. ans
 
-        ___ i __ r..(32):
+        ___ i __ r..(32
             ans <<= 1
             ans |= n & 1
             n >>= 1

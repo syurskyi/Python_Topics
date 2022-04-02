@@ -1,15 +1,15 @@
 c_ TrieNode:
-    ___ - ):
+    ___ -
         end_of = N..
         children    # dict
 
 
 c_ Trie:
-    ___ - ):
+    ___ -
         root = TrieNode()
 
-    ___ put  word):
-        __ n.. isi..(word, s..):
+    ___ put  word
+        __ n.. isi..(word, s..
             r..
 
         node = root
@@ -24,7 +24,7 @@ c_ Trie:
 
 
 c_ Solution:
-    ___ kDistance  words, target, k):
+    ___ kDistance  words, target, k
         """
         :type words: list[str]
         :type target: str
@@ -43,7 +43,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ dfs  node, k, target, ans, pre):
+    ___ dfs  node, k, target, ans, pre
         n = l..(target)
 
         __ node.end_of __ n.. N.. a.. pre[n] <= k:
@@ -54,7 +54,7 @@ c_ Solution:
         ___ c __ node.children:
             dp[0] = pre[0] + 1
 
-            ___ i __ r..(1, n + 1):
+            ___ i __ r..(1, n + 1
                 __ target[i - 1] __ c:
                     dp[i] = m..(
                         dp[i - 1] + 1,

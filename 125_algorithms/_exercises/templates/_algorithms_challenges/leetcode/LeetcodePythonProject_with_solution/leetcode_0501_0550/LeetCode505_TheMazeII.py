@@ -4,8 +4,8 @@ Created on May 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ shortestDistance  maze, start, destination):
+c_ Solution(o..
+    ___ shortestDistance  maze, start, destination
         """
         :type maze: List[List[int]]
         :type start: List[int]
@@ -23,12 +23,12 @@ c_ Solution(o..):
             __ i __ destination[0] a.. j __ destination[1]:
                 r.. currDist
             visited[i][j] = T..
-            ___ x, y, dist __ getNextSteps(maze, i, j):
+            ___ x, y, dist __ getNextSteps(maze, i, j
                 __ n.. visited[x][y]:
                     heapq.heappush(heap, (currDist+dist, x, y))
         r.. -1
     
-    ___ getNextSteps  maze, i, j):
+    ___ getNextSteps  maze, i, j
         m, n = l..(maze), l..(maze[0])
         steps = s..()
         dirs = (1, 0), (0, 1), (-1, 0), (0, -1)

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ canWinNim  n):
+c_ Solution(o..
+  ___ canWinNim  n
     """
     :type n: int
     :rtype: bool

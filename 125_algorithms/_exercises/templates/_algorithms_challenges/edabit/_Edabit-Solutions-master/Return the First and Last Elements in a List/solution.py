@@ -1,4 +1,4 @@
-___ first_last(lst):
+___ first_last(lst
     r.. [lst[0], lst[-1]]
 
 

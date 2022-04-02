@@ -18,13 +18,13 @@ BITES = {6: 'PyBites Die Hard',
 BITES_DONE = {6, 10, 16, 18, 21}
 
 
-c_ NoBitesAvailable(E..):
+c_ NoBitesAvailable(E..
     """There are no more Bites available to pick from"""
 
 
 c_ Promo:
 
-    ___ - ):
+    ___ -
         # updated Bite to make local copies (avoid globals!)
         all_bites = BITES.c..
         bites_done = BITES_DONE.c..
@@ -32,7 +32,7 @@ c_ Promo:
     ___ _pick_random_bite
         """Pick a random Bite that is not done yet, if all
            Bites are done, raise a NoBitesAvailable exception"""
-        __ l..(all_bites) > l..(bites_done):
+        __ l..(all_bites) > l..(bites_done
             entry_list = l..(all_bites.i..
             w... T...
                 random_entry = r__.choice(entry_list)

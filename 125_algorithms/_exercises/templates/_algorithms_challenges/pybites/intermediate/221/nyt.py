@@ -8,7 +8,7 @@ URL_NON_FICTION =  _*https://api.nytimes.com/svc/books/v3/lists/current/'
 URL_FICTION = URL_NON_FICTION.r..('nonfiction', 'fiction')
 
 
-___ get_best_seller_titles(url=URL_NON_FICTION):
+___ get_best_seller_titles(url=URL_NON_FICTION
     """Use the NY Times Books API endpoint above to get the titles that are
        on the best seller list for the longest time.
 
@@ -45,8 +45,8 @@ ___ get_best_seller_titles(url=URL_NON_FICTION):
         results = response.json()
 
 
-        ___ book __ results['results']['books']:
-            books.a..((book['title'],book['weeks_on_list']))
+        ___ book __ results 'results'  'books' :
+            books.a..((book 'title' ,book 'weeks_on_list' ))
         r.. books
         
 

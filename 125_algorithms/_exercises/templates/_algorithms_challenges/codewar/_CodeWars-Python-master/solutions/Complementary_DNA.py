@@ -2,7 +2,7 @@
 7 kyu: Complementary DNA
 http://www.codewars.com/kata/554e4a2f232cdd87d9000038/train/python
 """
-___ DNA_strand(dna):
+___ DNA_strand(dna
     complements = {
         'A': 'T',
         'T': 'A',

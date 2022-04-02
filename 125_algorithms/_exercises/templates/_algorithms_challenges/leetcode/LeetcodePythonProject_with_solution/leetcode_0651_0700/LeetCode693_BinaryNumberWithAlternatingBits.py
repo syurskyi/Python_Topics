@@ -3,8 +3,8 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ hasAlternatingBits  n):
+c_ Solution(o..
+    ___ hasAlternatingBits  n
         """
         :type n: int
         :rtype: bool

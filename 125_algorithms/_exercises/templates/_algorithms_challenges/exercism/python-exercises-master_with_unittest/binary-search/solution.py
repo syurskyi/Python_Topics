@@ -1,4 +1,4 @@
-___ binary_search(search_list, value):
+___ binary_search(search_list, value
     low = 0
     high = l..(search_list) - 1
     w.... low <= high:

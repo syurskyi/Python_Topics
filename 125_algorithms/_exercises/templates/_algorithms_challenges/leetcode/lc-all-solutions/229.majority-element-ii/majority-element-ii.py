@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ majorityElement  nums):
+c_ Solution(o..
+  ___ majorityElement  nums
     """
     :type nums: List[int]
     :rtype: List[int]

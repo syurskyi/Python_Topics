@@ -44,7 +44,7 @@ c_ Solution:
 
         mini = f__('inf')
         maxa = -f__('inf')
-        ___ i __ r..(lo, hi + 1):
+        ___ i __ r..(lo, hi + 1
             mini = m..(mini, nums[i])
             maxa = m..(maxa, nums[i])
 

@@ -7,7 +7,7 @@ ____ rational_numbers _______ Rational
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
 
-c_ RationalNumbersTest(unittest.TestCase):
+c_ RationalNumbersTest(unittest.TestCase
 
     # Test addition
     ___ test_add_two_positive

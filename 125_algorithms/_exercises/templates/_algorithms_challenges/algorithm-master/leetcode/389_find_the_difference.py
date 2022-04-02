@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findTheDifference  s, t):
+    ___ findTheDifference  s, t
         """
         :type s: str
         :type t: str
@@ -16,7 +16,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ findTheDifference  s, t):
+    ___ findTheDifference  s, t
         """
         :type s: str
         :type t: str

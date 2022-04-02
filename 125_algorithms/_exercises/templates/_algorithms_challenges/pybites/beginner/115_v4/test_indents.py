@@ -9,5 +9,5 @@ ____ Previous.indents _______ count_indents
    ('    string', 4),
    ('            string', 12),
 ])
-___ test_count_indents(input_string, count):
+___ test_count_indents(input_string, count
     ... count_indents(input_string) __ count

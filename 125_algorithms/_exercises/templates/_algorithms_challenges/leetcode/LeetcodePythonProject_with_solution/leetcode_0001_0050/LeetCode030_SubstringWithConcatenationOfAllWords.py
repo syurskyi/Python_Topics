@@ -3,8 +3,8 @@ Created on Nov 1, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findSubstring  s, words):
+c_ Solution(o..
+    ___ findSubstring  s, words
         """
         :type s: str
         :type words: List[str]
@@ -16,11 +16,11 @@ c_ Solution(o..):
         ___ word __ words:
             hashmap0[word] = hashmap0.get(word, 0)+1
         wordLen = l..(words[0])
-        ___ j __ r..(wordLen):
+        ___ j __ r..(wordLen
             hashmap    # dict
             start = j
             count = 0
-            ___ i __ r..(j, l..(s)-wordLen+1, wordLen):
+            ___ i __ r..(j, l..(s)-wordLen+1, wordLen
                 sub = s[i:i+wordLen]
                 __ sub __ hashmap0:
                     hashmap[sub] = hashmap.get(sub, 0)+1
@@ -30,7 +30,7 @@ c_ Solution(o..):
                         hashmap[left] -= 1
                         count -= 1
                         start += wordLen
-                    __ count __ l..(words):
+                    __ count __ l..(words
                         res.a..(start)
                         left = s[start:start+wordLen]
                         hashmap[left] -= 1
@@ -46,7 +46,7 @@ c_ Solution(o..):
         testCases = [
             [
                 'barfoothefoobarman',
-                ['foo', 'bar'],
+                 'foo', 'bar' ,
             ],
             [
                 'barfoofoobarthefoobarman',
@@ -58,7 +58,7 @@ c_ Solution(o..):
             ],
             [
                 'aaa',
-                ['a', 'a']
+                 'a', 'a'
             ],
         ]
         ___ s, words __ testCases:

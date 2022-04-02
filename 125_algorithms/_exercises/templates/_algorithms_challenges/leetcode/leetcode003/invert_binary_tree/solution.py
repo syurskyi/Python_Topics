@@ -22,8 +22,8 @@ to
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-    ___ invertTree  root):
+c_ Solution(o..
+    ___ invertTree  root
         """
         :type root: TreeNode
         :rtype: TreeNode

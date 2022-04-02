@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ pathSum  root, target):
+c_ Solution(o..
+  ___ pathSum  root, target
     """
     :type root: TreeNode
     :type target: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
     count = 0
     preDict = {0: 1}
 
-    ___ dfs(p, target, pathSum, preDict):
+    ___ dfs(p, target, pathSum, preDict
       __ p:
         pathSum += p.val
         count += preDict.get(pathSum - target, 0)

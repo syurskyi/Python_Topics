@@ -3,8 +3,8 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ xorGame  nums):
+c_ Solution(o..
+    ___ xorGame  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -13,7 +13,7 @@ c_ Solution(o..):
         ____ operator _______ xor
         r.. l..(nums)%2__0 o. reduce(xor,nums)__0
     
-    ___ xorGame_own_TLE  nums):
+    ___ xorGame_own_TLE  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -21,7 +21,7 @@ c_ Solution(o..):
         mem    # dict
         r.. helper(nums, mem)
     
-    ___ helper  nums, mem):
+    ___ helper  nums, mem
         s = s..(nums)
         __ s __ mem:
             r.. mem[s]
@@ -30,13 +30,13 @@ c_ Solution(o..):
             r.. T..
         flag = F..
         ___ i __ r..(l..(nums)):
-            __ n.. helper(nums[:i]+nums[i+1:], mem):
+            __ n.. helper(nums[:i]+nums[i+1:], mem
                 flag = T..
                 _____
         mem[s] = flag
         r.. flag
     
-    ___ calc  nums):
+    ___ calc  nums
         res = 0
         ___ num __ nums:
             res ^= num

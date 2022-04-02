@@ -12,7 +12,7 @@ to 1,000,000.
 """
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -22,7 +22,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         count = 0
 
     ___ pathSum  root: TreeNode, target: i..) __ i..:
@@ -35,7 +35,7 @@ c_ Solution:
         dfs(root, target, 0, defaultdict(i..))
         r.. count
 
-    ___ dfs  node, target, cur_sum, prefix_sum_counter):
+    ___ dfs  node, target, cur_sum, prefix_sum_counter
         __ n.. node:
             r..
 
@@ -53,7 +53,7 @@ c_ Solution:
         
 
 c_ SolutionComplex:
-    ___ pathSum  root, s..):
+    ___ pathSum  root, s..
         """
         Brute force: two dfs, O(n^2)
 
@@ -66,7 +66,7 @@ c_ SolutionComplex:
         dfs(root, s.., 0, {}, count)
         r.. count[0]
 
-    ___ dfs  root, s.., cur_sum, prefix_sum, count):
+    ___ dfs  root, s.., cur_sum, prefix_sum, count
         """
         Root to node sum
         prefix_sum: Dict[int, int], sum -> count

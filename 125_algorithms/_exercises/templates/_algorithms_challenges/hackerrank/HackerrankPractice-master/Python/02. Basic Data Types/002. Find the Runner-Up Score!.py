@@ -3,5 +3,5 @@
 
 
 n = i..(input())
-arr = l..(map(i.., input().s..()))
+arr = l.. m..(i.., input().s..()))
 print(m..([x ___ x __ arr __ x != m..(arr)]))

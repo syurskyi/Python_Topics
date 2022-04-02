@@ -5,14 +5,14 @@ Created on Mar 4, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ closestValue  root, target):
+c_ Solution(o..
+    ___ closestValue  root, target
         """
         :type root: TreeNode
         :type target: float
@@ -20,7 +20,7 @@ c_ Solution(o..):
         """
         result= root.val
         w.... root:
-            __ abs(target - root.val) < abs(target-result):
+            __ abs(target - root.val) < abs(target-result
                 result = root.val
             __ root.val > target:
                 root = root.left

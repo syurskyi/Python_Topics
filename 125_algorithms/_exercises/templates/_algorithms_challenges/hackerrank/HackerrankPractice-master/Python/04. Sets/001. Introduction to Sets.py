@@ -2,5 +2,5 @@
 # Score: 10
 
 
-___ average(array):
+___ average(array
     r.. s..(s..(array)) / l..(s..(array))

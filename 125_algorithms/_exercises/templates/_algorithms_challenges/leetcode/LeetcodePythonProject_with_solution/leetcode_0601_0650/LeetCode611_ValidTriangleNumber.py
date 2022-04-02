@@ -3,15 +3,15 @@ Created on Sep 6, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ triangleNumber  nums):
+c_ Solution(o..
+    ___ triangleNumber  nums
         """
         :type nums: List[int]
         :rtype: int
         """
         nums.s..()
         count = 0
-        ___ i __ r..(l..(nums)-1, 0, -1):
+        ___ i __ r..(l..(nums)-1, 0, -1
             l, r = 0, i-1
             w.... l < r:
                 __ nums[l]+nums[r] > nums[i]:

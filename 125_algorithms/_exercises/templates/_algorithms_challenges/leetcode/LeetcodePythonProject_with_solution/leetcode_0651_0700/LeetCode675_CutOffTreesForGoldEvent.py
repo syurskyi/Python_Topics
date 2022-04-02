@@ -5,8 +5,8 @@ Created on Oct 16, 2017
 '''
 _______ heapq
 
-c_ Solution(o..):
-    ___ cutOffTree  forest):
+c_ Solution(o..
+    ___ cutOffTree  forest
         """
         :type forest: List[List[int]]
         :rtype: int
@@ -14,8 +14,8 @@ c_ Solution(o..):
         __ n.. forest o. n.. forest[0]: r.. 0
         m, n = l..(forest), l..(forest[0])
         heap    # list
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ forest[i][j] > 1:
                     heapq.heappush(heap, (forest[i][j], i, j))
         sumVal = 0
@@ -28,7 +28,7 @@ c_ Solution(o..):
             x, y = i, j
         r.. sumVal
     
-    ___ minStep  forest, x, y, i, j, h, m, n):
+    ___ minStep  forest, x, y, i, j, h, m, n
         step = 0
         visited = [[F..]*n ___ _ __ r..(m)]
         visited[x][y] = T..
@@ -36,10 +36,10 @@ c_ Solution(o..):
         queue.a..((x, y))
         w.... queue:
             size = l..(queue)
-            ___ _ __ r..(size):
+            ___ _ __ r..(size
                 i0, j0 = queue.pop(0)
                 __ i0 __ i a.. j0 __ j: r.. step
-                ___ i1, j1 __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1):
+                ___ i1, j1 __ (i0+1, j0), (i0-1, j0), (i0, j0+1), (i0, j0-1
                     __ i1 < 0 o. i1 >= m o. j1 < 0 o. j1 >= n o.\
                         forest[i1][j1] __ 0 o. visited[i1][j1]:
                         _____

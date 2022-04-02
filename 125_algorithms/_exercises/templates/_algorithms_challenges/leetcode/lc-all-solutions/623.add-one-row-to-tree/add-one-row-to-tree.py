@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ addOneRow  root, v, d):
+c_ Solution(o..
+  ___ addOneRow  root, v, d
     """
     :type root: TreeNode
     :type v: int

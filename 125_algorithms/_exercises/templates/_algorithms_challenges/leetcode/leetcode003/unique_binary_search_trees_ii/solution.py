@@ -7,16 +7,16 @@
 
 c_ Solution:
     # @return a list of tree node
-    ___ generateTrees  n):
+    ___ generateTrees  n
         a = r..(1, n + 1)
         r.. generate_bst(a)
 
-    ___ generate_bst  a):
+    ___ generate_bst  a
         __ n.. a:
             r.. [N..]
         ____:
             res    # list
-            ___ i, c __ e..(a):
+            ___ i, c __ e..(a
                 left = generate_bst(a[:i])
                 right = generate_bst(a[i + 1:])
                 ___ l __ left:

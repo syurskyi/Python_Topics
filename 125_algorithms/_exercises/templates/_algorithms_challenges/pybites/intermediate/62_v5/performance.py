@@ -4,7 +4,7 @@ ____ typing _______ List, Set
 ____ time _______ time
 
 
-___ timing(f):
+___ timing(f
     """A simple timer decorator to print the elapsed time of
        the execution of the function it wraps.
        Returns (timing, result) tuple"""
@@ -60,7 +60,7 @@ ___ list_concat_fast(sequence: List[s..]) __ s..:
 @timing
 ___ list_inserts(n: i..) __ List[i..]:
     lst    # list
-    ___ i __ r..(n):
+    ___ i __ r..(n
         lst.insert(0, i)
     r.. lst
 
@@ -73,11 +73,11 @@ ___ list_inserts_fast(n: i..) __ List[i..]:
 @timing
 ___ list_creation(n: i..) __ List[i..]:
     lst    # list
-    ___ i __ r..(n):
+    ___ i __ r..(n
         lst.a..(i)
     r.. lst
 
 
 @timing
-___ list_creation_fast(n: i..):
+___ list_creation_fast(n: i..
     y.. ____ (v ___ v __ r..(n))

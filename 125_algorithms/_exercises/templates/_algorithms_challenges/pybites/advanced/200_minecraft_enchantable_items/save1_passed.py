@@ -34,7 +34,7 @@ c_ Enchantment:
     ___ __str__
         r.. f"{name} ({max_level}): {description}"
 
-    ___ __lt__  other):
+    ___ __lt__  other
         r.. id_name < other.id_name
 
 
@@ -51,7 +51,7 @@ c_ Item:
         r.. f"{name.t..}: {''.j..(enc_list)}"
 
 
-___ clean_up_names(item_names):
+___ clean_up_names(item_names
     """Cleans up item names
 
     :param item_names: String of item names
@@ -74,7 +74,7 @@ ___ clean_up_names(item_names):
     r.. " ".j..(item_names)
 
 
-___ enchantable_items(soup):
+___ enchantable_items(soup
     """Scrapes BeautifulSoup object for items
 
     :param soup: BeautifulSoup object
@@ -89,7 +89,7 @@ ___ enchantable_items(soup):
     r.. items
 
 
-___ generate_enchantments(soup):
+___ generate_enchantments(soup
     """Generates a dictionary of Enchantment objects
 
     :param soup: BeautifulSoup object
@@ -99,7 +99,7 @@ ___ generate_enchantments(soup):
     data = parse_html(soup)
     enchant_data: DefaultDict[Any, Enchantment] = defaultdict(Enchantment)
 
-    ___ i, row __ e..(data):
+    ___ i, row __ e..(data
         id_name, name = split_title(row[0])
         max_level = ROMAN[row[1]]
         description = row[2]
@@ -110,7 +110,7 @@ ___ generate_enchantments(soup):
     r.. enchant_data
 
 
-___ generate_items(data):
+___ generate_items(data
     """Generates a dictionary of Item objects
 
     :param data: DefaultDict of Enchantment objects
@@ -129,7 +129,7 @@ ___ generate_items(data):
     r.. mc_items
 
 
-___ gen_item_set(data):
+___ gen_item_set(data
     """Returns a set of item names
 
     :param data: Dictionary of Enchantment objects
@@ -143,17 +143,17 @@ ___ gen_item_set(data):
     r.. s..(mc_items)
 
 
-___ get_soup(file=HTML_FILE):
+___ get_soup(file=HTML_FILE
     """Retrieves source HTML and returns a BeautifulSoup object
 
     :param file: Path file object
     :return: BeautifulSoup object
     """
-    __ isi..(file, Path):
+    __ isi..(file, Path
         __ n.. HTML_FILE.is_file
             urlretrieve(URL, HTML_FILE)
 
-        w__ file.open() __ html_source:
+        w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")
     ____:
         soup = Soup(file, "html.parser")
@@ -170,7 +170,7 @@ ___ main
         print(minecraft_items[item], "\n")
 
 
-___ parse_html(soup):
+___ parse_html(soup
     """Parses BeautifulSoup object and returns the table
 
     :param soup: BeautifulSoup object
@@ -184,7 +184,7 @@ ___ parse_html(soup):
     r.. data[1:]
 
 
-___ split_title(title):
+___ split_title(title
     """
     Splits the title string
 

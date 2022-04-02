@@ -3,11 +3,11 @@ Created on May 1, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         hashmap = {0:0}
     
-    ___ racecar  target):
+    ___ racecar  target
         """
         :type target: int
         :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
             hashmap[target] = n
         ____:
             hashmap[target] = racecar(2**n-1-target)+n+1
-            ___ m __ r..(n-1):
+            ___ m __ r..(n-1
                 hashmap[target] = m..(hashmap[target],\
                             racecar(target-2**(n-1)+2**m)+n+m+1)
         r.. hashmap[target]

@@ -40,12 +40,12 @@ c_ Solution:
         """
         ret    # list
         ___ w __ words:
-            __ m..(w, pattern):
+            __ m..(w, pattern
                 ret.a..(w)
         r.. ret
 
-    ___ m..  word, pattern):
-        __ l..(word) != l..(pattern):
+    ___ m..  word, pattern
+        __ l..(word) != l..(pattern
             r.. F..
 
         m    # dict

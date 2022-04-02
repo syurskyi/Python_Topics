@@ -7,8 +7,8 @@ algorithm to find the maximum profit.
 __author__ = 'Danyang'
 
 
-c_ Solution(o..):
-    ___ maxProfit  A):
+c_ Solution(o..
+    ___ maxProfit  A
         """
         Maximum subarray sum
         DP version
@@ -20,13 +20,13 @@ c_ Solution(o..):
         n = l..(A)
         F = [0 ___ _ __ x..(n+1)]
         maxa = 0
-        ___ i __ x..(2, n+1):
+        ___ i __ x..(2, n+1
             F[i] = m..(F[i-1] + A[i-1] - A[i-2], 0)  # revert the previous transaction
             maxa = m..(maxa, F[i])
 
         r.. maxa
 
-    ___ maxProfitDelta  prices):
+    ___ maxProfitDelta  prices
         """
         Only long position allowed, cannot short
 

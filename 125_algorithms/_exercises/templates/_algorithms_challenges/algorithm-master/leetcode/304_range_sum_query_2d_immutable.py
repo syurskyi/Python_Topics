@@ -6,7 +6,7 @@ param_1 = obj.sumRegion(x1, y1, x2, y2)
 
 
 c_ NumMatrix:
-    ___ - , matrix):
+    ___ - , matrix
         """
         :type matrix: List[List[int]]
         """
@@ -16,8 +16,8 @@ c_ NumMatrix:
         m, n = l..(matrix), l..(matrix[0])
         prefix_sum = [[0] * (n + 1) ___ _ __ r..(m + 1)]
 
-        ___ x __ r..(1, m + 1):
-            ___ y __ r..(1, n + 1):
+        ___ x __ r..(1, m + 1
+            ___ y __ r..(1, n + 1
                 prefix_sum[x][y] = s..((
                     prefix_sum[x - 1][y],
                     prefix_sum[x][y - 1],
@@ -25,7 +25,7 @@ c_ NumMatrix:
                     matrix[x - 1][y - 1],
                 ))
 
-    ___ sumRegion  x1, y1, x2, y2):
+    ___ sumRegion  x1, y1, x2, y2
         """
         :type x1: int
         :type y1: int

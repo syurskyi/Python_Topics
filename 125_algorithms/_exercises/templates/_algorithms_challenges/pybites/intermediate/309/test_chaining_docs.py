@@ -57,8 +57,8 @@ DOCS = {
 }
 
 
-@p__.f..()
-___ doc(request):
+?p__.f..()
+___ doc(request
     """Factory method for test documents"""
     r.. DOCS.get(request.param, Document())
 
@@ -70,7 +70,7 @@ ___ doc(request):
     ],
     indirect=["doc"],
 )
-___ test_correct_return_type(doc, expected):
+___ test_correct_return_type(doc, expected
     ... isi..(doc, expected)
 
 
@@ -86,7 +86,7 @@ ___ test_correct_return_type(doc, expected):
     ],
     indirect=["doc"],
 )
-___ test_len_implementation(doc, expected):
+___ test_len_implementation(doc, expected
     ... l..(doc) __ expected
 
 
@@ -102,7 +102,7 @@ ___ test_len_implementation(doc, expected):
     ],
     indirect=["doc"],
 )
-___ test_word_count_implementation(doc, expected):
+___ test_word_count_implementation(doc, expected
     ... doc.word_count() __ expected
 
 
@@ -124,7 +124,7 @@ ___ test_word_count_implementation(doc, expected):
     ],
     indirect=["doc"],
 )
-___ test_correct_chaining(doc, expected):
+___ test_correct_chaining(doc, expected
     ... s..(doc) __ expected
 
 
@@ -163,5 +163,5 @@ ___ test_correct_chaining(doc, expected):
     ],
     indirect=["doc"],
 )
-___ test_words_property(doc, expected):
+___ test_words_property(doc, expected
     ... doc.words __ expected

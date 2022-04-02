@@ -3,8 +3,8 @@ Created on Oct 8, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ isRectangleOverlap  rec1, rec2):
+c_ Solution(o..
+    ___ isRectangleOverlap  rec1, rec2
         """
         :type rec1: List[int]
         :type rec2: List[int]
@@ -14,7 +14,7 @@ c_ Solution(o..):
         x21, y21, x22, y22 = rec2
         r.. x11 < x22 a.. x21 < x12 a.. y11 < y22 a.. y21 < y12
     
-    ___ isRectangleOverlap_own  rec1, rec2):
+    ___ isRectangleOverlap_own  rec1, rec2
         """
         :type rec1: List[int]
         :type rec2: List[int]

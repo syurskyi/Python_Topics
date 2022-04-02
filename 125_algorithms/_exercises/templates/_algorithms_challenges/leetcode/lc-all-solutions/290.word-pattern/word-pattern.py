@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ wordPattern  pattern, s..):
+c_ Solution(o..
+  ___ wordPattern  pattern, s..
     """
     :type pattern: str
     :type str: str

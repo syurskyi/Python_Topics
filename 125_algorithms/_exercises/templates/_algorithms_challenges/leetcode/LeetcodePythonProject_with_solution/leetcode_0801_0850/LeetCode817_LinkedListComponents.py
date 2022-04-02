@@ -4,13 +4,13 @@ Created on May 1, 2018
 @author: tongq
 '''
 # Definition for singly-linked list.
-c_ ListNode(o..):
+c_ ListNode(o..
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(o..):
-    ___ numComponents  head, G):
+c_ Solution(o..
+    ___ numComponents  head, G
         """
         :type head: ListNode
         :type G: List[int]

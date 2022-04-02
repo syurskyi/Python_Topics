@@ -4,14 +4,14 @@ Created on Oct 8, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N..,right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ checkEqualTree  root):
+c_ Solution(o..
+    ___ checkEqualTree  root
         """
         :type root: TreeNode
         :rtype: bool
@@ -19,7 +19,7 @@ c_ Solution(o..):
         __ n.. root: r.. F..
         r.. helper(root, 0, T..)
     
-    ___ helper  root, sumVal, firstLevel):
+    ___ helper  root, sumVal, firstLevel
         __ n.. root:
             r.. F..
         __ sumVal __ s..(root) a.. n.. firstLevel:
@@ -29,14 +29,14 @@ c_ Solution(o..):
             r.. T..
         r.. F..
     
-    ___ s..  root):
+    ___ s..  root
         __ n.. root: r.. 0
         res = root.val
         res += s..(root.left)
         res += s..(root.right)
         r.. res
     
-    ___ sumVal  root):
+    ___ sumVal  root
         __ n.. root: r.. 0
         r.. root.val +\
             sumVal(root.left)+\

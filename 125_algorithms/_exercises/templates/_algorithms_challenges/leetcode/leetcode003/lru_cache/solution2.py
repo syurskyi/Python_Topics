@@ -12,8 +12,8 @@ used item before inserting a new item.
 """
 
 
-c_ LRUCache(o..):
-    ___ - , capacity):
+c_ LRUCache(o..
+    ___ - , capacity
         """
         :type capacity: int
         """
@@ -21,7 +21,7 @@ c_ LRUCache(o..):
         times = List()
         cache    # dict
 
-    ___ get  key):
+    ___ get  key
         """
         :rtype: int
         """
@@ -31,7 +31,7 @@ c_ LRUCache(o..):
             r.. node.value
         r.. -1
 
-    ___ s..  key, value):
+    ___ s..  key, value
         """
         :type key: int
         :type value: int
@@ -52,22 +52,22 @@ c_ LRUCache(o..):
             times.insert(node)
 
 
-c_ ListNode(o..):
+c_ ListNode(o..
     """Doubly Linked List node"""
-    ___ - , key, value):
+    ___ - , key, value
         prev = N..
         next = N..
         key = key
         value = value
 
 
-c_ List(o..):
-    ___ - ):
+c_ List(o..
+    ___ -
         head = N..
         tail = N..
         size = 0
 
-    ___ insert  node):
+    ___ insert  node
         """Insert node to the head"""
         node.next = head
         __ head __ n.. N..
@@ -77,7 +77,7 @@ c_ List(o..):
         head = node
         size += 1
 
-    ___ touch  node):
+    ___ touch  node
         """Move node to the head"""
         prev_node = node.prev
         next_node = node.next
@@ -92,7 +92,7 @@ c_ List(o..):
             head.prev = node
             head = node
 
-    ___ remove  node):
+    ___ remove  node
         """Remove a node"""
         prev_node = node.prev
         next_node = node.next

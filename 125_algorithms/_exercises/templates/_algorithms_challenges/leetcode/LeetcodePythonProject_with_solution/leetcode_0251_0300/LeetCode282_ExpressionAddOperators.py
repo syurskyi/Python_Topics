@@ -3,8 +3,8 @@ Created on Mar 6, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ addOperators  num, target):
+c_ Solution(o..
+    ___ addOperators  num, target
         """
         :type num: str
         :type target: int
@@ -14,13 +14,13 @@ c_ Solution(o..):
         helper(num, 0, target, '', 0, 0, res)
         r.. res
     
-    ___ helper  num, pos, target, curr, evalVal, mult, res):
-        __ pos __ l..(num):
+    ___ helper  num, pos, target, curr, evalVal, mult, res
+        __ pos __ l..(num
             evalVal += mult
             __ target __ evalVal:
                 res.a..(curr)
             r..
-        ___ i __ r..(pos+1, l..(num)+1):
+        ___ i __ r..(pos+1, l..(num)+1
             __ i > pos+1 a.. num[pos] __ '0':
                 _____
             numStr = num[pos:i]

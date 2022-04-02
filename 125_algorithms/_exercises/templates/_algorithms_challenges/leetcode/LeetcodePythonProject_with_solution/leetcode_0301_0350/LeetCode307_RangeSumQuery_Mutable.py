@@ -3,17 +3,17 @@ Created on May 9, 2018
 
 @author: tongq
 '''
-c_ TreeNode(o..):
-    ___ - , start, end, sumVal=0):
+c_ TreeNode(o..
+    ___ - , start, end, sumVal=0
         sumVal = sumVal
         start = start
         end = end
         left = N..
         right = N..
 
-c_ NumArray(o..):
+c_ NumArray(o..
 
-    ___ - , nums):
+    ___ - , nums
         """
         :type nums: List[int]
         """
@@ -22,7 +22,7 @@ c_ NumArray(o..):
         ____:
             root = buildTree(nums, 0, l..(nums)-1)
     
-    ___ buildTree  nums, i, j):
+    ___ buildTree  nums, i, j
         __ n.. nums o. i > j:
             r.. N..
         __ i __ j:
@@ -34,7 +34,7 @@ c_ NumArray(o..):
         root.sumVal = root.left.sumVal+root.right.sumVal
         r.. root
 
-    ___ update  i, val):
+    ___ update  i, val
         """
         :type i: int
         :type val: int
@@ -42,7 +42,7 @@ c_ NumArray(o..):
         """
         updateHelper(root, i, val)
     
-    ___ updateHelper  root, i, val):
+    ___ updateHelper  root, i, val
         __ n.. root: r..
         __ i __ root.start a.. i __ root.end:
             root.sumVal = val
@@ -54,7 +54,7 @@ c_ NumArray(o..):
             updateHelper(root.right, i, val)
         root.sumVal = root.left.sumVal+root.right.sumVal
     
-    ___ sumRange  i, j):
+    ___ sumRange  i, j
         """
         :type i: int
         :type j: int
@@ -62,7 +62,7 @@ c_ NumArray(o..):
         """
         r.. sumRangeHelper(root, i, j)
     
-    ___ sumRangeHelper  root, i, j):
+    ___ sumRangeHelper  root, i, j
         __ n.. root o. i > j o. j < root.start o. i > root.end:
             r.. 0
         __ i __ root.start a.. j __ root.end:

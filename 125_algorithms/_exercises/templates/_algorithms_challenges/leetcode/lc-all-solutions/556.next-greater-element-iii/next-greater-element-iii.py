@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ nextGreaterElement  n):
+c_ Solution(o..
+  ___ nextGreaterElement  n
     """
     :type n: int
     :rtype: int

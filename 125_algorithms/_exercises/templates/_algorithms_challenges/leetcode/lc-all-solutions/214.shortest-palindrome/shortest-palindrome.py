@@ -1,12 +1,12 @@
-c_ Solution(o..):
+c_ Solution(o..
   # brutal force TLE
-  ___ _shortestPalindrome  s):
+  ___ _shortestPalindrome  s
     """
     :type s: str
     :rtype: str
     """
 
-    ___ isPal(cand):
+    ___ isPal(cand
       start, end = 0, l..(cand) - 1
       w.... start < end:
         __ cand[start] != cand[end]:
@@ -25,8 +25,8 @@ c_ Solution(o..):
         ans = newPal
     r.. ans
 
-  ___ shortestPalindrome  s):
+  ___ shortestPalindrome  s
     r = s[::-1]
-    ___ i __ r..(l..(s) + 1):
-      __ s.startswith(r[i:]):
+    ___ i __ r..(l..(s) + 1
+      __ s.startswith(r[i:]
         r.. r[:i] + s

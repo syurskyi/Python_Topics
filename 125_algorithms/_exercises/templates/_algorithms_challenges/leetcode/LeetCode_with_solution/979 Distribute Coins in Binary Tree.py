@@ -36,14 +36,14 @@ Note:
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         ret = 0
 
     ___ distributeCoins  root: TreeNode) __ i..:

@@ -45,8 +45,8 @@ c_ Solution:
         # coloring
         colors = [[N.. ___ _ __ r..(n)] ___ _ __ r..(m)]
         color = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ A[i][j] __ 1 a.. colors[i][j] __ N..
                     dfs(A, i, j, colors, color)
                     color += 1
@@ -56,8 +56,8 @@ c_ Solution:
         step = 0
         q    # list
         visited = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ colors[i][j] __ 0:
                     visited[i][j] = T..
                     q.a..((i, j))
@@ -65,7 +65,7 @@ c_ Solution:
         w.... q:
             cur_q    # list
             ___ i, j __ q:
-                ___ I, J __ nbr(A, i, j):
+                ___ I, J __ nbr(A, i, j
                     __ n.. visited[I][J]:
                         __ colors[I][J] __ N..
                             visited[I][J] = T..   # pre-check, dedup
@@ -77,7 +77,7 @@ c_ Solution:
 
         r..
 
-    ___ nbr  A, i, j):
+    ___ nbr  A, i, j
         m, n = l..(A), l..(A[0])
         ___ di, dj __ dirs:
             I = i + di
@@ -85,9 +85,9 @@ c_ Solution:
             __ 0 <= I < m a.. 0 <= J < n:
                 y.. I, J
 
-    ___ dfs  A, i, j, colors, color):
+    ___ dfs  A, i, j, colors, color
         colors[i][j] = color
-        ___ I, J __ nbr(A, i, j):
+        ___ I, J __ nbr(A, i, j
             __ colors[I][J] __ N.. a.. A[I][J] __ 1:
                 dfs(A, I, J, colors, color)
 

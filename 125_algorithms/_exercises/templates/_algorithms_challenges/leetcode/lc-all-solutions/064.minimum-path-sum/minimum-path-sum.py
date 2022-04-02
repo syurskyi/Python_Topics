@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minPathSum  grid):
+c_ Solution(o..
+  ___ minPathSum  grid
     """
     :type grid: List[List[int]]
     :rtype: int

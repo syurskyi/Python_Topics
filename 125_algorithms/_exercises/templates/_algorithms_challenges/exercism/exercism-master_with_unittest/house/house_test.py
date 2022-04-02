@@ -5,7 +5,7 @@ _______ unittest
 ____ house _______ rhyme, verse
 
 
-c_ VerseTest(unittest.TestCase):
+c_ VerseTest(unittest.TestCase
     ___ test_verse_0
         expected = 'This is the house that Jack built.'
         assertEqual(expected, verse(0))

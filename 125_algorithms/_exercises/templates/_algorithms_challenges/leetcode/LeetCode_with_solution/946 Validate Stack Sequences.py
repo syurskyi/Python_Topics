@@ -36,7 +36,7 @@ c_ Solution:
         j = 0
         n = l..(pushed)
         stk    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             stk.a..(pushed[i])
             w.... j < n a.. stk a.. stk[-1] __ popped[j]:
                 stk.pop()
@@ -53,7 +53,7 @@ c_ Solution:
         stk    # list
         n = l..(pushed)
         w.... i < n a.. j < n:
-            w.... i < n a.. (n.. stk o. stk[-1] != popped[j]):
+            w.... i < n a.. (n.. stk o. stk[-1] != popped[j]
                 stk.a..(pushed[i])
                 i += 1
 

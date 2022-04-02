@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ romanToInt  s):
+c_ Solution(o..
+    ___ romanToInt  s
         hashmap = {
             'I': 1,
             'V': 5,
@@ -15,7 +15,7 @@ c_ Solution(o..):
             'M': 1000,
         }
         res = 0
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             curVal = hashmap[c]
             __ i+1 < l..(s) a.. hashmap[s[i+1]] > curVal:
                 res -= curVal

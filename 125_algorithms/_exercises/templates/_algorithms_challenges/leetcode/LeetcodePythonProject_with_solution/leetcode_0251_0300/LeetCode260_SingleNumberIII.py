@@ -4,8 +4,8 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ singleNumber  nums):
+c_ Solution(o..
+    ___ singleNumber  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -22,7 +22,7 @@ c_ Solution(o..):
                 res[1] ^= num
         r.. res
     
-    ___ singleNumber_orig  nums):
+    ___ singleNumber_orig  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -56,7 +56,7 @@ __ _____ __ _____
     Solution().test()
     
     _______ r__
-    ___ num __ r..(30):
+    ___ num __ r..(30
         num = r__.randint(0, num)
         print('num:  %08s' % bin(num & 0b11111111))
         print('-num: %8s' % bin(-num & 0b11111111))

@@ -4,15 +4,15 @@ Created on Mar 29, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ kSmallestPairs  nums1, nums2, k):
+c_ Solution(o..
+    ___ kSmallestPairs  nums1, nums2, k
         _______ heapq
         heap    # list
         ___ num1 __ nums1:
             ___ num2 __ nums2:
                 heapq.heappush(heap, (num1+num2, num1, num2))
         result    # list
-        ___ _ __ r..(k):
+        ___ _ __ r..(k
             __ n.. heap:
                 _____
             _, num1, num2 = heapq.heappop(heap)

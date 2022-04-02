@@ -5,7 +5,7 @@ the first two lists.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
@@ -16,7 +16,7 @@ c_ ListNode:
         r.. "%d, %s"%(val, next)
 
 c_ Solution:
-    ___ mergeTwoLists  l1, l2):
+    ___ mergeTwoLists  l1, l2
         """
         Linked List
         assuming ascending order
@@ -50,7 +50,7 @@ __ _____ __ ____
     length = 10
     list1 = [ListNode(2*i) ___ i __ x..(length)]
     list2 = [ListNode(2*i+1) ___ i __ x..(length)]
-    ___ i __ x..(length-1):
+    ___ i __ x..(length-1
         list1[i].next = list1[i+1]
         list2[i].next = list2[i+1]
 

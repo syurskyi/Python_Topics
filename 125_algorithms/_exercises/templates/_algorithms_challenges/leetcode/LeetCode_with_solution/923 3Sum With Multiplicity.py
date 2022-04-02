@@ -53,7 +53,7 @@ c_ Solution:
         keys.s..()
         n = l..(keys)
         ret = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             j = i  # not i + 1
             k = n - 1
             w.... j <= k:  # not <
@@ -91,7 +91,7 @@ c_ Solution:
         A.s..()
         n = l..(A)
         ret = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             j = i + 1
             k = n - 1
             w.... j < k:
@@ -128,12 +128,12 @@ c_ Solution:
         n = l..(A)
         F = [[[0 ___ _ __ r..(3 + 1)] ___ _ __ r..(target + 1)] ___ _ __ r..(n+1)]
 
-        ___ i __ r..(n+1):
+        ___ i __ r..(n+1
             F[i][0][0] = 1
 
-        ___ i __ r..(1, n + 1):
-            ___ t __ r..(target + 1):
-                ___ k __ r..(1, 3 + 1):
+        ___ i __ r..(1, n + 1
+            ___ t __ r..(target + 1
+                ___ k __ r..(1, 3 + 1
                     # choose A[i-1] or not
                     F[i][t][k] = F[i-1][t][k] % MOD
                     __ t - A[i-1] >= 0:
@@ -149,12 +149,12 @@ c_ Solution:
         """
         F = defaultdict(l....: defaultdict(l....: defaultdict(i..)))
         n = l..(A)
-        ___ i __ r..(n+1):
+        ___ i __ r..(n+1
             F[i][0][0] = 1
 
-        ___ i __ r..(1, n + 1):
-            ___ t __ r..(target + 1):
-                ___ k __ r..(1, 3 + 1):
+        ___ i __ r..(1, n + 1
+            ___ t __ r..(target + 1
+                ___ k __ r..(1, 3 + 1
                     # choose A[i-1] or not
                     F[i][t][k] = F[i-1][t][k] + F[i-1][t-A[i-1]][k-1]
                     F[i][t][k] %= MOD

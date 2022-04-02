@@ -3,8 +3,8 @@ Created on Feb 22, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ calculate  s):
+c_ Solution(o..
+    ___ calculate  s
         """
         :type s: str
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution(o..):
         curVal = 0
         preVal = 0
         sign = '+'
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i].i..
                 curVal = 0
                 w.... i < l..(s) a.. s[i].i..
@@ -34,7 +34,7 @@ c_ Solution(o..):
                     preVal = preVal//curVal+1
                 ____:
                     preVal = preVal//curVal
-            __ i < l..(s):
+            __ i < l..(s
                 sign = s[i]
                 i += 1
         res += preVal

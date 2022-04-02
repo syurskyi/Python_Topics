@@ -50,11 +50,11 @@ operas = [
 ]
 
 
-___ _get_date(date_str):
+___ _get_date(date_str
     r.. d__.date(d__.strptime(date_str, "%d %B %Y"))
 
 
-___ operas_both_at_premiere(guest, composer):
+___ operas_both_at_premiere(guest, composer
     """Retrieves a list of titles of operas, where the guest and the composer
        could have been together at premiere.
 

@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ longestCommonPrefix  strs):
+c_ Solution(o..
+    ___ longestCommonPrefix  strs
         """
         :type strs: List[str]
         :rtype: str
@@ -13,8 +13,8 @@ c_ Solution(o..):
         ind = 0
         w... T...
             same = T..
-            ___ i, s __ e..(strs):
-                __ ind __ l..(s):
+            ___ i, s __ e..(strs
+                __ ind __ l..(s
                     same = F..
                     _____
                 __ i __ 0:
@@ -29,8 +29,8 @@ c_ Solution(o..):
     
     ___ test
         testCases = [
-            ['a', 'b'],
-            ['aa', 'aa'],
+             'a', 'b' ,
+             'aa', 'aa' ,
         ]
         ___ strs __ testCases:
             print('\n'.j..([s..(row) ___ row __ strs]))

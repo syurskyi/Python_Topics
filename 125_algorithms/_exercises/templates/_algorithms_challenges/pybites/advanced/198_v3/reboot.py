@@ -11,12 +11,12 @@ reboot    ~                         Mon Jan 14 09:25
 """
 
 
-___ extract_date(reboots):
+___ extract_date(reboots
     months = {
         'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
         'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12,
     }
-    lines = reboots.splitlines(keepends=F..)
+    lines = reboots.s..k.._F..)
     ___ line __ lines:
         __ l..(line.strip()) __ 0:
             _____
@@ -29,7 +29,7 @@ ___ extract_date(reboots):
                        minute=i..(time_part[1]))
 
 
-___ calc_max_uptime(reboots):
+___ calc_max_uptime(reboots
     """Parse the passed in reboots output,
        extracting the datetimes.
 
@@ -44,7 +44,7 @@ ___ calc_max_uptime(reboots):
     """
     previous = N..
     records    # list
-    ___ this_date __ extract_date(reboots):
+    ___ this_date __ extract_date(reboots
         __ previous __ N..
             previous = this_date
             _____

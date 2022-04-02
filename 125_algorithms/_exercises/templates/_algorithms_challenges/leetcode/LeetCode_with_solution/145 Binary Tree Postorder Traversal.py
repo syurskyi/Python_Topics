@@ -15,13 +15,13 @@ Note: Recursive solution is trivial, could you do it iteratively? - see postTrav
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ postorderTraversal  root):
+    ___ postorderTraversal  root
         """
         dfs
         Recursive post-order traversal is trivial. What is the iteration version for this
@@ -34,7 +34,7 @@ c_ Solution:
 
 
 
-    ___ postTraverse  node, lst):
+    ___ postTraverse  node, lst
         __ n.. node:
             r..
         postTraverse(node.left, lst)
@@ -42,7 +42,7 @@ c_ Solution:
 
         lst.a..(node.val)
 
-    ___ postTraverse_itr  root, lst):
+    ___ postTraverse_itr  root, lst
         """
         stack = [L, R, cur]
 

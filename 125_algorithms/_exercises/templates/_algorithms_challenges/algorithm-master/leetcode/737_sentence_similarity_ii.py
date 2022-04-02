@@ -20,14 +20,14 @@ c_ Solution:
     """
     UnionFind
     """
-    ___ areSentencesSimilarTwo  words1, words2, pairs):
+    ___ areSentencesSimilarTwo  words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2):
+        __ l..(words1) != l..(words2
             r.. F..
 
         nodes    # dict
@@ -46,7 +46,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ union  nodes, a, b):
+    ___ union  nodes, a, b
         _a = find(nodes, a)
         _b = find(nodes, b)
 
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. _b
 
-    ___ find  nodes, a):
+    ___ find  nodes, a
         __ a n.. __ nodes:
             nodes[a] = a
             r.. a
@@ -73,14 +73,14 @@ c_ Solution2:
     """
     DFS
     """
-    ___ areSentencesSimilarTwo  words1, words2, pairs):
+    ___ areSentencesSimilarTwo  words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2):
+        __ l..(words1) != l..(words2
             r.. F..
 
         simils = c...defaultdict(s..)
@@ -98,7 +98,7 @@ c_ Solution2:
 
         r.. T..
 
-    ___ dfs  start, end, simils, path):
+    ___ dfs  start, end, simils, path
         # check start and end are connected
         __ start __ end:
             r.. T..

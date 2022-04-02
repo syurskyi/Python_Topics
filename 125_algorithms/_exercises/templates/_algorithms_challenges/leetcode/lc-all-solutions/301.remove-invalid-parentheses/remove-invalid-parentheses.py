@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ removeInvalidParentheses  s):
+c_ Solution(o..
+  ___ removeInvalidParentheses  s
     """
     :type s: str
     :rtype: List[str]
     """
 
-    ___ isValid(s):
+    ___ isValid(s
       stack    # list
       ___ c __ s:
         __ c __ "(":
@@ -17,7 +17,7 @@ c_ Solution(o..):
             stack.pop()
       r.. l..(stack)
 
-    ___ dfs(s, res, cache, length):
+    ___ dfs(s, res, cache, length
       __ s __ cache:
         r..
 

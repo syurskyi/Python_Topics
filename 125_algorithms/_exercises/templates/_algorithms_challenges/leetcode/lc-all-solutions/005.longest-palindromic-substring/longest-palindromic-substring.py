@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ longestPalindrome  s):
+c_ Solution(o..
+  ___ longestPalindrome  s
     """
     :type s: str
     :rtype: str
     """
     left = right = 0
     n = l..(s)
-    ___ i __ r..(n - 1):
+    ___ i __ r..(n - 1
       __ 2 * (n - i) + 1 < right - left + 1:
         _____
       l = r = i

@@ -18,7 +18,7 @@ ___ c__
     verse = ""
     c__ = ""
 
-    ___ number, animal __ e..(animals):
+    ___ number, animal __ e..(animals
         verse = old_lady + animal + ".\n"
 
         __ number __ 7:
@@ -45,17 +45,17 @@ ___ c__
     r.. song
 
 
-___ verses(letter):
+___ verses(letter
     r.. letter.r..('die.', 'die.slice').s..('slice')
 
 
-___ recite(start_verse, end_verse):
+___ recite(start_verse, end_verse
     generated = [verse.s...s..("\n") ___ verse __ verses(c__())]
     __ start_verse __ end_verse:
         r.. generated[start_verse-1]
     ____:
         result    # list
-        ___ i __ r..(start_verse-1, end_verse):
+        ___ i __ r..(start_verse-1, end_verse
             result += generated[i] + [""]
 
         # Pop out the last empty string

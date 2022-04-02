@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fractionToDecimal  a, b):
+    ___ fractionToDecimal  a, b
         """
         :type a: int
         :type b: int

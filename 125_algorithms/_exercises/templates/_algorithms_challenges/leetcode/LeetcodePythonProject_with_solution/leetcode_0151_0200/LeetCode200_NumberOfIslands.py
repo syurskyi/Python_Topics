@@ -4,8 +4,8 @@ Created on Feb 16, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ numIslands  grid):
+c_ Solution(o..
+    ___ numIslands  grid
         """
         :type grid: List[List[str]]
         :rtype: int
@@ -13,20 +13,20 @@ c_ Solution(o..):
         __ n.. grid: r.. 0
         m, n = l..(grid), l..(grid[0])
         res = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] __ '1':
                     grid[i][j] = '#'
                     res += 1
                     bfs(grid, i, j)
         r.. res
     
-    ___ bfs  grid, i, j):
+    ___ bfs  grid, i, j
         queue = [(i, j)]
         m, n = l..(grid), l..(grid[0])
         w.... queue:
             i, j = queue.pop(0)
-            ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1):
+            ___ x, y __ (i+1, j), (i, j+1), (i-1, j), (i, j-1
                 __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ '1':
                     grid[x][y] = '#'
                     queue.a..([x, y])

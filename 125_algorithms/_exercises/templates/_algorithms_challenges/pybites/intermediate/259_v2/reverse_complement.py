@@ -8,10 +8,10 @@ SIMPLE_COMPLEMENTS_STR = """#Reduced table with bases A, G, C, T
 """
 
 
-___ get_mapping(str_table=SIMPLE_COMPLEMENTS_STR):
+___ get_mapping(str_table=SIMPLE_COMPLEMENTS_STR
 
 
-    lines = str_table.splitlines()
+    lines = str_table.s..
     
     
     mapping    # dict
@@ -25,7 +25,7 @@ ___ get_mapping(str_table=SIMPLE_COMPLEMENTS_STR):
 
 
 # Recommended helper function
-___ _clean_sequence(sequence, str_table):
+___ _clean_sequence(sequence, str_table
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -55,7 +55,7 @@ ___ _clean_sequence(sequence, str_table):
 
 
 
-___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -74,7 +74,7 @@ ___ reverse(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
 
 
 
-___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases
@@ -97,7 +97,7 @@ ___ complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
 
 
 
-___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR):
+___ reverse_complement(sequence, str_table=SIMPLE_COMPLEMENTS_STR
     """
     Receives a DNA sequence and a str_table that defines valid (and
     complementary) bases

@@ -1,5 +1,5 @@
-c_ RandomizedCollection(o..):
-  ___ - ):
+c_ RandomizedCollection(o..
+  ___ -
     """
     Initialize your data structure here.
     """
@@ -7,7 +7,7 @@ c_ RandomizedCollection(o..):
     d = c...defaultdict(l..)
     a    # list
 
-  ___ insert  val):
+  ___ insert  val
     """
     Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
     :type val: int
@@ -18,7 +18,7 @@ c_ RandomizedCollection(o..):
     a.a..(val)
     r.. l..(d[val]) __ 1
 
-  ___ remove  val):
+  ___ remove  val
     """
     Removes a value from the collection. Returns true if the collection contained the specified element.
     :type val: int

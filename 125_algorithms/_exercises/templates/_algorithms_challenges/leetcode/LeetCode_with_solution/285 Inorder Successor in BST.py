@@ -4,15 +4,15 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ inorderSuccessor  root, p):
+c_ Solution(o..
+    ___ inorderSuccessor  root, p
         """
         search
 
@@ -25,7 +25,7 @@ c_ Solution(o..):
         s..(root, p, find)
         r.. find[0]
 
-    ___ s..  cur, p, find):
+    ___ s..  cur, p, find
         __ n.. cur:
             r..
 

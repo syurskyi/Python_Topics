@@ -14,8 +14,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ lengthOfLongestSubstringKDistinct  s, k):
+c_ Solution(o..
+    ___ lengthOfLongestSubstringKDistinct  s, k
         """
         Brute force: O(n^2 * n)
 
@@ -27,7 +27,7 @@ c_ Solution(o..):
         st = 0  # start
         counter = defaultdict(i..)
         maxa = 0
-        ___ idx, val __ e..(s):
+        ___ idx, val __ e..(s
             __ counter[val] __ 0:
                 k -= 1
 

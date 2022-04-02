@@ -1,4 +1,4 @@
-___ run_length_encoding(s):
+___ run_length_encoding(s
 	__ l..(s) __ 0:
 		r.. []
 	res    # list

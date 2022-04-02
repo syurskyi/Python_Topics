@@ -3,8 +3,8 @@ Created on Mar 28, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ reachNumber  target):
+c_ Solution(o..
+    ___ reachNumber  target
         """
         :type target: int
         :rtype: int

@@ -54,7 +54,7 @@ c_ Solution:
         """
         I = [0 ___ _ __ words]
         ___ a __ S:
-            ___ wi, i __ e..(I):
+            ___ wi, i __ e..(I
                 __ i < l..(words[wi]) a.. words[wi][i] __ a:
                     I[wi] += 1
 

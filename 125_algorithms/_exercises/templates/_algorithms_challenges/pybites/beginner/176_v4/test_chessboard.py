@@ -82,16 +82,16 @@ outputs = [
 expected_outputs = d..(z..(sizes, outputs))
 
 
-___ _non_empty_lines(output):
+___ _non_empty_lines(output
     """Helper to turn a string into a list of not
        empty lines and returns it.
     """
     r.. [line ___ line __
-            output.splitlines() __ line.s..]
+            output.s..  __ line.s..]
 
 
 ?p__.m__.p.("size", sizes)
-___ test_create_chessboard(size, capfd):
+___ test_create_chessboard(size, capfd
     create_chessboard(size)
     actual = ?.r .. 0]
     expected = dedent(expected_outputs[size])

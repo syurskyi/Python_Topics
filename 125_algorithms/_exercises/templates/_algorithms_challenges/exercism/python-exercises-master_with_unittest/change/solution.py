@@ -1,11 +1,11 @@
-___ find_minimum_coins(total_change, coins):
+___ find_minimum_coins(total_change, coins
     __ total_change < 0:
         r.. ValueError("cannot find negative change values")
     min_coins_required = [1e9] * (total_change + 1)
     last_coin = [0]*(total_change + 1)
     min_coins_required[0] = 0
     last_coin[0] = -1
-    ___ change __ r..(1, total_change + 1):
+    ___ change __ r..(1, total_change + 1
         final_result = min_coins_required[change]
         ___ coin __ coins:
             __ coin <= change:
@@ -19,7 +19,7 @@ ___ find_minimum_coins(total_change, coins):
     ____:
         last_coin_value = total_change
         array    # list
-        w....(last_coin[last_coin_value] != -1):
+        w....(last_coin[last_coin_value] != -1
             array.a..(last_coin_value-last_coin[last_coin_value])
             last_coin_value = last_coin[last_coin_value]
         r.. array

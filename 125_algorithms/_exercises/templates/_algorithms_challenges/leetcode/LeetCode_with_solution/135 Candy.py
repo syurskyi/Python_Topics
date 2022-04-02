@@ -9,7 +9,7 @@ What is the minimum candies you must give?
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ candy  ratings):
+    ___ candy  ratings
         """
         dp & re-adjustment
 
@@ -26,7 +26,7 @@ c_ Solution:
         length = l..(ratings)
         dp = [-1 ___ _ __ x..(length)]
         dp[0] = 1
-        ___ ind __ x..(1, length):
+        ___ ind __ x..(1, length
             val = ratings[ind]
             __ ratings[ind-1]<val:
                 dp[ind] = dp[ind-1]+1
@@ -45,7 +45,7 @@ c_ Solution:
 
         r.. s..(dp)
 
-    ___ re_adjust  ratings, dp, ind):
+    ___ re_adjust  ratings, dp, ind
         # backward adjust
         original = dp[ind]
         __ original__1: r..  # no adjustment needed

@@ -3,8 +3,8 @@ Created on May 5, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ isMatch  s, p):
+c_ Solution(o..
+    ___ isMatch  s, p
         """
         :type s: str
         :type p: str
@@ -13,11 +13,11 @@ c_ Solution(o..):
         m, n = l..(s), l..(p)
         dp = [[F..]*(n+1) ___ _ __ r..(m+1)]
         dp[0][0] = T..
-        ___ j __ r..(n):
+        ___ j __ r..(n
             __ p[j] __ '*' a.. dp[0][j-1]:
                 dp[0][j+1] = T..
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ s[i] __ p[j] o. p[j] __ '.':
                     dp[i+1][j+1] = dp[i][j]
                 ____ p[j] __ '*':
@@ -29,11 +29,11 @@ c_ Solution(o..):
     
     ___ test
         testCases = [
-            ['aa', 'a'],
-            ['aa', 'a*'],
-            ['ab', '.*'],
-            ['aab', 'c*a*b'],
-            ['mississippi', 'mis*is*p*.'],
+             'aa', 'a' ,
+             'aa', 'a*' ,
+             'ab', '.*' ,
+             'aab', 'c*a*b' ,
+             'mississippi', 'mis*is*p*.' ,
         ]
         ___ s, p __ testCases:
             print('s: %s' % s)

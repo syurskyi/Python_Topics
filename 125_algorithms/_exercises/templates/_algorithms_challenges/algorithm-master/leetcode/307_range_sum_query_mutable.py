@@ -10,7 +10,7 @@ param_2 = obj.sumRange(i,j)
 
 
 c_ NumArray:
-    ___ - , nums):
+    ___ - , nums
         """
         :type nums: List[int]
         """
@@ -21,10 +21,10 @@ c_ NumArray:
         bits = [0] * (n + 1)  # bits
         incr = [0] * (n + 1)  # increments
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             update(i, nums[i])
 
-    ___ update  i, val):
+    ___ update  i, val
         """
         :type i: int
         :type val: int
@@ -37,11 +37,11 @@ c_ NumArray:
         delta = val - incr[j]
         incr[j] = val
 
-        w.... j < l..(incr):
+        w.... j < l..(incr
             bits[j] += delta
             j += (j & -j)
 
-    ___ sumRange  i, j):
+    ___ sumRange  i, j
         """
         :type i: int
         :type j: int
@@ -49,7 +49,7 @@ c_ NumArray:
         """
         r.. s..(j + 1) - s..(i)
 
-    ___ s..  i):
+    ___ s..  i
         res = 0
         j = i
 

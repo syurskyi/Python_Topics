@@ -1,4 +1,4 @@
-___ is_empty(s):
+___ is_empty(s
     __ s __ "":
         r.. T..
     ____:

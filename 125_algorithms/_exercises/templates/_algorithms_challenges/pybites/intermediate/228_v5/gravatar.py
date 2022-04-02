@@ -4,7 +4,7 @@ GRAVATAR_URL = ("https://www.gravatar.com/avatar/"
                 "{hashed_email}?s={size}&r=g&d=robohash")
 
 
-___ create_gravatar_url(email: s.., size=200):
+___ create_gravatar_url(email: s.., size=200
     """Use GRAVATAR_URL above to create a gravatar URL.
 
        You need to create a hash of the email passed in.

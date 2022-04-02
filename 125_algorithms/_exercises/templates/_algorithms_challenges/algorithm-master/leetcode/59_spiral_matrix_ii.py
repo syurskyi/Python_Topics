@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ generateMatrix  n):
+    ___ generateMatrix  n
         """
         :type n: int
         :rtype: List[List[int]]
@@ -16,7 +16,7 @@ c_ Solution:
         )
         x = y = turn = 0
 
-        ___ i __ r..(1, n * n + 1):
+        ___ i __ r..(1, n * n + 1
             ans[x][y] = i
             _x = x + delta[turn][0]
             _y = y + delta[turn][1]

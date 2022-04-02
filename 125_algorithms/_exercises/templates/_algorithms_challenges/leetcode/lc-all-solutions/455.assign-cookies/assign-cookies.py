@@ -1,8 +1,8 @@
 ____ c.. _______ Counter
 
 
-c_ Solution(o..):
-  ___ findContentChildren  children, cookies):
+c_ Solution(o..
+  ___ findContentChildren  children, cookies
     """
     :type g: List[int]
     :type s: List[int]
@@ -12,7 +12,7 @@ c_ Solution(o..):
     children.s..()
     i = 0
     ___ cookie __ cookies:
-      __ i >= l..(children):
+      __ i >= l..(children
         _____
       __ children[i] <= cookie:
         i += 1

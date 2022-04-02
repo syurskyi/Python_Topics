@@ -1,5 +1,5 @@
-c_ TreeNode(o..):
-    ___ - , data, left, right):
+c_ TreeNode(o..
+    ___ - , data, left, right
         data = N..
         left = N..
         right = N..
@@ -9,8 +9,8 @@ c_ TreeNode(o..):
         r.. fmt.f..(data, left, right)
 
 
-c_ BinarySearchTree(o..):
-    ___ - , tree_data):
+c_ BinarySearchTree(o..
+    ___ - , tree_data
         p..
 
     ___ data

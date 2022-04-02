@@ -4,15 +4,15 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
-  ___ reverseKGroup  head, k):
+c_ Solution(o..
+  ___ reverseKGroup  head, k
     """
     :type head: ListNode
     :type k: int
     :rtype: ListNode
     """
 
-    ___ reverseList(head, k):
+    ___ reverseList(head, k
       pre = N..
       cur = head
       w.... cur a.. k > 0:

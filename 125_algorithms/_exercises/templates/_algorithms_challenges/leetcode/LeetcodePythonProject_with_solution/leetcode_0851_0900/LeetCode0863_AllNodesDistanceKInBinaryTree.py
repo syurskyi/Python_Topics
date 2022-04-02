@@ -4,14 +4,14 @@ Created on Sep 18, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ distanceK  root, target, K):
+c_ Solution(o..
+    ___ distanceK  root, target, K
         """
         :type root: TreeNode
         :type target: TreeNode
@@ -24,7 +24,7 @@ c_ Solution(o..):
         dfs(root, target, K, hashmap[root], res, hashmap)
         r.. res
     
-    ___ find  root, target, hashmap):
+    ___ find  root, target, hashmap
         __ n.. root: r.. -1
         __ root __ target:
             hashmap[root] = 0
@@ -39,7 +39,7 @@ c_ Solution(o..):
             r.. right+1
         r.. -1
     
-    ___ dfs  root, target, k, length, res, hashmap):
+    ___ dfs  root, target, k, length, res, hashmap
         __ n.. root: r..
         __ root __ hashmap:
             length = hashmap[root]

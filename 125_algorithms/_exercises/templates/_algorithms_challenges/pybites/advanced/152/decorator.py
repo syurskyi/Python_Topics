@@ -6,7 +6,7 @@ DEFAULT_TEXT = ('Subscribe to our blog (sidebar) to periodically get '
 DOT = '.'
 
 
-___ strip_range(start, end):
+___ strip_range(start, end
     """Decorator that replaces characters of a text by dots, from 'start'
        (inclusive) to 'end' (exclusive) = like range.
 
@@ -19,9 +19,9 @@ ___ strip_range(start, end):
             return text
     """
 
-    ___ decorator(f):
+    ___ decorator(f
 
-        ___ wrapper(text):
+        ___ wrapper(text
 
             s = m..(start,0)
             e = m..(end,0)

@@ -3,8 +3,8 @@ Created on May 21, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ twoSum  numbers, target):
+c_ Solution(o..
+    ___ twoSum  numbers, target
         """
         :type numbers: List[int]
         :type target: int

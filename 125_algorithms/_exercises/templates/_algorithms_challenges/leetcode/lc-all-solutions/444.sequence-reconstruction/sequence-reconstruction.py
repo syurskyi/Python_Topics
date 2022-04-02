@@ -1,8 +1,8 @@
 _______ c..
 
 
-c_ Solution(o..):
-  ___ sequenceReconstruction  org, seqs):
+c_ Solution(o..
+  ___ sequenceReconstruction  org, seqs
     """
     :type org: List[int]
     :type seqs: List[List[int]]
@@ -17,7 +17,7 @@ c_ Solution(o..):
       nodes |= s..(seq)
       __ l..(seq) > 0:
         incomings[seq[0]] += 0
-      ___ i __ r..(0, l..(seq) - 1):
+      ___ i __ r..(0, l..(seq) - 1
         start, end = seq[i], seq[i + 1]
         graph[start].a..(end)
         incomings[end] += 1
@@ -40,6 +40,6 @@ c_ Solution(o..):
           queue.a..(nbr)
     __ l..(queue) > 1:
       r.. F..
-    __ order __ org a.. l..(order) __ l..(nodes):
+    __ order __ org a.. l..(order) __ l..(nodes
       r.. T..
     r.. F..

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ longestValidParentheses  s):
+c_ Solution(o..
+  ___ longestValidParentheses  s
     """
     :type s: str
     :rtype: int

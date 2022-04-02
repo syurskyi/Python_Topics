@@ -5,13 +5,13 @@ Created on Jan 26, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
-c_ Solution(o..):
-    ___ partition  head, x):
+c_ Solution(o..
+    ___ partition  head, x
         """
         :type head: ListNode
         :type x: int

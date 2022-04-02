@@ -33,7 +33,7 @@ _______ sys
 
 
 c_ Solution:
-    ___ calculateMinimumHP  dungeon):
+    ___ calculateMinimumHP  dungeon
         """
         dp
         Let F represent the HP
@@ -49,8 +49,8 @@ c_ Solution:
         n = l..(dungeon[0])
 
         F = [[sys.maxint ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
-        ___ i __ x..(m-1, -1, -1):
-            ___ j __ x..(n-1, -1, -1):
+        ___ i __ x..(m-1, -1, -1
+            ___ j __ x..(n-1, -1, -1
                 __ i __ m-1 a.. j __ n-1:
                     F[i][j] = m..(1, 1-dungeon[i][j])
                 ____:
@@ -59,7 +59,7 @@ c_ Solution:
 
         r.. F[0][0]
 
-    ___ calculateMinimumHP_error  dungeon):
+    ___ calculateMinimumHP_error  dungeon
         """
         dp
         Not just the end results. We have to ensure at every cell the life > 0.
@@ -73,8 +73,8 @@ c_ Solution:
             r.. 1-m..(0, dungeon[0][0])
 
         F = [[-sys.maxint-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
-        ___ i __ x..(1, m+1):
-            ___ j __ x..(1, n+1):
+        ___ i __ x..(1, m+1
+            ___ j __ x..(1, n+1
                 __ i __ 1 a.. j __ 1:
                     F[i][j] = dungeon[i-1][j-1]
                 ____:

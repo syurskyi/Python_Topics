@@ -6,7 +6,7 @@ Created on Feb 4, 2017
 
 # Definition for binary tree with next pointer.
 c_ TreeLinkNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -15,7 +15,7 @@ c_ TreeLinkNode:
 c_ Solution:
     # @param root, a tree link node
     # @return nothing
-    ___ connect  root):
+    ___ connect  root
         lastHead = root
         lastCurrent = N..
         currentHead = N..

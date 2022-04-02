@@ -18,22 +18,22 @@ Note:
 You may assume both s and t have the same length.
 """
 
-c_ Solution(o..):
-    ___ isIsomorphic  s, t):
+c_ Solution(o..
+    ___ isIsomorphic  s, t
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
         d    # dict
-        ___ i, c __ e..(s):
+        ___ i, c __ e..(s
             __ c n.. __ d:
                 d[c] = t[i]
             ____:
                 __ d[c] != t[i]:
                     r.. F..
         d    # dict
-        ___ i, c __ e..(t):
+        ___ i, c __ e..(t
             __ c n.. __ d:
                 d[c] = s[i]
             ____:

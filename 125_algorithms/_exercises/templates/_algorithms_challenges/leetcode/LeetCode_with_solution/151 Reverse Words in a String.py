@@ -19,7 +19,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ reverseWords  s):
+    ___ reverseWords  s
         """
         Notice: ask how to deal with punctuations
         :param s: a string

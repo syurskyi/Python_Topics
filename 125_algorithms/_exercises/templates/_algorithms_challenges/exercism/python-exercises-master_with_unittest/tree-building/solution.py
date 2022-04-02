@@ -1,5 +1,5 @@
 c_ Record
-    ___ - , record_id, parent_id):
+    ___ - , record_id, parent_id
         record_id = record_id
         parent_id = parent_id
 
@@ -8,19 +8,19 @@ c_ Record
 
 
 c_ Node
-    ___ - , node_id):
+    ___ - , node_id
         node_id = node_id
         children    # list
 
 
-___ validateRecord(record):
+___ validateRecord(record
     __ record.equal_id() a.. record.record_id != 0:
         r.. ValueError("Only root should have equal record and parent id")
     ____ n.. record.equal_id() a.. record.parent_id >= record.record_id:
         r.. ValueError("Node record_id should be smaller than its parent_id")
 
 
-___ BuildTree(records):
+___ BuildTree(records
     parent_dict    # dict
     node_dict    # dict
     ordered_id = s..((i.record_id ___ i __ records))
@@ -32,7 +32,7 @@ ___ BuildTree(records):
     root_id = 0
     root = N..
 
-    ___ index, record_id __ e..(ordered_id):
+    ___ index, record_id __ e..(ordered_id
         __ index != record_id:
             r.. ValueError("Record id is invalid or out of order")
         __ record_id __ root_id:

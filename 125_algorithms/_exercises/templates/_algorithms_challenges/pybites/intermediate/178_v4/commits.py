@@ -28,7 +28,7 @@ ___ _parse_line(line: s..) __ d..:
 
 
 ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
-                                  year: i.. = N..) __ (s.., s..):
+                                  year: i.. = N..) __ (s.., s..
     """
     Calculate the amount of inserts / deletes per month from the
     provided commit log.
@@ -39,11 +39,11 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     Returns a tuple of (least_active_month, most_active_month)
     """
     commits = Counter()
-    w__ open(commit_log) __ f:
+    w__ o.. commit_log) __ f:
         ___ line __ f:
             dat = _parse_line(line)
-            __ dat['date'].year __ year o. year __ N..
-                commits.update({dat['date'].s..('%Y-%m'): dat['changes']})
+            __ dat 'date' .year __ year o. year __ N..
+                commits.update({dat 'date' .s..('%Y-%m' dat 'changes' })
 
     m.. = commits.most_common(1)[0][0]
     m.. = commits.most_common()[-1][0]

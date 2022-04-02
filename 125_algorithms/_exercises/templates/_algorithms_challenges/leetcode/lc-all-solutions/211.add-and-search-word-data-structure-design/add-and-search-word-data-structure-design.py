@@ -1,14 +1,14 @@
 c_ TrieNode:
-  ___ - ):
+  ___ -
     neighbours    # dict
     isWord = F..
 
 
 c_ Trie:
-  ___ - ):
+  ___ -
     root = TrieNode()
 
-  ___ addWord  word):
+  ___ addWord  word
     root = root
     ___ i __ r..(0, l..(word)):
       c = word[i]
@@ -22,19 +22,19 @@ c_ Trie:
 
 
 c_ WordDictionary:
-  ___ - ):
+  ___ -
     trie = Trie()
     cache = s..([])
 
-  ___ addWord  word):
+  ___ addWord  word
     trie.addWord(word)
     cache.add(word)
 
-  ___ s..  word):
+  ___ s..  word
     __ word __ cache:
       r.. T..
 
-    ___ dfsHelper(root, word, index):
+    ___ dfsHelper(root, word, index
       __ n.. root:
         r.. F..
 
@@ -44,11 +44,11 @@ c_ WordDictionary:
         r.. F..
 
       __ word[index] != ".":
-        __ dfsHelper(root.neighbours.get(word[index], N..), word, index + 1):
+        __ dfsHelper(root.neighbours.get(word[index], N..), word, index + 1
           r.. T..
       ____:
         ___ nbr __ root.neighbours:
-          __ dfsHelper(root.neighbours[nbr], word, index + 1):
+          __ dfsHelper(root.neighbours[nbr], word, index + 1
             r.. T..
       r.. F..
 

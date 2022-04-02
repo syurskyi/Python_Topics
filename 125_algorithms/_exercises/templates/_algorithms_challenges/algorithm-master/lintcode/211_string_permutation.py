@@ -4,7 +4,7 @@ c_ Solution:
     @param: B: a string
     @return: a boolean
     """
-    ___ Permutation  A, B):
+    ___ Permutation  A, B
         __ A __ '' a.. B __ '':
             r.. T..
         __ n.. A o. n.. B:

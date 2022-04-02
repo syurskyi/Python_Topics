@@ -3,15 +3,15 @@ Created on Mar 13, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ areSentencesSimilarTwo  words1, words2, pairs):
+c_ Solution(o..
+    ___ areSentencesSimilarTwo  words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2):
+        __ l..(words1) != l..(words2
             r.. F..
         pairInfo    # dict
         ___ p __ pairs:
@@ -21,7 +21,7 @@ c_ Solution(o..):
                 pairInfo[p[1]] = s..()
             pairInfo[p[0]].add(p[1])
             pairInfo[p[1]].add(p[0])
-        ___ w1, w2 __ z..(words1, words2):
+        ___ w1, w2 __ z..(words1, words2
             __ w1 __ w2:
                 _____
             __ w1 n.. __ pairInfo:
@@ -30,24 +30,24 @@ c_ Solution(o..):
                 r.. F..
         r.. T..
     
-    ___ dfs  source, target, pairInfo, visited):
+    ___ dfs  source, target, pairInfo, visited
         __ target __ pairInfo.get(source, s..()):
             r.. T..
         visited.add(source)
         ___ nextWord __ pairInfo.get(source, s..()):
-            __ nextWord n.. __ visited a.. dfs(nextWord, target, pairInfo, visited):
+            __ nextWord n.. __ visited a.. dfs(nextWord, target, pairInfo, visited
                 r.. T..
         r.. F..
     
     # This is Exceeding Time Limit
-    ___ areSentencesSimilarTwo_own  words1, words2, pairs):
+    ___ areSentencesSimilarTwo_own  words1, words2, pairs
         """
         :type words1: List[str]
         :type words2: List[str]
         :type pairs: List[List[str]]
         :rtype: bool
         """
-        __ l..(words1) != l..(words2):
+        __ l..(words1) != l..(words2
             r.. F..
         hashmap    # dict
         n = 0
@@ -66,7 +66,7 @@ c_ Solution(o..):
             root0 = getRoot(roots, hashmap[p[0]])
             root1 = getRoot(roots, hashmap[p[1]])
             roots[root0] = root1
-        ___ w1, w2 __ z..(words1, words2):
+        ___ w1, w2 __ z..(words1, words2
             __ w1 __ w2:
                 _____
             ____ w1 n.. __ hashmap o. w2 n.. __ hashmap:
@@ -78,7 +78,7 @@ c_ Solution(o..):
                     r.. F..
         r.. T..
     
-    ___ getRoot  roots, ind):
+    ___ getRoot  roots, ind
         w.... roots[ind] != -1:
             ind = roots[ind]
         r.. ind

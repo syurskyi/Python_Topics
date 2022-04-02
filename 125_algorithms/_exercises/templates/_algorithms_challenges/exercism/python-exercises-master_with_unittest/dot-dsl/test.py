@@ -3,7 +3,7 @@ _______ unittest
 ____ dot_dsl _______ Graph, Node, Edge, NODE, EDGE, ATTR
 
 
-c_ DotDslTest(unittest.TestCase):
+c_ DotDslTest(unittest.TestCase
     ___ test_empty_graph
         g = Graph()
 
@@ -89,25 +89,25 @@ c_ DotDslTest(unittest.TestCase):
             ])
 
     ___ test_malformed_attr
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             Graph([
                 (ATTR, 1, 2, 3)
             ])
 
     ___ test_malformed_node
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             Graph([
                 (NODE, 1, 2, 3)
             ])
 
     ___ test_malformed_EDGE
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             Graph([
                 (EDGE, 1, 2)
             ])
 
     ___ test_unknown_item
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             Graph([
                 (99, 1, 2)
             ])
@@ -119,7 +119,7 @@ c_ DotDslTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
 

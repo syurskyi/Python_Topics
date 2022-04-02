@@ -60,13 +60,13 @@ LEVEL_TRANSLATE = {'I': 1,
                    'V': 5}
 
 
-___ generate_enchantments(soup):
+___ generate_enchantments(soup
     """Generates a dictionary of Enchantment objects
     
     With the key being the id_name of the enchantment.
     """
     res = d..()
-    ___ row __ soup.select('table#minecraft_items > tr'):
+    ___ row __ soup.select('table#minecraft_items > tr'
         data_items = row.find_all('td')
         __ data_items __ N.. o. l..(data_items) __ 0:
             _____
@@ -78,7 +78,7 @@ ___ generate_enchantments(soup):
         item_url = item.img.attrs.get('data-src')
         items = __.sub(r'.*/(?:enchanted_)?(?:iron_)?([^/]+?)(?:_sm)?\.png', r'\1', item_url)
         items = items.r..('fishing_rod', 'FISHING=ROD')
-        items = l..(map(l.... s: s.r..('FISHING=ROD', 'fishing_rod'), items.s..('_')))
+        items = l.. m..(l.... s: s.r..('FISHING=ROD', 'fishing_rod'), items.s..('_')))
 
         res[id_name] = Enchantment(id_name,
                                    name,
@@ -90,7 +90,7 @@ ___ generate_enchantments(soup):
     r.. res
 
 
-___ generate_items(data):
+___ generate_items(data
     """Generates a dictionary of Item objects
     
     With the key being the item name.
@@ -105,13 +105,13 @@ ___ generate_items(data):
     r.. d..(s..(res.i.., key=l.... t: t[0]))
 
 
-___ get_soup(file=HTML_FILE):
+___ get_soup(file=HTML_FILE
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
-    __ isi..(file, Path):
+    __ isi..(file, Path
         __ n.. HTML_FILE.is_file
             urlretrieve(URL, HTML_FILE)
 
-        w__ file.open() __ html_source:
+        w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")
     ____:
         soup = Soup(file, "html.parser")

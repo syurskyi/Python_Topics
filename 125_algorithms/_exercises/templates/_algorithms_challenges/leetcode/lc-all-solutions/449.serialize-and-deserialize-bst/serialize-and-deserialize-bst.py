@@ -6,7 +6,7 @@
 #         self.right = None
 
 c_ Codec:
-  ___ serialize  root):
+  ___ serialize  root
     """Encodes a tree to a single string.
     
     :type root: TreeNode
@@ -26,7 +26,7 @@ c_ Codec:
         stack.a..((0, node))
     r.. ",".j..(ans)
 
-  ___ deserialize  data):
+  ___ deserialize  data
     """Decodes your encoded data to tree.
     
     :type data: str
@@ -42,7 +42,7 @@ c_ Codec:
     ___ i __ r..(0, l..(inOrder)):
       d[inOrder[i]] = i
 
-    ___ helper(preOrder, start, end, inOrder, d):
+    ___ helper(preOrder, start, end, inOrder, d
       __ start <= end:
         rootVal = preOrder[preIdx]
         preIdx += 1

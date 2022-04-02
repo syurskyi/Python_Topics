@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ s..  nums, target):
+c_ Solution(o..
+  ___ s..  nums, target
     """
     :type nums: List[int]
     :type target: int

@@ -4,14 +4,14 @@ Created on Oct 3, 2019
 @author: tongq
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ leafSimilar  root1, root2):
+c_ Solution(o..
+    ___ leafSimilar  root1, root2
         """
         :type root1: TreeNode
         :type root2: TreeNode
@@ -22,7 +22,7 @@ c_ Solution(o..):
         r.. getLeaves(root1) __ getLeaves(root2)
         
     
-    ___ getLeaves  root):
+    ___ getLeaves  root
         res    # list
         node = root
         stack    # list

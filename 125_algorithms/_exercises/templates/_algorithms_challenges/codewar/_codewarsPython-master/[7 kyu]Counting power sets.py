@@ -1,2 +1,2 @@
-___ powers(lst):
+___ powers(lst
     r.. 2**(l..(lst))

@@ -3,8 +3,8 @@ Created on Jun 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ isMatch  s, p):
+c_ Solution(o..
+    ___ isMatch  s, p
         """
         :type s: str
         :type p: str
@@ -18,8 +18,8 @@ c_ Solution(o..):
         w.... j >= 0 a.. p[j] __ '*':
             dp[-1][j] = T..
             j -= 1
-        ___ i __ r..(m-1, -1, -1):
-            ___ j __ r..(n-1, -1, -1):
+        ___ i __ r..(m-1, -1, -1
+            ___ j __ r..(n-1, -1, -1
                 __ s[i] __ p[j] o. p[j] __ '?':
                     dp[i][j] = dp[i+1][j+1]
                 ____ p[j] __ '*':

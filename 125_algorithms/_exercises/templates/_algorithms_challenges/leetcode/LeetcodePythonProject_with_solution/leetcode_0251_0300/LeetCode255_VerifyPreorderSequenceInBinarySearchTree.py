@@ -4,8 +4,8 @@ Created on Mar 1, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ verifyPreorder  preorder):
+c_ Solution(o..
+    ___ verifyPreorder  preorder
         """
         :type preorder: List[int]
         :rtype: bool
@@ -22,7 +22,7 @@ c_ Solution(o..):
             preorder[i] = p
         r.. T..
     
-    ___ verifyPreorderStack  preorder):
+    ___ verifyPreorderStack  preorder
         """
         :type preorder: List[int]
         :rtype: bool

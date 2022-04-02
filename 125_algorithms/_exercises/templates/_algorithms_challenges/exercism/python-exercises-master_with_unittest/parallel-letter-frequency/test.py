@@ -5,29 +5,29 @@ _______ unittest
 ____ parallel_letter_frequency _______ calculate
 
 
-c_ ParallelLetterFrequencyTest(unittest.TestCase):
+c_ ParallelLetterFrequencyTest(unittest.TestCase
     ___ test_one_letter
-        actual = calculate(['a'])
+        actual = calculate( 'a' )
         expected = {'a': 1}
         assertDictEqual(actual, expected)
 
     ___ test_case_insensitivity
-        actual = calculate(['aA'])
+        actual = calculate( 'aA' )
         expected = {'a': 2}
         assertDictEqual(actual, expected)
 
     ___ test_numbers
-        actual = calculate(['012', '345', '6789'])
+        actual = calculate( '012', '345', '6789' )
         expected    # dict
         assertDictEqual(actual, expected)
 
     ___ test_punctuations
-        actual = calculate(['[]\;,', './{}|', ':"<>?'])
+        actual = calculate( '[]\;,', './{}|', ':"<>?' )
         expected    # dict
         assertDictEqual(actual, expected)
 
     ___ test_whitespaces
-        actual = calculate(['  ', '\t ', '\n\n'])
+        actual = calculate( '  ', '\t ', '\n\n' )
         expected    # dict
         assertDictEqual(actual, expected)
 

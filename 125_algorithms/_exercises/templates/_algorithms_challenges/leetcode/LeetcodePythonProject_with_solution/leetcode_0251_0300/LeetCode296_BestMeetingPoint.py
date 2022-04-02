@@ -4,12 +4,12 @@ Created on Mar 8, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minTotalDistance  grid):
+c_ Solution(o..
+    ___ minTotalDistance  grid
         m, n = l..(grid), l..(grid[0])
         rows, cols    # list, []
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] __ 1:
                     rows.a..(i)
                     cols.a..(j)

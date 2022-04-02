@@ -20,7 +20,7 @@ Both the left and right subtrees must also be binary search trees.
 c_ Solution:
     # @param root, a tree node
     # @return a boolean
-    ___ isValidBST  root):
+    ___ isValidBST  root
         __ root __ N..
             r.. T..
         ____:
@@ -36,12 +36,12 @@ c_ Solution:
                 r.. T..
             r.. F..
 
-    ___ min_node  root):
+    ___ min_node  root
         w.... root.left __ n.. N..
             root = root.left
         r.. root
 
-    ___ max_node  root):
+    ___ max_node  root
         w.... root.right __ n.. N..
             root = root.right
         r.. root

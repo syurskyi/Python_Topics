@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ longestCommonPrefix  strs):
+c_ Solution(o..
+  ___ longestCommonPrefix  strs
     """
     :type strs: List[str]
     :rtype: str
@@ -9,7 +9,7 @@ c_ Solution(o..):
     i = 0
     j = 0
     end = 0
-    w.... j < l..(strs) a.. i < l..(strs[j]):
+    w.... j < l..(strs) a.. i < l..(strs[j]
       __ j __ 0:
         char = strs[j][i]
       ____:

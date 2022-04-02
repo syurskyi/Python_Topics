@@ -1,7 +1,7 @@
 ____ typing _______ List
 
 
-___ sum_numbers(numbers):
+___ sum_numbers(numbers
     """Sums numbers
 
     :param numbers: a list of numbers

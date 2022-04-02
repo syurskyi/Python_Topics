@@ -13,8 +13,8 @@ The three ranges are : [0, 0], [2, 2], [0, 2] and their respective sums are: -2,
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ countRangeSum  nums, lower, upper):
+c_ Solution(o..
+    ___ countRangeSum  nums, lower, upper
         """
         MergeSort while counting required range sum
         :type nums: List[int]
@@ -24,7 +24,7 @@ c_ Solution(o..):
         """
         __ n.. nums: r.. 0
 
-        ___ msort(A, lo, hi):
+        ___ msort(A, lo, hi
             __ hi - lo <= 1: r.. 0
 
             mid = (lo + hi)/2
@@ -32,7 +32,7 @@ c_ Solution(o..):
 
             temp    # list
             i = j = r = mid
-            ___ l __ x..(lo, mid):
+            ___ l __ x..(lo, mid
                 w.... i < hi a.. A[i] - A[l] <  lower: i += 1
                 w.... j < hi a.. A[j] - A[l] <= upper: j += 1
                 cnt += j - i
@@ -52,7 +52,7 @@ c_ Solution(o..):
 
         n = l..(nums)
         F = [0 ___ _ __ x..(n+1)]
-        ___ i __ x..(1, n+1):
+        ___ i __ x..(1, n+1
             F[i] = F[i-1] + nums[i-1]
 
         r.. msort(F, 0, n+1)

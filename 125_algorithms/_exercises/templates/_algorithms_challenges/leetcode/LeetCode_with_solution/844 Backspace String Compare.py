@@ -46,7 +46,7 @@ c_ Solution:
         """
         r.. make_stk(S) __ make_stk(T)
 
-    ___ make_stk  S):
+    ___ make_stk  S
         stk    # list
         ___ s __ S:
             __ s __ "#":

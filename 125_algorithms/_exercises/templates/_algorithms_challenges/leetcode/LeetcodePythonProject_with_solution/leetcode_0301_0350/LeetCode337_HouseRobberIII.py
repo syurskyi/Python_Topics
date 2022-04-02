@@ -1,18 +1,18 @@
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ rob  root):
+c_ Solution(o..
+    ___ rob  root
         __ n.. root: r.. 0
         result = helper(root)
         r.. m..(result[0], result[1])
     
     # return include, exclude
-    ___ helper  root):
+    ___ helper  root
         __ n.. root: r.. [0, 0]
         left = helper(root.left)
         right = helper(root.right)

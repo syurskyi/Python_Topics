@@ -2,7 +2,7 @@ EIGHTBITMASK = 0x80
 SEVENBITSMASK = 0x7f
 
 
-___ encode_single(n):
+___ encode_single(n
     bytes = [n & SEVENBITSMASK]
     n >>= 7
 
@@ -13,15 +13,15 @@ ___ encode_single(n):
     r.. bytes[::-1]
 
 
-___ encode(numbers):
+___ encode(numbers
     r.. s..((encode_single(n) ___ n __ numbers), [])
 
 
-___ decode(bytes):
+___ d.. bytes
     values    # list
     n = 0
 
-    ___ i, byte __ e..(bytes):
+    ___ i, byte __ e..(bytes
         n <<= 7
         n += (byte & SEVENBITSMASK)
 

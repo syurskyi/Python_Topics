@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxSlidingWindow  nums, k):
+c_ Solution(o..
+  ___ maxSlidingWindow  nums, k
     """
     :type nums: List[int]
     :type k: int
@@ -9,7 +9,7 @@ c_ Solution(o..):
       r.. []
     ans = [0 ___ _ __ r..(l..(nums) - k + 1)]
     stack = c...d..([])
-    ___ i __ r..(0, k):
+    ___ i __ r..(0, k
       w.... stack a.. nums[stack[-1]] < nums[i]:
         stack.pop()
       stack.a..(i)

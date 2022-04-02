@@ -5,8 +5,8 @@ support the peek() operation -- it essentially peek() at the element that will b
 __author__ = 'Daniel'
 
 
-c_ Iterator(o..):
-    ___ - , nums):
+c_ Iterator(o..
+    ___ - , nums
         """
         Initializes an iterator object to the beginning of a list.
         :type nums: List[int]
@@ -25,8 +25,8 @@ c_ Iterator(o..):
         """
 
 
-c_ PeekingIterator(o..):
-    ___ - , iterator):
+c_ PeekingIterator(o..
+    ___ - , iterator
         """
         Initialize your data structure here.
         :type iterator: Iterator

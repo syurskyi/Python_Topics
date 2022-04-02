@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxNumber  _nums1, _nums2, k):
+c_ Solution(o..
+  ___ maxNumber  _nums1, _nums2, k
     """
     :type nums1: List[int]
     :type nums2: List[int]
@@ -7,7 +7,7 @@ c_ Solution(o..):
     :rtype: List[int]
     """
 
-    ___ getKDigits(num, k):
+    ___ getKDigits(num, k
       drop = l..(num) - k
       stack    # list
       ___ c __ num:
@@ -17,10 +17,10 @@ c_ Solution(o..):
         stack.a..(c)
       r.. stack[:k]
 
-    ___ merge(nums1, nums2):
+    ___ merge(nums1, nums2
       ans    # list
       i = j = 0
-      w.... i < l..(nums1) a.. j < l..(nums2):
+      w.... i < l..(nums1) a.. j < l..(nums2
         __ nums1[i:] > nums2[j:]:
           ans.a..(nums1[i])
           i += 1
@@ -28,15 +28,15 @@ c_ Solution(o..):
           ans.a..(nums2[j])
           j += 1
 
-      __ i < l..(nums1):
+      __ i < l..(nums1
         ans += nums1[i:]
-      __ j < l..(nums2):
+      __ j < l..(nums2
         ans += nums2[j:]
       r.. ans
 
     ans    # list
-    ___ i __ r..(0, k + 1):
-      __ i <= l..(_nums1) a.. k - i <= l..(_nums2):
+    ___ i __ r..(0, k + 1
+      __ i <= l..(_nums1) a.. k - i <= l..(_nums2
         n1 = getKDigits(_nums1, i)
         n2 = getKDigits(_nums2, k - i)
         __ i __ 2:

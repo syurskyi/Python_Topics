@@ -21,8 +21,8 @@ Output: False
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ canMeasureWater  x, y, z):
+c_ Solution(o..
+    ___ canMeasureWater  x, y, z
         """
         Number theory
         Use the property of Bezout's identity and check if z is a multiple of GCD(x, y)
@@ -39,7 +39,7 @@ c_ Solution(o..):
 
         r.. z % gcd(x, y) __ 0
 
-    ___ gcd  a, b):
+    ___ gcd  a, b
         w.... b:
             a, b = b, a%b
         r.. a

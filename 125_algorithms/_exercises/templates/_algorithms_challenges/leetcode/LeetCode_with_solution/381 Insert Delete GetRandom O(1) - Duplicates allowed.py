@@ -35,8 +35,8 @@ _______ r__
 __author__ = 'Daniel'
 
 
-c_ RandomizedCollection(o..):
-    ___ - ):
+c_ RandomizedCollection(o..
+    ___ -
         """
         pop set is O(1), deterministic depends on hash value
         Initialize your data structure here.
@@ -44,7 +44,7 @@ c_ RandomizedCollection(o..):
         lst    # list
         pos = defaultdict(s..)
 
-    ___ insert  val):
+    ___ insert  val
         """
         Inserts a value to the collection. Returns true if the collection did not already contain the specified element.
         :type val: int
@@ -57,7 +57,7 @@ c_ RandomizedCollection(o..):
 
         r.. flag
 
-    ___ remove  val):
+    ___ remove  val
         """
         Removes a value from the collection. Returns true if the collection contained the specified element.
         :type val: int

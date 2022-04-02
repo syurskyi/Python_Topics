@@ -6,8 +6,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ ValidWordAbbr(o..):
-    ___ - , dictionary):
+c_ ValidWordAbbr(o..
+    ___ - , dictionary
         """
         initialize your data structure here.
         :type dictionary: List[str]
@@ -18,13 +18,13 @@ c_ ValidWordAbbr(o..):
         ___ word __ dictionary:
             abbrev[process(word)] += 1
 
-    ___ process  word):
+    ___ process  word
         __ l..(word) <= 2:
             r.. word
 
         r.. word[0]+s..(l..(word)-2)+word[-1]
 
-    ___ isUnique  word):
+    ___ isUnique  word
         """
         check if a word is unique.
         :type word: str

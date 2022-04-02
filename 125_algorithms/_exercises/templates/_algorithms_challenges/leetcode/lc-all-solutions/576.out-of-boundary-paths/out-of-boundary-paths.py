@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findPaths  m, n, N, x, y):
+c_ Solution(o..
+  ___ findPaths  m, n, N, x, y
     dp = [[[0] * n ___ _ __ r..(m)] ___ _ __ r..(N + 1)]
     dp[0][x][y] = 1
     ans = 0
     mod = 10 ** 9 + 7
-    ___ k __ r..(1, N + 1):
-      ___ i __ r..(m):
-        ___ j __ r..(n):
+    ___ k __ r..(1, N + 1
+      ___ i __ r..(m
+        ___ j __ r..(n
           __ i __ 0:
             ans += dp[k - 1][i][j] % mod
           __ i __ m - 1:

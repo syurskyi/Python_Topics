@@ -1,4 +1,4 @@
-___ word_count(phrase):
+___ word_count(phrase
 
     # Remove whitespace and \n and toss into array
     words = phrase.s...r..("\n", " ").s..(" ")

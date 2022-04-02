@@ -4,14 +4,14 @@ Reverse a singly linked list.
 __author__ = 'Daniel'
 
 
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
 
-c_ Solution(o..):
-    ___ reverseList  head):
+c_ Solution(o..
+    ___ reverseList  head
         """
         :type head: ListNode
         :rtype: ListNode

@@ -16,8 +16,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ canConstruct  ransomNote, magazine):
+c_ Solution(o..
+    ___ canConstruct  ransomNote, magazine
         """
         :type ransomNote: str
         :type magazine: str

@@ -4,15 +4,15 @@ distinct indices i and j in the array such that nums[i] = nums[j] and the
 difference between i and j is at most k.
 """
 
-c_ Solution(o..):
-    ___ containsNearbyDuplicate  nums, k):
+c_ Solution(o..
+    ___ containsNearbyDuplicate  nums, k
         """
         :type nums: List[int]
         :type k: int
         :rtype: bool
         """
         d    # dict
-        ___ i, e __ e..(nums):
+        ___ i, e __ e..(nums
             __ e __ d:
                 __ i - d[e] <= k:
                     r.. T..

@@ -9,7 +9,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ countPrimes  n):
+    ___ countPrimes  n
         """
         Find prime using Sieve's algorithm
         :type n: int
@@ -20,9 +20,9 @@ c_ Solution:
 
         is_prime = [T.. ___ _ __ x..(n)]
         is_prime[0], is_prime[1] = F.., F..
-        ___ i __ x..(2, i..(math.sqrt(n))+1):
+        ___ i __ x..(2, i..(math.sqrt(n))+1
             __ is_prime[i]:
-                ___ j __ x..(i*i, n, i):
+                ___ j __ x..(i*i, n, i
                     is_prime[j] = F..
 
         r.. is_prime.c.. T..)

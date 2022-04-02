@@ -5,16 +5,16 @@ Created on Feb 14, 2018
 '''
 _______ heapq
 
-c_ MaxStack(o..):
+c_ MaxStack(o..
 
-    ___ - ):
+    ___ -
         """
         initialize your data structure here.
         """
         stack    # list
         heap    # list
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: void
@@ -49,7 +49,7 @@ c_ MaxStack(o..):
         """
         val = heapq.heappop(heap)
         val = -val
-        ___ i __ r..(l..(stack)-1, -1, -1):
+        ___ i __ r..(l..(stack)-1, -1, -1
             __ stack[i] __ val:
                 stack = stack[:i]+stack[i+1:]
                 _____

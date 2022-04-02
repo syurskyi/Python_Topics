@@ -3,7 +3,7 @@ _______ unittest
 ____ strain _______ keep, discard
 
 
-c_ StrainTest(unittest.TestCase):
+c_ StrainTest(unittest.TestCase
     ___ test_empty_sequence
         assertEqual(keep([], l.... x: x % 2 __ 0), [])
 
@@ -22,22 +22,22 @@ c_ StrainTest(unittest.TestCase):
         assertEqual(keep(inp, l.... x: x % 2 __ 0), inp)
 
     ___ test_discard_endswith
-        inp = ['dough', 'cash', 'plough', 'though', 'through', 'enough']
-        out = ['cash']
+        inp =  'dough', 'cash', 'plough', 'though', 'through', 'enough'
+        out =  'cash'
         assertEqual(discard(inp, l.... x: s...endswith(x, 'ough')), out)
 
     ___ test_keep_z
-        inp = ['zebra', 'arizona', 'apple', 'google', 'mozilla']
-        out = ['zebra', 'arizona', 'mozilla']
+        inp =  'zebra', 'arizona', 'apple', 'google', 'mozilla'
+        out =  'zebra', 'arizona', 'mozilla'
         assertEqual(keep(inp, l.... x: 'z' __ x), out)
 
     ___ test_keep_discard
-        inp = ['1,2,3', 'one', 'almost!', 'love']
+        inp =  '1,2,3', 'one', 'almost!', 'love'
         assertEqual(discard(keep(inp, s...isalpha), s...isalpha), [])
 
     ___ test_keep_plus_discard
-        inp = ['1,2,3', 'one', 'almost!', 'love']
-        out = ['one', 'love', '1,2,3', 'almost!']
+        inp =  '1,2,3', 'one', 'almost!', 'love'
+        out =  'one', 'love', '1,2,3', 'almost!'
         assertEqual(
             keep(inp, s...isalpha) + discard(inp, s...isalpha), out)
 

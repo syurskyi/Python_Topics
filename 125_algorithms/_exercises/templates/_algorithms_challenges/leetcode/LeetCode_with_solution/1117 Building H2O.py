@@ -47,7 +47,7 @@ ____ threading _______ Semaphore
 ____ c.. _______ d..
 
 c_ H2O:
-    ___ - ):
+    ___ -
         hq = d..()
         oq = d..()
 
@@ -67,7 +67,7 @@ c_ H2O:
 
 
 c_ H2O_TLE2:
-    ___ - ):
+    ___ -
         """
         Conditional Variable as counter? - Semaphore
         """
@@ -77,7 +77,7 @@ c_ H2O_TLE2:
         gates[0].a..
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
-        __ gates[0].acquire(blocking=F..):  # self.gates[0]._value > 0
+        __ gates[0].acquire(blocking=F..  # self.gates[0]._value > 0
             # still have available count
             gates[0].release()
         ____:
@@ -93,7 +93,7 @@ c_ H2O_TLE2:
 
 
 c_ H2O_TLE:
-    ___ - ):
+    ___ -
         """
         Conditional Variable as counter?
         Fixed at HHO pattern

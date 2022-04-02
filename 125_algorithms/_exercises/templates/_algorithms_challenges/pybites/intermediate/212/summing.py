@@ -1,7 +1,7 @@
 ____ contextlib _______ suppress
 
 
-___ sum_numbers(numbers):
+___ sum_numbers(numbers
     """This generator divides each nummber by its consecutive number.
        So if it gets passed in [4, 2, 1] it yields 4/2 and 2/1.
        It ignores ZeroDivisionError and TypeError exceptions (latter happens
@@ -9,9 +9,9 @@ ___ sum_numbers(numbers):
 
        Task: use contextlib's suppress twice to make the code below more concise.
     """
-    ___ i, j __ z..(numbers, numbers[1:]):
+    ___ i, j __ z..(numbers, numbers[1:]
         # replace the block below
-        w__ suppress(ZeroDivisionError, T..):
+        w__ suppress(ZeroDivisionError, T..
             y.. i/j
         # try:
         #     try:

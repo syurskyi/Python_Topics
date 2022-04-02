@@ -1,13 +1,13 @@
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 c_ Solution:
     # ascending
-    ___ insertionSortList_TLE  head):
+    ___ insertionSortList_TLE  head
         """
         Time Limit Exceded
         """
@@ -18,7 +18,7 @@ c_ Solution:
 
 
         closed_tail = dummy_head.next
-        w....(closed_tail a.. closed_tail.next):
+        w....(closed_tail a.. closed_tail.next
             open_head = closed_tail.next
             # open_head_next = closed_tail.next.next
 
@@ -27,7 +27,7 @@ c_ Solution:
             ptr = dummy_head.next # error using ptr = head
 
             # WHILE OUTSIDE IF THUS INCREASING TIME COMPLEXITY
-            w....(ptr_before):
+            w....(ptr_before
                 __ comparator(ptr, open_head)>0:
                     ptr_before.next = open_head
                     closed_tail.next = open_head.next
@@ -47,7 +47,7 @@ c_ Solution:
         r.. dummy_head.next
 
 
-    ___ insertionSortList  head):
+    ___ insertionSortList  head
         """
         O(n^2), but with better performance since while loop inside a if
 
@@ -66,7 +66,7 @@ c_ Solution:
         dummy.next = head
 
         closed_tail = head
-        w.... (closed_tail a.. closed_tail.next):
+        w.... (closed_tail a.. closed_tail.next
             open_head = closed_tail.next
             open_head_next = closed_tail.next.next
             __ n.. comparator(closed_tail, open_head)<=0:  # Step 1: only compare the closed set tail and open set head

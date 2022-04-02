@@ -30,8 +30,8 @@ c_ Solution:
         m = l..(word1)
         n = l..(word2)
 
-        ___ i __ r..(1, m + 1):
-            ___ j __ r..(1, n + 1):
+        ___ i __ r..(1, m + 1
+            ___ j __ r..(1, n + 1
                 __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1] + 1
                 ____:
@@ -56,13 +56,13 @@ c_ Solution:
         n = l..(word2)
 
         # initialization is important
-        ___ i __ r..(1, m + 1):
+        ___ i __ r..(1, m + 1
             F[i][0] = i
-        ___ j __ r..(1, n + 1):
+        ___ j __ r..(1, n + 1
             F[0][j] = j
 
-        ___ i __ r..(1, m + 1):
-            ___ j __ r..(1, n + 1):
+        ___ i __ r..(1, m + 1
+            ___ j __ r..(1, n + 1
                 __ word1[i-1] __ word2[j-1]:
                     F[i][j] = F[i-1][j-1]
                 ____:

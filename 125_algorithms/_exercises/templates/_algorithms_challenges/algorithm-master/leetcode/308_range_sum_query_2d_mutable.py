@@ -7,7 +7,7 @@ param_1 = obj.sumRegion(x1,y1,x2,y2)
 
 
 c_ NumMatrix:
-    ___ - , matrix):
+    ___ - , matrix
         """
         :type matrix: List[List[int]]
         """
@@ -18,11 +18,11 @@ c_ NumMatrix:
         bits = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # bits
         incr = [[0] * (n + 1) ___ _ __ r..(m + 1)]  # increments
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 update(x, y, matrix[x][y])
 
-    ___ update  x, y, val):
+    ___ update  x, y, val
         """
         :type x: int
         :type y: int
@@ -44,7 +44,7 @@ c_ NumMatrix:
                 j += (j & -j)
             i += (i & -i)
 
-    ___ sumRegion  x1, y1, x2, y2):
+    ___ sumRegion  x1, y1, x2, y2
         """
         :type x1: int
         :type y1: int
@@ -59,7 +59,7 @@ c_ NumMatrix:
             s..(x1, y1),
         ))
 
-    ___ s..  x, y):
+    ___ s..  x, y
         res = 0
         i = x
         j = y

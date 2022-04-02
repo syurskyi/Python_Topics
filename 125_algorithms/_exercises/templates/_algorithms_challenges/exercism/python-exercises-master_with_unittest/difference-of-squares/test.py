@@ -5,7 +5,7 @@ ____ difference_of_squares _______ difference, square_of_sum, sum_of_squares
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.1.0
 
-c_ DifferenceOfSquaresTest(unittest.TestCase):
+c_ DifferenceOfSquaresTest(unittest.TestCase
     ___ test_square_of_sum_1
         assertEqual(square_of_sum(1), 1)
 

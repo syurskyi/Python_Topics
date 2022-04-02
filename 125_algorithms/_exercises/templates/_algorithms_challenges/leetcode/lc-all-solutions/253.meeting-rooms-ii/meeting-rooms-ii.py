@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minMeetingRooms  intervals):
+c_ Solution(o..
+  ___ minMeetingRooms  intervals
     """
     :type intervals: List[Interval]
     :rtype: int

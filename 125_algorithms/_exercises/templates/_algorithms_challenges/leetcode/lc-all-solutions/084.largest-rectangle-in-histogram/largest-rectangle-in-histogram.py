@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ largestRectangleArea  height):
+c_ Solution(o..
+  ___ largestRectangleArea  height
     """
     :type height: List[int]
     :rtype: int

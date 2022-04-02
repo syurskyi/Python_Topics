@@ -3,7 +3,7 @@ _______ p__
 ____ groceries _______ Item, Groceries, create_parser, handle_args
 
 
-@p__.f..
+?p__.f..
 ___ cart
     # faking some data (normally would load from DB)
     products = 'celery apples water coffee chicken pizza'.s..
@@ -11,38 +11,38 @@ ___ cart
     cravings = F.., F.., F.., F.., F.., T..
 
     items    # list
-    ___ item __ z..(products, prices, cravings):
+    ___ item __ z..(products, prices, cravings
         items.a..(Item(*item))
 
     r.. Groceries(items)
 
 
-@p__.f..
+?p__.f..
 ___ parser
     r.. create_parser()
 
 
-___ test_list(parser, cart, capfd):
-    args = parser.parse_args(['-l'])
+___ test_list(parser, cart, capfd
+    args = parser.parse_args( '-l' )
     handle_args(args, cart)
     output = ?.r .. 0].s..('\n')
     ... 'pizza (craving)                |   4' __ output
     ... 'Total                          |  22' __ output
 
 
-___ test_search(parser, cart, capfd):
-    args = parser.parse_args(['-s', 'coffee'])
+___ test_search(parser, cart, capfd
+    args = parser.parse_args( '-s', 'coffee' )
     handle_args(args, cart)
     output = ?.r .. 0].s..('\n')
     ... 'coffee                         |   5' __ output
     ... 'Total                          |   5' __ output
 
 
-___ test_add(parser, cart):
+___ test_add(parser, cart
     ... l..(cart) __ 6
     ... cart.due __ 22
 
-    args = parser.parse_args(['-a', 'honey', '5', 'False'])
+    args = parser.parse_args( '-a', 'honey', '5', 'False' )
     handle_args(args, cart)
 
     ... l..(cart) __ 7
@@ -54,12 +54,12 @@ ___ test_add(parser, cart):
     ... n.. new_item.craving
 
 
-___ test_delete(parser, cart):
+___ test_delete(parser, cart
     # nice: fixture gives me a clean slate each test!
     ... l..(cart) __ 6
     ... cart.due __ 22
 
-    args = parser.parse_args(['-d', 'pizza'])
+    args = parser.parse_args( '-d', 'pizza' )
     handle_args(args, cart)
 
     ... l..(cart) __ 5
@@ -71,15 +71,15 @@ ___ test_delete(parser, cart):
     ... n.. new_last_item.craving
 
 
-___ test_args_mulually_exclusive(parser):
+___ test_args_mulually_exclusive(parser
     # argument -l/--list: not allowed with argument -d/--delete
-    w__ p__.r..(S..):
-        parser.parse_args(['-d', 'pizza', '-l'])
+    w__ p__.r..(S..
+        parser.parse_args( '-d', 'pizza', '-l' )
 
     # argument -a/--add: expected 3 arguments
-    w__ p__.r..(S..):
-        parser.parse_args(['-a', 'pizza'])
+    w__ p__.r..(S..
+        parser.parse_args( '-a', 'pizza' )
 
     # unrecognized arguments: coffee
-    w__ p__.r..(S..):
-        parser.parse_args(['-d', 'pizza', 'coffee'])
+    w__ p__.r..(S..
+        parser.parse_args( '-d', 'pizza', 'coffee' )

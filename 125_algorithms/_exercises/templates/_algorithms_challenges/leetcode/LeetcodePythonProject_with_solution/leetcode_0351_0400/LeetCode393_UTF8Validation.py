@@ -4,8 +4,8 @@ Created on Apr 3, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ validUtf8  data):
+c_ Solution(o..
+    ___ validUtf8  data
         count = 0
         ___ v __ data:
             __ count __ 0:

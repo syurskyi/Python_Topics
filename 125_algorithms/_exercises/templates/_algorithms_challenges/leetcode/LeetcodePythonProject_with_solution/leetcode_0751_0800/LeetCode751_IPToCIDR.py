@@ -3,8 +3,8 @@ Created on Mar 26, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ ipToCIDR  ip, n):
+c_ Solution(o..
+    ___ ipToCIDR  ip, n
         """
         :type ip: str
         :type n: int
@@ -24,9 +24,9 @@ c_ Solution(o..):
             n -= step
         r.. res
     
-    ___ long2ip  x, step):
+    ___ long2ip  x, step
         res = [0]*4
-        ___ i __ r..(3, -1, -1):
+        ___ i __ r..(3, -1, -1
             res[i] = x&255
             x >>= 8
         n = 33
@@ -50,7 +50,7 @@ c_ Solution(o..):
 __ _____ __ _____
     Solution().test()
     
-    ___ n __ r..(1, 20):
+    ___ n __ r..(1, 20
         print('n: %s' % n)
         print('{:b}'.f..(n))
         print('{:b}'.f..(-n))

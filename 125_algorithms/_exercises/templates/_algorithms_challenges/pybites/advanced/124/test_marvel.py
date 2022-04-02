@@ -10,8 +10,8 @@ half_characters = characters[:half_size]
 
 ___ test_most_popular_characters
     actual = most_popular_characters()
-    expected = ['Spider-Man', 'Captain America', 'Wolverine',
-                'Iron Man', 'Thor']
+    expected =  'Spider-Man', 'Captain America', 'Wolverine',
+                'Iron Man', 'Thor' 
     ... actual __ expected
 
 
@@ -28,7 +28,7 @@ ___ test_get_percentage_female_characters
 
 
 ___ test_most_popular_characters_smaller_data_set_and_top_2
-    expected = ['Spider-Man', 'Captain America']
+    expected =  'Spider-Man', 'Captain America' 
     actual = most_popular_characters(half_characters, top=2)
     ... actual __ expected
 

@@ -5,7 +5,7 @@ LEAF = "*"
 TRUNK = "|"
 
 
-___ generate_improved_xmas_tree(rows=10):
+___ generate_improved_xmas_tree(rows=10
     """Generate a xmas tree with a star (+), leafs (*) and a trunk (|)
        for given rows of leafs (default 10).
        For more information see the test and the bite description"""
@@ -16,7 +16,7 @@ ___ generate_improved_xmas_tree(rows=10):
 
 
 
-    ___ row __ r..(rows):
+    ___ row __ r..(rows
         leafs = 2 * (row + 1) - 1
         line = f"{LEAF * leafs:^{last_row_size}}"
         lines.a..(line)
@@ -33,7 +33,7 @@ ___ generate_improved_xmas_tree(rows=10):
     
 
     trunk = f"{TRUNK * trunk_width:^{last_row_size}}"
-    ___ _ __ r..(2):
+    ___ _ __ r..(2
         lines.a..(trunk)
 
 

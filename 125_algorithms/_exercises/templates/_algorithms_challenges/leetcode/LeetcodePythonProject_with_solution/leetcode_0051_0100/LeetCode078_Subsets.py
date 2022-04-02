@@ -4,8 +4,8 @@ Created on Jan 24, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ subsets  nums):
+c_ Solution(o..
+    ___ subsets  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -17,7 +17,7 @@ c_ Solution(o..):
         helper(nums, elem, 0, result)
         r.. result
     
-    ___ helper  nums, elem, start, result):
+    ___ helper  nums, elem, start, result
         result.a..(l..(elem))
         ___ i __ r..(start, l..(nums)):
             elem.a..(nums[i])

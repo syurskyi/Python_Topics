@@ -30,7 +30,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         cache    # dict
 
     ___ numsSameConsecDiff  N: i.., K: i..) __ List[i..]:
@@ -38,14 +38,14 @@ c_ Solution:
         dfs + memoization
         """
         ret    # list
-        ___ i __ r..(1, 10):
+        ___ i __ r..(1, 10
             ret.extend(dfs(i, N, K))
 
         __ N __ 1:
             ret.a..([0])  # special case
 
         r.. l..(
-            map(l.... x: i..("".j..(map(s.., x))), ret)
+            map(l.... x: i..("".j.. m..(s.., x))), ret)
         )
 
     ___ dfs  start: i.., N: i.., K: i..) __ List[List[i..]]:
@@ -55,10 +55,10 @@ c_ Solution:
                 ret = [[start]]
             ____ N > 1:
                 __ start + K <= 9:
-                    ___ e __ dfs(start + K, N - 1, K):
+                    ___ e __ dfs(start + K, N - 1, K
                         ret.a..([start] + e)
                 __ start - K >= 0 a.. K != 0:  # special case
-                    ___ e __ dfs(start - K, N - 1, K):
+                    ___ e __ dfs(start - K, N - 1, K
                         ret.a..([start] + e)
 
             cache[start, N, K] = ret

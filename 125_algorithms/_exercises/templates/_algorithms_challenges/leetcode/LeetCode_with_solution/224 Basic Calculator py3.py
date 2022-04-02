@@ -38,21 +38,21 @@ c_ Solution:
         prev_op = "+"
         operand = 0
         i = start
-        w.... i < l..(s):  #  not using for-loop, since the cursor needs to advance in recursion
+        w.... i < l..(s  #  not using for-loop, since the cursor needs to advance in recursion
             __ s[i] __ " ":
                 p..
             ____ s[i].i..
                 operand = operand * 10 + i..(s[i])
-            ____ s[i] __ ("+", "-", ")", "\0"):  # delimited
+            ____ s[i] __ ("+", "-", ")", "\0"  # delimited
                 __ prev_op __ "+":
                     stk.a..(operand)
                 ____ prev_op __ "-":
                     stk.a..(-operand)
         
-                __ s[i] __ ("+", "-"):
+                __ s[i] __ ("+", "-"
                     operand = 0
                     prev_op = s[i]
-                ____ s[i] __ (")", "\0"):
+                ____ s[i] __ (")", "\0"
                     r.. s..(stk), i
             ____ s[i] __ "(":
                 # avoid setting operand to 0

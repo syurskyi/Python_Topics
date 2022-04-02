@@ -1,21 +1,21 @@
 directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
-c_ Solution(o..):
-  ___ longestIncreasingPath  matrix):
+c_ Solution(o..
+  ___ longestIncreasingPath  matrix
     """
     :type matrix: List[List[int]]
     :rtype: int
     """
 
-    ___ dfs(matrix, i, j, visited, cache):
+    ___ dfs(matrix, i, j, visited, cache
       __ (i, j) __ visited:
         r.. visited[(i, j)]
 
       ret = 0
       ___ di, dj __ directions:
         p, q = i + di, j + dj
-        __ p < 0 o. q < 0 o. p >= l..(matrix) o. q >= l..(matrix[0]):
+        __ p < 0 o. q < 0 o. p >= l..(matrix) o. q >= l..(matrix[0]
           _____
         __ (p, q) n.. __ cache a.. matrix[p][q] > matrix[i][j]:
           cache.add((p, q))

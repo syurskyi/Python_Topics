@@ -4,15 +4,15 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ upsideDownBinaryTree  root):
+c_ Solution(o..
+    ___ upsideDownBinaryTree  root
         """
         single recursive
 
@@ -30,12 +30,12 @@ c_ Solution(o..):
         r.. root_new
 
 
-c_ SolutionComplex(o..):
-    ___ - ):
+c_ SolutionComplex(o..
+    ___ -
         root = TreeNode(0)
         cur_new = root
 
-    ___ upsideDownBinaryTree  root):
+    ___ upsideDownBinaryTree  root
         """
         Tree, iterative + recursive
 
@@ -48,7 +48,7 @@ c_ SolutionComplex(o..):
         traverse(root)
         r.. root
 
-    ___ traverse  cur):
+    ___ traverse  cur
         """
         Process left first, and add it to the new tree
         :param cur:

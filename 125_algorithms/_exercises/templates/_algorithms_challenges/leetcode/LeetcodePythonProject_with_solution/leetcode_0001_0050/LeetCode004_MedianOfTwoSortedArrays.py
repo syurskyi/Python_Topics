@@ -3,8 +3,8 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findMedianSortedArrays  nums1, nums2):
+c_ Solution(o..
+    ___ findMedianSortedArrays  nums1, nums2
         """
         :type nums1: List[int]
         :type nums2: List[int]

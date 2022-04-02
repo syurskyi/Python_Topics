@@ -3,8 +3,8 @@ Created on Jan 19, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ permuteUnique  nums):
+c_ Solution(o..
+    ___ permuteUnique  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -15,11 +15,11 @@ c_ Solution(o..):
         dfs(s..(nums), [], res)
         r.. res
     
-    ___ dfs  nums, curr, res):
+    ___ dfs  nums, curr, res
         __ nums __ []:
             res.a..(l..(curr))
             r..
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             __ i > 0 a.. nums[i] __ nums[i-1]:
                 _____
             curr.a..(num)

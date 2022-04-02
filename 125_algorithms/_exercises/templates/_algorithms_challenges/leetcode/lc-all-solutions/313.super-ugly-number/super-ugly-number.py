@@ -1,8 +1,8 @@
 _______ heapq
 
 
-c_ Solution(o..):
-  ___ nthSuperUglyNumber  n, primes):
+c_ Solution(o..
+  ___ nthSuperUglyNumber  n, primes
     """
     :type n: int
     :type primes: List[int]
@@ -15,7 +15,7 @@ c_ Solution(o..):
     ___ i __ r..(0, l..(primes)):
       heapq.heappush(heap, (dp[indexes[i]] * primes[i], i))
 
-    ___ i __ r..(2, n + 1):
+    ___ i __ r..(2, n + 1
       minV = heap[0][0]
       dp[i] = minV
       w.... heap[0][0] __ minV:

@@ -4,7 +4,7 @@ c_ Solution:
     @param: B: sorted integer array B
     @return: A new sorted integer array
     """
-    ___ mergeSortedArray  A, B):
+    ___ mergeSortedArray  A, B
         __ n.. A:
             r.. B
         __ n.. B:

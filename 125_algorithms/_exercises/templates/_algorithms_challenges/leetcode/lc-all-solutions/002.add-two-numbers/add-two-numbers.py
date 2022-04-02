@@ -4,9 +4,9 @@
 #         self.val = x
 #         self.next = None
 
-c_ Solution(o..):
+c_ Solution(o..
   # maybe standard version
-  ___ _addTwoNumbers  l1, l2):
+  ___ _addTwoNumbers  l1, l2
     """
     :type l1: ListNode
     :type l2: ListNode
@@ -34,7 +34,7 @@ c_ Solution(o..):
     r.. dummy.next
 
   # shorter version
-  ___ addTwoNumbers  l1, l2):
+  ___ addTwoNumbers  l1, l2
     p = dummy = ListNode(-1)
     carry = 0
     w.... l1 o. l2 o. carry:

@@ -14,8 +14,8 @@ The minimum number of jumps to reach the last index is 2. (Jump 1 step from
 index 0 to 1, then 3 steps to the last index.)
 """
 
-c_ Solution(o..):
-    ___ jump  nums):
+c_ Solution(o..
+    ___ jump  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -28,10 +28,10 @@ c_ Solution(o..):
         t[0] = 0
         __ n __ 1:
             r.. 1
-        ___ i __ r..(n):
+        ___ i __ r..(n
             steps = nums[i]
             end = m..(i + steps, n - 1)
-            ___ j __ r..(i + 1, end + 1):
+            ___ j __ r..(i + 1, end + 1
                 __ t[j] __ -1:
                     t[j] = t[i] + 1
                 ____:

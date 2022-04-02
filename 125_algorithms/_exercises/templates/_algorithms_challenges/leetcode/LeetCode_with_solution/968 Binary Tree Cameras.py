@@ -31,14 +31,14 @@ Every node has value 0.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         covered = {N..}
         cnt = 0
 
@@ -55,7 +55,7 @@ c_ Solution:
         r.. cnt
 
 
-    ___ dfs  node, pi):
+    ___ dfs  node, pi
         """
         post order
         rely on the parents to cover it 
@@ -74,7 +74,7 @@ c_ Solution:
 
 
 c_ SolutionErrror:
-    ___ - ):
+    ___ -
         covered = s..()
 
     ___ minCameraCover  root: TreeNode) __ i..:
@@ -89,7 +89,7 @@ c_ SolutionErrror:
         covered.discard(dummy)  # swallow KeyError
         r.. l..(covered)
 
-    ___ dfs  node, pi):
+    ___ dfs  node, pi
         """
         post order
         """
@@ -102,6 +102,6 @@ c_ SolutionErrror:
         __ (
             (n.. node.left o. node.left __ covered) a..
             (n.. node.right o. node.right __ covered)
-        ):
+
             covered.add(pi)
             r..

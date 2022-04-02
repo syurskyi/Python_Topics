@@ -10,7 +10,7 @@ ___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
     separators= s..(separators)
     result    # list
     previous_start = 0
-    ___ i,c __ e..(text):
+    ___ i,c __ e..(text
         __ c __ separators:
             result.a..(text[previous_start:i])
             previous_start = i + 1

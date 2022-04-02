@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ isIsomorphic  s, t):
+c_ Solution(o..
+  ___ isIsomorphic  s, t
     """
     :type s: str
     :type t: str

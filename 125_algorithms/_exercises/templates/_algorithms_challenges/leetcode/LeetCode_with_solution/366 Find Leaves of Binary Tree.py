@@ -5,15 +5,15 @@ __author__ = 'Daniel'
 
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ findLeaves  root):
+c_ Solution(o..
+    ___ findLeaves  root
         """
         The key is
         1. to find height of a tree
@@ -27,7 +27,7 @@ c_ Solution(o..):
         dfs(root, leaves)
         r.. leaves
 
-    ___ dfs  node, leaves):
+    ___ dfs  node, leaves
         """
         :return: height of of a node
         """
@@ -35,7 +35,7 @@ c_ Solution(o..):
             r.. -1  # leaves index start from 0
 
         height = 1 + m..(dfs(node.left, leaves), dfs(node.right, leaves))
-        __ height >= l..(leaves):
+        __ height >= l..(leaves
             leaves.a..([])  # grow
 
         leaves[height].a..(node.val)

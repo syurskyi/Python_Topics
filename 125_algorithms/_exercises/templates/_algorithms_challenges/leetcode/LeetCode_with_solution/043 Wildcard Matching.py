@@ -20,7 +20,7 @@ isMatch("aab", "c*a*b") -> false
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ isMatch_MLE  s, p):
+    ___ isMatch_MLE  s, p
         """
         dp, similar to 011 Regular Expression Matching.
         Backward dp
@@ -39,13 +39,13 @@ c_ Solution:
         dp = [[F.. ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
         # edge cases
         dp[m][n] = T..
-        ___ j __ x..(n-1, -1 , -1):
+        ___ j __ x..(n-1, -1 , -1
             __ pattern[j]__"*":
                 dp[m][j] = dp[m][j+1]
 
         # transition
-        ___ i __ x..(m-1, -1, -1):
-            ___ j __ x..(n-1, -1, -1):
+        ___ i __ x..(m-1, -1, -1
+            ___ j __ x..(n-1, -1, -1
                 __ tape[i]__pattern[j] o. pattern[j]__"?":
                     dp[i][j] = dp[i+1][j+1]
                 ____ pattern[j]__"*":
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. dp[0][0]
 
-    ___ isMatch_forward  s, p):
+    ___ isMatch_forward  s, p
         """
         "?" is not the problem
         "*" is the problem
@@ -83,16 +83,16 @@ c_ Solution:
 
         dp = [F.. ___ _ __ x..(m+1)]
         dp[0] = T..  # dummy
-        ___ j __ x..(1, n+1):
+        ___ j __ x..(1, n+1
             __ pattern[j-1]__"*":
                 # for i in xrange(m, 0, -1):
                 #     dp[i] = any(dp[k] for k in xrange(i))  # Time Complexity
                 k = 0
                 w.... k<m+1 a.. dp[k]!=T..: k+= 1
-                ___ i __ x..(k, m+1):
+                ___ i __ x..(k, m+1
                     dp[i] = T..
             ____:
-                ___ i __ x..(m, 0, -1):
+                ___ i __ x..(m, 0, -1
                     dp[i] = dp[i-1] a.. (tape[i-1]__pattern[j-1] o. pattern[j-1]__"?")
 
             dp[0] = dp[0] a.. pattern[j-1]__"*"  # !!, pattern no longer match the empty string

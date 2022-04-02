@@ -1,7 +1,7 @@
 c_ Solution:
     # @param {string} s
     # @return {integer}
-    ___ lengthOfLastWord  s):
+    ___ lengthOfLastWord  s
         num = 0
         s = s.s..
         ___ c __ s[::-1]:

@@ -23,8 +23,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ findTheDifference  s, t):
+c_ Solution(o..
+    ___ findTheDifference  s, t
         """
         :type s: str
         :type t: str

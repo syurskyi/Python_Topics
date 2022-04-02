@@ -42,7 +42,7 @@ c_ Solution:
         F    # dict
         ___ i __ r..(l..(A)):
             F[A[i]] = 1
-            ___ j __ r..(i):
+            ___ j __ r..(i
                 __ A[i] % A[j] __ 0 a.. A[i] // A[j] __ F:
                     F[A[i]] += F[A[j]] * F[A[i] // A[j]]  # #left * #right
                     F[A[i]] %= MOD

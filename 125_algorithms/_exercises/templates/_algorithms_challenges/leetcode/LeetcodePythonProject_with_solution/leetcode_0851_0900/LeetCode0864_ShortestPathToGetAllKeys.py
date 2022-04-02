@@ -3,8 +3,8 @@ Created on Sep 24, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ shortestPathAllKeys  grid):
+c_ Solution(o..
+    ___ shortestPathAllKeys  grid
         """
         :type grid: List[str]
         :rtype: int
@@ -13,8 +13,8 @@ c_ Solution(o..):
         numOfKeys = 0
         dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
         moves = s..()
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ grid[i][j] __ '@':
                     starti = i
                     startj = j

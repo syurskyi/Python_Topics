@@ -18,10 +18,10 @@ urllib.request.urlretrieve(
 
 ___ get_harry_most_common_word
     common_word    # list
-    w__ open(stopwords_file) __ f:
-        stopwords_list = [word.s.. ___ word __ f.readlines()]
+    w__ o.. stopwords_file) __ f:
+        stopwords_list = [word.s.. ___ word __ f.r..]
         #print(stopwords_list)
-    w__ open(harry_text, encoding='utf8') __ f:
+    w__ o.. harry_text, encoding='utf8') __ f:
         ___ lines __ f:
             ___ word __ lines.s.. :
                 #print(word)

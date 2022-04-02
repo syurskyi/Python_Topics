@@ -24,15 +24,15 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Codec:
-    ___ serialize  root):
+    ___ serialize  root
         """
         bfs
         Encodes a tree to a single string.
@@ -50,7 +50,7 @@ c_ Codec:
         ret.a..(s..(root.val))  # add result when enqueue
         w.... q:
             l = l..(q)
-            ___ i __ x..(l):
+            ___ i __ x..(l
                 cur = q[i]
                 __ cur.left: q.a..(cur.left)
                 ret.a..(encode(cur.left))
@@ -61,7 +61,7 @@ c_ Codec:
 
         r.. ",".j..(ret)
 
-    ___ deserialize  data):
+    ___ deserialize  data
         """
         Decodes your encoded data to tree.
         decode: 1, 2, 3, null, null, 4, 5, null, null, null, null
@@ -69,30 +69,30 @@ c_ Codec:
         :rtype: TreeNode
         """
         lst = data.s..(",")
-        root = decode(lst[0])
+        root = d.. lst[0])
 
         q = d..([root])
         i = 1
         w.... q:
             cur = q.popleft()
-            __ i < l..(lst):
-                cur.left = decode(lst[i])
+            __ i < l..(lst
+                cur.left = d.. lst[i])
                 i += 1
                 __ cur.left: q.a..(cur.left)
-            __ i < l..(lst):
-                cur.right = decode(lst[i])
+            __ i < l..(lst
+                cur.right = d.. lst[i])
                 i += 1
                 __ cur.right: q.a..(cur.right)
 
         r.. root
 
-    ___ decode  s):
+    ___ decode  s
         __ s __ "null":
             r.. N..
         ____:
             r.. TreeNode(i..(s))
 
-    ___ encode  node):
+    ___ encode  node
         __ n.. node:
             r.. "null"
         ____:

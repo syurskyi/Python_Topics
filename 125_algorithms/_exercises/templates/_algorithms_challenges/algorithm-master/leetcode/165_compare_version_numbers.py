@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ compareVersion  version1, version2):
+    ___ compareVersion  version1, version2
         """
         :type version1: str
         :type version2: str
@@ -27,7 +27,7 @@ c_ Solution:
 
         r.. 0
 
-    ___ get_int  s):
+    ___ get_int  s
         __ n.. s o. n.. s.i..
             r.. 0
 

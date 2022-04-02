@@ -15,30 +15,30 @@ BIG_STRAIGHT = 10
 CHOICE = 11
 
 
-___ ns(number, dice):
+___ ns(number, dice
     r.. s..(n ___ n __ dice __ n __ number)
 
 
-___ full_house(dice):
+___ full_house(dice
     counter = Counter(dice)
     r.. s..(dice) __ s..(counter.values()) __ {3, 2} ____ 0
 
 
-___ four_of_a_kind(dice):
+___ four_of_a_kind(dice
     counter = Counter(dice)
     number, count = counter.most_common()[0]
     r.. 4 * number __ count >= 4 ____ 0
 
 
-___ little_straight(dice):
+___ little_straight(dice
     r.. 30 __ s..(dice) __ {1, 2, 3, 4, 5} ____ 0
 
 
-___ big_straight(dice):
+___ big_straight(dice
     r.. 30 __ s..(dice) __ {2, 3, 4, 5, 6} ____ 0
 
 
-___ yacht(dice):
+___ yacht(dice
     r.. 50 __ l..(s..(dice)) __ 1 ____ 0
 
 
@@ -58,7 +58,7 @@ functions = [
 ]
 
 
-___ score(dice, category):
+___ score(dice, category
     ___
         r.. functions[category](dice)
     ______ I..

@@ -1,16 +1,16 @@
-c_ Solution(o..):
-  ___ singleNumber  nums):
+c_ Solution(o..
+  ___ singleNumber  nums
     """
     :type nums: List[int]
     :rtype: int
     """
 
-    ___ singleNumberK(nums, k):
+    ___ singleNumberK(nums, k
       ret = 0
       count = [0] * 32
-      ___ i __ r..(0, 32):
+      ___ i __ r..(0, 32
         ___ num __ nums:
-          __ num & (1 << i):
+          __ num & (1 << i
             count[i] += 1
         __ count[i] % 3 != 0:
           ret |= 1 << i

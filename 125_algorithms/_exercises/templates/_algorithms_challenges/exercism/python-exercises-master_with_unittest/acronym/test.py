@@ -5,7 +5,7 @@ ____ acronym _______ abbreviate
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.1.0
 
-c_ AcronymTest(unittest.TestCase):
+c_ AcronymTest(unittest.TestCase
     ___ test_basic
         assertEqual(abbreviate('Portable Network Graphics'), 'PNG')
 

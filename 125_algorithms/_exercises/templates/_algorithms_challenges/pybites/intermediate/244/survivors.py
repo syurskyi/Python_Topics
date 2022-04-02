@@ -11,9 +11,9 @@ __ n.. PATH.exists
     urlretrieve(S3.f..(FILE_NAME), PATH)
 
 
-___ _get_data(path=PATH):
-    w__ open(path) __ f:
-        r.. [line.rstrip() ___ line __ f.readlines()]
+___ _get_data(path=PATH
+    w__ o.. path) __ f:
+        r.. [line.rstrip() ___ line __ f.r..]
 
 
 ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
@@ -83,16 +83,16 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
     i = 0
     code_block = N..
     previous_dashed_line = F..
-    w.... i < l..(mutpy_output):
+    w.... i < l..(mutpy_output
         line = mutpy_output[i]
         __ code_block:
             code_block.a..(line)
-        __ line.startswith('---'):
+        __ line.startswith('---'
             __ n.. previous_dashed_line:
                 previous_dashed_line = T..
                 code_block = [line]
             ____:
-                __ a..(fil n.. __ mutpy_output[i +1] ___ fil __ filters):
+                __ a..(fil n.. __ mutpy_output[i +1] ___ fil __ filters
                     filtered.extend(code_block)
                 code_block = N..
                 previous_dashed_line = N..

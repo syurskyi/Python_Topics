@@ -3,8 +3,8 @@
 #     def __init__(self, s=0, e=0):
 #         self.start = s
 #         self.end = e
-c_ IntvArray(o..):
-  ___ - ):
+c_ IntvArray(o..
+  ___ -
     _array    # list
     a.. = l.... x: _array.a..(x)
     s.. = _array.s..
@@ -12,24 +12,24 @@ c_ IntvArray(o..):
   ___ __len__
     r.. l..(_array)
 
-  ___ __getitem__  x):
+  ___ __getitem__  x
     r.. _array[x][0]
 
-  ___ getIdx  x):
-    __ x >= l..(_array):
+  ___ getIdx  x
+    __ x >= l..(_array
       r.. -1
     r.. _array[x][1]
 
 
-c_ Solution(o..):
-  ___ findRightInterval  intervals):
+c_ Solution(o..
+  ___ findRightInterval  intervals
     """
     :type intervals: List[Interval]
     :rtype: List[int]
     """
     bst = IntvArray()
     ans    # list
-    ___ i, intv __ e..(intervals):
+    ___ i, intv __ e..(intervals
       bst.a..((intv.start, i))
     bst.s..()
     length = l..(bst)

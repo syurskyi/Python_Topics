@@ -2,7 +2,7 @@
 # Score: 20
 
 
-___ climbingLeaderboard(leaderboard, aliceScores):
+___ climbingLeaderboard(leaderboard, aliceScores
     rankings = createRankings(leaderboard)
     i = l..(leaderboard) - 1
     ___ score __ aliceScores:
@@ -22,7 +22,7 @@ ___ climbingLeaderboard(leaderboard, aliceScores):
     r..
 
 
-___ createRankings(leaderboard):
+___ createRankings(leaderboard
     rankings = [1]
     rank = 1
     ___ i __ r..(1, l..(leaderboard)):
@@ -33,7 +33,7 @@ ___ createRankings(leaderboard):
 
 
 lenOfLeaderboard = i..(input())
-leaderboard = l..(map(i.., input().rstrip().s..()))
+leaderboard = l.. m..(i.., input().rstrip().s..()))
 lenOfAliceScores = i..(input())
-aliceScores = l..(map(i.., input().rstrip().s..()))
+aliceScores = l.. m..(i.., input().rstrip().s..()))
 climbingLeaderboard(leaderboard, aliceScores)

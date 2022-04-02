@@ -11,7 +11,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
     __ n.. isi..(d, d..) o. d __ N..
         r.. T..
 
-    __ n.. a..([isi..(k, (i.., f__)) a.. k ___ k __ d.v..):
+    __ n.. a..([isi..(k, (i.., f__)) a.. k ___ k __ d.v..
         r.. T..
 
     items = [(k, d[k]) ___ k __ s..(d)]  # handle unordered dicts

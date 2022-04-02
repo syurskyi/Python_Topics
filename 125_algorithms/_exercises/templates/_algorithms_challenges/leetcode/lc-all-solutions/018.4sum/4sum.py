@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ fourSum  nums, target):
+c_ Solution(o..
+  ___ fourSum  nums, target
     """
     :type nums: List[int]
     :type target: int

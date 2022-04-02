@@ -1,7 +1,7 @@
 _______ a__
 _______ functools
 
-___ calculator(f, numbers):
+___ calculator(f, numbers
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
@@ -32,7 +32,7 @@ ___ create_parser
     r.. ap
 
 
-___ call_calculator(args=N.., stdout=F..):
+___ call_calculator(args=N.., stdout=F..
     """Provided/done:
        Calls calculator with provided args object.
        If args are not provided get them via create_parser,
@@ -45,14 +45,14 @@ ___ call_calculator(args=N.., stdout=F..):
     # if combo, e.g. -a and -s, take the first one
     ____:
         args = vars(args)
-    numbers = args['numbers']
-    __ args['mul']:
+    numbers = args 'numbers'
+    __ args 'mul' :
         f = l.... x,y: x * y
-    ____ args['sub']:
+    ____ args 'sub' :
         f = l.... x,y: x - y
-    ____ args['add']:
+    ____ args 'add' :
         f = l.... x,y: x + y
-    ____ args['div']:
+    ____ args 'div' :
         f = l.... x,y: x / y
 
 

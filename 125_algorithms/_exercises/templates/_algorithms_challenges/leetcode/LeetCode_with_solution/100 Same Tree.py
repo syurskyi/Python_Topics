@@ -6,13 +6,13 @@ Two binary trees are considered equal if they are structurally identical and the
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ isSameTree  p, q):
+    ___ isSameTree  p, q
         """
         dfs
         :param p: TreeNode
@@ -26,7 +26,7 @@ c_ Solution:
 
         # dfs
         ___
-            __ p.val__q.val a.. isSameTree(p.left, q.left) a.. isSameTree(p.right, q.right):
+            __ p.val__q.val a.. isSameTree(p.left, q.left) a.. isSameTree(p.right, q.right
                 r.. T..
         ______ AttributeError:
             r.. F..

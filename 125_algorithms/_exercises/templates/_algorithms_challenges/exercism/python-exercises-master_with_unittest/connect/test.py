@@ -102,7 +102,7 @@ testcases = [
 ]
 
 
-c_ ConnectTest(unittest.TestCase):
+c_ ConnectTest(unittest.TestCase
     ___ test_game
         ___ testcase __ testcases:
             game = connect.ConnectGame(testcase["board"])

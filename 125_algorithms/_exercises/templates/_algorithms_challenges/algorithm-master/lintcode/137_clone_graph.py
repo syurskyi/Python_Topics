@@ -11,7 +11,7 @@ class UndirectedGraphNode:
 Iteration
 """
 c_ Solution:
-    ___ cloneGraph  node):
+    ___ cloneGraph  node
         """
         :type node: UndirectedGraphNode
         :rtype: UndirectedGraphNode
@@ -42,7 +42,7 @@ c_ Solution:
 Recursion
 """
 c_ Solution:
-    ___ cloneGraph  node):
+    ___ cloneGraph  node
         """
         :type node: UndirectedGraphNode
         :rtype: UndirectedGraphNode
@@ -52,7 +52,7 @@ c_ Solution:
 
         r.. dfs(node, {})
 
-    ___ dfs  node, N):
+    ___ dfs  node, N
         __ node.label __ N:
             r.. N[node.label]
 

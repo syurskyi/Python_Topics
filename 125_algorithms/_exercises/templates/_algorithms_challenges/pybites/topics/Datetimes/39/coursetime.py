@@ -26,12 +26,12 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    w__ open(COURSE_TIMES) __ f:
-        lines = f.readlines()
+    w__ o.. COURSE_TIMES) __ f:
+        lines = f.r..
         lines = [line.rstrip() ___ line __ lines __ ')' __ line]
     r.. [line.s..('(')[1].s..(')')[0] ___ line __ lines]
 
-___ calc_total_course_duration(timestamps):
+___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
     total_duration = d__.strptime('00:00', "%M:%S")

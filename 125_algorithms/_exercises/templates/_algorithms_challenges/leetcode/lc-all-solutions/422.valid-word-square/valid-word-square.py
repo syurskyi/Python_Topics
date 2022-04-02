@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ validWordSquare  words):
+c_ Solution(o..
+  ___ validWordSquare  words
     """
     :type words: List[str]
     :rtype: bool

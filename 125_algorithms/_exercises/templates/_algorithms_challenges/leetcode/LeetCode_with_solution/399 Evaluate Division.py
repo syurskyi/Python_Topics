@@ -24,8 +24,8 @@ ____ i.. _______ izip
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ calcEquation  equations, values, queries):
+c_ Solution(o..
+    ___ calcEquation  equations, values, queries
         """
         transitive closure
         :type equations: List[List[str]]
@@ -34,14 +34,14 @@ c_ Solution(o..):
         :rtype: List[float]
         """
         G = defaultdict(d..)
-        ___ edge, val __ izip(equations, values):
+        ___ edge, val __ izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1
 
         r.. [dfs(G, s, e, s..()) ___ s, e __ queries]
 
-    ___ dfs  G, s, e, path):
+    ___ dfs  G, s, e, path
         __ s n.. __ G o. e n.. __ G:
             r.. -1.0
         __ e __ G[s]:
@@ -57,8 +57,8 @@ c_ Solution(o..):
         r.. -1.0
 
 
-c_ Solution(o..):
-    ___ calcEquation  equations, values, queries):
+c_ Solution(o..
+    ___ calcEquation  equations, values, queries
         """
         Floyd-Warshall algorithm
         transitive closure
@@ -68,7 +68,7 @@ c_ Solution(o..):
         :rtype: List[float]
         """
         G = defaultdict(d..)
-        ___ edge, val __ izip(equations, values):
+        ___ edge, val __ izip(equations, values
             s, e = edge
             G[s][e], G[e][s] = val, 1/val
             G[s][s], G[e][e] = 1, 1

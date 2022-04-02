@@ -1,8 +1,8 @@
 ____ c.. _______ Counter
 
 
-c_ Solution(o..):
-  ___ frequencySort  s):
+c_ Solution(o..
+  ___ frequencySort  s
     """
     :type s: str
     :rtype: str

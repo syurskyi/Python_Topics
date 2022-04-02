@@ -4,7 +4,7 @@ ____ Previous.validate _______ int_args
 
 
 @int_args
-___ sum_numbers(*numbers):
+___ sum_numbers(*numbers
     r.. s..(numbers)
 
 
@@ -23,5 +23,5 @@ ___ test_invalid_type_float
 
 
 ___ test_negative_number
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         sum_numbers(1, 2, -3)

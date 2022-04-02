@@ -24,10 +24,10 @@ ___ get_belts(data: s..) __ d..:
        readable dates, example entry:
        'yellow': 'January 25, 2018'
     """
-    w__ open(data,'r') __ f:
+    w__ o.. data _ __ f:
         dates = json.load(f)
 
-    dates.s..(key=l.... x: p..(x['date']))
+    dates.s..(key=l.... x: p..(x 'date' ))
     
     
     belts    # dict
@@ -35,15 +35,15 @@ ___ get_belts(data: s..) __ d..:
     score_marker = SCORES[score_index]
     points = 0
     ___ date __ dates:
-        points += date['score']
+        points += date 'score'
         __ points >= score_marker:
 
-            month,day,year = map(i..,date['date'].s..('/'))
+            month,day,year = map(i..,date 'date' .s..('/'))
             date = dt.date(year,month,day)
             date_string = date.s..('%B %d, %Y')
             belts[BELTS[score_index]] = date_string
             score_index += 1
-            __ score_index __ l..(SCORES):
+            __ score_index __ l..(SCORES
                 _____
             score_marker = SCORES[score_index]
 

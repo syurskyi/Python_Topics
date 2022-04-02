@@ -18,7 +18,7 @@ _______ glob
 
 ONE_KB = 1024
 
-___ get_files_implementation_1(dirname, size_in_kb):
+___ get_files_implementation_1(dirname, size_in_kb
     """Return files in dirname that are >= size_in_kb"""
 
     # os.listdir return both directories and files, so it has to be filtered
@@ -29,7 +29,7 @@ ___ get_files_implementation_1(dirname, size_in_kb):
 
     r.. files_over_limit
 
-___ get_files_implementation_2(dirname, size_in_kb):
+___ get_files_implementation_2(dirname, size_in_kb
 
     files_and_dirs = glob.glob("{dirname}/*".f..(dirname=dirname))
     files = [f ___ f __ files_and_dirs __ os.path.isfile(f)]

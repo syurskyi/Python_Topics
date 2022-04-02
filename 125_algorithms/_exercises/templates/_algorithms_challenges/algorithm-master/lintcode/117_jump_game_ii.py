@@ -6,7 +6,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: An integer
     """
-    ___ jump  A):
+    ___ jump  A
         __ n.. A:
             r.. -1
 
@@ -16,7 +16,7 @@ c_ Solution:
         w.... end < target:
             jumps += 1
             furthest = end
-            ___ i __ r..(start, end + 1):
+            ___ i __ r..(start, end + 1
                 __ i + A[i] > furthest:
                     furthest = i + A[i]
             start = end + 1
@@ -33,7 +33,7 @@ c_ Solution:
     @param: A: A list of integers
     @return: An integer
     """
-    ___ jump  A):
+    ___ jump  A
         __ n.. A:
             r.. -1
 
@@ -43,10 +43,10 @@ c_ Solution:
         dp = [INFINITY] * n
         dp[0] = 0
 
-        ___ i __ r..(1, n):
-            ___ j __ r..(i):
+        ___ i __ r..(1, n
+            ___ j __ r..(i
                 __ (dp[j] < INFINITY a.. j + A[j] >= i a..
-                    dp[j] + 1 < dp[i]):
+                    dp[j] + 1 < dp[i]
                     dp[i] = dp[j] + 1
 
         r.. dp[n - 1]

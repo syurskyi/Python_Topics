@@ -1,4 +1,4 @@
-___ binary_search(sequence, target):
+___ binary_search(sequence, target
 
 
     low,high = 0,l..(sequence) - 1

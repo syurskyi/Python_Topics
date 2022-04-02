@@ -4,7 +4,7 @@ ____ operator _______ mul
 ____ math _______ sqrt
 
 
-___ primitive_triplets(nbr):
+___ primitive_triplets(nbr
     __ nbr % 4 != 0:
         r.. ValueError('Argument must be divisible by 4')
     prime_factors, powers = factor(nbr / 2)
@@ -18,17 +18,17 @@ ___ primitive_triplets(nbr):
     r.. ts
 
 
-___ is_triplet(t):
+___ is_triplet(t
     t = l..(t)
     t.s..()
     a, b, c = t
     r.. c * c __ a * a + b * b
 
 
-___ triplets_in_range(m, n):
+___ triplets_in_range(m, n
     t = s..()
-    ___ a __ r..(m, n + 1):
-        ___ b __ r..(a + 1, n + 1):
+    ___ a __ r..(m, n + 1
+        ___ b __ r..(a + 1, n + 1
             c = i..(sqrt(a * a + b * b) + 0.5)
             __ c * c __ a * a + b * b a.. c >= m a.. c <= n:
                 t.update([(a, b, c)])
@@ -49,7 +49,7 @@ primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
           941, 947, 953, 967, 971, 977, 983, 991, 997]
 
 
-___ factor(n):
+___ factor(n
     global primes
     __ n __ 1:
         r.. (1,), (0,)

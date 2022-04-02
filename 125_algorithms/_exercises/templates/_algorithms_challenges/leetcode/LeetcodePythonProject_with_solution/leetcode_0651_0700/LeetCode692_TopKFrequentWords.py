@@ -3,8 +3,8 @@ Created on Oct 24, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ topKFrequent  words, k):
+c_ Solution(o..
+    ___ topKFrequent  words, k
         """
         :type words: List[str]
         :type k: int
@@ -18,7 +18,7 @@ c_ Solution(o..):
         ___ word, freq __ hashmap.i..:
             dp[freq].a..(word)
         res    # list
-        ___ i __ r..(n, -1, -1):
+        ___ i __ r..(n, -1, -1
             __ dp[i]:
                 dp[i].s..()
                 res += dp[i]

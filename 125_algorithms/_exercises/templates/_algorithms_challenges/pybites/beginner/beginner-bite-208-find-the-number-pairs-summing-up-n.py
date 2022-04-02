@@ -9,7 +9,7 @@ we give it [9, 1, 3, 8, 7] it returns [(9, 1), (3, 7)]. The tests check more sce
 Have fun and keep calm and code in Python
 '''
 
-___ find_number_pairs(numbers, N=10):
+___ find_number_pairs(numbers, N=10
 
     result_possible_duplicates    # list
     ___ i __ numbers:

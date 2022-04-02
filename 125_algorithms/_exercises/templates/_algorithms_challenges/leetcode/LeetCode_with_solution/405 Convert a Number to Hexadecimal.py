@@ -27,8 +27,8 @@ Output:
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ toHex  num):
+c_ Solution(o..
+    ___ toHex  num
         """
         All use bit manipulation
         :type num: int
@@ -41,7 +41,7 @@ c_ Solution(o..):
 
         r.. ''.j..(ret[::-1]) o. '0'
 
-    ___ toHexNormal  num):
+    ___ toHexNormal  num
         """
         Python arithmetic handles the negative number very well
         :type num: int
@@ -54,7 +54,7 @@ c_ Solution(o..):
 
         r.. ''.j..(ret[::-1]) o. '0'
 
-    ___ encode  d):
+    ___ encode  d
         __ 0 <= d < 10:
             r.. s..(d)
 

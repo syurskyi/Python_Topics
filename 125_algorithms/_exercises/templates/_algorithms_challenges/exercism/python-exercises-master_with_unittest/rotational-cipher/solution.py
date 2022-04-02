@@ -3,7 +3,7 @@ ____ s__ _______ a.. __ alpha_upper
 ALPHA_LEN = l..(alpha_lower)
 
 
-___ rotate(message, key):
+___ rotate(message, key
     coded_message = ""
     ___ char __ message:
         __ char __ alpha_lower:

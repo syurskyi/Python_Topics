@@ -1,15 +1,15 @@
 ____ c.. _______ defaultdict
 
 
-c_ School(o..):
-    ___ - , name):
+c_ School(o..
+    ___ - , name
         name = name
         db = defaultdict(s..)
 
-    ___ add  student, grade):
+    ___ add  student, grade
         db[grade].add(student)
 
-    ___ grade  level):
+    ___ grade  level
         r.. db[level]
 
     ___ s..

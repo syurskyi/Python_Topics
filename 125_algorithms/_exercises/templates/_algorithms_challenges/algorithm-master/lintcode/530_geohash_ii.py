@@ -10,7 +10,7 @@ c_ GeoHash:
     @param: geohash: geohash a base32 string
     @return: latitude and longitude a location coordinate pair
     """
-    ___ decode  geohash):
+    ___ decode  geohash
         __ n.. geohash:
             r.. []
         __ n.. base32:
@@ -31,7 +31,7 @@ c_ GeoHash:
             _bins_to_loc(lng_codes, -180, 180)
         ]
 
-    ___ _bins_to_loc  bins, left, right):
+    ___ _bins_to_loc  bins, left, right
         mid = 0
 
         ___ code __ bins:
@@ -43,9 +43,9 @@ c_ GeoHash:
 
         r.. left + (right - left) / 2.0
 
-    ___ _oct_to_bins  val_in_oct):
+    ___ _oct_to_bins  val_in_oct
         bins    # list
-        ___ i __ r..(5):
+        ___ i __ r..(5
             __ val_in_oct % 2:
                 bins.a..(1)
             ____:
@@ -58,7 +58,7 @@ c_ GeoHash:
         base32_list = [s..(i) ___ i __ r..(10)]
 
         ignored_char = (o..('a'), o..('i'), o..('l'), o..('o'))
-        ___ i __ r..(o..('a'), o..('z') + 1):
+        ___ i __ r..(o..('a'), o..('z') + 1
             __ i __ ignored_char:
                 _____
             base32_list.a..(chr(i))

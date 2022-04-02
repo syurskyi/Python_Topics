@@ -7,15 +7,15 @@ but "(]" and "([)]" are not.
 """
 
 
-c_ Solution(o..):
-    ___ isValid  s):
+c_ Solution(o..
+    ___ isValid  s
         """
         :type s: str
         :rtype: bool
         """
         pars = {
             ')': '(',
-            ']': '[',
+            ' ': ' ',
             '}': '{',
         }
         stack    # list

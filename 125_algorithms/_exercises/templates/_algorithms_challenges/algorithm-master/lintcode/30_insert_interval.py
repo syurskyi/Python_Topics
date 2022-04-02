@@ -16,7 +16,7 @@ class Interval(object):
 
 
 c_ Solution:
-    ___ insert  intvs, intv):
+    ___ insert  intvs, intv
         """
         :type intvs: list[Interval]
         :type intv: Interval
@@ -32,13 +32,13 @@ c_ Solution:
         ans    # list
         index = l..(intvs)
 
-        ___ i __ r..(l..(intvs) - 1, -1, -1):
+        ___ i __ r..(l..(intvs) - 1, -1, -1
             __ intvs[i].start <= intv.start:
                 _____
             index -= 1
 
         intvs.a..(intv)
-        ___ i __ r..(l..(intvs) - 1, index, -1):
+        ___ i __ r..(l..(intvs) - 1, index, -1
             intvs[i], intvs[i - 1] = intvs[i - 1], intvs[i]
 
         ___ i __ r..(l..(intvs)):  # since there is one more child in intvs

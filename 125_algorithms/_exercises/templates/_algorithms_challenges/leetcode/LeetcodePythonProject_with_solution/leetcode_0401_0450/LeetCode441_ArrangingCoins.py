@@ -4,8 +4,8 @@ Created on Apr 17, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ arrangeCoins  n):
+c_ Solution(o..
+    ___ arrangeCoins  n
         start, end = 1, n
         w.... start <= end:
             mid = (start+end)/2

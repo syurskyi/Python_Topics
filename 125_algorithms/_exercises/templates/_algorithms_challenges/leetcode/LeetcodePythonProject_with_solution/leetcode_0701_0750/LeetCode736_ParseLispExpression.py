@@ -3,23 +3,23 @@ Created on Mar 10, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ evaluate  expression):
+c_ Solution(o..
+    ___ evaluate  expression
         """
         :type expression: str
         :rtype: int
         """
         st, d, tokens    # list, {}, ['']
         
-        ___ getVal(x):
+        ___ getVal(x
             r.. d.get(x, x)
         
-        ___ evaluate(tokens):
-            __ tokens[0] __ ('add', 'mult'):
-                tmp = l..(map(i.., map(getVal, tokens[1:])))
+        ___ evaluate(tokens
+            __ tokens[0] __ ('add', 'mult'
+                tmp = l.. m..(i.., map(getVal, tokens[1:])))
                 r.. s..(tmp[0]+tmp[1] __ tokens[0]__'add' ____ tmp[0]*tmp[1])
             ____:
-                ___ i __ r..(1, l..(tokens)-1, 2):
+                ___ i __ r..(1, l..(tokens)-1, 2
                     __ tokens[i+1]:
                         d[tokens[i]] = getVal(tokens[i+1])
                 r.. getVal(tokens[-1])
@@ -40,7 +40,7 @@ c_ Solution(o..):
                 tokens[-1] += c
         r.. i..(tokens[0])
     
-    ___ evaluate_own_error  expression):
+    ___ evaluate_own_error  expression
         """
         :type expression: str
         :rtype: int
@@ -48,7 +48,7 @@ c_ Solution(o..):
         hashmap    # dict
         r.. helper(expression, hashmap)
     
-    ___ helper  exp, hashmap):
+    ___ helper  exp, hashmap
         __ exp[0] __ '-' o. exp.i..
             r.. i..(exp)
         ____ exp[0] != '(':
@@ -69,14 +69,14 @@ c_ Solution(o..):
                 i = 3
                 w... T...
                     sub1, i = nextElem(exp, i+1)
-                    __ i __ l..(exp):
+                    __ i __ l..(exp
                         r.. helper(sub1, hashmap)
                     sub2, i = nextElem(exp, i+1)
                     hashmap[sub1] = helper(sub2, hashmap)
     
-    ___ nextElem  s, i):
+    ___ nextElem  s, i
         res = ''
-        __ i >= l..(s):
+        __ i >= l..(s
             r.. res, i
         ____ s[i] __ '(':
             res = '('

@@ -42,7 +42,7 @@ c_ Solution:
                         heapq.heappush(h, (t + w, d))
 
         ret = m..(reach_time[1:])  # notice reach_time[0] is dummy
-        __ ret __ f__('inf'):
+        __ ret __ f__('inf'
             r.. -1
         r.. ret
 

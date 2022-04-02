@@ -6,8 +6,8 @@ Count the number of prime numbers less than a non-negative number, n.
 
 """
 
-c_ Solution(o..):
-    ___ countPrimes  n):
+c_ Solution(o..
+    ___ countPrimes  n
         """
         :type n: int
         :rtype: int
@@ -24,7 +24,7 @@ c_ Solution(o..):
                 j += i
             i += 1
         res = 0
-        ___ i __ r..(2, n):
+        ___ i __ r..(2, n
             __ t[i] __ T..:
                 res += 1
         r.. res

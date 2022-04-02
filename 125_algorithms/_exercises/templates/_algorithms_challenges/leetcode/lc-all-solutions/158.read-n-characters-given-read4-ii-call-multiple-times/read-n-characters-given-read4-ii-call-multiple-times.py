@@ -5,11 +5,11 @@
 ____ c.. _______ d..
 
 
-c_ Solution(o..):
-  ___ - ):
+c_ Solution(o..
+  ___ - 
     rBuf = d..([])
 
-  ___ read  buf, n):
+  ___ read  buf, n
     """
     :type buf: Destination buffer (List[str])
     :type n: Maximum number of characters to read (int)
@@ -19,7 +19,7 @@ c_ Solution(o..):
     tmp = [""] * 4
     w.... cnt < n:
       r = read4(tmp)
-      ___ i __ r..(r):
+      ___ i __ r..(r
         rBuf.a..(tmp[i])
       ___ i __ r..(m..(n - cnt, l..(rBuf))):
         buf[cnt] = rBuf.popleft()

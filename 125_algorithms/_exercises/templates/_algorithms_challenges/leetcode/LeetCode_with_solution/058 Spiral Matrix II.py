@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ generateMatrix  n):
+    ___ generateMatrix  n
         """
         algorithm: array, simulation
         :param n: Integer
@@ -29,17 +29,17 @@ c_ Solution:
         result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
         num = 1
         w.... left <= right a.. top <= bottom:
-            ___ i __ x..(left, right + 1):  # tuning ending condition, be greedy
+            ___ i __ x..(left, right + 1  # tuning ending condition, be greedy
                 result[top][i] = num
                 num += 1
-            ___ i __ x..(top + 1, bottom):
+            ___ i __ x..(top + 1, bottom
                 result[i][right] = num
                 num += 1
 
-            ___ i __ x..(right, left, -1):
+            ___ i __ x..(right, left, -1
                 result[bottom][i] = num
                 num += 1
-            ___ i __ x..(bottom, top, -1):
+            ___ i __ x..(bottom, top, -1
                 result[i][left] = num
                 num += 1
 
@@ -52,7 +52,7 @@ c_ Solution:
 
 
 c_ SolutionError:
-    ___ generateMatrix  n):
+    ___ generateMatrix  n
         """
         algorithm: array, simulation
         :param n: Integer
@@ -66,18 +66,18 @@ c_ SolutionError:
         result = [[-1 ___ _ __ x..(n)] ___ _ __ x..(n)]
         num = 1
         w.... left <= right a.. top <= bottom:
-            ___ i __ x..(left, right):  # tuning ending condition, this will fail in the middle
+            ___ i __ x..(left, right  # tuning ending condition, this will fail in the middle
                 result[top][i] = num
                 num += 1
-            ___ i __ x..(top, bottom):
+            ___ i __ x..(top, bottom
                 result[i][right] = num
                 num += 1
 
-            ___ i __ x..(right, left, -1):
+            ___ i __ x..(right, left, -1
                 result[bottom][i] = num
                 num += 1
 
-            ___ i __ x..(bottom, top, -1):
+            ___ i __ x..(bottom, top, -1
                 result[i][left] = num
                 num += 1
 

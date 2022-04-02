@@ -17,21 +17,21 @@ gold_prices = """
 """  # noqa E501
 
 
-___ years_gold_value_decreased(gold_prices: s.. = gold_prices):
+___ years_gold_value_decreased(gold_prices: s.. = gold_prices
    """Analyze gold_prices returning a tuple of the year the gold price
       decreased the most and the year the gold price increased the most.
    """
    price_delta    # dict
    prices_lines = gold_prices.s...s..("\n")
    ___ price_line __ prices_lines:
-      ___ line __ price_line.s..(" "):
+      ___ line __ price_line.s..(" "
          year = i..(line[:line.find("-")])
          price = f__(line[line.find(",") +1:])
          price_delta[year] = price
 
    min_year, max_year = m..(price_delta), m..(price_delta)
    decrease_largest, decrease_year, increase_largest, increase_year = 0, 0, 0, 0
-   ___ year __ r..(min_year +1, max_year + 1, 1):
+   ___ year __ r..(min_year +1, max_year + 1, 1
       previous_year_price = price_delta[year -1]
       current_year_price = price_delta[year]
    

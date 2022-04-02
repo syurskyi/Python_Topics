@@ -3,8 +3,8 @@ Created on Apr 12, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ findCheapestPrice  n, flights, src, dst, K):
+c_ Solution(o..
+    ___ findCheapestPrice  n, flights, src, dst, K
         """
         :type n: int
         :type flights: List[List[int]]
@@ -23,12 +23,12 @@ c_ Solution(o..):
         pq = [[0, K+1, src]]
         w.... pq:
             size = l..(pq)
-            ___ _ __ r..(size):
+            ___ _ __ r..(size
                 curLen, level, node = heapq.heappop(pq)
                 __ node __ dst:
                     r.. curLen
                 __ level > 0:
-                    ___ dist, node0 __ graph.get(node, []):
+                    ___ dist, node0 __ graph.get(node, []
                         heapq.heappush(pq, [curLen+dist, level-1, node0])
         r.. -1
     

@@ -9,7 +9,7 @@ Transaction.__new__.__defaults__ = (d__.n..,)
 c_ User:
 
 
-    ___ - ,name):
+    ___ - ,name
         name = name
         karma = 0
         fan_names = s..()
@@ -22,8 +22,8 @@ c_ User:
     ___ fans
         r.. l..(fan_names)
 
-    ___ __add__ transaction):
-        __ isi..(transaction,Transaction):
+    ___ __add__ transaction
+        __ isi..(transaction,Transaction
             
             _transactions.a..(transaction)
             karma += transaction.points

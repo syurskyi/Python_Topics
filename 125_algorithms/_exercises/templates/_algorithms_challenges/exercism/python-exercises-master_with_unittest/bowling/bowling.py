@@ -1,8 +1,8 @@
-c_ BowlingGame(o..):
-    ___ - ):
+c_ BowlingGame(o..
+    ___ -
         p..
 
-    ___ roll  pins):
+    ___ roll  pins
         p..
 
     ___ score

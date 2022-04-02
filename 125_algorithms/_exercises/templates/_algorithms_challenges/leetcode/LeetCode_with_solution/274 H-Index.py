@@ -14,8 +14,8 @@ Note: If there are several possible values for h, the maximum one is taken as th
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ hIndex  A):
+c_ Solution(o..
+    ___ hIndex  A
         """
         Determine the range of output (i.e. h-index):
           Range of output: [0, N]
@@ -36,14 +36,14 @@ c_ Solution(o..):
                 cnt[e] += 1
 
         F = [0 ___ _ __ x..(n+2)]
-        ___ i __ x..(n, -1, -1):
+        ___ i __ x..(n, -1, -1
             F[i] += F[i+1] + cnt[i]
             __ F[i] >= i:
                 r.. i
 
         r.. 0
 
-    ___ hIndex_sort  citations):
+    ___ hIndex_sort  citations
         """
         Algorithm forward sort
         :type citations: List[int]
@@ -51,13 +51,13 @@ c_ Solution(o..):
         """
         n = l..(citations)
         citations.s..()
-        ___ i __ x..(n):
+        ___ i __ x..(n
             __ citations[i] >= n-i:
                 r.. n-i
 
         r.. 0
 
-    ___ hIndex_reverse_sort  citations):
+    ___ hIndex_reverse_sort  citations
         """
         Algorithm sort
         :type citations: List[int]
@@ -66,7 +66,7 @@ c_ Solution(o..):
         citations.s..(r.._T..
         citations.a..(0)
         h = 0
-        ___ i __ x..(l..(citations)-1):
+        ___ i __ x..(l..(citations)-1
             __ citations[i] >= i+1 >= citations[i+1]:
                 h = i+1
             ____ h:

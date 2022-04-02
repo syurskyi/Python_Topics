@@ -1,20 +1,20 @@
 ____ c.. _______ d..
 
 
-c_ Stack(o..):
-  ___ - ):
+c_ Stack(o..
+  ___ -
     """
     initialize your data structure here.
     """
     queue = d..([])
 
-  ___ push  x):
+  ___ push  x
     """
     :type x: int
     :rtype: nothing
     """
     queue.a..(x)
-    ___ _ __ r..(0, l..(queue) - 1):
+    ___ _ __ r..(0, l..(queue) - 1
       queue.a..(queue.popleft())
 
   ___ pop

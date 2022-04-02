@@ -4,14 +4,14 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ canJump  nums):
+c_ Solution(o..
+    ___ canJump  nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         furthest = 0
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             __ furthest >= i:
                 furthest = m..(furthest, i+num)
             __ furthest >= l..(nums)-1:

@@ -16,7 +16,7 @@ class ListNode:
 c_ Solution:
     # @param {TreeNode} root the root of binary tree
     # @return {ListNode[]} a lists of linked list
-    ___ binaryTreeToLists  root):
+    ___ binaryTreeToLists  root
         ans    # list
         __ n.. root:
             r.. ans

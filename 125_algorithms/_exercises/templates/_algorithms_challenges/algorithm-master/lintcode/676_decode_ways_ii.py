@@ -3,7 +3,7 @@ c_ Solution:
     @param s: a message being encoded
     @return: an integer
     """
-    ___ numDecodings  s):
+    ___ numDecodings  s
         __ n.. s o. s __ '0':
             r.. 0
 
@@ -18,7 +18,7 @@ c_ Solution:
         ____ s[0] != '0':
             dp[1] = 1  # dp[0]
 
-        ___ i __ r..(2, n + 1):
+        ___ i __ r..(2, n + 1
             __ s[i - 1] __ '*':
                 dp[i] += 9 * dp[i - 1]
 

@@ -5,13 +5,13 @@ Created on Jan 28, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
+c_ ListNode(o..
     ___ - , x, nextNode_ N..
         val = x
         next = nextNode
 
-c_ Solution(o..):
-    ___ reverseBetween  head, m, n):
+c_ Solution(o..
+    ___ reverseBetween  head, m, n
         """
         :type head: ListNode
         :type m: int
@@ -23,14 +23,14 @@ c_ Solution(o..):
         dummy = ListNode(-1)
         dummy.next = head
         head = dummy
-        ___ _ __ r..(1, m):
+        ___ _ __ r..(1, m
             __ n.. head:
                 r.. N..
             head = head.next
         prevNode = head
         mNode = head.next
         nNode, postnNode = mNode, mNode.next
-        ___ _ __ r..(m, n):
+        ___ _ __ r..(m, n
             __ n.. postnNode:
                 r.. N..
             tmp = postnNode.next

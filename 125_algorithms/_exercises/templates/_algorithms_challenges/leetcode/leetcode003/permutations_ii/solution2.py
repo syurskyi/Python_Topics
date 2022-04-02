@@ -7,21 +7,21 @@ For example,
 [1,1,2], [1,2,1], and [2,1,1].
 """
 
-c_ Solution(o..):
-    ___ permuteUnique  nums):
+c_ Solution(o..
+    ___ permuteUnique  nums
         """
         :type nums: List[int]
         :rtype: List[List[int]]
         """
         r.. permute(s..(nums))
 
-    ___ permute  nums):
+    ___ permute  nums
         __ n.. nums:
             r.. [[]]
         ____:
             res    # list
             prev = N..
-            ___ i, e __ e..(nums):
+            ___ i, e __ e..(nums
                 __ prev __ N.. o. prev != e:
                     rest = nums[:i] + nums[i + 1:]
                     rest_perms = permute(rest)

@@ -2,7 +2,7 @@ c_ Solution:
     # @param {string} s
     # @param {integer} numRows
     # @return {string}
-    ___ convert  s, numRows):
+    ___ convert  s, numRows
         contain = [[] ___ __ __ r..(numRows)]
         trans = t..(r..(numRows)) + t..(r..(numRows-1)[::-1])
         shift = (numRows - 1) * 2 __ numRows > 1 ____ 1

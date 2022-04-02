@@ -17,22 +17,22 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 
 ___ load_words
     """Load the words dictionary (DICTIONARY constant) into a list and return it"""
-    text = open(DICTIONARY, 'r').read()
-    r.. [word ___ word __ text.splitlines()]
+    text = o.. DICTIONARY, 'r').r..
+    r.. [word ___ word __ text.s.. ]
 
 
-___ calc_word_value(word):
+___ calc_word_value(word
     """Given a word calculate its value using the LETTER_SCORES dict"""
     scores = d..(scrabble_scores)
     final_score    # list
     ___ ch __ word.u..:
         ___ key, value __ scores.i..:
-            __ ch __ l..(value):
+            __ ch __ l..(value
                 final_score.a..(key)
     r.. s..(final_score)
 
 
-___ max_word_value(words):
+___ max_word_value(words
     """Given a list of words calculate the word with the maximum value and return it"""
     key_list = [word ___ word __ words]
     value_list = [calc_word_value(word) ___ word __ words]

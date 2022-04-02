@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ tree2str  t):
+c_ Solution(o..
+  ___ tree2str  t
     """
     :type t: TreeNode
     :rtype: str

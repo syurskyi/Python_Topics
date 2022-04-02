@@ -1,4 +1,4 @@
-___ find_index(lst, txt):
+___ find_index(lst, txt
     r.. lst.index(txt)
 
 

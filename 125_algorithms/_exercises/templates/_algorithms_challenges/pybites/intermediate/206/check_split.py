@@ -1,7 +1,7 @@
 ____ decimal _______ Decimal
 
 
-___ check_split(item_total, tax_rate, tip, people):
+___ check_split(item_total, tax_rate, tip, people
     total = Decimal(item_total[1:])
     tax = Decimal(tax_rate[:-1]) / 100 + 1
     tip_p = Decimal(tip[:-1]) / 100 + 1

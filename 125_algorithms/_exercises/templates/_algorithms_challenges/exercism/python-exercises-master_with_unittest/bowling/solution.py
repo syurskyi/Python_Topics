@@ -1,8 +1,8 @@
 MAX_FRAME = 10
 
 
-c_ Frame(o..):
-    ___ - , idx):
+c_ Frame(o..
+    ___ - , idx
         idx = idx
         throws    # list
 
@@ -24,12 +24,12 @@ c_ Frame(o..):
         """Return whether a frame is over."""
         r.. total_pins __ 10 o. l..(throws) __ 2
 
-    ___ throw  pins):
+    ___ throw  pins
         __ total_pins + pins > 10:
             r.. ValueError("a frame's rolls cannot exceed 10")
         throws.a..(pins)
 
-    ___ score  next_throws):
+    ___ score  next_throws
         result = total_pins
         __ is_strike
             result += s..(next_throws[:2])
@@ -38,8 +38,8 @@ c_ Frame(o..):
         r.. result
 
 
-c_ BowlingGame(o..):
-    ___ - ):
+c_ BowlingGame(o..
+    ___ -
         current_frame_idx = 0
         bonus_throws    # list
         frames = [Frame(idx) ___ idx __ r..(MAX_FRAME)]
@@ -48,15 +48,15 @@ c_ BowlingGame(o..):
     ___ current_frame
         r.. frames[current_frame_idx]
 
-    ___ next_throws  frame_idx):
+    ___ next_throws  frame_idx
         """Return a frame's next throws in the form of a list."""
         throws    # list
-        ___ idx __ r..(frame_idx + 1, MAX_FRAME):
+        ___ idx __ r..(frame_idx + 1, MAX_FRAME
             throws.extend(frames[idx].throws)
         throws.extend(bonus_throws)
         r.. throws
 
-    ___ roll_bonus  pins):
+    ___ roll_bonus  pins
         tenth_frame = frames[-1]
         __ tenth_frame.is_open
             r.. IndexError("cannot throw bonus with an open tenth frame")
@@ -65,7 +65,7 @@ c_ BowlingGame(o..):
 
         # Check against invalid fill balls, e.g. [3, 10]
         __ (l..(bonus_throws) __ 2 a.. bonus_throws[0] != 10 a..
-                s..(bonus_throws) > 10):
+                s..(bonus_throws) > 10
             r.. ValueError("invalid fill balls")
 
         # Check if there are more bonuses than it should be
@@ -76,7 +76,7 @@ c_ BowlingGame(o..):
             r.. IndexError(
                 "wrong number of fill balls when the tenth frame is a spare")
 
-    ___ roll  pins):
+    ___ roll  pins
         __ n.. 0 <= pins <= 10:
             r.. ValueError("invalid pins")
         ____ current_frame_idx __ MAX_FRAME:

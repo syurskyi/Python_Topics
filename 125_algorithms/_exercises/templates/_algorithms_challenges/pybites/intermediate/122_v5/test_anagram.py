@@ -22,7 +22,7 @@ ____ anagram _______ is_anagram
     ("William Shakespeare", "I am a weakish speller"),
     ("Madam Curie", "Radium came"),
 ])
-___ test_is_anagram(word1, word2):
+___ test_is_anagram(word1, word2
     ... is_anagram(word1, word2)
 
 
@@ -37,5 +37,5 @@ ___ test_is_anagram(word1, word2):
     ("William Shakespeare", "I am a strong speller"),
     ("Madam Curie", "Radium come"),
 ])
-___ test_is_not_anagram(word1, word2):
+___ test_is_not_anagram(word1, word2
     ... n.. is_anagram(word1, word2)

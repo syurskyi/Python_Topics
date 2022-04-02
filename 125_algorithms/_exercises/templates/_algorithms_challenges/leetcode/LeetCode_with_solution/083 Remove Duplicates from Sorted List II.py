@@ -9,12 +9,12 @@ Given 1->1->1->2->3, return 2->3.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 c_ Solution:
-    ___ deleteDuplicates  head):
+    ___ deleteDuplicates  head
         """
         Two pointers
         :param head: ListNode

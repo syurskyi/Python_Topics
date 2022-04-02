@@ -18,13 +18,13 @@ BITES = {6: 'PyBites Die Hard',
 bites_done = {6, 10, 16, 18, 21}
 
 
-c_ NoBitesAvailable(E..):
+c_ NoBitesAvailable(E..
     p..
 
 
 c_ Promo:
 
-    ___ - , bites_done=bites_done):
+    ___ - , bites_done=bites_done
         bites_done = bites_done
 
     ___ _pick_random_bite

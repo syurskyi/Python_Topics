@@ -8,7 +8,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ lengthOfLongestSubstringKDistinct  s, k):
+    ___ lengthOfLongestSubstringKDistinct  s, k
         """
         :type s: str
         :type k: int

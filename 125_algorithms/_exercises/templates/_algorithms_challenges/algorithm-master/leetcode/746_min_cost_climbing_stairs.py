@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minCostClimbingStairs  cost):
+    ___ minCostClimbingStairs  cost
         """
         :type cost: List[int]
         :rtype: int
@@ -15,7 +15,7 @@ c_ Solution:
         """
         dp = [0] * (n + 1)
 
-        ___ i __ r..(2, n + 1):
+        ___ i __ r..(2, n + 1
             """
             If you decide to come from some step,
             and then pay the fee to the from step

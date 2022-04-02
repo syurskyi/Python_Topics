@@ -10,7 +10,7 @@ c) Replace a character
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ minDistance  word1, word2):
+    ___ minDistance  word1, word2
         """
         dp: Wagner-Fischer algorithm
         http://en.wikipedia.org/wiki/Wagner-Fischer_algorithm
@@ -65,14 +65,14 @@ c_ Solution:
         d = [[-1 ___ _ __ x..(n+1)] ___ _ __ x..(m+1)]
 
 
-        ___ i __ x..(m+1):
+        ___ i __ x..(m+1
             d[i][0] = i
-        ___ j __ x..(n+1):
+        ___ j __ x..(n+1
             d[0][j] = j
 
 
-        ___ i __ x..(1, m+1):
-            ___ j __ x..(1, n+1):
+        ___ i __ x..(1, m+1
+            ___ j __ x..(1, n+1
                 __ word1[i-1]__word2[j-1]:
                     d[i][j] = d[i-1][j-1]
                 ____:

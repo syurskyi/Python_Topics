@@ -5,15 +5,15 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ sumNumbers  root):
+c_ Solution(o..
+  ___ sumNumbers  root
     """
     :type root: TreeNode
     :rtype: int
     """
     s.. = 0
 
-    ___ dfs(root, pathsum):
+    ___ dfs(root, pathsum
       __ root:
         pathsum += root.val
         left = dfs(root.left, pathsum * 10)

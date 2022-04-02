@@ -44,12 +44,12 @@ c_ Solution:
         n = l..(seats)
         L = [f__("inf") ___ _ __ r..(n)]
         R = [f__("inf") ___ _ __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ seats[i] __ 1:
                 L[i] = 0
             ____ i - 1 >= 0:
                 L[i] = L[i-1] + 1
-        ___ i __ r..(n-1, -1 , -1):
+        ___ i __ r..(n-1, -1 , -1
             __ seats[i] __ 1:
                 R[i] = 0
             ____ i + 1 < n:
@@ -65,7 +65,7 @@ c_ Solution:
         maintain a sorrted index array
         """
         idxes    # list
-        ___ i, e __ e..(seats):
+        ___ i, e __ e..(seats
             __ e __ 1:
                 idxes.a..(i)
 
@@ -77,7 +77,7 @@ c_ Solution:
             __ dist > ret[0]:
                 ret = [dist, i]
 
-        ___ j __ r..(l..(idxes) - 1):
+        ___ j __ r..(l..(idxes) - 1
             i = (idxes[j] + idxes[j+1]) // 2
             dist = m..(abs(i - idxes[j]), abs(i - idxes[j+1]))
             __ dist > ret[0]:

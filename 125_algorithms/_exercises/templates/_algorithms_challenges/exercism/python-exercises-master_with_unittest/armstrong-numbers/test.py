@@ -5,7 +5,7 @@ ____ armstrong_numbers _______ is_armstrong
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
 
-c_ ArmstrongNumbersTest(unittest.TestCase):
+c_ ArmstrongNumbersTest(unittest.TestCase
 
     ___ test_single_digit_numbers_are_armstrong_numbers
         assertIs(is_armstrong(5), T..)

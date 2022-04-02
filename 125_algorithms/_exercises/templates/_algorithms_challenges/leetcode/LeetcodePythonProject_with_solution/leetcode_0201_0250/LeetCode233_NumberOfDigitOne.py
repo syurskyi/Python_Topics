@@ -3,8 +3,8 @@ Created on Feb 23, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ countDigitOne  n):
+c_ Solution(o..
+    ___ countDigitOne  n
         """
         :type n: int
         :rtype: int

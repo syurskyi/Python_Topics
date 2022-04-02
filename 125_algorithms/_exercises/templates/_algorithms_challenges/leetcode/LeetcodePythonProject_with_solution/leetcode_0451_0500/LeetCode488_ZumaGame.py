@@ -3,8 +3,8 @@ Created on Nov 12, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findMinStep  board, hand):
+c_ Solution(o..
+    ___ findMinStep  board, hand
         """
         :type board: str
         :type hand: str
@@ -17,12 +17,12 @@ c_ Solution(o..):
         res = helper(board+'#', handCount)
         r.. res __ res != f__('inf') ____ -1
     
-    ___ helper  s, h):
+    ___ helper  s, h
         s = removeConsecutive(s)
         __ s __ '#': r.. 0
         res = f__('inf')
         i, j = 0, 0
-        w.... j < l..(s):
+        w.... j < l..(s
             __ s[j] __ s[i]:
                 j += 1
                 _____
@@ -35,9 +35,9 @@ c_ Solution(o..):
             j += 1
         r.. res
     
-    ___ removeConsecutive  board):
+    ___ removeConsecutive  board
         i, j = 0, 0
-        w.... j < l..(board):
+        w.... j < l..(board
             __ board[j] __ board[i]:
                 j += 1
                 _____

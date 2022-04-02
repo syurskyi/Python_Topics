@@ -9,7 +9,7 @@ Created on Mar 20, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-c_ NestedInteger(o..):
+c_ NestedInteger(o..
     ___ isInteger
         """
         @return True if this NestedInteger holds a single integer, rather than a nested list.
@@ -33,15 +33,15 @@ c_ NestedInteger(o..):
         """
         p..
 
-c_ Solution(o..):
-    ___ depthSum  nestedList):
+c_ Solution(o..
+    ___ depthSum  nestedList
         """
         :type nestedList: List[NestedInteger]
         :rtype: int
         """
         r.. helper(nestedList, 1)
     
-    ___ helper  nestedList, level):
+    ___ helper  nestedList, level
         sumVal = 0
         ___ ni __ nestedList:
             __ ni.isInteger

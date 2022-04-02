@@ -1,4 +1,4 @@
-___ is_merge(s, part1, part2):
+___ is_merge(s, part1, part2
     part1 = l..(part1)
     part2 = l..(part2)
     ___ i __ r..(l..(s)):

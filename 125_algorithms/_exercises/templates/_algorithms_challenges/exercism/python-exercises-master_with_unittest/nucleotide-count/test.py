@@ -9,7 +9,7 @@ _______ unittest
 ____ nucleotide_count _______ count, nucleotide_counts
 
 
-c_ DNATest(unittest.TestCase):
+c_ DNATest(unittest.TestCase
     ___ test_empty_dna_string_has_no_adenosine
         assertEqual(c.. '', 'A'), 0)
 
@@ -28,7 +28,7 @@ c_ DNATest(unittest.TestCase):
         assertEqual(c.. 'GGGGGTAACCCGG', 'T'), 1)
 
     ___ test_validates_nucleotides
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             c.. "GACT", 'X')
 
     ___ test_counts_all_nucleotides

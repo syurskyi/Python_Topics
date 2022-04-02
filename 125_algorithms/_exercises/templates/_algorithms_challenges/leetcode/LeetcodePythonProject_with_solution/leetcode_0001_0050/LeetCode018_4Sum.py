@@ -3,8 +3,8 @@ Created on Nov 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ fourSum  nums, target):
+c_ Solution(o..
+    ___ fourSum  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -13,10 +13,10 @@ c_ Solution(o..):
         nums.s..()
         n = l..(nums)
         res    # list
-        ___ i __ r..(n-3):
+        ___ i __ r..(n-3
             __ i > 0 a.. nums[i] __ nums[i-1]:
                 _____
-            ___ j __ r..(i+1, n-2):
+            ___ j __ r..(i+1, n-2
                 __ j > i+1 a.. nums[j] __ nums[j-1]:
                     _____
                 k, l = j+1, n-1

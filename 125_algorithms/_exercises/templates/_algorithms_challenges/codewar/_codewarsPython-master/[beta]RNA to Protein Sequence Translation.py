@@ -21,10 +21,10 @@ Glycine (G): GGU, GGC, GGA, GGG
 Stop Codon ('Stop'): UGA, UAA, UAG'''
 
 _______ __
-___ protein(rna):
+___ protein(rna
     transDict    # dict
-    ___ line __ rnaDict.s..('\n'):
-        ___ section __ line[line.index(':')+1:].r..(' ','').s..(','):
+    ___ line __ rnaDict.s..('\n'
+        ___ section __ line[line.index(':')+1:].r..(' ','').s..(','
             transDict[section] = __.f..(r'\(+\'?(\w+)',line)[0]
     codec = ''
     w.... l..(rna) > 0:

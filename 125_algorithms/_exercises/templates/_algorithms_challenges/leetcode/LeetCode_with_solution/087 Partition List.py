@@ -11,7 +11,7 @@ return 1->2->2->4->3->5.
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
@@ -19,7 +19,7 @@ c_ ListNode:
         r.. repr(val)
 
 c_ Solution:
-    ___ partition  head, x):
+    ___ partition  head, x
         """
         Linked List
         Two pointers
@@ -52,6 +52,6 @@ c_ Solution:
 
 __ _____ __ ____
     lst = [ListNode(2), ListNode(1)]
-    ___ ind __ x..(l..(lst)-1):
+    ___ ind __ x..(l..(lst)-1
         lst[ind].next = lst[ind+1]
     Solution().partition(lst[0], 2)

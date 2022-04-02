@@ -4,7 +4,7 @@ c_ Solution:
     @param: k: an integer
     @return: the largest sum
     """
-    ___ maxSubarray4  A, k):
+    ___ maxSubarray4  A, k
         __ n.. A:
             r.. 0
         n = l..(A)
@@ -15,7 +15,7 @@ c_ Solution:
         Smin = 0
         S = [0] * (n + 1)
 
-        ___ i __ r..(1, n + 1):
+        ___ i __ r..(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
             """

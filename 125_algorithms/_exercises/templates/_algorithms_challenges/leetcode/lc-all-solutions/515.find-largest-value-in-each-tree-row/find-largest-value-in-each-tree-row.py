@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ largestValues  root):
+c_ Solution(o..
+  ___ largestValues  root
     """
     :type root: TreeNode
     :rtype: List[int]
@@ -14,7 +14,7 @@ c_ Solution(o..):
     ans    # list
     d    # dict
 
-    ___ dfs(root, h, d):
+    ___ dfs(root, h, d
       __ root:
         dfs(root.left, h + 1, d)
         dfs(root.right, h + 1, d)

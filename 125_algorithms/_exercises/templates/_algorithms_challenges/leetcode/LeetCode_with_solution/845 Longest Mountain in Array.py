@@ -62,15 +62,15 @@ c_ Solution:
         n = l..(A)
         U = [0 ___ _ __ A]  # up counter from left to right
         D = [0 ___ _ __ A]  # down counter from right to left
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             __ A[i] > A[i-1]:
                 U[i] = U[i-1] + 1
-        ___ i __ r..(n-2, -1, -1):
+        ___ i __ r..(n-2, -1, -1
             __ A[i] > A[i+1]:
                 D[i] = D[i+1] + 1
 
         ret = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ U[i] > 0 a.. D[i] > 0:
                 ret = m..(ret, U[i] + D[i] + 1)
 

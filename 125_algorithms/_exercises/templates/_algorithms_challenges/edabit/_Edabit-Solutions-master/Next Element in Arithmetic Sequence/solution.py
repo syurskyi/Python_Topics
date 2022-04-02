@@ -1,3 +1,3 @@
-___ next_element(lst):
+___ next_element(lst
      a  = lst[1] - lst[0]
      r.. lst[-1] + a

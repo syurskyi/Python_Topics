@@ -1,4 +1,4 @@
-___ mystery_func(lst, n):
+___ mystery_func(lst, n
     output    # list
     ___ i __ lst:
         s = i % n

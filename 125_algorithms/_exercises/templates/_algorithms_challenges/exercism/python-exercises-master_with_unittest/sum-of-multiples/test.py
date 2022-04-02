@@ -14,7 +14,7 @@ ____ sum_of_multiples _______ sum_of_multiples
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ SumOfMultiplesTest(unittest.TestCase):
+c_ SumOfMultiplesTest(unittest.TestCase
     ___ test_multiples_of_3_or_5_up_to_1
         assertEqual(sum_of_multiples(1, [3, 5]), 0)
 

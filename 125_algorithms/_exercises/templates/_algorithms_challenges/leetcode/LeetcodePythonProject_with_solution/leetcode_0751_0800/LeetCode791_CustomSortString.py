@@ -3,8 +3,8 @@ Created on Apr 15, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ customSortString  S, T):
+c_ Solution(o..
+    ___ customSortString  S, T
         """
         :type S: str
         :type T: str
@@ -19,7 +19,7 @@ c_ Solution(o..):
             w.... count[o..(c)-o..('a')] > 0:
                 res += c
                 count[o..(c)-o..('a')] -= 1
-        ___ i __ r..(26):
+        ___ i __ r..(26
             w.... count[i] > 0:
                 res += chr(i+o..('a'))
                 count[i] -= 1
@@ -27,7 +27,7 @@ c_ Solution(o..):
     
     ___ test
         testCases = [
-            ['cba', 'abcd'],
+             'cba', 'abcd' ,
             ["kqep", "pekeq"],
             ["exv", "xwvee"],
         ]

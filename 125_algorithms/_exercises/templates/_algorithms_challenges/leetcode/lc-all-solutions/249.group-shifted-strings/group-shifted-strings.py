@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ groupStrings  strings):
+c_ Solution(o..
+  ___ groupStrings  strings
     """
     :type strings: List[str]
     :rtype: List[List[str]]

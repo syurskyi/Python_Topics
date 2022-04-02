@@ -2,14 +2,14 @@
 ____ d__ _______ d__
 
 
-c_ LedgerEntry(o..):
-    ___ - ):
+c_ LedgerEntry(o..
+    ___ -
         date = N..
         description = N..
         change = N..
 
 
-___ create_entry(date, description, change):
+___ create_entry(date, description, change
     entry = LedgerEntry()
     entry.date = d__.strptime(date, '%Y-%m-%d')
     entry.description = description
@@ -17,17 +17,17 @@ ___ create_entry(date, description, change):
     r.. entry
 
 
-___ format_entries(currency, locale, entries):
+___ format_entries(currency, locale, entries
     __ locale __ 'en_US':
         # Generate Header Row
         table = 'Date'
-        ___ _ __ r..(7):
+        ___ _ __ r..(7
             table += ' '
         table += '| Description'
-        ___ _ __ r..(15):
+        ___ _ __ r..(15
             table += ' '
         table += '| Change'
-        ___ _ __ r..(7):
+        ___ _ __ r..(7
             table += ' '
 
         w.... l..(entries) > 0:
@@ -47,14 +47,14 @@ ___ format_entries(currency, locale, entries):
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change < min_entry.change
-                ):
+
                     min_entry_index = i
                     _____
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change __ min_entry.change a..
                     entry.description < min_entry.description
-                ):
+
                     min_entry_index = i
                     _____
             entry = entries[min_entry_index]
@@ -84,11 +84,11 @@ ___ format_entries(currency, locale, entries):
             # Write entry description to table
             # Truncate if necessary
             __ l..(entry.description) > 25:
-                ___ i __ r..(22):
+                ___ i __ r..(22
                     table += entry.description[i]
                 table += '...'
             ____:
-                ___ i __ r..(25):
+                ___ i __ r..(25
                     __ l..(entry.description) > i:
                         table += entry.description[i]
                     ____:
@@ -164,13 +164,13 @@ ___ format_entries(currency, locale, entries):
     ____ locale __ 'nl_NL':
         # Generate Header Row
         table = 'Datum'
-        ___ _ __ r..(6):
+        ___ _ __ r..(6
             table += ' '
         table += '| Omschrijving'
-        ___ _ __ r..(14):
+        ___ _ __ r..(14
             table += ' '
         table += '| Verandering'
-        ___ _ __ r..(2):
+        ___ _ __ r..(2
             table += ' '
 
         w.... l..(entries) > 0:
@@ -190,14 +190,14 @@ ___ format_entries(currency, locale, entries):
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change < min_entry.change
-                ):
+
                     min_entry_index = i
                     _____
                 __ (
                     entry.date __ min_entry.date a..
                     entry.change __ min_entry.change a..
                     entry.description < min_entry.description
-                ):
+
                     min_entry_index = i
                     _____
             entry = entries[min_entry_index]
@@ -227,11 +227,11 @@ ___ format_entries(currency, locale, entries):
             # Write entry description to table
             # Truncate if necessary
             __ l..(entry.description) > 25:
-                ___ i __ r..(22):
+                ___ i __ r..(22
                     table += entry.description[i]
                 table += '...'
             ____:
-                ___ i __ r..(25):
+                ___ i __ r..(25
                     __ l..(entry.description) > i:
                         table += entry.description[i]
                     ____:

@@ -8,7 +8,7 @@ c_ Solution:
     @param: n: An integer
     @return: find the maximum number of strings
     """
-    ___ findMaxForm  strs, m, n):
+    ___ findMaxForm  strs, m, n
         __ n.. strs:
             r.. 0
 
@@ -23,8 +23,8 @@ c_ Solution:
             c0 = s.c.. '0')
             c1 = l..(s) - c0
 
-            ___ j __ r..(m, c0 - 1, -1):
-                ___ k __ r..(n, c1 - 1, -1):
+            ___ j __ r..(m, c0 - 1, -1
+                ___ k __ r..(n, c1 - 1, -1
                     """
                     case 1: included current `strs[i - 1]`
                     case 2: not included current `strs[i - 1]`, same as previous
@@ -47,7 +47,7 @@ c_ Solution:
     @param: n: An integer
     @return: find the maximum number of strings
     """
-    ___ findMaxForm  strs, m, n):
+    ___ findMaxForm  strs, m, n
         __ n.. strs:
             r.. 0
 
@@ -62,12 +62,12 @@ c_ Solution:
         dp = [[[0] * (n + 1) ___ _ __ r..(m + 1)] ___ _ __ r..(l + 1)]
 
         c0 = c1 = 0
-        ___ i __ r..(1, l + 1):
+        ___ i __ r..(1, l + 1
             c0 = strs[i - 1].c.. '0')
             c1 = l..(strs[i - 1]) - c0
 
-            ___ j __ r..(m + 1):
-                ___ k __ r..(n + 1):
+            ___ j __ r..(m + 1
+                ___ k __ r..(n + 1
                     """
                     case 1: included current `strs[i - 1]`
                     """

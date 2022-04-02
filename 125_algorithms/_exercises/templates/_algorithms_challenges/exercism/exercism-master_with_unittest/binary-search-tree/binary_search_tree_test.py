@@ -5,24 +5,24 @@ ____ binary_search_tree _______ BinarySearchTree, TreeNode
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.0.0
 
-c_ BinarySearchTreeTest(unittest.TestCase):
+c_ BinarySearchTreeTest(unittest.TestCase
 
     ___ test_data_is_retained
         expected = TreeNode('4', N.., N..)
-        assertTreeEqual(BinarySearchTree(['4']).data(), expected)
+        assertTreeEqual(BinarySearchTree( '4' ).data(), expected)
 
     # Test inserting data at proper node
     ___ test_smaller_data_at_left_node
         expected = TreeNode('4', TreeNode('2', N.., N..), N..)
-        assertTreeEqual(BinarySearchTree(['4', '2']).data(), expected)
+        assertTreeEqual(BinarySearchTree( '4', '2' ).data(), expected)
 
     ___ test_same_number_at_left_node
         expected = TreeNode('4', TreeNode('4', N.., N..), N..)
-        assertTreeEqual(BinarySearchTree(['4', '4']).data(), expected)
+        assertTreeEqual(BinarySearchTree( '4', '4' ).data(), expected)
 
     ___ test_greater_number_at_right_node
         expected = TreeNode('4', N.., TreeNode('5', N.., N..))
-        assertTreeEqual(BinarySearchTree(['4', '5']).data(), expected)
+        assertTreeEqual(BinarySearchTree( '4', '5' ).data(), expected)
 
     ___ test_can_create_complex_tree
         expected = TreeNode(
@@ -39,43 +39,43 @@ c_ BinarySearchTreeTest(unittest.TestCase):
             )
         )
         assertTreeEqual(
-            BinarySearchTree(['4', '2', '6', '1', '3', '5', '7']).data(),
+            BinarySearchTree( '4', '2', '6', '1', '3', '5', '7' ).data(),
             expected
         )
 
     # Test can sort data
     ___ test_can_sort_single_number
-        assertEqual(BinarySearchTree(['2']).sorted_data(), ['2'])
+        assertEqual(BinarySearchTree( '2' ).sorted_data(),  '2' )
 
     ___ test_can_sort_if_second_number_is_smaller_than_first
         assertEqual(
-            BinarySearchTree(['2', '1']).sorted_data(), ['1', '2']
+            BinarySearchTree( '2', '1' ).sorted_data(),  '1', '2'
         )
 
     ___ test_can_sort_if_second_number_is_same_as_first
         assertEqual(
-            BinarySearchTree(['2', '2']).sorted_data(), ['2', '2']
+            BinarySearchTree( '2', '2' ).sorted_data(),  '2', '2'
         )
 
     ___ test_can_sort_if_second_number_is_greater_than_first
         assertEqual(
-            BinarySearchTree(['2', '3']).sorted_data(), ['2', '3']
+            BinarySearchTree( '2', '3' ).sorted_data(),  '2', '3'
         )
 
     ___ test_can_sort_complex_tree
         assertEqual(
-            BinarySearchTree(['2', '1', '3', '6', '7', '5']).sorted_data(),
-            ['1', '2', '3', '5', '6', '7']
+            BinarySearchTree( '2', '1', '3', '6', '7', '5' ).sorted_data(),
+             '1', '2', '3', '5', '6', '7'
         )
 
     # Utilities
-    ___ assertTreeEqual  tree_one, tree_two):
+    ___ assertTreeEqual  tree_one, tree_two
         ___
             compare_tree(tree_one, tree_two)
         ______ AssertionError:
             r.. AssertionError("{} != {}".f..(tree_one, tree_two))
 
-    ___ compare_tree  tree_one, tree_two):
+    ___ compare_tree  tree_one, tree_two
         assertEqual(tree_one.data, tree_two.data)
 
         # Compare left tree nodes

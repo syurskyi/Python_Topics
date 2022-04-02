@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ nextGreaterElements  nums):
+c_ Solution(o..
+  ___ nextGreaterElements  nums
     """
     :type nums: List[int]
     :rtype: List[int]
@@ -8,7 +8,7 @@ c_ Solution(o..):
     n = l..(nums)
     stack    # list
     nums *= 2
-    ___ i, num __ e..(nums):
+    ___ i, num __ e..(nums
       w.... stack a.. nums[stack[-1]] < num:
         top = stack.pop()
         __ top < n:

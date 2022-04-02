@@ -6,12 +6,12 @@ _______ p__
 ____ exchangerates _______ RATES_FILE, exchange_rates, get_all_days, match_daily_rates
 
 
-@p__.f..(scope="session")
+?p__.f..(scope="session")
 ___ exchange_rates_result
     r.. exchange_rates()
 
 
-@p__.f..(scope="session")
+?p__.f..(scope="session")
 ___ matching_result
     start = date(2020, 1, 1)
     end = date(2020, 9, 1)
@@ -27,7 +27,7 @@ ___ matching_result
         (date(2020, 4, 12), date(2020, 4, 14), 3),
     ],
 )
-___ test_get_all_days(start, end, expected):
+___ test_get_all_days(start, end, expected
     actual = get_all_days(start, end)
     ... l..(actual) __ expected
 
@@ -47,7 +47,7 @@ ___ test_get_all_days(start, end, expected):
         (date(2020, 8, 15), date(2020, 8, 14)),
     ],
 )
-___ test_match_daily_rates(date, expected, matching_result):
+___ test_match_daily_rates(date, expected, matching_result
     actual = matching_result
     ... actual[date] __ expected
 
@@ -69,7 +69,7 @@ ___ test_match_daily_rates(date, expected, matching_result):
         ),
     ],
 )
-___ test_exchange_rates_sample(testdate, expected, exchange_rates_result):
+___ test_exchange_rates_sample(testdate, expected, exchange_rates_result
     actual = exchange_rates_result
 
     ... actual[testdate]["Base Date"] __ expected["Base Date"]
@@ -77,11 +77,11 @@ ___ test_exchange_rates_sample(testdate, expected, exchange_rates_result):
     ... actual[testdate]["USD"] __ expected["USD"]
 
 
-___ test_exchange_rates_all_dates(exchange_rates_result):
+___ test_exchange_rates_all_dates(exchange_rates_result
     ... l..(exchange_rates_result) __ 245
 
 
-___ test_exchange_rates_order(exchange_rates_result):
+___ test_exchange_rates_order(exchange_rates_result
     actual = l..(exchange_rates_result.keys())
     expected = s..(exchange_rates_result.keys())
 
@@ -89,10 +89,10 @@ ___ test_exchange_rates_order(exchange_rates_result):
 
 
 ___ test_exchange_rates_validate_start
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         exchange_rates(start_date="1950-01-01")
 
 
 ___ test_exchange_rates_validate_end
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         exchange_rates(end_date="2050-01-01")

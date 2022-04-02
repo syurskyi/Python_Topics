@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ rob  root):
+c_ Solution(o..
+  ___ rob  root
     """
     :type root: TreeNode
     :rtype: int
     """
 
-    ___ dfs(root):
+    ___ dfs(root
       __ n.. root:
         r.. 0, 0
       lpre, lppre = dfs(root.left)

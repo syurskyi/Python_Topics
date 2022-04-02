@@ -4,7 +4,7 @@ c_ Solution:
     @param: B: A string
     @return: The length of longest common subsequence of A and B
     """
-    ___ longestCommonSubsequence  A, B):
+    ___ longestCommonSubsequence  A, B
         """
         remove the single line comment to print paths
         """
@@ -24,10 +24,10 @@ c_ Solution:
         # pi = [[0] * (n + 1) for _ in range(m + 1)]
 
         prev = curr = 0
-        ___ i __ r..(1, m + 1):
+        ___ i __ r..(1, m + 1
             prev = curr
             curr = 1 - curr
-            ___ j __ r..(1, n + 1):
+            ___ j __ r..(1, n + 1
                 """
                 case 1: `A[i]` is not one of pairs
                 case 2: `B[j]` is not one of pairs

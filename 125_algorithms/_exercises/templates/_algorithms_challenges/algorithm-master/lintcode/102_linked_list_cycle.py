@@ -12,7 +12,7 @@ c_ Solution:
     @param: head: The first node of linked list.
     @return: True if it has a cycle, or false
     """
-    ___ hasCycle  head):
+    ___ hasCycle  head
         """
         if its a cycle, and then we can ensure
         the 2-pace pointer and the 1-pace pointer

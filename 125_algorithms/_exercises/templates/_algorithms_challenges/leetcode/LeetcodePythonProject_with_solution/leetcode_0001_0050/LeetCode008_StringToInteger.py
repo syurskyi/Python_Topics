@@ -3,8 +3,8 @@ Created on Nov 8, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ myAtoi  s..):
+c_ Solution(o..
+    ___ myAtoi  s..
         """
         :type str: str
         :rtype: int

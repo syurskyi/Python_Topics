@@ -34,7 +34,7 @@ dirs = ((0, 1), (0, -1), (1, 0), (-1, 0))
 
 
 c_ Solution:
-    ___ pacificAtlantic  matrix):
+    ___ pacificAtlantic  matrix
         """
         dfs, visisted O(1)
         Similar to Trapping Rainwater II (BFS + heap), but no need to record
@@ -61,11 +61,11 @@ c_ Solution:
         A = [[F.. ___ _ __ r..(n)] ___ _ __ r..(m)]
 
         # starting from edge point
-        ___ i __ r..(m):
+        ___ i __ r..(m
             dfs(matrix, i, 0, P)
             dfs(matrix, i, n-1, A)
 
-        ___ j __ r..(n):
+        ___ j __ r..(n
             dfs(matrix, 0, j, P)
             dfs(matrix, m-1, j, A)
 
@@ -77,7 +77,7 @@ c_ Solution:
         ]
         r.. ret
 
-    ___ dfs  matrix, i, j, C):
+    ___ dfs  matrix, i, j, C
         # check before dfs (to be consistent)
         C[i][j] = T..
         m, n = l..(matrix), l..(matrix[0])
@@ -89,7 +89,7 @@ c_ Solution:
                     dfs(matrix, I, J, C)
 
 
-    ___ pacificAtlantic_error  matrix):
+    ___ pacificAtlantic_error  matrix
         """
         DP
         dfs, visisted O(1)
@@ -104,13 +104,13 @@ c_ Solution:
         A = [[F..] * n ] * m
 
         visisted = [[F..] * n ] * m
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 dfs_error(matrix, i, j, visisted, P, l.... i, j: i < 0 o. j <0)
 
         visisted = [[F..] * n ] * m
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 dfs_error(matrix, i, j, visisted, A, l.... i, j: i >= m o. j >= n)
 
         ret = [
@@ -122,7 +122,7 @@ c_ Solution:
         r.. ret
 
 
-    ___ dfs_error  matrix, i, j, visisted, C, predicate):
+    ___ dfs_error  matrix, i, j, visisted, C, predicate
         m, n = l..(matrix), l..(matrix[0])
         __ visisted[i][j]:
             r.. C[i][j]
@@ -134,7 +134,7 @@ c_ Solution:
             __ 0 <= i2 < m a.. 0 <= j2 < n:
                 __ dfs_error(matrix, i2, j2, visisted, C, predicate) a.. matrix[i][j] >= matrix[i2][j2]:
                     C[i][j] = T..
-            ____ predicate(i2, j2):
+            ____ predicate(i2, j2
                 C[i][j] = T..
 
         r.. C[i][j]

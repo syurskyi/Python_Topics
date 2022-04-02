@@ -12,7 +12,7 @@ Here are few examples.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ searchInsert_complex  A, target):
+    ___ searchInsert_complex  A, target
         """
         binary search
         iterative solution
@@ -41,7 +41,7 @@ c_ Solution:
                 __ n.. start<=end:
                     r.. start
 
-    ___ searchInsert  A, target):
+    ___ searchInsert  A, target
         """
         binary search
         iterative solution

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ subarrayBitwiseORs  A):
+c_ Solution(o..
+    ___ subarrayBitwiseORs  A
         """
         :type A: List[int]
         :rtype: int

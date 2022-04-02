@@ -11,7 +11,7 @@ ___ get_len_help_text(builtin: BuiltinFunctionType) __ i..:
     __ t..(builtin) __ n.. BuiltinFunctionType:
         r.. ValueError
     std_out = StringIO()
-    w__ redirect_stdout(std_out):
+    w__ redirect_stdout(std_out
         help(builtin)
     r.. l..(std_out.getvalue())
 

@@ -14,9 +14,9 @@ def get_text(text='I code with PyBites'):
 
 ____ functools _______ wraps
 
-___ make_html(param):
+___ make_html(param
 
-    ___ decorator(func):
+    ___ decorator(func
         print('Inside decorator')
 
         ___ wrapper
@@ -27,7 +27,7 @@ ___ make_html(param):
 
 
 @make_html('p')
-___ get_text(text='I code with PyBites'):
+___ get_text(text='I code with PyBites'
     r.. text
 
 

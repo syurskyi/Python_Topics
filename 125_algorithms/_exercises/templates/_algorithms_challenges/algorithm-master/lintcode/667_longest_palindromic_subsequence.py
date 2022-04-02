@@ -3,7 +3,7 @@ c_ Solution:
     @param: s: the maximum length of s is 1000
     @return: the longest palindromic subsequence's length
     """
-    ___ longestPalindromeSubseq  s):
+    ___ longestPalindromeSubseq  s
         __ n.. s:
             r.. 0
 
@@ -17,7 +17,7 @@ c_ Solution:
 
         ans = 0
         start = end = 0
-        ___ end __ r..(n):
+        ___ end __ r..(n
             dp[end][end] = 1
 
             __ n < 1:
@@ -29,8 +29,8 @@ c_ Solution:
             ____:
                 dp[start][end] = 1
 
-        ___ size __ r..(3, n + 1):
-            ___ start __ r..(n - size + 1):
+        ___ size __ r..(3, n + 1
+            ___ start __ r..(n - size + 1
                 end = start + size - 1
 
                 dp[start][end] = m..(dp[start][end - 1], dp[start + 1][end])

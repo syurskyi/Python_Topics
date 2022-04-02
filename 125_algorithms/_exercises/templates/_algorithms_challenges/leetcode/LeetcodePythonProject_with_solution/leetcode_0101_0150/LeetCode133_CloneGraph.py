@@ -5,14 +5,14 @@ Created on Feb 8, 2017
 '''
 # Definition for a undirected graph node
 c_ UndirectedGraphNode:
-    ___ - , x):
+    ___ - , x
         label = x
         neighbors    # list
 
 c_ Solution:
     # @param node, a undirected graph node
     # @return a undirected graph node
-    ___ cloneGraph  node):
+    ___ cloneGraph  node
         __ n.. node: r.. node
         newHead = UndirectedGraphNode(node.label)
         hashmap = {node:newHead}

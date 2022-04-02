@@ -1,5 +1,5 @@
-___ namelist(names):
-    namelist =  [name['name'] ___ name __ names]
+___ namelist(names
+    namelist =  [name 'name'  ___ name __ names]
     __ l..(namelist) <= 1:
     	r.. ''.j..(namelist)
     ____:

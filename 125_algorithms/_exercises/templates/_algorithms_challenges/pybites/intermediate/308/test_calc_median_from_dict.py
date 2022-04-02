@@ -16,7 +16,7 @@ _______ p__
         ({-1: 22, +4: 22}, 1.5),
     ],
 )
-___ test_median_from_dict__valid_numbers(test_input, expected):
+___ test_median_from_dict__valid_numbers(test_input, expected
     ... calc_median_from_dict(test_input) __ expected
 
 
@@ -43,7 +43,7 @@ ___ test_median_from_dict__valid_numbers(test_input, expected):
         ),
     ],
 )
-___ test_median_from_dict_valid_huge_numbers(test_input, expected):
+___ test_median_from_dict_valid_huge_numbers(test_input, expected
     ... calc_median_from_dict(test_input) __ expected
 
 
@@ -55,6 +55,6 @@ ___ test_median_from_dict_valid_huge_numbers(test_input, expected):
         ({3: []}),
     ],
 )
-___ test_median_from_dict_raises_error(test_input):
+___ test_median_from_dict_raises_error(test_input
     w__ p__.r.. T..
         calc_median_from_dict(test_input)

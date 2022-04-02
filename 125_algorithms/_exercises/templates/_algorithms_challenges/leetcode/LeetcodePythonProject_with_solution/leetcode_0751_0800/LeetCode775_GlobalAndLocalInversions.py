@@ -3,15 +3,15 @@ Created on Apr 8, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ isIdealPermutation  A):
+c_ Solution(o..
+    ___ isIdealPermutation  A
         """
         :type A: List[int]
         :rtype: bool
         """
         arr = A
         cmax = 0
-        ___ i __ r..(l..(arr)-2):
+        ___ i __ r..(l..(arr)-2
             cmax = m..(cmax, arr[i])
             __ cmax > arr[i+2]:
                 r.. F..

@@ -5,14 +5,14 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ isBalanced  root):
+c_ Solution(o..
+  ___ isBalanced  root
     """
     :type root: TreeNode
     :rtype: bool
     """
 
-    ___ dfs(p):
+    ___ dfs(p
       __ n.. p:
         r.. 0
 

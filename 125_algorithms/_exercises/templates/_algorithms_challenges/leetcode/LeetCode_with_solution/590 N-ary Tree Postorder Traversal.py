@@ -13,7 +13,7 @@ Recursive solution is trivial, could you do it iteratively?
 
 # Definition for a Node.
 c_ Node:
-    ___ - , val, children):
+    ___ - , val, children
         val = val
         children = children
 
@@ -58,7 +58,7 @@ c_ Solution:
                 ret.a..(cur.val)
             ____:
                 visited.add(cur)
-                ___ c __ r..(cur.children):
+                ___ c __ r..(cur.children
                     stk.a..(c)
 
         r.. ret

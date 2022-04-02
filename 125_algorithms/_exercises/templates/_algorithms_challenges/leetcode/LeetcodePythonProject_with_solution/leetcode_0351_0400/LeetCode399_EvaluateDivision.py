@@ -4,8 +4,8 @@ Created on Apr 5, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ calcEquation  equations, values, queries):
+c_ Solution(o..
+    ___ calcEquation  equations, values, queries
         """
         :type equations: List[List[str]]
         :type values: List[float]
@@ -14,7 +14,7 @@ c_ Solution(o..):
         """
         valuesMap    # dict
         graph    # dict
-        ___ e, v __ z..(equations, values):
+        ___ e, v __ z..(equations, values
             valuesMap[(e[0], e[1])] = v
             valuesMap[(e[1], e[0])] = 1.0/v
             __ e[0] __ graph:
@@ -37,7 +37,7 @@ c_ Solution(o..):
                 result.a..(tmp[0])
         r.. result
     
-    ___ dfs  valuesMap, graph, start, target, curr, visited, result):
+    ___ dfs  valuesMap, graph, start, target, curr, visited, result
         visited.add(start)
         __ start __ target:
             result[0] = curr

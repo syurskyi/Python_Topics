@@ -1,5 +1,5 @@
-c_ TrieNode(o..):
-  ___ - ):
+c_ TrieNode(o..
+  ___ -
     """
     Initialize your data structure here.
     """
@@ -8,12 +8,12 @@ c_ TrieNode(o..):
     word = ""
 
 
-c_ Trie(o..):
+c_ Trie(o..
 
-  ___ - ):
+  ___ -
     root = TrieNode()
 
-  ___ insert  word):
+  ___ insert  word
     """
     Inserts a word into the trie.
     :type word: str
@@ -32,7 +32,7 @@ c_ Trie(o..):
     p.isWord = T..
     p.word = word
 
-  ___ helper  word):
+  ___ helper  word
     p = root
     ___ c __ word:
       cVal = o..(c) - o..("a")
@@ -42,7 +42,7 @@ c_ Trie(o..):
         r.. N..
     r.. p
 
-  ___ s..  word):
+  ___ s..  word
     """
     Returns if the word is in the trie.
     :type word: str
@@ -53,14 +53,14 @@ c_ Trie(o..):
       r.. T..
     r.. F..
 
-  ___ startsWith  prefix):
+  ___ startsWith  prefix
     """
     Returns if there is any word in the trie
     that starts with the given prefix.
     :type prefix: str
     :rtype: bool
     """
-    __ helper(prefix):
+    __ helper(prefix
       r.. T..
     r.. F..
 

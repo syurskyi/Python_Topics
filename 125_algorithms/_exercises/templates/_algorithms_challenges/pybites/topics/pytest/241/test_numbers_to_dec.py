@@ -19,10 +19,10 @@ ___ test_float
 
 ___ test_string
     w__ p__.r.. T..
-        list_to_decimal(['4'])
+        list_to_decimal( '4' )
 
 
 ___ test_negative_int
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         list_to_decimal([-1])
 

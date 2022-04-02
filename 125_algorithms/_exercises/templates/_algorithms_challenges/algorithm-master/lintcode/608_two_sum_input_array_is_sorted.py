@@ -8,7 +8,7 @@ c_ Solution:
     @param: target: target = A[index1] + A[index2]
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    ___ twoSum  A, target):
+    ___ twoSum  A, target
         NOT_FOUND = [-1, -1]
         __ n.. A:
             r.. NOT_FOUND
@@ -35,7 +35,7 @@ c_ Solution:
     @param: target: target = A[index1] + A[index2]
     @return: [index1 + 1, index2 + 1] (index1 < index2)
     """
-    ___ twoSum  A, target):
+    ___ twoSum  A, target
         NOT_FOUND = [-1, -1]
         __ n.. A:
             r.. NOT_FOUND

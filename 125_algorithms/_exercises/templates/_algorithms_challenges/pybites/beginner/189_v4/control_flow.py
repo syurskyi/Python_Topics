@@ -5,7 +5,7 @@ QUIT_CHAR = 'q'
 MAX_NAMES = 5
 
 
-___ filter_names(names):
+___ filter_names(names
     result    # list
     ___ n __ names:
         __ n[0] __ QUIT_CHAR:

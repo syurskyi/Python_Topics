@@ -10,7 +10,7 @@ c_ Solution:
         stk from right to left parsing, including the operand and operator
         """
         stk    # list
-        ___ c __ r..(expression):
+        ___ c __ r..(expression
             __ stk a.. stk[-1] __ "?":
                 stk.pop()  # ?
                 first = stk.pop()
@@ -38,7 +38,7 @@ c_ Solution:
         i = n - 1
         w.... i >= 0:
             j = i
-            w.... j >= 0 a.. expression[j] n.. __ (":", "?"):
+            w.... j >= 0 a.. expression[j] n.. __ (":", "?"
                 j -= 1
 
             __ j < i:

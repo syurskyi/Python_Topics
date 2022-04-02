@@ -11,7 +11,7 @@ ___ test_years_ago
 
 
 ___ test_years_ago_wrong_input
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         # Sept != valid %b value 'Sep'
         ... years_ago('6 Sept, 2014') __ 4
 
@@ -24,15 +24,15 @@ ___ test_convert_eu_to_us_date
 
 
 ___ test_convert_eu_to_us_date_invalid_day
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         convert_eu_to_us_date('41/03/2002')
 
 
 ___ test_convert_eu_to_us_date_invalid_month
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         convert_eu_to_us_date('11/13/2002')
 
 
 ___ test_convert_eu_to_us_date_invalid_year
-    w__ p__.r..(ValueError):
+    w__ p__.r..(ValueError
         convert_eu_to_us_date('11/13/year') 

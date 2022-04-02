@@ -1,5 +1,5 @@
-c_ Matrix(o..):
-    ___ - , s):
+c_ Matrix(o..
+    ___ - , s
         rows = [[i..(n) ___ n __ row.s.. ]
                      ___ row __ s.s..('\n')]
 

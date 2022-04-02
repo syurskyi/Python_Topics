@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ longestSubstring  s, k):
+    ___ longestSubstring  s, k
         """
         :type s: str
         :type k: int
@@ -12,7 +12,7 @@ c_ Solution:
         n = l..(s)
         _F = d...f..(s, 0)
 
-        ___ m __ r..(1, l..(_F) + 1):
+        ___ m __ r..(1, l..(_F) + 1
             F = _F.c..
             left = right = 0
             kind = valid = 0

@@ -19,20 +19,20 @@ ___ get_tree
 ___ get_movies
     """Call get_tree and retrieve all movie titles, return a list or generator"""
     tree = get_tree()
-    ___ movie __ tree.i..(tag='movie'):
-        y.. movie.attrib['title']
+    ___ movie __ tree.i..(tag='movie'
+        y.. movie.attrib 'title'
 
 
-___ _get_runtime(movie):
+___ _get_runtime(movie
     """Helper function to extract the minutes (int) from the runtime movie attribute"""
-    r.. i..(movie.attrib['runtime'].rstrip(' min'))
+    r.. i..(movie.attrib 'runtime' .rstrip(' min'))
 
 
 ___ get_movie_longest_runtime
     """Call get_tree again and return the movie title for the movie with the longest
        runtime in minutes, for latter consider adding a _get_runtime helper"""
     tree = get_tree()
-    movies = [(movie.attrib['title'], _get_runtime(movie))
+    movies = [(movie.attrib 'title' , _get_runtime(movie))
               ___ movie __ tree.i..(tag='movie')]
     max_movie, max_runtime = m..(movies, key=l.... m: m[1])
     r.. max_movie

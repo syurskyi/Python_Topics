@@ -22,8 +22,8 @@ Return 167
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ maxCoins  A):
+c_ Solution(o..
+    ___ maxCoins  A
         """
         Divide & Conquer <- Divide Boundary <- Reverse Thinking
 
@@ -36,19 +36,19 @@ c_ Solution(o..):
         """
         n = l..(A)
 
-        ___ get(i):
+        ___ get(i
             __ i < 0 o. i >= n: r.. 1
             r.. A[i]
 
         F = [[0 ___ _ __ x..(n+1)] ___ _ __ x..(n+1)]
-        ___ i __ x..(n+1, -1, -1):
-            ___ j __ x..(i+1, n+1):
+        ___ i __ x..(n+1, -1, -1
+            ___ j __ x..(i+1, n+1
                 F[i][j] = m..(
                     F[i][k]+get(i-1)*get(k)*get(j)+F[k+1][j]
                     ___ k __ x..(i, j)
                 )
 
-        r.. m..(map(m.., F))
+        r.. m.. m..(m.., F))
 
 
 __ _______ __ _______

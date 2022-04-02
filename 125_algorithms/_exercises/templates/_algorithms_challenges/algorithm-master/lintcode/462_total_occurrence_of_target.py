@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ totalOccurrence  A, target):
+    ___ totalOccurrence  A, target
         """
         :type A: List[int]
         :type target: int

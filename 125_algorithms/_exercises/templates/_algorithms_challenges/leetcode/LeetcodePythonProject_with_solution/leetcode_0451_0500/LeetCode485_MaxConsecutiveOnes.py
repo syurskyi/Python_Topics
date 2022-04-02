@@ -4,15 +4,15 @@ Created on May 3, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findMaxConsecutiveOnes  nums):
+c_ Solution(o..
+    ___ findMaxConsecutiveOnes  nums
         """
         :type nums: List[int]
         :rtype: int
         """
         prev = -1
         maxLen = 0
-        ___ i, num __ e..(nums):
+        ___ i, num __ e..(nums
             __ num __ 0:
                 maxLen = m..(maxLen, i-prev-1)
                 prev = i

@@ -1,17 +1,17 @@
-c_ InputCell(o..):
-    ___ - , initial_value):
+c_ InputCell(o..
+    ___ - , initial_value
         value = N..
 
 
-c_ ComputeCell(o..):
-    ___ - , inputs, compute_function):
+c_ ComputeCell(o..
+    ___ - , inputs, compute_function
         value = N..
 
-    ___ add_callback  callback):
+    ___ add_callback  callback
         p..
 
-    ___ remove_callback  callback):
+    ___ remove_callback  callback
         p..
 
-    ___ expect_callback_values  callback):
+    ___ expect_callback_values  callback
         p..

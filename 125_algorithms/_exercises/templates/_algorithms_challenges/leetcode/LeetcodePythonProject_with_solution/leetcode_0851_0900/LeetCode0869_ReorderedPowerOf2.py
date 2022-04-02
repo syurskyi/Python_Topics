@@ -3,8 +3,8 @@ Created on Sep 30, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ reorderedPowerOf2  N):
+c_ Solution(o..
+    ___ reorderedPowerOf2  N
         """
         :type N: int
         :rtype: bool
@@ -15,18 +15,18 @@ c_ Solution(o..):
         length = l..(s)
         nums = getNums(length)
         ___ num __ nums:
-            __ matches(n, num):
+            __ matches(n, num
                 r.. T..
         r.. F..
     
-    ___ matches  n, num):
+    ___ matches  n, num
         hashmap    # dict
-        ___ c __ s..(n):
+        ___ c __ s..(n
             __ c __ hashmap:
                 hashmap[c] += 1
             ____:
                 hashmap[c] = 1
-        ___ c __ s..(num):
+        ___ c __ s..(num
             __ c __ hashmap:
                 hashmap[c] -= 1
                 __ hashmap[c] __ 0:
@@ -35,7 +35,7 @@ c_ Solution(o..):
                 r.. F..
         r.. T..
     
-    ___ getNums  length):
+    ___ getNums  length
         res    # list
         num = 2
         w.... l..(s..(num)) < length:

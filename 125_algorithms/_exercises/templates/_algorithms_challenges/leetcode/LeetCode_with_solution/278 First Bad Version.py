@@ -12,12 +12,12 @@ the first bad version. You should minimize the number of calls to the API.
 __author__ = 'Daniel'
 
 
-___ isBadVersion(version):
+___ isBadVersion(version
     p..
 
 
-c_ Solution(o..):
-    ___ firstBadVersion  n):
+c_ Solution(o..
+    ___ firstBadVersion  n
         """
         :param n: An integers.
         :return: An integer which is the first bad version.
@@ -26,7 +26,7 @@ c_ Solution(o..):
         h = n+1
         w.... l < h:
             m = (l+h)/2
-            __ n.. isBadVersion(m):
+            __ n.. isBadVersion(m
                 l = m+1
             ____:
                 h = m

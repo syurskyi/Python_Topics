@@ -5,7 +5,7 @@ c_ Solution:
     @param P: the bad computers
     @return: The answer
     """
-    ___ maintenance  m, n, P):
+    ___ maintenance  m, n, P
         __ n.. m o. n.. n o. n.. P:
             r.. 0
 
@@ -15,10 +15,10 @@ c_ Solution:
         ___ p __ P:
             G[p.x][p.y] = 1
 
-        ___ i __ r..(m):
+        ___ i __ r..(m
             left = right = -1
 
-            ___ j __ r..(n):
+            ___ j __ r..(n
                 __ G[i][j] __ 0:
                     _____
                 left = m..(left, n - 1 - j)

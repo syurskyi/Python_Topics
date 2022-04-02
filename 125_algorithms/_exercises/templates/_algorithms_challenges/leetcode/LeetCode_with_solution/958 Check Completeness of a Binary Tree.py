@@ -23,14 +23,14 @@ Explanation: The node with value 7 isn't as far left as possible.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         max_depth = -f__("inf")
         expecting_partial = F..
 
@@ -43,10 +43,10 @@ c_ Solution:
         """
         r.. dfs(root, 0)
 
-    ___ dfs  node, d):
+    ___ dfs  node, d
         __ n.. node:
             # empty node (below leaf) is the key decision point
-            __ max_depth __ -f__("inf"):  # leftmost empty node
+            __ max_depth __ -f__("inf"  # leftmost empty node
                 max_depth = d - 1
                 r.. T..
             ____ expecting_partial:

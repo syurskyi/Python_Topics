@@ -9,13 +9,13 @@ __author__ = 'Daniel'
 
 
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 
 c_ Solution:
-    ___ removeElements  head, val):
+    ___ removeElements  head, val
         """
 
         :param head:

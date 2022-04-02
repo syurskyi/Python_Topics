@@ -4,19 +4,19 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ TrieNode(o..):
+c_ TrieNode(o..
     ___ - , c_ N..
         c = c
         children    # dict
         isLeaf = F..
 
-c_ WordDictionary(o..):
-    ___ - ):
+c_ WordDictionary(o..
+    ___ -
         root = TrieNode()
     
-    ___ addWord  word):
+    ___ addWord  word
         children = root.children
-        ___ i, c __ e..(word):
+        ___ i, c __ e..(word
             __ c __ children:
                 t = children[c]
             ____:
@@ -26,8 +26,8 @@ c_ WordDictionary(o..):
             __ i __ l..(word)-1:
                 t.isLeaf = T..
     
-    ___ searchDFS  children, word, startInd):
-        __ startInd __ l..(word):
+    ___ searchDFS  children, word, startInd
+        __ startInd __ l..(word
             r.. b..(n.. children)
         c = word[startInd]
         __ c __ children:
@@ -38,12 +38,12 @@ c_ WordDictionary(o..):
             ___ key, node __ children.iteritems
                 __ startInd __ l..(word)-1 a.. node.isLeaf:
                     r.. T..
-                __ searchDFS(children[key].children, word, startInd+1):
+                __ searchDFS(children[key].children, word, startInd+1
                     r.. T..
             r.. F..
         ____:
             r.. F..
     
-    ___ s..  word):
+    ___ s..  word
         r.. searchDFS(root.children, word, 0)
     

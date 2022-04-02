@@ -3,8 +3,8 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ isOneBitCharacter  bits):
+c_ Solution(o..
+    ___ isOneBitCharacter  bits
         """
         :type bits: List[int]
         :rtype: bool

@@ -5,7 +5,7 @@ result = 0
 
 w... T...
     line = input()
-    __(line):
+    __(line
         values.a..(line.r..(" ", ""))
     ____:
         _____

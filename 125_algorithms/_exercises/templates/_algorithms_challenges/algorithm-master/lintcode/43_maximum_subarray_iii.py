@@ -9,7 +9,7 @@ c_ Solution:
     @param: k: An integer denote to find k non-overlapping subarrays
     @return: An integer denote the sum of max k non-overlapping subarrays
     """
-    ___ maxSubArray  A, k):
+    ___ maxSubArray  A, k
         __ n.. A o. n.. k o. l..(A) < k:
             r.. 0
 
@@ -24,15 +24,15 @@ c_ Solution:
         G = [[_INFINITY] * (k + 1) ___ _ __ r..(n + 1)]
         L = [[_INFINITY] * (k + 1) ___ _ __ r..(n + 1)]
 
-        ___ i __ r..(n + 1):
+        ___ i __ r..(n + 1
             L[i][0] = 0
             G[i][0] = 0
 
-        ___ i __ r..(1, n + 1):
+        ___ i __ r..(1, n + 1
             end = i
             __ k < end:
                 end = k
-            ___ j __ r..(1, end + 1):
+            ___ j __ r..(1, end + 1
                 L[i][j] = A[i - 1] + m..(L[i - 1][j], G[i - 1][j - 1])
                 G[i][j] = m..(L[i][j], G[i - 1][j])
 

@@ -11,9 +11,9 @@ __ n.. PATH.exists
     urlretrieve(S3.f..(FILE_NAME), PATH)
 
 
-___ _get_data(path=PATH):
-    w__ open(path) __ f:
-        r.. [line.rstrip() ___ line __ f.readlines()]
+___ _get_data(path=PATH
+    w__ o.. path) __ f:
+        r.. [line.rstrip() ___ line __ f.r..]
 
 
 ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
@@ -75,7 +75,7 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
     in_test = F..
     ___ line __ mutpy_output:
         __ in_test:
-            __ line.startswith('['):
+            __ line.startswith(' '
                 __ 'survived' __ line:
                     output.extend(test_result)
                 test_result.clear()
@@ -84,7 +84,7 @@ ___ filter_killed_mutants(mutpy_output: l.. = N..) __ l..:
             ____:
                 test_result.a..(line)
         ____:
-            __ line.startswith('   - [#'):
+            __ line.startswith('   - [#'
                 in_test = T..
             output.a..(line)
     r.. output

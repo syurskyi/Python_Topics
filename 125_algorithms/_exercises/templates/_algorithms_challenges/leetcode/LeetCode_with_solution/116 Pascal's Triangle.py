@@ -14,16 +14,16 @@ Return
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ generate  numRows):
+    ___ generate  numRows
         """
         math
         :param numRows: integer
         :return: a list of lists of integers
         """
         result    # list
-        ___ row __ x..(numRows):
+        ___ row __ x..(numRows
             current    # list
-            ___ col __ x..(row+1):
+            ___ col __ x..(row+1
                 __ col__0 o. col__row:
                     current.a..(1)
                 ____:

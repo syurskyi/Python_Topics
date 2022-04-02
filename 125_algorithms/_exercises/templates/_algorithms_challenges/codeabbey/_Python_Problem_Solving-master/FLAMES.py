@@ -13,7 +13,7 @@ length = l..(a) + l..(b)
 #define a dictionary to simply print the result of the FLAMES
 flame_dic = {'F':'Friends','L':'Lover','A':'Affectionate','M':'Marriage','E':'Enemies','S':'Sex'}
 #define a list to process the flames 
-flame = ['F','L','A','M','E','S']
+flame =  'F','L','A','M','E','S'
 
 #count to iterate through the flames list
 i = 0
@@ -26,13 +26,13 @@ w.... l..(flame)!= 1:
         flame.pop(i)
         len_count = 1
         #check if after poping the element has the flames reached the end of the list if yes then reset the i counter
-        __ i __ l..(flame):
+        __ i __ l..(flame
             i = 0
     ____:
         len_count += 1
         i += 1
         #check if the i counter has reached end of the list if yes then reset the counter
-        __ i >= l..(flame):
+        __ i >= l..(flame
             i = 0
 print('The relationship future of',name1,'&',name2,' is',flame_dic[flame[0]])
     

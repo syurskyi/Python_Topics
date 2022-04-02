@@ -9,7 +9,7 @@ expected_lines = """02-13 ...........
 02-21 ..............🐍
 02-22 🐍...................""".s..('\n')
 
-___ test_valid_output(capfd):
+___ test_valid_output(capfd
     create_chart()
     out, _ = capfd.readouterr()
     ___ line __ expected_lines:

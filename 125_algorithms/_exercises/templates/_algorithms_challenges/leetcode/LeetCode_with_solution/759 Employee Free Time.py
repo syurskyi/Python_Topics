@@ -66,7 +66,7 @@ c_ Solution:
             ___ itv __ itvs
         )
         q    # list
-        ___ i, itvs __ e..(schedule):
+        ___ i, itvs __ e..(schedule
             # head
             j = 0
             itv = itvs[j]
@@ -83,7 +83,7 @@ c_ Solution:
 
             # next
             j += 1
-            __ j < l..(schedule[i]):
+            __ j < l..(schedule[i]
                 itv = schedule[i][j]
                 heapq.heappush(q, (itv[S], i, j))
 
@@ -121,7 +121,7 @@ c_ Solution:
         Cannot store iterator in the heap to compare
         use index instead
         """
-        schedules = l..(map(i.., schedule))
+        schedules = l.. m..(i.., schedule))
         cur_max_end = m..(
             itv[E]
             ___ emp __ schedule

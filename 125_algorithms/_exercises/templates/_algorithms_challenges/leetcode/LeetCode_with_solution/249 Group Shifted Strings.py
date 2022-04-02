@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ groupStrings  strings):
+    ___ groupStrings  strings
         """
 
         :type strings: list[str]

@@ -66,7 +66,7 @@ c_ Solution:
         """
         seq = [i..(e) ___ e __ s..(n)]
         stk    # list  # record index
-        ___ i __ r..(l..(seq) - 1, -1 , -1):
+        ___ i __ r..(l..(seq) - 1, -1 , -1
             e = seq[i]
             popped = N..
             w.... stk a.. seq[stk[-1]] > e:
@@ -75,7 +75,7 @@ c_ Solution:
             __ popped:
                 seq[i], seq[popped] = seq[popped], seq[i]
                 seq[i+1:] = s..(seq[i+1:])  # reversed also good
-                ret = i..("".j..(map(s.., seq)))
+                ret = i..("".j.. m..(s.., seq)))
                 __ ret <= 1 << 31 - 1:
                     r.. ret
                 ____:

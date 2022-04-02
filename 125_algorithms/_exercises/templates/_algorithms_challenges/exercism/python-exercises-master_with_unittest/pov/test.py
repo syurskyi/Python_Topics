@@ -5,7 +5,7 @@ ____ pov _______ Tree
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.3.0
 
-c_ PovTest(unittest.TestCase):
+c_ PovTest(unittest.TestCase
 
     ___ test_singleton_returns_same_tree
         tree = Tree('x')
@@ -107,7 +107,7 @@ c_ PovTest(unittest.TestCase):
 
     ___ test_errors_if_target_does_not_exist_in_singleton_tree
         tree = Tree('x')
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             tree.from_pov('nonexistent')
 
     ___ test_errors_if_target_does_not_exist_in_large_tree
@@ -119,7 +119,7 @@ c_ PovTest(unittest.TestCase):
             Tree('sibling-0'),
             Tree('sibling-1')
         ])
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             tree.from_pov('nonexistent')
 
     ___ test_find_path_between_two_nodes
@@ -127,7 +127,7 @@ c_ PovTest(unittest.TestCase):
             Tree('x'),
             Tree('sibling')
         ])
-        expected = ['x', 'parent']
+        expected =  'x', 'parent'
         assertEqual(tree.path_to('x', 'parent'), expected)
 
     ___ test_can_find_path_to_sibling
@@ -137,7 +137,7 @@ c_ PovTest(unittest.TestCase):
             Tree('b'),
             Tree('c')
         ])
-        expected = ['x', 'parent', 'b']
+        expected =  'x', 'parent', 'b'
         assertEqual(tree.path_to('x', 'b'), expected)
 
     ___ test_can_find_path_to_cousin
@@ -155,7 +155,7 @@ c_ PovTest(unittest.TestCase):
                 Tree('cousin-1')
             ])
         ])
-        expected = ['x', 'parent', 'grandparent', 'uncle', 'cousin-1']
+        expected =  'x', 'parent', 'grandparent', 'uncle', 'cousin-1'
         assertEqual(tree.path_to('x', 'cousin-1'), expected)
 
     ___ test_can_find_path_not_involving_root
@@ -166,7 +166,7 @@ c_ PovTest(unittest.TestCase):
                 Tree('sibling-1')
             ])
         ])
-        expected = ['x', 'parent', 'sibling-1']
+        expected =  'x', 'parent', 'sibling-1'
         assertEqual(tree.path_to('x', 'sibling-1'), expected)
 
     ___ test_can_find_path_from_nodes_other_than_x
@@ -176,7 +176,7 @@ c_ PovTest(unittest.TestCase):
             Tree('b'),
             Tree('c')
         ])
-        expected = ['a', 'parent', 'c']
+        expected =  'a', 'parent', 'c'
         assertEqual(tree.path_to('a', 'c'), expected)
 
     ___ test_errors_if_destination_does_not_exist
@@ -188,7 +188,7 @@ c_ PovTest(unittest.TestCase):
             Tree('sibling-0'),
             Tree('sibling-1')
         ])
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             tree.path_to('x', 'nonexistent')
 
     ___ test_errors_if_source_does_not_exist
@@ -200,7 +200,7 @@ c_ PovTest(unittest.TestCase):
             Tree('sibling-0'),
             Tree('sibling-1')
         ])
-        w__ assertRaisesWithMessage(ValueError):
+        w__ assertRaisesWithMessage(ValueError
             tree.path_to('nonexistent', 'x')
 
     # Utility functions
@@ -210,10 +210,10 @@ c_ PovTest(unittest.TestCase):
         ______ AttributeError:
             assertRaisesRegex = assertRaisesRegexp
 
-    ___ assertRaisesWithMessage  exception):
+    ___ assertRaisesWithMessage  exception
         r.. assertRaisesRegex(exception, r".+")
 
-    ___ assertTreeEquals  result, expected):
+    ___ assertTreeEquals  result, expected
         assertEqual(result, expected,
                          '{} != {}'.f..(result, expected))
 

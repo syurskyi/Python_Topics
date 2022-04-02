@@ -15,7 +15,7 @@ Example:
 """
 
 
-___ digitize(n):
+___ digitize(n
     r.. [i..(s) ___ s __ s..(n)][::-1]
 
 

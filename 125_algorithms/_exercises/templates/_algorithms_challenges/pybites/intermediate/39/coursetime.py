@@ -25,9 +25,9 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    w__ open(COURSE_TIMES) __ file:
+    w__ o.. COURSE_TIMES) __ file:
         course_timestamps    # list
-        file_lines = file.readlines()
+        file_lines = file.r..
         ___ line __ file_lines:
             ts = __.f..(r"(\d{1,2}?:\d{1,2})", line)
             __ ts:
@@ -36,7 +36,7 @@ ___ get_all_timestamps
         r.. course_timestamps
 
 
-___ calc_total_course_duration(timestamps):
+___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
     dt_conversion = [d__.strptime(ts, '%M:%S') ___ ts __ timestamps]

@@ -125,5 +125,5 @@ def foo():
     (class_three_indents, class_three_indents_after_strip),
     (false_positive, false_positive_after_strip),
 ])
-___ test_strip_comments(arg, expected):
+___ test_strip_comments(arg, expected
     ... strip_comments(arg).s.. __ expected.s..

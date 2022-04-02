@@ -3,8 +3,8 @@ Created on May 25, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ ladderLength  beginWord, endWord, wordList):
+c_ Solution(o..
+    ___ ladderLength  beginWord, endWord, wordList
         """
         :type beginWord: str
         :type endWord: str
@@ -20,7 +20,7 @@ c_ Solution(o..):
         w.... queue:
             n = l..(queue)
             length += 1
-            ___ _ __ r..(n):
+            ___ _ __ r..(n
                 word = queue.pop(0)
                 __ word __ endWord:
                     r.. length
@@ -31,10 +31,10 @@ c_ Solution(o..):
                         queue.a..(nextWord)
         r.. 0
     
-    ___ getNext  word, wordSet):
+    ___ getNext  word, wordSet
         chars = 'abcdefghijklmnopqrstuvwxyz'
         res    # list
-        ___ i, c __ e..(word):
+        ___ i, c __ e..(word
             ___ c0 __ chars:
                 __ c != c0:
                     word0 = word[:i]+c0+word[i+1:]

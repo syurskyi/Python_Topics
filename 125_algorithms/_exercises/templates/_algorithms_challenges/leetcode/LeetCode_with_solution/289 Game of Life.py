@@ -22,11 +22,11 @@ problems when the active area encroaches the border of the array. How would you 
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         dirs = [(-1, 0), (-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1)]
 
-    ___ gameOfLife  board):
+    ___ gameOfLife  board
         """
         B3/S23, born 3 stays 2 or 3
 
@@ -46,8 +46,8 @@ c_ Solution(o..):
         m = l..(board)
         n = l..(board[0])
         lines = [[0 ___ _ __ x..(n)] ___ _ __ x..(2)]
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 lines[(i+1)%2][j] = board[i][j]
 
                 cnt = 0

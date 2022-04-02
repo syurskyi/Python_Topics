@@ -3,8 +3,8 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ minEatingSpeed  piles, H):
+c_ Solution(o..
+    ___ minEatingSpeed  piles, H
         """
         :type piles: List[int]
         :type H: int

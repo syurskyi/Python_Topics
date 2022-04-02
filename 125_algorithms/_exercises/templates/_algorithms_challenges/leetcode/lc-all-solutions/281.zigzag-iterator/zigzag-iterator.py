@@ -1,16 +1,16 @@
 ____ c.. _______ d..
 
 
-c_ ZigzagIterator(o..):
+c_ ZigzagIterator(o..
 
-  ___ - , v1, v2):
+  ___ - , v1, v2
     """
     Initialize your data structure here.
     :type v1: List[int]
     :type v2: List[int]
     """
-    iters = d..(map(i.., [v1, v2]))
-    total = s..(map(l.., [v1, v2]))
+    iters = d.. m..(i.., [v1, v2]))
+    total = s.. m..(l.., [v1, v2]))
 
   ___ next
     """

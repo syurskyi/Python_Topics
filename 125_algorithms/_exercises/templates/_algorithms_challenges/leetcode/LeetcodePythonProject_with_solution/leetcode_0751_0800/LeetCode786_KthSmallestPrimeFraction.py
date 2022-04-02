@@ -3,8 +3,8 @@ Created on Apr 10, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ kthSmallestPrimeFraction  A, K):
+c_ Solution(o..
+    ___ kthSmallestPrimeFraction  A, K
         """
         :type A: List[int]
         :type K: int

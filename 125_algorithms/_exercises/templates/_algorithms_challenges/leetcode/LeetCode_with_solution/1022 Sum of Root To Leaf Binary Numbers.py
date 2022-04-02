@@ -24,14 +24,14 @@ The answer will not exceed 2^31 - 1.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         ret = 0
         lst    # list
 
@@ -43,7 +43,7 @@ c_ Solution:
         dfs(root)
         r.. ret
 
-    ___ dfs  node):
+    ___ dfs  node
         __ n.. node:
             r..
 

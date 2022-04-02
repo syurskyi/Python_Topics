@@ -37,7 +37,7 @@ c_ Solution:
         Subsequence - Binary search
         """
         char_pos = defaultdict(l..)
-        ___ p, c __ e..(t):
+        ___ p, c __ e..(t
             char_pos[c].a..(p)
             # the list is naturally sorted
 
@@ -47,7 +47,7 @@ c_ Solution:
                 r.. F..
             pos = char_pos[c]
             i = bisect_left(pos, lo_po)
-            __ i __ l..(pos):
+            __ i __ l..(pos
                 r.. F..
             lo_po = pos[i] + 1  # pitfall
 

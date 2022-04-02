@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ moveZeroes  nums):
+c_ Solution(o..
+  ___ moveZeroes  nums
     """
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.

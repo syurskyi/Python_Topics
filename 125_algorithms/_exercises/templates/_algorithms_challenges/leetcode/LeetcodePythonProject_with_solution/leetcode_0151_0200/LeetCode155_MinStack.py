@@ -4,15 +4,15 @@ Created on Feb 11, 2017
 @author: MT
 '''
 
-c_ MinStack(o..):
+c_ MinStack(o..
 
-    ___ - ):
+    ___ -
         """
         initialize your data structure here.
         """
         stack    # list
 
-    ___ push  x):
+    ___ push  x
         """
         :type x: int
         :rtype: void

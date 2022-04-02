@@ -15,7 +15,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ threeSum_duplicate  num):
+    ___ threeSum_duplicate  num
         """
         Hash
         O(n^2)
@@ -23,7 +23,7 @@ c_ Solution:
         :return: a list of lists of length 3, [[val1,val2,val3]]
         """
         reverse_map    # dict
-        ___ ind, val __ e..(num):
+        ___ ind, val __ e..(num
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
             ____:
@@ -41,7 +41,7 @@ c_ Solution:
                         _____
         r.. result
 
-    ___ threeSum_TLE  num):
+    ___ threeSum_TLE  num
         """
         Hash
         O(n^2)
@@ -51,7 +51,7 @@ c_ Solution:
 
         # hash
         reverse_map    # dict
-        ___ ind, val __ e..(num):
+        ___ ind, val __ e..(num
             __ val n.. __ reverse_map:
                 reverse_map[val] = [ind]
             ____:
@@ -72,7 +72,7 @@ c_ Solution:
 
         r.. result.k..
 
-    ___ threeSum  num):
+    ___ threeSum  num
         """
         Brute force first, then determine whether sorting time complexity exceeds the brute force
 

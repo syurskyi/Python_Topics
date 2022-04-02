@@ -11,14 +11,14 @@ You may assume the string contains only lowercase alphabets.
 """
 
 
-c_ Solution(o..):
-    ___ isAnagram  s, t):
+c_ Solution(o..
+    ___ isAnagram  s, t
         """
         :type s: str
         :type t: str
         :rtype: bool
         """
-        __ l..(s) != l..(t):
+        __ l..(s) != l..(t
             r.. F..
         d    # dict
         ___ c __ s:

@@ -4,7 +4,7 @@ Greedy
 https://leetcode.com/articles/jump-game/
 """
 c_ Solution:
-    ___ canJump  A):
+    ___ canJump  A
         """
         :type A: List[int]
         :rtype: bool
@@ -14,7 +14,7 @@ c_ Solution:
 
         last_at = l..(A) - 1
 
-        ___ i __ r..(last_at, -1, -1):
+        ___ i __ r..(last_at, -1, -1
             __ i + A[i] >= last_at:
                 last_at = i
 
@@ -25,7 +25,7 @@ c_ Solution:
 DP
 """
 c_ Solution:
-    ___ canJump  A):
+    ___ canJump  A
         """
         :type A: List[int]
         :rtype: bool
@@ -41,8 +41,8 @@ c_ Solution:
         """
         dp[0] = T..
 
-        ___ i __ r..(1, n):
-            ___ j __ r..(i):
+        ___ i __ r..(1, n
+            ___ j __ r..(i
                 """
                 backtracking
                 if `j` could be reached

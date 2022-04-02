@@ -3,8 +3,8 @@ Created on Oct 7, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findClosestElements  arr, k, x):
+c_ Solution(o..
+    ___ findClosestElements  arr, k, x
         """
         :type arr: List[int]
         :type k: int
@@ -15,14 +15,14 @@ c_ Solution(o..):
         ind = bisect.bisect_left(arr, x)
         __ ind __ 0:
             r.. arr[:k]
-        __ ind __ l..(arr):
+        __ ind __ l..(arr
             r.. arr[-k:]
         heap    # list
         ___ i __ r..(m..(0, ind-k), m..(l..(arr), ind+k)):
             diff = abs(x-arr[i])
             heapq.heappush(heap, (diff, arr[i]))
         res    # list
-        ___ _ __ r..(k):
+        ___ _ __ r..(k
             res.a..(heapq.heappop(heap)[1])
         r.. s..(res)
     

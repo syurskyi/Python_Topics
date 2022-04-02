@@ -31,8 +31,8 @@ or
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ integerReplacement  n):
+c_ Solution(o..
+    ___ integerReplacement  n
         """
         Simulation using dp fails since bi-directional
         Simple recursion
@@ -55,7 +55,7 @@ c_ Solution(o..):
 
         r.. ret
 
-    ___ integerReplacementRecur  n):
+    ___ integerReplacementRecur  n
         """
         Simple recursion
         :type n: int

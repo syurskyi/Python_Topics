@@ -83,7 +83,7 @@ ____ translate_cds _______ translate_cds
         ),  # lots of whitespace
     ],
 )
-___ test_translate_cds(cds, table, expected):
+___ test_translate_cds(cds, table, expected
     """
     Test if returned protein sequence and type are correct
     """
@@ -101,9 +101,9 @@ ___ test_translate_cds(cds, table, expected):
         ("ATGTAATAA", "Standard"),  # internal stop codon
     ],
 )
-___ test_translate_cds_fail(cds, table):
+___ test_translate_cds_fail(cds, table
     """
     Test if function throws error when bad data is fed in
     """
-    w__ p__.r..(TranslationError):
+    w__ p__.r..(TranslationError
         translate_cds(cds, table)

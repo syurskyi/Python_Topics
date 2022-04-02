@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ letterCasePermutation  s):
+    ___ letterCasePermutation  s
         """
         :type s: str
         :rtype: List[str]
@@ -10,8 +10,8 @@ c_ Solution:
         dfs(s, 0, ans, [])
         r.. ans
 
-    ___ dfs  s, i, ans, path):
-        __ i __ l..(s):
+    ___ dfs  s, i, ans, path
+        __ i __ l..(s
             ans.a..(''.j..(path))
             r..
 

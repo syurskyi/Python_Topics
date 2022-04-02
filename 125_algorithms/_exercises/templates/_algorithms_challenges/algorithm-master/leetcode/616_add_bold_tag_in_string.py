@@ -16,7 +16,7 @@ True
 
 
 c_ Solution:
-    ___ addBoldTag  s, words):
+    ___ addBoldTag  s, words
         """
         :type s: str
         :type words: List[str]
@@ -31,7 +31,7 @@ c_ Solution:
         is_bold = [F..] * n
         left = right = 0
 
-        ___ left __ r..(n):
+        ___ left __ r..(n
             ___ w __ words:
                 size = l..(w)
 

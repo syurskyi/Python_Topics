@@ -3,8 +3,8 @@ Created on Mar 22, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ minCostClimbingStairs  cost):
+c_ Solution(o..
+    ___ minCostClimbingStairs  cost
         """
         :type cost: List[int]
         :rtype: int

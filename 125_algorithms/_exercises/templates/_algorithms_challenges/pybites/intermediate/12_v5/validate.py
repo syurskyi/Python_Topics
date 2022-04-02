@@ -11,19 +11,19 @@ USERS = (julian, bob, pybites)
 
 
 # define exception classes here
-c_ UserDoesNotExist(E..):
+c_ UserDoesNotExist(E..
     p..
 
 
-c_ UserAccessExpired(E..):
+c_ UserAccessExpired(E..
     p..
 
 
-c_ UserNoPermission(E..):
+c_ UserNoPermission(E..
     p..
 
 
-___ get_secret_token(username):
+___ get_secret_token(username
     ___ user __ USERS:
         __ user.name __ username:
             __ user.expired:

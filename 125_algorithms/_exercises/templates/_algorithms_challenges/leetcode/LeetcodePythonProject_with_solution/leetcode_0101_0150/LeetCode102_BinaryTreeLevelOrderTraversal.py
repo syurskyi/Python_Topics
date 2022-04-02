@@ -4,8 +4,8 @@ Created on Feb 1, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ levelOrder  root):
+c_ Solution(o..
+    ___ levelOrder  root
         """
         :type root: TreeNode
         :rtype: List[List[int]]

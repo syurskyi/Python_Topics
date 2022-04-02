@@ -4,14 +4,14 @@ Created on Sep 25, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ averageOfLevels  root):
+c_ Solution(o..
+    ___ averageOfLevels  root
         """
         :type root: TreeNode
         :rtype: List[float]

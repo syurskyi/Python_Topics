@@ -1,6 +1,6 @@
 ____ functools _______ partial
 
-___ rounding_nums(number, places):
+___ rounding_nums(number, places
     r.. r..(number, places)
 
 

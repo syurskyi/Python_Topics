@@ -6,7 +6,7 @@ _______ p__
 ____ missing_dates _______ get_missing_dates
 
 
-___ _create_dates(missing, year=2019,  m.._2):
+___ _create_dates(missing, year=2019,  m.._2
     """Helper function to build up test cases.
 
        Returns a list of dates omitting days given
@@ -21,7 +21,7 @@ ___ _create_dates(missing, year=2019,  m.._2):
     # only the ones not in missing
     y.. first
 
-    ___ day __ r..(first.day + 1, last.day):
+    ___ day __ r..(first.day + 1, last.day
         __ day n.. __ missing:
             y.. first.r..( d.._day)
 
@@ -36,7 +36,7 @@ ___ _create_dates(missing, year=2019,  m.._2):
     ([1, 3, 7, 31], 5),  # expected = 3, 7, not start/end month
     (l..(r..(1, 31)), 6),  # 0 missing
 ])
-___ test_get_missing_dates(missing, month):
+___ test_get_missing_dates(missing, month
     my_date_range = l..(_create_dates(missing,  m.._month))
     start, end = my_date_range[0].day, my_date_range[-1].day
 

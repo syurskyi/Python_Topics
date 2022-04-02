@@ -9,7 +9,7 @@ _______ unittest
 ____ binary _______ parse_binary
 
 
-c_ BinaryTests(unittest.TestCase):
+c_ BinaryTests(unittest.TestCase
     ___ test_binary_1_is_decimal_1
         assertEqual(parse_binary("1"), 1)
 

@@ -11,7 +11,7 @@ ___ get_random_number
 c_ Game:
     """Number guess class, make it callable to initiate game"""
 
-    ___ - ):
+    ___ -
         """Init _guesses, _answer, _win to set(), get_random_number(), False"""
         _guesses = s..()
         _answer = get_random_number()
@@ -58,7 +58,7 @@ c_ Game:
 
 
 
-    ___ _validate_guess  guess):
+    ___ _validate_guess  guess
         """Verify if guess is correct, print the following when applicable:
            {guess} is correct!
            {guess} is too low
@@ -80,7 +80,7 @@ c_ Game:
            see the tests for the exact win/lose messaging"""
 
         
-        ___ i __ r..(1,MAX_GUESSES + 1):
+        ___ i __ r..(1,MAX_GUESSES + 1
             w... T...
                 ___
                     user_guess = guess()

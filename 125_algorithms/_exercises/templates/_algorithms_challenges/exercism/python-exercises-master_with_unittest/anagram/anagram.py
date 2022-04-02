@@ -1,2 +1,2 @@
-___ detect_anagrams(s__, array):
+___ detect_anagrams(s__, array
     p..

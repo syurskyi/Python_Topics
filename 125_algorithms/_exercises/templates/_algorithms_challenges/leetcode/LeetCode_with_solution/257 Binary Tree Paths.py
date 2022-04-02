@@ -17,14 +17,14 @@ __author__ = 'Daniel'
 
 
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ binaryTreePaths  root):
+    ___ binaryTreePaths  root
         """
 
         :type root: TreeNode
@@ -37,13 +37,13 @@ c_ Solution:
         dfs(root, [], ret)
         r.. ret
 
-    ___ dfs  cur, path, ret):
+    ___ dfs  cur, path, ret
         """
         pre-check
         """
         path.a..(cur)
         __ n.. cur.left a.. n.. cur.right:
-            ret.a..("->".j..(map(l.... x: s..(x.val), path)))
+            ret.a..("->".j.. m..(l.... x: s..(x.val), path)))
             r..
 
         __ cur.left:
@@ -54,13 +54,13 @@ c_ Solution:
             dfs(cur.right, path, ret)
             path.pop()  # pop the shared path
 
-    ___ dfs_path  cur, path, ret):
+    ___ dfs_path  cur, path, ret
         __ n.. cur:
             r..
 
         path.a..(cur)
         __ n.. cur.left a.. n.. cur.right:
-            ret.a..("->".j..(map(l.... x: s..(x.val), path)))
+            ret.a..("->".j.. m..(l.... x: s..(x.val), path)))
 
         dfs_path(cur.left, path, ret)
         dfs_path(cur.right, path, ret)

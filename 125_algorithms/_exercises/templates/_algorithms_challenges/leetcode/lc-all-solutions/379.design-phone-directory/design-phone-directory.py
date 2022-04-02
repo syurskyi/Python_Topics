@@ -1,9 +1,9 @@
 ____ c.. _______ d..
 
 
-c_ PhoneDirectory(o..):
+c_ PhoneDirectory(o..
 
-  ___ - , maxNumbers):
+  ___ - , maxNumbers
     """
     Initialize your data structure here
     @param maxNumbers - The maximum numbers that can be stored in the phone directory.
@@ -23,7 +23,7 @@ c_ PhoneDirectory(o..):
       r.. q.popleft()
     r.. -1
 
-  ___ check  number):
+  ___ check  number
     """
     Check if a number is available or not.
     :type number: int
@@ -31,7 +31,7 @@ c_ PhoneDirectory(o..):
     """
     r.. taken[number]
 
-  ___ release  number):
+  ___ release  number
     """
     Recycle or release a number.
     :type number: int

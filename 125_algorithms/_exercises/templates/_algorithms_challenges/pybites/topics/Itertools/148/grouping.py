@@ -17,7 +17,7 @@ cars = [
 ]
 
 
-___ group_cars_by_manufacturer(cars):
+___ group_cars_by_manufacturer(cars
     """Iterate though the list of (manufacturer, model) tuples
        of the cars list defined above and generate the output as described
        in the Bite description (see the tests for the full output).
@@ -27,9 +27,9 @@ ___ group_cars_by_manufacturer(cars):
     """
     key_func = l.... x: x[0]
 
-    ___ key, group __ groupby(s..(cars), key_func):
+    ___ key, group __ groupby(s..(cars), key_func
         print(key.upper())
-        ___ model __ l..(group):
+        ___ model __ l..(group
             print _*- {model[1]}')
         print()
 

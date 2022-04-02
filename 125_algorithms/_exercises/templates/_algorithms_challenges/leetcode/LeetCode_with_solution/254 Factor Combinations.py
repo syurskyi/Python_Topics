@@ -7,7 +7,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ getFactors  n):
+    ___ getFactors  n
         """
 
         :type n: int
@@ -17,7 +17,7 @@ c_ Solution:
         dfs([n], ret)
         r.. ret
 
-    ___ dfs  cur, ret):
+    ___ dfs  cur, ret
         """
         16
 
@@ -36,25 +36,25 @@ c_ Solution:
 
         n = cur.pop()
         start = cur[-1] __ cur ____ 2
-        ___ i __ x..(start, i..(sqrt(n))+1):
+        ___ i __ x..(start, i..(sqrt(n))+1
             __ n % i __ 0:
                 cur.a..(i)
                 cur.a..(n/i)
                 dfs(cur, ret)
                 cur.pop()
 
-    ___ dfs2  n, cur, ret):
+    ___ dfs2  n, cur, ret
         __ n > 1 a.. cur a.. l..(cur) >= 1:
             ret.a..(l..(cur)+[n])
 
         start = cur[-1] __ cur ____ 2
-        ___ i __ x..(start, i..(sqrt(n))+1):
+        ___ i __ x..(start, i..(sqrt(n))+1
             __ n%i __ 0:
                 cur.a..(i)
                 dfs(n/i, cur, ret)
                 cur.pop()
 
-    ___ dfs_TLE  n, cur, ret):
+    ___ dfs_TLE  n, cur, ret
         __ n __ 1 a.. cur a.. l..(cur) >= 2:
             ret.a..(l..(cur))
 

@@ -62,8 +62,8 @@ c_ Solution:
         m, n = l..(A), l..(A[0])
         lt = [F.. ___ i __ r..(m)]
         deleted = 0
-        ___ j __ r..(n):
-            ___ i __ r..(m-1):
+        ___ j __ r..(n
+            ___ i __ r..(m-1
                 __ lt[i]:
                     _____
                 __ A[i][j] > A[i+1][j]:
@@ -71,7 +71,7 @@ c_ Solution:
                     _____
             ____:  # not deleted
                 # handle equal case
-                ___ i __ r..(m-1):
+                ___ i __ r..(m-1
                     lt[i] = lt[i] o. A[i][j] < A[i+1][j]
 
         r.. deleted

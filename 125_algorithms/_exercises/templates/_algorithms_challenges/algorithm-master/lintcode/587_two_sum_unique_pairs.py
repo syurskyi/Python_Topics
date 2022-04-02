@@ -4,7 +4,7 @@ c_ Solution:
     @param: target: An integer
     @return: An integer
     """
-    ___ twoSum6  nums, target):
+    ___ twoSum6  nums, target
         ans = 0
         __ n.. nums:
             r.. ans

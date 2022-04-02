@@ -17,7 +17,7 @@ c_ BSTIterator:
     """
     @param: root: The root of binary tree.
     """
-    ___ - , root):
+    ___ - , root
         stack    # list
         node = root
 

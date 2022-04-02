@@ -3,7 +3,7 @@ ____ e.. _______ E..
 ____ typing _______ Any, Dict, List, Optional, Tuple, Union
 
 
-c_ SQLiteType(E..):
+c_ SQLiteType(E..
     """Enum matching SQLite data types to corresponding Python types.
 
     Supported SQLite types:
@@ -24,7 +24,7 @@ c_ SQLiteType(E..):
     BLOB = bytes
 
 
-c_ SchemaError(E..):
+c_ SchemaError(E..
     """Base Schema error class if a table schema is not respected."""
 
     p..
@@ -49,7 +49,7 @@ c_ DB:
             column name and column type.
     """
 
-    ___ - , location: Optional[s..] = ":memory:"):
+    ___ - , location: Optional[s..] = ":memory:"
         location = location
         cursor = N..
         connection = N..
@@ -61,12 +61,12 @@ c_ DB:
 
         r.. self
 
-    ___ __exit__  exc_type, exc_value, traceback):
+    ___ __exit__  exc_type, exc_value, traceback
         connection.close()
 
     ___ create(
             self, table: s.., schema: List[Tuple[s.., SQLiteType]], primary_key: s..
-    ):
+
         """Creates a new table.
 
         Makes use of the SQLiteType enum class.
@@ -97,7 +97,7 @@ c_ DB:
         cur = connection.cursor()
         r.. cur.execute(f"CREATE TABLE {table} ({schema_new})")
 
-    ___ delete  table: s.., target: Tuple[s.., Any]):
+    ___ delete  table: s.., target: Tuple[s.., Any]
         """Deletes rows from the table.
 
         Args:
@@ -115,7 +115,7 @@ c_ DB:
         cur = connection.cursor()
         r.. cur.execute(f"DELETE FROM {table} WHERE {column} = {element}")
 
-    ___ insert  table: s.., values: List[Tuple]):
+    ___ insert  table: s.., values: List[Tuple]
         """Inserts one or multiple new records into the database.
 
         Before inserting a value, you should make sure
@@ -184,7 +184,7 @@ c_ DB:
                 (column_name, operator, value) = target
                 r.. cur.execute(f"SELECT {columns} FROM {table} WHERE {column_name} {operator} {value}")
 
-    ___ update  table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]):
+    ___ update  table: s.., new_value: Tuple[s.., Any], target: Tuple[s.., Any]
         """Update a record in the database.
 
         Args:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ isUgly  num):
+    ___ isUgly  num
         """
         :type num: int
         :rtype: bool
@@ -12,7 +12,7 @@ c_ Solution:
         ___ factor __ (
             125, 27, 8,
             5, 3, 2,
-        ):
+        
             w.... num % factor __ 0:
                 num //= factor
 

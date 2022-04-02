@@ -28,5 +28,5 @@ expected_return = [
 ?p__.m__.p.('actual, expected',
                          z..(actual_return, expected_return)
                          )
-___ test_top_python_questions(actual, expected):
+___ test_top_python_questions(actual, expected
     ... actual __ expected

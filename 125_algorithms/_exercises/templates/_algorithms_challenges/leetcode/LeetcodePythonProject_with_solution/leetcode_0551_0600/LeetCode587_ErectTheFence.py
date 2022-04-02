@@ -4,13 +4,13 @@ Created on Sep 4, 2017
 @author: MT
 '''
 # Definition for a point.
-c_ Point(o..):
-    ___ - , a=0, b=0):
+c_ Point(o..
+    ___ - , a=0, b=0
         x = a
         y = b
 
-c_ Solution(o..):
-    ___ outerTrees  points):
+c_ Solution(o..
+    ___ outerTrees  points
         """
         :type points: List[Point]
         :rtype: List[Point]
@@ -38,7 +38,7 @@ c_ Solution(o..):
                     (cross __ 0 a.. distance(points[i], cur) > distance(nextPoint, cur)):
                     nextPoint = points[i]
                     nextInd = i
-            ___ i, point __ e..(points):
+            ___ i, point __ e..(points
                 __ i __ curInd:
                     _____
                 cross = crossProductLength(cur, point, nextPoint)
@@ -48,14 +48,14 @@ c_ Solution(o..):
             curInd = nextInd
         r.. l..(res)
     
-    ___ crossProductLength  pointA, pointB, pointC):
+    ___ crossProductLength  pointA, pointB, pointC
         baX = pointA.x-pointB.x
         baY = pointA.y-pointB.y
         bcX = pointC.x-pointB.x
         bcY = pointC.y-pointB.y
         r.. baX*bcY-baY*bcX
     
-    ___ distance  p1, p2):
+    ___ distance  p1, p2
         r.. (p1.x-p2.x)**2+(p1.y-p2.y)**2
     
     ___ test

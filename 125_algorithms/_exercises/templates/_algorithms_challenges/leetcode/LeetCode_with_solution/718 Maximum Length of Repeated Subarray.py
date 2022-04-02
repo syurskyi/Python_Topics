@@ -31,8 +31,8 @@ c_ Solution:
         """
         m, n = l..(A), l..(B)
         F = defaultdict(l....: defaultdict(i..))
-        ___ i __ r..(1, m+1):
-            ___ j __ r..(1, n+1):
+        ___ i __ r..(1, m+1
+            ___ j __ r..(1, n+1
                 __ A[i-1] __ B[j-1]:
                     F[i][j] = F[i-1][j-1] + 1
 

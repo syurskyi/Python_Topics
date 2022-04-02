@@ -11,14 +11,14 @@ _______ __
 Entry = n..('Entry', 'title points comments')
 
 
-___ _create_soup_obj(url):
+___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
     resp = requests.get(url)
     resp.encoding = "utf-8"
     r.. BeautifulSoup(resp.text, "html.parser")
 
 
-___ get_top_titles(url, top=5):
+___ get_top_titles(url, top=5
     """Parse the titles (class 'title') using the soup object.
        Return a list of top (default = 5) titles ordered descending
        by number of points and comments.
@@ -29,7 +29,7 @@ ___ get_top_titles(url, top=5):
     point_list    # list
     comment_list    # list
 
-    ___ entry __ soup.findAll('span', attrs={'class': 'smaller'}):
+    ___ entry __ soup.findAll('span', attrs={'class': 'smaller'}
         entry = entry.get_text().s..
         points = __.s..(r'(\d*) points', entry)
         comments = __.s..(r'(\d*) comments', entry)
@@ -39,7 +39,7 @@ ___ get_top_titles(url, top=5):
             comment_list.a..(i..(comments.group(1)))
 
     output    # list
-    ___ entry __ z..(title_list, point_list, comment_list):
+    ___ entry __ z..(title_list, point_list, comment_list
         output.a..(Entry(title=entry[0], points=entry[1], comments=entry[2]))
 
     r.. s..(output, key=l.... x: (x.points, x.comments), r.._T..[:top]

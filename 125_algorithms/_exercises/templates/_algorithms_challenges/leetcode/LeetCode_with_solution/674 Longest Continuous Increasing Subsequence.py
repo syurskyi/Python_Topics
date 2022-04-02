@@ -30,7 +30,7 @@ c_ Solution:
 
         ret = 1
         i = 1
-        w.... i < l..(nums):
+        w.... i < l..(nums
             cur = 1
             w.... i < l..(nums) a.. nums[i] > nums[i-1]:
                 cur += 1

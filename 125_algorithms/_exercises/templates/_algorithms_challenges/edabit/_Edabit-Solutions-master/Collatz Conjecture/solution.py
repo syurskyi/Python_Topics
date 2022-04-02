@@ -1,4 +1,4 @@
-___ collatz(n):
+___ collatz(n
     output = [n]
     w.... n != 1:
         __ n % 2 __ 0:

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ wiggleMaxLength  nums):
+c_ Solution(o..
+  ___ wiggleMaxLength  nums
     """
     :type nums: List[int]
     :rtype: int

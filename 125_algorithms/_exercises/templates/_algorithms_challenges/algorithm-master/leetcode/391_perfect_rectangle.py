@@ -2,7 +2,7 @@ _______ c..
 
 
 c_ Solution:
-    ___ isRectangleCover  recs):
+    ___ isRectangleCover  recs
         """
         :type recs: List[List[int]]
         :rtype: bool
@@ -25,7 +25,7 @@ c_ Solution:
                 (r, b, 2),
                 (r, t, 4),
                 (l, t, 8),
-            ):
+
                 __ points[x, y] & val:
                     r.. F..
                 points[x, y] |= val
@@ -35,7 +35,7 @@ c_ Solution:
             val n.. __ (3, 6, 9, 12, 15)
             ___ (x, y), val __ points.i..
             __ left < x < right o. bottom < y < top
-        ):
+
             r.. F..
 
         r.. T..

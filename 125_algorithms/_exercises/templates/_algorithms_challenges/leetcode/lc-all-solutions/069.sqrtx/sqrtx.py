@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ mySqrt  x):
+c_ Solution(o..
+  ___ mySqrt  x
     """
     :type x: int
     :rtype: int

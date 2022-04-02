@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ fizzBuzz  n):
+c_ Solution(o..
+  ___ fizzBuzz  n
     """
     :type n: int
     :rtype: List[str]
     """
     ans    # list
-    ___ i __ r..(1, n + 1):
+    ___ i __ r..(1, n + 1
       stmt1 = i % 3 __ 0
       stmt2 = i % 5 __ 0
       __ stmt1 a.. stmt2:

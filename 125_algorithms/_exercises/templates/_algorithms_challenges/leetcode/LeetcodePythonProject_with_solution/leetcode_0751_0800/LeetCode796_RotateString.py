@@ -3,15 +3,15 @@ Created on Apr 18, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ rotateString  A, B):
+c_ Solution(o..
+    ___ rotateString  A, B
         """
         :type A: str
         :type B: str
         :rtype: bool
         """
         s1, s2 = A, B
-        __ l..(s1) != l..(s2):
+        __ l..(s1) != l..(s2
             r.. F..
         __ s1 __ s2: r.. T..
         ___ i __ r..(l..(s1)):
@@ -21,8 +21,8 @@ c_ Solution(o..):
     
     ___ test
         testCases = [
-            ['abcde', 'cdeab'],
-            ['abcde', 'abced'],
+             'abcde', 'cdeab' ,
+             'abcde', 'abced' ,
         ]
         ___ s1, s2 __ testCases:
             print('s1: %s' % s1)

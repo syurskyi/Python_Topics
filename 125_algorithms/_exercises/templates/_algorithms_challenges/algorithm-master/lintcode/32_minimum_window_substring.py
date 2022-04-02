@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ minWindow  s, t):
+    ___ minWindow  s, t
         """
         :type s: str
         :type t: str

@@ -10,7 +10,7 @@ c_ ZigzagIterator2:
     """
     @param: vecs: a list of 1d vectors
     """
-    ___ - , vecs):
+    ___ - , vecs
         g = vecs
         x = 0
         y = 0
@@ -38,14 +38,14 @@ c_ ZigzagIterator2:
             __ (
                 x < l..(g) a..
                 y < l..(g[x])
-            ):
+
                 r.. T..
 
-            __ x >= l..(g):
+            __ x >= l..(g
                 x = 0
                 y += 1
 
-            __ y >= l..(g[x]):
+            __ y >= l..(g[x]
                 x += 1
 
         r.. F..
@@ -55,7 +55,7 @@ c_ ZigzagIterator2:
     """
     @param: vecs: a list of 1d vectors
     """
-    ___ - , vecs):
+    ___ - , vecs
         queue = [vec ___ vec __ vecs __ vec]
 
     """

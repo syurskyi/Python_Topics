@@ -3,14 +3,14 @@ c_ Solution:
     @param g: the sorted matrix
     @return: the number of Negative Number
     """
-    ___ countNumber  g):
+    ___ countNumber  g
         ans = 0
         __ n.. g o. n.. g[0]:
             r.. ans
 
         m, n = l..(g), l..(g[0])
 
-        ___ i __ r..(m):
+        ___ i __ r..(m
             left, right = 0, n - 1
 
             w.... left + 1 < right:

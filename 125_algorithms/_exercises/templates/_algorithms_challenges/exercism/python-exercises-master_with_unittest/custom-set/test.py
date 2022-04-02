@@ -5,7 +5,7 @@ ____ custom_set _______ CustomSet
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.3.0
 
-c_ CustomSetTest(unittest.TestCase):
+c_ CustomSetTest(unittest.TestCase
     ___ test_sets_with_no_elements_are_empty
         sut = CustomSet()
         assertIs(sut.isempty(), T..)

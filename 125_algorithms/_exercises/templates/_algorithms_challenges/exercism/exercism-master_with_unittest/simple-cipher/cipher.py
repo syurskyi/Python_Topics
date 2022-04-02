@@ -11,15 +11,15 @@ c_ Cipher:
         __ n.. valid_key
             r.. ValueError()
 
-    ___ encode  phrase):
+    ___ encode  phrase
         r.. ''.j..([chr(wrap(o..(c) + offset(i))) ___ i, c __
                         e..(clean(phrase))])
 
-    ___ decode  phrase):
+    ___ decode  phrase
         r.. ''.j..([chr(wrap(o..(c) - offset(i))) ___ i, c __
                         e..(clean(phrase))])
 
-    ___ clean  phrase):
+    ___ clean  phrase
         r.. l..(filter(s...isalpha, phrase.lower()))
 
     ___ generate_random_key
@@ -29,10 +29,10 @@ c_ Cipher:
     ___ valid_key
         r.. key.isalpha() a.. key.islower()
 
-    ___ offset  index):
+    ___ offset  index
         r.. wrap(o..(key[index % l..(key)]) - 97)
 
-    ___ wrap  val):
+    ___ wrap  val
         w.... val > 122:
             val -= 26
         w.... val < 97:
@@ -45,9 +45,9 @@ c_ Caesar:
     cipher = Cipher('d')
 
     @classmethod
-    ___ encode(cls, phrase):
+    ___ encode(cls, phrase
         r.. cls.cipher.encode(phrase)
 
     @classmethod
-    ___ decode(cls, phrase):
-        r.. cls.cipher.decode(phrase)
+    ___ d.. cls, phrase
+        r.. cls.cipher.d.. phrase)

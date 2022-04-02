@@ -6,7 +6,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
     {1: 2, 3: 1, 4: 2} -> [1, 1, 3, 4, 4] --> 3 is median
     """
     ___ value __ d.v..
-        __ n.. isi..(value, i..):
+        __ n.. isi..(value, i..
             r.. T..
 
     frequency    # list
@@ -14,7 +14,7 @@ ___ calc_median_from_dict(d: d..) __ f__:
         key_occurrence = value
         __ value > 100_000_000:
             key_occurrence = i..(value / 100_000_000)
-        ___ _ __ r..(key_occurrence):
+        ___ _ __ r..(key_occurrence
             frequency.a..(key)
 
     frequency.s..()

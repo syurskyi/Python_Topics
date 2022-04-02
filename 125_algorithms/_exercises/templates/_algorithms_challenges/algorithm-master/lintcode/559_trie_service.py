@@ -8,7 +8,7 @@ class TrieNode:
 """
 c_ TrieService:
 
-    ___ - ):
+    ___ - 
         root = TrieNode()
 
     ___ get_root
@@ -19,7 +19,7 @@ c_ TrieService:
     # @param {str} word a string
     # @param {int} frequency an integer
     # @return nothing
-    ___ insert  word, frequency):
+    ___ insert  word, frequency
         __ n.. word o. l..(word) < 1 \
                 o. n.. frequency:
             r..

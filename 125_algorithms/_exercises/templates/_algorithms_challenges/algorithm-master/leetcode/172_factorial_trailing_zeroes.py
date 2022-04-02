@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ trailingZeroes  n):
+    ___ trailingZeroes  n
         """
         :type n: int
         :rtype: int

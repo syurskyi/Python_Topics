@@ -29,7 +29,7 @@ c_ Solution:
           >
         >
     '''
-    ___ serialize  root):
+    ___ serialize  root
         __ n.. root:
             r.. ''
         data = ''
@@ -45,7 +45,7 @@ c_ Solution:
     designed by yourself, and deserialize it here as you serialize it in
     "serialize" method.
     '''
-    ___ deserialize  data):
+    ___ deserialize  data
         __ n.. data \
                 o. data[0] != '<' \
                 o. data[-1] != '>' \

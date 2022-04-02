@@ -5,7 +5,7 @@ c_ Solution:
     @param e: Symbol string.
     @return: Return true if the symbol string can be generated, otherwise return false.
     """
-    ___ canBeGenerated  S, start, end):
+    ___ canBeGenerated  S, start, end
         __ n.. start:
             start = ''
 
@@ -19,15 +19,15 @@ c_ Solution:
 
         r.. dfs(N, end, start)
 
-    ___ dfs  N, end, s):
-        __ l..(s) > l..(end):
+    ___ dfs  N, end, s
+        __ l..(s) > l..(end
             r.. F..
         __ s __ end:
             r.. T..
 
         ___ i __ r..(l..(s)):
             __ (n.. o..('A') <= o..(s[i]) <= o..('Z') o.
-                s[i] n.. __ N):
+                s[i] n.. __ N
                 _____
 
             ___ _s __ N[s[i]]:

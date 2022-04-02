@@ -22,7 +22,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         ret    # list
 
     ___ letterCasePermutation  S: s..) __ List[s..]:
@@ -37,8 +37,8 @@ c_ Solution:
             ___ e __ ret
         ]
 
-    ___ dfs  lst, S_lst, i):
-        __ l..(lst) __ l..(S_lst):
+    ___ dfs  lst, S_lst, i
+        __ l..(lst) __ l..(S_lst
             ret.a..(l..(lst))
             r..
 
@@ -56,4 +56,4 @@ c_ Solution:
 
 
 __ _______ __ _______
-    ... Solution().letterCasePermutation("a1b2") __ ['a1b2', 'a1B2', 'A1b2', 'A1B2']
+    ... Solution().letterCasePermutation("a1b2") __  'a1b2', 'a1B2', 'A1b2', 'A1B2' 

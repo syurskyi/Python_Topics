@@ -9,7 +9,7 @@ _______ heapq
 
 
 c_ Solution:
-    ___ thirdMax  nums):
+    ___ thirdMax  nums
         """
         It is an easy question but error prone:
           1. Choice of min heap or max heap: use min heap (not max heap) because
@@ -22,7 +22,7 @@ c_ Solution:
             r.. N..
 
         h    # list
-        ___ e __ s..(nums):
+        ___ e __ s..(nums
             __ l..(h) < 3:
                 heapq.heappush(h, e)
             ____ l..(h) __ 3 a.. e > h[0]:

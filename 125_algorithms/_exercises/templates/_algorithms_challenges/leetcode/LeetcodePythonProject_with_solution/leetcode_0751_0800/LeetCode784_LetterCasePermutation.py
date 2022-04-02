@@ -3,8 +3,8 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ letterCasePermutation  S):
+c_ Solution(o..
+    ___ letterCasePermutation  S
         """
         :type S: str
         :rtype: List[str]
@@ -14,8 +14,8 @@ c_ Solution(o..):
         helper(s, 0, '', res)
         r.. l..(res)
     
-    ___ helper  s, i, curr, res):
-        __ i __ l..(s):
+    ___ helper  s, i, curr, res
+        __ i __ l..(s
             res.add(curr)
             r..
         __ s[i].i..

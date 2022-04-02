@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ titleToNumber  s):
+    ___ titleToNumber  s
         """
         :type s: str
         :rtype: int

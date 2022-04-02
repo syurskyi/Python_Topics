@@ -3,8 +3,8 @@ Created on Oct 9, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ new21Game  N, K, W):
+c_ Solution(o..
+    ___ new21Game  N, K, W
         """
         :type N: int
         :type K: int
@@ -15,7 +15,7 @@ c_ Solution(o..):
         __ k __ 0 o. n >= k+w: r.. 1
         dp = [1.0]+[0.0]*n
         wSum = 1.0
-        ___ i __ r..(1, n+1):
+        ___ i __ r..(1, n+1
             dp[i] = wSum/w
             __ i < k: wSum += dp[i]
             __ i - w >= 0: wSum -= dp[i-w]

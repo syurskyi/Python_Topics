@@ -3,8 +3,8 @@ Created on Apr 5, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ slidingPuzzle  board):
+c_ Solution(o..
+    ___ slidingPuzzle  board
         """
         :type board: List[List[int]]
         :rtype: int
@@ -16,7 +16,7 @@ c_ Solution(o..):
         res = 0
         w.... queue:
             size = l..(queue)
-            ___ _ __ r..(size):
+            ___ _ __ r..(size
                 s = queue.pop(0)
                 __ s __ target:
                     r.. res
@@ -24,7 +24,7 @@ c_ Solution(o..):
                 ___ j __ [i+1, i-1, i+3, i-3]:
                     __ j < 0 o. j > 5 o.\
                         (i __ 2 a.. j __ 3) o.\
-                        (i __ 3 a.. j __ 2):
+                        (i __ 3 a.. j __ 2
                         _____
                     arr = l..(s)
                     arr[i], arr[j] = arr[j], arr[i]
@@ -35,9 +35,9 @@ c_ Solution(o..):
             res += 1
         r.. -1
     
-    ___ getZero  board):
-        ___ i __ r..(2):
-            ___ j __ r..(3):
+    ___ getZero  board
+        ___ i __ r..(2
+            ___ j __ r..(3
                 __ board[i][j] __ 0:
                     r.. i, j
     

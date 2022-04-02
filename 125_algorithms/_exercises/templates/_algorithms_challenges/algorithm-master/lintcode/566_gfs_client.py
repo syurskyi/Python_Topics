@@ -8,11 +8,11 @@ class BaseGFSClient:
 '''
 
 
-c_ GFSClient(BaseGFSClient):
+c_ GFSClient(BaseGFSClient
     """
     @param: chunkSize: An integer
     """
-    ___ - , chunkSize):
+    ___ - , chunkSize
         BaseGFSClient.- )
         chunk_size = chunkSize
         chunk_num    # dict
@@ -21,7 +21,7 @@ c_ GFSClient(BaseGFSClient):
     @param: filename: a file name
     @return: conetent of the file given from GFS
     """
-    ___ read  filename):
+    ___ read  filename
         __ filename n.. __ chunk_num:
             r..
         i, content = 0, ''
@@ -35,7 +35,7 @@ c_ GFSClient(BaseGFSClient):
     @param: content: a string
     @return: nothing
     """
-    ___ write  filename, content):
+    ___ write  filename, content
         i, j, n = 0, 0, l..(content)
         w.... j < n:
             writeChunk(filename, i, content[j : j + chunk_size])

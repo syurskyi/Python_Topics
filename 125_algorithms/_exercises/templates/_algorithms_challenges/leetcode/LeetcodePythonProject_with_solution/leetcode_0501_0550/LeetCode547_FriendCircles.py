@@ -4,8 +4,8 @@ Created on Aug 20, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findCircleNum  M):
+c_ Solution(o..
+    ___ findCircleNum  M
         """
         :type M: List[List[int]]
         :rtype: int
@@ -14,8 +14,8 @@ c_ Solution(o..):
         n = l..(matrix)
         roots = [-1]*n
         count = n
-        ___ i __ r..(n):
-            ___ j __ r..(n):
+        ___ i __ r..(n
+            ___ j __ r..(n
                 __ i > j a.. matrix[i][j] __ 1:
                     root1 = getRoot(roots, i)
                     root2 = getRoot(roots, j)
@@ -24,7 +24,7 @@ c_ Solution(o..):
                         roots[root1] = root2
         r.. count
     
-    ___ getRoot  roots, num):
+    ___ getRoot  roots, num
         w.... roots[num] != -1:
             num = roots[num]
         r.. num

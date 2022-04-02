@@ -3,7 +3,7 @@ _______ unittest
 ____ say _______ say
 
 
-c_ SayTest(unittest.TestCase):
+c_ SayTest(unittest.TestCase
 
     ___ test_one
         assertEqual("one", say(1))
@@ -49,11 +49,11 @@ c_ SayTest(unittest.TestCase):
         assertEqual("one billion", say(1e9))
 
     ___ test_number_to_large
-        w__ assertRaises(AttributeError):
+        w__ assertRaises(AttributeError
             say(1e12)
 
     ___ test_number_negative
-        w__ assertRaises(AttributeError):
+        w__ assertRaises(AttributeError
             say(-42)
 
     ___ test_zero

@@ -1,6 +1,6 @@
 _______ __
 
-___ get_sentences(text):
+___ get_sentences(text
 
 
     """Return a list of sentences as extracted from the text passed in.

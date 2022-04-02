@@ -5,14 +5,14 @@ Created on Feb 1, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ levelOrderBottom  root):
+c_ Solution(o..
+    ___ levelOrderBottom  root
         """
         :type root: TreeNode
         :rtype: List[List[int]]

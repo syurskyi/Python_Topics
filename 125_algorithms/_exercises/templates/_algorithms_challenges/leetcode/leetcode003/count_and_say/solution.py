@@ -11,14 +11,14 @@ Note: The sequence of integers will be represented as a string.
 """
 
 
-c_ Solution(o..):
-    ___ countAndSay  n):
+c_ Solution(o..
+    ___ countAndSay  n
         """
         :type n: int
         :rtype: str
         """
         ln = l..(s..(1))
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             tn    # list
             count = 1
             prev = N..

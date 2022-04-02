@@ -12,7 +12,7 @@ for name in os.listdir(DIR):
         print('Directory ', name) """
 
 filecount, dircount = 0, 0
-___ root, dirs, files __ os.walk(DIR):
+___ root, dirs, files __ os.walk(DIR
     ___ name __ files:
         filecount += 1
         print(os.path.j..(DIR, name))

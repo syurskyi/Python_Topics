@@ -73,7 +73,7 @@ c_ Solution:
             counter[n] += 1
 
         F = [0 ___ _ __ r..(10000 + 3)]
-        ___ i __ r..(3, 10000 + 3):
+        ___ i __ r..(3, 10000 + 3
             cur = i - 2
             F[i] = m..(
                 F[i-1],
@@ -93,7 +93,7 @@ c_ Solution:
         counter    # list
         i = 0
         j = 0
-        w.... i < l..(nums):
+        w.... i < l..(nums
             w.... j < l..(nums) a.. nums[i] __ nums[j]:
                 j += 1
             counter.a..((nums[i], j - i))

@@ -2,7 +2,7 @@ IGNORE_CHAR = 'b'
 QUIT_CHAR = 'q'
 MAX_NAMES = 5
 
-___ filter_names(names):
+___ filter_names(names
     names_list    # list
     names_list_number = 0
     ___ name __ names:

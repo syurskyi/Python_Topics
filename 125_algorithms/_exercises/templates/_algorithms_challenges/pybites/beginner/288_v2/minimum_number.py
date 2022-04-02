@@ -11,7 +11,7 @@ ___ minimum_number(d..: List[i..]) __ i..:
     unique = s..(unique)
 
 
-    r.. i..(''.j..(map(s..,unique)))
+    r.. i..(''.j.. m..(s..,unique)))
 
 
 

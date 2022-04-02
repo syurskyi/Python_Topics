@@ -27,12 +27,12 @@ The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         cache = N..
         dirs = ((-1, 0), (1, 0), (0, -1), (0, 1),)
 
-    ___ longestIncreasingPath  matrix):
+    ___ longestIncreasingPath  matrix
         """
         dfs + cache
         :type matrix: List[List[int]]
@@ -43,13 +43,13 @@ c_ Solution(o..):
         m, n = l..(matrix), l..(matrix[0])
         cache = [[N.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         gmax = 1
-        ___ i __ x..(m):
-            ___ j __ x..(n):
+        ___ i __ x..(m
+            ___ j __ x..(n
                 gmax = m..(gmax, longest(matrix, i, j))
 
         r.. gmax
 
-    ___ longest  matrix, i, j):
+    ___ longest  matrix, i, j
         """
         Strictly increasing, thus no need to have a visited matrix
         """

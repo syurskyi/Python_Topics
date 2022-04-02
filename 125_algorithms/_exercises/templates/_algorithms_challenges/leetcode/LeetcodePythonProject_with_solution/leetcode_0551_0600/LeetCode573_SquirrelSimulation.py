@@ -3,9 +3,9 @@ Created on Sep 3, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
+c_ Solution(o..
     # Don't need extra space if using maxDiff
-    ___ minDistance  height, width, tree, squirrel, nuts):
+    ___ minDistance  height, width, tree, squirrel, nuts
         """
         :type height: int
         :type width: int
@@ -21,7 +21,7 @@ c_ Solution(o..):
             maxDiff = m..(maxDiff, dist-abs(squirrel[0]-nut[0])-abs(squirrel[1]-nut[1]))
         r.. sumVal-maxDiff
     
-    ___ minDistance_space  height, width, tree, squirrel, nuts):
+    ___ minDistance_space  height, width, tree, squirrel, nuts
         """
         :type height: int
         :type width: int
@@ -34,12 +34,12 @@ c_ Solution(o..):
         nutToTree = [0]*n
         nutToSquirrel = [0]*n
         sumVal = 0
-        ___ i __ r..(n):
+        ___ i __ r..(n
             nutToTree[i] = abs(nuts[i][0]-tree[0])+abs(nuts[i][1]-tree[1])
             sumVal += nutToTree[i]*2
             nutToSquirrel[i] = abs(nuts[i][0]-squirrel[0])+abs(nuts[i][1]-squirrel[1])
         minVal = f__('inf')
-        ___ i __ r..(n):
+        ___ i __ r..(n
             dist = sumVal + nutToSquirrel[i]-nutToTree[i]
             minVal = m..(minVal, dist)
         r.. minVal

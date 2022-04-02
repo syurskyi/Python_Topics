@@ -10,7 +10,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ findAnagrams  s, target):
+    ___ findAnagrams  s, target
         """
         Brute force: O(|target|) * O(cmp) * O(|s|)
         Counter: O(cmp) * O(|s|)

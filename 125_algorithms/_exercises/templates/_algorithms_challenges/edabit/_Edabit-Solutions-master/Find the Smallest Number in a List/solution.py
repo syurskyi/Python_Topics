@@ -1,2 +1,2 @@
-___ find_smallest_num(lst):
+___ find_smallest_num(lst
     r.. m..(lst)

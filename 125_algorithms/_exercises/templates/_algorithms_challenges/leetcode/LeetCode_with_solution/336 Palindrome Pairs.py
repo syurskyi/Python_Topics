@@ -20,7 +20,7 @@ ____ c.. _______ defaultdict
 
 
 c_ TrieNode:
-    ___ - ):
+    ___ -
         pali_prefix_idxes    # list  # suffix ends, prefix pali
         word_idx = N..
         children = defaultdict(TrieNode)
@@ -52,11 +52,11 @@ c_ Solution:
         Construct Trie for word_j reversely, since word_j is being checked
         """
         root = TrieNode()
-        ___ idx, w __ e..(words):
+        ___ idx, w __ e..(words
             cur = root
-            ___ i __ r..(l..(w) - 1, -1, -1):
+            ___ i __ r..(l..(w) - 1, -1, -1
                 #  cur.children[w[i]]  # error, pre-advancing the trie is unable to handle empty str
-                __ is_palindrome(w, 0, i + 1):
+                __ is_palindrome(w, 0, i + 1
                     cur.pali_prefix_idxes.a..(idx)
 
                 cur = cur.children[w[i]]
@@ -65,7 +65,7 @@ c_ Solution:
             cur.word_idx = idx  # word ends
 
         ret    # list
-        ___ idx, w __ e..(words):
+        ___ idx, w __ e..(words
             cur = root
             ___ i __ r..(l..(w)):
                 # cur.children.get(w[i], None)  # error, pre-advancing the trie is unable to handle empty str
@@ -82,7 +82,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ is_palindrome  w, lo, hi):
+    ___ is_palindrome  w, lo, hi
         i = lo
         j = hi - 1
         w.... i < j:

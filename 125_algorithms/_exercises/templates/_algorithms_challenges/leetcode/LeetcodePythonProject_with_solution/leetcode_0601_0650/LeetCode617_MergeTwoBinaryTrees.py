@@ -4,14 +4,14 @@ Created on Sep 7, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ mergeTrees  t1, t2):
+c_ Solution(o..
+    ___ mergeTrees  t1, t2
         """
         :type t1: TreeNode
         :type t2: TreeNode

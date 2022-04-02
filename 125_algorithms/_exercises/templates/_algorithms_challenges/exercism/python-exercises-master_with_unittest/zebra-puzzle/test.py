@@ -3,7 +3,7 @@ _______ unittest
 ____ zebra_puzzle _______ solution
 
 
-c_ ZebraPuzzleTest(unittest.TestCase):
+c_ ZebraPuzzleTest(unittest.TestCase
     ___ test_solution
         assertEqual(solution(),
                          ("It is the Norwegian who drinks the water.\n"

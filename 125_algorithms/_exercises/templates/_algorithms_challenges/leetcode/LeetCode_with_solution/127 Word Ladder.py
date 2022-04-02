@@ -22,16 +22,16 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ is_neighbor  p, q):
+    ___ is_neighbor  p, q
         diff = 0
-        ___ a, b __ z..(p, q):
+        ___ a, b __ z..(p, q
             __ a != b:
                 diff += 1
             __ diff > 1:
                 r.. F..
         r.. T..
 
-    ___ ladderLength  start, end, dct):
+    ___ ladderLength  start, end, dct
         """
         bfs
         """
@@ -44,7 +44,7 @@ c_ Solution:
                 __ a __ end:
                     r.. lvl
                 ___ b __ dct:
-                    __ b n.. __ visited a.. is_neighbor(a, b):
+                    __ b n.. __ visited a.. is_neighbor(a, b
                         visited.add(b)
                         cur_q.a..(b)
 
@@ -53,7 +53,7 @@ c_ Solution:
 
         r.. 0
 
-    ___ ladderLength_TLE  start, end, d..):
+    ___ ladderLength_TLE  start, end, d..
         """
         bfs
         :param start: a string
@@ -64,7 +64,7 @@ c_ Solution:
         lst = [start]+l..(d..)
         dp = [[-1 ___ _ __ lst] ___ _ __ lst]
 
-        ___ diff_count(s1, s2):
+        ___ diff_count(s1, s2
             """
             s1 s2 are same length
             :param s1:
@@ -94,7 +94,7 @@ c_ Solution:
         w.... queue:
             path_len += 1
             length = l..(queue)
-            ___ i __ x..(length):  #O(V)
+            ___ i __ x..(length  #O(V)
                 __ lst[queue[i]]__end:  # reached
                     r.. path_len
                 ___ ind __ x..(1, l..(lst)):  # O(k), add next level
@@ -104,7 +104,7 @@ c_ Solution:
             queue = queue[length:]
         r.. path_len
 
-    ___ ladderLength_TLE2  start, end, d..):
+    ___ ladderLength_TLE2  start, end, d..
         """
         bfs
         :param start: a string
@@ -112,7 +112,7 @@ c_ Solution:
         :param dict: a set
         :return: integer
         """
-        ___ diff_count(str1, str2):
+        ___ diff_count(str1, str2
             """
             s1 s2 are same length
             :param s1:
@@ -133,7 +133,7 @@ c_ Solution:
         w.... queue:
             path_len += 1
             length = l..(queue)
-            ___ i __ x..(length):  #O(V)
+            ___ i __ x..(length  #O(V)
                 __ queue[i]__end:  # reached
                     r.. path_len
 
@@ -148,7 +148,7 @@ c_ Solution:
         r.. path_len
 
 
-    ___ ladderLength_complex  start, end, d..):
+    ___ ladderLength_complex  start, end, d..
         """
         bfs
 
@@ -170,7 +170,7 @@ c_ Solution:
         w... T...
             path_len += 1
             length_0 = l..(queue)
-            ___ i __ x..(length_0):  #O(V)
+            ___ i __ x..(length_0  #O(V)
                 current = queue[i]
                 __ current__end:  # reached
                     r.. path_len

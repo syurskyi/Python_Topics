@@ -4,8 +4,8 @@ Created on Mar 2, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isUgly_noRec  num):
+c_ Solution(o..
+    ___ isUgly_noRec  num
         """
         :type num: int
         :rtype: bool
@@ -22,7 +22,7 @@ c_ Solution(o..):
                 _____
         r.. num __ 1
     
-    ___ isUgly  num):
+    ___ isUgly  num
         """
         :type num: int
         :rtype: bool

@@ -7,7 +7,7 @@ _______ urllib.request
 # prep
 
 tempfile = os.path.j..('/tmp', 'dirnames')
-__ n.. os.path.isfile(tempfile):
+__ n.. os.path.isfile(tempfile
     urllib.request.urlretrieve('http://bit.ly/2ABUTjv', tempfile)
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
@@ -33,8 +33,8 @@ ___ gen_files
 
        -> use last column to filter out directories (= True)
     """
-    w__ open(tempfile,'rt') __ f:
-        ___ row __ f.read().splitlines
+    w__ o.. tempfile,'rt') __ f:
+        ___ row __ f.r...s..
             fields = row.s..(',')
             __ fields[1] __ 'False':
                 _____

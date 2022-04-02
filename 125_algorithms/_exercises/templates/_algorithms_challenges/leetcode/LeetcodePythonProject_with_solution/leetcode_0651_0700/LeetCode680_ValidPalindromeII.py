@@ -3,8 +3,8 @@ Created on Oct 19, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ validPalindrome  s):
+c_ Solution(o..
+    ___ validPalindrome  s
         """
         :type s: str
         :rtype: bool

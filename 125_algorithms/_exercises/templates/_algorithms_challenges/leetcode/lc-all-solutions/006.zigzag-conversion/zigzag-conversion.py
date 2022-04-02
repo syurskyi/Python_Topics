@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ convert  s, numRows):
+c_ Solution(o..
+  ___ convert  s, numRows
     """
     :type s: str
     :type numRows: int
@@ -10,7 +10,7 @@ c_ Solution(o..):
     n = l..(s)
     ans    # list
     step = 2 * numRows - 2
-    ___ i __ r..(numRows):
+    ___ i __ r..(numRows
       one = i
       two = -i
       w.... one < n o. two < n:

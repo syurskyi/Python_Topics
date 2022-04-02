@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findUnsortedSubarray  nums):
+c_ Solution(o..
+  ___ findUnsortedSubarray  nums
     """
     :type nums: List[int]
     :rtype: int
@@ -19,7 +19,7 @@ c_ Solution(o..):
       __ nums[i] < maxs[i - 1]:
         end = i
         _____
-    ___ i __ r..(l..(nums) - 1):
+    ___ i __ r..(l..(nums) - 1
       __ nums[i] > mins[i + 1]:
         start = i
         _____

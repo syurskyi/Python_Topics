@@ -3,8 +3,8 @@ Created on Nov 15, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ compress  chars):
+c_ Solution(o..
+    ___ compress  chars
         """
         :type chars: List[str]
         :rtype: int

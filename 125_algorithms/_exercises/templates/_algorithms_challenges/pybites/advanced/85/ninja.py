@@ -5,11 +5,11 @@ BELTS = d..(z..(scores, ranks))
 
 c_ NinjaBelt:
 
-    ___ - , score=0):
+    ___ - , score=0
         _score = score
         _last_earned_belt = N..
 
-    ___ _get_belt  new_score):
+    ___ _get_belt  new_score
         """Might be a useful helper"""
         p..
     
@@ -18,9 +18,9 @@ c_ NinjaBelt:
     ___ _get_score
         r.. _score
 
-    ___ _set_score  new_score):
+    ___ _set_score  new_score
 
-        __ n.. isi..(new_score,i..):
+        __ n.. isi..(new_score,i..
             r.. ValueError("Score takes an int")
         __ new_score < score:
             r.. ValueError("Cannot lower score")

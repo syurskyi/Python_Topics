@@ -2,7 +2,7 @@
 Binary Searching
 """
 c_ Solution:
-    ___ longestIncreasingSubsequence  A):
+    ___ longestIncreasingSubsequence  A
         """
         :type A: List[int]
         :rtype: int
@@ -26,17 +26,17 @@ c_ Solution:
         n = l..(A)
         P = [-INFINITY] + [INFINITY] * n
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             j = binary_search(P, A[i])
             P[j] = A[i]
 
-        ___ i __ r..(n, -1, -1):
+        ___ i __ r..(n, -1, -1
             __ P[i] < INFINITY:
                 r.. i
 
         r.. 0
 
-    ___ binary_search  P, a):
+    ___ binary_search  P, a
         left, right = 0, l..(P) - 1
 
         w.... left + 1 < right:
@@ -53,7 +53,7 @@ c_ Solution:
 DP + Print Paths
 """
 c_ Solution:
-    ___ longestIncreasingSubsequence  A):
+    ___ longestIncreasingSubsequence  A
         """
         :type A: List[int]
         :rtype: int
@@ -72,8 +72,8 @@ c_ Solution:
         # pi = [0] * n
         # end_at = -1
 
-        ___ i __ r..(n):
-            ___ j __ r..(i):
+        ___ i __ r..(n
+            ___ j __ r..(i
                 """
                 `dp[j]` the existing subseq end at `j`
                 `+ 1` means included `A[i]`

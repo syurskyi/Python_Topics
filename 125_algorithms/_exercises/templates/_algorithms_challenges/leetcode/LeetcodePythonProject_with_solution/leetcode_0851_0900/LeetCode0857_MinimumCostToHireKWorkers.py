@@ -3,8 +3,8 @@ Created on Sep 16, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ mincostToHireWorkers  quality, wage, K):
+c_ Solution(o..
+    ___ mincostToHireWorkers  quality, wage, K
         """
         :type quality: List[int]
         :type wage: List[int]

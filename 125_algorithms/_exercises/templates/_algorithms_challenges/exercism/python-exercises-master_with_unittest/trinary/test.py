@@ -3,7 +3,7 @@ _______ unittest
 ____ trinary _______ trinary
 
 
-c_ TrinaryTest(unittest.TestCase):
+c_ TrinaryTest(unittest.TestCase
     ___ test_valid_trinary1
         assertEqual(trinary('0'), 0)
 

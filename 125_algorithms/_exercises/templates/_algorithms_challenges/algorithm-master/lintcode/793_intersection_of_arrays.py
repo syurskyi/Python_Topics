@@ -3,7 +3,7 @@ c_ Solution:
     @param A: the arrays
     @return: the number of the intersection of the arrays
     """
-    ___ intersectionOfArrays  A):
+    ___ intersectionOfArrays  A
         ans = 0
         __ n.. A:
             r.. ans
@@ -11,7 +11,7 @@ c_ Solution:
         n = l..(A)
         C    # dict
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ n.. A[i]:
                 r.. ans
 

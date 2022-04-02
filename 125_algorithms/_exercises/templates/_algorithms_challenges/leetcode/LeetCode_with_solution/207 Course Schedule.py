@@ -23,7 +23,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ canFinish  numCourses, prerequisites):
+    ___ canFinish  numCourses, prerequisites
         """
         Determine whether the graph is cyclic
         Marked twice -> cycle
@@ -38,21 +38,21 @@ c_ Solution:
 
         visited = [F.. ___ _ __ x..(numCourses)]  # visited and fine (cleared)
         marked = [F.. ___ _ __ x..(numCourses)]  # marked during one dfs
-        ___ i __ x..(numCourses):
+        ___ i __ x..(numCourses
             __ n.. visited[i]:
-                __ dfs_have_cycle(V, i, visited, marked):
+                __ dfs_have_cycle(V, i, visited, marked
                     r.. F..
 
         r.. T..
 
-    ___ dfs_have_cycle  V, i, visited, marked):
+    ___ dfs_have_cycle  V, i, visited, marked
         __ marked[i]:
             r.. T..
 
         marked[i] = T..
 
         ___ neighbor __ V[i]:
-            __ n.. visited[neighbor] a.. dfs_have_cycle(V, neighbor, visited, marked):
+            __ n.. visited[neighbor] a.. dfs_have_cycle(V, neighbor, visited, marked
                 r.. T..
 
         # clean up

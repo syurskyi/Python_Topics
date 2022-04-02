@@ -4,8 +4,8 @@ Created on Mar 23, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isReflected  points):
+c_ Solution(o..
+    ___ isReflected  points
         minVal, maxVal = f__('inf'), f__('-inf')
         hashmap    # dict
         ___ point __ points:

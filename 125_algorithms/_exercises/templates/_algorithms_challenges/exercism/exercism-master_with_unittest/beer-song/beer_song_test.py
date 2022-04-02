@@ -3,7 +3,7 @@ _______ unittest
 ____ beer _______ song, verse
 
 
-c_ BeerTest(unittest.TestCase):
+c_ BeerTest(unittest.TestCase
     ___ test_a_verse
         assertEqual(
             verse(8),

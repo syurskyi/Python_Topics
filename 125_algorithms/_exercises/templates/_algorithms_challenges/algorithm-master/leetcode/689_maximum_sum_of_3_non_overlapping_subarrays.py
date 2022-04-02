@@ -4,7 +4,7 @@ REF: https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/di
 
 
 c_ Solution:
-    ___ maxSumOfThreeSubarrays  A, k):
+    ___ maxSumOfThreeSubarrays  A, k
         """
         :type A: List[int]
         :type k: int
@@ -19,12 +19,12 @@ c_ Solution:
         L = [0] * n  # the starting index of the maximum interval sum with length k in [0, i]
         R = [n - k] * n  # the starting index of the maximum interval sum with length k in [i, n - 1]
 
-        ___ i __ r..(1, n + 1):
+        ___ i __ r..(1, n + 1
             S[i] = S[i - 1] + A[i - 1]
 
         max_sum = S[k] - S[0]  # maximum interval sum
         _sum = 0
-        ___ i __ r..(k, n):
+        ___ i __ r..(k, n
             L[i] = L[i - 1]
             _sum = S[i + 1] - S[i + 1 - k]
             __ _sum > max_sum:
@@ -33,7 +33,7 @@ c_ Solution:
 
         max_sum = S[n] - S[n - k]
         _sum = 0
-        ___ i __ r..(n - k - 1, -1, -1):
+        ___ i __ r..(n - k - 1, -1, -1
             R[i] = R[i + 1]
             _sum = S[i + k] - S[i]
             __ _sum >= max_sum:
@@ -41,7 +41,7 @@ c_ Solution:
                 max_sum = _sum
 
         max_sum = _sum = 0
-        ___ i __ r..(k, n - 2 * k + 1):
+        ___ i __ r..(k, n - 2 * k + 1
             left = L[i - 1]
             right = R[i + k]
             _sum = S[i + k] - S[i] + S[left + k] - S[left] + S[right + k] - S[right]

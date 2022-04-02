@@ -1,10 +1,10 @@
-___ private_key(p):
+___ private_key(p
     p..
 
 
-___ public_key(p, g, private):
+___ public_key(p, g, private
     p..
 
 
-___ secret(p, public, private):
+___ secret(p, public, private
     p..

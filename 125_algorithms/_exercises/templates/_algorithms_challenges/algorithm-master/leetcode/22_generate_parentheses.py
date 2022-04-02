@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ generateParenthesis  n):
+    ___ generateParenthesis  n
         """
         :type n: int
         :rtype: list[str]
@@ -8,10 +8,10 @@ c_ Solution:
         __ n.. n:
             r.. ans
 
-        dfs(n, 1, 0, ans, ['('])
+        dfs(n, 1, 0, ans,  '(' )
         r.. ans
 
-    ___ dfs  n, lcnt, rcnt, ans, path):
+    ___ dfs  n, lcnt, rcnt, ans, path
         __ l..(path) __ 2 * n:
             ans.a..(''.j..(path))
             r..

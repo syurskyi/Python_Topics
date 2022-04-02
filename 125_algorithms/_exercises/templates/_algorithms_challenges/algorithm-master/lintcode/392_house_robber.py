@@ -7,7 +7,7 @@ c_ Solution:
     @param: A: An array of non-negative integers
     @return: The maximum amount of money you can rob tonight
     """
-    ___ houseRobber  A):
+    ___ houseRobber  A
         __ n.. A:
             r.. 0
 
@@ -16,7 +16,7 @@ c_ Solution:
         dp = [[0] * 2 ___ _ __ r..(2)]
         dp[0][1] = A[0]
 
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             prev = curr # (i - 1) % 2
             curr = i % 2
 
@@ -31,7 +31,7 @@ c_ Solution:
     @param: A: An array of non-negative integers
     @return: The maximum amount of money you can rob tonight
     """
-    ___ houseRobber  A):
+    ___ houseRobber  A
         __ n.. A:
             r.. 0
         __ l..(A) __ 1:
@@ -46,7 +46,7 @@ c_ Solution:
         dp[1] = m..(A[0], A[1])
 
         prev2, prev1, curr = 0, 0, 1
-        ___ i __ r..(2, n):
+        ___ i __ r..(2, n
             prev2, prev1 = prev1, curr
             curr = i % 3
 
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ houseRobber  A):
+    ___ houseRobber  A
         """
         :type A: List[int]
         :rtype: int
@@ -75,7 +75,7 @@ c_ Solution:
         dp = [0] * (n + 1)
         dp[1] = A[0]
 
-        ___ i __ r..(2, n + 1):
+        ___ i __ r..(2, n + 1
             dp[i] = m..(
                 dp[i - 2] + A[i - 1],
                 dp[i - 1]

@@ -4,14 +4,14 @@ Created on Feb 9, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ preorderTraversal  root):
+c_ Solution(o..
+    ___ preorderTraversal  root
         """
         :type root: TreeNode
         :rtype: List[int]

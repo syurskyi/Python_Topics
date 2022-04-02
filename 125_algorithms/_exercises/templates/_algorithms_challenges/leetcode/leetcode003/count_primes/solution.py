@@ -12,19 +12,19 @@ prime numbers up to n would be O(n2). Could we do better?
 
 """
 
-c_ Solution(o..):
-    ___ countPrimes  n):
+c_ Solution(o..
+    ___ countPrimes  n
         """
         :type n: int
         :rtype: int
         """
         res = 0
-        ___ i __ r..(2, n):
-            __ is_prime(i):
+        ___ i __ r..(2, n
+            __ is_prime(i
                 res += 1
         r.. res
 
-    ___ is_prime  k):
+    ___ is_prime  k
         i = 2
         w.... i * i <= k:
             __ k % i __ 0:

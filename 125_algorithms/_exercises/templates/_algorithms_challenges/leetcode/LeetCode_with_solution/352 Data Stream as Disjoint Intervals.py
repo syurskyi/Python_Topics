@@ -16,21 +16,21 @@ __author__ = 'Daniel'
 
 
 # Definition for an interval.
-c_ Interval(o..):
-    ___ - , s=0, e=0):
+c_ Interval(o..
+    ___ - , s=0, e=0
         start = s
         end = e
 
 
-c_ SummaryRanges(o..):
-    ___ - ):
+c_ SummaryRanges(o..
+    ___ -
         """
         BST is the most efficient, while heap is simple to write
         Initialize your data structure here.
         """
         itvls    # list
 
-    ___ addNum  val):
+    ___ addNum  val
         """
         O(lg n)
         :type val: int

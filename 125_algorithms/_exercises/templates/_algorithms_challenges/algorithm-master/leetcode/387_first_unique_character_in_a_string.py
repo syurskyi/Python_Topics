@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ firstUniqChar  s):
+    ___ firstUniqChar  s
         """
         :type s: str
         :rtype: int

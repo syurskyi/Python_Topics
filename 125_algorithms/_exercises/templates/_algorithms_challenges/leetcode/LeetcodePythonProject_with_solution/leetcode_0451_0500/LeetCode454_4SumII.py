@@ -3,8 +3,8 @@ Created on Jan 31, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ fourSumCount  A, B, C, D):
+c_ Solution(o..
+    ___ fourSumCount  A, B, C, D
         """
         :type A: List[int]
         :type B: List[int]

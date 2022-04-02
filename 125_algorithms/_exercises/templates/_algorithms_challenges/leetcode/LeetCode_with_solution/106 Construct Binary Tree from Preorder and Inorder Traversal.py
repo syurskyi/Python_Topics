@@ -8,14 +8,14 @@ __author__ = 'Danyang'
 
 
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ buildTree_MLE  preorder, inorder):
+    ___ buildTree_MLE  preorder, inorder
         """
         Recursive algorithm. Pre-order, in-order, post-order traversal relationship
 
@@ -39,7 +39,7 @@ c_ Solution:
 
         r.. root
         
-    ___ buildTree  preorder, inorder):
+    ___ buildTree  preorder, inorder
         """
         Same idea as the last one, just use integer instead of list
         
@@ -51,7 +51,7 @@ c_ Solution:
         inorder = inorder
         r.. _buildTree(0, l..(preorder), 0, l..(inorder))
 
-    ___ _buildTree  pre_start, pre_end, in_start, in_end):
+    ___ _buildTree  pre_start, pre_end, in_start, in_end
         __ pre_start >= pre_end:
             r.. N..
         root = TreeNode(preorder[pre_start])

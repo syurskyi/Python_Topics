@@ -6,15 +6,15 @@ _______ sys
 __author__ = 'Daniel'
 
 
-c_ TreeNode(o..):
-    ___ - , x):
+c_ TreeNode(o..
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
-c_ Solution(o..):
-    ___ closestValue  root, target):
+c_ Solution(o..
+    ___ closestValue  root, target
         """
         Divide the problem into 2 parts:
         1. find the value just smaller than target
@@ -32,7 +32,7 @@ c_ Solution(o..):
         ____:
             r.. i..(lo[0])
 
-    ___ find  root, target, ret, lower=T..):
+    ___ find  root, target, ret, lower=T..
         __ n.. root:
             r..
 

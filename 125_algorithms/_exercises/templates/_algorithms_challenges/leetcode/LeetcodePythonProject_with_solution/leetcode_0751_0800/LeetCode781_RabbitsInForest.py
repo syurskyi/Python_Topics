@@ -3,8 +3,8 @@ Created on Apr 9, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ numRabbits  answers):
+c_ Solution(o..
+    ___ numRabbits  answers
         """
         :type answers: List[int]
         :rtype: int

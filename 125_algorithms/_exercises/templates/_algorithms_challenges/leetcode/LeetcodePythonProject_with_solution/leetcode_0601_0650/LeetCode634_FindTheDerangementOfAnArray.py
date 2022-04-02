@@ -3,8 +3,8 @@ Created on Sep 24, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findDerangement  n):
+c_ Solution(o..
+    ___ findDerangement  n
         """
         :type n: int
         :rtype: int
@@ -12,7 +12,7 @@ c_ Solution(o..):
         dn1, dn2 = 1, 0
         __ n <= 1: r.. 0
         res = 1
-        ___ i __ r..(3, n+1):
+        ___ i __ r..(3, n+1
             res = ((i-1)*(dn1+dn2))%(10**9+7)
             dn2 = dn1
             dn1 = res

@@ -21,7 +21,7 @@ ____ typing _______ List
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -39,7 +39,7 @@ c_ Solution:
         q = [root]
         w.... q:
             n = l..(q)
-            avg = s..(map(l.... node: node.val, q)) / n
+            avg = s.. m..(l.... node: node.val, q)) / n
             ret.a..(avg)
             cur_q    # list
             ___ node __ q:

@@ -49,8 +49,8 @@ ____ typing _______ List
 c_ Solution:
     ___ isToeplitzMatrix  matrix: List[List[i..]]) __ b..:
         m, n = l..(matrix), l..(matrix[0])
-        ___ i __ r..(1, m):
-            ___ j __ r..(1, n):
+        ___ i __ r..(1, m
+            ___ j __ r..(1, n
                 __ matrix[i][j] != matrix[i-1][j-1]:
                     r.. F..
 
@@ -63,7 +63,7 @@ c_ Solution:
         need a good way to go through the matrix
         """
         m, n = l..(matrix), l..(matrix[0])
-        ___ j __ r..(n):
+        ___ j __ r..(n
             r = 0
             c = j
             cur = matrix[r][c]
@@ -73,7 +73,7 @@ c_ Solution:
                 r += 1
                 c += 1
 
-        ___ i __ r..(1, m):
+        ___ i __ r..(1, m
             r = i
             c = 0
             cur = matrix[r][c]

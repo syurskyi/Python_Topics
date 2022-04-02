@@ -7,7 +7,7 @@ c_ Solution:
     @param: A: An array of Integer
     @return: an integer
     """
-    ___ longestIncreasingContinuousSubsequence  A):
+    ___ longestIncreasingContinuousSubsequence  A
         __ n.. A:
             r.. 0
 
@@ -17,7 +17,7 @@ c_ Solution:
 
         r.. m..(size, _size)
 
-    ___ get_lics_size  A):
+    ___ get_lics_size  A
         ans = 0
         n = l..(A)
 
@@ -30,7 +30,7 @@ c_ Solution:
         # pi = [-1] * n
         # end_at = -1
 
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ i > 0 a.. A[i] > A[i - 1]:
                 dp[i] = dp[i - 1] + 1
                 # pi[i] = i - 1
@@ -55,7 +55,7 @@ c_ Solution:
     @param: A: An array of Integer
     @return: an integer
     """
-    ___ longestIncreasingContinuousSubsequence  A):
+    ___ longestIncreasingContinuousSubsequence  A
         __ n.. A:
             r.. 0
 
@@ -65,7 +65,7 @@ c_ Solution:
 
         r.. m..(size, _size)
 
-    ___ get_lics_size  A):
+    ___ get_lics_size  A
         ans = size = 1
 
         ___ i __ r..(1, l..(A)):

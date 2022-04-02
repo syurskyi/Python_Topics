@@ -78,7 +78,7 @@ c_ Solution:
             r.. 1
 
         cnt = 0
-        ___ i __ r..(1, N):
+        ___ i __ r..(1, N
             d = N // i
             r = N % i
             __ r __ 0 a.. d - i // 2 > 0:

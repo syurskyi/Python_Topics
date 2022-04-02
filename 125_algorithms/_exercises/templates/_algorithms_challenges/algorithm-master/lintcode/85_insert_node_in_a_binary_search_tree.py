@@ -14,7 +14,7 @@ c_ Solution:
     @param: node: insert this node into the binary search tree
     @return: The root of the new binary search tree.
     """
-    ___ insertNode  root, node):
+    ___ insertNode  root, node
         __ n.. root:
             r.. node
 
@@ -33,7 +33,7 @@ c_ Solution:
     @param: node: insert this node into the binary search tree
     @return: The root of the new binary search tree.
     """
-    ___ insertNode  root, node):
+    ___ insertNode  root, node
         __ n.. root:
             r.. node
 

@@ -4,7 +4,7 @@ ____ transpose _______ transpose
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ TransposeTests(unittest.TestCase):
+c_ TransposeTests(unittest.TestCase
     ___ test_empty_string
         input_line = ""
         expected = ""

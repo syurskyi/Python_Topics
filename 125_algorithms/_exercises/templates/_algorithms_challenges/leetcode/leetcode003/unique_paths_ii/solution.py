@@ -22,13 +22,13 @@ Note: m and n will be at most 100.
 c_ Solution:
     # @param obstacleGrid, a list of lists of integers
     # @return an integer
-    ___ uniquePathsWithObstacles  obstacleGrid):
+    ___ uniquePathsWithObstacles  obstacleGrid
         grid = obstacleGrid
         n = l..(grid)
         m = l..(grid[0])
         t = [[-1 ___ i __ r..(m)] ___ j __ r..(n)]
-        ___ i __ r..(n):
-            ___ j __ r..(m):
+        ___ i __ r..(n
+            ___ j __ r..(m
                 __ grid[i][j] __ 1:
                     t[i][j] = 0
                 ____:

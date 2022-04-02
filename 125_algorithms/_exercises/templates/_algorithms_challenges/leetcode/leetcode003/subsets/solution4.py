@@ -2,19 +2,19 @@
 c_ Solution:
     # @param S, a list of integer
     # @return a list of lists of integer
-    ___ subsets  S):
+    ___ subsets  S
         S.s..()
         k = l..(S)
         n = 2 ** k
         res    # list
-        ___ i __ r..(n):
+        ___ i __ r..(n
             s = filter(S, k, i)
             res.a..(s)
         r.. res
 
-    ___ filter  S, k, i):
+    ___ filter  S, k, i
         res    # list
-        ___ j __ r..(k):
+        ___ j __ r..(k
             mask = 1 << j
             __ i & mask > 0:
                 res.a..(S[j])

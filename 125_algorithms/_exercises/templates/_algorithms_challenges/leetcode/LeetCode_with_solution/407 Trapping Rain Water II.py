@@ -27,20 +27,20 @@ __author__ = 'Daniel'
 
 
 c_ Cell:
-    ___ - , i, j, h):
+    ___ - , i, j, h
         i = i
         j = j
         h = h
 
-    ___ __cmp__  other):
+    ___ __cmp__  other
         r.. h - other.h
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         dirs = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-    ___ trapRainWater  mat):
+    ___ trapRainWater  mat
         """
         Find the min height with no water that higher than the current height and keep it.
         Starting from the min height with no water
@@ -55,13 +55,13 @@ c_ Solution(o..):
         visited = [[F.. ___ _ __ x..(n)] ___ _ __ x..(m)]
         h    # list
         # add cells at the four edges
-        ___ i __ x..(m):
+        ___ i __ x..(m
             visited[i][0] = T..
             heapq.heappush(h, Cell(i, 0, mat[i][0]))
             visited[i][n-1] = T..
             heapq.heappush(h, Cell(i, n-1, mat[i][n-1]))
 
-        ___ j __ x..(1, n-1):
+        ___ j __ x..(1, n-1
             visited[0][j] = T..
             heapq.heappush(h, Cell(0, j, mat[0][j]))
             visited[m-1][j] = T..

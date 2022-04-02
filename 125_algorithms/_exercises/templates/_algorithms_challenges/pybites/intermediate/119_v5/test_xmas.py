@@ -34,10 +34,10 @@ ___ test_num_stars_used
 ___ test_outputs
     actual_tree = generate_xmas_tree().strip('\n').s..('\n')
     expected_tree = default_tree.strip('\n').s..('\n')
-    ___ i, j __ z..(actual_tree, expected_tree):
+    ___ i, j __ z..(actual_tree, expected_tree
         ... i.rstrip() __ j.rstrip()
 
     actual_tree = generate_xmas_tree(3).strip('\n').s..('\n')
     expected_tree = smaller_tree.strip('\n').s..('\n')
-    ___ i, j __ z..(actual_tree, expected_tree):
+    ___ i, j __ z..(actual_tree, expected_tree
         ... i.rstrip() __ j.rstrip()

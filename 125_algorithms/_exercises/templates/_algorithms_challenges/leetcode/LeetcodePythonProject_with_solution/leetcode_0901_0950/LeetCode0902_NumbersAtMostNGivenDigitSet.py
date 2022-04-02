@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ atMostNGivenDigitSet  D, N):
+c_ Solution(o..
+    ___ atMostNGivenDigitSet  D, N
         """
         :type D: List[str]
         :type N: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
         s = s..(N)
         k = l..(s)
         dp = [0]*k + [1]
-        ___ i __ r..(k-1, -1, -1):
+        ___ i __ r..(k-1, -1, -1
             ___ d __ D:
                 __ d < s[i]:
                     dp[i] += l..(D)**(k-i-1)

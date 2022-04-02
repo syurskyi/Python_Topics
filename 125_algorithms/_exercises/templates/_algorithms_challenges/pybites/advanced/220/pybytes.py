@@ -18,9 +18,9 @@ IGNORE_DOMAINS = {'https://pythonbytes.fm', 'http://pythonbytes.fm',
 
 c_ PythonBytes:
 
-    ___ - , url=URL):
+    ___ - , url=URL
         """Load the feed url into self.entries using the feedparser module."""
-        entries = feedparser.p..(URL)['entries']
+        entries = feedparser.p..(URL) 'entries'
 
 
     ___ get_episode_numbers_for_mentioned_domain  domain: s..) __ l..:
@@ -33,9 +33,9 @@ c_ PythonBytes:
 
         ___ entry __ entries:
             #summary = entry['summary']
-            summary = entry['summary']
+            summary = entry 'summary'
             __ domain __ summary:
-                episode = entry['itunes_episode']
+                episode = entry 'itunes_episode'
                 episode_ids.a..(episode)
 
 
@@ -57,7 +57,7 @@ c_ PythonBytes:
         """
         counts = Counter()
         ___ entry __ entries:
-            summary = entry['summary']
+            summary = entry 'summary'
             domains = s..(__.f..(r'https?://[^/]+',summary))
             ___ domain __ domains:
                 __ domain n.. __ IGNORE_DOMAINS:
@@ -73,7 +73,7 @@ c_ PythonBytes:
            featured (use SPECIAL_GUEST).
         """
 
-        r.. s..(SPECIAL_GUEST __ entry['summary'] ___ entry __ entries)
+        r.. s..(SPECIAL_GUEST __ entry 'summary'  ___ entry __ entries)
 
     ___ get_average_duration_episode_in_seconds(self) __ NamedTuple:
         """Return the average duration in seconds of a Python Bytes episode, as
@@ -89,7 +89,7 @@ c_ PythonBytes:
 
 
         ___ entry __ entries:
-            duration= entry['itunes_duration']
+            duration= entry 'itunes_duration'
             hours,minutes,seconds = map(i..,duration.s..(':'))
             total_seconds = 3600 * hours + 60 * minutes + seconds
             duration_sums += total_seconds

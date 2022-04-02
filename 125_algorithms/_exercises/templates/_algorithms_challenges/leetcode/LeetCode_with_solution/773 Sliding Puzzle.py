@@ -99,26 +99,26 @@ c_ Solution:
                         heapq.heappush(q, (heuristic_dist(B) + cur_dist, cur_dist, B))
         r.. -1
 
-    ___ zero_pos  board):
-        ___ i, row __ e..(board):
-            ___ j, v __ e..(row):
+    ___ zero_pos  board
+        ___ i, row __ e..(board
+            ___ j, v __ e..(row
                 __ v __ 0:
                     r.. i, j
         r..
 
-    ___ heuristic_dist  board):
+    ___ heuristic_dist  board
         """
         manhattan distance
         """
         ret = 0
-        ___ i, row __ e..(board):
-            ___ j, v __ e..(row):
+        ___ i, row __ e..(board
+            ___ j, v __ e..(row
                 __ v != 0:
                     I, J = final_pos[v]
                     ret += abs(i - I) + abs(j - J)
         r.. ret
 
-    ___ ser  board):
+    ___ ser  board
         r.. t..(
             t..(row)
             ___ row __ board

@@ -59,7 +59,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ gcd  a, b):
+    ___ gcd  a, b
         """
         a = k * b + r
         gcd(a, b) = gcd(b, r)

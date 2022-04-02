@@ -3,8 +3,8 @@ Created on Aug 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ arrayNesting  nums):
+c_ Solution(o..
+    ___ arrayNesting  nums
         """
         :type nums: List[int]
         :rtype: int

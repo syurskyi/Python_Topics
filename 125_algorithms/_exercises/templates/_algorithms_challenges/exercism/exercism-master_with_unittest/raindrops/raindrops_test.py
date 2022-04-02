@@ -5,7 +5,7 @@ ____ raindrops _______ raindrops
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
-c_ RaindropsTest(unittest.TestCase):
+c_ RaindropsTest(unittest.TestCase
     ___ test_the_sound_for_1_is_1
         assertEqual(raindrops(1), "1")
 

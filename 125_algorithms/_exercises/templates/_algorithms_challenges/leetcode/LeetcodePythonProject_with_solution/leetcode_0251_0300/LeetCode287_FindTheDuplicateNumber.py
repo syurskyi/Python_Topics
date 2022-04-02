@@ -4,8 +4,8 @@ Created on Mar 7, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findDuplicate  nums):
+c_ Solution(o..
+    ___ findDuplicate  nums
         """
         :type nums: List[int]
         :rtype: int

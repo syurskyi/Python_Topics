@@ -5,14 +5,14 @@ Created on Feb 1, 2017
 '''
 
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ pathSum  root, sumVal):
+c_ Solution(o..
+    ___ pathSum  root, sumVal
         """
         :type root: TreeNode
         :type sumVal: int
@@ -25,7 +25,7 @@ c_ Solution(o..):
         dfs(result, elem, root, sumVal-root.val)
         r.. result
     
-    ___ dfs  result, elem, root, sumVal):
+    ___ dfs  result, elem, root, sumVal
         __ n.. root:
             r..
         __ sumVal __ 0 a.. n.. root.left a.. n.. root.right:

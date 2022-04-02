@@ -11,7 +11,7 @@ PICKLE_INFILE = TMP / 'input.pkl'
 PICKLE_OUTFILE = TMP / 'output.pkl'
 
 
-c_ MovieRented(NamedTuple):
+c_ MovieRented(NamedTuple
     title: s..
     price: i..
     date: date
@@ -26,7 +26,7 @@ ___ download_pickle_file
 
 ___ deserialize(pkl_file: Path = PICKLE_INFILE) __ Sequence[NamedTuple]:
     """Load the list of namedtuples from the pickle file passed in"""
-    file = open(pkl_file, "rb")
+    file = o.. pkl_file, "rb")
     nt = pickle.load(file)
     file.close()
     r.. nt
@@ -39,7 +39,7 @@ ___ serialize(pkl_file: Path = PICKLE_OUTFILE,
         data = deserialize()
     # you code ...
     ____:
-        file = open(pkl_file, "ab")
+        file = o.. pkl_file, "ab")
         pickle.dump(data, file)
         file.close()
 

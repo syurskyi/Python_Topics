@@ -3,8 +3,8 @@ Created on Oct 5, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ cheapestJump  A, B):
+c_ Solution(o..
+    ___ cheapestJump  A, B
         """
         :type A: List[int]
         :type B: int
@@ -17,16 +17,16 @@ c_ Solution(o..):
         dp = [f__('inf')]*n
         dp[-1] = nums[-1]
         pos = [-1]*n
-        ___ i __ r..(n-2, -1, -1):
+        ___ i __ r..(n-2, -1, -1
             __ nums[i] __ -1:
                 _____
-            ___ j __ r..(i+1, m..(i+B, n-1)+1):
-                __ dp[j] __ f__('inf'):
+            ___ j __ r..(i+1, m..(i+B, n-1)+1
+                __ dp[j] __ f__('inf'
                     _____
                 __ nums[i]+dp[j] < dp[i]:
                     dp[i] = nums[i]+dp[j]
                     pos[i] = j
-        __ dp[0] __ f__('inf'):
+        __ dp[0] __ f__('inf'
             r.. res
         ind = 0
         w.... ind != -1:

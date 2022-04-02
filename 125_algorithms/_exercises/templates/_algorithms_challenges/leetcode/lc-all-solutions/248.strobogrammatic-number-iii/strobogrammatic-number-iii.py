@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ findStrobogrammatic  n):
+c_ Solution(o..
+  ___ findStrobogrammatic  n
     """
     :type n: int
     :rtype: List[str]
     """
     d = {"0": "0", "1": "1", "6": "9", "8": "8", "9": "6"}
 
-    ___ dfs(half, path, n):
+    ___ dfs(half, path, n
       __ l..(path) __ half:
         pathStr = "".j..(path)
         __ half * 2 __ n:
@@ -33,17 +33,17 @@ c_ Solution(o..):
     dfs(n / 2, [], n)
     r.. res
 
-  ___ strobogrammaticInRange  low, high):
+  ___ strobogrammaticInRange  low, high
     """
     :type low: str
     :type high: str
     :rtype: int
     """
-    __ i..(low) > i..(high):
+    __ i..(low) > i..(high
       r.. 0
     count = 0
     low = i..(low)
     high = i..(high)
-    ___ length __ r..(l..(low), l..(high) + 1):
+    ___ length __ r..(l..(low), l..(high) + 1
       findStrobogrammatic(length)
     r.. count

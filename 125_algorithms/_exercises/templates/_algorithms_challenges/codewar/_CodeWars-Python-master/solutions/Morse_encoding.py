@@ -5,19 +5,19 @@ https://www.codewars.com/kata/morse-encoding/train/python
 c_ Morse:
 
     @classmethod
-    ___ encode  message):
+    ___ encode  message
         words = message.s..(' ')
-        code = ('0' * 7).j..(['000'.j..([Morse.alpha[c.u..]
+        code = ('0' * 7).j..( '000'.j..([Morse.alpha[c.u..]
                                            ___ c __ word]) ___ word __ words])
         result    # list
-        ___ i __ r..(0, l..(code), 32):
+        ___ i __ r..(0, l..(code), 32
             num = code[i:i + 32].ljust(32, '0')
             result.a..(i..(num[1:], 2) -
                           (0 __ num[0] __ '0' ____ Morse.neg))
         r.. result
 
     @classmethod
-    ___ decode  array):
+    ___ decode  array
         code = ''
         ___ num __ array:
             __ num < 0:
@@ -94,4 +94,4 @@ __ _____ __ _____
     print(Morse.encode('hello world'))
     # print(Morse.encode('EEEEEEEIE'))
     # print(Morse.decode([-2004318070, 536870912]))
-    print(Morse.decode([-1440552402, -1547992901, -1896993141, -1461059584]))
+    print(Morse.d.. [-1440552402, -1547992901, -1896993141, -1461059584]))

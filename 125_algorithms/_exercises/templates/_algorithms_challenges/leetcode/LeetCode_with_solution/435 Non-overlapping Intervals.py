@@ -11,12 +11,12 @@ each other.
 
 # Definition for an interval.
 c_ Interval:
-    ___ - , s=0, e=0):
+    ___ - , s=0, e=0
         start = s
         end = e
 
     @classmethod
-    ___ new(cls, lst):
+    ___ new(cls, lst
         r.. [
             cls(s, e)
             ___ s, e __ lst
@@ -24,7 +24,7 @@ c_ Interval:
         
 
 c_ Solution:
-    ___ eraseOverlapIntervals  intervals):
+    ___ eraseOverlapIntervals  intervals
         """
         Greedy remove the large e when overlapping
         :type intervals: List[Interval]

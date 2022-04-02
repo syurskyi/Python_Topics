@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ candy  ratings):
+c_ Solution(o..
+  ___ candy  ratings
     """
     :type ratings: List[int]
     :rtype: int
@@ -7,7 +7,7 @@ c_ Solution(o..):
     n = l..(ratings)
     left = [1] * n
     ans = 0
-    ___ i __ r..(1, n):
+    ___ i __ r..(1, n
       __ ratings[i] > ratings[i - 1]:
         left[i] = left[i - 1] + 1
     ans = left[-1]

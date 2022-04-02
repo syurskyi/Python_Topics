@@ -1,12 +1,12 @@
-c_ Solution(o..):
-  ___ twoSum  nums, target):
+c_ Solution(o..
+  ___ twoSum  nums, target
     """
     :type nums: List[int]
     :type target: int
     :rtype: List[int]
     """
     d    # dict
-    ___ i, num __ e..(nums):
+    ___ i, num __ e..(nums
       __ target - num __ d:
         r.. [d[target - num], i]
       d[num] = i

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findBlackPixel  picture, N):
+c_ Solution(o..
+  ___ findBlackPixel  picture, N
     """
     :type picture: List[List[str]]
     :type N: int

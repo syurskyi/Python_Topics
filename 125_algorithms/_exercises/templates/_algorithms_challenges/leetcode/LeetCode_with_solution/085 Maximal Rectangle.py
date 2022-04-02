@@ -5,7 +5,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ maximalRectangle  matrix):
+    ___ maximalRectangle  matrix
         """
         Algorithm 1:
         brutal force, iterate from top-left points and expand the area.
@@ -34,8 +34,8 @@ c_ Solution:
         # added dp to get heights
         dp_height = [[-1 ___ _ __ x..(n)] ___ _ __ x..(m)]
         dp_height[0] = map(l.... x: i..(x), matrix[0])
-        ___ i __ x..(1, m):
-            ___ j __ x..(n):
+        ___ i __ x..(1, m
+            ___ j __ x..(n
                 __ matrix[i][j] __ "1":
                     dp_height[i][j] = 1+dp_height[i-1][j]
                 ____:
@@ -43,7 +43,7 @@ c_ Solution:
 
         # end of dp
 
-        ___ i __ x..(m):
+        ___ i __ x..(m
             # Largest Rectangle in Histogram
             inc_stack    # list
 
@@ -64,10 +64,10 @@ c_ Solution:
 
         r.. global_max
 
-    ___ get_height  matrix, row, col):
+    ___ get_height  matrix, row, col
         # possible replace by dp; otherwise TLE
         height = 0
-        ___ i __ x..(row, -1, -1):
+        ___ i __ x..(row, -1, -1
             __ matrix[row][col] __ "0":
                 _____
             height += 1

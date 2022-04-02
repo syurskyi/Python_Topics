@@ -4,8 +4,8 @@ Premium Question
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         """
         Skip matrix
         Encode rule for 2, 4, 6, 8, 5
@@ -20,7 +20,7 @@ c_ Solution(o..):
         skip[1][9], skip[9][1] = 5, 5
         skip[3][7], skip[7][3] = 5, 5
 
-    ___ numberOfPatterns  m, n):
+    ___ numberOfPatterns  m, n
         """
         NP - O(N!)
         dfs
@@ -38,7 +38,7 @@ c_ Solution(o..):
             ___ remain __ x..(m, n+1)
         )
 
-    ___ dfs  cur, visited, remain):
+    ___ dfs  cur, visited, remain
         """
         Return the count of combination
         Optimization - memoization
@@ -48,13 +48,13 @@ c_ Solution(o..):
 
         visited[cur] = T..
         ret = 0
-        ___ nxt __ x..(1, 10):
+        ___ nxt __ x..(1, 10
             __ (
                 n.. visited[nxt] a.. (
                     skip[cur][nxt] __ N.. o.
                     visited[skip[cur][nxt]]
                 )
-            ):
+
                 ret += dfs(nxt, visited, remain - 1)
 
         visited[cur] = F..

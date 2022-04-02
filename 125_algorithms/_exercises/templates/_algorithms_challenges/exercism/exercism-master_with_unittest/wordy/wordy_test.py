@@ -3,7 +3,7 @@ _______ unittest
 ____ wordy _______ calculate
 
 
-c_ WordyTest(unittest.TestCase):
+c_ WordyTest(unittest.TestCase
 
     ___ test_simple_add_1
         assertEqual(18, calculate("What is 5 plus 13?"))

@@ -1,2 +1,2 @@
-___ get_profile(name="julian", profession="programmer"):
+___ get_profile(name="julian", profession="programmer"
     r.. "{} is a {}".f..(name, profession)

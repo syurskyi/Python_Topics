@@ -3,8 +3,8 @@ Created on Oct 29, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ fairCandySwap  A, B):
+c_ Solution(o..
+    ___ fairCandySwap  A, B
         """
         :type A: List[int]
         :type B: List[int]

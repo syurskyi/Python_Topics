@@ -29,7 +29,7 @@ The size of the given array will be in the range [1,1000].
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -83,7 +83,7 @@ c_ Solution_heap:
 
         r.. root
 
-    ___ insert  node, m, idx):
+    ___ insert  node, m, idx
         __ n.. node:
             r.. TreeNode(m)
 

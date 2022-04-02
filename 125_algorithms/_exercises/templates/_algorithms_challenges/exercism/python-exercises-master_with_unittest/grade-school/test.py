@@ -5,15 +5,15 @@ ____ types _______ GeneratorType
 ____ grade_school _______ School
 
 
-c_ SchoolTest(unittest.TestCase):
+c_ SchoolTest(unittest.TestCase
     ___ setUp
         # assertCountEqual is py3, py2 only knowns assetItemsEqual
-        __ n.. hasattr  'assertCountEqual'):
+        __ n.. hasattr  'assertCountEqual'
             assertCountEqual = assertItemsEqual
         school = School("Haleakala Hippy School")
 
     ___ test_an_empty_school
-        ___ n __ r..(1, 9):
+        ___ n __ r..(1, 9
             assertCountEqual(school.grade(n), s..())
 
     ___ test_add_student

@@ -19,7 +19,7 @@ Input: sum("ap"), Output: 5
 
 c_ MapSum:
 
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
 
@@ -30,17 +30,17 @@ c_ MapSum:
         ____ c.. _______ defaultdict
 
         c_ TrieNode:
-            ___ - , chr, s.., val):
+            ___ - , chr, s.., val
                 chr = chr
                 s.. = s..
                 val = val
                 children = defaultdict(l....: N..)
 
         c_ Trie:
-            ___ - ):
+            ___ -
                 root = TrieNode(N.., 0, 0)  # dummy root
 
-            ___ insert  cur, key, i, val):
+            ___ insert  cur, key, i, val
                 __ n.. cur:
                     cur = TrieNode(key[i], 0, 0)
 
@@ -72,7 +72,7 @@ c_ MapSum:
 
 c_ MapSum2:
 
-    ___ - ):
+    ___ -
         """
         Initialize your data structure here.
 
@@ -81,23 +81,23 @@ c_ MapSum2:
         update using delta
         """
         c_ TrieNode:
-            ___ - , chr, s.., val):
+            ___ - , chr, s.., val
                 chr = chr
                 s.. = s..
                 val = val
                 children    # dict
 
         c_ Trie:
-            ___ - ):
+            ___ -
                 root = TrieNode(N.., 0, 0)  # dummy root
 
-            ___ insert  pi, key, i, val):
+            ___ insert  pi, key, i, val
                 __ key[i] n.. __ pi.children:
                     cur = TrieNode(key[i], 0, 0)
                     pi.children[key[i]] = cur
 
                 cur = pi.children[key[i]]
-                __ i + 1 < l..(key):
+                __ i + 1 < l..(key
                     cur.children[key[i+1]], delta = insert(cur, key, i + 1, val)
                 ____:
                     delta = val - cur.val

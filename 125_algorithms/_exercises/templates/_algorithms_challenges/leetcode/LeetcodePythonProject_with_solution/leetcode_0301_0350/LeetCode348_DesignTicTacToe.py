@@ -3,14 +3,14 @@ Created on Mar 21, 2017
 
 @author: MT
 '''
-c_ TicTacToe(o..):
-    ___ - , n):
+c_ TicTacToe(o..
+    ___ - , n
         rows = [0]*n
         cols = [0]*n
         diagonal = 0
         antiDiagonal = 0
     
-    ___ move  row, col, player):
+    ___ move  row, col, player
         toAdd = 1 __ player __ 1 ____ -1
         rows[row] += toAdd
         cols[col] += toAdd

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ increasingTriplet  nums):
+c_ Solution(o..
+  ___ increasingTriplet  nums
     """
     :type nums: List[int]
     :rtype: bool

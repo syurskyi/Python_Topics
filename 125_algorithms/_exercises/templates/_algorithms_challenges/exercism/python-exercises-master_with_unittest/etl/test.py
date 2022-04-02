@@ -5,9 +5,9 @@ ____ etl _______ transform
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ TransformTest(unittest.TestCase):
+c_ TransformTest(unittest.TestCase
     ___ test_a_single_letter
-        assertEqual(transform({1: ['A']}), {'a': 1})
+        assertEqual(transform({1:  'A' }), {'a': 1})
 
     ___ test_single_score_with_multiple_letters
         legacy_data = {1: ["A", "E", "I", "O", "U"]}

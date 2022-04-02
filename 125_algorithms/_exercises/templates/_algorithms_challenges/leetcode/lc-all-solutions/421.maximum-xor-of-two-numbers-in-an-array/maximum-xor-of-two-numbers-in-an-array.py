@@ -1,4 +1,4 @@
-c_ TrieNode(o..):
+c_ TrieNode(o..
   ___ - , bit_ N..
     isWord = F..
     word = N..
@@ -9,14 +9,14 @@ c_ TrieNode(o..):
 count = 0
 
 
-c_ Solution(o..):
-  ___ findMaximumXOR  nums):
+c_ Solution(o..
+  ___ findMaximumXOR  nums
     """
     :type nums: List[int]
     :rtype: int
     """
 
-    ___ dfs(root, num, mask):
+    ___ dfs(root, num, mask
       __ n.. root:
         r..
       __ mask __ 0x00:
@@ -40,7 +40,7 @@ c_ Solution(o..):
     ___ num __ nums:
       mask = 0x80000000
       p = root
-      ___ i __ r..(0, 32):
+      ___ i __ r..(0, 32
         node = N..
         __ num & mask:
           __ n.. p.one:

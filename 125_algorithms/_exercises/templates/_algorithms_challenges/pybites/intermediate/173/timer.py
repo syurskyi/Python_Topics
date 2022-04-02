@@ -25,7 +25,7 @@ ___ add_todo(delay_time: s.., task: s..,
     days, hours, minutes, seconds = 0, 0, 0, 0
 
     #if delay_time.find(" ") > 0:
-    ___ unit __ delay_time.s..(" "):
+    ___ unit __ delay_time.s..(" "
         last_char = unit[-1]
         __ last_char __ "d":
             days = i..(unit[:-1])

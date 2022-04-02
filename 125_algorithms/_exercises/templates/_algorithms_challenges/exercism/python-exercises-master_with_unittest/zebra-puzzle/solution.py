@@ -6,11 +6,11 @@ https://www.udacity.com/course/cs212
 ____ i.. _______ permutations
 
 
-___ just_right_of(x, y):
+___ just_right_of(x, y
     r.. x - y __ 1
 
 
-___ next_to(x, y):
+___ next_to(x, y
     r.. abs(x - y) __ 1
 
 

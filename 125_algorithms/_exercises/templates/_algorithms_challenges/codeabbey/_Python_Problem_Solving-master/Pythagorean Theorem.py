@@ -1,6 +1,6 @@
 _______ math
 ___ i __ r..(i..(input())):
-    triangle= l..(map(i..,input().s..()))
+    triangle= l.. m..(i..,input().s..()))
     a,b,c = triangle
     cal = math.sqrt(a**2 + b**2)
     print(cal)

@@ -4,8 +4,8 @@ Created on Jan 21, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxSubArray  nums):
+c_ Solution(o..
+    ___ maxSubArray  nums
         """
         :type nums: List[int]
         :rtype: int
@@ -14,12 +14,12 @@ c_ Solution(o..):
         dp = [0]*n
         dp[0] = nums[0]
         maxVal = dp[0]
-        ___ i __ r..(1, n):
+        ___ i __ r..(1, n
             dp[i] = m..(nums[i], dp[i-1]+nums[i])
             maxVal = m..(maxVal, dp[i])
         r.. maxVal
     
-    ___ maxSubArrayDAC  nums):
+    ___ maxSubArrayDAC  nums
         """
         :type nums: List[int]
         :rtype: int

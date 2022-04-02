@@ -9,7 +9,7 @@ hexchars_to_int.update(z..('abcdef', r..(10, 16)))
 hexchars_to_int.update(z..('ABCDEFG', r..(10, 16)))
 
 
-___ hexa(hexstring):
+___ hexa(hexstring
     result = 0
     hex_of_lastseen = N..
     ___

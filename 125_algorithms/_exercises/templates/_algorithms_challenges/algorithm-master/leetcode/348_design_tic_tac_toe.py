@@ -1,8 +1,8 @@
-c_ TicTacToe(o..):
+c_ TicTacToe(o..
     PLER_A = 1
     PLER_B = 2
 
-    ___ - , n):
+    ___ - , n
         """
         Initialize your data structure here.
         :type n: int
@@ -12,7 +12,7 @@ c_ TicTacToe(o..):
         DR = 0  # only one
         DL = 0  # only one
 
-    ___ move  x, y, player):
+    ___ move  x, y, player
         """
         Player {player} makes a move at ({x}, {y}).
         :type x: int The row of the board.

@@ -41,13 +41,13 @@ rosetti_unformatted = """
                       """
 
 
-___ print_hanging_indents(poem):
+___ print_hanging_indents(poem
   #  poem = poem.strip()
     whitespace = " "
     prefix = INDENTS*whitespace
     current_line_cnt = 0
     target_poem    # list
-    ___ line __ poem.splitlines
+    ___ line __ poem.s..
         # trim current line
         current_line = line.l..
         # adjust counters

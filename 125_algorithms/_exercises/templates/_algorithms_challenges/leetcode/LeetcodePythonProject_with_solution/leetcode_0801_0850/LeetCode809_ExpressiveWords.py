@@ -3,8 +3,8 @@ Created on Apr 25, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ expressiveWords  S, words):
+c_ Solution(o..
+    ___ expressiveWords  S, words
         """
         :type S: str
         :type words: List[str]
@@ -13,11 +13,11 @@ c_ Solution(o..):
         s = S
         res = 0
         ___ s0 __ words:
-            __ isstretchy(s0, s):
+            __ isstretchy(s0, s
                 res += 1
         r.. res
     
-    ___ isstretchy  s0, s):
+    ___ isstretchy  s0, s
         m, n = l..(s0), l..(s)
         __ m > n: r.. F..
         __ m __ n a.. s0 != s: r.. F..

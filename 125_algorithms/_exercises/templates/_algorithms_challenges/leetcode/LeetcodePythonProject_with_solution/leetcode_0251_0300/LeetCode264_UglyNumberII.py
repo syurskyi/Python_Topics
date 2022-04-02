@@ -4,15 +4,15 @@ Created on Mar 3, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ nthUglyNumber  n):
+c_ Solution(o..
+    ___ nthUglyNumber  n
         """
         :type n: int
         :rtype: int
         """
         res = [1]
         ind2, ind3, ind5 = 0, 0, 0
-        ___ _ __ r..(1, n):
+        ___ _ __ r..(1, n
             val = m..(res[ind2]*2, res[ind3]*3, res[ind5]*5)
             res.a..(val)
             __ val __ res[ind2]*2: ind2 += 1

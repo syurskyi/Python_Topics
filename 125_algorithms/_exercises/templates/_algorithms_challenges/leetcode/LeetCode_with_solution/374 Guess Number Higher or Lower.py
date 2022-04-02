@@ -22,12 +22,12 @@ __author__ = 'Daniel'
 # @param num, your guess
 # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
 
-___ guess(num):
+___ guess(num
     r.. -1
 
 
-c_ Solution(o..):
-    ___ guessNumber  n):
+c_ Solution(o..
+    ___ guessNumber  n
         """
         Binary search, transform [1, n] into [1, n+1), to make sure the loop is making progress
         :type n: int

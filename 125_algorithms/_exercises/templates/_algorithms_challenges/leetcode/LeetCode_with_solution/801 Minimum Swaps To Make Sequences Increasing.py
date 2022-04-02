@@ -40,8 +40,8 @@ c_ Solution:
         n = l..(A)
         F = [[0 ___ _ __ r..(n)] ___ _ __ r..(2)]
         F[1][0] = 1
-        ___ i __ r..(1, n):
-            __ A[i] > m..(A[i-1], B[i-1]) a.. B[i] > m..(A[i-1], B[i-1]):
+        ___ i __ r..(1, n
+            __ A[i] > m..(A[i-1], B[i-1]) a.. B[i] > m..(A[i-1], B[i-1]
                 # freedom of two options - swap or not swap
                 F[0][i] = m..(F[0][i-1], F[1][i-1])
                 F[1][i] = m..(F[0][i-1], F[1][i-1]) + 1

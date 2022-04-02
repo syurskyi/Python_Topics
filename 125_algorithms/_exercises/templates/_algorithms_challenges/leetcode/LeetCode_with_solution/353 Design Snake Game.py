@@ -6,8 +6,8 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ SnakeGame(o..):
-    ___ - , width, height, food):
+c_ SnakeGame(o..
+    ___ - , width, height, food
         """
         Initialize your data structure here.
         @param width - screen width
@@ -30,7 +30,7 @@ c_ SnakeGame(o..):
         }
         eat = 0
 
-    ___ move  direction):
+    ___ move  direction
         """
         Moves the snake.
         @param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
@@ -49,7 +49,7 @@ c_ SnakeGame(o..):
             eat += 1
         ____:
             body.pop()
-            __ (x, y) __ body o. n.. (0 <= x < h a.. 0 <= y < w):
+            __ (x, y) __ body o. n.. (0 <= x < h a.. 0 <= y < w
                 # possible to use set to accelerate check
                 r.. -1
 
@@ -63,5 +63,5 @@ c_ SnakeGame(o..):
 
 __ _______ __ _______
     game = SnakeGame(3, 2, [[1, 2], [0, 1]])
-    ___ char, expect __ z..('RDRULU', [0, 0, 1, 1, 2, -1]):
+    ___ char, expect __ z..('RDRULU', [0, 0, 1, 1, 2, -1]
         ... game.move(char) __ expect

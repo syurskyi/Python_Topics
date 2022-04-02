@@ -1,4 +1,4 @@
-c_ Allergies(o..):
+c_ Allergies(o..
 
     _allergies = [
         "eggs",
@@ -11,10 +11,10 @@ c_ Allergies(o..):
         "cats"
     ]
 
-    ___ - , score):
+    ___ - , score
         score = score
 
-    ___ is_allergic_to  allergy):
+    ___ is_allergic_to  allergy
         r.. score & 1 << _allergies.index(allergy)
 
     $

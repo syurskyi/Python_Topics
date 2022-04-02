@@ -7,7 +7,7 @@ while i.hasNext(): v.append(i.next())
 
 c_ Vector2D:
     # @param vec2d {List[List[int]]}
-    ___ - , vec2d):
+    ___ - , vec2d
         g = vec2d
         x = 0
         y = 0
@@ -27,8 +27,8 @@ c_ Vector2D:
     # @return {boolean} true if it has next element
     # or false
     ___ hasNext
-        w.... x < l..(g):
-            __ y < l..(g[x]):
+        w.... x < l..(g
+            __ y < l..(g[x]
                 r.. T..
 
             x += 1

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ trailingZeroes  n):
+c_ Solution(o..
+  ___ trailingZeroes  n
     """
     :type n: int
     :rtype: int

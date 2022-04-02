@@ -8,30 +8,30 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ - ):
+c_ Solution(o..
+    ___ -
         lst = ["11", "69", "88", "96", "00"]
         middle = ["0", "1", "8"]
 
-    ___ strobogrammaticInRange  low, high):
+    ___ strobogrammaticInRange  low, high
         """
         :type low: str
         :type high: str
         :rtype: int
         """
         cnt = 0
-        ___ l __ x..(l..(low), l..(high)+1):
+        ___ l __ x..(l..(low), l..(high)+1
             cnt += l..(filter(l.... x: i..(low) <= i..(x) <= i..(high), strobogrammatic(l)))
 
         r.. cnt
 
     # below methods from strobogrammatic number ii
-    ___ strobogrammatic  n):
+    ___ strobogrammatic  n
         ret    # list
         build(n, d..(), ret)
         r.. ret
 
-    ___ build  n, cur, ret):
+    ___ build  n, cur, ret
         """
         build from inside
         """
@@ -45,7 +45,7 @@ c_ Solution(o..):
                 ret.a..("".j..(cur))
                 r..
             ___ elt __ lst:
-                __ n.. (elt __ "00" a.. l..(cur) __ n-2):
+                __ n.. (elt __ "00" a.. l..(cur) __ n-2
                     cur.appendleft(elt[0])
                     cur.a..(elt[1])
                     build(n, cur, ret)

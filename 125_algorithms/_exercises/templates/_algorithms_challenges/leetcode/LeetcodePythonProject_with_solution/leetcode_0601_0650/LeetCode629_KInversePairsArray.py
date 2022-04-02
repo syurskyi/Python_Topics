@@ -3,8 +3,8 @@ Created on Sep 10, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ kInversePairs  n, k):
+c_ Solution(o..
+    ___ kInversePairs  n, k
         """
         :type n: int
         :type k: int
@@ -18,21 +18,21 @@ c_ Solution(o..):
         dp = [[0]*(k+1) ___ _ __ r..(n+1)]
         dp[2][0] = 1
         dp[2][1] = 1
-        ___ i __ r..(3, n+1):
+        ___ i __ r..(3, n+1
             dp[i][0] = 1
-            ___ j __ r..(1, m..(k, i*(i-1)//2)+1):
+            ___ j __ r..(1, m..(k, i*(i-1)//2)+1
                 dp[i][j] = dp[i][j-1]+dp[i-1][j]
                 __ j >= i:
                     dp[i][j] -= dp[i-1][j-i]
                 dp[i][j] = (dp[i][j]+mod)%mod
         r.. dp[-1][-1]
     
-    ___ kInversePairs_another  n, k):
+    ___ kInversePairs_another  n, k
         mod = 10**9+7
         dp = [0]+[1]*(k+1)
-        ___ i __ r..(2, n+1):
+        ___ i __ r..(2, n+1
             new = [0]
-            ___ j __ r..(k+1):
+            ___ j __ r..(k+1
                 v = dp[j+1]
                 __ j >= i:
                     v -= dp[j-i+1]

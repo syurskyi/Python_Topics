@@ -38,16 +38,16 @@ ____ c.. _______ defaultdict
 
 
 c_ DisjointSet
-    ___ - ):
+    ___ -
         sz    # dict  # element -> size
         pi    # dict  # element -> pi
 
-    ___ add  x):
+    ___ add  x
         __ x n.. __ pi:  # need to check, otherwise override wrongly
             sz[x] = 1
             pi[x] = x
 
-    ___ unionize  x, y):
+    ___ unionize  x, y
         p1 = root(x)
         p2 = root(y)
         __ p1 != p2:
@@ -60,14 +60,14 @@ c_ DisjointSet
             sz[p2] += sz[p1]
             del sz[p1]
 
-    ___ root  x):
+    ___ root  x
         p = pi[x]
         __ p != x:
             pi[x] = root(p)
 
         r.. pi[x]
 
-    ___ is_union  x, y):
+    ___ is_union  x, y
         __ x __ pi a.. y __ pi:
             r.. root(x) __ root(y)
 
@@ -83,7 +83,7 @@ c_ Solution:
         ___ p, q __ edges:
             ds.add(p)
             ds.add(q)
-            __ ds.is_union(p, q):
+            __ ds.is_union(p, q
                 r.. [p, q]
 
             ds.unionize(p, q)
@@ -107,13 +107,13 @@ c_ Solution_dfs:
             __ k n.. __ visited:
                 circle = dfs(G, k, N.., s..([k]), [k], visited)
                 __ circle:
-                    ___ p, q __ r..(edges):
+                    ___ p, q __ r..(edges
                         __ p __ circle a.. q __ circle:
                             r.. [p, q]
 
         r..
 
-    ___ dfs  G, cur, pi, path, path_list, visited):
+    ___ dfs  G, cur, pi, path, path_list, visited
         visited.add(cur)
 
         ___ nbr __ G[cur]:

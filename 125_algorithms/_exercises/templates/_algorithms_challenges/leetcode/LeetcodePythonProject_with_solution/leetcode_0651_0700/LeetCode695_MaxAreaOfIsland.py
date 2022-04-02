@@ -3,8 +3,8 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ maxAreaOfIsland  grid):
+c_ Solution(o..
+    ___ maxAreaOfIsland  grid
         """
         :type grid: List[List[int]]
         :rtype: int
@@ -13,12 +13,12 @@ c_ Solution(o..):
             r.. 0
         m, n = l..(grid), l..(grid[0])
         maxArea = 0
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 maxArea = m..(maxArea, bfs(grid, m, n, i, j))
         r.. maxArea
     
-    ___ bfs  grid, m, n, i, j):
+    ___ bfs  grid, m, n, i, j
         __ grid[i][j] __ 0:
             r.. 0
         area = 0
@@ -27,7 +27,7 @@ c_ Solution(o..):
         w.... queue:
             i, j = queue.pop(0)
             area += 1
-            ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1):
+            ___ x, y __ (i+1, j), (i-1, j), (i, j+1), (i, j-1
                 __ 0 <= x < m a.. 0 <= y < n a.. grid[x][y] __ 1:
                     queue.a..((x, y))
                     grid[x][y] = -1

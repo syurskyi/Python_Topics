@@ -7,19 +7,19 @@ TMP = os.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = os.path.j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
-__ n.. os.path.isfile(DATA):
+__ n.. os.path.isfile(DATA
     urlretrieve _*{S3}/{LOGS}', DATA)
 
 
 c_ BiteStats:
 
     ___ _load_data  data) __ l..:
-        w__ open(data) __ csv_file:
+        w__ o.. data) __ csv_file:
             csv_dict = [row ___ row __ DictReader(csv_file)]
         r.. csv_dict
 
 
-    ___ - , data=DATA):
+    ___ - , data=DATA
         rows = _load_data(data)
 
     $

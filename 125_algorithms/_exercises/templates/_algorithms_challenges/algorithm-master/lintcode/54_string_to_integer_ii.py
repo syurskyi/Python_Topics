@@ -3,7 +3,7 @@ c_ Solution:
     @param: s: A string
     @return: An integer
     """
-    ___ atoi  s):
+    ___ atoi  s
         NOT_FOUND = 0
         __ n.. s:
             r.. NOT_FOUND
@@ -17,7 +17,7 @@ c_ Solution:
         w.... right >= 0 a.. s[right] __ ' ':
             right -= 1
 
-        __ left < n a.. s[left] __ ('+', '-'):
+        __ left < n a.. s[left] __ ('+', '-'
             is_negative = (s[left] __ '-')
             left += 1
 

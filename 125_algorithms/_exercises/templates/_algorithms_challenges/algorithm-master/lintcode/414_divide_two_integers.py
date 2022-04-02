@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ divide  a, b):
+    ___ divide  a, b
         """
         :type a: int
         :type b: int
@@ -16,7 +16,7 @@ c_ Solution:
         _a = -a __ a < 0 ____ a
         _b = -b __ b < 0 ____ b
 
-        ___ i __ r..(31, -1, -1):
+        ___ i __ r..(31, -1, -1
             """
             let `ci = 1 << i = 2 ** i`
             if `_a // _b >= ci`, that is `_a // ci >= _b`

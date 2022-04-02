@@ -5,15 +5,15 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ diameterOfBinaryTree  root):
+c_ Solution(o..
+  ___ diameterOfBinaryTree  root
     """
     :type root: TreeNode
     :rtype: int
     """
     ans = 0
 
-    ___ dfs(root):
+    ___ dfs(root
       __ n.. root:
         r.. 0
       left = dfs(root.left)

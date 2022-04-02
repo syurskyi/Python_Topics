@@ -10,13 +10,13 @@ __author__ = 'Daniel'
 
 
 c_ Interval:
-    ___ - , s=0, e=0):
+    ___ - , s=0, e=0
         start = s
         end = e
 
 
-c_ Solution(o..):
-    ___ minMeetingRooms  intervals):
+c_ Solution(o..
+    ___ minMeetingRooms  intervals
         """
 
         :type intervals: list[Interval]

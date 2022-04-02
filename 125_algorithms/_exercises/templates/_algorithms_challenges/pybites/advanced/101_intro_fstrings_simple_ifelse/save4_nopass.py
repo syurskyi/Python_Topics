@@ -1,7 +1,7 @@
 MIN_DRIVING_AGE = 18
 
 
-___ allowed_driving(name, age):
+___ allowed_driving(name, age
     __ age <= MIN_DRIVING_AGE:
         print(f"{name} is allowed to drive")
     ____:

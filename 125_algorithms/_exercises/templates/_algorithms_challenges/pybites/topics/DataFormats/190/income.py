@@ -16,7 +16,7 @@ __ n.. countries.exists
     )
 
 
-___ get_income_distribution(___=countries):
+___ get_income_distribution(___=countries
     """
     - Read in the countries xml as stored in countries variable.
     - Parse the XML

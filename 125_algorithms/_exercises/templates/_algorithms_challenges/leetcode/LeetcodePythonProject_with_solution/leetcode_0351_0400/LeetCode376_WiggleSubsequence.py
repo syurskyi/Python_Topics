@@ -4,12 +4,12 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ wiggleMaxLength  nums):
+c_ Solution(o..
+    ___ wiggleMaxLength  nums
         __ n.. nums: r.. 0
         maxLen = 1
         i = 1
-        w.... i < l..(nums):
+        w.... i < l..(nums
             __ nums[i] > nums[i-1]:
                 w.... i+1 < l..(nums) a.. nums[i] <= nums[i+1]:
                     i += 1

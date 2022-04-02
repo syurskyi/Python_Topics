@@ -5,7 +5,7 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ removeElement_negative_index  A, elem):
+    ___ removeElement_negative_index  A, elem
         """
         Constant space
         Algorithms: Two Pointers
@@ -27,7 +27,7 @@ c_ Solution:
 
         r.. l..(A)+back_ptr+1  # length is index+1
 
-    ___ removeElement  A, elem):
+    ___ removeElement  A, elem
         """
         Constant space
         Algorithms: Two Pointers

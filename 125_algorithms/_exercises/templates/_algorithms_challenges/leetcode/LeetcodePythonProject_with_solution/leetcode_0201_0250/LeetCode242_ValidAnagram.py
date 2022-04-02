@@ -4,8 +4,8 @@ Created on Feb 27, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ isAnagram  s, t):
+c_ Solution(o..
+    ___ isAnagram  s, t
         """
         :type s: str
         :type t: str
@@ -13,7 +13,7 @@ c_ Solution(o..):
         """
         __ n.. s a.. n.. t: r.. T..
         __ n.. s o. n.. t: r.. F..
-        __ l..(s) != l..(t): r.. F..
+        __ l..(s) != l..(t r.. F..
         hashmap    # dict
         ___ c __ s:
             __ c __ hashmap: hashmap[c] += 1

@@ -5,7 +5,7 @@ ____ alphametics _______ solve
 
 # test cases adapted from `x-common//canonical-data.json` @ version: 1.0.0
 
-c_ TestAlphametics(unittest.TestCase):
+c_ TestAlphametics(unittest.TestCase
     ___ test_puzzle_with_three_letters
         assertEqual(solve("I + BB == ILL"), {"I": 1, "B": 9, "L": 0})
 

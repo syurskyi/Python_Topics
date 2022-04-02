@@ -8,7 +8,7 @@ Created on Mar 28, 2017
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-c_ NestedInteger(o..):
+c_ NestedInteger(o..
     ___ - , value_ N..
         """
         If value is not specified, initializes an empty list.
@@ -23,14 +23,14 @@ c_ NestedInteger(o..):
         """
         p..
 
-    ___ add  elem):
+    ___ add  elem
         """
         Set this NestedInteger to hold a nested list and adds a nested integer elem to it.
         :rtype void
         """
         p..
 
-    ___ setInteger  value):
+    ___ setInteger  value
         """
         Set this NestedInteger to hold a single integer equal to value.
         :rtype void
@@ -53,15 +53,15 @@ c_ NestedInteger(o..):
         """
         p..
 
-c_ Solution(o..):
-    ___ depthSumInverse  nestedList):
+c_ Solution(o..
+    ___ depthSumInverse  nestedList
         queue = nestedList
         result = 0
         prev = 0
         w.... queue:
             sumVal = 0
             size = l..(queue)
-            ___ _ __ r..(size):
+            ___ _ __ r..(size
                 ni = queue.pop(0)
                 __ ni.isInteger
                     sumVal += ni.getInteger()

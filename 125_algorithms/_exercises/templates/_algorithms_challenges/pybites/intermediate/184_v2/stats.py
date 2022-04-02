@@ -7,7 +7,7 @@ TMP = os.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = os.path.j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
-__ n.. os.path.isfile(DATA):
+__ n.. os.path.isfile(DATA
     urlretrieve _*{S3}/{LOGS}', DATA)
 
 
@@ -16,7 +16,7 @@ c_ BiteStats:
     ___ _load_data  data) __ l..:
 
 
-        w__ open(data,'r') __ f:
+        w__ o.. data _ __ f:
             csv_reader = DictReader(f,delimiter=',')
 
             ___ row __ csv_reader:
@@ -27,7 +27,7 @@ c_ BiteStats:
 
 
 
-    ___ - , data=DATA):
+    ___ - , data=DATA
         rows = l..(_load_data(data))
 
     $
@@ -35,7 +35,7 @@ c_ BiteStats:
         """Get the number of unique Bites accessed"""
         bites = s..()
         ___ row __ rows:
-            bites.add(row['bite'])
+            bites.add(row 'bite' )
 
         r.. l..(bites)
 
@@ -48,8 +48,8 @@ c_ BiteStats:
         """Get the number of unique Bites resolved (completed=True)"""
         completed = s..()
         ___ row __ rows:
-            __ row['completed'] __ 'True':
-                completed.add(row['bite'])
+            __ row 'completed'  __ 'True':
+                completed.add(row 'bite' )
         r.. l..(completed)
 
 
@@ -59,7 +59,7 @@ c_ BiteStats:
         """Get the number of unique users in the data set"""
         users = s..()
         ___ row __ rows:
-            users.add(row['user'])
+            users.add(row 'user' )
 
         r.. l..(users)
             
@@ -70,8 +70,8 @@ c_ BiteStats:
            one or more Bites"""
         users = s..()
 
-        ___ row __ filter(l.... row: row['completed'] __ 'True',rows):
-            users.add(row['user'])
+        ___ row __ filter(l.... row: row 'completed'  __ 'True',rows
+            users.add(row 'user' )
 
         r.. l..(users)
 
@@ -83,13 +83,13 @@ c_ BiteStats:
            (= in most rows)"""
 
 
-        r.. Counter(row['bite'] ___ row __ rows).most_common(1)[0][0]
+        r.. Counter(row 'bite'  ___ row __ rows).most_common(1)[0][0]
 
     $
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
 
-        r.. Counter(row['user'] ___ row __ filter(l.... row: row['completed'] __ 'True',rows)).most_common(1)[0][0]
+        r.. Counter(row 'user'  ___ row __ filter(l.... row: row 'completed'  __ 'True',rows)).most_common(1)[0][0]
 
 
 

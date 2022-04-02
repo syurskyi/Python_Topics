@@ -34,7 +34,7 @@ Output: False
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
@@ -45,20 +45,20 @@ c_ Solution:
         root = root
         r.. walk(root, k)
 
-    ___ walk  node, k):
+    ___ walk  node, k
         __ n.. node:
             r.. F..
 
         target = k - node.val
-        __ find(root, target, node):
+        __ find(root, target, node
             r.. T..
 
-        __ walk(node.left, k) o. walk(node.right, k):
+        __ walk(node.left, k) o. walk(node.right, k
             r.. T..
 
         r.. F..
 
-    ___ find  node, target, existing):
+    ___ find  node, target, existing
         __ n.. node:
             r.. F..
 

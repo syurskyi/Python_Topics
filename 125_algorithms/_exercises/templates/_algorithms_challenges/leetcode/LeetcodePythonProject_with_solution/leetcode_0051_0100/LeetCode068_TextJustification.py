@@ -3,8 +3,8 @@ Created on Jan 22, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ fullJustify  words, maxWidth):
+c_ Solution(o..
+    ___ fullJustify  words, maxWidth
         """
         :type words: List[str]
         :type maxWidth: int
@@ -13,15 +13,15 @@ c_ Solution(o..):
         res, cur, num_of_letters    # list, [], 0
         ___ w __ words:
             __ num_of_letters + l..(w) + l..(cur) > maxWidth:
-                ___ i __ r..(maxWidth-num_of_letters):
+                ___ i __ r..(maxWidth-num_of_letters
                     cur[i%(l..(cur)-1 o. 1)] += ' '
                 res.a..(''.j..(cur))
                 cur, num_of_letters    # list, 0
             cur += [w]
             num_of_letters += l..(w)
-        r.. res + [' '.j..(cur).ljust(maxWidth)]
+        r.. res +  ' '.j..(cur).ljust(maxWidth)]
     
-    ___ fullJustify_orig  words, maxWidth):
+    ___ fullJustify_orig  words, maxWidth
         """
         :type words: List[str]
         :type maxWidth: int
@@ -30,7 +30,7 @@ c_ Solution(o..):
         result    # list
         __ n.. words: r.. result
         count, last = 0, 0
-        ___ i, word __ e..(words):
+        ___ i, word __ e..(words
             count += l..(word)
             __ count+i-last > maxWidth:
                 wordsLen = count-l..(word)
@@ -41,7 +41,7 @@ c_ Solution(o..):
                     eachLen = spaceLen/(i-last-1)
                     extraLen = spaceLen%(i-last-1)
                 s = ''
-                ___ k __ r..(last, i-1):
+                ___ k __ r..(last, i-1
                     s += words[k]
                     ce = 0
                     w.... ce < eachLen:
@@ -57,7 +57,7 @@ c_ Solution(o..):
                 last = i
                 count = l..(word)
         s = ''
-        ___ i __ r..(last, l..(words)-1):
+        ___ i __ r..(last, l..(words)-1
             count += l..(words[i])
             s += words[i] + ' '
         s += words[-1]

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ validUtf8  data):
+c_ Solution(o..
+  ___ validUtf8  data
     """
     :type data: List[int]
     :rtype: bool
@@ -9,7 +9,7 @@ c_ Solution(o..):
     new = T..
     followed = 0
     i = 0
-    w.... i < l..(data):
+    w.... i < l..(data
       __ new:
         followed = -1
         ___ mask __ masks:

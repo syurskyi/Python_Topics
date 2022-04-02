@@ -19,7 +19,7 @@ For now, the judge is able to judge based on one instance of gray code sequence.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ grayCode  n):
+    ___ grayCode  n
         """
         Graycode: The reflected binary code solves this problem by changing only one switch at a time, so there is never
         any ambiguity of position,
@@ -55,15 +55,15 @@ c_ Solution:
             r.. [0]
         result = [0, 1]
 
-        ___ num_of_bit __ r..(2, n+1):
+        ___ num_of_bit __ r..(2, n+1
             msb = 1<<num_of_bit-1
-            ___ element __ r..(result):
+            ___ element __ r..(result
                 result.a..(msb+element)
 
         r.. result
 
 
-    ___ grayCode_math  n):
+    ___ grayCode_math  n
         """
         a-th gray code is a>>1 XOR a
         :param n:

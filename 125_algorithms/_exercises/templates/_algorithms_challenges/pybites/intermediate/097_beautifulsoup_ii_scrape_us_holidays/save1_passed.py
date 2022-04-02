@@ -14,13 +14,13 @@ urlretrieve(
     holidays_page
 )
 
-w__ open(holidays_page) __ f:
-    content = f.read()
+w__ o.. holidays_page) __ f:
+    content = f.r..
 
 holidays = defaultdict(l..)
 
 
-___ get_us_bank_holidays(content=content):
+___ get_us_bank_holidays(content=content
     """Receive scraped html output, make a BS object, parse the bank
        holiday table (css class = list-table), and return a dict of
        keys -> months and values -> list of bank holidays"""
@@ -29,11 +29,11 @@ ___ get_us_bank_holidays(content=content):
     right_table = soup.find('table', {'class': 'list-table'})
 
     dates    # list
-    ___ row __ right_table.findAll('time'):
+    ___ row __ right_table.findAll('time'
         dates.a..(row.text[5:7])
 
     holiday    # list
-    ___ row __ right_table.findAll('a'):
+    ___ row __ right_table.findAll('a'
         holiday.a..(row.text.strip())
 
     l = z..(dates, holiday)

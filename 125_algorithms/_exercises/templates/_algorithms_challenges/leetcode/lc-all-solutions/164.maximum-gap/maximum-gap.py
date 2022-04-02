@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maximumGap  nums):
+c_ Solution(o..
+  ___ maximumGap  nums
     """
     :type nums: List[int]
     :rtype: int
@@ -26,6 +26,6 @@ c_ Solution(o..):
         bucketMax[index] = m..(bucketMax[index], num)
     bucketMin = [b ___ b __ bucketMin __ b __ n.. N..]
     bucketMax = [b ___ b __ bucketMax __ b __ n.. N..]
-    ___ i __ r..(0, l..(bucketMin) - 1):
+    ___ i __ r..(0, l..(bucketMin) - 1
       ans = m..(ans, bucketMin[i + 1] - bucketMax[i])
     r.. ans

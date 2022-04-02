@@ -5,14 +5,14 @@ Created on Feb 9, 2017
 '''
 
 # Definition for singly-linked list with a random pointer.
-c_ RandomListNode(o..):
-    ___ - , x):
+c_ RandomListNode(o..
+    ___ - , x
         label = x
         next = N..
         r__ = N..
 
-c_ Solution(o..):
-    ___ copyRandomList  head):
+c_ Solution(o..
+    ___ copyRandomList  head
         """
         :type head: RandomListNode
         :rtype: RandomListNode

@@ -8,4 +8,4 @@ STATIS = PATH+"static"
 
 df = pd.read_csv(EPIDEMIC+"\\cases_state.csv")
 
-print(df['cases_new'].describe())
+print(df 'cases_new' .describe())

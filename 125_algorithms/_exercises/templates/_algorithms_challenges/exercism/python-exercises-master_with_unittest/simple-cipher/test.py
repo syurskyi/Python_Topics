@@ -3,7 +3,7 @@ _______ unittest
 ____ simple_cipher _______ Caesar, Cipher
 
 
-c_ CipherTest(unittest.TestCase):
+c_ CipherTest(unittest.TestCase
     ___ test_caesar_encode1
         assertEqual(Caesar().encode('itisawesomeprogramminginpython'),
                          'lwlvdzhvrphsurjudpplqjlqsbwkrq')
@@ -19,7 +19,7 @@ c_ CipherTest(unittest.TestCase):
         assertEqual(Caesar().encode('1, 2, 3, Go!'), 'jr')
 
     ___ test_caesar_decode
-        assertEqual(Caesar().decode('yhqlylglylfl'), 'venividivici')
+        assertEqual(Caesar().d.. 'yhqlylglylfl'), 'venividivici')
 
     ___ test_cipher_encode1
         c = Cipher('a')
@@ -52,12 +52,12 @@ c_ CipherTest(unittest.TestCase):
                'gzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu')
         plaintext = 'adaywithoutlaughterisadaywasted'
         c = Cipher(key)
-        assertEqual(c.decode(c.encode(plaintext)), plaintext)
+        assertEqual(c.d.. c.encode(plaintext)), plaintext)
 
     ___ test_cipher_compositiion2
         plaintext = 'adaywithoutlaughterisadaywasted'
         c = Cipher()
-        assertEqual(c.decode(c.encode(plaintext)), plaintext)
+        assertEqual(c.d.. c.encode(plaintext)), plaintext)
 
     ___ test_cipher_random_key
         c = Cipher()

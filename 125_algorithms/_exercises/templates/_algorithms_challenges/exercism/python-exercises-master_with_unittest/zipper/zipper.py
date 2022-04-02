@@ -1,6 +1,6 @@
-c_ Zipper(o..):
+c_ Zipper(o..
     @staticmethod
-    ___ from_tree(tree):
+    ___ from_tree(tree
         p..
 
     ___ value

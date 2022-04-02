@@ -1,6 +1,6 @@
 
-c_ Solution(o..):
-    ___ wiggleSort  nums):
+c_ Solution(o..
+    ___ wiggleSort  nums
         median = kthLargestElement(nums, (l..(nums)+1)//2)
         n = l..(nums)
         left = 0
@@ -19,10 +19,10 @@ c_ Solution(o..):
             ____:
                 i += 1
     
-    ___ newIndex  index, n):
+    ___ newIndex  index, n
         r.. (1+2*index)%(n|1)
     
-    ___ kthLargestElement  nums, k):
+    ___ kthLargestElement  nums, k
         shuffle(nums)
         lo = 0
         hi = l..(nums)-1
@@ -37,7 +37,7 @@ c_ Solution(o..):
                 _____
         r.. nums[k]
     
-    ___ partition  nums, lo, hi):
+    ___ partition  nums, lo, hi
         i, j = lo+1, hi
         w... T...
             w.... i < hi a.. nums[i] <= nums[lo]:
@@ -50,13 +50,13 @@ c_ Solution(o..):
         nums[lo], nums[j] = nums[j], nums[lo]
         r.. j
     
-    ___ shuffle  nums):
+    ___ shuffle  nums
         _______ r__
-        ___ i __ r..(l..(nums)-1, 0, -1):
+        ___ i __ r..(l..(nums)-1, 0, -1
             ind = r__.randint(0, i)
             nums[i], nums[ind] = nums[ind], nums[i]
     
-    ___ wiggleSortWithSorting  nums):
+    ___ wiggleSortWithSorting  nums
         nums.s..()
         half = l..(nums[::2])-1
         nums[::2], nums[1::2] = nums[half::-1], nums[:half:-1]

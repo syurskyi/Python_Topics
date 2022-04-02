@@ -1,11 +1,11 @@
 c_ Solution:
-    ___ getHint  secret, guess):
+    ___ getHint  secret, guess
         """
         :type secret: str
         :type guess: str
         :rtype: str
         """
-        __ n.. secret o. n.. guess o. l..(secret) != l..(guess):
+        __ n.. secret o. n.. guess o. l..(secret) != l..(guess
             r.. ''
 
         TMPL = '{}A{}B'
@@ -33,13 +33,13 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ getHint  secret, guess):
+    ___ getHint  secret, guess
         """
         :type secret: str
         :type guess: str
         :rtype: str
         """
-        __ n.. secret o. n.. guess o. l..(secret) != l..(guess):
+        __ n.. secret o. n.. guess o. l..(secret) != l..(guess
             r.. ''
 
         TMPL = '{}A{}B'
@@ -55,7 +55,7 @@ c_ Solution:
                 cnt_s[i..(secret[i])] += 1
                 cnt_g[i..(guess[i])] += 1
 
-        ___ i __ r..(10):
+        ___ i __ r..(10
             cows += m..(cnt_s[i], cnt_g[i])
 
         r.. TMPL.f..(bulls, cows)

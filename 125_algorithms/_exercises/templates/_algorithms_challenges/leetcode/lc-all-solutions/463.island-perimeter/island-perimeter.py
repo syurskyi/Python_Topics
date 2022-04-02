@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ islandPerimeter  grid):
+c_ Solution(o..
+  ___ islandPerimeter  grid
     """
     :type grid: List[List[int]]
     :rtype: int
     """
 
-    ___ helper(grid, i, j):
+    ___ helper(grid, i, j
       res = 0
       __ grid[i][j] __ 0:
         r.. 0

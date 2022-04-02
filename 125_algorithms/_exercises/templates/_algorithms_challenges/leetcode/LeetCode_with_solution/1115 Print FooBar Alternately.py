@@ -38,14 +38,14 @@ ____ typing _______ Callable
 
 
 c_ FooBar:
-    ___ - , n):
+    ___ - , n
         n = n
         locks = [Lock(), Lock()]
         locks[1].a..
 
 
     ___ foo  printFoo: Callable[[], N..]) __ N..
-        ___ i __ r..(n):
+        ___ i __ r..(n
             locks[0].a..
             # printFoo() outputs "foo". Do not change or remove this line.
             printFoo()
@@ -53,7 +53,7 @@ c_ FooBar:
 
 
     ___ bar  printBar: Callable[[], N..]) __ N..
-        ___ i __ r..(n):
+        ___ i __ r..(n
             locks[1].a..
             # printBar() outputs "bar". Do not change or remove this line.
             printBar()

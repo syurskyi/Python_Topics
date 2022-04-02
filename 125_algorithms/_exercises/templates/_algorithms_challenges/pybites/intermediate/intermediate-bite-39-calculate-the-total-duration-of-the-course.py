@@ -27,7 +27,7 @@ ___ get_all_timestamps
 
         Return a list of MM:SS timestamps
     """
-    w__ open(COURSE_TIMES, 'r') __ f:
+    w__ o.. COURSE_TIMES, 'r') __ f:
         result    # list
         ___ line __ f:
             timestamp = __.f..(r'(\d{1,2}:\d{1,2})', line)
@@ -37,7 +37,7 @@ ___ get_all_timestamps
     r.. result
 
 
-___ calc_total_course_duration(timestamps):
+___ calc_total_course_duration(timestamps
     """Takes timestamps list as returned by get_all_timestamps
        and calculates the total duration as HH:MM:SS"""
     s.. = d__ y.._2000,  m.._1,  d.._1, hour=0, minute=0, second=0)

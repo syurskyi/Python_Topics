@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ numberOfBoomerangs  points):
+c_ Solution(o..
+  ___ numberOfBoomerangs  points
     """
     :type points: List[List[int]]
     :rtype: int

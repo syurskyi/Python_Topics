@@ -11,13 +11,13 @@ confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on
 __author__ = 'Danyang'
 # Definition for a  binary tree node
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 c_ Solution:
-    ___ isValidBST  root):
+    ___ isValidBST  root
         """
         Google Phone Interview Question, 20 Sep 2013
         recursive dfs
@@ -29,22 +29,22 @@ c_ Solution:
         __ n.. root:
             r.. T..
 
-        __ n.. isValidBST(root.left):
+        __ n.. isValidBST(root.left
             r.. F..
-        __ n.. isValidBST(root.right):
+        __ n.. isValidBST(root.right
             r.. F..
 
         __ root.left:
             __ n.. get_largest(root.left) < root.val:
                 r.. F..
         __ root.right:
-            __ n.. root.val < get_smallest(root.right):
+            __ n.. root.val < get_smallest(root.right
                 r.. F..
 
 
         r.. T..
 
-    ___ get_largest  root):
+    ___ get_largest  root
         """
         possible dp
         :param root: TreeNode
@@ -54,7 +54,7 @@ c_ Solution:
             r.. root.val
         r.. get_largest(root.right)
 
-    ___ get_smallest  root):
+    ___ get_smallest  root
         """
         possible dp
         :param root: TreeNode

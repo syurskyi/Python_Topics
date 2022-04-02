@@ -16,6 +16,6 @@ ___ traffic_light
 
 __ _____ __ _____
     # print a sample of 10 states if run as standalone program
-    ___ state __ islice(traffic_light(), 10):
+    ___ state __ islice(traffic_light(), 10
         print _*{state.command}! The light is {state.color}')
         sleep(state.timeout)

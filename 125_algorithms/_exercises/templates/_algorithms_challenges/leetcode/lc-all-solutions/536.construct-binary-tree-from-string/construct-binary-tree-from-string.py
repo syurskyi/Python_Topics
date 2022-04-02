@@ -5,8 +5,8 @@
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-  ___ str2tree  s):
+c_ Solution(o..
+  ___ str2tree  s
     """
     :type s: str
     :rtype: TreeNode
@@ -14,7 +14,7 @@ c_ Solution(o..):
     __ s:
       cnt = start = 0
       root = N..
-      ___ i, c __ e..(s):
+      ___ i, c __ e..(s
         __ c __ "(":
           __ n.. root a.. cnt __ 0:
             root = TreeNode(s[:i])

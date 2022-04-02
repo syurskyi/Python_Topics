@@ -97,7 +97,7 @@ ___ get_continent(country: s..) __ s..:
 ___ _get_pycon_data
     """Helper function that retrieves the required PyCon data"""
     w__ requests.Session() __ session:
-        r.. session.get(PYCON_DATA).content.decode("utf-8")
+        r.. session.get(PYCON_DATA).content.d.. "utf-8")
 
 
 ___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
@@ -114,14 +114,14 @@ ___ get_pycon_events(data=_get_pycon_data()) __ List[PyCon]:
     pycon_events    # list
     ___ event __ events:
         event = json.loads(event.getText())
-        name = event['name']
-        __ n.. name.startswith('PyCon'):
+        name = event 'name'
+        __ n.. name.startswith('PyCon'
             _____
-        start_date = p..(event['startDate'])
-        end_date = p..(event['endDate'])
-        url = event['url']
-        city = event['location']['address']['addressLocality']
-        country = event['location']['address']['addressCountry']
+        start_date = p..(event 'startDate' )
+        end_date = p..(event 'endDate' )
+        url = event 'url'
+        city = event 'location'  'address'  'addressLocality'
+        country = event 'location'  'address'  'addressCountry'
 
         pycon_event = PyCon(name,city,country,start_date,end_date,url)
 

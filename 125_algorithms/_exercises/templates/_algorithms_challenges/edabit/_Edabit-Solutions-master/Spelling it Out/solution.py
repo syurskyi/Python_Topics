@@ -1,4 +1,4 @@
-___ spelling(txt):
+___ spelling(txt
     output    # list
     s = ""
     ___ i __ txt:

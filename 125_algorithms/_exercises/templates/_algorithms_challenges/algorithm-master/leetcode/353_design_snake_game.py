@@ -36,7 +36,7 @@ _______ c..
 
 
 c_ SnakeGame:
-    ___ - , width, height, food):
+    ___ - , width, height, food
         """
         :type width: int, screen width
         :type height: int, screen height
@@ -68,7 +68,7 @@ c_ SnakeGame:
             'R': ( 0,  1),
         }
 
-    ___ move  direction):
+    ___ move  direction
         """Moves the snake.
         :type direction: str, 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
         :rtype: int, The game's score after the move. Return -1 if game over.
@@ -91,7 +91,7 @@ c_ SnakeGame:
         hx = x + dx
         hy = y + dy
 
-        __ n.. (0 <= hx < height a.. 0 <= hy < width):
+        __ n.. (0 <= hx < height a.. 0 <= hy < width
             is_over = T..
             r.. SCORE_IN_OVER
 
@@ -125,7 +125,7 @@ c_ SnakeGame:
         """
         There is no food anymore
         """
-        __ fi >= l..(food):
+        __ fi >= l..(food
             is_over = T..
 
         r.. l..(snake) - 1

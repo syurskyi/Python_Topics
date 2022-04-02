@@ -3,8 +3,8 @@ Created on Oct 7, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ robotSim  commands, obstacles):
+c_ Solution(o..
+    ___ robotSim  commands, obstacles
         """
         :type commands: List[int]
         :type obstacles: List[List[int]]
@@ -18,16 +18,16 @@ c_ Solution(o..):
         ___ ob __ obstacles:
             hashset.add(t..(ob))
         ___ c __ commands:
-            __ c __ (-1, -2):
+            __ c __ (-1, -2
                 d = calDirection(d, c)
             ____:
-                ___ _ __ r..(c):
+                ___ _ __ r..(c
                     __ (pos[0] + dirs[d][0], pos[1] + dirs[d][1]) n.. __ hashset:
                         pos = [pos[0] + dirs[d][0], pos[1] + dirs[d][1]]
             res = m..(res, pos[0]**2 + pos[1]**2)
         r.. res
     
-    ___ calDirection  d, c):
+    ___ calDirection  d, c
         __ c __ -2:
             d -= 1
         ____ c __ -1:

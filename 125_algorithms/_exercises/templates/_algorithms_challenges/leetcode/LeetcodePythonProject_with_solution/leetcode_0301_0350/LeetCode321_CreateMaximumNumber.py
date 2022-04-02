@@ -4,11 +4,11 @@ Created on Mar 18, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ maxNumber  nums1, nums2, k):
+c_ Solution(o..
+    ___ maxNumber  nums1, nums2, k
         len1, len2 = l..(nums1), l..(nums2)
         result    # list
-        ___ i __ r..(0, k+1):
+        ___ i __ r..(0, k+1
             j = k-i
             __ i > len1 o. j > len2:
                 _____
@@ -18,17 +18,17 @@ c_ Solution(o..):
             result = m..(result, tmpResult)
         r.. result
     
-    ___ getMax  nums, maxLen):
+    ___ getMax  nums, maxLen
         result    # list
         size = l..(nums)
-        ___ x __ r..(size):
+        ___ x __ r..(size
             w.... result a.. l..(result)+size-x>maxLen a.. result[-1]<nums[x]:
                 result.pop()
             __ l..(result) < maxLen:
                 result.a..(nums[x])
         r.. result
     
-    ___ merge  nums1, nums2):
+    ___ merge  nums1, nums2
         result    # list
         w.... nums1 a.. nums2:
             __ nums1 >= nums2:

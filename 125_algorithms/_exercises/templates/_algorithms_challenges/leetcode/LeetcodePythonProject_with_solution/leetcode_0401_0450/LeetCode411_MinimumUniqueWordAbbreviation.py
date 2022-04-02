@@ -4,26 +4,26 @@ Created on Apr 11, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minAbbreviation  target, dictionary):
+c_ Solution(o..
+    ___ minAbbreviation  target, dictionary
         diffs    # list
         m = l..(target)
         ___ word __ dictionary:
             __ l..(word) != m: _____
             bits = 0
-            ___ i, c __ e..(word):
+            ___ i, c __ e..(word
                 __ c != target[i]:
                     bits += 2**i
             diffs.a..(bits)
         __ n.. diffs:
             r.. s..(m)
         abbrs    # list
-        ___ i __ r..(2**m):
-            __ a..(d&i ___ d __ diffs):
+        ___ i __ r..(2**m
+            __ a..(d&i ___ d __ diffs
                 abbrs.a..(abbr(target, i))
         r.. m..(abbrs, key=l.... x: l..(x))
     
-    ___ abbr  target, num):
+    ___ abbr  target, num
         word, count = '', 0
         ___ w __ target:
             __ num & 1 __ 1:

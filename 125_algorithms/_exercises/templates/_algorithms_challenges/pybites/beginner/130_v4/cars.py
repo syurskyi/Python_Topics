@@ -11,13 +11,13 @@ w__ requests.Session() __ s:
 
 
 # your turn:
-___ most_prolific_automaker(year):
+___ most_prolific_automaker(year
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
-    r.. ((Counter([x['automaker'] ___ x __ data __ x['year'] __ year]).most_common(1))[0])[0]
+    r.. ((Counter([x 'automaker'  ___ x __ data __ x 'year'  __ year]).most_common(1))[0])[0]
 
 
-___ get_models(automaker, year):
+___ get_models(automaker, year
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
-    r.. {x['model'] ___ x __ data __ x['automaker'] __ automaker a.. x['year'] __ year}
+    r.. {x 'model'  ___ x __ data __ x 'automaker'  __ automaker a.. x 'year'  __ year}

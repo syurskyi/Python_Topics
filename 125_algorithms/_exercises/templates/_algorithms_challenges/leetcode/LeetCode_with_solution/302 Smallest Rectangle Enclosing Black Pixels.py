@@ -6,8 +6,8 @@ _______ bisect
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ minArea  image, x, y):
+c_ Solution(o..
+    ___ minArea  image, x, y
         """
         :type image: List[List[str]]
         :type x: int
@@ -25,9 +25,9 @@ c_ Solution(o..):
         ]
 
         y_lo = bisect.bisect_left(yaxis, 1, 0, y)
-        y_hi = bisect.bisect_left(map(l.... e: 1^e, yaxis), 1, y)  # bisect must be sorted
+        y_hi = bisect.bisect_left m..(l.... e: 1^e, yaxis), 1, y)  # bisect must be sorted
         x_lo = bisect.bisect_left(xaxis, 1, 0, x)
-        x_hi = bisect.bisect_left(map(l.... e: 1^e, xaxis), 1, x)
+        x_hi = bisect.bisect_left m..(l.... e: 1^e, xaxis), 1, x)
         r.. (y_hi-y_lo)*(x_hi-x_lo)
 
 

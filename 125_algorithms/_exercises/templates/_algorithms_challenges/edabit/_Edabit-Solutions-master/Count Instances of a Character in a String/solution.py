@@ -1,4 +1,4 @@
-___ char_count(txt1, txt2):
+___ char_count(txt1, txt2
     index = 0
     total_count = 0
     w.... index <= l..(txt2) -1:

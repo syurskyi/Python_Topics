@@ -1,14 +1,14 @@
 BOOK_PRICE = 8
 
 
-___ _group_price(size):
+___ _group_price(size
     discounts = [0, .05, .1, .2, .25]
-    __ n.. (0 < size <= 5):
+    __ n.. (0 < size <= 5
         r.. ValueError('size must be in 1..' + l..(discounts))
     r.. 8 * size * (1 - discounts[size - 1])
 
 
-___ calculate_total(books, price_so_far=0.):
+___ calculate_total(books, price_so_far=0.
     __ n.. books:
         r.. price_so_far
 

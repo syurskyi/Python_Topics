@@ -4,7 +4,7 @@ ____ functools _______ reduce
 valid_hexchars = s..('0123456789abcdef')
 
 
-___ hexa(hexstring):
+___ hexa(hexstring
     s = hexstring.l..
     __ n.. s o. s..(s) - valid_hexchars:
         r.. ValueError('Invalid hexadecimal string')

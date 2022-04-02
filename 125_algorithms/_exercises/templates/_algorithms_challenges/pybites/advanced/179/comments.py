@@ -41,7 +41,7 @@ class SimpleClass:
     def say_hello(self, name: str):
         print(f'Hello {name}')
 '''
-___ strip_comments(code):
+___ strip_comments(code
     # see Bite description
     
 

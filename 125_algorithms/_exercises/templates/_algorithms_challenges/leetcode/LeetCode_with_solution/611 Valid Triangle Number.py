@@ -32,7 +32,7 @@ c_ Solution:
         ret = 0
         nums.s..()
         n = l..(nums)
-        ___ k __ r..(n-1, 1, -1):
+        ___ k __ r..(n-1, 1, -1
             i = 0
             j = k - 1
             w.... i < j:
@@ -56,7 +56,7 @@ c_ Solution:
         ret = 0
         nums.s..()
         n = l..(nums)
-        ___ i __ r..(n - 2):
+        ___ i __ r..(n - 2
             j = i + 1
             k = n - 1
             w.... j < k:
@@ -80,11 +80,11 @@ c_ Solution:
         nums.s..()
         n = l..(nums)
         ret = 0
-        ___ i __ r..(n):
-            ___ j __ r..(i + 1, n):
+        ___ i __ r..(n
+            ___ j __ r..(i + 1, n
                 __ (i, j) n.. __ cache:
                     cur = 0
-                    ___ k __ r..(j + 1, n):
+                    ___ k __ r..(j + 1, n
                         __ nums[k] < nums[i] + nums[j]:
                             cur += 1
                         ____:

@@ -1,4 +1,4 @@
-___ get_others(map_, r, c):
+___ get_others(map_, r, c
     """Go through the map and check the size of the island
        (= summing up all the 1s that are part of the island)
 
@@ -22,7 +22,7 @@ ___ get_others(map_, r, c):
     r.. num
 
 
-___ island_size(map_):
+___ island_size(map_
     """Hint: use the get_others helper
 
     Input: the map
@@ -30,8 +30,8 @@ ___ island_size(map_):
     """
     perimeter = 0
 
-    ___ r, row __ e..(map_):
-        ___ c, val __ e..(row):
+    ___ r, row __ e..(map_
+        ___ c, val __ e..(row
             __ val __ 1:
                 perimeter += 4 - get_others(map_, r, c)
     r.. perimeter

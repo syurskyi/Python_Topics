@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ HashHeapq:
-    ___ - ):
+    ___ -
         __heap    # list
 
     ___  -r
@@ -14,7 +14,7 @@ c_ HashHeapq:
     ___ __bool__
         r.. b..(__heap)
 
-    ___ push  val):
+    ___ push  val
         heapq.heappush(__heap, val)
 
     ___ pop
@@ -23,7 +23,7 @@ c_ HashHeapq:
 
         r.. heapq.heappop(__heap)
 
-    ___ remove  val):
+    ___ remove  val
         __ n.. __heap:
             r..
 
@@ -52,7 +52,7 @@ c_ HashHeapq:
 
 
 c_ Solution:
-    ___ medianSlidingWindow  nums, k):
+    ___ medianSlidingWindow  nums, k
         """
         :type nums: List[int]
         :type k: int
@@ -93,10 +93,10 @@ c_ Solution:
         w.... l..(minheap) > l..(maxheap) + 1:
             maxheap.push(- minheap.pop())
 
-        w.... l..(maxheap) > l..(minheap):
+        w.... l..(maxheap) > l..(minheap
             minheap.push(- maxheap.pop())
 
-        __ l..(minheap) > l..(maxheap):
+        __ l..(minheap) > l..(maxheap
             r.. minheap.top() * 1.0
 
         r.. (minheap.top() - maxheap.top()) / 2.0

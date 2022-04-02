@@ -9,7 +9,7 @@ _______ unittest
 ____ series _______ slices
 
 
-c_ SeriesTest(unittest.TestCase):
+c_ SeriesTest(unittest.TestCase
     ___ test_slices_of_one
         assertEqual(
             slices("01234", 1),
@@ -37,11 +37,11 @@ c_ SeriesTest(unittest.TestCase):
             [[0, 1, 2, 3, 4]], )
 
     ___ test_overly_long_slice
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             slices("012", 4)
 
     ___ test_overly_short_slice
-        w__ assertRaises(ValueError):
+        w__ assertRaises(ValueError
             slices("01234", 0)
 
 

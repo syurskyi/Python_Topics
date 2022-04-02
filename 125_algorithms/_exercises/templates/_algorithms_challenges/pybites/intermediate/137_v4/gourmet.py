@@ -91,7 +91,7 @@ SPARKLING_WINES = [
 ALL_WINES = [*RED_WINES, *WHITE_WINES, *SPARKLING_WINES]
 
 
-___ similarity(s1, s2):
+___ similarity(s1, s2
     '''Return the similarity of two strings s1 and s2
     similarity is defined as the sum of the counts of characters
     present in the intersection of the two strings divided by
@@ -112,7 +112,7 @@ ___ similarity(s1, s2):
     r.. s..(vals) / (1 + pow(dlen, 2))
 
 
-___ best_match_per_wine(wine_type="all"):
+___ best_match_per_wine(wine_type="all"
     """ wine cheese pair with the highest match score
     returns a tuple which contains wine, cheese, score
     """
@@ -140,7 +140,7 @@ ___ match_wine_5cheeses
     ]
     """
     wine_5 = l..()
-    ___ wine __ s..(ALL_WINES):
+    ___ wine __ s..(ALL_WINES
         cheeses = s..(CHEESES, key=l.... x: (-similarity(wine, x), x))[:5]
         wine_5.a..((wine, cheeses))
     r.. wine_5

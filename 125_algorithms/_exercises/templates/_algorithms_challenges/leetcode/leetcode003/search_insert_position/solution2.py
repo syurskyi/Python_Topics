@@ -14,8 +14,8 @@ Here are few examples.
 
 """
 
-c_ Solution(o..):
-    ___ searchInsert  nums, target):
+c_ Solution(o..
+    ___ searchInsert  nums, target
         n = l..(nums)
         left = 0
         right = n - 1

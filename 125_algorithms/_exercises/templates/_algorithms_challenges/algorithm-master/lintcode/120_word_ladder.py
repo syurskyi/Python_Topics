@@ -9,7 +9,7 @@ Test Case:
 
 
 c_ Solution:
-    ___ ladderLength  s, e, D):
+    ___ ladderLength  s, e, D
         """
         :type s: str
         :type e: str
@@ -17,7 +17,7 @@ c_ Solution:
         :rtype: int
         """
         __ (n.. s o. n.. e o.
-            l..(s) != l..(e) o. n.. D):
+            l..(s) != l..(e) o. n.. D
             r.. 0
         __ s __ e:
             r.. 1
@@ -29,7 +29,7 @@ c_ Solution:
 
         n = l..(s)
         next_words = [N..] * n
-        ___ i __ r..(n):
+        ___ i __ r..(n
             next_words[i] = _words    # dict
             ___ word __ D:
                 key = word[:i] + word[i + 1:]
@@ -40,7 +40,7 @@ c_ Solution:
         queue = [e]
         distance = {e: 1}
         ___ word __ queue:
-            ___ _word __ get_next_word(word, next_words):
+            ___ _word __ get_next_word(word, next_words
                 __ _word __ distance:
                     _____
                 distance[_word] = distance[word] + 1
@@ -50,7 +50,7 @@ c_ Solution:
 
         r.. 0
 
-    ___ get_next_word  word, next_words):
+    ___ get_next_word  word, next_words
         ___ i __ r..(l..(word)):
             key = word[:i] + word[i + 1:]
             __ key n.. __ next_words[i]:

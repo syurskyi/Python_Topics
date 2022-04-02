@@ -3,8 +3,8 @@ Created on Oct 21, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ nextClosestTime  time):
+c_ Solution(o..
+    ___ nextClosestTime  time
         """
         :type time: str
         :rtype: str
@@ -15,13 +15,13 @@ c_ Solution(o..):
         charSet = s..(arr)
         __ l..(charSet) __ 1:
             r.. time
-        ___ i __ r..(1, 24*60):
+        ___ i __ r..(1, 24*60
             valid, res = increaseAndCheck(hh, mm, i, charSet)
             __ valid:
                 r.. res
         r.. time
     
-    ___ increaseAndCheck  hh, mm, i, charSet):
+    ___ increaseAndCheck  hh, mm, i, charSet
         mm += i
         __ mm >= 60:
             carry = mm//60

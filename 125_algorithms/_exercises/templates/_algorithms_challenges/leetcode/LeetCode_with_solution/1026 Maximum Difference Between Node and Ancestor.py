@@ -26,14 +26,14 @@ Each node will have value between 0 and 100000.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ - ):
+    ___ -
         ret = 0
 
     ___ maxAncestorDiff  root: TreeNode) __ i..:
@@ -43,7 +43,7 @@ c_ Solution:
         dfs(root)
         r.. ret
 
-    ___ dfs  node):
+    ___ dfs  node
         __ n.. node:
             r.. f__("inf"), -f__("inf")
 
@@ -51,9 +51,9 @@ c_ Solution:
         rmin, rmax = dfs(node.right)
         mini = m..(lmin, rmin)
         maxa = m..(lmax, rmax)
-        __ mini != f__("inf"):
+        __ mini != f__("inf"
             ret = m..(ret, abs(mini - node.val))
-        __ maxa != -f__("inf"):
+        __ maxa != -f__("inf"
             ret = m..(ret, abs(maxa - node.val))
 
         r.. m..(mini, node.val), m..(maxa, node.val)

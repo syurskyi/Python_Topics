@@ -37,16 +37,16 @@ w__ requests.Session() __ s:
 
 
 # your turn:
-___ most_prolific_automaker(year):
+___ most_prolific_automaker(year
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
     result    # dict
     ___ d __ data:
-        __ d['year'] __ year:
+        __ d 'year'  __ year:
             ___
-                result[d['automaker']] += 1
+                result[d 'automaker']] += 1
             ______:
-                result[d['automaker']] = 0
+                result[d 'automaker']] = 0
     t = ""
     cur = 0
     ___ k,v __ result.i..:
@@ -56,13 +56,13 @@ ___ most_prolific_automaker(year):
     r.. t
 
 
-___ get_models(automaker, year):
+___ get_models(automaker, year
     """Filter cars 'data' by 'automaker' and 'year',
        return a set of models (a 'set' to avoid duplicate models)"""
     s = s..()
     ___ d __ data:
-        __ d['automaker'] __ automaker a.. d['year'] __ year:
-            s.add(d['model'])
+        __ d 'automaker'  __ automaker a.. d 'year'  __ year:
+            s.add(d 'model' )
     r.. s
 
 most_prolific_automaker(1995)

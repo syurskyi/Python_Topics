@@ -2,7 +2,7 @@
 # Score: 10
 
 
-___ handler(result):
+___ handler(result
     inp = input().s..
     command = inp[0]
     values = inp[1:]

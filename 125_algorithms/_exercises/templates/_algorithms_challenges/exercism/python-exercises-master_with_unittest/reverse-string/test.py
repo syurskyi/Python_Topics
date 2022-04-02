@@ -5,7 +5,7 @@ ____ reverse_string _______ reverse
 
 # Tests adapted from `problem-specifications//canonical-data.json` @ v1.1.0
 
-c_ ReverseStringTest(unittest.TestCase):
+c_ ReverseStringTest(unittest.TestCase
     ___ test_empty_string
             assertEqual(reverse(''), '')
 

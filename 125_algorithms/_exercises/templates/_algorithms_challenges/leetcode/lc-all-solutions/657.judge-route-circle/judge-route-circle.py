@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ judgeCircle  moves):
+c_ Solution(o..
+  ___ judgeCircle  moves
     """
     :type moves: str
     :rtype: bool

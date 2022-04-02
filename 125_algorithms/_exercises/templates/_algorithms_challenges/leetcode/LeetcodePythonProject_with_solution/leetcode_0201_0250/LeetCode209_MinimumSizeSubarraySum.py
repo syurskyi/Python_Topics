@@ -4,8 +4,8 @@ Created on Feb 19, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ minSubArrayLen  s, nums):
+c_ Solution(o..
+    ___ minSubArrayLen  s, nums
         """
         :type s: int
         :type nums: List[int]
@@ -15,7 +15,7 @@ c_ Solution(o..):
         start, end = 0, 0
         minLen = l..(nums) + 1
         sumVal = 0
-        w.... start <= end a.. end < l..(nums):
+        w.... start <= end a.. end < l..(nums
             sumVal += nums[end]
             __ sumVal >= s:
                 w.... start <= end a.. sumVal >= s:
@@ -23,24 +23,24 @@ c_ Solution(o..):
                     minLen = m..(minLen, end-start+1)
                     start+=1
             end+=1
-        __ minLen > l..(nums):
+        __ minLen > l..(nums
             r.. 0
         ____:
             r.. minLen
     
-    ___ minSubArrayLenBS  s, nums):
+    ___ minSubArrayLenBS  s, nums
         sums = [0]*(l..(nums)+1)
         ___ i __ r..(1, l..(sums)):
             sums[i] = sums[i-1] + nums[i-1]
         minLen = l..(nums)+1
         ___ i __ r..(l..(sums)):
             end = binarySearch(i+1, l..(sums)-1, sums[i]+s, sums)
-            __ end __ l..(sums):
+            __ end __ l..(sums
                 _____
             minLen = m..(minLen, end-i)
         r.. minLen __ minLen <= l..(nums) ____ 0
     
-    ___ binarySearch  low, high, key, sums):
+    ___ binarySearch  low, high, key, sums
         w.... low <= high:
             mid = i..((low+high)/2)
             __ sums[mid] >= key:

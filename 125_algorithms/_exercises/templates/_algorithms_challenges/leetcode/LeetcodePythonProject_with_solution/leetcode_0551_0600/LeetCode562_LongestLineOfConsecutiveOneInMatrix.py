@@ -3,8 +3,8 @@ Created on Aug 29, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ longestLine  M):
+c_ Solution(o..
+    ___ longestLine  M
         """
         :type M: List[List[int]]
         :rtype: int
@@ -14,11 +14,11 @@ c_ Solution(o..):
         maxLen = 0
         m, n = l..(matrix), l..(matrix[0])
         dp = [[[0]*4 ___ _ __ r..(n)] ___ _ __ r..(m)]
-        ___ i __ r..(m):
-            ___ j __ r..(n):
+        ___ i __ r..(m
+            ___ j __ r..(n
                 __ matrix[i][j] __ 0:
                     _____
-                ___ k __ r..(4):
+                ___ k __ r..(4
                     dp[i][j][k] = 1
                 __ j > 0:
                     dp[i][j][0] += dp[i][j-1][0]

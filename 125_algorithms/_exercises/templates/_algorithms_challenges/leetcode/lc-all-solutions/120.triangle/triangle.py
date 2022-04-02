@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minimumTotal  triangle):
+c_ Solution(o..
+  ___ minimumTotal  triangle
     """
     :type triangle: List[List[int]]
     :rtype: int

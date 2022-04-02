@@ -10,7 +10,7 @@ HIGH_CARD = 0
 
 
 c_ Poker:
-    ___ - , hands):
+    ___ - , hands
         hands = [Hand(hand) ___ hand __ hands]
 
     ___ best_hand
@@ -25,7 +25,7 @@ c_ Poker:
 
 
 c_ Hand:
-    ___ - , hand):
+    ___ - , hand
         hand = hand
         cards = [Card(card) ___ card __ hand]
         ranks = [card.rank ___ card __ cards]
@@ -93,7 +93,7 @@ c_ Card:
                   "K": 13,
                   "A": 14}
 
-    ___ - , inp):
+    ___ - , inp
         rank = numberify_face_cards(inp[0])
         suit = inp[1]
 
@@ -101,11 +101,11 @@ c_ Card:
         r.. s..(rank) + suit
 
     @classmethod
-    ___ numberify_face_cards(cls, rank):
+    ___ numberify_face_cards(cls, rank
         __ rank __ l..(cls.FACE_CARDS.k..
             r.. cls.FACE_CARDS[rank]
         r.. i..(rank)
 
 
-___ poker(inp):
+___ poker(inp
     r.. Poker(inp).best_hand()

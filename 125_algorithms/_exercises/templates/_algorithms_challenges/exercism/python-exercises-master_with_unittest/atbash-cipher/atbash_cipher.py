@@ -1,6 +1,6 @@
-___ encode(s__):
+___ encode(s__
     p..
 
 
-___ decode(s__):
+___ d.. s__
     p..

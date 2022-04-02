@@ -12,8 +12,8 @@ Examples:
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ removeInvalidParentheses  s):
+c_ Solution(o..
+    ___ removeInvalidParentheses  s
         """
         Brute force: BFS and then validate
 
@@ -28,7 +28,7 @@ c_ Solution(o..):
         dfs(s, "", 0, N.., 0, rmcnt, ret)
         r.. ret
 
-    ___ minrm  s):
+    ___ minrm  s
         """
         Find the minimal removal count to limit the search depth
         returns minimal number of removals
@@ -47,7 +47,7 @@ c_ Solution(o..):
         rmcnt += left
         r.. rmcnt
 
-    ___ dfs  s, cur, left, pi, i, rmcnt, ret):
+    ___ dfs  s, cur, left, pi, i, rmcnt, ret
         """
         Remove parenthesis
         backtracking, post-check
@@ -59,14 +59,14 @@ c_ Solution(o..):
         :param rmcnt: number of remaining removals needed
         :param ret: results
         """
-        __ left < 0 o. rmcnt < 0 o. i > l..(s):
+        __ left < 0 o. rmcnt < 0 o. i > l..(s
             r..
-        __ i __ l..(s):
+        __ i __ l..(s
             __ rmcnt __ 0 a.. left __ 0:
                 ret.a..(cur)
             r..
 
-        __ s[i] n.. __ ("(", ")"):  # skip non-parenthesis
+        __ s[i] n.. __ ("(", ")"  # skip non-parenthesis
             dfs(s, cur+s[i], left, N.., i+1, rmcnt, ret)
         ____:
             __ pi __ s[i]:  # jump, if rm, rm them all to avoid duplication
@@ -79,4 +79,4 @@ c_ Solution(o..):
 
 
 __ _______ __ _______
-    ... Solution().removeInvalidParentheses("(a)())()") __ ['(a())()', '(a)()()']
+    ... Solution().removeInvalidParentheses("(a)())()") __  '(a())()', '(a)()()'

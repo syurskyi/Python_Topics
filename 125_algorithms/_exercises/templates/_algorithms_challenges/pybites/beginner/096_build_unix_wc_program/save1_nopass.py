@@ -1,6 +1,6 @@
-___ wc(file_):
-    f = open(file_, 'r')
-    text = f.read()
+___ wc(file_
+    f = o.. file_, 'r')
+    text = f.r..
     f.close()
     char = l..(text)
     line = text.c.. '\n')

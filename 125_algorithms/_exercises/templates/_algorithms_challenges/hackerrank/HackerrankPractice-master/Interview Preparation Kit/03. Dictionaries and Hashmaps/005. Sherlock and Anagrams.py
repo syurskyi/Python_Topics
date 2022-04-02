@@ -10,7 +10,7 @@ ___ t __ r..(i..(input())):
     substrings = defaultdict(i..)
 
     ___ i __ r..(1, l..(s)):
-        ___ j __ r..(l..(s) - i + 1):
+        ___ j __ r..(l..(s) - i + 1
             substrings[''.j..(s..(s[j:j+i]))] += 1
 
     ans = 0

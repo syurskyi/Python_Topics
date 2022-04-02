@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ sortTransformedArray  nums, a, b, c):
+c_ Solution(o..
+  ___ sortTransformedArray  nums, a, b, c
     """
     :type nums: List[int]
     :type a: int
@@ -8,7 +8,7 @@ c_ Solution(o..):
     :rtype: List[int]
     """
 
-    ___ f(x):
+    ___ f(x
       r.. a * (x ** 2) + b * x + c
 
     __ a __ 0:
@@ -38,7 +38,7 @@ c_ Solution(o..):
     res    # list
     upIdx = 0
     downIdx = 0
-    w.... upIdx < l..(up) a.. downIdx < l..(down):
+    w.... upIdx < l..(up) a.. downIdx < l..(down
       upTop = up[upIdx]
       downTop = down[downIdx]
 
@@ -48,8 +48,8 @@ c_ Solution(o..):
       ____:
         res.a..(downTop)
         downIdx += 1
-    __ upIdx < l..(up):
+    __ upIdx < l..(up
       res.extend(up[upIdx:l..(up)])
-    __ downIdx < l..(down):
+    __ downIdx < l..(down
       res.extend(down[downIdx:l..(down)])
     r.. res

@@ -1,22 +1,22 @@
-c_ Solution(o..):
-  ___ strongPasswordChecker  s):
+c_ Solution(o..
+  ___ strongPasswordChecker  s
     """
     :type s: str
     :rtype: int
     """
     complexBal = 3
-    __ any(c __ s__.lowercase ___ c __ s):
+    __ any(c __ s__.lowercase ___ c __ s
       complexBal -= 1
-    __ any(c __ s__.uppercase ___ c __ s):
+    __ any(c __ s__.uppercase ___ c __ s
       complexBal -= 1
-    __ any(c.i.. ___ c __ s):
+    __ any(c.i.. ___ c __ s
       complexBal -= 1
 
     one = 0
     two = 0
     p = 2
     r.. = 0
-    w.... p < l..(s):
+    w.... p < l..(s
       __ s[p] __ s[p - 1] __ s[p - 2]:
         length = 2
         w.... p < l..(s) a.. s[p] __ s[p - 1]:

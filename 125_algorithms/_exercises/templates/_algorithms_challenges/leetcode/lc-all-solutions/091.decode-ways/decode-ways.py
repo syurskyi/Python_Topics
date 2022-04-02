@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ numDecodings  s):
+c_ Solution(o..
+  ___ numDecodings  s
     """
     :type s: str
     :rtype: int

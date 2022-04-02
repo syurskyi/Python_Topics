@@ -3,8 +3,8 @@ ____ c.. _______ defaultdict
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ getHint  secret, guess):
+c_ Solution(o..
+    ___ getHint  secret, guess
         """
         Need to revert B
 
@@ -22,7 +22,7 @@ c_ Solution(o..):
         ___ c __ secret:
             cnt[c] += 1
 
-        ___ i, v __ e..(guess):
+        ___ i, v __ e..(guess
             __ v __ secret[i]:
                 A += 1
                 __ cnt[v] > 0:

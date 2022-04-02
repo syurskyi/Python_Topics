@@ -1,8 +1,8 @@
 ____ functools _______ wraps
 
-___ int_inputs(func):
+___ int_inputs(func
     @wraps(func)
-    ___ wrapper(*args):
+    ___ wrapper(*args
         newargs = [i..(a) ___ a __ args]
         r.. func(*newargs)
     r.. wrapper
@@ -11,11 +11,11 @@ ___ int_inputs(func):
 
 
 @int_inputs
-___ add(a,b):
+___ add(a,b
     r.. a+b
 
 @int_inputs
-___ subtract(a,b):
+___ subtract(a,b
     r.. a-b
 
 

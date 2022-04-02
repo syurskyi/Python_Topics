@@ -4,7 +4,7 @@ c_ Solution:
     @param: k: An integer
     @return: The index after partition
     """
-    ___ partitionArray  A, k):
+    ___ partitionArray  A, k
         __ n.. A:
             r.. 0
 

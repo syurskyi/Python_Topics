@@ -13,7 +13,7 @@ c_ Solution:
     @param: A: An array of integers
     @return: A long integer
     """
-    ___ permutationIndex  A):
+    ___ permutationIndex  A
         ans = 1
         __ n.. A:
             r.. ans
@@ -21,9 +21,9 @@ c_ Solution:
         n = l..(A)
         factorial = 1
 
-        ___ i __ r..(n - 1, -1, -1):
+        ___ i __ r..(n - 1, -1, -1
             cnt = 0
-            ___ j __ r..(i + 1, n):
+            ___ j __ r..(i + 1, n
                 __ A[i] > A[j]:
                     cnt += 1
 

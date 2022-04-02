@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ largestDivisibleSubset  A):
+    ___ largestDivisibleSubset  A
         """
         :type A: List[int]
         :rtype: List[int]
@@ -29,8 +29,8 @@ c_ Solution:
         pi = [0] * n
         pe = max_size = 0
 
-        ___ i __ r..(n):
-            ___ j __ r..(i):
+        ___ i __ r..(n
+            ___ j __ r..(i
                 """
                 backtracking
 
@@ -46,7 +46,7 @@ c_ Solution:
                     pe = i
 
         ans = [0] * max_size
-        ___ i __ r..(max_size - 1, -1, -1):
+        ___ i __ r..(max_size - 1, -1, -1
             ans[i] = A[pe]
             pe = pi[pe]
 

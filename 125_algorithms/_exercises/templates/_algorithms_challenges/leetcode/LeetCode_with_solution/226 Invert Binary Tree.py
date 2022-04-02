@@ -22,14 +22,14 @@ __author__ = 'Daniel'
 
 
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..
 
 
 c_ Solution:
-    ___ invertTree_recur  root):
+    ___ invertTree_recur  root
         """
         :type root: TreeNode
         :rtype: TreeNode
@@ -42,7 +42,7 @@ c_ Solution:
         root.left, root.right = root.right, root.left
         r.. root
 
-    ___ invertTree  root):
+    ___ invertTree  root
         """
         iterative solution
         Dual stack algorithm

@@ -24,8 +24,8 @@ But the following is not:
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-    ___ isSymmetric  root):
+c_ Solution(o..
+    ___ isSymmetric  root
         """
         :type root: TreeNode
         :rtype: bool
@@ -38,7 +38,7 @@ c_ Solution(o..):
             r.. _isSymmetric(root.left, root.right)
         r.. F..
 
-    ___ _isSymmetric  left, right):
+    ___ _isSymmetric  left, right
         __ left __ N.. a.. right __ N..
             r.. T..
         __ left __ n.. N.. a.. right __ n.. N..

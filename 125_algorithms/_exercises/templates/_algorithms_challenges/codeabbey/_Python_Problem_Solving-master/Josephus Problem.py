@@ -3,7 +3,7 @@ n,k = map(i..,input().s..())
 #initialize the list in which the number of people will be stored
 sucide_squad    # list
 #store the number of people
-___ i __ r..(1,n+1):
+___ i __ r..(1,n+1
     sucide_squad.a..(i)
 #initialize the counter for killing people in list
 counter = 0
@@ -20,13 +20,13 @@ w.... l..(sucide_squad) != 1:
         #reset the counter to 0
         counter = 0
         #check if the list has reached its limit
-        __ squad_count __ l..(sucide_squad):
+        __ squad_count __ l..(sucide_squad
             #reset the count to 0
             squad_count = 0
         #continue helps not jumping on the next element and start counting from the current element itself
         _____
     squad_count +=1
     #check if reached end of the list
-    __ squad_count __ l..(sucide_squad):
+    __ squad_count __ l..(sucide_squad
         squad_count = 0
 print(sucide_squad[0])

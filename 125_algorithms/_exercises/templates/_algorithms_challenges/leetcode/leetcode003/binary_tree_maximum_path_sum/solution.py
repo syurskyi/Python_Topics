@@ -19,8 +19,8 @@ Return 6.
 #         self.left = None
 #         self.right = None
 
-c_ Solution(o..):
-    ___ maxPathSum  root):
+c_ Solution(o..
+    ___ maxPathSum  root
         """
         :type root: TreeNode
         :rtype: int
@@ -29,7 +29,7 @@ c_ Solution(o..):
         res = max_sum(root, max_res)
         r.. m..(res, max_res[0])
 
-    ___ max_sum  root, max_res):
+    ___ max_sum  root, max_res
         __ root __ N..
             r.. 0
         ____:

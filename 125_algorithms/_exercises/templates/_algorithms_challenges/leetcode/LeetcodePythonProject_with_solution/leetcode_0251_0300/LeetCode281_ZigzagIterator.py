@@ -4,8 +4,8 @@ Created on Mar 6, 2017
 @author: MT
 '''
 
-c_ ZigzagIterator(o..):
-    ___ - , v1, v2):
+c_ ZigzagIterator(o..
+    ___ - , v1, v2
         vec = [v1, v2]
         pointer = 0
     
@@ -15,12 +15,12 @@ c_ ZigzagIterator(o..):
                 val = vec[pointer][0]
                 vec[pointer].pop()
                 pointer += 1
-                __ pointer >= l..(vec):
+                __ pointer >= l..(vec
                     pointer = 0
                 r.. val
             ____:
                 pointer += 1
-                __ pointer >= l..(vec):
+                __ pointer >= l..(vec
                     pointer = 0
         r.. N..
     

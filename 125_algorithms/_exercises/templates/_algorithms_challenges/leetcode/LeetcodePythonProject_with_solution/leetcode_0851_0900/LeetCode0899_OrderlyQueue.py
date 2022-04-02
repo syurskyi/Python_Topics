@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ orderlyQueue  S, K):
+c_ Solution(o..
+    ___ orderlyQueue  S, K
         """
         :type S: str
         :type K: int
@@ -9,8 +9,8 @@ c_ Solution(o..):
             r.. ''.j..(s..(S))
         n = l..(S)
         minIdx = 0
-        ___ i __ r..(1, n):
-            ___ i1 __ r..(n):
+        ___ i __ r..(1, n
+            ___ i1 __ r..(n
                 __ S[(i+i1)%n] < S[(minIdx+i1)%n]:
                     minIdx = i
                     _____

@@ -1,8 +1,8 @@
-___ fibDiv(tests):
+___ fibDiv(tests
     numbers = raw_input().s..
     answer    # list
     
-    ___ test __ r..(tests):
+    ___ test __ r..(tests
         a,b,c = 0,1,0
         ___ count __ r..(i..(m..(numbers))):
             c = a + b

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ findIntegers  num):
+c_ Solution(o..
+  ___ findIntegers  num
     """
     :type num: int
     :rtype: int
@@ -13,7 +13,7 @@ c_ Solution(o..):
       A[i] = A[i - 1] + B[i - 1]
       B[i] = A[i - 1]
     ans = A[-1] + B[-1]
-    ___ i __ r..(length - 2, -1, -1):
+    ___ i __ r..(length - 2, -1, -1
       __ n[i:i + 2] __ "11":
         _____
       __ n[i:i + 2] __ "00":

@@ -1,11 +1,11 @@
-c_ Solution(o..):
-  ___ isOneEditDistance  s, t):
+c_ Solution(o..
+  ___ isOneEditDistance  s, t
     """
     :type s: str
     :type t: str
     :rtype: bool
     """
-    __ l..(s) >= l..(t):
+    __ l..(s) >= l..(t
       i = 0
       w.... i < l..(t) a.. s[i] __ t[i]:
         i += 1

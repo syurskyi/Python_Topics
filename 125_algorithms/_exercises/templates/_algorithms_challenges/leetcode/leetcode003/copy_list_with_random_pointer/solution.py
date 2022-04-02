@@ -8,7 +8,7 @@
 c_ Solution:
     # @param head, a RandomListNode
     # @return a RandomListNode
-    ___ copyRandomList  head):
+    ___ copyRandomList  head
         __ head __ N..
             r.. N..
         h = head

@@ -3,8 +3,8 @@ Created on Oct 2, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ predictPartyVictory  senate):
+c_ Solution(o..
+    ___ predictPartyVictory  senate
         """
         :type senate: str
         :rtype: str
@@ -12,7 +12,7 @@ c_ Solution(o..):
         queue1    # list
         queue2    # list
         n = l..(senate)
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ senate[i] __ 'R':
                 queue1.a..(i)
             ____:

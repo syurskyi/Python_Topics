@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ countAndSay  n):
+c_ Solution(o..
+  ___ countAndSay  n
     """
     :type n: int
     :rtype: str

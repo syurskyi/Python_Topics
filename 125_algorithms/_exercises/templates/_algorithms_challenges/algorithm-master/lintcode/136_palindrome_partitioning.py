@@ -7,7 +7,7 @@ c_ Solution:
     @param: s: A string
     @return: A list of lists of string
     """
-    ___ partition  s):
+    ___ partition  s
         __ n.. s:
             r.. ans
 
@@ -17,7 +17,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ check_palindrome  s):
+    ___ check_palindrome  s
         """
         assuming string = 'aabb'
         s: start_index, e: end_index
@@ -50,7 +50,7 @@ c_ Solution:
         # check the diagonal line `r1` and `r2`
         # the traversal order is top-left -> bottom-right, see graph above
         # since the status of `r3`, `r4`, ... depends on that
-        ___ end __ r..(n):
+        ___ end __ r..(n
             is_palindrome[end][end] = T..
 
             __ end > 0:
@@ -61,8 +61,8 @@ c_ Solution:
         # the traversal order is bottom -> top, see graph above
         # n - 3 = (n - 1) - 2
         # start + 2
-        ___ start __ r..(n - 3, -1, -1):
-            ___ end __ r..(start + 2, n):
+        ___ start __ r..(n - 3, -1, -1
+            ___ end __ r..(start + 2, n
                 is_palindrome[start][end] = (
                     is_palindrome[start + 1][end - 1]
                     a.. s[start] __ s[end]
@@ -72,11 +72,11 @@ c_ Solution:
     # if is a palindrome, continue to traverse
     # otherwise will be ignored
     # and catch all result at the end
-    ___ dfs  s, start, palindromes):
+    ___ dfs  s, start, palindromes
         __ start >= n:
             ans.a..(palindromes)
         next_start = 0
-        ___ end __ r..(start, n):
+        ___ end __ r..(start, n
             __ is_palindrome[start][end]:
                 # `palindromes + [s[start:next_start]]`
                 # will create and return new list

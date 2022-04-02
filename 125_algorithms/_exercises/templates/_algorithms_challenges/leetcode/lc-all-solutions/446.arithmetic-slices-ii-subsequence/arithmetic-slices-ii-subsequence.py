@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ numberOfArithmeticSlices  A):
+c_ Solution(o..
+  ___ numberOfArithmeticSlices  A
     """
     :type A: List[int]
     :rtype: int
@@ -7,7 +7,7 @@ c_ Solution(o..):
     ans = 0
     dp = [c...defaultdict(i..) ___ _ __ A]
     ___ i __ r..(l..(A)):
-      ___ j __ r..(i):
+      ___ j __ r..(i
         diff = A[i] - A[j]
         dp[i][diff] += 1
         __ diff __ dp[j]:

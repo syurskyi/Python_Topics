@@ -5,13 +5,13 @@ Created on Mar 18, 2017
 '''
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
-c_ Solution(o..):
-    ___ oddEvenList  head):
+c_ Solution(o..
+    ___ oddEvenList  head
         __ n.. head: r.. head
         node1 = head
         prev1 = head

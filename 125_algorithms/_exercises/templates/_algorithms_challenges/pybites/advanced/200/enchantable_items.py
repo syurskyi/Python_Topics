@@ -21,7 +21,7 @@ c_ Enchantment:
         id_name, name, max_level, description, items
     """
 
-    ___ - ,id_name,name,max_level,description):
+    ___ - ,id_name,name,max_level,description
         id_name = id_name
         name = name
         max_level = max_level
@@ -38,11 +38,11 @@ c_ Item:
         name, enchantments
     """
 
-    ___ - ,name):
+    ___ - ,name
         name = name
         enchantments    # list
 
-    ___ add_enchantment enchantment):
+    ___ add_enchantment enchantment
         enchantments.a..(enchantment)
     
 
@@ -53,7 +53,7 @@ c_ Item:
             s__ += f'\n  [{enchantment.max_level}] {enchantment.id_name}'
         r.. s__
 
-___ generate_enchantments(soup):
+___ generate_enchantments(soup
     """Generates a dictionary of Enchantment objects
     
     With the key being the id_name of the enchantment.
@@ -66,11 +66,11 @@ ___ generate_enchantments(soup):
     ___ table_row __ table.find_all('tr')[1:]:
         data = table_row.find_all('td')
         values    # list
-        ___ i,d __ e..(data):
+        ___ i,d __ e..(data
             value = d.getText()
             values.a..(value)
         
-        image_source = table_row.find('img')['data-src']
+        image_source = table_row.find('img') 'data-src'
         last_part = image_source.s..('/')[-1]
         last_part = __.sub(r'\.|png|sm|enchanted|iron','',last_part)
         
@@ -103,7 +103,7 @@ ___ generate_enchantments(soup):
         
 
 
-___ generate_items(data):
+___ generate_items(data
     """Generates a dictionary of Item objects
     
     With the key being the item name.
@@ -130,13 +130,13 @@ ___ generate_items(data):
 
 
 
-___ get_soup(file=HTML_FILE):
+___ get_soup(file=HTML_FILE
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
-    __ isi..(file, Path):
+    __ isi..(file, Path
         __ n.. file.is_file
             urlretrieve(URL, file)
 
-        w__ file.open() __ html_source:
+        w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")
     ____:
         soup = Soup(file, "html.parser")

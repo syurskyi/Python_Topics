@@ -9,7 +9,7 @@ You may assume no duplicate exists in the array.
 """
 __author__ = 'Danyang'
 c_ Solution:
-    ___ s..  A, target):
+    ___ s..  A, target
         """
         assume no duplicate exists in the array
         Algorithm: modification of binary search

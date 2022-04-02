@@ -7,11 +7,11 @@ ___ convert(value: f__, fmt: s..) __ f__:
     """
 
 
-    __ t..(value) n.. __ (i..,f__):
+    __ t..(value) n.. __ (i..,f__
         r.. T..("Value must be numeric")
 
     fmt = fmt.s...l..
-    __ fmt n.. __ ('cm','in'):
+    __ fmt n.. __ ('cm','in'
         r.. ValueError("Can only convert from cm to in or vice versa")
 
 

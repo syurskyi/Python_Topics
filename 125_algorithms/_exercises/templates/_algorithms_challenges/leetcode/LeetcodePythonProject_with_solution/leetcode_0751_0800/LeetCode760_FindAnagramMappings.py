@@ -3,8 +3,8 @@ Created on Mar 31, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ anagramMappings  A, B):
+c_ Solution(o..
+    ___ anagramMappings  A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         arr1, arr2 = A, B
         hashmap    # dict
-        ___ i, num __ e..(arr2):
+        ___ i, num __ e..(arr2
             __ num n.. __ hashmap:
                 hashmap[num]    # list
             hashmap[num].a..(i)

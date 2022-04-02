@@ -8,7 +8,7 @@ class Point:
 
 
 c_ Solution:
-    ___ numIslands2  m, n, operators):
+    ___ numIslands2  m, n, operators
         """
         :type m: int
         :type n: int
@@ -33,7 +33,7 @@ c_ Solution:
             ___ dx, dy __ (
                 (0, -1), (0, 1),
                 (-1, 0), (1, 0),
-            ):
+
                 _x = op.x + dx
                 _y = op.y + dy
 
@@ -41,7 +41,7 @@ c_ Solution:
                     0 <= _x < m a..
                     0 <= _y < n a..
                     (_x, _y) __ nodes
-                ):
+
                     _____
 
                 __ union(nodes, node, (_x, _y)):
@@ -51,7 +51,7 @@ c_ Solution:
 
         r.. ans
 
-    ___ union  nodes, a, b):
+    ___ union  nodes, a, b
         _a = find(nodes, a)
         _b = find(nodes, b)
 
@@ -61,7 +61,7 @@ c_ Solution:
         nodes[_b] = _a
         r.. T..
 
-    ___ find  nodes, a):
+    ___ find  nodes, a
         __ a n.. __ nodes:
             nodes[a] = a
             r.. a

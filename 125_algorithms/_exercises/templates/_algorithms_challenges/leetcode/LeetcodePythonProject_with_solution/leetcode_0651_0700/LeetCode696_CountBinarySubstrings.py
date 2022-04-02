@@ -3,8 +3,8 @@ Created on Oct 25, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ countBinarySubstrings  s):
+c_ Solution(o..
+    ___ countBinarySubstrings  s
         """
         :type s: str
         :rtype: int
@@ -17,7 +17,7 @@ c_ Solution(o..):
             i += 1
         prev = i+1-ind
         i += 1
-        w.... i < l..(s):
+        w.... i < l..(s
             ind = i
             w.... i+1 < l..(s) a.. s[i+1] __ s[ind]:
                 i += 1

@@ -3,7 +3,7 @@ c_ Solution:
     @param: S: A list of integers
     @return: An integer
     """
-    ___ triangleCount  S):
+    ___ triangleCount  S
         ans = 0
         __ n.. S o. l..(S) < 3:
             r.. ans
@@ -15,7 +15,7 @@ c_ Solution:
         just like two sum
         `c` is the target
         """
-        ___ c __ r..(n - 1, 1, -1):
+        ___ c __ r..(n - 1, 1, -1
             a = 0
             b = c - 1
             w.... a < b:

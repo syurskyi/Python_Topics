@@ -29,37 +29,37 @@ c_ TwelveDays:
     }
 
     @classmethod
-    ___ verses(cls, start, stop):
+    ___ verses(cls, start, stop
         r.. "\n".j..([cls.verse(i) ___ i __ r..(start, stop + 1)]) + "\n"
 
     @classmethod
-    ___ verse(cls, verse_num):
+    ___ verse(cls, verse_num
         r.. ", ".j..([_f ___ _f __ [cls.head(verse_num),
                                         cls.mid(verse_num),
                                         cls.tail(verse_num)] __ _f])
 
     @classmethod
-    ___ head(cls, verse_num):
+    ___ head(cls, verse_num
         r.. ("On the %(cardinality)s day of Christmas my true love gave to "
                 "me" % ({"cardinality": cls.CARDINALS[verse_num]}))
 
     @staticmethod
-    ___ tail(verse_num):
+    ___ tail(verse_num
         __ verse_num __ 1:
             r.. "a Partridge in a Pear Tree.\n"
         r.. "and a Partridge in a Pear Tree.\n"
 
     @classmethod
-    ___ mid(cls, verse_num):
+    ___ mid(cls, verse_num
         __ verse_num != 1:
             r.. ", ".j..([cls.PHRASES[i] ___ i __ r..(verse_num, 1, -1)])
 
 
-___ verse(verse_num):
+___ verse(verse_num
     r.. TwelveDays.verse(verse_num)
 
 
-___ verses(start, stop):
+___ verses(start, stop
     r.. TwelveDays.verses(start, stop)
 
 

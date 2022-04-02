@@ -72,7 +72,7 @@ KERNEL_5x5_ONES = np.diag(np.ones(5))
         "image of size 256x256 and kernel of size 5x5 with default padding and stride 3",
     ],
 )
-___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size):
+___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size
     feature_map = convolution2D(image, kernel, padding, stride)
     np.testing.assert_array_equal(feature_map.shape, feature_map_size)
 
@@ -136,7 +136,7 @@ ___ test_feature_map_dimension(image, kernel, padding, stride, feature_map_size)
         "image and kernel of size 5x5",
     ],
 )
-___ test_feature_map(image, kernel, padding, stride, feature_map):
+___ test_feature_map(image, kernel, padding, stride, feature_map
     feature_map_ = convolution2D(image, kernel, padding, stride)
     np.testing.assert_array_equal(feature_map_, feature_map)
 
@@ -196,6 +196,6 @@ ___ test_feature_map(image, kernel, padding, stride, feature_map):
         "float stride",
     ],
 )
-___ test_invalid_inputs(image, kernel, padding, stride, expected_exception):
-    w__ p__.r..(expected_exception):
+___ test_invalid_inputs(image, kernel, padding, stride, expected_exception
+    w__ p__.r..(expected_exception
         convolution2D(image, kernel, padding, stride)

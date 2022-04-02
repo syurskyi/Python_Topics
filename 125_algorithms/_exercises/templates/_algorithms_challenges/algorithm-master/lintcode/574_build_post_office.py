@@ -26,7 +26,7 @@ c_ Solution:
     EMPTY = 0
     HOUSE = 1
 
-    ___ shortestDistance  grid):
+    ___ shortestDistance  grid
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -37,8 +37,8 @@ c_ Solution:
         m, n = l..(grid), l..(grid[0])
         xs, ys    # list, []
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] != HOUSE:
                     _____
                 xs.a..(x)
@@ -52,14 +52,14 @@ c_ Solution:
         k = l..(xs) + 1
         psx, psy = [0] * k, [0] * k  # prefix sum
 
-        ___ i __ r..(1, k):
+        ___ i __ r..(1, k
             psx[i] = psx[i - 1] + xs[i - 1]
             psy[i] = psy[i - 1] + ys[i - 1]
 
         ans = INF = f__('inf')
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] != EMPTY:
                     _____
 
@@ -70,7 +70,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ get_step  ps, axis, pos):
+    ___ get_step  ps, axis, pos
         n = l..(axis)
 
         __ axis[0] > pos:
@@ -106,7 +106,7 @@ c_ Solution:
     EMPTY = 0
     HOUSE = 1
 
-    ___ shortestDistance  grid):
+    ___ shortestDistance  grid
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -118,8 +118,8 @@ c_ Solution:
         houses    # list
         xc = yc = 0  # the center of the shape composed of houses
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] __ HOUSE:
                     houses.a..((x, y))
                     xc += x
@@ -139,11 +139,11 @@ c_ Solution:
             ___ dx, dy __ (
                 (-1, 0), (1, 0),
                 (0, -1), (0, 1),
-            ):
+
                 _x = x + dx
                 _y = y + dy
 
-                __ n.. (0 <= _x < m a.. 0 <= _y < n):
+                __ n.. (0 <= _x < m a.. 0 <= _y < n
                     _____
                 __ (_x, _y) __ visited:
                     _____
@@ -153,7 +153,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ get_step  houses, x, y):
+    ___ get_step  houses, x, y
         step = 0
 
         ___ _x, _y __ houses:
@@ -173,7 +173,7 @@ c_ Solution:
     EMPTY = 0
     HOUSE = 1
 
-    ___ shortestDistance  grid):
+    ___ shortestDistance  grid
         """
         :type grid: list[list[int]]
         :rtype: int
@@ -184,15 +184,15 @@ c_ Solution:
         m, n = l..(grid), l..(grid[0])
         steps = [[0] * n ___ _ __ r..(m)]
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] __ HOUSE:
                     bfs(grid, x, y, steps)
 
         ans = INF = f__('inf')
 
-        ___ x __ r..(m):
-            ___ y __ r..(n):
+        ___ x __ r..(m
+            ___ y __ r..(n
                 __ grid[x][y] != EMPTY:
                     _____
                 __ steps[x][y] < ans:
@@ -200,7 +200,7 @@ c_ Solution:
 
         r.. ans __ ans < INF ____ -1
 
-    ___ bfs  grid, x, y, steps):
+    ___ bfs  grid, x, y, steps
         m, n = l..(grid), l..(grid[0])
         queue, _queue = [(x, y)], []
         visited = s..(queue)
@@ -213,11 +213,11 @@ c_ Solution:
                 ___ dx, dy __ (
                     (-1, 0), (1, 0),
                     (0, -1), (0, 1),
-                ):
+
                     _x = x + dx
                     _y = y + dy
 
-                    __ n.. (0 <= _x < m a.. 0 <= _y < n):
+                    __ n.. (0 <= _x < m a.. 0 <= _y < n
                         _____
                     __ (_x, _y) __ visited:
                         _____

@@ -28,7 +28,7 @@ All the tilt values won't exceed the range of 32-bit integer.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

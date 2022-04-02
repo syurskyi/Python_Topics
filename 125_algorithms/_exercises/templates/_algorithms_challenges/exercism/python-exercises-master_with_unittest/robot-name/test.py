@@ -4,10 +4,10 @@ _______ r__
 ____ robot_name _______ Robot
 
 
-c_ RobotTest(unittest.TestCase):
+c_ RobotTest(unittest.TestCase
     # assertRegex() alias to adress DeprecationWarning
     # assertRegexpMatches got renamed in version 3.2
-    __ n.. hasattr(unittest.TestCase, "assertRegex"):
+    __ n.. hasattr(unittest.TestCase, "assertRegex"
         assertRegex = unittest.TestCase.assertRegexpMatches
 
     name_re = r'^[A-Z]{2}\d{3}$'

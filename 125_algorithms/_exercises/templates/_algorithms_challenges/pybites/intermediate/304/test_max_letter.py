@@ -41,12 +41,12 @@ empty_text = ''
                           (no_words_in_text, ('', '', 0)),
                           (empty_text, ('', '', 0)),
                           ])
-___ test_max_letter_word(given, expected):
+___ test_max_letter_word(given, expected
     result = max_letter_word(given)
     ... result __ expected
 
 
 ?p__.m__.p.("bad_input", [N.., T.., 1, 1.0, [], {}])
-___ test_max_letter_word_exceptions(bad_input):
-    w__ p__.r..(ValueError):
+___ test_max_letter_word_exceptions(bad_input
+    w__ p__.r..(ValueError
         max_letter_word(bad_input)

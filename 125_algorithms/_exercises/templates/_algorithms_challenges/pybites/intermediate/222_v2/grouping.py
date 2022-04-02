@@ -2,7 +2,7 @@ _______ types
 ____ i.. _______ islice
 
 
-___ group(iterable, n):
+___ group(iterable, n
     """Splits an iterable set into groups of size n and a group
        of the remaining elements if needed.
 
@@ -18,7 +18,7 @@ ___ group(iterable, n):
 
     results    # list
     iterable = l..(iterable)
-    ___ i __ r..(0,l..(iterable),n):
+    ___ i __ r..(0,l..(iterable),n
         results.a..(l..(islice(iterable,i,i+n)))
 
     r.. results

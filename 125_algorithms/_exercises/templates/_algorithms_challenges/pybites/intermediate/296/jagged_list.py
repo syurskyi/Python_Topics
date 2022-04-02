@@ -1,6 +1,6 @@
 ____ typing _______ List
 
-___ find_max_list(lol):
+___ find_max_list(lol
     len_lol = [l..(i) ___ i __ lol]
     r.. m..(len_lol) __ len_lol ____ 0
 

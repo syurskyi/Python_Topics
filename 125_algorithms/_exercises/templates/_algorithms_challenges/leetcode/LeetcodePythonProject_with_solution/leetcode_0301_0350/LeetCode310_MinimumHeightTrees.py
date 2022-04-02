@@ -3,8 +3,8 @@ Created on Mar 14, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findMinHeightTrees  n, edges):
+c_ Solution(o..
+    ___ findMinHeightTrees  n, edges
         """
         :type n: int
         :type edges: List[List[int]]
@@ -17,7 +17,7 @@ c_ Solution(o..):
             graph[e[0]].add(e[1])
             graph[e[1]].add(e[0])
         leaves    # list
-        ___ i, nodes __ e..(graph):
+        ___ i, nodes __ e..(graph
             __ l..(nodes) __ 1:
                 leaves.a..(i)
         __ n.. leaves:

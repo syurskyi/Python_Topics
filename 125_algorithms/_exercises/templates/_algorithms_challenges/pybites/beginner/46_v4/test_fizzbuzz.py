@@ -20,5 +20,5 @@ ____ P__.f.. _______ f..
     (15, 'Fizz Buzz'),
     (16, 16),
 ])
-___ test_fizzbuzz(arg, ret):
+___ test_fizzbuzz(arg, ret
     ... fizzbuzz(arg) __ ret

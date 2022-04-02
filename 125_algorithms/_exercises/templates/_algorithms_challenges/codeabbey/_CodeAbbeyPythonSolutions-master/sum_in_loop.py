@@ -1,5 +1,5 @@
 amount_values = i..(input())
-values = l..(map(i.., input().s..()))
+values = l.. m..(i.., input().s..()))
 
 ___ get_sum
 

@@ -4,7 +4,7 @@ REF: https://blog.csdn.net/zhaohengchuan/article/details/78833501
 
 
 c_ Solution:
-    ___ LongestPathWithSameValue  a, e):
+    ___ LongestPathWithSameValue  a, e
         """
         :type a: list[int]
         :type e: list[int]
@@ -16,7 +16,7 @@ c_ Solution:
         neibs = [[] ___ _ __ r..(l..(a) + 1)]  # neighbors
 
         # to build the node connection
-        ___ i __ r..(0, l..(e), 2):
+        ___ i __ r..(0, l..(e), 2
             neibs[e[i]].a..(e[i + 1])
             neibs[e[i + 1]].a..(e[i])
 
@@ -25,7 +25,7 @@ c_ Solution:
 
         r.. m..(ans, res)
 
-    ___ dfs  root, curr, a, neibs):
+    ___ dfs  root, curr, a, neibs
         tmp    # list
 
         ___ neib __ neibs[curr]:

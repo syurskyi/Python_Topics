@@ -24,8 +24,8 @@ Return 0.
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ minPatches  nums, n):
+c_ Solution(o..
+    ___ minPatches  nums, n
         """
         https://discuss.leetcode.com/topic/35494/solution-explanation
 
@@ -54,7 +54,7 @@ c_ Solution(o..):
 
         r.. cnt
 
-    ___ minPatches2  nums, n):
+    ___ minPatches2  nums, n
         """
         https://discuss.leetcode.com/topic/35494/solution-explanation
 

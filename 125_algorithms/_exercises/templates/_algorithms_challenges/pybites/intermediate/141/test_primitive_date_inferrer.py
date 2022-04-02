@@ -20,7 +20,7 @@ ___ test_tie
         "10/10/12",
         "03/10/02",
     ]
-    w__ p__.r..(InfDateFmtError):
+    w__ p__.r..(InfDateFmtError
         get_dates(dates)
 
 
@@ -42,7 +42,7 @@ ___ test_too_many_nonparsable
         "71/14/19",
         "85/08/09",
     ]
-    w__ p__.r..(InfDateFmtError):
+    w__ p__.r..(InfDateFmtError
         get_dates(dates)
 
 
@@ -159,7 +159,7 @@ ___ test_different_enum
     # import the module with the tested code which contains the original emum
     _______ primitive_date_inferrer __ pdi
 
-    c_ DateFormat_ext(E..):
+    c_ DateFormat_ext(E..
         DDMMYYYY = 0
         DDMMYY = 1
         YYMMDD = 2
@@ -171,7 +171,7 @@ ___ test_different_enum
             d_parse_formats = ["%d.%m.%Y", "%d/%m/%y", "%y/%m/%d", "%m/%d/%y"]
             __ idx __ N..
                 r.. d_parse_formats
-            __ 0 <= idx <= l..(d_parse_formats):
+            __ 0 <= idx <= l..(d_parse_formats
                 r.. d_parse_formats[idx]
             r.. ValueError
 

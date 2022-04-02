@@ -4,8 +4,8 @@ Created on May 10, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ findPoisonedDurationAnother  timeSeries, duration):
+c_ Solution(o..
+    ___ findPoisonedDurationAnother  timeSeries, duration
         """
         :type timeSeries: List[int]
         :type duration: int
@@ -18,7 +18,7 @@ c_ Solution(o..):
         res += duration
         r.. res
     
-    ___ findPoisonedDuration  timeSeries, duration):
+    ___ findPoisonedDuration  timeSeries, duration
         """
         :type timeSeries: List[int]
         :type duration: int

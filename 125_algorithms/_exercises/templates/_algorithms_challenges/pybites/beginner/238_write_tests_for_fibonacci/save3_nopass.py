@@ -2,7 +2,7 @@ ____ fibonacci _______ fib
 _______ p__
 
 
-___ test_fib(n):
+___ test_fib(n
     ___
         ... fib(0) __ 0
         ... fib(1) __ 1

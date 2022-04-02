@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ minCost  costs):
+c_ Solution(o..
+  ___ minCost  costs
     """
     :type costs: List[List[int]]
     :rtype: int
@@ -10,7 +10,7 @@ c_ Solution(o..):
     dp |  = costs[0]
     ___ i __ r..(1, l..(costs)):
       d0 = d1 = d2 = 0
-      ___ j __ r..(0, 3):
+      ___ j __ r..(0, 3
         __ j __ 0:
           d0 = m..(dp[1], dp[2]) + costs[i][0]
         ____ j __ 1:

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-    ___ sortArray  nums):
+c_ Solution(o..
+    ___ sortArray  nums
         """
         :type nums: List[int]
         :rtype: List[int]
@@ -8,16 +8,16 @@ c_ Solution(o..):
         quickSort(0, l..(nums)-1, nums)
         r.. nums
 
-    ___ quickSort  i, j, nums):
+    ___ quickSort  i, j, nums
         __ i < j:
             pi = partition(i, j, nums)
             quickSort(i, pi-1, nums)
             quickSort(pi+1, j, nums)
 
-    ___ partition  low, high, nums):
+    ___ partition  low, high, nums
         pivot = nums[high]
         i = low-1
-        ___ j __ r..(low, high):
+        ___ j __ r..(low, high
             __ nums[j] < pivot:
                 i += 1
                 nums[i], nums[j] = nums[j], nums[i]

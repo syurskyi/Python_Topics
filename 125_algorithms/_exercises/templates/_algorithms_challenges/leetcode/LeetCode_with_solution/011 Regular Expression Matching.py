@@ -20,7 +20,7 @@ __author__ = 'Danyang'
 
 
 c_ Solution:
-    ___ isMatch_error  s, p):
+    ___ isMatch_error  s, p
         """
         Using FSA? It is complicated to build compared to 066 Valid Number, since you have to construct the transition
         table from the pattern
@@ -37,7 +37,7 @@ c_ Solution:
 
         index = 0
         state = 0
-        w.... index < l..(tape) a.. state < l..(regex):
+        w.... index < l..(tape) a.. state < l..(regex
             char = tape[index]
             __ state+1 < l..(regex) a.. regex[state+1] __ "*":
                 __ regex[state] != ".":
@@ -48,7 +48,7 @@ c_ Solution:
                         state += 2
                 ____:  # .*
                     state += 2
-                    __ state < l..(regex):
+                    __ state < l..(regex
                         __ regex[state] != ".":  # find until the next char in regex
                             w.... index < l..(tape) a.. tape[index] != regex[state]: index += 1
                         ____:  # difficult part
@@ -63,12 +63,12 @@ c_ Solution:
                 ____:
                     _____
 
-        __ index __ l..(tape) a.. state __ l..(regex):
+        __ index __ l..(tape) a.. state __ l..(regex
             r.. T..
         r.. F..
 
 
-    ___ isMatch_TLE  s, p):
+    ___ isMatch_TLE  s, p
         """
         Algorithm: dfs, advancing the tape
         "." is not a problem
@@ -111,7 +111,7 @@ c_ Solution:
             ____:
                 r.. F..
 
-    ___ isMatch  s, p):
+    ___ isMatch  s, p
         """
         Algorithm: dfs, advancing the tape  --> dp
 
@@ -143,7 +143,7 @@ c_ Solution:
 
         # edge cases
         dp[m][n] = T..
-        ___ j __ x..(n-1, -1, -1):
+        ___ j __ x..(n-1, -1, -1
             __ regex[j] __ "*":
                 dp[m][j] = dp[m][j+1]
             ____ j+1 < n a.. regex[j+1] __ "*":
@@ -152,8 +152,8 @@ c_ Solution:
                 dp[m][j] = F..
 
         # normal cases
-        ___ i __ x..(m-1, -1, -1):
-            ___ j __ x..(n-1, -1, -1):
+        ___ i __ x..(m-1, -1, -1
+            ___ j __ x..(n-1, -1, -1
                 __ regex[j] __ "*":
                     __ j-1 >= 0 a.. regex[j-1] != "*":
                         dp[i][j] = dp[i][j+1]  # skip

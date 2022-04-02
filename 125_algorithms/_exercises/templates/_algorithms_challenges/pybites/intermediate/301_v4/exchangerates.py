@@ -41,15 +41,15 @@ ___ _parse_date(date_string: s..) __ date:
 }"""
 
 
-___ _date_conv(data: d..):
-    r.. {_parse_date(k): v ___ k, v __ data.i..}
+___ _date_conv(data: d..
+    r.. {_parse_date(k v ___ k, v __ data.i..}
 
 
 ___ match_daily_rates(start: date,
                       end: date, daily_rates: d..) __ Dict[date, date]:
     keys = l..(daily_rates.keys())
-    __ isi..(keys[0], s..):
-        data_days = s..(l..(map(_parse_date, keys)))
+    __ isi..(keys[0], s..
+        data_days = s..(l.. m..(_parse_date, keys)))
     ____:
         data_days = s..(keys)
 
@@ -78,7 +78,7 @@ ___ match_daily_rates(start: date,
 ___ exchange_rates(
     start_date: s.. = "2020-01-01", end_date: s.. = "2020-09-01"
 ) __ OrderedDict:
-    daily_rates = _date_conv(json.loads(RATES_FILE.read_text())['rates'])
+    daily_rates = _date_conv(json.loads(RATES_FILE.read_text()) 'rates' )
     start_date, end_date = map(_parse_date, [start_date, end_date])
     __ start_date < m..(daily_rates.keys()) o. end_date > m..(daily_rates.k..
         r.. ValueError('Date out of range for data')

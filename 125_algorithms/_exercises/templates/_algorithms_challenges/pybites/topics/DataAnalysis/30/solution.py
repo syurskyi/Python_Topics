@@ -23,13 +23,13 @@ ___ get_movies_by_director
     where keys are directors, and values are a list of movies,
     use the defined Movie namedtuple"""
     directors = defaultdict(l..)
-    w__ open(MOVIE_DATA) __ f:
-        ___ line __ csv.DictReader(f):
+    w__ o.. MOVIE_DATA) __ f:
+        ___ line __ csv.DictReader(f
             ___
-                director = line['director_name']
-                movie = line['movie_title'].r..('\xa0', '')
-                year = i..(line['title_year'])
-                score = f__(line['imdb_score'])
+                director = line 'director_name'
+                movie = line 'movie_title' .r..('\xa0', '')
+                year = i..(line 'title_year' )
+                score = f__(line 'imdb_score' )
             ______ V..
                 _____
             __ year a.. year < MIN_YEAR:
@@ -41,7 +41,7 @@ ___ get_movies_by_director
     r.. directors
 
 
-___ calc_mean_score(movies):
+___ calc_mean_score(movies
     """Helper method to calculate mean of list of Movie namedtuples,
        round the mean to 1 decimal place"""
     ratings = [m.score ___ m __ movies]
@@ -49,7 +49,7 @@ ___ calc_mean_score(movies):
     r.. r..(mean, 1)
 
 
-___ get_average_scores(directors):
+___ get_average_scores(directors
     """Iterate through the directors dict (returned by get_movies_by_director),
        return a list of tuples (director, average_score) ordered by highest
        score in descending order. Only take directors into account

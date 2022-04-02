@@ -1,6 +1,6 @@
 # Python 2.7
 
-___ blackjack_counter(games):
+___ blackjack_counter(games
     answer    # list
     values = {
         '2':2,    '3':3,    '4':4,
@@ -10,7 +10,7 @@ ___ blackjack_counter(games):
         'K':10,   'A':11
         }
     
-    ___ game __ r..(games):
+    ___ game __ r..(games
         cards = [x ___ x __ raw_input().s.. ]
         total, ace_count = 0, 0
         

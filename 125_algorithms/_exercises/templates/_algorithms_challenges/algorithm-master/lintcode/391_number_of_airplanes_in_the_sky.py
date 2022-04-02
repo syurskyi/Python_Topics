@@ -12,7 +12,7 @@ c_ Solution:
     @param: airplanes: An interval array
     @return: Count of airplanes are in the sky.
     """
-    ___ countOfAirplanes  airplanes):
+    ___ countOfAirplanes  airplanes
         ans = 0
         __ n.. airplanes:
             r.. ans

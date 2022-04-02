@@ -14,8 +14,8 @@ Here are few examples.
 
 """
 
-c_ Solution(o..):
-    ___ searchInsert  nums, target):
+c_ Solution(o..
+    ___ searchInsert  nums, target
         """
         :type nums: List[int]
         :type target: int
@@ -32,7 +32,7 @@ c_ Solution(o..):
                 __ nums[mid] __ target:
                     r.. mid
                 ____ (mid < n - 1 a.. nums[mid] < target
-                        a.. nums[mid + 1] > target):
+                        a.. nums[mid + 1] > target
                     r.. mid + 1
                 ____ target < nums[mid]:
                     right = mid - 1

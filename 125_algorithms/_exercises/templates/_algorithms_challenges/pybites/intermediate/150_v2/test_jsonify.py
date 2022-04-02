@@ -5,16 +5,16 @@ _______ p__
 ____ jsonify _______ convert_to_json
 
 
-@p__.f..(scope="module")
+?p__.f..(scope="module")
 ___ output
     r.. convert_to_json()
 
 
-___ test_return_type(output):
+___ test_return_type(output
     ... t..(output) __ s..
 
 
-___ test_extracted_data_is_correct(output):
+___ test_extracted_data_is_correct(output
     data = json.loads(output)
     ... t..(data) __ l..
     ... l..(data) __ 10

@@ -3,8 +3,8 @@ Created on Apr 2, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ countPrimeSetBits  L, R):
+c_ Solution(o..
+    ___ countPrimeSetBits  L, R
         """
         :type L: int
         :type R: int
@@ -12,7 +12,7 @@ c_ Solution(o..):
         """
         primes = s..([2, 3, 5, 7, 11, 13, 17, 19])
         cnt = 0
-        ___ num __ r..(L, R+1):
+        ___ num __ r..(L, R+1
             bits = 0
             n = num
             w.... n > 0:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ fizzBuzz  n):
+    ___ fizzBuzz  n
         """
         :type n: int
         :rtype: List[str]
@@ -9,7 +9,7 @@ c_ Solution:
         __ n.. n:
             r.. ans
 
-        ___ i __ r..(1, n + 1):
+        ___ i __ r..(1, n + 1
             __ i % 3 __ 0 a.. i % 5 __ 0:
                 ans.a..('FizzBuzz')
             ____ i % 3 __ 0:
@@ -23,7 +23,7 @@ c_ Solution:
 
 
 c_ Solution:
-    ___ fizzBuzz  n):
+    ___ fizzBuzz  n
         """
         :type n: int
         :rtype: List[str]

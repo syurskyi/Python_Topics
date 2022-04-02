@@ -3,7 +3,7 @@ ____ time _______ sleep
 ____ functools _______ wraps
 
 
-___ cached_property(func):
+___ cached_property(func
     """decorator used to cache expensive object attribute lookup"""
     cache = N..
     @wraps(func)
@@ -22,7 +22,7 @@ c_ Planet:
     TEMPORAL_SHIFT = 0.12345
     SOLAR_MASS_UNITS = 'M\N{SUN}'
 
-    ___ - , color):
+    ___ - , color
         color = color
         _mass = N..
 
@@ -37,7 +37,7 @@ c_ Planet:
                       f'{SOLAR_MASS_UNITS}')
         r.. _mass
 
-    ___ __setattr__  var, val):
+    ___ __setattr__  var, val
         __ var __ 'mass':
             r.. AttributeError
         ____:

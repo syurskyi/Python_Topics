@@ -1,10 +1,10 @@
 c_ Solution:
-  ___ - ):
+  ___ -
     n1 = N..
     n2 = N..
     pre = N..
 
-  ___ findBadNode  root):
+  ___ findBadNode  root
     __ root __ N.. r..
     findBadNode(root.left)
     __ pre __ n.. N..
@@ -17,7 +17,7 @@ c_ Solution:
     pre = root
     findBadNode(root.right)
 
-  ___ recoverTree  root):
+  ___ recoverTree  root
     findBadNode(root)
     __ n1 __ n.. N.. a.. n2 __ n.. N..
       n1.val, n2.val = n2.val, n1.val

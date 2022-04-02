@@ -10,16 +10,16 @@ filled cells need to be validated.
 
 """
 
-c_ Solution(o..):
-    ___ isValidSudoku  board):
+c_ Solution(o..
+    ___ isValidSudoku  board
         """
         :type board: List[List[str]]
         :rtype: bool
         """
         # Check rows
-        ___ i __ r..(9):
+        ___ i __ r..(9
             d    # dict
-            ___ j __ r..(9):
+            ___ j __ r..(9
                 __ board[i][j] __ '.':
                     p..
                 ____ board[i][j] __ d:
@@ -27,9 +27,9 @@ c_ Solution(o..):
                 ____:
                     d[board[i][j]] = T..
         # Check columns
-        ___ j __ r..(9):
+        ___ j __ r..(9
             d    # dict
-            ___ i __ r..(9):
+            ___ i __ r..(9
                 __ board[i][j] __ '.':
                     p..
                 ____ board[i][j] __ d:
@@ -37,11 +37,11 @@ c_ Solution(o..):
                 ____:
                     d[board[i][j]] = T..
         # Check sub-boxes
-        ___ m __ r..(0, 9, 3):
-            ___ n __ r..(0, 9, 3):
+        ___ m __ r..(0, 9, 3
+            ___ n __ r..(0, 9, 3
                 d    # dict
-                ___ i __ r..(n, n + 3):
-                    ___ j __ r..(m, m + 3):
+                ___ i __ r..(n, n + 3
+                    ___ j __ r..(m, m + 3
                         __ board[i][j] __ '.':
                             p..
                         ____ board[i][j] __ d:

@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ findShortestSubArray  A):
+    ___ findShortestSubArray  A
         """
         :type A: List[int]
         :rtype: int
@@ -9,7 +9,7 @@ c_ Solution:
 
         n = l..(A)
         L, R, C    # dict, {}, {}
-        ___ i __ r..(n):
+        ___ i __ r..(n
             __ A[i] n.. __ L:
                 L[A[i]] = i
             R[A[i]] = i

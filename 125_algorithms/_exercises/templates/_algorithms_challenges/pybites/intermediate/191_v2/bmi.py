@@ -23,15 +23,15 @@ data = """Luke Skywalker,172,77
 """
 
 
-___ person_max_bmi(data=data):
+___ person_max_bmi(data=data
     """Return (name, BMI float) of the character in data that
        has the highest BMI (rounded on 2 decimals)"""
 
-    star_wars = pd.read_csv(StringIO(data),names=['character','height','weight'])
+    star_wars = pd.read_csv(StringIO(data),names= 'character','height','weight' )
     star_wars.character = star_wars.character.s...s..
 
-    star_wars['bmi'] = star_wars.weight.div(star_wars.height.div(100)**2).r..(2)
+    star_wars 'bmi'  = star_wars.weight.div(star_wars.height.div(100)**2).r..(2)
     
     largest =  star_wars.nlargest(1,'bmi').squeeze()
-    r.. (largest['character'],largest['bmi'])
+    r.. (largest 'character' ,largest 'bmi' )
 

@@ -40,7 +40,7 @@ c_ Book:
         )
 
 
-___ _get_soup(file):
+___ _get_soup(file
     r.. BeautifulSoup(file.read_text(), "html.parser")
 
 
@@ -76,7 +76,7 @@ ___ load_data
     book_list = soup.find("div", {"class": "books"})
     books    # list
     book: Tag
-    ___ book __ book_list.find_all("div", {"class": "book"}):
+    ___ book __ book_list.find_all("div", {"class": "book"}
         title = book.select("h2.main")[0].text
         __ "python" n.. __ title.l..:
             _____
@@ -100,7 +100,7 @@ ___ load_data
             books, key=l.... b: (-b.rating, b.year, b.title.l.., b.author.l..
         ),
         start=1,
-    ):
+
         b.rank = n
         res.a..(b)
     r.. res

@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxProduct  nums):
+c_ Solution(o..
+  ___ maxProduct  nums
     """
     :type nums: List[int]
     :rtype: int

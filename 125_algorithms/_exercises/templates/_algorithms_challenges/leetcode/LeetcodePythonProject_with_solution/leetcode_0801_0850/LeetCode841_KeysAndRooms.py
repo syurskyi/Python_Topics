@@ -3,8 +3,8 @@ Created on Jan 30, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ canVisitAllRooms  rooms):
+c_ Solution(o..
+    ___ canVisitAllRooms  rooms
         """
         :type rooms: List[List[int]]
         :rtype: bool
@@ -17,7 +17,7 @@ c_ Solution(o..):
                 __ j n.. __ seen:
                     dfs.a..(j)
                     seen.add(j)
-                    __ l..(seen) __ l..(rooms):
+                    __ l..(seen) __ l..(rooms
                         r.. T..
         r.. l..(seen) __ l..(rooms)
     

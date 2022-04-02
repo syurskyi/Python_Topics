@@ -1,11 +1,11 @@
-___ reverse_it(data):
-    __ isi..(data,b..):
+___ reverse_it(data
+    __ isi..(data,b..
         r.. data
-    ____ isi..(data,i..):
+    ____ isi..(data,i..
         r.. i..(s..(data)[::-1])
-    ____ isi..(data,s..):
+    ____ isi..(data,s..
         r.. data[::-1]
-    ____ isi..(data,f__):
+    ____ isi..(data,f__
         r.. f__(s..(data)[::-1])
 
     ____:

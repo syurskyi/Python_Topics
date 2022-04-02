@@ -13,7 +13,7 @@ __ n.. PYCON_HTML.exists
     urlretrieve(PYCON_PAGE, PYCON_HTML)
 
 
-___ _get_soup(html=PYCON_HTML):
+___ _get_soup(html=PYCON_HTML
     r.. Soup(html.read_text(encoding="utf-8"), "html.parser")
 
 
@@ -26,7 +26,7 @@ ___ get_pycon_speaker_first_names(soup_ N..
     p..
 
 
-___ get_percentage_of_female_speakers(first_names):
+___ get_percentage_of_female_speakers(first_names
     """Run gender_guesser on the names returning a percentage
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""

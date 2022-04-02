@@ -17,14 +17,14 @@ For k = 3, you should return: 3->2->1->4->5
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
 
 
 c_ Solution:
-    ___ reverseKGroup  head, k):
+    ___ reverseKGroup  head, k
         """
         List
         O(k*n)
@@ -53,7 +53,7 @@ c_ Solution:
 
         r.. dummy.next
 
-    ___ generate_lst  node, k):
+    ___ generate_lst  node, k
         """
         Helpder
         :param node: ListNode
@@ -62,7 +62,7 @@ c_ Solution:
         """
         lst    # list
         cur = node
-        ___ i __ x..(k):
+        ___ i __ x..(k
             __ cur:
                 lst.a..(cur)
                 cur = cur.next

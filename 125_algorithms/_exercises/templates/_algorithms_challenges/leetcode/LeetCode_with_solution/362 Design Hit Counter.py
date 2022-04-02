@@ -6,8 +6,8 @@ ____ c.. _______ d..
 __author__ = 'Daniel'
 
 
-c_ HitCounter(o..):
-    ___ - ):
+c_ HitCounter(o..
+    ___ -
         """
         Initialize your data structure here.
 
@@ -17,7 +17,7 @@ c_ HitCounter(o..):
         """
         q = d..()
 
-    ___ hit  timestamp):
+    ___ hit  timestamp
         """
         Record a hit.
         @param timestamp - The current timestamp (in seconds granularity).
@@ -27,7 +27,7 @@ c_ HitCounter(o..):
         pop(timestamp)
         q.a..(timestamp)
 
-    ___ getHits  timestamp):
+    ___ getHits  timestamp
         """
         Return the number of hits in the past 5 minutes.
         @param timestamp - The current timestamp (in seconds granularity).
@@ -37,7 +37,7 @@ c_ HitCounter(o..):
         pop(timestamp)
         r.. l..(q)
 
-    ___ pop  timestamp):
+    ___ pop  timestamp
         w.... q a.. timestamp - q[0] >= 300:
             q.popleft()
 

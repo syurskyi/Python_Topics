@@ -86,7 +86,7 @@ translations = z..(org_bites, translated, fixed)
 
 
 ?p__.m__.p.("org, trans, fix", translations)
-___ test_fix_translation(org, trans, fix):
+___ test_fix_translation(org, trans, fix
     """
     print('org', len(org.splitlines()))
     print('trans', len(trans.splitlines()))

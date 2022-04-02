@@ -4,12 +4,12 @@ Created on Apr 1, 2017
 @author: MT
 '''
 
-c_ RandomizedSet(o..):
-    ___ - ):
+c_ RandomizedSet(o..
+    ___ -
         nums    # list
         pos    # dict
     
-    ___ insert  val):
+    ___ insert  val
         __ val n.. __ pos:
             nums.a..(val)
             pos[val] = l..(nums)-1
@@ -17,7 +17,7 @@ c_ RandomizedSet(o..):
         ____:
             r.. F..
     
-    ___ remove  val):
+    ___ remove  val
         __ val __ pos:
             ind = pos[val]
             lastVal = nums[-1]

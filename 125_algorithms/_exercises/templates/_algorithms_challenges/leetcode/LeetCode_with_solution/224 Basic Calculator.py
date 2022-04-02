@@ -16,7 +16,7 @@ __author__ = 'Daniel'
 
 
 c_ Solution:
-    ___ calculate  s):
+    ___ calculate  s
         """
         * infix to postfix
         * eval postfix
@@ -27,14 +27,14 @@ c_ Solution:
         postfix = infix2postfix(lst)
         r.. eval_postfix(postfix)
 
-    ___ to_list  s):
+    ___ to_list  s
         i = 0
         ret    # list
-        w.... i < l..(s):
+        w.... i < l..(s
             __ s[i] __ " ":
                 i += 1
 
-            ____ s[i] __ ("(", ")", "+", "-"):
+            ____ s[i] __ ("(", ")", "+", "-"
                 ret.a..(s[i])
                 i += 1
 
@@ -46,7 +46,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ infix2postfix  lst):
+    ___ infix2postfix  lst
         stk    # list  # store operators in strictly increasing precedence
         ret    # list
         ___ elt __ lst:
@@ -59,7 +59,7 @@ c_ Solution:
                     ret.a..(stk.pop())
                 stk.pop()
             ____:  # generalized to include * and /
-                w.... stk a.. precendece(elt) <= precendece(stk[-1]):
+                w.... stk a.. precendece(elt) <= precendece(stk[-1]
                     ret.a..(stk.pop())
 
                 stk.a..(elt)
@@ -69,16 +69,16 @@ c_ Solution:
 
         r.. ret
 
-    ___ precendece  op):
-        __ op __ ("(", ")"):
+    ___ precendece  op
+        __ op __ ("(", ")"
             r.. 0
-        __ op __ ("+", "-"):
+        __ op __ ("+", "-"
             r.. 1
 
-    ___ eval_postfix  post):
+    ___ eval_postfix  post
         stk    # list
         ___ elt __ post:
-            __ elt __ ("+", "-"):
+            __ elt __ ("+", "-"
                 b = i..(stk.pop())
                 a = i..(stk.pop())
                 __ elt __ "+":

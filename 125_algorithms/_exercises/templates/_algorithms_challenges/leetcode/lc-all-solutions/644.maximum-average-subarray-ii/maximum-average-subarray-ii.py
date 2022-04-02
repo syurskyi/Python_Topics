@@ -1,17 +1,17 @@
-c_ Solution(o..):
+c_ Solution(o..
   # just guess the answer by binary search
   # note that we can check if there is a subarray that has avg. sum >= a certain value in linear time
   # then overall time complexity is O(nlog(max(nums) - min(nums)))
-  ___ _findMaxAverage  nums, k):
+  ___ _findMaxAverage  nums, k
     """
     :type nums: List[int]
     :type k: int
     :rtype: float
     """
 
-    ___ valid(nums, mid, k):
+    ___ valid(nums, mid, k
       minSum = preSums = sums = 0
-      ___ i __ r..(k):
+      ___ i __ r..(k
         sums += nums[i] - mid
       __ sums >= 0:
         r.. T..
@@ -27,14 +27,14 @@ c_ Solution(o..):
     hi = m..(nums)
     w.... hi - lo > 1e-5:
       mid = (hi + lo) / 2.
-      __ valid(nums, mid, k):
+      __ valid(nums, mid, k
         lo = mid
       ____:
         hi = mid
     r.. lo
 
   # have to use this hack to pass OJ
-  ___ findMaxAverage  nums, k):
+  ___ findMaxAverage  nums, k
     _______ numpy __ np
     lo, hi = m..(nums), m..(nums)
     nums = np.array([0] + nums)

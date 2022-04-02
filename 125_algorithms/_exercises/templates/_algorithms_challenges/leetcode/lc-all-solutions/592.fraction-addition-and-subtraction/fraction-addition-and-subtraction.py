@@ -1,15 +1,15 @@
-c_ Solution(o..):
-  ___ fractionAddition  expression):
+c_ Solution(o..
+  ___ fractionAddition  expression
     """
     :type expression: str
     :rtype: str
     """
 
-    ___ add(a, b):
+    ___ add(a, b
       __ a __ "0/1":
         r.. b
 
-      ___ gcd(a, b):
+      ___ gcd(a, b
         w.... b != 0:
           a, b = b, a % b
         r.. a

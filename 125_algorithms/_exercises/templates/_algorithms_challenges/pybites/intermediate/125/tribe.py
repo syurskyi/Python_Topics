@@ -13,7 +13,7 @@ MIN_COUNT = 3
 ___ load_page
     """Download the blog html and return its decoded content"""
     w__ requests.Session() __ session:
-        r.. session.get(TIM_BLOG).content.decode('utf-8')
+        r.. session.get(TIM_BLOG).content.d.. 'utf-8')
 
 
 ___ get_top_books(content_ N..
@@ -29,8 +29,8 @@ ___ get_top_books(content_ N..
     soup = BeautifulSoup(content, "html.parser")
     
     amazon_books    # list
-    ___ link __ soup.find_all("a"):
-        __ "amazon" __ link.get("href"):
+    ___ link __ soup.find_all("a"
+        __ "amazon" __ link.get("href"
             amazon_books.a..([link.get_text().s...strip("\n")])
 
     amazon_books_counter = Counter()

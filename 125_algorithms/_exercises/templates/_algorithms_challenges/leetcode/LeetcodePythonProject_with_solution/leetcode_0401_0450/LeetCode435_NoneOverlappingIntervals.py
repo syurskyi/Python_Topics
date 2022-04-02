@@ -5,13 +5,13 @@ Created on Apr 15, 2017
 '''
 
 # Definition for an interval.
-c_ Interval(o..):
-    ___ - , s=0, e=0):
+c_ Interval(o..
+    ___ - , s=0, e=0
         start = s
         end = e
 
-c_ Solution(o..):
-    ___ eraseOverlapIntervals  intervals):
+c_ Solution(o..
+    ___ eraseOverlapIntervals  intervals
         __ n.. intervals: r.. 0
         intervals.s..(key=l.... x: (x.end, x.start))
         maxLen = intervals[0].end

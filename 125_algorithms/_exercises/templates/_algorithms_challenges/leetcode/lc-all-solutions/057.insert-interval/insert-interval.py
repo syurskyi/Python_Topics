@@ -4,8 +4,8 @@
 #         self.start = s
 #         self.end = e
 
-c_ Solution(o..):
-  ___ insert  intervals, newInterval):
+c_ Solution(o..
+  ___ insert  intervals, newInterval
     """
     :type intervals: List[Interval]
     :type newInterval: Interval

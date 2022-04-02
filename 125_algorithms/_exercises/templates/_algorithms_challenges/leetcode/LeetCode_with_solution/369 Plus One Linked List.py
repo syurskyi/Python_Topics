@@ -5,14 +5,14 @@ __author__ = 'Daniel'
 
 
 # Definition for singly-linked list.
-c_ ListNode(o..):
-    ___ - , x):
+c_ ListNode(o..
+    ___ - , x
         val = x
         next = N..
 
 
-c_ Solution(o..):
-    ___ plusOne  head):
+c_ Solution(o..
+    ___ plusOne  head
         """
         reverse, plus one, then reverse
         :type head: ListNode
@@ -23,7 +23,7 @@ c_ Solution(o..):
         head = revserse(head)
         r.. head
 
-    ___ plus  head):
+    ___ plus  head
         cur = head
         w.... cur:
             cur.val += 1
@@ -37,7 +37,7 @@ c_ Solution(o..):
 
         r.. head
 
-    ___ revserse  head):
+    ___ revserse  head
         __ n.. head:
             r.. N..
 

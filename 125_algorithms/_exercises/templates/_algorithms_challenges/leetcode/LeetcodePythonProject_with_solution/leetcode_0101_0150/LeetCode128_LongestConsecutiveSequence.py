@@ -4,8 +4,8 @@ Created on Feb 7, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ longestConsecutive  nums):
+c_ Solution(o..
+    ___ longestConsecutive  nums
         """
         :type nums: List[int]
         :rtype: int

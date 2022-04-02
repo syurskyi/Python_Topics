@@ -7,7 +7,7 @@ Can you solve it without using extra space?
 __author__ = 'Danyang'
 # Definition for singly-linked list.
 c_ ListNode:
-    ___ - , x):
+    ___ - , x
         val = x
         next = N..
 
@@ -15,7 +15,7 @@ c_ ListNode:
 c_ Solution:
     # @param head, a ListNode
     # @return a list node
-    ___ detectCycle  head):
+    ___ detectCycle  head
         """
         if extra space available, hash table
         if not, use the model of Hare and Tortoise

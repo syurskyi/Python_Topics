@@ -4,14 +4,14 @@ Created on Oct 5, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ printTree  root):
+c_ Solution(o..
+    ___ printTree  root
         """
         :type root: TreeNode
         :rtype: List[List[str]]
@@ -23,7 +23,7 @@ c_ Solution(o..):
         helper(root, 0, res, 0, n)
         r.. res
     
-    ___ helper  root, level, res, start, end):
+    ___ helper  root, level, res, start, end
         __ n.. root:
             r..
         mid = (start+end)//2
@@ -31,7 +31,7 @@ c_ Solution(o..):
         helper(root.left, level+1, res, start, mid-1)
         helper(root.right, level+1, res, mid+1, end)
     
-    ___ getHeight  root):
+    ___ getHeight  root
         __ n.. root: r.. 0
         r.. m..(getHeight(root.left),\
                    getHeight(root.right))+1

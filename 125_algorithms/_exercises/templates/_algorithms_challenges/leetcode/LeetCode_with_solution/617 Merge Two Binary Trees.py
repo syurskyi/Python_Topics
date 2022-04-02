@@ -31,7 +31,7 @@ Note: The merging process must start from the root nodes of both trees.
 
 # Definition for a binary tree node.
 c_ TreeNode:
-    ___ - , x):
+    ___ - , x
         val = x
         left = N..
         right = N..

@@ -2,7 +2,7 @@
 # Score: 15
 
 
-___ catAndMouse(catA, catB, mouseC):
+___ catAndMouse(catA, catB, mouseC
     distanceA = abs(catA - mouseC)
     distanceB = abs(catB - mouseC)
     __ distanceA > distanceB:
@@ -14,6 +14,6 @@ ___ catAndMouse(catA, catB, mouseC):
 
 
 n = i..(input())
-___ i __ r..(n):
+___ i __ r..(n
     catA, catB, mouseC = map(i.., input().s..())
     catAndMouse(catA, catB, mouseC)

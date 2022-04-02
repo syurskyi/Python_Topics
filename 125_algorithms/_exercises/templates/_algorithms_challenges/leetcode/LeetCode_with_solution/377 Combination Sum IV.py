@@ -27,8 +27,8 @@ What limitation we need to add to the question to allow negative numbers?
 __author__ = 'Daniel'
 
 
-c_ Solution(o..):
-    ___ combinationSum4  nums, target):
+c_ Solution(o..
+    ___ combinationSum4  nums, target
         """
         Let F[i] be the number of combinations ways for number i
         F[i] = sum(F[i-k] for k in nums)
@@ -44,7 +44,7 @@ c_ Solution(o..):
         ___ k __ nums:
             F[k] = 1
 
-        ___ i __ x..(target + 1):
+        ___ i __ x..(target + 1
             ___ k __ nums:
                 __ i - k >= 0:
                     F[i] += F[i-k]

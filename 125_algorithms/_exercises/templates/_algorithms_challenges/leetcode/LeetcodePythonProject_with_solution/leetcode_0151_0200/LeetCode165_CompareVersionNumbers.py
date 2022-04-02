@@ -3,8 +3,8 @@ Created on May 21, 2018
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ compareVersion  version1, version2):
+c_ Solution(o..
+    ___ compareVersion  version1, version2
         """
         :type version1: str
         :type version2: str
@@ -15,9 +15,9 @@ c_ Solution(o..):
         m, n = l..(arr1), l..(arr2)
         i, j = 0, 0
         w.... i < m a.. j < n:
-            __ i..(arr1[i]) > i..(arr2[j]):
+            __ i..(arr1[i]) > i..(arr2[j]
                 r.. 1
-            ____ i..(arr1[i]) < i..(arr2[j]):
+            ____ i..(arr1[i]) < i..(arr2[j]
                 r.. -1
             ____:
                 i += 1

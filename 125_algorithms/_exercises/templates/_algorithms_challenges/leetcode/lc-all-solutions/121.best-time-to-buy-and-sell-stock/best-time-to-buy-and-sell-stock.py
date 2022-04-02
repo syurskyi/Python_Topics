@@ -1,5 +1,5 @@
-c_ Solution(o..):
-  ___ maxProfit  prices):
+c_ Solution(o..
+  ___ maxProfit  prices
     """
     :type prices: List[int]
     :rtype: int

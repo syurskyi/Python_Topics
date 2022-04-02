@@ -4,23 +4,23 @@ Created on May 6, 2017
 @author: MT
 '''
 
-c_ Solution(o..):
-    ___ PredictTheWinner  nums):
+c_ Solution(o..
+    ___ PredictTheWinner  nums
         """
         :type nums: List[int]
         :rtype: bool
         """
         n = l..(nums)
         dp = [[0]*n ___ _ __ r..(n)]
-        ___ i __ r..(n):
+        ___ i __ r..(n
             dp[i][i] = nums[i]
-        ___ l __ r..(1, n):
-            ___ i __ r..(n-l):
+        ___ l __ r..(1, n
+            ___ i __ r..(n-l
                 j = i+l
                 dp[i][j] = m..(nums[i]-dp[i+1][j], nums[j]-dp[i][j-1])
         r.. dp[0][n-1] >= 0
     
-    ___ PredictTheWinner_DnC  nums):
+    ___ PredictTheWinner_DnC  nums
         """
         :type nums: List[int]
         :rtype: bool
@@ -28,7 +28,7 @@ c_ Solution(o..):
         mem    # dict
         r.. helper(nums, 0, l..(nums)-1) >= 0
     
-    ___ helper  nums, start, end):
+    ___ helper  nums, start, end
         n = l..(nums)
         num = start*n+end
         __ num __ mem:

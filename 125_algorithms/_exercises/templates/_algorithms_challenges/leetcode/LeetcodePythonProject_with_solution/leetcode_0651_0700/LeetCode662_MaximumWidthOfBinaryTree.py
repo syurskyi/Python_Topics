@@ -4,21 +4,21 @@ Created on Oct 8, 2017
 @author: MT
 '''
 # Definition for a binary tree node.
-c_ TreeNode(o..):
+c_ TreeNode(o..
     ___ - , x, left=N.., right_ N..
         val = x
         left = left
         right = right
 
-c_ Solution(o..):
-    ___ widthOfBinaryTree  root):
+c_ Solution(o..
+    ___ widthOfBinaryTree  root
         """
         :type root: TreeNode
         :rtype: int
         """
         r.. dfs(root, 0, 1, [], [])
         
-    ___ dfs  root, level, order, start, end):
+    ___ dfs  root, level, order, start, end
         __ n.. root: r.. 0
         __ l..(start) __ level:
             start.a..(order)

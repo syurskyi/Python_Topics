@@ -5,7 +5,7 @@
 ____ c.. _______ Counter, OrderedDict
 
 
-c_ OrderedCounter(Counter, OrderedDict):
+c_ OrderedCounter(Counter, OrderedDict
     p..
 
 

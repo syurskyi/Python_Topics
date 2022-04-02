@@ -4,30 +4,30 @@ Created on May 9, 2017
 @author: MT
 '''
 
-c_ Node(o..):
-    ___ - , val):
+c_ Node(o..
+    ___ - , val
         val = val
         less = 0
         same = 1
         left = N..
         right = N..
 
-c_ Solution(o..):
-    ___ reversePairs_mergeSort  nums):
+c_ Solution(o..
+    ___ reversePairs_mergeSort  nums
         """
         :type nums: List[int]
         :rtype: int
         """
         cnt = 0
-        ___ msort(lst):
+        ___ msort(lst
             n = l..(lst)
             __ n <= 1:
                 r.. lst
             ____:
-                r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2):]))
-        ___ merger(left, right):
+                r.. merger(msort(lst[:i..(n/2)]), msort(lst[i..(n/2]))
+        ___ merger(left, right
             l, r = 0, 0
-            w.... l < l..(left) a.. r < l..(right):
+            w.... l < l..(left) a.. r < l..(right
                 __ left[l] <= 2*right[r]:
                     l += 1
                 ____:
@@ -37,20 +37,20 @@ c_ Solution(o..):
         msort(nums)
         r.. cnt
     
-    ___ reversePairs  nums):
+    ___ reversePairs  nums
         """
         :type nums: List[int]
         :rtype: int
         """
         root = N..
         cnt = [0]
-        ___ i __ r..(l..(nums)-1, -1, -1):
+        ___ i __ r..(l..(nums)-1, -1, -1
             num = nums[i]
             s..(cnt, root, num/2.0)
             root = build(num, root)
         r.. cnt[0]
     
-    ___ s..  cnt, node, target):
+    ___ s..  cnt, node, target
         __ n.. node:
             r..
         ____ target __ node.val:
@@ -61,7 +61,7 @@ c_ Solution(o..):
             cnt[0] += node.less + node.same
             s..(cnt, node.right, target)
     
-    ___ build  val, node):
+    ___ build  val, node
         __ n.. node:
             r.. Node(val)
         ____ val __ node.val:

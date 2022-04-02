@@ -5,39 +5,39 @@ _______ p__
 ____ person _______ Person, Father, Mother, Child
 
 
-@p__.f..
+?p__.f..
 ___ person
     r.. Person()
 
 
-@p__.f..
+?p__.f..
 ___ dad
     r.. Father()
 
 
-@p__.f..
+?p__.f..
 ___ mom
     r.. Mother()
 
 
-@p__.f..
+?p__.f..
 ___ child
     r.. Child()
 
 
-___ test_string_repr_person(person):
+___ test_string_repr_person(person
     ... s..(person) __ 'I am a person'
 
 
-___ test_string_repr_dad(dad):
+___ test_string_repr_dad(dad
     ... s..(dad) __ 'I am a person and cool daddy'
 
 
-___ test_string_repr_mom(mom):
+___ test_string_repr_mom(mom
     ... s..(mom) __ 'I am a person and awesome mom'
 
 
-___ test_string_repr_child(child):
+___ test_string_repr_child(child
     ... s..(child) __ 'I am the coolest kid'
 
 

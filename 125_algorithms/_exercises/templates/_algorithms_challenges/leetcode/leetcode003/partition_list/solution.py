@@ -8,7 +8,7 @@ c_ Solution:
     # @param head, a ListNode
     # @param x, an integer
     # @return a ListNode
-    ___ partition  head, x):
+    ___ partition  head, x
         __ head __ N..
             r.. head
         large = N..

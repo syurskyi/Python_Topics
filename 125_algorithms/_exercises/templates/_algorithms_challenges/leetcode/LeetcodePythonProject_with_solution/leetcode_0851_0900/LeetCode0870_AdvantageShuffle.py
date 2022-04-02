@@ -3,8 +3,8 @@ Created on Oct 2, 2019
 
 @author: tongq
 '''
-c_ Solution(o..):
-    ___ advantageCount  A, B):
+c_ Solution(o..
+    ___ advantageCount  A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -14,7 +14,7 @@ c_ Solution(o..):
         arrA = s..(A)
         n = l..(arrA)
         h    # list
-        ___ i, b __ e..(B):
+        ___ i, b __ e..(B
             heapq.heappush(h, [-b, i])
         l, r = 0, n-1
         res = [0]*n

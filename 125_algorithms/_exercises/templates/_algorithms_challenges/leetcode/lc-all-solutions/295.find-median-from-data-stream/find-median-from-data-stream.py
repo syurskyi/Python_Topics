@@ -2,7 +2,7 @@ _______ heapq
 
 
 c_ MedianFinder:
-  ___ - ):
+  ___ -
     """
     Initialize your data structure here.
     """
@@ -10,7 +10,7 @@ c_ MedianFinder:
     right    # list
     median = N..
 
-  ___ addNum  num):
+  ___ addNum  num
     """
     Adds a num into the data structure.
     :type num: int
@@ -42,11 +42,11 @@ c_ MedianFinder:
     :rtype: float
     """
     left, right = left, right
-    __ l..(left) __ l..(right):
+    __ l..(left) __ l..(right
       r.. median
-    ____ l..(left) > l..(right):
+    ____ l..(left) > l..(right
       r.. (median - left[0]) / 2.0
-    __ l..(right) > l..(left):
+    __ l..(right) > l..(left
       r.. (median + right[0]) / 2.0
 
 # Your MedianFinder object will be instantiated and called as such:

@@ -26,7 +26,7 @@ c_ Solution:
         two way of changing
         """
         changed = F..
-        ___ i __ r..(l..(A) - 1):
+        ___ i __ r..(l..(A) - 1
             __ A[i] <= A[i + 1]:
                 _____
             __ n.. changed:
@@ -45,7 +45,7 @@ c_ Solution:
         greedy change
         """
         changed = F..
-        ___ i __ r..(l..(A) - 1):
+        ___ i __ r..(l..(A) - 1
             __ A[i] <= A[i + 1]:
                 _____
             __ n.. changed:

@@ -1,8 +1,8 @@
 _______ heapq
 
 
-c_ Solution(o..):
-  ___ getSkyline  buildings):
+c_ Solution(o..
+  ___ getSkyline  buildings
     """
     :type buildings: List[List[int]]
     :rtype: List[List[int]]
@@ -24,7 +24,7 @@ c_ Solution(o..):
         i = heap.index(-height)
         heap[i] = heap[-1]
         heap.pop()
-        __ i < l..(heap):
+        __ i < l..(heap
           heapq._siftup(heap, i)
           heapq._siftdown(heap, 0, i)
       __ heap:

@@ -20,8 +20,8 @@ __author__ = 'Daniel'
 C = 1337
 
 
-c_ Solution(o..):
-    ___ superPow  a, b):
+c_ Solution(o..
+    ___ superPow  a, b
         """
         since b is given as a list rather than a number, we need to process it digit by digit.
 

@@ -1,4 +1,4 @@
-___ a..(list_a, list_b):
+___ a..(list_a, list_b
     appended    # list
     ___ element __ list_a:
         appended.a..(element)  # Not sure if using .append here is cheating
@@ -7,36 +7,36 @@ ___ a..(list_a, list_b):
     r.. appended
 
 
-___ concat(lists):
+___ concat(lists
     concatenated    # list
     ___ l __ lists:
         concatenated = a..(concatenated, l)
     r.. concatenated
 
 
-___ filter_clone(function, l):
+___ filter_clone(function, l
     filtered    # list
     ___ element __ l:
-        __ function(element):
+        __ function(element
             filtered = a..(filtered, [element])
     r.. filtered
 
 
-___ length(l):
+___ length(l
     list_length = 0
     ___ _element __ l:
         list_length += 1
     r.. list_length
 
 
-___ map_clone(function, l..):
+___ map_clone(function, l..
     cloned    # list
     ___ element __ l..:
         cloned = a..(cloned, [function(element)])
     r.. cloned
 
 
-___ foldl(function, l, acc):
+___ foldl(function, l, acc
     ___ element __ l:
         ___
             acc = function(element, acc)
@@ -46,12 +46,12 @@ ___ foldl(function, l, acc):
     r.. acc
 
 
-___ foldr(function, l, acc):
+___ foldr(function, l, acc
     reversed_list = reverse(l)
     r.. foldl(function, reversed_list, acc)
 
 
-___ reverse(l):
+___ reverse(l
     reversed_list    # list
     ___ element __ l:
         reversed_list = a..([element], reversed_list)

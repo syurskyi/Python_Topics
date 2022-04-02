@@ -5,7 +5,7 @@ c_ HtmlParser:
     @param: content: content source code
     @return: a list of links
     """
-    ___ parseUrls  content):
+    ___ parseUrls  content
         # r'': use raw string
         # [=\s]+: this block should contain `=` or blank, and at least one char here
         # ["\']: this block should contain `"` or `'`

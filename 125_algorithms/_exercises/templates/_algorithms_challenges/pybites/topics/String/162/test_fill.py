@@ -16,6 +16,6 @@ DIFF_FILL = 'x'
     (9827, 5, DIFF_FILL, f'{DIFF_FILL}9827'),
     (12345, 5, DIFF_FILL, '12345'),
 ])
-___ test_prefill_with_character(value, len_, fill, result):
+___ test_prefill_with_character(value, len_, fill, result
     ... prefill_with_character(value, column_length=len_,
                                     fill_char=fill) __ result

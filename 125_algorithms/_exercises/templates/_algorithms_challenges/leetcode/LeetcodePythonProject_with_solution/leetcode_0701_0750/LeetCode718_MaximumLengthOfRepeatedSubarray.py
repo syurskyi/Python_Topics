@@ -3,8 +3,8 @@ Created on Oct 30, 2017
 
 @author: MT
 '''
-c_ Solution(o..):
-    ___ findLength  A, B):
+c_ Solution(o..
+    ___ findLength  A, B
         """
         :type A: List[int]
         :type B: List[int]
@@ -14,8 +14,8 @@ c_ Solution(o..):
         m, n = l..(nums1), l..(nums2)
         maxLen = 0
         dp = [[0]*(n+1) ___ _ __ r..(m+1)]
-        ___ i __ r..(m+1):
-            ___ j __ r..(n+1):
+        ___ i __ r..(m+1
+            ___ j __ r..(n+1
                 __ i __ 0 o. j __ 0:
                     dp[i][j] = 0
                 ____:

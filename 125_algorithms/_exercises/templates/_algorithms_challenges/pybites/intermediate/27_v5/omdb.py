@@ -19,23 +19,23 @@ ___ movie __ MOVIES:
 files = glob.glob(os.path.j..(TMP, '*json'))
 
 
-___ get_movie_data(files=files):
+___ get_movie_data(files=files
     result    # list
     ___ file __ files:
-        w__ open(file) __ f:
+        w__ o.. file) __ f:
             result.a..(json.load(f))
     r.. result
 
 
-___ get_single_comedy(movies):
-    r.. [m['Title'] ___ m __ movies __ 'Comedy' __ m['Genre'].s..(', ')][0]
+___ get_single_comedy(movies
+    r.. [m 'Title'  ___ m __ movies __ 'Comedy' __ m 'Genre' .s..(', ')][0]
 
 
-___ get_movie_most_nominations(movies):
+___ get_movie_most_nominations(movies
     r = __.c..(r'(\d+) nomin')
-    r.. s..([(m['Title'], m['Awards']) ___ m __ movies], key=l.... x: i..(r.f..(x[1])[0]))[-1][0]
+    r.. s..([(m 'Title' , m 'Awards' ) ___ m __ movies], key=l.... x: i..(r.f..(x[1])[0]))[-1][0]
 
 
-___ get_movie_longest_runtime(movies):
+___ get_movie_longest_runtime(movies
     r = __.c..(r'(\d+) min')
-    r.. s..([(m['Title'], i..(r.f..(m['Runtime'])[0])) ___ m __ movies], key=l.... x: -x[1])[0][0]
+    r.. s..([(m 'Title' , i..(r.f..(m 'Runtime' )[0])) ___ m __ movies], key=l.... x: -x[1])[0][0]

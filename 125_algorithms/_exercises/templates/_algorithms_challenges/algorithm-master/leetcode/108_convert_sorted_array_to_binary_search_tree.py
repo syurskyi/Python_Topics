@@ -7,7 +7,7 @@
 
 
 c_ Solution:
-    ___ sortedArrayToBST  nums):
+    ___ sortedArrayToBST  nums
         """
         :type nums: List[int]
         :rtype: TreeNode
