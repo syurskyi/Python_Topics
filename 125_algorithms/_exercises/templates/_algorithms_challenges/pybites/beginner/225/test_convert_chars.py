@@ -3,7 +3,7 @@ _______ p__
 ____ convert_chars _______ convert_pybites_chars
 
 
-@p__.m__.p..("arg, expected", [
+?p__.m__.p.("arg, expected", [
     ("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
      "LorEm IPSum dolor SIT amET, conSEcTETur adIPIScIng ElIT, SEd do"),
     ("Vestibulum morbi blandit cursus risus at ultrices",

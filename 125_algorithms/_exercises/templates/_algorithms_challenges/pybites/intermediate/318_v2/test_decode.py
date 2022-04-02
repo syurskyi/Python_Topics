@@ -33,7 +33,7 @@ expected2 = [
 ]
 
 
-@p__.m__.p..("arg, expected", [
+?p__.m__.p.("arg, expected", [
     (csv1, expected1), (csv2, expected2)
 ])
 ___ test_get_credit_cards(arg, expected):

@@ -8,7 +8,7 @@ ____ translate_cds _______ translate_cds
 # Seq.CodonTable.ambiguous_generic_by_name variable
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "cds,table,expected",
     [
         (
@@ -92,7 +92,7 @@ ___ test_translate_cds(cds, table, expected):
     ... result.u.. __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "cds,table",
     [
         ("ATGAA", "Standard"),  # len % 3 != 0

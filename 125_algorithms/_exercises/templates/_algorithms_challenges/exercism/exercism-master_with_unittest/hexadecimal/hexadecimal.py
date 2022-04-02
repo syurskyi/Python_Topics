@@ -26,4 +26,4 @@ c_ Hexa:
 
 
 ___ hexa(inp):
-    r.. Hexa.convert(inp.lower())
+    r.. Hexa.convert(inp.l..

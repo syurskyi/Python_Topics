@@ -3,7 +3,7 @@ _______ p__
 ____ pascal _______ pascal
 
 
-@p__.m__.p..("arg, expected", [
+?p__.m__.p.("arg, expected", [
     (0, []),
     (1, [1]),
     (2, [1, 1]),

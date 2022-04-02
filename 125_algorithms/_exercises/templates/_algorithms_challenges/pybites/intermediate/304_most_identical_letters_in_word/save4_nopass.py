@@ -32,7 +32,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     df['casefold'] = df['casefold'].s...r..('pxaceholder', '')
     df['word'] = df['word'].s...r..('placeholder', '-').r..('pxaceholder', '\'')
 
-    df['casefold'] = df[df['casefold'].s...s...astype(bool)]
+    df['casefold'] = df[df['casefold'].s...s...astype(b..)]
     df = df.dropna()
     df['casefold'] = df['casefold'].s...l..
     df['casefold'] = df['casefold'].s...r..('ß', 'ss')

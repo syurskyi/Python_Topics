@@ -11,7 +11,7 @@ c_ Solution(o..):
         :rtype: bool
         """
         __ n <= 0: r.. F..
-        r.. bool(n&(n-1)__0)
+        r.. b..(n&(n-1)__0)
     
     ___ isPowerOfTwoSlow  n):
         """

@@ -3,7 +3,7 @@ _______ d__ __ dt
 
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. = N..) __ bool:
+                    day_of_year: i.. = N..) __ b..:
     
 
     __ books_read __ 0:

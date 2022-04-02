@@ -50,7 +50,7 @@ she is talking super fast here!
 """
 
 
-@p__.m__.p..("text, expected", [
+?p__.m__.p.("text, expected", [
     (text1, [1, 3, 2]),
     (text2, [19, 18, 21, 20]),
     (text3, [1, 2]),

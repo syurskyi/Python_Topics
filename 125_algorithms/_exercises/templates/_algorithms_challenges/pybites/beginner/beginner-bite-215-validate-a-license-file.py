@@ -31,7 +31,7 @@ https://www.debuggex.com/cheatsheet/regex/python
 _______ __
 
 
-___ validate_license(key: s..) __ bool:
+___ validate_license(key: s..) __ b..:
     """Write a regex that matches a PyBites license key
        (e.g. PB-U8N435EH-PG65PW87-IXPWQG5T-898XSZI4)
     """

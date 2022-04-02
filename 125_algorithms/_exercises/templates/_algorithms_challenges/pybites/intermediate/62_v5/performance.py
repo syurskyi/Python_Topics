@@ -22,7 +22,7 @@ ___ timing(f):
 
 
 @timing
-___ contains(sequence: List[i..], num: i..) __ bool:
+___ contains(sequence: List[i..], num: i..) __ b..:
     ___ n __ sequence:
         __ n __ num:
             r.. T..
@@ -30,7 +30,7 @@ ___ contains(sequence: List[i..], num: i..) __ bool:
 
 
 @timing
-___ contains_fast(sequence: Set[i..], num: i..) __ bool:
+___ contains_fast(sequence: Set[i..], num: i..) __ b..:
     r.. num __ sequence
 
 

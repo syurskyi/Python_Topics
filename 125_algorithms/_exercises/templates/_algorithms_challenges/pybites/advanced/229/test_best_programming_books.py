@@ -48,7 +48,7 @@ ___ test_load_data(python_books):
     ... python_books[10].rating __ 4.66
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "index, expected",
     [
         (0, "[001] Python Tricks (2017)"),
@@ -79,7 +79,7 @@ ___ test_display_books(python_books, index, expected, capfd):
     ... output[index] __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "limit, expected", [(40, 72), (53, 72), (69, 72), (100, 72), (1000, 72)]
 )
 ___ test_display_books_plus(python_books, limit, expected, capfd):

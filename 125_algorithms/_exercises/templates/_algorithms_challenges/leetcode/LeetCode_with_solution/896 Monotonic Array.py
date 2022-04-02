@@ -41,7 +41,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ isMonotonic  A: List[i..]) __ bool:
+    ___ isMonotonic  A: List[i..]) __ b..:
         mono = 0  # 0 undecided, 1 decr, 2 incr
         ___ i __ r..(1, l..(A)):
             __ mono __ 0:

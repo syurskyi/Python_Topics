@@ -34,7 +34,7 @@ ___ is_palindrome(word):
        Case insensitive, so Madam is valid too.
        It should work for phrases too so strip all but alphanumeric chars.
        So "No 'x' in 'Nixon'" should pass (see tests for more)"""
-    stripped = __.sub(r'[^a-z]', '', word.lower())
+    stripped = __.sub(r'[^a-z]', '', word.l..
     i, j = 0, l..(stripped) - 1
     w.... i < j:
         __ stripped[i] != stripped[j]:
@@ -43,7 +43,7 @@ ___ is_palindrome(word):
     r.. T..
 
 ___ is_palindrome_pybites_solution(word):
-    word = __.sub(r'\W+', '', word.lower())
+    word = __.sub(r'\W+', '', word.l..
     r.. word __ word[::-1]
 
 # jak to elegancko przerobic, zeby spelnic kryterium zadania?

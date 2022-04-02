@@ -5,7 +5,7 @@ _______ p__
 ____ split_once _______ split_once
 
 
-@p__.m__.p..('test_input, expected', [
+?p__.m__.p.('test_input, expected', [
                         ('', ['']),
                         ('abc', ['abc']),
                         ('abc def', ['abc', 'def']),
@@ -20,7 +20,7 @@ ___ test_split_once_whitespace(test_input, expected):
     ... split_once(test_input) __ expected
 
 
-@p__.m__.p..('test_input, expected', [
+?p__.m__.p.('test_input, expected', [
                         ('', ['']),
                         ('abc', ['abc']),
                         ('abc def', ['abc def']),
@@ -32,7 +32,7 @@ ___ test_split_once(test_input, expected):
     ... split_once(test_input, separators=',-:') __ expected
 
 
-@p__.m__.p..('separators, expected', [
+?p__.m__.p.('separators, expected', [
     (N.., ['Darmok', 'and Jalad… at Tanagra.', 'Shaka, when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
     (',-:', ['Darmok and Jalad… at Tanagra.\nShaka', ' when the walls fell.\nTemba, his arms wide!\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),
     ('…!.', ['Darmok and Jalad', ' at Tanagra', '\nShaka, when the walls fell.\nTemba, his arms wide', '\nDarmok and Jalad… they left together.\nMirab, with sails unfurled.\n']),

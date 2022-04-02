@@ -44,7 +44,7 @@ dirs = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 
 c_ Solution:
-    ___ isRobotBounded  instructions: s..) __ bool:
+    ___ isRobotBounded  instructions: s..) __ b..:
         """
         LL: op
         LLL: R

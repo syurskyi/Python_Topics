@@ -24,7 +24,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
                      text.s..(' ')))
     counts    # list
     ___ word __ words:
-        folded = word.casefold()
+        folded = word.c..()
         count = Counter([c ___ c __ folded __ c.isalpha()])
         __ count.most_common(1):
             counts.a..((word, count))

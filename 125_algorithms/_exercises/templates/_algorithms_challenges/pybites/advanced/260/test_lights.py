@@ -3,7 +3,7 @@ _______ p__
 ____ lights _______ LightsGrid
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "arg, expected",
     [
         # Turn on all lights
@@ -48,7 +48,7 @@ ___ test_turn_on_lights(arg, expected):
     ... lights.lights_intensity __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "arg, expected",
     [
         # Turn off all lights even though they are not on
@@ -88,7 +88,7 @@ ___ test_turn_off_lights(arg, expected):
     ... lights.lights_intensity __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "arg, expected",
     [
         # Toggle all lights
@@ -115,7 +115,7 @@ ___ test_toggle_lights(arg, expected):
     ... lights.lights_intensity __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "arg, expected",
     [
         # Turn on all lights
@@ -151,7 +151,7 @@ ___ test_turn_up_lights(arg, expected):
     ... lights.lights_intensity __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "arg, expected",
     [
         # Turn on all lights
@@ -181,7 +181,7 @@ ___ test_turn_down_lights(arg, expected):
     ... lights.lights_intensity __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "arg, expected",
     [
         # Create grid of length 5 - intensity 0

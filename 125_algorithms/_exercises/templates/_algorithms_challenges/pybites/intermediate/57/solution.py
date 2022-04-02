@@ -12,7 +12,7 @@ ___ calculator(operation, numbers):
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals"""
-    func = operations.get(operation.lower())
+    func = operations.get(operation.l..
     __ n.. func:
         r.. ValueError('Invalid operation')
 

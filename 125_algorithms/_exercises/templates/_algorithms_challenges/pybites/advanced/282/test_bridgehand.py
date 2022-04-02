@@ -76,47 +76,47 @@ ___ test_wrong_cards
         BridgeHand([Card(Suit.S, Rank.A)] + [N..] * 12)
 
 
-@p__.m__.p..("hand", malformed_hands)
+?p__.m__.p.("hand", malformed_hands)
 ___ test_wrong_number_of_cards(hand):
     w__ p__.r..(ValueError):
         BridgeHand(hand.card_list)
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_str(bridge_hand, test_hand):
     ... s..(bridge_hand) __ test_hand.card_string
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_doubletons(bridge_hand, test_hand):
     ... bridge_hand.doubletons __ test_hand.doubletons
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_hcp(bridge_hand, test_hand):
     ... bridge_hand.hcp __ test_hand.hcp
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_singletons(bridge_hand, test_hand):
     ... bridge_hand.singletons __ test_hand.singletons
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_voids(bridge_hand, test_hand):
     ... bridge_hand.voids __ test_hand.voids
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_ssp(bridge_hand, test_hand):
     ... bridge_hand.ssp __ test_hand.ssp
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_total_points(bridge_hand, test_hand):
     ... bridge_hand.total_points __ test_hand.total_points
 
 
-@p__.m__.p..("bridge_hand, test_hand", hand_pairs)
+?p__.m__.p.("bridge_hand, test_hand", hand_pairs)
 ___ test_ltc(bridge_hand, test_hand):
     ... bridge_hand.ltc __ test_hand.ltc

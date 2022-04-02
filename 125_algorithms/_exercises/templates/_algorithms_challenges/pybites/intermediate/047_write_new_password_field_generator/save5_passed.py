@@ -10,4 +10,4 @@ ___ validate_password(password):
         used_passwords.add(password)
     ____:
         r.. F..
-    r.. p a.. bool(s)
+    r.. p a.. b..(s)

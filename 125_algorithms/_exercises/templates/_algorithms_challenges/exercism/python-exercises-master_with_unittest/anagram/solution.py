@@ -6,4 +6,4 @@ ___ detect_anagrams(word, candidates):
 
 
 ___ _letters(word):
-    r.. s..(word.lower())
+    r.. s..(word.l..

@@ -21,7 +21,7 @@ A and B will have length at most 100.
 
 
 c_ Solution:
-    ___ rotateString  A: s.., B: s..) __ bool:
+    ___ rotateString  A: s.., B: s..) __ b..:
         """
         brute force O(n^2), shift and compare but short circuit
         """

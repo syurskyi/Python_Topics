@@ -13,7 +13,7 @@ ___ list_to_decimal(nums: List[i..]) __ i..:
         1000's, 100's, 10's, 1's
     """
     ___ num __ nums:
-        __ isi..(num, bool) o. n.. isi..(num, i..):
+        __ isi..(num, b..) o. n.. isi..(num, i..):
             r.. T..
         ____ n.. num __ r..(0, 10):
             r.. ValueError

@@ -5,7 +5,7 @@ _______ p__
 ____ movie_budget _______ rent_or_stream, MovieRented
 
 
-@p__.m__.p..("arg, expected", [
+?p__.m__.p.("arg, expected", [
    ([MovieRented('Mad Max Fury Road', 4, date(2020, 12, 1))],
     {"2020-12": "rent"}),
    ([MovieRented('Mad Max Fury Road', 4, date(2020, 12, 17)),

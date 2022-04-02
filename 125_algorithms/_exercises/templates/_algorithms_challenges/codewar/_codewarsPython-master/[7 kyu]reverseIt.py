@@ -1,5 +1,5 @@
 ___ reverse_it(data):
-    __ isi..(data,bool):
+    __ isi..(data,b..):
         r.. data
     ____ isi..(data,i..):
         r.. i..(s..(data)[::-1])

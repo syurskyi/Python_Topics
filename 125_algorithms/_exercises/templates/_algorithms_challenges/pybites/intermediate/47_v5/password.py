@@ -5,7 +5,7 @@ PUNCTUATION_CHARS = l..(s__.punctuation)
 used_passwords = s..("PassWord@1 PyBit$s9".s..())
 
 
-___ validate_password(password: s..) __ bool:
+___ validate_password(password: s..) __ b..:
     __ n.. (6 <= l..(password) <= 12):
         r.. F..
     __ password __ used_passwords:

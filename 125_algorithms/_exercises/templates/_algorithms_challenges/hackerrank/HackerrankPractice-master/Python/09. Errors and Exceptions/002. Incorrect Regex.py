@@ -7,6 +7,6 @@ _______ __
 
 ___ _ __ r..(i..(input())):
     ___
-        print(bool(__.c..(input())))
+        print(b..(__.c..(input())))
     ______ __.error:
         print('False')

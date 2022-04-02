@@ -37,7 +37,7 @@ c_ MyCircularQueue:
         lst = [N.. ___ _ __ r..(k)]
 
 
-    ___ enQueue  value: i..) __ bool:
+    ___ enQueue  value: i..) __ b..:
         """
         Insert an element into the circular queue. Return true if the operation is successful.
         """
@@ -49,7 +49,7 @@ c_ MyCircularQueue:
         sz += 1
         r.. T..
 
-    ___ deQueue(self) __ bool:
+    ___ deQueue(self) __ b..:
         """
         Delete an element from the circular queue. Return true if the operation is successful.
         """
@@ -75,13 +75,13 @@ c_ MyCircularQueue:
         ret = lst[tail % k]
         r.. ret __ ret __ n.. N.. ____ -1
 
-    ___ isEmpty(self) __ bool:
+    ___ isEmpty(self) __ b..:
         """
         Checks whether the circular queue is empty or not.
         """
         r.. sz __ 0
 
-    ___ isFull(self) __ bool:
+    ___ isFull(self) __ b..:
         """
         Checks whether the circular queue is full or not.
         """

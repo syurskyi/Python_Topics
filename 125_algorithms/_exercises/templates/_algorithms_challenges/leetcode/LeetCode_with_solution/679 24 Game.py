@@ -22,7 +22,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ judgePoint24  nums: List[i..]) __ bool:
+    ___ judgePoint24  nums: List[i..]) __ b..:
         r.. dfs(nums, {})
 
     ___ dfs  A, cache):

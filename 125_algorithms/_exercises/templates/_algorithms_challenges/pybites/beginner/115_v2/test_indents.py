@@ -3,7 +3,7 @@ _______ p__
 ____ indents _______ count_indents
 
 
-@p__.m__.p..("input_string, count", [
+?p__.m__.p.("input_string, count", [
    ('string  ', 0),
    ('  string', 2),
    ('    string', 4),

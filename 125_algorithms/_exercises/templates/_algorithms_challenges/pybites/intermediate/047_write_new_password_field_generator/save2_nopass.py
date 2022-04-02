@@ -10,8 +10,8 @@ ___ validate_password(password):
     c = __.c..(
         r'^(?=.*\d)(?=.*[a-z]{2,})(?=.*[A-Z])(?=.*[PUNCTUATION_CHARS])[\w\dPUNCTUATION_CHARS]{6,12}$')
     s = __.s..(c, password)
-    __ password n.. __ used_passwords a.. bool(s):
+    __ password n.. __ used_passwords a.. b..(s):
         used_passwords.add(password)
-        r.. bool(s)
+        r.. b..(s)
     ____:
         r.. F..

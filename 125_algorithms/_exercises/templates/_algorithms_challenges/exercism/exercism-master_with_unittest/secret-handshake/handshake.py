@@ -52,7 +52,7 @@ c_ Handshake:
 
     @staticmethod
     ___ valid_string(s__):
-        r.. n.. bool(__.s..('[^01]', s__))
+        r.. n.. b..(__.s..('[^01]', s__))
 
     @staticmethod
     ___ testBit(int_type, offset):

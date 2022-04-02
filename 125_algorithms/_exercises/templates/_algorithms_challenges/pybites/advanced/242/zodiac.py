@@ -28,7 +28,7 @@ ___ get_sign_with_most_famous_people(signs: l..):
     r.. m..(famous_people, key=itemgetter(1))
 
 
-___ signs_are_mutually_compatible(signs: l.., sign1: s.., sign2: s..) __ bool:
+___ signs_are_mutually_compatible(signs: l.., sign1: s.., sign2: s..) __ b..:
     """Given 2 signs return if they are compatible (compatibility field)"""
     ret = F..
     ___ sign __ signs:

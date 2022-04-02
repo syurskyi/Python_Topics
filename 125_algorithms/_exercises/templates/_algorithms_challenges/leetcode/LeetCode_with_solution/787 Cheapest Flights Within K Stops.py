@@ -50,7 +50,7 @@ c_ Solution:
         dijkstra
         """
         G = defaultdict(d..)
-        visited = defaultdict(bool)
+        visited = defaultdict(b..)
         ___ u, v, w __ flights:
             G[u][v] = w
 

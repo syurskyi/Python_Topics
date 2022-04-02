@@ -3,7 +3,7 @@ _______ p__
 ____ scoping _______ sum_numbers
 
 
-@p__.m__.p..("arg, ret, hundreds_value", [
+?p__.m__.p.("arg, ret, hundreds_value", [
     ([], 0, -1),
     ([1, 2, 3], 6, -1),
     ([40, 50, 60], 150, 0),

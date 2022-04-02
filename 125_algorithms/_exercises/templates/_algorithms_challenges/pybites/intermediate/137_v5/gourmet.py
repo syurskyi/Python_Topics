@@ -100,8 +100,8 @@ Scores = n..('Scores', 'wine cheese score')
 
 
 ___ calculate_similarity(cheese, wine):
-    wine_count = Counter(wine.lower())
-    cheese_count = Counter(cheese.lower())
+    wine_count = Counter(wine.l..
+    cheese_count = Counter(cheese.l..
     common_letters = (wine_count & cheese_count)
     similarity = s..(common_letters.values()) / (1 + (l..(wine) - l..(cheese)) ** 2)
     r.. similarity

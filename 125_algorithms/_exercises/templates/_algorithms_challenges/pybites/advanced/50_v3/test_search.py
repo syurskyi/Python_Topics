@@ -43,7 +43,7 @@ MOCK_ENTRIES = AttrDict({'entries':
                            'title': 'Copy and Paste with Pyperclip'})]})
 
 
-@p__.m__.p..("arg, ret", [
+?p__.m__.p.("arg, ret", [
     (d__(2017, 9, 12, 8, 50, 0).timetuple(),
      date y.._2017,  m.._9,  d.._12)),
     (d__(2017, 9, 8, 14, 30, 0).timetuple(),
@@ -73,7 +73,7 @@ ___ test_get_feed_entries(inp):
     ... s..(l..(last.tags)) __ expected
 
 
-@p__.m__.p..("arg, ret", [
+?p__.m__.p.("arg, ret", [
     ('blabla', F..),
     ('tricks', T..),
     ('TRICKS', T..),  # case should not matter

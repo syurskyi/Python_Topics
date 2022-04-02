@@ -3,7 +3,7 @@ _______ p__
 ____ n_digit_numbers _______ n_digit_numbers
 
 
-@p__.m__.p..('input_list, n, expected', [
+?p__.m__.p.('input_list, n, expected', [
     ([], 1, []),
     ([1, 2, 3], 1, [1, 2, 3]),
     ([1, 2, 3], 2, [10, 20, 30]),

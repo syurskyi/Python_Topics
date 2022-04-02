@@ -1,4 +1,4 @@
-___ is_armstrong(n: i..) __ bool:
+___ is_armstrong(n: i..) __ b..:
     digit_count = l..(s..(n))
     input_n = n
     s.. = 0

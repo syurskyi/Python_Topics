@@ -3,7 +3,7 @@ _______ p__
 ____ search_apartment _______ search_apartment
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "buildings, direction, expected",
     [
         ([1, 1, 1, 1, 1], "W", [0]),

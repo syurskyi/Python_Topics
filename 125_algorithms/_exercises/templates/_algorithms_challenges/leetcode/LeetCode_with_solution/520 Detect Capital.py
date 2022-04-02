@@ -23,7 +23,7 @@ latin letters.
 
 
 c_ Solution:
-    ___ detectCapitalUse  word: s..) __ bool:
+    ___ detectCapitalUse  word: s..) __ b..:
         """
         Two passes is easy
         How to do it in one pass

@@ -3,7 +3,7 @@ _______ p__
 ____ running_mean _______ running_mean
 
 
-@p__.m__.p..("input_argument, expected_return", [
+?p__.m__.p.("input_argument, expected_return", [
     ([1, 2, 3], [1, 1.5, 2]),
     ([2, 6, 10, 8, 11, 10],
      [2.0, 4.0, 6.0, 6.5, 7.4, 7.83]),

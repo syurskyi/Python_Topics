@@ -12,7 +12,7 @@ the number of teams would be greater.
 See the tests for more details. Enjoy :)
 """
 
-___ my_solution_friends_teams(friends: l.., team_size: i.., order_does_matter: bool = F..) __ l..:
+___ my_solution_friends_teams(friends: l.., team_size: i.., order_does_matter: b.. = F..) __ l..:
 
     __ order_does_matter:
         result = permutations(friends, team_size)

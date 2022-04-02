@@ -310,7 +310,7 @@ deps =
 ini_files = (cookiecutter, django, oeuvre, pyramid)
 
 
-@p__.m__.p..("ini_file, num_sections, envs, base_pys", [
+?p__.m__.p.("ini_file, num_sections, envs, base_pys", [
     (cookiecutter, 4,
      ['flake8', 'py34', 'py35', 'py36', 'pypy', 'py27'],
      []),

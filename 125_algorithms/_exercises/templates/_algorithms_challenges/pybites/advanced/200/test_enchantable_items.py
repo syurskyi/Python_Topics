@@ -138,7 +138,7 @@ ___ test_enchantment_print(mock_data, capfd):
     )
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "enchant, expected",
     [
         ("aqua_affinity", 1),
@@ -167,7 +167,7 @@ ___ test_generate_enchantments_from_source
     ... data["efficiency"].max_level __ 5
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "item, expected",
     [
         ("armor", "Blast Protection"),
@@ -181,7 +181,7 @@ ___ test_gen_items_mocked(mocked_generate_items, item, expected):
     ... mocked_generate_items[item].enchantments[0].name __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "item, expected",
     [
         (
@@ -249,7 +249,7 @@ ___ test_gen_items(coders_dataset, item, expected):
     ... [enc.id_name ___ enc __ coders_dataset[item].enchantments] __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "item, expected",
     [
         (

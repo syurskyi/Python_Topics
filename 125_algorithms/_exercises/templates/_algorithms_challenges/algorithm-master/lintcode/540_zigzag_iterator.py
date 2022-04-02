@@ -79,4 +79,4 @@ c_ ZigzagIterator:
     @return: True if has next
     """
     ___ hasNext
-        r.. bool(queue)
+        r.. b..(queue)

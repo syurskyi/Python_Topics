@@ -73,7 +73,7 @@ c_ MagicDictionary:
             root = trie.root
             root.children[s[0]] = trie.insert(root.children[s[0]], s, 0)
 
-    ___ s..  word: s..) __ bool:
+    ___ s..  word: s..) __ b..:
         """
         Returns if there is any word in the trie that equals to the given word after modifying exactly one character
         """

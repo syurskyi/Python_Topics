@@ -26,7 +26,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ isRectangleOverlap  rec1: List[i..], rec2: List[i..]) __ bool:
+    ___ isRectangleOverlap  rec1: List[i..], rec2: List[i..]) __ b..:
         """
         De Morgan's Law
            0      1       2        3
@@ -42,7 +42,7 @@ c_ Solution:
         )
 
 
-    ___ isRectangleOverlap_error  rec1: List[i..], rec2: List[i..]) __ bool:
+    ___ isRectangleOverlap_error  rec1: List[i..], rec2: List[i..]) __ b..:
         __ rec1[0] > rec2[0]:
             r.. isRectangleOverlap(rec2, rec1)
 

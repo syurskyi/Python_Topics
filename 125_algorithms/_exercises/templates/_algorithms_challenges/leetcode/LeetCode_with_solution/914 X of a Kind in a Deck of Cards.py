@@ -44,7 +44,7 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ hasGroupsSizeX  deck: List[i..]) __ bool:
+    ___ hasGroupsSizeX  deck: List[i..]) __ b..:
         """
         gcd of all > 2
         """

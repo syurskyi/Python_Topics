@@ -9,5 +9,5 @@ ___ sort_words_case_insensitively(words):
 
 
 
-    r.. s..(w,key=l.... val: val.lower()) + s..(d,key=l.... val: val.lower())
+    r.. s..(w,key=l.... val: val.l.. + s..(d,key=l.... val: val.l..
     

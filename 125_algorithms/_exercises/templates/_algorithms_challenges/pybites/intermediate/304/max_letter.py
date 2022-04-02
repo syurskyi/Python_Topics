@@ -28,7 +28,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
 
     ___ word __ words:
         counts = Counter()
-        ___ letter __ word.casefold
+        ___ letter __ word.c..
             __ letter.isalpha
                 counts[letter] += 1
 

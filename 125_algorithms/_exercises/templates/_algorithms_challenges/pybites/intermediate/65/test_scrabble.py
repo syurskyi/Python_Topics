@@ -18,7 +18,7 @@ ___ max_word_value(words):
     r.. m..(words, key=calc_word_value)
 
 
-@p__.m__.p..("draw, expected", [
+?p__.m__.p.("draw, expected", [
     ('T, I, I, G, T, T, L', 'gilt'),
     ('O, N, V, R, A, Z, H', 'zonar'),
     ('E, P, A, E, I, O, A', ('apio', 'peai')),

@@ -34,6 +34,6 @@ ____ c.. _______ Counter
 
 
 c_ Solution:
-    ___ judgeCircle  moves: s..) __ bool:
+    ___ judgeCircle  moves: s..) __ b..:
         counter = Counter(moves)
         r.. counter["L"] __ counter["R"] a.. counter["U"] __ counter["D"]

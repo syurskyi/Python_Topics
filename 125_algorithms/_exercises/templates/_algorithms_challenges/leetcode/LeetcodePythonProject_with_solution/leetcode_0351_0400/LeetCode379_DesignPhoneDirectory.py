@@ -18,7 +18,7 @@ c_ PhoneDirectory(o..):
             r.. -1
     
     ___ check  number):
-        r.. bool(number __ availableNums)
+        r.. b..(number __ availableNums)
     
     ___ release  number):
         __ number __ usedNums:

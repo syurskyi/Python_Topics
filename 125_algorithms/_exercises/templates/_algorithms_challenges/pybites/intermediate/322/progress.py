@@ -2,7 +2,7 @@ ____ d__ _______ d__
 
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. = N..) __ bool:
+                    day_of_year: i.. = N..) __ b..:
 
     days_in_year = 365
     

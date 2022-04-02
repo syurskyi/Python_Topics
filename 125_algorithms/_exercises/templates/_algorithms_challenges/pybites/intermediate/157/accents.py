@@ -11,7 +11,7 @@ ___ filter_accents(text):
       __ char.l.. __ text[i].l..:
          _____
       ____:
-         accent_chars.a..(text[i].lower())
+         accent_chars.a..(text[i].l..
 
    r.. accent_chars
 

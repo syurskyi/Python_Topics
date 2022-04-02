@@ -15,6 +15,6 @@ c_ Solution(o..):
             __ value%2 != 0:
                 odd += 1
         __ l..(s)%2 __ 0:
-            r.. bool(odd __ 0)
+            r.. b..(odd __ 0)
         ____:
-            r.. bool(odd < 2)
+            r.. b..(odd < 2)

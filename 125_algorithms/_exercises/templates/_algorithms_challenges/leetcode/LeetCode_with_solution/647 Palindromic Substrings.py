@@ -34,7 +34,7 @@ c_ Solution:
         :type s: str
         :rtype: int
         """
-        F = defaultdict(l....: defaultdict(bool))
+        F = defaultdict(l....: defaultdict(b..))
         n = l..(s)
         ___ i __ r..(n):
             F[i][i] = T..

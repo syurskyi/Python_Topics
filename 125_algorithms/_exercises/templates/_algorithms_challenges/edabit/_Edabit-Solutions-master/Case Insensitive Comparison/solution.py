@@ -1,3 +1,3 @@
 ___ m..(s1, s2):
-    __ s1.casefold() __ s2.casefold
+    __ s1.c..() __ s2.c..
         r.. T..

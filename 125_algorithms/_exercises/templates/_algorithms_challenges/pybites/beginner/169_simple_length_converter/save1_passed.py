@@ -5,7 +5,7 @@ ___ convert(value: f__, fmt: s..) __ f__:
     :param fmt: String indicating format to convert to
     :return: Float rounded to 4 decimal places after conversion
     """
-    fmt = fmt.casefold()
+    fmt = fmt.c..()
     is_float = N..
     w.... is_float __ N..
         ___

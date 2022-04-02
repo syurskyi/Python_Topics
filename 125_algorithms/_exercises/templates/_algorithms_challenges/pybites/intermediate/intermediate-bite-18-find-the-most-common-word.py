@@ -55,7 +55,7 @@ ___ my_solution_get_harry_most_common_word
             p = word.strip(s__.punctuation).l..
 
             __ l..(p) > 0 a.. p n.. __ stopwords:
-                filtered.a..(word.strip(s__.punctuation).lower())
+                filtered.a..(word.strip(s__.punctuation).l..
 
     counter = Counter(filtered)
     r.. counter.most_common(1)[0]

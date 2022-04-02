@@ -46,7 +46,7 @@ artagnon:x:1005:1005:Ramkumar R,,,,Git GSOC:/home/artagnon:/bin/bash
 """
 
 
-@p__.m__.p..("input_, expected", [
+?p__.m__.p.("input_, expected", [
     (pw1, {'root': 'root', 'daemon': 'daemon', 'bin': 'bin',
            'sys': 'sys', 'sync': 'sync', 'games': 'games',
            'man': 'man', 'lp': 'lp'}),

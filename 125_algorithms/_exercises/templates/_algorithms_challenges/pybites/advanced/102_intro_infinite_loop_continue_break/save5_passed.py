@@ -13,7 +13,7 @@ ___ print_colors
             print("bye")
             _____
         ____ color __ VALID_COLORS:
-            print(color.lower())
+            print(color.l..
         ____:
             print("Not a valid color")
         p..

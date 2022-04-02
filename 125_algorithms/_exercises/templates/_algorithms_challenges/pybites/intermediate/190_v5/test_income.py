@@ -51,7 +51,7 @@ ___ actual
     r.. get_income_distribution()
 
 
-@p__.m__.p..("income, countries", EXPECTED.i..
+?p__.m__.p.("income, countries", EXPECTED.i..
 ___ test_return_function(actual, income, countries):
     ... income __ actual
     ... s..(actual[income]) __ s..(countries)

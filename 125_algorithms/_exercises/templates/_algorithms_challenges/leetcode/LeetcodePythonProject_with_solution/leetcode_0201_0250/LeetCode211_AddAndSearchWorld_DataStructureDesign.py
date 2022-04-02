@@ -28,7 +28,7 @@ c_ WordDictionary(o..):
     
     ___ searchDFS  children, word, startInd):
         __ startInd __ l..(word):
-            r.. bool(n.. children)
+            r.. b..(n.. children)
         c = word[startInd]
         __ c __ children:
             __ startInd __ l..(word)-1 a.. children[c].isLeaf:

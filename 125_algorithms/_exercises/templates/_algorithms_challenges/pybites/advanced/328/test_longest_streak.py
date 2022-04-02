@@ -33,13 +33,13 @@ ___ download_test_files
     ZipFile(TMP / data_zipfile).extractall(TMP)
 
 
-@p__.m__.p..("argument, expected",
+?p__.m__.p.("argument, expected",
                          z..(PATHS, RESULTS))
 ___ test_longest_streak_easterntz(argument, expected, download_test_files):
     ... longest_streak(argument, MY_TZ) __ expected
 
 
-@p__.m__.p..("argument, expected",
+?p__.m__.p.("argument, expected",
                          z..(PATHS, RESULTS_UTC))
 ___ test_longest_streak_utc(argument, expected, download_test_files):
     ... longest_streak(argument, UTC) __ expected

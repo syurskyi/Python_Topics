@@ -6,4 +6,4 @@ ___ is_anagram(word1, word2):
     w2 = word2.l...r..(' ', '')
     __ l..(w1) != l..(w2):
         r.. F..
-    r.. a..(x __ y ___ x, y __ z..(s..(w1.lower()), s..(w2.lower())))
+    r.. a..(x __ y ___ x, y __ z..(s..(w1.l.., s..(w2.lower())))

@@ -16,7 +16,7 @@ ___ test_return(content):
     ... a..(t..(book) __ t.. ___ book __ books)
 
 
-@p__.m__.p..("title, count", [
+?p__.m__.p.("title, count", [
   ('Man’s Search For Meaning', 6),
   ('Tao Te Ching', 5),
   (('The 4-Hour Workweek: Escape the 9-5, '

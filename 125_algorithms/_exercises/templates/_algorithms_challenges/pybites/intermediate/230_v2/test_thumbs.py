@@ -8,7 +8,7 @@ ___ thumbs
     r.. Thumbs()
 
 
-@p__.m__.p..("arg, expected", [
+?p__.m__.p.("arg, expected", [
     (-10, "👎 (10x)"),
     (-9, "👎 (9x)"),
     (-8, "👎 (8x)"),

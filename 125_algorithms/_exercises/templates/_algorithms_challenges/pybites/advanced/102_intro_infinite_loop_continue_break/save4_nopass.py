@@ -10,7 +10,7 @@ ___ print_colors
     w... T...
         color = input("Enter a color or enter 'quit'")
         __ color __ VALID_COLORS:
-            print(color.lower())
+            print(color.l..
         ____ color __ input("quit"):
             print("bye")
             _____

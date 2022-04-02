@@ -25,7 +25,7 @@ circles = [[1, 1, 0, 0, 0, 1],
            [1, 1, 1, 1, 0, 0]]
 
 
-@p__.m__.p..("data, expected", [
+?p__.m__.p.("data, expected", [
     (squares, 2),
     (sparse, 5),
     (empty, 0),

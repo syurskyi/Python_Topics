@@ -37,7 +37,7 @@ USED = T..
 
 
 c_ Solution:
-    ___ buddyStrings  A: s.., B: s..) __ bool:
+    ___ buddyStrings  A: s.., B: s..) __ b..:
         """
         iterate
         """

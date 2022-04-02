@@ -19,7 +19,7 @@ ____ c.. _______ defaultdict
 
 
 c_ Solution:
-    ___ checkInclusion  s1: s.., s2: s..) __ bool:
+    ___ checkInclusion  s1: s.., s2: s..) __ b..:
         """
         counter + two pointers
         """

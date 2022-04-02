@@ -1,6 +1,6 @@
 _______ math
 
-___ is_armstrong(n: i..) __ bool:
+___ is_armstrong(n: i..) __ b..:
     # your code ...
 
     actual_num = n 

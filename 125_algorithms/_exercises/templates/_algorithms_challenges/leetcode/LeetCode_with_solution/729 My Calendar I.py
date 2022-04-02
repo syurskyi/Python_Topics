@@ -81,7 +81,7 @@ c_ MyCalendar:
         ____:
             r.. N..
 
-    ___ book  start: i.., end: i..) __ bool:
+    ___ book  start: i.., end: i..) __ b..:
         ret = insert(root, start, end)
         __ ret __ N..
             r.. F..

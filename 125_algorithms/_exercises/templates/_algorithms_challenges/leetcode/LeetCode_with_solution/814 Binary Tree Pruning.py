@@ -53,7 +53,7 @@ c_ Solution:
         root, _ = prune(root)
         r.. root
 
-    ___ prune  node) __ Tuple[TreeNode, bool]:
+    ___ prune  node) __ Tuple[TreeNode, b..]:
         __ n.. node:
             r.. N.., F..
 

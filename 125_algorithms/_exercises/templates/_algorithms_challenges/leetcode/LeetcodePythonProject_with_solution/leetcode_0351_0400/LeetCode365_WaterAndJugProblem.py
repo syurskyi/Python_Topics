@@ -12,4 +12,4 @@ c_ Solution(o..):
             tmp = y
             y = x%y
             x = tmp
-        r.. bool(z%x__0)
+        r.. b..(z%x__0)

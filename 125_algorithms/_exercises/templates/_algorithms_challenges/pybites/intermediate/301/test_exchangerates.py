@@ -19,7 +19,7 @@ ___ matching_result
     r.. match_daily_rates(start, end, daily_rates)
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "start, end, expected",
     [
         (date(2020, 1, 1), date(2020, 1, 31), 31),
@@ -38,7 +38,7 @@ ___ test_get_all_days(start, end, expected):
     ... actual[-1] __ end
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "date, expected",
     [
         (date(2020, 1, 18), date(2020, 1, 17)),
@@ -52,7 +52,7 @@ ___ test_match_daily_rates(date, expected, matching_result):
     ... actual[date] __ expected
 
 
-@p__.m__.p..(
+?p__.m__.p.(
     "testdate, expected",
     [
         (

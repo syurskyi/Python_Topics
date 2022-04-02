@@ -35,7 +35,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ prefixesDivBy5  A: List[i..]) __ List[bool]:
+    ___ prefixesDivBy5  A: List[i..]) __ List[b..]:
         """
         brute force
         """

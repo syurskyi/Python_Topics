@@ -38,10 +38,10 @@ c_ Trie(o..):
     
     ___ s..  word):
         t = searchNode(word)
-        r.. bool(t a.. t.isLeaf)
+        r.. b..(t a.. t.isLeaf)
     
     ___ startsWith  prefix):
         t = searchNode(prefix)
-        r.. bool(t __ n.. N..)
+        r.. b..(t __ n.. N..)
     
     

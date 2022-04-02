@@ -43,7 +43,7 @@ ___ test_type_of_movie_elements(movies):
     ... a..(t..(m) __ d.. ___ m __ movies)
 
 
-@p__.m__.p..("func, expected", [
+?p__.m__.p.("func, expected", [
     (get_single_comedy, 'Horrible Bosses'),
     (get_movie_most_nominations, 'Fight Club'),
     (get_movie_longest_runtime, 'Blade Runner 2049'),

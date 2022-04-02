@@ -22,7 +22,7 @@ no_words_in_text = '1, 2, 3'
 empty_text = ''
 
 
-@p__.m__.p..("given, expected",
+?p__.m__.p.("given, expected",
                          [(sample_text, ('possession', 's', 4)),
                           (with_numbers_text, ('Leagues', 'e', 2)),
                           (emoji_text, ('letters', 'e', 2)),
@@ -46,7 +46,7 @@ ___ test_max_letter_word(given, expected):
     ... result __ expected
 
 
-@p__.m__.p..("bad_input", [N.., T.., 1, 1.0, [], {}])
+?p__.m__.p.("bad_input", [N.., T.., 1, 1.0, [], {}])
 ___ test_max_letter_word_exceptions(bad_input):
     w__ p__.r..(ValueError):
         max_letter_word(bad_input)

@@ -1,7 +1,7 @@
 ____ d__ _______ d__
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. = N..) __ bool:
+                    day_of_year: i.. = N..) __ b..:
     today = d__.n..
     day = [day_of_year __ day_of_year ____ i..(today.s..('%j'))][0]
     reading_speed = 365 / books_goal

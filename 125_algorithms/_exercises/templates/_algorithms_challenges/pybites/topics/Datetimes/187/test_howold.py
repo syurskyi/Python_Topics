@@ -32,7 +32,7 @@ return_strings = [
 ]
 
 
-@p__.m__.p..('actor, movie, expected',
+?p__.m__.p.('actor, movie, expected',
                          z..(actors, movies, return_strings))
 ___ test_get_age(actor, movie, expected):
     ... get_age(actor, movie) __ expected

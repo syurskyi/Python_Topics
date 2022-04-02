@@ -31,7 +31,7 @@ ___ test_help_text_hints(parser, capfd):
         ... op __ output
 
 
-@p__.m__.p..("args, expected", [
+?p__.m__.p.("args, expected", [
     (['1'], 1),
     (['1', '2'], 3),
     (['1', '2', '3'], 6),
@@ -42,7 +42,7 @@ ___ test_add_operations(parser, args, expected):
     ... call_calculator(args) __ expected
 
 
-@p__.m__.p..("args, expected", [
+?p__.m__.p.("args, expected", [
     (['1'], 1),
     (['1', '2'], -1),
     (['10', '7', '0.5'], 2.5),
@@ -53,7 +53,7 @@ ___ test_sub_operations(parser, args, expected):
     ... call_calculator(args) __ expected
 
 
-@p__.m__.p..("args, expected", [
+?p__.m__.p.("args, expected", [
     (['1'], 1),
     (['1', '2'], 2),
     (['3.5', '2', '4.2'], 29.4),
@@ -64,7 +64,7 @@ ___ test_mul_operations(parser, args, expected):
     ... call_calculator(args) __ expected
 
 
-@p__.m__.p..("args, expected", [
+?p__.m__.p.("args, expected", [
     (['2'], 2),
     (['1', '0'], 0),
     (['2.2', '7', '1.1'], 0.29),

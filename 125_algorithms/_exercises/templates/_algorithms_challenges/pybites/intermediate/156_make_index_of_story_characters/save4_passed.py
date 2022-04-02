@@ -63,7 +63,7 @@ ___ make_character_index(text=text, characters=CHARACTERS):
     ___ character __ characters:
         __ t..(character) __ t..:
             character = '|'.j..(l..(character))
-        character_list.a..(character.lower())
+        character_list.a..(character.l..
 
     ___ character __ character_list:
         ___ line __ e..(new_text):

@@ -10,7 +10,7 @@ ___ cleanWord(data):
 ___ isPalindrome(wordCount):
     answer    # list
     ___ x __ r..(wordCount):
-        word = cleanWord(raw_input().lower())
+        word = cleanWord(raw_input().l..
         word = ''.j..(word)
         __ word __ word[::-1]:
             answer.a..('Y')

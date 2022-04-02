@@ -47,7 +47,7 @@ c_ Solution:
             dfs(lst, S_lst, i + 1)
             lst.pop()
         ____:
-            lst.a..(S_lst[i].lower())
+            lst.a..(S_lst[i].l..
             dfs(lst, S_lst, i + 1)
             lst.pop()
             lst.a..(S_lst[i].upper())

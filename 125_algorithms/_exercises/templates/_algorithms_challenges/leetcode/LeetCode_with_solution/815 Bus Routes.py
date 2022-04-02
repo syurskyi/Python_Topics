@@ -52,7 +52,7 @@ c_ Solution:
 
         q = [i ___ i, stops __ e..(routes) __ S __ stops]
         target_set = s..([i ___ i, stops __ e..(routes) __ T __ stops])
-        visited = defaultdict(bool)
+        visited = defaultdict(b..)
         ___ i __ q:
             visited[i] = T..
         step = 1
@@ -88,7 +88,7 @@ c_ Solution:
 
         q = [S]
         step = 0
-        visited = defaultdict(bool)
+        visited = defaultdict(b..)
         visited[S] = T..  # avoid add duplicate
         w.... q:
             cur_q    # list

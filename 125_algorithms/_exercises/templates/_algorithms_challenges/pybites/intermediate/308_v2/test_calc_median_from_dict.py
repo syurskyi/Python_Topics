@@ -4,7 +4,7 @@ _______ p__
 
 
 # Small Numbers
-@p__.m__.p..(
+?p__.m__.p.(
     "test_input,expected",
     [
         ({1: 1}, 1),
@@ -21,7 +21,7 @@ ___ test_median_from_dict__valid_numbers(test_input, expected):
 
 
 # Huge numbers
-@p__.m__.p..(
+?p__.m__.p.(
     "test_input,expected",
     [
         ({1: 1_000_000_000_000_000, 2: 1, 3: 1_000_000_000_000_000}, 2),
@@ -48,7 +48,7 @@ ___ test_median_from_dict_valid_huge_numbers(test_input, expected):
 
 
 # Errors should be raised when the dict value is not a number
-@p__.m__.p..(
+?p__.m__.p.(
     "test_input",
     [
         ({1: "a"}),

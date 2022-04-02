@@ -20,7 +20,7 @@ ____ typing _______ List
 
 
 c_ Solution:
-    ___ canPartitionKSubsets  nums: List[i..], k: i..) __ bool:
+    ___ canPartitionKSubsets  nums: List[i..], k: i..) __ b..:
         """
         resurive search
         """
@@ -63,7 +63,7 @@ c_ Solution:
 
 
 c_ Solution_TLE:
-    ___ canPartitionKSubsets  nums: List[i..], k: i..) __ bool:
+    ___ canPartitionKSubsets  nums: List[i..], k: i..) __ b..:
         """
         resurive search
         """

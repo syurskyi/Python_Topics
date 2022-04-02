@@ -23,7 +23,7 @@ ___ four_day_weekends(*args,
         start_month: i.. = 8,
         paid_time_off: i.. = 200,
         year: i.. = 2020,
-        show_workdays: bool = F..
+        show_workdays: b.. = F..
     ) __ N..
     """Generates four day weekend report
 

@@ -3,7 +3,7 @@ _______ p__
 ____ belt _______ get_belt
 
 
-@p__.m__.p..("input_argument, expected_return", [
+?p__.m__.p.("input_argument, expected_return", [
     (0, N..),
     (9, N..),
     (10, 'white'),

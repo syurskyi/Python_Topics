@@ -98,8 +98,8 @@ ___ similarity(s1, s2):
     1 + square difference of the length of both words
     '''
     # common characters
-    s1 = l..(s1.lower())
-    s2 = l..(s2.lower())
+    s1 = l..(s1.l..
+    s2 = l..(s2.l..
     dlen = l..(s1) - l..(s2)
     common    # list
 

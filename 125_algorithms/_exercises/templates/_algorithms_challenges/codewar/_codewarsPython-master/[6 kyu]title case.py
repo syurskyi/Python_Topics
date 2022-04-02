@@ -4,7 +4,7 @@ ___ title_case(title, minor_words = ''):
     res = [title.t...s.. [0]]
     ___ word __ title.t...s.. [1:]:
         __ word.l.. __ [w.l.. ___ w __ minor_words.s.. ]:
-            res.a..(word.lower())
+            res.a..(word.l..
         ____:
             res.a..(word)
     r.. ' '.j..(res)

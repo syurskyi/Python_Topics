@@ -3,7 +3,7 @@ _______ p__
 ____ workouts _______ print_workout_days
 
 
-@p__.m__.p..('arg,expected',
+?p__.m__.p.('arg,expected',
                          [('upper', 'Mon, Thu\n'),
                           ('lower', 'Tue, Fri\n'),
                           ('cardio', 'Wed\n'),

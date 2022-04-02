@@ -62,4 +62,4 @@ c_ Solution:
                 __ pos + k + 1 __ dp:
                     dp[pos + k + 1].add(k + 1)
 
-        r.. bool(dp[stones[-1]])
+        r.. b..(dp[stones[-1]])

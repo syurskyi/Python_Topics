@@ -3,7 +3,7 @@ ____ d__ _______ d__
 today = d__.today()
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. = N..) __ bool:
+                    day_of_year: i.. = N..) __ b..:
         day = [day_of_year 
         __ day_of_year ____ today.timetuple().tm_yday][0]
     __ books_read >= books_goal:

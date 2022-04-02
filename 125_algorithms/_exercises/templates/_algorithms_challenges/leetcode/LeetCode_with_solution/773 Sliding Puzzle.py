@@ -74,7 +74,7 @@ c_ Solution:
 
         Possible to reduce the 2D array in a 1D array and do %C and //C, where C is the size of the column
         """
-        visited = defaultdict(bool)
+        visited = defaultdict(b..)
         m, n = l..(board), l..(board[0])
         q = [(heuristic_dist(board) + 0, 0, board)]
         target = [

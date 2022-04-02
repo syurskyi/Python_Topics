@@ -34,7 +34,7 @@ ___ get_possible_dict_words(draw):
     ___ word __ permute_list:
         temp_word = ''.j..(word)
         __ temp_word.l.. __ dictionary:
-            possible_word[temp_word.l..] = calc_word_value(temp_word.lower())
+            possible_word[temp_word.l..] = calc_word_value(temp_word.l..
     listOfKeys = l..()
     max_value = m..(possible_word.values())
     ___ key, value __ possible_word.i..:

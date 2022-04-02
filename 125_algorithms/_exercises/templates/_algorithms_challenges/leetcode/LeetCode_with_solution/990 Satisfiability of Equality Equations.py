@@ -61,7 +61,7 @@ c_ DisjointSet:
         r.. pi[x]
 
 c_ Solution:
-    ___ equationsPossible  equations: List[s..]) __ bool:
+    ___ equationsPossible  equations: List[s..]) __ b..:
         """
         union find
         """

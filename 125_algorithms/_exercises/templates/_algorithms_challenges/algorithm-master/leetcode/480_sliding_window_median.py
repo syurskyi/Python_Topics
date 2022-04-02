@@ -12,7 +12,7 @@ c_ HashHeapq:
         r.. l..(__heap)
 
     ___ __bool__
-        r.. bool(__heap)
+        r.. b..(__heap)
 
     ___ push  val):
         heapq.heappush(__heap, val)

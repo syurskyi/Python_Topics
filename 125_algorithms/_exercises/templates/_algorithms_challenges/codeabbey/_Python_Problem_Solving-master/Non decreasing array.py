@@ -1,5 +1,5 @@
 c_ Solution:
-    ___ checkPossibility  nums: List[i..]) __ bool:
+    ___ checkPossibility  nums: List[i..]) __ b..:
                 i = 0
                 non_count = 0
                 equals = F..

@@ -3,7 +3,7 @@ ____ freezegun _______ freeze_time
 
 
 ___ ontrack_reading(books_goal: i.., books_read: i..,
-                    day_of_year: i.. = N..) __ bool:
+                    day_of_year: i.. = N..) __ b..:
     __ day_of_year __ N..
         today = d__.today()
         first_day = d__(2021,1,1)
