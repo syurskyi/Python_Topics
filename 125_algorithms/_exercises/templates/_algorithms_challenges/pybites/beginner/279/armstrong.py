@@ -5,7 +5,7 @@ ___ is_armstrong(n: i..) __ b..:
 
     actual_num = n 
 
-    d.. = m__.floor(m__.log(n,10)) + 1
+    d.. = m__.f..(m__.log(n,10)) + 1
 
     print(d..)
 

@@ -71,7 +71,7 @@ ___ convolution2D(
 
 
 
-    output_array_size = i..(np.floor((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1))
+    output_array_size = i..(np.f..((image.shape[0] + 2 * padding - kernel.shape[0])/stride + 1))
 
 
     output_array = np.zeros((output_array_size,) * 2)

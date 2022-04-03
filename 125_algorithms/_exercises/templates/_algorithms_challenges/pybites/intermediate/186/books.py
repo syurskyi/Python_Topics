@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-____ m__ _______ floor
+____ m__ _______ f..
 ____ dateutil.parser _______ p..
 
 # work with a static date for tests, real use = datetime.now()
@@ -29,7 +29,7 @@ ___ get_number_books_read(books_per_year_goal: i..,
    # year" - e.g. whatweekisit.com) and based on the books_per_year_goal,
    # calculate the number of books that should have been read / completed
    week_of_year = dt.isocalendar()[1]
-   r.. floor((week_of_year / WEEKS_PER_YEAR) * books_per_year_goal)
+   r.. f..((week_of_year / WEEKS_PER_YEAR) * books_per_year_goal)
 
 
 __ _______ __ _______

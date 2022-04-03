@@ -1,4 +1,4 @@
-____ m__ _______ floor
+____ m__ _______ f..
 
 
 ___ binary_search(sequence, target
@@ -6,7 +6,7 @@ ___ binary_search(sequence, target
     right = l..(sequence) - 1
 
     w.... left <= right:
-        mid = floor((left + right) / 2)
+        mid = f..((left + right) / 2)
         val = sequence[mid]
         __ target < val:
             right = mid - 1
