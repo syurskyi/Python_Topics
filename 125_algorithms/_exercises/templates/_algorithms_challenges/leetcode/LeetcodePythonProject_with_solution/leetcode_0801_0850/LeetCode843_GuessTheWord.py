@@ -27,7 +27,7 @@ c_ Solution(o..
         """
         n = 0
         w.... n < 6:
-            count = c...Counter(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ m..(w1, w2) __ 0)
+            count = c...C..(w1 ___ w1, w2 __ i...permutations(wordlist, 2) __ m..(w1, w2) __ 0)
             guess = m..(wordlist, key=l.... w:count[w])
             n = master.guess(guess)
             wordlist = [w ___ w __ wordlist __ m..(w, guess) __ n]

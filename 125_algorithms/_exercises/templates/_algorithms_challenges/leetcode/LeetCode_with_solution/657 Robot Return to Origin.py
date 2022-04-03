@@ -30,10 +30,10 @@ Explanation: The robot moves left twice. It ends up two "moves" to the left of
 the origin. We return false because it is not at the origin at the end of its
 moves.
 """
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
     ___ judgeCircle  moves: s..) __ b..:
-        counter = Counter(moves)
+        counter = C..(moves)
         r.. counter["L"] __ counter["R"] a.. counter["U"] __ counter["D"]

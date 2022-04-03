@@ -8,7 +8,7 @@ c_ Solution(o..
     d    # dict
     ans    # list
     ___ num __ nums1:
-      d[num] = d.get(num, 0) + 1
+      d[num] = d.g.. num, 0) + 1
 
     ___ num __ nums2:
       __ num __ d:

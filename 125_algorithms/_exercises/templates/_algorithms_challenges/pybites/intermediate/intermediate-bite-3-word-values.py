@@ -57,7 +57,7 @@ ___ calc_word_value_v1(word
     r.. value
 
 ___ calc_word_value_v2(word
-    r.. s..(LETTER_SCORES.get(char.u.., 0) ___ char __ word)
+    r.. s..(LETTER_SCORES.g.. char.u.., 0) ___ char __ word)
 
 
 ___ max_word_value(words

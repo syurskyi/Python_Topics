@@ -1,5 +1,5 @@
 _______ __
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ dataclasses _______ dataclass, field
 ____ s__ _______ punctuation
 ____ typing _______ List, Set, Tuple
@@ -75,7 +75,7 @@ c_ Corpora:
         :return: List of tuples, i.e. ("word", count)
         """
         wordlist = [word ___ word __ cleaned.s..  __ n.. word __ stopwords]
-        metrics = Counter(wordlist)
+        metrics = C..(wordlist)
 
         r.. metrics.most_common(count)
 

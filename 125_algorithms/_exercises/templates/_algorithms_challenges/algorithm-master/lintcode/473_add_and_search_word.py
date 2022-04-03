@@ -32,7 +32,7 @@ c_ Trie:
 
     ___ _search_in_regex  s__, parent, i
         __ i __ l..(s__
-            r.. parent.get('_end', F..)
+            r.. parent.g.. '_end', F..)
         result = F..
         __ s__[i] __ '.':
             ___ child __ parent:

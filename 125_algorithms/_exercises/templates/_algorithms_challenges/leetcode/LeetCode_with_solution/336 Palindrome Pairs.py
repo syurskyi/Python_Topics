@@ -72,7 +72,7 @@ c_ Solution:
                 __ is_palindrome(w, i, l..(w)) a.. cur.word_idx __ n.. N.. a.. cur.word_idx != idx:
                     ret.a..([idx, cur.word_idx])
 
-                cur = cur.children.get(w[i], N..)
+                cur = cur.children.g.. w[i], N..)
                 __ cur __ N..
                     _____
             ____:

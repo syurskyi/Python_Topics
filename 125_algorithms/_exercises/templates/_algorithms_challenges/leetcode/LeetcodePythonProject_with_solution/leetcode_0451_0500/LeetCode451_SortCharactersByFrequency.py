@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ frequencySort  s
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         bucket = [[] ___ _ __ r..(l..(s)+1)]
         ___ c, count __ hashmap.i..:
             bucket[count].a..(c)

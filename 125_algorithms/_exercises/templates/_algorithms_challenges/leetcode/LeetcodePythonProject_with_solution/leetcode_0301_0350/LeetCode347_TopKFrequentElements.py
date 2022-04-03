@@ -9,7 +9,7 @@ c_ Solution(o..
         maxCount = 0
         hashmap    # dict
         ___ num __ nums:
-            hashmap[num] = hashmap.get(num, 0)+1
+            hashmap[num] = hashmap.g.. num, 0)+1
             maxCount = m..(maxCount, hashmap[num])
         dp = [[] ___ _ __ r..(maxCount)]
         ___ num, count __ hashmap.i..:
@@ -31,7 +31,7 @@ c_ Solution(o..
         _______ heapq
         hashmap    # dict
         ___ num __ nums:
-            hashmap[num] = hashmap.get(num, 0)+1
+            hashmap[num] = hashmap.g.. num, 0)+1
         heap    # list
         ___ num, count __ hashmap.i..:
             heapq.heappush(heap, (-count, num))

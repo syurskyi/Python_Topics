@@ -1,4 +1,4 @@
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 ____ i.. _______ filterfalse
 _______ __
 _______ u__.r..
@@ -59,8 +59,8 @@ ___ diehard_pybites(files_ N..
     __ files __ N..
         files = gen_files()
 
-    users = Counter()
-    popular_challenges = Counter()
+    users = C..()
+    popular_challenges = C..()
     files = l..(filterfalse(l.... x: x.s..('/')[-1] __ IGNORE, files))
     users.update([f.s..('/')[-1] ___ f __ files])
     popular_challenges.update([f.s..('/')[0] ___ f __ files])

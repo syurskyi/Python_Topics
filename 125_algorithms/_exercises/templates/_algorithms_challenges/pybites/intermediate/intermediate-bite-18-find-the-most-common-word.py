@@ -14,7 +14,7 @@ KEYWORDS: Counter, data analysis, list comprehensions
 _______ __
 _______ u__.r..
 _______ s__
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ __
 
 
@@ -57,7 +57,7 @@ ___ my_solution_get_harry_most_common_word
             __ l..(p) > 0 a.. p n.. __ stopwords:
                 filtered.a..(word.strip(s__.punctuation).l..
 
-    counter = Counter(filtered)
+    counter = C..(filtered)
     r.. counter.most_common(1)[0]
 
 ___ pyb_solution_get_harry_most_common_word
@@ -72,7 +72,7 @@ ___ pyb_solution_get_harry_most_common_word
             words = [word ___ word __ words __ word.s..
                      a.. word n.. __ stopwords]
 
-            cnt = Counter(words)
+            cnt = C..(words)
             r.. cnt.most_common(1)[0]
 
 

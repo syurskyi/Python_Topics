@@ -39,6 +39,6 @@ c_ Solution:
 
         ___ char __ word.l..:
             __ ord_a <= o..(char) <= ord_z:
-                times[char] = times.get(char, 0) + 1
+                times[char] = times.g.. char, 0) + 1
 
         r.. times

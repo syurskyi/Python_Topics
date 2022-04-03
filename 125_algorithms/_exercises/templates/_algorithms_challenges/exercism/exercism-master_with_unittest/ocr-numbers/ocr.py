@@ -29,13 +29,13 @@ c_ Ocr:
     ___ number(cls, inp
         __ n.. cls.valid_num(inp
             r.. V...
-        r.. cls.NUMS.get("".j..(inp), cls.UNRECOGNIZED_NUM)
+        r.. cls.NUMS.g.. "".j..(inp), cls.UNRECOGNIZED_NUM)
 
     @classmethod
     ___ grid(cls, inp
         __ n.. cls.valid_grid(inp
             r.. V...
-        r.. cls.GRID_NUMS.get(inp)
+        r.. cls.GRID_NUMS.g.. inp)
 
     @classmethod
     ___ valid_num(cls, inp

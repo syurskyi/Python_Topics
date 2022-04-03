@@ -1,7 +1,7 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
 ____ bs4 _______ BeautifulSoup
-_______ requests
+_______ r__
 
 AMAZON = "amazon.com"
 # static copy
@@ -11,8 +11,8 @@ TIM_BLOG = ('https://bites-data.s3.us-east-2.amazonaws.com/'
 
 ___ load_page
     """Download the blog html and return its decoded content"""
-    w__ requests.Session() __ session:
-        r.. session.get(TIM_BLOG).content.d.. 'utf-8')
+    w__ r__.S.. __ session:
+        r.. session.g.. TIM_BLOG).content.d.. 'utf-8')
 
 
 ___ get_top_books(content=N.., limit=5
@@ -23,5 +23,5 @@ ___ get_top_books(content=N.., limit=5
         content = load_page()
     soup = BeautifulSoup(content)
     entry_content = soup.find('div', class_='entry-content')
-    count = Counter(link.text ___ link __ entry_content.select('p > a') __ AMAZON __ link.get('href'))
+    count = C..(link.text ___ link __ entry_content.select('p > a') __ AMAZON __ link.g.. 'href'))
     r.. [title ___ title, _ __ count.most_common(limit)]

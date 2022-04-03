@@ -10,9 +10,9 @@ c_ ValidWordAbbr(o..
       wordLen = l..(word)
       __ wordLen > 2:
         key = word[0] + s..(wordLen - 2) + word[-1]
-        d[key] = d.get(key, 0) + 1
+        d[key] = d.g.. key, 0) + 1
       ____:
-        d[word] = d.get(word, 0) + 1
+        d[word] = d.g.. word, 0) + 1
 
   ___ isUnique  word
     """

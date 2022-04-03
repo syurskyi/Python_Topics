@@ -28,7 +28,7 @@ A[i][j] is a lowercase letter
 _______ s__
 
 ____ typing _______ List
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
@@ -40,9 +40,9 @@ c_ Solution:
         __ n.. A:
             r.. ret
             
-        counter = Counter(A[0])
+        counter = C..(A[0])
         ___ a __ A[1:]:
-            cur = Counter(a)
+            cur = C..(a)
             ___ c __ s__.ascii_lowercase:
                 counter[c] = m..(counter[c], cur[c])
 

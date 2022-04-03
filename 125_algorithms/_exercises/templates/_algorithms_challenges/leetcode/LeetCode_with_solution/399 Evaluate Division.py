@@ -79,5 +79,5 @@ c_ Solution(o..
                 ___ e __ G[mid]:
                     G[s][e] = G[s][mid] * G[mid][e]
 
-        r.. [G[s].get(e, -1.0) ___ s, e __ queries]
+        r.. [G[s].g.. e, -1.0) ___ s, e __ queries]
 

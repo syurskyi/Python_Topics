@@ -3,7 +3,7 @@ ____ dateutil.tz _______ gettz
 ____ d__ _______ date, t.., tzinfo
 ____ dateutil.parser _______ p..
 ____ pathlib _______ Path
-_______ requests
+_______ r__
 ____ typing _______ Tuple, Optional, List
 _______ __
 

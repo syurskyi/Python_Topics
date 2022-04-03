@@ -7,7 +7,7 @@ c_ Solution:
 
     ___ dfs(root, graph, visited, parent
       visited[root] = 1
-      ___ nbr __ graph.get(root, []
+      ___ nbr __ graph.g.. root, []
         __ nbr __ parent:
           _____
         ____ visited[nbr] != 0:
@@ -23,8 +23,8 @@ c_ Solution:
     nodeVisited = 0
     ___ edge __ edges:
       start, end = edge[0], edge[1]
-      graph[start] = graph.get(start, []) + [end]
-      graph[end] = graph.get(end, []) + [start]
+      graph[start] = graph.g.. start, []) + [end]
+      graph[end] = graph.g.. end, []) + [start]
 
     __ dfs(0, graph, visited, -1) a.. nodeVisited __ n:
       r.. T..

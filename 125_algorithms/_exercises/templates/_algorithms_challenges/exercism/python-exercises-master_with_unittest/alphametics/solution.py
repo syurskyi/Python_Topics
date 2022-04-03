@@ -6,7 +6,7 @@ ___ check_leading_zeros(*numbers
 
 
 ___ test_equation(puzzle, substitutions
-    equation = ''.j..(substitutions.get(char) o. char ___ char __ puzzle)
+    equation = ''.j..(substitutions.g.. char) o. char ___ char __ puzzle)
     left, right = equation.s..(' == ')
     left_numbers = left.s..(' + ')
 

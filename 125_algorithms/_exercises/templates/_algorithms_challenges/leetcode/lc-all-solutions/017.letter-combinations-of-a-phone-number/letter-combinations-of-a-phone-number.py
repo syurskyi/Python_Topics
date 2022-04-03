@@ -15,7 +15,7 @@ c_ Solution(o..
         r..
 
       digit = i..(d..[index])
-      ___ c __ d.get(digit, []
+      ___ c __ d.g.. digit, []
         p...a..(c)
         dfs(d.., index + 1, p.., res, d)
         p...pop()

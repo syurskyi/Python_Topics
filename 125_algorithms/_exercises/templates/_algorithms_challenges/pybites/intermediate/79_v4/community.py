@@ -1,6 +1,6 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ csv
-_______ requests
+_______ r__
 
 
 CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
@@ -10,7 +10,7 @@ FMT_STR = '{tz:21}| {bar}'
 ___ get_csv
     """Use requests to download the csv and return the
        decoded content"""
-    r.. requests.get(url=CSV_URL).content.d.. )
+    r.. r__.g.. url=CSV_URL).content.d.. )
 
 
 ___ create_user_bar_chart(content
@@ -18,7 +18,7 @@ ___ create_user_bar_chart(content
        and their corresponding member counts in pluses to standard output
     """
     rows = csv.DictReader(content.s..
-    counts = s..(Counter([r 'tz'  ___ r __ rows]).i..,
+    counts = s..(C..([r 'tz'  ___ r __ rows]).i..,
                     key=l.... x: x[0])
 
     ___ c __ counts:

@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ p, pp __ z..(pid, ppid
-            hashset = hashmap.get(pp, s..
+            hashset = hashmap.g.. pp, s..
             hashset.add(p)
             hashmap[pp] = hashset
         __ kill n.. __ hashmap:
@@ -23,7 +23,7 @@ c_ Solution(o..
         w.... queue:
             node = queue.pop(0)
             result.add(node)
-            ___ node0 __ hashmap.get(node, []
+            ___ node0 __ hashmap.g.. node, []
                 __ node0 n.. __ result:
                     queue.a..(node0)
         r.. l..(result)

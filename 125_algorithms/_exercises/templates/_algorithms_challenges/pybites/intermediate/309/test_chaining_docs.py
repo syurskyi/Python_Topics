@@ -60,7 +60,7 @@ DOCS = {
 ?p__.f..()
 ___ doc(request
     """Factory method for test documents"""
-    r.. DOCS.get(request.param, Document
+    r.. DOCS.g.. request.param, Document
 
 
 ?p__.m__.p.(

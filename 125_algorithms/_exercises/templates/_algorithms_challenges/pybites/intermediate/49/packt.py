@@ -1,10 +1,10 @@
 ____ c.. _______ n..
 
 ____ bs4 _______ BeautifulSoup __ Soup
-_______ requests
+_______ r__
 
 PACKT = 'https://bites-data.s3.us-east-2.amazonaws.com/packt.html'
-CONTENT = requests.get(PACKT).text
+CONTENT = r__.g.. PACKT).text
 
 Book = n..('Book', 'title description image link')
 

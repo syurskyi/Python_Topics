@@ -10,7 +10,7 @@ c_ RestAPITest(unittest.TestCase
     ___ test_no_users
         database = {"users": []}
         api = RestAPI(database)
-        response = api.get('/users')
+        response = api.g.. '/users')
         assertDictEqual(json.loads(response), database)
 
     ___ test_add_user
@@ -49,7 +49,7 @@ c_ RestAPITest(unittest.TestCase
         payload = json.dumps({
             'users':  'Bob'
         })
-        response = api.get('/users', payload)
+        response = api.g.. '/users', payload)
         expected = {
             'users': [
                 {

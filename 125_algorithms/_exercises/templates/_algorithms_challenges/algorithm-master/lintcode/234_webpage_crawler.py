@@ -9,7 +9,7 @@ c_ CrawlerThread(Thread
     ___ run
         global queue, results
         w... T...
-            url = queue.get()
+            url = queue.g.. )
             __ url n.. __ results \
                 a.. urlparse(url).hostname.endswith("wikipedia.org"
                 results[url] = T..

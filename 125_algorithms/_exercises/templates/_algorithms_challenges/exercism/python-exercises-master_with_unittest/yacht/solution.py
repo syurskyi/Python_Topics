@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ functools _______ partial
 
 YACHT = 0
@@ -20,12 +20,12 @@ ___ ns(number, dice
 
 
 ___ full_house(dice
-    counter = Counter(dice)
+    counter = C..(dice)
     r.. s..(dice) __ s..(counter.values __ {3, 2} ____ 0
 
 
 ___ four_of_a_kind(dice
-    counter = Counter(dice)
+    counter = C..(dice)
     number, count = counter.most_common()[0]
     r.. 4 * number __ count >= 4 ____ 0
 

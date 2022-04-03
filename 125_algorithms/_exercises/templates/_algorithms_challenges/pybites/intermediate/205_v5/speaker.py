@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ u__.r.. _______ u..
 ____ pathlib _______ Path
 
@@ -37,7 +37,7 @@ ___ get_percentage_of_female_speakers(first_names
        of female speakers (female and mostly_female),
        rounded to 2 decimal places."""
     det = gender.Detector()
-    gender_counts = Counter(det.get_gender(name) ___ name __ first_names)
+    gender_counts = C..(det.get_gender(name) ___ name __ first_names)
 
     female_count = (gender_counts 'female'  + gender_counts 'mostly_female' )
     everyone_count = s..(n ___ _, n __ gender_counts.i..

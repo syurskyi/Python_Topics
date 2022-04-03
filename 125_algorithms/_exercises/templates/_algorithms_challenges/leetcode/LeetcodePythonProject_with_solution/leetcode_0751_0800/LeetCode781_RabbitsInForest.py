@@ -12,7 +12,7 @@ c_ Solution(o..
         res = 0
         hashmap    # dict
         ___ ans __ answers:
-            hashmap[ans] = hashmap.get(ans, 0)+1
+            hashmap[ans] = hashmap.g.. ans, 0)+1
         ___ n, count __ hashmap.i..:
             group = count//(n+1)
             __ count%(n+1) != 0:

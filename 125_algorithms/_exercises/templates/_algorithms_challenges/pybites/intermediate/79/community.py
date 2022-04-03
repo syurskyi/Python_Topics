@@ -1,8 +1,8 @@
 _______ csv
 
-_______ requests
-____ requests.api _______ get
-____ requests.models _______ Response
+_______ r__
+____ r__.api _______ get
+____ r__.models _______ Response
 
 CSV_URL  'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 
@@ -10,7 +10,7 @@ CSV_URL  'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 ___ get_csv
    """Use requests to download the csv and return the
       decoded content"""
-   response = requests.get(CSV_URL)
+   response = r__.g.. CSV_URL)
    response.encoding = "utf-8"
    csv_content = csv.reader(response.text.s..
    r.. csv_content

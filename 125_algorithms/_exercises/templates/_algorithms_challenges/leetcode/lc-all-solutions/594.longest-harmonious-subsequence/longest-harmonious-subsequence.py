@@ -5,7 +5,7 @@ c_ Solution(o..
     :rtype: int
     """
     ans = 0
-    d = c...Counter(nums)
+    d = c...C..(nums)
     ___ num __ nums:
       __ num + 1 __ d:
         ans = m..(ans, d[num] + d[num + 1])

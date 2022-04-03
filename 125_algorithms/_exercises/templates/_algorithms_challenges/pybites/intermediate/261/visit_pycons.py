@@ -1,6 +1,6 @@
 _______ json
 _______ time
-_______ requests
+_______ r__
 ____ dataclasses _______ dataclass
 ____ d__ _______ d__
 ____ m__ _______ acos, cos, radians, sin
@@ -21,11 +21,11 @@ nominatim_responses = tmp / "nominatim_responses.json"
 
 
 
-response = requests.get(RESPONSES)
+response = r__.g.. RESPONSES)
 
-data = response.json()
+data = response.j..
 
-pycons = requests.get(URL).json()
+pycons = r__.g.. URL).j..
 print(pycons)
 
 

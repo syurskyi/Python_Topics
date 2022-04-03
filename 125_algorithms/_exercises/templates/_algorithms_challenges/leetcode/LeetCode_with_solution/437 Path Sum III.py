@@ -82,7 +82,7 @@ c_ SolutionComplex:
         __ diff __ 0:  # trivial case
             count[0] += 1
 
-        prefix_sum[cur_sum] = prefix_sum.get(cur_sum, 0) + 1
+        prefix_sum[cur_sum] = prefix_sum.g.. cur_sum, 0) + 1
         dfs(root.left, s.., cur_sum, prefix_sum, count)
         dfs(root.right, s.., cur_sum, prefix_sum, count)
         prefix_sum[cur_sum] -= 1  # pop to save space

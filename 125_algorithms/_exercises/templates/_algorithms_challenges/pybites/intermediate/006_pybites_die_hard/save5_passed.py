@@ -1,4 +1,4 @@
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 _______ __
 _______ u__.r..
 
@@ -69,8 +69,8 @@ ___ diehard_pybites(files_ N..
         challenge_list.a..(entry[0])
         user_list.a..(entry[1])
 
-    users = Counter(user_list)
-    popular_challenges = Counter(challenge_list)
+    users = C..(user_list)
+    popular_challenges = C..(challenge_list)
 
     ___ entry __ files:
         entry = entry.s..('/')

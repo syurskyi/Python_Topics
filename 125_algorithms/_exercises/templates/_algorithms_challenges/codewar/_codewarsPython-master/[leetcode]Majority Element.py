@@ -5,7 +5,7 @@ c_ Solution:
         s..(nums)
         numDict    # dict
         ___ n __ nums:
-            numDict[n] = numDict.get(n,0) + 1
+            numDict[n] = numDict.g.. n,0) + 1
         r.. m..(numDict.values
 
 test = Solution()

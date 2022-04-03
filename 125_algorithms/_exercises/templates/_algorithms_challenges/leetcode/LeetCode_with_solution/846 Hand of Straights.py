@@ -28,7 +28,7 @@ Note:
 1 <= W <= hand.length
 """
 ____ typing _______ List
-____ c.. _______ Counter, d..
+____ c.. _______ C.., d..
 _______ heapq
 
 
@@ -41,7 +41,7 @@ c_ Solution:
         prev_cnt = previous value count
         """
         q = d..()
-        counter = Counter(A)
+        counter = C..(A)
         prev = 0
         prev_cnt = 0
         ___ k __ s..(counter  # sorted by key

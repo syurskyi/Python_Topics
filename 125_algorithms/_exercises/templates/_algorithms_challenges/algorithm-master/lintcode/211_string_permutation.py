@@ -12,7 +12,7 @@ c_ Solution:
 
         cnts    # dict
         ___ char __ A:
-            cnts[char] = cnts.get(char, 0) + 1
+            cnts[char] = cnts.g.. char, 0) + 1
         ___ char __ B:
             __ char n.. __ cnts o. cnts[char] __ 0:
                 r.. F..

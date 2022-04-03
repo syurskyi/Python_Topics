@@ -24,16 +24,16 @@ what I'm building:
 
 """
 
-____ c.. _______ Counter
+____ c.. _______ C..
 
-_______ requests
+_______ r__
 
 CAR_DATA = 'https://bit.ly/2Ov65SJ'
 
 # pre-work: load JSON data into program
 
-w__ requests.Session() __ s:
-    data = s.get(CAR_DATA).json()
+w__ r__.S.. __ s:
+    data = s.g.. ? .j..
 
 
 # your turn:
@@ -65,5 +65,5 @@ ___ get_models(automaker, year
             s.add(d 'model' )
     r.. s
 
-most_prolific_automaker(1995)
+? 1995)
 get_models("Chrysler", 1999)

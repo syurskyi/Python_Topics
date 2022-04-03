@@ -1,4 +1,4 @@
-_______ requests
+_______ r__
 ____ bs4 _______ BeautifulSoup
 _______ __
 
@@ -14,9 +14,9 @@ ___ top_python_questions(url=cached_so_url
     """
 
     ___
-        response = requests.get(url)
+        response = r__.g.. url)
         response.raise_for_status()
-    ______ requests.HTTPError __ err:
+    ______ r__.HTTPError __ err:
         print('HTTP Error')
         print(err)
     ______ E.. __ err:

@@ -36,7 +36,7 @@ c_ Solution(o..
         w.... queue:
             c = queue.pop(0)
             res += c
-            ___ c0 __ graph.get(c, []
+            ___ c0 __ graph.g.. c, []
                 degree[c0] -= 1
                 __ degree[c0] __ 0:
                     queue.a..(c0)

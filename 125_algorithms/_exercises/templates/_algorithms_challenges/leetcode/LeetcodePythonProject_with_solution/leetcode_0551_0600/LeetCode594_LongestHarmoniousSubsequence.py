@@ -11,7 +11,7 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ num __ nums:
-            hashmap[num] = hashmap.get(num, 0)+1
+            hashmap[num] = hashmap.g.. num, 0)+1
         maxLen = 0
         ___ num, count __ hashmap.i..:
             __ num+1 __ hashmap:

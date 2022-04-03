@@ -18,7 +18,7 @@ c_ Solution(o..
         minChar, minCount = 0, f__('inf')
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         ___ c __ s:
             __ hashmap[c] < minCount:
                 minCount = hashmap[c]
@@ -33,7 +33,7 @@ c_ Solution(o..
     ___ longestSubstring_another  s, k
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         splitSet = s..()
         ___ c, freq __ hashmap.i..:
             __ freq < k:

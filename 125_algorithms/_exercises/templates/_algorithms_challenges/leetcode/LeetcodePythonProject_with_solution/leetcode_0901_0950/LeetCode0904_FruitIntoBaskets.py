@@ -8,7 +8,7 @@ c_ Solution(o..
         res = 0
         hashmap    # dict
         ___ i, num __ e..(tree
-            hashmap[num] = hashmap.get(num, 0) + 1
+            hashmap[num] = hashmap.g.. num, 0) + 1
             w.... l..(hashmap) > 2:
                 hashmap[tree[left]] -= 1
                 __ hashmap[tree[left]] __ 0:

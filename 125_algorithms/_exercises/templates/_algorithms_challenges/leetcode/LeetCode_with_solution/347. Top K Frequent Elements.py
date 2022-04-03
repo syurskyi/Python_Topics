@@ -14,7 +14,7 @@ _______ heapq
 __author__ = 'Daniel'
 
 
-c_ Counter(o..
+c_ C..(o..
     ___ - , val, cnt
         val = val
         cnt = cnt
@@ -39,7 +39,7 @@ c_ Solution(o..
 
         lst    # list
         ___ k, v __ cnt.i..:
-            lst.a..(Counter(k, v))
+            lst.a..(C..(k, v))
 
         ret    # list
         ___ elt __ lst:

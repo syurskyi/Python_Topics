@@ -9,7 +9,7 @@ client.testing = T..
 
 
 ___ test_get_quotes
-    response = client.get(API_ENDPOINT)
+    response = client.g.. API_ENDPOINT)
     ... response.status_code __ 200
 
     data = json.loads(response.get_data
@@ -22,7 +22,7 @@ ___ test_get_quotes
 
 
 ___ test_get_existing_quote
-    response = client.get(API_ENDPOINT + '/2')
+    response = client.g.. API_ENDPOINT + '/2')
     ... response.status_code __ 200
 
     data = json.loads(response.get_data
@@ -34,7 +34,7 @@ ___ test_get_existing_quote
 
 
 ___ test_get_not_existing_quote
-    response = client.get(API_ENDPOINT + '/4')
+    response = client.g.. API_ENDPOINT + '/4')
     ... response.status_code __ 404
 
 
@@ -128,7 +128,7 @@ ___ test_delete_existing_quote
     ... response.status_code __ 204
 
     # number quotes from 4 to 3
-    response = client.get(API_ENDPOINT)
+    response = client.g.. API_ENDPOINT)
     data = json.loads(response.get_data
     quotes = data 'quotes'
     ... l..(quotes) __ 3

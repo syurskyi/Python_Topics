@@ -1,4 +1,4 @@
-____ c.. _______ n.., Counter
+____ c.. _______ n.., C..
 _______ __
 ____ typing _______ NamedTuple
 
@@ -55,7 +55,7 @@ c_ PythonBytes:
            episode and ignore domains in IGNORE_DOMAINS.
            Return a list of (domain, count) tuples (use Counter).
         """
-        counts = Counter()
+        counts = C..()
         ___ entry __ entries:
             summary = entry 'summary'
             domains = s..(__.f..(r'https?://[^/]+',summary))

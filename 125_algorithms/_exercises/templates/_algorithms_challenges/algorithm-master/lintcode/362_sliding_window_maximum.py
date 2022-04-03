@@ -17,7 +17,7 @@ c_ HashHeapq:
     ___ remove  val
         __ is_empty
             r..
-        deleted[val] = deleted.get(val, 0) + 1
+        deleted[val] = deleted.g.. val, 0) + 1
 
     ___ top
         __ is_empty
@@ -25,7 +25,7 @@ c_ HashHeapq:
         r.. heap[0]
 
     ___ is_empty
-        w.... heap a.. deleted.get(heap[0]
+        w.... heap a.. deleted.g.. heap[0]
             deleted[heap[0]] -= 1
             heappop(heap)
         r.. n.. heap

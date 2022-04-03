@@ -4,7 +4,7 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-____ c.. _______ Counter,defaultdict
+____ c.. _______ C..,defaultdict
 _______ operator
 _______ i..
 
@@ -100,8 +100,8 @@ ___ _calculate_similarity(wine,cheese
     wine_length = l..(wine)
     cheese_length = l..(cheese)
     
-    counts_wine = Counter(wine.l..
-    counts_cheese = Counter(cheese.l..
+    counts_wine = C..(wine.l..
+    counts_cheese = C..(cheese.l..
 
     numerator = s..((counts_wine & counts_cheese).values
 

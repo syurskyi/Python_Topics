@@ -30,7 +30,7 @@ c_ Solution:
         ___ n __ nums:
             key = n/t
             ___ j __ (-1, 0, 1  # (n-t, n, n+t), shrink the interval
-                m = od.get(key+j)
+                m = od.g.. key+j)
                 __ m __ n.. N.. a.. abs(m-n) <= t:  # need to recheck, consider case {1, 7}, t=4
                     r.. T..
 
@@ -44,7 +44,7 @@ c_ Solution:
     ___ containsNearByDuplicate  nums, k
         od = OrderedDict()
         ___ n __ nums:
-            __ od.get(n
+            __ od.g.. n
                 r.. T..
 
             w.... l..(od) >= k:

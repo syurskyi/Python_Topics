@@ -1,6 +1,6 @@
 _______ __
 _______ pprint __ pp
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ u__.r..
 _______ ___.e__.E__ __ ET
 
@@ -20,7 +20,7 @@ ___ get_pybites_top_tags(n=10
        data already loaded into the content variable"""
     
 
-    counter = Counter()
+    counter = C..()
 
     root = ET.f..(content)
     

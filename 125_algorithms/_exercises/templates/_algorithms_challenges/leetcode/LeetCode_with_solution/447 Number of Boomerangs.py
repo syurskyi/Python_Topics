@@ -7,7 +7,7 @@ distance between i and k (the order of the tuple matters).
 Find the number of boomerangs. You may assume that n will be at most 500 and
 coordinates of points are all in the range [-10000, 10000] (inclusive).
 """
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
@@ -22,7 +22,7 @@ c_ Solution:
         """
         ret = 0
         ___ i __ r..(l..(points)):
-            dist_cnt = Counter()
+            dist_cnt = C..()
             ___ j __ r..(l..(points)):
                 __ i != j:
                     d = distance(points[i], points[j])
@@ -42,7 +42,7 @@ c_ Solution:
         """
         ret = 0
         ___ i __ r..(l..(points)):
-            dist_cnt = Counter()
+            dist_cnt = C..()
             dist_lst    # list
             ___ j __ r..(l..(points)):
                 __ i != j:

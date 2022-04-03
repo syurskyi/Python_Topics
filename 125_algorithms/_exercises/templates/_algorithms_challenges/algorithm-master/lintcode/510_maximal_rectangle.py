@@ -15,8 +15,8 @@ c_ Solution:
             curr = 0  # left boundary
             ___ j __ r..(n
                 __ G[i][j] __ '1':
-                    H[j] = H.get(j, 0) + 1
-                    L[j] = m..(L.get(j, 0), curr)
+                    H[j] = H.g.. j, 0) + 1
+                    L[j] = m..(L.g.. j, 0), curr)
                 ____:
                     H[j] = L[j] = 0
                     curr = j + 1
@@ -24,7 +24,7 @@ c_ Solution:
             curr = n  # right boundary
             ___ j __ r..(n - 1, -1, -1
                 __ G[i][j] __ '1':
-                    R[j] = m..(R.get(j, n), curr)
+                    R[j] = m..(R.g.. j, n), curr)
                 ____:
                     R[j] = n
                     curr = j

@@ -1,4 +1,4 @@
-_______ requests
+_______ r__
 ____ bs4 _______ BeautifulSoup
 
 cached_so_url = 'https://bit.ly/2IMrXdp'
@@ -6,8 +6,8 @@ cached_so_url = 'https://bit.ly/2IMrXdp'
 
 ___ load_page(url
     """Download the blog html and return its decoded content"""
-    w__ requests.Session() __ session:
-        r.. session.get(url).content.d.. 'utf-8')
+    w__ r__.S.. __ session:
+        r.. session.g.. url).content.d.. 'utf-8')
 
 
 ___ top_python_questions(url=cached_so_url

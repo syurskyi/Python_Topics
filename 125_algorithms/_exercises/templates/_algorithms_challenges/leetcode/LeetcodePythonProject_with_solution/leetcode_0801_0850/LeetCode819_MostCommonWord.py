@@ -21,14 +21,14 @@ c_ Solution(o..
                 o..('A') <= o..(c) <= o..('Z')):
                 word = paragraph[i:j].l..
                 __ word a.. word n.. __ banned:
-                    hashmap[word] = hashmap.get(word, 0)+1
+                    hashmap[word] = hashmap.g.. word, 0)+1
                     __ hashmap[word] > freq:
                         res = word
                         freq = hashmap[word]
                 i = j+1
         word = paragraph[i:].l..
         __ word a.. word n.. __ banned:
-            hashmap[word] = hashmap.get(word, 0)+1
+            hashmap[word] = hashmap.g.. word, 0)+1
             __ hashmap[word] > freq:
                 res = word
                 freq = hashmap[word]

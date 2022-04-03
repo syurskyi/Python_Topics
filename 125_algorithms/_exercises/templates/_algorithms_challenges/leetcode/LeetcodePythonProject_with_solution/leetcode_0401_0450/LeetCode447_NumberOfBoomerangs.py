@@ -14,7 +14,7 @@ c_ Solution(o..
             ___ j __ r..(n
                 point2 = points[j]
                 diff = (point2[1]-point1[1])**2+(point2[0]-point1[0])**2
-                hashmap[diff] = hashmap.get(diff, 0)+1
+                hashmap[diff] = hashmap.g.. diff, 0)+1
             ___ val __ hashmap.v..
                 res += val*(val-1)
         r.. res

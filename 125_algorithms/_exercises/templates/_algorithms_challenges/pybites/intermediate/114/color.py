@@ -23,7 +23,7 @@ c_ Color:
 
     ___ - , color
         color = color
-        rgb = COLOR_NAMES.get(color.upper
+        rgb = COLOR_NAMES.g.. color.upper
 
     @staticmethod
     ___ hex2rgb(hex_value

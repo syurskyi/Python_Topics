@@ -19,7 +19,7 @@ c_ Solution(o..
                 content = arr0[1][:-1]
                 filename = arr0[0]
                 fullPath = folder+'/'+filename
-                hashmap[content] = hashmap.get(content, []) + [fullPath]
+                hashmap[content] = hashmap.g.. content, []) + [fullPath]
         res    # list
         ___ _, value __ hashmap.i..:
             __ l..(value) > 1:

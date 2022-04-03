@@ -12,7 +12,7 @@ c_ Solution(o..
             __ c1 __ c2:
                 bulls.add(i)
             ____:
-                hashmap[c1] = hashmap.get(c1, 0)+1
+                hashmap[c1] = hashmap.g.. c1, 0)+1
         cows = 0
         ___ i, c __ e..(guess
             __ i n.. __ bulls:

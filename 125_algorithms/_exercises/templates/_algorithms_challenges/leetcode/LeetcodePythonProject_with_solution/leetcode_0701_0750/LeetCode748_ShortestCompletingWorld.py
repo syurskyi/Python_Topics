@@ -13,7 +13,7 @@ c_ Solution(o..
         hashmap    # dict
         ___ c __ licensePlate:
             __ n.. c.i.. a.. c != ' ':
-                hashmap[c.l..] = hashmap.get(c.l.., 0)+1
+                hashmap[c.l..] = hashmap.g.. c.l.., 0)+1
         res = ''
         l = f__('inf')
         ___ word __ words:
@@ -26,9 +26,9 @@ c_ Solution(o..
     ___ contains  hashmap, word
         hashmap0    # dict
         ___ c __ word:
-            hashmap0[c] = hashmap0.get(c, 0)+1
+            hashmap0[c] = hashmap0.g.. c, 0)+1
         ___ c __ hashmap:
-            __ hashmap[c] > hashmap0.get(c, 0
+            __ hashmap[c] > hashmap0.g.. c, 0
                 r.. F..
         r.. T..
     

@@ -11,7 +11,7 @@ c_ WordDistance(o..
         """
         hashmap    # dict
         ___ i, word __ e..(words
-            hashmap[word] = hashmap.get(word, [])+[i]
+            hashmap[word] = hashmap.g.. word, [])+[i]
         hashmap = hashmap
     
     ___ shortest  word1, word2

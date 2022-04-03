@@ -36,7 +36,7 @@ ___ get_feed_entries(feed=FEED
         link = entry.link
         date = entry.published_parsed
         tags = entry.tags
-        tags = [t.get('term').l.. ___ t __ tags]
+        tags = [t.g.. 'term').l.. ___ t __ tags]
 
         date = _convert_struct_time_to_dt(date)
 

@@ -22,7 +22,7 @@ c_ Solution:
         dups    # dict
 
         ___ i __ r..(n - 1, -1, -1
-            dups[A[i]] = dups.get(A[i], 0) + 1
+            dups[A[i]] = dups.g.. A[i], 0) + 1
             dup_fact *= dups[A[i]]
 
             cnt = 0

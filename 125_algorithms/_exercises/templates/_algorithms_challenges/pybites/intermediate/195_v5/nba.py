@@ -3,7 +3,7 @@ _______ csv
 ____ pathlib _______ Path
 _______ sqlite3
 
-_______ requests
+_______ r__
 
 DATA_URL = 'https://query.data.world/s/ezwk64ej624qyverrw6x7od7co7ftm'
 TMP = Path('/tmp')
@@ -17,8 +17,8 @@ cur = conn.cursor()
 
 
 ___ import_data
-    w__ requests.Session() __ session:
-        content = session.get(DATA_URL).content.d.. 'utf-8')
+    w__ r__.S.. __ session:
+        content = session.g.. DATA_URL).content.d.. 'utf-8')
 
     reader = csv.DictReader(content.s.. , delimiter=',')
 

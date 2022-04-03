@@ -43,7 +43,7 @@ A[i] and B[i] consist only of lowercase letters.
 All words in A[i] are unique: there isn't i != j with A[i] == A[j].
 """
 ____ typing _______ List
-____ c.. _______ Counter, defaultdict
+____ c.. _______ C.., defaultdict
 
 
 c_ Solution:
@@ -59,13 +59,13 @@ c_ Solution:
         """
         mx = defaultdict(i..)
         ___ b __ B:
-            c = Counter(b)
+            c = C..(b)
             ___ k, v __ c.i..:
                 mx[k] = m..(mx[k], v)
 
         ret    # list
         ___ a __ A:
-            c = Counter(a)
+            c = C..(a)
             ___ k, v __ mx.i..:
                 __ c[k] < v:
                     _____

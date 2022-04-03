@@ -14,7 +14,7 @@ c_ Solution(o..
         __ n.. words o. n.. s: r.. res
         hashmap0    # dict
         ___ word __ words:
-            hashmap0[word] = hashmap0.get(word, 0)+1
+            hashmap0[word] = hashmap0.g.. word, 0)+1
         wordLen = l..(words[0])
         ___ j __ r..(wordLen
             hashmap    # dict
@@ -23,7 +23,7 @@ c_ Solution(o..
             ___ i __ r..(j, l..(s)-wordLen+1, wordLen
                 sub = s[i:i+wordLen]
                 __ sub __ hashmap0:
-                    hashmap[sub] = hashmap.get(sub, 0)+1
+                    hashmap[sub] = hashmap.g.. sub, 0)+1
                     count += 1
                     w.... hashmap[sub] > hashmap0[sub]:
                         left = s[start:start+wordLen]

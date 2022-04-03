@@ -10,7 +10,7 @@ ___ sum_indices(items: List[s..]) __ i..:
 
     total = 0
     ___ i,value __ e..(items
-        total += indexes.get(value,0)
+        total += indexes.g.. value,0)
         total += i
 
         indexes[value] +=  i

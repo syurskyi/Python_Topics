@@ -18,4 +18,4 @@ ___ changed_dependencies(old_reqs: s.., new_reqs: s..) __ l..:
     """
     old, new = _load_reqs(old_reqs), _load_reqs(new_reqs)
     print _*{old=}\n{new=}')
-    r.. [pkg ___ pkg __ new __ new.get(pkg) > old.get(pkg)]
+    r.. [pkg ___ pkg __ new __ new.g.. pkg) > old.g.. pkg)]

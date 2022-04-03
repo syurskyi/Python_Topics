@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 ___ calculate_gc_content(sequence
@@ -7,7 +7,7 @@ ___ calculate_gc_content(sequence
     Returns the percentage of GC content (rounded to the last two digits)
     """
     seq = [c ___ c __ sequence.l.. __ c __ 'agct'
-    counts = d..(Counter(seq))
+    counts = d..(C..(seq))
 
     total = s..(counts.values
     gc_pct = s..([count ___ key, count

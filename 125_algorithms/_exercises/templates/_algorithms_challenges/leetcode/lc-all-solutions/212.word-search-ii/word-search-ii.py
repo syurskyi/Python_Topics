@@ -45,7 +45,7 @@ c_ Solution:
           c = board[ni][nj]
           __ visited[ni][nj] __ 0:
             visited[ni][nj] = 1
-            dfs(ni, nj, board, visited, res, root.neighbours.get(c, N..), p.. + c)
+            dfs(ni, nj, board, visited, res, root.neighbours.g.. c, N..), p.. + c)
             visited[ni][nj] = 0
 
     ___ word __ words:
@@ -55,6 +55,6 @@ c_ Solution:
       ___ j __ r..(0, l..(board[0])):
         c = board[i][j]
         visited[i][j] = 1
-        dfs(i, j, board, visited, res, root.neighbours.get(c, N..), c)
+        dfs(i, j, board, visited, res, root.neighbours.g.. c, N..), c)
         visited[i][j] = 0
     r.. l..(s..(res))

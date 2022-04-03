@@ -8,7 +8,7 @@ c_ Solution(o..
     count = ans = 0
     delta = {1: -1, 0: 1}
     ___ i __ r..(l..(nums)):
-      count += delta.get(nums[i], 0)
+      count += delta.g.. nums[i], 0)
       __ count __ d:
         ans = m..(ans, i - d[count])
       ____:

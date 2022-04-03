@@ -1,8 +1,8 @@
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 _______ csv
 _______ __
 
-_______ requests
+_______ r__
 
 MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
@@ -13,8 +13,8 @@ Character = n..('Character', 'pid name sid align sex appearances year')
 
 ___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
-    w__ requests.Session() __ session:
-        r.. session.get(MARVEL_CSV).content.d.. 'utf-8')
+    w__ r__.S.. __ session:
+        r.. session.g.. MARVEL_CSV).content.d.. 'utf-8')
 
 
 ___ load_data
@@ -44,7 +44,7 @@ ___ most_popular_characters(characters=characters, top=5
     """
 
 
-    character_counts = Counter()
+    character_counts = C..()
 
     ___ character __ characters:
         __ character.appearances:
@@ -64,7 +64,7 @@ ___ max_and_min_years_new_characters(characters=characters
     """
 
     most_year = min_year=N..
-    year_counts = Counter()
+    year_counts = C..()
 
     ___ character __ characters:
         __ character.year:
@@ -95,7 +95,7 @@ ___ get_percentage_female_characters(characters=characters
 
     
     
-    sex_counts = Counter()
+    sex_counts = C..()
 
 
     ___ character __ characters:

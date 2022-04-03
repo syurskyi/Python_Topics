@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ __
 _______ __
 ____ u__.r.. _______ u..
@@ -38,7 +38,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
 
     Returns a tuple of (least_active_month, most_active_month)
     """
-    commits = Counter()
+    commits = C..()
     w__ o.. commit_log) __ f:
         ___ line __ f:
             dat = _parse_line(line)

@@ -16,7 +16,7 @@ c_ Solution(o..
         flag = F..
         ___ i, c __ e..(arr
             ___ c0 __ '9876543210':
-                __ c0 > c a.. hashmap.get(c0, -1) > i:
+                __ c0 > c a.. hashmap.g.. c0, -1) > i:
                     arr[i], arr[hashmap[c0]] = arr[hashmap[c0]], arr[i]
                     flag = T..
                     _____

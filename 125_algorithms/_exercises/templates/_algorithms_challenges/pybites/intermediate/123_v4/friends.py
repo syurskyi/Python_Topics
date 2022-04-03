@@ -20,6 +20,6 @@ ___ get_friend_with_most_friends(friendships, users=users
         __ user n.. __ d[friend]:
             d[friend].a..(user)
 
-    user_with_max_friends = m..(d, key=l.... x: l..(d.get(x)))
+    user_with_max_friends = m..(d, key=l.... x: l..(d.g.. x)))
     r.. (users[user_with_max_friends],
             [users[x] ___ x __ d[user_with_max_friends]])

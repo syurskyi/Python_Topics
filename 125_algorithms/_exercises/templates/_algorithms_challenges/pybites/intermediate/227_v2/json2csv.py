@@ -1,7 +1,7 @@
 ____ pathlib _______ Path
 _______ csv
 _______ json
-_______ requests
+_______ r__
 ____ json.decoder _______ JSONDecodeError
 
 EXCEPTION = 'exception caught'

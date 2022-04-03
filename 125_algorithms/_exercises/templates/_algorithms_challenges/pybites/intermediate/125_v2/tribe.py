@@ -1,8 +1,8 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
 _______ __
 ____ bs4 _______ BeautifulSoup
-_______ requests
+_______ r__
 
 AMAZON = "amazon.com"
 # static copy
@@ -13,8 +13,8 @@ MIN_COUNT = 3
 
 ___ load_page
     """Download the blog html and return its decoded content"""
-    w__ requests.Session() __ session:
-        r.. session.get(TIM_BLOG).content.d.. 'utf-8')
+    w__ r__.S.. __ session:
+        r.. session.g.. TIM_BLOG).content.d.. 'utf-8')
 
 
 ___ get_top_books(content_ N..
@@ -27,7 +27,7 @@ ___ get_top_books(content_ N..
     __ content __ N..
         content = load_page()
 
-    counts = Counter()
+    counts = C..()
     soup = BeautifulSoup(content,'html.parser')
 
     links =  soup.find_all('a',href=__.c..(r'amazon.com'))

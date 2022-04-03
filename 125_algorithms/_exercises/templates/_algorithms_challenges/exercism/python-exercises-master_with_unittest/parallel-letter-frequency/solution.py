@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ threading _______ Lock, Thread
 ____ time _______ sleep
 _______ ___
@@ -15,7 +15,7 @@ c_ LetterCounter(o..
 
     ___ -
         lock = Lock()
-        value = Counter()
+        value = C..()
 
     ___ add_counter  counter_to_add
         lock.a..
@@ -28,9 +28,9 @@ c_ LetterCounter(o..
 ___ count_letters(queue_of_texts, letter_to_frequency, worker_id
     w.... n.. queue_of_texts.empty
         sleep(worker_id + 1)
-        line_input = queue_of_texts.get()
+        line_input = queue_of_texts.g.. )
         __ line_input __ n.. N..
-            letters_in_line = Counter([x ___ x __ line_input.l.. __
+            letters_in_line = C..([x ___ x __ line_input.l.. __
                                        x.isalpha()])
             letter_to_frequency.add_counter(letters_in_line)
         queue_of_texts.task_done()

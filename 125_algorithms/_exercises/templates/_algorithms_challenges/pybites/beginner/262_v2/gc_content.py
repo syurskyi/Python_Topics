@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 ___ calculate_gc_content(sequence
     """
     Receives a DNA sequence (A, G, C, or T)
@@ -8,7 +8,7 @@ ___ calculate_gc_content(sequence
 
     dna =  'A','G','C','T'
 
-    counts = Counter()
+    counts = C..()
 
     ___ character __ sequence.u..:
         __ character __ dna:
@@ -17,7 +17,7 @@ ___ calculate_gc_content(sequence
     
 
     all_counts = s..(count ___ count __ counts.values
-    percent = (counts.get('G',0) + counts.get('C',0))/all_counts
+    percent = (counts.g.. 'G',0) + counts.g.. 'C',0))/all_counts
 
     r.. r..(percent * 100,2)
 

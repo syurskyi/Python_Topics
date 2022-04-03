@@ -1,9 +1,9 @@
 ____ c.. _______ n..
 
 ____ bs4 _______ BeautifulSoup __ Soup
-_______ requests
+_______ r__
 
-CONTENT = requests.get('http://bit.ly/2EN2Ntv').text
+CONTENT = r__.g.. 'http://bit.ly/2EN2Ntv').text
 
 Book = n..('Book', 'title description image link')
 

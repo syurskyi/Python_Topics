@@ -1,4 +1,4 @@
-_______ requests
+_______ r__
 
 IPINFO_URL = 'http://ipinfo.io/{ip}/json'
 
@@ -8,7 +8,7 @@ ___ get_ip_country(ip_address
        parse the json response returning the country code of the IP"""
 
 
-    r.. requests.get(IPINFO_URL.f..(ip=ip_address)).json() 'country'
+    r.. r__.g.. IPINFO_URL.f..(ip=ip_address)).j.. 'country'
 
 
 

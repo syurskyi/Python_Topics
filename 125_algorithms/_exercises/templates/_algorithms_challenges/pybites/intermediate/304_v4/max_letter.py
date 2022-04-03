@@ -1,5 +1,5 @@
 ____ typing _______ Tuple
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ __
 
 PAT = r'^\W+|\W+$|^_+|_+$'  # leading or trailing non-word characters
@@ -25,7 +25,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     counts    # list
     ___ word __ words:
         folded = word.c..()
-        count = Counter([c ___ c __ folded __ c.isalpha()])
+        count = C..([c ___ c __ folded __ c.isalpha()])
         __ count.most_common(1
             counts.a..((word, count))
 

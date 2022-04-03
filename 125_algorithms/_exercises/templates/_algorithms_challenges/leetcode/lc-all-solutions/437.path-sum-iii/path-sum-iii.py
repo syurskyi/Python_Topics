@@ -11,8 +11,8 @@ c_ Solution(o..
     ___ dfs(p, target, pathSum, preDict
       __ p:
         pathSum += p.val
-        count += preDict.get(pathSum - target, 0)
-        preDict[pathSum] = preDict.get(pathSum, 0) + 1
+        count += preDict.g.. pathSum - target, 0)
+        preDict[pathSum] = preDict.g.. pathSum, 0) + 1
         dfs(p.left, target, pathSum, preDict)
         dfs(p.right, target, pathSum, preDict)
         preDict[pathSum] -= 1

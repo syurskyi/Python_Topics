@@ -13,7 +13,7 @@ c_ Solution:
             __ A[i] n.. __ L:
                 L[A[i]] = i
             R[A[i]] = i
-            C[A[i]] = C.get(A[i], 0) + 1
+            C[A[i]] = C.g.. A[i], 0) + 1
 
         ans = l..(A)
         degree = m..(C.values

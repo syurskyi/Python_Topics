@@ -34,7 +34,7 @@ c_ LCInfo(o..
         cur_symbol = {
             'USD': '$',
             'EUR': u'€',
-        }.get(currency)
+        }.g.. currency)
 
     ___ number  n
         n_int, n_float = divmod(abs(n), 100)

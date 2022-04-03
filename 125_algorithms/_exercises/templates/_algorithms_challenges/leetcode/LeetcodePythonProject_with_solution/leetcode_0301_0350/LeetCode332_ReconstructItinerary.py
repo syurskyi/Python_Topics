@@ -20,7 +20,7 @@ c_ Solution(o..
         r.. result
         
     ___ dfs  result, hashmap, elem
-        w.... hashmap.get(elem
+        w.... hashmap.g.. elem
             dfs(result, hashmap, heapq.heappop(hashmap[elem]))
         result.insert(0, elem)
     

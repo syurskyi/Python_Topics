@@ -8,12 +8,12 @@ c_ Solution(o..
     d    # dict
     n = l..(s1)
     ___ c __ s1:
-      d[c] = d.get(c, 0) + 1
+      d[c] = d.g.. c, 0) + 1
     window    # dict
     ___ i, c __ e..(s2
-      window[c] = window.get(c, 0) + 1
+      window[c] = window.g.. c, 0) + 1
       __ i >= l..(s1
-        window[s2[i - n]] = window.get(s2[i - n], 0) - 1
+        window[s2[i - n]] = window.g.. s2[i - n], 0) - 1
         __ window[s2[i - n]] __ 0:
           del window[s2[i - n]]
       __ window __ d:

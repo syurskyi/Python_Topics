@@ -74,7 +74,7 @@ ___ redirect(url: s..) __ s..:
 
     decoded = d.. number)
 
-    r.. LINKS.get(decoded,NO_RECORD)
+    r.. LINKS.g.. decoded,NO_RECORD)
 
 
 

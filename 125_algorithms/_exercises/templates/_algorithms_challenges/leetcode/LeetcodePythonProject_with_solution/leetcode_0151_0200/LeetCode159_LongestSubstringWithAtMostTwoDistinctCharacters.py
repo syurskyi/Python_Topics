@@ -13,7 +13,7 @@ c_ Solution(o..
         l = 0
         res = 0
         ___ i, c __ e..(s
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
             w.... l..(hashmap) > 2:
                 hashmap[s[l]] -= 1
                 __ hashmap[s[l]] __ 0: del hashmap[s[l]]

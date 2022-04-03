@@ -1,7 +1,7 @@
 _______ __
 _______ urllib
 #from Bio import SeqIO
-_______ requests
+_______ r__
 
 # Fetched and truncated from
 # https://www.uniprot.org/uniprot/?query=database%3A%28type%3Aembl+AE017195%29&format=fasta (Aug 01, 2020)
@@ -9,7 +9,7 @@ _______ requests
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
 FASTA_FILE = __.p...j..(__.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 
-response = requests.get(URL)
+response = r__.g.. URL)
 
 w__ o.. 'test.txt','w') __ f:
     f.write(response.text)

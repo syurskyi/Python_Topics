@@ -40,7 +40,7 @@ c_ Solution(o..
         r..
 
       ___ nbr __ getNbrs(beginWord, endWord, wordList
-        __ distance.get(nbr, -2) + 1 __ distance[beginWord]:
+        __ distance.g.. nbr, -2) + 1 __ distance[beginWord]:
           p...a..(nbr)
           dfs(nbr, endWord, wordList, p.., res, distance)
           p...pop()

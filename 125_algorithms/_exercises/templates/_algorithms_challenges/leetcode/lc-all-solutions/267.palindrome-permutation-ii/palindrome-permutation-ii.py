@@ -26,7 +26,7 @@ c_ Solution(o..
     res    # list
     ss = ""
     mid = ""
-    counter = c...Counter(s)
+    counter = c...C..(s)
     oddChars = filter(l.... x: counter[x] % 2 __ 1, counter)
     __ l..(s) % 2 __ 1:
       __ l..(oddChars) __ 1:

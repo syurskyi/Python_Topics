@@ -1,7 +1,7 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
 ___ major_n_minor(numbers
-    counts = Counter(numbers)
+    counts = C..(numbers)
     # you code ...
     major=m..(counts, key=counts.get)
     minor=m..(counts, key=counts.get)

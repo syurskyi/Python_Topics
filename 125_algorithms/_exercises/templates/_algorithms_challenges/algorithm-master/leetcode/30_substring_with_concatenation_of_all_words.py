@@ -12,7 +12,7 @@ c_ Solution:
         n, m, k = l..(s), l..(S), l..(S[0])
         F    # dict
         ___ c __ S:
-            F[c] = F.get(c, 0) + 1
+            F[c] = F.g.. c, 0) + 1
 
         ___ start __ r..(k
             _F    # dict
@@ -27,7 +27,7 @@ c_ Solution:
                     left = right + k
                     _____
 
-                _F[sr] = _F.get(sr, 0) + 1
+                _F[sr] = _F.g.. sr, 0) + 1
                 __ _F[sr] <= F[sr]:
                     cnt += 1
                 w.... _F[sr] > F[sr]:

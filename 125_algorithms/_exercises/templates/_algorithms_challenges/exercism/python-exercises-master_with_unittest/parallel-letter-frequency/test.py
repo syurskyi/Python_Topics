@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ unittest
 
 ____ parallel_letter_frequency _______ calculate
@@ -53,7 +53,7 @@ c_ ParallelLetterFrequencyTest(unittest.TestCase
                      "expensive yak shave waiting to\n" + \
                      "happen."
         actual  calculate(text_input.s..('\n'))
-        expected  Counter([x ___ x __ text_input.l.. __ x.isalpha()])
+        expected  C..([x ___ x __ text_input.l.. __ x.isalpha()])
         assertDictEqual(actual, expected)
 
 

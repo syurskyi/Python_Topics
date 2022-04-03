@@ -6,14 +6,14 @@ c_ Solution(o..
     :rtype: str
     """
     score = 0
-    wanted = c...Counter(t)
+    wanted = c...C..(t)
     start, end = l..(s), 3 * l..(s)
     d    # dict
     deq = c...d..([])
     ___ i, c __ e..(s
       __ c __ wanted:
         deq.a..(i)
-        d[c] = d.get(c, 0) + 1
+        d[c] = d.g.. c, 0) + 1
         __ d[c] <= wanted[c]:
           score += 1
         w.... deq a.. d[s[deq[0]]] > wanted[s[deq[0]]]:

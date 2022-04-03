@@ -1,6 +1,6 @@
 _______ __
 _______ u__.r..
-____ c.. _______ Counter
+____ c.. _______ C..
 
 # data provided
 tmp = __.getenv("TMP", "/tmp")
@@ -29,7 +29,7 @@ ___ get_harry_most_common_word
                 #print(word1)
                 __ word_to_test a.. word_to_test n.. __ stopwords_list :
                     common_word.a..(word_to_test)
-    r.. Counter(common_word).most_common(1)[0]
+    r.. C..(common_word).most_common(1)[0]
 
 get_harry_most_common_word()
 #print(get_harry_most_common_word())

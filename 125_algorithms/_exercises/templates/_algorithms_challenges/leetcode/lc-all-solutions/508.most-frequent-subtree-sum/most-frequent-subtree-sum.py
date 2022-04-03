@@ -18,7 +18,7 @@ c_ Solution(o..
       left = helper(root.left, d)
       right = helper(root.right, d)
       subtreeSum = left + right + root.val
-      d[subtreeSum] = d.get(subtreeSum, 0) + 1
+      d[subtreeSum] = d.g.. subtreeSum, 0) + 1
       r.. subtreeSum
 
     d    # dict

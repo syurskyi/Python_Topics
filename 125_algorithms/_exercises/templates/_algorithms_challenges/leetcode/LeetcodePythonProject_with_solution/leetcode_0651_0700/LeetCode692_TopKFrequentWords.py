@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ word __ words:
-            hashmap[word] = hashmap.get(word, 0)+1
+            hashmap[word] = hashmap.g.. word, 0)+1
         n = l..(words)
         dp = [[] ___ _ __ r..(n+1)]
         ___ word, freq __ hashmap.i..:

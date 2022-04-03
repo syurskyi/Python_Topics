@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 ___ major_n_minor(numbers
     """
     Input: an array with integer numbers
@@ -6,7 +6,7 @@ ___ major_n_minor(numbers
     """
 
 
-    counts = Counter(numbers)
+    counts = C..(numbers)
 
 
     x =  counts.most_common()

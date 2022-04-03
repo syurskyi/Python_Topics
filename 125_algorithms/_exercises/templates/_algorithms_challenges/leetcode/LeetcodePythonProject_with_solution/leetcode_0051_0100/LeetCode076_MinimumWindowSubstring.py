@@ -13,24 +13,24 @@ c_ Solution(o..
         """
         hashmap0    # dict
         ___ c __ t:
-            hashmap0[c] = hashmap0.get(c, 0)+1
+            hashmap0[c] = hashmap0.g.. c, 0)+1
         left = 0
         res = ''
         minLen = f__('inf')
         hashmap    # dict
         count = 0
         ___ i, c __ e..(s
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
             __ c __ hashmap0 a.. hashmap[c] __ hashmap0[c]:
                 count += 1
-            w.... left <= i a.. hashmap[s[left]] > hashmap0.get(s[left], 0
+            w.... left <= i a.. hashmap[s[left]] > hashmap0.g.. s[left], 0
                 hashmap[s[left]] -= 1
                 left += 1
             __ count __ l..(hashmap0
                 __ minLen > i-left+1:
                     minLen = i-left+1
                     res = s[left:i+1]
-                __ hashmap0.get(s[left], 0) __ hashmap[s[left]]:
+                __ hashmap0.g.. s[left], 0) __ hashmap[s[left]]:
                     count -= 1
                 hashmap[s[left]] -= 1
                 left += 1
@@ -44,19 +44,19 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ c __ t:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         left = 0
         hashmapAll    # dict
         hashset = s..()
         res = ''
         minLen = f__('inf')
         ___ i, c __ e..(s
-            __ c __ hashmap a.. hashmapAll.get(c, 0)+1 >= hashmap[c]:
+            __ c __ hashmap a.. hashmapAll.g.. c, 0)+1 >= hashmap[c]:
                 hashset.add(c)
-            hashmapAll[c] = hashmapAll.get(c, 0)+1
+            hashmapAll[c] = hashmapAll.g.. c, 0)+1
             w.... left < i a.. (s[left] n.. __ hashmap o. hashmapAll[s[left]] > hashmap[s[left]]
                 hashmapAll[s[left]] -= 1
-                __ hashmapAll[s[left]] < hashmap.get(s[left], 0
+                __ hashmapAll[s[left]] < hashmap.g.. s[left], 0
                     hashset.discard(s[left])
                 __ hashmapAll[s[left]] __ 0:
                     del hashmapAll[s[left]]

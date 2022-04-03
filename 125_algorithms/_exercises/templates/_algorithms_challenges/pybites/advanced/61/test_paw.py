@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
 _______ p__
 
@@ -39,13 +39,13 @@ ___ test_number_action_cards(deck, small_deck, big_deck
 
 ___ test_all_action_cards_used(deck, small_deck, big_deck
     cards = [card.action ___ card __ deck __ card.action __ n.. N..]
-    ... s..(Counter(cards).values __ 8
+    ... s..(C..(cards).values __ 8
 
     cards = [card.action ___ card __ small_deck __ card.action __ n.. N..]
-    ... s..(Counter(cards).values __ 4
+    ... s..(C..(cards).values __ 4
 
     cards = [card.action ___ card __ big_deck __ card.action __ n.. N..]
-    ... s..(Counter(cards).values __ 16
+    ... s..(C..(cards).values __ 16
 
 
 ___ test_action_cards_in_different_positions(deck

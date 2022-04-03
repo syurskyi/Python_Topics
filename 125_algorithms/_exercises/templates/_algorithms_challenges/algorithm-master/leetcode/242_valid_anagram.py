@@ -13,7 +13,7 @@ c_ Solution:
         freq    # dict
 
         ___ c __ s:
-            freq[c] = freq.get(c, 0) + 1
+            freq[c] = freq.g.. c, 0) + 1
 
         ___ c __ t:
             __ c n.. __ freq:

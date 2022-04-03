@@ -89,7 +89,7 @@ c_ RestAPI(o..
         borrower 'owes' [lender 'name']] += amount
 
     ___ lender_owes_borrower  lender, borrower
-        r.. lender 'owes' .get(borrower 'name' , 0) != 0
+        r.. lender 'owes' .g.. borrower 'name' , 0) != 0
 
     ___ pay_debt  lender, borrower, amount
         debt = lender 'owes' [borrower 'name']]

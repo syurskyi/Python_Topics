@@ -29,7 +29,7 @@ Note:
 A and B both contain only spaces and lowercase letters.
 """
 ____ typing _______ List
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
@@ -37,7 +37,7 @@ c_ Solution:
         """
         need counter, only need to appear once
         """
-        c = Counter(A.s.. + Counter(B.s..
+        c = C..(A.s.. + C..(B.s..
         ret = [
             k
             ___ k, v __ c.i..
@@ -49,7 +49,7 @@ c_ Solution:
         """
         need counter
         """
-        c_A, c_B = Counter(A.s.., Counter(B.s..
+        c_A, c_B = C..(A.s.., C..(B.s..
         ret    # list
         ___ k, v __ c_A.i..:
             __ v __ 1 a.. k n.. __ c_B:

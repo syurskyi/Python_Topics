@@ -9,7 +9,7 @@ c_ Solution(o..
         __ n.. s: r.. F..
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         odd = 0
         ___ value __ hashmap.v..
             __ value%2 != 0:

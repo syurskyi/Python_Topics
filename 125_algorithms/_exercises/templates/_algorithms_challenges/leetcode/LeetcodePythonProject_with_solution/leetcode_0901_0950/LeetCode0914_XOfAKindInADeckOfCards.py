@@ -7,7 +7,7 @@ c_ Solution(o..
         __ n.. deck: r.. F..
         hashmap    # dict
         ___ num __ deck:
-            hashmap[num] = hashmap.get(num, 0)+1
+            hashmap[num] = hashmap.g.. num, 0)+1
         counts = l..(hashmap.values
         minVal = m..(hashmap.values
         w.... counts:

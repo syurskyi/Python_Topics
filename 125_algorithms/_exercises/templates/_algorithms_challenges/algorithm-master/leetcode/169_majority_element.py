@@ -49,7 +49,7 @@ c_ Solution:
         freq    # dict
 
         ___ a __ nums:
-            freq[a] = freq.get(a, 0) + 1
+            freq[a] = freq.g.. a, 0) + 1
 
         ___ a, cnt __ freq.i..:
             __ cnt > l..(nums) // 2:

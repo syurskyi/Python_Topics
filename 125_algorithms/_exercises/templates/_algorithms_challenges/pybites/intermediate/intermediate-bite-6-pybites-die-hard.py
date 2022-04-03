@@ -9,7 +9,7 @@ Good luck and have fun!
 
 """Checks community branch dir structure to see who submitted most
    and what challenge is more popular by number of PRs"""
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 _______ __
 _______ u__.r..
 
@@ -23,7 +23,7 @@ u__.r...u..(
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 
-users, popular_challenges = Counter(), Counter()
+users, popular_challenges = C..(), C..()
 
 Stats = n..('Stats', 'user challenge')
 

@@ -1,5 +1,5 @@
 _______ __
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ u__.r..
 _______ ___.e__.E__ __ ET
 
@@ -22,6 +22,6 @@ ___ get_pybites_top_tags(n=10
     temp_list    # list
     ___ category __ root.i..('category'
         temp_list.a..(category.text)
-    r.. Counter(temp_list).most_common(n)
+    r.. C..(temp_list).most_common(n)
 
 print(get_pybites_top_tags(3))

@@ -27,7 +27,7 @@ c_ AutocompleteSystem(o..
                     newNode = TreeNode(c)
                     node.children[c] = newNode
                 node = node.children[c]
-                node.candidates[s] = node.candidates.get(s, 0)+count
+                node.candidates[s] = node.candidates.g.. s, 0)+count
             node.isLeaf = T..
 
     ___ input  c
@@ -62,7 +62,7 @@ c_ AutocompleteSystem(o..
                 newNode = TreeNode(c)
                 node.children[c] = newNode
             node = node.children[c]
-            node.candidates[s] = node.candidates.get(s, 0)+1
+            node.candidates[s] = node.candidates.g.. s, 0)+1
         node.isLeaf = T..
 
 __ _____ __ _____

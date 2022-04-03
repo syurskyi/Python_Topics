@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution(o..
@@ -9,8 +9,8 @@ c_ Solution(o..
     :rtype: str
     """
     a = b = 0
-    ds = Counter()
-    dg = Counter()
+    ds = C..()
+    dg = C..()
     ___ i __ r..(l..(secret)):
       s = secret[i]
       g = guess[i]

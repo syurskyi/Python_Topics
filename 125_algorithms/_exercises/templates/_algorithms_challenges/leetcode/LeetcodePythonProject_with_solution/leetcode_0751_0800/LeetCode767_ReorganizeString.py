@@ -13,7 +13,7 @@ c_ Solution(o..
         s = S
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         heap    # list
         ___ c, freq __ hashmap.i..:
             heapq.heappush(heap, [-freq, c])

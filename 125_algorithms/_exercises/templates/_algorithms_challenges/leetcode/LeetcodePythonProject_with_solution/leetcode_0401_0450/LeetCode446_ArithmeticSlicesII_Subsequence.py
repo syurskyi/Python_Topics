@@ -10,8 +10,8 @@ c_ Solution(o..
             ___ j __ r..(i
                 num2 = nums[j]
                 diff = num2-num1
-                c1 = dp[i].get(diff, 0)
-                c2 = dp[j].get(diff, 0)
+                c1 = dp[i].g.. diff, 0)
+                c2 = dp[j].g.. diff, 0)
                 res += c2
                 dp[i][diff] = c1+c2+1
         r.. res

@@ -16,7 +16,7 @@ c_ Solution:
         ___ c __ C:
             ___ d __ D:
                 key = - (c + d)
-                S[key] = S.get(key, 0) + 1
+                S[key] = S.g.. key, 0) + 1
 
         ___ a __ A:
             ___ b __ B:

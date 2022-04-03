@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ d__ _______ date
 ____ unittest.mock _______ patch, MagicMock
 
@@ -11,7 +11,7 @@ ____ Previous.monitor _______ timeit, ALERT_MSG
 ?p__.f..()
 ___ clean_cache
     """Make sure each test starts with a clean cache dict"""
-    monitor.violations = Counter()
+    monitor.violations = C..()
 
 
 @patch('monitor.time', MagicMock(side_effect=[0, 2]))

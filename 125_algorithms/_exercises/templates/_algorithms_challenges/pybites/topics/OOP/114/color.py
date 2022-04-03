@@ -22,7 +22,7 @@ c_ Color:
     """
 
     ___ - , color
-        rgb = COLOR_NAMES.get(color.upper
+        rgb = COLOR_NAMES.g.. color.upper
         color = color
 
     ___ hex2rgb(hex_value

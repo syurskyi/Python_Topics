@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ unittest
 
 ____ luhn _______ Luhn
@@ -7,13 +7,13 @@ ____ luhn _______ Luhn
 c_ LuhnTests(unittest.TestCase
     ___ test_addends
         # uses a Counter to avoid specifying order of return value
-        assertEqual(Counter([1, 4, 1, 4, 1]),
-                         Counter(Luhn(12121).addends()))
+        assertEqual(C..([1, 4, 1, 4, 1]),
+                         C..(Luhn(12121).addends()))
 
     ___ test_addends_large
         # uses a Counter to avoid specifying order of return value
-        assertEqual(Counter([7, 6, 6, 1]),
-                         Counter(Luhn(8631).addends()))
+        assertEqual(C..([7, 6, 6, 1]),
+                         C..(Luhn(8631).addends()))
 
     ___ test_checksum1
         assertEqual(2, Luhn(4913).checksum

@@ -13,7 +13,7 @@ c_ Solution(o..
         __ n.. s1: r.. F..
         hashmap    # dict
         ___ c __ s1:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         left = 0
         hashmap0    # dict
         ___ i, c __ e..(s2
@@ -21,7 +21,7 @@ c_ Solution(o..
                 w.... left < i a.. c __ hashmap0 a.. hashmap0[c] >= hashmap[c]:
                     hashmap0[s2[left]] -= 1
                     left += 1
-                hashmap0[c] = hashmap0.get(c, 0)+1
+                hashmap0[c] = hashmap0.g.. c, 0)+1
                 __ l..(s1) __ i-left+1:
                     r.. T..
             ____:

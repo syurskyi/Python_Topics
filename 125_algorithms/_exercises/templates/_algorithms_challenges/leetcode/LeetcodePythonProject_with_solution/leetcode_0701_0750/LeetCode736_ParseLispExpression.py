@@ -12,7 +12,7 @@ c_ Solution(o..
         st, d, tokens    # list, {}, ['']
         
         ___ getVal(x
-            r.. d.get(x, x)
+            r.. d.g.. x, x)
         
         ___ evaluate(tokens
             __ tokens[0] __ ('add', 'mult'

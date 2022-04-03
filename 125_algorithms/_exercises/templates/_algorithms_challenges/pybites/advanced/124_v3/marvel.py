@@ -1,8 +1,8 @@
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 _______ csv
 _______ __
 
-_______ requests
+_______ r__
 
 MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
@@ -13,8 +13,8 @@ Character = n..('Character', 'pid name sid align sex first_appearance appearance
 
 ___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
-    w__ requests.Session() __ session:
-        r.. session.get(MARVEL_CSV).content.d.. 'utf-8')
+    w__ r__.S.. __ session:
+        r.. session.g.. MARVEL_CSV).content.d.. 'utf-8')
 
 
 ___ load_data
@@ -61,7 +61,7 @@ ___ max_and_min_years_new_characters(characters=characters
        characters, or the 'year' attribute of the namedtuple, return a tuple
        of (max_year, min_year)
     """
-    first_app = Counter([_year_app(c.first_appearance) ___ c __ characters
+    first_app = C..([_year_app(c.first_appearance) ___ c __ characters
                          __ c.first_appearance])
     mc = first_app.most_common()
     r.. mc[0][0], mc[-1][0]
@@ -75,6 +75,6 @@ ___ get_percentage_female_characters(characters=characters
        Agender and Genderfluid Characters.
        Return the result rounded to 2 digits
     """
-    genders = Counter([c.sex.s..(' ')[0] ___ c __ characters __ c.sex])
+    genders = C..([c.sex.s..(' ')[0] ___ c __ characters __ c.sex])
     sum_all_genders = s..([x[1] ___ x __ genders.i..])
     r.. r..(100 * genders 'Female'  / sum_all_genders, 2)

@@ -14,7 +14,7 @@ c_ Solution(o..
         _______ heapq
         p..    # dict
         ___ time __ times:
-            sourceMap = p...get(time[0], {})
+            sourceMap = p...g.. time[0], {})
             __ time[1] n.. __ sourceMap o. sourceMap[time[1]] > time[2]:
                 sourceMap[time[1]] = time[2]
             p..[time[0]] = sourceMap

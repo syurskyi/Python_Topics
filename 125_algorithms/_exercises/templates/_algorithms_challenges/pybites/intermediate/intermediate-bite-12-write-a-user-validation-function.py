@@ -59,7 +59,7 @@ ___ pyb_get_user(username
     # https://stackoverflow.com/questions/21095654/what-is-a-nonetype-object
     # https://stackoverflow.com/questions/23086383/how-to-test-nonetype-in-python
     # https://stackoverflow.com/questions/19473185/what-is-a-none-value
-    r.. users.get(username)
+    r.. users.g.. username)
 
 ___ pyb_get_secret_token(username
     user = pyb_get_user(username)

@@ -10,7 +10,7 @@ c_ Solution:
 
         F    # dict
         ___ c __ t:
-            F[c] = F.get(c, 0) + 1
+            F[c] = F.g.. c, 0) + 1
 
         n, cnt = l..(s), l..(F)
         start = size = INFINITY = f__('inf')

@@ -1,7 +1,7 @@
 _______ __
 _______ u__.r..
 _______ __
-____ c.. _______ Counter
+____ c.. _______ C..
 
 # data provided
 
@@ -19,4 +19,4 @@ ___ get_harry_most_common_word
         words = word_regex.f..(f.r...l..
     w__ o.. stopwords_file) __ f:
         stops = word_regex.f..(f.r...l..
-    r.. Counter([x ___ x __ words __ x n.. __ stops]).most_common(1)[0]
+    r.. C..([x ___ x __ words __ x n.. __ stops]).most_common(1)[0]

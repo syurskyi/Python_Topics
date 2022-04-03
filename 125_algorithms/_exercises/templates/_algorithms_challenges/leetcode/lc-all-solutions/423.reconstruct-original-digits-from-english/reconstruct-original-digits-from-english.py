@@ -13,9 +13,9 @@ c_ Solution(o..
     ans    # list
     count    # dict
     ___ c __ s:
-      count[c]  count.get(c, 0) + 1
+      count[c]  count.g.. c, 0) + 1
     ___ num __ [0, 2, 4, 6, 8, 1, 3, 7, 5, 10, 9]:
-      featureNum  count.get(feature[num], 0)
+      featureNum  count.g.. feature[num], 0)
       __ featureNum > 0:
         ans + [s..(num)] * featureNum
         word  nums[num]

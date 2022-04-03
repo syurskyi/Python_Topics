@@ -5,7 +5,7 @@ Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
 ____ i.. _______ product, groupby
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 _______ operator
 
 CHEESES = [
@@ -100,8 +100,8 @@ Scores = n..('Scores', 'wine cheese score')
 
 
 ___ calculate_similarity(cheese, wine
-    wine_count = Counter(wine.l..
-    cheese_count = Counter(cheese.l..
+    wine_count = C..(wine.l..
+    cheese_count = C..(cheese.l..
     common_letters = (wine_count & cheese_count)
     similarity = s..(common_letters.values / (1 + (l..(wine) - l..(cheese)) ** 2)
     r.. similarity

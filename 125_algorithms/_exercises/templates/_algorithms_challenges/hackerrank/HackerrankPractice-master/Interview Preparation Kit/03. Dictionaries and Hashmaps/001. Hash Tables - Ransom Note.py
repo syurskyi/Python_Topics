@@ -2,11 +2,11 @@
 #  Score: 25
 
 
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 ___ checkMagazine(magazine, note
-    __ Counter(note) - Counter(magazine) __ {}:
+    __ C..(note) - C..(magazine) __ {}:
         r.. 'Yes'
     ____:
         r.. 'No'

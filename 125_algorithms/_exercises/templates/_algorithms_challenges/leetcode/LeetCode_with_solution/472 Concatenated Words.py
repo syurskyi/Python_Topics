@@ -58,7 +58,7 @@ c_ Solution:
         cur = root
         ___ i __ r..(lo, k
             cur = cur[word[i]]
-            __ cur.get("end", F..) a.. can_concat(word, i + 1
+            __ cur.g.. "end", F..) a.. can_concat(word, i + 1
                 r.. T..
 
         r.. F..

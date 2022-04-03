@@ -24,7 +24,7 @@ c_ Solution(o..
         """
         hashmap    # dict
         ___ emp __ employees:
-            hashmap[emp.id] = hashmap.get(emp.id, []) + [emp]
+            hashmap[emp.id] = hashmap.g.. emp.id, []) + [emp]
         queue    # list
         ___ emp __ employees:
             __ emp.id __ id:
@@ -35,5 +35,5 @@ c_ Solution(o..
             subs = emp.subordinates
             res += emp.importance
             ___ sub __ subs:
-                queue += hashmap.get(sub, [])
+                queue += hashmap.g.. sub, [])
         r.. res

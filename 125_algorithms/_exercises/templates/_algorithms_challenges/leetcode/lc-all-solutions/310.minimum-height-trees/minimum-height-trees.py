@@ -22,7 +22,7 @@ c_ Solution(o..
         level += 1
         ___ i __ r..(0, l..(queue)):
           label, parent = queue.popleft()
-          ___ child __ graph.get(label, []
+          ___ child __ graph.g.. label, []
             __ child != parent:
               queue.a..((child, label))
               __ level > maxLevel:
@@ -35,7 +35,7 @@ c_ Solution(o..
         res.a..(p.. + [])
         r.. T..
       visited[start] = 1
-      ___ child __ graph.get(start, []
+      ___ child __ graph.g.. start, []
         __ visited[child] __ 0:
           p...a..(child)
           __ dfs(graph, child, end, visited, p.., res
@@ -44,8 +44,8 @@ c_ Solution(o..
 
     graph    # dict
     ___ edge __ edges:
-      graph[edge[0]] = graph.get(edge[0], []) + [edge[1]]
-      graph[edge[1]] = graph.get(edge[1], []) + [edge[0]]
+      graph[edge[0]] = graph.g.. edge[0], []) + [edge[1]]
+      graph[edge[1]] = graph.g.. edge[1], []) + [edge[0]]
 
     start = bfs(graph, edges[0][0])
     end = bfs(graph, start)

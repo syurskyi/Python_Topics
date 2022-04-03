@@ -25,7 +25,7 @@ Output: 2
 Explanation: You could form "10", but then you'd have nothing left. Better form
 "0" and "1".
 """
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
@@ -94,14 +94,14 @@ c_ Solution:
             r.. 0
 
         F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
-        count = Counter(strs[0])
+        count = C..(strs[0])
         ___ i __ r..(m+1
             ___ j __ r..(n+1
                 __ i + count["0"] <= m a.. j + count["1"] <= n:
                     F[i][j][0] = 1
 
         ___ e __ r..(1, l..(strs)):
-            count = Counter(strs[e])
+            count = C..(strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1
                     __ i + count["0"] <= m a.. j + count["1"] <= n:
@@ -130,12 +130,12 @@ c_ Solution:
             r.. 0
 
         F = [[[0 ___ _ __ r..(l..(strs))] ___ _ __ r..(n + 1)] ___ _ __ r..(m + 1)]
-        count = Counter(strs[0])
+        count = C..(strs[0])
         __ count["0"] <= m a.. count["1"] <= n:
             F[m - count["0"]][n - count["1"]][0] += 1
 
         ___ e __ r..(1, l..(strs)):
-            count = Counter(strs[e])
+            count = C..(strs[e])
             ___ i __ r..(m+1
                 ___ j __ r..(n+1
                     __ count["0"] <= i a.. count["1"] <= j:
@@ -162,7 +162,7 @@ c_ Solution:
         strs.s..(key=l..)
         ret = 0
         ___ a __ strs:
-            count = Counter(a)
+            count = C..(a)
             __ count["0"] <= m a.. count["1"] <= n:
                 ret += 1
                 m -= count["0"]

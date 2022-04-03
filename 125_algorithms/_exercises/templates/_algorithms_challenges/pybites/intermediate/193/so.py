@@ -1,4 +1,4 @@
-_______ requests
+_______ r__
 ____ bs4 _______ BeautifulSoup
 
 cached_so_url = 'https://bites-data.s3.us-east-2.amazonaws.com/so_python.html'
@@ -11,14 +11,14 @@ ___ top_python_questions(url=cached_so_url
       Return a list of (question, num_votes) tuples ordered
       by num_votes descending (see tests for expected output).
    """
-   response = requests.get(url)
+   response = r__.g.. url)
    soup = BeautifulSoup(response.text, "html.parser")
    ge_1m    # list
    lt_1m    # list
 
    question_summary = soup.find_all("div", class_="question-summary")
    ___ question __ question_summary:
-      views = i..(question.find("div", class_="views").get("title").s..(" ")[0].r..(",", ""))
+      views = i..(question.find("div", class_="views").g.. "title").s..(" ")[0].r..(",", ""))
       _question = question.find("a", class_="question-hyperlink").get_text()
       votes = i..(question.find("span", class_="vote-count-post").get_text
       

@@ -1,7 +1,7 @@
 _______ __
 ____ c.. _______ n..
 
-_______ requests
+_______ r__
 ____ bs4 _______ BeautifulSoup
 
 # feed = https://news.python.sc/, to get predictable results we cached
@@ -14,7 +14,7 @@ Entry = n..('Entry', 'title points comments')
 
 ___ _create_soup_obj(url
     """Need utf-8 to properly parse emojis"""
-    resp = requests.get(url)
+    resp = r__.g.. url)
     resp.encoding = "utf-8"
     r.. BeautifulSoup(resp.text, "html.parser")
 

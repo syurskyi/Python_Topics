@@ -11,10 +11,10 @@ ___ validateBattlefield(field
             __ field[row][col] __ 1:
                 ___
                     result = getShipSize(row, col, field)
-                    ships[result] = ships.get(result, 0) + 1
+                    ships[result] = ships.g.. result, 0) + 1
                 ______ V..
                     r.. F..
-    r.. ships.get(4, 0) __ 1 a.. ships.get(3, 0) __ 2 a.. ships.get(2, 0) __ 3 a.. ships.get(1, 0) __ 4
+    r.. ships.g.. 4, 0) __ 1 a.. ships.g.. 3, 0) __ 2 a.. ships.g.. 2, 0) __ 3 a.. ships.g.. 1, 0) __ 4
 
 
 ___ isCornerValid(row, col, field

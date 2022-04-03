@@ -4,7 +4,7 @@ ____ pathlib _______ Path
 ____ typing _______ Dict, List, Union
 
 _______ pandas __ pd  # type: ignore
-_______ requests
+_______ r__
 
 URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
 STATS: List[s..] = ["sum", "mean", "max"]
@@ -23,7 +23,7 @@ ___ get_data(url: s..) __ Dict[s.., s..]:
     __ TMP.exists
         data = json.loads(TMP.read_text
     ____:
-        response = requests.get(url)
+        response = r__.g.. url)
         response.raise_for_status()
         data = json.loads(response.text)
         w__ TMP.o.. "w") __ tmp:

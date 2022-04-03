@@ -36,5 +36,5 @@ c_ Solution(o..
         count    # dict
         ___ i __ la:
             ___ j __ lb:
-                count[i-j] = count.get(i-j, 0)+1
+                count[i-j] = count.g.. i-j, 0)+1
         r.. m..(count.v.. o. [0])

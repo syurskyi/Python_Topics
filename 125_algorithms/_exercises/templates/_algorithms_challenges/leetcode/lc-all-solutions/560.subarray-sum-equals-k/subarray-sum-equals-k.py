@@ -9,6 +9,6 @@ c_ Solution(o..
     visit = {0: 1}
     ___ i, n __ e..(nums
       preSum += n
-      ans += visit.get(preSum - k, 0)
-      visit[preSum] = visit.get(preSum, 0) + 1
+      ans += visit.g.. preSum - k, 0)
+      visit[preSum] = visit.g.. preSum, 0) + 1
     r.. ans

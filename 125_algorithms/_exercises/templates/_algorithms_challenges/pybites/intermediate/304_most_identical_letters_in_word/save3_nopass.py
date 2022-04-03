@@ -1,5 +1,5 @@
 ____ typing _______ Tuple
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ __
 _______ pandas __ pd
 
@@ -40,8 +40,8 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     l_column   # list
     c_column    # list
     ___ w __ df 'casefold' :
-        l_column.a..(Counter(w).most_common()[0][0])
-        c_column.a..(Counter(w).most_common()[0][1])
+        l_column.a..(C..(w).most_common()[0][0])
+        c_column.a..(C..(w).most_common()[0][1])
 
     l_column =  'e' __ x __ '-' ____ x ___ x __ l_column]
 

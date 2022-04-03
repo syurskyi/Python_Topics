@@ -50,8 +50,8 @@ ___ get_quote(qid
 
 @app.route('/api/quotes', methods= 'POST' )
 ___ create_quote
-    quote_str = request.json.get('quote')
-    movie_str = request.json.get('movie')
+    quote_str = request.json.g.. 'quote')
+    movie_str = request.json.g.. 'movie')
     __ n.. quote_str o. n.. movie_str:
         abort(400)
     quote = {'quote': quote_str, 'movie': movie_str}
@@ -69,11 +69,11 @@ ___ update_quote(qid
         abort(404)
     q = q[0]
     dirty = F..
-    quote_str = request.json.get('quote')
+    quote_str = request.json.g.. 'quote')
     __ quote_str:
         q 'quote'  = quote_str
         dirty = T..
-    movie_str = request.json.get('movie')
+    movie_str = request.json.g.. 'movie')
     __ movie_str:
         q 'movie'  = movie_str
         dirty = T..

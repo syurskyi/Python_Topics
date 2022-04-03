@@ -28,7 +28,7 @@ c_ Solution(o..
         _______ heapq
         hashmap    # dict
         ___ task __ tasks:
-            hashmap[task] = hashmap.get(task, 0)+1
+            hashmap[task] = hashmap.g.. task, 0)+1
         heap    # list
         ___ c, count __ hashmap.i..:
             heapq.heappush(heap, (-count, c))

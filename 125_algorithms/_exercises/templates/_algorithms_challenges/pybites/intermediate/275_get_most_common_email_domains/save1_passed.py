@@ -1,6 +1,6 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ bs4 _______ BeautifulSoup
-_______ requests
+_______ r__
 _______ __
 
 COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
@@ -11,7 +11,7 @@ TARGET_DIV = {"class": "middle_info_noborder"}
 ___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
 
-    response = requests.get(COMMON_DOMAINS)
+    response = r__.g.. COMMON_DOMAINS)
     soup = BeautifulSoup(response.text, 'html.parser')
     right_table = soup.find('div', TARGET_DIV)
 
@@ -35,4 +35,4 @@ ___ get_most_common_domains(emails, common_domains_ N..
         __ m.. n.. __ get_common_domains
             l.a..(m..)
 
-    r.. s..(l..(Counter(l).i.., r.._T..
+    r.. s..(l..(C..(l).i.., r.._T..

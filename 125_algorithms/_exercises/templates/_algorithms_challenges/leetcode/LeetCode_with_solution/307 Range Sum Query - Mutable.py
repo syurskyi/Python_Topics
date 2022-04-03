@@ -67,4 +67,4 @@ c_ NumArray(o..
         :type j: int
         :rtype: int
         """
-        r.. bit.get(j+1)-bit.get(i)
+        r.. bit.g.. j+1)-bit.g.. i)

@@ -1,6 +1,6 @@
 ____ e.. _______ E..
 ____ d__ _______ d__
-____ c.. _______ Counter, defaultdict
+____ c.. _______ C.., defaultdict
 
 
 c_ DateFormat(E..

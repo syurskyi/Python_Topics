@@ -6,7 +6,7 @@ ___ dice_poker
     
     ___ roll __ r..(rolls
         roll = input().s..
-        values = s..([x ___ x __ c...Counter(roll).v..)
+        values = s..([x ___ x __ c...C..(roll).v..)
 
         __ s..(roll) __  '2', '3', '4', '5', '6' :
             answer.a..('big-straight')

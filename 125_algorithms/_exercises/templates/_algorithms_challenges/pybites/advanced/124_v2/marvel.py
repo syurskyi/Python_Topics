@@ -1,8 +1,8 @@
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 _______ csv
 _______ __
 
-_______ requests
+_______ r__
 
 MARVEL_CSV = 'https://raw.githubusercontent.com/pybites/marvel_challenge/master/marvel-wikia-data.csv'  # noqa E501
 
@@ -13,8 +13,8 @@ Character = n..('Character', 'pid name sid align sex appearances year')
 
 ___ _get_csv_data
     """Download the marvel csv data and return its decoded content"""
-    w__ requests.Session() __ session:
-        r.. session.get(MARVEL_CSV).content.d.. 'utf-8')
+    w__ r__.S.. __ session:
+        r.. session.g.. MARVEL_CSV).content.d.. 'utf-8')
 
 
 ___ load_data
@@ -42,7 +42,7 @@ ___ most_popular_characters(characters=characters, top=5
     """Get the most popular character by number of appearances,
        return top n characters (default 5)
     """
-    result = Counter()
+    result = C..()
     ___ char __ characters:
         result[char.name + ',' + char.year] += i..(char.appearances) __ char.appearances != '' ____ 0
     r.. [x[0].s..(',')[0] ___ x __ result.most_common(top)]
@@ -54,7 +54,7 @@ ___ max_and_min_years_new_characters(characters=characters
        characters, or the 'year' attribute of the namedtuple, return a tuple
        of (max_year, min_year)
     """
-    result = Counter()
+    result = C..()
     ___ char __ characters:
         __ char.year __ '':
             _____
@@ -70,7 +70,7 @@ ___ get_percentage_female_characters(characters=characters
        Agender and Genderfluid Characters.
        Return the result rounded to 2 digits
     """
-    sexes = Counter()
+    sexes = C..()
     ___ char __ characters:
         __ char.sex __ '':
             _____

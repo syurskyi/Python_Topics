@@ -29,7 +29,7 @@ ___ calc_word_value(word
     """Given a word calculate its value using the LETTER_SCORES dict"""
 
 
-    r.. s..(LETTER_SCORES.get(letter,0) ___ letter __ word.upper
+    r.. s..(LETTER_SCORES.g.. letter,0) ___ letter __ word.upper
 
 
 ___ max_word_value(words

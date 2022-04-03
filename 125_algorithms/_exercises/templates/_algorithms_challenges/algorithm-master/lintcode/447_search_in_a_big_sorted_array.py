@@ -19,19 +19,19 @@ c_ Solution:
     """
     ___ searchBigSortedArray  reader, target
         end = 0
-        w.... reader.get(end) < target:
+        w.... reader.g.. end) < target:
             # `+1` is to avoid `end == 0`
             end = end * 2 + 1
 
         l, m, r = 0, 0, end
         w.... l + 1 < r:
             m = l + (r - l) // 2
-            __ reader.get(m) < target:
+            __ reader.g.. m) < target:
                 l = m
             ____:
                 r = m
 
         ___ i __ [l, r]:
-            __ reader.get(i) __ target:
+            __ reader.g.. i) __ target:
                 r.. i
         r.. -1

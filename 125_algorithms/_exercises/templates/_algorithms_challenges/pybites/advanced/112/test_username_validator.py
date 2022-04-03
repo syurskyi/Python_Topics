@@ -11,7 +11,7 @@ ___ test_parse_social_platforms_string
     platforms = parse_social_platforms_string()
     ... l..(platforms) __ 3
     ... a..([t..(nw) __ Validator ___ nw __ platforms.v..)
-    twitter = platforms.get('Twitter')
+    twitter = platforms.g.. 'Twitter')
     ... t..(twitter.r..) __ r..  # range upper limit = exclusive!
     ... isi..(twitter.regex, Pattern)  # nope, no regex here ;)
 

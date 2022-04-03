@@ -11,7 +11,7 @@ c_ TwoSum(o..
     Add the number to an internal data structure.
     :rtype: nothing
     """
-    nums[number] = nums.get(number, 0) + 1
+    nums[number] = nums.g.. number, 0) + 1
 
   ___ find  value
     """

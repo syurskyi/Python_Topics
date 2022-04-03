@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ __
 _______ __
 ____ u__.r.. _______ u..
@@ -28,7 +28,7 @@ ___ get_min_max_amount_of_commits(commit_log: s.. = commits,
     """
 
 
-    month_changes = Counter()
+    month_changes = C..()
 
 
     w__ o.. commit_log _ __ f:

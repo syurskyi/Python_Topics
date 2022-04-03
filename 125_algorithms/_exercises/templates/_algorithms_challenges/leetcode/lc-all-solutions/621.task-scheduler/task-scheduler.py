@@ -11,7 +11,7 @@ c_ Solution(o..
     """
     n += 1
     ans = 0
-    d = c...Counter(tasks)
+    d = c...C..(tasks)
     heap = [-c ___ c __ d.v..
     heapq.heapify(heap)
     w.... heap:
@@ -36,7 +36,7 @@ c_ Solution(o..
   # and it won't cause any conflicts with requirement since even most frequent can be settle
   # finally, return max(# of task, total counted number)
   ___ leastInterval  tasks, n
-    d = c...Counter(tasks)
+    d = c...C..(tasks)
     counts = d.v..
     longest = m..(counts)
     ans = (longest - 1) * (n + 1)

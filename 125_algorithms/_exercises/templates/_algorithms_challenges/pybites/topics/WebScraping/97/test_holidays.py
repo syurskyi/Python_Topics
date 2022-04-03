@@ -19,4 +19,4 @@ holidays = get_us_bank_holidays()
     #("12", ["Christmas Day"]),
 ])
 ___ test_get_us_bank_holidays(month, holiday
-    ... holidays.get(month) __ holiday
+    ... holidays.g.. month) __ holiday

@@ -14,4 +14,4 @@ ___ calc_median_from_dict(d: d..) __ f__:
     __ length % 2 __ 0 o. length __ 1:
         r.. median(values_sorted)
     ____:
-        r.. values_sorted.get(mid)
+        r.. values_sorted.g.. mid)

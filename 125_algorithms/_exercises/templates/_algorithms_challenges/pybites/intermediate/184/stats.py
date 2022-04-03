@@ -1,4 +1,4 @@
-____ c.. _______ defaultdict, Counter
+____ c.. _______ defaultdict, C..
 ____ csv _______ DictReader
 _______ __
 ____ u__.r.. _______ u..
@@ -62,7 +62,7 @@ c_ BiteStats:
     $
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
-        top_user = Counter([row["user"] ___ row __ rows __ row["completed"] __ "True"])
+        top_user = C..([row["user"] ___ row __ rows __ row["completed"] __ "True"])
         r.. top_user.most_common()[0][0]
 
 

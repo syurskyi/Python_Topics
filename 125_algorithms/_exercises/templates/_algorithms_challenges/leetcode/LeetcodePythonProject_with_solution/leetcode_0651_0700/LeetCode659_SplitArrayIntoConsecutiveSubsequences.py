@@ -11,17 +11,17 @@ c_ Solution(o..
         """
         freqMap, appendFreqMap    # dict, {}
         ___ num __ nums:
-            freqMap[num] = freqMap.get(num, 0)+1
+            freqMap[num] = freqMap.g.. num, 0)+1
         ___ num __ nums:
             __ freqMap[num] __ 0:
                 _____
-            ____ appendFreqMap.get(num, 0) > 0:
+            ____ appendFreqMap.g.. num, 0) > 0:
                 appendFreqMap[num] -= 1
-                appendFreqMap[num+1] = appendFreqMap.get(num+1, 0)+1
-            ____ freqMap.get(num+1, 0)>0 a.. freqMap.get(num+2, 0)>0:
+                appendFreqMap[num+1] = appendFreqMap.g.. num+1, 0)+1
+            ____ freqMap.g.. num+1, 0)>0 a.. freqMap.g.. num+2, 0)>0:
                 freqMap[num+1] -= 1
                 freqMap[num+2] -= 1
-                appendFreqMap[num+3] = appendFreqMap.get(num+3, 0)+1
+                appendFreqMap[num+3] = appendFreqMap.g.. num+3, 0)+1
             ____:
                 r.. F..
             freqMap[num] -= 1

@@ -8,7 +8,7 @@ c_ Solution(o..
     single = F..
     d    # dict
     ___ c __ s:
-      d[c] = d.get(c, 0) + 1
+      d[c] = d.g.. c, 0) + 1
 
     ___ key __ d:
       __ d[key] >= 2:

@@ -14,7 +14,7 @@ c_ Solution(o..
     maxCount  0
     window  d..([])
     ___ end __ r..(0, l..(s)):
-      d[s[end]]  d.get(s[end], 0) + 1
+      d[s[end]]  d.g.. s[end], 0) + 1
       maxCount  m..(maxCount, d[s[end]])
       __ end - start + 1 - maxCount > k:
         d[s[start]] - 1

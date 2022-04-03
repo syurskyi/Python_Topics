@@ -1,7 +1,7 @@
 _______ __
 #from typing import Counter
 ____ u__.r.. _______ u..
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 # Translation Table:
@@ -59,7 +59,7 @@ ___ return_codon_usage_table(
     whole_table    # list
     whole_table.a..(first_line)
     whole_table.a..(seperator)
-    condon_count = Counter()
+    condon_count = C..()
     ___ seq __ sequences:
         codons = [seq[index:index+3] ___ index __ r..(0, l..(seq.strip, 3)]
         condon_count.update(codons)

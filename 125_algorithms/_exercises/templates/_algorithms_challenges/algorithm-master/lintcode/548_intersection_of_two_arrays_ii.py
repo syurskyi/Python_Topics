@@ -13,10 +13,10 @@ c_ Solution:
         freq    # dict
 
         ___ x __ a:
-            freq[x] = freq.get(x, 0) + 1
+            freq[x] = freq.g.. x, 0) + 1
 
         ___ x __ b:
-            __ n.. freq.get(x
+            __ n.. freq.g.. x
                 _____
 
             freq[x] -= 1

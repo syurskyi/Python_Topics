@@ -9,7 +9,7 @@ c_ Solution:
 
         D    # dict
         ___ c __ s:
-            D[c] = D.get(c, 0) + 1
+            D[c] = D.g.. c, 0) + 1
 
         i = 0
         ___ c __ s:

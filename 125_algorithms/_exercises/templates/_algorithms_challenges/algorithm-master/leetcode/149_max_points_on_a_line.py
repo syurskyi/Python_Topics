@@ -35,7 +35,7 @@ c_ Solution:
                     dy //= gcd
 
                 key = (dx, dy)
-                S[key] = S.get(key, 0) + 1
+                S[key] = S.g.. key, 0) + 1
 
                 __ S[key] > points:
                     points = S[key]

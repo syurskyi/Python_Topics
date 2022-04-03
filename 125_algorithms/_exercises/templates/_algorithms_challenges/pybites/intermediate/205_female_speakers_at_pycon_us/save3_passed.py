@@ -1,12 +1,12 @@
 _______ gender_guesser.detector __ gender
 ____ bs4 _______ BeautifulSoup __ Soup
-_______ requests
+_______ r__
 _______ __
 
 PYCON_HTML = 'https://bites-data.s3.us-east-2.amazonaws.com/pycon2019.html'
 
 ___ _get_soup(html=PYCON_HTML
-    response = requests.get(PYCON_HTML)
+    response = r__.g.. PYCON_HTML)
     r.. Soup(response.content, "html.parser")
 
 

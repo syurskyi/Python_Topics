@@ -24,7 +24,7 @@ Note:
 0 <= A[i] < 40000
 """
 ____ typing _______ List
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
@@ -56,7 +56,7 @@ c_ Solution:
         A[i] < 40000
         largest count 3999 + 40000
         """
-        counter = Counter(A)
+        counter = C..(A)
         q    # list
         ret = 0
         ___ i __ r..(40000 * 2

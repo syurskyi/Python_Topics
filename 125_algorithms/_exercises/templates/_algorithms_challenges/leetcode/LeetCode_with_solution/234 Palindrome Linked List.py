@@ -25,7 +25,7 @@ c_ Solution:
         """
         n = l..(head)
         m = n/2
-        mid = get(head, m)
+        mid = g.. head, m)
         __ n%2 != 0:
             mid = mid.next
 

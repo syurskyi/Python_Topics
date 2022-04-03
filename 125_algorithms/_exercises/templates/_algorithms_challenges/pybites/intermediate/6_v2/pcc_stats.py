@@ -1,4 +1,4 @@
-____ c.. _______ Counter, n..
+____ c.. _______ C.., n..
 _______ __
 _______ u__.r..
 
@@ -66,8 +66,8 @@ ___ diehard_pybites(files_ N..
         files = gen_files()
     
     
-    users = Counter()
-    popular_challenges = Counter()
+    users = C..()
+    popular_challenges = C..()
 
     # your code
 

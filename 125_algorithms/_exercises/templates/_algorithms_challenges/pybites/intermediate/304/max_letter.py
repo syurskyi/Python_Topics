@@ -1,5 +1,5 @@
 ____ typing _______ Tuple
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ s__
 _______ __
 
@@ -27,7 +27,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     words = text.s..
 
     ___ word __ words:
-        counts = Counter()
+        counts = C..()
         ___ letter __ word.c..
             __ letter.isalpha
                 counts[letter] += 1

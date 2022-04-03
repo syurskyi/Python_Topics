@@ -11,6 +11,6 @@ c_ Solution(o..
         cnt += 1
       ____:
         cnt = 1
-      d[o..(p[i])] = m..(d.get(o..(p[i]), 0), cnt)
+      d[o..(p[i])] = m..(d.g.. o..(p[i]), 0), cnt)
 
     r.. s..(d.values

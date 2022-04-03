@@ -1,21 +1,21 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
-_______ requests
+_______ r__
 
 CAR_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/cars.json'
 
 # pre-work: load JSON data into program
 
-w__ requests.Session() __ s:
-    data = s.get(CAR_DATA).json()
+w__ r__.S.. __ s:
+    data = s.g.. ? .j..
 
 
 # your turn:
-___ most_prolific_automaker(year
+___ ? year
     """Given year 'year' return the automaker that released
        the highest number of new car models"""
     models_year = ([models ___ models __ data __ models 'year'  __ year])
-    count = Counter()
+    count = C..()
     ___ models __ models_year:
         count[models 'automaker']] += 1
     r.. count.most_common(1)[0][0]

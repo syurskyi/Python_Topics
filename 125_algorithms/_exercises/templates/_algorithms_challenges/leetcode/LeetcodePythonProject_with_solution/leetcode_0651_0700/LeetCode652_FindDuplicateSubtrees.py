@@ -25,9 +25,9 @@ c_ Solution(o..
         serial = '%s,%s,%s' % (cur.val,\
                 postorder(cur.left, hashmap, res),\
                 postorder(cur.right, hashmap, res))
-        __ hashmap.get(serial, 0) __ 1:
+        __ hashmap.g.. serial, 0) __ 1:
             res.a..(cur)
-        hashmap[serial] = hashmap.get(serial, 0)+1
+        hashmap[serial] = hashmap.g.. serial, 0)+1
         r.. serial
     
     ___ test

@@ -31,10 +31,10 @@ c_ Solution(o..
         r.. T..
     
     ___ dfs  source, target, pairInfo, visited
-        __ target __ pairInfo.get(source, s..:
+        __ target __ pairInfo.g.. source, s..:
             r.. T..
         visited.add(source)
-        ___ nextWord __ pairInfo.get(source, s..:
+        ___ nextWord __ pairInfo.g.. source, s..:
             __ nextWord n.. __ visited a.. dfs(nextWord, target, pairInfo, visited
                 r.. T..
         r.. F..

@@ -1,7 +1,7 @@
 ____ csv _______ DictReader
 _______ __
 ____ u__.r.. _______ u..
-____ c.. _______ Counter
+____ c.. _______ C..
 
 TMP = __.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
@@ -83,13 +83,13 @@ c_ BiteStats:
            (= in most rows)"""
 
 
-        r.. Counter(row 'bite'  ___ row __ rows).most_common(1)[0][0]
+        r.. C..(row 'bite'  ___ row __ rows).most_common(1)[0][0]
 
     $
     ___ top_user_by_bites_completed(self) __ s..:
         """Get the user that completed the most Bites"""
 
-        r.. Counter(row 'user'  ___ row __ filter(l.... row: row 'completed'  __ 'True',rows)).most_common(1)[0][0]
+        r.. C..(row 'user'  ___ row __ filter(l.... row: row 'completed'  __ 'True',rows)).most_common(1)[0][0]
 
 
 

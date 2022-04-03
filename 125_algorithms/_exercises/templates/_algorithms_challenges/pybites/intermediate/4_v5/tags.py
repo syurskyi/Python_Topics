@@ -1,5 +1,5 @@
 _______ __
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ u__.r..
 
 # prep
@@ -17,4 +17,4 @@ ___ get_pybites_top_tags(n=10
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
     words = __.f..(r'<category>(\w+)</category>', content)
-    r.. Counter(words).most_common(10)
+    r.. C..(words).most_common(10)

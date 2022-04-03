@@ -11,7 +11,7 @@ c_ Solution(o..
     buckets = [[] ___ _ __ r..(l..(nums) + 1)]
 
     ___ num __ nums:
-      d[num] = d.get(num, 0) + 1
+      d[num] = d.g.. num, 0) + 1
 
     ___ key __ d:
       res.a..((d[key], key))

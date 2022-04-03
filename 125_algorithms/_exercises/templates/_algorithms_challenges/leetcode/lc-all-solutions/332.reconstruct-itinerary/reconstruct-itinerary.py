@@ -10,7 +10,7 @@ c_ Solution(o..
     graph    # dict
     hashset = s..([])
     ___ ticket __ tickets:
-      graph[ticket[0]] = graph.get(ticket[0], []) + [ticket[1]]
+      graph[ticket[0]] = graph.g.. ticket[0], []) + [ticket[1]]
 
     maxLen = l..(tickets) + 1
 
@@ -20,8 +20,8 @@ c_ Solution(o..
     ___ dfs(p.., graph, maxLen, start
       __ l..(p..) __ maxLen:
         r.. p.. + []
-      ___ k __ r..(0, l..(graph.get(start, []))):
-        nbr = graph.get(start, [])
+      ___ k __ r..(0, l..(graph.g.. start, []))):
+        nbr = graph.g.. start, [])
         top = nbr.popleft()
         p...a..(top)
         ret = dfs(p.., graph, maxLen, top)

@@ -16,7 +16,7 @@ c_ Solution(o..
             arr = s.s..('.')[::-1]
             ___ i __ r..(1, l..(arr)+1
                 s0 = '.'.j..(arr[:i][::-1])
-                hashmap[s0] = hashmap.get(s0, 0)+cnt
+                hashmap[s0] = hashmap.g.. s0, 0)+cnt
         res    # list
         ___ s, freq __ hashmap.i..:
             res.a..(s..(freq) + ' ' + s)

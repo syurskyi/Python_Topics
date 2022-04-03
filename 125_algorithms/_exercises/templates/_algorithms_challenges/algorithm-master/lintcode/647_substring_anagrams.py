@@ -16,7 +16,7 @@ c_ Solution:
 
         F    # dict
         ___ c __ t:
-            F[c] = F.get(c, 0) + 1
+            F[c] = F.g.. c, 0) + 1
 
         n, m, cnt = l..(s), l..(t), l..(F)
         left = right = 0

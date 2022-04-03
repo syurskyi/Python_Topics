@@ -51,7 +51,7 @@ c_ Solution:
             b2i[b[i]].a..(i)
 
         ___ i __ r..(n
-            __ n.. b2i.get(a[i]
+            __ n.. b2i.g.. a[i]
                 # a[i] not in b2i
                 # b2i[a[i]] is empty list
                 r.. []

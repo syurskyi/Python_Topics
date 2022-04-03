@@ -31,7 +31,7 @@ c_ Solution:
                 cur = root
                 ___ c __ w:
                     cur = cur[c]
-                    cur["count"] = cur.get("count", 0) + 1
+                    cur["count"] = cur.g.. "count", 0) + 1
 
             ___ i __ lst:
                 w = words[i]

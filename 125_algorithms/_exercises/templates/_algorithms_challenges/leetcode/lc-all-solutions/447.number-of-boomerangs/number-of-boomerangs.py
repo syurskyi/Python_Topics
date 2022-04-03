@@ -13,7 +13,7 @@ c_ Solution(o..
       ___ p2 __ points:
         __ p1 != p2:
           dist = (p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2
-          d[dist] = d.get(dist, 0) + 1
+          d[dist] = d.g.. dist, 0) + 1
       ___ k __ d:
         ans += d[k] * (d[k] - 1)
     r.. ans

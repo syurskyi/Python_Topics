@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 """
 The DNA of all organsims consists of the letters (bases) A, C, T and G. Every organism has a
 different ratio of these bases, known as the GC content. This information can not only give
@@ -47,7 +47,7 @@ ___ calculate_gc_content_1st_solution(sequence
 
 ___ calculate_gc_content_2nd_solution(sequence
 
-    counts = Counter(sequence.upper
+    counts = C..(sequence.upper
     gc_content = counts 'G'  + counts 'C'
     at_content = counts 'A'  + counts 'T'
     r.. r..((gc_content / (gc_content + at_content)) * 100, 2)

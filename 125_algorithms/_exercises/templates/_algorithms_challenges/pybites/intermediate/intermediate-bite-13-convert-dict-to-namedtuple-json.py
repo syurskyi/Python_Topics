@@ -40,7 +40,7 @@ j = { "name": "PyBites",
 Blog = n..('Blog', 'name founders started tags location site')
 
 ___ dict2nt(dict_
-    b = Blog(dict_.get('name'), dict_.get('founders'), dict_.get('started'), dict_.get('tags'), dict_.get('location'), dict_.get('site'))
+    b = Blog(dict_.g.. 'name'), dict_.g.. 'founders'), dict_.g.. 'started'), dict_.g.. 'tags'), dict_.g.. 'location'), dict_.g.. 'site'))
     r.. b
 
 ___ nt2json(nt

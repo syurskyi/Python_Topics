@@ -6,7 +6,7 @@ Strings consists of lowercase English letters only and the length of both string
 
 The order of output does not matter.
 """
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
@@ -20,8 +20,8 @@ c_ Solution:
         :rtype: List[int]
         """
         ret    # list
-        counter_target = Counter(target)
-        counter_cur = Counter(s[:l..(target)])
+        counter_target = C..(target)
+        counter_cur = C..(s[:l..(target)])
         __ counter_cur __ counter_target:
             ret.a..(0)
 

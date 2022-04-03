@@ -35,8 +35,8 @@ c_ Solution(o..
     ___ dfs  root, sumVal, target, hashmap
         __ n.. root: r.. 0
         sumVal += root.val
-        res = hashmap.get(sumVal-target, 0)
-        hashmap[sumVal] = hashmap.get(sumVal, 0)+1
+        res = hashmap.g.. sumVal-target, 0)
+        hashmap[sumVal] = hashmap.g.. sumVal, 0)+1
         res += dfs(root.left, sumVal, target, hashmap)
         res += dfs(root.right, sumVal, target, hashmap)
         hashmap[sumVal] = hashmap[sumVal]-1

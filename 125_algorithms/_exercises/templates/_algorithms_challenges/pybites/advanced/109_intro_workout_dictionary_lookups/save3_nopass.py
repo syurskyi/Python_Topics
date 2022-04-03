@@ -30,7 +30,7 @@ ___ get_workout_motd(day
        a 'message of the day'
     """
     day_title = day.t..
-    x = WORKOUT_SCHEDULE.get(day_title)
+    x = WORKOUT_SCHEDULE.g.. day_title)
     __ x __ ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
         r.. TRAIN
     __ x __ ("Saturday", "Sunday"

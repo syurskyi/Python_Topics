@@ -28,7 +28,7 @@ c_ JsObject:
             _local[key] = value
 
     ___ __getitem__  item
-        r.. _local.get(item)
+        r.. _local.g.. item)
 
     ___ __setitem__  key, value
         __ key n.. __ RESERVED_WORDS:

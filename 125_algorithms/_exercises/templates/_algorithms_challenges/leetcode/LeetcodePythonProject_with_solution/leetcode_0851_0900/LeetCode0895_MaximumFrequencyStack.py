@@ -14,7 +14,7 @@ c_ FreqStack(o..
         :rtype: None
         """
         size += 1
-        hashmap[x] = hashmap.get(x, 0) + 1
+        hashmap[x] = hashmap.g.. x, 0) + 1
         heapq.heappush(heap, (-hashmap[x], -size, x))
 
     ___ pop

@@ -34,7 +34,7 @@ c_ HashHeapq:
         r.. heap[0]
 
     ___ is_empty
-        w.... heap a.. deleted.get(heap[0]
+        w.... heap a.. deleted.g.. heap[0]
             val = heapq.heappop(heap)
             deleted[val] -= 1
 

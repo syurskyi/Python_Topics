@@ -1,11 +1,11 @@
-_______ requests, c..
+_______ r__, c..
 
 STOCK_DATA = 'https://bites-data.s3.us-east-2.amazonaws.com/stocks.json'
 
 # pre-work: load JSON data into program
 
-w__ requests.Session() __ s:
-    data = s.get(STOCK_DATA).json()
+w__ r__.S.. __ s:
+    data = s.g.. STOCK_DATA).j..
 
 
 # your turn:
@@ -53,7 +53,7 @@ ___ get_stock_symbol_with_highest_cap
 ___ get_sectors_with_max_and_min_stocks
     """Return a tuple of the sectors with most and least stocks,
        discard n/a"""
-    counter = c...Counter([stock["sector"] ___ stock __ data __ stock["sector"] != "n/a"])
+    counter = c...C..([stock["sector"] ___ stock __ data __ stock["sector"] != "n/a"])
     r.. (counter.most_common()[0][0], counter.most_common()[-1][0])
 
 

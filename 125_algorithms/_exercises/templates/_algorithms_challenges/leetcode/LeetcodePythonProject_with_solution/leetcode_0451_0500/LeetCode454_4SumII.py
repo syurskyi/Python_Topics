@@ -15,11 +15,11 @@ c_ Solution(o..
         hashmap    # dict
         ___ a __ A:
             ___ b __ B:
-                hashmap[a+b] = hashmap.get(a+b, 0)+1
+                hashmap[a+b] = hashmap.g.. a+b, 0)+1
         res = 0
         ___ c __ C:
             ___ d __ D:
-                res += hashmap.get(-c-d, 0)
+                res += hashmap.g.. -c-d, 0)
         r.. res
     
     ___ test

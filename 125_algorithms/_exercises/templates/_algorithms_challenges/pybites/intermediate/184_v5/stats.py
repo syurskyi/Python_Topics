@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ csv _______ DictReader
 ____ __ _______ p..
 ____ u__.r.. _______ u..
@@ -18,10 +18,10 @@ c_ BiteStats:
         rows = _load_data(data)
 
     ___ _count_attribute  attrib, completed=F..
-        r.. Counter(x[attrib] ___ x __ rows __ n.. completed o. (completed a.. x 'completed'  __ 'True'))
+        r.. C..(x[attrib] ___ x __ rows __ n.. completed o. (completed a.. x 'completed'  __ 'True'))
 
     ___ _count_clicks  attrib, completed=F..
-        counter = Counter()
+        counter = C..()
         ___ x __ rows:
             __ n.. completed o. (completed a.. x 'completed'  __ 'True'
                 counter[x[attrib]] += 1

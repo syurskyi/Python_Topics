@@ -2,10 +2,10 @@
 # Score: 30
 
 
-____ c.. _______ Counter, OrderedDict
+____ c.. _______ C.., OrderedDict
 
 
-c_ OrderedCounter(Counter, OrderedDict
+c_ OrderedCounter(C.., OrderedDict
     p..
 
 

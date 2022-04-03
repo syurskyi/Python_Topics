@@ -8,8 +8,8 @@ c_ Solution(o..
     ___ minTransfers  transactions
         bal    # dict
         ___ tran __ transactions:
-            bal[tran[0]] = bal.get(tran[0], 0)+tran[2]
-            bal[tran[1]] = bal.get(tran[1], 0)-tran[2]
+            bal[tran[0]] = bal.g.. tran[0], 0)+tran[2]
+            bal[tran[1]] = bal.g.. tran[1], 0)-tran[2]
         debt    # list
         ___ count __ bal.v..
             debt.a..(count)

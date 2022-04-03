@@ -6,14 +6,14 @@ c_ Solution:
         d    # dict
         td    # dict
         ___ c __ t:
-            td[c] = td.get(c, 0) + 1
+            td[c] = td.g.. c, 0) + 1
         left = 0
         right = 0
         lefts    # list
         rights    # list
         ___ i, c __ e..(s
             __ c __ td:
-                d[c] = d.get(c, 0) + 1
+                d[c] = d.g.. c, 0) + 1
                 __ contains(d, td  # Contains all characters
                     right = i
                     # Move left pointers

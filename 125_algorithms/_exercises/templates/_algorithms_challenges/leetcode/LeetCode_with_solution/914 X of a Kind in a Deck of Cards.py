@@ -40,7 +40,7 @@ Note:
 0 <= deck[i] < 10000
 """
 ____ typing _______ List
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
@@ -48,7 +48,7 @@ c_ Solution:
         """
         gcd of all > 2
         """
-        counter = Counter(deck)
+        counter = C..(deck)
         gcd = N..
         ___ v __ counter.v..
             __ gcd __ N..

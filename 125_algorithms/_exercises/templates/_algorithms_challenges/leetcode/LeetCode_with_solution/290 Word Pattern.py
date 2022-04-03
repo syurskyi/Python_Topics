@@ -47,7 +47,7 @@ c_ OneToOneMap(o..
         m[b] = a
 
     ___ get  a
-        r.. m.get(a)
+        r.. m.g.. a)
 
 
 c_ SolutionError(o..
@@ -65,8 +65,8 @@ c_ SolutionError(o..
             r.. F..
 
         ___ i __ x..(l..(pattern)):
-            a = m.get(pattern[i])
-            b = m.get(lst[i])
+            a = m.g.. pattern[i])
+            b = m.g.. lst[i])
             __ a __ N.. a.. b __ N..
                 m.s..(pattern[i], lst[i])
             ____ a __ N.. a.. b __ n.. N..

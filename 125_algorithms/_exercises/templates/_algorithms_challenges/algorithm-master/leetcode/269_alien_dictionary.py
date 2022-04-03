@@ -51,7 +51,7 @@ c_ Solution:
                     edges[cur[j]] = s..()
                 __ nxt[j] n.. __ edges[cur[j]]:
                     edges[cur[j]].add(nxt[j])
-                    indeg[nxt[j]] = indeg.get(nxt[j], 0) + 1
+                    indeg[nxt[j]] = indeg.g.. nxt[j], 0) + 1
                 _____
 
         queue = [c ___ c, deg __ indeg.i.. __ deg __ 0]

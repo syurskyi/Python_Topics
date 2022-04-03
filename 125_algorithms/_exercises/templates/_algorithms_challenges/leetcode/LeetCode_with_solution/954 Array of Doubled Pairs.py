@@ -33,13 +33,13 @@ A.length is even
 -100000 <= A[i] <= 100000
 """
 ____ typing _______ List
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution:
     ___ canReorderDoubled  A: List[i..]) __ b..:
         A.s..(key=abs)
-        counter = Counter(A)
+        counter = C..(A)
         ___ a __ A:
             __ counter[a] __ 0:
                 _____
@@ -56,7 +56,7 @@ c_ Solution:
         sort + counter to form the doubled pairs
         """
         A.s..()
-        counter = Counter(A)
+        counter = C..(A)
         ___ a __ A:
             __ counter[a] __ 0:
                 _____

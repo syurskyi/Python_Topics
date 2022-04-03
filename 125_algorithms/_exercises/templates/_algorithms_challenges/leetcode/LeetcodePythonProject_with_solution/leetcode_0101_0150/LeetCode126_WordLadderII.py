@@ -36,7 +36,7 @@ c_ Solution(o..
             res.a..(l..(curr))
         ____:
             ___ nextWord __ getNextWords(word, wordSet
-                __ nextWord __ distance a.. distance[nextWord]+1 __ distance.get(word, 0
+                __ nextWord __ distance a.. distance[nextWord]+1 __ distance.g.. word, 0
                     dfs(beginWord, nextWord, distance, wordSet, res, curr)
         curr.pop(0)
     

@@ -40,7 +40,7 @@ c_ Solution:
         ___ word __ s..(words
             cur = root
             ___ c __ word[::-1]:
-                nxt = cur.get(c, {})
+                nxt = cur.g.. c, {})
                 cur[c] = nxt
                 cur = nxt
 

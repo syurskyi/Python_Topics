@@ -13,7 +13,7 @@ Keep calm and code in Python! :)
 """
 
 _______ __
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ u__.r..
 _______ __
 
@@ -36,7 +36,7 @@ ___ get_pybites_top_tags(n=10
     """use Counter to get the top 10 PyBites tags from the feed
        data already loaded into the content variable"""
     m.. = __.f..(r'<category>([a-z]+)<\/category>', content)
-    c = Counter(m..)
+    c = C..(m..)
     r..(c.most_common(10))
 
 get_pybites_top_tags()

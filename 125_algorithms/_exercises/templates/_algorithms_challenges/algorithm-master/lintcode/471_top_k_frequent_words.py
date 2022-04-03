@@ -10,7 +10,7 @@ c_ Solution:
 
         F    # dict
         ___ word __ words:
-            F[word] = F.get(word, 0) + 1
+            F[word] = F.g.. word, 0) + 1
 
         W = [(freq, word) ___ word, freq __ F.i..]
         W.s..(key=l.... item: (-item[0], item[1]))

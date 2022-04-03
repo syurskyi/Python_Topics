@@ -1,4 +1,4 @@
-_______ requests
+_______ r__
 
 YOUR_KEY = '123abc'
 DEFAULT_LIST = 'hardcover-nonfiction'
@@ -33,16 +33,16 @@ ___ get_best_seller_titles(url=URL_NON_FICTION
 
     books    # list
     ___
-        response = requests.get(url,params=params)
+        response = r__.g.. url,params=params)
         response.raise_for_status()
-    ______ requests.HTTPError __ e:
+    ______ r__.HTTPError __ e:
         print('HTTP Error')
         print(e)
     ______ E.. __ e:
         print('Other exception')
         print(e)
     ____:
-        results = response.json()
+        results = response.j..
 
 
         ___ book __ results 'results'  'books' :

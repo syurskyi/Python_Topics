@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ canConstruct  ransomNote, magazine
         hashmap    # dict
         ___ c __ magazine:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         ___ c __ ransomNote:
             __ c n.. __ hashmap:
                 r.. F..

@@ -30,8 +30,8 @@ c_ Solution(o..
         hashmap1    # dict
         hashmap2    # dict
         ___ f, b __ z..(fronts, backs
-            hashmap1[f] = hashmap1.get(f, 0)+1
-            hashmap2[b] = hashmap2.get(b, 0)+1
+            hashmap1[f] = hashmap1.g.. f, 0)+1
+            hashmap2[b] = hashmap2.g.. b, 0)+1
         res = f__('inf')
         helper(fronts, backs, 0, hashmap1, hashmap2)
         r.. res __ res != f__('inf') ____ 0
@@ -49,8 +49,8 @@ c_ Solution(o..
     ___ flip  fronts, backs, i, hashmap1, hashmap2
         f, b = fronts[i], backs[i]
         fronts[i], backs[i] = backs[i], fronts[i]
-        hashmap1[b] = hashmap1.get(b, 0)+1
-        hashmap2[f] = hashmap2.get(f, 0)+1
+        hashmap1[b] = hashmap1.g.. b, 0)+1
+        hashmap2[f] = hashmap2.g.. f, 0)+1
         hashmap1[f] -= 1
         __ hashmap1[f] __ 0:
             del hashmap1[f]

@@ -11,6 +11,6 @@ c_ Solution(o..
       coverage = 0
       ___ brick __ w[:-1]:
         coverage += brick
-        d[coverage] = d.get(coverage, 0) + 1
-        count = m..(count, d.get(coverage, 0))
+        d[coverage] = d.g.. coverage, 0) + 1
+        count = m..(count, d.g.. coverage, 0))
     r.. ans - count

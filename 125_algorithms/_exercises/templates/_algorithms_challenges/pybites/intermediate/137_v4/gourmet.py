@@ -4,7 +4,7 @@
 Pairs wines and cheeses by similarity of wine name and cheese name.
 """
 
-____ c.. _______ Counter
+____ c.. _______ C..
 ____ i.. _______ product
 
 CHEESES = [
@@ -108,7 +108,7 @@ ___ similarity(s1, s2
             common.a..(c)
             s2.remove(c)
 
-    vals = Counter(common).v..
+    vals = C..(common).v..
     r.. s..(vals) / (1 + pow(dlen, 2))
 
 

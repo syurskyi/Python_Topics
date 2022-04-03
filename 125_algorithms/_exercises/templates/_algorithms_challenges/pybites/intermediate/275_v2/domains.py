@@ -1,7 +1,7 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 _______ __
 ____ bs4 _______ BeautifulSoup
-_______ requests
+_______ r__
 
 COMMON_DOMAINS = ("https://bites-data.s3.us-east-2.amazonaws.com/"
                   "common-domains.html")
@@ -12,7 +12,7 @@ ___ get_common_domains(url=COMMON_DOMAINS
     """Scrape the url return the 100 most common domain names"""
 
     ___
-        response = requests.get(url)
+        response = r__.g.. url)
         response.raise_for_status()
     ______:
         print('error in getting data')
@@ -40,7 +40,7 @@ ___ get_most_common_domains(emails, common_domains_ N..
         common_domains = get_common_domains()
         
     # your code
-    c =  Counter(domain ___ domain __ map(get_domain,emails) __ domain n.. __ common_domains).most_common()
+    c =  C..(domain ___ domain __ map(get_domain,emails) __ domain n.. __ common_domains).most_common()
     r.. c
 
 

@@ -1,4 +1,4 @@
-____ c.. _______ Counter
+____ c.. _______ C..
 
 
 c_ Solution(o..
@@ -7,11 +7,11 @@ c_ Solution(o..
     :type s: str
     :rtype: str
     """
-    d = Counter(s)
+    d = C..(s)
     buf    # dict
     ___ k, v __ d.i..:
-      buf[v] = buf.get(v, "") + k * v
+      buf[v] = buf.g.. v, "") + k * v
     ans = ""
     ___ i __ r..(r..(0, l..(s))):
-      ans += buf.get(i, "")
+      ans += buf.g.. i, "")
     r.. ans

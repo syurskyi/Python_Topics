@@ -6,7 +6,7 @@ _______ c..
 
 
 number_of_shoes  i..(input
-sizes_in_stock  c...Counter m..(i.., input().s..()))
+sizes_in_stock  c...C.. m..(i.., input().s..()))
 
 total_revenue  0
 

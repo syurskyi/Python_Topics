@@ -8,7 +8,7 @@ c_ Solution(o..
     ___ longestPalindrome  s
         hashmap    # dict
         ___ c __ s:
-            hashmap[c] = hashmap.get(c, 0)+1
+            hashmap[c] = hashmap.g.. c, 0)+1
         singleNum = F..
         result = 0
         ___ count __ hashmap.v..

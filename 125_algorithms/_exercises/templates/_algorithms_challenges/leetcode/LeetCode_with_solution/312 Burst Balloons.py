@@ -36,7 +36,7 @@ c_ Solution(o..
         """
         n = l..(A)
 
-        ___ get(i
+        ___ g.. i
             __ i < 0 o. i >= n: r.. 1
             r.. A[i]
 
@@ -44,7 +44,7 @@ c_ Solution(o..
         ___ i __ x..(n+1, -1, -1
             ___ j __ x..(i+1, n+1
                 F[i][j] = m..(
-                    F[i][k]+get(i-1)*get(k)*get(j)+F[k+1][j]
+                    F[i][k]+g.. i-1)*g.. k)*g.. j)+F[k+1][j]
                     ___ k __ x..(i, j)
                 )
 

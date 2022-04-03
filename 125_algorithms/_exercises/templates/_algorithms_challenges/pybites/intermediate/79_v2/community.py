@@ -1,7 +1,7 @@
 _______ csv
 _______ pandas __ pd
 ____ io _______ StringIO
-_______ requests
+_______ r__
 
 CSV_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/community.csv'
 
@@ -11,7 +11,7 @@ ___ get_csv
        decoded content"""
 
 
-    response =requests.get(CSV_URL)
+    response =r__.g.. CSV_URL)
 
 
     r.. response.text

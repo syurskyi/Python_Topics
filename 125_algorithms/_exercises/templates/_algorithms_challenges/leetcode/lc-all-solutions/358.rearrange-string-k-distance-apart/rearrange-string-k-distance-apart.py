@@ -7,7 +7,7 @@ c_ Solution(o..
     """
     __ k < 2:
       r.. s
-    d = c...Counter(s)
+    d = c...C..(s)
     heap = [(-d[key], key) ___ key __ d]
     heapq.heapify(heap)
     ans    # list

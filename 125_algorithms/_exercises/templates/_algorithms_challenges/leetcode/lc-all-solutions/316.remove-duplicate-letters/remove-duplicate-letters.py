@@ -7,8 +7,8 @@ c_ Solution(o..
     d    # dict
     count    # dict
     ___ c __ s:
-      d[c] = d.get(c, 0) + 1
-      count[c] = count.get(c, 0) + 1
+      d[c] = d.g.. c, 0) + 1
+      count[c] = count.g.. c, 0) + 1
     stack    # list
     cache = s..()
     ___ c __ s:

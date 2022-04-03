@@ -18,7 +18,7 @@ c_ Solution(o..
             sumVal += num
             __ sumVal-k __ hashmap:
                 res += hashmap[sumVal-k]
-            hashmap[sumVal] = hashmap.get(sumVal, 0)+1
+            hashmap[sumVal] = hashmap.g.. sumVal, 0)+1
         r.. res
     
     ___ test

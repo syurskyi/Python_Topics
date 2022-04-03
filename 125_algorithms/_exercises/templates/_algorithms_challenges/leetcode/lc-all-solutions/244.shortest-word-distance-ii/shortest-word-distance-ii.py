@@ -6,7 +6,7 @@ c_ WordDistance(o..
     """
     d    # dict
     ___ i __ r..(0, l..(words)):
-      d[words[i]] = d.get(words[i], []) + [i]
+      d[words[i]] = d.g.. words[i], []) + [i]
 
   ___ shortest  word1, word2
     """

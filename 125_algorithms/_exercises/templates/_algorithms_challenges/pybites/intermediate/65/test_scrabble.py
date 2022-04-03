@@ -10,7 +10,7 @@ LETTER_SCORES = {letter: score ___ score, letters __ scrabble_scores
 
 ___ calc_word_value(word
     """Calc a given word value based on Scrabble LETTER_SCORES mapping"""
-    r.. s..(LETTER_SCORES.get(char.u.., 0) ___ char __ word)
+    r.. s..(LETTER_SCORES.g.. char.u.., 0) ___ char __ word)
 
 
 ___ max_word_value(words

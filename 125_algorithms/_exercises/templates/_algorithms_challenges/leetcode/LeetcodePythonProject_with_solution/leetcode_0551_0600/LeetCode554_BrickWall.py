@@ -15,7 +15,7 @@ c_ Solution(o..
             sumVal = 0
             ___ val __ vals:
                 sumVal += val
-                hashmap[sumVal] = hashmap.get(sumVal, 0)+1
+                hashmap[sumVal] = hashmap.g.. sumVal, 0)+1
         minRes = l..(wall)
         ___ val, count __ hashmap.i..:
             __ 1 <= val < s..(wall[0] # not the start and end
