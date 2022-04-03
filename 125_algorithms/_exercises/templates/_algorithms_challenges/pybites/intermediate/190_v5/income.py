@@ -1,6 +1,6 @@
 ____ pathlib _______ Path
 ____ c.. _______ defaultdict
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ ___.e__.E__ __ ET
 
 # import the countries xml file
@@ -8,7 +8,7 @@ tmp = Path('/tmp')
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists
-    urlretrieve('https://bit.ly/2IzGKav', countries)
+    u..('https://bit.ly/2IzGKav', countries)
 
 
 ___ get_income_distribution(___=countries

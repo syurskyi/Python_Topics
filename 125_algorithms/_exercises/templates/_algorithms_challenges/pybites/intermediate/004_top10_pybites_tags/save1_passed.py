@@ -1,11 +1,11 @@
 _______ __
 ____ c.. _______ Counter
-_______ urllib.request
+_______ u__.r..
 _______ __
 
 # prep
 tempfile = __.p...j..('/tmp', 'feed')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )

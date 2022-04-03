@@ -1,7 +1,7 @@
 _______ csv
 ____ c.. _______ defaultdict, n..
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = __.getenv("TMP", "/tmp")
@@ -9,7 +9,7 @@ TMP = __.getenv("TMP", "/tmp")
 fname = 'movie_metadata.csv'
 remote = __.p...j..(BASE_URL, fname)
 local = __.p...j..(TMP, fname)
-urlretrieve(remote, local)
+u..(remote, local)
 
 MOVIE_DATA = local
 MIN_MOVIES = 4

@@ -2,7 +2,7 @@ _______ __
 ____ d__ _______ date, t..
 ____ pathlib _______ Path
 ____ typing _______ Dict, List, OrderedDict
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ json
 ____ c.. _______ OrderedDict
 
@@ -11,7 +11,7 @@ TMP = Path(__.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
-    urlretrieve(URL, RATES_FILE)
+    u..(URL, RATES_FILE)
 
 
 ___ get_all_days(start_date: date, end_date: date) __ List[date]:

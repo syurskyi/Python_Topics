@@ -1,7 +1,7 @@
 ____ c.. _______ n..
 _______ __
 _______ pickle
-_______ urllib.request
+_______ u__.r..
 _______ __
 
 # prework
@@ -10,7 +10,7 @@ pkl_file = 'pycon_videos.pkl'
 data = f'https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
 tmp = __.getenv("TMP", "/tmp")
 pycon_videos = __.p...j..(tmp, pkl_file)
-urllib.request.urlretrieve(data, pycon_videos)
+u__.r...u..(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
 Video = n..('Video', 'id title duration metrics')

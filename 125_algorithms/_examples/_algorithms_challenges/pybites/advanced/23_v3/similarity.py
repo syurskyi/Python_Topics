@@ -2,7 +2,7 @@ import os
 import re
 from difflib import SequenceMatcher
 from itertools import permutations
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 # prep
 TAG_HTML = re.compile(r'<category>([^<]+)</category>')
@@ -11,7 +11,7 @@ MIN_TAG_LEN = 10
 IDENTICAL = 1.0
 SIMILAR = 0.95
 
-urlretrieve(
+u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/tags.xml',
     TEMPFILE
 )

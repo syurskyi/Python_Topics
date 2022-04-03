@@ -1,5 +1,5 @@
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import os
 
 import pytest
@@ -15,7 +15,7 @@ DATA = 'omdb_data'
 
 DATA_LOCAL = TMP / DATA
 if not Path(DATA_LOCAL).exists():
-    urlretrieve(S3 + DATA, DATA_LOCAL)
+    u..(S3 + DATA, DATA_LOCAL)
 
 
 @pytest.fixture(scope="module")

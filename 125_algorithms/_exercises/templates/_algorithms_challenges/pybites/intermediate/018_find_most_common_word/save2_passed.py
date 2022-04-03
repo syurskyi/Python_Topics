@@ -1,5 +1,5 @@
 _______ __
-_______ urllib.request
+_______ u__.r..
 _______ __
 ____ c.. _______ Counter
 
@@ -7,11 +7,11 @@ ____ c.. _______ Counter
 tmp = __.getenv("TMP", "/tmp")
 stopwords_file = __.p...j..(tmp, 'stopwords')
 harry_text = __.p...j..(tmp, 'harry')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file
 )
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/harry.txt',
     harry_text
 )

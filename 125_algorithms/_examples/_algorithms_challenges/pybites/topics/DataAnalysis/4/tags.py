@@ -1,12 +1,12 @@
 import os
 from collections import Counter
-import urllib.request
+import u__.r..
 import xml.etree.ElementTree as ET
 
 # prep
 tmp = os.getenv("TMP", "/tmp")
 tempfile = os.path.join(tmp, 'feed')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )

@@ -1,12 +1,12 @@
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 import pandas as pd
 
 TMP = os.getenv("TMP", "/tmp")
 EXCEL = os.path.join(TMP, 'order_data.xlsx')
 if not os.path.isfile(EXCEL):
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/order_data.xlsx',
         EXCEL
     )

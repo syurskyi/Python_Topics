@@ -2,7 +2,7 @@ _______ glob
 _______ json
 _______ __
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/omdb/'
 MOVIES = ('bladerunner2049 fightclub glengary '
@@ -14,7 +14,7 @@ ___ movie __ MOVIES:
     fname = f'{movie}.json'
     remote = __.p...j..(BASE_URL, fname)
     local = __.p...j..(TMP, fname)
-    urlretrieve(remote, local)
+    u..(remote, local)
 
 files = glob.glob(__.p...j..(TMP, '*json'))
 

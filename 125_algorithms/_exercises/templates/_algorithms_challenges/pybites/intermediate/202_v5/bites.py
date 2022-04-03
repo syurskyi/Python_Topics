@@ -1,12 +1,12 @@
 _______ csv
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 tmp = Path('/tmp')
 stats = tmp / 'bites.csv'
 
 __ n.. stats.exists
-    urlretrieve('https://bit.ly/2MQyqXQ', stats)
+    u..('https://bit.ly/2MQyqXQ', stats)
 
 
 ___ get_most_complex_bites(N=10, stats=stats

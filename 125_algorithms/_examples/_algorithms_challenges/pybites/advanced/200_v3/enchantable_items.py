@@ -2,7 +2,7 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import List
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 from bs4 import BeautifulSoup as Soup
 
@@ -109,7 +109,7 @@ def get_soup(file=HTML_FILE):
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
     if isinstance(file, Path):
         if not HTML_FILE.is_file():
-            urlretrieve(URL, HTML_FILE)
+            u..(URL, HTML_FILE)
 
         with file.open() as html_source:
             soup = Soup(html_source, "html.parser")

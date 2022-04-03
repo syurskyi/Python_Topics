@@ -2,7 +2,7 @@ import os
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Dict, List, OrderedDict
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import json
 from collections import OrderedDict
 
@@ -11,7 +11,7 @@ TMP = Path(os.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
 if not RATES_FILE.exists():
-    urlretrieve(URL, RATES_FILE)
+    u..(URL, RATES_FILE)
 
 
 def get_all_days(start_date: date, end_date: date) -> List[date]:

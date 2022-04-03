@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from collections import defaultdict
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from bs4 import BeautifulSoup
 
 # import the countries xml file
@@ -9,7 +9,7 @@ tmp = Path(os.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
 if not countries.exists():
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/countries.xml',
         countries
     )

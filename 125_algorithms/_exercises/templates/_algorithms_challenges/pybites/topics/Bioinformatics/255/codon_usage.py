@@ -1,6 +1,6 @@
 _______ __
 #from typing import Counter
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ c.. _______ Counter
 
 
@@ -30,7 +30,7 @@ ___ _preload_sequences(url=URL
     """
     filename = __.p...j..(__.getenv("TMP", "/tmp"), "NC_009641.txt")
     __ n.. __.p...isfile(filename
-        urlretrieve(url, filename)
+        u..(url, filename)
     w__ o.. filename, "r") __ f:
         r.. f.r..
 

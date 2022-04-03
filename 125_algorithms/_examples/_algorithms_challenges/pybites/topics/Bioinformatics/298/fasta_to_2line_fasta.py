@@ -8,7 +8,7 @@ from Bio import SeqIO
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
 FASTA_FILE = os.path.join(os.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 if not os.path.isfile(FASTA_FILE):
-    urllib.request.urlretrieve(URL, FASTA_FILE)
+    u__.r...u..(URL, FASTA_FILE)
 
 def fasta_to_2line_fasta(fasta_file: str, fasta_2line_file: str) -> int:
     """

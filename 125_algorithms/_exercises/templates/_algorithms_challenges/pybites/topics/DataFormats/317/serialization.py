@@ -3,7 +3,7 @@ _______ __
 ____ pathlib _______ Path
 _______ pickle
 ____ typing _______ Sequence, NamedTuple
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ time
 
 
@@ -23,7 +23,7 @@ ___ download_pickle_file
     """download a pickle file we created with a
        list of namedtuples
     """
-    urlretrieve _*{S3}/bite317.pkl', PICKLE_INFILE)
+    u.. _*{S3}/bite317.pkl', PICKLE_INFILE)
 
 
 ___ deserialize(pkl_file: Path = PICKLE_INFILE) __ Sequence[NamedTuple]:

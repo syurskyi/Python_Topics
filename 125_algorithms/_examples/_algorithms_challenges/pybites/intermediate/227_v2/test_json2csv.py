@@ -1,6 +1,6 @@
 import csv
 from json.decoder import JSONDecodeError
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 import pytest
 
@@ -43,7 +43,7 @@ def test_json2csv(file_no, expected, exception, capfd):
     mount_json = TMP / f'mount{file_no}.json'
     mount_csv = TMP / f'mount{file_no}.csv'
 
-    urlretrieve(mount_data.format(file_no), mount_json)
+    u..(mount_data.format(file_no), mount_json)
 
     if exception:
         with pytest.raises(JSONDecodeError) as exc:

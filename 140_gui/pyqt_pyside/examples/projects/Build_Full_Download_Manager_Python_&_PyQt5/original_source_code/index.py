@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import *
 import sys
 
 from PyQt5.uic import loadUiType
-import urllib.request
+import u__.r..
 #import pafy
 #import humanize
 
@@ -82,7 +82,7 @@ class MainApp(QMainWindow, ui):
         else:
 
             try:
-                urllib.request.urlretrieve(download_url, save_location , self.handel_progress)
+                u__.r...u..(download_url, save_location , self.handel_progress)
 
             except Exception:
                 QMessageBox.warning(self, "download Error", "Provide a valid URL or save location")

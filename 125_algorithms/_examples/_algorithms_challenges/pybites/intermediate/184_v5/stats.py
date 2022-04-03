@@ -1,11 +1,11 @@
 from collections import Counter
 from csv import DictReader
 from os import path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 DATA = path.join('/tmp', 'bite_output_log.txt')
 if not path.isfile(DATA):
-    urlretrieve('https://bit.ly/2HoFZBd', DATA)
+    u..('https://bit.ly/2HoFZBd', DATA)
 
 
 class BiteStats:

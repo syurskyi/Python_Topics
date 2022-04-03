@@ -2,14 +2,14 @@ import os
 from datetime import date, timedelta, strptime
 from pathlib import Path
 from typing import Dict, List
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(os.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
 if not RATES_FILE.exists():
-    urlretrieve(URL, RATES_FILE)
+    u..(URL, RATES_FILE)
 
 
 def get_all_days(start_date: date, end_date: date) -> List[date]:

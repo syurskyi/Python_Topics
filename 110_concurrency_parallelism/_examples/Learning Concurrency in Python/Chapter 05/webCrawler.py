@@ -1,4 +1,4 @@
-from urllib.request import Request, urlopen, urljoin, URLError
+from u__.r.. import Request, urlopen, urljoin, URLError
 from urllib.parse import urlparse
 import time
 import threading

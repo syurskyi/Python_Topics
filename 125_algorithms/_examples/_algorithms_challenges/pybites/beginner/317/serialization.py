@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 import pickle
 from typing import Sequence, NamedTuple
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 TMP = Path(os.getenv("TMP", "/tmp"))
 S3 = "https://bites-data.s3.us-east-2.amazonaws.com"
@@ -21,7 +21,7 @@ def download_pickle_file():
     """download a pickle file we created with a
        list of namedtuples
     """
-    urlretrieve(f'{S3}/bite317.pkl', PICKLE_INFILE)
+    u..(f'{S3}/bite317.pkl', PICKLE_INFILE)
 
 
 def deserialize(pkl_file: Path = PICKLE_INFILE) -> Sequence[NamedTuple]:

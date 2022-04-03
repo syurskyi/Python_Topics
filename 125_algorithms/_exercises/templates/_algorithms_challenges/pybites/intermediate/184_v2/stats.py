@@ -1,6 +1,6 @@
 ____ csv _______ DictReader
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ c.. _______ Counter
 
 TMP = __.getenv("TMP", "/tmp")
@@ -8,7 +8,7 @@ LOGS = 'bite_output_log.txt'
 DATA = __.p...j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
 __ n.. __.p...isfile(DATA
-    urlretrieve _*{S3}/{LOGS}', DATA)
+    u.. _*{S3}/{LOGS}', DATA)
 
 
 c_ BiteStats:

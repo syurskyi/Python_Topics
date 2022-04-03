@@ -1,7 +1,7 @@
 _______ __
 ____ pathlib _______ Path
 ____ ipaddress _______ IPv4Network
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 _______ p__
 
@@ -17,7 +17,7 @@ IP = IPv4Network('192.0.2.8/29')
 ?p__.f..(scope='module')
 ___ json_file
     """Import data into tmp folder"""
-    urlretrieve(URL, PATH)
+    u..(URL, PATH)
     r.. PATH
 
 

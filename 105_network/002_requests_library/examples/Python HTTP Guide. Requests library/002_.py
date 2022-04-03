@@ -1,4 +1,4 @@
-# Кстати, urllib.request это надстройка над "низкоуровневой" библиотекой httplib о которой я писал выше.
+# Кстати, u__.r.. это надстройка над "низкоуровневой" библиотекой httplib о которой я писал выше.
 
 import requests
 response = requests.get('https://httpbin.org/get')

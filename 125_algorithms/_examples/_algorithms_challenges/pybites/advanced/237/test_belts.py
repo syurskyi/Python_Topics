@@ -1,4 +1,4 @@
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 from belts import get_belts, TMP
 
@@ -8,7 +8,7 @@ def get_data(file_no=1, tmp=TMP):
     file_path = TMP / file_name
     remote = 'https://bites-data.s3.us-east-2.amazonaws.com/'
     if not file_path.exists():
-        urlretrieve(f'{remote}{file_name}',
+        u..(f'{remote}{file_name}',
                     file_path)
     return file_path
 

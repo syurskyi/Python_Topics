@@ -1,11 +1,11 @@
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import re
 
 tmp = Path('/tmp')
 timings_log = tmp / 'pytest_timings.out'
 if not timings_log.exists():
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/pytest_timings.out',
         timings_log
     )

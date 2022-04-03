@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import urllib.error
-import urllib.request
+import u__.r..
 
 from functools import lru_cache
 
@@ -13,7 +13,7 @@ def get_webpage(module):
     webpage = "https://docs.python.org/3/library/{}.html".format(module)
 
     try:
-        with urllib.request.urlopen(webpage) as request:
+        with u__.r...urlopen(webpage) as request:
             return request.read()
     except urllib.error.HTTPError:
         return None

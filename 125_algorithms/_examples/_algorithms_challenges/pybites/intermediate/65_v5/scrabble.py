@@ -1,10 +1,10 @@
 import itertools
 import os
-import urllib.request
+import u__.r..
 
 # PREWORK
 DICTIONARY = os.path.join('/tmp', 'dictionary.txt')
-urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
+u__.r...u..('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 with open(DICTIONARY) as f:
     dictionary = set([word.strip().lower() for word in f.read().split()])

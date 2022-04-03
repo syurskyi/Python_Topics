@@ -1,11 +1,11 @@
 _______ __
 _______ __
 ____ c.. _______ Counter
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ dateutil.parser _______ p..
 
 commits = __.p...j..('/tmp', 'commits')
-urlretrieve('https://bit.ly/2H1EuZQ', commits)
+u..('https://bit.ly/2H1EuZQ', commits)
 
 # you can use this constant as key to the yyyymm:count dict
 YEAR_MONTH = '{y}-{m:02d}'

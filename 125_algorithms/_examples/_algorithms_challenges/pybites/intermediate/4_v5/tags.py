@@ -1,10 +1,10 @@
 import os
 from collections import Counter
-import urllib.request
+import u__.r..
 
 # prep
 tempfile = os.path.join('/tmp', 'feed')
-urllib.request.urlretrieve('http://bit.ly/2zD8d8b', tempfile)
+u__.r...u..('http://bit.ly/2zD8d8b', tempfile)
 
 with open(tempfile) as f:
     content = f.read().lower()

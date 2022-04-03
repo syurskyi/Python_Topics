@@ -1,5 +1,5 @@
 import json
-import urllib.request
+import u__.r..
 import time
 from threading import Thread, Lock
 
@@ -7,7 +7,7 @@ finished_count = 0
 
 
 def count_letters(url, frequency, mutex):
-    response = urllib.request.urlopen(url)
+    response = u__.r...urlopen(url)
     txt = str(response.read())
     mutex.acquire()
     for l in txt:

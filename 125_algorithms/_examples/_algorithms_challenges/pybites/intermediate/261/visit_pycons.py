@@ -6,7 +6,7 @@ from datetime import datetime
 from math import acos, cos, radians, sin
 import os
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 from dateutil.parser import parse
 
@@ -32,8 +32,8 @@ print(pycons)
 
 
 if not pycons_file.exists() or not nominatim_responses.exists():
-    urlretrieve(URL, pycons_file)
-    urlretrieve(RESPONSES, nominatim_responses)
+    u..(URL, pycons_file)
+    u..(RESPONSES, nominatim_responses)
 
 
 @dataclass

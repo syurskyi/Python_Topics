@@ -1,5 +1,5 @@
 from os import path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import pandas as pd
 from itertools import chain
 
@@ -9,7 +9,7 @@ data = "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 def load_data(data):
     dt_file = path.join('/tmp', data.split('/')[-1])
     if not path.isfile(dt_file):
-        urlretrieve(data, dt_file)
+        u..(data, dt_file)
     with open(dt_file, 'r') as f:
         return pd.read_csv(f)
 

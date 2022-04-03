@@ -1,7 +1,7 @@
 from collections import namedtuple
 import os
 import pickle
-import urllib.request
+import u__.r..
 import re
 
 # prework
@@ -10,7 +10,7 @@ pkl_file = 'pycon_videos.pkl'
 data = f'https://bites-data.s3.us-east-2.amazonaws.com/{pkl_file}'
 tmp = os.getenv("TMP", "/tmp")
 pycon_videos = os.path.join(tmp, pkl_file)
-urllib.request.urlretrieve(data, pycon_videos)
+u__.r...u..(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
 Video = namedtuple('Video', 'id title duration metrics')

@@ -2,14 +2,14 @@ from datetime import datetime, timedelta
 from http.client import SEE_OTHER
 import os
 import re
-import urllib.request
+import u__.r..
 
 # getting the data
 COURSE_TIMES = os.path.join(
     os.getenv("TMP", "/tmp"),
     'course_timings'
 )
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/course_timings',
     COURSE_TIMES
 )

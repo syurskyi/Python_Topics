@@ -1,4 +1,4 @@
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import os
 from pathlib import Path
 
@@ -11,7 +11,7 @@ PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
 if not PYCON_HTML.exists():
-    urlretrieve(PYCON_PAGE, PYCON_HTML)
+    u..(PYCON_PAGE, PYCON_HTML)
 
 
 def _get_soup(html=PYCON_HTML):

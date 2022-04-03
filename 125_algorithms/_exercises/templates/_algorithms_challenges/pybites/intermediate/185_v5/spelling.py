@@ -1,10 +1,10 @@
 ____ difflib _______ get_close_matches
 ____ __ _______ p..
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 DICTIONARY = p...j..('/tmp', 'dictionary.txt')
 __ n.. p...isfile(DICTIONARY
-    urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
+    u..('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 
 ___ load_words

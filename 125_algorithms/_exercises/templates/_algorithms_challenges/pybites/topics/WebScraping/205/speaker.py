@@ -1,4 +1,4 @@
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ __
 ____ pathlib _______ Path
 
@@ -11,7 +11,7 @@ PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
 __ n.. PYCON_HTML.exists
-    urlretrieve(PYCON_PAGE, PYCON_HTML)
+    u..(PYCON_PAGE, PYCON_HTML)
 
 
 ___ _get_soup(html=PYCON_HTML

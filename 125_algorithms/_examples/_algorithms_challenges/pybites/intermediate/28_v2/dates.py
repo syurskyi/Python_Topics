@@ -2,7 +2,7 @@ import collections
 from datetime import datetime
 import os
 import re
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 RSS_FEED = 'pybites_feed.rss.xml'
@@ -16,7 +16,7 @@ def _get_dates():
        'Sun, 07 Jan 2018 11:00:00 +0100', ... ]"""
     remote = os.path.join(BASE_URL, RSS_FEED)
     local = os.path.join(TMP, RSS_FEED)
-    urlretrieve(remote, local)
+    u..(remote, local)
 
     with open(local) as f:
         return PUB_DATE.findall(f.read())

@@ -1,11 +1,11 @@
 from os import path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 import pandas as pd
 
 EXCEL = path.join('/tmp', 'order_data.xlsx')
 if not path.isfile(EXCEL):
-    urlretrieve('https://bit.ly/2JpniQ2', EXCEL)
+    u..('https://bit.ly/2JpniQ2', EXCEL)
 
 
 def load_excel_into_dataframe(excel=EXCEL):

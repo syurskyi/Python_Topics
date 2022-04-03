@@ -1,10 +1,10 @@
 _______ i..
 _______ __
-_______ urllib.request
+_______ u__.r..
 
 # PREWORK
 DICTIONARY = __.p...j..('/tmp', 'dictionary.txt')
-urllib.request.urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
+u__.r...u..('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 w__ o.. DICTIONARY) __ f:
     dictionary = s..([word.s...l.. ___ word __ f.r...s.. ])

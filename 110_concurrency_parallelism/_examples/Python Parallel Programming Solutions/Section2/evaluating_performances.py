@@ -25,9 +25,9 @@ def threaded(num_threads):
 		i.join()
 
 def function_to_run():
- 	import urllib.request
+ 	import u__.r..
 	for i in range(10):
-		 with urllib.request.urlopen("https://www.packtpub.com/")as f:
+		 with u__.r...urlopen("https://www.packtpub.com/")as f:
 			 f.read(1024)
 
 def show_results(func_name, results):

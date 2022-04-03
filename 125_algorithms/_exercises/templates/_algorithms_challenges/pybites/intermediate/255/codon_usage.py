@@ -1,5 +1,5 @@
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ requests
 ____ c.. _______ defaultdict
 ____ i.. _______ combinations
@@ -32,7 +32,7 @@ ___ _preload_sequences(url=URL
     #return x.text.splitlines()
     filename = __.p...j..(__.getenv("TMP", "/tmp"), "NC_009641.txt")
     __ n.. __.p...isfile(filename
-        urlretrieve(url, filename)
+        u..(url, filename)
     w__ o.. filename, "r") __ f:
         r.. f.r..
 

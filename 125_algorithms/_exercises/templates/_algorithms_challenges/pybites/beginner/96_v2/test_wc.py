@@ -1,4 +1,4 @@
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 _______ p__
 
@@ -28,7 +28,7 @@ ___ test_wc(some_text, expected, tmp_path
 
 ___ test_wc_on_real_py_file(tmp_path
     f = tmp_path / "driving.py"
-    urlretrieve(py_file, f)
+    u..(py_file, f)
     output = wc(f.resolve
     counts = ' '.j..(output.s.. [:3])
     # https://twitter.com/pybites/status/1175795375904628736

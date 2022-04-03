@@ -1,14 +1,14 @@
 ____ d__ _______ d__, t..
 _______ __
 _______ time
-_______ urllib.request
+_______ u__.r..
 
 SHUTDOWN_EVENT = 'Shutdown initiated'
 
 # prep: read in the logfile
 tmp = __.getenv("TMP", "/tmp")
 logfile = __.p...j..(tmp, 'log')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/messages.log',
     logfile
 )

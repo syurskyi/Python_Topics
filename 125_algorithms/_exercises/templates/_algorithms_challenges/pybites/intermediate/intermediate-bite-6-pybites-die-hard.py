@@ -11,12 +11,12 @@ Good luck and have fun!
    and what challenge is more popular by number of PRs"""
 ____ c.. _______ Counter, n..
 _______ __
-_______ urllib.request
+_______ u__.r..
 
 # prep
 tmp = __.getenv("TMP", "/tmp")
 tempfile = __.p...j..(tmp, 'dirnames')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile
 )

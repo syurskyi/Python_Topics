@@ -1,11 +1,11 @@
 ____ d__ _______ d__, t..
 _______ __
 _______ __
-_______ urllib.request
+_______ u__.r..
 
 # getting the data
 COURSE_TIMES = __.p...j..('/tmp', 'course_timings')
-urllib.request.urlretrieve('http://bit.ly/2Eb0iQF', COURSE_TIMES)
+u__.r...u..('http://bit.ly/2Eb0iQF', COURSE_TIMES)
 
 
 ___ get_all_timestamps

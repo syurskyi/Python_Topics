@@ -1,11 +1,11 @@
 ____ c.. _______ Counter
 ____ csv _______ DictReader
 ____ __ _______ p..
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 DATA = p...j..('/tmp', 'bite_output_log.txt')
 __ n.. p...isfile(DATA
-    urlretrieve('https://bit.ly/2HoFZBd', DATA)
+    u..('https://bit.ly/2HoFZBd', DATA)
 
 
 c_ BiteStats:

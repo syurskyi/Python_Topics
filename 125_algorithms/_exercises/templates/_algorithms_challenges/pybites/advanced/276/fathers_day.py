@@ -1,6 +1,6 @@
 _______ __
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ __
 _______ d__
 
@@ -16,7 +16,7 @@ fathers_days_recurring = TMP / 'fathers-day-recurring.txt'
 
 ___ file_ __ (fathers_days_countries, fathers_days_recurring
     __ n.. file_.exists
-        urlretrieve(base_url + file_.name, file_)
+        u..(base_url + file_.name, file_)
 
 
 ___ _parse_father_days_per_country(year, date_to_countries,filename=fathers_days_countries

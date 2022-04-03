@@ -1,13 +1,13 @@
 from datetime import datetime
 import os
-import urllib.request
+import u__.r..
 
 SHUTDOWN_EVENT = 'Shutdown initiated'
 
 # prep: read in the logfile
 tmp = os.getenv("TMP", "/tmp")
 logfile = os.path.join(tmp, 'log')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/messages.log',
     logfile
 )

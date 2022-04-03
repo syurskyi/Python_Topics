@@ -1,11 +1,11 @@
 from datetime import datetime, timedelta
 import os
 import re
-import urllib.request
+import u__.r..
 
 # getting the data
 COURSE_TIMES = os.path.join('/tmp', 'course_timings')
-urllib.request.urlretrieve('http://bit.ly/2Eb0iQF', COURSE_TIMES)
+u__.r...u..('http://bit.ly/2Eb0iQF', COURSE_TIMES)
 
 
 def get_all_timestamps():

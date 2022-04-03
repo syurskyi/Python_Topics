@@ -2,7 +2,7 @@ from datetime import datetime
 import json
 import os
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 import pytest
 
@@ -18,7 +18,7 @@ PATH = Path(TMP, "zodiac.json")
 @pytest.fixture(scope='module')
 def signs():
     if not PATH.exists():
-        urlretrieve(URL, PATH)
+        u..(URL, PATH)
     with open(PATH) as f:
         data = json.loads(f.read())
     return get_signs(data)

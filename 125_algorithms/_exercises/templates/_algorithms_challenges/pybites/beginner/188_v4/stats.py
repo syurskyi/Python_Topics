@@ -1,11 +1,11 @@
 _______ __
 ____ __ _______ p..
 _______ statistics __ st
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 STATS = p...j..('/tmp', 'testfiles_number_loc.txt')
 __ n.. p...isfile(STATS
-    urlretrieve('https://bit.ly/2Jp5CUt', STATS)
+    u..('https://bit.ly/2Jp5CUt', STATS)
 
 STATS_OUTPUT = """
 Basic statistics:

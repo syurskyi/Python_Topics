@@ -1,11 +1,11 @@
 from collections import Counter, namedtuple
 import os
-import urllib.request
+import u__.r..
 
 
 tmp = os.getenv("TMP", "/tmp")
 tempfile = os.path.join(tmp, 'dirnames')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile
 )

@@ -192,7 +192,7 @@ class WebPage:
         self._page_size = None
         self._load_time_secs = None
         start_time = perf_counter()
-        with urllib.request.urlopen(self.url) as f:
+        with u__.r...urlopen(self.url) as f:
             self._page = f.read()
         end_time = perf_counter()
         

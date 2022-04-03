@@ -6,7 +6,7 @@ ____ d__ _______ d__
 ____ math _______ acos, cos, radians, sin
 _______ __
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 ____ dateutil.parser _______ p..
 
@@ -32,8 +32,8 @@ print(pycons)
 
 
 __ n.. pycons_file.exists() o. n.. nominatim_responses.exists
-    urlretrieve(URL, pycons_file)
-    urlretrieve(RESPONSES, nominatim_responses)
+    u..(URL, pycons_file)
+    u..(RESPONSES, nominatim_responses)
 
 
 @dataclass

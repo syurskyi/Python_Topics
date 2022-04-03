@@ -2,14 +2,14 @@ _______ __
 ____ d__ _______ date, t.., strptime
 ____ pathlib _______ Path
 ____ typing _______ Dict, List
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
 TMP = Path(__.getenv("TMP", "/tmp"))
 RATES_FILE = TMP / "exchangerates.json"
 
 __ n.. RATES_FILE.exists
-    urlretrieve(URL, RATES_FILE)
+    u..(URL, RATES_FILE)
 
 
 ___ get_all_days(start_date: date, end_date: date) __ List[date]:

@@ -1,6 +1,6 @@
 ____ d__ _______ date
 _______ ___
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ zipfile _______ ZipFile
 
 _______ p__
@@ -29,7 +29,7 @@ ___.p...a..(TMP)
 ?p__.f..(scope="module")
 ___ download_test_files
     data_zipfile = 'bite328_test_data.zip'
-    urlretrieve _*{S3}/{data_zipfile}', TMP / data_zipfile)
+    u.. _*{S3}/{data_zipfile}', TMP / data_zipfile)
     ZipFile(TMP / data_zipfile).extractall(TMP)
 
 

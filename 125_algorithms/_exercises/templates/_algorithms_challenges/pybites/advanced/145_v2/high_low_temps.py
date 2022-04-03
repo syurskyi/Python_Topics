@@ -1,7 +1,7 @@
 _______ csv
 _______ __
 _______ __
-_______ urllib.request
+_______ u__.r..
 ____ c.. _______ n..
 ____ d__ _______ d__
 
@@ -13,7 +13,7 @@ STATION = n..("Station", "ID Date Value")
 TMP = '/tmp'
 LOCAL_FILE = __.p...j..('/tmp', 'weather-ann-arbor.csv')
 __ n.. __.p...isfile(LOCAL_FILE
-    urllib.request.urlretrieve(DATA_FILE, LOCAL_FILE)
+    u__.r...u..(DATA_FILE, LOCAL_FILE)
 
 
 ___ high_low_record_breakers_for_2015

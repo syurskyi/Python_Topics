@@ -1,7 +1,7 @@
 
 
 import urllib.parse
-import urllib.request
+import u__.r..
 
 
 class SingletonType(type):
@@ -18,8 +18,8 @@ class URLFetcher(metaclass=SingletonType):
         self.urls = []
     
     def fetch(self, url):
-        req = urllib.request.Request(url)
-        with urllib.request.urlopen(req) as response:
+        req = u__.r...Request(url)
+        with u__.r...urlopen(req) as response:
             if response.code == 200:
                 the_page = response.read()
                 print(the_page)

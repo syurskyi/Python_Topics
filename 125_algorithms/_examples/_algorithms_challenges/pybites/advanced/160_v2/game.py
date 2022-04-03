@@ -1,11 +1,11 @@
 import csv
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from collections import defaultdict
 
 BATTLE_DATA = os.path.join('/tmp', 'battle-table.csv')
 if not os.path.isfile(BATTLE_DATA):
-    urlretrieve('https://bit.ly/2U3oHft', BATTLE_DATA)
+    u..('https://bit.ly/2U3oHft', BATTLE_DATA)
 
 
 def _create_defeat_mapping():

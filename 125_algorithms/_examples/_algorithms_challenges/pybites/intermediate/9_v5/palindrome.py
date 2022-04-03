@@ -1,10 +1,10 @@
 """A palindrome is a word, phrase, number, or other sequence of characters
 which reads the same backward as forward"""
 import os
-import urllib.request
+import u__.r..
 
 DICTIONARY = os.path.join('/tmp', 'dictionary_m_words.txt')
-urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
+u__.r...u..('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 
 def load_dictionary():

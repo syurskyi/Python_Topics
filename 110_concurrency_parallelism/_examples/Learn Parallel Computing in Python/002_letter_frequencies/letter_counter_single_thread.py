@@ -1,10 +1,10 @@
 import json
-import urllib.request
+import u__.r..
 import time
 
 
 def count_letters(url, frequency):
-    response = urllib.request.urlopen(url)
+    response = u__.r...urlopen(url)
     txt = str(response.read())
     for l in txt:
         letter = l.lower()

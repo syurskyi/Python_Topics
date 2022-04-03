@@ -1,7 +1,7 @@
 import csv
 import os
 import re
-import urllib.request
+import u__.r..
 from collections import namedtuple
 from datetime import datetime
 
@@ -13,7 +13,7 @@ STATION = namedtuple("Station", "ID Date Value")
 TMP = '/tmp'
 LOCAL_FILE = os.path.join('/tmp', 'weather-ann-arbor.csv')
 if not os.path.isfile(LOCAL_FILE):
-    urllib.request.urlretrieve(DATA_FILE, LOCAL_FILE)
+    u__.r...u..(DATA_FILE, LOCAL_FILE)
 
 
 def high_low_record_breakers_for_2015():

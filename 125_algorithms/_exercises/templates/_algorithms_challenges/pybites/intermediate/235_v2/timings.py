@@ -1,11 +1,11 @@
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ __
 
 tmp  Path('/tmp')
 timings_log  tmp / 'pytest_timings.out'
 __ n.. timings_log.exists
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/pytest_timings.out',
         timings_log
     )

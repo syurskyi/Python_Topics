@@ -1,5 +1,5 @@
 from timer import Timer
-from urllib.request import Request, urlopen
+from u__.r.. import Request, urlopen
 import ssl
 
 def myFunction():

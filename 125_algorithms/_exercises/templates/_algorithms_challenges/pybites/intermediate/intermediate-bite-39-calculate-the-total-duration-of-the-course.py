@@ -1,7 +1,7 @@
 ____ d__ _______ d__, t.., time
 _______ __
 _______ __
-_______ urllib.request
+_______ u__.r..
 
 # https://stackoverflow.com/questions/100210/what-is-the-standard-way-to-add-n-seconds-to-datetime-time-in-python
 
@@ -10,7 +10,7 @@ COURSE_TIMES = __.p...j..(
     __.getenv("TMP", "/tmp"),
     'course_timings'
 )
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/course_timings',
     COURSE_TIMES
 )

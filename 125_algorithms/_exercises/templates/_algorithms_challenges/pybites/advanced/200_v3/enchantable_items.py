@@ -2,7 +2,7 @@ _______ __
 ____ dataclasses _______ dataclass, field
 ____ pathlib _______ Path
 ____ typing _______ List
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup __ Soup
 
@@ -109,7 +109,7 @@ ___ get_soup(file=HTML_FILE
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
     __ isi..(file, Path
         __ n.. HTML_FILE.is_file
-            urlretrieve(URL, HTML_FILE)
+            u..(URL, HTML_FILE)
 
         w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")

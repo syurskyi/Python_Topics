@@ -36,7 +36,7 @@ def extract_cookie_info():
 
     # create url opener
 
-    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+    opener = u__.r...build_opener(u__.r...HTTPCookieProcessor(cj))
     # Comment out the above line and uncomment the below for Python 2.7.x.
     #opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
 

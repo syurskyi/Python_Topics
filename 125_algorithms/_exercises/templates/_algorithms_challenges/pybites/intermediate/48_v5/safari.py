@@ -1,10 +1,10 @@
 _______ __
 _______ __
-_______ urllib.request
+_______ u__.r..
 
 LOG = __.p...j..('/tmp', 'safari.logs')
 PY_BOOK, OTHER_BOOK = '🐍', '.'
-urllib.request.urlretrieve('http://bit.ly/2BLsCYc', LOG)
+u__.r...u..('http://bit.ly/2BLsCYc', LOG)
 
 
 ___ create_chart

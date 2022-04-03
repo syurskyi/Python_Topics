@@ -1,11 +1,11 @@
 from difflib import SequenceMatcher
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 TMP = os.getenv("TMP", "/tmp")
 DICTIONARY = os.path.join(TMP, 'dictionary.txt')
 if not os.path.isfile(DICTIONARY):
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/dictionary.txt',
         DICTIONARY
     )

@@ -12,7 +12,7 @@ KEYWORDS: Counter, data analysis, list comprehensions
 """
 
 import os
-import urllib.request
+import u__.r..
 import string
 from collections import Counter
 import re
@@ -23,11 +23,11 @@ import re
 tmp = os.getenv("TMP", "/tmp")
 stopwords_file = os.path.join(tmp, 'stopwords')
 harry_text = os.path.join(tmp, 'harry')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/stopwords.txt',
     stopwords_file
 )
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/harry.txt',
     harry_text
 )

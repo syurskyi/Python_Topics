@@ -2,7 +2,7 @@ import glob
 import json
 import os
 import re
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/omdb/'
 MOVIES = ('bladerunner2049 fightclub glengary '
@@ -14,7 +14,7 @@ for movie in MOVIES:
     fname = f'{movie}.json'
     remote = os.path.join(BASE_URL, fname)
     local = os.path.join(TMP, fname)
-    urlretrieve(remote, local)
+    u..(remote, local)
 
 files = glob.glob(os.path.join(TMP, '*json'))
 

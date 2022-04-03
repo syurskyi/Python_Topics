@@ -1,6 +1,6 @@
 _______ __
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ json
 
 filename = "my_code.json"
@@ -9,7 +9,7 @@ tmp = Path(__.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
 __ n.. json_input_file.exists
-    urlretrieve(url.f..(filename=filename), json_input_file)
+    u..(url.f..(filename=filename), json_input_file)
 
 
 ___ get_json_data

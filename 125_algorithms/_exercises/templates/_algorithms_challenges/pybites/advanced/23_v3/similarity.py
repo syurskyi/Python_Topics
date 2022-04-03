@@ -2,7 +2,7 @@ _______ __
 _______ __
 ____ difflib _______ SequenceMatcher
 ____ i.. _______ permutations
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 # prep
 TAG_HTML = __.c..(r'<category>([^<]+)</category>')
@@ -11,7 +11,7 @@ MIN_TAG_LEN = 10
 IDENTICAL = 1.0
 SIMILAR = 0.95
 
-urlretrieve(
+u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/tags.xml',
     TEMPFILE
 )

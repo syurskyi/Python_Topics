@@ -1,5 +1,5 @@
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from dataclasses import dataclass
 
 from bs4 import BeautifulSoup, Tag
@@ -9,7 +9,7 @@ tmp = Path("/tmp")
 html_file = tmp / "books.html"
 
 if not html_file.exists():
-    urlretrieve(url, html_file)
+    u..(url, html_file)
 
 
 @dataclass

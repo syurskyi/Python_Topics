@@ -1,10 +1,10 @@
 import threading
-import urllib.request
+import u__.r..
 import time
 
 def downloadImage(imagePath, fileName):
   print("Downloading Image from ", imagePath)
-  urllib.request.urlretrieve(imagePath, fileName)
+  u__.r...u..(imagePath, fileName)
 
 def main():
   t0 = time.time()

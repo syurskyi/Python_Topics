@@ -1,14 +1,14 @@
 _______ csv
 _______ __
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 data = 'https://bites-data.s3.us-east-2.amazonaws.com/bite_levels.csv'
 TMP = Path(__.getenv("TMP", "/tmp"))
 stats = TMP / 'bites.csv'
 
 __ n.. stats.exists
-    urlretrieve(data, stats)
+    u..(data, stats)
 
 
 ___ get_most_complex_bites(N=10, stats=stats

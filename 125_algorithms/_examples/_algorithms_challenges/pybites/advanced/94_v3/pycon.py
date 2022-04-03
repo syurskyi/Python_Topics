@@ -1,7 +1,7 @@
 import os
 import pickle
 import re
-import urllib.request
+import u__.r..
 from collections import namedtuple
 from datetime import timedelta
 
@@ -10,7 +10,7 @@ from datetime import timedelta
 pkl_file = 'pycon_videos.pkl'
 data = 'http://projects.bobbelderbos.com/pcc/{}'.format(pkl_file)
 pycon_videos = os.path.join('/tmp', pkl_file)
-urllib.request.urlretrieve(data, pycon_videos)
+u__.r...u..(data, pycon_videos)
 
 # the pkl contains a list of Video namedtuples
 Video = namedtuple('Video', 'id title duration metrics')

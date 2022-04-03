@@ -1,7 +1,7 @@
 import csv
 from collections import defaultdict, namedtuple
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 BASE_URL = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 TMP = '/tmp'
@@ -9,7 +9,7 @@ TMP = '/tmp'
 fname = 'movie_metadata.csv'
 remote = os.path.join(BASE_URL, fname)
 local = os.path.join(TMP, fname)
-urlretrieve(remote, local)
+u..(remote, local)
 
 MOVIE_DATA = local
 MIN_MOVIES = 4

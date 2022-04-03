@@ -1,12 +1,12 @@
 ____ c.. _______ Counter, n..
 ____ i.. _______ filterfalse
 _______ __
-_______ urllib.request
+_______ u__.r..
 _______ ___
 # prep
 tmp = __.getenv("TMP", "/tmp")
 tempfile = __.p...j..(tmp, 'dirnames')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/dirnames.txt',
     tempfile
 )

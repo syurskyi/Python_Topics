@@ -1,5 +1,5 @@
 # from timer ______ Timer
-# from urllib.request ______ Request, urlopen
+# from u__.r.. ______ Request, urlopen
 # ______ ssl
 #
 # ___ myFunction():

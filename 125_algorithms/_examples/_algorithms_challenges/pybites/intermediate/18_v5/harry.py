@@ -1,5 +1,5 @@
 import os
-import urllib.request
+import u__.r..
 import re
 from collections import Counter
 
@@ -7,8 +7,8 @@ from collections import Counter
 
 stopwords_file = os.path.join('/tmp', 'stopwords')
 harry_text = os.path.join('/tmp', 'harry')
-urllib.request.urlretrieve('http://bit.ly/2EuvyHB', stopwords_file)
-urllib.request.urlretrieve('http://bit.ly/2C6RzuR', harry_text)
+u__.r...u..('http://bit.ly/2EuvyHB', stopwords_file)
+u__.r...u..('http://bit.ly/2C6RzuR', harry_text)
 
 WORD_REGEX = r"(['\w]+)"
 word_regex = re.compile(WORD_REGEX)

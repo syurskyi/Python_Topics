@@ -2,7 +2,7 @@ ____ d__ _______ d__
 _______ json
 _______ __
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 _______ p__
 
@@ -18,7 +18,7 @@ PATH = Path(TMP, "zodiac.json")
 ?p__.f..(scope='module')
 ___ signs
     __ n.. PATH.exists
-        urlretrieve(URL, PATH)
+        u..(URL, PATH)
     w__ o.. PATH) __ f:
         data = json.loads(f.read
     r.. get_signs(data)

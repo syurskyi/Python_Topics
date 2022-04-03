@@ -2,13 +2,13 @@
    and what challenge is more popular by number of PRs"""
 ____ c.. _______ Counter, n..
 _______ __
-_______ urllib.request
+_______ u__.r..
 
 # prep
 
 tempfile = __.p...j..('/tmp', 'dirnames')
 __ n.. __.p...isfile(tempfile
-    urllib.request.urlretrieve('http://bit.ly/2ABUTjv', tempfile)
+    u__.r...u..('http://bit.ly/2ABUTjv', tempfile)
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..
 

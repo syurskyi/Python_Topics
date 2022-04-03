@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from collections import defaultdict
 import xml.etree.ElementTree as ET
 
@@ -9,7 +9,7 @@ tmp = Path(os.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
 if not countries.exists():
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/countries.xml',
         countries
     )

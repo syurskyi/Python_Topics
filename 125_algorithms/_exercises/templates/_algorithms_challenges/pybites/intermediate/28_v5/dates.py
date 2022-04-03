@@ -2,7 +2,7 @@ _______ c..
 ____ d__ _______ d__
 _______ __
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/dates/'
 RSS_FEED = 'all.rss.xml'
@@ -16,7 +16,7 @@ ___ _get_dates
        'Sun, 07 Jan 2018 11:00:00 +0100', ... ]"""
     remote = __.p...j..(BASE_URL, RSS_FEED)
     local = __.p...j..(TMP, RSS_FEED)
-    urlretrieve(remote, local)
+    u..(remote, local)
 
     w__ o.. local) __ f:
         r.. PUB_DATE.f..(f.read

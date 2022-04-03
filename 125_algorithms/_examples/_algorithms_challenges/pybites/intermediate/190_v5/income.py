@@ -1,6 +1,6 @@
 from pathlib import Path
 from collections import defaultdict
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import xml.etree.ElementTree as ET
 
 # import the countries xml file
@@ -8,7 +8,7 @@ tmp = Path('/tmp')
 countries = tmp / 'countries.xml'
 
 if not countries.exists():
-    urlretrieve('https://bit.ly/2IzGKav', countries)
+    u..('https://bit.ly/2IzGKav', countries)
 
 
 def get_income_distribution(xml=countries):

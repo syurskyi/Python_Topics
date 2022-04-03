@@ -7,11 +7,11 @@ The following sites were consulted:
 _______ __
 _______ __
 _______ ___
-_______ urllib.request
+_______ u__.r..
 
 # PREWORK (don't modify): import colors, save to temp file and import
 color_values_module = __.p...j..('/tmp', 'color_values.py')
-urllib.request.urlretrieve('https://bit.ly/2MSuu4z',
+u__.r...u..('https://bit.ly/2MSuu4z',
                            color_values_module)
 ___.p...a..('/tmp')
 

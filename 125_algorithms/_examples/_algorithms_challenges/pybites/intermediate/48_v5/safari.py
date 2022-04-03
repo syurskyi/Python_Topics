@@ -1,10 +1,10 @@
 import os
 import re
-import urllib.request
+import u__.r..
 
 LOG = os.path.join('/tmp', 'safari.logs')
 PY_BOOK, OTHER_BOOK = '🐍', '.'
-urllib.request.urlretrieve('http://bit.ly/2BLsCYc', LOG)
+u__.r...u..('http://bit.ly/2BLsCYc', LOG)
 
 
 def create_chart():

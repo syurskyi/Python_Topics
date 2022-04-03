@@ -14,14 +14,14 @@ Keep calm and code in Python! :)
 
 _______ __
 ____ c.. _______ Counter
-_______ urllib.request
+_______ u__.r..
 _______ __
 
 # prep
 DIR = __.getenv('TMP', '/tmp')
 FILENAME = "feed.txt"
 tempfile = __.p...j..(DIR, FILENAME)
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )

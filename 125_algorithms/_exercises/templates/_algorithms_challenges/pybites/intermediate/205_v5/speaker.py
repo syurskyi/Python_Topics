@@ -1,5 +1,5 @@
 ____ c.. _______ Counter
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ pathlib _______ Path
 
 _______ gender_guesser.detector __ gender
@@ -11,7 +11,7 @@ PYCON_PAGE = ('https://bites-data.s3.us-east-2.amazonaws.com/'
               'pycon2019.html')
 
 __ n.. PYCON_HTML.exists
-    urlretrieve(PYCON_PAGE, PYCON_HTML)
+    u..(PYCON_PAGE, PYCON_HTML)
 
 
 ___ _get_soup(html=PYCON_HTML

@@ -1,6 +1,6 @@
 ____ c.. _______ defaultdict
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup
 
@@ -9,7 +9,7 @@ ____ bs4 _______ BeautifulSoup
 tmp = __.getenv("TMP", "/tmp")
 page = 'us_holidays.html'
 holidays_page = __.p...j..(tmp, page)
-urlretrieve(
+u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{page}',
     holidays_page
 )

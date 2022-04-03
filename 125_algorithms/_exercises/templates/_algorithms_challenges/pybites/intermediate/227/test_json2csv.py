@@ -1,6 +1,6 @@
 _______ csv
 ____ json.decoder _______ JSONDecodeError
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 _______ p__
 
@@ -43,7 +43,7 @@ ___ test_json2csv(file_no, expected, exception, capfd
     mount_json = TMP / f'mount{file_no}.json'
     mount_csv = TMP / f'mount{file_no}.csv'
 
-    urlretrieve(mount_data.f..(file_no), mount_json)
+    u..(mount_data.f..(file_no), mount_json)
 
     __ exception:
         w__ p__.r..(JSONDecodeError) __ exc:

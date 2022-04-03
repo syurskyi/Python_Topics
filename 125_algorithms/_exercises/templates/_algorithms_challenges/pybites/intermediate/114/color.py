@@ -1,11 +1,11 @@
 _______ __
 _______ ___
-_______ urllib.request
+_______ u__.r..
 
 # PREWORK (don't modify): import colors, save to temp file and import
 tmp = __.getenv("TMP", "/tmp")
 color_values_module = __.p...j..(tmp, 'color_values.py')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/color_values.py',
     color_values_module
 )

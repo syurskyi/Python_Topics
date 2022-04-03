@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from ipaddress import IPv4Network
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 import pytest
 
@@ -17,7 +17,7 @@ IP = IPv4Network('192.0.2.8/29')
 @pytest.fixture(scope='module')
 def json_file():
     """Import data into tmp folder"""
-    urlretrieve(URL, PATH)
+    u..(URL, PATH)
     return PATH
 
 

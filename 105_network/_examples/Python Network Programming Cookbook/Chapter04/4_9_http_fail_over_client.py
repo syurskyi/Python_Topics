@@ -5,7 +5,7 @@
 #
 # Follow the comments inline to make it run on Python 2.7.x.
 
-import urllib.request, urllib.parse, urllib.error
+import u__.r.., urllib.parse, urllib.error
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import urllib
 
@@ -14,7 +14,7 @@ import os
 TARGET_URL = 'http://python.org/ftp/python/2.7.4/'
 TARGET_FILE = 'Python-2.7.4.tgz'
 
-class CustomURLOpener(urllib.request.FancyURLopener):
+class CustomURLOpener(u__.r...FancyURLopener):
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #class CustomURLOpener(urllib.FancyURLopener):
     """Override FancyURLopener to skip error 206 (when a

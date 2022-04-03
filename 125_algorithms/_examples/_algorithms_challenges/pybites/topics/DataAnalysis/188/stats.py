@@ -1,13 +1,13 @@
 import os
 import statistics
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 TMP = os.getenv("TMP", "/tmp")
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com/'
 DATA = 'testfiles_number_loc.txt'
 STATS = os.path.join(TMP, DATA)
 if not os.path.isfile(STATS):
-    urlretrieve(os.path.join(S3, DATA), STATS)
+    u..(os.path.join(S3, DATA), STATS)
 
 STATS_OUTPUT = """
 Basic statistics:

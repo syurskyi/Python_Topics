@@ -1,5 +1,5 @@
 import os
-import urllib.request
+import u__.r..
 import re
 
 TMP = os.getenv("TMP", "/tmp")
@@ -7,7 +7,7 @@ DATA = 'safari.logs'
 SAFARI_LOGS = os.path.join(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'
 
-urllib.request.urlretrieve(
+u__.r...u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
     SAFARI_LOGS
 )

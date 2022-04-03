@@ -1,5 +1,5 @@
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ dataclasses _______ dataclass
 
 ____ bs4 _______ BeautifulSoup, Tag
@@ -9,7 +9,7 @@ tmp = Path("/tmp")
 html_file = tmp / "books.html"
 
 __ n.. html_file.exists
-    urlretrieve(url, html_file)
+    u..(url, html_file)
 
 
 @dataclass

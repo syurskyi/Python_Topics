@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import re
 import datetime 
 
@@ -16,7 +16,7 @@ fathers_days_recurring = TMP / 'fathers-day-recurring.txt'
 
 for file_ in (fathers_days_countries, fathers_days_recurring):
     if not file_.exists():
-        urlretrieve(base_url + file_.name, file_)
+        u..(base_url + file_.name, file_)
 
 
 def _parse_father_days_per_country(year, date_to_countries,filename=fathers_days_countries):

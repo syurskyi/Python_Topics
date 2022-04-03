@@ -1,11 +1,11 @@
 import os
 import re
 from collections import Counter
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from dateutil.parser import parse
 
 commits = os.path.join('/tmp', 'commits')
-urlretrieve('https://bit.ly/2H1EuZQ', commits)
+u..('https://bit.ly/2H1EuZQ', commits)
 
 # you can use this constant as key to the yyyymm:count dict
 YEAR_MONTH = '{y}-{m:02d}'

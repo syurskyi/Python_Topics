@@ -1,5 +1,5 @@
 import time
-from urllib.request import Request, URLError, urljoin, urlopen
+from u__.r.. import Request, URLError, urljoin, urlopen
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 URLS = [

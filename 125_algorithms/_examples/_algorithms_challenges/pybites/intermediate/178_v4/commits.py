@@ -1,11 +1,11 @@
 from collections import Counter
 import re
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from dateutil.parser import parse
 
 commits = os.path.join(os.getenv("TMP", "/tmp"), 'commits')
-urlretrieve(
+u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits
 )

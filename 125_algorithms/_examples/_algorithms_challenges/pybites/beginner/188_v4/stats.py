@@ -1,11 +1,11 @@
 import re
 from os import path
 import statistics as st
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 STATS = path.join('/tmp', 'testfiles_number_loc.txt')
 if not path.isfile(STATS):
-    urlretrieve('https://bit.ly/2Jp5CUt', STATS)
+    u..('https://bit.ly/2Jp5CUt', STATS)
 
 STATS_OUTPUT = """
 Basic statistics:

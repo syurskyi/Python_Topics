@@ -1,6 +1,6 @@
 from datetime import date
 import sys
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from zipfile import ZipFile
 
 import pytest
@@ -29,7 +29,7 @@ sys.path.append(TMP)
 @pytest.fixture(scope="module")
 def download_test_files():
     data_zipfile = 'bite328_test_data.zip'
-    urlretrieve(f'{S3}/{data_zipfile}', TMP / data_zipfile)
+    u..(f'{S3}/{data_zipfile}', TMP / data_zipfile)
     ZipFile(TMP / data_zipfile).extractall(TMP)
 
 

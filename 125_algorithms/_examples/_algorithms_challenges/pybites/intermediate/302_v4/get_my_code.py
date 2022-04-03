@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import json
 
 filename = "my_code.json"
@@ -9,7 +9,7 @@ tmp = Path(os.getenv("TMP", "/tmp"))
 json_input_file = tmp / filename
 
 if not json_input_file.exists():
-    urlretrieve(url.format(filename=filename), json_input_file)
+    u..(url.format(filename=filename), json_input_file)
 
 
 def get_json_data():

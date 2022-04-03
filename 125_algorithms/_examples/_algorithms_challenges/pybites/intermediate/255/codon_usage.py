@@ -1,5 +1,5 @@
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 import requests
 from collections import defaultdict
 from itertools import combinations
@@ -32,7 +32,7 @@ def _preload_sequences(url=URL):
     #return x.text.splitlines()
     filename = os.path.join(os.getenv("TMP", "/tmp"), "NC_009641.txt")
     if not os.path.isfile(filename):
-        urlretrieve(url, filename)
+        u..(url, filename)
     with open(filename, "r") as f:
         return f.readlines()
 

@@ -1,7 +1,7 @@
 _______ csv
 _______ __
 ____ c.. _______ defaultdict, n..
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 BASE_URL = 'http://projects.bobbelderbos.com/pcc/movies/'
 TMP = '/tmp'
@@ -9,7 +9,7 @@ TMP = '/tmp'
 fname = 'movie_metadata.csv'
 remote = __.p...j..(BASE_URL, fname)
 local = __.p...j..(TMP, fname)
-urlretrieve(remote, local)
+u..(remote, local)
 
 MOVIE_DATA = local
 MIN_MOVIES = 4

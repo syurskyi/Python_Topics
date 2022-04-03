@@ -1,14 +1,14 @@
 from collections import Counter
 from csv import DictReader
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 TMP = os.getenv("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = os.path.join(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
 if not os.path.isfile(DATA):
-    urlretrieve(f'{S3}/{LOGS}', DATA)
+    u..(f'{S3}/{LOGS}', DATA)
 
 
 class BiteStats:

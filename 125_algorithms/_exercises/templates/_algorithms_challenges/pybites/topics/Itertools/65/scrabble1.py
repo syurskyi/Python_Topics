@@ -1,12 +1,12 @@
 _______ i..
 _______ __
-_______ urllib.request
+_______ u__.r..
 
 # PREWORK
 TMP = __.getenv("TMP", "/tmp")
 DICT = 'dictionary.txt'
 DICTIONARY = __.p...j..(TMP, DICT)
-urllib.request.urlretrieve(
+u__.r...u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
 )

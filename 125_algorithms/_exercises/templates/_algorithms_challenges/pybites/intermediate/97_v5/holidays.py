@@ -1,13 +1,13 @@
 ____ c.. _______ defaultdict
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup
 
 
 # prep data
 holidays_page = __.p...j..('/tmp', 'us_holidays.php')
-urlretrieve('https://bit.ly/2LG098I', holidays_page)
+u..('https://bit.ly/2LG098I', holidays_page)
 
 w__ o.. holidays_page) __ f:
     content = f.r..

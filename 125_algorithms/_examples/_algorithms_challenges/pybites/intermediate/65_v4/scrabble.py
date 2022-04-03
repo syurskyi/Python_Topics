@@ -1,13 +1,13 @@
 import sys
 import itertools
 import os
-import urllib.request
+import u__.r..
 
 # PREWORK
 TMP = os.getenv("TMP", "/tmp")
 DICT = 'dictionary.txt'
 DICTIONARY = os.path.join(TMP, DICT)
-urllib.request.urlretrieve(
+u__.r...u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DICT}',
     DICTIONARY
 )

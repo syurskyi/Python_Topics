@@ -1,6 +1,6 @@
 _______ __
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 S3  "https://bites-data.s3.us-east-2.amazonaws.com/{}"
 FILE_NAME  "mutpy.out"
@@ -8,7 +8,7 @@ TMP  __.getenv("TMP", "/tmp")
 PATH  Path(TMP, FILE_NAME)
 
 __ n.. PATH.exists
-    urlretrieve(S3.f..(FILE_NAME), PATH)
+    u..(S3.f..(FILE_NAME), PATH)
 
 
 ___ _get_data(pathPATH

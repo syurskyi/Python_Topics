@@ -1,11 +1,11 @@
 ____ __ _______ p..
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 _______ pandas __ pd
 
 EXCEL = p...j..('/tmp', 'order_data.xlsx')
 __ n.. p...isfile(EXCEL
-    urlretrieve('https://bit.ly/2JpniQ2', EXCEL)
+    u..('https://bit.ly/2JpniQ2', EXCEL)
 
 
 ___ load_excel_into_dataframe(excel=EXCEL

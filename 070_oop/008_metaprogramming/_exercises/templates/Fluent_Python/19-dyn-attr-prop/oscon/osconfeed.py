@@ -27,7 +27,7 @@ osconfeed.py: Script to download the OSCON schedule feed
 """
 
 # BEGIN OSCONFEED
-from urllib.request import urlopen
+from u__.r.. import urlopen
 import warnings
 import os
 import json

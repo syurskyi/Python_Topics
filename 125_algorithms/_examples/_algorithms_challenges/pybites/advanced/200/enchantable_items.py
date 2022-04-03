@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import bisect
 import re
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from bs4 import BeautifulSoup as Soup
 
 TMP = Path(os.getenv("TMP", "/tmp"))
@@ -134,7 +134,7 @@ def get_soup(file=HTML_FILE):
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
     if isinstance(file, Path):
         if not file.is_file():
-            urlretrieve(URL, file)
+            u..(URL, file)
 
         with file.open() as html_source:
             soup = Soup(html_source, "html.parser")

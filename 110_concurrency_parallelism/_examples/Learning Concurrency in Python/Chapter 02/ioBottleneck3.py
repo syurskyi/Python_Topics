@@ -1,9 +1,9 @@
-import urllib.request
+import u__.r..
 import time
 from bs4 import BeautifulSoup
 
 t0 = time.time()
-req = urllib.request.urlopen('http://www.example.com')
+req = u__.r...urlopen('http://www.example.com')
 t1 = time.time()
 print("Total Time To Fetch Page: {} Seconds".format(t1-t0))
 soup = BeautifulSoup(req.read(), "html.parser")

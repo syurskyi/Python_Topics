@@ -7,7 +7,7 @@
 
 import argparse
 
-import urllib.request
+import u__.r..
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import urllib2
 
@@ -19,7 +19,7 @@ class HTTPClient:
         self.host = host
 
     def fetch(self):
-        response = urllib.request.urlopen(self.host)
+        response = u__.r...urlopen(self.host)
         # Comment out the above line and uncomment the below for Python 2.7.x.
         #response = urllib2.urlopen(self.host)
 

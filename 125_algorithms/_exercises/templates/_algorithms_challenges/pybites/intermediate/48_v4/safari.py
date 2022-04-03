@@ -1,6 +1,6 @@
 _______ __
 _______ __
-_______ urllib.request
+_______ u__.r..
 ____ c.. _______ defaultdict
 ____ d__ _______ d__
 
@@ -9,7 +9,7 @@ DATA = 'safari.logs'
 SAFARI_LOGS = __.p...j..(TMP, DATA)
 PY_BOOK, OTHER_BOOK = '🐍', '.'
 
-urllib.request.urlretrieve(
+u__.r...u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
     SAFARI_LOGS
 )

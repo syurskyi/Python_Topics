@@ -12,12 +12,12 @@ which reads the same backward as forward.
 """
 
 import os
-import urllib.request
+import u__.r..
 import string
 import re
 
 DICTIONARY = os.path.join(os.getenv('temp'), 'dictionary_m_words.txt')
-urllib.request.urlretrieve('http://bit.ly/2Cbj6zn', DICTIONARY)
+u__.r...u..('http://bit.ly/2Cbj6zn', DICTIONARY)
 
 # How come it's a generator, if it doesn't have yield statement?
 # It's a generator expression

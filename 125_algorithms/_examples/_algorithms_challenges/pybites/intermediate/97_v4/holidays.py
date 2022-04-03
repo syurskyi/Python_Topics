@@ -1,6 +1,6 @@
 from collections import defaultdict
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from datetime import datetime
 from bs4 import BeautifulSoup
 
@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 tmp = os.getenv("TMP", "/tmp")
 page = 'us_holidays.html'
 holidays_page = os.path.join(tmp, page)
-urlretrieve(
+u..(
     f'https://bites-data.s3.us-east-2.amazonaws.com/{page}',
     holidays_page
 )

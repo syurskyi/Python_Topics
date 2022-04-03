@@ -2,7 +2,7 @@ _______ __
 ____ pathlib _______ Path
 _______ bisect
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup __ Soup
 
 TMP = Path(__.getenv("TMP", "/tmp"))
@@ -134,7 +134,7 @@ ___ get_soup(file=HTML_FILE
     """Retrieves/takes source HTML and returns a BeautifulSoup object"""
     __ isi..(file, Path
         __ n.. file.is_file
-            urlretrieve(URL, file)
+            u..(URL, file)
 
         w__ file.o.. ) __ html_source:
             soup = Soup(html_source, "html.parser")

@@ -1,13 +1,13 @@
 from collections import defaultdict
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 from bs4 import BeautifulSoup
 
 
 # prep data
 holidays_page = os.path.join('/tmp', 'us_holidays.php')
-urlretrieve('https://bit.ly/2LG098I', holidays_page)
+u..('https://bit.ly/2LG098I', holidays_page)
 
 with open(holidays_page) as f:
     content = f.read()

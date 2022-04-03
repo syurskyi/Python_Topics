@@ -1,10 +1,10 @@
 _______ __
 ____ c.. _______ Counter
-_______ urllib.request
+_______ u__.r..
 
 # prep
 tempfile = __.p...j..('/tmp', 'feed')
-urllib.request.urlretrieve('http://bit.ly/2zD8d8b', tempfile)
+u__.r...u..('http://bit.ly/2zD8d8b', tempfile)
 
 w__ o.. tempfile) __ f:
     content = f.r...l..

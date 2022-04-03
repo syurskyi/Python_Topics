@@ -1,13 +1,13 @@
 _______ __
 _______ pprint __ pp
 ____ c.. _______ Counter
-_______ urllib.request
+_______ u__.r..
 _______ ___.e__.E__ __ ET
 
 # prep
 tmp = __.getenv("TMP", "/tmp")
 tempfile = __.p...j..(tmp, 'feed')
-urllib.request.urlretrieve(
+u__.r...u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/feed',
     tempfile
 )

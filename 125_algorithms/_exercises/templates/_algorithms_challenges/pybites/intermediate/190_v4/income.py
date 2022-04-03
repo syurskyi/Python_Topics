@@ -1,6 +1,6 @@
 _______ __
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ c.. _______ defaultdict
 _______ ___.e__.E__ __ ET
 
@@ -9,7 +9,7 @@ tmp = Path(__.getenv("TMP", "/tmp"))
 countries = tmp / 'countries.xml'
 
 __ n.. countries.exists
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/countries.xml',
         countries
     )

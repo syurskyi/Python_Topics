@@ -1,9 +1,9 @@
-_______ urllib.request
+_______ u__.r..
 _______ __
 
 
 ___ create_chart
-    resp = urllib.request.urlopen _*https://bites-data.s3.us-east-2.amazonaws.com/safari.logs').read()
+    resp = u__.r...urlopen _*https://bites-data.s3.us-east-2.amazonaws.com/safari.logs').read()
     html = resp.d.. 'UTF-8')
     paragraphs = html.s..('\n')
 

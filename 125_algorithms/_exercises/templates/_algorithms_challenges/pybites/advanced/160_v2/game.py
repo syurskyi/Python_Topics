@@ -1,11 +1,11 @@
 _______ csv
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ c.. _______ defaultdict
 
 BATTLE_DATA = __.p...j..('/tmp', 'battle-table.csv')
 __ n.. __.p...isfile(BATTLE_DATA
-    urlretrieve('https://bit.ly/2U3oHft', BATTLE_DATA)
+    u..('https://bit.ly/2U3oHft', BATTLE_DATA)
 
 
 ___ _create_defeat_mapping

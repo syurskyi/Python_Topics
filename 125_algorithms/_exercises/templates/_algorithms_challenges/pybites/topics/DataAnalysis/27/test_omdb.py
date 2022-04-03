@@ -1,5 +1,5 @@
 ____ pathlib _______ Path
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 _______ __
 
 _______ p__
@@ -15,7 +15,7 @@ DATA = 'omdb_data'
 
 DATA_LOCAL = TMP / DATA
 __ n.. Path(DATA_LOCAL).exists
-    urlretrieve(S3 + DATA, DATA_LOCAL)
+    u..(S3 + DATA, DATA_LOCAL)
 
 
 ?p__.f..(scope="module")

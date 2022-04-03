@@ -16,7 +16,7 @@ import urllib.parse
 #import urlparse
 
 import re
-import urllib.request, urllib.error
+import u__.r.., urllib.error
 # Comment out the above line and uncomment the below for Python 2.7.x.
 #import urllib
 

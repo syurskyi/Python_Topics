@@ -1,6 +1,6 @@
 ____ c.. _______ Counter
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 ____ c.. _______ defaultdict
 ____ d__ _______ d__
 
@@ -8,7 +8,7 @@ ____ d__ _______ d__
 ____ dateutil.parser _______ p..
 
 commits = __.p...j..(__.getenv("TMP", "/tmp"), 'commits')
-urlretrieve(
+u..(
     'https://bites-data.s3.us-east-2.amazonaws.com/git_log_stat.out',
     commits
 )

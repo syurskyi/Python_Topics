@@ -7,7 +7,7 @@ ____ Bio _______ SeqIO
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/fasta_genes.fasta"
 FASTA_FILE = __.p...j..(__.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 __ n.. __.p...isfile(FASTA_FILE
-    urllib.request.urlretrieve(URL, FASTA_FILE)
+    u__.r...u..(URL, FASTA_FILE)
 
 ___ fasta_to_2line_fasta(fasta_file: s.., fasta_2line_file: s..) __ i..:
     """

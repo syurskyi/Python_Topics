@@ -1,12 +1,12 @@
 _______ __
-____ urllib.request _______ urlretrieve
+____ u__.r.. _______ u..
 
 _______ pandas __ pd
 
 TMP = __.getenv("TMP", "/tmp")
 EXCEL = __.p...j..(TMP, 'order_data.xlsx')
 __ n.. __.p...isfile(EXCEL
-    urlretrieve(
+    u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/order_data.xlsx',
         EXCEL
     )

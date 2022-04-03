@@ -1,13 +1,13 @@
 import csv
 import os
-from urllib.request import urlretrieve
+from u__.r.. import u..
 from collections import defaultdict
 
 TMP = os.getenv("TMP", "/tmp")
 DATA = 'battle-table.csv'
 BATTLE_DATA = os.path.join(TMP, DATA)
 if not os.path.isfile(BATTLE_DATA):
-    urlretrieve(
+    u..(
         f'https://bites-data.s3.us-east-2.amazonaws.com/{DATA}',
         BATTLE_DATA
     )

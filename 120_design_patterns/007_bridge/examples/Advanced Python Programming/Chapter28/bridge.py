@@ -2,7 +2,7 @@
 
 import abc
 import urllib.parse
-import urllib.request
+import u__.r..
 
 
 class ResourceContent:
@@ -36,8 +36,8 @@ class URLFetcher(ResourceContentFetcher):
     
     def fetch(self, path):
         # path is an URL
-        req = urllib.request.Request(path)
-        with urllib.request.urlopen(req) as response:
+        req = u__.r...Request(path)
+        with u__.r...urlopen(req) as response:
             if response.code == 200:
                 the_page = response.read()
                 print(the_page)

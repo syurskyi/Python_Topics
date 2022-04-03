@@ -1,10 +1,10 @@
 from difflib import get_close_matches
 from os import path
-from urllib.request import urlretrieve
+from u__.r.. import u..
 
 DICTIONARY = path.join('/tmp', 'dictionary.txt')
 if not path.isfile(DICTIONARY):
-    urlretrieve('http://bit.ly/2iQ3dlZ', DICTIONARY)
+    u..('http://bit.ly/2iQ3dlZ', DICTIONARY)
 
 
 def load_words():

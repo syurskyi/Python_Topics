@@ -101,7 +101,7 @@ def closing(db):
 # мы можем использовать класс class в нашем операторе with. Давайте взглянем:
 
 from contextlib import closing
-from urllib.request import urlopen
+from u__.r.. import urlopen
 
 with closing(urlopen('http://www.google.com')) as webpage:
     for line in webpage:
