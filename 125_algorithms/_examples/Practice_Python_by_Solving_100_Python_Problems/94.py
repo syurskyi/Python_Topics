@@ -1,7 +1,7 @@
 #Clean each line by removing s from https and adding a slash
 
 with open("urls.txt", "r") as file:
-    lines = file.readlines()
+    lines = file.r..
 
 print(lines)
 

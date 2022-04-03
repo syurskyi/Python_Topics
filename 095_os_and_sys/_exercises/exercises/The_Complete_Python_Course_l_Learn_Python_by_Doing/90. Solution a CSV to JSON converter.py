@@ -3,7 +3,7 @@ ______ json
 json_list _ []  # store the converted json data for each line
 csv_file _ o..('csv_file.txt', 'r')
 
-___ line __ csv_file.readlines():
+___ line __ csv_file.r..:
     club, city, country _ line.strip().split(',')  # first get rid of the \n and then split with ','
     data _ {
         'club': club,

@@ -261,7 +261,7 @@ ___ toolsetLoader(fullFileName):
 #COMMENT: modify file before loading 
 ___ fileFilter(fileName, filterFunc):
     with open(fileName) __ f:
-        content _ f.readlines()
+        content _ f.r..
     modifiedContentList _ # list
     ___ line __ content:
         __ "file" __ line:

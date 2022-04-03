@@ -6,7 +6,7 @@ from timings import timings_log, get_bite_with_fastest_avg_test
 @pytest.fixture(scope='module')
 def timings():
     with open(timings_log) as f:
-        return f.readlines()
+        return f.r..
 
 
 @pytest.mark.parametrize("rows, expected_bites", [

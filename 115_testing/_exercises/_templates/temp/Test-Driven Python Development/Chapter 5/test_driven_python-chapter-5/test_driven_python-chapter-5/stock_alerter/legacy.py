@@ -11,7 +11,7 @@ c_ FileReader:
     ___ parse_file
         updates = # list
         w__ open(filename, "r") as fp:
-            ___ line __ fp.readlines():
+            ___ line __ fp.r..:
                 symbol, timestamp, price = line.split(",")
                 updates.ap..((symbol,
                                 d_t_.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),

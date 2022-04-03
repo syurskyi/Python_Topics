@@ -10,7 +10,7 @@ c_ settings(
 
     ___ __readFile
         __ __.path.exists(path
-            t.. _ o..(path, 'r').readlines
+            t.. _ o..(path, 'r').r..
             data _ {}
             __ t..:
                 ___ line in [x.strip ___ x in t..]:

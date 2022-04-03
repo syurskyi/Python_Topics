@@ -4,7 +4,7 @@ checklist  ["Portugal", "Germany", "Spain"]
 checklist  [i + "\n" ___ i __ checklist]
 
 w__ open("countries_missing.txt", "r") __ file:
-    content  file.readlines()
+    content  file.r..
 print(checklist + content)
 
 updated_list  s..(checklist + content)

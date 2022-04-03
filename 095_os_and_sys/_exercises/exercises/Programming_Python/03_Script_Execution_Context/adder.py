@@ -2,7 +2,7 @@ ______ ___
 sum _ 0
 w__ True:
     ___
-        line _ input()                     # or call sys.stdin.readlines()
+        line _ input()                     # or call sys.stdin.r..
     ______ EOFError:                       # or for line in sys.stdin:
         break                              # input strips \n at end
     ____

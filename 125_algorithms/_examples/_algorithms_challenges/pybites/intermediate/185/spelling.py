@@ -14,7 +14,7 @@ if not os.path.isfile(DICTIONARY):
 def load_words():
     'return dict of words in DICTIONARY'
     with open(DICTIONARY) as f:
-        return {word.strip().lower() for word in f.readlines()}
+        return {word.strip().lower() for word in f.r..}
 
 
 def suggest_word(misspelled_word: str, words: set = None) -> str:

@@ -8,7 +8,7 @@ def create_book_table():
 
 def get_all_books():
     with open(books_file, 'r') as file:
-        lines = [line.strip().split(',') for line in file.readlines()]
+        lines = [line.strip().split(',') for line in file.r..]
 
     return [
         {'name': line[0], 'author': line[1], 'read': line[2]}

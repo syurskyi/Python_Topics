@@ -22,7 +22,7 @@ def ip_file_valid():
     selected_ip_file.seek(0)
     
     #Reading each line (IP address) in the file
-    ip_list = selected_ip_file.readlines()
+    ip_list = selected_ip_file.r..
     
     #Closing the file
     selected_ip_file.close()

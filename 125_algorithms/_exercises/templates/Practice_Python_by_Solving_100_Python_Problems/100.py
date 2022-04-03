@@ -26,7 +26,7 @@
 #         w__ ?
 #             usr = request.form['username']
 #             w.. o..("users.txt", ?   __ file:
-#                 users = file.readlines()
+#                 users = file.r..
 #                 users = [i.s..("\n") ___ i __ users]
 #             __ usr __ users:
 #                 r.. render_template_string(html, message="Username exists!"+"<br>")

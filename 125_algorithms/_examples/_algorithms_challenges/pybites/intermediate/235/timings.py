@@ -14,7 +14,7 @@ if not timings_log.exists():
 def get_bite_with_fastest_avg_test(timings: list) -> str:
     """Return the bite which has the fastest average time per test"""
     # with open(timings) as f:
-    #     data = [line.strip("\n") for line in f.readlines()]
+    #     data = [line.strip("\n") for line in f.r..]
 
     fastest_bite = []
     for test in timings:

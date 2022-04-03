@@ -12,7 +12,7 @@ class settingClass(object):
 
 	def __readFile(self):
 		f = open(self.fullPath)
-		text = f.readlines()
+		text = f.r..
 		f.close()
 		# data = {}
 		for line in text:

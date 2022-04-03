@@ -31,7 +31,7 @@ ___ tail filepath  n
     ______:
         print("problem opening file")
     contents    # list
-    ___ line __ fo.readlines
+    ___ line __ fo.r..
         contents.a..(line.strip
     fo.c..
     r.. contents -n|

@@ -15,7 +15,7 @@ u__.r...u..(
 def load_dictionary():
     """Load dictionary (sample) and return as generator (done)"""
     with open(DICTIONARY) as f:
-        return (word.lower().strip() for word in f.readlines())
+        return (word.lower().strip() for word in f.r..())
 
 
 def is_palindrome(word):

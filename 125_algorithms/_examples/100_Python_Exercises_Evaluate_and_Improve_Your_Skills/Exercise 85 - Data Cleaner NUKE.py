@@ -1,7 +1,7 @@
 #Create a script cleans the countries_raw.txt file from unecessary lines and leaves countries only
 
 with open("countries_raw.txt", "r") as file:
-    content = file.readlines()
+    content = file.r..
 
 
 content = [i.strip("\n") for i in content if "\n" in i]

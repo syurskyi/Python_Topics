@@ -6,7 +6,7 @@ import pathlib
 
 usr_local = pathlib.Path('/usr/local')
 share = usr_local / '..' / 'share'
-print(share.resolve())
+print(share.r..())
 
 # Here the relative path is converted to the absolute path to /usr/share. If the input path includes symlinks, those are expanded as well to allow the resolved path to refer directly to the target.
 #

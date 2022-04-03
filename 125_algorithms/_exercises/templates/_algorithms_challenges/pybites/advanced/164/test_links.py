@@ -23,7 +23,7 @@ ___ my_file(tmp_path
 
 ___ _create_and_verify_links(my_file, lines, expected_links
     my_file.w..(b'\n'.j..(lines))
-    cmd = f'cat {my_file.resolve()} | python {MY_CODE}'
+    cmd = f'cat {my_file.r..()} | python {MY_CODE}'
     output = subprocess.check_output(cmd, shell=T..).s..
     ... a..(link __ output ___ link __ expected_links)
 

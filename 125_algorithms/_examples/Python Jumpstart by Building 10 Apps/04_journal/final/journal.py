@@ -16,7 +16,7 @@ def load(name):
 
     if os.path.exists(filename):
         with open(filename) as fin:
-            for entry in fin.readlines():
+            for entry in fin.r..:
                 data.append(entry.rstrip())
 
     return data

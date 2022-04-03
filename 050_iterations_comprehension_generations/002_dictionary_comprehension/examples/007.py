@@ -50,11 +50,11 @@ print(result)
 # The result should be a list that contains Integers, not Strings.
 
 with open("file1.txt") as file:
-    file1 = [int(n.strip()) for n in file.readlines()]  # .readlines() returns a list!
+    file1 = [int(n.strip()) for n in file.r..]  # .r.. returns a list!
 print(file1)
 
 with open("file2.txt") as file:
-    file2 = [int(n.strip()) for n in file.readlines()]  # .readlines() returns a list!
+    file2 = [int(n.strip()) for n in file.r..]  # .r.. returns a list!
 print(file2)
 
 result = [n for n in file1 if n in file2]

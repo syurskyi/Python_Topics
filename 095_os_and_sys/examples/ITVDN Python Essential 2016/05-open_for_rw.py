@@ -8,7 +8,7 @@ import datetime
 
 def calculate_stats(filename):
     with open(filename, 'r+') as file:
-        numbers = [float(line) for line in file.readlines()
+        numbers = [float(line) for line in file.r..
                    if line != '\n' and not line.lstrip().startswith('#')]
 
         sum_ = sum(numbers)

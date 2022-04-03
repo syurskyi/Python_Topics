@@ -10,7 +10,7 @@ h.request("GET", "/")
 data = h.getresponse()
 print (data.code)
 print (data.headers)
-text = data.readlines()
+text = data.r..
 for t in text:
     print(t.decode('utf-8'))
 

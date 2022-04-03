@@ -61,16 +61,16 @@ open(r'C:\Python31\python.exe', 'r').read()
 # ######################################################################################################################
 
 open('data.txt', 'w', encoding='cp500').writelines(['spam\n', 'ham\n'])
-open('data.txt', 'r', encoding='cp500').readlines()
+open('data.txt', 'r', encoding='cp500').r..
 # ['spam\n', 'ham\n']
 # ######################################################################################################################
 
-open('data.txt', 'r').readlines()
+open('data.txt', 'r').r..
 # UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 2:
 # character maps to <undefined>
 # ######################################################################################################################
 
-open('data.txt', 'rb').readlines()
+open('data.txt', 'rb').r..
 # [b'\xa2\x97\x81\x94\r%\x88\x81\x94\r%']
 
 open('data.txt', 'rb').read()

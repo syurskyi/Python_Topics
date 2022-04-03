@@ -19,15 +19,15 @@ def my_file(tmp_path):
 
 
 def test_tail_various_args(my_file):
-    assert tail(my_file.resolve(), 1) == ['Become a PyBites ninja!']
-    assert tail(my_file.resolve(), 2) == ['Keep calm and code in Python!',
+    assert tail(my_file.r..(), 1) == ['Become a PyBites ninja!']
+    assert tail(my_file.r..(), 2) == ['Keep calm and code in Python!',
                                           'Become a PyBites ninja!']
 
 
 def test_tail_arg_gt_num_lines_files(my_file):
     # n of > file length basically gets the whole file, but need to do some
     # byte to str conversion and strip off last line's newline char
-    actual = tail(my_file.resolve(), 10)
+    actual = tail(my_file.r..(), 10)
     expected = [line.decode("utf-8")
                 for line in content.splitlines()]
     assert actual == expected

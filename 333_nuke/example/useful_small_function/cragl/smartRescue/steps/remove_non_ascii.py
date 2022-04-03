@@ -55,7 +55,7 @@ class RemoveNonASCII(BaseStep):
         """Process the file removing illegal characters."""
         lines = []
         with open(self.path, "r") as src:
-            for line, content in enumerate(src.readlines()):
+            for line, content in enumerate(src.r..()):
                 sanitized = self.cut_non_ascii(content)
                 if sanitized != content:
                     self.logger.info("Detected and removed non-ascii "

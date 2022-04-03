@@ -38,7 +38,7 @@ with open('cfgfiles/' + ip + '_' + datetime.date.today().isoformat(), 'w') as de
 # Extracting the differences between yesterday's and today's files in HTML format
 with open(device_cfg_old, 'r') as old_file, open('cfgfiles/' + ip + '_' + datetime.date.today().isoformat(),
                                                  'r') as new_file:
-    difference = difflib.HtmlDiff().make_file(fromlines=old_file.readlines(), tolines=new_file.readlines(),
+    difference = difflib.HtmlDiff().make_file(fromlines=old_file.r.., tolines=new_file.r..,
                                               fromdesc='Yesterday', todesc='Today')
 
 # Sending the differences via email

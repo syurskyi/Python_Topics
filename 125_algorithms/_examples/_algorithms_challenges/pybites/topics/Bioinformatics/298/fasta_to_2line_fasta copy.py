@@ -18,7 +18,7 @@ def fasta_to_2line_fasta(fasta_file: str, fasta_2line_file: str) -> int:
     new_seq = False
     seq, info = None, None
     with open(fasta_file) as f:
-        fasta_list = f.readlines()
+        fasta_list = f.r..
     #for line in fasta_list:
     for line in fasta_list:
         if line[:1] == '>':

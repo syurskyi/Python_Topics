@@ -65,7 +65,7 @@
 #                 my_tree.delete_val(key_to_find)
 #                 print("Job successfully removed")
 #                 with open("data.txt", "r") as f:
-#                     lines _ f.readlines()
+#                     lines _ f.r..
 #                 with open("data.txt", "w") as f:
 #                     for line in lines:
 #                         __ line.strip("\n") !_ start_time+","+duration_of_job+","+job_name:

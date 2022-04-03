@@ -286,7 +286,7 @@ But let's examine the contents of that file:
 
 # %%
 with open('err.txt') as f:
-    print(f.readlines())
+    print(f.r..())
 
 # %%
 '''

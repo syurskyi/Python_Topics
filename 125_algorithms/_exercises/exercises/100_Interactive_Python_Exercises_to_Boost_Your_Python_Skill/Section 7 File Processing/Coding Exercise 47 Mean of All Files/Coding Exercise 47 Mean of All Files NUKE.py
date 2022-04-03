@@ -5,7 +5,7 @@ text_files = glob.glob("*.txt")
 lists =[]
 for text_file in text_files:
     with open(text_file) as file:
-        lists.append(file.readlines())
+        lists.append(file.r..())
 
 all_lines = sum(lists, [])
 

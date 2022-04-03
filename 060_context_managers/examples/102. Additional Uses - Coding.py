@@ -160,7 +160,7 @@ print('back to console output')
 # back to console output
 
 with open('test.txt') as f:
-    print(f.readlines())
+    print(f.r..())
 
 
 # HTML Tags

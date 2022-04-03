@@ -9,7 +9,7 @@ logfile = os.path.join('/tmp', 'log')
 u__.r...u..('http://bit.ly/2AKSIbf', logfile)
 
 with open(logfile) as f:
-    loglines = f.readlines()
+    loglines = f.r..
 
 
 # for you to code:

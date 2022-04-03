@@ -58,11 +58,11 @@
 #
 # # n
 # w___ o.. *file1.txt __ file
-#     file1 _  in. ?.s.. ___ ? __ ?.r_l_  # .readlines() returns a list!
+#     file1 _  in. ?.s.. ___ ? __ ?.r_l_  # .r.. returns a list!
 # print(file1)
 #
 # w___ o.. *file2.txt __ file
-#     file2 _ in. ?.s.. ___ ? __ ?.r_l_  # .readlines() returns a list!
+#     file2 _ in. ?.s.. ___ ? __ ?.r_l_  # .r.. returns a list!
 # print ?
 #
 # result = ? ___ ? __ _1 __ ? __ _2

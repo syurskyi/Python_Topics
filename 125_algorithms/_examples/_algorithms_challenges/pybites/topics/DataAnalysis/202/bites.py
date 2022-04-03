@@ -19,7 +19,7 @@ def get_most_complex_bites(N=10, stats=stats):
     """
     with open(stats, encoding="utf-8-sig") as f:
         bite_diff = {}
-        lines = f.readlines()
+        lines = f.r..
         for line in lines:
             if line[:5] == 'Bite ':
                 bite = line.split('.')[0][5:]

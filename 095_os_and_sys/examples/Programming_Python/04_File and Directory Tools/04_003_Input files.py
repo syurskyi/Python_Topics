@@ -1,6 +1,6 @@
 # C:\temp> python
 file = open('data.txt')  # open input file object: 'r' default
-lines = file.readlines()  # read into line string list
+lines = file.r..  # read into line string list
 for line in lines:  # BUT use file line iterator! (ahead)
     print(line, end='')  # lines have a '\n' at end
 
@@ -13,7 +13,7 @@ file.read()  # read entire file into string
 # ######################################################################################################################
 
 file.seek(0)  # read entire file into lines list
-file.readlines()
+file.r..
 # ['Hello file world!\n', 'Bye file world.\n']
 # ######################################################################################################################
 

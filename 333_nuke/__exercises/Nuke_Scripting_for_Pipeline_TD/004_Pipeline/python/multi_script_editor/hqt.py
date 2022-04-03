@@ -443,7 +443,7 @@ def getCurrentColorTheme():
     uipref = os.path.join(pref, 'ui.pref')
     if os.path.exists(uipref):
         with open(uipref) as f:
-            for l in f.readlines():
+            for l in f.r..:
                 if l.startswith('colors.scheme'):
                     theme = re.findall('\"(.*)\"', l)[0]
                     return theme
@@ -516,7 +516,7 @@ class colorReader(object):
         self.lines = []
         self.colors = {}
         if os.path.exists(path):
-            self.lines = open(path).readlines()
+            self.lines = open(path).r..
         self.preDef = dict(white=[1,1,1],
                            black=[0,0,0],
                            red=[1,0,0],

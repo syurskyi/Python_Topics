@@ -47,7 +47,7 @@ def grep(pattern, files, flags=''):
 
     for file_name in files:
         with open(file_name) as f:
-            for line_number, line in enumerate(f.readlines(), start=1):
+            for line_number, line in enumerate(f.r.., start=1):
                 if matches(line, pattern, flags):
                     matched_lines.append((file_name, line_number, line))
 

@@ -11,7 +11,7 @@ def check_anagram():
         count = 0 # Amount of anagrams found for the word.
         
         with open('words.txt', 'r') as f:
-            for line in f.readlines():
+            for line in f.r..:
                 line = line.replace('\n', '') # Remove spaces from the file.
                 anagram_data = Counter(line) # Count letter composition of word.
                 if word_data == anagram_data and word != line:

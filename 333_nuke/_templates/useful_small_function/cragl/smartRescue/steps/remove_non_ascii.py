@@ -55,7 +55,7 @@ c_ RemoveNonASCII(BaseStep):
         """Process the file removing illegal characters."""
         lines _ # list
         w__ o..(pa__, "r") __ src:
-            ___ line, content __ enumerate(src.readlines()):
+            ___ line, content __ enumerate(src.r..()):
                 sanitized _ cut_non_ascii(content)
                 __ sanitized !_ content:
                     logger.info("Detected and removed non-ascii "

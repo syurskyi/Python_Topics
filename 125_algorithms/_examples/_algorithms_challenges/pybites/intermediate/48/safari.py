@@ -16,7 +16,7 @@ def create_chart():
     slack_frequency = {}
 
     with open(SAFARI_LOGS) as file:
-        safari_logs = file.readlines()
+        safari_logs = file.r..
         for i in range(len(safari_logs)):
             previous = safari_logs[i -1]
             current = safari_logs[i]

@@ -28,7 +28,7 @@ print(res)
 # Using List Comprehensions on Files
 
 f = open('script1.py')
-lines = f.readlines()
+lines = f.r..
 print(lines)
 
 lines = [line.rstrip() for line in lines]
@@ -69,9 +69,9 @@ for x in 'abc':
 print(res)
 
 # Why You Will Care List Comprehensions and map
-print(open('myfile').readlines())
+print(open('myfile').r..())
 
-print([line.rstrip() for line in open('myfile').readlines()])
+print([line.rstrip() for line in open('myfile').r..])
 
 print([line.rstrip() for line in open('myfile')])
 

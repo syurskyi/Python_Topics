@@ -4,7 +4,7 @@ checklist = ["Portugal", "Germany", "Spain"]
 checklist = [i + "\n" for i in checklist]
 
 with open("countries_missing.txt", "r") as file:
-    content = file.readlines()
+    content = file.r..
 print(checklist + content)
 
 updated_list = sorted(checklist + content)

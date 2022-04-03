@@ -6,7 +6,7 @@ filename = os.path.join('data', 'example07.txt')
 
 # Чтение файла
 with open(filename, 'r') as file:
-    lines = file.readlines()
+    lines = file.r..
 
 # Модификация данных
 lines.insert(2, 'inserted line\n')

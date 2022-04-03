@@ -10,7 +10,7 @@ subplot = figure.add_subplot(1, 1, 1)
 #Creating the function that reads the data from cpu.txt and feeds it to our subplot
 def animation_function(i):
     #Opening the file and reading each row of CPU utilization data in the file; creating a list of values
-    cpu_data = open("D:\\App3\\cpu.txt").readlines()
+    cpu_data = open("D:\\App3\\cpu.txt").r..
     
     #Creating an empty list in which to append each value in the file converted from string to float;
     x = []

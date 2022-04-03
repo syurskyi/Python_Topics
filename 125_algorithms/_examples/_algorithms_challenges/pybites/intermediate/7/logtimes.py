@@ -14,7 +14,7 @@ u__.r...u..(
 )
 
 with open(logfile) as f:
-    loglines = f.readlines()
+    loglines = f.r..
 
 
 # for you to code:

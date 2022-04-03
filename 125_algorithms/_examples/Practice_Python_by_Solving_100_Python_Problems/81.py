@@ -1,7 +1,7 @@
 while True:
     usr = input("Enter username: ")
     with open("users.txt", "r") as file:
-        users = file.readlines()
+        users = file.r..
         users = [i.strip("\n") for i in users]
     if usr in users:
         print("Username exists")

@@ -39,7 +39,7 @@ ___ get_movie_longest_runtime(movies: l..) __ s..:
 
 #files = []
 #with open("omdb_data.json") as f:
-#    for i, line in enumerate(f.readlines(), 1):
+#    for i, line in enumerate(f.r.., 1):
 #        movie_json = f'{i}.json'
 #        with open(movie_json, 'w') as f:
 #            f.write(f'{line}\n')

@@ -11,7 +11,7 @@ ___ check_anagram
         count = 0 # Amount of anagrams found for the word.
         
         w__ o.. 'words.txt', _ __ f:
-            ___ line __ f.readlines
+            ___ line __ f.r..
                 line = line.r..('\n', '') # Remove spaces from the file.
                 anagram_data = Counter(line) # Count letter composition of word.
                 __ word_data __ anagram_data a.. word != line:

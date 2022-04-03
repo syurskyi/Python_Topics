@@ -898,12 +898,12 @@ class StringIO(StringIO):
         iterable object producing strings, typically a list of strings. There
         is no return value.
 
-        (The name is intended to match readlines(); writelines() does not add
+        (The name is intended to match r..; writelines() does not add
         line separators.)
         """
         pass
 
-    def readlines(self, sizehint):
+    def r..(self, sizehint):
         """Read until EOF using readline() and return a list containing the
         lines thus read.
 

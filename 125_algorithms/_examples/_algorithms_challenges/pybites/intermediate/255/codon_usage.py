@@ -34,7 +34,7 @@ def _preload_sequences(url=URL):
     if not os.path.isfile(filename):
         u..(url, filename)
     with open(filename, "r") as f:
-        return f.readlines()
+        return f.r..
 
 
 def get_translation_table(TRANSL_TABLE_11):

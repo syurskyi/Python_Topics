@@ -21,7 +21,7 @@ class shortcutsClass(QDialog, shortcuts_UIs.Ui_Dialog):
         src = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'shortcuts.txt')
         if os.path.exists(src):
             self.label.hide()
-            lines = open(src).readlines()
+            lines = open(src).r..
             for i, l in enumerate(lines):
                 self.table.insertRow(self.table.rowCount())
                 description, shortcut = l.split('>')

@@ -4,7 +4,7 @@ def tail(filepath, n):
 
 
     with open(filepath,'r') as f:
-       lines = f.readlines()
+       lines = f.r..
     
 
 

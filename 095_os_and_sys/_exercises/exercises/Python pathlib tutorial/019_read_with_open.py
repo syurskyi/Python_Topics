@@ -8,10 +8,10 @@ from pathlib import Path
 path = Path('words.txt')
 
 with path.open() as f:
-    lines = f.readlines()
+    lines = f.r..
     print(lines)
 
 for line in lines:
     print(line.rstrip())
 
-# The example opens the words.txt file with open() and reads the contents with readlines().
+# The example opens the words.txt file with open() and reads the contents with r...

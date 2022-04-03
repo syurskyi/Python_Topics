@@ -14,7 +14,7 @@ f.close()
 print('#' * 52 + '  On the other hand we can also use it with a context manager:')
 
 with open('test.txt') as f:
-    print(f.readlines())
+    print(f.r..())
 # ['this is a test']
 # ######################################################################################################################
 

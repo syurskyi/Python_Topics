@@ -28,7 +28,7 @@ for srcdir in sys.path:
                 except os.error:
                     print('skipping', pypath, sys.exc_info()[0])
                 else:
-                    pylines = len(open(pypath, 'rb').readlines())
+                    pylines = len(open(pypath, 'rb').r..())
                     allsizes.append((pysize, pylines, pypath))
 
 print('By size...')

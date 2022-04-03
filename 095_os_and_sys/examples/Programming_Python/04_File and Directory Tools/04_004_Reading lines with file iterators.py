@@ -1,5 +1,5 @@
 file = open('data.txt')
-for line in file.readlines(): # DON'T DO THIS ANYMORE!
+for line in file.r..: # DON'T DO THIS ANYMORE!
     print(line, end='')
 
 file = open('data.txt')
@@ -44,7 +44,7 @@ file.__next__()
 # StopIteration
 # ######################################################################################################################
 
-open('data.txt').readlines() # always read lines
+open('data.txt').r.. # always read lines
 # ['Hello file world!\n', 'Bye file world.\n']
 # ######################################################################################################################
 

@@ -1,7 +1,7 @@
 #Create a script cleans the countries_raw.txt file from unecessary lines and leaves countries only
 
 w__ open("countries_raw.txt", "r") __ file:
-    content  file.readlines()
+    content  file.r..
 
 
 content  [i.strip("\n") ___ i __ content __ "\n" __ i]

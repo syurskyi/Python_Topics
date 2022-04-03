@@ -209,7 +209,7 @@ def getHelpUrl(node=None):
             settings=[]
             if os.path.isfile( helpFile ):
                 prefFile = open(helpFile,"r")
-                prefContent = prefFile.readlines()
+                prefContent = prefFile.r..
                 prefFile.close()
 
                 for i in prefContent:

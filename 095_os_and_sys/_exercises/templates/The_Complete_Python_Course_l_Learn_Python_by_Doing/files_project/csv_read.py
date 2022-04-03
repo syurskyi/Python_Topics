@@ -1,5 +1,5 @@
 file _ o..('csv_data.txt', 'r')
-lines _ file.readlines()
+lines _ file.r..
 file.close()
 
 lines _ [line.strip() ___ line __ lines[1:]]

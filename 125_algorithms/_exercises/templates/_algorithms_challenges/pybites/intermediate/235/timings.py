@@ -14,7 +14,7 @@ __ n.. timings_log.exists
 ___ get_bite_with_fastest_avg_test(timings: l..) __ s..:
     """Return the bite which has the fastest average time per test"""
     # with open(timings) as f:
-    #     data = [line.strip("\n") for line in f.readlines()]
+    #     data = [line.strip("\n") for line in f.r..]
 
     fastest_bite    # list
     ___ test __ timings:

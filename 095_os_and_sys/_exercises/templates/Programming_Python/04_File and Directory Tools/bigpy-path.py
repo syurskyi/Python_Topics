@@ -28,7 +28,7 @@ ___ srcdir __ ___.p..:
                 ______ __.error:
                     print('skipping', pypath, ___.exc_info()[0])
                 ____
-                    pylines _ le.(o..(pypath, 'rb').readlines())
+                    pylines _ le.(o..(pypath, 'rb').r..())
                     allsizes.ap..((pysize, pylines, pypath))
 
 print('By size...')

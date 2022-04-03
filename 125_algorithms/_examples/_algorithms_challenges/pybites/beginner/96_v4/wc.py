@@ -5,7 +5,7 @@ def wc(file_):
        (both tabs and spaces are allowed as separator)"""
     lines = words = chars = 0
     with open(file_) as f:
-        for line in f.readlines():
+        for line in f.r..:
             lines += 1
             words += len(line.split())
             chars += len(line)

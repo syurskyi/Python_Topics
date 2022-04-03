@@ -4,7 +4,7 @@
 checklist  ["Portugal", "Germany", "Munster", "Spain"]
 
 w__ open("countries_clean.txt", "r") __ file:
-    content  file.readlines()
+    content  file.r..
 
 content  [i.rstrip('\n') ___ i __ content]
 checked  [i ___ i __ content __ i __ checklist]

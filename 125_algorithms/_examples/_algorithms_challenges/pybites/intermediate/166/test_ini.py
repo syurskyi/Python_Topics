@@ -330,7 +330,7 @@ def test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path):
     f = tmp_path / "some_file.txt"
     f.write_bytes(ini_file.encode())  # https://bugs.python.org/issue17271
 
-    tip = ToxIniParser(f.resolve())
+    tip = ToxIniParser(f.r..())
 
     assert tip.number_of_sections == num_sections
     assert sorted(tip.environments) == sorted(envs)

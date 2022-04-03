@@ -1,6 +1,6 @@
 # # open('file').read() # read entire file into string
 # # open('file').read(N) # read next N bytes into string
-# # open('file').readlines() # read entire file into line strings list
+# # open('file').r.. # read entire file into line strings list
 # # open('file').readline() # read next line, through '\n'
 #
 # file _ o..('spam.txt', 'w') # create file spam.txt

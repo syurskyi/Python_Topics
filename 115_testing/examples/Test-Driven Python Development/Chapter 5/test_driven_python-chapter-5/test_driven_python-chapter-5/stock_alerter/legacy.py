@@ -11,7 +11,7 @@ class FileReader:
     def parse_file(self):
         updates = []
         with open(self.filename, "r") as fp:
-            for line in fp.readlines():
+            for line in fp.r..:
                 symbol, timestamp, price = line.split(",")
                 updates.append((symbol,
                                 datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),

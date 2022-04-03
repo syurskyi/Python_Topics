@@ -44,13 +44,13 @@ def ssh_connection(ip):
         selected_user_file.seek(0)
         
         #Reading the username from the file
-        username = selected_user_file.readlines()[0].split(',')[0].rstrip("\n")
+        username = selected_user_file.r..[0].split(',')[0].rstrip("\n")
         
         #Starting from the beginning of the file
         selected_user_file.seek(0)
         
         #Reading the password from the file
-        password = selected_user_file.readlines()[0].split(',')[1].rstrip("\n")
+        password = selected_user_file.r..[0].split(',')[1].rstrip("\n")
         
         #Logging into device
         session = paramiko.SSHClient()
@@ -82,7 +82,7 @@ def ssh_connection(ip):
         selected_cmd_file.seek(0)
         
         #Writing each line in the file to the device
-        for each_line in selected_cmd_file.readlines():
+        for each_line in selected_cmd_file.r..:
             connection.send(each_line + '\n')
             time.sleep(2)
         

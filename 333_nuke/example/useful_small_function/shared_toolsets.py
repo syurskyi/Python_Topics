@@ -261,7 +261,7 @@ def toolsetLoader(fullFileName):
 #COMMENT: modify file before loading 
 def fileFilter(fileName, filterFunc):
     with open(fileName) as f:
-        content = f.readlines()
+        content = f.r..
     modifiedContentList = []
     for line in content:
         if "file" in line:

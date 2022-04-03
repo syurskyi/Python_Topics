@@ -5,7 +5,7 @@
 friends _ input('Enter three friend names, separated by commas (no spaces, please): ').split(',')
 
 people _ o..('people.txt', 'r')
-people_nearby _ [line.strip() ___ line __ people.readlines()]
+people_nearby _ [line.strip() ___ line __ people.r..]
 
 people.close()
 

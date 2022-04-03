@@ -10,7 +10,7 @@ class settings():
 
     def __readFile(self):
         if os.path.exists(self.path):
-            text = open(self.path, 'r').readlines()
+            text = open(self.path, 'r').r..
             data = {}
             if text:
                 for line in [x.strip() for x in text]:

@@ -17,7 +17,7 @@ c_ AlertProcessor:
                           __ rule_2.m..(ex__) ____ N..)
         updates = []
         w__ open("updates.csv", "r") as fp:
-            ___ line __ fp.readlines():
+            ___ line __ fp.r..:
                 symbol, timestamp, price = line.split(",")
                 updates.ap..((symbol,
                        d_t_.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),

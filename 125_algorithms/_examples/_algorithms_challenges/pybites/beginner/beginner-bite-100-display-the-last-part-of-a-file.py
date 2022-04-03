@@ -31,7 +31,7 @@ def tail(filepath, n):
     except:
         print("problem opening file")
     contents = []
-    for line in fo.readlines():
+    for line in fo.r..:
         contents.append(line.strip())
     fo.close()
     return contents[-n:]

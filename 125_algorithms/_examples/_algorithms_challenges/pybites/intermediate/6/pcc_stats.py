@@ -37,7 +37,7 @@ def gen_files(tempfile=tempfile):
        followed by 03/aleksandarknezevic
     """
     with open(tempfile) as file:
-        data = file.readlines()
+        data = file.r..
 
         for row in data:
             current = row.strip("\n").split(",")

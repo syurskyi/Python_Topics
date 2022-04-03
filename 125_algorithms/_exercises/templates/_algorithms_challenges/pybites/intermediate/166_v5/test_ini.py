@@ -330,7 +330,7 @@ ___ test_tox_ini_parser(ini_file, num_sections, envs, base_pys, tmp_path
     f = tmp_path / "some_file.txt"
     f.w..(ini_file.encode  # https://bugs.python.org/issue17271
 
-    tip = ToxIniParser(f.resolve
+    tip = ToxIniParser(f.r..
 
     ... tip.number_of_sections __ num_sections
     ... s..(tip.environments) __ s..(envs)

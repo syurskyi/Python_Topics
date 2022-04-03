@@ -21,7 +21,7 @@ ___ get_all_timestamps
     """
     result    # list
     w__ o.. COURSE_TIMES) __ ct:
-        ___ line __ ct.readlines
+        ___ line __ ct.r..
             times = __.f..(r'\((\d\d?:\d\d)\)', line)
             __ l..(times) > 0:
                 result.a..(times[0])

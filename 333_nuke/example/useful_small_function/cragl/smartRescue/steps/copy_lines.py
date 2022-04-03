@@ -79,7 +79,7 @@ class CopyLines(BaseStep):
         path_temp = "{}_".format(self.path)
 
         with open(self.path, "r") as src, open(path_temp, "w") as dest:
-            lines = src.readlines()
+            lines = src.r..
             copy_lines = lines[first_line-1:last_line]
             dest.write("".join(copy_lines))
 

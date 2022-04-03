@@ -4,7 +4,7 @@ def wc(file_):
        3 12 60 /tmp/somefile
        (both tabs and spaces are allowed as separator)"""
     with open(file_,'r') as f:
-        lines = f.readlines()
+        lines = f.r..
 
 
     number_of_lines = len(lines)

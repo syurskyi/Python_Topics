@@ -32,7 +32,7 @@ def _preload_sequences(url=URL):
     if not os.path.isfile(filename):
         u..(url, filename)
     with open(filename, "r") as f:
-        return f.readlines()
+        return f.r..
 
 def codon_info(codons, count, total, translation):
     return_str = '|'

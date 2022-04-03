@@ -19,7 +19,7 @@ u__.r...u..(
 def get_harry_most_common_word():
     common_word = []
     with open(stopwords_file) as f:
-        stopwords_list = [word.strip() for word in f.readlines()]
+        stopwords_list = [word.strip() for word in f.r..]
         #print(stopwords_list)
     with open(harry_text, encoding='utf8') as f:
         for lines in f:

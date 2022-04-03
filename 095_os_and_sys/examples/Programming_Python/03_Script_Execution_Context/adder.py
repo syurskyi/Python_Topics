@@ -2,7 +2,7 @@ import sys
 sum = 0
 while True:
     try:
-        line = input()                     # or call sys.stdin.readlines()
+        line = input()                     # or call sys.stdin.r..
     except EOFError:                       # or for line in sys.stdin:
         break                              # input strips \n at end
     else:

@@ -13,7 +13,7 @@ if not PATH.exists():
 
 def _get_data(path=PATH):
     with open(path) as f:
-        return [line.rstrip() for line in f.readlines()]
+        return [line.rstrip() for line in f.r..]
 
 
 def filter_killed_mutants(mutpy_output: list = None) -> list:

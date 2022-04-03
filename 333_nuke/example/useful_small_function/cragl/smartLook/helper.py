@@ -192,7 +192,7 @@ def parse_advanced_settings(*args):
     advanced_settings_file = os.path.join(get_tool_public_root(), 'advancedsettings.set')
     try:
         with open(advanced_settings_file, 'r') as advset:
-            advanced_settings_lines = [ line for line in advset.readlines() if line[:len(vars_line)] == vars_line ]
+            advanced_settings_lines = [ line for line in advset.r.. if line[:len(vars_line)] == vars_line ]
     except:
         pass
 

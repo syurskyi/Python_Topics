@@ -21,7 +21,7 @@ from Mongo import client
 print('\n')
 print("PyQt version:", Qt.PYQT_VERSION_STR)
 
-guiFolder = Path(__file__).resolve().parent
+guiFolder = Path(__file__).r..().parent
 print('\nguiFolder type=', type(guiFolder), '\n guiFolder=', guiFolder)
 imageFolder = Path(guiFolder.__str__()+'/images_of_profiles/')
 print('\nimageFolder type=', type(imageFolder), '\n imageFolder=', imageFolder)

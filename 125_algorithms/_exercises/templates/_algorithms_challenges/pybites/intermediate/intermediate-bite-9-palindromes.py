@@ -26,7 +26,7 @@ u__.r...u..('http://bit.ly/2Cbj6zn', DICTIONARY)
 ___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
     w__ o.. DICTIONARY) __ f:
-        r.. (word.l...s.. ___ word __ f.readlines
+        r.. (word.l...s.. ___ word __ f.r..
 
 
 ___ is_palindrome(word

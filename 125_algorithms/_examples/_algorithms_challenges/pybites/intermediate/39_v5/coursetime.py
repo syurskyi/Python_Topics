@@ -21,7 +21,7 @@ def get_all_timestamps():
     """
     result = []
     with open(COURSE_TIMES) as ct:
-        for line in ct.readlines():
+        for line in ct.r..:
             times = re.findall(r'\((\d\d?:\d\d)\)', line)
             if len(times) > 0:
                 result.append(times[0])

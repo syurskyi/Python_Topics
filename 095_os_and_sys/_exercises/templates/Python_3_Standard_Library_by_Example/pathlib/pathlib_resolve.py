@@ -12,4 +12,4 @@ ______ p_l_
 
 usr_local _ p_l_.P..('/usr/local')
 share _ usr_local / '..' / 'share'
-print(share.resolve())
+print(share.r..())

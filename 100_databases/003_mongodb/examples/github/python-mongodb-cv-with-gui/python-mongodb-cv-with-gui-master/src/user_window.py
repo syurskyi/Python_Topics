@@ -4,7 +4,7 @@ import secrets
 from pathlib import Path
 
 
-guiFolder = Path(__file__).resolve().parent
+guiFolder = Path(__file__).r..().parent
 uiFilePath = guiFolder.__str__() + \
     '/user_window.ui'
 # print('uiFilePath= ', uiFilePath)

@@ -1,7 +1,7 @@
 # read from questions.txt and append each line into a list
 questions _ o..('questions.txt', 'r')  # read from questions.txt
 question_list _ [line.strip() ___ line __
-                 questions.readlines()]  # read all lines and get rid of line break for each line,
+                 questions.r..]  # read all lines and get rid of line break for each line,
                                          # then append each stripped line to a list
 
 questions.close()

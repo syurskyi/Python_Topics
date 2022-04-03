@@ -5,7 +5,7 @@
 friends = input('Enter three friend names, separated by commas (no spaces, please): ').split(',')
 
 people = open('people.txt', 'r')
-people_nearby = [line.strip() for line in people.readlines()]
+people_nearby = [line.strip() for line in people.r..]
 
 people.close()
 

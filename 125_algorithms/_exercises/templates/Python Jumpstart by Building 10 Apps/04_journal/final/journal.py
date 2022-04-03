@@ -16,7 +16,7 @@ ___ load(name):
 
     __ os.path.exists(filename):
         w__ open(filename) __ fin:
-            ___ entry __ fin.readlines
+            ___ entry __ fin.r..
                 data.a..(entry.rstrip())
 
     r.. data

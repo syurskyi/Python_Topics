@@ -23,7 +23,7 @@
 # 
 
 #
-# read_data is a string for the read(), readline(), and readlines() methods of the file handle to return.
+# read_data is a string for the read(), readline(), and r.. methods of the file handle to return.
 # Calls to those methods will take data from read_data until it is depleted. The mock of these methods is pretty simplistic: every time the mock is called,
 # the read_data is rewound to the start. If you need more control over the data that you are feeding to the tested code you will need to customize this
 # mock for yourself. When that is insufficient, one of the in-memory filesystem packages on PyPI can offer a realistic filesystem for testing.

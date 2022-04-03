@@ -17,7 +17,7 @@ class AlertProcessor:
                           if rule_2.matches(self.exchange) else None)
         updates = []
         with open("updates.csv", "r") as fp:
-            for line in fp.readlines():
+            for line in fp.r..:
                 symbol, timestamp, price = line.split(",")
                 updates.append((symbol,
                        datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%S.%f"),

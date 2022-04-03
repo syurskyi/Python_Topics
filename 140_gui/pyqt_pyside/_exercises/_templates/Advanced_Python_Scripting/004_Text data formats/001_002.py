@@ -12,7 +12,7 @@ c_ settingClass(object
 
 	___ __readFile 
 		f _ o..(fullPath)
-		t.. _ f.readlines
+		t.. _ f.r..
 		f.c..
 		# data = {}
 		___ line __ t..:

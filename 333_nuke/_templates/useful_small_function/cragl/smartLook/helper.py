@@ -192,7 +192,7 @@ ___ parse_advanced_settings(*args):
     advanced_settings_file _ __.pa__.j..(get_tool_public_root(), 'advancedsettings.set')
     ___
         w__ o..(advanced_settings_file, 'r') __ advset:
-            advanced_settings_lines _ [ line ___ line __ advset.readlines() __ line[:le.(vars_line)] __ vars_line ]
+            advanced_settings_lines _ [ line ___ line __ advset.r.. __ line[:le.(vars_line)] __ vars_line ]
     ______
         p..
 

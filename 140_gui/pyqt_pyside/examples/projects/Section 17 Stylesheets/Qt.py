@@ -1396,7 +1396,7 @@ def _cli(args):
         # ------> Read
         #
         with open(args.convert) as f:
-            lines = _convert(f.readlines())
+            lines = _convert(f.r..())
 
         backup = "%s_backup%s" % os.path.splitext(args.convert)
         sys.stdout.write("Creating \"%s\"..\n" % backup)

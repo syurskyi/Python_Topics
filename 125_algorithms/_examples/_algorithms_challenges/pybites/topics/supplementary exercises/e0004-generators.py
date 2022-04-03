@@ -12,7 +12,7 @@ def function_2():
 
     with open("sample_file.txt") as infile:
         print(type(infile))
-        data = infile.readlines()
+        data = infile.r..
         for line in data:
             print(line.strip())
 

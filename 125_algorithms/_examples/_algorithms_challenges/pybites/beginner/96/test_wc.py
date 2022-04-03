@@ -18,7 +18,7 @@ py_file = 'https://bites-data.s3.us-east-2.amazonaws.com/driving.py'
 def test_wc(some_text, expected, tmp_path):
     f = tmp_path / "some_file.txt"
     f.write_bytes(some_text)
-    output = wc(f.resolve())
+    output = wc(f.r..())
     print(output)
     # replace tabs / multiple spaces by single space
     counts = ' '.join(output.split()[:3])
@@ -30,7 +30,7 @@ def test_wc(some_text, expected, tmp_path):
 def test_wc_on_real_py_file(tmp_path):
     f = tmp_path / "driving.py"
     u..(py_file, f)
-    output = wc(f.resolve())
+    output = wc(f.r..())
     counts = ' '.join(output.split()[:3])
     # https://twitter.com/pybites/status/1175795375904628736
     expected = "7 29 216"  # not 8!

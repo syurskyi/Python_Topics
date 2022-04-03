@@ -21,7 +21,7 @@ if not Path(DATA_LOCAL).exists():
 def movies():
     files = []
     with open(DATA_LOCAL) as f:
-        for i, line in enumerate(f.readlines(), 1):
+        for i, line in enumerate(f.r.., 1):
             movie_json = TMP / f'{i}.json'
             with open(movie_json, 'w') as f:
                 f.write(f'{line}\n')

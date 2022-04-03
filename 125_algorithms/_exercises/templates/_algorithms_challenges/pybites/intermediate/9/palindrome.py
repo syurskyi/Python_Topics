@@ -14,7 +14,7 @@ u__.r...u..(
 ___ load_dictionary
     """Load dictionary (sample) and return as generator (done)"""
     w__ o.. DICTIONARY) __ f:
-        r.. (word.l...s.. ___ word __ f.readlines
+        r.. (word.l...s.. ___ word __ f.r..
 
 
 ___ _clean_word(word

@@ -60,7 +60,7 @@ print('#' * 52 + '  And we can read back from the file too:')
 
 file_gen = open_file('test.txt')
 with GenContextManager(file_gen) as f:
-    print(f.readlines())
+    print(f.r..())
 # opening file...
 # ['Sir Spamalot']
 # calling next to perform cleanup in generator
@@ -102,7 +102,7 @@ def open_file(fname, mode='r'):
 
 
 with open_file('test.txt') as f:
-    print(f.readlines())
+    print(f.r..())
 # opening file...
 # ['Sir Spamalot']
 # calling next to perform cleanup in generator
@@ -134,7 +134,7 @@ def open_file(fname, mode='r'):
         f.close()
 
 with open_file('test.txt') as f:
-    print(f.readlines())
+    print(f.r..())
 # opening file...
 # ['Sir Spamalot']
 # closing file...
@@ -196,7 +196,7 @@ with out_to_file('test.txt'):
     print('line 2')
 
 with open('test.txt') as f:
-    print(f.readlines())
+    print(f.r..())
 # ['line 1\n', 'line 2\n']
 # ######################################################################################################################
 
@@ -226,6 +226,6 @@ with open('test.txt', 'w') as f:
 # And we can check that this worked:
 
 with open('test.txt') as f:
-    print(f.readlines())
+    print(f.r..())
 # ['Look on the bright side of life\n']
 # ######################################################################################################################

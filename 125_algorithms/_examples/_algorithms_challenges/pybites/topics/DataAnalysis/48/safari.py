@@ -15,7 +15,7 @@ PY_BOOK, OTHER_BOOK = '🐍', '.'
 def create_chart():
     #count = 0
     with open('safari.logs', encoding="utf-8") as f:
-        all_lines = f.readlines()
+        all_lines = f.r..
         lines = [line.rstrip() for line in all_lines]
         #print(len(lines))
         current_date = ''

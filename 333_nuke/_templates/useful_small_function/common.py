@@ -209,7 +209,7 @@ ___ getHelpUrl(node_N..):
             settings_[]
             __ __.pa__.isfile( helpFile ):
                 prefFile _ open(helpFile,"r")
-                prefContent _ prefFile.readlines()
+                prefContent _ prefFile.r..
                 prefFile.close()
 
                 ___ i __ prefContent:

@@ -26,7 +26,7 @@ def sent():
         while True:
             usr = request.form['username']
             with open("users.txt", "r") as file:
-                users = file.readlines()
+                users = file.r..
                 users = [i.strip("\n") for i in users]
             if usr in users:
                 return render_template_string(html, message="Username exists!"+"<br>")
