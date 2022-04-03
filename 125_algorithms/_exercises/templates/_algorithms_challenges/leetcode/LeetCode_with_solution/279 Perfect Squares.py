@@ -4,7 +4,7 @@ to n.
 
 For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
 """
-_______ math
+_______ m__
 _______ ___
 
 __author__ = 'Daniel'
@@ -46,7 +46,7 @@ c_ Solution(o..
             level += 1
             l = l..(q)
             ___ i __ x..(l
-                ___ j __ x..(1, i..(math.sqrt(n))+1
+                ___ j __ x..(1, i..(m__.sqrt(n))+1
                     nxt = q[i]+j*j
                     __ nxt <= n a.. visited[nxt]:
                         _____
@@ -69,7 +69,7 @@ c_ Solution(o..
         """
         F = [i ___ i __ x..(n+1)]
         ___ i __ x..(1, n+1
-            ___ j __ x..(1, i..(math.sqrt(i))+1
+            ___ j __ x..(1, i..(m__.sqrt(i))+1
                 __ i-j*j >= 0:
                     F[i] = m..(F[i], F[i-j*j]+1)
 

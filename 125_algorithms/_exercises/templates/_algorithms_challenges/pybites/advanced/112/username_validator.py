@@ -54,7 +54,7 @@ ___ validate_username(platform, username
     all_validators = parse_social_platforms_string()
 
     __ platform n.. __ all_validators:
-        r.. ValueError
+        r.. V...
     platform_validator = all_validators[platform]
 
     r.. l..(username) __ platform_validator.r.. a.. platform_validator.regex.s..(username)

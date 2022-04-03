@@ -30,7 +30,7 @@ ___ convert_to_datetime(line
     line_split = line.s..(" ")
     ___ word __ line_split:
         ___
-            line_ts = d__.strptime(word, "%Y-%m-%dT%H:%M:%S")
+            line_ts = d__.s..(word, "%Y-%m-%dT%H:%M:%S")
             r.. line_ts
         ______:
             _____

@@ -43,13 +43,13 @@ c_ OcrTest(unittest.TestCase
                                  "   "]), '?')
 
     ___ test_too_short_row
-        assertRaises(ValueError, number, ["   ",
+        assertRaises(V..., number, ["   ",
                                                " _|",
                                                " |",
                                                "   "])
 
     ___ test_insufficient_rows
-        assertRaises(ValueError, number, ["   ",
+        assertRaises(V..., number, ["   ",
                                                " _|",
                                                " X|"])
 
@@ -114,7 +114,7 @@ c_ OcrTest(unittest.TestCase
             ])
 
     ___ test_invalid_grid
-        assertRaises(ValueError, grid, '123a')
+        assertRaises(V..., grid, '123a')
 
 
 __ _____ __ _____

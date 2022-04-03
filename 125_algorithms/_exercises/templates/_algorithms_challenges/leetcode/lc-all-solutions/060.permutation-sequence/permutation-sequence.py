@@ -6,7 +6,7 @@ c_ Solution(o..
     :rtype: str
     """
     visited = [0 ___ i __ r..(n)]
-    fact = [math.factorial(n - i - 1) ___ i __ r..(n)]
+    fact = [m__.factorial(n - i - 1) ___ i __ r..(n)]
     ans = ""
     k -= 1
     ___ i __ r..(n

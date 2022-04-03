@@ -33,7 +33,7 @@ ___ sanitize(s
     ____ s..(s) - s..( '0', '1'
         r.. ""
     __ l..(s) > 5:
-        r.. ValueError('Binary string too long')
+        r.. V...('Binary string too long')
     r.. "0" * (l..(gestures) - l..(s)) + s
 
 

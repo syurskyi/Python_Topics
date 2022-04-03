@@ -1,12 +1,12 @@
 ____ i.. _______ product
 ____ functools _______ reduce
 ____ operator _______ mul
-____ math _______ sqrt
+____ m__ _______ sqrt
 
 
 ___ primitive_triplets(nbr
     __ nbr % 4 != 0:
-        r.. ValueError('Argument must be divisible by 4')
+        r.. V...('Argument must be divisible by 4')
     prime_factors, powers = factor(nbr / 2)
     args = [(1, prime_factors[i1] ** powers[i1]) ___ i1 __ r..(l..(powers))]
     a = [reduce(mul, p) ___ p __ product(*args)]

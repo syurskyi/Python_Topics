@@ -17,7 +17,7 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
     """
 
     __ base < 2 o. base > 36:
-        r.. ValueError
+        r.. V...
 
     d..    # list
     w.... number > 0:

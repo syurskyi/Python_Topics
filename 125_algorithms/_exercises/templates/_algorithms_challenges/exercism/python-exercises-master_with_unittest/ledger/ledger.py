@@ -11,7 +11,7 @@ c_ LedgerEntry(o..
 
 ___ create_entry(date, description, change
     entry = LedgerEntry()
-    entry.date = d__.strptime(date, '%Y-%m-%d')
+    entry.date = d__.s..(date, '%Y-%m-%d')
     entry.description = description
     entry.change = change
     r.. entry

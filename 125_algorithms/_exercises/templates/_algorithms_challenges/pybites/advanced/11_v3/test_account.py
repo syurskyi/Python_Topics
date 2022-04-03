@@ -12,7 +12,7 @@ ___ test_account_balance
     ... checking.balance __ 10
 
     ... saving.start_balance __ 10
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         saving - 'a'
     saving - 5
     ... saving.balance __ 5

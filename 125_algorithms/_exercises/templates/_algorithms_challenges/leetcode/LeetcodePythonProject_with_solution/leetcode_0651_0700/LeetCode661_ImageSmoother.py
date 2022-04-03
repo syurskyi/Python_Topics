@@ -9,7 +9,7 @@ c_ Solution(o..
         :type M: List[List[int]]
         :rtype: List[List[int]]
         """
-        _______ math
+        _______ m__
         matrix = M
         __ n.. matrix o. n.. matrix[0]:
             r.. []
@@ -25,7 +25,7 @@ c_ Solution(o..
                         __ matrix[x][y] != 0:
                             count += f__(matrix[x][y])
                         num += 1
-                tmp = i..(math.floor(count/num))
+                tmp = i..(m__.floor(count/num))
                 res[i][j] = tmp
         r.. res
     

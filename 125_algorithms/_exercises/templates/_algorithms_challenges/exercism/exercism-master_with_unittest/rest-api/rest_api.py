@@ -24,7 +24,7 @@ c_ RestAPI(o..
 
     ___ post  url, payload_ N..
         __ payload __ N..
-            r.. ValueError("Payload must not be None.")
+            r.. V...("Payload must not be None.")
 
         payload = json.loads(payload)
         __ url __ '/add':

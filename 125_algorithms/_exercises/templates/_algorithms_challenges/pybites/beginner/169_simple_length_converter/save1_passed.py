@@ -17,4 +17,4 @@ ___ convert(value: f__, fmt: s..) __ f__:
     ____ fmt __ 'in':
         r.. r..(value / 2.54, 4)
     ____:
-        r.. ValueError
+        r.. V...

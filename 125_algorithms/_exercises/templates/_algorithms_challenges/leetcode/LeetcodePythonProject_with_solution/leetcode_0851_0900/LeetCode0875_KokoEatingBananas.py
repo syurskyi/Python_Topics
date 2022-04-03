@@ -10,12 +10,12 @@ c_ Solution(o..
         :type H: int
         :rtype: int
         """
-        _______ math
+        _______ m__
         piles.s..()
         l, r = 1, m..(piles)
         w.... l <= r:
             mid = l+(r-l)//2
-            sumVal = s..(math.ceil(f__(num)/mid) ___ num __ piles)
+            sumVal = s..(m__.ceil(f__(num)/mid) ___ num __ piles)
             __ sumVal <= H:
                 r = mid-1
             ____:
@@ -43,7 +43,7 @@ c_ Solution(o..
             print('-='*30+'-')
 
 __ _____ __ _____
-    _______ math
-    print(math.ceil(f__(3)/3))
-    print(math.ceil(f__(4)/3))
+    _______ m__
+    print(m__.ceil(f__(3)/3))
+    print(m__.ceil(f__(4)/3))
     Solution().test()

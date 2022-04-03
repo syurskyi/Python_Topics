@@ -35,10 +35,10 @@ ___ simple_calculator(calculation
         ___
             r.. operation(f__(values[0]),f__(values[2]))
         ______ ZeroDivisionError:
-            r.. ValueError("Division by zero")
+            r.. V...("Division by zero")
 
 
-    r.. ValueError("Invalid Operation")
+    r.. V...("Invalid Operation")
 
 
 

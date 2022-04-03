@@ -39,14 +39,14 @@ __ _______ __ _______
 
 
     d = {'@contentUrl': 'contentUrl',
-         '@createdAt': d__.strptime('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
+         '@createdAt': d__.s..('2020-06-11T09:08:13Z', '%Y-%m-%dT%H:%M:%SZ'),
           '@defaultViewId': 'defaultViewId',
           '@encryptExtracts': F..,
           '@id': 'id',
           '@name': 'Login',
           '@showTabs': T..,
           '@size': 1,
-          '@updatedAt': d__.strptime('2020-07-20T06:41:34Z', '%Y-%m-%dT%H:%M:%SZ'),
+          '@updatedAt': d__.s..('2020-07-20T06:41:34Z', '%Y-%m-%dT%H:%M:%SZ'),
           '@webpageUrl': 'webpageUrl',
           'dataAccelerationConfig': {'@accelerationEnabled': F..},
           'owner': {'@id': 'id', '@name': 'name'},

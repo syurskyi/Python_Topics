@@ -1,4 +1,4 @@
-_______ math
+_______ m__
 
 
 c_ Solution(o..
@@ -8,8 +8,8 @@ c_ Solution(o..
         :type R: str
         :rtype: int
         """
-        low = i..(math.sqrt(i..(L)))
-        high = i..(math.sqrt(i..(R)))
+        low = i..(m__.sqrt(i..(L)))
+        high = i..(m__.sqrt(i..(R)))
 
         res = 1 __ low <= 3 <= high ____ 0
         res += dfs(low, high, '')

@@ -53,7 +53,7 @@ ___ get_aws_service_range(address: s..,
     ___
         ipv4_address = IPv4Address(address)
     ______ AddressValueError:
-        r.. ValueError("Address must be a valid IPv4 address")
+        r.. V...("Address must be a valid IPv4 address")
 
     r.. [range_ ___ range_ __ service_ranges
             __ ipv4_address __ range_.cidr]

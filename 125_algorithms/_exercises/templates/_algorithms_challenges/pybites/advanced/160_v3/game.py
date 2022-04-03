@@ -39,7 +39,7 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
     defeat_mapping = defeat_mapping o. _create_defeat_mapping()
 
     __ player1 n.. __ defeat_mapping o. player2 n.. __ defeat_mapping:
-        r.. ValueError('Invalid player string')
+        r.. V...('Invalid player string')
 
     __ player1 __ player2:
         r.. 'Tie'

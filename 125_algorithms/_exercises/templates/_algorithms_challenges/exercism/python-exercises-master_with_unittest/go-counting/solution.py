@@ -37,7 +37,7 @@ c_ Board:
 
     ___ territory  x, y
         __ n.. valid(x, y
-            r.. ValueError('invalid coordinate')
+            r.. V...('invalid coordinate')
         __ board[y][x] __ STONES:
             r.. (NONE, s..
 

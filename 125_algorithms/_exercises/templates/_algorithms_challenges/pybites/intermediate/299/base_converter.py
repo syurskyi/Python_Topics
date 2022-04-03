@@ -26,6 +26,6 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
     ____ n.. (isi..(number, i..)):
         r.. T..
     ____:
-        r.. ValueError
+        r.. V...
 
 #print(convert(128, 5))

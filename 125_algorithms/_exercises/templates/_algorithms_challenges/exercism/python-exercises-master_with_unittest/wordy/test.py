@@ -49,17 +49,17 @@ c_ WordyTest(unittest.TestCase
             calculate("What is -12000 divided by 25 divided by -30?"), 16)
 
     ___ test_invalid_operation
-        assertRaises(ValueError, calculate, "What is 4 xor 7?")
+        assertRaises(V..., calculate, "What is 4 xor 7?")
 
     ___ test_missing_operation
-        assertRaises(ValueError, calculate, "What is 2 2 minus 3?")
+        assertRaises(V..., calculate, "What is 2 2 minus 3?")
 
     ___ test_missing_number
-        assertRaises(ValueError, calculate,
+        assertRaises(V..., calculate,
                           "What is 7 plus multiplied by -2?")
 
     ___ test_irrelevant_question
-        assertRaises(ValueError, calculate, "Which is greater, 3 or 2?")
+        assertRaises(V..., calculate, "Which is greater, 3 or 2?")
 
 
 __ _____ __ _____

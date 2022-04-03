@@ -23,7 +23,7 @@ ___ convert_to_datetime(line
     returns: datetime(2014, 7, 3, 23, 27, 51)
     """
     d = line.s.. [1]
-    r.. d__.strptime(d, '%Y-%m-%dT%H:%M:%S')
+    r.. d__.s..(d, '%Y-%m-%dT%H:%M:%S')
 
 
 ___ time_between_shutdowns(loglines

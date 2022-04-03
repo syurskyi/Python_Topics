@@ -24,7 +24,7 @@ ___ _get_dates
 
 ___ convert_to_datetime(date_str
     """Receives a date str and convert it into a datetime object"""
-    r.. d__.strptime(date_str[:-6], "%a, %d %b %Y %H:%M:%S")
+    r.. d__.s..(date_str[:-6], "%a, %d %b %Y %H:%M:%S")
 
 
 ___ get_month_most_posts(dates

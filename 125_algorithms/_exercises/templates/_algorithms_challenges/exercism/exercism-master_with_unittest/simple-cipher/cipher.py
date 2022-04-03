@@ -9,7 +9,7 @@ c_ Cipher:
     ___ - , key_ N..
         key = key __ key __ n.. N.. ____ generate_random_key()
         __ n.. valid_key
-            r.. ValueError()
+            r.. V...()
 
     ___ encode  phrase
         r.. ''.j..([chr(wrap(o..(c) + offset(i))) ___ i, c __

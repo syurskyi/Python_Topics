@@ -1,4 +1,4 @@
-____ math _______ ceil, gcd, sqrt
+____ m__ _______ ceil, gcd, sqrt
 
 
 ___ triplets_in_range(range_start, range_end

@@ -107,7 +107,7 @@ c_ PovTest(unittest.TestCase
 
     ___ test_errors_if_target_does_not_exist_in_singleton_tree
         tree = Tree('x')
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             tree.from_pov('nonexistent')
 
     ___ test_errors_if_target_does_not_exist_in_large_tree
@@ -119,7 +119,7 @@ c_ PovTest(unittest.TestCase
             Tree('sibling-0'),
             Tree('sibling-1')
         ])
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             tree.from_pov('nonexistent')
 
     ___ test_find_path_between_two_nodes
@@ -188,7 +188,7 @@ c_ PovTest(unittest.TestCase
             Tree('sibling-0'),
             Tree('sibling-1')
         ])
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             tree.path_to('x', 'nonexistent')
 
     ___ test_errors_if_source_does_not_exist
@@ -200,7 +200,7 @@ c_ PovTest(unittest.TestCase
             Tree('sibling-0'),
             Tree('sibling-1')
         ])
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             tree.path_to('nonexistent', 'x')
 
     # Utility functions

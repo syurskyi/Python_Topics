@@ -1,10 +1,10 @@
-_______ math
+_______ m__
 
 amount_values = i..(input
 results    # list
 
 ___ get_triangle_type(side1, side2, side3
-    hypotenuse = math.sqrt(side1**2 + side2**2)
+    hypotenuse = m__.sqrt(side1**2 + side2**2)
     __(side3 < hypotenuse
         r.. "A"
     ____(side3 > hypotenuse

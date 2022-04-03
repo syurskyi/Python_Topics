@@ -38,15 +38,15 @@ c_ Graph(o..
             type_ = item[0]
             __ type_ __ ATTR:
                 __ l..(item) != 3:
-                    r.. ValueError("ATTR malformed")
+                    r.. V...("ATTR malformed")
                 attrs[item[1]] = item[2]
             ____ type_ __ NODE:
                 __ l..(item) != 3:
-                    r.. ValueError("NODE malformed")
+                    r.. V...("NODE malformed")
                 nodes.a..(Node(item[1], item[2]))
             ____ type_ __ EDGE:
                 __ l..(item) != 4:
-                    r.. ValueError("EDGE malformed")
+                    r.. V...("EDGE malformed")
                 edges.a..(Edge(item[1], item[2], item[3]))
             ____:
-                r.. ValueError("Unknown item {}".f..(item[0]))
+                r.. V...("Unknown item {}".f..(item[0]))

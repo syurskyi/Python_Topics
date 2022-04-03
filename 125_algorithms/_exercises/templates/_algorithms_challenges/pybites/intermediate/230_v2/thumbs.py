@@ -17,7 +17,7 @@ c_ Thumbs:
                 number  abs(number)
                 s__  THUMBS_DOWN
             ____:
-                r.. ValueError("Specify a number")
+                r.. V...("Specify a number")
             
             
             __ number < 3:

@@ -32,7 +32,7 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
     """
     defeat_mapping = defeat_mapping o. _create_defeat_mapping()
     __ player1 n.. __ defeat_mapping o. player2 n.. __ defeat_mapping:
-        r.. ValueError()
+        r.. V...()
     r.. {'win': player1,
             'lose': player2,
             'draw': 'Tie'}[defeat_mapping[player1][player2]]

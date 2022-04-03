@@ -14,12 +14,12 @@ ___ test_get_profile_no_age
 
 
 ___ test_get_profile_valueerror
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         ... get_profile('tim', 'nonint')
 
 
 ___ test_get_profile_too_many_sports
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         sports =  'tennis', 'basketball', 'badminton',
                   'baseball', 'volleyball', 'boxing'
         ... get_profile('tim', 36, *sports)

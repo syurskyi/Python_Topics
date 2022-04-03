@@ -19,22 +19,22 @@ ___ test_guess(inp
     ... game.guess() __ 11
     ... game.guess() __ 12
     # not a number
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         game.guess()
     # already guessed 12
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         game.guess()
     # good
     ... game.guess() __ 5
     # out of range (x2)
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         game.guess()
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         game.guess()
     # good
     ... game.guess() __ 7
     # hitting enter / no input
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         game.guess()
 
 

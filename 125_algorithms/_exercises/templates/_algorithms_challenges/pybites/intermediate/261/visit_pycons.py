@@ -3,7 +3,7 @@ _______ time
 _______ requests
 ____ dataclasses _______ dataclass
 ____ d__ _______ d__
-____ math _______ acos, cos, radians, sin
+____ m__ _______ acos, cos, radians, sin
 _______ __
 ____ pathlib _______ Path
 ____ u__.r.. _______ u..

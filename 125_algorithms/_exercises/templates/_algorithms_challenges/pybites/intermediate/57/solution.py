@@ -14,7 +14,7 @@ ___ calculator(operation, numbers
        Perform the operation returning the result rounded to 2 decimals"""
     func = operations.get(operation.l..
     __ n.. func:
-        r.. ValueError('Invalid operation')
+        r.. V...('Invalid operation')
 
     numbers = [f__(num) ___ num __ numbers]
     r.. r..(func(numbers), 2)

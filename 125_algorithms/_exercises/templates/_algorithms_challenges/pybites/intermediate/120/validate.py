@@ -10,6 +10,6 @@ ___ int_args(func
                 r.. T..
             ____:
                 __ arg < 0:
-                    r.. ValueError
+                    r.. V...
         r.. func(*args)
     r.. wrapper

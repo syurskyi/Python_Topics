@@ -20,5 +20,5 @@ ___ hexa(hexstring
         hex_of_lastseen = N..
     __ hex_of_lastseen __ N..
         # hexstring was empty or triggered KeyError
-        r.. ValueError('Invalid hexadecimal string')
+        r.. V...('Invalid hexadecimal string')
     r.. result

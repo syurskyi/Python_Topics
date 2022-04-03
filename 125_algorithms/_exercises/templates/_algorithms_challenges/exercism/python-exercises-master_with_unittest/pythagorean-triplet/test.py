@@ -80,7 +80,7 @@ c_ PythagoreanTripletTest(unittest.TestCase
         assertTrue(is_triplet((924, 43, 925)))
 
     ___ test_odd_number
-        assertRaises(ValueError, primitive_triplets, 5)
+        assertRaises(V..., primitive_triplets, 5)
 
 
 __ _____ __ _____

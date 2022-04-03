@@ -1,8 +1,8 @@
-_______ math
+_______ m__
 ___ i __ r..(i..(input())):
     triangle l.. m..(i..,input().s..()))
     a,b,c  triangle
-    cal  math.sqrt(a**2 + b**2)
+    cal  m__.sqrt(a**2 + b**2)
     print(cal)
     __ c __ cal:
         print('R',end' ')

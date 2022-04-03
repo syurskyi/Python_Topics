@@ -6,7 +6,7 @@ _______ pandas __ pd
 
 ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     __ text __ [N.., T.., 1, 1.0, [], {}]:
-        r.. ValueError
+        r.. V...
     text = text.r..('_', '').r..('--', '').r..('-', 'placeholder').r..('\'', 'pxaceholder')
     text = __.sub('\W', ' ', text) #remove not word characters
     text = __.sub(' +', ' ', text) #remove extra spaces

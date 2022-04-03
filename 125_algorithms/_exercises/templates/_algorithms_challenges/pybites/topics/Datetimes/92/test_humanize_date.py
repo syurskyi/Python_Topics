@@ -33,10 +33,10 @@ ___ test_pretty_date(arg, expected
     ... pretty_date(arg) __ expected
 
 ___ test_input_variable_of_wrong_type
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         pretty_date(123)
 
 
 ___ test_input_variable_future_date
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         pretty_date(NOW + t..(d.._1))

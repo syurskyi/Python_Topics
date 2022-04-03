@@ -81,11 +81,11 @@ c_ TestVLQ(unittest.TestCase
         assertEqual(d.. [0x8f, 0xff, 0xff, 0xff, 0x7f]), [0xffffffff])
 
     ___ test_incomplete_sequence_causes_error
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             d.. [0xff])
 
     ___ test_incomplete_sequence_causes_error_even_if_value_is_zero
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             d.. [0x80])
 
     ___ test_multiple_values

@@ -1,5 +1,5 @@
 ____ d__ _______ d__
-____ math _______ floor
+____ m__ _______ floor
 ____ dateutil.parser _______ p..
 
 # work with a static date for tests, real use = datetime.now()
@@ -23,7 +23,7 @@ ___ get_number_books_read(books_per_year_goal: i..,
    # 2. check books_per_year_goal and at_date and raise
    # a ValueError if goal <= 0 or at_date in the past (< NOW)
    __ books_per_year_goal <= 0 o. dt < NOW:
-      r.. ValueError
+      r.. V...
 
    # 3. check the offset of at_date in the year ("week of the
    # year" - e.g. whatweekisit.com) and based on the books_per_year_goal,

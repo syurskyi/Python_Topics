@@ -89,25 +89,25 @@ c_ DotDslTest(unittest.TestCase
             ])
 
     ___ test_malformed_attr
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             Graph([
                 (ATTR, 1, 2, 3)
             ])
 
     ___ test_malformed_node
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             Graph([
                 (NODE, 1, 2, 3)
             ])
 
     ___ test_malformed_EDGE
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             Graph([
                 (EDGE, 1, 2)
             ])
 
     ___ test_unknown_item
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             Graph([
                 (99, 1, 2)
             ])

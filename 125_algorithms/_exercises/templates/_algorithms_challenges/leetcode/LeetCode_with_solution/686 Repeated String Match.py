@@ -11,12 +11,12 @@ of it; and B is not a substring of A repeated two times ("abcdabcd").
 Note:
 The length of A and B will be between 1 and 10000.
 """
-_______ math
+_______ m__
 
 
 c_ Solution:
     ___ repeatedStringMatch  A, B
-        r = math.ceil(l..(B) / l..(A))
+        r = m__.ceil(l..(B) / l..(A))
         ___ count __ (r, r + 1  # r + 1 when len(B) % len(A) == 0
             __ B __ A * count:
                 r.. count

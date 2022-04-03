@@ -1,4 +1,4 @@
-_______ math
+_______ m__
 
 
 c_ ComplexNumber(o..
@@ -31,12 +31,12 @@ c_ ComplexNumber(o..
 
     ___ abs
         square_sum = real * real + imaginary * imaginary
-        r.. math.sqrt(square_sum)
+        r.. m__.sqrt(square_sum)
 
     ___ conjugate
         r.. ComplexNumber(real, -1 * imaginary)
 
     ___ exp
-        r = r..(math.cos(imaginary), 8) * math.exp(real)
-        i = r..(math.sin(imaginary), 8) * math.exp(real)
+        r = r..(m__.cos(imaginary), 8) * m__.exp(real)
+        i = r..(m__.sin(imaginary), 8) * m__.exp(real)
         r.. ComplexNumber(r, i)

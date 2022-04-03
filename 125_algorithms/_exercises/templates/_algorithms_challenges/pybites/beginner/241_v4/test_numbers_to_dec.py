@@ -16,7 +16,7 @@ ___ test_numbers_to_dec(good_seq, expected_result
     [5, 10]
 ])
 ___ test_numbers_to_dec_ValueError(bad_seq
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         list_to_decimal(bad_seq)
 
 

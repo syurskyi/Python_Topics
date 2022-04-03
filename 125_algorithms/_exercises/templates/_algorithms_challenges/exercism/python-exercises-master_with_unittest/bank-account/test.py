@@ -46,41 +46,41 @@ c_ BankAccountTest(unittest.TestCase
         account.o.. )
         account.c..
 
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             account.get_balance()
 
     ___ test_deposit_into_closed_account
         account.o.. )
         account.c..
 
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             account.deposit(50)
 
     ___ test_withdraw_from_closed_account
         account.o.. )
         account.c..
 
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             account.withdraw(50)
 
     ___ test_cannot_withdraw_more_than_deposited
         account.o.. )
         account.deposit(25)
 
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             account.withdraw(50)
 
     ___ test_cannot_withdraw_negative
         account.o.. )
         account.deposit(100)
 
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             account.withdraw(-50)
 
     ___ test_cannot_deposit_negative
         account.o.. )
 
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             account.deposit(-50)
 
     ___ test_can_handle_concurrent_transactions

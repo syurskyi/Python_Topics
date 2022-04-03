@@ -29,7 +29,7 @@ ___ convert(value: f__, fmt: s..) __ f__:
                 result = value*0.393700787
                 r.. r..(result, 4)
         ____:
-            r.. ValueError
+            r.. V...
     ____:
         r.. T..
 

@@ -29,17 +29,17 @@ c_ Game:
         guess = input('Your guess: ')
         __ n.. guess:
             print('Please enter a number')
-            r.. ValueError('Nothing entered')
+            r.. V...('Nothing entered')
         __ n.. a..(c.i.. ___ c __ s..(guess)):
             print('Should be a number')
-            r.. ValueError('Non-digit entered')
+            r.. V...('Non-digit entered')
         guess = i..(guess)
         __ n.. (START <= guess <= END
             print('Number not in range')
-            r.. ValueError('Out of range')
+            r.. V...('Out of range')
         __ guess __ _guesses:
             print('Already guessed')
-            r.. ValueError('Retry previous guess')
+            r.. V...('Retry previous guess')
         _guesses.add(guess)
         r.. guess
 

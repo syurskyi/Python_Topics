@@ -29,6 +29,6 @@ ___ d.. bytes
             values.a..(n)
             n = 0
         ____ i __ l..(bytes) - 1:
-            r.. ValueError('incomplete byte sequence')
+            r.. V...('incomplete byte sequence')
 
     r.. values

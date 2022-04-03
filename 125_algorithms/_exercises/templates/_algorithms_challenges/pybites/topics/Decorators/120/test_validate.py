@@ -23,5 +23,5 @@ ___ test_invalid_type_float
 
 
 ___ test_negative_number
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         sum_numbers(1, 2, -3)

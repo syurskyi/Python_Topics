@@ -15,7 +15,7 @@ ___ test_type_error(test_input
                          [(0, 2, 10),
                           (-1, 2, 9)])
 ___ test_value_error(test_input
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         list_to_decimal(test_input)
 
 

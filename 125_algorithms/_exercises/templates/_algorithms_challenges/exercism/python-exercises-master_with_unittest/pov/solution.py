@@ -53,7 +53,7 @@ c_ Tree(o..
                 r.. tree
             ___ child __ tree.children:
                 stack.a..(child.add(tree.remove(child.label)))
-        r.. ValueError("Tree could not be reoriented")
+        r.. V...("Tree could not be reoriented")
 
     ___ path_to  from_node, to_node
         reordered = from_pov(from_node)
@@ -63,7 +63,7 @@ c_ Tree(o..
             ___
                 tree = stack.pop()
             ______ I..
-                r.. ValueError("No path found")
+                r.. V...("No path found")
             __ to_node __ tree:
                 p...a..(tree.label)
                 stack = tree.children

@@ -1,6 +1,6 @@
 ___ fib(n
    __ n < 0:
-        r.. ValueError
+        r.. V...
    ____ n __ (0, 1
        r.. n
    ____:

@@ -20,7 +20,7 @@ ___ evaluate(input_data
         values.pop(0)
         key = values.pop(0).l..
         __ is_integer(key
-            r.. ValueError("Integers cannot be redefined")
+            r.. V...("Integers cannot be redefined")
         defines[key] = values
     stack    # list
     input_data = input_data[-1].s.. 
@@ -52,7 +52,7 @@ ___ evaluate(input_data
             ____ word __ 'over':
                 stack.a..(stack[-2])
             ____:
-                r.. ValueError("{} has not been defined".f..(word))
+                r.. V...("{} has not been defined".f..(word))
         ______ I..
             r.. StackUnderflowError("Insufficient number of items in stack")
     r.. stack

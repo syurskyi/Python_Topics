@@ -61,5 +61,5 @@ ___ sort_books_by_published_date(books=books
     Python Interviews
     """
     r.. s..(books,
-                  key=l.... x: d__.strptime(x.published,
+                  key=l.... x: d__.s..(x.published,
                                                   '%Y-%m-%d'))

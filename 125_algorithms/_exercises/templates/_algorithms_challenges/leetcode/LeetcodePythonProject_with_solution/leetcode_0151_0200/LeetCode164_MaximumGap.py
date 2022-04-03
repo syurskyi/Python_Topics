@@ -9,13 +9,13 @@ c_ Solution(o..
         :type nums: List[int]
         :rtype: int
         """
-        _______ math
+        _______ m__
         __ n.. nums o. l..(nums) < 2:
             r.. 0
         minVal = m..(nums)
         maxVal = m..(nums)
         n = l..(nums)
-        gap = math.ceil(f__(maxVal-minVal)/(n-1))
+        gap = m__.ceil(f__(maxVal-minVal)/(n-1))
         bucketsMin = [f__('inf')]*(n-1)
         bucketsMax = [f__('-inf')]*(n-1)
         ___ num __ nums:

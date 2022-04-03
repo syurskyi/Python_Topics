@@ -21,7 +21,7 @@ c_ Account:
 
     ___ add_transaction  amount
         __ n.. isi..(amount, i..
-            r.. ValueError('please use int for amount')
+            r.. V...('please use int for amount')
         _transactions.a..(amount)
 
     $

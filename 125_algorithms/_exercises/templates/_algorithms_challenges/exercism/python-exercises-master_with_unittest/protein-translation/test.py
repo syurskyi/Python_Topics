@@ -51,7 +51,7 @@ c_ ProteinTranslationTests(unittest.TestCase
         assertEqual(expected, of_rna(strand))
 
     ___ test_invalid_codons
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             of_rna('CARROT')
 
 

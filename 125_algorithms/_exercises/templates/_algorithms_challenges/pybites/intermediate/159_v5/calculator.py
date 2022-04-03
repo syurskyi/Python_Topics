@@ -10,4 +10,4 @@ ___ simple_calculator(calculation
         a, b = i..(a), i..(b)
         r.. funcs[op](a, b)
     ______ E..:
-        r.. ValueError
+        r.. V...

@@ -29,7 +29,7 @@ ___ test_romanize(number, numeral
 
 
 ___ test_boundaries
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         romanize('string')
         romanize(-1)
         romanize(0)

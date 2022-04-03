@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ math _______ sqrt
+____ m__ _______ sqrt
 
 __author__ = 'Daniel'
 

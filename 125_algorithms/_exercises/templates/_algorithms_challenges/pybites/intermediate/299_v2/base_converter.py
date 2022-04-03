@@ -12,7 +12,7 @@ ___ convert(number: i.., base: i.. = 2) __ s..:
         str: The returned value as a string
     """
     __ n.. 2 <= base <= 36:
-        r.. ValueError("Invalid Base")
+        r.. V...("Invalid Base")
     
     values    # list
     w.... number:

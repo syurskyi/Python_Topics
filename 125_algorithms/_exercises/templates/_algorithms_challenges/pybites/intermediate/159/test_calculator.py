@@ -45,5 +45,5 @@ ___ test_true_division(arg, expected
     'really_bad_data'
 ])
 ___ test_bad_inputs(arg
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         simple_calculator(arg)

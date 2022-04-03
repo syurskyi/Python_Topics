@@ -4,7 +4,7 @@ ___ binary_search(array, value
 
 ___ binary_search_with_bounds(array, value, left, right
     __ (left > right
-        r.. ValueError("Value not found")
+        r.. V...("Value not found")
 
     middle = left + (right - left) // 2
     middle_value = array[middle]

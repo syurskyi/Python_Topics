@@ -1,4 +1,4 @@
-_______ math
+_______ m__
 ___ round_to_next(number: i.., multiple: i..
 
 
@@ -6,5 +6,5 @@ ___ round_to_next(number: i.., multiple: i..
     r = number/multiple
 
 
-    r.. math.ceil(r) * multiple
+    r.. m__.ceil(r) * multiple
 

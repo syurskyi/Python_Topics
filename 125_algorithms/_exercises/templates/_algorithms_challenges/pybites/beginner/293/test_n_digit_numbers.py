@@ -20,5 +20,5 @@ ___ test_n_digit_numbers(input_list, n, expected
 
 
 ___ test_invalid_n
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         n_digit_numbers([1, 2, 3], 0)

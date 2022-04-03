@@ -35,7 +35,7 @@ ___ test_operator_overloading_works_both_ways(arg, expected, thumbs
 
 
 ___ test_exception(thumbs
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         thumbs * 0
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         0 * thumbs

@@ -5,6 +5,6 @@ ___ rgb_to_hex(rgb
     __ (0 <= rgb[0] <= 255) a.. (0 <= rgb[1] <= 255) a.. (0 <= rgb[2] <= 255
         r.. "#{0:02X}{1:02X}{2:02X}".f..(rgb[0],rgb[1],rgb[2])
     ____:
-        r.. ValueError
+        r.. V...
 
 #print(rgb_to_hex((0, 128, 192)))

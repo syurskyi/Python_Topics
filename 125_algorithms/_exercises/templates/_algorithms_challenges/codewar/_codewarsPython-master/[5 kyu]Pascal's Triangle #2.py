@@ -1,4 +1,4 @@
-____ math _______ factorial
+____ m__ _______ factorial
 ___ pascal(p
     ___ cFormula(n,m
         r.. i..(factorial(n) / (factorial(n-m) * factorial(m))) __ n != 0 ____ 1

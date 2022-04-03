@@ -4,5 +4,5 @@ ___ rgb_to_hex(rgb
        Silver: input tuple = (192,192,192) -> output hex str = #C0C0C0"""
     ___ c __ rgb:
         __ c < 0 o. c > 255:
-            r.. ValueError
+            r.. V...
     r.. '#%02X%02X%02X' % rgb

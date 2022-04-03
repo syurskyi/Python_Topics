@@ -9,7 +9,7 @@ ___ years_ago(date
        Then extract the year from the obtained datetime object and subtract
        it from the THIS_YEAR constant above, returning the int difference.
        So in this example you would get: 2018 - 2015 = 3"""
-    date_object = d__.strptime(date, "%d %b, %Y")
+    date_object = d__.s..(date, "%d %b, %Y")
     r.. THIS_YEAR - date_object.year
 
 
@@ -20,7 +20,7 @@ ___ convert_eu_to_us_date(date
        the tests check if a ValueError is raised for invalid day/month/year
        ranges (no need to code this, datetime does this out of the box)"""
     print(date)
-    eu_date = d__.strptime(date, "%d/%m/%Y")
+    eu_date = d__.s..(date, "%d/%m/%Y")
     r.. eu_date.s..("%m")+"/"+eu_date.s..("%d")+"/"+eu_date.s..("%Y")
 
 

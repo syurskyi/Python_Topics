@@ -10,7 +10,7 @@ ___ int_args(func
         ____ s..(isi..(n, f__) ___ n __ args
             r.. T..
         ____ s..(n < 0 ___ n __ args
-            r.. ValueError
+            r.. V...
         ____ a..(isi..(n, i..) ___ n __ args
             r.. func(*args)
     r.. wrapper

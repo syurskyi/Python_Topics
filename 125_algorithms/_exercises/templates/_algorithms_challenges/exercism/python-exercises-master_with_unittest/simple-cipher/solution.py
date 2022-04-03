@@ -10,7 +10,7 @@ c_ Cipher(o..
             r__.seed(time
             key = ''.j..(r__.choice(ascii_lowercase) ___ i __ r..(100))
         ____ n.. key.isalpha() o. n.. key.isl..
-            r.. ValueError('Wrong key parameter!')
+            r.. V...('Wrong key parameter!')
         key = key
 
     ___ encode  text

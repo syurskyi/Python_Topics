@@ -17,12 +17,12 @@ c_ Solution(o..
         :type root: TreeNode
         :rtype: int
         """
-        _______ math
+        _______ m__
         __ n.. root: r.. 0
         leftHeight = getLeftHeight(root)
         rightHeight = getRightHeight(root)
         __ leftHeight __ rightHeight:
-            r.. i..(math.pow(2, leftHeight)) - 1
+            r.. i..(m__.pow(2, leftHeight)) - 1
         ____:
             r.. countNodes(root.left) + countNodes(root.right) + 1
     

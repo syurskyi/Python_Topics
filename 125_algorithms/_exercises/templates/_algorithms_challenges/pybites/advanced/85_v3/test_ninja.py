@@ -32,7 +32,7 @@ ___ test_add_score_no_new_belt(ninja, capfd
 
 
 ___ test_new_score_validation(ninja
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         ninja.score = 'a'
         ninja.score = 40
 

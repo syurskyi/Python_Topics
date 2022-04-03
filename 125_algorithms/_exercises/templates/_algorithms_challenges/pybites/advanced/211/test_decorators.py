@@ -15,7 +15,7 @@ ___ get_two_numbers(numbers
     """
     chosen = r__.sample(numbers, 2)
     __ n.. a..(t..(i) __ i.. ___ i __ chosen
-        r.. ValueError('not all ints')
+        r.. V...('not all ints')
 
 
 ___ test_bad_data_max_retries_and_exception(capfd

@@ -33,5 +33,5 @@ ___ calc_total_course_duration(timestamps
        and calculates the total duration as HH:MM:SS"""
     total_time = s..(t..(minutes=xt.minute, seconds=xt.second).total_seconds()
                      ___ t __ timestamps
-                     ___ xt __ [d__.strptime(t, '%M:%S')])
+                     ___ xt __ [d__.s..(t, '%M:%S')])
     r.. s..(t..(seconds=total_time))

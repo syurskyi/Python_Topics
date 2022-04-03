@@ -20,7 +20,7 @@ ___ test_calculate_score(arg, expected
     [4, 7, 6, 2],
 ])
 ___ test_wrong_inputs(arg
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         calculate_score(arg)
 
 
@@ -39,7 +39,7 @@ ___ test_winner_shorter_score_len_raises_exception
       Player(name='player 2', scores=[4, 4, 6]),  # lacks one score
       Player(name='player 3', scores=[4, 5, 6, 6]),
     ]
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         get_winner(players)
 
 
@@ -49,5 +49,5 @@ ___ test_winner_longer_score_len_raises_exception
       Player(name='player 2', scores=[4, 4, 6, 6, 3, 2]),  # 1 more
       Player(name='player 3', scores=[4, 5, 6, 6, 5]),
     ]
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         get_winner(players)

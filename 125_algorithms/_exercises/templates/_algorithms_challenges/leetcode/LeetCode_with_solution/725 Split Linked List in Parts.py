@@ -45,7 +45,7 @@ c_ ListNode:
         next = N..
 
 
-_______ math
+_______ m__
 
 
 c_ Solution:
@@ -109,7 +109,7 @@ c_ Solution:
         counter = 0
         cur_l = 0
         i = 0
-        part_l = math.ceil((l - counter) / k)
+        part_l = m__.ceil((l - counter) / k)
         w.... node:
             cur_l += 1
             counter += 1
@@ -119,7 +119,7 @@ c_ Solution:
                 cur_l = 0
                 i += 1
                 __ k != 0:
-                    part_l = math.ceil((l - counter) / k)
+                    part_l = m__.ceil((l - counter) / k)
 
             node = node.next
 
@@ -141,7 +141,7 @@ c_ Solution:
             l += 1
             node = node.next
 
-        part_l = math.ceil(l / k)
+        part_l = m__.ceil(l / k)
         ret = [[] ___ _ __ r..(k)]
 
         node = root

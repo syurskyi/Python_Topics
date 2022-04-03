@@ -28,7 +28,7 @@ ___ get_all_days(start_date: date, end_date: date) __ List[date]:
 
 ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, date]:
 
-    dates_open_lookup = s.. m..(l.... x: d__.strptime(x, "%Y-%m-%d").date(), daily_rates))
+    dates_open_lookup = s.. m..(l.... x: d__.s..(x, "%Y-%m-%d").date(), daily_rates))
 
     dates    # dict
     date_diff = (end - start).days
@@ -54,11 +54,11 @@ ___ exchange_rates(
     w__ o.. RATES_FILE) __ file:
         data = json.load(file)
 
-    start = d__.strptime(start_date, "%Y-%m-%d").date()
-    end = d__.strptime(end_date, "%Y-%m-%d").date()
+    start = d__.s..(start_date, "%Y-%m-%d").date()
+    end = d__.s..(end_date, "%Y-%m-%d").date()
 
-    __ start < d__.strptime(data["start_at"], "%Y-%m-%d").date() o. end > d__.strptime(data["end_at"], "%Y-%m-%d").date
-        r.. ValueError("Invalid start date or end date")
+    __ start < d__.s..(data["start_at"], "%Y-%m-%d").date() o. end > d__.s..(data["end_at"], "%Y-%m-%d").date
+        r.. V...("Invalid start date or end date")
 
     dates = match_daily_rates(start, end, data["rates"])
 

@@ -32,7 +32,7 @@ ___ calc_months_passed(year, month, day
     ___
         in_date = d__ y.._year, m.._month, d.._day)
         __ date(year, month, day) < START_DATE:
-            r.. ValueError
+            r.. V...
         months_passed = 0
         difference_dt = relativedelta(date(year, month, day), START_DATE)
         #print(difference_dt.years, difference_dt.months, difference_dt.days)
@@ -44,7 +44,7 @@ ___ calc_months_passed(year, month, day
             months_passed += difference_dt.years * MONTHS_PER_YEAR
         r.. months_passed
     ______ V..
-        r.. ValueError
+        r.. V...
         
 
 

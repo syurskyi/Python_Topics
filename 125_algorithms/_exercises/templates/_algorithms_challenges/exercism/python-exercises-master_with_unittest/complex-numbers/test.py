@@ -1,6 +1,6 @@
 _______ unittest
 
-_______ math
+_______ m__
 
 ____ complex_numbers _______ ComplexNumber
 
@@ -134,7 +134,7 @@ c_ ComplexNumbersTest(unittest.TestCase
                          input_number.conjugate().imaginary)
 
     ___ test_eulers_identity_formula
-        input_number = ComplexNumber(0, math.pi)
+        input_number = ComplexNumber(0, m__.pi)
         expected = ComplexNumber(-1, 0)
         assertEqual(expected.real, input_number.exp().real)
         assertEqual(expected.imaginary, input_number.exp().imaginary)
@@ -147,7 +147,7 @@ c_ ComplexNumbersTest(unittest.TestCase
 
     ___ test_exponential_of_a_purely_real_number
         input_number = ComplexNumber(1, 0)
-        expected = ComplexNumber(math.e, 0)
+        expected = ComplexNumber(m__.e, 0)
         assertEqual(expected.real, input_number.exp().real)
         assertEqual(expected.imaginary, input_number.exp().imaginary)
 

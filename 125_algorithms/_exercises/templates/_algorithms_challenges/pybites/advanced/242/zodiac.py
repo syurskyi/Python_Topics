@@ -44,12 +44,12 @@ ___ get_sign_by_date(signs: l.., date: d__) __ s..:
     year = date.year
     ___ sign __ signs:
         start, end = sign.sun_dates
-        start_dt = d__.strptime(start, '%B %d').r.. y.._year)
-        end_dt = d__.strptime(end, '%B %d').r.. y.._year)
+        start_dt = d__.s..(start, '%B %d').r.. y.._year)
+        end_dt = d__.s..(end, '%B %d').r.. y.._year)
         __ end_dt < start_dt:
             __ date <= end_dt:
-                start_dt = d__.strptime(start, '%B %d').r.. y.._year-1)
+                start_dt = d__.s..(start, '%B %d').r.. y.._year-1)
             ____:
-                end_dt = d__.strptime(end, '%B %d').r.. y.._year+1)
+                end_dt = d__.s..(end, '%B %d').r.. y.._year+1)
         __ start_dt <= date <= end_dt:
             r.. sign.name

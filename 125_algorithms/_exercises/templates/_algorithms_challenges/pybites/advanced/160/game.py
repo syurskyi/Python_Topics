@@ -58,7 +58,7 @@ ___ get_winner(player1, player2, defeat_mapping_ N..
 
 
     __ player1 n.. __ defeat_mapping o. player2 n.. __ defeat_mapping:
-        r.. ValueError("Invalid attackers")
+        r.. V...("Invalid attackers")
 
     __ player1 __ player2:
         r.. "Tie"

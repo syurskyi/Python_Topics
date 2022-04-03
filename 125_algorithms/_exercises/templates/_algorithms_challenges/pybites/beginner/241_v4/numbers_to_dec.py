@@ -16,6 +16,6 @@ ___ list_to_decimal(nums: List[i..]) __ i..:
         r.. T..
 
     __ n.. a..(num __ r..(0, 10) ___ num __ nums
-        r.. ValueError
+        r.. V...
 
     r.. i..(''.j.. m..(s.., nums)))

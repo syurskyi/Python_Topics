@@ -22,7 +22,7 @@ holidays = defaultdict(l..)
 
 ___ _parse_date(date: s..
     """returns a datetime from parsing dates as formatted in table"""
-    r.. d__.strptime(date.s.. [0], '%Y-%m-%d%B')
+    r.. d__.s..(date.s.. [0], '%Y-%m-%d%B')
 
 
 ___ _get_table(content=content) __ l..:

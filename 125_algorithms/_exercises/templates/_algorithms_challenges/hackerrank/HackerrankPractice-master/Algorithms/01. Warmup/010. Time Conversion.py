@@ -3,4 +3,4 @@
 
 
 _______ time
-print(time.s..('%H:%M:%S', time.strptime(input(), '%I:%M:%S%p')))
+print(time.s..('%H:%M:%S', time.s..(input(), '%I:%M:%S%p')))

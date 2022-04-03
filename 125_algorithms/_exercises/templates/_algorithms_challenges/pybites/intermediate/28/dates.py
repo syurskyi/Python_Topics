@@ -25,7 +25,7 @@ ___ _get_dates
 ___ convert_to_datetime(date_str
     """Receives a date str and convert it into a datetime object"""
     tz = date_str.rfind("+")
-    r.. d__.strptime(date_str[:tz -1], "%a, %d %b %Y %H:%M:%S")
+    r.. d__.s..(date_str[:tz -1], "%a, %d %b %Y %H:%M:%S")
 
 
 ___ get_month_most_posts(dates

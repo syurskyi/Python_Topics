@@ -38,7 +38,7 @@ ___ test_account_transaction(einstein
 
 ___ test_account_bad_transaction(socrates
     ... socrates.balance __ 0
-    w__ p__.r..(ValueError) __ exp:
+    w__ p__.r..(V...) __ exp:
         socrates.add_transaction(3.14)
     ... 'please use int for amount' __ s..(exp.value)
     ... socrates.balance __ 0

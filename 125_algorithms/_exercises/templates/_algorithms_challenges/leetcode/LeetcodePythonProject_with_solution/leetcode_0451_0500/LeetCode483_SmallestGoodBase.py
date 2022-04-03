@@ -10,9 +10,9 @@ c_ Solution(o..
         :type n: str
         :rtype: str
         """
-        _______ math
+        _______ m__
         n = i..(n)
-        max_n = i..(math.log(n, 2))
+        max_n = i..(m__.log(n, 2))
         ___ m __ r..(max_n, 1, -1
             k = i..(n**m**-1)
             __ (k**(m+1)-1)//(k-1) __ n:

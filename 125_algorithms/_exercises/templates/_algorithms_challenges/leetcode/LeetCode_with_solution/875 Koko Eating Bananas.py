@@ -35,7 +35,7 @@ piles.length <= H <= 10^9
 1 <= piles[i] <= 10^9
 """
 ____ typing _______ List
-_______ math
+_______ m__
 
 
 c_ Solution:
@@ -58,7 +58,7 @@ c_ Solution:
         w.... lo < hi:
             mid = (lo + hi) // 2
             __ s..(
-                math.ceil(piles[i] / mid)
+                m__.ceil(piles[i] / mid)
                 ___ i __ r..(n)
             ) > H:
                 lo = mid + 1

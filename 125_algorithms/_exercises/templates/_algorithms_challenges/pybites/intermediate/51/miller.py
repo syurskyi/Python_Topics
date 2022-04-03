@@ -2,7 +2,7 @@ ____ d__ _______ d__, t..
 
 # https://pythonclock.org/
 PY2_DEATH_DT = d__ y.._2020,  m.._1,  d.._1)
-BITE_CREATED_DT = d__.strptime('2018-02-26 23:24:04', '%Y-%m-%d %H:%M:%S')
+BITE_CREATED_DT = d__.s..('2018-02-26 23:24:04', '%Y-%m-%d %H:%M:%S')
 
 
 ___ py2_earth_hours_left(start_date=BITE_CREATED_DT

@@ -10,7 +10,7 @@ Given n = 3, there are a total of 5 unique BST's.
     /     /       \                 \
    2     1         2                 3
 """
-_______ math
+_______ m__
 
 __author__ = 'Danyang'
 
@@ -26,8 +26,8 @@ c_ Solution(o..
         :param n: integer
         :return: integer
         """
-        r.. math.factorial(2*n)/(math.factorial(n)*math.factorial(n))-math.factorial(2*n)/(
-            math.factorial(n+1)*math.factorial(n-1))
+        r.. m__.factorial(2*n)/(m__.factorial(n)*m__.factorial(n))-m__.factorial(2*n)/(
+            m__.factorial(n+1)*m__.factorial(n-1))
 
     ___ numTrees  n
         """

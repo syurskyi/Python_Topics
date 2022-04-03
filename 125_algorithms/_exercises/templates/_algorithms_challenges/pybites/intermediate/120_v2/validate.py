@@ -14,7 +14,7 @@ ___ int_args(func
             
 
             __ arg <0:
-                r.. ValueError("All arguments must be non-negative integers")
+                r.. V...("All arguments must be non-negative integers")
 
 
         r.. func(*args)

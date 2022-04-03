@@ -38,7 +38,7 @@ ___ test_count_down_good_inputs(input_argument, capfd
     __.c..(r'\d{4}'),
 ])
 ___ test_count_down_bad_inputs(input_argument, capfd
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         count_down(input_argument)
 
 

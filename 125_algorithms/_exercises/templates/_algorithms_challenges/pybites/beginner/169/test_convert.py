@@ -9,7 +9,7 @@ ___ test_non_numeric_value
 
 
 ___ test_unsupported_formats
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         convert(300, "km")
 
 

@@ -45,7 +45,7 @@ c_ SeriesTest(unittest.TestCase
         assertEqual(largest_product("99099", 3), 0)
 
     ___ test_rejects_span_longer_than_string_length
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             largest_product("123", 4)
 
     ___ test_reports_1_for_empty_string_and_empty_product_0_span
@@ -55,15 +55,15 @@ c_ SeriesTest(unittest.TestCase
         assertEqual(largest_product("123", 0), 1)
 
     ___ test_rejects_empty_string_and_nonzero_span
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             largest_product("", 1)
 
     ___ test_rejects_invalid_character_in_digits
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             largest_product("1234a5", 2)
 
     ___ test_rejects_negative_span
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             largest_product("12345", -1)
 
     @unittest.skip("extra-credit")

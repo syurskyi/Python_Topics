@@ -32,16 +32,16 @@ c_ BinaryTests(unittest.TestCase
         assertEqual(parse_binary("10001101000"), 1128)
 
     ___ test_invalid_binary_text_only
-        assertRaises(ValueError, parse_binary, "carrot")
+        assertRaises(V..., parse_binary, "carrot")
 
     ___ test_invalid_binary_number_not_base2
-        assertRaises(ValueError, parse_binary, "102011")
+        assertRaises(V..., parse_binary, "102011")
 
     ___ test_invalid_binary_numbers_with_text
-        assertRaises(ValueError, parse_binary, "10nope")
+        assertRaises(V..., parse_binary, "10nope")
 
     ___ test_invalid_binary_text_with_numbers
-        assertRaises(ValueError, parse_binary, "nope10")
+        assertRaises(V..., parse_binary, "nope10")
 
 
 __ _____ __ _____

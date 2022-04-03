@@ -4,7 +4,7 @@ c_ Binary:
     @classmethod
     ___ parse_binary(cls, inp
         __ n.. cls.valid(inp
-            r.. ValueError
+            r.. V...
         r.. cls.convert_to_decimal(inp)
 
     @classmethod

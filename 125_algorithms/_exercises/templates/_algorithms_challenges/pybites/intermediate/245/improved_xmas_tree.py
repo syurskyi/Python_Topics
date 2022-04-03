@@ -1,4 +1,4 @@
-_______ math
+_______ m__
 
 STAR = "+"
 LEAF = "*"
@@ -24,9 +24,9 @@ ___ generate_improved_xmas_tree(rows=10
 
    ___ i __ r..(2
       __ rows % 2 != 0:
-         product = math.ceil(max_length / 2)
+         product = m__.ceil(max_length / 2)
       ____:
-         product = math.floor(max_length / 2) + 2
+         product = m__.floor(max_length / 2) + 2
 
       xmas_tree.a..((product * TRUNK).center(max_length))
    

@@ -1,4 +1,4 @@
-____ math _______ sqrt
+____ m__ _______ sqrt
 
 ___ triangleArea(amount
     answer    # list

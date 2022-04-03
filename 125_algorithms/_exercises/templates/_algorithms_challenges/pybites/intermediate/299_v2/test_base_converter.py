@@ -36,7 +36,7 @@ ___ test_convert(number, base, expected
     (100, -20),
 ])
 ___ test_convert_base_high(number, base
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         convert(number, base)
 
 

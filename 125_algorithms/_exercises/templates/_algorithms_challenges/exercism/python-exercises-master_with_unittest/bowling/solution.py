@@ -26,7 +26,7 @@ c_ Frame(o..
 
     ___ throw  pins
         __ total_pins + pins > 10:
-            r.. ValueError("a frame's rolls cannot exceed 10")
+            r.. V...("a frame's rolls cannot exceed 10")
         throws.a..(pins)
 
     ___ score  next_throws
@@ -66,7 +66,7 @@ c_ BowlingGame(o..
         # Check against invalid fill balls, e.g. [3, 10]
         __ (l..(bonus_throws) __ 2 a.. bonus_throws[0] != 10 a..
                 s..(bonus_throws) > 10
-            r.. ValueError("invalid fill balls")
+            r.. V...("invalid fill balls")
 
         # Check if there are more bonuses than it should be
         __ tenth_frame.is_strike() a.. l..(bonus_throws) > 2:
@@ -78,7 +78,7 @@ c_ BowlingGame(o..
 
     ___ roll  pins
         __ n.. 0 <= pins <= 10:
-            r.. ValueError("invalid pins")
+            r.. V...("invalid pins")
         ____ current_frame_idx __ MAX_FRAME:
             roll_bonus(pins)
         ____:

@@ -13,7 +13,7 @@ ___ within_schedule(utc, *timezones
     ___ timezone __ timezones:
         timezone = tz.gettz(timezone)
         __ n.. timezone:
-            r.. ValueError
+            r.. V...
         date = utc.astimezone(timezone)
 
         __ n.. date.hour __ MEETING_HOURS:

@@ -29,13 +29,13 @@ c_ OctalTest(unittest.TestCase
         assertEqual(parse_octal("1234567"), 342391)
 
     ___ test_8_is_seen_as_invalid
-        assertRaises(ValueError, parse_octal, "8")
+        assertRaises(V..., parse_octal, "8")
 
     ___ test_invalid_octal_is_recognized
-        assertRaises(ValueError, parse_octal, "carrot")
+        assertRaises(V..., parse_octal, "carrot")
 
     ___ test_6789_is_seen_as_invalid
-        assertRaises(ValueError, parse_octal, "6789")
+        assertRaises(V..., parse_octal, "6789")
 
     ___ test_valid_octal_formatted_string_011_is_decimal_9
         assertEqual(parse_octal("011"), 9)

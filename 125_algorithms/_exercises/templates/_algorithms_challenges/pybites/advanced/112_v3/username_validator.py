@@ -38,7 +38,7 @@ ___ validate_username(platform, username
        return True/False if username is valid for entered platform"""
     all_validators = parse_social_platforms_string()
     __ platform n.. __ all_validators:
-        r.. ValueError
+        r.. V...
     plat = all_validators[platform]
     plat_range = l..(username) __ plat.r..
     plat_match = plat.regex.m..(username) __ n.. N..

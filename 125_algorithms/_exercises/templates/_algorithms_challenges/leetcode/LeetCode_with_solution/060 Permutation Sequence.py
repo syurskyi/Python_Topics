@@ -14,7 +14,7 @@ Given n and k, return the kth permutation sequence.
 
 Note: Given n will be between 1 and 9 inclusive.
 """
-_______ math
+_______ m__
 
 __author__ = 'Danyang'
 
@@ -24,10 +24,10 @@ c_ Solution(o..
         k -= 1
 
         array = r..(1, n+1)
-        k %= math.factorial(n)
+        k %= m__.factorial(n)
         ret    # list
         ___ i __ x..(n-1, -1, -1
-            idx, k = divmod(k, math.factorial(i))
+            idx, k = divmod(k, m__.factorial(i))
             ret.a..(array.pop(idx))
 
         r.. "".j.. m..(s.., ret))

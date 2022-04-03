@@ -26,11 +26,11 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        _______ math
+        _______ m__
         __ n <= 2:
             r.. 0
         primes = [F..,]*2 + [T..,]*(n-2)
-        ___ i __ r..(2, i..(math.sqrt(n-1))+1
+        ___ i __ r..(2, i..(m__.sqrt(n-1))+1
             __ primes[i]:
                 ___ j __ r..(i+i, n, i
                     primes[j] = F..

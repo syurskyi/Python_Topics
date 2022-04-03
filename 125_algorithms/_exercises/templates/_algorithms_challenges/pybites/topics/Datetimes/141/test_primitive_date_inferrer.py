@@ -168,7 +168,7 @@ ___ test_different_enum
                 r.. d_parse_formats
             __ 0 <= idx <= l..(d_parse_formats
                 r.. d_parse_formats[idx]
-            r.. ValueError
+            r.. V...
 
     # override the enum in the tested code module
     pdi.DateFormat = DateFormat_ext

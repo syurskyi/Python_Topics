@@ -12,12 +12,12 @@ ___ to_digits(number, base_to
 
 ___ rebase(from_base, d.., to_base
     __ (from_base < 2
-        r.. ValueError("Invalid input base.")
+        r.. V...("Invalid input base.")
 
     __ (to_base < 2
-        r.. ValueError("Invalid output base.")
+        r.. V...("Invalid output base.")
 
     __ any(T.. ___ d __ d.. __ d < 0 o. d >= from_base
-        r.. ValueError("Invalid input digit.")
+        r.. V...("Invalid input digit.")
 
     r.. to_digits(from_digits(d.., from_base), to_base)

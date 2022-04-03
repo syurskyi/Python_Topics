@@ -10,8 +10,8 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        _______ math
-        maxVal = i..(math.sqrt(n))+1
+        _______ m__
+        maxVal = i..(m__.sqrt(n))+1
         __ n < 0: r.. 0
         dp = [f__('inf')]*(n+1)
         dp[0] = 0

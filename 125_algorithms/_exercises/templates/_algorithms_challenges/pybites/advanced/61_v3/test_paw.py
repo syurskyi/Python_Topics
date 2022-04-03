@@ -76,5 +76,5 @@ ___ test_deck_numbers_used
 
 
 ___ test_out_of_bound_arg
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         create_paw_deck(n=27)

@@ -1,6 +1,6 @@
 _______ r__
 ____ c.. _______ n..
-____ math _______ ceil
+____ m__ _______ ceil
 
 LETTER_A_CODE = 65
 
@@ -13,7 +13,7 @@ PawCard = n..('PawCard', 'card action')
 
 ___ create_paw_deck(n=8
     __ n > 26:
-        r.. ValueError('maximum of 26 suits')
+        r.. V...('maximum of 26 suits')
     deck    # list
     ___ suit __ r..(n
         deck.extend _*{chr(LETTER_A_CODE + suit)}{x}' ___ x __ NUMBERS)

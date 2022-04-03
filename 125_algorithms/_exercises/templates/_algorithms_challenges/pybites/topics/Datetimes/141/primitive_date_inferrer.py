@@ -23,7 +23,7 @@ c_ DateFormat(E..
             r.. d_parse_formats
         __ 0 <= val <= l..(d_parse_formats
             r.. d_parse_formats[val]
-        r.. ValueError
+        r.. V...
 
 
 c_ InfDateFmtError(E..
@@ -43,7 +43,7 @@ ___ _maybe_DateFormats(date_str
     maybe_formats    # list
     ___ idx, d_parse_fmt __ e..(d_parse_formats
         ___
-            _parsed_date = d__.strptime(date_str, d_parse_fmt) # pylint: disable=W0612
+            _parsed_date = d__.s..(date_str, d_parse_fmt) # pylint: disable=W0612
             maybe_formats.a..(DateFormat(idx))
         ______ V..
             p..
@@ -85,7 +85,7 @@ ___ get_dates(dates
                 return_list.a..('Invalid')
             ____:
                 ___
-                    return_list.a..(s..(d__.strptime(date, date_str).date                    )
+                    return_list.a..(s..(d__.s..(date, date_str).date                    )
                 ______ V..
                     return_list.a..("Invalid")
                 

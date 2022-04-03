@@ -48,5 +48,5 @@ ___ test_max_letter_word(given, expected
 
 ?p__.m__.p.("bad_input", [N.., T.., 1, 1.0, [], {}])
 ___ test_max_letter_word_exceptions(bad_input
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         max_letter_word(bad_input)

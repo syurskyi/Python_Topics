@@ -47,7 +47,7 @@ ___ four_day_weekends(*args,
 
 
     __ args:
-        r.. ValueError(ERROR_MSG)
+        r.. V...(ERROR_MSG)
     ____:
         four_day_weekends = workdays =  0
         weekend_dates =[]

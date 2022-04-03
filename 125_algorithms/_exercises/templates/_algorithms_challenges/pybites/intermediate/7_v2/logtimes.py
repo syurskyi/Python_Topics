@@ -31,7 +31,7 @@ ___ convert_to_datetime(line
 
     date = values[1]
 
-    r.. d__.strptime(date,"%Y-%m-%dT%H:%M:%S")
+    r.. d__.s..(date,"%Y-%m-%dT%H:%M:%S")
 
 
 ___ time_between_shutdowns(loglines

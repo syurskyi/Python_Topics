@@ -14,7 +14,7 @@ After third round, the three bulbs are [on, off, off].
 
 So you should return 1, because there is only one bulb is on.
 """
-_______ math
+_______ m__
 
 __author__ = 'Daniel'
 
@@ -27,7 +27,7 @@ c_ Solution(o..
         :type n: int
         :rtype: int
         """
-        cnt = i..(math.sqrt(n))
+        cnt = i..(m__.sqrt(n))
         r.. cnt
 
 

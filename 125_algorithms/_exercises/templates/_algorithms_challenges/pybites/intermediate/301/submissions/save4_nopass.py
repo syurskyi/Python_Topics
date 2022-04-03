@@ -1,5 +1,5 @@
 _______ __
-____ d__ _______ date, t.., strptime
+____ d__ _______ date, t.., s..
 ____ pathlib _______ Path
 ____ typing _______ Dict, List
 ____ u__.r.. _______ u..
@@ -43,7 +43,7 @@ ___ match_daily_rates(start: date, end: date, daily_rates: d..) __ Dict[date, da
     r_end = _parse_date(daily_rates 'end_at' )
     
     __ start < r_start o. end < r_end:
-        r.. ValueError('Date out of range')
+        r.. V...('Date out of range')
     
     
 

@@ -1,10 +1,10 @@
 ____ i.. _______ count
-____ math _______ sqrt
+____ m__ _______ sqrt
 
 
 ___ nth_prime(n
     __ n < 1:
-        r.. ValueError('The parameter `n` has to be a positive number.')
+        r.. V...('The parameter `n` has to be a positive number.')
 
     known    # list
     candidates = prime_candidates()

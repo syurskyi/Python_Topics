@@ -17,7 +17,7 @@ ___ my_solution_positive_divide(numerator, denominator
     ______:
         r..
     __ result < 0:
-        r.. ValueError
+        r.. V...
     r.. result
 
 print(my_solution_positive_divide(1,2))
@@ -37,9 +37,9 @@ ___ pybites_solution_positive_divide(numerator, denominator
         result = numerator/denominator
     ______ ZeroDivisionError:
         r.. 0
-    ______ (T.., ValueError
+    ______ (T.., V...
         r..
     ____:
         __ result < 0:
-            r.. ValueError('Cannot be negative')
+            r.. V...('Cannot be negative')
         r.. result

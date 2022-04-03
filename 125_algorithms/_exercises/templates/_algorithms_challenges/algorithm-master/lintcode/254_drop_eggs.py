@@ -47,7 +47,7 @@ x(x + 1) / 2 >= n
 
 so `x` can start from `sqrt(2n)`
 """
-____ math _______ sqrt
+____ m__ _______ sqrt
 
 
 c_ Solution:

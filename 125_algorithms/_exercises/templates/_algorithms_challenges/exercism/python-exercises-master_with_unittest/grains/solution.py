@@ -13,8 +13,8 @@ ___ total_after(square
 
 ___ check_square_input(square
     __ square __ 0:
-        r.. ValueError("Square input of zero is invalid.")
+        r.. V...("Square input of zero is invalid.")
     ____ square < 0:
-        r.. ValueError("Negative square input is invalid.")
+        r.. V...("Negative square input is invalid.")
     ____ square > 64:
-        r.. ValueError("Square input greater than 64 is invalid.")
+        r.. V...("Square input greater than 64 is invalid.")

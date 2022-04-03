@@ -66,8 +66,8 @@ c_ CipherTest(unittest.TestCase
                         'All items in the key must be chars and lowercase!')
 
     ___ test_cipher_wrong_key
-        assertRaises(ValueError, Cipher, 'a1cde')
-        assertRaises(ValueError, Cipher, 'aBcde')
+        assertRaises(V..., Cipher, 'a1cde')
+        assertRaises(V..., Cipher, 'aBcde')
 
 
 __ _____ __ _____

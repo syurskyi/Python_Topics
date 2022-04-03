@@ -1,11 +1,11 @@
-_______ math
+_______ m__
 
 ___ is_armstrong(n: i..) __ b..:
     # your code ...
 
     actual_num = n 
 
-    d.. = math.floor(math.log(n,10)) + 1
+    d.. = m__.floor(m__.log(n,10)) + 1
 
     print(d..)
 

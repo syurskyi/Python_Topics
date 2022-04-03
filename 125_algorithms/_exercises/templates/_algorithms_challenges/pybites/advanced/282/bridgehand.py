@@ -24,11 +24,11 @@ c_ BridgeHand:
         
 
         __ n.. a..(isi..(card,Card) ___ card __ cards
-            r.. ValueError("all values in Seuqence must be instance of Card")
+            r.. V...("all values in Seuqence must be instance of Card")
 
 
         __ l..(cards) != 13:
-            r.. ValueError("Must have 13 cards")
+            r.. V...("Must have 13 cards")
         
 
         cards = cards

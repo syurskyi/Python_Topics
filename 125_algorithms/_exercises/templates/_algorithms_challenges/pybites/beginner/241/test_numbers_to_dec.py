@@ -21,27 +21,27 @@ ___ test_large_list
 ___ test_out_of_range
 
 
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         list_to_decimal([12,5,4])
 
 
 ___ test_invalid_type_string
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         list_to_decimal([12,'5',4])
 
 
 
 ___ test_invalid_type_boolean
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         list_to_decimal([12,T..,4])
 
 
 ___ test_negative
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         list_to_decimal([-3,12])
 
 
 
 ___ test_float
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         list_to_decimal([4.5,4,1])

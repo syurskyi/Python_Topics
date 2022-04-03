@@ -27,7 +27,7 @@ c_ Scale(o..
             pitches.a..(scale[last_index])
             last_index += ASCENDING_INTERVALS.index(interval) + 1
         __ pitches[0] != scale[last_index % l..(scale)]:
-            r.. ValueError()
+            r.. V...()
         r.. pitches
 
     ___ _reorder_chromatic_scale

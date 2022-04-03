@@ -1,4 +1,4 @@
-_______ math __ m
+_______ m__ __ m
 
 amount_values = i..(input
 results    # list

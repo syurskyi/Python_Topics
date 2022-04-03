@@ -36,21 +36,21 @@ c_ Color:
         # > if not re.match(r'#[0-9A-Fa-f]{6}', hex_str):
         # but testing length and first character is quicker
         __ l..(hex_str) != 7 o. hex_str[0] != '#':
-            r.. ValueError('Invalid hex colour string')
+            r.. V...('Invalid hex colour string')
         ___
             r.. t..(bytes.fromhex(hex_str[1:]))
-        ______ ValueError __ exp:
-            r.. ValueError _*Invalid hex value ({exp.args})')
+        ______ V... __ exp:
+            r.. V... _*Invalid hex value ({exp.args})')
 
     @classmethod
     ___ rgb2hex(cls, rbg_tuple: t..) __ s..:
         """Class method that converts an rgb value into a hex one"""
         __ l..(rbg_tuple) != 3 o. any((x < 0) o. (x > 255) ___ x __ rbg_tuple
-            r.. ValueError('Invalid rgb colour triplet')
+            r.. V...('Invalid rgb colour triplet')
         ___
             r.. f'#{bytes(rbg_tuple).hex()}'
-        ______ ValueError __ exp:
-            r.. ValueError _*Invalid rgb value ({exp.args})')
+        ______ V... __ exp:
+            r.. V... _*Invalid rgb value ({exp.args})')
 
     ___  -r
         """Returns the repl of the object"""

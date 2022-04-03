@@ -37,7 +37,7 @@ ___ test_color_staticmethod_rgb2hex(rgb, expected
 ])
 
 ___ test_color_rgb2hex_bad_value(rgb
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         Color.rgb2hex(rgb)
 
 
@@ -60,7 +60,7 @@ ___ test_color_staticmethod_hex2rgb(hex, expected
     ("pink"),
 ])
 ___ test_color_hex2rgb_bad_value(value
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         Color.hex2rgb(value)
 
 

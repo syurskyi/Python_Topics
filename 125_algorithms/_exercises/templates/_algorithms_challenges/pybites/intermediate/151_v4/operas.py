@@ -51,7 +51,7 @@ operas = [
 
 
 ___ _get_date(date_str
-    r.. d__.date(d__.strptime(date_str, "%d %B %Y"))
+    r.. d__.date(d__.s..(date_str, "%d %B %Y"))
 
 
 ___ _was_alive(composer, date
@@ -75,7 +75,7 @@ ___ operas_both_at_premiere(guest, composer
        Returns a list (or generator) of titles of operas.
     """
     __ composer n.. __ composers o. guest n.. __ composers:
-        r.. ValueError
+        r.. V...
 
     comp = composers[composer]
     gst= composers[guest]

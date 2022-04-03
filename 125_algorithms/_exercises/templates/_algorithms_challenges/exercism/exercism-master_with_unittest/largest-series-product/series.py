@@ -8,7 +8,7 @@ ___ largest_product(d.., size
 
 ___ slices(d.., size
     __ l..(d..) < size:
-        r.. ValueError
+        r.. V...
     r.. each_cons(l.. m..(i.., l..(d..))), size)
 
 

@@ -20,7 +20,7 @@ ___ test_best_match_per_wine_type(case
 
 
 ___ test_invalid_wine_type
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         best_match_per_wine("cocacola")
 
 

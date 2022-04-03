@@ -28,18 +28,18 @@ c_ Color:
     ___ hex2rgb(hex_value
         """Class method that converts a hex value into an rgb one"""
         __ l..(hex_value) != 7 o. hex_value[0] != '#':
-            r.. ValueError
+            r.. V...
         ___
             rgb = t..(i..(hex_value.l..('#')[i:i+2], 16) ___ i __ (0, 2, 4))
         ______ V..
-            r.. ValueError
+            r.. V...
         r.. rgb
 
     ___ rgb2hex(rgb_value
         """Class method that converts an rgb value into a hex one"""
         ___ value __ rgb_value:
             __ i..(value) < 0 o. i..(value) > 255:
-                r.. ValueError
+                r.. V...
         hex = '#%02x%02x%02x' % rgb_value
         r.. hex
 

@@ -9,7 +9,7 @@ ___ convert(value: f__, fmt: s..) __ f__:
         __ fmt.l.. __ 'cm' o. fmt.l.. __ 'in':
             r.. r..(value*2.54, 4) __ fmt.l.. __ 'cm' ____ r..(value/2.54, 4)
         ____:
-            r.. ValueError
+            r.. V...
     ____:
         r.. T..
 

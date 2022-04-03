@@ -1,4 +1,4 @@
-_______ math
+_______ m__
 ____ functools _______ reduce
 
 
@@ -11,4 +11,4 @@ ___ factors(n
 
 
 ___ pairs_of_factors(n
-    r.. [[i, n / i] ___ i __ r..(1, i..(math.sqrt(n)) + 1) __ n % i __ 0]
+    r.. [[i, n / i] ___ i __ r..(1, i..(m__.sqrt(n)) + 1) __ n % i __ 0]

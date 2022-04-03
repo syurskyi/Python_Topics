@@ -27,17 +27,17 @@ c_ BinarySearchTests(unittest.TestCase
             5)
 
     ___ test_identifies_value_missing
-        assertRaises(ValueError, binary_search, [1, 3, 4, 6, 8, 9, 11], 7)
+        assertRaises(V..., binary_search, [1, 3, 4, 6, 8, 9, 11], 7)
 
     ___ test_value_smaller_than_arrays_minimum
-        assertRaises(ValueError, binary_search, [1, 3, 4, 6, 8, 9, 11], 0)
+        assertRaises(V..., binary_search, [1, 3, 4, 6, 8, 9, 11], 0)
 
     ___ test_value_larger_than_arrays_maximum
-        assertRaises(ValueError, binary_search, [1, 3, 4, 6, 8, 9, 11],
+        assertRaises(V..., binary_search, [1, 3, 4, 6, 8, 9, 11],
                           13)
 
     ___ test_empty_array
-        assertRaises(ValueError, binary_search, [], 1)
+        assertRaises(V..., binary_search, [], 1)
 
 
 __ _____ __ _____

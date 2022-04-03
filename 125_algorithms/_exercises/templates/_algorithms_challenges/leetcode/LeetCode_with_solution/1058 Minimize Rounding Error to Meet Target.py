@@ -35,7 +35,7 @@ Each string of prices prices[i] represents a real number which is between 0 and
 target is between 0 and 1000000.
 """
 ____ typing _______ List
-_______ math
+_______ m__
 
 
 c_ Solution:
@@ -46,13 +46,13 @@ c_ Solution:
         floor all, sort by floor error inverse, make the adjustment
         """
         A = l.. m..(f__, prices))
-        f_sum = s.. m..(math.floor, A))
-        c_sum = s.. m..(math.ceil, A))
+        f_sum = s.. m..(m__.floor, A))
+        c_sum = s.. m..(m__.ceil, A))
         __ n.. f_sum <= target <= c_sum:
             r.. "-1"
 
         errors = [
-            e - math.floor(e)
+            e - m__.floor(e)
             ___ e __ A
         ]
         errors.s..(r.._T..

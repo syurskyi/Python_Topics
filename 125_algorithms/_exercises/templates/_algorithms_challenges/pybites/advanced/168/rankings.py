@@ -38,7 +38,7 @@ c_ Ninja:
 
             r.. bites < other.bites
 
-        r.. ValueError
+        r.. V...
     
 
     ___ __gt__ other
@@ -46,14 +46,14 @@ c_ Ninja:
 
             r.. bites > other.bites
 
-        r.. ValueError
+        r.. V...
 
     ___ __eq__ other
         __ isi..(other,Ninja
 
             r.. bites __ other.bites
 
-        r.. ValueError
+        r.. V...
     
     ___  -r
         r.. f"[{bites}] {name}"

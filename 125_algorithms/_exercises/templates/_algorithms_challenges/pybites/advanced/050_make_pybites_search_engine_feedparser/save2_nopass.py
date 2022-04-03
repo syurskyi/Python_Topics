@@ -29,7 +29,7 @@ ___ _convert_struct_time_to_dt(stime
     """
     __ t..(stime) __ s..:
         f.. = '%a, %d %b %Y %H:%M:%S %z'
-        dt_object = d__.strptime(stime, f..)
+        dt_object = d__.s..(stime, f..)
         r.. dt_object.date()
     ____:
         r.. d__.fromtimestamp(mktime(stime)).date()

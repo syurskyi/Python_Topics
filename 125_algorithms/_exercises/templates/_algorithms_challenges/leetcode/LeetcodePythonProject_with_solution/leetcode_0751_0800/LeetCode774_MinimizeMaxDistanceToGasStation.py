@@ -10,7 +10,7 @@ c_ Solution(o..
         :type K: int
         :rtype: float
         """
-        _______ math
+        _______ m__
         k = K
         count, n = 0, l..(stations)
         left, right = 0, stations[-1]-stations[0]
@@ -18,7 +18,7 @@ c_ Solution(o..
             mid = (left+right)/2.0
             count = 0
             ___ i __ r..(n-1
-                count += math.ceil((stations[i+1]-stations[i])/mid)-1
+                count += m__.ceil((stations[i+1]-stations[i])/mid)-1
             __ count > k:
                 left = mid
             ____:

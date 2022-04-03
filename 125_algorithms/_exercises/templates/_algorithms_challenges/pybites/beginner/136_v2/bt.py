@@ -65,7 +65,7 @@ ___ check_bt(donor, recipient
     ___ blood_type __ (donor,recipient
         __ t..(blood_type) __ s..:
             __ blood_type n.. __ blood_type_text:
-                r.. ValueError
+                r.. V...
             blood_types.a..(blood_type_text[blood_type])
         ____ t..(blood_type) __ i..:
             blood_types.a..(Bloodtype(blood_type))

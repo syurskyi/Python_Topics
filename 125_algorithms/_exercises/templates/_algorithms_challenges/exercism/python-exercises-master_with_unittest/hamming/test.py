@@ -47,11 +47,11 @@ c_ HammingTest(unittest.TestCase
         assertEqual(hamming.distance("", ""), 0)
 
     ___ test_disallow_first_strand_longer
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             hamming.distance("AATG", "AAA")
 
     ___ test_disallow_second_strand_longer
-        w__ assertRaises(ValueError
+        w__ assertRaises(V...
             hamming.distance("ATA", "AGTG")
 
 

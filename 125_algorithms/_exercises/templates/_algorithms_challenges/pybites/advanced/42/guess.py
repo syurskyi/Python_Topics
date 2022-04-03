@@ -39,7 +39,7 @@ c_ Game:
                     print('Please enter a number')
                 ____:
                     print('Should be a number')
-                r.. ValueError
+                r.. V...
             ____:
                 __ n.. START <= result <= END:
                     print('Number not in range')
@@ -48,7 +48,7 @@ c_ Game:
                 ____:
                     _guesses.add(result)
                     r.. result
-                r.. ValueError
+                r.. V...
              
             
 

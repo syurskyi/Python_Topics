@@ -18,7 +18,7 @@ ROMAN_DIGITS = [
 ___ romanize(decimal_number
     """Takes a decimal number int and converts its Roman Numeral str"""
     __ n.. isi..(decimal_number, i..) o. n.. (0 < decimal_number < 4000
-        r.. ValueError('Value out of range or not a number')
+        r.. V...('Value out of range or not a number')
     res = ''
     d = decimal_number
     ___ v, c __ ROMAN_DIGITS:

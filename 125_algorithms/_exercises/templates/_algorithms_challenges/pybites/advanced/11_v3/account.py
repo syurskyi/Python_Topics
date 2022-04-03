@@ -14,27 +14,27 @@ c_ Account:
 
     ___ __lt__  other
         __ n.. isi..(other, Account
-            r.. ValueError()
+            r.. V...()
         r.. balance < other.balance
 
     ___ __gt__  other
         __ n.. isi..(other, Account
-            r.. ValueError()
+            r.. V...()
         r.. balance > other.balance
 
     ___ __eq__  other
         __ n.. isi..(other, Account
-            r.. ValueError()
+            r.. V...()
         r.. balance __ other.balance
 
     ___ __le__  other
         __ n.. isi..(other, Account
-            r.. ValueError()
+            r.. V...()
         r.. balance <= other.balance
 
     ___ __ge__  other
         __ n.. isi..(other, Account
-            r.. ValueError()
+            r.. V...()
         r.. balance >= other.balance
 
     ___ __getitem__  item
@@ -42,12 +42,12 @@ c_ Account:
 
     ___ __add__  other
         __ n.. isi..(other, i..
-            r.. ValueError
+            r.. V...
         _transactions.a..(other)
 
     ___ __sub__  other
         __ n.. isi..(other, i..
-            r.. ValueError
+            r.. V...
         _transactions.a..(-other)
 
     ___ __str__

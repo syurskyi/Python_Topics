@@ -6,7 +6,7 @@ T = TypeVar('T', i.., f__)
 ___ n_digit_numbers(numbers: List[T], n: i..) __ List[i..]:
     number_list    # list
     __ n __ 0:
-        r.. ValueError
+        r.. V...
     ___ number __ numbers:
         __ number __ 0:
             number_list.a..(0)

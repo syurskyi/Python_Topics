@@ -5,7 +5,7 @@ ____ functools _______ singledispatch
 ___ count_down(arg
     __ n.. isi..(arg, (s.., t.., s..,
                             i.., f__, d.., r..)):
-        r.. ValueError
+        r.. V...
 
 
 @count_down.register(l..)

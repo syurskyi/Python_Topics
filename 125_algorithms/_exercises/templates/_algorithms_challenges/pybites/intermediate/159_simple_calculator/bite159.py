@@ -25,5 +25,5 @@ ___ simple_calculator(calculation
         operator = calculation.s.. [1]
         r.. operation[operator](i..(x), i..(y))
     
-    ______ (ValueError, KeyError, ZeroDivisionError
-        r.. ValueError
+    ______ (V..., KeyError, ZeroDivisionError
+        r.. V...

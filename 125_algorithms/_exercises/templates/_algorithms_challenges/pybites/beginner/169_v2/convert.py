@@ -12,7 +12,7 @@ ___ convert(value: f__, fmt: s..) __ f__:
 
     fmt = fmt.s...l..
     __ fmt n.. __ ('cm','in'
-        r.. ValueError("Can only convert from cm to in or vice versa")
+        r.. V...("Can only convert from cm to in or vice versa")
 
 
     __ fmt __ 'in':

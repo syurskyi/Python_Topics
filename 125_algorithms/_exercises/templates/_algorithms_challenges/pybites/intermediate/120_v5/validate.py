@@ -8,7 +8,7 @@ ___ int_args(func
             __ n.. isi..(a, i..
                 r.. T..()
             __ a < 0:
-                r.. ValueError()
+                r.. V...()
         r.. func $ $$
 
     r.. wrapper

@@ -6,11 +6,11 @@ ___ count_down(data_type
     d = ''
     ___
         __ l..(data_type) != 4:
-            r.. ValueError
+            r.. V...
         ___ i __ data_type:
             d += f'{i}'
     ______ T..:
-        r.. ValueError
+        r.. V...
     ___ i __ r..(4, 0, -1
         print(d[:i])
 

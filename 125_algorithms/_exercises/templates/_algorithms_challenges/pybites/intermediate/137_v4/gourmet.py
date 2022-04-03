@@ -120,7 +120,7 @@ ___ best_match_per_wine(wine_type="all"
           'sparkling': SPARKLING_WINES, 'all': ALL_WINES}
 
     __ wine_type n.. __ WT:
-        r.. ValueError
+        r.. V...
     print _*{WT[wine_type]=}')
     sims = ((w, c, similarity(w, c))
             ___ w, c __ product(WT[wine_type], CHEESES))

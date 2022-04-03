@@ -89,10 +89,10 @@ ___ test_exchange_rates_order(exchange_rates_result
 
 
 ___ test_exchange_rates_validate_start
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         exchange_rates(start_date="1950-01-01")
 
 
 ___ test_exchange_rates_validate_end
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         exchange_rates(end_date="2050-01-01")

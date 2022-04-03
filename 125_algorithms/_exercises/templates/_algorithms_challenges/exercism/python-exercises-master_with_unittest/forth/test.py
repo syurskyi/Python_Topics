@@ -305,12 +305,12 @@ c_ ForthUserDefinedWordsTest(unittest.TestCase
 
     ___ test_cannot_redefine_numbers
         input_data = [": 1 2 ;"]
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             evaluate(input_data)
 
     ___ test_errors_if_executing_a_non_existent_word
         input_data = ["foo"]
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             evaluate(input_data)
 
     # Utility functions

@@ -10,7 +10,7 @@ ___ test_fib_main(n
 
 
 ___ test_fib_negative(n
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         fib(-10)
 
 

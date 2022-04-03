@@ -39,7 +39,7 @@ ___ isValidPoint(row, col, field
 
 ___ getShipSize(row, col, field
     __ n.. isValidPoint(row, col, field
-        r.. ValueError('Invalid disposition')
+        r.. V...('Invalid disposition')
     field[row][col] = -1
     __ row != l..(field) a.. field[row + 1][col] __ 1:
         r.. 1 + getShipSize(row + 1, col, field)

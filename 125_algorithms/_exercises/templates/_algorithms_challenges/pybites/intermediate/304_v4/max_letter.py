@@ -18,7 +18,7 @@ ___ max_letter_word(text: s..) __ Tuple[s.., s.., i..]:
     ('', '', 0)
     """
     __ n.. isi..(text, s..
-        r.. ValueError('bad input')
+        r.. V...('bad input')
 
     words = l.. m..(l.... x: __.sub(PAT, '', x.r..('_', '')),
                      text.s..(' ')))

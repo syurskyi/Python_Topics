@@ -20,12 +20,12 @@ ___ test_get_number_books_read(goal, date_str, expected
 
 
 ___ test_not_positive_goal_exception
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         get_number_books_read(0)
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         get_number_books_read(-1)
 
 
 ___ test_past_date_exception
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         get_number_books_read(52, '5-20-2018')

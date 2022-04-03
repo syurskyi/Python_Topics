@@ -118,18 +118,18 @@ c_ BowlingTest(unittest.TestCase
 
     ___ test_rolls_cannot_score_negative_points
 
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             game.roll(-1)
 
     ___ test_a_roll_cannot_score_more_than_10_points
 
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             game.roll(11)
 
     ___ test_two_rolls_in_a_frame_cannot_score_more_than_10_points
         game.roll(5)
 
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             game.roll(6)
 
     ___ test_bonus_after_strike_in_last_frame_cannot_score_more_than_10
@@ -137,7 +137,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             game.roll(11)
 
     ___ test_bonus_aft_last_frame_strk_can_be_more_than_10_if_1_is_strk
@@ -153,7 +153,7 @@ c_ BowlingTest(unittest.TestCase
 
         roll(rolls)
 
-        w__ assertRaisesWithMessage(ValueError
+        w__ assertRaisesWithMessage(V...
             game.roll(10)
 
     ___ test_an_incomplete_game_cannot_be_scored

@@ -52,7 +52,7 @@ operas = [
 
 
 ___ _get_date(date_str
-    r.. d__.date(d__.strptime(date_str, "%d %B %Y"))
+    r.. d__.date(d__.s..(date_str, "%d %B %Y"))
 
 
 ___ operas_both_at_premiere(guest, composer
@@ -74,7 +74,7 @@ ___ operas_both_at_premiere(guest, composer
 
 
     __ composer n.. __ composers o. guest n.. __ composers:
-        r.. ValueError("Both composer and guest must be valid composers")
+        r.. V...("Both composer and guest must be valid composers")
     
 
     guest = composers[guest]

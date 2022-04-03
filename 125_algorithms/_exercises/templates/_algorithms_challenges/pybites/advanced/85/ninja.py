@@ -21,9 +21,9 @@ c_ NinjaBelt:
     ___ _set_score  new_score
 
         __ n.. isi..(new_score,i..
-            r.. ValueError("Score takes an int")
+            r.. V...("Score takes an int")
         __ new_score < score:
-            r.. ValueError("Cannot lower score")
+            r.. V...("Cannot lower score")
 
 
         

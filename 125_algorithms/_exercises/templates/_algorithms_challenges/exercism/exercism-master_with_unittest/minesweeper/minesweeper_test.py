@@ -141,19 +141,19 @@ c_ MinesweeperTest(unittest.TestCase
                "|*  |",
                "|  |",
                "+-+"]
-        assertRaises(ValueError, board, inp)
+        assertRaises(V..., board, inp)
 
     ___ test_faulty_border
         inp = ["+-----+",
                "*   * |",
                "+-- --+"]
-        assertRaises(ValueError, board, inp)
+        assertRaises(V..., board, inp)
 
     ___ test_invalid_char
         inp = ["+-----+",
                "|X  * |",
                "+-----+"]
-        assertRaises(ValueError, board, inp)
+        assertRaises(V..., board, inp)
 
 
 __ _____ __ _____

@@ -18,6 +18,6 @@ ___ test_positive_divide_exceptions
     w__ p__.r.. T..
         positive_divide(1, 's')
         positive_divide([], 2)
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         positive_divide(1, -2)
         positive_divide(-1, 2)

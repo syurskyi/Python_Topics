@@ -36,5 +36,5 @@ ___ test_too_late_for_chicago
 ___ test_wrong_timezone
     dt  d__(2018, 4, 18, 12, 28)
     timezones   'Europe/Madrid', 'bogus'
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         within_schedule(dt, *timezones)

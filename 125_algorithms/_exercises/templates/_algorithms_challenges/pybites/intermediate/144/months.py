@@ -32,7 +32,7 @@ ___ calc_months_passed(year, month, day
    ___
       new_date = date(year, month, day)
       __ new_date < START_DATE:
-         r.. ValueError
+         r.. V...
    ______:
       r..
 

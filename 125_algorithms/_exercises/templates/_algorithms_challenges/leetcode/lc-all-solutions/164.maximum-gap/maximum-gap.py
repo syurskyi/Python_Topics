@@ -10,7 +10,7 @@ c_ Solution(o..
     __ a __ b:
       r.. 0
     ans = 0
-    gap = i..(math.ceil((b - a + 0.0) / (l..(nums) - 1)))
+    gap = i..(m__.ceil((b - a + 0.0) / (l..(nums) - 1)))
     bucketMin = [N.. ___ _ __ r..(0, l..(nums) + 1)]
     bucketMax = [N.. ___ _ __ r..(0, l..(nums) + 1)]
 

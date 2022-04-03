@@ -9,4 +9,4 @@ ___ binary_search(search_list, value
             low = middle + 1
         ____:
             r.. middle
-    r.. ValueError("Value not found.")
+    r.. V...("Value not found.")

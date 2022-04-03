@@ -10,9 +10,9 @@ c_ Solution(o..
         :type c: int
         :rtype: bool
         """
-        _______ math
+        _______ m__
         __ c < 0: r.. F..
-        l, r = 0, i..(math.sqrt(c))
+        l, r = 0, i..(m__.sqrt(c))
         w.... l <= r:
             __ l*l + r*r < c:
                 l += 1

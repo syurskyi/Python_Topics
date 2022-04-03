@@ -26,7 +26,7 @@ ___ convert_to_datetime(date_str
     """Receives a date str and convert it into a datetime object"""
     date_str = s..(date_str)
     date_str = ' '.j..(date_str.s.. [1:5])[:-3]
-    r.. d__.strptime(date_str, '%d %b %Y %H:%M')
+    r.. d__.s..(date_str, '%d %b %Y %H:%M')
 
 
 ___ get_month_most_posts(dates
@@ -36,5 +36,5 @@ ___ get_month_most_posts(dates
     m = [convert_to_datetime(d).month ___ d __ dates]
     l = l..(z..(y, m))
     most_freq_month = s..(Counter(l).most_common(1)[0][0])
-    output = d__.strptime(most_freq_month, '(%Y, %m)')
+    output = d__.s..(most_freq_month, '(%Y, %m)')
     r.. output.s..('%Y-%m')

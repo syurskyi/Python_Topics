@@ -58,16 +58,16 @@ ___ test_red_blood_cell_incompatibility_text_input
 
 
 ___ test_invalid_value_text_input
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         check_bt("X-", "Y+")
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         check_bt("0", "A+")
 
 
 ___ test_invalid_value_numeric_input
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         check_bt(8, 1)
-    w__ p__.r..(ValueError
+    w__ p__.r..(V...
         check_bt(3, -1)
 
 

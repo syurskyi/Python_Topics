@@ -28,7 +28,7 @@ c_ SaddlePointTest(unittest.TestCase
 
     ___ test_irregular_matrix
         inp = [[3, 2, 1], [0, 1], [2, 1, 0]]
-        assertRaises(ValueError, saddle_points, inp)
+        assertRaises(V..., saddle_points, inp)
 
 
 __ _____ __ _____

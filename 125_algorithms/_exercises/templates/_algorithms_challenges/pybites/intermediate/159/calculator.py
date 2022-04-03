@@ -17,7 +17,7 @@ ___ simple_calculator(calculation
       num1, op, num2 = calculation.s..(" ")
       num1, num2 = i..(num1), i..(num2)
    ______ V..
-      r.. ValueError
+      r.. V...
 
    ops = {
       "+": operator.add,
@@ -29,7 +29,7 @@ ___ simple_calculator(calculation
    ___
       r.. ops[op](num1, num2)
    ______ (KeyError, ZeroDivisionError
-      r.. ValueError
+      r.. V...
 
 
 __ _______ __ _______
