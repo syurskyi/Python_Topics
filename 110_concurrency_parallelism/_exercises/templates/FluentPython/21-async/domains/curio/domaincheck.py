@@ -19,6 +19,6 @@ ____ domainlib ______ multi_probe
 
 __ _____ __ ______
     __ l..(sys.argv) == 2:
-        curio.run(main(sys.argv[1]))
+        curio.run(main(sys.a.. 1
     ____
         print('Please provide a TLD.', f'Example: {sys.argv[0]} COM.BR')

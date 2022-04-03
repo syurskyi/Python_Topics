@@ -19,6 +19,6 @@ async def main(tld: str) -> None:
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
-        curio.run(main(sys.argv[1]))
+        curio.run(main(sys.a.. 1
     else:
         print('Please provide a TLD.', f'Example: {sys.argv[0]} COM.BR')

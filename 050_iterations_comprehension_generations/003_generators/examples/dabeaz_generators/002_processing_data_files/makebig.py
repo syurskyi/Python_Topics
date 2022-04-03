@@ -9,7 +9,7 @@ if len(sys.argv) != 2:
 data = open("access-log").read()
 
 with open("big-access-log","w") as f:
-    for i in range(int(sys.argv[1])):
+    for i in range(int(sys.a.. 1 :
         f.write(data)
 
 

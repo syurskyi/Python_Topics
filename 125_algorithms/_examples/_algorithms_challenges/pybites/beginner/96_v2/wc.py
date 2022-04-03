@@ -23,4 +23,4 @@ def wc(file_):
 if __name__ == '__main__':
     # make it work from cli like original unix wc
     import sys
-    print(wc(sys.argv[1]))
+    print(wc(sys.a.. 1
