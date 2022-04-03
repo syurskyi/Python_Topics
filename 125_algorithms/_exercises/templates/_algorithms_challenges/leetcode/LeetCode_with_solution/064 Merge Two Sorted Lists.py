@@ -10,7 +10,7 @@ c_ ListNode:
         next = N..
 
     ___  -r
-        r.. repr(val)
+        r.. r.. (val)
 
     ___ __str__
         r.. "%d, %s"%(val, next)

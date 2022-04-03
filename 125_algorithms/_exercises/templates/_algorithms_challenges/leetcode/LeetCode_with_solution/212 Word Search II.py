@@ -27,7 +27,7 @@ c_ TrieNode(o..
         children    # dict  # map from char to TrieNode
 
     ___  -r
-        r.. repr(char)
+        r.. r.. (char)
 
 
 c_ Trie(o..

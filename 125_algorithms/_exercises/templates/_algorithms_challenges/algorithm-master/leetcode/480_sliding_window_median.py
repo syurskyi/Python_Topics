@@ -6,7 +6,7 @@ c_ HashHeapq:
         __heap    # list
 
     ___  -r
-        r.. repr(__heap)
+        r.. r.. (__heap)
 
     ___ __len__
         r.. l..(__heap)

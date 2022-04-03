@@ -27,7 +27,7 @@ ___ signs
 # write your pytest code here ...
 ___ test_named_tuple(signs
     ... l..(Sign._fields) __ l..('name compatibility famous_people sun_dates'.s..(' '))
-    ... repr(signs[0]).startswith('Sign(')
+    ... r.. (signs[0]).startswith('Sign(')
 
 
 ___ test_get_signs(signs

@@ -71,7 +71,7 @@ ___ test_color_string_output
 
 ___ test_color_repr_output
     color = Color("brown")
-    ... repr(color) __ "Color('brown')"
+    ... r.. (color) __ "Color('brown')"
 
 
 ___ test_unknown_color

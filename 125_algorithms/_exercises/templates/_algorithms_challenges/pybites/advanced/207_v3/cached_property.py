@@ -29,7 +29,7 @@ c_ Planet:
         _mass = N..
 
     ___  -r
-        r.. f'{__class__.__name__}({repr(color)})'
+        r.. f'{__class__.__name__}({r.. (color)})'
 
     @cached_property
     ___ mass

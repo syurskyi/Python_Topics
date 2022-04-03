@@ -25,7 +25,7 @@ c_ LenCnt:
         c = c
 
     ___  -r
-        r.. repr((l, c))
+        r.. r.. ((l, c))
 
 
 c_ Solution:

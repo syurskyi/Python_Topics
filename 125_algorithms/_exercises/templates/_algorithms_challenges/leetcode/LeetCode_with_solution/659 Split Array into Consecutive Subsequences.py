@@ -77,7 +77,7 @@ c_ Interval:
         r.. end < other.end
 
     ___  -r
-        r.. repr((end, length))
+        r.. r.. ((end, length))
 
 
 c_ Solution2:

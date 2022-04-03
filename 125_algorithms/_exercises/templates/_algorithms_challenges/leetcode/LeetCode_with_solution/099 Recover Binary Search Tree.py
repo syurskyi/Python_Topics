@@ -16,7 +16,7 @@ c_ TreeNode:
         right = N..
 
     ___  -r
-        r.. repr(val)
+        r.. r.. (val)
 
 c_ Solution:
     ___ -

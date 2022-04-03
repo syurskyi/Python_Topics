@@ -29,7 +29,7 @@ c_ UndirectedGraphNode:
         label = x
         neighbors    # list
     ___  -r
-        r.. repr(label)
+        r.. r.. (label)
 
 c_ Solution:
     ___ cloneGraph_TLE  node

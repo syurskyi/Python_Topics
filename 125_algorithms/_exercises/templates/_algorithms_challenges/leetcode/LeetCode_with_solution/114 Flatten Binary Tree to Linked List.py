@@ -34,7 +34,7 @@ c_ TreeNode:
         left = N..
         right = N..
     ___  -r
-        r.. repr(val)
+        r.. r.. (val)
 
 c_ Solution:
     ___ flatten_data_structure  root

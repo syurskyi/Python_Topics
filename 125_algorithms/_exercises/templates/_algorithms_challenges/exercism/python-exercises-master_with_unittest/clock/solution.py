@@ -11,7 +11,7 @@ c_ Clock(o..
         r.. "%02d:%02d" % (hour, minute)
 
     ___ __eq__  other
-        r.. repr(self) __ repr(other)
+        r.. r.. (self) __ r.. (other)
 
     ___ add  minutes
         minute += minutes

@@ -22,9 +22,9 @@ ___ test_account_create(einstein
     ... isi..(einstein, Account)
     ... einstein.balance __ 100
     ... s..(einstein) __ 'Account of Einstein with starting amount: 100'
-    ... repr(einstein) __ "Account('Einstein', 100)"
+    ... r.. (einstein) __ "Account('Einstein', 100)"
     hector = Account('Hector')
-    ... repr(hector) __ "Account('Hector', 0)"
+    ... r.. (hector) __ "Account('Hector', 0)"
 
 
 ___ test_account_transaction(einstein

@@ -32,7 +32,7 @@ c_ SgfTree(o..
             __ l..(children) > 1:
                 rep += '('
             ___ c __ children:
-                rep += repr(c)[1:-1]
+                rep += r.. (c)[1:-1]
             __ l..(children) > 1:
                 rep += ')'
         r.. rep + ')'
@@ -55,9 +55,9 @@ ___ p..(input_string
         __ n.. condition:
             r.. V...(
                 'invalid format at {}:{}: {}'.f..(
-                    repr(input_string),
+                    r.. (input_string),
                     l..(input_string) - l..(stack),
-                    repr(''.j..(stack))
+                    r.. (''.j..(stack))
                 )
             )
     assert_that(stack)

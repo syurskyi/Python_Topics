@@ -29,7 +29,7 @@ c_ Solution_MLE:  # Memory Limit Exceeds
             d.. = d..
 
         ___  -r
-            r.. repr(s__)
+            r.. r.. (s__)
 
     ___ findLadders  start, end, d..
         """
@@ -83,7 +83,7 @@ c_ Solution_TLE:
             pre = pre  # node
 
         ___  -r
-            r.. repr(s__)
+            r.. r.. (s__)
 
     ___ findLadders  start, end, d..
         """
@@ -145,7 +145,7 @@ c_ Node:
         # self.pres = self.pre.pres|{string} if self.pre else {string}  # accelerate speed
 
     ___  -r
-        r.. repr(s__)
+        r.. r.. (s__)
 
 c_ Solution_TLE2:
     ___ findLadders  start, end, d..

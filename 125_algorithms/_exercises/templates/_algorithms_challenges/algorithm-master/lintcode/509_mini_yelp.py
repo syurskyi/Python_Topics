@@ -153,7 +153,7 @@ c_ Trie:
         root = _new_node()
 
     ___  -r
-        r.. repr(root)
+        r.. r.. (root)
 
     ___ put  key
         __ n.. key:

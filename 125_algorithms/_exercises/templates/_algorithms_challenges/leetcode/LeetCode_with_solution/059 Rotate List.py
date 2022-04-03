@@ -13,7 +13,7 @@ c_ ListNode:
         next = N..
 
     ___  -r
-        r.. repr(val)
+        r.. r.. (val)
 
 c_ Solution:
     ___ rotateRight  head, k

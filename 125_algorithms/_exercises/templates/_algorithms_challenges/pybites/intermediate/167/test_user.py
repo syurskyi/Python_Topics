@@ -6,7 +6,7 @@ ___ test_bob_lowercase
     ... bob.get_full_name __ 'Bob Belderbos'
     ... bob.username __ 'bbelderb'  # lowercase!
     ... s..(bob) __ 'Bob Belderbos (bbelderb)'
-    ... repr(bob) __ 'User("bob", "belderbos")'
+    ... r.. (bob) __ 'User("bob", "belderbos")'
 
 
 ___ test_julian_mixed_case
@@ -14,7 +14,7 @@ ___ test_julian_mixed_case
     ... bob.get_full_name __ 'Julian Sequeira'
     ... bob.username __ 'jsequeir'  # lowercase!
     ... s..(bob) __ 'Julian Sequeira (jsequeir)'
-    ... repr(bob) __ 'User("julian", "Sequeira")'
+    ... r.. (bob) __ 'User("julian", "Sequeira")'
 
 
 ___ test_tania_title_name
@@ -22,7 +22,7 @@ ___ test_tania_title_name
     ... bob.get_full_name __ 'Tania Courageous'  # aka PyBites Ninja
     ... bob.username __ 'tcourage'  # lowercase!
     ... s..(bob) __ 'Tania Courageous (tcourage)'
-    ... repr(bob) __ 'User("Tania", "Courageous")'
+    ... r.. (bob) __ 'User("Tania", "Courageous")'
 
 
 ___ test_noah_use_dunder_in_repr
@@ -39,4 +39,4 @@ ___ test_noah_use_dunder_in_repr
     ... s..(noah) __ 'Noah Kagan (nkagan)'
 
     # it should show the subclass!
-    ... repr(noah) __ 'SpecialUser("Noah", "Kagan")'
+    ... r.. (noah) __ 'SpecialUser("Noah", "Kagan")'
