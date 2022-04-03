@@ -11,11 +11,11 @@ c_ Solution(o..
     :type num: int
     :rtype: str
     """
-    global units, tenToTwenty, tens, digit
+    g.. units, tenToTwenty, tens, digit
     ans    # list
 
     ___ getNum(number
-      global units, tenToTwenty, tens, digit
+      g.. units, tenToTwenty, tens, digit
       divider = 1000
       ans    # list
       h = number / 100

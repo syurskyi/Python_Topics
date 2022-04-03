@@ -90,7 +90,7 @@ async ___ main(
     :param lunch_length: float of lunch length in seconds
     :return: None
     """
-    global CURRENT_SESSION
+    g.. CURRENT_SESSION
     print(f"Pomodor timer started at: {time.s..('%X')}")
 
     w.... CURRENT_SESSION <= 4:

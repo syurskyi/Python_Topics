@@ -11,7 +11,7 @@ ___ find_answer(entry
 ___ gen_primes(limit300000000
     data  [i..(input ___ x __ r..(i..(input()))]
     primes, semirp, answer    # list, [], []
-    global semirp
+    g.. semirp
 
     # Sieve of Eratosthenes
     sieve  [T..] * (limit + 1)

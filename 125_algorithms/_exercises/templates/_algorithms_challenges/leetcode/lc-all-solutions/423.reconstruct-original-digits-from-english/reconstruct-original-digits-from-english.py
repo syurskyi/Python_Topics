@@ -9,7 +9,7 @@ c_ Solution(o..
     :type s: str
     :rtype: str
     """
-    global nums, feature
+    g.. nums, feature
     ans    # list
     count    # dict
     ___ c __ s:

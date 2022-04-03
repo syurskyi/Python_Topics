@@ -17,7 +17,7 @@ ___ class_rosters(input_file
             ___ i __ r..(2,l..(row)):
                 class_ = row[i]
                 __ class_:
-                    class_section = class_.rsplit(' - ')[0]
+                    class_section = class_.r.. ' - ')[0]
                     result.a..(f"{class_section},{school_year},{_id}")
 
 

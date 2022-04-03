@@ -41,7 +41,7 @@ __ _____ __ _____
     k = 4
 
     ___ read4(buf
-        global i
+        g.. i
         j = 0
 
         w.... i < n a.. j < k:

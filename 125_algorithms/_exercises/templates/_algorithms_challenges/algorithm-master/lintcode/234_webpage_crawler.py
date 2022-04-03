@@ -7,7 +7,7 @@ results    # dict
 
 c_ CrawlerThread(Thread
     ___ run
-        global queue, results
+        g.. queue, results
         w... T...
             url = queue.g.. )
             __ url n.. __ results \
@@ -28,7 +28,7 @@ c_ Solution:
     # @return {string[]} all urls
     ___ crawler  url
         # Write your code here
-        global queue, results
+        g.. queue, results
         thread_pools    # list
         ___ i __ x..(10
             thread_pools.a..(CrawlerThread

@@ -1,6 +1,6 @@
-___ generate_affiliation_link(url
-    beginning = "".j..(url.s..('/')[:3])
-    beginning1 = beginning.r..(beginning, "http://www.amazon.com")
-    mid = "".j..(url.rsplit('/')[5])
-    end_chop = url.rsplit('/', 1)[1]
-    r.. f"{beginning1}/dp/{mid}/?tag=pyb0f-20".r..(end_chop, "")
+# ___ generate_affiliation_link url
+#     beginning  "".j.. ?.s..'/' |3
+#     beginning1  ?.r.. ? "http://www.amazon.com"
+#     mid  "".j.. ?.r.. '/' 5
+#     end_chop  ?.r.. '/', 1 1
+#     r.. _* _1/dp/ m../?tag=pyb0f-20".r..(end_chop, ""
