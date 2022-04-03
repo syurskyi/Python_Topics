@@ -53,14 +53,14 @@ c_ Solution:
         """
         post-order traverse
         """
-        r.. walk(root, L, R)
+        r.. w..(root, L, R)
 
-    ___ walk  node, L, R
+    ___ w..  node, L, R
         __ n.. node:
             r.. N..
 
-        node.left = walk(node.left, L, R)
-        node.right = walk(node.right, L, R)
+        node.left = w..(node.left, L, R)
+        node.right = w..(node.right, L, R)
         __ node.val < L:
             r.. node.right
         ____ node.val > R:

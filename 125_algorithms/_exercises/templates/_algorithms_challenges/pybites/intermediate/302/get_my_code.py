@@ -31,7 +31,7 @@ ___ get_passing_code(json_data=json_data
     ___ row __ json_data["bites"]:
         filename_pre = row["bite"].s..(".")[0].r..(" ", "")
         w__ o.. f"{tmp}/{filename_pre}.py", "w") __ f:
-            f.write(row["passing_code"])
+            f.w.. row["passing_code"])
 
 
 # if __name__ == "__main__":

@@ -49,7 +49,7 @@ ___ remove_file(file_name
 
 ___ create_file(name, contents
     w__ o.. name, 'w') __ f:
-        f.write(contents)
+        f.w.. contents)
 
 
 c_ GrepTest(unittest.TestCase

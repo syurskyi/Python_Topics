@@ -38,7 +38,7 @@ ___ get_passing_code(json_data=json_data
         print(passing_code)
         p.. = tmp / f"{bite_name}.py"
         w__ o.. p..,'w') __ f:
-            f.write(passing_code)
+            f.w.. passing_code)
 
 
 

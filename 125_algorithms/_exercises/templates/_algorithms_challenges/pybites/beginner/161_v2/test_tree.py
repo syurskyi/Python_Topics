@@ -1,27 +1,27 @@
-____ tree _______ count_dirs_and_files
-
-
-___ test_only_files(tmp_path
-    ___ i __ r..(1, 6
-        p.. = tmp_path / f'{i}.txt'
-        w__ o.. p.., 'w') __ f:
-            f.write('hello')
-    ... count_dirs_and_files(tmp_path) __ (0, 5)
-
-
-___ test_only_dirs(tmp_path
-    ___ i __ r..(5
-        (tmp_path / s..(i)).mkdir()
-    ... count_dirs_and_files(tmp_path) __ (5, 0)
-
-
-___ test_files_and_dirs(tmp_path
-    ___ i __ r..(10
-        __ i % 2 __ 0:
-            target_dir = tmp_path / s..(i)
-            target_dir.mkdir()
-            ___ j __ r..(5
-                p.. = target_dir / f'{j}.txt'
-                w__ o.. p.., 'w') __ f:
-                    f.write('hello')
-    ... count_dirs_and_files(tmp_path) __ (5, 25)
+# ____ ? _______ ?
+#
+#
+# ___ test_only_files(tmp_path
+#     ___ i __ r.. 1, 6
+#         p.. = ? / _* ?.txt
+#         w__ o.. p.. _ __ f
+#             ?.w.. 'hello'
+#     ... ? ? __ 0 5
+#
+#
+# ___ test_only_dirs tmp_path
+#     ___ i __ r.. 5
+#         ? / s.. ? .m..
+#     ... ? ? __ 5 0
+#
+#
+# ___ test_files_and_dirstmp_path
+#     ___ i __ r..10
+#         __ ? % 2 __ 0
+#             target_dir  ? / s.. ?
+#             ?.m..
+#             ___ j __ r.. 5
+#                 p..  ? / _*?.txt
+#                 w__ o.. p.. _ __ f
+#                     ?.w.. 'hello'
+#     ... ? ? __ 5 25

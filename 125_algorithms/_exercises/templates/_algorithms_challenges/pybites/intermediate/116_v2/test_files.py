@@ -19,7 +19,7 @@ ___ test_get_files(byte_sizes, size_in_kb, expected
     w__ TemporaryDirectory(TMP) __ dirname:
         ___ size __ byte_sizes:
             w__ o.. __.p...j..(dirname, s..(size)), 'wb') __ f:
-                f.write(__.urandom(size))
+                f.w.. __.urandom(size))
 
         actual = [__.p...basename(fi) ___ fi __
                   get_files(dirname, size_in_kb)]

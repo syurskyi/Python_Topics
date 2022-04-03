@@ -12,7 +12,7 @@ ___ test_only_files
             filename = f'{i}.txt'
             p.. = __.p...j..(dirname, filename)
             w__ o.. p.., 'w') __ f:
-                f.write('hello')
+                f.w.. 'hello')
 
         ... count_dirs_and_files(dirname) __ (0, 5)
 
@@ -35,6 +35,6 @@ ___ test_files_and_dirs
                     filename = f'{j}.txt'
                     p.. = __.p...j..(target_dir, filename)
                     w__ o.. p.., 'w') __ f:
-                        f.write('hello')
+                        f.w.. 'hello')
 
         ... count_dirs_and_files(dirname) __ (5, 25)

@@ -38,7 +38,7 @@ ___ test_malformed_fasta
     CONVERTED_FASTA = f"{FASTA_FILE}.malformed-test.fasta"
 
     w__ o.. FASTA_FILE, "r") __ f_in, o.. MALFORMED_FASTA, "w") __ f_out:
-        f_out.write(f_in.r..[1:])
+        f_out.w.. f_in.r..[1:])
 
     ... (
         fasta_to_2line_fasta(MALFORMED_FASTA, CONVERTED_FASTA) __ EXPECTED_RECORDS - 1

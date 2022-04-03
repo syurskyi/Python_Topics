@@ -25,7 +25,7 @@ Bite 110. Type conversion and exception handling;1.5
 ___ intro_bites
     w__ TemporaryDirectory(dir=TMP
         w__ o.. BITES_CSV, 'w') __ f:
-            f.write(INTRO_BITE_STATS)
+            f.w.. INTRO_BITE_STATS)
     r.. BITES_CSV
 
 

@@ -63,17 +63,17 @@ c_ Solution:
         Chain of hash can uniquely identify a subtree
         """
         ret    # list
-        walk(root, ret)
+        w..(root, ret)
         r.. ret
 
-    ___ walk  cur, ret) __ i..:
+    ___ w..  cur, ret) __ i..:
         """
         return merkle hash id
         """
         __ n.. cur:
             r.. merkle_hash(N..)
 
-        subtree_value = (cur.val, walk(cur.left, ret), walk(cur.right, ret))
+        subtree_value = (cur.val, w..(cur.left, ret), w..(cur.right, ret))
         merkle_hash = merkle_hash(subtree_value)
         __ counter[merkle_hash] __ 1:
             ret.a..(cur)
@@ -88,10 +88,10 @@ c_ Solution2:
         Only need to return the root
         """
         ret    # list
-        walk(root, defaultdict(i..), ret)
+        w..(root, defaultdict(i..), ret)
         r.. ret
 
-    ___ walk  cur, counter, ret) __ s..:
+    ___ w..  cur, counter, ret) __ s..:
         """
         serialize the subtrees and check existence
 
@@ -115,8 +115,8 @@ c_ Solution2:
             r.. "None"
 
         cur_key = ",".j..([
-            walk(cur.left, counter, ret),
-            walk(cur.right, counter, ret),
+            w..(cur.left, counter, ret),
+            w..(cur.right, counter, ret),
             s..(cur.val),
         ])
         __ counter[cur_key] __ 1:

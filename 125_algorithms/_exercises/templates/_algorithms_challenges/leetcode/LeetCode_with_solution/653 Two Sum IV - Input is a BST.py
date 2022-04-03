@@ -43,9 +43,9 @@ c_ TreeNode:
 c_ Solution:
     ___ findTarget  root: TreeNode, k: i..) __ b..:
         root = root
-        r.. walk(root, k)
+        r.. w..(root, k)
 
-    ___ walk  node, k
+    ___ w..  node, k
         __ n.. node:
             r.. F..
 
@@ -53,7 +53,7 @@ c_ Solution:
         __ find(root, target, node
             r.. T..
 
-        __ walk(node.left, k) o. walk(node.right, k
+        __ w..(node.left, k) o. w..(node.right, k
             r.. T..
 
         r.. F..

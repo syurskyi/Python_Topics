@@ -30,13 +30,13 @@ c_ Solution:
         """
         in-order traversal, right first
         """
-        walk(root, 0)
+        w..(root, 0)
         r.. root
 
-    ___ walk  node, cur_sum
+    ___ w..  node, cur_sum
         """stateless walk"""
         __ n.. node:
             r.. cur_sum
-        s = walk(node.right, cur_sum)
+        s = w..(node.right, cur_sum)
         node.val += s
-        r.. walk(node.left, node.val)
+        r.. w..(node.left, node.val)

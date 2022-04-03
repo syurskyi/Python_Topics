@@ -41,11 +41,11 @@ c_ TreeNode:
 
 c_ Solution:
     ___ lowestCommonAncestor  root: TreeNode, p: TreeNode, q: TreeNode) __ TreeNode:
-        r.. walk(root, p, q)
+        r.. w..(root, p, q)
 
-    ___ walk  node, p, q
+    ___ w..  node, p, q
         __ p.val > node.val a.. q.val > node.val:
-            r.. walk(node.right, p, q)
+            r.. w..(node.right, p, q)
         __ p.val < node.val a.. q.val < node.val:
-            r.. walk(node.left, p, q)
+            r.. w..(node.left, p, q)
         r.. node

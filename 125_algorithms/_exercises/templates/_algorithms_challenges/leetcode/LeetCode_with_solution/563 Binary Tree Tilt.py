@@ -37,15 +37,15 @@ c_ TreeNode:
 c_ Solution:
     ___ findTilt  root: TreeNode) __ i..:
         ret = [0]
-        walk(root, ret)
+        w..(root, ret)
         r.. ret[0]
 
-    ___ walk  node: TreeNode, ret) __ i..:
+    ___ w..  node: TreeNode, ret) __ i..:
         """get the sum of the subtree and add the tilt"""
         __ n.. node:
             r.. 0
 
-        l = walk(node.left, ret)
-        r = walk(node.right, ret)
+        l = w..(node.left, ret)
+        r = w..(node.right, ret)
         ret[0] += abs(l - r)
         r.. l + node.val + r

@@ -12,7 +12,7 @@ FASTA_FILE = __.p...j..(__.getenv("TMP", "/tmp"), "fasta_genes.fasta")
 response = r__.g.. URL)
 
 w__ o.. 'test.txt','w') __ f:
-    f.write(response.text)
+    f.w.. response.text)
 
 
 __ n.. __.p...isfile(FASTA_FILE
@@ -36,8 +36,8 @@ ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_
                 __ line[0] __ '>':
                     __ sequence:
                         sequence.a..(''.j..(lines))
-                        f1.write('\n'.j..(sequence))
-                        f1.write('\n')
+                        f1.w.. '\n'.j..(sequence))
+                        f1.w.. '\n')
                         sequence    # list
                     ____:
                         sequence = [line]

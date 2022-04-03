@@ -15,7 +15,7 @@ c_ Board:
     ___ valid  x, y
         r.. x >= 0 a.. x < width a.. y >= 0 a.. y < height
 
-    ___ walk  x, y,
+    ___ w..  x, y,
              visited_territory=[],
              visited_coords=[],
              visited_stones=[]
@@ -26,7 +26,7 @@ c_ Board:
                     r.. (visited_territory, visited_stones + [s])
             ____:  # s is empty
                 ___ d __ DIRECTIONS:
-                    visited = walk(x + d[0], y + d[1],
+                    visited = w..(x + d[0], y + d[1],
                                         visited_territory + [(x, y)],
                                         visited_coords + [(x, y)],
                                         visited_stones)
@@ -41,7 +41,7 @@ c_ Board:
         __ board[y][x] __ STONES:
             r.. (NONE, s..
 
-        visited_territory, visited_stones = walk(x, y)
+        visited_territory, visited_stones = w..(x, y)
         result = s..(visited_territory)
 
         __ l..(visited_stones) __ 1:
