@@ -31,7 +31,7 @@ ___ count_letters(queue_of_texts, letter_to_frequency, worker_id
         line_input = queue_of_texts.g.. )
         __ line_input __ n.. N..
             letters_in_line = C..([x ___ x __ line_input.l.. __
-                                       x.isalpha()])
+                                       x.i..])
             letter_to_frequency.add_counter(letters_in_line)
         queue_of_texts.task_done()
         __ line_input __ N..

@@ -53,7 +53,7 @@ c_ ParallelLetterFrequencyTest(unittest.TestCase
                      "expensive yak shave waiting to\n" + \
                      "happen."
         actual  calculate(text_input.s..('\n'))
-        expected  C..([x ___ x __ text_input.l.. __ x.isalpha()])
+        expected  C..([x ___ x __ text_input.l.. __ x.i..])
         assertDictEqual(actual, expected)
 
 

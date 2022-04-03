@@ -27,7 +27,7 @@ c_ Cipher:
                        ___ _ __ r..(random_key_length))
 
     ___ valid_key
-        r.. key.isalpha() a.. key.islower()
+        r.. key.i.. a.. key.islower()
 
     ___ offset  index
         r.. wrap(o..(key[index % l..(key)]) - 97)

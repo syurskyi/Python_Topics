@@ -1,4 +1,4 @@
-___ sort_words_case_insensitively(words
-    no_digits = [c ___ c __ words __ c[0].isalpha()]
-    d.. = [c ___ c __ words __ c[0].i..]
-    r.. [s..(no_digits, key=s...c..) + s..(d.., key=l.... x: x[0])][0]
+# ___ sort_words_case_insensitively words
+#     no_digits  c ___ ? __ ? __ ? 0.isa..
+#     d..  c ___ ? __ ? __ ? 0.i..
+#     r.. s.. ? k.._s...c.. + s.. d.. k.._l.... x| ? 0 0

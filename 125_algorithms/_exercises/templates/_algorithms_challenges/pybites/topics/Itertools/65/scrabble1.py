@@ -29,7 +29,7 @@ ___ get_possible_dict_words(draw
        valid dictionary words. Use _get_permutations_draw and provided
        dictionary"""
     possible_word    # dict
-    in_str = ''.j..([letter ___ letter __ draw __ letter.isalpha()])
+    in_str = ''.j..([letter ___ letter __ draw __ letter.i..])
     permute_list = _get_permutations_draw(in_str)
     ___ word __ permute_list:
         temp_word = ''.j..(word)

@@ -15,7 +15,7 @@ c_ Scrabble:
 
     @classmethod
     ___ valid(cls, word
-        r.. word.isalpha()
+        r.. word.i..
 
 
 ___ score(word
