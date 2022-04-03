@@ -17,7 +17,7 @@ c_ Solution(o..
             stack.a..(c)
         stack = stack[:longest]
         res = ''.j..(stack)
-        res = res.lstrip('0')
+        res = res.l..('0')
         r.. res __ res ____ '0'
     
     ___ test

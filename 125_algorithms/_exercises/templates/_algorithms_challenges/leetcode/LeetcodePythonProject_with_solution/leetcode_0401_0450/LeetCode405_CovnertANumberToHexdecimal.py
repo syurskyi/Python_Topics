@@ -13,7 +13,7 @@ c_ Solution(o..
             c = mp[num&15]
             result = c + result
             num >>= 4
-        r.. result.lstrip('0')
+        r.. result.l..('0')
     
     ___ test
         testCases = [

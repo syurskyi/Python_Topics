@@ -38,7 +38,7 @@ c_ Solution:
         dep2size = {0: 0}
 
         ___ line __ p...s..('\n'
-            name = line.lstrip('\t')
+            name = line.l..('\t')
             size = l..(name)
             depth = l..(line) - l..(name)
 

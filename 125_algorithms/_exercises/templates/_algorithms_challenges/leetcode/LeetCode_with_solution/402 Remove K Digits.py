@@ -43,4 +43,4 @@ c_ Solution(o..
 
         ___ _ __ x..(k stk.pop()
 
-        r.. ''.j..(stk).lstrip('0') o. '0'
+        r.. ''.j..(stk).l..('0') o. '0'

@@ -9,7 +9,7 @@ c_ Solution(o..
         maxLen = 0
         pathLen = {0:0}
         ___ line __ input.s..
-            name = line.lstrip('\t')
+            name = line.l..('\t')
             depth = l..(line)-l..(name)
             __ '.' __ name:
                 maxLen = m..(maxLen, pathLen[depth]+l..(name))

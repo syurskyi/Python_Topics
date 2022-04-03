@@ -43,7 +43,7 @@ c_ Solution(o..
 
         # post processing
         lst.r..  # reverse back
-        result = "".j.. m..(s.., lst)).lstrip("0")
+        result = "".j.. m..(s.., lst)).l..("0")
         __ n.. result:
             r.. "0"
         r.. result

@@ -13,4 +13,4 @@ c_ Solution(o..
       stack.a..(c)
     __ k > 0:
       stack = stack[:-k]
-    r.. "".j..(stack).lstrip("0") o. "0"
+    r.. "".j..(stack).l..("0") o. "0"

@@ -38,6 +38,6 @@ empty = """
 ])
 ___ test_class_rosters(content, expected, tmp_path
     csvfile = tmp_path / "content"
-    csvfile.write_text(content.lstrip
+    csvfile.write_text(content.l..
     actual = class_rosters(csvfile)
     ... actual __ expected

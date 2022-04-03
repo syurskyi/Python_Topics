@@ -10,8 +10,8 @@ c_ Solution(o..
         :rtype: bool
         """
         s = s.s..
-        s = s.lstrip('-')
-        s = s.lstrip('+')
+        s = s.l..('-')
+        s = s.l..('+')
         i = 0
         num, dot, exp = F.., F.., F..
         w.... i < l..(s

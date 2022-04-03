@@ -21,7 +21,7 @@ ___ _cap_str_to_mln_float(cap
         r.. 0
 
 
-    cap = cap.lstrip('$')
+    cap = cap.l..('$')
     __ 'M' __ cap:
         value = f__(cap.rstrip('M'))
     ____ 'B' __ cap:

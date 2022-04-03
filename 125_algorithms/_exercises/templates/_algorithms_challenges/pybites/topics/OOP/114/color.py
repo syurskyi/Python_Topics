@@ -30,7 +30,7 @@ c_ Color:
         __ l..(hex_value) != 7 o. hex_value[0] != '#':
             r.. ValueError
         ___
-            rgb = t..(i..(hex_value.lstrip('#')[i:i+2], 16) ___ i __ (0, 2, 4))
+            rgb = t..(i..(hex_value.l..('#')[i:i+2], 16) ___ i __ (0, 2, 4))
         ______ V..
             r.. ValueError
         r.. rgb

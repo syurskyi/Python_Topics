@@ -18,7 +18,7 @@ c_ Solution(o..
         ____ s[0] __ '-':
             s = s[1:]
             sig = -1
-        s = s.lstrip('0')
+        s = s.l..('0')
         res = 0
         ___ c __ s:
             __ n.. c.i..

@@ -19,7 +19,7 @@ c_ Solution(o..
                 count += 1
                 __ count > 0 a.. count % K __ 0:
                     res = '-' + res
-        r.. res.lstrip('-')
+        r.. res.l..('-')
     
     ___ test
         testCases = [

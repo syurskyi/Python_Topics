@@ -11,7 +11,7 @@ c_ Solution:
         comp = l.... a, b: 1 __ a+b > b+a ____ -1 __ a+b<b+a ____ 0
         nums = l.. m..(s.., nums))
         nums.s..(cmp=comp, r.._T..
-        r.. ''.j..(nums).lstrip('0')
+        r.. ''.j..(nums).l..('0')
     
     # @param {integer[]} nums
     # @return {string}
@@ -19,7 +19,7 @@ c_ Solution:
         #python 2 only
         num = [s..(x) ___ x __ nums]
 #         num.sort(cmp=lambda x, y: cmp(y+x, x+y))
-        r.. ''.j..(num).lstrip('0') o. '0'
+        r.. ''.j..(num).l..('0') o. '0'
     
     ___ test
         testCases = [

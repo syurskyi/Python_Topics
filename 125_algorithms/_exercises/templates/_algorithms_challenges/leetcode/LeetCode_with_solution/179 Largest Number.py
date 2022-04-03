@@ -22,7 +22,7 @@ c_ Solution:
         nums = map(s.., nums)
         nums.s..(cmp=cmp, r.._T..
         nums = "".j..(nums)
-        nums = nums.lstrip("0")
+        nums = nums.l..("0")
         __ n.. nums:
             nums = "0"
         r.. nums

@@ -19,7 +19,7 @@ ___ _cap_str_to_mln_float(cap
     __ cap __ "n/a":
         r.. 0
     ____:
-        cap = cap.lstrip("$")
+        cap = cap.l..("$")
         __ cap[-1] __ "B":
             r.. f__(cap.rstrip("B")) * 1000
         ____:

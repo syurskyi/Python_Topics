@@ -20,7 +20,7 @@ c_ Solution(o..
         res = s[:i]
         res += s..(i..(s[i])-1)
         res += '9'*(l..(s)-i-1)
-        res = res.lstrip('0')
+        res = res.l..('0')
         r.. i..(res) __ res != '' ____ 0
     
     ___ test
