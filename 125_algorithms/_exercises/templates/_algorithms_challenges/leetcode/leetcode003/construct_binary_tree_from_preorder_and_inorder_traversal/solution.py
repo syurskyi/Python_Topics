@@ -14,7 +14,7 @@ c_ Solution:
             r.. N..
         ____:
             root_val = preorder.pop(0)
-            root_index = inorder.index(root_val)
+            root_index = inorder.i.. root_val)
             left_tree = buildTree(preorder, inorder[:root_index])
             right_tree = buildTree(preorder, inorder[root_index + 1:])
             root = TreeNode(root_val)

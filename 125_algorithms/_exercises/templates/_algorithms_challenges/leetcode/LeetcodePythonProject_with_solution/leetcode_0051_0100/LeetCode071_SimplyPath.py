@@ -12,7 +12,7 @@ c_ Solution(o..
         """
         __ n.. p..: r.. p..
         result = ''
-        __ p...endswith('/' p.. = p..[:-1]
+        __ p...e.. '/' p.. = p..[:-1]
         __ p...startswith('/' p.. = p..[1:]
         l = p...s..('/')
         cont = 0

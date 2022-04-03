@@ -12,7 +12,7 @@ ___ get_sorting_indexes(array
     print(array)
 
     ___ i __ sorted_array:
-        results.a..(array.index(i)+1)
+        results.a..(array.i.. i)+1)
 
 array = l.. m..(i.., input().s..()))
 get_sorting_indexes(array)

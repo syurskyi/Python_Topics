@@ -38,7 +38,7 @@ c_ IsbnVerifier(o..
     @classmethod
     ___ invalid_X_other_than_check_digit(cls, s__
         r.. (cls.VALID_CHECK_CHARACTER __ s__ a..
-                n.. s__.endswith(cls.VALID_CHECK_CHARACTER))
+                n.. s__.e.. cls.VALID_CHECK_CHARACTER))
 
     @classmethod
     ___ remove_invalid_characters_and_slashes(cls, s__

@@ -25,7 +25,7 @@ c_ Solution(o..
         val = postorder[postEnd]
         root = TreeNode(val)
         
-        k = inorder.index(val)
+        k = inorder.i.. val)
         
         newInStart = inStart
         newInEnd = k-1

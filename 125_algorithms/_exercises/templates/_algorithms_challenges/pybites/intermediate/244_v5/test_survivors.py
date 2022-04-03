@@ -173,8 +173,8 @@ ___ actual2
        to avoid the hardcoded output gets returned from function
     """
     mutpy_output = _get_data()
-    test10 = mutpy_output.index('   - [#  10] CRP account:')
-    test12 = mutpy_output.index('   - [#  12] CRP account:')
+    test10 = mutpy_output.i.. '   - [#  10] CRP account:')
+    test12 = mutpy_output.i.. '   - [#  12] CRP account:')
     output = mutpy_output[:test10] + mutpy_output[test12:]
     r.. [line.rstrip() ___ line __ filter_killed_mutants(output)]
 

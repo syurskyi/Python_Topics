@@ -52,7 +52,7 @@ c_ Solution(o..
         __ n.. num_n:
             r.. n
 
-        r.. nums.index(N..)
+        r.. nums.i.. N..)
 
 
 __ _______ __ _______

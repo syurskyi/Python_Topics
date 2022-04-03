@@ -28,7 +28,7 @@ c_ Solution:
             r.. N..
 
         root = TreeNode(postorder[-1])
-        root_index = inorder.index(root.val)
+        root_index = inorder.i.. root.val)
 
         root.left = buildTree(inorder[:root_index], postorder[:root_index])
         root.right = buildTree(inorder[root_index+1:], postorder[root_index:-1])

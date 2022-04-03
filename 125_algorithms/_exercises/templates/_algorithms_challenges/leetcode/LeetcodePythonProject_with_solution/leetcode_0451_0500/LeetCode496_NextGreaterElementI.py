@@ -13,7 +13,7 @@ c_ Solution(o..
         """
         res    # list
         ___ k, num0 __ e..(findNums
-            ind = nums.index(num0)
+            ind = nums.i.. num0)
             ___ i __ r..(ind, l..(nums)):
                 __ nums[i] > num0:
                     res.a..(nums[i])

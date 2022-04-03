@@ -43,7 +43,7 @@ c_ Solution:
 
             d...a..(a)
 
-        ids = [d...index(t) ___ t __ times]
+        ids = [d...i.. t) ___ t __ times]
         ids[-1] += 1
 
         w.... n.. is_valid(ids, d..

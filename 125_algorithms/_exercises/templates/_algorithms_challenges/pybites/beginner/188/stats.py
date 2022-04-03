@@ -35,7 +35,7 @@ ___ get_all_line_counts(data: s.. = STATS) __ l..:
     w__ o.. data _ __ f:
         ___ line __ f:
             line = line.s..
-            space_index = line.index(' ')
+            space_index = line.i.. ' ')
             lines.a..(i..(line[:space_index]))
     
     r.. lines

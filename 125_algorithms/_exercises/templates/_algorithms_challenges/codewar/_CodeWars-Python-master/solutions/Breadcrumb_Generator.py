@@ -34,7 +34,7 @@ Special thanks to the colleague that, seeing my code and commenting that I worke
 
 ___ generate_bc(url, separator
     __ '//' __ url:
-        url = url[url.index('//') + 2:]
+        url = url[url.i.. '//') + 2:]
 
     url = url.rstrip('/')
 

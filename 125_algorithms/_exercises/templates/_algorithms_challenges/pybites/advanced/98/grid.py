@@ -17,7 +17,7 @@ ___ print_sequence_route(grid, start_coordinates_ N..
             values = l.. m..(i..,__.s..(r'\D+',line)))
             __ START_VALUE __ values:
                 start_row = l..(matrix)
-                start_col = values.index(START_VALUE)
+                start_col = values.i.. START_VALUE)
             matrix.a..(values)
     
 

@@ -52,7 +52,7 @@ ___ d.. short_url: s..) __ i..:
 
     value = 0
     ___ i,character __ e..(r..(short_url),0
-        value += BASE**i * CODEX.index(character)
+        value += BASE**i * CODEX.i.. character)
 
 
     r.. value

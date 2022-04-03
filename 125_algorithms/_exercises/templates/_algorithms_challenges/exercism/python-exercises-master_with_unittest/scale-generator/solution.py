@@ -25,11 +25,11 @@ c_ Scale(o..
         scale = _reorder_chromatic_scale()
         ___ i, interval __ e..(pattern
             pitches.a..(scale[last_index])
-            last_index += ASCENDING_INTERVALS.index(interval) + 1
+            last_index += ASCENDING_INTERVALS.i.. interval) + 1
         __ pitches[0] != scale[last_index % l..(scale)]:
             r.. V...()
         r.. pitches
 
     ___ _reorder_chromatic_scale
-        index = chromatic_scale.index(tonic)
+        index = chromatic_scale.i.. tonic)
         r.. chromatic_scale[index:] + chromatic_scale[:index]

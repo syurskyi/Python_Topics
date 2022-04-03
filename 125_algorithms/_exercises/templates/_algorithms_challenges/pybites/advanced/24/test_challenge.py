@@ -21,7 +21,7 @@ ___ test_baseclass_methods_are_abstract
     ... verify_method, "Cannot find a method called verify"
     verify_index = verify_method[0][0]
     ... lines[verify_index - 1] __ "@abstractmethod"
-    pretty_title_index = lines.index('def pretty_title(self):')
+    pretty_title_index = lines.i.. 'def pretty_title(self):')
     ... lines[pretty_title_index - 1] __ "@abstractmethod"
 
 

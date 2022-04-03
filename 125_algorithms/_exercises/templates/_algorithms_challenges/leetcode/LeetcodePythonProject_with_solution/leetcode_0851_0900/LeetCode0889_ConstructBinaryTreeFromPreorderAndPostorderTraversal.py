@@ -29,7 +29,7 @@ c_ Solution(o..
         
         nextPreStart = preStart+1
         val = pre[preStart+1]
-        nextPostEnd = post.index(val)
+        nextPostEnd = post.i.. val)
         nextPreEnd = nextPreStart+(nextPostEnd-postStart)
         leftNode = helper(pre, nextPreStart, nextPreEnd, post, postStart, nextPostEnd)
         rightNode = helper(pre, nextPreEnd+1, preEnd, post, nextPostEnd+1, postEnd-1)

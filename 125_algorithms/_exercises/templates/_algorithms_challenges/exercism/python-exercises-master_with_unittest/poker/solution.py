@@ -15,7 +15,7 @@ ___ allmax(iterable, key_ N..
 
 
 ___ hand_rank(hand
-    card_ranks = ["..23456789TJQKA".index(r) ___ r, s __ hand]
+    card_ranks = ["..23456789TJQKA".i.. r) ___ r, s __ hand]
     groups = [(card_ranks.c.. i), i) ___ i __ s..(card_ranks)]
     groups.s..(r.._T..
     counts, ranks = z..(*groups)

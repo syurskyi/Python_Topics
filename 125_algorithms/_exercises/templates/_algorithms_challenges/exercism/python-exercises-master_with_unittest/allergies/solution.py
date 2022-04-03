@@ -15,7 +15,7 @@ c_ Allergies(o..
         score = score
 
     ___ is_allergic_to  allergy
-        r.. score & 1 << _allergies.index(allergy)
+        r.. score & 1 << _allergies.i.. allergy)
 
     $
     ___ lst

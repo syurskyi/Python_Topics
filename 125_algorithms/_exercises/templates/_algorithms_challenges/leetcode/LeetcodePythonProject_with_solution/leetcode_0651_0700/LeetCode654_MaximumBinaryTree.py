@@ -18,7 +18,7 @@ c_ Solution(o..
         """
         __ n.. nums: r.. N..
         maxVal = m..(nums)
-        ind = nums.index(maxVal)
+        ind = nums.i.. maxVal)
         root = TreeNode(maxVal)
         root.left = constructMaximumBinaryTree(nums[:ind])
         root.right = constructMaximumBinaryTree(nums[ind+1:])

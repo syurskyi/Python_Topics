@@ -24,7 +24,7 @@ _______ __
 ___ protein(rna
     transDict    # dict
     ___ line __ rnaDict.s..('\n'
-        ___ section __ line[line.index(':')+1:].r..(' ','').s..(','
+        ___ section __ line[line.i.. ':')+1:].r..(' ','').s..(','
             transDict[section] = __.f..(r'\(+\'?(\w+)',line)[0]
     codec = ''
     w.... l..(rna) > 0:

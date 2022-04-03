@@ -31,6 +31,6 @@ ___ test_sum_numbers_throws_exception(caplog
     expected = "Bad inputs: [1, 'a', 2, 3]"
     ... record.message __ expected
     ... record.exc_text.startswith('Traceback')
-    ... record.exc_text.endswith(
+    ... record.exc_text.e..
         ('TypeError: not all arguments converted during '
          'string formatting'))

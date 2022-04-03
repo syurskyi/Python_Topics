@@ -5,7 +5,7 @@ ___ hey(phrase
         r.. "Fine. Be that way!"
     ____ phrase.isupper
         r.. "Whoa, chill out!"
-    ____ phrase.endswith("?"
+    ____ phrase.e.. "?"
         r.. "Sure."
     ____:
         r.. 'Whatever.'

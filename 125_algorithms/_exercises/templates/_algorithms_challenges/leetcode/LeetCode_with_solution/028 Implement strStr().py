@@ -36,7 +36,7 @@ c_ Solution:
             r.. haystack
         __ ln__1:
             ___
-                index = haystack.index(needle)
+                index = haystack.i.. needle)
                 r.. haystack[index:]
             ______ V..
                 r.. N..

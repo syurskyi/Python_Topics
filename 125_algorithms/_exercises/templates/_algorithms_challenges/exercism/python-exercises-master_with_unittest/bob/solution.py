@@ -20,4 +20,4 @@ ___ _is_shouting(stimulus
 
 
 ___ _is_question(stimulus
-    r.. stimulus.endswith('?')
+    r.. stimulus.e.. '?')

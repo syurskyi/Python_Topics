@@ -7,7 +7,7 @@ ___ is_balanced(source, caps
     stack    # list
     ___ c __ source:
         __ c __ caps:
-            i = caps.index(c)
+            i = caps.i.. c)
             __ i % 2 __ 0:
                 __ caps[i] __ caps[i + 1]:
                     __ caps[i] __ count:

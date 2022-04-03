@@ -8,7 +8,7 @@ ___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
         separators = s__.whitespace
 
 
-    indices = [text.index(sep) ___ sep __ separators __ sep __ text]
+    indices = [text.i.. sep) ___ sep __ separators __ sep __ text]
 
     __ indices:
         indices = s..(indices)

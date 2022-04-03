@@ -15,7 +15,7 @@ c_ Garden:
         students = s..(students)
 
     ___ plants  name
-        r.. plants_for_index(students.index(name))
+        r.. plants_for_index(students.i.. name))
 
     # Dislike how these are hardcoded indices
     ___ plants_for_index  i

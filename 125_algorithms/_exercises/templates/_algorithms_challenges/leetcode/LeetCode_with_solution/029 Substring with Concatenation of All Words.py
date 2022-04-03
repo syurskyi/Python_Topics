@@ -61,7 +61,7 @@ c_ Solution:
 
 
             ____ word __ L a.. word n.. __ working_list:
-                window = window[window.index(word)+1:]
+                window = window[window.i.. word)+1:]
                 window.a..(word)
                 # working_list.remove(word)
                 window_t = i+3
@@ -143,9 +143,9 @@ c_ Solution:
 
             # case 3, mach one in L not used up
             ____ word __ Lmap a.. Lmap[word]__0:
-                ___ j __ x..(0, working_win.index(word)+1  # kind of prefix suffix concepts
+                ___ j __ x..(0, working_win.i.. word)+1  # kind of prefix suffix concepts
                     Lmap[working_win[j]] += 1  # restore
-                working_win = working_win[working_win.index(word)+1:]
+                working_win = working_win[working_win.i.. word)+1:]
                 working_win.a..(word)
                 Lmap[word] -= 1
                 win_e = i+k

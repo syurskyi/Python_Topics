@@ -5,4 +5,4 @@ ___ get_duplicate_indices(words
        If so, return the index of its first occurrence.'''
     word_count = C..(words)
     common_words = [k ___ k, v __ word_count.i.. __ v > 1]
-    r.. [words.index(word) ___ word __ common_words]
+    r.. [words.i.. word) ___ word __ common_words]

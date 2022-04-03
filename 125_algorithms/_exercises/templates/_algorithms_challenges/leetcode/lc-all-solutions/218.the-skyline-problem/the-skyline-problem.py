@@ -21,7 +21,7 @@ c_ Solution(o..
       __ height < 0:
         heapq.heappush(heap, height)
       ____:
-        i = heap.index(-height)
+        i = heap.i.. -height)
         heap[i] = heap[-1]
         heap.pop()
         __ i < l..(heap

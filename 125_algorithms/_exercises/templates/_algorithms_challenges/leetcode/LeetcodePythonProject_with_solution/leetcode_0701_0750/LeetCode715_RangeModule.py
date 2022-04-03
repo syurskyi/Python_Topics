@@ -12,14 +12,14 @@ c_ RangeModule(o..
         track = [F..]*2
     
     ___ addRangeHelper  left, right, track=T..
-        ___ index(x
+        ___ i.. x
             i = bisect.bisect_left(X, x)
             __ X[i] != x:
                 X.insert(i, x)
                 track.insert(i, track[i-1])
             r.. i
-        i = index(left)
-        j = index(right)
+        i = i.. left)
+        j = i.. right)
         X[i:j] = [left]
         track[i:j] = [track]
 

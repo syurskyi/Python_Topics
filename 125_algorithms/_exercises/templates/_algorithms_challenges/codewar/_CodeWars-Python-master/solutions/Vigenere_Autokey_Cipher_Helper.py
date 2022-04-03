@@ -16,8 +16,8 @@ c_ VigenereAutokeyCipher:
         index = 0
         ___ c __ text:
             __ c __ abc:
-                offset = abc.index(key[index])
-                result.a..(abc[(abc.index(c) + offset) % l..(abc)])
+                offset = abc.i.. key[index])
+                result.a..(abc[(abc.i.. c) + offset) % l..(abc)])
                 index += 1
             ____:
                 result.a..(c)
@@ -29,8 +29,8 @@ c_ VigenereAutokeyCipher:
         index = 0
         ___ c __ text:
             __ c __ abc:
-                offset = abc.index(key[index])
-                decoded = abc[(abc.index(c) - offset) % l..(abc)]
+                offset = abc.i.. key[index])
+                decoded = abc[(abc.i.. c) - offset) % l..(abc)]
                 result.a..(decoded)
                 key += decoded
                 index += 1

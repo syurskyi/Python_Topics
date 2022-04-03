@@ -24,7 +24,7 @@ ___ number(ocr
     d.. = ''
     ___ n __ numbers:
         ___
-            d.. += s..(OCR_LIST.index(n))
+            d.. += s..(OCR_LIST.i.. n))
         ______ V..
             d.. += '?'
     r.. d..

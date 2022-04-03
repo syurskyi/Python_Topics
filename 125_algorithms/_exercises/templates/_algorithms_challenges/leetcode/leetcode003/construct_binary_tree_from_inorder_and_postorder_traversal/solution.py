@@ -15,7 +15,7 @@ c_ Solution:
         ____:
             d = postorder[-1]
             root = TreeNode(d)
-            i = inorder.index(d)
+            i = inorder.i.. d)
             left = buildTree(inorder[:i], postorder[:i])
             right = buildTree(inorder[i + 1:], postorder[i:-1])
             root.left = left

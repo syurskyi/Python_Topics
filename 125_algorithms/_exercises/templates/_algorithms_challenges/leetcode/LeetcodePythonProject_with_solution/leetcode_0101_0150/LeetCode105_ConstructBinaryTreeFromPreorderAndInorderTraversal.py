@@ -24,7 +24,7 @@ c_ Solution(o..
             r.. N..
         val = preorder[pstart]
         root = TreeNode(val)
-        k = inorder.index(val)
+        k = inorder.i.. val)
         
         new_pstart = pstart+1
         new_pend = pstart+k-istart

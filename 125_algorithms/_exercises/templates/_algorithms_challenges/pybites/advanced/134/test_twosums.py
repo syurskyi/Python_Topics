@@ -36,8 +36,8 @@ ___ test_two_sums_random
     seed(1)
     numbers = sample(r..(1, 1_000_000), 1_000)
     picked = sample(numbers, 2)
-    index1 = numbers.index(picked[0])
-    index2 = numbers.index(picked[1])
+    index1 = numbers.i.. picked[0])
+    index2 = numbers.i.. picked[1])
     ordered = s..([index1, index2])
     expected = ordered[0], ordered[1]
     target = s..(picked)

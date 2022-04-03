@@ -19,7 +19,7 @@ c_ Solution(o..
             stack.a..(remainder)
             n, remainder = divmod(remainder*10, abs(denominator))
             result.a..(s..(n))
-        idx = stack.index(remainder)
+        idx = stack.i.. remainder)
         result.insert(idx+2, '(')
         result.a..(')')
         r.. ''.j..(result).r..('(0)', '').rstrip('.')

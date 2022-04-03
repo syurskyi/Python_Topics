@@ -11,7 +11,7 @@ c_ CrawlerThread(Thread
         w... T...
             url = queue.g.. )
             __ url n.. __ results \
-                a.. urlparse(url).hostname.endswith("wikipedia.org"
+                a.. urlparse(url).hostname.e.. "wikipedia.org"
                 results[url] = T..
                 urls = HtmlHelper.parseUrls(url)
                 ___ url __ urls:

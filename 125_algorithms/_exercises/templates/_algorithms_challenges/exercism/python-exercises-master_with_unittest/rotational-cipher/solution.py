@@ -7,8 +7,8 @@ ___ rotate(message, key
     coded_message = ""
     ___ char __ message:
         __ char __ alpha_lower:
-            char = alpha_lower[(alpha_lower.index(char) + key) % ALPHA_LEN]
+            char = alpha_lower[(alpha_lower.i.. char) + key) % ALPHA_LEN]
         ____ char __ alpha_upper:
-            char = alpha_upper[(alpha_upper.index(char) + key) % ALPHA_LEN]
+            char = alpha_upper[(alpha_upper.i.. char) + key) % ALPHA_LEN]
         coded_message += char
     r.. coded_message

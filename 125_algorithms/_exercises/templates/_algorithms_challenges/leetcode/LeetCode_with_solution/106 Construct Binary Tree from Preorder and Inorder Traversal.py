@@ -32,7 +32,7 @@ c_ Solution:
             r.. N..
 
         root = TreeNode(preorder[0])
-        root_index = inorder.index(root.val)
+        root_index = inorder.i.. root.val)
 
         root.left = buildTree(preorder[1:root_index+1], inorder[0:root_index])
         root.right = buildTree(preorder[root_index+1:], inorder[root_index+1:])
@@ -55,7 +55,7 @@ c_ Solution:
         __ pre_start >= pre_end:
             r.. N..
         root = TreeNode(preorder[pre_start])
-        offset = inorder[in_start:in_end + 1].index(root.val)
+        offset = inorder[in_start:in_end + 1].i.. root.val)
         root.left = _buildTree(pre_start + 1, pre_start + offset + 1, in_start, in_start + offset)
         root.right = _buildTree(pre_start + offset + 1, pre_end, in_start + offset + 1, in_end)
         r.. root

@@ -30,7 +30,7 @@ ___ get_passing_code(json_data=json_data
     """
     ___ bite __ json_data 'bites' :
         bite_name = bite 'bite'
-        bite_name = bite_name[:bite_name.index('.')]
+        bite_name = bite_name[:bite_name.i.. '.')]
         bite_name = bite_name.r..(' ','')
 
         passing_code = bite 'passing_code'

@@ -20,7 +20,7 @@ c_ Solution(o..
                 s = queue.pop(0)
                 __ s __ target:
                     r.. res
-                i = s.index('0')
+                i = s.i.. '0')
                 ___ j __ [i+1, i-1, i+3, i-3]:
                     __ j < 0 o. j > 5 o.\
                         (i __ 2 a.. j __ 3) o.\

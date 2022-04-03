@@ -7,7 +7,7 @@ ___ get_median(values
     ___ i __ values:
         diff.a..(abs(i-avg))
     
-    med = values[diff.index(m..(diff))]
+    med = values[diff.i.. m..(diff))]
     results.a..(med)
 
 ___ i __ r..(amount_values

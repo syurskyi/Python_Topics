@@ -27,7 +27,7 @@ c_ Codec(o..
         strs    # list
         i = 0
         w.... i < l..(s
-            j = s.index("/", i)
+            j = s.i.. "/", i)
             l = i..(s[i:j])
             strs.a..(s[j+1:j+1+l])
             i = j+1+l
