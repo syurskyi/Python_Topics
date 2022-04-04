@@ -47,7 +47,7 @@ The timestamps for all TimeMap.set operations are strictly increasing.
 TimeMap.set and TimeMap.get functions will be called a total of 120000 times
 combined) per test case.
 """
-_______ bisect
+_______ b__
 ____ c.. _______ d..
 
 
@@ -65,7 +65,7 @@ c_ TimeMap:
 
     ___ s..  key: s.., value: s.., timestamp: i..) __ N..
         n = (timestamp, value)
-        bisect.insort(m[key], n)
+        b__.i.. (m[key], n)
 
     ___ get  key: s.., timestamp: i..) __ s..:
         __ key n.. __ m:
@@ -73,7 +73,7 @@ c_ TimeMap:
 
         # find the largest v, s.t. v <= t
         lst = m[key]
-        i = bisect.bisect(lst, (timestamp, ""
+        i = b__.b__(lst, (timestamp, ""
         __ i < l..(lst) a.. lst[i][0] __ timestamp:
             r.. lst[i][1]
         i -= 1

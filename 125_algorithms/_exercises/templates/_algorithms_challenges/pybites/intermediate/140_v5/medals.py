@@ -8,7 +8,7 @@ data = "https://bites-data.s3.us-east-2.amazonaws.com/summer.csv"
 
 ___ load_data(data
     dt_file = p...j..('/tmp', data.s..('/')[-1])
-    __ n.. p...isfile(dt_file
+    __ n.. p...i..(dt_file
         u..(data, dt_file)
     w__ o.. dt_file, _ __ f:
         r.. pd.read_csv(f)

@@ -1,15 +1,15 @@
-_______ bisect
-
-
-c_ OrderedList:
-
-    ___ -
-        _numbers    # list
-
-    ___ add  num
-        # you complete
-        bisect.insort(_numbers, num)
-
-    ___ __str__
-        r.. ', '.j..(s..(num) ___ num __ _numbers)
-
+# _______ b__
+#
+#
+# c_ OrderedList
+#
+#     ___ -
+#         _numbers    # list
+#
+#     ___ add  num
+#         # you complete
+#         b__.i..  ? ?
+#
+#     ___ -s
+#         r.. ', '.j.. s.. ? ___ ? __ ?
+#

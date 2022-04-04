@@ -1,4 +1,4 @@
-_______ bisect
+_______ b__
 
 
 c_ Solution(o..
@@ -22,8 +22,8 @@ c_ Solution(o..
             subsum += dp[i][end] - dp[i][start - 1]
           ____
             subsum += dp[i][end]
-          idx = bisect.bisect_left(sums, subsum - k)
+          idx = b__.bisect_left(sums, subsum - k)
           __ idx < l..(sums
             ans = m..(ans, subsum - sums[idx])
-          bisect.insort(sums, subsum)
+          b__.i.. (sums, subsum)
     r.. ans

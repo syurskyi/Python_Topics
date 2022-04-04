@@ -6,7 +6,7 @@ Created on Apr 3, 2017
 
 c_ Solution(o..
     ___ isSubsequence  s, t
-        _______ bisect
+        _______ b__
         hashmap    # dict
         ___ i, c __ e..(t
             __ c __ hashmap:
@@ -16,20 +16,20 @@ c_ Solution(o..
         prev = 0
         ___ i, c __ e..(s
             __ c n.. __ hashmap: r.. F..
-            j = bisect.bisect_left(hashmap[c], prev)
+            j = b__.bisect_left(hashmap[c], prev)
             __ j __ l..(hashmap[c] r.. F..
             prev = hashmap[c][j]+1
         r.. T..
     
     ___ isSubsequence_orig  s, t
-        _______ bisect
+        _______ b__
         idx = [[] ___ _ __ r..(256)]
         ___ i, c __ e..(t
             idx[o..(c)].a..(i)
         prev = 0
         ___ i, c __ e..(s
             __ idx[o..(c)] __ []: r.. F..
-            j = bisect.bisect_left(idx[o..(c)], prev)
+            j = b__.bisect_left(idx[o..(c)], prev)
             __ j __ l..(idx[o..(c)] r.. F..
             prev = idx[o..(c)][j] + 1
         r.. T..

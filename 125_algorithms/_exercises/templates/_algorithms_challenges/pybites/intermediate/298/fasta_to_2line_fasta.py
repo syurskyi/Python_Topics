@@ -15,7 +15,7 @@ w__ o.. 'test.txt','w') __ f:
     f.w.. response.text)
 
 
-__ n.. __.p...isfile(FASTA_FILE
+__ n.. __.p...i..(FASTA_FILE
     u__.r...u..(URL, FASTA_FILE)
 
 ___ fasta_to_2line_fasta(fasta_file:s..="test.txt", fasta_2line_file: s..='test_converter.txt') __ i..:

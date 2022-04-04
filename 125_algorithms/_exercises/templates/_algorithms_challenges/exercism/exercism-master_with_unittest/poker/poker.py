@@ -97,7 +97,7 @@ c_ Card:
         rank = numberify_face_cards(inp[0])
         suit = inp[1]
 
-    ___ __str__
+    ___ -s
         r.. s..(rank) + suit
 
     @classmethod

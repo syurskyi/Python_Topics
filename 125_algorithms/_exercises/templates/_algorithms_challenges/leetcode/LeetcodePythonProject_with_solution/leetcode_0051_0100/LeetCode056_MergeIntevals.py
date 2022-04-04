@@ -10,11 +10,11 @@ c_ Interval(o..
         start = s
         end = e
     
-    ___ __str__
+    ___ -s
         r.. '<s: %s, e: %s>' % (start, end)
     
     ___  -r
-        r.. __str__()
+        r.. -s()
 
 c_ Solution(o..
     ___ merge  intervals

@@ -9,7 +9,7 @@ Example:
 Given envelopes = [[5,4],[6,4],[6,7],[2,3]], the maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4]
 => [6,7]).
 """
-_______ bisect
+_______ b__
 
 __author__ = 'Daniel'
 
@@ -32,7 +32,7 @@ c_ Solution(o..
         F[1] = A[0][1]  # store value rather than index
         k = 1
         ___ _, h __ A[1:]:
-            idx = bisect.bisect_left(F, h, 1, k+1)
+            idx = b__.bisect_left(F, h, 1, k+1)
             F[idx] = h
             k += 1 __ idx __ k+1 ____ 0
 

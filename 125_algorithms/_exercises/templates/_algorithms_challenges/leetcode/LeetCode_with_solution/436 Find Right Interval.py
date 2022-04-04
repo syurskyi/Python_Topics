@@ -26,7 +26,7 @@ c_ Interval:
             ___ s, e __ lst
         ]
 
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 
 
 c_ Solution:

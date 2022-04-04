@@ -58,7 +58,7 @@ c_ Account:
             r.. T..("can only subtract integer")
 
     
-    ___ __str__
+    ___ -s
         r.. f"{name} account - balance: {balance}"
 
     # add dunder methods below

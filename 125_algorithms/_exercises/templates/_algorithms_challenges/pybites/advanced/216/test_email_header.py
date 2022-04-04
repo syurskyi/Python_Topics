@@ -15,7 +15,7 @@ X-SendGrid-Contentd-ID: {"test_id":"1371661776"}
 
 
 ___ test_source
-    src = i___.getsource(get_email_details)
+    src = i___.g.. get_email_details)
     ... 're.match' __ src o. 're.search' __ src
     ... 'groupdict' __ src
 

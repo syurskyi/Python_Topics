@@ -2,7 +2,7 @@
 Premium Question
 Projection and bisect
 """
-_______ bisect
+_______ b__
 __author__ = 'Daniel'
 
 
@@ -24,10 +24,10 @@ c_ Solution(o..
             ___ i __ x..(m)
         ]
 
-        y_lo = bisect.bisect_left(yaxis, 1, 0, y)
-        y_hi = bisect.bisect_left m..(l.... e: 1^e, yaxis), 1, y)  # bisect must be sorted
-        x_lo = bisect.bisect_left(xaxis, 1, 0, x)
-        x_hi = bisect.bisect_left m..(l.... e: 1^e, xaxis), 1, x)
+        y_lo = b__.bisect_left(yaxis, 1, 0, y)
+        y_hi = b__.bisect_left m..(l.... e: 1^e, yaxis), 1, y)  # bisect must be sorted
+        x_lo = b__.bisect_left(xaxis, 1, 0, x)
+        x_hi = b__.bisect_left m..(l.... e: 1^e, xaxis), 1, x)
         r.. (y_hi-y_lo)*(x_hi-x_lo)
 
 

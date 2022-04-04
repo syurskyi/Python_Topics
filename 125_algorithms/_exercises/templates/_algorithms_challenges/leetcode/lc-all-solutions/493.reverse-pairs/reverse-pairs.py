@@ -1,4 +1,4 @@
-_______ bisect
+_______ b__
 
 
 c_ Solution(o..
@@ -12,7 +12,7 @@ c_ Solution(o..
     bst    # list
     ___ num __ nums:
       right = 2 * num
-      idx = bisect.bisect_right(bst, right)
+      idx = b__.bisect_right(bst, right)
       ans += l..(bst) - idx
-      bisect.insort(bst, num)
+      b__.i.. (bst, num)
     r.. ans

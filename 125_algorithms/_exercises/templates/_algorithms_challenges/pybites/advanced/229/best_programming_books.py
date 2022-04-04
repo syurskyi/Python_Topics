@@ -33,7 +33,7 @@ c_ Book:
         res = f"{rating:.2f}"
         r.. res[:-1] __ res[-1] __ "0" ____ res
 
-    ___ __str__
+    ___ -s
         r.. (
             f"[{rank:03}] {title} ({year})\n"
             f"      {author} {_rating()}"

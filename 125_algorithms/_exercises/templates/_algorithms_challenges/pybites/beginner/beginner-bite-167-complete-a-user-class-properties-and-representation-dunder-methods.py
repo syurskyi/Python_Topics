@@ -58,7 +58,7 @@ c_ User:
     #
     # see also TESTS for required output
 
-    ___ __str__
+    ___ -s
         r.. f"{first_name.capitalize()} {last_name.capitalize()} ({username})"
 
     ___  -r

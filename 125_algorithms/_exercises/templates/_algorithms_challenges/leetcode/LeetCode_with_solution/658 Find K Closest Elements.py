@@ -16,7 +16,7 @@ Length of the given array is positive and will not exceed 104
 Absolute value of elements in the array and x will not exceed 104
 """
 ____ t___ _______ L..
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 ____ c.. _______ d..
 
 

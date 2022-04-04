@@ -25,6 +25,6 @@ ___ test_another_bad_input
 
 
 ___ test_src
-    src = i___.getsource(get_len_help_text)
+    src = i___.g.. get_len_help_text)
     ... 'help' __ src
     ... 'redirect_stdout' __ src

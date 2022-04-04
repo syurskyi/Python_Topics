@@ -10,7 +10,7 @@ c_ User:
         _name = name
         _transactions    # list
 
-    ___ __str__
+    ___ -s
         r.. f"{name} has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"
 
     ___ __add__  other: Transaction

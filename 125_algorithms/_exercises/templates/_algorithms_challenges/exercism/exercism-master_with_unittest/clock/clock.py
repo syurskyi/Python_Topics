@@ -7,7 +7,7 @@ c_ Clock:
     ___ -e  other
         r.. hours __ other.hours a.. mins __ other.mins
 
-    ___ __str__
+    ___ -s
         r.. (format_hours() + ':' +
                 format_mins
 

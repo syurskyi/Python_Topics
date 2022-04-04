@@ -8,7 +8,7 @@ c_ Animal:
         animals.a..(s..(self
         
 
-    ___ __str__
+    ___ -s
         r.. f'{Animal.counter}. {name}'
 
     @classmethod

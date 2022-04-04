@@ -27,7 +27,7 @@ would you change your code?
 Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases
 """
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 ____ c.. _______ d..
 
 

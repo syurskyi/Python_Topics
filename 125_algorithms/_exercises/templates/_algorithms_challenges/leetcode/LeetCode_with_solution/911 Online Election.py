@@ -31,7 +31,7 @@ TopVotedCandidate.q(int t) is always called with t >= times[0].
 """
 ____ t___ _______ L..
 ____ c.. _______ d..
-_______ bisect
+_______ b__
 
 
 c_ TopVotedCandidate:
@@ -52,7 +52,7 @@ c_ TopVotedCandidate:
                 maxes.a..((t, p
 
     ___ q  t: i..) __ i..:
-        i = bisect.bisect(maxes, (t, 0
+        i = b__.b__(maxes, (t, 0
         # equal
         __ i < l..(maxes) a.. maxes[i][0] __ t:
             r.. maxes[i][1]

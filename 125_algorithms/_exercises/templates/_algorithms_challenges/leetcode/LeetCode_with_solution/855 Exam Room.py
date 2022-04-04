@@ -35,7 +35,7 @@ all test cases.
 Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in
 seat number p.
 """
-_______ bisect
+_______ b__
 
 
 c_ ExamRoom:
@@ -74,7 +74,7 @@ c_ ExamRoom:
                 max_dist = dist
                 ret_idx = N-1
 
-        bisect.insort(idxes, ret_idx)
+        b__.i.. (idxes, ret_idx)
         r.. ret_idx
 
     ___ leave  p: i..) __ N..

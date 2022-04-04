@@ -1,5 +1,5 @@
 ____ c.. _______ OrderedDict
-____ statistics _______ median
+____ s.. _______ median
 
 ___ calc_median_from_dict(d: d..) __ f__:
     """

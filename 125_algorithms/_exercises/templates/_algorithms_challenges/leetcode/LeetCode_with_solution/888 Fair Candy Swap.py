@@ -41,7 +41,7 @@ It is guaranteed that Alice and Bob have different total amounts of candy.
 It is guaranteed there exists an answer.
 """
 ____ t___ _______ L..
-_______ bisect
+_______ b__
 
 
 c_ Solution:
@@ -75,7 +75,7 @@ c_ Solution:
         B.s..()
         diff = (sum_B - sum_A) // 2
         ___ a __ A:
-            i = bisect.bisect_left(B, a + diff)
+            i = b__.bisect_left(B, a + diff)
             __ i < l..(B) a.. B[i] __ a + diff:
                 r.. [a, a + diff]
 

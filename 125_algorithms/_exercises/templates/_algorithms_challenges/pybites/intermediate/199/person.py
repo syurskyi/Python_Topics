@@ -5,7 +5,7 @@ c_ Person:
     ___ -
         p..
 
-    ___ __str__
+    ___ -s
         r.. "I am a person"
 
 
@@ -14,8 +14,8 @@ c_ Father(Person
     ___ -
         Person.- )
 
-    ___ __str__
-        r.. f"{Person.__str__(self)} and cool daddy"
+    ___ -s
+        r.. f"{Person.-s(self)} and cool daddy"
 
 
 c_ Mother(Person
@@ -23,8 +23,8 @@ c_ Mother(Person
     ___ -
         Person.- )
 
-    ___ __str__
-        r.. f"{Person.__str__(self)} and awesome mom"
+    ___ -s
+        r.. f"{Person.-s(self)} and awesome mom"
 
 
 c_ Child(Father, Mother
@@ -32,7 +32,7 @@ c_ Child(Father, Mother
     ___ -
         p..
 
-    ___ __str__
+    ___ -s
         r.. "I am the coolest kid"
 
 

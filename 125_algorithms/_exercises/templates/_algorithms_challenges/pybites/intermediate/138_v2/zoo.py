@@ -8,7 +8,7 @@ c_ Animal:
         Animal.number += 1
         Animal.animals.a..(self)
 
-    ___ __str__
+    ___ -s
         r.. f"{number}. {name}"
 
     @classmethod

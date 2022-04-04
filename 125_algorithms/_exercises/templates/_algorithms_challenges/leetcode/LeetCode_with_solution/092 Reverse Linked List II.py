@@ -20,7 +20,7 @@ c_ ListNode:
     ___  -r
         r.. r.. (val)
 
-    ___ __str__
+    ___ -s
         r.. s..(val)+", "+s..(next)
 
 c_ Solution:

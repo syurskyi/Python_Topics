@@ -27,7 +27,7 @@ c_ Team:
     ___ tally_loss
         losses += 1
 
-    ___ __str__
+    ___ -s
         r.. '{:<30} | {:^3}| {:^3}| {:^3}| {:^3}| {:>2}'.f..(
             name, matches_played, wins, draws, losses, points)
 

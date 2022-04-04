@@ -3,7 +3,7 @@ DP: time => O(nlogn)
 
 REF: https://leetcode.com/problems/russian-doll-envelopes/discuss/82763
 """
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 
 
 c_ Solution:

@@ -1,6 +1,6 @@
 _______ __
 ____ p.. _______ P..
-_______ bisect
+_______ b__
 _______ __
 ____ u__.r.. _______ u..
 ____ bs4 _______ BeautifulSoup __ Soup
@@ -28,7 +28,7 @@ c_ Enchantment:
         description = description
         items    # list
 
-    ___ __str__
+    ___ -s
         r.. f"{name} ({max_level}): {description}"
     
 c_ Item:
@@ -46,7 +46,7 @@ c_ Item:
         enchantments.a..(enchantment)
     
 
-    ___ __str__
+    ___ -s
         s__ = name.r..('_',' ').t.. + ': '
         sorted_enchantments = s..(enchantments,key=l.... x: x.id_name)
         ___ enchantment __ sorted_enchantments:

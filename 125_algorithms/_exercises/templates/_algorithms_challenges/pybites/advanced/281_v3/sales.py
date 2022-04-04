@@ -69,7 +69,7 @@ ___ summary_report(df: pd.DataFrame, stats: U..[L..[s..], N..] = STATS) __ N..
     """
     df = df.c..
     df 'year'  = df.month.dt.year
-    s = df.groupby( 'year' ).agg({'sales': stats}).__str__().s..('\n')[1:]
+    s = df.groupby( 'year' ).agg({'sales': stats}).-s().s..('\n')[1:]
     print('\n'.j..(s
 
 

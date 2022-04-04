@@ -26,6 +26,6 @@ ___ test_get_top_n
 
 ___ test_heapq_used
     err_msg = 'We want you to play with heapq for this one :)'
-    ... 'heapq' __ i___.getsource(get_largest_number), err_msg
-    ... 'heapq' __ i___.getsource(get_latest_dates), err_msg
-    ... 'heapq' __ i___.getsource(get_highest_earnings), err_msg
+    ... 'heapq' __ i___.g.. get_largest_number), err_msg
+    ... 'heapq' __ i___.g.. get_latest_dates), err_msg
+    ... 'heapq' __ i___.g.. get_highest_earnings), err_msg

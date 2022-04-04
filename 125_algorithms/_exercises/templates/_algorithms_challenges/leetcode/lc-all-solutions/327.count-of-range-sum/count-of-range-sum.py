@@ -29,8 +29,8 @@ c_ Solution(o..
     sortedPres = s..(pres)
 
     ___ end __ pres:
-      count = sumRange(b, bisect.bisect_right(sortedPres, end - lower - sumRange(b, bisect.bisect_left(sortedPres,
+      count = sumRange(b, b__.bisect_right(sortedPres, end - lower - sumRange(b, b__.bisect_left(sortedPres,
                                                                                                          end - upper
       ans += count
-      update(b, bisect.bisect_left(sortedPres, end) + 1, 1)
+      update(b, b__.bisect_left(sortedPres, end) + 1, 1)
     r.. ans

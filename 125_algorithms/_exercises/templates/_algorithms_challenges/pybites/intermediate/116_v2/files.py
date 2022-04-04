@@ -13,7 +13,7 @@ ___ get_files(dirname, size_in_kb
     result    # list
     print(dirname)
     ___ file __ __.listdir(dirname
-        __ __.p...isfile(__.p...j..(dirname,file:
+        __ __.p...i..(__.p...j..(dirname,file:
             size = __.p...getsize(__.p...j..(dirname,file
             print(file,size)
             size /= ONE_KB

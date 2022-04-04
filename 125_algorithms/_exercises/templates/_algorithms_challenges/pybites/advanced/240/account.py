@@ -15,7 +15,7 @@ c_ Account:
     ___  -r
         r.. 'Account({!r}, {!r})'.f..(owner, amount)
 
-    ___ __str__
+    ___ -s
         r.. 'Account of {} with starting amount: {}'.f..(owner,
                                                                amount)
 

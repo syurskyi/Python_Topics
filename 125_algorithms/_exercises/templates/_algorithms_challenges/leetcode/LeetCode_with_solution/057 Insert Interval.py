@@ -20,11 +20,11 @@ c_ Interval(o..
         start = s
         end = e
 
-    ___ __str__
+    ___ -s
         r.. "[%d, %d]" % (start, end)
 
     ___  -r
-        r.. r.. (__str__
+        r.. r.. (-s
 
 
 c_ Solution(o..

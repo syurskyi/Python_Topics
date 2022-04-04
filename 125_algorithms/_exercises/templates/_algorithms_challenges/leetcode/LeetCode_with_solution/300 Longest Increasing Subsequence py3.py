@@ -17,7 +17,7 @@ Your algorithm should run in O(n2) complexity.
 Follow up: Could you improve it to O(n log n) time complexity?
 """
 ____ t___ _______ L..
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 
 
 c_ Solution:

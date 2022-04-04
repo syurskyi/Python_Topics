@@ -56,6 +56,6 @@ c_ Color:
         """Returns the repl of the object"""
         r.. f"{__class__.__name__}('{colorname}')"
 
-    ___ __str__
+    ___ -s
         """Returns the string value of the color object"""
         r.. f'{rgb}' __ rgb __ n.. N.. ____ 'Unknown'

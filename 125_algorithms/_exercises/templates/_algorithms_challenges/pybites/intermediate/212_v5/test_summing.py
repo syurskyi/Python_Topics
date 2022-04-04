@@ -11,7 +11,7 @@ ___ test_functionality
 
 
 ___ test_use_of_idioms
-    src = i___.getsource(sum_numbers)
+    src = i___.g.. sum_numbers)
     ... 'try' n.. __ src
     ... 'except ' n.. __ src
     ... 'yield' __ src

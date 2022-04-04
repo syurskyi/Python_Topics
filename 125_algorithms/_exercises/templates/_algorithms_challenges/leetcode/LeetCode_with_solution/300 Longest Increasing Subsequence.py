@@ -10,7 +10,7 @@ Your algorithm should run in O(n2) complexity.
 
 Follow up: Could you improve it to O(n log n) time complexity?
 """
-_______ bisect
+_______ b__
 
 __author__ = 'Daniel'
 
@@ -30,7 +30,7 @@ c_ Solution(o..
         k = 1
         MIN[k] = A[0]  # store value rather than index
         ___ v __ A[1:]:
-            idx = bisect.bisect_left(MIN, v, 1, k+1)
+            idx = b__.bisect_left(MIN, v, 1, k+1)
             MIN[idx] = v
             k += 1 __ idx __ k+1 ____ 0
 

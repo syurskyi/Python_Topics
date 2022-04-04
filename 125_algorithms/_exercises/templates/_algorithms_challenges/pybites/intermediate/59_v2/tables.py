@@ -11,7 +11,7 @@ c_ MultiplicationTable:
 
         r.. _length**2
 
-    ___ __str__
+    ___ -s
         """Returns a string representation of the table"""
 
         s = ''

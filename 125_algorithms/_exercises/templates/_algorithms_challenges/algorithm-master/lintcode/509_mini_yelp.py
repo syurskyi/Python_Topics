@@ -60,7 +60,7 @@ class GeoHash:
 """
 range query from list by `bisect`
 """
-_______ bisect
+_______ b__
 ____ YelpHelper _______ Location, Restaurant, GeoHash, Helper
 
 
@@ -85,7 +85,7 @@ c_ MiniYelp:
 
         restaurants[hashcode] = restaurant
         restr_to_geohash[restaurant.id] = hashcode
-        bisect.insort(geohashs, hashcode)
+        b__.i.. (geohashs, hashcode)
 
         r.. restaurant.id
 
@@ -93,7 +93,7 @@ c_ MiniYelp:
     # @return nothing
     ___ remove_restaurant  restaurant_id
         hashcode = restr_to_geohash[restaurant_id]
-        index = bisect.bisect_left(geohashs, hashcode)
+        index = b__.bisect_left(geohashs, hashcode)
 
         geohashs.p.. index)
         del restaurants[hashcode]
@@ -108,8 +108,8 @@ c_ MiniYelp:
         prefix = GeoHash.encode(location)[:length]
 
         # chr(ord('z') + 1) == '{'
-        left = bisect.bisect_left(geohashs, prefix)
-        right = bisect.bisect(geohashs, prefix + '{')
+        left = b__.bisect_left(geohashs, prefix)
+        right = b__.b__(geohashs, prefix + '{')
 
         neighbors    # list
         hashcode = restaurant = distance = N..

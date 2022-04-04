@@ -14,7 +14,7 @@ c_ Score(E..
 
     
 
-    ___ __str__
+    ___ -s
         r.. f"{name} => {THUMBS_UP * value}"
 
 

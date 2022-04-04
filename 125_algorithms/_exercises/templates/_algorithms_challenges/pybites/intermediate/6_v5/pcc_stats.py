@@ -7,7 +7,7 @@ _______ u__.r..
 # prep
 
 tempfile = __.p...j..('/tmp', 'dirnames')
-__ n.. __.p...isfile(tempfile
+__ n.. __.p...i..(tempfile
     u__.r...u..('http://bit.ly/2ABUTjv', tempfile)
 
 IGNORE = 'static templates data pybites bbelderbos hobojoe1848'.s..

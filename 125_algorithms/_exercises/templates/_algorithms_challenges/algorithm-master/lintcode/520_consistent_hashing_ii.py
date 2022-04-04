@@ -1,4 +1,4 @@
-_______ bisect
+_______ b__
 _______ r__
 
 c_ Solution:
@@ -38,7 +38,7 @@ c_ Solution:
     """
     ___ getMachineIdByHashCode  hashcode
         points = s..(p2l.keys
-        index = bisect.bisect_left(points, hashcode) % l..(points)
+        index = b__.bisect_left(points, hashcode) % l..(points)
         # # counterclockwise
         # index = bisect.bisect(points, hashcode) - 1
         # if index < 0:

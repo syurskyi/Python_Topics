@@ -4,7 +4,7 @@ ____ u__.r.. _______ u..
 ____ c.. _______ d..
 
 BATTLE_DATA = __.p...j..('/tmp', 'battle-table.csv')
-__ n.. __.p...isfile(BATTLE_DATA
+__ n.. __.p...i..(BATTLE_DATA
     u..('https://bit.ly/2U3oHft', BATTLE_DATA)
 
 

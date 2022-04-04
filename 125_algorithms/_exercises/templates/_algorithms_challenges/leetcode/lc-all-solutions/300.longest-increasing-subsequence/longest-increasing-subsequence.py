@@ -10,7 +10,7 @@ c_ Solution(o..
     """
     tail    # list
     ___ num __ nums:
-      idx = bisect.bisect_left(tail, num)
+      idx = b__.bisect_left(tail, num)
       __ idx __ l..(tail
         tail.a..(num)
       ____

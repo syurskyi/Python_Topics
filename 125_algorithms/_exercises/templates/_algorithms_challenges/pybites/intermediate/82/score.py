@@ -19,7 +19,7 @@ c_ Score(E..
     ___  -r
         r.. f"{__class__.__name__}.{name}"
 
-    ___ __str__
+    ___ -s
         r.. f"{name} => {THUMBS_UP * value}"
 
     @classmethod

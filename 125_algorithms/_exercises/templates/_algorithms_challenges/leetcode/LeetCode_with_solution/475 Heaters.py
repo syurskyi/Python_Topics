@@ -16,7 +16,7 @@ Positions of houses and heaters you are given are non-negative and will not exce
 As long as a house is in the heaters' warm radius range, it can be warmed.
 All the heaters follow your radius standard and the warm radius will the same.
 """
-_______ bisect
+_______ b__
 
 
 c_ Solution:
@@ -33,7 +33,7 @@ c_ Solution:
         r = 0
         i = 0
         ___ h __ houses:
-            i = bisect.bisect(heaters, h)  # insertion point
+            i = b__.b__(heaters, h)  # insertion point
             left = m..(0, i - 1)
             right = m..(l..(heaters) - 1, i)
             r_cur = m..(a..(heaters[left] - h), a..(heaters[right] - h

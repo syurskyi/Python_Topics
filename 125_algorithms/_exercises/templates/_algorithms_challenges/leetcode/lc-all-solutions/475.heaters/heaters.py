@@ -8,7 +8,7 @@ c_ Solution(o..
     minDist = 0
     heaters.s..()
     ___ house __ s..(houses
-      idx = bisect.bisect_left(heaters, house)
+      idx = b__.bisect_left(heaters, house)
       dist = f__("inf")
       __ idx > 0:
         dist = m..(dist, a..(house - heaters[idx - 1]

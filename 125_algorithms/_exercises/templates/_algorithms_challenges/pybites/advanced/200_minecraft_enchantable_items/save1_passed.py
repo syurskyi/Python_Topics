@@ -31,7 +31,7 @@ c_ Enchantment:
     description: s..
     items: L..[s..] = field(default_factory=l..)
 
-    ___ __str__
+    ___ -s
         r.. f"{name} ({max_level}): {description}"
 
     ___ __lt__  other
@@ -45,7 +45,7 @@ c_ Item:
     name: s..
     enchantments: L..[Enchantment] = field(default_factory=l..)
 
-    ___ __str__
+    ___ -s
         enchants = s..(enchantments)
         enc_list = [f"\n  [{enc.max_level}] {enc.id_name}" ___ enc __ enchants]
         r.. f"{name.t..}: {''.j..(enc_list)}"

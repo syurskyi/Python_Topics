@@ -31,5 +31,5 @@ c_ User:
             fan_names.add(transaction.giver)
     
 
-    ___ __str__
+    ___ -s
         r.. f"{name} has a karma of {karma} and {fans} fan{'s' __ fans > 1 ____ ''}"

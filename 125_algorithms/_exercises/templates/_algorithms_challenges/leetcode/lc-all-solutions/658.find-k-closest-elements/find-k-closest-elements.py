@@ -1,4 +1,4 @@
-_______ bisect
+_______ b__
 
 
 c_ Solution(o..
@@ -9,7 +9,7 @@ c_ Solution(o..
     :type x: int
     :rtype: List[int]
     """
-    left = right = bisect.bisect_left(arr, x)
+    left = right = b__.bisect_left(arr, x)
     w.... right - left < k:
       __ left __ 0:
         r.. arr[:k]

@@ -7,7 +7,7 @@ TMP = __.g..("TMP", "/tmp")
 LOGS = 'bite_output_log.txt'
 DATA = __.p...j..(TMP, LOGS)
 S3 = 'https://bites-data.s3.us-east-2.amazonaws.com'
-__ n.. __.p...isfile(DATA
+__ n.. __.p...i..(DATA
     u.. _*{S3}/{LOGS}', DATA)
 
 

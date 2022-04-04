@@ -1,18 +1,18 @@
 
 c_ Person:
-    ___ __str__
+    ___ -s
         r.. 'I am a person'
 
 c_ Father(Person
-    ___ __str__
-        r.. f'{super().__str__()} and cool daddy'
+    ___ -s
+        r.. f'{super().-s()} and cool daddy'
 
 c_ Mother(Person
-    ___ __str__
-        r.. f'{super().__str__()} and awesome mom'
+    ___ -s
+        r.. f'{super().-s()} and awesome mom'
 
 c_ Child(Father,Mother
-    ___ __str__
+    ___ -s
         r.. 'I am the coolest kid'
 
 person = Father()

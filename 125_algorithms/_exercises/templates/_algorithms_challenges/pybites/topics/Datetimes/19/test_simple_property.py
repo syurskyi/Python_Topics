@@ -17,4 +17,4 @@ ___ test_promo_not_expired
 
 
 ___ test_uses_property
-    ... 'property' __ i___.getsource(Promo)
+    ... 'property' __ i___.g.. Promo)

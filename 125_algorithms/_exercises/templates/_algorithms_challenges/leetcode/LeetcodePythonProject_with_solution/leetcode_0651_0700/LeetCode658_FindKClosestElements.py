@@ -11,8 +11,8 @@ c_ Solution(o..
         :type x: int
         :rtype: List[int]
         """
-        _______ bisect, heapq
-        ind = bisect.bisect_left(arr, x)
+        _______ b__, heapq
+        ind = b__.bisect_left(arr, x)
         __ ind __ 0:
             r.. arr[:k]
         __ ind __ l..(arr

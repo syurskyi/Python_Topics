@@ -12,7 +12,7 @@ c_ ListNode:
     ___  -r
         r.. r.. (val)
 
-    ___ __str__
+    ___ -s
         r.. "%d, %s"%(val, next)
 
 c_ Solution:

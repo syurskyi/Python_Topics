@@ -6,7 +6,7 @@ c_ Solution(o..
     """
     tails    # list
     ___ start, end __ s..(pairs
-      idx = bisect.bisect_left(tails, start)
+      idx = b__.bisect_left(tails, start)
       __ idx __ l..(tails
         tails.a..(end)
       ____

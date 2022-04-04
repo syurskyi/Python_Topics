@@ -47,7 +47,7 @@ c_ Color:
         """Returns the repl of the object"""
         r.. "%s(%r)"%(__class__.__name__, color)
 
-    ___ __str__
+    ___ -s
         """Returns the string value of the color object"""
         r.. s..(rgb) __ rgb ____ "Unknown"
 

@@ -1,7 +1,7 @@
 """
 Premium Question
 """
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 ____ c.. _______ d..
 _______ ___
 

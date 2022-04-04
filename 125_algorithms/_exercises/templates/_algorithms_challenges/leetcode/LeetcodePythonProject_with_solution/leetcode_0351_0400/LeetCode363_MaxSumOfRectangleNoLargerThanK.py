@@ -10,7 +10,7 @@ c_ Solution(o..
     
     # still not working!
     ___ maxSumSubmatrixBinarySearch  matrix, k
-        _______ bisect
+        _______ b__
         __ n.. matrix o. n.. matrix[0]:
             r.. 0
         m, n = l..(matrix), l..(matrix[0])
@@ -30,8 +30,8 @@ c_ Solution(o..
                     area = areas[r2][c]
                     __ r1-1>_0:
                         area -= areas[r2][c]
-                    ind = bisect.bisect_left(sortedlist, area-k)
+                    ind = b__.bisect_left(sortedlist, area-k)
                     __ ind < l..(sortedlist
                         maxVal = m..(maxVal, area-sortedlist[ind])
-                    bisect.insort_left(sortedlist, area)
+                    b__.insort_left(sortedlist, area)
         r.. maxVal

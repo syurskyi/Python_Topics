@@ -12,7 +12,7 @@ STATION = n..("Station", "ID Date Value")
 
 TMP = '/tmp'
 LOCAL_FILE = __.p...j..('/tmp', 'weather-ann-arbor.csv')
-__ n.. __.p...isfile(LOCAL_FILE
+__ n.. __.p...i..(LOCAL_FILE
     u__.r...u..(DATA_FILE, LOCAL_FILE)
 
 

@@ -35,11 +35,11 @@ c_ Solution(o..
         r.. sortedList[end][1]
     
     ___ findRightInterval_short  intervals
-        _______ bisect
+        _______ b__
         l = s..((e.start, i) ___ i, e __ e..(intervals
         res    # list
         ___ e __ intervals:
-            r = bisect.bisect_left(l, (e.end,
+            r = b__.bisect_left(l, (e.end,
             res.a..(l[r][1] __ r < l..(l) ____ -1)
         r.. res
     

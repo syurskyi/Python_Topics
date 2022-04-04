@@ -11,11 +11,11 @@ c_ TreeNode(o..
         left = N..
         right = N..
     
-    ___ __str__
+    ___ -s
         r.. '<val: %s, num: %s>' % (val, num)
     
     ___  -r
-        r.. __str__()
+        r.. -s()
 
 c_ Solution(o..
     ___ countSmaller  nums

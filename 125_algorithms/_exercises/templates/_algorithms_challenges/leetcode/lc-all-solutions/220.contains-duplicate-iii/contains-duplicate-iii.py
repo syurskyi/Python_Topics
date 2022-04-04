@@ -1,4 +1,4 @@
-_______ bisect
+_______ b__
 
 
 c_ Solution(o..
@@ -15,12 +15,12 @@ c_ Solution(o..
     __ k < 0 o. t < 0:
       r.. F..
     ___ i, num __ e..(nums
-      idx = bisect.bisect_left(bst, num)
+      idx = b__.bisect_left(bst, num)
       __ idx < l..(bst) a.. a..(bst[idx] - num) <_ t:
         r.. T..
       __ idx > 0 a.. a..(bst[idx - 1] - num) <_ t:
         r.. T..
       __ l..(bst) >_ k:
-        del bst[bisect.bisect_left(bst, nums[i - k])]
-      bisect.insort(bst, num)
+        del bst[b__.bisect_left(bst, nums[i - k])]
+      b__.i.. (bst, num)
     r.. F..

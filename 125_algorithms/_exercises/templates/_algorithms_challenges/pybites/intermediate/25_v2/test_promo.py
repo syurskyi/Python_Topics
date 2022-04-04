@@ -32,7 +32,7 @@ ___ test_new_bite(choice_mock, sample_mock, promo
 
 
 ___ test_random_is_used(promo
-    src = i___.getsource(promo._pick_random_bite)
+    src = i___.g.. promo._pick_random_bite)
     ... 'sample' __ src o. 'choice' __ src
 
 

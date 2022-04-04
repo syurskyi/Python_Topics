@@ -14,7 +14,7 @@ The number 2 can't find next greater number;
 The second 1's next greater number needs to search circularly, which is also 2.
 Note: The length of given array won't exceed 10000.
 """
-____ bisect _______ bisect
+____ b__ _______ b__
 
 
 c_ Solution:
@@ -56,7 +56,7 @@ c_ Solution:
         print(A)
         ret    # list
         ___ e __ nums:
-            t = bisect(A, e)
+            t = b__(A, e)
             __ t __ l..(A
                 ret.a..(-1)
             ____

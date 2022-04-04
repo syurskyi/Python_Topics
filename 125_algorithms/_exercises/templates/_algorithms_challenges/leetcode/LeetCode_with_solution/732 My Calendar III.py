@@ -41,7 +41,7 @@ The number of calls to MyCalendarThree.book per test case will be at most 400.
 In calls to MyCalendarThree.book(start, end), start and end are integers in the
 range [0, 10^9].
 """
-_______ bisect
+_______ b__
 
 
 c_ MyCalendarThree:
@@ -50,8 +50,8 @@ c_ MyCalendarThree:
         lst    # list
 
     ___ book  start: i.., end: i..) __ i..:
-        bisect.insort(lst, (start, "start"
-        bisect.insort(lst, (end, "end"
+        b__.i.. (lst, (start, "start"
+        b__.i.. (lst, (end, "end"
         ret = 0
         count = 0
         ___ _, flag __ lst:

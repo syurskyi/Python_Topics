@@ -3,7 +3,7 @@ Premium Question
 """
 __author__ = 'Daniel'
 
-_______ bisect
+_______ b__
 
 
 c_ Solution(o..
@@ -26,7 +26,7 @@ c_ Solution(o..
             r.. ret __ b > 0 ____ ret[::-1]
 
         mid = - f__(b) / (2*a)
-        ri = bisect.bisect_left(nums, mid)
+        ri = b__.bisect_left(nums, mid)
         le = ri - 1
         ret    # list
         w.... le >_ 0 a.. ri < l..(nums) a.. le < ri:

@@ -38,7 +38,7 @@ c_ Ninja:
     ___ -e  other
         r.. bites __ other.bites
 
-    ___ __str__
+    ___ -s
         r.. f'[{bites}] {name}'
 
 

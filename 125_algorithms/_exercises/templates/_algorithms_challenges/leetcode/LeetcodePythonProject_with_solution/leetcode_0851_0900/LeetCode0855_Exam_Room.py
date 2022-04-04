@@ -3,7 +3,7 @@ Created on Sep 11, 2019
 
 @author: tongq
 '''
-_______ bisect
+_______ b__
 c_ ExamRoom(o..
 
     ___ - , N
@@ -26,7 +26,7 @@ c_ ExamRoom(o..
                     d, res = (b-a)//2, (b+a)//2
             __ rowNum - 1 - l[-1] > d:
                 res = rowNum-1
-        bisect.insort(l, res)
+        b__.i.. (l, res)
         r.. res
 
     ___ leave  p

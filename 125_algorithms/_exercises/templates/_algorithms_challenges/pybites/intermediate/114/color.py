@@ -97,7 +97,7 @@ c_ Color:
         """Returns the repl of the object"""
         r.. f"{t..(self).__name__}('{color}')"
 
-    ___ __str__
+    ___ -s
         """Returns the string value of the color object"""
 
         __ rgb:

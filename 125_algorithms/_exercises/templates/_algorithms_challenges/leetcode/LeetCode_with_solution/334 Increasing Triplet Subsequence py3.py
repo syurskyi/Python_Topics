@@ -19,7 +19,7 @@ Input: [5,4,3,2,1]
 Output: false
 """
 ____ t___ _______ L..
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 
 
 c_ Solution:

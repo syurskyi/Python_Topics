@@ -6,12 +6,12 @@ Created on Mar 22, 2017
 
 c_ Solution(o..
     ___ maxEnvelopes  envelopes
-        _______ bisect
+        _______ b__
         length = 0
         envelopes.s..(key=l.... x: (x[0], -x[1]
         dp = [0]*l..(envelopes)
         ___ env __ envelopes:
-            ind = bisect.bisect_left(dp, env[1], 0, length)
+            ind = b__.bisect_left(dp, env[1], 0, length)
             __ ind __ length:
                 length += 1
             dp[ind] = env[1]

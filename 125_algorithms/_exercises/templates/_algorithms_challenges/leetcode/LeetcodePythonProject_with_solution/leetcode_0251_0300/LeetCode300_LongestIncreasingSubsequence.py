@@ -6,11 +6,11 @@ Created on Mar 9, 2017
 
 c_ Solution(o..
     ___ lengthOfLIS  nums
-        _______ bisect
+        _______ b__
         dp = [0]*l..(nums)
         length = 0
         ___ num __ nums:
-            i = bisect.bisect_left(dp, num, 0, length)
+            i = b__.bisect_left(dp, num, 0, length)
             dp[i] = num
             __ i __ length:
                 length+=1

@@ -22,7 +22,7 @@ c_ MultiplicationTable:
         _area = _length * _length
         r.. _area
 
-    ___ __str__
+    ___ -s
         """Returns a string representation of the table"""
         _table_output = ""
         ___ row __ _table:

@@ -34,6 +34,6 @@ c_ Solution(o..
     bst.s..()
     length = l..(bst)
     ___ intv __ intervals:
-      idx = bisect.bisect_left(bst, intv.end)
+      idx = b__.bisect_left(bst, intv.end)
       ans.a..(bst.getIdx(idx
     r.. ans

@@ -48,21 +48,21 @@ ___ test_get_slice_inclusive(float_series
 ])
 ___ test_return_head(float_series, arg, e..
     ... se.return_head(float_series, 10)[arg] __ e..
-    ... ".head" __ i___.getsource(se.return_head)
+    ... ".head" __ i___.g.. se.return_head)
 
 ?p__.m__.p.("arg, expected", [
     (991, 0.991), (995, 0.995), (1000, 1.000)
 ])
 ___ test_return_tail(float_series, arg, e..
     ... se.return_tail(float_series, 10)[arg] __ e..
-    ... ".tail" __ i___.getsource(se.return_tail)
+    ... ".tail" __ i___.g.. se.return_tail)
 
 ___ test_get_index(alpha_series
     idx = se.get_index(alpha_series)
     ... isi..(idx, pd.core.indexes.base.Index)
     ... l..(idx) __ 26
     ... a..(c __ s__.ascii_lowercase ___ c __ idx.values)
-    ... ".index" __ i___.getsource(se.get_index)
+    ... ".index" __ i___.g.. se.get_index)
 
 ___ test_get_values(alpha_series
     vals = se.get_values(alpha_series)

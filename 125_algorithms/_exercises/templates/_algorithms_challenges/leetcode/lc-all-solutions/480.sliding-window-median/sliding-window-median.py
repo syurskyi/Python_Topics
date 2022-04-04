@@ -5,5 +5,5 @@ c_ Solution(o..
     ___ a, b __ z..(nums, nums[k:] + [0]
       medians.a..((window[k / 2] + window[~(k / 2)]) / 2.)
       window.remove(a)
-      bisect.insort(window, b)
+      b__.i.. (window, b)
     r.. medians

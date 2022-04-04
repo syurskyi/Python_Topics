@@ -17,7 +17,7 @@ c_ ServiceIPRange:
     region: s..
     cidr: IPv4Network
 
-    ___ __str__
+    ___ -s
         r.. (f"{cidr} is allocated to the {service} "
                 f"service in the {region} region")
 

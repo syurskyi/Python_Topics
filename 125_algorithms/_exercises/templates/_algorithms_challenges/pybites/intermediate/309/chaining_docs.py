@@ -143,7 +143,7 @@ c_ Document:
         """Return the length of the document (i.e. line count)."""
         r.. l..(lines)
 
-    ___ __str__
+    ___ -s
         """Return the content of the document as string."""
         r.. '\n'.j..(lines)
 

@@ -11,7 +11,7 @@
 >>> bool(gotcha) and all(gotcha)
 True
 """
-_______ bisect
+_______ b__
 
 
 c_ Solution:
@@ -28,7 +28,7 @@ c_ Solution:
 
         ___ day __ r..(l..(flowers:
             x = flowers[day]
-            i = bisect.bisect_left(bloom, x)
+            i = b__.bisect_left(bloom, x)
             ___ _x __ bloom[m..(0, i - 1i + 1]:
                 __ a..(_x - x) - 1 __ k:
                     r.. day + 1  # changed to 1-based

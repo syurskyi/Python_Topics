@@ -11,7 +11,7 @@ DEFAULT_EXPECTED_OUTPUT = '1234\n123\n12\n1\n'
 
 
 ___ test_code_uses_singledispatch_decorator
-    ... '@singledispatch' __ i___.getsource(count_down)
+    ... '@singledispatch' __ i___.g.. count_down)
 
 
 ?p__.m__.p.("input_argument", [

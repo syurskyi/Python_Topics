@@ -15,10 +15,10 @@ ___ get_book
     soup1 = soup.find('div', class_='dotd-main-book-summary float-left')
     soup2 = soup.find('div', class_='dotd-main-book-image float-left')
 
-    title = soup1.find(class_='dotd-title').select('h2').__str__()
+    title = soup1.find(class_='dotd-title').select('h2').-s()
     title = title.s..('\t')[15]
 
-    description = soup1.select('div')[2].__str__()
+    description = soup1.select('div')[2].-s()
     description = description.s..('\t')[8]
 
     image = soup2.select('img')[0] 'src'

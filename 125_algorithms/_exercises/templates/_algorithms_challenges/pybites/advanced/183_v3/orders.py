@@ -5,7 +5,7 @@ _______ pandas __ pd
 
 TMP = __.g..("TMP", "/tmp")
 EXCEL = __.p...j..(TMP, 'order_data.xlsx')
-__ n.. __.p...isfile(EXCEL
+__ n.. __.p...i..(EXCEL
     u..(
         'https://bites-data.s3.us-east-2.amazonaws.com/order_data.xlsx',
         EXCEL

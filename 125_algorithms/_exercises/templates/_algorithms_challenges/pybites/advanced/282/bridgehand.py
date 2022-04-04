@@ -42,7 +42,7 @@ c_ BridgeHand:
 
 
 
-    ___ __str__(self) __ s..:
+    ___ -s(self) __ s..:
         """
         Return a string representing this hand, in the following format:
         "S:AK3 H:T987 D:KJ98 C:QJ"

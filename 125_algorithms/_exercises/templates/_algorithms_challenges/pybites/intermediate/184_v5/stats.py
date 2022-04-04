@@ -4,7 +4,7 @@ ____ __ _______ p..
 ____ u__.r.. _______ u..
 
 DATA = p...j..('/tmp', 'bite_output_log.txt')
-__ n.. p...isfile(DATA
+__ n.. p...i..(DATA
     u..('https://bit.ly/2HoFZBd', DATA)
 
 

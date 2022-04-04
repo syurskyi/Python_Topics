@@ -9,7 +9,7 @@ c_ Tree(o..
     ___ __dict__
         r.. {label: [c.__dict__() ___ c __ s..(children)]}
 
-    ___ __str__  indent_ N..
+    ___ -s  indent_ N..
         r.. dumps(__dict__(), indent=indent)
 
     ___ __lt__  other

@@ -1,29 +1,29 @@
-_______ i___
-
-_______ p__
-
-____ order _______ OrderedList
-
-
-?p__.f..(scope='module')
-___ order
-    r.. OrderedList()
-
-
-?p__.m__.p.("num, expected", [
-    (10, '10'),
-    (9, '9, 10'),
-    (16, '9, 10, 16'),
-    (2, '2, 9, 10, 16'),
-    (7, '2, 7, 9, 10, 16'),
-    (1, '1, 2, 7, 9, 10, 16'),
-    (5, '1, 2, 5, 7, 9, 10, 16'),
-])
-___ test_order(order, num, e..
-    order.add(num)
-    ... s..(order) __ e..
-
-
-___ test_does_not_use_manual_sort
-    ... '.sorted' n.. __ i___.getsource(OrderedList)
-    ... '.sort(' n.. __ i___.getsource(OrderedList)
+# _______ i___
+#
+# _______ p__
+#
+# ____ o.. _______ O..
+#
+#
+# ?p__.f.. s.._'module'
+# ___ order
+#     r.. O..
+#
+#
+# ?p__.m__.p.("num, expected", [
+#     (10, '10'),
+#     (9, '9, 10'),
+#     (16, '9, 10, 16'),
+#     (2, '2, 9, 10, 16'),
+#     (7, '2, 7, 9, 10, 16'),
+#     (1, '1, 2, 7, 9, 10, 16'),
+#     (5, '1, 2, 5, 7, 9, 10, 16'),
+#
+# ___ test_order order num e..
+#     ?.a.. ?
+#     ... s.. ? __ e..
+#
+#
+# ___ test_does_not_use_manual_sort
+#     ... '.sorted' n.. __ i___.g.. O..
+#     ... '.sort(' n.. __ i___.g.. O..

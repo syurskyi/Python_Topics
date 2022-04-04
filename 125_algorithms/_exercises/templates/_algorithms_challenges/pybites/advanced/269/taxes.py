@@ -72,7 +72,7 @@ c_ Taxes:
         taxes_owed = taxes
 
 
-    ___ __str__(self) __ s..:
+    ___ -s(self) __ s..:
         """Summary Report
 
         Returns:

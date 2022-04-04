@@ -26,26 +26,26 @@ Picking the right data structure is usually half of the battle.
 Good luck and keep calm and code more Python!
 """
 
-_______ bisect
+_______ b__
 
-c_ OrderedList:
+c_ O..:
 
     ___ -
         _numbers    # list
 
     ___ add  num
-        bisect.insort(_numbers, num)
+        b__.i.. (_numbers, num)
 
-    ___ __str__
+    ___ -s
         r.. ', '.j..(s..(num) ___ num __ _numbers)
 
 
-ol = OrderedList()
+ol = O..()
 ol.add(4)
-print(ol.__str__
+print(ol.-s
 ol.add(1)
-print(ol.__str__
+print(ol.-s
 ol.add(100)
 ol.add(80)
-print(ol.__str__
+print(ol.-s
 

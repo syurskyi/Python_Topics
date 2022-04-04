@@ -9,7 +9,7 @@ c_ Score(E..
     ADVANCED = 4
     CHEATED = 1
 
-    ___ __str__
+    ___ -s
         r.. f'{name} => {THUMBS_UP * value}'
 
     ___ average

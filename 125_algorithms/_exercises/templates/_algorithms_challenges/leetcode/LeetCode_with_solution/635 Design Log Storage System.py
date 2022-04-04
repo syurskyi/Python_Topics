@@ -33,7 +33,7 @@ There will be at most 300 operations of Put or Retrieve.
 Year ranges from [2000,2017]. Hour ranges from [00,23].
 Output for Retrieve has no order required.
 """
-_______ bisect
+_______ b__
 
 
 c_ LogSystem:
@@ -45,7 +45,7 @@ c_ LogSystem:
         lst    # list
 
     ___ put  id: i.., timestamp: s..) __ N..
-        bisect.insort(lst, (timestamp, id
+        b__.i.. (lst, (timestamp, id
 
     ___ retrieve  s: s.., e: s.., gra: s..) __ L..[i..]:
         """
@@ -65,8 +65,8 @@ c_ LogSystem:
 
         s = s[:pre] + lo[pre:]
         e = e[:pre] + hi[pre:]
-        i = bisect.bisect_left(lst, (s, 0
-        j = bisect.bisect_right(lst, (e, f__("inf")))
+        i = b__.bisect_left(lst, (s, 0
+        j = b__.bisect_right(lst, (e, f__("inf")))
         r.. [id ___ _, id __ lst[i:j]]
 
 

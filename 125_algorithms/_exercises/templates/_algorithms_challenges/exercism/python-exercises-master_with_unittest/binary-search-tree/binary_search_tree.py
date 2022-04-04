@@ -4,7 +4,7 @@ c_ TreeNode(o..
         left = N..
         right = N..
 
-    ___ __str__
+    ___ -s
         fmt = 'TreeNode(data={}, left={}, right={})'
         r.. fmt.f..(data, left, right)
 

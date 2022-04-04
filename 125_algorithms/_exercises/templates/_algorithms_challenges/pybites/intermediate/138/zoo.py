@@ -9,12 +9,12 @@ c_ Animal:
         _name = name.capitalize()
         instances.a..(self)
 
-    ___ __str__
+    ___ -s
         r.. f"{next(Animal.animal_sequence)}. {_name}"
 
     @classmethod
     ___ zoo(cls
-        r.. "\n".j..([cls_inst.__str__() ___ cls_inst __ cls.instances])
+        r.. "\n".j..([cls_inst.-s() ___ cls_inst __ cls.instances])
 
 
 # if __name__ == "__main__":

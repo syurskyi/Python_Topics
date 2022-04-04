@@ -4,7 +4,7 @@ ____ u__.r.. _______ u..
 _______ pandas __ pd
 
 EXCEL = p...j..('/tmp', 'order_data.xlsx')
-__ n.. p...isfile(EXCEL
+__ n.. p...i..(EXCEL
     u..('https://bit.ly/2JpniQ2', EXCEL)
 
 

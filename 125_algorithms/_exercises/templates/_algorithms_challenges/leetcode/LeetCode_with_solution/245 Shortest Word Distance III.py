@@ -2,7 +2,7 @@
 Premium Question
 """
 _______ ___
-____ bisect _______ bisect_left
+____ b__ _______ bisect_left
 
 __author__ = 'Daniel'
 

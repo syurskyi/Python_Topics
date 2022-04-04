@@ -1,10 +1,10 @@
 _______ __
 ____ __ _______ p..
-_______ statistics __ st
+_______ s.. __ st
 ____ u__.r.. _______ u..
 
 STATS = p...j..('/tmp', 'testfiles_number_loc.txt')
-__ n.. p...isfile(STATS
+__ n.. p...i..(STATS
     u..('https://bit.ly/2Jp5CUt', STATS)
 
 STATS_OUTPUT = """

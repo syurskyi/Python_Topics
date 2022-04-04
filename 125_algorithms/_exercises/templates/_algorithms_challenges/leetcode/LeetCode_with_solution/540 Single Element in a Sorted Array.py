@@ -13,7 +13,7 @@ Output: 10
 Note: Your solution should run in O(log n) time and O(1) space.
 """
 ____ t___ _______ L..
-____ bisect _______ bisect_right
+____ b__ _______ bisect_right
 
 
 c_ Solution:

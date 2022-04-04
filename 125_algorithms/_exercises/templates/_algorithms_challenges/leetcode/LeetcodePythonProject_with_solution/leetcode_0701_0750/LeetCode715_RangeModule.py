@@ -3,7 +3,7 @@ Created on Oct 29, 2017
 
 @author: MT
 '''
-_______ bisect
+_______ b__
 
 c_ RangeModule(o..
 
@@ -13,7 +13,7 @@ c_ RangeModule(o..
     
     ___ addRangeHelper  left, right, track=T..
         ___ i.. x
-            i = bisect.bisect_left(X, x)
+            i = b__.bisect_left(X, x)
             __ X[i] != x:
                 X.insert(i, x)
                 track.insert(i, track[i-1])
@@ -37,8 +37,8 @@ c_ RangeModule(o..
         :type right: int
         :rtype: bool
         """
-        i = bisect.bisect(X, left)-1
-        j = bisect.bisect_left(X, right)
+        i = b__.b__(X, left)-1
+        j = b__.bisect_left(X, right)
         r.. a..(track[i:j])
 
     ___ removeRange  left, right

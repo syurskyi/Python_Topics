@@ -37,7 +37,7 @@ c_ User:
     #
     # see also TESTS for required output
 
-    ___ __str__
+    ___ -s
         r.. f"{get_full_name} ({username})"
 
     ___  -r
