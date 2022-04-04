@@ -1,4 +1,4 @@
-____ r__ _______ randint
+____ r__ _______ r..
 ____ c.. _______ n..
 
 ____ transpose _______ transpose
@@ -13,9 +13,9 @@ Member = n..('Member', 'name since_days karma_points bitecoin_earned')
 ___ _gen_community
     ___ name __ NAMES:
         y.. Member(name=name,
-                     since_days=randint(1, 365),
-                     karma_points=randint(1, 100),
-                     bitecoin_earned=randint(1, 100
+                     since_days=r..(1, 365),
+                     karma_points=r..(1, 100),
+                     bitecoin_earned=r..(1, 100
 
 
 ___ test_transpose_dict

@@ -5,7 +5,7 @@ START, END = 1, 20
 
 ___ get_random_number
     """Get a random number between START and END, returns int"""
-    r.. r__.randint(START, END)
+    r.. r__.r..(START, END)
 
 
 c_ Game:

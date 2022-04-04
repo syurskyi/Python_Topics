@@ -1,4 +1,4 @@
-____ r__ _______ randint
+____ r__ _______ r..
 
 
 c_ Solution:
@@ -20,7 +20,7 @@ c_ Solution:
             __ A[i] != target:
                 _____
             cnt += 1
-            __ randint(1, cnt) __ cnt:
+            __ r..(1, cnt) __ cnt:
                 res = i
 
         r.. res

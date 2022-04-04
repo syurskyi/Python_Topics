@@ -23,7 +23,7 @@ c_ Solution(o..
         res = -1
         ___ i, num __ e..(nums
             __ target __ num:
-                __ r__.randint(0, count) __ 0:
+                __ r__.r..(0, count) __ 0:
                     res = i
                 count += 1
         r.. res

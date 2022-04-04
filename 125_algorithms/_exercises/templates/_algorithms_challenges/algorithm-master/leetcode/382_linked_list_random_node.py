@@ -4,7 +4,7 @@
 #         self.val = x
 #         self.next = None
 
-____ r__ _______ randint
+____ r__ _______ r..
 
 
 c_ Solution:
@@ -25,7 +25,7 @@ c_ Solution:
         i = 0
 
         w.... node:
-            __ randint(0, i) __ i:
+            __ r..(0, i) __ i:
                 res = node
             node = node.next
             i += 1

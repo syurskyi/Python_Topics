@@ -20,7 +20,7 @@ c_ Solution(o..
         count = 0
         node = head
         w.... node:
-            __ r__.randint(0, count) __ 0:
+            __ r__.r..(0, count) __ 0:
                 res = node.val
             count += 1
             node = node.next

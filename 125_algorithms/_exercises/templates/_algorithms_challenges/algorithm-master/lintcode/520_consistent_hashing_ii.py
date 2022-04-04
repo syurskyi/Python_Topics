@@ -24,9 +24,9 @@ c_ Solution:
         item = l2p[machine_id]    # list
         point = -1
         ___ i __ r..(k
-            point = r__.randint(0, n - 1)
+            point = r__.r..(0, n - 1)
             w.... point __ p2l:
-                point = r__.randint(0, n - 1)
+                point = r__.r..(0, n - 1)
             p2l[point] = machine_id
             item.a..(point)
         item.s..()

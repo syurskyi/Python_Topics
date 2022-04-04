@@ -17,6 +17,6 @@ c_ Solution(o..
         __ n.. newNums:
             r.. newNums
         ___ i __ r..(l..(newNums)-1, 0, -1
-            ind = r__.randint(0, i)
+            ind = r__.r..(0, i)
             newNums[ind], newNums[i] = newNums[i], newNums[ind]
         r.. newNums

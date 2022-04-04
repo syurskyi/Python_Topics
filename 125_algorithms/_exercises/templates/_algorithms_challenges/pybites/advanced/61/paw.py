@@ -17,7 +17,7 @@ ___ create_paw_deck(n=8
     pawcards    # list
     ___ i __ r..(n
 
-        r = r__.randint(1,4)
+        r = r__.r..(1,4)
         ___ j __ r..(1,5
             letter = chr(o..('A') + i)
             action = N..

@@ -2,7 +2,7 @@ _______ r__
 
 
 ___ private_key(p
-    r.. r__.randint(2, p-1)
+    r.. r__.r..(2, p-1)
 
 
 ___ public_key(p, g, a

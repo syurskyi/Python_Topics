@@ -1,4 +1,4 @@
-____ r__ _______ randint
+____ r__ _______ r..
 
 
 c_ HashFunc:
@@ -29,7 +29,7 @@ c_ CountingBloomFilter:
 
         ___ i __ r..(k
             hashs.a..(HashFunc(
-                randint(CAP // 2, CAP),
+                r..(CAP // 2, CAP),
                 i * 2 + 3
 
 

@@ -53,7 +53,7 @@ c_ Solution(o..
     ___ shuffle  nums
         _______ r__
         ___ i __ r..(l..(nums)-1, 0, -1
-            ind = r__.randint(0, i)
+            ind = r__.r..(0, i)
             nums[i], nums[ind] = nums[ind], nums[i]
     
     ___ wiggleSortWithSorting  nums

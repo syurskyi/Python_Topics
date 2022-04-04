@@ -57,7 +57,7 @@ __ _____ __ _____
     
     _______ r__
     ___ num __ r..(30
-        num = r__.randint(0, num)
+        num = r__.r..(0, num)
         print('num:  %08s' % bin(num & 0b11111111
         print('-num: %8s' % bin(-num & 0b11111111
         diff = num&(-num)
