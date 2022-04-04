@@ -17,12 +17,12 @@ The length of S will be in the range of [1, 50000].
 The length of words will be in the range of [1, 5000].
 The length of words[i] will be in the range of [1, 50].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numMatchingSubseq  S: s.., words: List[s..]) __ i..:
+    ___ numMatchingSubseq  S: s.., words: L..[s..]) __ i..:
         """
         Linear O(|S| + sum(|word|))
         no need to if-check
@@ -42,7 +42,7 @@ c_ Solution:
 
         r.. l..(itrs_m[N..])
 
-    ___ numMatchingSubseq_TLE  S: s.., words: List[s..]) __ i..:
+    ___ numMatchingSubseq_TLE  S: s.., words: L..[s..]) __ i..:
         """
         Brute force O(|S| |Words| M)
 

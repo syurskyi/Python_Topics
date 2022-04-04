@@ -23,13 +23,13 @@ Note:
 The number of tasks is in the range [1, 10000].
 The integer n is in the range [0, 100].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d.., d..
 _______ heapq
 
 
 c_ Solution:
-    ___ leastInterval  tasks: List[s..], n: i..) __ i..:
+    ___ leastInterval  tasks: L..[s..], n: i..) __ i..:
         """
         Gap is n
 
@@ -62,7 +62,7 @@ c_ Solution:
         r.. l..(tasks) + idle
 
 
-    ___ leastInterval_complicated  tasks: List[s..], n: i..) __ i..:
+    ___ leastInterval_complicated  tasks: L..[s..], n: i..) __ i..:
         """
         greedy
         max heap, most tasks first

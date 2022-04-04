@@ -24,11 +24,11 @@ You may assume that all elements in nums are unique.
 n will be in the range [1, 10000].
 The value of each element in nums will be in the range [-9999, 9999].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ s..  nums: List[i..], target: i..) __ i..:
+    ___ s..  nums: L..[i..], target: i..) __ i..:
         lo = 0
         hi = l..(nums)
         w.... lo < hi:

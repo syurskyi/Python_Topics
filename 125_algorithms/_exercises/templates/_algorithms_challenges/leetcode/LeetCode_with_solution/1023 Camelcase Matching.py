@@ -38,11 +38,11 @@ Note:
 1 <= pattern.length <= 100
 All strings consists only of lower and upper case English letters.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ camelMatch  queries: List[s..], pattern: s..) __ List[b..]:
+    ___ camelMatch  queries: L..[s..], pattern: s..) __ L..[b..]:
         ret    # list
         ___ q __ queries:
             ret.a..(m..(q, pattern))

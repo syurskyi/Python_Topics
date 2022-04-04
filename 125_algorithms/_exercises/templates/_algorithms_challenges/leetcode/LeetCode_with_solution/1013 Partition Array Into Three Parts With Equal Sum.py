@@ -27,11 +27,11 @@ Note:
 3 <= A.length <= 50000
 -10000 <= A[i] <= 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ canThreePartsEqualSum  A: List[i..]) __ b..:
+    ___ canThreePartsEqualSum  A: L..[i..]) __ b..:
         s = s..(A)
         __ s % 3 != 0:
             r.. F..

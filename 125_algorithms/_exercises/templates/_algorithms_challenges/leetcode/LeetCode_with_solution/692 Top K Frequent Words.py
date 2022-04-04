@@ -24,7 +24,7 @@ Try to solve it in O(n log k) time and O(n) extra space.
 """
 _______ heapq
 ____ c.. _______ d..
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Word:
@@ -40,7 +40,7 @@ c_ Word:
 
 
 c_ Solution:
-    ___ topKFrequent  words: List[s..], k: i..) __ List[s..]:
+    ___ topKFrequent  words: L..[s..], k: i..) __ L..[s..]:
         """
         quick select log n
         heap log k

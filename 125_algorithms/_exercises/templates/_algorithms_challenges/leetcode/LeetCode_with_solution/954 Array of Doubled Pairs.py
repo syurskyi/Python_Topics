@@ -32,12 +32,12 @@ Note:
 A.length is even
 -100000 <= A[i] <= 100000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ canReorderDoubled  A: List[i..]) __ b..:
+    ___ canReorderDoubled  A: L..[i..]) __ b..:
         A.s..(key=abs)
         counter = C..(A)
         ___ a __ A:
@@ -51,7 +51,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ canReorderDoubled_positive_negative  A: List[i..]) __ b..:
+    ___ canReorderDoubled_positive_negative  A: L..[i..]) __ b..:
         """
         sort + counter to form the doubled pairs
         """

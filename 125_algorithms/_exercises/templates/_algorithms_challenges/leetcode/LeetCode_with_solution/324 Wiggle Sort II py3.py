@@ -17,11 +17,11 @@ You may assume all input has valid answer.
 Follow Up:
 Can you do it in O(n) time and/or in-place with O(1) extra space?
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ wiggleSort  nums: List[i..]) __ N..
+    ___ wiggleSort  nums: L..[i..]) __ N..
         """
         Do not return anything, modify nums in-place instead.
 

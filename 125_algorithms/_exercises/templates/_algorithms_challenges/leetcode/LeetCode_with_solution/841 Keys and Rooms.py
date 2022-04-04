@@ -33,11 +33,11 @@ Note:
 0 <= rooms[i].length <= 1000
 The number of keys in all rooms combined is at most 3000.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ canVisitAllRooms  G: List[List[i..]]) __ b..:
+    ___ canVisitAllRooms  G: L..[L..[i..]]) __ b..:
         """
         starting from 0
 

@@ -34,12 +34,12 @@ Each string of prices prices[i] represents a real number which is between 0 and
 1000 and has exactly 3 decimal places.
 target is between 0 and 1000000.
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ m__
 
 
 c_ Solution:
-    ___ minimizeError  prices: List[s..], target: i..) __ s..:
+    ___ minimizeError  prices: L..[s..], target: i..) __ s..:
         """
         to determine possible, floor all or ceil all
 

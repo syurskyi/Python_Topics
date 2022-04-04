@@ -1,8 +1,8 @@
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
-___ sum_indices(items: List[s..]) __ i..:
+___ sum_indices(items: L..[s..]) __ i..:
 
 
 

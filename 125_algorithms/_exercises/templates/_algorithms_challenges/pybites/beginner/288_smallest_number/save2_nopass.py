@@ -1,9 +1,9 @@
-____ t___ _______ List
+____ t___ _______ L..
 _______ i..
 _______ pandas __ pd
 
 
-___ minimum_number(d..: List[i..]) __ i..:
+___ minimum_number(d..: L..[i..]) __ i..:
     ___
         d.. = pd.Series(d..).drop_duplicates().tolist()
         l..    # list

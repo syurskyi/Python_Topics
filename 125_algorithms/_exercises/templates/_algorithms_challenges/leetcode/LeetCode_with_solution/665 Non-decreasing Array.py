@@ -16,11 +16,11 @@ Output: False
 Explanation: You can't get a non-decreasing array by modify at most one element.
 Note: The n belongs to [1, 10,000].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ checkPossibility  A: List[i..]) __ b..:
+    ___ checkPossibility  A: L..[i..]) __ b..:
         """
         greedy change
         two way of changing
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ checkPossibility_error  A: List[i..]) __ b..:
+    ___ checkPossibility_error  A: L..[i..]) __ b..:
         """
         greedy change
         """

@@ -2,7 +2,7 @@ _______ __
 _______ json
 ____ d__ _______ d__, date, t..
 ____ pathlib _______ Path
-____ t___ _______ Dict, List
+____ t___ _______ Dict, L..
 ____ u__.r.. _______ u..
 
 URL = "https://bites-data.s3.us-east-2.amazonaws.com/exchangerates.json"
@@ -13,7 +13,7 @@ __ n.. RATES_FILE.exists
     u..(URL, RATES_FILE)
 
 
-___ get_all_days(start_date: date, end_date: date) __ List[date]:
+___ get_all_days(start_date: date, end_date: date) __ L..[date]:
     
     dates    # list
     date_diff = (end_date - start_date).days

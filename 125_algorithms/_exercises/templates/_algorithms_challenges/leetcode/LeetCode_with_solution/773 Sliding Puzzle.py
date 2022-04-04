@@ -37,7 +37,7 @@ Note:
 board will be a 2 x 3 array as described above.
 board[i][j] will be a permutation of [0, 1, 2, 3, 4, 5].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 ____ copy _______ d..
 _______ heapq
@@ -61,7 +61,7 @@ dirs = (
 
 
 c_ Solution:
-    ___ slidingPuzzle  board: List[List[i..]]) __ i..:
+    ___ slidingPuzzle  board: L..[L..[i..]]) __ i..:
         """
         BFS + visited
 

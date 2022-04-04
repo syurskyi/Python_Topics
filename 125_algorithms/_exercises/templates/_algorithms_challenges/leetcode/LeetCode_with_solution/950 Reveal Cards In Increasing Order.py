@@ -39,12 +39,12 @@ Note:
 1 <= A[i] <= 10^6
 A[i] != A[j] for all i != j
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ deckRevealedIncreasing  deck: List[i..]) __ List[i..]:
+    ___ deckRevealedIncreasing  deck: L..[i..]) __ L..[i..]:
         """
         Sorted is [2, 3, 5, 7, 11, 13, 17]
         17 is the last card, start from the right

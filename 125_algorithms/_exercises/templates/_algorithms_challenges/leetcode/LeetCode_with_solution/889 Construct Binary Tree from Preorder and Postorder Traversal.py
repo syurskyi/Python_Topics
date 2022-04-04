@@ -19,7 +19,7 @@ pre[] and post[] are both permutations of 1, 2, ..., pre.length.
 It is guaranteed an answer exists. If there exists multiple answers, you can
 return any of them.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 # Definition for a binary tree node.
@@ -31,7 +31,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ constructFromPrePost  pre: List[i..], post: List[i..]) __ TreeNode:
+    ___ constructFromPrePost  pre: L..[i..], post: L..[i..]) __ TreeNode:
         """
         use stack
         Preorder generate TreeNodes, push them to stack and postorder pop them out.
@@ -58,7 +58,7 @@ c_ Solution:
         ... j __ l..(post)
         r.. popped  # root is the last popped element
 
-    ___ constructFromPrePost_complex  pre: List[i..], post: List[i..]) __ TreeNode:
+    ___ constructFromPrePost_complex  pre: L..[i..], post: L..[i..]) __ TreeNode:
         """
         draw a full tree
         pre order & post order

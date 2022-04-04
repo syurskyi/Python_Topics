@@ -20,11 +20,11 @@ Note:
 2 <= A.length <= 50000
 1 <= A[i] <= 1000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxScoreSightseeingPair  A: List[i..]) __ i..:
+    ___ maxScoreSightseeingPair  A: L..[i..]) __ i..:
         """
         Attribute the result to the ending element
 
@@ -39,7 +39,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ maxScoreSightseeingPair_error  A: List[i..]) __ i..:
+    ___ maxScoreSightseeingPair_error  A: L..[i..]) __ i..:
         """
         brute force O(N^2)
 

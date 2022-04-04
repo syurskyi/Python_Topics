@@ -29,12 +29,12 @@ Note:
 2 <= A.length <= 2000
 0 <= A[i] <= 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ longestArithSeqLength  A: List[i..]) __ i..:
+    ___ longestArithSeqLength  A: L..[i..]) __ i..:
         """
         Brute force O(n^2)
 

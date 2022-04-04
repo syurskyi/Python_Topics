@@ -15,13 +15,13 @@ The value k is positive and will always be smaller than the length of the sorted
 Length of the given array is positive and will not exceed 104
 Absolute value of elements in the array and x will not exceed 104
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ bisect _______ bisect_left
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findClosestElements  A: List[i..], k: i.., x: i..) __ List[i..]:
+    ___ findClosestElements  A: L..[i..], k: i.., x: i..) __ L..[i..]:
         """
         binary search without two pointers scanning
         """
@@ -38,7 +38,7 @@ c_ Solution:
 
         r.. A[lo:lo+k]
 
-    ___ findClosestElements2  A: List[i..], k: i.., x: i..) __ List[i..]:
+    ___ findClosestElements2  A: L..[i..], k: i.., x: i..) __ L..[i..]:
         """
         input sorted arrya
         two pointers

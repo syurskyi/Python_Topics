@@ -25,14 +25,14 @@ Example 2:
 Given the above grid, return 0.
 Note: The length of each dimension in the given grid does not exceed 50.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
 c_ Solution:
-    ___ maxAreaOfIsland  grid: List[List[i..]]) __ i..:
+    ___ maxAreaOfIsland  grid: L..[L..[i..]]) __ i..:
         """
         dfs
         """

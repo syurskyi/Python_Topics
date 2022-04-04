@@ -1,15 +1,15 @@
 _______ json
 _______ __
 ____ io _______ StringIO
-____ base64 _______ b64decode
+____ base64 _______ b..
 ____ pathlib _______ Path
-____ t___ _______ Dict, List, Union
+____ t___ _______ Dict, L.., Union
 
 _______ pandas __ pd  # type: ignore
 _______ r__
 
 URL: s.. = "https://bites-data.s3.us-east-2.amazonaws.com/MonthlySales.csv"
-STATS: List[s..] = ["sum", "mean", "max"]
+STATS: L..[s..] = ["sum", "mean", "max"]
 TMP: Path = Path(__.getenv("TMP", "/tmp")) / "MonthlySales.csv"
 
 
@@ -42,12 +42,12 @@ ___ process_data(url: s..) __ pd.DataFrame:
     Returns:
         pd.DataFrame: Pandas DataFrame generated from the processed data
     """
-    data = b64decode(get_data(url) 'content' ).d.. )
+    data = b..(get_data(url) 'content' ).d.. )
     r.. pd.read_csv(StringIO(data), parse_dates= 'month' )
 
 
 
-___ summary_report(df: pd.DataFrame, stats: Union[List[s..], N..] = STATS) __ N..
+___ summary_report(df: pd.DataFrame, stats: Union[L..[s..], N..] = STATS) __ N..
     """Summary report generated from the DataFrame and list of stats
 
     Will aggregate statistics for sum, mean, and max by default.

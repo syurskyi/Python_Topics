@@ -23,12 +23,12 @@ There are four ways to split nums into two subarrays.
 The best way is to split it into [7,2,5] and [10,8],
 where the largest sum among the two subarrays is only 18.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ f.. _______ lru_cache
 
 
 c_ SolutionDP:
-    ___ splitArray  nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: L..[i..], m: i..) __ i..:
         """
         non-aftereffect, dp
         Let F[l][k] be the minimized max sum in nums[:l] with k parts
@@ -55,7 +55,7 @@ c_ SolutionDP:
 
 
 c_ Solution:
-    ___ splitArray  nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: L..[i..], m: i..) __ i..:
         """
         Binary search over the subarray sum values
         """
@@ -86,7 +86,7 @@ c_ SolutionTLE2:
     ___ -
         sums = [0]
 
-    ___ splitArray  nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: L..[i..], m: i..) __ i..:
         """
         memoization with 1 less param
         """
@@ -118,7 +118,7 @@ c_ SolutionTLE:
     ___ -
         sums = [0]
 
-    ___ splitArray  nums: List[i..], m: i..) __ i..:
+    ___ splitArray  nums: L..[i..], m: i..) __ i..:
         """
         Minimize the largest subarray sum
 

@@ -34,7 +34,7 @@ c_ TreeNode:
         right = N..
 
 
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
@@ -56,7 +56,7 @@ c_ Solution:
         counter = d..(i..)
         merkle_hash = MerkleHash()
 
-    ___ findDuplicateSubtrees  root: TreeNode) __ List[TreeNode]:
+    ___ findDuplicateSubtrees  root: TreeNode) __ L..[TreeNode]:
         """
         Merkle hash based on current val, and left substree merkle and right merkle
         Assign each subtree a identity/hash
@@ -83,7 +83,7 @@ c_ Solution:
 
 
 c_ Solution2:
-    ___ findDuplicateSubtrees  root: TreeNode) __ List[TreeNode]:
+    ___ findDuplicateSubtrees  root: TreeNode) __ L..[TreeNode]:
         """
         Only need to return the root
         """

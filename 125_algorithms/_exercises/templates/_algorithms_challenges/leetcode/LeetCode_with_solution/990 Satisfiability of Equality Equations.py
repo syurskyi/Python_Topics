@@ -43,7 +43,7 @@ equations[i][0] and equations[i][3] are lowercase letters
 equations[i][1] is either '=' or '!'
 equations[i][2] is '='
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ DisjointSet:
@@ -61,7 +61,7 @@ c_ DisjointSet:
         r.. pi[x]
 
 c_ Solution:
-    ___ equationsPossible  equations: List[s..]) __ b..:
+    ___ equationsPossible  equations: L..[s..]) __ b..:
         """
         union find
         """

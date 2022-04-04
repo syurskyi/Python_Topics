@@ -27,11 +27,11 @@ Note:
 arr will have length in range [1, 10].
 arr[i] will be a permutation of [0, 1, ..., arr.length - 1].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxChunksToSorted  arr: List[i..]) __ i..:
+    ___ maxChunksToSorted  arr: L..[i..]) __ i..:
         """
         compared to the sorted
         [0, 1, 2, 3, 4]

@@ -26,14 +26,14 @@ Note:
 1 <= A.length = A[0].length <= 100
 A[i][j] == 0 or A[i][j] == 1
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
 c_ Solution:
-    ___ shortestBridge  A: List[List[i..]]) __ i..:
+    ___ shortestBridge  A: L..[L..[i..]]) __ i..:
         """
         market component 1 and component 2
         iterate 0 and BFS, min(dist1 + dist2 - 1)?

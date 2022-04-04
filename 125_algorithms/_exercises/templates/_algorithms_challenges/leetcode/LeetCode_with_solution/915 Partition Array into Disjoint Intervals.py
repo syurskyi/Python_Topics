@@ -27,11 +27,11 @@ Note:
 0 <= A[i] <= 10^6
 It is guaranteed there is at least one way to partition A as described.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ partitionDisjoint  A: List[i..]) __ i..:
+    ___ partitionDisjoint  A: L..[i..]) __ i..:
         """
         max(left) <= min(right)
 
@@ -50,7 +50,7 @@ c_ Solution:
                 r.. l
         r..
 
-    ___ partitionDisjoint_2  A: List[i..]) __ i..:
+    ___ partitionDisjoint_2  A: L..[i..]) __ i..:
         """
         max(left) <= min(right)
         """

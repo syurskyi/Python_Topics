@@ -31,11 +31,11 @@ Follow up:
 Can you solve it using only one pass?
 Can you solve it in O(1) space?
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ longestMountain  A: List[i..]) __ i..:
+    ___ longestMountain  A: L..[i..]) __ i..:
         """
         dp
         """
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ longestMountain  A: List[i..]) __ i..:
+    ___ longestMountain  A: L..[i..]) __ i..:
         """
         dp
         """
@@ -76,7 +76,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ longestMountain_complicated  A: List[i..]) __ i..:
+    ___ longestMountain_complicated  A: L..[i..]) __ i..:
         """
         a flag to indicate expecting increase or decrease
         one-pass can

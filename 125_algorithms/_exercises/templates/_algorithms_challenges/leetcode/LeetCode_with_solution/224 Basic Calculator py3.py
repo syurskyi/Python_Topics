@@ -21,7 +21,7 @@ Note:
 You may assume that the given expression is always valid.
 Do not use the eval built-in library function.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
@@ -34,7 +34,7 @@ c_ Solution:
         ret, _ = eval(s + "\0", 0, [])
         r.. ret
 
-    ___ eval  s: s.., start: i.., stk: List[i..]) __ i..:
+    ___ eval  s: s.., start: i.., stk: L..[i..]) __ i..:
         prev_op = "+"
         operand = 0
         i = start

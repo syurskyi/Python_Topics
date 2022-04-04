@@ -1,7 +1,7 @@
-____ t___ _______ List
+____ t___ _______ L..
 
 
-___ pascal(N: i..) __ List[i..]:
+___ pascal(N: i..) __ L..[i..]:
     """
     Return the Nth row of Pascal triangle
     """

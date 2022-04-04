@@ -34,12 +34,12 @@ Note:
 piles.length <= H <= 10^9
 1 <= piles[i] <= 10^9
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ m__
 
 
 c_ Solution:
-    ___ minEatingSpeed  piles: List[i..], H: i..) __ i..:
+    ___ minEatingSpeed  piles: L..[i..], H: i..) __ i..:
         """
         validation:
             each piles  ceil(n/K)

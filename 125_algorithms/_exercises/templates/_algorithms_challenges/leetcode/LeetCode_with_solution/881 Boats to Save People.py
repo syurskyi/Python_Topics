@@ -29,12 +29,12 @@ Note:
 1 <= people.length <= 50000
 1 <= people[i] <= limit <= 30000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numRescueBoats  people: List[i..], limit: i..) __ i..:
+    ___ numRescueBoats  people: L..[i..], limit: i..) __ i..:
         """
         sort + gready
         """

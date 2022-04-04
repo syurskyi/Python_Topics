@@ -27,14 +27,14 @@ Note:
 1 <= A.length <= 1000.
 2 <= A[i] <= 10 ^ 9.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 MOD =  10 ** 9 + 7
 
 
 c_ Solution:
-    ___ numFactoredBinaryTrees  A: List[i..]) __ i..:
+    ___ numFactoredBinaryTrees  A: L..[i..]) __ i..:
         """
         Let F[i] be the number of factored binary tree rooted at i
         """

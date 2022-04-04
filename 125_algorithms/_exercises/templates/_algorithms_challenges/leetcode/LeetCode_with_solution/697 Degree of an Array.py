@@ -22,12 +22,12 @@ Note:
 nums.length will be between 1 and 50,000.
 nums[i] will be an integer between 0 and 49,999.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findShortestSubArray  nums: List[i..]) __ i..:
+    ___ findShortestSubArray  nums: L..[i..]) __ i..:
         """
         counter + two pointers does not work
         counter + first appearance

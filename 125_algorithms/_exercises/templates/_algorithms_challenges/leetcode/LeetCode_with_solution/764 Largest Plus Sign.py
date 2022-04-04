@@ -65,11 +65,11 @@ mines[i] will be length 2 and consist of integers in the range [0, N-1].
 (Additionally, programs submitted in C, C++, or C# will be judged with a
 slightly smaller time limit.)
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ orderOfLargestPlusSign  N: i.., mines: List[List[i..]]) __ i..:
+    ___ orderOfLargestPlusSign  N: i.., mines: L..[L..[i..]]) __ i..:
         """
         < ^ > V four directions
         Let F[i][j][k] be the number of consecutive 1 including G[i][j] it self

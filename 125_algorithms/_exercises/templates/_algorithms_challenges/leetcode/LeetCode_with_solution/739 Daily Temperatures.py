@@ -10,12 +10,12 @@ your output should be [1, 1, 4, 2, 1, 1, 0, 0].
 Note: The length of temperatures will be in the range [1, 30000]. Each
 temperature will be an integer in the range [30, 100].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ dailyTemperatures  T: List[i..]) __ List[i..]:
+    ___ dailyTemperatures  T: L..[i..]) __ L..[i..]:
         """
         maintain a stack of monotonously decresing from right to left
         (i.e. monotonously increasing from left to right)

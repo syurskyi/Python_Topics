@@ -21,7 +21,7 @@ Note:
 0 <= B.length < 1000
 0 <= A[i].start, A[i].end, B[i].start, B[i].end < 10^9
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 # Definition for an interval.
@@ -32,7 +32,7 @@ c_ Interval:
 
 
 c_ Solution:
-    ___ intervalIntersection  A: List[Interval], B: List[Interval]) __ List[Interval]:
+    ___ intervalIntersection  A: L..[Interval], B: L..[Interval]) __ L..[Interval]:
         """
         Among the given intervals, consider the interval A[0] with the smallest
         endpoint. (Without loss of generality, this interval occurs in array A.)
@@ -62,7 +62,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ intervalIntersection_complex  A: List[Interval], B: List[Interval]) __ List[Interval]:
+    ___ intervalIntersection_complex  A: L..[Interval], B: L..[Interval]) __ L..[Interval]:
         """
         like merge
         """

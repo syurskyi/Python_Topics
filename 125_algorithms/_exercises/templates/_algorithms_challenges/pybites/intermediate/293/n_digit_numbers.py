@@ -1,8 +1,8 @@
-____ t___ _______ List, TypeVar
+____ t___ _______ L.., TypeVar
 T = TypeVar('T', i.., f__)
 
 
-___ n_digit_numbers(numbers: List[T], n: i..) __ List[i..]:
+___ n_digit_numbers(numbers: L..[T], n: i..) __ L..[i..]:
     # Checks
     __ n < 1:
         r.. V...

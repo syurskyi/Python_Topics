@@ -27,11 +27,11 @@ N is an integer within the range [1, 20,000].
 The elements of A are all distinct.
 Each element of A is an integer within the range [0, N-1].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ arrayNesting  nums: List[i..]) __ i..:
+    ___ arrayNesting  nums: L..[i..]) __ i..:
         """
         You can think of it as graph. If circle, then you can start with any
         node

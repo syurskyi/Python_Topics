@@ -18,11 +18,11 @@ Note:
 0 < nums[i] < 1000.
 0 <= k < 10^6.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ numSubarrayProductLessThanK  nums: List[i..], k: i..) __ i..:
+    ___ numSubarrayProductLessThanK  nums: L..[i..], k: i..) __ i..:
         """
         Two pointer
         Count attribute to the end

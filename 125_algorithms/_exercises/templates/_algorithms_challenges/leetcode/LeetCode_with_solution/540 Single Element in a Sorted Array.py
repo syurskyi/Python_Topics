@@ -12,12 +12,12 @@ Input: [3,3,7,7,10,11,11]
 Output: 10
 Note: Your solution should run in O(log n) time and O(1) space.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ bisect _______ bisect_right
 
 
 c_ Solution:
-    ___ singleNonDuplicate  nums: List[i..]) __ i..:
+    ___ singleNonDuplicate  nums: L..[i..]) __ i..:
         """
         sorted array
 
@@ -42,7 +42,7 @@ c_ Solution:
         r.. nums[lo]
 
 
-    ___ singleNonDuplicate_error  nums: List[i..]) __ i..:
+    ___ singleNonDuplicate_error  nums: L..[i..]) __ i..:
         """
         sorted array
 
@@ -63,7 +63,7 @@ c_ Solution:
         r.. nums[hi - 1]
 
 
-    ___ singleNonDuplicate_xor  nums: List[i..]) __ i..:
+    ___ singleNonDuplicate_xor  nums: L..[i..]) __ i..:
         """
         XOR O(n)
         """

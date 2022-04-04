@@ -1,4 +1,4 @@
-c_ List(o..
+c_ L..(o..
   $
   ___ delete(elem
     elem.prev.next = elem.next
@@ -15,11 +15,11 @@ c_ List(o..
 
   $
   ___ a..(head, elem
-    List.move(elem, head.prev, head)
+    L...move(elem, head.prev, head)
 
   $
   ___ insertAfter(head, elem
-    List.move(elem, head, head.next)
+    L...move(elem, head, head.next)
 
   $
   ___ isEmpty(head
@@ -35,13 +35,13 @@ c_ FreqNode(o..
     prev = next = N..
     freq = freq
     head = Cache(-1, -1, self)
-    List.initHead(head)
+    L...initHead(head)
 
   ___ popCache
     head = head
-    ret = List.delete(head.next)
-    __ List.isEmpty(head
-      List.delete(self)
+    ret = L...delete(head.next)
+    __ L...isEmpty(head
+      L...delete(self)
     r.. ret
 
 
@@ -55,16 +55,16 @@ c_ Cache(o..
   ___ increaseFreq
     freqNode = freqNode
     newFreqNode = N..
-    __ List.isEmpty(freqNode) o. freqNode.next.freq != freqNode.freq + 1:
+    __ L...isEmpty(freqNode) o. freqNode.next.freq != freqNode.freq + 1:
       newFreqNode = FreqNode(freqNode.freq + 1)
-      List.insertAfter(freqNode, newFreqNode)
+      L...insertAfter(freqNode, newFreqNode)
     ____:
       newFreqNode = freqNode.next
     freqNode = newFreqNode
-    List.delete(self)
-    List.a..(newFreqNode.head, self)
-    __ List.isEmpty(freqNode.head
-      List.delete(freqNode)
+    L...delete(self)
+    L...a..(newFreqNode.head, self)
+    __ L...isEmpty(freqNode.head
+      L...delete(freqNode)
 
 
 c_ LFUCache(o..
@@ -72,7 +72,7 @@ c_ LFUCache(o..
     d    # dict
     cap = capacity
     head = FreqNode(-1)
-    List.initHead(head)
+    L...initHead(head)
 
   ___ get  key
     __ key n.. __ d:
@@ -93,8 +93,8 @@ c_ LFUCache(o..
         del d[head.next.popCache().key]
       newFreqNode = FreqNode(0)
       newCacheNode = Cache(key, value, newFreqNode)
-      List.a..(newFreqNode.head, newCacheNode)
-      List.insertAfter(head, newFreqNode)
+      L...a..(newFreqNode.head, newCacheNode)
+      L...insertAfter(head, newFreqNode)
       d[key] = newCacheNode
       newCacheNode.increaseFreq()
 

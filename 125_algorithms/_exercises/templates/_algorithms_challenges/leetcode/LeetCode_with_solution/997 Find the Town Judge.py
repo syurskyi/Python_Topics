@@ -44,12 +44,12 @@ trust[i] are all different
 trust[i][0] != trust[i][1]
 1 <= trust[i][0], trust[i][1] <= N
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findJudge  N: i.., trust: List[List[i..]]) __ i..:
+    ___ findJudge  N: i.., trust: L..[L..[i..]]) __ i..:
         """
         like the find the celebrity
         """

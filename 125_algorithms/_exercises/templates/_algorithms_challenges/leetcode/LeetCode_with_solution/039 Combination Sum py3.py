@@ -29,11 +29,11 @@ A solution set is:
   [3,5]
 ]
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ combinationSum  candidates: List[i..], target: i..) __ List[List[i..]]:
+    ___ combinationSum  candidates: L..[i..], target: i..) __ L..[L..[i..]]:
         ret    # list
         dfs(candidates, 0, [], 0, target, ret)
         r.. ret

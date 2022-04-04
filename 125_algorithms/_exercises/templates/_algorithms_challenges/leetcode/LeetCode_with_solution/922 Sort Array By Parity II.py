@@ -23,11 +23,11 @@ Note:
 A.length % 2 == 0
 0 <= A[i] <= 1000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ sortArrayByParityII  A: List[i..]) __ List[i..]:
+    ___ sortArrayByParityII  A: L..[i..]) __ L..[i..]:
         even_idx = 0
         ___ odd_idx __ r..(1, l..(A), 2
             __ A[odd_idx] % 2 __ 0:
@@ -37,7 +37,7 @@ c_ Solution:
 
         r.. A
 
-    ___ sortArrayByParityII_complex  A: List[i..]) __ List[i..]:
+    ___ sortArrayByParityII_complex  A: L..[i..]) __ L..[i..]:
         """
         in-place two passes
         """

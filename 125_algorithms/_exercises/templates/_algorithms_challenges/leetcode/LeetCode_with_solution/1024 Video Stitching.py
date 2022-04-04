@@ -44,11 +44,11 @@ Note:
 0 <= clips[i][0], clips[i][1] <= 100
 0 <= T <= 100
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ videoStitching  clips: List[List[i..]], T: i..) __ i..:
+    ___ videoStitching  clips: L..[L..[i..]], T: i..) __ i..:
         """
         Greedy is correct. The larger the coverage, the better
         """
@@ -73,7 +73,7 @@ c_ Solution:
 
         r.. ret __ prev_e >= T ____ -1
 
-    ___ videoStitching_error  clips: List[List[i..]], T: i..) __ i..:
+    ___ videoStitching_error  clips: L..[L..[i..]], T: i..) __ i..:
         """
         gready take the max coverage?
         """

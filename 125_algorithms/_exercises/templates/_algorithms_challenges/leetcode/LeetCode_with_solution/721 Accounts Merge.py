@@ -42,7 +42,7 @@ ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ accountsMerge  accounts: List[List[s..]]) __ List[List[s..]]:
+    ___ accountsMerge  accounts: L..[L..[s..]]) __ L..[L..[s..]]:
         """
         merge has to be dfs
         account id
@@ -72,7 +72,7 @@ c_ Solution:
                     dfs(nbr, accounts, email_to_ids, emails, visited)
 
 
-    ___ accountsMerge_error  accounts: List[List[s..]]) __ List[List[s..]]:
+    ___ accountsMerge_error  accounts: L..[L..[s..]]) __ L..[L..[s..]]:
         """
         data structure
         map: email -> id, if exist mapping, then merge

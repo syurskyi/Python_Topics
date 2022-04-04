@@ -13,10 +13,10 @@ matrix in the same row-traversing order as they were.
 If the 'reshape' operation with given parameters is possible and legal, output
 the new reshaped matrix; Otherwise, output the original matrix.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 c_ Solution:
-    ___ matrixReshape  nums: List[List[i..]], r: i.., c: i..) __ List[List[i..]]:
+    ___ matrixReshape  nums: L..[L..[i..]], r: i.., c: i..) __ L..[L..[i..]]:
         m, n = l..(nums), l..(nums[0])
         __ m * n != r * c:
             r.. nums

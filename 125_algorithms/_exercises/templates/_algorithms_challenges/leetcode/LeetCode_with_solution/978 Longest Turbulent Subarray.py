@@ -29,11 +29,11 @@ Note:
 1 <= A.length <= 40000
 0 <= A[i] <= 10^9
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxTurbulenceSize  A: List[i..]) __ i..:
+    ___ maxTurbulenceSize  A: L..[i..]) __ i..:
         """
         scan
         """

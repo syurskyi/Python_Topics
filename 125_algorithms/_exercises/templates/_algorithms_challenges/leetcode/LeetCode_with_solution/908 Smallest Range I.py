@@ -30,11 +30,11 @@ Note:
 0 <= A[i] <= 10000
 0 <= K <= 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ smallestRangeI  A: List[i..], K: i..) __ i..:
+    ___ smallestRangeI  A: L..[i..], K: i..) __ i..:
         """
         only need the max and min
         """

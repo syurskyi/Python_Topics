@@ -1,7 +1,7 @@
-____ t___ _______ List
+____ t___ _______ L..
 
 
-___ jagged_list(lst_of_lst: List[List[i..]], fillvalue: i.. = 0) __ List[List[i..]]:
+___ jagged_list(lst_of_lst: L..[L..[i..]], fillvalue: i.. = 0) __ L..[L..[i..]]:
     __ lst_of_lst __ []:
         r.. lst_of_lst
     ____:

@@ -1,6 +1,6 @@
 _______ json
 ____ c.. _______ n..
-____ t___ _______ List
+____ t___ _______ L..
 
 _______ r__
 ____ bs4 _______ BeautifulSoup __ Soup
@@ -100,7 +100,7 @@ ___ _get_pycon_data
         r.. session.g.. PYCON_DATA).content.d.. "utf-8")
 
 
-___ get_pycon_events(data=_get_pycon_data __ List[PyCon]:
+___ get_pycon_events(data=_get_pycon_data __ L..[PyCon]:
     """
     Scrape the PyCon events from the given website data and
     return a list of PyCon namedtuples. Pay attention to the
@@ -138,9 +138,9 @@ ___ get_pycon_events(data=_get_pycon_data __ List[PyCon]:
     
 
 
-___ filter_pycons(pycons: List[PyCon],
+___ filter_pycons(pycons: L..[PyCon],
                   year: i.. = 2019,
-                  continent: s.. = "Europe") __ List[PyCon]:
+                  continent: s.. = "Europe") __ L..[PyCon]:
     """
     Given a list of PyCons a year and a continent return
     a list of PyCons that take place in that year and on

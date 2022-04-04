@@ -27,12 +27,12 @@ Note:
 1 <= stones.length <= 1000
 0 <= stones[i][j] < 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ removeStones  stones: List[List[i..]]) __ i..:
+    ___ removeStones  stones: L..[L..[i..]]) __ i..:
         """
         convert to graph problem
         each component in the graph can be removed to only one node

@@ -52,7 +52,7 @@ bills[i] will be either 5, 10, or 20.
 
 
 c_ Solution:
-    ___ lemonadeChange  bills: List[i..]) __ b..:
+    ___ lemonadeChange  bills: L..[i..]) __ b..:
         """
         count
         """

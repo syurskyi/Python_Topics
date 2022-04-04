@@ -38,7 +38,7 @@ Note:
 
 1 <= N <= 100
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 # Definition for a binary tree node.
@@ -54,7 +54,7 @@ c_ Solution:
         ret    # list
         i = 0  # currently scanning index of voyage
 
-    ___ flipMatchVoyage  root: TreeNode, voyage: List[i..]) __ List[i..]:
+    ___ flipMatchVoyage  root: TreeNode, voyage: L..[i..]) __ L..[i..]:
         """
         match the voyage
         Flip the least number of nodes? There is only one answer

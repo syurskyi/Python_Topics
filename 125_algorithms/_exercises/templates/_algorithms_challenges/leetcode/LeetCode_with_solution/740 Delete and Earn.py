@@ -32,12 +32,12 @@ Note:
 The length of nums is at most 20000.
 Each element nums[i] is an integer in the range [1, 10000].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ deleteAndEarn  nums: List[i..]) __ i..:
+    ___ deleteAndEarn  nums: L..[i..]) __ i..:
         """
         reduce to house rob problem
         whether to pick the number or not
@@ -59,7 +59,7 @@ c_ Solution:
 
         r.. cur
 
-    ___ deleteAndEarn_dp  nums: List[i..]) __ i..:
+    ___ deleteAndEarn_dp  nums: L..[i..]) __ i..:
         """
         reduce to house rob problem
         whether to pick the number or not
@@ -81,7 +81,7 @@ c_ Solution:
             )
         r.. F[-1]
 
-    ___ deleteAndEarn_slow  nums: List[i..]) __ i..:
+    ___ deleteAndEarn_slow  nums: L..[i..]) __ i..:
         """
         geedy + dp: chose to delete max or max - 1
         O(n lg n)

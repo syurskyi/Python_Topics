@@ -32,12 +32,12 @@ The width sum of bricks in different rows are the same and won't exceed INT_MAX.
 The number of bricks in each row is in range [1,10,000]. The height of wall is
 in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ leastBricks  wall: List[List[i..]]) __ i..:
+    ___ leastBricks  wall: L..[L..[i..]]) __ i..:
         """
         Iterate and count edge at a position
         """

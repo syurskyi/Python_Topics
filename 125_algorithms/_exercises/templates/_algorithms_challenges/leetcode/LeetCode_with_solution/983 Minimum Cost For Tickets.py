@@ -44,11 +44,11 @@ days is in strictly increasing order.
 costs.length == 3
 1 <= costs[i] <= 1000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ mincostTickets  days: List[i..], costs: List[i..]) __ i..:
+    ___ mincostTickets  days: L..[i..], costs: L..[i..]) __ i..:
         """
         Iterate backward.
 
@@ -76,7 +76,7 @@ c_ Solution:
 
         r.. F[1]
 
-    ___ mincostTickets_error  days: List[i..], costs: List[i..]) __ i..:
+    ___ mincostTickets_error  days: L..[i..], costs: L..[i..]) __ i..:
         """
         Iterate backward on days
         O(30 * |days|)
@@ -100,7 +100,7 @@ c_ Solution:
                     _____
         r.. F[0]
 
-    ___ mincostTickets_error  days: List[i..], costs: List[i..]) __ i..:
+    ___ mincostTickets_error  days: L..[i..], costs: L..[i..]) __ i..:
         """
         dp
         Let F[i] be the min cost at day i, covering all trips from day 1 to i

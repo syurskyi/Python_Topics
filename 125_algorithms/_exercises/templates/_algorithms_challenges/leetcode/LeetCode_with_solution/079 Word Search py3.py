@@ -19,7 +19,7 @@ Given word = "ABCCED", return true.
 Given word = "SEE", return true.
 Given word = "ABCB", return false.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
@@ -27,7 +27,7 @@ dirs = [(0, -1), (0, 1), (1, 0), (-1, 0)]
 
 
 c_ Solution:
-    ___ exist  board: List[List[s..]], word: s..) __ b..:
+    ___ exist  board: L..[L..[s..]], word: s..) __ b..:
         m, n = l..(board), l..(board[0])
         visited = d..(l....: d..(b..))
         ___ i __ r..(m

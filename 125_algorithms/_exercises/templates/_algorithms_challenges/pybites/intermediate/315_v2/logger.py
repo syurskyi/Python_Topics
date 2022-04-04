@@ -1,11 +1,11 @@
 _______ logging
-____ t___ _______ List  # python 3.9 we can drop this
+____ t___ _______ L..  # python 3.9 we can drop this
 
 
 logger = logging.getLogger('app')
 
 
-___ sum_even_numbers(numbers: List[f__]) __ f__:
+___ sum_even_numbers(numbers: L..[f__]) __ f__:
     """
     1. Of the numbers passed in sum the even ones
        and return the result.

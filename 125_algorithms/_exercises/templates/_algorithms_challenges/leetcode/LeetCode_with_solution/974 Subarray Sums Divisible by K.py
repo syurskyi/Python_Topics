@@ -16,12 +16,12 @@ Note:
 -10000 <= A[i] <= 10000
 2 <= K <= 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ subarraysDivByK_2  A: List[i..], K: i..) __ i..:
+    ___ subarraysDivByK_2  A: L..[i..], K: i..) __ i..:
         """
         count the prefix sum mod K
         nC2
@@ -40,7 +40,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ subarraysDivByK  A: List[i..], K: i..) __ i..:
+    ___ subarraysDivByK  A: L..[i..], K: i..) __ i..:
         """
         Prefix sum
         O(N^2)

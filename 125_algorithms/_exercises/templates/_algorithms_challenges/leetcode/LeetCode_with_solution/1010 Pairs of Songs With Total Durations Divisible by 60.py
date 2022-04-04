@@ -24,12 +24,12 @@ Note:
 1 <= time.length <= 60000
 1 <= time[i] <= 500
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numPairsDivisibleBy60  time: List[i..]) __ i..:
+    ___ numPairsDivisibleBy60  time: L..[i..]) __ i..:
         """
         Running attribution
         """
@@ -42,7 +42,7 @@ c_ Solution:
         r.. ret
 
 
-    ___ numPairsDivisibleBy60_error  time: List[i..]) __ i..:
+    ___ numPairsDivisibleBy60_error  time: L..[i..]) __ i..:
         """
         O(N^2) check i, j
         Reduce it

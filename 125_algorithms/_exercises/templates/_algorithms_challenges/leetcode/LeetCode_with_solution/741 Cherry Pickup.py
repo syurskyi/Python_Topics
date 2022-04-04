@@ -38,14 +38,14 @@ grid is an N by N 2D array, with 1 <= N <= 50.
 Each grid[i][j] is an integer in the set {-1, 0, 1}.
 It is guaranteed that grid[0][0] and grid[N-1][N-1] are not -1.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
     ___ -
         cache    # dict
 
-    ___ cherryPickup  grid: List[List[i..]]) __ i..:
+    ___ cherryPickup  grid: L..[L..[i..]]) __ i..:
         """
         DP go and back
         Go back probably related - yes it is related

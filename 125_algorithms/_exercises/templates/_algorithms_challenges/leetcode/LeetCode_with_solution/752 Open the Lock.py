@@ -46,11 +46,11 @@ target will not be in the list deadends.
 Every string in deadends and the string target will be a string of 4 digits from
 the 10,000 possibilities '0000' to '9999'.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ openLock  deadends: List[s..], target: s..) __ i..:
+    ___ openLock  deadends: L..[s..], target: s..) __ i..:
         """
         bfs
         """

@@ -27,14 +27,14 @@ Note:
 0 <= A[i][j] <= 1
 All rows have the same size.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 dirs = ((0, -1), (0, 1), (1, 0), (-1, 0))
 
 
 c_ Solution:
-    ___ numEnclaves  A: List[List[i..]]) __ i..:
+    ___ numEnclaves  A: L..[L..[i..]]) __ i..:
         """
         not dfs from any cell, but dfs from the edges
         """
@@ -66,7 +66,7 @@ c_ SolutionError:
     ___ -
         ret = 0
 
-    ___ numEnclaves  A: List[List[i..]]) __ i..:
+    ___ numEnclaves  A: L..[L..[i..]]) __ i..:
         """
         dfs coloring
         """

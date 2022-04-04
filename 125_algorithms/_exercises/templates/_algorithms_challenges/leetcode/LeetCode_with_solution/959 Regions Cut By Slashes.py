@@ -69,7 +69,7 @@ Note:
 1 <= grid.length == grid[0].length <= 30
 grid[i][j] is either '/', '\', or ' '.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ DisjointSet:
@@ -93,7 +93,7 @@ c_ DisjointSet:
         r.. pi[x]
 
 c_ Solution:
-    ___ regionsBySlashes  grid: List[s..]) __ i..:
+    ___ regionsBySlashes  grid: L..[s..]) __ i..:
         """
         in 1 x 1 cell
         3 possibilities

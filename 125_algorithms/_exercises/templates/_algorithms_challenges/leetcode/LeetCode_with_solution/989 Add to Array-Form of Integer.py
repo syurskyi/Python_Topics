@@ -28,12 +28,12 @@ Input: A = [9,9,9,9,9,9,9,9,9,9], K = 1
 Output: [1,0,0,0,0,0,0,0,0,0,0]
 Explanation: 9999999999 + 1 = 10000000000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ addToArrayForm  A: List[i..], K: i..) __ List[i..]:
+    ___ addToArrayForm  A: L..[i..], K: i..) __ L..[i..]:
         """
         carry
         """

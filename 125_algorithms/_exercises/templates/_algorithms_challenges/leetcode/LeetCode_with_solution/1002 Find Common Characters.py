@@ -27,12 +27,12 @@ A[i][j] is a lowercase letter
 """
 _______ s__
 
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ commonChars  A: List[s..]) __ List[s..]:
+    ___ commonChars  A: L..[s..]) __ L..[s..]:
         """
         running counter
         """

@@ -24,11 +24,11 @@ Multiplication of any three numbers in the input won't exceed the range of
 """
 _______ heapq
 
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maximumProduct  nums: List[i..]) __ i..:
+    ___ maximumProduct  nums: L..[i..]) __ i..:
         """
         heapq nlargest nsmallest
         """

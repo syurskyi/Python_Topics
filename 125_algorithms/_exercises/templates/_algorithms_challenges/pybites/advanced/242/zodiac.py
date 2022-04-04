@@ -1,12 +1,12 @@
 ____ c.. _______ n..
 ____ d__ _______ d__
 ____ operator _______ itemgetter
-____ t___ _______ List
+____ t___ _______ L..
 
 Sign = n..('Sign', 'name compatibility famous_people sun_dates')
 
 
-___ get_signs(data: l..) __ List[Sign]:
+___ get_signs(data: l..) __ L..[Sign]:
     ret    # list
     ___ sign __ data:
         name = sign 'name' 

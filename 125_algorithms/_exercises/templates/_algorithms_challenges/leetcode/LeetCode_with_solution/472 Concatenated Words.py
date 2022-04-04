@@ -21,7 +21,7 @@ The length sum of elements in the given array will not exceed 600,000.
 All the input string will only include lower case letters.
 The returned elements order does not matter.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
@@ -30,7 +30,7 @@ c_ Solution:
         TrieNode = l....: d..(TrieNode)  # not defaultdict(lambda: TrieNode)
         root = TrieNode()  # root of tire
 
-    ___ findAllConcatenatedWordsInADict  words: List[s..]) __ List[s..]:
+    ___ findAllConcatenatedWordsInADict  words: L..[s..]) __ L..[s..]:
         """
         Trie + DFS
         """
@@ -65,7 +65,7 @@ c_ Solution:
 
 
 c_ SolutionTLE:
-    ___ findAllConcatenatedWordsInADict  words: List[s..]) __ List[s..]:
+    ___ findAllConcatenatedWordsInADict  words: L..[s..]) __ L..[s..]:
         """
         Trie check cannot be greedy: cat sdog vs cats dog
 

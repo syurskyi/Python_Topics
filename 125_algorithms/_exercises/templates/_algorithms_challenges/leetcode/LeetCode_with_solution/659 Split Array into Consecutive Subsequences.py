@@ -25,13 +25,13 @@ Output: False
 Note:
 The length of the input is in range of [1, 10000]
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 _______ heapq
 
 
 c_ Solution:
-    ___ isPossible  nums: List[i..]) __ b..:
+    ___ isPossible  nums: L..[i..]) __ b..:
         """
         Attribute a number to a existing consecutive subsequences
         future numbers depend on this number to form the subsequence can also
@@ -81,7 +81,7 @@ c_ Interval:
 
 
 c_ Solution2:
-    ___ isPossible  nums: List[i..]) __ b..:
+    ___ isPossible  nums: L..[i..]) __ b..:
         """
         (length, last)
         heap sortest first

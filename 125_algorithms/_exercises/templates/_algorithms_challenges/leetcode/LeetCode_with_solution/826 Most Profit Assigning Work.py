@@ -26,11 +26,11 @@ Notes:
 1 <= worker.length <= 10000
 difficulty[i], profit[i], worker[i]  are in range [1, 10^5]
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxProfitAssignment  difficulty: List[i..], profit: List[i..], worker: List[i..]) __ i..:
+    ___ maxProfitAssignment  difficulty: L..[i..], profit: L..[i..], worker: L..[i..]) __ i..:
         """
         Greedy? Sort by profit
         """

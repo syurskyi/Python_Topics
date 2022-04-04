@@ -25,11 +25,11 @@ Note:
 pushed is a permutation of popped.
 pushed and popped have distinct values.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ validateStackSequences  pushed: List[i..], popped: List[i..]) __ b..:
+    ___ validateStackSequences  pushed: L..[i..], popped: L..[i..]) __ b..:
         """
         maintain a stack and iterate through pushed
         """
@@ -44,7 +44,7 @@ c_ Solution:
 
         r.. j __ n
 
-    ___ validateStackSequences  pushed: List[i..], popped: List[i..]) __ b..:
+    ___ validateStackSequences  pushed: L..[i..], popped: L..[i..]) __ b..:
         """
         maintain a stack
         """

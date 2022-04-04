@@ -31,11 +31,11 @@ Note:
 1 <= K <= 10000
 -100 <= A[i] <= 100
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ largestSumAfterKNegations  A: List[i..], K: i..) __ i..:
+    ___ largestSumAfterKNegations  A: L..[i..], K: i..) __ i..:
         """
         revert all the negative, if positive, revert multiple times the smallest
 

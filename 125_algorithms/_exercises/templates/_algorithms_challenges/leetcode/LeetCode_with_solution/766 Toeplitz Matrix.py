@@ -43,11 +43,11 @@ can only load at most one row of the matrix into the memory at once?
 What if the matrix is so large that you can only load up a partial row into the
 memory at once?
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ isToeplitzMatrix  matrix: List[List[i..]]) __ b..:
+    ___ isToeplitzMatrix  matrix: L..[L..[i..]]) __ b..:
         m, n = l..(matrix), l..(matrix[0])
         ___ i __ r..(1, m
             ___ j __ r..(1, n
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. T..
 
-    ___ isToeplitzMatrix_complex  matrix: List[List[i..]]) __ b..:
+    ___ isToeplitzMatrix_complex  matrix: L..[L..[i..]]) __ b..:
         """
         Brute force iteration will work
 

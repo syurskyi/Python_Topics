@@ -56,7 +56,7 @@ c_ Solution:
     ___ -
         mp = d..(l..)  # element (-Y, val)  # from left to right, top to bottom
 
-    ___ verticalTraversal  root: TreeNode) __ List[List[i..]]:
+    ___ verticalTraversal  root: TreeNode) __ L..[L..[i..]]:
         dfs(root, 0, 0)
         ret    # list
         mn = m..(mp)

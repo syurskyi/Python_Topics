@@ -1,6 +1,6 @@
-____ t___ _______ List
+____ t___ _______ L..
 
-___ sum_numbers(numbers: List[i..]) __ i..:
+___ sum_numbers(numbers: L..[i..]) __ i..:
     """Sums numbers
 
     :param numbers: a list of numbers

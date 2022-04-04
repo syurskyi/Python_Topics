@@ -15,7 +15,7 @@ Input: search("hhllo"), Output: True
 Input: search("hell"), Output: False
 Input: search("leetcoded"), Output: False
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
@@ -65,7 +65,7 @@ c_ MagicDictionary:
 
         trie = Trie()
 
-    ___ buildDict  dic: List[s..]) __ N..
+    ___ buildDict  dic: L..[s..]) __ N..
         """
         Build a dictionary through a list of words
         """

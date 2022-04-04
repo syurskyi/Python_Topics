@@ -31,11 +31,11 @@ Output: [[3,5],[6,9],[12,14]]
 
 Note:  1 <= S.length <= 1000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ largeGroupPositions  S: s..) __ List[List[i..]]:
+    ___ largeGroupPositions  S: s..) __ L..[L..[i..]]:
         i = 0
         j = 0
         ret    # list

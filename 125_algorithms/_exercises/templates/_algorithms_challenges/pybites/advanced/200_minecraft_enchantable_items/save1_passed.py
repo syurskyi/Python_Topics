@@ -3,7 +3,7 @@ ____ dataclasses _______ dataclass, field
 ____ f.. _______ total_ordering
 ____ pathlib _______ Path
 ____ __ _______ c.., s..
-____ t___ _______ A.., DefaultDict, List
+____ t___ _______ A.., DefaultDict, L..
 ____ u__.r.. _______ u..
 
 ____ bs4 _______ BeautifulSoup __ Soup
@@ -29,7 +29,7 @@ c_ Enchantment:
     name: s..
     max_level: i..
     description: s..
-    items: List[s..] = field(default_factory=l..)
+    items: L..[s..] = field(default_factory=l..)
 
     ___ __str__
         r.. f"{name} ({max_level}): {description}"
@@ -43,7 +43,7 @@ c_ Item:
     """Minecraft enchantable item"""
 
     name: s..
-    enchantments: List[Enchantment] = field(default_factory=l..)
+    enchantments: L..[Enchantment] = field(default_factory=l..)
 
     ___ __str__
         enchants = s..(enchantments)

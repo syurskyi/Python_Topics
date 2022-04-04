@@ -35,7 +35,7 @@ Note:
 schedule and schedule[i] are lists with lengths in range [1, 50].
 0 <= schedule[i].start < schedule[i].end <= 10^8.
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ heapq
 
 
@@ -44,7 +44,7 @@ E = 1
 
 
 c_ Solution:
-    ___ employeeFreeTime  schedule: List[List[List[i..]]]) __ List[List[i..]]:
+    ___ employeeFreeTime  schedule: L..[L..[L..[i..]]]) __ L..[L..[i..]]:
         """
         Method 1
         Looking at the head of each list through iterator
@@ -89,7 +89,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ employeeFreeTime  schedule: List[List[List[i..]]]) __ List[List[i..]]:
+    ___ employeeFreeTime  schedule: L..[L..[L..[i..]]]) __ L..[L..[i..]]:
         """
         Method 2
         """
@@ -116,7 +116,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ employeeFreeTime_error  schedule: List[List[List[i..]]]) __ List[List[i..]]:
+    ___ employeeFreeTime_error  schedule: L..[L..[L..[i..]]]) __ L..[L..[i..]]:
         """
         Cannot store iterator in the heap to compare
         use index instead

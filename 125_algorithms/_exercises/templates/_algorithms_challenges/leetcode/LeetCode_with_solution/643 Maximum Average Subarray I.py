@@ -16,11 +16,11 @@ Note:
 1 <= k <= n <= 30,000.
 Elements of the given array will be in the range [-10,000, 10,000].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findMaxAverage  nums: List[i..], k: i..) __ f__:
+    ___ findMaxAverage  nums: L..[i..], k: i..) __ f__:
         """
         two pointers
         """

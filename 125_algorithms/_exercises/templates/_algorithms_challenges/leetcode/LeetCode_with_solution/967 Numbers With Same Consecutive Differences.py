@@ -26,14 +26,14 @@ Note:
 1 <= N <= 9
 0 <= K <= 9
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
     ___ -
         cache    # dict
 
-    ___ numsSameConsecDiff  N: i.., K: i..) __ List[i..]:
+    ___ numsSameConsecDiff  N: i.., K: i..) __ L..[i..]:
         """
         dfs + memoization
         """
@@ -48,7 +48,7 @@ c_ Solution:
             map(l.... x: i..("".j.. m..(s.., x))), ret)
         )
 
-    ___ dfs  start: i.., N: i.., K: i..) __ List[List[i..]]:
+    ___ dfs  start: i.., N: i.., K: i..) __ L..[L..[i..]]:
         __ (start, N, K) n.. __ cache:
             ret    # list
             __ N __ 1:

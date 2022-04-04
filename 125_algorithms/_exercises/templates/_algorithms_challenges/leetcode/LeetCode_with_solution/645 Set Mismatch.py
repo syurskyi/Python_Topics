@@ -15,11 +15,11 @@ Note:
 The given array size will in the range [2, 10000].
 The given array's numbers won't have any order.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findErrorNums  nums: List[i..]) __ List[i..]:
+    ___ findErrorNums  nums: L..[i..]) __ L..[i..]:
         """
         https://leetcode.com/problems/set-mismatch/discuss/113999/C%2B%2B-True-O(1)-space-O(n)-time-(No-input-modifying)-with-clear-explanation
         """

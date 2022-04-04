@@ -15,7 +15,7 @@ Input: ["bat","tab","cat"]
 Output: [[0,1],[1,0]]
 Explanation: The palindromes are ["battab","tabbat"]
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
@@ -27,7 +27,7 @@ c_ TrieNode:
 
 
 c_ Solution:
-    ___ palindromePairs  words: List[s..]) __ List[List[i..]]:
+    ___ palindromePairs  words: L..[s..]) __ L..[L..[i..]]:
         """
         Brute force, i, j and then check palindrom
         O(N^2 * L)

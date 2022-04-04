@@ -42,12 +42,12 @@ Note:
 A[i] and B[i] consist only of lowercase letters.
 All words in A[i] are unique: there isn't i != j with A[i] == A[j].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ C.., d..
 
 
 c_ Solution:
-    ___ wordSubsets  A: List[s..], B: List[s..]) __ List[s..]:
+    ___ wordSubsets  A: L..[s..], B: L..[s..]) __ L..[s..]:
         """
         brute foce check b subset of a: two pointers O(|a| + |b|)
         O(n * m * (|a|+|b|))

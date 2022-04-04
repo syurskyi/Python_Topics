@@ -34,12 +34,12 @@ Note:
 dislikes[i][0] < dislikes[i][1]
 There does not exist i != j for which dislikes[i] == dislikes[j].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ possibleBipartition  N: i.., dislikes: List[List[i..]]) __ b..:
+    ___ possibleBipartition  N: i.., dislikes: L..[L..[i..]]) __ b..:
         """
         If given likes, then we can use union-find. But this is dislikes.
         Two bipartition, A, B. For each dislike, do a dfs on A, B.

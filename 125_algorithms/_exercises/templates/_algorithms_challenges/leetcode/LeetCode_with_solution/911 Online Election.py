@@ -29,13 +29,13 @@ times is a strictly increasing array with all elements in [0, 10^9].
 TopVotedCandidate.q is called at most 10000 times per test case.
 TopVotedCandidate.q(int t) is always called with t >= times[0].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 _______ bisect
 
 
 c_ TopVotedCandidate:
-    ___ - , persons: List[i..], times: List[i..]
+    ___ - , persons: L..[i..], times: L..[i..]
         """
         Running top vote
         Need to maintain list

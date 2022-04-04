@@ -54,7 +54,7 @@ Jaclin,Tonge,3549852104724527"""
     encoded = base64.b64encode(result)
     print(encoded)
 
-    decoded = base64.b64decode(encoded)
+    decoded = base64.b..(encoded)
     # print(decoded)???
     print(bytes.d.. decoded, 'ascii'))
     inp = bytes.d.. decoded, 'ascii')

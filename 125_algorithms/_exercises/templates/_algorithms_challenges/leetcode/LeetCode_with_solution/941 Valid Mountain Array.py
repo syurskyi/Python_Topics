@@ -29,11 +29,11 @@ Note:
 0 <= A.length <= 10000
 0 <= A[i] <= 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ validMountainArray  A: List[i..]) __ b..:
+    ___ validMountainArray  A: L..[i..]) __ b..:
         """
         related to 845 Longest Mountain in Array
 

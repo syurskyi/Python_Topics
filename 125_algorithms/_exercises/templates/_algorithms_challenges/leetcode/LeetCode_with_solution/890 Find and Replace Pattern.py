@@ -30,11 +30,11 @@ Note:
 1 <= words.length <= 50
 1 <= pattern.length = words[i].length <= 20
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findAndReplacePattern  words: List[s..], pattern: s..) __ List[s..]:
+    ___ findAndReplacePattern  words: L..[s..], pattern: s..) __ L..[s..]:
         """
         mapping
         """

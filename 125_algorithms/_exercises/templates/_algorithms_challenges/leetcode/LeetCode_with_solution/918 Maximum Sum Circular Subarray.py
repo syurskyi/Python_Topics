@@ -45,11 +45,11 @@ Note:
 -30000 <= A[i] <= 30000
 1 <= A.length <= 30000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxSubarraySumCircular  A: List[i..]) __ i..:
+    ___ maxSubarraySumCircular  A: L..[i..]) __ i..:
         """
         Kadane's Algorithm
         Two cases:
@@ -73,7 +73,7 @@ c_ Solution:
             mx = m..(mx, cur)
         r.. mx
 
-    ___ maxSubarraySumCircular_error  A: List[i..]) __ i..:
+    ___ maxSubarraySumCircular_error  A: L..[i..]) __ i..:
         """
         keep a cur_sum with index, when negative, go back to 0
         """

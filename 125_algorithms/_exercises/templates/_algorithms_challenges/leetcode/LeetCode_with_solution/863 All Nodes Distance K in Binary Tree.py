@@ -42,7 +42,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ distanceK  root: TreeNode, target: TreeNode, K: i..) __ List[i..]:
+    ___ distanceK  root: TreeNode, target: TreeNode, K: i..) __ L..[i..]:
         """
         similar to SolutionComplicated
         get its ancestor's distance, but at the same down go down through the tree
@@ -87,7 +87,7 @@ c_ Solution:
 
 
 c_ SolutionComplicated:
-    ___ distanceK  root: TreeNode, target: TreeNode, K: i..) __ List[i..]:
+    ___ distanceK  root: TreeNode, target: TreeNode, K: i..) __ L..[i..]:
         """
         break the problem into two part
         1st problem: target's subtree - easy to solve

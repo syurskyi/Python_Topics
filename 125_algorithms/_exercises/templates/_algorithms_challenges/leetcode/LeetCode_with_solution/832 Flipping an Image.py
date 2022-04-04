@@ -26,11 +26,11 @@ Notes:
 1 <= A.length = A[0].length <= 20
 0 <= A[i][j] <= 1
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ flipAndInvertImage  A: List[List[i..]]) __ List[List[i..]]:
+    ___ flipAndInvertImage  A: L..[L..[i..]]) __ L..[L..[i..]]:
         """
         one pass
         """

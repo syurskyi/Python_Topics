@@ -52,11 +52,11 @@ Note:
 1 <= D <= weights.length <= 50000
 1 <= weights[i] <= 500
 """
-____ tying _______ List
+____ tying _______ L..
 
 
 c_ Solution:
-    ___ shipWithinDays  weights: List[i..], D: i..) __ i..:
+    ___ shipWithinDays  weights: L..[i..], D: i..) __ i..:
         """
         Must respect conveyor's order
 

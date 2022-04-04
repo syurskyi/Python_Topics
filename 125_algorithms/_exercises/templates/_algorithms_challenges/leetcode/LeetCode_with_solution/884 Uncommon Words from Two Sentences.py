@@ -28,12 +28,12 @@ Note:
 0 <= B.length <= 200
 A and B both contain only spaces and lowercase letters.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ uncommonFromSentences  A: s.., B: s..) __ List[s..]:
+    ___ uncommonFromSentences  A: s.., B: s..) __ L..[s..]:
         """
         need counter, only need to appear once
         """
@@ -45,7 +45,7 @@ c_ Solution:
         ]
         r.. ret
 
-    ___ uncommonFromSentences_complext  A: s.., B: s..) __ List[s..]:
+    ___ uncommonFromSentences_complext  A: s.., B: s..) __ L..[s..]:
         """
         need counter
         """
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ uncommonFromSentences_error  A: s.., B: s..) __ List[s..]:
+    ___ uncommonFromSentences_error  A: s.., B: s..) __ L..[s..]:
         """
         set difference
         """

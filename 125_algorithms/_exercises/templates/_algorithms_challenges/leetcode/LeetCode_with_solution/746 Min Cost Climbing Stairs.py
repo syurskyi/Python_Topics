@@ -20,11 +20,11 @@ Note:
 cost will have a length in the range [2, 1000].
 Every cost[i] will be an integer in the range [0, 999].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ minCostClimbingStairs  cost: List[i..]) __ i..:
+    ___ minCostClimbingStairs  cost: L..[i..]) __ i..:
         """
         dp
         let F[i] be the cost to reach i-th stair

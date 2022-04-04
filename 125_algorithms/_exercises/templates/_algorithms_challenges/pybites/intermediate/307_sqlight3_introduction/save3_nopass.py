@@ -1,6 +1,6 @@
 _______ sqlite3
 ____ e.. _______ E..
-____ t___ _______ A.., Dict, List, Optional, Tuple, Union
+____ t___ _______ A.., Dict, L.., Optional, Tuple, Union
 
 
 c_ SQLiteType(E..
@@ -65,7 +65,7 @@ c_ DB:
         connection.c..
 
     ___ create(
-            self, table: s.., schema: List[Tuple[s.., SQLiteType]], primary_key: s..
+            self, table: s.., schema: L..[Tuple[s.., SQLiteType]], primary_key: s..
 
         """Creates a new table.
 
@@ -109,7 +109,7 @@ c_ DB:
         """
         r.. NotImplementedError("You have to implement this method first.")
 
-    ___ insert  table: s.., values: List[Tuple]
+    ___ insert  table: s.., values: L..[Tuple]
         """Inserts one or multiple new records into the database.
 
         Before inserting a value, you should make sure
@@ -144,9 +144,9 @@ c_ DB:
     ___ select(
             self,
             table: s..,
-            columns: Optional[List[s..]] = N..,
+            columns: Optional[L..[s..]] = N..,
             target: Optional[Tuple[s.., Optional[s..], A..]] = N..,
-    ) __ List[Tuple]:
+    ) __ L..[Tuple]:
         """Selects records from the database.
 
         If there are no columns given, select all available columns as default.

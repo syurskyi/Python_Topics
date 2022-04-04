@@ -16,11 +16,11 @@ Note:
 Then length of the input array is in range [1, 10,000].
 The input array may contain duplicates, so ascending order here means <=.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findUnsortedSubarray  nums: List[i..]) __ i..:
+    ___ findUnsortedSubarray  nums: L..[i..]) __ i..:
         """
         Sorted at both ends
         Then search for the two ends by nums[i+1] > nums[i] on the left side
@@ -55,7 +55,7 @@ c_ Solution:
 
         r.. hi - lo + 1
 
-    ___ findUnsortedSubarray_sort  nums: List[i..]) __ i..:
+    ___ findUnsortedSubarray_sort  nums: L..[i..]) __ i..:
         """
         Brute force sort and compare O(n lgn)
         """

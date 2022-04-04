@@ -34,11 +34,11 @@ Note:
 0 <= r0 < R
 0 <= c0 < C
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ allCellsDistOrder  R: i.., C: i.., r0: i.., c0: i..) __ List[List[i..]]:
+    ___ allCellsDistOrder  R: i.., C: i.., r0: i.., c0: i..) __ L..[L..[i..]]:
         """
         bucket sort
         """

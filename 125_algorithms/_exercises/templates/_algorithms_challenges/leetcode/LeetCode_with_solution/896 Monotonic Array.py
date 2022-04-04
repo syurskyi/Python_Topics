@@ -37,11 +37,11 @@ Note:
 1 <= A.length <= 50000
 -100000 <= A[i] <= 100000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ isMonotonic  A: List[i..]) __ b..:
+    ___ isMonotonic  A: L..[i..]) __ b..:
         mono = 0  # 0 undecided, 1 decr, 2 incr
         ___ i __ r..(1, l..(A)):
             __ mono __ 0:

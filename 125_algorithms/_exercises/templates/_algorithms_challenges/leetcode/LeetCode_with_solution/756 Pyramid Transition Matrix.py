@@ -45,12 +45,12 @@ Letters in all strings will be chosen from the set {'A', 'B', 'C', 'D', 'E',
 'F', 'G'}.
 """
 _______ i..
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ pyramidTransition  bottom: s.., allowed: List[s..]) __ b..:
+    ___ pyramidTransition  bottom: s.., allowed: L..[s..]) __ b..:
         """
         Need search, since multiple placements are possible
         The order of allowed matters

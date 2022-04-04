@@ -19,12 +19,12 @@ Note:
 -10000 <= A[i] <= 10000
 A is sorted in non-decreasing order.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ sortedSquares  A: List[i..]) __ List[i..]:
+    ___ sortedSquares  A: L..[i..]) __ L..[i..]:
         """
         started from two ends
         """

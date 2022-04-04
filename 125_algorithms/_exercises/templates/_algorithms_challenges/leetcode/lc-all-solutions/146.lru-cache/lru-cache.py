@@ -1,4 +1,4 @@
-c_ List(o..
+c_ L..(o..
   $
   ___ delete(elem
     elem.prev.next = elem.next
@@ -14,7 +14,7 @@ c_ List(o..
 
   $
   ___ a..(head, elem
-    List.move(elem, head.prev, head)
+    L...move(elem, head.prev, head)
 
   $
   ___ isEmpty(head
@@ -33,8 +33,8 @@ c_ Node(o..
     prev = next = N..
 
   ___ hit
-    List.delete(self)
-    List.a..(head, self)
+    L...delete(self)
+    L...a..(head, self)
 
 
 c_ LRUCache(o..
@@ -45,7 +45,7 @@ c_ LRUCache(o..
     d    # dict
     cap = capacity
     head = Node(-1, -1, N..)
-    List.initHead(head)
+    L...initHead(head)
 
   ___ get  key
     """
@@ -70,9 +70,9 @@ c_ LRUCache(o..
       d[key].value = value
     ____:
       __ l..(d) >= cap:
-        oldNode = List.delete(head.next)
+        oldNode = L...delete(head.next)
         del d[oldNode.key]
 
       newNode = Node(key, value, head)
-      List.a..(head, newNode)
+      L...a..(head, newNode)
       d[key] = newNode

@@ -53,7 +53,7 @@ ip will be a valid IPv4 address.
 Every implied address ip + x (for x < n) will be a valid IPv4 address.
 n will be an integer in the range [1, 1000].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 # the weights of ip when converting to binary
@@ -66,7 +66,7 @@ weights = [
 
 
 c_ Solution:
-    ___ ipToCIDR  ip: s.., n: i..) __ List[s..]:
+    ___ ipToCIDR  ip: s.., n: i..) __ L..[s..]:
         """
         bit manipulation
 

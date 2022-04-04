@@ -19,11 +19,11 @@ Note:
 L, R  and A[i] will be an integer in the range [0, 10^9].
 The length of A will be in the range of [1, 50000].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ numSubarrayBoundedMax  A: List[i..], L: i.., R: i..) __ i..:
+    ___ numSubarrayBoundedMax  A: L..[i..], L: i.., R: i..) __ i..:
         """
         DP: Let F[i] be the num subarray with bounded max at A[i]
         if L <= A[i] <= R: F[i] = i - prev, where prev is previously invalid F[prev] = 0
@@ -48,7 +48,7 @@ c_ Solution:
 
         r.. ret
 
-    ___ numSubarrayBoundedMax_error  A: List[i..], L: i.., R: i..) __ i..:
+    ___ numSubarrayBoundedMax_error  A: L..[i..], L: i.., R: i..) __ i..:
         """
         DP: Let F[i] be the num subarray with bounded max at A[i]
         if L <= A[i] <= R: F[i] = F[i-1] + 1  # append itself to every array in F[i-1] and one more itself

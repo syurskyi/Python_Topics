@@ -13,10 +13,10 @@ Note:
 n is a positive integer, which is in the range of [1, 10000].
 All the integers in the array will be in the range of [-10000, 10000].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ arrayPairSum  nums: List[i..]) __ i..:
+    ___ arrayPairSum  nums: L..[i..]) __ i..:
         nums.s..()
         r.. s..(nums[::2])

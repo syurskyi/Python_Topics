@@ -18,11 +18,11 @@ unary operator. For example, with [1, 1, 1, 1] as input, the expression -1 - 1 -
 You cannot concatenate numbers together. For example, if the input is
 [1, 2, 1, 2], we cannot write this as 12 + 12.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ judgePoint24  nums: List[i..]) __ b..:
+    ___ judgePoint24  nums: L..[i..]) __ b..:
         r.. dfs(nums, {})
 
     ___ dfs  A, cache

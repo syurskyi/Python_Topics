@@ -1,10 +1,10 @@
-____ t___ _______ List
+____ t___ _______ L..
 
 EAST = "E"
 WEST = "W"
 
 
-___ search_apartment(buildings: List[i..], direction: s..) __ List[i..]:
+___ search_apartment(buildings: L..[i..], direction: s..) __ L..[i..]:
     """
     Find and return the indices of those building with
     the desired view: EAST (E) or WEST (W).

@@ -21,12 +21,12 @@ Note:
 0 <= A[i] <= 10^9
 0 <= B[i] <= 10^9
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ advantageCount  A: List[i..], B: List[i..]) __ List[i..]:
+    ___ advantageCount  A: L..[i..], B: L..[i..]) __ L..[i..]:
         """
         Gready select the smallest larger number
         Then we need sort A

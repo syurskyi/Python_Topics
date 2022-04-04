@@ -15,13 +15,13 @@ Examples:
 Note: An empty input list [] should return 0.
 """
 
-____ t___ _______ List
+____ t___ _______ L..
 
 # Mialem jeszcze innego pomysla, zeby uzyc joina:
 # s = ('').join(lista)
 # jak zamienic liste intow na liste str?
 # d = [str(x) for x in c]
-___ minimum_number(d..: List[i..]) __ i..:
+___ minimum_number(d..: L..[i..]) __ i..:
     __ l..(d..) __ 0:
         r.. 0
     reduced = s..(d..)

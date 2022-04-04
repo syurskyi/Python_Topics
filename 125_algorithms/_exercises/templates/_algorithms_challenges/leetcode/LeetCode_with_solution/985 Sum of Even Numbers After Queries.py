@@ -31,11 +31,11 @@ Note:
 -10000 <= queries[i][0] <= 10000
 0 <= queries[i][1] < A.length
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ sumEvenAfterQueries  A: List[i..], queries: List[List[i..]]) __ List[i..]:
+    ___ sumEvenAfterQueries  A: L..[i..], queries: L..[L..[i..]]) __ L..[i..]:
         """
         maintain a sum
         """

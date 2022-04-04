@@ -18,14 +18,14 @@ Note:
 S will be a string with length between 1 and 12.
 S will consist only of letters or digits.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
     ___ -
         ret    # list
 
-    ___ letterCasePermutation  S: s..) __ List[s..]:
+    ___ letterCasePermutation  S: s..) __ L..[s..]:
         """
         dfs
         """

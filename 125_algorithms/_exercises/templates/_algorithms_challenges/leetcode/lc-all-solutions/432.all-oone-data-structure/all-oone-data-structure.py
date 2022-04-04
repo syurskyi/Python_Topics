@@ -1,4 +1,4 @@
-c_ List(o..
+c_ L..(o..
   $
   ___ delete(elem
     elem.prev.next = elem.next
@@ -15,11 +15,11 @@ c_ List(o..
 
   $
   ___ a..(head, elem
-    List.move(elem, head.prev, head)
+    L...move(elem, head.prev, head)
 
   $
   ___ insertAfter(head, elem
-    List.move(elem, head, head.next)
+    L...move(elem, head, head.next)
 
   $
   ___ isEmpty(head
@@ -60,7 +60,7 @@ c_ AllOne(o..
     """
     d    # dict
     head = Node(-1)
-    List.initHead(head)
+    L...initHead(head)
 
   ___ inc  key
     """
@@ -76,7 +76,7 @@ c_ AllOne(o..
       ____:
         newNode = Node(1)
         newNode.add(key)
-        List.insertAfter(head, newNode)
+        L...insertAfter(head, newNode)
         d[key] = newNode
     ____:
       node = d[key]
@@ -84,14 +84,14 @@ c_ AllOne(o..
       __ node.next.val != node.val + 1:
         newNode = Node(node.val + 1)
         newNode.add(key)
-        List.insertAfter(node, newNode)
+        L...insertAfter(node, newNode)
       ____:
         newNode = node.next
         newNode.add(key)
 
       node.remove(key)
       __ node.isEmpty
-        List.delete(node)
+        L...delete(node)
         del d[key]
       d[key] = newNode
 
@@ -108,20 +108,20 @@ c_ AllOne(o..
     __ node.val __ 1:
       node.remove(key)
       __ node.isEmpty
-        List.delete(node)
+        L...delete(node)
       del d[key]
     ____:
       newNode = N..
       __ node.prev.val != node.val - 1:
         newNode = Node(node.val - 1)
         newNode.add(key)
-        List.insertAfter(node.prev, newNode)
+        L...insertAfter(node.prev, newNode)
       ____:
         newNode = node.prev
         newNode.add(key)
       node.remove(key)
       __ node.isEmpty
-        List.delete(node)
+        L...delete(node)
         del d[key]
       d[key] = newNode
 

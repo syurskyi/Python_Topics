@@ -16,13 +16,13 @@ K will be in the range [1, N].
 The length of times will be in the range [1, 6000].
 All edges times[i] = (u, v, w) will have 1 <= u, v <= N and 0 <= w <= 100.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 _______ heapq
 
 
 c_ Solution:
-    ___ networkDelayTime  times: List[List[i..]], N: i.., K: i..) __ i..:
+    ___ networkDelayTime  times: L..[L..[i..]], N: i.., K: i..) __ i..:
         """
         Dijkstra's algorithm
         """

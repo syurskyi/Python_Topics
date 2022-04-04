@@ -27,13 +27,13 @@ Note:
 0 <= hand[i] <= 10^9
 1 <= W <= hand.length
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ C.., d..
 _______ heapq
 
 
 c_ Solution:
-    ___ isNStraightHand  A: List[i..], W: i..) __ b..:
+    ___ isNStraightHand  A: L..[i..], W: i..) __ b..:
         """
         sort + queue
 
@@ -56,7 +56,7 @@ c_ Solution:
 
         r.. prev_cnt __ 0
 
-    ___ isNStraightHand_heap  A: List[i..], W: i..) __ b..:
+    ___ isNStraightHand_heap  A: L..[i..], W: i..) __ b..:
         """
         sort + heap
         O(N log N + N log N)

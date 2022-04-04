@@ -37,11 +37,11 @@ c_ ListNode:
         next = N..
 
 
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ nextLargerNodes  head: ListNode) __ List[i..]:
+    ___ nextLargerNodes  head: ListNode) __ L..[i..]:
         """
         If input is an array, use stack from right to left. Maintain a decreasing stack
 

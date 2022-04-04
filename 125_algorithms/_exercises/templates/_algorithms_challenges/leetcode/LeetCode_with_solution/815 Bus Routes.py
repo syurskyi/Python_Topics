@@ -23,12 +23,12 @@ Note:
 1 <= routes[i].length <= 500.
 0 <= routes[i][j] < 10 ^ 6.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ numBusesToDestination  routes: List[List[i..]], S: i.., T: i..) __ i..:
+    ___ numBusesToDestination  routes: L..[L..[i..]], S: i.., T: i..) __ i..:
         """
         BFS
         bus based nodes rather than stop based nodes
@@ -71,7 +71,7 @@ c_ Solution:
 
         r.. -1
 
-    ___ numBusesToDestination_TLE  routes: List[List[i..]], S: i.., T: i..) __ i..:
+    ___ numBusesToDestination_TLE  routes: L..[L..[i..]], S: i.., T: i..) __ i..:
         """
         BFS
         Lest number of buses rather than bus stops

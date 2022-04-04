@@ -35,11 +35,11 @@ Note:
 1 <= A[0] < A[1] < ... < A[A.length - 1] <= 10^9
 (The time limit has been reduced by 50% for submissions in Java, C, and C++.)
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ lenLongestFibSubseq  A: List[i..]) __ i..:
+    ___ lenLongestFibSubseq  A: L..[i..]) __ i..:
             """
             F[i][j] longest fib subsequence ending at A[i] with 2nd last element
             A[j]
@@ -74,7 +74,7 @@ c_ Solution:
                 ___ j __ r..(i)
             )
 
-    ___ lenLongestFibSubseq_TLE  A: List[i..]) __ i..:
+    ___ lenLongestFibSubseq_TLE  A: L..[i..]) __ i..:
         """
         F[i][j] longest fib subsequence ending at A[i] with 2nd last element
         A[j]

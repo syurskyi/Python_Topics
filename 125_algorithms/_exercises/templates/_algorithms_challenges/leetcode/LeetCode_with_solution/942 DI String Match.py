@@ -28,11 +28,11 @@ Note:
 1 <= S.length <= 10000
 S only contains characters "I" or "D".
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ diStringMatch  S: s..) __ List[i..]:
+    ___ diStringMatch  S: s..) __ L..[i..]:
         """
         Looking at prev rather than cur
             If "I", then put smallest as prev. Increase from the min
@@ -51,7 +51,7 @@ c_ Solution:
         ret.a..(mini)
         r.. ret
 
-    ___ diStringMatchErrror  S: s..) __ List[i..]:
+    ___ diStringMatchErrror  S: s..) __ L..[i..]:
         """
         start with 0, then add the min up to 0
 

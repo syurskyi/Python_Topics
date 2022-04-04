@@ -39,11 +39,11 @@ All heights grid[i][j] are in the range [0, 100].
 All buildings in grid[i][j] occupy the entire grid cell: that is, they are a
 1 x 1 x grid[i][j] rectangular prism.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxIncreaseKeepingSkyline  grid: List[List[i..]]) __ i..:
+    ___ maxIncreaseKeepingSkyline  grid: L..[L..[i..]]) __ i..:
         """
         grow the to limit constraint by 2D skyline
         """

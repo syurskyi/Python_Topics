@@ -1,10 +1,10 @@
 ____ dataclasses _______ dataclass,field
-____ t___ _______ List, Tuple
+____ t___ _______ L.., Tuple
 _______ heapq
 
 
-bites: List[i..] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
-names: List[s..] = [
+bites: L..[i..] = [283, 282, 281, 263, 255, 230, 216, 204, 197, 196, 195]
+names: L..[s..] = [
     "snow",
     "natalia",
     "alex",
@@ -82,7 +82,7 @@ c_ Rankings:
             parameter indicating how many Ninjas to pair up
     returns List containing tuples of the paired up Ninja objects
     """
-    rankings: List[i..] = field(default_factory=l..)
+    rankings: L..[i..] = field(default_factory=l..)
 
 
 

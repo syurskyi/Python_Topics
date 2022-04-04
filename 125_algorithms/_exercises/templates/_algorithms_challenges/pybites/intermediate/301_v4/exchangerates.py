@@ -1,7 +1,7 @@
 _______ __
 ____ d__ _______ date, t..
 ____ pathlib _______ Path
-____ t___ _______ Dict, List, OrderedDict
+____ t___ _______ Dict, L.., OrderedDict
 ____ u__.r.. _______ u..
 _______ json
 ____ c.. _______ OrderedDict
@@ -14,7 +14,7 @@ __ n.. RATES_FILE.exists
     u..(URL, RATES_FILE)
 
 
-___ get_all_days(start_date: date, end_date: date) __ List[date]:
+___ get_all_days(start_date: date, end_date: date) __ L..[date]:
     delta = end_date - start_date
     r.. [start_date+t..(d.._x) ___ x __ r..(delta.days+1)]
 

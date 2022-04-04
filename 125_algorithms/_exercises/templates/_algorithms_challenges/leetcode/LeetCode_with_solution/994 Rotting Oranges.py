@@ -33,14 +33,14 @@ Note:
 1 <= grid[0].length <= 10
 grid[i][j] is only 0, 1, or 2.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 dirs = ((0, -1), (0, 1), (-1, 0), (1, 0))
 
 
 c_ Solution:
-    ___ orangesRotting  grid: List[List[i..]]) __ i..:
+    ___ orangesRotting  grid: L..[L..[i..]]) __ i..:
         """
         maintain a q for the newly rotten
         """

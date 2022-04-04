@@ -14,12 +14,12 @@ Note:
 1 <= len(A), len(B) <= 1000
 0 <= A[i], B[i] < 100
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ findLength  A: List[i..], B: List[i..]) __ i..:
+    ___ findLength  A: L..[i..], B: L..[i..]) __ i..:
         """
         similar to longest substring
         Brute force O(mn)

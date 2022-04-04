@@ -1,8 +1,8 @@
-____ t___ _______ List
+____ t___ _______ L..
 _______ s__
 
 
-___ split_once(text: s.., separators: s.. = N..) __ List[s..]:
+___ split_once(text: s.., separators: s.. = N..) __ L..[s..]:
 
     __ separators __ N..
         separators = s__.whitespace

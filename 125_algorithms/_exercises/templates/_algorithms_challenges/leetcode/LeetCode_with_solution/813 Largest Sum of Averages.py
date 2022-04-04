@@ -26,11 +26,11 @@ Note:
 1 <= K <= A.length.
 Answers within 10^-6 of the correct answer will be accepted as correct.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ largestSumOfAverages  A: List[i..], K: i..) __ f__:
+    ___ largestSumOfAverages  A: L..[i..], K: i..) __ f__:
         """
         Memoized Backtracking + Prefix sum
         My first hunch is correct

@@ -17,11 +17,11 @@ Note:
 S will have length in range [1, 500].
 S will consist of lowercase letters ('a' to 'z') only.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ partitionLabels  S: s..) __ List[i..]:
+    ___ partitionLabels  S: s..) __ L..[i..]:
         lasts    # dict
         n = l..(S)
         ___ i __ r..(n-1, -1, -1

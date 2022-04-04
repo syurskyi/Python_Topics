@@ -44,14 +44,14 @@ Note:
 1 <= S.length <= 200
 S contains only digits.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 MAX = 2 ** 31 - 1
 
 
 c_ Solution:
-    ___ splitIntoFibonacci  S: s..) __ List[i..]:
+    ___ splitIntoFibonacci  S: s..) __ L..[i..]:
         """
         The first two elements of the array uniquely determine the rest of the
         sequence.

@@ -31,12 +31,12 @@ Note:
 arr will have length in range [1, 2000].
 arr[i] will be an integer in range [0, 10**8].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d.., d..
 
 
 c_ Solution:
-    ___ maxChunksToSorted  arr: List[i..]) __ i..:
+    ___ maxChunksToSorted  arr: L..[i..]) __ i..:
         """
         not necessarily distinct
         sort and assign index

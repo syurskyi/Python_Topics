@@ -46,11 +46,11 @@ Note:
 1 <= A.length <= 100
 1 <= A[i].length <= 100
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ minDeletionSize  A: List[s..]) __ i..:
+    ___ minDeletionSize  A: L..[s..]) __ i..:
         """
         Greedily delete
         Scannign from left to right

@@ -36,11 +36,11 @@ M >= 1
 L + M <= A.length <= 1000
 0 <= A[i] <= 1000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxSumTwoNoOverlap  A: List[i..], L: i.., M: i..) __ i..:
+    ___ maxSumTwoNoOverlap  A: L..[i..], L: i.., M: i..) __ i..:
         """
         Prefix sum + Brute force O(N^2)
         two pointer i, j

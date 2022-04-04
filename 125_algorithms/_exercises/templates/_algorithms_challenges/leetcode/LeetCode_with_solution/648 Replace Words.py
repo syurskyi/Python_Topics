@@ -26,7 +26,7 @@ The input will only have lower-case letters.
 1 <= root length <= 100
 1 <= sentence words length <= 1000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
@@ -70,7 +70,7 @@ c_ Trie:
             r..
 
 c_ Solution:
-    ___ replaceWords  dic: List[s..], sentence: s..) __ s..:
+    ___ replaceWords  dic: L..[s..], sentence: s..) __ s..:
         trie = Trie()
         ___ word __ dic:
             root = trie.root

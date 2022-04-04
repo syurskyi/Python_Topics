@@ -3,7 +3,7 @@ ____ contextlib _______ suppress
 ____ dataclasses _______ dataclass
 ____ ipaddress _______ AddressValueError, IPv4Address, IPv4Network
 ____ pathlib _______ Path
-____ t___ _______ List
+____ t___ _______ L..
 
 
 @dataclass(frozen=T..)
@@ -22,7 +22,7 @@ c_ ServiceIPRange:
                 f"service in the {region} region")
 
 
-___ parse_ipv4_service_ranges(source: Path) __ List[ServiceIPRange]:
+___ parse_ipv4_service_ranges(source: Path) __ L..[ServiceIPRange]:
     """
     Given a JSON file containing AWS public IP addresses, return a list of
     ServiceIPRange objects representing all IPv4 network ranges. See also:
@@ -44,7 +44,7 @@ ___ parse_ipv4_service_ranges(source: Path) __ List[ServiceIPRange]:
 
 
 ___ get_aws_service_range(address: s..,
-                          service_ranges: l..) __ List[ServiceIPRange]:
+                          service_ranges: l..) __ L..[ServiceIPRange]:
     """
     Return a list of ServiceIPRange objects representing all AWS public
     IP ranges that contain `address`. Raise a ValueError if `address`

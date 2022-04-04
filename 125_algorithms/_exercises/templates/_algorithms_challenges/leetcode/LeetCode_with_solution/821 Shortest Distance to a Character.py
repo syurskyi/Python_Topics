@@ -15,11 +15,11 @@ S string length is in [1, 10000].
 C is a single character, and guaranteed to be in string S.
 All letters in S and C are lowercase.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ shortestToChar  S: s.., C: s..) __ List[i..]:
+    ___ shortestToChar  S: s.., C: s..) __ L..[i..]:
         """
         get the sorted indexes of C
         """

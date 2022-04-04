@@ -21,11 +21,11 @@ The number of nodes in the graph will be in the range [2, 15].
 You can print different paths in any order, but you should keep the order of
 nodes inside one path.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ allPathsSourceTarget  graph: List[List[i..]]) __ List[List[i..]]:
+    ___ allPathsSourceTarget  graph: L..[L..[i..]]) __ L..[L..[i..]]:
         G = graph
         ret    # list
         visited = [F.. ___ _ __ G]

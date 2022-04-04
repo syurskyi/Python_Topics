@@ -30,10 +30,10 @@ Note:
 -10000 < points[i][0] < 10000
 -10000 < points[i][1] < 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ heapq
 
 
 c_ Solution:
-    ___ kClosest  points: List[List[i..]], K: i..) __ List[List[i..]]:
+    ___ kClosest  points: L..[L..[i..]], K: i..) __ L..[L..[i..]]:
         r.. heapq.nsmallest(K, points, key=l.... x: x[0]**2 + x[1]**2)

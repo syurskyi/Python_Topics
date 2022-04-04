@@ -25,11 +25,11 @@ Note:
 1 <= S.length = shifts.length <= 20000
 0 <= shifts[i] <= 10 ^ 9
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ shiftingLetters  S: s.., shifts: List[i..]) __ s..:
+    ___ shiftingLetters  S: s.., shifts: L..[i..]) __ s..:
         """
         preprocess shifts
         """

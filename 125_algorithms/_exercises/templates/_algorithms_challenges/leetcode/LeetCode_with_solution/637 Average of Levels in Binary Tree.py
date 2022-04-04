@@ -16,7 +16,7 @@ is 11. Hence return [3, 14.5, 11].
 Note:
 The range of node's value is in the range of 32-bit signed integer.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 # Definition for a binary tree node.
@@ -28,7 +28,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ averageOfLevels  root: TreeNode) __ List[f__]:
+    ___ averageOfLevels  root: TreeNode) __ L..[f__]:
         """
         BFS
         """

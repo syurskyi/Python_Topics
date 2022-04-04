@@ -3,12 +3,12 @@
 premium question
 """
 
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ wordsAbbreviation  words: List[s..]) __ List[s..]:
+    ___ wordsAbbreviation  words: L..[s..]) __ L..[s..]:
         """
         Sort the word, check prefix and last word
 

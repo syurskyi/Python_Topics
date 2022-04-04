@@ -18,7 +18,7 @@ c_ LRUCache(o..
         :type capacity: int
         """
         capacity = capacity
-        times = List()
+        times = L..()
         cache    # dict
 
     ___ get  key
@@ -61,7 +61,7 @@ c_ ListNode(o..
         value = value
 
 
-c_ List(o..
+c_ L..(o..
     ___ -
         head = N..
         tail = N..

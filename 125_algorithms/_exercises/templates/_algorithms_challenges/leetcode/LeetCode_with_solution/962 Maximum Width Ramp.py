@@ -26,11 +26,11 @@ Note:
 2 <= A.length <= 50000
 0 <= A[i] <= 50000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ maxWidthRamp  A: List[i..]) __ i..:
+    ___ maxWidthRamp  A: L..[i..]) __ i..:
         """
         Use stack? No, since require the furthest element rather than the closest
         Sort the values, keep its index

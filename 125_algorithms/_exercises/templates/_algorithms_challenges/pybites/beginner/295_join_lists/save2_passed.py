@@ -1,6 +1,6 @@
-____ t___ _______ List, Union
+____ t___ _______ L.., Union
 
-___ join_lists(lst_of_lst: List[List[s..]], sep: s..) __ Union[List[s..], N..]:
+___ join_lists(lst_of_lst: L..[L..[s..]], sep: s..) __ Union[L..[s..], N..]:
     output    # list
     ___ item __ lst_of_lst:
         __ isi..(item, l..

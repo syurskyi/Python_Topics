@@ -53,11 +53,11 @@ had--
 
 The character '-' signifies an empty space on the screen.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ wordsTyping  sentence: List[s..], rows: i.., cols: i..) __ i..:
+    ___ wordsTyping  sentence: L..[s..], rows: i.., cols: i..) __ i..:
         """
         How many times to fit
 

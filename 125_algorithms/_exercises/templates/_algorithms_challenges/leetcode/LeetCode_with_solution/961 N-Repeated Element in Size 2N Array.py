@@ -25,11 +25,11 @@ Note:
 0 <= A[i] < 10000
 A.length is even
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ repeatedNTimes  A: List[i..]) __ i..:
+    ___ repeatedNTimes  A: L..[i..]) __ i..:
         """
         Counter. Straightforward. O(N) space
 

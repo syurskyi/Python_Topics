@@ -11,12 +11,12 @@ The length of the array is in range [1, 20,000].
 The range of numbers in the array is [-1000, 1000] and the range of the integer
 k is [-1e7, 1e7].
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ subarraySum  nums: List[i..], k: i..) __ i..:
+    ___ subarraySum  nums: L..[i..], k: i..) __ i..:
         """
         prefix sum
         """

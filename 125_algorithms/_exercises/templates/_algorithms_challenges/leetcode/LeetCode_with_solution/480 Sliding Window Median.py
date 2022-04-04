@@ -31,7 +31,7 @@ Note:
 You may assume k is always valid, ie: k is always smaller than input array's
 size for non-empty array.
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ heapq
 
 
@@ -98,7 +98,7 @@ c_ DualHeap:
 
 
 c_ Solution:
-    ___ medianSlidingWindow  nums: List[i..], k: i..) __ List[f__]:
+    ___ medianSlidingWindow  nums: L..[i..], k: i..) __ L..[f__]:
         """
         1. BST, proxied by bisect
         dual heap + lazy removal + balance the valid element

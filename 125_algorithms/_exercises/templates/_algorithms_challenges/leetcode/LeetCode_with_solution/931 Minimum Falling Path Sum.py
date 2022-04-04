@@ -27,12 +27,12 @@ Note:
 1 <= A.length == A[0].length <= 100
 -100 <= A[i][j] <= 100
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
 c_ Solution:
-    ___ minFallingPathSum  A: List[List[i..]]) __ i..:
+    ___ minFallingPathSum  A: L..[L..[i..]]) __ i..:
         """
         dp, build from bottom
         let F[i][j] be the min falling path sum at A[i][j]
@@ -52,7 +52,7 @@ c_ Solution:
             ___ j __ r..(n)
         )
 
-    ___ minFallingPathSum_std  A: List[List[i..]]) __ i..:
+    ___ minFallingPathSum_std  A: L..[L..[i..]]) __ i..:
         """
         dp, build from bottom
         let F[i][j] be the min falling path sum at A[i][j]

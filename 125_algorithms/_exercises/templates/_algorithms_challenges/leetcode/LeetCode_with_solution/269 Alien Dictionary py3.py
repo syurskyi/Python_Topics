@@ -38,12 +38,12 @@ Output: ""
 
 Explanation: The order is invalid, so return "".
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d.., d..
 
 
 c_ Solution(o..
-    ___ alienOrder  words: List[s..]) __ s..:
+    ___ alienOrder  words: L..[s..]) __ s..:
         G = construct_graph(words)
         visited = d..(i..)  # 0 not visited, 1 visiting, 2 visted
         ret = d..()

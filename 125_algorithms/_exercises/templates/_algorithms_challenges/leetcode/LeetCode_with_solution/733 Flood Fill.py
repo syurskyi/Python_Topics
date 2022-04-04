@@ -35,12 +35,12 @@ image[0].length.
 The value of each color in image[i][j] and newColor will be an integer in
 [0, 65535].
 """
-____ t___ _______ List
+____ t___ _______ L..
 dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
 
 c_ Solution:
-    ___ floodFill  image: List[List[i..]], sr: i.., sc: i.., newColor: i..) __ List[List[i..]]:
+    ___ floodFill  image: L..[L..[i..]], sr: i.., sc: i.., newColor: i..) __ L..[L..[i..]]:
         """
         dfs fill
 

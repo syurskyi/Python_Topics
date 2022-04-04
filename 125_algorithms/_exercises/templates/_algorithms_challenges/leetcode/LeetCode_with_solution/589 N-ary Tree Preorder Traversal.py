@@ -18,11 +18,11 @@ c_ Node:
         children = children
 
 
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ preorder  root: "Node") __ List[i..]:
+    ___ preorder  root: "Node") __ L..[i..]:
         """
         reversely add the children to stk
         """

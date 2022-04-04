@@ -21,13 +21,13 @@ kthLargest.add(4);   // returns 8
 Note:
 You may assume that nums' length ≥ k-1 and k ≥ 1.
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ heapq
 
 
 c_ KthLargest:
 
-    ___ - , k: i.., nums: List[i..]
+    ___ - , k: i.., nums: L..[i..]
         """
         heap
         min-heap, since we want the head be the k-th largest

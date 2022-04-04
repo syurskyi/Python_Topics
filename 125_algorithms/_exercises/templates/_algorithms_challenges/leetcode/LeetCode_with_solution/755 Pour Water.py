@@ -119,11 +119,11 @@ heights will have length in [1, 100] and contain integers in [0, 99].
 V will be in range [0, 2000].
 K will be in range [0, heights.length - 1].
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ pourWater  heights: List[i..], V: i.., K: i..) __ List[i..]:
+    ___ pourWater  heights: L..[i..], V: i.., K: i..) __ L..[i..]:
         """
         Simulation?
         O(V * L)

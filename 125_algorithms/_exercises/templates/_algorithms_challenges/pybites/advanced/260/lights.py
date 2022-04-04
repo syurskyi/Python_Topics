@@ -1,4 +1,4 @@
-____ t___ _______ List
+____ t___ _______ L..
 
 _______ numpy __ np
 _______ pandas __ pd
@@ -6,7 +6,7 @@ _______ pandas __ pd
 
 c_ LightsGrid:
 
-    ___ - , grid_size: i.., instructions: List[s..]
+    ___ - , grid_size: i.., instructions: L..[s..]
         grid_size = grid_size
         grid = pd.DataFrame(np.zeros([grid_size, grid_size], dtype=i..))
         instructions = instructions

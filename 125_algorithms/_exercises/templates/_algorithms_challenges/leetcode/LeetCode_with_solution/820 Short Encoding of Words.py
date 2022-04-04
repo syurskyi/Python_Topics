@@ -24,11 +24,11 @@ Note:
 1 <= words[i].length <= 7.
 Each word has only lowercase letters.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ minimumLengthEncoding  words: List[s..]) __ i..:
+    ___ minimumLengthEncoding  words: L..[s..]) __ i..:
         """
         suffix trie
         only suffix matters

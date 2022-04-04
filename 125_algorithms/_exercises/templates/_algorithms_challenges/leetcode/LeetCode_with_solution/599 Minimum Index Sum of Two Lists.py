@@ -25,11 +25,11 @@ The length of strings in both lists will be in the range of [1, 30].
 The index is starting from 0 to the list length minus 1.
 No duplicates in both lists.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findRestaurant  list1: List[s..], list2: List[s..]) __ List[s..]:
+    ___ findRestaurant  list1: L..[s..], list2: L..[s..]) __ L..[s..]:
         index    # dict
         ___ i, v __ e..(list2
             index[v] = i

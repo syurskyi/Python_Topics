@@ -36,11 +36,11 @@ Note:
 order.length == 26
 All characters in words[i] and order are english lowercase letters.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ isAlienSorted  words: List[s..], order: s..) __ b..:
+    ___ isAlienSorted  words: L..[s..], order: s..) __ b..:
         h    # dict
         ___ i, c __ e..(order
             h[c] = i

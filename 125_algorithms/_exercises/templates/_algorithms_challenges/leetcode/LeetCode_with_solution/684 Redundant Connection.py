@@ -33,7 +33,7 @@ The size of the input 2D-array will be between 3 and 1000.
 Every integer represented in the 2D-array will be between 1 and N, where N is
 the size of the input array.
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ d..
 
 
@@ -75,7 +75,7 @@ c_ DisjointSet
 
 
 c_ Solution:
-    ___ findRedundantConnection  edges: List[List[i..]]) __ List[i..]:
+    ___ findRedundantConnection  edges: L..[L..[i..]]) __ L..[i..]:
         """
         Union-find
         """
@@ -91,7 +91,7 @@ c_ Solution:
         r..
 
 c_ Solution_dfs:
-    ___ findRedundantConnection  edges: List[List[i..]]) __ List[i..]:
+    ___ findRedundantConnection  edges: L..[L..[i..]]) __ L..[i..]:
         """
         Construct graph: O(|E|)
         Find circle through dfs: O(|V|)

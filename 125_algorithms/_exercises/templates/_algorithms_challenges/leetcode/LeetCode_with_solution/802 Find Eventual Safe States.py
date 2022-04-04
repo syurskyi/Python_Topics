@@ -29,16 +29,16 @@ The number of edges in the graph will not exceed 32000.
 Each graph[i] will be a sorted list of different integers, chosen within the
 range [0, graph.length - 1].
 """
-____ t___ _______ List, S..
+____ t___ _______ L.., S..
 
 
 c_ Solution:
-    ___ eventualSafeNodes  graph: List[List[i..]]) __ List[i..]:
+    ___ eventualSafeNodes  graph: L..[L..[i..]]) __ L..[i..]:
         """
         detect cycle in the node
         prune by nodes with no cycle
         """
-        visit: List[i..] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
+        visit: L..[i..] = [0 ___ _ __ graph]  # 0 not visted, 1 processing, 2 visited
         acyclic: S..[i..] = s..()
         ___ u __ r..(l..(graph)):
             __ visit[u] __ 0:

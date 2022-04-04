@@ -9,11 +9,11 @@ Note:
 The number of time points in the given list is at least 2 and won't exceed 20000.
 The input time is legal and ranges from 00:00 to 23:59.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findMinDifference  timePoints: List[s..]) __ i..:
+    ___ findMinDifference  timePoints: L..[s..]) __ i..:
         """
         sort and minus
         """

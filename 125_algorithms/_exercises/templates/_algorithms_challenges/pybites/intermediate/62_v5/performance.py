@@ -1,5 +1,5 @@
 ____ f.. _______ wraps
-____ t___ _______ List, S..
+____ t___ _______ L.., S..
 
 ____ time _______ time
 
@@ -22,7 +22,7 @@ ___ timing(f
 
 
 @timing
-___ contains(sequence: List[i..], num: i..) __ b..:
+___ contains(sequence: L..[i..], num: i..) __ b..:
     ___ n __ sequence:
         __ n __ num:
             r.. T..
@@ -35,17 +35,17 @@ ___ contains_fast(sequence: S..[i..], num: i..) __ b..:
 
 
 @timing
-___ ordered_list_max(sequence: List[i..]) __ i..:
+___ ordered_list_max(sequence: L..[i..]) __ i..:
     r.. m..(sequence)
 
 
 @timing
-___ ordered_list_max_fast(sequence: List[i..]) __ i..:
+___ ordered_list_max_fast(sequence: L..[i..]) __ i..:
     r.. sequence[-1]
 
 
 @timing
-___ list_concat(sequence: List[s..]) __ s..:
+___ list_concat(sequence: L..[s..]) __ s..:
     bigstr = ''
     ___ i __ sequence:
         bigstr += s..(i)
@@ -53,12 +53,12 @@ ___ list_concat(sequence: List[s..]) __ s..:
 
 
 @timing
-___ list_concat_fast(sequence: List[s..]) __ s..:
+___ list_concat_fast(sequence: L..[s..]) __ s..:
     r.. ''.j..(sequence)
 
 
 @timing
-___ list_inserts(n: i..) __ List[i..]:
+___ list_inserts(n: i..) __ L..[i..]:
     lst    # list
     ___ i __ r..(n
         lst.insert(0, i)
@@ -66,12 +66,12 @@ ___ list_inserts(n: i..) __ List[i..]:
 
 
 @timing
-___ list_inserts_fast(n: i..) __ List[i..]:
+___ list_inserts_fast(n: i..) __ L..[i..]:
     r.. [v ___ v __ r..(n)][::-1]
 
 
 @timing
-___ list_creation(n: i..) __ List[i..]:
+___ list_creation(n: i..) __ L..[i..]:
     lst    # list
     ___ i __ r..(n
         lst.a..(i)

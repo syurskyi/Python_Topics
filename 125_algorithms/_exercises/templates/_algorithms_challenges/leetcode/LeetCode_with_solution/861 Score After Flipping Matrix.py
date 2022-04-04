@@ -24,11 +24,11 @@ Note:
 1 <= A[0].length <= 20
 A[i][j] is 0 or 1.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ matrixScore  A: List[List[i..]]) __ i..:
+    ___ matrixScore  A: L..[L..[i..]]) __ i..:
         """
         MSB > sum of remaining digit
         => Toggle rows to set MSB to 1

@@ -2,7 +2,7 @@ _______ __
 ____ c.. _______ C..
 ____ dataclasses _______ dataclass, field
 ____ s__ _______ punctuation
-____ t___ _______ List, S.., Tuple
+____ t___ _______ L.., S.., Tuple
 
 STOPWORDS: s.. = {
     "she's", "wasn", "through", "won", "that'll", "his", "once", "this",
@@ -42,7 +42,7 @@ c_ Corpora:
     txt: s..
     count: i.. = 5
     tag: s.. = '#'
-    extra: List[s..] = field(default_factory=l..)
+    extra: L..[s..] = field(default_factory=l..)
     stopwords: S..[s..] = field(init=F..)
 
     ___ __post_init__
@@ -65,7 +65,7 @@ c_ Corpora:
         r.. text
 
     $
-    ___ metrics(self) __ List[Tuple[s.., i..]]:
+    ___ metrics(self) __ L..[Tuple[s.., i..]]:
         """Generates word count metrics.
 
         * Using the cleaned up corpus, count up how many times each word is used

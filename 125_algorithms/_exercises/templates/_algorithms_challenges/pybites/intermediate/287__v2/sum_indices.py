@@ -1,7 +1,7 @@
-____ t___ _______ List
+____ t___ _______ L..
 
 
-___ sum_indices(items: List[s..]) __ i..:
+___ sum_indices(items: L..[s..]) __ i..:
     duplicate_lookup    # dict
     running_total = 0
     ___ i __ r..(l..(items)):

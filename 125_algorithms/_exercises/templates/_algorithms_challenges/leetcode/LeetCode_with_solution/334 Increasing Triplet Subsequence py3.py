@@ -18,12 +18,12 @@ Example 2:
 Input: [5,4,3,2,1]
 Output: false
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ bisect _______ bisect_left
 
 
 c_ Solution:
-    ___ increasingTriplet  nums: List[i..]) __ b..:
+    ___ increasingTriplet  nums: L..[i..]) __ b..:
         """
         Patience sort
         LIS dp with binary search

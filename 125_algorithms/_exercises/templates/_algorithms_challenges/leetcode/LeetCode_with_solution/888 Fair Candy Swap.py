@@ -40,12 +40,12 @@ Note:
 It is guaranteed that Alice and Bob have different total amounts of candy.
 It is guaranteed there exists an answer.
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ bisect
 
 
 c_ Solution:
-    ___ fairCandySwap  A: List[i..], B: List[i..]) __ List[i..]:
+    ___ fairCandySwap  A: L..[i..], B: L..[i..]) __ L..[i..]:
         """
         It is a search problem. Use set as search.
         """
@@ -59,7 +59,7 @@ c_ Solution:
                 
         r..
 
-    ___ fairCandySwap_complex  A: List[i..], B: List[i..]) __ List[i..]:
+    ___ fairCandySwap_complex  A: L..[i..], B: L..[i..]) __ L..[i..]:
         """
         sum, to figure out the target O(N)
         exchange one

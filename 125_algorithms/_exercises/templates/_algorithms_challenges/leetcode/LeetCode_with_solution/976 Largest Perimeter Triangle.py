@@ -28,11 +28,11 @@ Note:
 3 <= A.length <= 10000
 1 <= A[i] <= 10^6
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ largestPerimeter  A: List[i..]) __ i..:
+    ___ largestPerimeter  A: L..[i..]) __ i..:
         """
         sort and scanning from right
         """

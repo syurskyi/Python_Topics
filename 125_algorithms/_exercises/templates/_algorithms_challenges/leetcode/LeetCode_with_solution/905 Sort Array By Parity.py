@@ -19,11 +19,11 @@ Note:
 1 <= A.length <= 5000
 0 <= A[i] <= 5000
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ sortArrayByParity  A: List[i..]) __ List[i..]:
+    ___ sortArrayByParity  A: L..[i..]) __ L..[i..]:
         """
         pointer
         """

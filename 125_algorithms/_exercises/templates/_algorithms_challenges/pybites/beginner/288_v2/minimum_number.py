@@ -1,7 +1,7 @@
-____ t___ _______ List
+____ t___ _______ L..
 
 
-___ minimum_number(d..: List[i..]) __ i..:
+___ minimum_number(d..: L..[i..]) __ i..:
     
     __ n.. d..:
         r.. 0

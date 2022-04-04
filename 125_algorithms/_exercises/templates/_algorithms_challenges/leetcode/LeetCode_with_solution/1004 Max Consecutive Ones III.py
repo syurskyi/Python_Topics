@@ -27,11 +27,11 @@ Note:
 0 <= K <= A.length
 A[i] is 0 or 1
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ longestOnes  A: List[i..], K: i..) __ i..:
+    ___ longestOnes  A: L..[i..], K: i..) __ i..:
         """
         len(gap)
         But there is multiple gap need to fill, and which gaps to fill is

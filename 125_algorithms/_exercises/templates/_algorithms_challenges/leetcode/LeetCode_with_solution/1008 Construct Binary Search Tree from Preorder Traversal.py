@@ -17,7 +17,7 @@ Note:
 1 <= preorder.length <= 100
 The values of preorder are distinct.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 # Definition for a binary tree node.
@@ -29,7 +29,7 @@ c_ TreeNode:
 
 
 c_ Solution:
-    ___ bstFromPreorder2  preorder: List[i..]) __ TreeNode:
+    ___ bstFromPreorder2  preorder: L..[i..]) __ TreeNode:
         """
         need to be BST
 
@@ -61,7 +61,7 @@ c_ Solution:
 
         r.. root
 
-    ___ bstFromPreorder  preorder: List[i..]) __ TreeNode:
+    ___ bstFromPreorder  preorder: L..[i..]) __ TreeNode:
         """
         If a node is a right child (larger), find the proper parent
         The proper parent should the deepest in the stack that its val < current val

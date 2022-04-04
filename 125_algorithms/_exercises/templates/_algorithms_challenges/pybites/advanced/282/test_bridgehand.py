@@ -1,6 +1,6 @@
 ____ dataclasses _______ dataclass, field
 ____ r__ _______ shuffle
-____ t___ _______ List
+____ t___ _______ L..
 
 _______ p__
 
@@ -17,7 +17,7 @@ c_ TestHand:
     ssp: i..
     total_points: i..
     ltc: i..
-    card_list: List[Card] = field(init=F..)
+    card_list: L..[Card] = field(init=F..)
 
     ___ __post_init__
         """ Generate actual list of Card instances from card_string """

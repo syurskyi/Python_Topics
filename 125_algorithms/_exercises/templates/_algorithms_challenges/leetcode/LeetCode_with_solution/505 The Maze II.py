@@ -2,7 +2,7 @@
 """
 premium question
 """
-____ t___ _______ List
+____ t___ _______ L..
 _______ heapq
 
 
@@ -10,7 +10,7 @@ dirs = [(0, -1), (0, 1), (-1, 0), (1, 0)]
 
 
 c_ Solution:
-    ___ shortestDistance  maze: List[List[i..]], start: List[i..], destination: List[i..]) __ i..:
+    ___ shortestDistance  maze: L..[L..[i..]], start: L..[i..], destination: L..[i..]) __ i..:
         """
         No friction rolling ball
 

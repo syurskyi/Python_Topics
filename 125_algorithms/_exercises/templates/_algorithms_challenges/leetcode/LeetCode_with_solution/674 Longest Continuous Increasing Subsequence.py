@@ -17,11 +17,11 @@ Explanation: The longest continuous increasing subsequence is [2], its length
 is 1.
 Note: Length of the array will not exceed 10,000.
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ findLengthOfLCIS  nums: List[i..]) __ i..:
+    ___ findLengthOfLCIS  nums: L..[i..]) __ i..:
         """
         pointer is sufficient
         """

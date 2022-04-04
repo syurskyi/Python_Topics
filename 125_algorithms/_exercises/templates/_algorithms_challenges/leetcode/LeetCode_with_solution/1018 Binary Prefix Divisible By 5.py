@@ -31,11 +31,11 @@ Note:
 1 <= A.length <= 30000
 A[i] is 0 or 1
 """
-____ t___ _______ List
+____ t___ _______ L..
 
 
 c_ Solution:
-    ___ prefixesDivBy5  A: List[i..]) __ List[b..]:
+    ___ prefixesDivBy5  A: L..[i..]) __ L..[b..]:
         """
         brute force
         """

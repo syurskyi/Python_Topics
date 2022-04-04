@@ -3,7 +3,7 @@ _______ json
 ____ d__ _______ date
 _______ d__ __ dt
 ____ pathlib _______ Path
-____ t___ _______ Dict, List
+____ t___ _______ Dict, L..
 ____ u__.r.. _______ u..
 ____ dateutil.parser _______ p..
 
@@ -15,7 +15,7 @@ __ n.. RATES_FILE.exists
     u..(URL, RATES_FILE)
 
 
-___ get_all_days(start_date: date, end_date: date) __ List[date]:
+___ get_all_days(start_date: date, end_date: date) __ L..[date]:
 
     dates    # list
 

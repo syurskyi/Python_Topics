@@ -39,12 +39,12 @@ Note:
 1 <= deck.length <= 10000
 0 <= deck[i] < 10000
 """
-____ t___ _______ List
+____ t___ _______ L..
 ____ c.. _______ C..
 
 
 c_ Solution:
-    ___ hasGroupsSizeX  deck: List[i..]) __ b..:
+    ___ hasGroupsSizeX  deck: L..[i..]) __ b..:
         """
         gcd of all > 2
         """
